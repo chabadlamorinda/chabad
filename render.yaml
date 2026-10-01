@@ -1,0 +1,7 @@
+# Tells Render how to host this site. You shouldn't need to change this.
+services:
+  - type: web
+    name: chabad-lamorinda
+    runtime: static
+    staticPublishPath: .
+    buildCommand: ""
