@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tzedakah Pushka · Chabad of Lamorinda</title>
+  <meta name="theme-color" content="#1d3557">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg">
+  <link rel="stylesheet" href="pushka.css">
+</head>
+<body>
+  <header>
+    <a class="back" href="../">← Chabad of Lamorinda</a>
+    <h1>Tzedakah Pushka</h1>
+    <p class="sub">Tzedakah brings blessing. Give a little every day.</p>
+  </header>
+
+  <main>
+    <section class="box-area">
+      <div class="pushka" id="pushka" aria-hidden="true">
+        <div class="coin" id="coin"></div>
+        <div class="slot"></div>
+        <div class="body"><span>צדקה</span></div>
+      </div>
+      <p class="total-label">In your pushka</p>
+      <p class="total" id="total">$0</p>
+      <p class="stats"><span id="count">0</span> gifts · <span id="streak">0</span>-day streak</p>
+    </section>
+
+    <section class="card">
+      <h2>Drop in a coin</h2>
+      <div class="quick" id="quick">
+        <button data-amt="1">$1</button>
+        <button data-amt="3">$3</button>
+        <button data-amt="5">$5</button>
+        <button data-amt="18">$18 <small>Chai</small></button>
+        <button data-amt="36">$36</button>
+      </div>
+      <form id="form">
+        <label>Amount ($)
+          <input id="amount" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="Other amount" required>
+        </label>
+        <label>In honor / memory of (optional)
+          <input id="note" type="text" maxlength="80" placeholder="e.g. l'ilui nishmas…, a refuah for…">
+        </label>
+        <button class="primary" type="submit">Put in pushka</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Ready to give it?</h2>
+      <p>This app keeps track of what you set aside. When your pushka is ready, donate the amount to Chabad of Lamorinda's tzedakah fund, then empty the box.</p>
+      <a class="primary link" id="donate" href="#" target="_blank" rel="noopener">Donate my pushka</a>
+      <button class="ghost" id="empty">I donated — empty the pushka</button>
+    </section>
+
+    <section class="card">
+      <h2>History</h2>
+      <ul id="history"></ul>
+      <p id="none" class="muted">Nothing yet. Your first coin is a mitzvah!</p>
+    </section>
+
+    <p class="muted foot">Saved only on this device. Tip: on your phone, use Share → “Add to Home Screen” to keep it handy, and drop a coin before Shabbat candle lighting.</p>
+  </main>
+  <script src="pushka.js"></script>
+</body>
+</html>
