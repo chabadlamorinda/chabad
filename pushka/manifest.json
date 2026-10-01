@@ -1,9 +1,9 @@
 {
-  "name": "Tzedakah Pushka",
-  "short_name": "Pushka",
+  "name": "My Pushka · Chabad of Lamorinda",
+  "short_name": "My Pushka",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#faf7f0",
-  "theme_color": "#1d3557",
+  "background_color": "#fafafa",
+  "theme_color": "#ffffff",
   "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
 }
