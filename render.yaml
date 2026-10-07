@@ -1,7 +1,26 @@
-# Tells Render how to host this site. You shouldn't need to change this.
+# Render settings for the Chabad of Lamorinda website.
 services:
+  # The original static website. Kept as-is so nothing that is live today breaks.
   - type: web
     name: chabad-lamorinda
     runtime: static
     staticPublishPath: .
     buildCommand: ""
+
+  # Website + My Pushka app + Stripe card payments (a small Node server).
+  - type: web
+    name: chabad-lamorinda-app
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server/index.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: STRIPE_SECRET_KEY        # sk_test_... first, then sk_live_...  (set in the Render dashboard)
+        sync: false
+      - key: STRIPE_PUBLISHABLE_KEY   # pk_test_... first, then pk_live_...  (set in the Render dashboard)
+        sync: false
+      - key: SESSION_SECRET           # generated for you
+        generateValue: true

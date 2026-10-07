@@ -3,20 +3,11 @@
 // Texts are included for convenience: please have the Rabbi review everything before relying on it.
 
 const SEG_CATS = ["Livelihood", "Health & Healing", "Protection & Travel", "Family & Children", "Finding a Match", "Peace of Mind", "Home & Blessing", "Holidays & Seasons"];
-const SEG_FEATURED = ["meir", "lost", "quotes", "derech", "pledge"];
+const SEG_FEATURED = ["quotes", "derech", "bless-children", "modeh-ani", "tehillim-daily"];
 const SEF = (p) => "https://www.sefaria.org/" + p;
 
 const SEGULOS = [
   // ---------- featured ----------
-  { id: "meir", kind: "text", cat: "Protection & Travel", title: "Prayer of Rabbi Meir Baal HaNes",
-    blurb: "Rabbi Meir was a sage of the Mishnah, known as Baal HaNes, “master of the miracle.” It is a long-standing custom to give tzedakah in his merit and to say “Elokei Meir, aneini” — “G‑d of Meir, answer me” — when one is in need of a salvation.",
-    how: ["Take a moment to quiet your mind and think of what you need.", "Say the words below with feeling.", "Give tzedakah in his merit — it can be as small as a coin in your pushka."],
-    he: "אֱלֹהֵי מֵאִיר עֲנֵנִי", tr: "Elokei Meir, aneini.", en: "G‑d of Meir, answer me.",
-    src: "Custom linked by tradition to the account of Rabbi Meir in Avodah Zarah 18a", act: ["coin", "pledge"] },
-  { id: "lost", kind: "text", cat: "Peace of Mind", title: "Prayer for finding a lost object",
-    blurb: "When something is lost, many have the custom to pledge tzedakah in the merit of Rabbi Meir Baal HaNes and say “Elokei Meir, aneini.” Calm yourself, retrace your steps, and ask Hashem to help you remember where it is.",
-    how: ["Pause and take a breath. Panic makes us forget.", "Say “Elokei Meir, aneini” and ask Hashem to guide you to what was lost.", "Give tzedakah in the merit of Rabbi Meir, then keep looking calmly.", "When you find it, give thanks — and give a little more."],
-    he: "אֱלֹהֵי מֵאִיר עֲנֵנִי", tr: "Elokei Meir, aneini.", en: "G‑d of Meir, answer me.", src: "Widespread custom", act: ["coin", "pledge"] },
   { id: "quotes", kind: "quotes", cat: "Peace of Mind", title: "Selected Quotes from the Rebbe", blurb: "Short teachings and sayings of the Lubavitcher Rebbe on giving, goodness and joy." },
   { id: "derech", kind: "text", cat: "Protection & Travel", title: "Traveler’s Prayer (Tefillas HaDerech)",
     blurb: "Said once at the start of a journey, after leaving the city, whether you travel by car, plane or train. It asks Hashem for a safe, peaceful trip. Ask the Rabbi about the details of when to say it on short trips.",
@@ -24,8 +15,6 @@ const SEGULOS = [
     he: "יְהִי רָצוֹן מִלְּפָנֶיךָ ה' אֱלֹהֵינוּ וֵאלֹהֵי אֲבוֹתֵינוּ, שֶׁתּוֹלִיכֵנוּ לְשָׁלוֹם, וְתַצְעִידֵנוּ לְשָׁלוֹם, וְתַדְרִיכֵנוּ לְשָׁלוֹם, וְתִסְמְכֵנוּ לְשָׁלוֹם, וְתַגִּיעֵנוּ לִמְחוֹז חֶפְצֵנוּ לְחַיִּים וּלְשִׂמְחָה וּלְשָׁלוֹם. וְתַצִּילֵנוּ מִכַּף כָּל אוֹיֵב וְאוֹרֵב וְלִסְטִים וְחַיּוֹת רָעוֹת בַּדֶּרֶךְ, וּמִכָּל מִינֵי פֻּרְעָנֻיּוֹת הַמִּתְרַגְּשׁוֹת לָבוֹא לָעוֹלָם. וְתִשְׁלַח בְּרָכָה בְּמַעֲשֵׂה יָדֵינוּ, וְתִתְּנֵנוּ לְחֵן וּלְחֶסֶד וּלְרַחֲמִים בְּעֵינֶיךָ וּבְעֵינֵי כָל רוֹאֵינוּ, וְתִשְׁמַע קוֹל תַּחֲנוּנֵינוּ, כִּי אֵל שׁוֹמֵעַ תְּפִלָּה וְתַחֲנוּן אָתָּה. בָּרוּךְ אַתָּה ה', שׁוֹמֵעַ תְּפִלָּה.",
     en: "May it be Your will, Lord our G‑d and G‑d of our fathers, that You lead us in peace, direct our steps in peace, guide us in peace, and support us in peace, and bring us to our desired destination for life, joy and peace. Save us from every enemy and ambush, from robbers and wild beasts on the way, and from all kinds of punishments that assail the world. Send blessing in our handiwork, and grant us grace, kindness and mercy in Your eyes and in the eyes of all who see us. Hear the voice of our supplications, for You are a G‑d Who hears prayer and supplication. Blessed are You, Lord, Who hears prayer.",
     src: "Berachos 29b–30a; Siddur", act: ["coin"] },
-  { id: "pledge", kind: "pledge", cat: "Peace of Mind", title: "Pledge in the Merit of Rabbi Meir Baal HaNes", blurb: "Give tzedakah to Chabad of Lamorinda in the merit of Rabbi Meir Baal HaNes." },
-
   // ---------- livelihood ----------
   { id: "maaser", cat: "Livelihood", title: "Give maaser — a tenth", blurb: "The Talmud teaches “Aser te’aser — give a tenth so that you will become wealthy” (Taanis 9a). Hashem even invites us to test this: “Bring the full tithe… and test Me in this” (Malachi 3:10). Many set aside a tenth of their income for tzedakah as soon as it arrives.",
     how: ["Work out a tenth of what you earned.", "Set it aside right away — in your pushka, or give it directly."], he: "עשר תעשר — עשר בשביל שתתעשר", en: "“Give a tenth — give a tenth so that you will become wealthy.”", src: "Taanis 9a; Malachi 3:10", act: ["maaser"] },
@@ -98,7 +87,7 @@ const SEGULOS = [
     he: "מוֹדֶה אֲנִי לְפָנֶיךָ, מֶלֶךְ חַי וְקַיָּם, שֶׁהֶחֱזַרְתָּ בִּי נִשְׁמָתִי בְּחֶמְלָה, רַבָּה אֱמוּנָתֶךָ.",
     tr: "Modeh (women: Modah) ani lefanecha, Melech chai v’kayam, shehechezarta bi nishmasi b’chemlah, rabbah emunasecha.",
     en: "I gratefully thank You, living and eternal King, for You have returned my soul within me with compassion — abundant is Your faithfulness.", src: "Siddur" },
-  { id: "hundred-brachos", cat: "Peace of Mind", title: "Say 100 blessings a day", blurb: "Rabbi Meir taught that a person should say one hundred blessings each day (Menachos 43b). Between prayers, meals and everyday blessings, it adds up to a day full of gratitude.",
+  { id: "hundred-brachos", cat: "Peace of Mind", title: "Say 100 blessings a day", blurb: "The Talmud teaches that a person should say one hundred blessings each day (Menachos 43b). Between prayers, meals and everyday blessings, it adds up to a day full of gratitude.",
     how: ["Say the daily prayers and blessings before and after food.", "Add a short thank-you to Hashem whenever something good happens."], src: "Menachos 43b" },
   { id: "tehillim-23", cat: "Peace of Mind", title: "Tehillim 23", blurb: "“The Lord is my shepherd, I shall not want.” A psalm of trust and comfort, often said in times of worry or sorrow.",
     how: ["Say it slowly, one verse at a time."], src: "Psalm 23", links: [{ t: "Read Psalm 23", u: SEF("Psalms.23") }] },

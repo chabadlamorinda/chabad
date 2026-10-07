@@ -1,18 +1,33 @@
-# Chabad of Lamorinda website
+# Chabad of Lamorinda: website and My Pushka app
 
-A simple website: `index.html` (the words), `styles.css` (the look), `render.yaml` (hosting settings).
+* `index.html`, `styles.css`: the main website.
+* `pushka/`: the **My Pushka** app (English and Hebrew), installable on a phone's home screen.
+* `server/`: a small Node server that serves the site and handles **Stripe card payments** for the app.
+* `render.yaml`: tells Render how to host everything.
 
-## Going live on Render (one-time setup)
-1. Go to https://render.com and click **Get Started** → **Sign up with GitHub**.
-2. Click **New +** → **Blueprint**.
-3. Choose the `chabadlamorinda/chabad` repository (click "Configure account" to grant access if it's not listed).
-4. Pick the branch `main`, then click **Apply**.
-5. Wait ~1 minute. Your site is live at `https://chabad-lamorinda.onrender.com` (the exact link is shown on the dashboard).
+## How giving works
+1. A donor drops coins into their pushka (it only tracks the pledge; nothing is charged yet).
+2. When they empty it (or tap Donate / Give), the app saves their card with **Stripe** the first time, then charges that card automatically. No redirect to another website.
+3. Stripe emails the receipt. Monthly gifts are Stripe subscriptions the donor can cancel in the app.
 
-## Editing the site (no coding needed)
-1. On GitHub, open `index.html` and click the pencil ✏️ icon.
-2. Change the text. Replace anything in `[SQUARE BRACKETS]`.
-3. Click **Commit changes**. Render updates the live site in about a minute.
+Card numbers never touch this server; Stripe.js collects them and Stripe stores them.
 
-## Using your own domain (e.g. chabadoflamorinda.com)
-In Render: your site → **Settings** → **Custom Domains** → **Add**, then copy the records it shows into your domain registrar's DNS settings.
+## Turning on card payments (one time)
+1. Create a Stripe account for Chabad of Lamorinda and finish its business and bank details.
+2. In Stripe, turn on **Test mode**, then **Developers → API keys**. Copy the **Publishable key** (`pk_test_…`) and **Secret key** (`sk_test_…`).
+3. In Render, open the **chabad-lamorinda-app** service → **Environment** and add:
+   * `STRIPE_PUBLISHABLE_KEY` = the `pk_test_…` key
+   * `STRIPE_SECRET_KEY` = the `sk_test_…` key
+   (`SESSION_SECRET` is generated automatically.)
+4. In Stripe: **Settings → Customer emails**, turn on **Successful payments** so donors receive receipts.
+5. Open the app on the new service's address and try a gift with the test card `4242 4242 4242 4242` (any future date, any CVC). More test cards: `4000 0025 0000 3155` (bank verification), `4000 0000 0000 9995` (declined).
+6. When it all works, replace both keys with the **live** ones (`pk_live_…`, `sk_live_…`) from Stripe with Test mode switched off.
+
+Without these keys the app still works: it falls back to sending the donor to the website's donation page.
+
+## Developing
+```
+npm install
+npm test            # server tests (a fake Stripe, no network)
+SESSION_SECRET=any-long-random-string npm start
+```
