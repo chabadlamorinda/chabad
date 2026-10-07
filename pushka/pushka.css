@@ -198,3 +198,10 @@ html[dir=rtl] input[type=number]{text-align:right}
 .seg-main{all:unset;cursor:pointer;flex:1;min-width:0;display:block}
 .seg-main:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .btn.seg-give{flex:none;min-height:36px;padding:0 14px;font-size:14px}
+
+.amts.three{grid-template-columns:repeat(3,1fr)}
+.chk{display:flex;align-items:center;gap:10px;font-size:14px;cursor:pointer;min-height:44px}
+.chk input{width:20px;height:20px;accent-color:var(--accent);flex:none}
+.card b{font-weight:600}
+.fundlist{max-height:34vh;overflow:auto}
+a.btn.cta{text-decoration:none}

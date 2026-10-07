@@ -85,7 +85,7 @@ test('donate: no card -> 400; with card -> charges saved card in cents, with rec
   const [, p, o] = c.stripe._st.calls.find((x) => x[0] === 'paymentIntents.create');
   assert.equal(p.amount, 180); assert.equal(p.currency, 'usd'); assert.equal(p.payment_method, pm.id);
   assert.equal(p.off_session, true); assert.equal(p.confirm, true); assert.equal(p.receipt_email, 'donor@example.com');
-  assert.deepEqual(p.metadata, { source: 'pushka', fund: 'general', dedication: 'In honor of Mom' });
+  assert.deepEqual(p.metadata, { source: 'pushka', fund: 'general', dedication: 'In honor of Mom', fee_covered: 'no', gift_cents: '180' });
   assert.equal(o.idempotencyKey, 'pushka-donate-idem-1234567890abcdef');
 });
 
@@ -141,14 +141,14 @@ test('payment lookup only returns your own payments', async (t) => {
 
 test('monthly gift: creates product + subscription, lists it, cancels it', async (t) => {
   const c = await signedIn(t); c.stripe.addCard(c.token.split('.')[0]);
-  const r = await c.call('POST', '/api/subscribe', gift({ amount: 18, fund: 'school', idem: 'idem-sub-00000000000001' }), c.token);
+  const r = await c.call('POST', '/api/subscribe', gift({ amount: 18, fund: 'preschool', idem: 'idem-sub-00000000000001' }), c.token);
   assert.equal(r.status, 200); assert.equal(r.json.status, 'active'); assert.equal(r.json.receiptUrl, 'https://invoice.stripe.com/i/test');
-  assert.ok(c.stripe._st.products['pushka-monthly-school']);
+  assert.ok(c.stripe._st.products['pushka-monthly-preschool']);
   const [, p] = c.stripe._st.calls.find((x) => x[0] === 'subscriptions.create');
   assert.equal(p.items[0].price_data.unit_amount, 1800); assert.deepEqual(p.items[0].price_data.recurring, { interval: 'month' });
   assert.equal(p.off_session, true); assert.equal(p.payment_behavior, 'error_if_incomplete');
   const list = await c.call('GET', '/api/subscriptions', null, c.token);
-  assert.equal(list.json.subscriptions.length, 1); assert.equal(list.json.subscriptions[0].amount, 18); assert.equal(list.json.subscriptions[0].fund, 'school'); assert.equal(list.json.subscriptions[0].next, 1893456000000);
+  assert.equal(list.json.subscriptions.length, 1); assert.equal(list.json.subscriptions[0].amount, 18); assert.equal(list.json.subscriptions[0].fund, 'preschool'); assert.equal(list.json.subscriptions[0].next, 1893456000000);
   assert.equal((await c.call('DELETE', '/api/subscriptions/' + r.json.id, null, c.token)).status, 200);
   assert.equal((await c.call('GET', '/api/subscriptions', null, c.token)).json.subscriptions.length, 0);
 });
@@ -183,4 +183,30 @@ test('rate limit: too many donate attempts get 429', async (t) => {
   const c = await signedIn(t); c.stripe.addCard(c.token.split('.')[0]);
   let last; for (let i = 0; i < 32; i++) last = await c.call('POST', '/api/donate', gift({ amount: 0 }), c.token);
   assert.equal(last.status, 429);
+});
+
+test('every website fund is accepted; old fund ids are not', async (t) => {
+  const c = await signedIn(t); c.stripe.addCard(c.token.split('.')[0]);
+  const ids = ['general', 'chai', 'preschool', 'market', 'building', 'holidays', 'synagogue', 'endyear', 'children', 'pledge'];
+  for (const [i, fund] of ids.entries()) assert.equal((await c.call('POST', '/api/donate', gift({ fund, idem: 'idem-fund-0000000000' + String(i).padStart(2, '0') }), c.token)).status, 200, fund);
+  assert.equal((await c.call('POST', '/api/donate', gift({ fund: 'school' }), c.token)).json.code, 'invalid_fund');
+});
+
+test('processing-fee option adds 3.5% and records the original gift', async (t) => {
+  const c = await signedIn(t); c.stripe.addCard(c.token.split('.')[0]);
+  await c.call('POST', '/api/donate', gift({ amount: 180, fee: true, idem: 'idem-fee-000000000001' }), c.token);
+  let p = c.stripe._st.calls.filter((x) => x[0] === 'paymentIntents.create').pop()[1];
+  assert.equal(p.amount, 18630); assert.equal(p.metadata.fee_covered, 'yes'); assert.equal(p.metadata.gift_cents, '18000');
+  await c.call('POST', '/api/donate', gift({ amount: 180, fee: 'yes', idem: 'idem-fee-000000000002' }), c.token);
+  p = c.stripe._st.calls.filter((x) => x[0] === 'paymentIntents.create').pop()[1];
+  assert.equal(p.amount, 18000); assert.equal(p.metadata.fee_covered, 'no');
+  await c.call('POST', '/api/subscribe', gift({ amount: 360, fee: true, idem: 'idem-fee-000000000003' }), c.token);
+  assert.equal(c.stripe._st.calls.filter((x) => x[0] === 'subscriptions.create').pop()[1].items[0].price_data.unit_amount, 37260);
+});
+
+test('customer: optional phone and address are stored', async (t) => {
+  const c = await start(); t.after(c.close);
+  await c.call('POST', '/api/customer', { name: 'A B', email: 'a@b.co', phone: '555-1234', address: '1 Main St, Lafayette CA' });
+  const cus = Object.values(c.stripe._st.customers)[0];
+  assert.equal(cus.phone, '555-1234'); assert.equal(cus.metadata.address, '1 Main St, Lafayette CA');
 });

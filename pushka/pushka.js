@@ -7,14 +7,32 @@ const CANDLE_ZIP = "94549";                                      // Lafayette, C
 const SITE_EMAIL = "rabbi@chabadoflamorinda.com";
 const KEY = "lamorinda-pushka-v4";
 
+const SITE = "https://www.chabadoflamorinda.com";
+const C3_HTML = `<bdi dir="ltr" style="white-space:nowrap">501(c)(3)</bdi>`;
+const EIN_HTML = `<bdi dir="ltr">47-4642750</bdi>`;
+const ORG_EIN = "47-4642750", ORG_PHONE = "925-384-7242", ORG_ADDR = "3477 Golden Gate Way, Lafayette, CA 94549", VENMO = "CHABAD-LAMORINDA";
+const ZELLE_EMAIL = ""; // the Zelle address from chabadoflamorinda.com/4970020 (it is hidden on the website by an anti-spam filter)
+const STOCK_URL = SITE + "/templates/articlecco_cdo/aid/5322044/jewish/Stock-Donations.htm", CRYPTO_URL = SITE + "/templates/articlecco_cdo/aid/5322110/jewish/Crypto-Donations.htm", BUILD_URL = SITE + "/templates/articlecco_cdo/aid/5322043/jewish/Building-Campaign.htm";
+const FEE_RATE = 0.035, MAX_CARD = 10000;
+// The same funds, amounts and options as chabadoflamorinda.com/4970020
 const FUNDS = [
-  { id: "general", name: "General Fund", desc: "Where it’s needed most", long: "Supports the day-to-day work of Chabad of Lamorinda: holiday programs, Shabbat dinners and outreach across Lafayette, Moraga and Orinda." },
-  { id: "school", name: "Hebrew School", desc: "Tuition aid and classroom supplies", long: "Helps every child attend Hebrew School regardless of means, and keeps classrooms stocked with books and materials." },
-  { id: "shabbat", name: "Shabbat & Kiddush", desc: "Weekly meals for the community", long: "Sponsors the weekly Kiddush and community Shabbat meals that bring families together." },
-  { id: "chesed", name: "Chesed Fund", desc: "Quiet help for families in need", long: "Provides confidential assistance with groceries, rent and emergencies for local families." },
+  { id: "general", name: "General Fund", desc: "Where it’s needed most", long: "Supports the day-to-day work of Chabad of Lamorinda across Lafayette, Moraga and Orinda." },
+  { id: "chai", name: "Chai Club", desc: "", long: "A gift to the Chai Club at Chabad of Lamorinda." },
+  { id: "preschool", name: "Jewish Preschool Scholarships", desc: "Helping every child attend", long: "Scholarships that help children attend the Jewish Preschool." },
+  { id: "market", name: "Bay Kosher Market", desc: "", long: "Supports the Bay Kosher market." },
+  { id: "building", name: "Building Campaign", desc: "The new Center for Jewish Life", long: "Helps build the new Center for Jewish Life at 3477 Golden Gate Way in Lafayette: a synagogue, event space, Hebrew school and preschool classrooms, a kosher market and more." },
+  { id: "holidays", name: "Holiday Programs", desc: "", long: "Supports Chabad of Lamorinda’s holiday programs and community celebrations." },
+  { id: "synagogue", name: "Synagogue", desc: "", long: "Supports the synagogue and its services." },
+  { id: "endyear", name: "End of Year Campaign", desc: "", long: "A gift to the End of Year Campaign." },
+  { id: "children", name: "Children Events", desc: "", long: "Supports events for children." },
+  { id: "pledge", name: "Pledge", desc: "", long: "Use this to pay toward a pledge you have already made." },
 ];
-const GIVE_AMTS = [18, 36, 72, 180];
-const METHOD = { online: "Online", check: "Check", wire: "Wire", daf: "DAF" };
+const LEGACY = { school: "preschool", shabbat: "synagogue", chesed: "general" };
+const GIVE_AMTS = [180, 360, 1000, 1800, 3600, 7200];
+const LEVELS = [["Visionary", 1000000], ["Founder", 500000], ["Pioneer", 250000], ["Builder", 100000], ["Pillar", 50000], ["Partner", 25000], ["Benefactor", 18000], ["Sustainer", 10000], ["Patron", 5000], ["Supporter", 1800]];
+const SPONSORS = [["kiddush", "Sponsor a Kiddush", "synagogue"], ["simchat", "Simchat Torah sponsorship", "holidays"], ["pesach", "Passover sponsorships", "holidays"], ["dinner", "Holiday dinner sponsorships (Rosh Hashanah, Sukkot, Shavuot)", "holidays"]];
+const WAYS = () => [["zelle", "Zelle", I.card], ["venmo", "Venmo", I.card], ["daf", "Donor Advised Fund", I.file], ["check", "Check", I.file], ["wire", "Wire / ACH", I.swap], ["stock", "Stock", I.give], ["crypto", "Cryptocurrency", I.give]];
+const METHOD = { online: "Online", zelle: "Zelle", venmo: "Venmo", daf: "DAF", check: "Check", wire: "Wire" };
 const EMPTY_MODES = { manual: "Manual empty", full: "When full", friday: "Every Friday", monthly: "Monthly" };
 const API = { enabled: false, pk: "", live: false, card: null, subs: null };
 
@@ -25,7 +43,7 @@ const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&":
 const nl = (s) => esc(s).replace(/\n/g, "<br>");
 const uid = () => Math.random().toString(36).slice(2, 10);
 const r2 = (n) => Math.round(n * 100) / 100;
-const fundOf = (id) => FUNDS.find((f) => f.id === id) || FUNDS[0];
+const fundOf = (id) => FUNDS.find((f) => f.id === (LEGACY[id] || id)) || FUNDS[0];
 const money = (n) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: Number.isInteger(+n) ? 0 : 2, maximumFractionDigits: 2 }).format(n);
 const money2 = (n) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n);
 const dkey = (d) => d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate();
@@ -230,16 +248,18 @@ function askDetails() {
     sheet(`<div><h3>${t("Your details")}</h3><div class="h-s" style="font-size:13px">${t("We need your name and email to send your receipt.")}</div></div>
       <div class="field"><label for="dn1">${t("Name")}</label><input class="input" id="dn1" autocomplete="name" maxlength="100" value="${esc(S.name)}"></div>
       <div class="field"><label for="dn2">${t("Email")}</label><input class="input" id="dn2" type="email" autocomplete="email" maxlength="254" value="${esc(S.email)}"></div>
+      <div class="field"><label for="dn3">${t("Phone (optional)")}</label><input class="input" id="dn3" type="tel" autocomplete="tel" maxlength="30" value="${esc(S.phone)}"></div>
+      <div class="field"><label for="dn4">${t("Mailing address (optional)")}</label><input class="input" id="dn4" autocomplete="street-address" maxlength="200" value="${esc(S.address)}"></div>
       <div id="dnErr" class="err" role="alert"></div><button class="btn btn-primary cta" id="dnGo">${t("Continue")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`,
-    (o) => { $("#dnGo", o).onclick = () => { const n = $("#dn1", o).value.trim(), e = $("#dn2", o).value.trim(); if (!n) { $("#dnErr", o).textContent = tt("Please enter your name."); return; } if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e)) { $("#dnErr", o).textContent = tt("Please enter a valid email address."); return; } S.name = n; S.email = e; save(); res(true); closeSheet(); }; },
+    (o) => { $("#dnGo", o).onclick = () => { const n = $("#dn1", o).value.trim(), e = $("#dn2", o).value.trim(); if (!n) { $("#dnErr", o).textContent = tt("Please enter your name."); return; } if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e)) { $("#dnErr", o).textContent = tt("Please enter a valid email address."); return; } S.name = n; S.email = e; S.phone = $("#dn3", o).value.trim(); S.address = $("#dn4", o).value.trim(); save(); res(true); closeSheet(); }; },
     () => res(false));
   });
 }
 async function ensureCustomer() {
   if (!S.name || !S.email) { if (!(await askDetails())) return false; }
-  const sig = S.name + "|" + S.email;
+  const sig = [S.name, S.email, S.phone, S.address].join("|");
   if (S.token && S.synced === sig) return true;
-  const r = await api("/customer", { method: "POST", body: { name: S.name, email: S.email } }); S.token = r.token; S.synced = sig; save(); return true;
+  const r = await api("/customer", { method: "POST", body: { name: S.name, email: S.email, phone: S.phone, address: S.address } }); S.token = r.token; S.synced = sig; save(); return true;
 }
 async function addCard() {
   try { if (!(await ensureCustomer())) return false; } catch (e) { toast(errText(e)); return false; }
@@ -274,7 +294,7 @@ async function chargeFlow(p) {
   U.busy = true;
   sheet(`<div class="done"><div class="spin" aria-hidden="true"></div><h3>${t("Processing your gift…")}</h3><div class="h-s">${t("Please don’t close this window.")}</div></div>`, null, null, true);
   try {
-    const body = { amount: p.amt, fund: p.fund, dedication: p.ded || "", idem: uid() + uid() + uid() };
+    const body = { amount: p.amt, fund: p.fund, dedication: p.ded || "", fee: !!p.fee, idem: uid() + uid() + uid() };
     let r = await api(p.freq === "monthly" ? "/subscribe" : "/donate", { method: "POST", body });
     if (r.status === "requires_action") {
       const stripe = await loadStripe();
@@ -336,7 +356,7 @@ function showLock() { const el = $("#lock"); el.hidden = false; el.innerHTML = `
 
 // ---------- page chrome ----------
 const TABS = [["home", "Pushka", I.home], ["give", "Give", I.give], ["wallet", "Wallet", I.wallet], ["history", "History", I.history], ["more", "More", I.more]];
-const tabOf = (pg) => (["segulot", "segulah", "quotes"].includes(pg) ? "give" : ["home", "give", "wallet", "history"].includes(pg) ? pg : "more");
+const tabOf = (pg) => (["segulot", "segulah", "quotes", "building", "otherways"].includes(pg) ? "give" : ["home", "give", "wallet", "history"].includes(pg) ? pg : "more");
 const sub = (title, body) => `<div class="head sub"><button class="icon-btn" data-act="back" aria-label="${t("Back")}">${ico(I.back, 24, FLIP)}</button><h1>${esc(title)}</h1><span style="width:44px"></span></div><div class="scroll"><div class="col tight" style="padding-top:var(--s4)">${body}</div></div>`;
 const chev = () => `<span style="color:var(--accent)">${ico(I.chev, 18, FLIP)}</span>`;
 const rowLink = (act, v, icon, title, subt) => `<button class="row-btn" data-act="${act}" data-v="${esc(v)}"><span style="color:var(--accent);flex:none">${ico(icon, 22)}</span><div class="grow"><div class="fund-n">${esc(title)}</div>${subt ? `<div class="fund-d">${esc(subt)}</div>` : ""}</div>${chev()}</button>`;
@@ -386,21 +406,52 @@ PG.home = () => {
   </div></div>`;
 };
 
+const TAXNOTE = () => `<p class="note">${t("Chabad of Lamorinda is a {c3} nonprofit, Tax ID {ein}. 100% of the proceeds of your gift benefit Chabad of Lamorinda.", { c3: C3_HTML, ein: EIN_HTML })}</p>`;
+const withFee = (a) => Math.round(Math.round(a * 100) * (1 + FEE_RATE)) / 100;
+const feeOn = () => API.enabled && S.coverFee;
+const totalOf = (a) => (feeOn() ? withFee(a) : a);
+const feeBox = () => (API.enabled ? `<label class="chk"><input type="checkbox" data-chg="fee" ${S.coverFee ? "checked" : ""}><span>${t("Cover the processing fee (3.5%)")}</span></label>` : "");
+const giveCtaText = () => (U.freq === "monthly" ? t("Give {amt} monthly", { amt: money(totalOf(U.giveAmt)) }) : t("Give {amt}", { amt: money(totalOf(U.giveAmt)) }));
 PG.give = () => {
-  if (!U.giveFund) return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("Give")}</h1><div class="sub">${t("A direct gift to one of our funds.")}</div></div>
-    ${sec(t("Give to a fund"))}<div>${FUNDS.map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div><div class="fund-d">${t(f.desc)}</div></div>${chev()}</button>`).join("")}</div>
-    ${sec(t("Give for a segulah"))}<div>${rowLink("go", "segulot", I.book, tt("Segulot & Prayers"), tt("Choose a segulah and how much to give"))}</div></div></div>`;
-  const f = fundOf(U.giveFund), cta = U.freq === "monthly" ? t("Give {amt} monthly", { amt: money(U.giveAmt) }) : t("Give {amt}", { amt: money(U.giveAmt) });
+  if (!U.giveFund) return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("Give")}</h1><div class="sub">${t("A direct gift to Chabad of Lamorinda.")}</div></div>
+    ${sec(t("Give to a fund"))}<div>${FUNDS.map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div>${f.desc ? `<div class="fund-d">${t(f.desc)}</div>` : ""}</div>${chev()}</button>`).join("")}</div>
+    ${sec(t("Building Campaign"))}<div>${rowLink("go", "building", I.home, tt("Center for Jewish Life"), tt("Giving levels and the Wall of Honor"))}</div>
+    ${sec(t("Sponsorships"))}<div>${SPONSORS.map(([id, name]) => rowLink("sponsor", id, I.flame, tt(name), "")).join("")}</div>
+    ${sec(t("Give for a segulah"))}<div>${rowLink("go", "segulot", I.book, tt("Segulot & Prayers"), tt("Choose a segulah and how much to give"))}</div>
+    ${sec(t("Other ways to give"))}<div>${rowLink("go", "otherways", I.card, tt("Zelle, Venmo, check, stock and more"), "")}</div>${TAXNOTE()}</div></div>`;
+  const f = fundOf(U.giveFund);
   return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col tight" style="padding-top:0">
     <button class="btn btn-ghost" data-act="allFunds" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)}${t("All funds")}</button>
     <div class="page-h"><div class="kicker">${t("Give to")}</div><h2 style="margin:2px 0 4px">${t(f.name)}</h2><p style="margin:0;font-size:13px;text-align:justify;color:var(--n800)">${t(f.long)}</p></div>
-    <div class="field"><label>${t("Amount")}</label><div class="amts">${GIVE_AMTS.map((a) => `<button class="btn btn-secondary ${U.giveAmt === a ? "sel" : ""}" data-act="amt" data-v="${a}">${money(a)}</button>`).join("")}</div>
+    <div class="field"><label>${t("Amount")}</label><div class="amts three">${GIVE_AMTS.map((a) => `<button class="btn btn-secondary ${U.giveAmt === a ? "sel" : ""}" data-act="amt" data-v="${a}">${money(a)}</button>`).join("")}</div>
       <input class="input" id="giveCustom" data-inp="giveCustom" type="number" min="1" step="0.01" inputmode="decimal" aria-label="${t("Other amount")}" placeholder="${t("Other amount")}" style="margin-top:6px"></div>
     <div class="field"><label>${t("Frequency")}</label><div class="seg"><label><input type="radio" name="freq" value="once" data-chg="freq" ${U.freq === "once" ? "checked" : ""}>${t("One time")}</label><label><input type="radio" name="freq" value="monthly" data-chg="freq" ${U.freq === "monthly" ? "checked" : ""}>${t("Monthly")}</label></div></div>
-    <div class="field"><label for="ded">${t("Dedication (optional)")}</label><input class="input" id="ded" data-inp="ded" maxlength="80" placeholder="${t("In honor of / in memory of…")}" value="${esc(U.dedication)}"></div>
+    <div class="field"><label for="ded">${t("Dedication or note (optional)")}</label><input class="input" id="ded" data-inp="ded" maxlength="80" placeholder="${t("In honor of / in memory of…")}" value="${esc(U.dedication)}"></div>
+    ${feeBox()}
     <div class="h-s" style="display:flex;align-items:center;gap:8px;font-size:13px">${ico(I.card, 16)}${API.enabled ? (API.card ? esc(cardLabel()) : t("You’ll add a card when you give")) : t("Payment completes on our secure donation page")}</div>
-    <button class="btn btn-primary cta" id="giveCta" data-act="submitGive">${cta}</button></div></div>`;
+    <button class="btn btn-primary cta" id="giveCta" data-act="submitGive">${giveCtaText()}</button>${TAXNOTE()}</div></div>`;
 };
+
+// ----- building campaign & other ways to give -----
+PG.building = () => sub(tt("Building Campaign"), `<p class="body-p">${t("Chabad of Lamorinda is building a new Center for Jewish Life at 3477 Golden Gate Way in Lafayette: a synagogue, event space, Hebrew school and preschool classrooms, a kosher market and a commercial kitchen, with a mikvah and more floors planned for later phases.")}</p>
+  ${sec(t("Giving levels"))}<div>${LEVELS.map(([n, a]) => `<button class="row-btn" data-act="level" data-v="${n}"><div class="grow"><div class="fund-n">${t(n)}</div></div><div class="h-a">${money(a)}</div>${chev()}</button>`).join("")}</div>
+  <p class="note">${t("Gifts are recognized on the Wall of Honor. Larger gifts can also be made by check, wire, stock or crypto.")}</p>
+  <a class="btn btn-secondary cta" href="${BUILD_URL}" target="_blank" rel="noopener">${t("Learn more about the campaign")}</a>${TAXNOTE()}`);
+PG.otherways = () => sub(tt("Other ways to give"), `<div>${WAYS().map(([id, name, ic]) => rowLink("way", id, ic, tt(name), "")).join("")}</div><div class="card" style="flex-direction:column;align-items:flex-start;gap:4px"><div class="card-title">${t("Chabad of Lamorinda")}</div><a href="tel:${ORG_PHONE.replace(/-/g, "")}" dir="ltr">${ORG_PHONE}</a><a href="mailto:${SITE_EMAIL}">${SITE_EMAIL}</a><span dir="ltr">${esc(ORG_ADDR)}</span></div>${TAXNOTE()}`);
+function waysHtml(id) {
+  const ein = EIN_HTML, copy = (v) => `<button class="btn btn-ghost" data-act="copy" data-v="${esc(v)}">${t("Copy")}</button>`, link = (u, l) => `<a class="btn btn-secondary cta" href="${esc(u)}" target="_blank" rel="noopener">${l}</a>`;
+  return ({
+    zelle: ZELLE_EMAIL ? `<p>${t("Send your gift by Zelle to:")}</p><div class="card"><b dir="ltr" style="flex:1">${esc(ZELLE_EMAIL)}</b>${copy(ZELLE_EMAIL)}</div>` : `<p>${t("Send your gift by Zelle to the address shown on our donation page, or ask us for it.")}</p>${link(SITE + "/4970020", t("Open our donation page"))}`,
+    venmo: `<p>${t("Send your gift on Venmo to:")}</p><div class="card"><b dir="ltr" style="flex:1">@${VENMO}</b>${copy("@" + VENMO)}</div>${link("https://venmo.com/u/" + VENMO, t("Open Venmo"))}`,
+    daf: `<p>${t("Recommend a grant from your donor advised fund to Chabad of Lamorinda (Tax ID {ein}).", { ein })}</p><div class="card"><span dir="ltr" style="flex:1">${esc(ORG_ADDR)}</span>${copy(ORG_ADDR)}</div>`,
+    check: `<p>${t("Make your check payable to Chabad of Lamorinda and mail it to:")}</p><div class="card"><span dir="ltr" style="flex:1">${esc(ORG_ADDR)}</span>${copy(ORG_ADDR)}</div>`,
+    wire: `<p>${t("Call or email us for wire and ACH details.")}</p>`,
+    stock: `<p>${t("Donate stock securely through our StockDonator page.")}</p>${link(STOCK_URL, t("Donate stock"))}`,
+    crypto: `<p>${t("Cryptocurrency gifts are welcome. See our page for details, or call us.")}</p>${link(CRYPTO_URL, t("Donate cryptocurrency"))}`,
+  })[id] || "";
+}
+const contactBtns = (subject) => `<div class="row2"><a class="btn btn-ghost" href="tel:${ORG_PHONE.replace(/-/g, "")}" dir="ltr">${ORG_PHONE}</a><a class="btn btn-ghost" href="mailto:${SITE_EMAIL}?subject=${encodeURIComponent(subject)}">${t("Email us")}</a></div>`;
+
 
 PG.wallet = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0">
   <div class="page-h"><h1>${t("Wallet")}</h1><div class="sub">${t("Set aside funds now for emptying your pushka later.")} <button class="link" data-act="walletLearn">${t("Learn more")}</button></div></div>
@@ -413,7 +464,7 @@ PG.wallet = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(s
 
 function histTitle(h) { if (h.title) return h.title; if (h.kind === "coin") return tt(h.ttl === "maaser" ? "Maaser added" : "Coin dropped"); return (h.fp ? tt("Pushka emptied →") + " " : "") + tt(fundOf(h.fund).name); }
 function histMeta(h) {
-  if (h.kind === "gift" && h.fund) { const a = []; if (h.freq === "monthly") a.push(tt("Monthly")); else if (!h.fp) a.push(tt("One time")); if (h.method && h.method !== "online") a.push(tt(METHOD[h.method]) + " (" + tt("pending") + ")"); if (h.ded) a.push(h.ded); return a.join(" · "); }
+  if (h.kind === "gift" && h.fund) { const a = []; if (h.freq === "monthly") a.push(tt("Monthly")); else if (!h.fp) a.push(tt("One time")); if (h.method && h.method !== "online") a.push(tt(METHOD[h.method]) + " (" + tt("pending") + ")"); if (h.fee) a.push(tt("incl. processing fee")); if (h.ded) a.push(h.ded); return a.join(" · "); }
   return h.meta || "";
 }
 PG.history = () => {
@@ -529,6 +580,18 @@ document.addEventListener("input", (e) => { const el = e.target.closest("[data-i
 document.addEventListener("keydown", (e) => { if ((e.key === "Enter" || e.key === " ") && e.target.matches('[role="button"][data-act]')) { e.preventDefault(); e.target.click(); } });
 
 A.closeSheet = () => closeSheet();
+A.fee = (v, el) => { S.coverFee = el.checked; save(); refreshCtas(); };
+function refreshCtas() { const g = $("#giveCta"); if (g) g.innerHTML = giveCtaText(); const x = $("#segGo"); if (x) x.innerHTML = segGiftText(); const e = $("#emptyGo"); if (e) e.innerHTML = emptyCtaText(); const d = $("#donGo"); if (d) d.innerHTML = donCtaText(); }
+A.emptyAmt = () => refreshCtas(); A.donAmt = () => refreshCtas(); A.emptyPay = () => refreshCtas();
+A.copy = (v) => { try { navigator.clipboard.writeText(v).then(() => toast(tt("Copied"))); } catch (e) { toast(v); } };
+A.way = (id) => { const name = tt(WAYS().find((w) => w[0] === id)[1]); sheet(`<h3>${esc(name)}</h3>${waysHtml(id)}${contactBtns("Giving by " + name)}<p class="note">${t("Chabad of Lamorinda is a {c3} nonprofit, Tax ID {ein}. 100% of the proceeds of your gift benefit Chabad of Lamorinda.", { c3: C3_HTML, ein: EIN_HTML })}</p><button class="btn btn-primary cta" data-act="closeSheet">${t("Close")}</button>`); };
+A.sponsor = (v) => { const sp = SPONSORS.find((x) => x[0] === v); Object.assign(U, { giveFund: sp[2], giveAmt: 360, freq: "once", dedication: tt("Sponsorship: {name}", { name: tt(sp[1]) }).slice(0, 80) }); U.stack = []; U.page = "give"; draw(); };
+A.level = (v) => {
+  const L = LEVELS.find((x) => x[0] === v);
+  if (L[1] > MAX_CARD) return sheet(`<div><h3>${t("{level} · {amt}", { level: t(L[0]), amt: money(L[1]) })}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("For gifts of this size, please contact us. We’ll help you give by check, wire, stock, crypto or donor advised fund.")}</div></div>${contactBtns("Building Campaign: " + L[0])}<button class="btn btn-secondary cta" data-act="goWays">${t("Other ways to give")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Close")}</button>`);
+  Object.assign(U, { giveFund: "building", giveAmt: L[1], freq: "once", dedication: tt("Building Campaign: {level}", { level: tt(L[0]) }).slice(0, 80) }); U.stack = []; U.page = "give"; draw();
+};
+A.goWays = () => { closeSheet(); U.stack = []; U.page = "otherways"; U.stack.push("give"); draw(); };
 A.tab = (v) => { U.stack = []; U.page = v; if (v === "give") U.giveFund = null; draw(); };
 A.go = (v) => { U.stack.push(U.page); U.page = v; draw(); };
 A.back = () => { U.page = U.stack.pop() || "more"; draw(); };
@@ -554,29 +617,31 @@ A.other = () => sheet(`<h3>${t("Drop a coin")}</h3><div class="field"><label for
 A.otherGo = () => { const v = parseFloat($("#oa").value); if (!(v > 0) || v > 100000) return toast(tt("Enter a valid amount")); closeSheet(); drop(v); };
 
 // emptying & giving
+const emptyCtaText = () => { const p = P(); let base = p.balance; if (S.partial) { const v = parseFloat(($("#ea") || {}).value); base = v > 0 ? v : 0; } const payOnline = (($("select[name=pm]") || {}).value || "online") === "online"; return `${API.enabled ? t("Send") : t("Give")} ${base > 0 ? money2(payOnline ? totalOf(base) : base) : ""}`; };
 function openEmpty() {
   const p = P(); if (p.balance <= 0) return toast(tt("Your pushka is empty"));
   const sub1 = API.enabled && API.card ? t("{amt} will be charged to {card} and sent to:", { amt: money2(p.balance), card: `<bdi>${esc(cardLabel())}</bdi>` }) : t("{amt} will be given to Chabad of Lamorinda. Choose a fund:", { amt: money2(p.balance) });
   sheet(`<div><h3>${t("Empty your pushka")}</h3><div class="h-s" style="font-size:13px">${sub1}</div></div>
-    ${S.partial ? `<div class="field"><label for="ea">${t("Amount to give (up to {max})", { max: money2(p.balance) })}</label><input class="input" id="ea" type="number" min="0.01" max="${p.balance}" step="0.01" value="${p.balance}"></div>` : ""}
-    <div>${FUNDS.map((f, i) => `<label class="radio"><input type="radio" name="fund" value="${f.id}" ${i === 0 ? "checked" : ""}><span class="dot"></span><span class="nm">${t(f.name)}</span></label>`).join("")}</div>
-    ${S.addl ? `<div class="field"><label>${t("Pay by")}</label><div class="seg">${Object.entries(METHOD).map(([k, v], i) => `<label><input type="radio" name="pm" value="${k}" ${i === 0 ? "checked" : ""}>${k === "online" && API.enabled ? t("Card") : t(v)}</label>`).join("")}</div></div>` : ""}
-    <button class="btn btn-primary cta" data-act="confirmEmpty">${API.enabled ? t("Send") : t("Give")} ${S.partial ? "" : money2(p.balance)}</button>`);
+    ${S.partial ? `<div class="field"><label for="ea">${t("Amount to give (up to {max})", { max: money2(p.balance) })}</label><input class="input" id="ea" data-inp="emptyAmt" type="number" min="0.01" max="${p.balance}" step="0.01" value="${p.balance}"></div>` : ""}
+    <div class="fundlist">${FUNDS.map((f, i) => `<label class="radio"><input type="radio" name="fund" value="${f.id}" ${i === 0 ? "checked" : ""}><span class="dot"></span><span class="nm">${t(f.name)}</span></label>`).join("")}</div>
+    ${S.addl ? `<div class="field"><label for="pmsel">${t("Pay by")}</label><select class="input" id="pmsel" name="pm" data-chg="emptyPay">${Object.entries(METHOD).map(([k, v]) => `<option value="${k}">${k === "online" && API.enabled ? t("Card") : t(v)}</option>`).join("")}</select></div>` : ""}
+    ${feeBox()}
+    <button class="btn btn-primary cta" id="emptyGo" data-act="confirmEmpty">${emptyCtaText()}</button>`);
 }
 A.openEmpty = openEmpty;
 A.confirmEmpty = () => {
   const p = P(); let amt = p.balance;
   if (S.partial) { amt = r2(parseFloat($("#ea").value)); if (!(amt > 0 && amt <= p.balance + 1e-9)) return toast(tt("Enter an amount up to {max}", { max: money2(p.balance) })); }
-  const fund = ($("input[name=fund]:checked") || {}).value || "general", method = ($("input[name=pm]:checked") || {}).value || "online";
+  const fund = ($("input[name=fund]:checked") || {}).value || "general", method = ($("select[name=pm]") || {}).value || "online";
   closeSheet(); startGift({ amt, fund, freq: "once", ded: "", fromPushka: true, method, pid: p.id });
 };
-A.donateNow = () => sheet(`<div><h3>${t("Donate now")}</h3><div class="h-s" style="font-size:13px">${t("Give directly to Chabad of Lamorinda.")}</div></div><div class="field"><label for="dn">${t("Amount")}</label><input class="input" id="dn" type="number" min="1" step="0.01" inputmode="decimal" value="${P().balance || 18}"></div>${sheetBtns(["donateGo", t("Donate")], ["closeSheet", t("Cancel")])}`);
+const donCtaText = () => t("Give {amt}", { amt: money(totalOf(parseFloat(($("#dn") || {}).value) || 0)) });
+A.donateNow = () => sheet(`<div><h3>${t("Donate now")}</h3><div class="h-s" style="font-size:13px">${t("Give directly to Chabad of Lamorinda.")}</div></div><div class="field"><label for="dn">${t("Amount")}</label><input class="input" id="dn" data-inp="donAmt" type="number" min="1" step="0.01" inputmode="decimal" value="${P().balance || 180}"></div>${feeBox()}<button class="btn btn-primary cta" id="donGo" data-act="donateGo">${donCtaText()}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
 A.donateGo = () => { const v = parseFloat($("#dn").value); if (!(v > 0) || v > 100000) return toast(tt("Enter a valid amount")); closeSheet(); startGift({ amt: r2(v), fund: "general", freq: "once", ded: "", fromPushka: false, method: "online", pid: P().id }); };
-A.fund = (v) => { Object.assign(U, { giveFund: v, giveAmt: 36, freq: "once", dedication: "" }); draw(); };
+A.fund = (v) => { Object.assign(U, { giveFund: v, giveAmt: 360, freq: "once", dedication: "" }); draw(); };
 A.allFunds = () => { U.giveFund = null; draw(); };
-A.giveGeneral = () => { Object.assign(U, { giveFund: "general", giveAmt: 36, freq: "once", dedication: "" }); U.stack = []; U.page = "give"; draw(); };
+A.giveGeneral = () => { Object.assign(U, { giveFund: "general", giveAmt: 360, freq: "once", dedication: "" }); U.stack = []; U.page = "give"; draw(); };
 A.amt = (v) => { U.giveAmt = +v; draw(); };
-const giveCtaText = () => (U.freq === "monthly" ? t("Give {amt} monthly", { amt: money(U.giveAmt) }) : t("Give {amt}", { amt: money(U.giveAmt) }));
 A.giveCustom = (v) => { const n = parseFloat(v); if (n > 0) { U.giveAmt = r2(n); $$(".amts .btn").forEach((b) => b.classList.remove("sel")); const c = $("#giveCta"); if (c) c.innerHTML = giveCtaText(); } };
 A.freq = (v) => { U.freq = v; draw(); };
 A.ded = (v) => { U.dedication = v; };
@@ -586,6 +651,7 @@ A.submitGive = () => { if (!(U.giveAmt > 0) || U.giveAmt > 100000) return toast(
 const donateLink = (p) => `${DONATE_URL}?amount=${encodeURIComponent(p.amt)}&fund=${encodeURIComponent(p.fund)}&frequency=${p.freq}${p.ded ? "&dedication=" + encodeURIComponent(p.ded) : ""}`;
 async function startGift(p) {
   if (p.method && p.method !== "online") return offlineSheet(p);
+  p.fee = !!(feeOn());
   if (API.enabled) return chargeFlow(p);
   U.pending = p;
   sheet(`<div><h3>${t("Finish your gift")}</h3><div class="h-s" style="font-size:13px">${t("We opened our secure donation page for {amt} to the {fund}. Complete it there, then come back and tap below.", { amt: money2(p.amt), fund: t(fundOf(p.fund).name) })}</div></div><button class="btn btn-secondary cta" data-act="reopen">${t("Open donation page again")}</button>${sheetBtns(["finished", t("I’ve completed my gift")], ["closeSheet", t("Not yet")])}`);
@@ -594,16 +660,16 @@ async function startGift(p) {
 A.reopen = () => window.open(donateLink(U.pending), "_blank", "noopener");
 A.finished = () => completeGift(U.pending);
 function offlineSheet(p) {
-  U.pending = p; const m = tt(METHOD[p.method]), body = encodeURIComponent(`Hello,\n\nI would like to give ${money2(p.amt)} to the ${fundOf(p.fund).name} by ${METHOD[p.method]}. Please send me the details.\n\nThank you,\n${S.name}`);
-  sheet(`<div><h3>${t("Give by {method}", { method: esc(m) })}</h3><div class="h-s" style="font-size:13px">${t("Please contact us for {method} details for {amt} to the {fund}. Once you’ve sent it, tap below. We’ll record it as pending until it is received.", { method: esc(m), amt: money2(p.amt), fund: t(fundOf(p.fund).name) })}</div></div><a class="btn btn-secondary cta" href="mailto:${SITE_EMAIL}?subject=${encodeURIComponent("Pushka gift by " + METHOD[p.method])}&body=${body}">${t("Email for details")}</a>${sheetBtns(["finished", t("I’ve sent it")], ["closeSheet", t("Not yet")])}`);
+  U.pending = p; const m = tt(METHOD[p.method]);
+  sheet(`<div><h3>${t("Give by {method}", { method: esc(m) })}</h3><div class="h-s" style="font-size:13px">${t("{amt} to the {fund}. Once you’ve sent it, tap below. We’ll record it as pending until it is received.", { amt: money2(p.amt), fund: t(fundOf(p.fund).name) })}</div></div>${waysHtml(p.method)}${contactBtns("Pushka gift by " + METHOD[p.method])}${sheetBtns(["finished", t("I’ve sent it")], ["closeSheet", t("Not yet")])}`);
 }
 function completeGift(p) {
-  const f = fundOf(p.fund), ts = Date.now(), pu = S.pushkas.find((x) => x.id === p.pid) || P(), offline = p.method && p.method !== "online";
+  const f = fundOf(p.fund), ts = Date.now(), pu = S.pushkas.find((x) => x.id === p.pid) || P(), offline = p.method && p.method !== "online", total = p.fee ? withFee(p.amt) : p.amt;
   if (p.fromPushka) { pu.balance = r2(pu.balance - p.amt); if (pu.balance < 0.005) { pu.balance = 0; pu.drops = 0; S.lastEmptied = ts; } if (S.jingle) clink(7, 0.06, 0); }
-  pushHist({ kind: "gift", t: ts, amt: p.amt, fund: p.fund, fp: !!p.fromPushka, freq: p.freq, method: p.method, ded: p.ded || "", receiptUrl: p.receiptUrl || "", receipt: API.enabled && !offline });
+  pushHist({ kind: "gift", t: ts, amt: total, fee: !!p.fee, fund: p.fund, fp: !!p.fromPushka, freq: p.freq, method: p.method, ded: p.ded || "", receiptUrl: p.receiptUrl || "", receipt: API.enabled && !offline });
   save(); buzz([60, 40, 60]); fanfare(); confetti(); U.pending = null; U.giveFund = null; draw();
   const note = API.enabled && !offline ? (S.email ? t("A receipt is on its way to {email}.", { email: `<bdi>${esc(S.email)}</bdi>` }) : "") : offline ? t("We’ll confirm once your gift is received.") : t("Your receipt will be emailed by our donation page.");
-  sheet(`<div class="done"><div class="ck" style="color:var(--accent)">${ico(I.check, 24)}</div><h3>${t("Todah rabah")}</h3><div style="font-size:14px;max-width:280px">${t("{amt} is on its way to the {fund}.", { amt: money2(p.amt), fund: t(f.name) })}</div><div class="h-s">${note}</div>${p.receiptUrl ? `<a class="btn btn-ghost" href="${esc(p.receiptUrl)}" target="_blank" rel="noopener">${t("View receipt")}</a>` : ""}</div><button class="btn btn-primary cta" data-act="closeSheet">${t("Done")}</button>`);
+  sheet(`<div class="done"><div class="ck" style="color:var(--accent)">${ico(I.check, 24)}</div><h3>${t("Todah rabah")}</h3><div style="font-size:14px;max-width:280px">${t("{amt} is on its way to the {fund}.", { amt: money2(total), fund: t(f.name) })}</div><div class="h-s">${note}</div>${p.receiptUrl ? `<a class="btn btn-ghost" href="${esc(p.receiptUrl)}" target="_blank" rel="noopener">${t("View receipt")}</a>` : ""}</div><button class="btn btn-primary cta" data-act="closeSheet">${t("Done")}</button>`);
 }
 function autoEmpty() {
   const p = P(), now = new Date(); if (p.balance <= 0 || S.emptyMode === "manual" || S.prompted === dkey(now)) return;
@@ -634,22 +700,23 @@ A.maaserWallet = () => soon(tt("Add to wallet"));
 A.maaserDonate = () => { const o = maaserOut(); if (o > 0) startGift({ amt: o, fund: "general", freq: "once", ded: tt("Maaser"), fromPushka: false, method: "online", pid: P().id }); };
 
 // segulos
-const segGiftAmt = { id: "", amt: 36, freq: "once" };
+const segGiftAmt = { id: "", amt: 360, freq: "once" };
 function segGiveSheet() {
   const raw = SEGULOS.find((x) => x.id === segGiftAmt.id), s = SG(raw);
   sheet(`<div><h3>${t("Give for {name}", { name: esc(s.title) })}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Your gift goes to Chabad of Lamorinda, given in the merit of this segulah.")}</div></div>
-    <div class="field"><label>${t("Amount")}</label><div class="amts">${GIVE_AMTS.map((a) => `<button class="btn btn-secondary ${segGiftAmt.amt === a ? "sel" : ""}" data-act="segAmt" data-v="${a}">${money(a)}</button>`).join("")}</div>
+    <div class="field"><label>${t("Amount")}</label><div class="amts three">${GIVE_AMTS.map((a) => `<button class="btn btn-secondary ${segGiftAmt.amt === a ? "sel" : ""}" data-act="segAmt" data-v="${a}">${money(a)}</button>`).join("")}</div>
       <input class="input" id="segCustom" data-inp="segCustom" type="number" min="1" step="0.01" inputmode="decimal" aria-label="${t("Other amount")}" placeholder="${t("Other amount")}" style="margin-top:6px"></div>
     <div class="field"><label>${t("Frequency")}</label><div class="seg"><label><input type="radio" name="sfreq" value="once" data-chg="segFreq" ${segGiftAmt.freq === "once" ? "checked" : ""}>${t("One time")}</label><label><input type="radio" name="sfreq" value="monthly" data-chg="segFreq" ${segGiftAmt.freq === "monthly" ? "checked" : ""}>${t("Monthly")}</label></div></div>
+    ${feeBox()}
     <button class="btn btn-primary cta" id="segGo" data-act="segGo">${segGiftText()}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
 }
-const segGiftText = () => (segGiftAmt.freq === "monthly" ? t("Give {amt} monthly", { amt: money(segGiftAmt.amt) }) : t("Give {amt}", { amt: money(segGiftAmt.amt) }));
-A.segGive = (v) => { Object.assign(segGiftAmt, { id: v, amt: 36, freq: "once" }); segGiveSheet(); };
+const segGiftText = () => (segGiftAmt.freq === "monthly" ? t("Give {amt} monthly", { amt: money(totalOf(segGiftAmt.amt)) }) : t("Give {amt}", { amt: money(totalOf(segGiftAmt.amt)) }));
+A.segGive = (v) => { Object.assign(segGiftAmt, { id: v, amt: 360, freq: "once" }); segGiveSheet(); };
 A.segAmt = (v) => { segGiftAmt.amt = +v; segGiveSheet(); };
 A.segCustom = (v) => { const n = parseFloat(v); if (n > 0) { segGiftAmt.amt = r2(n); $$("#overlay .amts .btn").forEach((b) => b.classList.remove("sel")); const g = $("#segGo"); if (g) g.innerHTML = segGiftText(); } };
 A.segFreq = (v) => { segGiftAmt.freq = v === "monthly" ? "monthly" : "once"; const g = $("#segGo"); if (g) g.innerHTML = segGiftText(); };
 A.segGo = () => {
-  if (!(segGiftAmt.amt > 0) || segGiftAmt.amt > 10000) return toast(tt("Enter a valid amount"));
+  if (!(segGiftAmt.amt > 0) || segGiftAmt.amt > MAX_CARD) return toast(tt("Enter a valid amount"));
   const raw = SEGULOS.find((x) => x.id === segGiftAmt.id); closeSheet();
   startGift({ amt: segGiftAmt.amt, fund: "general", freq: segGiftAmt.freq, ded: ("Segulah: " + raw.title).slice(0, 80), fromPushka: false, method: "online", pid: P().id });
 };

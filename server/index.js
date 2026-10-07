@@ -18,10 +18,17 @@ const express = require('express');
 const ROOT = path.join(__dirname, '..');
 const FUND_NAMES = {
   general: 'General Fund',
-  school: 'Hebrew School',
-  shabbat: 'Shabbat & Kiddush',
-  chesed: 'Chesed Fund',
+  chai: 'Chai Club',
+  preschool: 'Jewish Preschool Scholarships',
+  market: 'Bay Kosher Market',
+  building: 'Building Campaign',
+  holidays: 'Holiday Programs',
+  synagogue: 'Synagogue',
+  endyear: 'End of Year Campaign',
+  children: 'Children Events',
+  pledge: 'Pledge',
 };
+const FEE_RATE = 0.035;      // optional "cover the processing fee" add-on
 const MIN_CENTS = 100;       // $1
 const MAX_CENTS = 1000000;   // $10,000 per gift
 
@@ -123,7 +130,9 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     if (!Object.prototype.hasOwnProperty.call(FUND_NAMES, fund)) throw new HttpError(400, 'invalid_fund', 'Please choose a fund.');
     const idem = clean(body.idem, 80);
     if (idem.length < 16) throw new HttpError(400, 'invalid_request', 'Missing request id.');
-    return { cents, fund, dedication: clean(body.dedication, 80), idem };
+    const fee = body.fee === true;
+    const total = fee ? Math.round(cents * (1 + FEE_RATE)) : cents;
+    return { cents, total, fee, fund, dedication: clean(body.dedication, 80), idem };
   }
   async function savedCard(customer) {
     const list = await stripe.paymentMethods.list({ customer, type: 'card', limit: 1 });
@@ -137,10 +146,11 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const name = clean(req.body && req.body.name, 100), email = clean(req.body && req.body.email, 254).toLowerCase();
     if (!name) throw new HttpError(400, 'invalid_name', 'Please enter your name.');
     if (!validEmail(email)) throw new HttpError(400, 'invalid_email', 'Please enter a valid email address.');
+    const phone = clean(req.body && req.body.phone, 30), address = clean(req.body && req.body.address, 200);
     const m = /^Bearer (.+)$/.exec(req.get('authorization') || ''), existing = m && verify(m[1]);
     let id;
-    if (existing) { await stripe.customers.update(existing, { name, email }); id = existing; }
-    else { id = (await stripe.customers.create({ name, email, metadata: { source: 'pushka' } })).id; }
+    if (existing) { await stripe.customers.update(existing, { name, email, ...(phone ? { phone } : {}), metadata: { address } }); id = existing; }
+    else { id = (await stripe.customers.create({ name, email, ...(phone ? { phone } : {}), metadata: { source: 'pushka', address } })).id; }
     res.json({ token: sign(id) });
   }));
 
@@ -167,11 +177,11 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const customer = /** @type {any} */ (await stripe.customers.retrieve(req.customerId));
     try {
       const pi = await stripe.paymentIntents.create({
-        amount: g.cents, currency: 'usd', customer: req.customerId, payment_method: pm.id,
+        amount: g.total, currency: 'usd', customer: req.customerId, payment_method: pm.id,
         off_session: true, confirm: true,
         description: 'My Pushka gift: ' + FUND_NAMES[g.fund],
         receipt_email: customer && !customer.deleted && customer.email ? customer.email : undefined,
-        metadata: { source: 'pushka', fund: g.fund, dedication: g.dedication },
+        metadata: { source: 'pushka', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents) },
         expand: ['latest_charge'],
       }, { idempotencyKey: 'pushka-donate-' + g.idem });
       return res.json({ status: pi.status, id: pi.id, receiptUrl: receiptOf(pi.latest_charge) });
@@ -210,10 +220,10 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const product = await ensureProduct(g.fund);
     const sub = await stripe.subscriptions.create({
       customer: req.customerId, default_payment_method: pm.id,
-      items: [{ price_data: { currency: 'usd', product, unit_amount: g.cents, recurring: { interval: 'month' } } }],
+      items: [{ price_data: { currency: 'usd', product, unit_amount: g.total, recurring: { interval: 'month' } } }],
       off_session: true, payment_behavior: 'error_if_incomplete',
       description: 'My Pushka monthly gift: ' + FUND_NAMES[g.fund],
-      metadata: { source: 'pushka', fund: g.fund, dedication: g.dedication },
+      metadata: { source: 'pushka', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents) },
       expand: ['latest_invoice'],
     }, { idempotencyKey: 'pushka-sub-' + g.idem });
     res.json({ status: sub.status, id: sub.id, receiptUrl: typeof sub.latest_invoice === 'object' && sub.latest_invoice ? sub.latest_invoice.hosted_invoice_url || '' : '' });
