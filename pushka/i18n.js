@@ -1,6 +1,12 @@
 // Hebrew UI strings, keyed by the English text used in pushka.js.
 // Machine-written: please have a native Hebrew reader review before sharing widely.
 const HE = {
+  "Give to a fund": "תרומה לקרן",
+  "Give for a segulah": "תרומה לסגולה",
+  "Choose a segulah and how much to give": "בחרו סגולה וסכום לתרומה",
+  "Give for {name}": "תרומה עבור {name}",
+  "Give for this segulah": "תרמו עבור סגולה זו",
+  "Your gift goes to Chabad of Lamorinda, given in the merit of this segulah.": "התרומה שלכם מגיעה לבית חב״ד לאמורינדה, לזכות סגולה זו.",
   "1 coin since {date}": "מטבע אחד מאז {date}",
   "A celebration when your goal is reached": "חגיגה כשמגיעים ליעד",
   "A direct gift to one of our funds.": "תרומה ישירה לאחת מהקרנות שלנו.",

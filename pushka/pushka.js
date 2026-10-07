@@ -336,7 +336,7 @@ function showLock() { const el = $("#lock"); el.hidden = false; el.innerHTML = `
 
 // ---------- page chrome ----------
 const TABS = [["home", "Pushka", I.home], ["give", "Give", I.give], ["wallet", "Wallet", I.wallet], ["history", "History", I.history], ["more", "More", I.more]];
-const tabOf = (pg) => (["home", "give", "wallet", "history"].includes(pg) ? pg : "more");
+const tabOf = (pg) => (["segulot", "segulah", "quotes"].includes(pg) ? "give" : ["home", "give", "wallet", "history"].includes(pg) ? pg : "more");
 const sub = (title, body) => `<div class="head sub"><button class="icon-btn" data-act="back" aria-label="${t("Back")}">${ico(I.back, 24, FLIP)}</button><h1>${esc(title)}</h1><span style="width:44px"></span></div><div class="scroll"><div class="col tight" style="padding-top:var(--s4)">${body}</div></div>`;
 const chev = () => `<span style="color:var(--accent)">${ico(I.chev, 18, FLIP)}</span>`;
 const rowLink = (act, v, icon, title, subt) => `<button class="row-btn" data-act="${act}" data-v="${esc(v)}"><span style="color:var(--accent);flex:none">${ico(icon, 22)}</span><div class="grow"><div class="fund-n">${esc(title)}</div>${subt ? `<div class="fund-d">${esc(subt)}</div>` : ""}</div>${chev()}</button>`;
@@ -388,7 +388,8 @@ PG.home = () => {
 
 PG.give = () => {
   if (!U.giveFund) return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("Give")}</h1><div class="sub">${t("A direct gift to one of our funds.")}</div></div>
-    <div>${FUNDS.map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div><div class="fund-d">${t(f.desc)}</div></div>${chev()}</button>`).join("")}</div></div></div>`;
+    ${sec(t("Give to a fund"))}<div>${FUNDS.map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div><div class="fund-d">${t(f.desc)}</div></div>${chev()}</button>`).join("")}</div>
+    ${sec(t("Give for a segulah"))}<div>${rowLink("go", "segulot", I.book, tt("Segulot & Prayers"), tt("Choose a segulah and how much to give"))}</div></div></div>`;
   const f = fundOf(U.giveFund), cta = U.freq === "monthly" ? t("Give {amt} monthly", { amt: money(U.giveAmt) }) : t("Give {amt}", { amt: money(U.giveAmt) });
   return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col tight" style="padding-top:0">
     <button class="btn btn-ghost" data-act="allFunds" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)}${t("All funds")}</button>
@@ -425,14 +426,14 @@ PG.history = () => {
 };
 
 PG.more = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("More")}</h1></div><div>
-  ${rowLink("go", "segulot", I.book, tt("Segulot & Prayers"), tt("Prayers, customs and blessings"))}${rowLink("go", "maaser", I.calc, tt("Maaser Calculator"), tt("Calculate your tenth"))}${rowLink("go", "reminders", I.bell, tt("Reminders"), tt("Candle lighting and daily coin"))}
+  ${rowLink("go", "maaser", I.calc, tt("Maaser Calculator"), tt("Calculate your tenth"))}${rowLink("go", "reminders", I.bell, tt("Reminders"), tt("Candle lighting and daily coin"))}
   ${rowLink("go", "settings", I.gear, tt("Settings"), tt("Goal, amounts, sounds, pushkas, language"))}${rowLink("go", "profile", I.profile, tt("Profile"), S.name || tt("Name, email, address"))}${rowLink("go", "support", I.help, tt("Support"), tt("We’re happy to help"))}</div>
   <a class="btn btn-ghost" href="../" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)} ${t("Back to chabadoflamorinda.com")}</a></div></div>`;
 
 // ----- segulos -----
 const segFeat = () => SEG_FEATURED.map((id) => SEGULOS.find((s) => s.id === id));
 const segHit = (raw) => { const s = SG(raw), q = U.segQ.trim().toLowerCase(); return (!q || (s.title + " " + s.blurb + " " + catL(raw.cat)).toLowerCase().includes(q)) && (U.segCat === "All" || raw.cat === U.segCat); };
-const segRow = (raw, showCat) => { const s = SG(raw); return `<button class="row-btn" data-act="seg" data-v="${raw.id}"><div class="grow"><div class="fund-n">${esc(s.title)}</div>${showCat ? `<div class="kicker" style="margin-top:2px">${esc(catL(raw.cat))}</div>` : ""}<div class="fund-d clamp">${esc(s.blurb)}</div></div>${chev()}</button>`; };
+const segRow = (raw, showCat) => { const s = SG(raw), q = raw.kind === "quotes"; return `<div class="row-btn seg-row"><button class="grow seg-main" data-act="seg" data-v="${raw.id}"><div class="fund-n">${esc(s.title)}</div>${showCat ? `<div class="kicker" style="margin-top:2px">${esc(catL(raw.cat))}</div>` : ""}<div class="fund-d clamp">${esc(s.blurb)}</div></button>${q ? chev() : `<button class="btn btn-secondary seg-give" data-act="segGive" data-v="${raw.id}" aria-label="${esc(tt("Give for {name}", { name: s.title }))}">${t("Give")}</button>`}</div>`; };
 function segList() {
   if (U.segQ.trim() || U.segCat !== "All") { const l = SEGULOS.filter(segHit); return l.length ? l.map((s) => segRow(s, true)).join("") : `<div class="rowp">${t("No matches. Try another word.")}</div>`; }
   return `<div>${segFeat().map((s) => segRow(s, false)).join("")}</div>` + SEG_CATS.map((c) => `<h6 style="color:var(--n700);margin:var(--s4) 0 var(--s1)">${esc(catL(c))}</h6>${SEGULOS.filter((s) => s.cat === c && !SEG_FEATURED.includes(s.id)).map((s) => segRow(s, false)).join("")}`).join("");
@@ -445,9 +446,9 @@ PG.segulah = () => {
   const raw = SEGULOS.find((x) => x.id === U.segId) || SEGULOS[0];
   if (raw.kind === "quotes") return PG.quotes();
   const s = SG(raw);
-  const acts = (raw.act || []).map((a) => ({
-    coin: `<button class="btn btn-primary cta" data-act="dropPrimary">${t("Drop a coin in my pushka")}</button>`,
-    give: `<button class="btn btn-secondary cta" data-act="giveGeneral">${t("Give tzedakah")}</button>`,
+  const acts = `<button class="btn btn-primary cta" data-act="segGive" data-v="${raw.id}">${t("Give for this segulah")}</button>` + (raw.act || []).map((a) => ({
+    coin: `<button class="btn btn-secondary cta" data-act="dropPrimary">${t("Drop a coin in my pushka")}</button>`,
+    give: "",
     maaser: `<button class="btn btn-primary cta" data-act="go" data-v="maaser">${t("Open the Maaser Calculator")}</button>`,
     reminders: `<button class="btn btn-secondary cta" data-act="go" data-v="reminders">${t("Set a reminder")}</button>`,
   }[a] || "")).join("");
@@ -633,6 +634,25 @@ A.maaserWallet = () => soon(tt("Add to wallet"));
 A.maaserDonate = () => { const o = maaserOut(); if (o > 0) startGift({ amt: o, fund: "general", freq: "once", ded: tt("Maaser"), fromPushka: false, method: "online", pid: P().id }); };
 
 // segulos
+const segGiftAmt = { id: "", amt: 36, freq: "once" };
+function segGiveSheet() {
+  const raw = SEGULOS.find((x) => x.id === segGiftAmt.id), s = SG(raw);
+  sheet(`<div><h3>${t("Give for {name}", { name: esc(s.title) })}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Your gift goes to Chabad of Lamorinda, given in the merit of this segulah.")}</div></div>
+    <div class="field"><label>${t("Amount")}</label><div class="amts">${GIVE_AMTS.map((a) => `<button class="btn btn-secondary ${segGiftAmt.amt === a ? "sel" : ""}" data-act="segAmt" data-v="${a}">${money(a)}</button>`).join("")}</div>
+      <input class="input" id="segCustom" data-inp="segCustom" type="number" min="1" step="0.01" inputmode="decimal" aria-label="${t("Other amount")}" placeholder="${t("Other amount")}" style="margin-top:6px"></div>
+    <div class="field"><label>${t("Frequency")}</label><div class="seg"><label><input type="radio" name="sfreq" value="once" data-chg="segFreq" ${segGiftAmt.freq === "once" ? "checked" : ""}>${t("One time")}</label><label><input type="radio" name="sfreq" value="monthly" data-chg="segFreq" ${segGiftAmt.freq === "monthly" ? "checked" : ""}>${t("Monthly")}</label></div></div>
+    <button class="btn btn-primary cta" id="segGo" data-act="segGo">${segGiftText()}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
+}
+const segGiftText = () => (segGiftAmt.freq === "monthly" ? t("Give {amt} monthly", { amt: money(segGiftAmt.amt) }) : t("Give {amt}", { amt: money(segGiftAmt.amt) }));
+A.segGive = (v) => { Object.assign(segGiftAmt, { id: v, amt: 36, freq: "once" }); segGiveSheet(); };
+A.segAmt = (v) => { segGiftAmt.amt = +v; segGiveSheet(); };
+A.segCustom = (v) => { const n = parseFloat(v); if (n > 0) { segGiftAmt.amt = r2(n); $$("#overlay .amts .btn").forEach((b) => b.classList.remove("sel")); const g = $("#segGo"); if (g) g.innerHTML = segGiftText(); } };
+A.segFreq = (v) => { segGiftAmt.freq = v === "monthly" ? "monthly" : "once"; const g = $("#segGo"); if (g) g.innerHTML = segGiftText(); };
+A.segGo = () => {
+  if (!(segGiftAmt.amt > 0) || segGiftAmt.amt > 10000) return toast(tt("Enter a valid amount"));
+  const raw = SEGULOS.find((x) => x.id === segGiftAmt.id); closeSheet();
+  startGift({ amt: segGiftAmt.amt, fund: "general", freq: segGiftAmt.freq, ded: ("Segulah: " + raw.title).slice(0, 80), fromPushka: false, method: "online", pid: P().id });
+};
 A.seg = (v) => { U.segId = v; const s = SEGULOS.find((x) => x.id === v); U.stack.push(U.page); U.page = s.kind === "quotes" ? "quotes" : "segulah"; draw(); };
 A.segQ = (v) => { U.segQ = v; $("#segList").innerHTML = segList(); };
 A.segCat = (v) => { U.segCat = v; $("#segChips").innerHTML = segChips(); $("#segList").innerHTML = segList(); };

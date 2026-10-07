@@ -193,3 +193,8 @@ html[dir=rtl] .h-a{text-align:left}
 html[lang=he] .hd-main h1{font-size:32px}
 input[type=number]{direction:ltr}
 html[dir=rtl] input[type=number]{text-align:right}
+
+.seg-row{align-items:center;gap:var(--s2)}
+.seg-main{all:unset;cursor:pointer;flex:1;min-width:0;display:block}
+.seg-main:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.seg-give{flex:none;min-height:36px;padding:0 14px;font-size:14px}
