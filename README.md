@@ -3,6 +3,7 @@
 * `index.html`, `styles.css`: the main website.
 * `pushka/`: the **My Pushka** app (English and Hebrew), installable on a phone's home screen.
 * `server/`: a small Node server that serves the site and handles **Stripe card payments** for the app.
+* `inventory/`: the **Bay Kosher Market inventory** app: one stock count across Clover and the website, supplier order lists, sales speed, and invoice-driven pricing. See [`inventory/README.md`](inventory/README.md).
 * `render.yaml`: tells Render how to host everything.
 
 ## How giving works

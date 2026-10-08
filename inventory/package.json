@@ -1,0 +1,22 @@
+{
+  "name": "baykosher-inventory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bay Kosher Market inventory: one stock count across Clover and the web store, supplier order lists, sales speed, and invoice-driven pricing.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "demo": "node --disable-warning=ExperimentalWarning server/index.js --demo",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.0",
+    "basic-ftp": "^6.2.2",
+    "express": "^5.2.1",
+    "imapflow": "^1.0.0",
+    "mailparser": "^3.9.0"
+  }
+}
