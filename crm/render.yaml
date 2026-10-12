@@ -1,0 +1,40 @@
+# Render settings for the Chabad CRM.
+# The database lives on a persistent disk, which Render offers on paid plans (Starter + 1 GB disk).
+# On the free plan the data would be wiped on every deploy/restart, so do not use it for real data.
+services:
+  - type: web
+    name: chabad-crm
+    runtime: node
+    plan: starter
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    disk:
+      name: crm-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATA_DIR
+        value: /var/data
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: PUBLIC_URL               # e.g. https://chabad-crm.onrender.com
+        sync: false
+      - key: OPENAI_API_KEY           # for voice notes
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_ALLOWED_USER_IDS
+        sync: false
+      - key: TWILIO_ACCOUNT_SID       # optional: WhatsApp / SMS
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: ALLOWED_PHONE_NUMBERS
+        sync: false

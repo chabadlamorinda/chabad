@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1d3557">
+  <title>Chabad CRM</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login" class="login" hidden>
+    <form id="loginForm" class="card">
+      <h1>Chabad CRM</h1>
+      <p class="muted">Chabad of Lamorinda</p>
+      <input id="password" type="password" placeholder="Password" autocomplete="current-password" required>
+      <button type="submit">Log in</button>
+      <p id="loginError" class="error"></p>
+    </form>
+  </div>
+
+  <div id="main" hidden>
+    <header class="top">
+      <strong>Chabad CRM</strong>
+      <nav id="tabs">
+        <button data-tab="talk" class="on">Talk</button>
+        <button data-tab="overview">Overview</button>
+        <button data-tab="people">People</button>
+        <button data-tab="donations">Donations</button>
+        <button data-tab="activities">Mitzvos &amp; visits</button>
+      </nav>
+      <button id="logout" class="link">Log out</button>
+    </header>
+
+    <main>
+      <!-- Talk: text, voice notes, photos -->
+      <section id="tab-talk" class="tab on">
+        <div id="chat" class="chat"></div>
+        <form id="composer" class="composer">
+          <div id="pending" class="pending"></div>
+          <div class="row">
+            <label class="iconbtn" title="Add photo">📷<input id="photoInput" type="file" accept="image/*" multiple hidden></label>
+            <button type="button" id="micBtn" class="iconbtn" title="Record voice note">🎙</button>
+            <textarea id="text" rows="1" placeholder='e.g. "Visited the Levins, put up 3 mezuzos, Dave gave $180 check #1452"'></textarea>
+            <button type="submit" id="sendBtn">Send</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="tab-overview" class="tab">
+        <div class="toolbar"><label>Year <select class="yearSel" id="ovYear"></select></label></div>
+        <div id="stats" class="stats"></div>
+        <div class="grid2">
+          <div class="card"><h3>Donations by fund</h3><div id="byFund"></div></div>
+          <div class="card"><h3>Top donors</h3><div id="topDonors"></div></div>
+          <div class="card"><h3>By month</h3><div id="byMonth"></div></div>
+          <div class="card"><h3>Follow-ups due</h3><div id="followUps"></div></div>
+        </div>
+      </section>
+
+      <section id="tab-people" class="tab">
+        <div class="toolbar"><input id="peopleSearch" type="search" placeholder="Search people…"><span id="peopleCount" class="muted"></span></div>
+        <div id="peopleList"></div>
+      </section>
+
+      <section id="tab-donations" class="tab">
+        <div class="toolbar">
+          <label>Year <select class="yearSel" id="donYear"></select></label>
+          <span id="donTotal" class="pill"></span>
+          <a id="csvLink" class="button" href="#">Download CSV</a>
+        </div>
+        <div id="donList"></div>
+      </section>
+
+      <section id="tab-activities" class="tab">
+        <div class="toolbar">
+          <label>Year <select class="yearSel" id="actYear"></select></label>
+          <label>Type <select id="actType"><option value="">All</option></select></label>
+        </div>
+        <div id="actCounts" class="stats"></div>
+        <div id="actList"></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="personDlg"><div id="personBody"></div><form method="dialog"><button>Close</button></form></dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
