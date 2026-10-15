@@ -65,7 +65,7 @@ Your privacy matters: no ads, no tracking, and we never see your card number.
 הפרטיות שלכם חשובה: בלי פרסומות, בלי מעקב, ואיננו רואים את מספר הכרטיס.
 
 ## Play Console answers (check each against Google's current wording)
-- **Data safety:** collects name, email, optional phone and mailing address, payment info (entered into Stripe's secure form; we never see the card number) and the gift amount. Used for app functionality only. Not sold. Data in transit is encrypted. Users can request deletion in the app (More → Profile → Delete account) or by email.
+- **Data safety:** collects name, email, optional phone and mailing address, payment info (entered into Stripe's secure form; we never see the card number), the gift amount, and — only if the user opts in — yahrzeit names/dates ("Personal info" / "Other user-generated content") and a push-notification address ("Device or other IDs"). Optional data is shared with the organization's own staff (the Rabbi) only when the user turns on sharing; this is not "sharing with third parties". Used for app functionality only. Not sold. Data in transit is encrypted. Users can request deletion in the app (More → Profile → Delete account) or by email.
 - **Ads:** none. **In-app purchases:** none (charitable donations to a nonprofit are not purchases of digital goods).
 - **Target audience:** 18 and over (avoids the Families program).
 - **Content rating questionnaire:** no violence, sexual content, gambling or user-generated content. Religious content is informational.

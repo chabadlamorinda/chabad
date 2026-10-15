@@ -28,3 +28,16 @@ services:
         sync: false
       - key: SESSION_SECRET           # generated for you
         generateValue: true
+      # ---- Optional: yahrzeits, reminders, Rabbi area, payment alerts (see store/rabbi-setup.md) ----
+      - key: DATABASE_URL             # Postgres connection string (Render Postgres or Neon)
+        sync: false
+      - key: ADMIN_PASSWORD           # 12+ characters; opens the Rabbi area at /admin/
+        sync: false
+      - key: VAPID_PUBLIC_KEY         # from: npx web-push generate-vapid-keys
+        sync: false
+      - key: VAPID_PRIVATE_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET    # whsec_... from Stripe -> Developers -> Webhooks
+        sync: false
+      - key: APPLE_PAY_ASSOC          # contents of Stripe's Apple Pay domain file (optional)
+        sync: false

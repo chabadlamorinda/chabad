@@ -62,6 +62,7 @@ const def = () => ({
   wallet: { id: walletId(), balance: 0 },
   history: [], pracSubs: [],
   rem: { candle: { on: false, mins: 15 }, streak: { on: false }, custom: [] },
+  yz: [], yzShare: false, yzRemind: false, pushOn: false, mtoken: "", msig: "",
   candles: [], notified: {}, maaser: 10, lastEmptied: Date.now(), prompted: "",
 });
 function load() {
@@ -223,17 +224,17 @@ function errText(e) {
   return tt(ERRS[e && e.code] || "Something went wrong. Please try again.");
 }
 async function api(path, opts = {}) {
-  const headers = { "Content-Type": "application/json" }; if (S.token) headers.Authorization = "Bearer " + S.token;
+  const headers = { "Content-Type": "application/json" }, tok = opts.member ? S.mtoken : S.token; if (tok) headers.Authorization = "Bearer " + tok;
   let r; try { r = await fetch("/api" + path, { method: opts.method || "GET", headers, body: opts.body ? JSON.stringify(opts.body) : undefined }); } catch (e) { throw Object.assign(new Error("network"), { code: "network" }); }
   let j = {}; try { j = await r.json(); } catch (e) {}
-  if (!r.ok) { if (r.status === 401 && S.token) { S.token = ""; S.synced = ""; API.card = null; save(); } throw Object.assign(new Error(j.error || "Request failed"), { code: j.code || "server_error", status: r.status }); }
+  if (!r.ok) { if (r.status === 401 && opts.member && S.mtoken) { S.mtoken = ""; S.msig = ""; save(); } else if (r.status === 401 && !opts.member && S.token) { S.token = ""; S.synced = ""; API.card = null; save(); } throw Object.assign(new Error(j.error || "Request failed"), { code: j.code || "server_error", status: r.status }); }
   return j;
 }
 const BRANDS = { visa: "Visa", mastercard: "Mastercard", amex: "American Express", discover: "Discover", diners: "Diners Club", jcb: "JCB", unionpay: "UnionPay" };
 const cardLabel = () => (API.card ? (BRANDS[API.card.brand] || API.card.brand) + " •••• " + API.card.last4 : "");
 async function refreshCard() { try { API.card = (await api("/payment-method")).card; } catch (e) { API.card = null; } }
 async function loadSubs() { try { API.subs = (await api("/subscriptions")).subscriptions; } catch (e) { API.subs = []; } if (U.page === "profile") draw(); }
-async function initPay() { if (PRACTICE) { API.enabled = true; API.card = { brand: "visa", last4: "4242" }; API.subs = S.pracSubs || []; return draw(); } try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } } catch (e) {} draw(); }
+async function initPay() { if (PRACTICE) { API.enabled = true; API.card = { brand: "visa", last4: "4242" }; API.subs = S.pracSubs || []; return draw(); } try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } API.members = !!c.members; API.vapid = c.vapidPublicKey || ""; if (API.members && S.mtoken) { try { API.cardIssue = (await api("/member", { member: true })).cardIssue || ""; } catch (e) {} } if (API.vapid && S.pushOn) pushSync(); } catch (e) {} draw(); }
 let stripeP = null;
 function loadStripe() {
   if (stripeP) return stripeP;
@@ -261,7 +262,7 @@ async function ensureCustomer() {
   if (!S.name || !S.email) { if (!(await askDetails())) return false; }
   const sig = [S.name, S.email, S.phone, S.address].join("|");
   if (S.token && S.synced === sig) return true;
-  const r = await api("/customer", { method: "POST", body: { name: S.name, email: S.email, phone: S.phone, address: S.address } }); S.token = r.token; S.synced = sig; save(); return true;
+  const r = await api("/customer", { method: "POST", body: { name: S.name, email: S.email, phone: S.phone, address: S.address } }); S.token = r.token; S.synced = sig; save(); if (S.mtoken) memberSync().catch(() => {}); return true;
 }
 async function addCard() {
   try { if (!(await ensureCustomer())) return false; } catch (e) { toast(errText(e)); return false; }
@@ -273,13 +274,13 @@ async function addCard() {
       const { clientSecret } = await api("/setup-intent", { method: "POST" });
       const stripe = await loadStripe();
       const elements = stripe.elements({ clientSecret, appearance: { variables: { colorPrimary: "#b68235", colorText: "#201f1d", fontFamily: "Lora, Georgia, serif", borderRadius: "4px" } } });
-      $("#payEl").innerHTML = ""; elements.create("payment", { layout: "tabs" }).mount("#payEl");
+      $("#payEl").innerHTML = ""; elements.create("payment", { layout: "tabs", wallets: { applePay: "auto", googlePay: "auto" } }).mount("#payEl");
       const btn = $("#paySave"); if (!btn) return; btn.disabled = false;
       btn.onclick = async () => {
         btn.disabled = true; $("#payErr").textContent = "";
         const { error } = await stripe.confirmSetup({ elements, redirect: "if_required", confirmParams: { payment_method_data: { billing_details: { name: S.name, email: S.email } } } });
         if (error) { $("#payErr").textContent = error.message; btn.disabled = false; return; }
-        await refreshCard(); res(true); closeSheet(); toast(tt("Card saved")); draw();
+        await refreshCard(); if (API.cardIssue) { API.cardIssue = ""; if (S.mtoken) api("/member/card-updated", { method: "POST", member: true }).catch(() => {}); } res(true); closeSheet(); toast(tt("Card saved")); draw();
       };
     } catch (e) { const el = $("#payErr"); if (el) el.textContent = errText(e); }
   });
@@ -334,8 +335,8 @@ function mark(k) { S.notified[k] = 1; const ks = Object.keys(S.notified); if (ks
 function tick() {
   if (!("Notification" in window) || Notification.permission !== "granted") return;
   const now = Date.now(), d = new Date(), at = (h, m) => new Date(d).setHours(h, m, 0, 0), within = (ts) => now >= ts && now < ts + 600e3;
-  if (S.rem.candle.on) (S.candles || []).forEach((c) => { const ts = new Date(c) - S.rem.candle.mins * 60e3, k = "c" + c; if (within(ts) && !S.notified[k]) { mark(k); notify(tt("Candle lighting is in {mins} minutes — it’s customary to give tzedakah first.", { mins: S.rem.candle.mins })); } });
-  if (S.rem.streak.on && !gaveToday()) {
+  if (S.rem.candle.on && !S.pushOn) (S.candles || []).forEach((c) => { const ts = new Date(c) - S.rem.candle.mins * 60e3, k = "c" + c; if (within(ts) && !S.notified[k]) { mark(k); notify(tt("Candle lighting is in {mins} minutes — it’s customary to give tzedakah first.", { mins: S.rem.candle.mins })); } });
+  if (S.rem.streak.on && !S.pushOn && !gaveToday()) {
     const candleDay = (S.candles || []).some((c) => dkey(new Date(c)) === dkey(d)), early = d.getDay() === 5 || candleDay, ts = early ? at(13, 0) : at(20, 0), k = "s" + dkey(d);
     if ((early || isWk(d)) && d.getDay() !== 6 && within(ts) && !S.notified[k]) { mark(k); notify(tt("Keep your streak alive — drop a coin in your pushka.")); }
   }
@@ -406,6 +407,7 @@ PG.home = () => {
     const subt = S.rem.candle.on ? tt("It's customary to give before lighting. We'll remind you at {time}.", { time: clock(new Date(c - S.rem.candle.mins * 60e3)) }) : tt("It's customary to give before lighting. Turn on the reminder in Reminders.");
     reminder = `<div class="card">${ico(I.flame, 22, 'style="color:var(--accent);flex:none"')}<div style="flex:1"><div class="card-title">${esc(title)}</div><div class="h-s">${esc(subt)}</div></div></div>`;
   }
+  reminder = cardIssueBanner() + yzBanner() + reminder;
   const chips = S.pushkas.length > 1 ? `<div class="chips">${S.pushkas.map((x) => `<button class="chip ${x.id === p.id ? "on" : ""}" data-act="setCur" data-v="${x.id}">${esc(pTitle(x))}</button>`).join("")}</div>` : "";
   const since = greg(new Date(S.lastEmptied));
   const msg = p.balance > 0 ? `<div class="h-t" style="font-size:20px">${t("Your pushka has {amt}", { amt: money2(p.balance) })}</div><div class="h-s">${p.drops === 1 ? t("1 coin since {date}", { date: esc(since) }) : t("{n} coins since {date}", { n: p.drops, date: esc(since) })}</div>` : `<div class="h-t" style="font-size:20px">${t("Your pushka is empty")}</div><div class="h-s">${t("Add some coins now")}</div>`;
@@ -493,7 +495,7 @@ PG.history = () => {
 };
 
 PG.more = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("More")}</h1></div><div>
-  ${rowLink("go", "maaser", I.calc, tt("Maaser Calculator"), tt("Calculate your tenth"))}${rowLink("go", "reminders", I.bell, tt("Reminders"), tt("Candle lighting and daily coin"))}
+  ${rowLink("go", "maaser", I.calc, tt("Maaser Calculator"), tt("Calculate your tenth"))}${rowLink("go", "reminders", I.bell, tt("Reminders"), tt("Candle lighting and daily coin"))}${rowLink("go", "yahrzeit", I.flame, tt("Yahrzeits"), tt("Remember loved ones and give in their memory"))}
   ${rowLink("go", "settings", I.gear, tt("Settings"), tt("Goal, amounts, sounds, pushkas, language"))}${rowLink("go", "profile", I.profile, tt("Profile"), S.name || tt("Name, email, address"))}${rowLink("go", "support", I.help, tt("Support"), tt("We’re happy to help"))}</div>
   <a class="btn btn-ghost" href="${SITE}" target="_blank" rel="noopener" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)} ${t("Back to chabadoflamorinda.com")}</a></div></div>`;
 
@@ -549,6 +551,7 @@ PG.reminders = () => {
     ${tg("remToggle", "streak", t("Streak Reminder"), `${t("Weekdays · 8:00 pm")}<br>${t("Every Friday & before holidays · 1:00 pm")}`, st.on)}
     ${S.rem.custom.map((r) => `<div class="row-btn"><div class="grow"><div class="h-t">${esc(r.text || tt("Give tzedakah"))}</div><div class="h-s">${t(DAYS[r.days])} · ${esc(clock(new Date("2000-01-01T" + r.time)))}</div></div><button class="icon-btn sm" data-act="remDel" data-v="${r.id}" aria-label="${t("Delete reminder")}">${ico(I.trash, 18)}</button><button role="switch" aria-checked="${r.on}" aria-label="${t("Reminder on")}" data-act="remToggle" data-v="${r.id}" style="all:unset;cursor:pointer"><div class="sw ${r.on ? "on" : ""}"></div></button></div>`).join("")}</div>
     <button class="btn btn-secondary cta" data-act="addRem">${ico(I.plus, 16)} ${t("Add reminder")}</button>
+    ${pushCard()}
     <p class="note">${t("Reminders arrive while the app is open or installed on your home screen. Candle times are for Lafayette, CA.")}</p>`);
 };
 
@@ -622,7 +625,7 @@ A.go = (v) => { U.stack.push(U.page); U.page = v; draw(); };
 A.back = () => { U.page = U.stack.pop() || "more"; draw(); };
 A.share = async () => { const d = { title: tt("Chabad of Lamorinda · My Pushka"), text: tt("Give tzedakah every day with the Chabad of Lamorinda pushka."), url: location.href.split("#")[0] }; try { if (navigator.share) await navigator.share(d); else { await navigator.clipboard.writeText(d.url); toast(tt("Link copied")); } } catch (e) {} };
 A.setCur = (v) => { S.cur = v; save(); closeSheet(); draw(); };
-const setLang = (l) => { S.lang = l; save(); applyLang(); closeSheet(); if ($("#lock") && !$("#lock").hidden) showLock(); draw(); };
+const setLang = (l) => { S.lang = l; save(); applyLang(); if (S.pushOn) pushPrefsSoon(); closeSheet(); if ($("#lock") && !$("#lock").hidden) showLock(); draw(); };
 A.toggleLang = () => setLang(LANG === "he" ? "en" : "he");
 A.setLang = (v) => setLang(v === "he" ? "he" : "en");
 
@@ -632,7 +635,7 @@ function drop(a, ttl) {
   const p = P(), before = p.balance;
   p.balance = r2(p.balance + a); p.drops++;
   pushHist({ kind: "coin", t: Date.now(), ttl: ttl || "coin", amt: a, pid: p.id });
-  save(); if (S.sound) clink(p.balance > 20 ? 2 : 1, 0.09); buzz(30); draw();
+  save(); if (S.sound) clink(p.balance > 20 ? 2 : 1, 0.09); buzz(30); draw(); if (S.pushOn && S.rem.streak.on) pushPrefsSoon();
   const an = $("#coinAnchor"); if (an) { const c = document.createElement("div"); c.className = "coin"; c.textContent = money(a); an.append(c); setTimeout(() => c.remove(), 800); }
   if (before < S.goal && p.balance >= S.goal) setTimeout(() => { fanfare(); confetti(); toast(tt("Your pushka is full! 🎉")); if (S.emptyMode === "full") setTimeout(openEmpty, 1400); }, 700);
 }
@@ -759,11 +762,11 @@ A.segCat = (v) => { U.segCat = v; $("#segChips").innerHTML = segChips(); $("#seg
 A.remToggle = async (v) => {
   const r = v === "candle" ? S.rem.candle : v === "streak" ? S.rem.streak : S.rem.custom.find((x) => x.id === v); if (!r) return;
   if (!r.on && !(await ensureNotify())) return;
-  r.on = !r.on; save(); if (r.on && v === "candle") loadCandles(); draw();
+  r.on = !r.on; save(); if (r.on && v === "candle") loadCandles(); if (S.pushOn) pushPrefsSoon(); draw();
 };
 A.remDel = (v) => { S.rem.custom = S.rem.custom.filter((x) => x.id !== v); save(); draw(); };
 A.candleMins = () => sheet(`<h3>${t("Before Candle Lighting")}</h3><div class="field"><label>${t("Remind me")}</label><div class="seg">${[10, 15, 30, 60].map((m) => `<label><input type="radio" name="cm" value="${m}" ${S.rem.candle.mins === m ? "checked" : ""}>${t("{n} min", { n: m })}</label>`).join("")}</div></div>${sheetBtns(["candleSave", t("Save")], ["closeSheet", t("Cancel")])}`);
-A.candleSave = () => { S.rem.candle.mins = +($("input[name=cm]:checked") || { value: 15 }).value; save(); closeSheet(); draw(); };
+A.candleSave = () => { S.rem.candle.mins = +($("input[name=cm]:checked") || { value: 15 }).value; save(); if (S.pushOn) pushPrefsSoon(); closeSheet(); draw(); };
 A.addRem = () => sheet(`<h3>${t("Add reminder")}</h3><div class="field"><label for="rt">${t("Time")}</label><input class="input" id="rt" type="time" value="09:00"></div><div class="field"><label>${t("Repeat")}</label><div class="seg"><label><input type="radio" name="rd" value="weekdays" checked>${t("Weekdays")}</label><label><input type="radio" name="rd" value="daily">${t("Every day")}</label><label><input type="radio" name="rd" value="friday">${t("Fridays")}</label></div></div><div class="field"><label for="rx">${t("Message (optional)")}</label><input class="input" id="rx" maxlength="60" placeholder="${t("Time to give tzedakah!")}"></div>${sheetBtns(["remSave", t("Save")], ["closeSheet", t("Cancel")])}`);
 A.remSave = async () => { const time = $("#rt").value; if (!time) return toast(tt("Choose a time")); const r = { id: uid(), time, days: ($("input[name=rd]:checked") || {}).value || "weekdays", text: $("#rx").value.trim(), on: true }; closeSheet(); if (!(await ensureNotify())) return; S.rem.custom.push(r); save(); draw(); };
 
@@ -798,8 +801,171 @@ A.deleteAcct = () => sheet(`<div><h3>${t("Delete account?")}</h3><div class="h-s
 A.wipe = async () => { if (API.enabled && S.token) { try { await api("/account", { method: "DELETE" }); } catch (e) { if (e.code !== "unauthorized") { closeSheet(); return toast(errText(e)); } } } wipe(); };
 A.resetApp = (v, el) => { if (el.dataset.armed) return wipe(); el.dataset.armed = "1"; el.textContent = tt("Tap again to erase this app’s data"); setTimeout(() => { el.dataset.armed = ""; el.textContent = tt("Can’t unlock? Reset this app"); }, 5000); };
 
+
+// ---------- yahrzeits, push reminders, and sharing with the Rabbi (all opt-in) ----------
+const HD = window.HebDate;
+const ymdLocal = (d) => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+const RELS = ["Father", "Mother", "Husband", "Wife", "Son", "Daughter", "Brother", "Sister", "Grandparent", "Other"];
+function yzNext(e) {
+  if (!HD) return null;
+  const o = HD.next({ day: e.day, month: e.month, year: e.year || null }, ymdLocal(new Date())); if (!o) return null;
+  const days = HD.daysBetween(ymdLocal(new Date()), o.date);
+  return Object.assign({ days, greg: new Intl.DateTimeFormat(loc(), { weekday: "long", month: "long", day: "numeric", year: "numeric" }).format(HD.toDate(o.date)) }, o);
+}
+const yzHeb = (e) => e.day + " " + (LANG === "he" ? HD.MONTHS_HE[e.month] || e.month : e.month);
+const yzWhen = (n) => (n === 0 ? tt("Today") : n === 1 ? tt("Tomorrow (begins this evening)") : tt("In {n} days", { n }));
+const yzSorted = () => S.yz.map((e) => ({ e, n: yzNext(e) })).sort((a, b) => (a.n ? a.n.days : 9999) - (b.n ? b.n.days : 9999));
+function yzBanner() {
+  if (!S.yz.length || !HD) return "";
+  const soon = yzSorted().find((x) => x.n && x.n.days <= 7); if (!soon) return "";
+  return `<button class="card" data-act="go" data-v="yahrzeit" style="text-align:start;width:100%">${ico(I.flame, 22, 'style="color:var(--accent);flex:none"')}<div style="flex:1"><div class="card-title">${t("Yahrzeit of {name}", { name: esc(soon.e.name) })}</div><div class="h-s">${esc(yzWhen(soon.n.days))} · ${esc(soon.n.greg)}</div></div>${chev()}</button>`;
+}
+function cardIssueBanner() {
+  if (!API.cardIssue) return "";
+  return `<div class="card" style="border-color:#9b1c5a">${ico(I.card, 22, 'style="color:#9b1c5a;flex:none"')}<div style="flex:1"><div class="card-title">${t("We couldn’t charge your card")}</div><div class="h-s">${t("Please update your card so your gifts can go through.")}</div></div><button class="btn btn-secondary" data-act="addCard">${t("Update card")}</button></div>`;
+}
+const yzNote = (n) => (n.notes || []).map((k) => `<div class="h-s">${t(k === "adar" ? "Born or passed in Adar: in a leap year some keep Adar I, others Adar II. Ask the Rabbi which to keep." : "The 30th does not fall this year, so it is marked on the 29th. Ask the Rabbi if unsure.")}</div>`).join("");
+const toggleRow = (act, title, sub, on) => tg(act, "", title, sub, on);
+PG.yahrzeit = () => {
+  const rows = yzSorted().map(({ e, n }) => `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div style="display:flex;justify-content:space-between;gap:8px"><div><div class="card-title">${esc(e.name)}</div><div class="h-s">${e.relation ? esc(tt(e.relation)) + " · " : ""}<bdi>${esc(yzHeb(e))}</bdi></div></div><div style="display:flex;gap:2px"><button class="icon-btn sm" data-act="yzEdit" data-v="${esc(e.id)}" aria-label="${esc(tt("Edit"))}">${ico(I.pencil, 18)}</button><button class="icon-btn sm" data-act="yzDel" data-v="${esc(e.id)}" aria-label="${t("Delete reminder")}">${ico(I.trash, 18)}</button></div></div>
+    ${n ? `<div class="h-t">${esc(yzWhen(n.days))}</div><div class="h-s">${esc(n.greg)}</div>${yzNote(n)}` : ""}${e.notes ? `<div class="h-s">${esc(e.notes)}</div>` : ""}
+    <button class="btn btn-secondary" data-act="yzGive" data-v="${esc(e.id)}">${t("Give in their memory")}</button></div>`).join("");
+  const avail = API.members && !PRACTICE;
+  return sub(tt("Yahrzeits"), `<p class="body-p">${t("Keep the yahrzeit dates of your loved ones. We calculate the Hebrew date each year and can remind you.")}</p>
+    ${rows || `<div class="rowp">${t("No yahrzeits yet.")}</div>`}
+    <button class="btn btn-primary cta" data-act="yzAdd">${ico(I.plus, 16)} ${t("Add a yahrzeit")}</button>
+    ${sec(t("Reminders and sharing"))}
+    ${avail ? `${toggleRow("yzRemindTgl", t("Remind me by notification"), t("A notification 7 days before, the day before and the day of."), S.yzRemind)}
+    ${toggleRow("yzShareTgl", t("Share with Chabad of Lamorinda"), t("So the Rabbi can remember your loved ones and reach out. Off by default."), S.yzShare)}
+    <p class="note">${t("If you share, the Rabbi can see these names and dates together with your name, email and phone. Nobody else can. Turn it off at any time and they are deleted from our server.")}</p>`
+    : `<p class="note">${PRACTICE ? t("Reminders and sharing are not used in practice mode.") : t("Reminders and sharing are not switched on yet. Your list stays on this device.")}</p>`}`);
+};
+const yzDraft = { id: "", name: "", relation: "", mode: "civil", date: "", sunset: false, hday: "", hmonth: "Tishri", hyear: "", notes: "" };
+function yzPreview() {
+  const el = $("#yzPrev"); if (!el) return;
+  const e = yzFromDraft(); el.textContent = e ? tt("Hebrew date: {d}", { d: yzHeb(e) + (e.year ? " " + e.year : "") }) : "";
+}
+function yzFromDraft() {
+  const d = yzDraft;
+  if (d.mode === "civil") { if (!/^\d{4}-\d{2}-\d{2}$/.test(d.date) || !HD) return null; const h = HD.hebrewOf(d.date, d.sunset); return { day: h.day, month: h.month, year: h.year }; }
+  const day = parseInt(d.hday, 10), y = parseInt(d.hyear, 10); if (!(day >= 1 && day <= 30)) return null;
+  return { day, month: d.hmonth, year: y >= 4000 && y <= 6000 ? y : null };
+}
+function yzSheet() {
+  const d = yzDraft;
+  sheet(`<h3>${t(d.id ? "Edit yahrzeit" : "Add a yahrzeit")}</h3>
+    <div class="field"><label for="yzN">${t("Name")}</label><input class="input" id="yzN" data-inp="yzF" data-k="name" maxlength="80" value="${esc(d.name)}"></div>
+    <div class="field"><label for="yzR">${t("Relationship")}</label><select class="input" id="yzR" data-chg="yzF" data-k="relation"><option value="">—</option>${RELS.map((r) => `<option value="${r}" ${d.relation === r ? "selected" : ""}>${t(r)}</option>`).join("")}</select></div>
+    <div class="field"><div class="seg"><label><input type="radio" name="yzm" value="civil" data-chg="yzMode" ${d.mode === "civil" ? "checked" : ""}>${t("Date of passing")}</label><label><input type="radio" name="yzm" value="hebrew" data-chg="yzMode" ${d.mode === "hebrew" ? "checked" : ""}>${t("I know the Hebrew date")}</label></div></div>
+    ${d.mode === "civil" ? `<div class="field"><label for="yzD">${t("Date of passing")}</label><input class="input" id="yzD" type="date" data-chg="yzF" data-inp="yzF" data-k="date" value="${esc(d.date)}"></div>
+      <div class="field"><label style="display:flex;gap:8px;align-items:center"><input type="checkbox" data-chg="yzSun" ${d.sunset ? "checked" : ""}> ${t("Passed after sunset")}</label></div>`
+    : `<div class="field"><label for="yzHM">${t("Hebrew month")}</label><select class="input" id="yzHM" data-chg="yzF" data-k="hmonth">${HD.MONTHS.map((m) => `<option value="${m}" ${d.hmonth === m ? "selected" : ""}>${esc(LANG === "he" ? HD.MONTHS_HE[m] : m)}</option>`).join("")}</select></div>
+      <div class="field"><label for="yzHD">${t("Hebrew day (1–30)")}</label><input class="input" id="yzHD" type="number" min="1" max="30" inputmode="numeric" data-inp="yzF" data-k="hday" value="${esc(d.hday)}"></div>
+      <div class="field"><label for="yzHY">${t("Hebrew year (optional)")}</label><input class="input" id="yzHY" type="number" min="4000" max="6000" inputmode="numeric" data-inp="yzF" data-k="hyear" value="${esc(d.hyear)}"></div>`}
+    <div class="h-t" id="yzPrev" role="status"></div>
+    <div class="field"><label for="yzNt">${t("Notes (optional)")}</label><input class="input" id="yzNt" data-inp="yzF" data-k="notes" maxlength="200" value="${esc(d.notes)}"></div>
+    <div id="yzErr" class="err" role="alert"></div>
+    <button class="btn btn-primary cta" data-act="yzSave">${t("Save")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`, () => yzPreview());
+}
+A.yzF = (v, el) => { yzDraft[el.dataset.k] = v; yzPreview(); };
+A.yzSun = (v, el) => { yzDraft.sunset = el.checked; yzPreview(); };
+A.yzMode = (v) => { yzDraft.mode = v === "hebrew" ? "hebrew" : "civil"; yzSheet(); };
+A.yzAdd = () => { Object.assign(yzDraft, { id: "", name: "", relation: "", mode: "civil", date: "", sunset: false, hday: "", hmonth: "Tishri", hyear: "", notes: "" }); yzSheet(); };
+A.yzEdit = (v) => { const e = S.yz.find((x) => x.id === v); if (!e) return; Object.assign(yzDraft, { id: e.id, name: e.name, relation: e.relation || "", mode: "hebrew", date: "", sunset: false, hday: String(e.day), hmonth: e.month, hyear: e.year ? String(e.year) : "", notes: e.notes || "" }); yzSheet(); };
+A.yzSave = () => {
+  const d = yzDraft, name = d.name.trim(), h = yzFromDraft();
+  if (!name) { $("#yzErr").textContent = tt("Please enter a name."); return; }
+  if (!h) { $("#yzErr").textContent = tt("Please enter a valid date."); return; }
+  if (S.yz.length >= 30 && !d.id) { $("#yzErr").textContent = tt("You can keep up to 30 yahrzeits."); return; }
+  const e = { id: d.id || uid() + uid(), name, relation: d.relation, day: h.day, month: h.month, year: h.year || null, notes: d.notes.trim() };
+  const i = S.yz.findIndex((x) => x.id === e.id); if (i >= 0) S.yz[i] = e; else S.yz.push(e);
+  save(); closeSheet(); draw(); yzSync();
+};
+A.yzDel = (v) => sheet(`<div><h3>${t("Delete this yahrzeit?")}</h3></div><button class="btn btn-primary cta" data-act="yzDelGo" data-v="${esc(v)}" style="color:#9b1c5a;border-color:#9b1c5a">${t("Delete")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
+A.yzDelGo = (v) => { S.yz = S.yz.filter((x) => x.id !== v); save(); closeSheet(); draw(); yzSync(); };
+A.yzGive = (v) => { const e = S.yz.find((x) => x.id === v); if (!e) return; Object.assign(U, { giveFund: "general", giveAmt: 36, freq: "once", dedication: tt("In memory of {name}", { name: e.name }).slice(0, 80) }); U.stack = []; U.page = "give"; draw(); };
+
+// member account (name/email) on our server: needed for yahrzeit sharing and for yahrzeit notifications
+async function memberSync() {
+  const sig = [S.name, S.email, S.phone, S.address, S.token].join("|");
+  if (S.mtoken && S.msig === sig) return true;
+  const r = await api("/member", { method: "POST", member: true, body: { name: S.name, email: S.email, phone: S.phone, address: S.address, stripeToken: S.token || undefined } });
+  S.mtoken = r.token; S.msig = sig; save(); return true;
+}
+async function ensureMember() {
+  if (!S.name || !S.email) { if (!(await askDetails())) return false; }
+  await memberSync(); return true;
+}
+let yzTimer = null;
+function yzSync() {
+  if (!API.members || PRACTICE || !S.mtoken) return;
+  clearTimeout(yzTimer);
+  yzTimer = setTimeout(async () => {
+    try {
+      if (S.yzShare || S.yzRemind) await api("/yahrzeits", { method: "PUT", member: true, body: { entries: S.yz.map((e) => ({ id: e.id, name: e.name, relation: e.relation || "", day: e.day, month: e.month, year: e.year || null, notes: e.notes || "" })), share: S.yzShare } });
+      else await api("/yahrzeits", { method: "DELETE", member: true });
+    } catch (e) {}
+  }, 400);
+}
+A.yzShareTgl = async () => {
+  if (!S.yzShare) {
+    const ok = await new Promise((res) => sheet(`<div><h3>${t("Share with Chabad of Lamorinda?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("The Rabbi will be able to see the names and dates on this list, together with your name, email and phone, so he can remember your loved ones and reach out to you. You can turn this off at any time and it will be deleted from our server.")}</div></div><button class="btn btn-primary cta" id="shYes">${t("Yes, share")}</button><button class="btn btn-ghost" id="shNo">${t("Not now")}</button>`, (o) => { $("#shYes", o).onclick = () => { res(true); closeSheet(); }; $("#shNo", o).onclick = () => closeSheet(); }, () => res(false)));
+    if (!ok) return;
+    try { if (!(await ensureMember())) return; } catch (e) { return toast(errText(e)); }
+    S.yzShare = true; save(); await yzSyncNow(); toast(tt("Shared with the Rabbi")); draw();
+  } else { S.yzShare = false; save(); await yzSyncNow(); toast(tt("Sharing is off and your data was removed")); draw(); }
+};
+async function yzSyncNow() { clearTimeout(yzTimer); if (!API.members || PRACTICE || !S.mtoken) return; try { if (S.yzShare || S.yzRemind) await api("/yahrzeits", { method: "PUT", member: true, body: { entries: S.yz.map((e) => ({ id: e.id, name: e.name, relation: e.relation || "", day: e.day, month: e.month, year: e.year || null, notes: e.notes || "" })), share: S.yzShare } }); else await api("/yahrzeits", { method: "DELETE", member: true }); } catch (e) { toast(errText(e)); } }
+A.yzRemindTgl = async () => {
+  if (!S.yzRemind) {
+    try { if (!(await ensureMember())) return; } catch (e) { return toast(errText(e)); }
+    S.yzRemind = true; // set first so the subscription is sent with yahrzeit reminders on
+    if (!(await pushEnable())) { S.yzRemind = false; save(); return; }
+    save(); await yzSyncNow(); toast(tt("Yahrzeit reminders on")); draw();
+  } else { S.yzRemind = false; save(); await yzSyncNow(); pushPrefsSoon(); draw(); }
+};
+
+// push notifications (work when the app is closed; need the server's notification keys)
+const b64u = (s) => Uint8Array.from(atob((s + "=".repeat((4 - (s.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
+function pushPrefs() { return { lang: LANG, candle: { on: !!S.rem.candle.on, mins: S.rem.candle.mins }, streak: { on: !!S.rem.streak.on }, yahrzeit: { on: !!S.yzRemind, leads: [7, 1, 0] }, lastCoin: lastCoinYmd() }; }
+const lastCoinYmd = () => { const h = S.history.find((x) => x.kind === "coin"); return h ? ymdLocal(new Date(h.t)) : ""; };
+const pushOk = () => API.members && API.vapid && !PRACTICE && "serviceWorker" in navigator && "PushManager" in window;
+async function pushSub() { const reg = await navigator.serviceWorker.ready; return reg.pushManager.getSubscription(); }
+async function pushSync() {
+  if (!pushOk() || !S.pushOn) return;
+  try {
+    const reg = await navigator.serviceWorker.ready; let sub = await reg.pushManager.getSubscription();
+    if (!sub) { if (Notification.permission !== "granted") return; sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64u(API.vapid) }); }
+    await api("/push/subscribe", { method: "POST", member: true, body: { subscription: sub.toJSON(), prefs: pushPrefs() } });
+  } catch (e) {}
+}
+async function pushEnable() {
+  if (!pushOk()) { toast(tt("Notifications aren’t available here yet")); return false; }
+  if (S.pushOn && (await pushSub())) return true;
+  if (!(await ensureNotify())) return false;
+  try {
+    const reg = await navigator.serviceWorker.ready, sub = (await reg.pushManager.getSubscription()) || (await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64u(API.vapid) }));
+    await api("/push/subscribe", { method: "POST", member: true, body: { subscription: sub.toJSON(), prefs: pushPrefs() } });
+    S.pushOn = true; save(); return true;
+  } catch (e) { toast(tt("Couldn’t turn on notifications")); return false; }
+}
+async function pushDisable() {
+  S.pushOn = false; S.yzRemind = false; save();
+  try { const sub = await pushSub(); if (sub) { const ep = sub.endpoint; await sub.unsubscribe(); await api("/push/unsubscribe", { method: "POST", body: { endpoint: ep } }); } } catch (e) {}
+  yzSync();
+}
+let prefTimer = null;
+function pushPrefsSoon() { clearTimeout(prefTimer); prefTimer = setTimeout(async () => { if (!S.pushOn) return; try { const sub = await pushSub(); if (sub) await api("/push/prefs", { method: "PUT", body: { endpoint: sub.endpoint, prefs: pushPrefs() } }); } catch (e) {} }, 800); }
+function pushCard() {
+  if (!pushOk()) return "";
+  return `${sec(t("When the app is closed"))}${tg("pushTgl", "", t("Send reminders to this device"), t("Candle lighting, streak and yahrzeit reminders arrive even when the app is closed."), S.pushOn)}`;
+}
+A.pushTgl = async () => { if (S.pushOn) { await pushDisable(); toast(tt("Notifications off")); } else { try { if (await pushEnable()) toast(tt("Notifications on")); } catch (e) { toast(errText(e)); } } draw(); };
+
 // ---------- start ----------
-applyLang(); draw();
+applyLang();
+try { if (new URLSearchParams(location.search).get("go") === "yahrzeit") { U.page = "yahrzeit"; U.stack = ["more"]; history.replaceState(null, "", location.pathname); } } catch (e) {}
+draw();
 if (S.bio) { showLock(); A.unlock(); }
 initPay(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500);
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

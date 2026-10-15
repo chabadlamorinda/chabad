@@ -169,6 +169,9 @@ test('webhook: rejects bad signatures, flags card issue on failure, clears on su
   assert.equal((await call('GET', '/api/member', undefined, { token: tok })).json.cardIssue, 'Your card was declined.');
   const a = await adminLogin();
   assert.equal((await call('GET', '/admin/api/payments', undefined, { headers: a })).json.events.length, 2);
+  assert.equal((await call('POST', '/api/member/card-updated', {}, { token: tok })).status, 200);
+  assert.equal((await call('GET', '/api/member', undefined, { token: tok })).json.cardIssue, '');
+  await hook({ id: 'evt_5', type: 'payment_intent.payment_failed', data: { object: { customer: 'cus_ABC123', amount: 1800, metadata: { source: 'pushka' } } } });
   await hook({ id: 'evt_4', type: 'invoice.paid', data: { object: { customer: 'cus_ABC123' } } });
   assert.equal((await call('GET', '/api/member', undefined, { token: tok })).json.cardIssue, '');
   assert.ok((await store.listPaymentEvents()).every((e) => e.resolved));

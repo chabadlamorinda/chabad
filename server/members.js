@@ -55,6 +55,8 @@ function mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, lim
     const m = req.member;
     res.json({ name: m.name, email: m.email, phone: m.phone, address: m.address, share: m.share_yahrzeits, cardIssue: m.card_issue || '' });
   }));
+  // The donor saved a new card: the "please update your card" notice can go away.
+  api.post('/member/card-updated', need, auth, wrap(async (req, res) => { if (req.member.stripe_customer_id) await store.clearCardIssue(req.member.stripe_customer_id); res.json({ ok: true }); }));
   api.delete('/member', need, auth, wrap(async (req, res) => { await store.deleteMember(req.member.id); res.json({ ok: true }); }));
 
   // The app sends the full list. share=true means the Rabbi may see it; false keeps it private to this member (used only for their own reminders).
