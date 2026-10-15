@@ -230,3 +230,44 @@ test('privacy policy and support pages are public', async (t) => {
   for (const p of ['/pushka/privacy.html', '/pushka/support.html', '/pushka/manifest.json', '/pushka/sw.js', '/pushka/icon-512.png', '/pushka/icon-maskable-512.png']) assert.equal((await fetch(a.base + p)).status, 200, p);
   assert.match(await (await fetch(a.base + '/pushka/privacy.html')).text(), /Tax ID 47-4642750/);
 });
+
+test('change card: newest card becomes the one charged, monthly gifts follow it, old cards are removed', async (t) => {
+  const c = await signedIn(t); const cus = c.token.split('.')[0];
+  assert.equal((await c.call('POST', '/api/payment-method/default', {}, c.token)).json.code, 'no_card');
+  const old = c.stripe.addCard(cus);
+  const sub = await c.call('POST', '/api/subscribe', gift({ idem: 'idem-chg-0000000000001' }), c.token);
+  const fresh = c.stripe.addCard(cus); fresh.card.last4 = '1111';
+  const r = await c.call('POST', '/api/payment-method/default', {}, c.token);
+  assert.equal(r.status, 200); assert.equal(r.json.card.last4, '1111');
+  assert.equal(c.stripe._st.subs[sub.json.id].default_payment_method, fresh.id);
+  assert.equal(c.stripe._st.customers[cus].invoice_settings.default_payment_method, fresh.id);
+  assert.equal(Object.values(c.stripe._st.pms).filter((m) => m.customer === cus).length, 1);
+  assert.ok(!c.stripe._st.pms[old.id]);
+  assert.equal((await c.call('GET', '/api/payment-method', null, c.token)).json.card.last4, '1111');
+  assert.equal((await c.call('POST', '/api/payment-method/default', {})).status, 401);
+});
+
+test('chai club: levels, board shows only chosen names, replace switches level, amounts never exposed', async (t) => {
+  const c = await signedIn(t); const cus = c.token.split('.')[0]; c.stripe.addCard(cus);
+  const join = (amount, club, extra = {}) => c.call('POST', '/api/subscribe', gift({ amount, fund: 'chai', idem: 'idem-club-' + amount + '-' + Math.random().toString(36).slice(2, 12), club, ...extra }), c.token);
+  assert.equal((await join(50, { name: 'Small Giver', show: true })).status, 200); // below $72 is accepted, just not on the board
+  let b0 = (await c.call('GET', '/api/club')).json; assert.equal(b0.total, 0); assert.deepEqual(b0.members, []);
+  await c.call('DELETE', '/api/subscriptions/' + (await c.call('GET', '/api/subscriptions', null, c.token)).json.subscriptions[0].id, null, c.token);
+  assert.equal((await join(180, { name: '', show: true })).json.code, 'invalid_name');
+  assert.equal((await c.call('POST', '/api/subscribe', gift({ amount: 180, fund: 'general', idem: 'idem-club-wrongfund-00001', club: { name: 'X', show: true } }), c.token)).status, 400);
+  assert.equal((await join(180, { name: 'The Cohen Family', show: true })).status, 200); // 180 = silver
+  let b = (await c.call('GET', '/api/club')).json;
+  assert.deepEqual(b.members.map((m) => [m.name, m.level]), [['The Cohen Family', 'silver']]); assert.equal(b.counts.silver, 1); assert.equal(b.total, 1);
+  assert.ok(!JSON.stringify(b).includes('18000') && !JSON.stringify(b).includes('180'));
+  // level change replaces the old gift
+  assert.equal((await join(720, { name: 'The Cohen Family', show: true }, { replace: true })).status, 200);
+  b = (await c.call('GET', '/api/club')).json; assert.equal(b.members.length, 1); assert.equal(b.members[0].level, 'platinum'); assert.equal(b.total, 1);
+  assert.equal((await c.call('GET', '/api/subscriptions', null, c.token)).json.subscriptions.length, 1);
+  // anonymous donors are counted, not named
+  const d = await start(); t.after(d.close); d.stripe = c.stripe;
+  await c.call('POST', '/api/subscribe', gift({ amount: 72, fund: 'chai', idem: 'idem-club-anon-0000001', club: { name: 'Secret', show: false } }), c.token);
+  b = (await c.call('GET', '/api/club')).json; assert.equal(b.counts.bronze, 1); assert.ok(!JSON.stringify(b).includes('Secret'));
+  assert.equal(b.members[0].level, 'platinum');
+  const r = await fetch(c.base + '/api/club'); assert.equal(r.headers.get('access-control-allow-origin'), '*');
+  const page = await fetch(c.base + '/board/'); assert.equal(page.status, 200); assert.match(page.headers.get('content-security-policy'), /frame-ancestors 'self' https:\/\/www\.chabadoflamorinda\.com/);
+});

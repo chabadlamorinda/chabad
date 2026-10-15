@@ -225,3 +225,15 @@ test('scheduler: candle lighting reminder and daily coin streak', async () => {
   assert.equal(await sch.tick(new Date('2026-10-15T20:03:00-07:00')), 0); // already dropped a coin today
   assert.equal(await sch.tick(new Date('2026-10-17T20:03:00-07:00')), 0); // Shabbat: no nudge
 });
+
+test('yahrzeit reminders default to a month, a week and a day before', async () => {
+  const tok = await join(), now = new Date(Date.UTC(2026, 9, 15, 15, 5));
+  const hd = H.hebrewOf(H.addDays('2026-10-15', 30));
+  await call('PUT', '/api/yahrzeits', { entries: [entry({ id: 'm', day: hd.day, month: hd.month, year: hd.year - 5 })] }, { token: tok });
+  await call('POST', '/api/push/subscribe', { subscription: { endpoint: 'https://push.example/d', keys: { p256dh: 'a', auth: 'b' } }, prefs: { lang: 'en', yahrzeit: { on: true } } }, { token: tok });
+  assert.deepEqual((await store.listPushSubs())[0].prefs.yahrzeit.leads, [30, 7, 1]);
+  const sch = createScheduler({ store, send: async (s, p) => { sent.push(p); }, getCandles: async () => [], log: { error() {} } });
+  assert.equal(await sch.tick(now), 1); assert.match(sent[0].body, /about a month/);
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 10, 7, 16, 5))), 1); // 7 days before (pacific 8:05)
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 10, 13, 16, 5))), 1); // 1 day before
+});

@@ -18,7 +18,7 @@ function sanitizeEntries(list) {
   return out;
 }
 function sanitizePrefs(p) {
-  p = p || {}; const leads = Array.isArray(p.yahrzeit && p.yahrzeit.leads) ? [...new Set(p.yahrzeit.leads.map(Number).filter((n) => Number.isInteger(n) && n >= 0 && n <= 30))].slice(0, 4) : [7, 1, 0];
+  p = p || {}; const leads = Array.isArray(p.yahrzeit && p.yahrzeit.leads) ? [...new Set(p.yahrzeit.leads.map(Number).filter((n) => Number.isInteger(n) && n >= 0 && n <= 30))].slice(0, 6) : [30, 7, 1];
   return {
     lang: p.lang === 'he' ? 'he' : 'en',
     candle: { on: !!(p.candle && p.candle.on), mins: Math.min(Math.max(Number(p.candle && p.candle.mins) || 15, 5), 120) },
