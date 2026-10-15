@@ -66,17 +66,17 @@
   boardTab.render = function (box, b) {
     var tbl = box._tbl; tbl.textContent = '';
     var rows = b.slots.filter(function (s) {
-      var sp = s.sponsorship;
-      return (filter === 'upcoming' && !s.past) || filter === 'all' || (filter === 'open' && !sp && !s.hidden) || (filter === 'pending' && sp && sp.status === 'pending') || (filter === 'paid' && sp && sp.status === 'paid') || (filter === 'hidden' && s.hidden);
+      var L = s.sponsorships || [];
+      return (filter === 'upcoming' && !s.past) || filter === 'all' || (filter === 'open' && !L.length && !s.hidden) || (filter === 'pending' && L.some(function (x) { return x.status === 'pending'; })) || (filter === 'paid' && L.some(function (x) { return x.status === 'paid'; })) || (filter === 'hidden' && s.hidden);
     });
-    var t = el('table'), head = el('tr'); ['Date', 'Week', 'Status', 'Sponsor', 'Gift'].forEach(function (h) { head.appendChild(el('th', { text: h })); }); t.appendChild(head);
+    var t = el('table'), head = el('tr'); ['Date', 'Week', 'Status', 'Sponsors', 'Gifts'].forEach(function (h) { head.appendChild(el('th', { text: h })); }); t.appendChild(head);
     rows.forEach(function (s) {
-      var sp = s.sponsorship, tr = el('tr', { class: 'click' + (s.past ? ' past' : ''), onclick: function () { editor(s, b); } });
+      var L = s.sponsorships || [], waiting = L.filter(function (x) { return x.status === 'pending'; }).length, tr = el('tr', { class: 'click' + (s.past ? ' past' : ''), onclick: function () { editor(s, b); } });
       tr.appendChild(el('td', { text: s.dateLabel + (s.past ? ' (past)' : '') }));
       tr.appendChild(el('td', {}, [s.title, el('div', { class: 'small', text: s.heb + (s.hidden ? ' · hidden' : '') })]));
-      tr.appendChild(el('td', {}, [s.hidden && !sp ? el('span', { class: 'pill hid', text: 'Hidden' }) : sp ? el('span', { class: 'pill ' + sp.status, text: sp.status === 'paid' ? 'Paid' : 'Waiting for payment' }) : el('span', { class: 'pill', text: 'Open' })]));
-      tr.appendChild(el('td', {}, sp ? [sp.name + (sp.anonymous ? ' (anonymous)' : ''), el('div', { class: 'small', text: ded(sp.dedicationKind, sp.dedication) })] : ''));
-      tr.appendChild(el('td', { text: sp ? money(sp.amountCents) + ' · ' + (METHODS[sp.method] || sp.method) : money(s.priceCents) }));
+      tr.appendChild(el('td', {}, [s.hidden && !L.length ? el('span', { class: 'pill hid', text: 'Hidden' }) : !L.length ? el('span', { class: 'pill', text: 'Open' }) : el('span', { class: 'pill ' + (waiting ? 'pending' : 'paid'), text: waiting ? (waiting === L.length ? 'Waiting for payment' : waiting + ' waiting') : 'Paid' })]));
+      tr.appendChild(el('td', {}, L.map(function (sp) { return el('div', {}, [sp.name + (sp.anonymous ? ' (anonymous)' : ''), el('div', { class: 'small', text: ded(sp.dedicationKind, sp.dedication) })]); })));
+      tr.appendChild(el('td', { text: L.length ? L.map(function (sp) { return money(sp.amountCents) + ' ' + (METHODS[sp.method] || sp.method); }).join(' · ') : money(s.priceCents) }));
       t.appendChild(tr);
     });
     tbl.appendChild(rows.length ? t : el('p', { class: 'small', text: 'Nothing matches.' }));
@@ -86,8 +86,9 @@
     var m = el('div', { class: 'modal', onclick: function (e) { if (e.target === m) m.remove(); } }, [el('div', { class: 'card', role: 'dialog' }, content)]);
     document.body.appendChild(m); return m;
   }
-  function editor(s, b) {
-    var sp = s.sponsorship, f = {}, m;
+  function editor(s, b, selId) {
+    var old = document.querySelector('.modal'); if (old) old.remove();
+    var L = s.sponsorships || [], sp = selId === null ? null : (L.filter(function (x) { return x.id === selId; })[0] || (selId === undefined ? L[0] : null)) || null, f = {}, m;
     function inp(label, key, val, attrs) { f[key] = el('input', Object.assign({ value: val == null ? '' : val }, attrs || {})); return el('div', {}, [el('label', { text: label }), f[key]]); }
     var kind = el('select', {}, Object.keys(KINDS).map(function (k) { return el('option', { value: k, text: KINDS[k], selected: sp && sp.dedicationKind === k }); }));
     var method = el('select', {}, Object.keys(METHODS).filter(function (k) { return k !== 'card' || (sp && sp.method === 'card'); }).map(function (k) { return el('option', { value: k, text: METHODS[k], selected: sp ? sp.method === k : k === 'check' }); }));
@@ -101,7 +102,10 @@
     var form = [
       el('h2', { text: s.title }), el('div', { class: 'small', text: s.dateLabel + ' · ' + s.heb + (s.note ? ' · ' + s.note : '') }),
       sp && sp.createdAt ? el('div', { class: 'small', text: 'Entered ' + (sp.source === 'admin' ? 'by you' : 'online') + ' on ' + new Date(sp.createdAt).toLocaleDateString() + (sp.paidAt ? ' · paid ' + new Date(sp.paidAt).toLocaleDateString() : '') }) : null,
-      el('h2', { style: 'margin-top:12px', text: sp ? 'Sponsor' : 'Add a sponsor' }),
+      L.length ? el('div', { style: 'margin-top:10px' }, [el('label', { text: L.length > 1 ? 'Sponsors of this week (tap one to edit)' : 'Sponsor of this week' })].concat(L.map(function (x) {
+        return el('div', { class: 'row', style: 'padding:4px 0' }, [el('button', { class: sp && sp.id === x.id ? 'on' : '', text: x.name + ' · ' + (x.status === 'paid' ? 'paid' : 'waiting') + ' · ' + money(x.amountCents), onclick: function () { editor(s, b, x.id); } })]);
+      }).concat([el('div', { class: 'row', style: 'padding:4px 0' }, [el('button', { class: sp ? '' : 'on', text: '+ Add another sponsor', onclick: function () { editor(s, b, null); } })])]))) : null,
+      el('h2', { style: 'margin-top:12px', text: sp ? 'Edit this sponsor' : (L.length ? 'Add another sponsor' : 'Add a sponsor') }),
       inp('Name (as shown on the board)', 'name', sp && sp.name, { maxlength: '80' }),
       el('label', {}, [anon, ' Show as “Anonymous” on the board']),
       el('div', { class: 'grid2' }, [el('div', {}, [el('label', { text: 'Dedication' }), kind]), inp('In honor / memory of', 'ded', sp && sp.dedication, { maxlength: '120' })]),

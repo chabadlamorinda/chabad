@@ -106,7 +106,7 @@ test('board without a database: shows the calendar, all open, and sponsoring is 
 
 // ---------------------------------------------------------------- sponsoring: check / Zelle / Venmo
 
-test('sponsor by check: reserves the week, shows instructions, hides private details, blocks double booking', async () => {
+test('sponsor by check: reserves the week, shows instructions, hides private details, allows co-sponsors', async () => {
   const slot = await firstOpen();
   const r = await call('POST', '/api/kiddush/sponsor', form(slot));
   assert.equal(r.status, 200, r.text);
@@ -116,8 +116,10 @@ test('sponsor by check: reserves the week, shows instructions, hides private det
   assert.equal(s.status, 'reserved'); assert.equal(s.sponsor.name, 'The Levy Family'); assert.equal(s.sponsor.dedication, 'In honor of Sara’s birthday');
   const raw = JSON.stringify(b);
   for (const secret of ['Levy@Example.com', 'levy@example.com', '925-555-0101', 'Please call me']) assert.ok(!raw.includes(secret), 'leaked ' + secret);
-  const again = await call('POST', '/api/kiddush/sponsor', form(slot, { name: 'Someone Else' }));
-  assert.equal(again.status, 409); assert.equal(again.json.code, 'taken');
+  const again = await call('POST', '/api/kiddush/sponsor', form(slot, { name: 'Someone Else', email: 'else@example.com' }));
+  assert.equal(again.status, 200, 'a second sponsor can join the same week');
+  const pair = (await board()).slots.find((x) => x.key === slot.key);
+  assert.deepEqual(pair.sponsors.map((x) => x.name), ['The Levy Family', 'Someone Else']); assert.equal(pair.sponsor.name, 'The Levy Family');
   // the same request sent twice (double tap) answers again instead of failing
   const body = form(await firstOpen());
   const one = await call('POST', '/api/kiddush/sponsor', body), two = await call('POST', '/api/kiddush/sponsor', body);
@@ -162,7 +164,6 @@ test('card: creates a Stripe Checkout session, holds the week, confirms after pa
   assert.ok(opts.idempotencyKey.startsWith('kiddush-ks_'));
   const id = r.json.id, sessionId = Object.keys(stripe._st.sessions).pop();
   assert.equal((await board()).slots.find((x) => x.key === slot.key).status, 'reserved');
-  assert.equal((await call('POST', '/api/kiddush/sponsor', form(slot, { method: 'card' }))).status, 409, 'held while the donor is at checkout');
 
   // back from Stripe before paying: still pending. Wrong ids are refused.
   assert.equal((await call('GET', `/api/kiddush/confirm?id=${id}&session_id=${sessionId}`)).json.status, 'pending');
@@ -244,14 +245,18 @@ test('admin: mark paid, edit, release, assign by hand, hide a week, change price
   assert.equal(s.status, 'sponsored'); assert.equal(s.sponsor.name, 'Levy Family'); assert.equal(s.sponsor.dedication, 'In loving memory of Mom');
   assert.ok((await store.getSponsorship(r.json.id)).paid_at);
 
-  // the week is taken: a manual entry for the same week is refused until released
+  // a week can have several sponsors: add one by hand next to the first, then remove the first
   const body = { slot: slot.key, name: 'Cohen', amount: 180, method: 'cash', status: 'paid' };
-  assert.equal((await call('POST', '/admin/api/kiddush/sponsorship', body, h)).status, 409);
-  assert.equal((await call('POST', `/admin/api/kiddush/sponsorship/${r.json.id}/release`, {}, h)).status, 200);
-  assert.equal((await board()).slots.find((x) => x.key === slot.key).status, 'open');
   const made = await call('POST', '/admin/api/kiddush/sponsorship', { ...body, dedicationKind: 'refuah', dedication: 'Rivka bas Sarah' }, h); assert.equal(made.status, 200, made.text);
   s = (await board()).slots.find((x) => x.key === slot.key);
-  assert.equal(s.status, 'sponsored'); assert.equal(s.sponsor.dedication, 'For the speedy recovery of Rivka bas Sarah');
+  assert.equal(s.sponsors.length, 2); assert.equal(s.sponsors[1].dedication, 'For the speedy recovery of Rivka bas Sarah');
+  const ab2 = (await call('GET', '/admin/api/kiddush/board', undefined, h)).json.slots.find((x) => x.key === slot.key);
+  assert.equal(ab2.sponsorships.length, 2); assert.equal(ab2.sponsorship.id, r.json.id);
+  assert.equal((await call('POST', `/admin/api/kiddush/sponsorship/${r.json.id}/release`, {}, h)).status, 200);
+  s = (await board()).slots.find((x) => x.key === slot.key);
+  assert.equal(s.status, 'sponsored'); assert.equal(s.sponsors.length, 1); assert.equal(s.sponsor.name, 'Cohen');
+  assert.equal((await call('POST', `/admin/api/kiddush/sponsorship/${made.json.id}/release`, {}, h)).status, 200);
+  assert.equal((await board()).slots.find((x) => x.key === slot.key).status, 'open');
   assert.equal((await call('POST', '/admin/api/kiddush/sponsorship', { slot: slot.key }, h)).status, 400, 'a name is required');
 
   // hide a week (e.g. the Rabbi is away): gone from the public board and cannot be sponsored, still visible to the Rabbi
@@ -332,7 +337,8 @@ test('board sponsorship: a $5,000 year-long offer that is always open, off the t
   assert.equal(r.status, 200, r.text); assert.equal(r.json.slot.kind, 'board'); assert.equal(r.json.instructions.amount, '5000'); assert.equal(r.json.instructions.memo, 'Kiddush Board Sponsor – 5787');
   const after = await board();
   assert.equal(after.boardSponsor.status, 'reserved'); assert.equal(after.boardSponsor.sponsor.name, 'The Levy Family'); assert.equal(after.boardSponsor.sponsor.dedication, 'In loving memory of Avraham ben Yitzchak');
-  assert.equal((await call('POST', '/api/kiddush/sponsor', form(b.boardSponsor))).status, 409);
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form(b.boardSponsor, { name: 'Co Donor', email: 'co@example.com' }))).status, 200, 'co-donors welcome');
+  assert.equal((await board()).boardSponsor.sponsors.length, 2);
   assert.ok(!JSON.stringify(after).includes('levy@example.com'));
   const adm = await adminLogin();
   assert.equal((await call('PUT', '/admin/api/kiddush/settings', { priceBoard: 6000 }, { headers: adm })).status, 200);

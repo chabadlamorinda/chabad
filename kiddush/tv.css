@@ -77,3 +77,6 @@ body{font-family:"Oswald",sans-serif;color:var(--gold);background:#2a0f08 url(im
 .donor-name{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:calc(var(--u)*4);line-height:1.1;color:#e0bc5a;white-space:nowrap;max-width:100%}
 .donor-sub{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:calc(var(--u)*2.3);line-height:1.2;color:#d9b552}
 .donor.open .donor-l{font-size:calc(var(--u)*2.7)}
+
+.p-sp.small{font-size:calc(var(--u)*3.2)}
+.p-ded.small{font-size:calc(var(--u)*2.1);margin-top:0;margin-bottom:calc(var(--u)*.35)}
