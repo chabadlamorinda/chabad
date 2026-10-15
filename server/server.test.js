@@ -250,7 +250,9 @@ test('change card: newest card becomes the one charged, monthly gifts follow it,
 test('chai club: levels, board shows only chosen names, replace switches level, amounts never exposed', async (t) => {
   const c = await signedIn(t); const cus = c.token.split('.')[0]; c.stripe.addCard(cus);
   const join = (amount, club, extra = {}) => c.call('POST', '/api/subscribe', gift({ amount, fund: 'chai', idem: 'idem-club-' + amount + '-' + Math.random().toString(36).slice(2, 12), club, ...extra }), c.token);
-  assert.equal((await join(50, { name: 'X', show: true })).json.code, 'invalid_amount'); // below $72
+  assert.equal((await join(50, { name: 'Small Giver', show: true })).status, 200); // below $72 is accepted, just not on the board
+  let b0 = (await c.call('GET', '/api/club')).json; assert.equal(b0.total, 0); assert.deepEqual(b0.members, []);
+  await c.call('DELETE', '/api/subscriptions/' + (await c.call('GET', '/api/subscriptions', null, c.token)).json.subscriptions[0].id, null, c.token);
   assert.equal((await join(180, { name: '', show: true })).json.code, 'invalid_name');
   assert.equal((await c.call('POST', '/api/subscribe', gift({ amount: 180, fund: 'general', idem: 'idem-club-wrongfund-00001', club: { name: 'X', show: true } }), c.token)).status, 400);
   assert.equal((await join(180, { name: 'The Cohen Family', show: true })).status, 200); // 180 = silver

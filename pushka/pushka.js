@@ -1028,7 +1028,7 @@ const clubOf = (a) => { for (let i = CLUB.length - 1; i >= 0; i--) if (a >= CLUB
 const medalSvg = (id, w) => (window.ClubBoard ? ClubBoard.medal(id, w).outerHTML : "");
 const clubSub = () => (API.subs || []).find((x) => x.club);
 U.club = { amt: 180, data: null };
-function clubWho() { const l = clubOf(U.club.amt); return l ? t("You’ll be a {level} member", { level: t(l[2]) }) : t("The Chai Club starts at $72 a month."); }
+function clubWho() { const l = clubOf(U.club.amt); return l ? t("You’ll be a {level} member", { level: t(l[2]) }) : t("Thank you! Gifts under $72 a month aren’t listed on the board, but every gift matters."); }
 PG.club = () => {
   const ex = clubSub(), exL = ex && clubOf(ex.gift || ex.amount), cur = clubOf(U.club.amt);
   const lv = CLUB.slice().reverse().map(([id, min, nm]) => `<button class="clv ${cur && cur[0] === id ? "sel" : ""}" data-act="clubLvl" data-v="${id}"><span>${medalSvg(id, 36)}</span><span class="grow" style="text-align:start"><b>${t(nm)}</b><br><small>${t(CLUB_RANGE[id])}</small></span><span class="clv-a">${money(min)}+</span></button>`).join("");
@@ -1036,9 +1036,9 @@ PG.club = () => {
     <p class="body-p">${t("Join our community of monthly donors. Your steady gift lets Chabad of Lamorinda plan ahead, and your medal is displayed on our honor board.")}</p>
     ${ex && exL ? `<div class="card" style="gap:12px">${medalSvg(exL[0], 40)}<div style="flex:1"><div class="card-title">${t("You’re a {level} member", { level: t(exL[2]) })}</div><div class="h-s">${t("{amt} monthly · {fund}", { amt: money(ex.gift || ex.amount), fund: t("Chai Club") })}</div><div class="h-s">${t("Choose a level below to change it.")}</div></div></div>` : ""}
     <div class="clvs">${lv}</div>
-    <div class="field"><label for="clubAmt">${t("Monthly amount")}</label><div class="amt"><span>$</span><input class="input" id="clubAmt" type="number" min="72" step="1" inputmode="decimal" data-inp="clubAmt" value="${U.club.amt}"></div><div class="h-t" id="clubWho" style="margin-top:6px">${clubWho()}</div></div>
-    <div class="field"><label for="clubName">${t("Name on the honor board")}</label><input class="input" id="clubName" maxlength="60" data-inp="clubName" value="${esc(S.club.name || S.name)}" placeholder="${esc(tt("e.g. The Cohen Family"))}"></div>
-    <label class="chk"><input type="checkbox" data-chg="clubShow" ${S.club.show ? "checked" : ""}><span>${t("Show my name on the board (otherwise I’m counted but not named)")}</span></label>
+    <div class="field"><label for="clubAmt">${t("Monthly amount")}</label><div class="amt"><span>$</span><input class="input" id="clubAmt" type="number" min="1" step="1" inputmode="decimal" data-inp="clubAmt" value="${U.club.amt}"></div><div class="h-t" id="clubWho" style="margin-top:6px">${clubWho()}</div></div>
+    ${cur ? `<div class="field"><label for="clubName">${t("Name on the honor board")}</label><input class="input" id="clubName" maxlength="60" data-inp="clubName" value="${esc(S.club.name || S.name)}" placeholder="${esc(tt("e.g. The Cohen Family"))}"></div>
+    <label class="chk"><input type="checkbox" data-chg="clubShow" ${S.club.show ? "checked" : ""}><span>${t("Show my name on the board (otherwise I’m counted but not named)")}</span></label>` : ""}
     ${feeBox()}
     <div class="h-s" style="display:flex;align-items:center;gap:8px;font-size:13px">${ico(I.card, 16)}${API.enabled ? (API.card ? esc(cardLabel()) + ` <button class="link" data-act="cardChange">${t("Change")}</button>` : t("You’ll add a card when you give")) : t("Payment completes on our secure donation page")}</div>
     <button class="btn btn-primary cta" id="clubCta" data-act="clubJoin">${clubCta()}</button>
@@ -1050,10 +1050,10 @@ A.clubAmt = (v) => { const n = parseFloat(v); U.club.amt = n > 0 ? r2(n) : 0; co
 A.clubName = (v) => { S.club.name = v; save(); };
 A.clubShow = (v, el) => { S.club.show = el.checked; save(); };
 A.clubJoin = () => {
-  const a = U.club.amt; if (!(a >= 72) || a > MAX_CARD) return toast(tt("The Chai Club starts at $72 a month."));
-  const name = (S.club.name || S.name || "").trim(); if (S.club.show && !name) { toast(tt("Please enter the name for the board.")); return $("#clubName") && $("#clubName").focus(); }
+  const a = U.club.amt; if (!(a >= 1) || a > MAX_CARD) return toast(tt("Enter a valid amount"));
+  const name = (S.club.name || S.name || "").trim(); if (clubOf(a) && S.club.show && !name) { toast(tt("Please enter the name for the board.")); return $("#clubName") && $("#clubName").focus(); }
   S.club.name = name; save();
-  startGift({ amt: a, fund: "chai", freq: "monthly", ded: "", fromPushka: false, method: "online", pid: P().id, club: { name, show: !!S.club.show }, replace: !!clubSub() });
+  startGift({ amt: a, fund: "chai", freq: "monthly", ded: "", fromPushka: false, method: "online", pid: P().id, club: { name, show: !!S.club.show && !!clubOf(a) }, replace: !!clubSub() });
 };
 A.clubJoinHome = () => { U.stack.push(U.page); U.page = "club"; draw(); };
 function mountBoard() {

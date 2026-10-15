@@ -519,4 +519,5 @@ const HE = {
   "On the day": "ביום עצמו",
   "Add": "הוספה",
   "Remind me": "הזכירו לי",
+  "Thank you! Gifts under $72 a month aren’t listed on the board, but every gift matters.": "תודה! תרומות מתחת ל-72$ בחודש אינן מופיעות בלוח, אבל כל תרומה חשובה.",
 };

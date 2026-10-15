@@ -289,8 +289,9 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const product = await ensureProduct(g.fund);
     let club = null;
     if (req.body.club) {
-      if (g.fund !== 'chai' || !clubLevel(g.cents)) throw new HttpError(400, 'invalid_amount', 'The Chai Club starts at $72 a month.');
-      club = { name: clean(req.body.club.name, 60), show: req.body.club.show === true };
+      if (g.fund !== 'chai') throw new HttpError(400, 'invalid_fund', 'Please choose a fund.');
+      // Any monthly amount is welcome; gifts under $72 simply have no level, so they are not put on the board.
+      club = { name: clean(req.body.club.name, 60), show: req.body.club.show === true && !!clubLevel(g.cents) };
       if (club.show && !club.name) throw new HttpError(400, 'invalid_name', 'Please enter the name for the board.');
     }
     const sub = await stripe.subscriptions.create({

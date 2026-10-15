@@ -28,3 +28,5 @@ The app only allows framing from `chabadoflamorinda.com` and its subdomains (and
 
 ## Levels
 Bronze $72–$179 · Silver $180–$359 · Gold $360–$719 · Platinum $720+ per month. A gift of exactly $180, $360 or $720 counts in the higher level.
+
+Monthly gifts under $72 are welcome too: they are simply not listed on the board.
