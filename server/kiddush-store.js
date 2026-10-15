@@ -1,6 +1,5 @@
 // Postgres storage for the Kiddush board: settings, per-slot overrides, custom events and sponsorships.
-// A slot (one Shabbat or holiday day) can have at most ONE live sponsorship (pending or paid); the
-// unique index below makes double-booking impossible even if two people tap "Sponsor" together.
+// A slot (one Shabbat or holiday day) can have several live sponsorships (pending or paid): co-sponsors are welcome.
 'use strict';
 const crypto = require('crypto');
 
@@ -28,7 +27,8 @@ CREATE TABLE IF NOT EXISTS kiddush_sponsorships (
   idem TEXT UNIQUE, stripe_session_id TEXT, stripe_payment_intent TEXT,
   paid_at TIMESTAMPTZ, created_at TIMESTAMPTZ NOT NULL DEFAULT now(), updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
-CREATE UNIQUE INDEX IF NOT EXISTS kiddush_live_slot ON kiddush_sponsorships (slot_key) WHERE status IN ('pending','paid');
+DROP INDEX IF EXISTS kiddush_live_slot; -- a week can now have more than one sponsor
+CREATE INDEX IF NOT EXISTS kiddush_slot_idx ON kiddush_sponsorships (slot_key);
 CREATE INDEX IF NOT EXISTS kiddush_sp_email ON kiddush_sponsorships (lower(email));
 CREATE INDEX IF NOT EXISTS kiddush_sp_session ON kiddush_sponsorships (stripe_session_id);`;
 
@@ -64,25 +64,25 @@ function kiddushStore({ q, rows, one }) {
     async deleteEvent(id) { return (await q('DELETE FROM kiddush_events WHERE id=$1', [id])).rowCount === 1; },
 
     // ----- sponsorships -----
-    async liveSponsorships() { await expire(); return rows("SELECT * FROM kiddush_sponsorships WHERE status IN ('pending','paid')"); },
+    async liveSponsorships() { await expire(); return rows("SELECT * FROM kiddush_sponsorships WHERE status IN ('pending','paid') ORDER BY created_at"); },
     async allSponsorships() { await expire(); return rows('SELECT * FROM kiddush_sponsorships ORDER BY created_at DESC'); },
     getSponsorship: (id) => one('SELECT * FROM kiddush_sponsorships WHERE id=$1', [id]),
     sponsorshipByIdem: (idem) => one('SELECT * FROM kiddush_sponsorships WHERE idem=$1', [idem]),
     sponsorshipBySession: (sid) => one('SELECT * FROM kiddush_sponsorships WHERE stripe_session_id=$1', [sid]),
     async pendingCountForEmail(email) { await expire(); return (await one("SELECT count(*)::int AS n FROM kiddush_sponsorships WHERE status='pending' AND lower(email)=lower($1)", [email])).n; },
-    /** Returns the new id, or null when the week is already taken. */
+    /** Returns the new id. */
     async createSponsorship(s) {
       await expire();
       const id = newId('ks_');
-      try {
+      {
         await q(`INSERT INTO kiddush_sponsorships (id, slot_key, status, method, name, anonymous, dedication_kind, dedication, email, phone, note, amount_cents, fee_cents, source, idem, paid_at)
           VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15, CASE WHEN $3='paid' THEN now() ELSE NULL END)`,
           [id, s.slotKey, s.status, s.method, s.name, !!s.anonymous, s.dedicationKind || '', s.dedication || '', s.email || '', s.phone || '', s.note || '', s.amountCents || 0, s.feeCents || 0, s.source || 'online', s.idem || null]);
-      } catch (e) { if (e && e.code === '23505' && /kiddush_live_slot/.test(e.constraint || e.message)) return null; throw e; }
+      }
       return id;
     },
     attachSession: (id, sessionId) => q('UPDATE kiddush_sponsorships SET stripe_session_id=$2, updated_at=now() WHERE id=$1', [id, sessionId]),
-    /** Edit fields (admin). Throws code 23505 when moving to a live status on a slot that is taken. */
+    /** Edit fields (admin). */
     async updateSponsorship(id, f) {
       const sets = [], vals = [id];
       for (const [k, col] of Object.entries(COLS)) if (k in f) { vals.push(f[k]); sets.push(`${col}=$${vals.length}`); }
@@ -96,9 +96,7 @@ function kiddushStore({ q, rows, one }) {
       const sp = await one('SELECT * FROM kiddush_sponsorships WHERE id=$1', [id]);
       if (!sp) return null;
       if (sp.status === 'paid') return sp;
-      try {
-        await q("UPDATE kiddush_sponsorships SET status='paid', paid_at=now(), stripe_payment_intent=COALESCE($2, stripe_payment_intent), updated_at=now() WHERE id=$1", [id, paymentIntent || null]);
-      } catch (e) { if (e && e.code === '23505') return { ...sp, conflict: true }; throw e; }
+      await q("UPDATE kiddush_sponsorships SET status='paid', paid_at=now(), stripe_payment_intent=COALESCE($2, stripe_payment_intent), updated_at=now() WHERE id=$1", [id, paymentIntent || null]);
       return one('SELECT * FROM kiddush_sponsorships WHERE id=$1', [id]);
     },
     async releaseSponsorship(id, status = 'released', onlyPendingCard = false) {

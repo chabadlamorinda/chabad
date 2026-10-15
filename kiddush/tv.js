@@ -14,13 +14,16 @@
   }
   var shortTitle = function (t) { return t.replace('Shabbos Chol Hamoed', 'Shabbos Chol Hamoed'); };
 
+  var sponsorsOf = function (s) { return s.sponsors || (s.sponsor ? [s.sponsor] : []); };
+  var names = function (list) { return list.map(function (x) { return x.name; }).join(' & '); };
+
   function tile(s, isCurrent) {
     var t = el('div', 'tile ' + s.status + (s.past ? ' past' : '') + (isCurrent ? ' current' : ''));
     var line = s.dateLabel + ' – ' + s.heb, n;
     if ((s.title + ' – ' + line).length > 34) { n = el('div', 'n'); n.appendChild(el('div', '', s.title)); n.appendChild(el('div', '', line)); } // long names: two lines
     else n = el('div', 'n', s.title + ' – ' + line);
     t.appendChild(n);
-    if (s.sponsor) t.appendChild(el('div', 's', s.sponsor.name));
+    var sp = sponsorsOf(s); if (sp.length) t.appendChild(el('div', 's', names(sp)));
     return t;
   }
 
@@ -42,10 +45,12 @@
     if (s.mevarchim) { var mv = el('div', 'p-mev'); mv.appendChild(el('div', '', 'Shabbat Mevarchim Chodesh ' + s.mevarchim)); if (s.molad) mv.appendChild(el('div', '', 'Molad: ' + s.molad)); main.appendChild(mv); }
     var tm = el('div', 'p-times'); tm.id = 'times'; main.appendChild(tm); shabbatTimes(s, tm);
     main.appendChild(el('div', 'p-rule'));
-    if (s.sponsor) {
+    var sps = sponsorsOf(s);
+    if (sps.length) {
       main.appendChild(el('div', 'p-by', 'SPONSORED BY'));
-      main.appendChild(el('div', 'p-sp', s.sponsor.name));
-      if (s.sponsor.dedication) main.appendChild(el('div', 'p-ded', s.sponsor.dedication));
+      var shown = sps.slice(0, 3);
+      shown.forEach(function (x) { main.appendChild(el('div', 'p-sp' + (sps.length > 1 ? ' small' : ''), x.name)); if (x.dedication) main.appendChild(el('div', 'p-ded' + (sps.length > 1 ? ' small' : ''), x.dedication)); });
+      if (sps.length > 3) main.appendChild(el('div', 'p-ded small', 'and ' + (sps.length - 3) + ' more'));
     } else {
       main.appendChild(el('div', 'p-open', 'OPEN FOR SPONSORSHIP'));
       main.appendChild(el('div', 'p-price', 'Sponsor this Kiddush · $' + (s.priceCents / 100)));
@@ -53,13 +58,14 @@
     }
     box.appendChild(main);
     var base = (b.settings.publicUrl || location.origin).replace(/\/+$/, '');
-    var url = base + '/kiddush/' + (s.sponsor ? '' : '?w=' + encodeURIComponent(s.key));
+    var url = base + '/kiddush/?w=' + encodeURIComponent(s.key);
     var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url); qr.appendChild(q);
-    qr.appendChild(el('div', 'q1', s.sponsor ? 'SPONSOR A FUTURE KIDDUSH' : 'SCAN TO SPONSOR'));
+    qr.appendChild(el('div', 'q1', sps.length ? 'JOIN IN SPONSORING' : 'SCAN TO SPONSOR'));
     qr.appendChild(el('div', 'q2', base.replace(/^https?:\/\//, '') + '/kiddush'));
     box.appendChild(qr);
     $('plate').className = 'plate' + (s.mevarchim ? ' tall' : '');
-    ['p-name', 'p-sp', 'p-open'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
+    ['p-name', 'p-open'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
+    Array.prototype.forEach.call(box.querySelectorAll('.p-sp'), function (n) { fit(n, .5); });
     var ded = box.querySelector('.p-ded'); if (ded) { var g = 0; while (ded.scrollHeight > ded.clientHeight + 1 && ded.scrollHeight > parseFloat(getComputedStyle(ded).fontSize) * 2.4 && g++ < 12) ded.style.fontSize = parseFloat(getComputedStyle(ded).fontSize) * .92 + 'px'; }
   }
 
@@ -101,9 +107,10 @@
   function renderDonor(b) {
     var d = $('donor'), bs = b.boardSponsor, S = b.settings; d.textContent = ''; d.className = 'donor';
     var base = (S.publicUrl || location.origin).replace(/\/+$/, '').replace(/^https?:\/\//, '') + '/kiddush';
-    if (bs && bs.sponsor) {
-      d.appendChild(el('div', 'donor-l', 'DONATED BY')); d.appendChild(el('div', 'donor-name', bs.sponsor.name));
-      if (bs.sponsor.dedication) d.appendChild(el('div', 'donor-sub', bs.sponsor.dedication));
+    var bsp = bs ? sponsorsOf(bs) : [];
+    if (bsp.length) {
+      d.appendChild(el('div', 'donor-l', 'DONATED BY')); d.appendChild(el('div', 'donor-name', names(bsp)));
+      var dd = bsp.map(function (x) { return x.dedication; }).filter(Boolean); if (dd.length) d.appendChild(el('div', 'donor-sub', dd.join(' · ')));
     } else if (S.donorEn || S.donorHe) {
       d.appendChild(el('div', 'donor-l', 'DONATED BY'));
       if (S.donorHe) { var he = el('div', 'donor-he', S.donorHe); he.lang = 'he'; d.appendChild(he); }

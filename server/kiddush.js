@@ -86,7 +86,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     const st = await settings();
     const { today } = await todayInfo();
     const [overrides, events, live] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships()]) : [new Map(), [], []];
-    const byKey = new Map(live.map((s) => [s.slot_key, s]));
+    const byKey = new Map(); // slot key -> every live sponsorship of that week, oldest first
+    for (const sp of live) { if (!byKey.has(sp.slot_key)) byKey.set(sp.slot_key, []); byKey.get(sp.slot_key).push(sp); }
     let y, all, next;
     if (exact && Number.isInteger(year) && year > 5700 && year < 6000) { y = year; all = await slotsForYear(y, st, overrides, events); }
     else if (st.boardYear) { y = st.boardYear; all = await slotsForYear(y, st, overrides, events); }
@@ -98,14 +99,15 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     }
     next = all.find((s) => !s.hidden && s.kind !== 'board' && s.date >= today);
     const toOut = (s) => {
-      const sp = byKey.get(s.key) || null;
+      const sps = byKey.get(s.key) || [];
+      const shown = sps.map((sp) => publicSponsor(sp, st)).filter(Boolean);
       const out = {
         key: s.key, year: s.year, kind: s.kind, title: s.title, titleHe: s.titleHe, note: s.note, mevarchim: s.mevarchim || '', molad: s.molad || '', date: s.date, dow: s.dow, dateLabel: s.dateLabel, heb: s.heb, hebHe: s.hebHe,
         priceCents: s.priceCents, past: s.kind === 'board' ? false : s.date < today,
-        status: !sp ? 'open' : sp.status === 'paid' ? 'sponsored' : 'reserved',
-        sponsor: publicSponsor(sp, st),
+        status: !sps.length ? 'open' : sps.some((sp) => sp.status === 'paid') ? 'sponsored' : 'reserved',
+        sponsor: shown[0] || null, sponsors: shown,
       };
-      if (admin) Object.assign(out, { hidden: s.hidden, customTitle: s.customTitle, customPrice: s.customPrice, eventId: s.eventId || null, sponsorship: sp ? spView(sp) : null });
+      if (admin) Object.assign(out, { hidden: s.hidden, customTitle: s.customTitle, customPrice: s.customPrice, eventId: s.eventId || null, sponsorship: sps[0] ? spView(sps[0]) : null, sponsorships: sps.map(spView) });
       return out;
     };
     const slots = all.filter((s) => admin || (!s.hidden && s.kind !== 'board')).map(toOut);
@@ -186,7 +188,6 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     const slot = await findSlot(body.slot);
     if (!slot) throw new HttpError(404, 'no_slot', 'That week could not be found.');
     if (slot.past) throw new HttpError(400, 'past', 'That date has already passed.');
-    if (slot.status !== 'open') throw new HttpError(409, 'taken', 'Sorry, someone just sponsored this week. Please choose another.');
     if (f.amount < slot.priceCents) throw new HttpError(400, 'amount_too_low', 'The minimum for this Kiddush is $' + (slot.priceCents / 100) + '.');
     if (await store.pendingCountForEmail(f.email) >= 4) throw new HttpError(429, 'too_many', 'You already have several reservations waiting. Please complete or contact us first.');
     const fee = f.fee ? Math.round(f.amount * FEE_RATE) : 0;
@@ -194,7 +195,6 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       slotKey: slot.key, status: 'pending', method: f.method, name: f.name, anonymous: f.anonymous, dedicationKind: f.kind, dedication: f.dedication,
       email: f.email, phone: f.phone, note: f.note, amountCents: f.amount, feeCents: fee, source: 'online', idem: f.idem,
     });
-    if (!id) throw new HttpError(409, 'taken', 'Sorry, someone just sponsored this week. Please choose another.');
     const sp = await store.getSponsorship(id);
     if (f.method !== 'card') return { ok: true, id, status: 'pending', method: f.method, slot: slotBrief(slot), display: sponsorBrief(sp), amountCents: f.amount, instructions: instructionsFor(f.method, st, slot, f.amount), contact: contactOf(st) };
     try {
@@ -239,7 +239,6 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     if (session.metadata && session.metadata.sponsorship !== sp.id) throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');
     if (session.payment_status === 'paid') {
       const done = await store.markPaid(sp.id, { paymentIntent: typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent && session.payment_intent.id });
-      if (done && done.conflict) { log.error('kiddush: paid session for a week that was taken', sp.id); return { status: 'conflict', ...brief }; }
       return { status: 'paid', ...brief };
     }
     return { status: session.status === 'expired' ? 'expired' : sp.status, ...brief };
@@ -261,8 +260,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     if (!o.metadata || o.metadata.source !== 'kiddush' || !o.metadata.sponsorship) return false;
     if (event.type === 'checkout.session.completed' || event.type === 'checkout.session.async_payment_succeeded') {
       if (o.payment_status === 'paid') {
-        const r = await store.markPaid(o.metadata.sponsorship, { paymentIntent: typeof o.payment_intent === 'string' ? o.payment_intent : undefined });
-        if (r && r.conflict) log.error('kiddush: paid session for a week that was taken', o.metadata.sponsorship);
+        await store.markPaid(o.metadata.sponsorship, { paymentIntent: typeof o.payment_intent === 'string' ? o.payment_intent : undefined });
       }
     } else if (event.type === 'checkout.session.expired' || event.type === 'checkout.session.async_payment_failed') {
       await store.releaseSponsorship(o.metadata.sponsorship, 'expired', true);
@@ -337,7 +335,6 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       const f = pickForm(b, false);
       const status = b.status === 'pending' ? 'pending' : 'paid';
       const id = await store.createSponsorship({ slotKey: slot.key, status, ...f, feeCents: 0, source: 'admin' });
-      if (!id) bad('taken', 'This week already has a sponsor. Release it first, or edit it.', 409);
       res.json({ ok: true, id });
     }));
 
@@ -349,8 +346,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       const f = pickForm(b, true);
       if (['pending', 'paid'].includes(b.status)) f.status = b.status;
       if (typeof b.slot === 'string' && b.slot !== sp.slot_key) { const s = await findSlot(b.slot, { allowHidden: true }); if (!s) bad('no_slot', 'That week could not be found.', 404); f.slotKey = s.key; }
-      try { await store.updateSponsorship(sp.id, f); }
-      catch (e) { if (e && e.code === '23505') bad('taken', 'That week already has a sponsor.', 409); throw e; }
+      await store.updateSponsorship(sp.id, f);
       res.json({ ok: true });
     }));
 

@@ -31,56 +31,56 @@
     var S = st.board.settings, ph = S.contactPhone;
     return h('p', { class: cls || 'fine' }, ['Would you like a larger or deluxe Kiddush? Please contact the Rabbi to discuss', ph ? ': ' : '.', ph ? h('a', { href: 'tel:' + ph.replace(/[^\d+]/g, ''), text: ph }) : null, ph ? '.' : null]);
   }
-  function renderInfo(b) {
-    var sh = b.slots.filter(function (x) { return x.kind === 'shabbat'; })[0], hol = b.slots.filter(function (x) { return x.kind === 'holiday'; })[0], box = $('info');
-    box.textContent = ''; box.hidden = !sh;
-    if (!sh) return;
-    box.appendChild(h('div', { class: 'prices', text: 'Shabbat Kiddush ' + money(sh.priceCents) + (hol ? '  ·  Holiday Kiddush ' + money(hol.priceCents) : '') }));
-    if (b.settings.standardNote) box.appendChild(h('div', { text: 'Each sponsorship is a ' + b.settings.standardNote.charAt(0).toLowerCase() + b.settings.standardNote.slice(1) + '.' }));
-    box.appendChild(largerNote());
+  var sponsorsOf = function (s) { return s.sponsors || (s.sponsor ? [s.sponsor] : []); };
+  function sponsorLines(list, nameCls, dedCls) {
+    return list.map(function (x) { return h('div', { class: 'one' }, [h('div', { class: nameCls, text: x.name }), x.dedication ? h('div', { class: dedCls, text: x.dedication }) : null]); });
   }
 
-  // Top of the page: the upcoming Kiddush and who sponsored it, or an invitation to sponsor it.
+  // Top of the page: the upcoming Kiddush and who sponsored it (or an invitation). The whole plaque is tappable.
   function renderThisWeek(b) {
     var box = $('thisWeek'), s = b.slots.filter(function (x) { return x.key === b.current; })[0]; box.textContent = ''; box.hidden = !s;
     if (!s) return;
+    var list = sponsorsOf(s), can = b.sponsoring;
+    if (can) { box.setAttribute('role', 'button'); box.tabIndex = 0; box.setAttribute('aria-label', 'Sponsor ' + s.title); box.onclick = function () { openSheet(s); }; box.onkeydown = function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSheet(s); } }; box.classList.add('tap'); }
+    else { box.removeAttribute('role'); box.removeAttribute('tabindex'); box.onclick = null; box.onkeydown = null; box.classList.remove('tap'); }
     var days = Math.round((new Date(s.date + 'T12:00:00') - new Date(b.today + 'T12:00:00')) / 864e5);
     box.appendChild(h('div', { class: 'lbl', text: days <= 7 ? (s.kind === 'shabbat' ? 'This week’s Kiddush' : 'This Kiddush') : 'Next Kiddush' }));
     box.appendChild(h('div', { class: 'nm', text: s.title }));
     box.appendChild(h('div', { class: 'dt', text: [s.dateLabel, s.heb].join(' · ') }));
     if (s.mevarchim) box.appendChild(h('div', { class: 'mv', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
     box.appendChild(h('div', { class: 'rule' }));
-    if (s.sponsor) {
+    if (list.length) {
       box.appendChild(h('div', { class: 'by', text: 'SPONSORED BY' }));
-      box.appendChild(h('div', { class: 'who', text: s.sponsor.name }));
-      if (s.sponsor.dedication) box.appendChild(h('div', { class: 'for', text: s.sponsor.dedication }));
-    } else if (s.status === 'open') {
-      box.appendChild(h('div', { class: 'open', text: 'OPEN FOR SPONSORSHIP' }));
-      if (b.sponsoring) box.appendChild(h('button', { class: 'btn gold', type: 'button', text: 'Sponsor this Kiddush · ' + money(s.priceCents), onclick: function () { openSheet(s); } }));
-    } else box.appendChild(h('div', { class: 'open', text: 'RESERVED' }));
+      sponsorLines(list, 'who', 'for').forEach(function (n) { box.appendChild(n); });
+    } else if (s.status === 'open') box.appendChild(h('div', { class: 'open', text: 'OPEN FOR SPONSORSHIP' }));
+    else box.appendChild(h('div', { class: 'open', text: 'RESERVED' }));
+    if (can) box.appendChild(h('div', { class: 'btn gold', text: list.length ? 'Add your sponsorship' : 'Sponsor this Kiddush' }));
+    else box.appendChild(contactLine());
+  }
+  function contactLine() {
+    var ph = st.board.settings.contactPhone;
+    return h('p', { class: 'fine', style: 'margin:10px 0 0' }, ['To sponsor, please contact the Rabbi', ph ? ': ' : '.', ph ? h('a', { href: 'tel:' + ph.replace(/[^\d+]/g, ''), text: ph }) : null]);
   }
 
-  // Bottom of the page: sponsor the whole Kiddush board for the year (always open until taken).
+  // Bottom of the page: sponsor the whole Kiddush board for the year (no price on this page; it shows when you tap Sponsor).
   function renderBoardCard(b) {
     var box = $('boardCard'), bs = b.boardSponsor; box.textContent = ''; box.hidden = !bs;
     if (!bs) return;
-    if (bs.sponsor) {
-      box.appendChild(h('h2', { text: 'The Kiddush board for ' + b.year }));
-      box.appendChild(h('p', { text: 'Generously donated by' }));
-      box.appendChild(h('div', { class: 'sp', style: 'font-size:26px', text: bs.sponsor.name }));
-      if (bs.sponsor.dedication) box.appendChild(h('div', { class: 'ded', text: bs.sponsor.dedication }));
-    } else if (bs.status === 'open' && b.sponsoring) {
-      box.appendChild(h('h2', { text: 'Sponsor the Kiddush board for ' + b.year }));
-      box.appendChild(h('div', { class: 'price', text: money(bs.priceCents) }));
-      box.appendChild(h('p', { text: 'Your name and dedication will be displayed as the sponsor of the Kiddush board on the shul’s TV and here, all year.' }));
-      box.appendChild(h('button', { class: 'btn gold', type: 'button', text: 'Sponsor the board', onclick: function () { openSheet(bs); } }));
-    } else box.hidden = true;
+    var list = sponsorsOf(bs);
+    box.appendChild(h('h2', { text: 'Sponsor the Kiddush board for ' + b.year }));
+    if (list.length) {
+      box.appendChild(h('p', { text: 'The Kiddush board is generously donated by' }));
+      sponsorLines(list, 'sp', 'ded').forEach(function (n) { box.appendChild(n); });
+      box.appendChild(h('p', { style: 'margin-top:10px', text: 'You are welcome to join in sponsoring the board.' }));
+    } else box.appendChild(h('p', { text: 'Your name and dedication will be displayed as the sponsor of the Kiddush board on the shul’s TV and here, all year.' }));
+    if (b.sponsoring) box.appendChild(h('button', { class: 'btn gold', type: 'button', text: 'Sponsor the board', onclick: function () { openSheet(bs); } }));
+    else box.appendChild(contactLine());
   }
 
   // ------------------------------------------------------------------ list
   function load(year) {
     return api('/board' + (year ? '?year=' + year : '')).then(function (b) {
-      st.board = b; st.year = b.year; render(); renderThisWeek(b); renderInfo(b); renderBoardCard(b);
+      st.board = b; st.year = b.year; render(); renderThisWeek(b); renderBoardCard(b);
       var s = b.settings;
       $('blessing').textContent = s.blessing || '';
       $('contact').textContent = '';
@@ -97,9 +97,6 @@
     });
     var list = $('list'); list.textContent = '';
     var slots = b.slots.filter(function (s) { return !s.past && (!st.onlyOpen || s.status === 'open'); });
-    var first = b.slots.filter(function (s) { return !s.past && s.status === 'open'; })[0];
-    var cur = b.slots.filter(function (x) { return x.key === b.current; })[0], cta = $('nextOpen'); cta.hidden = !(first && b.sponsoring && !(cur && cur.status === 'open'));
-    if (first) cta.onclick = function () { openSheet(first); };
     if (!slots.length) list.appendChild(h('p', { class: 'muted center', text: st.onlyOpen ? 'Every upcoming week this year is sponsored. Thank you!' : 'No upcoming weeks in this year.' }));
     var last = '';
     slots.forEach(function (s) {
@@ -109,18 +106,15 @@
     });
   }
   function card(s, d) {
-    var open = s.status === 'open' && st.board.sponsoring;
+    var can = st.board.sponsoring, list = sponsorsOf(s);
     var date = h('div', { class: 'date', 'aria-hidden': 'true' }, [h('b', { text: String(d.getDate()) }), h('span', { text: DOW[d.getDay()].toUpperCase() })]);
     var mid = h('div', {}, [h('div', { class: 't', text: s.title }), h('div', { class: 's', text: s.dateLabel + ' · ' + s.heb + (s.note ? ' · ' + s.note : '') })]);
     if (s.mevarchim) mid.appendChild(h('div', { class: 'mev', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
-    var right;
-    if (s.status === 'open') right = h('div', { class: 'go' }, [h('span', { text: money(s.priceCents) }), h('small', { text: 'Sponsor' })]);
-    else {
-      if (s.sponsor) { mid.appendChild(h('div', { class: 'sp', text: s.sponsor.name })); if (s.sponsor.dedication) mid.appendChild(h('div', { class: 'ded', text: s.sponsor.dedication })); }
-      right = h('span', { class: 'pill', text: s.status === 'reserved' ? 'Reserved' : 'Sponsored' });
-    }
-    var attrs = { class: 'slot' + (open ? '' : ' taken') };
-    if (open) { attrs.onclick = function () { openSheet(s); }; attrs['aria-label'] = 'Sponsor ' + s.title + ', ' + s.dateLabel + ', ' + money(s.priceCents); return h('button', attrs, [date, mid, right]); }
+    sponsorLines(list, 'sp', 'ded').forEach(function (n) { mid.appendChild(n); });
+    var right = list.length ? h('div', { class: 'go' }, [h('span', { class: 'pill', text: s.status === 'reserved' ? 'Reserved' : 'Sponsored' }), can ? h('small', { text: 'Join in' }) : null])
+      : h('div', { class: 'go' }, [can ? h('span', { text: 'Sponsor' }) : h('span', { class: 'pill', text: 'Open' })]);
+    var attrs = { class: 'slot' + (list.length ? ' taken' : '') };
+    if (can) { attrs.onclick = function () { openSheet(s); }; attrs['aria-label'] = 'Sponsor ' + s.title + ', ' + s.dateLabel; return h('button', attrs, [date, mid, right]); }
     return h('div', attrs, [date, mid, right]);
   }
 
@@ -202,7 +196,7 @@
         });
     });
     function fail(msg, el) { err.textContent = msg; if (el) el.focus(); }
-    showSheet([h('h2', { id: 'sheetTitle', text: s.title }), h('p', { class: 'sub', text: [s.dateLabel, s.heb].filter(Boolean).join(' · ') + ' · ' + money(s.priceCents) }), s.kind === 'board' ? h('p', { class: 'fine', text: 'Your name and dedication are displayed as the sponsor of the Kiddush board for the whole year.' }) : null, s.mevarchim ? h('p', { class: 'fine', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }) : null, s.kind !== 'board' && S.standardNote ? h('p', { class: 'fine', text: S.standardNote + '.' }) : null, s.kind !== 'board' ? largerNote() : null, form].filter(Boolean));
+    showSheet([h('h2', { id: 'sheetTitle', text: s.title }), h('p', { class: 'sub', text: [s.dateLabel, s.heb].filter(Boolean).join(' · ') + ' · ' + money(s.priceCents) }), sponsorsOf(s).length ? h('p', { class: 'fine', text: 'Already sponsored by ' + sponsorsOf(s).map(function (x) { return x.name; }).join(' & ') + '. You are welcome to join in sponsoring.' }) : null, s.kind === 'board' ? h('p', { class: 'fine', text: 'Your name and dedication are displayed as the sponsor of the Kiddush board for the whole year.' }) : null, s.mevarchim ? h('p', { class: 'fine', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }) : null, s.kind !== 'board' && S.standardNote ? h('p', { class: 'fine', text: S.standardNote + '.' }) : null, s.kind !== 'board' ? largerNote() : null, form].filter(Boolean));
     refresh();
   }
 
@@ -268,8 +262,8 @@
     var w = params.get('w');
     if (w) {
       var s = b.slots.concat(b.boardSponsor ? [b.boardSponsor] : []).filter(function (x) { return x.key === w; })[0];
-      if (s && s.status === 'open' && !s.past && b.sponsoring) openSheet(s);
-      else if (s) note([h('b', { text: s.title + ' (' + s.dateLabel + ') ' }), s.past ? 'has already passed.' : 'is already sponsored. Please choose another week below.']);
+      if (s && !s.past && b.sponsoring) openSheet(s);
+      else if (s) note([h('b', { text: s.title + ' (' + s.dateLabel + ') ' }), 'has already passed.']);
     }
   });
 })();
