@@ -62,6 +62,7 @@ const def = () => ({
   wallet: { id: walletId(), balance: 0 },
   history: [], pracSubs: [],
   rem: { candle: { on: false, mins: 15 }, streak: { on: false }, custom: [] },
+  nudge: { at: 0, n: 0, first: Date.now() },
   yz: [], yzShare: false, yzRemind: false, pushOn: false, mtoken: "", msig: "",
   candles: [], notified: {}, maaser: 10, lastEmptied: Date.now(), prompted: "",
 });
@@ -407,7 +408,7 @@ PG.home = () => {
     const subt = S.rem.candle.on ? tt("It's customary to give before lighting. We'll remind you at {time}.", { time: clock(new Date(c - S.rem.candle.mins * 60e3)) }) : tt("It's customary to give before lighting. Turn on the reminder in Reminders.");
     reminder = `<div class="card">${ico(I.flame, 22, 'style="color:var(--accent);flex:none"')}<div style="flex:1"><div class="card-title">${esc(title)}</div><div class="h-s">${esc(subt)}</div></div></div>`;
   }
-  reminder = cardIssueBanner() + yzBanner() + reminder;
+  reminder = cardIssueBanner() + yzBanner() + nudgeBanner() + reminder;
   const chips = S.pushkas.length > 1 ? `<div class="chips">${S.pushkas.map((x) => `<button class="chip ${x.id === p.id ? "on" : ""}" data-act="setCur" data-v="${x.id}">${esc(pTitle(x))}</button>`).join("")}</div>` : "";
   const since = greg(new Date(S.lastEmptied));
   const msg = p.balance > 0 ? `<div class="h-t" style="font-size:20px">${t("Your pushka has {amt}", { amt: money2(p.balance) })}</div><div class="h-s">${p.drops === 1 ? t("1 coin since {date}", { date: esc(since) }) : t("{n} coins since {date}", { n: p.drops, date: esc(since) })}</div>` : `<div class="h-t" style="font-size:20px">${t("Your pushka is empty")}</div><div class="h-s">${t("Add some coins now")}</div>`;
@@ -961,6 +962,22 @@ function pushCard() {
   return `${sec(t("When the app is closed"))}${tg("pushTgl", "", t("Send reminders to this device"), t("Candle lighting, streak and yahrzeit reminders arrive even when the app is closed."), S.pushOn)}`;
 }
 A.pushTgl = async () => { if (S.pushOn) { await pushDisable(); toast(tt("Notifications off")); } else { try { if (await pushEnable()) toast(tt("Notifications on")); } catch (e) { toast(errText(e)); } } draw(); };
+
+
+// ---------- gentle, optional nudge to save your details (never required) ----------
+const NUDGE_GAP = [3, 14, 30, 60]; // days to wait after each "Not now"
+function nudgeDue() {
+  if (S.email || PRACTICE || U.nudgeHidden) return false;
+  const n = S.nudge || (S.nudge = { at: 0, n: 0, first: Date.now() }), gap = NUDGE_GAP[Math.min(n.n, NUDGE_GAP.length - 1)] * 864e5;
+  const used = S.pushkas.reduce((a, p) => a + p.drops, 0) >= 3;
+  return used && Date.now() - Math.max(n.at, n.first) > (n.at ? gap : 2 * 864e5);
+}
+function nudgeBanner() {
+  if (!nudgeDue()) return "";
+  return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Save your details? (optional)")}</div><div class="h-s">${t("Get receipts, reminders and your list of yahrzeits kept safe. You can use the whole app without this.")}</div><div style="display:flex;gap:8px"><button class="btn btn-secondary" data-act="nudgeYes">${t("Save my details")}</button><button class="btn btn-ghost" data-act="nudgeNo">${t("Not now")}</button></div></div>`;
+}
+A.nudgeNo = () => { S.nudge = { at: Date.now(), n: ((S.nudge && S.nudge.n) || 0) + 1, first: (S.nudge && S.nudge.first) || Date.now() }; save(); U.nudgeHidden = true; draw(); };
+A.nudgeYes = async () => { U.nudgeHidden = true; if (await askDetails()) { if (API.members && !PRACTICE) { try { await memberSync(); } catch (e) {} } toast(tt("Saved. Thank you!")); } else U.nudgeHidden = false; draw(); };
 
 // ---------- start ----------
 applyLang();

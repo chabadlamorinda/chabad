@@ -452,4 +452,8 @@ const HE = {
   "Brother": "אח",
   "Sister": "אחות",
   "Grandparent": "סבא/סבתא",
+  "Save your details? (optional)": "לשמור את הפרטים שלכם? (לא חובה)",
+  "Get receipts, reminders and your list of yahrzeits kept safe. You can use the whole app without this.": "קבלו קבלות ותזכורות, ושמרו בבטחה את רשימת היארצייטים. אפשר להשתמש בכל האפליקציה גם בלי זה.",
+  "Save my details": "שמרו את הפרטים שלי",
+  "Saved. Thank you!": "נשמר. תודה!",
 };
