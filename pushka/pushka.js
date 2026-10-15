@@ -970,7 +970,7 @@ function nudgeDue() {
   if (S.email || PRACTICE || U.nudgeHidden) return false;
   const n = S.nudge || (S.nudge = { at: 0, n: 0, first: Date.now() }), gap = NUDGE_GAP[Math.min(n.n, NUDGE_GAP.length - 1)] * 864e5;
   const used = S.pushkas.reduce((a, p) => a + p.drops, 0) >= 3;
-  return used && Date.now() - Math.max(n.at, n.first) > (n.at ? gap : 2 * 864e5);
+  return used && Date.now() - (n.at || n.first) > (n.at ? gap : 2 * 864e5);
 }
 function nudgeBanner() {
   if (!nudgeDue()) return "";
