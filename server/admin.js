@@ -10,7 +10,7 @@ const { ptParts } = require('./scheduler.js');
 const COOKIE = 'cl_admin';
 const TTL = 12 * 3600e3;
 
-function mountAdmin(app, { store, password, secret, limit, send, log = console }) {
+function mountAdmin(app, { store, password, secret, limit, send, log = console, extend = null }) {
   if (!password || password.length < 12 || !store) return false;
   const mac = (s) => crypto.createHmac('sha256', secret + ':admin').update(s).digest('base64url');
   const issue = () => { const exp = String(Date.now() + TTL); return exp + '.' + mac(exp); };
@@ -96,6 +96,11 @@ function mountAdmin(app, { store, password, secret, limit, send, log = console }
     res.json({ ok: true, sent, total: subs.length });
   }));
 
+  if (extend) {
+    extend(r, { authed, wrap });
+    r.get('/kiddush', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'kiddush.html')));
+    r.get('/kiddush.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'kiddush.js')));
+  }
   r.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'admin', 'index.html')));
   r.get('/admin.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'admin.js')));
   r.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));

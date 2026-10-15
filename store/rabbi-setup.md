@@ -26,7 +26,7 @@ If `ADMIN_PASSWORD` is not set (or is shorter than 12 characters) the page does 
 ## 4. Failed-payment alerts (Stripe webhook)
 Stripe → **Developers → Webhooks → Add endpoint**:
 - Endpoint URL: `https://<your-app-address>/api/stripe/webhook`
-- Events: `invoice.payment_failed`, `invoice.paid`, `payment_intent.payment_failed`, `payment_intent.succeeded`, `charge.refunded`, `customer.subscription.deleted`
+- Events: `invoice.payment_failed`, `invoice.paid`, `payment_intent.payment_failed`, `payment_intent.succeeded`, `charge.refunded`, `customer.subscription.deleted`, and for the Kiddush board `checkout.session.completed`, `checkout.session.expired`
 - After saving, copy the **Signing secret** (`whsec_…`) into Render as `STRIPE_WEBHOOK_SECRET`.
 
 Donors whose card fails then see "We couldn't charge your card — Update card" in the app, and it appears on your Payment issues tab. Do this once for test mode and once again for live mode.
