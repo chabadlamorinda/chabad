@@ -80,9 +80,9 @@ test('board: automatic year (5787 now), current week is the next upcoming one', 
   assert.equal(b.today, '2026-10-15');
   assert.equal(b.current, '2026-10-17|shabbat');
   const cur = b.slots.find((s) => s.key === b.current);
-  assert.equal(cur.title, 'Noach'); assert.equal(cur.status, 'open'); assert.equal(cur.priceCents, 18000);
+  assert.equal(cur.title, 'Noach'); assert.equal(cur.status, 'open'); assert.equal(cur.priceCents, 50000);
   assert.ok(b.slots.find((s) => s.key === '2026-10-10|shabbat').past);
-  assert.equal(b.settings.ways.card, true); assert.equal(b.settings.ways.zelle, false, 'Zelle stays off until the address is entered');
+  assert.equal(b.settings.ways.card, true); assert.equal(b.settings.ways.zelle, true); assert.equal(b.settings.zelleId, 'chabadlamorinda@gmail.com');
   assert.equal((await board('?year=5788')).year, 5787, 'other years are not offered');
   // automatic flip: the day before Rosh Hashanah 5788 the board already shows 5788; a manual setting overrides
   const flip = createApp({ stripe, publishableKey: 'pk_test_x', sessionSecret: SECRET, log: { error() {} }, store, now: () => new Date('2027-10-01T12:00:00-07:00') });
@@ -92,15 +92,15 @@ test('board: automatic year (5787 now), current week is the next upcoming one', 
   const adm = await adminLogin();
   await call('PUT', '/admin/api/kiddush/settings', { boardYear: 5786 }, { headers: adm }); assert.equal((await board()).year, 5786);
   await call('PUT', '/admin/api/kiddush/settings', { boardYear: 0 }, { headers: adm }); assert.equal((await board()).year, 5787);
-  const next = { key: '2027-09-25|shabbat', priceCents: 18000 }; // 5787's last Shabbat is sponsorable; 5788's first is not
-  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2027-10-09|shabbat', priceCents: 18000 }))).status, 404);
+  const next = { key: '2027-09-25|shabbat', priceCents: 50000 }; // 5787's last Shabbat is sponsorable; 5788's first is not
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2027-10-09|shabbat', priceCents: 50000 }))).status, 404);
   assert.equal((await call('POST', '/api/kiddush/sponsor', form(next))).status, 200);
 });
 
 test('board without a database: shows the calendar, all open, and sponsoring is off', async () => {
   const b = (await call('GET', '/api/kiddush/board', undefined, { base: baseNoDb })).json;
   assert.equal(b.sponsoring, false); assert.ok(b.slots.length > 50); assert.ok(b.slots.every((s) => s.status === 'open'));
-  const r = await call('POST', '/api/kiddush/sponsor', form({ key: b.current, priceCents: 18000 }), { base: baseNoDb });
+  const r = await call('POST', '/api/kiddush/sponsor', form({ key: b.current, priceCents: 50000 }), { base: baseNoDb });
   assert.equal(r.status, 503); assert.equal(r.json.code, 'not_configured');
 });
 
@@ -111,7 +111,7 @@ test('sponsor by check: reserves the week, shows instructions, hides private det
   const r = await call('POST', '/api/kiddush/sponsor', form(slot));
   assert.equal(r.status, 200, r.text);
   assert.equal(r.json.status, 'pending'); assert.equal(r.json.instructions.payable, 'Chabad of Lamorinda'); assert.match(r.json.instructions.address, /Golden Gate/);
-  assert.equal(r.json.instructions.amount, '180'); assert.match(r.json.instructions.memo, /Kiddush /);
+  assert.equal(r.json.instructions.amount, '500'); assert.match(r.json.instructions.memo, /Kiddush /);
   const b = await board(); const s = b.slots.find((x) => x.key === slot.key);
   assert.equal(s.status, 'reserved'); assert.equal(s.sponsor.name, 'The Levy Family'); assert.equal(s.sponsor.dedication, 'In honor of Sara’s birthday');
   const raw = JSON.stringify(b);
@@ -129,19 +129,18 @@ test('sponsor: validation, minimum amount, anonymous, Zelle and Venmo instructio
   const bad = async (o, code) => { const r = await call('POST', '/api/kiddush/sponsor', form(slot, o)); assert.equal(r.status, 400, JSON.stringify(o)); assert.equal(r.json.code, code); };
   await bad({ name: '' }, 'invalid_name'); await bad({ email: 'nope' }, 'invalid_email'); await bad({ method: 'bitcoin' }, 'invalid_method');
   await bad({ amount: 'abc' }, 'invalid_amount'); await bad({ amount: 100 }, 'amount_too_low'); await bad({ idem: 'short' }, 'invalid_request');
-  await bad({ method: 'zelle' }, 'method_off'); // no Zelle address set yet
-  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2026-10-21|shabbat', priceCents: 18000 }))).status, 404);
-  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2026-10-10|shabbat', priceCents: 18000 }))).json.code, 'past');
-  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: 'garbage', priceCents: 18000 }))).status, 404);
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2026-10-21|shabbat', priceCents: 50000 }))).status, 404);
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2026-10-10|shabbat', priceCents: 50000 }))).json.code, 'past');
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: 'garbage', priceCents: 50000 }))).status, 404);
 
   const adm = await adminLogin();
   assert.equal((await call('PUT', '/admin/api/kiddush/settings', { zelleId: 'rabbi@chabadoflamorinda.com', venmoHandle: '@Chabad-Lamorinda' }, { headers: adm })).status, 200);
-  const z = await call('POST', '/api/kiddush/sponsor', form(slot, { method: 'zelle', anonymous: true, amount: 250 }));
-  assert.equal(z.status, 200, z.text); assert.equal(z.json.instructions.zelleId, 'rabbi@chabadoflamorinda.com'); assert.equal(z.json.instructions.amount, '250'); assert.equal(z.json.display.name, 'Anonymous');
+  const z = await call('POST', '/api/kiddush/sponsor', form(slot, { method: 'zelle', anonymous: true, amount: 600 }));
+  assert.equal(z.status, 200, z.text); assert.equal(z.json.instructions.zelleId, 'rabbi@chabadoflamorinda.com'); assert.equal(z.json.instructions.amount, '600'); assert.equal(z.json.display.name, 'Anonymous');
   assert.equal((await board()).slots.find((x) => x.key === slot.key).sponsor.name, 'Anonymous');
   const slot2 = await firstOpen();
   const v = await call('POST', '/api/kiddush/sponsor', form(slot2, { method: 'venmo' }));
-  assert.equal(v.json.instructions.venmoHandle, 'Chabad-Lamorinda'); assert.match(v.json.instructions.link, /^https:\/\/venmo\.com\/Chabad-Lamorinda\?txn=pay&amount=180&note=Kiddush/);
+  assert.equal(v.json.instructions.venmoHandle, 'Chabad-Lamorinda'); assert.match(v.json.instructions.link, /^https:\/\/venmo\.com\/Chabad-Lamorinda\?txn=pay&amount=500&note=Kiddush/);
 });
 
 test('sponsor: at most four unpaid reservations per email', async () => {
@@ -153,11 +152,11 @@ test('sponsor: at most four unpaid reservations per email', async () => {
 
 test('card: creates a Stripe Checkout session, holds the week, confirms after payment, never double-books', async () => {
   const slot = await firstOpen();
-  const r = await call('POST', '/api/kiddush/sponsor', form(slot, { method: 'card', fee: true, amount: 200 }));
+  const r = await call('POST', '/api/kiddush/sponsor', form(slot, { method: 'card', fee: true, amount: 600 }));
   assert.equal(r.status, 200, r.text); assert.match(r.json.url, /^https:\/\/checkout\.stripe\.com\//);
   const [, params, opts] = stripe._st.calls.find((c) => c[0] === 'checkout.sessions.create');
   assert.equal(params.mode, 'payment'); assert.equal(params.customer_email, 'levy@example.com');
-  assert.equal(params.line_items[0].price_data.unit_amount, 20700, '$200 + 3.5% fee'); // 20000 + 700
+  assert.equal(params.line_items[0].price_data.unit_amount, 62100, '$600 + 3.5% fee'); // 60000 + 2100
   assert.equal(params.metadata.source, 'kiddush'); assert.equal(params.metadata.slot, slot.key);
   assert.match(params.success_url, /\/kiddush\/\?paid=ks_[0-9a-f]{24}&session_id=\{CHECKOUT_SESSION_ID\}$/); assert.match(params.cancel_url, /\/kiddush\/\?cancelled=ks_/);
   assert.ok(opts.idempotencyKey.startsWith('kiddush-ks_'));
@@ -229,10 +228,10 @@ test('admin: must sign in; sees private details and hidden weeks', async () => {
   assert.equal((await call('PUT', '/admin/api/kiddush/settings', {})).status, 401);
   const adm = await adminLogin();
   assert.equal((await call('PUT', '/admin/api/kiddush/settings', { priceShabbat: 200 }, { headers: { cookie: adm.cookie } })).status, 403, 'needs the X-Admin header');
-  const slot = await firstOpen(); await call('POST', '/api/kiddush/sponsor', form(slot, { amount: 200 }));
+  const slot = await firstOpen(); await call('POST', '/api/kiddush/sponsor', form(slot, { amount: 600 }));
   const ab = (await call('GET', '/admin/api/kiddush/board', undefined, { headers: adm })).json;
   const s = ab.slots.find((x) => x.key === slot.key);
-  assert.equal(s.sponsorship.email, 'levy@example.com'); assert.equal(s.sponsorship.note, 'Please call me'); assert.equal(s.sponsorship.status, 'pending'); assert.equal(s.sponsorship.amountCents, 20000);
+  assert.equal(s.sponsorship.email, 'levy@example.com'); assert.equal(s.sponsorship.note, 'Please call me'); assert.equal(s.sponsorship.status, 'pending'); assert.equal(s.sponsorship.amountCents, 60000);
   const pend = (await call('GET', '/admin/api/kiddush/pending', undefined, { headers: adm })).json.pending;
   assert.equal(pend.length, 1); assert.equal(pend[0].slot.key, slot.key);
 });
@@ -274,7 +273,7 @@ test('admin: custom events (e.g. a community Chanukah party) appear on the board
   assert.equal((await call('POST', '/admin/api/kiddush/events', { date: '2026-12-08', title: '' }, h)).status, 400);
   const e = await call('POST', '/admin/api/kiddush/events', { date: '2026-12-08', title: 'Chanukah Celebration', titleHe: 'חנוכה' }, h); assert.equal(e.status, 200, e.text);
   const s = (await board()).slots.find((x) => x.key === e.json.key);
-  assert.equal(s.title, 'Chanukah Celebration'); assert.equal(s.kind, 'custom'); assert.equal(s.heb, '28 Kislev'); assert.equal(s.priceCents, 18000);
+  assert.equal(s.title, 'Chanukah Celebration'); assert.equal(s.kind, 'custom'); assert.equal(s.heb, '28 Kislev'); assert.equal(s.priceCents, 72000, 'holiday / event price');
   assert.equal((await call('POST', '/api/kiddush/sponsor', form(s))).status, 200);
   assert.equal((await call('DELETE', '/admin/api/kiddush/events/' + e.json.key.split('|c_')[1], undefined, h)).status, 409, 'cannot delete an event that has a sponsor');
   const e2 = await call('POST', '/admin/api/kiddush/events', { date: '2026-12-09', title: 'Other' }, h);
@@ -305,4 +304,40 @@ test('pages: TV display, sponsor page and admin page are served', async () => {
   }
   assert.equal((await fetch(base + '/kiddush/fonts/cinzel-latin-600-normal.woff2')).status, 200);
   assert.equal((await fetch(base + '/kiddush/tv.js')).status, 200);
+});
+
+test('molad: the Shabbat that blesses the new month carries the month and its molad', async () => {
+  const slots = await cal.buildYear(5787);
+  const by = new Map(slots.map((s) => [s.key, s]));
+  const k = by.get('2026-11-07|shabbat');
+  assert.equal(k.mevarchim, 'Kislev'); assert.match(k.molad, /^Monday, 10:27 PM and 3 chalakim$/);
+  assert.equal(by.get('2027-01-02|shabbat').mevarchim, 'Shevat');
+  assert.equal(by.get('2026-11-14|shabbat').mevarchim, undefined);
+  assert.ok(!slots.some((s) => s.mevarchim === 'Tishrei'), 'no blessing before Tishrei');
+  assert.equal(slots.filter((s) => s.mevarchim).length, 12); // Cheshvan..Elul, 5787 being a leap year with both Adars
+  const b = (await call('GET', '/api/kiddush/board')).json;
+  assert.equal(b.slots.find((x) => x.key === '2026-11-07|shabbat').molad, 'Monday, 10:27 PM and 3 chalakim');
+  assert.equal(b.settings.standardNote, 'Standard Kiddush for 25 people');
+  assert.equal(b.slots.find((x) => x.kind === 'shabbat').priceCents, 50000);
+  assert.equal(b.slots.find((x) => x.key === '2027-03-23|purim').priceCents, 72000);
+});
+
+test('board sponsorship: a $5,000 year-long offer that is always open, off the tiles, shown as boardSponsor', async () => {
+  const b = await board();
+  assert.ok(!b.slots.some((s) => s.kind === 'board'), 'not a tile');
+  assert.equal(b.boardSponsor.title, 'Kiddush Board Sponsor – 5787'); assert.equal(b.boardSponsor.priceCents, 500000);
+  assert.equal(b.boardSponsor.status, 'open'); assert.equal(b.boardSponsor.past, false); assert.notEqual(b.current, b.boardSponsor.key);
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form(b.boardSponsor, { amount: 1000 }))).json.code, 'amount_too_low');
+  const r = await call('POST', '/api/kiddush/sponsor', form(b.boardSponsor, { dedicationKind: 'memory', dedication: 'Avraham ben Yitzchak' }));
+  assert.equal(r.status, 200, r.text); assert.equal(r.json.slot.kind, 'board'); assert.equal(r.json.instructions.amount, '5000'); assert.equal(r.json.instructions.memo, 'Kiddush Board Sponsor – 5787');
+  const after = await board();
+  assert.equal(after.boardSponsor.status, 'reserved'); assert.equal(after.boardSponsor.sponsor.name, 'The Levy Family'); assert.equal(after.boardSponsor.sponsor.dedication, 'In loving memory of Avraham ben Yitzchak');
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form(b.boardSponsor))).status, 409);
+  assert.ok(!JSON.stringify(after).includes('levy@example.com'));
+  const adm = await adminLogin();
+  assert.equal((await call('PUT', '/admin/api/kiddush/settings', { priceBoard: 6000 }, { headers: adm })).status, 200);
+  const ab = (await call('GET', '/admin/api/kiddush/board', undefined, { headers: adm })).json;
+  assert.equal(ab.slots[0].kind, 'board'); assert.equal(ab.slots[0].sponsorship.status, 'pending'); assert.equal(ab.slots[0].priceCents, 600000);
+  const staff = await fetch(baseNoDb + '/admin/kiddush/'); // no database/password: a helpful page, not a bare 404
+  assert.equal(staff.status, 503); assert.match(await staff.text(), /DATABASE_URL/);
 });

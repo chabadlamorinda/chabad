@@ -163,7 +163,7 @@
 
   // ------------------------------------------------------------ settings
   var SETTING_UI = [
-    ['Prices', [['priceShabbat', 'Shabbat Kiddush ($)', 'n'], ['priceHoliday', 'Holiday / other ($)', 'n']]],
+    ['Prices', [['standardNote', 'What a sponsorship includes (shown to donors)', 't'], ['priceShabbat', 'Shabbat Kiddush ($)', 'n'], ['priceHoliday', 'Holiday / other ($)', 'n'], ['priceBoard', 'Sponsor the Kiddush board for the year ($)', 'n']]],
     ['Card payments', [['cardOn', 'Accept cards, Apple Pay and Google Pay (Stripe)', 'b'], ['coverFee', 'Offer “cover the card fee” (3.5%)', 'b']]],
     ['Zelle', [['zelleOn', 'Offer Zelle', 'b'], ['zelleId', 'Zelle email or phone (Zelle stays hidden until this is filled in)', 't'], ['zelleName', 'Name on the Zelle account', 't']]],
     ['Venmo', [['venmoOn', 'Offer Venmo', 'b'], ['venmoHandle', 'Venmo username', 't']]],

@@ -15,9 +15,10 @@ const MAX_CENTS = 1000000;
 // Everything the Rabbi can change on the Settings tab. Prices are in dollars.
 const DEFAULTS = {
   orgName: 'Chabad Lamorinda',
-  priceShabbat: 180, priceHoliday: 180,
+  priceShabbat: 500, priceHoliday: 720, priceBoard: 5000,
+  standardNote: 'Standard Kiddush for 25 people',
   cardOn: true, coverFee: true,
-  zelleOn: true, zelleId: '', zelleName: 'Chabad of Lamorinda',
+  zelleOn: true, zelleId: 'chabadlamorinda@gmail.com', zelleName: 'Chabad of Lamorinda',
   venmoOn: true, venmoHandle: 'CHABAD-LAMORINDA',
   checkOn: true, checkPayable: 'Chabad of Lamorinda', checkAddress: '3477 Golden Gate Way, Lafayette, CA 94549',
   cashOn: true,
@@ -29,7 +30,7 @@ const DEFAULTS = {
   boardYear: 0, // 0 = automatic: the year of the next upcoming Kiddush, so the board flips at Rosh Hashanah by itself
 };
 const FIELD = { // type of each setting, for validation
-  orgName: ['s', 80], priceShabbat: ['n'], priceHoliday: ['n'], cardOn: ['b'], coverFee: ['b'], zelleOn: ['b'], zelleId: ['s', 120], zelleName: ['s', 80],
+  orgName: ['s', 80], standardNote: ['s', 120], priceShabbat: ['n'], priceHoliday: ['n'], priceBoard: ['n'], cardOn: ['b'], coverFee: ['b'], zelleOn: ['b'], zelleId: ['s', 120], zelleName: ['s', 80],
   venmoOn: ['b'], venmoHandle: ['s', 60], checkOn: ['b'], checkPayable: ['s', 80], checkAddress: ['s', 200], cashOn: ['b'], contactEmail: ['s', 120], contactPhone: ['s', 30],
   publicUrl: ['u'], blessing: ['s', 600], donorEn: ['s', 120], donorHe: ['s', 120], showPending: ['b'], includePurim: ['b'], boardYear: ['y'],
 };
@@ -61,10 +62,14 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       const d = await cal.describeDate(e.date);
       extra.push({ ...d, date: e.date, key: e.date + '|c_' + e.id, kind: 'custom', title: e.title, titleHe: e.title_he, note: e.note, year: hy, eventId: e.id });
     }
-    slots = slots.concat(extra).sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : (a.kind === 'custom') - (b.kind === 'custom')));
+    // The year-long "sponsor the Kiddush board" offer: one per year, always open until someone takes it.
+    const first = slots[0] || { date: hy + '-01-01', dow: 0 };
+    const rank = (k) => (k === 'board' ? 0 : k === 'custom' ? 2 : 1);
+    slots = slots.concat(extra, [{ key: first.date + '|board', kind: 'board', title: 'Kiddush Board Sponsor – ' + hy, titleHe: '', note: '', date: first.date, dow: first.dow, dateLabel: 'Entire year', heb: '', hebHe: '', year: hy }])
+      .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : rank(a.kind) - rank(b.kind)));
     return slots.map((s) => {
       const o = overrides.get(s.key) || {};
-      const priceCents = o.priceCents != null ? o.priceCents : cents(s.kind === 'shabbat' ? st.priceShabbat : st.priceHoliday);
+      const priceCents = o.priceCents != null ? o.priceCents : cents(s.kind === 'shabbat' ? st.priceShabbat : s.kind === 'board' ? st.priceBoard : st.priceHoliday);
       return { ...s, title: o.title || s.title, hidden: !!o.hidden, priceCents, customTitle: !!o.title, customPrice: o.priceCents != null };
     });
   }
@@ -88,23 +93,26 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     else { // automatic: the year containing the next upcoming week
       const { hy } = await todayInfo();
       const [a, b] = await Promise.all([slotsForYear(hy, st, overrides, events), slotsForYear(hy + 1, st, overrides, events)]);
-      const nx = a.concat(b).find((s) => !s.hidden && s.date >= today);
+      const nx = a.concat(b).find((s) => !s.hidden && s.kind !== 'board' && s.date >= today);
       y = nx ? nx.year : hy; all = y === hy ? a : b;
     }
-    next = all.find((s) => !s.hidden && s.date >= today);
-    const slots = all.filter((s) => admin || !s.hidden).map((s) => {
+    next = all.find((s) => !s.hidden && s.kind !== 'board' && s.date >= today);
+    const toOut = (s) => {
       const sp = byKey.get(s.key) || null;
       const out = {
-        key: s.key, year: s.year, kind: s.kind, title: s.title, titleHe: s.titleHe, note: s.note, date: s.date, dow: s.dow, dateLabel: s.dateLabel, heb: s.heb, hebHe: s.hebHe,
-        priceCents: s.priceCents, past: s.date < today,
+        key: s.key, year: s.year, kind: s.kind, title: s.title, titleHe: s.titleHe, note: s.note, mevarchim: s.mevarchim || '', molad: s.molad || '', date: s.date, dow: s.dow, dateLabel: s.dateLabel, heb: s.heb, hebHe: s.hebHe,
+        priceCents: s.priceCents, past: s.kind === 'board' ? false : s.date < today,
         status: !sp ? 'open' : sp.status === 'paid' ? 'sponsored' : 'reserved',
         sponsor: publicSponsor(sp, st),
       };
       if (admin) Object.assign(out, { hidden: s.hidden, customTitle: s.customTitle, customPrice: s.customPrice, eventId: s.eventId || null, sponsorship: sp ? spView(sp) : null });
       return out;
-    });
+    };
+    const slots = all.filter((s) => admin || (!s.hidden && s.kind !== 'board')).map(toOut);
+    const bs = all.find((s) => s.kind === 'board' && !s.hidden);
+    const boardSponsor = bs ? toOut(bs) : null;
     return {
-      today, year: y, yearHe: await cal.yearHe(y), current: next ? next.key : null, years: [y], slots,
+      today, year: y, yearHe: await cal.yearHe(y), current: next ? next.key : null, years: [y], slots, boardSponsor,
       sponsoring: !!store, settings: publicSettings(st),
     };
   }
@@ -120,7 +128,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
   }
   function publicSettings(st) {
     return {
-      orgName: st.orgName, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
+      orgName: st.orgName, standardNote: st.standardNote, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
       contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,
@@ -161,7 +169,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     return configured || req.protocol + '://' + req.get('host');
   };
   const instructionsFor = (method, st, slot, amountCents) => {
-    const memo = 'Kiddush ' + slot.title + ' ' + slot.dateLabel;
+    const memo = slot.kind === 'board' ? slot.title : 'Kiddush ' + slot.title + ' ' + slot.dateLabel;
     const dollars = (amountCents / 100).toFixed(2).replace(/\.00$/, '');
     if (method === 'zelle') return { zelleId: st.zelleId, zelleName: st.zelleName, memo, amount: dollars };
     if (method === 'venmo') { const h = st.venmoHandle.replace(/^@/, ''); return { venmoHandle: h, memo, amount: dollars, link: 'https://venmo.com/' + encodeURIComponent(h) + '?txn=pay&amount=' + dollars + '&note=' + encodeURIComponent(memo) }; }
@@ -188,13 +196,13 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     });
     if (!id) throw new HttpError(409, 'taken', 'Sorry, someone just sponsored this week. Please choose another.');
     const sp = await store.getSponsorship(id);
-    if (f.method !== 'card') return { ok: true, id, status: 'pending', method: f.method, slot: slotBrief(slot), display: sponsorBrief(sp), instructions: instructionsFor(f.method, st, slot, f.amount), contact: contactOf(st) };
+    if (f.method !== 'card') return { ok: true, id, status: 'pending', method: f.method, slot: slotBrief(slot), display: sponsorBrief(sp), amountCents: f.amount, instructions: instructionsFor(f.method, st, slot, f.amount), contact: contactOf(st) };
     try {
       const base = baseUrl(req, st);
-      const title = 'Kiddush sponsorship: ' + slot.title + ', ' + slot.dateLabel;
+      const title = slot.kind === 'board' ? slot.title : 'Kiddush sponsorship: ' + slot.title + ', ' + slot.dateLabel;
       const session = await stripe.checkout.sessions.create({
         mode: 'payment',
-        line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: f.amount + fee, product_data: { name: title, ...(sp.dedication ? { description: dedicationText(sp.dedication_kind, sp.dedication) } : {}) } } }],
+        line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: f.amount + fee, product_data: { name: title, description: [slot.kind === 'board' ? 'Sponsor of the Kiddush board for the year' : st.standardNote, dedicationText(sp.dedication_kind, sp.dedication)].filter(Boolean).join(' · ') } } }],
         customer_email: f.email,
         payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: id, slot: slot.key } },
         metadata: { source: 'kiddush', sponsorship: id, slot: slot.key, fee_covered: fee ? 'yes' : 'no' },
@@ -209,7 +217,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       throw e;
     }
   }
-  const slotBrief = (s) => ({ key: s.key, title: s.title, dateLabel: s.dateLabel, heb: s.heb, date: s.date });
+  const slotBrief = (s) => ({ kind: s.kind, key: s.key, title: s.title, dateLabel: s.dateLabel, heb: s.heb, date: s.date });
   const sponsorBrief = (sp) => ({ name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication) });
   const contactOf = (st) => ({ email: st.contactEmail, phone: st.contactPhone });
   async function resumeResponse(sp, st) { // the same request sent twice (double tap, retry): answer again, never double-book
@@ -224,7 +232,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     const sp = typeof id === 'string' ? await store.getSponsorship(id) : null;
     if (!sp || sp.method !== 'card' || !sessionId || sp.stripe_session_id !== sessionId) throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');
     const slot = await findSlot(sp.slot_key, { allowHidden: true });
-    const brief = { slot: slot ? slotBrief(slot) : null, display: sponsorBrief(sp) };
+    const brief = { slot: slot ? slotBrief(slot) : null, display: sponsorBrief(sp), amountCents: sp.amount_cents };
     if (sp.status === 'paid') return { status: 'paid', ...brief };
     if (!stripe) throw new HttpError(503, 'not_configured', 'Card payments are not set up.');
     const session = await stripe.checkout.sessions.retrieve(sessionId);
