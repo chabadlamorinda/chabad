@@ -39,7 +39,7 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '' }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
   const app = express();
   app.disable('x-powered-by');
@@ -260,6 +260,11 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/api', api);
 
   // ---------- website (only the public files are served) ----------
+  // Google Play "Trusted Web Activity" verification: proves this site and the Android app belong together.
+  app.get('/.well-known/assetlinks.json', (req, res) => {
+    const fps = (androidSha256 || '').split(',').map((x) => x.trim().toUpperCase()).filter((x) => /^([0-9A-F]{2}:){31}[0-9A-F]{2}$/.test(x));
+    res.json(fps.length ? [{ relation: ['delegate_permission/common.handle_all_urls'], target: { namespace: 'android_app', package_name: androidPackage, sha256_cert_fingerprints: fps } }] : []);
+  });
   // The app is the front door: any address pointed at this server (for example pushka.chabadoflamorinda.com) opens it.
   app.get(['/', '/index.html'], (req, res) => res.redirect(302, '/pushka/'));
   app.use('/pushka', express.static(path.join(ROOT, 'pushka'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
@@ -280,7 +285,7 @@ if (require.main === module) {
     console.log('Stripe keys not set: running without card payments.');
   }
   const port = process.env.PORT || 3000;
-  createApp({ stripe, publishableKey: pk, sessionSecret }).listen(port, () => console.log('Listening on ' + port));
+  createApp({ stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '' }).listen(port, () => console.log('Listening on ' + port));
 }
 
 module.exports = { createApp, FUND_NAMES };

@@ -579,6 +579,7 @@ PG.profile = () => {
     ${sec(t("Manage account"))}<button class="row-btn" data-act="deleteAcct" style="color:#9b1c5a"><span style="flex:none">${ico(I.trash, 22)}</span><div class="grow" style="font-size:16px">${t("Delete account?")}</div></button>`);
 };
 PG.support = () => sub(tt("Support"), `<p class="body-p">${t("Questions about the pushka, your gifts or receipts? We’re happy to help.")}</p><div class="card" style="flex-direction:column;align-items:flex-start;gap:4px"><div class="card-title">${t("Chabad of Lamorinda")}</div><a href="mailto:${SITE_EMAIL}">${SITE_EMAIL}</a><a href="https://www.chabadoflamorinda.com" target="_blank" rel="noopener">chabadoflamorinda.com</a></div>
+  <p class="row2" style="justify-content:flex-start;gap:var(--s4)"><a href="privacy.html" target="_blank" rel="noopener">${t("Privacy policy")}</a><a href="support.html" target="_blank" rel="noopener">${t("Help & FAQ")}</a></p>
   <p class="note">${t("Tip: add this app to your home screen — in your browser menu choose “Add to Home Screen.”")}</p>`);
 
 // ---------- rendering ----------

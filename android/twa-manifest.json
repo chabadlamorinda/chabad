@@ -1,0 +1,21 @@
+{
+  "packageId": "com.chabadoflamorinda.pushka",
+  "host": "pushka.chabadoflamorinda.com",
+  "name": "My Pushka · Chabad of Lamorinda",
+  "launcherName": "My Pushka",
+  "display": "standalone",
+  "orientation": "portrait",
+  "themeColor": "#f3f2f2",
+  "navigationColor": "#f3f2f2",
+  "backgroundColor": "#f3f2f2",
+  "startUrl": "/pushka/",
+  "iconUrl": "https://pushka.chabadoflamorinda.com/pushka/icon-512.png",
+  "maskableIconUrl": "https://pushka.chabadoflamorinda.com/pushka/icon-maskable-512.png",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "enableNotifications": true,
+  "fallbackType": "customtabs",
+  "signingKey": { "path": "./android.keystore", "alias": "pushka" },
+  "isChromeOSOnly": false,
+  "isMetaQuest": false
+}

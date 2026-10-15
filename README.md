@@ -22,6 +22,9 @@ chabadoflamorinda.com itself is hosted by Chabad.org, so leave it alone and put 
 2. Render shows a **CNAME** target (`chabad-lamorinda-app.onrender.com`). Add a CNAME record for the subdomain pointing to it, wherever the domain's DNS is managed (ask Chabad.org if they manage it).
 3. Back in Render click **Verify**. HTTPS is issued automatically. The address then opens the app directly.
 
+## Mobile apps
+The web app is installable on any phone today. Google Play: see `store/android-guide.md` (assets and listing text are ready in `store/`). Apple App Store needs a native wrapper and is a later step.
+
 ## Practice mode (test without real money)
 Open `/pushka/?practice=1` (or Settings → Practice mode). The app then uses a separate practice pushka and history, shows a banner, and **never charges anything**, even once Stripe is live. The banner has *Fill to goal* (watch it fill up), *Clear practice data*, and *Exit*. Your real data is untouched. Open `/pushka/?practice=0` to leave.
 

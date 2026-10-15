@@ -212,3 +212,21 @@ test('customer: optional phone and address are stored', async (t) => {
   const cus = Object.values(c.stripe._st.customers)[0];
   assert.equal(cus.phone, '555-1234'); assert.equal(cus.metadata.address, '1 Main St, Lafayette CA');
 });
+
+test('Android verification file: empty until configured, then lists only valid fingerprints', async (t) => {
+  const a = await start(); t.after(a.close);
+  const r0 = await fetch(a.base + '/.well-known/assetlinks.json');
+  assert.equal(r0.status, 200); assert.match(r0.headers.get('content-type'), /json/); assert.deepEqual(await r0.json(), []);
+  const fp = Array.from({ length: 32 }, (_, i) => i.toString(16).padStart(2, '0').toUpperCase()).join(':');
+  const app = createApp({ stripe: null, sessionSecret: 'a'.repeat(32), androidSha256: fp.toLowerCase() + ', not-a-fingerprint', log: { error() {} } });
+  const sv = await new Promise((r) => { const s = app.listen(0, () => r(s)); }); t.after(() => sv.close());
+  const j = await (await fetch('http://127.0.0.1:' + sv.address().port + '/.well-known/assetlinks.json')).json();
+  assert.equal(j.length, 1); assert.equal(j[0].target.package_name, 'com.chabadoflamorinda.pushka'); assert.deepEqual(j[0].target.sha256_cert_fingerprints, [fp]);
+  assert.deepEqual(j[0].relation, ['delegate_permission/common.handle_all_urls']);
+});
+
+test('privacy policy and support pages are public', async (t) => {
+  const a = await start(); t.after(a.close);
+  for (const p of ['/pushka/privacy.html', '/pushka/support.html', '/pushka/manifest.json', '/pushka/sw.js', '/pushka/icon-512.png', '/pushka/icon-maskable-512.png']) assert.equal((await fetch(a.base + p)).status, 200, p);
+  assert.match(await (await fetch(a.base + '/pushka/privacy.html')).text(), /Tax ID 47-4642750/);
+});

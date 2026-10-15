@@ -1,9 +1,21 @@
 {
+  "id": "/pushka/",
   "name": "My Pushka · Chabad of Lamorinda",
   "short_name": "My Pushka",
-  "start_url": "./",
+  "description": "A digital tzedakah box for Chabad of Lamorinda: drop coins every day, watch your pushka fill, then give.",
+  "lang": "en",
+  "dir": "auto",
+  "start_url": "/pushka/",
+  "scope": "/pushka/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#f3f2f2",
   "theme_color": "#f3f2f2",
-  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "categories": ["lifestyle", "social"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
 }

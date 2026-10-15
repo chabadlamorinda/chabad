@@ -1,6 +1,8 @@
 // Hebrew UI strings, keyed by the English text used in pushka.js.
 // Machine-written: please have a native Hebrew reader review before sharing widely.
 const HE = {
+  "Privacy policy": "מדיניות פרטיות",
+  "Help & FAQ": "עזרה ושאלות נפוצות",
   "Practice mode — no real money is used": "מצב תרגול – לא נעשה שימוש בכסף אמיתי",
   "Fill to goal": "מלאו עד היעד",
   "Clear practice data": "ניקוי נתוני התרגול",

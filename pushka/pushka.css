@@ -222,3 +222,5 @@ a.btn.cta{text-decoration:none}
 /* bigger pushka so the filling is easy to see */
 .tin .zoom{position:relative;width:275px;height:315px;flex:none}
 .tin .zoom .wrap{position:absolute;left:0;top:0;transform:scale(1.25);transform-origin:top left}
+/* short phones: keep the coin buttons on screen */
+@media (max-height:740px){.tin .zoom{width:220px;height:252px}.tin .zoom .wrap{transform:none}.hd-main h1{font-size:30px}}

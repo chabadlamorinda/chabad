@@ -22,5 +22,9 @@ services:
         sync: false
       - key: STRIPE_PUBLISHABLE_KEY   # pk_test_... first, then pk_live_...  (set in the Render dashboard)
         sync: false
+      - key: ANDROID_PACKAGE
+        value: com.chabadoflamorinda.pushka
+      - key: ANDROID_SHA256           # Play app-signing fingerprint(s), comma separated (see store/android-guide.md)
+        sync: false
       - key: SESSION_SECRET           # generated for you
         generateValue: true
