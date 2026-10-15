@@ -3,6 +3,7 @@
 * `index.html`, `styles.css`: the main website.
 * `pushka/`: the **My Pushka** app (English and Hebrew), installable on a phone's home screen.
 * `server/`: a small Node server that serves the site and handles **Stripe card payments** for the app.
+* `kiddush/`: the **Kiddush board**: a TV display (`/kiddush/tv/`), a phone sponsor page (`/kiddush/`) and an admin page (`/admin/kiddush/`). Setup: [`store/kiddush-setup.md`](store/kiddush-setup.md).
 * `render.yaml`: tells Render how to host everything.
 
 ## How giving works

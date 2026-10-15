@@ -1,0 +1,110 @@
+// Postgres storage for the Kiddush board: settings, per-slot overrides, custom events and sponsorships.
+// A slot (one Shabbat or holiday day) can have at most ONE live sponsorship (pending or paid); the
+// unique index below makes double-booking impossible even if two people tap "Sponsor" together.
+'use strict';
+const crypto = require('crypto');
+
+const newId = (p) => p + crypto.randomBytes(12).toString('hex');
+const HOLD_MINUTES = 35; // an unfinished card checkout releases its week after this long (Stripe sessions last 30)
+
+const SCHEMA = `
+CREATE TABLE IF NOT EXISTS kiddush_settings (key TEXT PRIMARY KEY, value JSONB NOT NULL);
+CREATE TABLE IF NOT EXISTS kiddush_slots (
+  slot_key TEXT PRIMARY KEY, hidden BOOLEAN NOT NULL DEFAULT FALSE, price_cents INT, title TEXT
+);
+CREATE TABLE IF NOT EXISTS kiddush_events (
+  id TEXT PRIMARY KEY, event_date DATE NOT NULL, title TEXT NOT NULL, title_he TEXT NOT NULL DEFAULT '', note TEXT NOT NULL DEFAULT '',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS kiddush_sponsorships (
+  id TEXT PRIMARY KEY, slot_key TEXT NOT NULL,
+  status TEXT NOT NULL,                       -- pending | paid | released | expired
+  method TEXT NOT NULL,                       -- card | zelle | venmo | check | cash | other
+  name TEXT NOT NULL, anonymous BOOLEAN NOT NULL DEFAULT FALSE,
+  dedication_kind TEXT NOT NULL DEFAULT '', dedication TEXT NOT NULL DEFAULT '',
+  email TEXT NOT NULL DEFAULT '', phone TEXT NOT NULL DEFAULT '', note TEXT NOT NULL DEFAULT '',
+  amount_cents INT NOT NULL DEFAULT 0, fee_cents INT NOT NULL DEFAULT 0,
+  source TEXT NOT NULL DEFAULT 'online',      -- online | admin
+  idem TEXT UNIQUE, stripe_session_id TEXT, stripe_payment_intent TEXT,
+  paid_at TIMESTAMPTZ, created_at TIMESTAMPTZ NOT NULL DEFAULT now(), updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE UNIQUE INDEX IF NOT EXISTS kiddush_live_slot ON kiddush_sponsorships (slot_key) WHERE status IN ('pending','paid');
+CREATE INDEX IF NOT EXISTS kiddush_sp_email ON kiddush_sponsorships (lower(email));
+CREATE INDEX IF NOT EXISTS kiddush_sp_session ON kiddush_sponsorships (stripe_session_id);`;
+
+const COLS = { name: 'name', anonymous: 'anonymous', dedicationKind: 'dedication_kind', dedication: 'dedication', email: 'email', phone: 'phone', note: 'note', amountCents: 'amount_cents', feeCents: 'fee_cents', method: 'method' };
+
+function kiddushStore({ q, rows, one }) {
+  const expire = () => q(`UPDATE kiddush_sponsorships SET status='expired', updated_at=now() WHERE status='pending' AND method='card' AND created_at < now() - interval '${HOLD_MINUTES} minutes'`);
+  return {
+    kiddushSchema: SCHEMA,
+    kiddushResetForTests: () => q('TRUNCATE kiddush_settings, kiddush_slots, kiddush_events, kiddush_sponsorships'),
+
+    async getSettings() {
+      const out = {};
+      for (const r of await rows('SELECT key, value FROM kiddush_settings')) out[r.key] = r.value;
+      return out;
+    },
+    async saveSettings(obj) {
+      for (const [k, v] of Object.entries(obj)) if (v !== undefined) await q('INSERT INTO kiddush_settings (key, value) VALUES ($1,$2) ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value', [k, JSON.stringify(v)]);
+    },
+
+    // ----- per-slot overrides (hide a week, change its price or name) -----
+    async slotOverrides() {
+      const m = new Map();
+      for (const r of await rows('SELECT * FROM kiddush_slots')) m.set(r.slot_key, { hidden: r.hidden, priceCents: r.price_cents, title: r.title });
+      return m;
+    },
+    saveSlot: (key, o) => q(`INSERT INTO kiddush_slots (slot_key, hidden, price_cents, title) VALUES ($1,$2,$3,$4)
+      ON CONFLICT (slot_key) DO UPDATE SET hidden=EXCLUDED.hidden, price_cents=EXCLUDED.price_cents, title=EXCLUDED.title`, [key, !!o.hidden, o.priceCents == null ? null : o.priceCents, o.title || null]),
+
+    // ----- custom events -----
+    listEvents: () => rows("SELECT id, to_char(event_date,'YYYY-MM-DD') AS date, title, title_he, note FROM kiddush_events ORDER BY event_date, created_at"),
+    async addEvent(e) { const id = newId('ke_'); await q('INSERT INTO kiddush_events (id, event_date, title, title_he, note) VALUES ($1,$2,$3,$4,$5)', [id, e.date, e.title, e.titleHe || '', e.note || '']); return id; },
+    async deleteEvent(id) { return (await q('DELETE FROM kiddush_events WHERE id=$1', [id])).rowCount === 1; },
+
+    // ----- sponsorships -----
+    async liveSponsorships() { await expire(); return rows("SELECT * FROM kiddush_sponsorships WHERE status IN ('pending','paid')"); },
+    async allSponsorships() { await expire(); return rows('SELECT * FROM kiddush_sponsorships ORDER BY created_at DESC'); },
+    getSponsorship: (id) => one('SELECT * FROM kiddush_sponsorships WHERE id=$1', [id]),
+    sponsorshipByIdem: (idem) => one('SELECT * FROM kiddush_sponsorships WHERE idem=$1', [idem]),
+    sponsorshipBySession: (sid) => one('SELECT * FROM kiddush_sponsorships WHERE stripe_session_id=$1', [sid]),
+    async pendingCountForEmail(email) { await expire(); return (await one("SELECT count(*)::int AS n FROM kiddush_sponsorships WHERE status='pending' AND lower(email)=lower($1)", [email])).n; },
+    /** Returns the new id, or null when the week is already taken. */
+    async createSponsorship(s) {
+      await expire();
+      const id = newId('ks_');
+      try {
+        await q(`INSERT INTO kiddush_sponsorships (id, slot_key, status, method, name, anonymous, dedication_kind, dedication, email, phone, note, amount_cents, fee_cents, source, idem, paid_at)
+          VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15, CASE WHEN $3='paid' THEN now() ELSE NULL END)`,
+          [id, s.slotKey, s.status, s.method, s.name, !!s.anonymous, s.dedicationKind || '', s.dedication || '', s.email || '', s.phone || '', s.note || '', s.amountCents || 0, s.feeCents || 0, s.source || 'online', s.idem || null]);
+      } catch (e) { if (e && e.code === '23505' && /kiddush_live_slot/.test(e.constraint || e.message)) return null; throw e; }
+      return id;
+    },
+    attachSession: (id, sessionId) => q('UPDATE kiddush_sponsorships SET stripe_session_id=$2, updated_at=now() WHERE id=$1', [id, sessionId]),
+    /** Edit fields (admin). Throws code 23505 when moving to a live status on a slot that is taken. */
+    async updateSponsorship(id, f) {
+      const sets = [], vals = [id];
+      for (const [k, col] of Object.entries(COLS)) if (k in f) { vals.push(f[k]); sets.push(`${col}=$${vals.length}`); }
+      if ('slotKey' in f) { vals.push(f.slotKey); sets.push(`slot_key=$${vals.length}`); }
+      if ('status' in f) { vals.push(f.status); sets.push(`status=$${vals.length}`); sets.push(`paid_at=CASE WHEN $${vals.length}='paid' THEN COALESCE(paid_at, now()) WHEN $${vals.length}='pending' THEN NULL ELSE paid_at END`); }
+      if (!sets.length) return true;
+      return (await q(`UPDATE kiddush_sponsorships SET ${sets.join(', ')}, updated_at=now() WHERE id=$1`, vals)).rowCount === 1;
+    },
+    /** Called when Stripe reports the checkout paid. Idempotent; also works if the hold already lapsed and the week is still free. */
+    async markPaid(id, { paymentIntent, amountTotal } = {}) {
+      const sp = await one('SELECT * FROM kiddush_sponsorships WHERE id=$1', [id]);
+      if (!sp) return null;
+      if (sp.status === 'paid') return sp;
+      try {
+        await q("UPDATE kiddush_sponsorships SET status='paid', paid_at=now(), stripe_payment_intent=COALESCE($2, stripe_payment_intent), updated_at=now() WHERE id=$1", [id, paymentIntent || null]);
+      } catch (e) { if (e && e.code === '23505') return { ...sp, conflict: true }; throw e; }
+      return one('SELECT * FROM kiddush_sponsorships WHERE id=$1', [id]);
+    },
+    async releaseSponsorship(id, status = 'released', onlyPendingCard = false) {
+      const r = await q(`UPDATE kiddush_sponsorships SET status=$2, updated_at=now() WHERE id=$1 AND status IN ('pending','paid') ${onlyPendingCard ? "AND status='pending' AND method='card'" : ''}`, [id, status]);
+      return r.rowCount === 1;
+    },
+  };
+}
+module.exports = { kiddushStore, newId, HOLD_MINUTES };

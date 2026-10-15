@@ -16,6 +16,7 @@ const crypto = require('crypto');
 const express = require('express');
 const { mountMembers } = require('./members.js');
 const { mountAdmin } = require('./admin.js');
+const { createKiddush } = require('./kiddush.js');
 
 const ROOT = path.join(__dirname, '..');
 const FUND_NAMES = {
@@ -41,8 +42,9 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '' }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date() }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
+  const kiddush = createKiddush({ store, stripe, log, now });
   const app = express();
   app.disable('x-powered-by');
   app.set('trust proxy', 1);
@@ -119,6 +121,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   });
   async function handleStripeEvent(event) {
     if (!store) return;
+    if (await kiddush.onStripeEvent(event)) return; // Kiddush sponsorship checkouts
     const o = event.data && event.data.object || {};
     const cus = typeof o.customer === 'string' ? o.customer : (o.customer && o.customer.id) || null;
     switch (event.type) {
@@ -167,7 +170,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   };
   const wrap = (fn) => (req, res) => Promise.resolve(fn(req, res)).catch((err) => handleError(err, res));
   function handleError(err, res) {
-    if (err instanceof HttpError) return res.status(err.status).json({ code: err.code, error: err.message });
+    if (err instanceof HttpError || err instanceof kiddush.HttpError) return res.status(err.status).json({ code: err.code, error: err.message });
     if (err && err.type === 'StripeCardError') {
       return res.status(402).json({ code: err.code === 'authentication_required' ? 'authentication_required' : 'card_error', error: err.message || 'Your card was declined.' });
     }
@@ -311,9 +314,16 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   }));
 
   mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, limit });
+  // Kiddush board API (its own router so the shared per-IP limit above does not throttle a room full of phones).
+  const kapi = express.Router();
+  kapi.use(express.json({ limit: '16kb' }));
+  kapi.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
+  kiddush.mountPublic(kapi, { wrap, limit });
+  kapi.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
+  app.use('/api/kiddush', kapi);
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  mountAdmin(app, { store, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log });
+  mountAdmin(app, { store, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: kiddush.mountAdmin });
 
   // ---------- website (only the public files are served) ----------
   // Google Play "Trusted Web Activity" verification: proves this site and the Android app belong together.
@@ -322,7 +332,10 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     res.json(fps.length ? [{ relation: ['delegate_permission/common.handle_all_urls'], target: { namespace: 'android_app', package_name: androidPackage, sha256_cert_fingerprints: fps } }] : []);
   });
   // The app is the front door: any address pointed at this server (for example pushka.chabadoflamorinda.com) opens it.
-  app.get(['/', '/index.html'], (req, res) => res.redirect(302, '/pushka/'));
+  // (an address starting with "kiddush." opens the Kiddush sponsor page instead)
+  app.get(['/', '/index.html'], (req, res) => res.redirect(302, /^kiddush\./i.test(req.hostname) ? '/kiddush/' : '/pushka/'));
+  // Kiddush board: /kiddush/ is the phone sponsor page, /kiddush/tv/ is the TV display.
+  app.use('/kiddush', express.static(path.join(ROOT, 'kiddush'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use('/pushka', express.static(path.join(ROOT, 'pushka'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use((req, res) => res.status(404).type('text').send('Not found'));
   return app;

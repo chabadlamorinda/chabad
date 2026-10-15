@@ -3,6 +3,7 @@
 'use strict';
 const crypto = require('crypto');
 const { Pool } = require('pg');
+const { kiddushStore } = require('./kiddush-store.js');
 
 const newId = (p) => p + crypto.randomBytes(12).toString('hex');
 
@@ -45,9 +46,11 @@ function createStore(url, opts = {}) {
   const rows = async (text, params) => (await q(text, params)).rows;
   const one = async (text, params) => (await q(text, params)).rows[0] || null;
 
+  const kiddush = kiddushStore({ q, rows, one });
   return {
+    ...kiddush,
     pool,
-    migrate: () => q(SCHEMA),
+    migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); },
     close: () => pool.end(),
     reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events CASCADE'), // tests only
 
