@@ -1,0 +1,20 @@
+{
+  "name": "bay-kosher",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bay Kosher online grocery: storefront, catalog/pricing back office, order picking, delivery.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test server/*.test.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.23.1",
+    "stripe": "^23.0.0"
+  },
+  "devDependencies": {
+    "embedded-postgres": "^18.4.0-beta.17"
+  }
+}
