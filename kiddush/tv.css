@@ -16,7 +16,6 @@ body{font-family:"Oswald",sans-serif;color:var(--gold);background:#2a0f08 url(im
 .tile .s{margin-top:calc(var(--rh)*.08);color:#4a200f;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:600;font-size:calc(var(--rh)*.34);line-height:1.05;white-space:nowrap;
   text-shadow:0 1px 0 rgba(255,244,190,.8)}
 .tile.reserved .s{opacity:.8}
-.tile.past.open{opacity:.62}
 .tile.empty{visibility:hidden}
 .tile.current{animation:glow 3.2s ease-in-out infinite;z-index:2}
 @keyframes glow{0%,100%{filter:drop-shadow(0 0 calc(var(--rh)*.05) rgba(255,224,130,.35))}50%{filter:drop-shadow(0 0 calc(var(--rh)*.22) rgba(255,230,140,.95))}}
