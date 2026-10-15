@@ -73,17 +73,20 @@ test('calendar: every Shabbat of several years has a parshah name we recognise; 
 
 // ---------------------------------------------------------------- public board
 
-test('board: current year flips at Rosh Hashanah, current week is the next upcoming one, no private data leaks', async () => {
+test('board: only year 5787, current week is the next upcoming one', async () => {
   const b = await board();
-  assert.equal(b.year, 5787); assert.equal(b.yearHe, 'תשפ״ז'); assert.deepEqual(b.years, [5787, 5788]);
+  assert.equal(b.year, 5787); assert.equal(b.yearHe, 'תשפ״ז'); assert.deepEqual(b.years, [5787]);
+  assert.ok(b.slots.every((s) => s.year === 5787) && b.slots[0].key === '2026-09-12|rh1' && b.slots.at(-1).date < '2027-10-01');
   assert.equal(b.today, '2026-10-15');
   assert.equal(b.current, '2026-10-17|shabbat');
   const cur = b.slots.find((s) => s.key === b.current);
   assert.equal(cur.title, 'Noach'); assert.equal(cur.status, 'open'); assert.equal(cur.priceCents, 18000);
   assert.ok(b.slots.find((s) => s.key === '2026-10-10|shabbat').past);
   assert.equal(b.settings.ways.card, true); assert.equal(b.settings.ways.zelle, false, 'Zelle stays off until the address is entered');
-  assert.equal((await board('?year=5788')).year, 5788);
-  assert.equal((await board('?year=1999')).year, 5787, 'out-of-range year falls back');
+  assert.equal((await board('?year=5788')).year, 5787, 'other years are not offered');
+  const next = { key: '2027-09-25|shabbat', priceCents: 18000 }; // 5787's last Shabbat is sponsorable; 5788's first is not
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2027-10-09|shabbat', priceCents: 18000 }))).status, 404);
+  assert.equal((await call('POST', '/api/kiddush/sponsor', form(next))).status, 200);
 });
 
 test('board without a database: shows the calendar, all open, and sponsoring is off', async () => {

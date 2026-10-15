@@ -41,7 +41,7 @@
 
   function render() {
     var b = st.board, years = $('years'); years.textContent = '';
-    b.years.forEach(function (y) {
+    if (b.years.length > 1) b.years.forEach(function (y) {
       years.appendChild(h('button', { class: 'tab', role: 'tab', 'aria-selected': String(y === st.year), text: y === b.year ? String(y) : String(y), onclick: function () { load(y); } }));
     });
     var list = $('list'); list.textContent = '';

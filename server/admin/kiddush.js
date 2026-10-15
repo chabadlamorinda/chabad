@@ -54,7 +54,7 @@
           el('button', { text: 'Copy sponsor link', onclick: function (e) { var u = (b.settings.publicUrl || location.origin) + '/kiddush/'; navigator.clipboard && navigator.clipboard.writeText(u); e.target.textContent = 'Copied: ' + u; } })]),
         el('div', { class: 'small', text: 'On the TV, open the TV display in its web browser and press F11 for full screen. It updates itself every minute.' }),
       ]);
-      var yrs = el('div', { class: 'row' }, b.years.map(function (y) { return el('button', { class: y === year ? 'on' : '', text: String(y), onclick: function () { year = y; load(); } }); }));
+      var yrs = el('h2', { text: 'Year ' + b.year + ' · ' + b.yearHe });
       var fl = el('div', { class: 'row', style: 'margin:10px 0' }, [['upcoming', 'Upcoming'], ['all', 'Whole year'], ['open', 'Open'], ['pending', 'Waiting for payment'], ['paid', 'Sponsored'], ['hidden', 'Hidden']].map(function (f) {
         return el('button', { class: filter === f[0] ? 'on' : '', text: f[1], onclick: function () { filter = f[0]; boardTab.render(box, b); } });
       }));
@@ -169,7 +169,7 @@
     ['Venmo', [['venmoOn', 'Offer Venmo', 'b'], ['venmoHandle', 'Venmo username', 't']]],
     ['Check and cash', [['checkOn', 'Offer check', 'b'], ['checkPayable', 'Checks payable to', 't'], ['checkAddress', 'Mailing address', 't'], ['cashOn', 'Offer cash / other at shul', 'b']]],
     ['Contact shown to donors', [['contactEmail', 'Email', 't'], ['contactPhone', 'Phone', 't']]],
-    ['The board', [['includePurim', 'Include Purim', 'b'], ['showPending', 'Show names on the TV as soon as someone reserves (before payment arrives)', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
+    ['The board', [['boardYear', 'Hebrew year shown on the board (e.g. 5787)', 'n'], ['includePurim', 'Include Purim', 'b'], ['showPending', 'Show names on the TV as soon as someone reserves (before payment arrives)', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
       ['publicUrl', 'Web address for the QR code (optional, e.g. https://kiddush.chabadoflamorinda.com)', 't']]],
   ];
   function settingsTab() {
@@ -183,7 +183,7 @@
           var k = d[0], i;
           if (d[2] === 'b') { i = el('input', { type: 'checkbox', checked: S[k] }); c.appendChild(el('label', { style: 'font-size:16px;color:inherit' }, [i, ' ' + d[1]])); }
           else if (d[2] === 'a') { i = el('textarea', { rows: '4' }); i.value = S[k] || ''; c.appendChild(el('label', { text: d[1] })); c.appendChild(i); }
-          else { i = el('input', { type: d[2] === 'n' ? 'number' : 'text', value: S[k], min: '1' }); c.appendChild(el('label', { text: d[1] })); c.appendChild(i); }
+          else { i = el('input', { type: d[2] === 'n' ? 'number' : 'text', value: S[k], min: '1', step: k === 'boardYear' ? '1' : 'any' }); c.appendChild(el('label', { text: d[1] })); c.appendChild(i); }
           inputs[k] = [i, d[2]];
         });
         box.appendChild(c);

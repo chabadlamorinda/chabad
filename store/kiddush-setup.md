@@ -14,7 +14,7 @@ Three addresses on the same server as the pushka app (replace `<your-app-address
 3. **Admin page → Settings.** Enter your **Zelle email or phone** (Zelle stays hidden until you do), check the Venmo name, mailing address, and set the **prices** (both start at $180). Optional: the "Donated by" line on the TV.
 
 ## On the TV
-Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Stick plugged into it) and press **F11** for full screen. It refreshes itself every minute, keeps showing the last board if the wifi drops, and rolls over to the new year at Rosh Hashanah on its own. The center plate always shows the **next upcoming Kiddush**: who sponsored it and why, or "Open for sponsorship" with a QR code that goes straight to that week.
+Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Stick plugged into it) and press **F11** for full screen. It refreshes itself every minute, keeps showing the last board if the wifi drops, and shows year 5787 only. The center plate always shows the **next upcoming Kiddush**: who sponsored it and why, or "Open for sponsorship" with a QR code that goes straight to that week.
 
 ## What the Rabbi does
 * **The board** tab: the whole year. Tap any row to add a sponsor by hand (someone who handed you a check), edit one, mark it paid, remove it, rename a week, change its price, or **hide** it (for example a week you are away).
@@ -28,7 +28,7 @@ Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Sti
 * Two people can never sponsor the same week, even if they tap at the same moment.
 
 ## What's on the board
-Every Shabbat (by parshah, combined parshiyos included, with Shabbat Shuva / Shekalim / Zachor… noted), Rosh Hashanah days 1 and 2, Yom Kippur break-fast, Sukkot days 1 and 2, Shabbos Chol Hamoed (Sukkot and Pesach), Shemini Atzeret, Simchat Torah, Pesach days 1, 2, 7 and 8, Shavuos days 1 and 2, and Purim. Dates and Hebrew dates are calculated for any year, so next year's board needs no work. The sponsor page shows the current year and the next.
+Every Shabbat (by parshah, combined parshiyos included, with Shabbat Shuva / Shekalim / Zachor… noted), Rosh Hashanah days 1 and 2, Yom Kippur break-fast, Sukkot days 1 and 2, Shabbos Chol Hamoed (Sukkot and Pesach), Shemini Atzeret, Simchat Torah, Pesach days 1, 2, 7 and 8, Shavuos days 1 and 2, and Purim. The board is set to **5787 only** (Sep 2026 to Sep 2027). When the next year begins, change *Hebrew year shown on the board* in Settings and the whole board, TV and sponsor page switch over.
 
 ## A nicer address (optional)
 Add a custom domain such as `kiddush.chabadoflamorinda.com` in Render (same steps as in the main README). An address starting with `kiddush.` opens the sponsor page directly. Then put it in Settings → "Web address for the QR code" so the TV's QR code and web address use it.
