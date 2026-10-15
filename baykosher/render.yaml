@@ -24,7 +24,7 @@ services:
       - key: SESSION_SECRET
         generateValue: true
       - key: ADMIN_PASSWORD
-        value: demo-password-123
+        sync: false   # Render asks you for this when you create the blueprint (12+ characters)
       - key: PICKER_PIN
         value: "1234"
       - key: DATABASE_URL
