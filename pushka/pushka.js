@@ -798,7 +798,7 @@ A.pClear = () => sheet(`<div><h3>${t("Clear practice data?")}</h3><div class="h-
 A.pClearGo = () => { try { localStorage.removeItem("lamorinda-pushka-practice"); } catch (e) {} location.reload(); };
 const wipe = () => { try { localStorage.removeItem(KEY); } catch (e) {} location.reload(); };
 A.deleteAcct = () => sheet(`<div><h3>${t("Delete account?")}</h3><div class="h-s" style="font-size:13px">${t("This erases your pushkas, history and settings from this device, stops any monthly gifts and removes your saved card. Gifts you already made are not affected.")}</div></div><button class="btn btn-primary cta" data-act="wipe" style="color:#9b1c5a;border-color:#9b1c5a">${t("Delete everything")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
-A.wipe = async () => { if (API.enabled && S.token) { try { await api("/account", { method: "DELETE" }); } catch (e) { if (e.code !== "unauthorized") { closeSheet(); return toast(errText(e)); } } } wipe(); };
+A.wipe = async () => { if (S.mtoken && !PRACTICE) { try { await api("/member", { method: "DELETE", member: true }); const sub = await pushSub(); if (sub) await sub.unsubscribe(); } catch (e) { if (e.code !== "unauthorized") { closeSheet(); return toast(errText(e)); } } } if (API.enabled && S.token) { try { await api("/account", { method: "DELETE" }); } catch (e) { if (e.code !== "unauthorized") { closeSheet(); return toast(errText(e)); } } } wipe(); };
 A.resetApp = (v, el) => { if (el.dataset.armed) return wipe(); el.dataset.armed = "1"; el.textContent = tt("Tap again to erase this app’s data"); setTimeout(() => { el.dataset.armed = ""; el.textContent = tt("Can’t unlock? Reset this app"); }, 5000); };
 
 
