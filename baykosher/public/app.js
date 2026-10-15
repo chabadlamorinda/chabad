@@ -1,0 +1,221 @@
+// Storefront behavior: cart, search-as-you-type, checkout, account. No framework, no build step.
+(() => {
+  'use strict';
+  const TZ = 'America/Los_Angeles'; // always show the store's local time
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const money = (c) => '$' + (c / 100).toFixed(2);
+  const store = { get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
+  const api = async (method, url, body) => {
+    const r = await fetch(url, { method, headers: body ? { 'Content-Type': 'application/json' } : {}, body: body ? JSON.stringify(body) : undefined, credentials: 'same-origin' });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw Object.assign(new Error(j.error || 'Something went wrong'), { status: r.status });
+    return j;
+  };
+  function toast(msg) { const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), 2200); }
+
+  // ---------- cart (kept in this browser; saved to the server so we can remind people who leave) ----------
+  const cartId = (() => { let id = store.get('bk_cartid', null); if (!id) { id = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, '0')).join(''); store.set('bk_cartid', id); } return id; })();
+  let items = store.get('bk_cart', []); // [{product_id, qty}]
+  let contact = store.get('bk_contact', {});
+  let saveTimer;
+  const step = (by) => (by === 'lb' ? 0.5 : 1);
+  function saveCart() {
+    store.set('bk_cart', items); renderBadges();
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => api('PUT', '/api/cart/' + cartId, { items, email: contact.email, phone: contact.phone, sms_ok: contact.sms_ok }).catch(() => {}), 1500);
+  }
+  const qtyOf = (id) => (items.find((i) => i.product_id === id) || {}).qty || 0;
+  function setQty(id, qty) {
+    items = items.filter((i) => i.product_id !== id);
+    if (qty > 0) items.push({ product_id: id, qty });
+    saveCart(); syncCards();
+  }
+  function renderBadges() {
+    const n = items.length, el = $('#cartcount');
+    if (el) { el.hidden = !n; el.textContent = n; }
+  }
+  function syncCards() {
+    $$('.card[data-id], .addrow').forEach((root) => {
+      const btn = $('[data-add]', root) || $('.stepper', root);
+      if (!btn) return;
+      const id = Number(root.dataset.id || (btn.dataset && btn.dataset.add) || (btn.dataset && btn.dataset.sid));
+      const by = btn.dataset.by, name = btn.dataset.name, q = qtyOf(id);
+      const unit = by === 'lb' ? ' lb' : '';
+      if (q > 0) {
+        if (!btn.classList.contains('stepper')) {
+          const s = document.createElement('div'); s.className = 'stepper'; s.dataset.sid = id; s.dataset.by = by; s.dataset.name = name;
+          s.innerHTML = `<button aria-label="Remove one" data-dec>&minus;</button><span aria-live="polite">${q}${unit}</span><button aria-label="Add one" data-inc>+</button>`;
+          btn.replaceWith(s);
+        } else $('span', btn).textContent = q + unit;
+      } else if (btn.classList.contains('stepper')) {
+        const b = document.createElement('button'); b.className = 'btn add'; b.dataset.add = id; b.dataset.by = by; b.dataset.name = name; b.textContent = by === 'lb' ? 'Add (1 lb)' : 'Add';
+        btn.replaceWith(b);
+      }
+    });
+    minibar();
+  }
+  let sub = 0;
+  async function minibar() {
+    let bar = $('#minibar');
+    if (!items.length || location.pathname.startsWith('/cart') || location.pathname.startsWith('/checkout')) { if (bar) bar.classList.remove('show'); return; }
+    if (!bar) { bar = document.createElement('a'); bar.id = 'minibar'; bar.className = 'minibar'; bar.href = '/cart'; document.body.append(bar); }
+    try { const p = await api('POST', '/api/cart/price', { items }); sub = p.subtotal_cents; bar.innerHTML = `<span>${p.lines.length} item${p.lines.length === 1 ? '' : 's'}</span><span>View cart &middot; ${money(sub)}</span>`; bar.classList.add('show'); } catch {}
+  }
+  document.addEventListener('click', (e) => {
+    const add = e.target.closest('[data-add]'), inc = e.target.closest('[data-inc]'), dec = e.target.closest('[data-dec]');
+    if (add) { setQty(Number(add.dataset.add), step(add.dataset.by) * (add.dataset.by === 'lb' ? 2 : 1)); toast('Added to cart'); }
+    else if (inc || dec) { const s = e.target.closest('.stepper'); if (!s.dataset.sid) return; const id = Number(s.dataset.sid), st = step(s.dataset.by); setQty(id, Math.max(0, qtyOf(id) + (inc ? st : -st))); }
+  });
+
+  // ---------- header: departments, search suggestions, subscribe ----------
+  $('#deptbtn')?.addEventListener('click', (e) => { e.preventDefault(); const d = $('#dept'); d.hidden = !d.hidden; });
+  $$('select[data-autosubmit]').forEach((s) => s.addEventListener('change', () => s.form.submit()));
+  const q = $('#q'), box = $('#suggest');
+  let st;
+  q?.addEventListener('input', () => {
+    clearTimeout(st);
+    const v = q.value.trim();
+    if (v.length < 2) { box.hidden = true; return; }
+    st = setTimeout(async () => {
+      try {
+        const r = await api('GET', '/api/suggest?q=' + encodeURIComponent(v));
+        if (q.value.trim() !== v) return;
+        box.innerHTML = r.map((p) => `<a href="/p/${p.id}-${esc(p.slug)}"><img src="${esc(p.image_url || '/static/noimage.svg')}" alt=""><span>${esc(p.name)}</span><small>${money(p.price_cents)}${p.sold_by === 'lb' ? '/lb' : ''}</small></a>`).join('') + `<a href="/search?q=${encodeURIComponent(v)}"><span>See all results for “${esc(v)}”</span></a>`;
+        box.hidden = false;
+      } catch {}
+    }, 180);
+  });
+  document.addEventListener('click', (e) => { if (box && !e.target.closest('.search')) box.hidden = true; });
+  $('#subform')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    try { await api('POST', '/api/subscribe', { email: e.target.email.value }); $('#submsg').textContent = 'Thank you! You are on the list.'; e.target.reset(); } catch (er) { $('#submsg').textContent = er.message; }
+  });
+  api('GET', '/api/me').then((m) => { if (m.signed_in) { const a = $('#acct'); a.textContent = 'Hi, ' + (m.customer.name || 'account').split(' ')[0]; a.classList.add('ghost'); contact = { ...contact, email: m.customer.email, name: m.customer.name, phone: m.customer.phone }; } }).catch(() => {});
+
+  // ---------- pages rendered in the browser ----------
+  const page = $('#app') && $('#app').dataset.page;
+  const root = $('#app');
+  const miniCard = (p) => `<article class="card${p.stock_status === 'out' ? ' out' : ''}" data-id="${p.id}"><a class="img" href="/p/${p.id}-${esc(p.slug)}"><img src="${esc(p.image_url || '/static/noimage.svg')}" alt="${esc(p.name)}" loading="lazy"></a><a class="nm" href="/p/${p.id}-${esc(p.slug)}">${esc(p.name)}</a><div class="pr">${p.was_cents ? `<b class="sale">${money(p.price_cents)}</b> <s>${money(p.was_cents)}</s>` : `<b>${money(p.price_cents)}</b>`}${p.sold_by === 'lb' ? ' <small>/ lb</small>' : ''}</div>${p.stock_status === 'out' ? '<div class="warn">Out of stock</div>' : `<button class="btn add" data-add="${p.id}" data-by="${p.sold_by}" data-name="${esc(p.name)}">Add</button>`}</article>`;
+
+  async function cartPage() {
+    if (!items.length) { root.innerHTML = '<h1>Your cart</h1><p class="empty">Your cart is empty. <a href="/">Start shopping</a></p>'; return; }
+    const p = await api('POST', '/api/cart/price', { items });
+    // reflect server truth (removed/out-of-stock items, capped quantities)
+    items = p.lines.map((l) => ({ product_id: l.product_id, qty: l.qty })); store.set('bk_cart', items); renderBadges();
+    const lines = p.lines.map((l) => `<div class="line" data-id="${l.product_id}"><img src="${esc(l.image_url || '/static/noimage.svg')}" alt=""><div><a href="/p/${l.product_id}-x">${esc(l.name)}</a><div class="hint">${money(l.unit_price_cents)}${l.sold_by === 'lb' ? ' / lb' : ''}${l.was_cents ? ` <s>${money(l.was_cents)}</s>` : ''}${l.stock_status === 'low' ? ' &middot; <span class="warn">Low stock</span>' : ''}</div><div class="stepper" data-sid="${l.product_id}" data-by="${l.sold_by}"><button data-dec aria-label="Less">&minus;</button><span>${l.qty}${l.sold_by === 'lb' ? ' lb' : ''}</span><button data-inc aria-label="More">+</button></div></div><div class="lt">${money(l.line_cents)}${l.sold_by === 'lb' ? '<div class="hint">est.</div>' : ''}<br><button class="rm" data-rm="${l.product_id}">Remove</button></div></div>`).join('');
+    root.innerHTML = `<h1>Your cart</h1>${p.problems.length ? `<div class="notice">${p.problems.map((x) => `${esc(x.name || 'An item')}: ${esc(x.message)}`).join('<br>')}</div>` : ''}<div class="lay"><div class="panel">${lines}</div><aside><div class="panel"><div class="tot"><span>Subtotal</span><b>${money(p.subtotal_cents)}</b></div>${p.savings_cents ? `<div class="tot save"><span>You save</span><span>${money(p.savings_cents)}</span></div>` : ''}<p class="hint">Items sold by weight are charged for the exact weight we pack. Tax (if any) and delivery are shown at checkout.</p><a class="btn big" href="/checkout">Checkout</a></div></aside></div><div id="more"></div>`;
+    $$('[data-rm]').forEach((b) => b.addEventListener('click', () => { setQty(Number(b.dataset.rm), 0); cartPage(); }));
+    $$('.stepper [data-inc],.stepper [data-dec]').forEach((b) => b.addEventListener('click', () => setTimeout(cartPage, 50)));
+    // suggestions based on the newest item
+    const last = items[items.length - 1];
+    if (last) api('GET', '/api/products/' + last.product_id).then((d) => { const sug = [...(d.together || []), ...(d.similar || [])].filter((x) => !items.some((i) => i.product_id === x.id)).slice(0, 6); if (sug.length) { $('#more').innerHTML = `<h2>You might also like</h2><div class="grid">${sug.map(miniCard).join('')}</div>`; syncCards(); } }).catch(() => {});
+  }
+
+  async function checkoutPage() {
+    if (!items.length) { location.replace('/cart'); return; }
+    const [info, priced, me] = await Promise.all([api('GET', '/api/store'), api('POST', '/api/cart/price', { items }), api('GET', '/api/me')]);
+    const cust = me.signed_in ? me.customer : {};
+    const S = { mode: 'pickup', slot: null, coop: null, sub: cust.default_sub_pref || 'substitute', quote: null, slots: { pickup: [], delivery: [] }, coops: [], day: null };
+    const fmtDay = (d) => new Date(d + 'T12:00:00').toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
+    const fmtTime = (iso) => new Date(iso).toLocaleTimeString([], { timeZone: TZ, hour: 'numeric', minute: '2-digit' });
+    [S.slots.pickup, S.slots.delivery, S.coops] = await Promise.all([api('GET', '/api/slots?kind=pickup'), api('GET', '/api/slots?kind=delivery'), api('GET', '/api/coop')]);
+    if (!S.coops.length) delete S.coops;
+    const subtotal = priced.subtotal_cents;
+    function draw() {
+      const slots = S.slots[S.mode === 'uber' ? 'delivery' : 'pickup'] || [];
+      const days = [...new Set(slots.map((s) => s.date))];
+      if (S.mode !== 'coop' && !days.includes(S.day)) S.day = days[0];
+      const fee = S.mode === 'uber' && S.quote && S.quote.deliverable ? S.quote.fee_cents : 0;
+      root.innerHTML = `<h1>Checkout</h1><div class="lay"><div>
+      <div class="panel"><h2>1. Your details</h2><label class="f" for="em">Email</label><input class="i" id="em" type="email" autocomplete="email" value="${esc(contact.email || cust.email || '')}"><div class="row2"><div><label class="f" for="nm">Name</label><input class="i" id="nm" autocomplete="name" value="${esc(contact.name || cust.name || '')}"></div><div><label class="f" for="ph">Mobile phone</label><input class="i" id="ph" type="tel" autocomplete="tel" value="${esc(contact.phone || cust.phone || '')}"></div></div>
+        <label class="opt"><input type="checkbox" id="sms" ${contact.sms_ok || cust.sms_ok ? 'checked' : ''}><span>Text me when my order is ready, and if I leave something in my cart. <small class="hint">Msg &amp; data rates may apply. Reply STOP to opt out.</small></span></label></div>
+      <div class="panel"><h2>2. Pickup or delivery</h2><div class="tabs" role="tablist"><button data-mode="pickup" class="${S.mode === 'pickup' ? 'on' : ''}">Pickup in store<br><small>Free</small></button><button data-mode="uber" class="${S.mode === 'uber' ? 'on' : ''}">Delivery<br><small>Uber, from ${money(info.delivery_tiers[0].fee_cents)}</small></button>${S.coops ? `<button data-mode="coop" class="${S.mode === 'coop' ? 'on' : ''}">Co-op drop<br><small>Free</small></button>` : ''}</div>
+        ${S.mode === 'uber' ? `<div class="row2"><div><label class="f" for="st">Street address</label><input class="i" id="st" autocomplete="address-line1" value="${esc(S.addr?.street || '')}"></div><div><label class="f" for="un">Apt / unit</label><input class="i" id="un" autocomplete="address-line2" value="${esc(S.addr?.unit || '')}"></div></div><div class="row2"><div><label class="f" for="ct">City</label><input class="i" id="ct" autocomplete="address-level2" value="${esc(S.addr?.city || '')}"></div><div><label class="f" for="zp">ZIP</label><input class="i" id="zp" autocomplete="postal-code" inputmode="numeric" value="${esc(S.addr?.zip || '')}"></div></div><button class="btn ghost small" id="quote" style="margin-top:10px">Get my delivery price</button>${S.quote ? (S.quote.deliverable ? `<div class="okbox">${S.quote.miles} miles away: delivery ${S.quote.fee_cents ? money(S.quote.fee_cents) : '<b>FREE</b>'}${!S.quote.free && S.quote.free_over_cents ? `. Free on orders over ${money(S.quote.free_over_cents)}.` : ''}</div>` : `<div class="err">${esc(S.quote.reason)}</div>`) : `<p class="hint">Delivery minimum ${money(info.delivery_min_cents)}.</p>`}` : ''}
+        ${S.mode === 'coop' ? S.coops.map((c) => `<label class="opt ${S.coop === c.id ? 'on' : ''}"><input type="radio" name="coop" value="${c.id}" ${S.coop === c.id ? 'checked' : ''}><span><b>${esc(c.label)}</b><br>${esc(c.location)} &middot; ${fmtDay(String(c.drop_date).slice(0, 10))} ${esc(c.window_text)}<br><small class="hint">Delivered together with your neighbors, free.${c.cutoff_at ? ' Order by ' + new Date(c.cutoff_at).toLocaleString([], { timeZone: TZ, weekday: 'short', hour: 'numeric', minute: '2-digit' }) + '.' : ''}</small></span></label>`).join('') : `<h3 style="margin:14px 0 6px">${S.mode === 'uber' ? 'Delivery window' : 'Pickup time'}</h3>${slots.length ? `<div class="days">${days.map((d) => `<button data-day="${d}" class="${d === S.day ? 'on' : ''}">${fmtDay(d)}</button>`).join('')}</div><div class="times">${slots.filter((s) => s.date === S.day).map((s) => `<button data-slot="${s.start}" class="${S.slot === s.start ? 'on' : ''}">${fmtTime(s.start)}${S.mode === 'uber' ? ' - ' + fmtTime(s.end) : ''}</button>`).join('')}</div><p class="hint">${S.mode === 'pickup' ? 'Most orders are ready within 2-3 hours. You can also schedule up to a month ahead. We notify you the moment it is ready.' : ''}</p>` : '<p class="empty">No times available right now.</p>'}`}</div>
+      <div class="panel"><h2>3. If something is out of stock</h2>${[['substitute', 'Substitute something similar', 'We choose the closest match.'], ['call_sub', 'Call me; if no answer, substitute', ''], ['call_no_sub', 'Call me; if no answer, do not substitute', ''], ['never', 'Never substitute', 'Items out of stock are simply removed.']].map(([v, t, h]) => `<label class="opt ${S.sub === v ? 'on' : ''}"><input type="radio" name="sub" value="${v}" ${S.sub === v ? 'checked' : ''}><span><b>${t}</b>${h ? `<br><small class="hint">${h}</small>` : ''}</span></label>`).join('')}<label class="f" for="note">Notes for the packer (optional)</label><textarea class="i" id="note" rows="2" maxlength="300"></textarea></div>
+      <div class="panel" id="paypanel"><h2>4. Payment</h2><div id="payarea"><button class="btn big" id="topay">Continue to payment</button><p class="hint">Your card is only held now. You are charged the exact total after we pick your order.</p></div><div id="err" class="err" hidden></div></div></div>
+      <aside><div class="panel"><h2>Order summary</h2>${priced.lines.map((l) => `<div class="tot"><span>${l.qty}${l.sold_by === 'lb' ? ' lb' : ' &times;'} ${esc(l.name)}</span><span>${money(l.line_cents)}</span></div>`).join('')}<div class="tot" style="margin-top:8px"><span>Subtotal</span><b>${money(subtotal)}</b></div>${priced.savings_cents ? `<div class="tot save"><span>You save</span><span>${money(priced.savings_cents)}</span></div>` : ''}${S.mode === 'uber' ? `<div class="tot"><span>Delivery</span><span>${S.quote && S.quote.deliverable ? (fee ? money(fee) : 'FREE') : '—'}</span></div>` : ''}${priced.tax_cents ? `<div class="tot"><span>Tax</span><span>${money(priced.tax_cents)}</span></div>` : ''}<div class="tot big"><span>Estimated total</span><span>${money(subtotal + priced.tax_cents + fee)}</span></div><p class="hint">Weighed items may change slightly.</p></div></aside></div>`;
+      wire();
+    }
+    const readContact = () => { contact = { email: $('#em').value.trim(), name: $('#nm').value.trim(), phone: $('#ph').value.trim(), sms_ok: $('#sms').checked }; store.set('bk_contact', contact); };
+    const readAddr = () => { S.addr = { street: $('#st').value.trim(), unit: $('#un').value.trim(), city: $('#ct').value.trim(), state: 'CA', zip: $('#zp').value.trim() }; return S.addr; };
+    const showErr = (m) => { const e = $('#err'); e.textContent = m; e.hidden = !m; if (m) e.scrollIntoView({ block: 'center' }); };
+    function wire() {
+      $$('[data-mode]').forEach((b) => b.addEventListener('click', () => { readContact(); S.mode = b.dataset.mode; S.slot = null; draw(); }));
+      $$('[data-day]').forEach((b) => b.addEventListener('click', () => { readContact(); S.day = b.dataset.day; draw(); }));
+      $$('[data-slot]').forEach((b) => b.addEventListener('click', () => { S.slot = b.dataset.slot; $$('[data-slot]').forEach((x) => x.classList.toggle('on', x === b)); }));
+      $$('[name=sub]').forEach((r) => r.addEventListener('change', () => { S.sub = r.value; $$('[name=sub]').forEach((x) => x.closest('.opt').classList.toggle('on', x.checked)); }));
+      $$('[name=coop]').forEach((r) => r.addEventListener('change', () => { S.coop = Number(r.value); $$('[name=coop]').forEach((x) => x.closest('.opt').classList.toggle('on', x.checked)); }));
+      $('#quote')?.addEventListener('click', async () => { readContact(); try { S.quote = await api('POST', '/api/delivery/quote', { items, address: readAddr() }); } catch (e) { S.quote = { deliverable: false, reason: e.message }; } draw(); });
+      $('#topay').addEventListener('click', startPayment);
+    }
+    async function startPayment() {
+      showErr(''); readContact();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(contact.email)) return showErr('Please enter your email so we can send your receipt.');
+      if (S.mode === 'uber') { readAddr(); if (!S.quote?.deliverable) return showErr('Please check your delivery price first.'); }
+      if (S.mode === 'coop' && !S.coop) return showErr('Please choose a co-op drop.');
+      if (S.mode !== 'coop' && !S.slot) return showErr('Please choose a time.');
+      const btn = $('#topay'); btn.disabled = true; btn.textContent = 'One moment...';
+      try {
+        const body = { items, fulfillment: S.mode, slot_start: S.slot, address: S.mode === 'uber' ? S.addr : undefined, coop_drop_id: S.coop, sub_pref: S.sub, note: $('#note').value, customer: { email: contact.email, name: contact.name, phone: contact.phone, sms_ok: contact.sms_ok } };
+        const co = await api('POST', '/api/checkout', body);
+        store.set('bk_contact', contact);
+        await api('PUT', '/api/cart/' + cartId, { items, email: contact.email, phone: contact.phone, sms_ok: contact.sms_ok }).catch(() => {});
+        const done = async () => { await api('POST', `/api/orders/${co.order_id}/confirm`, { token: co.token }); items = []; store.set('bk_cart', []); location.href = `/order/${co.order_id}?t=${co.token}&new=1`; };
+        if (info.payments === 'stripe') {
+          if (!window.Stripe) await new Promise((res, rej) => { const s = document.createElement('script'); s.src = 'https://js.stripe.com/v3/'; s.onload = res; s.onerror = rej; document.head.append(s); });
+          const stripe = window.Stripe(info.stripe_pk), els = stripe.elements({ clientSecret: co.client_secret });
+          $('#payarea').innerHTML = `<div id="pe"></div><p class="hint">We hold ${money(co.auth_cents)} on your card now (a little extra for weighed items). You are only charged the exact total after your order is picked.</p><button class="btn big" id="pay">Place order</button>`;
+          els.create('payment').mount('#pe');
+          $('#pay').addEventListener('click', async () => {
+            $('#pay').disabled = true; showErr('');
+            const r = await stripe.confirmPayment({ elements: els, confirmParams: { return_url: `${location.origin}/order/${co.order_id}?t=${co.token}&new=1` }, redirect: 'if_required' });
+            if (r.error) { showErr(r.error.message); $('#pay').disabled = false; } else { try { await done(); } catch (e) { showErr(e.message); $('#pay').disabled = false; } }
+          });
+        } else {
+          $('#payarea').innerHTML = `<div class="notice"><b>Test mode.</b> Stripe is not connected yet, so no card is used and nothing is charged.</div><button class="btn big" id="pay">Place test order</button>`;
+          $('#pay').addEventListener('click', async () => { await api('POST', '/api/dev/pay/' + co.order_id, {}); await done(); });
+        }
+      } catch (e) { showErr(e.message); btn.disabled = false; btn.textContent = 'Continue to payment'; }
+    }
+    draw();
+  }
+
+  async function orderPage() {
+    const id = location.pathname.split('/').pop(), t = new URLSearchParams(location.search).get('t') || '';
+    let o;
+    try { o = await api('GET', `/api/orders/${id}?t=${encodeURIComponent(t)}`); } catch { root.innerHTML = '<h1>Order not found</h1><p>Open the link from your email, or <a href="/account">sign in</a>.</p>'; return; }
+    if (new URLSearchParams(location.search).has('new')) { items = []; store.set('bk_cart', []); renderBadges(); }
+    const label = { placed: 'Received', picking: 'Being packed', ready: o.fulfillment === 'pickup' ? 'Ready for pickup' : 'Ready', out_for_delivery: 'On its way', completed: 'Completed', cancelled: 'Cancelled', pending_payment: 'Awaiting payment' }[o.status] || o.status;
+    const when = o.slot_start ? new Date(o.slot_start).toLocaleString([], { timeZone: TZ, weekday: 'long', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '';
+    root.innerHTML = `<h1>Order #${o.order_id} <span class="tag ${o.status === 'ready' ? 'ready' : o.status === 'cancelled' ? 'cancelled' : ''}">${label}</span></h1>${new URLSearchParams(location.search).has('new') ? '<div class="okbox"><b>Thank you!</b> We got your order and will notify you as soon as it is ready.</div>' : ''}<div class="panel"><p>${o.fulfillment === 'pickup' ? 'Pickup at 3477 Golden Gate Way, Lafayette' : o.fulfillment === 'uber' ? 'Delivery to ' + esc(o.address?.street || '') : 'Co-op delivery: ' + esc(o.coop || '')}${when ? '<br>' + when : ''}${o.tracking_url ? `<br><a href="${esc(o.tracking_url)}">Track your delivery</a>` : ''}</p>${o.lines.map((l) => `<div class="tot"><span>${esc(l.name)}${l.is_extra ? ' (added)' : ''}<br><small class="hint">${esc(l.status === 'pending' ? 'Not packed yet' : l.status)}</small></span><span>${l.line_total_cents == null ? (l.qty_ordered + (l.sold_by === 'lb' ? ' lb est.' : '')) : (l.qty_final + (l.sold_by === 'lb' ? ' lb &middot; ' : ' &middot; ')) + money(l.line_total_cents)}</span></div>`).join('')}<div class="tot"><span>Subtotal</span><span>${money(o.subtotal_cents)}</span></div>${o.tax_cents ? `<div class="tot"><span>Tax</span><span>${money(o.tax_cents)}</span></div>` : ''}${o.delivery_fee_cents ? `<div class="tot"><span>Delivery</span><span>${money(o.delivery_fee_cents)}</span></div>` : ''}<div class="tot big"><span>${o.charged_cents != null ? 'Charged' : 'Estimated total'}</span><span>${money(o.charged_cents ?? o.total_cents)}</span></div></div>`;
+    if (['placed', 'picking'].includes(o.status)) setTimeout(orderPage, 30000);
+  }
+
+  async function accountPage() {
+    const m = await api('GET', '/api/me');
+    if (!m.signed_in) {
+      root.innerHTML = `<h1>Sign in</h1><div class="panel" style="max-width:420px"><p class="hint">Enter the email you order with. We will email you a 6-digit code. No password needed.</p><div id="s1"><label class="f" for="e">Email</label><input class="i" id="e" type="email" autocomplete="email"><button class="btn big" id="send" style="margin-top:12px">Email me a code</button></div><div id="s2" hidden><label class="f" for="c">6-digit code</label><input class="i" id="c" inputmode="numeric" autocomplete="one-time-code" maxlength="6"><button class="btn big" id="verify" style="margin-top:12px">Sign in</button></div><div id="err" class="err" hidden></div><p class="hint">New here? Your account is created automatically the first time you check out.</p></div>`;
+      const err = (t) => { const e = $('#err'); e.textContent = t; e.hidden = !t; };
+      $('#send').addEventListener('click', async () => { err(''); try { await api('POST', '/api/auth/request', { email: $('#e').value }); $('#s1').hidden = true; $('#s2').hidden = false; $('#c').focus(); } catch (e) { err(e.message); } });
+      $('#verify').addEventListener('click', async () => { err(''); try { await api('POST', '/api/auth/verify', { email: $('#e').value, code: $('#c').value }); location.reload(); } catch (e) { err(e.message); } });
+      return;
+    }
+    const c = m.customer;
+    root.innerHTML = `<h1>Hi${c.name ? ', ' + esc(c.name.split(' ')[0]) : ''}</h1>
+    ${m.buy_again.length ? `<h2 id="buyagain">Buy again</h2><div class="grid">${m.buy_again.map(miniCard).join('')}</div>` : '<h2 id="buyagain">Buy again</h2><p class="empty">Items you order will show up here for one-tap reordering.</p>'}
+    <h2>Your orders</h2><div class="panel">${m.orders.length ? m.orders.map((o) => `<div class="tot"><a href="/order/${o.id}?t=${o.public_token}">#${o.id} &middot; ${new Date(o.created_at).toLocaleDateString()}</a><span><span class="tag ${o.status === 'ready' ? 'ready' : ''}">${esc(o.status.replace(/_/g, ' '))}</span> ${money(o.total_cents)} <button class="rm" data-reorder="${o.id}">Reorder</button></span></div>`).join('') : '<p class="empty">No orders yet.</p>'}</div>
+    <h2>Preferences</h2><div class="panel" style="max-width:520px"><label class="f" for="pn">Name</label><input class="i" id="pn" value="${esc(c.name)}"><label class="f" for="pp">Mobile phone</label><input class="i" id="pp" type="tel" value="${esc(c.phone)}"><label class="opt"><input type="checkbox" id="psms" ${c.sms_ok ? 'checked' : ''}><span>Text me about my orders and cart reminders</span></label><label class="opt"><input type="checkbox" id="pem" ${c.email_ok ? 'checked' : ''}><span>Email me the weekly specials</span></label><label class="f" for="psub">Default when something is out of stock</label><select class="i" id="psub">${[['substitute', 'Substitute something similar'], ['call_sub', 'Call me; if no answer, substitute'], ['call_no_sub', 'Call me; if no answer, do not substitute'], ['never', 'Never substitute']].map(([v, t]) => `<option value="${v}" ${c.default_sub_pref === v ? 'selected' : ''}>${t}</option>`).join('')}</select><button class="btn" id="psave" style="margin-top:12px">Save</button> <button class="btn ghost" id="logout" style="margin-top:12px">Sign out</button></div>`;
+    syncCards();
+    $('#psave').addEventListener('click', async () => { await api('PUT', '/api/me', { name: $('#pn').value, phone: $('#pp').value, sms_ok: $('#psms').checked, email_ok: $('#pem').checked, default_sub_pref: $('#psub').value }); toast('Saved'); });
+    $('#logout').addEventListener('click', async () => { await api('POST', '/api/auth/logout', {}); location.reload(); });
+    $$('[data-reorder]').forEach((b) => b.addEventListener('click', async () => { const r = await api('POST', `/api/orders/${b.dataset.reorder}/reorder`, {}); items = r.items; saveCart(); location.href = '/cart'; }));
+  }
+
+  renderBadges(); syncCards();
+  if (page === 'cart') cartPage().catch((e) => { root.textContent = e.message; });
+  else if (page === 'checkout') checkoutPage().catch((e) => { root.textContent = e.message; });
+  else if (page === 'order') orderPage();
+  else if (page === 'account') accountPage().catch((e) => { root.textContent = e.message; });
+})();

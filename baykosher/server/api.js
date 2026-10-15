@@ -86,6 +86,15 @@ function createApi({ db, settings, core, back, auth, limiter, env, stripeWebhook
     res.json({ ...core.receipt(o), slot_start: o.slot_start, slot_end: o.slot_end, address: o.address && { street: o.address.street, city: o.address.city }, coop: o.coop_label ? `${o.coop_label} at ${o.coop_location}` : null, tracking_url: o.uber_tracking_url || null, sub_pref: o.sub_pref });
   });
 
+  // One-tap reorder: the items as originally ordered (extras the packer added are included too). Out-of-stock ones are dropped when the cart is priced.
+  r.post('/orders/:id/reorder', J, async (req, res) => {
+    const who = customerOf(req); if (!who) throw httpErr(401, 'Sign in to reorder');
+    const o = await db.one('SELECT id FROM orders WHERE id=$1 AND customer_id=$2', [num(req.params.id, 0), who.customer_id]);
+    if (!o) throw httpErr(404, 'Order not found');
+    const rows = await db.rows('SELECT product_id, qty FROM order_items WHERE order_id=$1 AND product_id IS NOT NULL ORDER BY id', [o.id]);
+    res.json({ items: rows.map((i) => ({ product_id: i.product_id, qty: Number(i.qty) })) });
+  });
+
   // ---- customer sign-in with an emailed code (no passwords) ----
   r.post('/auth/request', J, async (req, res) => {
     const email = String(req.body.email || '').trim().toLowerCase();
