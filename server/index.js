@@ -260,10 +260,8 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/api', api);
 
   // ---------- website (only the public files are served) ----------
-  const send = (file) => (req, res) => res.sendFile(path.join(ROOT, file));
-  app.get('/', send('index.html'));
-  app.get('/index.html', send('index.html'));
-  app.get('/styles.css', send('styles.css'));
+  // The app is the front door: any address pointed at this server (for example pushka.chabadoflamorinda.com) opens it.
+  app.get(['/', '/index.html'], (req, res) => res.redirect(302, '/pushka/'));
   app.use('/pushka', express.static(path.join(ROOT, 'pushka'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use((req, res) => res.status(404).type('text').send('Not found'));
   return app;

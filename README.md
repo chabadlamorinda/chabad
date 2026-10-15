@@ -16,6 +16,12 @@ Card numbers never touch this server; Stripe.js collects them and Stripe stores 
 Funds, preset amounts ($180 to $7,200), one-time or monthly, dedication or note, the optional 3.5% processing fee, Building Campaign levels, sponsorships, and Zelle / Venmo / DAF / check / wire / stock / crypto instructions all follow the website. Edit them at the top of `pushka/pushka.js` (`FUNDS`, `GIVE_AMTS`, `LEVELS`, `SPONSORS`).
 Set `ZELLE_EMAIL` there to show the Zelle address in the app (until then the app points donors to the donation page for it). Card gifts are capped at $10,000 each; larger gifts are directed to the office.
 
+## Using your own address (instead of onrender.com)
+chabadoflamorinda.com itself is hosted by Chabad.org, so leave it alone and put the app on a **subdomain**, for example `pushka.chabadoflamorinda.com`.
+1. Render → **chabad-lamorinda-app** → **Settings → Custom Domains → Add Custom Domain**, enter the subdomain.
+2. Render shows a **CNAME** target (`chabad-lamorinda-app.onrender.com`). Add a CNAME record for the subdomain pointing to it, wherever the domain's DNS is managed (ask Chabad.org if they manage it).
+3. Back in Render click **Verify**. HTTPS is issued automatically. The address then opens the app directly.
+
 ## Practice mode (test without real money)
 Open `/pushka/?practice=1` (or Settings → Practice mode). The app then uses a separate practice pushka and history, shows a banner, and **never charges anything**, even once Stripe is live. The banner has *Fill to goal* (watch it fill up), *Clear practice data*, and *Exit*. Your real data is untouched. Open `/pushka/?practice=0` to leave.
 

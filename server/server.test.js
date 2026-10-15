@@ -171,7 +171,9 @@ test('delete account: cancels monthly gifts and removes cards', async (t) => {
 
 test('website: serves public files only, with security headers', async (t) => {
   const c = await start(); t.after(c.close);
-  for (const p of ['/', '/styles.css', '/pushka/', '/pushka/pushka.js', '/pushka/segulos.js']) assert.equal((await fetch(c.base + p)).status, 200, p);
+  for (const p of ['/pushka/', '/pushka/pushka.js', '/pushka/segulos.js']) assert.equal((await fetch(c.base + p)).status, 200, p);
+  const root = await fetch(c.base + '/', { redirect: 'manual' });
+  assert.equal(root.status, 302); assert.equal(root.headers.get('location'), '/pushka/');
   for (const p of ['/package.json', '/server/index.js', '/.git/config', '/render.yaml', '/README.md', '/pushka/../package.json', '/node_modules/express/package.json']) assert.equal((await fetch(c.base + p)).status, 404, p);
   const r = await fetch(c.base + '/pushka/');
   assert.match(r.headers.get('content-security-policy'), /script-src 'self' https:\/\/js\.stripe\.com/);

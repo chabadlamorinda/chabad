@@ -495,7 +495,7 @@ PG.history = () => {
 PG.more = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("More")}</h1></div><div>
   ${rowLink("go", "maaser", I.calc, tt("Maaser Calculator"), tt("Calculate your tenth"))}${rowLink("go", "reminders", I.bell, tt("Reminders"), tt("Candle lighting and daily coin"))}
   ${rowLink("go", "settings", I.gear, tt("Settings"), tt("Goal, amounts, sounds, pushkas, language"))}${rowLink("go", "profile", I.profile, tt("Profile"), S.name || tt("Name, email, address"))}${rowLink("go", "support", I.help, tt("Support"), tt("We’re happy to help"))}</div>
-  <a class="btn btn-ghost" href="../" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)} ${t("Back to chabadoflamorinda.com")}</a></div></div>`;
+  <a class="btn btn-ghost" href="${SITE}" target="_blank" rel="noopener" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)} ${t("Back to chabadoflamorinda.com")}</a></div></div>`;
 
 // ----- segulos -----
 const segFeat = () => SEG_FEATURED.map((id) => SEGULOS.find((s) => s.id === id));
