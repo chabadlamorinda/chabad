@@ -38,12 +38,13 @@ function parseInvoiceCsv(text) {
 
 function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' }) {
   // ---- products ----
-  const FIELDS = ['upc', 'sku', 'name', 'name_he', 'description_he', 'est_weight_lb', 'featured', 'kosher_type', 'passover', 'holidays', 'supplier_sku', 'case_size', 'snap', 'brand', 'size', 'description', 'ingredients', 'nutrition', 'image_url', 'kosher_cert', 'tags', 'category_id', 'supplier_id', 'sold_by', 'price_cents', 'cost_cents', 'price_locked', 'taxable', 'stock', 'low_stock_at', 'track_stock', 'active'];
+  const FIELDS = ['upc', 'sku', 'name', 'name_he', 'description_he', 'est_weight_lb', 'featured', 'clover_id', 'kosher_type', 'passover', 'holidays', 'supplier_sku', 'case_size', 'snap', 'brand', 'size', 'description', 'ingredients', 'nutrition', 'image_url', 'kosher_cert', 'tags', 'category_id', 'supplier_id', 'sold_by', 'price_cents', 'cost_cents', 'price_locked', 'taxable', 'stock', 'low_stock_at', 'track_stock', 'active'];
   const clean = (k, v) => {
     if (k === 'upc') { v = String(v || '').replace(/\D/g, ''); return v || null; }
     if (k === 'nutrition') return JSON.stringify(v && typeof v === 'object' ? v : {});
     if (['category_id', 'supplier_id'].includes(k)) return v ? Number(v) : null;
     if (k === 'est_weight_lb' || k === 'case_size') return Number(v) > 0 ? Number(v) : null;
+    if (k === 'clover_id') return String(v || '').trim() || null;
     if (k === 'kosher_type') return ['meat', 'dairy', 'pareve'].includes(v) ? v : '';
     if (k === 'passover') return ['yes', 'no'].includes(v) ? v : 'unknown';
     if (k === 'holidays') { const ok = require('./holidays').slugs(); return [...new Set((Array.isArray(v) ? v : String(v || '').split(',')).map((x) => String(x).trim()).filter((x) => ok.includes(x)))].join(','); }
@@ -53,7 +54,7 @@ function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' })
     if (k === 'sold_by') return v === 'lb' ? 'lb' : 'each';
     return String(v ?? '').trim();
   };
-  async function saveProduct(id, input) {
+  async function saveProduct(id, input, opts = {}) {
     if (id === null && !String(input.name || '').trim()) throw httpErr(400, 'Name is required');
     // category default taxability for new products
     if (id === null && input.taxable === undefined && input.category_id) {
@@ -74,7 +75,9 @@ function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' })
         row = await db.one(`UPDATE products SET ${keys.map((k, i) => `${k}=$${i + 2}`).join(',')}, updated_at=now() WHERE id=$1 RETURNING *`, [id, ...vals]);
         if (!row) throw httpErr(404, 'Product not found');
       }
-      core.dirty(); return row;
+      core.dirty();
+      if (!opts.quiet && keys.some((k) => ['price_cents', 'active', 'name', 'upc', 'sold_by'].includes(k))) afterChange([row.id]);
+      return row;
     } catch (e) {
       if (e.code === '23505') throw httpErr(409, 'A product with that barcode already exists');
       throw e;
@@ -109,7 +112,39 @@ function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' })
   }
 
   // ---- invoices ----
-  async function importInvoice({ supplier_id, invoice_no = '', invoice_date, shipping_cents = 0, lines, commit = false, reprice = 'new_only', create_missing = false, notes = '' }) {
+  // ---- price proposals: a cost change suggests a new price; the owner approves (or it auto-approves under a small %) ----
+  let hook = null; // set by the app: pushes changed products to Clover
+  const afterChange = (ids) => { if (hook && ids.length) Promise.resolve(hook([...new Set(ids)])).catch((e) => console.error('push failed', e.message)); };
+  async function approveProposal(id, actor = '') {
+    const pr = await db.one(`UPDATE price_proposals SET status='approved', decided_by=$2, decided_at=now() WHERE id=$1 AND status='pending' RETURNING *`, [id, actor]);
+    if (!pr) throw httpErr(409, 'That price change was already decided');
+    await db.q('UPDATE products SET price_cents=$2, updated_at=now() WHERE id=$1', [pr.product_id, pr.new_price_cents]);
+    core.dirty(); afterChange([pr.product_id]);
+    return pr;
+  }
+  async function dismissProposal(id, actor = '') {
+    const pr = await db.one(`UPDATE price_proposals SET status='dismissed', decided_by=$2, decided_at=now() WHERE id=$1 AND status='pending' RETURNING *`, [id, actor]);
+    if (!pr) throw httpErr(409, 'That price change was already decided');
+    return pr;
+  }
+  async function createProposal({ product, newPriceCents, newCostCents, invoiceId = null, reason = '' }) {
+    if (!newPriceCents || newPriceCents === product.price_cents) return null;
+    const pr = await db.one(`INSERT INTO price_proposals (product_id, old_price_cents, new_price_cents, old_cost_cents, new_cost_cents, reason, invoice_id) VALUES ($1,$2,$3,$4,$5,$6,$7)
+      ON CONFLICT (product_id) WHERE status = 'pending' DO UPDATE SET new_price_cents=$3, new_cost_cents=$5, reason=$6, invoice_id=$7, created_at=now() RETURNING *`,
+      [product.id, product.price_cents, newPriceCents, product.cost_cents, newCostCents, reason, invoiceId]);
+    const auto = Number(((await settings.all()).pricing || {}).auto_approve_pct) || 0;
+    if (auto > 0 && product.price_cents > 0 && (Math.abs(newPriceCents - product.price_cents) / product.price_cents) * 100 <= auto) { await approveProposal(pr.id, 'auto'); return { ...pr, status: 'approved' }; }
+    return pr;
+  }
+  async function listProposals(status = 'pending') {
+    return db.rows(`SELECT pr.*, p.name, p.upc, p.image_url, p.price_locked, s.name AS supplier, i.invoice_no,
+        CASE WHEN pr.new_cost_cents > 0 THEN round(((pr.new_price_cents - pr.new_cost_cents) / pr.new_price_cents * 100)::numeric, 1) END AS new_margin_pct,
+        CASE WHEN pr.old_cost_cents > 0 THEN round(((pr.new_cost_cents - pr.old_cost_cents) / pr.old_cost_cents * 100)::numeric, 1) END AS cost_change_pct
+      FROM price_proposals pr JOIN products p ON p.id = pr.product_id LEFT JOIN suppliers s ON s.id = p.supplier_id LEFT JOIN invoices i ON i.id = pr.invoice_id WHERE pr.status = $1 ORDER BY pr.created_at DESC LIMIT 500`, [status]);
+  }
+
+  // ---- invoices: apply costs, stock and prices ----
+  async function importInvoice({ supplier_id, invoice_no = '', invoice_date, shipping_cents = 0, lines, commit = false, reprice = 'new_only', create_missing = false, notes = '', invoice_id = null, actor = '' }) {
     if (!Array.isArray(lines) || !lines.length) throw httpErr(400, 'No invoice lines');
     const sup = supplier_id ? await db.one('SELECT * FROM suppliers WHERE id=$1', [supplier_id]) : null;
     if (supplier_id && !sup) throw httpErr(404, 'Supplier not found');
@@ -117,44 +152,63 @@ function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' })
     const norm = lines.map((l) => {
       const pack = Number(l.pack) > 0 ? Number(l.pack) : 1;
       const unitCost = l.unit_cost_cents != null ? Number(l.unit_cost_cents) : dollarsToCents(l.unit_cost);
-      return { upc: String(l.upc || '').replace(/\D/g, ''), description: String(l.description || '').trim(), qty: Number(l.qty) * pack, unit_cost_cents: Math.round(unitCost / pack) };
+      return { product_id: l.product_id ? Number(l.product_id) : null, supplier_sku: String(l.supplier_sku || '').trim(), upc: String(l.upc || '').replace(/\D/g, ''), description: String(l.description || '').trim(), qty: Number(l.qty) * pack, unit_cost_cents: Math.round(unitCost / pack) };
     });
     if (norm.some((l) => !(l.qty > 0) || !Number.isFinite(l.unit_cost_cents))) throw httpErr(400, 'Every line needs a quantity and cost');
     const withLanded = pricing.allocateShipping(norm, Number(shipping_cents) || 0);
     const matched = [];
     for (const l of withLanded) {
-      let p = l.upc ? await db.one('SELECT * FROM products WHERE upc=$1', [l.upc]) : null;
+      // the person's choice in the review screen wins, then barcode, then the supplier's own item number, then exact name
+      let p = l.product_id ? await db.one('SELECT * FROM products WHERE id=$1', [l.product_id]) : null;
+      if (!p && l.upc) p = await db.one('SELECT * FROM products WHERE upc=$1', [l.upc]);
+      if (!p && l.supplier_sku && supplier_id) p = await db.one(`SELECT * FROM products WHERE supplier_id=$1 AND supplier_sku=$2 ORDER BY id LIMIT 1`, [supplier_id, l.supplier_sku]);
       if (!p && l.description) p = await db.one('SELECT * FROM products WHERE lower(name)=lower($1) ORDER BY id LIMIT 1', [l.description]);
       const out = { ...l, product_id: p ? p.id : null, product_name: p ? p.name : null, old_cost_cents: p ? Number(p.cost_cents) : null, old_price_cents: p ? p.price_cents : null };
+      out.change_pct = p && Number(p.cost_cents) > 0 ? Math.round(((l.landed_cost_cents - Number(p.cost_cents)) / Number(p.cost_cents)) * 1000) / 10 : null;
       if (p) {
-        const doIt = !p.price_locked && sup && (reprice === 'all' || (reprice === 'new_only' && p.price_cents === 0));
-        out.new_price_cents = doIt ? pricing.suggestPrice(l.landed_cost_cents, sup.markup_pct) : null;
-        if (reprice === 'all' && !p.price_locked && sup && out.new_price_cents === p.price_cents) out.new_price_cents = null;
+        const suggested = sup && !p.price_locked ? pricing.suggestPrice(l.landed_cost_cents, sup.markup_pct) : null;
+        const doIt = suggested && (reprice === 'all' || ((reprice === 'new_only' || reprice === 'propose') && p.price_cents === 0));
+        out.new_price_cents = doIt && suggested !== p.price_cents ? suggested : null;
+        out.proposed_price_cents = reprice === 'propose' && suggested && p.price_cents > 0 && suggested !== p.price_cents ? suggested : null;
       }
       matched.push(out);
     }
     const summary = { lines: matched, unmatched: matched.filter((m) => !m.product_id).length, total_cents: Math.round(matched.reduce((a, l) => a + l.qty * l.unit_cost_cents, 0)) + (Number(shipping_cents) || 0) };
     if (!commit) return { preview: true, ...summary };
-    return db.tx(async (tx) => {
-      const inv = await tx.one('INSERT INTO invoices (supplier_id, invoice_no, invoice_date, shipping_cents, notes) VALUES ($1,$2,COALESCE($3::date, CURRENT_DATE),$4,$5) RETURNING *', [supplier_id || null, invoice_no, invoice_date || null, Number(shipping_cents) || 0, notes]);
-      const created = [];
+    const result = await db.tx(async (tx) => {
+      const vals = [supplier_id || null, invoice_no, invoice_date || null, Number(shipping_cents) || 0, notes];
+      const inv = invoice_id
+        ? await tx.one(`UPDATE invoices SET supplier_id=$2, invoice_no=$3, invoice_date=COALESCE($4::date, CURRENT_DATE), shipping_cents=$5, notes=$6, status='applied', applied_at=now(), total_cents=$7 WHERE id=$1 AND status='review' RETURNING *`, [invoice_id, ...vals, summary.total_cents])
+        : await tx.one(`INSERT INTO invoices (supplier_id, invoice_no, invoice_date, shipping_cents, notes, status, applied_at, total_cents) VALUES ($1,$2,COALESCE($3::date, CURRENT_DATE),$4,$5,'applied',now(),$6) RETURNING *`, [...vals, summary.total_cents]);
+      if (!inv) throw httpErr(409, 'This invoice was already applied');
+      const created = [], changed = [];
       for (const m of matched) {
         let pid = m.product_id;
         if (!pid && create_missing) {
-          const np = await tx.one(`INSERT INTO products (upc, name, supplier_id, cost_cents, price_cents, stock, active) VALUES (NULLIF($1,''),$2,$3,$4,$5,0,FALSE) RETURNING id`,
-            [m.upc, m.description || 'Unnamed item ' + m.upc, supplier_id || null, m.landed_cost_cents, sup ? pricing.suggestPrice(m.landed_cost_cents, sup.markup_pct) : 0]);
+          const np = await tx.one(`INSERT INTO products (upc, name, supplier_id, supplier_sku, cost_cents, price_cents, stock, active) VALUES (NULLIF($1,''),$2,$3,$4,$5,$6,0,FALSE) RETURNING id`,
+            [m.upc, m.description || 'Unnamed item ' + m.upc, supplier_id || null, m.supplier_sku, m.landed_cost_cents, sup ? pricing.suggestPrice(m.landed_cost_cents, sup.markup_pct) : 0]);
           pid = np.id; created.push(pid); m.product_id = pid;
         }
         await tx.q('INSERT INTO invoice_lines (invoice_id, product_id, upc, description, qty, unit_cost_cents, landed_cost_cents) VALUES ($1,$2,$3,$4,$5,$6,$7)', [inv.id, pid, m.upc, m.description, m.qty, m.unit_cost_cents, m.landed_cost_cents]);
         if (pid) {
-          await tx.q('UPDATE products SET cost_cents=$2, stock = stock + $3, supplier_id = COALESCE(supplier_id, $4), updated_at=now() WHERE id=$1', [pid, m.landed_cost_cents, m.qty, supplier_id || null]);
+          await tx.q(`UPDATE products SET cost_cents=$2, stock = stock + $3, supplier_id = COALESCE(supplier_id, $4), supplier_sku = CASE WHEN $5 <> '' THEN $5 ELSE supplier_sku END, upc = COALESCE(upc, NULLIF($6,'')), updated_at=now() WHERE id=$1`, [pid, m.landed_cost_cents, m.qty, supplier_id || null, m.supplier_sku, m.upc]);
           await tx.q(`INSERT INTO stock_events (product_id, delta, reason) VALUES ($1,$2,'invoice')`, [pid, m.qty]);
-          if (m.new_price_cents) await tx.q('UPDATE products SET price_cents=$2 WHERE id=$1', [pid, m.new_price_cents]);
+          if (m.new_price_cents) { await tx.q('UPDATE products SET price_cents=$2 WHERE id=$1', [pid, m.new_price_cents]); changed.push(pid); }
         }
       }
       core.dirty();
-      return { preview: false, invoice_id: inv.id, created_product_ids: created, ...summary };
+      return { preview: false, invoice_id: inv.id, created_product_ids: created, changed, ...summary };
     });
+    // after the invoice is saved: suggest new prices where the cost moved
+    const proposals = [];
+    for (const m of matched) {
+      if (!m.proposed_price_cents || !m.product_id) continue;
+      const product = await db.one('SELECT * FROM products WHERE id=$1', [m.product_id]);
+      const pr = await createProposal({ product: { ...product, cost_cents: m.old_cost_cents ?? product.cost_cents }, newPriceCents: m.proposed_price_cents, newCostCents: m.landed_cost_cents, invoiceId: result.invoice_id, reason: m.change_pct != null ? `Cost ${m.change_pct > 0 ? 'up' : 'down'} ${Math.abs(m.change_pct)}% on invoice ${invoice_no}` : `New cost on invoice ${invoice_no}` });
+      if (pr) proposals.push(pr);
+    }
+    afterChange(result.changed);
+    return { ...result, proposals: proposals.length, proposals_auto_approved: proposals.filter((p) => p.status === 'approved').length };
   }
 
   // ---- sales ----
@@ -236,12 +290,14 @@ function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' })
       db.one(`SELECT count(*)::int n FROM products WHERE NOT active`),
       db.one(`SELECT COALESCE(sum(captured_cents),0)::int c, count(*)::int n FROM orders WHERE captured_cents IS NOT NULL AND created_at > now() - interval '30 days'`),
     ]);
+    const review = await db.one(`SELECT count(*)::int n FROM invoices WHERE status='review'`);
+    const props = await db.one(`SELECT count(*)::int n FROM price_proposals WHERE status='pending'`);
     const unpaid = await db.one(`SELECT count(*)::int n, COALESCE(sum(unpaid_cents),0)::int c FROM orders WHERE unpaid_cents > 0`);
     const carts = await db.one(`SELECT count(*)::int n FROM carts WHERE NOT completed AND jsonb_array_length(items) > 0 AND updated_at > now() - interval '3 days'`);
-    return { orders: Object.fromEntries(orders.map((o) => [o.status, o.n])), low_stock: low.n, out_of_stock: oos.n, missing_images: noImg.n, hidden_products: unreviewed.n, revenue_30d_cents: sales30.c, orders_30d: sales30.n, open_carts: carts.n, unpaid_orders: unpaid.n, unpaid_cents: unpaid.c };
+    return { orders: Object.fromEntries(orders.map((o) => [o.status, o.n])), low_stock: low.n, out_of_stock: oos.n, missing_images: noImg.n, hidden_products: unreviewed.n, revenue_30d_cents: sales30.c, orders_30d: sales30.n, open_carts: carts.n, invoices_to_review: review.n, price_changes_pending: props.n, unpaid_orders: unpaid.n, unpaid_cents: unpaid.c };
   }
 
-  return { parseInvoiceCsv, saveProduct, draftFromUpc, repriceSupplier, importInvoice, previewSale, saveSale, reorderReport, buildWeekly, sendCampaign, recipients, dashboard, slugify };
+  return { setPushHook: (fn) => { hook = fn; }, afterChange, approveProposal, dismissProposal, createProposal, listProposals, parseInvoiceCsv, saveProduct, draftFromUpc, repriceSupplier, importInvoice, previewSale, saveSale, reorderReport, buildWeekly, sendCampaign, recipients, dashboard, slugify };
 }
 
 module.exports = { createBackoffice, parseCsv, parseInvoiceCsv };

@@ -3,7 +3,7 @@
 // (challah / chalah / hallah, matzo / matzah / matza, humus / hummus), prefixes, and word order.
 'use strict';
 
-const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9֐-׿ ]+/g, ' ').replace(/\s+/g, ' ').trim();
+const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9֐-׿ ]+/g, ' ').replace(/(\d)([a-z])/g, '$1 $2').replace(/([a-z])(\d)/g, '$1 $2').replace(/\s+/g, ' ').trim(); // sizes written together or apart match: "16oz" = "16 oz"
 
 // Sounds-alike key: drop vowels after the first letter, fold common digraphs, collapse repeats.
 function skeleton(w) {

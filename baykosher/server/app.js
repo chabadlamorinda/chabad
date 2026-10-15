@@ -14,6 +14,9 @@ const { createUpcLookup } = require('./upc');
 const { createGeocoder } = require('./delivery');
 const { seedDepartments } = require('./seed');
 const { createMirror } = require('./mirror');
+const { createPurchasing } = require('./purchasing');
+const { createClaudeExtractor, csvExtractor } = require('./extractor');
+const { pollInbox, accountsFromEnv } = require('./inbox');
 const notifyRef = require('./notifyRef');
 const { t: tr, HE } = require('./i18n');
 
@@ -30,6 +33,17 @@ async function createApp(deps) {
   const back = createBackoffice({ db, settings, core, notifier, upc, publicUrl });
   const mirror = deps.mirror || createMirror(db);
   const jobs = createJobs({ db, settings, core, notifier, publicUrl, mirror });
+  // invoice reader: Claude (needs ANTHROPIC_API_KEY); spreadsheets/CSV need no AI
+  const baseReader = deps.extractor || (env.ANTHROPIC_API_KEY ? createClaudeExtractor({ apiKey: env.ANTHROPIC_API_KEY }) : { kind: 'none', async extract() { throw new Error('The invoice reader is not set up yet (add ANTHROPIC_API_KEY). You can still type the invoice in or upload a CSV.'); } });
+  const reader = { kind: baseReader.kind, model: baseReader.model, async extract(input) {
+    if (/csv|tab-separated/i.test(input.mediaType || '') || /\.(csv|tsv)$/i.test(input.filename || '')) { const t = (input.text || '').includes('\t') && !(input.text || '').includes(',') ? input.text.replace(/\t/g, ',') : input.text; return csvExtractor(back.parseInvoiceCsv)(t); }
+    return baseReader.extract(input);
+  } };
+  const purchasing = createPurchasing({ db, settings, core, back, extractor: reader, notifier, publicUrl });
+  const inboxAccounts = deps.inboxes || accountsFromEnv(env);
+  const pollInboxNow = () => pollInbox({ db, purchasing, settings, accounts: inboxAccounts, clientFactory: deps.imapFactory });
+  pollInboxNow.accounts = inboxAccounts;
+  if (deps.clover) { const { pushProducts } = require('./clover'); back.setPushHook((ids) => pushProducts({ db, clover: deps.clover, ids })); } // prices and new items reach the register on their own
   const secret = env.SESSION_SECRET || (env.NODE_ENV === 'production' ? null : 'dev-secret-change-me');
   if (!secret) throw new Error('SESSION_SECRET is required in production');
   const auth = createAuth(secret);
@@ -37,8 +51,10 @@ async function createApp(deps) {
   const { pages, sitemap, robots } = createPages({ core, settings, db, publicUrl });
 
   const syncCloverNow = async (direction) => {
-    const { syncClover } = require('./clover');
-    const r = await syncClover({ db, clover: deps.clover, direction: direction || env.CLOVER_DIRECTION || 'clover_wins' });
+    const { syncClover, syncSales } = require('./clover');
+    const stockSource = ((await settings.all()).stock || {}).source || 'computed';
+    const r = await syncClover({ db, clover: deps.clover, direction: direction || env.CLOVER_DIRECTION || 'site_wins', stockSource });
+    if (stockSource === 'computed') r.sales = await syncSales({ db, clover: deps.clover });
     core.dirty(); return r;
   };
 
@@ -82,7 +98,7 @@ async function createApp(deps) {
       res.json({ received: true });
     };
   }
-  app.use('/api', createApi({ db, settings, core, back, auth, limiter, env, mirror, stripeWebhook, clover: deps.clover, syncCloverNow }));
+  app.use('/api', createApi({ db, settings, core, back, auth, limiter, env, mirror, purchasing, pollInboxNow, stripeWebhook, clover: deps.clover, syncCloverNow }));
   if (deps.payments.kind === 'fake') { // lets you click through checkout without Stripe
     app.post('/api/dev/pay/:id', express.json(), async (req, res) => { const o = await db.one('SELECT payment_intent_id FROM orders WHERE id=$1', [req.params.id]); deps.payments.confirm(o.payment_intent_id); res.json({ ok: true }); });
   }
@@ -128,7 +144,7 @@ async function createApp(deps) {
     res.status(status).type('html').send(`<!doctype html><meta charset="utf-8"><body dir="${req.lang === 'he' ? 'rtl' : 'ltr'}" style="font-family:sans-serif;padding:2em"><h2>${esc(msg)}</h2><p><a href="${req.lang === 'he' ? '/he' : '/'}">${tr(req.lang, 'Back to Bay Kosher')}</a></p>`);
   });
 
-  return { app, db, core, back, mirror, jobs, settings, auth, syncClover: deps.clover ? syncCloverNow : null, close: async () => { jobs.stop(); await db.close(); } };
+  return { app, db, core, back, mirror, purchasing, pollInbox: pollInboxNow, jobs, settings, auth, syncClover: deps.clover ? syncCloverNow : null, close: async () => { jobs.stop(); await db.close(); } };
 }
 
 module.exports = { createApp };

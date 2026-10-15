@@ -24,6 +24,7 @@ const { createUber } = require('./delivery');
   if (env.DEMO === '1') { await db.migrate(); await require('./seed').seedDemo(db); console.warn('DEMO mode: demo products added, fake payments, nothing is charged.'); }
   const a = await createApp({ env, db, payments, notifier, clover, uber, stripeEvents });
   a.jobs.start();
+  if (a.pollInbox.accounts.length) setInterval(() => a.pollInbox().catch((e) => console.error('inbox', e.message)), 30 * 60000).unref(); // supplier invoices, every 30 minutes
   if (clover && env.CLOVER_SYNC_MINUTES !== '0') {
     const every = Math.max(5, Number(env.CLOVER_SYNC_MINUTES) || 15) * 60000;
     setInterval(() => a.syncClover && a.syncClover().catch((e) => console.error('clover sync', e.message)), every).unref();

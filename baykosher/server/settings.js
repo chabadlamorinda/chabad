@@ -13,8 +13,11 @@ const DEFAULTS = {
     { max_miles: 8, fee_cents: 999, free_over_cents: 25000 },
     { max_miles: 15, fee_cents: 1499, free_over_cents: 40000 },
   ],
-  tax_rate: 0.0925, // CA grocery food is exempt; only products marked taxable (household, beauty...) are taxed. Confirm the local rate with your accountant.
+  tax_rate: 0.0975, // the 'Default' rate in your Clover. Food is exempt; only items marked taxable (household, beauty...) are taxed. Confirm with your accountant.
   auth_cushion_pct: 10, // extra held on the card for weighed items / substitutions; only the final amount is charged
+  stock: { source: 'computed' }, // computed = what we received on invoices, minus online picks and Clover sales, plus hand counts; clover = trust Clover's counts
+  pricing: { auto_approve_pct: 0 }, // price changes smaller than this % apply by themselves; 0 = always ask
+  inbox: { enabled: true, senders: [] }, // suppliers' email addresses or domains; empty = any email that looks like an invoice
   holidays: { passover_toggle: 'auto' }, // auto = show the Passover-only switch in the weeks before Pesach; on = always; off = never
   abandoned: { first_after_minutes: 60, second_after_hours: 24, max_reminders: 2 },
 };

@@ -6,7 +6,7 @@ const SCHEMA = `
 CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value JSONB NOT NULL);
 CREATE TABLE IF NOT EXISTS suppliers (
   id SERIAL PRIMARY KEY, name TEXT NOT NULL UNIQUE, markup_pct NUMERIC NOT NULL DEFAULT 30,
-  contact TEXT NOT NULL DEFAULT '', notes TEXT NOT NULL DEFAULT ''
+  contact TEXT NOT NULL DEFAULT '', notes TEXT NOT NULL DEFAULT '', email TEXT NOT NULL DEFAULT '', phone TEXT NOT NULL DEFAULT ''
 );
 CREATE TABLE IF NOT EXISTS categories (
   id SERIAL PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL, parent_id INT REFERENCES categories(id),
@@ -38,7 +38,26 @@ CREATE TABLE IF NOT EXISTS sales (
 CREATE TABLE IF NOT EXISTS invoices (
   id SERIAL PRIMARY KEY, supplier_id INT REFERENCES suppliers(id), invoice_no TEXT NOT NULL DEFAULT '',
   invoice_date DATE NOT NULL DEFAULT CURRENT_DATE, shipping_cents INT NOT NULL DEFAULT 0, notes TEXT NOT NULL DEFAULT '',
-  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  status TEXT NOT NULL DEFAULT 'applied' CHECK (status IN ('review','applied','ignored')), kind TEXT NOT NULL DEFAULT 'goods' CHECK (kind IN ('goods','freight')),
+  source TEXT NOT NULL DEFAULT 'manual', source_ref TEXT, file_hash TEXT, supplier_name_raw TEXT NOT NULL DEFAULT '', draft JSONB, total_cents INT, error TEXT NOT NULL DEFAULT '', applied_at TIMESTAMPTZ
+);
+CREATE UNIQUE INDEX IF NOT EXISTS invoices_file_hash_idx ON invoices (file_hash) WHERE file_hash IS NOT NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS invoices_source_ref_idx ON invoices (source_ref) WHERE source_ref IS NOT NULL;
+CREATE TABLE IF NOT EXISTS documents (hash TEXT PRIMARY KEY, filename TEXT NOT NULL DEFAULT '', content_type TEXT NOT NULL, data BYTEA NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS price_proposals (
+  id SERIAL PRIMARY KEY, product_id INT NOT NULL REFERENCES products(id) ON DELETE CASCADE, old_price_cents INT NOT NULL, new_price_cents INT NOT NULL,
+  old_cost_cents NUMERIC NOT NULL DEFAULT 0, new_cost_cents NUMERIC NOT NULL DEFAULT 0, reason TEXT NOT NULL DEFAULT '', invoice_id INT REFERENCES invoices(id) ON DELETE SET NULL,
+  status TEXT NOT NULL DEFAULT 'pending' CHECK (status IN ('pending','approved','dismissed')), decided_by TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), decided_at TIMESTAMPTZ
+);
+CREATE UNIQUE INDEX IF NOT EXISTS price_proposals_pending_idx ON price_proposals (product_id) WHERE status = 'pending';
+CREATE TABLE IF NOT EXISTS purchase_orders (
+  id SERIAL PRIMARY KEY, supplier_id INT NOT NULL REFERENCES suppliers(id), status TEXT NOT NULL DEFAULT 'draft' CHECK (status IN ('draft','sent','received','cancelled')),
+  note TEXT NOT NULL DEFAULT '', sent_at TIMESTAMPTZ, created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS purchase_order_lines (
+  id SERIAL PRIMARY KEY, po_id INT NOT NULL REFERENCES purchase_orders(id) ON DELETE CASCADE, product_id INT NOT NULL REFERENCES products(id),
+  qty_units NUMERIC NOT NULL, case_size NUMERIC, qty_cases NUMERIC, est_cost_cents NUMERIC NOT NULL DEFAULT 0
 );
 CREATE TABLE IF NOT EXISTS invoice_lines (
   id SERIAL PRIMARY KEY, invoice_id INT NOT NULL REFERENCES invoices(id) ON DELETE CASCADE, product_id INT REFERENCES products(id),
@@ -111,6 +130,7 @@ CREATE TABLE IF NOT EXISTS stock_reports (
 );
 CREATE TABLE IF NOT EXISTS images (hash TEXT PRIMARY KEY, content_type TEXT NOT NULL, data BYTEA NOT NULL, source_url TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE INDEX IF NOT EXISTS products_passover_idx ON products (passover) WHERE passover = 'yes';
+CREATE TABLE IF NOT EXISTS inbox_seen (message_id TEXT PRIMARY KEY, account TEXT NOT NULL DEFAULT '', outcome TEXT NOT NULL DEFAULT '', seen_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS sync_log (id SERIAL PRIMARY KEY, kind TEXT NOT NULL, summary JSONB NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 `;
 

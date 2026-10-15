@@ -3,13 +3,16 @@
 // staff accounts, banners, product import, activity log, stock reports, pickup-point manifests.
 'use strict';
 const { parseCsv } = require('./backoffice');
+const { xlsxToCsv } = require('./spreadsheet');
+const { guessDepartment, CLOVER_CATEGORY } = require('./classify');
 const { localToDate, localParts, money } = require('./core');
 const pricing = require('./pricing');
 
 const csvCell = (v) => { const s = String(v ?? ''); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
 const toCsv = (rows) => rows.map((r) => r.map(csvCell).join(',')).join('\n');
 
-function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifier, env, mirror }) {
+function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifier, env, mirror, purchasing, pollInboxNow }) {
+  const JBIG = require('express').json({ limit: '25mb' }); // invoice scans can be large
   // ---- time period helper: today | yesterday | tomorrow | week | month | all | YYYY-MM-DD..YYYY-MM-DD (store local time) ----
   async function period(p) {
     const s = await settings.all(), tz = s.store.timezone, now = new Date();
@@ -196,17 +199,76 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
     res.json({ updated: n });
   });
 
+  // ---------- Invoices in: upload / email / review / apply ----------
+  A.post('/invoices/upload', JBIG, async (req, res) => {
+    const { filename = '', content_type = '', data_base64 = '', text = '' } = req.body || {};
+    if (!data_base64 && !text) throw httpErr(400, 'Choose a file or paste the invoice text');
+    const buffer = data_base64 ? Buffer.from(data_base64, 'base64') : null;
+    if (buffer && buffer.length > 20 * 1024 * 1024) throw httpErr(413, 'That file is too large (20 MB maximum)');
+    const type = content_type || (/\.pdf$/i.test(filename) ? 'application/pdf' : /\.png$/i.test(filename) ? 'image/png' : /\.jpe?g$/i.test(filename) ? 'image/jpeg' : /\.csv$/i.test(filename) ? 'text/csv' : 'text/plain');
+    res.json(await purchasing.ingest({ buffer: /^(application\/pdf|image\/)/.test(type) ? buffer : null, text: /^(application\/pdf|image\/)/.test(type) ? '' : text || buffer.toString('utf8'), mediaType: type, filename, source: 'upload', actor: who(req) }));
+  });
+  A.get('/invoices', async (req, res) => res.json(await purchasing.listInvoices(req.query.status ? String(req.query.status) : null)));
+  A.get('/invoices/:id', async (req, res) => {
+    const inv = await purchasing.getInvoice(num(req.params.id, 0));
+    res.json({ invoice: inv, preview: inv.status === 'review' ? await purchasing.previewInvoice(inv.id, String(req.query.reprice || 'propose')).catch(() => null) : null });
+  });
+  A.put('/invoices/:id', J, async (req, res) => res.json(await purchasing.updateDraft(num(req.params.id, 0), req.body || {})));
+  A.post('/invoices/:id/apply', J, async (req, res) => res.json(await purchasing.apply(num(req.params.id, 0), { reprice: ['propose', 'all', 'new_only', 'none'].includes(req.body.reprice) ? req.body.reprice : 'propose', actor: who(req) })));
+  A.post('/invoices/:id/ignore', J, async (req, res) => { await purchasing.ignore(num(req.params.id, 0)); res.json({ ok: true }); });
+  A.get('/invoices/:id/freight-candidates', async (req, res) => res.json(await purchasing.freightCandidates(num(req.params.id, 0))));
+  A.post('/invoices/:id/allocate', J, async (req, res) => res.json(await purchasing.allocateFreight(num(req.params.id, 0), num(req.body.target_id, 0), who(req))));
+  A.get('/documents/:hash', async (req, res) => {
+    const d = /^[a-f0-9]{64}$/.test(req.params.hash) ? await db.one('SELECT filename, content_type, data FROM documents WHERE hash=$1', [req.params.hash]) : null;
+    if (!d) throw httpErr(404, 'Not found');
+    res.set({ 'Content-Type': d.content_type, 'Content-Disposition': 'inline; filename="' + String(d.filename).replace(/[^\w.\- ]/g, '_') + '"', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; sandbox" }).send(d.data);
+  });
+  A.get('/inbox/status', async (req, res) => {
+    const cfg = (await settings.all()).inbox;
+    res.json({ accounts: pollInboxNow.accounts.length, enabled: cfg.enabled !== false, senders: cfg.senders, last: await db.one(`SELECT * FROM sync_log WHERE kind='inbox' ORDER BY id DESC LIMIT 1`), reader: purchasing.extractor.kind || 'none' });
+  });
+  A.post('/inbox/poll', J, async (req, res) => { if (!pollInboxNow.accounts.length) throw httpErr(501, 'No mailbox is connected yet. Set INBOXES in the server settings.'); res.json(await pollInboxNow()); });
+
+  // ---------- Price changes waiting for a decision ----------
+  A.get('/price-proposals', async (req, res) => res.json(await back.listProposals(['pending', 'approved', 'dismissed'].includes(req.query.status) ? req.query.status : 'pending')));
+  A.post('/price-proposals/approve-all', J, async (req, res) => {
+    const all = await back.listProposals('pending'); const only = Array.isArray(req.body.ids) ? new Set(req.body.ids.map(Number)) : null; let n = 0;
+    for (const p of all) if (!only || only.has(p.id)) { await back.approveProposal(p.id, who(req)); n++; }
+    res.json({ approved: n });
+  });
+  A.post('/price-proposals/:id/approve', J, async (req, res) => res.json(await back.approveProposal(num(req.params.id, 0), who(req))));
+  A.post('/price-proposals/:id/dismiss', J, async (req, res) => res.json(await back.dismissProposal(num(req.params.id, 0), who(req))));
+
+  // ---------- Purchase orders ----------
+  A.get('/purchase-orders', async (req, res) => res.json(await db.rows(`SELECT po.*, s.name AS supplier, (SELECT count(*)::int FROM purchase_order_lines WHERE po_id = po.id) AS lines FROM purchase_orders po JOIN suppliers s ON s.id = po.supplier_id ORDER BY po.id DESC LIMIT 100`)));
+  A.post('/purchase-orders/from-reorder', J, async (req, res) => res.json(await purchasing.poFromReorder(num(req.body.supplier_id, 0))));
+  A.get('/purchase-orders/:id', async (req, res) => { const po = await purchasing.getPo(num(req.params.id, 0)); res.json({ ...po, text: purchasing.poText(po) }); });
+  A.post('/purchase-orders/:id/send', J, async (req, res) => res.json(await purchasing.sendPo(num(req.params.id, 0))));
+  A.post('/purchase-orders/:id/status', J, async (req, res) => { if (!['received', 'cancelled'].includes(req.body.status)) throw httpErr(400, 'Bad status'); await db.q('UPDATE purchase_orders SET status=$2 WHERE id=$1', [num(req.params.id, 0), req.body.status]); res.json({ ok: true }); });
+
+  A.post('/clover/push-all', J, async (req, res) => { const ids = (await db.rows('SELECT id FROM products WHERE active AND price_cents > 0')).map((r) => r.id); back.afterChange(ids); res.json({ queued: ids.length }); });
+
+  // ---------- Hand count ----------
+  A.post('/products/:id/count', J, async (req, res) => {
+    const q = Number(req.body.qty); if (!(q >= 0)) throw httpErr(400, 'Enter the number counted');
+    const p = await db.one('SELECT stock FROM products WHERE id=$1', [num(req.params.id, 0)]); if (!p) throw httpErr(404, 'Not found');
+    await db.q('UPDATE products SET stock=$2, updated_at=now() WHERE id=$1', [num(req.params.id, 0), q]);
+    await db.q(`INSERT INTO stock_events (product_id, delta, reason) VALUES ($1,$2,'count')`, [num(req.params.id, 0), q - Number(p.stock)]);
+    core.dirty(); res.json({ ok: true, was: Number(p.stock), now: q });
+  });
+
   // ---------- Photos: copy to our own storage ----------
   A.get('/images/status', async (req, res) => res.json({ external: await mirror.pending() }));
   A.post('/images/mirror', J, async (req, res) => { const r = await mirror.run(Math.min(num(req.body.limit, 25), 100)); core.dirty(); res.json(r); });
 
   // ---------- Product import (CSV / pasted from Excel) ----------
   const HEAD = { upc: ['upc', 'barcode', 'code'], sku: ['sku'], name: ['name', 'item', 'description', 'product'], name_he: ['name_he', 'hebrew name', 'hebrew', 'שם'], brand: ['brand'], size: ['size'], price: ['price', 'retail', 'sell'], cost: ['cost', 'unit cost'],
-    category: ['category', 'department', 'dept'], sold_by: ['sold by', 'sold_by', 'unit', 'per'], est_weight: ['est weight', 'est_weight', 'avg weight', 'pack weight', 'weight'], stock: ['stock', 'qty', 'quantity', 'on hand'], description: ['description_long', 'details', 'about'], ingredients: ['ingredients'], image_url: ['image', 'image_url', 'photo', 'picture'], active: ['active', 'visible'],
+    clover_id: ['clover id'], code: ['product code'], price_type: ['price type'], price_unit: ['price unit'], hidden: ['hidden?', 'hidden'], default_tax: ['default tax rates?'],
+    category: ['category', 'categories', 'department', 'dept'], sold_by: ['sold by', 'sold_by', 'unit', 'per'], est_weight: ['est weight', 'est_weight', 'avg weight', 'pack weight', 'weight'], stock: ['stock', 'qty', 'quantity', 'on hand'], description: ['description_long', 'details', 'about'], ingredients: ['ingredients'], image_url: ['image', 'image_url', 'photo', 'picture'], active: ['active', 'visible'],
     passover: ['kosher_passover', 'passover', 'kfp', 'kosher for passover', 'kosher-for-passover'], kosher_type: ['kosher type', 'kosher_type', 'meat/dairy', 'dairy/meat'], supplier: ['supplier', 'vendor', 'supplier_name'], supplier_sku: ['supplier_sku', 'vendor sku', 'vendor_sku'],
     case_size: ['case_size', 'case size', 'pack size', 'units per case'], snap: ['snap', 'ebt'], taxable: ['taxable', 'tax'], holidays: ['holiday', 'holidays'] };
   const yes = (v) => /^(1|y|yes|true|x|✓)$/i.test(String(v).trim());
-  async function parseProducts(text, createCats) {
+  async function parseProducts(text, createCats, opts = {}) {
     let t = String(text || ''); if (t.includes('\t') && !t.includes(',')) t = t.replace(/\t/g, ',');
     const [head, ...body] = parseCsv(t);
     if (!head) throw httpErr(400, 'No data');
@@ -217,6 +279,8 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
     const catBy = (v) => { const x = String(v || '').trim().toLowerCase(); return cats.find((c) => c.name.toLowerCase() === x || c.slug === x || (c.name_he && c.name_he === String(v).trim())); };
     const get = (r, k) => (col[k] === undefined ? '' : String(r[col[k]] ?? '').trim());
     const money = (v) => (v === '' ? null : Math.round(Number(String(v).replace(/[$,]/g, '')) * 100));
+    const isClover = col.clover_id !== undefined;
+    const seenUpc = new Set();
     const out = [];
     body.forEach((r, i) => {
       const row = { line: i + 2, errors: [] };
@@ -225,32 +289,50 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
       const price = money(get(r, 'price')), cost = money(get(r, 'cost'));
       if (get(r, 'price') !== '' && !(price >= 0)) row.errors.push('bad price');
       row.price_cents = price; row.cost_cents = cost;
-      const catv = get(r, 'category'); const cat = catv ? catBy(catv) : null; if (catv && !cat && !createCats) row.errors.push(`unknown department "${catv}"`);
-      row.category_id = cat ? cat.id : null; row.category = cat ? cat.name : catv; row.new_category = catv && !cat && createCats ? catv : '';
+      if (isClover) { // Clover's own export: codes, price types, hidden flag, tax flag
+        row.clover_id = get(r, 'clover_id');
+        const code = get(r, 'code'), digits = code.replace(/\D/g, '');
+        if (!row.upc && /^\d{8,14}$/.test(digits) && digits === code) row.upc = digits;
+        if (!row.sku && code) row.sku = code.slice(0, 40);
+        const pt = get(r, 'price_type').toLowerCase();
+        row.sold_by = pt === 'per unit' && /lb|pound/i.test(get(r, 'price_unit')) ? 'lb' : 'each';
+        if (pt === 'variable') { row.price_cents = null; row.note = 'open price (needs a price)'; }
+        if (/^yes$/i.test(get(r, 'hidden')) || row.note) row.hidden = true;
+        if (col.default_tax !== undefined) row.taxable = yes(get(r, 'default_tax'));
+        if (row.upc) { if (seenUpc.has(row.upc)) row.errors.push('same barcode appears earlier in the file'); seenUpc.add(row.upc); }
+      }
+      let catv = get(r, 'category').split(',')[0].trim(); let cat = catv ? catBy(catv) : null;
+      if (isClover) { // map Clover's hand-made categories, then fall back to a name-based guess (department only)
+        const mapped = CLOVER_CATEGORY[catv.toLowerCase()];
+        if (mapped) { cat = catBy(mapped.dept); if (mapped.kosher) row.kosher_type = mapped.kosher; }
+        else if (!cat) { const g = guessDepartment(row.name, { perUnitLb: row.sold_by === 'lb' }); if (g) { cat = catBy(g); row.guessed_department = true; } catv = cat ? cat.name : ''; }
+      } else if (catv && !cat && !createCats) row.errors.push(`unknown department "${catv}"`);
+      row.category_id = cat ? cat.id : null; row.category = cat ? cat.name : catv; row.new_category = !isClover && catv && !cat && createCats ? catv : '';
       row.supplier = get(r, 'supplier'); row.supplier_sku = get(r, 'supplier_sku'); row.case_size = Number(get(r, 'case_size')) > 0 ? Number(get(r, 'case_size')) : null;
       if (col.passover !== undefined) { const pv = get(r, 'passover'); row.passover = pv === '' ? undefined : yes(pv) ? 'yes' : 'no'; }
-      const kt = get(r, 'kosher_type').toLowerCase(); row.kosher_type = ['meat', 'dairy', 'pareve'].includes(kt) ? kt : '';
+      const kt = get(r, 'kosher_type').toLowerCase(); row.kosher_type = row.kosher_type || (['meat', 'dairy', 'pareve'].includes(kt) ? kt : '');
       if (col.snap !== undefined) row.snap = yes(get(r, 'snap')); if (col.taxable !== undefined) row.taxable = yes(get(r, 'taxable')); row.holidays = get(r, 'holidays');
       row.brand = get(r, 'brand'); row.size = get(r, 'size'); row.name_he = get(r, 'name_he'); row.description = get(r, 'description'); row.ingredients = get(r, 'ingredients'); row.image_url = get(r, 'image_url');
-      const per = get(r, 'sold_by').toLowerCase(); row.sold_by = /lb|pound/.test(per) ? 'lb' : 'each';
+      if (!isClover) { const per = get(r, 'sold_by').toLowerCase(); row.sold_by = /lb|pound/.test(per) ? 'lb' : 'each'; }
       const w = Number(get(r, 'est_weight')); row.est_weight_lb = w > 0 ? w : null;
-      row.stock = get(r, 'stock') === '' ? null : Number(get(r, 'stock')); if (row.stock != null && !(row.stock >= 0)) row.errors.push('bad stock');
-      const act = get(r, 'active').toLowerCase(); row.active = act === '' ? true : !['0', 'no', 'false', 'n'].includes(act);
+      row.stock = get(r, 'stock') === '' || opts.useStock === false ? null : Number(get(r, 'stock')); if (row.stock != null && !(row.stock >= 0)) { if (isClover) row.stock = 0; else row.errors.push('bad stock'); }
+      const act = get(r, 'active').toLowerCase(); row.active = row.hidden ? false : act === '' ? true : !['0', 'no', 'false', 'n'].includes(act);
       out.push(row);
     });
     return out;
   }
-  A.post('/products/import', J, async (req, res) => {
-    const rows = await parseProducts(req.body.text, !!req.body.create_departments);
+  A.post('/products/import', JBIG, async (req, res) => {
+    const text = req.body.xlsx_base64 ? await xlsxToCsv(Buffer.from(req.body.xlsx_base64, 'base64')) : req.body.text;
+    const rows = await parseProducts(text, !!req.body.create_departments, { useStock: req.body.use_stock !== false });
     const sup = req.body.supplier_id ? await db.one('SELECT * FROM suppliers WHERE id=$1', [req.body.supplier_id]) : null;
     for (const r of rows) {
       const ex = (r.upc && (await db.one('SELECT id FROM products WHERE upc=$1', [r.upc]))) || (r.sku && (await db.one(`SELECT id FROM products WHERE sku=$1 AND sku <> ''`, [r.sku]))) || (await db.one('SELECT id FROM products WHERE lower(name)=lower($1) ORDER BY id LIMIT 1', [r.name]));
       r.action = r.errors.length ? 'skip' : ex ? 'update' : 'create'; r.id = ex ? ex.id : null;
       if (!r.price_cents && r.cost_cents && sup && !ex) r.price_cents = pricing.suggestPrice(r.cost_cents, sup.markup_pct);
     }
-    const summary = { new_departments: [...new Set(rows.map((r) => r.new_category).filter(Boolean))], create: rows.filter((r) => r.action === 'create').length, update: rows.filter((r) => r.action === 'update').length, skip: rows.filter((r) => r.action === 'skip').length };
+    const summary = { new_departments: [...new Set(rows.map((r) => r.new_category).filter(Boolean))], create: rows.filter((r) => r.action === 'create').length, update: rows.filter((r) => r.action === 'update').length, skip: rows.filter((r) => r.action === 'skip').length, guessed_departments: rows.filter((r) => r.guessed_department && r.action !== 'skip').length, no_department: rows.filter((r) => !r.category_id && r.action !== 'skip').length, no_price: rows.filter((r) => !r.price_cents && r.action !== 'skip').length, with_stock: rows.filter((r) => r.stock > 0 && r.action !== 'skip').length };
     if (!req.body.commit) return res.json({ preview: true, ...summary, rows: rows.slice(0, 300) });
-    let done = 0; const supCache = new Map(), catCache = new Map();
+    let done = 0; const failed = []; const supCache = new Map(), catCache = new Map();
     const supplierId = async (name) => { if (!name) return sup ? sup.id : undefined; const k = name.toLowerCase(); if (!supCache.has(k)) supCache.set(k, (await db.one(`INSERT INTO suppliers (name, markup_pct) VALUES ($1, 30) ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name RETURNING id`, [name])).id); return supCache.get(k); };
     const categoryId = async (name) => { const k = name.toLowerCase(); if (!catCache.has(k)) catCache.set(k, (await db.one(`INSERT INTO categories (name, slug, sort) VALUES ($1,$2,100) ON CONFLICT (slug) DO UPDATE SET name = categories.name RETURNING id`, [name, require('./core').slugify(name)])).id); return catCache.get(k); };
     for (const r of rows) {
@@ -259,10 +341,11 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
       r.supplier_id = await supplierId(r.supplier);
       const data = { name: r.name, upc: r.upc || undefined, sku: r.sku || undefined, brand: r.brand || undefined, size: r.size || undefined, name_he: r.name_he || undefined, description: r.description || undefined, ingredients: r.ingredients || undefined, image_url: r.image_url || undefined,
         category_id: r.category_id || undefined, sold_by: r.sold_by, est_weight_lb: r.est_weight_lb || undefined, price_cents: r.price_cents ?? undefined, cost_cents: r.cost_cents ?? undefined, stock: r.stock ?? undefined, supplier_id: r.supplier_id, active: r.active, supplier_sku: r.supplier_sku || undefined, case_size: r.case_size || undefined, passover: r.passover, kosher_type: r.kosher_type || undefined, snap: r.snap, taxable: r.taxable, holidays: r.holidays || undefined };
-      await back.saveProduct(r.id, Object.fromEntries(Object.entries(data).filter(([, v]) => v !== undefined)));
-      done++;
+      if (r.clover_id) data.clover_id = r.clover_id;
+      try { await back.saveProduct(r.id, Object.fromEntries(Object.entries(data).filter(([, v]) => v !== undefined)), { quiet: true }); done++; } // quiet: importing from Clover must not send 3,000 updates back to Clover
+      catch (e) { failed.push({ line: r.line, name: r.name, error: e.message }); }
     }
-    res.json({ preview: false, ...summary, saved: done });
+    res.json({ preview: false, ...summary, saved: done, failed: failed.slice(0, 50), failed_count: failed.length });
   });
 }
 

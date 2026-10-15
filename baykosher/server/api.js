@@ -4,7 +4,7 @@ const express = require('express');
 const { httpErr } = require('./core');
 const { t: tr } = require('./i18n');
 
-function createApi({ db, settings, core, back, auth, limiter, env, mirror, stripeWebhook, clover, syncCloverNow }) {
+function createApi({ db, settings, core, back, auth, limiter, env, mirror, purchasing, pollInboxNow, stripeWebhook, clover, syncCloverNow }) {
   const r = express.Router();
   const J = express.json({ limit: '2mb' });
   const ip = (req) => req.ip || req.socket.remoteAddress || 'x';
@@ -272,8 +272,8 @@ function createApi({ db, settings, core, back, auth, limiter, env, mirror, strip
   A.get('/upc/:code', async (req, res) => { if (!limiter.geo('upc' + ip(req))) throw httpErr(429, 'Slow down'); res.json(await back.draftFromUpc(req.params.code)); });
 
   A.get('/suppliers', async (req, res) => res.json(await db.rows('SELECT * FROM suppliers ORDER BY name')));
-  A.post('/suppliers', J, async (req, res) => res.json(await db.one('INSERT INTO suppliers (name, markup_pct, contact, notes) VALUES ($1,$2,$3,$4) RETURNING *', [req.body.name, num(req.body.markup_pct, 30), req.body.contact || '', req.body.notes || ''])));
-  A.put('/suppliers/:id', J, async (req, res) => res.json(await db.one('UPDATE suppliers SET name=$2, markup_pct=$3, contact=$4, notes=$5 WHERE id=$1 RETURNING *', [num(req.params.id, 0), req.body.name, num(req.body.markup_pct, 30), req.body.contact || '', req.body.notes || ''])));
+  A.post('/suppliers', J, async (req, res) => res.json(await db.one('INSERT INTO suppliers (name, markup_pct, contact, notes, email, phone) VALUES ($1,$2,$3,$4,$5,$6) RETURNING *', [req.body.name, num(req.body.markup_pct, 30), req.body.contact || '', req.body.notes || '', String(req.body.email || '').trim().toLowerCase(), req.body.phone || ''])));
+  A.put('/suppliers/:id', J, async (req, res) => res.json(await db.one('UPDATE suppliers SET name=$2, markup_pct=$3, contact=$4, notes=$5, email=$6, phone=$7 WHERE id=$1 RETURNING *', [num(req.params.id, 0), req.body.name, num(req.body.markup_pct, 30), req.body.contact || '', req.body.notes || '', String(req.body.email || '').trim().toLowerCase(), req.body.phone || ''])));
   A.post('/suppliers/:id/reprice', J, async (req, res) => res.json(await back.repriceSupplier(num(req.params.id, 0), { apply: !!req.body.apply, only: req.body.include_locked ? 'all' : 'unlocked' })));
 
   A.get('/categories', async (req, res) => res.json(await core.categories('en')));
@@ -282,7 +282,6 @@ function createApi({ db, settings, core, back, auth, limiter, env, mirror, strip
 
   A.post('/invoices/parse-csv', J, async (req, res) => res.json({ lines: back.parseInvoiceCsv(String(req.body.text || '')) }));
   A.post('/invoices', J, async (req, res) => res.json(await back.importInvoice(req.body)));
-  A.get('/invoices', async (req, res) => res.json(await db.rows(`SELECT i.*, s.name AS supplier, (SELECT count(*)::int FROM invoice_lines WHERE invoice_id=i.id) lines FROM invoices i LEFT JOIN suppliers s ON s.id=i.supplier_id ORDER BY i.id DESC LIMIT 100`)));
 
   A.get('/sales', async (req, res) => res.json(await db.rows('SELECT * FROM sales ORDER BY active DESC, id DESC')));
   A.post('/sales', J, async (req, res) => { const s = await back.saveSale(null, req.body); core.dirty(); res.json(s); });
@@ -308,7 +307,7 @@ function createApi({ db, settings, core, back, auth, limiter, env, mirror, strip
   A.get('/carts/abandoned', async (req, res) => res.json(await db.rows(`SELECT id, email, phone, jsonb_array_length(items) AS item_count, updated_at, reminders_sent FROM carts WHERE NOT completed AND jsonb_array_length(items) > 0 ORDER BY updated_at DESC LIMIT 100`)));
   A.get('/messages', async (req, res) => res.json(await db.rows('SELECT id, channel, recipient, subject, ok, error, created_at FROM notify_log ORDER BY id DESC LIMIT 100')));
 
-  require('./admin-extra').mount(A, { db, core, settings, back, auth, J, num, httpErr, who, mirror, notifier: () => require('./notifyRef').get(), env });
+  require('./admin-extra').mount(A, { db, core, settings, back, auth, J, num, httpErr, who, mirror, purchasing, pollInboxNow, notifier: () => require('./notifyRef').get(), env });
   return r;
 }
 

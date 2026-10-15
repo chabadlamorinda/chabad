@@ -6,7 +6,7 @@ A replacement for the MyKosherGrocer site. Node + Postgres + Stripe, same stack 
 ```
 cd baykosher && npm install && npm run dev
 ```
-Opens a throwaway database with demo products: store at `/` (Hebrew at `/he`), back office `/admin` (password `demo-password-123`), packer screen `/pick` (PIN `1234`). `npm test` runs 49 tests against a real Postgres.
+Opens a throwaway database with demo products: store at `/` (Hebrew at `/he`), back office `/admin` (password `demo-password-123`), packer screen `/pick` (PIN `1234`). `npm test` runs 62 tests against a real Postgres.
 
 ## What is built
 | Area | Status |
@@ -56,8 +56,20 @@ See `ROADMAP.md` for what to build next.
 * The switch appears in the weeks before Pesach (Settings > Holidays: automatic / always / never) and filters every page, search and suggestion.
 * Holiday pages (`/holiday/pesach`, Rosh Hashana, Sukkot, Chanukah, Tu BiShvat, Purim, Shavuot) list items tagged for that holiday (Pesach also lists Passover-certified items). Dates come from the Hebrew calendar automatically. A holiday gets a link in the top menu during its lead-up (Pesach 45 days).
 
-## Your inventory app (baykosher-inventory.onrender.com)
-That app already reads supplier invoices, tracks costs and freight, flags Passover and syncs Clover. The new site should take its products from it rather than redo that work: in the inventory app download **Products CSV** and use **Back office > Products > Import from spreadsheet** here (columns recognized: name, upc, sku, category, brand, supplier, supplier_sku, case_size, cost, price, stock, kosher_passover, snap, taxable, active, est weight, sold by). Tick "Create departments that do not exist yet" the first time. Running the import again updates items by barcode instead of duplicating.
+## Everything in one system (the separate inventory app is no longer needed)
+Invoices, costs, prices, stock, the website and Clover all live here and feed each other:
+
+1. **Invoices come in** by upload (Back office > Invoices) or automatically from Gmail (see below). Claude reads PDFs/photos; CSVs are read directly. Each lands in a **review** queue with lines matched to products (barcode, then supplier item #, then exact name, then a suggested fuzzy match, else "new item").
+2. **You review and apply.** Applying adds stock, records the invoice cost, and creates new items (hidden until you publish). **Freight / pallet bills** are allocated across the goods invoices they belong to, so each item's cost is the *landed* cost.
+3. **Price proposals.** When a cost changes, a proposal (supplier markup %, charm price ending in 9) appears under **Price changes**. Approve it (or set Settings > auto-approve up to X%) and the new price goes to the website and to Clover.
+4. **Reorder** suggestions become **purchase orders** you can email to the supplier.
+5. **Stock** is computed from invoices + counts - online picks - Clover sales (or take Clover's numbers: Settings > stock source).
+
+Environment variables for this: `ANTHROPIC_API_KEY` (invoice reader; `INVOICE_MODEL` optional), `INBOXES` (JSON, e.g. `[{"user":"baykosher@gmail.com","pass":"<gmail app password>"}]`; read-only), `MIRROR_IMAGES`. Settings > Invoices lists which sender addresses to trust.
+
+**Loading your current inventory:** Back office > Products > Import from spreadsheet accepts the Clover inventory `.xlsx` export directly. Tick "create departments" and "use quantities as starting stock". Tested on a 3,346-item export: about 3,286 import in seconds; duplicates by barcode are skipped; departments are guessed from names (items without a guess are listed for you); costs start empty and fill from invoices; nothing is pushed back to Clover during import. Re-importing updates by barcode.
+
+**Not carried over from the old inventory app:** expiring lots, claims, preorders, count plans, weekly brief, recipes/circular. Say which you want. Not tested against live Clover, Stripe, Uber, Resend, Twilio, Gmail or the Claude invoice reader yet.
 
 ## Photos
 Product photos are copied into our own database and served from `/img/...` (Back office > Products > "Copy photos to our storage", and automatically 10 at a time every 10 minutes). Only https images, never internal addresses, no SVG, 6 MB max.
