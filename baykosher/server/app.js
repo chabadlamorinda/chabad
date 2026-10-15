@@ -60,6 +60,7 @@ async function createApp(deps) {
 
   const app = express();
   app.set('trust proxy', 1);
+  if (env.NOINDEX === '1') app.use((req, res, next) => { res.set('X-Robots-Tag', 'noindex, nofollow'); next(); }); // test site: keep it out of Google until the real launch
   app.disable('x-powered-by');
   // Language: pages under /he/ are Hebrew (right-to-left); everything else is English. The API follows the X-Lang header.
   const PAGE = /^\/(?:$|c\/|p\/|sale$|search$|store$|cart$|checkout$|account$|order\/|holiday\/|areas|faq$)/;
@@ -110,7 +111,7 @@ async function createApp(deps) {
   app.get('/pick', send('pick.html'));
   app.get('/manifest.webmanifest', (req, res) => res.json({ name: 'Bay Kosher', short_name: 'Bay Kosher', start_url: '/', display: 'standalone', background_color: '#ffffff', theme_color: '#00209f', icons: [{ src: '/static/icon.svg', sizes: 'any', type: 'image/svg+xml' }] }));
   app.get('/sitemap.xml', async (req, res) => res.type('application/xml').send(await sitemap()));
-  app.get('/robots.txt', (req, res) => res.type('text/plain').send(robots()));
+  app.get('/robots.txt', (req, res) => res.type('text/plain').send(env.NOINDEX === '1' ? 'User-agent: *\nDisallow: /\n' : robots()));
   const html = (fn) => async (req, res) => { res.set({ 'Cache-Control': 'public, max-age=60', Vary: 'Cookie, Accept-Encoding' }).type('html').send(await fn(req)); };
   app.get('/', html(pages.home));
   app.get('/c/:slug', html(pages.category));

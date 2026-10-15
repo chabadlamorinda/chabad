@@ -4,13 +4,19 @@ You get **two copies** of the store on one small server:
 
 | | Live store | Test copy ("dev system") |
 |---|---|---|
-| Address | `baykosher.com` | `staging.baykosher.com` (password-protected, hidden from Google) |
+| Address | test address now, `baykosher.com` at launch | `staging.<your domain>` (password-protected, hidden from Google) |
 | Payments | real Stripe | fake, nothing is charged |
 | Customer messages | real | none can be sent |
 | Clover, Uber, Gmail | connected | **not** connected |
 | Data | real | a copy of the live data with customer details scrubbed (`refresh-staging.sh`) |
 
 Use the test copy to try new versions, bulk imports, price changes and invoice reading before doing it for real.
+
+## Testing first, launching later
+Nothing here touches `baykosher.com` or MyKosherGrocer. Run the new store on a **test address** until you are happy, then switch the name:
+* Test address: any subdomain you control (e.g. `shop-test.chabadoflamorinda.com`, one DNS A record) or, with no domain at all, `<ip-with-dashes>.sslip.io` (e.g. `129-146-1-2.sslip.io`), which Caddy can get a real HTTPS certificate for.
+* In `/etc/baykosher/prod.env` keep `NOINDEX=1` and set `PUBLIC_URL` to the test address. NOINDEX tells Google to ignore the test site (otherwise it could be indexed as a duplicate of baykosher.com and hurt the real ranking). Use Stripe **test** keys and Clover **sandbox** during this phase.
+* Launch day: point `baykosher.com` DNS at the server, swap the name in `/etc/caddy/Caddyfile`, set `PUBLIC_URL=https://baykosher.com`, delete the `NOINDEX` line, switch to live Stripe/Clover keys, `systemctl restart baykosher@prod && systemctl reload caddy`. Add 301 redirects for the old product URLs the same day. Your data, orders and settings carry over untouched because they are in the same database.
 
 ## 1. Create the server (about 20 minutes, one time)
 1. Oracle Cloud > Compute > Create instance. Image **Ubuntu 24.04**, shape **VM.Standard.A1.Flex** (Always Free: choose 2 OCPU and 12 GB, leaving room to spare). If it says "out of capacity", try again later or another availability domain.

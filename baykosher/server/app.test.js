@@ -328,3 +328,13 @@ test('HTML is escaped (a malicious product name cannot inject script)', async ()
   const page = (await api('GET', `/p/${p.id}-x`)).text; assert.ok(!page.includes('<img src=x onerror'), page.slice(0,300)); assert.ok(page.includes('&lt;img src=x'));
   for (const m of page.matchAll(/<script type="application\/ld\+json">([^]*?)<\/script>/g)) { assert.ok(!m[1].includes('<')); JSON.parse(m[1]); }
 });
+
+test('NOINDEX=1 keeps a test site out of Google', async () => {
+  const T = await createApp({ env: { ...env, NOINDEX: '1', PUBLIC_URL: 'https://test.example' }, db: createDb(pg.url), payments, notifier: { live: {}, async email() { return true; }, async sms() { return true; } }, uber });
+  const srv = http.createServer(T.app); await new Promise((r) => srv.listen(0, r));
+  const b = 'http://127.0.0.1:' + srv.address().port;
+  try {
+    assert.match(await (await fetch(b + '/robots.txt')).text(), /Disallow: \/\n/);
+    assert.equal((await fetch(b + '/')).headers.get('x-robots-tag'), 'noindex, nofollow');
+  } finally { srv.close(); await T.close(); }
+});

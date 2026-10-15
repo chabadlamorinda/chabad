@@ -1,5 +1,14 @@
 # /etc/caddy/Caddyfile. Caddy gets and renews HTTPS certificates by itself.
-baykosher.com, www.baykosher.com {
+#
+# WHILE TESTING: serve the store on a test address only (any subdomain you control, or with no domain at all
+# use  <server-ip-with-dashes>.sslip.io , e.g. 129-146-1-2.sslip.io ). Use ONLY this block:
+shop-test.chabadoflamorinda.com {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:3000
+}
+
+# AT LAUNCH: replace the block above with the two below, set PUBLIC_URL in prod.env, remove NOINDEX, restart.
+# baykosher.com, www.baykosher.com {
 	encode zstd gzip
 	@www host www.baykosher.com
 	redir @www https://baykosher.com{uri} permanent
