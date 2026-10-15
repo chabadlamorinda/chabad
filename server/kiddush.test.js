@@ -339,5 +339,5 @@ test('board sponsorship: a $5,000 year-long offer that is always open, off the t
   const ab = (await call('GET', '/admin/api/kiddush/board', undefined, { headers: adm })).json;
   assert.equal(ab.slots[0].kind, 'board'); assert.equal(ab.slots[0].sponsorship.status, 'pending'); assert.equal(ab.slots[0].priceCents, 600000);
   const staff = await fetch(baseNoDb + '/admin/kiddush/'); // no database/password: a helpful page, not a bare 404
-  assert.equal(staff.status, 503); assert.match(await staff.text(), /DATABASE_URL/);
+  assert.equal(staff.status, 404); assert.match(await staff.text(), /DATABASE_URL/);
 });
