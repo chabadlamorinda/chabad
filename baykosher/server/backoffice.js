@@ -38,14 +38,15 @@ function parseInvoiceCsv(text) {
 
 function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' }) {
   // ---- products ----
-  const FIELDS = ['upc', 'sku', 'name', 'brand', 'size', 'description', 'ingredients', 'nutrition', 'image_url', 'kosher_cert', 'tags', 'category_id', 'supplier_id', 'sold_by', 'price_cents', 'cost_cents', 'price_locked', 'taxable', 'stock', 'low_stock_at', 'track_stock', 'active'];
+  const FIELDS = ['upc', 'sku', 'name', 'name_he', 'description_he', 'est_weight_lb', 'featured', 'brand', 'size', 'description', 'ingredients', 'nutrition', 'image_url', 'kosher_cert', 'tags', 'category_id', 'supplier_id', 'sold_by', 'price_cents', 'cost_cents', 'price_locked', 'taxable', 'stock', 'low_stock_at', 'track_stock', 'active'];
   const clean = (k, v) => {
     if (k === 'upc') { v = String(v || '').replace(/\D/g, ''); return v || null; }
     if (k === 'nutrition') return JSON.stringify(v && typeof v === 'object' ? v : {});
     if (['category_id', 'supplier_id'].includes(k)) return v ? Number(v) : null;
+    if (k === 'est_weight_lb') return Number(v) > 0 ? Number(v) : null;
     if (['price_cents'].includes(k)) return Math.max(0, Math.round(Number(v) || 0));
     if (['cost_cents', 'stock', 'low_stock_at'].includes(k)) return Math.max(0, Number(v) || 0);
-    if (['price_locked', 'taxable', 'track_stock', 'active'].includes(k)) return !!v;
+    if (['price_locked', 'taxable', 'track_stock', 'active', 'featured'].includes(k)) return !!v;
     if (k === 'sold_by') return v === 'lb' ? 'lb' : 'each';
     return String(v ?? '').trim();
   };

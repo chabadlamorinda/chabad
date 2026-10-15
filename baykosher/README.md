@@ -6,7 +6,7 @@ A replacement for the MyKosherGrocer site. Node + Postgres + Stripe, same stack 
 ```
 cd baykosher && npm install && npm run dev
 ```
-Opens a throwaway database with demo products: store at `/`, back office `/admin` (password `demo-password-123`), packer screen `/pick` (PIN `1234`). `npm test` runs 29 tests against a real Postgres.
+Opens a throwaway database with demo products: store at `/` (Hebrew at `/he`), back office `/admin` (password `demo-password-123`), packer screen `/pick` (PIN `1234`). `npm test` runs 41 tests against a real Postgres.
 
 ## What is built
 | Area | Status |
@@ -27,6 +27,12 @@ Opens a throwaway database with demo products: store at `/`, back office `/admin
 | Weekly email from current sales + new items, unsubscribe | Done; needs Resend key |
 | Reorder suggestions from sell rate and days of stock left | Done |
 | SEO: server-rendered pages, sitemap, robots, Schema.org (GroceryStore, Product, Breadcrumb), canonical | Done |
+| Hebrew: every customer page, email and text, right-to-left, `/he/` URLs with hreflang for Google, Hebrew product names and descriptions, search by Hebrew or English word | Done (translations should be proofread by a native speaker; `server/he.json`) |
+| Meat sold as packs of an average weight priced per lb ("2 x 1.90 lb pack"): customer orders packs, packer weighs, customer pays the exact weight | Done |
+| Coupons: % or $ off, "first / second / third order only", minimum order, dates; recalculated on what was packed | Done |
+| Staff accounts: personal PINs, roles (shopper, cashier, data entry, manager), every action carries a name, activity log, hold / take over an order | Done |
+| Order manager: filters (period, search, service), totals, Excel/CSV export, card capture / release by hand, resend confirmation, order history, box counts | Done |
+| Items-to-pick totals across orders (for butchers / departments), customers list with CSV, stock reports from packers, banners, featured products, bulk edit, product import from a spreadsheet | Done |
 | Uber Direct dispatch | Written, **not yet tested against real Uber credentials** |
 
 ## Go live checklist

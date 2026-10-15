@@ -10,10 +10,11 @@ CREATE TABLE IF NOT EXISTS suppliers (
 );
 CREATE TABLE IF NOT EXISTS categories (
   id SERIAL PRIMARY KEY, slug TEXT NOT NULL UNIQUE, name TEXT NOT NULL, parent_id INT REFERENCES categories(id),
-  sort INT NOT NULL DEFAULT 0, image_url TEXT NOT NULL DEFAULT '', taxable_default BOOLEAN NOT NULL DEFAULT FALSE
+  name_he TEXT NOT NULL DEFAULT '', sort INT NOT NULL DEFAULT 0, image_url TEXT NOT NULL DEFAULT '', taxable_default BOOLEAN NOT NULL DEFAULT FALSE
 );
 CREATE TABLE IF NOT EXISTS products (
-  id SERIAL PRIMARY KEY, upc TEXT, sku TEXT NOT NULL DEFAULT '', name TEXT NOT NULL, brand TEXT NOT NULL DEFAULT '',
+  id SERIAL PRIMARY KEY, upc TEXT, sku TEXT NOT NULL DEFAULT '', name TEXT NOT NULL, name_he TEXT NOT NULL DEFAULT '', description_he TEXT NOT NULL DEFAULT '',
+  est_weight_lb NUMERIC, featured BOOLEAN NOT NULL DEFAULT FALSE, brand TEXT NOT NULL DEFAULT '',
   size TEXT NOT NULL DEFAULT '', description TEXT NOT NULL DEFAULT '', ingredients TEXT NOT NULL DEFAULT '',
   nutrition JSONB NOT NULL DEFAULT '{}'::jsonb, image_url TEXT NOT NULL DEFAULT '', kosher_cert TEXT NOT NULL DEFAULT '',
   tags TEXT NOT NULL DEFAULT '', category_id INT REFERENCES categories(id), supplier_id INT REFERENCES suppliers(id),
@@ -45,12 +46,12 @@ CREATE TABLE IF NOT EXISTS invoice_lines (
 CREATE TABLE IF NOT EXISTS customers (
   id SERIAL PRIMARY KEY, email TEXT NOT NULL UNIQUE, name TEXT NOT NULL DEFAULT '', phone TEXT NOT NULL DEFAULT '',
   stripe_customer_id TEXT, sms_ok BOOLEAN NOT NULL DEFAULT FALSE, email_ok BOOLEAN NOT NULL DEFAULT TRUE,
-  default_sub_pref TEXT NOT NULL DEFAULT 'substitute', created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+  default_sub_pref TEXT NOT NULL DEFAULT 'substitute', lang TEXT NOT NULL DEFAULT 'en', address JSONB, created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE TABLE IF NOT EXISTS login_codes (email TEXT NOT NULL, code TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, tries INT NOT NULL DEFAULT 0, PRIMARY KEY (email));
 CREATE TABLE IF NOT EXISTS carts (
   id TEXT PRIMARY KEY, customer_id INT REFERENCES customers(id), email TEXT NOT NULL DEFAULT '', phone TEXT NOT NULL DEFAULT '',
-  sms_ok BOOLEAN NOT NULL DEFAULT FALSE, items JSONB NOT NULL DEFAULT '[]'::jsonb, updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  sms_ok BOOLEAN NOT NULL DEFAULT FALSE, lang TEXT NOT NULL DEFAULT 'en', items JSONB NOT NULL DEFAULT '[]'::jsonb, updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
   reminders_sent INT NOT NULL DEFAULT 0, last_reminded_at TIMESTAMPTZ, completed BOOLEAN NOT NULL DEFAULT FALSE
 );
 CREATE TABLE IF NOT EXISTS coop_drops (
@@ -66,14 +67,14 @@ CREATE TABLE IF NOT EXISTS orders (
   note TEXT NOT NULL DEFAULT '', est_subtotal_cents INT NOT NULL DEFAULT 0, est_tax_cents INT NOT NULL DEFAULT 0,
   delivery_fee_cents INT NOT NULL DEFAULT 0, auth_cents INT NOT NULL DEFAULT 0, final_subtotal_cents INT, final_tax_cents INT,
   final_total_cents INT, captured_cents INT, extra_charge_id TEXT, unpaid_cents INT NOT NULL DEFAULT 0, payment_intent_id TEXT, uber_delivery_id TEXT, uber_tracking_url TEXT,
-  picker TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), picking_started_at TIMESTAMPTZ, ready_at TIMESTAMPTZ
+  picker TEXT NOT NULL DEFAULT '', boxes INT NOT NULL DEFAULT 0, coupon_code TEXT NOT NULL DEFAULT '', discount_cents INT NOT NULL DEFAULT 0, final_discount_cents INT, customer_ip TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), picking_started_at TIMESTAMPTZ, ready_at TIMESTAMPTZ
 );
 CREATE INDEX IF NOT EXISTS orders_status_idx ON orders (status, slot_start);
 CREATE INDEX IF NOT EXISTS orders_customer_idx ON orders (customer_id);
 CREATE TABLE IF NOT EXISTS order_items (
   id SERIAL PRIMARY KEY, order_id INT NOT NULL REFERENCES orders(id) ON DELETE CASCADE, product_id INT REFERENCES products(id),
-  name TEXT NOT NULL, upc TEXT NOT NULL DEFAULT '', image_url TEXT NOT NULL DEFAULT '', sold_by TEXT NOT NULL DEFAULT 'each',
-  taxable BOOLEAN NOT NULL DEFAULT FALSE, unit_price_cents INT NOT NULL, qty NUMERIC NOT NULL,
+  name TEXT NOT NULL, name_he TEXT NOT NULL DEFAULT '', upc TEXT NOT NULL DEFAULT '', image_url TEXT NOT NULL DEFAULT '', sold_by TEXT NOT NULL DEFAULT 'each',
+  taxable BOOLEAN NOT NULL DEFAULT FALSE, est_weight_lb NUMERIC, unit_price_cents INT NOT NULL, qty NUMERIC NOT NULL,
   state TEXT NOT NULL DEFAULT 'pending' CHECK (state IN ('pending','picked','substituted','out_of_stock')),
   final_qty NUMERIC, final_unit_price_cents INT, line_total_cents INT,
   sub_product_id INT REFERENCES products(id), sub_name TEXT NOT NULL DEFAULT '', is_extra BOOLEAN NOT NULL DEFAULT FALSE,
@@ -86,6 +87,26 @@ CREATE TABLE IF NOT EXISTS campaigns (id SERIAL PRIMARY KEY, subject TEXT NOT NU
 CREATE TABLE IF NOT EXISTS notify_log (id SERIAL PRIMARY KEY, channel TEXT NOT NULL, recipient TEXT NOT NULL, subject TEXT NOT NULL DEFAULT '', body TEXT NOT NULL, ok BOOLEAN NOT NULL DEFAULT TRUE, error TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS stock_events (id BIGSERIAL PRIMARY KEY, product_id INT NOT NULL REFERENCES products(id) ON DELETE CASCADE, delta NUMERIC NOT NULL, reason TEXT NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE INDEX IF NOT EXISTS stock_events_idx ON stock_events (product_id, created_at);
+CREATE TABLE IF NOT EXISTS coupons (
+  id SERIAL PRIMARY KEY, code TEXT NOT NULL UNIQUE, name TEXT NOT NULL DEFAULT '', percent NUMERIC, amount_cents INT,
+  order_number INT, min_subtotal_cents INT NOT NULL DEFAULT 0, starts_at TIMESTAMPTZ, ends_at TIMESTAMPTZ, active BOOLEAN NOT NULL DEFAULT TRUE,
+  CHECK ((percent IS NOT NULL AND amount_cents IS NULL) OR (percent IS NULL AND amount_cents IS NOT NULL))
+);
+CREATE TABLE IF NOT EXISTS staff (
+  id SERIAL PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL DEFAULT '', role TEXT NOT NULL CHECK (role IN ('manager','data_entry','shopper','cashier')),
+  pin_hash TEXT NOT NULL, active BOOLEAN NOT NULL DEFAULT TRUE, created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS order_events (id BIGSERIAL PRIMARY KEY, order_id INT NOT NULL REFERENCES orders(id) ON DELETE CASCADE, actor TEXT NOT NULL DEFAULT '', kind TEXT NOT NULL, detail TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE INDEX IF NOT EXISTS order_events_idx ON order_events (order_id, id);
+CREATE TABLE IF NOT EXISTS banners (
+  id SERIAL PRIMARY KEY, image_url TEXT NOT NULL, link TEXT NOT NULL DEFAULT '', alt TEXT NOT NULL DEFAULT '', alt_he TEXT NOT NULL DEFAULT '',
+  device TEXT NOT NULL DEFAULT 'all' CHECK (device IN ('all','desktop','mobile')), sort INT NOT NULL DEFAULT 0, starts_at TIMESTAMPTZ, ends_at TIMESTAMPTZ, active BOOLEAN NOT NULL DEFAULT TRUE
+);
+CREATE TABLE IF NOT EXISTS activity_log (id BIGSERIAL PRIMARY KEY, actor TEXT NOT NULL, action TEXT NOT NULL, detail TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS stock_reports (
+  id SERIAL PRIMARY KEY, product_id INT NOT NULL REFERENCES products(id) ON DELETE CASCADE, order_id INT, reported_by TEXT NOT NULL DEFAULT '',
+  reported_at TIMESTAMPTZ NOT NULL DEFAULT now(), resolved_at TIMESTAMPTZ
+);
 CREATE TABLE IF NOT EXISTS sync_log (id SERIAL PRIMARY KEY, kind TEXT NOT NULL, summary JSONB NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 `;
 

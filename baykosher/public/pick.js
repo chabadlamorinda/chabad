@@ -6,7 +6,7 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const money = (c) => '$' + (c / 100).toFixed(2);
   const root = $('#root');
-  let order = null, busy = false, scanMsg = '';
+  let order = null, busy = false, scanMsg = '', me = { name: '' }, tick = null;
   const api = async (method, url, body) => {
     const r = await fetch(url, { method, headers: body ? { 'Content-Type': 'application/json' } : {}, body: body ? JSON.stringify(body) : undefined, credentials: 'same-origin' });
     const j = await r.json().catch(() => ({}));
@@ -18,7 +18,7 @@
 
   async function login() {
     root.innerHTML = `<header><b>Bay Kosher Picker</b></header><div class="pad"><label class="f" for="pin">PIN</label><input class="i big" id="pin" type="password" inputmode="numeric" autocomplete="off"><button class="btn big" id="go" style="margin-top:12px">Sign in</button><div id="e" class="err" hidden></div></div>`;
-    const go = async () => { try { await api('POST', '/api/staff/login', { pin: $('#pin').value }); queue(); } catch (e) { $('#e').hidden = false; $('#e').textContent = e.message; } };
+    const go = async () => { try { const r = await api('POST', '/api/staff/login', { pin: $('#pin').value }); me = { name: r.name || '' }; queue(); } catch (e) { $('#e').hidden = false; $('#e').textContent = e.message; } };
     $('#go').onclick = go; $('#pin').onkeydown = (e) => e.key === 'Enter' && go(); $('#pin').focus();
   }
 
@@ -26,9 +26,9 @@
     let list;
     try { list = await api('GET', '/api/picker/queue'); } catch (e) { if (e.status === 401) return login(); throw e; }
     const t = (iso) => iso ? new Date(iso).toLocaleString([], { timeZone: TZ, weekday: 'short', hour: 'numeric', minute: '2-digit' }) : '';
-    root.innerHTML = `<header><b>Orders to pick</b><button class="btn small ghost" id="ref" style="background:#fff">Refresh</button></header><div class="pad">${list.length ? list.map((o) => `<button class="q" data-id="${o.id}"><b>#${o.id} ${esc(o.customer_name || '')}</b> <small>${o.fulfillment === 'pickup' ? 'Pickup' : o.fulfillment === 'uber' ? 'Delivery' : 'Co-op'} ${t(o.slot_start)}</small><br><span class="pill ${subLabel[o.sub_pref][1]}">${subLabel[o.sub_pref][0]}</span><span class="pill">${o.done}/${o.items} items</span>${o.status === 'picking' ? `<span class="pill warn">In progress${o.picker ? ': ' + esc(o.picker) : ''}</span>` : ''}</button>`).join('') : '<p class="empty">No orders waiting. Nice work.</p>'}</div>`;
+    root.innerHTML = `<header><b>Orders to pick</b><button class="btn small ghost" id="ref" style="background:#fff">Refresh</button></header><div class="pad">${list.length ? list.map((o) => `<button class="q" data-id="${o.id}"><b>#${o.id} ${esc(o.customer_name || '')}</b> <small>${o.fulfillment === 'pickup' ? 'Pickup' : o.fulfillment === 'uber' ? 'Delivery' : 'Co-op'} ${t(o.slot_start)}</small><br><span class="pill ${subLabel[o.sub_pref][1]}">${subLabel[o.sub_pref][0]}</span><span class="pill">${o.done}/${o.items} items</span>${o.status === 'picking' ? `<span class="pill warn">In progress${o.picker ? ': ' + esc(o.picker) : ''}${o.picking_started_at ? ' &middot; ' + Math.round((Date.now() - new Date(o.picking_started_at)) / 60000) + ' min' : ''}</span>` : ''}${o.note ? `<br><small>${esc(o.note)}</small>` : ''}</button>`).join('') : '<p class="empty">No orders waiting. Nice work.</p>'}</div>`;
     $('#ref').onclick = queue;
-    $$('.q').forEach((b) => (b.onclick = async () => { const name = localStorage.getItem('bk_picker') || prompt('Your name?') || ''; localStorage.setItem('bk_picker', name); try { order = await api('POST', `/api/picker/orders/${b.dataset.id}/start`, { picker: name }); pick(); } catch (e) { alert(e.message); queue(); } }));
+    $$('.q').forEach((b) => (b.onclick = async () => { const name = me.name || localStorage.getItem('bk_picker') || prompt('Your name?') || ''; localStorage.setItem('bk_picker', name); try { order = await api('POST', `/api/picker/orders/${b.dataset.id}/start`, { picker: name }); pick(); } catch (e) { alert(e.message); queue(); } }));
   }
 
   const done = () => order.items.filter((i) => i.state !== 'pending').length;
@@ -36,22 +36,25 @@
     const total = order.items.length, d = done(), allDone = d === total;
     const first = order.items.find((i) => i.state === 'pending');
     const [subText, subCls] = subLabel[order.sub_pref];
-    root.innerHTML = `<header><b>Order #${order.id}</b><span>${d}/${total}</span><div class="prog"><i style="width:${(d / total) * 100}%"></i></div></header>
+    root.innerHTML = `<header><b>Order #${order.id}</b><span id="clock"></span><span>${d}/${total}</span><div class="prog"><i style="width:${(d / total) * 100}%"></i></div></header>
     <div class="pad"><div style="margin-bottom:8px"><span class="pill ${subCls}">${subText}</span><span class="pill">${esc(order.customer_name || '')}</span>${order.note ? `<div class="notice" style="margin-top:8px">Note: ${esc(order.note)}</div>` : ''}</div>
     <div class="scan"><input id="sc" inputmode="none" autocomplete="off" placeholder="Scan an item barcode" aria-label="Scan barcode"><button class="btn" id="cam" aria-label="Use camera">&#128247;</button></div><div id="msg" class="hint" role="status">${esc(scanMsg)}</div>
     ${order.items.map((i) => itemCard(i, first && i.id === first.id)).join('')}<button class="btn ghost big" id="add" style="margin-top:6px">+ Add an item</button></div>
-    <div class="foot"><button class="btn g big" id="fin" ${allDone ? '' : 'disabled'}>${allDone ? 'Finish &amp; charge card' : `${total - d} item${total - d === 1 ? '' : 's'} to go`}</button></div>`;
+    <div class="foot"><button class="btn ghost" id="hold" style="flex:none">Hold</button><button class="btn g big" id="fin" ${allDone ? '' : 'disabled'}>${allDone ? 'Finish &amp; charge card' : `${total - d} item${total - d === 1 ? '' : 's'} to go`}</button></div>`;
     const sc = $('#sc'); sc.focus();
     sc.onkeydown = (e) => { if (e.key === 'Enter' && sc.value.trim()) { onScan(sc.value.trim()); sc.value = ''; } };
     $('#cam').onclick = camera; $('#add').onclick = () => finder('add'); $('#fin').onclick = finish;
+    $('#hold').onclick = async () => { if (!confirm('Put this order on hold? Your progress is saved and any shopper can continue it.')) return; try { await api('POST', `/api/picker/orders/${order.id}/hold`, {}); order = null; clearInterval(tick); queue(); } catch (e) { alert(e.message); } };
+    clearInterval(tick); const t0 = order.picking_started_at ? new Date(order.picking_started_at).getTime() : Date.now();
+    const clock = () => { const el = $('#clock'); if (!el) return clearInterval(tick); const sec = Math.max(0, Math.round((Date.now() - t0) / 1000)); el.textContent = `${String(Math.floor(sec / 60)).padStart(2, '0')}:${String(sec % 60).padStart(2, '0')}`; }; clock(); tick = setInterval(clock, 1000);
     $$('[data-act]').forEach((b) => (b.onclick = () => act(Number(b.dataset.id), b.dataset.act)));
     $$('[data-undo]').forEach((b) => (b.onclick = () => run(`/api/picker/orders/${order.id}/items/${b.dataset.undo}/undo`, {})));
   }
   function itemCard(i, cur) {
     const lb = i.sold_by === 'lb';
     const cls = { picked: 'done', substituted: 'sub', out_of_stock: 'oos', pending: cur ? 'cur' : '' }[i.state];
-    const state = { picked: `Picked ${Number(i.final_qty)}${lb ? ' lb' : ''} &middot; ${money(i.line_total_cents)}`, substituted: `Substituted: ${esc(i.sub_name)} &times; ${Number(i.final_qty)} &middot; ${money(i.line_total_cents)}`, out_of_stock: 'Not in stock', pending: '' }[i.state];
-    return `<div class="it ${cls}"><img src="${esc(i.image_url || '/static/noimage.svg')}" alt=""><div><div class="nm">${esc(i.name)}${i.is_extra ? ' <span class="pill">added</span>' : ''}</div><div class="meta">${lb ? `~${Number(i.qty)} lb ordered` : `Qty ${Number(i.qty)}`} &middot; ${money(i.unit_price_cents)}${lb ? '/lb' : ''}${i.upc ? ' &middot; ' + esc(i.upc) : ''}</div><div class="meta"><b>${state}</b></div>${i.state !== 'pending' ? `<button class="rm" data-undo="${i.id}">Undo</button>` : ''}</div>
+    const state = { picked: `Picked ${Number(i.final_qty)}${lb ? ' lb' : i.est_weight_lb ? '' : ''} &middot; ${money(i.line_total_cents)}`, substituted: `Substituted: ${esc(i.sub_name)} &times; ${Number(i.final_qty)} &middot; ${money(i.line_total_cents)}`, out_of_stock: 'Not in stock', pending: '' }[i.state];
+    return `<div class="it ${cls}"><img src="${esc(i.image_url || '/static/noimage.svg')}" alt=""><div><div class="nm">${esc(i.name)}${i.is_extra ? ' <span class="pill">added</span>' : ''}</div>${i.est_weight_lb ? `<div style="color:#c00;font-weight:700;font-size:.9rem">${Number(i.qty)} &times; ${Number(i.est_weight_lb).toFixed(2)} lb pack = ${(Number(i.qty) * Number(i.est_weight_lb)).toFixed(2)} lb total</div>` : ''}<div class="meta">${i.est_weight_lb ? `${Number(i.qty)} pack${Number(i.qty) === 1 ? '' : 's'}` : lb ? `~${Number(i.qty)} lb ordered` : `Qty ${Number(i.qty)}`} &middot; ${money(i.unit_price_cents)}${lb ? '/lb' : ''}${i.upc ? ' &middot; ' + esc(i.upc) : ''}</div><div class="meta"><b>${state}</b></div>${i.state !== 'pending' ? `<button class="rm" data-undo="${i.id}">Undo</button>` : ''}</div>
     ${i.state === 'pending' ? `<div class="acts"><button class="btn g" data-act="pick" data-id="${i.id}">${lb ? 'Weigh' : 'Got it'}</button><button class="btn o" data-act="sub" data-id="${i.id}" ${order.sub_pref === 'never' ? 'disabled' : ''}>Substitute</button><button class="btn r" data-act="oos" data-id="${i.id}">Not in stock</button></div>` : ''}</div>`;
   }
 
@@ -68,7 +71,7 @@
   }
   function sheet(html) { const s = document.createElement('div'); s.className = 'sheet'; s.innerHTML = `<div>${html}</div>`; document.body.append(s); s.onclick = (e) => e.target === s && s.remove(); return s; }
   function weightSheet(it, cb, name) {
-    const s = sheet(`<h2 style="margin-top:0">${esc(name || it.name)}</h2><p class="hint">Weigh the item and type the weight in pounds. Ordered about ${Number(it.qty || 1)} lb.</p><input class="big" id="w" type="number" step="0.01" min="0" inputmode="decimal" placeholder="0.00 lb"><button class="btn g big" id="ok" style="margin-top:12px">Save weight</button><button class="btn ghost big" id="x" style="margin-top:8px">Cancel</button>`);
+    const s = sheet(`<h2 style="margin-top:0">${esc(name || it.name)}</h2><p class="hint">${it.est_weight_lb ? `Weigh all ${Number(it.qty)} pack${Number(it.qty) === 1 ? '' : 's'} together and type the total in pounds. Expected about ${(Number(it.qty) * Number(it.est_weight_lb)).toFixed(2)} lb.` : `Weigh the item and type the weight in pounds. Ordered about ${Number(it.qty || 1)} lb.`}</p><input class="big" id="w" type="number" step="0.01" min="0" inputmode="decimal" placeholder="0.00 lb"><button class="btn g big" id="ok" style="margin-top:12px">Save weight</button><button class="btn ghost big" id="x" style="margin-top:8px">Cancel</button>`);
     $('#w', s).focus(); $('#x', s).onclick = () => s.remove();
     $('#ok', s).onclick = () => { const v = Number($('#w', s).value); if (!(v > 0)) return alert('Enter the weight'); s.remove(); cb(v); };
   }
@@ -117,9 +120,14 @@
   }
 
   async function finish() {
-    if (!confirm('Finish this order and charge the card?')) return;
+    const boxes = await new Promise((resolve) => {
+      const s = sheet(`<h2 style="margin-top:0">How many boxes / bags?</h2><p class="hint">Count the boxes or bags for this order so pickup knows what to hand over.</p><input class="big" id="bx" type="number" min="0" step="1" inputmode="numeric" value="1"><button class="btn g big" id="ok" style="margin-top:12px">Finish &amp; charge card</button><button class="btn ghost big" id="x" style="margin-top:8px">Not yet</button>`);
+      $('#bx', s).focus(); $('#x', s).onclick = () => { s.remove(); resolve(null); }; $('#ok', s).onclick = () => { const v = parseInt($('#bx', s).value, 10) || 0; s.remove(); resolve(v); };
+    });
+    if (boxes === null) return;
     try {
-      const o = await api('POST', `/api/picker/orders/${order.id}/finish`, {});
+      clearInterval(tick);
+      const o = await api('POST', `/api/picker/orders/${order.id}/finish`, { boxes });
       const m = o.status === 'cancelled' ? 'Nothing was available. The customer was not charged.' : o.status === 'out_for_delivery' ? 'Sent to Uber for delivery.' : 'Ready. The customer has been notified.';
       root.innerHTML = `<header><b>Order #${o.id} done</b></header><div class="pad"><div class="okbox"><b>${m}</b><br>Charged ${money(o.captured_cents || 0)}.${o.unpaid_cents ? `<br><span style="color:#b42318">Extra ${money(o.unpaid_cents)} could not be charged. Tell the owner.</span>` : ''}${o.fulfillment === 'pickup' ? '<br>Put the bags on the pickup shelf.' : ''}${o.dispatch_note ? '<br>' + esc(o.dispatch_note) : ''}</div><button class="btn big" id="next">Next order</button></div>`;
       $('#next').onclick = queue; order = null;

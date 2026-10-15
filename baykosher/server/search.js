@@ -32,13 +32,24 @@ function dist(a, b, max) {
   return d[a.length][b.length];
 }
 
+// English <-> Hebrew words shoppers type (so "חלה" finds Challah and "chicken" finds עוף products)
+const ALIAS_PAIRS = [['chicken', 'עוף'], ['meat', 'בשר'], ['beef', 'בקר'], ['challah', 'חלה'], ['matzah', 'מצה'], ['matzo', 'מצה'], ['hummus', 'חומוס'], ['tahini', 'טחינה'], ['schnitzel', 'שניצל'], ['milk', 'חלב'], ['cheese', 'גבינה'], ['wine', 'יין'],
+  ['fish', 'דג'], ['salmon', 'סלמון'], ['bread', 'לחם'], ['eggs', 'ביצים'], ['rice', 'אורז'], ['soup', 'מרק'], ['cookies', 'עוגיות'], ['cake', 'עוגה'], ['chocolate', 'שוקולד'], ['candy', 'ממתקים'], ['juice', 'מיץ'], ['water', 'מים'], ['oil', 'שמן'],
+  ['sugar', 'סוכר'], ['flour', 'קמח'], ['salt', 'מלח'], ['coffee', 'קפה'], ['tea', 'תה'], ['pasta', 'פסטה'], ['couscous', 'קוסקוס'], ['pita', 'פיתה'], ['falafel', 'פלאפל'], ['olives', 'זיתים'], ['pickles', 'מלפפונים'], ['gefilte', 'גפילטע'],
+  ['kugel', 'קוגל'], ['cholent', 'חמין'], ['chulent', 'חמין'], ['brisket', 'בריסקט'], ['steak', 'סטייק'], ['ribs', 'צלעות'], ['lamb', 'כבש'], ['turkey', 'הודו'], ['sausage', 'נקניק'], ['salami', 'סלמי'], ['yogurt', 'יוגורט'], ['butter', 'חמאה'],
+  ['cream', 'שמנת'], ['pizza', 'פיצה'], ['burger', 'המבורגר'], ['wings', 'כנפיים'], ['ground', 'טחון'], ['baby', 'תינוק'], ['diapers', 'חיתולים'], ['shampoo', 'שמפו'], ['soap', 'סבון'], ['candles', 'נרות'], ['shabbat', 'שבת'], ['pesach', 'פסח'],
+  ['passover', 'פסח'], ['kosher', 'כשר'], ['wipes', 'מגבונים'], ['honey', 'דבש'], ['jam', 'ריבה'], ['halva', 'חלווה'], ['bamba', 'במבה'], ['bissli', 'ביסלי'], ['osem', 'אסם'], ['elite', 'עלית'], ['tnuva', 'תנובה'], ['strauss', 'שטראוס'], ['wine', 'יין'], ['grape', 'ענבים']];
+const ALIASES = new Map();
+for (const [en, he] of ALIAS_PAIRS) for (const [a, b] of [[en, he], [he, en]]) { if (!ALIASES.has(a)) ALIASES.set(a, new Set()); ALIASES.get(a).add(b); }
+const aliasesOf = (w) => [...(ALIASES.get(w) || [])];
+
 function createIndex() {
   let docs = [];
   return {
     build(products) {
       docs = products.map((p) => {
-        const nameToks = norm(p.name).split(' ').filter(Boolean);
-        const extra = norm([p.brand, p.category_name, p.tags, p.upc].join(' ')).split(' ').filter(Boolean);
+        const nameToks = norm(p.name + ' ' + (p.name_he || '')).split(' ').filter(Boolean);
+        const extra = norm([p.brand, p.category_name, p.category_name_he, p.tags, p.upc].join(' ')).split(' ').filter(Boolean);
         return { id: p.id, upc: String(p.upc || ''), name: norm(p.name), nameToks, extraToks: extra, skel: nameToks.map(skeleton), skelExtra: extra.map(skeleton), inStock: p.track_stock ? Number(p.stock) > 0 : true };
       });
     },
@@ -52,23 +63,26 @@ function createIndex() {
       const out = [];
       for (const d of docs) {
         let total = 0, matched = 0;
-        for (const t of qt) {
-          const sk = skeleton(t);
+        for (const qtok of qt) {
           let best = 0;
-          const test = (toks, skels, weight) => {
-            for (let i = 0; i < toks.length; i++) {
-              const w = toks[i];
-              let s = 0;
-              if (w === t) s = 10;
-              else if (w.startsWith(t) && t.length >= 2) s = 8 - Math.min(2, (w.length - t.length) / 4);
-              else if (t.length >= 4 && dist(t, w, t.length >= 7 ? 2 : 1) <= (t.length >= 7 ? 2 : 1)) s = 6;
-              else if (t.length >= 3 && skels[i] === sk) s = 5;
-              else if (t.length >= 3 && w.length > t.length && w.includes(t)) s = 3;
-              if (s * weight > best) best = s * weight;
-            }
-          };
-          test(d.nameToks, d.skel, 1);
-          test(d.extraToks, d.skelExtra, 0.6);
+          // the typed word, plus its English/Hebrew equivalents (slightly lower weight)
+          for (const [t, factor] of [[qtok, 1], ...aliasesOf(qtok).map((a) => [a, 0.9])]) {
+            const sk = skeleton(t);
+            const test = (toks, skels, weight) => {
+              for (let i = 0; i < toks.length; i++) {
+                const w = toks[i];
+                let s = 0;
+                if (w === t) s = 10;
+                else if (w.startsWith(t) && t.length >= 2) s = 8 - Math.min(2, (w.length - t.length) / 4);
+                else if (t.length >= 4 && dist(t, w, t.length >= 7 ? 2 : 1) <= (t.length >= 7 ? 2 : 1)) s = 6;
+                else if (t.length >= 3 && skels[i] === sk) s = 5;
+                else if (t.length >= 3 && w.length > t.length && w.includes(t)) s = 3;
+                if (s * weight * factor > best) best = s * weight * factor;
+              }
+            };
+            test(d.nameToks, d.skel, 1);
+            test(d.extraToks, d.skelExtra, 0.6);
+          }
           if (best > 0) { matched++; total += best; }
         }
         // every typed word must match something (so "chicken soup" does not return all soup)
@@ -96,4 +110,4 @@ function createIndex() {
   };
 }
 
-module.exports = { norm, skeleton, dist, createIndex };
+module.exports = { norm, skeleton, dist, createIndex, aliasesOf };

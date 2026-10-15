@@ -1,6 +1,7 @@
 // Background jobs: abandoned-cart reminders and stale unpaid orders.
 'use strict';
 const { esc, money } = require('./core');
+const { t: tr } = require('./i18n');
 
 function createJobs({ db, settings, core, notifier, publicUrl = '' }) {
   async function abandonedCarts() {
@@ -17,11 +18,12 @@ function createJobs({ db, settings, core, notifier, publicUrl = '' }) {
       const { lines } = await core.priceCart(c.items);
       if (!lines.length) { await db.q('UPDATE carts SET completed=TRUE WHERE id=$1', [c.id]); continue; }
       const total = lines.reduce((a, l) => a + l.line_cents, 0);
-      const link = `${publicUrl}/cart/resume/${c.id}`;
-      const names = lines.slice(0, 3).map((l) => l.name).join(', ') + (lines.length > 3 ? ` and ${lines.length - 3} more` : '');
+      const L = c.lang === 'he' ? 'he' : 'en';
+      const link = `${publicUrl}${L === 'he' ? '/he' : ''}/cart/resume/${c.id}`;
+      const names = lines.slice(0, 3).map((l) => l.name).join(', ') + (lines.length > 3 ? ' ' + tr(L, 'and {n} more', { n: lines.length - 3 }) : '');
       let ok = false;
-      if (c.phone && c.sms_ok) ok = await notifier.sms(c.phone, `Bay Kosher: you left ${names} in your cart (${money(total)}). Finish your order: ${link} Reply STOP to opt out.`);
-      if (c.email && (!ok)) ok = await notifier.email(c.email, 'You left something in your cart', `<p>You left these in your Bay Kosher cart: ${esc(names)} (${money(total)}).</p><p><a href="${link}" style="background:#00209f;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none">Finish my order</a></p>`);
+      if (c.phone && c.sms_ok) ok = await notifier.sms(c.phone, tr(L, 'Bay Kosher: you left {items} in your cart ({total}). Finish your order: {link} Reply STOP to opt out.', { items: names, total: money(total), link }));
+      if (c.email && (!ok)) ok = await notifier.email(c.email, tr(L, 'You left something in your cart'), `<div dir="${L === 'he' ? 'rtl' : 'ltr'}"><p>${esc(tr(L, 'You left these in your Bay Kosher cart: {items} ({total}).', { items: names, total: money(total) }))}</p><p><a href="${link}" style="background:#00209f;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none">${tr(L, 'Finish my order')}</a></p></div>`);
       // count the attempt even if providers are not configured, so we never spam when they come online
       await db.q('UPDATE carts SET reminders_sent = reminders_sent + 1, last_reminded_at = now() WHERE id=$1', [c.id]);
       if (ok) sent++;

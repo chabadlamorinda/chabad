@@ -17,7 +17,10 @@ function createAuth(secret) {
   };
   const same = (a, b) => { const x = Buffer.from(String(a)), y = Buffer.from(String(b)); return x.length === y.length && crypto.timingSafeEqual(x, y); };
   const cookie = (req, name) => { const m = String(req.headers.cookie || '').split(/;\s*/).find((c) => c.startsWith(name + '=')); return m ? decodeURIComponent(m.slice(name.length + 1)) : null; };
-  return { sign, verify, same, cookie, token: (n = 24) => crypto.randomBytes(n).toString('hex') };
+  // PINs: salted scrypt (short secrets, so slow hashing matters)
+  const hashPin = (pin) => { const salt = crypto.randomBytes(8).toString('hex'); return salt + ':' + crypto.scryptSync(String(pin), salt, 32).toString('hex'); };
+  const verifyPin = (pin, stored) => { const [salt, h] = String(stored).split(':'); if (!salt || !h) return false; const a = Buffer.from(crypto.scryptSync(String(pin), salt, 32).toString('hex')), b = Buffer.from(h); return a.length === b.length && crypto.timingSafeEqual(a, b); };
+  return { sign, verify, same, hashPin, verifyPin, cookie, token: (n = 24) => crypto.randomBytes(n).toString('hex') };
 }
 
 // Small in-memory rate limiter (per key, per window) for login and lookup endpoints.

@@ -11,3 +11,5 @@
 .sheet{position:fixed;inset:0;background:#0007;z-index:30;display:flex;align-items:flex-end;justify-content:center}.sheet>div{background:#fff;border-radius:18px 18px 0 0;width:100%;max-width:640px;max-height:92vh;overflow:auto;padding:16px}
 .big{font-size:2rem;text-align:center;padding:14px;width:100%;border:2px solid var(--blue);border-radius:12px}.pk .foot{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 12px;display:flex;gap:10px;z-index:8;max-width:none}
 .found{display:flex;gap:10px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#fff;width:100%;text-align:left;font:inherit}.found img{width:44px;height:44px;object-fit:contain}
+
+.pk header{gap:12px}.pk header #clock{margin-inline-start:auto;font-variant-numeric:tabular-nums;opacity:.85}

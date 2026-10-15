@@ -14,6 +14,7 @@ const { createUpcLookup } = require('./upc');
 const { createGeocoder } = require('./delivery');
 const { seedDepartments } = require('./seed');
 const notifyRef = require('./notifyRef');
+const { t: tr, HE } = require('./i18n');
 
 async function createApp(deps) {
   const env = deps.env || process.env;
@@ -42,6 +43,17 @@ async function createApp(deps) {
   const app = express();
   app.set('trust proxy', 1);
   app.disable('x-powered-by');
+  // Language: pages under /he/ are Hebrew (right-to-left); everything else is English. The API follows the X-Lang header.
+  const PAGE = /^\/(?:$|c\/|p\/|sale$|search$|store$|cart$|checkout$|account$|order\/)/;
+  app.use((req, res, next) => {
+    const p = req.path;
+    if (p === '/he' || p.startsWith('/he/')) { req.lang = 'he'; const rest = req.url.slice(3); req.url = !rest || rest.startsWith('?') ? '/' + rest : rest; return next(); }
+    req.lang = req.headers['x-lang'] === 'he' ? 'he' : 'en';
+    // remembered choice: someone who picked Hebrew lands on the Hebrew page
+    if (req.method === 'GET' && PAGE.test(p) && /(?:^|;\s*)bk_lang=he/.test(req.headers.cookie || '')) return res.redirect(302, '/he' + (p === '/' ? '' : p) + (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : ''));
+    next();
+  });
+  app.get('/static/i18n.js', (req, res) => res.type('application/javascript').set('Cache-Control', 'public, max-age=300').send('window.__HE=' + JSON.stringify(HE) + ';'));
   app.use((req, res, next) => {
     res.set({ 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'X-Frame-Options': 'SAMEORIGIN',
       'Content-Security-Policy': "default-src 'self'; script-src 'self' https://js.stripe.com; frame-src https://js.stripe.com https://hooks.stripe.com; connect-src 'self' https://api.stripe.com; img-src * data: blob:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; form-action 'self'" });
@@ -85,21 +97,23 @@ async function createApp(deps) {
   for (const [route, title] of [['/cart', 'Cart'], ['/checkout', 'Checkout'], ['/account', 'Account'], ['/order/:id', 'Order']]) app.get(route, async (req, res) => res.set('Cache-Control', 'no-store').type('html').send(await pages.app(title)(req)));
   app.get('/cart/resume/:id', async (req, res) => {
     const c = await db.one('SELECT id FROM carts WHERE id=$1', [req.params.id]);
-    res.type('html').send(c ? `<!doctype html><meta charset="utf-8"><script>try{localStorage.setItem('bk_cartid',${JSON.stringify(c.id)});localStorage.removeItem('bk_cart')}catch(e){}location.replace('/cart')</script>` : '<meta http-equiv="refresh" content="0;url=/cart">');
+    const pre = req.lang === 'he' ? '/he' : '';
+    res.type('html').send(c ? `<!doctype html><meta charset="utf-8"><script src="/static/resume.js" data-cart="${esc(c.id)}" data-to="${pre}/cart"></script>` : `<meta http-equiv="refresh" content="0;url=${pre}/cart">`);
   });
   app.get('/unsubscribe/:token', async (req, res) => {
     const s = await db.one('UPDATE subscribers SET subscribed=FALSE WHERE token=$1 RETURNING email', [req.params.token]);
     if (s) await db.q('UPDATE customers SET email_ok=FALSE WHERE email=$1', [s.email]);
-    res.type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><body style="font-family:sans-serif;padding:2em"><h2>You are unsubscribed</h2><p>You will no longer receive our weekly email. <a href="/">Back to Bay Kosher</a></p>');
+    const L = req.lang;
+    res.type('html').send(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><body dir="${L === 'he' ? 'rtl' : 'ltr'}" style="font-family:sans-serif;padding:2em"><h2>${tr(L, 'You are unsubscribed')}</h2><p>${tr(L, 'You will no longer receive our weekly email.')} <a href="${L === 'he' ? '/he' : '/'}">${tr(L, 'Back to Bay Kosher')}</a></p>`);
   });
 
-  app.use((req, res) => { if (req.path.startsWith('/api/')) return res.status(404).json({ error: 'Not found' }); res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><body style="font-family:sans-serif;padding:2em"><h2>Page not found</h2><p><a href="/">Back to Bay Kosher</a></p>'); });
+  app.use((req, res) => { const L = req.lang; if (req.path.startsWith('/api/')) return res.status(404).json({ error: tr(L, 'Not found') }); res.status(404).type('html').send(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><body dir="${L === 'he' ? 'rtl' : 'ltr'}" style="font-family:sans-serif;padding:2em"><h2>${tr(L, 'Page not found')}</h2><p><a href="${L === 'he' ? '/he' : '/'}">${tr(L, 'Back to Bay Kosher')}</a></p>`); });
   app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
     const status = err.status || (err.code === '22P02' ? 400 : 500);
     if (status >= 500) console.error(err);
-    const msg = status >= 500 ? 'Something went wrong. Please try again.' : err.message;
+    const msg = tr(req.lang, status >= 500 ? 'Something went wrong. Please try again.' : err.message);
     if (req.path.startsWith('/api/')) return res.status(status).json({ error: msg });
-    res.status(status).type('html').send(`<!doctype html><meta charset="utf-8"><body style="font-family:sans-serif;padding:2em"><h2>${esc(msg)}</h2><p><a href="/">Back to Bay Kosher</a></p>`);
+    res.status(status).type('html').send(`<!doctype html><meta charset="utf-8"><body dir="${req.lang === 'he' ? 'rtl' : 'ltr'}" style="font-family:sans-serif;padding:2em"><h2>${esc(msg)}</h2><p><a href="${req.lang === 'he' ? '/he' : '/'}">${tr(req.lang, 'Back to Bay Kosher')}</a></p>`);
   });
 
   return { app, db, core, back, jobs, settings, auth, syncClover: deps.clover ? syncCloverNow : null, close: async () => { jobs.stop(); await db.close(); } };
