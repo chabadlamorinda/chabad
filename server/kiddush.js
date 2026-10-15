@@ -26,7 +26,7 @@ const DEFAULTS = {
   blessing: 'May He who blessed our fathers, Abraham, Isaac, and Jacob, bless those who provide wine for Kiddush... May the Holy One blessed be He, give them their reward, heal their entire body, pardon all their sins, and send blessings and success to all their endeavours.',
   donorEn: '', donorHe: '',
   showPending: true, includePurim: true,
-  boardYear: 5787, // the one Hebrew year shown and sponsorable; change it in Settings when the next year starts
+  boardYear: 0, // 0 = automatic: the year of the next upcoming Kiddush, so the board flips at Rosh Hashanah by itself
 };
 const FIELD = { // type of each setting, for validation
   orgName: ['s', 80], priceShabbat: ['n'], priceHoliday: ['n'], cardOn: ['b'], coverFee: ['b'], zelleOn: ['b'], zelleId: ['s', 120], zelleName: ['s', 80],
@@ -82,9 +82,16 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     const { today } = await todayInfo();
     const [overrides, events, live] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships()]) : [new Map(), [], []];
     const byKey = new Map(live.map((s) => [s.slot_key, s]));
-    const y = exact && Number.isInteger(year) && year > 5700 && year < 6000 ? year : st.boardYear; // one year only (findSlot asks for others so old records still resolve)
-    const all = await slotsForYear(y, st, overrides, events);
-    const next = all.find((s) => !s.hidden && s.date >= today);
+    let y, all, next;
+    if (exact && Number.isInteger(year) && year > 5700 && year < 6000) { y = year; all = await slotsForYear(y, st, overrides, events); }
+    else if (st.boardYear) { y = st.boardYear; all = await slotsForYear(y, st, overrides, events); }
+    else { // automatic: the year containing the next upcoming week
+      const { hy } = await todayInfo();
+      const [a, b] = await Promise.all([slotsForYear(hy, st, overrides, events), slotsForYear(hy + 1, st, overrides, events)]);
+      const nx = a.concat(b).find((s) => !s.hidden && s.date >= today);
+      y = nx ? nx.year : hy; all = y === hy ? a : b;
+    }
+    next = all.find((s) => !s.hidden && s.date >= today);
     const slots = all.filter((s) => admin || !s.hidden).map((s) => {
       const sp = byKey.get(s.key) || null;
       const out = {
@@ -126,7 +133,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     const { slots } = await board({ year: hy, admin: true, exact: true });
     const s = slots.find((x) => x.key === key);
     if (!s || (s.hidden && !allowHidden)) return null;
-    if (!allowHidden && s.year !== (await settings()).boardYear) return null; // only the board's year can be sponsored
+    if (!allowHidden && s.year !== (await board({})).year) return null; // only the year on the board can be sponsored
     return s;
   }
 
@@ -357,7 +364,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
         const v = b[k];
         if (t[0] === 'b') out[k] = v === true;
         else if (t[0] === 'n') { const n = Number(v); if (!Number.isFinite(n) || n < 1 || n > 10000) bad('invalid', 'Prices must be between $1 and $10,000.'); out[k] = Math.round(n * 100) / 100; }
-        else if (t[0] === 'y') { const n = Number(v); if (!Number.isInteger(n) || n < 5700 || n > 5900) bad('invalid', 'Please enter a Hebrew year such as 5787.'); out[k] = n; }
+        else if (t[0] === 'y') { const n = Number(v); if (!Number.isInteger(n) || (n && (n < 5700 || n > 5900))) bad('invalid', 'Leave this at 0 for automatic, or enter a Hebrew year such as 5787.'); out[k] = n; }
         else if (t[0] === 'u') { const u = String(v || '').trim().replace(/\/+$/, ''); if (u && !/^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(u)) bad('invalid', 'The public web address must look like https://kiddush.example.org'); out[k] = u; }
         else out[k] = clean(v, t[1]);
       }

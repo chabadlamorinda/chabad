@@ -169,7 +169,7 @@
     ['Venmo', [['venmoOn', 'Offer Venmo', 'b'], ['venmoHandle', 'Venmo username', 't']]],
     ['Check and cash', [['checkOn', 'Offer check', 'b'], ['checkPayable', 'Checks payable to', 't'], ['checkAddress', 'Mailing address', 't'], ['cashOn', 'Offer cash / other at shul', 'b']]],
     ['Contact shown to donors', [['contactEmail', 'Email', 't'], ['contactPhone', 'Phone', 't']]],
-    ['The board', [['boardYear', 'Hebrew year shown on the board (e.g. 5787)', 'n'], ['includePurim', 'Include Purim', 'b'], ['showPending', 'Show names on the TV as soon as someone reserves (before payment arrives)', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
+    ['The board', [['boardYear', 'Year shown on the board: 0 = automatic (switches at Rosh Hashanah). Only enter a year like 5787 to force one.', 'n'], ['includePurim', 'Include Purim', 'b'], ['showPending', 'Show names on the TV as soon as someone reserves (before payment arrives)', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
       ['publicUrl', 'Web address for the QR code (optional, e.g. https://kiddush.chabadoflamorinda.com)', 't']]],
   ];
   function settingsTab() {
@@ -183,7 +183,7 @@
           var k = d[0], i;
           if (d[2] === 'b') { i = el('input', { type: 'checkbox', checked: S[k] }); c.appendChild(el('label', { style: 'font-size:16px;color:inherit' }, [i, ' ' + d[1]])); }
           else if (d[2] === 'a') { i = el('textarea', { rows: '4' }); i.value = S[k] || ''; c.appendChild(el('label', { text: d[1] })); c.appendChild(i); }
-          else { i = el('input', { type: d[2] === 'n' ? 'number' : 'text', value: S[k], min: '1', step: k === 'boardYear' ? '1' : 'any' }); c.appendChild(el('label', { text: d[1] })); c.appendChild(i); }
+          else { i = el('input', { type: d[2] === 'n' ? 'number' : 'text', value: S[k], min: k === 'boardYear' ? '0' : '1', step: k === 'boardYear' ? '1' : 'any' }); c.appendChild(el('label', { text: d[1] })); c.appendChild(i); }
           inputs[k] = [i, d[2]];
         });
         box.appendChild(c);

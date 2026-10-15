@@ -73,7 +73,7 @@ test('calendar: every Shabbat of several years has a parshah name we recognise; 
 
 // ---------------------------------------------------------------- public board
 
-test('board: only year 5787, current week is the next upcoming one', async () => {
+test('board: automatic year (5787 now), current week is the next upcoming one', async () => {
   const b = await board();
   assert.equal(b.year, 5787); assert.equal(b.yearHe, 'תשפ״ז'); assert.deepEqual(b.years, [5787]);
   assert.ok(b.slots.every((s) => s.year === 5787) && b.slots[0].key === '2026-09-12|rh1' && b.slots.at(-1).date < '2027-10-01');
@@ -84,6 +84,14 @@ test('board: only year 5787, current week is the next upcoming one', async () =>
   assert.ok(b.slots.find((s) => s.key === '2026-10-10|shabbat').past);
   assert.equal(b.settings.ways.card, true); assert.equal(b.settings.ways.zelle, false, 'Zelle stays off until the address is entered');
   assert.equal((await board('?year=5788')).year, 5787, 'other years are not offered');
+  // automatic flip: the day before Rosh Hashanah 5788 the board already shows 5788; a manual setting overrides
+  const flip = createApp({ stripe, publishableKey: 'pk_test_x', sessionSecret: SECRET, log: { error() {} }, store, now: () => new Date('2027-10-01T12:00:00-07:00') });
+  const fs2 = await new Promise((r) => { const s = flip.listen(0, () => r(s)); });
+  const fb = (await call('GET', '/api/kiddush/board', undefined, { base: 'http://127.0.0.1:' + fs2.address().port })).json;
+  fs2.close(); assert.equal(fb.year, 5788); assert.equal(fb.current, '2027-10-02|rh1');
+  const adm = await adminLogin();
+  await call('PUT', '/admin/api/kiddush/settings', { boardYear: 5786 }, { headers: adm }); assert.equal((await board()).year, 5786);
+  await call('PUT', '/admin/api/kiddush/settings', { boardYear: 0 }, { headers: adm }); assert.equal((await board()).year, 5787);
   const next = { key: '2027-09-25|shabbat', priceCents: 18000 }; // 5787's last Shabbat is sponsorable; 5788's first is not
   assert.equal((await call('POST', '/api/kiddush/sponsor', form({ key: '2027-10-09|shabbat', priceCents: 18000 }))).status, 404);
   assert.equal((await call('POST', '/api/kiddush/sponsor', form(next))).status, 200);
