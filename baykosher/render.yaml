@@ -13,6 +13,8 @@ services:
     envVars:
       - key: NODE_VERSION
         value: "22"
+      - key: NOINDEX
+        value: "1"
       - key: DEMO
         value: "1"
       - key: ALLOW_FAKE_PAYMENTS
