@@ -1,0 +1,34 @@
+# DEMO blueprint for Bay Kosher (separate from the repo-root render.yaml, which is untouched).
+# In Render: New > Blueprint > pick this repo, and set "Blueprint file path" to baykosher/render.yaml.
+# Demo mode: sample products, fake payments (nothing is charged), emails/texts only logged.
+services:
+  - type: web
+    name: bay-kosher-demo
+    runtime: node
+    rootDir: baykosher
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server/index.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DEMO
+        value: "1"
+      - key: ALLOW_FAKE_PAYMENTS
+        value: "1"
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        value: demo-password-123
+      - key: PICKER_PIN
+        value: "1234"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bay-kosher-demo-db
+          property: connectionString
+databases:
+  - name: bay-kosher-demo-db
+    plan: free

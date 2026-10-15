@@ -21,6 +21,7 @@ const { createUber } = require('./delivery');
   const clover = env.CLOVER_MERCHANT_ID && env.CLOVER_TOKEN ? createClover({ merchantId: env.CLOVER_MERCHANT_ID, token: env.CLOVER_TOKEN, base: env.CLOVER_BASE || 'https://api.clover.com' }) : null;
   const uber = env.UBER_CLIENT_ID && env.UBER_CLIENT_SECRET && env.UBER_CUSTOMER_ID ? createUber({ clientId: env.UBER_CLIENT_ID, clientSecret: env.UBER_CLIENT_SECRET, customerId: env.UBER_CUSTOMER_ID }) : null;
   if (!env.ADMIN_PASSWORD || env.ADMIN_PASSWORD.length < 12) console.warn('Set ADMIN_PASSWORD (12+ characters) to use /admin.');
+  if (env.DEMO === '1') { await db.migrate(); await require('./seed').seedDemo(db); console.warn('DEMO mode: demo products added, fake payments, nothing is charged.'); }
   const a = await createApp({ env, db, payments, notifier, clover, uber, stripeEvents });
   a.jobs.start();
   if (clover && env.CLOVER_SYNC_MINUTES !== '0') {
