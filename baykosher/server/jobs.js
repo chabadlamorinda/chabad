@@ -3,7 +3,7 @@
 const { esc, money } = require('./core');
 const { t: tr } = require('./i18n');
 
-function createJobs({ db, settings, core, notifier, publicUrl = '' }) {
+function createJobs({ db, settings, core, notifier, publicUrl = '', mirror }) {
   async function abandonedCarts() {
     const cfg = (await settings.all()).abandoned;
     // first reminder after N minutes idle; later ones after N hours since the last reminder
@@ -36,6 +36,7 @@ function createJobs({ db, settings, core, notifier, publicUrl = '' }) {
     start() {
       const safe = (fn) => () => fn().catch((e) => console.error('job failed', e.message));
       timers = [setInterval(safe(abandonedCarts), 5 * 60000), setInterval(safe(() => core.cancelStale()), 10 * 60000)];
+      if (mirror && process.env.MIRROR_IMAGES !== '0') timers.push(setInterval(safe(async () => { const r = await mirror.run(10); if (r.done) core.dirty(); }), 10 * 60000));
       timers.forEach((t) => t.unref());
     },
     stop() { timers.forEach(clearInterval); timers = []; },

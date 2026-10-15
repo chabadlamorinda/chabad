@@ -36,7 +36,7 @@ function createCore({ db, settings, payments, notifier, geocoder, uber, clover, 
     const he = lang === 'he';
     const est = p.sold_by === 'lb' && p.est_weight_lb ? Number(p.est_weight_lb) : null;
     return {
-      id: p.id, slug: slugify(p.name), name: he && p.name_he ? p.name_he : p.name, name_en: p.name, brand: p.brand, est_weight_lb: est, pack_price_cents: est ? Math.round(e.price_cents * est) : null, featured: p.featured, size: p.size, upc: p.upc, image_url: p.image_url, sold_by: p.sold_by,
+      id: p.id, slug: slugify(p.name), name: he && p.name_he ? p.name_he : p.name, name_en: p.name, brand: p.brand, kosher_type: p.kosher_type, passover: p.passover, holidays: p.holidays ? p.holidays.split(',') : [], est_weight_lb: est, pack_price_cents: est ? Math.round(e.price_cents * est) : null, featured: p.featured, size: p.size, upc: p.upc, image_url: p.image_url, sold_by: p.sold_by,
       price_cents: e.price_cents, was_cents: e.was_cents, sale_name: e.sale_name, percent_off: e.percent_off,
       category_id: p.category_id, category_name: he && p.category_name_he ? p.category_name_he : p.category_name, category_slug: p.category_slug,
       stock_status: pricing.stockStatus(p), stock: p.track_stock ? Number(p.stock) : null, kosher_cert: p.kosher_cert,
@@ -50,7 +50,7 @@ function createCore({ db, settings, payments, notifier, geocoder, uber, clover, 
     index.build(rows); indexAt = Date.now(); indexDirty = false;
   }
 
-  async function listProducts({ category, q, sale, ids, limit = 48, offset = 0, inStockOnly = false, sort = '', lang = 'en', featured = false }) {
+  async function listProducts({ category, q, sale, ids, limit = 48, offset = 0, inStockOnly = false, sort = '', lang = 'en', featured = false, passover = false, kosher = '', holiday = '' }) {
     const sales = await activeSales();
     let rows;
     if (q) {
@@ -70,6 +70,9 @@ function createCore({ db, settings, payments, notifier, geocoder, uber, clover, 
     }
     let items = rows.map((r) => present(r, sales, lang));
     if (featured) items = items.filter((i) => i.featured);
+    if (passover) items = items.filter((i) => i.passover === 'yes');
+    if (kosher) items = items.filter((i) => i.kosher_type === kosher);
+    if (holiday) items = items.filter((i) => i.holidays.includes(holiday));
     if (sale) items = items.filter((i) => i.was_cents);
     if (inStockOnly) items = items.filter((i) => i.stock_status !== 'out');
     if (!q) {

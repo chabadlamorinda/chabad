@@ -49,6 +49,7 @@ test('every string used in the code has a Hebrew translation (nothing ships untr
   const missing = new Set();
   for (const f of files) { const s = fs.readFileSync(path.join(__dirname, '..', f), 'utf8'); let m; while ((m = re.exec(s))) { if (m[1] === '`' && m[2].includes('${')) continue; const k = m[2].replace(/\\'/g, "'").replace(/\\"/g, '"'); if (!HE[k]) missing.add(k); } }
   for (const k of DYNAMIC_KEYS) if (!HE[k]) missing.add(k);
+  for (const f of require('./areas').FAQ) { if (!HE[f.q]) missing.add(f.q); if (!HE[f.a]) missing.add(f.a); }
   assert.deepEqual([...missing], []);
   // placeholders must survive translation
   for (const [k, v] of Object.entries(HE)) assert.deepEqual((k.match(/\{\w+\}/g) || []).sort(), (v.match(/\{\w+\}/g) || []).sort(), k);

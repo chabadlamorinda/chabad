@@ -76,3 +76,9 @@ label.f{display:block;margin:10px 0 4px;font-weight:600;font-size:.92rem}input.i
 .slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0;border-radius:16px;margin:16px 0;-webkit-overflow-scrolling:touch}
 .slider .slide{flex:0 0 100%;scroll-snap-align:start;display:block}.slider img{width:100%;display:block;object-fit:cover}.slider .mob{display:none}
 @media(max-width:820px){.slider .dsk{display:none}.slider .mob{display:block}.slider:not(:has(.mob)) .dsk{display:block}}
+
+.kb{display:flex;gap:4px;flex-wrap:wrap;margin:2px 0}.kt,.kp{font:700 .68rem system-ui;padding:2px 7px;border-radius:999px;background:#eef1ff;color:var(--blue)}
+.kt.meat{background:#fde8e8;color:#9b1c1c}.kt.dairy{background:#e8f1fd;color:#1c4f9b}.kt.pareve{background:#fff6dc;color:#8a6200}.kp{background:#e7f6ec;color:var(--ok)}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none;margin:2px}.chips a.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.nav a.on{background:var(--blue2)}.nav a.hol{background:#ffffff22}.passbar{background:#e7f6ec;color:#05603a;padding:8px 0;font-weight:600;text-align:center}
+details.faq{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;background:#fff}details.faq summary{cursor:pointer;font-weight:600}

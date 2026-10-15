@@ -23,6 +23,8 @@ function fromOpenFoodFacts(code, j) {
     source: 'openfoodfacts', upc: code, name, brand: clean((p.brands || '').split(',')[0]), size: clean(p.quantity),
     description: clean(p.generic_name_en || p.generic_name), ingredients: clean(p.ingredients_text_en || p.ingredients_text),
     nutrition, image_url: p.image_front_url || p.image_url || '', allergens: clean(p.allergens_from_ingredients || ''),
+    // a printed label claim is only a hint; the owner confirms before anything is shown as kosher for Passover
+    passover_hint: (p.labels_tags || []).some((l) => /passover|pesach/i.test(l)),
   };
 }
 

@@ -13,6 +13,7 @@ const { createJobs } = require('./jobs');
 const { createUpcLookup } = require('./upc');
 const { createGeocoder } = require('./delivery');
 const { seedDepartments } = require('./seed');
+const { createMirror } = require('./mirror');
 const notifyRef = require('./notifyRef');
 const { t: tr, HE } = require('./i18n');
 
@@ -27,7 +28,8 @@ async function createApp(deps) {
   const core = createCore({ db, settings, payments: deps.payments, notifier, geocoder: deps.geocoder || createGeocoder(), uber: deps.uber, clover: deps.clover, publicUrl });
   const upc = deps.upc || createUpcLookup();
   const back = createBackoffice({ db, settings, core, notifier, upc, publicUrl });
-  const jobs = createJobs({ db, settings, core, notifier, publicUrl });
+  const mirror = deps.mirror || createMirror(db);
+  const jobs = createJobs({ db, settings, core, notifier, publicUrl, mirror });
   const secret = env.SESSION_SECRET || (env.NODE_ENV === 'production' ? null : 'dev-secret-change-me');
   if (!secret) throw new Error('SESSION_SECRET is required in production');
   const auth = createAuth(secret);
@@ -44,7 +46,7 @@ async function createApp(deps) {
   app.set('trust proxy', 1);
   app.disable('x-powered-by');
   // Language: pages under /he/ are Hebrew (right-to-left); everything else is English. The API follows the X-Lang header.
-  const PAGE = /^\/(?:$|c\/|p\/|sale$|search$|store$|cart$|checkout$|account$|order\/)/;
+  const PAGE = /^\/(?:$|c\/|p\/|sale$|search$|store$|cart$|checkout$|account$|order\/|holiday\/|areas|faq$)/;
   app.use((req, res, next) => {
     const p = req.path;
     if (p === '/he' || p.startsWith('/he/')) { req.lang = 'he'; const rest = req.url.slice(3); req.url = !rest || rest.startsWith('?') ? '/' + rest : rest; return next(); }
@@ -52,6 +54,12 @@ async function createApp(deps) {
     // remembered choice: someone who picked Hebrew lands on the Hebrew page
     if (req.method === 'GET' && PAGE.test(p) && /(?:^|;\s*)bk_lang=he/.test(req.headers.cookie || '')) return res.redirect(302, '/he' + (p === '/' ? '' : p) + (req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : ''));
     next();
+  });
+  app.use((req, res, next) => { req.passover = req.query.passover === '1' || (req.query.passover !== '0' && /(?:^|;\s*)bk_passover=1/.test(req.headers.cookie || '')); next(); });
+  app.get('/img/:hash', async (req, res) => {
+    const im = /^[a-f0-9]{64}$/.test(req.params.hash) ? await db.one('SELECT content_type, data FROM images WHERE hash=$1', [req.params.hash]) : null;
+    if (!im) return res.status(404).end();
+    res.set({ 'Content-Type': im.content_type, 'Cache-Control': 'public, max-age=31536000, immutable', 'X-Content-Type-Options': 'nosniff', 'Content-Security-Policy': "default-src 'none'; sandbox" }).send(im.data);
   });
   app.get('/static/i18n.js', (req, res) => res.type('application/javascript').set('Cache-Control', 'public, max-age=300').send('window.__HE=' + JSON.stringify(HE) + ';'));
   app.use((req, res, next) => {
@@ -74,7 +82,7 @@ async function createApp(deps) {
       res.json({ received: true });
     };
   }
-  app.use('/api', createApi({ db, settings, core, back, auth, limiter, env, stripeWebhook, clover: deps.clover, syncCloverNow }));
+  app.use('/api', createApi({ db, settings, core, back, auth, limiter, env, mirror, stripeWebhook, clover: deps.clover, syncCloverNow }));
   if (deps.payments.kind === 'fake') { // lets you click through checkout without Stripe
     app.post('/api/dev/pay/:id', express.json(), async (req, res) => { const o = await db.one('SELECT payment_intent_id FROM orders WHERE id=$1', [req.params.id]); deps.payments.confirm(o.payment_intent_id); res.json({ ok: true }); });
   }
@@ -87,13 +95,17 @@ async function createApp(deps) {
   app.get('/manifest.webmanifest', (req, res) => res.json({ name: 'Bay Kosher', short_name: 'Bay Kosher', start_url: '/', display: 'standalone', background_color: '#ffffff', theme_color: '#00209f', icons: [{ src: '/static/icon.svg', sizes: 'any', type: 'image/svg+xml' }] }));
   app.get('/sitemap.xml', async (req, res) => res.type('application/xml').send(await sitemap()));
   app.get('/robots.txt', (req, res) => res.type('text/plain').send(robots()));
-  const html = (fn) => async (req, res) => { res.set('Cache-Control', 'public, max-age=60').type('html').send(await fn(req)); };
+  const html = (fn) => async (req, res) => { res.set({ 'Cache-Control': 'public, max-age=60', Vary: 'Cookie, Accept-Encoding' }).type('html').send(await fn(req)); };
   app.get('/', html(pages.home));
   app.get('/c/:slug', html(pages.category));
   app.get('/p/:idslug', html(pages.product));
   app.get('/sale', html(pages.sale));
   app.get('/search', html(pages.search));
   app.get('/store', html(pages.store));
+  app.get('/holiday/:slug', html(pages.holiday));
+  app.get('/areas', html(pages.areas));
+  app.get('/areas/:slug', html(pages.area));
+  app.get('/faq', html(pages.faq));
   for (const [route, title] of [['/cart', 'Cart'], ['/checkout', 'Checkout'], ['/account', 'Account'], ['/order/:id', 'Order']]) app.get(route, async (req, res) => res.set('Cache-Control', 'no-store').type('html').send(await pages.app(title)(req)));
   app.get('/cart/resume/:id', async (req, res) => {
     const c = await db.one('SELECT id FROM carts WHERE id=$1', [req.params.id]);
@@ -116,7 +128,7 @@ async function createApp(deps) {
     res.status(status).type('html').send(`<!doctype html><meta charset="utf-8"><body dir="${req.lang === 'he' ? 'rtl' : 'ltr'}" style="font-family:sans-serif;padding:2em"><h2>${esc(msg)}</h2><p><a href="${req.lang === 'he' ? '/he' : '/'}">${tr(req.lang, 'Back to Bay Kosher')}</a></p>`);
   });
 
-  return { app, db, core, back, jobs, settings, auth, syncClover: deps.clover ? syncCloverNow : null, close: async () => { jobs.stop(); await db.close(); } };
+  return { app, db, core, back, mirror, jobs, settings, auth, syncClover: deps.clover ? syncCloverNow : null, close: async () => { jobs.stop(); await db.close(); } };
 }
 
 module.exports = { createApp };

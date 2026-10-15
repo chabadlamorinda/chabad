@@ -36,6 +36,9 @@ async function seedDemo(db) {
     const pack = name.startsWith('Chuck Eye') ? 2.4 : name === 'Whole Chicken' ? 4.1 : null;
     await db.q(`INSERT INTO products (name, name_he, brand, size, category_id, supplier_id, sold_by, est_weight_lb, price_cents, cost_cents, stock, upc, description, active) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,'Demo product.',TRUE) ON CONFLICT DO NOTHING`, [name, he[name] || '', brand, size, cat[c], sup.id, by, pack, price, cost, stock, upc]);
   }
+  // sample kosher type / Passover / holiday data so the demo shows badges, the Passover switch and holiday pages
+  const kt = { 'Whole Chicken': ['meat', 'yes', 'pesach'], 'Chuck Eye Roast - Regular Large Roast': ['meat', 'yes', 'pesach'], 'Cholov Yisroel Whole Milk': ['dairy', 'yes', ''], 'Pereg Tahini': ['pareve', 'yes', 'pesach'], 'Round Challah': ['pareve', 'no', ''], 'Osem Original Plain Couscous': ['pareve', 'no', ''], 'Elite Chocolate With Strawberry Filling': ['dairy', 'no', 'chanukah'], 'Of Tov Fully Cooked Chicken Meat Balls': ['meat', 'no', ''] };
+  for (const [name, [k, pv, h]] of Object.entries(kt)) await db.q('UPDATE products SET kosher_type=$2, passover=$3, holidays=$4 WHERE name=$1', [name, k, pv, h]);
   await db.q(`INSERT INTO sales (name, kind, value, scope_type, scope_value) SELECT 'Demo: 15% off Osem', 'percent', 15, 'brand', 'Osem' WHERE NOT EXISTS (SELECT 1 FROM sales WHERE name = 'Demo: 15% off Osem')`);
 }
 

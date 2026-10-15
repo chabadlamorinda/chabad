@@ -69,6 +69,12 @@
     else if (inc || dec) { const s = e.target.closest('.stepper'); if (!s.dataset.sid) return; const id = Number(s.dataset.sid), st = step(s.dataset.by, s.dataset.pack); setQty(id, Math.max(0, qtyOf(id) + (inc ? st : -st))); }
   });
 
+  // ---------- Passover-only switch (remembered in a cookie; the server filters every page) ----------
+  const setPassover = (on) => { try { document.cookie = 'bk_passover=' + (on ? '1' : '0') + '; Path=/; Max-Age=' + (on ? 7776000 : 0) + '; SameSite=Lax'; } catch {} location.reload(); };
+  const passoverOn = /(?:^|;\s*)bk_passover=1/.test(document.cookie);
+  $('#passovertoggle')?.addEventListener('click', (e) => { e.preventDefault(); setPassover(!passoverOn); });
+  $('#passoveroff')?.addEventListener('click', (e) => { e.preventDefault(); setPassover(false); });
+
   // ---------- header: departments, search suggestions, subscribe ----------
   $('#deptbtn')?.addEventListener('click', (e) => { e.preventDefault(); const d = $('#dept'); d.hidden = !d.hidden; });
   $$('select[data-autosubmit]').forEach((s) => s.addEventListener('change', () => s.form.submit()));
@@ -80,7 +86,7 @@
     if (v.length < 2) { box.hidden = true; return; }
     st = setTimeout(async () => {
       try {
-        const r = await api('GET', '/api/suggest?q=' + encodeURIComponent(v));
+        const r = await api('GET', '/api/suggest?q=' + encodeURIComponent(v) + (passoverOn ? '&passover=1' : ''));
         if (q.value.trim() !== v) return;
         box.innerHTML = r.map((p) => `<a href="${P}/p/${p.id}-${esc(p.slug)}"><img src="${esc(p.image_url || '/static/noimage.svg')}" alt=""><span>${esc(p.name)}</span><small>${money(p.price_cents)}${p.sold_by === 'lb' ? '/' + t('lb') : ''}</small></a>`).join('') + `<a href="${P}/search?q=${encodeURIComponent(v)}"><span>${esc(t('See all results for "{q}"', { q: v }))}</span></a>`;
         box.hidden = false;
@@ -208,10 +214,34 @@
   async function accountPage() {
     const m = await api('GET', '/api/me');
     if (!m.signed_in) {
-      root.innerHTML = `<h1>${t('Sign in')}</h1><div class="panel" style="max-width:420px"><p class="hint">${t('Enter the email you order with. We will email you a 6-digit code. No password needed.')}</p><div id="s1"><label class="f" for="e">${t('Email')}</label><input class="i" id="e" type="email" dir="ltr" autocomplete="email"><button class="btn big" id="send" style="margin-top:12px">${t('Email me a code')}</button></div><div id="s2" hidden><label class="f" for="c">${t('6-digit code')}</label><input class="i" id="c" dir="ltr" inputmode="numeric" autocomplete="one-time-code" maxlength="6"><button class="btn big" id="verify" style="margin-top:12px">${t('Sign in')}</button></div><div id="err" class="err" hidden></div><p class="hint">${t('New here? Your account is created automatically the first time you check out.')}</p></div>`;
-      const err = (x) => { const e = $('#err'); e.textContent = x; e.hidden = !x; };
-      $('#send').addEventListener('click', async () => { err(''); try { await api('POST', '/api/auth/request', { email: $('#e').value }); $('#s1').hidden = true; $('#s2').hidden = false; $('#c').focus(); } catch (e) { err(e.message); } });
-      $('#verify').addEventListener('click', async () => { err(''); try { await api('POST', '/api/auth/verify', { email: $('#e').value, code: $('#c').value }); location.reload(); } catch (e) { err(e.message); } });
+      let mode = 'password', stage = 1, email = '';
+      const draw = () => {
+        const tab = (k, label) => `<button data-mode="${k}" class="${mode === k ? 'on' : ''}">${t(label)}</button>`;
+        root.innerHTML = `<h1>${t('Sign in')}</h1><div class="panel" style="max-width:440px"><div class="tabs">${tab('password', 'Password')}${tab('code', 'Email code')}${tab('create', 'Create account')}</div>
+        ${stage === 1 ? `<label class="f" for="e">${t('Email')}</label><input class="i" id="e" type="email" dir="ltr" autocomplete="email" value="${esc(email)}">
+          ${mode === 'create' ? `<label class="f" for="n">${t('Name')}</label><input class="i" id="n" autocomplete="name">` : ''}
+          ${mode !== 'code' ? `<label class="f" for="pw">${t(mode === 'create' ? 'Choose a password (8+ characters)' : 'Password')}</label><input class="i" id="pw" type="password" dir="ltr" autocomplete="${mode === 'create' ? 'new-password' : 'current-password'}">` : `<p class="hint">${t('Enter the email you order with. We will email you a 6-digit code. No password needed.')}</p>`}
+          <button class="btn big" id="go" style="margin-top:12px">${t(mode === 'password' ? 'Sign in' : mode === 'code' ? 'Email me a code' : 'Create my account')}</button>
+          ${mode === 'password' ? `<p class="hint"><a href="#" id="forgot">${t('Forgot your password? Email me a code.')}</a></p>` : ''}`
+        : `<p class="hint">${t('We emailed you a code to confirm your email.')}</p><label class="f" for="c">${t('6-digit code')}</label><input class="i" id="c" dir="ltr" inputmode="numeric" autocomplete="one-time-code" maxlength="6"><button class="btn big" id="verify" style="margin-top:12px">${t('Confirm')}</button>`}
+        <div id="err" class="err" hidden></div><p class="hint">${t('New here? Your account is created automatically the first time you check out.')}</p></div>`;
+        const err = (x) => { const el = $('#err'); el.textContent = x; el.hidden = !x; };
+        $$('[data-mode]').forEach((b) => b.addEventListener('click', () => { mode = b.dataset.mode; stage = 1; draw(); }));
+        $('#forgot')?.addEventListener('click', (e) => { e.preventDefault(); email = $('#e').value; mode = 'code'; stage = 1; draw(); });
+        const run = async () => {
+          err(''); if (stage === 1) email = $('#e').value;
+          try {
+            if (stage === 2) { await api('POST', '/api/auth/verify', { email, code: $('#c').value }); return location.reload(); }
+            if (mode === 'password') { await api('POST', '/api/auth/login', { email, password: $('#pw').value }); return location.reload(); }
+            if (mode === 'code') await api('POST', '/api/auth/request', { email });
+            else await api('POST', '/api/auth/register', { email, name: $('#n').value, password: $('#pw').value });
+            stage = 2; draw(); $('#c').focus();
+          } catch (e) { err(e.message); }
+        };
+        ($('#go') || $('#verify')).addEventListener('click', run);
+        root.querySelectorAll('input').forEach((i) => i.addEventListener('keydown', (e) => e.key === 'Enter' && run()));
+      };
+      draw();
       return;
     }
     const c = m.customer;
@@ -219,9 +249,11 @@
     root.innerHTML = `<h1>${c.name ? t('Hi, {name}', { name: esc(c.name.split(' ')[0]) }) : t('Hi')}</h1>
     <h2 id="buyagain">${t('Buy again')}</h2>${m.buy_again.length ? `<div class="grid">${m.buy_again.map(miniCard).join('')}</div>` : `<p class="empty">${t('Items you order will show up here for one-tap reordering.')}</p>`}
     <h2>${t('Your orders')}</h2><div class="panel">${m.orders.length ? m.orders.map((o) => `<div class="tot"><a href="${P}/order/${o.id}?t=${o.public_token}">#${o.id} &middot; ${new Date(o.created_at).toLocaleDateString(LOC)}</a><span><span class="tag ${o.status === 'ready' ? 'ready' : ''}">${esc(stLabel(o.status))}</span> ${money(o.total_cents)} <button class="rm" data-reorder="${o.id}">${t('Reorder')}</button></span></div>`).join('') : `<p class="empty">${t('No orders yet.')}</p>`}</div>
-    <h2>${t('Preferences')}</h2><div class="panel" style="max-width:520px"><label class="f" for="pn">${t('Name')}</label><input class="i" id="pn" value="${esc(c.name)}"><label class="f" for="pp">${t('Mobile phone')}</label><input class="i" id="pp" type="tel" dir="ltr" value="${esc(c.phone)}"><label class="opt"><input type="checkbox" id="psms" ${c.sms_ok ? 'checked' : ''}><span>${t('Text me about my orders and cart reminders')}</span></label><label class="opt"><input type="checkbox" id="pem" ${c.email_ok ? 'checked' : ''}><span>${t('Email me the weekly specials')}</span></label><label class="f" for="psub">${t('Default when something is out of stock')}</label><select class="i" id="psub">${[['substitute', 'Substitute something similar'], ['call_sub', 'Call me; if no answer, substitute'], ['call_no_sub', 'Call me; if no answer, do not substitute'], ['never', 'Never substitute']].map(([v, tt]) => `<option value="${v}" ${c.default_sub_pref === v ? 'selected' : ''}>${t(tt)}</option>`).join('')}</select><button class="btn" id="psave" style="margin-top:12px">${t('Save')}</button> <button class="btn ghost" id="logout" style="margin-top:12px">${t('Sign out')}</button></div>`;
+    <h2>${t('Preferences')}</h2><div class="panel" style="max-width:520px"><label class="f" for="pn">${t('Name')}</label><input class="i" id="pn" value="${esc(c.name)}"><label class="f" for="pp">${t('Mobile phone')}</label><input class="i" id="pp" type="tel" dir="ltr" value="${esc(c.phone)}"><label class="opt"><input type="checkbox" id="psms" ${c.sms_ok ? 'checked' : ''}><span>${t('Text me about my orders and cart reminders')}</span></label><label class="opt"><input type="checkbox" id="pem" ${c.email_ok ? 'checked' : ''}><span>${t('Email me the weekly specials')}</span></label><label class="f" for="psub">${t('Default when something is out of stock')}</label><select class="i" id="psub">${[['substitute', 'Substitute something similar'], ['call_sub', 'Call me; if no answer, substitute'], ['call_no_sub', 'Call me; if no answer, do not substitute'], ['never', 'Never substitute']].map(([v, tt]) => `<option value="${v}" ${c.default_sub_pref === v ? 'selected' : ''}>${t(tt)}</option>`).join('')}</select><h3 style="margin:18px 0 4px">${t(c.has_password ? 'Change password' : 'Set a password')}</h3><input class="i" id="newpw" type="password" dir="ltr" autocomplete="new-password" placeholder="${esc(t('New password'))}"><button class="btn ghost small" id="pwsave" style="margin-top:8px">${t('Save password')}</button>
+    <br><button class="btn" id="psave" style="margin-top:12px">${t('Save')}</button> <button class="btn ghost" id="logout" style="margin-top:12px">${t('Sign out')}</button></div>`;
     syncCards();
     $('#psave').addEventListener('click', async () => { await api('PUT', '/api/me', { name: $('#pn').value, phone: $('#pp').value, sms_ok: $('#psms').checked, email_ok: $('#pem').checked, default_sub_pref: $('#psub').value }); toast(t('Saved')); });
+    $('#pwsave').addEventListener('click', async () => { try { await api('POST', '/api/auth/password', { password: $('#newpw').value }); $('#newpw').value = ''; toast(t('Password saved')); } catch (e) { toast(e.message); } });
     $('#logout').addEventListener('click', async () => { await api('POST', '/api/auth/logout', {}); location.reload(); });
     $$('[data-reorder]').forEach((b) => b.addEventListener('click', async () => { const r = await api('POST', `/api/orders/${b.dataset.reorder}/reorder`, {}); items = r.items; saveCart(); location.href = P + '/cart'; }));
   }

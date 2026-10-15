@@ -3,6 +3,9 @@
 'use strict';
 const { esc, money, slugify, httpErr } = require('./core');
 const { t: tr } = require('./i18n');
+const { HOLIDAYS, holidayInfo, inSeason } = require('./holidays');
+const { AREAS, FAQ } = require('./areas');
+const { miles, deliveryFee } = require('./delivery');
 
 const DAYS = [['mon', 'Monday'], ['tue', 'Tuesday'], ['wed', 'Wednesday'], ['thu', 'Thursday'], ['fri', 'Friday'], ['sat', 'Saturday'], ['sun', 'Sunday']];
 const t12 = (t, lang) => { const [h, m] = t.split(':').map(Number); return `${((h + 11) % 12) + 1}:${String(m).padStart(2, '0')} ${h >= 12 ? 'PM' : 'AM'}`; };
@@ -20,6 +23,9 @@ function createPages({ core, settings, db, publicUrl = '' }) {
     const alt = canonical && !noindex ? `<link rel="alternate" hreflang="en" href="${esc(abs(canonical.replace(/^\/he/, '') || '/'))}"><link rel="alternate" hreflang="he" href="${esc(abs('/he' + (canonical.replace(/^\/he/, '') === '/' ? '' : canonical.replace(/^\/he/, ''))))}"><link rel="alternate" hreflang="x-default" href="${esc(abs(canonical.replace(/^\/he/, '') || '/'))}">` : '';
     const switchTo = other + (here === '/' ? '' : here) || '/';
     const nm = lang === 'he' ? 'בייקושר' : s.store.name;
+    const seasonal = inSeason(new Date());
+    const mode = (s.holidays && s.holidays.passover_toggle) || 'auto';
+    const showToggle = mode === 'on' || (mode === 'auto' && seasonal.some((h) => h.slug === 'pesach')) || !!req.passover;
     return `<!doctype html><html lang="${lang}" dir="${lang === 'he' ? 'rtl' : 'ltr'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}">
 ${canonical ? `<link rel="canonical" href="${esc(abs(canonical))}">` : ''}${alt}${noindex ? '<meta name="robots" content="noindex">' : ''}
@@ -29,11 +35,13 @@ ${canonical ? `<link rel="canonical" href="${esc(abs(canonical))}">` : ''}${alt}
 <form class="search" action="${pre}/search" role="search" autocomplete="off"><input name="q" id="q" type="search" placeholder="${esc(t('What can we help you find?'))}" aria-label="${esc(t('Search products'))}" value="${esc(req.query.q || '')}"><button aria-label="${esc(t('Search'))}">&#128269;</button><div id="suggest" class="suggest" hidden></div></form>
 <a class="btn small langsw" href="${switchTo}" hreflang="${lang === 'he' ? 'en' : 'he'}" data-setlang="${lang === 'he' ? 'en' : 'he'}">${lang === 'he' ? 'English' : 'עברית'}</a>
 <a class="btn small" id="acct" href="${pre}/account">${esc(t('Sign in'))}</a><a class="cartbtn" href="${pre}/cart" aria-label="${esc(t('Cart'))}">&#128722;<span id="cartcount" hidden>0</span></a></div>
-<nav class="wrap nav"><a href="#" id="deptbtn">&#9776; ${esc(t('Departments'))}</a><a href="${pre}/sale">${esc(t('Specials'))}</a><a href="${pre}/account#buyagain">${esc(t('Buy again'))}</a><a href="${pre}/store">${esc(t('Store & hours'))}</a></nav>
+<nav class="wrap nav"><a href="#" id="deptbtn">&#9776; ${esc(t('Departments'))}</a><a href="${pre}/sale">${esc(t('Specials'))}</a><a href="${pre}/account#buyagain">${esc(t('Buy again'))}</a>${seasonal.map((h) => `<a href="${pre}/holiday/${h.slug}" class="hol">${esc(lang === 'he' ? h.he : h.name)}</a>`).join('')}${showToggle ? `<a href="#" id="passovertoggle" class="${req.passover ? 'on' : ''}" role="switch" aria-checked="${req.passover ? 'true' : 'false'}">${esc(t('Kosher for Passover only'))}: ${esc(t(req.passover ? 'ON' : 'OFF'))}</a>` : ''}<a href="${pre}/store">${esc(t('Store & hours'))}</a></nav>
+${req.passover ? `<div class="passbar"><div class="wrap">${esc(t('Showing only Kosher for Passover items.'))} <a href="#" id="passoveroff">${esc(t('Show everything'))}</a></div></div>` : ''}
 <div id="dept" class="dept" hidden><div class="wrap">${cats.map((c) => `<a href="${pre}/c/${esc(c.slug)}">${c.image_url ? `<img src="${esc(c.image_url)}" alt="" loading="lazy">` : ''}<span>${esc(c.name)}</span></a>`).join('')}</div></div></header>
 <main class="wrap">${body}</main>
 <footer><div class="wrap foot"><div><b>${esc(nm)}</b><br>${esc(s.store.address)}<br><a href="tel:${esc(s.store.phone.replace(/[^\d+]/g, ''))}" dir="ltr">${esc(s.store.phone)}</a><br>${esc(s.store.email)}</div>
 <div><b>${esc(t('Hours'))}</b><br>${DAYS.map(([k, n]) => `${esc(t(n))}: <span dir="ltr">${s.hours[k] ? t12(s.hours[k][0]) + ' - ' + t12(s.hours[k][1]) : esc(t('Closed'))}</span>`).join('<br>')}</div>
+<div><b>${esc(t('Shop & learn'))}</b><br>${HOLIDAYS.map((h) => `<a href="${pre}/holiday/${h.slug}">${esc(lang === 'he' ? h.he : h.name)}</a>`).join('<br>')}<br><a href="${pre}/areas">${esc(t('Where we deliver'))}</a><br><a href="${pre}/faq">${esc(t('Questions & answers'))}</a></div>
 <form id="subform"><b>${esc(t('Weekly specials by email'))}</b><br><input type="email" name="email" placeholder="you@example.com" required aria-label="Email" dir="ltr"> <button class="btn small">${esc(t('Join'))}</button><div id="submsg" role="status"></div></form></div></footer>
 <script src="/static/i18n.js" defer></script><script src="/static/app.js" defer></script></body></html>`;
   }
@@ -46,11 +54,13 @@ ${canonical ? `<link rel="canonical" href="${esc(abs(canonical))}">` : ''}${alt}
     const main = p.est_weight_lb ? p.pack_price_cents : p.price_cents;
     return `<article class="card${p.stock_status === 'out' ? ' out' : ''}" data-id="${p.id}">
 <a href="${href}" class="img">${p.percent_off ? `<span class="badge">${p.percent_off}% ${esc(t('OFF'))}</span>` : ''}<img src="${esc(p.image_url || '/static/noimage.svg')}" alt="${esc(p.name)}" loading="lazy" width="200" height="200"></a>
-<a href="${href}" class="nm">${esc(p.name)}</a><div class="sz">${esc(p.size)}${p.est_weight_lb ? ` ${esc(t('about {w} lb per pack', { w: p.est_weight_lb }))}` : ''}</div>
+<a href="${href}" class="nm">${esc(p.name)}</a>${badges(p, t)}<div class="sz">${esc(p.size)}${p.est_weight_lb ? ` ${esc(t('about {w} lb per pack', { w: p.est_weight_lb }))}` : ''}</div>
 <div class="pr">${p.was_cents ? `<b class="sale">${money(main)}</b> <s>${money(Math.round(p.was_cents * (p.est_weight_lb || 1)))}</s>` : `<b>${money(main)}</b>`} ${per}</div>
 ${p.stock_status === 'low' ? `<div class="warn">${esc(t('Low stock'))}${p.stock != null ? ` (${esc(t('{n} left', { n: p.stock }))})` : ''}</div>` : ''}
 ${p.stock_status === 'out' ? `<div class="warn">${esc(t('Out of stock'))}</div><button class="btn add" disabled>${esc(t('Unavailable'))}</button>` : `<button class="btn add" data-add="${p.id}" data-by="${p.sold_by}" data-pack="${p.est_weight_lb ? 1 : 0}" data-name="${esc(p.name)}">${esc(t(p.sold_by === 'lb' && !p.est_weight_lb ? 'Add (1 lb)' : 'Add'))}</button>`}</article>`;
   };
+  const KT = { meat: 'Meat', dairy: 'Dairy', pareve: 'Pareve' };
+  const badges = (p, t) => (p.kosher_type || p.passover === 'yes' ? `<div class="kb">${p.kosher_type ? `<span class="kt ${p.kosher_type}">${esc(t(KT[p.kosher_type]))}</span>` : ''}${p.passover === 'yes' ? `<span class="kp">${esc(t('Kosher for Passover'))}</span>` : ''}</div>` : '');
   const grid = (items, lang) => items.length ? `<div class="grid">${items.map((p) => card(p, lang)).join('')}</div>` : `<p class="empty">${esc(tr(lang, 'Nothing here yet.'))}</p>`;
   const crumbs = (list) => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list.map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: abs(url) })) });
 
@@ -67,8 +77,8 @@ ${p.stock_status === 'out' ? `<div class="warn">${esc(t('Out of stock'))}</div><
     async home(req) {
       const lang = req.lang, t = (k, v) => tr(lang, k, v), pre = lang === 'he' ? '/he' : '';
       const cats = (await core.categories(lang)).filter((c) => !c.parent_id && c.product_count > 0);
-      const sale = (await core.listProducts({ sale: true, sort: 'discount', limit: 12, inStockOnly: true, lang })).items;
-      let featured = (await core.listProducts({ featured: true, limit: 12, lang, inStockOnly: true })).items;
+      const sale = (await core.listProducts({ sale: true, sort: 'discount', limit: 12, inStockOnly: true, lang, passover: req.passover })).items;
+      let featured = (await core.listProducts({ featured: true, limit: 12, lang, inStockOnly: true, passover: req.passover })).items;
       if (!featured.length) {
         const feat = (await db.rows(`SELECT id FROM products WHERE active AND image_url <> '' AND (NOT track_stock OR stock > 0) ORDER BY (SELECT count(*) FROM order_items oi WHERE oi.product_id = products.id) DESC, id DESC LIMIT 12`)).map((r) => r.id);
         featured = feat.length ? (await core.listProducts({ ids: feat, lang })).items : [];
@@ -90,10 +100,12 @@ ${sale.length ? `<h2>${esc(t("This week's specials"))}</h2>${grid(sale, lang)}<p
       if (!cat) throw httpErr(404, t('Department not found'));
       const sort = ['price_asc', 'price_desc', 'discount'].includes(req.query.sort) ? req.query.sort : '';
       const subs = all.filter((c) => c.parent_id === cat.id);
-      const { items } = await core.listProducts({ category: cat.slug, limit: 100, sort, lang });
+      const kosher = ['meat', 'dairy', 'pareve'].includes(req.query.kosher) ? req.query.kosher : '';
+      const { items } = await core.listProducts({ category: cat.slug, limit: 100, sort, lang, passover: req.passover, kosher });
       const body = `<nav class="crumbs"><a href="${pre || '/'}">${esc(t('Home'))}</a> / ${esc(cat.name)}</nav><h1>${esc(t('Kosher {name}', { name: cat.name }))}</h1>${subs.length ? `<div class="chips">${subs.map((c) => `<a href="${pre}/c/${esc(c.slug)}">${esc(c.name)}</a>`).join('')}</div>` : ''}
+<div class="chips kchips"><a href="${pre}/c/${esc(cat.slug)}"${kosher ? '' : ' class="on"'}>${esc(t('All'))}</a>${['meat', 'dairy', 'pareve'].map((k) => `<a href="${pre}/c/${esc(cat.slug)}?kosher=${k}"${kosher === k ? ' class="on"' : ''} rel="nofollow">${esc(t(KT[k]))}</a>`).join('')}</div>
 <form class="sortbar"><label>${esc(t('Sort'))} <select name="sort" data-autosubmit><option value="">${esc(t('Featured'))}</option><option value="price_asc"${sort === 'price_asc' ? ' selected' : ''}>${esc(t('Price: low to high'))}</option><option value="price_desc"${sort === 'price_desc' ? ' selected' : ''}>${esc(t('Price: high to low'))}</option><option value="discount"${sort === 'discount' ? ' selected' : ''}>${esc(t('Biggest discount'))}</option></select></label></form>${grid(items, lang)}`;
-      return layout(req, { title: t('Kosher {name} | Buy Online in the Bay Area | Bay Kosher', { name: cat.name }), description: t('Shop kosher {name} online at Bay Kosher in Lafayette, CA. Pickup or delivery across the Bay Area.', { name: cat.name }), body, canonical: `${pre}/c/${cat.slug}`, path: `/c/${cat.slug}`, ld: [crumbs([[t('Home'), pre || '/'], [cat.name, `${pre}/c/${cat.slug}`]]), { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: items.slice(0, 30).map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(`${pre}/p/${p.id}-${p.slug}`), name: p.name })) }] });
+      return layout(req, { title: t('Kosher {name} | Buy Online in the Bay Area | Bay Kosher', { name: cat.name }), description: t('Shop kosher {name} online at Bay Kosher in Lafayette, CA. Pickup or delivery across the Bay Area.', { name: cat.name }), body, canonical: `${pre}/c/${cat.slug}`, path: `/c/${cat.slug}`, noindex: !!kosher, ld: [crumbs([[t('Home'), pre || '/'], [cat.name, `${pre}/c/${cat.slug}`]]), { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: items.slice(0, 30).map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(`${pre}/p/${p.id}-${p.slug}`), name: p.name })) }] });
     },
     async product(req) {
       const lang = req.lang, t = (k, v) => tr(lang, k, v), pre = lang === 'he' ? '/he' : '';
@@ -113,6 +125,7 @@ ${sale.length ? `<h2>${esc(t("This week's specials"))}</h2>${grid(sale, lang)}<p
 <div class="bigpr">${priceHtml} <small>${pack ? `${esc(t('per pack'))} &middot; <span dir="ltr">${money(p.price_cents)} / ${esc(t('lb'))}</span>` : p.sold_by === 'lb' ? esc(t('per lb')) : ''}</small></div>${pack ? `<div class="hint">${esc(t('about {w} lb per pack', { w: pack }))}</div>` : ''}
 ${p.stock_status === 'low' ? `<div class="warn">${esc(t('Low stock'))}${p.stock != null ? `: ${esc(t('only {n} left', { n: p.stock }))}` : ''}</div>` : ''}
 ${p.stock_status === 'out' ? `<div class="warn">${esc(t('Currently out of stock'))}</div>` : `<div class="addrow" data-id="${p.id}"><button class="btn add" data-add="${p.id}" data-by="${p.sold_by}" data-pack="${pack ? 1 : 0}" data-name="${esc(p.name)}">${esc(t('Add to cart'))}</button></div>${p.sold_by === 'lb' ? `<p class="hint">${esc(t('Priced by weight. You are charged for the exact weight we pack.'))}</p>` : ''}`}
+${badges(p, t)}${p.holidays.length ? `<p>${p.holidays.map((h) => { const hi = HOLIDAYS.find((x) => x.slug === h); return hi ? `<a class="chip" href="${pre}/holiday/${h}">${esc(lang === 'he' ? hi.he : hi.name)}</a>` : ''; }).join(' ')}</p>` : ''}
 ${p.kosher_cert ? `<p><b>${esc(t('Kosher supervision:'))}</b> ${esc(p.kosher_cert)}</p>` : ''}${p.description ? `<h2>${esc(t('About this product'))}</h2><p>${esc(p.description)}</p>` : ''}${p.ingredients ? `<h2>${esc(t('Ingredients'))}</h2><p dir="auto">${esc(p.ingredients)}</p>` : ''}
 ${nutRows.length ? `<h2>${esc(t('Nutrition'))}</h2><table class="nut">${nutRows.map(([k, v]) => `<tr><th>${esc(t(k))}</th><td>${esc(v)}</td></tr>`).join('')}</table>` : ''}</div></div>
 ${tog.length ? `<h2>${esc(t('Frequently bought together'))}</h2>${grid(tog, lang)}` : ''}${sim.length ? `<h2>${esc(t('Similar items'))}</h2>${grid(sim, lang)}` : ''}`;
@@ -123,13 +136,13 @@ ${tog.length ? `<h2>${esc(t('Frequently bought together'))}</h2>${grid(tog, lang
     },
     async sale(req) {
       const lang = req.lang, t = (k, v) => tr(lang, k, v), pre = lang === 'he' ? '/he' : '';
-      const { items } = await core.listProducts({ sale: true, sort: 'discount', limit: 200, lang });
+      const { items } = await core.listProducts({ sale: true, sort: 'discount', limit: 200, lang, passover: req.passover });
       return layout(req, { title: t('Kosher Grocery Specials & Weekly Sales | Bay Kosher'), description: t("This week's kosher grocery specials at Bay Kosher in Lafayette, CA."), body: `<h1>${esc(t('Specials'))}</h1>${grid(items, lang)}`, canonical: pre + '/sale', path: '/sale' });
     },
     async search(req) {
       const lang = req.lang, t = (k, v) => tr(lang, k, v);
       const q = String(req.query.q || '').slice(0, 80);
-      const { items, total } = q ? await core.listProducts({ q, limit: 60, lang }) : { items: [], total: 0 };
+      const { items, total } = q ? await core.listProducts({ q, limit: 60, lang, passover: req.passover }) : { items: [], total: 0 };
       return layout(req, { title: `${t('Search')}: ${q} | Bay Kosher`, description: t('Search Bay Kosher products'), noindex: true, body: `<h1>${q ? esc(t('Results for "{q}"', { q })) : esc(t('Search'))}</h1>${q ? `<p>${esc(t('{n} products', { n: total }))}</p>` : ''}${q && !total ? `<p class="empty">${esc(t('No matches. Try fewer words or a different spelling. Questions? Call us.'))}</p>` : ''}${grid(items, lang)}` });
     },
     async store(req) {
@@ -137,6 +150,57 @@ ${tog.length ? `<h2>${esc(t('Frequently bought together'))}</h2>${grid(tog, lang
       const s = await settings.all();
       return layout(req, { title: t('Store Location & Hours | Bay Kosher, Lafayette CA'), description: t('Visit Bay Kosher at {address}. Open Sunday to Friday.', { address: s.store.address }), canonical: pre + '/store', path: '/store', ld: [await storeLd(lang)],
         body: `<h1>${esc(t('Our location'))}</h1><p>${esc(s.store.address)}<br><a href="tel:${esc(s.store.phone.replace(/[^\d+]/g, ''))}" dir="ltr">${esc(s.store.phone)}</a><br>${esc(s.store.email)}</p><h2>${esc(t('Hours'))}</h2><table class="nut">${DAYS.map(([k, n]) => `<tr><th>${esc(t(n))}</th><td dir="ltr">${s.hours[k] ? t12(s.hours[k][0]) + ' - ' + t12(s.hours[k][1]) : esc(t('Closed'))}</td></tr>`).join('')}</table><p><a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(s.store.address)}">${esc(t('Get directions'))}</a></p>` });
+    },
+    async holiday(req) {
+      const lang = req.lang, t = (k, v) => tr(lang, k, v), pre = lang === 'he' ? '/he' : '';
+      const info = holidayInfo(req.params.slug);
+      if (!info) throw httpErr(404, t('Page not found'));
+      const name = lang === 'he' ? info.he : info.name;
+      let { items } = await core.listProducts({ holiday: info.slug, limit: 300, lang });
+      if (info.slug === 'pesach') { const extra = (await core.listProducts({ passover: true, limit: 300, lang })).items; const seen = new Set(items.map((i) => i.id)); items = [...items, ...extra.filter((i) => !seen.has(i.id))]; }
+      const dates = info.start ? `${info.start.toLocaleDateString(lang === 'he' ? 'he-IL' : 'en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' })} - ${info.end.toLocaleDateString(lang === 'he' ? 'he-IL' : 'en-US', { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' })}` : '';
+      const body = `<nav class="crumbs"><a href="${pre || '/'}">${esc(t('Home'))}</a> / ${esc(name)}</nav><h1>${esc(t('{holiday} groceries: kosher food for {holiday}', { holiday: name }))}</h1>
+<p>${esc(t('Order everything for {holiday} from Bay Kosher in Lafayette, with pickup in about 3 hours or delivery across the Bay Area.', { holiday: name }))}${dates ? ` ${esc(t('{holiday} is {dates} (it begins the evening before the first date).', { holiday: name, dates }))}` : ''}</p>
+${info.inSeason ? `<div class="okbox">${esc(t('{holiday} is coming up: order early for the best selection.', { holiday: name }))}</div>` : ''}${items.length ? grid(items, lang) : `<p class="empty">${esc(t('We are adding {holiday} products. Check back soon, or call us.', { holiday: name }))}</p>`}
+<section class="seo"><h2>${esc(t('Shop other holidays'))}</h2><p>${HOLIDAYS.filter((h) => h.slug !== info.slug).map((h) => `<a class="chip" href="${pre}/holiday/${h.slug}">${esc(lang === 'he' ? h.he : h.name)}</a>`).join(' ')}</p></section>`;
+      return layout(req, { title: t('{holiday} Kosher Groceries | Bay Kosher, Bay Area', { holiday: name }), description: t('Kosher groceries for {holiday} in the Bay Area: order online from Bay Kosher in Lafayette for pickup or delivery.', { holiday: name }), body, canonical: `${pre}/holiday/${info.slug}`, path: `/holiday/${info.slug}`,
+        ld: [crumbs([[t('Home'), pre || '/'], [name, `${pre}/holiday/${info.slug}`]]), { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: items.slice(0, 30).map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(`${pre}/p/${p.id}-${p.slug}`), name: p.name })) }] });
+    },
+    async areas(req) {
+      const lang = req.lang, t = (k, v) => tr(lang, k, v), pre = lang === 'he' ? '/he' : '';
+      const body = `<nav class="crumbs"><a href="${pre || '/'}">${esc(t('Home'))}</a> / ${esc(t('Where we deliver'))}</nav><h1>${esc(t('Kosher grocery delivery and pickup in the Bay Area'))}</h1><p>${esc(t('Bay Kosher is in Lafayette and serves the East Bay, the Peninsula and San Francisco. Choose your city to see delivery prices and options.'))}</p>
+<div class="chips">${AREAS.map((a) => `<a href="${pre}/areas/${a.slug}">${esc(lang === 'he' ? a.he : a.name)}</a>`).join('')}</div>`;
+      return layout(req, { title: t('Kosher Grocery Delivery & Pickup in the Bay Area | Bay Kosher'), description: t('Kosher grocery delivery and pickup from Lafayette to Walnut Creek, Oakland, Berkeley, San Francisco and more. See delivery prices for your city.'), body, canonical: pre + '/areas', path: '/areas', ld: [await storeLd(lang)] });
+    },
+    async area(req) {
+      const lang = req.lang, t = (k, v) => tr(lang, k, v), pre = lang === 'he' ? '/he' : '';
+      const a = AREAS.find((x) => x.slug === req.params.slug);
+      if (!a) throw httpErr(404, t('Page not found'));
+      const s = await settings.all(), name = lang === 'he' ? a.he : a.name;
+      const d = a.note === 'home' ? 0 : miles(s.store, a);
+      const df = deliveryFee(d, 0, s.delivery_tiers);
+      const tier = s.delivery_tiers.find((x) => d <= x.max_miles);
+      const miStr = (Math.round(d * 10) / 10).toString();
+      const delivery = a.note === 'home'
+        ? t('{city} is our home town: our store is at {address}.', { city: name, address: s.store.address })
+        : df.deliverable
+          ? t('{city} is about {miles} miles from our store. Uber delivery from {price}{free}.', { city: name, miles: miStr, price: money(df.fee_cents), free: tier && tier.free_over_cents ? t(', free on orders over {amount}', { amount: money(tier.free_over_cents) }) : '' })
+          : t('{city} is about {miles} miles from our store, beyond our Uber delivery area. You can order for in-store pickup or for a neighborhood pickup point.', { city: name, miles: miStr });
+      const faqs = FAQ.map((f) => ({ q: t(f.q, { city: name, address: s.store.address }), a: t(f.a, { city: name, address: s.store.address }) }));
+      faqs.splice(1, 0, { q: t('Do you deliver to {city}?', { city: name }), a: delivery });
+      const body = `<nav class="crumbs"><a href="${pre || '/'}">${esc(t('Home'))}</a> / <a href="${pre}/areas">${esc(t('Where we deliver'))}</a> / ${esc(name)}</nav><h1>${esc(t('Kosher grocery delivery and pickup in {city}', { city: name }))}</h1>
+<p>${esc(delivery)}</p><p>${esc(t('ZIP codes: {zips}.', { zips: a.zips.join(', ') }))}</p><p><a class="btn" href="${pre || '/'}">${esc(t('Start shopping'))}</a> <a class="btn ghost" href="${pre}/store">${esc(t('Store & hours'))}</a></p>
+<h2>${esc(t('Questions & answers'))}</h2>${faqs.map((f) => `<details class="faq"><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}
+<h2>${esc(t('Other places we serve'))}</h2><div class="chips">${AREAS.filter((x) => x.slug !== a.slug).map((x) => `<a href="${pre}/areas/${x.slug}">${esc(lang === 'he' ? x.he : x.name)}</a>`).join('')}</div>`;
+      return layout(req, { title: t('Kosher Grocery Delivery & Pickup in {city} | Bay Kosher', { city: name }), description: t('Order kosher groceries online for {city}: meat, dairy, challah, Judaica and more from Bay Kosher in Lafayette. Pickup in about 3 hours or delivery.', { city: name }), body, canonical: `${pre}/areas/${a.slug}`, path: `/areas/${a.slug}`,
+        ld: [crumbs([[t('Home'), pre || '/'], [t('Where we deliver'), pre + '/areas'], [name, `${pre}/areas/${a.slug}`]]), { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }, { ...(await storeLd(lang)), areaServed: { '@type': 'City', name: a.name } }] });
+    },
+    async faq(req) {
+      const lang = req.lang, t = (k, v) => tr(lang, k, v), pre = lang === 'he' ? '/he' : '';
+      const s = await settings.all();
+      const faqs = FAQ.map((f) => ({ q: t(f.q, { city: lang === 'he' ? 'לפאייט' : 'Lafayette', address: s.store.address }), a: t(f.a, { city: lang === 'he' ? 'לפאייט' : 'Lafayette', address: s.store.address }) }));
+      const body = `<h1>${esc(t('Questions & answers'))}</h1>${faqs.map((f) => `<details class="faq" open><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}`;
+      return layout(req, { title: t('Kosher Grocery FAQ | Bay Kosher'), description: t('Answers about kosher grocery delivery, pickup, Passover products and hours at Bay Kosher in Lafayette, CA.'), body, canonical: pre + '/faq', path: '/faq', ld: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] });
     },
     app: (title) => async (req) => layout(req, { title: tr(req.lang, title) + ' | Bay Kosher', description: tr(req.lang, title), noindex: true, body: `<div id="app" data-page="${esc(title.toLowerCase())}"><p>${esc(tr(req.lang, 'Loading...'))}</p></div>` }),
   };
@@ -150,7 +214,7 @@ ${tog.length ? `<h2>${esc(t('Frequently bought together'))}</h2>${grid(tog, lang
       const lm = mod ? `<lastmod>${new Date(mod).toISOString().slice(0, 10)}</lastmod>` : '';
       return `<url><loc>${esc(en)}</loc>${lm}${alt}</url><url><loc>${esc(he)}</loc>${lm}${alt}</url>`;
     };
-    return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${entry('/')}${entry('/sale')}${entry('/store')}${cats.filter((c) => c.product_count > 0).map((c) => entry('/c/' + c.slug)).join('')}${prods.map((p) => entry(`/p/${p.id}-${slugify(p.name)}`, p.updated_at)).join('')}</urlset>`;
+    return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${entry('/')}${entry('/sale')}${entry('/store')}${entry('/areas')}${entry('/faq')}${AREAS.map((a) => entry('/areas/' + a.slug)).join('')}${HOLIDAYS.map((h) => entry('/holiday/' + h.slug)).join('')}${cats.filter((c) => c.product_count > 0).map((c) => entry('/c/' + c.slug)).join('')}${prods.map((p) => entry(`/p/${p.id}-${slugify(p.name)}`, p.updated_at)).join('')}</urlset>`;
   }
   const robots = () => `User-agent: *\nDisallow: /api/\nDisallow: /admin\nDisallow: /pick\nDisallow: /cart\nDisallow: /checkout\nDisallow: /account\nDisallow: /search\nDisallow: /he/cart\nDisallow: /he/checkout\nDisallow: /he/account\nDisallow: /he/search\nSitemap: ${abs('/sitemap.xml')}\n`;
 

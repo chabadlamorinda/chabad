@@ -20,7 +20,9 @@ function createAuth(secret) {
   // PINs: salted scrypt (short secrets, so slow hashing matters)
   const hashPin = (pin) => { const salt = crypto.randomBytes(8).toString('hex'); return salt + ':' + crypto.scryptSync(String(pin), salt, 32).toString('hex'); };
   const verifyPin = (pin, stored) => { const [salt, h] = String(stored).split(':'); if (!salt || !h) return false; const a = Buffer.from(crypto.scryptSync(String(pin), salt, 32).toString('hex')), b = Buffer.from(h); return a.length === b.length && crypto.timingSafeEqual(a, b); };
-  return { sign, verify, same, hashPin, verifyPin, cookie, token: (n = 24) => crypto.randomBytes(n).toString('hex') };
+  const hashPassword = (pw) => { const salt = crypto.randomBytes(16).toString('hex'); return 'p1:' + salt + ':' + crypto.scryptSync(String(pw), salt, 64).toString('hex'); };
+  const verifyPassword = (pw, stored) => { const [v, salt, h] = String(stored || '').split(':'); if (v !== 'p1' || !salt || !h) { crypto.scryptSync('x', 'y', 64); return false; } const a = Buffer.from(crypto.scryptSync(String(pw), salt, 64).toString('hex')), b = Buffer.from(h); return a.length === b.length && crypto.timingSafeEqual(a, b); };
+  return { sign, verify, same, hashPassword, verifyPassword, hashPin, verifyPin, cookie, token: (n = 24) => crypto.randomBytes(n).toString('hex') };
 }
 
 // Small in-memory rate limiter (per key, per window) for login and lookup endpoints.

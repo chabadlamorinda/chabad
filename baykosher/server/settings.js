@@ -15,6 +15,7 @@ const DEFAULTS = {
   ],
   tax_rate: 0.0925, // CA grocery food is exempt; only products marked taxable (household, beauty...) are taxed. Confirm the local rate with your accountant.
   auth_cushion_pct: 10, // extra held on the card for weighed items / substitutions; only the final amount is charged
+  holidays: { passover_toggle: 'auto' }, // auto = show the Passover-only switch in the weeks before Pesach; on = always; off = never
   abandoned: { first_after_minutes: 60, second_after_hours: 24, max_reminders: 2 },
 };
 

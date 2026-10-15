@@ -14,7 +14,9 @@ CREATE TABLE IF NOT EXISTS categories (
 );
 CREATE TABLE IF NOT EXISTS products (
   id SERIAL PRIMARY KEY, upc TEXT, sku TEXT NOT NULL DEFAULT '', name TEXT NOT NULL, name_he TEXT NOT NULL DEFAULT '', description_he TEXT NOT NULL DEFAULT '',
-  est_weight_lb NUMERIC, featured BOOLEAN NOT NULL DEFAULT FALSE, brand TEXT NOT NULL DEFAULT '',
+  est_weight_lb NUMERIC, featured BOOLEAN NOT NULL DEFAULT FALSE,
+  kosher_type TEXT NOT NULL DEFAULT '' CHECK (kosher_type IN ('','meat','dairy','pareve')), passover TEXT NOT NULL DEFAULT 'unknown' CHECK (passover IN ('unknown','yes','no')),
+  holidays TEXT NOT NULL DEFAULT '', supplier_sku TEXT NOT NULL DEFAULT '', case_size NUMERIC, snap BOOLEAN NOT NULL DEFAULT FALSE, brand TEXT NOT NULL DEFAULT '',
   size TEXT NOT NULL DEFAULT '', description TEXT NOT NULL DEFAULT '', ingredients TEXT NOT NULL DEFAULT '',
   nutrition JSONB NOT NULL DEFAULT '{}'::jsonb, image_url TEXT NOT NULL DEFAULT '', kosher_cert TEXT NOT NULL DEFAULT '',
   tags TEXT NOT NULL DEFAULT '', category_id INT REFERENCES categories(id), supplier_id INT REFERENCES suppliers(id),
@@ -46,9 +48,9 @@ CREATE TABLE IF NOT EXISTS invoice_lines (
 CREATE TABLE IF NOT EXISTS customers (
   id SERIAL PRIMARY KEY, email TEXT NOT NULL UNIQUE, name TEXT NOT NULL DEFAULT '', phone TEXT NOT NULL DEFAULT '',
   stripe_customer_id TEXT, sms_ok BOOLEAN NOT NULL DEFAULT FALSE, email_ok BOOLEAN NOT NULL DEFAULT TRUE,
-  default_sub_pref TEXT NOT NULL DEFAULT 'substitute', lang TEXT NOT NULL DEFAULT 'en', address JSONB, created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+  default_sub_pref TEXT NOT NULL DEFAULT 'substitute', password_hash TEXT, lang TEXT NOT NULL DEFAULT 'en', address JSONB, created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
-CREATE TABLE IF NOT EXISTS login_codes (email TEXT NOT NULL, code TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, tries INT NOT NULL DEFAULT 0, PRIMARY KEY (email));
+CREATE TABLE IF NOT EXISTS login_codes (email TEXT NOT NULL, code TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, tries INT NOT NULL DEFAULT 0, pending_hash TEXT, pending_name TEXT NOT NULL DEFAULT '', PRIMARY KEY (email));
 CREATE TABLE IF NOT EXISTS carts (
   id TEXT PRIMARY KEY, customer_id INT REFERENCES customers(id), email TEXT NOT NULL DEFAULT '', phone TEXT NOT NULL DEFAULT '',
   sms_ok BOOLEAN NOT NULL DEFAULT FALSE, lang TEXT NOT NULL DEFAULT 'en', items JSONB NOT NULL DEFAULT '[]'::jsonb, updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
@@ -107,6 +109,8 @@ CREATE TABLE IF NOT EXISTS stock_reports (
   id SERIAL PRIMARY KEY, product_id INT NOT NULL REFERENCES products(id) ON DELETE CASCADE, order_id INT, reported_by TEXT NOT NULL DEFAULT '',
   reported_at TIMESTAMPTZ NOT NULL DEFAULT now(), resolved_at TIMESTAMPTZ
 );
+CREATE TABLE IF NOT EXISTS images (hash TEXT PRIMARY KEY, content_type TEXT NOT NULL, data BYTEA NOT NULL, source_url TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE INDEX IF NOT EXISTS products_passover_idx ON products (passover) WHERE passover = 'yes';
 CREATE TABLE IF NOT EXISTS sync_log (id SERIAL PRIMARY KEY, kind TEXT NOT NULL, summary JSONB NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 `;
 

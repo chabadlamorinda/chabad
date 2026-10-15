@@ -9,7 +9,7 @@ const pricing = require('./pricing');
 const csvCell = (v) => { const s = String(v ?? ''); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
 const toCsv = (rows) => rows.map((r) => r.map(csvCell).join(',')).join('\n');
 
-function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifier, env }) {
+function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifier, env, mirror }) {
   // ---- time period helper: today | yesterday | tomorrow | week | month | all | YYYY-MM-DD..YYYY-MM-DD (store local time) ----
   async function period(p) {
     const s = await settings.all(), tz = s.store.timezone, now = new Date();
@@ -179,9 +179,14 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
   // ---------- Bulk edit (department, supplier, visibility, sold-by, tax, lock, featured, markup-based reprice) ----------
   A.post('/products/bulk', J, async (req, res) => {
     const ids = (req.body.ids || []).map(Number).filter(Boolean), set = req.body.set || {};
-    const allowed = ['active', 'category_id', 'supplier_id', 'sold_by', 'taxable', 'price_locked', 'featured', 'track_stock'];
+    const allowed = ['active', 'category_id', 'supplier_id', 'sold_by', 'taxable', 'price_locked', 'featured', 'track_stock', 'kosher_type', 'passover', 'snap', 'holidays'];
     const patch = Object.fromEntries(Object.entries(set).filter(([k]) => allowed.includes(k)));
-    let n = 0; for (const id of ids) { await back.saveProduct(id, patch); n++; }
+    let n = 0;
+    for (const id of ids) {
+      const one = { ...patch };
+      if (req.body.add_holiday) { const cur = (await db.one('SELECT holidays FROM products WHERE id=$1', [id])) || { holidays: '' }; one.holidays = [...new Set([...cur.holidays.split(',').filter(Boolean), ...String(req.body.add_holiday).split(',')])].join(','); }
+      await back.saveProduct(id, one); n++;
+    }
     if (req.body.price_percent) { // e.g. +5 raises prices 5%
       const pct = Number(req.body.price_percent);
       if (!(pct > -90 && pct < 500)) throw httpErr(400, 'Percent out of range');
@@ -191,10 +196,17 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
     res.json({ updated: n });
   });
 
+  // ---------- Photos: copy to our own storage ----------
+  A.get('/images/status', async (req, res) => res.json({ external: await mirror.pending() }));
+  A.post('/images/mirror', J, async (req, res) => { const r = await mirror.run(Math.min(num(req.body.limit, 25), 100)); core.dirty(); res.json(r); });
+
   // ---------- Product import (CSV / pasted from Excel) ----------
   const HEAD = { upc: ['upc', 'barcode', 'code'], sku: ['sku'], name: ['name', 'item', 'description', 'product'], name_he: ['name_he', 'hebrew name', 'hebrew', 'שם'], brand: ['brand'], size: ['size'], price: ['price', 'retail', 'sell'], cost: ['cost', 'unit cost'],
-    category: ['category', 'department', 'dept'], sold_by: ['sold by', 'sold_by', 'unit', 'per'], est_weight: ['est weight', 'est_weight', 'avg weight', 'pack weight', 'weight'], stock: ['stock', 'qty', 'quantity', 'on hand'], description: ['description_long', 'details', 'about'], ingredients: ['ingredients'], image_url: ['image', 'image_url', 'photo', 'picture'], active: ['active', 'visible'] };
-  async function parseProducts(text, supplierId) {
+    category: ['category', 'department', 'dept'], sold_by: ['sold by', 'sold_by', 'unit', 'per'], est_weight: ['est weight', 'est_weight', 'avg weight', 'pack weight', 'weight'], stock: ['stock', 'qty', 'quantity', 'on hand'], description: ['description_long', 'details', 'about'], ingredients: ['ingredients'], image_url: ['image', 'image_url', 'photo', 'picture'], active: ['active', 'visible'],
+    passover: ['kosher_passover', 'passover', 'kfp', 'kosher for passover', 'kosher-for-passover'], kosher_type: ['kosher type', 'kosher_type', 'meat/dairy', 'dairy/meat'], supplier: ['supplier', 'vendor', 'supplier_name'], supplier_sku: ['supplier_sku', 'vendor sku', 'vendor_sku'],
+    case_size: ['case_size', 'case size', 'pack size', 'units per case'], snap: ['snap', 'ebt'], taxable: ['taxable', 'tax'], holidays: ['holiday', 'holidays'] };
+  const yes = (v) => /^(1|y|yes|true|x|✓)$/i.test(String(v).trim());
+  async function parseProducts(text, createCats) {
     let t = String(text || ''); if (t.includes('\t') && !t.includes(',')) t = t.replace(/\t/g, ',');
     const [head, ...body] = parseCsv(t);
     if (!head) throw httpErr(400, 'No data');
@@ -213,8 +225,12 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
       const price = money(get(r, 'price')), cost = money(get(r, 'cost'));
       if (get(r, 'price') !== '' && !(price >= 0)) row.errors.push('bad price');
       row.price_cents = price; row.cost_cents = cost;
-      const catv = get(r, 'category'); const cat = catv ? catBy(catv) : null; if (catv && !cat) row.errors.push(`unknown department "${catv}"`);
-      row.category_id = cat ? cat.id : null; row.category = cat ? cat.name : catv;
+      const catv = get(r, 'category'); const cat = catv ? catBy(catv) : null; if (catv && !cat && !createCats) row.errors.push(`unknown department "${catv}"`);
+      row.category_id = cat ? cat.id : null; row.category = cat ? cat.name : catv; row.new_category = catv && !cat && createCats ? catv : '';
+      row.supplier = get(r, 'supplier'); row.supplier_sku = get(r, 'supplier_sku'); row.case_size = Number(get(r, 'case_size')) > 0 ? Number(get(r, 'case_size')) : null;
+      if (col.passover !== undefined) { const pv = get(r, 'passover'); row.passover = pv === '' ? undefined : yes(pv) ? 'yes' : 'no'; }
+      const kt = get(r, 'kosher_type').toLowerCase(); row.kosher_type = ['meat', 'dairy', 'pareve'].includes(kt) ? kt : '';
+      if (col.snap !== undefined) row.snap = yes(get(r, 'snap')); if (col.taxable !== undefined) row.taxable = yes(get(r, 'taxable')); row.holidays = get(r, 'holidays');
       row.brand = get(r, 'brand'); row.size = get(r, 'size'); row.name_he = get(r, 'name_he'); row.description = get(r, 'description'); row.ingredients = get(r, 'ingredients'); row.image_url = get(r, 'image_url');
       const per = get(r, 'sold_by').toLowerCase(); row.sold_by = /lb|pound/.test(per) ? 'lb' : 'each';
       const w = Number(get(r, 'est_weight')); row.est_weight_lb = w > 0 ? w : null;
@@ -225,20 +241,24 @@ function mount(A, { db, core, settings, back, auth, J, num, httpErr, who, notifi
     return out;
   }
   A.post('/products/import', J, async (req, res) => {
-    const rows = await parseProducts(req.body.text, req.body.supplier_id);
+    const rows = await parseProducts(req.body.text, !!req.body.create_departments);
     const sup = req.body.supplier_id ? await db.one('SELECT * FROM suppliers WHERE id=$1', [req.body.supplier_id]) : null;
     for (const r of rows) {
       const ex = (r.upc && (await db.one('SELECT id FROM products WHERE upc=$1', [r.upc]))) || (r.sku && (await db.one(`SELECT id FROM products WHERE sku=$1 AND sku <> ''`, [r.sku]))) || (await db.one('SELECT id FROM products WHERE lower(name)=lower($1) ORDER BY id LIMIT 1', [r.name]));
       r.action = r.errors.length ? 'skip' : ex ? 'update' : 'create'; r.id = ex ? ex.id : null;
       if (!r.price_cents && r.cost_cents && sup && !ex) r.price_cents = pricing.suggestPrice(r.cost_cents, sup.markup_pct);
     }
-    const summary = { create: rows.filter((r) => r.action === 'create').length, update: rows.filter((r) => r.action === 'update').length, skip: rows.filter((r) => r.action === 'skip').length };
+    const summary = { new_departments: [...new Set(rows.map((r) => r.new_category).filter(Boolean))], create: rows.filter((r) => r.action === 'create').length, update: rows.filter((r) => r.action === 'update').length, skip: rows.filter((r) => r.action === 'skip').length };
     if (!req.body.commit) return res.json({ preview: true, ...summary, rows: rows.slice(0, 300) });
-    let done = 0;
+    let done = 0; const supCache = new Map(), catCache = new Map();
+    const supplierId = async (name) => { if (!name) return sup ? sup.id : undefined; const k = name.toLowerCase(); if (!supCache.has(k)) supCache.set(k, (await db.one(`INSERT INTO suppliers (name, markup_pct) VALUES ($1, 30) ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name RETURNING id`, [name])).id); return supCache.get(k); };
+    const categoryId = async (name) => { const k = name.toLowerCase(); if (!catCache.has(k)) catCache.set(k, (await db.one(`INSERT INTO categories (name, slug, sort) VALUES ($1,$2,100) ON CONFLICT (slug) DO UPDATE SET name = categories.name RETURNING id`, [name, require('./core').slugify(name)])).id); return catCache.get(k); };
     for (const r of rows) {
       if (r.action === 'skip') continue;
+      if (r.new_category) r.category_id = await categoryId(r.new_category);
+      r.supplier_id = await supplierId(r.supplier);
       const data = { name: r.name, upc: r.upc || undefined, sku: r.sku || undefined, brand: r.brand || undefined, size: r.size || undefined, name_he: r.name_he || undefined, description: r.description || undefined, ingredients: r.ingredients || undefined, image_url: r.image_url || undefined,
-        category_id: r.category_id || undefined, sold_by: r.sold_by, est_weight_lb: r.est_weight_lb || undefined, price_cents: r.price_cents ?? undefined, cost_cents: r.cost_cents ?? undefined, stock: r.stock ?? undefined, supplier_id: sup ? sup.id : undefined, active: r.active };
+        category_id: r.category_id || undefined, sold_by: r.sold_by, est_weight_lb: r.est_weight_lb || undefined, price_cents: r.price_cents ?? undefined, cost_cents: r.cost_cents ?? undefined, stock: r.stock ?? undefined, supplier_id: r.supplier_id, active: r.active, supplier_sku: r.supplier_sku || undefined, case_size: r.case_size || undefined, passover: r.passover, kosher_type: r.kosher_type || undefined, snap: r.snap, taxable: r.taxable, holidays: r.holidays || undefined };
       await back.saveProduct(r.id, Object.fromEntries(Object.entries(data).filter(([, v]) => v !== undefined)));
       done++;
     }

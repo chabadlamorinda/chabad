@@ -38,15 +38,18 @@ function parseInvoiceCsv(text) {
 
 function createBackoffice({ db, settings, core, notifier, upc, publicUrl = '' }) {
   // ---- products ----
-  const FIELDS = ['upc', 'sku', 'name', 'name_he', 'description_he', 'est_weight_lb', 'featured', 'brand', 'size', 'description', 'ingredients', 'nutrition', 'image_url', 'kosher_cert', 'tags', 'category_id', 'supplier_id', 'sold_by', 'price_cents', 'cost_cents', 'price_locked', 'taxable', 'stock', 'low_stock_at', 'track_stock', 'active'];
+  const FIELDS = ['upc', 'sku', 'name', 'name_he', 'description_he', 'est_weight_lb', 'featured', 'kosher_type', 'passover', 'holidays', 'supplier_sku', 'case_size', 'snap', 'brand', 'size', 'description', 'ingredients', 'nutrition', 'image_url', 'kosher_cert', 'tags', 'category_id', 'supplier_id', 'sold_by', 'price_cents', 'cost_cents', 'price_locked', 'taxable', 'stock', 'low_stock_at', 'track_stock', 'active'];
   const clean = (k, v) => {
     if (k === 'upc') { v = String(v || '').replace(/\D/g, ''); return v || null; }
     if (k === 'nutrition') return JSON.stringify(v && typeof v === 'object' ? v : {});
     if (['category_id', 'supplier_id'].includes(k)) return v ? Number(v) : null;
-    if (k === 'est_weight_lb') return Number(v) > 0 ? Number(v) : null;
+    if (k === 'est_weight_lb' || k === 'case_size') return Number(v) > 0 ? Number(v) : null;
+    if (k === 'kosher_type') return ['meat', 'dairy', 'pareve'].includes(v) ? v : '';
+    if (k === 'passover') return ['yes', 'no'].includes(v) ? v : 'unknown';
+    if (k === 'holidays') { const ok = require('./holidays').slugs(); return [...new Set((Array.isArray(v) ? v : String(v || '').split(',')).map((x) => String(x).trim()).filter((x) => ok.includes(x)))].join(','); }
     if (['price_cents'].includes(k)) return Math.max(0, Math.round(Number(v) || 0));
     if (['cost_cents', 'stock', 'low_stock_at'].includes(k)) return Math.max(0, Number(v) || 0);
-    if (['price_locked', 'taxable', 'track_stock', 'active', 'featured'].includes(k)) return !!v;
+    if (['price_locked', 'taxable', 'track_stock', 'active', 'featured', 'snap'].includes(k)) return !!v;
     if (k === 'sold_by') return v === 'lb' ? 'lb' : 'each';
     return String(v ?? '').trim();
   };

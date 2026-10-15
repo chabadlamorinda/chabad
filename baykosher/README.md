@@ -6,7 +6,7 @@ A replacement for the MyKosherGrocer site. Node + Postgres + Stripe, same stack 
 ```
 cd baykosher && npm install && npm run dev
 ```
-Opens a throwaway database with demo products: store at `/` (Hebrew at `/he`), back office `/admin` (password `demo-password-123`), packer screen `/pick` (PIN `1234`). `npm test` runs 41 tests against a real Postgres.
+Opens a throwaway database with demo products: store at `/` (Hebrew at `/he`), back office `/admin` (password `demo-password-123`), packer screen `/pick` (PIN `1234`). `npm test` runs 49 tests against a real Postgres.
 
 ## What is built
 | Area | Status |
@@ -50,3 +50,26 @@ Opens a throwaway database with demo products: store at `/` (Hebrew at `/he`), b
 * **In-app push notifications**: not built yet. Email and text work now.
 
 See `ROADMAP.md` for what to build next.
+
+## Passover, dairy/meat and holidays
+* Every product has **Meat / Dairy / Pareve** and **Kosher for Passover: Yes / No / Not decided**. Only **Yes** ever appears under the customer's "Kosher for Passover only" switch, and nothing is set to Yes automatically: names like "matzah" or a label that mentions Passover only put an item on the **Passover: suggested (confirm)** list in the back office. Confirm in bulk with "Kosher for Passover: YES".
+* The switch appears in the weeks before Pesach (Settings > Holidays: automatic / always / never) and filters every page, search and suggestion.
+* Holiday pages (`/holiday/pesach`, Rosh Hashana, Sukkot, Chanukah, Tu BiShvat, Purim, Shavuot) list items tagged for that holiday (Pesach also lists Passover-certified items). Dates come from the Hebrew calendar automatically. A holiday gets a link in the top menu during its lead-up (Pesach 45 days).
+
+## Your inventory app (baykosher-inventory.onrender.com)
+That app already reads supplier invoices, tracks costs and freight, flags Passover and syncs Clover. The new site should take its products from it rather than redo that work: in the inventory app download **Products CSV** and use **Back office > Products > Import from spreadsheet** here (columns recognized: name, upc, sku, category, brand, supplier, supplier_sku, case_size, cost, price, stock, kosher_passover, snap, taxable, active, est weight, sold by). Tick "Create departments that do not exist yet" the first time. Running the import again updates items by barcode instead of duplicating.
+
+## Photos
+Product photos are copied into our own database and served from `/img/...` (Back office > Products > "Copy photos to our storage", and automatically 10 at a time every 10 minutes). Only https images, never internal addresses, no SVG, 6 MB max.
+
+## Accounts
+Customers sign in with a password or an emailed code. A new password only takes effect after the emailed code proves the email is theirs.
+
+## Google (what the code does, and what only you can do)
+Done in code: fast server-rendered pages; unique title/description per page; canonical + English/Hebrew hreflang; sitemap with all products, departments, holidays, cities and FAQ; structured data (GroceryStore with hours, Product with price and stock, Breadcrumb, ItemList, FAQPage); a page per city you serve (`/areas/orinda` ...) whose text comes from real distances and your live delivery prices; holiday pages; `robots.txt`. Nobody can promise a #1 ranking. What moves it most, and only you can do:
+1. Claim and complete the **Google Business Profile** for 3477 Golden Gate Way (category *Kosher grocery store*, hours, photos, link to the site). This drives most "kosher near me" results.
+2. Add the site in **Google Search Console** and submit `https://baykosher.com/sitemap.xml`.
+3. Ask happy customers for Google reviews.
+4. Keep the name, address and phone identical everywhere (Google, Yelp, Chabad.org, Facebook, the Chabad of Lamorinda site) and link to baykosher.com from them.
+5. Real product photos, descriptions and ingredients on every item (thin pages rank poorly).
+6. When switching from MyKosherGrocer, redirect old product/category URLs so existing rankings carry over.
