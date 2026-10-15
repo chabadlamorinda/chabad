@@ -16,8 +16,10 @@
 
   function tile(s, isCurrent) {
     var t = el('div', 'tile ' + s.status + (s.past ? ' past' : '') + (isCurrent ? ' current' : ''));
-    t.appendChild(el('div', 'n', shortTitle(s.title)));
-    t.appendChild(el('div', 'd', s.dateLabel.toUpperCase().replace(/^(\w{3})/, function (m) { return m; }) + ' – ' + s.heb.toUpperCase()));
+    var line = s.dateLabel + ' – ' + s.heb, n;
+    if ((s.title + ' – ' + line).length > 34) { n = el('div', 'n'); n.appendChild(el('div', '', s.title)); n.appendChild(el('div', '', line)); } // long names: two lines
+    else n = el('div', 'n', s.title + ' – ' + line);
+    t.appendChild(n);
     if (s.sponsor) t.appendChild(el('div', 's', s.sponsor.name));
     return t;
   }
@@ -37,6 +39,7 @@
     var dt = new Date(s.date + 'T12:00:00'), d = el('div', 'p-date');
     d.appendChild(document.createTextNode(['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Shabbos'][dt.getDay()] + ', ' + s.dateLabel + '  ·  ' + s.heb + '  '));
     main.appendChild(d);
+    var tm = el('div', 'p-times'); tm.id = 'times'; main.appendChild(tm); shabbatTimes(s, tm);
     main.appendChild(el('div', 'p-rule'));
     if (s.sponsor) {
       main.appendChild(el('div', 'p-by', 'SPONSORED BY'));
@@ -57,6 +60,21 @@
     var ded = box.querySelector('.p-ded'); if (ded) { var g = 0; while (ded.scrollHeight > ded.clientHeight + 1 && ded.scrollHeight > parseFloat(getComputedStyle(ded).fontSize) * 2.4 && g++ < 12) ded.style.fontSize = parseFloat(getComputedStyle(ded).fontSize) * .92 + 'px'; }
   }
 
+  // Candle lighting / Havdalah for the shown week (Hebcal, Lafayette 94549). Silent if the lookup fails.
+  var timesCache = {};
+  function shabbatTimes(s, node) {
+    var ymd = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+    var show = function (t) { node.textContent = t || ''; };
+    if (timesCache[s.key] != null) return show(timesCache[s.key]);
+    var d = new Date(s.date + 'T12:00:00'), a = new Date(d); a.setDate(a.getDate() - 1);
+    fetch('https://www.hebcal.com/hebcal?v=1&cfg=json&c=on&zip=94549&m=50&s=off&maj=off&min=off&mod=off&nx=off&mf=off&ss=off&start=' + ymd(a) + '&end=' + s.date).then(function (r) { return r.json(); }).then(function (j) {
+      var c = (j.items || []).filter(function (i) { return i.category === 'candles'; })[0], h = (j.items || []).filter(function (i) { return i.category === 'havdalah'; })[0];
+      var part = function (i, n) { var m = i && /:\s*(.+)$/.exec(i.title); return m ? n + ' ' + m[1].replace(/(\d)(am|pm)/i, '$1 $2').toUpperCase() : ''; };
+      var t = [part(c, 'Candle lighting'), part(h, 'Havdalah')].filter(Boolean).join('  ·  ');
+      timesCache[s.key] = t; show(t);
+    }).catch(function () {});
+  }
+
   function layout(b) {
     var slots = b.slots, rows = Math.max(1, Math.ceil(slots.length / 4));
     document.documentElement.style.setProperty('--rows', rows);
@@ -68,8 +86,7 @@
       }
     }
     sizeRows(rows);
-    Array.prototype.forEach.call(document.querySelectorAll('.tile .n'), function (n) { fit(n, .6); });
-    Array.prototype.forEach.call(document.querySelectorAll('.tile .d'), function (n) { fit(n, .6); });
+    Array.prototype.forEach.call(document.querySelectorAll('.tile .n'), function (n) { fit(n, .5); });
     Array.prototype.forEach.call(document.querySelectorAll('.tile .s'), function (n) { fit(n, .5); });
   }
   function sizeRows(rows) {
