@@ -456,4 +456,13 @@ const HE = {
   "Get receipts, reminders and your list of yahrzeits kept safe. You can use the whole app without this.": "קבלו קבלות ותזכורות, ושמרו בבטחה את רשימת היארצייטים. אפשר להשתמש בכל האפליקציה גם בלי זה.",
   "Save my details": "שמרו את הפרטים שלי",
   "Saved. Thank you!": "נשמר. תודה!",
+  "Payment method": "אמצעי תשלום",
+  "Change or remove your card": "החלפה או הסרה של הכרטיס",
+  "Not switched on yet": "עדיין לא הופעל",
+  "Practice mode uses a pretend Visa •••• 4242. No real card is needed.": "מצב תרגול משתמש בכרטיס Visa מדומה •••• 4242. אין צורך בכרטיס אמיתי.",
+  "Your card": "הכרטיס שלכם",
+  "Expires {date}": "תוקף עד {date}",
+  "Expired": "פג תוקף",
+  "Change card": "החלפת כרטיס",
+  "Your new card replaces the old one for your pushka and monthly gifts. Your card is stored securely by Stripe. Chabad of Lamorinda never sees your card number.": "הכרטיס החדש מחליף את הישן עבור הקופה והתרומות החודשיות. הכרטיס שלכם נשמר באופן מאובטח אצל Stripe. בית חב״ד לאמורינדה לעולם אינו רואה את מספר הכרטיס.",
 };

@@ -233,6 +233,8 @@ async function api(path, opts = {}) {
 }
 const BRANDS = { visa: "Visa", mastercard: "Mastercard", amex: "American Express", discover: "Discover", diners: "Diners Club", jcb: "JCB", unionpay: "UnionPay" };
 const cardLabel = () => (API.card ? (BRANDS[API.card.brand] || API.card.brand) + " •••• " + API.card.last4 : "");
+const cardExp = () => (API.card && API.card.expMonth ? String(API.card.expMonth).padStart(2, "0") + "/" + String(API.card.expYear).slice(-2) : "");
+const cardExpired = () => { const c = API.card; if (!c || !c.expYear) return false; const n = new Date(); return c.expYear < n.getFullYear() || (c.expYear === n.getFullYear() && c.expMonth < n.getMonth() + 1); };
 async function refreshCard() { try { API.card = (await api("/payment-method")).card; } catch (e) { API.card = null; } }
 async function loadSubs() { try { API.subs = (await api("/subscriptions")).subscriptions; } catch (e) { API.subs = []; } if (U.page === "profile") draw(); }
 async function initPay() { if (PRACTICE) { API.enabled = true; API.card = { brand: "visa", last4: "4242" }; API.subs = S.pracSubs || []; return draw(); } try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } API.members = !!c.members; API.vapid = c.vapidPublicKey || ""; if (API.members && S.mtoken) { try { API.cardIssue = (await api("/member", { member: true })).cardIssue || ""; } catch (e) {} } if (API.vapid && S.pushOn) pushSync(); } catch (e) {} draw(); }
@@ -281,7 +283,7 @@ async function addCard() {
         btn.disabled = true; $("#payErr").textContent = "";
         const { error } = await stripe.confirmSetup({ elements, redirect: "if_required", confirmParams: { payment_method_data: { billing_details: { name: S.name, email: S.email } } } });
         if (error) { $("#payErr").textContent = error.message; btn.disabled = false; return; }
-        await refreshCard(); if (API.cardIssue) { API.cardIssue = ""; if (S.mtoken) api("/member/card-updated", { method: "POST", member: true }).catch(() => {}); } res(true); closeSheet(); toast(tt("Card saved")); draw();
+        if (S.token) { try { await api("/payment-method/default", { method: "POST" }); } catch (e) {} } await refreshCard(); if (API.cardIssue) { API.cardIssue = ""; if (S.mtoken) api("/member/card-updated", { method: "POST", member: true }).catch(() => {}); } res(true); closeSheet(); toast(tt("Card saved")); draw();
       };
     } catch (e) { const el = $("#payErr"); if (el) el.textContent = errText(e); }
   });
@@ -447,7 +449,7 @@ PG.give = () => {
     <div class="field"><label>${t("Frequency")}</label><div class="seg"><label><input type="radio" name="freq" value="once" data-chg="freq" ${U.freq === "once" ? "checked" : ""}>${t("One time")}</label><label><input type="radio" name="freq" value="monthly" data-chg="freq" ${U.freq === "monthly" ? "checked" : ""}>${t("Monthly")}</label></div></div>
     <div class="field"><label for="ded">${t("Dedication or note (optional)")}</label><input class="input" id="ded" data-inp="ded" maxlength="80" placeholder="${t("In honor of / in memory of…")}" value="${esc(U.dedication)}"></div>
     ${feeBox()}
-    <div class="h-s" style="display:flex;align-items:center;gap:8px;font-size:13px">${ico(I.card, 16)}${API.enabled ? (API.card ? esc(cardLabel()) : t("You’ll add a card when you give")) : t("Payment completes on our secure donation page")}</div>
+    <div class="h-s" style="display:flex;align-items:center;gap:8px;font-size:13px">${ico(I.card, 16)}${API.enabled ? (API.card ? esc(cardLabel()) + ` <button class="link" data-act="cardChange">${t("Change")}</button>` : t("You’ll add a card when you give")) : t("Payment completes on our secure donation page")}</div>
     <button class="btn btn-primary cta" id="giveCta" data-act="submitGive">${giveCtaText()}</button>${TAXNOTE()}</div></div>`;
 };
 
@@ -497,7 +499,7 @@ PG.history = () => {
 
 PG.more = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("More")}</h1></div><div>
   ${rowLink("go", "maaser", I.calc, tt("Maaser Calculator"), tt("Calculate your tenth"))}${rowLink("go", "reminders", I.bell, tt("Reminders"), tt("Candle lighting and daily coin"))}${rowLink("go", "yahrzeit", I.flame, tt("Yahrzeits"), tt("Remember loved ones and give in their memory"))}
-  ${rowLink("go", "settings", I.gear, tt("Settings"), tt("Goal, amounts, sounds, pushkas, language"))}${rowLink("go", "profile", I.profile, tt("Profile"), S.name || tt("Name, email, address"))}${rowLink("go", "support", I.help, tt("Support"), tt("We’re happy to help"))}</div>
+  ${rowLink("go", "cards", I.card, tt("Payment method"), tt("Change or remove your card"))}${rowLink("go", "settings", I.gear, tt("Settings"), tt("Goal, amounts, sounds, pushkas, language"))}${rowLink("go", "profile", I.profile, tt("Profile"), S.name || tt("Name, email, address"))}${rowLink("go", "support", I.help, tt("Support"), tt("We’re happy to help"))}</div>
   <a class="btn btn-ghost" href="${SITE}" target="_blank" rel="noopener" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)} ${t("Back to chabadoflamorinda.com")}</a></div></div>`;
 
 // ----- segulos -----
@@ -557,7 +559,7 @@ PG.reminders = () => {
 };
 
 // ----- settings & profile -----
-PG.settings = () => sub(tt("Settings"), `${sec(t("Pushka"))}
+PG.settings = () => sub(tt("Settings"), `${sec(t("Payment"))}<div>${rowLink("go", "cards", I.card, tt("Payment method"), PRACTICE ? tt("Practice mode") : API.enabled ? (API.card ? cardLabel() : tt("No card saved")) : tt("Not switched on yet"))}</div>${sec(t("Pushka"))}
   <div class="field"><label for="goal">${t("Pushka goal")}</label><div class="amt"><span>$</span><input class="input" id="goal" type="number" min="1" step="0.01" inputmode="decimal" data-chg="setGoal" value="${S.goal.toFixed(2)}"></div></div>
   <div class="field"><label>${t("Preset amounts")}</label><div class="row3">${S.presets.map((a, i) => `<div class="amt">${i === 0 ? `<b class="primary-tag">${t("Primary")}</b>` : ""}<span>$</span><input class="input" type="number" min="0.01" step="0.01" inputmode="decimal" aria-label="${esc(tt("Preset {n}", { n: i + 1 }))}" data-chg="setPreset" data-i="${i}" value="${a.toFixed(2)}"></div>`).join("")}</div></div>
   <div class="field"><label for="emp">${t("Empty pushka")}</label><select class="input" id="emp" data-chg="setEmpty">${Object.entries(EMPTY_MODES).map(([k, v]) => `<option value="${k}" ${S.emptyMode === k ? "selected" : ""}>${t(v)}</option>`).join("")}</select></div>
@@ -568,6 +570,17 @@ PG.settings = () => sub(tt("Settings"), `${sec(t("Pushka"))}
   ${sec(t("Practice mode"))}<div>${tg("pracToggle", "", t("Practice mode"), t("Try the app without real money. Practice data is kept separate and can be cleared anytime."), PRACTICE)}</div>${PRACTICE ? `<button class="btn btn-secondary cta" data-act="pClear">${t("Clear practice data")}</button>` : ""}
   ${sec(t("Profile"))}<div>${rowLink("go", "profile", I.profile, S.name || tt("Your profile"), S.email || tt("Name, email, phone, address"))}</div>`);
 
+PG.cards = () => {
+  let body;
+  if (PRACTICE) body = `<div class="rowp">${t("Practice mode uses a pretend Visa •••• 4242. No real card is needed.")}</div>`;
+  else if (!API.enabled) body = `<div class="rowp">${t("Card payments are not switched on yet. Gifts are completed on our donation page.")}</div>`;
+  else body = `${cardIssueBanner()}${API.card
+    ? `<div class="card" style="flex-direction:column;align-items:stretch;gap:4px"><div class="kicker">${t("Your card")}</div><div class="card-title" style="direction:ltr;text-align:start">${ico(I.card, 20)} ${esc(cardLabel())}</div><div class="h-s">${cardExp() ? t("Expires {date}", { date: esc(cardExp()) }) : ""}${cardExpired() ? " · <b style='color:#9b1c5a'>" + t("Expired") + "</b>" : ""}</div></div>
+      <button class="btn btn-primary cta" data-act="cardChange">${t("Change card")}</button><button class="btn btn-ghost" data-act="removeCard">${t("Remove card")}</button>`
+    : `<div class="rowp">${t("No card saved")}</div><button class="btn btn-primary cta" data-act="cardChange">${t("Add a card")}</button>`}
+    <p class="note">${t("Your new card replaces the old one for your pushka and monthly gifts. Your card is stored securely by Stripe. Chabad of Lamorinda never sees your card number.")}</p>`;
+  return sub(tt("Payment method"), body);
+};
 PG.profile = () => {
   const f = (k, label, v) => `<div class="row-btn" style="cursor:default"><div class="grow"><div class="h-s" style="text-transform:uppercase;letter-spacing:.08em;font-size:11px">${label}</div><div style="font-size:16px">${v ? esc(v) : "—"}</div></div><button class="icon-btn sm" data-act="editField" data-v="${k}" aria-label="${esc(tt("Edit"))} ${label}">${ico(I.pencil, 18)}</button></div>`;
   let rec;
@@ -576,7 +589,7 @@ PG.profile = () => {
   else if (!API.subs.length) rec = `<div class="rowp">${t("No monthly gifts. Choose “Monthly” when giving to a fund.")}</div>`;
   else rec = API.subs.map((s) => `<div class="row-btn" style="cursor:default"><div class="grow"><div class="h-t">${t("{amt} monthly · {fund}", { amt: money(s.amount), fund: t(fundOf(s.fund).name) })}</div><div class="h-s">${s.next ? t("Next gift {date}", { date: esc(greg(new Date(s.next))) }) : ""}</div></div><button class="btn btn-ghost" data-act="cancelSub" data-v="${esc(s.id)}">${t("Cancel")}</button></div>`).join("");
   const payRow = API.enabled
-    ? `<div class="row-btn" style="cursor:default"><span style="color:var(--accent)">${ico(I.card, 20)}</span><div class="grow" style="font-size:14px;direction:ltr;text-align:start">${API.card ? esc(cardLabel()) : t("No card saved")}</div><button class="btn btn-ghost" data-act="addCard">${API.card ? t("Change") : t("Add")}</button>${API.card ? `<button class="btn btn-ghost" data-act="removeCard">${t("Remove")}</button>` : ""}</div>`
+    ? `<div class="row-btn" style="cursor:default"><span style="color:var(--accent)">${ico(I.card, 20)}</span><div class="grow" style="font-size:14px;direction:ltr;text-align:start">${API.card ? esc(cardLabel()) : t("No card saved")}</div><button class="btn btn-ghost" data-act="cardChange">${API.card ? t("Change") : t("Add")}</button>${API.card ? `<button class="btn btn-ghost" data-act="removeCard">${t("Remove")}</button>` : ""}</div>`
     : `<div class="rowp">${t("Card payments are not switched on yet. Gifts are completed on our donation page.")}</div>`;
   return sub(tt("Profile"), `${f("name", t("Name"), S.name)}${f("email", t("Email"), S.email)}${f("billingEmail", t("Billing email"), S.billingEmail)}${f("phone", t("Phone number"), S.phone)}${f("address", t("Mailing address"), S.address)}
     ${sec(t("Recurring"))}${rec}${sec(t("Payment"))}${payRow}
@@ -649,7 +662,7 @@ A.otherGo = () => { const v = parseFloat($("#oa").value); if (!(v > 0) || v > 10
 const emptyCtaText = () => { const p = P(); let base = p.balance; if (S.partial) { const v = parseFloat(($("#ea") || {}).value); base = v > 0 ? v : 0; } const payOnline = (($("select[name=pm]") || {}).value || "online") === "online"; return `${API.enabled ? t("Send") : t("Give")} ${base > 0 ? money2(payOnline ? totalOf(base) : base) : ""}`; };
 function openEmpty() {
   const p = P(); if (p.balance <= 0) return toast(tt("Your pushka is empty"));
-  const sub1 = API.enabled && API.card ? t("{amt} will be charged to {card} and sent to:", { amt: money2(p.balance), card: `<bdi>${esc(cardLabel())}</bdi>` }) : t("{amt} will be given to Chabad of Lamorinda. Choose a fund:", { amt: money2(p.balance) });
+  const sub1 = API.enabled && API.card ? t("{amt} will be charged to {card} and sent to:", { amt: money2(p.balance), card: `<bdi>${esc(cardLabel())}</bdi>` }) + ` <button class="link" data-act="cardChange">${t("Change card")}</button>` : t("{amt} will be given to Chabad of Lamorinda. Choose a fund:", { amt: money2(p.balance) });
   sheet(`<div><h3>${t("Empty your pushka")}</h3><div class="h-s" style="font-size:13px">${sub1}</div></div>
     ${S.partial ? `<div class="field"><label for="ea">${t("Amount to give (up to {max})", { max: money2(p.balance) })}</label><input class="input" id="ea" data-inp="emptyAmt" type="number" min="0.01" max="${p.balance}" step="0.01" value="${p.balance}"></div>` : ""}
     <div class="fundlist">${FUNDS.map((f, i) => `<label class="radio"><input type="radio" name="fund" value="${f.id}" ${i === 0 ? "checked" : ""}><span class="dot"></span><span class="nm">${t(f.name)}</span></label>`).join("")}</div>
@@ -713,6 +726,7 @@ function autoEmpty() {
 }
 
 // cards & monthly gifts
+A.cardChange = async () => { if (PRACTICE) return toast(tt("Not needed in practice mode")); const sheetOpen = !!$("#overlay .sheet"), ok = await addCard(); if (ok && sheetOpen && U.page === "home") A.openEmpty(); else draw(); };
 A.addCard = () => (PRACTICE ? toast(tt("Not needed in practice mode")) : addCard());
 A.removeCard = () => sheet(`<div><h3>${t("Remove this card?")}</h3><div class="h-s" style="font-size:13px">${t("You’ll need to add a card again before your next gift.")}</div></div><button class="btn btn-primary cta" data-act="removeCardGo">${t("Remove card")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
 A.removeCardGo = () => { closeSheet(); if (PRACTICE) return toast(tt("Not needed in practice mode")); removeCard(); };

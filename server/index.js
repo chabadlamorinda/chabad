@@ -223,6 +223,18 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     res.json({ ok: true });
   }));
 
+  // After a new card is saved: make it THE card. Monthly gifts switch to it and older cards are removed,
+  // so "change card" really changes what gets charged.
+  api.post('/payment-method/default', needStripe, auth, wrap(async (req, res) => {
+    const list = await stripe.paymentMethods.list({ customer: req.customerId, type: 'card', limit: 20 });
+    const newest = list.data.slice().sort((x, y) => (y.created || 0) - (x.created || 0))[0];
+    if (!newest) throw new HttpError(400, 'no_card', 'Please add a card first.');
+    await stripe.customers.update(req.customerId, { invoice_settings: { default_payment_method: newest.id } });
+    for (const sub of await activeSubs(req.customerId)) await stripe.subscriptions.update(sub.id, { default_payment_method: newest.id });
+    for (const pm of list.data) if (pm.id !== newest.id) await stripe.paymentMethods.detach(pm.id);
+    res.json({ card: cardInfo(newest) });
+  }));
+
   // One-time gift: charge the saved card right away (no redirect).
   api.post('/donate', limit('donate', 30, 10 * 60 * 1000), needStripe, auth, wrap(async (req, res) => {
     const g = readGift(req.body);

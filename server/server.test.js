@@ -230,3 +230,19 @@ test('privacy policy and support pages are public', async (t) => {
   for (const p of ['/pushka/privacy.html', '/pushka/support.html', '/pushka/manifest.json', '/pushka/sw.js', '/pushka/icon-512.png', '/pushka/icon-maskable-512.png']) assert.equal((await fetch(a.base + p)).status, 200, p);
   assert.match(await (await fetch(a.base + '/pushka/privacy.html')).text(), /Tax ID 47-4642750/);
 });
+
+test('change card: newest card becomes the one charged, monthly gifts follow it, old cards are removed', async (t) => {
+  const c = await signedIn(t); const cus = c.token.split('.')[0];
+  assert.equal((await c.call('POST', '/api/payment-method/default', {}, c.token)).json.code, 'no_card');
+  const old = c.stripe.addCard(cus);
+  const sub = await c.call('POST', '/api/subscribe', gift({ idem: 'idem-chg-0000000000001' }), c.token);
+  const fresh = c.stripe.addCard(cus); fresh.card.last4 = '1111';
+  const r = await c.call('POST', '/api/payment-method/default', {}, c.token);
+  assert.equal(r.status, 200); assert.equal(r.json.card.last4, '1111');
+  assert.equal(c.stripe._st.subs[sub.json.id].default_payment_method, fresh.id);
+  assert.equal(c.stripe._st.customers[cus].invoice_settings.default_payment_method, fresh.id);
+  assert.equal(Object.values(c.stripe._st.pms).filter((m) => m.customer === cus).length, 1);
+  assert.ok(!c.stripe._st.pms[old.id]);
+  assert.equal((await c.call('GET', '/api/payment-method', null, c.token)).json.card.last4, '1111');
+  assert.equal((await c.call('POST', '/api/payment-method/default', {})).status, 401);
+});
