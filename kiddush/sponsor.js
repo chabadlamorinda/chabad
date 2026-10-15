@@ -50,8 +50,9 @@
     if (s.mevarchim) box.appendChild(h('div', { class: 'mv', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
     box.appendChild(h('div', { class: 'rule' }));
     if (list.length) {
-      box.appendChild(h('div', { class: 'by', text: 'SPONSORED BY' }));
-      sponsorLines(list, 'who', 'for').forEach(function (n) { box.appendChild(n); });
+      var line = h('div', { class: 'spl' }, [h('span', { class: 'by', text: 'SPONSORED BY' })]);
+      sponsorLines(list, 'who', 'for').forEach(function (n) { line.appendChild(n); });
+      box.appendChild(line);
     } else if (s.status === 'open') box.appendChild(h('div', { class: 'open', text: 'OPEN FOR SPONSORSHIP' }));
     else box.appendChild(h('div', { class: 'open', text: 'RESERVED' }));
     if (can) box.appendChild(h('div', { class: 'btn gold', text: list.length ? 'Add your sponsorship' : 'Sponsor this Kiddush' }));
@@ -96,7 +97,7 @@
       years.appendChild(h('button', { class: 'tab', role: 'tab', 'aria-selected': String(y === st.year), text: y === b.year ? String(y) : String(y), onclick: function () { load(y); } }));
     });
     var list = $('list'); list.textContent = '';
-    var slots = b.slots.filter(function (s) { return !s.past && (!st.onlyOpen || s.status === 'open'); });
+    var slots = b.slots.filter(function (s) { return (!s.past || sponsorsOf(s).length) && (!st.onlyOpen || (s.status === 'open' && !s.past)); });
     if (!slots.length) list.appendChild(h('p', { class: 'muted center', text: st.onlyOpen ? 'Every upcoming week this year is sponsored. Thank you!' : 'No upcoming weeks in this year.' }));
     var last = '';
     slots.forEach(function (s) {
@@ -104,16 +105,24 @@
       if (label !== last) { list.appendChild(h('div', { class: 'month', text: label })); last = label; }
       list.appendChild(card(s, d));
     });
+    if (!st.scrolled) { st.scrolled = true; scrollToCurrent(); }
+  }
+  // Land on the current week (the floating top covers the header); earlier weeks are just above.
+  function scrollToCurrent() {
+    var top = $('top'); document.documentElement.style.setProperty('--topH', (top.offsetHeight + 8) + 'px');
+    var go = function () { var c = $('cur'); if (c) { document.documentElement.style.setProperty('--topH', ($('top').offsetHeight + 8) + 'px'); c.scrollIntoView({ block: 'start' }); } };
+    requestAnimationFrame(go); if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
   }
   function card(s, d) {
-    var can = st.board.sponsoring, list = sponsorsOf(s);
+    var can = st.board.sponsoring && !s.past, list = sponsorsOf(s);
     var date = h('div', { class: 'date', 'aria-hidden': 'true' }, [h('b', { text: String(d.getDate()) }), h('span', { text: DOW[d.getDay()].toUpperCase() })]);
     var mid = h('div', {}, [h('div', { class: 't', text: s.title }), h('div', { class: 's', text: s.dateLabel + ' · ' + s.heb + (s.note ? ' · ' + s.note : '') })]);
     if (s.mevarchim) mid.appendChild(h('div', { class: 'mev', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
     sponsorLines(list, 'sp', 'ded').forEach(function (n) { mid.appendChild(n); });
     var right = list.length ? h('div', { class: 'go' }, [h('span', { class: 'pill', text: s.status === 'reserved' ? 'Reserved' : 'Sponsored' }), can ? h('small', { text: 'Join in' }) : null])
       : h('div', { class: 'go' }, [can ? h('span', { text: 'Sponsor' }) : h('span', { class: 'pill', text: 'Open' })]);
-    var attrs = { class: 'slot' + (list.length ? ' taken' : '') };
+    var attrs = { class: 'slot' + (list.length ? ' taken' : '') + (s.past ? ' past' : '') };
+    if (s.key === st.board.current) attrs.id = 'cur';
     if (can) { attrs.onclick = function () { openSheet(s); }; attrs['aria-label'] = 'Sponsor ' + s.title + ', ' + s.dateLabel; return h('button', attrs, [date, mid, right]); }
     return h('div', attrs, [date, mid, right]);
   }
