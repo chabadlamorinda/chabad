@@ -14,6 +14,8 @@
 const path = require('path');
 const crypto = require('crypto');
 const express = require('express');
+const { mountMembers } = require('./members.js');
+const { mountAdmin } = require('./admin.js');
 
 const ROOT = path.join(__dirname, '..');
 const FUND_NAMES = {
@@ -39,7 +41,7 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '' }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '' }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
   const app = express();
   app.disable('x-powered-by');
@@ -56,6 +58,19 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const a = Buffer.from(tok.slice(i + 1)), b = Buffer.from(mac(cus));
     if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return null;
     return /^cus_[A-Za-z0-9]+$/.test(cus) ? cus : null;
+  };
+  // Member tokens (m_...) are a separate namespace so they can never be mistaken for a Stripe customer token.
+  const mmac = (id) => crypto.createHmac('sha256', sessionSecret + ':member').update(id).digest('base64url');
+  const tokens = {
+    verifyCustomer: verify,
+    signMember: (id) => id + '.' + mmac(id),
+    verifyMember(tok) {
+      if (typeof tok !== 'string' || tok.length > 100) return null;
+      const i = tok.lastIndexOf('.'); if (i < 1) return null;
+      const id = tok.slice(0, i), a = Buffer.from(tok.slice(i + 1)), b = Buffer.from(mmac(id));
+      if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return null;
+      return /^m_[0-9a-f]{24}$/.test(id) ? id : null;
+    },
   };
 
   // ---------- security headers ----------
@@ -93,14 +108,53 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 
   app.get('/healthz', (req, res) => res.type('text').send('ok'));
 
+  // ---------- Stripe webhook (needs the raw request body to check Stripe's signature) ----------
+  app.post('/api/stripe/webhook', express.raw({ type: 'application/json', limit: '1mb' }), async (req, res) => {
+    if (!stripe || !webhookSecret) return res.status(503).json({ code: 'not_configured', error: 'Webhook is not set up.' });
+    let event;
+    try { event = stripe.webhooks.constructEvent(req.body, req.get('stripe-signature') || '', webhookSecret); }
+    catch (e) { return res.status(400).json({ code: 'bad_signature', error: 'Invalid signature.' }); }
+    try { await handleStripeEvent(event); res.json({ received: true }); }
+    catch (e) { log.error('webhook error:', event.type, e && e.message); res.status(500).json({ code: 'server_error', error: 'Webhook failed.' }); }
+  });
+  async function handleStripeEvent(event) {
+    if (!store) return;
+    const o = event.data && event.data.object || {};
+    const cus = typeof o.customer === 'string' ? o.customer : (o.customer && o.customer.id) || null;
+    switch (event.type) {
+      case 'invoice.payment_failed':
+      case 'payment_intent.payment_failed': {
+        if (event.type === 'payment_intent.payment_failed' && !(o.metadata && o.metadata.source === 'pushka')) return;
+        const msg = event.type === 'invoice.payment_failed' ? 'Monthly gift could not be charged' : ((o.last_payment_error && o.last_payment_error.message) || 'Payment failed');
+        const fresh = await store.recordPaymentEvent({ id: event.id, type: event.type, customerId: cus, email: o.customer_email || o.receipt_email || '', amount: o.amount_due || o.amount || 0, message: msg });
+        if (fresh && cus) await store.flagCardIssue(cus, msg);
+        return;
+      }
+      case 'invoice.payment_succeeded':
+      case 'invoice.paid':
+      case 'payment_intent.succeeded':
+        if (cus && (event.type !== 'payment_intent.succeeded' || (o.metadata && o.metadata.source === 'pushka'))) { await store.clearCardIssue(cus); await store.resolveCustomerPayments(cus); }
+        return;
+      case 'charge.refunded':
+      case 'customer.subscription.deleted':
+        await store.recordPaymentEvent({ id: event.id, type: event.type, customerId: cus, email: o.billing_details && o.billing_details.email || '', amount: o.amount_refunded || o.amount || 0, message: event.type === 'charge.refunded' ? 'Gift refunded' : 'Monthly gift ended' });
+        // These are informational: mark resolved right away so they do not look like open problems.
+        await store.resolvePayment(event.id);
+        return;
+      default:
+    }
+  }
+  // Apple Pay domain verification file (paste its contents into the APPLE_PAY_ASSOC setting).
+  app.get('/.well-known/apple-developer-merchantid-domain-association', (req, res) => (applePayAssoc ? res.type('text').send(applePayAssoc) : res.status(404).type('text').send('Not found')));
+
   // ---------- API ----------
   const api = express.Router();
-  api.use(express.json({ limit: '10kb' }));
+  api.use(express.json({ limit: '64kb' }));
   api.use(limit('api', 120, 10 * 60 * 1000));
   api.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
 
   api.get('/config', (req, res) => {
-    res.json({ enabled: !!stripe, publishableKey: stripe ? publishableKey : '', livemode: /^pk_live_/.test(publishableKey || '') });
+    res.json({ enabled: !!stripe, publishableKey: stripe ? publishableKey : '', livemode: /^pk_live_/.test(publishableKey || ''), members: !!store, vapidPublicKey: store && sendPush ? vapidPublicKey : '' });
   });
 
   const needStripe = (req, res, next) => (stripe ? next() : res.status(503).json({ code: 'not_configured', error: 'Card payments are not set up yet.' }));
@@ -256,8 +310,10 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     res.json({ ok: true });
   }));
 
+  mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, limit });
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
+  mountAdmin(app, { store, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log });
 
   // ---------- website (only the public files are served) ----------
   // Google Play "Trusted Web Activity" verification: proves this site and the Android app belong together.
@@ -285,7 +341,25 @@ if (require.main === module) {
     console.log('Stripe keys not set: running without card payments.');
   }
   const port = process.env.PORT || 3000;
-  createApp({ stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '' }).listen(port, () => console.log('Listening on ' + port));
+  (async () => {
+    let store = null, sendPush = null;
+    const vapidPub = process.env.VAPID_PUBLIC_KEY || '', vapidPriv = process.env.VAPID_PRIVATE_KEY || '';
+    if (process.env.DATABASE_URL) {
+      store = require('./store.js').createStore(process.env.DATABASE_URL);
+      await store.migrate();
+      console.log('Database connected: members, yahrzeits and reminders are on.');
+    } else console.log('DATABASE_URL not set: yahrzeit sharing, reminders and the Rabbi area are off.');
+    if (vapidPub && vapidPriv) {
+      const webpush = require('web-push');
+      webpush.setVapidDetails('mailto:rabbi@chabadoflamorinda.com', vapidPub, vapidPriv);
+      sendPush = (sub, payload) => webpush.sendNotification({ endpoint: sub.endpoint, keys: { p256dh: sub.p256dh, auth: sub.auth } }, JSON.stringify(payload), { TTL: 6 * 3600 });
+    }
+    if (store && sendPush) { require('./scheduler.js').createScheduler({ store, send: sendPush }).start(); console.log('Reminder scheduler started.'); }
+    createApp({
+      stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '',
+      store, sendPush, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
+    }).listen(port, () => console.log('Listening on ' + port));
+  })().catch((e) => { console.error('Startup failed:', e.message); process.exit(1); });
 }
 
 module.exports = { createApp, FUND_NAMES };

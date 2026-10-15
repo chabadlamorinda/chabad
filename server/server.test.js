@@ -27,9 +27,9 @@ async function signedIn(t) {
 test('config exposes publishable key only when stripe is enabled', async (t) => {
   const a = await start(); t.after(a.close);
   const r = await a.call('GET', '/api/config');
-  assert.deepEqual(r.json, { enabled: true, publishableKey: 'pk_test_abc', livemode: false });
+  assert.deepEqual(r.json, { enabled: true, publishableKey: 'pk_test_abc', livemode: false, members: false, vapidPublicKey: '' });
   const b = await start({ stripe: null }); t.after(b.close);
-  assert.deepEqual((await b.call('GET', '/api/config')).json, { enabled: false, publishableKey: '', livemode: false });
+  assert.deepEqual((await b.call('GET', '/api/config')).json, { enabled: false, publishableKey: '', livemode: false, members: false, vapidPublicKey: '' });
   assert.equal((await b.call('POST', '/api/customer', { name: 'A', email: 'a@b.co' })).status, 503);
 });
 
