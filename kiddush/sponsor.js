@@ -40,6 +40,26 @@
     box.appendChild(largerNote());
   }
 
+  // Top of the page: the upcoming Kiddush and who sponsored it, or an invitation to sponsor it.
+  function renderThisWeek(b) {
+    var box = $('thisWeek'), s = b.slots.filter(function (x) { return x.key === b.current; })[0]; box.textContent = ''; box.hidden = !s;
+    if (!s) return;
+    var days = Math.round((new Date(s.date + 'T12:00:00') - new Date(b.today + 'T12:00:00')) / 864e5);
+    box.appendChild(h('div', { class: 'lbl', text: days <= 7 ? (s.kind === 'shabbat' ? 'This week’s Kiddush' : 'This Kiddush') : 'Next Kiddush' }));
+    box.appendChild(h('div', { class: 'nm', text: s.title }));
+    box.appendChild(h('div', { class: 'dt', text: [s.dateLabel, s.heb].join(' · ') }));
+    if (s.mevarchim) box.appendChild(h('div', { class: 'mv', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
+    box.appendChild(h('div', { class: 'rule' }));
+    if (s.sponsor) {
+      box.appendChild(h('div', { class: 'by', text: 'SPONSORED BY' }));
+      box.appendChild(h('div', { class: 'who', text: s.sponsor.name }));
+      if (s.sponsor.dedication) box.appendChild(h('div', { class: 'for', text: s.sponsor.dedication }));
+    } else if (s.status === 'open') {
+      box.appendChild(h('div', { class: 'open', text: 'OPEN FOR SPONSORSHIP' }));
+      if (b.sponsoring) box.appendChild(h('button', { class: 'btn gold', type: 'button', text: 'Sponsor this Kiddush · ' + money(s.priceCents), onclick: function () { openSheet(s); } }));
+    } else box.appendChild(h('div', { class: 'open', text: 'RESERVED' }));
+  }
+
   // Bottom of the page: sponsor the whole Kiddush board for the year (always open until taken).
   function renderBoardCard(b) {
     var box = $('boardCard'), bs = b.boardSponsor; box.textContent = ''; box.hidden = !bs;
@@ -60,7 +80,7 @@
   // ------------------------------------------------------------------ list
   function load(year) {
     return api('/board' + (year ? '?year=' + year : '')).then(function (b) {
-      st.board = b; st.year = b.year; render(); renderInfo(b); renderBoardCard(b);
+      st.board = b; st.year = b.year; render(); renderThisWeek(b); renderInfo(b); renderBoardCard(b);
       var s = b.settings;
       $('blessing').textContent = s.blessing || '';
       $('contact').textContent = '';
@@ -78,7 +98,7 @@
     var list = $('list'); list.textContent = '';
     var slots = b.slots.filter(function (s) { return !s.past && (!st.onlyOpen || s.status === 'open'); });
     var first = b.slots.filter(function (s) { return !s.past && s.status === 'open'; })[0];
-    var cta = $('nextOpen'); cta.hidden = !(first && b.sponsoring);
+    var cur = b.slots.filter(function (x) { return x.key === b.current; })[0], cta = $('nextOpen'); cta.hidden = !(first && b.sponsoring && !(cur && cur.status === 'open'));
     if (first) cta.onclick = function () { openSheet(first); };
     if (!slots.length) list.appendChild(h('p', { class: 'muted center', text: st.onlyOpen ? 'Every upcoming week this year is sponsored. Thank you!' : 'No upcoming weeks in this year.' }));
     var last = '';
