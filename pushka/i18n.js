@@ -1,6 +1,21 @@
 // Hebrew UI strings, keyed by the English text used in pushka.js.
 // Machine-written: please have a native Hebrew reader review before sharing widely.
 const HE = {
+  "Practice mode — no real money is used": "מצב תרגול – לא נעשה שימוש בכסף אמיתי",
+  "Fill to goal": "מלאו עד היעד",
+  "Clear practice data": "ניקוי נתוני התרגול",
+  "Exit practice mode": "יציאה ממצב תרגול",
+  "Practice mode": "מצב תרגול",
+  "Try the app without real money. Practice data is kept separate and can be cleared anytime.": "נסו את האפליקציה בלי כסף אמיתי. נתוני התרגול נשמרים בנפרד וניתן לנקות אותם בכל עת.",
+  "Practice mode: no money was charged.": "מצב תרגול: לא חויב כסף.",
+  "Clear practice data?": "לנקות את נתוני התרגול?",
+  "This resets the practice pushka and practice history. Your real data is not touched.": "פעולה זו מאפסת את קופת התרגול ואת היסטוריית התרגול. הנתונים האמיתיים שלכם לא נפגעים.",
+  "Clear": "ניקוי",
+  "Not needed in practice mode": "לא נדרש במצב תרגול",
+  "Already at goal": "כבר הגעתם ליעד",
+  "{amt} of {goal} · {n}% full": "{amt} מתוך {goal} · {n}% מלאה",
+  "Almost full! {amt} to go": "כמעט מלאה! עוד {amt}",
+  "Your pushka is full — empty it to give!": "הקופה מלאה – רוקנו אותה כדי לתרום!",
   "A direct gift to Chabad of Lamorinda.": "תרומה ישירה לבית חב״ד לאמורינדה.",
   "A gift to the Chai Club at Chabad of Lamorinda.": "תרומה למועדון חי של בית חב״ד לאמורינדה.",
   "A gift to the End of Year Campaign.": "תרומה לקמפיין סוף השנה.",

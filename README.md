@@ -16,6 +16,9 @@ Card numbers never touch this server; Stripe.js collects them and Stripe stores 
 Funds, preset amounts ($180 to $7,200), one-time or monthly, dedication or note, the optional 3.5% processing fee, Building Campaign levels, sponsorships, and Zelle / Venmo / DAF / check / wire / stock / crypto instructions all follow the website. Edit them at the top of `pushka/pushka.js` (`FUNDS`, `GIVE_AMTS`, `LEVELS`, `SPONSORS`).
 Set `ZELLE_EMAIL` there to show the Zelle address in the app (until then the app points donors to the donation page for it). Card gifts are capped at $10,000 each; larger gifts are directed to the office.
 
+## Practice mode (test without real money)
+Open `/pushka/?practice=1` (or Settings → Practice mode). The app then uses a separate practice pushka and history, shows a banner, and **never charges anything**, even once Stripe is live. The banner has *Fill to goal* (watch it fill up), *Clear practice data*, and *Exit*. Your real data is untouched. Open `/pushka/?practice=0` to leave.
+
 ## Turning on card payments (one time)
 1. Create a Stripe account for Chabad of Lamorinda and finish its business and bank details.
 2. In Stripe, turn on **Test mode**, then **Developers → API keys**. Copy the **Publishable key** (`pk_test_…`) and **Secret key** (`sk_test_…`).

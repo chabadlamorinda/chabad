@@ -205,3 +205,20 @@ html[dir=rtl] input[type=number]{text-align:right}
 .card b{font-weight:600}
 .fundlist{max-height:34vh;overflow:auto}
 a.btn.cta{text-decoration:none}
+
+/* filling pushka + progress */
+.progress{margin-top:-8px;text-align:center}
+.pg-track{height:12px;border-radius:6px;background:var(--n200);border:1px solid var(--divider);overflow:hidden}
+.pg-fill{height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#c28d41,#facb8d,#c28d41);background-size:200% 100%;transition:width 1.1s cubic-bezier(.2,.8,.2,1) .5s;animation:shimmer 3s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+.pg-t{margin-top:6px;font-size:13px;color:var(--a700);font-feature-settings:'tnum'}
+.tin .wrap.glow{animation:glow 1.6s ease-in-out infinite}
+@keyframes glow{50%{filter:drop-shadow(0 0 16px rgba(225,173,102,.95))}}
+.practice{flex:none;background:#fff3e4;border-bottom:1px solid var(--a300);padding:calc(6px + env(safe-area-inset-top)) 12px 8px;font-size:12px;color:var(--a800)}
+.practice .pr-t{font-weight:600;text-align:center}
+.pr-b{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:4px}
+.pr-b button{border:1px solid var(--accent);background:transparent;border-radius:12px;padding:0 10px;min-height:28px;font:400 12px var(--body);color:var(--a800);cursor:pointer}
+
+/* bigger pushka so the filling is easy to see */
+.tin .zoom{position:relative;width:275px;height:315px;flex:none}
+.tin .zoom .wrap{position:absolute;left:0;top:0;transform:scale(1.25);transform-origin:top left}

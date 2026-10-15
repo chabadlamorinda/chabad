@@ -5,7 +5,9 @@
 const DONATE_URL = "https://www.chabadoflamorinda.com/donate";
 const CANDLE_ZIP = "94549";                                      // Lafayette, CA
 const SITE_EMAIL = "rabbi@chabadoflamorinda.com";
-const KEY = "lamorinda-pushka-v4";
+const MODEKEY = "lamorinda-pushka-mode";
+const PRACTICE = (() => { try { const q = new URLSearchParams(location.search).get("practice"); if (q === "1") localStorage.setItem(MODEKEY, "1"); else if (q === "0") localStorage.removeItem(MODEKEY); if (q !== null && history.replaceState) history.replaceState(null, "", location.pathname + location.hash); return localStorage.getItem(MODEKEY) === "1"; } catch (e) { return false; } })();
+const KEY = PRACTICE ? "lamorinda-pushka-practice" : "lamorinda-pushka-v4";
 
 const SITE = "https://www.chabadoflamorinda.com";
 const C3_HTML = `<bdi dir="ltr" style="white-space:nowrap">501(c)(3)</bdi>`;
@@ -58,14 +60,14 @@ const def = () => ({
   goal: 36, presets: [1.8, 5, 18], emptyMode: "manual",
   sound: true, jingle: true, confetti: true, vibrate: true, partial: false, addl: false, bio: "",
   wallet: { id: walletId(), balance: 0 },
-  history: [],
+  history: [], pracSubs: [],
   rem: { candle: { on: false, mins: 15 }, streak: { on: false }, custom: [] },
   candles: [], notified: {}, maaser: 10, lastEmptied: Date.now(), prompted: "",
 });
 function load() {
   let o = null;
   try { o = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
-  if (!o) { try { const v = JSON.parse(localStorage.getItem("lamorinda-pushka-v3")); if (v) o = { name: v.name, email: v.email, history: v.history, pushkas: [{ id: "p1", name: "", balance: v.balance || 0, drops: v.drops || 0 }] }; } catch (e) {} }
+  if (!o && !PRACTICE) { try { const v = JSON.parse(localStorage.getItem("lamorinda-pushka-v3")); if (v) o = { name: v.name, email: v.email, history: v.history, pushkas: [{ id: "p1", name: "", balance: v.balance || 0, drops: v.drops || 0 }] }; } catch (e) {} }
   const b = def(), s = Object.assign({}, b, o || {});
   s.rem = Object.assign({}, b.rem, (o && o.rem) || {}); s.rem.candle = Object.assign({}, b.rem.candle, s.rem.candle); s.rem.streak = Object.assign({}, b.rem.streak, s.rem.streak);
   if (!Array.isArray(s.rem.custom)) s.rem.custom = [];
@@ -231,7 +233,7 @@ const BRANDS = { visa: "Visa", mastercard: "Mastercard", amex: "American Express
 const cardLabel = () => (API.card ? (BRANDS[API.card.brand] || API.card.brand) + " •••• " + API.card.last4 : "");
 async function refreshCard() { try { API.card = (await api("/payment-method")).card; } catch (e) { API.card = null; } }
 async function loadSubs() { try { API.subs = (await api("/subscriptions")).subscriptions; } catch (e) { API.subs = []; } if (U.page === "profile") draw(); }
-async function initPay() { try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } } catch (e) {} draw(); }
+async function initPay() { if (PRACTICE) { API.enabled = true; API.card = { brand: "visa", last4: "4242" }; API.subs = S.pracSubs || []; return draw(); } try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } } catch (e) {} draw(); }
 let stripeP = null;
 function loadStripe() {
   if (stripeP) return stripeP;
@@ -365,11 +367,15 @@ const sec = (title) => `<h6 style="color:var(--n700);margin:var(--s3) 0 var(--s1
 
 // ---------- pages ----------
 const PG = {};
-function tin() {
+const fracOf = (p) => (p.balance > 0 ? Math.max(Math.min(p.balance / S.goal, 1), 0.07) : 0);
+const fillY = (f) => ((1 - f) * 124 + (f <= 0 ? 16 : 0)).toFixed(1);
+function tin(from) {
   return `<svg width="220" height="252" viewBox="0 0 220 252" fill="none" style="display:block"><defs>
 <linearGradient id="bf" x1="0" x2="1"><stop offset="0" stop-color="#173766"/><stop offset=".2" stop-color="#2a5a9e"/><stop offset=".38" stop-color="#3b6cb3"/><stop offset=".7" stop-color="#24508f"/><stop offset="1" stop-color="#143059"/></linearGradient>
 <linearGradient id="bt" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#4f80c4"/><stop offset="1" stop-color="#2f5fa3"/></linearGradient>
-<linearGradient id="gd" x1="0" x2="1"><stop offset="0" stop-color="#a06f24"/><stop offset=".4" stop-color="#facb8d"/><stop offset="1" stop-color="#a06f24"/></linearGradient></defs>
+<linearGradient id="gd" x1="0" x2="1"><stop offset="0" stop-color="#a06f24"/><stop offset=".4" stop-color="#facb8d"/><stop offset="1" stop-color="#a06f24"/></linearGradient><clipPath id="lbl"><rect x="46" y="84" width="128" height="120" rx="2"/></clipPath>
+<linearGradient id="goldf" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f7d56a"/><stop offset="1" stop-color="#c28d41"/></linearGradient>
+<pattern id="coinp" width="16" height="11" patternUnits="userSpaceOnUse"><ellipse cx="8" cy="5.5" rx="5.5" ry="3.6" fill="none" stroke="#8a5d14" stroke-width=".7" opacity=".5"/></pattern></defs>
 <ellipse cx="110" cy="236" rx="92" ry="9" fill="#2d2b2b" opacity=".2"/>
 <path d="M30 62H190V228Q190 232 186 232H34Q30 232 30 228Z" fill="url(#bf)"/>
 <path d="M30 62L46 38H174L190 62Z" fill="url(#bt)" stroke="#173766" stroke-width="1" stroke-linejoin="round"/>
@@ -377,13 +383,23 @@ function tin() {
 <path d="M30 62H190V228Q190 232 186 232H34Q30 232 30 228Z" stroke="#173766" stroke-width="1"/>
 <rect x="78" y="46" width="64" height="7" rx="3.5" fill="#0f2442"/><rect x="78" y="46" width="64" height="2.5" rx="1.2" fill="#000" opacity=".5"/>
 <rect x="44" y="82" width="132" height="124" rx="3" fill="#f8f4f4" stroke="url(#gd)" stroke-width="2.5"/>
+<g clip-path="url(#lbl)"><g id="fillG" style="transform:translateY(${fillY(from)}px);transition:transform 1.1s cubic-bezier(.2,.8,.2,1) .5s">
+<rect x="44" y="84" width="132" height="130" fill="url(#goldf)"/><rect x="44" y="84" width="132" height="130" fill="url(#coinp)"/>
+<path d="M44 86 Q60.5 78 77 86 T110 86 T143 86 T176 86 V96 H44Z" fill="#ffe9a0" opacity=".9"/></g></g>
 <rect x="50" y="88" width="120" height="112" rx="1.5" stroke="#a06f24" stroke-width=".7"/>
 <text x="110" y="122" text-anchor="middle" fill="#173766" style="font:600 38px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif" direction="rtl">צדקה</text></svg>`;
+}
+function animateFill() {
+  const p = P(), g = $("#fillG"); if (!g) return;
+  const f = fracOf(p), pct = Math.min(p.balance / S.goal, 1) * 100, pf = $("#progFill");
+  U.fillFor = p.id; U.fillShown = f; U.pctShown = pct;
+  requestAnimationFrame(() => requestAnimationFrame(() => { g.style.transform = `translateY(${fillY(f)}px)`; if (pf) pf.style.width = pct + "%"; }));
 }
 const hex = (n) => `<svg width="44" height="50" viewBox="0 0 46 52" fill="none" aria-hidden="true"><path d="M23 2l19 11v26L23 50 4 39V13z" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/><text x="23" y="33" text-anchor="middle" fill="var(--a800)" style="font:600 20px 'Cormorant Garamond',Georgia,serif">${n}</text></svg>`;
 
 PG.home = () => {
-  const p = P(), now = new Date(), c = nextCandle(), st = streak(), frac = Math.min(p.balance / S.goal, 1), top = 62, bot = 228, lvl = bot - frac * (bot - top);
+  const p = P(), now = new Date(), c = nextCandle(), st = streak(), frac = Math.min(p.balance / S.goal, 1), shown = U.fillFor === p.id ? U.fillShown : 0, top = 82, bot = 206, lvl = bot - fracOf(p) * (bot - top), pct = Math.round(frac * 100), rest = Math.max(r2(S.goal - p.balance), 0);
+  const progTxt = frac >= 1 ? t("Your pushka is full — empty it to give!") : pct >= 90 ? t("Almost full! {amt} to go", { amt: money2(rest) }) : t("{amt} of {goal} · {n}% full", { amt: money2(p.balance), goal: money(S.goal), n: pct });
   let reminder = "";
   if (c) {
     const title = c.getDay() === 5 ? tt("Shabbat candles Friday, {time}", { time: clock(c) }) : tt("Candle lighting {day}, {time}", { day: c.toLocaleDateString(loc(), { weekday: "long" }), time: clock(c) });
@@ -397,8 +413,8 @@ PG.home = () => {
   <div class="scroll"><div class="col">${chips}
     <div class="streak">${hex(st)}<span>${t("Weekday streak")}</span></div>
     <div class="msg">${msg}</div>
-    <div class="tin"><div class="anchor" id="coinAnchor"></div><div class="wrap" data-act="dropPrimary" role="button" tabindex="0" aria-label="${esc(tt("Drop {amt} in the pushka", { amt: money(S.presets[0]) }))}">${tin()}<div class="bal">${money2(p.balance)}</div>
-      <div class="lv" style="top:${top - 10}px;left:-6px;transform:translateX(-100%)">${money(S.goal)} —</div><div class="lv" style="top:${lvl - 10}px;right:-6px;transform:translateX(100%)">— ${money2(p.balance)}</div></div></div>
+    <div class="tin"><div class="anchor" id="coinAnchor"></div><div class="zoom"><div class="wrap ${pct >= 90 ? "glow" : ""}" data-act="dropPrimary" role="button" tabindex="0" aria-label="${esc(tt("Drop {amt} in the pushka", { amt: money(S.presets[0]) }))}">${tin(shown)}<div class="bal">${money2(p.balance)}</div></div></div></div>
+    <div class="progress"><div class="pg-track"><div class="pg-fill" id="progFill" style="width:${(U.fillFor === p.id ? U.pctShown : 0)}%"></div></div><div class="pg-t">${progTxt}</div></div>
     <div><div class="tap">${t("Tap to drop a coin")}</div><div class="quick">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="drop" data-v="${a}">${money(a)}</button>`).join("")}<button class="btn btn-secondary" data-act="other">${t("Other")}</button></div></div>
     <button class="btn btn-primary cta" data-act="openEmpty" ${p.balance <= 0 ? "disabled" : ""}>${t("Empty pushka to Chabad")}</button>
     <div class="row2"><button class="btn btn-ghost" data-act="donateNow">${t("Donate now")}</button><button class="btn btn-ghost" data-act="go" data-v="settings">${ico(I.gear, 16)} ${t("Pushka settings")}</button></div>
@@ -545,6 +561,7 @@ PG.settings = () => sub(tt("Settings"), `${sec(t("Pushka"))}
   <div>${tg("tgl", "sound", t("Sound"), t("Coin clink when you drop a coin"), S.sound)}${tg("tgl", "jingle", t("Coin jingle"), t("A shower of coins when you empty the pushka"), S.jingle)}${tg("tgl", "confetti", t("Confetti sound"), t("A celebration when your goal is reached"), S.confetti)}${tg("tgl", "vibrate", t("Vibration"), "", S.vibrate)}${tg("tgl", "partial", t("Partial payments"), t("Give part of your pushka and keep the rest"), S.partial)}${tg("tgl", "addl", t("Additional payment options"), t("Including check, wire, DAF"), S.addl)}${tg("bio", "", t("Biometric lock"), t("Unlock the app with your fingerprint, face or screen lock"), !!S.bio)}</div>
   ${sec(t("My pushkas"))}<div>${S.pushkas.map((p) => `<button class="row-btn" data-act="editPushka" data-v="${p.id}"><span style="color:var(--accent);flex:none">${ico(I.home, 22)}</span><div class="grow"><div class="fund-n">${esc(pTitle(p))}</div><div class="fund-d">${money2(p.balance)}${p.id === S.cur ? " · " + t("current") : ""}</div></div><span style="color:var(--accent)">${ico(I.pencil, 16)}</span></button>`).join("")}</div>
   <button class="btn btn-secondary cta" data-act="addPushka">${ico(I.plus, 16)} ${t("Add pushka")}</button>
+  ${sec(t("Practice mode"))}<div>${tg("pracToggle", "", t("Practice mode"), t("Try the app without real money. Practice data is kept separate and can be cleared anytime."), PRACTICE)}</div>${PRACTICE ? `<button class="btn btn-secondary cta" data-act="pClear">${t("Clear practice data")}</button>` : ""}
   ${sec(t("Profile"))}<div>${rowLink("go", "profile", I.profile, S.name || tt("Your profile"), S.email || tt("Name, email, phone, address"))}</div>`);
 
 PG.profile = () => {
@@ -565,10 +582,17 @@ PG.support = () => sub(tt("Support"), `<p class="body-p">${t("Questions about th
   <p class="note">${t("Tip: add this app to your home screen — in your browser menu choose “Add to Home Screen.”")}</p>`);
 
 // ---------- rendering ----------
+const practiceBar = () => (PRACTICE ? `<div class="practice"><div class="pr-t">${t("Practice mode — no real money is used")}</div><div class="pr-b"><button data-act="pFill">${t("Fill to goal")}</button><button data-act="pClear">${t("Clear practice data")}</button><button data-act="pExit">${t("Exit practice mode")}</button></div></div>` : "");
+function captureFill() { // a re-draw must continue from where the fill visually is, not jump to the end
+  const g = $("#fillG"); if (!g || U.drawn !== "home") return;
+  try { const ty = new DOMMatrix(getComputedStyle(g).transform).f; U.fillShown = ty >= 139 ? 0 : Math.max(0, 1 - ty / 124); const pf = $("#progFill"); if (pf && pf.parentElement.clientWidth) U.pctShown = (pf.getBoundingClientRect().width / pf.parentElement.clientWidth) * 100; } catch (e) {}
+}
 function draw() {
+  captureFill();
   const pg = PG[U.page] ? U.page : "home", prev = $(".scroll"), y = prev && U.drawn === pg ? prev.scrollTop : 0;
-  $("#app").innerHTML = PG[pg]() + `<nav class="tabbar" aria-label="${t("Main")}">${TABS.map(([id, l, ic]) => `<button class="tab ${tabOf(pg) === id ? "on" : ""}" data-act="tab" data-v="${id}" ${tabOf(pg) === id ? 'aria-current="page"' : ""}>${ico(ic)}<span>${t(l)}</span></button>`).join("")}</nav>`;
+  $("#app").innerHTML = practiceBar() + PG[pg]() + `<nav class="tabbar" aria-label="${t("Main")}">${TABS.map(([id, l, ic]) => `<button class="tab ${tabOf(pg) === id ? "on" : ""}" data-act="tab" data-v="${id}" ${tabOf(pg) === id ? 'aria-current="page"' : ""}>${ico(ic)}<span>${t(l)}</span></button>`).join("")}</nav>`;
   U.drawn = pg; const sc = $(".scroll"); if (sc) sc.scrollTop = y;
+  if (pg === "home") animateFill();
   if (pg === "profile" && API.enabled && S.token && API.subs === null && !U.subsLoading) { U.subsLoading = true; loadSubs().finally(() => (U.subsLoading = false)); }
 }
 
@@ -649,8 +673,14 @@ A.submitGive = () => { if (!(U.giveAmt > 0) || U.giveAmt > 100000) return toast(
 
 // Fallback only: used when the server has no Stripe keys yet.
 const donateLink = (p) => `${DONATE_URL}?amount=${encodeURIComponent(p.amt)}&fund=${encodeURIComponent(p.fund)}&frequency=${p.freq}${p.ded ? "&dedication=" + encodeURIComponent(p.ded) : ""}`;
+function practiceGift(p) {
+  p.fee = !!feeOn();
+  sheet(`<div class="done"><div class="spin" aria-hidden="true"></div><h3>${t("Processing your gift…")}</h3></div>`, null, null, true);
+  setTimeout(() => { if (p.freq === "monthly") { S.pracSubs = (S.pracSubs || []).concat([{ id: "prac" + uid(), amount: p.amt, fund: p.fund, next: Date.now() + 30 * 864e5 }]); API.subs = S.pracSubs; } completeGift(p); }, 900);
+}
 async function startGift(p) {
   if (p.method && p.method !== "online") return offlineSheet(p);
+  if (PRACTICE) return practiceGift(p);
   p.fee = !!(feeOn());
   if (API.enabled) return chargeFlow(p);
   U.pending = p;
@@ -666,9 +696,9 @@ function offlineSheet(p) {
 function completeGift(p) {
   const f = fundOf(p.fund), ts = Date.now(), pu = S.pushkas.find((x) => x.id === p.pid) || P(), offline = p.method && p.method !== "online", total = p.fee ? withFee(p.amt) : p.amt;
   if (p.fromPushka) { pu.balance = r2(pu.balance - p.amt); if (pu.balance < 0.005) { pu.balance = 0; pu.drops = 0; S.lastEmptied = ts; } if (S.jingle) clink(7, 0.06, 0); }
-  pushHist({ kind: "gift", t: ts, amt: total, fee: !!p.fee, fund: p.fund, fp: !!p.fromPushka, freq: p.freq, method: p.method, ded: p.ded || "", receiptUrl: p.receiptUrl || "", receipt: API.enabled && !offline });
+  pushHist({ kind: "gift", t: ts, amt: total, fee: !!p.fee, fund: p.fund, fp: !!p.fromPushka, freq: p.freq, method: p.method, ded: p.ded || "", receiptUrl: p.receiptUrl || "", receipt: API.enabled && !offline && !PRACTICE });
   save(); buzz([60, 40, 60]); fanfare(); confetti(); U.pending = null; U.giveFund = null; draw();
-  const note = API.enabled && !offline ? (S.email ? t("A receipt is on its way to {email}.", { email: `<bdi>${esc(S.email)}</bdi>` }) : "") : offline ? t("We’ll confirm once your gift is received.") : t("Your receipt will be emailed by our donation page.");
+  const note = PRACTICE ? t("Practice mode: no money was charged.") : API.enabled && !offline ? (S.email ? t("A receipt is on its way to {email}.", { email: `<bdi>${esc(S.email)}</bdi>` }) : "") : offline ? t("We’ll confirm once your gift is received.") : t("Your receipt will be emailed by our donation page.");
   sheet(`<div class="done"><div class="ck" style="color:var(--accent)">${ico(I.check, 24)}</div><h3>${t("Todah rabah")}</h3><div style="font-size:14px;max-width:280px">${t("{amt} is on its way to the {fund}.", { amt: money2(total), fund: t(f.name) })}</div><div class="h-s">${note}</div>${p.receiptUrl ? `<a class="btn btn-ghost" href="${esc(p.receiptUrl)}" target="_blank" rel="noopener">${t("View receipt")}</a>` : ""}</div><button class="btn btn-primary cta" data-act="closeSheet">${t("Done")}</button>`);
 }
 function autoEmpty() {
@@ -678,11 +708,11 @@ function autoEmpty() {
 }
 
 // cards & monthly gifts
-A.addCard = () => addCard();
+A.addCard = () => (PRACTICE ? toast(tt("Not needed in practice mode")) : addCard());
 A.removeCard = () => sheet(`<div><h3>${t("Remove this card?")}</h3><div class="h-s" style="font-size:13px">${t("You’ll need to add a card again before your next gift.")}</div></div><button class="btn btn-primary cta" data-act="removeCardGo">${t("Remove card")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
-A.removeCardGo = () => { closeSheet(); removeCard(); };
+A.removeCardGo = () => { closeSheet(); if (PRACTICE) return toast(tt("Not needed in practice mode")); removeCard(); };
 A.cancelSub = (v) => sheet(`<div><h3>${t("Cancel this monthly gift?")}</h3><div class="h-s" style="font-size:13px">${t("No further gifts will be charged.")}</div></div><button class="btn btn-primary cta" data-act="cancelSubGo" data-v="${esc(v)}">${t("Cancel monthly gift")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Keep it")}</button>`);
-A.cancelSubGo = async (v) => { closeSheet(); try { await api("/subscriptions/" + encodeURIComponent(v), { method: "DELETE" }); toast(tt("Monthly gift cancelled")); } catch (e) { toast(errText(e)); } API.subs = null; draw(); };
+A.cancelSubGo = async (v) => { closeSheet(); if (PRACTICE) { S.pracSubs = (S.pracSubs || []).filter((x) => x.id !== v); API.subs = S.pracSubs; save(); toast(tt("Monthly gift cancelled")); return draw(); } try { await api("/subscriptions/" + encodeURIComponent(v), { method: "DELETE" }); toast(tt("Monthly gift cancelled")); } catch (e) { toast(errText(e)); } API.subs = null; draw(); };
 
 // wallet
 A.walletLearn = () => infoSheet(tt("About the wallet"), t("Your wallet will hold funds you set aside for tzedakah, so emptying your pushka later is quick and simple. This feature is coming soon."));
@@ -756,6 +786,12 @@ A.pushkaDelGo = (v) => { S.pushkas = S.pushkas.filter((x) => x.id !== v); if (S.
 const FIELDS = { name: ["Name", "text", "name"], email: ["Email", "email", "email"], billingEmail: ["Billing email", "email", "email"], phone: ["Phone number", "tel", "tel"], address: ["Mailing address", "text", "street-address"] };
 A.editField = (k) => { const [label, type, auto] = FIELDS[k]; sheet(`<h3>${t(label)}</h3><div class="field"><label for="ef">${t(label)}</label><input class="input" id="ef" type="${type}" autocomplete="${auto}" maxlength="120" value="${esc(S[k])}"></div><button class="btn btn-primary cta" data-act="fieldSave" data-v="${k}">${t("Save")}</button>`, () => setTimeout(() => $("#ef") && $("#ef").focus(), 60)); };
 A.fieldSave = (k) => { S[k] = $("#ef").value.trim(); save(); closeSheet(); draw(); };
+const exitPractice = (on) => { try { if (on) localStorage.setItem(MODEKEY, "1"); else localStorage.removeItem(MODEKEY); } catch (e) {} location.href = location.pathname; };
+A.pExit = () => exitPractice(false);
+A.pracToggle = () => exitPractice(!PRACTICE);
+A.pFill = () => { const p = P(), need = r2(S.goal - p.balance); if (need <= 0) return toast(tt("Already at goal")); U.stack = []; U.page = "home"; draw(); const n = 5, base = r2(need / n); for (let i = 0; i < n; i++) setTimeout(() => drop(i === n - 1 ? r2(need - base * (n - 1)) : base), 450 * i); };
+A.pClear = () => sheet(`<div><h3>${t("Clear practice data?")}</h3><div class="h-s" style="font-size:13px">${t("This resets the practice pushka and practice history. Your real data is not touched.")}</div></div><button class="btn btn-primary cta" data-act="pClearGo">${t("Clear")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
+A.pClearGo = () => { try { localStorage.removeItem("lamorinda-pushka-practice"); } catch (e) {} location.reload(); };
 const wipe = () => { try { localStorage.removeItem(KEY); } catch (e) {} location.reload(); };
 A.deleteAcct = () => sheet(`<div><h3>${t("Delete account?")}</h3><div class="h-s" style="font-size:13px">${t("This erases your pushkas, history and settings from this device, stops any monthly gifts and removes your saved card. Gifts you already made are not affected.")}</div></div><button class="btn btn-primary cta" data-act="wipe" style="color:#9b1c5a;border-color:#9b1c5a">${t("Delete everything")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
 A.wipe = async () => { if (API.enabled && S.token) { try { await api("/account", { method: "DELETE" }); } catch (e) { if (e.code !== "unauthorized") { closeSheet(); return toast(errText(e)); } } } wipe(); };
