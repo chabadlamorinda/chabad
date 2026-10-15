@@ -65,6 +65,16 @@ async function buildYear(hy) {
   const events = HebrewCalendar.calendar({ year: hy, isHebrewYear: true, sedrot: true, il: false, noMinorFast: true, noModern: true, noRoshChodesh: true, noSpecialShabbat: false });
   const specials = new Map();
   for (const e of events) if (SPECIAL.has(e.getDesc())) specials.set(ymd(e.getDate().greg()), e.getDesc());
+  // Shabbat Mevarchim (blessing of the new month) and that month's molad.
+  const mevarchim = new Map();
+  const mv = HebrewCalendar.calendar({ year: hy, isHebrewYear: true, sedrot: false, il: false, noHolidays: true, molad: true, shabbatMevarchim: true });
+  for (const e of mv) {
+    const d = ymd(e.getDate().greg()), cur = mevarchim.get(d) || {};
+    const desc = e.getDesc();
+    if (/^Shabbat Mevarchim Chodesh /.test(desc)) { const m = desc.replace(/^Shabbat Mevarchim Chodesh /, ''); cur.month = HEB_MONTH[m] || m; }
+    else if (/^Molad /.test(desc)) cur.molad = e.render('en').replace(/^Molad [^:]+:\s*/, '').replace(/(\d)(am|pm)/i, (x, n, ap) => n + ' ' + ap.toUpperCase());
+    mevarchim.set(d, cur);
+  }
   const slots = [];
   for (const e of events) {
     const hd = e.getDate(), base = baseOf(hd), date = base.date, dow = base.dow;
@@ -76,6 +86,7 @@ async function buildYear(hy) {
     const h = holidayOf(e.getDesc(), dow === 6);
     if (h) slots.push({ ...base, year: hy, key: date + '|' + h[0], kind: h[0] === 'purim' ? 'purim' : 'holiday', title: h[1], titleHe: e.render('he-x-NoNikud').replace(/\s*\(.*\)$/, '').replace(/\s*\d+$/, ''), note: '' });
   }
+  for (const sl of slots) { const m = mevarchim.get(sl.date); if (m && m.month) { sl.mevarchim = m.month; sl.molad = m.molad || ''; } }
   slots.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
   cache.set(hy, slots);
   return slots;

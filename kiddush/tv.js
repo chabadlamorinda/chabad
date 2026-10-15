@@ -39,6 +39,7 @@
     var dt = new Date(s.date + 'T12:00:00'), d = el('div', 'p-date');
     d.appendChild(document.createTextNode(['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Shabbos'][dt.getDay()] + ', ' + s.dateLabel + '  ·  ' + s.heb + '  '));
     main.appendChild(d);
+    if (s.mevarchim) { var mv = el('div', 'p-mev'); mv.appendChild(el('div', '', 'Shabbat Mevarchim Chodesh ' + s.mevarchim)); if (s.molad) mv.appendChild(el('div', '', 'Molad: ' + s.molad)); main.appendChild(mv); }
     var tm = el('div', 'p-times'); tm.id = 'times'; main.appendChild(tm); shabbatTimes(s, tm);
     main.appendChild(el('div', 'p-rule'));
     if (s.sponsor) {
@@ -48,6 +49,7 @@
     } else {
       main.appendChild(el('div', 'p-open', 'OPEN FOR SPONSORSHIP'));
       main.appendChild(el('div', 'p-price', 'Sponsor this Kiddush · $' + (s.priceCents / 100)));
+      if (b.settings.standardNote) main.appendChild(el('div', 'p-std', b.settings.standardNote));
     }
     box.appendChild(main);
     var base = (b.settings.publicUrl || location.origin).replace(/\/+$/, '');
@@ -56,7 +58,8 @@
     qr.appendChild(el('div', 'q1', s.sponsor ? 'SPONSOR A FUTURE KIDDUSH' : 'SCAN TO SPONSOR'));
     qr.appendChild(el('div', 'q2', base.replace(/^https?:\/\//, '') + '/kiddush'));
     box.appendChild(qr);
-    ['p-name', 'p-sp'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
+    $('plate').className = 'plate' + (s.mevarchim ? ' tall' : '');
+    ['p-name', 'p-sp', 'p-open'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
     var ded = box.querySelector('.p-ded'); if (ded) { var g = 0; while (ded.scrollHeight > ded.clientHeight + 1 && ded.scrollHeight > parseFloat(getComputedStyle(ded).fontSize) * 2.4 && g++ < 12) ded.style.fontSize = parseFloat(getComputedStyle(ded).fontSize) * .92 + 'px'; }
   }
 
@@ -94,13 +97,32 @@
     document.documentElement.style.setProperty('--rh', Math.max(20, (h - gap * (rows - 1)) / rows) + 'px');
   }
 
+  // Bottom of the center: who donated the board this year, or an open invitation to sponsor it.
+  function renderDonor(b) {
+    var d = $('donor'), bs = b.boardSponsor, S = b.settings; d.textContent = ''; d.className = 'donor';
+    var base = (S.publicUrl || location.origin).replace(/\/+$/, '').replace(/^https?:\/\//, '') + '/kiddush';
+    if (bs && bs.sponsor) {
+      d.appendChild(el('div', 'donor-l', 'DONATED BY')); d.appendChild(el('div', 'donor-name', bs.sponsor.name));
+      if (bs.sponsor.dedication) d.appendChild(el('div', 'donor-sub', bs.sponsor.dedication));
+    } else if (S.donorEn || S.donorHe) {
+      d.appendChild(el('div', 'donor-l', 'DONATED BY'));
+      if (S.donorHe) { var he = el('div', 'donor-he', S.donorHe); he.lang = 'he'; d.appendChild(he); }
+      if (S.donorEn) d.appendChild(el('div', 'donor-en', S.donorEn));
+    } else if (bs && bs.status === 'open') {
+      d.className = 'donor open';
+      d.appendChild(el('div', 'donor-l', 'SPONSOR THIS KIDDUSH BOARD FOR ' + b.year));
+      d.appendChild(el('div', 'donor-sub', '$' + (bs.priceCents / 100).toLocaleString('en-US') + ' for the year · your name displayed here · ' + base));
+    } else { d.hidden = true; return; }
+    d.hidden = false;
+    var nm = d.querySelector('.donor-name'); if (nm) fit(nm, .5);
+  }
+
   function render(b) {
     board = b;
     $('yearNum').textContent = b.year; $('yearHe').textContent = b.yearHe;
     var s = b.settings;
     $('blessing').textContent = s.blessing || '';
-    $('donor').hidden = !(s.donorEn || s.donorHe);
-    $('donorHe').textContent = s.donorHe || ''; $('donorEn').textContent = s.donorEn || '';
+    renderDonor(b);
     layout(b); renderPlate(b);
     fit(document.querySelector('.title'), .6);
   }

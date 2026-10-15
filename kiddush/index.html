@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#1c0f0b"><meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#f8f0da">
 <title>Sponsor a Kiddush — Chabad Lamorinda</title>
 <meta name="description" content="Sponsor a Shabbat or holiday Kiddush at Chabad Lamorinda, in honor or in memory of someone dear.">
 <link rel="icon" href="img/logo.svg" type="image/svg+xml">
@@ -12,6 +12,8 @@
   <div class="org">CHABAD LAMORINDA</div>
   <h1>Sponsor a Kiddush</h1>
   <p class="lead">Dedicate a Shabbat or holiday Kiddush in honor or in memory of someone dear. Your name and dedication appear on our Kiddush board and are read before the community.</p>
+  <section class="thisweek" id="thisWeek" aria-live="polite" hidden></section>
+  <div class="info" id="info" hidden></div>
   <div class="hero-cta"><button class="btn gold" id="nextOpen" hidden>Sponsor the next open Kiddush</button></div>
 </header>
 <main>
@@ -22,6 +24,7 @@
   </div>
   <div id="list" aria-live="polite"><p class="muted center">Loading…</p></div>
 </main>
+<section id="boardCard" class="board-card" hidden></section>
 <footer>
   <p class="blessing" id="blessing"></p>
   <p class="muted" id="contact"></p>

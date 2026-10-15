@@ -48,7 +48,7 @@ body{font-family:"Oswald",sans-serif;color:var(--gold);background:#2a0f08 url(im
 .p-by{font-family:"Cinzel",serif;font-weight:700;font-size:calc(var(--u)*1.9);letter-spacing:.12em;opacity:.8}
 .p-sp{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:calc(var(--u)*4.4);line-height:1.05;max-width:100%;white-space:nowrap;text-shadow:0 1px 0 rgba(255,240,180,.7)}
 .p-ded{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:calc(var(--u)*2.7);line-height:1.15;max-width:100%;margin-top:calc(var(--u)*.3)}
-.p-open{font-family:"Cinzel",serif;font-weight:700;font-size:calc(var(--u)*3.3);line-height:1.1;letter-spacing:.03em}
+.p-open{font-family:"Cinzel",serif;font-weight:700;font-size:calc(var(--u)*3);line-height:1.1;letter-spacing:.03em;white-space:nowrap;max-width:100%}
 .p-price{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:calc(var(--u)*2.8);margin-top:calc(var(--u)*.6)}
 .p-qr{flex:0 0 calc(var(--u)*17);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
 .p-qr .qr{width:calc(var(--u)*14.5);height:calc(var(--u)*14.5);background:#fff;padding:calc(var(--u)*.8);border-radius:calc(var(--u)*.7);box-shadow:0 2px 6px rgba(0,0,0,.4)}
@@ -65,3 +65,15 @@ body{font-family:"Oswald",sans-serif;color:var(--gold);background:#2a0f08 url(im
 #offline{position:fixed;right:1vw;bottom:.8vh;font:500 1.6vh Oswald,sans-serif;color:#f3dc8c;background:rgba(0,0,0,.55);padding:.4vh 1vh;border-radius:1vh}
 
 .p-times{font-family:"Oswald",sans-serif;font-weight:500;font-size:calc(var(--u)*1.9);letter-spacing:.04em;margin-top:calc(var(--u)*.5);opacity:.85;text-transform:uppercase;min-height:1.2em}
+
+.p-mev{font-family:"Cinzel",serif;font-weight:600;font-size:calc(var(--u)*1.55);letter-spacing:.06em;text-transform:uppercase;line-height:1.35;margin-top:calc(var(--u)*.3);color:#5a2a14}
+.p-mev div+div{font-family:"Oswald",sans-serif;font-weight:500;letter-spacing:.04em}
+.p-std{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:calc(var(--u)*2.1);margin-top:calc(var(--u)*.1);opacity:.9}
+.plate.tall{height:calc(var(--u)*37)}
+.plate.tall .p-name{font-size:calc(var(--u)*4)}.plate.tall .p-rule{margin:calc(var(--u)*.7) 0}
+.plate.tall ~ .blessing{font-size:calc(var(--u)*1.75);line-height:1.38}
+
+.donor{max-width:100%}
+.donor-name{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:calc(var(--u)*4);line-height:1.1;color:#e0bc5a;white-space:nowrap;max-width:100%}
+.donor-sub{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:calc(var(--u)*2.3);line-height:1.2;color:#d9b552}
+.donor.open .donor-l{font-size:calc(var(--u)*2.7)}
