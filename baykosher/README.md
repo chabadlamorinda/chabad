@@ -35,6 +35,9 @@ Opens a throwaway database with demo products: store at `/` (Hebrew at `/he`), b
 | Items-to-pick totals across orders (for butchers / departments), customers list with CSV, stock reports from packers, banners, featured products, bulk edit, product import from a spreadsheet | Done |
 | Uber Direct dispatch | Written, **not yet tested against real Uber credentials** |
 
+## Hosting
+To run on your own Oracle Cloud Always Free server (live store + a test copy + nightly off-server backups), see [`deploy/README.md`](deploy/README.md). The Render route below also works.
+
 ## Go live checklist
 1. Create a **new** Render web service for `baykosher/` (root directory `baykosher`, build `npm install --omit=dev`, start `node server/index.js`) and a Postgres database. `render.yaml` is intentionally untouched so nothing existing changes.
 2. Environment variables: `DATABASE_URL`, `SESSION_SECRET` (random), `ADMIN_PASSWORD` (12+ chars), `PICKER_PIN`, `PUBLIC_URL` (https://baykosher.com), `STRIPE_SECRET_KEY`, `STRIPE_PUBLISHABLE_KEY`, `STRIPE_WEBHOOK_SECRET` (endpoint `/api/stripe/webhook`, event `payment_intent.amount_capturable_updated`), `RESEND_API_KEY` + `EMAIL_FROM`, `TWILIO_SID`/`TWILIO_TOKEN`/`TWILIO_FROM`, `CLOVER_MERCHANT_ID` + `CLOVER_TOKEN`, `UBER_CLIENT_ID`/`UBER_CLIENT_SECRET`/`UBER_CUSTOMER_ID`, optional `GOOGLE_MAPS_KEY`.

@@ -1,0 +1,17 @@
+# /etc/caddy/Caddyfile. Caddy gets and renews HTTPS certificates by itself.
+baykosher.com, www.baykosher.com {
+	encode zstd gzip
+	@www host www.baykosher.com
+	redir @www https://baykosher.com{uri} permanent
+	reverse_proxy 127.0.0.1:3000
+}
+
+staging.baykosher.com {
+	encode zstd gzip
+	header X-Robots-Tag "noindex, nofollow"
+	# keep the test copy private: one shared login in front of it (make the hash with: caddy hash-password)
+	basic_auth {
+		staging CHANGE_ME_HASH
+	}
+	reverse_proxy 127.0.0.1:3001
+}
