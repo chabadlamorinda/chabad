@@ -246,3 +246,26 @@ test('change card: newest card becomes the one charged, monthly gifts follow it,
   assert.equal((await c.call('GET', '/api/payment-method', null, c.token)).json.card.last4, '1111');
   assert.equal((await c.call('POST', '/api/payment-method/default', {})).status, 401);
 });
+
+test('chai club: levels, board shows only chosen names, replace switches level, amounts never exposed', async (t) => {
+  const c = await signedIn(t); const cus = c.token.split('.')[0]; c.stripe.addCard(cus);
+  const join = (amount, club, extra = {}) => c.call('POST', '/api/subscribe', gift({ amount, fund: 'chai', idem: 'idem-club-' + amount + '-' + Math.random().toString(36).slice(2, 12), club, ...extra }), c.token);
+  assert.equal((await join(50, { name: 'X', show: true })).json.code, 'invalid_amount'); // below $72
+  assert.equal((await join(180, { name: '', show: true })).json.code, 'invalid_name');
+  assert.equal((await c.call('POST', '/api/subscribe', gift({ amount: 180, fund: 'general', idem: 'idem-club-wrongfund-00001', club: { name: 'X', show: true } }), c.token)).status, 400);
+  assert.equal((await join(180, { name: 'The Cohen Family', show: true })).status, 200); // 180 = silver
+  let b = (await c.call('GET', '/api/club')).json;
+  assert.deepEqual(b.members.map((m) => [m.name, m.level]), [['The Cohen Family', 'silver']]); assert.equal(b.counts.silver, 1); assert.equal(b.total, 1);
+  assert.ok(!JSON.stringify(b).includes('18000') && !JSON.stringify(b).includes('180'));
+  // level change replaces the old gift
+  assert.equal((await join(720, { name: 'The Cohen Family', show: true }, { replace: true })).status, 200);
+  b = (await c.call('GET', '/api/club')).json; assert.equal(b.members.length, 1); assert.equal(b.members[0].level, 'platinum'); assert.equal(b.total, 1);
+  assert.equal((await c.call('GET', '/api/subscriptions', null, c.token)).json.subscriptions.length, 1);
+  // anonymous donors are counted, not named
+  const d = await start(); t.after(d.close); d.stripe = c.stripe;
+  await c.call('POST', '/api/subscribe', gift({ amount: 72, fund: 'chai', idem: 'idem-club-anon-0000001', club: { name: 'Secret', show: false } }), c.token);
+  b = (await c.call('GET', '/api/club')).json; assert.equal(b.counts.bronze, 1); assert.ok(!JSON.stringify(b).includes('Secret'));
+  assert.equal(b.members[0].level, 'platinum');
+  const r = await fetch(c.base + '/api/club'); assert.equal(r.headers.get('access-control-allow-origin'), '*');
+  const page = await fetch(c.base + '/board/'); assert.equal(page.status, 200); assert.match(page.headers.get('content-security-policy'), /frame-ancestors 'self' https:\/\/www\.chabadoflamorinda\.com/);
+});

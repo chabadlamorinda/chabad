@@ -30,6 +30,9 @@ const FUND_NAMES = {
   children: 'Children Events',
   pledge: 'Pledge',
 };
+// Chai Club (monthly donors). A gift of exactly a boundary amount belongs to the higher level.
+const CLUB_LEVELS = [['platinum', 72000], ['gold', 36000], ['silver', 18000], ['bronze', 7200]];
+const clubLevel = (cents) => { const l = CLUB_LEVELS.find(([, min]) => cents >= min); return l ? l[0] : null; };
 const FEE_RATE = 0.035;      // optional "cover the processing fee" add-on
 const MIN_CENTS = 100;       // $1
 const MAX_CENTS = 1000000;   // $10,000 per gift
@@ -284,26 +287,59 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const pm = await savedCard(req.customerId);
     if (!pm) throw new HttpError(400, 'no_card', 'Please add a card first.');
     const product = await ensureProduct(g.fund);
+    let club = null;
+    if (req.body.club) {
+      if (g.fund !== 'chai' || !clubLevel(g.cents)) throw new HttpError(400, 'invalid_amount', 'The Chai Club starts at $72 a month.');
+      club = { name: clean(req.body.club.name, 60), show: req.body.club.show === true };
+      if (club.show && !club.name) throw new HttpError(400, 'invalid_name', 'Please enter the name for the board.');
+    }
     const sub = await stripe.subscriptions.create({
       customer: req.customerId, default_payment_method: pm.id,
       items: [{ price_data: { currency: 'usd', product, unit_amount: g.total, recurring: { interval: 'month' } } }],
       off_session: true, payment_behavior: 'error_if_incomplete',
       description: 'My Pushka monthly gift: ' + FUND_NAMES[g.fund],
-      metadata: { source: 'pushka', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents) },
+      metadata: { source: 'pushka', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents), ...(club ? { club: 'yes', board_show: club.show ? 'yes' : 'no', board_name: club.show ? club.name : '' } : {}) },
       expand: ['latest_invoice'],
     }, { idempotencyKey: 'pushka-sub-' + g.idem });
+    if (club && req.body.replace === true) { // changing level: stop the earlier Chai Club gift(s)
+      for (const old of await activeSubs(req.customerId)) if (old.id !== sub.id && old.metadata && old.metadata.club === 'yes') await stripe.subscriptions.cancel(old.id);
+    }
+    clubCache = { at: 0, data: null };
     res.json({ status: sub.status, id: sub.id, receiptUrl: typeof sub.latest_invoice === 'object' && sub.latest_invoice ? sub.latest_invoice.hosted_invoice_url || '' : '' });
   }));
 
   const subView = (s) => {
     const item = s.items && s.items.data && s.items.data[0];
     const end = s.current_period_end || (item && item.current_period_end) || null;
-    return { id: s.id, amount: item && item.price ? item.price.unit_amount / 100 : 0, fund: (s.metadata && s.metadata.fund) || 'general', next: end ? end * 1000 : null };
+    return { id: s.id, amount: item && item.price ? item.price.unit_amount / 100 : 0, fund: (s.metadata && s.metadata.fund) || 'general', next: end ? end * 1000 : null, club: !!(s.metadata && s.metadata.club === 'yes'), gift: s.metadata && s.metadata.gift_cents ? Number(s.metadata.gift_cents) / 100 : null, boardName: (s.metadata && s.metadata.board_name) || '', boardShow: !!(s.metadata && s.metadata.board_show === 'yes') };
   };
   async function activeSubs(customer) {
     const list = await stripe.subscriptions.list({ customer, status: 'active', limit: 20 });
     return list.data.filter((s) => s.metadata && s.metadata.source === 'pushka');
   }
+  // Public honor board: first names the donor chose to show, grouped by level. Amounts are never shown.
+  let clubCache = { at: 0, data: null };
+  api.get('/club', limit('club', 60, 10 * 60 * 1000), wrap(async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    if (!stripe) return res.json({ members: [], counts: {}, total: 0 });
+    if (!clubCache.data || Date.now() - clubCache.at > 5 * 60 * 1000) {
+      const members = [], counts = { platinum: 0, gold: 0, silver: 0, bronze: 0 }; let after;
+      for (let page = 0; page < 50; page++) {
+        const list = await stripe.subscriptions.list({ status: 'active', limit: 100, ...(after ? { starting_after: after } : {}) });
+        for (const sb of list.data) {
+          const m = sb.metadata || {}; if (m.source !== 'pushka' || m.club !== 'yes') continue;
+          const level = clubLevel(Number(m.gift_cents)); if (!level) continue;
+          counts[level]++;
+          if (m.board_show === 'yes' && m.board_name) members.push({ name: m.board_name, level, since: (sb.created || 0) * 1000 });
+        }
+        if (!list.has_more || !list.data.length) break; after = list.data[list.data.length - 1].id;
+      }
+      const rank = (l) => CLUB_LEVELS.findIndex(([id]) => id === l);
+      members.sort((a, b) => rank(a.level) - rank(b.level) || a.since - b.since);
+      clubCache = { at: Date.now(), data: { members, counts, total: Object.values(counts).reduce((a, b) => a + b, 0) } };
+    }
+    res.json(clubCache.data);
+  }));
   api.get('/subscriptions', needStripe, auth, wrap(async (req, res) => {
     res.json({ subscriptions: (await activeSubs(req.customerId)).map(subView) });
   }));
@@ -335,6 +371,12 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   });
   // The app is the front door: any address pointed at this server (for example pushka.chabadoflamorinda.com) opens it.
   app.get(['/', '/index.html'], (req, res) => res.redirect(302, '/pushka/'));
+  // The honor board page can be embedded (iframe) on the organisation's own website.
+  const frameOk = (process.env.BOARD_FRAME_ANCESTORS || "https://www.chabadoflamorinda.com https://chabadoflamorinda.com https://*.chabadoflamorinda.com https://chabad-lamorinda.onrender.com").trim();
+  app.use('/board', (req, res, next) => {
+    res.setHeader('Content-Security-Policy', ["default-src 'self'", "script-src 'self'", "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com", "font-src 'self' https://fonts.gstatic.com", "img-src 'self' data:", "connect-src 'self'", "base-uri 'self'", "frame-ancestors 'self' " + frameOk].join('; '));
+    next();
+  }, express.static(path.join(ROOT, 'board'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use('/pushka', express.static(path.join(ROOT, 'pushka'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use((req, res) => res.status(404).type('text').send('Not found'));
   return app;

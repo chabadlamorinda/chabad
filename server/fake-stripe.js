@@ -28,8 +28,8 @@ function fakeStripe() {
     },
     subscriptions: {
       create: async (p, o) => { st.calls.push(['subscriptions.create', p, o]);
-        return withIdem(o && o.idempotencyKey, () => { const sub = { id: id('sub'), status: 'active', customer: p.customer, metadata: p.metadata, items: { data: [{ price: { unit_amount: p.items[0].price_data.unit_amount }, current_period_end: 1893456000 }] }, latest_invoice: { hosted_invoice_url: 'https://invoice.stripe.com/i/test' } }; st.subs[sub.id] = sub; return sub; }); },
-      list: async ({ customer }) => ({ data: Object.values(st.subs).filter((x) => x.customer === customer && x.status === 'active') }),
+        return withIdem(o && o.idempotencyKey, () => { const sub = { id: id('sub'), created: 1700000000 + st.seq, status: 'active', customer: p.customer, metadata: p.metadata, items: { data: [{ price: { unit_amount: p.items[0].price_data.unit_amount }, current_period_end: 1893456000 }] }, latest_invoice: { hosted_invoice_url: 'https://invoice.stripe.com/i/test' } }; st.subs[sub.id] = sub; return sub; }); },
+      list: async ({ customer, status }) => ({ data: Object.values(st.subs).filter((x) => (!customer || x.customer === customer) && x.status === (status || 'active')) }),
       retrieve: async (i) => st.subs[i],
       update: async (i, p) => Object.assign(st.subs[i], p),
       cancel: async (i) => { st.subs[i].status = 'canceled'; return st.subs[i]; },

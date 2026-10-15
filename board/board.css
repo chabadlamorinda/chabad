@@ -1,0 +1,31 @@
+/* Chai Club honor board: shared by the app and the embeddable page. */
+.cb{--gold:#b68235;--gold-d:#7d5411;--ink:#201f1d;--paper:#fbf8f2;--line:rgba(125,84,17,.35);font-family:Lora,Georgia,serif;color:var(--ink);max-width:760px;margin:0 auto;box-sizing:border-box}
+.cb *{box-sizing:border-box}
+.cb-frame{position:relative;padding:10px;border-radius:6px;background:linear-gradient(135deg,#e9c987,#b68235 45%,#8a5f1a 70%,#e1ad66);box-shadow:0 12px 32px rgba(45,43,43,.22)}
+.cb-paper{position:relative;border-radius:3px;padding:30px 22px 26px;background:radial-gradient(ellipse at 50% 0,#fffdf8 0,var(--paper) 55%,#f3ecdd 100%);box-shadow:inset 0 0 0 1px var(--line),inset 0 0 0 7px var(--paper),inset 0 0 0 8px var(--line)}
+.cb-head{text-align:center;margin-bottom:18px}
+.cb-he{font:600 38px/1.1 "Cormorant Garamond",Georgia,serif;color:#173766;letter-spacing:.04em}
+.cb-title{font:400 30px/1.15 "Cormorant Garamond",Georgia,serif;margin:4px 0 2px}
+.cb-sub{font-size:13px;color:#605d5d;max-width:440px;margin:6px auto 0}
+.cb-orn{display:flex;align-items:center;gap:10px;justify-content:center;color:var(--gold);margin:12px auto 0;max-width:260px}
+.cb-orn:before,.cb-orn:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}.cb-orn:after{transform:scaleX(-1)}
+.cb-tier{margin-top:22px}
+.cb-th{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:12px}
+.cb-th svg{flex:none}
+.cb-tn{font:600 22px/1.1 "Cormorant Garamond",Georgia,serif;letter-spacing:.06em;text-transform:uppercase}
+.cb-tr{font-size:12px;color:#605d5d}
+.cb-ct{margin-inline-start:auto;font:400 13px Lora,Georgia,serif;color:var(--gold-d);border:1px solid var(--line);border-radius:12px;padding:1px 10px}
+.cb-names{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:9px}
+.cb-plaque{display:flex;align-items:center;gap:9px;padding:8px 12px;border-radius:3px;background:linear-gradient(180deg,#fffdf9,#f4ecdb);border:1px solid var(--line);box-shadow:0 1px 2px rgba(45,43,43,.12);font:600 17px/1.2 "Cormorant Garamond",Georgia,serif;animation:cbIn .5s both}
+.cb-plaque svg{flex:none}
+.cb-plaque span{overflow-wrap:anywhere}
+.cb-quiet{margin-top:9px;font-size:12.5px;font-style:italic;color:#605d5d}
+.cb-empty{text-align:center;color:#605d5d;font-style:italic;padding:8px 0 2px}
+.cb-foot{margin-top:22px;text-align:center;font-size:12px;color:#605d5d}
+.cb-cta{display:inline-block;margin-top:10px;border:1px solid var(--gold);border-radius:26px;padding:9px 22px;color:var(--gold-d);text-decoration:none;font:600 15px Lora,Georgia,serif;background:transparent;cursor:pointer}
+.cb-cta:hover{background:rgba(182,130,53,.12)}
+.cb-summary{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:12px}
+.cb-sum{display:flex;align-items:center;gap:6px;font-size:13px;color:#444141}
+@keyframes cbIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.cb-plaque{animation:none}}
+@media (max-width:480px){.cb-paper{padding:24px 14px 20px}.cb-title{font-size:26px}.cb-names{grid-template-columns:1fr}}

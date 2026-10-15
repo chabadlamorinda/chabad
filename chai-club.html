@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chai Club · Chabad of Lamorinda</title>
+  <meta name="description" content="Our monthly donors: the Chai Club honor board of Chabad of Lamorinda.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo" href="./">Chabad of Lamorinda</a>
+      <nav><a href="./">Home</a><a href="pushka/">Pushka</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="wrap" style="padding:32px 0">
+      <h1>The Chai Club</h1>
+      <p class="lead">Our monthly donors, at four levels: Bronze, Silver, Gold and Platinum. Join in the My Pushka app and your medal appears here.</p>
+      <!-- The board is served by the app so it always shows the latest members. -->
+      <iframe id="board" title="Chai Club honor board" src="https://chabad-lamorinda-app.onrender.com/board/?embed=1" style="width:100%;border:0;min-height:900px" loading="lazy"></iframe>
+      <p style="text-align:center"><a class="btn primary" href="pushka/?go=club">Join the Chai Club</a></p>
+    </section>
+  </main>
+  <script>
+    // Make the frame exactly as tall as the board.
+    window.addEventListener('message', function (e) {
+      if (e.origin !== 'https://chabad-lamorinda-app.onrender.com' || !e.data || e.data.type !== 'chai-board-height') return;
+      document.getElementById('board').style.height = Math.min(Math.max(+e.data.height || 0, 300), 4000) + 'px';
+    });
+  </script>
+</body>
+</html>

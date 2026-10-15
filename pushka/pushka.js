@@ -61,7 +61,7 @@ const def = () => ({
   sound: true, jingle: true, confetti: true, vibrate: true, partial: false, addl: false, bio: "",
   wallet: { id: walletId(), balance: 0 },
   history: [], pracSubs: [],
-  rem: { candle: { on: false, mins: 15 }, streak: { on: false }, custom: [] },
+  rem: { candle: { on: true, mins: 15 }, streak: { on: false }, custom: [] }, remV: 2, yzLeads: [30, 7, 1], club: { name: "", show: true },
   nudge: { at: 0, n: 0, first: Date.now() },
   yz: [], yzShare: false, yzRemind: false, pushOn: false, mtoken: "", msig: "",
   candles: [], notified: {}, maaser: 10, lastEmptied: Date.now(), prompted: "",
@@ -76,6 +76,9 @@ function load() {
   s.wallet = Object.assign({}, b.wallet, (o && o.wallet) || {});
   if (!Array.isArray(s.pushkas) || !s.pushkas.length) s.pushkas = b.pushkas;
   if (!s.pushkas.find((p) => p.id === s.cur)) s.cur = s.pushkas[0].id;
+  if (!o || !o.remV) s.rem.candle.on = true; // new default: a reminder to give before Shabbat (people can turn it off)
+  s.remV = 2; if (!Array.isArray(s.yzLeads) || !s.yzLeads.length) s.yzLeads = [30, 7, 1];
+  s.club = Object.assign({ name: "", show: true }, s.club || {});
   return s;
 }
 let S = load();
@@ -236,7 +239,7 @@ const cardLabel = () => (API.card ? (BRANDS[API.card.brand] || API.card.brand) +
 const cardExp = () => (API.card && API.card.expMonth ? String(API.card.expMonth).padStart(2, "0") + "/" + String(API.card.expYear).slice(-2) : "");
 const cardExpired = () => { const c = API.card; if (!c || !c.expYear) return false; const n = new Date(); return c.expYear < n.getFullYear() || (c.expYear === n.getFullYear() && c.expMonth < n.getMonth() + 1); };
 async function refreshCard() { try { API.card = (await api("/payment-method")).card; } catch (e) { API.card = null; } }
-async function loadSubs() { try { API.subs = (await api("/subscriptions")).subscriptions; } catch (e) { API.subs = []; } if (U.page === "profile") draw(); }
+async function loadSubs() { try { API.subs = (await api("/subscriptions")).subscriptions; } catch (e) { API.subs = []; } if (U.page === "profile" || U.page === "club") draw(); }
 async function initPay() { if (PRACTICE) { API.enabled = true; API.card = { brand: "visa", last4: "4242" }; API.subs = S.pracSubs || []; return draw(); } try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } API.members = !!c.members; API.vapid = c.vapidPublicKey || ""; if (API.members && S.mtoken) { try { API.cardIssue = (await api("/member", { member: true })).cardIssue || ""; } catch (e) {} } if (API.vapid && S.pushOn) pushSync(); } catch (e) {} draw(); }
 let stripeP = null;
 function loadStripe() {
@@ -300,7 +303,7 @@ async function chargeFlow(p) {
   U.busy = true;
   sheet(`<div class="done"><div class="spin" aria-hidden="true"></div><h3>${t("Processing your gift…")}</h3><div class="h-s">${t("Please don’t close this window.")}</div></div>`, null, null, true);
   try {
-    const body = { amount: p.amt, fund: p.fund, dedication: p.ded || "", fee: !!p.fee, idem: uid() + uid() + uid() };
+    const body = { amount: p.amt, fund: p.fund, dedication: p.ded || "", fee: !!p.fee, idem: uid() + uid() + uid() }; if (p.club) { body.club = p.club; body.replace = !!p.replace; }
     let r = await api(p.freq === "monthly" ? "/subscribe" : "/donate", { method: "POST", body });
     if (r.status === "requires_action") {
       const stripe = await loadStripe();
@@ -309,7 +312,7 @@ async function chargeFlow(p) {
       r = await api("/payment/" + paymentIntent.id);
     }
     if (r.status !== "succeeded" && r.status !== "active") throw Object.assign(new Error("Payment not completed"), { code: "card_error" });
-    p.receiptUrl = r.receiptUrl || ""; U.busy = false; if (p.freq === "monthly") API.subs = null; completeGift(p);
+    p.receiptUrl = r.receiptUrl || ""; U.busy = false; if (p.freq === "monthly") API.subs = null; if (p.club) U.club.data = null; completeGift(p);
   } catch (e) { U.busy = false; failSheet(e, p); }
 }
 
@@ -344,7 +347,7 @@ function tick() {
     if ((early || isWk(d)) && d.getDay() !== 6 && within(ts) && !S.notified[k]) { mark(k); notify(tt("Keep your streak alive — drop a coin in your pushka.")); }
   }
   S.rem.custom.filter((r) => r.on).forEach((r) => {
-    const [h, m] = r.time.split(":").map(Number), k = r.id + dkey(d), okDay = r.days === "daily" || (r.days === "weekdays" && isWk(d)) || (r.days === "friday" && d.getDay() === 5);
+    const [h, m] = r.time.split(":").map(Number), k = r.id + dkey(d), okDay = r.days === "daily" || (r.days === "weekdays" && isWk(d)) || (r.days === "friday" && d.getDay() === 5) || (r.days === "roshchodesh" && [1, 30].includes(hebDay(d))) || (r.days === "chai" && hebDay(d) === 18);
     if (okDay && within(at(h, m)) && !S.notified[k]) { mark(k); notify(r.text || tt("Time to give tzedakah!")); }
   });
 }
@@ -362,7 +365,7 @@ function showLock() { const el = $("#lock"); el.hidden = false; el.innerHTML = `
 
 // ---------- page chrome ----------
 const TABS = [["home", "Pushka", I.home], ["give", "Give", I.give], ["wallet", "Wallet", I.wallet], ["history", "History", I.history], ["more", "More", I.more]];
-const tabOf = (pg) => (["segulot", "segulah", "quotes", "building", "otherways"].includes(pg) ? "give" : ["home", "give", "wallet", "history"].includes(pg) ? pg : "more");
+const tabOf = (pg) => (["segulot", "segulah", "quotes", "building", "otherways", "club"].includes(pg) ? "give" : ["home", "give", "wallet", "history"].includes(pg) ? pg : "more");
 const sub = (title, body) => `<div class="head sub"><button class="icon-btn" data-act="back" aria-label="${t("Back")}">${ico(I.back, 24, FLIP)}</button><h1>${esc(title)}</h1><span style="width:44px"></span></div><div class="scroll"><div class="col tight" style="padding-top:var(--s4)">${body}</div></div>`;
 const chev = () => `<span style="color:var(--accent)">${ico(I.chev, 18, FLIP)}</span>`;
 const rowLink = (act, v, icon, title, subt) => `<button class="row-btn" data-act="${act}" data-v="${esc(v)}"><span style="color:var(--accent);flex:none">${ico(icon, 22)}</span><div class="grow"><div class="fund-n">${esc(title)}</div>${subt ? `<div class="fund-d">${esc(subt)}</div>` : ""}</div>${chev()}</button>`;
@@ -410,7 +413,7 @@ PG.home = () => {
     const subt = S.rem.candle.on ? tt("It's customary to give before lighting. We'll remind you at {time}.", { time: clock(new Date(c - S.rem.candle.mins * 60e3)) }) : tt("It's customary to give before lighting. Turn on the reminder in Reminders.");
     reminder = `<div class="card">${ico(I.flame, 22, 'style="color:var(--accent);flex:none"')}<div style="flex:1"><div class="card-title">${esc(title)}</div><div class="h-s">${esc(subt)}</div></div></div>`;
   }
-  reminder = cardIssueBanner() + yzBanner() + nudgeBanner() + reminder;
+  reminder = cardIssueBanner() + yzBanner() + notifBanner() + nudgeBanner() + reminder;
   const chips = S.pushkas.length > 1 ? `<div class="chips">${S.pushkas.map((x) => `<button class="chip ${x.id === p.id ? "on" : ""}" data-act="setCur" data-v="${x.id}">${esc(pTitle(x))}</button>`).join("")}</div>` : "";
   const since = greg(new Date(S.lastEmptied));
   const msg = p.balance > 0 ? `<div class="h-t" style="font-size:20px">${t("Your pushka has {amt}", { amt: money2(p.balance) })}</div><div class="h-s">${p.drops === 1 ? t("1 coin since {date}", { date: esc(since) }) : t("{n} coins since {date}", { n: p.drops, date: esc(since) })}</div>` : `<div class="h-t" style="font-size:20px">${t("Your pushka is empty")}</div><div class="h-s">${t("Add some coins now")}</div>`;
@@ -435,7 +438,8 @@ const feeBox = () => (API.enabled ? `<label class="chk"><input type="checkbox" d
 const giveCtaText = () => (U.freq === "monthly" ? t("Give {amt} monthly", { amt: money(totalOf(U.giveAmt)) }) : t("Give {amt}", { amt: money(totalOf(U.giveAmt)) }));
 PG.give = () => {
   if (!U.giveFund) return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("Give")}</h1><div class="sub">${t("A direct gift to Chabad of Lamorinda.")}</div></div>
-    ${sec(t("Give to a fund"))}<div>${FUNDS.map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div>${f.desc ? `<div class="fund-d">${t(f.desc)}</div>` : ""}</div>${chev()}</button>`).join("")}</div>
+    <button class="row-btn club-row" data-act="go" data-v="club"><span style="flex:none;display:flex;gap:2px">${["bronze", "silver", "gold", "platinum"].map((m) => medalSvg(m, 20)).join("")}</span><div class="grow"><div class="fund-n">${t("Chai Club · Monthly donors")}</div><div class="fund-d">${t("Bronze, Silver, Gold and Platinum. Join the honor board.")}</div></div>${chev()}</button>
+    ${sec(t("Give to a fund"))}<div>${FUNDS.filter((f) => f.id !== "chai").map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div>${f.desc ? `<div class="fund-d">${t(f.desc)}</div>` : ""}</div>${chev()}</button>`).join("")}</div>
     ${sec(t("Building Campaign"))}<div>${rowLink("go", "building", I.home, tt("Center for Jewish Life"), tt("Giving levels and the Wall of Honor"))}</div>
     ${sec(t("Sponsorships"))}<div>${SPONSORS.map(([id, name]) => rowLink("sponsor", id, I.flame, tt(name), "")).join("")}</div>
     ${sec(t("Give for a segulah"))}<div>${rowLink("go", "segulot", I.book, tt("Segulot & Prayers"), tt("Choose a segulah and how much to give"))}</div>
@@ -546,7 +550,15 @@ PG.maaser = () => sub(tt("Maaser Calculator"), `<div class="field"><label for="m
   <p class="note">${t("Maaser (a tenth of income) is a traditional guideline; some give up to a fifth. Ask the Rabbi how it applies to your situation.")}</p>`);
 
 // ----- reminders -----
-const DAYS = { weekdays: "Weekdays", daily: "Every day", friday: "Fridays" };
+const DAYS = { weekdays: "Weekdays", daily: "Every day", friday: "Fridays", roshchodesh: "Rosh Chodesh", chai: "18th of the Hebrew month" };
+const SUGG = [
+  ["morning", "Good morning coin", "Start your day with a coin for tzedakah.", "daily", "08:00"],
+  ["tehillim", "Today’s Tehillim", "Today’s Tehillim is waiting for you. Open the app to read it.", "daily", "07:00"],
+  ["grateful", "Evening gratitude", "What are you grateful for today? Drop a coin to say thank you.", "daily", "21:00"],
+  ["kids", "Friday coin with the kids", "Let the kids drop the coin in the pushka before Shabbat.", "friday", "10:00"],
+  ["rc", "Rosh Chodesh", "Today is Rosh Chodesh, a good day to give.", "roshchodesh", "09:00"],
+  ["chai", "Chai day", "Chai! The 18th of the Hebrew month. Give $18 for life.", "chai", "09:00"],
+];
 PG.reminders = () => {
   const c = S.rem.candle, st = S.rem.streak;
   return sub(tt("Reminders"), `<div>
@@ -554,6 +566,7 @@ PG.reminders = () => {
     ${tg("remToggle", "streak", t("Streak Reminder"), `${t("Weekdays · 8:00 pm")}<br>${t("Every Friday & before holidays · 1:00 pm")}`, st.on)}
     ${S.rem.custom.map((r) => `<div class="row-btn"><div class="grow"><div class="h-t">${esc(r.text || tt("Give tzedakah"))}</div><div class="h-s">${t(DAYS[r.days])} · ${esc(clock(new Date("2000-01-01T" + r.time)))}</div></div><button class="icon-btn sm" data-act="remDel" data-v="${r.id}" aria-label="${t("Delete reminder")}">${ico(I.trash, 18)}</button><button role="switch" aria-checked="${r.on}" aria-label="${t("Reminder on")}" data-act="remToggle" data-v="${r.id}" style="all:unset;cursor:pointer"><div class="sw ${r.on ? "on" : ""}"></div></button></div>`).join("")}</div>
     <button class="btn btn-secondary cta" data-act="addRem">${ico(I.plus, 16)} ${t("Add reminder")}</button>
+    ${sec(t("Suggested reminders"))}<div>${SUGG.filter((x) => !S.rem.custom.some((r) => r.sid === x[0])).map((x) => `<div class="row-btn"><div class="grow"><div class="h-t">${t(x[1])}</div><div class="h-s">${t(x[2])}</div><div class="h-s">${t(DAYS[x[3]])} · ${esc(clock(new Date("2000-01-01T" + x[4])))}</div></div><button class="btn btn-secondary" data-act="remSuggest" data-v="${x[0]}">${t("Add")}</button></div>`).join("") || `<div class="rowp">${t("You’ve added all the suggestions. Thank you!")}</div>`}</div>
     ${pushCard()}
     <p class="note">${t("Reminders arrive while the app is open or installed on your home screen. Candle times are for Lafayette, CA.")}</p>`);
 };
@@ -611,6 +624,8 @@ function draw() {
   $("#app").innerHTML = practiceBar() + PG[pg]() + `<nav class="tabbar" aria-label="${t("Main")}">${TABS.map(([id, l, ic]) => `<button class="tab ${tabOf(pg) === id ? "on" : ""}" data-act="tab" data-v="${id}" ${tabOf(pg) === id ? 'aria-current="page"' : ""}>${ico(ic)}<span>${t(l)}</span></button>`).join("")}</nav>`;
   U.drawn = pg; const sc = $(".scroll"); if (sc) sc.scrollTop = y;
   if (pg === "home") animateFill();
+  if (pg === "club") mountBoard();
+  if (pg === "club" && API.enabled && S.token && API.subs === null && !U.subsLoading) { U.subsLoading = true; loadSubs().finally(() => (U.subsLoading = false)); }
   if (pg === "profile" && API.enabled && S.token && API.subs === null && !U.subsLoading) { U.subsLoading = true; loadSubs().finally(() => (U.subsLoading = false)); }
 }
 
@@ -694,7 +709,7 @@ const donateLink = (p) => `${DONATE_URL}?amount=${encodeURIComponent(p.amt)}&fun
 function practiceGift(p) {
   p.fee = !!feeOn();
   sheet(`<div class="done"><div class="spin" aria-hidden="true"></div><h3>${t("Processing your gift…")}</h3></div>`, null, null, true);
-  setTimeout(() => { if (p.freq === "monthly") { S.pracSubs = (S.pracSubs || []).concat([{ id: "prac" + uid(), amount: p.amt, fund: p.fund, next: Date.now() + 30 * 864e5 }]); API.subs = S.pracSubs; } completeGift(p); }, 900);
+  setTimeout(() => { if (p.freq === "monthly") { if (p.club && p.replace) S.pracSubs = (S.pracSubs || []).filter((x) => !x.club); S.pracSubs = (S.pracSubs || []).concat([{ id: "prac" + uid(), amount: p.amt, gift: p.amt, club: !!p.club, fund: p.fund, next: Date.now() + 30 * 864e5 }]); API.subs = S.pracSubs; } completeGift(p); }, 900);
 }
 async function startGift(p) {
   if (p.method && p.method !== "online") return offlineSheet(p);
@@ -785,6 +800,8 @@ A.candleSave = () => { S.rem.candle.mins = +($("input[name=cm]:checked") || { va
 A.addRem = () => sheet(`<h3>${t("Add reminder")}</h3><div class="field"><label for="rt">${t("Time")}</label><input class="input" id="rt" type="time" value="09:00"></div><div class="field"><label>${t("Repeat")}</label><div class="seg"><label><input type="radio" name="rd" value="weekdays" checked>${t("Weekdays")}</label><label><input type="radio" name="rd" value="daily">${t("Every day")}</label><label><input type="radio" name="rd" value="friday">${t("Fridays")}</label></div></div><div class="field"><label for="rx">${t("Message (optional)")}</label><input class="input" id="rx" maxlength="60" placeholder="${t("Time to give tzedakah!")}"></div>${sheetBtns(["remSave", t("Save")], ["closeSheet", t("Cancel")])}`);
 A.remSave = async () => { const time = $("#rt").value; if (!time) return toast(tt("Choose a time")); const r = { id: uid(), time, days: ($("input[name=rd]:checked") || {}).value || "weekdays", text: $("#rx").value.trim(), on: true }; closeSheet(); if (!(await ensureNotify())) return; S.rem.custom.push(r); save(); draw(); };
 
+A.remSuggest = async (v) => { const x = SUGG.find((q) => q[0] === v); if (!x || !(await ensureNotify())) return; S.rem.custom.push({ id: uid(), sid: x[0], time: x[4], days: x[3], text: tt(x[2]), on: true }); save(); toast(tt("Reminder added")); draw(); };
+
 // settings
 A.setGoal = (v) => { const n = parseFloat(v); if (n >= 1 && n <= 100000) { S.goal = r2(n); save(); } draw(); };
 A.setPreset = (v, el) => { const n = parseFloat(v); if (n > 0 && n <= 10000) { S.presets[+el.dataset.i] = r2(n); save(); } draw(); };
@@ -850,7 +867,8 @@ PG.yahrzeit = () => {
     ${rows || `<div class="rowp">${t("No yahrzeits yet.")}</div>`}
     <button class="btn btn-primary cta" data-act="yzAdd">${ico(I.plus, 16)} ${t("Add a yahrzeit")}</button>
     ${sec(t("Reminders and sharing"))}
-    ${avail ? `${toggleRow("yzRemindTgl", t("Remind me by notification"), t("A notification 7 days before, the day before and the day of."), S.yzRemind)}
+    ${avail ? `${toggleRow("yzRemindTgl", t("Remind me by notification"), t("By default: a month before, a week before and the day before. You can change this."), S.yzRemind)}
+    ${S.yzRemind ? `<div class="field"><label>${t("Remind me")}</label><div class="chips wrapchips">${[[30, "1 month before"], [14, "2 weeks before"], [7, "1 week before"], [3, "3 days before"], [1, "1 day before"], [0, "On the day"]].map(([n, l]) => `<button class="chip ${S.yzLeads.includes(n) ? "on" : ""}" data-act="yzLead" data-v="${n}" aria-pressed="${S.yzLeads.includes(n)}">${t(l)}</button>`).join("")}</div></div>` : ""}
     ${toggleRow("yzShareTgl", t("Share with Chabad of Lamorinda"), t("So the Rabbi can remember your loved ones and reach out. Off by default."), S.yzShare)}
     <p class="note">${t("If you share, the Rabbi can see these names and dates together with your name, email and phone. Nobody else can. Turn it off at any time and they are deleted from our server.")}</p>`
     : `<p class="note">${PRACTICE ? t("Reminders and sharing are not used in practice mode.") : t("Reminders and sharing are not switched on yet. Your list stays on this device.")}</p>`}`);
@@ -922,6 +940,7 @@ function yzSync() {
     } catch (e) {}
   }, 400);
 }
+A.yzLead = (v) => { const n = +v, i = S.yzLeads.indexOf(n); if (i >= 0) { if (S.yzLeads.length === 1) return toast(tt("Keep at least one reminder, or turn reminders off")); S.yzLeads.splice(i, 1); } else S.yzLeads.push(n); S.yzLeads.sort((a, b) => b - a); save(); pushPrefsSoon(); draw(); };
 A.yzShareTgl = async () => {
   if (!S.yzShare) {
     const ok = await new Promise((res) => sheet(`<div><h3>${t("Share with Chabad of Lamorinda?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("The Rabbi will be able to see the names and dates on this list, together with your name, email and phone, so he can remember your loved ones and reach out to you. You can turn this off at any time and it will be deleted from our server.")}</div></div><button class="btn btn-primary cta" id="shYes">${t("Yes, share")}</button><button class="btn btn-ghost" id="shNo">${t("Not now")}</button>`, (o) => { $("#shYes", o).onclick = () => { res(true); closeSheet(); }; $("#shNo", o).onclick = () => closeSheet(); }, () => res(false)));
@@ -942,7 +961,7 @@ A.yzRemindTgl = async () => {
 
 // push notifications (work when the app is closed; need the server's notification keys)
 const b64u = (s) => Uint8Array.from(atob((s + "=".repeat((4 - (s.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
-function pushPrefs() { return { lang: LANG, candle: { on: !!S.rem.candle.on, mins: S.rem.candle.mins }, streak: { on: !!S.rem.streak.on }, yahrzeit: { on: !!S.yzRemind, leads: [7, 1, 0] }, lastCoin: lastCoinYmd() }; }
+function pushPrefs() { return { lang: LANG, candle: { on: !!S.rem.candle.on, mins: S.rem.candle.mins }, streak: { on: !!S.rem.streak.on }, yahrzeit: { on: !!S.yzRemind, leads: S.yzLeads }, lastCoin: lastCoinYmd() }; }
 const lastCoinYmd = () => { const h = S.history.find((x) => x.kind === "coin"); return h ? ymdLocal(new Date(h.t)) : ""; };
 const pushOk = () => API.members && API.vapid && !PRACTICE && "serviceWorker" in navigator && "PushManager" in window;
 async function pushSub() { const reg = await navigator.serviceWorker.ready; return reg.pushManager.getSubscription(); }
@@ -978,6 +997,14 @@ function pushCard() {
 A.pushTgl = async () => { if (S.pushOn) { await pushDisable(); toast(tt("Notifications off")); } else { try { if (await pushEnable()) toast(tt("Notifications on")); } catch (e) { toast(errText(e)); } } draw(); };
 
 
+
+function notifBanner() {
+  if (PRACTICE || !S.rem.candle.on || !("Notification" in window) || Notification.permission !== "default" || U.notifHidden || Date.now() - (S.notifAt || 0) < 7 * 864e5) return "";
+  return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Turn on your Shabbat reminder")}</div><div class="h-s">${t("We’ll remind you to give tzedakah before candle lighting. You can turn it off anytime in Reminders.")}</div><div style="display:flex;gap:8px"><button class="btn btn-secondary" data-act="notifGo">${t("Turn on")}</button><button class="btn btn-ghost" data-act="notifNo">${t("Not now")}</button></div></div>`;
+}
+A.notifNo = () => { S.notifAt = Date.now(); save(); U.notifHidden = true; draw(); };
+A.notifGo = async () => { U.notifHidden = true; try { if (pushOk()) await pushEnable(); else await ensureNotify(); } catch (e) {} S.notifAt = Date.now(); save(); draw(); };
+
 // ---------- gentle, optional nudge to save your details (never required) ----------
 const NUDGE_GAP = [3, 14, 30, 60]; // days to wait after each "Not now"
 function nudgeDue() {
@@ -993,9 +1020,52 @@ function nudgeBanner() {
 A.nudgeNo = () => { S.nudge = { at: Date.now(), n: ((S.nudge && S.nudge.n) || 0) + 1, first: (S.nudge && S.nudge.first) || Date.now() }; save(); U.nudgeHidden = true; draw(); };
 A.nudgeYes = async () => { U.nudgeHidden = true; if (await askDetails()) { if (API.members && !PRACTICE) { try { await memberSync(); } catch (e) {} } toast(tt("Saved. Thank you!")); } else U.nudgeHidden = false; draw(); };
 
+
+// ---------- Chai Club: monthly donors, four levels, honor board ----------
+const CLUB = [["bronze", 72, "Bronze"], ["silver", 180, "Silver"], ["gold", 360, "Gold"], ["platinum", 720, "Platinum"]];
+const CLUB_RANGE = { bronze: "$72 – $179 a month", silver: "$180 – $359 a month", gold: "$360 – $719 a month", platinum: "$720 and above a month" };
+const clubOf = (a) => { for (let i = CLUB.length - 1; i >= 0; i--) if (a >= CLUB[i][1]) return CLUB[i]; return null; };
+const medalSvg = (id, w) => (window.ClubBoard ? ClubBoard.medal(id, w).outerHTML : "");
+const clubSub = () => (API.subs || []).find((x) => x.club);
+U.club = { amt: 180, data: null };
+function clubWho() { const l = clubOf(U.club.amt); return l ? t("You’ll be a {level} member", { level: t(l[2]) }) : t("The Chai Club starts at $72 a month."); }
+PG.club = () => {
+  const ex = clubSub(), exL = ex && clubOf(ex.gift || ex.amount), cur = clubOf(U.club.amt);
+  const lv = CLUB.slice().reverse().map(([id, min, nm]) => `<button class="clv ${cur && cur[0] === id ? "sel" : ""}" data-act="clubLvl" data-v="${id}"><span>${medalSvg(id, 36)}</span><span class="grow" style="text-align:start"><b>${t(nm)}</b><br><small>${t(CLUB_RANGE[id])}</small></span><span class="clv-a">${money(min)}+</span></button>`).join("");
+  return sub(tt("Chai Club"), `<div class="kicker">${t("Monthly donors")}</div>
+    <p class="body-p">${t("Join our community of monthly donors. Your steady gift lets Chabad of Lamorinda plan ahead, and your medal is displayed on our honor board.")}</p>
+    ${ex && exL ? `<div class="card" style="gap:12px">${medalSvg(exL[0], 40)}<div style="flex:1"><div class="card-title">${t("You’re a {level} member", { level: t(exL[2]) })}</div><div class="h-s">${t("{amt} monthly · {fund}", { amt: money(ex.gift || ex.amount), fund: t("Chai Club") })}</div><div class="h-s">${t("Choose a level below to change it.")}</div></div></div>` : ""}
+    <div class="clvs">${lv}</div>
+    <div class="field"><label for="clubAmt">${t("Monthly amount")}</label><div class="amt"><span>$</span><input class="input" id="clubAmt" type="number" min="72" step="1" inputmode="decimal" data-inp="clubAmt" value="${U.club.amt}"></div><div class="h-t" id="clubWho" style="margin-top:6px">${clubWho()}</div></div>
+    <div class="field"><label for="clubName">${t("Name on the honor board")}</label><input class="input" id="clubName" maxlength="60" data-inp="clubName" value="${esc(S.club.name || S.name)}" placeholder="${esc(tt("e.g. The Cohen Family"))}"></div>
+    <label class="chk"><input type="checkbox" data-chg="clubShow" ${S.club.show ? "checked" : ""}><span>${t("Show my name on the board (otherwise I’m counted but not named)")}</span></label>
+    ${feeBox()}
+    <div class="h-s" style="display:flex;align-items:center;gap:8px;font-size:13px">${ico(I.card, 16)}${API.enabled ? (API.card ? esc(cardLabel()) + ` <button class="link" data-act="cardChange">${t("Change")}</button>` : t("You’ll add a card when you give")) : t("Payment completes on our secure donation page")}</div>
+    <button class="btn btn-primary cta" id="clubCta" data-act="clubJoin">${clubCta()}</button>
+    ${sec(t("Our honor board"))}<div id="clubBoard"></div>${TAXNOTE()}`);
+};
+const clubCta = () => t(clubSub() ? "Update my monthly gift to {amt}" : "Join monthly · {amt}", { amt: money(totalOf(U.club.amt)) });
+A.clubLvl = (v) => { const l = CLUB.find((x) => x[0] === v), cur = clubOf(U.club.amt); if (!cur || cur[0] !== v) U.club.amt = l[1]; draw(); };
+A.clubAmt = (v) => { const n = parseFloat(v); U.club.amt = n > 0 ? r2(n) : 0; const w = $("#clubWho"), c = $("#clubCta"); if (w) w.innerHTML = clubWho(); if (c) c.innerHTML = clubCta(); $$(".clv").forEach((b) => { const l = clubOf(U.club.amt); b.classList.toggle("sel", !!l && b.dataset.v === l[0]); }); };
+A.clubName = (v) => { S.club.name = v; save(); };
+A.clubShow = (v, el) => { S.club.show = el.checked; save(); };
+A.clubJoin = () => {
+  const a = U.club.amt; if (!(a >= 72) || a > MAX_CARD) return toast(tt("The Chai Club starts at $72 a month."));
+  const name = (S.club.name || S.name || "").trim(); if (S.club.show && !name) { toast(tt("Please enter the name for the board.")); return $("#clubName") && $("#clubName").focus(); }
+  S.club.name = name; save();
+  startGift({ amt: a, fund: "chai", freq: "monthly", ded: "", fromPushka: false, method: "online", pid: P().id, club: { name, show: !!S.club.show }, replace: !!clubSub() });
+};
+A.clubJoinHome = () => { U.stack.push(U.page); U.page = "club"; draw(); };
+function mountBoard() {
+  const el = $("#clubBoard"); if (!el || !window.ClubBoard) return;
+  const paint = (d) => { const e = $("#clubBoard"); if (e) { e.textContent = ""; e.appendChild(ClubBoard.render(d, { lang: LANG })); } };
+  paint(U.club.data);
+  if (!U.club.loading && (!U.club.data || Date.now() - U.club.at > 60000)) { U.club.loading = true; ClubBoard.load("").then((d) => { U.club.data = d; U.club.at = Date.now(); }).catch(() => {}).finally(() => { U.club.loading = false; if (U.club.data) paint(U.club.data); }); }
+}
+
 // ---------- start ----------
 applyLang();
-try { if (new URLSearchParams(location.search).get("go") === "yahrzeit") { U.page = "yahrzeit"; U.stack = ["more"]; history.replaceState(null, "", location.pathname); } } catch (e) {}
+try { const go = new URLSearchParams(location.search).get("go"); if (go === "yahrzeit" || go === "club") { U.page = go; U.stack = [go === "club" ? "give" : "more"]; history.replaceState(null, "", location.pathname); } } catch (e) {}
 draw();
 if (S.bio) { showLock(); A.unlock(); }
 initPay(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500);

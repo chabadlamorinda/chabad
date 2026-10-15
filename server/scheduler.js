@@ -16,6 +16,7 @@ const MSG = {
     streak: () => ({ title: 'Keep your streak alive', body: 'Drop a coin in your pushka today.' }),
     yz: (name, lead, label) => lead === 0 ? { title: `Yahrzeit of ${name}`, body: `Today is the yahrzeit (${label}). Tap to give in their memory.` }
       : lead === 1 ? { title: `Yahrzeit of ${name}`, body: `The yahrzeit begins this evening (${label}).` }
+      : lead === 30 ? { title: `Yahrzeit of ${name}`, body: `In about a month (${label}). Tap to give in their memory.` }
       : { title: `Yahrzeit of ${name}`, body: `In ${lead} days (${label}). Tap to give in their memory.` },
   },
   he: {
@@ -23,6 +24,7 @@ const MSG = {
     streak: () => ({ title: 'שמרו על הרצף', body: 'הטילו היום מטבע לקופה.' }),
     yz: (name, lead, label) => lead === 0 ? { title: `יארצייט של ${name}`, body: `היום יארצייט (${label}). הקישו כדי לתרום לעילוי נשמת ${name}.` }
       : lead === 1 ? { title: `יארצייט של ${name}`, body: `היארצייט מתחיל הערב (${label}).` }
+      : lead === 30 ? { title: `יארצייט של ${name}`, body: `בעוד כחודש (${label}). הקישו כדי לתרום לעילוי נשמת ${name}.` }
       : { title: `יארצייט של ${name}`, body: `בעוד ${lead} ימים (${label}). הקישו כדי לתרום לעילוי נשמת ${name}.` },
   },
 };
@@ -60,7 +62,7 @@ function createScheduler({ store, send, getCandles = hebcalCandles(), log = cons
         if (now.getTime() >= at && now.getTime() < at + 10 * 60e3 && await store.logOnce(sub.id, `cd:${c}:${mins}`)) sent += await deliver(sub, { ...M.candle(mins), url: '/pushka/', tag: 'candle' });
       }
       if (p.yahrzeit && p.yahrzeit.on && sub.member_id && t.hour === 8 && t.minute < 10) {
-        const leads = p.yahrzeit.leads && p.yahrzeit.leads.length ? p.yahrzeit.leads : [7, 1, 0];
+        const leads = p.yahrzeit.leads && p.yahrzeit.leads.length ? p.yahrzeit.leads : [30, 7, 1];
         for (const e of yzByMember[sub.member_id] || []) {
           const occ = H.next({ day: e.h_day, month: e.h_month, year: e.h_year }, t.ymd); if (!occ) continue;
           const days = H.daysBetween(t.ymd, occ.date);
