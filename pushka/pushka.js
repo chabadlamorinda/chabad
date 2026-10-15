@@ -268,9 +268,9 @@ async function ensureCustomer() {
 async function addCard() {
   try { if (!(await ensureCustomer())) return false; } catch (e) { toast(errText(e)); return false; }
   return new Promise(async (res) => {
-    sheet(`<div><h3>${t("Add a card")}</h3><div class="h-s" style="font-size:13px">${t("Your card is stored securely by Stripe. Chabad of Lamorinda never sees your card number.")}</div></div>
-      <div id="payEl" class="payel"><div class="h-s">${t("Loading…")}</div></div><div id="payErr" class="err" role="alert"></div>
-      <button class="btn btn-primary cta" id="paySave" disabled>${t("Save card")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`, null, () => res(false));
+    sheet(`<div class="sbody"><div><h3>${t("Add a card")}</h3><div class="h-s" style="font-size:13px">${t("Your card is stored securely by Stripe. Chabad of Lamorinda never sees your card number.")}</div></div>
+      <div id="payEl" class="payel"><div class="h-s">${t("Loading…")}</div></div><div id="payErr" class="err" role="alert"></div></div>
+      <div class="stick"><button class="btn btn-primary cta" id="paySave" disabled>${t("Save card")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button></div>`, (o) => $(".sheet", o).classList.add("split"), () => res(false));
     try {
       const { clientSecret } = await api("/setup-intent", { method: "POST" });
       const stripe = await loadStripe();

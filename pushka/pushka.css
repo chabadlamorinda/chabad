@@ -100,7 +100,8 @@ button{font-family:inherit;color:inherit}
 
 /* sheet */
 #overlay .scrim{position:fixed;inset:0;background:color-mix(in srgb,var(--n900) 45%,transparent);animation:fadeIn .2s;z-index:50}
-#overlay .sheet{position:fixed;left:0;right:0;bottom:0;max-width:480px;margin:0 auto;background:var(--bg);border-radius:20px 20px 0 0;padding:12px 22px calc(34px + env(safe-area-inset-bottom));box-shadow:var(--shadow-lg);animation:sheetUp .28s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;gap:var(--s3);z-index:51;max-height:92vh;overflow:auto}
+#overlay .sheet{position:fixed;left:0;right:0;bottom:0;max-width:480px;margin:0 auto;background:var(--bg);border-radius:20px 20px 0 0;padding:12px 22px calc(34px + env(safe-area-inset-bottom));box-shadow:var(--shadow-lg);animation:sheetUp .28s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;gap:var(--s3);z-index:51;max-height:92vh;max-height:92dvh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+#overlay .sheet>*{flex-shrink:0}
 .grab{width:40px;height:4px;border-radius:2px;background:var(--n300);align-self:center}
 .done{display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--s2);padding:var(--s3) 0}
 .done .ck{width:52px;height:52px;border-radius:50%;border:1px solid var(--accent);display:grid;place-items:center}
@@ -160,7 +161,11 @@ a.btn{text-decoration:none}
 .lang-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .err{color:#9b1c1c;font-size:13px;min-height:0}
 .err:empty{display:none}
-.payel{min-height:120px}
+.payel{min-height:120px;flex-shrink:0}
+#overlay .sheet.split{overflow:hidden}
+#overlay .sheet.split>.sbody{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;display:flex;flex-direction:column;gap:var(--s3)}
+#overlay .sheet.split>.sbody>*{flex-shrink:0}
+#overlay .sheet.split>.stick{flex:none;display:flex;flex-direction:column;gap:var(--s2);padding-top:10px;border-top:1px solid var(--n200)}
 .spin{width:36px;height:36px;border-radius:50%;border:3px solid var(--n300);border-top-color:var(--accent);animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .flip{display:inline-block}
