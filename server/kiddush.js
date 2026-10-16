@@ -480,15 +480,18 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       for (const n of await store.listNotes()) out.push({ id: n.id, kind: n.kind, text: n.text, textHe: n.text_he, date: n.date, ...(await cal.describeDate(n.date)) });
       res.json({ notes: out });
     }));
-    r.post('/api/kiddush/notes', authed, guard(async (req, res) => {
-      need();
-      const b = req.body || {}, date = String(b.date || '');
+    const noteFields = (b) => {
+      const date = String(b.date || '');
       if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(date))) bad('invalid', 'Please choose a date.');
       const text = clean(b.text, 140);
       if (!text) bad('invalid', 'Please write what to show on the board.');
-      const kind = NOTE_KINDS.includes(b.kind) ? b.kind : 'note';
-      const id = await store.addNote({ date, kind, text, textHe: clean(b.textHe, 140) });
-      res.json({ ok: true, id });
+      return { date, kind: NOTE_KINDS.includes(b.kind) ? b.kind : 'note', text, textHe: clean(b.textHe, 140) };
+    };
+    r.post('/api/kiddush/notes', authed, guard(async (req, res) => { need(); res.json({ ok: true, id: await store.addNote(noteFields(req.body || {})) }); }));
+    r.put('/api/kiddush/notes/:id', authed, guard(async (req, res) => {
+      need();
+      if (!(await store.updateNote(req.params.id, noteFields(req.body || {})))) bad('not_found', 'Not found.', 404);
+      res.json({ ok: true });
     }));
     r.delete('/api/kiddush/notes/:id', authed, guard(async (req, res) => { need(); await store.deleteNote(req.params.id); res.json({ ok: true }); }));
 

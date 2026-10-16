@@ -471,6 +471,10 @@ test('calendar notes: a yahrzeit shows with its week; reminders can be scheduled
   assert.equal(slot.notes.length, 1); assert.equal(slot.notes[0].text, 'Yahrzeit of Reb Moshe'); assert.equal(slot.notes[0].date, day);
   assert.equal(slot.notes[0].id, undefined, 'ids are not public');
   assert.equal((await call('GET', '/admin/api/kiddush/notes', undefined, H)).json.notes.length, 1);
+  const ed = await call('PUT', '/admin/api/kiddush/notes/' + add.json.id, { date: day, kind: 'event', text: 'Shiur with the Rabbi', textHe: '' }, H);
+  assert.equal(ed.status, 200, ed.text);
+  assert.equal((await board()).slots.find((x) => x.key === s.key).notes[0].text, 'Shiur with the Rabbi');
+  assert.equal((await call('PUT', '/admin/api/kiddush/notes/kn_missing', { date: day, text: 'x' }, H)).status, 404);
   await call('DELETE', '/admin/api/kiddush/notes/' + add.json.id, undefined, H);
   assert.equal((await board()).slots.find((x) => x.key === s.key).notes.length, 0);
 
