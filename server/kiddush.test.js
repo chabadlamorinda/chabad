@@ -97,11 +97,25 @@ test('board: automatic year (5787 now), current week is the next upcoming one', 
   assert.equal((await call('POST', '/api/kiddush/sponsor', form(next))).status, 200);
 });
 
-test('board without a database: shows the calendar, all open, and sponsoring is off', async () => {
-  const b = (await call('GET', '/api/kiddush/board', undefined, { base: baseNoDb })).json;
-  assert.equal(b.sponsoring, false); assert.ok(b.slots.length > 50); assert.ok(b.slots.every((s) => s.status === 'open'));
-  const r = await call('POST', '/api/kiddush/sponsor', form({ key: b.current, priceCents: 50000 }), { base: baseNoDb });
-  assert.equal(r.status, 503); assert.equal(r.json.code, 'not_configured');
+test('board without a database: shows the calendar, sponsoring still works (card via Stripe, others get instructions), but is not recorded', async () => {
+  const nb = (m, p, b) => call(m, p, b, { base: baseNoDb });
+  const b = (await nb('GET', '/api/kiddush/board')).json;
+  assert.equal(b.sponsoring, true); assert.equal(b.recorded, false); assert.ok(b.slots.length > 50); assert.ok(b.slots.every((s) => s.status === 'open'));
+  const slot = b.slots.find((s) => s.key === b.current);
+  const z = await nb('POST', '/api/kiddush/sponsor', form(slot, { method: 'zelle' }));
+  assert.equal(z.status, 200, z.text); assert.equal(z.json.recorded, false); assert.equal(z.json.instructions.zelleId, 'chabadlamorinda@gmail.com'); assert.equal(z.json.display.name, 'The Levy Family');
+  assert.equal((await nb('POST', '/api/kiddush/sponsor', form(slot, { amount: 10 }))).json.code, 'amount_too_low');
+  // card: Stripe Checkout carries the sponsor's details; coming back reads the payment from Stripe
+  const c = await nb('POST', '/api/kiddush/sponsor', form(slot, { method: 'card', dedicationKind: 'memory', dedication: 'Avraham ben Yitzchak' }));
+  assert.equal(c.status, 200, c.text); assert.match(c.json.url, /^https:\/\/checkout\.stripe\.com\//); assert.equal(c.json.recorded, false);
+  const sid = Object.keys(stripe._st.sessions).pop(), sess = stripe._st.sessions[sid];
+  assert.equal(sess.metadata.sponsor, 'The Levy Family'); assert.equal(sess.metadata.slot, slot.key); assert.match(sess.params.success_url, /paid=unrecorded&session_id=/);
+  assert.equal((await nb('GET', `/api/kiddush/confirm?id=unrecorded&session_id=${sid}`)).json.status, 'pending');
+  stripe.payCheckout(sid);
+  const ok = (await nb('GET', `/api/kiddush/confirm?id=unrecorded&session_id=${sid}`)).json;
+  assert.equal(ok.status, 'paid'); assert.equal(ok.display.name, 'The Levy Family'); assert.equal(ok.display.dedication, 'In loving memory of Avraham ben Yitzchak'); assert.equal(ok.slot.key, slot.key); assert.equal(ok.amountCents, 50000);
+  assert.equal((await nb('GET', '/api/kiddush/confirm?id=unrecorded&session_id=cs_nope')).status, 404, 'unknown sessions are refused');
+  assert.equal((await nb('POST', '/api/kiddush/cancel', { id: 'unrecorded' })).status, 200);
 });
 
 // ---------------------------------------------------------------- sponsoring: check / Zelle / Venmo

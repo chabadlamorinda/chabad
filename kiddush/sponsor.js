@@ -40,7 +40,7 @@
   function renderThisWeek(b) {
     var box = $('thisWeek'), s = b.slots.filter(function (x) { return x.key === b.current; })[0]; box.textContent = ''; box.hidden = !s;
     if (!s) return;
-    var list = sponsorsOf(s), can = b.sponsoring;
+    var list = sponsorsOf(s), can = true;
     if (can) { box.setAttribute('role', 'button'); box.tabIndex = 0; box.setAttribute('aria-label', 'Sponsor ' + s.title); box.onclick = function () { openSheet(s); }; box.onkeydown = function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSheet(s); } }; box.classList.add('tap'); }
     else { box.removeAttribute('role'); box.removeAttribute('tabindex'); box.onclick = null; box.onkeydown = null; box.classList.remove('tap'); }
     var days = Math.round((new Date(s.date + 'T12:00:00') - new Date(b.today + 'T12:00:00')) / 864e5);
@@ -56,13 +56,7 @@
     } else if (s.status === 'open') box.appendChild(h('div', { class: 'open', text: 'OPEN FOR SPONSORSHIP' }));
     else box.appendChild(h('div', { class: 'open', text: 'RESERVED' }));
     if (can) box.appendChild(h('div', { class: 'btn gold', text: list.length ? 'Add your sponsorship' : 'Sponsor this Kiddush' }));
-    else box.appendChild(contactLine());
   }
-  function contactLine() {
-    var ph = st.board.settings.contactPhone;
-    return h('p', { class: 'fine', style: 'margin:10px 0 0' }, ['To sponsor, please contact the Rabbi', ph ? ': ' : '.', ph ? h('a', { href: 'tel:' + ph.replace(/[^\d+]/g, ''), text: ph }) : null]);
-  }
-
   // Bottom of the page: sponsor the whole Kiddush board for the year (no price on this page; it shows when you tap Sponsor).
   function renderBoardCard(b) {
     var box = $('boardCard'), bs = b.boardSponsor; box.textContent = ''; box.hidden = !bs;
@@ -74,8 +68,7 @@
       sponsorLines(list, 'sp', 'ded').forEach(function (n) { box.appendChild(n); });
       box.appendChild(h('p', { style: 'margin-top:10px', text: 'You are welcome to join in sponsoring the board.' }));
     } else box.appendChild(h('p', { text: 'Your name and dedication will be displayed as the sponsor of the Kiddush board on the shul’s TV and here, all year.' }));
-    if (b.sponsoring) box.appendChild(h('button', { class: 'btn gold', type: 'button', text: 'Sponsor the board', onclick: function () { openSheet(bs); } }));
-    else box.appendChild(contactLine());
+    box.appendChild(h('button', { class: 'btn gold', type: 'button', text: 'Sponsor the board', onclick: function () { openSheet(bs); } }));
   }
 
   // ------------------------------------------------------------------ list
@@ -84,9 +77,11 @@
       st.board = b; st.year = b.year; render(); renderThisWeek(b); renderBoardCard(b);
       var s = b.settings;
       $('blessing').textContent = s.blessing || '';
-      $('contact').textContent = '';
-      var c = [s.contactPhone && h('a', { href: 'tel:' + s.contactPhone.replace(/[^\d+]/g, ''), style: 'color:inherit', text: s.contactPhone }), s.contactEmail && h('a', { href: 'mailto:' + s.contactEmail, style: 'color:inherit', text: s.contactEmail })].filter(Boolean);
-      $('contact').appendChild(document.createTextNode('Questions? ')); c.forEach(function (n, i) { if (i) $('contact').appendChild(document.createTextNode(' · ')); $('contact').appendChild(n); });
+      var ct = $('contact'); ct.textContent = '';
+      var tel = s.contactPhone && s.contactPhone.replace(/[^\d+]/g, '');
+      ct.appendChild(h('div', { class: 'cc-t', text: 'Questions, or a larger or deluxe Kiddush?' }));
+      ct.appendChild(h('div', { class: 'cc-s', text: 'Contact the Rabbi' }));
+      ct.appendChild(h('div', { class: 'cc-b' }, [tel ? h('a', { class: 'btn', href: 'tel:' + tel, text: 'Call ' + s.contactPhone }) : null, s.contactEmail ? h('a', { class: 'btn', href: 'mailto:' + s.contactEmail + '?subject=' + encodeURIComponent('Kiddush at Chabad Lamorinda'), text: 'Email' }) : null]));
       return b;
     }).catch(function (e) { $('list').textContent = ''; $('list').appendChild(h('p', { class: 'muted center', text: e.message })); });
   }
@@ -114,7 +109,7 @@
     requestAnimationFrame(go); if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
   }
   function card(s, d) {
-    var can = st.board.sponsoring && !s.past, list = sponsorsOf(s);
+    var can = !s.past, list = sponsorsOf(s);
     var date = h('div', { class: 'date', 'aria-hidden': 'true' }, [h('b', { text: String(d.getDate()) }), h('span', { text: DOW[d.getDay()].toUpperCase() })]);
     var mid = h('div', {}, [h('div', { class: 't', text: s.title }), h('div', { class: 's', text: s.dateLabel + ' · ' + s.heb + (s.note ? ' · ' + s.note : '') })]);
     if (s.mevarchim) mid.appendChild(h('div', { class: 'mev', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
@@ -139,6 +134,7 @@
   $('sheet').addEventListener('click', function (e) { if (e.target.hasAttribute('data-close')) closeSheet(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('sheet').hidden) closeSheet(); });
 
+  var METHODNAMES = { card: 'Card', zelle: 'Zelle', venmo: 'Venmo', check: 'Check', cash: 'Cash' };
   var WAYS = [
     ['card', 'Card, Apple Pay or Google Pay', 'Secure checkout by Stripe. Receipt by email.'],
     ['zelle', 'Zelle', 'No fees. We’ll show you where to send it.'],
@@ -198,7 +194,7 @@
       api('/sponsor', { slot: s.key, name: f.name.value, anonymous: f.anon.checked, dedicationKind: f.ded.value.trim() ? f.kind.value : '', dedication: f.ded.value, email: f.email.value, phone: f.phone.value, amount: amount, method: way(), fee: f.fee.checked && way() === 'card', note: f.note.value, idem: idem })
         .then(function (r) {
           if (r.method === 'card' && r.url) { go.textContent = 'Opening secure checkout…'; location.href = r.url; return; }
-          st.busy = false; thanks(r, s, false);
+          st.busy = false; thanks(r, s, false, { name: f.name.value.trim(), email: f.email.value.trim(), phone: f.phone.value.trim(), ded: f.ded.value.trim(), kind: f.kind.value, amount: amount, method: way() });
         }).catch(function (e) {
           st.busy = false; go.disabled = false; refresh(); err.textContent = e.message;
           if (e.code === 'taken') load(st.year);
@@ -218,7 +214,7 @@
     return b;
   }
   function kv(k, v, copy) { return h('div', { class: 'card' }, [h('div', { class: 'k', text: k }), h('div', { class: 'row' }, [h('div', { class: 'v', text: v }), copy ? copyBtn(copy === true ? v : copy) : null])]); }
-  function thanks(r, s, paid) {
+  function thanks(r, s, paid, form) {
     load(st.year);
     var S = st.board.settings, I = r.instructions || {}, disp = r.display || {}, slot = r.slot || (s && { title: s.title, dateLabel: s.dateLabel, heb: s.heb }) || {};
     var who = disp.name && disp.name !== 'Anonymous' ? ', ' + disp.name : '';
@@ -238,8 +234,12 @@
       else if (r.method === 'venmo') kids.push(kv('Venmo', '@' + I.venmoHandle, true), kv('Note', I.memo, true), h('a', { class: 'btn gold block', href: I.link, rel: 'noopener', text: 'Open Venmo' }));
       else if (r.method === 'check') kids.push(kv('Payable to', I.payable, true), kv('Memo', I.memo, true), kv('Mail or bring to', I.address, true));
       else kids.push(kv('Memo', I.memo, true), h('p', { class: 'fine cen', text: 'Please bring it to shul, or contact us to arrange another way to give.' }));
-      kids.push(h('p', { class: 'fine cen', text: 'Your sponsorship is marked as paid once we receive your gift.' }));
-    } else kids.push(h('p', { class: 'fine cen', text: 'A receipt has been emailed to you.' }));
+      if (r.recorded === false) { // nothing could be saved yet: ask them to email the details so the office can add them to the board
+        var m = form || {}, body = ['Hello Rabbi,', '', 'I would like to sponsor ' + (slot.title || 'a Kiddush') + (slot.dateLabel ? ' (' + slot.dateLabel + ')' : '') + '.', 'Name on the board: ' + (m.name || disp.name || ''), 'Dedication: ' + (disp.dedication || 'none'), 'Amount: ' + (amt || ''), 'Paying by: ' + (METHODNAMES[r.method] || r.method), 'My email: ' + (m.email || ''), 'My phone: ' + (m.phone || '')].join('\n');
+        kids.push(h('div', { class: 'card' }, [h('div', { class: 'k', text: 'One last step' }), h('div', { class: 'msg', style: 'text-align:left;margin:4px 0 8px', text: 'Please send us a quick email so we can add your name to the board and match your payment.' }),
+          h('a', { class: 'btn gold block', href: 'mailto:' + ((r.contact && r.contact.email) || S.contactEmail) + '?subject=' + encodeURIComponent('Kiddush sponsorship: ' + (slot.title || '') + ' ' + (slot.dateLabel || '')) + '&body=' + encodeURIComponent(body), text: 'Email the details' })]));
+      } else kids.push(h('p', { class: 'fine cen', text: 'Your sponsorship is marked as paid once we receive your gift.' }));
+    } else kids.push(h('p', { class: 'fine cen', text: r.recorded === false ? 'Your payment was received and a receipt has been emailed to you. The office will add your name to the board.' : 'A receipt has been emailed to you.' }));
     if (slot.kind !== 'board') kids.push(largerNote('fine cen'));
     kids.push(h('button', { class: 'btn gold block', type: 'button', onclick: closeSheet, text: 'Back to the board' }));
     showSheet(kids.filter(Boolean));
@@ -266,12 +266,11 @@
   $('onlyOpen').addEventListener('change', function (e) { st.onlyOpen = e.target.checked; if (st.board) render(); });
   load().then(function (b) {
     if (!b) return;
-    if (!b.sponsoring) note('Online sponsorship is being set up. Please contact the office to sponsor a Kiddush.');
     returned();
     var w = params.get('w');
     if (w) {
       var s = b.slots.concat(b.boardSponsor ? [b.boardSponsor] : []).filter(function (x) { return x.key === w; })[0];
-      if (s && !s.past && b.sponsoring) openSheet(s);
+      if (s && !s.past) openSheet(s);
       else if (s) note([h('b', { text: s.title + ' (' + s.dateLabel + ') ' }), 'has already passed.']);
     }
   });
