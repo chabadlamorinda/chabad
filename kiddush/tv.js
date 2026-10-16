@@ -4,6 +4,9 @@
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var KEY = 'kiddush-tv-last', board = null, lastOk = Date.now();
+  var LIGHT = /[?&]theme=light\b/.test(location.search); // light look that matches the sponsor page
+  if (LIGHT) document.documentElement.classList.add('light');
+  var DOWS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   var MON = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
@@ -19,6 +22,12 @@
 
   function tile(s, isCurrent) {
     var t = el('div', 'tile ' + s.status + (s.past ? ' past' : '') + (isCurrent ? ' current' : ''));
+    if (LIGHT) {
+      var dt = new Date(s.date + 'T12:00:00'), dd = el('div', 'tdate'); dd.appendChild(el('b', '', String(dt.getDate()))); dd.appendChild(el('span', '', DOWS[dt.getDay()]));
+      var body = el('div', 'tbody'); body.appendChild(el('div', 'tt', s.title)); body.appendChild(el('div', 'td', s.dateLabel + ' · ' + s.heb));
+      var sl = sponsorsOf(s); if (sl.length) body.appendChild(el('div', 'ts', names(sl)));
+      t.appendChild(dd); t.appendChild(body); return t;
+    }
     var line = s.dateLabel + ' – ' + s.heb, n;
     if ((s.title + ' – ' + line).length > 34) { t.className += ' two'; n = el('div', 'n'); n.appendChild(el('div', '', s.title)); n.appendChild(el('div', '', line)); } // long names: two lines
     else n = el('div', 'n', s.title + ' – ' + line);
@@ -96,7 +105,8 @@
     }
     sizeRows(rows);
     Array.prototype.forEach.call(document.querySelectorAll('.tile .n'), function (n) { fit(n, .5); });
-    Array.prototype.forEach.call(document.querySelectorAll('.tile .s'), function (n) { fit(n, .5); });
+    Array.prototype.forEach.call(document.querySelectorAll('.tile .s, .tile .ts'), function (n) { fit(n, .5); });
+    Array.prototype.forEach.call(document.querySelectorAll('.tile .tt, .tile .td'), function (n) { fit(n, .55); });
   }
   function sizeRows(rows) {
     var col = $('c0'), h = col.clientHeight, gap = parseFloat(getComputedStyle(col).rowGap) || 0;
