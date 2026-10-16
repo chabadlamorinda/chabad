@@ -100,3 +100,9 @@ html.he .blessing{font-variant:normal}
 .ev-d{font-family:"Cinzel",serif;font-weight:700;font-size:calc(var(--rh)*.2);color:#8a6414}
 .ev-t{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:calc(var(--rh)*.3);line-height:1.08}
 html.he .events{text-align:right}
+/* Upcoming events: deep blue so it stands out from the gold tiles */
+.events{background:linear-gradient(#2c5a8a,#1b3d63);border:1px solid #0f2744;box-shadow:0 2px 8px rgba(15,39,68,.45);color:#fff}
+.ev-h{color:#ffe08a;border-bottom-color:rgba(255,224,138,.55)}
+.ev-d{color:#ffd76a}
+.ev-t{color:#fff}
+.p-note{color:#1b3d63}
