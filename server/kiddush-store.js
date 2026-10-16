@@ -74,6 +74,7 @@ function kiddushStore({ q, rows, one }) {
     // ----- calendar notes (a yahrzeit, an event that week...) shown on the board next to the week they fall in -----
     listNotes: () => rows("SELECT id, to_char(note_date,'YYYY-MM-DD') AS date, kind, text, text_he FROM kiddush_notes ORDER BY note_date, created_at"),
     async addNote(n) { const id = newId('kn_'); await q('INSERT INTO kiddush_notes (id, note_date, kind, text, text_he) VALUES ($1,$2,$3,$4,$5)', [id, n.date, n.kind, n.text, n.textHe || '']); return id; },
+    async updateNote(id, n) { return (await q('UPDATE kiddush_notes SET note_date=$2, kind=$3, text=$4, text_he=$5 WHERE id=$1', [id, n.date, n.kind, n.text, n.textHe || ''])).rowCount === 1; },
     async deleteNote(id) { return (await q('DELETE FROM kiddush_notes WHERE id=$1', [id])).rowCount === 1; },
 
     // ----- sponsorships -----

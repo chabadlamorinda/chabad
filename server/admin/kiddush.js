@@ -186,20 +186,29 @@
   // ------------------------------------------------------------ calendar notes
   var NOTE_KINDS = { yahrzeit: 'Yahrzeit', event: 'Event this week', note: 'Other note' };
   function notesTab() {
+    var save = el('button', { class: 'pri', text: 'Add note' }), cancel = el('button', { text: 'Cancel editing', hidden: true });
     var date = el('input', { type: 'date' }), kind = el('select', {}, Object.keys(NOTE_KINDS).map(function (k) { return el('option', { value: k, text: NOTE_KINDS[k] }); })),
       text = el('input', { maxlength: '140', placeholder: 'e.g. Yahrzeit of Rabbi Menachem Mendel Schneerson' }), he = el('input', { maxlength: '140', placeholder: 'Optional Hebrew text, shown when the screen is in Hebrew' }), list = el('div');
     var wrap = el('div', {}, [el('div', { class: 'card' }, [
       el('h2', { text: 'Calendar notes' }),
       el('p', { class: 'small', text: 'Add a yahrzeit, an event or any note on a specific day. It shows on the TV and the phone page with that week’s Kiddush (the Shabbat of the same week), for example “Tuesday, Oct 20: Yahrzeit of …”. It is not something people sponsor; use “Add an event” for that.' }),
       el('label', { text: 'Date' }), date, el('label', { text: 'Type' }), kind, el('label', { text: 'What to show' }), text, el('label', { text: 'Hebrew text' }), he,
-      el('p', {}, [el('button', { class: 'pri', text: 'Add note', onclick: function () { guard(api('POST', '/notes', { date: date.value, kind: kind.value, text: text.value, textHe: he.value })).then(function (r) { if (r) { text.value = ''; he.value = ''; fill(); } }); } })]),
+      el('p', {}, [save, cancel]),
     ]), list]);
+    var editing = null, head = wrap.querySelector('h2');
+    function reset() { editing = null; text.value = ''; he.value = ''; save.textContent = 'Add note'; cancel.hidden = true; head.textContent = 'Calendar notes'; }
+    save.onclick = function () {
+      var body = { date: date.value, kind: kind.value, text: text.value, textHe: he.value };
+      guard(editing ? api('PUT', '/notes/' + editing, body) : api('POST', '/notes', body)).then(function (r) { if (r) { reset(); fill(); } });
+    };
+    cancel.onclick = reset;
     function fill() {
       guard(api('GET', '/notes')).then(function (r) {
         if (!r) return; list.textContent = '';
         if (!r.notes.length) { list.appendChild(el('div', { class: 'card small', text: 'No notes yet.' })); return; }
         r.notes.forEach(function (n) {
           list.appendChild(el('div', { class: 'card row' }, [el('div', { style: 'flex:1' }, [el('b', { text: n.dateLabel + ' · ' + n.heb }), el('div', { text: (NOTE_KINDS[n.kind] || 'Note') + ': ' + n.text })]),
+            el('button', { text: 'Edit', onclick: function () { editing = n.id; date.value = n.date; kind.value = n.kind; text.value = n.text; he.value = n.textHe || ''; save.textContent = 'Save changes'; cancel.hidden = false; head.textContent = 'Edit note'; window.scrollTo(0, 0); } }),
             el('button', { class: 'bad', text: 'Delete', onclick: function () { if (confirm('Delete this note?')) guard(api('DELETE', '/notes/' + n.id)).then(fill); } })]));
         });
       });
