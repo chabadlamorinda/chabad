@@ -56,6 +56,7 @@
     d.appendChild(document.createTextNode(KI.dowName(s.date) + ', ' + KI.dateLabel(s) + '  ·  ' + KI.hebDate(s) + '  '));
     main.appendChild(d);
     if (s.mevarchim) { var mv = el('div', 'p-mev'); mv.appendChild(el('div', '', KI.mevarchim(s))); if (s.molad) mv.appendChild(el('div', '', T('Molad') + ': ' + KI.molad(s))); main.appendChild(mv); }
+    (s.notes || []).forEach(function (n) { main.appendChild(el('div', 'p-note', KI.note(n))); });
     var tm = el('div', 'p-times'); tm.id = 'times'; main.appendChild(tm); shabbatTimes(s, tm);
     main.appendChild(el('div', 'p-rule'));
     var sps = sponsorsOf(s);
@@ -74,7 +75,7 @@
     qr.appendChild(el('div', 'q1', sps.length ? T('JOIN IN SPONSORING') : T('SCAN TO SPONSOR')));
     qr.appendChild(el('div', 'q2', base.replace(/^https?:\/\//, '') + '/kiddush'));
     box.appendChild(qr);
-    $('plate').className = 'plate' + (s.mevarchim ? ' tall' : '');
+    $('plate').className = 'plate' + ((s.mevarchim || (s.notes && s.notes.length)) ? ' tall' : '');
     ['p-name', 'p-open'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
     Array.prototype.forEach.call(box.querySelectorAll('.p-sp'), function (n) { fit(n, .5); });
     var ded = box.querySelector('.p-ded'); if (ded) { var g = 0; while (ded.scrollHeight > ded.clientHeight + 1 && ded.scrollHeight > parseFloat(getComputedStyle(ded).fontSize) * 2.4 && g++ < 12) ded.style.fontSize = parseFloat(getComputedStyle(ded).fontSize) * .92 + 'px'; }

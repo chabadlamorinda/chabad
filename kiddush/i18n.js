@@ -90,6 +90,8 @@
     kindLabel: function (k, english) { return HEB && KINDS_HE[k] ? KINDS_HE[k] : english; },
     // "In honor of Sara" / "לכבוד Sara"
     reason: function (x) { if (!x) return ''; if (!HEB) return x.dedication || ''; return x.reason ? (KINDS_HE[x.kind] ? KINDS_HE[x.kind] + ' ' : '') + x.reason : ''; },
+    // calendar note (yahrzeit, event...): "Tuesday, Oct 20: Yahrzeit of ..."
+    note: function (n) { return KI.dowName(n.date) + ', ' + KI.dateLabel(n) + ': ' + (HEB && n.textHe ? n.textHe : n.text); },
     name: function (x) { return x.name === 'Anonymous' ? t('Anonymous') : x.name; },
     mevarchim: function (s) {
       if (!s.mevarchim) return ''; var m = t('Shabbat Mevarchim Chodesh') + ' ' + (HEB ? (MONTHS_HE[s.mevarchim] || s.mevarchim) : s.mevarchim);

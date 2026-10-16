@@ -170,3 +170,5 @@ html.he .thisweek,html.he .thisweek .spl{text-align:center}
 html.he .staff-hot{left:auto;right:0}html.he .staff-link{left:auto;right:12px}
 .hero{padding-right:74px}
 html.he .hero{padding-right:8px;padding-left:74px}
+.note{font-size:14px;font-weight:700;color:var(--brown);margin-top:3px;font-style:italic}
+.note::before{content:"\2726  ";color:var(--gold-d);font-style:normal}
