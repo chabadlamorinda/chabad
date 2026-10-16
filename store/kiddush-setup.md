@@ -14,6 +14,8 @@ Three addresses on the same server as the pushka app (replace `<your-app-address
 3. **Admin page → Settings.** Enter your **Zelle email or phone** (Zelle stays hidden until you do), check the Venmo name, mailing address, and set the **prices** (both start at $180). Optional: the "Donated by" line on the TV.
 
 ## On the TV
+(The TV has a light look by default, matching the sponsor page. To use the dark wood board instead, add `?theme=dark` to the TV address, e.g. `/kiddush/tv/?theme=dark`. No prices are shown on the TV.)
+
 Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Stick plugged into it) and press **F11** for full screen. It refreshes itself every minute, keeps showing the last board if the wifi drops, and switches to the new year at Rosh Hashanah by itself. The center plate always shows the **next upcoming Kiddush**: who sponsored it and why, or "Open for sponsorship" with a QR code that goes straight to that week.
 
 ## What the Rabbi does
