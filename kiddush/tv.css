@@ -93,3 +93,5 @@ html.he body,html.he body *{font-family:"Frank Ruhl Libre","Cormorant Garamond",
 html.he .tile{text-align:right}
 html.he.light .tile{text-align:right}
 html.he .blessing{font-variant:normal}
+.p-note{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:700;font-size:calc(var(--u)*2);line-height:1.15;margin-top:calc(var(--u)*.3);color:#5a2a14;max-width:100%}
+.p-note::before{content:"\2726  ";font-style:normal}

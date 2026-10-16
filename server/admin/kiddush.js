@@ -26,7 +26,7 @@
     app.appendChild(el('h1', { text: 'Kiddush board' }));
     app.appendChild(el('div', { class: 'small' }, [el('a', { href: '/admin/', text: '← Rabbi’s desk' }), ' · Chabad of Lamorinda · private']));
     var nav = el('nav');
-    [['board', 'The board'], ['pending', 'Waiting for payment' + (pendingCount ? ' ' : '')], ['events', 'Add an event'], ['settings', 'Settings']].forEach(function (t) {
+    [['board', 'The board'], ['pending', 'Waiting for payment' + (pendingCount ? ' ' : '')], ['events', 'Add an event'], ['notes', 'Calendar notes'], ['settings', 'Settings']].forEach(function (t) {
       var b = el('button', { class: tab === t[0] ? 'on' : '', text: t[1].trim(), onclick: function () { tab = t[0]; load(); } });
       if (t[0] === 'pending' && pendingCount) b.appendChild(el('span', { class: 'badge', text: String(pendingCount) }));
       nav.appendChild(b);
@@ -150,6 +150,7 @@
             el('span', { class: overdue ? 'small warn' : 'small', text: (age === 0 ? 'today' : age + ' day' + (age > 1 ? 's' : '') + ' ago') + (overdue ? ' · reminder due' : '') })]),
           el('div', { text: p.name + ' · ' + money(p.amountCents) }), el('div', { class: 'small', text: [p.email, p.phone, ded(p.dedicationKind, p.dedication)].filter(Boolean).join(' · ') }), p.note ? el('div', { class: 'small', text: 'Note: ' + p.note }) : null,
           p.reminderCount ? el('div', { class: 'small', text: 'Reminded ' + p.reminderCount + '×, last on ' + new Date(p.remindedAt).toLocaleDateString() }) : null,
+          reminderControls(p, mail),
           el('div', { class: 'row', style: 'margin-top:8px' }, [
             el('button', { class: 'pri', text: 'Confirm payment', onclick: function () { guard(api('PATCH', '/sponsorship/' + p.id, { status: 'paid' })).then(function (j) { if (j) { toast.textContent = 'Confirmed' + (j.emailed ? ' (thank-you email sent)' : ''); setTimeout(load, 700); } }); } }),
             p.method !== 'card' ? el('button', { text: 'Send reminder', onclick: function () {
@@ -163,6 +164,48 @@
       });
     });
     return box;
+  }
+
+  // Schedule a reminder for a chosen time, or stop / resume reminders for one pledge.
+  function reminderControls(p, mail) {
+    if (p.method === 'card') return null;
+    var when = el('input', { type: 'datetime-local', 'aria-label': 'Send reminder at' }), msg = el('span', { class: 'small ok' });
+    var set = function (body, done) { guard(api('PATCH', '/sponsorship/' + p.id, body)).then(function (j) { if (j) { msg.textContent = done; setTimeout(load, 700); } }); };
+    var status = p.remindersOff ? 'Reminders are cancelled for this pledge.' : p.remindAt ? 'Reminder scheduled for ' + new Date(p.remindAt).toLocaleString() + (mail && p.email ? '.' : ' (needs email set up and an email address, otherwise it only shows here).') : null;
+    return el('div', { class: 'small', style: 'margin-top:8px' }, [
+      status ? el('div', { class: p.remindersOff ? 'warn' : '', text: status }) : null,
+      el('div', { class: 'row' }, p.remindersOff
+        ? [el('button', { text: 'Turn reminders back on', onclick: function () { set({ remindersOff: false }, 'Reminders are on again'); } }), msg]
+        : [el('span', { text: 'Remind on' }), when,
+           el('button', { text: 'Schedule', onclick: function () { if (!when.value) { msg.textContent = 'Choose a date and time first'; return; } set({ remindAt: new Date(when.value).toISOString() }, 'Scheduled'); } }),
+           p.remindAt ? el('button', { text: 'Clear schedule', onclick: function () { set({ remindAt: null }, 'Schedule cleared'); } }) : null,
+           el('button', { class: 'bad', text: 'Cancel all reminders', onclick: function () { set({ remindersOff: true }, 'Reminders cancelled'); } }), msg]),
+    ]);
+  }
+
+  // ------------------------------------------------------------ calendar notes
+  var NOTE_KINDS = { yahrzeit: 'Yahrzeit', event: 'Event this week', note: 'Other note' };
+  function notesTab() {
+    var date = el('input', { type: 'date' }), kind = el('select', {}, Object.keys(NOTE_KINDS).map(function (k) { return el('option', { value: k, text: NOTE_KINDS[k] }); })),
+      text = el('input', { maxlength: '140', placeholder: 'e.g. Yahrzeit of Rabbi Menachem Mendel Schneerson' }), he = el('input', { maxlength: '140', placeholder: 'Optional Hebrew text, shown when the screen is in Hebrew' }), list = el('div');
+    var wrap = el('div', {}, [el('div', { class: 'card' }, [
+      el('h2', { text: 'Calendar notes' }),
+      el('p', { class: 'small', text: 'Add a yahrzeit, an event or any note on a specific day. It shows on the TV and the phone page with that week’s Kiddush (the Shabbat of the same week), for example “Tuesday, Oct 20: Yahrzeit of …”. It is not something people sponsor; use “Add an event” for that.' }),
+      el('label', { text: 'Date' }), date, el('label', { text: 'Type' }), kind, el('label', { text: 'What to show' }), text, el('label', { text: 'Hebrew text' }), he,
+      el('p', {}, [el('button', { class: 'pri', text: 'Add note', onclick: function () { guard(api('POST', '/notes', { date: date.value, kind: kind.value, text: text.value, textHe: he.value })).then(function (r) { if (r) { text.value = ''; he.value = ''; fill(); } }); } })]),
+    ]), list]);
+    function fill() {
+      guard(api('GET', '/notes')).then(function (r) {
+        if (!r) return; list.textContent = '';
+        if (!r.notes.length) { list.appendChild(el('div', { class: 'card small', text: 'No notes yet.' })); return; }
+        r.notes.forEach(function (n) {
+          list.appendChild(el('div', { class: 'card row' }, [el('div', { style: 'flex:1' }, [el('b', { text: n.dateLabel + ' · ' + n.heb }), el('div', { text: (NOTE_KINDS[n.kind] || 'Note') + ': ' + n.text })]),
+            el('button', { class: 'bad', text: 'Delete', onclick: function () { if (confirm('Delete this note?')) guard(api('DELETE', '/notes/' + n.id)).then(fill); } })]));
+        });
+      });
+    }
+    fill();
+    return wrap;
   }
 
   // ------------------------------------------------------------ events
@@ -216,7 +259,7 @@
 
   function load() {
     api('GET', '/pending').then(function (r) { pendingCount = r.pending.length; }).catch(function () {}).then(function () {
-      var body = tab === 'board' ? boardTab() : tab === 'pending' ? pendingTab() : tab === 'events' ? eventsTab() : settingsTab();
+      var body = tab === 'board' ? boardTab() : tab === 'pending' ? pendingTab() : tab === 'events' ? eventsTab() : tab === 'notes' ? notesTab() : settingsTab();
       shell(body);
     });
   }

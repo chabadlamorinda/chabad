@@ -79,7 +79,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
 
   const spView = (sp) => ({
     id: sp.id, status: sp.status, method: sp.method, name: sp.name, anonymous: sp.anonymous, dedicationKind: sp.dedication_kind, dedication: sp.dedication,
-    email: sp.email, phone: sp.phone, note: sp.note, amountCents: sp.amount_cents, feeCents: sp.fee_cents, source: sp.source, paidAt: sp.paid_at, createdAt: sp.created_at, remindedAt: sp.reminded_at, reminderCount: sp.reminder_count || 0,
+    email: sp.email, phone: sp.phone, note: sp.note, amountCents: sp.amount_cents, feeCents: sp.fee_cents, source: sp.source, paidAt: sp.paid_at, createdAt: sp.created_at, remindedAt: sp.reminded_at, reminderCount: sp.reminder_count || 0, remindAt: sp.remind_at || null, remindersOff: !!sp.reminders_off,
   });
   // Only CONFIRMED (paid) sponsorships ever appear on the TV or the phone page. Card payments confirm themselves through
   // Stripe; Zelle, Venmo, check and cash appear once the Rabbi marks them paid.
@@ -90,7 +90,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   async function board({ year, admin = false, exact = false } = {}) {
     const st = await settings();
     const { today } = await todayInfo();
-    const [overrides, events, live] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships()]) : [new Map(), [], []];
+    const [overrides, events, live, notes] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), store.listNotes()]) : [new Map(), [], [], []];
     const byKey = new Map(); // slot key -> every live sponsorship of that week, oldest first
     for (const sp of live) { if (!byKey.has(sp.slot_key)) byKey.set(sp.slot_key, []); byKey.get(sp.slot_key).push(sp); }
     let y, all, next;
@@ -103,6 +103,17 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       y = nx ? nx.year : hy; all = y === hy ? a : b;
     }
     next = all.find((s) => !s.hidden && s.kind !== 'board' && s.date >= today);
+    // A calendar note (yahrzeit, event...) is shown with the Shabbat of its week, or else the next day of the board within 6 days after it.
+    const notesBySlot = new Map(), dayNum = (d) => Math.round(Date.parse(d + 'T12:00:00Z') / 864e5);
+    for (const n of notes) {
+      const cands = all.filter((s) => s.kind !== 'board' && !s.hidden && dayNum(s.date) >= dayNum(n.date) && dayNum(s.date) - dayNum(n.date) <= 6);
+      const slot = cands.find((s) => s.kind === 'shabbat') || cands[0];
+      if (!slot) continue;
+      if (!notesBySlot.has(slot.key)) notesBySlot.set(slot.key, []);
+      notesBySlot.get(slot.key).push({ id: n.id, kind: n.kind, text: n.text, textHe: n.text_he, date: n.date });
+    }
+    const noteDates = new Map();
+    for (const list of notesBySlot.values()) for (const n of list) if (!noteDates.has(n.date)) noteDates.set(n.date, await cal.describeDate(n.date));
     const toOut = (s) => {
       const sps = byKey.get(s.key) || [];
       const shown = sps.map((sp) => publicSponsor(sp)).filter(Boolean);
@@ -111,6 +122,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
         priceCents: s.priceCents, past: s.kind === 'board' ? false : s.date < today,
         status: sps.some((sp) => sp.status === 'paid') ? 'sponsored' : 'open',
         sponsor: shown[0] || null, sponsors: shown,
+        notes: (notesBySlot.get(s.key) || []).map((n) => { const d = noteDates.get(n.date) || {}; return { id: admin ? n.id : undefined, kind: n.kind, text: n.text, textHe: n.textHe, date: n.date, dateLabel: d.dateLabel, heb: d.heb, hebHe: d.hebHe }; }),
       };
       if (admin) Object.assign(out, { hidden: s.hidden, customTitle: s.customTitle, customPrice: s.customPrice, eventId: s.eventId || null, sponsorship: sps[0] ? spView(sps[0]) : null, sponsorships: sps.map(spView) });
       return out;
@@ -323,9 +335,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   async function runReminders() {
     if (!store || !mailer) return 0;
     const st = await settings();
-    if (!st.autoReminders) return 0;
-    let n = 0;
-    for (const sp of await store.dueReminders({ days: st.reminderDays, max: MAX_REMINDERS })) {
+    let n = 0; // reminders you scheduled go out even when automatic ones are off
+    for (const sp of await store.dueReminders({ days: st.reminderDays, max: MAX_REMINDERS, auto: !!st.autoReminders })) {
       if (await trySend(sp, await messageFor('reminder', sp, st))) { await store.markReminded(sp.id); n++; }
     }
     return n;
@@ -415,6 +426,11 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       if (['pending', 'paid'].includes(b.status)) f.status = b.status;
       if (typeof b.slot === 'string' && b.slot !== sp.slot_key) { const s = await findSlot(b.slot, { allowHidden: true }); if (!s) bad('no_slot', 'That week could not be found.', 404); f.slotKey = s.key; }
       await store.updateSponsorship(sp.id, f);
+      if ('remindAt' in b || 'remindersOff' in b) {
+        let remindAt;
+        if ('remindAt' in b) { if (b.remindAt === null || b.remindAt === '') remindAt = null; else { const t = Date.parse(b.remindAt); if (Number.isNaN(t)) bad('invalid', 'Please choose a date and time for the reminder.'); remindAt = new Date(t).toISOString(); } }
+        await store.setReminder(sp.id, { remindAt, off: 'remindersOff' in b ? b.remindersOff === true : undefined });
+      }
       let emailed = false;
       if (f.status === 'paid' && sp.status !== 'paid') { const fresh = await store.getSponsorship(sp.id); emailed = await trySend(fresh, await messageFor('confirmed', fresh, await settings())); }
       res.json({ ok: true, emailed });
@@ -456,6 +472,25 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       await store.saveSettings(out);
       res.json({ ok: true, settings: await settings() });
     }));
+
+    const NOTE_KINDS = ['yahrzeit', 'event', 'note'];
+    r.get('/api/kiddush/notes', authed, guard(async (req, res) => {
+      need();
+      const out = [];
+      for (const n of await store.listNotes()) out.push({ id: n.id, kind: n.kind, text: n.text, textHe: n.text_he, date: n.date, ...(await cal.describeDate(n.date)) });
+      res.json({ notes: out });
+    }));
+    r.post('/api/kiddush/notes', authed, guard(async (req, res) => {
+      need();
+      const b = req.body || {}, date = String(b.date || '');
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(date))) bad('invalid', 'Please choose a date.');
+      const text = clean(b.text, 140);
+      if (!text) bad('invalid', 'Please write what to show on the board.');
+      const kind = NOTE_KINDS.includes(b.kind) ? b.kind : 'note';
+      const id = await store.addNote({ date, kind, text, textHe: clean(b.textHe, 140) });
+      res.json({ ok: true, id });
+    }));
+    r.delete('/api/kiddush/notes/:id', authed, guard(async (req, res) => { need(); await store.deleteNote(req.params.id); res.json({ ok: true }); }));
 
     r.post('/api/kiddush/events', authed, guard(async (req, res) => {
       need();

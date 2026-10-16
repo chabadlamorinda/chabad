@@ -31,6 +31,12 @@ DROP INDEX IF EXISTS kiddush_live_slot; -- a week can now have more than one spo
 CREATE INDEX IF NOT EXISTS kiddush_slot_idx ON kiddush_sponsorships (slot_key);
 ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminded_at TIMESTAMPTZ;
 ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminder_count INT NOT NULL DEFAULT 0;
+ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS remind_at TIMESTAMPTZ;
+ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminders_off BOOLEAN NOT NULL DEFAULT FALSE;
+CREATE TABLE IF NOT EXISTS kiddush_notes (
+  id TEXT PRIMARY KEY, note_date DATE NOT NULL, kind TEXT NOT NULL DEFAULT 'note', text TEXT NOT NULL, text_he TEXT NOT NULL DEFAULT '',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
 CREATE INDEX IF NOT EXISTS kiddush_sp_email ON kiddush_sponsorships (lower(email));
 CREATE INDEX IF NOT EXISTS kiddush_sp_session ON kiddush_sponsorships (stripe_session_id);`;
 
@@ -40,7 +46,7 @@ function kiddushStore({ q, rows, one }) {
   const expire = () => q(`UPDATE kiddush_sponsorships SET status='expired', updated_at=now() WHERE status='pending' AND method='card' AND created_at < now() - interval '${HOLD_MINUTES} minutes'`);
   return {
     kiddushSchema: SCHEMA,
-    kiddushResetForTests: () => q('TRUNCATE kiddush_settings, kiddush_slots, kiddush_events, kiddush_sponsorships'),
+    kiddushResetForTests: () => q('TRUNCATE kiddush_settings, kiddush_slots, kiddush_events, kiddush_sponsorships, kiddush_notes'),
 
     async getSettings() {
       const out = {};
@@ -65,6 +71,11 @@ function kiddushStore({ q, rows, one }) {
     async addEvent(e) { const id = newId('ke_'); await q('INSERT INTO kiddush_events (id, event_date, title, title_he, note) VALUES ($1,$2,$3,$4,$5)', [id, e.date, e.title, e.titleHe || '', e.note || '']); return id; },
     async deleteEvent(id) { return (await q('DELETE FROM kiddush_events WHERE id=$1', [id])).rowCount === 1; },
 
+    // ----- calendar notes (a yahrzeit, an event that week...) shown on the board next to the week they fall in -----
+    listNotes: () => rows("SELECT id, to_char(note_date,'YYYY-MM-DD') AS date, kind, text, text_he FROM kiddush_notes ORDER BY note_date, created_at"),
+    async addNote(n) { const id = newId('kn_'); await q('INSERT INTO kiddush_notes (id, note_date, kind, text, text_he) VALUES ($1,$2,$3,$4,$5)', [id, n.date, n.kind, n.text, n.textHe || '']); return id; },
+    async deleteNote(id) { return (await q('DELETE FROM kiddush_notes WHERE id=$1', [id])).rowCount === 1; },
+
     // ----- sponsorships -----
     async liveSponsorships() { await expire(); return rows("SELECT * FROM kiddush_sponsorships WHERE status IN ('pending','paid') ORDER BY created_at"); },
     async allSponsorships() { await expire(); return rows('SELECT * FROM kiddush_sponsorships ORDER BY created_at DESC'); },
@@ -83,10 +94,20 @@ function kiddushStore({ q, rows, one }) {
       }
       return id;
     },
-    markReminded: (id) => q('UPDATE kiddush_sponsorships SET reminded_at=now(), reminder_count=reminder_count+1, updated_at=now() WHERE id=$1', [id]),
-    /** Unpaid non-card pledges that are `days` old (and not reminded within `days`), at most `max` reminders each. */
-    dueReminders: ({ days, max }) => rows(`SELECT * FROM kiddush_sponsorships WHERE status='pending' AND method <> 'card' AND email <> '' AND reminder_count < $2
-      AND created_at < now() - ($1 || ' days')::interval AND (reminded_at IS NULL OR reminded_at < now() - ($1 || ' days')::interval) ORDER BY created_at`, [String(days), max]),
+    markReminded: (id) => q('UPDATE kiddush_sponsorships SET reminded_at=now(), reminder_count=reminder_count+1, remind_at=NULL, updated_at=now() WHERE id=$1', [id]),
+    /** Schedule a reminder for a time (null clears it) and/or stop (true) or resume (false) all reminders for this pledge. */
+    async setReminder(id, { remindAt, off }) {
+      const sets = [], vals = [id];
+      if (remindAt !== undefined) { vals.push(remindAt); sets.push(`remind_at=$${vals.length}`); }
+      if (off !== undefined) { vals.push(!!off); sets.push(`reminders_off=$${vals.length}`); if (off) sets.push('remind_at=NULL'); }
+      if (!sets.length) return true;
+      return (await q(`UPDATE kiddush_sponsorships SET ${sets.join(', ')}, updated_at=now() WHERE id=$1`, vals)).rowCount === 1;
+    },
+    /** Unpaid non-card pledges with an email: ones whose scheduled time has come, plus (when `auto`) the ones `days` old and not reminded within `days`, at most `max` automatic reminders each. Never ones with reminders switched off. */
+    dueReminders: ({ days, max, auto = true }) => rows(`SELECT * FROM kiddush_sponsorships WHERE status='pending' AND method <> 'card' AND email <> '' AND NOT reminders_off AND (
+      (remind_at IS NOT NULL AND remind_at <= now())
+      OR ($3::boolean AND remind_at IS NULL AND reminder_count < $2 AND created_at < now() - ($1 || ' days')::interval AND (reminded_at IS NULL OR reminded_at < now() - ($1 || ' days')::interval))
+    ) ORDER BY created_at`, [String(days), max, !!auto]),
     attachSession: (id, sessionId) => q('UPDATE kiddush_sponsorships SET stripe_session_id=$2, updated_at=now() WHERE id=$1', [id, sessionId]),
     /** Edit fields (admin). */
     async updateSponsorship(id, f) {

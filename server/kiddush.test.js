@@ -459,3 +459,29 @@ test('hebrew: slots carry Hebrew titles/dates, public sponsors carry kind and re
   const sp = (await board()).slots.find((x) => x.key === s.key).sponsors[0];
   assert.equal(sp.kind, 'memory'); assert.equal(sp.reason, 'Sara Levy');
 });
+
+test('calendar notes: a yahrzeit shows with its week; reminders can be scheduled, cancelled, resumed', async () => {
+  const H = { headers: await adminLogin() };
+  const s = await firstOpen((x) => x.kind === 'shabbat');
+  const day = new Date(Date.parse(s.date + 'T12:00:00Z') - 4 * 864e5).toISOString().slice(0, 10); // a Tuesday-ish day in that week
+  assert.equal((await call('POST', '/admin/api/kiddush/notes', { date: 'nope', text: 'x' }, H)).status, 400);
+  const add = await call('POST', '/admin/api/kiddush/notes', { date: day, kind: 'yahrzeit', text: 'Yahrzeit of Reb Moshe', textHe: 'יארצייט' }, H);
+  assert.equal(add.status, 200, add.text);
+  const slot = (await board()).slots.find((x) => x.key === s.key);
+  assert.equal(slot.notes.length, 1); assert.equal(slot.notes[0].text, 'Yahrzeit of Reb Moshe'); assert.equal(slot.notes[0].date, day);
+  assert.equal(slot.notes[0].id, undefined, 'ids are not public');
+  assert.equal((await call('GET', '/admin/api/kiddush/notes', undefined, H)).json.notes.length, 1);
+  await call('DELETE', '/admin/api/kiddush/notes/' + add.json.id, undefined, H);
+  assert.equal((await board()).slots.find((x) => x.key === s.key).notes.length, 0);
+
+  const sp = await call('POST', '/api/kiddush/sponsor', form(s));
+  const id = sp.json.id, P = (b) => call('PATCH', '/admin/api/kiddush/sponsorship/' + id, b, H);
+  assert.equal((await P({ remindAt: 'garbage' })).status, 400);
+  assert.equal((await P({ remindAt: new Date(Date.now() - 1000).toISOString() })).status, 200);
+  assert.equal(await dbApp.locals.kiddush.runReminders(), 1, 'a scheduled reminder that is due is sent');
+  assert.equal(await dbApp.locals.kiddush.runReminders(), 0, 'and only once');
+  await P({ remindAt: new Date(Date.now() - 1000).toISOString() }); await P({ remindersOff: true });
+  assert.equal(await dbApp.locals.kiddush.runReminders(), 0, 'cancelled reminders never go out');
+  await P({ remindersOff: false });
+  assert.equal(await dbApp.locals.kiddush.runReminders(), 0);
+});

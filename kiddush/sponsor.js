@@ -53,6 +53,7 @@
     box.appendChild(h('div', { class: 'nm', text: KI.title(s) }));
     box.appendChild(h('div', { class: 'dt', text: [KI.dateLabel(s), KI.hebDate(s)].join(' · ') }));
     if (s.mevarchim) box.appendChild(h('div', { class: 'mv', text: mevLine(s) }));
+    (s.notes || []).forEach(function (n) { box.appendChild(h('div', { class: 'note', text: KI.note(n) })); });
     box.appendChild(h('div', { class: 'rule' }));
     if (list.length) {
       var line = h('div', { class: 'spl' }, [h('div', { class: 'by', text: T('SPONSORED BY') })]);
@@ -117,6 +118,7 @@
     // Past weeks show just the parshah name; the reason (in small type, under each sponsor) takes the place of the date.
     if (!s.past) kids.push(h('div', { class: 'date', 'aria-hidden': 'true' }, [h('b', { text: String(d.getDate()) }), h('span', { text: KI.dowShort(s.date) })]));
     var mid = h('div', {}, [h('div', { class: 't', text: KI.title(s) })]);
+    (s.notes || []).forEach(function (n) { mid.appendChild(h('div', { class: 'note', text: KI.note(n) })); });
     if (!s.past) {
       mid.appendChild(h('div', { class: 's', text: KI.dateLabel(s) + ' · ' + KI.hebDate(s) + (s.note && !KI.he ? ' · ' + s.note : '') }));
       if (s.mevarchim) mid.appendChild(h('div', { class: 'mev', text: mevLine(s) }));
