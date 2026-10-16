@@ -16,7 +16,7 @@ Three addresses on the same server as the pushka app (replace `<your-app-address
 ## On the TV
 (The TV has a light look by default, matching the sponsor page. To use the dark wood board instead, add `?theme=dark` to the TV address, e.g. `/kiddush/tv/?theme=dark`. No prices are shown on the TV.)
 
-**Calendar notes and reminders:** Staff → **Calendar notes** lets you add a yahrzeit, an event or any note on a specific date; it shows on the TV and phone page with that week's Kiddush. Under **Waiting for payment** each pledge has **Remind on** (schedule a reminder for a chosen time), **Send reminder** (now) and **Cancel all reminders** (turn back on any time).
+**Calendar notes and reminders:** Staff → **Calendar notes** lets you add a yahrzeit, an event or any note on a specific date; it shows with that week's Kiddush (under the sponsors) and in the **Upcoming events** box at the bottom right of the TV. Under **Waiting for payment** each pledge has **Remind on** (schedule a reminder for a chosen time), **Send reminder** (now) and **Cancel all reminders** (turn back on any time).
 
 **Hebrew:** both the sponsor page and the TV have a small **עברית / English** button (top corner on phones; faint bottom-left corner on the TV). The choice is remembered, and you can force it with `?lang=he`. The Hebrew wording is a draft: review it, and edit the Hebrew blessing and the Hebrew "standard Kiddush" line under Staff → Settings.
 

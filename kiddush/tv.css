@@ -95,3 +95,8 @@ html.he.light .tile{text-align:right}
 html.he .blessing{font-variant:normal}
 .p-note{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:700;font-size:calc(var(--u)*2);line-height:1.15;margin-top:calc(var(--u)*.3);color:#5a2a14;max-width:100%}
 .p-note::before{content:"\2726  ";font-style:normal}
+.events{min-height:0;overflow:hidden;display:flex;flex-direction:column;gap:calc(var(--rh)*.04);padding:calc(var(--rh)*.14) calc(var(--rh)*.2);border:1px solid #c39a3a;border-radius:calc(var(--rh)*.22);background:linear-gradient(#fdf6d9,#f1dc98);box-shadow:0 2px 6px rgba(120,80,20,.28);color:#5e2f1a}
+.ev-h{font-family:"Cinzel",serif;font-weight:700;font-size:calc(var(--rh)*.24);letter-spacing:.1em;color:#8a6414;text-align:center;border-bottom:1px solid rgba(138,100,20,.4);padding-bottom:calc(var(--rh)*.06)}
+.ev-d{font-family:"Cinzel",serif;font-weight:700;font-size:calc(var(--rh)*.2);color:#8a6414}
+.ev-t{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:calc(var(--rh)*.3);line-height:1.08}
+html.he .events{text-align:right}

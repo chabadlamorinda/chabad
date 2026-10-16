@@ -56,7 +56,6 @@
     d.appendChild(document.createTextNode(KI.dowName(s.date) + ', ' + KI.dateLabel(s) + '  ·  ' + KI.hebDate(s) + '  '));
     main.appendChild(d);
     if (s.mevarchim) { var mv = el('div', 'p-mev'); mv.appendChild(el('div', '', KI.mevarchim(s))); if (s.molad) mv.appendChild(el('div', '', T('Molad') + ': ' + KI.molad(s))); main.appendChild(mv); }
-    (s.notes || []).forEach(function (n) { main.appendChild(el('div', 'p-note', KI.note(n))); });
     var tm = el('div', 'p-times'); tm.id = 'times'; main.appendChild(tm); shabbatTimes(s, tm);
     main.appendChild(el('div', 'p-rule'));
     var sps = sponsorsOf(s);
@@ -68,6 +67,7 @@
     } else {
       main.appendChild(el('div', 'p-open', T('OPEN FOR SPONSORSHIP')));
     }
+    (s.notes || []).forEach(function (n) { main.appendChild(el('div', 'p-note', KI.note(n))); }); // this week's notes go last, after the sponsors
     box.appendChild(main);
     var base = (b.settings.publicUrl || location.origin).replace(/\/+$/, '');
     var url = base + '/kiddush/?w=' + encodeURIComponent(s.key);
@@ -107,9 +107,23 @@
       }
     }
     sizeRows(rows);
+    eventsBox(b, rows);
     Array.prototype.forEach.call(document.querySelectorAll('.tile .n'), function (n) { fit(n, .5); });
     Array.prototype.forEach.call(document.querySelectorAll('.tile .s, .tile .ts'), function (n) { fit(n, .5); });
     Array.prototype.forEach.call(document.querySelectorAll('.tile .tt, .tile .td'), function (n) { fit(n, .55); });
+  }
+  // The empty space at the bottom of the last column holds an "Upcoming events" box (notes added in Staff → Calendar notes).
+  function eventsBox(b, rows) {
+    var col = $('c3'), empties = col.querySelectorAll('.tile.empty'), k = empties.length;
+    if (k < 2 || !(b.events && b.events.length)) return;
+    var box = el('div', 'events'); box.style.gridRow = 'span ' + k;
+    Array.prototype.forEach.call(empties, function (e, i) { if (i) col.removeChild(e); });
+    col.replaceChild(box, empties[0]);
+    box.appendChild(el('div', 'ev-h', T('UPCOMING EVENTS')));
+    b.events.forEach(function (n) {
+      var it = el('div', 'ev'); it.appendChild(el('div', 'ev-d', KI.dowName(n.date) + ', ' + KI.dateLabel(n))); it.appendChild(el('div', 'ev-t', KI.he && n.textHe ? n.textHe : n.text)); box.appendChild(it);
+    });
+    while (box.children.length > 2 && box.scrollHeight > box.clientHeight + 1) box.removeChild(box.lastChild); // show as many as fit
   }
   function sizeRows(rows) {
     var col = $('c0'), h = col.clientHeight, gap = parseFloat(getComputedStyle(col).rowGap) || 0;

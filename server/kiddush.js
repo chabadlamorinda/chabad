@@ -130,8 +130,10 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     const slots = all.filter((s) => admin || (!s.hidden && s.kind !== 'board')).map(toOut);
     const bs = all.find((s) => s.kind === 'board' && !s.hidden);
     const boardSponsor = bs ? toOut(bs) : null;
+    const upcoming = [];
+    for (const n of notes) if (n.date >= today && upcoming.length < 8) { const d = await cal.describeDate(n.date); upcoming.push({ kind: n.kind, text: n.text, textHe: n.text_he, date: n.date, dateLabel: d.dateLabel, heb: d.heb, hebHe: d.hebHe }); }
     return {
-      today, year: y, yearHe: await cal.yearHe(y), current: next ? next.key : null, years: [y], slots, boardSponsor,
+      events: upcoming, today, year: y, yearHe: await cal.yearHe(y), current: next ? next.key : null, years: [y], slots, boardSponsor,
       sponsoring: true, recorded: !!store, settings: publicSettings(st),
     };
   }

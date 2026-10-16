@@ -54,7 +54,7 @@
     // ---- TV
     'KIDDUSH SPONSORS': 'תורמי הקידוש', 'THIS WEEK’S KIDDUSH': 'הקידוש של השבוע', 'THIS KIDDUSH': 'הקידוש הקרוב', 'NEXT KIDDUSH': 'הקידוש הבא',
     'JOIN IN SPONSORING': 'הצטרפו לחסות', 'SCAN TO SPONSOR': 'סרקו כדי לתרום', 'DONATED BY': 'נתרם על ידי', 'SPONSOR THIS KIDDUSH BOARD FOR {year}': 'חסות על לוח הקידוש {year}',
-    'Your name displayed here all year': 'שמכם יוצג כאן כל השנה', 'See you at the next Kiddush': 'להתראות בקידוש הבא', 'Reconnecting…': 'מתחבר מחדש…',
+    'Your name displayed here all year': 'שמכם יוצג כאן כל השנה', 'See you at the next Kiddush': 'להתראות בקידוש הבא', 'Reconnecting…': 'מתחבר מחדש…', 'UPCOMING EVENTS': 'אירועים קרובים',
   };
   // server messages by code (the server's own text is English)
   var ERR_HE = { invalid_name: 'נא להזין את השם להצגה בלוח.', invalid_email: 'נא להזין כתובת דוא״ל תקינה.', invalid_method: 'נא לבחור אופן תשלום.', method_off: 'אפשרות התשלום אינה זמינה כעת.',
