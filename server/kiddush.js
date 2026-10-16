@@ -115,7 +115,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     const boardSponsor = bs ? toOut(bs) : null;
     return {
       today, year: y, yearHe: await cal.yearHe(y), current: next ? next.key : null, years: [y], slots, boardSponsor,
-      sponsoring: !!store, settings: publicSettings(st),
+      sponsoring: true, recorded: !!store, settings: publicSettings(st),
     };
   }
 
@@ -179,10 +179,33 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     return { memo, amount: dollars };
   };
 
+  // Until the database is connected nothing can be saved here: card gifts still go through Stripe (the sponsor's
+  // details ride along in the payment record) and the other methods get their instructions plus a note to email.
+  async function sponsorUnrecorded(req, body, st, f) {
+    const slot = await findSlot(body.slot);
+    if (!slot) throw new HttpError(404, 'no_slot', 'That week could not be found.');
+    if (slot.past) throw new HttpError(400, 'past', 'That date has already passed.');
+    if (f.amount < slot.priceCents) throw new HttpError(400, 'amount_too_low', 'The minimum for this Kiddush is $' + (slot.priceCents / 100) + '.');
+    const display = { name: f.anonymous ? 'Anonymous' : f.name, dedication: dedicationText(f.kind, f.dedication) };
+    if (f.method !== 'card') return { ok: true, recorded: false, status: 'pending', method: f.method, slot: slotBrief(slot), display, amountCents: f.amount, instructions: instructionsFor(f.method, st, slot, f.amount), contact: contactOf(st) };
+    const fee = f.fee ? Math.round(f.amount * FEE_RATE) : 0, title = slot.kind === 'board' ? slot.title : 'Kiddush sponsorship: ' + slot.title + ', ' + slot.dateLabel, base = baseUrl(req, st);
+    const session = await stripe.checkout.sessions.create({
+      mode: 'payment',
+      line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: f.amount + fee, product_data: { name: title, description: [slot.kind === 'board' ? 'Sponsor of the Kiddush board for the year' : st.standardNote, display.dedication].filter(Boolean).join(' · ') } } }],
+      customer_email: f.email,
+      payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: 'unrecorded', slot: slot.key } },
+      metadata: { source: 'kiddush', sponsorship: 'unrecorded', slot: slot.key, sponsor: f.name, anonymous: f.anonymous ? 'yes' : 'no', dedication_kind: f.kind, dedication: f.dedication, phone: f.phone, note: f.note, amount_cents: String(f.amount), fee_covered: fee ? 'yes' : 'no' },
+      success_url: base + '/kiddush/?paid=unrecorded&session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: base + '/kiddush/?cancelled=unrecorded',
+      expires_at: Math.floor(Date.now() / 1000) + 31 * 60,
+    }, { idempotencyKey: 'kiddush-unrec-' + f.idem });
+    return { ok: true, recorded: false, status: 'pending', method: 'card', url: session.url };
+  }
+
   async function sponsor(req, body) {
-    needStore();
     const st = await settings();
     const f = readForm(body || {}, st);
+    if (!store) return sponsorUnrecorded(req, body || {}, st, f);
     const dup = await store.sponsorshipByIdem(f.idem);
     if (dup) return resumeResponse(dup, st);
     const slot = await findSlot(body.slot);
@@ -228,7 +251,15 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
 
   /** The donor lands back from Stripe Checkout. Verifies with Stripe itself, so it works even without the webhook. */
   async function confirm(id, sessionId) {
-    needStore();
+    if (!store) { // card gift made before the database was connected: read it back from Stripe
+      if (id !== 'unrecorded' || !sessionId || !stripe) throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');
+      let session; try { session = await stripe.checkout.sessions.retrieve(sessionId); } catch (e) { session = null; }
+      const m = (session && session.metadata) || {};
+      if (m.source !== 'kiddush' || m.sponsorship !== 'unrecorded') throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');
+      const slot = await findSlot(m.slot, { allowHidden: true });
+      return { status: session.payment_status === 'paid' ? 'paid' : session.status === 'expired' ? 'expired' : 'pending', recorded: false, slot: slot ? slotBrief(slot) : null,
+        display: { name: m.anonymous === 'yes' ? 'Anonymous' : m.sponsor, dedication: dedicationText(m.dedication_kind, m.dedication) }, amountCents: Number(m.amount_cents) || 0 };
+    }
     const sp = typeof id === 'string' ? await store.getSponsorship(id) : null;
     if (!sp || sp.method !== 'card' || !sessionId || sp.stripe_session_id !== sessionId) throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');
     const slot = await findSlot(sp.slot_key, { allowHidden: true });
@@ -245,7 +276,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
   }
 
   async function cancel(id) {
-    needStore();
+    if (!store) return { ok: true };
     const sp = typeof id === 'string' ? await store.getSponsorship(id) : null;
     if (!sp || sp.method !== 'card' || sp.status !== 'pending') return { ok: true };
     await store.releaseSponsorship(sp.id, 'released', true);
