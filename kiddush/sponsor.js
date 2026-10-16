@@ -53,13 +53,13 @@
     box.appendChild(h('div', { class: 'nm', text: KI.title(s) }));
     box.appendChild(h('div', { class: 'dt', text: [KI.dateLabel(s), KI.hebDate(s)].join(' · ') }));
     if (s.mevarchim) box.appendChild(h('div', { class: 'mv', text: mevLine(s) }));
-    (s.notes || []).forEach(function (n) { box.appendChild(h('div', { class: 'note', text: KI.note(n) })); });
     box.appendChild(h('div', { class: 'rule' }));
     if (list.length) {
       var line = h('div', { class: 'spl' }, [h('div', { class: 'by', text: T('SPONSORED BY') })]);
       sponsorLines(list, 'who', 'for').forEach(function (n) { line.appendChild(n); });
       box.appendChild(line);
     } else box.appendChild(h('div', { class: 'open', text: T('OPEN FOR SPONSORSHIP') }));
+    (s.notes || []).forEach(function (n) { box.appendChild(h('div', { class: 'note', text: KI.note(n) })); });
     box.appendChild(h('div', { class: 'btn gold', text: list.length ? T('Add your sponsorship') : T('Sponsor this Kiddush') }));
   }
   // Bottom of the page: sponsor the whole Kiddush board for the year (no price on this page; it shows when you tap Sponsor).
@@ -118,12 +118,12 @@
     // Past weeks show just the parshah name; the reason (in small type, under each sponsor) takes the place of the date.
     if (!s.past) kids.push(h('div', { class: 'date', 'aria-hidden': 'true' }, [h('b', { text: String(d.getDate()) }), h('span', { text: KI.dowShort(s.date) })]));
     var mid = h('div', {}, [h('div', { class: 't', text: KI.title(s) })]);
-    (s.notes || []).forEach(function (n) { mid.appendChild(h('div', { class: 'note', text: KI.note(n) })); });
     if (!s.past) {
       mid.appendChild(h('div', { class: 's', text: KI.dateLabel(s) + ' · ' + KI.hebDate(s) + (s.note && !KI.he ? ' · ' + s.note : '') }));
       if (s.mevarchim) mid.appendChild(h('div', { class: 'mev', text: mevLine(s) }));
     }
     sponsorLines(list, 'sp', 'ded').forEach(function (n) { mid.appendChild(n); });
+    (s.notes || []).forEach(function (n) { mid.appendChild(h('div', { class: 'note', text: KI.note(n) })); });
     kids.push(mid);
     kids.push(list.length ? h('div', { class: 'go' }, [h('span', { class: 'pill', text: T('Sponsored') }), can ? h('small', { text: T('Join in') }) : null])
       : h('div', { class: 'go' }, [can ? h('span', { text: T('Sponsor') }) : null]));
