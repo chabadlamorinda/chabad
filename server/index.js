@@ -45,10 +45,12 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date() }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
-  const kiddush = createKiddush({ store, stripe, log, now });
+  const kiddush = createKiddush({ store, stripe, log, now, mailer });
+  if (reminders) kiddush.startReminders(); // emails unpaid sponsors a reminder after a few days (needs email set up)
   const app = express();
+  app.locals.kiddush = kiddush; // (used by tests)
   app.disable('x-powered-by');
   app.set('trust proxy', 1);
 
@@ -429,7 +431,7 @@ if (require.main === module) {
     if (store && sendPush) { require('./scheduler.js').createScheduler({ store, send: sendPush }).start(); console.log('Reminder scheduler started.'); }
     createApp({
       stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '',
-      store, sendPush, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
+      store, sendPush, mailer: require('./mailer.js').createMailer({ url: process.env.SMTP_URL, from: process.env.MAIL_FROM }), reminders: true, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
     }).listen(port, () => console.log('Listening on ' + port));
   })().catch((e) => { console.error('Startup failed:', e.message); process.exit(1); });
 }

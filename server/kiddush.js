@@ -26,13 +26,13 @@ const DEFAULTS = {
   publicUrl: '',
   blessing: 'May He who blessed our fathers, Abraham, Isaac, and Jacob, bless those who provide wine for Kiddush... May the Holy One blessed be He, give them their reward, heal their entire body, pardon all their sins, and send blessings and success to all their endeavours.',
   donorEn: '', donorHe: '',
-  showPending: true, includePurim: true,
+  includePurim: true, autoReminders: true, reminderDays: 3,
   boardYear: 0, // 0 = automatic: the year of the next upcoming Kiddush, so the board flips at Rosh Hashanah by itself
 };
 const FIELD = { // type of each setting, for validation
   orgName: ['s', 80], standardNote: ['s', 120], priceShabbat: ['n'], priceHoliday: ['n'], priceBoard: ['n'], cardOn: ['b'], coverFee: ['b'], zelleOn: ['b'], zelleId: ['s', 120], zelleName: ['s', 80],
   venmoOn: ['b'], venmoHandle: ['s', 60], checkOn: ['b'], checkPayable: ['s', 80], checkAddress: ['s', 200], cashOn: ['b'], contactEmail: ['s', 120], contactPhone: ['s', 30],
-  publicUrl: ['u'], blessing: ['s', 600], donorEn: ['s', 120], donorHe: ['s', 120], showPending: ['b'], includePurim: ['b'], boardYear: ['y'],
+  publicUrl: ['u'], blessing: ['s', 600], donorEn: ['s', 120], donorHe: ['s', 120], includePurim: ['b'], boardYear: ['y'], autoReminders: ['b'], reminderDays: ['d'],
 };
 
 class HttpError extends Error { constructor(status, code, message) { super(message); this.status = status; this.code = code; } }
@@ -40,7 +40,9 @@ const clean = (s, n) => String(s == null ? '' : s).replace(/[\u0000-\u001f\u007f
 const validEmail = (e) => /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/.test(e) && e.length <= 254;
 const dedicationText = (kind, text) => (text ? (KINDS[kind] ? KINDS[kind] + ' ' : '') + text : '');
 
-function createKiddush({ store, stripe, log = console, now = () => new Date() }) {
+const MAX_REMINDERS = 3;
+
+function createKiddush({ store, stripe, log = console, now = () => new Date(), mailer = null }) {
   const needStore = () => { if (!store) throw new HttpError(503, 'not_configured', 'Sponsorships are not set up yet. Please contact the office.'); };
 
   async function settings() {
@@ -76,9 +78,11 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
 
   const spView = (sp) => ({
     id: sp.id, status: sp.status, method: sp.method, name: sp.name, anonymous: sp.anonymous, dedicationKind: sp.dedication_kind, dedication: sp.dedication,
-    email: sp.email, phone: sp.phone, note: sp.note, amountCents: sp.amount_cents, feeCents: sp.fee_cents, source: sp.source, paidAt: sp.paid_at, createdAt: sp.created_at,
+    email: sp.email, phone: sp.phone, note: sp.note, amountCents: sp.amount_cents, feeCents: sp.fee_cents, source: sp.source, paidAt: sp.paid_at, createdAt: sp.created_at, remindedAt: sp.reminded_at, reminderCount: sp.reminder_count || 0,
   });
-  const publicSponsor = (sp, st) => (sp && (sp.status === 'paid' || st.showPending)
+  // Only CONFIRMED (paid) sponsorships ever appear on the TV or the phone page. Card payments confirm themselves through
+  // Stripe; Zelle, Venmo, check and cash appear once the Rabbi marks them paid.
+  const publicSponsor = (sp) => (sp && sp.status === 'paid'
     ? { name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication) } : null);
 
   /** The board for one Hebrew year. `admin` adds hidden weeks and private donor details. */
@@ -100,11 +104,11 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     next = all.find((s) => !s.hidden && s.kind !== 'board' && s.date >= today);
     const toOut = (s) => {
       const sps = byKey.get(s.key) || [];
-      const shown = sps.map((sp) => publicSponsor(sp, st)).filter(Boolean);
+      const shown = sps.map((sp) => publicSponsor(sp)).filter(Boolean);
       const out = {
         key: s.key, year: s.year, kind: s.kind, title: s.title, titleHe: s.titleHe, note: s.note, mevarchim: s.mevarchim || '', molad: s.molad || '', date: s.date, dow: s.dow, dateLabel: s.dateLabel, heb: s.heb, hebHe: s.hebHe,
         priceCents: s.priceCents, past: s.kind === 'board' ? false : s.date < today,
-        status: !sps.length ? 'open' : sps.some((sp) => sp.status === 'paid') ? 'sponsored' : 'reserved',
+        status: sps.some((sp) => sp.status === 'paid') ? 'sponsored' : 'open',
         sponsor: shown[0] || null, sponsors: shown,
       };
       if (admin) Object.assign(out, { hidden: s.hidden, customTitle: s.customTitle, customPrice: s.customPrice, eventId: s.eventId || null, sponsorship: sps[0] ? spView(sps[0]) : null, sponsorships: sps.map(spView) });
@@ -184,7 +188,6 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
   async function sponsorUnrecorded(req, body, st, f) {
     const slot = await findSlot(body.slot);
     if (!slot) throw new HttpError(404, 'no_slot', 'That week could not be found.');
-    if (slot.past) throw new HttpError(400, 'past', 'That date has already passed.');
     if (f.amount < slot.priceCents) throw new HttpError(400, 'amount_too_low', 'The minimum for this Kiddush is $' + (slot.priceCents / 100) + '.');
     const display = { name: f.anonymous ? 'Anonymous' : f.name, dedication: dedicationText(f.kind, f.dedication) };
     if (f.method !== 'card') return { ok: true, recorded: false, status: 'pending', method: f.method, slot: slotBrief(slot), display, amountCents: f.amount, instructions: instructionsFor(f.method, st, slot, f.amount), contact: contactOf(st) };
@@ -210,7 +213,6 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     if (dup) return resumeResponse(dup, st);
     const slot = await findSlot(body.slot);
     if (!slot) throw new HttpError(404, 'no_slot', 'That week could not be found.');
-    if (slot.past) throw new HttpError(400, 'past', 'That date has already passed.');
     if (f.amount < slot.priceCents) throw new HttpError(400, 'amount_too_low', 'The minimum for this Kiddush is $' + (slot.priceCents / 100) + '.');
     if (await store.pendingCountForEmail(f.email) >= 4) throw new HttpError(429, 'too_many', 'You already have several reservations waiting. Please complete or contact us first.');
     const fee = f.fee ? Math.round(f.amount * FEE_RATE) : 0;
@@ -299,6 +301,40 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     return true;
   }
 
+  // ---------- payment reminders and confirmations (email when configured, otherwise a prefilled email for the Rabbi) ----------
+  const dollars = (c) => '$' + (c / 100).toLocaleString('en-US', { maximumFractionDigits: 2 });
+  async function messageFor(kind, sp, st) {
+    const slot = await findSlot(sp.slot_key, { allowHidden: true });
+    const what = slot ? slot.title + (slot.kind === 'board' ? '' : ' (' + slot.dateLabel + ')') : 'a Kiddush', I = slot ? instructionsFor(sp.method, st, slot, sp.amount_cents) : {};
+    const sign = ['', 'With thanks,', st.orgName, [st.contactPhone, st.contactEmail].filter(Boolean).join(' · ')].filter((x, i) => i === 0 || x).join('\n');
+    if (kind === 'confirmed') return { subject: 'Your Kiddush sponsorship is confirmed', body: ['Hello ' + sp.name + ',', '', 'Thank you! We have received your payment of ' + dollars(sp.amount_cents) + ' and your sponsorship of ' + what + ' is confirmed. It now appears on our Kiddush board.', '', 'May you be blessed with health, happiness and success!', sign].join('\n') };
+    const how = sp.method === 'zelle' ? 'Zelle to ' + I.zelleId + (I.zelleName ? ' (' + I.zelleName + ')' : '') + ', with the memo "' + I.memo + '"'
+      : sp.method === 'venmo' ? 'Venmo to @' + I.venmoHandle + ', with the note "' + I.memo + '" (' + I.link + ')'
+      : sp.method === 'check' ? 'a check payable to ' + I.payable + ', mailed or brought to ' + I.address + ', with the memo "' + I.memo + '"'
+      : 'cash, brought to shul' + (st.contactPhone ? ' (or call ' + st.contactPhone + ' to arrange another way to give)' : '');
+    return { subject: 'Reminder: payment for your Kiddush sponsorship', body: ['Hello ' + sp.name + ',', '', 'Thank you for sponsoring ' + what + '. We have not yet received your payment of ' + dollars(sp.amount_cents) + '.', '', 'Please send it by ' + how + '.', '', 'Your sponsorship will appear on the Kiddush board as soon as we confirm your payment. If you have already sent it, thank you, and please let us know.', sign].join('\n') };
+  }
+  async function trySend(sp, msg) {
+    if (!mailer || !sp.email) return false;
+    try { await mailer.send({ to: sp.email, subject: msg.subject, text: msg.body }); return true; } catch (e) { log.error('kiddush email failed:', e && e.message); return false; }
+  }
+  /** Unpaid Zelle/Venmo/check/cash pledges: remind the sponsor by email after `reminderDays` (3 by default), then every few days, up to 3 times. */
+  async function runReminders() {
+    if (!store || !mailer) return 0;
+    const st = await settings();
+    if (!st.autoReminders) return 0;
+    let n = 0;
+    for (const sp of await store.dueReminders({ days: st.reminderDays, max: MAX_REMINDERS })) {
+      if (await trySend(sp, await messageFor('reminder', sp, st))) { await store.markReminded(sp.id); n++; }
+    }
+    return n;
+  }
+  function startReminders() {
+    if (!store || !mailer) return;
+    const tick = () => runReminders().catch((e) => log.error('kiddush reminder run failed:', e && e.message));
+    setTimeout(tick, 60e3).unref(); setInterval(tick, 3600e3).unref();
+  }
+
   // =====================================================================================
   // Routes
   // =====================================================================================
@@ -308,7 +344,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       const year = req.query.year ? parseInt(req.query.year, 10) : undefined;
       res.json(await board({ year }));
     }));
-    r.post('/sponsor', limit('kiddush-sponsor', 40, 10 * 60 * 1000), wrap(async (req, res) => { res.json(await sponsor(req, req.body)); }));
+    r.post('/sponsor', limit('kiddush-sponsor', 120, 10 * 60 * 1000), wrap(async (req, res) => { res.json(await sponsor(req, req.body)); }));
     r.get('/confirm', limit('kiddush-confirm', 60, 10 * 60 * 1000), wrap(async (req, res) => { res.json(await confirm(String(req.query.id || ''), String(req.query.session_id || ''))); }));
     r.post('/cancel', limit('kiddush-cancel', 40, 10 * 60 * 1000), wrap(async (req, res) => { res.json(await cancel(String((req.body && req.body.id) || ''))); }));
   }
@@ -378,7 +414,19 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       if (['pending', 'paid'].includes(b.status)) f.status = b.status;
       if (typeof b.slot === 'string' && b.slot !== sp.slot_key) { const s = await findSlot(b.slot, { allowHidden: true }); if (!s) bad('no_slot', 'That week could not be found.', 404); f.slotKey = s.key; }
       await store.updateSponsorship(sp.id, f);
-      res.json({ ok: true });
+      let emailed = false;
+      if (f.status === 'paid' && sp.status !== 'paid') { const fresh = await store.getSponsorship(sp.id); emailed = await trySend(fresh, await messageFor('confirmed', fresh, await settings())); }
+      res.json({ ok: true, emailed });
+    }));
+
+    // Remind a sponsor to pay: emails them when email is set up, always records it, and returns the text so the page can open a prefilled email otherwise.
+    r.post('/api/kiddush/sponsorship/:id/remind', authed, guard(async (req, res) => {
+      need();
+      const sp = await store.getSponsorship(req.params.id);
+      if (!sp || sp.status !== 'pending' || sp.method === 'card') bad('not_pending', 'There is nothing waiting for payment here.');
+      const msg = await messageFor('reminder', sp, await settings()), sent = await trySend(sp, msg);
+      await store.markReminded(sp.id);
+      res.json({ ok: true, sent, to: sp.email, subject: msg.subject, body: msg.body });
     }));
 
     r.post('/api/kiddush/sponsorship/:id/release', authed, guard(async (req, res) => {
@@ -390,7 +438,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
       res.json({ ok: true });
     }));
 
-    r.get('/api/kiddush/settings', authed, guard(async (req, res) => { need(); res.json({ settings: await settings(), defaults: DEFAULTS, cardAvailable: !!stripe }); }));
+    r.get('/api/kiddush/settings', authed, guard(async (req, res) => { need(); res.json({ settings: await settings(), defaults: DEFAULTS, cardAvailable: !!stripe, emailAvailable: !!mailer }); }));
     r.put('/api/kiddush/settings', authed, guard(async (req, res) => {
       need();
       const b = req.body || {}, out = {};
@@ -399,6 +447,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
         const v = b[k];
         if (t[0] === 'b') out[k] = v === true;
         else if (t[0] === 'n') { const n = Number(v); if (!Number.isFinite(n) || n < 1 || n > 10000) bad('invalid', 'Prices must be between $1 and $10,000.'); out[k] = Math.round(n * 100) / 100; }
+        else if (t[0] === 'd') { const n = Number(v); if (!Number.isInteger(n) || n < 1 || n > 30) bad('invalid', 'Reminder days must be a whole number from 1 to 30.'); out[k] = n; }
         else if (t[0] === 'y') { const n = Number(v); if (!Number.isInteger(n) || (n && (n < 5700 || n > 5900))) bad('invalid', 'Leave this at 0 for automatic, or enter a Hebrew year such as 5787.'); out[k] = n; }
         else if (t[0] === 'u') { const u = String(v || '').trim().replace(/\/+$/, ''); if (u && !/^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(u)) bad('invalid', 'The public web address must look like https://kiddush.example.org'); out[k] = u; }
         else out[k] = clean(v, t[1]);
@@ -440,7 +489,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date() })
     }));
   }
 
-  return { board, sponsor, confirm, cancel, onStripeEvent, mountPublic, mountAdmin, HttpError };
+  return { board, sponsor, confirm, cancel, onStripeEvent, mountPublic, mountAdmin, runReminders, startReminders, HttpError };
 }
 
 module.exports = { createKiddush, KINDS, DEFAULTS };
