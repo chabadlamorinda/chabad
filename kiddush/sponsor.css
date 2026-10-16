@@ -172,3 +172,5 @@ html.he .staff-hot{left:auto;right:0}html.he .staff-link{left:auto;right:12px}
 html.he .hero{padding-right:8px;padding-left:74px}
 .note{font-size:14px;font-weight:700;color:var(--brown);margin-top:3px;font-style:italic}
 .note::before{content:"\2726  ";color:var(--gold-d);font-style:normal}
+.note{color:#1b4a7a}
+.note::before{color:#2c6aa8}
