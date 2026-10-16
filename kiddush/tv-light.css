@@ -24,3 +24,8 @@ html.light body{background-image:none;color:#5e2f1a;cursor:none}
 .light .blessing{color:#7a5a3a;text-shadow:none}
 .light .donor-l,.light .donor-name,.light .donor-sub,.light .donor-en,.light .donor-he{color:#5e2f1a}
 .light .p-sp,.light .p-ded{text-shadow:none}
+
+/* past weeks: just the parshah name with the reason in small type where the date was */
+.light .tile.past .tdate{display:none}
+.light .tile.past .tbody{text-align:center}
+.light .tile.past .td{font-size:calc(var(--rh)*.19);font-style:italic}

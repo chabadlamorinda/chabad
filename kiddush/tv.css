@@ -83,3 +83,13 @@ body{font-family:"Oswald",sans-serif;color:var(--gold);background:#2a0f08 url(im
 .tile.two{padding-top:calc(var(--rh)*.09)}
 .tile.two .n{line-height:1.02}
 .tile.two .s{font-size:calc(var(--rh)*.25);margin-top:calc(var(--rh)*.02)}
+
+/* past tiles (dark theme): title only, reason in small type */
+.tile .r{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:calc(var(--rh)*.22);line-height:1.05;white-space:nowrap;color:#4a200f}
+.p-sp+.p-ded::before{content:""}
+.lang-btn{position:fixed;left:.6vw;bottom:.6vh;z-index:5;font:600 1.5vh "Frank Ruhl Libre",serif;color:#8a6414;background:rgba(255,250,235,.55);border:1px solid rgba(138,100,20,.4);border-radius:1vh;padding:.3vh 1vh;opacity:.35;cursor:pointer}
+.lang-btn:hover,.lang-btn:focus{opacity:1}
+html.he body,html.he body *{font-family:"Frank Ruhl Libre","Cormorant Garamond",serif!important;letter-spacing:0!important;text-transform:none!important}
+html.he .tile{text-align:right}
+html.he.light .tile{text-align:right}
+html.he .blessing{font-variant:normal}

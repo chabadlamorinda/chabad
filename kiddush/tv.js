@@ -6,8 +6,7 @@
   var KEY = 'kiddush-tv-last', board = null, lastOk = Date.now();
   var LIGHT = !/[?&]theme=dark\b/.test(location.search); // light look (matches the sponsor page) is the default; add ?theme=dark for the wood board
   if (LIGHT) document.documentElement.classList.add('light');
-  var DOWS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
-  var MON = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+  var T = KI.t; KI.apply();
 
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
   // Shrink text that does not fit its box (long names).
@@ -18,21 +17,26 @@
   var shortTitle = function (t) { return t.replace('Shabbos Chol Hamoed', 'Shabbos Chol Hamoed'); };
 
   var sponsorsOf = function (s) { return s.sponsors || (s.sponsor ? [s.sponsor] : []); };
-  var names = function (list) { return list.map(function (x) { return x.name; }).join(' & '); };
+  var names = function (list) { return list.map(KI.name).join(' & '); };
+  var reasons = function (list) { return list.map(KI.reason).filter(Boolean).join(' · '); };
 
   function tile(s, isCurrent) {
-    var t = el('div', 'tile ' + s.status + (s.past ? ' past' : '') + (isCurrent ? ' current' : ''));
+    var t = el('div', 'tile ' + s.status + (s.past ? ' past' : '') + (isCurrent ? ' current' : '')), sl = sponsorsOf(s), title = KI.title(s);
+    var dateLine = KI.dateLabel(s) + ' · ' + KI.hebDate(s);
     if (LIGHT) {
-      var dt = new Date(s.date + 'T12:00:00'), dd = el('div', 'tdate'); dd.appendChild(el('b', '', String(dt.getDate()))); dd.appendChild(el('span', '', DOWS[dt.getDay()]));
-      var body = el('div', 'tbody'); body.appendChild(el('div', 'tt', s.title)); body.appendChild(el('div', 'td', s.dateLabel + ' · ' + s.heb));
-      var sl = sponsorsOf(s); if (sl.length) body.appendChild(el('div', 'ts', names(sl)));
+      var dt = new Date(s.date + 'T12:00:00'), dd = el('div', 'tdate'); dd.appendChild(el('b', '', String(dt.getDate()))); dd.appendChild(el('span', '', KI.dowShort(s.date)));
+      var body = el('div', 'tbody'); body.appendChild(el('div', 'tt', title));
+      body.appendChild(el('div', 'td', s.past ? reasons(sl) : dateLine)); // past weeks: the reason (small) takes the date's place
+      if (sl.length) body.appendChild(el('div', 'ts', names(sl)));
       t.appendChild(dd); t.appendChild(body); return t;
     }
-    var line = s.dateLabel + ' – ' + s.heb, n;
-    if ((s.title + ' – ' + line).length > 34) { t.className += ' two'; n = el('div', 'n'); n.appendChild(el('div', '', s.title)); n.appendChild(el('div', '', line)); } // long names: two lines
-    else n = el('div', 'n', s.title + ' – ' + line);
+    var n;
+    if (s.past) n = el('div', 'n', title);
+    else if ((title + ' – ' + dateLine).length > 34) { t.className += ' two'; n = el('div', 'n'); n.appendChild(el('div', '', title)); n.appendChild(el('div', '', dateLine)); } // long names: two lines
+    else n = el('div', 'n', title + ' – ' + dateLine);
     t.appendChild(n);
-    var sp = sponsorsOf(s); if (sp.length) t.appendChild(el('div', 's', names(sp)));
+    if (sl.length) t.appendChild(el('div', 's', names(sl)));
+    if (s.past && reasons(sl)) t.appendChild(el('div', 'r', reasons(sl)));
     return t;
   }
 
@@ -43,31 +47,31 @@
   function renderPlate(b) {
     var s = b.slots.filter(function (x) { return x.key === b.current; })[0], box = $('plateIn');
     box.textContent = '';
-    if (!s) { box.appendChild(el('div', 'loading', 'See you at the next Kiddush')); return; }
+    if (!s) { box.appendChild(el('div', 'loading', T('See you at the next Kiddush'))); return; }
     var days = Math.round((new Date(s.date + 'T12:00:00') - new Date(b.today + 'T12:00:00')) / 864e5);
     var main = el('div', 'p-main');
-    main.appendChild(el('div', 'p-lbl', days <= 7 ? (s.kind === 'shabbat' ? 'THIS WEEK’S KIDDUSH' : 'THIS KIDDUSH') : 'NEXT KIDDUSH'));
-    main.appendChild(el('div', 'p-name', s.title));
-    var dt = new Date(s.date + 'T12:00:00'), d = el('div', 'p-date');
-    d.appendChild(document.createTextNode(['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Shabbos'][dt.getDay()] + ', ' + s.dateLabel + '  ·  ' + s.heb + '  '));
+    main.appendChild(el('div', 'p-lbl', days <= 7 ? (s.kind === 'shabbat' ? T('THIS WEEK’S KIDDUSH') : T('THIS KIDDUSH')) : T('NEXT KIDDUSH')));
+    main.appendChild(el('div', 'p-name', KI.title(s)));
+    var d = el('div', 'p-date');
+    d.appendChild(document.createTextNode(KI.dowName(s.date) + ', ' + KI.dateLabel(s) + '  ·  ' + KI.hebDate(s) + '  '));
     main.appendChild(d);
-    if (s.mevarchim) { var mv = el('div', 'p-mev'); mv.appendChild(el('div', '', 'Shabbat Mevarchim Chodesh ' + s.mevarchim)); if (s.molad) mv.appendChild(el('div', '', 'Molad: ' + s.molad)); main.appendChild(mv); }
+    if (s.mevarchim) { var mv = el('div', 'p-mev'); mv.appendChild(el('div', '', KI.mevarchim(s))); if (s.molad) mv.appendChild(el('div', '', T('Molad') + ': ' + KI.molad(s))); main.appendChild(mv); }
     var tm = el('div', 'p-times'); tm.id = 'times'; main.appendChild(tm); shabbatTimes(s, tm);
     main.appendChild(el('div', 'p-rule'));
     var sps = sponsorsOf(s);
     if (sps.length) {
-      main.appendChild(el('div', 'p-by', 'SPONSORED BY'));
+      main.appendChild(el('div', 'p-by', T('SPONSORED BY')));
       var shown = sps.slice(0, 3);
-      shown.forEach(function (x) { main.appendChild(el('div', 'p-sp' + (sps.length > 1 ? ' small' : ''), x.name)); if (x.dedication) main.appendChild(el('div', 'p-ded' + (sps.length > 1 ? ' small' : ''), x.dedication)); });
-      if (sps.length > 3) main.appendChild(el('div', 'p-ded small', 'and ' + (sps.length - 3) + ' more'));
+      shown.forEach(function (x) { main.appendChild(el('div', 'p-sp' + (sps.length > 1 ? ' small' : ''), KI.name(x))); var r = KI.reason(x); if (r) main.appendChild(el('div', 'p-ded' + (sps.length > 1 ? ' small' : ''), r)); });
+      if (sps.length > 3) main.appendChild(el('div', 'p-ded small', T('and {n} more', { n: sps.length - 3 })));
     } else {
-      main.appendChild(el('div', 'p-open', 'OPEN FOR SPONSORSHIP'));
+      main.appendChild(el('div', 'p-open', T('OPEN FOR SPONSORSHIP')));
     }
     box.appendChild(main);
     var base = (b.settings.publicUrl || location.origin).replace(/\/+$/, '');
     var url = base + '/kiddush/?w=' + encodeURIComponent(s.key);
     var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url); qr.appendChild(q);
-    qr.appendChild(el('div', 'q1', sps.length ? 'JOIN IN SPONSORING' : 'SCAN TO SPONSOR'));
+    qr.appendChild(el('div', 'q1', sps.length ? T('JOIN IN SPONSORING') : T('SCAN TO SPONSOR')));
     qr.appendChild(el('div', 'q2', base.replace(/^https?:\/\//, '') + '/kiddush'));
     box.appendChild(qr);
     $('plate').className = 'plate' + (s.mevarchim ? ' tall' : '');
@@ -85,7 +89,7 @@
     var d = new Date(s.date + 'T12:00:00'), a = new Date(d); a.setDate(a.getDate() - 1);
     fetch('https://www.hebcal.com/hebcal?v=1&cfg=json&c=on&zip=94549&m=50&s=off&maj=off&min=off&mod=off&nx=off&mf=off&ss=off&start=' + ymd(a) + '&end=' + s.date).then(function (r) { return r.json(); }).then(function (j) {
       var c = (j.items || []).filter(function (i) { return i.category === 'candles'; })[0], h = (j.items || []).filter(function (i) { return i.category === 'havdalah'; })[0];
-      var part = function (i, n) { var m = i && /:\s*(.+)$/.exec(i.title); return m ? n + ' ' + m[1].replace(/(\d)(am|pm)/i, '$1 $2').toUpperCase() : ''; };
+      var part = function (i, n) { var m = i && /:\s*(.+)$/.exec(i.title); return m ? T(n) + ' ' + KI.time(m[1].replace(/(\d)(am|pm)/i, '$1 $2').toUpperCase()) : ''; };
       var t = [part(c, 'Candle lighting'), part(h, 'Havdalah')].filter(Boolean).join('  ·  ');
       timesCache[s.key] = t; show(t);
     }).catch(function () {});
@@ -117,16 +121,16 @@
     var base = (S.publicUrl || location.origin).replace(/\/+$/, '').replace(/^https?:\/\//, '') + '/kiddush';
     var bsp = bs ? sponsorsOf(bs) : [];
     if (bsp.length) {
-      d.appendChild(el('div', 'donor-l', 'DONATED BY')); d.appendChild(el('div', 'donor-name', names(bsp)));
-      var dd = bsp.map(function (x) { return x.dedication; }).filter(Boolean); if (dd.length) d.appendChild(el('div', 'donor-sub', dd.join(' · ')));
+      d.appendChild(el('div', 'donor-l', T('DONATED BY'))); d.appendChild(el('div', 'donor-name', names(bsp)));
+      var dd = reasons(bsp); if (dd) d.appendChild(el('div', 'donor-sub', dd));
     } else if (S.donorEn || S.donorHe) {
-      d.appendChild(el('div', 'donor-l', 'DONATED BY'));
+      d.appendChild(el('div', 'donor-l', T('DONATED BY')));
       if (S.donorHe) { var he = el('div', 'donor-he', S.donorHe); he.lang = 'he'; d.appendChild(he); }
       if (S.donorEn) d.appendChild(el('div', 'donor-en', S.donorEn));
     } else if (bs && bs.status === 'open') {
       d.className = 'donor open';
-      d.appendChild(el('div', 'donor-l', 'SPONSOR THIS KIDDUSH BOARD FOR ' + b.year));
-      d.appendChild(el('div', 'donor-sub', 'Your name displayed here all year · ' + base));
+      d.appendChild(el('div', 'donor-l', T('SPONSOR THIS KIDDUSH BOARD FOR {year}', { year: KI.he ? b.yearHe : b.year })));
+      d.appendChild(el('div', 'donor-sub', T('Your name displayed here all year') + ' · ' + base));
     } else { d.hidden = true; return; }
     d.hidden = false;
     var nm = d.querySelector('.donor-name'); if (nm) fit(nm, .5);
@@ -134,9 +138,9 @@
 
   function render(b) {
     board = b;
-    $('yearNum').textContent = b.year; $('yearHe').textContent = b.yearHe;
+    $('yearNum').textContent = KI.he ? '' : b.year; $('yearHe').textContent = b.yearHe; $('year').querySelector('.dash').style.display = KI.he ? 'none' : '';
     var s = b.settings;
-    $('blessing').textContent = s.blessing || '';
+    $('blessing').textContent = KI.blessing(s) || '';
     renderDonor(b);
     layout(b); renderPlate(b);
     fit(document.querySelector('.title'), .6);

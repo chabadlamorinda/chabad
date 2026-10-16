@@ -445,3 +445,17 @@ test('retroactive sponsorship: a past week that had no sponsor can still be spon
   const now = (await board()).slots.find((x) => x.key === past.key);
   assert.equal(now.status, 'sponsored'); assert.equal(now.sponsor.name, 'The Levy Family'); assert.equal(now.past, true);
 });
+
+test('hebrew: slots carry Hebrew titles/dates, public sponsors carry kind and reason, settings carry Hebrew text', async () => {
+  const b = await board();
+  assert.ok(b.slots.every((s) => s.titleHe && s.hebHe), 'every slot has a Hebrew title and date');
+  assert.match(b.yearHe, /תשפ/);
+  assert.ok(b.settings.blessingHe && b.settings.standardNoteHe);
+  const s = await firstOpen();
+  const r = await call('POST', '/api/kiddush/sponsor', form(s, { dedicationKind: 'memory', dedication: 'Sara Levy', lang: 'he' }));
+  assert.equal(r.status, 200, r.text);
+  assert.equal((await board()).slots.find((x) => x.key === s.key).status, 'open', 'hidden until confirmed');
+  await confirmPaid(r.json.id);
+  const sp = (await board()).slots.find((x) => x.key === s.key).sponsors[0];
+  assert.equal(sp.kind, 'memory'); assert.equal(sp.reason, 'Sara Levy');
+});
