@@ -347,3 +347,22 @@ test('board sponsorship: a $5,000 year-long offer that is always open, off the t
   const staff = await fetch(baseNoDb + '/admin/kiddush/'); // no database/password: a helpful page, not a bare 404
   assert.equal(staff.status, 404); assert.match(await staff.text(), /DATABASE_URL/);
 });
+
+test('legacy import: the sponsors from the original board load once, with names, dedications and paid status', async () => {
+  const { importLegacy } = require('./kiddush-legacy.js');
+  assert.equal(await importLegacy(store, { error() {} }), 10);
+  assert.equal(await importLegacy(store, { error() {} }), 0, 'only once');
+  const b = await board('?year=5787');
+  const at = (k) => b.slots.find((x) => x.key === k);
+  assert.deepEqual(at('2026-09-12|rh1').sponsors.map((x) => x.name), ['Bar & Meghan Levy', 'Anonymous']);
+  assert.equal(at('2026-09-12|rh1').status, 'sponsored');
+  assert.equal(at('2026-09-13|rh2').sponsors.length, 2);
+  assert.equal(at('2026-09-13|rh2').sponsors[1].dedication.startsWith('In loving memory of Their grandfather'), true);
+  assert.equal(at('2026-10-10|shabbat').sponsors[0].dedication, 'In loving memory of His father Chaim Ben Aziz');
+  assert.equal(at('2026-10-17|shabbat').sponsors[0].name, 'Yosef Chaim Harrush');
+  assert.equal(at('2026-09-19|shabbat').sponsors[0].name, 'איזי לייטנר');
+  assert.ok(!JSON.stringify(b.slots).includes('@'), 'no contact details on the weeks');
+  const adm = await adminLogin();
+  const row = (await call('GET', '/admin/api/kiddush/board', undefined, { headers: adm })).json.slots.find((x) => x.key === '2026-09-13|rh2');
+  assert.deepEqual(row.sponsorships.map((x) => x.status), ['paid', 'pending']); assert.equal(row.sponsorships[0].amountCents, 72000);
+});

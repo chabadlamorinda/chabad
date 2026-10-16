@@ -418,6 +418,7 @@ if (require.main === module) {
     if (process.env.DATABASE_URL) {
       store = require('./store.js').createStore(process.env.DATABASE_URL);
       await store.migrate();
+      try { const n = await require('./kiddush-legacy.js').importLegacy(store); if (n) console.log('Imported ' + n + ' sponsors from the original Kiddush board.'); } catch (e) { console.error('Kiddush import skipped:', e.message); }
       console.log('Database connected: members, yahrzeits and reminders are on.');
     } else console.log('DATABASE_URL not set: yahrzeit sharing, reminders and the Rabbi area are off.');
     if (vapidPub && vapidPriv) {

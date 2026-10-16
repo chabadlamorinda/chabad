@@ -79,3 +79,7 @@ body{font-family:"Oswald",sans-serif;color:var(--gold);background:#2a0f08 url(im
 
 .p-sp.small{font-size:calc(var(--u)*3.2)}
 .p-ded.small{font-size:calc(var(--u)*2.1);margin-top:0;margin-bottom:calc(var(--u)*.35)}
+
+.tile.two{padding-top:calc(var(--rh)*.09)}
+.tile.two .n{line-height:1.02}
+.tile.two .s{font-size:calc(var(--rh)*.25);margin-top:calc(var(--rh)*.02)}
