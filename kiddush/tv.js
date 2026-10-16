@@ -20,7 +20,7 @@
   function tile(s, isCurrent) {
     var t = el('div', 'tile ' + s.status + (s.past ? ' past' : '') + (isCurrent ? ' current' : ''));
     var line = s.dateLabel + ' – ' + s.heb, n;
-    if ((s.title + ' – ' + line).length > 34) { n = el('div', 'n'); n.appendChild(el('div', '', s.title)); n.appendChild(el('div', '', line)); } // long names: two lines
+    if ((s.title + ' – ' + line).length > 34) { t.className += ' two'; n = el('div', 'n'); n.appendChild(el('div', '', s.title)); n.appendChild(el('div', '', line)); } // long names: two lines
     else n = el('div', 'n', s.title + ' – ' + line);
     t.appendChild(n);
     var sp = sponsorsOf(s); if (sp.length) t.appendChild(el('div', 's', names(sp)));
