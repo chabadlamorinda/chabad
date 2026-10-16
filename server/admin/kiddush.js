@@ -178,14 +178,14 @@
 
   // ------------------------------------------------------------ settings
   var SETTING_UI = [
-    ['Prices', [['standardNote', 'What a sponsorship includes (shown to donors)', 't'], ['priceShabbat', 'Shabbat Kiddush ($)', 'n'], ['priceHoliday', 'Holiday / other ($)', 'n'], ['priceBoard', 'Sponsor the Kiddush board for the year ($)', 'n']]],
+    ['Prices', [['standardNote', 'What a sponsorship includes (shown to donors)', 't'], ['standardNoteHe', 'Same line in Hebrew', 't'], ['priceShabbat', 'Shabbat Kiddush ($)', 'n'], ['priceHoliday', 'Holiday / other ($)', 'n'], ['priceBoard', 'Sponsor the Kiddush board for the year ($)', 'n']]],
     ['Card payments', [['cardOn', 'Accept cards, Apple Pay and Google Pay (Stripe)', 'b'], ['coverFee', 'Offer “cover the card fee” (3.5%)', 'b']]],
     ['Zelle', [['zelleOn', 'Offer Zelle', 'b'], ['zelleId', 'Zelle email or phone (Zelle stays hidden until this is filled in)', 't'], ['zelleName', 'Name on the Zelle account', 't']]],
     ['Venmo', [['venmoOn', 'Offer Venmo', 'b'], ['venmoHandle', 'Venmo username', 't']]],
     ['Check and cash', [['checkOn', 'Offer check', 'b'], ['checkPayable', 'Checks payable to', 't'], ['checkAddress', 'Mailing address', 't'], ['cashOn', 'Offer cash / other at shul', 'b']]],
     ['Payment reminders', [['autoReminders', 'Email unpaid sponsors a reminder automatically (needs email set up, see the setup guide)', 'b'], ['reminderDays', 'Days to wait before a reminder (default 3)', 'n']]],
     ['Contact shown to donors', [['contactEmail', 'Email', 't'], ['contactPhone', 'Phone', 't']]],
-    ['The board', [['boardYear', 'Year shown on the board: 0 = automatic (switches at Rosh Hashanah). Only enter a year like 5787 to force one.', 'n'], ['includePurim', 'Include Purim', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
+    ['The board', [['boardYear', 'Year shown on the board: 0 = automatic (switches at Rosh Hashanah). Only enter a year like 5787 to force one.', 'n'], ['includePurim', 'Include Purim', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['blessingHe', 'Blessing in Hebrew (shown when the screen is in Hebrew)', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
       ['publicUrl', 'Web address for the QR code (optional, e.g. https://kiddush.chabadoflamorinda.com)', 't']]],
   ];
   function settingsTab() {

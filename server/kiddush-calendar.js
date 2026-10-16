@@ -28,22 +28,22 @@ const ymd = (g) => g.getFullYear() + '-' + String(g.getMonth() + 1).padStart(2, 
 
 // Holiday description -> [code, title]. Chol Hamoed days only count when they fall on Shabbat.
 function holidayOf(desc, isSat) {
-  if (/^Rosh Hashana( \d+)?$/.test(desc)) return ['rh1', 'Rosh Hashanah – Day 1'];
-  if (desc === 'Rosh Hashana II') return ['rh2', 'Rosh Hashanah – Day 2'];
-  if (desc === 'Yom Kippur') return ['yk', 'Yom Kippur – Break-Fast'];
-  if (desc === 'Sukkot I') return ['suk1', 'Sukkot – Day 1'];
-  if (desc === 'Sukkot II') return ['suk2', 'Sukkot – Day 2'];
-  if (isSat && /^Sukkot (III|IV|V|VI) \(CH''M\)$/.test(desc)) return ['sukcm', 'Shabbos Chol Hamoed Sukkot'];
-  if (desc === 'Shmini Atzeret') return ['sha', 'Shemini Atzeret'];
-  if (desc === 'Simchat Torah') return ['simt', 'Simchat Torah'];
-  if (desc === 'Pesach I') return ['pes1', 'Pesach – Day 1'];
-  if (desc === 'Pesach II') return ['pes2', 'Pesach – Day 2'];
-  if (isSat && /^Pesach (III|IV|V|VI) \(CH''M\)$/.test(desc)) return ['pescm', 'Shabbos Chol Hamoed Pesach'];
-  if (desc === 'Pesach VII') return ['pes7', 'Pesach – Day 7'];
-  if (desc === 'Pesach VIII') return ['pes8', 'Pesach – Day 8'];
-  if (desc === 'Shavuot I') return ['shav1', 'Shavuos – Day 1'];
-  if (desc === 'Shavuot II') return ['shav2', 'Shavuos – Day 2'];
-  if (desc === 'Purim') return ['purim', 'Purim'];
+  if (/^Rosh Hashana( \d+)?$/.test(desc)) return ['rh1', 'Rosh Hashanah – Day 1', 'ראש השנה – יום א׳'];
+  if (desc === 'Rosh Hashana II') return ['rh2', 'Rosh Hashanah – Day 2', 'ראש השנה – יום ב׳'];
+  if (desc === 'Yom Kippur') return ['yk', 'Yom Kippur – Break-Fast', 'יום כיפור – הפסקת צום'];
+  if (desc === 'Sukkot I') return ['suk1', 'Sukkot – Day 1', 'סוכות – יום א׳'];
+  if (desc === 'Sukkot II') return ['suk2', 'Sukkot – Day 2', 'סוכות – יום ב׳'];
+  if (isSat && /^Sukkot (III|IV|V|VI) \(CH''M\)$/.test(desc)) return ['sukcm', 'Shabbos Chol Hamoed Sukkot', 'שבת חול המועד סוכות'];
+  if (desc === 'Shmini Atzeret') return ['sha', 'Shemini Atzeret', 'שמיני עצרת'];
+  if (desc === 'Simchat Torah') return ['simt', 'Simchat Torah', 'שמחת תורה'];
+  if (desc === 'Pesach I') return ['pes1', 'Pesach – Day 1', 'פסח – יום א׳'];
+  if (desc === 'Pesach II') return ['pes2', 'Pesach – Day 2', 'פסח – יום ב׳'];
+  if (isSat && /^Pesach (III|IV|V|VI) \(CH''M\)$/.test(desc)) return ['pescm', 'Shabbos Chol Hamoed Pesach', 'שבת חול המועד פסח'];
+  if (desc === 'Pesach VII') return ['pes7', 'Pesach – Day 7', 'פסח – יום ז׳'];
+  if (desc === 'Pesach VIII') return ['pes8', 'Pesach – Day 8', 'פסח – יום ח׳'];
+  if (desc === 'Shavuot I') return ['shav1', 'Shavuos – Day 1', 'שבועות – יום א׳'];
+  if (desc === 'Shavuot II') return ['shav2', 'Shavuos – Day 2', 'שבועות – יום ב׳'];
+  if (desc === 'Purim') return ['purim', 'Purim', 'פורים'];
   return null;
 }
 
@@ -84,7 +84,7 @@ async function buildYear(hy) {
       continue;
     }
     const h = holidayOf(e.getDesc(), dow === 6);
-    if (h) slots.push({ ...base, year: hy, key: date + '|' + h[0], kind: h[0] === 'purim' ? 'purim' : 'holiday', title: h[1], titleHe: e.render('he-x-NoNikud').replace(/\s*\(.*\)$/, '').replace(/\s*\d+$/, ''), note: '' });
+    if (h) slots.push({ ...base, year: hy, key: date + '|' + h[0], kind: h[0] === 'purim' ? 'purim' : 'holiday', title: h[1], titleHe: h[2], note: '' });
   }
   for (const sl of slots) { const m = mevarchim.get(sl.date); if (m && m.month) { sl.mevarchim = m.month; sl.molad = m.molad || ''; } }
   slots.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));

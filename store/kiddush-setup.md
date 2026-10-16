@@ -16,6 +16,8 @@ Three addresses on the same server as the pushka app (replace `<your-app-address
 ## On the TV
 (The TV has a light look by default, matching the sponsor page. To use the dark wood board instead, add `?theme=dark` to the TV address, e.g. `/kiddush/tv/?theme=dark`. No prices are shown on the TV.)
 
+**Hebrew:** both the sponsor page and the TV have a small **עברית / English** button (top corner on phones; faint bottom-left corner on the TV). The choice is remembered, and you can force it with `?lang=he`. The Hebrew wording is a draft: review it, and edit the Hebrew blessing and the Hebrew "standard Kiddush" line under Staff → Settings.
+
 Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Stick plugged into it) and press **F11** for full screen. It refreshes itself every minute, keeps showing the last board if the wifi drops, and switches to the new year at Rosh Hashanah by itself. The center plate always shows the **next upcoming Kiddush**: who sponsored it and why, or "Open for sponsorship" with a QR code that goes straight to that week.
 
 ## Payments: nothing appears on the board until you confirm it

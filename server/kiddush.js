@@ -16,7 +16,7 @@ const MAX_CENTS = 1000000;
 const DEFAULTS = {
   orgName: 'Chabad Lamorinda',
   priceShabbat: 500, priceHoliday: 720, priceBoard: 5000,
-  standardNote: 'Standard Kiddush for 25 people',
+  standardNote: 'Standard Kiddush for 25 people', standardNoteHe: 'קידוש רגיל ל-25 איש',
   cardOn: true, coverFee: true,
   zelleOn: true, zelleId: 'chabadlamorinda@gmail.com', zelleName: 'Chabad of Lamorinda',
   venmoOn: true, venmoHandle: 'CHABAD-LAMORINDA',
@@ -25,12 +25,13 @@ const DEFAULTS = {
   contactEmail: 'rabbi@chabadoflamorinda.com', contactPhone: '925-384-7242',
   publicUrl: '',
   blessing: 'May He who blessed our fathers, Abraham, Isaac, and Jacob, bless those who provide wine for Kiddush... May the Holy One blessed be He, give them their reward, heal their entire body, pardon all their sins, and send blessings and success to all their endeavours.',
+  blessingHe: 'מִי שֶׁבֵּרַךְ אֲבוֹתֵינוּ אַבְרָהָם יִצְחָק וְיַעֲקֹב, הוּא יְבָרֵךְ אֶת כָּל הַנּוֹתְנִים יַיִן לְקִדּוּשׁ... הַקָּדוֹשׁ בָּרוּךְ הוּא יְשַׁלֵּם שְׂכָרָם, וְיָסִיר מֵהֶם כָּל מַחֲלָה, וִירַפֵּא לְכָל גּוּפָם, וְיִמְחַל לְכָל עֲוֹנוֹתֵיהֶם, וְיִשְׁלַח בְּרָכָה וְהַצְלָחָה בְּכָל מַעֲשֵׂה יְדֵיהֶם.',
   donorEn: '', donorHe: '',
   includePurim: true, autoReminders: true, reminderDays: 3,
   boardYear: 0, // 0 = automatic: the year of the next upcoming Kiddush, so the board flips at Rosh Hashanah by itself
 };
 const FIELD = { // type of each setting, for validation
-  orgName: ['s', 80], standardNote: ['s', 120], priceShabbat: ['n'], priceHoliday: ['n'], priceBoard: ['n'], cardOn: ['b'], coverFee: ['b'], zelleOn: ['b'], zelleId: ['s', 120], zelleName: ['s', 80],
+  orgName: ['s', 80], standardNote: ['s', 120], standardNoteHe: ['s', 120], blessingHe: ['s', 700], priceShabbat: ['n'], priceHoliday: ['n'], priceBoard: ['n'], cardOn: ['b'], coverFee: ['b'], zelleOn: ['b'], zelleId: ['s', 120], zelleName: ['s', 80],
   venmoOn: ['b'], venmoHandle: ['s', 60], checkOn: ['b'], checkPayable: ['s', 80], checkAddress: ['s', 200], cashOn: ['b'], contactEmail: ['s', 120], contactPhone: ['s', 30],
   publicUrl: ['u'], blessing: ['s', 600], donorEn: ['s', 120], donorHe: ['s', 120], includePurim: ['b'], boardYear: ['y'], autoReminders: ['b'], reminderDays: ['d'],
 };
@@ -67,7 +68,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     // The year-long "sponsor the Kiddush board" offer: one per year, always open until someone takes it.
     const first = slots[0] || { date: hy + '-01-01', dow: 0 };
     const rank = (k) => (k === 'board' ? 0 : k === 'custom' ? 2 : 1);
-    slots = slots.concat(extra, [{ key: first.date + '|board', kind: 'board', title: 'Kiddush Board Sponsor – ' + hy, titleHe: '', note: '', date: first.date, dow: first.dow, dateLabel: 'Entire year', heb: '', hebHe: '', year: hy }])
+    slots = slots.concat(extra, [{ key: first.date + '|board', kind: 'board', title: 'Kiddush Board Sponsor – ' + hy, titleHe: 'חסות על לוח הקידוש ' + (await cal.yearHe(hy)), note: '', date: first.date, dow: first.dow, dateLabel: 'Entire year', heb: '', hebHe: '', year: hy }])
       .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : rank(a.kind) - rank(b.kind)));
     return slots.map((s) => {
       const o = overrides.get(s.key) || {};
@@ -83,7 +84,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   // Only CONFIRMED (paid) sponsorships ever appear on the TV or the phone page. Card payments confirm themselves through
   // Stripe; Zelle, Venmo, check and cash appear once the Rabbi marks them paid.
   const publicSponsor = (sp) => (sp && sp.status === 'paid'
-    ? { name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication) } : null);
+    ? { name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication), kind: sp.dedication_kind || '', reason: sp.dedication || '' } : null);
 
   /** The board for one Hebrew year. `admin` adds hidden weeks and private donor details. */
   async function board({ year, admin = false, exact = false } = {}) {
@@ -134,7 +135,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   }
   function publicSettings(st) {
     return {
-      orgName: st.orgName, standardNote: st.standardNote, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
+      orgName: st.orgName, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
       contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,
@@ -189,11 +190,11 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     const slot = await findSlot(body.slot);
     if (!slot) throw new HttpError(404, 'no_slot', 'That week could not be found.');
     if (f.amount < slot.priceCents) throw new HttpError(400, 'amount_too_low', 'The minimum for this Kiddush is $' + (slot.priceCents / 100) + '.');
-    const display = { name: f.anonymous ? 'Anonymous' : f.name, dedication: dedicationText(f.kind, f.dedication) };
+    const display = { name: f.anonymous ? 'Anonymous' : f.name, dedication: dedicationText(f.kind, f.dedication), kind: f.kind || '', reason: f.dedication || '' };
     if (f.method !== 'card') return { ok: true, recorded: false, status: 'pending', method: f.method, slot: slotBrief(slot), display, amountCents: f.amount, instructions: instructionsFor(f.method, st, slot, f.amount), contact: contactOf(st) };
     const fee = f.fee ? Math.round(f.amount * FEE_RATE) : 0, title = slot.kind === 'board' ? slot.title : 'Kiddush sponsorship: ' + slot.title + ', ' + slot.dateLabel, base = baseUrl(req, st);
     const session = await stripe.checkout.sessions.create({
-      mode: 'payment',
+      mode: 'payment', locale: body.lang === 'he' ? 'he' : 'auto',
       line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: f.amount + fee, product_data: { name: title, description: [slot.kind === 'board' ? 'Sponsor of the Kiddush board for the year' : st.standardNote, display.dedication].filter(Boolean).join(' · ') } } }],
       customer_email: f.email,
       payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: 'unrecorded', slot: slot.key } },
@@ -226,7 +227,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       const base = baseUrl(req, st);
       const title = slot.kind === 'board' ? slot.title : 'Kiddush sponsorship: ' + slot.title + ', ' + slot.dateLabel;
       const session = await stripe.checkout.sessions.create({
-        mode: 'payment',
+        mode: 'payment', locale: body && body.lang === 'he' ? 'he' : 'auto',
         line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: f.amount + fee, product_data: { name: title, description: [slot.kind === 'board' ? 'Sponsor of the Kiddush board for the year' : st.standardNote, dedicationText(sp.dedication_kind, sp.dedication)].filter(Boolean).join(' · ') } } }],
         customer_email: f.email,
         payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: id, slot: slot.key } },
@@ -242,8 +243,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       throw e;
     }
   }
-  const slotBrief = (s) => ({ kind: s.kind, key: s.key, title: s.title, dateLabel: s.dateLabel, heb: s.heb, date: s.date });
-  const sponsorBrief = (sp) => ({ name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication) });
+  const slotBrief = (s) => ({ kind: s.kind, key: s.key, title: s.title, titleHe: s.titleHe || '', dateLabel: s.dateLabel, heb: s.heb, hebHe: s.hebHe || '', date: s.date });
+  const sponsorBrief = (sp) => ({ name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication), kind: sp.dedication_kind || '', reason: sp.dedication || '' });
   const contactOf = (st) => ({ email: st.contactEmail, phone: st.contactPhone });
   async function resumeResponse(sp, st) { // the same request sent twice (double tap, retry): answer again, never double-book
     const slot = await findSlot(sp.slot_key, { allowHidden: true });
@@ -260,7 +261,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       if (m.source !== 'kiddush' || m.sponsorship !== 'unrecorded') throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');
       const slot = await findSlot(m.slot, { allowHidden: true });
       return { status: session.payment_status === 'paid' ? 'paid' : session.status === 'expired' ? 'expired' : 'pending', recorded: false, slot: slot ? slotBrief(slot) : null,
-        display: { name: m.anonymous === 'yes' ? 'Anonymous' : m.sponsor, dedication: dedicationText(m.dedication_kind, m.dedication) }, amountCents: Number(m.amount_cents) || 0 };
+        display: { name: m.anonymous === 'yes' ? 'Anonymous' : m.sponsor, dedication: dedicationText(m.dedication_kind, m.dedication), kind: m.dedication_kind || '', reason: m.dedication || '' }, amountCents: Number(m.amount_cents) || 0 };
     }
     const sp = typeof id === 'string' ? await store.getSponsorship(id) : null;
     if (!sp || sp.method !== 'card' || !sessionId || sp.stripe_session_id !== sessionId) throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');

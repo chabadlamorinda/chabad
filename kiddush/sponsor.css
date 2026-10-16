@@ -127,11 +127,6 @@ select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,va
 .thisweek .dt{font-size:16px}
 .thisweek .mv{font-size:14px;margin-top:0}
 .thisweek .rule{margin:6px 25% 6px}
-.thisweek .by{display:inline;font-size:11px;margin-right:6px}
-.thisweek .one{display:inline}
-.thisweek .one+.one::before{content:" & "; font-size:17px; color:var(--brown); font-weight:700}
-.thisweek .who{display:inline;font-size:19px}
-.thisweek .for{display:none}
 .thisweek .open{font-size:16px}
 .thisweek .btn{margin-top:6px;min-height:38px;padding:6px 16px;font-size:13px}
 .slot,.month{scroll-margin-top:var(--topH,210px)}
@@ -153,3 +148,25 @@ select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,va
 .staff-hot{position:fixed;left:0;bottom:0;width:64px;height:64px;z-index:30;border:0;background:transparent;padding:0;cursor:default;-webkit-tap-highlight-color:transparent}
 .staff-link{position:fixed;left:12px;bottom:14px;z-index:31;font:600 13px "Cinzel",serif;letter-spacing:.06em;color:var(--mute);background:rgba(255,250,240,.92);border:1px solid var(--line);border-radius:999px;padding:8px 14px;text-decoration:none;opacity:.8}
 .staff-link[hidden]{display:none}
+
+/* plaque: each sponsor on its own line with the reason in small type beside it */
+.thisweek .by{display:block;font-size:11px}
+.thisweek .one{display:block}
+.thisweek .one+.one{margin-top:3px}
+.thisweek .who{display:inline;font-size:20px}
+.thisweek .for{display:inline;font-size:14px;color:var(--mute);font-weight:600}
+.thisweek .who+.for::before{content:" \2014  "}
+.slot .for,.slot .ded{font-size:14px}
+.slot.past{grid-template-columns:1fr auto}
+.slot.past .ded{font-size:13px;color:var(--mute);font-weight:600}
+
+/* language toggle + Hebrew */
+.hero{position:relative}
+.lang-btn{position:absolute;top:calc(8px + env(safe-area-inset-top));right:8px;font:700 13px "Frank Ruhl Libre","Cinzel",serif;color:var(--brown);background:#fffaf0;border:1px solid var(--gold);border-radius:999px;padding:6px 12px;min-height:34px;cursor:pointer}
+html.he .lang-btn{right:auto;left:8px}
+html.he body,html.he body *{font-family:"Frank Ruhl Libre","Cormorant Garamond",serif!important;letter-spacing:0!important;text-transform:none!important}
+html.he .hero .ttl,html.he .slot,html.he button.slot{text-align:right}
+html.he .thisweek,html.he .thisweek .spl{text-align:center}
+html.he .staff-hot{left:auto;right:0}html.he .staff-link{left:auto;right:12px}
+.hero{padding-right:74px}
+html.he .hero{padding-right:8px;padding-left:74px}
