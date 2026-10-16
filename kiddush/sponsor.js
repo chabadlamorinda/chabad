@@ -92,7 +92,7 @@
       years.appendChild(h('button', { class: 'tab', role: 'tab', 'aria-selected': String(y === st.year), text: y === b.year ? String(y) : String(y), onclick: function () { load(y); } }));
     });
     var list = $('list'); list.textContent = '';
-    var slots = b.slots.filter(function (s) { return (!s.past || sponsorsOf(s).length) && (!st.onlyOpen || (s.status === 'open' && !s.past)); });
+    var slots = b.slots.filter(function (s) { return !st.onlyOpen || (s.status === 'open' && !s.past); });
     if (!slots.length) list.appendChild(h('p', { class: 'muted center', text: st.onlyOpen ? 'Every upcoming week this year is sponsored. Thank you!' : 'No upcoming weeks in this year.' }));
     var last = '';
     slots.forEach(function (s) {
@@ -115,7 +115,7 @@
     if (s.mevarchim) mid.appendChild(h('div', { class: 'mev', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
     sponsorLines(list, 'sp', 'ded').forEach(function (n) { mid.appendChild(n); });
     var right = list.length ? h('div', { class: 'go' }, [h('span', { class: 'pill', text: s.status === 'reserved' ? 'Reserved' : 'Sponsored' }), can ? h('small', { text: 'Join in' }) : null])
-      : h('div', { class: 'go' }, [can ? h('span', { text: 'Sponsor' }) : h('span', { class: 'pill', text: 'Open' })]);
+      : h('div', { class: 'go' }, [can ? h('span', { text: 'Sponsor' }) : null]);
     var attrs = { class: 'slot' + (list.length ? ' taken' : '') + (s.past ? ' past' : '') };
     if (s.key === st.board.current) attrs.id = 'cur';
     if (can) { attrs.onclick = function () { openSheet(s); }; attrs['aria-label'] = 'Sponsor ' + s.title + ', ' + s.dateLabel; return h('button', attrs, [date, mid, right]); }
