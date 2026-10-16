@@ -4,7 +4,7 @@
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var KEY = 'kiddush-tv-last', board = null, lastOk = Date.now();
-  var LIGHT = /[?&]theme=light\b/.test(location.search); // light look that matches the sponsor page
+  var LIGHT = !/[?&]theme=dark\b/.test(location.search); // light look (matches the sponsor page) is the default; add ?theme=dark for the wood board
   if (LIGHT) document.documentElement.classList.add('light');
   var DOWS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   var MON = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
@@ -62,8 +62,6 @@
       if (sps.length > 3) main.appendChild(el('div', 'p-ded small', 'and ' + (sps.length - 3) + ' more'));
     } else {
       main.appendChild(el('div', 'p-open', 'OPEN FOR SPONSORSHIP'));
-      main.appendChild(el('div', 'p-price', 'Sponsor this Kiddush · $' + (s.priceCents / 100)));
-      if (b.settings.standardNote) main.appendChild(el('div', 'p-std', b.settings.standardNote));
     }
     box.appendChild(main);
     var base = (b.settings.publicUrl || location.origin).replace(/\/+$/, '');
@@ -128,7 +126,7 @@
     } else if (bs && bs.status === 'open') {
       d.className = 'donor open';
       d.appendChild(el('div', 'donor-l', 'SPONSOR THIS KIDDUSH BOARD FOR ' + b.year));
-      d.appendChild(el('div', 'donor-sub', '$' + (bs.priceCents / 100).toLocaleString('en-US') + ' for the year · your name displayed here · ' + base));
+      d.appendChild(el('div', 'donor-sub', 'Your name displayed here all year · ' + base));
     } else { d.hidden = true; return; }
     d.hidden = false;
     var nm = d.querySelector('.donor-name'); if (nm) fit(nm, .5);
