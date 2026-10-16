@@ -32,6 +32,7 @@
     return h('p', { class: cls || 'fine' }, ['Would you like a larger or deluxe Kiddush? Please contact the Rabbi to discuss', ph ? ': ' : '.', ph ? h('a', { href: 'tel:' + ph.replace(/[^\d+]/g, ''), text: ph }) : null, ph ? '.' : null]);
   }
   var sponsorsOf = function (s) { return s.sponsors || (s.sponsor ? [s.sponsor] : []); };
+  var list0 = function (s) { return sponsorsOf(s).length > 0; };
   function sponsorLines(list, nameCls, dedCls) {
     return list.map(function (x) { return h('div', { class: 'one' }, [h('div', { class: nameCls, text: x.name }), x.dedication ? h('div', { class: dedCls, text: x.dedication }) : null]); });
   }
@@ -109,7 +110,7 @@
     requestAnimationFrame(go); if (document.fonts && document.fonts.ready) document.fonts.ready.then(go);
   }
   function card(s, d) {
-    var can = !s.past, list = sponsorsOf(s);
+    var can = !(s.past && list0(s)), list = sponsorsOf(s); // a past week with no sponsor can still be sponsored afterwards
     var date = h('div', { class: 'date', 'aria-hidden': 'true' }, [h('b', { text: String(d.getDate()) }), h('span', { text: DOW[d.getDay()].toUpperCase() })]);
     var mid = h('div', {}, [h('div', { class: 't', text: s.title }), h('div', { class: 's', text: s.dateLabel + ' · ' + s.heb + (s.note ? ' · ' + s.note : '') })]);
     if (s.mevarchim) mid.appendChild(h('div', { class: 'mev', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }));
@@ -201,7 +202,7 @@
         });
     });
     function fail(msg, el) { err.textContent = msg; if (el) el.focus(); }
-    showSheet([h('h2', { id: 'sheetTitle', text: s.title }), h('p', { class: 'sub', text: [s.dateLabel, s.heb].filter(Boolean).join(' · ') + ' · ' + money(s.priceCents) }), sponsorsOf(s).length ? h('p', { class: 'fine', text: 'Already sponsored by ' + sponsorsOf(s).map(function (x) { return x.name; }).join(' & ') + '. You are welcome to join in sponsoring.' }) : null, s.kind === 'board' ? h('p', { class: 'fine', text: 'Your name and dedication are displayed as the sponsor of the Kiddush board for the whole year.' }) : null, s.mevarchim ? h('p', { class: 'fine', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }) : null, s.kind !== 'board' && S.standardNote ? h('p', { class: 'fine', text: S.standardNote + '.' }) : null, s.kind !== 'board' ? largerNote() : null, form].filter(Boolean));
+    showSheet([h('h2', { id: 'sheetTitle', text: s.title }), h('p', { class: 'sub', text: [s.dateLabel, s.heb].filter(Boolean).join(' · ') + ' · ' + money(s.priceCents) }), s.past ? h('p', { class: 'fine', text: 'This Kiddush has already taken place. You are welcome to sponsor it now, in honor or in memory of someone dear.' }) : null, sponsorsOf(s).length ? h('p', { class: 'fine', text: 'Already sponsored by ' + sponsorsOf(s).map(function (x) { return x.name; }).join(' & ') + '. You are welcome to join in sponsoring.' }) : null, s.kind === 'board' ? h('p', { class: 'fine', text: 'Your name and dedication are displayed as the sponsor of the Kiddush board for the whole year.' }) : null, s.mevarchim ? h('p', { class: 'fine', text: 'Shabbat Mevarchim Chodesh ' + s.mevarchim + (s.molad ? ' · Molad: ' + s.molad : '') }) : null, s.kind !== 'board' && S.standardNote ? h('p', { class: 'fine', text: S.standardNote + '.' }) : null, s.kind !== 'board' ? largerNote() : null, form].filter(Boolean));
     refresh();
   }
 
@@ -219,7 +220,7 @@
     var S = st.board.settings, I = r.instructions || {}, disp = r.display || {}, slot = r.slot || (s && { title: s.title, dateLabel: s.dateLabel, heb: s.heb }) || {};
     var who = disp.name && disp.name !== 'Anonymous' ? ', ' + disp.name : '';
     var kids = [h('div', { class: 'big-ok', 'aria-hidden': 'true', text: '✓' }), h('h2', { class: 'cen', id: 'sheetTitle', text: 'Thank you' + who + '!' }),
-      h('p', { class: 'sub cen', text: paid ? 'Your Kiddush sponsorship is confirmed.' : 'Your Kiddush is reserved.' })];
+      h('p', { class: 'sub cen', text: paid ? 'Your Kiddush sponsorship is confirmed.' : 'Please send your payment to complete your sponsorship.' })];
     var amt = r.amountCents != null ? money(r.amountCents) : (I.amount ? '$' + I.amount : '');
     kids.push(h('div', { class: 'sum' }, [
       h('div', { class: 'what', text: slot.kind === 'board' ? 'You are sponsoring the' : 'You are sponsoring' }), h('div', { class: 'big', text: slot.title || '' }),
@@ -227,7 +228,7 @@
       disp.dedication ? h('div', { class: 'ded2', text: disp.dedication }) : null,
       h('div', { class: 'inc', text: (slot.kind === 'board' ? 'Displayed all year on the Kiddush board' : (S.standardNote || 'Standard Kiddush')) + (amt ? '  ·  ' + amt : '') }),
     ]));
-    kids.push(h('p', { class: 'msg', text: 'Your generosity brings our community together. ' + (disp.name === 'Anonymous' ? 'Your sponsorship will be acknowledged without your name.' : 'Your name and dedication will appear on our Kiddush board.') + ' May you be blessed with health, happiness and success!' }));
+    kids.push(h('p', { class: 'msg', text: 'Your generosity brings our community together. ' + (paid ? (disp.name === 'Anonymous' ? 'Your sponsorship will be acknowledged without your name.' : 'Your name and dedication now appear on our Kiddush board.') : 'Your sponsorship will appear on the Kiddush board once your payment is confirmed.') + ' May you be blessed with health, happiness and success!' }));
     if (!paid) {
       kids.push(h('p', { class: 'msg', text: 'To complete your sponsorship, please send ' + (amt || 'your gift') + ' as follows:' }));
       if (r.method === 'zelle') kids.push(kv('Zelle to', I.zelleId, true), I.zelleName ? h('p', { class: 'fine cen', text: 'The account name is ' + I.zelleName + '.' }) : null, kv('Memo', I.memo, true));
@@ -238,7 +239,7 @@
         var m = form || {}, body = ['Hello Rabbi,', '', 'I would like to sponsor ' + (slot.title || 'a Kiddush') + (slot.dateLabel ? ' (' + slot.dateLabel + ')' : '') + '.', 'Name on the board: ' + (m.name || disp.name || ''), 'Dedication: ' + (disp.dedication || 'none'), 'Amount: ' + (amt || ''), 'Paying by: ' + (METHODNAMES[r.method] || r.method), 'My email: ' + (m.email || ''), 'My phone: ' + (m.phone || '')].join('\n');
         kids.push(h('div', { class: 'card' }, [h('div', { class: 'k', text: 'One last step' }), h('div', { class: 'msg', style: 'text-align:left;margin:4px 0 8px', text: 'Please send us a quick email so we can add your name to the board and match your payment.' }),
           h('a', { class: 'btn gold block', href: 'mailto:' + ((r.contact && r.contact.email) || S.contactEmail) + '?subject=' + encodeURIComponent('Kiddush sponsorship: ' + (slot.title || '') + ' ' + (slot.dateLabel || '')) + '&body=' + encodeURIComponent(body), text: 'Email the details' })]));
-      } else kids.push(h('p', { class: 'fine cen', text: 'Your sponsorship is marked as paid once we receive your gift.' }));
+      } else kids.push(h('p', { class: 'fine cen', text: 'We will confirm it as soon as it arrives, and send you a friendly reminder if we have not received it within 3 days.' }));
     } else kids.push(h('p', { class: 'fine cen', text: r.recorded === false ? 'Your payment was received and a receipt has been emailed to you. The office will add your name to the board.' : 'A receipt has been emailed to you.' }));
     if (slot.kind !== 'board') kids.push(largerNote('fine cen'));
     kids.push(h('button', { class: 'btn gold block', type: 'button', onclick: closeSheet, text: 'Back to the board' }));
@@ -263,6 +264,11 @@
     if (id || params.get('cancelled')) history.replaceState(null, '', location.pathname);
   }
 
+  // Staff entry: not shown anywhere until the bottom-left corner of the screen is tapped.
+  (function () {
+    var hot = $('staffHot'), link = $('staffLink'), t;
+    hot.addEventListener('click', function () { link.hidden = false; clearTimeout(t); t = setTimeout(function () { link.hidden = true; }, 6000); });
+  })();
   $('onlyOpen').addEventListener('change', function (e) { st.onlyOpen = e.target.checked; if (st.board) render(); });
   load().then(function (b) {
     if (!b) return;
@@ -270,7 +276,7 @@
     var w = params.get('w');
     if (w) {
       var s = b.slots.concat(b.boardSponsor ? [b.boardSponsor] : []).filter(function (x) { return x.key === w; })[0];
-      if (s && !s.past) openSheet(s);
+      if (s && !(s.past && list0(s))) openSheet(s);
       else if (s) note([h('b', { text: s.title + ' (' + s.dateLabel + ') ' }), 'has already passed.']);
     }
   });

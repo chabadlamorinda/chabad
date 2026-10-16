@@ -29,6 +29,8 @@ CREATE TABLE IF NOT EXISTS kiddush_sponsorships (
 );
 DROP INDEX IF EXISTS kiddush_live_slot; -- a week can now have more than one sponsor
 CREATE INDEX IF NOT EXISTS kiddush_slot_idx ON kiddush_sponsorships (slot_key);
+ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminded_at TIMESTAMPTZ;
+ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminder_count INT NOT NULL DEFAULT 0;
 CREATE INDEX IF NOT EXISTS kiddush_sp_email ON kiddush_sponsorships (lower(email));
 CREATE INDEX IF NOT EXISTS kiddush_sp_session ON kiddush_sponsorships (stripe_session_id);`;
 
@@ -81,6 +83,10 @@ function kiddushStore({ q, rows, one }) {
       }
       return id;
     },
+    markReminded: (id) => q('UPDATE kiddush_sponsorships SET reminded_at=now(), reminder_count=reminder_count+1, updated_at=now() WHERE id=$1', [id]),
+    /** Unpaid non-card pledges that are `days` old (and not reminded within `days`), at most `max` reminders each. */
+    dueReminders: ({ days, max }) => rows(`SELECT * FROM kiddush_sponsorships WHERE status='pending' AND method <> 'card' AND email <> '' AND reminder_count < $2
+      AND created_at < now() - ($1 || ' days')::interval AND (reminded_at IS NULL OR reminded_at < now() - ($1 || ' days')::interval) ORDER BY created_at`, [String(days), max]),
     attachSession: (id, sessionId) => q('UPDATE kiddush_sponsorships SET stripe_session_id=$2, updated_at=now() WHERE id=$1', [id, sessionId]),
     /** Edit fields (admin). */
     async updateSponsorship(id, f) {

@@ -136,19 +136,30 @@
   // ------------------------------------------------------------ waiting for payment
   function pendingTab() {
     var box = el('div');
-    guard(api('GET', '/pending')).then(function (r) {
-      if (!r) return; pendingCount = r.pending.length;
-      if (!r.pending.length) { box.appendChild(el('div', { class: 'card', text: 'Nothing is waiting. Every reservation has been paid.' })); return; }
-      box.appendChild(el('p', { class: 'small', text: 'People who reserved a week and said they would pay by Zelle, Venmo, check or cash (or who are still at the card checkout). Tap “Mark paid” when the money arrives.' }));
+    Promise.all([guard(api('GET', '/pending')), guard(api('GET', '/settings'))]).then(function (rs) {
+      var r = rs[0], cfg = rs[1]; if (!r || !cfg) return; pendingCount = r.pending.length;
+      var days = (cfg.settings && cfg.settings.reminderDays) || 3, mail = !!cfg.emailAvailable;
+      if (!r.pending.length) { box.appendChild(el('div', { class: 'card', text: 'Nothing is waiting. Every sponsorship has been confirmed.' })); return; }
+      box.appendChild(el('p', { class: 'small', text: 'Sponsors who said they would pay by Zelle, Venmo, check or cash (or are still at the card checkout). They do NOT appear on the board until you press “Confirm payment”. ' + (mail ? 'Reminders go out by email automatically after ' + days + ' days.' : 'After ' + days + ' days a sponsor is flagged here. Press “Send reminder” to email them (it opens a ready-to-send email).') }));
+      var late = r.pending.filter(function (p) { return p.method !== 'card' && Math.floor((Date.now() - new Date(p.createdAt)) / 864e5) >= days; }).length;
+      if (late) box.appendChild(el('div', { class: 'card warn', text: late + (late === 1 ? ' payment is' : ' payments are') + ' still unconfirmed after ' + days + ' days.' }));
       r.pending.forEach(function (p) {
-        var days = Math.floor((Date.now() - new Date(p.createdAt)) / 864e5);
-        box.appendChild(el('div', { class: 'card' }, [
-          el('div', { class: 'row' }, [el('b', { text: p.slot.title + ' · ' + p.slot.dateLabel }), el('span', { class: 'pill pending', text: METHODS[p.method] || p.method }), el('span', { class: days >= 7 ? 'small warn' : 'small', text: days === 0 ? 'today' : days + ' day' + (days > 1 ? 's' : '') + ' ago' })]),
+        var age = Math.floor((Date.now() - new Date(p.createdAt)) / 864e5), overdue = p.method !== 'card' && age >= days, toast = el('span', { class: 'small ok' });
+        box.appendChild(el('div', { class: 'card' + (overdue ? ' overdue' : ''), style: overdue ? 'border-color:#9b2c2c' : '' }, [
+          el('div', { class: 'row' }, [el('b', { text: p.slot.title + ' · ' + p.slot.dateLabel }), el('span', { class: 'pill pending', text: METHODS[p.method] || p.method }),
+            el('span', { class: overdue ? 'small warn' : 'small', text: (age === 0 ? 'today' : age + ' day' + (age > 1 ? 's' : '') + ' ago') + (overdue ? ' · reminder due' : '') })]),
           el('div', { text: p.name + ' · ' + money(p.amountCents) }), el('div', { class: 'small', text: [p.email, p.phone, ded(p.dedicationKind, p.dedication)].filter(Boolean).join(' · ') }), p.note ? el('div', { class: 'small', text: 'Note: ' + p.note }) : null,
+          p.reminderCount ? el('div', { class: 'small', text: 'Reminded ' + p.reminderCount + '×, last on ' + new Date(p.remindedAt).toLocaleDateString() }) : null,
           el('div', { class: 'row', style: 'margin-top:8px' }, [
-            el('button', { class: 'pri', text: 'Mark paid', onclick: function () { guard(api('PATCH', '/sponsorship/' + p.id, { status: 'paid' })).then(load); } }),
-            el('button', { class: 'bad', text: 'Release the week', onclick: function () { if (confirm('Release this week so someone else can sponsor it?')) guard(api('POST', '/sponsorship/' + p.id + '/release', {})).then(load); } }),
-            p.email ? el('a', { class: 'btn', href: 'mailto:' + p.email + '?subject=' + encodeURIComponent('Your Kiddush sponsorship: ' + p.slot.title + ' ' + p.slot.dateLabel), text: 'Email' }) : null])]));
+            el('button', { class: 'pri', text: 'Confirm payment', onclick: function () { guard(api('PATCH', '/sponsorship/' + p.id, { status: 'paid' })).then(function (j) { if (j) { toast.textContent = 'Confirmed' + (j.emailed ? ' (thank-you email sent)' : ''); setTimeout(load, 700); } }); } }),
+            p.method !== 'card' ? el('button', { text: 'Send reminder', onclick: function () {
+              guard(api('POST', '/sponsorship/' + p.id + '/remind', {})).then(function (j) {
+                if (!j) return;
+                if (j.sent) { toast.textContent = 'Reminder emailed to ' + j.to; setTimeout(load, 900); }
+                else { toast.textContent = 'Opening your email…'; location.href = 'mailto:' + encodeURIComponent(j.to) + '?subject=' + encodeURIComponent(j.subject) + '&body=' + encodeURIComponent(j.body); }
+              });
+            } }) : null,
+            el('button', { class: 'bad', text: 'Remove', onclick: function () { if (confirm('Remove this pledge and open the week again?')) guard(api('POST', '/sponsorship/' + p.id + '/release', {})).then(load); } }), toast])]));
       });
     });
     return box;
@@ -172,14 +183,16 @@
     ['Zelle', [['zelleOn', 'Offer Zelle', 'b'], ['zelleId', 'Zelle email or phone (Zelle stays hidden until this is filled in)', 't'], ['zelleName', 'Name on the Zelle account', 't']]],
     ['Venmo', [['venmoOn', 'Offer Venmo', 'b'], ['venmoHandle', 'Venmo username', 't']]],
     ['Check and cash', [['checkOn', 'Offer check', 'b'], ['checkPayable', 'Checks payable to', 't'], ['checkAddress', 'Mailing address', 't'], ['cashOn', 'Offer cash / other at shul', 'b']]],
+    ['Payment reminders', [['autoReminders', 'Email unpaid sponsors a reminder automatically (needs email set up, see the setup guide)', 'b'], ['reminderDays', 'Days to wait before a reminder (default 3)', 'n']]],
     ['Contact shown to donors', [['contactEmail', 'Email', 't'], ['contactPhone', 'Phone', 't']]],
-    ['The board', [['boardYear', 'Year shown on the board: 0 = automatic (switches at Rosh Hashanah). Only enter a year like 5787 to force one.', 'n'], ['includePurim', 'Include Purim', 'b'], ['showPending', 'Show names on the TV as soon as someone reserves (before payment arrives)', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
+    ['The board', [['boardYear', 'Year shown on the board: 0 = automatic (switches at Rosh Hashanah). Only enter a year like 5787 to force one.', 'n'], ['includePurim', 'Include Purim', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
       ['publicUrl', 'Web address for the QR code (optional, e.g. https://kiddush.chabadoflamorinda.com)', 't']]],
   ];
   function settingsTab() {
     var box = el('div');
     guard(api('GET', '/settings')).then(function (r) {
       if (!r) return; var S = r.settings, inputs = {};
+      if (!r.emailAvailable) box.appendChild(el('div', { class: 'card small', text: 'Automatic emails are off because email is not set up yet (see the setup guide). Reminders still work: the Send reminder button opens a ready-to-send email.' }));
       if (!r.cardAvailable) box.appendChild(el('div', { class: 'card warn', text: 'Card payments are off because Stripe is not connected yet (see the setup guide). Zelle, Venmo, check and cash still work.' }));
       SETTING_UI.forEach(function (sec) {
         var c = el('div', { class: 'card' }, [el('h2', { text: sec[0] })]);
