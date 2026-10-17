@@ -29,3 +29,5 @@ html.light body{background-image:none;color:#5e2f1a;cursor:none}
 .light .tile.past .tdate{display:none}
 .light .tile.past .tbody{text-align:center}
 .light .tile.past .td{font-size:calc(var(--rh)*.19);font-style:italic}
+.light .tbody>div{overflow:hidden;text-overflow:ellipsis}
+.light .tile{overflow:hidden}
