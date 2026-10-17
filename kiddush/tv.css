@@ -106,3 +106,12 @@ html.he .events{text-align:right}
 .ev-d{color:#ffd76a}
 .ev-t{color:#fff}
 .p-note{color:#1b3d63}
+
+/* long names / reasons must never spill outside their tile */
+.tile{overflow:hidden}
+.tile .n,.tile .s,.tile .r{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.tile.past{padding-top:calc(var(--rh)*.08)}
+.tile.past .n{font-size:calc(var(--rh)*.2)}
+.tile.past .s{font-size:calc(var(--rh)*.27);margin-top:0}
+.tile.past .r{font-size:calc(var(--rh)*.16)}
+.plate-in,.p-main{overflow:hidden}

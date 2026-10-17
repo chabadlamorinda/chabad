@@ -78,6 +78,11 @@
     $('plate').className = 'plate' + ((s.mevarchim || (s.notes && s.notes.length)) ? ' tall' : '');
     ['p-name', 'p-open'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
     Array.prototype.forEach.call(box.querySelectorAll('.p-sp'), function (n) { fit(n, .5); });
+    // a long dedication must never push the label off the plate: shrink the sponsor text until everything fits
+    var pm = box.querySelector('.p-main'), guard = 0;
+    while (pm && pm.scrollHeight > pm.clientHeight + 1 && guard++ < 14) {
+      Array.prototype.forEach.call(pm.querySelectorAll('.p-sp, .p-ded, .p-note'), function (n) { n.style.fontSize = parseFloat(getComputedStyle(n).fontSize) * .93 + 'px'; });
+    }
     var ded = box.querySelector('.p-ded'); if (ded) { var g = 0; while (ded.scrollHeight > ded.clientHeight + 1 && ded.scrollHeight > parseFloat(getComputedStyle(ded).fontSize) * 2.4 && g++ < 12) ded.style.fontSize = parseFloat(getComputedStyle(ded).fontSize) * .92 + 'px'; }
   }
 
@@ -110,7 +115,8 @@
     eventsBox(b, rows);
     Array.prototype.forEach.call(document.querySelectorAll('.tile .n'), function (n) { fit(n, .5); });
     Array.prototype.forEach.call(document.querySelectorAll('.tile .s, .tile .ts'), function (n) { fit(n, .5); });
-    Array.prototype.forEach.call(document.querySelectorAll('.tile .tt, .tile .td'), function (n) { fit(n, .55); });
+    Array.prototype.forEach.call(document.querySelectorAll('.tile .r, .tile.past .td'), function (n) { fit(n, .8); }); // long reasons are cut short with … rather than shrunk to nothing
+    Array.prototype.forEach.call(document.querySelectorAll('.tile .tt, .tile:not(.past) .td'), function (n) { fit(n, .55); });
   }
   // The empty space at the bottom of the last column holds an "Upcoming events" box (notes added in Staff → Calendar notes).
   function eventsBox(b, rows) {
