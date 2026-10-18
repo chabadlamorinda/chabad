@@ -1,0 +1,28 @@
+# Render settings for the Kiddush board. In Render choose New > Blueprint and point it at your GitHub copy of this folder.
+services:
+  - type: web
+    name: kiddush-board          # becomes part of your address: kiddush-board.onrender.com (rename it to something yours)
+    runtime: node
+    plan: free                   # "starter" (about $7/month) stays awake; "free" sleeps when idle (see SETUP-GUIDE.md, keep-awake)
+    buildCommand: npm install --omit=dev
+    startCommand: node server/index.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DATABASE_URL            # from Neon or Render Postgres
+        sync: false
+      - key: ADMIN_PASSWORD          # 12+ characters; opens the staff page
+        sync: false
+      - key: STRIPE_SECRET_KEY       # optional, for card payments
+        sync: false
+      - key: STRIPE_PUBLISHABLE_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: SMTP_URL                # optional, for reminder emails
+        sync: false
+      - key: MAIL_FROM
+        sync: false

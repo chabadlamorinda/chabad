@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Kiddush board — staff</title>
+<style>
+body{font:16px/1.5 Georgia,serif;background:#f3f2f2;color:#201f1d;margin:0}
+main{max-width:1000px;margin:0 auto;padding:20px}
+h1{font-weight:400;margin:0 0 4px}h2{font-weight:400;margin:0 0 6px;font-size:20px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}
+button,a.btn{font:inherit;border:1px solid #b68235;background:transparent;color:#7d5411;border-radius:7px;padding:7px 13px;cursor:pointer;text-decoration:none;display:inline-block}
+button.on{background:#fff3e4}button.pri{background:#b68235;color:#fff}button.bad{border-color:#9b2c2c;color:#9b2c2c}
+input,textarea,select{font:inherit;border:1px solid #bab6b6;border-radius:7px;padding:7px;width:100%;box-sizing:border-box;background:#fff}
+input[type=checkbox]{width:auto}
+label{display:block;font-size:13px;color:#605d5d;margin:8px 0 2px}
+.card{background:#fff;border:1px solid #d7d3d3;border-radius:9px;padding:12px 14px;margin:10px 0}
+.small{font-size:13px;color:#605d5d}.warn{color:#9b2c2c}.ok{color:#2c6e3f}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pill{display:inline-block;border:1px solid #b68235;border-radius:12px;padding:0 8px;font-size:12px;color:#7d5411;white-space:nowrap}
+.pill.paid{border-color:#2c6e3f;color:#2c6e3f}.pill.pending{border-color:#b86b00;color:#b86b00;background:#fff4de}.pill.hid{border-color:#888;color:#666}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d7d3d3;border-radius:9px}
+td,th{padding:7px 9px;border-bottom:1px solid #eee;text-align:left;vertical-align:top;font-size:15px}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:#605d5d}
+tr.click{cursor:pointer}tr.click:hover{background:#fff8ec}tr.past{opacity:.55}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}@media(max-width:600px){.grid2{grid-template-columns:1fr}}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:20px;z-index:9}
+.modal>.card{max-width:560px;width:100%;margin:0}
+.badge{background:#b86b00;color:#fff;border-radius:10px;font-size:12px;padding:0 7px;margin-left:5px}
+</style></head><body><main id="app"></main><script src="/admin/kiddush.js"></script></body></html>

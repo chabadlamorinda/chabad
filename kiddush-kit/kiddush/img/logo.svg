@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 190" width="300" height="190">
+  <!-- PLACEHOLDER LOGO: replace this file with your own logo (an .svg is best; keep the file name logo.svg, or change the name in kiddush/index.html and kiddush/tv/index.html). -->
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c75a"/><stop offset="1" stop-color="#b8901f"/></linearGradient></defs>
+  <circle cx="150" cy="100" r="78" fill="none" stroke="url(#g)" stroke-width="8"/>
+  <path fill="url(#g)" d="M150 40C139 58 128 70 128 88c0 13 10 23 22 23s22-10 22-23C172 70 161 58 150 40Z"/>
+  <rect x="120" y="120" width="60" height="10" rx="3" fill="url(#g)"/>
+  <rect x="136" y="130" width="28" height="22" rx="3" fill="url(#g)"/>
+</svg>
