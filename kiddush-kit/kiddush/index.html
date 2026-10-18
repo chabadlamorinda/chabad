@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f8f0da"><meta name="color-scheme" content="light only">
+<title>Sponsor a Kiddush</title>
+<meta name="description" content="Sponsor a Shabbat or holiday Kiddush, in honor or in memory of someone dear.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="sponsor.css">
+</head><body>
+<div class="top" id="top">
+  <header class="hero">
+    <img src="img/logo.svg" alt="" class="mark">
+    <div class="ttl"><div class="org" id="orgName"></div><h1 data-t="Sponsor a Kiddush">Sponsor a Kiddush</h1></div>
+    <button id="langBtn" class="lang-btn" type="button">עברית</button>
+  </header>
+  <p class="lead" data-t="Dedicate a Kiddush in honor or in memory of someone dear. Your name and dedication are displayed on our Kiddush board, and the merit of this mitzvah is in their honor.">Dedicate a Kiddush in honor or in memory of someone dear. Your name and dedication are displayed on our Kiddush board, and the merit of this mitzvah is in their honor.</p>
+  <section class="thisweek" id="thisWeek" aria-live="polite" hidden></section>
+</div>
+<main>
+  <div id="notice" role="status" aria-live="polite"></div>
+  <div class="bar">
+    <div class="tabs" id="years" role="tablist" aria-label="Year"></div>
+    <label class="chk"><input type="checkbox" id="onlyOpen"> <span data-t="Show weeks without a sponsor yet">Show weeks without a sponsor yet</span></label>
+  </div>
+  <div id="list" aria-live="polite"><p class="muted center" data-t="Loading…">Loading…</p></div>
+</main>
+<section id="boardCard" class="board-card" hidden></section>
+<footer>
+  <p class="blessing" id="blessing"></p>
+  <p class="muted" id="contact"></p>
+</footer>
+<div id="sheet" class="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle"><div class="sheet-bg" data-close></div><div class="sheet-card" id="sheetCard"></div></div>
+<button id="staffHot" class="staff-hot" type="button" aria-label="Staff"></button><a id="staffLink" class="staff-link" href="/admin/kiddush/" hidden data-t="Staff sign-in">Staff sign-in</a>
+<script src="i18n.js"></script><script src="sponsor.js"></script>
+</body></html>
