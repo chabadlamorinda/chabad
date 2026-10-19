@@ -26,7 +26,7 @@ Use `ABOUT-YOUR-CHABAD.md` as the question list (if the user already filled it i
 
 Look up what you need rather than asking them to:
 * **Time zone** from their city.
-* **Zip code** or, outside the US, a **GeoNames id** (`location.geonameid`; geonames.org) for candle lighting times. Candle lighting is 18 minutes before sunset by Chabad custom, Havdalah 40 minutes after (`location` section). **Check one week against their website or Chabad.org** (they can differ by a minute or two because sources compute sunset slightly differently) and adjust the minutes in the config if needed.
+* **Zip code** or, outside the US, a **GeoNames id** (`location.geonameid`; geonames.org) for candle lighting times. Candle lighting is 18 minutes before sunset by Chabad custom, Shabbat ends when the sun is 8.5 degrees below the horizon (follows the seasons; `havdalahMinutesAfterSunset` left `null`). **Check one week against their website or Chabad.org** (they can differ by a minute or two because sources compute sunset slightly differently) and adjust the minutes in the config if needed.
 * **Header lines** (`organization.headerLine1/2`): usually `CHABAD` and the city in capitals. Keep each under about 14 characters so it fits the TV.
 
 Note the scope: this kit assumes a community **outside Israel** (two-day Yom Tov) and US dollars. If they are in Israel, tell them honestly that the calendar would need a small code change (`il: true` in `server/kiddush-calendar.js`) and the second days of holidays would disappear; offer to make that change and run the tests.
