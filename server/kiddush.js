@@ -4,6 +4,8 @@
 // never touch this server). Zelle, Venmo, check and cash reserve the week as "pending" and show the donor
 // the instructions; the Rabbi marks it paid in the admin page once the money arrives.
 'use strict';
+const fs = require('fs');
+const path = require('path');
 const cal = require('./kiddush-calendar.js');
 const { ptParts } = require('./scheduler.js');
 
@@ -57,6 +59,18 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     const today = ptParts(now()).ymd;
     return { today, hy: await cal.hebrewYearOf(today) };
   }
+  // Notes kept in the code (server/calendar-notes.json): shown exactly like notes added in the staff page, but changed by editing that file.
+  const NOTES_FILE = path.join(__dirname, 'calendar-notes.json');
+  const KIND_OK = ['yahrzeit', 'event', 'note'];
+  function fileNotes() {
+    try {
+      const arr = JSON.parse(fs.readFileSync(NOTES_FILE, 'utf8'));
+      return (Array.isArray(arr) ? arr : []).filter((n) => n && /^\d{4}-\d{2}-\d{2}$/.test(n.date) && clean(n.text, 140))
+        .map((n, i) => ({ id: 'file_' + i, date: n.date, kind: KIND_OK.includes(n.kind) ? n.kind : 'note', text: clean(n.text, 140), text_he: clean(n.textHe, 140), fromFile: true }));
+    } catch (e) { return []; } // no file (or a typo in it): just no extra notes
+  }
+  const allNotes = async () => (store ? await store.listNotes() : []).concat(fileNotes()).sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+
   async function slotsForYear(hy, st, overrides, events) {
     let slots = (await cal.buildYear(hy)).filter((s) => st.includePurim || s.kind !== 'purim');
     const extra = [];
@@ -90,7 +104,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   async function board({ year, admin = false, exact = false } = {}) {
     const st = await settings();
     const { today } = await todayInfo();
-    const [overrides, events, live, notes] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), store.listNotes()]) : [new Map(), [], [], []];
+    const [overrides, events, live, notes] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), allNotes()]) : [new Map(), [], [], await allNotes()];
     const byKey = new Map(); // slot key -> every live sponsorship of that week, oldest first
     for (const sp of live) { if (!byKey.has(sp.slot_key)) byKey.set(sp.slot_key, []); byKey.get(sp.slot_key).push(sp); }
     let y, all, next;
@@ -480,7 +494,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     r.get('/api/kiddush/notes', authed, guard(async (req, res) => {
       need();
       const out = [];
-      for (const n of await store.listNotes()) out.push({ id: n.id, kind: n.kind, text: n.text, textHe: n.text_he, date: n.date, ...(await cal.describeDate(n.date)) });
+      for (const n of await allNotes()) out.push({ id: n.id, fromFile: !!n.fromFile, kind: n.kind, text: n.text, textHe: n.text_he, date: n.date, ...(await cal.describeDate(n.date)) });
       res.json({ notes: out });
     }));
     const noteFields = (b) => {

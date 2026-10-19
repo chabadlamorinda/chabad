@@ -208,8 +208,8 @@
         if (!r.notes.length) { list.appendChild(el('div', { class: 'card small', text: 'No notes yet.' })); return; }
         r.notes.forEach(function (n) {
           list.appendChild(el('div', { class: 'card row' }, [el('div', { style: 'flex:1' }, [el('b', { text: n.dateLabel + ' · ' + n.heb }), el('div', { text: (NOTE_KINDS[n.kind] || 'Note') + ': ' + n.text })]),
-            el('button', { text: 'Edit', onclick: function () { editing = n.id; date.value = n.date; kind.value = n.kind; text.value = n.text; he.value = n.textHe || ''; save.textContent = 'Save changes'; cancel.hidden = false; head.textContent = 'Edit note'; window.scrollTo(0, 0); } }),
-            el('button', { class: 'bad', text: 'Delete', onclick: function () { if (confirm('Delete this note?')) guard(api('DELETE', '/notes/' + n.id)).then(fill); } })]));
+            n.fromFile ? el('span', { class: 'small', text: 'set by Claude (in the code)' }) : el('button', { text: 'Edit', onclick: function () { editing = n.id; date.value = n.date; kind.value = n.kind; text.value = n.text; he.value = n.textHe || ''; save.textContent = 'Save changes'; cancel.hidden = false; head.textContent = 'Edit note'; window.scrollTo(0, 0); } }),
+            n.fromFile ? null : el('button', { class: 'bad', text: 'Delete', onclick: function () { if (confirm('Delete this note?')) guard(api('DELETE', '/notes/' + n.id)).then(fill); } })]));
         });
       });
     }
