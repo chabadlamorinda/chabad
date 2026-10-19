@@ -24,7 +24,9 @@
     "phone": "555-555-5555"
   },
 
+  "_publicUrl_help": "publicUrl: the real address of this app if you gave it your own domain (leave empty to use the hosting address). shareUrl: the address to show on the TV and in its QR code, for example https://www.example.org/kiddush. Set it only once that address really opens the sponsor page (for example a page on your website that forwards to it).",
   "publicUrl": "",
+  "shareUrl": "",
 
   "prices": {
     "_help": "Dollars. 'board' is the price to sponsor the whole board for the year.",

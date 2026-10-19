@@ -49,6 +49,9 @@ Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Sti
 ## What's on the board
 Every Shabbat (by parshah, combined parshiyos included, with Shabbat Shuva / Shekalim / Zachor… noted), Rosh Hashanah days 1 and 2, Yom Kippur break-fast, Sukkot days 1 and 2, Shabbos Chol Hamoed (Sukkot and Pesach), Shemini Atzeret, Simchat Torah, Pesach days 1, 2, 7 and 8, Shavuos days 1 and 2, and Purim. The board shows **one year at a time and changes automatically**: 5787 now (Sep 2026 to Sep 2027), then 5788 once the last 5787 Kiddush has passed, and so on every year, with no work from you. (Settings has an optional override if you ever want to force a specific year.)
 
+## Showing your website address on the TV (optional)
+If your own website forwards an address such as `https://www.chabadoflamorinda.com/kiddush` to the sponsor page, enter it in Staff → Settings → **"Address shown on the TV and in its QR code"**. The QR code and the text under it then use that address. Only set it once that address really opens the sponsor page (card payments keep returning to the app's own address, so they are not affected).
+
 ## A nicer address (optional)
 Add a custom domain such as `kiddush.chabadoflamorinda.com` in Render (same steps as in the main README). An address starting with `kiddush.` opens the sponsor page directly. Then put it in Settings → "Web address for the QR code" so the TV's QR code and web address use it.
 

@@ -40,6 +40,13 @@
     return t;
   }
 
+  // The address on the QR code and under it. "shareUrl" (a full address such as https://www.example.org/kiddush, set in Staff > Settings)
+  // wins; otherwise the server's own address is used and the QR opens the shown week directly.
+  function shareAddress(S) {
+    var share = (S.shareUrl || '').replace(/\/+$/, ''), base = (S.publicUrl || location.origin).replace(/\/+$/, '');
+    if (share) return { url: share, base: base, label: share.replace(/^https?:\/\//, '') };
+    return { url: '', base: base, label: base.replace(/^https?:\/\//, '') + '/kiddush' };
+  }
   function qrSvg(text) {
     try { var q = qrcode(0, 'M'); q.addData(text); q.make(); return q.createSvgTag({ cellSize: 4, margin: 0, scalable: true }); } catch (e) { return ''; }
   }
@@ -69,11 +76,10 @@
     }
     (s.notes || []).forEach(function (n) { main.appendChild(el('div', 'p-note', KI.note(n))); }); // this week's notes go last, after the sponsors
     box.appendChild(main);
-    var base = (b.settings.publicUrl || location.origin).replace(/\/+$/, '');
-    var url = base + '/kiddush/?w=' + encodeURIComponent(s.key);
+    var sh = shareAddress(b.settings), url = sh.url || (sh.base + '/kiddush/?w=' + encodeURIComponent(s.key));
     var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url); qr.appendChild(q);
     qr.appendChild(el('div', 'q1', sps.length ? T('JOIN IN SPONSORING') : T('SCAN TO SPONSOR')));
-    qr.appendChild(el('div', 'q2', base.replace(/^https?:\/\//, '') + '/kiddush'));
+    qr.appendChild(el('div', 'q2', sh.label));
     box.appendChild(qr);
     $('plate').className = 'plate' + ((s.mevarchim || (s.notes && s.notes.length)) ? ' tall' : '');
     ['p-name', 'p-open'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
@@ -139,7 +145,7 @@
   // Bottom of the center: who donated the board this year, or an open invitation to sponsor it.
   function renderDonor(b) {
     var d = $('donor'), bs = b.boardSponsor, S = b.settings; d.textContent = ''; d.className = 'donor';
-    var base = (S.publicUrl || location.origin).replace(/\/+$/, '').replace(/^https?:\/\//, '') + '/kiddush';
+    var base = shareAddress(S).label;
     var bsp = bs ? sponsorsOf(bs) : [];
     if (bsp.length) {
       d.appendChild(el('div', 'donor-l', T('DONATED BY'))); d.appendChild(el('div', 'donor-name', names(bsp)));
