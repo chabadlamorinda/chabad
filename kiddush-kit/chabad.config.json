@@ -11,12 +11,12 @@
   },
 
   "location": {
-    "_help": "timezone: a name like America/New_York, America/Chicago, America/Denver, America/Los_Angeles, Europe/London. zip: US zip code, used for candle lighting and Havdalah times on the TV. Outside the US leave zip empty and use geonameid (find your city at geonames.org). Candle lighting is 18 minutes before sunset; Havdalah 50 minutes after (change if your community's custom differs).",
+    "_help": "timezone: a name like America/New_York, America/Chicago, America/Denver, America/Los_Angeles, Europe/London. zip: US zip code, used for candle lighting and Havdalah times on the TV. Outside the US leave zip empty and use geonameid (find your city at geonames.org). Candle lighting is 18 minutes before sunset; Havdalah 40 minutes after (change these to match the times your community / Chabad.org shows; compare one week to check).",
     "timezone": "America/New_York",
     "zip": "10001",
     "geonameid": null,
     "candleLightingMinutesBeforeSunset": 18,
-    "havdalahMinutesAfterSunset": 50
+    "havdalahMinutesAfterSunset": 40
   },
 
   "contact": {

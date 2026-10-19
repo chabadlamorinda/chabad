@@ -99,7 +99,7 @@
     var show = function (t) { node.textContent = t || ''; };
     if (timesCache[s.key] != null) return show(timesCache[s.key]);
     var d = new Date(s.date + 'T12:00:00'), a = new Date(d); a.setDate(a.getDate() - 1);
-    fetch('https://www.hebcal.com/hebcal?v=1&cfg=json&c=on&zip=94549&m=50&s=off&maj=off&min=off&mod=off&nx=off&mf=off&ss=off&start=' + ymd(a) + '&end=' + s.date).then(function (r) { return r.json(); }).then(function (j) {
+    fetch('https://www.hebcal.com/hebcal?v=1&cfg=json&c=on&zip=94549&m=40&s=off&maj=off&min=off&mod=off&nx=off&mf=off&ss=off&start=' + ymd(a) + '&end=' + s.date).then(function (r) { return r.json(); }).then(function (j) {
       var c = (j.items || []).filter(function (i) { return i.category === 'candles'; })[0], h = (j.items || []).filter(function (i) { return i.category === 'havdalah'; })[0];
       var part = function (i, n) { var m = i && /:\s*(.+)$/.exec(i.title); return m ? T(n) + ' ' + KI.time(m[1].replace(/(\d)(am|pm)/i, '$1 $2').toUpperCase()) : ''; };
       var t = [part(c, 'Candle lighting'), part(h, 'Havdalah')].filter(Boolean).join('  ·  ');
