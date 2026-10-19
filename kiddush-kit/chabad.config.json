@@ -16,7 +16,8 @@
     "zip": "10001",
     "geonameid": null,
     "candleLightingMinutesBeforeSunset": 18,
-    "havdalahMinutesAfterSunset": null
+    "havdalahMinutesAfterSunset": null,
+    "havdalahExtraMinutes": 1
   },
 
   "contact": {
