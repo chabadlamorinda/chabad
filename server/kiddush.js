@@ -44,6 +44,8 @@ const validEmail = (e) => /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/.test(e) && 
 const dedicationText = (kind, text) => (text ? (KINDS[kind] ? KINDS[kind] + ' ' : '') + text : '');
 
 const MAX_REMINDERS = 3;
+// The address shown on the TV and in its QR code unless Staff > Settings says otherwise.
+const SHARE_DEFAULT = 'https://chabadoflamorinda.com/kiddush';
 
 function createKiddush({ store, stripe, log = console, now = () => new Date(), mailer = null }) {
   const needStore = () => { if (!store) throw new HttpError(503, 'not_configured', 'Sponsorships are not set up yet. Please contact the office.'); };
@@ -165,7 +167,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     return {
       orgName: st.orgName, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
-      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
+      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl || SHARE_DEFAULT, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,
     };
   }
