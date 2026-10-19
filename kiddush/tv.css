@@ -115,3 +115,9 @@ html.he .events{text-align:right}
 .tile.past .s{font-size:calc(var(--rh)*.27);margin-top:0}
 .tile.past .r{font-size:calc(var(--rh)*.16)}
 .plate-in,.p-main{overflow:hidden}
+
+/* QR address: two clear lines, never broken in the middle of a word */
+.p-qr{flex-basis:calc(var(--u)*21)}
+.p-qr .q2{word-break:normal;opacity:1;margin-top:calc(var(--u)*.5);line-height:1.15}
+.p-qr .q2h,.p-qr .q2p{font-family:"Oswald",sans-serif;font-weight:600;font-size:calc(var(--u)*2.3);white-space:nowrap;max-width:100%;overflow:hidden;color:#33200a}
+.p-qr .q2p{font-size:calc(var(--u)*2.6);font-weight:700}

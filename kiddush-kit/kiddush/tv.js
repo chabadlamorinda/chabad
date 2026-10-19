@@ -79,11 +79,14 @@
     var sh = shareAddress(b.settings), url = sh.url || (sh.base + '/kiddush/?w=' + encodeURIComponent(s.key));
     var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url); qr.appendChild(q);
     qr.appendChild(el('div', 'q1', sps.length ? T('SPONSOR A KIDDUSH') : T('SCAN TO SPONSOR')));
-    qr.appendChild(el('div', 'q2', sh.label));
+    var q2 = el('div', 'q2'), cut = sh.label.indexOf('/'); // address on two lines (site, then path) so it never breaks mid-word
+    q2.appendChild(el('div', 'q2h', cut > 0 ? sh.label.slice(0, cut) : sh.label)); if (cut > 0) q2.appendChild(el('div', 'q2p', sh.label.slice(cut)));
+    qr.appendChild(q2);
     box.appendChild(qr);
     $('plate').className = 'plate' + ((s.mevarchim || (s.notes && s.notes.length)) ? ' tall' : '');
     ['p-name', 'p-open'].forEach(function (c) { var n = box.querySelector('.' + c); if (n) fit(n, .5); });
     Array.prototype.forEach.call(box.querySelectorAll('.p-sp'), function (n) { fit(n, .5); });
+    Array.prototype.forEach.call(box.querySelectorAll('.q2h, .q2p'), function (n) { fit(n, .6); });
     // a long dedication must never push the label off the plate: shrink the sponsor text until everything fits
     var pm = box.querySelector('.p-main'), guard = 0;
     while (pm && pm.scrollHeight > pm.clientHeight + 1 && guard++ < 14) {
