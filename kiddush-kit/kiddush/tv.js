@@ -78,7 +78,7 @@
     box.appendChild(main);
     var sh = shareAddress(b.settings), url = sh.url || (sh.base + '/kiddush/?w=' + encodeURIComponent(s.key));
     var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url); qr.appendChild(q);
-    qr.appendChild(el('div', 'q1', sps.length ? T('JOIN IN SPONSORING') : T('SCAN TO SPONSOR')));
+    qr.appendChild(el('div', 'q1', sps.length ? T('SPONSOR A KIDDUSH') : T('SCAN TO SPONSOR')));
     qr.appendChild(el('div', 'q2', sh.label));
     box.appendChild(qr);
     $('plate').className = 'plate' + ((s.mevarchim || (s.notes && s.notes.length)) ? ' tall' : '');

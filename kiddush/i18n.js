@@ -53,7 +53,7 @@
     'has already passed.': 'כבר עבר.',
     // ---- TV
     'KIDDUSH SPONSORS': 'תורמי הקידוש', 'THIS WEEK’S KIDDUSH': 'הקידוש של השבוע', 'THIS KIDDUSH': 'הקידוש הקרוב', 'NEXT KIDDUSH': 'הקידוש הבא',
-    'JOIN IN SPONSORING': 'הצטרפו לחסות', 'SCAN TO SPONSOR': 'סרקו כדי לתרום', 'DONATED BY': 'נתרם על ידי', 'SPONSOR THIS KIDDUSH BOARD FOR {year}': 'חסות על לוח הקידוש {year}',
+    'SPONSOR A KIDDUSH': 'לתרום קידוש', 'SCAN TO SPONSOR': 'סרקו כדי לתרום', 'DONATED BY': 'נתרם על ידי', 'SPONSOR THIS KIDDUSH BOARD FOR {year}': 'חסות על לוח הקידוש {year}',
     'Your name displayed here all year': 'שמכם יוצג כאן כל השנה', 'See you at the next Kiddush': 'להתראות בקידוש הבא', 'Reconnecting…': 'מתחבר מחדש…', 'UPCOMING EVENTS': 'אירועים קרובים',
   };
   // server messages by code (the server's own text is English)
