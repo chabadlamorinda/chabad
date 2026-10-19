@@ -479,3 +479,12 @@ test('calendar notes: a yahrzeit shows with its week; reminders can be scheduled
   await P({ remindersOff: false });
   assert.equal(await dbApp.locals.kiddush.runReminders(), 0);
 });
+
+test('share address: settings accept an https address with a path for the TV/QR code, and reject anything else', async () => {
+  const h = { headers: await adminLogin() };
+  const ok = await call('PUT', '/admin/api/kiddush/settings', { shareUrl: 'https://www.example.org/kiddush/' }, h);
+  assert.equal(ok.status, 200, ok.text); assert.equal(ok.json.settings.shareUrl, 'https://www.example.org/kiddush');
+  assert.equal((await board()).settings.shareUrl, 'https://www.example.org/kiddush');
+  for (const bad of ['http://www.example.org/kiddush', 'https://x.org/a b', 'javascript:alert(1)', 'https://x.org/?a=1']) assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: bad }, h)).status, 400, bad);
+  assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: '' }, h)).status, 200);
+});

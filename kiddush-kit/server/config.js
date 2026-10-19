@@ -57,7 +57,7 @@ function loadConfig(raw) {
       checkOn: bool(check.enabled, !!str(check.payableTo)), checkPayable: str(check.payableTo, 80), checkAddress: str(check.mailTo, 200),
       cashOn: bool(pay.cash, true),
       contactEmail: str(contact.email, 120), contactPhone: str(contact.phone, 30),
-      publicUrl: str(raw.publicUrl, 200).replace(/\/+$/, ''),
+      publicUrl: str(raw.publicUrl, 200).replace(/\/+$/, ''), shareUrl: str(raw.shareUrl, 200).replace(/\/+$/, ''),
       ...(str(board.blessing, 600) ? { blessing: str(board.blessing, 600) } : {}),
       ...(str(board.blessingHe, 700) ? { blessingHe: str(board.blessingHe, 700) } : {}),
       includePurim: bool(board.includePurim, true),

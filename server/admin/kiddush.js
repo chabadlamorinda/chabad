@@ -51,7 +51,7 @@
       var links = el('div', { class: 'card' }, [
         el('div', { class: 'row' }, [el('b', { text: 'Links:' }),
           el('a', { class: 'btn', href: '/kiddush/tv/', target: '_blank', text: 'TV display' }), el('a', { class: 'btn', href: '/kiddush/', target: '_blank', text: 'Sponsor page (phones)' }),
-          el('button', { text: 'Copy sponsor link', onclick: function (e) { var u = (b.settings.publicUrl || location.origin) + '/kiddush/'; navigator.clipboard && navigator.clipboard.writeText(u); e.target.textContent = 'Copied: ' + u; } })]),
+          el('button', { text: 'Copy sponsor link', onclick: function (e) { var u = b.settings.shareUrl || ((b.settings.publicUrl || location.origin) + '/kiddush/'); navigator.clipboard && navigator.clipboard.writeText(u); e.target.textContent = 'Copied: ' + u; } })]),
         el('div', { class: 'small', text: 'On the TV, open the TV display in its web browser and press F11 for full screen. It updates itself every minute.' }),
       ]);
       var yrs = el('h2', { text: 'Year ' + b.year + ' · ' + b.yearHe });
@@ -238,7 +238,8 @@
     ['Payment reminders', [['autoReminders', 'Email unpaid sponsors a reminder automatically (needs email set up, see the setup guide)', 'b'], ['reminderDays', 'Days to wait before a reminder (default 3)', 'n']]],
     ['Contact shown to donors', [['contactEmail', 'Email', 't'], ['contactPhone', 'Phone', 't']]],
     ['The board', [['boardYear', 'Year shown on the board: 0 = automatic (switches at Rosh Hashanah). Only enter a year like 5787 to force one.', 'n'], ['includePurim', 'Include Purim', 'b'], ['blessing', 'Blessing shown on the TV', 'a'], ['blessingHe', 'Blessing in Hebrew (shown when the screen is in Hebrew)', 'a'], ['donorEn', '“Donated by” line (English)', 't'], ['donorHe', '“Donated by” line (Hebrew)', 't'],
-      ['publicUrl', 'Web address for the QR code (optional, e.g. https://kiddush.chabadoflamorinda.com)', 't']]],
+      ['shareUrl', 'Address shown on the TV and in its QR code (optional, e.g. https://www.chabadoflamorinda.com/kiddush). Only set this once that address really opens the sponsor page.', 't'],
+      ['publicUrl', 'The real web address of this app, only if you gave it your own domain (optional, e.g. https://kiddush.chabadoflamorinda.com). Card payments send donors back here.', 't']]],
   ];
   function settingsTab() {
     var box = el('div');

@@ -23,7 +23,7 @@ const DEFAULTS = { // generic starting values; chabad.config.json (then the Sett
   checkOn: false, checkPayable: '', checkAddress: '',
   cashOn: true,
   contactEmail: '', contactPhone: '',
-  publicUrl: '',
+  publicUrl: '', shareUrl: '',
   blessing: 'May He who blessed our fathers, Abraham, Isaac, and Jacob, bless those who provide wine for Kiddush... May the Holy One blessed be He, give them their reward, heal their entire body, pardon all their sins, and send blessings and success to all their endeavours.',
   blessingHe: 'מִי שֶׁבֵּרַךְ אֲבוֹתֵינוּ אַבְרָהָם יִצְחָק וְיַעֲקֹב, הוּא יְבָרֵךְ אֶת כָּל הַנּוֹתְנִים יַיִן לְקִדּוּשׁ... הַקָּדוֹשׁ בָּרוּךְ הוּא יְשַׁלֵּם שְׂכָרָם, וְיָסִיר מֵהֶם כָּל מַחֲלָה, וִירַפֵּא לְכָל גּוּפָם, וְיִמְחַל לְכָל עֲוֹנוֹתֵיהֶם, וְיִשְׁלַח בְּרָכָה וְהַצְלָחָה בְּכָל מַעֲשֵׂה יְדֵיהֶם.',
   donorEn: '', donorHe: '',
@@ -33,7 +33,7 @@ const DEFAULTS = { // generic starting values; chabad.config.json (then the Sett
 const FIELD = { // type of each setting, for validation
   orgName: ['s', 80], standardNote: ['s', 120], standardNoteHe: ['s', 120], blessingHe: ['s', 700], priceShabbat: ['n'], priceHoliday: ['n'], priceBoard: ['n'], cardOn: ['b'], coverFee: ['b'], zelleOn: ['b'], zelleId: ['s', 120], zelleName: ['s', 80],
   venmoOn: ['b'], venmoHandle: ['s', 60], checkOn: ['b'], checkPayable: ['s', 80], checkAddress: ['s', 200], cashOn: ['b'], contactEmail: ['s', 120], contactPhone: ['s', 30],
-  publicUrl: ['u'], blessing: ['s', 600], donorEn: ['s', 120], donorHe: ['s', 120], includePurim: ['b'], boardYear: ['y'], autoReminders: ['b'], reminderDays: ['d'],
+  publicUrl: ['u'], shareUrl: ['w'], blessing: ['s', 600], donorEn: ['s', 120], donorHe: ['s', 120], includePurim: ['b'], boardYear: ['y'], autoReminders: ['b'], reminderDays: ['d'],
 };
 
 class HttpError extends Error { constructor(status, code, message) { super(message); this.status = status; this.code = code; } }
@@ -153,7 +153,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     return {
       orgName: st.orgName, org: config.org, hebcalQuery: config.hebcalQuery, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
-      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
+      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,
     };
   }
@@ -470,6 +470,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
         else if (t[0] === 'n') { const n = Number(v); if (!Number.isFinite(n) || n < 1 || n > 10000) bad('invalid', 'Prices must be between $1 and $10,000.'); out[k] = Math.round(n * 100) / 100; }
         else if (t[0] === 'd') { const n = Number(v); if (!Number.isInteger(n) || n < 1 || n > 30) bad('invalid', 'Reminder days must be a whole number from 1 to 30.'); out[k] = n; }
         else if (t[0] === 'y') { const n = Number(v); if (!Number.isInteger(n) || (n && (n < 5700 || n > 5900))) bad('invalid', 'Leave this at 0 for automatic, or enter a Hebrew year such as 5787.'); out[k] = n; }
+        else if (t[0] === 'w') { const u = String(v || '').trim().replace(/\/+$/, ''); if (u && !/^https:\/\/[A-Za-z0-9.-]+(:\d+)?(\/[A-Za-z0-9._~\/-]*)?$/.test(u)) bad('invalid', 'The address must look like https://www.example.org/kiddush'); out[k] = u; }
         else if (t[0] === 'u') { const u = String(v || '').trim().replace(/\/+$/, ''); if (u && !/^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(u)) bad('invalid', 'The public web address must look like https://kiddush.example.org'); out[k] = u; }
         else out[k] = clean(v, t[1]);
       }
