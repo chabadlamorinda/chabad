@@ -6,7 +6,7 @@ Open it in any text editor. Keep the quote marks and commas as they are. Anythin
 | Section | What it controls |
 |---|---|
 | `organization` | Your name in English and Hebrew, and the two short lines in the TV header (`headerLine1`/`headerLine2`) |
-| `location` | Time zone, zip code (or `geonameid` outside the US) for candle lighting/Havdalah, and the minutes before sunset / after sunset |
+| `location` | (`havdalahExtraMinutes`, default 1, is a safety margin: Shabbat/Yom Tov is shown ending that many minutes after the computed time.) Time zone, zip code (or `geonameid` outside the US) for candle lighting/Havdalah, and the minutes before sunset / after sunset |
 | `contact` | Email and phone shown to sponsors (the "contact the Rabbi about a larger or deluxe Kiddush" line) |
 | `publicUrl` / `shareUrl` | `publicUrl`: the real address of this app if you gave it your own domain. `shareUrl`: the address to show on the TV and in its QR code (for example `https://www.example.org/kiddush` if your website forwards to the app). Both optional; can also be set in the staff page |
 | `prices` | Shabbat, holiday and whole-board prices, and the line describing what a sponsorship includes (English and Hebrew) |

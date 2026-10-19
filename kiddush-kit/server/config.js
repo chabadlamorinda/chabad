@@ -47,6 +47,7 @@ function loadConfig(raw) {
       line1He: str(org.headerLine1He, 30) || 'חב״ד', line2He: str(org.headerLine2He, 30) || str(org.nameHe, 80).replace(/^חב״ד\s*/, ''),
     },
     hebcalQuery,
+    havdalahPad: Math.min(Math.max(Math.round(num(loc.havdalahExtraMinutes, 1)), 0), 10), // Shabbat/Yom Tov is shown ending this many minutes after the computed time (safety margin)
     // Starting values for the Settings tab in the staff area. Once someone saves Settings there, the saved values win.
     settingDefaults: {
       orgName: name,

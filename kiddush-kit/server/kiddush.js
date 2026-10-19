@@ -151,7 +151,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   }
   function publicSettings(st) {
     return {
-      orgName: st.orgName, org: config.org, hebcalQuery: config.hebcalQuery, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
+      orgName: st.orgName, org: config.org, hebcalQuery: config.hebcalQuery, havdalahPad: config.havdalahPad, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
       contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,

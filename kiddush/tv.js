@@ -96,6 +96,13 @@
   }
 
   // Candle lighting / Havdalah for the shown week (Hebcal, Lafayette 94549). Silent if the lookup fails.
+  // Safety margin: Shabbat/Yom Tov ends a minute later than the computed time, never earlier (candle lighting is Hebcal's 18 minutes before sunset, which is at or a minute before Chabad.org's).
+  function addMinutes(t, n) {
+    var m = /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i.exec(t); if (!m || !n) return t;
+    var total = ((+m[1] % 12) + (/pm/i.test(m[3]) ? 12 : 0)) * 60 + (+m[2]) + n; total = ((total % 1440) + 1440) % 1440;
+    var h24 = Math.floor(total / 60), h12 = h24 % 12 || 12;
+    return h12 + ':' + String(total % 60).padStart(2, '0') + ' ' + (h24 >= 12 ? 'PM' : 'AM');
+  }
   var timesCache = {};
   function shabbatTimes(s, node) {
     var ymd = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
@@ -104,8 +111,8 @@
     var d = new Date(s.date + 'T12:00:00'), a = new Date(d); a.setDate(a.getDate() - 1);
     fetch('https://www.hebcal.com/hebcal?v=1&cfg=json&c=on&zip=94549&s=off&maj=off&min=off&mod=off&nx=off&mf=off&ss=off&start=' + ymd(a) + '&end=' + s.date).then(function (r) { return r.json(); }).then(function (j) {
       var c = (j.items || []).filter(function (i) { return i.category === 'candles'; })[0], h = (j.items || []).filter(function (i) { return i.category === 'havdalah'; })[0];
-      var part = function (i, n) { var m = i && /:\s*(.+)$/.exec(i.title); return m ? T(n) + ' ' + KI.time(m[1].replace(/(\d)(am|pm)/i, '$1 $2').toUpperCase()) : ''; };
-      var t = [part(c, 'Candle lighting'), part(h, 'Havdalah')].filter(Boolean).join('  ·  ');
+      var part = function (i, n, pad) { var m = i && /:\s*(.+)$/.exec(i.title); return m ? T(n) + ' ' + KI.time(addMinutes(m[1].replace(/(\d)(am|pm)/i, '$1 $2').toUpperCase(), pad || 0)) : ''; };
+      var t = [part(c, 'Candle lighting'), part(h, 'Havdalah', 1)].filter(Boolean).join('  ·  ');
       timesCache[s.key] = t; show(t);
     }).catch(function () {});
   }
