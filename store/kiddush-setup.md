@@ -18,6 +18,8 @@ Three addresses on the same server as the pushka app (replace `<your-app-address
 
 **Calendar notes and reminders:** Staff → **Calendar notes** lets you add a yahrzeit, an event or any note on a specific date; it shows with that week's Kiddush (under the sponsors) and in the **Upcoming events** box at the bottom right of the TV. Under **Waiting for payment** each pledge has **Remind on** (schedule a reminder for a chosen time), **Send reminder** (now) and **Cancel all reminders** (turn back on any time).
 
+**Notes kept in the code:** `server/calendar-notes.json` holds notes that Claude can add or change for you (for example "Upshernish … 4:30 PM"). They show exactly like notes added in the staff page; ask Claude to add, change or remove one.
+
 **Hebrew:** both the sponsor page and the TV have a small **עברית / English** button (top corner on phones; faint bottom-left corner on the TV). The choice is remembered, and you can force it with `?lang=he`. The Hebrew wording is a draft: review it, and edit the Hebrew blessing and the Hebrew "standard Kiddush" line under Staff → Settings.
 
 Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Stick plugged into it) and press **F11** for full screen. It refreshes itself every minute, keeps showing the last board if the wifi drops, and switches to the new year at Rosh Hashanah by itself. The center plate always shows the **next upcoming Kiddush**: who sponsored it and why, or "Open for sponsorship" with a QR code that goes straight to that week.

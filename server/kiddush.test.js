@@ -470,7 +470,7 @@ test('calendar notes: a yahrzeit shows with its week; reminders can be scheduled
   const slot = (await board()).slots.find((x) => x.key === s.key);
   assert.equal(slot.notes.length, 1); assert.equal(slot.notes[0].text, 'Yahrzeit of Reb Moshe'); assert.equal(slot.notes[0].date, day);
   assert.equal(slot.notes[0].id, undefined, 'ids are not public');
-  assert.equal((await call('GET', '/admin/api/kiddush/notes', undefined, H)).json.notes.length, 1);
+  assert.equal((await call('GET', '/admin/api/kiddush/notes', undefined, H)).json.notes.filter((x) => !x.fromFile).length, 1);
   const ed = await call('PUT', '/admin/api/kiddush/notes/' + add.json.id, { date: day, kind: 'event', text: 'Shiur with the Rabbi', textHe: '' }, H);
   assert.equal(ed.status, 200, ed.text);
   assert.equal((await board()).slots.find((x) => x.key === s.key).notes[0].text, 'Shiur with the Rabbi');
@@ -497,4 +497,14 @@ test('share address: settings accept an https address with a path for the TV/QR 
   assert.equal((await board()).settings.shareUrl, 'https://www.example.org/kiddush');
   for (const bad of ['http://www.example.org/kiddush', 'https://x.org/a b', 'javascript:alert(1)', 'https://x.org/?a=1']) assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: bad }, h)).status, 400, bad);
   assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: '' }, h)).status, 200);
+});
+
+test('notes kept in the code file show on the board like staff notes (and cannot be deleted from the staff page)', async () => {
+  const b = await board();
+  const n = b.events.find((e) => e.text === 'Upshernish for Akiva Labkowski, 4:30 PM');
+  assert.ok(n, 'the note for Sunday Oct 25 is on the board'); assert.equal(n.date, '2026-10-25');
+  const slot = b.slots.find((s) => s.notes.some((x) => x.text.startsWith('Upshernish')));
+  assert.ok(slot && slot.date >= '2026-10-25' && slot.date <= '2026-10-31');
+  const list = (await call('GET', '/admin/api/kiddush/notes', undefined, { headers: await adminLogin() })).json.notes;
+  assert.equal(list.find((x) => x.text.startsWith('Upshernish')).fromFile, true);
 });
