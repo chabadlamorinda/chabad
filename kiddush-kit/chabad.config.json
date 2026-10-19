@@ -11,12 +11,12 @@
   },
 
   "location": {
-    "_help": "timezone: a name like America/New_York, America/Chicago, America/Denver, America/Los_Angeles, Europe/London. zip: US zip code, used for candle lighting and Havdalah times on the TV. Outside the US leave zip empty and use geonameid (find your city at geonames.org). Candle lighting is 18 minutes before sunset; Havdalah 40 minutes after (change these to match the times your community / Chabad.org shows; compare one week to check).",
+    "_help": "timezone: a name like America/New_York, America/Chicago, America/Denver, America/Los_Angeles, Europe/London. zip: US zip code, used for candle lighting and Havdalah times on the TV. Outside the US leave zip empty and use geonameid (find your city at geonames.org). Candle lighting is 18 minutes before sunset. Shabbat/Yom Tov ends when the sun is 8.5 degrees below the horizon, so the time follows the seasons by itself (leave havdalahMinutesAfterSunset as null; put a number such as 40 only if you want a fixed number of minutes after sunset). Compare one week with your website or Chabad.org to check.",
     "timezone": "America/New_York",
     "zip": "10001",
     "geonameid": null,
     "candleLightingMinutesBeforeSunset": 18,
-    "havdalahMinutesAfterSunset": 40
+    "havdalahMinutesAfterSunset": null
   },
 
   "contact": {

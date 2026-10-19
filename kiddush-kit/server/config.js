@@ -33,7 +33,9 @@ function loadConfig(raw) {
   let hebcalQuery = '';
   if (/^\d{5}$/.test(zip)) hebcalQuery = 'zip=' + zip;
   else if (Number.isInteger(geo) && geo > 0) hebcalQuery = 'geonameid=' + geo;
-  if (hebcalQuery) hebcalQuery += '&b=' + Math.min(Math.max(Math.round(num(loc.candleLightingMinutesBeforeSunset, 18)), 0), 90) + '&m=' + Math.min(Math.max(Math.round(num(loc.havdalahMinutesAfterSunset, 40)), 0), 120);
+  // Havdalah: by default when the sun is 8.5 degrees below the horizon (it follows the seasons). Set location.havdalahMinutesAfterSunset to a number to use a fixed number of minutes instead.
+  const hm = loc.havdalahMinutesAfterSunset;
+  if (hebcalQuery) hebcalQuery += '&b=' + Math.min(Math.max(Math.round(num(loc.candleLightingMinutesBeforeSunset, 18)), 0), 90) + (hm !== null && hm !== undefined && hm !== '' && Number.isFinite(Number(hm)) ? '&m=' + Math.min(Math.max(Math.round(Number(hm)), 1), 120) : '');
 
   const venmoHandle = str(venmo.handle, 60).replace(/^@/, '');
   return {
