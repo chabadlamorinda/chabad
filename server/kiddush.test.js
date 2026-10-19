@@ -497,6 +497,7 @@ test('share address: settings accept an https address with a path for the TV/QR 
   assert.equal((await board()).settings.shareUrl, 'https://www.example.org/kiddush');
   for (const bad of ['http://www.example.org/kiddush', 'https://x.org/a b', 'javascript:alert(1)', 'https://x.org/?a=1']) assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: bad }, h)).status, 400, bad);
   assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: '' }, h)).status, 200);
+  assert.equal((await board()).settings.shareUrl, 'https://chabadoflamorinda.com/kiddush', 'blank falls back to the shul website address');
 });
 
 test('notes kept in the code file show on the board like staff notes (and cannot be deleted from the staff page)', async () => {
