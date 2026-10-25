@@ -66,5 +66,7 @@ services:
         sync: false
       - key: INDEXNOW_KEY             # any random 32-letter code; tells Bing and others about new pages instantly
         generateValue: true
+      - key: ANTHROPIC_API_KEY        # turns on Claude answers in the "Ask us" chat (cheapest model, Claude Haiku 5.5)
+        sync: false
       - key: ADMIN_EMAIL              # where "someone sent a Mazal Tov / idea" notices go (default: the site's email)
         sync: false

@@ -2,7 +2,7 @@
 // visitor's language, from the website's own content (programs, times, events, guides, help pages, forms).
 //
 // * With ANTHROPIC_API_KEY set: Claude answers (streamed word by word). The site's knowledge is sent as a cached
-//   system prompt, so each question costs about a cent. CHAT_MODEL picks the model (default claude-opus-5-5).
+//   system prompt. It always uses the cheapest Claude model (Claude Haiku 5.5): a fraction of a cent per question.
 // * Without a key: a simple search answers with the best matching pages and the phone number, so the box still helps.
 // Every question (only the question text and language, no names or addresses) is kept so the Rabbi can see what
 // people ask; "Send this conversation to the Rabbi" hands off to a private message.
@@ -90,7 +90,7 @@ function searchAnswer(C, question, t) {
 function mountChat(app, { env = process.env, client: injected, content, ctxOf, limit, store, log = console }) {
   let client = injected || null;
   if (!client && env.ANTHROPIC_API_KEY) { const m = require('@anthropic-ai/sdk'); const Anthropic = m.default || m; client = new Anthropic(); }
-  const model = env.CHAT_MODEL || 'claude-opus-5-5';
+  const model = 'claude-haiku-5-5'; // the Rabbi asked for the cheapest model, always
   const pool = store && store.pool;
   let cached = { src: null, text: '' };
   const kb = () => { const C = content(); if (cached.src !== C) cached = { src: C, text: knowledge(C) }; return cached.text; };
@@ -123,9 +123,9 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
     const controller = new AbortController();
     res.on('close', () => controller.abort());
     try {
-      const stream = client.beta.messages.stream({
+      // Haiku has no server-side refusal fallback; a refusal is answered below with the Rabbi's phone number.
+      const stream = client.messages.stream({
         model, max_tokens: 4000,
-        betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default',
         output_config: { effort: 'low' },
         system: [
           { type: 'text', text: RULES.replace(/\{PHONE\}/g, C.org.phone) + '\n\nWEBSITE KNOWLEDGE\n\n' + kb(), cache_control: { type: 'ephemeral' } },

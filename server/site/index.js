@@ -10,7 +10,7 @@
 //   GOOGLE_SITE_VERIFICATION, BING_SITE_VERIFICATION   ownership tags for Google Search Console / Bing Webmaster Tools
 //   INDEXNOW_KEY    tells Bing (which powers ChatGPT search), Yandex and others about new pages right away
 //   ADMIN_EMAIL     where "new submission" notices go (default: the site's email)
-//   ANTHROPIC_API_KEY  turns on Claude answers in the "Ask us" chat (CHAT_MODEL to choose the model); without it the chat searches the site
+//   ANTHROPIC_API_KEY  turns on Claude answers in the "Ask us" chat (always the cheapest model, Claude Haiku 5.5); without it the chat searches the site
 // Languages: every page is also served at /he/... (Hebrew, right to left) and /ru/... (Russian); see i18n.js.
 'use strict';
 const express = require('express');

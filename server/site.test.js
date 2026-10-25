@@ -22,11 +22,11 @@ test.before(async () => {
   const facebook = { instagram: true, photos: async () => [{ src: 'https://scontent.xx.fbcdn.net/a.jpg', alt: 'Menorah lighting', link: 'https://facebook.com/p/1' }],
     publish: async (p) => { fbPosts.push(['facebook', p]); return 'page_post_1'; }, publishInstagram: async (p) => { if (!p.image) throw new Error('Instagram posts need a picture'); fbPosts.push(['instagram', p]); return 'ig_1'; } };
   // A stand-in for Claude: records the request and streams a short answer.
-  const chatClient = { beta: { messages: { stream: (params) => {
+  const chatClient = { messages: { stream: (params) => {
     chatCalls.push(params);
     const text = 'Shabbat services are Saturday at 10 AM. See [Shabbat times](/shabbat).';
     return { async *[Symbol.asyncIterator]() { for (const w of text.match(/.{1,12}/g)) yield { type: 'content_block_delta', delta: { type: 'text_delta', text: w } }; }, finalMessage: async () => ({ stop_reason: 'end_turn' }) };
-  } } } };
+  } } };
   const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook, chatClient,
     mailer: { send: async (m) => { mails.push(m); } } });
   theApp = app;
@@ -366,7 +366,7 @@ test('chat: answers from the site with Claude, in the visitor language, and logs
   const ev = readSse(await r.text());
   assert.equal(ev.filter((e) => e.text).map((e) => e.text).join(''), 'Shabbat services are Saturday at 10 AM. See [Shabbat times](/shabbat).'); assert.ok(ev.some((e) => e.done));
   const p = chatCalls[chatCalls.length - 1];
-  assert.equal(p.model, 'claude-opus-5-5'); assert.equal(p.fallbacks, 'default'); assert.deepEqual(p.betas, ['server-side-fallback-2026-07-01']);
+  assert.equal(p.model, 'claude-haiku-5-5', 'always the cheapest model'); assert.deepEqual(p.output_config, { effort: 'low' });
   assert.equal(p.messages[0].role, 'user', 'conversation starts with the visitor');
   assert.deepEqual(p.system[0].cache_control, { type: 'ephemeral' }); assert.match(p.system[0].text, /WEBSITE KNOWLEDGE/); assert.match(p.system[0].text, /Lamorinda Hebrew School/); assert.match(p.system[0].text, /Walnut Creek, Concord, Alamo/);
   assert.match(p.system[1].text, /Hebrew version/); assert.match(p.system[1].text, /kabbalat-shabbat-and-dinner-2026-10-30/);

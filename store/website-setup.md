@@ -37,7 +37,10 @@ Boosting a post (paid promotion) is done in Facebook's Meta Business Suite.
 * **Google Ad Grants** ($10,000/month of free search ads, which you already have): the full campaign plan, with keywords and the page for each, is in [`store/google-ad-grants.md`](google-ad-grants.md).
 * Events already carry Google's Event markup, so they can appear in Google's event listings once the site is indexed.
 
-## 4. Launch day (moving chabadoflamorinda.com over)
+## 4. The "Ask us" chat
+Create an API key at console.anthropic.com (Settings → API keys), add billing, and put the key in Render as **ANTHROPIC_API_KEY**. The chat always uses the cheapest Claude model (Claude Haiku 5.5), so each question costs a small fraction of a cent. Without a key, the chat still answers with matching pages from the site and the phone number.
+
+## 5. Launch day (moving chabadoflamorinda.com over)
 Do this only when everything above is working and the content is approved.
 1. Render → chabad-lamorinda-app → **Settings → Custom Domains**: add `www.chabadoflamorinda.com` and `chabadoflamorinda.com`.
 2. At the domain's DNS (ask Chabad.org if they manage it): point `www` (CNAME) and the root (A/ALIAS) to the targets Render shows. Email (MX records) is not touched.
