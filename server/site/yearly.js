@@ -47,7 +47,7 @@ async function holidaysOf(year) {
   return out.sort((a, b) => a.date.localeCompare(b.date));
 }
 
-function mountYearly(r, { render, wrap, ctxOf, base }) {
+function mountYearly(r, { render, wrap, ctxOf, base, upcoming = () => [] }) {
   const thisYear = () => Z.todayLocal().getFullYear();
   r.get('/jewish-holidays', (req, res) => res.redirect(302, ctxOf(req).path('/jewish-holidays-' + thisYear())));
   r.get('/jewish-holidays-:year', wrap(async (req, res, next) => {
@@ -92,8 +92,31 @@ function mountYearly(r, { render, wrap, ctxOf, base }) {
 <p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/forms/shabbat-meal">${esc(t('Shabbat dinner with the Rabbi'))}</a><a class="btn ghost" href="/learn/shabbat-candles">${esc(t('How to light Shabbat candles'))}</a></p></section>`;
     await render(res, { path, title: t('Shabbat times {town}: candle lighting and Havdalah', { town: name }), description: t('Shabbat candle lighting and Havdalah times for {town}, CA for the next twelve months, from Chabad of Lamorinda in Lafayette.', { town: name }), body });
   });
+  // This week in Jewish Lamorinda: a page that renews itself every week (fresh content, easy to share).
+  r.get('/this-week', wrap(async (req, res) => {
+    const X = ctxOf(req), t = X.t, C = X.C, today = Z.todayLocal(), end = new Date(today); end.setDate(end.getDate() + 7);
+    const { portionsOf } = require('./parsha.js');
+    const towns = await Promise.all(C.towns.map(async (tw) => [tw, await Z.thisShabbat(new Date(), { lat: tw.lat, lng: tw.lng, name: tw.slug })]));
+    const sh = towns.length ? towns[0][1] : await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [];
+    const cal = (await Z.events(today, end)).filter((e) => !['candles', 'havdalah', 'parashat'].includes(e.cat) && !/^(Chanukah: \d|Omer)/.test(e.desc) || /Chanukah: 1 Candle/.test(e.desc));
+    const evs = upcoming(new Date(), C).filter((e) => e.start.slice(0, 10) <= Z.ymd(end));
+    const L = (p) => p[X.lang] || p.en, guide = C.learn.length ? C.learn[Math.floor(Date.now() / (7 * 864e5)) % C.learn.length] : null;
+    const body = `<section class="wrap sec narrow"><h1>${esc(t('This week in Jewish Lamorinda'))}</h1>
+<p class="lead-d">${esc(t('Shabbat times, the Torah portion, events and Jewish dates for Lafayette, Moraga, Orinda and nearby, updated every week.'))}</p>
+<h2>${esc(t('Shabbat'))}${sh.parsha ? ': ' + esc(X.hc(sh.parsha)) : ''}</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>${esc(t('Town'))}</th><th>${esc(t('Candle lighting'))}</th><th>${esc(t('Ends'))}</th></tr></thead><tbody>${towns.map(([tw, s]) => `<tr><td><a href="/jewish-${tw.slug}">${esc(tw.name)}</a></td><td><strong>${s.candles ? esc(X.tm(s.candles)) : ''}</strong>${s.candles ? ` <span class="muted">${esc(X.shortDate(s.candles.date))}</span>` : ''}</td><td>${s.havdalah ? esc(X.tm(s.havdalah)) : ''}</td></tr>`).join('')}</tbody></table></div>
+${ps.map((p) => `<div class="card"><h3><a href="/parsha">${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}</a></h3><p>${esc(L(p).summary)}</p><p><strong>${esc(t('A lesson for today'))}:</strong> ${esc(L(p).lesson)}</p></div>`).join('')}
+<p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/forms/shabbat-meal">${esc(t('Shabbat dinner with the Rabbi'))}</a></p>
+<h2>${esc(t('Coming up at Chabad of Lamorinda'))}</h2>
+${evs.length ? `<ul class="list">${evs.map((e) => `<li><a href="/events/${e.slug}"><strong>${esc(e.title)}</strong></a><br><span class="muted">${esc(X.when(e))}</span></li>`).join('')}</ul>` : ''}
+<ul class="list">${C.org.weekly.map((w) => `<li><strong>${esc(w.day)}</strong>: ${w.link ? `<a href="${esc(w.link)}">${esc(w.name)}</a>` : esc(w.name)} <span class="muted">${esc(w.time)}</span></li>`).join('')}</ul>
+${cal.length ? `<h2>${esc(t('Jewish dates this week'))}</h2><ul class="list">${cal.map((e) => `<li><strong>${esc(X.shortDate(e.date))}</strong>: ${esc(X.hc(e))}</li>`).join('')}</ul>` : ''}
+${guide ? `<h2>${esc(t('Guide of the week'))}</h2><a class="card tile" href="/learn/${guide.slug}"><h3>${esc(guide.title)}</h3><p>${esc(guide.description)}</p></a>` : ''}
+<p class="btns"><a class="btn ghost" href="/forms/newsletter">${esc(t('Get it by email every week'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory'))}</a><a class="btn ghost" href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a></p></section>`;
+    await render(res, { path: '/this-week', title: t('This week in Jewish Lamorinda: Shabbat times, parsha and events'), description: t('This week\'s Shabbat candle lighting in Lafayette, Moraga and Orinda, the Torah portion, Jewish dates and events at Chabad of Lamorinda.'), body });
+  }));
   r.get('/shabbat-times', timesPage('lafayette'));
   r.get('/shabbat-times/:town', timesPage(null));
-  return { paths: (C) => ['/shabbat-times', ...C.towns.filter((x) => x.slug !== 'lafayette').map((x) => '/shabbat-times/' + x.slug), '/jewish-holidays-' + thisYear(), '/jewish-holidays-' + (thisYear() + 1)] };
+  return { paths: (C) => ['/this-week', '/shabbat-times', ...C.towns.filter((x) => x.slug !== 'lafayette').map((x) => '/shabbat-times/' + x.slug), '/jewish-holidays-' + thisYear(), '/jewish-holidays-' + (thisYear() + 1)] };
 }
 module.exports = { mountYearly, holidaysOf };

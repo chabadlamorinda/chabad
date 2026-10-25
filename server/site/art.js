@@ -60,7 +60,7 @@ function artForPath(p, title = '') {
   const t = /^\/jewish-([a-z-]+)$/.exec(p);
   if (t && t[1] !== 'lamorinda') return artFor('town', t[1]);
   const PAGES = { '/tools/zmanim': 'clock', '/daily-study': 'scroll-quill', '/parsha': 'torah-scroll', '/calendar': 'calendar', '/ask': 'chat-bubble', '/tools/hebrew-birthday': 'gift', '/tools/hebrew-date': 'calendar', '/tools/yahrzeit': 'broken-heart-candle', '/tools/bar-bat-mitzvah': 'torah-scroll',
-    '/kaddish': 'broken-heart-candle', '/tehillim': 'open-book', '/sponsor': 'kiddush-cup', '/donate': 'pushka', '/account': 'family', '/community': 'chat-bubble', '/get-involved': 'hands-heart', '/shabbat': 'shabbat-candles',
+    '/kaddish': 'broken-heart-candle', '/this-week': 'calendar', '/tehillim': 'open-book', '/sponsor': 'kiddush-cup', '/donate': 'pushka', '/account': 'family', '/community': 'chat-bubble', '/get-involved': 'hands-heart', '/shabbat': 'shabbat-candles',
     '/events': 'calendar', '/holidays': 'menorah', '/programs': 'school', '/learn': 'open-book', '/help': 'hands-heart', '/our-area': 'map-pin', '/jewish-lamorinda': 'star-of-david', '/photos': 'sparkles', '/forms': 'envelope', '/welcome': 'house', '/about': 'synagogue', '/contact': 'phone', '/faq': 'chat-bubble' };
   const name = PAGES[p];
   return name && exists(name) ? name : '';
