@@ -4,9 +4,12 @@
 'use strict';
 const { load } = require('../server/site/content.js');
 const { createFacebook, draftMessage, eventImage } = require('../server/site/facebook.js');
-const { when } = require('../server/site/pages.js');
+const { makeCtx } = require('../server/site/ctx.js');
+const { createI18n } = require('../server/site/i18n.js');
+const { DIR } = require('../server/site/content.js');
 
 const slug = process.argv[2], C = load();
+const when = makeCtx({ content: () => C, i18n: createI18n(DIR) })({ lang: 'en' }).when;
 const e = C.events.find((x) => x.slug === slug && x.published);
 if (!e) { console.error('No published event with slug "' + slug + '".'); process.exit(1); }
 const base = (process.env.PUBLIC_URL || 'https://www.chabadoflamorinda.com').replace(/\/+$/, '');

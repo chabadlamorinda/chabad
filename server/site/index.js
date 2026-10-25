@@ -10,6 +10,7 @@
 //   GOOGLE_SITE_VERIFICATION, BING_SITE_VERIFICATION   ownership tags for Google Search Console / Bing Webmaster Tools
 //   INDEXNOW_KEY    tells Bing (which powers ChatGPT search), Yandex and others about new pages right away
 //   ADMIN_EMAIL     where "new submission" notices go (default: the site's email)
+// Languages: every page is also served at /he/... (Hebrew, right to left) and /ru/... (Russian); see i18n.js.
 'use strict';
 const express = require('express');
 const { load } = require('./content.js');
@@ -23,6 +24,10 @@ const { mountBoard } = require('./board.js');
 const { mountSocialAdmin } = require('./social.js');
 const { createReminders } = require('./reminders.js');
 const { esc } = require('./md.js');
+const { createI18n, LANGS, withLang } = require('./i18n.js');
+const { makeCtx } = require('./ctx.js');
+const { mountLife } = require('./life.js');
+const { DIR } = require('./content.js');
 
 function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch }) {
   const base = (env.PUBLIC_URL || 'https://www.chabadoflamorinda.com').replace(/\/+$/, '');
@@ -34,14 +39,30 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const indexNowKey = env.INDEXNOW_KEY ? require('crypto').createHash('sha256').update(env.INDEXNOW_KEY).digest('hex').slice(0, 32) : '';
   let data = load(contentDir); // throws with a clear list if a content file is wrong
   const content = () => data;
+  const i18n = createI18n(contentDir || DIR), ctxOf = makeCtx({ content, i18n });
+  const langOf = (req) => (LANGS.includes(req.get('x-lang')) ? req.get('x-lang') : 'en');
+  const tOf = (req) => i18n.makeT(langOf(req));
+
+  // /he/... and /ru/...: remember the language and route the rest of the address as usual.
+  app.use((req, res, next) => {
+    const m = /^\/(he|ru)(?=\/|$|\?)/.exec(req.url);
+    if (m) { req.lang = m[1]; req.url = req.url.slice(3) || '/'; if (req.url[0] !== '/') req.url = '/' + req.url; }
+    next();
+  });
+  // The language buttons: /lang/he?to=/events saves the choice for a year and opens the page in that language.
+  app.get('/lang/:l', (req, res, next) => {
+    if (!LANGS.includes(req.params.l)) return next();
+    const to = /^\/[^/\\]/.test(String(req.query.to || '')) || req.query.to === '/' ? String(req.query.to) : '/';
+    res.setHeader('Set-Cookie', `lang=${req.params.l}; Path=/; Max-Age=${365 * 86400}; SameSite=Lax${/^https:/.test(base) ? '; Secure' : ''}`);
+    res.redirect(302, withLang(req.params.l, to));
+  });
   const fb = facebook !== undefined ? facebook : createFacebook({ pageId: env.FB_PAGE_ID, token: env.FB_PAGE_TOKEN, igUserId: env.IG_USER_ID, base, log });
 
   // The site's own security policy: our scripts only (plus Google's tag if GA_ID is set), images from Facebook's CDN.
   const gtag = analytics.ga ? ' https://www.googletagmanager.com' : '';
   const csp = ["default-src 'self'", `script-src 'self'${gtag}`, "style-src 'self' 'unsafe-inline'", "img-src 'self' data: https://*.fbcdn.net https://w2.chabad.org" + (analytics.ga ? ' https://www.google-analytics.com https://www.googletagmanager.com' : ''),
     "connect-src 'self'" + (analytics.ga ? ' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com' : ''), "font-src 'self'", "frame-src 'self'", "object-src 'none'", "base-uri 'self'", "form-action 'self'", "frame-ancestors 'none'"].join('; ');
-  const SITE_PATHS = /^\/(?:$|home$|events|shabbat|holidays|programs|jewish-|learn|photos|tools\/|account|assets\/|media\/|robots\.txt|sitemap\.xml|llms|feed\.xml|site\.webmanifest|[a-z0-9-]+(\.txt)?$)/;
-  app.use((req, res, next) => { if (SITE_PATHS.test(req.path)) res.setHeader('Content-Security-Policy', csp); next(); });
+  app.use((req, res, next) => { if (!/^\/(?:pushka|kiddush|board|admin|api)(?:\/|$)/.test(req.path)) res.setHeader('Content-Security-Policy', csp); next(); });
 
   // Old Chabad.org addresses (/3186196, /templates/.../aid/3186196/..., /article.asp?aid=3186196) keep working.
   app.use((req, res, next) => {
@@ -50,16 +71,17 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     const to = R[req.path.replace(/\/+$/, '') || '/'] || (aid && R['/' + aid]);
     return to ? res.redirect(301, to) : next();
   });
-  const community = mountCommunity(app, { store, mailer, secret, base, limit, log, content });
+  const community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf });
   // pushka.* and kiddush.* addresses keep opening their apps.
   const isHome = (req) => !/^(pushka|kiddush)\./i.test(req.hostname) && (siteHome || req.hostname.replace(/^www\./, '') === host);
-  const pages = mountPages(app, { content, base, indexable, isHome, analytics, rsvpCounts: community.counts, photos: fb ? fb.photos : null });
+  const pages = mountPages(app, { content, base, indexable, isHome, analytics, ctxOf, rsvpCounts: community.counts, photos: fb ? fb.photos : null });
   const r = express.Router();
   const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
   mountSeo(r, { content, base, indexable, upcoming: pages.upcoming });
-  mountTools(r, { render: pages.render, wrap });
-  mountLocal(r, { content, base, wrap, ...pages });
-  const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '' });
+  mountTools(r, { render: pages.render, wrap, ctxOf });
+  mountLocal(r, { content, base, wrap, ctxOf, ...pages });
+  const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });
+  mountLife(r, { render: pages.render, wrap, ctxOf, faqHtml: pages.faqHtml, faqLd: pages.faqLd, crumbs: pages.crumbs, base, prayerList: board.prayerList });
   pages.setNews(board.approved);
   if (indexNowKey) {
     r.get('/' + indexNowKey + '.txt', (req, res) => res.type('text').send(indexNowKey));
@@ -69,24 +91,27 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
         .then((x) => { if (!x.ok && x.status !== 202) log.error('IndexNow: HTTP ' + x.status); }, (e) => log.error('IndexNow:', e && e.message));
     }, 30e3).unref();
   }
-  const mail = createReminders({ store, mailer, base, org: data.org, log });
+  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n });
   if (reminders && mail) mail.start();
   // Account page: the form is drawn by site.js from /api/site/me.
   r.get('/account', wrap(async (req, res) => {
-    await pages.render(res, { path: '/account', noindex: true, title: 'My account', description: 'Your family, yahrzeits, birthdays and RSVPs at Chabad of Lamorinda.',
-      body: `<section class="wrap sec narrow"><h1>My account</h1><div id="account" class="account"><p class="muted">Loading…</p></div>
-<noscript><p>Please turn on JavaScript to sign in, or email <a href="mailto:${esc(data.org.email)}">${esc(data.org.email)}</a>.</p></noscript></section>` });
+    const X = ctxOf(req), t = X.t;
+    await pages.render(res, { path: '/account', noindex: true, title: t('My account'), description: t('Your family, yahrzeits, birthdays and RSVPs at Chabad of Lamorinda.'),
+      body: `<section class="wrap sec narrow"><h1>${esc(t('My account'))}</h1><div id="account" class="account"><p class="muted">${esc(t('Loading…'))}</p></div>
+<noscript><p>${esc(t('Please turn on JavaScript to sign in, or email us:'))} <a href="mailto:${esc(data.org.email)}">${esc(data.org.email)}</a></p></noscript></section>` });
   }));
   r.get('/donate', (req, res) => res.redirect(302, data.org.donateUrl || '/pushka/'));
   app.use(r);
+  app.get('/:slug', pages.pagesRoute); // about, contact, privacy... (after every specific page)
 
   // Site pages that do not exist get a friendly page instead of a bare "Not found".
   const notFound = (req, res, next) => {
     if (req.method !== 'GET' || !req.accepts('html') || /^\/(api|admin|pushka|kiddush|board)\b/.test(req.path)) return next();
-    pages.render(res, { path: req.path, noindex: true, title: 'Page not found', body: '<section class="wrap sec narrow"><h1>We could not find that page</h1><p>It may have moved. Try the <a href="/events">events calendar</a>, <a href="/shabbat">Shabbat times</a> or the <a href="/">home page</a>.</p></section>' }, 404).catch(next);
+    const t = ctxOf(req).t;
+    pages.render(res, { path: req.path, noindex: true, title: t('Page not found'), body: `<section class="wrap sec narrow"><h1>${esc(t('We could not find that page'))}</h1><p>${esc(t('It may have moved. Try these:'))} <a href="/events">${esc(t('Events calendar'))}</a> · <a href="/shabbat">${esc(t('Shabbat times'))}</a> · <a href="/">${esc(t('Home'))}</a></p></section>` }, 404).catch(next);
   };
   return {
-    content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail,
+    content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
     reload() { data = load(contentDir); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {

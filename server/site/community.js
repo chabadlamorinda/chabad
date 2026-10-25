@@ -21,6 +21,7 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS birth_after_sunset BOOLEAN NOT NULL
 ALTER TABLE members ADD COLUMN IF NOT EXISTS anniversary DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS news BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ;
+ALTER TABLE members ADD COLUMN IF NOT EXISTS lang TEXT NOT NULL DEFAULT 'en';
 ALTER TABLE yahrzeits ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'app';
 CREATE TABLE IF NOT EXISTS login_codes (
   email TEXT PRIMARY KEY, code_hash TEXT NOT NULL, link_hash TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, attempts INT NOT NULL DEFAULT 0
@@ -70,6 +71,7 @@ function communityStore(store) {
       return true;
     },
     // One account per email; the oldest record wins if the app created duplicates.
+    setLang: (id, lang) => q('UPDATE members SET lang=$2 WHERE id=$1', [id, ['en', 'he', 'ru'].includes(lang) ? lang : 'en']),
     async memberForEmail(email) {
       const m = await one('SELECT * FROM members WHERE lower(email)=$1 ORDER BY created_at LIMIT 1', [email]);
       if (m) { await q('UPDATE members SET last_login=now() WHERE id=$1', [m.id]); return m.id; }
@@ -144,7 +146,7 @@ function sanitizeYahrzeits(list) {
   return out;
 }
 
-function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date() }) {
+function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en' }) {
   const cs = store ? communityStore(store) : null;
   const mac = (s) => crypto.createHmac('sha256', secret + ':site-member').update(s).digest('base64url');
   const issue = (id) => { const exp = String(Date.now() + TTL_DAYS * 864e5); return `${id}.${exp}.${mac(id + '.' + exp)}`; };
@@ -163,11 +165,11 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   r.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
   // Writes must come from our own pages (a custom header cannot be sent cross-site without CORS).
   r.use((req, res, next) => (req.method === 'GET' || req.get('x-site') === '1' ? next() : res.status(403).json({ code: 'forbidden', error: 'Forbidden.' })));
-  const need = (req, res, next) => (cs ? next() : res.status(503).json({ code: 'not_configured', error: 'Accounts are not switched on yet. Please email or call us.' }));
-  const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch((e) => { log.error('site error:', e && e.message); res.status(500).json({ code: 'server_error', error: 'Something went wrong. Please try again.' }); });
+  const need = (req, res, next) => (cs ? next() : res.status(503).json({ code: 'not_configured', error: tOf(req)('Accounts are not switched on yet. Please email or call us.') }));
+  const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch((e) => { log.error('site error:', e && e.message); res.status(500).json({ code: 'server_error', error: tOf(req)('Something went wrong. Please try again.') }); });
   const authed = wrap(async (req, res, next) => {
     const id = readCookie(req), m = id && await store.getMember(id);
-    if (!m) return res.status(401).json({ code: 'unauthorized', error: 'Please sign in.' });
+    if (!m) return res.status(401).json({ code: 'unauthorized', error: tOf(req)('Please sign in.') });
     req.member = m; next();
   });
   const bad = (res, code, error) => res.status(400).json({ code, error });
@@ -176,18 +178,20 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
 
   r.post('/login', need, limit('site-login', 20, 15 * 60 * 1000), wrap(async (req, res) => {
     const email = clean(req.body && req.body.email, 254).toLowerCase();
-    if (!validEmail(email)) return bad(res, 'invalid_email', 'Please enter a valid email address.');
-    if (!mailer) return res.status(503).json({ code: 'not_configured', error: 'Email sign-in is not switched on yet.' });
+    if (!validEmail(email)) return bad(res, 'invalid_email', tOf(req)('Please enter a valid email address.'));
+    if (!mailer) return res.status(503).json({ code: 'not_configured', error: tOf(req)('Email sign-in is not switched on yet.') });
     const code = String(crypto.randomInt(0, 1e6)).padStart(6, '0'), link = crypto.randomBytes(24).toString('base64url');
     await cs.saveCode(email, code, link);
     const url = `${base}/account/verify?e=${encodeURIComponent(email)}&t=${link}`;
-    await mailer.send({ to: email, subject: `Your sign-in code: ${code}`, text: `Your Chabad of Lamorinda sign-in code is ${code}\n\nOr tap this link to sign in:\n${url}\n\nThe code works for ${CODE_MINUTES} minutes. If you did not ask for it, you can ignore this email.` });
+    const t = tOf(req), L = langOf(req), url2 = L === 'en' ? url : url + '&l=' + L;
+    await mailer.send({ to: email, subject: t('Your sign-in code: {code}', { code }), text: t('Your Chabad of Lamorinda sign-in code is {code}', { code }) + '\n\n' + t('Or tap this link to sign in:') + '\n' + url2 + '\n\n' + t('The code works for {n} minutes. If you did not ask for it, you can ignore this email.', { n: CODE_MINUTES }) });
     res.json({ ok: true });
   }));
   r.post('/verify', need, limit('site-verify', 12, 15 * 60 * 1000), wrap(async (req, res) => {
     const email = clean(req.body && req.body.email, 254).toLowerCase(), code = String((req.body && req.body.code) || '').replace(/\D/g, '');
-    if (!validEmail(email) || code.length !== 6 || !(await cs.useCode(email, { code }))) return bad(res, 'bad_code', 'That code is not right or has expired. Please try again.');
-    setCookie(res, await cs.memberForEmail(email)); res.json({ ok: true });
+    if (!validEmail(email) || code.length !== 6 || !(await cs.useCode(email, { code }))) return bad(res, 'bad_code', tOf(req)('That code is not right or has expired. Please try again.'));
+    const id = await cs.memberForEmail(email); await cs.setLang(id, langOf(req));
+    setCookie(res, id); res.json({ ok: true });
   }));
   r.post('/logout', (req, res) => { res.setHeader('Set-Cookie', `${COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure}`); res.json({ ok: true }); });
 
@@ -202,19 +206,19 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   }));
   r.put('/me', need, authed, wrap(async (req, res) => {
     const p = sanitizeProfile(req.body || {});
-    if (!p.name) return bad(res, 'invalid_name', 'Please enter your name.');
+    if (!p.name) return bad(res, 'invalid_name', tOf(req)('Please enter your name.'));
     await cs.updateProfile(req.member.id, p);
     if (typeof req.body.shareYahrzeits === 'boolean') await store.setShare(req.member.id, req.body.shareYahrzeits);
     res.json({ ok: true });
   }));
   r.put('/family', need, authed, wrap(async (req, res) => {
     const list = sanitizeFamily(req.body && req.body.family);
-    if (!list) return bad(res, 'invalid_family', 'Please give each family member a name.');
+    if (!list) return bad(res, 'invalid_family', tOf(req)('Please give each family member a name.'));
     await cs.replaceFamily(req.member.id, list); res.json({ ok: true, count: list.length });
   }));
   r.put('/yahrzeits', need, authed, wrap(async (req, res) => {
     const list = sanitizeYahrzeits(req.body && req.body.yahrzeits);
-    if (!list) return bad(res, 'invalid_yahrzeits', 'Please check the names and dates.');
+    if (!list) return bad(res, 'invalid_yahrzeits', tOf(req)('Please check the names and dates.'));
     await cs.replaceWebYahrzeits(req.member.id, list); res.json({ ok: true, count: list.length });
   }));
   r.delete('/me', need, authed, wrap(async (req, res) => { await store.deleteMember(req.member.id); res.setHeader('Set-Cookie', `${COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure}`); res.json({ ok: true }); }));
@@ -222,7 +226,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   // ----- RSVP: signed-in members tap once; guests fill in name and email -----
   const eventOf = (slug) => content().events.find((e) => e.slug === slug && e.published && e.rsvp);
   r.get('/rsvp/:slug', need, wrap(async (req, res) => {
-    const e = eventOf(req.params.slug); if (!e) return res.status(404).json({ code: 'not_found', error: 'Event not found.' });
+    const e = eventOf(req.params.slug); if (!e) return res.status(404).json({ code: 'not_found', error: tOf(req)('Event not found.') });
     const id = readCookie(req), m = id && await store.getMember(id);
     const mine = m ? await cs.rsvpFor(e.slug, m.email.toLowerCase()) : null, n = (await cs.counts())[e.slug] || 0;
     const fam = m ? await cs.family(m.id) : [];
@@ -230,18 +234,19 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
       suggest: m ? { adults: 1 + fam.filter((f) => f.relation === 'spouse').length, kids: fam.filter((f) => f.relation === 'child').length } : null });
   }));
   r.post('/rsvp/:slug', need, limit('site-rsvp', 20, 10 * 60 * 1000), wrap(async (req, res) => {
-    const e = eventOf(req.params.slug); if (!e) return res.status(404).json({ code: 'not_found', error: 'Event not found.' });
+    const e = eventOf(req.params.slug); if (!e) return res.status(404).json({ code: 'not_found', error: tOf(req)('Event not found.') });
     const b = req.body || {}, id = readCookie(req), m = id && await store.getMember(id);
     const adults = Math.trunc(Number(b.adults)), kids = Math.trunc(Number(b.kids || 0));
-    if (!(adults >= 0 && adults <= 30 && kids >= 0 && kids <= 30 && adults + kids >= 1)) return bad(res, 'invalid_count', 'Please choose how many people are coming.');
+    if (!(adults >= 0 && adults <= 30 && kids >= 0 && kids <= 30 && adults + kids >= 1)) return bad(res, 'invalid_count', tOf(req)('Please choose how many people are coming.'));
     const name = m && m.name ? m.name : clean(b.name, 100), email = (m ? m.email : clean(b.email, 254)).toLowerCase();
-    if (!name) return bad(res, 'invalid_name', 'Please enter your name.');
-    if (!validEmail(email)) return bad(res, 'invalid_email', 'Please enter a valid email address.');
+    if (!name) return bad(res, 'invalid_name', tOf(req)('Please enter your name.'));
+    if (!validEmail(email)) return bad(res, 'invalid_email', tOf(req)('Please enter a valid email address.'));
     const prev = await cs.rsvpFor(e.slug, email), n = (await cs.counts())[e.slug] || 0;
     const cap = e.rsvp.capacity;
-    if (cap && n - (prev ? prev.adults + prev.kids : 0) + adults + kids > cap) return res.status(409).json({ code: 'full', error: 'Sorry, there is not enough room left. Please contact us to join the waiting list.' });
+    if (cap && n - (prev ? prev.adults + prev.kids : 0) + adults + kids > cap) return res.status(409).json({ code: 'full', error: tOf(req)('Sorry, there is not enough room left. Please contact us to join the waiting list.') });
     await cs.upsertRsvp({ event: e.slug, memberId: m ? m.id : null, name, email, phone: m ? m.phone : clean(b.phone, 30), adults, kids, note: clean(b.note, 300) });
-    if (mailer) mailer.send({ to: email, subject: `You're coming: ${e.title}`, text: `Thank you, ${name}! We have you down for ${adults + kids} ${adults + kids === 1 ? 'person' : 'people'}.\n\n${e.title}\n${e.start.replace('T', ' ')}\n${base}/events/${e.slug}\n\nAdd it to your calendar: ${base}/events/${e.slug}.ics` }).catch((err) => log.error('rsvp email:', err && err.message));
+    const t = tOf(req), L = langOf(req), title = (L !== 'en' && e[L] && e[L].title) || e.title, page = base + (L === 'en' ? '' : '/' + L) + '/events/' + e.slug;
+    if (mailer) mailer.send({ to: email, subject: t("You're coming: {title}", { title }), text: t('Thank you, {name}! You are on the list. Number of people: {n}.', { name, n: adults + kids }) + `\n\n${title}\n${e.start.replace('T', ' ')}\n${page}\n\n` + t('Add it to your calendar:') + ` ${base}/events/${e.slug}.ics` }).catch((err) => log.error('rsvp email:', err && err.message));
     res.json({ ok: true, going: (await cs.counts())[e.slug] || 0 });
   }));
   r.delete('/rsvp/:slug', need, authed, wrap(async (req, res) => { await cs.cancelRsvp(req.params.slug, req.member.email.toLowerCase()); res.json({ ok: true }); }));
@@ -252,7 +257,9 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   app.get('/account/verify', wrap(async (req, res) => {
     const email = clean(req.query.e, 254).toLowerCase(), link = String(req.query.t || '');
     if (!cs || !validEmail(email) || link.length < 20 || !(await cs.useCode(email, { link }))) return res.redirect(302, '/account?expired=1');
-    setCookie(res, await cs.memberForEmail(email)); res.redirect(302, '/account');
+    const L = ['he', 'ru'].includes(req.query.l) ? req.query.l : 'en', id = await cs.memberForEmail(email);
+    if (L !== 'en') await cs.setLang(id, L);
+    setCookie(res, id); res.redirect(302, (L === 'en' ? '' : '/' + L) + '/account');
   }));
 
   const readMember = async (req) => { const id = cs && readCookie(req); return id ? store.getMember(id) : null; };

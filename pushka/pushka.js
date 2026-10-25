@@ -1065,7 +1065,12 @@ function mountBoard() {
 
 // ---------- start ----------
 applyLang();
-try { const go = new URLSearchParams(location.search).get("go"); if (go === "yahrzeit" || go === "club") { U.page = go; U.stack = [go === "club" ? "give" : "more"]; history.replaceState(null, "", location.pathname); } } catch (e) {}
+try {
+  const q = new URLSearchParams(location.search), go = q.get("go");
+  if (go === "yahrzeit" || go === "club") { U.page = go; U.stack = [go === "club" ? "give" : "more"]; history.replaceState(null, "", location.pathname); }
+  // From the website's "sponsor in honor / in memory" buttons: /pushka/?go=give&fund=general&amt=180&ded=In%20memory%20of...
+  else if (go === "give") { const f = q.get("fund"), a = parseFloat(q.get("amt")); Object.assign(U, { giveFund: FUNDS.some((x) => x.id === f) ? f : "general", giveAmt: a > 0 && a <= 100000 ? r2(a) : 36, freq: "once", dedication: String(q.get("ded") || "").slice(0, 80) }); U.page = "give"; U.stack = []; history.replaceState(null, "", location.pathname); }
+} catch (e) {}
 draw();
 if (S.bio) { showLock(); A.unlock(); }
 initPay(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500);

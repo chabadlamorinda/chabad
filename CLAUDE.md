@@ -46,6 +46,7 @@ Add an object to `site/content/events.json`:
 * `holiday` (a file name in `holidays/`) and `program` (a slug in `programs.json`) link the event onto those pages.
 * `rsvp`: `{}` for unlimited, `{ "capacity": N }` to cap it, `"kids": false` to hide the children counter. Leave `rsvp` out for no RSVP.
 * `"status": "draft"` hides an event until it is ready. Remove it to publish.
+* Translations: add `"he": { "title", "summary", "details", "price" }` and `"ru": { ... }` to every event (the site is in English, Hebrew and Russian).
 * Images: save flyers/photos into `site/media/` (JPG/PNG/PDF, keep images under ~400 KB; resize first).
 * Past events drop off the site automatically; leave them in the file.
 
@@ -59,6 +60,12 @@ Add an object to `site/content/events.json`:
 * The Rabbi is **Rabbi Yisroel Labkowski**; the Rebbetzin is **Tzipora Labkowski**. Phone 925-384-7242.
 * Write warmly and simply. Every Jew is welcome; no membership is required.
 * Keep `faq.json` growing: questions people actually type into Google or ask an AI ("Where can I hear the shofar in Lafayette?"). Answers should name the place, day and time.
+
+## Hebrew and Russian
+The whole site is in English, Hebrew (/he/...) and Russian (/ru/...); visitors get their phone's language automatically and can switch in the header.
+* Every content change needs the same change in `site/content/i18n/he/` and `site/content/i18n/ru/` (same file names; JSON files keep the same structure with text translated; Markdown keeps the same front matter keys).
+* New interface words in the code (`t('...')`): run `node scripts/i18n-strings.js` to refresh the list, then `node scripts/i18n-strings.js he` and `... ru` to see what is missing, and add those to `site/content/i18n/he.json` / `ru.json`.
+* `npm test` fails if a Hebrew or Russian translation is missing on the main pages.
 
 ## Local focus
 The site's area is Lafayette, Moraga and Orinda first (`"tier": "home"` in towns.json), then nearby towns (`"tier": "near"`). When writing any page, FAQ or event, name the towns ("for families in Lafayette, Moraga and Orinda"). To add a town, add it to towns.json with real facts only (neighborhoods, landmarks); its page, Shabbat times and questions are generated.

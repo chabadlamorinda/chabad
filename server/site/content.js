@@ -14,8 +14,8 @@ const LEARN_CATEGORIES = ['Shabbat & holidays', 'Jewish home', 'Kosher', 'Prayer
 const optJson = (dir, f, dflt) => (fs.existsSync(path.join(dir, f)) ? JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) : dflt);
 
 // A guide's "## Common questions" section becomes Q&A (shown as such and marked up for Google).
-function splitFaq(body) {
-  const i = body.search(/^## Common questions\s*$/m);
+function splitFaq(body, heading = 'Common questions') {
+  const i = body.search(new RegExp('^## ' + heading + '\\s*$', 'm'));
   if (i < 0) return { body, faq: [] };
   const faq = [], rest = body.slice(i).split('\n').slice(1).join('\n');
   for (const part of rest.split(/^### /m).slice(1)) { const [q, ...a] = part.split('\n'); if (q.trim() && a.join('\n').trim()) faq.push({ q: q.trim(), a: a.join('\n').trim() }); }
@@ -35,7 +35,8 @@ function withOffset(local) {
 function load(dir = DIR) {
   const rj = (f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
   const org = rj('org.json'), programs = rj('programs.json'), events = rj('events.json'), faq = rj('faq.json'), directory = rj('directory.json');
-  const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays'), learn = readPagesIn(dir, 'learn');
+  const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays'), learn = readPagesIn(dir, 'learn'), help = readPagesIn(dir, 'help');
+  const sponsor = optJson(dir, 'sponsor.json', { occasions: [], options: [] }), tehillim = optJson(dir, 'tehillim.json', { situations: [] });
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
   const errors = [];
   const need = (cond, msg) => { if (!cond) errors.push(msg); };
@@ -58,6 +59,9 @@ function load(dir = DIR) {
     if (e.rsvp) need(!e.rsvp.capacity || (Number.isInteger(e.rsvp.capacity) && e.rsvp.capacity > 0), `event ${e.slug}: rsvp.capacity must be a whole number`);
   }
   for (const f of faq) need(f.q && f.a, 'faq.json: every entry needs q and a');
+  for (const h of help) { uniq('help', h.slug); need(h.title && h.description, `help ${h.slug}: title and description are required`); }
+  for (const o of sponsor.occasions.concat(sponsor.options)) need(o.id && o.title, 'sponsor.json: every occasion and option needs id and title');
+  for (const x of tehillim.situations) need(x.id && x.title && Array.isArray(x.chapters) && x.chapters.every((n) => Number.isInteger(n) && n >= 1 && n <= 150), `tehillim.json ${x.id}: chapters must be numbers 1 to 150`);
   for (const t of towns) { uniq('town', t.slug); need(t.name && t.intro && Number.isFinite(t.lat) && Number.isFinite(t.lng) && ['home', 'near'].includes(t.tier), `town ${t.slug}: name, intro, lat, lng and tier (home or near) are required`); }
   for (const a of learn) { uniq('learn', a.slug); need(a.title && a.description, `learn ${a.slug}: title and description are required`); need(LEARN_CATEGORIES.includes(a.category), `learn ${a.slug}: category must be one of ${LEARN_CATEGORIES.join(', ')}`); }
   for (const [from, to] of Object.entries(redirects)) need(/^\/[^\s]*$/.test(from) && /^(\/|https?:\/\/)/.test(to), `redirects.json: "${from}" -> "${to}" must both be paths`);
@@ -77,7 +81,9 @@ function load(dir = DIR) {
     a.related = String(a.related || '').split(',').map((x) => x.trim()).filter((x) => learnSlugs.has(x) && x !== a.slug);
   }
   for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
-  return { org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, loadedAt: new Date() };
+  for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
+  help.sort((a, b) => a.order - b.order);
+  return { org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, loadedAt: new Date() };
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

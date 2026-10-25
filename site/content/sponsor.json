@@ -1,0 +1,95 @@
+{
+  "intro": "Mark a yahrzeit, a birthday, an anniversary, a new baby or a recovery the Jewish way: by sharing it with the community and giving in the merit of the person you love. Every sponsorship carries your dedication, and the Rabbi mentions it.",
+  "occasions": [
+    {
+      "id": "yahrzeit",
+      "title": "A yahrzeit",
+      "text": "Honor a loved one's memory and elevate their soul.",
+      "dedication": "In memory of {name}"
+    },
+    {
+      "id": "birthday",
+      "title": "A birthday",
+      "text": "Celebrate with the community. A birthday is a personal Rosh Hashanah.",
+      "dedication": "In honor of {name}'s birthday"
+    },
+    {
+      "id": "anniversary",
+      "title": "An anniversary",
+      "text": "Give thanks for the years together.",
+      "dedication": "In honor of {name}'s anniversary"
+    },
+    {
+      "id": "new-baby",
+      "title": "A new baby",
+      "text": "Welcome a new Jewish soul with joy.",
+      "dedication": "In honor of the birth of {name}"
+    },
+    {
+      "id": "bar-bat-mitzvah",
+      "title": "A bar or bat mitzvah",
+      "text": "Celebrate the milestone with the whole community.",
+      "dedication": "In honor of {name}'s bar/bat mitzvah"
+    },
+    {
+      "id": "refuah",
+      "title": "A recovery",
+      "text": "Pray for, or give thanks for, a complete recovery.",
+      "dedication": "For a complete recovery for {name}"
+    },
+    {
+      "id": "honor",
+      "title": "In honor of someone",
+      "text": "A parent, a teacher, a friend: anyone you want to honor.",
+      "dedication": "In honor of {name}"
+    }
+  ],
+  "options": [
+    {
+      "id": "kiddush",
+      "title": "Sponsor the Shabbat Kiddush",
+      "text": "The whole community celebrates with you after Shabbat services. Your dedication is announced and shown on the Kiddush board.",
+      "url": "/kiddush/"
+    },
+    {
+      "id": "shabbat-dinner",
+      "title": "Sponsor a Shabbat dinner",
+      "text": "Give the gift of a Shabbat table to families, students and newcomers.",
+      "fund": "general"
+    },
+    {
+      "id": "torah-class",
+      "title": "Sponsor a Torah class",
+      "text": "Dedicate a week of Torah learning in their merit.",
+      "fund": "general"
+    },
+    {
+      "id": "children",
+      "title": "Sponsor a children's program",
+      "text": "Hebrew School, CKids and holiday programs for children.",
+      "fund": "children"
+    },
+    {
+      "id": "preschool",
+      "title": "Preschool scholarship",
+      "text": "Help a child attend Lamorinda Jewish Preschool.",
+      "fund": "preschool"
+    },
+    {
+      "id": "holiday",
+      "title": "Sponsor a holiday program",
+      "text": "Chanukah, Purim, Passover and more for the whole community.",
+      "fund": "holidays"
+    },
+    {
+      "id": "tzedakah",
+      "title": "Give tzedakah in their merit",
+      "text": "Any amount, where it is needed most.",
+      "fund": "general"
+    }
+  ],
+  "kaddish": {
+    "amount": 0,
+    "fund": "general"
+  }
+}

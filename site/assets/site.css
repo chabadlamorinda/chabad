@@ -44,7 +44,7 @@ h3 { font-size: 1.2rem; }
 .menu summary span::before { position: absolute; top: -7px; } .menu summary span::after { position: absolute; top: 7px; }
 .menu nav { position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 16px 16px; display: grid; }
 .menu nav a { padding: 12px 8px; border-bottom: 1px solid var(--line); }
-@media (min-width: 1200px) { .nav-wide { display: flex; } .menu { display: none; } .hdr-cta { margin-left: 8px; } }
+@media (min-width: 1400px) { .nav-wide { display: flex; } .menu { display: none; } .hdr-cta { margin-inline-start: 8px; } }
 @media (max-width: 420px) { .brand span { font-size: 1rem; } .hdr-cta .ghost { display: none; } }
 
 /* buttons */
@@ -120,7 +120,7 @@ input[type=checkbox], input[type=radio] { width: 20px; min-height: 20px; }
 
 /* tables, Q&A, directory, photos */
 .tbl { width: 100%; border-collapse: collapse; margin: 12px 0; }
-.tbl th, .tbl td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tbl th, .tbl td { text-align: start; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .tbl th { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .qa { border-bottom: 1px solid var(--line); padding: 12px 0; }
 .qa summary { cursor: pointer; font-weight: 600; font-size: 1.05rem; }
@@ -131,7 +131,7 @@ input[type=checkbox], input[type=radio] { width: 20px; min-height: 20px; }
 .pics img { aspect-ratio: 1; object-fit: cover; border-radius: 10px; width: 100%; }
 .pics.big { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
 .list li { margin: 6px 0; }
-blockquote { border-left: 4px solid var(--gold); margin: 16px 0; padding: 4px 16px; color: var(--muted); }
+blockquote { border-inline-start: 4px solid var(--gold); margin: 16px 0; padding: 4px 16px; color: var(--muted); }
 .join-card { background: linear-gradient(135deg, var(--soft), var(--card)); }
 
 /* footer */
@@ -139,7 +139,7 @@ blockquote { border-left: 4px solid var(--gold); margin: 16px 0; padding: 4px 16
 .ftr a { color: #fff; text-decoration: none; display: block; padding: 3px 0; }
 .ftr a:hover { color: var(--gold-2); }
 .ftr p { margin: 4px 0; }
-.ftr .social a { display: inline-block; margin-right: 14px; }
+.ftr .social a { display: inline-block; margin-inline-end: 14px; }
 .ftr-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 .ftr-name { font: 600 1.2rem var(--serif); color: #fff; }
 .ftr-h { color: var(--gold-2); text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; font-weight: 700; }
@@ -159,4 +159,31 @@ blockquote { border-left: 4px solid var(--gold); margin: 16px 0; padding: 4px 16
 .post h2 { margin-top: 0; }
 textarea { font: inherit; }
 .nav-wide a, .hdr-cta a, .brand { white-space: nowrap; }
-@media (min-width: 1200px) and (max-width: 1320px) { .nav-wide a { padding: 8px 7px; font-size: .9rem; } }
+.brand { flex-shrink: 0; } nav.chips { margin: 16px 0; }
+
+/* languages */
+.langs { display: flex; gap: 2px; margin: 0; align-items: center; }
+.langs a { padding: 6px 8px; border-radius: 8px; font-size: .85rem; font-weight: 600; color: var(--muted); text-decoration: none; }
+.langs a[aria-current] { background: var(--soft); color: var(--ink); }
+.langs.wide { display: none; }
+@media (min-width: 700px) { .langs.wide { display: flex; } }
+.menu .langs { padding: 12px 8px; }
+[dir="rtl"] body { font-family: "Segoe UI", Arial, "Noto Sans Hebrew", system-ui, sans-serif; }
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { font-family: "Frank Ruhl Libre", "David", "Times New Roman", serif; }
+[dir="rtl"] .hero h1 { max-width: 18ch; }
+[dir="rtl"] .sec-h a::after, [dir="rtl"] a .arrow { display: inline-block; transform: scaleX(-1); }
+
+/* help, Kaddish, Tehillim, sponsor */
+.callbox { border-color: var(--gold); margin: 16px 0 24px; }
+.callbox.urgent { background: #fff6e0; border-color: #e0a800; }
+@media (prefers-color-scheme: dark) { .callbox.urgent { background: #2b2410; } }
+.btn.call { font-size: 1.1rem; }
+.chip.urgent { border-color: #e0a800; font-weight: 600; }
+.tile.urgent { border-color: #e0a800; }
+.help-band { background: var(--soft); }
+.tehillim { margin: 18px 0; }
+.tehillim h2 { margin-top: 0; }
+.chapters a { display: inline-block; min-width: 2.2em; text-align: center; padding: 2px 4px; }
+.occasion { margin: 24px 0; border-color: var(--gold); }
+.dedication { font-size: 1.1rem; }
+.give-next { margin-top: 12px; }

@@ -8,7 +8,21 @@
     "summary": "Welcome Shabbat with joyful singing, then stay for a traditional Shabbat dinner with the Rabbi's family.",
     "details": "Everyone is welcome: no membership, no Hebrew needed. Children are welcome too. Please RSVP so we can set a place for you.",
     "price": "Free (donations welcome)",
-    "rsvp": { "capacity": 40 }
+    "rsvp": {
+      "capacity": 40
+    },
+    "he": {
+      "title": "קבלת שבת וסעודת שבת",
+      "summary": "מקבלים את השבת בשירה שמחה, ונשארים לסעודת שבת מסורתית עם משפחת הרב.",
+      "details": "כולם מוזמנים: בלי חברות, בלי צורך לדעת עברית. ילדים מוזמנים גם כן. נא לאשר הגעה כדי שנשמור לכם מקום.",
+      "price": "ללא תשלום (תרומות יתקבלו בברכה)"
+    },
+    "ru": {
+      "title": "Каббалат Шабат и шабатняя трапеза",
+      "summary": "Встречаем Шабат радостными песнями, а потом остаёмся на традиционную шабатнюю трапезу с семьёй раввина.",
+      "details": "Приглашаются все: членство не нужно, знание иврита не нужно. Дети тоже приглашаются. Пожалуйста, зарегистрируйтесь, чтобы мы приготовили для вас место.",
+      "price": "Бесплатно (пожертвования приветствуются)"
+    }
   },
   {
     "slug": "chanukah-grand-menorah-lighting-2026",
@@ -21,6 +35,14 @@
     "summary": "Light up Lamorinda! Lighting of the grand menorah with music, latkes, donuts and fun for the kids.",
     "details": "DRAFT: confirm date, time and location before publishing.",
     "price": "Free",
-    "rsvp": {}
+    "rsvp": {},
+    "he": {
+      "title": "הדלקת החנוכייה הגדולה",
+      "summary": "מאירים את למורינדה! הדלקת החנוכייה הגדולה עם מוזיקה, לביבות, סופגניות והפעלות לילדים."
+    },
+    "ru": {
+      "title": "Зажигание большой ханукии",
+      "summary": "Осветим Ламоринду! Зажигание большой ханукии с музыкой, латкес, пончиками и развлечениями для детей."
+    }
   }
 ]

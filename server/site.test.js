@@ -12,7 +12,8 @@ const { md } = require('./site/md.js');
 
 const SECRET = 'a'.repeat(32), PW = 'correct horse battery';
 const env = { PUBLIC_URL: 'http://site.test', SITE_HOME: '1', SITE_INDEXABLE: '1' };
-let pg, store, server, base, mails, fbPosts;
+let pg, store, server, base, mails, fbPosts, theApp;
+const server_site = () => theApp.locals.site;
 
 test.before(async () => {
   pg = await startPg(); store = createStore(pg.url); await store.migrate();
@@ -21,6 +22,7 @@ test.before(async () => {
     publish: async (p) => { fbPosts.push(['facebook', p]); return 'page_post_1'; }, publishInstagram: async (p) => { if (!p.image) throw new Error('Instagram posts need a picture'); fbPosts.push(['instagram', p]); return 'ig_1'; } };
   const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook,
     mailer: { send: async (m) => { mails.push(m); } } });
+  theApp = app;
   server = await new Promise((r) => { const s = app.listen(0, () => r(s)); });
   base = 'http://127.0.0.1:' + server.address().port;
 });
@@ -226,7 +228,7 @@ test('community board: submit, moderate, then it appears', async () => {
   assert.equal((await g.call('POST', '/api/site/submit', { kind: 'mazal-tov', title: 'x', name: 'A', email: 'a@x.co' }, { 'x-site': '' })).status, 403);
   assert.equal((await g.call('POST', '/api/site/submit', { kind: 'nope', title: 'x', name: 'A', email: 'a@x.co' })).json.code, 'invalid_kind');
   assert.equal((await g.call('POST', '/api/site/submit', { kind: 'mazal-tov', title: 'Mazal Tov to the Levi family on the twins!', body: 'Welcome Noa!', name: 'Sara', email: 'sara@x.co' })).status, 200);
-  assert.match(mails[mails.length - 1].subject, /New on the website: Mazal Tov/);
+  assert.match(mails[mails.length - 1].subject, /^Mazal Tov: Mazal Tov to the Levi family/);
   assert.ok(!(await g.call('GET', '/community')).text.includes('Levi family on the twins'), 'not shown before approval');
   const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
   const item = (await a.call('GET', '/admin/api/site/submissions')).json.items[0];
@@ -251,4 +253,66 @@ test('reminder emails: yahrzeit a week and a day before, Hebrew birthday, never 
   assert.equal(await rem.run(), 0, 'each reminder is sent once'); assert.equal(out.length, n);
   const early = createReminders({ store, mailer: { send: async () => {} }, base: '', org: load().org, now: () => new Date(today + 'T14:00:00Z') });
   assert.equal(await early.run(), 0, 'not before 9 AM Lafayette time');
+});
+
+test('languages: Hebrew and Russian pages, automatic choice, switch, hreflang', async () => {
+  const c = client();
+  const he = await c.call('GET', '/he/');
+  assert.equal(he.status, 200); assert.match(he.text, /<html lang="he" dir="rtl">/);
+  assert.match(he.text, /hreflang="ru" href="http:\/\/site\.test\/ru"/); assert.match(he.text, /href="\/he\/events"/, 'internal links stay in Hebrew');
+  assert.match((await c.call('GET', '/ru/events')).text, /<html lang="ru" dir="ltr">/);
+  // The phone's language picks the version; search engines and a saved choice are never redirected.
+  const auto = await c.call('GET', '/events', undefined, { 'accept-language': 'he-IL,he;q=0.9,en;q=0.8' });
+  assert.equal(auto.status, 302); assert.equal(auto.headers.get('location'), '/he/events');
+  assert.equal((await c.call('GET', '/events', undefined, { 'accept-language': 'ru-RU,ru', 'user-agent': 'Mozilla/5.0 (compatible; Googlebot/2.1)' })).status, 200);
+  assert.equal((await c.call('GET', '/events', undefined, { 'accept-language': 'he', cookie: 'lang=en' })).status, 200);
+  const sw = await c.call('GET', '/lang/ru?to=%2Flearn%2Fmezuzah');
+  assert.equal(sw.status, 302); assert.equal(sw.headers.get('location'), '/ru/learn/mezuzah'); assert.match(sw.headers.get('set-cookie'), /^lang=ru;/);
+  assert.equal((await c.call('GET', '/lang/ru?to=%2F%2Fevil.com')).headers.get('location'), '/ru', 'no open redirect');
+  // Translated content.
+  assert.match((await c.call('GET', '/he/learn/mezuzah')).text, /מזוזה/);
+  assert.match((await c.call('GET', '/ru/learn/mezuzah')).text, /[Мм]езуз/);
+  assert.match((await c.call('GET', '/he/events/' + EVENT)).text, /קבלת שבת וסעודת שבת/);
+  assert.match((await c.call('GET', '/sitemap.xml')).text, /<loc>http:\/\/site\.test\/he\/learn\/mezuzah<\/loc>/);
+});
+
+test('help, Kaddish, Tehillim and sponsor pages', async () => {
+  const c = client();
+  for (const p of ['/help', '/help/someone-passed-away', '/help/someone-is-sick', '/kaddish', '/tehillim', '/sponsor', '/he/help', '/ru/kaddish', '/he/tehillim']) assert.equal((await c.call('GET', p)).status, 200, p);
+  const sp = (await c.call('GET', '/sponsor?o=yahrzeit&name=Avraham%20ben%20Yitzchak')).text;
+  assert.match(sp, /In memory of Avraham ben Yitzchak/); assert.match(sp, /\/pushka\/\?go=give&amp;fund=general&amp;ded=In%20memory%20of%20Avraham%20ben%20Yitzchak/);
+  assert.match(sp, /href="\/kiddush\/"/);
+  const th = (await c.call('GET', '/tehillim?name=' + encodeURIComponent('משה'))).text;
+  assert.match(th, /Psalms\.119\.97-104/); assert.match(th, /Psalms\.119\.161-168/); assert.match(th, /Psalms\.119\.33-40/); // מ ש ה
+  const bd = (await c.call('GET', '/tehillim?b=1986-05-01')).text;
+  assert.match(bd, /Your chapter this year is/); assert.match(bd, /Psalm (41|42)\b/);
+  assert.match((await c.call('GET', '/tehillim')).text, /Today&#39;s Tehillim/);
+  assert.match((await c.call('GET', '/help/someone-passed-away')).text, /tel:9253847242/);
+});
+
+test('Kaddish requests and the prayer list stay private', async () => {
+  const g = client();
+  assert.equal((await g.call('POST', '/api/site/submit', { kind: 'kaddish', title: 'Kaddish: Avraham', body: 'Kaddish for: 11 months', name: 'Sara', email: 'sara@x.co' })).status, 200);
+  assert.equal((await g.call('POST', '/api/site/submit', { kind: 'tehillim', title: 'Moshe ben Sarah', body: 'For: refuah', name: 'Sara', email: 'sara@x.co' })).status, 200);
+  assert.match(mails[mails.length - 1].subject, /^\[Private\] Prayer list/);
+  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const items = (await a.call('GET', '/admin/api/site/submissions')).json.items;
+  for (const i of items) await a.call('POST', '/admin/api/site/submissions/' + i.id, { status: 'approved' }, { 'x-admin': '1' });
+  const board = (await g.call('GET', '/community')).text;
+  assert.ok(!board.includes('Moshe ben Sarah') && !board.includes('Kaddish: Avraham'), 'never shown publicly');
+  // Errors come back in the visitor's language once translations exist.
+  const he = await g.call('POST', '/api/site/submit', { kind: 'nope' }, { 'x-lang': 'he' });
+  assert.equal(he.json.code, 'invalid_kind');
+});
+
+test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
+  const c = client(), i18n = server_site().i18n;
+  i18n.missing.clear();
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page'];
+  for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
+  assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
+  // and the content itself: every guide, help page, holiday and page has both translations
+  const C = load(), fs = require('fs'), path = require('path');
+  for (const l of ['he', 'ru']) for (const [dir, list] of [['learn', C.learn], ['help', C.help], ['holidays', C.holidays], ['pages', C.pages]]) for (const x of list) assert.ok(fs.existsSync(path.join(DIR, 'i18n', l, dir, x.slug + '.md')), `${l}/${dir}/${x.slug}.md is missing`);
+  for (const l of ['he', 'ru']) for (const f of ['org.json', 'programs.json', 'faq.json', 'directory.json', 'towns.json', 'sponsor.json', 'tehillim.json']) assert.ok(fs.existsSync(path.join(DIR, 'i18n', l, f)), `${l}/${f} is missing`);
 });

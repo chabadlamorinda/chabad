@@ -9,7 +9,7 @@ const load = async () => hc || (hc = await import('@hebcal/core'));
 const TZ = 'America/Los_Angeles';
 const ymd = (d) => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
 const timeFmt = new Intl.DateTimeFormat('en-US', { timeZone: TZ, hour: 'numeric', minute: '2-digit' });
-const fmtTime = (d) => timeFmt.format(d);
+const fmtTime = (d, locale = 'en-US') => (locale === 'en-US' ? timeFmt : new Intl.DateTimeFormat(locale, { timeZone: TZ, hour: 'numeric', minute: '2-digit' })).format(d);
 // Today's civil date in Lafayette, as a local-midnight Date (Hebcal works on civil dates).
 function todayLocal(now = new Date()) {
   const p = new Intl.DateTimeFormat('en-CA', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
@@ -36,7 +36,7 @@ async function events(start, end, where = HOME) {
     const cats = e.getCategories ? e.getCategories() : [];
     let time = e.eventTime || null;
     if (time && cats[0] === 'havdalah') time = new Date(time.getTime() + 60e3);
-    return { date: ymd(e.getDate().greg()), desc: e.getDesc(), title: e.render('en').replace(/^(Candle lighting|Havdalah): .*$/, '$1'), cat: cats[0] || '', minor: cats.includes('minor') || cats.includes('modern'), time, timeStr: time ? fmtTime(time) : '' };
+    return { date: ymd(e.getDate().greg()), desc: e.getDesc(), title: e.render('en').replace(/^(Candle lighting|Havdalah): .*$/, '$1'), titleHe: e.render('he-x-NoNikud').replace(/:\s*\d.*$/, ''), cat: cats[0] || '', minor: cats.includes('minor') || cats.includes('modern'), time, timeStr: time ? fmtTime(time) : '' };
   });
   if (cache.size > 50) cache.clear();
   cache.set(key, list);

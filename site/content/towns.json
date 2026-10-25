@@ -15,7 +15,8 @@
       "Upper Happy Valley"
     ],
     "local": "We celebrate in town too: Shofar and Tashlich at the Lafayette Reservoir, Yom Kippur at the Lafayette Park Hotel, and a Lag BaOmer BBQ in Lafayette.",
-    "schools": "Our Hebrew School, CKids and teen programs are open to students from Acalanes High School, Stanley Middle School and Lafayette's elementary schools."
+    "schools": "Our Hebrew School, CKids and teen programs are open to students from Acalanes High School, Stanley Middle School and Lafayette's elementary schools.",
+    "name_en": "Lafayette"
   },
   {
     "slug": "moraga",
@@ -33,7 +34,8 @@
       "Moraga Country Club"
     ],
     "local": "Jewish students at Saint Mary's College of California are always welcome for Shabbat dinner and the holidays.",
-    "schools": "Our Hebrew School, CKids and teen programs are open to students from Campolindo High School, Joaquin Moraga Intermediate and Moraga's elementary schools."
+    "schools": "Our Hebrew School, CKids and teen programs are open to students from Campolindo High School, Joaquin Moraga Intermediate and Moraga's elementary schools.",
+    "name_en": "Moraga"
   },
   {
     "slug": "orinda",
@@ -52,7 +54,8 @@
       "Orinda Country Club"
     ],
     "local": "Commuting through Orinda BART? Our weekday morning minyan and evening classes are a short ride away.",
-    "schools": "Our Hebrew School, CKids and teen programs are open to students from Miramonte High School, Orinda Intermediate and Orinda's elementary schools."
+    "schools": "Our Hebrew School, CKids and teen programs are open to students from Miramonte High School, Orinda Intermediate and Orinda's elementary schools.",
+    "name_en": "Orinda"
   },
   {
     "slug": "walnut-creek",
@@ -69,7 +72,8 @@
       "Parkmead",
       "Tice Valley"
     ],
-    "local": "Rossmoor residents: we are happy to help with holidays, yahrzeits, Kaddish and visits. Just call."
+    "local": "Rossmoor residents: we are happy to help with holidays, yahrzeits, Kaddish and visits. Just call.",
+    "name_en": "Walnut Creek"
   },
   {
     "slug": "pleasant-hill",
@@ -84,7 +88,8 @@
       "Poets Corner",
       "Pleasant Hill BART"
     ],
-    "local": "Jewish students at Diablo Valley College are welcome for Shabbat dinner and the holidays."
+    "local": "Jewish students at Diablo Valley College are welcome for Shabbat dinner and the holidays.",
+    "name_en": "Pleasant Hill"
   },
   {
     "slug": "martinez",
@@ -99,7 +104,8 @@
       "Muir Oaks",
       "Virginia Hills"
     ],
-    "local": "Hospital stay or loved one at a care facility in the area? Call the Rabbi for a visit, a prayer or holiday items."
+    "local": "Hospital stay or loved one at a care facility in the area? Call the Rabbi for a visit, a prayer or holiday items.",
+    "name_en": "Martinez"
   },
   {
     "slug": "concord",
@@ -114,7 +120,8 @@
       "Dana Estates",
       "Concord BART"
     ],
-    "local": "Need holiday items, a mezuzah or a yahrzeit date? We are glad to help, wherever in Contra Costa you live."
+    "local": "Need holiday items, a mezuzah or a yahrzeit date? We are glad to help, wherever in Contra Costa you live.",
+    "name_en": "Concord"
   },
   {
     "slug": "alamo",
@@ -128,6 +135,7 @@
       "Round Hill",
       "Stone Valley"
     ],
-    "local": "Planning a bar or bat mitzvah, a bris or a Jewish wedding? Rabbi Labkowski helps families all over the area."
+    "local": "Planning a bar or bat mitzvah, a bris or a Jewish wedding? Rabbi Labkowski helps families all over the area.",
+    "name_en": "Alamo"
   }
 ]
