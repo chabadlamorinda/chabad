@@ -51,3 +51,11 @@ These came from the current website, which disagrees with itself in places, or w
 11. Hebrew-speaking programs beyond the Tuesday class.
 12. For newcomers and families: the Jewish cemetery you use, the Chevra Kadisha, hospital and eldercare visiting.
 13. Whether to mention that Chabad of Lamorinda was founded in 2015.
+14. Israelis: is the Tuesday Hebrew class free, and are there Hebrew-language or Israeli family events (Yom Ha'atzmaut)?
+15. Russian speakers: can people call or write in Russian? Any past or current events for Russian-speaking families?
+16. Students (Saint Mary's, DVC): rides, student Shabbat dinners, a campus contact, RSVP deadline.
+17. Women's Circle frequency and venue; the local mikvah. Men's Club frequency; tefillin price range; any Mincha or Maariv minyan.
+18. Life events: mohel, Chevra Kadisha and cemeteries to name; suggested donations for life-cycle services.
+19. Kiddush sponsorship prices, sharing a Kiddush, how far ahead to book.
+20. The Building Campaign story and dedication opportunities; legacy or bequest giving.
+21. Who coordinates volunteers; mezuzah price range and checking time; lending library; picking up menorahs and candles.
