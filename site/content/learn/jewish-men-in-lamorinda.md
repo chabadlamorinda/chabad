@@ -31,7 +31,7 @@ Saying Kaddish for a parent or loved one? Let us know and we will make sure ther
 
 ## Shabbat
 
-**Kabbalat Shabbat** is on Friday evening at 6:30 PM (the time may change with the season). On **Saturday from 10:00 AM to 12:00 PM** we have Shabbat services with the Torah reading, a short talk and children taking part, followed by a hot Kiddush lunch. The prayer book is in Hebrew and English, and the Rabbi announces the pages. Many men come with their kids. See the [Shabbat page](/shabbat) for this week's times.
+**Kabbalat Shabbat** is on Friday evening at 6:30 PM (the time may change with the season). On **Saturday from 10:00 AM to 12:00 PM** we have Shabbat services with the Torah reading, a short talk and children taking part, followed by a hot Kiddush lunch. The prayer book is in Hebrew and English, and the Rabbi announces the pages. Children are always welcome. See the [Shabbat page](/shabbat) for this week's times.
 
 ## Weekly classes
 
