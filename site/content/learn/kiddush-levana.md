@@ -35,7 +35,7 @@ The full text appears in every siddur after the Saturday night prayers. See our 
 
 ## Who says it
 
-The custom is for men and boys to say Kiddush Levana. It is ideally said with a minyan, but can be said alone if needed. Women traditionally do not say it. One Midrashic reason is that women did not take part in the sin of the golden calf, and the moon's renewal is connected to them in a special way through Rosh Chodesh.
+The custom is for men and boys to say Kiddush Levana. It is ideally said with a minyan, but can be said alone if needed. Women traditionally do not say it, following a custom recorded by the Kabbalists, although women have a special connection to the new month through [Rosh Chodesh](/learn/rosh-chodesh).
 
 ## Common questions
 
