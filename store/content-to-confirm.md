@@ -35,3 +35,4 @@ These came from the current website, which disagrees with itself in places, or w
 - /learn/tefilat-haderech: said after about 3 miles past the city.
 - /learn/holocaust-remembrance: Yom HaShoah 27 Nissan, 10 Tevet as Yom HaKaddish HaKlali, six candles.
 - /learn/jewish-meditation: the Rebbe's call for Torah-based meditation dated to the 1970s.
+- /parsha (all 54 Torah portions): each lesson credits a Chabad source in general terms ("the Rebbe taught", Tanya, the Baal Shem Tov). Please check those in Tazria, Vaera and Shoftim especially; tell Claude if any should say "a Chassidic teaching" instead.
