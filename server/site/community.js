@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS form_responses (
   data JSONB NOT NULL DEFAULT '{}'::jsonb, amount_cents INT NOT NULL DEFAULT 0, status TEXT NOT NULL DEFAULT 'new', created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS form_responses_form_idx ON form_responses (form_id, created_at);
+CREATE TABLE IF NOT EXISTS chat_questions (id BIGSERIAL PRIMARY KEY, question TEXT NOT NULL, lang TEXT NOT NULL DEFAULT 'en', ai BOOLEAN NOT NULL DEFAULT FALSE, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 `;
 
 const newId = (p) => p + crypto.randomBytes(12).toString('hex');

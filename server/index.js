@@ -46,7 +46,7 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false, siteEnv = process.env, facebook = undefined }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false, siteEnv = process.env, facebook = undefined, chatClient = undefined }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
   const kiddush = createKiddush({ store, stripe, log, now, mailer });
   if (reminders) kiddush.startReminders(); // emails unpaid sponsors a reminder after a few days (needs email set up)
@@ -158,7 +158,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 
   // The website (pages, accounts, RSVPs, SEO files). Mounted before the app's own "/" redirect below
   // and before /api, whose catch-all would otherwise answer /api/site.
-  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook, reminders });
+  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook, reminders, chatClient });
   app.locals.site = site;
 
   // ---------- API ----------

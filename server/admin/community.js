@@ -78,6 +78,13 @@
       });
     });
 
+    // ---- What people ask the chat ----
+    var sq = section('What people ask the website chat', 'The latest questions (no names). Great ideas for new pages, classes and answers.');
+    api('GET', '/site/chat-questions').then(function (x) {
+      if (x._status !== 200 || !x.items.length) { sq.appendChild(el('p', { class: 'small', text: 'No questions yet.' })); return; }
+      var ul = el('ul'); x.items.slice(0, 100).forEach(function (i) { ul.appendChild(el('li', { class: 'small', text: new Date(i.created_at).toLocaleDateString() + ' (' + i.lang + '): ' + i.question })); }); sq.appendChild(ul);
+    });
+
     // ---- RSVPs ----
     var s3 = section('RSVPs');
     api('GET', '/site/rsvps').then(function (r) {

@@ -31,7 +31,8 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     const li = (x) => `<a class="card tile" href="${townPath(x)}"><h3>${esc(t('Jewish {town}', { town: x.name }))}</h3><p>${esc(x.miles ? t('{miles} miles from us', { miles: x.miles }) : t('Our home town'))}</p></a>`;
     await render(res, { path: '/our-area', title: t('Jewish life in Lafayette, Moraga, Orinda and nearby'), description: t('Synagogue, Shabbat services, Hebrew school, preschool, kosher food and Jewish holidays for Lafayette, Moraga, Orinda, Pleasant Hill and Martinez.'),
       body: `<section class="wrap sec"><h1>${esc(t('Our area'))}</h1><p class="lead-d">${esc(t('Chabad of Lamorinda is the Jewish home for Lafayette, Moraga and Orinda, and welcomes Jews from all the nearby towns of Contra Costa County.'))}</p>
-<h2>${esc(t('Lamorinda'))}</h2><div class="grid">${home.map(li).join('')}</div><h2>${esc(t('Nearby'))}</h2><div class="grid">${near.map(li).join('')}</div></section>` });
+<h2>${esc(t('Lamorinda'))}</h2><div class="grid">${home.map(li).join('')}</div><h2>${esc(t('Nearby'))}</h2><div class="grid">${near.map(li).join('')}</div>
+<p class="muted">${esc(t('Families from Walnut Creek, Concord, Alamo, Danville and anywhere in Contra Costa County are always welcome too.'))}</p></section>` });
   }));
 
   r.get('/jewish-:town', wrap(async (req, res, next) => {

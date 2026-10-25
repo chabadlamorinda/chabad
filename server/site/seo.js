@@ -29,7 +29,7 @@ const calendar = (c, base, list) => ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-
 async function llmsText(c, base, upcoming, full) {
   const o = c.org, sh = await Z.thisShabbat().catch(() => null), lines = [];
   lines.push(`# ${o.name}`, '', `> ${o.description}`, '');
-  lines.push(`${o.name} is the Chabad-Lubavitch center and synagogue serving the Jewish community of Lafayette, Moraga and Orinda ("Lamorinda"), and nearby Pleasant Hill and Martinez, in Contra Costa County in the San Francisco Bay Area, California. Every Jew is welcome regardless of affiliation, background or knowledge; no membership is required.`, '');
+  lines.push(`${o.name} is the Chabad-Lubavitch center and synagogue serving the Jewish community of Lafayette, Moraga and Orinda ("Lamorinda"), and nearby Pleasant Hill and Martinez (families from Walnut Creek, Concord, Alamo and all of Contra Costa County are welcome too), in Contra Costa County in the San Francisco Bay Area, California. Every Jew is welcome regardless of affiliation, background or knowledge; no membership is required.`, '');
   lines.push('## Key facts', `- Address: ${fullAddress(o)}`);
   if (o.phone) lines.push(`- Phone: ${o.phone}`);
   if (o.email) lines.push(`- Email: ${o.email}`);

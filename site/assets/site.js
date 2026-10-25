@@ -138,6 +138,91 @@
     });
   }
 
+  // ---------- "Ask us" chat ----------
+  var fab = $('[data-chat-open]');
+  if (fab) {
+    var panel = null, history = [], busy = false;
+    try { history = JSON.parse(sessionStorage.getItem('cl_chat') || '[]'); } catch (e) {}
+    var save = function () { try { sessionStorage.setItem('cl_chat', JSON.stringify(history.slice(-20))); } catch (e) {} };
+    // Safe, tiny Markdown for answers: links, bold, lists, line breaks. Everything else is plain text.
+    var render = function (text, into) {
+      into.textContent = '';
+      String(text).split('\n').forEach(function (line) {
+        var li = /^\s*[-*]\s+(.*)$/.exec(line), node = el(li ? 'div' : 'p', li ? { class: 'li' } : {});
+        var rest = li ? li[1] : line, re = /\[([^\]]+)\]\(([^)\s]+)\)|\*\*([^*]+)\*\*/g, last = 0, m;
+        if (!rest.trim() && !li) return;
+        while ((m = re.exec(rest))) {
+          if (m.index > last) node.appendChild(document.createTextNode(rest.slice(last, m.index)));
+          if (m[1]) { var u = m[2]; if (/^\/(?!\/)/.test(u)) node.appendChild(el('a', { href: /^\/(pushka|kiddush|board)\b/.test(u) ? u : P(u), text: m[1] })); else if (/^https:\/\//.test(u)) node.appendChild(el('a', { href: u, rel: 'noopener', target: '_blank', text: m[1] })); else if (/^tel:/.test(u)) node.appendChild(el('a', { href: u, text: m[1] })); else node.appendChild(document.createTextNode(m[1])); }
+          else node.appendChild(el('strong', { text: m[3] }));
+          last = re.lastIndex;
+        }
+        if (last < rest.length) node.appendChild(document.createTextNode(rest.slice(last)));
+        into.appendChild(node);
+      });
+    };
+    var bubble = function (role, text) { var b = el('div', { class: 'cm ' + role }); render(text, b); panel.log.appendChild(b); panel.log.scrollTop = panel.log.scrollHeight; return b; };
+    var ask = function (q) {
+      if (busy || !q.trim()) return;
+      busy = true; history.push({ role: 'user', content: q.trim() }); save(); bubble('user', q.trim());
+      var b = bubble('assistant', T('Thinking…')), got = '';
+      fetch('/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: history, lang: LANG }) }).then(function (r) {
+        if (!r.ok || !r.body) throw new Error('chat');
+        var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
+        var pump = function () { return reader.read().then(function (x) {
+          if (x.done) return;
+          buf += dec.decode(x.value, { stream: true });
+          var parts = buf.split('\n\n'); buf = parts.pop();
+          parts.forEach(function (p) { var d = /^data: (.*)$/m.exec(p); if (!d) return; try { var j = JSON.parse(d[1]); if (j.text) { got += j.text; render(got, b); panel.log.scrollTop = panel.log.scrollHeight; } } catch (e) {} });
+          return pump();
+        }); };
+        return pump();
+      }).then(function () { if (!got) throw new Error('empty'); history.push({ role: 'assistant', content: got }); save(); })
+        .catch(function () { render(T('Sorry, something went wrong. Please call 925-384-7242.'), b); history.pop(); save(); })
+        .then(function () { busy = false; panel.input.focus(); });
+    };
+    var handoff = function () {
+      var box = el('form', { class: 'handoff' }), name = el('input', { required: true, autocomplete: 'name', placeholder: T('Your name') }), email = el('input', { type: 'email', required: true, autocomplete: 'email', placeholder: T('Your email'), dir: 'ltr' }), m = el('p', { class: 'msg', hidden: true });
+      var g = store.get('cl_guest') || {}; name.value = g.name || ''; email.value = g.email || '';
+      box.appendChild(el('p', { class: 'muted', text: T('The Rabbi will see this conversation and get back to you.') })); box.appendChild(name); box.appendChild(email);
+      box.appendChild(el('button', { class: 'btn gold sm', type: 'submit', text: T('Send to the Rabbi') })); box.appendChild(m);
+      box.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        var transcript = history.map(function (h) { return (h.role === 'user' ? 'Visitor: ' : 'Assistant: ') + h.content; }).join('\n\n');
+        api('POST', '/submit', { kind: 'rabbi', title: 'From the website chat', body: transcript || '(no messages)', name: name.value, email: email.value }).then(function (r) {
+          if (r.ok) { box.textContent = ''; box.appendChild(el('p', { class: 'msg ok', text: T('Sent. The Rabbi will be in touch.') })); store.set('cl_guest', { name: name.value, email: email.value }); } else msg(m, r.error || T('Something went wrong.'));
+        });
+      });
+      panel.log.appendChild(box); panel.log.scrollTop = panel.log.scrollHeight; name.focus();
+    };
+    var open = function () {
+      if (!panel) {
+        var input = el('input', { 'aria-label': T('Ask a question about Judaism or our community'), placeholder: T('Ask a question about Judaism or our community'), maxlength: '2000' });
+        var log = el('div', { class: 'chat-log', 'aria-live': 'polite' });
+        var form = el('form', { class: 'chat-in' }, [input, el('button', { class: 'btn gold sm', type: 'submit', text: T('Send') })]);
+        form.addEventListener('submit', function (ev) { ev.preventDefault(); var q = input.value; input.value = ''; ask(q); });
+        var root = el('div', { class: 'chat', role: 'dialog', 'aria-label': T('Ask us') }, [
+          el('div', { class: 'chat-h' }, [el('strong', { text: T('Ask us') }), el('span', {}, [
+            el('button', { type: 'button', class: 'linkish', text: T('New conversation'), on: { click: function () { history = []; save(); log.textContent = ''; greet(); } } }),
+            el('button', { type: 'button', class: 'x', 'aria-label': T('Close'), text: '×', on: { click: function () { root.hidden = true; fab.hidden = false; fab.focus(); } } })])]),
+          log, form,
+          el('p', { class: 'chat-f' }, [el('button', { type: 'button', class: 'linkish', text: T('Send to the Rabbi'), on: { click: handoff } }), ' · ', el('span', { class: 'muted', text: T('Answers come from our website and may not be perfect. For anything important, call the Rabbi.') })])]);
+        document.body.appendChild(root);
+        panel = { root: root, log: log, input: input };
+        var greet = function () {
+          bubble('assistant', T('Hello! I can help with Shabbat times, programs, registration, holidays, Jewish questions, and anything you need from Chabad of Lamorinda. What would you like to know?'));
+          var chips = el('div', { class: 'chips' });
+          ['When is Shabbat this week?', 'How do I register for Hebrew School?', 'Someone in my family passed away', 'How do I put up a mezuzah?'].forEach(function (s) { chips.appendChild(el('button', { type: 'button', class: 'chip', text: T(s), on: { click: function () { chips.remove(); ask(T(s)); } } })); });
+          log.appendChild(chips);
+        };
+        if (history.length) history.forEach(function (h) { bubble(h.role, h.content); }); else greet();
+      }
+      panel.root.hidden = false; fab.hidden = true; panel.input.focus();
+    };
+    fab.addEventListener('click', open);
+    if (history.length && store.get('cl_chat_open')) open();
+  }
+
   // ---------- My account ----------
   var acct = $('#account');
   if (acct) loadAccount();

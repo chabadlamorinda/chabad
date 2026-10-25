@@ -2,7 +2,7 @@
 title: About Chabad of Lamorinda
 description: Chabad of Lamorinda in Lafayette, CA, led by Rabbi Yisroel and Tzipora Labkowski, serves the Jewish communities of Lafayette, Moraga and Orinda with joy, learning and unconditional acceptance.
 ---
-Chabad of Lamorinda is a home for every Jew in Lafayette, Moraga and Orinda. People of every background come to learn about their roots, celebrate Shabbat and the holidays, and find a warm, caring community that feels like one big family.
+Chabad of Lamorinda is a home for every Jew in Lafayette, Moraga and Orinda, and for families from nearby Pleasant Hill, Martinez, Walnut Creek and all of Contra Costa County. People of every background come to learn about their roots, celebrate Shabbat and the holidays, and find a warm, caring community that feels like one big family.
 
 Our services are traditional, in a casual and joyful atmosphere, with a bilingual prayer book. Children are always welcome. There is no membership and no dues: everyone belongs.
 

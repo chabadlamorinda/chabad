@@ -10,6 +10,7 @@
 //   GOOGLE_SITE_VERIFICATION, BING_SITE_VERIFICATION   ownership tags for Google Search Console / Bing Webmaster Tools
 //   INDEXNOW_KEY    tells Bing (which powers ChatGPT search), Yandex and others about new pages right away
 //   ADMIN_EMAIL     where "new submission" notices go (default: the site's email)
+//   ANTHROPIC_API_KEY  turns on Claude answers in the "Ask us" chat (CHAT_MODEL to choose the model); without it the chat searches the site
 // Languages: every page is also served at /he/... (Hebrew, right to left) and /ru/... (Russian); see i18n.js.
 'use strict';
 const express = require('express');
@@ -28,9 +29,10 @@ const { createI18n, LANGS, withLang } = require('./i18n.js');
 const { makeCtx } = require('./ctx.js');
 const { mountLife } = require('./life.js');
 const { mountForms } = require('./forms.js');
+const { mountChat } = require('./chat.js');
 const { DIR } = require('./content.js');
 
-function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch }) {
+function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch, chatClient = undefined }) {
   const base = (env.PUBLIC_URL || 'https://www.chabadoflamorinda.com').replace(/\/+$/, '');
   const host = new URL(base).hostname.replace(/^www\./, '');
   const indexable = env.SITE_INDEXABLE === '1', siteHome = env.SITE_HOME === '1';
@@ -72,6 +74,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     const to = R[req.path.replace(/\/+$/, '') || '/'] || (aid && R['/' + aid]);
     return to ? res.redirect(301, to) : next();
   });
+  const chat = mountChat(app, { env, client: chatClient, content, ctxOf, limit, store, log });
   const community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf });
   // pushka.* and kiddush.* addresses keep opening their apps.
   const isHome = (req) => !/^(pushka|kiddush)\./i.test(req.hostname) && (siteHome || req.hostname.replace(/^www\./, '') === host);
@@ -120,6 +123,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       mountSocialAdmin(r2, ctx, { store, content, fb, base, when: pages.when });
       board.mountAdmin(r2, ctx);
       forms.mountAdmin(r2, ctx);
+      chat.mountAdmin(r2, ctx);
       r2.get('/community', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.html')));
       r2.get('/community.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.js')));
     },

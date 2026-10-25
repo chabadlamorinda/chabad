@@ -13,6 +13,7 @@ const { md } = require('./site/md.js');
 const SECRET = 'a'.repeat(32), PW = 'correct horse battery';
 const env = { PUBLIC_URL: 'http://site.test', SITE_HOME: '1', SITE_INDEXABLE: '1' };
 let pg, store, server, base, mails, fbPosts, theApp;
+const chatCalls = [];
 const server_site = () => theApp.locals.site;
 
 test.before(async () => {
@@ -20,7 +21,13 @@ test.before(async () => {
   mails = []; fbPosts = [];
   const facebook = { instagram: true, photos: async () => [{ src: 'https://scontent.xx.fbcdn.net/a.jpg', alt: 'Menorah lighting', link: 'https://facebook.com/p/1' }],
     publish: async (p) => { fbPosts.push(['facebook', p]); return 'page_post_1'; }, publishInstagram: async (p) => { if (!p.image) throw new Error('Instagram posts need a picture'); fbPosts.push(['instagram', p]); return 'ig_1'; } };
-  const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook,
+  // A stand-in for Claude: records the request and streams a short answer.
+  const chatClient = { beta: { messages: { stream: (params) => {
+    chatCalls.push(params);
+    const text = 'Shabbat services are Saturday at 10 AM. See [Shabbat times](/shabbat).';
+    return { async *[Symbol.asyncIterator]() { for (const w of text.match(/.{1,12}/g)) yield { type: 'content_block_delta', delta: { type: 'text_delta', text: w } }; }, finalMessage: async () => ({ stop_reason: 'end_turn' }) };
+  } } } };
+  const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook, chatClient,
     mailer: { send: async (m) => { mails.push(m); } } });
   theApp = app;
   server = await new Promise((r) => { const s = app.listen(0, () => r(s)); });
@@ -350,4 +357,28 @@ test('the donation page works on the site itself', async () => {
   const d = (await client().call('GET', '/donate')).text;
   assert.match(d, /\/pushka\/\?go=give&amp;fund=general&amp;amt=180/); assert.match(d, /id="building"/); assert.match(d, /CHABAD-LAMORINDA/); assert.match(d, /47-4642750/);
   assert.ok(!/chabadoflamorinda\.com\/\d/.test(d), 'no links to the old site');
+});
+
+const readSse = (text) => text.split('\n\n').map((p) => /^data: (.*)$/m.exec(p)).filter(Boolean).map((m) => JSON.parse(m[1]));
+test('chat: answers from the site with Claude, in the visitor language, and logs only the question', async () => {
+  const r = await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ lang: 'he', messages: [{ role: 'assistant', content: 'hi' }, { role: 'user', content: 'When are Shabbat services?' }] }) });
+  assert.equal(r.headers.get('content-type'), 'text/event-stream; charset=utf-8');
+  const ev = readSse(await r.text());
+  assert.equal(ev.filter((e) => e.text).map((e) => e.text).join(''), 'Shabbat services are Saturday at 10 AM. See [Shabbat times](/shabbat).'); assert.ok(ev.some((e) => e.done));
+  const p = chatCalls[chatCalls.length - 1];
+  assert.equal(p.model, 'claude-opus-5-5'); assert.equal(p.fallbacks, 'default'); assert.deepEqual(p.betas, ['server-side-fallback-2026-07-01']);
+  assert.equal(p.messages[0].role, 'user', 'conversation starts with the visitor');
+  assert.deepEqual(p.system[0].cache_control, { type: 'ephemeral' }); assert.match(p.system[0].text, /WEBSITE KNOWLEDGE/); assert.match(p.system[0].text, /Lamorinda Hebrew School/); assert.match(p.system[0].text, /Walnut Creek, Concord, Alamo/);
+  assert.match(p.system[1].text, /Hebrew version/); assert.match(p.system[1].text, /kabbalat-shabbat-and-dinner-2026-10-30/);
+  assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' })).status, 403);
+  assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: [] }) })).status, 400);
+  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  await new Promise((res) => setTimeout(res, 50));
+  assert.equal((await a.call('GET', '/admin/api/site/chat-questions')).json.items[0].question, 'When are Shabbat services?');
+  assert.match((await client().call('GET', '/')).text, /data-chat-open/);
+});
+test('chat without Claude: answers with matching pages', () => {
+  const { searchAnswer } = require('./site/chat.js');
+  const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));
+  assert.match(out, /\/forms\/hebrew-school|\/programs\/hebrew-school/); assert.match(out, /925-384-7242/);
 });
