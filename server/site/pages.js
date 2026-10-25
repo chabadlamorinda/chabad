@@ -108,6 +108,17 @@ ${nextHol ? `<section class="wrap sec band-in"><div><p class="eyebrow">${esc(t('
   <div class="chips">${(C.sponsor.occasions || []).map((x) => `<a class="chip" href="/sponsor?o=${x.id}">${esc(x.title)}</a>`).join('')}</div>
 </section>
 <section class="wrap sec">
+  <div class="sec-h"><h2>${esc(t('Every day'))}</h2></div>
+  <div class="grid">
+    <a class="card tile" href="/tools/zmanim"><h3>${esc(t('Daily prayer times (zmanim)'))}</h3><p>${esc(t('Sunrise, latest Shema, Mincha and nightfall for your town.'))}</p></a>
+    <a class="card tile" href="/daily-study"><h3>${esc(t("Today's daily study"))}</h3><p>${esc(t('Chumash, Tehillim, Tanya and Rambam for today.'))}</p></a>
+    <a class="card tile" href="/parsha"><h3>${esc(t("This week's Torah portion"))}</h3><p>${esc(t('A short summary and a lesson for this week.'))}</p></a>
+    <a class="card tile" href="/calendar"><h3>${esc(t('Jewish calendar'))}</h3><p>${esc(t('Holidays, Rosh Chodesh, fasts and Shabbat times, month by month.'))}</p></a>
+    <a class="card tile" href="/ask"><h3>${esc(t('Ask the Rabbi'))}</h3><p>${esc(t('Real questions, answered by Rabbi Labkowski.'))}</p></a>
+    <a class="card tile" href="/tools/hebrew-birthday"><h3>${esc(t('Hebrew birthday calculator'))}</h3><p>${esc(t('Find your Hebrew birthday and your Tehillim chapter.'))}</p></a>
+  </div>
+</section>
+<section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Everything Jewish in Lamorinda'))}</h2><a href="/jewish-lamorinda">${esc(t('The full guide'))} →</a></div>
   <div class="chips">${C.directory.map((g) => `<a class="chip" href="/jewish-lamorinda#${g.id || ''}">${esc(g.group)}</a>`).join('')}<a class="chip" href="/tools/hebrew-date">${esc(t('Hebrew date converter'))}</a><a class="chip" href="/tools/yahrzeit">${esc(t('Yahrzeit calculator'))}</a><a class="chip" href="/tools/bar-bat-mitzvah">${esc(t('Bar & Bat Mitzvah date'))}</a></div>
 </section>
