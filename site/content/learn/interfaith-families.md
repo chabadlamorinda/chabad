@@ -45,7 +45,7 @@ Many interfaith families want their children to feel connected to Judaism. Some 
 No. You are welcome exactly as you are. Our community includes Jews of every background, and many families who are just beginning to explore.
 
 ### Is my child Jewish?
-If the child's mother is Jewish, or the mother's mother, and so on through the maternal line, the child is Jewish. If you are unsure about your family's history, the Rabbi is happy to help you look into it. See our page on [Jewish identity](/help/jewish-identity).
+If the child's mother is Jewish, the child is Jewish. A mother is Jewish if her own mother was Jewish, or if she converted according to Jewish law. If you are unsure about your family's history, the Rabbi is happy to help you look into it. See our page on [Jewish identity](/help/jewish-identity).
 
 ### Can my non-Jewish spouse come to services and events?
 Yes. Your spouse is warmly welcome at services, Shabbat meals, holiday celebrations and classes. Some rituals, such as being called to the Torah, are for Jews, and the Rabbi can gently explain anything you are unsure of.

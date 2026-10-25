@@ -3,7 +3,7 @@ title: Pushka: The Jewish Charity Box at Home
 description: What a pushka (tzedakah box) is, why every Jewish home and child should have one, when to give, and what to do with the money once it is full.
 category: Jewish home
 related: tzedakah, maaser, shabbat-candles, jewish-parenting
-local: Try the My Pushka app from Chabad of Lamorinda at chabadoflamorinda.com/pushka/, or call 925-384-7242 for a pushka for your home.
+local: Try the My Pushka app from Chabad of Lamorinda at chabadoflamorinda.com/pushka/, or call 925-384-7242 with any question about giving.
 ---
 A pushka is a tzedakah (charity) box kept in a Jewish home. Every day, family members drop in a few coins, turning giving into a daily habit and making the home a place of kindness and blessing.
 

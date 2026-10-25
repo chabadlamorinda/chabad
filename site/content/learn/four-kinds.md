@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: sukkah, hoshana-rabbah, blessings, jewish-calendar
 local: Order a lulav and etrog set at chabadoflamorinda.com/forms/lulav-etrog or call 925-384-7242, and we will help you shake it.
 ---
-The Four Kinds are a lulav (palm branch), an etrog (citron), hadassim (myrtle branches) and aravot (willow branches), held together and waved each day of Sukkot. It is one of the most beautiful and joyful mitzvot of the year.
+The Four Kinds are a lulav (palm branch), an etrog (citron), hadassim (myrtle branches) and aravot (willow branches), held together and waved each day of Sukkot. It is one of the most joyful mitzvot of the year.
 
 ## What are the Four Kinds?
 
@@ -20,7 +20,7 @@ The lulav, hadassim and aravot are bound together. The etrog is held separately.
 
 ## What the Four Kinds mean
 
-The Midrash compares the four species to four kinds of Jews:
+The Midrash compares them to four kinds of Jews:
 
 - The **etrog** has taste and fragrance, like a person with both Torah learning and good deeds.
 - The **lulav** (date palm) has taste but no fragrance: learning without deeds.
@@ -53,11 +53,11 @@ On Sukkot we bind them all together. Every Jew is essential, and together we are
 
 ## When to shake
 
-The Four Kinds are taken every day of Sukkot except Shabbat, during the daytime. Many shake them in the morning before prayers, and again during Hallel in synagogue. They are not used on Shemini Atzeret or Simchat Torah.
+The Four Kinds are taken every day of Sukkot except Shabbat, during the daytime. Many shake them in the morning, and again during Hallel. They are not used on Shemini Atzeret or Simchat Torah.
 
 ## Choosing a kosher set
 
-The etrog should be whole, clean and unblemished, especially on its upper part, with no missing tip if it grew with one. The lulav should be straight and closed, with its middle leaf not split. Myrtles should have leaves growing in groups of three. Willows should have long, smooth-edged leaves. Buying from a reliable source makes this much easier.
+The etrog should be whole and clean, especially on its upper part. The lulav should be straight and closed, with its middle leaf not split. Myrtle leaves should grow in groups of three. Buying from a reliable source makes this much easier.
 
 ## Common questions
 
@@ -68,7 +68,7 @@ Women are not obligated, since it is a time-bound mitzvah, but many women do it 
 The Sages were concerned that someone might carry the lulav in a public area to learn how to use it, which is forbidden on Shabbat.
 
 ### Can I use someone else's set?
-Yes. On the first day, the set must belong to you, so the owner gives it to you as a gift, and you may give it back. On the other days, borrowing is fine.
+Yes. On the first day, the set must belong to you, so the owner gives it to you as a gift, and you give it back. Afterward, borrowing is fine.
 
 ### What do I do with my lulav after Sukkot?
-Many keep the aravot or use the lulav to help burn chametz before Passover. Since it was used for a mitzvah, it should not be thrown in the trash casually.
+Many use the lulav to help burn chametz before Passover. Since it was used for a mitzvah, it should not be thrown in the trash casually.

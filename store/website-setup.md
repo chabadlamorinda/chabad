@@ -37,8 +37,9 @@ Boosting a post (paid promotion) is done in Facebook's Meta Business Suite.
 * **Google Ad Grants** ($10,000/month of free search ads, which you already have): the full campaign plan, with keywords and the page for each, is in [`store/google-ad-grants.md`](google-ad-grants.md).
 * Events already carry Google's Event markup, so they can appear in Google's event listings once the site is indexed.
 
-## 4. The "Ask us" chat
-Create an API key at console.anthropic.com (Settings → API keys), add billing, and put the key in Render as **ANTHROPIC_API_KEY**. The chat always uses the cheapest Claude model (Claude Haiku 5.5), so each question costs a small fraction of a cent. Without a key, the chat still answers with matching pages from the site and the phone number.
+## 4. The "Ask us" chat (free)
+The chat is free: it answers from the website itself (the best matching question and answer, guide or page, plus your phone number) and hands anything else to you with "Send to the Rabbi".
+Optional and **not free**: adding an Anthropic API key (**ANTHROPIC_API_KEY**) makes Claude write the answers. API usage is billed by Anthropic separately from any Claude subscription (a fraction of a cent per question on the cheapest model). Leave it unset to pay nothing.
 
 ## 5. Launch day (moving chabadoflamorinda.com over)
 Do this only when everything above is working and the content is approved.

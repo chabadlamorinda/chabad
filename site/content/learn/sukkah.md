@@ -17,7 +17,7 @@ The most important part of a sukkah is the roof, called schach. It must be made 
 
 - **Remembering G-d's care.** The sukkah recalls the clouds of glory that surrounded the Jewish people for forty years in the desert.
 - **Trust.** Leaving the comfort of our home for a simple hut reminds us that our security comes from G-d.
-- **Unity.** The sukkah is a mitzvah you enter with your whole body. Chassidic teaching says it surrounds every person equally, from head to toe.
+- **Unity.** The sukkah surrounds every person who enters it equally, from head to toe.
 
 ## How to build a kosher sukkah, step by step
 
@@ -50,7 +50,7 @@ During Sukkot, meals with bread or grain foods are eaten in the sukkah. On the f
 If rain would spoil your food, you are exempt and may eat indoors, except on the first night, when you should wait a while or make Kiddush and eat a little bread in the sukkah. Chabad custom is to eat in the sukkah even in the rain. Ask the Rabbi for guidance.
 
 ### Can I build a sukkah on my deck or balcony?
-Yes, if nothing is above it but open sky. A balcony with another balcony overhead does not work.
+Yes, if nothing is above it but open sky.
 
 ### When do I take the sukkah down?
 Keep it up through the end of Sukkot. It may be taken down after the holiday.

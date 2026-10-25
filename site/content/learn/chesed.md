@@ -45,7 +45,7 @@ Chesed is different from [tzedakah](/learn/tzedakah), charity, in a few ways tha
 - Volunteer for a community organization.
 - Listen without judging.
 
-Small kindnesses matter. The Lubavitcher Rebbe taught that one good deed can tip the balance of the whole world.
+Small kindnesses matter. As Maimonides teaches, and the Lubavitcher Rebbe often emphasized, one good deed can tip the balance of the whole world.
 
 ## Kindness in the Chassidic view
 
