@@ -266,7 +266,7 @@ test('reminder emails: yahrzeit a week and a day before, Hebrew birthday, never 
   assert.equal(await early.run(), 0, 'not before 9 AM Lafayette time');
 });
 
-test('mezuzah and tefillin checking: saved in the account, shown when due, one reminder email', async () => {
+test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitation', async () => {
   const c = await signIn();
   // Mezuzahs checked 3.5 years ago are due now; tefillin checked last year are not.
   await c.call('PUT', '/api/site/me', { name: 'Dovid Katz', mezuzahsChecked: '2022-05-01', tefillinChecked: '2025-06-01' });
@@ -282,6 +282,12 @@ test('mezuzah and tefillin checking: saved in the account, shown when due, one r
   assert.ok(!out.some((m) => /tefillin checked/.test(m.subject)));
   await rem.run();
   assert.equal(out.filter((m) => /mezuzahs checked/.test(m.subject)).length, 1, 'only once');
+
+  // Bar/Bat Mitzvah invitation about 18 months ahead, sent once. A girl born 11 years ago turns 12 (Bat Mitzvah) in about a year.
+  await c.call('PUT', '/api/site/family', { family: [{ name: 'Chaya', relation: 'child', gender: 'f', birthday: '2015-12-01' }, { name: 'Moshe', relation: 'child', gender: 'm', birthday: '2024-01-01' }] });
+  out.length = 0; await rem.run(); await rem.run();
+  assert.equal(out.filter((m) => /Chaya's Bat Mitzvah is coming up/.test(m.subject)).length, 1);
+  assert.ok(!out.some((m) => /Moshe/.test(m.subject)), 'not years too early');
 });
 
 test('languages: Hebrew and Russian pages, automatic choice, switch, hreflang', async () => {

@@ -60,6 +60,26 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
       ].join('\n') });
       sent++;
     }
+    // Bar/Bat Mitzvah: one warm invitation about 18 months ahead, so there is time to prepare together.
+    const Z = require('./zmanim.js');
+    const kids = (await q(`SELECT f.id, f.name, f.gender, to_char(f.birthday,'YYYY-MM-DD') AS b, f.birth_after_sunset, m.name AS member_name, m.email, m.lang FROM family f JOIN members m ON m.id=f.member_id
+      WHERE f.relation='child' AND f.gender IN ('m','f') AND f.birthday IS NOT NULL AND m.news AND m.last_login IS NOT NULL AND m.email <> ''`)).rows;
+    for (const k of kids) {
+      const [y, mo, d] = k.b.split('-').map(Number), md = await Z.mitzvahDate(new Date(y, mo - 1, d), k.birth_after_sunset, k.gender === 'f');
+      const left = H.daysBetween(today, md.date);
+      if (left < 60 || left > 548 || !(await once(`mitzvah:${k.id}`))) continue;
+      const t = T(k.lang), L = k.lang, bat = k.gender === 'f';
+      await mailer.send({ to: k.email, subject: t(bat ? "{name}'s Bat Mitzvah is coming up" : "{name}'s Bar Mitzvah is coming up", { name: k.name }), text: [
+        t('Dear {name},', { name: k.member_name || t('friend') }), '',
+        t(bat ? "{name}'s Bat Mitzvah, by the Jewish calendar, is on {date}. Mazal Tov!" : "{name}'s Bar Mitzvah, by the Jewish calendar, is on {date}. Mazal Tov!", { name: k.name, date: day(md.date, L) }),
+        t('Now is a wonderful time to start preparing together: learning, mitzvahs and a celebration that fits your family. The Rabbi would love to help.'), '',
+        t('Bar and Bat Mitzvah at Chabad of Lamorinda:') + ' ' + site(L, '/programs/bar-bat-mitzvah'),
+        t('Talk to the Rabbi:') + ' ' + site(L, '/help/bar-bat-mitzvah'),
+        t('Call or reply:') + ' ' + org.phone, '',
+        org.name,
+      ].join('\n') });
+      sent++;
+    }
     // Mezuzah and tefillin checking (twice in seven years): one email when 3.5 years have passed since the last check.
     const { checkDue } = require('./community.js');
     const ms = (await q(`SELECT id, name, email, lang, to_char(mezuzahs_checked,'YYYY-MM-DD') AS mez, to_char(tefillin_checked,'YYYY-MM-DD') AS tef FROM members WHERE last_login IS NOT NULL AND email <> '' AND (mezuzahs_checked IS NOT NULL OR tefillin_checked IS NOT NULL)`)).rows;

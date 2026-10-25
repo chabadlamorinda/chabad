@@ -846,5 +846,12 @@
  "Time to have your mezuzahs checked": "הגיע הזמן לבדוק את המזוזות",
  "Time to have your tefillin checked": "הגיע הזמן לבדוק את התפילין",
  "Your mezuzahs were last checked on {date}. Mezuzahs should be checked by a scribe twice in seven years, so it is time again.": "המזוזות שלכם נבדקו לאחרונה ב-{date}. מזוזות צריך לבדוק אצל סופר פעמיים בשבע שנים, ולכן הגיע הזמן שוב.",
- "Your tefillin were last checked on {date}. Tefillin should be checked by a scribe twice in seven years, so it is time again.": "התפילין שלכם נבדקו לאחרונה ב-{date}. תפילין צריך לבדוק אצל סופר פעמיים בשבע שנים, ולכן הגיע הזמן שוב."
+ "Your tefillin were last checked on {date}. Tefillin should be checked by a scribe twice in seven years, so it is time again.": "התפילין שלכם נבדקו לאחרונה ב-{date}. תפילין צריך לבדוק אצל סופר פעמיים בשבע שנים, ולכן הגיע הזמן שוב.",
+ "{name}'s Bat Mitzvah is coming up": "בת המצווה של {name} מתקרבת",
+ "{name}'s Bar Mitzvah is coming up": "בר המצווה של {name} מתקרב",
+ "{name}'s Bat Mitzvah, by the Jewish calendar, is on {date}. Mazal Tov!": "בת המצווה של {name}, לפי הלוח העברי, תחול ב-{date}. מזל טוב!",
+ "{name}'s Bar Mitzvah, by the Jewish calendar, is on {date}. Mazal Tov!": "בר המצווה של {name}, לפי הלוח העברי, יחול ב-{date}. מזל טוב!",
+ "Now is a wonderful time to start preparing together: learning, mitzvahs and a celebration that fits your family. The Rabbi would love to help.": "זה הזמן המושלם להתחיל להתכונן יחד: לימוד, מצוות וחגיגה שמתאימה למשפחה שלכם. הרב ישמח לעזור.",
+ "Bar and Bat Mitzvah at Chabad of Lamorinda:": "בר ובת מצווה בחב״ד למורינדה:",
+ "Talk to the Rabbi:": "לשיחה עם הרב:"
 }
