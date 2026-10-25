@@ -5,7 +5,7 @@ category: Lamorinda
 related: jewish-pride, tefillin, jewish-college-students, shabbat-candles
 local: Ask about teen programs and volunteering at chabadoflamorinda.com/forms/volunteer or call the Rabbi at 925-384-7242.
 ---
-Being a Jewish teen in Lamorinda can feel lonely at times. Your school may have only a few Jewish students, and between classes, sports and college applications, there is not much time. Chabad of Lamorinda in Lafayette is a place where Jewish teens from Lafayette, Moraga and Orinda can belong, ask real questions and have fun, with no membership required.
+Between classes, sports and college applications, a teen's week in Lamorinda is full. Jewish life can easily get squeezed out. Chabad of Lamorinda in Lafayette is a place where Jewish teens from Lafayette, Moraga and Orinda can belong, ask real questions and have fun, with no membership required.
 
 ## Teen programs and events
 
@@ -21,7 +21,7 @@ A bar or bat mitzvah is a beginning, not a graduation. Teen boys are welcome to 
 
 ## Volunteer and lead
 
-Teens make a real difference here. Sign up on the [volunteer form](/forms/volunteer) to help with holiday events, setting up the sukkah, baking challah, Kiddush setup, teaching or tutoring younger kids, or photography. Ask whether your hours can count toward school community service requirements.
+Teens make a real difference here. Sign up on the [volunteer form](/forms/volunteer) to help with holiday events, setting up the sukkah, baking challah, Kiddush setup, teaching or tutoring younger kids, or photography.
 
 ## Shabbat and the holidays
 
@@ -29,7 +29,7 @@ You are welcome at Shabbat services on Saturday at 10 AM, with a hot Kiddush lun
 
 ## Big questions
 
-Teens ask the best questions: about G-d, Israel, antisemitism, and what being Jewish really means. The Rabbi loves them. Come to a [class](/programs/adult-education), [ask the Rabbi](/ask) online, or set up a time to talk. Our guides to [Jewish pride](/learn/jewish-pride) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people) are a good start.
+Teens ask the best questions: about G-d, Israel, antisemitism, and what being Jewish really means. The Rabbi loves them. [Ask the Rabbi](/ask) online, or call to set up a time to talk. Our guides to [Jewish pride](/learn/jewish-pride) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people) are a good start.
 
 ## Heading to college
 
@@ -37,7 +37,7 @@ Graduating soon? Read our guide for [Jewish college students](/learn/jewish-coll
 
 ## For parents
 
-Want your teen more connected? Call the Rabbi at 925-384-7242. He will gladly meet your teen, one-on-one or with friends.
+Want your teen more connected? Call the Rabbi at 925-384-7242. He is always glad to talk with your teen.
 
 ## Common questions
 
@@ -45,7 +45,7 @@ Want your teen more connected? Call the Rabbi at 925-384-7242. He will gladly me
 Yes. Chabad of Lamorinda's teen programs are open to students from Acalanes, Campolindo and Miramonte high schools and the middle schools in all three towns. Call 925-384-7242 to hear what is coming up.
 
 ### Can teens volunteer at Chabad of Lamorinda?
-Yes. Teens help with holiday events, the sukkah, challah baking, Kiddush setup and tutoring. Sign up on the [volunteer form](/forms/volunteer).
+Yes. Teens can help with holiday events, the sukkah, challah baking, Kiddush setup and tutoring. Sign up on the [volunteer form](/forms/volunteer).
 
 ### My teen never had a bar or bat mitzvah. Is it too late?
 Never. Call the Rabbi to talk about preparation at any age.

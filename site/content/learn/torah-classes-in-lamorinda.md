@@ -43,7 +43,7 @@ A few minutes a day adds up. Our guide to [daily Torah study](/learn/daily-torah
 
 ## Women's and men's learning
 
-The [Jewish Women's Circle](/programs/womens-circle) brings women together for creative evenings and inspiration, and the [Men's Club](/programs/mens-club) mixes fellowship, learning and a l'chaim, often with a chance to put on tefillin.
+The [Jewish Women's Circle](/programs/womens-circle) brings women together for creative evenings and inspiration, and the [Men's Club](/programs/mens-club) mixes fellowship, learning and a l'chaim, with a chance to put on tefillin.
 
 ## Support Torah learning
 
