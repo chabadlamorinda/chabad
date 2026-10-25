@@ -53,7 +53,7 @@ function createStore(url, opts = {}) {
     pool,
     migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); },
     close: () => pool.end(),
-    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, family, rsvps, login_codes, submissions, social_posts, email_log, form_responses, chat_questions, email_unsubscribes CASCADE'), // tests only
+    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, family, rsvps, login_codes, submissions, social_posts, email_log, form_responses, chat_questions, email_unsubscribes, qa CASCADE'), // tests only
 
     // ----- members -----
     async createMember(m) {

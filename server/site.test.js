@@ -413,3 +413,14 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
   assert.equal((await a.call('GET', '/admin/api/site/weekly')).json.recipients, 1);
   assert.match((await g.call('GET', '/unsubscribe?e=reader@x.co&t=wrongwrongwrongwrongwrong')).text, /not valid/);
 });
+
+test('Ask the Rabbi: publish an answer, it becomes a page with Q&A markup', async () => {
+  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const r = (await a.call('POST', '/admin/api/site/qa', { question: 'Can I light Shabbat candles if I am not religious?', answer: 'Yes! Every Jewish woman and girl is welcome to light. See [how](/learn/shabbat-candles).' }, { 'x-admin': '1' })).json;
+  assert.equal(r.ok, true); assert.match(r.url, /\/ask\/can-i-light-shabbat-candles-if-i-am-not-religious$/);
+  const g = client(), page = await g.call('GET', '/ask/can-i-light-shabbat-candles-if-i-am-not-religious');
+  assert.equal(page.status, 200); assert.match(page.text, /"@type":"FAQPage"/); assert.match(page.text, /href="\/learn\/shabbat-candles"/);
+  assert.match((await g.call('GET', '/ask')).text, /Can I light Shabbat candles/);
+  assert.match((await g.call('GET', '/sitemap.xml')).text, /\/ask\/can-i-light-shabbat-candles/);
+  assert.equal((await g.call('POST', '/admin/api/site/qa', { question: 'x', answer: 'y' })).status, 401);
+});

@@ -126,7 +126,7 @@ function footer(c, t) {
     </div>
     <div>
       <p class="ftr-h">${esc(t("We're here for you"))}</p>
-      ${a('/help/someone-passed-away', 'When someone passes away')}${a('/help/someone-is-sick', 'When someone is sick')}${a('/kaddish', 'Kaddish')}${a('/tehillim', 'Tehillim for every occasion')}${a('/help', 'All life situations')}${a('/help/talk-to-the-rabbi', 'Talk to the Rabbi')}
+      ${a('/help/someone-passed-away', 'When someone passes away')}${a('/help/someone-is-sick', 'When someone is sick')}${a('/kaddish', 'Kaddish')}${a('/tehillim', 'Tehillim for every occasion')}${a('/help', 'All life situations')}${a('/ask', 'Ask the Rabbi')}${a('/help/talk-to-the-rabbi', 'Talk to the Rabbi')}
     </div>
     <div>
       <p class="ftr-h">${esc(t('Jewish life'))}</p>

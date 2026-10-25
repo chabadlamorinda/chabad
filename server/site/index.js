@@ -32,6 +32,7 @@ const { mountForms } = require('./forms.js');
 const { mountChat } = require('./chat.js');
 const { mountParsha, mountCalendar } = require('./parsha.js');
 const { mountWeekly } = require('./weekly.js');
+const { mountAsk } = require('./ask.js');
 const { DIR } = require('./content.js');
 
 function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch, chatClient = undefined }) {
@@ -83,12 +84,14 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const pages = mountPages(app, { content, base, indexable, isHome, analytics, ctxOf, rsvpCounts: community.counts, photos: fb ? fb.photos : null });
   const r = express.Router();
   const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
-  mountSeo(r, { content, base, indexable, upcoming: pages.upcoming });
+  let ask = null;
+  mountSeo(r, { content, base, indexable, upcoming: pages.upcoming, more: async () => (ask ? (await ask.published()).map((x) => '/ask/' + encodeURIComponent(x.slug)) : []) });
   mountTools(r, { render: pages.render, wrap, ctxOf });
   mountLocal(r, { content, base, wrap, ctxOf, ...pages });
   const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '' });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
+  ask = mountAsk(r, { store, render: pages.render, wrap, ctxOf, base, faqLd: pages.faqLd, crumbs: pages.crumbs });
   mountCalendar(r, { render: pages.render, wrap, ctxOf, upcoming: pages.upcoming });
   mountLife(r, { render: pages.render, wrap, ctxOf, faqHtml: pages.faqHtml, faqLd: pages.faqLd, crumbs: pages.crumbs, base, prayerList: board.prayerList });
   pages.setNews(board.approved);
@@ -130,6 +133,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       forms.mountAdmin(r2, ctx);
       chat.mountAdmin(r2, ctx);
       weekly.mountAdmin(r2, ctx);
+      ask.mountAdmin(r2, ctx);
       r2.get('/community', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.html')));
       r2.get('/community.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.js')));
     },

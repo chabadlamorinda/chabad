@@ -41,12 +41,11 @@ You need a dreidel, two or more players, and a pile of tokens for each player: c
 Chassidic teaching finds beautiful lessons in the dreidel:
 
 - **The numbers.** In Hebrew, each letter has a number value. Nun, Gimmel, Hei and Shin add up to 358, the same as the word Moshiach. The miracle of Chanukah points to the final redemption.
-- **Spun from above.** A Chanukah dreidel is spun from the top, unlike the Purim gragger, which is turned from below. On Chanukah, the miracle came from G-d's initiative above, after the Jewish people's own efforts.
 - **It all turns.** History can feel like a spinning top, but in the end, G-d is guiding it, and the outcome is always for good.
 
 ## Gelt and giving
 
-Chanukah gelt, coins given to children, goes hand in hand with the dreidel. It is a great time to teach children about [tzedakah](/learn/tzedakah) too: many families encourage children to give part of their gelt to charity. Some give gelt on each night, with extra on the fifth night.
+Chanukah gelt, coins given to children, goes hand in hand with the dreidel. It is a great time to teach children about [tzedakah](/learn/tzedakah) too: many families encourage children to give part of their gelt to charity.
 
 ## Common questions
 

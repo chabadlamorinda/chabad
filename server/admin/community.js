@@ -90,8 +90,14 @@
     var sq = section('What people ask the website chat', 'The latest questions (no names). Great ideas for new pages, classes and answers.');
     api('GET', '/site/chat-questions').then(function (x) {
       if (x._status !== 200 || !x.items.length) { sq.appendChild(el('p', { class: 'small', text: 'No questions yet.' })); return; }
-      var ul = el('ul'); x.items.slice(0, 100).forEach(function (i) { ul.appendChild(el('li', { class: 'small', text: new Date(i.created_at).toLocaleDateString() + ' (' + i.lang + '): ' + i.question })); }); sq.appendChild(ul);
+      var ul = el('ul'); x.items.slice(0, 100).forEach(function (i) { ul.appendChild(el('li', { class: 'small' }, [new Date(i.created_at).toLocaleDateString() + ' (' + i.lang + '): ' + i.question + ' ', el('button', { text: 'Answer publicly', onclick: function () { qq.value = i.question; ql.value = i.lang; qa.focus(); qbox.scrollIntoView(); } })])); }); sq.appendChild(ul);
     });
+
+    // ---- Ask the Rabbi (public answers) ----
+    var sa = section('Ask the Rabbi: publish answers', 'Answer a question for everyone. It becomes a page Google and AI assistants can find. Write the question the way it should appear, without names.');
+    var qq = el('input', { placeholder: 'Question' }), qa = el('textarea', { rows: '6', placeholder: 'Your answer (links like [Shabbat times](/shabbat) work)' }), ql = el('select', {}, [['en', 'English'], ['he', 'Hebrew'], ['ru', 'Russian']].map(function (o) { return el('option', { value: o[0], text: o[1] }); })), qmsg = el('div', { class: 'small' });
+    var qbox = el('div', { class: 'card' }, [qq, qa, el('div', { class: 'row' }, [ql, el('button', { class: 'on', text: 'Publish', onclick: function () { fetch('/admin/api/site/qa', { method: 'POST', credentials: 'same-origin', headers: { 'x-admin': '1', 'content-type': 'application/json' }, body: JSON.stringify({ question: qq.value, answer: qa.value, lang: ql.value }) }).then(function (r) { return r.json(); }).then(function (r) { qmsg.textContent = r.ok ? 'Published: ' + r.url : r.error; if (r.ok) { qq.value = ''; qa.value = ''; } }); } })]), qmsg]);
+    sa.appendChild(qbox);
 
     // ---- RSVPs ----
     var s3 = section('RSVPs');

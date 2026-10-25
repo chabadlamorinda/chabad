@@ -54,6 +54,7 @@ CREATE TABLE IF NOT EXISTS form_responses (
   data JSONB NOT NULL DEFAULT '{}'::jsonb, amount_cents INT NOT NULL DEFAULT 0, status TEXT NOT NULL DEFAULT 'new', created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS form_responses_form_idx ON form_responses (form_id, created_at);
+CREATE TABLE IF NOT EXISTS qa (id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, question TEXT NOT NULL, answer TEXT NOT NULL, lang TEXT NOT NULL DEFAULT 'en', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), published_at TIMESTAMPTZ);
 CREATE TABLE IF NOT EXISTS email_unsubscribes (email TEXT PRIMARY KEY, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS chat_questions (id BIGSERIAL PRIMARY KEY, question TEXT NOT NULL, lang TEXT NOT NULL DEFAULT 'en', ai BOOLEAN NOT NULL DEFAULT FALSE, created_at TIMESTAMPTZ NOT NULL DEFAULT now());
 `;
