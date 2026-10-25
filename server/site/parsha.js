@@ -57,6 +57,22 @@ ${sh.candles ? `<p class="card">${esc(t('Candle lighting, {date}', { date: X.sho
       ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: 'Parashat ' + p.name, inLanguage: X.lang, articleBody: L.summary + ' ' + L.lesson, publisher: { '@id': base + '/#org' } }] });
   }));
 }
+// Daily study: today's Chitas (Chumash, Tehillim, Tanya), Rambam and more, with links to the text.
+function mountDaily(r, { render, wrap, ctxOf }) {
+  r.get('/daily-study', wrap(async (req, res) => {
+    const X = ctxOf(req), t = X.t, day = Z.todayLocal(), list = await Z.dailyStudy(day), hd = await X.hebrewDate(day);
+    const row = (x) => `<tr><td>${esc(t(x.label))}</td><td>${x.url ? `<a href="${esc(X.lang === 'he' ? x.url.replace('lang=bi', 'lang=he') : x.url)}" rel="noopener" target="_blank">${esc(X.lang === 'he' ? x.textHe : x.text)}</a>` : esc(x.text)}</td></tr>`;
+    const chitas = list.filter((x) => ['chumash', 'psalms', 'tanyayomi'].includes(x.key)), rambam = list.filter((x) => /^rambam|seferhamitzvot/.test(x.key)), more = list.filter((x) => ['dafyomi', 'mishnayomi', 'nachyomi'].includes(x.key));
+    const body = `<section class="wrap sec narrow"><h1>${esc(t("Today's daily study"))}</h1><p class="lead-d">${esc(X.longDate(Z.ymd(day)))} · ${esc(hd)}</p>
+<p>${esc(t('The Lubavitcher Rebbe encouraged every Jew to learn a little every day. Chitas (Chumash, Tehillim and Tanya) and Rambam keep Jews around the world learning the same thing on the same day.'))}</p>
+<h2>${esc(t('Chitas'))}</h2><table class="tbl"><tbody>${chitas.map(row).join('')}</tbody></table>
+<h2>${esc(t('Rambam'))}</h2><table class="tbl"><tbody>${rambam.map(row).join('')}</tbody></table>
+<h2>${esc(t('More daily learning'))}</h2><table class="tbl"><tbody>${more.map(row).join('')}</tbody></table>
+<p class="btns"><a class="btn gold" href="/programs/adult-education">${esc(t('Learn with us: Torah classes'))}</a><a class="btn ghost" href="/learn/daily-torah-study">${esc(t('How to start a daily study habit'))}</a></p></section>`;
+    await render(res, { path: '/daily-study', title: t("Today's daily study: Chitas, Rambam, Daf Yomi"), description: t("Today's Chumash, Tehillim, Tanya, Rambam, Sefer HaMitzvot and Daf Yomi, with links to the text. From Chabad of Lamorinda."), body });
+  }));
+}
+
 // Monthly Jewish calendar: holidays, Rosh Chodesh, fasts, Shabbat times and our events, day by day.
 function mountCalendar(r, { render, wrap, ctxOf, upcoming }) {
   r.get('/calendar', wrap(async (req, res) => {
@@ -84,4 +100,4 @@ function mountCalendar(r, { render, wrap, ctxOf, upcoming }) {
   }));
 }
 
-module.exports = { mountParsha, mountCalendar, portionsOf, slugOf, all };
+module.exports = { mountParsha, mountCalendar, mountDaily, portionsOf, slugOf, all };

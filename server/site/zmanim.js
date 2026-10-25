@@ -105,4 +105,28 @@ async function dayTimes(day, where = HOME) {
   ].filter((x) => x[2]);
 }
 
-module.exports = { dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };
+// Daily study, Chabad style: Chitas (Chumash, Tehillim, Tanya), Rambam (1 or 3 chapters), Sefer HaMitzvot,
+// plus Daf Yomi, Mishnah and Nach for those who learn them.
+let learningLoaded = null;
+async function dailyStudy(day) {
+  const { DailyLearning, HDate } = await load();
+  if (!learningLoaded) learningLoaded = import('@hebcal/learning');
+  await learningLoaded;
+  const Y = await import('@hebcal/leyning');
+  const hd = new HDate(day), out = [];
+  // Chumash: this week's portion, one aliyah a day (Sunday = first aliyah ... Shabbat = seventh).
+  const sat = new Date(day); sat.setDate(sat.getDate() + ((6 - sat.getDay() + 7) % 7));
+  const sh = (await events(sat, sat)).find((e) => e.cat === 'parashat');
+  if (sh) {
+    try {
+      const name = sh.desc.replace(/^Parashat\s+/, ''), ley = Y.getLeyningForParsha(name), a = ley && ley.fullkriyah && ley.fullkriyah[String(day.getDay() + 1)];
+      if (a) out.push({ key: 'chumash', label: 'Chumash', text: `${sh.title}: ${a.k} ${a.b}-${a.e}`, textHe: `${sh.titleHe}: ${a.k} ${a.b}-${a.e}`, url: `https://www.sefaria.org/${a.k}.${a.b.replace(':', '.')}-${a.e.replace(':', '.')}?lang=bi` });
+    } catch (e) { /* holiday readings have no weekday aliyah */ }
+  }
+  for (const [key, label] of [['psalms', 'Tehillim'], ['tanyayomi', 'Tanya'], ['rambam1', 'Rambam: 1 chapter'], ['rambam3', 'Rambam: 3 chapters'], ['seferhamitzvot', 'Sefer HaMitzvot'], ['dafyomi', 'Daf Yomi'], ['mishnayomi', 'Mishnah Yomi'], ['nachyomi', 'Nach Yomi']]) {
+    try { const ev = DailyLearning.lookup(key, hd); if (ev) out.push({ key, label, text: ev.render('en'), textHe: ev.render('he-x-NoNikud'), url: ev.url ? ev.url() : '' }); } catch (e) { /* not scheduled today */ }
+  }
+  return out;
+}
+
+module.exports = { dailyStudy, dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };

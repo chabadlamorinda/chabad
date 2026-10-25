@@ -315,7 +315,7 @@ test('Kaddish requests and the prayer list stay private', async () => {
 test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
   const c = client(), i18n = server_site().i18n;
   i18n.missing.clear();
-  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/tools/hebrew-birthday?d=1985-04-02'];
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask'];
   for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
   assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
   // and the content itself: every guide, help page, holiday and page has both translations
@@ -394,6 +394,7 @@ test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () =>
   assert.match(cal, /Chanukah: 1 Candle/); assert.match(cal, /Rosh Chodesh Tevet/);
   assert.equal((await c.call('GET', '/calendar?m=2026-13')).status, 302);
   assert.equal((await c.call('GET', '/parsha')).status, 200);
+  const ds = (await c.call('GET', '/daily-study')).text; assert.match(ds, /Tanya/); assert.match(ds, /Rambam/); assert.match(ds, /sefaria\.org/);
   assert.match((await c.call('GET', '/sitemap.xml')).text, /\/tools\/zmanim/);
 });
 

@@ -30,7 +30,7 @@ const { makeCtx } = require('./ctx.js');
 const { mountLife } = require('./life.js');
 const { mountForms } = require('./forms.js');
 const { mountChat } = require('./chat.js');
-const { mountParsha, mountCalendar } = require('./parsha.js');
+const { mountParsha, mountCalendar, mountDaily } = require('./parsha.js');
 const { mountWeekly } = require('./weekly.js');
 const { mountAsk } = require('./ask.js');
 const { DIR } = require('./content.js');
@@ -92,6 +92,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '' });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   ask = mountAsk(r, { store, render: pages.render, wrap, ctxOf, base, faqLd: pages.faqLd, crumbs: pages.crumbs });
+  mountDaily(r, { render: pages.render, wrap, ctxOf });
   mountCalendar(r, { render: pages.render, wrap, ctxOf, upcoming: pages.upcoming });
   mountLife(r, { render: pages.render, wrap, ctxOf, faqHtml: pages.faqHtml, faqLd: pages.faqLd, crumbs: pages.crumbs, base, prayerList: board.prayerList });
   pages.setNews(board.approved);
