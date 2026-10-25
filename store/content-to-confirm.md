@@ -21,3 +21,17 @@ These came from the current website, which disagrees with itself in places, or w
 17. **Sponsorship options** (/sponsor): Kiddush, Shabbat dinner, Torah class, children's program, preschool scholarship, holiday program and tzedakah, each with "any amount". Tell Claude any set prices you want shown.
 18. **Things only you have, to finish moving off the old site:** the Zoom link for online classes (the old one was broken), the Hebrew School and preschool calendar PDFs and the parents' handbook (send them and Claude will post them), the Zelle address, and stock-transfer instructions. Bay Kosher keeps its own store at baykosher.com.
 19. **Forms** (/forms): preschool, Hebrew School, CKids, camp, bar/bat mitzvah, High Holiday reservations, Yizkor, lulav and etrog, matzah and Seder kits, selling chametz, mezuzah and tefillin, Shabbat meals, volunteers and the weekly email. Please check the questions on each, especially the chametz authorization wording.
+
+## 20. Chabad customs in the new guides (please glance and correct)
+- /learn/ushpizin: Chabad does not recite the printed Aramaic invitation; the seven Chassidic ushpizin listed by day.
+- /learn/afikoman: Chabad does not "steal" the afikoman; kezayit about half a handmade shmurah matzah; midnight about 1:00 am in daylight time.
+- /learn/chanukah-gelt: gelt on the 4th or 5th night; the Rebbe encouraged every night, double on Friday.
+- /learn/kiddush-levana: wait seven days after the molad; opens with Psalm 148.
+- /learn/seder-plate: chicken neck, onion or potato for karpas, horseradish and romaine; beet as a vegetarian option.
+- /learn/shabbat-with-kids: girls light their own candle from about age three.
+- /learn/hakafot: hakafot also on Shemini Atzeret night, Torah read on Simchat Torah night.
+- /learn/jewish-wedding-customs: groom's maamar at kabbalat panim, outdoor chuppah, mothers break a plate at the tenaim.
+- /learn/pesach-sheni: matzah on 14 Iyar (some also that night); no Tachanun.
+- /learn/tefilat-haderech: said after about 3 miles past the city.
+- /learn/holocaust-remembrance: Yom HaShoah 27 Nissan, 10 Tevet as Yom HaKaddish HaKlali, six candles.
+- /learn/jewish-meditation: the Rebbe's call for Torah-based meditation dated to the 1970s.

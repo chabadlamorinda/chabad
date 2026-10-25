@@ -29,7 +29,7 @@ Lamorinda Hebrew School is directed by **Rebbetzin Tzipora Labkowski**, who hold
 
 ## Why Sunday Hebrew school works for Lamorinda families
 
-Weekdays in Lafayette, Moraga and Orinda are full of school, sports and activities. Two hours on Sunday morning gives your child a steady, joyful Jewish anchor without overloading the week. Children from Acalanes, Campolindo and Miramonte, and from every elementary and middle school in the three towns, learn side by side.
+Weekdays in Lafayette, Moraga and Orinda are full of school, sports and activities. Two hours on Sunday morning gives your child a steady, joyful Jewish anchor without overloading the week. The school is open to children from Stanley Middle School, Joaquin Moraga Intermediate, Orinda Intermediate and the elementary schools of all three towns.
 
 The Hebrew reading and Jewish knowledge they build here make bar and bat mitzvah preparation easier and more meaningful later on.
 

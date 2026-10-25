@@ -34,11 +34,11 @@ Our [bar and bat mitzvah help page](/help/bar-bat-mitzvah) goes deeper into each
 
 ## Celebrate with the community
 
-Many families celebrate at Shabbat services on Saturday morning, when the bar mitzvah boy is called to the Torah. You can [sponsor the Kiddush](/kiddush/) in honor of the bar or bat mitzvah and share the joy with the whole community. A pair of tefillin is also a beautiful bar mitzvah gift; ask through the [tefillin form](/forms/mezuzah-tefillin).
+A bar mitzvah boy can be called to the Torah at Shabbat services on Saturday morning. Ask the Rabbi to plan it with you. You can [sponsor the Kiddush](/kiddush/) in honor of the bar or bat mitzvah and share the joy with the whole community. A pair of tefillin is also a beautiful bar mitzvah gift; ask through the [tefillin form](/forms/mezuzah-tefillin).
 
 ## Never had one?
 
-It is never too late. Adults in Lamorinda, men and women, celebrate a bar or bat mitzvah later in life. For a man, it can be as simple as putting on tefillin and being called to the Torah. The [get-started form](/forms/bar-bat-mitzvah) has an option for adults.
+It is never too late. Many adults, men and women, celebrate a bar or bat mitzvah later in life. For a man, it can be as simple as putting on tefillin and being called to the Torah. The [get-started form](/forms/bar-bat-mitzvah) has an option for adults.
 
 ## Common questions
 
@@ -52,7 +52,7 @@ No. There is no membership, and we meet every family where they are.
 It depends on your child. Many families start about a year ahead, but we can work with shorter timelines. Call 925-384-7242 to talk it through.
 
 ### What is the Bat Mitzvah Club?
-A group for bat mitzvah girls to learn, create and celebrate together with the Rebbetzin. Sign up through the [bar and bat mitzvah form](/forms/bar-bat-mitzvah).
+A group for bat mitzvah girls to learn and celebrate together with the Rebbetzin. Sign up through the [bar and bat mitzvah form](/forms/bar-bat-mitzvah).
 
 ### Can an adult have a bar or bat mitzvah?
 Yes. Many adults find it deeply moving. Call the Rabbi.

@@ -3,17 +3,17 @@ title: Jewish Students at Saint Mary's College and Diablo Valley College: Shabba
 description: Jewish students at Saint Mary's College in Moraga and Diablo Valley College in Pleasant Hill: Shabbat dinners, holidays and a Rabbi nearby in Lafayette.
 category: Lamorinda
 related: jewish-college-students, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
-local: Students, RSVP for a Shabbat dinner at chabadoflamorinda.com/forms/shabbat-meal or text or call 925-384-7242.
+local: Students, RSVP for a Shabbat dinner at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Studying at **Saint Mary's College of California** in Moraga or at **Diablo Valley College** in Pleasant Hill, and wondering where to find Shabbat, a holiday meal or just a Jewish face? Chabad of Lamorinda, at 3477 Golden Gate Way in Lafayette, is your Jewish home away from home. Jewish students are always welcome for Shabbat dinner and for the holidays. No membership, no cost to belong and no background needed.
 
 ## How close are we?
 
-From Saint Mary's College, Chabad of Lamorinda is a short drive into Lafayette by St. Mary's Road or Moraga Road. From Diablo Valley College and Pleasant Hill, it is about 15 minutes via Pleasant Hill Road. We are close to downtown Lafayette and the Lafayette BART station. Need help getting here? Call us and we will try to work it out.
+From Saint Mary's College, Chabad of Lamorinda is about ten minutes away in Lafayette, by Moraga Road or St. Mary's Road. From Diablo Valley College and Pleasant Hill, it is about 15 minutes via Pleasant Hill Road. We are close to downtown Lafayette and the Lafayette BART station. Questions about getting here? Just call 925-384-7242.
 
 ## Shabbat dinner with the Rabbi's family
 
-Every Friday night, Rabbi Yisroel and Rebbetzin Tzipora Labkowski and their family welcome guests to a traditional Shabbat dinner: a festive table, Jewish songs, good food and real conversation. Students are welcome any week of the year. Bring a friend.
+On Friday nights, Rabbi Yisroel and Rebbetzin Tzipora Labkowski and their family welcome guests to a traditional Shabbat dinner: a festive table, Jewish songs, good food and real conversation. Students are welcome any week of the year. Bring a friend.
 
 Just [let us know you are coming](/forms/shabbat-meal) so we can set a place for you, and mention any dietary needs. Prefer to be hosted by a local family? The same form lets you ask, and we will make the match.
 
@@ -33,7 +33,7 @@ High Holiday services need no tickets. [Reserving a seat](/forms/high-holidays) 
 
 ## Learning, questions and a Rabbi to talk to
 
-College raises big questions about identity, faith, relationships and the future. Rabbi Labkowski is glad to meet for coffee, study one-on-one on any topic, or just talk, in complete confidence. Weekly classes run on Sunday evening (English Torah), Tuesday evening (in Hebrew, with a meal) and Wednesday afternoon (Tanya). See [adult education](/programs/adult-education), or [talk to the Rabbi](/help/talk-to-the-rabbi).
+College raises big questions about identity, faith, relationships and the future. Rabbi Labkowski is glad to meet with you, study one-on-one on any topic, or just talk, in complete confidence. Weekly classes run on Sunday evening (English Torah), Tuesday evening (in Hebrew, with a meal) and Wednesday afternoon (Tanya). See [adult education](/programs/adult-education), or [talk to the Rabbi](/help/talk-to-the-rabbi).
 
 Going through a hard time? You do not have to carry it alone. See [grief and hard times](/help/grief-and-hard-times).
 
