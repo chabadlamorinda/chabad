@@ -211,3 +211,7 @@ textarea { font: inherit; }
 .linkish { background: none; border: 0; padding: 0; color: var(--link); font: inherit; text-decoration: underline; cursor: pointer; }
 .handoff { display: grid; gap: 6px; background: var(--soft); padding: 10px; border-radius: 12px; }
 @media print { .chat-fab, .chat { display: none; } }
+
+.search { width: 100%; max-width: 480px; }
+.tile[hidden] { display: none; }
+.parsha h2 { margin-top: 0; }

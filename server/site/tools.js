@@ -13,6 +13,40 @@ const form = (X, action, d, sunset, extra = '') => `<form class="card tool" meth
   ${extra}<button class="btn gold" type="submit">${esc(X.t('Calculate'))}</button></form>`;
 
 function mountTools(r, { render, wrap, ctxOf }) {
+  // ---------- daily times (zmanim) for Lafayette or any of our towns ----------
+  r.get('/tools/zmanim', wrap(async (req, res) => {
+    const X = ctxOf(req), t = X.t, C = X.C, d = validYmd(String(req.query.d || '')) ? String(req.query.d) : Z.ymd(Z.todayLocal());
+    const town = C.towns.find((x) => x.slug === req.query.town) || C.towns.find((x) => x.slug === 'lafayette') || null;
+    const where = town ? { lat: town.lat, lng: town.lng, name: town.slug } : undefined;
+    const list = await Z.dayTimes(local(d), where), hd = await Z.hebrewDate(local(d));
+    const next = (n) => { const x = local(d); x.setDate(x.getDate() + n); return Z.ymd(x); };
+    const body = `<section class="wrap sec narrow"><h1>${esc(t('Daily prayer times (zmanim)'))}</h1>
+<p class="lead-d">${esc(X.longDate(d))} · ${esc(X.lang === 'he' ? hd.he : X.lang === 'ru' ? `${hd.day} ${t(hd.month)} ${hd.year}` : hd.en)}${town ? ' · ' + esc(town.name) : ''}</p>
+<form class="card tool" method="get" action="/tools/zmanim"><div class="fields"><label>${esc(t('Date'))} <input type="date" name="d" value="${esc(d)}"></label>
+<label>${esc(t('Town'))} <select name="town">${C.towns.map((x) => `<option value="${x.slug}"${town && town.slug === x.slug ? ' selected' : ''}>${esc(x.name)}</option>`).join('')}</select></label></div><button class="btn ghost" type="submit">${esc(t('Show times'))}</button></form>
+<table class="tbl"><tbody>${list.map(([, label, time]) => `<tr><td>${esc(t(label))}</td><td><strong>${esc(Z.fmtTime(time, { en: 'en-US', he: 'he-IL', ru: 'ru-RU' }[X.lang]))}</strong></td></tr>`).join('')}</tbody></table>
+<p class="btns"><a class="btn ghost" href="/tools/zmanim?d=${next(-1)}${town ? '&town=' + town.slug : ''}">← ${esc(t('Previous day'))}</a><a class="btn ghost" href="/tools/zmanim?d=${next(1)}${town ? '&town=' + town.slug : ''}">${esc(t('Next day'))} →</a></p>
+<p class="muted">${esc(t('Times follow the Chabad custom (the Alter Rebbe, author of the Tanya). Give yourself a few minutes of margin.'))} <a href="/shabbat">${esc(t('Shabbat times'))}</a></p></section>`;
+    await render(res, { path: '/tools/zmanim', noindex: !!(req.query.d || req.query.town), title: t('Zmanim: daily prayer times for Lafayette, Moraga and Orinda'), description: t('Today\'s Jewish prayer times for Lafayette, Moraga and Orinda: dawn, sunrise, latest Shema, midday, Mincha, sunset and nightfall, by the Chabad custom.'), body });
+  }));
+
+  // ---------- Hebrew birthday ----------
+  r.get('/tools/hebrew-birthday', wrap(async (req, res) => {
+    const X = ctxOf(req), t = X.t, d = String(req.query.d || ''), night = req.query.night === '1';
+    let out = '';
+    if (validYmd(d)) {
+      const p = H.hebrewOf(d, night), rows = []; let from = Z.ymd(Z.todayLocal());
+      for (let i = 0; i < 5; i++) { const n = H.next({ day: p.day, month: p.month }, from); if (!n) break; rows.push(n); from = H.addDays(n.date, 1); }
+      const heb = X.lang === 'he' ? H.label(p, true) : X.lang === 'ru' ? `${p.day} ${t(p.month)}` : H.label(p);
+      out = `<div class="card answer"><p>${esc(t('Your Hebrew birthday is'))}</p><p class="big">${esc(heb)}</p>
+<table class="tbl"><tbody>${rows.map((n) => `<tr><td>${esc(X.longDate(n.date))}</td></tr>`).join('')}</tbody></table>
+<p class="btns"><a class="btn gold" href="/tehillim?b=${esc(d)}${night ? '&night=1' : ''}#birthday">${esc(t('Your Tehillim chapter'))}</a><a class="btn ghost" href="/sponsor?o=birthday">${esc(t('Sponsor a Kiddush for your birthday'))}</a><a class="btn ghost" href="/account">${esc(t('Save it and get a reminder every year'))}</a></p></div>`;
+    }
+    await render(res, { path: '/tools/hebrew-birthday', noindex: !!d, title: t('Hebrew birthday calculator'), description: t('Find your Hebrew birthday and when it falls in the next five years, your birthday Tehillim chapter, and how to celebrate it.'),
+      body: `<section class="wrap sec narrow"><h1>${esc(t('Hebrew birthday calculator'))}</h1><p class="lead-d">${esc(t('Your Hebrew birthday is a personal Rosh Hashanah, a day of blessing. Enter your date of birth:'))}</p>${form(X, '/tools/hebrew-birthday', d, night)}${out}
+<p class="muted"><a href="/learn/hebrew-birthday">${esc(t('How to celebrate a Hebrew birthday'))}</a></p></section>` });
+  }));
+
   r.get('/tools/hebrew-date', wrap(async (req, res) => {
     const X = ctxOf(req), t = X.t, d = String(req.query.d || ''), night = req.query.night === '1';
     let out = '';

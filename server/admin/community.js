@@ -47,6 +47,14 @@
         el('div', { class: 'row' }, [el('label', {}, [fbBox, ' Facebook']), soc.instagram ? el('label', {}, [igBox, ' Instagram']) : null, pub, copyBtn, gBtn, fbEv, el('a', { href: e.googleCalendar, target: '_blank', rel: 'noopener', text: 'Google Calendar' }), el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'View page' })]), msg]));
     });
 
+    // ---- Weekly email ----
+    var sw = section('Weekly email', 'Written automatically from the website: Shabbat times, the Torah portion, upcoming events, the next holiday and a guide. Add a personal note, check it, and send.');
+    var note = el('textarea', { rows: '3', placeholder: 'A personal note at the top (optional)' }), prev = el('pre', { style: 'white-space:pre-wrap;font:14px/1.5 system-ui;background:#fff;border:1px solid #ddd;border-radius:8px;padding:12px' }), info = el('div', { class: 'small' });
+    var load = function () { api('GET', '/site/weekly?note=' + encodeURIComponent(note.value)).then(function (m) { if (m._status !== 200) { info.textContent = m.error || 'Needs the database.'; return; } prev.textContent = 'Subject: ' + m.subject + '\n\n' + m.text; info.textContent = m.recipients + ' people will receive it.' + (m.email ? '' : ' Email is not set up yet (SMTP_URL).'); }); };
+    var sendBtn = el('button', { class: 'on', text: 'Send to everyone', onclick: function () { if (!confirm('Send the weekly email now?')) return; sendBtn.disabled = true; fetch('/admin/api/site/weekly/send', { method: 'POST', credentials: 'same-origin', headers: { 'x-admin': '1', 'content-type': 'application/json' }, body: JSON.stringify({ confirm: true, note: note.value }) }).then(function (r) { return r.json(); }).then(function (r) { sendBtn.disabled = false; info.textContent = r.ok ? 'Sent to ' + r.sent + ' of ' + r.total + '.' : r.error; }); } });
+    sw.appendChild(el('div', { class: 'card' }, [note, el('div', { class: 'row' }, [el('button', { text: 'Preview', onclick: load }), sendBtn]), info, prev]));
+    load();
+
     // ---- Submissions ----
     var s2 = section('Waiting for approval', 'Sent in by the community. Approved Mazal Tovs, announcements and shiva notices appear on the community board and home page.');
     api('GET', '/site/submissions').then(function (x) {

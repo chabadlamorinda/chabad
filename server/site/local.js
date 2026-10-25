@@ -72,8 +72,9 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     const groups = LEARN_CATEGORIES.map((cat) => [cat, C.learn.filter((a) => a.category === cat)]).filter(([, l]) => l.length);
     await render(res, { path: '/learn', title: t('Learn about Judaism: guides to every Jewish topic'), description: t('Plain-language guides to Shabbat, kosher, mezuzah, tefillin, prayer, life events, mourning, the Jewish calendar, Torah and Jewish ideas, from Chabad of Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Learn about Judaism'))}</h1><p class="lead-d">${esc(t('Clear, friendly guides to Jewish life, from lighting Shabbat candles to saying Kaddish.'))} <a href="/help/talk-to-the-rabbi">${esc(t('Have a question that is not here? Ask the Rabbi.'))}</a></p>
+<p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
 <p class="chips">${groups.map(([cat]) => `<a class="chip" href="#${id(cat)}">${esc(t(cat))}</a>`).join('')}<a class="chip" href="/holidays">${esc(t('Holidays'))}</a><a class="chip" href="/tehillim">${esc(t('Tehillim'))}</a></p>
-${groups.map(([cat, list]) => `<h2 id="${id(cat)}">${esc(t(cat))}</h2><div class="grid">${list.map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>`).join('')}</section>`,
+<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}">${esc(t(cat))}</h2><div class="grid">${list.map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>`).join('')}</div></section>`,
       ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
   }));
 

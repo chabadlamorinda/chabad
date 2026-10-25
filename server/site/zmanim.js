@@ -85,4 +85,24 @@ async function mitzvahDate(birth, afterSunset, girl) {
   return { date: ymd(m.greg()), en: m.render('en'), he: m.renderGematriya() };
 }
 
-module.exports = { events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };
+// Daily times (zmanim) by the Chabad custom (the Alter Rebbe, Baal HaTanya), as on Chabad.org.
+async function dayTimes(day, where = HOME) {
+  const { Zmanim, GeoLocation } = await load();
+  const z = new Zmanim(new GeoLocation(null, where.lat, where.lng, 0, TZ), day, false);
+  const t = (fn) => { try { const d = fn(); return d && !isNaN(d) ? d : null; } catch (e) { return null; } };
+  return [
+    ['dawn', 'Dawn (Alot HaShachar)', t(() => z.alosBaalHatanya())],
+    ['tallit', 'Earliest tallit and tefillin', t(() => z.misheyakir())],
+    ['sunrise', 'Sunrise', t(() => z.getSunriseBaalHatanya())],
+    ['shema', 'Latest Shema', t(() => z.sofZmanShmaBaalHatanya())],
+    ['tefillah', 'Latest Shacharit (morning prayer)', t(() => z.sofZmanTfilaBaalHatanya())],
+    ['chatzot', 'Midday (Chatzot)', t(() => z.chatzot())],
+    ['minchaG', 'Earliest Mincha', t(() => z.minchaGedolaBaalHatanya())],
+    ['minchaK', 'Mincha Ketanah', t(() => z.minchaKetanaBaalHatanya())],
+    ['plag', 'Plag HaMincha', t(() => z.plagHaminchaBaalHatanya())],
+    ['sunset', 'Sunset', t(() => z.getSunsetBaalHatanya())],
+    ['tzeit', 'Nightfall (Tzeit HaKochavim)', t(() => z.tzaisBaalHatanya())],
+  ].filter((x) => x[2]);
+}
+
+module.exports = { dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };

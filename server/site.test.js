@@ -315,7 +315,7 @@ test('Kaddish requests and the prayer list stay private', async () => {
 test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
   const c = client(), i18n = server_site().i18n;
   i18n.missing.clear();
-  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes'];
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/tools/hebrew-birthday?d=1985-04-02'];
   for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
   assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
   // and the content itself: every guide, help page, holiday and page has both translations
@@ -381,4 +381,35 @@ test('chat without Claude: answers with matching pages', () => {
   const { searchAnswer } = require('./site/chat.js');
   const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));
   assert.match(out, /\/forms\/hebrew-school|\/programs\/hebrew-school/); assert.match(out, /925-384-7242/);
+});
+
+test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () => {
+  const c = client();
+  const z = (await c.call('GET', '/tools/zmanim?d=2026-10-25')).text;
+  assert.match(z, /Latest Shema/); assert.match(z, /10:07 AM/); assert.match(z, /Nightfall/);
+  assert.match((await c.call('GET', '/tools/zmanim?d=2026-10-25&town=martinez')).text, /Martinez/);
+  const hb = (await c.call('GET', '/tools/hebrew-birthday?d=1985-04-02')).text;
+  assert.match(hb, /11 Nisan|Nisan 11|11th of Nisan/); assert.match(hb, /\/tehillim\?b=1985-04-02/);
+  const cal = (await c.call('GET', '/calendar?m=2026-12')).text;
+  assert.match(cal, /Chanukah: 1 Candle/); assert.match(cal, /Rosh Chodesh Tevet/);
+  assert.equal((await c.call('GET', '/calendar?m=2026-13')).status, 302);
+  assert.equal((await c.call('GET', '/parsha')).status, 200);
+  assert.match((await c.call('GET', '/sitemap.xml')).text, /\/tools\/zmanim/);
+});
+
+test('weekly email: preview, send once to subscribers and members, unsubscribe', async () => {
+  const g = client();
+  await g.call('POST', '/api/site/forms/newsletter', { fields: { name: 'Reader', email: 'reader@x.co' } });
+  const m = await signIn('member@x.co'); await m.call('PUT', '/api/site/me', { name: 'Member' });
+  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
+  assert.equal(pv.recipients, 2); assert.match(pv.text, /^Good Shabbos everyone!/); assert.match(pv.text, /COMING UP/); assert.match(pv.text, /LEARN SOMETHING NEW/);
+  assert.equal((await a.call('POST', '/admin/api/site/weekly/send', {}, { 'x-admin': '1' })).status, 400, 'needs confirmation');
+  mails.length = 0;
+  assert.equal((await a.call('POST', '/admin/api/site/weekly/send', { confirm: true }, { 'x-admin': '1' })).json.sent, 2);
+  assert.equal((await a.call('POST', '/admin/api/site/weekly/send', { confirm: true }, { 'x-admin': '1' })).json.sent, 0, 'never twice the same day');
+  const link = /Unsubscribe: (\S+)/.exec(mails.find((x) => x.to === 'reader@x.co').text)[1].replace('http://site.test', '');
+  assert.match((await g.call('GET', link)).text, /You are unsubscribed/);
+  assert.equal((await a.call('GET', '/admin/api/site/weekly')).json.recipients, 1);
+  assert.match((await g.call('GET', '/unsubscribe?e=reader@x.co&t=wrongwrongwrongwrongwrong')).text, /not valid/);
 });
