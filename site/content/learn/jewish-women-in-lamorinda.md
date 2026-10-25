@@ -23,7 +23,7 @@ Past evenings have included:
 - A **DIY menorah** workshop with resin and roses
 - A live concert with Meleha
 
-Each evening mixes something hands-on with a short, meaningful Jewish thought. To hear about the next one, [join our weekly email](/forms/newsletter) and tick "Women's Circle," or call 925-384-7242.
+Creative, warm and full of good company: that is the spirit of every evening. To hear about the next one, [join our weekly email](/forms/newsletter) and tick "Women's Circle," or call 925-384-7242.
 
 ## Shabbat candles
 
@@ -31,7 +31,7 @@ Lighting Shabbat candles on Friday before sunset is a special mitzvah given to J
 
 ## Bake challah
 
-Few things fill a home with Shabbat like the smell of fresh challah. Learn how in our [challah guide](/learn/challah), including the special mitzvah of separating challah. And if you love to bake, you can [volunteer](/forms/volunteer) to bake challah for our community Shabbat table.
+Few things fill a home with Shabbat like the smell of fresh challah. Learn how in our [challah guide](/learn/challah), including the special mitzvah of separating challah. And if you love to bake, you can [volunteer](/forms/volunteer) to bake challah for the community.
 
 ## Someone to talk to
 
@@ -42,7 +42,7 @@ Rebbetzin Tzipora Labkowski directs Lamorinda Jewish Preschool and Lamorinda Heb
 - **Learn.** Weekly classes on Sunday evening, Tuesday evening (in Hebrew, with a meal) and Wednesday at 1 PM (Tanya) are open to women and men. See [adult education](/programs/adult-education). Over the years there has also been a women's class in Hebrew; ask what is running now.
 - **Shabbat together.** Come for Saturday services and the hot Kiddush lunch, or [join the Rabbi's family for Shabbat dinner](/forms/shabbat-meal).
 - **For your daughters.** Girls preparing for bat mitzvah join the **Bat Mitzvah Club**. See [bar and bat mitzvah](/programs/bar-bat-mitzvah).
-- **Give back.** Help at holiday events, visit seniors or bring a meal to a new mother. See [volunteer](/forms/volunteer).
+- **Give back.** Help at holiday events, bake challah, or visit seniors and the sick. See [volunteer](/forms/volunteer).
 
 ## Common questions
 
