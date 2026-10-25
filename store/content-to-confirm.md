@@ -36,3 +36,18 @@ These came from the current website, which disagrees with itself in places, or w
 - /learn/holocaust-remembrance: Yom HaShoah 27 Nissan, 10 Tevet as Yom HaKaddish HaKlali, six candles.
 - /learn/jewish-meditation: the Rebbe's call for Torah-based meditation dated to the 1970s.
 - /parsha (all 54 Torah portions): each lesson credits a Chabad source in general terms ("the Rebbe taught", Tanya, the Baal Shem Tov). Please check those in Tazria, Vaera and Shoftim especially; tell Claude if any should say "a Chassidic teaching" instead.
+
+## 21. Facts that would make the local Lamorinda guides richer (/learn, "Lamorinda" section)
+1. Each holiday's place and time: Rosh Hashanah services, the community Seder, Purim and the Megillah readings, the menorah lighting, Lag BaOmer, Shavuot, Tu BiShvat; what we do for Tisha B'Av, Selichot, the Omer.
+2. Kabbalat Shabbat time (the old site said 6:00 PM, the new site says 6:30 PM) and whether it changes by season; whether there is a regular Friday night community dinner.
+3. Kosher: Bay Kosher pickup or delivery days and area; kosher stores or bakeries nearby; the local mikvah and a mikvah for dishes.
+4. Teens: any current teen program, trips or Shabbatons; whether volunteer hours count for school service.
+5. CKids current rates and days; winter camp; next summer's camp dates.
+6. Preschool: class sizes, licensing, daily schedule, and whether it is moving (an outside source mentions 1061 Laurel Dr).
+7. Hebrew School: joining mid-year, the calendar, ages (the old site said 3 to 14).
+8. Bar/Bat Mitzvah: fees, where celebrations can be held, how the Bat Mitzvah Club works.
+9. Classes: Zoom link, whether the women's class in Hebrew and Kabbalah are current, whether classes are free.
+10. How often Men's Club and Women's Circle meet; whether Bagels, Lox and Tefillin is regular.
+11. Hebrew-speaking programs beyond the Tuesday class.
+12. For newcomers and families: the Jewish cemetery you use, the Chevra Kadisha, hospital and eldercare visiting.
+13. Whether to mention that Chabad of Lamorinda was founded in 2015.
