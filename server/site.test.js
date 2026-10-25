@@ -266,6 +266,24 @@ test('reminder emails: yahrzeit a week and a day before, Hebrew birthday, never 
   assert.equal(await early.run(), 0, 'not before 9 AM Lafayette time');
 });
 
+test('mezuzah and tefillin checking: saved in the account, shown when due, one reminder email', async () => {
+  const c = await signIn();
+  // Mezuzahs checked 3.5 years ago are due now; tefillin checked last year are not.
+  await c.call('PUT', '/api/site/me', { name: 'Dovid Katz', mezuzahsChecked: '2022-05-01', tefillinChecked: '2025-06-01' });
+  const me = (await c.call('GET', '/api/site/me')).json;
+  assert.equal(me.profile.mezuzahsChecked, '2022-05-01');
+  assert.ok(me.upcoming.some((u) => u.kind === 'mezuzah-check'));
+  const { checkDue } = require('./site/community.js');
+  assert.equal(checkDue('2022-05-01'), '2025-11-01'); assert.equal(checkDue(''), '');
+  const { createReminders } = require('./site/reminders.js'), out = [];
+  const rem = createReminders({ store, mailer: { send: async (m) => out.push(m) }, base: 'http://site.test', org: load().org, now: () => new Date('2026-11-01T18:00:00Z') });
+  await rem.run();
+  assert.equal(out.filter((m) => /mezuzahs checked/.test(m.subject)).length, 1);
+  assert.ok(!out.some((m) => /tefillin checked/.test(m.subject)));
+  await rem.run();
+  assert.equal(out.filter((m) => /mezuzahs checked/.test(m.subject)).length, 1, 'only once');
+});
+
 test('languages: Hebrew and Russian pages, automatic choice, switch, hreflang', async () => {
   const c = client();
   const he = await c.call('GET', '/he/');

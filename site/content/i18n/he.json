@@ -835,5 +835,16 @@
  "Sukkot": "סוכות",
  "Shemini Atzeret": "שמיני עצרת",
  "Chanukah": "חנוכה",
- "Fast of the 10th of Tevet": "צום עשרה בטבת"
+ "Fast of the 10th of Tevet": "צום עשרה בטבת",
+ "Have them checked by a scribe": "לבדיקה אצל סופר סת״ם",
+ "Mezuzahs and tefillin should be checked by a scribe twice in seven years. We will remind you when it is time.": "מזוזות ותפילין צריך לבדוק אצל סופר סת״ם פעמיים בשבע שנים. נזכיר לכם כשיגיע הזמן.",
+ "Mezuzahs due for checking": "הגיע זמן לבדוק את המזוזות",
+ "Mezuzahs last checked": "בדיקת מזוזות אחרונה",
+ "Tefillin due for checking": "הגיע זמן לבדוק את התפילין",
+ "Tefillin last checked": "בדיקת תפילין אחרונה",
+ "We can send them to a scribe for you. Ask here:": "נשמח לשלוח אותן לבדיקה אצל סופר. בקשו כאן:",
+ "Time to have your mezuzahs checked": "הגיע הזמן לבדוק את המזוזות",
+ "Time to have your tefillin checked": "הגיע הזמן לבדוק את התפילין",
+ "Your mezuzahs were last checked on {date}. Mezuzahs should be checked by a scribe twice in seven years, so it is time again.": "המזוזות שלכם נבדקו לאחרונה ב-{date}. מזוזות צריך לבדוק אצל סופר פעמיים בשבע שנים, ולכן הגיע הזמן שוב.",
+ "Your tefillin were last checked on {date}. Tefillin should be checked by a scribe twice in seven years, so it is time again.": "התפילין שלכם נבדקו לאחרונה ב-{date}. תפילין צריך לבדוק אצל סופר פעמיים בשבע שנים, ולכן הגיע הזמן שוב."
 }

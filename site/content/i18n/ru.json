@@ -835,5 +835,16 @@
  "Sukkot": "Суккот",
  "Shemini Atzeret": "Шмини Ацерет",
  "Chanukah": "Ханука",
- "Fast of the 10th of Tevet": "Пост 10 Тевета"
+ "Fast of the 10th of Tevet": "Пост 10 Тевета",
+ "Have them checked by a scribe": "Отдать на проверку писцу",
+ "Mezuzahs and tefillin should be checked by a scribe twice in seven years. We will remind you when it is time.": "Мезузы и тфилин нужно дважды в семь лет проверять у писца (софера). Мы напомним, когда придёт время.",
+ "Mezuzahs due for checking": "Пора проверить мезузы",
+ "Mezuzahs last checked": "Последняя проверка мезуз",
+ "Tefillin due for checking": "Пора проверить тфилин",
+ "Tefillin last checked": "Последняя проверка тфилин",
+ "We can send them to a scribe for you. Ask here:": "Мы можем отдать их на проверку писцу. Напишите нам:",
+ "Time to have your mezuzahs checked": "Пора проверить ваши мезузы",
+ "Time to have your tefillin checked": "Пора проверить ваши тфилин",
+ "Your mezuzahs were last checked on {date}. Mezuzahs should be checked by a scribe twice in seven years, so it is time again.": "Ваши мезузы последний раз проверяли {date}. Мезузы нужно проверять у писца дважды в семь лет, так что снова пришло время.",
+ "Your tefillin were last checked on {date}. Tefillin should be checked by a scribe twice in seven years, so it is time again.": "Ваши тфилин последний раз проверяли {date}. Тфилин нужно проверять у писца дважды в семь лет, так что снова пришло время."
 }

@@ -19,6 +19,8 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS hebrew_name TEXT NOT NULL DEFAULT '
 ALTER TABLE members ADD COLUMN IF NOT EXISTS birthday DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS birth_after_sunset BOOLEAN NOT NULL DEFAULT FALSE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS anniversary DATE;
+ALTER TABLE members ADD COLUMN IF NOT EXISTS mezuzahs_checked DATE;
+ALTER TABLE members ADD COLUMN IF NOT EXISTS tefillin_checked DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS news BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS lang TEXT NOT NULL DEFAULT 'en';
@@ -87,8 +89,8 @@ function communityStore(store) {
       await q("INSERT INTO members (id, name, email, last_login) VALUES ($1, '', $2, now())", [id, email]);
       return id;
     },
-    updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, updated_at=now() WHERE id=$1',
-      [id, p.name, p.phone, p.address, p.hebrewName, p.birthday || null, p.birthAfterSunset, p.anniversary || null, p.news]),
+    updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, updated_at=now() WHERE id=$1',
+      [id, p.name, p.phone, p.address, p.hebrewName, p.birthday || null, p.birthAfterSunset, p.anniversary || null, p.news, p.mezuzahsChecked || null, p.tefillinChecked || null]),
     family: (memberId) => rows("SELECT id, name, hebrew_name, relation, gender, to_char(birthday,'YYYY-MM-DD') AS birthday, birth_after_sunset FROM family WHERE member_id=$1 ORDER BY created_at", [memberId]),
     async replaceFamily(memberId, list) {
       const c = await pool.connect();
@@ -126,7 +128,7 @@ function communityStore(store) {
 
 function sanitizeProfile(b) {
   const birthday = ymdOk(b.birthday || '') ? b.birthday : '', anniversary = ymdOk(b.anniversary || '') ? b.anniversary : '';
-  return { name: clean(b.name, 100), phone: clean(b.phone, 30), address: clean(b.address, 200), hebrewName: clean(b.hebrewName, 100), birthday, birthAfterSunset: b.birthAfterSunset === true, anniversary, news: b.news !== false };
+  return { name: clean(b.name, 100), phone: clean(b.phone, 30), address: clean(b.address, 200), hebrewName: clean(b.hebrewName, 100), birthday, birthAfterSunset: b.birthAfterSunset === true, anniversary, news: b.news !== false, mezuzahsChecked: ymdOk(b.mezuzahsChecked || '') ? b.mezuzahsChecked : '', tefillinChecked: ymdOk(b.tefillinChecked || '') ? b.tefillinChecked : '' };
 }
 function sanitizeFamily(list) {
   if (!Array.isArray(list) || list.length > 20) return null;
@@ -171,7 +173,18 @@ async function upcomingDatesFor(m, family, yz, today) {
   }
   const ann = d10(m.anniversary);
   if (ann) { let next = today.slice(0, 4) + ann.slice(4); if (next < today) next = String(+today.slice(0, 4) + 1) + ann.slice(4); out.push({ kind: 'anniversary', name: m.name, date: next, years: +next.slice(0, 4) - +ann.slice(0, 4) }); }
+  // Mezuzahs and tefillin are checked by a scribe twice in seven years: due 3.5 years after the last check.
+  for (const [kind, last] of [['mezuzah-check', d10(m.mezuzahs_checked)], ['tefillin-check', d10(m.tefillin_checked)]]) {
+    const due = checkDue(last);
+    if (due && H.daysBetween(today, due) <= 400) out.push({ kind, name: m.name, date: due < today ? today : due, overdue: due < today });
+  }
   return out.sort((a, b) => a.date.localeCompare(b.date)).slice(0, 15);
+}
+// 42 months after the last check (a date string), or '' if unknown.
+function checkDue(last) {
+  if (!last) return '';
+  const [y, mo, d] = last.split('-').map(Number), t = new Date(Date.UTC(y, mo - 1 + 42, d));
+  return t.toISOString().slice(0, 10);
 }
 
 function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en' }) {
@@ -227,7 +240,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   r.get('/me', need, authed, wrap(async (req, res) => {
     const m = req.member, [family, yz, rs] = await Promise.all([cs.family(m.id), cs.webYahrzeits(m.id), cs.myRsvps(m.email.toLowerCase())]);
     res.json({
-      profile: { name: m.name, email: m.email, phone: m.phone, address: m.address, hebrewName: m.hebrew_name, birthday: d10(m.birthday), birthAfterSunset: m.birth_after_sunset, anniversary: d10(m.anniversary), news: m.news, shareYahrzeits: m.share_yahrzeits },
+      profile: { name: m.name, email: m.email, phone: m.phone, address: m.address, hebrewName: m.hebrew_name, birthday: d10(m.birthday), birthAfterSunset: m.birth_after_sunset, anniversary: d10(m.anniversary), mezuzahsChecked: d10(m.mezuzahs_checked), tefillinChecked: d10(m.tefillin_checked), news: m.news, shareYahrzeits: m.share_yahrzeits },
       family: family.map((f) => ({ name: f.name, hebrewName: f.hebrew_name, relation: f.relation, gender: f.gender, birthday: f.birthday || '', birthAfterSunset: f.birth_after_sunset })),
       yahrzeits: yz.map((y) => ({ name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes, fromApp: y.source !== 'web', next: (H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, new Date(now()).toISOString().slice(0, 10)) || {}).date || '' })),
       rsvps: rs.map((x) => ({ event: x.event_slug, adults: x.adults, kids: x.kids })),
@@ -323,4 +336,4 @@ function mountCommunityAdmin(r, { authed, wrap }, { cs, content, store }) {
   }));
 }
 
-module.exports = { mountCommunity, mountCommunityAdmin, communityStore, sanitizeFamily, sanitizeYahrzeits, sanitizeProfile, SCHEMA };
+module.exports = { mountCommunity, mountCommunityAdmin, communityStore, sanitizeFamily, sanitizeYahrzeits, sanitizeProfile, checkDue, SCHEMA };

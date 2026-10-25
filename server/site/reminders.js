@@ -60,6 +60,24 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
       ].join('\n') });
       sent++;
     }
+    // Mezuzah and tefillin checking (twice in seven years): one email when 3.5 years have passed since the last check.
+    const { checkDue } = require('./community.js');
+    const ms = (await q(`SELECT id, name, email, lang, to_char(mezuzahs_checked,'YYYY-MM-DD') AS mez, to_char(tefillin_checked,'YYYY-MM-DD') AS tef FROM members WHERE last_login IS NOT NULL AND email <> '' AND (mezuzahs_checked IS NOT NULL OR tefillin_checked IS NOT NULL)`)).rows;
+    for (const m of ms) {
+      for (const [what, last] of [['mezuzahs', m.mez], ['tefillin', m.tef]]) {
+        const due = checkDue(last);
+        if (!due || due > today || !(await once(`check:${what}:${m.id}:${due}`))) continue;
+        const t = T(m.lang), L = m.lang;
+        await mailer.send({ to: m.email, subject: t(what === 'mezuzahs' ? 'Time to have your mezuzahs checked' : 'Time to have your tefillin checked'), text: [
+          t('Dear {name},', { name: m.name || t('friend') }), '',
+          t(what === 'mezuzahs' ? 'Your mezuzahs were last checked on {date}. Mezuzahs should be checked by a scribe twice in seven years, so it is time again.' : 'Your tefillin were last checked on {date}. Tefillin should be checked by a scribe twice in seven years, so it is time again.', { date: day(last, L) }),
+          t('We can send them to a scribe for you. Ask here:') + ' ' + site(L, '/forms/mezuzah-tefillin'),
+          t('Call or reply:') + ' ' + org.phone, '',
+          org.name, '', t('Manage reminders:') + ' ' + site(L, '/account'),
+        ].join('\n') });
+        sent++;
+      }
+    }
     return sent;
   }
   let timer = null;
