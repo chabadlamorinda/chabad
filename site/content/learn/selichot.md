@@ -25,7 +25,7 @@ Selichot begin on the Saturday night before Rosh Hashanah, after midnight. If Ro
 
 ### Sephardic custom
 
-Sephardic Jews say Selichot every morning from the second day of Elul until Yom Kippur.
+Sephardic Jews say Selichot every morning from the beginning of Elul until Yom Kippur.
 
 ## Why late at night or early in the morning?
 

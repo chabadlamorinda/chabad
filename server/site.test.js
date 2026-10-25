@@ -88,6 +88,7 @@ test('home and key pages render with structured data and security headers', asyn
   const ev = await c.call('GET', '/events/' + EVENT);
   assert.match(ev.text, /"@type":"Event"/); assert.match(ev.text, /"startDate":"2026-10-30T18:30:00-07:00"/);
   assert.match(ev.text, /data-rsvp="kabbalat-shabbat-and-dinner-2026-10-30"/);
+  assert.match((await c.call('GET', '/events')).text, /"@type":"EventSeries".*"byDay":"https:\/\/schema.org\/Sunday"/);
   for (const p of ['/events', '/shabbat', '/holidays', '/holidays/passover', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/about', '/faq', '/contact', '/photos', '/account', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10']) {
     assert.equal((await c.call('GET', p)).status, 200, p);
   }

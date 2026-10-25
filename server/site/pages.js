@@ -145,7 +145,7 @@ ${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Comm
 ${list.length ? `<div class="evs">${list.map((e) => eventCard(e, cnt, X)).join('')}</div>` : `<p class="muted">${esc(t('No events in this list yet. Please check back soon.'))}</p>`}
 ${c ? '' : weeklyHtml(C.org, X)}
 </section>`;
-    await render(res, { path: '/events', title: t('Upcoming Jewish events in Lamorinda'), description: t('Upcoming Jewish events, holiday celebrations, Shabbat dinners and classes at Chabad of Lamorinda in Lafayette, Moraga and Orinda.'), body, ld: list.map((e) => eventLd(C, base, e)), noindex: !!c });
+    await render(res, { path: '/events', title: t('Upcoming Jewish events in Lamorinda'), description: t('Upcoming Jewish events, holiday celebrations, Shabbat dinners and classes at Chabad of Lamorinda in Lafayette, Moraga and Orinda.'), body, ld: [...list.map((e) => eventLd(C, base, e)), ...seriesLd(ctx.content(), base)], noindex: !!c });
   }));
   r.get('/events/:slug', wrap(async (req, res, next) => {
     const X = ctxOf(req), { t, C } = X, e = C.events.find((x) => x.slug === req.params.slug && x.published);
@@ -279,6 +279,17 @@ ${pics.length ? `<div class="pics big">${pics.map((p) => `<a href="${esc(p.link)
     await render(res, { path: '/' + p.slug, title: p.title || p.slug, description: p.description || p.text.slice(0, 160), body, ld: faqs.length ? [faqLd(faqs)] : [] });
   });
   return { render, upcoming, eventLd, eventCard, faqHtml, faqLd, crumbs, counts, setNews, pagesRoute, when: (e) => ctxOf({ lang: 'en' }).when(e) };
+}
+
+// Weekly classes and services as recurring events (schema.org EventSeries with a weekly schedule).
+function seriesLd(C, base) {
+  const o = C.org;
+  return (o.weekly || []).filter((w) => w.byDay && w.startTime).map((w) => ({
+    '@context': 'https://schema.org', '@type': 'EventSeries', name: w.name, url: base + (w.link || '/events'),
+    location: { '@type': 'Place', name: o.name, address: fullAddress(o) }, organizer: { '@type': 'Organization', name: o.name, url: base + '/' },
+    eventSchedule: { '@type': 'Schedule', byDay: 'https://schema.org/' + w.byDay, startTime: w.startTime, endTime: w.endTime || undefined, repeatFrequency: 'P1W', scheduleTimezone: 'America/Los_Angeles' },
+    isAccessibleForFree: true,
+  }));
 }
 
 function weeklyHtml(o, X) {

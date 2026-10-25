@@ -19,7 +19,7 @@ const LOCALE = { en: 'en-US', he: 'he-IL', ru: 'ru-RU' };
 const RTL = new Set(['he']);
 const FAQ_HEADING = { en: 'Common questions', he: 'שאלות נפוצות', ru: 'Частые вопросы' };
 // Fields that are keys or data, never translated (a translator's copy of these is ignored).
-const KEEP = new Set(['slug', 'id', 'url', 'link', 'lat', 'lng', 'tier', 'start', 'end', 'category', 'holiday', 'program', 'image', 'flyer', 'rsvp', 'status', 'geo', 'phone', 'email', 'social', 'donateUrl', 'chapters', 'fund', 'amount', 'kind', 'related', 'order', 'urgent', 'icon', 'online', 'priceAmount', 'miles', 'address', 'staff', 'areaServed', 'alternateNames', 'name_en', 'type', 'required', 'rows', 'columns', 'min', 'max', 'amountEach', 'perChild', 'optional', 'levels', 'amounts', 'program']);
+const KEEP = new Set(['slug', 'id', 'url', 'link', 'lat', 'lng', 'tier', 'start', 'end', 'category', 'holiday', 'program', 'image', 'flyer', 'rsvp', 'status', 'geo', 'phone', 'email', 'social', 'donateUrl', 'chapters', 'fund', 'amount', 'kind', 'related', 'order', 'urgent', 'icon', 'online', 'priceAmount', 'miles', 'address', 'staff', 'areaServed', 'alternateNames', 'name_en', 'type', 'required', 'rows', 'columns', 'min', 'max', 'amountEach', 'perChild', 'optional', 'levels', 'amounts', 'program', 'byDay', 'startTime', 'endTime']);
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return null; throw new Error(`${f}: ${e.message}`); } };
 

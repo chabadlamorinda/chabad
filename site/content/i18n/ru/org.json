@@ -1,17 +1,43 @@
 {
   "name": "Хабад Ламоринды",
   "shortName": "Хабад Ламоринды",
-  "alternateNames": ["Chabad Lamorinda", "Chabad of Lafayette", "Chabad of Moraga", "Chabad of Orinda", "Lamorinda Shul"],
+  "alternateNames": [
+    "Chabad Lamorinda",
+    "Chabad of Lafayette",
+    "Chabad of Moraga",
+    "Chabad of Orinda",
+    "Lamorinda Shul"
+  ],
   "tagline": "Иудаизм с улыбкой для каждого еврея Ламоринды",
   "description": "Хабад Ламоринды - тёплый и гостеприимный еврейский центр в Лафайетте, Калифорния. Мы служим Лафайетту, Мораге и Оринде: субботние и праздничные молитвы, еврейский детский сад, еврейская школа, уроки и события общины. Членство не требуется.",
-  "address": { "street": "3477 Golden Gate Way", "city": "Lafayette", "region": "CA", "postal": "94549" },
-  "geo": { "lat": 37.8858, "lng": -122.118 },
+  "address": {
+    "street": "3477 Golden Gate Way",
+    "city": "Lafayette",
+    "region": "CA",
+    "postal": "94549"
+  },
+  "geo": {
+    "lat": 37.8858,
+    "lng": -122.118
+  },
   "phone": "925-384-7242",
   "email": "info@chabadoflamorinda.com",
-  "areaServed": ["Lafayette", "Moraga", "Orinda", "Pleasant Hill", "Martinez"],
+  "areaServed": [
+    "Lafayette",
+    "Moraga",
+    "Orinda",
+    "Pleasant Hill",
+    "Martinez"
+  ],
   "staff": [
-    { "name": "Rabbi Yisroel Labkowski", "role": "Rabbi and Director" },
-    { "name": "Tzipora Labkowski", "role": "Rebbetzin; Director of Lamorinda Jewish Preschool and Lamorinda Hebrew School" }
+    {
+      "name": "Rabbi Yisroel Labkowski",
+      "role": "Rabbi and Director"
+    },
+    {
+      "name": "Tzipora Labkowski",
+      "role": "Rebbetzin; Director of Lamorinda Jewish Preschool and Lamorinda Hebrew School"
+    }
   ],
   "legal": "Некоммерческая организация 501(c)(3), налоговый номер 47-4642750.",
   "donateUrl": "/pushka/",
@@ -19,17 +45,75 @@
     "facebook": "https://www.facebook.com/chabadoflamorinda"
   },
   "services": [
-    { "name": "Шахарит (утренняя молитва)", "time": "Воскресенье 8:00; понедельник - пятница 6:30" },
-    { "name": "Кабалат Шабат", "time": "Пятница вечером, 18:30", "note": "время может меняться в зависимости от сезона" },
-    { "name": "Утро Шабата", "time": "Суббота с 10:00 до 12:00", "note": "чтение Торы, короткая беседа и участие детей, затем горячий обед-Кидуш" }
+    {
+      "name": "Шахарит (утренняя молитва)",
+      "time": "Воскресенье 8:00; понедельник - пятница 6:30"
+    },
+    {
+      "name": "Кабалат Шабат",
+      "time": "Пятница вечером, 18:30",
+      "note": "время может меняться в зависимости от сезона"
+    },
+    {
+      "name": "Утро Шабата",
+      "time": "Суббота с 10:00 до 12:00",
+      "note": "чтение Торы, короткая беседа и участие детей, затем горячий обед-Кидуш"
+    }
   ],
   "weekly": [
-    { "day": "Воскресенье", "time": "10:00 - 12:00", "name": "Еврейская школа Ламоринды", "link": "/programs/hebrew-school" },
-    { "day": "Воскресенье", "time": "21:00 - 22:00", "name": "Еженедельный урок Торы (на английском)", "link": "/programs/adult-education" },
-    { "day": "Вторник", "time": "20:30 - 21:30", "name": "Урок Торы на иврите, с ужином", "link": "/programs/adult-education" },
-    { "day": "Среда", "time": "13:00 - 14:00", "name": "Урок Тании (на английском)", "link": "/programs/adult-education" },
-    { "day": "Пятница", "time": "18:30", "name": "Кабалат Шабат", "link": "/shabbat" },
-    { "day": "Суббота", "time": "10:00", "name": "Субботняя молитва и обед-Кидуш", "link": "/shabbat" }
+    {
+      "day": "Воскресенье",
+      "time": "10:00 - 12:00",
+      "name": "Еврейская школа Ламоринды",
+      "link": "/programs/hebrew-school",
+      "byDay": "Sunday",
+      "startTime": "10:00",
+      "endTime": "12:00"
+    },
+    {
+      "day": "Воскресенье",
+      "time": "21:00 - 22:00",
+      "name": "Еженедельный урок Торы (на английском)",
+      "link": "/programs/adult-education",
+      "byDay": "Sunday",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "day": "Вторник",
+      "time": "20:30 - 21:30",
+      "name": "Урок Торы на иврите, с ужином",
+      "link": "/programs/adult-education",
+      "byDay": "Tuesday",
+      "startTime": "20:30",
+      "endTime": "21:30"
+    },
+    {
+      "day": "Среда",
+      "time": "13:00 - 14:00",
+      "name": "Урок Тании (на английском)",
+      "link": "/programs/adult-education",
+      "byDay": "Wednesday",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "day": "Пятница",
+      "time": "18:30",
+      "name": "Кабалат Шабат",
+      "link": "/shabbat",
+      "byDay": "Friday",
+      "startTime": "18:30"
+    },
+    {
+      "day": "Суббота",
+      "time": "10:00",
+      "name": "Субботняя молитва и обед-Кидуш",
+      "link": "/shabbat",
+      "byDay": "Saturday",
+      "startTime": "10:00",
+      "endTime": "12:00"
+    }
   ],
   "shabbatText": "## Субботний ужин в семье раввина\nРаввин Исроэль и ребецн Ципора Лабковские вместе с семьёй устраивают субботние ужины: традиционная пятничная трапеза с еврейскими песнями, тёплой беседой и праздничным столом. Это прекрасная возможность познакомиться с раввином и ребецн. Мы ждём вас в любую неделю года; пожалуйста, сообщите о своём приходе по телефону 925-384-7242 или через [страницу контактов](/contact).\n\n## Спонсируйте Кидуш\nОтмечаете день рождения, годовщину или йорцайт? [Спонсируйте Кидуш](/kiddush/) и разделите это событие со всей общиной."
 }
