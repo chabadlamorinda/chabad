@@ -9,6 +9,7 @@ const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 const { googleCalendarUrl } = require('./social.js');
 const { parseLocal } = require('./ctx.js');
+const { decorate, artImg, artFor } = require('./art.js');
 
 const ROOT = path.join(__dirname, '..', '..');
 
@@ -30,6 +31,7 @@ function eventCard(e, counts, X) {
   const a = parseLocal(e.start), going = counts && counts[e.slug], t = X.t;
   return `<article class="ev">
   <a class="ev-date" href="/events/${e.slug}" aria-hidden="true" tabindex="-1"><span>${esc(X.mon(a.m))}</span><b>${a.d}</b></a>
+  ${artImg(artFor('event', e.holiday || e.category || e.slug, e.title))}
   <div class="ev-body">
     <h3><a href="/events/${e.slug}">${esc(e.title)}</a></h3>
     <p class="muted">${esc(X.when(e))} · ${esc(e.loc.name)}</p>
@@ -50,7 +52,7 @@ function mountPages(app, ctx) {
     const X = ctxOf(res.req), to = status === 200 && !opts.noRedirect && X.redirectTo();
     if (to) return res.set('Vary', 'Accept-Language, Cookie').redirect(302, to);
     const [hd, sh] = await Promise.all([X.hebrewDate(Z.todayLocal()).catch(() => ''), Z.thisShabbat().catch(() => null)]);
-    const html = layout(X.C, { base, indexable, analytics, hebrewDate: hd, shabbat: sh, lang: X.lang, t: X.t, fmtDay: X.shortDate, tm: X.tm, ...opts });
+    const html = layout(X.C, { base, indexable, analytics, hebrewDate: hd, shabbat: sh, lang: X.lang, t: X.t, fmtDay: X.shortDate, tm: X.tm, ...opts, body: opts.path === '/' ? opts.body : decorate(opts.body, opts.path) });
     res.status(status).set('Cache-Control', 'public, max-age=60, stale-while-revalidate=600').set('Vary', 'Accept-Language, Cookie').type('html').send(X.links(html));
   }
   const counts = async () => { try { return rsvpCounts ? await rsvpCounts() : {}; } catch (e) { return {}; } };
@@ -142,7 +144,7 @@ ${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Comm
   ${faqHtml(C.faq.slice(0, 6))}
   <p><a href="/faq">${esc(t('All questions'))} →</a></p>
 </section>`;
-    await render(res, { path: '/', title: o.name, description: o.description, body, ld: [faqLd(C.faq.slice(0, 6)), { '@context': 'https://schema.org', '@type': 'WebSite', name: o.name, url: base + '/', inLanguage: X.lang }] });
+    await render(res, { path: '/', title: o.name, description: o.description, body: decorate(body, '/__home'), ld: [faqLd(C.faq.slice(0, 6)), { '@context': 'https://schema.org', '@type': 'WebSite', name: o.name, url: base + '/', inLanguage: X.lang }] });
   }));
 
   // ---------- events ----------

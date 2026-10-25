@@ -429,3 +429,16 @@ test('Ask the Rabbi: publish an answer, it becomes a page with Q&A markup', asyn
   assert.match((await g.call('GET', '/sitemap.xml')).text, /\/ask\/can-i-light-shabbat-candles/);
   assert.equal((await g.call('POST', '/admin/api/site/qa', { question: 'x', answer: 'y' })).status, 401);
 });
+
+test('no broken links inside the content (English, Hebrew, Russian)', async () => {
+  const fs = require('fs'), path = require('path'), C = load(), bad = [];
+  const ok = new Set(['/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',
+    ...C.learn.map((a) => '/learn/' + a.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.help.map((h) => '/help/' + h.slug), ...C.forms.map((f) => '/forms/' + f.id), ...C.towns.map((t) => '/jewish-' + t.slug),
+    '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah', '/tools/zmanim', '/tools/hebrew-birthday']);
+  const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
+  for (const f of walk(DIR).filter((f) => /\.(md|json)$/.test(f) && !f.endsWith('strings-en.json'))) {
+    const src = fs.readFileSync(f, 'utf8');
+    for (const m of src.matchAll(/\]\((\/[^)\s#?]*)[^)]*\)/g)) if (!ok.has(m[1]) && !/^\/(pushka|kiddush|board|media)\//.test(m[1])) bad.push(path.relative(DIR, f) + ' -> ' + m[1]);
+  }
+  assert.deepEqual(bad, [], 'fix these links');
+});
