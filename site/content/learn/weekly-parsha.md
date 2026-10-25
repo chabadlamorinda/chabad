@@ -39,7 +39,7 @@ Children often love preparing a "parsha question" to ask the family. It makes Sh
 
 ## Your bar or bat mitzvah parsha
 
-Many people feel a lifelong connection to the parsha read on their bar or bat mitzvah, or on the Shabbat of their birthday. You can find yours with our [bar and bat mitzvah date tool](/tools/bar-mitzvah).
+Many people feel a lifelong connection to the parsha read on their bar or bat mitzvah, or on the Shabbat of their birthday. You can find yours with our [bar and bat mitzvah date tool](/tools/bar-bat-mitzvah).
 
 ## Common questions
 

@@ -58,4 +58,4 @@ Yes. Children are part of Jewish life, and you will often see them in synagogue.
 Not at all. Everyone was new once. People are glad you came, and the Rabbi is happy to explain anything.
 
 ### Do I need to be a member?
-No. At Chabad there are no membership requirements to attend services. Just come.
+No. Chabad is known for welcoming every Jew, whether or not they belong anywhere. If you have questions before coming, just call.

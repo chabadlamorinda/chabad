@@ -3,7 +3,7 @@ title: The Haftarah: What It Is and Why We Read It
 description: What the Haftarah is, how it began, how it connects to the weekly Torah portion, who reads it, and what to know for a bar mitzvah.
 category: Prayer & Torah
 related: torah-reading, aliyah, bar-mitzvah, weekly-parsha
-local: Preparing a Haftarah for a bar mitzvah? Learn about our program at chabadoflamorinda.com/programs/bar-mitzvah or call 925-384-7242.
+local: Preparing a Haftarah for a bar mitzvah? Learn about our program at chabadoflamorinda.com/programs/bar-bat-mitzvah or call 925-384-7242.
 ---
 The Haftarah is a reading from the books of the Prophets, chanted in synagogue after the Torah reading on Shabbat, holidays and fast days. Each Haftarah is chosen to connect with the Torah portion of the day or with the season.
 

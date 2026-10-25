@@ -20,6 +20,7 @@ The Torah places the command to rest on Shabbat right next to the instructions f
 ## The 39 categories
 
 **Growing and preparing food**
+
 1. Plowing
 2. Sowing
 3. Reaping
@@ -33,12 +34,15 @@ The Torah places the command to rest on Shabbat right next to the instructions f
 11. Baking (cooking)
 
 **Making clothing**
+
 12. Shearing
 13. Whitening (laundering)
 14. Combing raw fibers
 15. Dyeing
 16. Spinning
-17. to 19. Three stages of weaving: setting up the loom, making loops, and weaving
+17. Warping (setting up the loom)
+18. Making loops (heddles)
+19. Weaving
 20. Separating threads
 21. Tying a knot
 22. Untying a knot
@@ -46,6 +50,7 @@ The Torah places the command to rest on Shabbat right next to the instructions f
 24. Tearing
 
 **Making leather and writing**
+
 25. Trapping
 26. Slaughtering
 27. Skinning
@@ -57,6 +62,7 @@ The Torah places the command to rest on Shabbat right next to the instructions f
 33. Erasing
 
 **Building**
+
 34. Building
 35. Demolishing
 36. Extinguishing a fire

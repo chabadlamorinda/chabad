@@ -33,7 +33,7 @@ for (const s of ['Tishrei', 'Cheshvan', 'Kislev', 'Tevet', "Sh'vat", 'Adar', 'Ad
   const Z = require('../server/site/zmanim.js');
   const start = new Date(); const end = new Date(start); end.setDate(end.getDate() + 800);
   for (const e of await Z.events(start, end)) if (['parashat', 'holiday', 'roshchodesh'].includes(e.cat) || /Chanukah|Rosh|Pesach|Sukkot|Shavuot|Purim|Yom/.test(e.title)) out.add(e.title);
-  const all = [...out].filter((s) => /[a-z]/i.test(s)).sort();
+  const all = [...out].filter((s) => /[a-z]/i.test(s) && s === s.trim()).sort();
   const lang = process.argv[2];
   if (!lang) { fs.writeFileSync(path.join(ROOT, 'site/content/i18n/strings-en.json'), JSON.stringify(all, null, 1) + '\n'); console.log(all.length + ' phrases written to site/content/i18n/strings-en.json'); return; }
   let have = {}; try { have = JSON.parse(fs.readFileSync(path.join(ROOT, `site/content/i18n/${lang}.json`), 'utf8')); } catch (e) {}
