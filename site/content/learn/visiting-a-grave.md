@@ -57,4 +57,4 @@ Yes, many families bring children. Prepare them for what they will see and keep 
 No. You can visit alone. A minyan is needed only to say Kaddish.
 
 ### Is there a special prayer to say on a yahrzeit visit?
-Psalms, the Kel Malei Rachamim prayer and your own words are all fitting. The Rabbi can give you a printed order of prayers.
+Psalms, the Kel Malei Rachamim prayer and your own words are all fitting. If you would like help with the prayers, call the Rabbi.

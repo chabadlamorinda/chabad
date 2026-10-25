@@ -154,6 +154,26 @@ function sanitizeYahrzeits(list) {
   return out;
 }
 
+// A member's own Jewish calendar: yahrzeits, Hebrew birthdays (theirs and the family's), children's
+// Bar/Bat Mitzvah dates and the wedding anniversary, soonest first.
+async function upcomingDatesFor(m, family, yz, today) {
+  const Z = require('./zmanim.js'), out = [], within = (d, days) => d && H.daysBetween(today, d) >= 0 && H.daysBetween(today, d) <= days;
+  for (const y of yz) { const n = H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, today); if (n && within(n.date, 400)) out.push({ kind: 'yahrzeit', name: y.name, date: n.date }); }
+  const people = [{ name: m.name, birthday: d10(m.birthday), night: m.birth_after_sunset, relation: 'self' }, ...family.map((f) => ({ name: f.name, birthday: f.birthday, night: f.birth_after_sunset, relation: f.relation, gender: f.gender }))];
+  for (const p of people) {
+    if (!p.birthday) continue;
+    const hp = H.hebrewOf(p.birthday, p.night), n = H.next({ day: hp.day, month: hp.month }, today);
+    if (n && within(n.date, 400)) out.push({ kind: 'hebrew-birthday', name: p.name, date: n.date });
+    if (p.relation === 'child' && p.gender) {
+      const [y, mo, d] = p.birthday.split('-').map(Number), md = await Z.mitzvahDate(new Date(y, mo - 1, d), p.night, p.gender === 'f');
+      if (within(md.date, 3 * 366)) out.push({ kind: p.gender === 'f' ? 'bat-mitzvah' : 'bar-mitzvah', name: p.name, date: md.date });
+    }
+  }
+  const ann = d10(m.anniversary);
+  if (ann) { let next = today.slice(0, 4) + ann.slice(4); if (next < today) next = String(+today.slice(0, 4) + 1) + ann.slice(4); out.push({ kind: 'anniversary', name: m.name, date: next, years: +next.slice(0, 4) - +ann.slice(0, 4) }); }
+  return out.sort((a, b) => a.date.localeCompare(b.date)).slice(0, 15);
+}
+
 function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en' }) {
   const cs = store ? communityStore(store) : null;
   const mac = (s) => crypto.createHmac('sha256', secret + ':site-member').update(s).digest('base64url');
@@ -168,6 +188,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   const secure = /^https:/.test(base) ? '; Secure' : '';
   const setCookie = (res, id) => res.setHeader('Set-Cookie', `${COOKIE}=${issue(id)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${TTL_DAYS * 86400}${secure}`);
 
+  const upcomingDates = (m, family, yz) => upcomingDatesFor(m, family, yz, new Date(now()).toISOString().slice(0, 10));
   const r = express.Router();
   r.use(express.json({ limit: '32kb' }));
   r.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
@@ -210,6 +231,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
       family: family.map((f) => ({ name: f.name, hebrewName: f.hebrew_name, relation: f.relation, gender: f.gender, birthday: f.birthday || '', birthAfterSunset: f.birth_after_sunset })),
       yahrzeits: yz.map((y) => ({ name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes, fromApp: y.source !== 'web', next: (H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, new Date(now()).toISOString().slice(0, 10)) || {}).date || '' })),
       rsvps: rs.map((x) => ({ event: x.event_slug, adults: x.adults, kids: x.kids })),
+      upcoming: await upcomingDates(m, family, yz),
     });
   }));
   r.put('/me', need, authed, wrap(async (req, res) => {

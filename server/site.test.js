@@ -142,6 +142,9 @@ test('profile, family and yahrzeits; app yahrzeits are kept separate', async () 
   const me = (await c.call('GET', '/api/site/me')).json;
   assert.equal(me.profile.hebrewName, 'Sarah bat Avraham'); assert.equal(me.family.length, 3); assert.equal(me.family[1].birthday, '2016-01-15');
   assert.equal(me.yahrzeits[0].day, 14); assert.equal(me.yahrzeits[0].month, 'Adar'); assert.ok(me.yahrzeits[0].next);
+  const kinds = me.upcoming.map((u) => u.kind);
+  assert.ok(kinds.includes('yahrzeit') && kinds.includes('hebrew-birthday') && kinds.includes('anniversary'), kinds.join());
+  assert.ok(me.upcoming.every((u, i, a) => !i || a[i - 1].date <= u.date), 'soonest first');
   // The Rabbi sees shared yahrzeits from the website too.
   const shared = await store.sharedYahrzeits(); assert.equal(shared.length, 1);
   // A My Pushka sync replaces only the app's own entries.

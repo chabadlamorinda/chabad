@@ -26,7 +26,7 @@ Many Jewish families also feel the weight of history. After the Holocaust, many 
 
 People think about cremation for many understandable reasons: cost, simplicity, family members far away, or simply not knowing the Jewish view. These concerns are real, and the Rabbi is glad to help with each one.
 
-- **Cost.** A simple, traditional Jewish funeral uses a plain wooden casket and is often less costly than people expect. If cost is a concern, please call. We will do everything we can to help.
+- **Cost.** A simple, traditional Jewish funeral uses a plain wooden casket and is often less costly than people expect. If cost is a concern, please call. We will do everything we can to help. See our page on [planning a Jewish funeral](/help/planning-a-jewish-funeral).
 - **Distance.** Families spread across the country can still arrange a burial and gather for shiva, in person or together in spirit.
 
 ## If a loved one was already cremated

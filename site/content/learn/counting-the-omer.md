@@ -65,5 +65,5 @@ If you are unsure whether you counted on a previous day, you may continue counti
 ### Do women count the Omer?
 Women are not obligated, since it is a time-bound mitzvah. Many women count, and customs differ on whether they say the blessing. Ask the Rabbi.
 
-### Why is the answer "today is" and not just the number?
-The count must state the day and, from day seven on, the weeks too, because the Torah speaks of counting both days and weeks.
+### Do I need to count the weeks too?
+Yes. From the seventh day on, the count includes both the days and the weeks, because the Torah speaks of counting both. The text in the prayer book does this for you.

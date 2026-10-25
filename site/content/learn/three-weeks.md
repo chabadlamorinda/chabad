@@ -9,7 +9,7 @@ The Three Weeks are the period between the fast of the 17th of Tammuz and the fa
 
 ## What happened during the Three Weeks?
 
-On the 17th of Tammuz, the Romans broke through the walls of Jerusalem in the year 69 CE (and the Babylonians did the same centuries earlier). Three weeks later, on the 9th of Av, Tisha B'Av, both the First and Second Temples were destroyed. Many other tragedies in Jewish history also took place in this season.
+On the 17th of Tammuz, the Romans broke through the walls of Jerusalem in the year 70 CE, during the siege that ended with the destruction of the Second Temple. Three weeks later, on the 9th of Av, Tisha B'Av, both the First and Second Temples were destroyed. Many other tragedies in Jewish history also took place in this season.
 
 The Prophet Jeremiah called this time "between the straits" (Lamentations 1:3), a narrow and difficult period.
 
@@ -26,7 +26,7 @@ From the 17th of Tammuz, Ashkenazi custom includes:
 - No weddings.
 - No haircuts or shaving.
 - No listening to live music, and many avoid recorded music too.
-- Avoiding activities that require saying Shehecheyanu, such as eating a new fruit or wearing new clothes. On Shabbat this is allowed.
+- Avoiding activities that require saying Shehecheyanu, such as eating a new fruit or wearing new clothes. Many permit this on Shabbat.
 
 ## The Nine Days
 
@@ -38,7 +38,7 @@ From Rosh Chodesh Av until Tisha B'Av, the mourning increases. Customs include:
 - No renovations or major home improvement for enjoyment.
 - No buying new clothes or major new items.
 
-Chabad communities hold a siyum each day of the Nine Days, which allows meat and wine at that meal and adds Torah study.
+The Lubavitcher Rebbe encouraged holding or joining a siyum each day of the Nine Days, adding Torah study and the joy of a mitzvah to these days.
 
 ## Tisha B'Av
 
