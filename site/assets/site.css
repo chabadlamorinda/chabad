@@ -120,6 +120,7 @@ input[type=checkbox], input[type=radio] { width: 20px; min-height: 20px; }
 .account section { margin: 28px 0; }
 
 /* tables, Q&A, directory, photos */
+.tbl-wrap { overflow-x: auto; }
 .tbl { width: 100%; border-collapse: collapse; margin: 12px 0; }
 .tbl th, .tbl td { text-align: start; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .tbl th { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }

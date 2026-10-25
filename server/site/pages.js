@@ -85,7 +85,7 @@ function mountPages(app, ctx) {
       ${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p>${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}
       ${sh.havdalah ? `<p>${esc(t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}</p>` : ''}
       <p><a href="/shabbat">${esc(t('Services & Shabbat meals'))} →</a></p>
-      <p><a href="/parsha">${esc(t("This week's Torah portion"))} →</a> · <a href="/tools/zmanim">${esc(t('Daily prayer times (zmanim)'))}</a></p>
+      <p><a href="/parsha">${esc(t("This week's Torah portion"))} →</a> · <a href="/shabbat-times">${esc(t('Shabbat times'))}</a> · <a href="/tools/zmanim">${esc(t('Daily prayer times (zmanim)'))}</a></p>
     </aside>
   </div>
 </section>
@@ -116,6 +116,7 @@ ${C.learn.some((a) => a.category === 'Lamorinda') ? `<section class="wrap sec">
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Every day'))}</h2></div>
   <div class="grid">
+    <a class="card tile" href="/jewish-holidays-${new Date().getFullYear()}"><h3>${esc(t('Jewish holidays this year'))}</h3><p>${esc(t('Every holiday with its date and candle lighting time.'))}</p></a>
     <a class="card tile" href="/tools/zmanim"><h3>${esc(t('Daily prayer times (zmanim)'))}</h3><p>${esc(t('Sunrise, latest Shema, Mincha and nightfall for your town.'))}</p></a>
     <a class="card tile" href="/parsha"><h3>${esc(t("This week's Torah portion"))}</h3><p>${esc(t('A short summary and a lesson for this week.'))}</p></a>
     <a class="card tile" href="/calendar"><h3>${esc(t('Jewish calendar'))}</h3><p>${esc(t('Holidays, Rosh Chodesh, fasts and Shabbat times, month by month.'))}</p></a>
@@ -207,7 +208,7 @@ ${svc.length ? `<h2>${esc(t('Services'))}</h2><ul class="list">${svc.map((s) => 
 <table class="tbl"><thead><tr><th>${esc(t('Shabbat'))}</th><th>${esc(t('Candle lighting'))}</th><th>${esc(t('Shabbat ends'))}</th></tr></thead><tbody>
 ${weeks.map((w) => `<tr><td>${w.parsha ? esc(X.hc(w.parsha)) : ''}<br><span class="muted">${esc(X.shortDate(w.candles.date))}</span></td><td>${esc(X.tm(w.candles))}</td><td>${w.havdalah ? esc(X.tm(w.havdalah)) : ''}</td></tr>`).join('')}
 </tbody></table>
-<p class="muted">${esc(t('Candle lighting is 18 minutes before sunset. Shabbat ends at nightfall.'))} <a href="/holidays">${esc(t('Holiday times'))}</a></p>
+<p class="muted">${esc(t('Candle lighting is 18 minutes before sunset. Shabbat ends at nightfall.'))} <a href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a> · <a href="/jewish-holidays-${new Date().getFullYear()}">${esc(t('Holiday times'))}</a></p>
 ${md(C.org.shabbatText || '')}
 <p class="btns"><a class="btn gold" href="/events?c=shabbat">${esc(t('Shabbat dinners and events'))}</a><a class="btn ghost" href="/contact">${esc(t('Host or be hosted for a meal'))}</a></p>
 </section>`;
@@ -232,7 +233,7 @@ ${hols.map((h) => { const p = C.holidays.find((x) => x.slug === h.slug); return 
     const body = `<article class="wrap sec narrow">
 <p class="crumbs"><a href="/holidays">${esc(t('Holidays'))}</a> ›</p>
 <h1>${esc(h.title)}${h.hebrew && X.lang !== 'he' ? ` <span class="he" lang="he">${esc(h.hebrew)}</span>` : ''}</h1>
-${nextDate ? `<p class="when">${esc(t('Next: {date}', { date: X.longDate(nextDate.date) }))}</p>` : ''}
+${nextDate ? `<p class="when">${esc(t('Next: {date}', { date: X.longDate(nextDate.date) }))} · <a href="/jewish-holidays-${nextDate.date.slice(0, 4)}">${esc(t('All holiday dates'))}</a></p>` : ''}
 ${evs.length ? `<h2>${esc(t('Celebrate with us'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : ''}
 ${(() => { const fm = (C.forms || []).filter((f) => f.holiday === h.slug || (h.slug === 'yom-kippur' && f.holiday === 'rosh-hashanah')); return fm.length ? `<p class="btns">${fm.map((f) => `<a class="btn gold" href="/forms/${f.id}">${esc(f.title)}</a>`).join('')}</p>` : ''; })()}
 ${md(h.body)}

@@ -45,7 +45,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
   <h1>${esc(tr('Jewish {town}', v))}</h1>
   <p class="lead">${esc(t.intro)}</p>
   <p class="btns"><a class="btn gold" href="/events">${esc(tr('Upcoming events'))}</a><a class="btn ghost-l" href="https://maps.google.com/?saddr=${encodeURIComponent((t.name_en || t.slug) + ', CA')}&daddr=${encodeURIComponent(fullAddress(o))}" rel="noopener" target="_blank">${esc(tr('Directions from {town}', v))}</a></p></div>
-  <aside class="card shabbat-card"><p class="eyebrow">${esc(tr('Shabbat in {town}', v))}</p>${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p>${esc(tr('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}${sh.havdalah ? `<p>${esc(tr('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}</p>` : ''}<p><a href="/shabbat">${esc(tr('Services & Shabbat meals'))} →</a></p></aside>
+  <aside class="card shabbat-card"><p class="eyebrow">${esc(tr('Shabbat in {town}', v))}</p>${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p>${esc(tr('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}${sh.havdalah ? `<p>${esc(tr('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}</p>` : ''}<p><a href="/shabbat">${esc(tr('Services & Shabbat meals'))} →</a></p><p><a href="${t.slug === 'lafayette' ? '/shabbat-times' : '/shabbat-times/' + t.slug}">${esc(tr('Shabbat times for the whole year'))}</a></p></aside>
 </div></section>
 <section class="wrap sec narrow">
   ${t.places && t.places.length ? `<p>${esc(tr('We welcome Jewish families from every part of {town}:', v))} ${esc(t.places.join(', '))}.</p>` : ''}

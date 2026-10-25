@@ -319,7 +319,7 @@ test('Kaddish requests and the prayer list stay private', async () => {
 test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
   const c = client(), i18n = server_site().i18n;
   i18n.missing.clear();
-  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask'];
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask', '/shabbat-times', '/shabbat-times/orinda', '/jewish-holidays-' + new Date().getFullYear()];
   for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
   assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
   // and the content itself: every guide, help page, holiday and page has both translations
@@ -385,6 +385,20 @@ test('chat without Claude: answers with matching pages', () => {
   const { searchAnswer } = require('./site/chat.js');
   const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));
   assert.match(out, /\/forms\/hebrew-school|\/programs\/hebrew-school/); assert.match(out, /925-384-7242/);
+});
+
+test('yearly pages: Jewish holidays by year and Shabbat times by town', async () => {
+  const c = client(), y = new Date().getFullYear();
+  const h = (await c.call('GET', '/jewish-holidays-' + (y + 1))).text;
+  for (const name of ['Rosh Hashanah', 'Yom Kippur', 'Chanukah', 'Passover', 'Shavuot']) assert.match(h, new RegExp(name));
+  assert.match(h, /Candle lighting/); assert.match(h, /ItemList/);
+  assert.equal((await c.call('GET', '/jewish-holidays-' + (y + 5))).status, 404);
+  assert.equal((await c.call('GET', '/jewish-holidays')).status, 302);
+  const s = (await c.call('GET', '/shabbat-times/moraga')).text;
+  assert.match(s, /Shabbat candle lighting times in Moraga/); assert.ok((s.match(/<tr>/g) || []).length > 50);
+  assert.equal((await c.call('GET', '/shabbat-times/lafayette')).status, 301);
+  assert.equal((await c.call('GET', '/shabbat-times/walnut-creek')).status, 404);
+  assert.match((await c.call('GET', '/sitemap.xml')).text, /shabbat-times\/orinda/);
 });
 
 test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () => {

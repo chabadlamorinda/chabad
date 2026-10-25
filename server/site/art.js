@@ -55,6 +55,8 @@ function artFor(kind, slug, extra = '') {
 function artForPath(p, title = '') {
   const m = /^\/(learn|programs|holidays|help|forms|events|parsha)\/([^/?#]+)/.exec(p);
   if (m) return artFor({ learn: 'learn', programs: 'program', holidays: 'holiday', help: 'help', forms: 'form', events: 'event', parsha: 'learn' }[m[1]], m[1] === 'parsha' ? 'weekly-parsha' : decodeURIComponent(m[2]), title);
+  if (/^\/jewish-holidays-\d{4}$/.test(p)) return exists('calendar') ? 'calendar' : '';
+  if (/^\/shabbat-times(\/|$)/.test(p)) return exists('shabbat-candles') ? 'shabbat-candles' : '';
   const t = /^\/jewish-([a-z-]+)$/.exec(p);
   if (t && t[1] !== 'lamorinda') return artFor('town', t[1]);
   const PAGES = { '/tools/zmanim': 'clock', '/daily-study': 'scroll-quill', '/parsha': 'torah-scroll', '/calendar': 'calendar', '/ask': 'chat-bubble', '/tools/hebrew-birthday': 'gift', '/tools/hebrew-date': 'calendar', '/tools/yahrzeit': 'broken-heart-candle', '/tools/bar-bat-mitzvah': 'torah-scroll',
