@@ -11,3 +11,6 @@ These came from the current website, which disagrees with itself in places, or w
 7. **Bay Kosher** is described as "a project of Chabad of Lamorinda". Is that right?
 8. **Instagram, YouTube, WhatsApp**: only Facebook was found. Send any other links.
 9. **Photos**: send a photo of the Rabbi and Rebbetzin and some community photos for the About page and home page (or connect Facebook).
+10. **Nearby towns**: the site now has pages for Walnut Creek, Pleasant Hill, Martinez, Concord and Alamo besides Lafayette, Moraga and Orinda. Some of these towns may be served by another Chabad house; remove or add any towns you like (`site/content/towns.json`).
+11. **Town page wording**: offers such as visiting Rossmoor residents or hospital visits in the Martinez area, and Shabbat dinners for Saint Mary's College and Diablo Valley College students. Please confirm you are happy to offer these.
+12. **Guides to Jewish topics** (48 guides at /learn): written from a Chabad perspective with "ask the Rabbi" for case-by-case questions. Please skim a few, especially challah (amount of flour for separating challah), tefillin, tzitzit and mikvah, for your community's customs.

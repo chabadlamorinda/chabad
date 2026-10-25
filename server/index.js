@@ -158,7 +158,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 
   // The website (pages, accounts, RSVPs, SEO files). Mounted before the app's own "/" redirect below
   // and before /api, whose catch-all would otherwise answer /api/site.
-  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook });
+  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook, reminders });
   app.locals.site = site;
 
   // ---------- API ----------

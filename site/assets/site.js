@@ -63,6 +63,23 @@
     });
   }
 
+  // ---------- Community board: share your news ----------
+  var sub = $('[data-submit]');
+  if (sub) {
+    var guestInfo = store.get('cl_guest') || {};
+    if (guestInfo.name && !sub.name.value) sub.name.value = guestInfo.name;
+    if (guestInfo.email && !sub.email.value) sub.email.value = guestInfo.email;
+    sub.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var m = $('.msg', sub), b = $('button', sub); b.disabled = true;
+      api('POST', '/submit', { kind: sub.kind.value, title: sub.title.value, body: sub.body.value, link: sub.link.value, name: sub.name.value, email: sub.email.value }).then(function (r) {
+        b.disabled = false;
+        if (r.ok) { msg(m, 'Thank you! The Rabbi will review it and post it soon.', true); sub.title.value = ''; sub.body.value = ''; sub.link.value = ''; }
+        else msg(m, r.error || 'Something went wrong.');
+      });
+    });
+  }
+
   // ---------- My account ----------
   var acct = $('#account');
   if (acct) loadAccount();

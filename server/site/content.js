@@ -9,7 +9,18 @@ const { frontMatter, plain } = require('./md.js');
 const DIR = path.join(__dirname, '..', '..', 'site', 'content');
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const LOCAL = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/;
-const CATEGORIES = ['shabbat', 'holiday', 'class', 'kids', 'teens', 'women', 'men', 'community', 'seniors', 'family'];
+const CATEGORIES = ['shabbat', 'holiday', 'class', 'kids', 'teens', 'women', 'men', 'community', 'seniors', 'family', 'volunteer'];
+const LEARN_CATEGORIES = ['Shabbat & holidays', 'Jewish home', 'Kosher', 'Prayer & Torah', 'Life cycle', 'Mourning & remembrance', 'Jewish ideas'];
+const optJson = (dir, f, dflt) => (fs.existsSync(path.join(dir, f)) ? JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) : dflt);
+
+// A guide's "## Common questions" section becomes Q&A (shown as such and marked up for Google).
+function splitFaq(body) {
+  const i = body.search(/^## Common questions\s*$/m);
+  if (i < 0) return { body, faq: [] };
+  const faq = [], rest = body.slice(i).split('\n').slice(1).join('\n');
+  for (const part of rest.split(/^### /m).slice(1)) { const [q, ...a] = part.split('\n'); if (q.trim() && a.join('\n').trim()) faq.push({ q: q.trim(), a: a.join('\n').trim() }); }
+  return { body: body.slice(0, i).trim(), faq };
+}
 
 // "2026-12-06T16:00" in Lafayette -> "2026-12-06T16:00:00-08:00" (handles daylight saving).
 function withOffset(local) {
@@ -24,7 +35,8 @@ function withOffset(local) {
 function load(dir = DIR) {
   const rj = (f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
   const org = rj('org.json'), programs = rj('programs.json'), events = rj('events.json'), faq = rj('faq.json'), directory = rj('directory.json');
-  const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays');
+  const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays'), learn = readPagesIn(dir, 'learn');
+  const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
   const errors = [];
   const need = (cond, msg) => { if (!cond) errors.push(msg); };
 
@@ -46,6 +58,9 @@ function load(dir = DIR) {
     if (e.rsvp) need(!e.rsvp.capacity || (Number.isInteger(e.rsvp.capacity) && e.rsvp.capacity > 0), `event ${e.slug}: rsvp.capacity must be a whole number`);
   }
   for (const f of faq) need(f.q && f.a, 'faq.json: every entry needs q and a');
+  for (const t of towns) { uniq('town', t.slug); need(t.name && t.intro && Number.isFinite(t.lat) && Number.isFinite(t.lng) && ['home', 'near'].includes(t.tier), `town ${t.slug}: name, intro, lat, lng and tier (home or near) are required`); }
+  for (const a of learn) { uniq('learn', a.slug); need(a.title && a.description, `learn ${a.slug}: title and description are required`); need(LEARN_CATEGORIES.includes(a.category), `learn ${a.slug}: category must be one of ${LEARN_CATEGORIES.join(', ')}`); }
+  for (const [from, to] of Object.entries(redirects)) need(/^\/[^\s]*$/.test(from) && /^(\/|https?:\/\/)/.test(to), `redirects.json: "${from}" -> "${to}" must both be paths`);
   for (const g of directory) { need(g.group && Array.isArray(g.items), 'directory.json: every group needs group and items'); for (const i of g.items || []) need(i.name && i.text, `directory ${g.group}: every item needs name and text`); }
   if (errors.length) { const e = new Error('Website content has problems:\n- ' + errors.join('\n- ')); e.errors = errors; throw e; }
 
@@ -55,7 +70,14 @@ function load(dir = DIR) {
     e.published = e.status !== 'draft';
   }
   events.sort((a, b) => a.start.localeCompare(b.start));
-  return { org, programs, events, faq, directory, pages, holidays, loadedAt: new Date() };
+  const learnSlugs = new Set(learn.map((a) => a.slug));
+  for (const a of learn) {
+    const { body, faq: qa } = splitFaq(a.body);
+    a.body = body; a.faq = qa;
+    a.related = String(a.related || '').split(',').map((x) => x.trim()).filter((x) => learnSlugs.has(x) && x !== a.slug);
+  }
+  for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
+  return { org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, loadedAt: new Date() };
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);
@@ -65,6 +87,12 @@ function readPagesIn(dir, sub) {
     return { slug: f.replace(/\.md$/, ''), ...meta, body, text: plain(body) };
   });
 }
+// Straight-line distance in miles.
+function miles(a, b) {
+  const R = 3958.8, r = (d) => (d * Math.PI) / 180, dLat = r(b.lat - a.lat), dLng = r(b.lng - a.lng);
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
 const fullAddress = (org) => `${org.address.street}, ${org.address.city}, ${org.address.region} ${org.address.postal}`;
 
-module.exports = { load, withOffset, fullAddress, CATEGORIES, DIR };
+module.exports = { load, withOffset, fullAddress, CATEGORIES, LEARN_CATEGORIES, DIR, splitFaq };

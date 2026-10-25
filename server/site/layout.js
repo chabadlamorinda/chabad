@@ -7,7 +7,7 @@ const { fullAddress } = require('./content.js');
 
 const NAV = [
   ['/events', 'Events'], ['/shabbat', 'Shabbat'], ['/holidays', 'Holidays'], ['/programs', 'Programs'],
-  ['/jewish-lamorinda', 'Jewish Lamorinda'], ['/about', 'About'], ['/contact', 'Contact'],
+  ['/learn', 'Learn'], ['/jewish-lamorinda', 'Jewish Lamorinda'], ['/community', 'Community'], ['/about', 'About'],
 ];
 
 // Organization + place of worship, on every page (Google knowledge panel, maps, AI answers).
@@ -27,7 +27,10 @@ function orgLd(c, base) {
     email: o.email || undefined,
     address: { '@type': 'PostalAddress', streetAddress: o.address.street, addressLocality: o.address.city, addressRegion: o.address.region, postalCode: o.address.postal, addressCountry: 'US' },
     geo: { '@type': 'GeoCoordinates', latitude: o.geo.lat, longitude: o.geo.lng },
-    areaServed: (o.areaServed || []).map((n) => ({ '@type': 'City', name: n })),
+    areaServed: (c.towns && c.towns.length ? c.towns.map((t) => t.name) : o.areaServed || []).map((n) => ({ '@type': 'City', name: n + ', CA' })),
+    hasMap: 'https://maps.google.com/?q=' + encodeURIComponent(fullAddress(o)),
+    isAccessibleForFree: true,
+    publicAccess: true,
     employee: (o.staff || []).map((p) => ({ '@type': 'Person', name: p.name, jobTitle: p.role })),
     sameAs: Object.values(o.social || {}).filter(Boolean),
     parentOrganization: { '@type': 'Organization', name: 'Chabad-Lubavitch', url: 'https://www.chabad.org' },
@@ -63,6 +66,8 @@ function layout(c, { base, indexable, path, title, description, body, ld = [], i
 <meta name="twitter:card" content="summary_large_image">
 ${o.social && o.social.facebookAppId ? `<meta property="fb:app_id" content="${esc(o.social.facebookAppId)}">` : ''}
 <meta name="theme-color" content="#14284b">
+${analytics.google ? `<meta name="google-site-verification" content="${esc(analytics.google)}">` : ''}${analytics.bing ? `<meta name="msvalidate.01" content="${esc(analytics.bing)}">` : ''}
+<meta name="geo.region" content="US-CA"><meta name="geo.placename" content="Lafayette, California"><meta name="geo.position" content="${o.geo.lat};${o.geo.lng}"><meta name="ICBM" content="${o.geo.lat}, ${o.geo.lng}">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/pushka/icon-180.png">
 <link rel="manifest" href="/site.webmanifest">
@@ -112,11 +117,15 @@ function footer(c) {
     </div>
     <div>
       <p class="ftr-h">Jewish life</p>
-      <a href="/jewish-lamorinda">Everything Jewish in Lamorinda</a><a href="/tools/hebrew-date">Hebrew date converter</a><a href="/tools/yahrzeit">Yahrzeit calculator</a><a href="/tools/bar-bat-mitzvah">Bar &amp; Bat Mitzvah date</a><a href="/faq">Questions &amp; answers</a>
+      <a href="/jewish-lamorinda">Everything Jewish in Lamorinda</a><a href="/learn">Learn about Judaism</a><a href="/tools/hebrew-date">Hebrew date converter</a><a href="/tools/yahrzeit">Yahrzeit calculator</a><a href="/tools/bar-bat-mitzvah">Bar &amp; Bat Mitzvah date</a><a href="/faq">Questions &amp; answers</a>
+    </div>
+    <div>
+      <p class="ftr-h">Our area</p>
+      ${(c.towns || []).map((t) => `<a href="/jewish-${t.slug}">Jewish ${esc(t.name)}</a>`).join('')}
     </div>
     <div>
       <p class="ftr-h">Get involved</p>
-      <a href="/account">My account &amp; family</a><a href="/donate">Donate</a><a href="/pushka/">My Pushka app</a><a href="/kiddush/">Sponsor a Kiddush</a><a href="/board/">Chai Club</a>
+      <a href="/account">My account &amp; family</a><a href="/get-involved">Get involved</a><a href="/community">Community board</a><a href="/welcome">New to the area?</a><a href="/donate">Donate</a><a href="/pushka/">My Pushka app</a><a href="/kiddush/">Sponsor a Kiddush</a><a href="/board/">Chai Club</a>
     </div>
   </div>
   <div class="wrap ftr-base"><p>&copy; ${new Date().getFullYear()} ${esc(o.name)}. ${esc(o.legal || '')} Part of the worldwide Chabad-Lubavitch movement.</p><p><a href="/privacy">Privacy</a> · <a href="/accessibility">Accessibility</a></p></div>

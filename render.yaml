@@ -58,3 +58,13 @@ services:
         sync: false
       - key: FB_PAGE_TOKEN            # long-lived Page access token
         sync: false
+      - key: IG_USER_ID               # Instagram business account id (posts the same drafts to Instagram)
+        sync: false
+      - key: GOOGLE_SITE_VERIFICATION # the code from Google Search Console's "HTML tag" option
+        sync: false
+      - key: BING_SITE_VERIFICATION   # Bing Webmaster Tools (Bing powers ChatGPT and Copilot search)
+        sync: false
+      - key: INDEXNOW_KEY             # any random 32-letter code; tells Bing and others about new pages instantly
+        generateValue: true
+      - key: ADMIN_EMAIL              # where "someone sent a Mazal Tov / idea" notices go (default: the site's email)
+        sync: false

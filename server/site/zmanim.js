@@ -26,11 +26,12 @@ const HOLIDAY_PAGES = [
 const holidaySlug = (desc) => { const h = HOLIDAY_PAGES.find(([, re]) => re.test(desc)); return h ? h[0] : null; };
 
 const cache = new Map();
-async function events(start, end) {
-  const key = ymd(start) + ':' + ymd(end);
+const HOME = { lat: 37.8858, lng: -122.118, name: 'Lafayette, CA' };
+async function events(start, end, where = HOME) {
+  const key = ymd(start) + ':' + ymd(end) + ':' + where.lat + ',' + where.lng;
   if (cache.has(key)) return cache.get(key);
   const { HebrewCalendar, Location } = await load();
-  const location = new Location(37.8858, -122.118, false, TZ, 'Lafayette, CA', 'US');
+  const location = new Location(where.lat, where.lng, false, TZ, where.name || 'Lafayette, CA', 'US');
   const list = HebrewCalendar.calendar({ location, candlelighting: true, havdalahDeg: 8.5, start, end, sedrot: true, il: false }).map((e) => {
     const cats = e.getCategories ? e.getCategories() : [];
     let time = e.eventTime || null;
@@ -43,9 +44,9 @@ async function events(start, end) {
 }
 
 // The coming (or current) Shabbat: candle lighting, parsha, Havdalah.
-async function thisShabbat(now = new Date()) {
+async function thisShabbat(now = new Date(), where = HOME) {
   const today = todayLocal(now), end = new Date(today); end.setDate(end.getDate() + 8);
-  const list = await events(today, end);
+  const list = await events(today, end, where);
   const candles = list.find((e) => e.cat === 'candles'), parsha = list.find((e) => e.cat === 'parashat');
   const havdalah = list.find((e) => e.cat === 'havdalah' && (!candles || e.date > candles.date));
   return { candles, parsha, havdalah };

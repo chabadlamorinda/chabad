@@ -17,7 +17,8 @@ let pg, store, server, base, mails, fbPosts;
 test.before(async () => {
   pg = await startPg(); store = createStore(pg.url); await store.migrate();
   mails = []; fbPosts = [];
-  const facebook = { photos: async () => [{ src: 'https://scontent.xx.fbcdn.net/a.jpg', alt: 'Menorah lighting', link: 'https://facebook.com/p/1' }], postEvent: async (e) => { fbPosts.push(e.slug); return { id: 'post_1' }; } };
+  const facebook = { instagram: true, photos: async () => [{ src: 'https://scontent.xx.fbcdn.net/a.jpg', alt: 'Menorah lighting', link: 'https://facebook.com/p/1' }],
+    publish: async (p) => { fbPosts.push(['facebook', p]); return 'page_post_1'; }, publishInstagram: async (p) => { if (!p.image) throw new Error('Instagram posts need a picture'); fbPosts.push(['instagram', p]); return 'ig_1'; } };
   const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook,
     mailer: { send: async (m) => { mails.push(m); } } });
   server = await new Promise((r) => { const s = app.listen(0, () => r(s)); });
@@ -175,6 +176,79 @@ test('Rabbi area: RSVP lists, birthdays, post to Facebook', async () => {
   const list = (await a.call('GET', '/admin/api/site/rsvps/' + EVENT)).json.list; assert.equal(list[0].name, 'Sara Levi');
   const b = (await a.call('GET', '/admin/api/site/birthdays?days=10')).json.items.find((i) => i.kind === 'birthday');
   assert.equal(b.name, 'Noa'); assert.equal(b.family, 'Sara Levi');
-  assert.equal((await a.call('POST', '/admin/api/site/facebook/' + EVENT, {}, h)).json.id, 'post_1'); assert.deepEqual(fbPosts, [EVENT]);
+  // Social drafts: every upcoming event is a ready post; one button publishes it.
+  const soc = (await a.call('GET', '/admin/api/site/social')).json;
+  const d = soc.items.find((x) => x.slug === EVENT);
+  assert.match(d.message, /RSVP in one tap: http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.match(d.message, /#Lafayette #Moraga #Orinda/);
+  assert.match(d.googleCalendar, /^https:\/\/calendar\.google\.com\/calendar\/render\?action=TEMPLATE/);
+  assert.deepEqual(d.posted, {});
+  const pub = (await a.call('POST', '/admin/api/site/social/' + EVENT, { message: 'Edited text', networks: ['facebook', 'instagram'] }, h)).json;
+  assert.equal(pub.results.facebook.ok, true); assert.equal(pub.results.instagram.ok, false, 'no picture, no Instagram');
+  assert.equal(fbPosts[0][1].message, 'Edited text'); assert.equal(fbPosts[0][1].link, 'http://site.test/events/' + EVENT);
+  assert.ok((await a.call('GET', '/admin/api/site/social')).json.items.find((x) => x.slug === EVENT).posted.facebook);
   assert.equal((await client().call('GET', '/admin/api/site/rsvps')).status, 401);
+});
+
+test('town pages: local Shabbat times, distance, local questions, linked everywhere', async () => {
+  const c = client();
+  const m = await c.call('GET', '/jewish-moraga');
+  assert.equal(m.status, 200);
+  assert.match(m.text, /<h1>Jewish Moraga<\/h1>/); assert.match(m.text, /3\.6 miles from us/); assert.match(m.text, /Is there a synagogue in Moraga\?/);
+  assert.match(m.text, /"@type":"FAQPage"/); assert.match(m.text, /Shabbat in Moraga/);
+  assert.equal((await c.call('GET', '/jewish-martinez')).status, 200);
+  assert.equal((await c.call('GET', '/jewish-nowhere')).status, 404);
+  assert.match((await c.call('GET', '/our-area')).text, /Jewish Pleasant Hill/);
+  assert.match((await c.call('GET', '/')).text, /href="\/jewish-orinda"/);
+  assert.match((await c.call('GET', '/sitemap.xml')).text, /\/jewish-walnut-creek/);
+  assert.match((await c.call('GET', '/llms.txt')).text, /Jewish Martinez, CA/);
+});
+
+test('learn guides: index, article with Q&A markup, related guides', async () => {
+  const c = client(), C = load();
+  assert.ok(C.learn.length >= 16);
+  const a = C.learn.find((x) => x.slug === 'mezuzah');
+  const r = await c.call('GET', '/learn/mezuzah');
+  assert.equal(r.status, 200); assert.match(r.text, /"@type":"Article"/); assert.match(r.text, /In Lamorinda/);
+  if (a.faq.length) assert.match(r.text, /"@type":"FAQPage"/);
+  assert.match((await c.call('GET', '/learn')).text, /href="\/learn\/shabbat"/);
+  assert.equal((await c.call('GET', '/learn/not-a-guide')).status, 404);
+});
+
+test('old Chabad.org addresses redirect to the new pages', async () => {
+  const c = client();
+  for (const [from, to] of [['/3186196', '/programs/hebrew-school'], ['/templates/section_cdo/aid/5180613/jewish/Lamorinda-Jewish-Preschool.htm', '/programs/jewish-preschool'], ['/article.asp?aid=3186877', '/programs/hebrew-school'], ['/4970020', '/donate']]) {
+    const r = await c.call('GET', from); assert.equal(r.status, 301, from); assert.equal(r.headers.get('location'), to);
+  }
+});
+
+test('community board: submit, moderate, then it appears', async () => {
+  const g = client();
+  assert.equal((await g.call('POST', '/api/site/submit', { kind: 'mazal-tov', title: 'x', name: 'A', email: 'a@x.co' }, { 'x-site': '' })).status, 403);
+  assert.equal((await g.call('POST', '/api/site/submit', { kind: 'nope', title: 'x', name: 'A', email: 'a@x.co' })).json.code, 'invalid_kind');
+  assert.equal((await g.call('POST', '/api/site/submit', { kind: 'mazal-tov', title: 'Mazal Tov to the Levi family on the twins!', body: 'Welcome Noa!', name: 'Sara', email: 'sara@x.co' })).status, 200);
+  assert.match(mails[mails.length - 1].subject, /New on the website: Mazal Tov/);
+  assert.ok(!(await g.call('GET', '/community')).text.includes('Levi family on the twins'), 'not shown before approval');
+  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const item = (await a.call('GET', '/admin/api/site/submissions')).json.items[0];
+  assert.equal((await a.call('POST', '/admin/api/site/submissions/' + item.id, { status: 'approved' }, { 'x-admin': '1' })).status, 200);
+  assert.match((await g.call('GET', '/community')).text, /Levi family on the twins/);
+  assert.match((await g.call('GET', '/')).text, /Community news/);
+  assert.equal((await g.call('GET', '/get-involved')).status, 200);
+});
+
+test('reminder emails: yahrzeit a week and a day before, Hebrew birthday, never twice', async () => {
+  const c = await signIn();
+  await c.call('PUT', '/api/site/me', { name: 'Sara Levi' });
+  const H = require('../pushka/hebdate.js'), { createReminders } = require('./site/reminders.js');
+  const today = '2026-11-01', inWeek = H.addDays(today, 7), p = H.parts(inWeek), bday = H.addDays(today, 1);
+  await c.call('PUT', '/api/site/yahrzeits', { yahrzeits: [{ name: 'Avraham ben Yitzchak', day: p.day, month: p.month }] });
+  const kidBorn = (() => { const t = H.parts(bday); for (let y = 2015; ; y--) { const d = String(y) + bday.slice(4); const q = H.parts(d); if (q.day === t.day && q.month === t.month) return d; if (y < 1990) return null; } })();
+  if (kidBorn) await c.call('PUT', '/api/site/family', { family: [{ name: 'Noa', relation: 'child', birthday: kidBorn }] });
+  const out = [], rem = createReminders({ store, mailer: { send: async (m) => out.push(m) }, base: 'http://site.test', org: load().org, now: () => new Date(today + 'T18:00:00Z') });
+  const n = await rem.run();
+  assert.ok(out.some((m) => /Yahrzeit of Avraham ben Yitzchak: in one week/.test(m.subject)));
+  if (kidBorn) assert.ok(out.some((m) => /Noa's Hebrew birthday is tomorrow/.test(m.subject)));
+  assert.equal(await rem.run(), 0, 'each reminder is sent once'); assert.equal(out.length, n);
+  const early = createReminders({ store, mailer: { send: async () => {} }, base: '', org: load().org, now: () => new Date(today + 'T14:00:00Z') });
+  assert.equal(await early.run(), 0, 'not before 9 AM Lafayette time');
 });

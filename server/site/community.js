@@ -37,6 +37,17 @@ CREATE TABLE IF NOT EXISTS rsvps (
   note TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE UNIQUE INDEX IF NOT EXISTS rsvps_event_email_idx ON rsvps (event_slug, lower(email));
+CREATE TABLE IF NOT EXISTS submissions (
+  id TEXT PRIMARY KEY, kind TEXT NOT NULL, member_id TEXT REFERENCES members(id) ON DELETE SET NULL,
+  name TEXT NOT NULL, email TEXT NOT NULL, title TEXT NOT NULL, body TEXT NOT NULL DEFAULT '', link TEXT NOT NULL DEFAULT '',
+  status TEXT NOT NULL DEFAULT 'pending', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), decided_at TIMESTAMPTZ
+);
+CREATE INDEX IF NOT EXISTS submissions_status_idx ON submissions (status, created_at);
+CREATE TABLE IF NOT EXISTS social_posts (
+  event_slug TEXT NOT NULL, network TEXT NOT NULL, post_id TEXT NOT NULL DEFAULT '', message TEXT NOT NULL DEFAULT '',
+  posted_at TIMESTAMPTZ NOT NULL DEFAULT now(), PRIMARY KEY (event_slug, network)
+);
+CREATE TABLE IF NOT EXISTS email_log (key TEXT PRIMARY KEY, sent_at TIMESTAMPTZ NOT NULL DEFAULT now());
 `;
 
 const newId = (p) => p + crypto.randomBytes(12).toString('hex');
@@ -163,7 +174,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
 
   r.get('/status', (req, res) => res.json({ accounts: !!(cs && mailer), rsvp: !!cs }));
 
-  r.post('/login', need, limit('site-login', 6, 15 * 60 * 1000), wrap(async (req, res) => {
+  r.post('/login', need, limit('site-login', 20, 15 * 60 * 1000), wrap(async (req, res) => {
     const email = clean(req.body && req.body.email, 254).toLowerCase();
     if (!validEmail(email)) return bad(res, 'invalid_email', 'Please enter a valid email address.');
     if (!mailer) return res.status(503).json({ code: 'not_configured', error: 'Email sign-in is not switched on yet.' });
@@ -244,7 +255,8 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     setCookie(res, await cs.memberForEmail(email)); res.redirect(302, '/account');
   }));
 
-  return { cs, counts: async () => (cs ? cs.counts() : {}) };
+  const readMember = async (req) => { const id = cs && readCookie(req); return id ? store.getMember(id) : null; };
+  return { cs, readMember, counts: async () => (cs ? cs.counts() : {}) };
 }
 
 // Rabbi area: RSVP lists, upcoming birthdays (English and Hebrew), community families.

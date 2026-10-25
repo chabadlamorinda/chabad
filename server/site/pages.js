@@ -7,6 +7,7 @@ const { md, esc, plain } = require('./md.js');
 const { layout } = require('./layout.js');
 const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
+const { googleCalendarUrl } = require('./social.js');
 
 const ROOT = path.join(__dirname, '..', '..');
 const MONTH = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -64,16 +65,20 @@ function mountPages(app, ctx) {
       .send(layout(c(), { base, indexable, analytics, hebrewDate: hd ? hd.en : '', shabbat: sh, ...opts }));
   }
   const counts = async () => { try { return rsvpCounts ? await rsvpCounts() : {}; } catch (e) { return {}; } };
+  let news = async () => [];
+  const setNews = (fn) => { news = fn; };
   const r = express.Router();
   const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
 
   // ---------- home ----------
   r.get(['/', '/home'], wrap(async (req, res, next) => {
     if (req.path === '/' && !ctx.isHome(req)) return next(); // the app's own address still opens My Pushka
-    const C = c(), o = C.org, [sh, hols, cnt, pics] = await Promise.all([Z.thisShabbat(), Z.upcomingHolidays(200), counts(), photos ? photos(8).catch(() => []) : []]);
+    const C = c(), o = C.org, [sh, hols, cnt, pics, posts] = await Promise.all([Z.thisShabbat(), Z.upcomingHolidays(200), counts(), photos ? photos(14).catch(() => []) : [], news(3).catch(() => [])]);
+    const mosaic = pics.slice(0, 6), strip = pics.slice(6, 14);
     const evs = upcoming().slice(0, 4), nextHol = hols[0], holPage = nextHol && C.holidays.find((h) => h.slug === nextHol.slug);
     const body = `
-<section class="hero">
+<section class="hero${mosaic.length ? ' photo' : ''}">
+  ${mosaic.length ? `<div class="mosaic" aria-hidden="true">${mosaic.map((p) => `<img src="${esc(p.big || p.src)}" alt="" decoding="async">`).join('')}</div>` : ''}
   <div class="wrap hero-in">
     <div>
       <p class="eyebrow">Lafayette · Moraga · Orinda</p>
@@ -103,12 +108,19 @@ ${nextHol ? `<section class="band"><div class="wrap band-in"><div><p class="eyeb
   <div class="sec-h"><h2>Everything Jewish in Lamorinda</h2><a href="/jewish-lamorinda">The full guide →</a></div>
   <div class="chips">${C.directory.map((g) => `<a class="chip" href="/jewish-lamorinda#${g.id || ''}">${esc(g.group)}</a>`).join('')}<a class="chip" href="/tools/hebrew-date">Hebrew date converter</a><a class="chip" href="/tools/yahrzeit">Yahrzeit calculator</a><a class="chip" href="/tools/bar-bat-mitzvah">Bar/Bat Mitzvah date</a></div>
 </section>
-${pics.length ? `<section class="wrap sec"><div class="sec-h"><h2>Moments from our community</h2><a href="/photos">More photos →</a></div><div class="pics">${pics.map((p) => `<a href="${esc(p.link)}" rel="noopener" target="_blank"><img src="${esc(p.src)}" alt="${esc(p.alt)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div></section>` : ''}
+${strip.length ? `<section class="wrap sec"><div class="sec-h"><h2>Moments from our community</h2><a href="/photos">More photos →</a></div><div class="pics">${strip.map((p) => `<a href="${esc(p.link)}" rel="noopener" target="_blank"><img src="${esc(p.src)}" alt="${esc(p.alt)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div></section>` : ''}
+<section class="band"><div class="wrap"><div class="sec-h"><h2>Your Jewish home in your town</h2><a href="/our-area">Our area →</a></div>
+  <p class="chips">${C.towns.map((t) => `<a class="chip" href="/jewish-${t.slug}">Jewish ${esc(t.name)}</a>`).join('')}</p></div></section>
+<section class="wrap sec">
+  <div class="sec-h"><h2>Learn about Judaism</h2><a href="/learn">All guides →</a></div>
+  <div class="grid">${['shabbat', 'kosher', 'mezuzah', 'bar-mitzvah', 'jewish-wedding', 'shiva', 'yahrzeit', 'tefillin'].map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>
+</section>
+${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>Community news</h2><a href="/community">Community board →</a></div><div class="grid">${posts.map((i) => `<a class="card tile" href="/community"><p class="eyebrow">${esc(i.kind === 'mazal-tov' ? 'Mazal Tov' : i.kind === 'shiva' ? 'Condolences' : 'News')}</p><h3>${esc(i.title)}</h3></a>`).join('')}</div></section>` : ''}
 <section class="wrap sec join">
   <div class="card join-card">
     <h2>One sign-in for everything</h2>
     <p>Save your family once: names, Hebrew names, birthdays and yahrzeits. Then RSVP to any event in one tap, get reminders for yahrzeits and Hebrew birthdays, and hear about what is coming up.</p>
-    <p class="btns"><a class="btn gold" href="/account">Create my free account</a></p>
+    <p class="btns"><a class="btn gold" href="/account">Create my free account</a><a class="btn ghost" href="/get-involved">More ways to get involved</a></p>
   </div>
 </section>
 <section class="wrap sec narrow">
@@ -153,7 +165,7 @@ ${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" 
   <noscript><p>Please RSVP by email: <a href="mailto:${esc(C.org.email || '')}?subject=${encodeURIComponent('RSVP: ' + e.title)}">${esc(C.org.email || '')}</a></p></noscript>
   <div class="rsvp-ui" hidden></div>
 </section>` : ''}
-<p class="btns"><a class="btn ghost" href="/events/${e.slug}.ics">Add to my calendar</a><a class="btn ghost" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(base + '/events/' + e.slug)}" rel="noopener" target="_blank">Share on Facebook</a><a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent(e.title + ' ' + base + '/events/' + e.slug)}" rel="noopener" target="_blank">Share on WhatsApp</a></p>
+<p class="btns"><a class="btn ghost" href="/events/${e.slug}.ics">Add to my calendar</a><a class="btn ghost" href="${esc(googleCalendarUrl(e, base))}" rel="noopener" target="_blank">Add to Google Calendar</a><a class="btn ghost" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(base + '/events/' + e.slug)}" rel="noopener" target="_blank">Share on Facebook</a><a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent(e.title + ' ' + base + '/events/' + e.slug)}" rel="noopener" target="_blank">Share on WhatsApp</a></p>
 ${prog ? `<p>Part of <a href="/programs/${prog.slug}">${esc(prog.name)}</a>.</p>` : ''}${hol ? `<p>Learn more about <a href="/holidays/${hol.slug}">${esc(hol.title)}</a>.</p>` : ''}
 </article>`;
     await render(res, { path: '/events/' + e.slug, title: e.title, description: `${when(e)}. ${e.summary || plain(e.details || '')}`, image: e.image, body, ld: [eventLd(C, base, e), crumbs(base, [['Events', '/events'], [e.title, '/events/' + e.slug]])] });
@@ -262,7 +274,7 @@ ${pics.length ? `<div class="pics big">${pics.map((p) => `<a href="${esc(p.link)
   r.use('/assets', express.static(path.join(ROOT, 'site', 'assets'), { maxAge: '365d', immutable: true }));
   r.use('/media', express.static(path.join(ROOT, 'site', 'media'), { maxAge: '7d' }));
   app.use(r);
-  return { render, upcoming, eventLd, when };
+  return { render, upcoming, eventLd, when, eventCard, faqHtml, faqLd, crumbs, counts, setNews };
 }
 
 function weeklyHtml(o) {

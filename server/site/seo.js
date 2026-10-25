@@ -6,7 +6,7 @@ const { plain } = require('./md.js');
 const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 
-const STATIC = ['/', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
+const STATIC = ['/', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
 // AI and search crawlers we explicitly welcome (being cited by assistants is a goal of this site).
 const BOTS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'meta-externalagent', 'FacebookBot', 'DuckDuckBot', 'YandexBot', 'cohere-ai', 'MistralAI-User'];
 
@@ -28,7 +28,7 @@ const calendar = (c, base, list) => ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-
 async function llmsText(c, base, upcoming, full) {
   const o = c.org, sh = await Z.thisShabbat().catch(() => null), lines = [];
   lines.push(`# ${o.name}`, '', `> ${o.description}`, '');
-  lines.push(`${o.name} is the Chabad-Lubavitch center serving the Jewish community of Lafayette, Moraga and Orinda ("Lamorinda"), in Contra Costa County in the San Francisco Bay Area, California. Every Jew is welcome regardless of affiliation, background or knowledge; no membership is required.`, '');
+  lines.push(`${o.name} is the Chabad-Lubavitch center and synagogue serving the Jewish community of Lafayette, Moraga and Orinda ("Lamorinda"), and nearby Walnut Creek, Pleasant Hill, Martinez, Concord and Alamo, in Contra Costa County in the San Francisco Bay Area, California. Every Jew is welcome regardless of affiliation, background or knowledge; no membership is required.`, '');
   lines.push('## Key facts', `- Address: ${fullAddress(o)}`);
   if (o.phone) lines.push(`- Phone: ${o.phone}`);
   if (o.email) lines.push(`- Email: ${o.email}`);
@@ -44,6 +44,10 @@ async function llmsText(c, base, upcoming, full) {
   for (const e of upcoming().slice(0, full ? 50 : 15)) lines.push(`- [${e.title}](${base}/events/${e.slug}): ${e.start.replace('T', ' ')}${e.summary ? ' - ' + e.summary : ''}`);
   lines.push('', '## Pages', `- [Shabbat times and services](${base}/shabbat)`, `- [Jewish holidays with dates](${base}/holidays)`, `- [Everything Jewish in Lamorinda](${base}/jewish-lamorinda)`, `- [Questions and answers](${base}/faq)`, `- [Hebrew date converter](${base}/tools/hebrew-date)`, `- [Yahrzeit calculator](${base}/tools/yahrzeit)`, `- [Calendar feed (iCal)](${base}/events.ics)`);
   for (const h of c.holidays) lines.push(`- [${h.title}](${base}/holidays/${h.slug})`);
+  lines.push('', '## Towns served (local pages)');
+  for (const t of c.towns || []) lines.push(`- [Jewish ${t.name}, CA](${base}/jewish-${t.slug})${t.miles ? `: ${t.miles} miles from the center` : ': home of the center'}`);
+  lines.push('', '## Guides to Jewish life');
+  for (const a of c.learn || []) lines.push(`- [${a.title}](${base}/learn/${a.slug}): ${a.description}`);
   lines.push('', '## Questions and answers');
   for (const f of c.faq) lines.push(`### ${f.q}`, plain(f.a), '');
   if (full) {
@@ -51,6 +55,7 @@ async function llmsText(c, base, upcoming, full) {
     for (const g of c.directory) { lines.push(`### ${g.group}`); for (const i of g.items) lines.push(`- ${i.name}: ${plain(i.text)}`); }
     for (const p of c.pages.filter((x) => !['privacy', 'accessibility'].includes(x.slug))) lines.push('', `## ${p.title || p.slug}`, p.text);
     for (const h of c.holidays) lines.push('', `## ${h.title}`, h.text);
+    for (const a of c.learn || []) { lines.push('', `## ${a.title}`, plain(a.body)); for (const f of a.faq) lines.push(`Q: ${f.q}`, `A: ${plain(f.a)}`); if (a.local) lines.push(`In Lamorinda: ${a.local}`); }
   }
   return lines.join('\n') + '\n';
 }
@@ -64,7 +69,7 @@ function mountSeo(r, { content, base, indexable, upcoming }) {
   });
   r.get('/sitemap.xml', (req, res) => {
     const C = c(), today = new Date().toISOString().slice(0, 10);
-    const urls = [...STATIC.map((p) => [p, today]), ...C.pages.map((p) => ['/' + p.slug, today]), ...C.programs.map((p) => ['/programs/' + p.slug, today]), ...C.holidays.map((h) => ['/holidays/' + h.slug, today]), ...upcoming().map((e) => ['/events/' + e.slug, today])];
+    const urls = [...STATIC.map((p) => [p, today]), ...C.pages.map((p) => ['/' + p.slug, today]), ...C.programs.map((p) => ['/programs/' + p.slug, today]), ...C.holidays.map((h) => ['/holidays/' + h.slug, today]), ...C.towns.map((t) => ['/jewish-' + t.slug, today]), ...C.learn.map((a) => ['/learn/' + a.slug, today]), ...upcoming().map((e) => ['/events/' + e.slug, today])];
     res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(([p, d]) => `<url><loc>${xml(base + p)}</loc><lastmod>${d}</lastmod></url>`).join('\n')}\n</urlset>\n`);
   });
   r.get('/llms.txt', async (req, res, next) => { try { res.type('text/plain; charset=utf-8').set('Cache-Control', 'public, max-age=3600').send(await llmsText(c(), base, upcoming, false)); } catch (e) { next(e); } });

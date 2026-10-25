@@ -20,13 +20,19 @@ Everything below is done once, in Render → **chabad-lamorinda-app** → **Envi
 4. Exchange it for a **long-lived** token (Access Token Debugger → *Extend Access Token*), then request `/me/accounts` in the Explorer: copy the page's `id` and `access_token`.
 5. In Render add **FB_PAGE_ID** and **FB_PAGE_TOKEN**.
 
-What it does: photos from the page appear on the home page and `/photos` (refreshed hourly). In the Rabbi area (`/admin/community`) each event has **Post to Facebook**, which posts it to the page with a link to its RSVP page.
-Facebook no longer lets outside apps create Facebook *Events*, so we post a page post that links to the event page. That keeps every RSVP in one list.
+6. **Instagram (optional):** connect the Instagram account to the Facebook page (Instagram must be a Business or Creator account), add the permissions `instagram_basic` and `instagram_content_publish`, request `/{page-id}?fields=instagram_business_account` in the Explorer and put that id in **IG_USER_ID**.
+
+What it does:
+* Photos from the page fill the top of the home page and appear on `/photos` (refreshed hourly).
+* **Social drafts** (Rabbi area → *Website: RSVPs & birthdays*): every event you add to the website automatically appears there as a ready-made post with the flyer or photo, date, place, RSVP link and local hashtags. Edit the words if you like and press **Publish**: it goes to the Facebook page (and Instagram) in one step. The list shows what has already been posted.
+* Facebook no longer lets outside apps create Facebook *Events*. Each draft therefore also has **Copy & open Facebook Events**, which copies the text and opens Facebook's event form if you want a real Facebook Event too.
 Boosting a post (paid promotion) is done in Facebook's Meta Business Suite.
 
 ## 3. Google
-* **Google Search Console** (search.google.com/search-console): on launch day add `chabadoflamorinda.com`, verify by DNS, and submit `https://www.chabadoflamorinda.com/sitemap.xml`.
-* **Google Business Profile** (business.google.com): claim or update "Chabad of Lamorinda", category *Synagogue*. Set the website to the new address and post events there too. This is the biggest lever for showing up on "synagogue near me" and on Maps.
+* **Google Search Console** (search.google.com/search-console): on launch day add `chabadoflamorinda.com`. Verify with the *HTML tag* option: copy only the code inside `content="..."` into **GOOGLE_SITE_VERIFICATION**. Then submit `https://www.chabadoflamorinda.com/sitemap.xml`.
+* **Bing Webmaster Tools** (bing.com/webmasters): Bing's index powers ChatGPT search and Microsoft Copilot. Import from Google Search Console in one click, or put the meta tag code in **BING_SITE_VERIFICATION**. **INDEXNOW_KEY** (already generated) tells Bing about new pages every time the site updates.
+* **Google Calendar**: every event page has *Add to Google Calendar*; the Social drafts screen has the same link.
+* **Google Business Profile** (business.google.com): claim or update "Chabad of Lamorinda", category *Synagogue* (add *Preschool* and *Jewish school* as extra categories). Set the website to the new address, add Lafayette, Moraga, Orinda, Walnut Creek, Pleasant Hill, Martinez, Concord and Alamo as *service areas*, and post events there: the Social drafts screen has a **Copy Google Business post** button for each event. This is the biggest lever for "synagogue near me" and Maps. (Google only gives automatic posting to large companies, so this one is copy and paste.)
 * **Google Analytics / Google Ads**: create a GA4 property (or an Ads conversion tag) and put its id (`G-...` or `AW-...`) in **GA_ID**. RSVPs are recorded as an `rsvp` event so ads can be measured.
 * **Google Ad Grants**: as a 501(c)(3) you can apply for $10,000/month of free Google search ads (google.com/nonprofits). Strongly recommended.
 * Events already carry Google's Event markup, so they can appear in Google's event listings once the site is indexed.

@@ -10,6 +10,9 @@ The Rabbi runs this website by talking to Claude. When he asks for something ("a
 | Programs (preschool, Hebrew school, classes...) | `site/content/programs.json` |
 | Questions & answers (also shown to Google/AI as FAQ) | `site/content/faq.json` |
 | "Everything Jewish in Lamorinda" guide | `site/content/directory.json` |
+| Town pages (`/jewish-moraga`...): Lafayette, Moraga, Orinda first, then nearby towns | `site/content/towns.json` |
+| Guides to Jewish topics (`/learn/mezuzah`...) | `site/content/learn/*.md` |
+| Old chabadoflamorinda.com addresses -> new pages | `site/content/redirects.json` |
 | Pages: about, contact, privacy... (`/about` = `pages/about.md`) | `site/content/pages/*.md` |
 | Holiday guides (`/holidays/chanukah`...) | `site/content/holidays/*.md` |
 | Flyers, photos, PDFs (served at `/media/...`) | `site/media/` |
@@ -57,8 +60,17 @@ Add an object to `site/content/events.json`:
 * Write warmly and simply. Every Jew is welcome; no membership is required.
 * Keep `faq.json` growing: questions people actually type into Google or ask an AI ("Where can I hear the shofar in Lafayette?"). Answers should name the place, day and time.
 
-## Facebook
-`npm run facebook:post -- <event-slug>` posts an event to the Facebook page (needs FB_PAGE_ID and FB_PAGE_TOKEN), or use "Post to Facebook" in the Rabbi area at `/admin/community`. Photos from the Page appear on the site automatically.
+## Local focus
+The site's area is Lafayette, Moraga and Orinda first (`"tier": "home"` in towns.json), then nearby towns (`"tier": "near"`). When writing any page, FAQ or event, name the towns ("for families in Lafayette, Moraga and Orinda"). To add a town, add it to towns.json with real facts only (neighborhoods, landmarks); its page, Shabbat times and questions are generated.
+
+## Guides (learn/)
+Each guide has front matter (title, description under 155 characters, category, related, local) and ends with `## Common questions` and `### Question?` entries, which become Google FAQ markup. Write in simple English, from a warm Chabad perspective; for case-by-case halacha say "ask the Rabbi". Add a guide whenever people ask about a topic that has none.
+
+## Facebook, Instagram and Google
+New events automatically appear as ready posts in the Rabbi area (`/admin/community`, "Social drafts"); the Rabbi publishes with one button. Give every event an `image` (or an image `flyer`) so posts are eye-catching and can go to Instagram. `npm run facebook:post -- <event-slug>` does the same from the command line.
+
+## Community submissions
+Mazal Tovs, announcements, shiva notices, ideas and resources sent through `/community` wait in the Rabbi area for approval. When the Rabbi approves a resource or idea, add it to the right content file.
 
 ## Do not
 * Do not edit `kiddush-kit/` (a separate shareable copy) when changing the website.

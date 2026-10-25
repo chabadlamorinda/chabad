@@ -1,0 +1,133 @@
+[
+  {
+    "slug": "lafayette",
+    "name": "Lafayette",
+    "tier": "home",
+    "lat": 37.8858,
+    "lng": -122.118,
+    "intro": "Chabad of Lamorinda is right in Lafayette, at 3477 Golden Gate Way, close to downtown Lafayette and the Lafayette BART station. For Jewish families in Lafayette we are the neighborhood shul, preschool, Hebrew school and Shabbat table, all a few minutes from home.",
+    "places": [
+      "Downtown Lafayette and Mt. Diablo Boulevard",
+      "Happy Valley",
+      "Burton Valley",
+      "Reliez Valley",
+      "Acalanes Ridge",
+      "Upper Happy Valley"
+    ],
+    "local": "We celebrate in town too: Shofar and Tashlich at the Lafayette Reservoir, Yom Kippur at the Lafayette Park Hotel, and a Lag BaOmer BBQ in Lafayette.",
+    "schools": "Our Hebrew School, CKids and teen programs are open to students from Acalanes High School, Stanley Middle School and Lafayette's elementary schools."
+  },
+  {
+    "slug": "moraga",
+    "name": "Moraga",
+    "tier": "home",
+    "lat": 37.8349,
+    "lng": -122.1297,
+    "intro": "Moraga has no synagogue of its own, so Chabad of Lamorinda in neighboring Lafayette is the Jewish home for Moraga families: about ten minutes up Moraga Road or St. Mary's Road. Shabbat services, holidays, Hebrew school, preschool and classes are all open to you, with no membership.",
+    "places": [
+      "Rheem Valley",
+      "Moraga Center",
+      "Campolindo",
+      "Sanders Ranch",
+      "Bluffs",
+      "Moraga Country Club"
+    ],
+    "local": "Jewish students at Saint Mary's College of California are always welcome for Shabbat dinner and the holidays.",
+    "schools": "Our Hebrew School, CKids and teen programs are open to students from Campolindo High School, Joaquin Moraga Intermediate and Moraga's elementary schools."
+  },
+  {
+    "slug": "orinda",
+    "name": "Orinda",
+    "tier": "home",
+    "lat": 37.8771,
+    "lng": -122.1797,
+    "intro": "From Orinda, Chabad of Lamorinda is a few minutes east on Highway 24, or one stop on BART, in downtown Lafayette. Orinda's Jewish families join us for Shabbat, the holidays, Lamorinda Jewish Preschool, Hebrew school and adult classes, no membership required.",
+    "places": [
+      "Orinda Village",
+      "Theatre Square",
+      "Glorietta",
+      "Sleepy Hollow",
+      "El Toyonal",
+      "Orindawoods",
+      "Orinda Country Club"
+    ],
+    "local": "Commuting through Orinda BART? Our weekday morning minyan and evening classes are a short ride away.",
+    "schools": "Our Hebrew School, CKids and teen programs are open to students from Miramonte High School, Orinda Intermediate and Orinda's elementary schools."
+  },
+  {
+    "slug": "walnut-creek",
+    "name": "Walnut Creek",
+    "tier": "near",
+    "lat": 37.9101,
+    "lng": -122.0652,
+    "intro": "Walnut Creek is just east of Lafayette on Highway 24, about ten minutes from Chabad of Lamorinda. Jewish families and seniors from Walnut Creek join our Shabbat services, holiday celebrations, classes and kids' programs.",
+    "places": [
+      "Downtown Walnut Creek",
+      "Rossmoor",
+      "Saranap",
+      "Northgate",
+      "Parkmead",
+      "Tice Valley"
+    ],
+    "local": "Rossmoor residents: we are happy to help with holidays, yahrzeits, Kaddish and visits. Just call."
+  },
+  {
+    "slug": "pleasant-hill",
+    "name": "Pleasant Hill",
+    "tier": "near",
+    "lat": 37.948,
+    "lng": -122.0608,
+    "intro": "Pleasant Hill is about 15 minutes from Chabad of Lamorinda in Lafayette via Pleasant Hill Road. Pleasant Hill families and Diablo Valley College students are welcome at every service, class and celebration.",
+    "places": [
+      "Downtown Pleasant Hill",
+      "Gregory Gardens",
+      "Poets Corner",
+      "Pleasant Hill BART"
+    ],
+    "local": "Jewish students at Diablo Valley College are welcome for Shabbat dinner and the holidays."
+  },
+  {
+    "slug": "martinez",
+    "name": "Martinez",
+    "tier": "near",
+    "lat": 38.0194,
+    "lng": -122.1341,
+    "intro": "From Martinez, Chabad of Lamorinda is about 20 minutes away. Jewish families in Martinez are welcome for Shabbat, the holidays, Hebrew school and life-cycle events.",
+    "places": [
+      "Downtown Martinez",
+      "Alhambra Valley",
+      "Muir Oaks",
+      "Virginia Hills"
+    ],
+    "local": "Hospital stay or loved one at a care facility in the area? Call the Rabbi for a visit, a prayer or holiday items."
+  },
+  {
+    "slug": "concord",
+    "name": "Concord",
+    "tier": "near",
+    "lat": 37.978,
+    "lng": -122.0311,
+    "intro": "Concord is about 20 minutes from Chabad of Lamorinda in Lafayette. Jewish residents of Concord are welcome at our services, holiday programs, classes and kids' programs.",
+    "places": [
+      "Downtown Concord",
+      "Clayton Valley",
+      "Dana Estates",
+      "Concord BART"
+    ],
+    "local": "Need holiday items, a mezuzah or a yahrzeit date? We are glad to help, wherever in Contra Costa you live."
+  },
+  {
+    "slug": "alamo",
+    "name": "Alamo",
+    "tier": "near",
+    "lat": 37.8502,
+    "lng": -122.0322,
+    "intro": "Alamo is about 15 minutes from Chabad of Lamorinda via Highway 680 and Highway 24. Alamo families join us for the High Holidays, Chanukah, Passover and our children's programs.",
+    "places": [
+      "Alamo Square",
+      "Round Hill",
+      "Stone Valley"
+    ],
+    "local": "Planning a bar or bat mitzvah, a bris or a Jewish wedding? Rabbi Labkowski helps families all over the area."
+  }
+]
