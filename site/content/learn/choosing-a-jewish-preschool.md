@@ -1,6 +1,6 @@
 ---
 title: Choosing a Jewish Preschool in Lafayette, Moraga and Orinda: What to Ask on a Tour
-description: Looking for a Jewish preschool in Lafayette, Moraga or Orinda? Facts about Lamorinda Jewish Preschool, ages 12 months to 4, and questions to ask on a tour.
+description: Jewish preschool in Lafayette, Moraga and Orinda: facts about Lamorinda Jewish Preschool, ages 12 months to 4, and what to ask on a tour.
 category: Lamorinda
 related: jewish-parenting, shabbat-with-kids, upsherin, hebrew-alphabet
 local: Schedule a tour of Lamorinda Jewish Preschool at chabadoflamorinda.com/forms/preschool or call 925-384-7242.

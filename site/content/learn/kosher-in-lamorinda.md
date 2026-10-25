@@ -1,6 +1,6 @@
 ---
 title: Kosher Food in Lafayette, Moraga and Orinda: Bay Kosher, Kitchen Help and Holiday Orders
-description: Keeping kosher in Lafayette, Moraga and Orinda: kosher meat and groceries delivered by Bay Kosher, kashering help and holiday orders from Chabad of Lamorinda.
+description: Keeping kosher in Lafayette, Moraga and Orinda: Bay Kosher delivery of meat and groceries, kitchen kashering help and holiday orders.
 category: Lamorinda
 related: kosher, kosher-kitchen, kosher-symbols, tevilat-kelim
 local: Ask the Rabbi to help kosher your kitchen at chabadoflamorinda.com/contact or call 925-384-7242.
