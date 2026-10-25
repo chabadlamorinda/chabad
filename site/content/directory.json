@@ -1,0 +1,50 @@
+[
+  { "id": "shabbat", "group": "Shabbat & prayer", "items": [
+    { "name": "Shabbat services", "url": "/shabbat", "text": "Saturday 10 AM to 12 PM with a hot Kiddush lunch. Friday night Kabbalat Shabbat. Bilingual prayer book; children welcome." },
+    { "name": "Daily minyan", "url": "/shabbat", "text": "Monday to Friday 6:30 AM, Sunday 8:00 AM. Saying Kaddish? Let us know and we will make sure there is a minyan." },
+    { "name": "Shabbat candle lighting times", "url": "/shabbat", "text": "Times for Lafayette, Moraga and Orinda, every week." },
+    { "name": "Shabbat dinner with the Rabbi's family", "url": "/shabbat", "text": "Any week of the year. Just let us know you are coming." }
+  ] },
+  { "id": "kosher", "group": "Kosher food", "items": [
+    { "name": "Bay Kosher", "url": "https://baykosher.com", "text": "Kosher meat, poultry, groceries, holiday foods and Judaica, ordered online and delivered. A project of Chabad of Lamorinda." },
+    { "name": "Kosher your kitchen", "url": "/contact", "text": "The Rabbi will happily help you kosher your kitchen, step by step, at your pace." }
+  ] },
+  { "id": "mitzvahs", "group": "Mezuzah, tefillin & Judaica", "items": [
+    { "name": "Mezuzahs", "url": "/contact", "text": "Buy a kosher mezuzah, have yours checked by a scribe, or get help putting them up with the blessing." },
+    { "name": "Tefillin", "url": "/contact", "text": "Put on tefillin with the Rabbi, have your tefillin checked, or get your own pair (also a beautiful bar mitzvah gift)." },
+    { "name": "Shabbat candles and Judaica", "url": "https://baykosher.com", "text": "Candlesticks, menorahs, Kiddush cups and more through Bay Kosher." }
+  ] },
+  { "id": "life-events", "group": "Life events", "items": [
+    { "name": "New baby: brit milah and baby naming", "url": "/contact", "text": "We help arrange a mohel for a bris and name your baby in the synagogue. Just had a baby and wondering what to do? Call us." },
+    { "name": "Bar & Bat Mitzvah", "url": "/programs/bar-bat-mitzvah", "text": "Personal preparation and a celebration to remember. Find the date with the [Bar/Bat Mitzvah calculator](/tools/bar-bat-mitzvah)." },
+    { "name": "Jewish weddings", "url": "/contact", "text": "From the first conversation to the chuppah, the Rabbi is here to help." },
+    { "name": "Jewish funerals and the Chevra Kadisha", "url": "/contact", "text": "When a loved one passes, call the Rabbi at 925-384-7242 and we will guide the family through a dignified Jewish funeral, shiva and Kaddish." },
+    { "name": "Meet with the Rabbi", "url": "/contact", "text": "For advice, a question about Judaism, or just to talk. Confidential and judgment-free." }
+  ] },
+  { "id": "remembering", "group": "Remembering loved ones", "items": [
+    { "name": "Yahrzeit calculator and reminders", "url": "/tools/yahrzeit", "text": "Find the yahrzeit date for the next ten years and save it for an annual reminder." },
+    { "name": "Kaddish", "url": "/contact", "text": "We can make sure Kaddish is said for your loved one, and teach you to say it." },
+    { "name": "Sponsor a Kiddush in memory", "url": "/kiddush/", "text": "Honor a loved one's memory by sponsoring the Shabbat Kiddush." }
+  ] },
+  { "id": "learning", "group": "Jewish learning", "items": [
+    { "name": "Weekly classes", "url": "/programs/adult-education", "text": "Torah (Sunday), Hebrew class with a meal (Tuesday) and Tanya (Wednesday)." },
+    { "name": "One-on-one learning", "url": "/programs/adult-education", "text": "Choose any topic and study with the Rabbi at your own pace." }
+  ] },
+  { "id": "kids", "group": "Kids & families", "items": [
+    { "name": "Lamorinda Jewish Preschool", "url": "/programs/jewish-preschool", "text": "Ages 12 months to 4 years, in Lafayette." },
+    { "name": "Lamorinda Hebrew School", "url": "/programs/hebrew-school", "text": "Sundays 10 AM to 12 PM, ages 3 to 13." },
+    { "name": "CKids Afterschool", "url": "/programs/ckids-afterschool", "text": "Ages 5 to 13, weekdays 3 to 6 PM." },
+    { "name": "Summer and winter camp", "url": "/programs/summer-camp", "text": "Jewish camp fun for little ones." }
+  ] },
+  { "id": "holidays", "group": "Holiday needs", "items": [
+    { "name": "Lulav and etrog", "url": "/holidays/sukkot", "text": "Order your set for Sukkot." },
+    { "name": "Shmurah matzah and Seder-to-go", "url": "/holidays/passover", "text": "Handmade matzah and everything for your Seder." },
+    { "name": "Sell your chametz", "url": "/holidays/passover", "text": "Authorize the Rabbi to sell your chametz before Passover." },
+    { "name": "Menorahs and Chanukah candles", "url": "/holidays/chanukah", "text": "Get a menorah and candles for your home. Ask us." }
+  ] },
+  { "id": "calendar", "group": "Jewish calendar tools", "items": [
+    { "name": "Hebrew date converter", "url": "/tools/hebrew-date", "text": "Convert any date to the Hebrew calendar." },
+    { "name": "Jewish holiday dates", "url": "/holidays", "text": "Every holiday this year with Lamorinda candle lighting times." },
+    { "name": "Calendar subscription", "url": "/events.ics", "text": "Add all Chabad of Lamorinda events to your phone's calendar." }
+  ] }
+]

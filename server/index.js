@@ -17,6 +17,7 @@ const express = require('express');
 const { mountMembers } = require('./members.js');
 const { mountAdmin } = require('./admin.js');
 const { createKiddush } = require('./kiddush.js');
+const { mountSite } = require('./site/index.js');
 
 const ROOT = path.join(__dirname, '..');
 const FUND_NAMES = {
@@ -45,7 +46,7 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false, siteEnv = process.env, facebook = undefined }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
   const kiddush = createKiddush({ store, stripe, log, now, mailer });
   if (reminders) kiddush.startReminders(); // emails unpaid sponsors a reminder after a few days (needs email set up)
@@ -154,6 +155,11 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   }
   // Apple Pay domain verification file (paste its contents into the APPLE_PAY_ASSOC setting).
   app.get('/.well-known/apple-developer-merchantid-domain-association', (req, res) => (applePayAssoc ? res.type('text').send(applePayAssoc) : res.status(404).type('text').send('Not found')));
+
+  // The website (pages, accounts, RSVPs, SEO files). Mounted before the app's own "/" redirect below
+  // and before /api, whose catch-all would otherwise answer /api/site.
+  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook });
+  app.locals.site = site;
 
   // ---------- API ----------
   const api = express.Router();
@@ -374,7 +380,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/api/kiddush', kapi);
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  const adminOn = mountAdmin(app, { store, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: kiddush.mountAdmin });
+  const adminOn = mountAdmin(app, { store, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: (r, ctx) => { kiddush.mountAdmin(r, ctx); site.mountAdmin(r, ctx); } });
   if (!adminOn) { // explain instead of a bare "Not found" when the staff area has not been switched on yet
     app.get(/^\/admin(\/.*)?$/, (req, res) => res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Staff area not set up yet</title><body style="font:18px/1.5 Georgia,serif;max-width:560px;margin:8vh auto;padding:0 20px;color:#3b2412"><h1 style="font-weight:400">Staff area not set up yet</h1><p>The staff page switches on once two settings are added in Render (your hosting account):</p><ol><li><b>DATABASE_URL</b>: the address of your database (for example a free one from neon.com)</li><li><b>ADMIN_PASSWORD</b>: a password of 12 or more characters</li></ol><p>After you save them, Render restarts and this page becomes your sign-in page. Step-by-step: <code>store/rabbi-setup.md</code>.</p>'));
   }
@@ -397,6 +403,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     next();
   }, express.static(path.join(ROOT, 'board'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use('/pushka', express.static(path.join(ROOT, 'pushka'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
+  app.use(site.notFound);
   app.use((req, res) => res.status(404).type('text').send('Not found'));
   return app;
 }

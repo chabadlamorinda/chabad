@@ -1,0 +1,65 @@
+# Running the Chabad of Lamorinda website by conversation
+
+The Rabbi runs this website by talking to Claude. When he asks for something ("add the Chanukah party on Dec 6 at 4:30 with RSVP", "change Shabbat services to 9:30", "put up this flyer"), make the change in the content files below, run `npm test`, commit, and push. Render redeploys automatically.
+
+## Where things live
+| What | File |
+| --- | --- |
+| Name, address, phone, email, staff, service times, weekly classes, social links | `site/content/org.json` |
+| Events (one-time) | `site/content/events.json` |
+| Programs (preschool, Hebrew school, classes...) | `site/content/programs.json` |
+| Questions & answers (also shown to Google/AI as FAQ) | `site/content/faq.json` |
+| "Everything Jewish in Lamorinda" guide | `site/content/directory.json` |
+| Pages: about, contact, privacy... (`/about` = `pages/about.md`) | `site/content/pages/*.md` |
+| Holiday guides (`/holidays/chanukah`...) | `site/content/holidays/*.md` |
+| Flyers, photos, PDFs (served at `/media/...`) | `site/media/` |
+| Design | `site/assets/site.css` |
+| Server code | `server/site/` |
+
+Shabbat times, holiday dates, the Hebrew date and parsha are computed automatically (`server/site/zmanim.js`); never type them in by hand.
+
+## Adding an event
+Add an object to `site/content/events.json`:
+```json
+{
+  "slug": "chanukah-celebration-2026",
+  "title": "Chanukah Community Celebration",
+  "start": "2026-12-06T16:30",
+  "end": "2026-12-06T18:30",
+  "category": "holiday",
+  "holiday": "chanukah",
+  "location": { "name": "Lafayette Plaza Park", "address": "Mt Diablo Blvd & Moraga Rd, Lafayette, CA" },
+  "summary": "One sentence that sells it (shown on cards, Google and Facebook).",
+  "details": "Markdown: more detail, schedule, what to bring.",
+  "price": "Free",
+  "image": "/media/chanukah-2026.jpg",
+  "flyer": "/media/chanukah-2026.pdf",
+  "rsvp": { "capacity": 150 }
+}
+```
+* `slug`: lowercase-with-dashes, unique, include the year. Never change a slug once published (links and RSVPs use it).
+* Times are Lafayette local time, `YYYY-MM-DDTHH:MM`. Omit `location` for events at the center.
+* `category`: shabbat, holiday, class, kids, teens, women, men, community, seniors, family.
+* `holiday` (a file name in `holidays/`) and `program` (a slug in `programs.json`) link the event onto those pages.
+* `rsvp`: `{}` for unlimited, `{ "capacity": N }` to cap it, `"kids": false` to hide the children counter. Leave `rsvp` out for no RSVP.
+* `"status": "draft"` hides an event until it is ready. Remove it to publish.
+* Images: save flyers/photos into `site/media/` (JPG/PNG/PDF, keep images under ~400 KB; resize first).
+* Past events drop off the site automatically; leave them in the file.
+
+## After every change
+1. `npm test` (checks every content file; a bad date or a typo in a slug fails with a clear message).
+2. Commit with a plain-English message ("Add Chanukah celebration on Dec 6"), push.
+3. Tell the Rabbi in one or two sentences what changed and the page address.
+
+## Facts and wording
+* Only publish facts the Rabbi gave or that already appear in the content. Never invent dates, prices, names or quotes; ask.
+* The Rabbi is **Rabbi Yisroel Labkowski**; the Rebbetzin is **Tzipora Labkowski**. Phone 925-384-7242.
+* Write warmly and simply. Every Jew is welcome; no membership is required.
+* Keep `faq.json` growing: questions people actually type into Google or ask an AI ("Where can I hear the shofar in Lafayette?"). Answers should name the place, day and time.
+
+## Facebook
+`npm run facebook:post -- <event-slug>` posts an event to the Facebook page (needs FB_PAGE_ID and FB_PAGE_TOKEN), or use "Post to Facebook" in the Rabbi area at `/admin/community`. Photos from the Page appear on the site automatically.
+
+## Do not
+* Do not edit `kiddush-kit/` (a separate shareable copy) when changing the website.
+* Do not commit secrets. Settings live in Render's Environment tab (see `store/website-setup.md`).

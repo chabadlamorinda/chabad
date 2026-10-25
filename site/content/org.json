@@ -1,0 +1,35 @@
+{
+  "name": "Chabad of Lamorinda",
+  "shortName": "Chabad of Lamorinda",
+  "alternateNames": ["Chabad Lamorinda", "Chabad of Lafayette", "Chabad of Moraga", "Chabad of Orinda", "Lamorinda Shul"],
+  "tagline": "Judaism with a smile, for every Jew in Lamorinda",
+  "description": "Chabad of Lamorinda is a warm, welcoming Jewish center in Lafayette, California, serving Lafayette, Moraga and Orinda with Shabbat and holiday services, a Jewish preschool, Hebrew school, classes and community events. No membership required.",
+  "address": { "street": "3477 Golden Gate Way", "city": "Lafayette", "region": "CA", "postal": "94549" },
+  "geo": { "lat": 37.8858, "lng": -122.118 },
+  "phone": "925-384-7242",
+  "email": "info@chabadoflamorinda.com",
+  "areaServed": ["Lafayette", "Moraga", "Orinda", "Walnut Creek", "Contra Costa County"],
+  "staff": [
+    { "name": "Rabbi Yisroel Labkowski", "role": "Rabbi and Director" },
+    { "name": "Tzipora Labkowski", "role": "Rebbetzin; Director of Lamorinda Jewish Preschool and Lamorinda Hebrew School" }
+  ],
+  "legal": "A 501(c)(3) nonprofit, tax ID 47-4642750.",
+  "donateUrl": "/pushka/",
+  "social": {
+    "facebook": "https://www.facebook.com/chabadoflamorinda"
+  },
+  "services": [
+    { "name": "Shacharit (morning prayers)", "time": "Sunday 8:00 AM; Monday to Friday 6:30 AM" },
+    { "name": "Kabbalat Shabbat", "time": "Friday evening, 6:30 PM", "note": "time may change with the season" },
+    { "name": "Shabbat morning", "time": "Saturday 10:00 AM to 12:00 PM", "note": "Torah reading, a short talk and children's participation, then a hot Kiddush lunch" }
+  ],
+  "weekly": [
+    { "day": "Sunday", "time": "10:00 AM – 12:00 PM", "name": "Lamorinda Hebrew School", "link": "/programs/hebrew-school" },
+    { "day": "Sunday", "time": "9:00 – 10:00 PM", "name": "Weekly Torah class (English)", "link": "/programs/adult-education" },
+    { "day": "Tuesday", "time": "8:30 – 9:30 PM", "name": "Torah class in Hebrew, with a meal", "link": "/programs/adult-education" },
+    { "day": "Wednesday", "time": "1:00 – 2:00 PM", "name": "Tanya class (English)", "link": "/programs/adult-education" },
+    { "day": "Friday", "time": "6:30 PM", "name": "Kabbalat Shabbat", "link": "/shabbat" },
+    { "day": "Saturday", "time": "10:00 AM", "name": "Shabbat services and Kiddush lunch", "link": "/shabbat" }
+  ],
+  "shabbatText": "## Shabbat dinner with the Rabbi's family\nRabbi Yisroel and Tzipora Labkowski and their family host Shabbat dinners: a traditional Friday night meal with Jewish songs, warm conversation and a festive table. It is a wonderful way to get to know the Rabbi and Rebbetzin. You are welcome any week of the year; please let us know you are coming at 925-384-7242 or through [contact](/contact).\n\n## Sponsor a Kiddush\nCelebrating a birthday, anniversary or yahrzeit? [Sponsor a Kiddush](/kiddush/) and share the occasion with the whole community."
+}

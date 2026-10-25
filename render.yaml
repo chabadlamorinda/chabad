@@ -45,3 +45,16 @@ services:
         sync: false
       - key: APPLE_PAY_ASSOC          # contents of Stripe's Apple Pay domain file (optional)
         sync: false
+      # ---- The new website (see store/website-setup.md) ----
+      - key: SITE_HOME                # 1 = this server's "/" opens the new website (pushka.* / kiddush.* addresses still open their apps)
+        value: "1"
+      - key: PUBLIC_URL               # the website's address; change to https://www.chabadoflamorinda.com on launch day
+        value: https://chabad-lamorinda-app.onrender.com
+      - key: SITE_INDEXABLE           # set to 1 on launch day so Google and AI assistants index it (leave unset on the preview)
+        sync: false
+      - key: GA_ID                    # Google Analytics 4 / Google Ads tag, e.g. G-XXXXXXX (optional)
+        sync: false
+      - key: FB_PAGE_ID               # Facebook Page id (photos in, event posts out)
+        sync: false
+      - key: FB_PAGE_TOKEN            # long-lived Page access token
+        sync: false
