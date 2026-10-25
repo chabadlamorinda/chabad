@@ -53,6 +53,8 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   const app = express();
   app.locals.kiddush = kiddush; // (used by tests)
   app.disable('x-powered-by');
+  // Compress pages, styles and scripts (about 4x smaller). The chat's live stream is left alone.
+  app.use(require('compression')({ filter: (req, res) => !/text\/event-stream/.test(String(res.getHeader('Content-Type') || '')) && require('compression').filter(req, res) }));
   app.set('trust proxy', 1);
 
   // ---------- tokens ----------

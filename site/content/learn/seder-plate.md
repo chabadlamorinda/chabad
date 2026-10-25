@@ -61,7 +61,7 @@ No. Any large plate works as long as the items are arranged correctly. A beautif
 Many communities do. Chabad and others prefer a chicken neck so that it does not look like a real Passover offering, which can only be brought in the Temple.
 
 ### What do I do with the items after the seder?
-The egg can be eaten at the meal, and many eat it dipped in salt water. The zeroa is not eaten at the seder but may be eaten on the next day of the holiday.
+The egg can be eaten at the meal, and many eat it dipped in salt water. The zeroa is not eaten at the seder, since roasted meat is avoided that night. Ask the Rabbi about using it afterward.
 
 ### Can a vegetarian have a seder plate?
 Ask the Rabbi. Some use a roasted beet in place of the bone. The main mitzvot, matzah, maror and the four cups, do not require meat.

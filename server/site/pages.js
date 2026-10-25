@@ -70,7 +70,7 @@ function mountPages(app, ctx) {
     const help = C.help.slice(0, 6);
     const body = `
 <section class="hero${mosaic.length ? ' photo' : ''}">
-  ${mosaic.length ? `<div class="mosaic" aria-hidden="true">${mosaic.map((p) => `<img src="${esc(p.big || p.src)}" alt="" decoding="async">`).join('')}</div>` : ''}
+  ${mosaic.length ? `<div class="mosaic" aria-hidden="true">${mosaic.map((p, i) => `<img src="${esc(p.src)}" alt="" decoding="async"${i > 2 ? ' loading="lazy"' : ''} width="300" height="300">`).join('')}</div>` : ''}
   <div class="wrap hero-in">
     <div>
       <p class="eyebrow">${esc(t('Lafayette · Moraga · Orinda'))}</p>
