@@ -1,6 +1,6 @@
 ---
 title: Volunteering in Lafayette, Moraga and Orinda: Help Build Jewish Life at Chabad of Lamorinda
-description: Jewish volunteer opportunities in Lafayette, Moraga and Orinda: holiday events, the sukkah, challah, Kiddush setup, visiting seniors, driving and tutoring.
+description: Jewish volunteering in Lafayette, Moraga and Orinda: holiday events, the sukkah, challah, Kiddush setup, visiting seniors, driving and tutoring.
 category: Lamorinda
 related: chesed, hachnasat-orchim, tzedakah, challah
 local: Sign up to volunteer at chabadoflamorinda.com/forms/volunteer or call 925-384-7242.
@@ -19,7 +19,7 @@ When you [sign up as a volunteer](/forms/volunteer), you can tell us what you wo
 - **Driving.** A ride to Shabbat, a holiday or an appointment can make all the difference for someone who cannot drive.
 - **Teaching or tutoring.** Share what you know with children or adults.
 - **Photography.** Capture our events so the whole community can enjoy them.
-- **Office help.** Mailings, calls and the many small tasks that keep a community running.
+- **Office help.** The many behind-the-scenes tasks that keep a community running.
 
 Tell us when you are available, and we will match you with what fits your schedule.
 

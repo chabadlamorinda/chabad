@@ -7,8 +7,6 @@ local: For any life event, call Rabbi Yisroel Labkowski at 925-384-7242 or see c
 ---
 The big moments of life, the joyful ones and the hard ones, are when a family most needs a Rabbi who knows them. For Jewish families in Lafayette, Moraga, Orinda, Pleasant Hill and Martinez, the answer to "who do we call?" is simple: call **Rabbi Yisroel Labkowski at 925-384-7242**. He and Rebbetzin Tzipora Labkowski help with every life event, whatever your background or level of observance. There is no membership, and you do not need to have been here before.
 
-Here is what we do at each stage, with a link to a full help page.
-
 ## A new baby
 
 Mazal tov! Call the Rabbi soon after the birth.
@@ -30,7 +28,7 @@ Mazal tov on your engagement! Meet with the Rabbi as early as you can, ideally s
 
 ## When someone is sick
 
-Call the Rabbi for a visit at home, in the hospital or in a care facility, including hospitals and care facilities around Martinez and the rest of our area. We will add your loved one's name to our [Tehillim prayer list](/tehillim), say a Mi Shebeirach at the Torah reading, and can arrange to have the mezuzahs and tefillin in the home checked. See [someone is sick](/help/someone-is-sick), and if the illness is serious, [end of life](/help/end-of-life).
+Call the Rabbi for a visit at home, in the hospital or in a care facility, anywhere in our area. We will add your loved one's name to our [Tehillim prayer list](/tehillim), say a Mi Shebeirach at the Torah reading, and can arrange to have the mezuzahs and tefillin in the home checked. See [someone is sick](/help/someone-is-sick), and if the illness is serious, [end of life](/help/end-of-life).
 
 ## When a loved one passes away
 

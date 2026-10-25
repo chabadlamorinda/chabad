@@ -9,11 +9,9 @@ You do not need a background, a membership or perfect Hebrew to study Torah in L
 
 ## The weekly schedule
 
-| Day | Time | Class |
-|---|---|---|
-| Sunday | 9:00 to 10:00 PM | Weekly Torah class, in English |
-| Tuesday | 8:30 to 9:30 PM | Torah class in Hebrew, with a meal |
-| Wednesday | 1:00 to 2:00 PM | Tanya class, in English |
+- **Sunday, 9:00 to 10:00 PM:** Weekly Torah class, in English
+- **Tuesday, 8:30 to 9:30 PM:** Torah class in Hebrew, with a meal
+- **Wednesday, 1:00 to 2:00 PM:** Tanya class, in English
 
 All classes are at Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette. Check the [events calendar](/events) for any changes, and see the [adult education page](/programs/adult-education) for details.
 
