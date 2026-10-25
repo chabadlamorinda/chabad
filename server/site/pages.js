@@ -217,6 +217,7 @@ ${hols.map((h) => { const p = C.holidays.find((x) => x.slug === h.slug); return 
 <h1>${esc(h.title)}${h.hebrew && X.lang !== 'he' ? ` <span class="he" lang="he">${esc(h.hebrew)}</span>` : ''}</h1>
 ${nextDate ? `<p class="when">${esc(t('Next: {date}', { date: X.longDate(nextDate.date) }))}</p>` : ''}
 ${evs.length ? `<h2>${esc(t('Celebrate with us'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : ''}
+${(() => { const fm = (C.forms || []).filter((f) => f.holiday === h.slug || (h.slug === 'yom-kippur' && f.holiday === 'rosh-hashanah')); return fm.length ? `<p class="btns">${fm.map((f) => `<a class="btn gold" href="/forms/${f.id}">${esc(f.title)}</a>`).join('')}</p>` : ''; })()}
 ${md(h.body)}
 ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
 </article>`;
@@ -238,7 +239,7 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
 <h1>${esc(p.name)}</h1>${p.audience ? `<p class="eyebrow">${esc(p.audience)}</p>` : ''}<p class="lead-d">${esc(p.summary)}</p>
 ${p.schedule ? `<p><strong>${esc(t('When:'))}</strong> ${esc(p.schedule)}</p>` : ''}
 ${md(p.details || '')}
-${p.url ? `<p><a class="btn gold" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a></p>` : `<p><a class="btn gold" href="/contact?about=${encodeURIComponent(p.name)}">${esc(t('Ask about {name}', { name: p.name }))}</a></p>`}
+${(() => { const fm = (C.forms || []).filter((f) => f.program === p.slug); return `<p class="btns">${fm.map((f) => `<a class="btn gold" href="/forms/${f.id}">${esc(f.button || t('Sign up'))}: ${esc(f.title)}</a>`).join('')}${p.url ? `<a class="btn ${fm.length ? 'ghost' : 'gold'}" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}<a class="btn ghost" href="/contact?about=${encodeURIComponent(p.name)}">${esc(t('Ask about {name}', { name: p.name }))}</a></p>`; })()}
 ${evs.length ? `<h2>${esc(t('Coming up'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : ''}
 </article>`;
     await render(res, { path: '/programs/' + p.slug, title: p.name, description: p.summary, body, ld: [crumbs(base, [[t('Programs'), '/programs'], [p.name, '/programs/' + p.slug]])] });

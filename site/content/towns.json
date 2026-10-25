@@ -58,24 +58,6 @@
     "name_en": "Orinda"
   },
   {
-    "slug": "walnut-creek",
-    "name": "Walnut Creek",
-    "tier": "near",
-    "lat": 37.9101,
-    "lng": -122.0652,
-    "intro": "Walnut Creek is just east of Lafayette on Highway 24, about ten minutes from Chabad of Lamorinda. Jewish families and seniors from Walnut Creek join our Shabbat services, holiday celebrations, classes and kids' programs.",
-    "places": [
-      "Downtown Walnut Creek",
-      "Rossmoor",
-      "Saranap",
-      "Northgate",
-      "Parkmead",
-      "Tice Valley"
-    ],
-    "local": "Rossmoor residents: we are happy to help with holidays, yahrzeits, Kaddish and visits. Just call.",
-    "name_en": "Walnut Creek"
-  },
-  {
     "slug": "pleasant-hill",
     "name": "Pleasant Hill",
     "tier": "near",
@@ -106,36 +88,5 @@
     ],
     "local": "Hospital stay or loved one at a care facility in the area? Call the Rabbi for a visit, a prayer or holiday items.",
     "name_en": "Martinez"
-  },
-  {
-    "slug": "concord",
-    "name": "Concord",
-    "tier": "near",
-    "lat": 37.978,
-    "lng": -122.0311,
-    "intro": "Concord is about 20 minutes from Chabad of Lamorinda in Lafayette. Jewish residents of Concord are welcome at our services, holiday programs, classes and kids' programs.",
-    "places": [
-      "Downtown Concord",
-      "Clayton Valley",
-      "Dana Estates",
-      "Concord BART"
-    ],
-    "local": "Need holiday items, a mezuzah or a yahrzeit date? We are glad to help, wherever in Contra Costa you live.",
-    "name_en": "Concord"
-  },
-  {
-    "slug": "alamo",
-    "name": "Alamo",
-    "tier": "near",
-    "lat": 37.8502,
-    "lng": -122.0322,
-    "intro": "Alamo is about 15 minutes from Chabad of Lamorinda via Highway 680 and Highway 24. Alamo families join us for the High Holidays, Chanukah, Passover and our children's programs.",
-    "places": [
-      "Alamo Square",
-      "Round Hill",
-      "Stone Valley"
-    ],
-    "local": "Planning a bar or bat mitzvah, a bris or a Jewish wedding? Rabbi Labkowski helps families all over the area.",
-    "name_en": "Alamo"
   }
 ]

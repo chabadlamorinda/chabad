@@ -60,6 +60,24 @@
       });
     });
 
+    // ---- Sign-ups, registrations and orders ----
+    var sf = section('Sign-ups, registrations and orders', 'Everything people filled in on the website. New ones are marked; download any list as a spreadsheet.');
+    api('GET', '/site/forms').then(function (x) {
+      if (x._status !== 200) { sf.appendChild(el('p', { class: 'small', text: 'Needs the database (DATABASE_URL).' })); return; }
+      x.forms.forEach(function (f) {
+        var list = el('div');
+        var flat = function (v) { return Array.isArray(v) ? v.map(function (r) { return typeof r === 'object' ? Object.values(r).filter(Boolean).join(' / ') : r; }).join('; ') : v === true ? 'yes' : v === false ? '' : (v == null ? '' : v); };
+        sf.appendChild(el('div', { class: 'card' }, [el('strong', { text: f.title }), el('span', { class: 'small', text: ' · ' + f.total + ' total' + (f.fresh ? ' · ' + f.fresh + ' new' : '') }),
+          el('div', { class: 'row' }, [
+            el('button', { text: 'Show', onclick: function () { api('GET', '/site/forms/' + f.id).then(function (y) { list.textContent = ''; if (!y.items.length) list.textContent = 'None yet.';
+              y.items.forEach(function (i) { var st = el('span', { class: 'pill', text: i.status });
+                list.appendChild(el('div', { class: 'card' }, [el('div', { class: 'small', text: new Date(i.created_at).toLocaleString() + ' · ' + i.name + ' <' + i.email + '>' + (i.amount_cents ? ' · $' + i.amount_cents / 100 : '') }),
+                  el('div', { class: 'small', text: f.fields.map(function (fl) { var v = flat(i.data[fl.id]); return v ? fl.label + ': ' + v : ''; }).filter(Boolean).join(' | ') }),
+                  el('div', { class: 'row' }, [st, el('button', { text: 'Done', onclick: function () { api('POST', '/site/forms/response/' + i.id, { status: 'done' }).then(function (r) { if (r.ok) st.textContent = 'done'; }); } }), el('button', { text: 'Paid', onclick: function () { api('POST', '/site/forms/response/' + i.id, { status: 'paid' }).then(function (r) { if (r.ok) st.textContent = 'paid'; }); } }), el('a', { href: 'mailto:' + i.email, text: 'Email' })])])); }); }); } }),
+            el('button', { text: 'Download CSV', onclick: function () { api('GET', '/site/forms/' + f.id).then(function (y) { csv(f.id + '.csv', [['When', 'Name', 'Email', 'Amount', 'Status'].concat(f.fields.map(function (fl) { return fl.label; }))].concat(y.items.map(function (i) { return [i.created_at, i.name, i.email, i.amount_cents / 100, i.status].concat(f.fields.map(function (fl) { return flat(i.data[fl.id]); })); }))); }); } })]), list]));
+      });
+    });
+
     // ---- RSVPs ----
     var s3 = section('RSVPs');
     api('GET', '/site/rsvps').then(function (r) {

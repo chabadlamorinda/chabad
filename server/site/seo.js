@@ -7,7 +7,7 @@ const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 const { LANGS, withLang } = require('./i18n.js');
 
-const STATIC = ['/', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
+const STATIC = ['/', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
 // AI and search crawlers we explicitly welcome (being cited by assistants is a goal of this site).
 const BOTS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'meta-externalagent', 'FacebookBot', 'DuckDuckBot', 'YandexBot', 'cohere-ai', 'MistralAI-User'];
 
@@ -29,7 +29,7 @@ const calendar = (c, base, list) => ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-
 async function llmsText(c, base, upcoming, full) {
   const o = c.org, sh = await Z.thisShabbat().catch(() => null), lines = [];
   lines.push(`# ${o.name}`, '', `> ${o.description}`, '');
-  lines.push(`${o.name} is the Chabad-Lubavitch center and synagogue serving the Jewish community of Lafayette, Moraga and Orinda ("Lamorinda"), and nearby Walnut Creek, Pleasant Hill, Martinez, Concord and Alamo, in Contra Costa County in the San Francisco Bay Area, California. Every Jew is welcome regardless of affiliation, background or knowledge; no membership is required.`, '');
+  lines.push(`${o.name} is the Chabad-Lubavitch center and synagogue serving the Jewish community of Lafayette, Moraga and Orinda ("Lamorinda"), and nearby Pleasant Hill and Martinez, in Contra Costa County in the San Francisco Bay Area, California. Every Jew is welcome regardless of affiliation, background or knowledge; no membership is required.`, '');
   lines.push('## Key facts', `- Address: ${fullAddress(o)}`);
   if (o.phone) lines.push(`- Phone: ${o.phone}`);
   if (o.email) lines.push(`- Email: ${o.email}`);
@@ -74,7 +74,7 @@ function mountSeo(r, { content, base, indexable, upcoming }) {
   });
   r.get('/sitemap.xml', (req, res) => {
     const C = c(), today = new Date().toISOString().slice(0, 10);
-    const paths = [...STATIC, ...C.pages.map((p) => '/' + p.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.towns.map((t) => '/jewish-' + t.slug), ...C.learn.map((a) => '/learn/' + a.slug), ...(C.help || []).map((h) => '/help/' + h.slug), ...upcoming().map((e) => '/events/' + e.slug)];
+    const paths = [...STATIC, ...C.pages.map((p) => '/' + p.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.towns.map((t) => '/jewish-' + t.slug), ...C.learn.map((a) => '/learn/' + a.slug), ...(C.help || []).map((h) => '/help/' + h.slug), ...(C.forms || []).map((f) => '/forms/' + f.id), ...upcoming().map((e) => '/events/' + e.slug)];
     // Every page in English, Hebrew and Russian, each listing its other language versions (hreflang).
     const alt = (p) => LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${xml(base + withLang(l, p))}"/>`).join('');
     res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${paths.flatMap((p) => LANGS.map((l) => `<url><loc>${xml(base + withLang(l, p))}</loc><lastmod>${today}</lastmod>${alt(p)}</url>`)).join('\n')}\n</urlset>\n`);

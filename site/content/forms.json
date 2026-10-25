@@ -1,0 +1,141 @@
+[
+  { "id": "newsletter", "title": "Get our weekly email", "intro": "Shabbat times, upcoming events, holiday programs and a short Torah thought, once a week. Unsubscribe any time.", "button": "Subscribe",
+    "fields": [
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "interests", "label": "I am especially interested in", "type": "checkboxes", "options": ["Events and holidays", "Classes", "Kids and family programs", "Women's Circle", "Men's Club"] }
+    ] },
+  { "id": "preschool", "title": "Lamorinda Jewish Preschool: tours, information and enrollment", "intro": "Schedule a tour, ask a question, join the waiting list or start enrollment. Rebbetzin Tzipora Labkowski will get back to you.", "program": "jewish-preschool", "button": "Send",
+    "fields": [
+      { "id": "request", "label": "I would like to", "type": "select", "required": true, "options": ["Schedule a tour", "Get more information", "Apply for the coming school year", "Join the waiting list", "Ask about drop-in care"] },
+      { "id": "name", "label": "Parent's name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "id": "children", "label": "Children", "type": "children", "rows": 3, "columns": ["name", "birthday"] },
+      { "id": "start", "label": "Preferred start date", "type": "date" },
+      { "id": "days", "label": "Days", "type": "checkboxes", "options": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] },
+      { "id": "message", "label": "Questions or notes", "type": "textarea" }
+    ] },
+  { "id": "hebrew-school", "title": "Lamorinda Hebrew School registration", "intro": "Sundays 10 AM to 12 PM, ages 3 to 13. Tuition is $600 per child, including books and supplies. A payment plan is available, and no child is turned away for lack of funds.", "program": "hebrew-school", "button": "Register",
+    "payment": { "fund": "children", "perChild": 600, "label": "Pay tuition now" },
+    "fields": [
+      { "id": "name", "label": "Parent's name", "type": "text", "required": true },
+      { "id": "parent2", "label": "Second parent's name", "type": "text" },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "id": "address", "label": "Home address", "type": "text" },
+      { "id": "children", "label": "Children", "type": "children", "rows": 4, "required": true, "columns": ["name", "hebrewName", "birthday", "grade", "allergies"] },
+      { "id": "emergency", "label": "Emergency contact (name and phone)", "type": "text", "required": true },
+      { "id": "photos", "label": "Photos of my children may be shared in our newsletter and social media", "type": "checkbox" },
+      { "id": "plan", "label": "I would like a payment plan or a scholarship", "type": "checkbox" },
+      { "id": "message", "label": "Anything we should know", "type": "textarea" }
+    ] },
+  { "id": "ckids", "title": "CKids Afterschool registration", "intro": "Ages 5 to 13, weekdays 3 to 6 PM: homework help, sports, STEAM, Hebrew, Jewish heritage and a hot meal.", "program": "ckids-afterschool", "button": "Register",
+    "fields": [
+      { "id": "name", "label": "Parent's name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "id": "children", "label": "Children", "type": "children", "rows": 4, "required": true, "columns": ["name", "birthday", "school", "grade", "allergies"] },
+      { "id": "days", "label": "Days", "type": "checkboxes", "required": true, "options": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] },
+      { "id": "pickup", "label": "Who may pick up the children", "type": "text" },
+      { "id": "message", "label": "Anything we should know", "type": "textarea" }
+    ] },
+  { "id": "summer-camp", "title": "Lamorinda Jewish Summer Camp registration", "intro": "Ages 2 to 4, 8:30 AM to 5 PM. $3,200 for the full summer or $500 per week. Spaces are limited.", "program": "summer-camp", "button": "Register",
+    "payment": { "fund": "children", "label": "Pay now" },
+    "fields": [
+      { "id": "name", "label": "Parent's name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "id": "children", "label": "Children", "type": "children", "rows": 3, "required": true, "columns": ["name", "birthday", "allergies"] },
+      { "id": "plan", "label": "Registration", "type": "select", "required": true, "options": [{ "label": "Full summer ($3,200 per child)", "amount": 3200, "perChild": true }, { "label": "Individual weeks ($500 per week per child)", "amount": 0 }] },
+      { "id": "weeks", "label": "Number of weeks (for individual weeks)", "type": "number", "min": 0, "max": 7, "amountEach": 500, "perChild": true },
+      { "id": "message", "label": "Which weeks, and anything we should know", "type": "textarea" }
+    ] },
+  { "id": "bar-bat-mitzvah", "title": "Bar and Bat Mitzvah: get started", "intro": "Tell us about your child and the Rabbi or Rebbetzin will be in touch to plan the preparation and the celebration. Adults who never had a bar or bat mitzvah are welcome too.", "program": "bar-bat-mitzvah", "button": "Send",
+    "fields": [
+      { "id": "name", "label": "Parent's name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel" },
+      { "id": "children", "label": "Child", "type": "children", "rows": 1, "columns": ["name", "hebrewName", "birthday"] },
+      { "id": "type", "label": "For", "type": "select", "options": ["Bar Mitzvah", "Bat Mitzvah (and the Bat Mitzvah Club)", "An adult bar or bat mitzvah"] },
+      { "id": "message", "label": "Questions or wishes", "type": "textarea" }
+    ] },
+  { "id": "high-holidays", "title": "High Holiday reservations", "intro": "Rosh Hashanah and Yom Kippur services are open to everyone, with no tickets and no membership. Reserving helps us save you a seat and prepare enough food.", "holiday": "rosh-hashanah", "button": "Reserve",
+    "payment": { "fund": "holidays", "label": "Give a holiday donation", "optional": true },
+    "fields": [
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel" },
+      { "id": "adults", "label": "Adults", "type": "number", "min": 0, "max": 30, "required": true },
+      { "id": "kids", "label": "Children", "type": "number", "min": 0, "max": 30 },
+      { "id": "services", "label": "I plan to come to", "type": "checkboxes", "options": ["Rosh Hashanah evening", "Rosh Hashanah day 1", "Rosh Hashanah day 2", "Shofar and Tashlich at the Lafayette Reservoir", "Community Rosh Hashanah dinner", "Kol Nidre", "Yom Kippur day", "Yizkor", "Neilah and break-fast"] },
+      { "id": "yizkor", "label": "Names for the Yizkor memorial booklet (name and relation)", "type": "textarea" },
+      { "id": "message", "label": "Notes", "type": "textarea" }
+    ] },
+  { "id": "yizkor", "title": "Yizkor memorial booklet", "intro": "Yizkor is said on Yom Kippur, Shemini Atzeret, the last day of Passover and Shavuot. Add your loved ones' names to our memorial booklet and they will be remembered with the community.", "holiday": "yom-kippur", "button": "Add the names",
+    "payment": { "fund": "holidays", "label": "Give in their memory", "optional": true },
+    "fields": [
+      { "id": "names", "label": "Names of your loved ones (English and Hebrew name if known, and relation)", "type": "textarea", "required": true },
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true }
+    ] },
+  { "id": "lulav-etrog", "title": "Order a lulav and etrog set", "intro": "Order your Four Kinds for Sukkot. We will let you know the price and when to pick it up.", "holiday": "sukkot", "button": "Order",
+    "fields": [
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "id": "quality", "label": "Set", "type": "select", "options": ["Standard (kosher)", "Mehudar (extra beautiful)", "Children's set"] },
+      { "id": "quantity", "label": "How many sets", "type": "number", "min": 1, "max": 20, "required": true },
+      { "id": "message", "label": "Notes", "type": "textarea" }
+    ] },
+  { "id": "matzah", "title": "Order shmurah matzah and Seder kits", "intro": "Handmade shmurah matzah and Seder-to-go kits for Passover. We will confirm prices and pickup.", "holiday": "passover", "button": "Order",
+    "fields": [
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "id": "matzah", "label": "Shmurah matzah (pounds)", "type": "number", "min": 0, "max": 50 },
+      { "id": "kits", "label": "Seder-to-go kits", "type": "number", "min": 0, "max": 20 },
+      { "id": "seder", "label": "We would also like to join the community Seder", "type": "checkbox" },
+      { "id": "message", "label": "Notes", "type": "textarea" }
+    ] },
+  { "id": "sell-chametz", "title": "Sell your chametz", "intro": "Before Passover, a Jew may not own chametz (leavened food). Authorize the Rabbi to sell your chametz on your behalf. Put it away in a closed cabinet or room during Passover; it is bought back for you after the holiday.", "holiday": "passover", "button": "Authorize the sale",
+    "payment": { "fund": "holidays", "label": "Give the customary charity", "optional": true },
+    "fields": [
+      { "id": "name", "label": "Full name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel" },
+      { "id": "locations", "label": "Addresses where your chametz will be (home, office, car...)", "type": "textarea", "required": true },
+      { "id": "where", "label": "Where in each place (e.g. kitchen cabinet above the fridge, garage shelf)", "type": "textarea" },
+      { "id": "travel", "label": "If you will be in a different time zone over Passover, where?", "type": "text" },
+      { "id": "authorize", "label": "I authorize Rabbi Yisroel Labkowski to act as my agent to sell all chametz in my possession, wherever it is, and to lease the places where it is kept, in accordance with Jewish law, and to buy it back for me after Passover.", "type": "checkbox", "required": true },
+      { "id": "signature", "label": "Type your full name as your signature", "type": "text", "required": true }
+    ] },
+  { "id": "mezuzah-tefillin", "title": "Mezuzah and tefillin: buy, check or put up", "intro": "Get a kosher mezuzah or tefillin, have yours checked by a scribe, or have the Rabbi come and help put up your mezuzahs.", "button": "Send",
+    "fields": [
+      { "id": "request", "label": "I would like to", "type": "checkboxes", "required": true, "options": ["Buy a mezuzah", "Have my mezuzahs checked", "Have help putting up mezuzahs", "Buy tefillin", "Have my tefillin checked", "Learn to put on tefillin"] },
+      { "id": "count", "label": "How many mezuzahs (if relevant)", "type": "number", "min": 0, "max": 50 },
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "id": "address", "label": "Address", "type": "text" },
+      { "id": "message", "label": "Notes", "type": "textarea" }
+    ] },
+  { "id": "shabbat-meal", "title": "Host or be hosted for a Shabbat meal", "intro": "New in town, a student, or just want company for Shabbat? Or would you like to open your table to others? We will make the match.", "button": "Send",
+    "fields": [
+      { "id": "role", "label": "I would like to", "type": "select", "required": true, "options": ["Be hosted for a Shabbat meal", "Host guests for a Shabbat meal", "Join the Rabbi's family for Shabbat dinner"] },
+      { "id": "people", "label": "How many people", "type": "number", "min": 1, "max": 20 },
+      { "id": "date", "label": "Which Shabbat", "type": "date" },
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel" },
+      { "id": "message", "label": "Dietary needs or notes", "type": "textarea" }
+    ] },
+  { "id": "volunteer", "title": "Volunteer", "intro": "Help build Jewish life in Lamorinda, an hour or a season at a time.", "button": "Sign me up",
+    "fields": [
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel" },
+      { "id": "help", "label": "I can help with", "type": "checkboxes", "options": ["Holiday events", "Setting up the sukkah", "Baking challah", "Kiddush setup", "Visiting seniors and the sick", "Driving", "Teaching or tutoring", "Photography", "Office help"] },
+      { "id": "message", "label": "When are you available?", "type": "textarea" }
+    ] }
+]

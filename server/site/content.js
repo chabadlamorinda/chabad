@@ -37,6 +37,7 @@ function load(dir = DIR) {
   const org = rj('org.json'), programs = rj('programs.json'), events = rj('events.json'), faq = rj('faq.json'), directory = rj('directory.json');
   const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays'), learn = readPagesIn(dir, 'learn'), help = readPagesIn(dir, 'help');
   const sponsor = optJson(dir, 'sponsor.json', { occasions: [], options: [] }), tehillim = optJson(dir, 'tehillim.json', { situations: [] });
+  const forms = optJson(dir, 'forms.json', []), giving = optJson(dir, 'giving.json', {});
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
   const errors = [];
   const need = (cond, msg) => { if (!cond) errors.push(msg); };
@@ -59,6 +60,12 @@ function load(dir = DIR) {
     if (e.rsvp) need(!e.rsvp.capacity || (Number.isInteger(e.rsvp.capacity) && e.rsvp.capacity > 0), `event ${e.slug}: rsvp.capacity must be a whole number`);
   }
   for (const f of faq) need(f.q && f.a, 'faq.json: every entry needs q and a');
+  const TYPES = ['text', 'email', 'tel', 'date', 'number', 'select', 'checkbox', 'checkboxes', 'textarea', 'children'];
+  for (const f of forms) {
+    uniq('form', f.id); need(f.title && Array.isArray(f.fields) && f.fields.length, `form ${f.id}: title and fields are required`);
+    for (const x of f.fields || []) need(x.id && x.label && TYPES.includes(x.type) && (!['select', 'checkboxes'].includes(x.type) || (Array.isArray(x.options) && x.options.length)), `form ${f.id}: field ${x.id} needs id, label, a type (${TYPES.join(', ')}) and options for lists`);
+    need(!f.program || programs.some((p) => p.slug === f.program), `form ${f.id}: unknown program "${f.program}"`);
+  }
   for (const h of help) { uniq('help', h.slug); need(h.title && h.description, `help ${h.slug}: title and description are required`); }
   for (const o of sponsor.occasions.concat(sponsor.options)) need(o.id && o.title, 'sponsor.json: every occasion and option needs id and title');
   for (const x of tehillim.situations) need(x.id && x.title && Array.isArray(x.chapters) && x.chapters.every((n) => Number.isInteger(n) && n >= 1 && n <= 150), `tehillim.json ${x.id}: chapters must be numbers 1 to 150`);
@@ -83,7 +90,7 @@ function load(dir = DIR) {
   for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
-  return { org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, loadedAt: new Date() };
+  return { org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, loadedAt: new Date() };
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

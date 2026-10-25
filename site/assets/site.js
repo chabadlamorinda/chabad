@@ -99,6 +99,45 @@
     });
   });
 
+  // ---------- Sign-ups, registrations and orders (forms.json) ----------
+  var form = $('[data-form]');
+  if (form) {
+    var fid = form.getAttribute('data-form'), E = form.elements;
+    // Signed in: fill in the parent's details and the children from "My family".
+    api('GET', '/me').then(function (me) {
+      if (me._status !== 200) return;
+      var p = me.profile, put = function (n, v) { if (E[n] && !E[n].value && v) E[n].value = v; };
+      put('name', p.name); put('email', p.email); put('phone', p.phone); put('address', p.address);
+      var kids = me.family.filter(function (f) { return f.relation === 'child'; });
+      [].forEach.call(form.querySelectorAll('[data-children]'), function (fs) {
+        var id = fs.getAttribute('data-children');
+        kids.forEach(function (k, i) { ['name', 'hebrewName', 'birthday'].forEach(function (c) { var x = E[id + '.' + i + '.' + c]; if (x && !x.value && k[c]) x.value = k[c]; }); });
+      });
+    });
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var m = $('.msg', form), b = $('button[type=submit]', form), fields = {};
+      [].forEach.call(form.querySelectorAll('input, select, textarea'), function (x) {
+        if (!x.name) return;
+        var parts = x.name.split('.');
+        if (parts.length === 3) { var a = fields[parts[0]] = fields[parts[0]] || []; a[+parts[1]] = a[+parts[1]] || {}; a[+parts[1]][parts[2]] = x.value; return; }
+        if (x.type === 'checkbox' && x.closest('[data-group]')) { fields[x.name] = fields[x.name] || []; if (x.checked) fields[x.name].push(+x.value); return; }
+        fields[x.name] = x.type === 'checkbox' ? x.checked : x.value;
+      });
+      Object.keys(fields).forEach(function (k) { if (Array.isArray(fields[k]) && fields[k].some(function (r) { return r && typeof r === 'object'; })) fields[k] = fields[k].filter(Boolean); });
+      b.disabled = true;
+      api('POST', '/forms/' + fid, { fields: fields }).then(function (r) {
+        b.disabled = false;
+        if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
+        msg(m, T('Thank you! We received it and the Rabbi will be in touch.') + (r.amount ? ' ' + T('Total: ${amount}', { amount: r.amount }) : ''), true);
+        var pay = $('.pay-next', form);
+        if (pay && r.payUrl) { $('a', pay).href = r.payUrl; pay.hidden = false; }
+        b.hidden = true;
+        if (window.gtag) window.gtag('event', 'form_submit', { event_label: fid });
+      });
+    });
+  }
+
   // ---------- My account ----------
   var acct = $('#account');
   if (acct) loadAccount();

@@ -201,7 +201,7 @@ test('town pages: local Shabbat times, distance, local questions, linked everywh
   assert.equal((await c.call('GET', '/jewish-nowhere')).status, 404);
   assert.match((await c.call('GET', '/our-area')).text, /Jewish Pleasant Hill/);
   assert.match((await c.call('GET', '/')).text, /href="\/jewish-orinda"/);
-  assert.match((await c.call('GET', '/sitemap.xml')).text, /\/jewish-walnut-creek/);
+  assert.match((await c.call('GET', '/sitemap.xml')).text, /\/jewish-pleasant-hill/);
   assert.match((await c.call('GET', '/llms.txt')).text, /Jewish Martinez, CA/);
 });
 
@@ -308,11 +308,46 @@ test('Kaddish requests and the prayer list stay private', async () => {
 test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
   const c = client(), i18n = server_site().i18n;
   i18n.missing.clear();
-  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page'];
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes'];
   for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
   assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
   // and the content itself: every guide, help page, holiday and page has both translations
   const C = load(), fs = require('fs'), path = require('path');
   for (const l of ['he', 'ru']) for (const [dir, list] of [['learn', C.learn], ['help', C.help], ['holidays', C.holidays], ['pages', C.pages]]) for (const x of list) assert.ok(fs.existsSync(path.join(DIR, 'i18n', l, dir, x.slug + '.md')), `${l}/${dir}/${x.slug}.md is missing`);
-  for (const l of ['he', 'ru']) for (const f of ['org.json', 'programs.json', 'faq.json', 'directory.json', 'towns.json', 'sponsor.json', 'tehillim.json']) assert.ok(fs.existsSync(path.join(DIR, 'i18n', l, f)), `${l}/${f} is missing`);
+  for (const l of ['he', 'ru']) for (const f of ['org.json', 'programs.json', 'faq.json', 'directory.json', 'towns.json', 'sponsor.json', 'tehillim.json', 'forms.json', 'giving.json']) assert.ok(fs.existsSync(path.join(DIR, 'i18n', l, f)), `${l}/${f} is missing`);
+});
+
+test('forms: Hebrew School registration with tuition, camp pricing, chametz authorization, Rabbi area', async () => {
+  const g = client();
+  assert.equal((await g.call('GET', '/forms')).status, 200);
+  const page = (await g.call('GET', '/forms/hebrew-school')).text;
+  assert.match(page, /data-form="hebrew-school"/); assert.match(page, /name="children\.0\.name"/);
+  assert.match((await g.call('GET', '/programs/hebrew-school')).text, /href="\/forms\/hebrew-school"/);
+  assert.match((await g.call('GET', '/holidays/passover')).text, /href="\/forms\/sell-chametz"/);
+  // missing required answers
+  const bad = await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Sara' } });
+  assert.equal(bad.status, 400); assert.match(bad.json.error, /Email/);
+  const ok = await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Sara Levi', email: 'sara@x.co', phone: '925', emergency: 'David 925', photos: true, children: [{ name: 'Noa', birthday: '2016-01-15', grade: '4' }, { name: 'Eli', grade: '1' }, { name: '' }] } });
+  assert.equal(ok.status, 200); assert.equal(ok.json.amount, 1200);
+  assert.match(ok.json.payUrl, /^\/pushka\/\?go=give&fund=children&amt=1200&ded=/);
+  assert.ok(mails.some((m) => /^We received it: Lamorinda Hebrew School registration/.test(m.subject)));
+  const camp = await g.call('POST', '/api/site/forms/summer-camp', { fields: { name: 'A', email: 'a@x.co', phone: '1', plan: 1, weeks: 3, children: [{ name: 'Kid' }] } });
+  assert.equal(camp.json.amount, 1500);
+  assert.equal((await g.call('POST', '/api/site/forms/sell-chametz', { fields: { name: 'A', email: 'a@x.co', locations: 'Home', signature: 'A' } })).status, 400, 'authorization box is required');
+  assert.equal((await g.call('POST', '/api/site/forms/sell-chametz', { fields: { name: 'A', email: 'a@x.co', locations: 'Home', signature: 'A', authorize: true } })).status, 200);
+  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const list = (await a.call('GET', '/admin/api/site/forms')).json.forms;
+  assert.equal(list.find((f) => f.id === 'hebrew-school').fresh, 1);
+  const items = (await a.call('GET', '/admin/api/site/forms/hebrew-school')).json.items;
+  assert.equal(items[0].data.children.length, 2); assert.equal(items[0].data.photos, true);
+  // Hebrew form page, answers stored in English
+  assert.match((await g.call('GET', '/he/forms/lulav-etrog')).text, /dir="rtl"/);
+  await g.call('POST', '/api/site/forms/lulav-etrog', { fields: { name: 'B', email: 'b@x.co', phone: '1', quality: 1, quantity: 2 } }, { 'x-lang': 'he' });
+  assert.equal((await a.call('GET', '/admin/api/site/forms/lulav-etrog')).json.items[0].data.quality, 'Mehudar (extra beautiful)');
+});
+
+test('the donation page works on the site itself', async () => {
+  const d = (await client().call('GET', '/donate')).text;
+  assert.match(d, /\/pushka\/\?go=give&amp;fund=general&amp;amt=180/); assert.match(d, /id="building"/); assert.match(d, /CHABAD-LAMORINDA/); assert.match(d, /47-4642750/);
+  assert.ok(!/chabadoflamorinda\.com\/\d/.test(d), 'no links to the old site');
 });

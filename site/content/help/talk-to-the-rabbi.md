@@ -15,7 +15,7 @@ Sometimes you just need to talk to a Rabbi. Whatever is on your mind, a question
 - **Online:** [/contact](/contact)
 - **In person:** Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549. Please call ahead to set a time.
 
-We serve Lafayette, Moraga and Orinda, and nearby towns such as Walnut Creek, Pleasant Hill and Martinez. If you live farther away, call anyway. We will help however we can.
+We serve Lafayette, Moraga and Orinda, and nearby Pleasant Hill and Martinez. If you live farther away, call anyway. We will help however we can.
 
 **In an emergency, call 911 first.** The Rabbi is not a substitute for emergency services or for professional medical, legal or mental health care.
 

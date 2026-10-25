@@ -49,6 +49,11 @@ CREATE TABLE IF NOT EXISTS social_posts (
   posted_at TIMESTAMPTZ NOT NULL DEFAULT now(), PRIMARY KEY (event_slug, network)
 );
 CREATE TABLE IF NOT EXISTS email_log (key TEXT PRIMARY KEY, sent_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS form_responses (
+  id TEXT PRIMARY KEY, form_id TEXT NOT NULL, member_id TEXT REFERENCES members(id) ON DELETE SET NULL, name TEXT NOT NULL, email TEXT NOT NULL,
+  data JSONB NOT NULL DEFAULT '{}'::jsonb, amount_cents INT NOT NULL DEFAULT 0, status TEXT NOT NULL DEFAULT 'new', created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS form_responses_form_idx ON form_responses (form_id, created_at);
 `;
 
 const newId = (p) => p + crypto.randomBytes(12).toString('hex');

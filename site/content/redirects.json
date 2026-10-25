@@ -8,7 +8,7 @@
   "/5176291": "/programs/jewish-preschool",
   "/5177977": "/programs/jewish-preschool",
   "/7371194": "/programs/summer-camp",
-  "/camp": "/programs/summer-camp",
+  "/camp": "/forms/summer-camp",
   "/6502959": "/programs/ckids-afterschool",
   "/4970020": "/donate",
   "/4843095": "/donate",
@@ -31,5 +31,11 @@
   "/3080753": "/learn",
   "/6067050": "/programs/womens-circle",
   "/5139293": "/jewish-lamorinda",
-  "/zoom": "/programs/adult-education"
+  "/zoom": "/programs/adult-education",
+  "/tools/feedback.asp": "/contact",
+  "/tools/subscribe/default_cdo": "/forms/newsletter",
+  "/asktherabbi/default_cdo/jewish/Ask-the-Rabbi.htm": "/help/talk-to-the-rabbi",
+  "/5322043": "/donate#building",
+  "/5322044": "/donate#stock",
+  "/5322110": "/donate#crypto"
 }

@@ -27,6 +27,7 @@ const { esc } = require('./md.js');
 const { createI18n, LANGS, withLang } = require('./i18n.js');
 const { makeCtx } = require('./ctx.js');
 const { mountLife } = require('./life.js');
+const { mountForms } = require('./forms.js');
 const { DIR } = require('./content.js');
 
 function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch }) {
@@ -81,6 +82,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountTools(r, { render: pages.render, wrap, ctxOf });
   mountLocal(r, { content, base, wrap, ctxOf, ...pages });
   const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });
+  const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '' });
   mountLife(r, { render: pages.render, wrap, ctxOf, faqHtml: pages.faqHtml, faqLd: pages.faqLd, crumbs: pages.crumbs, base, prayerList: board.prayerList });
   pages.setNews(board.approved);
   if (indexNowKey) {
@@ -100,7 +102,6 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       body: `<section class="wrap sec narrow"><h1>${esc(t('My account'))}</h1><div id="account" class="account"><p class="muted">${esc(t('Loading…'))}</p></div>
 <noscript><p>${esc(t('Please turn on JavaScript to sign in, or email us:'))} <a href="mailto:${esc(data.org.email)}">${esc(data.org.email)}</a></p></noscript></section>` });
   }));
-  r.get('/donate', (req, res) => res.redirect(302, data.org.donateUrl || '/pushka/'));
   app.use(r);
   app.get('/:slug', pages.pagesRoute); // about, contact, privacy... (after every specific page)
 
@@ -118,6 +119,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       mountCommunityAdmin(r2, ctx, { cs: community.cs, content, store });
       mountSocialAdmin(r2, ctx, { store, content, fb, base, when: pages.when });
       board.mountAdmin(r2, ctx);
+      forms.mountAdmin(r2, ctx);
       r2.get('/community', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.html')));
       r2.get('/community.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.js')));
     },

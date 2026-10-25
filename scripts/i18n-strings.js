@@ -13,11 +13,15 @@ const re = /\b(?:t|tr|T|X\.t)\(\s*(['"])((?:\\.|(?!\1).)+)\1/g;
 for (const f of files) {
   const src = fs.readFileSync(path.join(ROOT, f), 'utf8');
   let m; while ((m = re.exec(src))) out.add(m[2].replace(/\\'/g, "'").replace(/\\"/g, '"'));
+  const re2 = /\b(?:a|tile)\(\s*'[^']*',\s*(['"])((?:\\.|(?!\1).)+)\1(?:,\s*(['"])((?:\\.|(?!\3).)+)\3)?/g;
+  while ((m = re2.exec(src))) { out.add(m[2].replace(/\\'/g, "'")); if (m[4]) out.add(m[4].replace(/\\'/g, "'")); }
 }
 const { CLIENT, NAV } = require('../server/site/layout.js');
 for (const s of CLIENT) out.add(s);
 for (const [, s] of NAV) out.add(s);
 for (const s of require('../server/site/content.js').LEARN_CATEGORIES) out.add(s);
+for (const s of Object.values({ name: 'Name', hebrewName: 'Hebrew name', birthday: 'Birthday', grade: 'Grade', school: 'School', allergies: 'Allergies or medical notes' })) out.add(s);
+for (const [n] of require('../site/content/giving.json').building.levels) out.add(n);
 for (const k of Object.values(require('../server/site/board.js').KINDS)) out.add(k.label);
 for (const s of ['Shabbat', 'Holidays', 'Classes', 'Kids', 'Teens', 'Women', 'Men', 'Community', 'Seniors', 'Family', 'Volunteer', 'Mazal Tov', 'Condolences', 'News']) out.add(s);
 for (const s of ['Tishrei', 'Cheshvan', 'Kislev', 'Tevet', "Sh'vat", 'Adar', 'Adar I', 'Adar II', 'Nisan', 'Iyyar', 'Sivan', 'Tamuz', 'Av', 'Elul', 'Tishri', 'Heshvan', 'Shevat', 'Iyar']) out.add(s);
