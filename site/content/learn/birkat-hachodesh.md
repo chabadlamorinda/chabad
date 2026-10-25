@@ -28,7 +28,7 @@ Chassidic teaching adds that Shabbat Mevarchim is the source of blessing for the
 
 ## Chabad customs of Shabbat Mevarchim
 
-The Previous Rebbe, Rabbi Yosef Yitzchak Schneersohn, established several customs:
+Chabad custom, much of it set by the Previous Rebbe, Rabbi Yosef Yitzchak Schneersohn, includes:
 
 - **The entire Book of Psalms** is recited before the morning prayers, often in the synagogue together. See our [Tehillim guide](/learn/tehillim).
 - **A farbrengen,** a Chassidic gathering with stories, songs and inspiration, is held during the day.

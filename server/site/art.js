@@ -10,7 +10,7 @@ const exists = (name) => { if (!have) { try { have = new Set(fs.readdirSync(DIR)
 
 // First matching rule wins: [pattern on the slug or title, illustration].
 const RULES = [
-  [/dreidel/, 'dreidel'], [/chanukah|menorah|gelt/, 'menorah'], [/rosh-hashanah|simanim|apple|honey|elul|selichot/, 'apple-honey'],
+  [/moving-to|in-lamorinda|lamorinda/, 'map-pin'], [/dreidel/, 'dreidel'], [/chanukah|menorah|gelt/, 'menorah'], [/rosh-hashanah|simanim|apple|honey|elul|selichot/, 'apple-honey'],
   [/shofar|tashlich/, 'shofar'], [/yom-kippur|kol-nidre|teshuvah|fast/, 'candle-flame'], [/sukk|ushpizin|hoshana/, 'sukkah'], [/four-kinds|lulav|etrog/, 'lulav-etrog'],
   [/simchat-torah|hakafot|torah-reading|aliyah|torah|haftarah|weekly-parsha|chumash|bar-mitzvah|bat-mitzvah/, 'torah-scroll'], [/purim|megillah|costume/, 'megillah'], [/mishloach|hamantash/, 'hamantash'],
   [/passover|pesach|seder|matzah|chametz|afikoman|four-questions|exodus/, 'matzah'], [/seder-plate/, 'seder-plate'], [/omer|shavuot|ten-commandments|sinai/, 'mountain-sinai'], [/tablets|613|mitzv/, 'tablets'],
@@ -28,7 +28,7 @@ const RULES = [
   [/business|ethic|dispute/, 'hands-heart'], [/college|student|school/, 'school'], [/preschool|camp|ckids|playground/, 'playground'], [/grief|hard-times/, 'dove'],
   [/talk|ask|rabbi/, 'chat-bubble'], [/volunteer|involved/, 'hands-heart'], [/newsletter|email/, 'envelope'], [/zmanim|times|clock/, 'clock'], [/birthday/, 'gift'],
 ];
-const CATEGORY = { 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'broken-heart-candle', 'Jewish ideas': 'sparkles' };
+const CATEGORY = { Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'broken-heart-candle', 'Jewish ideas': 'sparkles' };
 const FIXED = {
   'program:jewish-preschool': 'playground', 'program:hebrew-school': 'school', 'program:ckids-afterschool': 'playground', 'program:summer-camp': 'sparkles', 'program:adult-education': 'open-book',
   'program:womens-circle': 'candle-pair-gold', 'program:mens-club': 'tefillin', 'program:kids-and-teens': 'dreidel', 'program:bar-bat-mitzvah': 'torah-scroll', 'program:bay-kosher': 'kosher-pot', 'program:chai-club': 'pushka',

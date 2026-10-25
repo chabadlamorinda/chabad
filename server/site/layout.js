@@ -130,7 +130,7 @@ function footer(c, t) {
     </div>
     <div>
       <p class="ftr-h">${esc(t('Jewish life'))}</p>
-      ${a('/jewish-lamorinda', 'Everything Jewish in Lamorinda')}${a('/learn', 'Learn about Judaism')}${a('/parsha', "This week's Torah portion")}${a('/daily-study', "Today's daily study")}${a('/tools/zmanim', 'Daily prayer times (zmanim)')}${a('/tools/hebrew-date', 'Hebrew date converter')}${a('/tools/hebrew-birthday', 'Hebrew birthday calculator')}${a('/tools/yahrzeit', 'Yahrzeit calculator')}${a('/tools/bar-bat-mitzvah', 'Bar & Bat Mitzvah date')}${a('/faq', 'Questions & answers')}
+      ${a('/jewish-lamorinda', 'Everything Jewish in Lamorinda')}${a('/learn', 'Learn about Judaism')}${a('/parsha', "This week's Torah portion")}${a('/tools/zmanim', 'Daily prayer times (zmanim)')}${a('/tools/hebrew-date', 'Hebrew date converter')}${a('/tools/hebrew-birthday', 'Hebrew birthday calculator')}${a('/tools/yahrzeit', 'Yahrzeit calculator')}${a('/tools/bar-bat-mitzvah', 'Bar & Bat Mitzvah date')}${a('/faq', 'Questions & answers')}
     </div>
     <div>
       <p class="ftr-h">${esc(t('Our area'))}</p>

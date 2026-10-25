@@ -109,11 +109,14 @@ ${nextHol ? `<section class="wrap sec band-in"><div><p class="eyebrow">${esc(t('
   <p>${esc(t('Sponsor a Kiddush, a Shabbat dinner or a class in honor or in memory of someone you love. Your dedication is shared with the community.'))}</p>
   <div class="chips">${(C.sponsor.occasions || []).map((x) => `<a class="chip" href="/sponsor?o=${x.id}">${esc(x.title)}</a>`).join('')}</div>
 </section>
+${C.learn.some((a) => a.category === 'Lamorinda') ? `<section class="wrap sec">
+  <div class="sec-h"><h2>${esc(t('Jewish life in Lafayette, Moraga and Orinda'))}</h2><a href="/learn#lamorinda">${esc(t('All local guides'))} →</a></div>
+  <div class="grid">${C.learn.filter((a) => a.category === 'Lamorinda').slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>
+</section>` : ''}
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Every day'))}</h2></div>
   <div class="grid">
     <a class="card tile" href="/tools/zmanim"><h3>${esc(t('Daily prayer times (zmanim)'))}</h3><p>${esc(t('Sunrise, latest Shema, Mincha and nightfall for your town.'))}</p></a>
-    <a class="card tile" href="/daily-study"><h3>${esc(t("Today's daily study"))}</h3><p>${esc(t('Chumash, Tehillim, Tanya and Rambam for today.'))}</p></a>
     <a class="card tile" href="/parsha"><h3>${esc(t("This week's Torah portion"))}</h3><p>${esc(t('A short summary and a lesson for this week.'))}</p></a>
     <a class="card tile" href="/calendar"><h3>${esc(t('Jewish calendar'))}</h3><p>${esc(t('Holidays, Rosh Chodesh, fasts and Shabbat times, month by month.'))}</p></a>
     <a class="card tile" href="/ask"><h3>${esc(t('Ask the Rabbi'))}</h3><p>${esc(t('Real questions, answered by Rabbi Labkowski.'))}</p></a>
