@@ -10,7 +10,7 @@ const exists = (name) => { if (!have) { try { have = new Set(fs.readdirSync(DIR)
 
 // First matching rule wins: [pattern on the slug or title, illustration].
 const RULES = [
-  [/moving-to|in-lamorinda|lamorinda/, 'map-pin'], [/dreidel/, 'dreidel'], [/chanukah|menorah|gelt/, 'menorah'], [/rosh-hashanah|simanim|apple|honey|elul|selichot/, 'apple-honey'],
+  [/dreidel/, 'dreidel'], [/chanukah|menorah|gelt/, 'menorah'], [/rosh-hashanah|simanim|apple|honey|elul|selichot/, 'apple-honey'],
   [/shofar|tashlich/, 'shofar'], [/yom-kippur|kol-nidre|teshuvah|fast/, 'candle-flame'], [/sukk|ushpizin|hoshana/, 'sukkah'], [/four-kinds|lulav|etrog/, 'lulav-etrog'],
   [/simchat-torah|hakafot|torah-reading|aliyah|torah|haftarah|weekly-parsha|chumash|bar-mitzvah|bat-mitzvah/, 'torah-scroll'], [/purim|megillah|costume/, 'megillah'], [/mishloach|hamantash/, 'hamantash'],
   [/passover|pesach|seder|matzah|chametz|afikoman|four-questions|exodus/, 'matzah'], [/seder-plate/, 'seder-plate'], [/omer|shavuot|ten-commandments|sinai/, 'mountain-sinai'], [/tablets|613|mitzv/, 'tablets'],
@@ -27,9 +27,11 @@ const RULES = [
   [/soul|afterlife|free-will|belief|g-d|why-mitzvot|meditation|noahide/, 'sparkles'], [/parent|grandparent|family|kids|children|interfaith/, 'family'],
   [/business|ethic|dispute/, 'hands-heart'], [/college|student|school/, 'school'], [/preschool|camp|ckids|playground/, 'playground'], [/grief|hard-times/, 'dove'],
   [/talk|ask|rabbi/, 'chat-bubble'], [/volunteer|involved/, 'hands-heart'], [/newsletter|email/, 'envelope'], [/zmanim|times|clock/, 'clock'], [/birthday/, 'gift'],
+  [/lamorinda|lafayette|moraga|orinda/, 'map-pin'],
 ];
 const CATEGORY = { Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'broken-heart-candle', 'Jewish ideas': 'sparkles' };
 const FIXED = {
+  'learn:choosing-a-jewish-preschool': 'playground', 'learn:hebrew-school-in-lamorinda': 'school', 'learn:israelis-in-lamorinda': 'western-wall', 'learn:jewish-kids-in-lamorinda': 'playground', 'learn:jewish-students-in-lamorinda': 'school', 'learn:jewish-teens-in-lamorinda': 'sparkles', 'learn:jewish-women-in-lamorinda': 'candle-pair-gold', 'learn:jewish-year-in-lamorinda': 'calendar', 'learn:life-events-in-lamorinda': 'chuppah', 'learn:moving-to-lamorinda': 'house', 'learn:russian-speaking-jews-in-lamorinda': 'family', 'learn:supporting-chabad-of-lamorinda': 'pushka', 'learn:volunteering-in-lamorinda': 'hands-heart', 'learn:jewish-home-in-lamorinda': 'mezuzah',
   'program:jewish-preschool': 'playground', 'program:hebrew-school': 'school', 'program:ckids-afterschool': 'playground', 'program:summer-camp': 'sparkles', 'program:adult-education': 'open-book',
   'program:womens-circle': 'candle-pair-gold', 'program:mens-club': 'tefillin', 'program:kids-and-teens': 'dreidel', 'program:bar-bat-mitzvah': 'torah-scroll', 'program:bay-kosher': 'kosher-pot', 'program:chai-club': 'pushka',
   'holiday:yom-kippur': 'candle-flame', 'holiday:simchat-torah': 'torah-scroll', 'holiday:purim': 'hamantash', 'holiday:shavuot': 'mountain-sinai', 'holiday:tisha-bav': 'candle-flame',
