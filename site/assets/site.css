@@ -306,3 +306,10 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .quick { margin: 14px 0; padding: 14px 16px; border: 1px dashed var(--gold); border-radius: 14px; background: #fffaf0; }
 .quick-h { margin: 0 0 6px; font-weight: 600; }
 @media (prefers-color-scheme: dark) { .quick { background: var(--card); } }
+
+/* explore: topic shortcuts with pictures */
+.explore { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 0 0 22px; }
+.explore a { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 16px 10px; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(180deg, var(--card), var(--soft)); color: var(--ink); text-decoration: none; text-align: center; font-weight: 600; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.explore a:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: 0 10px 26px rgba(20,40,75,.1); }
+.explore .art { width: 52px; height: 52px; margin: 0; }
+.explore small { color: var(--muted); font-weight: 400; font-size: .8rem; }
