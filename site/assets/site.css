@@ -292,3 +292,13 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .answer-card p:first-of-type { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 @media (max-width: 400px) { .search-btn { display: none; } }
 .meta { font-size: .95rem; margin: -4px 0 20px; } .meta a { color: var(--gold-ink); font-weight: 600; text-decoration: none; } .meta a:hover { text-decoration: underline; }
+
+/* share with a friend */
+.share { margin: 32px 0 8px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 18px; background: var(--soft); }
+.share-h { margin: 0 0 10px; font: 600 1.05rem var(--serif); }
+.share-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.sh { display: inline-flex; align-items: center; min-height: 40px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: 600 .92rem var(--sans); text-decoration: none; cursor: pointer; }
+.sh:hover { border-color: var(--gold); }
+.sh.native { background: var(--navy); color: #fff; border-color: var(--navy); }
+.sh.wa { color: #1f8f4e; } .sh.fb { color: #1b5fc4; } .sh.tg { color: #1d8ad1; }
+@media (prefers-color-scheme: dark) { .sh.wa, .sh.fb, .sh.tg { color: var(--ink); } }

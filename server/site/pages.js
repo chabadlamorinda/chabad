@@ -8,6 +8,7 @@ const { layout } = require('./layout.js');
 const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 const { googleCalendarUrl } = require('./social.js');
+const { withShare } = require('./share.js');
 const { parseLocal } = require('./ctx.js');
 const { decorate, artImg, artFor, artForPath } = require('./art.js');
 const artImgFor = (p) => artImg(artForPath(p), 'lg');
@@ -53,7 +54,7 @@ function mountPages(app, ctx) {
     const X = ctxOf(res.req), to = status === 200 && !opts.noRedirect && X.redirectTo();
     if (to) return res.set('Vary', 'Accept-Language, Cookie').redirect(302, to);
     const [hd, sh] = await Promise.all([X.hebrewDate(Z.todayLocal()).catch(() => ''), Z.thisShabbat().catch(() => null)]);
-    const html = layout(X.C, { base, indexable, analytics, hebrewDate: hd, shabbat: sh, lang: X.lang, t: X.t, fmtDay: X.shortDate, tm: X.tm, ...opts, body: opts.path === '/' ? opts.body : decorate(opts.body, opts.path) });
+    const html = layout(X.C, { base, indexable, analytics, hebrewDate: hd, shabbat: sh, lang: X.lang, t: X.t, fmtDay: X.shortDate, tm: X.tm, ...opts, body: opts.path === '/' ? opts.body : decorate(status === 200 ? withShare(X, opts.body, opts.path, opts.title, base) : opts.body, opts.path) });
     res.status(status).set('Cache-Control', 'public, max-age=60, stale-while-revalidate=600').set('Vary', 'Accept-Language, Cookie').type('html').send(X.links(html));
   }
   const counts = async () => { try { return rsvpCounts ? await rsvpCounts() : {}; } catch (e) { return {}; } };
@@ -187,7 +188,7 @@ ${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" 
   <noscript><p>${esc(t('Please RSVP by email:'))} <a href="mailto:${esc(C.org.email || '')}?subject=${encodeURIComponent('RSVP: ' + e.title)}">${esc(C.org.email || '')}</a></p></noscript>
   <div class="rsvp-ui" hidden></div>
 </section>` : ''}
-<p class="btns"><a class="btn ghost" href="/events/${e.slug}.ics">${esc(t('Add to my calendar'))}</a><a class="btn ghost" href="${esc(googleCalendarUrl(e, base))}" rel="noopener" target="_blank">${esc(t('Add to Google Calendar'))}</a><a class="btn ghost" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(base + X.path('/events/' + e.slug))}" rel="noopener" target="_blank">${esc(t('Share on Facebook'))}</a><a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent(t('Join me at {title}, {when}:', { title: e.title, when: X.when(e) }) + ' ' + base + X.path('/events/' + e.slug))}" rel="noopener" target="_blank">${esc(t('Invite a friend on WhatsApp'))}</a></p>
+<p class="btns"><a class="btn ghost" href="/events/${e.slug}.ics">${esc(t('Add to my calendar'))}</a><a class="btn ghost" href="${esc(googleCalendarUrl(e, base))}" rel="noopener" target="_blank">${esc(t('Add to Google Calendar'))}</a><a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent(t('Join me at {title}, {when}:', { title: e.title, when: X.when(e) }) + ' ' + base + X.path('/events/' + e.slug))}" rel="noopener" target="_blank">${esc(t('Invite a friend on WhatsApp'))}</a></p>
 ${prog ? `<p>${esc(t('Part of'))} <a href="/programs/${prog.slug}">${esc(prog.name)}</a>.</p>` : ''}${hol ? `<p>${esc(t('Learn more about'))} <a href="/holidays/${hol.slug}">${esc(hol.title)}</a>.</p>` : ''}
 </article>`;
     await render(res, { path: '/events/' + e.slug, title: e.title, description: `${X.when(e)}. ${e.summary || plain(e.details || '')}`, image: e.image, body, ld: [eventLd(C, base, e), crumbs(base, [[t('Events'), '/events'], [e.title, '/events/' + e.slug]])] });

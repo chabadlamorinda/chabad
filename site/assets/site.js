@@ -32,6 +32,16 @@
   }
 
   // Header: "Sign in" becomes "My account" once signed in on this device.
+  // Share with a friend: the phone's own share menu where there is one, and copy link.
+  [].forEach.call(document.querySelectorAll('[data-share]'), function (box) {
+    var nat = box.querySelector('[data-share-native]'), url = box.getAttribute('data-url'), title = box.getAttribute('data-title');
+    if (nat && navigator.share) { nat.hidden = false; nat.addEventListener('click', function () { navigator.share({ title: title, text: title, url: url }).catch(function () {}); }); }
+    var cp = box.querySelector('[data-copy]');
+    if (cp) cp.addEventListener('click', function () {
+      var done = function () { var t = cp.textContent; cp.textContent = cp.getAttribute('data-done'); setTimeout(function () { cp.textContent = t; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { prompt('', url); }); else prompt('', url);
+    });
+  });
   if (store.get('cl_signed')) {
     var a = $('[data-account]'); if (a) a.textContent = T('My account');
     // So the Rabbi can suggest events that fit (only when "Suggest things for my family" is on in My account).

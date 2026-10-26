@@ -468,6 +468,14 @@ test('Google Ads campaigns: within Google limits and every ad lands on a working
   for (const g of data.campaigns.flatMap((x) => x.groups)) assert.equal((await c.call('GET', g.url.replace('{year}', y))).status, 200, g.url);
 });
 
+test('share with a friend: WhatsApp, text, email, Facebook, Telegram and copy link on pages worth sharing', async () => {
+  const c = client(), g = (await c.call('GET', '/learn/mezuzah')).text;
+  for (const re of [/data-share/, /https:\/\/wa\.me\/\?text=/, /href="sms:\?&amp;body=/, /href="mailto:\?subject=/, /facebook\.com\/sharer\/sharer\.php\?u=http%3A%2F%2Fsite\.test%2Flearn%2Fmezuzah/, /t\.me\/share\/url/, /data-copy="http:\/\/site\.test\/learn\/mezuzah"/]) assert.match(g, re);
+  assert.match((await c.call('GET', '/he/learn/mezuzah')).text, /data-url="http:\/\/site\.test\/he\/learn\/mezuzah"/);
+  assert.match((await c.call('GET', '/events/' + EVENT)).text, /data-share/);
+  assert.doesNotMatch((await c.call('GET', '/account')).text, /data-share/);
+});
+
 test('site search: finds pages in the visitor\'s language, answers questions, goes to Hebrew or Russian when typed', async () => {
   const c = client();
   const r = (await c.call('GET', '/search?q=bar%20mitzvah')).text;
