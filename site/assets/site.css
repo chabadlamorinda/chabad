@@ -313,3 +313,4 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .explore a:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: 0 10px 26px rgba(20,40,75,.1); }
 .explore .art { width: 52px; height: 52px; margin: 0; }
 .explore small { color: var(--muted); font-weight: 400; font-size: .8rem; }
+@media (min-width: 1000px) { .ftr-grid { grid-template-columns: 1.3fr repeat(5, 1fr); } }
