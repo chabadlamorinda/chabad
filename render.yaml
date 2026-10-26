@@ -18,6 +18,8 @@ services:
     envVars:
       - key: NODE_VERSION
         value: "22"
+      - key: NODE_ENV                 # production: short error pages, faster templates
+        value: production
       - key: STRIPE_SECRET_KEY        # sk_test_... first, then sk_live_...  (set in the Render dashboard)
         sync: false
       - key: STRIPE_PUBLISHABLE_KEY   # pk_test_... first, then pk_live_...  (set in the Render dashboard)

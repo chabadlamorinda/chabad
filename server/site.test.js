@@ -136,6 +136,8 @@ test('email sign-in: code, link, wrong codes; an app record with the same email 
 test('profile, family and yahrzeits; app yahrzeits are kept separate', async () => {
   const c = await signIn();
   assert.equal((await c.call('PUT', '/api/site/me', { name: '' })).json.code, 'invalid_name');
+  assert.equal((await c.call('PUT', '/api/site/me', { name: 'A', birthday: '2023-02-31' })).status, 200, 'an impossible date is ignored, not a crash');
+  assert.equal((await c.call('GET', '/api/site/me')).json.profile.birthday, '');
   assert.equal((await c.call('PUT', '/api/site/me', { name: 'Sara Levi', hebrewName: 'Sarah bat Avraham', birthday: '1985-04-02', anniversary: '2010-06-20', shareYahrzeits: true })).status, 200);
   assert.equal((await c.call('PUT', '/api/site/family', { family: [{ name: 'David Levi', relation: 'spouse', gender: 'm' }, { name: 'Noa', relation: 'child', gender: 'f', birthday: '2016-01-15' }, { name: 'Eli', relation: 'child', birthday: '2019-09-09' }] })).status, 200);
   assert.equal((await c.call('PUT', '/api/site/family', { family: [{ name: '' }] })).json.code, 'invalid_family');
@@ -491,6 +493,13 @@ test('one-tap Shabbat dinner: the Shabbat page offers it, and the quick reply go
   assert.match((await c.call('GET', '/')).text, /data-shabbat-quick/);
   const r = await c.call('POST', '/api/site/forms/shabbat-meal', { fields: { role: '2', people: '4', date: '2026-10-30', name: 'Levi Family', email: 'levi@example.com', phone: '', message: 'Noa: peanut allergy' } });
   assert.equal(r.status, 200); assert.equal(r.json.ok, true);
+});
+
+test('robustness: broken addresses and impossible dates never show errors or code', async () => {
+  const c = client();
+  for (const p of ['/events/%E0', '/learn/%ff']) { const r = await c.call('GET', p); assert.ok(r.status === 404 || r.status === 400, p); assert.doesNotMatch(r.text, /at .*\.js:\d+/); }
+  const bad = await fetch(base + '/api/site/login', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: '{"email":' });
+  assert.ok(bad.status >= 400 && bad.status < 500); assert.doesNotMatch(await bad.text(), /node_modules|\.js:\d+/);
 });
 
 test('site search: finds pages in the visitor\'s language, answers questions, goes to Hebrew or Russian when typed', async () => {

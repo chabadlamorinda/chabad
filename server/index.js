@@ -407,6 +407,14 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/pushka', express.static(path.join(ROOT, 'pushka'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use(site.notFound);
   app.use((req, res) => res.status(404).type('text').send('Not found'));
+  // Last stop for errors: a short message, never the server's code (bad JSON or a broken address is the visitor's 4xx).
+  app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
+    const status = err && (err.status || err.statusCode) >= 400 && (err.status || err.statusCode) < 500 ? (err.status || err.statusCode) : 500;
+    if (status === 500) log.error('server error:', err && err.message);
+    if (res.headersSent) return res.end();
+    if (/^\/(api|admin\/api)\//.test(req.path)) return res.status(status).json({ code: status === 500 ? 'server_error' : 'bad_request', error: status === 500 ? 'Something went wrong. Please try again.' : 'Bad request.' });
+    res.status(status === 400 ? 404 : status).type('text').send(status === 500 ? 'Something went wrong. Please try again, or call 925-384-7242.' : 'Not found');
+  });
   return app;
 }
 

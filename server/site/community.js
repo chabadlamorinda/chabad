@@ -11,7 +11,7 @@ const COOKIE = 'cl_member';
 const TTL_DAYS = 180;
 const CODE_MINUTES = 15;
 const validEmail = (e) => /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/.test(e) && e.length <= 254;
-const ymdOk = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(new Date(s + 'T12:00:00Z')) && s >= '1900-01-01' && s <= '2100-12-31';
+const ymdOk = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(new Date(s + 'T12:00:00Z')) && new Date(s + 'T12:00:00Z').toISOString().slice(0, 10) === s && s >= '1900-01-01' && s <= '2100-12-31';
 const RELATIONS = ['spouse', 'child', 'parent', 'sibling', 'grandchild', 'grandparent', 'other'];
 
 const SCHEMA = `
@@ -71,6 +71,12 @@ CREATE TABLE IF NOT EXISTS chat_questions (id BIGSERIAL PRIMARY KEY, question TE
 
 const newId = (p) => p + crypto.randomBytes(12).toString('hex');
 const sha = (s) => crypto.createHash('sha256').update(String(s)).digest('hex');
+// The next yearly date (birthday, anniversary) on or after today; Feb 29 falls on Feb 28 in other years.
+function nextAnnual(today, ymd) {
+  const at = (y) => { const leap = (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; return y + (ymd.slice(5) === '02-29' && !leap ? '-02-28' : ymd.slice(4)); };
+  const y = +today.slice(0, 4), d = at(y);
+  return d >= today ? d : at(y + 1);
+}
 const d10 = (v) => (v ? (v instanceof Date ? v.toISOString() : String(v)).slice(0, 10) : '');
 
 function communityStore(store) {
@@ -81,12 +87,12 @@ function communityStore(store) {
       ON CONFLICT (email) DO UPDATE SET code_hash=EXCLUDED.code_hash, link_hash=EXCLUDED.link_hash, expires_at=EXCLUDED.expires_at, attempts=0`, [email, sha(code), sha(link)]); },
     // Returns true once for a correct, unexpired code (or link); five wrong tries burn the code.
     async useCode(email, { code, link }) {
-      const r = await one('SELECT * FROM login_codes WHERE email=$1 AND expires_at > now() AND attempts < 5', [email]);
+      // Count the try first, in one step, so guesses sent at the same moment cannot get past the limit.
+      const r = await one('UPDATE login_codes SET attempts=attempts+1 WHERE email=$1 AND expires_at > now() AND attempts < 5 RETURNING code_hash, link_hash', [email]);
       if (!r) return false;
       const ok = code ? crypto.timingSafeEqual(Buffer.from(sha(code)), Buffer.from(r.code_hash)) : crypto.timingSafeEqual(Buffer.from(sha(link)), Buffer.from(r.link_hash));
-      if (!ok) { await q('UPDATE login_codes SET attempts=attempts+1 WHERE email=$1', [email]); return false; }
-      await q('DELETE FROM login_codes WHERE email=$1', [email]);
-      return true;
+      if (!ok) return false;
+      return (await q('DELETE FROM login_codes WHERE email=$1 AND code_hash=$2', [email, r.code_hash])).rowCount === 1;
     },
     // A website account is the one that proved this email with a sign-in code. Records made elsewhere (the app)
     // with the same email are never taken over, so nobody can plant an address and read another family's data.
@@ -184,7 +190,7 @@ async function upcomingDatesFor(m, family, yz, today, max = 15) {
     }
   }
   const ann = d10(m.anniversary);
-  if (ann) { let next = today.slice(0, 4) + ann.slice(4); if (next < today) next = String(+today.slice(0, 4) + 1) + ann.slice(4); out.push({ kind: 'anniversary', name: m.name, date: next, years: +next.slice(0, 4) - +ann.slice(0, 4) }); }
+  if (ann) { const next = nextAnnual(today, ann); out.push({ kind: 'anniversary', name: m.name, date: next, years: +next.slice(0, 4) - +ann.slice(0, 4) }); }
   // Mezuzahs and tefillin are checked by a scribe twice in seven years: due 3.5 years after the last check.
   for (const [kind, last] of [['mezuzah-check', d10(m.mezuzahs_checked)], ['tefillin-check', d10(m.tefillin_checked)]]) {
     const due = checkDue(last);
@@ -358,14 +364,14 @@ function mountCommunityAdmin(r, { authed, wrap }, { cs, content, store }) {
     const days = Math.min(Math.max(parseInt(req.query.days, 10) || 30, 1), 366), today = new Date().toISOString().slice(0, 10), out = [];
     for (const b of await cs.birthdays()) {
       if (b.birthday) {
-        const [, mo, da] = b.birthday.split('-'); let next = today.slice(0, 4) + '-' + mo + '-' + da; if (next < today) next = String(+today.slice(0, 4) + 1) + '-' + mo + '-' + da;
+        const next = nextAnnual(today, b.birthday);
         const left = H.daysBetween(today, next);
         const p = H.hebrewOf(b.birthday, b.birth_after_sunset), hn = H.next({ day: p.day, month: p.month }, today);
         if (left <= days) out.push({ kind: 'birthday', date: next, daysLeft: left, name: b.name, hebrewName: b.hebrew_name, relation: b.relation, family: b.member_name, email: b.email, phone: b.phone, age: +next.slice(0, 4) - +b.birthday.slice(0, 4) });
         if (hn && H.daysBetween(today, hn.date) <= days) out.push({ kind: 'hebrew birthday', date: hn.date, daysLeft: H.daysBetween(today, hn.date), name: b.name, hebrewName: b.hebrew_name, relation: b.relation, family: b.member_name, email: b.email, phone: b.phone, hebrew: H.label(p) });
       }
       if (b.anniversary) {
-        const [, mo, da] = b.anniversary.split('-'); let next = today.slice(0, 4) + '-' + mo + '-' + da; if (next < today) next = String(+today.slice(0, 4) + 1) + '-' + mo + '-' + da;
+        const next = nextAnnual(today, b.anniversary);
         if (H.daysBetween(today, next) <= days) out.push({ kind: 'anniversary', date: next, daysLeft: H.daysBetween(today, next), name: b.name, family: b.member_name, email: b.email, phone: b.phone, years: +next.slice(0, 4) - +b.anniversary.slice(0, 4) });
       }
     }

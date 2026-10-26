@@ -5,7 +5,7 @@ const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
 const { esc } = require('./md.js');
 
-const validYmd = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s || '') && !isNaN(new Date(s + 'T12:00:00Z')) && s >= '1900-01-01' && s <= '2100-12-31';
+const validYmd = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s || '') && !isNaN(new Date(s + 'T12:00:00Z')) && new Date(s + 'T12:00:00Z').toISOString().slice(0, 10) === s && s >= '1900-01-01' && s <= '2100-12-31';
 const local = (ymd) => { const [y, m, d] = ymd.split('-').map(Number); return new Date(y, m - 1, d); };
 const form = (X, action, d, sunset, extra = '') => `<form class="card tool" method="get" action="${action}">
   <label>${esc(X.t('Date'))} <input type="date" name="d" value="${esc(d || '')}" required></label>
