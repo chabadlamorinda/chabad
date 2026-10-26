@@ -163,7 +163,7 @@ function sanitizeYahrzeits(list) {
 
 // A member's own Jewish calendar: yahrzeits, Hebrew birthdays (theirs and the family's), children's
 // Bar/Bat Mitzvah dates and the wedding anniversary, soonest first.
-async function upcomingDatesFor(m, family, yz, today) {
+async function upcomingDatesFor(m, family, yz, today, max = 15) {
   const Z = require('./zmanim.js'), out = [], within = (d, days) => d && H.daysBetween(today, d) >= 0 && H.daysBetween(today, d) <= days;
   for (const y of yz) { const n = H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, today); if (n && within(n.date, 400)) out.push({ kind: 'yahrzeit', name: y.name, date: n.date }); }
   const people = [{ name: m.name, birthday: d10(m.birthday), night: m.birth_after_sunset, relation: 'self' }, ...family.map((f) => ({ name: f.name, birthday: f.birthday, night: f.birth_after_sunset, relation: f.relation, gender: f.gender }))];
@@ -183,7 +183,7 @@ async function upcomingDatesFor(m, family, yz, today) {
     const due = checkDue(last);
     if (due && H.daysBetween(today, due) <= 400) out.push({ kind, name: m.name, date: due < today ? today : due, overdue: due < today });
   }
-  return out.sort((a, b) => a.date.localeCompare(b.date)).slice(0, 15);
+  return out.sort((a, b) => a.date.localeCompare(b.date)).slice(0, max);
 }
 // 42 months after the last check (a date string), or '' if unknown.
 function checkDue(last) {
@@ -206,7 +206,10 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   const secure = /^https:/.test(base) ? '; Secure' : '';
   const setCookie = (res, id) => res.setHeader('Set-Cookie', `${COOKIE}=${issue(id)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${TTL_DAYS * 86400}${secure}`);
 
-  const upcomingDates = (m, family, yz) => upcomingDatesFor(m, family, yz, new Date(now()).toISOString().slice(0, 10));
+  const upcomingDates = (m, family, yz, max) => upcomingDatesFor(m, family, yz, new Date(now()).toISOString().slice(0, 10), max);
+  // A private calendar link (no sign-in needed by the phone's calendar app): the family's Jewish dates for the coming year.
+  const icsKey = (id) => id + '.' + mac('ics:' + id).slice(0, 24);
+  const icsMember = (k) => { const [id, sig] = String(k || '').split('.'); if (!id || !sig || !/^m_[0-9a-f]{24}$/.test(id)) return null; const a = Buffer.from(sig), b = Buffer.from(mac('ics:' + id).slice(0, 24)); return a.length === b.length && crypto.timingSafeEqual(a, b) ? id : null; };
   const r = express.Router();
   r.use(express.json({ limit: '32kb' }));
   r.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
@@ -250,7 +253,24 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
       yahrzeits: yz.map((y) => ({ name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes, fromApp: y.source !== 'web', next: (H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, new Date(now()).toISOString().slice(0, 10)) || {}).date || '' })),
       rsvps: rs.map((x) => ({ event: x.event_slug, adults: x.adults, kids: x.kids })),
       upcoming: await upcomingDates(m, family, yz),
+      calendarUrl: base.replace(/^https?:/, 'webcal:') + '/api/site/me/calendar.ics?k=' + icsKey(m.id),
     });
+  }));
+  r.get('/me/calendar.ics', need, wrap(async (req, res) => {
+    const id = icsMember(req.query.k), m = id && await store.getMember(id);
+    if (!m) return res.status(404).type('text').send('Not found');
+    const t = tOf({ get: (h) => (h === 'x-lang' ? m.lang || 'en' : '') }), [family, yz] = await Promise.all([cs.family(m.id), cs.webYahrzeits(m.id)]);
+    const list = await upcomingDates(m, family, yz, 200), L = m.lang === 'he' || m.lang === 'ru' ? '/' + m.lang : '';
+    const TITLE = { 'yahrzeit': 'Yahrzeit', 'hebrew-birthday': 'Hebrew birthday', 'bar-mitzvah': 'Bar Mitzvah', 'bat-mitzvah': 'Bat Mitzvah', 'anniversary': 'Wedding anniversary', 'mezuzah-check': 'Mezuzahs due for checking', 'tefillin-check': 'Tefillin due for checking' };
+    const LINK = { 'yahrzeit': '/sponsor?o=yahrzeit&name=', 'hebrew-birthday': '/sponsor?o=birthday&name=', 'anniversary': '/sponsor?o=anniversary&name=', 'bar-mitzvah': '/help/bar-bat-mitzvah?n=', 'bat-mitzvah': '/help/bar-bat-mitzvah?n=', 'mezuzah-check': '/forms/mezuzah-tefillin?n=', 'tefillin-check': '/forms/mezuzah-tefillin?n=' };
+    const x = (s) => String(s).replace(/[\\;,]/g, (c) => '\\' + c).replace(/\r?\n/g, '\\n');
+    const d8 = (s) => s.replace(/-/g, ''), next = (s) => { const d = new Date(s + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10); };
+    const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
+    const ev = list.map((u) => ['BEGIN:VEVENT', `UID:${u.kind}-${crypto.createHash('sha1').update(u.name + u.date).digest('hex').slice(0, 12)}-${d8(u.date)}@chabadoflamorinda`, `DTSTAMP:${stamp}`,
+      `DTSTART;VALUE=DATE:${d8(u.date)}`, `DTEND;VALUE=DATE:${d8(next(u.date))}`, `SUMMARY:${x(t(TITLE[u.kind] || u.kind) + ': ' + u.name)}`,
+      ...(u.kind === 'yahrzeit' ? [`DESCRIPTION:${x(t('Light a 24-hour memorial candle on {date} before sunset.', { date: u.date }))}`] : []),
+      `URL:${base}${L}${(LINK[u.kind] || '/account?') + encodeURIComponent(u.name)}`, 'END:VEVENT'].join('\r\n'));
+    res.type('text/calendar; charset=utf-8').send(['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Chabad of Lamorinda//My Jewish dates//EN', 'CALSCALE:GREGORIAN', `X-WR-CALNAME:${x(t('My Jewish dates'))}`, ...ev, 'END:VCALENDAR'].join('\r\n') + '\r\n');
   }));
   r.put('/me', need, authed, wrap(async (req, res) => {
     const p = sanitizeProfile(req.body || {});

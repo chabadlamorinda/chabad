@@ -296,6 +296,14 @@ test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitatio
   const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
   const row = (await a.call('GET', '/admin/api/site/rsvps/' + EVENT)).json.list.find((x) => x.name === 'Rivka Stein');
   assert.match(row.diet, /vegetarian/); assert.match(row.diet, /Chaya: peanut allergy/);
+  // A private calendar link with the family's Jewish dates (works without the sign-in cookie, only with its key).
+  await c.call('PUT', '/api/site/me', { name: 'Rivka Stein', mezuzahsChecked: '2022-05-01' });
+  await c.call('PUT', '/api/site/family', { family: [{ name: 'Chaya', relation: 'child', gender: 'f', birthday: '2015-12-01' }] });
+  const url = (await c.call('GET', '/api/site/me')).json.calendarUrl;
+  assert.match(url, /^webcal:\/\/site\.test\/api\/site\/me\/calendar\.ics\?k=m_/);
+  const ics = await client().call('GET', url.replace(/^webcal:\/\/site\.test/, ''));
+  assert.equal(ics.status, 200); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.match(ics.text, /SUMMARY:Bat Mitzvah: Chaya/); assert.match(ics.text, /SUMMARY:Mezuzahs due for checking/);
+  assert.equal((await client().call('GET', url.replace(/^webcal:\/\/site\.test/, '').replace(/.$/, 'x'))).status, 404, 'a wrong key shows nothing');
 });
 
 test('languages: Hebrew and Russian pages, automatic choice, switch, hreflang', async () => {
