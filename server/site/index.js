@@ -127,7 +127,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const notFound = (req, res, next) => {
     if (req.method !== 'GET' || !req.accepts('html') || /^\/(api|admin|pushka|kiddush|board)\b/.test(req.path)) return next();
     const t = ctxOf(req).t;
-    pages.render(res, { path: req.path, noindex: true, title: t('Page not found'), body: `<section class="wrap sec narrow"><h1>${esc(t('We could not find that page'))}</h1><p>${esc(t('It may have moved. Try these:'))} <a href="/events">${esc(t('Events calendar'))}</a> · <a href="/shabbat">${esc(t('Shabbat times'))}</a> · <a href="/">${esc(t('Home'))}</a></p></section>` }, 404).catch(next);
+    pages.render(res, { path: req.path, noindex: true, title: t('Page not found'), body: `<section class="wrap sec narrow"><h1>${esc(t('We could not find that page'))}</h1><form class="searchbar" action="/search" role="search"><input type="search" name="q" value="${esc((() => { try { return decodeURIComponent(req.path); } catch (e) { return ''; } })().replace(/^\/(he|ru)\//, '/').split('/').pop().replace(/[-_]+/g, ' ').replace(/\.\w+$/, '').slice(0, 60))}" aria-label="${esc(t('Search the website'))}"><button class="btn gold" type="submit">${esc(t('Search'))}</button></form><p>${esc(t('It may have moved. Try these:'))} <a href="/events">${esc(t('Events calendar'))}</a> · <a href="/shabbat">${esc(t('Shabbat times'))}</a> · <a href="/">${esc(t('Home'))}</a></p></section>` }, 404).catch(next);
   };
   return {
     content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
