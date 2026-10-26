@@ -46,6 +46,7 @@ Add an object to `site/content/events.json`:
 * `holiday` (a file name in `holidays/`) and `program` (a slug in `programs.json`) link the event onto those pages.
 * `rsvp`: `{}` for unlimited, `{ "capacity": N }` to cap it, `"kids": false` to hide the children counter. Leave `rsvp` out for no RSVP.
 * `"status": "draft"` hides an event until it is ready. Remove it to publish.
+* After the event: `"album": "https://www.facebook.com/media/set/?set=..."` adds a "See all the photos" button, and `"photos": ["/media/chanukah-2026-1.jpg", ...]` shows a few pictures on the page (save them in `site/media/`, under ~400 KB each).
 * Translations: add `"he": { "title", "summary", "details", "price" }` and `"ru": { ... }` to every event (the site is in English, Hebrew and Russian).
 * Images: save flyers/photos into `site/media/` (JPG/PNG/PDF, keep images under ~400 KB; resize first).
 * Past events drop off the site automatically; leave them in the file.

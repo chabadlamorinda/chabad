@@ -182,6 +182,8 @@ ${e.summary ? `<p class="lead-d">${esc(e.summary)}</p>` : ''}
 ${md(e.details || '')}
 ${e.price ? `<p><strong>${esc(t('Cost:'))}</strong> ${esc(e.price)}</p>` : ''}
 ${e.flyer ? `<p><a class="btn ghost" href="${esc(e.flyer)}">${esc(t('Download the flyer'))}</a></p>` : ''}
+${e.photos && e.photos.length ? `<h2>${esc(t('Photos'))}</h2><div class="pics big">${e.photos.map((p) => `<a href="${esc(p)}"><img src="${esc(p)}" alt="${esc(e.title)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}
+${e.album ? `<p><a class="btn gold" href="${esc(e.album)}" rel="noopener" target="_blank">${esc(t('See all the photos'))}</a></p>` : ''}
 ${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" data-kids="${e.rsvp.kids === false ? 0 : 1}">
   <h2>${esc(t('RSVP'))}</h2>
   ${cap ? `<p class="muted">${esc(t('{left} of {cap} places left', { left: Math.max(cap - cnt, 0), cap }))}</p>` : cnt ? `<p class="muted">${esc(t('{n} people are coming', { n: cnt }))}</p>` : ''}

@@ -57,6 +57,8 @@ function load(dir = DIR) {
     need(!e.category || CATEGORIES.includes(e.category), `event ${e.slug}: category must be one of ${CATEGORIES.join(', ')}`);
     need(!e.program || programSlugs.has(e.program), `event ${e.slug}: unknown program "${e.program}"`);
     need(!e.holiday || holidaySlugs.has(e.holiday), `event ${e.slug}: unknown holiday "${e.holiday}"`);
+    need(!e.album || /^https:\/\//.test(e.album), `event ${e.slug}: album must be a full link starting with https:// (for example a Facebook album)`);
+    need(!e.photos || (Array.isArray(e.photos) && e.photos.every((p) => /^\/media\/|^https:\/\//.test(p))), `event ${e.slug}: photos must be a list of /media/... pictures`);
     if (e.rsvp) need(!e.rsvp.capacity || (Number.isInteger(e.rsvp.capacity) && e.rsvp.capacity > 0), `event ${e.slug}: rsvp.capacity must be a whole number`);
   }
   for (const f of faq) need(f.q && f.a, 'faq.json: every entry needs q and a');

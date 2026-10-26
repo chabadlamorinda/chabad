@@ -64,8 +64,8 @@ test('content files are valid and linked together', () => {
 test('content errors are reported clearly', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'content-'));
   fs.cpSync(DIR, dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'events.json'), JSON.stringify([{ slug: 'Bad Slug', title: 'x', start: '6pm' }, { slug: 'a', title: 'A', start: '2026-01-01T10:00', program: 'nope' }]));
-  assert.throws(() => load(dir), (e) => e.errors.some((m) => /bad slug/.test(m)) && e.errors.some((m) => /start must/.test(m)) && e.errors.some((m) => /unknown program/.test(m)));
+  fs.writeFileSync(path.join(dir, 'events.json'), JSON.stringify([{ slug: 'Bad Slug', title: 'x', start: '6pm' }, { slug: 'a', title: 'A', start: '2026-01-01T10:00', program: 'nope', album: 'facebook.com/x', photos: ['c:/pic.jpg'] }]));
+  assert.throws(() => load(dir), (e) => e.errors.some((m) => /bad slug/.test(m)) && e.errors.some((m) => /start must/.test(m)) && e.errors.some((m) => /unknown program/.test(m)) && e.errors.some((m) => /album must/.test(m)) && e.errors.some((m) => /photos must/.test(m)));
   fs.rmSync(dir, { recursive: true, force: true });
 });
 test('times carry the right Pacific offset across daylight saving', () => {
