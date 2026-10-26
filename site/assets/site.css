@@ -338,3 +338,7 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .toc a { font-size: .92rem; padding: 4px 10px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
 .toc a:hover { border-color: var(--gold); }
 h2[id] { scroll-margin-top: 80px; }
+
+.cat-h { display: flex; align-items: center; gap: 12px; margin-top: 1.6em; }
+.cat-h .art { width: 48px; height: 48px; margin: 0; padding: 6px; }
+.cat-h small { font: 400 .95rem var(--sans); color: var(--muted); }

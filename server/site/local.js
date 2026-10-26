@@ -5,6 +5,7 @@
 'use strict';
 const { md, esc, plain } = require('./md.js');
 const { fullAddress, LEARN_CATEGORIES } = require('./content.js');
+const { artImg } = require('./art.js');
 const Z = require('./zmanim.js');
 
 const townPath = (t) => '/jewish-' + t.slug;
@@ -74,7 +75,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
       body: `<section class="wrap sec"><h1>${esc(t('Learn about Judaism'))}</h1><p class="lead-d">${esc(t('{n} clear, friendly guides to Jewish life, from lighting Shabbat candles to saying Kaddish.', { n: C.learn.length }))} <a href="/help/talk-to-the-rabbi">${esc(t('Have a question that is not here? Ask the Rabbi.'))}</a></p>
 <p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
 <p class="chips">${groups.map(([cat]) => `<a class="chip" href="#${id(cat)}">${esc(t(cat))}</a>`).join('')}<a class="chip" href="/holidays">${esc(t('Holidays'))}</a><a class="chip" href="/tehillim">${esc(t('Tehillim'))}</a></p>
-<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}">${esc(t(cat))}</h2><div class="grid">${list.map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>`).join('')}</div></section>`,
+<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="grid">${list.map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>`).join('')}</div></section>`,
       ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
   }));
 
