@@ -59,3 +59,7 @@ These came from the current website, which disagrees with itself in places, or w
 19. Kiddush sponsorship prices, sharing a Kiddush, how far ahead to book.
 20. The Building Campaign story and dedication opportunities; legacy or bequest giving.
 21. Who coordinates volunteers; mezuzah price range and checking time; lending library; picking up menorahs and candles.
+22. Seniors: rides to services or classes, wheelchair access at the center, joining classes online, any seniors' program.
+23. Interfaith families: Hebrew School and Bar/Bat Mitzvah for children whose father is Jewish (the guide says "ask the Rabbi").
+24. Any group or regular event for people in their 20s and 30s; any parent-and-baby program; meal trains for new mothers.
+25. For visitors: hotels within walking distance for Shabbat, an eruv, kosher takeout, mikvah access.
