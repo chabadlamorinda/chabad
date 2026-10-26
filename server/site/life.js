@@ -38,7 +38,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
     const body = `<section class="wrap sec"><h1>${esc(t("We're here for you"))}</h1>
 <p class="lead-d">${esc(t('Whatever you are going through, in joy or in sorrow, Chabad of Lamorinda is here. Call the Rabbi first: we help with everything, from beginning to end, for every Jew, no membership needed.'))}</p>
 <p class="btns">${phoneLink(o)}<a class="btn ghost" href="/help/talk-to-the-rabbi">${esc(t('Talk to the Rabbi'))}</a></p>
-<div class="grid help-grid">${C.help.map((h) => `<a class="card tile${h.urgent === 'yes' ? ' urgent' : ''}" href="/help/${h.slug}"><h3>${esc(h.title)}</h3><p>${esc(h.description)}</p></a>`).join('')}
+<h2 class="sr-only">${esc(t('All life situations'))}</h2><div class="grid help-grid">${C.help.map((h) => `<a class="card tile${h.urgent === 'yes' ? ' urgent' : ''}" href="/help/${h.slug}"><h3>${esc(h.title)}</h3><p>${esc(h.description)}</p></a>`).join('')}
 <a class="card tile" href="/kaddish"><h3>${esc(t('Saying Kaddish'))}</h3><p>${esc(t('Join our minyan, or arrange for Kaddish to be said for your loved one.'))}</p></a>
 <a class="card tile" href="/tehillim"><h3>${esc(t('Tehillim for every occasion'))}</h3><p>${esc(t('Which Psalms to say for someone sick, a birth, a yahrzeit or a birthday.'))}</p></a>
 <a class="card tile" href="/sponsor"><h3>${esc(t('Sponsor in honor or memory'))}</h3><p>${esc(t('Mark a yahrzeit, birthday or simcha with the community.'))}</p></a></div>
@@ -60,7 +60,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
     const body = `<article class="wrap sec narrow help-page">
 <p class="crumbs"><a href="/help">${esc(t("We're here for you"))}</a> ›</p>
 <h1>${esc(h.title)}</h1>
-<aside class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${phoneLink(o)}<a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p></aside>
+<div class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${phoneLink(o)}<a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p></div>
 ${md(h.body)}
 ${extras ? `<div class="grid">${extras}</div>` : ''}
 ${h.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(h.faq)}` : ''}

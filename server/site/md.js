@@ -27,7 +27,7 @@ function md(src) {
     if (!line.trim()) { flushPara(); flushList(); continue; }
     if ((m = /^(#{1,4})\s+(.*)$/.exec(line))) {
       flushPara(); flushList();
-      const lvl = Math.min(m[1].length + 1, 5), id = m[2].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      const lvl = Math.min(Math.max(m[1].length, 2), 5), id = m[2].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
       out.push(`<h${lvl} id="${id}">${inline(m[2])}</h${lvl}>`); continue;
     }
     if (/^---+$/.test(line)) { flushPara(); flushList(); out.push('<hr>'); continue; }

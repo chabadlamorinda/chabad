@@ -1,7 +1,7 @@
 /* Chabad of Lamorinda website. System fonts (no downloads), one file, light and dark themes. */
 :root {
   --ink: #16213a; --muted: #5a6478; --bg: #ffffff; --soft: #f6f3ec; --card: #ffffff; --line: #e6e1d6;
-  --navy: #14284b; --navy-2: #1f3d6e; --gold: #c99a2e; --gold-2: #e2b84d; --link: #1f4f9a; --ok: #1d7a46; --err: #b3261e;
+  --navy: #14284b; --navy-2: #1f3d6e; --gold: #c99a2e; --gold-2: #e2b84d; --gold-ink: #85600f; --link: #1f4f9a; --ok: #1d7a46; --err: #b3261e;
   --r: 14px; --shadow: 0 1px 2px rgba(20,40,75,.06), 0 6px 20px rgba(20,40,75,.07);
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -64,8 +64,9 @@ html, body { overflow-x: clip; }
 .hero .lead { font-size: 1.15rem; color: #dfe6f3; max-width: 52ch; }
 .hero-in { display: grid; gap: 28px; align-items: center; }
 @media (min-width: 900px) { .hero-in { grid-template-columns: 1.5fr 1fr; } }
-.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; font-weight: 700; color: var(--gold); margin: 0 0 8px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; font-weight: 700; color: var(--gold-ink); margin: 0 0 8px; }
 .hero .eyebrow { color: var(--gold-2); }
+.hero .card .eyebrow { color: var(--gold-ink); }
 .shabbat-card { color: var(--ink); }
 .shabbat-card .big, .answer .big { font: 600 2.6rem/1.1 var(--serif); margin: 4px 0; }
 .lead-d { font-size: 1.15rem; color: var(--muted); }
@@ -121,6 +122,7 @@ input[type=checkbox], input[type=radio] { width: 20px; min-height: 20px; }
 
 /* tables, Q&A, directory, photos */
 .tbl-wrap { overflow-x: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .tbl { width: 100%; border-collapse: collapse; margin: 12px 0; }
 .tbl th, .tbl td { text-align: start; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .tbl th { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }

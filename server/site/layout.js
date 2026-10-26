@@ -50,7 +50,7 @@ function layout(c, { base, indexable, path, title, description, body, ld = [], i
   const nav = NAV.map(([href, label]) => `<a href="${href}"${path.startsWith(href) ? ' aria-current="page"' : ''}>${esc(t(label))}</a>`).join('');
   const lds = [orgLd(c, base), ...ld].map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>`).join('\n');
   const parsha = shabbat && shabbat.parsha ? (lang === 'he' ? shabbat.parsha.titleHe : t(shabbat.parsha.title)) : '';
-  const strip = shabbat && shabbat.candles ? `<a class="topstrip" href="/shabbat">${esc(hebrewDate)} · ${esc(t('Shabbat candles'))} ${esc(fmtDay(shabbat.candles.date))} ${esc(tm(shabbat.candles))}${parsha ? ' · ' + esc(parsha) : ''}</a>` : '';
+  const strip = shabbat && shabbat.candles ? `<div role="region" aria-label="${esc(t('This Shabbat'))}"><a class="topstrip" href="/shabbat">${esc(hebrewDate)} · ${esc(t('Shabbat candles'))} ${esc(fmtDay(shabbat.candles.date))} ${esc(tm(shabbat.candles))}${parsha ? ' · ' + esc(parsha) : ''}</a></div>` : '';
   const ga = analytics.ga ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(analytics.ga)}"></script><script src="/assets/gtag.js" data-id="${esc(analytics.ga)}"></script>` : '';
   // Language switch: /lang/he?to=/events remembers the choice and opens that page in Hebrew.
   const langs = LANGS.map((l) => `<a href="/lang/${l}?to=${encodeURIComponent(path)}" hreflang="${l}" lang="${l}"${l === lang ? ' aria-current="true"' : ''}>${l === 'en' ? 'EN' : l === 'he' ? 'עב' : 'RU'}</a>`).join('');
