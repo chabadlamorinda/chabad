@@ -73,6 +73,18 @@ The site's area is Lafayette, Moraga and Orinda first (`"tier": "home"` in towns
 ## Guides (learn/)
 Each guide has front matter (title, description under 155 characters, category, related, local) and ends with `## Common questions` and `### Question?` entries, which become Google FAQ markup. Write in simple English, from a warm Chabad perspective; for case-by-case halacha say "ask the Rabbi". Add a guide whenever people ask about a topic that has none.
 
+## Automatic pages (nothing to type)
+* `/shabbat-times` (Lafayette) and `/shabbat-times/<town>`: candle lighting and Havdalah for 12 months, for every town in towns.json.
+* `/jewish-holidays-<year>` (this year and next): every holiday with date, Hebrew date and candle lighting; `/jewish-holidays` goes to this year.
+* `/this-week`: Shabbat times for every town, the parsha, events, Jewish dates and the guide of the week (every other week a local guide).
+All three come from the calendar and events.json (`server/site/yearly.js`).
+
+## Accounts: what families can save
+Hebrew names, birthdays, anniversary, family members (with allergies or dietary needs, shown to the Rabbi with RSVPs and pre-filled in kids' forms), yahrzeits, and the dates mezuzahs and tefillin were last checked. From these the site sends yahrzeit, Hebrew birthday, Bar/Bat Mitzvah (18 months ahead) and checking reminders (`server/site/reminders.js`), and gives each family a private calendar link of their Jewish dates.
+
+## Google Ads (Ad Grants)
+Campaigns live in `store/google-ads/campaigns.json`; `node scripts/google-ads.js` builds `ads.csv` and `keywords.csv` for Google Ads Editor. `npm test` checks Google's character limits and that every ad lands on a working page.
+
 ## Facebook, Instagram and Google
 New events automatically appear as ready posts in the Rabbi area (`/admin/community`, "Social drafts"); the Rabbi publishes with one button. Give every event an `image` (or an image `flyer`) so posts are eye-catching and can go to Instagram. `npm run facebook:post -- <event-slug>` does the same from the command line.
 
