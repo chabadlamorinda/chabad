@@ -271,13 +271,13 @@
   function check(label, on) { var i = el('input', { type: 'checkbox' }); i.checked = !!on; var l = el('label', { class: 'check' }, [i, label]); l.input = i; return l; }
   function profile(me) {
     var p = me.profile;
-    var f = { name: field(T('Full name'), p.name, { autocomplete: 'name' }), hebrewName: field(T('Hebrew name (e.g. Moshe ben Avraham)'), p.hebrewName), phone: field(T('Phone'), p.phone, { type: 'tel', autocomplete: 'tel', dir: 'ltr' }), address: field(T('Address'), p.address, { autocomplete: 'street-address' }), birthday: field(T('Birthday'), p.birthday, { type: 'date' }), anniversary: field(T('Wedding anniversary'), p.anniversary, { type: 'date' }), mezuzahs: field(T('Mezuzahs last checked'), p.mezuzahsChecked, { type: 'date' }), tefillin: field(T('Tefillin last checked'), p.tefillinChecked, { type: 'date' }) };
+    var f = { name: field(T('Full name'), p.name, { autocomplete: 'name' }), hebrewName: field(T('Hebrew name (e.g. Moshe ben Avraham)'), p.hebrewName), phone: field(T('Phone'), p.phone, { type: 'tel', autocomplete: 'tel', dir: 'ltr' }), address: field(T('Address'), p.address, { autocomplete: 'street-address' }), birthday: field(T('Birthday'), p.birthday, { type: 'date' }), anniversary: field(T('Wedding anniversary'), p.anniversary, { type: 'date' }), mezuzahs: field(T('Mezuzahs last checked'), p.mezuzahsChecked, { type: 'date' }), tefillin: field(T('Tefillin last checked'), p.tefillinChecked, { type: 'date' }), diet: field(T('Allergies or dietary needs (optional)'), p.diet) };
     var night = check(T('Born after sunset'), p.birthAfterSunset), news = check(T('Email me about events and holidays'), p.news), share = check(T('Share my yahrzeits with the Rabbi (so he can remember them with you)'), p.shareYahrzeits);
     var m1 = el('p', { class: 'msg', hidden: true });
-    var s1 = el('form', { class: 'card' }, [el('h2', { text: T('Me') }), el('p', { class: 'muted', text: p.email }), el('div', { class: 'fields' }, [f.name, f.hebrewName, f.phone, f.address, f.birthday, f.anniversary, f.mezuzahs, f.tefillin]), el('p', { class: 'muted', text: T('Mezuzahs and tefillin should be checked by a scribe twice in seven years. We will remind you when it is time.') }), night, news, share, el('p', {}, [el('button', { class: 'btn gold', text: T('Save') })]), m1]);
+    var s1 = el('form', { class: 'card' }, [el('h2', { text: T('Me') }), el('p', { class: 'muted', text: p.email }), el('div', { class: 'fields' }, [f.name, f.hebrewName, f.phone, f.address, f.birthday, f.anniversary, f.diet, f.mezuzahs, f.tefillin]), el('p', { class: 'muted', text: T('Mezuzahs and tefillin should be checked by a scribe twice in seven years. We will remind you when it is time.') }), night, news, share, el('p', {}, [el('button', { class: 'btn gold', text: T('Save') })]), m1]);
     s1.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      api('PUT', '/me', { name: f.name.input.value, hebrewName: f.hebrewName.input.value, phone: f.phone.input.value, address: f.address.input.value, birthday: f.birthday.input.value, anniversary: f.anniversary.input.value, mezuzahsChecked: f.mezuzahs.input.value, tefillinChecked: f.tefillin.input.value, birthAfterSunset: night.input.checked, news: news.input.checked, shareYahrzeits: share.input.checked })
+      api('PUT', '/me', { name: f.name.input.value, hebrewName: f.hebrewName.input.value, phone: f.phone.input.value, address: f.address.input.value, birthday: f.birthday.input.value, anniversary: f.anniversary.input.value, mezuzahsChecked: f.mezuzahs.input.value, diet: f.diet.input.value, tefillinChecked: f.tefillin.input.value, birthAfterSunset: night.input.checked, news: news.input.checked, shareYahrzeits: share.input.checked })
         .then(function (r) { msg(m1, r.ok ? T('Saved.') : r.error, r.ok); });
     });
 
@@ -288,17 +288,17 @@
       x = x || {};
       var rel = el('select', {}, REL.map(function (r) { var o = el('option', { value: r[0], text: T(r[1]) }); if (x.relation === r[0]) o.selected = true; return o; }));
       var g = el('select', {}, [['', '—'], ['m', T('Male')], ['f', T('Female')]].map(function (o) { var n = el('option', { value: o[0], text: o[1] }); if (x.gender === o[0]) n.selected = true; return n; }));
-      var row = { name: field(T('Name'), x.name), hebrewName: field(T('Hebrew name'), x.hebrewName), birthday: field(T('Birthday'), x.birthday, { type: 'date' }), night: check(T('Born after sunset'), x.birthAfterSunset), rel: rel, g: g };
-      var div = el('div', { class: 'person' }, [el('div', { class: 'fields' }, [row.name, row.hebrewName, el('label', {}, [T('Relation'), rel]), el('label', {}, [T('Gender'), g]), row.birthday]), row.night,
+      var row = { name: field(T('Name'), x.name), hebrewName: field(T('Hebrew name'), x.hebrewName), birthday: field(T('Birthday'), x.birthday, { type: 'date' }), night: check(T('Born after sunset'), x.birthAfterSunset), diet: field(T('Allergies or dietary needs (optional)'), x.diet), rel: rel, g: g };
+      var div = el('div', { class: 'person' }, [el('div', { class: 'fields' }, [row.name, row.hebrewName, el('label', {}, [T('Relation'), rel]), el('label', {}, [T('Gender'), g]), row.birthday, row.diet]), row.night,
         el('p', { class: 'btns' }, [el('button', { type: 'button', class: 'btn sm ghost', text: T('Remove'), on: { click: function () { div.remove(); } } }), x.name && x.birthday ? el('a', { class: 'btn sm ghost', href: P('/sponsor?o=birthday&name=' + encodeURIComponent(x.name)), text: T('Mark the occasion: sponsor a Kiddush or give in their honor') }) : null])]);
       div.row = row; famList.appendChild(div);
     };
     me.family.forEach(addPerson);
-    var s2 = el('form', { class: 'card' }, [el('h2', { text: T('My family') }), el('p', { class: 'muted', text: T('Add your spouse and children. We will remember Hebrew birthdays and Bar/Bat Mitzvah dates, and your RSVPs count the family for you.') }), famList,
+    var s2 = el('form', { class: 'card' }, [el('h2', { text: T('My family') }), el('p', { class: 'muted', text: T('Add your spouse and children. We will remember Hebrew birthdays and Bar/Bat Mitzvah dates, and your RSVPs count the family for you.') }), el('p', { class: 'muted', text: T('Allergies and dietary needs are shared only with our staff, so meals and children\'s programs are safe for everyone.') }), famList,
       el('p', { class: 'btns' }, [el('button', { type: 'button', class: 'btn ghost', text: T('+ Add a family member'), on: { click: function () { addPerson(); } } }), el('button', { class: 'btn gold', text: T('Save family') })]), m2]);
     s2.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      var fam = [].map.call(famList.children, function (d) { var r = d.row; return { name: r.name.input.value, hebrewName: r.hebrewName.input.value, relation: r.rel.value, gender: r.g.value, birthday: r.birthday.input.value, birthAfterSunset: r.night.input.checked }; }).filter(function (x) { return x.name.trim(); });
+      var fam = [].map.call(famList.children, function (d) { var r = d.row; return { name: r.name.input.value, hebrewName: r.hebrewName.input.value, relation: r.rel.value, gender: r.g.value, birthday: r.birthday.input.value, birthAfterSunset: r.night.input.checked, diet: r.diet.input.value }; }).filter(function (x) { return x.name.trim(); });
       api('PUT', '/family', { family: fam }).then(function (r) { msg(m2, r.ok ? T('Saved.') : r.error, r.ok); });
     });
 
