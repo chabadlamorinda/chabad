@@ -327,3 +327,7 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
   .ftr-grid { gap: 0; }
 }
 [dir="rtl"] .ftr a[dir="ltr"] { text-align: right; }
+
+/* event facts */
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 22px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--soft); }
+.facts p { margin: 0; } .facts .eyebrow { margin-bottom: 4px; } .facts .when { font-size: 1rem; }

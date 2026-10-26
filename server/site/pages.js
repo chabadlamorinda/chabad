@@ -178,12 +178,15 @@ ${c ? '' : weeklyHtml(C.org, X)}
     const body = `<article class="wrap sec narrow event">
 <p class="crumbs"><a href="/events">${esc(t('Events'))}</a> ›</p>
 <h1>${esc(e.title)}</h1>
-<p class="when">${esc(X.when(e))}</p>
-<p class="muted">${esc(e.loc.name)}${e.loc.address ? ' · <bdi dir="ltr">' + esc(e.loc.address) + '</bdi>' : ''} · <a href="https://maps.google.com/?q=${encodeURIComponent(e.loc.address || fullAddress(C.org))}" rel="noopener" target="_blank">${esc(t('Map'))}</a></p>
+<div class="facts">
+<div><p class="eyebrow">${esc(t('When'))}</p><p class="when">${esc(X.when(e))}</p></div>
+<div><p class="eyebrow">${esc(t('Where'))}</p><p>${esc(e.loc.name)}${e.loc.address ? '<br><bdi dir="ltr">' + esc(e.loc.address) + '</bdi>' : ''}<br><a href="https://maps.google.com/?q=${encodeURIComponent(e.loc.address || fullAddress(C.org))}" rel="noopener" target="_blank">${esc(t('Map'))}</a></p></div>
+${e.price ? `<div><p class="eyebrow">${esc(t('Cost'))}</p><p>${esc(e.price)}</p></div>` : ''}
+${e.rsvp && !past ? `<div><p class="eyebrow">${esc(t('RSVP'))}</p><p><a class="btn sm gold" href="#rsvp">${esc(t('RSVP in one tap'))}</a></p></div>` : ''}
+</div>
 ${e.image ? `<img class="hero-img" src="${esc(e.image)}" alt="${esc(e.title)}" decoding="async">` : ''}
 ${e.summary ? `<p class="lead-d">${esc(e.summary)}</p>` : ''}
 ${md(e.details || '')}
-${e.price ? `<p><strong>${esc(t('Cost:'))}</strong> ${esc(e.price)}</p>` : ''}
 ${e.flyer ? `<p><a class="btn ghost" href="${esc(e.flyer)}">${esc(t('Download the flyer'))}</a></p>` : ''}
 ${e.photos && e.photos.length ? `<h2>${esc(t('Photos'))}</h2><div class="pics big">${e.photos.map((p) => `<a href="${esc(p)}"><img src="${esc(p)}" alt="${esc(e.title)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}
 ${e.album ? `<p><a class="btn gold" href="${esc(e.album)}" rel="noopener" target="_blank">${esc(t('See all the photos'))}</a></p>` : ''}
