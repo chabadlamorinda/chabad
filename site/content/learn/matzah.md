@@ -47,7 +47,7 @@ Before eating the matzah at the Seder, we say Hamotzi and then this blessing:
 
 ## Matzah during the rest of Passover
 
-After the Seder nights, eating matzah is not required, but it is a mitzvah to enjoy it, and it takes the place of bread. Whenever you eat a meal with matzah, say Hamotzi, wash your hands as you would for bread, and say Grace after Meals.
+After the Seder nights, eating matzah is not required, but it is a mitzvah to enjoy it, and it takes the place of bread. Whenever you eat a meal with matzah, wash your hands as you would for bread, say Hamotzi, and say Grace after Meals.
 
 ## Common questions
 
