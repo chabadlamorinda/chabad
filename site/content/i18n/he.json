@@ -871,5 +871,18 @@
  "in {n} days": "בעוד {n} ימים",
  "Shabbat Shalom from Chabad of Lamorinda!": "שבת שלום מחב״ד למורינדה!",
  "Join me at {title}, {when}:": "בואו איתי ל{title}, {when}:",
- "Invite a friend on WhatsApp": "הזמינו חבר בוואטסאפ"
+ "Invite a friend on WhatsApp": "הזמינו חבר בוואטסאפ",
+ "Search": "חיפוש",
+ "Search the website": "חיפוש באתר",
+ "{n} results for \"{q}\"": "{n} תוצאות עבור \"{q}\"",
+ "Nothing found for \"{q}\".": "לא נמצא דבר עבור \"{q}\".",
+ "Search: {q}": "חיפוש: {q}",
+ "Search the Chabad of Lamorinda website.": "חיפוש באתר חב״ד למורינדה.",
+ "Guide": "מדריך",
+ "Program": "תוכנית",
+ "Event": "אירוע",
+ "Tool": "כלי",
+ "Shabbat times, synagogue and Jewish life in {town}": "זמני שבת, בית כנסת וחיים יהודיים ב{town}",
+ "Hebrew School": "תלמוד תורה",
+ "Mezuzah": "מזוזה"
 }

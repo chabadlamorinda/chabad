@@ -468,6 +468,18 @@ test('Google Ads campaigns: within Google limits and every ad lands on a working
   for (const g of data.campaigns.flatMap((x) => x.groups)) assert.equal((await c.call('GET', g.url.replace('{year}', y))).status, 200, g.url);
 });
 
+test('site search: finds pages in the visitor\'s language, answers questions, goes to Hebrew or Russian when typed', async () => {
+  const c = client();
+  const r = (await c.call('GET', '/search?q=bar%20mitzvah')).text;
+  assert.match(r, /Bar and Bat Mitzvah|Bar &amp; Bat Mitzvah/); assert.match(r, /noindex/);
+  assert.match((await c.call('GET', '/search?q=kaddish')).text, /href="\/kaddish"/);
+  const he = await c.call('GET', '/search?q=' + encodeURIComponent('קדיש'));
+  assert.equal(he.status, 302); assert.match(he.headers.get('location'), /^\/he\/search\?q=/);
+  assert.match((await c.call('GET', '/he/search?q=' + encodeURIComponent('קדיש'))).text, /<h3>קדיש/);
+  assert.match((await c.call('GET', '/search?q=zzzxq')).text, /Nothing found/);
+  assert.match((await c.call('GET', '/')).text, /"SearchAction"/);
+});
+
 test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () => {
   const c = client();
   const z = (await c.call('GET', '/tools/zmanim?d=2026-10-25')).text;

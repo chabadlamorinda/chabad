@@ -9,6 +9,7 @@
 'use strict';
 const express = require('express');
 const { plain } = require('./md.js');
+const { siteDocs } = require('./search.js');
 const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 
@@ -68,19 +69,7 @@ function searchAnswer(C, question, t) {
   const STOP = new Set(['the', 'and', 'for', 'how', 'what', 'when', 'where', 'who', 'why', 'can', 'does', 'are', 'you', 'your', 'our', 'with', 'about', 'there', 'this', 'that', 'have', 'need', 'want', 'from', 'into', 'some', 'any', 'יש', 'מה', 'איך', 'מתי', 'איפה', 'של', 'את', 'עם', 'как', 'что', 'где', 'когда', 'для', 'это']);
   const words = norm(question).split(/[^\p{L}\p{N}]+/u).filter((w) => w.length > 2 && !STOP.has(w));
   const qa = [...C.faq.map((f) => ({ q: f.q, a: f.a, url: '/faq' })), ...C.learn.flatMap((a) => a.faq.map((f) => ({ q: f.q, a: f.a, url: '/learn/' + a.slug }))), ...(C.help || []).flatMap((h) => (h.faq || []).map((f) => ({ q: f.q, a: f.a, url: '/help/' + h.slug })))];
-  const docs = [
-    ...(C.help || []).map((h) => ({ title: h.title, text: h.description, body: h.text, url: '/help/' + h.slug, boost: 2 })),
-    ...C.programs.map((p) => ({ title: p.name, text: p.summary, body: plain(p.details || ''), url: '/programs/' + p.slug, boost: 2 })),
-    ...(C.forms || []).map((f) => ({ title: f.title, text: f.intro, body: '', url: '/forms/' + f.id, boost: 2 })),
-    ...C.holidays.map((h) => ({ title: h.title, text: h.description || '', body: h.text, url: '/holidays/' + h.slug, boost: 1.5 })),
-    ...C.learn.map((a) => ({ title: a.title, text: a.description, body: a.text, url: '/learn/' + a.slug, boost: 1 })),
-    { title: t('Shabbat times and services in Lafayette'), text: t('Shabbat candle lighting times for Lafayette, Moraga and Orinda, Shabbat services, Kiddush and Shabbat dinners at Chabad of Lamorinda.'), body: 'shabbat services candle lighting times minyan kiddush dinner friday saturday', url: '/shabbat', boost: 2 },
-    { title: t('Kaddish'), text: '', body: 'kaddish minyan mourner yahrzeit', url: '/kaddish', boost: 2 },
-    { title: t('Tehillim for every occasion'), text: '', body: 'tehillim psalms sick refuah prayer list birthday chapter', url: '/tehillim', boost: 2 },
-    { title: t('Donate'), text: '', body: 'donate donation give charity tzedakah venmo zelle check stock', url: '/donate', boost: 2 },
-    { title: t('Upcoming events'), text: '', body: 'events calendar rsvp upcoming', url: '/events', boost: 2 },
-    { title: t('Daily prayer times (zmanim)'), text: '', body: 'zmanim sunrise sunset shema mincha times today', url: '/tools/zmanim', boost: 2 },
-  ];
+  const docs = siteDocs(C, t);
   const score = (title, text, body) => { let s = 0; const T = norm(title), X = norm(text), B = norm(body); for (const w of words) { if (T.includes(w)) s += 4; if (X.includes(w)) s += 2; if (B.includes(w)) s += 0.5; } return s; };
   const bestQa = qa.map((x) => ({ ...x, s: score(x.q, '', x.a) })).sort((a, b) => b.s - a.s)[0];
   const top = docs.map((d) => ({ ...d, s: score(d.title, d.text, d.body) * d.boost })).filter((d) => d.s > 0).sort((a, b) => b.s - a.s).slice(0, 4);

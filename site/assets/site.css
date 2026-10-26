@@ -278,3 +278,16 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .foryou { border-color: var(--gold); background: linear-gradient(160deg, #fffaf0, var(--card)); }
 .foryou .more { color: var(--gold-ink); font-weight: 600; margin-top: 8px; }
 @media (prefers-color-scheme: dark) { .foryou { background: var(--card); } }
+
+/* search */
+.search-btn { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; color: var(--ink); }
+.search-btn:hover { background: var(--soft); }
+.searchbar { display: flex; gap: 10px; margin: 8px 0 20px; }
+.searchbar input { font-size: 1.1rem; border-radius: 999px; padding-inline: 18px; }
+.results { display: grid; gap: 12px; }
+.result .eyebrow { margin-bottom: 4px; }
+.answer-card { border-color: var(--gold); margin-bottom: 16px; }
+.answer-card h2 { margin-top: 0; font-size: 1.25rem; }
+@media (max-width: 440px) { .hdr-in { gap: 6px; } .hdr-cta { gap: 2px; } .hdr-cta .btn.gold { padding: 6px 12px; } .search-btn { width: 36px; } .brand { gap: 6px; } .brand span { font-size: .95rem; } }
+.answer-card p:first-of-type { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+@media (max-width: 400px) { .search-btn { display: none; } }

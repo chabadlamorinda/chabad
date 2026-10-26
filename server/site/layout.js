@@ -48,7 +48,7 @@ function layout(c, { base, indexable, path, title, description, body, ld = [], i
   const img = image ? (image.startsWith('http') ? image : base + image) : base + '/assets/og.png';
   const robots = !indexable || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1';
   const nav = NAV.map(([href, label]) => `<a href="${href}"${path.startsWith(href) ? ' aria-current="page"' : ''}>${esc(t(label))}</a>`).join('');
-  const lds = [orgLd(c, base), ...ld].map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>`).join('\n');
+  const lds = [orgLd(c, base), ...(path === '/' ? [{ '@context': 'https://schema.org', '@type': 'WebSite', name: c.org.name, url: base + '/', inLanguage: lang, potentialAction: { '@type': 'SearchAction', target: base + '/search?q={search_term_string}', 'query-input': 'required name=search_term_string' } }] : []), ...ld].map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>`).join('\n');
   const parsha = shabbat && shabbat.parsha ? (lang === 'he' ? shabbat.parsha.titleHe : t(shabbat.parsha.title)) : '';
   const strip = shabbat && shabbat.candles ? `<div role="region" aria-label="${esc(t('This Shabbat'))}"><a class="topstrip" href="/shabbat">${esc(hebrewDate)} · ${esc(t('Shabbat candles'))} ${esc(fmtDay(shabbat.candles.date))} ${esc(tm(shabbat.candles))}${parsha ? ' · ' + esc(parsha) : ''}</a></div>` : '';
   const ga = analytics.ga ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(analytics.ga)}"></script><script src="/assets/gtag.js" data-id="${esc(analytics.ga)}"></script>` : '';
@@ -90,9 +90,9 @@ ${strip}
 <header class="hdr">
   <div class="wrap hdr-in">
     <a class="brand" href="/" aria-label="${esc(o.name)}"><img src="/assets/logo.svg" alt="" width="40" height="26"><span>${esc(o.shortName || o.name)}</span></a>
-    <details class="menu"><summary aria-label="${esc(t('Menu'))}"><span></span></summary><nav aria-label="${esc(t('Main'))}">${nav}<p class="langs">${langs}</p></nav></details>
+    <details class="menu"><summary aria-label="${esc(t('Menu'))}"><span></span></summary><nav aria-label="${esc(t('Main'))}"><a href="/search">${esc(t('Search'))}</a>${nav}<p class="langs">${langs}</p></nav></details>
     <nav class="nav-wide" aria-label="${esc(t('Main'))}">${nav}</nav>
-    <div class="hdr-cta"><p class="langs wide" aria-label="${esc(t('Language'))}">${langs}</p><a class="btn sm ghost" href="/account" data-account>${esc(t('Sign in'))}</a><a class="btn sm gold" href="/donate">${esc(t('Donate'))}</a></div>
+    <div class="hdr-cta"><a class="search-btn" href="/search" aria-label="${esc(t('Search'))}"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a><p class="langs wide" aria-label="${esc(t('Language'))}">${langs}</p><a class="btn sm ghost" href="/account" data-account>${esc(t('Sign in'))}</a><a class="btn sm gold" href="/donate">${esc(t('Donate'))}</a></div>
   </div>
 </header>
 <main id="main">

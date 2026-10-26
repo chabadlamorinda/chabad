@@ -19,6 +19,7 @@ const { mountPages } = require('./pages.js');
 const { mountSeo } = require('./seo.js');
 const { mountTools } = require('./tools.js');
 const { mountYearly } = require('./yearly.js');
+const { mountSearch } = require('./search.js');
 const { mountCommunity, mountCommunityAdmin } = require('./community.js');
 const { mountOutreach } = require('./outreach.js');
 const { createFacebook } = require('./facebook.js');
@@ -90,6 +91,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   let ask = null, yearly = null;
   mountSeo(r, { content, base, indexable, upcoming: pages.upcoming, more: async () => [...(yearly ? yearly.paths(content()) : []), ...(ask ? (await ask.published()).map((x) => '/ask/' + encodeURIComponent(x.slug)) : [])] });
   mountTools(r, { render: pages.render, wrap, ctxOf });
+  mountSearch(r, { render: pages.render, wrap, ctxOf });
   yearly = mountYearly(r, { render: pages.render, wrap, ctxOf, base, upcoming: pages.upcoming });
   mountLocal(r, { content, base, wrap, ctxOf, ...pages });
   const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });

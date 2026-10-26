@@ -871,5 +871,18 @@
  "in {n} days": "через {n} дн.",
  "Shabbat Shalom from Chabad of Lamorinda!": "Шабат шалом от Хабада Ламоринды!",
  "Join me at {title}, {when}:": "Пойдём со мной: {title}, {when}:",
- "Invite a friend on WhatsApp": "Пригласить друга в WhatsApp"
+ "Invite a friend on WhatsApp": "Пригласить друга в WhatsApp",
+ "Search": "Поиск",
+ "Search the website": "Поиск по сайту",
+ "{n} results for \"{q}\"": "Результатов по запросу «{q}»: {n}",
+ "Nothing found for \"{q}\".": "По запросу «{q}» ничего не найдено.",
+ "Search: {q}": "Поиск: {q}",
+ "Search the Chabad of Lamorinda website.": "Поиск по сайту Хабада Ламоринды.",
+ "Guide": "Путеводитель",
+ "Program": "Программа",
+ "Event": "Событие",
+ "Tool": "Инструмент",
+ "Shabbat times, synagogue and Jewish life in {town}": "Время Шабата, синагога и еврейская жизнь: {town}",
+ "Hebrew School": "Еврейская школа",
+ "Mezuzah": "Мезуза"
 }
