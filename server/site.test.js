@@ -283,6 +283,13 @@ test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitatio
   await rem.run();
   assert.equal(out.filter((m) => /mezuzahs checked/.test(m.subject)).length, 1, 'only once');
 
+  // Welcome series: a new family gets the welcome, then the Shabbat invitation, each once.
+  await store.pool.query("UPDATE members SET first_login = now() - interval '2 days' WHERE lower(email)='sara@example.com'");
+  out.length = 0; await rem.run(); await rem.run();
+  assert.equal(out.filter((m) => /Welcome to Chabad of Lamorinda/.test(m.subject)).length, 1);
+  await store.pool.query("UPDATE members SET first_login = now() - interval '5 days' WHERE lower(email)='sara@example.com'");
+  await rem.run();
+  assert.equal(out.filter((m) => /Join us for Shabbat/.test(m.subject)).length, 1);
   // Bar/Bat Mitzvah invitation about 18 months ahead, sent once. A girl born 11 years ago turns 12 (Bat Mitzvah) in about a year.
   await c.call('PUT', '/api/site/family', { family: [{ name: 'Chaya', relation: 'child', gender: 'f', birthday: '2015-12-01' }, { name: 'Moshe', relation: 'child', gender: 'm', birthday: '2024-01-01' }] });
   out.length = 0; await rem.run(); await rem.run();

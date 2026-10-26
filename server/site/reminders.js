@@ -60,6 +60,27 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
       ].join('\n') });
       sent++;
     }
+    // Welcome series for families new to the website: a welcome the day after they join, a Shabbat dinner
+    // invitation a few days later, and what fits their family after about ten days. Each email once.
+    const fresh = (await q(`SELECT id, name, email, lang, (CURRENT_DATE - (first_login AT TIME ZONE 'America/Los_Angeles')::date) AS days FROM members
+      WHERE first_login > now() - interval '15 days' AND email <> '' AND news`)).rows;
+    for (const m of fresh) {
+      const step = m.days >= 10 ? 3 : m.days >= 4 ? 2 : m.days >= 1 ? 1 : 0;
+      if (!step || !(await once(`welcome:${m.id}:${step}`))) continue;
+      const t = T(m.lang), L = m.lang, hi = t('Dear {name},', { name: m.name || t('friend') });
+      const mail = {
+        1: [t('Welcome to Chabad of Lamorinda!'), [hi, '', t('Thank you for joining us. Chabad of Lamorinda is a warm Jewish home for every Jew in Lafayette, Moraga, Orinda and nearby: no membership, no dues, and everyone is welcome.'), '',
+          t('Add your family, birthdays and yahrzeits in your account and we will remind you of the important dates:') + ' ' + site(L, '/account'),
+          t('Shabbat times for your town:') + ' ' + site(L, '/shabbat-times'), t('What is coming up:') + ' ' + site(L, '/events'), '', t('Call or reply:') + ' ' + org.phone, '', org.name]],
+        2: [t('Join us for Shabbat'), [hi, '', t('We would love to have you for Shabbat. Come to services on Saturday morning with a Kiddush lunch, or join the Rabbi\'s family for a Shabbat dinner. Just let us know you are coming.'), '',
+          t('Shabbat dinner:') + ' ' + site(L, '/forms/shabbat-meal'), t('Shabbat services and Kiddush:') + ' ' + site(L, '/shabbat'), '', org.name]],
+        3: [t('Something for everyone in your family'), [hi, '', t('Here is what Chabad of Lamorinda offers, for every age:'),
+          t('Children: preschool, Hebrew School, CKids afterschool and camp:') + ' ' + site(L, '/programs'), t('Adults: weekly Torah classes:') + ' ' + site(L, '/programs/adult-education'),
+          t('Guides to Jewish life in Lamorinda:') + ' ' + site(L, '/learn'), t('Here for you in every life situation:') + ' ' + site(L, '/help'), '', t('Call or reply:') + ' ' + org.phone, '', org.name]],
+      }[step];
+      await mailer.send({ to: m.email, subject: mail[0], text: [...mail[1], '', t('Manage reminders:') + ' ' + site(L, '/account')].join('\n') });
+      sent++;
+    }
     // Bar/Bat Mitzvah: one warm invitation about 18 months ahead, so there is time to prepare together.
     const Z = require('./zmanim.js');
     const kids = (await q(`SELECT f.id, f.name, f.gender, to_char(f.birthday,'YYYY-MM-DD') AS b, f.birth_after_sunset, m.name AS member_name, m.email, m.lang FROM family f JOIN members m ON m.id=f.member_id

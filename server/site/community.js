@@ -25,6 +25,7 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS personalize BOOLEAN NOT NULL DEFAUL
 ALTER TABLE members ADD COLUMN IF NOT EXISTS tefillin_checked DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS news BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ;
+ALTER TABLE members ADD COLUMN IF NOT EXISTS first_login TIMESTAMPTZ;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS lang TEXT NOT NULL DEFAULT 'en';
 ALTER TABLE yahrzeits ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'app';
 CREATE TABLE IF NOT EXISTS login_codes (
@@ -87,9 +88,9 @@ function communityStore(store) {
     setLang: (id, lang) => q('UPDATE members SET lang=$2 WHERE id=$1', [id, ['en', 'he', 'ru'].includes(lang) ? lang : 'en']),
     async memberForEmail(email) {
       const m = await one('SELECT * FROM members WHERE lower(email)=$1 ORDER BY created_at LIMIT 1', [email]);
-      if (m) { await q('UPDATE members SET last_login=now() WHERE id=$1', [m.id]); return m.id; }
+      if (m) { await q('UPDATE members SET last_login=now(), first_login=COALESCE(first_login, now()) WHERE id=$1', [m.id]); return m.id; }
       const id = newId('m_');
-      await q("INSERT INTO members (id, name, email, last_login) VALUES ($1, '', $2, now())", [id, email]);
+      await q("INSERT INTO members (id, name, email, last_login, first_login) VALUES ($1, '', $2, now(), now())", [id, email]);
       return id;
     },
     updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, diet=$12, personalize=$13, updated_at=now() WHERE id=$1',
