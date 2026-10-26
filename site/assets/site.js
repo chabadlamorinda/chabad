@@ -111,8 +111,10 @@
       var kids = me.family.filter(function (f) { return f.relation === 'child'; });
       [].forEach.call(form.querySelectorAll('[data-children]'), function (fs) {
         var id = fs.getAttribute('data-children');
-        kids.forEach(function (k, i) { ['name', 'hebrewName', 'birthday'].forEach(function (c) { var x = E[id + '.' + i + '.' + c]; if (x && !x.value && k[c]) x.value = k[c]; }); });
+        kids.forEach(function (k, i) { ['name', 'hebrewName', 'birthday', 'allergies'].forEach(function (c) { var x = E[id + '.' + i + '.' + c], v = c === 'allergies' ? k.diet : k[c]; if (x && !x.value && v) x.value = v; }); });
       });
+      // Shabbat meals: the family's saved dietary needs.
+      if (fid === 'shabbat-meal') put('message', [p.diet].concat(me.family.filter(function (f) { return f.diet; }).map(function (f) { return f.name + ': ' + f.diet; })).filter(Boolean).join('; '));
     });
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
