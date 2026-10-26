@@ -428,6 +428,13 @@ test('yearly pages: Jewish holidays by year and Shabbat times by town', async ()
   assert.match((await c.call('GET', '/he/this-week')).text, /השבוע בלמורינדה היהודית/);
 });
 
+test('Google Ads campaigns: within Google limits and every ad lands on a working page', async () => {
+  const data = require('../store/google-ads/campaigns.json'), { build } = require('../scripts/google-ads.js');
+  assert.deepEqual(build(data).errors, []);
+  const c = client(), y = new Date().getFullYear();
+  for (const g of data.campaigns.flatMap((x) => x.groups)) assert.equal((await c.call('GET', g.url.replace('{year}', y))).status, 200, g.url);
+});
+
 test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () => {
   const c = client();
   const z = (await c.call('GET', '/tools/zmanim?d=2026-10-25')).text;

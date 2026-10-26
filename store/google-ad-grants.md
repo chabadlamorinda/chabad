@@ -15,6 +15,12 @@ You already have a Google Ad Grants account. This plan points every ad at a page
    * no very general keywords ("free videos", "today's date");
    * at least 2 ad groups per campaign, 2 ads per group, and 2 sitelinks.
 
+## Ready-to-import ads (new)
+All campaigns below are written out in full in `store/google-ads/`: keywords, final pages and complete responsive search ads (15 headlines and 4 descriptions each, checked against Google's character limits).
+* In **Google Ads Editor**: Account → Import → From file, choose `ads.csv`, then `keywords.csv`. Review, then Post.
+* To change an ad, tell Claude ("add a Purim ad group", "change the preschool headline") and it updates `campaigns.json` and rebuilds the files (`node scripts/google-ads.js`). `npm test` checks every ad lands on a working page.
+* The newest landing pages work very well for ads: `/shabbat-times` (and `/shabbat-times/moraga`...), `/jewish-holidays-2026` and `-2027`, `/this-week`, and the local guides in the "Lamorinda" section of `/learn`.
+
 ## 2. Campaigns
 Each line: **keywords** (phrase match, in quotes) → **page**.
 
