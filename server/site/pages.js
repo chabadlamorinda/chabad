@@ -86,6 +86,7 @@ function mountPages(app, ctx) {
       <p class="eyebrow">${esc(t('This Shabbat'))}${sh.parsha ? ' · ' + esc(X.hc(sh.parsha)) : ''}</p>
       ${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p>${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}
       ${sh.havdalah ? `<p>${esc(t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}</p>` : ''}
+      <div class="quick" data-shabbat-quick data-date="${sh.candles ? sh.candles.date : ''}" data-day="${sh.candles ? esc(X.shortDate(sh.candles.date)) : ''}" hidden></div>
       <p><a href="/shabbat">${esc(t('Services & Shabbat meals'))} →</a></p>
       <p><a href="/parsha">${esc(t("This week's Torah portion"))} →</a> · <a href="/shabbat-times">${esc(t('Shabbat times'))}</a> · <a href="/tools/zmanim">${esc(t('Daily prayer times (zmanim)'))}</a></p>
     </div>
@@ -208,6 +209,7 @@ ${prog ? `<p>${esc(t('Part of'))} <a href="/programs/${prog.slug}">${esc(prog.na
     const svc = C.org.services || [];
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Shabbat in Lamorinda'))}</h1>
 <p class="lead-d">${esc(t('Shabbat is a gift: 25 hours to slow down, connect and recharge. Join us for services, a warm Kiddush and Shabbat dinners. No membership needed, no Hebrew needed.'))}</p>
+${weeks[0] ? `<div class="card quick" data-shabbat-quick data-date="${weeks[0].candles.date}" data-day="${esc(X.shortDate(weeks[0].candles.date))}" hidden></div>` : ''}
 ${svc.length ? `<h2>${esc(t('Services'))}</h2><ul class="list">${svc.map((s) => `<li><strong>${esc(s.name)}</strong> ${esc(s.time)}${s.note ? ` <span class="muted">· ${esc(s.note)}</span>` : ''}</li>`).join('')}</ul>` : ''}
 <h2>${esc(t('Candle lighting times for Lafayette, Moraga and Orinda'))}</h2>
 <table class="tbl"><thead><tr><th>${esc(t('Shabbat'))}</th><th>${esc(t('Candle lighting'))}</th><th>${esc(t('Shabbat ends'))}</th></tr></thead><tbody>

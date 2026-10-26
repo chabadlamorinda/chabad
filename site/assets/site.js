@@ -122,6 +122,27 @@
     });
   });
 
+  // ---------- One-tap Shabbat dinner for signed-in families ----------
+  var quick = $('[data-shabbat-quick]');
+  if (quick && quick.getAttribute('data-date') && store.get('cl_signed')) api('GET', '/me').then(function (me) {
+    if (me._status !== 200) return;
+    var p = me.profile, fam = me.family.filter(function (f) { return ['spouse', 'child'].indexOf(f.relation) >= 0; }).length;
+    var n = stepper(T('People'), 1 + fam, 1), m = el('p', { class: 'msg', hidden: true });
+    var go = el('button', { class: 'btn gold', type: 'button', text: T("We're coming") });
+    go.addEventListener('click', function () {
+      go.disabled = true;
+      var diet = [p.diet].concat(me.family.filter(function (f) { return f.diet; }).map(function (f) { return f.name + ': ' + f.diet; })).filter(Boolean).join('; ');
+      api('POST', '/forms/shabbat-meal', { fields: { role: '2', people: String(n.value()), date: quick.getAttribute('data-date'), name: p.name, email: p.email, phone: p.phone, message: diet } }).then(function (r) {
+        go.disabled = false;
+        if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
+        msg(m, T('Wonderful! The Rabbi\'s family is expecting you. Shabbat Shalom!'), true); go.hidden = true;
+        if (window.gtag) window.gtag('event', 'form_submit', { event_label: 'shabbat-quick' });
+      });
+    });
+    quick.appendChild(el('p', { class: 'quick-h', text: T('Shabbat dinner with the Rabbi\'s family, {day}?', { day: quick.getAttribute('data-day') }) }));
+    quick.appendChild(n); quick.appendChild(go); quick.appendChild(m); quick.hidden = false;
+  });
+
   // ---------- Sign-ups, registrations and orders (forms.json) ----------
   var form = $('[data-form]');
   if (form) {

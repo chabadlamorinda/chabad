@@ -483,6 +483,14 @@ test('share with a friend: WhatsApp, text, email, Facebook, Telegram and copy li
   assert.doesNotMatch((await c.call('GET', '/account')).text, /data-share/);
 });
 
+test('one-tap Shabbat dinner: the Shabbat page offers it, and the quick reply goes through as a Shabbat meal sign-up', async () => {
+  const c = client();
+  assert.match((await c.call('GET', '/shabbat')).text, /data-shabbat-quick data-date="\d{4}-\d{2}-\d{2}"/);
+  assert.match((await c.call('GET', '/')).text, /data-shabbat-quick/);
+  const r = await c.call('POST', '/api/site/forms/shabbat-meal', { fields: { role: '2', people: '4', date: '2026-10-30', name: 'Levi Family', email: 'levi@example.com', phone: '', message: 'Noa: peanut allergy' } });
+  assert.equal(r.status, 200); assert.equal(r.json.ok, true);
+});
+
 test('site search: finds pages in the visitor\'s language, answers questions, goes to Hebrew or Russian when typed', async () => {
   const c = client();
   const r = (await c.call('GET', '/search?q=bar%20mitzvah')).text;
