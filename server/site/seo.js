@@ -43,7 +43,7 @@ async function llmsText(c, base, upcoming, full) {
   for (const p of c.programs) lines.push(`- [${p.name}](${base}/programs/${p.slug}): ${p.summary}`);
   lines.push('', '## Upcoming events');
   for (const e of upcoming().slice(0, full ? 50 : 15)) lines.push(`- [${e.title}](${base}/events/${e.slug}): ${e.start.replace('T', ' ')}${e.summary ? ' - ' + e.summary : ''}`);
-  lines.push('', '## Pages', `- [Shabbat times and services](${base}/shabbat)`, `- [Jewish holidays with dates](${base}/holidays)`, `- [Everything Jewish in Lamorinda](${base}/jewish-lamorinda)`, `- [Questions and answers](${base}/faq)`, `- [Hebrew date converter](${base}/tools/hebrew-date)`, `- [Yahrzeit calculator](${base}/tools/yahrzeit)`, `- [Calendar feed (iCal)](${base}/events.ics)`);
+  lines.push('', '## Pages', `- [Shabbat times and services](${base}/shabbat)`, `- [Jewish holidays with dates](${base}/holidays)`, `- [Jewish holidays this year, with dates and candle lighting in Lafayette](${base}/jewish-holidays-${new Date().getFullYear()})`, `- [Shabbat candle lighting times for the next 12 months: Lafayette](${base}/shabbat-times), [Moraga](${base}/shabbat-times/moraga), [Orinda](${base}/shabbat-times/orinda), [Pleasant Hill](${base}/shabbat-times/pleasant-hill), [Martinez](${base}/shabbat-times/martinez)`, `- [This week in Jewish Lamorinda](${base}/this-week)`, `- [Everything Jewish in Lamorinda](${base}/jewish-lamorinda)`, `- [Questions and answers](${base}/faq)`, `- [Hebrew date converter](${base}/tools/hebrew-date)`, `- [Yahrzeit calculator](${base}/tools/yahrzeit)`, `- [Calendar feed (iCal)](${base}/events.ics)`);
   for (const h of c.holidays) lines.push(`- [${h.title}](${base}/holidays/${h.slug})`);
   lines.push('', '## Towns served (local pages)');
   for (const t of c.towns || []) lines.push(`- [Jewish ${t.name}, CA](${base}/jewish-${t.slug})${t.miles ? `: ${t.miles} miles from the center` : ': home of the center'}`);
@@ -51,8 +51,10 @@ async function llmsText(c, base, upcoming, full) {
   for (const h of c.help || []) lines.push(`- [${h.title}](${base}/help/${h.slug}): ${h.description}`);
   lines.push(`- [Kaddish: join the minyan or have Kaddish said for a loved one](${base}/kaddish)`, `- [Tehillim (Psalms) for every occasion](${base}/tehillim)`, `- [Sponsor a Kiddush or program in honor or memory](${base}/sponsor)`);
   lines.push('', 'The whole site is also available in Hebrew (' + base + '/he/) and Russian (' + base + '/ru/).');
+  lines.push('', '## Jewish life in Lafayette, Moraga and Orinda (local guides)');
+  for (const a of (c.learn || []).filter((x) => x.category === 'Lamorinda')) lines.push(`- [${a.title}](${base}/learn/${a.slug}): ${a.description}`);
   lines.push('', '## Guides to Jewish life');
-  for (const a of c.learn || []) lines.push(`- [${a.title}](${base}/learn/${a.slug}): ${a.description}`);
+  for (const a of (c.learn || []).filter((x) => x.category !== 'Lamorinda')) lines.push(`- [${a.title}](${base}/learn/${a.slug}): ${a.description}`);
   lines.push('', '## Questions and answers');
   for (const f of c.faq) lines.push(`### ${f.q}`, plain(f.a), '');
   if (full) {

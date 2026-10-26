@@ -29,6 +29,12 @@ const HOLIDAYS = [
   ['Chanukah', /^Chanukah: 1 Candle$/, /^Chanukah: 8th Day$/, 'chanukah', 'night'],
   ['Fast of the 10th of Tevet', /^Asara B'Tevet$/, null, null, 'dawn'],
 ];
+// The guide of the week: every other week one of the local Lamorinda guides, otherwise any guide.
+function guideOfWeek(C, now = Date.now()) {
+  const week = Math.floor(now / (7 * 864e5)), local = C.learn.filter((a) => a.category === 'Lamorinda');
+  const list = week % 2 === 0 && local.length ? local : C.learn;
+  return list.length ? list[Math.floor(week / 2) % list.length] : null;
+}
 const day = (s) => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
 const minus1 = (s) => { const d = day(s); d.setDate(d.getDate() - 1); return Z.ymd(d); };
 
@@ -100,7 +106,7 @@ function mountYearly(r, { render, wrap, ctxOf, base, upcoming = () => [] }) {
     const sh = towns.length ? towns[0][1] : await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [];
     const cal = (await Z.events(today, end)).filter((e) => !['candles', 'havdalah', 'parashat'].includes(e.cat) && !/^(Chanukah: \d|Omer)/.test(e.desc) || /Chanukah: 1 Candle/.test(e.desc));
     const evs = upcoming(new Date(), C).filter((e) => e.start.slice(0, 10) <= Z.ymd(end));
-    const L = (p) => p[X.lang] || p.en, guide = C.learn.length ? C.learn[Math.floor(Date.now() / (7 * 864e5)) % C.learn.length] : null;
+    const L = (p) => p[X.lang] || p.en, guide = guideOfWeek(C);
     const body = `<section class="wrap sec narrow"><h1>${esc(t('This week in Jewish Lamorinda'))}</h1>
 <p class="lead-d">${esc(t('Shabbat times, the Torah portion, events and Jewish dates for Lafayette, Moraga, Orinda and nearby, updated every week.'))}</p>
 <h2>${esc(t('Shabbat'))}${sh.parsha ? ': ' + esc(X.hc(sh.parsha)) : ''}</h2>
@@ -119,4 +125,4 @@ ${guide ? `<h2>${esc(t('Guide of the week'))}</h2><a class="card tile" href="/le
   r.get('/shabbat-times/:town', timesPage(null));
   return { paths: (C) => ['/this-week', '/shabbat-times', ...C.towns.filter((x) => x.slug !== 'lafayette').map((x) => '/shabbat-times/' + x.slug), '/jewish-holidays-' + thisYear(), '/jewish-holidays-' + (thisYear() + 1)] };
 }
-module.exports = { mountYearly, holidaysOf };
+module.exports = { mountYearly, holidaysOf, guideOfWeek };

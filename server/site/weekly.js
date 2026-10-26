@@ -23,7 +23,7 @@ function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = c
   async function compose(note = '') {
     const X = ctxOf({ lang: 'en', method: 'GET', originalUrl: '/', query: {}, get: () => '' }), C = content();
     const sh = await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [], hols = await Z.upcomingHolidays(45);
-    const evs = upcoming().slice(0, 6), guide = C.learn[Math.floor(Date.now() / (7 * 864e5)) % C.learn.length];
+    const evs = upcoming().slice(0, 6), guide = require('./yearly.js').guideOfWeek(C);
     const lines = [];
     if (note.trim()) lines.push(note.trim(), '');
     if (sh.candles) lines.push(`SHABBAT${sh.parsha ? ': ' + sh.parsha.title.toUpperCase() : ''}`, `Candle lighting ${X.shortDate(sh.candles.date)} at ${sh.candles.timeStr}${sh.havdalah ? `, Shabbat ends ${sh.havdalah.timeStr}` : ''} (Lafayette).`, `Services and Kiddush: ${base}/shabbat`, '');
