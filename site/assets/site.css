@@ -226,9 +226,55 @@ textarea { font: inherit; }
 .page-art { float: inline-end; margin: 0 0 8px 16px; }
 @media (max-width: 600px) { .page-art .art-lg { width: 72px; height: 72px; } }
 .tile.has-art { position: relative; overflow: hidden; }
-.tile.has-art::after { content: ""; position: absolute; inset: auto -30px -30px auto; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(var(--gold-2), transparent 70%); opacity: .12; transition: transform .3s; }
 .tile.has-art:hover .art { transform: rotate(-6deg) scale(1.06); }
 .art { transition: transform .25s ease; }
 .ev .art { flex: 0 0 auto; width: 48px; height: 48px; margin: 0; order: 3; }
 @media (max-width: 480px) { .ev .art { display: none; } }
 @media (prefers-color-scheme: dark) { .art { background: radial-gradient(circle at 30% 30%, #2a3550, #1b2438 70%); } }
+
+/* ---------- polish: a calmer, more upscale look ---------- */
+body { letter-spacing: .005em; }
+h1 { letter-spacing: -.015em; font-weight: 600; }
+h2 { letter-spacing: -.01em; font-weight: 600; }
+.sec-h { margin-bottom: 18px; }
+.sec-h h2 { position: relative; padding-bottom: 10px; }
+.sec-h h2::after { content: ""; position: absolute; inset-inline-start: 0; bottom: 0; width: 44px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-2)); }
+.sec-h > a, .shabbat-card a, .weekly a, .tile, .crumbs a { text-decoration: none; }
+.sec-h > a { color: var(--gold-ink); font-weight: 600; font-size: .95rem; }
+.sec-h > a:hover, .shabbat-card a:hover, .weekly a:hover { text-decoration: underline; }
+.shabbat-card a { color: var(--navy-2); font-weight: 600; }
+.btn { letter-spacing: .01em; transition: transform .15s, box-shadow .15s, filter .15s; }
+.btn:hover { transform: translateY(-1px); }
+.btn.gold { background: linear-gradient(180deg, #d9ab3e, var(--gold)); box-shadow: 0 4px 14px rgba(201,154,46,.28); }
+.card { border-radius: 18px; }
+.tile { transition: transform .2s, box-shadow .2s, border-color .2s; }
+.tile:hover { box-shadow: 0 2px 4px rgba(20,40,75,.06), 0 14px 34px rgba(20,40,75,.12); }
+.tile h3 { margin-bottom: 6px; }
+.ev { border-radius: 18px; transition: box-shadow .2s; } .ev:hover { box-shadow: 0 14px 34px rgba(20,40,75,.12); }
+.ev-date { background: linear-gradient(160deg, var(--navy-2), var(--navy)); }
+
+/* hero: a soft, large illustration behind the text */
+.hero { position: relative; overflow: hidden; }
+.hero:not(.photo)::after { content: ""; position: absolute; width: 520px; height: 520px; inset-inline-end: -90px; bottom: -150px; background: url(/assets/art/menorah.svg) center/contain no-repeat; opacity: .07; pointer-events: none; }
+.hero .hero-in { position: relative; z-index: 2; }
+.hero h1 { font-size: clamp(2.2rem, 5.2vw, 3.4rem); }
+.hero .shabbat-card { border: 0; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+
+/* every week: a row of cards instead of a list */
+.weekly { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.weekly li { flex-direction: column; gap: 2px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+.weekly b { flex: none; text-transform: uppercase; letter-spacing: .1em; font-size: .75rem; color: var(--gold-ink); }
+.weekly a { color: var(--ink); font: 600 1.05rem/1.3 var(--serif); }
+
+/* next holiday */
+.holiday-band { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; padding: 28px; border-radius: 22px; background: radial-gradient(600px 240px at 0% 0%, #fff6dc 0, transparent 70%), var(--soft); border: 1px solid var(--line); }
+.holiday-band .hb-text { flex: 1 1 260px; }
+.holiday-band h2 { margin: 0 0 4px; }
+.holiday-band p { margin: 0; }
+.holiday-band .art-lg { width: 88px; height: 88px; }
+@media (prefers-color-scheme: dark) { .holiday-band { background: var(--soft); } .shabbat-card a { color: var(--link); } }
+
+/* For your family (signed-in members) */
+.foryou { border-color: var(--gold); background: linear-gradient(160deg, #fffaf0, var(--card)); }
+.foryou .more { color: var(--gold-ink); font-weight: 600; margin-top: 8px; }
+@media (prefers-color-scheme: dark) { .foryou { background: var(--card); } }
