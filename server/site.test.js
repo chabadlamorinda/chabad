@@ -40,7 +40,7 @@ test.beforeEach(async () => { await store.reset(); mails.length = 0; });
 function client() {
   let cookie = '';
   const call = async (method, p, body, headers = {}) => {
-    const r = await fetch(base + p, { method, redirect: 'manual', headers: { 'content-type': 'application/json', 'x-site': '1', ...(cookie ? { cookie } : {}), ...headers }, body: body === undefined ? undefined : JSON.stringify(body) });
+    const r = await fetch(base + p, { method, redirect: 'manual', headers: { 'content-type': 'application/json', 'x-site': '1', ...(cookie ? { cookie } : {}), ...headers }, body: body === undefined ? undefined : typeof body === 'string' ? body : JSON.stringify(body) });
     const sc = r.headers.get('set-cookie'); if (sc) cookie = sc.split(';')[0].endsWith('=') ? '' : sc.split(';')[0];
     const text = await r.text(); let json = null; try { json = JSON.parse(text); } catch (e) {}
     return { status: r.status, json, text, headers: r.headers };
@@ -128,9 +128,13 @@ test('email sign-in: code, link, wrong codes; an app record with the same email 
   assert.equal((await c.call('POST', '/api/site/verify', { email: 'sara@example.com', code })).status, 400, 'five wrong tries burn the code');
   await c.call('POST', '/api/site/login', { email: 'sara@example.com' });
   const link = /(\/account\/verify\?\S+)/.exec(mails[1].text)[1];
-  const v = await c.call('GET', link); assert.equal(v.status, 302); assert.equal(v.headers.get('location'), '/account');
+  // Opening the link only shows a Continue button (email scanners can't use it up); pressing it signs in.
+  const page = await c.call('GET', link); assert.equal(page.status, 200); assert.match(page.text, /<form method="post" action="\/account\/verify">/);
+  assert.equal((await c.call('GET', '/api/site/me')).status, 401, 'not signed in yet');
+  const u = new URL('http://x' + link), form = new URLSearchParams({ e: u.searchParams.get('e'), t: u.searchParams.get('t'), l: 'en' }).toString();
+  const v = await c.call('POST', '/account/verify', form, { 'content-type': 'application/x-www-form-urlencoded' }); assert.equal(v.status, 302); assert.equal(v.headers.get('location'), '/account');
   const me = await c.call('GET', '/api/site/me'); assert.equal(me.status, 200); assert.equal(me.json.profile.name, '', 'not the app record');
-  assert.equal((await c.call('GET', link)).headers.get('location'), '/account?expired=1', 'links work once');
+  assert.equal((await c.call('POST', '/account/verify', form, { 'content-type': 'application/x-www-form-urlencoded' })).headers.get('location'), '/account?expired=1', 'links work once');
 });
 
 test('profile, family and yahrzeits; app yahrzeits are kept separate', async () => {

@@ -340,10 +340,21 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   app.use('/api/site', r);
 
   // Sign-in link from the email.
-  app.get('/account/verify', wrap(async (req, res) => {
-    const email = clean(req.query.e, 254).toLowerCase(), link = String(req.query.t || '');
+  // Opening the emailed link shows a "Continue" button; signing in happens only when the person presses it. So email
+  // scanners that open links can't use up the link, and nobody can sign a visitor into someone else's account.
+  app.get('/account/verify', (req, res) => {
+    const e = clean(req.query.e, 254), tk = String(req.query.t || '').slice(0, 200), L = ['he', 'ru'].includes(req.query.l) ? req.query.l : 'en', t = tOf({ get: (h) => (h === 'x-lang' ? L : '') });
+    const a = (s) => String(s).replace(/[&<>"']/g, (c) => '&#' + c.charCodeAt(0) + ';');
+    res.set('Cache-Control', 'no-store').type('html').send(`<!doctype html><html lang="${L}"${L === 'he' ? ' dir="rtl"' : ''}><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${a(t('Sign in'))}</title>
+<body style="font:18px/1.5 system-ui;max-width:520px;margin:12vh auto;padding:0 20px;text-align:center"><h1 style="font-weight:600">${a(t('Sign in'))}</h1><p>${a(e)}</p>
+<form method="post" action="/account/verify"><input type="hidden" name="e" value="${a(e)}"><input type="hidden" name="t" value="${a(tk)}"><input type="hidden" name="l" value="${L}">
+<button style="font:inherit;font-weight:600;padding:12px 28px;border-radius:999px;border:0;background:#c99a2e;color:#1b1405;cursor:pointer">${a(t('Continue'))}</button></form></body></html>`);
+  });
+  app.post('/account/verify', express.urlencoded({ extended: false, limit: '4kb' }), wrap(async (req, res) => {
+    const b = req.body || {};
+    const email = clean(b.e, 254).toLowerCase(), link = String(b.t || '');
     if (!cs || !validEmail(email) || link.length < 20 || !(await cs.useCode(email, { link }))) return res.redirect(302, '/account?expired=1');
-    const L = ['he', 'ru'].includes(req.query.l) ? req.query.l : 'en', id = await cs.memberForEmail(email);
+    const L = ['he', 'ru'].includes(b.l) ? b.l : 'en', id = await cs.memberForEmail(email);
     if (L !== 'en') await cs.setLang(id, L);
     setCookie(res, id); res.redirect(302, (L === 'en' ? '' : '/' + L) + '/account');
   }));

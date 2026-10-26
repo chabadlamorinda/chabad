@@ -39,7 +39,7 @@ When you bake a large enough batch of bread dough made with flour from wheat, ba
 3. **Pull off a small piece,** about the size of an olive, and say "Harei zu challah," "This is challah."
 4. **Burn the piece** wrapped in foil in the oven or broiler, not together with food being baked, or wrap it well and dispose of it respectfully.
 
-**How much flour?** The amounts are approximate and opinions differ. Roughly, starting from about 2.5 pounds of flour you separate without a blessing, and from somewhere between 3.5 and 5 pounds, depending on the opinion, you say the blessing. Ask the Rabbi which amount to follow.
+**How much flour?** The amounts are approximate and opinions differ. Many follow these amounts: from about 2 lb 11 oz (1.2 kg) of flour you separate without a blessing, and from about 4 lb 15 oz (2.25 kg) you say the blessing. Ask the Rabbi which amount to follow.
 
 Many women use this moment for personal prayer, for their family and for anyone in need.
 

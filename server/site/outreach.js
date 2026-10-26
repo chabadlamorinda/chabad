@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS member_activity (
 CREATE TABLE IF NOT EXISTS outreach_done (member_id TEXT NOT NULL REFERENCES members(id) ON DELETE CASCADE, key TEXT NOT NULL, done_at TIMESTAMPTZ NOT NULL DEFAULT now(), PRIMARY KEY (member_id, key));
 ALTER TABLE members ADD COLUMN IF NOT EXISTS personalize BOOLEAN NOT NULL DEFAULT TRUE;
 `;
-const TRACKED = /^\/(learn|help|programs|holidays|events|forms)\/[a-z0-9-]+$/;
+const TRACKED = /^\/(learn|help|programs|holidays|events|forms)\/[a-z0-9-]+$|^\/kaddish$/;
 // Pages that suggest someone is going through something hard: a gentle check-in, never a sales pitch.
 const SENSITIVE = { '/help/someone-passed-away': 'a loss in the family', '/help/planning-a-jewish-funeral': 'planning a funeral', '/help/end-of-life': 'a loved one near the end of life', '/help/someone-is-sick': 'someone who is ill', '/help/shalom-bayit': 'marriage and family', '/help/disputes': 'a family or business dispute', '/kaddish': 'saying Kaddish' };
 
@@ -212,7 +212,7 @@ function mountOutreach(app, { store, readMember, content, base, ctxOf, upcoming 
       r2.post('/api/site/outreach/done', authed, express.json({ limit: '4kb' }), wrap(async (req, res) => {
         const b = req.body || {}, id = String(b.memberId || ''), key = String(b.key || '').slice(0, 200);
         if (!id || !key) return res.status(400).json({ error: 'Missing member or key.' });
-        await pool.query('INSERT INTO outreach_done (member_id, key) VALUES ($1,$2) ON CONFLICT (member_id, key) DO UPDATE SET done_at=now()', [id, key]);
+        try { await pool.query('INSERT INTO outreach_done (member_id, key) VALUES ($1,$2) ON CONFLICT (member_id, key) DO UPDATE SET done_at=now()', [id, key]); } catch (e) { return res.status(400).json({ error: 'Unknown member.' }); }
         res.json({ ok: true });
       }));
     },

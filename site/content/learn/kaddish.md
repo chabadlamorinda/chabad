@@ -34,7 +34,7 @@ When someone dies, it can feel like the world has a little less light. By standi
 
 ## When and where is Kaddish said?
 
-Kaddish requires a minyan, a quorum of ten Jewish men over age 13. It is said during the three daily prayer services: morning (Shacharit), afternoon (Mincha) and evening (Maariv). Mourners stand while reciting it.
+Kaddish requires a minyan, a quorum of ten Jewish men age 13 and over. It is said during the three daily prayer services: morning (Shacharit), afternoon (Mincha) and evening (Maariv). Mourners stand while reciting it.
 
 If it is hard to get to a minyan, do not worry. There are other ways to honor your loved one, such as learning Torah, giving tzedakah, and doing mitzvot in their memory.
 

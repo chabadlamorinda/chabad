@@ -50,7 +50,7 @@
     var a = $('[data-account]'); if (a) a.textContent = T('My account');
     // So the Rabbi can suggest events that fit (only when "Suggest things for my family" is on in My account).
     var here = location.pathname.replace(/^\/(he|ru)(?=\/)/, '');
-    if (/^\/(learn|help|programs|holidays|events|forms)\/[a-z0-9-]+$/.test(here)) fetch('/api/site/seen', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: here }) }).catch(function () {});
+    if (/^\/(learn|help|programs|holidays|events|forms)\/[a-z0-9-]+$|^\/kaddish$/.test(here)) fetch('/api/site/seen', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: here }) }).catch(function () {});
     // "For your family": upcoming events that fit this family.
     var fy = $('[data-for-you]');
     if (fy) api('GET', '/for-you').then(function (r) {

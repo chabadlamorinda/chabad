@@ -41,7 +41,7 @@ The table is compared to the altar of the Holy Temple, where every offering was 
 
 ## After the meal
 
-If you ate at least an olive-sized piece of bread (a *kezayit*, about the size of a matchbox), you say Grace After Meals, [Birkat Hamazon](/learn/birkat-hamazon), at the end of the meal.
+If you ate at least an olive-sized piece of bread (a *kezayit*, about one ounce), you say Grace After Meals, [Birkat Hamazon](/learn/birkat-hamazon), at the end of the meal.
 
 ## Common questions
 

@@ -80,8 +80,9 @@ async function mitzvahDate(birth, afterSunset, girl) {
   // Adar in a regular year -> Adar II in a leap year (the custom for bar/bat mitzvah).
   if (month === months.ADAR_I && !HDate.isLeapYear(h.getFullYear()) && HDate.isLeapYear(h.getFullYear() + age)) month = months.ADAR_II;
   if (month === months.ADAR_II && !HDate.isLeapYear(h.getFullYear() + age)) month = months.ADAR_I;
-  const day = Math.min(h.getDate(), HDate.daysInMonth(month, h.getFullYear() + age));
-  const m = new HDate(day, month, h.getFullYear() + age);
+  // Born on the 30th of a month that has only 29 days in the Bar/Bat Mitzvah year: the date is the next day (the 1st).
+  const len = HDate.daysInMonth(month, h.getFullYear() + age);
+  const m = h.getDate() <= len ? new HDate(h.getDate(), month, h.getFullYear() + age) : new HDate(len, month, h.getFullYear() + age).next();
   return { date: ymd(m.greg()), en: m.render('en'), he: m.renderGematriya() };
 }
 

@@ -59,4 +59,4 @@ Traditionally after lighting the [menorah](/learn/chanukah-menorah), while the c
 The Hebrew letters stand for "A great miracle happened there." The game rules use Yiddish words that begin with the same letters: nisht, gantz, halb and shtel. It is a clever double meaning.
 
 ### Can we play dreidel on Shabbat during Chanukah?
-Customs differ about spinning games on Shabbat. Many avoid playing for money or prizes on Shabbat. Ask the Rabbi about your family's practice.
+Customs differ about spinning games on Shabbat. Playing for money is not done on Shabbat at all, since money may not be handled then. Ask the Rabbi about your family's practice.

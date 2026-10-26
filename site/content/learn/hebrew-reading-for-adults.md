@@ -30,7 +30,7 @@ Any adult can learn to read Hebrew, and most people are surprised how quickly it
 
 1. **Practice a little every day.** Ten minutes daily beats an hour once a week.
 2. **Read aloud.** Hearing yourself helps the letters stick.
-3. **Use a siddur with transliteration** at first, then cover the English and try the Hebrew.
+3. **Use a siddur with transliteration** at first, then cover the transliteration and try the Hebrew.
 4. **Learn with a partner or class.** Encouragement keeps you going.
 5. **Do not worry about meaning yet.** Reading and understanding are separate skills; learn to sound out first.
 6. **Be patient and kind to yourself.** Everyone stumbles at first.
