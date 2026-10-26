@@ -21,7 +21,7 @@
     // ---- People to reach out to ----
     var so = section('People to reach out to', 'Who to call or message this week, and why. Each message is ready and personal: tap WhatsApp (or text, email, call), adjust it if you like, send. Press Done to clear it.');
     var person = function (i, box) {
-      var text = el('textarea', { rows: '4' }); text.value = i.text;
+      var text = el('textarea', { rows: '4', dir: i.lang === 'he' ? 'rtl' : 'auto' }); text.value = i.text;
       var open = function (kind) { return function () { var t = encodeURIComponent(text.value), url = i[kind]; if (!url) return; url = url.replace(/([?&](text|body)=)[^&]*/, '$1' + t); window.open(url, '_blank'); }; };
       var card = el('div', { class: 'card' + (i.priority === 1 ? ' hot' : '') }, [el('strong', { text: i.name }), el('span', { class: 'pill', text: (i.kind || 'invite').replace('-', ' ') }), i.lang && i.lang !== 'en' ? el('span', { class: 'pill', text: i.lang === 'he' ? 'Hebrew' : 'Russian' }) : null,
         el('div', { class: 'small', text: i.reason || (i.reasons || []).join('; ') }), text,

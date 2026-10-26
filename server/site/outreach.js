@@ -63,8 +63,11 @@ const MSG = {
 };
 const WHO = { en: { family: 'your family', kids: 'your kids', you: 'you' }, he: { family: 'כל המשפחה', kids: 'הילדים', you: 'אתם' }, ru: { family: 'вашей семье', kids: 'вашим детям', you: 'вам' } };
 const KIND = { en: { bar: 'Bar Mitzvah', bat: 'Bat Mitzvah' }, he: { bar: 'בר המצווה', bat: 'בת המצווה' }, ru: { bar: 'Бар-мицва', bat: 'Бат-мицва' } };
+// Dates in the family's language: "Saturday, October 31".
+const nice = (ymd, lang) => (/^\d{4}-\d{2}-\d{2}$/.test(ymd) ? new Date(ymd + 'T12:00:00Z').toLocaleDateString({ he: 'he-IL', ru: 'ru-RU' }[lang] || 'en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' }) : ymd);
 function message(lang, kind, v) {
   const L = MSG[lang] ? lang : 'en';
+  if (v.date) v = { ...v, date: nice(v.date, L) };
   return MSG[L][kind].replace(/\{(\w+)\}/g, (m, k) => (v[k] == null ? '' : v[k])) + '\n' + MSG[L].sign;
 }
 // Links the Rabbi taps: WhatsApp with the message ready, a text message, an email, a call.
