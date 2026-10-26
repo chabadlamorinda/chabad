@@ -239,7 +239,7 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .sec-h { margin-bottom: 18px; }
 .sec-h h2 { position: relative; padding-bottom: 10px; }
 .sec-h h2::after { content: ""; position: absolute; inset-inline-start: 0; bottom: 0; width: 44px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-2)); }
-.sec-h > a, .shabbat-card a, .weekly a, .tile, .crumbs a { text-decoration: none; }
+.sec-h > a, .shabbat-card a, .weekly a, .tile { text-decoration: none; }
 .sec-h > a { color: var(--gold-ink); font-weight: 600; font-size: .95rem; }
 .sec-h > a:hover, .shabbat-card a:hover, .weekly a:hover { text-decoration: underline; }
 .shabbat-card a { color: var(--navy-2); font-weight: 600; }
