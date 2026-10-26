@@ -113,12 +113,12 @@ test('SEO and AI files', async () => {
   assert.match((await c.call('GET', '/feed.xml')).text, /<rss/);
 });
 
-test('email sign-in: code, link, wrong codes, and the account is shared with the app', async () => {
+test('email sign-in: code, link, wrong codes; an app record with the same email is never taken over', async () => {
   const c = client();
   assert.equal((await c.call('POST', '/api/site/login', { email: 'nope' })).json.code, 'invalid_email');
   assert.equal((await c.call('POST', '/api/site/login', { email: 'x@y.co' }, { 'x-site': '' })).status, 403); // must come from our pages
   assert.equal((await c.call('GET', '/api/site/me')).status, 401);
-  // A member who joined through My Pushka signs in to the same record.
+  // Anyone can type any email into the app, so a website sign-in never adopts an app record: it gets its own account.
   const app = await fetch(base + '/api/member', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ name: 'Sara Levi', email: 'sara@example.com' }) });
   assert.equal(app.status, 200);
   await c.call('POST', '/api/site/login', { email: 'Sara@Example.com' });
@@ -129,7 +129,7 @@ test('email sign-in: code, link, wrong codes, and the account is shared with the
   await c.call('POST', '/api/site/login', { email: 'sara@example.com' });
   const link = /(\/account\/verify\?\S+)/.exec(mails[1].text)[1];
   const v = await c.call('GET', link); assert.equal(v.status, 302); assert.equal(v.headers.get('location'), '/account');
-  const me = await c.call('GET', '/api/site/me'); assert.equal(me.status, 200); assert.equal(me.json.profile.name, 'Sara Levi');
+  const me = await c.call('GET', '/api/site/me'); assert.equal(me.status, 200); assert.equal(me.json.profile.name, '', 'not the app record');
   assert.equal((await c.call('GET', link)).headers.get('location'), '/account?expired=1', 'links work once');
 });
 
@@ -165,7 +165,9 @@ test('RSVP: one tap for members (family counted), guests by form, capacity, upda
   const g = client();
   assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1 })).json.code, 'invalid_name');
   assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 0, kids: 0, name: 'G', email: 'g@x.co' })).json.code, 'invalid_count');
-  assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 30, kids: 10, name: 'Big Group', email: 'big@x.co' })).json.code, 'full');
+  assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 30, kids: 10, name: 'Big Group', email: 'big@x.co' })).json.code, 'invalid_count', 'guests: up to 12');
+  const other = await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Someone', email: 'sara@example.com' });
+  assert.equal(other.status, 409, "a guest cannot change someone else's RSVP");
   assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Guest', email: 'guest@x.co' })).json.going, 5);
   assert.equal((await g.call('POST', '/api/site/rsvp/chanukah-grand-menorah-lighting-2026', { adults: 1, name: 'G', email: 'g@x.co' })).status, 404, 'drafts take no RSVPs');
   assert.deepEqual((await c.call('GET', '/api/site/me')).json.rsvps, [{ event: EVENT, adults: 2, kids: 2 }]);

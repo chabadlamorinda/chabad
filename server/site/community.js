@@ -26,6 +26,10 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS tefillin_checked DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS news BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS first_login TIMESTAMPTZ;
+-- The email address this account proved it owns (by a sign-in code). Website accounts are found by it only.
+ALTER TABLE members ADD COLUMN IF NOT EXISTS verified_email TEXT;
+UPDATE members SET verified_email=lower(email) WHERE verified_email IS NULL AND last_login IS NOT NULL AND email <> '';
+CREATE INDEX IF NOT EXISTS members_verified_idx ON members (verified_email);
 ALTER TABLE members ADD COLUMN IF NOT EXISTS lang TEXT NOT NULL DEFAULT 'en';
 ALTER TABLE yahrzeits ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'app';
 CREATE TABLE IF NOT EXISTS login_codes (
@@ -84,13 +88,14 @@ function communityStore(store) {
       await q('DELETE FROM login_codes WHERE email=$1', [email]);
       return true;
     },
-    // One account per email; the oldest record wins if the app created duplicates.
+    // A website account is the one that proved this email with a sign-in code. Records made elsewhere (the app)
+    // with the same email are never taken over, so nobody can plant an address and read another family's data.
     setLang: (id, lang) => q('UPDATE members SET lang=$2 WHERE id=$1', [id, ['en', 'he', 'ru'].includes(lang) ? lang : 'en']),
     async memberForEmail(email) {
-      const m = await one('SELECT * FROM members WHERE lower(email)=$1 ORDER BY created_at LIMIT 1', [email]);
-      if (m) { await q('UPDATE members SET last_login=now(), first_login=COALESCE(first_login, now()) WHERE id=$1', [m.id]); return m.id; }
+      const m = await one('SELECT * FROM members WHERE verified_email=$1 ORDER BY created_at LIMIT 1', [email]);
+      if (m) { await q('UPDATE members SET email=$2, last_login=now(), first_login=COALESCE(first_login, now()) WHERE id=$1', [m.id, email]); return m.id; }
       const id = newId('m_');
-      await q("INSERT INTO members (id, name, email, last_login, first_login) VALUES ($1, '', $2, now(), now())", [id, email]);
+      await q("INSERT INTO members (id, name, email, verified_email, last_login, first_login) VALUES ($1, '', $2, $2, now(), now())", [id, email]);
       return id;
     },
     updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, diet=$12, personalize=$13, updated_at=now() WHERE id=$1',
@@ -219,8 +224,10 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   r.use((req, res, next) => (req.method === 'GET' || req.get('x-site') === '1' ? next() : res.status(403).json({ code: 'forbidden', error: 'Forbidden.' })));
   const need = (req, res, next) => (cs ? next() : res.status(503).json({ code: 'not_configured', error: tOf(req)('Accounts are not switched on yet. Please email or call us.') }));
   const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch((e) => { log.error('site error:', e && e.message); res.status(500).json({ code: 'server_error', error: tOf(req)('Something went wrong. Please try again.') }); });
+  // The signed-in member, with the email they proved (never an address changed elsewhere).
+  const memberOf = async (req) => { const id = readCookie(req), m = id && await store.getMember(id); if (!m || !m.verified_email) return null; m.email = m.verified_email; return m; };
   const authed = wrap(async (req, res, next) => {
-    const id = readCookie(req), m = id && await store.getMember(id);
+    const m = await memberOf(req);
     if (!m) return res.status(401).json({ code: 'unauthorized', error: tOf(req)('Please sign in.') });
     req.member = m; next();
   });
@@ -297,7 +304,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   const eventOf = (slug) => content().events.find((e) => e.slug === slug && e.published && e.rsvp);
   r.get('/rsvp/:slug', need, wrap(async (req, res) => {
     const e = eventOf(req.params.slug); if (!e) return res.status(404).json({ code: 'not_found', error: tOf(req)('Event not found.') });
-    const id = readCookie(req), m = id && await store.getMember(id);
+    const m = await memberOf(req);
     const mine = m ? await cs.rsvpFor(e.slug, m.email.toLowerCase()) : null, n = (await cs.counts())[e.slug] || 0;
     const fam = m ? await cs.family(m.id) : [];
     res.json({ signedIn: !!m, name: m ? m.name : '', mine, going: n, capacity: e.rsvp.capacity || null,
@@ -305,13 +312,16 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   }));
   r.post('/rsvp/:slug', need, limit('site-rsvp', 20, 10 * 60 * 1000), wrap(async (req, res) => {
     const e = eventOf(req.params.slug); if (!e) return res.status(404).json({ code: 'not_found', error: tOf(req)('Event not found.') });
-    const b = req.body || {}, id = readCookie(req), m = id && await store.getMember(id);
+    const b = req.body || {}, m = await memberOf(req);
     const adults = Math.trunc(Number(b.adults)), kids = Math.trunc(Number(b.kids || 0));
     if (!(adults >= 0 && adults <= 30 && kids >= 0 && kids <= 30 && adults + kids >= 1)) return bad(res, 'invalid_count', tOf(req)('Please choose how many people are coming.'));
     const name = m && m.name ? m.name : clean(b.name, 100), email = (m ? m.email : clean(b.email, 254)).toLowerCase();
     if (!name) return bad(res, 'invalid_name', tOf(req)('Please enter your name.'));
     if (!validEmail(email)) return bad(res, 'invalid_email', tOf(req)('Please enter a valid email address.'));
     const prev = await cs.rsvpFor(e.slug, email), n = (await cs.counts())[e.slug] || 0;
+    // Without signing in, an RSVP can be made but not changed: only the owner of the email can change it.
+    if (prev && !m) return res.status(409).json({ code: 'exists', error: tOf(req)('This email is already on the list. Sign in to change your RSVP.') });
+    if (!m && adults + kids > 12) return bad(res, 'invalid_count', tOf(req)('For a group larger than 12, please contact us.'));
     const cap = e.rsvp.capacity;
     if (cap && n - (prev ? prev.adults + prev.kids : 0) + adults + kids > cap) return res.status(409).json({ code: 'full', error: tOf(req)('Sorry, there is not enough room left. Please contact us to join the waiting list.') });
     await cs.upsertRsvp({ event: e.slug, memberId: m ? m.id : null, name, email, phone: m ? m.phone : clean(b.phone, 30), adults, kids, note: clean(b.note, 300) });
@@ -332,7 +342,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     setCookie(res, id); res.redirect(302, (L === 'en' ? '' : '/' + L) + '/account');
   }));
 
-  const readMember = async (req) => { const id = cs && readCookie(req); return id ? store.getMember(id) : null; };
+  const readMember = async (req) => (cs ? memberOf(req) : null);
   return { cs, readMember, counts: async () => (cs ? cs.counts() : {}) };
 }
 
