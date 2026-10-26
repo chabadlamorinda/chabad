@@ -116,32 +116,32 @@ function footer(c, t) {
   <div class="wrap ftr-grid">
     <div>
       <p class="ftr-name">${esc(o.name)}</p>
-      <p>${esc(fullAddress(o))}</p>
+      <p><bdi dir="ltr">${esc(fullAddress(o))}</bdi></p>
       ${o.phone ? `<p><a href="tel:${esc(o.phone.replace(/[^0-9+]/g, ''))}" dir="ltr">${esc(o.phone)}</a></p>` : ''}
       ${o.email ? `<p><a href="mailto:${esc(o.email)}">${esc(o.email)}</a></p>` : ''}
       <p class="social">${social}</p>
       <p>${a('/about', 'About us')} ${a('/contact', 'Contact')}</p>
     </div>
-    <div>
-      <p class="ftr-h">${esc(t('Community'))}</p>
+    <details class="ftr-col" open>
+      <summary class="ftr-h">${esc(t('Community'))}</summary><div class="ftr-links">
       ${a('/events', 'Events calendar')}${a('/calendar', 'Jewish calendar')}${a('/shabbat', 'Shabbat times')}${a('/holidays', 'Jewish holidays')}${a('/programs', 'Programs')}${a('/photos', 'Photos')}${a('/community', 'Community board')}
-    </div>
-    <div>
-      <p class="ftr-h">${esc(t("We're here for you"))}</p>
+    </div></details>
+    <details class="ftr-col" open>
+      <summary class="ftr-h">${esc(t("We're here for you"))}</summary><div class="ftr-links">
       ${a('/help/someone-passed-away', 'When someone passes away')}${a('/help/someone-is-sick', 'When someone is sick')}${a('/kaddish', 'Kaddish')}${a('/tehillim', 'Tehillim for every occasion')}${a('/help', 'All life situations')}${a('/ask', 'Ask the Rabbi')}${a('/help/talk-to-the-rabbi', 'Talk to the Rabbi')}
-    </div>
-    <div>
-      <p class="ftr-h">${esc(t('Jewish life'))}</p>
+    </div></details>
+    <details class="ftr-col" open>
+      <summary class="ftr-h">${esc(t('Jewish life'))}</summary><div class="ftr-links">
       ${a('/jewish-lamorinda', 'Everything Jewish in Lamorinda')}${a('/learn', 'Learn about Judaism')}${a('/parsha', "This week's Torah portion")}${a('/this-week', 'This week in Jewish Lamorinda')}${a('/shabbat-times', 'Shabbat times')}${a('/jewish-holidays-' + new Date().getFullYear(), 'Jewish holidays this year')}${a('/tools/zmanim', 'Daily prayer times (zmanim)')}${a('/tools/hebrew-date', 'Hebrew date converter')}${a('/tools/hebrew-birthday', 'Hebrew birthday calculator')}${a('/tools/yahrzeit', 'Yahrzeit calculator')}${a('/tools/bar-bat-mitzvah', 'Bar & Bat Mitzvah date')}${a('/faq', 'Questions & answers')}
-    </div>
-    <div>
-      <p class="ftr-h">${esc(t('Our area'))}</p>
+    </div></details>
+    <details class="ftr-col" open>
+      <summary class="ftr-h">${esc(t('Our area'))}</summary><div class="ftr-links">
       ${(c.towns || []).map((x) => `<a href="/jewish-${x.slug}">${esc(t('Jewish {town}', { town: x.name }))}</a>`).join('')}
-    </div>
-    <div>
-      <p class="ftr-h">${esc(t('Get involved'))}</p>
+    </div></details>
+    <details class="ftr-col" open>
+      <summary class="ftr-h">${esc(t('Get involved'))}</summary><div class="ftr-links">
       ${a('/account', 'My account & family')}${a('/forms', 'Sign-ups and orders')}${a('/forms/newsletter', 'Get our weekly email')}${a('/sponsor', 'Sponsor in honor or memory')}${a('/get-involved', 'Get involved')}${a('/welcome', 'New to the area?')}${a('/donate', 'Donate')}<a href="/pushka/">${esc(t('My Pushka app'))}</a><a href="/kiddush/">${esc(t('Sponsor a Kiddush'))}</a><a href="/board/">${esc(t('Chai Club'))}</a>
-    </div>
+    </div></details>
   </div>
   <div class="wrap ftr-base"><p>&copy; ${new Date().getFullYear()} ${esc(o.name)}. ${esc(o.legal || '')} ${esc(t('Part of the worldwide Chabad-Lubavitch movement.'))}</p><p>${a('/privacy', 'Privacy')} · ${a('/accessibility', 'Accessibility')}</p></div>
 </footer>`;

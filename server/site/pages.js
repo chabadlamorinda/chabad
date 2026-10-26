@@ -179,7 +179,7 @@ ${c ? '' : weeklyHtml(C.org, X)}
 <p class="crumbs"><a href="/events">${esc(t('Events'))}</a> ›</p>
 <h1>${esc(e.title)}</h1>
 <p class="when">${esc(X.when(e))}</p>
-<p class="muted">${esc(e.loc.name)}${e.loc.address ? ' · ' + esc(e.loc.address) : ''} · <a href="https://maps.google.com/?q=${encodeURIComponent(e.loc.address || fullAddress(C.org))}" rel="noopener" target="_blank">${esc(t('Map'))}</a></p>
+<p class="muted">${esc(e.loc.name)}${e.loc.address ? ' · <bdi dir="ltr">' + esc(e.loc.address) + '</bdi>' : ''} · <a href="https://maps.google.com/?q=${encodeURIComponent(e.loc.address || fullAddress(C.org))}" rel="noopener" target="_blank">${esc(t('Map'))}</a></p>
 ${e.image ? `<img class="hero-img" src="${esc(e.image)}" alt="${esc(e.title)}" decoding="async">` : ''}
 ${e.summary ? `<p class="lead-d">${esc(e.summary)}</p>` : ''}
 ${md(e.details || '')}
@@ -325,7 +325,7 @@ function weeklyHtml(o, X) {
 
 function contactBlock(C, X) {
   const o = C.org, t = X.t;
-  return `<div class="card"><p><strong>${esc(o.name)}</strong><br>${esc(fullAddress(o))}</p>
+  return `<div class="card"><p><strong>${esc(o.name)}</strong><br><bdi dir="ltr">${esc(fullAddress(o))}</bdi></p>
 ${o.phone ? `<p>${esc(t('Phone'))}: <a href="tel:${esc(o.phone.replace(/[^0-9+]/g, ''))}" dir="ltr">${esc(o.phone)}</a></p>` : ''}
 ${o.email ? `<p>${esc(t('Email'))}: <a href="mailto:${esc(o.email)}">${esc(o.email)}</a></p>` : ''}
 <p><a class="btn ghost" href="https://maps.google.com/?q=${encodeURIComponent(fullAddress(o))}" rel="noopener" target="_blank">${esc(t('Directions'))}</a></p></div>

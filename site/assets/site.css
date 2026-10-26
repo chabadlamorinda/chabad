@@ -314,3 +314,16 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .explore .art { width: 52px; height: 52px; margin: 0; }
 .explore small { color: var(--muted); font-weight: 400; font-size: .8rem; }
 @media (min-width: 1000px) { .ftr-grid { grid-template-columns: 1.3fr repeat(5, 1fr); } }
+
+/* footer groups: folding on phones */
+.ftr-col summary { list-style: none; }
+.ftr-col summary::-webkit-details-marker { display: none; }
+@media (max-width: 699px) {
+  .ftr-col { border-top: 1px solid rgba(255,255,255,.12); }
+  .ftr-col summary { cursor: pointer; padding: 12px 0; margin: 0; display: flex; justify-content: space-between; align-items: center; }
+  .ftr-col summary::after { content: "+"; font-size: 1.2rem; color: var(--gold-2); }
+  .ftr-col[open] summary::after { content: "−"; }
+  .ftr-links { padding-bottom: 10px; }
+  .ftr-grid { gap: 0; }
+}
+[dir="rtl"] .ftr a[dir="ltr"] { text-align: right; }
