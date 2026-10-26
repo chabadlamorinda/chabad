@@ -10,7 +10,7 @@ const exists = (name) => { if (!have) { try { have = new Set(fs.readdirSync(DIR)
 
 // First matching rule wins: [pattern on the slug or title, illustration].
 const RULES = [
-[/hamotzi|hafrashat|shabbat-guest/, 'challah'], [/netilat/, 'kiddush-cup'], [/ketubah/, 'chuppah'], [/baby-names/, 'baby'], [/organ-donation|tattoos/, 'hands-heart'], [/greetings/, 'envelope'], [/loss-of-a-pet/, 'dove'], [/campaigns/, 'tefillin'], [/gift-ideas|birthday-customs/, 'gift'], [/what-is-a-synagogue/, 'synagogue'],
+[/hamotzi|hafrashat|shabbat-guest/, 'challah'], [/netilat/, 'kiddush-cup'], [/ketubah/, 'chuppah'], [/baby-names/, 'baby'], [/organ-donation|tattoos/, 'hands-heart'], [/greetings/, 'envelope'], [/loss-of-a-pet/, 'dove'], [/yahrzeit-candle/, 'broken-heart-candle'], [/campaigns/, 'tefillin'], [/gift-ideas|birthday-customs/, 'gift'], [/what-is-a-synagogue/, 'synagogue'],
     [/dreidel/, 'dreidel'], [/chanukah|menorah|gelt/, 'menorah'], [/rosh-hashanah|simanim|apple|honey|elul|selichot/, 'apple-honey'],
   [/shofar|tashlich/, 'shofar'], [/yom-kippur|kol-nidre|teshuvah|fast/, 'candle-flame'], [/sukk|ushpizin|hoshana/, 'sukkah'], [/four-kinds|lulav|etrog/, 'lulav-etrog'],
   [/simchat-torah|hakafot|torah-reading|aliyah|torah|haftarah|weekly-parsha|chumash|bar-mitzvah|bat-mitzvah/, 'torah-scroll'], [/purim|megillah|costume/, 'megillah'], [/mishloach|hamantash/, 'hamantash'],
