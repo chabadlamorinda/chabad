@@ -331,3 +331,10 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 /* event facts */
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 8px 0 22px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--soft); }
 .facts p { margin: 0; } .facts .eyebrow { margin-bottom: 4px; } .facts .when { font-size: 1rem; }
+
+/* guide: on this page */
+.toc { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; margin: 0 0 22px; padding: 12px 14px; border-radius: 14px; background: var(--soft); border: 1px solid var(--line); }
+.toc .eyebrow { width: 100%; margin: 0 0 2px; }
+.toc a { font-size: .92rem; padding: 4px 10px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+.toc a:hover { border-color: var(--gold); }
+h2[id] { scroll-margin-top: 80px; }

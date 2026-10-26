@@ -88,7 +88,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
 <p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › ${esc(t(a.category))}</p>
 <h1>${esc(a.title)}</h1>
 <p class="meta muted">${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))}</p>
-${md(a.body)}
+${(() => { const html = md(a.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]; return (hs.length >= 3 ? `<nav class="toc" aria-label="${esc(t('On this page'))}"><p class="eyebrow">${esc(t('On this page'))}</p>${hs.map((h) => `<a href="#${h[1]}">${h[2]}</a>`).join('')}</nav>` : '') + html; })()}
 ${a.local ? `<div class="card local"><p class="eyebrow">${esc(t('In Lamorinda'))}</p><p>${esc(a.local)}</p><p class="btns"><a class="btn gold" href="/help/talk-to-the-rabbi">${esc(t('Contact the Rabbi'))}</a><a class="btn ghost" href="/events">${esc(t('Upcoming events'))}</a></p></div>` : ''}
 ${occ ? `<div class="card occasion"><p>${esc(t('Mark the occasion: sponsor a Kiddush or give in their honor'))}</p><p class="btns"><a class="btn gold" href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory'))}</a><a class="btn ghost" href="/tehillim">${esc(t('Tehillim for this'))}</a>${occ === 'yahrzeit' ? `<a class="btn ghost" href="/kaddish">${esc(t('Kaddish'))}</a>` : ''}</p></div>` : ''}
 ${a.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(a.faq)}` : ''}
