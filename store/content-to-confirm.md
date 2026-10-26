@@ -64,3 +64,4 @@ These came from the current website, which disagrees with itself in places, or w
 24. Any group or regular event for people in their 20s and 30s; any parent-and-baby program; meal trains for new mothers.
 25. For visitors: hotels within walking distance for Shabbat, an eruv, kosher takeout, mikvah access.
 26. Your old site mentions a Rosh Hashanah "Dot Cakes" kids program and a concert with "Meleha". What is Dot Cakes, and how is the singer's name spelled in Hebrew and Russian? (The translations guessed.)
+27. For the questions-and-answers page: which mikvah families should use; local hospitals or care homes the Rabbi visits; Bar/Bat Mitzvah lesson cost; CKids tuition and whether a winter camp exists; teen programs running now; the cemetery or Chevra Kadisha you use.
