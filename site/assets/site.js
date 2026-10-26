@@ -320,6 +320,7 @@
   function field(label, value, attrs) { var i = el('input', Object.assign({ value: value || '' }, attrs || {})); var l = el('label', {}, [label, i]); l.input = i; return l; }
   function check(label, on) { var i = el('input', { type: 'checkbox' }); i.checked = !!on; var l = el('label', { class: 'check' }, [i, label]); l.input = i; return l; }
   function profile(me) {
+    var perks = $('[data-perks]'); if (perks) perks.hidden = true;
     var p = me.profile;
     var f = { name: field(T('Full name'), p.name, { autocomplete: 'name' }), hebrewName: field(T('Hebrew name (e.g. Moshe ben Avraham)'), p.hebrewName), phone: field(T('Phone'), p.phone, { type: 'tel', autocomplete: 'tel', dir: 'ltr' }), address: field(T('Address'), p.address, { autocomplete: 'street-address' }), birthday: field(T('Birthday'), p.birthday, { type: 'date' }), anniversary: field(T('Wedding anniversary'), p.anniversary, { type: 'date' }), mezuzahs: field(T('Mezuzahs last checked'), p.mezuzahsChecked, { type: 'date' }), tefillin: field(T('Tefillin last checked'), p.tefillinChecked, { type: 'date' }), diet: field(T('Allergies or dietary needs (optional)'), p.diet) };
     var night = check(T('Born after sunset'), p.birthAfterSunset), news = check(T('Email me about events and holidays'), p.news), share = check(T('Share my yahrzeits with the Rabbi (so he can remember them with you)'), p.shareYahrzeits), pers = check(T('Suggest events and classes that fit my family (based on what we come to and read here)'), p.personalize !== false);
