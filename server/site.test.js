@@ -523,6 +523,12 @@ test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () =>
 test('weekly email: preview, send once to subscribers and members, unsubscribe', async () => {
   const g = client();
   await g.call('POST', '/api/site/forms/newsletter', { fields: { name: 'Reader', email: 'reader@x.co' } });
+  // Double opt-in: only after the reader confirms from their own inbox.
+  const conf = mails.find((x) => x.to === 'reader@x.co' && /Please confirm/.test(x.subject));
+  assert.ok(conf, 'a confirmation email is sent');
+  const confLink = /(\/newsletter\/confirm\?\S+)/.exec(conf.text)[1];
+  assert.match((await g.call('GET', confLink.replace(/t=[^&]+/, 't=wrong'))).text, /not valid/);
+  assert.match((await g.call('GET', confLink)).text, /You are signed up/);
   const m = await signIn('member@x.co'); await m.call('PUT', '/api/site/me', { name: 'Member' });
   const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
   const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
@@ -533,7 +539,7 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
   mails.length = 0;
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', { confirm: true }, { 'x-admin': '1' })).json.sent, 2);
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', { confirm: true }, { 'x-admin': '1' })).json.sent, 0, 'never twice the same day');
-  const link = /Unsubscribe: (\S+)/.exec(mails.find((x) => x.to === 'reader@x.co').text)[1].replace('http://site.test', '');
+  const link = /Unsubscribe: (\S+)/.exec(mails.find((x) => x.to === 'reader@x.co' && /Unsubscribe:/.test(x.text)).text)[1].replace('http://site.test', '');
   assert.match((await g.call('GET', link)).text, /You are unsubscribed/);
   assert.equal((await a.call('GET', '/admin/api/site/weekly')).json.recipients, 1);
   assert.match((await g.call('GET', '/unsubscribe?e=reader@x.co&t=wrongwrongwrongwrongwrong')).text, /not valid/);

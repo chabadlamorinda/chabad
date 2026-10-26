@@ -49,7 +49,7 @@ function readAnswers(form, body) {
   return { out, errors, amount };
 }
 
-function mountForms(r, { base, store, mailer, content, render, wrap, limit, readMember, ctxOf, tOf, log = console, notifyTo = '' }) {
+function mountForms(r, { base, store, mailer, content, render, wrap, limit, readMember, ctxOf, tOf, log = console, notifyTo = '', confirmNews = null }) {
   const pool = store && store.pool, q = (t, p) => pool.query(t, p);
   const formsOf = (C) => C.forms || [];
 
@@ -99,7 +99,10 @@ ${f.fields.map(input).join('\n')}
     const lines = f.fields.map((x) => { const v = out[x.id]; const s = Array.isArray(v) ? (x.type === 'children' ? v.map((r) => Object.values(r).filter(Boolean).join(', ')).join(' | ') : v.join(', ')) : v === true ? 'yes' : v === false ? 'no' : v; return s ? `${x.label}: ${s}` : null; }).filter(Boolean).join('\n');
     const to = notifyTo || C.org.email;
     if (mailer && to) mailer.send({ to, subject: `${f.title}: ${name}`, text: `${lines}${amount ? `\n\nAmount: $${amount}` : ''}\n\nRabbi area: ${base}/admin/community` }).catch((e) => log.error('form notify:', e && e.message));
-    if (mailer) mailer.send({ to: email, subject: t('We received it: {title}', { title: f.title }), text: t('Thank you, {name}! We received your form and will be in touch soon.', { name }) + `\n\n${lines}\n\n${C.org.name} · ${C.org.phone}` }).catch((e) => log.error('form confirm:', e && e.message));
+    // The confirmation repeats the answers only to a signed-in member's own email (so the form can't be used to send text to strangers).
+    const own = m && m.email === email, L = ['he', 'ru'].includes(req.get('x-lang')) ? req.get('x-lang') : 'en';
+    if (mailer && f.id === 'newsletter' && confirmNews) mailer.send({ to: email, subject: t('Please confirm: the weekly email from {org}', { org: C.org.name }), text: t('Please confirm you would like the weekly email from {org}:', { org: C.org.name }) + `\n${confirmNews(email, L)}\n\n` + t('If you did not ask for it, ignore this email.') }).catch((e) => log.error('newsletter confirm:', e && e.message));
+    else if (mailer) mailer.send({ to: email, subject: t('We received it: {title}', { title: f.title }), text: t('Thank you! We received your form and will be in touch soon.') + (own ? `\n\n${lines}` : '') + `\n\n${C.org.name} · ${C.org.phone}` }).catch((e) => log.error('form confirm:', e && e.message));
     const p = f.payment, pay = p && (amount || p.optional) && amount <= MAX_CARD ? giveUrl(p.fund, amount || 0, `${f.title}: ${name}`) : null;
     res.json({ ok: true, amount, payUrl: pay, tooLarge: amount > MAX_CARD });
   }));

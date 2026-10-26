@@ -12,11 +12,15 @@ function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = c
   const pool = store && store.pool, q = (t, p) => pool.query(t, p);
   const sig = (email) => crypto.createHmac('sha256', secret + ':unsub').update(email).digest('base64url').slice(0, 24);
   const unsubUrl = (email) => `${base}/unsubscribe?e=${encodeURIComponent(email)}&t=${sig(email)}`;
+  // The weekly email goes only to addresses that confirmed (double opt-in), so no one can sign up someone else.
+  const csig = (email) => crypto.createHmac('sha256', secret + ':news-confirm').update(email).digest('base64url').slice(0, 24);
+  const confirmUrl = (email, lang = 'en') => `${base}${lang === 'he' || lang === 'ru' ? '/' + lang : ''}/newsletter/confirm?e=${encodeURIComponent(email)}&t=${csig(email)}`;
+  const sigOk = (got, want) => { const a = Buffer.from(String(got)), b = Buffer.from(want); return a.length === b.length && crypto.timingSafeEqual(a, b); };
 
   async function recipients() {
     if (!pool) return [];
-    const rows = (await q(`SELECT lower(email) AS email FROM form_responses WHERE form_id='newsletter'
-      UNION SELECT lower(email) FROM members WHERE news AND email <> '' AND last_login IS NOT NULL
+    const rows = (await q(`SELECT lower(email) AS email FROM form_responses WHERE form_id='newsletter' AND status='confirmed'
+      UNION SELECT lower(verified_email) FROM members WHERE news AND verified_email IS NOT NULL AND last_login IS NOT NULL
       EXCEPT SELECT email FROM email_unsubscribes`)).rows;
     return [...new Set(rows.map((r) => r.email))].filter((e) => /@/.test(e));
   }
@@ -49,15 +53,22 @@ function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = c
     return lines.join('\n');
   }
 
+  app.get(['/newsletter/confirm', '/he/newsletter/confirm', '/ru/newsletter/confirm'], async (req, res) => {
+    const email = String(req.query.e || '').toLowerCase().slice(0, 254), ok = !!email && sigOk(req.query.t || '', csig(email));
+    if (ok && pool) await q("UPDATE form_responses SET status='confirmed' WHERE form_id='newsletter' AND lower(email)=$1", [email]);
+    const lang = /^\/(he|ru)\//.exec(req.path), X = ctxOf({ lang: lang ? lang[1] : 'en', method: 'GET', originalUrl: '/', query: {}, get: () => '' }), t = X.t;
+    res.type('html').send(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${t('Weekly email')}</title><body style="font:18px/1.5 system-ui;max-width:560px;margin:10vh auto;padding:0 20px"${lang && lang[1] === 'he' ? ' dir="rtl"' : ''}><h1>${ok ? t('You are signed up. Thank you!') : t('This link is not valid')}</h1><p>${ok ? t('The weekly email from Chabad of Lamorinda will come every week. You can unsubscribe with one click from any email.') : t('Please use the link from the email, or contact us.')}</p><p><a href="${lang ? '/' + lang[1] : ''}/">${t('Back to the website')}</a></p>`);
+  });
+
   app.get('/unsubscribe', async (req, res) => {
     const email = String(req.query.e || '').toLowerCase().slice(0, 254), tok = String(req.query.t || '');
-    const ok = email && tok.length === 24 && crypto.timingSafeEqual(Buffer.from(tok.padEnd(24)), Buffer.from(sig(email)));
+    const ok = !!email && sigOk(tok, sig(email));
     if (ok && pool) { await q('INSERT INTO email_unsubscribes (email) VALUES ($1) ON CONFLICT DO NOTHING', [email]); await q('UPDATE members SET news=FALSE WHERE lower(email)=$1', [email]); }
     res.type('html').send(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Unsubscribed</title><body style="font:18px/1.5 system-ui;max-width:560px;margin:10vh auto;padding:0 20px"><h1>${ok ? 'You are unsubscribed' : 'This link is not valid'}</h1><p>${ok ? 'You will no longer receive the weekly email. Reminders you set up in your account (yahrzeits, birthdays) still come.' : 'Please use the link from the email, or contact us.'}</p><p><a href="/">Back to the website</a></p>`);
   });
 
   return {
-    compose, composeWhatsApp, recipients, unsubUrl,
+    compose, composeWhatsApp, recipients, unsubUrl, confirmUrl,
     mountAdmin(r2, { authed, wrap }) {
       if (!pool) return;
       r2.get('/api/site/weekly', authed, wrap(async (req, res) => { const m = await compose(String(req.query.note || '')); res.json({ ...m, recipients: (await recipients()).length, email: !!mailer }); }));

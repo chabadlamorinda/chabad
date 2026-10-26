@@ -95,7 +95,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   yearly = mountYearly(r, { render: pages.render, wrap, ctxOf, base, upcoming: pages.upcoming });
   mountLocal(r, { content, base, wrap, ctxOf, ...pages });
   const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });
-  const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '' });
+  const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   ask = mountAsk(r, { store, render: pages.render, wrap, ctxOf, base, faqLd: pages.faqLd, crumbs: pages.crumbs });
   mountDaily(r, { render: pages.render, wrap, ctxOf });

@@ -933,5 +933,15 @@
  "Add them all to your phone calendar with one button.": "Добавьте их все в календарь телефона одной кнопкой.",
  "No password: sign in with a code we email you. We never share your information.": "Без пароля: вход по коду из письма. Мы никогда не передаём ваши данные.",
  "This email is already on the list. Sign in to change your RSVP.": "Этот адрес уже в списке. Войдите в аккаунт, чтобы изменить запись.",
- "For a group larger than 12, please contact us.": "Для группы больше 12 человек, пожалуйста, свяжитесь с нами."
+ "For a group larger than 12, please contact us.": "Для группы больше 12 человек, пожалуйста, свяжитесь с нами.",
+ "Please confirm: the weekly email from {org}": "Подтвердите подписку на еженедельное письмо от {org}",
+ "Please confirm you would like the weekly email from {org}:": "Пожалуйста, подтвердите, что хотите получать еженедельное письмо от {org}:",
+ "If you did not ask for it, ignore this email.": "Если вы не подписывались, просто проигнорируйте это письмо.",
+ "Thank you! We received your form and will be in touch soon.": "Спасибо! Мы получили вашу форму и скоро свяжемся с вами.",
+ "Weekly email": "Еженедельное письмо",
+ "You are signed up. Thank you!": "Вы подписаны. Спасибо!",
+ "The weekly email from Chabad of Lamorinda will come every week. You can unsubscribe with one click from any email.": "Еженедельное письмо от Хабада Ламоринды будет приходить каждую неделю. Отписаться можно одним нажатием в любом письме.",
+ "This link is not valid": "Ссылка недействительна",
+ "Please use the link from the email, or contact us.": "Воспользуйтесь ссылкой из письма или свяжитесь с нами.",
+ "Back to the website": "Вернуться на сайт"
 }
