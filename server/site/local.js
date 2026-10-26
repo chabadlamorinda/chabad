@@ -87,6 +87,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     const body = `<article class="wrap sec narrow learn">
 <p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › ${esc(t(a.category))}</p>
 <h1>${esc(a.title)}</h1>
+<p class="meta muted">${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))} · <a href="https://wa.me/?text=${encodeURIComponent(a.title + ' ' + base + X.path('/learn/' + a.slug))}" rel="noopener" target="_blank">${esc(t('Send to a friend on WhatsApp'))}</a></p>
 ${md(a.body)}
 ${a.local ? `<div class="card local"><p class="eyebrow">${esc(t('In Lamorinda'))}</p><p>${esc(a.local)}</p><p class="btns"><a class="btn gold" href="/help/talk-to-the-rabbi">${esc(t('Contact the Rabbi'))}</a><a class="btn ghost" href="/events">${esc(t('Upcoming events'))}</a></p></div>` : ''}
 ${occ ? `<div class="card occasion"><p>${esc(t('Mark the occasion: sponsor a Kiddush or give in their honor'))}</p><p class="btns"><a class="btn gold" href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory'))}</a><a class="btn ghost" href="/tehillim">${esc(t('Tehillim for this'))}</a>${occ === 'yahrzeit' ? `<a class="btn ghost" href="/kaddish">${esc(t('Kaddish'))}</a>` : ''}</p></div>` : ''}
@@ -95,7 +96,7 @@ ${rel.length ? `<h2>${esc(t('Keep learning'))}</h2><div class="grid">${rel.map((
 <div class="card support"><p>${esc(t('These guides are free for everyone, thanks to our partners.'))} <a href="/donate">${esc(t('Become a partner'))}</a> · <a href="/programs/chai-club">${esc(t('Join the Chai Club'))}</a></p></div>
 </article>`;
     await render(res, { path: '/learn/' + a.slug, title: a.title, description: a.description, body,
-      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description, articleBody: plain(a.body).slice(0, 5000), inLanguage: X.lang, author: { '@type': 'Organization', name: C.org.name, url: base + '/' }, publisher: { '@id': base + '/#org' }, mainEntityOfPage: base + X.path('/learn/' + a.slug), image: base + '/assets/og.png' },
+      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description, articleBody: plain(a.body).slice(0, 5000), wordCount: plain(a.body).split(/\s+/).length, inLanguage: X.lang, author: { '@type': 'Organization', name: C.org.name, url: base + '/' }, publisher: { '@id': base + '/#org' }, mainEntityOfPage: base + X.path('/learn/' + a.slug), image: base + '/assets/og.png' },
         crumbs(base, [[t('Learn'), '/learn'], [a.title, '/learn/' + a.slug]]), ...(a.faq.length ? [faqLd(a.faq)] : [])] });
   }));
 }

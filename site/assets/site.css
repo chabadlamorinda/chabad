@@ -291,3 +291,4 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 @media (max-width: 440px) { .hdr-in { gap: 6px; } .hdr-cta { gap: 2px; } .hdr-cta .btn.gold { padding: 6px 12px; } .search-btn { width: 36px; } .brand { gap: 6px; } .brand span { font-size: .95rem; } }
 .answer-card p:first-of-type { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 @media (max-width: 400px) { .search-btn { display: none; } }
+.meta { font-size: .95rem; margin: -4px 0 20px; } .meta a { color: var(--gold-ink); font-weight: 600; text-decoration: none; } .meta a:hover { text-decoration: underline; }
