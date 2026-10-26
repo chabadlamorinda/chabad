@@ -63,3 +63,4 @@ These came from the current website, which disagrees with itself in places, or w
 23. Interfaith families: Hebrew School and Bar/Bat Mitzvah for children whose father is Jewish (the guide says "ask the Rabbi").
 24. Any group or regular event for people in their 20s and 30s; any parent-and-baby program; meal trains for new mothers.
 25. For visitors: hotels within walking distance for Shabbat, an eruv, kosher takeout, mikvah access.
+26. Your old site mentions a Rosh Hashanah "Dot Cakes" kids program and a concert with "Meleha". What is Dot Cakes, and how is the singer's name spelled in Hebrew and Russian? (The translations guessed.)
