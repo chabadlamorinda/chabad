@@ -9,6 +9,7 @@ const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 const { googleCalendarUrl } = require('./social.js');
 const { withShare } = require('./share.js');
+const { withGuides } = require('./links.js');
 const { parseLocal } = require('./ctx.js');
 const { decorate, artImg, artFor, artForPath } = require('./art.js');
 const artImgFor = (p) => artImg(artForPath(p), 'lg');
@@ -54,7 +55,7 @@ function mountPages(app, ctx) {
     const X = ctxOf(res.req), to = status === 200 && !opts.noRedirect && X.redirectTo();
     if (to) return res.set('Vary', 'Accept-Language, Cookie').redirect(302, to);
     const [hd, sh] = await Promise.all([X.hebrewDate(Z.todayLocal()).catch(() => ''), Z.thisShabbat().catch(() => null)]);
-    const html = layout(X.C, { base, indexable, analytics, hebrewDate: hd, shabbat: sh, lang: X.lang, t: X.t, fmtDay: X.shortDate, tm: X.tm, ...opts, body: opts.path === '/' ? opts.body : decorate(status === 200 ? withShare(X, opts.body, opts.path, opts.title, base) : opts.body, opts.path) });
+    const html = layout(X.C, { base, indexable, analytics, hebrewDate: hd, shabbat: sh, lang: X.lang, t: X.t, fmtDay: X.shortDate, tm: X.tm, ...opts, body: opts.path === '/' ? opts.body : decorate(status === 200 ? withShare(X, withGuides(X, opts.body, opts.path), opts.path, opts.title, base) : opts.body, opts.path) });
     res.status(status).set('Cache-Control', 'public, max-age=60, stale-while-revalidate=600').set('Vary', 'Accept-Language, Cookie').type('html').send(X.links(html));
   }
   const counts = async () => { try { return rsvpCounts ? await rsvpCounts() : {}; } catch (e) { return {}; } };
