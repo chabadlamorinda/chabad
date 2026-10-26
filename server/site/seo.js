@@ -39,12 +39,16 @@ async function llmsText(c, base, upcoming, full) {
   if (sh && sh.candles) lines.push(`- This week: candle lighting ${sh.candles.timeStr} on ${sh.candles.date}${sh.havdalah ? `, Shabbat ends ${sh.havdalah.timeStr}` : ''} (Lafayette, CA)`);
   lines.push('', '## Services');
   for (const s of o.services || []) lines.push(`- ${s.name}: ${s.time}${s.note ? ' (' + s.note + ')' : ''}`);
+  if ((o.weekly || []).length) { lines.push('', '## Every week'); for (const w of o.weekly) lines.push(`- ${w.day} ${w.time}: ${w.name}${w.link ? ` (${base}${w.link})` : ''}`); }
   lines.push('', '## Programs');
   for (const p of c.programs) lines.push(`- [${p.name}](${base}/programs/${p.slug}): ${p.summary}`);
   lines.push('', '## Upcoming events');
   for (const e of upcoming().slice(0, full ? 50 : 15)) lines.push(`- [${e.title}](${base}/events/${e.slug}): ${e.start.replace('T', ' ')}${e.summary ? ' - ' + e.summary : ''}`);
   lines.push('', '## Pages', `- [Shabbat times and services](${base}/shabbat)`, `- [Jewish holidays with dates](${base}/holidays)`, `- [Jewish holidays this year, with dates and candle lighting in Lafayette](${base}/jewish-holidays-${new Date().getFullYear()})`, `- [Shabbat candle lighting times for the next 12 months: Lafayette](${base}/shabbat-times), [Moraga](${base}/shabbat-times/moraga), [Orinda](${base}/shabbat-times/orinda), [Pleasant Hill](${base}/shabbat-times/pleasant-hill), [Martinez](${base}/shabbat-times/martinez)`, `- [This week in Jewish Lamorinda](${base}/this-week)`, `- [Everything Jewish in Lamorinda](${base}/jewish-lamorinda)`, `- [Questions and answers](${base}/faq)`, `- [Hebrew date converter](${base}/tools/hebrew-date)`, `- [Yahrzeit calculator](${base}/tools/yahrzeit)`, `- [Calendar feed (iCal)](${base}/events.ics)`);
   for (const h of c.holidays) lines.push(`- [${h.title}](${base}/holidays/${h.slug})`);
+  lines.push('', '## Sign up, register and order online');
+  for (const f of c.forms || []) lines.push(`- [${f.title}](${base}/forms/${f.id})${f.intro ? ': ' + f.intro : ''}`);
+  lines.push('', '## Free tools', `- [Shabbat times for the next 12 months](${base}/shabbat-times)`, `- [Daily prayer times (zmanim)](${base}/tools/zmanim)`, `- [Hebrew date converter](${base}/tools/hebrew-date)`, `- [Hebrew birthday calculator](${base}/tools/hebrew-birthday)`, `- [Yahrzeit calculator](${base}/tools/yahrzeit)`, `- [Bar and Bat Mitzvah date](${base}/tools/bar-bat-mitzvah)`, `- [This week's Torah portion](${base}/parsha)`, `- [Search the website](${base}/search?q=)`);
   lines.push('', '## Towns served (local pages)');
   for (const t of c.towns || []) lines.push(`- [Jewish ${t.name}, CA](${base}/jewish-${t.slug})${t.miles ? `: ${t.miles} miles from the center` : ': home of the center'}`);
   lines.push('', '## Help with life situations (call the Rabbi first)');
