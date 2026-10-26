@@ -18,6 +18,23 @@
     app.appendChild(el('h1', { text: 'Website community' }));
     app.appendChild(el('p', {}, [el('a', { href: '/admin/', text: '← Rabbi’s desk' })]));
 
+    // ---- People to reach out to ----
+    var so = section('People to reach out to', 'Who to call or message this week, and why. Each message is ready and personal: tap WhatsApp (or text, email, call), adjust it if you like, send. Press Done to clear it.');
+    var person = function (i, box) {
+      var text = el('textarea', { rows: '4' }); text.value = i.text;
+      var open = function (kind) { return function () { var t = encodeURIComponent(text.value), url = i[kind]; if (!url) return; url = url.replace(/([?&](text|body)=)[^&]*/, '$1' + t); window.open(url, '_blank'); }; };
+      var card = el('div', { class: 'card' + (i.priority === 1 ? ' hot' : '') }, [el('strong', { text: i.name }), el('span', { class: 'pill', text: (i.kind || 'invite').replace('-', ' ') }), i.lang && i.lang !== 'en' ? el('span', { class: 'pill', text: i.lang === 'he' ? 'Hebrew' : 'Russian' }) : null,
+        el('div', { class: 'small', text: i.reason || (i.reasons || []).join('; ') }), text,
+        el('div', { class: 'row' }, [i.whatsapp ? el('button', { class: 'on wa', text: 'WhatsApp', onclick: open('whatsapp') }) : el('span', { class: 'small', text: 'No mobile number on file' }), i.sms ? el('button', { text: 'Text', onclick: open('sms') }) : null, i.email ? el('button', { text: 'Email', onclick: open('email') }) : null, i.call ? el('a', { href: i.call }, [el('button', { text: 'Call ' + i.phone })]) : null,
+          el('button', { text: 'Done', onclick: function () { api('POST', '/site/outreach/done', { memberId: i.memberId, key: i.key || ('invite:' + i.event) }).then(function () { card.remove(); }); } })])]);
+      box.appendChild(card);
+    };
+    api('GET', '/site/outreach').then(function (o) {
+      if (o._status !== 200) { so.appendChild(el('p', { class: 'small', text: 'Not available yet (the database is not connected).' })); return; }
+      if (!o.items.length) { so.appendChild(el('p', { class: 'small', text: 'Nothing for now. As families sign in, save dates and come to events, suggestions appear here.' })); return; }
+      o.items.forEach(function (i) { person(i, so); });
+    });
+
     // ---- Social drafts ----
     var s1 = section('Social drafts', soc.facebook ? 'Every upcoming event is ready to post. Edit the text if you like, then press Publish.' : 'Facebook is not connected yet: add FB_PAGE_ID and FB_PAGE_TOKEN in Render (see store/website-setup.md). You can still copy the text below.');
     if (!soc.items.length) s1.appendChild(el('p', { class: 'small', text: 'No upcoming events.' }));
@@ -82,6 +99,7 @@
                 list.appendChild(el('div', { class: 'card' }, [el('div', { class: 'small', text: new Date(i.created_at).toLocaleString() + ' · ' + i.name + ' <' + i.email + '>' + (i.amount_cents ? ' · $' + i.amount_cents / 100 : '') }),
                   el('div', { class: 'small', text: f.fields.map(function (fl) { var v = flat(i.data[fl.id]); return v ? fl.label + ': ' + v : ''; }).filter(Boolean).join(' | ') }),
                   el('div', { class: 'row' }, [st, el('button', { text: 'Done', onclick: function () { api('POST', '/site/forms/response/' + i.id, { status: 'done' }).then(function (r) { if (r.ok) st.textContent = 'done'; }); } }), el('button', { text: 'Paid', onclick: function () { api('POST', '/site/forms/response/' + i.id, { status: 'paid' }).then(function (r) { if (r.ok) st.textContent = 'paid'; }); } }), el('a', { href: 'mailto:' + i.email, text: 'Email' })])])); }); }); } }),
+            el('button', { text: 'Who to invite', onclick: function () { api('GET', '/site/outreach/event/' + e.slug).then(function (x) { list.textContent = ''; if (!x.items || !x.items.length) { list.textContent = 'No matches yet: as families come to events and read pages, matches appear here.'; return; } x.items.forEach(function (i) { person(i, list); }); }); } }),
             el('button', { text: 'Download CSV', onclick: function () { api('GET', '/site/forms/' + f.id).then(function (y) { csv(f.id + '.csv', [['When', 'Name', 'Email', 'Amount', 'Status'].concat(f.fields.map(function (fl) { return fl.label; }))].concat(y.items.map(function (i) { return [i.created_at, i.name, i.email, i.amount_cents / 100, i.status].concat(f.fields.map(function (fl) { return flat(i.data[fl.id]); })); }))); }); } })]), list]));
       });
     });

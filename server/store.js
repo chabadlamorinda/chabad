@@ -5,6 +5,7 @@ const crypto = require('crypto');
 const { Pool } = require('pg');
 const { kiddushStore } = require('./kiddush-store.js');
 const { SCHEMA: SITE_SCHEMA } = require('./site/community.js');
+const { SCHEMA: OUTREACH_SCHEMA } = require('./site/outreach.js');
 
 const newId = (p) => p + crypto.randomBytes(12).toString('hex');
 
@@ -51,9 +52,9 @@ function createStore(url, opts = {}) {
   return {
     ...kiddush,
     pool,
-    migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); },
+    migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); await q(OUTREACH_SCHEMA); },
     close: () => pool.end(),
-    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, family, rsvps, login_codes, submissions, social_posts, email_log, form_responses, chat_questions, email_unsubscribes, qa CASCADE'), // tests only
+    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, family, rsvps, login_codes, submissions, social_posts, email_log, form_responses, chat_questions, email_unsubscribes, qa, member_activity, outreach_done CASCADE'), // tests only
 
     // ----- members -----
     async createMember(m) {

@@ -89,6 +89,7 @@ function mountPages(app, ctx) {
     </div>
   </div>
 </section>
+<section class="wrap sec" data-for-you hidden></section>
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Coming up'))}</h2><a href="/events">${esc(t('Full calendar'))} →</a></div>
   ${evs.length ? `<div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : `<p class="muted">${esc(t('New events are posted here first.'))} <a href="/account">${esc(t('Sign in'))}</a></p>`}

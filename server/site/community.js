@@ -21,6 +21,7 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS birth_after_sunset BOOLEAN NOT NULL
 ALTER TABLE members ADD COLUMN IF NOT EXISTS anniversary DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS mezuzahs_checked DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS diet TEXT NOT NULL DEFAULT '';
+ALTER TABLE members ADD COLUMN IF NOT EXISTS personalize BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS tefillin_checked DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS news BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ;
@@ -91,8 +92,8 @@ function communityStore(store) {
       await q("INSERT INTO members (id, name, email, last_login) VALUES ($1, '', $2, now())", [id, email]);
       return id;
     },
-    updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, diet=$12, updated_at=now() WHERE id=$1',
-      [id, p.name, p.phone, p.address, p.hebrewName, p.birthday || null, p.birthAfterSunset, p.anniversary || null, p.news, p.mezuzahsChecked || null, p.tefillinChecked || null, p.diet || '']),
+    updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, diet=$12, personalize=$13, updated_at=now() WHERE id=$1',
+      [id, p.name, p.phone, p.address, p.hebrewName, p.birthday || null, p.birthAfterSunset, p.anniversary || null, p.news, p.mezuzahsChecked || null, p.tefillinChecked || null, p.diet || '', p.personalize]),
     family: (memberId) => rows("SELECT id, name, hebrew_name, relation, gender, to_char(birthday,'YYYY-MM-DD') AS birthday, birth_after_sunset, diet FROM family WHERE member_id=$1 ORDER BY created_at", [memberId]),
     async replaceFamily(memberId, list) {
       const c = await pool.connect();
@@ -133,7 +134,7 @@ function communityStore(store) {
 
 function sanitizeProfile(b) {
   const birthday = ymdOk(b.birthday || '') ? b.birthday : '', anniversary = ymdOk(b.anniversary || '') ? b.anniversary : '';
-  return { name: clean(b.name, 100), phone: clean(b.phone, 30), address: clean(b.address, 200), hebrewName: clean(b.hebrewName, 100), birthday, birthAfterSunset: b.birthAfterSunset === true, anniversary, news: b.news !== false, mezuzahsChecked: ymdOk(b.mezuzahsChecked || '') ? b.mezuzahsChecked : '', tefillinChecked: ymdOk(b.tefillinChecked || '') ? b.tefillinChecked : '', diet: clean(b.diet, 200) };
+  return { name: clean(b.name, 100), phone: clean(b.phone, 30), address: clean(b.address, 200), hebrewName: clean(b.hebrewName, 100), birthday, birthAfterSunset: b.birthAfterSunset === true, anniversary, news: b.news !== false, mezuzahsChecked: ymdOk(b.mezuzahsChecked || '') ? b.mezuzahsChecked : '', tefillinChecked: ymdOk(b.tefillinChecked || '') ? b.tefillinChecked : '', diet: clean(b.diet, 200), personalize: b.personalize !== false };
 }
 function sanitizeFamily(list) {
   if (!Array.isArray(list) || list.length > 20) return null;
@@ -248,7 +249,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   r.get('/me', need, authed, wrap(async (req, res) => {
     const m = req.member, [family, yz, rs] = await Promise.all([cs.family(m.id), cs.webYahrzeits(m.id), cs.myRsvps(m.email.toLowerCase())]);
     res.json({
-      profile: { name: m.name, email: m.email, phone: m.phone, address: m.address, hebrewName: m.hebrew_name, birthday: d10(m.birthday), birthAfterSunset: m.birth_after_sunset, anniversary: d10(m.anniversary), mezuzahsChecked: d10(m.mezuzahs_checked), tefillinChecked: d10(m.tefillin_checked), diet: m.diet || '', news: m.news, shareYahrzeits: m.share_yahrzeits },
+      profile: { name: m.name, email: m.email, phone: m.phone, address: m.address, hebrewName: m.hebrew_name, birthday: d10(m.birthday), birthAfterSunset: m.birth_after_sunset, anniversary: d10(m.anniversary), mezuzahsChecked: d10(m.mezuzahs_checked), tefillinChecked: d10(m.tefillin_checked), diet: m.diet || '', personalize: m.personalize !== false, news: m.news, shareYahrzeits: m.share_yahrzeits },
       family: family.map((f) => ({ name: f.name, hebrewName: f.hebrew_name, relation: f.relation, gender: f.gender, birthday: f.birthday || '', birthAfterSunset: f.birth_after_sunset, diet: f.diet || '' })),
       yahrzeits: yz.map((y) => ({ name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes, fromApp: y.source !== 'web', next: (H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, new Date(now()).toISOString().slice(0, 10)) || {}).date || '' })),
       rsvps: rs.map((x) => ({ event: x.event_slug, adults: x.adults, kids: x.kids })),

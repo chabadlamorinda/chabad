@@ -288,13 +288,30 @@ test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitatio
   out.length = 0; await rem.run(); await rem.run();
   assert.equal(out.filter((m) => /Chaya's Bat Mitzvah is coming up/.test(m.subject)).length, 1);
   assert.ok(!out.some((m) => /Moshe/.test(m.subject)), 'not years too early');
+  // Outreach: pages a signed-in member reads help the Rabbi know whom to invite or check in on.
+  await c.call('PUT', '/api/site/me', { name: 'Rivka Stein', phone: '(925) 555-0100' });
+  for (const path of ['/events/' + EVENT, '/he/help/someone-passed-away', '/about']) assert.equal((await c.call('POST', '/api/site/seen', { path }, { 'x-site': '1' })).status, 204);
+  const adm = client(); await adm.call('POST', '/admin/api/login', { password: PW });
+  const inv = (await adm.call('GET', '/admin/api/site/outreach/event/' + EVENT)).json.items.find((x) => x.name === 'Rivka Stein');
+  assert.ok(inv && inv.reasons.includes('looked at this event'), 'a family that looked at the event is suggested');
+  assert.match(inv.whatsapp, /^https:\/\/wa\.me\/19255550100\?text=Hi%20Rivka!/);
+  let todo = (await adm.call('GET', '/admin/api/site/outreach')).json.items.filter((x) => x.name === 'Rivka Stein');
+  const chk = todo.find((x) => x.kind === 'check-in');
+  assert.ok(chk, 'reading about a loss suggests a gentle check-in'); assert.match(chk.reason, /a loss in the family/);
+  assert.equal((await adm.call('POST', '/admin/api/site/outreach/done', { memberId: chk.memberId, key: chk.key }, { 'x-admin': '1' })).status, 200);
+  todo = (await adm.call('GET', '/admin/api/site/outreach')).json.items.filter((x) => x.name === 'Rivka Stein');
+  assert.ok(!todo.some((x) => x.kind === 'check-in'), 'done items disappear');
+  assert.ok((await c.call('GET', '/api/site/for-you')).json.items.some((x) => x.slug === EVENT), 'For your family shows events that fit');
+  // Turning suggestions off stops noting pages.
+  await c.call('PUT', '/api/site/me', { name: 'Rivka Stein', personalize: false });
+  await c.call('POST', '/api/site/seen', { path: '/learn/mezuzah' }, { 'x-site': '1' });
+  assert.equal((await store.pool.query("SELECT count(*)::int AS n FROM member_activity WHERE path='/learn/mezuzah'")).rows[0].n, 0);
   // Allergies saved in the account travel with the RSVP to the Rabbi's list.
   await c.call('PUT', '/api/site/me', { name: 'Rivka Stein', diet: 'vegetarian' });
   await c.call('PUT', '/api/site/family', { family: [{ name: 'Chaya', relation: 'child', diet: 'peanut allergy' }] });
   assert.equal((await c.call('GET', '/api/site/me')).json.family[0].diet, 'peanut allergy');
   await c.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, kids: 1 });
-  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
-  const row = (await a.call('GET', '/admin/api/site/rsvps/' + EVENT)).json.list.find((x) => x.name === 'Rivka Stein');
+  const row = (await adm.call('GET', '/admin/api/site/rsvps/' + EVENT)).json.list.find((x) => x.name === 'Rivka Stein');
   assert.match(row.diet, /vegetarian/); assert.match(row.diet, /Chaya: peanut allergy/);
   // A private calendar link with the family's Jewish dates (works without the sign-in cookie, only with its key).
   await c.call('PUT', '/api/site/me', { name: 'Rivka Stein', mezuzahsChecked: '2022-05-01' });

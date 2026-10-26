@@ -20,6 +20,7 @@ const { mountSeo } = require('./seo.js');
 const { mountTools } = require('./tools.js');
 const { mountYearly } = require('./yearly.js');
 const { mountCommunity, mountCommunityAdmin } = require('./community.js');
+const { mountOutreach } = require('./outreach.js');
 const { createFacebook } = require('./facebook.js');
 const { mountLocal } = require('./local.js');
 const { mountBoard } = require('./board.js');
@@ -83,6 +84,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   // pushka.* and kiddush.* addresses keep opening their apps.
   const isHome = (req) => !/^(pushka|kiddush)\./i.test(req.hostname) && (siteHome || req.hostname.replace(/^www\./, '') === host);
   const pages = mountPages(app, { content, base, indexable, isHome, analytics, ctxOf, rsvpCounts: community.counts, photos: fb ? fb.photos : null });
+  const outreach = mountOutreach(app, { store, readMember: community.readMember, content, base, ctxOf, upcoming: pages.upcoming });
   const r = express.Router();
   const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
   let ask = null, yearly = null;
@@ -137,6 +139,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       chat.mountAdmin(r2, ctx);
       weekly.mountAdmin(r2, ctx);
       ask.mountAdmin(r2, ctx);
+      outreach.mountAdmin(r2, ctx);
       r2.get('/community', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.html')));
       r2.get('/community.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.js')));
     },
