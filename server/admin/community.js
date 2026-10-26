@@ -71,6 +71,13 @@
     var sendBtn = el('button', { class: 'on', text: 'Send to everyone', onclick: function () { if (!confirm('Send the weekly email now?')) return; sendBtn.disabled = true; fetch('/admin/api/site/weekly/send', { method: 'POST', credentials: 'same-origin', headers: { 'x-admin': '1', 'content-type': 'application/json' }, body: JSON.stringify({ confirm: true, note: note.value }) }).then(function (r) { return r.json(); }).then(function (r) { sendBtn.disabled = false; info.textContent = r.ok ? 'Sent to ' + r.sent + ' of ' + r.total + '.' : r.error; }); } });
     sw.appendChild(el('div', { class: 'card' }, [note, el('div', { class: 'row' }, [el('button', { text: 'Preview', onclick: load }), sendBtn]), info, prev]));
     load();
+    // The same week as a WhatsApp message for the community groups (pick the language, copy or open WhatsApp).
+    var waText = el('textarea', { rows: '12' }), waLang = el('select', {}, [['en', 'English'], ['he', 'Hebrew'], ['ru', 'Russian']].map(function (o) { return el('option', { value: o[0], text: o[1] }); }));
+    var waLoad = function () { api('GET', '/site/weekly/whatsapp?lang=' + waLang.value).then(function (m) { waText.value = m.text || ''; }); };
+    waLang.onchange = waLoad;
+    var waCopy = el('button', { text: 'Copy', onclick: function () { copy(waText.value, waCopy); } });
+    sw.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'This week as a WhatsApp message' }), el('div', { class: 'small', text: 'For your WhatsApp groups and status. Open WhatsApp, choose the group, send.' }), waText, el('div', { class: 'row' }, [waLang, waCopy, el('button', { class: 'on wa', text: 'Open WhatsApp', onclick: function () { window.open('https://wa.me/?text=' + encodeURIComponent(waText.value), '_blank'); } })])]));
+    waLoad();
 
     // ---- Submissions ----
     var s2 = section('Waiting for approval', 'Sent in by the community. Approved Mazal Tovs, announcements and shiva notices appear on the community board and home page.');

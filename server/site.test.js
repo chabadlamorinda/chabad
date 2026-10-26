@@ -491,6 +491,8 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
   const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
   assert.equal(pv.recipients, 2); assert.match(pv.text, /^Good Shabbos everyone!/); assert.match(pv.text, /COMING UP/); assert.match(pv.text, /LEARN SOMETHING NEW/);
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', {}, { 'x-admin': '1' })).status, 400, 'needs confirmation');
+  const wa = (await a.call('GET', '/admin/api/site/weekly/whatsapp?lang=he')).json.text;
+  assert.match(wa, /שבת שלום מחב״ד למורינדה/); assert.match(wa, /\/he\/this-week/);
   mails.length = 0;
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', { confirm: true }, { 'x-admin': '1' })).json.sent, 2);
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', { confirm: true }, { 'x-admin': '1' })).json.sent, 0, 'never twice the same day');

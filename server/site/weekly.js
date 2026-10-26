@@ -36,6 +36,19 @@ function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = c
     return { subject, text: lines.join('\n') };
   }
 
+  // The same week as a short WhatsApp message (for the community groups), in English, Hebrew or Russian.
+  async function composeWhatsApp(lang = 'en') {
+    const L = ['he', 'ru'].includes(lang) ? lang : 'en', X = ctxOf({ lang: L, method: 'GET', originalUrl: '/', query: {}, get: () => '' }), t = X.t, C = X.C;
+    const site = (p) => base + (L === 'en' ? '' : '/' + L) + p, sh = await Z.thisShabbat(), hols = await Z.upcomingHolidays(45), evs = upcoming().slice(0, 4);
+    const lines = [`*${t('Shabbat Shalom from Chabad of Lamorinda!')}*`, ''];
+    if (sh.candles) lines.push(`*${t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) })}: ${X.tm(sh.candles)}*${sh.havdalah ? ' · ' + t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }) : ''}`, `${t('Shabbat services and Kiddush')}: ${site('/shabbat')}`, '');
+    if (sh.parsha) lines.push(`*${X.hc(sh.parsha)}*: ${site('/parsha')}`, '');
+    if (evs.length) { lines.push(`*${t('Coming up')}*`); for (const e of evs) lines.push(`• ${(e[L] && e[L].title) || e.title}: ${X.when(e)}`, `  ${site('/events/' + e.slug)}`); lines.push(''); }
+    if (hols[0]) { const h = C.holidays.find((x) => x.slug === hols[0].slug); lines.push(`*${t('Next holiday')}*: ${h ? h.title : X.hc(hols[0])}, ${X.longDate(hols[0].date)}`, ''); }
+    lines.push(`${t('This week in Jewish Lamorinda')}: ${site('/this-week')}`);
+    return lines.join('\n');
+  }
+
   app.get('/unsubscribe', async (req, res) => {
     const email = String(req.query.e || '').toLowerCase().slice(0, 254), tok = String(req.query.t || '');
     const ok = email && tok.length === 24 && crypto.timingSafeEqual(Buffer.from(tok.padEnd(24)), Buffer.from(sig(email)));
@@ -44,10 +57,11 @@ function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = c
   });
 
   return {
-    compose, recipients, unsubUrl,
+    compose, composeWhatsApp, recipients, unsubUrl,
     mountAdmin(r2, { authed, wrap }) {
       if (!pool) return;
       r2.get('/api/site/weekly', authed, wrap(async (req, res) => { const m = await compose(String(req.query.note || '')); res.json({ ...m, recipients: (await recipients()).length, email: !!mailer }); }));
+      r2.get('/api/site/weekly/whatsapp', authed, wrap(async (req, res) => res.json({ text: await composeWhatsApp(String(req.query.lang || 'en')) })));
       r2.post('/api/site/weekly/send', authed, express.json({ limit: '16kb' }), wrap(async (req, res) => {
         if (!mailer) return res.status(503).json({ code: 'not_configured', error: 'Email is not set up yet (SMTP_URL and MAIL_FROM in Render).' });
         if (!req.body || req.body.confirm !== true) return res.status(400).json({ code: 'confirm', error: 'Please confirm before sending.' });
