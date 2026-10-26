@@ -20,7 +20,6 @@ Bringing a gift is a kind gesture, though never required. Good choices:
 
 - **Home-cooked food**, unless your hosts asked for it. A kosher kitchen has its own rules, and your hosts may not be able to serve it.
 - **Anything that needs to be prepared, cooked or plugged in**, since cooking is not done on Shabbat.
-- **Something for after Shabbat** is fine, but let your hosts know so they can set it aside.
 
 ## When to arrive
 
