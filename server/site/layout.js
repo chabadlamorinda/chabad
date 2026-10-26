@@ -43,8 +43,10 @@ function orgLd(c, base) {
 
 function layout(c, { base, indexable, path, title, description, body, ld = [], image, noindex = false, hebrewDate = '', shabbat = null, analytics = {}, lang = 'en', t = (s) => s, fmtDay = (d) => d, tm = (e) => e.timeStr }) {
   const o = c.org, url = (l) => base + withLang(l, path), canonical = url(lang);
-  const fullTitle = path === '/' ? `${o.name} | ${t('Jewish Lafayette, Moraga & Orinda')}` : `${title} | ${o.name}`;
-  const desc = String(description || o.description).slice(0, 300);
+  // Google shows about 60 characters of a title and 160 of a description: add our name only when it fits, and end
+  // long descriptions at a word.
+  const fullTitle = path === '/' ? `${o.name} | ${t('Jewish Lafayette, Moraga & Orinda')}` : (title.length + o.name.length + 3 <= 65 ? `${title} | ${o.name}` : title);
+  const d0 = String(description || o.description).replace(/\s+/g, ' ').trim(), desc = d0.length <= 160 ? d0 : d0.slice(0, 157).replace(/\s+\S*$/, '') + '…';
   const img = image ? (image.startsWith('http') ? image : base + image) : base + '/assets/og.png';
   const robots = !indexable || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1';
   const nav = NAV.map(([href, label]) => `<a href="${href}"${path.startsWith(href) ? ' aria-current="page"' : ''}>${esc(t(label))}</a>`).join('');
