@@ -152,7 +152,7 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
     if (topic) {
       const L = links(C.org, topic, t);
       const R = topic === 'consult' ? links(C.org, topic, t, 'rebbetzin') : null;
-      send({ contact: { topic, title: t(TOPICS[topic].title), note: t('The Rabbi gets a note about this conversation so he can help.'), call: L.call, text: L.text, whatsapp: L.whatsapp, labels: { call: t('Call'), text: t('Text'), rabbi: t('Rabbi Yisroel Labkowski'), rebbetzin: t('Rebbetzin Tzipora Labkowski') }, rebbetzin: R } });
+      send({ contact: { topic, title: t(TOPICS[topic].title), note: t('The Rabbi gets a note about this conversation so he can help.'), call: L.call, text: L.text, whatsapp: L.whatsapp, email: L.email, labels: { call: t('Call'), text: t('Text'), email: t('Email'), rabbi: t('Rabbi Yisroel Labkowski'), rebbetzin: t('Rebbetzin Tzipora Labkowski') }, rebbetzin: R } });
       if (leads) leads.record({ topic, channel: 'chat', page, lang, cid, detail: msgs.filter((m) => m.role === 'user').map((m) => '- ' + m.content).join('\n') }).catch(() => {});
     }
     if (!client || !underCap()) { send({ text: searchAnswer(C, question, t) }); return finish(); }

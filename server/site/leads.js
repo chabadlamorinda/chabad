@@ -46,7 +46,7 @@ for (const slug of ['business-disputes', 'marriage-arguments-jewish-wisdom', 'pa
   'family-feuds-and-inheritance', 'forgiveness-and-making-peace', 'shalom-bayit', 'honoring-parents', 'jewish-parenting', 'business-ethics', 'caring-for-aging-parents', 'jewish-divorce',
   'mental-health-jewish-view', 'addiction-and-recovery', 'infertility-jewish-support', 'jewish-adoption', 'interfaith-families', 'jewish-dating', 'jewish-pregnancy', 'facing-antisemitism', 'loss-of-a-pet']) PAGE_TOPICS['/learn/' + slug] = 'consult';
 const topicForPage = (path) => PAGE_TOPICS[path] || (/^\/help\/[a-z0-9-]+$/.test(path) ? 'consult' : null);
-const CHANNELS = ['call', 'text', 'whatsapp'];
+const CHANNELS = ['call', 'text', 'whatsapp', 'email'];
 
 // The first topic the text is about (mezuzah and tefillin before giving and meeting).
 function topicOf(text) {
@@ -62,25 +62,27 @@ function numbers(org, who = 'rabbi') {
 }
 function links(org, topic, t, who = 'rabbi') {
   const n = numbers(org, who), msg = encodeURIComponent(t(who === 'rebbetzin' && TOPICS[topic].msgR ? TOPICS[topic].msgR : TOPICS[topic].msg));
-  return { call: 'tel:+' + n.call, text: `sms:+${n.mobile}?&body=${msg}`, whatsapp: `https://wa.me/${n.mobile}?text=${msg}` };
+  const R = who === 'rebbetzin', to = (R ? org.rebbetzinEmail : org.rabbiEmail) || org.email || '';
+  const subject = encodeURIComponent((R && !org.rebbetzinEmail ? t('For Rebbetzin Labkowski') + ': ' : '') + t(TOPICS[topic].title));
+  return { call: 'tel:+' + n.call, text: `sms:+${n.mobile}?&body=${msg}`, whatsapp: `https://wa.me/${n.mobile}?text=${msg}`, email: to ? `mailto:${to}?subject=${subject}&body=${msg}` : '' };
 }
 function consultBox(X) {
   const t = X.t, row = (who, name) => { const L = links(X.C.org, 'consult', t, who), a = (ch, label, extra = '') => `<a class="btn sm ${ch === 'whatsapp' ? 'gold' : 'ghost'}" href="${esc(L[ch])}" data-lead="consult" data-channel="${ch}" data-who="${who}"${extra}>${esc(label)}</a>`;
-    return `<div class="who"><strong>${esc(name)}</strong><span class="btns">${a('call', t('Call'))}${a('text', t('Text'))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}</span></div>`; };
+    return `<div class="who"><strong>${esc(name)}</strong><span class="btns">${a('call', t('Call'))}${a('text', t('Text'))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}${L.email ? a('email', t('Email')) : ''}</span></div>`; };
   return `<div class="card rabbi-contact consult"><h2>${esc(t('Talk privately with the Rabbi or the Rebbetzin'))}</h2><p>${esc(t('We help with every kind of dispute and family matter, with great success. Come early, before things spiral; and it is never too late. With the Torah\'s way and a positive outlook, there is a way forward from any situation. Reach out privately; no membership needed.'))}</p>
 ${row('rabbi', t('Rabbi Yisroel Labkowski'))}${row('rebbetzin', t('Rebbetzin Tzipora Labkowski'))}</div>`;
 }
 // One short line on every other guide and help page.
 function consultLine(X) {
   const t = X.t, w = (who, name) => `<a href="${esc(links(X.C.org, 'consult', t, who).whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="${who}" rel="noopener" target="_blank">${esc(name)}</a>`;
-  return `<p class="consult-line rabbi-contact">${esc(t('Questions about this, or something on your mind?'))} ${t('Message {rabbi} or {rebbetzin} privately, or call {phone}.').replace('{rabbi}', w('rabbi', t('the Rabbi'))).replace('{rebbetzin}', w('rebbetzin', t('the Rebbetzin'))).replace('{phone}', `<bdi dir="ltr"><a href="tel:+${numbers(X.C.org).call}" data-lead="consult" data-channel="call">${esc(X.C.org.phone)}</a></bdi>`)}</p>`;
+  return `<p class="consult-line rabbi-contact">${esc(t('Questions about this, or something on your mind?'))} ${t('Message {rabbi} or {rebbetzin} privately, or call {phone}.').replace('{rabbi}', w('rabbi', t('the Rabbi'))).replace('{rebbetzin}', w('rebbetzin', t('the Rebbetzin'))).replace('{phone}', `<bdi dir="ltr"><a href="tel:+${numbers(X.C.org).call}" data-lead="consult" data-channel="call">${esc(X.C.org.phone)}</a></bdi>`)}${X.C.org.email ? ` · <a href="${esc(links(X.C.org, 'consult', t).email)}" data-lead="consult" data-channel="email">${esc(t('Email'))}</a>` : ''}</p>`;
 }
 function contactBox(X, topic) {
   if (topic === 'consult') return consultBox(X);
   const t = X.t, L = links(X.C.org, topic, t);
   const a = (ch, label, extra = '') => `<a class="btn ${ch === 'whatsapp' ? 'gold' : 'ghost'}" href="${esc(L[ch])}" data-lead="${topic}" data-channel="${ch}"${extra}>${esc(label)}</a>`;
-  return `<div class="card rabbi-contact"><h2>${esc(t(TOPICS[topic].title))}</h2><p>${esc(t('Call, text or WhatsApp Rabbi Labkowski directly, and he will take care of you:'))}</p>
-<p class="btns">${a('call', t('Call'))}${a('text', t('Text'))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}</p></div>`;
+  return `<div class="card rabbi-contact"><h2>${esc(t(TOPICS[topic].title))}</h2><p>${esc(t('Call, text, WhatsApp or email Rabbi Labkowski directly, and he will take care of you:'))}</p>
+<p class="btns">${a('call', t('Call'))}${a('text', t('Text'))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}${L.email ? a('email', t('Email')) : ''}</p></div>`;
 }
 function withContact(X, body, path) {
   const topic = topicForPage(path);
@@ -102,9 +104,9 @@ function mountLeads(app, { store, mailer, notifyTo = '', content, base = '', lim
     sent.set(key, 1); if (sent.size > 5000) sent.clear();
     const to = notifyTo || content().org.email;
     if (!mailer || !to) return;
-    const how = channel === 'chat' ? 'asked the website chat about' : `tapped "${channel === 'whatsapp' ? 'WhatsApp' : channel === 'text' ? 'Text' : 'Call'}" for`;
+    const how = channel === 'chat' ? 'asked the website chat about' : `tapped "${{ whatsapp: 'WhatsApp', text: 'Text', call: 'Call', email: 'Email' }[channel]}" for`;
     const text = [`Someone on the website ${how} ${NAMES[topic]}${who === 'rebbetzin' ? ' with the Rebbetzin' : ''}.`, page ? `Page: ${base}${page}` : '', `Language: ${lang}`, '',
-      channel === 'chat' ? 'What they wrote:\n' + detail : channel === 'call' ? 'They are probably calling you now.' : `They are sending you a ${channel === 'whatsapp' ? 'WhatsApp message' : 'text message'}; watch your phone.`,
+      channel === 'chat' ? 'What they wrote:\n' + detail : channel === 'call' ? 'They are probably calling you now.' : channel === 'email' ? 'They are writing you an email; watch your inbox.' : `They are sending you a ${channel === 'whatsapp' ? 'WhatsApp message' : 'text message'}${who === 'rebbetzin' ? ' (to the Rebbetzin\'s phone)' : ''}; watch your phone.`,
       '', `All requests: ${base}/admin/community`].filter((x) => x !== null).join('\n');
     try { await mailer.send({ to, subject: `Website: someone is interested in ${NAMES[topic]}${who === 'rebbetzin' ? ' with the Rebbetzin' : ''}`, text }); } catch (e) { log.error('lead email:', e && e.message); }
   }

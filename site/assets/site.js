@@ -266,7 +266,7 @@
       if (!c) return;
       var row = function (L, who) {
         var a = function (ch, label, cls) { return el('a', { class: 'btn sm ' + cls, href: L[ch], 'data-lead': c.topic, 'data-channel': ch, 'data-who': who, target: ch === 'whatsapp' ? '_blank' : null, rel: ch === 'whatsapp' ? 'noopener' : null, text: label }); };
-        return el('div', { class: 'btns' }, [a('call', c.labels.call, 'ghost'), a('text', c.labels.text, 'ghost'), a('whatsapp', 'WhatsApp', 'gold')]);
+        return el('div', { class: 'btns' }, [a('call', c.labels.call, 'ghost'), a('text', c.labels.text, 'ghost'), a('whatsapp', 'WhatsApp', 'gold'), L.email ? a('email', c.labels.email, 'ghost') : null]);
       };
       var kids = [el('strong', { text: c.title })];
       if (c.rebbetzin) kids.push(el('span', { text: c.labels.rabbi }), row(c, 'rabbi'), el('span', { text: c.labels.rebbetzin }), row(c.rebbetzin, 'rebbetzin')); else kids.push(row(c, 'rabbi'));

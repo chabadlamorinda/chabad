@@ -514,7 +514,7 @@ test('mezuzah, tefillin, giving and meetings: Call / Text / WhatsApp the Rabbi, 
   assert.ok(list.some((x) => x.topic === 'mezuzah' && x.channel === 'chat') && list.some((x) => x.topic === 'tefillin' && x.channel === 'whatsapp'));
   // A private conversation with the Rabbi or the Rebbetzin: on conflict, family and help pages, a line on every other guide.
   const inl = (await c.call('GET', '/learn/in-laws')).text;
-  assert.match(inl, /rabbi-contact consult/); assert.match(inl, /data-lead="consult" data-channel="whatsapp" data-who="rebbetzin"/); assert.match(inl, /Hi%20Rebbetzin%20Labkowski/);
+  assert.match(inl, /rabbi-contact consult/); assert.match(inl, /data-lead="consult" data-channel="whatsapp" data-who="rebbetzin"/); assert.match(inl, /Hi%20Rebbetzin%20Labkowski/); assert.match(inl, /wa\.me\/19253847241\?text=Hi%20Rebbetzin/, "the Rebbetzin's own phone"); assert.match(inl, /href="mailto:info@chabadoflamorinda\.com\?subject=/);
   assert.match((await c.call('GET', '/help/someone-is-sick')).text, /rabbi-contact consult/);
   assert.match((await c.call('GET', '/learn/dreidel')).text, /class="consult-line rabbi-contact"/);
   const r3 = await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ lang: 'en', cid: 'conv8', messages: [{ role: 'user', content: 'My husband and I keep fighting about his parents' }] }) });
