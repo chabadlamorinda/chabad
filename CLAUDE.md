@@ -57,6 +57,7 @@ Add an object to `site/content/events.json`:
 Things only the Rabbi can do (Render settings, accounts, launch) are in `store/rabbi-todo.md`. When he says he is at a computer, take him through it one item at a time with every click explained from A to Z (use `store/website-setup.md` and `store/rabbi-setup.md` for the details), and check each step works before the next. Add new items there instead of only mentioning them in chat.
 
 ## After every change
+0. To see a change in the browser: `npm run dev` (http://localhost:3000, Rabbi area password `dev-password-123`, throwaway database, emails printed in the terminal).
 1. `npm test` (checks every content file; a bad date or a typo in a slug fails with a clear message).
 2. Commit with a plain-English message ("Add Chanukah celebration on Dec 6"), push.
 3. Tell the Rabbi in one or two sentences what changed and the page address.
