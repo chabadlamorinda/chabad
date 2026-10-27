@@ -31,6 +31,14 @@
     app.appendChild(el('p', {}, [el('a', { href: '/admin/', text: '← Rabbi’s desk' })]));
     app.appendChild(jump);
 
+    // ---- Setup: which settings are done (the same items as the to-do list Claude keeps) ----
+    var su = section('Setup checklist', 'What is already connected, and what is still waiting. Tell Claude "I\'m at a computer" to set up the rest step by step.', 'Setup');
+    api('GET', '/site/setup').then(function (x) {
+      if (x._status !== 200 || !x.items) return;
+      x.items.forEach(function (i) { su.appendChild(el('div', { class: 'row small' }, [el('strong', { text: i.done ? '✓' : '○', style: 'color:' + (i.done ? '#1f8f4e' : '#9b2c2c') + ';width:1.2em' }), i.label + (i.done ? '' : ' (to-do ' + i.todo + ')')])); });
+      su.count(x.items.filter(function (i) { return !i.done && !i.optional; }).length);
+    });
+
     // ---- Requests from the website (mezuzah, tefillin, giving, meetings) ----
     var sr = section('Requests from the website', 'People who tapped Call, Text, WhatsApp or Email, or asked the chat, about a mezuzah, tefillin, giving, meeting you or a private conversation. Each one is also emailed to you as it happens; the call or message itself goes straight to your phone.', 'Requests');
     api('GET', '/site/leads').then(function (x) {

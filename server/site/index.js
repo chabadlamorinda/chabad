@@ -148,6 +148,19 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     reload() { data = load(contentDir, { kabbalat: data.kabbalat }); refreshKabbalat(); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {
+      // Which settings are in place (yes/no only, never the values), matching store/rabbi-todo.md.
+      r2.get('/api/site/setup', ctx.authed, (req, res) => res.json({ items: [
+        { label: 'Database (sign-in, RSVPs, lists)', done: !!store, todo: 1 },
+        { label: 'Email sending', done: !!env.SMTP_URL, todo: 3 },
+        { label: 'Where requests are emailed', done: !!env.ADMIN_EMAIL, todo: 4 },
+        { label: 'AI answers in the chat (optional, costs a little)', done: !!env.ANTHROPIC_API_KEY, todo: 5, optional: true },
+        { label: 'Facebook page', done: !!(env.FB_PAGE_ID && env.FB_PAGE_TOKEN), todo: 6 },
+        { label: 'Instagram', done: !!env.IG_USER_ID, todo: 6, optional: true },
+        { label: 'Google Analytics', done: !!env.GA_ID, todo: 8, optional: true },
+        { label: 'Launch: chabadoflamorinda.com points here', done: /chabadoflamorinda\.com/.test(env.PUBLIC_URL || ''), todo: 10 },
+        { label: 'Google Search Console', done: !!env.GOOGLE_SITE_VERIFICATION, todo: 10 },
+        { label: 'Phone notifications for the app', done: !!(env.VAPID_PUBLIC_KEY || process.env.VAPID_PUBLIC_KEY), todo: 11, optional: true },
+      ] }));
       mountCommunityAdmin(r2, ctx, { cs: community.cs, content, store });
       mountSocialAdmin(r2, ctx, { store, content, fb, base, when: pages.when });
       board.mountAdmin(r2, ctx);
