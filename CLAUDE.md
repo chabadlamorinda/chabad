@@ -64,7 +64,7 @@ Things only the Rabbi can do (Render settings, accounts, launch) are in `store/r
 
 ## Facts and wording
 * Only publish facts the Rabbi gave or that already appear in the content. Never invent dates, prices, names or quotes; ask.
-* The Rabbi is **Rabbi Yisroel Labkowski**; the Rebbetzin is **Tzipora Labkowski**. Phone 925-384-7242.
+* The Rabbi is **Rabbi Yisroel Labkowski**; the Rebbetzin is **Tzipora Labkowski**. Phone 925-384-7242 (the Rebbetzin: 925-384-7241). Women in Lamorinda generally use the Chabad mikvah in Berkeley, arranged with the Rebbetzin.
 * Write warmly and simply. Every Jew is welcome; no membership is required.
 * Keep `faq.json` growing: questions people actually type into Google or ask an AI ("Where can I hear the shofar in Lafayette?"). Answers should name the place, day and time.
 
