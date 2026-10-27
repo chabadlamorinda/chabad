@@ -538,6 +538,13 @@ test('Do a mitzvah this week: pledge, community count, and the Rabbi for tefilli
   assert.match((await c.call('GET', '/')).text, /href="\/mitzvah"/);
 });
 
+test('holiday times can be added to a calendar, with reminders', async () => {
+  const c = client(), r = await c.call('GET', '/holidays/chanukah.ics');
+  assert.equal(r.status, 200); assert.match(r.text, /BEGIN:VCALENDAR/); assert.match(r.text, /SUMMARY:Chanukah night 1: light 1 candle/); assert.match(r.text, /TRIGGER:-PT15M/);
+  assert.match((await c.call('GET', '/holidays/chanukah')).text, /href="\/holidays\/chanukah\.ics"/);
+  assert.equal((await c.call('GET', '/holidays/nothing.ics')).status, 404);
+});
+
 test('chat without Claude: answers with matching pages', () => {
   const { searchAnswer } = require('./site/chat.js');
   const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));

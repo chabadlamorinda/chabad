@@ -93,6 +93,21 @@ function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
     if (!e) return next();
     res.type('text/calendar; charset=utf-8').set('Content-Disposition', `attachment; filename="${e.slug}.ics"`).send(calendar(c(), base, [e]));
   });
+  // Every time for the coming holiday (candle lighting, Chanukah nights, fasts, when it ends), with a reminder 15 minutes before.
+  r.get('/holidays/:slug.ics', async (req, res, next) => {
+    try {
+      const C = c(), h = C.holidays.find((x) => x.slug === req.params.slug);
+      const times = h && await require('./yearly.js').holidayTimes(h.slug);
+      if (!times || !times.rows.length) return next();
+      const { ZMAN } = require('./yearly.js'), utc = (d) => d.toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
+      const name = (e) => { const n = /^Chanukah: (\d)/.exec(e.desc), sh = ['chanukah', 'purim'].includes(h.slug); /* no Yom Tov candles: these are Shabbat's */ return n ? `Chanukah night ${n[1]}: light ${n[1]} candle${n[1] === '1' ? '' : 's'}` : e.cat === 'candles' ? (sh ? 'Shabbat candle lighting' : `${h.title}: candle lighting`) : e.cat === 'havdalah' ? (sh ? 'Shabbat ends' : `${h.title} ends`) : `${h.title}: ${ZMAN[e.desc] || e.desc}`; };
+      const ev = times.rows.flatMap((e, i) => ['BEGIN:VEVENT', `UID:${h.slug}-${times.year}-${i}@chabadoflamorinda`, `DTSTAMP:${utc(new Date())}`, `DTSTART:${utc(e.time)}`, `DTEND:${utc(new Date(e.time.getTime() + 15 * 60e3))}`,
+        `SUMMARY:${icsText(name(e))}`, `DESCRIPTION:${icsText('Times for Lafayette, CA from ' + C.org.name + '. ' + base + '/holidays/' + h.slug)}`, `URL:${base}/holidays/${h.slug}`,
+        'BEGIN:VALARM', 'ACTION:DISPLAY', `DESCRIPTION:${icsText(name(e))}`, 'TRIGGER:-PT15M', 'END:VALARM', 'END:VEVENT']);
+      res.type('text/calendar; charset=utf-8').set('Content-Disposition', `attachment; filename="${h.slug}-${times.year}.ics"`)
+        .send(['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Chabad of Lamorinda//Holiday times//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', `X-WR-CALNAME:${icsText(h.title + ' ' + times.year)}`, ...ev, 'END:VCALENDAR'].map(fold).join('\r\n') + '\r\n');
+    } catch (e) { next(e); }
+  });
   r.get('/feed.xml', (req, res) => {
     const C = c(), items = upcoming().slice(0, 30);
     res.type('application/rss+xml').set('Cache-Control', 'public, max-age=900').send(`<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${xml(C.org.name)} events</title><link>${base}/events</link><description>${xml(C.org.description)}</description>\n${items.map((e) => `<item><title>${xml(e.title)}</title><link>${base}/events/${e.slug}</link><guid>${base}/events/${e.slug}</guid><description>${xml(e.summary || plain(e.details || ''))}</description></item>`).join('\n')}\n</channel></rss>\n`);
