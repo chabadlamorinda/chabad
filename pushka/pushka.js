@@ -426,7 +426,7 @@ PG.home = () => {
     <div class="progress"><div class="pg-track"><div class="pg-fill" id="progFill" style="width:${(U.fillFor === p.id ? U.pctShown : 0)}%"></div></div><div class="pg-t">${progTxt}</div></div>
     <div><div class="tap">${t("Tap to drop a coin")}</div><div class="quick">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="drop" data-v="${a}">${money(a)}</button>`).join("")}<button class="btn btn-secondary" data-act="other">${t("Other")}</button></div></div>
     <button class="btn btn-primary cta" data-act="openEmpty" ${p.balance <= 0 ? "disabled" : ""}>${t("Empty pushka to Chabad")}</button>
-    <div class="row2"><button class="btn btn-ghost" data-act="why">${t("Drop with an intention")}</button><button class="btn btn-ghost" data-act="donateNow">${t("Donate now")}</button><button class="btn btn-ghost" data-act="go" data-v="settings">${ico(I.gear, 16)} ${t("Pushka settings")}</button></div>
+    <div class="row2"><button class="btn btn-ghost" data-act="why">${t("In honor or memory")}</button><button class="btn btn-ghost" data-act="donateNow">${t("Donate now")}</button><button class="btn btn-ghost" data-act="go" data-v="settings">${ico(I.gear, 16)} ${t("Pushka settings")}</button></div>
     ${todayCard()}${occasionCard()}
     ${reminder}
   </div></div>`;
@@ -489,7 +489,7 @@ PG.wallet = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(s
   <p class="note">${t("Wallet features are coming soon.")}</p>
 </div></div>`;
 
-function histTitle(h) { if (h.title) return h.title; if (h.kind === "coin") return h.why ? tt("Coin for {why}", { why: tt(h.why) }) : tt(h.ttl === "maaser" ? "Maaser added" : h.ttl === "auto" ? "Daily auto-coin" : "Coin dropped"); return (h.fp ? tt("Pushka emptied →") + " " : "") + tt(fundOf(h.fund).name); }
+function histTitle(h) { if (h.title) return h.title; if (h.kind === "coin") return h.why ? (typeof h.why === "object" ? tt(h.why.k === "memory" ? "Coin in memory of {name}" : "Coin in honor of {name}", { name: h.why.name }) : tt("Coin for {why}", { why: tt(h.why) })) : tt(h.ttl === "maaser" ? "Maaser added" : h.ttl === "auto" ? "Daily auto-coin" : "Coin dropped"); return (h.fp ? tt("Pushka emptied →") + " " : "") + tt(fundOf(h.fund).name); }
 function histMeta(h) {
   if (h.kind === "gift" && h.fund) { const a = []; if (h.freq === "monthly") a.push(tt("Monthly")); else if (!h.fp) a.push(tt("One time")); if (h.method && h.method !== "online") a.push(tt(METHOD[h.method]) + " (" + tt("pending") + ")"); if (h.fee) a.push(tt("incl. processing fee")); if (h.ded) a.push(h.ded); return a.join(" · "); }
   return h.meta || "";
@@ -1073,10 +1073,14 @@ function weekStrip() {
   for (let i = 6; i >= 0; i--) { const d = new Date(now); d.setDate(d.getDate() - i); out.push(`<span class="wd ${days.has(dkey(d)) ? "on" : ""} ${i === 0 ? "today" : ""}" aria-label="${esc(greg(d))}${days.has(dkey(d)) ? " ✓" : ""}"><i>${esc(new Intl.DateTimeFormat(loc(), { weekday: "narrow" }).format(d))}</i><b></b></span>`); }
   return `<div class="week" role="img" aria-label="${esc(tt("Your last 7 days"))}">${out.join("")}</div>`;
 }
-const WHYS = ["Health", "Family", "Parnassah", "Safe travels", "Good news", "Thank you, Hashem", "In someone’s merit", "A refuah sheleimah"];
-A.why = () => { U.why = ""; sheet(`<div><h3>${t("What is this coin for?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Giving with an intention is a beautiful way to start.")}</div></div><div class="chips wrapchips" id="whyChips">${WHYS.map((w) => `<button class="chip" data-act="whyPick" data-v="${esc(w)}">${t(w)}</button>`).join("")}</div><div class="amts three">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="whyDrop" data-v="${a}">${money(a)}</button>`).join("")}</div><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`); };
-A.whyPick = (v) => { U.why = U.why === v ? "" : v; $$("#whyChips .chip").forEach((c) => c.classList.toggle("on", c.dataset.v === U.why)); };
-A.whyDrop = (v) => { if (!U.why) return toast(tt("Choose what the coin is for")); closeSheet(); drop(parseFloat(v), "coin", U.why); };
+U.hm = { k: "honor", name: "" };
+A.why = () => { U.hm = { k: "honor", name: "" }; sheet(`<div><h3>${t("Give tzedakah in honor or memory")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Dedicate this coin to someone special.")}</div></div>
+  <div class="seg"><label><input type="radio" name="hmk" value="honor" data-chg="hmKind" checked>${t("In honor of")}</label><label><input type="radio" name="hmk" value="memory" data-chg="hmKind">${t("In memory of")}</label></div>
+  <div class="field"><label for="hmN">${t("Name")}</label><input class="input" id="hmN" maxlength="60" data-inp="hmName" placeholder="${esc(tt("e.g. Rachel bat Sarah"))}"></div>
+  <div class="amts three">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="whyDrop" data-v="${a}">${money(a)}</button>`).join("")}</div><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`, () => setTimeout(() => $("#hmN") && $("#hmN").focus(), 80)); };
+A.hmKind = (v) => { U.hm.k = v === "memory" ? "memory" : "honor"; };
+A.hmName = (v) => { U.hm.name = v.slice(0, 60); };
+A.whyDrop = (v) => { const name = (U.hm.name || "").trim(); if (!name) { toast(tt("Please enter a name.")); return $("#hmN") && $("#hmN").focus(); } closeSheet(); drop(parseFloat(v), "coin", { k: U.hm.k, name }); };
 
 function todayCard() {
   const q = QUOTES(), i = Math.floor(Date.now() / 864e5) % q.length, x = q[i]; if (!x) return "";

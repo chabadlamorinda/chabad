@@ -39,5 +39,32 @@
     }
     return null;
   }
-  return { MONTHS, MONTHS_HE, ymd, toDate, addDays, daysBetween, isLeap, parts, hebrewOf, label, next };
+  // ---- recurring-day types shared by the app and the reminder server ----
+  const dow = (s) => toDate(s).getUTCDay();
+  // Fast days: when the date falls on Shabbat the fast moves (Esther earlier to Thursday, the others to Sunday).
+  function isFast(s) {
+    const p = parts(s), d = dow(s), leap = isLeap(p.year);
+    const onDay = (n, shift) => { const base = addDays(s, n - p.day); return dow(base) === 6 ? p.day === n + shift : p.day === n; };
+    if (p.month === "Tishri") return onDay(3, 1);
+    if (p.month === "Tevet") return p.day === 10;
+    if (p.month === (leap ? "Adar II" : "Adar")) return dow(addDays(s, 13 - p.day)) === 6 ? p.day === 11 : p.day === 13;
+    if (p.month === "Tamuz") return onDay(17, 1);
+    if (p.month === "Av") return onDay(9, 1);
+    return false;
+  }
+  // Does a reminder of this kind fire on civil date s?  "pre*" kinds fire the evening before the day.
+  function dayType(kind, s) {
+    const d = dow(s), p = parts(s);
+    switch (kind) {
+      case "daily": return true;
+      case "weekdays": return d >= 1 && d <= 5;
+      case "friday": return d === 5;
+      case "roshchodesh": return p.day === 1 || p.day === 30;
+      case "chai": return p.day === 18;
+      case "erevrc": { const t = parts(addDays(s, 1)); return t.day === 1 || t.day === 30; }
+      case "prefast": return isFast(addDays(s, 1));
+      default: return false;
+    }
+  }
+  return { MONTHS, MONTHS_HE, ymd, toDate, addDays, daysBetween, isLeap, parts, hebrewOf, label, next, isFast, dayType };
 });

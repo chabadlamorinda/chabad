@@ -29,3 +29,5 @@
 @keyframes cbIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.cb-plaque{animation:none}}
 @media (max-width:480px){.cb-paper{padding:24px 14px 20px}.cb-title{font-size:26px}.cb-names{grid-template-columns:1fr}}
+
+.cb-anon span{font-style:italic;font-weight:400;color:#605d5d}

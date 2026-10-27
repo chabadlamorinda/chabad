@@ -9,8 +9,8 @@
     { id: 'bronze', c: ['#f3c9a0', '#c98a55', '#8a5427', '#ecb98a'], range: { en: '$72 – $179 a month', he: '72$–179$ בחודש' }, en: 'Bronze', he: 'ארד' }
   ];
   var T = {
-    en: { title: 'Chai Club', sub: 'Monthly donors who sustain Chabad of Lamorinda, day in and day out.', empty: 'Be the first to join', quiet: function (n) { return n === 1 ? 'and 1 friend who prefers to give quietly' : 'and ' + n + ' friends who prefer to give quietly'; }, foot: 'Every monthly gift, large or small, keeps our community going. Thank you.', join: 'Join the Chai Club', members: function (n) { return n === 1 ? '1 member' : n + ' members'; } },
-    he: { title: 'מועדון חי', sub: 'תורמים חודשיים התומכים בבית חב״ד לאמורינדה יום אחר יום.', empty: 'היו הראשונים להצטרף', quiet: function (n) { return n === 1 ? 'וחבר אחד שמעדיף לתת בהסתר' : 'ו-' + n + ' חברים שמעדיפים לתת בהסתר'; }, foot: 'כל תרומה חודשית, גדולה או קטנה, מקיימת את הקהילה שלנו. תודה.', join: 'הצטרפו למועדון חי', members: function (n) { return n === 1 ? 'חבר אחד' : n + ' חברים'; } }
+    en: { title: 'Chai Club', sub: 'Monthly donors who sustain Chabad of Lamorinda, day in and day out.', empty: 'Be the first to join', anon: 'Anonymous', more: function (n) { return '+ ' + n + ' more'; }, foot: 'Every monthly gift, large or small, keeps our community going. Thank you.', join: 'Join the Chai Club', members: function (n) { return n === 1 ? '1 member' : n + ' members'; } },
+    he: { title: 'מועדון חי', sub: 'תורמים חודשיים התומכים בבית חב״ד לאמורינדה יום אחר יום.', empty: 'היו הראשונים להצטרף', anon: 'אנונימי', more: function (n) { return '+ עוד ' + n; }, foot: 'כל תרומה חודשית, גדולה או קטנה, מקיימת את הקהילה שלנו. תודה.', join: 'הצטרפו למועדון חי', members: function (n) { return n === 1 ? 'חבר אחד' : n + ' חברים'; } }
   };
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
   function svg(tag, attrs) { var n = document.createElementNS(NS, tag); for (var k in attrs) n.setAttribute(k, attrs[k]); return n; }
@@ -51,13 +51,17 @@
       tier.appendChild(th);
       if (names.length) { any = true; var grid = el('div', 'cb-names'); names.forEach(function (m, i) { var p = el('div', 'cb-plaque'); p.style.animationDelay = Math.min(i, 12) * 40 + 'ms'; p.appendChild(medal(L.id, 18)); p.appendChild(el('span', '', m.name)); grid.appendChild(p); }); tier.appendChild(grid); }
       var quiet = count - names.length;
-      if (quiet > 0) { any = true; tier.appendChild(el('div', 'cb-quiet', X.quiet(quiet))); }
+      if (quiet > 0) { // donors who joined anonymously still get a plaque and a medal
+        any = true; var ag = el('div', 'cb-names'), shown = Math.min(quiet, 18);
+        for (var q = 0; q < shown; q++) { var ap = el('div', 'cb-plaque cb-anon'); ap.appendChild(medal(L.id, 18)); ap.appendChild(el('span', '', X.anon)); ag.appendChild(ap); }
+        tier.appendChild(ag); if (quiet > shown) tier.appendChild(el('div', 'cb-quiet', X.more(quiet - shown)));
+      }
       if (!count) tier.appendChild(el('div', 'cb-empty', X.empty));
       paper.appendChild(tier);
     });
     var foot = el('div', 'cb-foot'); foot.appendChild(el('div', '', X.foot));
     if (o.joinHref) { var a = el('a', 'cb-cta', X.join); a.href = o.joinHref; a.target = '_top'; foot.appendChild(a); }
-    else if (o.onJoin) { var b = el('button', 'cb-cta', X.join); b.type = 'button'; b.setAttribute('data-act', 'clubJoin'); foot.appendChild(b); }
+    else if (o.onJoin) { var b = el('button', 'cb-cta', X.join); b.type = 'button'; b.setAttribute('data-act', 'clubJoinPage'); foot.appendChild(b); }
     paper.appendChild(foot);
     return box;
   }

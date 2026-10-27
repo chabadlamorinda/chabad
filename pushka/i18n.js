@@ -589,4 +589,12 @@ const HE = {
   "Join the Chai Club.": "הצטרפו למועדון חי.",
   "Remembering": "זוכרים",
   "Add a yahrzeit.": "הוסיפו יארצייט.",
+  "In honor or memory": "לכבוד או לעילוי נשמת",
+  "Give tzedakah in honor or memory": "תנו צדקה לכבוד או לעילוי נשמת",
+  "Dedicate this coin to someone special.": "הקדישו את המטבע הזה למישהו מיוחד.",
+  "In honor of": "לכבוד",
+  "Coin in memory of {name}": "מטבע לעילוי נשמת {name}",
+  "Coin in honor of {name}": "מטבע לכבוד {name}",
+  "e.g. Rachel bat Sarah": "לדוגמה: רחל בת שרה",
+  "In memory of": "לעילוי נשמת",
 };
