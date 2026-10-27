@@ -53,6 +53,9 @@ Add an object to `site/content/events.json`:
 * Images: save flyers/photos into `site/media/` (JPG/PNG/PDF, keep images under ~400 KB; resize first).
 * Past events drop off the site automatically; leave them in the file.
 
+## The Rabbi's to-do list
+Things only the Rabbi can do (Render settings, accounts, launch) are in `store/rabbi-todo.md`. When he says he is at a computer, take him through it one item at a time with every click explained from A to Z (use `store/website-setup.md` and `store/rabbi-setup.md` for the details), and check each step works before the next. Add new items there instead of only mentioning them in chat.
+
 ## After every change
 1. `npm test` (checks every content file; a bad date or a typo in a slug fails with a clear message).
 2. Commit with a plain-English message ("Add Chanukah celebration on Dec 6"), push.
