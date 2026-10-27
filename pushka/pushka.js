@@ -61,11 +61,12 @@ const def = () => ({
   sound: true, jingle: true, confetti: true, vibrate: true, partial: false, addl: false, bio: "",
   wallet: { id: walletId(), balance: 0 },
   history: [], pracSubs: [],
-  rem: { candle: { on: true, mins: 15 }, streak: { on: false }, custom: [] }, remV: 2, auto: { on: false, amt: 1.8, last: "" }, yzLeads: [30, 7, 1], club: { name: "", show: true },
+  rem: { candle: { on: true, mins: 15 }, streak: { on: false }, weekly: { on: false }, custom: [] }, remV: 2, family: [], kids: { on: false, pin: "", coins: 0 }, dates: [], snd: "classic", seasonal: true, ms: {}, auto: { on: false, amt: 1.8, last: "" }, yzLeads: [30, 7, 1], club: { name: "", show: true },
   nudge: { at: 0, n: 0, first: Date.now() },
   yz: [], yzShare: false, yzRemind: false, pushOn: false, mtoken: "", msig: "",
   candles: [], notified: {}, maaser: 10, lastEmptied: Date.now(), prompted: "",
 });
+const SND_OK = ["classic", "chime", "soft"];
 function load() {
   let o = null;
   try { o = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
@@ -80,6 +81,8 @@ function load() {
   s.remV = 2; if (!Array.isArray(s.yzLeads) || !s.yzLeads.length) s.yzLeads = [30, 7, 1];
   s.club = Object.assign({ name: "", show: true }, s.club || {});
   s.auto = Object.assign({ on: false, amt: 1.8, last: "" }, s.auto || {});
+  s.rem.weekly = Object.assign({ on: false }, s.rem.weekly || {}); s.kids = Object.assign({ on: false, pin: "", coins: 0 }, s.kids || {});
+  if (!Array.isArray(s.family)) s.family = []; if (!Array.isArray(s.dates)) s.dates = []; if (!s.ms || typeof s.ms !== "object") s.ms = {}; if (s.seasonal === undefined) s.seasonal = true; if (!SND_OK.includes(s.snd)) s.snd = "classic";
   return s;
 }
 let S = load();
@@ -182,8 +185,8 @@ function clink(n = 1, gap = 0.07, delay = 0.42) { // metallic clink per design s
   try {
     ac = ac || new (window.AudioContext || window.webkitAudioContext)(); if (ac.state === "suspended") ac.resume();
     for (let i = 0; i < n; i++) {
-      const t0 = ac.currentTime + delay + i * gap, base = 2100 + Math.random() * 900;
-      [[1, 0.22, 0.5], [1.51, 0.12, 0.35], [2.76, 0.07, 0.2]].forEach(([m, g, d]) => {
+      const pk = SND[S.snd] || SND.classic, t0 = ac.currentTime + delay + i * gap, base = pk[0] + Math.random() * pk[1];
+      pk[2].forEach(([m, g, d]) => {
         const o = ac.createOscillator(), v = ac.createGain();
         o.type = "sine"; o.frequency.value = base * m;
         v.gain.setValueAtTime(0, t0); v.gain.linearRampToValueAtTime(g, t0 + 0.003); v.gain.exponentialRampToValueAtTime(0.0001, t0 + d);
@@ -347,8 +350,9 @@ function tick() {
     const candleDay = (S.candles || []).some((c) => dkey(new Date(c)) === dkey(d)), early = d.getDay() === 5 || candleDay, ts = early ? at(13, 0) : at(20, 0), k = "s" + dkey(d);
     if ((early || isWk(d)) && d.getDay() !== 6 && within(ts) && !S.notified[k]) { mark(k); notify(tt("Keep your streak alive — drop a coin in your pushka.")); }
   }
-  S.rem.custom.filter((r) => r.on).forEach((r) => {
-    const [h, m] = r.time.split(":").map(Number), k = r.id + dkey(d), okDay = r.days === "daily" || (r.days === "weekdays" && isWk(d)) || (r.days === "friday" && d.getDay() === 5) || (r.days === "roshchodesh" && [1, 30].includes(hebDay(d))) || (r.days === "chai" && hebDay(d) === 18);
+  dateTick(at, within);
+  if (!S.pushOn) S.rem.custom.filter((r) => r.on).forEach((r) => {
+    const [h, m] = r.time.split(":").map(Number), k = r.id + dkey(d), okDay = r.days === "once" ? r.date === ymdLocal(d) : HD.dayType(r.days, ymdLocal(d));
     if (okDay && within(at(h, m)) && !S.notified[k]) { mark(k); notify(r.text || tt("Time to give tzedakah!")); }
   });
 }
@@ -406,6 +410,7 @@ function animateFill() {
 const hex = (n) => `<svg width="44" height="50" viewBox="0 0 46 52" fill="none" aria-hidden="true"><path d="M23 2l19 11v26L23 50 4 39V13z" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/><text x="23" y="33" text-anchor="middle" fill="var(--a800)" style="font:600 20px 'Cormorant Garamond',Georgia,serif">${n}</text></svg>`;
 
 PG.home = () => {
+  if (S.kids.on) return PG.kidsHome();
   const p = P(), now = new Date(), c = nextCandle(), st = streak(), frac = Math.min(p.balance / S.goal, 1), shown = U.fillFor === p.id ? U.fillShown : 0, top = 82, bot = 206, lvl = bot - fracOf(p) * (bot - top), pct = Math.round(frac * 100), rest = Math.max(r2(S.goal - p.balance), 0);
   const progTxt = frac >= 1 ? t("Your pushka is full — empty it to give!") : pct >= 90 ? t("Almost full! {amt} to go", { amt: money2(rest) }) : t("{amt} of {goal} · {n}% full", { amt: money2(p.balance), goal: money(S.goal), n: pct });
   let reminder = "";
@@ -420,14 +425,14 @@ PG.home = () => {
   const msg = p.balance > 0 ? `<div class="h-t" style="font-size:20px">${t("Your pushka has {amt}", { amt: money2(p.balance) })}</div><div class="h-s">${p.drops === 1 ? t("1 coin since {date}", { date: esc(since) }) : t("{n} coins since {date}", { n: p.drops, date: esc(since) })}</div>` : `<div class="h-t" style="font-size:20px">${t("Your pushka is empty")}</div><div class="h-s">${t("Add some coins now")}</div>`;
   return `<div class="head home-head"><div class="hd-top"><div class="kicker">${t("Chabad of Lamorinda")}</div><div class="hd-tools"><button class="lang-btn" data-act="toggleLang" lang="${LANG === "he" ? "en" : "he"}">${LANG === "he" ? "English" : "עברית"}</button><button class="icon-btn sm" data-act="share" aria-label="${t("Share")}">${ico(I.share, 20)}</button></div></div><div class="hd-main"><h1>${esc(pTitle(p))}</h1><div class="dates"><div>${esc(greg(now))}</div><i>${esc(hebFull(now))}</i></div></div></div>
   <div class="scroll"><div class="col">${chips}
-    <div class="streak">${hex(st)}<span>${t("Weekday streak")}</span></div>${weekStrip()}
+    ${seasonOrn(season())}<div class="streak">${hex(st)}<span>${t("Weekday streak")}</span>${st >= 3 ? `<button class="link" data-act="shareStreak">${t("Share")}</button>` : ""}</div>${weekStrip()}
     <div class="msg">${msg}</div>
     <div class="tin"><div class="anchor" id="coinAnchor"></div><div class="zoom"><div class="wrap ${pct >= 90 ? "glow" : ""}" data-act="dropPrimary" role="button" tabindex="0" aria-label="${esc(tt("Drop {amt} in the pushka", { amt: money(S.presets[0]) }))}">${tin(shown)}<div class="bal">${money2(p.balance)}</div></div></div></div>
     <div class="progress"><div class="pg-track"><div class="pg-fill" id="progFill" style="width:${(U.fillFor === p.id ? U.pctShown : 0)}%"></div></div><div class="pg-t">${progTxt}</div></div>
-    <div><div class="tap">${t("Tap to drop a coin")}</div><div class="quick">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="drop" data-v="${a}">${money(a)}</button>`).join("")}<button class="btn btn-secondary" data-act="other">${t("Other")}</button></div></div>
+    ${familyChips()}<div><div class="tap">${t("Tap to drop a coin")}</div><div class="quick">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="drop" data-v="${a}">${money(a)}</button>`).join("")}<button class="btn btn-secondary" data-act="other">${t("Other")}</button></div></div>
     <button class="btn btn-primary cta" data-act="openEmpty" ${p.balance <= 0 ? "disabled" : ""}>${t("Empty pushka to Chabad")}</button>
     <div class="row2"><button class="btn btn-ghost" data-act="why">${t("In honor or memory")}</button><button class="btn btn-ghost" data-act="donateNow">${t("Donate now")}</button><button class="btn btn-ghost" data-act="go" data-v="settings">${ico(I.gear, 16)} ${t("Pushka settings")}</button></div>
-    ${todayCard()}${occasionCard()}
+    ${annCards()}${boardCard()}${commCard()}${todayCard()}${occasionCard()}
     ${reminder}
   </div></div>`;
 };
@@ -491,6 +496,7 @@ PG.wallet = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(s
 
 function histTitle(h) { if (h.title) return h.title; if (h.kind === "coin") return h.why ? (typeof h.why === "object" ? tt(h.why.k === "memory" ? "Coin in memory of {name}" : "Coin in honor of {name}", { name: h.why.name }) : tt("Coin for {why}", { why: tt(h.why) })) : tt(h.ttl === "maaser" ? "Maaser added" : h.ttl === "auto" ? "Daily auto-coin" : "Coin dropped"); return (h.fp ? tt("Pushka emptied →") + " " : "") + tt(fundOf(h.fund).name); }
 function histMeta(h) {
+  if (h.kind === "coin") return h.by ? tt("by {name}", { name: h.by }) : "";
   if (h.kind === "gift" && h.fund) { const a = []; if (h.freq === "monthly") a.push(tt("Monthly")); else if (!h.fp) a.push(tt("One time")); if (h.method && h.method !== "online") a.push(tt(METHOD[h.method]) + " (" + tt("pending") + ")"); if (h.fee) a.push(tt("incl. processing fee")); if (h.ded) a.push(h.ded); return a.join(" · "); }
   return h.meta || "";
 }
@@ -500,12 +506,12 @@ PG.history = () => {
   const rows = S.history.length ? S.history.map((h) => `<div class="row-btn" style="cursor:default"><div class="grow"><div class="h-t">${esc(histTitle(h))}</div><div class="h-s">${esc(when(h.t))}${histMeta(h) ? " · " + esc(histMeta(h)) : ""}${h.kind === "coin" && S.pushkas.length > 1 && pn(h.pid) ? " · " + esc(pn(h.pid)) : ""}</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><div class="h-a">${money2(h.amt)}</div>${h.receiptUrl ? `<a class="tag-accent" href="${esc(h.receiptUrl)}" target="_blank" rel="noopener">${t("Receipt")}</a>` : h.receipt ? `<span class="tag-accent">${t("Receipt")}</span>` : ""}</div></div>`).join("") : `<div class="rowp">${t("Nothing yet. Drop your first coin on the Pushka tab.")}</div>`;
   return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col tight" style="padding-top:0">
     <div class="page-h" style="display:flex;justify-content:space-between;align-items:flex-end"><h1>${t("History")}</h1><div class="year"><div class="k">${t("Given in {year}", { year: esc(hebYearLabel(new Date())) })}</div><div class="v">${money2(total)}</div></div></div>
-    <div>${rows}</div><p class="note">${t("Coins in your pushka are given when you empty it.")} ${API.enabled ? t("A receipt is emailed for every gift.") : t("Your receipt comes from our donation page after each gift.")}</p></div></div>`;
+    <div>${rows}</div><button class="btn btn-secondary cta" data-act="go" data-v="statement">${t("Giving statement")}</button><p class="note">${t("Coins in your pushka are given when you empty it.")} ${API.enabled ? t("A receipt is emailed for every gift.") : t("Your receipt comes from our donation page after each gift.")}</p></div></div>`;
 };
 
 PG.more = () => `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("More")}</h1></div><div>
   ${rowLink("go", "maaser", I.calc, tt("Maaser Calculator"), tt("Calculate your tenth"))}${rowLink("go", "reminders", I.bell, tt("Reminders"), tt("Candle lighting and daily coin"))}${rowLink("go", "yahrzeit", I.flame, tt("Yahrzeits"), tt("Remember loved ones and give in their memory"))}
-  ${rowLink("go", "awards", I.flame, tt("Achievements"), tt("Badges, streaks and your giving"))}${rowLink("go", "cards", I.card, tt("Payment method"), tt("Change or remove your card"))}${rowLink("go", "settings", I.gear, tt("Settings"), tt("Goal, amounts, sounds, pushkas, language"))}${rowLink("go", "profile", I.profile, tt("Profile"), S.name || tt("Name, email, address"))}${rowLink("go", "support", I.help, tt("Support"), tt("We’re happy to help"))}</div>
+  ${rowLink("go", "board", I.home, tt("Chai Club honor board"), tt("Our monthly donors"))}${rowLink("go", "occasions", I.flame, tt("Birthdays and anniversaries"), tt("Give in honor of people you love"))}${rowLink("go", "awards", I.flame, tt("Achievements"), tt("Badges, streaks and your giving"))}${rowLink("go", "cards", I.card, tt("Payment method"), tt("Change or remove your card"))}${rowLink("go", "settings", I.gear, tt("Settings"), tt("Goal, amounts, sounds, pushkas, language"))}${rowLink("go", "profile", I.profile, tt("Profile"), S.name || tt("Name, email, address"))}${rowLink("go", "support", I.help, tt("Support"), tt("We’re happy to help"))}</div>
   <a class="btn btn-ghost" href="${SITE}" target="_blank" rel="noopener" style="align-self:flex-start;padding-inline-start:0">${ico(I.back, 16, FLIP)} ${t("Back to chabadoflamorinda.com")}</a></div></div>`;
 
 // ----- segulos -----
@@ -552,13 +558,16 @@ PG.maaser = () => sub(tt("Maaser Calculator"), `<div class="field"><label for="m
   <p class="note">${t("Maaser (a tenth of income) is a traditional guideline; some give up to a fifth. Ask the Rabbi how it applies to your situation.")}</p>`);
 
 // ----- reminders -----
-const DAYS = { weekdays: "Weekdays", daily: "Every day", friday: "Fridays", roshchodesh: "Rosh Chodesh", chai: "18th of the Hebrew month" };
+const DAYS = { weekdays: "Weekdays", daily: "Every day", friday: "Fridays", roshchodesh: "Rosh Chodesh", chai: "18th of the Hebrew month", erevrc: "Erev Rosh Chodesh", prefast: "Evening before a fast day", once: "Once" };
 const SUGG = [
   ["morning", "Good morning coin", "Start your day with a coin for tzedakah.", "daily", "08:00"],
   ["tehillim", "Today’s Tehillim", "Today’s Tehillim is waiting for you. Open the app to read it.", "daily", "07:00"],
   ["grateful", "Evening gratitude", "What are you grateful for today? Drop a coin to say thank you.", "daily", "21:00"],
   ["kids", "Friday coin with the kids", "Let the kids drop the coin in the pushka before Shabbat.", "friday", "10:00"],
   ["rc", "Rosh Chodesh", "Today is Rosh Chodesh, a good day to give.", "roshchodesh", "09:00"],
+  ["morning2", "Morning blessing coin", "A coin with your morning blessings sets the tone for the day.", "daily", "07:30"],
+  ["erc", "Erev Rosh Chodesh", "Tomorrow is Rosh Chodesh. A good moment for a coin.", "erevrc", "18:00"],
+  ["fast", "Before a fast day", "Tomorrow is a fast day. Give tzedakah today.", "prefast", "18:00"],
   ["chai", "Chai day", "Chai! The 18th of the Hebrew month. Give $18 for life.", "chai", "09:00"],
 ];
 PG.reminders = () => {
@@ -568,8 +577,10 @@ PG.reminders = () => {
     ${tg("remToggle", "streak", t("Streak Reminder"), `${t("Weekdays · 8:00 pm")}<br>${t("Every Friday & before holidays · 1:00 pm")}`, st.on)}
     ${S.rem.custom.map((r) => `<div class="row-btn"><div class="grow"><div class="h-t">${esc(r.text || tt("Give tzedakah"))}</div><div class="h-s">${t(DAYS[r.days])} · ${esc(clock(new Date("2000-01-01T" + r.time)))}</div></div><button class="icon-btn sm" data-act="remDel" data-v="${r.id}" aria-label="${t("Delete reminder")}">${ico(I.trash, 18)}</button><button role="switch" aria-checked="${r.on}" aria-label="${t("Reminder on")}" data-act="remToggle" data-v="${r.id}" style="all:unset;cursor:pointer"><div class="sw ${r.on ? "on" : ""}"></div></button></div>`).join("")}</div>
     <button class="btn btn-secondary cta" data-act="addRem">${ico(I.plus, 16)} ${t("Add reminder")}</button>
+    <button class="btn btn-secondary cta" data-act="travel">${t("Traveling soon?")}</button>
+    ${rowLink("go", "occasions", I.flame, tt("Birthdays and anniversaries"), tt("Give in honor of people you love"))}
     ${sec(t("Suggested reminders"))}<div>${SUGG.filter((x) => !S.rem.custom.some((r) => r.sid === x[0])).map((x) => `<div class="row-btn"><div class="grow"><div class="h-t">${t(x[1])}</div><div class="h-s">${t(x[2])}</div><div class="h-s">${t(DAYS[x[3]])} · ${esc(clock(new Date("2000-01-01T" + x[4])))}</div></div><button class="btn btn-secondary" data-act="remSuggest" data-v="${x[0]}">${t("Add")}</button></div>`).join("") || `<div class="rowp">${t("You’ve added all the suggestions. Thank you!")}</div>`}</div>
-    ${pushCard()}
+    ${pushCard()}${pushOk() && S.pushOn ? `<div>${tg("weeklyTgl", "", t("Sunday summary"), t("A short note each Sunday about your week of giving."), S.rem.weekly.on)}</div>` : ""}
     <p class="note">${t("Reminders arrive while the app is open or installed on your home screen. Candle times are for Lafayette, CA.")}</p>`);
 };
 
@@ -580,6 +591,10 @@ PG.settings = () => sub(tt("Settings"), `${sec(t("Payment"))}<div>${rowLink("go"
   <div class="field"><label for="emp">${t("Empty pushka")}</label><select class="input" id="emp" data-chg="setEmpty">${Object.entries(EMPTY_MODES).map(([k, v]) => `<option value="${k}" ${S.emptyMode === k ? "selected" : ""}>${t(v)}</option>`).join("")}</select></div>
   <div class="field"><label for="lng">${t("Language")}</label><select class="input" id="lng" data-chg="setLang"><option value="en" ${LANG === "en" ? "selected" : ""}>English</option><option value="he" ${LANG === "he" ? "selected" : ""}>עברית</option></select></div>
   <div>${tg("tgl", "sound", t("Sound"), t("Coin clink when you drop a coin"), S.sound)}${tg("tgl", "jingle", t("Coin jingle"), t("A shower of coins when you empty the pushka"), S.jingle)}${tg("tgl", "confetti", t("Confetti sound"), t("A celebration when your goal is reached"), S.confetti)}${tg("tgl", "vibrate", t("Vibration"), "", S.vibrate)}${tg("tgl", "partial", t("Partial payments"), t("Give part of your pushka and keep the rest"), S.partial)}${tg("tgl", "addl", t("Additional payment options"), t("Including check, wire, DAF"), S.addl)}${tg("bio", "", t("Biometric lock"), t("Unlock the app with your fingerprint, face or screen lock"), !!S.bio)}</div>
+  ${sec(t("Sound"))}<div class="field"><label for="snd">${t("Coin sound")}</label><select class="input" id="snd" data-chg="setSnd">${[["classic", "Classic clink"], ["chime", "Soft chime"], ["soft", "Gentle tap"]].map(([k, l]) => `<option value="${k}" ${S.snd === k ? "selected" : ""}>${t(l)}</option>`).join("")}</select></div>
+  <div>${tg("tgl", "seasonal", t("Holiday decorations"), t("The home screen glows with the season, like the Chanukah menorah."), S.seasonal)}</div>
+  ${sec(t("Family"))}<div>${S.family.map((n) => `<div class="row-btn" style="cursor:default"><div class="grow h-t">${esc(n)}</div><button class="icon-btn sm" data-act="famDel" data-v="${esc(n)}" aria-label="${t("Delete")}">${ico(I.trash, 18)}</button></div>`).join("")}</div><button class="btn btn-secondary cta" data-act="famAdd">${ico(I.plus, 16)} ${t("Add a family member")}</button><div class="h-s">${t("Tap a name on the home screen to say whose coin it is.")}</div>
+  ${sec(t("Kids mode"))}<div>${rowLink("kidsOn", "", I.lock, tt("Kids mode"), tt("Big coins and stickers, protected by a grown-up code"))}</div>
   ${sec(t("Daily auto-coin"))}<div>${tg("autoTgl", "", t("Add a coin every day"), t("A small daily habit: the pushka fills by itself, and you decide when to empty it."), S.auto.on)}</div>${S.auto.on ? `<div class="field"><label for="autoA">${t("Amount per day")}</label><div class="amt"><span>$</span><input class="input" id="autoA" type="number" min="0.01" step="0.01" inputmode="decimal" data-chg="autoAmt" value="${S.auto.amt.toFixed(2)}"></div></div>` : ""}
   ${sec(t("My pushkas"))}<div>${S.pushkas.map((p) => `<button class="row-btn" data-act="editPushka" data-v="${p.id}"><span style="color:var(--accent);flex:none">${ico(I.home, 22)}</span><div class="grow"><div class="fund-n">${esc(pTitle(p))}</div><div class="fund-d">${money2(p.balance)}${p.id === S.cur ? " · " + t("current") : ""}</div></div><span style="color:var(--accent)">${ico(I.pencil, 16)}</span></button>`).join("")}</div>
   <button class="btn btn-secondary cta" data-act="addPushka">${ico(I.plus, 16)} ${t("Add pushka")}</button>
@@ -623,12 +638,12 @@ function captureFill() { // a re-draw must continue from where the fill visually
 }
 function draw() {
   captureFill();
-  const pg = PG[U.page] ? U.page : "home", prev = $(".scroll"), y = prev && U.drawn === pg ? prev.scrollTop : 0;
-  $("#app").innerHTML = practiceBar() + PG[pg]() + `<nav class="tabbar" aria-label="${t("Main")}">${TABS.map(([id, l, ic]) => `<button class="tab ${tabOf(pg) === id ? "on" : ""}" data-act="tab" data-v="${id}" ${tabOf(pg) === id ? 'aria-current="page"' : ""}>${ico(ic)}<span>${t(l)}</span></button>`).join("")}</nav>`;
-  $("#app").className = pg === "home" ? "home" : ""; document.body.dataset.pg = pg;
+  const pg = PG[U.page] && !S.kids.on ? U.page : "home", prev = $(".scroll"), y = prev && U.drawn === pg ? prev.scrollTop : 0;
+  $("#app").innerHTML = practiceBar() + PG[pg]() + (S.kids.on ? `<nav class="tabbar kids"><button class="tab on" data-act="kidsExit">${ico(I.lock, 22)}<span>${t("Grown-ups")}</span></button></nav>` : `<nav class="tabbar" aria-label="${t("Main")}">${TABS.map(([id, l, ic]) => `<button class="tab ${tabOf(pg) === id ? "on" : ""}" data-act="tab" data-v="${id}" ${tabOf(pg) === id ? 'aria-current="page"' : ""}>${ico(ic)}<span>${t(l)}</span></button>`).join("")}</nav>`);
+  $("#app").className = pg === "home" ? "home" : ""; document.body.dataset.pg = pg; { const sn = pg === "home" ? season() : null; if (sn) $("#app").dataset.season = sn.id; else delete $("#app").dataset.season; }
   U.drawn = pg; const sc = $(".scroll"); if (sc) sc.scrollTop = y;
   if (pg === "home") animateFill();
-  if (pg === "club") mountBoard();
+  if (pg === "club" || pg === "board") mountBoard();
   if (pg === "club" && API.enabled && S.token && API.subs === null && !U.subsLoading) { U.subsLoading = true; loadSubs().finally(() => (U.subsLoading = false)); }
   if (pg === "profile" && API.enabled && S.token && API.subs === null && !U.subsLoading) { U.subsLoading = true; loadSubs().finally(() => (U.subsLoading = false)); }
 }
@@ -667,7 +682,8 @@ function drop(a, ttl, why) {
   a = r2(a); if (!(a > 0) || a > 100000) return;
   const p = P(), before = p.balance;
   p.balance = r2(p.balance + a); p.drops++;
-  pushHist({ kind: "coin", t: Date.now(), ttl: ttl || "coin", amt: a, pid: p.id, ...(why ? { why } : {}) });
+  pushHist({ kind: "coin", t: Date.now(), ttl: ttl || "coin", amt: a, pid: p.id, ...(why ? { why } : {}), ...(U.by ? { by: U.by } : {}) });
+  if (S.kids.on) S.kids.coins = (S.kids.coins || 0) + 1; reportCoin(a); milestone();
   save(); if (S.sound) clink(p.balance > 20 ? 2 : 1, 0.09); buzz(30); draw(); if (S.pushOn && S.rem.streak.on) pushPrefsSoon();
   const an = $("#coinAnchor"); if (an) { const c = document.createElement("div"); c.className = "coin"; c.textContent = money(a); an.append(c); setTimeout(() => c.remove(), 800); }
   if (before < S.goal && p.balance >= S.goal) setTimeout(() => { fanfare(); confetti(); toast(tt("Your pushka is full! 🎉")); if (S.emptyMode === "full") setTimeout(openEmpty, 1400); }, 700);
@@ -736,7 +752,8 @@ function completeGift(p) {
   pushHist({ kind: "gift", t: ts, amt: total, fee: !!p.fee, fund: p.fund, fp: !!p.fromPushka, freq: p.freq, method: p.method, ded: p.ded || "", receiptUrl: p.receiptUrl || "", receipt: API.enabled && !offline && !PRACTICE });
   save(); buzz([60, 40, 60]); fanfare(); confetti(); U.pending = null; U.giveFund = null; draw();
   const note = PRACTICE ? t("Practice mode: no money was charged.") : API.enabled && !offline ? (S.email ? t("A receipt is on its way to {email}.", { email: `<bdi>${esc(S.email)}</bdi>` }) : "") : offline ? t("We’ll confirm once your gift is received.") : t("Your receipt will be emailed by our donation page.");
-  sheet(`<div class="done"><div class="ck" style="color:var(--accent)">${ico(I.check, 24)}</div><h3>${t("Todah rabah")}</h3><div style="font-size:14px;max-width:280px">${t("{amt} is on its way to the {fund}.", { amt: money2(total), fund: t(f.name) })}</div><div class="h-s">${note}</div>${p.receiptUrl ? `<a class="btn btn-ghost" href="${esc(p.receiptUrl)}" target="_blank" rel="noopener">${t("View receipt")}</a>` : ""}</div><button class="btn btn-primary cta" data-act="closeSheet">${t("Done")}</button>`);
+  U.lastGift = { ded: p.ded || "" }; const cl = p.club && clubOf(p.amt);
+  sheet(`<div class="done">${cl ? `<div class="medalpop">${medalSvg(cl[0], 84)}</div><div class="kicker">${t("Welcome to the {level} level", { level: t(cl[2]) })}</div>` : `<div class="ck" style="color:var(--accent)">${ico(I.check, 24)}</div>`}<h3>${t("Todah rabah")}</h3><div style="font-size:14px;max-width:280px">${t("{amt} is on its way to the {fund}.", { amt: money2(total), fund: t(f.name) })}</div><div class="h-s">${note}</div>${p.receiptUrl ? `<a class="btn btn-ghost" href="${esc(p.receiptUrl)}" target="_blank" rel="noopener">${t("View receipt")}</a>` : ""}</div>${p.ded ? `<button class="btn btn-secondary cta" data-act="honorCard">${t("Make an honor card")}</button>` : ""}<button class="btn btn-primary cta" data-act="closeSheet">${t("Done")}</button>`);
 }
 function autoEmpty() {
   const p = P(), now = new Date(); if (p.balance <= 0 || S.emptyMode === "manual" || S.prompted === dkey(now)) return;
@@ -798,13 +815,14 @@ A.remToggle = async (v) => {
   if (!r.on && !(await ensureNotify())) return;
   r.on = !r.on; save(); if (r.on && v === "candle") loadCandles(); if (S.pushOn) pushPrefsSoon(); draw();
 };
-A.remDel = (v) => { S.rem.custom = S.rem.custom.filter((x) => x.id !== v); save(); draw(); };
+A.remDel = (v) => { S.rem.custom = S.rem.custom.filter((x) => x.id !== v); save(); if (S.pushOn) pushPrefsSoon(); draw(); };
 A.candleMins = () => sheet(`<h3>${t("Before Candle Lighting")}</h3><div class="field"><label>${t("Remind me")}</label><div class="seg">${[10, 15, 30, 60].map((m) => `<label><input type="radio" name="cm" value="${m}" ${S.rem.candle.mins === m ? "checked" : ""}>${t("{n} min", { n: m })}</label>`).join("")}</div></div>${sheetBtns(["candleSave", t("Save")], ["closeSheet", t("Cancel")])}`);
 A.candleSave = () => { S.rem.candle.mins = +($("input[name=cm]:checked") || { value: 15 }).value; save(); if (S.pushOn) pushPrefsSoon(); closeSheet(); draw(); };
 A.addRem = () => sheet(`<h3>${t("Add reminder")}</h3><div class="field"><label for="rt">${t("Time")}</label><input class="input" id="rt" type="time" value="09:00"></div><div class="field"><label>${t("Repeat")}</label><div class="seg"><label><input type="radio" name="rd" value="weekdays" checked>${t("Weekdays")}</label><label><input type="radio" name="rd" value="daily">${t("Every day")}</label><label><input type="radio" name="rd" value="friday">${t("Fridays")}</label></div></div><div class="field"><label for="rx">${t("Message (optional)")}</label><input class="input" id="rx" maxlength="60" placeholder="${t("Time to give tzedakah!")}"></div>${sheetBtns(["remSave", t("Save")], ["closeSheet", t("Cancel")])}`);
-A.remSave = async () => { const time = $("#rt").value; if (!time) return toast(tt("Choose a time")); const r = { id: uid(), time, days: ($("input[name=rd]:checked") || {}).value || "weekdays", text: $("#rx").value.trim(), on: true }; closeSheet(); if (!(await ensureNotify())) return; S.rem.custom.push(r); save(); draw(); };
+A.remSave = async () => { const time = $("#rt").value; if (!time) return toast(tt("Choose a time")); const r = { id: uid(), time, days: ($("input[name=rd]:checked") || {}).value || "weekdays", text: $("#rx").value.trim(), on: true }; closeSheet(); if (!(await ensureNotify())) return; S.rem.custom.push(r); save(); if (S.pushOn) pushPrefsSoon(); draw(); };
 
-A.remSuggest = async (v) => { const x = SUGG.find((q) => q[0] === v); if (!x || !(await ensureNotify())) return; S.rem.custom.push({ id: uid(), sid: x[0], time: x[4], days: x[3], text: tt(x[2]), on: true }); save(); toast(tt("Reminder added")); draw(); };
+A.weeklyTgl = () => { S.rem.weekly.on = !S.rem.weekly.on; save(); pushPrefsSoon(); draw(); };
+A.remSuggest = async (v) => { const x = SUGG.find((q) => q[0] === v); if (!x || !(await ensureNotify())) return; S.rem.custom.push({ id: uid(), sid: x[0], time: x[4], days: x[3], text: tt(x[2]), on: true }); save(); if (S.pushOn) pushPrefsSoon(); toast(tt("Reminder added")); draw(); };
 
 // settings
 A.setGoal = (v) => { const n = parseFloat(v); if (n >= 1 && n <= 100000) { S.goal = r2(n); save(); } draw(); };
@@ -965,7 +983,8 @@ A.yzRemindTgl = async () => {
 
 // push notifications (work when the app is closed; need the server's notification keys)
 const b64u = (s) => Uint8Array.from(atob((s + "=".repeat((4 - (s.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
-function pushPrefs() { return { lang: LANG, candle: { on: !!S.rem.candle.on, mins: S.rem.candle.mins }, streak: { on: !!S.rem.streak.on }, yahrzeit: { on: !!S.yzRemind, leads: S.yzLeads }, lastCoin: lastCoinYmd() }; }
+function pushPrefs() { return { lang: LANG, candle: { on: !!S.rem.candle.on, mins: S.rem.candle.mins }, streak: { on: !!S.rem.streak.on }, yahrzeit: { on: !!S.yzRemind, leads: S.yzLeads }, lastCoin: lastCoinYmd(), streakN: streak(), tz: (Intl.DateTimeFormat().resolvedOptions().timeZone || ""), weekly: { on: !!S.rem.weekly.on }, week: weekSummary(), custom: S.rem.custom.filter((r) => r.on).slice(0, 12).map((r) => ({ id: r.id, time: r.time, days: r.days, date: r.date || "", text: (r.text || "").slice(0, 120) })), dates: S.dates.map((x) => ({ id: x.id, name: x.name, kind: x.kind, m: x.m, d: x.d })) }; }
+function weekSummary() { const since = Date.now() - 7 * 864e5, cs = S.history.filter((h) => h.kind === "coin" && h.t >= since); return { coins: cs.length, sum: r2(cs.reduce((a, h) => a + h.amt, 0)) }; }
 const lastCoinYmd = () => { const h = S.history.find((x) => x.kind === "coin"); return h ? ymdLocal(new Date(h.t)) : ""; };
 const pushOk = () => API.members && API.vapid && !PRACTICE && "serviceWorker" in navigator && "PushManager" in window;
 async function pushSub() { const reg = await navigator.serviceWorker.ready; return reg.pushManager.getSubscription(); }
@@ -1062,7 +1081,7 @@ A.clubJoin = () => {
 A.clubJoinHome = () => { U.stack.push(U.page); U.page = "club"; draw(); };
 function mountBoard() {
   const el = $("#clubBoard"); if (!el || !window.ClubBoard) return;
-  const paint = (d) => { const e = $("#clubBoard"); if (e) { e.textContent = ""; e.appendChild(ClubBoard.render(d, { lang: LANG })); } };
+  const paint = (d) => { const e = $("#clubBoard"); if (e) { e.textContent = ""; e.appendChild(ClubBoard.render(d, { lang: LANG, onJoin: U.page === "board" })); } };
   paint(U.club.data);
   if (!U.club.loading && (!U.club.data || Date.now() - U.club.at > 60000)) { U.club.loading = true; ClubBoard.load("").then((d) => { U.club.data = d; U.club.at = Date.now(); }).catch(() => {}).finally(() => { U.club.loading = false; if (U.club.data) paint(U.club.data); }); }
 }
@@ -1105,6 +1124,7 @@ function autoCoins() {
   while (ymdLocal(d) < today && n < 7) { d.setDate(d.getDate() + 1); const t0 = new Date(d); t0.setHours(9, 0, 0, 0); if (ymdLocal(t0) > today) break; p.balance = r2(p.balance + a.amt); p.drops++; pushHist({ kind: "coin", t: t0.getTime(), ttl: "auto", amt: a.amt, pid: p.id }); n++; }
   a.last = today; save(); if (n) setTimeout(() => { toast(tt("{n} auto-coins added to your pushka", { n })); draw(); }, 600);
 }
+A.setSnd = (v) => { S.snd = SND_OK.includes(v) ? v : "classic"; save(); clink(1, 0, 0); };
 A.autoTgl = () => { S.auto.on = !S.auto.on; if (S.auto.on) S.auto.last = ymdLocal(new Date()); save(); draw(); };
 A.autoAmt = (v) => { const n = parseFloat(v); if (n > 0 && n <= 1000) { S.auto.amt = r2(n); save(); } draw(); };
 
@@ -1128,10 +1148,152 @@ PG.awards = () => {
     <p class="note">${t("Streaks count weekdays. Shabbat never breaks your streak.")}</p>`);
 };
 
+PG.kidsHome = () => {
+  const p = P(), shown = U.fillFor === p.id ? U.fillShown : 0, frac = Math.min(p.balance / S.goal, 1), pct = Math.round(frac * 100);
+  return `<div class="head home-head"><div class="hd-top"><div class="kicker">${t("Chabad of Lamorinda")}</div></div><div class="hd-main"><h1>${t("Kids’ pushka")}</h1></div></div>
+  <div class="scroll"><div class="col">
+    <div class="tin"><div class="anchor" id="coinAnchor"></div><div class="zoom"><div class="wrap" data-act="dropPrimary" role="button" tabindex="0" aria-label="${esc(tt("Drop {amt} in the pushka", { amt: money(S.presets[0]) }))}">${tin(shown)}<div class="bal">${money2(p.balance)}</div></div></div></div>
+    <div class="progress"><div class="pg-track"><div class="pg-fill" id="progFill" style="width:${(U.fillFor === p.id ? U.pctShown : 0)}%"></div></div><div class="pg-t">${t("{n}% full", { n: pct })}</div></div>
+    <div class="kidcoins">${S.presets.map((a) => `<button class="kidcoin" data-act="drop" data-v="${a}" aria-label="${esc(money(a))}">${money(a)}</button>`).join("")}</div>
+    ${kidsStickers()}
+  </div></div>`;
+};
+// ---------- the honor board is for everyone; community, announcements, occasions, kids, skins, cards ----------
+const SND = { classic: [2100, 900, [[1, 0.22, 0.5], [1.51, 0.12, 0.35], [2.76, 0.07, 0.2]]], chime: [880, 440, [[1, 0.2, 1.1], [2, 0.1, 0.8], [3, 0.05, 0.5]]], soft: [520, 120, [[1, 0.25, 0.7], [1.5, 0.08, 0.5]]] };
+function boardCard() {
+  const d = U.club.data, total = d ? d.total : 0, names = d ? d.members.slice(0, 3).map((m) => m.name) : [];
+  const counts = ["platinum", "gold", "silver", "bronze"].map((l) => `<span class="bc">${medalSvg(l, 22)}<b>${d ? d.counts[l] || 0 : "·"}</b></span>`).join("");
+  return `<button class="card boardcard" data-act="go" data-v="board"><div style="flex:1;text-align:start"><div class="card-title">${t("Our monthly donors")}</div><div class="h-s">${total ? t("{n} monthly donors keep our community going.", { n: total }) : t("Join the Chai Club and see your medal on our board.")}</div>${names.length ? `<div class="bn">${names.map((n) => esc(n)).join(" · ")}</div>` : ""}<div class="bcs">${counts}</div></div>${chev()}</button>`;
+}
+A.clubJoinPage = () => { U.stack = ["give"]; U.page = "club"; draw(); };
+PG.board = () => sub(tt("Chai Club honor board"), `<p class="body-p">${t("These families give every month to keep Chabad of Lamorinda going. Join by name, or anonymously: you still get your medal.")}</p><div id="clubBoard"></div>`);
+
+// community counter (anonymous totals only) and announcements from the Rabbi
+let coinBuf = { n: 0, cents: 0 }, coinTimer = null;
+function reportCoin(a) {
+  if (PRACTICE || !API.enabled && !API.members) return; coinBuf.n++; coinBuf.cents += Math.round(a * 100); clearTimeout(coinTimer);
+  coinTimer = setTimeout(() => { const b = coinBuf; coinBuf = { n: 0, cents: 0 }; api("/community/coins", { method: "POST", body: b }).catch(() => {}); }, 4000);
+}
+function commCard() {
+  const n = (U.comm && U.comm.weekCoins) || 0; if (n < 5) return "";
+  return `<div class="card" style="gap:12px"><div class="commn">${n.toLocaleString(loc())}</div><div><div class="card-title">${t("coins dropped this week")}</div><div class="h-s">${t("by our community. Every coin counts.")}</div></div></div>`;
+}
+function annCards() {
+  return (U.ann || []).slice(0, 2).map((a) => {
+    const pct = a.goal > 0 ? Math.min(100, Math.round((a.raised / a.goal) * 100)) : 0;
+    return `<div class="card ann ${a.kind}" style="flex-direction:column;align-items:stretch;gap:8px">${a.kind === "match" ? `<span class="tag-accent" style="align-self:flex-start">${t("Matching day")}</span>` : ""}<div class="card-title">${esc(a.title)}</div>${a.body ? `<div class="h-s" style="font-size:13px">${esc(a.body)}</div>` : ""}${a.kind === "cause" && a.goal > 0 ? `<div class="pg-track"><div class="pg-fill" style="width:${pct}%"></div></div><div class="h-s">${t("{raised} of {goal} raised", { raised: money(a.raised), goal: money(a.goal) })}</div>` : ""}${a.fund ? `<button class="btn btn-secondary" data-act="annGive" data-v="${esc(a.id)}">${t(a.kind === "cause" ? "Give to this cause" : "Give now")}</button>` : ""}</div>`;
+  }).join("");
+}
+A.annGive = (v) => { const a = (U.ann || []).find((x) => x.id === v); if (!a) return; Object.assign(U, { giveFund: a.fund, giveAmt: 36, freq: "once", dedication: a.title.slice(0, 80) }); U.stack = []; U.page = "give"; draw(); };
+async function loadExtras() {
+  try { const c = await fetch("/api/community"); if (c.ok) U.comm = await c.json(); } catch (e) {}
+  try { const a = await fetch("/api/announcements"); if (a.ok) U.ann = (await a.json()).items || []; } catch (e) {}
+  try { if (window.ClubBoard && !U.club.data) { U.club.data = await ClubBoard.load(""); U.club.at = Date.now(); } } catch (e) {}
+  if (U.page === "home") draw();
+}
+
+// who is giving (family), streak sharing, streak milestones
+function familyChips() {
+  if (!S.family.length) return "";
+  return `<div class="chips" aria-label="${esc(tt("Who is giving?"))}"><button class="chip ${!U.by ? "on" : ""}" data-act="by" data-v="">${t("Me")}</button>${S.family.map((n) => `<button class="chip ${U.by === n ? "on" : ""}" data-act="by" data-v="${esc(n)}">${esc(n)}</button>`).join("")}</div>`;
+}
+A.by = (v) => { U.by = v; draw(); };
+A.famAdd = () => sheet(`<h3>${t("Add a family member")}</h3><div class="field"><label for="fn">${t("Name")}</label><input class="input" id="fn" maxlength="20"></div>${sheetBtns(["famSave", t("Add")], ["closeSheet", t("Cancel")])}`, () => setTimeout(() => $("#fn") && $("#fn").focus(), 60));
+A.famSave = () => { const n = $("#fn").value.trim(); if (!n) return toast(tt("Enter a name")); if (S.family.length < 8 && !S.family.includes(n)) S.family.push(n); save(); closeSheet(); draw(); };
+A.famDel = (v) => { S.family = S.family.filter((x) => x !== v); if (U.by === v) U.by = ""; save(); draw(); };
+A.shareStreak = async () => { const st = streak(), d = { title: tt("Chabad of Lamorinda · My Pushka"), text: tt("I’m on a {n}-day tzedakah streak! Sponsor a day of giving with me.", { n: st }), url: location.origin + "/pushka/?go=give" }; try { if (navigator.share) await navigator.share(d); else { await navigator.clipboard.writeText(d.text + " " + d.url); toast(tt("Link copied")); } } catch (e) {} };
+function milestone() { const st = streak(); if ([3, 7, 18, 36, 100].includes(st) && !S.ms["s" + st]) { S.ms["s" + st] = 1; save(); setTimeout(() => { fanfare(); confetti(); toast(tt("{n}-day streak! Keep going.", { n: st })); }, 900); } }
+
+// birthdays and anniversaries
+const nextCivil = (m, d) => { const now = new Date(), y = now.getFullYear(); let t0 = new Date(y, m - 1, d); if (t0 < new Date(y, now.getMonth(), now.getDate())) t0 = new Date(y + 1, m - 1, d); return Math.round((t0 - new Date(y, now.getMonth(), now.getDate())) / 864e5); };
+PG.occasions = () => {
+  const rows = S.dates.map((x) => ({ x, n: nextCivil(x.m, x.d) })).sort((a, b) => a.n - b.n).map(({ x, n }) => `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div style="display:flex;justify-content:space-between;gap:8px"><div><div class="card-title">${esc(x.name)}</div><div class="h-s">${t(x.kind === "anniversary" ? "Anniversary" : "Birthday")} · ${esc(new Intl.DateTimeFormat(loc(), { month: "long", day: "numeric" }).format(new Date(2000, x.m - 1, x.d)))}</div></div><button class="icon-btn sm" data-act="dateDel" data-v="${esc(x.id)}" aria-label="${t("Delete")}">${ico(I.trash, 18)}</button></div><div class="h-t">${esc(yzWhen(n))}</div><button class="btn btn-secondary" data-act="dateGive" data-v="${esc(x.id)}">${t("Give in their honor")}</button></div>`).join("");
+  return sub(tt("Birthdays and anniversaries"), `<p class="body-p">${t("Add the dates of people you love. We’ll remind you a week before and on the day, so you can give tzedakah in their honor.")}</p>${rows || `<div class="rowp">${t("No dates yet.")}</div>`}<button class="btn btn-primary cta" data-act="dateAdd">${ico(I.plus, 16)} ${t("Add a date")}</button>`);
+};
+A.dateAdd = () => { U.dk = "birthday"; sheet(`<h3>${t("Add a date")}</h3><div class="field"><label for="dnm">${t("Name")}</label><input class="input" id="dnm" maxlength="60"></div><div class="seg"><label><input type="radio" name="dk" value="birthday" data-chg="dateKind" checked>${t("Birthday")}</label><label><input type="radio" name="dk" value="anniversary" data-chg="dateKind">${t("Anniversary")}</label></div><div class="field"><label for="ddt">${t("Date")}</label><input class="input" id="ddt" type="date"></div><div id="dErr" class="err" role="alert"></div><button class="btn btn-primary cta" data-act="dateSave">${t("Save")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`, () => setTimeout(() => $("#dnm") && $("#dnm").focus(), 60)); };
+A.dateKind = (v) => { U.dk = v === "anniversary" ? "anniversary" : "birthday"; };
+A.dateSave = () => { const name = $("#dnm").value.trim(), v = $("#ddt").value; if (!name) { $("#dErr").textContent = tt("Please enter a name."); return; } const m = /^\d{4}-(\d{2})-(\d{2})$/.exec(v); if (!m) { $("#dErr").textContent = tt("Please enter a valid date."); return; } if (S.dates.length >= 20) { $("#dErr").textContent = tt("You can keep up to 20 dates."); return; } S.dates.push({ id: uid() + uid(), name, kind: U.dk, m: +m[1], d: +m[2] }); save(); closeSheet(); pushPrefsSoon(); draw(); };
+A.dateDel = (v) => { S.dates = S.dates.filter((x) => x.id !== v); save(); pushPrefsSoon(); draw(); };
+A.dateGive = (v) => { const x = S.dates.find((y) => y.id === v); if (!x) return; Object.assign(U, { giveFund: "general", giveAmt: 36, freq: "once", dedication: tt("In honor of {name}", { name: x.name }).slice(0, 80) }); U.stack = []; U.page = "give"; draw(); };
+function dateTick(at, within) {
+  if (S.pushOn) return; const d = new Date();
+  S.dates.forEach((x) => [7, 0].forEach((lead) => { const t0 = new Date(d.getFullYear(), d.getMonth(), d.getDate() + lead); if (t0.getMonth() + 1 === x.m && t0.getDate() === x.d) { const k = "dt" + x.id + dkey(d) + lead; if (within(at(9, 0)) && !S.notified[k]) { mark(k); notify(lead === 0 ? tt("Today: {name}’s {kind}. Give tzedakah in their honor?", { name: x.name, kind: tt(x.kind === "anniversary" ? "anniversary" : "birthday") }) : tt("{name}’s {kind} is in a week. Give tzedakah in their honor?", { name: x.name, kind: tt(x.kind === "anniversary" ? "anniversary" : "birthday") })); } } }));
+}
+
+// travelling coin
+A.travel = () => sheet(`<h3>${t("Traveling soon?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("It’s a lovely custom to give a coin before a journey. We’ll remind you the morning you leave.")}</div><div class="field"><label for="trd">${t("Departure date")}</label><input class="input" id="trd" type="date"></div>${sheetBtns(["travelSave", t("Remind me")], ["closeSheet", t("Cancel")])}`);
+A.travelSave = async () => { const v = $("#trd").value; if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) return toast(tt("Please enter a valid date.")); closeSheet(); if (!(await ensureNotify())) return; S.rem.custom.push({ id: uid(), sid: "trip" + v, time: "08:00", days: "once", date: v, text: tt("Safe travels! A coin for the journey?"), on: true }); save(); if (S.pushOn) pushPrefsSoon(); toast(tt("Reminder added")); draw(); };
+
+// seasonal look
+function season() {
+  if (!HD || !S.seasonal) return null; const today = ymdLocal(new Date()), p = HD.parts(today), leap = HD.isLeap(p.year);
+  if ((p.month === "Kislev" && p.day >= 25) || (p.month === "Tevet" && p.day <= 3)) { for (let i = 0; i < 9; i++) { const q = HD.parts(HD.addDays(today, -i)); if (q.month === "Kislev" && q.day === 25) return { id: "chanukah", n: Math.min(i + 1, 8) }; } }
+  if (p.month === (leap ? "Adar II" : "Adar") && p.day >= 13 && p.day <= 15) return { id: "purim" };
+  if (p.month === "Tishri" && p.day <= 2) return { id: "rh" };
+  if (p.month === "Tishri" && p.day >= 15 && p.day <= 23) return { id: "sukkos" };
+  if (p.month === "Nisan" && p.day >= 15 && p.day <= 22) return { id: "pesach" };
+  if (p.month === "Sivan" && p.day >= 6 && p.day <= 7) return { id: "shavuos" };
+  return null;
+}
+const SEASON_GREET = { chanukah: "Chag Urim Sameach", purim: "Purim Sameach", rh: "Shanah Tovah", sukkos: "Chag Sukkos Sameach", pesach: "Chag Pesach Sameach", shavuos: "Chag Shavuos Sameach" };
+function seasonOrn(s) {
+  if (!s) return "";
+  let orn = "";
+  if (s.id === "chanukah") { const xs = [10, 28, 46, 64, 82, 118, 136, 154, 172]; orn = `<svg viewBox="0 0 182 64" width="112" height="40" aria-hidden="true"><path d="M8 40q0 22 83 22t83-22" fill="none" stroke="#e6b955" stroke-width="3" stroke-linecap="round"/><path d="M91 62V36" stroke="#e6b955" stroke-width="3"/>${xs.map((x, i) => { const sh = i === 4, lit = sh || (i < 4 ? 4 - i <= s.n : i - 4 <= s.n), y = sh ? 8 : 20; return `<rect x="${(sh ? 91 : x + 4) - 2}" y="${y + 6}" width="4" height="${sh ? 28 : 16}" rx="1" fill="#f6efdc"/>${lit ? `<path d="M${sh ? 91 : x + 4} ${y - 8}q6 8 0 14q-6 -6 0 -14z" fill="#ffd66b" class="flame"/>` : ""}`; }).join("")}</svg>`; }
+  return `<div class="season" data-s="${s.id}">${orn}<div class="greet">${t(SEASON_GREET[s.id])}</div></div>`;
+}
+
+// kids mode (grown-up PIN)
+const sha = async (s) => { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("pushka:" + s)); return [...new Uint8Array(b)].map((x) => x.toString(16).padStart(2, "0")).join(""); };
+A.kidsOn = () => sheet(`<h3>${t("Kids mode")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Big coin buttons and stickers, with no giving or settings. Choose a 4-digit grown-up code to leave kids mode.")}</div><div class="field"><label for="kp">${t("Grown-up code")}</label><input class="input" id="kp" inputmode="numeric" maxlength="4" pattern="[0-9]*" autocomplete="off"></div><div id="kErr" class="err" role="alert"></div><button class="btn btn-primary cta" data-act="kidsStart">${t("Start kids mode")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
+A.kidsStart = async () => { const v = $("#kp").value; if (!/^\d{4}$/.test(v)) { $("#kErr").textContent = tt("Enter exactly 4 digits."); return; } S.kids.pin = await sha(v); S.kids.on = true; save(); closeSheet(); U.page = "home"; U.stack = []; draw(); };
+A.kidsExit = () => sheet(`<h3>${t("Grown-ups only")}</h3><div class="field"><label for="kp2">${t("Grown-up code")}</label><input class="input" id="kp2" inputmode="numeric" maxlength="4" pattern="[0-9]*" autocomplete="off"></div><div id="kErr2" class="err" role="alert"></div><button class="btn btn-primary cta" data-act="kidsUnlock">${t("Leave kids mode")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`, () => setTimeout(() => $("#kp2") && $("#kp2").focus(), 60));
+A.kidsUnlock = async () => { if ((await sha($("#kp2").value)) === S.kids.pin) { S.kids.on = false; save(); closeSheet(); draw(); } else $("#kErr2").textContent = tt("That code isn’t right."); };
+const STAR = ["#f6d77f", "#9fc0e3", "#f3a6a0", "#a8d8a0", "#d7b4f0", "#ffb86b"];
+const kidsStickers = () => { const n = Math.min(24, Math.floor((S.kids.coins || 0) / 3)); return `<div class="stickers" aria-label="${esc(tt("Your stickers"))}">${Array.from({ length: n }, (_, i) => `<svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="${STAR[i % STAR.length]}" stroke="#fff" stroke-width="1"/></svg>`).join("") || `<div class="h-s">${t("Drop 3 coins to win a sticker!")}</div>`}</div>`; };
+
+// honor card (picture to share) and giving statement
+async function honorCardBlob(text, from) {
+  const c = document.createElement("canvas"); c.width = 1080; c.height = 1350; const g = c.getContext("2d");
+  const bg = g.createLinearGradient(0, 0, 0, 1350); bg.addColorStop(0, "#1b3a70"); bg.addColorStop(1, "#0b1730"); g.fillStyle = bg; g.fillRect(0, 0, 1080, 1350);
+  const gold = g.createLinearGradient(0, 0, 1080, 1350); gold.addColorStop(0, "#f6d983"); gold.addColorStop(.5, "#c58f2a"); gold.addColorStop(1, "#f3d27a");
+  g.strokeStyle = gold; g.lineWidth = 6; g.strokeRect(50, 50, 980, 1250); g.lineWidth = 2; g.strokeRect(72, 72, 936, 1206);
+  g.textAlign = "center"; g.fillStyle = gold; g.font = "700 220px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif"; g.fillText("צדקה", 540, 420);
+  g.fillStyle = "#f6f1e4"; g.font = "400 58px 'Cormorant Garamond',Georgia,serif"; g.fillText(tt("A gift of tzedakah was made"), 540, 560);
+  g.fillStyle = "#f6d77f"; g.font = "600 84px 'Cormorant Garamond',Georgia,serif";
+  const words = text.split(" "); let line = "", y = 740; const lines = []; words.forEach((w) => { const t2 = line ? line + " " + w : w; if (g.measureText(t2).width > 820 && line) { lines.push(line); line = w; } else line = t2; }); lines.push(line);
+  lines.slice(0, 4).forEach((l, i) => g.fillText(l, 540, y + i * 100));
+  if (from) { g.fillStyle = "#dbe3f2"; g.font = "italic 400 54px 'Cormorant Garamond',Georgia,serif"; g.fillText(tt("with love from {name}", { name: from }), 540, 1100); }
+  g.fillStyle = gold; g.font = "600 46px 'Cormorant Garamond',Georgia,serif"; g.fillText("Chabad of Lamorinda", 540, 1215);
+  return new Promise((res) => c.toBlob(res, "image/png"));
+}
+A.honorCard = async () => {
+  const text = (U.lastGift && U.lastGift.ded) || ""; if (!text) return; const blob = await honorCardBlob(text, S.name), file = new File([blob], "honor-card.png", { type: "image/png" });
+  try { if (navigator.canShare && navigator.canShare({ files: [file] })) return await navigator.share({ files: [file], title: tt("A gift of tzedakah was made") }); } catch (e) { if (e && e.name === "AbortError") return; }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "honor-card.png"; document.body.append(a); a.click(); a.remove(); toast(tt("Card saved to your device"));
+};
+const giftYears = () => [...new Set(S.history.filter((h) => h.kind === "gift").map((h) => new Date(h.t).getFullYear()))].sort((a, b) => b - a);
+PG.statement = () => {
+  const ys = giftYears(), y = ys.includes(U.stY) ? U.stY : ys[0] || new Date().getFullYear(), rows = S.history.filter((h) => h.kind === "gift" && new Date(h.t).getFullYear() === y).sort((a, b) => a.t - b.t), tot = rows.reduce((a, h) => a + h.amt, 0);
+  return sub(tt("Giving statement"), `${ys.length > 1 ? `<div class="chips">${ys.map((x) => `<button class="chip ${x === y ? "on" : ""}" data-act="stYear" data-v="${x}">${x}</button>`).join("")}</div>` : ""}
+    <div class="card" style="flex-direction:column;align-items:flex-start;gap:2px"><div class="kicker">${t("Total given in {year}", { year: y })}</div><div style="font:400 40px var(--heading)">${money2(tot)}</div><div class="h-s">${rows.length === 1 ? t("1 gift") : t("{n} gifts", { n: rows.length })}</div></div>
+    <div>${rows.map((h) => `<div class="row-btn" style="cursor:default"><div class="grow"><div class="h-t">${esc(tt(fundOf(h.fund).name))}</div><div class="h-s">${esc(new Intl.DateTimeFormat(loc(), { dateStyle: "medium" }).format(new Date(h.t)))}${h.freq === "monthly" ? " · " + t("Monthly") : ""}${h.ded ? " · " + esc(h.ded) : ""}</div></div><div class="h-a">${money2(h.amt)}</div></div>`).join("") || `<div class="rowp">${t("No gifts in this year yet.")}</div>`}</div>
+    <div class="row2 noprint"><button class="btn btn-secondary" data-act="stCsv" data-v="${y}">${t("Download spreadsheet")}</button><button class="btn btn-secondary" data-act="stPrint">${t("Print")}</button></div>
+    <p class="note">${t("This is a summary of gifts made in this app. Official tax receipts are emailed by Stripe for every gift. Chabad of Lamorinda is a 501(c)(3), Tax ID {ein}.", { ein: ORG_EIN })}</p>`);
+};
+A.stYear = (v) => { U.stY = +v; draw(); };
+A.stPrint = () => window.print();
+A.stCsv = (v) => {
+  const cell = (x) => { let s = String(x == null ? "" : x); if (/^[=+\-@\t\r]/.test(s)) s = "'" + s; return '"' + s.replace(/"/g, '""') + '"'; };
+  const rows = S.history.filter((h) => h.kind === "gift" && new Date(h.t).getFullYear() === +v).sort((a, b) => a.t - b.t);
+  const csv = [["Date", "Fund", "Amount", "Frequency", "Note"].map(cell).join(",")].concat(rows.map((h) => [new Date(h.t).toISOString().slice(0, 10), fundOf(h.fund).name, h.amt.toFixed(2), h.freq || "once", h.ded || ""].map(cell).join(","))).join("\r\n");
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" })); a.download = "giving-" + v + ".csv"; document.body.append(a); a.click(); a.remove();
+};
+
 // ---------- start ----------
 applyLang();
-try { const go = new URLSearchParams(location.search).get("go"); if (go === "yahrzeit" || go === "club") { U.page = go; U.stack = [go === "club" ? "give" : "more"]; history.replaceState(null, "", location.pathname); } } catch (e) {}
+try { const go = new URLSearchParams(location.search).get("go"); if (go === "coin") { setTimeout(() => A.dropPrimary(), 900); history.replaceState(null, "", location.pathname); } else if (go === "empty") { setTimeout(() => A.openEmpty(), 900); history.replaceState(null, "", location.pathname); } else if (["yahrzeit", "club", "give", "board", "occasions"].includes(go)) { U.page = go; U.stack = [go === "club" ? "give" : go === "give" ? "" : "more"].filter(Boolean); history.replaceState(null, "", location.pathname); } } catch (e) {}
 draw();
 if (S.bio) { showLock(); A.unlock(); }
-initPay(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500); autoCoins();
+initPay(); loadExtras(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500); autoCoins();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

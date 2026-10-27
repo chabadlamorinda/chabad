@@ -379,3 +379,30 @@ html[lang=he] .hd-main h1{font-size:30px}
 .msg .h-t{font-size:21px}
 @media (max-height:700px){.tin .zoom{width:200px;height:230px}.tin .zoom .wrap{transform:scale(.91)}.week{display:none}}
 .clv-a{margin-inline-start:auto}
+
+/* ===== v7: board card, community, seasons, kids, honor ===== */
+.boardcard{all:unset;cursor:pointer;display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;border-radius:var(--r);padding:var(--s4);background:linear-gradient(135deg,#183463,#0d1f42);border:1px solid #b98524;color:#f6f1e4;box-shadow:0 12px 28px rgba(11,23,48,.3)}
+.boardcard:focus-visible{outline:2px solid #f6d77f;outline-offset:2px}
+.boardcard .card-title{color:#f6f1e4}.boardcard .h-s{color:#b6c2da}
+.bn{margin-top:6px;font:600 15px var(--heading);color:#f6d77f}
+.bcs{display:flex;gap:14px;margin-top:8px}.bc{display:flex;align-items:center;gap:4px;font-size:13px}
+#app.home .boardcard{background:linear-gradient(135deg,#1d3d73,#10264f)}
+.commn{font:400 40px/1 var(--heading);font-feature-settings:'tnum';color:var(--a700)}
+#app.home .commn{color:#f6d77f}
+.ann.match{border-color:#e6b955}
+.medalpop{animation:pop .6s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes pop{from{transform:scale(.3) rotate(-20deg);opacity:0}to{transform:none;opacity:1}}
+.season{text-align:center;margin-bottom:-6px}
+.season .greet{font:600 15px var(--heading);color:#f0cd7a}
+.flame{animation:flick 1.4s ease-in-out infinite;transform-origin:center bottom;transform-box:fill-box}
+@keyframes flick{50%{transform:scale(1.12,.92);opacity:.88}}
+#app.home[data-season=chanukah] .tin::before{background:radial-gradient(circle,rgba(255,214,107,.5) 0%,rgba(255,214,107,.14) 40%,transparent 68%)}
+#app.home[data-season=purim] .tin::before{background:radial-gradient(circle,rgba(214,150,240,.4) 0%,rgba(214,150,240,.1) 40%,transparent 68%)}
+#app.home[data-season=sukkos] .tin::before,#app.home[data-season=shavuos] .tin::before{background:radial-gradient(circle,rgba(150,220,150,.36) 0%,rgba(150,220,150,.1) 40%,transparent 68%)}
+#app.home[data-season=pesach] .tin::before{background:radial-gradient(circle,rgba(160,200,255,.4) 0%,rgba(160,200,255,.1) 40%,transparent 68%)}
+.kidcoins{display:flex;justify-content:center;gap:14px}
+.kidcoin{width:92px;height:92px;border-radius:50%;border:0;cursor:pointer;font:700 24px var(--body);color:#3a2504;background:radial-gradient(circle at 35% 30%,#fff3c4,#e6b955 60%,#b98524);box-shadow:0 8px 20px rgba(230,185,85,.45),inset 0 -4px 0 rgba(0,0,0,.12);transition:transform .1s}
+.kidcoin:active{transform:scale(.92)}
+.stickers{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;min-height:40px}
+.tabbar.kids{grid-template-columns:1fr}
+@media print{.tabbar,.noprint,#overlay,.head .icon-btn,.practice{display:none!important}body,#app{background:#fff!important;height:auto!important;overflow:visible!important}.scroll{overflow:visible!important}}
