@@ -452,7 +452,7 @@ test('hebrew: slots carry Hebrew titles/dates, public sponsors carry kind and re
 
 test('calendar notes: a yahrzeit shows with its week; reminders can be scheduled, cancelled, resumed', async () => {
   const H = { headers: await adminLogin() };
-  const s = await firstOpen((x) => x.kind === 'shabbat');
+  const s = await firstOpen((x) => x.kind === 'shabbat' && x.date >= '2026-10-24'); // a note dated before "today" would (correctly) not show
   const day = new Date(Date.parse(s.date + 'T12:00:00Z') - 4 * 864e5).toISOString().slice(0, 10); // a Tuesday-ish day in that week
   assert.equal((await call('POST', '/admin/api/kiddush/notes', { date: 'nope', text: 'x' }, H)).status, 400);
   const add = await call('POST', '/admin/api/kiddush/notes', { date: day, kind: 'yahrzeit', text: 'Yahrzeit of Reb Moshe', textHe: 'יארצייט' }, H);
@@ -487,4 +487,15 @@ test('share address: settings accept an https address with a path for the TV/QR 
   assert.equal((await board()).settings.shareUrl, 'https://www.example.org/kiddush');
   for (const bad of ['http://www.example.org/kiddush', 'https://x.org/a b', 'javascript:alert(1)', 'https://x.org/?a=1']) assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: bad }, h)).status, 400, bad);
   assert.equal((await call('PUT', '/admin/api/kiddush/settings', { shareUrl: '' }, h)).status, 200);
+});
+
+test('notes disappear from the board once their date has passed (the board clock here is Oct 15, 2026)', async () => {
+  const h = { headers: await adminLogin() };
+  const old = await call('POST', '/admin/api/kiddush/notes', { date: '2026-10-10', kind: 'event', text: 'Already happened' }, h);
+  const today = await call('POST', '/admin/api/kiddush/notes', { date: '2026-10-15', kind: 'event', text: 'Happening today' }, h);
+  const b = await board();
+  const all = b.slots.flatMap((s) => s.notes.map((n) => n.text)).concat(b.events.map((n) => n.text));
+  assert.ok(!all.includes('Already happened'), 'a note from before today is gone');
+  assert.ok(all.includes('Happening today'), 'a note for today still shows');
+  assert.ok((await call('GET', '/admin/api/kiddush/notes', undefined, h)).json.notes.some((n) => n.text === 'Already happened'), 'the staff list still has it, so it can be edited or deleted');
 });
