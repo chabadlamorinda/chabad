@@ -1114,9 +1114,11 @@ U.hm = { k: "honor", name: "" };
 A.why = () => { U.hm = { k: "honor", name: "" }; sheet(`<div><h3>${t("Donate in honor or memory")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("The coin goes into your pushka, dedicated to someone special.")}</div></div>
   <div class="seg"><label><input type="radio" name="hmk" value="honor" data-chg="hmKind" checked>${t("In honor of")}</label><label><input type="radio" name="hmk" value="memory" data-chg="hmKind">${t("In memory of")}</label></div>
   <div class="field"><label for="hmN">${t("Name")}</label><input class="input" id="hmN" maxlength="60" data-inp="hmName" placeholder="${esc(tt("e.g. Rachel bat Sarah"))}"></div>
-  <div class="amts three">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="whyDrop" data-v="${a}">${money(a)}</button>`).join("")}</div><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`, () => setTimeout(() => $("#hmN") && $("#hmN").focus(), 80)); };
+  <div class="amts three">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="whyDrop" data-v="${a}">${money(a)}</button>`).join("")}</div>
+  <div class="field"><label for="hmA">${t("Other amount")}</label><div style="display:flex;gap:8px"><div class="amt"><span>$</span><input class="input" id="hmA" type="number" min="0.01" step="0.01" inputmode="decimal" placeholder="0.00"></div><button class="btn btn-primary" style="width:auto;padding:0 20px" data-act="whyCustom">${t("Add")}</button></div></div><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`, () => setTimeout(() => $("#hmN") && $("#hmN").focus(), 80)); };
 A.hmKind = (v) => { U.hm.k = v === "memory" ? "memory" : "honor"; };
 A.hmName = (v) => { U.hm.name = v.slice(0, 60); };
+A.whyCustom = () => { const n = parseFloat($("#hmA").value); if (!(n > 0) || n > 100000) { toast(tt("Enter a valid amount")); return $("#hmA").focus(); } A.whyDrop(String(r2(n))); };
 A.whyDrop = (v) => { const name = (U.hm.name || "").trim(); if (!name) { toast(tt("Please enter a name.")); return $("#hmN") && $("#hmN").focus(); } closeSheet(); drop(parseFloat(v), "coin", { k: U.hm.k, name }); };
 
 function todayCard() {
