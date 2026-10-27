@@ -103,6 +103,7 @@ function mountAdmin(app, { store, password, secret, limit, send, log = console, 
   }
   r.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'admin', 'index.html')));
   r.get('/admin.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'admin.js')));
+  r.get('/admin.css', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'admin.css')));
   r.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/admin', r);
   return true;

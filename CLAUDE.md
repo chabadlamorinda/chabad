@@ -97,6 +97,9 @@ New events automatically appear as ready posts in the Rabbi area (`/admin/commun
 ## Call / Text / WhatsApp the Rabbi (requests)
 Mezuzah, tefillin, giving and meeting pages (and the chat, whenever someone asks about these) show Call, Text and WhatsApp buttons with a ready message (`server/site/leads.js`; which pages: `PAGE_TOPICS`). Texts and WhatsApp go to `org.json` `"mobile"` if set, otherwise `"phone"`. Conflict, family and help pages show "Talk privately with the Rabbi or the Rebbetzin" (Rebbetzin: `"rebbetzinMobile"` if set), and every other guide a one-line version. Every tap and every such chat conversation is emailed to the Rabbi (ADMIN_EMAIL, or the org email) and listed in the Rabbi area under "Requests from the website".
 
+## The Rabbi area (admin)
+`/admin` (Rabbi's desk, `server/admin/admin.js`) and `/admin/community` (website: requests, people to reach out to, social drafts, weekly email, approvals, sign-ups, chat questions, Ask the Rabbi, RSVPs, birthdays; `server/admin/community.js`). Both share `server/admin/admin.css`. In community.js each block is `section(title, note, shortName)`; call `.count(n, waiting)` on it to show a count in the sticky menu (and open it when something waits for the Rabbi). Keep it phone-first: big buttons, short words.
+
 ## Community submissions
 Mazal Tovs, announcements, shiva notices, ideas and resources sent through `/community` wait in the Rabbi area for approval. When the Rabbi approves a resource or idea, add it to the right content file.
 

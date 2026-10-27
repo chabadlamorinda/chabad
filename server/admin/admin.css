@@ -1,0 +1,25 @@
+/* Shared look for the Rabbi area pages (Rabbi's desk and Website community). Phone first: big buttons, nothing tiny. */
+body{font:16px/1.5 Georgia,serif;background:#f3f2f2;color:#201f1d;margin:0}
+main{max-width:900px;margin:0 auto;padding:20px}
+h1{font-weight:400;margin:0 0 4px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}
+button{font:inherit;border:1px solid #b68235;background:transparent;color:#7d5411;border-radius:7px;padding:8px 14px;cursor:pointer;min-height:40px}
+button.on{background:#fff3e4}button.wa{background:#1f8f4e;border-color:#1f8f4e;color:#fff}
+input,textarea,select{font:inherit;border:1px solid #bab6b6;border-radius:7px;padding:8px;width:100%;box-sizing:border-box}textarea{margin:6px 0}
+.card{background:#fff;border:1px solid #d7d3d3;border-radius:9px;padding:12px 14px;margin:10px 0}
+.small{font-size:13px;color:#605d5d}.warn{color:#9b2c2c}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.hot{border-color:#b68235;box-shadow:0 0 0 2px #fff3e4}
+.pill{display:inline-block;border:1px solid #b68235;border-radius:12px;padding:0 8px;font-size:12px;color:#7d5411}.card .pill{margin-inline-start:6px}
+/* Sticky jump menu with counts, and folding sections */
+nav.jump{position:sticky;top:0;z-index:5;background:#f3f2f2;padding:8px 0;margin:8px 0 12px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;border-bottom:1px solid #d7d3d3}
+nav.jump a{flex:none;text-decoration:none;color:#7d5411;border:1px solid #d7c3a3;background:#fff;border-radius:999px;padding:6px 12px;font-size:15px;white-space:nowrap}
+nav.jump a.hot{background:#b68235;color:#fff;border-color:#b68235}
+nav.jump b.cnt:not(:empty){margin-inline-start:6px;font-family:system-ui,sans-serif;font-size:12px;background:#7d5411;color:#fff;border-radius:999px;padding:1px 7px}
+nav.jump a.hot b.cnt:not(:empty){background:#fff;color:#7d5411}
+details.sec{background:#fff;border:1px solid #d7d3d3;border-radius:12px;margin:12px 0;scroll-margin-top:64px}
+details.sec>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary h2{font-weight:400;font-size:20px;margin:0}
+details.sec>summary::after{content:"▾";color:#7d5411}details.sec[open]>summary::after{content:"▴"}
+details.sec>summary .cnt:not(:empty){margin-inline-start:auto;font-family:system-ui,sans-serif;font-size:13px;background:#b68235;color:#fff;border-radius:999px;padding:2px 9px}
+.sec-b{padding:0 16px 14px}.sec-b>.card{background:#fbfaf9}
