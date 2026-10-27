@@ -217,7 +217,7 @@
     var body = JSON.stringify({ topic: a.getAttribute('data-lead'), channel: a.getAttribute('data-channel'), who: a.getAttribute('data-who') || '', page: location.pathname.replace(/^\/(he|ru)(?=\/)/, ''), lang: LANG, cid: cid() });
     try { fetch('/api/site/lead', { method: 'POST', credentials: 'omit', keepalive: true, headers: { 'content-type': 'application/json', 'x-site': '1' }, body: body }); } catch (e) {}
   });
-  var fab = $('[data-chat-open]');
+  var fab = $('.chat-fab[data-chat-open]');
   if (fab) {
     var panel = null, history = [], busy = false;
     try { history = JSON.parse(sessionStorage.getItem('cl_chat') || '[]'); } catch (e) {}
@@ -319,6 +319,8 @@
       panel.root.hidden = false; fab.hidden = true; panel.input.focus();
     };
     fab.addEventListener('click', open);
+    // "Ask a question about this" buttons on guides open the same chat (it already knows which page they are on).
+    Array.prototype.forEach.call(document.querySelectorAll('[data-chat-open]:not(.chat-fab)'), function (b) { b.addEventListener('click', function () { open(); }); });
     if (history.length && store.get('cl_chat_open')) open();
   }
 

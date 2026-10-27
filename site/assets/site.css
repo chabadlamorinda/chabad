@@ -392,3 +392,4 @@ h2[id] { scroll-margin-top: 80px; }
 .mitzvah .rabbi-contact { margin: 12px 0 0; box-shadow: none; }
 .mz-cta { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; border-inline-start: 4px solid var(--gold, #c9a227); }
 .mz-cta .btn { align-self: flex-start; }
+.consult-line .btn { margin-inline-end: 8px; margin-bottom: 6px; vertical-align: middle; }

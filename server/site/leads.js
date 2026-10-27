@@ -75,7 +75,7 @@ ${row('rabbi', t('Rabbi Yisroel Labkowski'))}${row('rebbetzin', t('Rebbetzin Tzi
 // One short line on every other guide and help page.
 function consultLine(X) {
   const t = X.t, w = (who, name) => `<a href="${esc(links(X.C.org, 'consult', t, who).whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="${who}" rel="noopener" target="_blank">${esc(name)}</a>`;
-  return `<p class="consult-line rabbi-contact">${esc(t('Questions about this, or something on your mind?'))} ${t('Message {rabbi} or {rebbetzin} privately, or call {phone}.').replace('{rabbi}', w('rabbi', t('the Rabbi'))).replace('{rebbetzin}', w('rebbetzin', t('the Rebbetzin'))).replace('{phone}', `<bdi dir="ltr"><a href="tel:+${numbers(X.C.org).call}" data-lead="consult" data-channel="call">${esc(X.C.org.phone)}</a></bdi>`)}${X.C.org.email ? ` · <a href="${esc(links(X.C.org, 'consult', t).email)}" data-lead="consult" data-channel="email">${esc(t('Email'))}</a>` : ''}</p>`;
+  return `<p class="consult-line rabbi-contact"><button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask a question about this'))}</button> ${esc(t('Questions about this, or something on your mind?'))} ${t('Message {rabbi} or {rebbetzin} privately, or call {phone}.').replace('{rabbi}', w('rabbi', t('the Rabbi'))).replace('{rebbetzin}', w('rebbetzin', t('the Rebbetzin'))).replace('{phone}', `<bdi dir="ltr"><a href="tel:+${numbers(X.C.org).call}" data-lead="consult" data-channel="call">${esc(X.C.org.phone)}</a></bdi>`)}${X.C.org.email ? ` · <a href="${esc(links(X.C.org, 'consult', t).email)}" data-lead="consult" data-channel="email">${esc(t('Email'))}</a>` : ''}</p>`;
 }
 function contactBox(X, topic) {
   if (topic === 'consult') return consultBox(X);
