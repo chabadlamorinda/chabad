@@ -693,4 +693,11 @@ const HE = {
   "The coin goes into your pushka, dedicated to someone special.": "המטבע נכנס לקופה שלכם, מוקדש למישהו מיוחד.",
   "See the open Shabbosos and choose one": "ראו את השבתות הפנויות ובחרו אחת",
   "Join the Chai Club": "הצטרפו למועדון חי",
+  "Undo": "ביטול",
+  "Coin removed": "המטבע הוסר",
+  "Reset {name}?": "לאפס את {name}?",
+  "This sets the pushka back to $0.00 and removes the {n} coins added since you last emptied it. Gifts you already made are not affected.": "פעולה זו מחזירה את הקופה ל-$0.00 ומסירה את {n} המטבעות שנוספו מאז הריקון האחרון. תרומות שכבר נתתם אינן מושפעות.",
+  "Reset pushka": "איפוס הקופה",
+  "Reset this pushka": "איפוס הקופה הזו",
+  "Pushka reset": "הקופה אופסה",
 };

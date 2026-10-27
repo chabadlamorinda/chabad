@@ -413,3 +413,6 @@ html[lang=he] .hd-main h1{font-size:30px}
 #app.home .btn-honor{border:2px solid #f0cd7a;background:rgba(240,205,122,.14);color:#ffe9b0;box-shadow:0 0 0 1px rgba(240,205,122,.15),0 6px 18px rgba(0,0,0,.25)}
 #app.home .btn-honor:hover{background:rgba(240,205,122,.24)}
 .joinsec{margin-top:var(--s5)}.joinsec h6{font-size:20px}
+.toast{display:flex;align-items:center;gap:14px}
+.toast-act{border:0;background:transparent;color:#f6d77f;font:700 14px var(--body);text-decoration:underline;cursor:pointer;padding:4px 2px;min-height:32px}
+.h-a+.link{font-size:12px;margin-top:2px}
