@@ -7,7 +7,7 @@ const H = require('../../pushka/hebdate.js');
 
 const ptNow = (d) => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' }).formatToParts(d).map((x) => [x.type, x.value])); return { ymd: `${p.year}-${p.month}-${p.day}`, hour: +p.hour }; };
 
-function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null }) {
+function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null, townsOf = null }) {
   if (!store || !mailer) return null;
   const q = (t, p) => store.pool.query(t, p);
   const T = (lang) => (i18n ? i18n.makeT(lang) : (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x));
@@ -60,6 +60,24 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
         t('Their Tehillim chapter:') + ' ' + site(L, '/tehillim#birthday'), '',
         t('Mazal Tov!'), org.name,
       ].join('\n') });
+    }
+    // Friday morning: candle lighting for the family's own town (for those who asked for it in My account).
+    if (new Date(today + 'T12:00:00Z').getUTCDay() === 5) {
+      const Z = require('./zmanim.js');
+      const fri = (await q("SELECT id, name, verified_email AS email, lang, town FROM members WHERE shabbat_email AND verified_email IS NOT NULL AND last_login IS NOT NULL")).rows;
+      for (const m of fri) {
+        const towns = townsOf ? townsOf(['he', 'ru'].includes(m.lang) ? m.lang : 'en') : [], tw = towns.find((x) => x.slug === m.town) || towns.find((x) => x.slug === 'lafayette') || null;
+        const where = tw ? { lat: tw.lat, lng: tw.lng, name: tw.slug } : undefined, sh = await Z.thisShabbat(new Date(today + 'T20:00:00Z'), where);
+        if (!sh.candles || sh.candles.date !== today || !(await once(key = `shabbat:${m.id}:${today}`))) continue;
+        const t = T(m.lang), L = m.lang, loc = { en: 'en-US', he: 'he-IL', ru: 'ru-RU' }[L] || 'en-US', tm = (e) => Z.fmtTime(e.time, loc), town = tw ? tw.name : 'Lafayette';
+        await send(key, { to: m.email, subject: t('Shabbat candle lighting today: {time} in {town}', { time: tm(sh.candles), town }), text: [
+          t('Dear {name},', { name: m.name || t('friend') }), '',
+          t('Candle lighting today in {town}: {time}.', { town, time: tm(sh.candles) }) + (sh.havdalah ? ' ' + t('Shabbat ends tomorrow at {time}.', { time: tm(sh.havdalah) }) : ''),
+          sh.parsha ? t("This week's Torah portion:") + ' ' + (L === 'he' ? sh.parsha.titleHe : t(sh.parsha.title)) + ' ' + site(L, '/parsha') : '', '',
+          t('Shabbat services and Kiddush:') + ' ' + site(L, '/shabbat'), t('Shabbat dinner:') + ' ' + site(L, '/forms/shabbat-meal'), '',
+          t('Shabbat Shalom!'), org.name, '', t('Manage reminders:') + ' ' + site(L, '/account'),
+        ].filter((x) => x !== null).join('\n') });
+      }
     }
     // Welcome series for families new to the website: a welcome the day after they join, a Shabbat dinner
     // invitation a few days later, and what fits their family after about ten days. Each email once.

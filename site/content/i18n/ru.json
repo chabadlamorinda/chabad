@@ -952,5 +952,12 @@
  "Burn the chametz by": "Сжечь хамец до",
  "Times for other towns:": "Время для других городов:",
  "Night 1: light 1 candle": "Вечер 1: зажигаем 1 свечу",
- "The Fast of Esther is the day before Purim.": "Пост Эстер - накануне Пурима."
+ "The Fast of Esther is the day before Purim.": "Пост Эстер - накануне Пурима.",
+ "Email me the candle-lighting time every Friday": "Присылайте мне время зажигания свечей каждую пятницу",
+ "My town": "Мой город",
+ "Shabbat candle lighting today: {time} in {town}": "Зажигание субботних свечей сегодня: {time}, {town}",
+ "Candle lighting today in {town}: {time}.": "Зажигание свечей сегодня ({town}): {time}.",
+ "Shabbat ends tomorrow at {time}.": "Шабат заканчивается завтра в {time}.",
+ "This week's Torah portion:": "Недельная глава:",
+ "Shabbat Shalom!": "Шабат шалом!"
 }

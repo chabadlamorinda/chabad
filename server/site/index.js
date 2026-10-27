@@ -81,7 +81,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     return to ? res.redirect(301, to) : next();
   });
   const chat = mountChat(app, { env, client: chatClient, content, ctxOf, limit, store, log });
-  const community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf });
+  const community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf, townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   // pushka.* and kiddush.* addresses keep opening their apps.
   const isHome = (req) => !/^(pushka|kiddush)\./i.test(req.hostname) && (siteHome || req.hostname.replace(/^www\./, '') === host);
   const pages = mountPages(app, { content, base, indexable, isHome, analytics, ctxOf, rsvpCounts: community.counts, photos: fb ? fb.photos : null });
@@ -111,7 +111,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     }, 30e3).unref();
   }
   const weekly = mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log, upcoming: () => pages.upcoming() });
-  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n });
+  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   if (reminders && mail) mail.start();
   // Account page: the form is drawn by site.js from /api/site/me.
   r.get('/account', wrap(async (req, res) => {

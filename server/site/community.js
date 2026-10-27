@@ -22,6 +22,8 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS anniversary DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS mezuzahs_checked DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS diet TEXT NOT NULL DEFAULT '';
 ALTER TABLE members ADD COLUMN IF NOT EXISTS personalize BOOLEAN NOT NULL DEFAULT TRUE;
+ALTER TABLE members ADD COLUMN IF NOT EXISTS town TEXT NOT NULL DEFAULT '';
+ALTER TABLE members ADD COLUMN IF NOT EXISTS shabbat_email BOOLEAN NOT NULL DEFAULT FALSE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS tefillin_checked DATE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS news BOOLEAN NOT NULL DEFAULT TRUE;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS last_login TIMESTAMPTZ;
@@ -104,8 +106,8 @@ function communityStore(store) {
       await q("INSERT INTO members (id, name, email, verified_email, last_login, first_login) VALUES ($1, '', $2, $2, now(), now())", [id, email]);
       return id;
     },
-    updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, diet=$12, personalize=$13, updated_at=now() WHERE id=$1',
-      [id, p.name, p.phone, p.address, p.hebrewName, p.birthday || null, p.birthAfterSunset, p.anniversary || null, p.news, p.mezuzahsChecked || null, p.tefillinChecked || null, p.diet || '', p.personalize]),
+    updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, diet=$12, personalize=$13, town=$14, shabbat_email=$15, updated_at=now() WHERE id=$1',
+      [id, p.name, p.phone, p.address, p.hebrewName, p.birthday || null, p.birthAfterSunset, p.anniversary || null, p.news, p.mezuzahsChecked || null, p.tefillinChecked || null, p.diet || '', p.personalize, p.town || '', p.shabbatEmail]),
     family: (memberId) => rows("SELECT id, name, hebrew_name, relation, gender, to_char(birthday,'YYYY-MM-DD') AS birthday, birth_after_sunset, diet FROM family WHERE member_id=$1 ORDER BY created_at", [memberId]),
     async replaceFamily(memberId, list) {
       const c = await pool.connect();
@@ -146,7 +148,7 @@ function communityStore(store) {
 
 function sanitizeProfile(b) {
   const birthday = ymdOk(b.birthday || '') ? b.birthday : '', anniversary = ymdOk(b.anniversary || '') ? b.anniversary : '';
-  return { name: clean(b.name, 100), phone: clean(b.phone, 30), address: clean(b.address, 200), hebrewName: clean(b.hebrewName, 100), birthday, birthAfterSunset: b.birthAfterSunset === true, anniversary, news: b.news !== false, mezuzahsChecked: ymdOk(b.mezuzahsChecked || '') ? b.mezuzahsChecked : '', tefillinChecked: ymdOk(b.tefillinChecked || '') ? b.tefillinChecked : '', diet: clean(b.diet, 200), personalize: b.personalize !== false };
+  return { name: clean(b.name, 100), phone: clean(b.phone, 30), address: clean(b.address, 200), hebrewName: clean(b.hebrewName, 100), birthday, birthAfterSunset: b.birthAfterSunset === true, anniversary, news: b.news !== false, mezuzahsChecked: ymdOk(b.mezuzahsChecked || '') ? b.mezuzahsChecked : '', tefillinChecked: ymdOk(b.tefillinChecked || '') ? b.tefillinChecked : '', diet: clean(b.diet, 200), personalize: b.personalize !== false, town: /^[a-z-]{1,40}$/.test(b.town || '') ? b.town : '', shabbatEmail: b.shabbatEmail === true };
 }
 function sanitizeFamily(list) {
   if (!Array.isArray(list) || list.length > 20) return null;
@@ -186,7 +188,11 @@ async function upcomingDatesFor(m, family, yz, today, max = 15) {
     if (n && within(n.date, 400)) out.push({ kind: 'hebrew-birthday', name: p.name, date: n.date });
     if (p.relation === 'child' && p.gender) {
       const [y, mo, d] = p.birthday.split('-').map(Number), md = await Z.mitzvahDate(new Date(y, mo - 1, d), p.night, p.gender === 'f');
-      if (within(md.date, 3 * 366)) out.push({ kind: p.gender === 'f' ? 'bat-mitzvah' : 'bar-mitzvah', name: p.name, date: md.date });
+      if (within(md.date, 3 * 366)) {
+        // The Torah portion of the Shabbat on or right after the Bar/Bat Mitzvah date.
+        const sh = await Z.thisShabbat(new Date(md.date + 'T20:00:00Z')).catch(() => ({})), ps = sh.parsha;
+        out.push({ kind: p.gender === 'f' ? 'bat-mitzvah' : 'bar-mitzvah', name: p.name, date: md.date, parsha: ps ? ps.title : '', parshaHe: ps ? ps.titleHe : '', parshaSlug: ps ? require('./parsha.js').slugOf(require('./parsha.js').portionsOf(ps.title).map((x) => x.name)[0] || '') : '' });
+      }
     }
   }
   const ann = d10(m.anniversary);
@@ -205,7 +211,7 @@ function checkDue(last) {
   return t.toISOString().slice(0, 10);
 }
 
-function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en' }) {
+function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en', townsOf = null }) {
   const cs = store ? communityStore(store) : null;
   const mac = (s) => crypto.createHmac('sha256', secret + ':site-member').update(s).digest('base64url');
   const issue = (id) => { const exp = String(Date.now() + TTL_DAYS * 864e5); return `${id}.${exp}.${mac(id + '.' + exp)}`; };
@@ -263,11 +269,12 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   r.get('/me', need, authed, wrap(async (req, res) => {
     const m = req.member, [family, yz, rs] = await Promise.all([cs.family(m.id), cs.webYahrzeits(m.id), cs.myRsvps(m.email.toLowerCase())]);
     res.json({
-      profile: { name: m.name, email: m.email, phone: m.phone, address: m.address, hebrewName: m.hebrew_name, birthday: d10(m.birthday), birthAfterSunset: m.birth_after_sunset, anniversary: d10(m.anniversary), mezuzahsChecked: d10(m.mezuzahs_checked), tefillinChecked: d10(m.tefillin_checked), diet: m.diet || '', personalize: m.personalize !== false, news: m.news, shareYahrzeits: m.share_yahrzeits },
+      profile: { name: m.name, email: m.email, phone: m.phone, address: m.address, hebrewName: m.hebrew_name, birthday: d10(m.birthday), birthAfterSunset: m.birth_after_sunset, anniversary: d10(m.anniversary), mezuzahsChecked: d10(m.mezuzahs_checked), tefillinChecked: d10(m.tefillin_checked), diet: m.diet || '', personalize: m.personalize !== false, town: m.town || '', shabbatEmail: !!m.shabbat_email, news: m.news, shareYahrzeits: m.share_yahrzeits },
       family: family.map((f) => ({ name: f.name, hebrewName: f.hebrew_name, relation: f.relation, gender: f.gender, birthday: f.birthday || '', birthAfterSunset: f.birth_after_sunset, diet: f.diet || '' })),
       yahrzeits: yz.map((y) => ({ name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes, fromApp: y.source !== 'web', next: (H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, new Date(now()).toISOString().slice(0, 10)) || {}).date || '' })),
       rsvps: rs.map((x) => ({ event: x.event_slug, adults: x.adults, kids: x.kids })),
-      upcoming: await upcomingDates(m, family, yz),
+      upcoming: (await upcomingDates(m, family, yz)).map((u) => (u.parsha ? { ...u, parshaLabel: langOf(req) === 'he' ? u.parshaHe : tOf(req)(u.parsha) } : u)),
+      towns: (townsOf ? townsOf(langOf(req)) : content().towns).map((x) => ({ slug: x.slug, name: x.name })),
       calendarUrl: base.replace(/^https?:/, 'webcal:') + '/api/site/me/calendar.ics?k=' + icsKey(m.id),
     });
   }));

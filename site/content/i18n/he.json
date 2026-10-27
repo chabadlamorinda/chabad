@@ -952,5 +952,12 @@
  "Burn the chametz by": "ביעור חמץ עד",
  "Times for other towns:": "זמנים בערים אחרות:",
  "Night 1: light 1 candle": "לילה 1: מדליקים נר אחד",
- "The Fast of Esther is the day before Purim.": "תענית אסתר חלה ביום שלפני פורים."
+ "The Fast of Esther is the day before Purim.": "תענית אסתר חלה ביום שלפני פורים.",
+ "Email me the candle-lighting time every Friday": "שלחו לי במייל את זמן הדלקת הנרות בכל יום שישי",
+ "My town": "העיר שלי",
+ "Shabbat candle lighting today: {time} in {town}": "הדלקת נרות שבת היום: {time} ב{town}",
+ "Candle lighting today in {town}: {time}.": "הדלקת נרות היום ב{town}: {time}.",
+ "Shabbat ends tomorrow at {time}.": "השבת יוצאת מחר ב-{time}.",
+ "This week's Torah portion:": "פרשת השבוע:",
+ "Shabbat Shalom!": "שבת שלום!"
 }
