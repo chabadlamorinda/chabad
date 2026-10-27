@@ -4,7 +4,7 @@ description: A loved one has passed away. Call Rabbi Labkowski at 925-384-7242. 
 order: 1
 urgent: yes
 icon: candle
-related: learn/jewish-funeral, learn/shiva, learn/kaddish, end-of-life
+related: learn/jewish-funeral, learn/shiva, learn/kaddish, end-of-life, learn/setting-up-a-shiva-house, learn/mourning-journey, learn/kriah
 ---
 We are so sorry for your loss. If someone you love has just passed away, please call Rabbi Yisroel Labkowski at **925-384-7242** as soon as you can, ideally before you call a funeral home. You do not need to know what to do. The Rabbi and Chabad of Lamorinda will walk you through each step, from the first hours to the funeral, shiva and Kaddish. It does not matter how observant you or your loved one were. We are here for every Jewish family.
 

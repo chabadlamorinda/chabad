@@ -4,7 +4,7 @@ description: Planning a Jewish wedding in the Bay Area? Rabbi Labkowski helps fr
 order: 7
 urgent: no
 icon: rings
-related: learn/jewish-wedding, learn/mikvah, shalom-bayit, bar-bat-mitzvah
+related: learn/jewish-wedding, learn/mikvah, shalom-bayit, bar-bat-mitzvah, learn/kallah-classes, learn/chosson-classes, learn/choosing-a-wedding-date, learn/family-purity, learn/setting-up-a-jewish-home
 ---
 Mazal Tov on your engagement! A Jewish wedding is the beginning of a new Jewish home, and it would be our joy to be part of it. Rabbi Yisroel Labkowski and Rebbetzin Tzipora Labkowski of Chabad of Lamorinda help couples plan a beautiful, meaningful Jewish wedding, from the very first meeting to the chuppah. Call **925-384-7242** to set up a time to meet.
 
