@@ -194,6 +194,20 @@
   }
 
   // ---------- "Ask us" chat ----------
+  // "I'll do it" on /mitzvah: counts the pledge, shows how-to (and Call / WhatsApp the Rabbi for tefillin and mezuzah).
+  Array.prototype.forEach.call(document.querySelectorAll('[data-mitzvah]'), function (card) {
+    var id = card.getAttribute('data-mitzvah'), btn = card.querySelector('[data-mitzvah-do]'), done = card.querySelector('.mz-done'), key = 'cl_mz_' + id + '_' + new Date().toISOString().slice(0, 7);
+    var show = function () { btn.disabled = true; btn.textContent = '✓ ' + T("I'm in!"); done.hidden = false; };
+    if (store.get(key)) show();
+    btn.addEventListener('click', function () {
+      show(); store.set(key, 1);
+      fetch('/api/site/mitzvah', { method: 'POST', credentials: 'omit', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ id: id, lang: LANG }) }).then(function (r) { return r.json(); }).then(function (j) {
+        if (!j.ok) return;
+        var c = card.querySelector('[data-mitzvah-count]'), tot = document.querySelector('[data-mitzvah-total]');
+        if (c) c.textContent = T('{n} this month').replace('{n}', j.count); if (tot) tot.textContent = j.total;
+      }).catch(function () {});
+    });
+  });
   // A random id for this visit's chat, so the Rabbi gets one note per conversation (no name, no tracking across visits).
   function cid() { try { var c = sessionStorage.getItem('cl_cid'); if (!c) { c = Math.random().toString(36).slice(2) + Date.now().toString(36); sessionStorage.setItem('cl_cid', c); } return c; } catch (e) { return ''; } }
   // Tapping Call / Text / WhatsApp the Rabbi lets him know (the call or message itself goes straight to his phone).

@@ -12,6 +12,10 @@ function googleCalendarUrl(e, base) {
   return 'https://calendar.google.com/calendar/render?' + p;
 }
 const googlePost = (e, when, base) => `${e.title}\n${when}\n\n${e.summary || ''}\n\nRSVP: ${base}/events/${e.slug}`.trim();
+// Nextdoor (very active in Lamorinda): a friendly neighbor-to-neighbor note.
+const nextdoorPost = (e, when, base, org) => `Hi neighbors! ${e.title}: ${when}${e.loc && e.loc.name ? ', ' + e.loc.name : ''}.\n\n${e.summary || ''}\n\n${e.price ? e.price + '. ' : ''}Everyone is welcome, no membership needed. Details and RSVP: ${base}/events/${e.slug}\n\n${org.name}, ${org.phone}`.trim();
+// Local newspapers' and websites' community calendars: the facts in the order editors expect.
+const calendarListing = (e, when, base, org) => [`Event: ${e.title}`, `When: ${when}`, `Where: ${e.loc ? [e.loc.name, e.loc.address].filter(Boolean).join(', ') : ''}`, `Cost: ${e.price || 'See the website'}`, `Description: ${e.summary || ''}`, `Organizer: ${org.name}`, `Contact: ${org.phone}${org.email ? ', ' + org.email : ''}`, `Website: ${base}/events/${e.slug}`].join('\n');
 
 function mountSocialAdmin(r, { authed, wrap }, { store, content, fb, base, when }) {
   const q = store ? (t, p) => store.pool.query(t, p) : null;
@@ -20,7 +24,7 @@ function mountSocialAdmin(r, { authed, wrap }, { store, content, fb, base, when 
     const C = content(), posted = q ? (await q('SELECT * FROM social_posts')).rows : [];
     const items = C.events.filter((e) => e.published && (e.end || e.start).slice(0, 10) >= today()).map((e) => {
       const done = Object.fromEntries(posted.filter((p) => p.event_slug === e.slug).map((p) => [p.network, { id: p.post_id, at: p.posted_at }]));
-      return { slug: e.slug, title: e.title, start: e.start, when: when(e), url: base + '/events/' + e.slug, image: eventImage(e, base), message: draftMessage(e, when(e), base, C.org), google: googlePost(e, when(e), base), googleCalendar: googleCalendarUrl(e, base), posted: done };
+      return { slug: e.slug, title: e.title, start: e.start, when: when(e), url: base + '/events/' + e.slug, image: eventImage(e, base), message: draftMessage(e, when(e), base, C.org), google: googlePost(e, when(e), base), nextdoor: nextdoorPost(e, when(e), base, C.org), calendar: calendarListing(e, when(e), base, C.org), googleCalendar: googleCalendarUrl(e, base), posted: done };
     });
     res.json({ facebook: !!fb, instagram: !!(fb && fb.instagram), items });
   }));

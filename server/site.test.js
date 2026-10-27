@@ -216,6 +216,7 @@ test('Rabbi area: RSVP lists, birthdays, post to Facebook', async () => {
   assert.equal(b.name, 'Noa'); assert.equal(b.family, 'Sara Levi');
   // Social drafts: every upcoming event is a ready post; one button publishes it.
   const soc = (await a.call('GET', '/admin/api/site/social')).json;
+  { const it = soc.items.find((x) => x.slug === EVENT); assert.match(it.nextdoor, /^Hi neighbors!/); assert.match(it.calendar, /^Event: .*\nWhen: /); assert.match(it.calendar, /Website: http/); }
   const d = soc.items.find((x) => x.slug === EVENT);
   assert.match(d.message, /RSVP in one tap: http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.match(d.message, /#Lafayette #Moraga #Orinda/);
   assert.match(d.googleCalendar, /^https:\/\/calendar\.google\.com\/calendar\/render\?action=TEMPLATE/);
@@ -525,6 +526,16 @@ test('mezuzah, tefillin, giving and meetings: Call / Text / WhatsApp the Rabbi, 
   assert.ok(mails.slice(n0).some((m) => /with the Rebbetzin/.test(m.subject)), 'the Rabbi hears the request is for the Rebbetzin');
   const { topicOf } = require('./site/leads.js');
   assert.equal(topicOf('When is Thanksgiving?'), null); assert.equal(topicOf('Как пожертвовать?'), 'donation'); assert.equal(topicOf('אני רוצה להניח תפילין'), 'tefillin');
+});
+
+test('Do a mitzvah this week: pledge, community count, and the Rabbi for tefillin and mezuzah', async () => {
+  const c = client(), page = (await c.call('GET', '/mitzvah')).text;
+  assert.match(page, /data-mitzvah="candles"/); assert.match(page, /data-mitzvah="tefillin"[\s\S]*data-lead="tefillin"/);
+  const r = await fetch(base + '/api/site/mitzvah', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ id: 'candles' }) });
+  const j = await r.json(); assert.ok(j.ok && j.count >= 1 && j.total >= 1);
+  assert.equal((await fetch(base + '/api/site/mitzvah', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ id: 'nope' }) })).status, 400);
+  assert.match((await c.call('GET', '/he/mitzvah')).text, /עשו מצווה השבוע/);
+  assert.match((await c.call('GET', '/')).text, /href="\/mitzvah"/);
 });
 
 test('chat without Claude: answers with matching pages', () => {

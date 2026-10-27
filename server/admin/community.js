@@ -67,12 +67,14 @@
       var status = [fbDone ? 'On Facebook since ' + new Date(fbDone.at).toLocaleDateString() : 'Not yet on Facebook', soc.instagram ? (igDone ? 'on Instagram' : 'not yet on Instagram') : ''].filter(Boolean).join(' · ');
       var copyBtn = el('button', { text: 'Copy post text', onclick: function () { copy(text.value, copyBtn); } });
       var gBtn = el('button', { text: 'Copy Google Business post', onclick: function () { copy(e.google, gBtn); } });
+      var ndBtn = el('button', { text: 'Copy & open Nextdoor', onclick: function () { copy(e.nextdoor, ndBtn); window.open('https://nextdoor.com/news_feed/', '_blank', 'noopener'); } });
+      var calBtn = el('button', { text: 'Copy for local calendars', title: 'For community calendars of local papers and websites (Lamorinda Weekly, Patch...)', onclick: function () { copy(e.calendar, calBtn); } });
       var fbEv = el('button', { text: 'Copy & open Facebook Events', onclick: function () { copy(e.title + '\n' + e.when + '\n\n' + text.value, fbEv); window.open('https://www.facebook.com/events/create/', '_blank', 'noopener'); } });
       s1.appendChild(el('div', { class: 'card' }, [
         el('strong', { text: e.title }), el('div', { class: 'small', text: e.when + ' · ' + status }),
         e.image ? el('img', { src: e.image, alt: '', style: 'max-width:200px;border-radius:8px;margin:8px 0;display:block' }) : el('div', { class: 'small', text: 'Tip: add an image or flyer to the event for a bigger, more eye-catching post (Instagram needs one).' }),
         text,
-        el('div', { class: 'row' }, [el('label', {}, [fbBox, ' Facebook']), soc.instagram ? el('label', {}, [igBox, ' Instagram']) : null, pub, copyBtn, gBtn, fbEv, el('a', { href: e.googleCalendar, target: '_blank', rel: 'noopener', text: 'Google Calendar' }), el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'View page' })]), msg]));
+        el('div', { class: 'row' }, [el('label', {}, [fbBox, ' Facebook']), soc.instagram ? el('label', {}, [igBox, ' Instagram']) : null, pub, copyBtn, gBtn, ndBtn, calBtn, fbEv, el('a', { href: e.googleCalendar, target: '_blank', rel: 'noopener', text: 'Google Calendar' }), el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'View page' })]), msg]));
     });
 
     // ---- Weekly email ----

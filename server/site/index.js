@@ -39,6 +39,7 @@ const { mountWeekly } = require('./weekly.js');
 const { mountAsk } = require('./ask.js');
 const { DIR } = require('./content.js');
 const { mountLeads } = require('./leads.js');
+const { mountMitzvah } = require('./mitzvah.js');
 
 function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch, chatClient = undefined }) {
   const base = (env.PUBLIC_URL || 'https://www.chabadoflamorinda.com').replace(/\/+$/, '');
@@ -107,6 +108,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
+  mountMitzvah(app, r, { store, render: pages.render, wrap, ctxOf, limit, base, log });
   ask = mountAsk(r, { store, render: pages.render, wrap, ctxOf, base, faqLd: pages.faqLd, crumbs: pages.crumbs });
   mountDaily(r, { render: pages.render, wrap, ctxOf });
   mountCalendar(r, { render: pages.render, wrap, ctxOf, upcoming: pages.upcoming });
