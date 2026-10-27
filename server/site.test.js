@@ -215,6 +215,7 @@ test('Rabbi area: RSVP lists, birthdays, post to Facebook', async () => {
   const b = (await a.call('GET', '/admin/api/site/birthdays?days=10')).json.items.find((i) => i.kind === 'birthday');
   assert.equal(b.name, 'Noa'); assert.equal(b.family, 'Sara Levi');
   // Social drafts: every upcoming event is a ready post; one button publishes it.
+  const vis = (await a.call('GET', '/admin/api/site/visitors')).json; assert.ok(Array.isArray(vis.items) && typeof vis.week.visitors === 'number');
   const setup = (await a.call('GET', '/admin/api/site/setup')).json.items;
   assert.ok(setup.find((i) => /Database/.test(i.label)).done); assert.equal(setup.find((i) => /Email sending/.test(i.label)).done, false);
   assert.ok(setup.every((i) => typeof i.done === 'boolean' && Object.keys(i).every((k) => ['label', 'done', 'todo', 'optional'].includes(k))), 'only yes/no, never the values');
@@ -546,6 +547,26 @@ test('holiday times can be added to a calendar, with reminders', async () => {
   assert.equal(r.status, 200); assert.match(r.text, /BEGIN:VCALENDAR/); assert.match(r.text, /SUMMARY:Chanukah night 1: light 1 candle/); assert.match(r.text, /TRIGGER:-PT15M/);
   assert.match((await c.call('GET', '/holidays/chanukah')).text, /href="\/holidays\/chanukah\.ics"/);
   assert.equal((await c.call('GET', '/holidays/nothing.ics')).status, 404);
+});
+
+test('visitors: pages noted under an anonymous id, linked to a person when they leave details, and the Rabbi alerted about giving', async () => {
+  const vid = 'v' + 'a1b2c3d4e5f6'.repeat(2), cookie = 'cl_vid=' + vid, post = (path, body, ck = cookie) => fetch(base + path, { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1', cookie: ck }, body: JSON.stringify(body) });
+  assert.equal((await post('/api/site/view', { path: '/learn/bar-mitzvah' })).status, 204);
+  await post('/api/site/view', { path: '/he/learn/mezuzah' }); await post('/api/site/view', { path: '/learn/mezuzah' }, '');
+  await new Promise((r) => setTimeout(r, 400));
+  let rows = (await store.pool.query('SELECT path FROM visitor_views WHERE vid=$1 ORDER BY path', [vid])).rows.map((r) => r.path);
+  assert.deepEqual(rows, ['/learn/bar-mitzvah', '/learn/mezuzah'], 'Hebrew path folded, no cookie means nothing kept');
+  assert.equal((await post('/api/site/submit', { kind: 'tehillim', title: 'Refuah for Chaim ben Sarah', name: 'Leah Gold', email: 'Leah@Example.com' })).status, 200);
+  await new Promise((r) => setTimeout(r, 400));
+  assert.equal((await store.pool.query('SELECT name FROM visitor_people WHERE vid=$1 AND email=$2', [vid, 'leah@example.com'])).rows[0].name, 'Leah Gold');
+  const n0 = mails.length;
+  await post('/api/site/view', { path: '/donate' }); await post('/api/site/view', { path: '/sponsor' });
+  await new Promise((r) => setTimeout(r, 500));
+  const got = mails.slice(n0).filter((m) => /Leah Gold is looking at giving/.test(m.subject));
+  assert.equal(got.length, 1, 'one alert per person and interest per week'); assert.match(got[0].text, /leah@example\.com/);
+  const { interestOf } = require('./site/visitors.js');
+  assert.equal(interestOf('/programs/bar-bat-mitzvah').key, 'bar-bat-mitzvah'); assert.equal(interestOf('/learn/dreidel'), null);
+  assert.match((await client().call('GET', '/privacy')).text, /do not keep IP addresses/);
 });
 
 test('chat without Claude: answers with matching pages', () => {

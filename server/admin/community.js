@@ -51,6 +51,24 @@
       });
     });
 
+    // ---- Visitors: people who left their details, their interests and the pages they looked at ----
+    var sv = section('Visitors and their interests', 'Everyone who left their name (RSVP, a form, a message, an account) and what they looked at on the website, before and after. People looking at giving, Bar/Bat Mitzvah, mezuzah, weddings and other important topics in the last two weeks are marked and come first; you also get an email the moment they look.', 'Visitors');
+    api('GET', '/site/visitors').then(function (x) {
+      if (x._status !== 200) { sv.appendChild(el('p', { class: 'small', text: 'Needs the database (DATABASE_URL).' })); return; }
+      sv.appendChild(el('p', { class: 'small' }, [el('strong', { text: x.week.visitors + ' visitors this week. ' }), x.week.interests.slice(0, 8).map(function (i) { return i.label + ': ' + i.n; }).join(' · ')]));
+      if (!x.items.length) { sv.appendChild(el('p', { class: 'small', text: 'No one has left their details yet.' })); return; }
+      sv.count(x.items.filter(function (p) { return p.hot; }).length, true);
+      x.items.forEach(function (p) {
+        var digits = String(p.phone || '').replace(/\D/g, ''), tel = digits.length === 10 ? '1' + digits : digits, pages = el('div', { class: 'small', hidden: 'hidden' }, p.pages.map(function (v) { return el('div', { text: v.day + '  ' + v.path }); }));
+        sv.appendChild(el('div', { class: 'card' + (p.hot ? ' hot' : '') }, [
+          el('strong', { text: p.name || p.email }), el('div', { class: 'small', text: p.email + (p.phone ? ' · ' + p.phone : '') + ' · last visit ' + p.lastSeen }),
+          el('div', {}, p.interests.map(function (i) { return el('span', { class: 'pill', text: i.label + ' ×' + i.n, style: i.alert ? 'background:#fff3e4' : '' }); })),
+          el('div', { class: 'row' }, [
+            el('a', { href: 'mailto:' + p.email, text: 'Email' }), tel ? el('a', { href: 'https://wa.me/' + tel, target: '_blank', rel: 'noopener', text: 'WhatsApp' }) : null, tel ? el('a', { href: 'tel:+' + tel, text: 'Call' }) : null,
+            el('button', { text: 'Pages they looked at', onclick: function () { pages.hidden = !pages.hidden; } })]), pages]));
+      });
+    });
+
     // ---- People to reach out to ----
     var so = section('People to reach out to', 'Who to call or message this week, and why. Each message is ready and personal: tap WhatsApp (or text, email, call), adjust it if you like, send. Press Done to clear it.', 'Reach out');
     var person = function (i, box) {

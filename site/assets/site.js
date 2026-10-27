@@ -51,6 +51,15 @@
       if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { prompt('', url); }); else prompt('', url);
     });
   });
+  // Which pages are visited (an anonymous id in a first-party cookie; no IP addresses kept). Skipped when the browser
+  // asks not to be tracked. If the visitor later leaves their details, the Rabbi sees their interests (see Privacy).
+  (function () {
+    if (navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
+    var m = /(?:^|;\s*)cl_vid=([a-z0-9]+)/.exec(document.cookie), vid = m && m[1];
+    if (!vid) { vid = (Math.random().toString(36).slice(2) + Date.now().toString(36) + Math.random().toString(36).slice(2)).slice(0, 32); }
+    try { document.cookie = 'cl_vid=' + vid + ';path=/;max-age=' + 400 * 86400 + ';samesite=lax' + (location.protocol === 'https:' ? ';secure' : ''); } catch (e) {}
+    try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname }) }).catch(function () {}); } catch (e) {}
+  })();
   if (store.get('cl_signed')) {
     var a = $('[data-account]'); if (a) a.textContent = T('My account');
     // So the Rabbi can suggest events that fit (only when "Suggest things for my family" is on in My account).
