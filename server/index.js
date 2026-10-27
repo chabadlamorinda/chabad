@@ -362,7 +362,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, limit });
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  mountAdmin(app, { store, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log });
+  mountAdmin(app, { store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, levelOf: clubLevel });
 
   // ---------- website (only the public files are served) ----------
   // Google Play "Trusted Web Activity" verification: proves this site and the Android app belong together.

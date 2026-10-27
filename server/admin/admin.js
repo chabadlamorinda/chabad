@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-  var app = document.getElementById('app'), tab = 'yahrzeits';
+  var app = document.getElementById('app'), tab = 'donors';
   function el(tag, attrs, kids) {
     var n = document.createElement(tag);
     for (var k in (attrs || {})) { if (k === 'text') n.textContent = attrs[k]; else if (k === 'class') n.className = attrs[k]; else if (k.slice(0, 2) === 'on') n.addEventListener(k.slice(2), attrs[k]); else n.setAttribute(k, attrs[k]); }
@@ -17,7 +17,7 @@
     app.appendChild(el('h1', { text: 'Rabbi’s desk' }));
     app.appendChild(el('div', { class: 'small', text: 'Chabad of Lamorinda · private' }));
     var nav = el('nav');
-    [['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
+    [['donors', 'Monthly donors'], ['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
       nav.appendChild(el('button', { class: tab === t[0] ? 'on' : '', text: t[1], onclick: function () { tab = t[0]; load(); } }));
     });
     nav.appendChild(el('button', { text: 'Sign out', onclick: function () { api('POST', '/logout').then(function () { login(); }); } }));
@@ -34,6 +34,33 @@
   }
   function wrapErr(p) { return p.catch(function (e) { if (e.status === 401) { login(); return null; } throw e; }); }
 
+  var LV = { platinum: 'Platinum', gold: 'Gold', silver: 'Silver', bronze: 'Bronze' }, LC = { platinum: '#3f6490', gold: '#a06f24', silver: '#7d8590', bronze: '#8a5427' };
+  function money(n) { return '$' + (Math.round(n * 100) / 100).toLocaleString('en-US', { maximumFractionDigits: 2 }); }
+  function donors() {
+    var box = el('div');
+    wrapErr(api('GET', '/donors')).then(function (j) {
+      if (!j) return;
+      var sum = el('div', 'row');
+      ['platinum', 'gold', 'silver', 'bronze'].forEach(function (l) {
+        var c = el('div', 'card'); c.style.borderTop = '4px solid ' + LC[l]; c.style.minWidth = '150px';
+        c.appendChild(el('strong', { text: LV[l] })); c.appendChild(el('div', { text: j.byLevel[l].count + (j.byLevel[l].count === 1 ? ' donor' : ' donors') }));
+        c.appendChild(el('div', { class: 'small', text: money(j.byLevel[l].monthly) + ' / month' })); sum.appendChild(c);
+      });
+      box.appendChild(sum);
+      box.appendChild(el('p', { class: 'small', text: 'All monthly gifts: ' + j.total.count + ' people, ' + money(j.total.monthly) + ' a month (before Stripe fees). Private to you: amounts and contact details are never shown on the public board.' }));
+      if (!j.donors.length) box.appendChild(el('p', { text: 'No monthly donors yet.' }));
+      j.donors.forEach(function (d) {
+        var lvl = d.level ? el('span', { class: 'pill', text: LV[d.level] }) : el('span', { class: 'pill', text: d.club ? 'Under $72 (no medal)' : 'Other fund' });
+        if (d.level) lvl.style.borderColor = LC[d.level];
+        box.appendChild(el('div', { class: 'card' }, [
+          el('div', { class: 'row' }, [el('strong', { text: d.name || d.email || 'Unnamed' }), lvl, el('span', { class: 'small', text: money(d.monthly) + ' / month' })]),
+          el('div', { class: 'small', text: [d.email, d.phone].filter(Boolean).join(' · ') }),
+          el('div', { class: 'small', text: (d.club ? (d.onBoard ? 'On the board as “' + d.boardName + '”' : 'Counted, not named on the board') : 'Fund: ' + d.fund) + ' · since ' + new Date(d.since).toLocaleDateString() + (d.next ? ' · next gift ' + new Date(d.next).toLocaleDateString() : '') })
+        ]));
+      });
+    }).catch(function (e) { box.textContent = e.message; });
+    return box;
+  }
   function yahrzeits() {
     var box = el('div');
     wrapErr(api('GET', '/yahrzeits?days=60')).then(function (j) {
@@ -96,7 +123,7 @@
       } }), out]);
   }
   function load() {
-    var views = { yahrzeits: yahrzeits, members: members, payments: payments, push: push };
+    var views = { donors: donors, yahrzeits: yahrzeits, members: members, payments: payments, push: push };
     shell(views[tab]());
   }
   api('GET', '/me').then(load).catch(function () { login(); });

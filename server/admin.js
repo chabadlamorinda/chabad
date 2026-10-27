@@ -10,8 +10,9 @@ const { ptParts } = require('./scheduler.js');
 const COOKIE = 'cl_admin';
 const TTL = 12 * 3600e3;
 
-function mountAdmin(app, { store, password, secret, limit, send, log = console }) {
-  if (!password || password.length < 12 || !store) return false;
+function mountAdmin(app, { store, stripe, password, secret, limit, send, log = console, levelOf }) {
+  if (!password || password.length < 12) return false;
+  const needDb = (req, res, next) => (store ? next() : res.status(503).json({ code: 'not_configured', error: 'The database is not connected yet (DATABASE_URL).' }));
   const mac = (s) => crypto.createHmac('sha256', secret + ':admin').update(s).digest('base64url');
   const issue = () => { const exp = String(Date.now() + TTL); return exp + '.' + mac(exp); };
   const valid = (tok) => {
@@ -57,29 +58,53 @@ function mountAdmin(app, { store, password, secret, limit, send, log = console }
     return out.sort((a, b) => a.daysLeft - b.daysLeft || a.name.localeCompare(b.name));
   }
 
-  r.get('/api/yahrzeits', authed, wrap(async (req, res) => {
+  r.get('/api/yahrzeits', authed, needDb, wrap(async (req, res) => {
     const days = Math.min(Math.max(parseInt(req.query.days, 10) || 60, 1), 400);
     res.json({ days, items: await upcoming(days) });
   }));
-  r.put('/api/followup', authed, wrap(async (req, res) => {
+  r.put('/api/followup', authed, needDb, wrap(async (req, res) => {
     const b = req.body || {};
     if (typeof b.yahrzeitId !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(b.occurrence || '')) return res.status(400).json({ code: 'invalid', error: 'Invalid request.' });
     await store.setFollowup(b.yahrzeitId.slice(0, 80), b.occurrence, String(b.note || '').slice(0, 500), b.done === true);
     res.json({ ok: true });
   }));
-  r.get('/api/members', authed, wrap(async (req, res) => {
+  r.get('/api/members', authed, needDb, wrap(async (req, res) => {
     res.json({ members: (await store.listMembers()).map((m) => ({ id: m.id, name: m.name, email: m.email, phone: m.phone, shares: m.share_yahrzeits, yahrzeits: m.share_yahrzeits ? m.yahrzeit_count : null, push: m.push_count, cardIssue: m.card_issue, joined: m.created_at })) });
   }));
-  r.get('/api/payments', authed, wrap(async (req, res) => { res.json({ events: await store.listPaymentEvents() }); }));
-  r.post('/api/payments/:id/resolve', authed, wrap(async (req, res) => { await store.resolvePayment(req.params.id); res.json({ ok: true }); }));
+  r.get('/api/payments', authed, needDb, wrap(async (req, res) => { res.json({ events: await store.listPaymentEvents() }); }));
+  r.post('/api/payments/:id/resolve', authed, needDb, wrap(async (req, res) => { await store.resolvePayment(req.params.id); res.json({ ok: true }); }));
 
   // CSV: cells beginning with = + - @ are prefixed so a spreadsheet never runs them as formulas.
   const cell = (v) => { let s = String(v == null ? '' : v); if (/^[=+\-@\t\r]/.test(s)) s = "'" + s; return '"' + s.replace(/"/g, '""') + '"'; };
-  r.get('/api/export.csv', authed, wrap(async (req, res) => {
+  r.get('/api/export.csv', authed, needDb, wrap(async (req, res) => {
     const items = await upcoming(400);
     const head = ['Name', 'Relation', 'Hebrew date', 'Next date', 'Days left', 'Member', 'Email', 'Phone', 'Address', 'Follow-up note', 'Done'];
     const lines = [head.map(cell).join(',')].concat(items.map((i) => [i.name, i.relation, i.hebrew, i.date, i.daysLeft, i.member.name, i.member.email, i.member.phone, i.member.address, i.followup.note, i.followup.done ? 'yes' : ''].map(cell).join(',')));
     res.type('text/csv').set('Content-Disposition', 'attachment; filename="yahrzeits.csv"').send(lines.join('\r\n') + '\r\n');
+  }));
+
+  // Everyone who gives monthly, with their level. Names and contact details: this page is private to the Rabbi.
+  let clubCache = { at: 0, data: null };
+  r.get('/api/donors', authed, wrap(async (req, res) => {
+    if (!stripe) return res.status(503).json({ code: 'not_configured', error: 'Stripe is not connected yet.' });
+    if (!clubCache.data || Date.now() - clubCache.at > 60 * 1000) {
+      const rows = []; let after;
+      for (let page = 0; page < 50; page++) {
+        const list = await stripe.subscriptions.list({ status: 'active', limit: 100, ...(after ? { starting_after: after } : {}) });
+        for (const sb of list.data) {
+          const m = sb.metadata || {}; if (m.source !== 'pushka') continue;
+          const item = sb.items && sb.items.data && sb.items.data[0], cents = Number(m.gift_cents) || (item && item.price ? item.price.unit_amount : 0);
+          let cust = null; try { cust = await stripe.customers.retrieve(typeof sb.customer === 'string' ? sb.customer : sb.customer.id); } catch (e) {}
+          rows.push({ id: sb.id, name: (cust && cust.name) || '', email: (cust && cust.email) || '', phone: (cust && cust.phone) || '', fund: m.fund || '', club: m.club === 'yes', level: m.club === 'yes' ? levelOf(cents) : null, monthly: cents / 100, boardName: m.board_name || '', onBoard: m.board_show === 'yes' && !!levelOf(cents), since: (sb.created || 0) * 1000, next: ((sb.current_period_end || (item && item.current_period_end) || 0) * 1000) || null });
+        }
+        if (!list.has_more || !list.data.length) break; after = list.data[list.data.length - 1].id;
+      }
+      const order = ['platinum', 'gold', 'silver', 'bronze'], rank = (l) => (l ? order.indexOf(l) : 9);
+      rows.sort((a, b) => rank(a.level) - rank(b.level) || b.monthly - a.monthly || a.since - b.since);
+      const byLevel = {}; for (const l of order) { const g = rows.filter((x) => x.level === l); byLevel[l] = { count: g.length, monthly: g.reduce((a, x) => a + x.monthly, 0) }; }
+      clubCache = { at: Date.now(), data: { donors: rows, byLevel, total: { count: rows.length, monthly: rows.reduce((a, x) => a + x.monthly, 0) } } };
+    }
+    res.json(clubCache.data);
   }));
 
   r.post('/api/broadcast', authed, limit('broadcast', 10, 60 * 60 * 1000), wrap(async (req, res) => {

@@ -271,3 +271,23 @@ test('chai club: levels, board shows only chosen names, replace switches level, 
   const r = await fetch(c.base + '/api/club'); assert.equal(r.headers.get('access-control-allow-origin'), '*');
   const page = await fetch(c.base + '/board/'); assert.equal(page.status, 200); assert.match(page.headers.get('content-security-policy'), /frame-ancestors 'self' https:\/\/www\.chabadoflamorinda\.com/);
 });
+
+test('admin: monthly donors screen lists people with levels and contact details (private)', async (t) => {
+  const stripe = fakeStripe();
+  const app = createApp({ stripe, publishableKey: 'pk_test_abc', sessionSecret: 'a'.repeat(32), log: { error() {} }, adminPassword: 'correct horse battery' });
+  const server = await new Promise((r) => { const sv = app.listen(0, () => r(sv)); }); t.after(() => server.close());
+  const base = 'http://127.0.0.1:' + server.address().port;
+  const cus = await stripe.customers.create({ name: 'Dina Cohen', email: 'dina@example.com' }); stripe.addCard(cus.id);
+  const token = require('crypto').createHmac('sha256', 'a'.repeat(32)).update(cus.id).digest('base64url');
+  const post = (path, body, headers = {}) => fetch(base + path, { method: 'POST', headers: { 'content-type': 'application/json', ...headers }, body: JSON.stringify(body) });
+  const sub = (amount, club, fund) => post('/api/subscribe', { amount, fund, idem: 'idem-adm-' + amount + '-xxxxxxxxxx', club }, { authorization: 'Bearer ' + cus.id + '.' + token });
+  assert.equal((await sub(360, { name: 'The Cohens', show: true }, 'chai')).status, 200);
+  assert.equal((await sub(50, { name: 'x', show: true }, 'chai')).status, 200);
+  assert.equal((await fetch(base + '/admin/api/donors')).status, 401);
+  const login = await post('/admin/api/login', { password: 'correct horse battery' });
+  const h = { cookie: login.headers.get('set-cookie').split(';')[0] };
+  const j = await (await fetch(base + '/admin/api/donors', { headers: h })).json();
+  assert.equal(j.donors.length, 2); assert.equal(j.donors[0].level, 'gold'); assert.equal(j.donors[0].email, 'dina@example.com'); assert.equal(j.donors[0].onBoard, true);
+  assert.equal(j.donors[1].level, null); assert.equal(j.byLevel.gold.count, 1); assert.equal(j.byLevel.gold.monthly, 360); assert.equal(j.total.count, 2);
+  assert.equal((await fetch(base + '/admin/api/members', { headers: h })).status, 503); // no database connected
+});
