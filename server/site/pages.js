@@ -242,6 +242,7 @@ ${hols.map((h) => { const p = C.holidays.find((x) => x.slug === h.slug); return 
     if (!h) return next();
     const nextDate = await Z.nextDateOf(h.slug), evs = upcoming(new Date(), C).filter((e) => e.holiday === h.slug), cnt = await counts();
     const faqs = C.faq.filter((f) => f.holiday === h.slug);
+    const times = await require('./yearly.js').holidayTimes(h.slug).catch(() => null), ZMAN = require('./yearly.js').ZMAN;
     const body = `<article class="wrap sec narrow">
 <p class="crumbs"><a href="/holidays">${esc(t('Holidays'))}</a> ›</p>
 <h1>${esc(h.title)}${h.hebrew && X.lang !== 'he' ? ` <span class="he" lang="he">${esc(h.hebrew)}</span>` : ''}</h1>
@@ -249,6 +250,7 @@ ${nextDate ? `<p class="when">${esc(t('Next: {date}', { date: X.longDate(nextDat
 ${evs.length ? `<h2>${esc(t('Celebrate with us'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : ''}
 ${(() => { const fm = (C.forms || []).filter((f) => f.holiday === h.slug || (h.slug === 'yom-kippur' && f.holiday === 'rosh-hashanah')); return fm.length ? `<p class="btns">${fm.map((f) => `<a class="btn gold" href="/forms/${f.id}">${esc(f.title)}</a>`).join('')}</p>` : ''; })()}
 ${md(h.body)}
+${times && times.rows.length ? `<h2>${esc(t('Times for {holiday} {year} in Lafayette', { holiday: h.title, year: times.year }))}</h2><div class="tbl-wrap"><table class="tbl"><tbody>${times.rows.map((e) => { const n = /^Chanukah: (\d)/.exec(e.desc); return `<tr><td>${esc(X.shortDate(e.date))}</td><td>${esc(n ? (n[1] === '1' ? t('Night 1: light 1 candle') : t('Night {n}: light {n} candles', { n: n[1] })) : e.cat === 'candles' ? t('Candle lighting') : e.cat === 'havdalah' ? t('Ends') : t(ZMAN[e.desc]))}</td><td><strong>${esc(X.tm(e))}</strong></td></tr>`; }).join('')}</tbody></table></div><p class="muted">${h.slug === 'purim' ? esc(t('The Fast of Esther is the day before Purim.')) + ' ' : ''}${esc(t('Times for other towns:'))} <a href="/shabbat-times">${esc(t('Shabbat times'))}</a> · <a href="/tools/zmanim">${esc(t('Daily prayer times (zmanim)'))}</a></p>` : ''}
 ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
 </article>`;
     await render(res, { path: '/holidays/' + h.slug, title: t('{holiday} in Lafayette, Moraga & Orinda', { holiday: h.title + (nextDate ? ' ' + nextDate.date.slice(0, 4) : '') }), description: h.description || h.text.slice(0, 160), body, ld: [crumbs(base, [[t('Holidays'), '/holidays'], [h.title, '/holidays/' + h.slug]]), ...(faqs.length ? [faqLd(faqs)] : []), ...evs.map((e) => eventLd(C, base, e))] });

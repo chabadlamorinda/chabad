@@ -63,7 +63,7 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
     }
     // Welcome series for families new to the website: a welcome the day after they join, a Shabbat dinner
     // invitation a few days later, and what fits their family after about ten days. Each email once.
-    const fresh = (await q(`SELECT id, name, email, lang, (CURRENT_DATE - (first_login AT TIME ZONE 'America/Los_Angeles')::date) AS days FROM members
+    const fresh = (await q(`SELECT id, name, email, lang, ((now() AT TIME ZONE 'America/Los_Angeles')::date - (first_login AT TIME ZONE 'America/Los_Angeles')::date) AS days FROM members
       WHERE first_login > now() - interval '15 days' AND email <> '' AND news`)).rows;
     for (const m of fresh) {
       const step = m.days >= 10 ? 3 : m.days >= 4 ? 2 : m.days >= 1 ? 1 : 0;

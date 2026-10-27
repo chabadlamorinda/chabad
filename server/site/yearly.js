@@ -53,6 +53,19 @@ async function holidaysOf(year) {
   return out.sort((a, b) => a.date.localeCompare(b.date));
 }
 
+// Every time for the next time a holiday comes: candle lighting each evening, when it ends, the Chanukah nights,
+// fast and chametz times (for Lafayette).
+const ZMAN = { 'Fast begins': 'Fast begins', 'Fast ends': 'Fast ends', 'Finish eating chametz': 'Finish eating chametz', 'Biur Chametz': 'Burn the chametz by' };
+async function holidayTimes(slug, today = Z.ymd(Z.todayLocal())) {
+  const y = +today.slice(0, 4), list = [...await holidaysOf(y), ...await holidaysOf(y + 1)].filter((h) => h.page === slug && (h.end || h.date) >= today);
+  if (!list.length) return null;
+  const first = list[0], same = list.filter((h) => h.date <= Z.ymd(new Date(day(first.date).getTime() + 10 * 864e5)));
+  const from = minus1(first.date) < first.eve ? minus1(first.date) : first.eve, to = same.map((h) => h.end || h.date).sort().pop();
+  const evs = await Z.events(day(from), new Date(day(to).getTime() + 864e5));
+  const rows = evs.filter((e) => e.time && e.date >= from && e.date <= to && (e.cat === 'candles' || e.cat === 'havdalah' || /^Chanukah: \d/.test(e.desc) || (ZMAN[e.desc] && !(slug === 'passover' && /^Fast/.test(e.desc)))));
+  return { year: first.date.slice(0, 4), rows };
+}
+
 function mountYearly(r, { render, wrap, ctxOf, base, upcoming = () => [] }) {
   const thisYear = () => Z.todayLocal().getFullYear();
   r.get('/jewish-holidays', (req, res) => res.redirect(302, ctxOf(req).path('/jewish-holidays-' + thisYear())));
@@ -125,4 +138,4 @@ ${guide ? `<h2>${esc(t('Guide of the week'))}</h2><a class="card tile" href="/le
   r.get('/shabbat-times/:town', timesPage(null));
   return { paths: (C) => ['/this-week', '/shabbat-times', ...C.towns.filter((x) => x.slug !== 'lafayette').map((x) => '/shabbat-times/' + x.slug), '/jewish-holidays-' + thisYear(), '/jewish-holidays-' + (thisYear() + 1)] };
 }
-module.exports = { mountYearly, holidaysOf, guideOfWeek };
+module.exports = { mountYearly, holidaysOf, guideOfWeek, holidayTimes, ZMAN };

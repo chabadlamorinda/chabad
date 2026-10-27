@@ -506,6 +506,13 @@ test('robustness: broken addresses and impossible dates never show errors or cod
   assert.ok(bad.status >= 400 && bad.status < 500); assert.doesNotMatch(await bad.text(), /node_modules|\.js:\d+/);
 });
 
+test('holiday pages list that holiday\'s times (candles, endings, Chanukah nights)', async () => {
+  const c = client(), h = (await c.call('GET', '/holidays/chanukah')).text;
+  assert.match(h, /Times for Chanukah \d{4} in Lafayette/); assert.match(h, /Night 1: light 1 candle/); assert.match(h, /Night 8: light 8 candles/);
+  assert.match((await c.call('GET', '/holidays/yom-kippur')).text, /Candle lighting<\/td><td><strong>/);
+  assert.match((await c.call('GET', '/he/holidays/chanukah')).text, /מדליקים/);
+});
+
 test('site search: finds pages in the visitor\'s language, answers questions, goes to Hebrew or Russian when typed', async () => {
   const c = client();
   const r = (await c.call('GET', '/search?q=bar%20mitzvah')).text;
