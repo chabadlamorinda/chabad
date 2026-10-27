@@ -14,7 +14,7 @@ We are close to downtown Lafayette and the **Lafayette BART station**. From Orin
 ## Shabbat while you are here
 
 - **Candle lighting:** this week's times for Lafayette, Moraga and Orinda are on the [Shabbat page](/shabbat). Candle lighting is 18 minutes before sunset, and Shabbat ends at nightfall. For daily prayer times, see [zmanim](/tools/zmanim).
-- **Friday night:** Kabbalat Shabbat at 6:30 PM (the time may change with the season, so check the Shabbat page).
+- **Friday night:** Kabbalat Shabbat at {kabbalat-shabbat} (the time may change with the season, so check the Shabbat page).
 - **Shabbat dinner:** the Rabbi's family hosts a traditional Friday night meal any week of the year. Visitors are our guests. Please [let us know you are coming](/forms/shabbat-meal) so we can set a place, or ask to be hosted by a local family.
 - **Saturday morning:** services 10:00 AM to 12:00 PM, with Torah reading and a short talk, followed by a hot Kiddush lunch. The prayer book is bilingual and the Rabbi announces the pages.
 

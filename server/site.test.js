@@ -72,6 +72,15 @@ test('times carry the right Pacific offset across daylight saving', () => {
   assert.equal(withOffset('2026-07-01T10:00'), '2026-07-01T10:00:00-07:00');
   assert.equal(withOffset('2026-12-06T16:30'), '2026-12-06T16:30:00-08:00');
 });
+test('the Kabbalat Shabbat time is set once and shown everywhere, in every language', async () => {
+  const C = load(), raw = JSON.stringify(C);
+  assert.ok(!raw.includes('{kabbalat-shabbat}'), 'every {kabbalat-shabbat} is filled in');
+  assert.equal(C.org.weekly.find((w) => w.byDay === 'Friday').startTime, C.org.kabbalatShabbat);
+  const c = client(), h = parseInt(C.org.kabbalatShabbat, 10), en = `${h % 12 || 12}:${C.org.kabbalatShabbat.slice(3)} ${h < 12 ? 'AM' : 'PM'}`;
+  assert.ok((await c.call('GET', '/learn/shabbat-in-lamorinda')).text.includes(en));
+  for (const l of ['he', 'ru']) { const t = (await c.call('GET', `/${l}/learn/shabbat-in-lamorinda`)).text; assert.ok(t.includes(C.org.kabbalatShabbat) && !t.includes('{kabbalat-shabbat}'), l); }
+});
+
 test('markdown escapes HTML and unsafe links', () => {
   const h = md('# Hi\n<script>x</script> [a](javascript:alert(1)) **b**\n- one\n- two');
   assert.ok(!h.includes('<script>')); assert.ok(h.includes('href="#"')); assert.ok(h.includes('<strong>b</strong>')); assert.ok(h.includes('<ul><li>one</li><li>two</li></ul>'));

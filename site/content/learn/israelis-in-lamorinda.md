@@ -19,7 +19,7 @@ This whole website is available in Hebrew. Tap **עב** at the top of any page t
 
 ## Shabbat in Lafayette
 
-Shabbat here feels like home. **Kabbalat Shabbat** is on Friday evening at 6:30 PM (the time may change with the season), and Shabbat morning services are on **Saturday from 10:00 AM to 12:00 PM**, with the Torah reading, a short talk, children taking part, and then a hot Kiddush lunch. Candle lighting times for Lafayette, Moraga and Orinda are on the [Shabbat page](/shabbat).
+Shabbat here feels like home. **Kabbalat Shabbat** is on Friday evening at {kabbalat-shabbat} (the time may change with the season), and Shabbat morning services are on **Saturday from 10:00 AM to 12:00 PM**, with the Torah reading, a short talk, children taking part, and then a hot Kiddush lunch. Candle lighting times for Lafayette, Moraga and Orinda are on the [Shabbat page](/shabbat).
 
 Want a real Friday night meal with songs and a festive table? The Rabbi and Rebbetzin Tzipora Labkowski and their family host Shabbat dinners any week of the year. [Let us know you are coming](/forms/shabbat-meal), and bring the kids.
 

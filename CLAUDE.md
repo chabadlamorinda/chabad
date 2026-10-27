@@ -19,6 +19,8 @@ The Rabbi runs this website by talking to Claude. When he asks for something ("a
 | Design | `site/assets/site.css` |
 | Server code | `server/site/` |
 
+**Kabbalat Shabbat time** changes with the season: set it once in `org.json` (`"kabbalatShabbat": "17:45"`, 24-hour time). Every page, guide and FAQ that says `{kabbalat-shabbat}` shows it automatically in all three languages; when writing about Friday night, use `{kabbalat-shabbat}` instead of typing a time.
+
 Shabbat times, holiday dates, the Hebrew date and parsha are computed automatically (`server/site/zmanim.js`); never type them in by hand.
 
 ## Adding an event

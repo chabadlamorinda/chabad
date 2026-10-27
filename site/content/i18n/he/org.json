@@ -51,7 +51,7 @@
     },
     {
       "name": "קבלת שבת",
-      "time": "ליל שישי, 18:30",
+      "time": "ליל שישי, {kabbalat-shabbat}",
       "note": "השעה עשויה להשתנות לפי עונות השנה"
     },
     {
@@ -99,11 +99,11 @@
     },
     {
       "day": "יום שישי",
-      "time": "18:30",
+      "time": "{kabbalat-shabbat}",
       "name": "קבלת שבת",
       "link": "/shabbat",
       "byDay": "Friday",
-      "startTime": "18:30"
+      "startTime": "17:45"
     },
     {
       "day": "שבת",

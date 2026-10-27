@@ -17,7 +17,7 @@ On Friday nights, Rabbi Yisroel and Rebbetzin Tzipora Labkowski and their family
 
 Just [let us know you are coming](/forms/shabbat-meal) so we can set a place for you, and mention any dietary needs. Prefer to be hosted by a local family? The same form lets you ask, and we will make the match.
 
-You can also come earlier for **Kabbalat Shabbat** at 6:30 PM on Friday evening (the time may change with the season), or on **Saturday from 10 AM to 12 PM** for services followed by a hot Kiddush lunch. Candle lighting times are on the [Shabbat page](/shabbat).
+You can also come earlier for **Kabbalat Shabbat** at {kabbalat-shabbat} on Friday evening (the time may change with the season), or on **Saturday from 10 AM to 12 PM** for services followed by a hot Kiddush lunch. Candle lighting times are on the [Shabbat page](/shabbat).
 
 ## The holidays, away from home
 

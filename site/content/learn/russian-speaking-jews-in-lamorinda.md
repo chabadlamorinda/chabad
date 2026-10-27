@@ -13,7 +13,7 @@ This whole website is available in Russian. Tap **RU** at the top of any page to
 
 ## Come for Shabbat
 
-Shabbat is the heart of Jewish life, and the easiest way to begin. **Kabbalat Shabbat** is on Friday evening at 6:30 PM (the time may change with the season). On **Saturday from 10:00 AM to 12:00 PM** there are Shabbat morning services with the Torah reading, a short talk and children taking part, and then a hot Kiddush lunch. The prayer book is in Hebrew and English, and the Rabbi announces the pages, so no one feels lost.
+Shabbat is the heart of Jewish life, and the easiest way to begin. **Kabbalat Shabbat** is on Friday evening at {kabbalat-shabbat} (the time may change with the season). On **Saturday from 10:00 AM to 12:00 PM** there are Shabbat morning services with the Torah reading, a short talk and children taking part, and then a hot Kiddush lunch. The prayer book is in Hebrew and English, and the Rabbi announces the pages, so no one feels lost.
 
 Rabbi Yisroel and Rebbetzin Tzipora Labkowski and their family also host Shabbat dinners, any week of the year: a traditional Friday night meal with songs and warm conversation. [Let us know you are coming](/forms/shabbat-meal). Candle lighting times for our area are on the [Shabbat page](/shabbat).
 

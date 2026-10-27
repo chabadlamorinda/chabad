@@ -9,7 +9,7 @@ Every week, from Friday at sunset until Saturday night, Shabbat turns the busy p
 
 ## Friday night: Kabbalat Shabbat
 
-We welcome Shabbat with joyful singing at **Kabbalat Shabbat**, Friday evening at **6:30 PM**. The time may change with the season, so check [this week's Shabbat times](/shabbat) before you come. Candle lighting times for Lafayette, Moraga and Orinda are posted there every week.
+We welcome Shabbat with joyful singing at **Kabbalat Shabbat**, Friday evening at **{kabbalat-shabbat}**. The time may change with the season, so check [this week's Shabbat times](/shabbat) before you come. Candle lighting times for Lafayette, Moraga and Orinda are posted there every week.
 
 ## Shabbat dinner with the Rabbi's family
 

@@ -11,6 +11,23 @@ const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const LOCAL = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/;
 const CATEGORIES = ['shabbat', 'holiday', 'class', 'kids', 'teens', 'women', 'men', 'community', 'seniors', 'family', 'volunteer'];
 const LEARN_CATEGORIES = ['Lamorinda', 'Shabbat & holidays', 'Jewish home', 'Kosher', 'Prayer & Torah', 'Life cycle', 'Mourning & remembrance', 'Jewish ideas'];
+// The Kabbalat Shabbat time changes with the season, so it is set once in org.json ("kabbalatShabbat": "17:45")
+// and every text that says {kabbalat-shabbat} shows it: "5:45 PM" in English, "17:45" in Hebrew and Russian.
+const TIME_TOKEN = /\{kabbalat-shabbat\}/g;
+function fmtClock(hhmm, lang) {
+  const [h, m] = hhmm.split(':').map(Number);
+  return lang === 'en' ? `${h % 12 || 12}:${String(m).padStart(2, '0')} ${h < 12 ? 'AM' : 'PM'}` : hhmm;
+}
+function fillTimes(data, hhmm, lang) {
+  if (!hhmm) return data;
+  const time = fmtClock(hhmm, lang), seen = new Set();
+  const walk = (x) => {
+    if (!x || typeof x !== 'object' || seen.has(x)) return; seen.add(x);
+    for (const k of Object.keys(x)) { if (typeof x[k] === 'string') x[k] = x[k].replace(TIME_TOKEN, time); else walk(x[k]); }
+  };
+  walk(data);
+  return data;
+}
 const optJson = (dir, f, dflt) => (fs.existsSync(path.join(dir, f)) ? JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) : dflt);
 
 // A guide's "## Common questions" section becomes Q&A (shown as such and marked up for Google).
@@ -43,6 +60,7 @@ function load(dir = DIR) {
   const need = (cond, msg) => { if (!cond) errors.push(msg); };
 
   need(org.name && org.address && org.address.street, 'org.json: name and address are required');
+  need(!org.kabbalatShabbat || /^([01]\d|2[0-3]):[0-5]\d$/.test(org.kabbalatShabbat), 'org.json: kabbalatShabbat must look like 17:45 (24-hour time)');
   const seen = new Set();
   const uniq = (kind, slug) => { need(SLUG.test(slug || ''), `${kind}: bad slug "${slug}" (use lowercase-words-with-dashes)`); need(!seen.has(kind + slug), `${kind}: duplicate slug "${slug}"`); seen.add(kind + slug); };
   for (const p of programs) { uniq('program', p.slug); need(p.name && p.summary, `program ${p.slug}: name and summary are required`); }
@@ -92,7 +110,8 @@ function load(dir = DIR) {
   for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
-  return { org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, loadedAt: new Date() };
+  for (const w of org.weekly || []) if (org.kabbalatShabbat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = org.kabbalatShabbat;
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, loadedAt: new Date() }, org.kabbalatShabbat, 'en');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);
@@ -110,4 +129,4 @@ function miles(a, b) {
 }
 const fullAddress = (org) => `${org.address.street}, ${org.address.city}, ${org.address.region} ${org.address.postal}`;
 
-module.exports = { load, withOffset, fullAddress, CATEGORIES, LEARN_CATEGORIES, DIR, splitFaq };
+module.exports = { load, fillTimes, withOffset, fullAddress, CATEGORIES, LEARN_CATEGORIES, DIR, splitFaq };

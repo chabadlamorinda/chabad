@@ -12,6 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 const { frontMatter, plain } = require('./md.js');
+const { fillTimes } = require('./content.js');
 
 const LANGS = ['en', 'he', 'ru'];
 const NAMES = { en: 'English', he: 'עברית', ru: 'Русский' };
@@ -19,7 +20,7 @@ const LOCALE = { en: 'en-US', he: 'he-IL', ru: 'ru-RU' };
 const RTL = new Set(['he']);
 const FAQ_HEADING = { en: 'Common questions', he: 'שאלות נפוצות', ru: 'Частые вопросы' };
 // Fields that are keys or data, never translated (a translator's copy of these is ignored).
-const KEEP = new Set(['album', 'photos', 'slug', 'id', 'url', 'link', 'lat', 'lng', 'tier', 'start', 'end', 'category', 'holiday', 'program', 'image', 'flyer', 'rsvp', 'status', 'geo', 'phone', 'email', 'social', 'donateUrl', 'chapters', 'fund', 'amount', 'kind', 'related', 'order', 'urgent', 'icon', 'online', 'priceAmount', 'miles', 'address', 'staff', 'areaServed', 'alternateNames', 'name_en', 'type', 'required', 'rows', 'columns', 'min', 'max', 'amountEach', 'perChild', 'optional', 'levels', 'amounts', 'program', 'byDay', 'startTime', 'endTime']);
+const KEEP = new Set(['album', 'photos', 'slug', 'id', 'url', 'link', 'lat', 'lng', 'tier', 'start', 'end', 'category', 'holiday', 'program', 'image', 'flyer', 'rsvp', 'status', 'geo', 'phone', 'email', 'social', 'donateUrl', 'chapters', 'fund', 'amount', 'kind', 'related', 'order', 'urgent', 'icon', 'online', 'priceAmount', 'miles', 'address', 'staff', 'areaServed', 'alternateNames', 'name_en', 'type', 'required', 'rows', 'columns', 'min', 'max', 'amountEach', 'perChild', 'optional', 'levels', 'amounts', 'program', 'byDay', 'startTime', 'endTime', 'kabbalatShabbat']);
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return null; throw new Error(`${f}: ${e.message}`); } };
 
@@ -94,6 +95,7 @@ function createI18n(dir) {
     };
     // Event locations follow the translated org name when they are "at the center".
     for (const e of data.events) if (!e.location) e.loc = { ...e.loc, name: data.org.name };
+    fillTimes(data, en.org.kabbalatShabbat, lang);
     cache.set(lang, { src: en, data });
     return data;
   }
