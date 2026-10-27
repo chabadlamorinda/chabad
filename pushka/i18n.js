@@ -685,4 +685,8 @@ const HE = {
   "Chag Shavuos Sameach": "חג שבועות שמח",
   "Give to this cause": "תרמו למטרה זו",
   "Give now": "תרמו עכשיו",
+  "This week": "השבוע",
+  "Classic": "קלאסי",
+  "Wall plaque": "לוח קיר",
+  "Chabad of Lamorinda pushka": "קופת הצדקה של בית חב״ד לאמורינדה",
 };

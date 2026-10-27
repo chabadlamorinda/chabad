@@ -381,25 +381,39 @@ const sec = (title) => `<h6 style="color:var(--n700);margin:var(--s3) 0 var(--s1
 const PG = {};
 const fracOf = (p) => (p.balance > 0 ? Math.max(Math.min(p.balance / S.goal, 1), 0.07) : 0);
 const fillY = (f) => ((1 - f) * 124 + (f <= 0 ? 16 : 0)).toFixed(1);
-function tin(from) {
-  return `<svg width="220" height="252" viewBox="0 0 220 252" fill="none" style="display:block"><defs>
-<linearGradient id="bf" x1="0" x2="1"><stop offset="0" stop-color="#173766"/><stop offset=".2" stop-color="#2a5a9e"/><stop offset=".38" stop-color="#3b6cb3"/><stop offset=".7" stop-color="#24508f"/><stop offset="1" stop-color="#143059"/></linearGradient>
-<linearGradient id="bt" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#4f80c4"/><stop offset="1" stop-color="#2f5fa3"/></linearGradient>
-<linearGradient id="gd" x1="0" x2="1"><stop offset="0" stop-color="#a06f24"/><stop offset=".4" stop-color="#facb8d"/><stop offset="1" stop-color="#a06f24"/></linearGradient><clipPath id="lbl"><rect x="46" y="84" width="128" height="120" rx="2"/></clipPath>
+function tin(from) { // the pushka: a deep-blue tin with a brass nameplate for Chabad of Lamorinda
+  const name = LANG === "he" ? `<text x="123" y="225.2" text-anchor="middle" fill="#3a2504" style="font:700 10.5px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif" direction="rtl">חב״ד לאמורינדה</text>` : `<text x="70" y="224.4" textLength="112" lengthAdjust="spacingAndGlyphs" fill="#3a2504" style="font:700 8.6px 'Cormorant Garamond',Georgia,serif;letter-spacing:.9px">CHABAD OF LAMORINDA</text>`;
+  return `<svg width="220" height="252" viewBox="0 0 220 252" fill="none" style="display:block" role="img" aria-label="${esc(tt("Chabad of Lamorinda pushka"))}"><defs>
+<linearGradient id="bf" x1="0" x2="1"><stop offset="0" stop-color="#12306a"/><stop offset=".18" stop-color="#2a5a9e"/><stop offset=".36" stop-color="#4378c0"/><stop offset=".68" stop-color="#244f8e"/><stop offset="1" stop-color="#0f2755"/></linearGradient>
+<linearGradient id="bt" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#6a98d6"/><stop offset="1" stop-color="#2f5fa3"/></linearGradient>
+<linearGradient id="gd" x1="0" x2="1"><stop offset="0" stop-color="#a06f24"/><stop offset=".4" stop-color="#facb8d"/><stop offset=".7" stop-color="#e6b955"/><stop offset="1" stop-color="#a06f24"/></linearGradient>
+<linearGradient id="hl" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".34"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="lbl"><rect x="46" y="84" width="128" height="120" rx="2"/></clipPath>
 <linearGradient id="goldf" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f7d56a"/><stop offset="1" stop-color="#c28d41"/></linearGradient>
+<radialGradient id="rv" cx=".35" cy=".3"><stop offset="0" stop-color="#fff6d6"/><stop offset=".6" stop-color="#e6b955"/><stop offset="1" stop-color="#8a5d14"/></radialGradient>
 <pattern id="coinp" width="16" height="11" patternUnits="userSpaceOnUse"><ellipse cx="8" cy="5.5" rx="5.5" ry="3.6" fill="none" stroke="#8a5d14" stroke-width=".7" opacity=".5"/></pattern></defs>
-<ellipse cx="110" cy="236" rx="92" ry="9" fill="#2d2b2b" opacity=".2"/>
+<ellipse cx="110" cy="238" rx="94" ry="9" fill="#000" opacity=".3"/>
 <path d="M30 62H190V228Q190 232 186 232H34Q30 232 30 228Z" fill="url(#bf)"/>
+<rect x="30" y="62" width="160" height="170" rx="4" fill="url(#hl)" opacity=".55"/><rect x="30" y="62" width="160" height="170" rx="4" fill="url(#sh)"/>
 <path d="M30 62L46 38H174L190 62Z" fill="url(#bt)" stroke="#173766" stroke-width="1" stroke-linejoin="round"/>
-<path d="M30 62H190V70H30Z" fill="url(#gd)"/><path d="M30 218H190V228Q190 232 186 232H34Q30 232 30 228Z" fill="url(#gd)"/>
-<path d="M30 62H190V228Q190 232 186 232H34Q30 232 30 228Z" stroke="#173766" stroke-width="1"/>
-<rect x="78" y="46" width="64" height="7" rx="3.5" fill="#0f2442"/><rect x="78" y="46" width="64" height="2.5" rx="1.2" fill="#000" opacity=".5"/>
+<path d="M46 38H174" stroke="#9cc0ee" stroke-width="1.4" opacity=".8"/>
+<path d="M30 62H190V70H30Z" fill="url(#gd)"/>
+<g fill="url(#rv)" stroke="#6a4510" stroke-width=".4">${[40, 62, 84, 106, 128, 150, 172].map((x) => `<circle cx="${x}" cy="66" r="1.9"/>`).join("")}</g>
+<path d="M30 208H190V228Q190 232 186 232H34Q30 232 30 228Z" fill="url(#gd)"/><path d="M30 208H190" stroke="#5a3b0a" stroke-width=".8" opacity=".6"/><path d="M30 209.2H190" stroke="#fff3c4" stroke-width=".7" opacity=".7"/>
+<path d="M30 62H190V228Q190 232 186 232H34Q30 232 30 228Z" stroke="#0f2442" stroke-width="1"/>
+<rect x="74" y="43.5" width="72" height="11" rx="5.5" fill="url(#gd)"/><rect x="78" y="46" width="64" height="7" rx="3.5" fill="#0b1b36"/><rect x="78" y="46" width="64" height="2.5" rx="1.2" fill="#000" opacity=".5"/>
+<ellipse cx="124" cy="46.4" rx="11" ry="2.1" fill="#f6d77f"/><ellipse cx="124" cy="46.1" rx="9" ry="1.2" fill="#fff3c4" opacity=".8"/>
 <rect x="44" y="82" width="132" height="124" rx="3" fill="#f8f4f4" stroke="url(#gd)" stroke-width="2.5"/>
 <g clip-path="url(#lbl)"><g id="fillG" style="transform:translateY(${fillY(from)}px);transition:transform 1.1s cubic-bezier(.2,.8,.2,1) .5s">
 <rect x="44" y="84" width="132" height="130" fill="url(#goldf)"/><rect x="44" y="84" width="132" height="130" fill="url(#coinp)"/>
-<path d="M44 86 Q60.5 78 77 86 T110 86 T143 86 T176 86 V96 H44Z" fill="#ffe9a0" opacity=".9"/></g></g>
+<path d="M44 86 Q60.5 78 77 86 T110 86 T143 86 T176 86 V96 H44Z" fill="#ffe9a0" opacity=".9"/></g>
+<path d="M46 84H174V120Q110 100 46 150Z" fill="url(#gl)"/></g>
 <rect x="50" y="88" width="120" height="112" rx="1.5" stroke="#a06f24" stroke-width=".7"/>
-<text x="110" y="122" text-anchor="middle" fill="#173766" style="font:600 38px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif" direction="rtl">צדקה</text></svg>`;
+<text x="110" y="122" text-anchor="middle" fill="#173766" style="font:600 38px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif" direction="rtl">צדקה</text>
+<g transform="translate(40,211)"><circle cx="10" cy="10" r="9.6" fill="url(#rv)" stroke="#5a3b0a" stroke-width=".8"/><circle cx="10" cy="10" r="7.4" fill="none" stroke="#5a3b0a" stroke-width=".5" opacity=".7"/><path d="M4.6 13.4L3.8 7.4L7.2 9.8L10 5.4L12.8 9.8L16.2 7.4L15.4 13.4Z" fill="#14305e"/><rect x="4.8" y="13.8" width="10.4" height="1.6" rx=".6" fill="#14305e"/><circle cx="3.8" cy="7" r="1" fill="#14305e"/><circle cx="10" cy="5" r="1" fill="#14305e"/><circle cx="16.2" cy="7" r="1" fill="#14305e"/></g>
+${name}</svg>`;
 }
 function animateFill() {
   const p = P(), g = $("#fillG"); if (!g) return;
@@ -1081,16 +1095,19 @@ A.clubJoin = () => {
 A.clubJoinHome = () => { U.stack.push(U.page); U.page = "club"; draw(); };
 function mountBoard() {
   const el = $("#clubBoard"); if (!el || !window.ClubBoard) return;
-  const paint = (d) => { const e = $("#clubBoard"); if (e) { e.textContent = ""; e.appendChild(ClubBoard.render(d, { lang: LANG, onJoin: U.page === "board" })); } };
+  const paint = (d) => { const e = $("#clubBoard"); if (e) { e.textContent = ""; e.appendChild(ClubBoard.render(d, { lang: LANG, onJoin: U.page === "board", style: S.boardStyle === "wall" ? "wall" : "classic" })); } };
   paint(U.club.data);
   if (!U.club.loading && (!U.club.data || Date.now() - U.club.at > 60000)) { U.club.loading = true; ClubBoard.load("").then((d) => { U.club.data = d; U.club.at = Date.now(); }).catch(() => {}).finally(() => { U.club.loading = false; if (U.club.data) paint(U.club.data); }); }
 }
 // ---------- keep-coming-back features: week strip, intentions, today, occasions, achievements, auto-coin ----------
 const coinDays = () => new Set(S.history.filter((h) => h.kind === "coin").map((h) => dkey(new Date(h.t))));
-function weekStrip() {
-  const days = coinDays(), now = new Date(), out = [];
-  for (let i = 6; i >= 0; i--) { const d = new Date(now); d.setDate(d.getDate() - i); out.push(`<span class="wd ${days.has(dkey(d)) ? "on" : ""} ${i === 0 ? "today" : ""}" aria-label="${esc(greg(d))}${days.has(dkey(d)) ? " ✓" : ""}"><i>${esc(new Intl.DateTimeFormat(loc(), { weekday: "narrow" }).format(d))}</i><b></b></span>`); }
-  return `<div class="week" role="img" aria-label="${esc(tt("Your last 7 days"))}">${out.join("")}</div>`;
+function weekStrip() { // the calendar week, Sunday to Shabbat
+  const days = coinDays(), now = new Date(), out = [], sun = new Date(now); sun.setDate(now.getDate() - now.getDay());
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(sun); d.setDate(sun.getDate() + i); const isToday = dkey(d) === dkey(now), future = d > now && !isToday;
+    out.push(`<span class="wd ${days.has(dkey(d)) ? "on" : ""} ${isToday ? "today" : ""} ${future ? "future" : ""}" aria-label="${esc(greg(d))}${days.has(dkey(d)) ? " ✓" : ""}"><i>${esc(new Intl.DateTimeFormat(loc(), { weekday: "narrow" }).format(d))}</i><b></b></span>`);
+  }
+  return `<div class="week" role="img" aria-label="${esc(tt("This week"))}">${out.join("")}</div>`;
 }
 U.hm = { k: "honor", name: "" };
 A.why = () => { U.hm = { k: "honor", name: "" }; sheet(`<div><h3>${t("Give tzedakah in honor or memory")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Dedicate this coin to someone special.")}</div></div>
@@ -1165,8 +1182,9 @@ function boardCard() {
   const counts = ["platinum", "gold", "silver", "bronze"].map((l) => `<span class="bc">${medalSvg(l, 22)}<b>${d ? d.counts[l] || 0 : "·"}</b></span>`).join("");
   return `<button class="card boardcard" data-act="go" data-v="board"><div style="flex:1;text-align:start"><div class="card-title">${t("Our monthly donors")}</div><div class="h-s">${total ? t("{n} monthly donors keep our community going.", { n: total }) : t("Join the Chai Club and see your medal on our board.")}</div>${names.length ? `<div class="bn">${names.map((n) => esc(n)).join(" · ")}</div>` : ""}<div class="bcs">${counts}</div></div>${chev()}</button>`;
 }
+A.boardStyle = (v) => { S.boardStyle = v === "wall" ? "wall" : "classic"; save(); draw(); };
 A.clubJoinPage = () => { U.stack = ["give"]; U.page = "club"; draw(); };
-PG.board = () => sub(tt("Chai Club honor board"), `<p class="body-p">${t("These families give every month to keep Chabad of Lamorinda going. Join by name, or anonymously: you still get your medal.")}</p><div id="clubBoard"></div>`);
+PG.board = () => sub(tt("Chai Club honor board"), `<div class="chips"><button class="chip ${S.boardStyle !== "wall" ? "on" : ""}" data-act="boardStyle" data-v="classic">${t("Classic")}</button><button class="chip ${S.boardStyle === "wall" ? "on" : ""}" data-act="boardStyle" data-v="wall">${t("Wall plaque")}</button></div><p class="body-p">${t("These families give every month to keep Chabad of Lamorinda going. Join by name, or anonymously: you still get your medal.")}</p><div id="clubBoard"></div>`);
 
 // community counter (anonymous totals only) and announcements from the Rabbi
 let coinBuf = { n: 0, cents: 0 }, coinTimer = null;

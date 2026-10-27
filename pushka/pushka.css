@@ -406,3 +406,4 @@ html[lang=he] .hd-main h1{font-size:30px}
 .stickers{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;min-height:40px}
 .tabbar.kids{grid-template-columns:1fr}
 @media print{.tabbar,.noprint,#overlay,.head .icon-btn,.practice{display:none!important}body,#app{background:#fff!important;height:auto!important;overflow:visible!important}.scroll{overflow:visible!important}}
+.wd.future b{opacity:.4;border-style:dashed}.wd.future i{opacity:.5}

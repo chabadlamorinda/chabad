@@ -31,3 +31,33 @@
 @media (max-width:480px){.cb-paper{padding:24px 14px 20px}.cb-title{font-size:26px}.cb-names{grid-template-columns:1fr}}
 
 .cb-anon span{font-style:italic;font-weight:400;color:#605d5d}
+
+/* ===== Wall plaque style ===== */
+.cbw{max-width:760px;margin:0 auto;font-family:"Cormorant Garamond",Georgia,serif;color:#f3e6c8}
+.cbw *{box-sizing:border-box}
+.cbw-frame{padding:14px;border-radius:6px;background:linear-gradient(135deg,#6b4423,#3a2312 40%,#5a3a1d 70%,#2a180a);box-shadow:0 16px 36px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,220,160,.25)}
+.cbw-wood{position:relative;padding:26px 20px 24px;border-radius:3px;background:repeating-linear-gradient(90deg,rgba(0,0,0,.14) 0 1px,transparent 1px 9px),repeating-linear-gradient(90deg,rgba(255,225,170,.05) 0 2px,transparent 2px 23px),linear-gradient(180deg,#4a2c15,#3a220f 50%,#46290f);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5),inset 0 3px 14px rgba(0,0,0,.55)}
+.cbw-head{text-align:center;margin-bottom:20px}
+.cbw-plate-title{display:inline-block;min-width:60%;padding:10px 30px 12px;border-radius:4px;background:linear-gradient(135deg,#f3d88a,#b8872a 45%,#f0cf76 70%,#9a6c1b);box-shadow:0 3px 8px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.55),inset 0 -2px 3px rgba(80,48,6,.45);color:#3a2504;position:relative}
+.cbw-plate-title::before,.cbw-plate-title::after,.cbw-name::before,.cbw-name::after{content:"";position:absolute;top:50%;width:7px;height:7px;margin-top:-3.5px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0,#c9c9c9 35%,#6a6a6a 100%);box-shadow:0 1px 1px rgba(0,0,0,.5)}
+.cbw-plate-title::before,.cbw-name::before{left:8px}.cbw-plate-title::after,.cbw-name::after{right:8px}
+.cbw-he{font:700 34px/1.1 "Frank Ruhl Libre","Cormorant Garamond",serif;text-shadow:0 1px 0 rgba(255,255,255,.45)}
+.cbw-en{font:700 24px/1.1 "Cormorant Garamond",Georgia,serif;letter-spacing:.28em;text-shadow:0 1px 0 rgba(255,255,255,.45);margin-top:2px}
+.cbw-sub{margin:12px auto 0;max-width:460px;font:italic 500 16px/1.3 "Cormorant Garamond",Georgia,serif;color:#e8d7b0}
+.cbw-tier{margin-top:24px}
+.cbw-th{display:flex;align-items:center;gap:14px;padding:6px 14px;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.2));box-shadow:inset 0 1px 3px rgba(0,0,0,.6),0 1px 0 rgba(255,220,160,.18);margin-bottom:12px}
+.cbw-tn{font:700 24px/1.1 "Cormorant Garamond",Georgia,serif;letter-spacing:.2em;text-transform:uppercase;color:#f3d88a}
+.cbw-tr{font:500 14px "Cormorant Garamond",Georgia,serif;color:#cdb98d}
+.cbw-ct{margin-inline-start:auto;font:600 14px "Cormorant Garamond",Georgia,serif;color:#f3d88a;border:1px solid rgba(243,216,138,.5);border-radius:12px;padding:1px 10px}
+.cbw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.cbw-name{position:relative;padding:9px 26px 10px;text-align:center;border-radius:3px;background:linear-gradient(135deg,#f3d88a,#b8872a 45%,#f0cf76 70%,#9a6c1b);box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.55),inset 0 -2px 3px rgba(80,48,6,.45);color:#3a2504;font:700 18px/1.15 "Cormorant Garamond",Georgia,serif;letter-spacing:.06em;text-transform:uppercase;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+.cbw-name span{overflow-wrap:anywhere}
+.cbw-anon{opacity:.8;font-style:italic;font-weight:600}
+.t-platinum .cbw-name,.t-platinum .cbw-plate-title{background:linear-gradient(135deg,#f6fbff,#9db4cf 45%,#e9f2fb 70%,#7e97b6);color:#1b2c44;box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 #fff,inset 0 -2px 3px rgba(30,50,80,.4)}
+.t-silver .cbw-name{background:linear-gradient(135deg,#f4f5f7,#aeb4bd 45%,#eceef1 70%,#8a919b);color:#262b33;box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 #fff,inset 0 -2px 3px rgba(40,44,52,.4)}
+.t-bronze .cbw-name{background:linear-gradient(135deg,#f0c79c,#b87a45 45%,#e8b48a 70%,#8a5427);color:#3a1d07;box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,235,210,.6),inset 0 -2px 3px rgba(70,30,6,.45)}
+.cbw-empty{font:italic 500 16px "Cormorant Garamond",Georgia,serif;color:#cdb98d;padding:6px 4px}
+.cbw-more{margin-top:8px;font:italic 500 15px "Cormorant Garamond",Georgia,serif;color:#cdb98d}
+.cbw-foot{margin-top:26px;text-align:center;font:italic 500 16px "Cormorant Garamond",Georgia,serif;color:#e8d7b0}
+.cbw-cta{display:inline-block;margin-top:12px;padding:9px 24px;border-radius:3px;border:0;cursor:pointer;text-decoration:none;font:700 16px "Cormorant Garamond",Georgia,serif;letter-spacing:.14em;text-transform:uppercase;color:#3a2504;background:linear-gradient(135deg,#f3d88a,#b8872a 45%,#f0cf76 70%,#9a6c1b);box-shadow:0 3px 8px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.55)}
+@media (max-width:480px){.cbw-wood{padding:20px 12px}.cbw-grid{grid-template-columns:1fr}.cbw-tn{font-size:20px}}

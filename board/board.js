@@ -35,7 +35,8 @@
     return s;
   }
   function render(data, o) {
-    o = o || {}; var lang = o.lang === 'he' ? 'he' : 'en', X = T[lang];
+    o = o || {}; if (o.style === 'wall') return renderWall(data, o);
+    var lang = o.lang === 'he' ? 'he' : 'en', X = T[lang];
     data = data || { members: [], counts: {}, total: 0 };
     var box = el('div', 'cb'); box.setAttribute('lang', lang); box.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
     var frame = el('div', 'cb-frame'), paper = el('div', 'cb-paper'); frame.appendChild(paper); box.appendChild(frame);
@@ -64,6 +65,33 @@
     else if (o.onJoin) { var b = el('button', 'cb-cta', X.join); b.type = 'button'; b.setAttribute('data-act', 'clubJoinPage'); foot.appendChild(b); }
     paper.appendChild(foot);
     return box;
+  }
+  // "Wall plaque" style: a walnut panel with brass name plates, like a donor recognition wall.
+  function renderWall(data, o) {
+    var lang = o.lang === 'he' ? 'he' : 'en', X = T[lang]; data = data || { members: [], counts: {}, total: 0 };
+    var box = el('div', 'cbw'); box.setAttribute('lang', lang); box.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
+    var frame = el('div', 'cbw-frame'), wood = el('div', 'cbw-wood'); frame.appendChild(wood); box.appendChild(frame);
+    var head = el('div', 'cbw-head'), plate = el('div', 'cbw-plate-title'); plate.appendChild(el('div', 'cbw-he', 'מועדון חי'));
+    if (lang === 'en') plate.appendChild(el('div', 'cbw-en', 'CHAI CLUB')); head.appendChild(plate); head.appendChild(el('p', 'cbw-sub', X.sub)); wood.appendChild(head);
+    LEVELS.forEach(function (L) {
+      var count = (data.counts && data.counts[L.id]) || 0, names = (data.members || []).filter(function (m) { return m.level === L.id; }), quiet = count - names.length;
+      var tier = el('section', 'cbw-tier t-' + L.id); tier.setAttribute('data-level', L.id);
+      var th = el('div', 'cbw-th'); th.appendChild(medal(L.id, 44));
+      var tt = el('div', 'cbw-tt'); tt.appendChild(el('div', 'cbw-tn', L[lang])); tt.appendChild(el('div', 'cbw-tr', L.range[lang])); th.appendChild(tt);
+      if (count) th.appendChild(el('div', 'cbw-ct', X.members(count)));
+      tier.appendChild(th);
+      var grid = el('div', 'cbw-grid');
+      names.forEach(function (m) { var pl = el('div', 'cbw-name'); pl.appendChild(el('span', '', m.name)); grid.appendChild(pl); });
+      for (var q = 0; q < Math.min(quiet, 18); q++) { var ap = el('div', 'cbw-name cbw-anon'); ap.appendChild(el('span', '', X.anon)); grid.appendChild(ap); }
+      if (!count) grid.appendChild(el('div', 'cbw-empty', X.empty));
+      tier.appendChild(grid);
+      if (quiet > 18) tier.appendChild(el('div', 'cbw-more', X.more(quiet - 18)));
+      wood.appendChild(tier);
+    });
+    var foot = el('div', 'cbw-foot'); foot.appendChild(el('div', '', X.foot));
+    if (o.joinHref) { var a = el('a', 'cbw-cta', X.join); a.href = o.joinHref; a.target = '_top'; foot.appendChild(a); }
+    else if (o.onJoin) { var b = el('button', 'cbw-cta', X.join); b.type = 'button'; b.setAttribute('data-act', 'clubJoinPage'); foot.appendChild(b); }
+    wood.appendChild(foot); return box;
   }
   function load(base) { return fetch((base || '') + '/api/club').then(function (r) { if (!r.ok) throw new Error('board'); return r.json(); }); }
   root.ClubBoard = { render: render, medal: medal, load: load, LEVELS: LEVELS };
