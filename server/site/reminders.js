@@ -4,6 +4,7 @@
 // Runs once a day after 9 AM Lafayette time. Each email is logged so it is never sent twice.
 'use strict';
 const H = require('../../pushka/hebdate.js');
+const { fmtClock } = require('./content.js');
 
 const ptNow = (d) => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' }).formatToParts(d).map((x) => [x.type, x.value])); return { ymd: `${p.year}-${p.month}-${p.day}`, hour: +p.hour }; };
 
@@ -69,10 +70,12 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
         const towns = townsOf ? townsOf(['he', 'ru'].includes(m.lang) ? m.lang : 'en') : [], tw = towns.find((x) => x.slug === m.town) || towns.find((x) => x.slug === 'lafayette') || null;
         const where = tw ? { lat: tw.lat, lng: tw.lng, name: tw.slug } : undefined, sh = await Z.thisShabbat(new Date(today + 'T20:00:00Z'), where);
         if (!sh.candles || sh.candles.date !== today || !(await once(key = `shabbat:${m.id}:${today}`))) continue;
+        const ks = org.kabbalatShabbat ? await Z.kabbalatShabbat(org.kabbalatShabbat, new Date(today + 'T20:00:00Z')) : null;
         const t = T(m.lang), L = m.lang, loc = { en: 'en-US', he: 'he-IL', ru: 'ru-RU' }[L] || 'en-US', tm = (e) => Z.fmtTime(e.time, loc), town = tw ? tw.name : 'Lafayette';
         await send(key, { to: m.email, subject: t('Shabbat candle lighting today: {time} in {town}', { time: tm(sh.candles), town }), text: [
           t('Dear {name},', { name: m.name || t('friend') }), '',
           t('Candle lighting today in {town}: {time}.', { town, time: tm(sh.candles) }) + (sh.havdalah ? ' ' + t('Shabbat ends tomorrow at {time}.', { time: tm(sh.havdalah) }) : ''),
+          ks ? t('Kabbalat Shabbat at Chabad of Lamorinda: {time}', { time: fmtClock(ks, L === 'en' || !L ? 'en' : L) }) : null,
           sh.parsha ? t("This week's Torah portion:") + ' ' + (L === 'he' ? sh.parsha.titleHe : t(sh.parsha.title)) + ' ' + site(L, '/parsha') : '', '',
           t('Shabbat services and Kiddush:') + ' ' + site(L, '/shabbat'), t('Shabbat dinner:') + ' ' + site(L, '/forms/shabbat-meal'), '',
           t('Shabbat Shalom!'), org.name, '', t('Manage reminders:') + ' ' + site(L, '/account'),

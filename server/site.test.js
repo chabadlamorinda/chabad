@@ -319,7 +319,7 @@ test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitatio
   const fri = createReminders({ store, mailer: { send: async (x) => out.push(x) }, base: 'http://site.test', org: load().org, now: () => new Date('2026-10-30T17:00:00Z'), townsOf: () => load().towns });
   out.length = 0; await fri.run(); await fri.run();
   const sm = out.filter((x) => /Shabbat candle lighting today/.test(x.subject));
-  assert.equal(sm.length, 1); assert.match(sm[0].subject, /in Moraga/);
+  assert.equal(sm.length, 1); assert.match(sm[0].subject, /in Moraga/); assert.match(sm[0].text, /Kabbalat Shabbat at Chabad of Lamorinda: 5:45 PM/);
   // My prayer list: names added from the account can be renewed and removed by their owner only.
   assert.equal((await c.call('POST', '/api/site/submit', { kind: 'tehillim', title: 'Moshe ben Sarah', name: 'Rivka', email: 'sara@example.com' })).status, 200);
   let pr = (await c.call('GET', '/api/site/me/prayers')).json.items; assert.equal(pr.length, 1); assert.equal(pr[0].active, true);

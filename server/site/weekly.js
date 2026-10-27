@@ -6,6 +6,7 @@
 const crypto = require('crypto');
 const express = require('express');
 const Z = require('./zmanim.js');
+const { fmtClock } = require('./content.js');
 const { portionsOf } = require('./parsha.js');
 
 function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = console, upcoming }) {
@@ -30,7 +31,8 @@ function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = c
     const evs = upcoming().slice(0, 6), guide = require('./yearly.js').guideOfWeek(C);
     const lines = [];
     if (note.trim()) lines.push(note.trim(), '');
-    if (sh.candles) lines.push(`SHABBAT${sh.parsha ? ': ' + sh.parsha.title.toUpperCase() : ''}`, `Candle lighting ${X.shortDate(sh.candles.date)} at ${sh.candles.timeStr}${sh.havdalah ? `, Shabbat ends ${sh.havdalah.timeStr}` : ''} (Lafayette).`, `Services and Kiddush: ${base}/shabbat`, '');
+    const ks = C.org.kabbalatShabbat ? await Z.kabbalatShabbat(C.org.kabbalatShabbat) : null;
+    if (sh.candles) lines.push(`SHABBAT${sh.parsha ? ': ' + sh.parsha.title.toUpperCase() : ''}`, `Candle lighting ${X.shortDate(sh.candles.date)} at ${sh.candles.timeStr}${sh.havdalah ? `, Shabbat ends ${sh.havdalah.timeStr}` : ''} (Lafayette).`, ...(ks ? [X.t('Kabbalat Shabbat at Chabad of Lamorinda: {time}', { time: fmtClock(ks, 'en') })] : []), `Services and Kiddush: ${base}/shabbat`, '');
     for (const p of ps) lines.push(`THE TORAH PORTION: ${p.name}`, p.en.summary, '', `A lesson for today: ${p.en.lesson}`, `${base}/parsha`, '');
     if (evs.length) { lines.push('COMING UP'); for (const e of evs) lines.push(`* ${e.title}: ${X.when(e)}${e.rsvp ? ' (RSVP in one tap)' : ''}`, `  ${base}/events/${e.slug}`); lines.push(''); }
     if (hols[0]) { const h = C.holidays.find((x) => x.slug === hols[0].slug); lines.push(`NEXT HOLIDAY: ${h ? h.title : hols[0].title}, ${X.longDate(hols[0].date)}`, `${base}/holidays/${hols[0].slug}`, ''); }
@@ -45,7 +47,8 @@ function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = c
     const L = ['he', 'ru'].includes(lang) ? lang : 'en', X = ctxOf({ lang: L, method: 'GET', originalUrl: '/', query: {}, get: () => '' }), t = X.t, C = X.C;
     const site = (p) => base + (L === 'en' ? '' : '/' + L) + p, sh = await Z.thisShabbat(), hols = await Z.upcomingHolidays(45), evs = upcoming().slice(0, 4);
     const lines = [`*${t('Shabbat Shalom from Chabad of Lamorinda!')}*`, ''];
-    if (sh.candles) lines.push(`*${t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) })}: ${X.tm(sh.candles)}*${sh.havdalah ? ' · ' + t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }) : ''}`, `${t('Shabbat services and Kiddush')}: ${site('/shabbat')}`, '');
+    const ks = C.org.kabbalatShabbat ? await Z.kabbalatShabbat(C.org.kabbalatShabbat) : null;
+    if (sh.candles) lines.push(`*${t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) })}: ${X.tm(sh.candles)}*${sh.havdalah ? ' · ' + t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }) : ''}`, ...(ks ? [t('Kabbalat Shabbat at Chabad of Lamorinda: {time}', { time: fmtClock(ks, L) })] : []), `${t('Shabbat services and Kiddush')}: ${site('/shabbat')}`, '');
     if (sh.parsha) lines.push(`*${X.hc(sh.parsha)}*: ${site('/parsha')}`, '');
     if (evs.length) { lines.push(`*${t('Coming up')}*`); for (const e of evs) lines.push(`• ${(e[L] && e[L].title) || e.title}: ${X.when(e)}`, `  ${site('/events/' + e.slug)}`); lines.push(''); }
     if (hols[0]) { const h = C.holidays.find((x) => x.slug === hols[0].slug); lines.push(`*${t('Next holiday')}*: ${h ? h.title : X.hc(hols[0])}, ${X.longDate(hols[0].date)}`, ''); }

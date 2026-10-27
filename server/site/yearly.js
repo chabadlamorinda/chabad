@@ -4,6 +4,7 @@
 'use strict';
 const { esc } = require('./md.js');
 const Z = require('./zmanim.js');
+const { fmtClock } = require('./content.js');
 
 // [name shown, first day, last day, guide page, how it begins]
 const HOLIDAYS = [
@@ -119,12 +120,13 @@ function mountYearly(r, { render, wrap, ctxOf, base, upcoming = () => [] }) {
     const sh = towns.length ? towns[0][1] : await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [];
     const cal = (await Z.events(today, end)).filter((e) => !['candles', 'havdalah', 'parashat'].includes(e.cat) && !/^(Chanukah: \d|Omer)/.test(e.desc) || /Chanukah: 1 Candle/.test(e.desc));
     const evs = upcoming(new Date(), C).filter((e) => e.start.slice(0, 10) <= Z.ymd(end));
-    const L = (p) => p[X.lang] || p.en, guide = guideOfWeek(C);
+    const L = (p) => p[X.lang] || p.en, guide = guideOfWeek(C), ks = C.org.kabbalatShabbat ? await Z.kabbalatShabbat(C.org.kabbalatShabbat) : null;
     const body = `<section class="wrap sec narrow"><h1>${esc(t('This week in Jewish Lamorinda'))}</h1>
 <p class="lead-d">${esc(t('Shabbat times, the Torah portion, events and Jewish dates for Lafayette, Moraga, Orinda and nearby, updated every week.'))}</p>
 <h2>${esc(t('Shabbat'))}${sh.parsha ? ': ' + esc(X.hc(sh.parsha)) : ''}</h2>
 <div class="tbl-wrap"><table class="tbl"><thead><tr><th>${esc(t('Town'))}</th><th>${esc(t('Candle lighting'))}</th><th>${esc(t('Ends'))}</th></tr></thead><tbody>${towns.map(([tw, s]) => `<tr><td><a href="/jewish-${tw.slug}">${esc(tw.name)}</a></td><td><strong>${s.candles ? esc(X.tm(s.candles)) : ''}</strong>${s.candles ? ` <span class="muted">${esc(X.shortDate(s.candles.date))}</span>` : ''}</td><td>${s.havdalah ? esc(X.tm(s.havdalah)) : ''}</td></tr>`).join('')}</tbody></table></div>
 ${ps.map((p) => `<div class="card"><h3><a href="/parsha">${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}</a></h3><p>${esc(L(p).summary)}</p><p><strong>${esc(t('A lesson for today'))}:</strong> ${esc(L(p).lesson)}</p></div>`).join('')}
+${ks ? `<p class="lead-d"><strong>${esc(t('Kabbalat Shabbat at Chabad of Lamorinda: {time}', { time: fmtClock(ks, X.lang) }))}</strong></p>` : ''}
 <p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/forms/shabbat-meal">${esc(t('Shabbat dinner with the Rabbi'))}</a></p>
 <h2>${esc(t('Coming up at Chabad of Lamorinda'))}</h2>
 ${evs.length ? `<ul class="list">${evs.map((e) => `<li><a href="/events/${e.slug}"><strong>${esc(e.title)}</strong></a><br><span class="muted">${esc(X.when(e))}</span></li>`).join('')}</ul>` : ''}

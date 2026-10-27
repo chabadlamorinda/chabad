@@ -131,4 +131,4 @@ function miles(a, b) {
 }
 const fullAddress = (org) => `${org.address.street}, ${org.address.city}, ${org.address.region} ${org.address.postal}`;
 
-module.exports = { load, fillTimes, withOffset, fullAddress, CATEGORIES, LEARN_CATEGORIES, DIR, splitFaq };
+module.exports = { load, fillTimes, fmtClock, withOffset, fullAddress, CATEGORIES, LEARN_CATEGORIES, DIR, splitFaq };
