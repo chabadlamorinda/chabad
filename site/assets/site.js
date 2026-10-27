@@ -194,6 +194,15 @@
   }
 
   // ---------- "Ask us" chat ----------
+  // A random id for this visit's chat, so the Rabbi gets one note per conversation (no name, no tracking across visits).
+  function cid() { try { var c = sessionStorage.getItem('cl_cid'); if (!c) { c = Math.random().toString(36).slice(2) + Date.now().toString(36); sessionStorage.setItem('cl_cid', c); } return c; } catch (e) { return ''; } }
+  // Tapping Call / Text / WhatsApp the Rabbi lets him know (the call or message itself goes straight to his phone).
+  document.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('[data-lead]');
+    if (!a) return;
+    var body = JSON.stringify({ topic: a.getAttribute('data-lead'), channel: a.getAttribute('data-channel'), page: location.pathname.replace(/^\/(he|ru)(?=\/)/, ''), lang: LANG, cid: cid() });
+    try { fetch('/api/site/lead', { method: 'POST', credentials: 'omit', keepalive: true, headers: { 'content-type': 'application/json', 'x-site': '1' }, body: body }); } catch (e) {}
+  });
   var fab = $('[data-chat-open]');
   if (fab) {
     var panel = null, history = [], busy = false;
@@ -221,22 +230,29 @@
       if (busy || !q.trim()) return;
       busy = true; history.push({ role: 'user', content: q.trim() }); save(); bubble('user', q.trim());
       Array.prototype.forEach.call(panel.log.querySelectorAll('.chips'), function (c) { c.remove(); });
-      var b = el('div', { class: 'cm assistant typing', 'aria-label': T('Thinking…') }, [el('span'), el('span'), el('span')]), got = '', more = [];
+      var b = el('div', { class: 'cm assistant typing', 'aria-label': T('Thinking…') }, [el('span'), el('span'), el('span')]), got = '', more = [], contact = null;
       panel.log.appendChild(b); panel.log.scrollTop = panel.log.scrollHeight;
-      fetch('/api/site/chat', { method: 'POST', credentials: 'omit', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: history, lang: LANG, page: location.pathname }) }).then(function (r) {
+      fetch('/api/site/chat', { method: 'POST', credentials: 'omit', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: history, lang: LANG, page: location.pathname, cid: cid() }) }).then(function (r) {
         if (!r.ok || !r.body) throw new Error('chat');
         var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
         var pump = function () { return reader.read().then(function (x) {
           if (x.done) return;
           buf += dec.decode(x.value, { stream: true });
           var parts = buf.split('\n\n'); buf = parts.pop();
-          parts.forEach(function (p) { var d = /^data: (.*)$/m.exec(p); if (!d) return; try { var j = JSON.parse(d[1]); if (j.text) { got += j.text; b.classList.remove('typing'); render(got, b); panel.log.scrollTop = panel.log.scrollHeight; } if (j.suggest) more = j.suggest; } catch (e) {} });
+          parts.forEach(function (p) { var d = /^data: (.*)$/m.exec(p); if (!d) return; try { var j = JSON.parse(d[1]); if (j.text) { got += j.text; b.classList.remove('typing'); render(got, b); panel.log.scrollTop = panel.log.scrollHeight; } if (j.suggest) more = j.suggest; if (j.contact) contact = j.contact; } catch (e) {} });
           return pump();
         }); };
         return pump();
-      }).then(function () { if (!got) throw new Error('empty'); history.push({ role: 'assistant', content: got }); save(); offer(more); })
+      }).then(function () { if (!got) throw new Error('empty'); history.push({ role: 'assistant', content: got }); save(); reach(contact); offer(more); })
         .catch(function () { b.classList.remove('typing'); render(T('Sorry, something went wrong. Please call 925-384-7242.'), b); history.pop(); save(); })
         .then(function () { busy = false; panel.input.focus(); });
+    };
+    // Call / Text / WhatsApp the Rabbi, right in the chat (mezuzah, tefillin, giving, meeting).
+    var reach = function (c) {
+      if (!c) return;
+      var a = function (ch, label, cls) { return el('a', { class: 'btn sm ' + cls, href: c[ch], 'data-lead': c.topic, 'data-channel': ch, target: ch === 'whatsapp' ? '_blank' : null, rel: ch === 'whatsapp' ? 'noopener' : null, text: label }); };
+      panel.log.appendChild(el('div', { class: 'cm assistant reach' }, [el('strong', { text: c.title }), el('div', { class: 'btns' }, [a('call', c.labels.call, 'ghost'), a('text', c.labels.text, 'ghost'), a('whatsapp', 'WhatsApp', 'gold')]), el('p', { class: 'muted', text: c.note })]));
+      panel.log.scrollTop = panel.log.scrollHeight;
     };
     var offer = function (qs) {
       if (!qs || !qs.length) return;

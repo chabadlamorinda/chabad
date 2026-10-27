@@ -18,6 +18,17 @@
     app.appendChild(el('h1', { text: 'Website community' }));
     app.appendChild(el('p', {}, [el('a', { href: '/admin/', text: '← Rabbi’s desk' })]));
 
+    // ---- Requests from the website (mezuzah, tefillin, giving, meetings) ----
+    var sr = section('Requests from the website', 'People who tapped Call, Text or WhatsApp, or asked the chat, about a mezuzah, tefillin, giving or meeting you. Each one is also emailed to you as it happens; the call or message itself goes straight to your phone.');
+    api('GET', '/site/leads').then(function (x) {
+      if (x._status !== 200 || !x.items || !x.items.length) { sr.appendChild(el('p', { class: 'small', text: 'None yet.' })); return; }
+      var NAME = { mezuzah: 'Mezuzah', tefillin: 'Tefillin', donation: 'Giving', meeting: 'Meeting' }, HOW = { call: 'tapped Call', text: 'tapped Text', whatsapp: 'tapped WhatsApp', chat: 'asked the chat' };
+      x.items.slice(0, 60).forEach(function (i) {
+        sr.appendChild(el('div', { class: 'card' }, [el('strong', { text: NAME[i.topic] || i.topic }), el('span', { class: 'pill', text: HOW[i.channel] || i.channel }), i.lang !== 'en' ? el('span', { class: 'pill', text: i.lang }) : null,
+          el('div', { class: 'small', text: new Date(i.created_at).toLocaleString() + (i.page ? ' · ' + i.page : '') }), i.detail ? el('div', { class: 'small', text: i.detail }) : null]));
+      });
+    });
+
     // ---- People to reach out to ----
     var so = section('People to reach out to', 'Who to call or message this week, and why. Each message is ready and personal: tap WhatsApp (or text, email, call), adjust it if you like, send. Press Done to clear it.');
     var person = function (i, box) {

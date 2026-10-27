@@ -12,9 +12,10 @@
 'use strict';
 const express = require('express');
 const { plain } = require('./md.js');
-const { siteDocs, search } = require('./search.js');
+const { siteDocs, search, wordsOf, norm } = require('./search.js');
 const { fullAddress, fmtClock } = require('./content.js');
 const Z = require('./zmanim.js');
+const { topicOf, links, TOPICS } = require('./leads.js');
 
 const MAX_TURNS = 16, MAX_CHARS = 2000, MAX_ANSWER_TOKENS = 900;
 const LANG_NAME = { en: 'English', he: 'Hebrew', ru: 'Russian' };
@@ -69,9 +70,13 @@ function relevant(C, t, text, page = '') {
 }
 
 // Follow-up questions to tap, from the questions and answers of the pages that matched (free: no extra model call).
-function suggestions(docs, asked) {
+// Only from pages whose title shares a real word with the question (or the topic's own guide), so they stay on topic.
+function suggestions(docs, asked, topicDoc = null) {
   const seen = new Set(asked.map((q) => q.toLowerCase().trim()));
-  return docs.flatMap((d) => (d.faq || []).map((f) => f.q)).filter((q) => q.length < 90 && !seen.has(q.toLowerCase().trim())).slice(0, 3);
+  const words = wordsOf(asked.join(' ')).filter((w) => w.length > 3);
+  const close = (d) => words.some((w) => norm(d.title).includes(w) || d.url.includes(w));
+  const pool = [...(topicDoc ? [topicDoc] : []), ...docs.filter((d) => d !== topicDoc && close(d))];
+  return pool.flatMap((d) => (d.faq || []).map((f) => f.q)).filter((q) => q.length < 90 && !seen.has(q.toLowerCase().trim())).slice(0, 3);
 }
 
 const RULES = `You are the friendly "Ask us" assistant on the website of Chabad of Lamorinda, the Chabad center in Lafayette, California, led by Rabbi Yisroel and Rebbetzin Tzipora Labkowski. Visitors ask about Judaism, Jewish practice and holidays, and about this Chabad: times, programs, events, registration, donations, and help in life situations.
@@ -107,7 +112,7 @@ function searchAnswer(C, question, t) {
   return lines.join('\n');
 }
 
-function mountChat(app, { env = process.env, client: injected, content, ctxOf, limit, store, log = console }) {
+function mountChat(app, { env = process.env, client: injected, content, ctxOf, limit, store, log = console, leads = null }) {
   let client = injected || null;
   if (!client && env.ANTHROPIC_API_KEY) { const m = require('@anthropic-ai/sdk'); const Anthropic = m.default || m; client = new Anthropic(); }
   const model = 'claude-haiku-5-5'; // the Rabbi asked for the cheapest model, always
@@ -132,7 +137,9 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
     // The page the visitor is reading (a site path only), so "what time is this?" can be answered.
     const page = /^\/(he\/|ru\/)?[a-z0-9/-]{0,120}$/.test(String(req.body.page || '')) ? String(req.body.page).replace(/^\/(he|ru)(?=\/)/, '') : '';
     const userText = msgs.filter((m) => m.role === 'user').slice(-2).map((m) => m.content).join(' ');
-    const rel = relevant(C, t, userText, page), more = suggestions(rel.docs, msgs.filter((m) => m.role === 'user').map((m) => m.content));
+    const topic = topicOf(question), guideOf = { mezuzah: 'mezuzah', tefillin: 'tefillin', donation: 'supporting-chabad-of-lamorinda' }[topic];
+    const rel = relevant(C, t, userText, page), topicDoc = guideOf ? { ...C.learn.find((a) => a.slug === guideOf), url: '/learn/' + guideOf } : null;
+    const more = suggestions(rel.docs, msgs.filter((m) => m.role === 'user').map((m) => m.content), topicDoc && topicDoc.title ? topicDoc : null);
     if (pool) pool.query('INSERT INTO chat_questions (question, lang, ai) VALUES ($1,$2,$3)', [question.slice(0, 500), lang, !!client]).catch((e) => log.error('chat log:', e && e.message));
 
     res.setHeader('Content-Type', 'text/event-stream; charset=utf-8');
@@ -140,6 +147,13 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
     res.setHeader('X-Accel-Buffering', 'no');
     const send = (obj) => res.write(`data: ${JSON.stringify(obj)}\n\n`);
     const finish = () => { if (more.length) send({ suggest: more }); send({ done: true }); res.end(); };
+    // Mezuzah, tefillin, giving or meeting: offer Call / Text / WhatsApp with the Rabbi, and let the Rabbi know.
+    const cid = String(req.body.cid || '').replace(/[^a-z0-9]/gi, '').slice(0, 40);
+    if (topic) {
+      const L = links(C.org, topic, t);
+      send({ contact: { topic, title: t(TOPICS[topic].title), note: t('The Rabbi gets a note about this conversation so he can help.'), call: L.call, text: L.text, whatsapp: L.whatsapp, labels: { call: t('Call'), text: t('Text') } } });
+      if (leads) leads.record({ topic, channel: 'chat', page, lang, cid, detail: msgs.filter((m) => m.role === 'user').map((m) => '- ' + m.content).join('\n') }).catch(() => {});
+    }
     if (!client || !underCap()) { send({ text: searchAnswer(C, question, t) }); return finish(); }
 
     // Today's facts change daily, so they go after the cached knowledge.

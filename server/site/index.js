@@ -38,6 +38,7 @@ const { mountParsha, mountCalendar, mountDaily } = require('./parsha.js');
 const { mountWeekly } = require('./weekly.js');
 const { mountAsk } = require('./ask.js');
 const { DIR } = require('./content.js');
+const { mountLeads } = require('./leads.js');
 
 function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch, chatClient = undefined }) {
   const base = (env.PUBLIC_URL || 'https://www.chabadoflamorinda.com').replace(/\/+$/, '');
@@ -88,7 +89,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     const to = R[req.path.replace(/\/+$/, '') || '/'] || (aid && R['/' + aid]);
     return to ? res.redirect(301, to) : next();
   });
-  const chat = mountChat(app, { env, client: chatClient, content, ctxOf, limit, store, log });
+  const leads = mountLeads(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log });
+  const chat = mountChat(app, { env, client: chatClient, content, ctxOf, limit, store, log, leads });
   const community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf, townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   // pushka.* and kiddush.* addresses keep opening their apps.
   const isHome = (req) => !/^(pushka|kiddush)\./i.test(req.hostname) && (siteHome || req.hostname.replace(/^www\./, '') === host);
@@ -149,6 +151,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       board.mountAdmin(r2, ctx);
       forms.mountAdmin(r2, ctx);
       chat.mountAdmin(r2, ctx);
+      leads.mountAdmin(r2, ctx);
       weekly.mountAdmin(r2, ctx);
       ask.mountAdmin(r2, ctx);
       outreach.mountAdmin(r2, ctx);

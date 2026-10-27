@@ -376,3 +376,8 @@ h2[id] { scroll-margin-top: 80px; }
 .sh-times > div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .sh-times dt { margin: 0; }
 .sh-times dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rabbi-contact { margin: 28px 0; border-inline-start: 4px solid var(--gold, #c9a227); }
+.rabbi-contact h2 { margin-top: 0; }
+.cm.reach { display: flex; flex-direction: column; gap: 8px; max-width: 100%; }
+.cm.reach .btns { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
+.cm.reach .muted { margin: 0; font-size: .85rem; }

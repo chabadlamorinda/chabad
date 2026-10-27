@@ -91,6 +91,9 @@ Campaigns live in `store/google-ads/campaigns.json`; `node scripts/google-ads.js
 ## Facebook, Instagram and Google
 New events automatically appear as ready posts in the Rabbi area (`/admin/community`, "Social drafts"); the Rabbi publishes with one button. Give every event an `image` (or an image `flyer`) so posts are eye-catching and can go to Instagram. `npm run facebook:post -- <event-slug>` does the same from the command line.
 
+## Call / Text / WhatsApp the Rabbi (requests)
+Mezuzah, tefillin, giving and meeting pages (and the chat, whenever someone asks about these) show Call, Text and WhatsApp buttons with a ready message (`server/site/leads.js`; which pages: `PAGE_TOPICS`). Texts and WhatsApp go to `org.json` `"mobile"` if set, otherwise `"phone"`. Every tap and every such chat conversation is emailed to the Rabbi (ADMIN_EMAIL, or the org email) and listed in the Rabbi area under "Requests from the website".
+
 ## Community submissions
 Mazal Tovs, announcements, shiva notices, ideas and resources sent through `/community` wait in the Rabbi area for approval. When the Rabbi approves a resource or idea, add it to the right content file.
 
