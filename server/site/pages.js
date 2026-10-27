@@ -85,9 +85,8 @@ function mountPages(app, ctx) {
     </div>
     <div class="card shabbat-card" aria-label="${esc(t('This Shabbat'))}">
       <p class="eyebrow">${esc(t('This Shabbat'))}${sh.parsha ? ' · ' + esc(X.hc(sh.parsha)) : ''}</p>
-      ${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p>${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}
-      ${ks ? `<p>${esc(t('Kabbalat Shabbat at Chabad of Lamorinda: {time}', { time: fmtClock(ks, X.lang) }))}</p>` : ''}
-      ${sh.havdalah ? `<p>${esc(t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}</p>` : ''}
+      ${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p class="big-l">${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}
+      ${ks || sh.havdalah ? `<dl class="sh-times">${ks ? `<div><dt>${esc(t('Kabbalat Shabbat'))} <span class="muted">${esc(t('at Chabad'))}</span></dt><dd>${esc(fmtClock(ks, X.lang))}</dd></div>` : ''}${sh.havdalah ? `<div><dt>${esc(t('Shabbat ends'))} <span class="muted">${esc(X.shortDate(sh.havdalah.date))}</span></dt><dd>${esc(X.tm(sh.havdalah))}</dd></div>` : ''}</dl>` : ''}
       <div class="quick" data-shabbat-quick data-date="${sh.candles ? sh.candles.date : ''}" data-day="${sh.candles ? esc(X.shortDate(sh.candles.date)) : ''}" hidden></div>
       <p><a href="/shabbat">${esc(t('Services & Shabbat meals'))} →</a></p>
       <p><a href="/parsha">${esc(t("This week's Torah portion"))} →</a> · <a href="/shabbat-times">${esc(t('Shabbat times'))}</a> · <a href="/tools/zmanim">${esc(t('Daily prayer times (zmanim)'))}</a></p>

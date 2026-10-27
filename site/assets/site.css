@@ -371,3 +371,8 @@ h2[id] { scroll-margin-top: 80px; }
 @media (prefers-reduced-motion: reduce) { .cm.typing span { animation: none; opacity: .6; } }
 .chat-log .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chat-log .chips .chip { text-align: start; }
+.shabbat-card .big-l { margin-top: 0; color: var(--ink); }
+.sh-times { margin: 12px 0 14px; border-top: 1px solid var(--line); }
+.sh-times > div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.sh-times dt { margin: 0; }
+.sh-times dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }

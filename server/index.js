@@ -450,6 +450,14 @@ if (require.main === module) {
       stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '',
       store, sendPush, mailer: require('./mailer.js').createMailer({ url: process.env.SMTP_URL, from: process.env.MAIL_FROM }), reminders: true, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
     }).listen(port, () => console.log('Listening on ' + port));
+    // Render's free plan puts the server to sleep after 15 minutes without visitors; the next visitor then waits up to
+    // a minute, and no reminder emails go out while it sleeps. Visiting our own public address every 10 minutes keeps
+    // it awake (one always-on service fits in the free plan's 750 hours a month). KEEP_AWAKE=0 turns this off.
+    const self = process.env.RENDER_EXTERNAL_URL || '';
+    if (process.env.RENDER && self && process.env.KEEP_AWAKE !== '0') {
+      setInterval(() => { fetch(self.replace(/\/$/, '') + '/healthz').catch(() => {}); }, 10 * 60 * 1000).unref();
+      console.log('Keeping the server awake: ' + self);
+    }
   })().catch((e) => { console.error('Startup failed:', e.message); process.exit(1); });
 }
 

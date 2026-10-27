@@ -21,7 +21,7 @@ If `ADMIN_PASSWORD` is not set (or is shorter than 12 characters) the page does 
 ## 3. Notifications on closed apps (needs an always-on server)
 1. On your computer run `npx web-push generate-vapid-keys` (or ask me to give you a pair). It prints a **Public** and a **Private** key.
 2. Render → Environment: `VAPID_PUBLIC_KEY` and `VAPID_PRIVATE_KEY`.
-3. Change the service plan from **Free** to **Starter** (about $7/month). The free plan falls asleep, and a sleeping server cannot send reminders at 8 am or before candle lighting.
+3. The free plan normally falls asleep after 15 minutes without visitors (slow first page, no reminders while asleep). The website now keeps itself awake by visiting its own address every 10 minutes, which fits in the free plan's 750 hours a month, so you can stay on **Free**. If you ever add a second paid-hours service on Render, or Render changes its rules, switch to **Starter** (about $7/month) instead.
 
 ## 4. Failed-payment alerts (Stripe webhook)
 Stripe → **Developers → Webhooks → Add endpoint**:
