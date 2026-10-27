@@ -1,0 +1,35 @@
+{
+ "organization": {
+  "name": "Chabad of Lamorinda",
+  "nameHe": "חב״ד לאמורינדה",
+  "region": "Lamorinda",
+  "regionHe": "לאמורינדה",
+  "towns": "Lafayette, Moraga and Orinda",
+  "city": "Lafayette",
+  "cityHe": "לפייט",
+  "state": "CA",
+  "slug": "lamorinda"
+ },
+ "contact": {
+  "email": "rabbi@chabadoflamorinda.com",
+  "phone": "925-384-7242",
+  "street": "3477 Golden Gate Way",
+  "zip": "94549",
+  "ein": "47-4642750",
+  "domain": "chabadoflamorinda.com"
+ },
+ "website": {
+  "url": "https://www.chabadoflamorinda.com"
+ },
+ "location": {
+  "timezone": "America/Los_Angeles",
+  "candleZip": "94549"
+ },
+ "payments": {
+  "zelle": "",
+  "venmo": "CHABAD-LAMORINDA"
+ },
+ "android": {
+  "packageId": "com.chabadoflamorinda.pushka"
+ }
+}

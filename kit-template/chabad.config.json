@@ -1,0 +1,69 @@
+{
+  "_README": "This ONE file makes the app yours. Fill in your details, keep the quote marks and commas exactly as they are, save, then run: node scripts/customize.js  (Claude can do this for you). Never put passwords or Stripe keys in this file.",
+
+  "organization": {
+    "_help": "name: your Chabad in English. nameHe: the same in Hebrew. region: the area you serve, used in sentences like 'across Springfield'. towns: the towns you serve, used in 'across Springfield and Shelbyville'. city/state: where the building is. slug: a short lowercase word used in file names and the app's saved data.",
+    "name": "Chabad of Sampleton",
+    "nameHe": "חב״ד סמפלטון",
+    "region": "Meadowvale",
+    "regionHe": "מדובל",
+    "towns": "Aldertown, Bexley and Carrow",
+    "city": "Brookfield",
+    "cityHe": "ברוקפילד",
+    "state": "ST",
+    "slug": "samplehouse"
+  },
+
+  "contact": {
+    "_help": "These appear in the app, on receipts pages and in the privacy policy. ein is your US tax ID (for example 12-3456789); it is shown so donors can claim their tax deduction.",
+    "email": "office@sample-chabad.org",
+    "phone": "555-555-0100",
+    "street": "100 Sample Street",
+    "zip": "00000",
+    "ein": "00-0000000",
+    "domain": "sample-chabad.org"
+  },
+
+  "website": {
+    "_help": "url: your main website, with https:// and without a slash at the end.",
+    "url": "https://www.sample-chabad.org"
+  },
+
+  "location": {
+    "_help": "timezone: for example America/New_York, America/Chicago, America/Denver, America/Los_Angeles. candleZip: the US zip code used for candle lighting times (outside the US ask Claude to adapt this).",
+    "timezone": "America/New_York",
+    "candleZip": "10001"
+  },
+
+  "payments": {
+    "_help": "Card payments are set up with Stripe in SETUP-GUIDE.md. zelle: the email or phone that receives Zelle (leave empty to show 'ask us'). venmo: your Venmo username without the @.",
+    "zelle": "",
+    "venmo": "CHABAD-SAMPLE"
+  },
+
+  "android": {
+    "_help": "Only needed if you publish the app in Google Play. A reverse web address, for example org.springfieldchabad.pushka. It can never change once published.",
+    "packageId": "org.samplechabad.pushka"
+  },
+
+  "links": {
+    "_help": "Optional pages on your website. Leave empty to link to your website's home page.",
+    "donate": "",
+    "stock": "",
+    "crypto": "",
+    "building": ""
+  },
+
+  "features": {
+    "_help": "buildingCampaign: shows a building campaign section with giving levels (only if you have one; its wording is in pushka/pushka.js and pushka/i18n.js). kiddushBoard: shows 'Sponsor a Kiddush' in Give (needs the separate Kiddush board set up, see store/kiddush-setup.md).",
+    "buildingCampaign": false,
+    "kiddushBoard": false
+  },
+
+  "funds": [
+    { "id": "general", "name": "General Fund", "nameHe": "קרן כללית", "desc": "Where it’s needed most", "descHe": "במקום שהכי צריך", "long": "Supports the day-to-day work of Chabad of Sampleton.", "longHe": "תומך בעבודה היומיומית של חב״ד סמפלטון." },
+    { "id": "chai", "name": "Chai Club", "nameHe": "מועדון חי", "desc": "", "long": "A gift to the Chai Club of monthly donors.", "longHe": "תרומה למועדון חי של התורמים החודשיים." },
+    { "id": "holidays", "name": "Holiday Programs", "nameHe": "תוכניות חגים", "desc": "", "long": "Supports our holiday programs and community celebrations.", "longHe": "תומך בתוכניות החגים ובחגיגות הקהילה שלנו." },
+    { "id": "pledge", "name": "Pledge", "nameHe": "התחייבות", "desc": "", "long": "Use this to pay toward a pledge you have already made.", "longHe": "להשלמת תשלום של התחייבות שכבר התחייבתם עליה." }
+  ]
+}

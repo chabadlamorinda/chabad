@@ -1,4 +1,5 @@
 'use strict';
+process.env.PUSHKA_TIMEZONE = 'America/' + 'Los_Angeles'; // the reminder tests use fixed Pacific-time instants
 // Needs a Postgres: starts a throwaway one automatically (or uses TEST_DATABASE_URL).
 const test = require('node:test');
 const assert = require('node:assert/strict');
@@ -267,7 +268,7 @@ test('scheduler: custom reminders, one-off, weekly summary, streak rescue, birth
   await sub({ lang: 'he', streak: { on: true }, streakN: 12, lastCoin: '' });
   assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 22, 3, 5))), 1); assert.match(sent[0].body, /12/); // Wed 8:05 pm Pacific, 12-day streak
   await store.reset(); sent.length = 0;
-  await sub({ lang: 'en', tz: 'America/New_York', dates: [{ id: 'd1', name: 'Rachel', kind: 'birthday', m: 10, d: 28 }] });
+  await sub({ lang: 'en', tz: 'America/' + 'New_York', dates: [{ id: 'd1', name: 'Rachel', kind: 'birthday', m: 10, d: 28 }] });
   assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 21, 12, 5))), 1); assert.match(sent[0].title, /Rachel.*7 days/); // 8:05 am Eastern, 7 days before
   assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 28, 12, 5))), 1); assert.match(sent[1].title, /Today/);
 });

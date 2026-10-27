@@ -416,3 +416,6 @@ html[lang=he] .hd-main h1{font-size:30px}
 .toast{display:flex;align-items:center;gap:14px}
 .toast-act{border:0;background:transparent;color:#f6d77f;font:700 14px var(--body);text-decoration:underline;cursor:pointer;padding:4px 2px;min-height:32px}
 .h-a+.link{font-size:12px;margin-top:2px}
+/* practice-mode bar keeps dark text on its cream background, also on the dark home stage */
+.practice,.practice .pr-t,.practice .pr-b button{color:#5f3f08!important}
+.practice .pr-b button{border-color:#c9962f}

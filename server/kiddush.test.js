@@ -1,4 +1,5 @@
 'use strict';
+process.env.PUSHKA_TIMEZONE = 'America/' + 'Los_Angeles'; // the reminder tests use fixed Pacific-time instants
 // Kiddush board tests. Needs a Postgres: starts a throwaway one automatically (or uses TEST_DATABASE_URL).
 const test = require('node:test');
 const assert = require('node:assert/strict');

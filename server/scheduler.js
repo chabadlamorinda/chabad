@@ -2,7 +2,7 @@
 // Needs an always-on server: on a sleeping free plan no reminders go out.
 'use strict';
 const H = require('../pushka/hebdate.js');
-const PT = 'America/Los_Angeles'; // Lafayette, CA
+const PT = process.env.PUSHKA_TIMEZONE || 'America/Los_Angeles'; // Lafayette, CA (set PUSHKA_TIMEZONE to override)
 
 function ptParts(date, tz = PT) {
   const p = new Intl.DateTimeFormat('en-US', { timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', weekday: 'short', hourCycle: 'h23' }).formatToParts(date);

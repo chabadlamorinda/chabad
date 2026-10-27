@@ -6,7 +6,8 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "test": "node --test server/server.test.js server/members.test.js server/kiddush.test.js"
+    "test": "node --test server/server.test.js server/members.test.js server/kiddush.test.js",
+    "kit": "node scripts/make-pushka-kit.js"
   },
   "engines": {
     "node": ">=20"

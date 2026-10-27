@@ -55,3 +55,6 @@ Tests: `npm test` (starts a throwaway Postgres automatically).
 
 ## Ideas for keeping people engaged
 See [`store/ideas.md`](store/ideas.md): 30 ideas, with what is built and what is next.
+
+## Share this app with other Chabad houses (the "kit")
+`npm run kit` builds `pushka-kit.zip`: this app with our details and private data removed, sample values, a single `chabad.config.json`, a customizing script, instructions written for Claude (`START-HERE-FOR-CLAUDE.md`), a message to paste (`PROMPT-TO-PASTE.txt`) and a setup guide. The builder refuses to finish if any of our details remain or if the kit's own tests fail. Rebuild it whenever the app changes. The pieces live in `kit-template/` and `scripts/`.
