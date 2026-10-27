@@ -305,6 +305,13 @@ test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitatio
   out.length = 0; await fri.run(); await fri.run();
   const sm = out.filter((x) => /Shabbat candle lighting today/.test(x.subject));
   assert.equal(sm.length, 1); assert.match(sm[0].subject, /in Moraga/);
+  // My prayer list: names added from the account can be renewed and removed by their owner only.
+  assert.equal((await c.call('POST', '/api/site/submit', { kind: 'tehillim', title: 'Moshe ben Sarah', name: 'Rivka', email: 'sara@example.com' })).status, 200);
+  let pr = (await c.call('GET', '/api/site/me/prayers')).json.items; assert.equal(pr.length, 1); assert.equal(pr[0].active, true);
+  assert.equal((await client().call('POST', '/api/site/me/prayers/' + pr[0].id + '/remove')).status, 401, 'strangers cannot remove names');
+  assert.equal((await c.call('POST', '/api/site/me/prayers/' + pr[0].id + '/renew')).json.ok, true);
+  assert.equal((await c.call('POST', '/api/site/me/prayers/' + pr[0].id + '/remove')).json.ok, true);
+  assert.equal((await c.call('GET', '/api/site/me/prayers')).json.items.length, 0);
   // Bar/Bat Mitzvah invitation about 18 months ahead, sent once. A girl born 11 years ago turns 12 (Bat Mitzvah) in about a year.
   await c.call('PUT', '/api/site/family', { family: [{ name: 'Chaya', relation: 'child', gender: 'f', birthday: '2015-12-01' }, { name: 'Moshe', relation: 'child', gender: 'm', birthday: '2024-01-01' }] });
   out.length = 0; await rem.run(); await rem.run();

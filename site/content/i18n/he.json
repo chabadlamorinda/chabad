@@ -969,5 +969,12 @@
  "Add a yahrzeit to remember": "הוסיפו יארצייט לזכור",
  "Add a phone number": "הוסיפו מספר טלפון",
  "Get started": "מתחילים",
- "{done} of {all} done": "{done} מתוך {all} הושלמו"
+ "{done} of {all} done": "{done} מתוך {all} הושלמו",
+ "Name for prayer (Hebrew name and mother's name, if you know them)": "שם לתפילה (שם עברי ושם האם, אם ידוע)",
+ "on the list since {date}": "ברשימה מאז {date}",
+ "no longer on the list": "כבר לא ברשימה",
+ "Renew": "חידוש",
+ "My prayer list": "רשימת התפילה שלי",
+ "Names for a refuah shleimah (complete recovery). The Rabbi and the community say Tehillim for them. Names stay on the list for 90 days; renew with one tap.": "שמות לרפואה שלמה. הרב והקהילה אומרים עליהם תהילים. השמות נשארים ברשימה 90 יום; אפשר לחדש בלחיצה.",
+ "Added. May they have a complete recovery.": "נוסף. רפואה שלמה!"
 }

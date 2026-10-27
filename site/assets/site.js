@@ -395,7 +395,16 @@
     var start = doneN < steps.length ? el('section', { class: 'card start' }, [el('h2', { text: T('Get started') }), el('p', { class: 'muted', text: T('{done} of {all} done', { done: doneN, all: steps.length }) }), el('div', { class: 'bar' }, [el('span', { style: 'width:' + Math.round(100 * doneN / steps.length) + '%' })]),
       el('ul', { class: 'steps' }, steps.map(function (x) { return el('li', { class: x[1] ? 'done' : '' }, [x[1] ? el('span', { text: '✓ ' + x[0] }) : el('a', { href: x[2], text: x[0] })]); }))]) : null;
     s1.id = 'me'; s2.id = 'family';
-    [start, up, s1, s2, s3, rs, out].forEach(function (n) { if (n) acct.appendChild(el('section', {}, [n])); });
+    // My prayer list
+    var pList = el('ul', { class: 'list' }), pName = field(T('Name for prayer (Hebrew name and mother\'s name, if you know them)'), ''), pMsg = el('p', { class: 'msg', hidden: true });
+    var loadPrayers = function () { fetch('/api/site/me/prayers', { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (r) { pList.textContent = ''; (r.items || []).forEach(function (x) {
+      var act = function (a) { return function () { fetch('/api/site/me/prayers/' + x.id + '/' + a, { method: 'POST', credentials: 'same-origin', headers: { 'x-site': '1' } }).then(loadPrayers); }; };
+      pList.appendChild(el('li', {}, [el('strong', { text: x.title }), ' ', el('span', { class: 'muted', text: x.active ? T('on the list since {date}', { date: x.since }) : T('no longer on the list') }), ' ', el('button', { type: 'button', class: 'btn sm ghost', text: T('Renew'), on: { click: act('renew') } }), ' ', el('button', { type: 'button', class: 'btn sm ghost', text: T('Remove'), on: { click: act('remove') } })]));
+    }); }).catch(function () {}); };
+    var s4 = el('form', { class: 'card', id: 'prayers' }, [el('h2', { text: T('My prayer list') }), el('p', { class: 'muted', text: T('Names for a refuah shleimah (complete recovery). The Rabbi and the community say Tehillim for them. Names stay on the list for 90 days; renew with one tap.') }), pList, pName, el('p', {}, [el('button', { class: 'btn gold', text: T('Add to the prayer list') })]), pMsg, el('p', {}, [el('a', { href: P('/tehillim'), text: T('Tehillim for every occasion') + ' →' })])]);
+    s4.addEventListener('submit', function (ev) { ev.preventDefault(); var n = pName.input.value.trim(); if (!n) return; api('POST', '/submit', { kind: 'tehillim', title: n.slice(0, 120), name: p.name || p.email, email: p.email }).then(function (r) { msg(pMsg, r.ok ? T('Added. May they have a complete recovery.') : r.error, r.ok); if (r.ok) { pName.input.value = ''; loadPrayers(); } }); });
+    loadPrayers();
+    [start, up, s1, s2, s3, s4, rs, out].forEach(function (n) { if (n) acct.appendChild(el('section', {}, [n])); });
     if (!p.name) f.name.input.focus();
     if (location.hash === '#yahrzeits') s3.scrollIntoView();
   }

@@ -83,6 +83,19 @@ ${tile('/community?k=photo#share', 'Share your photos', 'Took great photos at an
     res.json({ ok: true });
   }));
 
+  // My prayer list (in My account): the names this member put on the Tehillim list, to renew (names stay 90 days) or remove.
+  r.get('/api/site/me/prayers', wrap(async (req, res) => {
+    const m = readMember && await readMember(req); if (!m || !pool) return res.status(401).json({ code: 'unauthorized' });
+    res.set('Cache-Control', 'no-store').json({ items: (await q("SELECT id, title, to_char(created_at,'YYYY-MM-DD') AS since, (created_at > now() - interval '90 days') AS active FROM submissions WHERE kind='tehillim' AND member_id=$1 AND status NOT IN ('declined','removed') ORDER BY created_at DESC LIMIT 30", [m.id])).rows });
+  }));
+  r.post('/api/site/me/prayers/:id/:action', wrap(async (req, res) => {
+    if (req.get('x-site') !== '1') return res.status(403).end();
+    const m = readMember && await readMember(req); if (!m || !pool) return res.status(401).json({ code: 'unauthorized' });
+    const sql = req.params.action === 'renew' ? "UPDATE submissions SET created_at=now() WHERE id=$1 AND member_id=$2 AND kind='tehillim'" : req.params.action === 'remove' ? "UPDATE submissions SET status='removed' WHERE id=$1 AND member_id=$2 AND kind='tehillim'" : null;
+    if (!sql) return res.status(400).json({ code: 'invalid' });
+    res.json({ ok: (await q(sql, [req.params.id, m.id])).rowCount === 1 });
+  }));
+
   return {
     approved,
     // The Rabbi's private lists: who is on the Tehillim list right now, and open Kaddish requests.

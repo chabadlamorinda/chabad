@@ -969,5 +969,12 @@
  "Add a yahrzeit to remember": "Добавьте йорцайт",
  "Add a phone number": "Добавьте номер телефона",
  "Get started": "Начнём",
- "{done} of {all} done": "Готово: {done} из {all}"
+ "{done} of {all} done": "Готово: {done} из {all}",
+ "Name for prayer (Hebrew name and mother's name, if you know them)": "Имя для молитвы (еврейское имя и имя матери, если знаете)",
+ "on the list since {date}": "в списке с {date}",
+ "no longer on the list": "уже не в списке",
+ "Renew": "Продлить",
+ "My prayer list": "Мой молитвенный список",
+ "Names for a refuah shleimah (complete recovery). The Rabbi and the community say Tehillim for them. Names stay on the list for 90 days; renew with one tap.": "Имена для рефуа шлейма (полного выздоровления). Раввин и община читают за них Тегилим. Имена остаются в списке 90 дней; продлить можно одним нажатием.",
+ "Added. May they have a complete recovery.": "Добавлено. Рефуа шлейма!"
 }
