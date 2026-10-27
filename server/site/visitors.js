@@ -5,7 +5,7 @@
 //   their visits are linked to them, before and after.
 // * Pages are grouped into interests (giving, Bar/Bat Mitzvah, mezuzah...). When a known person looks at an important
 //   one, the Rabbi gets an email (once a week per person and interest) and sees them in the Rabbi area.
-// * Visits are kept for 13 months.
+// * Visits are kept for 3 years (the Rabbi's choice).
 'use strict';
 const express = require('express');
 
@@ -63,7 +63,7 @@ function mountVisitors(app, { store, mailer, notifyTo = '', content, base = '', 
     if (!vid || !/^\/[a-z0-9/._-]{0,150}$/i.test(path) || /^\/(admin|api)\b/.test(path)) return;
     try {
       const r = await q('INSERT INTO visitor_views (vid, path) VALUES ($1,$2) ON CONFLICT DO NOTHING', [vid, path]);
-      if (++inserts % 500 === 0) q("DELETE FROM visitor_views WHERE day < CURRENT_DATE - 400").catch(() => {});
+      if (++inserts % 500 === 0) q("DELETE FROM visitor_views WHERE day < CURRENT_DATE - 1096").catch(() => {});
       const m = await readMember(req).catch(() => null);
       if (m && m.email) await link(vid, { name: m.name, email: String(m.email).toLowerCase(), phone: m.phone, source: 'account' });
       const it = interestOf(path);
