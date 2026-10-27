@@ -959,5 +959,15 @@
  "Candle lighting today in {town}: {time}.": "Зажигание свечей сегодня ({town}): {time}.",
  "Shabbat ends tomorrow at {time}.": "Шабат заканчивается завтра в {time}.",
  "This week's Torah portion:": "Недельная глава:",
- "Shabbat Shalom!": "Шабат шалом!"
+ "Shabbat Shalom!": "Шабат шалом!",
+ "Save your family's details so next time is one tap:": "Сохраните данные семьи, и в следующий раз хватит одного касания:",
+ "Create your free family account": "Создайте бесплатный семейный аккаунт",
+ "Add your family": "Добавьте семью",
+ "Add your Hebrew name": "Добавьте еврейское имя",
+ "Choose your town": "Выберите свой город",
+ "Get the Friday candle-lighting email": "Получайте письмо со временем зажигания свечей по пятницам",
+ "Add a yahrzeit to remember": "Добавьте йорцайт",
+ "Add a phone number": "Добавьте номер телефона",
+ "Get started": "Начнём",
+ "{done} of {all} done": "Готово: {done} из {all}"
 }

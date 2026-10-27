@@ -20,6 +20,11 @@
     return fetch('/api/site' + path, { method: method, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1', 'x-lang': LANG }, body: body ? JSON.stringify(body) : undefined })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; return j; }); });
   }
+  // After a guest RSVP or form: invite them to save their details for next time.
+  function nudge(after) {
+    if (store.get('cl_signed') || !after || after.querySelector('.nudge')) return;
+    after.appendChild(el('p', { class: 'nudge' }, [T('Save your family\'s details so next time is one tap:') + ' ', el('a', { href: P('/account'), text: T('Create your free family account') + ' →' })]));
+  }
   function msg(node, text, ok) { node.textContent = text || ''; node.className = 'msg ' + (ok ? 'ok' : 'err'); node.hidden = !text; }
   function stepper(label, value, min) {
     var out = el('output', { text: String(value) }), v = value;
@@ -88,7 +93,7 @@
         if (!s.signedIn) store.set('cl_guest', { name: name.value, email: email.value, phone: phone.value });
         api('POST', '/rsvp/' + slug, body).then(function (r) {
           go.disabled = false;
-          if (r.ok) { msg(m, T('Thank you! You are on the list. See you there.'), true); go.textContent = T('Update my RSVP'); if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug }); }
+          if (r.ok) { msg(m, T('Thank you! You are on the list. See you there.'), true); nudge(m.parentNode); go.textContent = T('Update my RSVP'); if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug }); }
           else msg(m, r.error || T('Something went wrong.'));
         });
       });
@@ -179,7 +184,7 @@
       api('POST', '/forms/' + fid, { fields: fields }).then(function (r) {
         b.disabled = false;
         if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
-        msg(m, T('Thank you! We received it and the Rabbi will be in touch.') + (r.amount ? ' ' + T('Total: ${amount}', { amount: r.amount }) : ''), true);
+        msg(m, T('Thank you! We received it and the Rabbi will be in touch.') + (r.amount ? ' ' + T('Total: ${amount}', { amount: r.amount }) : ''), true); nudge(form);
         var pay = $('.pay-next', form);
         if (pay && r.payUrl) { $('a', pay).href = r.payUrl; pay.hidden = false; }
         b.hidden = true;
@@ -384,7 +389,13 @@
     // My upcoming Jewish dates, each with a way to mark it.
     var KIND = { 'yahrzeit': ['Yahrzeit', '/sponsor?o=yahrzeit&name=', 'Sponsor in their memory'], 'hebrew-birthday': ['Hebrew birthday', '/sponsor?o=birthday&name=', 'Mark the occasion: sponsor a Kiddush or give in their honor'], 'bar-mitzvah': ['Bar Mitzvah', '/help/bar-bat-mitzvah?', 'Plan the Bar or Bat Mitzvah with the Rabbi'], 'bat-mitzvah': ['Bat Mitzvah', '/help/bar-bat-mitzvah?', 'Plan the Bar or Bat Mitzvah with the Rabbi'], 'anniversary': ['Wedding anniversary', '/sponsor?o=anniversary&name=', 'Mark the occasion: sponsor a Kiddush or give in their honor'], 'mezuzah-check': ['Mezuzahs due for checking', '/forms/mezuzah-tefillin?name=', 'Have them checked by a scribe'], 'tefillin-check': ['Tefillin due for checking', '/forms/mezuzah-tefillin?name=', 'Have them checked by a scribe'] };
     var up = (me.upcoming || []).length ? el('section', { class: 'card' }, [el('h2', { text: T('My upcoming Jewish dates') }), me.calendarUrl ? el('p', {}, [el('a', { class: 'btn sm ghost', href: me.calendarUrl, text: T('Add my Jewish dates to my phone calendar') })]) : null, el('ul', { class: 'list' }, me.upcoming.map(function (u) { var k = KIND[u.kind] || [u.kind, '/sponsor?', 'Sponsor']; return el('li', {}, [el('strong', { text: new Date(u.date + 'T12:00:00Z').toLocaleDateString(LANG === 'he' ? 'he-IL' : LANG === 'ru' ? 'ru-RU' : 'en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }) }), ' · ' + T(k[0]) + ': ' + u.name + ' ', u.parshaLabel ? el('a', { href: P(u.parshaSlug ? '/parsha/' + u.parshaSlug : '/parsha'), text: '(' + u.parshaLabel + ')' }) : null, u.parshaLabel ? ' ' : null, el('a', { href: P(k[1] + encodeURIComponent(u.name)), text: T(k[2]) })]); }))]) : null;
-    [up, s1, s2, s3, rs, out].forEach(function (n) { if (n) acct.appendChild(el('section', {}, [n])); });
+    // Getting started: a short checklist until the family has set up the things that make the account useful.
+    var steps = [[T('Add your family'), me.family.length > 0, '#family'], [T('Add your Hebrew name'), !!p.hebrewName, '#me'], [T('Choose your town'), !!p.town, '#me'], [T('Get the Friday candle-lighting email'), !!p.shabbatEmail, '#me'], [T('Add a yahrzeit to remember'), me.yahrzeits.length > 0, '#yahrzeits'], [T('Add a phone number'), !!p.phone, '#me']];
+    var doneN = steps.filter(function (x) { return x[1]; }).length;
+    var start = doneN < steps.length ? el('section', { class: 'card start' }, [el('h2', { text: T('Get started') }), el('p', { class: 'muted', text: T('{done} of {all} done', { done: doneN, all: steps.length }) }), el('div', { class: 'bar' }, [el('span', { style: 'width:' + Math.round(100 * doneN / steps.length) + '%' })]),
+      el('ul', { class: 'steps' }, steps.map(function (x) { return el('li', { class: x[1] ? 'done' : '' }, [x[1] ? el('span', { text: '✓ ' + x[0] }) : el('a', { href: x[2], text: x[0] })]); }))]) : null;
+    s1.id = 'me'; s2.id = 'family';
+    [start, up, s1, s2, s3, rs, out].forEach(function (n) { if (n) acct.appendChild(el('section', {}, [n])); });
     if (!p.name) f.name.input.focus();
     if (location.hash === '#yahrzeits') s3.scrollIntoView();
   }

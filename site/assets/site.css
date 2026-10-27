@@ -355,3 +355,12 @@ h2[id] { scroll-margin-top: 80px; }
   .tile.has-art > :not(.art) { grid-column: 2; }
   .grid { gap: 10px; }
 }
+
+/* account: getting started */
+.start .bar { height: 8px; border-radius: 99px; background: var(--soft); overflow: hidden; margin: 6px 0 12px; }
+.start .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-2)); }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.steps li.done { color: var(--muted); }
+.nudge { margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: #fffaf0; border: 1px dashed var(--gold); }
+@media (prefers-color-scheme: dark) { .nudge { background: var(--card); } }
+.card > h2:first-child { margin-top: 0; }
