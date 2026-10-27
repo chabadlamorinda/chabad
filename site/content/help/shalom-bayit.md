@@ -8,6 +8,10 @@ related: disputes, grief-and-hard-times, talk-to-the-rabbi, getting-married
 ---
 Every marriage and every family goes through hard times. If you are struggling, you do not have to carry it alone. Rabbi Yisroel Labkowski and Rebbetzin Tzipora Labkowski are here to listen, privately and without judgment. Call **925-384-7242** or reach out through [/contact](/contact) to set up a confidential conversation. You can talk with the Rabbi, the Rebbetzin, or both, alone or as a couple.
 
+## Come early, not last
+
+We help with every kind of dispute: between husband and wife, parents and children, siblings, in-laws, neighbors, business partners, clients and employees, and with great success. Don't wait until things spiral out of control. The best time to talk is at the first sign of trouble, when a misunderstanding can still be cleared up in one conversation. And if things have already gone far, it is never too late: with the Torah's way and a positive outlook, there is a way forward from any situation.
+
 ## What we can offer
 
 - **A safe place to talk.** Sometimes it helps simply to say what is happening to someone who cares and keeps it private.

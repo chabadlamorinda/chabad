@@ -385,3 +385,4 @@ h2[id] { scroll-margin-top: 80px; }
 .rabbi-contact.consult .who .btns { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
 .consult-line { margin: 28px 0 8px; padding: 12px 16px; background: var(--soft); border-radius: 12px; border-inline-start: 4px solid var(--gold, #c9a227); }
 .cm.reach > span { font-weight: 600; font-size: .9rem; }
+.first-call { margin: 6px 0 14px; } .first-call a { color: inherit; text-decoration-color: var(--gold, #c9a227); text-underline-offset: 3px; }

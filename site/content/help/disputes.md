@@ -8,6 +8,10 @@ related: shalom-bayit, talk-to-the-rabbi, grief-and-hard-times, learn/teshuvah
 ---
 Disputes with family members, business partners or others in the community can be among the most painful things we face. If you are in a conflict, Rabbi Yisroel Labkowski of Chabad of Lamorinda is here to help. He can listen in confidence, help you think it through, mediate in the spirit of Torah, or refer you to a Beth Din for a din Torah. Call **925-384-7242** or reach out through [/contact](/contact).
 
+## Come early, not last
+
+We help with every kind of dispute: between husband and wife, parents and children, siblings, in-laws, neighbors, business partners, clients and employees, and with great success. Don't wait until things spiral out of control. The best time to talk is at the first sign of trouble, when a misunderstanding can still be cleared up in one conversation. And if things have already gone far, it is never too late: with the Torah's way and a positive outlook, there is a way forward from any situation.
+
 ## How the Rabbi can help
 
 1. **Listening.** Often the first step is a private conversation. You can share the whole story with someone who cares and will keep it confidential.

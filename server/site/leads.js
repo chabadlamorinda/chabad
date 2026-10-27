@@ -67,7 +67,7 @@ function links(org, topic, t, who = 'rabbi') {
 function consultBox(X) {
   const t = X.t, row = (who, name) => { const L = links(X.C.org, 'consult', t, who), a = (ch, label, extra = '') => `<a class="btn sm ${ch === 'whatsapp' ? 'gold' : 'ghost'}" href="${esc(L[ch])}" data-lead="consult" data-channel="${ch}" data-who="${who}"${extra}>${esc(label)}</a>`;
     return `<div class="who"><strong>${esc(name)}</strong><span class="btns">${a('call', t('Call'))}${a('text', t('Text'))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}</span></div>`; };
-  return `<div class="card rabbi-contact consult"><h2>${esc(t('Talk privately with the Rabbi or the Rebbetzin'))}</h2><p>${esc(t('Whatever you are going through, you do not have to face it alone. Reach out privately and confidentially; no membership needed.'))}</p>
+  return `<div class="card rabbi-contact consult"><h2>${esc(t('Talk privately with the Rabbi or the Rebbetzin'))}</h2><p>${esc(t('We help with every kind of dispute and family matter, with great success. Come early, before things spiral; and it is never too late. With the Torah\'s way and a positive outlook, there is a way forward from any situation. Reach out privately; no membership needed.'))}</p>
 ${row('rabbi', t('Rabbi Yisroel Labkowski'))}${row('rebbetzin', t('Rebbetzin Tzipora Labkowski'))}</div>`;
 }
 // One short line on every other guide and help page.
