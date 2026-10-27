@@ -10,7 +10,7 @@ const { ptParts } = require('./scheduler.js');
 const COOKIE = 'cl_admin';
 const TTL = 12 * 3600e3;
 
-function mountAdmin(app, { store, stripe, password, secret, limit, send, log = console, levelOf, extend = null }) {
+function mountAdmin(app, { funds = {}, store, stripe, password, secret, limit, send, log = console, levelOf, extend = null }) {
   if (!password || password.length < 12) return false;
   const needDb = (req, res, next) => (store ? next() : res.status(503).json({ code: 'not_configured', error: 'The database is not connected yet (DATABASE_URL).' }));
   const mac = (s) => crypto.createHmac('sha256', secret + ':admin').update(s).digest('base64url');
@@ -108,7 +108,8 @@ function mountAdmin(app, { store, stripe, password, secret, limit, send, log = c
   }));
 
   // Announcements shown on every app home screen: a match day, a cause with a progress bar, or an impact note.
-  const FUNDS_OK = new Set(['', 'general', 'chai', 'preschool', 'market', 'building', 'holidays', 'synagogue', 'endyear', 'children', 'pledge']);
+  const FUNDS_OK = new Set(['', ...Object.keys(funds)]);
+  r.get('/api/funds', authed, (req, res) => res.json({ funds: Object.entries(funds).map(([id, name]) => ({ id, name })) }));
   r.get('/api/announcements', authed, needDb, wrap(async (req, res) => { res.json({ items: await store.getKv('announcements', []) }); }));
   r.put('/api/announcements', authed, needDb, wrap(async (req, res) => {
     const list = req.body && req.body.items; if (!Array.isArray(list) || list.length > 6) return res.status(400).json({ code: 'invalid', error: 'Up to 6 announcements.' });

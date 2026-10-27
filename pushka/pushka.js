@@ -16,7 +16,11 @@ const ORG_EIN = "47-4642750", ORG_PHONE = "925-384-7242", ORG_ADDR = "3477 Golde
 const ZELLE_EMAIL = ""; // the Zelle address from chabadoflamorinda.com/4970020 (it is hidden on the website by an anti-spam filter)
 const STOCK_URL = SITE + "/templates/articlecco_cdo/aid/5322044/jewish/Stock-Donations.htm", CRYPTO_URL = SITE + "/templates/articlecco_cdo/aid/5322110/jewish/Crypto-Donations.htm", BUILD_URL = SITE + "/templates/articlecco_cdo/aid/5322043/jewish/Building-Campaign.htm";
 const FEE_RATE = 0.035, MAX_CARD = 10000;
+// <KIT:FEATURES> switches for parts that belong to one organisation (the kit turns the building campaign off)
+const FEATURES = { building: true, kiddush: true };
+// </KIT:FEATURES>
 // The same funds, amounts and options as chabadoflamorinda.com/4970020
+// <KIT:FUNDS>
 const FUNDS = [
   { id: "general", name: "General Fund", desc: "Where it’s needed most", long: "Supports the day-to-day work of Chabad of Lamorinda across Lafayette, Moraga and Orinda." },
   { id: "chai", name: "Chai Club", desc: "", long: "A gift to the Chai Club at Chabad of Lamorinda." },
@@ -29,7 +33,10 @@ const FUNDS = [
   { id: "children", name: "Children Events", desc: "", long: "Supports events for children." },
   { id: "pledge", name: "Pledge", desc: "", long: "Use this to pay toward a pledge you have already made." },
 ];
+// </KIT:FUNDS>
+// <KIT:LEGACY>
 const LEGACY = { school: "preschool", shabbat: "synagogue", chesed: "general" };
+// </KIT:LEGACY>
 const GIVE_AMTS = [180, 360, 1000, 1800, 3600, 7200];
 const LEVELS = [["Visionary", 1000000], ["Founder", 500000], ["Pioneer", 250000], ["Builder", 100000], ["Pillar", 50000], ["Partner", 25000], ["Benefactor", 18000], ["Sustainer", 10000], ["Patron", 5000], ["Supporter", 1800]];
 const SPONSORS = [["kiddush", "Sponsor a Kiddush", "synagogue"], ["simchat", "Simchat Torah sponsorship", "holidays"], ["pesach", "Passover sponsorships", "holidays"], ["dinner", "Holiday dinner sponsorships (Rosh Hashanah, Sukkot, Shavuot)", "holidays"]];
@@ -383,9 +390,8 @@ const sec = (title) => `<h6 style="color:var(--n700);margin:var(--s3) 0 var(--s1
 const PG = {};
 const fracOf = (p) => (p.balance > 0 ? Math.max(Math.min(p.balance / S.goal, 1), 0.07) : 0);
 const fillY = (f) => ((1 - f) * 124 + (f <= 0 ? 16 : 0)).toFixed(1);
-const FLAME_PATHS = `<path d="M283 0C300 40 345 120 342 175C330 230 290 290 262 350C240 400 232 450 250 520C258 550 270 580 285 600C230 580 165 520 160 410C158 330 200 270 240 190C270 120 280 50 283 0Z"/><path d="M347 180C365 240 362 300 330 350C300 395 285 440 298 475C275 430 282 380 305 330C335 275 355 230 347 180Z"/><path d="M390 238C418 280 415 340 385 385C350 435 325 470 322 520C320 440 345 395 370 350C395 305 400 270 390 238Z"/>`;
-const FLAME_GRAD = `<linearGradient id="FGID" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="600"><stop offset="0" stop-color="#31ccff"/><stop offset=".42" stop-color="#2bb7f2"/><stop offset=".75" stop-color="#127cb8"/><stop offset="1" stop-color="#0a5a90"/></linearGradient>`;
-const flameMark = (px) => `<svg viewBox="150 0 280 600" width="${Math.round(px * 280 / 600)}" height="${px}" aria-hidden="true" focusable="false" style="flex:none;filter:drop-shadow(0 0 6px rgba(120,210,255,.45))"><defs>${FLAME_GRAD.replace("FGID", "fgh")}</defs><g fill="url(#fgh)">${FLAME_PATHS}</g></svg>`;
+// The logo is the file pushka/logo.svg: replace that file to change it everywhere.
+const flameMark = (px) => `<img src="logo.svg" alt="" height="${px}" style="height:${px}px;width:auto;max-width:${Math.round(px * 1.4)}px;object-fit:contain;flex:none;filter:drop-shadow(0 0 6px rgba(120,210,255,.45))">`;
 function tin(from) { // the pushka: a deep-blue tin with a brass nameplate for Chabad of Lamorinda
   const name = LANG === "he" ? `<text x="123" y="225.2" text-anchor="middle" fill="#3a2504" style="font:700 10.5px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif" direction="rtl">חב״ד לאמורינדה</text>` : `<text x="70" y="224.4" textLength="112" lengthAdjust="spacingAndGlyphs" fill="#3a2504" style="font:700 8.6px 'Cormorant Garamond',Georgia,serif;letter-spacing:.9px">CHABAD OF LAMORINDA</text>`;
   return `<svg width="220" height="252" viewBox="0 0 220 252" fill="none" style="display:block" role="img" aria-label="${esc(tt("Chabad of Lamorinda pushka"))}"><defs>
@@ -417,7 +423,7 @@ function tin(from) { // the pushka: a deep-blue tin with a brass nameplate for C
 <path d="M46 84H174V120Q110 100 46 150Z" fill="url(#gl)"/></g>
 <rect x="50" y="88" width="120" height="112" rx="1.5" stroke="#a06f24" stroke-width=".7"/>
 <text x="110" y="122" text-anchor="middle" fill="#173766" style="font:600 38px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif" direction="rtl">צדקה</text>
-<g transform="translate(40,211)"><circle cx="10" cy="10" r="9.6" fill="#f8fbfd" stroke="#5a3b0a" stroke-width=".8"/><circle cx="10" cy="10" r="7.9" fill="none" stroke="#a06f24" stroke-width=".4" opacity=".7"/><defs>${FLAME_GRAD.replace("FGID", "fgs")}</defs><g transform="translate(1.17,.95) scale(.0300)" fill="url(#fgs)">${FLAME_PATHS}</g></g>
+<g transform="translate(40,211)"><circle cx="10" cy="10" r="9.6" fill="#f8fbfd" stroke="#5a3b0a" stroke-width=".8"/><circle cx="10" cy="10" r="7.9" fill="none" stroke="#a06f24" stroke-width=".4" opacity=".7"/><image href="logo.svg" x="3.1" y="2.6" width="13.8" height="14.8" preserveAspectRatio="xMidYMid meet"/></g>
 ${name}</svg>`;
 }
 function animateFill() {
@@ -467,8 +473,8 @@ PG.give = () => {
   if (!U.giveFund) return `<div class="scroll" style="padding-top:calc(var(--s3) + env(safe-area-inset-top))"><div class="col" style="padding-top:0"><div class="page-h"><h1>${t("Give")}</h1><div class="sub">${t("A direct gift to Chabad of Lamorinda.")}</div></div>
     <button class="row-btn club-row" data-act="go" data-v="club"><span style="flex:none;display:flex;gap:2px">${["bronze", "silver", "gold", "platinum"].map((m) => medalSvg(m, 20)).join("")}</span><div class="grow"><div class="fund-n">${t("Chai Club")}</div><div class="fund-d">${t("Bronze, Silver, Gold and Platinum. Join the honor board.")}</div></div>${chev()}</button>
     ${sec(t("Give to a fund"))}<div>${FUNDS.filter((f) => f.id !== "chai").map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div>${f.desc ? `<div class="fund-d">${t(f.desc)}</div>` : ""}</div>${chev()}</button>`).join("")}</div>
-    ${sec(t("Building Campaign"))}<div>${rowLink("go", "building", I.home, tt("Center for Jewish Life"), tt("Giving levels and the Wall of Honor"))}</div>
-    ${sec(t("Sponsorships"))}<div>${SPONSORS.map(([id, name]) => rowLink("sponsor", id, I.flame, tt(name), id === "kiddush" ? tt("See the open Shabbosos and choose one") : "")).join("")}</div>
+    ${FEATURES.building ? `${sec(t("Building Campaign"))}<div>${rowLink("go", "building", I.home, tt("Center for Jewish Life"), tt("Giving levels and the Wall of Honor"))}</div>` : ""}
+    ${sec(t("Sponsorships"))}<div>${SPONSORS.filter(([id]) => id !== "kiddush" || FEATURES.kiddush).map(([id, name]) => rowLink("sponsor", id, I.flame, tt(name), id === "kiddush" ? tt("See the open Shabbosos and choose one") : "")).join("")}</div>
     ${sec(t("Give for a segulah"))}<div>${rowLink("go", "segulot", I.book, tt("Segulot & Prayers"), tt("Choose a segulah and how much to give"))}</div>
     ${sec(t("Other ways to give"))}<div>${rowLink("go", "otherways", I.card, tt("Zelle, Venmo, check, stock and more"), "")}</div>${TAXNOTE()}</div></div>`;
   const f = fundOf(U.giveFund);

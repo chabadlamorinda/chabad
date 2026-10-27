@@ -19,6 +19,7 @@ const { mountAdmin } = require('./admin.js');
 const { createKiddush } = require('./kiddush.js');
 
 const ROOT = path.join(__dirname, '..');
+// <KIT:FUNDS>
 const FUND_NAMES = {
   general: 'General Fund',
   chai: 'Chai Club',
@@ -31,6 +32,7 @@ const FUND_NAMES = {
   children: 'Children Events',
   pledge: 'Pledge',
 };
+// </KIT:FUNDS>
 // Chai Club (monthly donors). A gift of exactly a boundary amount belongs to the higher level.
 const CLUB_LEVELS = [['platinum', 72000], ['gold', 36000], ['silver', 18000], ['bronze', 7200]];
 const clubLevel = (cents) => { const l = CLUB_LEVELS.find(([, min]) => cents >= min); return l ? l[0] : null; };
@@ -391,7 +393,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/api/kiddush', kapi);
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  const adminOn = mountAdmin(app, { store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: kiddush.mountAdmin, levelOf: clubLevel });
+  const adminOn = mountAdmin(app, { funds: FUND_NAMES, store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: kiddush.mountAdmin, levelOf: clubLevel });
   if (!adminOn) { // explain instead of a bare "Not found" when the staff area has not been switched on yet
     app.get(/^\/admin(\/.*)?$/, (req, res) => res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Staff area not set up yet</title><body style="font:18px/1.5 Georgia,serif;max-width:560px;margin:8vh auto;padding:0 20px;color:#3b2412"><h1 style="font-weight:400">Staff area not set up yet</h1><p>The staff page switches on once this setting is added in Render (your hosting account):</p><ol><li><b>ADMIN_PASSWORD</b>: a password of 12 or more characters</li></ol><p>Some screens (yahrzeits, members, sponsorships) also need <b>DATABASE_URL</b>, the address of your database (for example a free one from neon.com).</p><p>After you save it, Render restarts and this page becomes your sign-in page. Step-by-step: <code>store/rabbi-setup.md</code>.</p>'));
   }
