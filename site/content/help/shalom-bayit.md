@@ -53,7 +53,7 @@ Sometimes, despite every effort, a marriage ends. If you are Jewish and divorcin
 Yes. Conversations with the Rabbi and Rebbetzin are confidential. The only exception is when someone's safety is at risk.
 
 ### Can I talk to the Rebbetzin instead of the Rabbi?
-Of course. Many women prefer to speak with the Rebbetzin. Call 925-384-7242 and ask.
+Of course. Many women prefer to speak with the Rebbetzin. Call 925-384-7241 and ask.
 
 ### Do we have to be observant to come?
 Not at all. We help Jews of every background, and interfaith couples are welcome to talk.

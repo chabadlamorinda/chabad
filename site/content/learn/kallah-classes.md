@@ -46,4 +46,4 @@ Of course. Many brides start learning on their own, and many grooms join in late
 A few months before is ideal, and before the date is set if possible. If your wedding is sooner, call anyway; classes can be arranged to fit.
 
 ### Who teaches kallah classes in Lamorinda?
-Rebbetzin Tzipora Labkowski is glad to teach or arrange kallah classes privately for brides in Lafayette, Moraga, Orinda and the East Bay. Call 925-384-7242.
+Rebbetzin Tzipora Labkowski is glad to teach or arrange kallah classes privately for brides in Lafayette, Moraga, Orinda and the East Bay. Call 925-384-7241.

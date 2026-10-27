@@ -44,4 +44,4 @@ Start by yourself. Changing how one person responds often changes the whole dyna
 Every situation is different and deserves careful guidance. Talk privately with the Rabbi or the Rebbetzin, and with a professional. See also [Jewish divorce](/learn/jewish-divorce).
 
 ### Can I talk to the Rebbetzin instead of the Rabbi?
-Yes. Many women prefer to speak with Rebbetzin Tzipora Labkowski. Use the buttons on this page or call 925-384-7242.
+Yes. Many women prefer to speak with Rebbetzin Tzipora Labkowski. Use the buttons on this page or call 925-384-7241.

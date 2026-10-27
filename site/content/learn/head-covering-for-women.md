@@ -3,7 +3,7 @@ title: Head Covering for Married Women: Why and How
 description: Why married Jewish women cover their hair: the sources in Torah and halacha, sheitel, tichel or hat, the Chabad view, and starting gradually.
 category: Jewish home
 related: tzniut, jewish-women, mikvah, jewish-wedding
-local: Questions about covering your hair? Women in Lafayette, Moraga, Orinda and the East Bay can call Rebbetzin Tzipora Labkowski, 925-384-7242.
+local: Questions about covering your hair? Women in Lafayette, Moraga, Orinda and the East Bay can call Rebbetzin Tzipora Labkowski, 925-384-7241.
 ---
 After her wedding, a Jewish woman traditionally covers her hair. For many women it is a daily, quiet expression of who they are: a married Jewish woman with a private, precious bond with her husband.
 

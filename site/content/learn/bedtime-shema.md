@@ -3,7 +3,7 @@ title: The Bedtime Shema: Jewish Prayers Before Sleep
 description: What the Bedtime Shema is, why we say it, the key parts including the Hamapil blessing, and a simple version for children.
 category: Prayer & Torah
 related: shema, modeh-ani, siddur, jewish-parenting
-local: Want help teaching your children the Bedtime Shema? Call Rebbetzin Labkowski at 925-384-7242 or see chabadoflamorinda.com/programs/hebrew-school.
+local: Want help teaching your children the Bedtime Shema? Call Rebbetzin Labkowski at 925-384-7241 or see chabadoflamorinda.com/programs/hebrew-school.
 ---
 The Bedtime Shema, Kriat Shema al Hamitah, is a short set of prayers said before going to sleep. Its heart is the first paragraph of the [Shema](/learn/shema), along with forgiveness of others and a blessing asking G-d to let us rest in peace and wake up in the morning.
 

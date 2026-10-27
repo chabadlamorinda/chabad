@@ -45,4 +45,4 @@ Not for a baby who lived less than 30 days. You may still receive visitors and c
 That is a medical question for your doctor. Spiritually, many couples find strength in prayer, mitzvahs and the support of the community.
 
 ### Can I talk to the Rebbetzin?
-Yes. Many mothers find comfort speaking with Rebbetzin Tzipora Labkowski. Call 925-384-7242.
+Yes. Many mothers find comfort speaking with Rebbetzin Tzipora Labkowski. Call 925-384-7241.

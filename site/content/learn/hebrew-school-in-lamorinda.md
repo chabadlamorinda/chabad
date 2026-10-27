@@ -57,7 +57,7 @@ No. Lamorinda Hebrew School is open to all, with no membership or affiliation re
 Tuition is $600 per child, including books and supplies. A payment plan is available, and no child is turned away for lack of funds. Check the box for a payment plan or scholarship on the [registration form](/forms/hebrew-school).
 
 ### Can my child join in the middle of the year?
-Call the Rebbetzin at 925-384-7242 to talk about your child and find the right place to start.
+Call the Rebbetzin at 925-384-7241 to talk about your child and find the right place to start.
 
 ### My child has never learned Hebrew. Is that okay?
 Yes. With Aleph Champ, every child starts at their own level and moves forward at their own pace.

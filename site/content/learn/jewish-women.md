@@ -3,7 +3,7 @@ title: Women in Judaism: The Role and Mitzvot of Jewish Women
 description: How Judaism views women, the special mitzvot of Jewish women, inspiring women from Jewish history, and the power of the Jewish home.
 category: Jewish ideas
 related: shabbat-candles, mikvah, bat-mitzvah, challah
-local: Rebbetzin Tzipora Labkowski welcomes women of every background to learn and connect. Call 925-384-7242 or check our events page.
+local: Rebbetzin Tzipora Labkowski welcomes women of every background to learn and connect. Call 925-384-7241 or check our events page.
 ---
 Judaism sees women as spiritual equals to men, with a unique and essential role in Jewish life. Jewish women have shaped the Jewish people from the very beginning, and Jewish identity itself passes through the mother.
 
