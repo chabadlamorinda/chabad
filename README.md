@@ -51,3 +51,6 @@ SESSION_SECRET=any-long-random-string npm start
 ## Yahrzeits, reminders, the Rabbi area and payment alerts
 These optional features (opt-in yahrzeit sharing, push reminders, `/admin/` page, failed-payment alerts, Apple/Google Pay) are switched on with environment variables. Step-by-step: [`store/rabbi-setup.md`](store/rabbi-setup.md).
 Tests: `npm test` (starts a throwaway Postgres automatically).
+
+## Ideas for keeping people engaged
+See [`store/ideas.md`](store/ideas.md): 30 ideas, with what is built and what is next.
