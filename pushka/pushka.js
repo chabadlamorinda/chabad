@@ -445,7 +445,7 @@ PG.home = () => {
     <div class="progress"><div class="pg-track"><div class="pg-fill" id="progFill" style="width:${(U.fillFor === p.id ? U.pctShown : 0)}%"></div></div><div class="pg-t">${progTxt}</div></div>
     ${familyChips()}<div><div class="tap">${t("Tap to drop a coin")}</div><div class="quick">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="drop" data-v="${a}">${money(a)}</button>`).join("")}<button class="btn btn-secondary" data-act="other">${t("Other")}</button></div></div>
     <button class="btn btn-primary cta" data-act="openEmpty" ${p.balance <= 0 ? "disabled" : ""}>${t("Empty pushka to Chabad")}</button>
-    <button class="btn btn-secondary cta" data-act="why">${t("Donate in honor or memory")}</button>
+    <button class="btn btn-honor cta" data-act="why">${ico(I.give, 20)} ${t("Donate in honor or memory")}</button>
     <div class="row2"><button class="btn btn-ghost" data-act="donateNow">${t("Donate now")}</button><button class="btn btn-ghost" data-act="go" data-v="settings">${ico(I.gear, 16)} ${t("Pushka settings")}</button></div>
     ${annCards()}${boardCard()}${commCard()}${todayCard()}${occasionCard()}
     ${reminder}
