@@ -342,3 +342,16 @@ h2[id] { scroll-margin-top: 80px; }
 .cat-h { display: flex; align-items: center; gap: 12px; margin-top: 1.6em; }
 .cat-h .art { width: 48px; height: 48px; margin: 0; padding: 6px; }
 .cat-h small { font: 400 .95rem var(--sans); color: var(--muted); }
+
+/* phones: compact schedule and cards (picture beside the text) */
+@media (max-width: 600px) {
+  .weekly { grid-template-columns: 1fr; gap: 8px; }
+  .weekly li { flex-direction: row; align-items: baseline; gap: 12px; padding: 12px 14px; }
+  .weekly b { flex: 0 0 98px; }
+  .holiday-band { padding: 20px; gap: 14px; } .holiday-band .art-lg { width: 56px; height: 56px; padding: 6px; }
+  .weekly li > span { flex: 1; }
+  .tile.has-art { display: grid; grid-template-columns: 48px 1fr; column-gap: 14px; align-items: start; }
+  .tile.has-art > .art { grid-row: 1 / span 4; width: 48px; height: 48px; margin: 0; }
+  .tile.has-art > :not(.art) { grid-column: 2; }
+  .grid { gap: 10px; }
+}
