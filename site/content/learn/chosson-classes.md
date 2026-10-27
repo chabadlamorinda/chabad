@@ -27,7 +27,7 @@ Chosson classes are private, usually one-on-one with the Rabbi, and arranged at 
 
 - **An aliyah to the Torah** on the Shabbat before the wedding, celebrating the groom.
 - **The wedding-day fast.** Bride and groom traditionally fast until the ceremony and add the confession prayers of Yom Kippur at the afternoon prayer, because the wedding day is like a personal Yom Kippur, a fresh start.
-- **The kittel.** In many communities the groom wears a simple white robe under the chuppah; Chabad custom is generally not to. Ask the Rabbi.
+- **The kittel.** In Chabad, the groom wears a kittel, a simple white robe, under the chuppah. Other communities have different customs; ask the Rabbi.
 
 ## Common questions
 

@@ -30,7 +30,7 @@ Use the time well:
 - **Set a date** with care. See [Choosing a Wedding Date](/learn/choosing-a-wedding-date).
 - **Learn.** Begin [kallah classes](/learn/kallah-classes) and [chosson classes](/learn/chosson-classes) a few months before the wedding.
 - **Ask for blessings.** Many couples ask parents and grandparents for a blessing, and many write to the Rebbe or visit his resting place to pray for a blessing.
-- **Keep it modest.** Traditionally an engaged couple does not touch until after the wedding, and keeps the focus on getting to know each other's values and dreams.
+- **Keep it meaningful.** Use this time to get to know each other's values and dreams, and to prepare for the home you will build together.
 - **Plan the home, not just the party.** Talk about Shabbat, kosher, and the kind of Jewish home you want to build.
 
 ## Common questions

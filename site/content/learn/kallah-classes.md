@@ -3,7 +3,7 @@ title: Kallah Classes: Preparing for Marriage as a Jewish Bride
 description: What a Jewish bride learns before her wedding: family purity, the mikvah and building a Jewish home, when to start, and how kallah classes work.
 category: Life cycle
 related: mikvah, jewish-wedding, shalom-bayit, jewish-women
-local: Brides in Lafayette, Moraga, Orinda and the East Bay: Rebbetzin Tzipora Labkowski is glad to teach or arrange kallah classes privately, 925-384-7242.
+local: Brides in Lafayette, Moraga, Orinda and the East Bay: Rebbetzin Tzipora Labkowski is glad to teach or arrange kallah classes privately, 925-384-7241.
 ---
 A kallah is a bride. Before her wedding, a Jewish bride traditionally meets with a teacher for a series of private classes, called kallah classes. They are one of the most meaningful parts of getting ready for marriage, because they prepare not only for the wedding day but for the home and marriage that follow.
 

@@ -3,7 +3,7 @@ title: Family Purity: Taharat Hamishpacha and the Jewish Marriage
 description: An overview of taharat hamishpacha: the monthly rhythm of separation and reunion, counting days, mikvah immersion, and the blessing it brings.
 category: Life cycle
 related: mikvah, shalom-bayit, jewish-women, jewish-wedding
-local: For private, caring guidance on family purity, women can call Rebbetzin Tzipora Labkowski and men Rabbi Yisroel Labkowski, 925-384-7242. Every conversation is confidential.
+local: For private, caring guidance on family purity, women can call Rebbetzin Tzipora Labkowski (925-384-7241) and men Rabbi Yisroel Labkowski (925-384-7242). Every conversation is confidential.
 ---
 Taharat hamishpacha, "family purity," is the set of Torah laws that guide the intimate life of a Jewish husband and wife. It is one of the pillars of Jewish life, kept by Jewish couples for thousands of years, and it is often called the foundation of the Jewish home.
 
