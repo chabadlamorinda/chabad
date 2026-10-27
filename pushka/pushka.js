@@ -463,7 +463,7 @@ PG.give = () => {
     <button class="row-btn club-row" data-act="go" data-v="club"><span style="flex:none;display:flex;gap:2px">${["bronze", "silver", "gold", "platinum"].map((m) => medalSvg(m, 20)).join("")}</span><div class="grow"><div class="fund-n">${t("Chai Club")}</div><div class="fund-d">${t("Bronze, Silver, Gold and Platinum. Join the honor board.")}</div></div>${chev()}</button>
     ${sec(t("Give to a fund"))}<div>${FUNDS.filter((f) => f.id !== "chai").map((f) => `<button class="row-btn" data-act="fund" data-v="${f.id}"><div class="grow"><div class="fund-n">${t(f.name)}</div>${f.desc ? `<div class="fund-d">${t(f.desc)}</div>` : ""}</div>${chev()}</button>`).join("")}</div>
     ${sec(t("Building Campaign"))}<div>${rowLink("go", "building", I.home, tt("Center for Jewish Life"), tt("Giving levels and the Wall of Honor"))}</div>
-    ${sec(t("Sponsorships"))}<div>${SPONSORS.map(([id, name]) => rowLink("sponsor", id, I.flame, tt(name), "")).join("")}</div>
+    ${sec(t("Sponsorships"))}<div>${SPONSORS.map(([id, name]) => rowLink("sponsor", id, I.flame, tt(name), id === "kiddush" ? tt("See the open Shabbosos and choose one") : "")).join("")}</div>
     ${sec(t("Give for a segulah"))}<div>${rowLink("go", "segulot", I.book, tt("Segulot & Prayers"), tt("Choose a segulah and how much to give"))}</div>
     ${sec(t("Other ways to give"))}<div>${rowLink("go", "otherways", I.card, tt("Zelle, Venmo, check, stock and more"), "")}</div>${TAXNOTE()}</div></div>`;
   const f = fundOf(U.giveFund);
@@ -676,7 +676,7 @@ function refreshCtas() { const g = $("#giveCta"); if (g) g.innerHTML = giveCtaTe
 A.emptyAmt = () => refreshCtas(); A.donAmt = () => refreshCtas(); A.emptyPay = () => refreshCtas();
 A.copy = (v) => { try { navigator.clipboard.writeText(v).then(() => toast(tt("Copied"))); } catch (e) { toast(v); } };
 A.way = (id) => { const name = tt(WAYS().find((w) => w[0] === id)[1]); sheet(`<h3>${esc(name)}</h3>${waysHtml(id)}${contactBtns("Giving by " + name)}<p class="note">${t("Chabad of Lamorinda is a {c3} nonprofit, Tax ID {ein}. 100% of the proceeds of your gift benefit Chabad of Lamorinda.", { c3: C3_HTML, ein: EIN_HTML })}</p><button class="btn btn-primary cta" data-act="closeSheet">${t("Close")}</button>`); };
-A.sponsor = (v) => { const sp = SPONSORS.find((x) => x[0] === v); Object.assign(U, { giveFund: sp[2], giveAmt: 360, freq: "once", dedication: tt("Sponsorship: {name}", { name: tt(sp[1]) }).slice(0, 80) }); U.stack = []; U.page = "give"; draw(); };
+A.sponsor = (v) => { if (v === "kiddush") { const w = window.open("/kiddush/" + (LANG === "he" ? "?lang=he" : ""), "_blank", "noopener"); if (!w) location.href = "/kiddush/"; return; } const sp = SPONSORS.find((x) => x[0] === v); Object.assign(U, { giveFund: sp[2], giveAmt: 360, freq: "once", dedication: tt("Sponsorship: {name}", { name: tt(sp[1]) }).slice(0, 80) }); U.stack = []; U.page = "give"; draw(); };
 A.level = (v) => {
   const L = LEVELS.find((x) => x[0] === v);
   if (L[1] > MAX_CARD) return sheet(`<div><h3>${t("{level} · {amt}", { level: t(L[0]), amt: money(L[1]) })}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("For gifts of this size, please contact us. We’ll help you give by check, wire, stock, crypto or donor advised fund.")}</div></div>${contactBtns("Building Campaign: " + L[0])}<button class="btn btn-secondary cta" data-act="goWays">${t("Other ways to give")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Close")}</button>`);
