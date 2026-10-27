@@ -19,6 +19,7 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 
 ## Questions you can answer any time (no computer needed)
 * Does 925-384-7242 receive texts and WhatsApp, or should those go to a different cell number?
+* Should "Talk privately with the Rebbetzin" go to the Rebbetzin's own cell phone? If so, which number? (Right now it goes to 925-384-7242 with a message addressed to her.)
 * Chanukah: date, time and place of the Grand Menorah Lighting, and any party, kids' event or Shabbat Chanukah dinner.
 * Is there a Yud Tes Kislev farbrengen (Saturday night Nov 28 / Sunday Nov 29)?
 * Kabbalat Shabbat: is "candle lighting rounded down to the quarter hour, never after 6:45" right? (It gives 4:30 PM in mid-November.)

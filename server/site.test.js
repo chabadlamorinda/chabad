@@ -511,6 +511,18 @@ test('mezuzah, tefillin, giving and meetings: Call / Text / WhatsApp the Rabbi, 
   assert.ok(got.some((m) => /mezuzah/.test(m.subject) && /new house in Moraga/.test(m.text)), 'the Rabbi is emailed what they wrote in the chat');
   const list = (await store.pool.query('SELECT topic, channel FROM site_leads')).rows;
   assert.ok(list.some((x) => x.topic === 'mezuzah' && x.channel === 'chat') && list.some((x) => x.topic === 'tefillin' && x.channel === 'whatsapp'));
+  // A private conversation with the Rabbi or the Rebbetzin: on conflict, family and help pages, a line on every other guide.
+  const inl = (await c.call('GET', '/learn/in-laws')).text;
+  assert.match(inl, /rabbi-contact consult/); assert.match(inl, /data-lead="consult" data-channel="whatsapp" data-who="rebbetzin"/); assert.match(inl, /Hi%20Rebbetzin%20Labkowski/);
+  assert.match((await c.call('GET', '/help/someone-is-sick')).text, /rabbi-contact consult/);
+  assert.match((await c.call('GET', '/learn/dreidel')).text, /class="consult-line rabbi-contact"/);
+  const r3 = await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ lang: 'en', cid: 'conv8', messages: [{ role: 'user', content: 'My husband and I keep fighting about his parents' }] }) });
+  const ev3 = readSse(await r3.text()).find((e) => e.contact);
+  assert.ok(ev3 && ev3.contact.topic === 'consult' && ev3.contact.rebbetzin && /Rebbetzin/.test(decodeURIComponent(ev3.contact.rebbetzin.whatsapp)));
+  const n0 = mails.length;
+  await fetch(base + '/api/site/lead', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ topic: 'consult', channel: 'text', who: 'rebbetzin', page: '/learn/in-laws', cid: 'abc2' }) });
+  await new Promise((res) => setTimeout(res, 100));
+  assert.ok(mails.slice(n0).some((m) => /with the Rebbetzin/.test(m.subject)), 'the Rabbi hears the request is for the Rebbetzin');
   const { topicOf } = require('./site/leads.js');
   assert.equal(topicOf('When is Thanksgiving?'), null); assert.equal(topicOf('Как пожертвовать?'), 'donation'); assert.equal(topicOf('אני רוצה להניח תפילין'), 'tefillin');
 });

@@ -200,7 +200,7 @@
   document.addEventListener('click', function (ev) {
     var a = ev.target.closest && ev.target.closest('[data-lead]');
     if (!a) return;
-    var body = JSON.stringify({ topic: a.getAttribute('data-lead'), channel: a.getAttribute('data-channel'), page: location.pathname.replace(/^\/(he|ru)(?=\/)/, ''), lang: LANG, cid: cid() });
+    var body = JSON.stringify({ topic: a.getAttribute('data-lead'), channel: a.getAttribute('data-channel'), who: a.getAttribute('data-who') || '', page: location.pathname.replace(/^\/(he|ru)(?=\/)/, ''), lang: LANG, cid: cid() });
     try { fetch('/api/site/lead', { method: 'POST', credentials: 'omit', keepalive: true, headers: { 'content-type': 'application/json', 'x-site': '1' }, body: body }); } catch (e) {}
   });
   var fab = $('[data-chat-open]');
@@ -250,8 +250,14 @@
     // Call / Text / WhatsApp the Rabbi, right in the chat (mezuzah, tefillin, giving, meeting).
     var reach = function (c) {
       if (!c) return;
-      var a = function (ch, label, cls) { return el('a', { class: 'btn sm ' + cls, href: c[ch], 'data-lead': c.topic, 'data-channel': ch, target: ch === 'whatsapp' ? '_blank' : null, rel: ch === 'whatsapp' ? 'noopener' : null, text: label }); };
-      panel.log.appendChild(el('div', { class: 'cm assistant reach' }, [el('strong', { text: c.title }), el('div', { class: 'btns' }, [a('call', c.labels.call, 'ghost'), a('text', c.labels.text, 'ghost'), a('whatsapp', 'WhatsApp', 'gold')]), el('p', { class: 'muted', text: c.note })]));
+      var row = function (L, who) {
+        var a = function (ch, label, cls) { return el('a', { class: 'btn sm ' + cls, href: L[ch], 'data-lead': c.topic, 'data-channel': ch, 'data-who': who, target: ch === 'whatsapp' ? '_blank' : null, rel: ch === 'whatsapp' ? 'noopener' : null, text: label }); };
+        return el('div', { class: 'btns' }, [a('call', c.labels.call, 'ghost'), a('text', c.labels.text, 'ghost'), a('whatsapp', 'WhatsApp', 'gold')]);
+      };
+      var kids = [el('strong', { text: c.title })];
+      if (c.rebbetzin) kids.push(el('span', { text: c.labels.rabbi }), row(c, 'rabbi'), el('span', { text: c.labels.rebbetzin }), row(c.rebbetzin, 'rebbetzin')); else kids.push(row(c, 'rabbi'));
+      kids.push(el('p', { class: 'muted', text: c.note }));
+      panel.log.appendChild(el('div', { class: 'cm assistant reach' }, kids));
       panel.log.scrollTop = panel.log.scrollHeight;
     };
     var offer = function (qs) {
