@@ -417,7 +417,7 @@ function tin(from) { // the pushka: a deep-blue tin with a brass nameplate for C
 <path d="M46 84H174V120Q110 100 46 150Z" fill="url(#gl)"/></g>
 <rect x="50" y="88" width="120" height="112" rx="1.5" stroke="#a06f24" stroke-width=".7"/>
 <text x="110" y="122" text-anchor="middle" fill="#173766" style="font:600 38px 'Frank Ruhl Libre','Cormorant Garamond',Georgia,serif" direction="rtl">צדקה</text>
-<g transform="translate(40,211)"><circle cx="10" cy="10" r="9.6" fill="#f8fbfd" stroke="#5a3b0a" stroke-width=".8"/><circle cx="10" cy="10" r="7.9" fill="none" stroke="#a06f24" stroke-width=".4" opacity=".7"/><defs>${FLAME_GRAD.replace("FGID", "fgs")}</defs><g transform="translate(2.4,1.6) scale(.0305)" fill="url(#fgs)"><g transform="translate(-150,0)">${FLAME_PATHS}</g></g></g>
+<g transform="translate(40,211)"><circle cx="10" cy="10" r="9.6" fill="#f8fbfd" stroke="#5a3b0a" stroke-width=".8"/><circle cx="10" cy="10" r="7.9" fill="none" stroke="#a06f24" stroke-width=".4" opacity=".7"/><defs>${FLAME_GRAD.replace("FGID", "fgs")}</defs><g transform="translate(1.17,.95) scale(.0300)" fill="url(#fgs)">${FLAME_PATHS}</g></g>
 ${name}</svg>`;
 }
 function animateFill() {
