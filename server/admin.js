@@ -107,6 +107,22 @@ function mountAdmin(app, { store, stripe, password, secret, limit, send, log = c
     res.json(clubCache.data);
   }));
 
+  // Announcements shown on every app home screen: a match day, a cause with a progress bar, or an impact note.
+  const FUNDS_OK = new Set(['', 'general', 'chai', 'preschool', 'market', 'building', 'holidays', 'synagogue', 'endyear', 'children', 'pledge']);
+  r.get('/api/announcements', authed, needDb, wrap(async (req, res) => { res.json({ items: await store.getKv('announcements', []) }); }));
+  r.put('/api/announcements', authed, needDb, wrap(async (req, res) => {
+    const list = req.body && req.body.items; if (!Array.isArray(list) || list.length > 6) return res.status(400).json({ code: 'invalid', error: 'Up to 6 announcements.' });
+    const out = [];
+    for (const a of list) {
+      const title = String(a && a.title || '').trim().slice(0, 80), body = String(a && a.body || '').trim().slice(0, 300);
+      if (!title) return res.status(400).json({ code: 'invalid', error: 'Every announcement needs a title.' });
+      const kind = ['match', 'cause', 'impact'].includes(a.kind) ? a.kind : 'impact', goal = Math.max(Number(a.goal) || 0, 0), raised = Math.max(Number(a.raised) || 0, 0), fund = FUNDS_OK.has(a.fund) ? a.fund : '';
+      const until = /^\d{4}-\d{2}-\d{2}$/.test(a.until || '') ? a.until : '';
+      out.push({ id: String(a.id || Math.random().toString(36).slice(2, 10)).replace(/[^A-Za-z0-9_-]/g, '').slice(0, 20), kind, title, body, goal, raised, fund, until });
+    }
+    await store.setKv('announcements', out); res.json({ ok: true, items: out });
+  }));
+
   r.post('/api/broadcast', authed, limit('broadcast', 10, 60 * 60 * 1000), wrap(async (req, res) => {
     const b = req.body || {}, title = String(b.title || '').trim(), body = String(b.body || '').trim(), url = String(b.url || '/pushka/');
     if (b.confirm !== true) return res.status(400).json({ code: 'confirm', error: 'Please confirm before sending.' });

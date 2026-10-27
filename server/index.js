@@ -346,6 +346,23 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     }
     res.json(clubCache.data);
   }));
+  // ---- community counter (anonymous: only totals) and announcements the Rabbi writes in the staff area ----
+  const mem = { days: new Map(), ann: [] }, today = () => require('./scheduler.js').ptParts(new Date()).ymd;
+  api.post('/community/coins', limit('community', 90, 10 * 60 * 1000), wrap(async (req, res) => {
+    const n = Math.min(Math.max(parseInt(req.body && req.body.n, 10) || 0, 0), 50), cents = Math.min(Math.max(Math.round(Number(req.body && req.body.cents) || 0), 0), 100000);
+    if (n > 0) { if (store) await store.addCommunity(today(), n, cents); else { const d = mem.days.get(today()) || { coins: 0 }; d.coins += n; mem.days.set(today(), d); } }
+    res.json({ ok: true });
+  }));
+  api.get('/community', limit('community-read', 120, 10 * 60 * 1000), wrap(async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    const since = require('../pushka/hebdate.js').addDays(today(), -6);
+    let coins = 0; if (store) coins = (await store.communitySince(since)).coins; else for (const [d, v] of mem.days) if (d >= since) coins += v.coins;
+    res.json({ weekCoins: coins });
+  }));
+  api.get('/announcements', limit('announce', 120, 10 * 60 * 1000), wrap(async (req, res) => {
+    const list = store ? await store.getKv('announcements', []) : mem.ann, now = today();
+    res.json({ items: (Array.isArray(list) ? list : []).filter((a) => !a.until || a.until >= now).slice(0, 4) });
+  }));
   api.get('/subscriptions', needStripe, auth, wrap(async (req, res) => {
     res.json({ subscriptions: (await activeSubs(req.customerId)).map(subView) });
   }));

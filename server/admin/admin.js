@@ -17,7 +17,7 @@
     app.appendChild(el('h1', { text: 'Rabbi’s desk' }));
     app.appendChild(el('div', { class: 'small', text: 'Chabad of Lamorinda · private' }));
     var nav = el('nav');
-    [['donors', 'Monthly donors'], ['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
+    [['donors', 'Monthly donors'], ['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['announce', 'Announcements'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
       nav.appendChild(el('button', { class: tab === t[0] ? 'on' : '', text: t[1], onclick: function () { tab = t[0]; load(); } }));
     });
     nav.appendChild(el('a', { href: '/admin/kiddush/', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Kiddush board' }));
@@ -60,6 +60,26 @@
         ]));
       });
     }).catch(function (e) { box.textContent = e.message; });
+    return box;
+  }
+  function announce() {
+    var box = el('div'), items = [], status = el('span', { class: 'small' });
+    function draw() {
+      box.textContent = '';
+      box.appendChild(el('p', { class: 'small', text: 'These appear on the home screen of everyone using the app. Use them for a matching day, a cause with a progress bar, or a short thank-you note. Up to 6; expired ones hide themselves.' }));
+      items.forEach(function (a, i) {
+        function f(label, key, type, ph) { var inp = el(type === 'area' ? 'textarea' : 'input', { 'aria-label': label, placeholder: label + (ph ? ' ' + ph : '') }); if (type === 'area') inp.rows = 2; else if (type) inp.type = type; inp.value = a[key] == null ? '' : a[key]; inp.addEventListener('input', function () { a[key] = type === 'number' ? Number(inp.value) : inp.value; }); return el('div', { style: 'margin:6px 0' }, [el('div', { class: 'small', text: label }), inp]); }
+        var kind = el('select', { 'aria-label': 'Type' }); [['match', 'Matching day'], ['cause', 'Cause with progress bar'], ['impact', 'Thank-you / impact note']].forEach(function (k) { var o = el('option', { value: k[0], text: k[1] }); if (a.kind === k[0]) o.selected = true; kind.appendChild(o); });
+        kind.addEventListener('change', function () { a.kind = kind.value; });
+        var fund = el('select', { 'aria-label': 'Fund' }); [['', 'No fund (just a message)'], ['general', 'General Fund'], ['chai', 'Chai Club'], ['preschool', 'Preschool'], ['market', 'Bay Kosher Market'], ['building', 'Building Campaign'], ['holidays', 'Holiday Programs'], ['synagogue', 'Synagogue'], ['children', 'Children Events']].forEach(function (k) { var o = el('option', { value: k[0], text: k[1] }); if (a.fund === k[0]) o.selected = true; fund.appendChild(o); });
+        fund.addEventListener('change', function () { a.fund = fund.value; });
+        box.appendChild(el('div', { class: 'card' }, [kind, f('Title', 'title'), f('Message', 'body', 'area'), f('Goal in dollars (cause only)', 'goal', 'number'), f('Raised so far in dollars (cause only)', 'raised', 'number'), f('Hide after this date (optional)', 'until', 'date'), el('div', { class: 'small', text: 'Button gives to:' }), fund,
+          el('p', {}, [el('button', { text: 'Remove', onclick: function () { items.splice(i, 1); draw(); } })])]));
+      });
+      box.appendChild(el('p', {}, [el('button', { text: 'Add announcement', onclick: function () { if (items.length < 6) { items.push({ kind: 'impact', title: '', body: '', goal: 0, raised: 0, fund: '', until: '' }); draw(); } } }), ' ',
+        el('button', { class: 'on', text: 'Save', onclick: function () { status.textContent = 'Saving…'; api('PUT', '/announcements', { items: items }).then(function (j) { items = j.items; status.textContent = 'Saved'; }).catch(function (e) { status.textContent = e.message; }); } }), ' ', status]));
+    }
+    wrapErr(api('GET', '/announcements')).then(function (j) { if (!j) return; items = j.items; draw(); }).catch(function (e) { box.textContent = e.message; });
     return box;
   }
   function yahrzeits() {
@@ -124,7 +144,7 @@
       } }), out]);
   }
   function load() {
-    var views = { donors: donors, yahrzeits: yahrzeits, members: members, payments: payments, push: push };
+    var views = { announce: announce, donors: donors, yahrzeits: yahrzeits, members: members, payments: payments, push: push };
     shell(views[tab]());
   }
   api('GET', '/me').then(load).catch(function () { login(); });
