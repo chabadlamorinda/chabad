@@ -4,7 +4,7 @@
 //  * /learn: guides to every Jewish topic, each tied back to how we help locally.
 'use strict';
 const { md, esc, plain } = require('./md.js');
-const { fullAddress, LEARN_CATEGORIES } = require('./content.js');
+const { fullAddress, LEARN_CATEGORIES, fmtClock } = require('./content.js');
 const { artImg } = require('./art.js');
 const Z = require('./zmanim.js');
 
@@ -16,7 +16,7 @@ function townFaq(X, t, sh) {
   return [
     { q: tr('Is there a synagogue in {town}?', v), a: t.slug === 'lafayette' ? tr('{org} is the Chabad synagogue right here in Lafayette, at {address}. Everyone is welcome and no membership is required.', v) : tr('{org} is the Chabad synagogue serving {town}, about {miles} miles away at {address}. Everyone is welcome and no membership is required.', v) },
     { q: tr('Where are Shabbat services near {town}?', v), a: tr('At {org}: {time}, followed by a hot Kiddush lunch. Friday night Kabbalat Shabbat and weekday morning minyan too. See [Shabbat times](/shabbat).', { ...v, time: svc ? svc.time : '' }) },
-    sh && sh.candles ? { q: tr('When is candle lighting in {town} this week?', v), a: tr('This Friday, {date}, light Shabbat candles in {town} at {time}.', { ...v, date: X.shortDate(sh.candles.date), time: X.tm(sh.candles) }) + (sh.havdalah ? ' ' + tr('Shabbat ends at {time}.', { time: X.tm(sh.havdalah) }) : '') } : null,
+    sh && sh.candles ? { q: tr('When is candle lighting in {town} this week?', v), a: tr('This Friday, {date}, light Shabbat candles in {town} at {time}.', { ...v, date: X.shortDate(sh.candles.date), time: X.tm(sh.candles) }) + (sh.havdalah ? ' ' + tr('Shabbat ends at {time}.', { time: X.tm(sh.havdalah) }) : '') + (C.kabbalat ? ' ' + tr('Kabbalat Shabbat at Chabad of Lamorinda: {time}', { time: fmtClock(C.kabbalat, X.lang) }) + '.' : '') } : null,
     { q: tr('Is there a Hebrew school for kids in {town}?', v), a: tr('[Lamorinda Hebrew School](/programs/hebrew-school) meets Sundays 10 AM to 12 PM in Lafayette for ages 3 to 13. It is open to all, no synagogue membership required, and no child is turned away for lack of funds.', v) },
     { q: tr('Is there a Jewish preschool near {town}?', v), a: tr('[Lamorinda Jewish Preschool](/programs/jewish-preschool) in Lafayette serves children from 12 months to 4 years.', v) },
     { q: tr('Where can I get kosher food in {town}?', v), a: tr('Order kosher meat, poultry, groceries and Judaica online from [Bay Kosher](https://baykosher.com), a project of {org}. Ask us about delivery to {town}.', v) },
