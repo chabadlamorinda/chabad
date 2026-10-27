@@ -11,8 +11,8 @@ const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const LOCAL = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/;
 const CATEGORIES = ['shabbat', 'holiday', 'class', 'kids', 'teens', 'women', 'men', 'community', 'seniors', 'family', 'volunteer'];
 const LEARN_CATEGORIES = ['Lamorinda', 'Shabbat & holidays', 'Jewish home', 'Kosher', 'Prayer & Torah', 'Life cycle', 'Mourning & remembrance', 'Jewish ideas'];
-// The Kabbalat Shabbat time changes with the season, so it is set once in org.json ("kabbalatShabbat": "17:45")
-// and every text that says {kabbalat-shabbat} shows it: "5:45 PM" in English, "17:45" in Hebrew and Russian.
+// The Kabbalat Shabbat time changes every week with the season (the rule is in org.json, worked out in zmanim.js);
+// every text that says {kabbalat-shabbat} shows this week's time: "5:45 PM" in English, "17:45" in Hebrew and Russian.
 const TIME_TOKEN = /\{kabbalat-shabbat\}/g;
 function fmtClock(hhmm, lang) {
   const [h, m] = hhmm.split(':').map(Number);
@@ -49,7 +49,7 @@ function withOffset(local) {
   return `${local}:00${sign}${String(Math.floor(a / 60)).padStart(2, '0')}:${String(a % 60).padStart(2, '0')}`;
 }
 
-function load(dir = DIR) {
+function load(dir = DIR, opts = {}) {
   const rj = (f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
   const org = rj('org.json'), programs = rj('programs.json'), events = rj('events.json'), faq = rj('faq.json'), directory = rj('directory.json');
   const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays'), learn = readPagesIn(dir, 'learn'), help = readPagesIn(dir, 'help');
@@ -60,7 +60,9 @@ function load(dir = DIR) {
   const need = (cond, msg) => { if (!cond) errors.push(msg); };
 
   need(org.name && org.address && org.address.street, 'org.json: name and address are required');
-  need(!org.kabbalatShabbat || /^([01]\d|2[0-3]):[0-5]\d$/.test(org.kabbalatShabbat), 'org.json: kabbalatShabbat must look like 17:45 (24-hour time)');
+  const HHMM = /^([01]\d|2[0-3]):[0-5]\d$/, ks = org.kabbalatShabbat || {};
+  need(!org.kabbalatShabbat || (HHMM.test(ks.latest || '') && Object.entries(ks.dates || {}).every(([d, t]) => /^\d{4}-\d{2}-\d{2}$/.test(d) && HHMM.test(t))), 'org.json: kabbalatShabbat needs "latest" like 18:45, and "dates" like { "2026-11-06": "16:45" } (24-hour times)');
+  const kabbalat = opts.kabbalat || ks.latest;
   const seen = new Set();
   const uniq = (kind, slug) => { need(SLUG.test(slug || ''), `${kind}: bad slug "${slug}" (use lowercase-words-with-dashes)`); need(!seen.has(kind + slug), `${kind}: duplicate slug "${slug}"`); seen.add(kind + slug); };
   for (const p of programs) { uniq('program', p.slug); need(p.name && p.summary, `program ${p.slug}: name and summary are required`); }
@@ -110,8 +112,8 @@ function load(dir = DIR) {
   for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
-  for (const w of org.weekly || []) if (org.kabbalatShabbat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = org.kabbalatShabbat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, loadedAt: new Date() }, org.kabbalatShabbat, 'en');
+  for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, kabbalat, loadedAt: new Date() }, kabbalat, 'en');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

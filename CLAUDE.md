@@ -19,7 +19,7 @@ The Rabbi runs this website by talking to Claude. When he asks for something ("a
 | Design | `site/assets/site.css` |
 | Server code | `server/site/` |
 
-**Kabbalat Shabbat time** changes with the season: set it once in `org.json` (`"kabbalatShabbat": "17:45"`, 24-hour time). Every page, guide and FAQ that says `{kabbalat-shabbat}` shows it automatically in all three languages; when writing about Friday night, use `{kabbalat-shabbat}` instead of typing a time.
+**Kabbalat Shabbat time** is worked out every week: candle lighting in Lafayette rounded down to the quarter hour, never later than 6:45 PM (so it never starts after sunset). The rule is in `org.json` (`"kabbalatShabbat": { "latest": "18:45", "dates": {} }`); to set one Friday by hand, add it to `dates` (`"2026-11-13": "17:00"`). Every page, guide and FAQ that says `{kabbalat-shabbat}` shows this week's time in all three languages; when writing about Friday night, use `{kabbalat-shabbat}` instead of typing a time. Friday-night events in events.json still need their own start time.
 
 Shabbat times, holiday dates, the Hebrew date and parsha are computed automatically (`server/site/zmanim.js`); never type them in by hand.
 

@@ -44,7 +44,7 @@
   "social": {
     "facebook": "https://www.facebook.com/chabadoflamorinda"
   },
-  "kabbalatShabbat": "17:45",
+  "kabbalatShabbat": { "latest": "18:45", "dates": {} },
   "services": [
     {
       "name": "Shacharit (morning prayers)",

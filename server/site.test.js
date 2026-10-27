@@ -72,13 +72,19 @@ test('times carry the right Pacific offset across daylight saving', () => {
   assert.equal(withOffset('2026-07-01T10:00'), '2026-07-01T10:00:00-07:00');
   assert.equal(withOffset('2026-12-06T16:30'), '2026-12-06T16:30:00-08:00');
 });
-test('the Kabbalat Shabbat time is set once and shown everywhere, in every language', async () => {
-  const C = load(), raw = JSON.stringify(C);
-  assert.ok(!raw.includes('{kabbalat-shabbat}'), 'every {kabbalat-shabbat} is filled in');
-  assert.equal(C.org.weekly.find((w) => w.byDay === 'Friday').startTime, C.org.kabbalatShabbat);
-  const c = client(), h = parseInt(C.org.kabbalatShabbat, 10), en = `${h % 12 || 12}:${C.org.kabbalatShabbat.slice(3)} ${h < 12 ? 'AM' : 'PM'}`;
+test('Kabbalat Shabbat follows candle lighting, rounded down to the quarter hour, never after 6:45 PM', async () => {
+  const { kabbalatShabbat } = require('./site/zmanim.js'), rule = { latest: '18:45', dates: { '2026-11-13': '17:00' } }, at = (d) => kabbalatShabbat(rule, new Date(d + 'T12:00:00-07:00'));
+  assert.equal(await at('2026-10-27'), '17:45'); // candles 5:53 PM
+  assert.equal(await at('2026-11-06'), '16:45'); // candles 4:46 PM, after the clocks change
+  assert.equal(await at('2027-06-18'), '18:45'); // summer: never later than 6:45
+  assert.equal(await at('2026-11-13'), '17:00'); // set by hand for one Friday
+  const C = load(DIR, { kabbalat: '16:45' });
+  assert.ok(!JSON.stringify(C).includes('{kabbalat-shabbat}'), 'every {kabbalat-shabbat} is filled in');
+  assert.equal(C.org.weekly.find((w) => w.byDay === 'Friday').startTime, '16:45');
+  assert.ok(C.learn.find((a) => a.slug === 'shabbat-in-lamorinda').body.includes('4:45 PM'));
+  const c = client(), now = await kabbalatShabbat(load().org.kabbalatShabbat), h = parseInt(now, 10), en = `${h % 12 || 12}:${now.slice(3)} ${h < 12 ? 'AM' : 'PM'}`;
   assert.ok((await c.call('GET', '/learn/shabbat-in-lamorinda')).text.includes(en));
-  for (const l of ['he', 'ru']) { const t = (await c.call('GET', `/${l}/learn/shabbat-in-lamorinda`)).text; assert.ok(t.includes(C.org.kabbalatShabbat) && !t.includes('{kabbalat-shabbat}'), l); }
+  for (const l of ['he', 'ru']) { const t = (await c.call('GET', `/${l}/learn/shabbat-in-lamorinda`)).text; assert.ok(t.includes(now) && !t.includes('{kabbalat-shabbat}'), l); }
 });
 
 test('markdown escapes HTML and unsafe links', () => {
@@ -95,7 +101,7 @@ test('home and key pages render with structured data and security headers', asyn
   assert.match(home.text, /fbcdn\.net\/a\.jpg/);
   assert.match(home.headers.get('content-security-policy'), /img-src 'self' data: https:\/\/\*\.fbcdn\.net/);
   const ev = await c.call('GET', '/events/' + EVENT);
-  assert.match(ev.text, /"@type":"Event"/); assert.match(ev.text, /"startDate":"2026-10-30T18:30:00-07:00"/);
+  assert.match(ev.text, /"@type":"Event"/); assert.match(ev.text, /"startDate":"2026-10-30T17:45:00-07:00"/);
   assert.match(ev.text, /data-rsvp="kabbalat-shabbat-and-dinner-2026-10-30"/);
   assert.match((await c.call('GET', '/events')).text, /"@type":"EventSeries".*"byDay":"https:\/\/schema.org\/Sunday"/);
   for (const p of ['/events', '/shabbat', '/holidays', '/holidays/passover', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/about', '/faq', '/contact', '/photos', '/account', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10']) {
@@ -118,7 +124,7 @@ test('SEO and AI files', async () => {
   assert.match(robots.text, /User-agent: GPTBot\nAllow: \//); assert.match(robots.text, /User-agent: ClaudeBot/); assert.match(robots.text, /Sitemap: http:\/\/site\.test\/sitemap\.xml/);
   const sm = await c.call('GET', '/sitemap.xml'); assert.match(sm.text, /<loc>http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.ok(!sm.text.includes('grand-menorah'));
   const llms = await c.call('GET', '/llms.txt'); assert.match(llms.text, /^# Chabad of Lamorinda/); assert.match(llms.text, /3477 Golden Gate Way/);
-  const ics = await c.call('GET', '/events.ics'); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.match(ics.text, /DTSTART;TZID=America\/Los_Angeles:20261030T183000/);
+  const ics = await c.call('GET', '/events.ics'); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.match(ics.text, /DTSTART;TZID=America\/Los_Angeles:20261030T174500/);
   assert.match((await c.call('GET', '/feed.xml')).text, /<rss/);
 });
 

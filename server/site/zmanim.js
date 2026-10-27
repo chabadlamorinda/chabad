@@ -52,6 +52,18 @@ async function thisShabbat(now = new Date(), where = HOME) {
   return { candles, parsha, havdalah };
 }
 
+// This week's Kabbalat Shabbat (Lafayette), from the rule in org.json: candle lighting rounded down to the quarter hour,
+// never later than "latest" (summer), so it never starts after sunset. "dates" sets a single Friday by hand.
+async function kabbalatShabbat(rule = {}, now = new Date()) {
+  const { candles } = await thisShabbat(now);
+  if (!candles || !candles.time) return null;
+  if (rule.dates && rule.dates[candles.date]) return rule.dates[candles.date];
+  const p = new Intl.DateTimeFormat('en-GB', { timeZone: TZ, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(candles.time).split(':').map(Number);
+  const round = rule.roundTo || 15, mins = Math.floor((p[0] * 60 + p[1]) / round) * round;
+  const [lh, lm] = String(rule.latest || '18:45').split(':').map(Number), m = Math.min(mins, lh * 60 + lm);
+  return String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0');
+}
+
 // Upcoming holidays (one entry per holiday, major first-days only unless minor=true).
 async function upcomingHolidays(days = 365, now = new Date()) {
   const today = todayLocal(now), end = new Date(today); end.setDate(end.getDate() + days);
@@ -130,4 +142,4 @@ async function dailyStudy(day) {
   return out;
 }
 
-module.exports = { dailyStudy, dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };
+module.exports = { kabbalatShabbat, dailyStudy, dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };

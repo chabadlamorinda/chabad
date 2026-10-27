@@ -15,6 +15,7 @@
 'use strict';
 const express = require('express');
 const { load } = require('./content.js');
+const { kabbalatShabbat } = require('./zmanim.js');
 const { mountPages } = require('./pages.js');
 const { mountSeo } = require('./seo.js');
 const { mountTools } = require('./tools.js');
@@ -48,6 +49,13 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const indexNowKey = env.INDEXNOW_KEY ? require('crypto').createHash('sha256').update(env.INDEXNOW_KEY).digest('hex').slice(0, 32) : '';
   let data = load(contentDir); // throws with a clear list if a content file is wrong
   const content = () => data;
+  // Kabbalat Shabbat moves with sunset: work out this week's time, and again every hour.
+  const refreshKabbalat = async () => {
+    try { const k = await kabbalatShabbat(data.org.kabbalatShabbat); if (k && k !== data.kabbalat) data = load(contentDir, { kabbalat: k }); } catch (e) { log.error('kabbalat shabbat time:', e && e.message); }
+  };
+  const kabbalatReady = data.org.kabbalatShabbat ? refreshKabbalat() : Promise.resolve();
+  if (data.org.kabbalatShabbat) setInterval(refreshKabbalat, 3600e3).unref();
+  app.use((req, res, next) => kabbalatReady.then(() => next(), () => next()));
   const i18n = createI18n(contentDir || DIR), ctxOf = makeCtx({ content, i18n });
   const langOf = (req) => (LANGS.includes(req.get('x-lang')) ? req.get('x-lang') : 'en');
   const tOf = (req) => i18n.makeT(langOf(req));
@@ -133,7 +141,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   };
   return {
     content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
-    reload() { data = load(contentDir); return data; },
+    reload() { data = load(contentDir, { kabbalat: data.kabbalat }); refreshKabbalat(); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {
       mountCommunityAdmin(r2, ctx, { cs: community.cs, content, store });
