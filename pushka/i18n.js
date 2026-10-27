@@ -692,4 +692,5 @@ const HE = {
   "Donate in honor or memory": "תרמו לכבוד או לעילוי נשמת",
   "The coin goes into your pushka, dedicated to someone special.": "המטבע נכנס לקופה שלכם, מוקדש למישהו מיוחד.",
   "See the open Shabbosos and choose one": "ראו את השבתות הפנויות ובחרו אחת",
+  "Join the Chai Club": "הצטרפו למועדון חי",
 };

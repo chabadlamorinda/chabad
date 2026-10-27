@@ -1070,7 +1070,8 @@ function clubWho() { const l = clubOf(U.club.amt); return l ? t("You’ll be a {
 PG.club = () => {
   const ex = clubSub(), exL = ex && clubOf(ex.gift || ex.amount), cur = clubOf(U.club.amt);
   const lv = CLUB.slice().reverse().map(([id, min, nm]) => `<button class="clv ${cur && cur[0] === id ? "sel" : ""}" data-act="clubLvl" data-v="${id}"><span>${medalSvg(id, 36)}</span><span class="grow" style="text-align:start"><b>${t(nm)}</b><br><small>${t(CLUB_RANGE[id])}</small></span><span class="clv-a">${money(min)}+</span></button>`).join("");
-  return sub(tt("Chai Club"), `<div class="kicker">${t("Monthly donors")}</div>
+  return sub(tt("Chai Club"), `<div id="clubBoard"></div>
+    <div id="joinHere" class="joinsec">${sec(t("Join the Chai Club"))}</div>
     <p class="body-p">${t("Join our community of monthly donors. Your steady gift lets Chabad of Lamorinda plan ahead, and your medal is displayed on our honor board.")}</p>
     ${ex && exL ? `<div class="card" style="gap:12px">${medalSvg(exL[0], 40)}<div style="flex:1"><div class="card-title">${t("You’re a {level} member", { level: t(exL[2]) })}</div><div class="h-s">${t("{amt} monthly · {fund}", { amt: money(ex.gift || ex.amount), fund: t("Chai Club") })}</div><div class="h-s">${t("Choose a level below to change it.")}</div></div></div>` : ""}
     <div class="clvs">${lv}</div>
@@ -1080,7 +1081,7 @@ PG.club = () => {
     ${feeBox()}
     <div class="h-s" style="display:flex;align-items:center;gap:8px;font-size:13px">${ico(I.card, 16)}${API.enabled ? (API.card ? esc(cardLabel()) + ` <button class="link" data-act="cardChange">${t("Change")}</button>` : t("You’ll add a card when you give")) : t("Payment completes on our secure donation page")}</div>
     <button class="btn btn-primary cta" id="clubCta" data-act="clubJoin">${clubCta()}</button>
-    ${sec(t("Our honor board"))}<div id="clubBoard"></div>${TAXNOTE()}`);
+    ${TAXNOTE()}`);
 };
 const clubCta = () => t(clubSub() ? "Update my monthly gift to {amt}" : "Join monthly · {amt}", { amt: money(totalOf(U.club.amt)) });
 A.clubLvl = (v) => { const l = CLUB.find((x) => x[0] === v), cur = clubOf(U.club.amt); if (!cur || cur[0] !== v) U.club.amt = l[1]; draw(); };
@@ -1096,7 +1097,7 @@ A.clubJoin = () => {
 A.clubJoinHome = () => { U.stack.push(U.page); U.page = "club"; draw(); };
 function mountBoard() {
   const el = $("#clubBoard"); if (!el || !window.ClubBoard) return;
-  const paint = (d) => { const e = $("#clubBoard"); if (e) { e.textContent = ""; e.appendChild(ClubBoard.render(d, { lang: LANG, onJoin: U.page === "board", style: S.boardStyle === "wall" ? "wall" : "classic" })); } };
+  const paint = (d) => { const e = $("#clubBoard"); if (e) { e.textContent = ""; e.appendChild(ClubBoard.render(d, { lang: LANG, onJoin: true })); } };
   paint(U.club.data);
   if (!U.club.loading && (!U.club.data || Date.now() - U.club.at > 60000)) { U.club.loading = true; ClubBoard.load("").then((d) => { U.club.data = d; U.club.at = Date.now(); }).catch(() => {}).finally(() => { U.club.loading = false; if (U.club.data) paint(U.club.data); }); }
 }
@@ -1185,9 +1186,8 @@ function boardCard() {
   const counts = ["platinum", "gold", "silver", "bronze"].map((l) => `<span class="bc">${medalSvg(l, 22)}<b>${d ? d.counts[l] || 0 : "·"}</b></span>`).join("");
   return `<button class="card boardcard" data-act="go" data-v="board"><div style="flex:1;text-align:start"><div class="card-title">${t("Our monthly donors")}</div><div class="h-s">${total ? t("{n} monthly donors keep our community going.", { n: total }) : t("Join the Chai Club and see your medal on our board.")}</div>${names.length ? `<div class="bn">${names.map((n) => esc(n)).join(" · ")}</div>` : ""}<div class="bcs">${counts}</div></div>${chev()}</button>`;
 }
-A.boardStyle = (v) => { S.boardStyle = v === "wall" ? "wall" : "classic"; save(); draw(); };
-A.clubJoinPage = () => { U.stack = ["give"]; U.page = "club"; draw(); };
-PG.board = () => sub(tt("Chai Club honor board"), `<div class="chips"><button class="chip ${S.boardStyle !== "wall" ? "on" : ""}" data-act="boardStyle" data-v="classic">${t("Classic")}</button><button class="chip ${S.boardStyle === "wall" ? "on" : ""}" data-act="boardStyle" data-v="wall">${t("Wall plaque")}</button></div><p class="body-p">${t("These families give every month to keep Chabad of Lamorinda going. Join by name, or anonymously: you still get your medal.")}</p><div id="clubBoard"></div>`);
+A.clubJoinPage = () => { if (U.page === "club") { const j = $("#joinHere"); if (j) j.scrollIntoView({ behavior: "smooth", block: "start" }); return; } U.stack = ["give"]; U.page = "club"; draw(); };
+PG.board = () => sub(tt("Chai Club honor board"), `<p class="body-p">${t("These families give every month to keep Chabad of Lamorinda going. Join by name, or anonymously: you still get your medal.")}</p><div id="clubBoard"></div>`);
 
 // community counter (anonymous totals only) and announcements from the Rabbi
 let coinBuf = { n: 0, cents: 0 }, coinTimer = null;

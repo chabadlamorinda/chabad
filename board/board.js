@@ -34,40 +34,9 @@
     s.appendChild(svg('path', { d: 'M22 48c6-9 18-12 28-8', fill: 'none', stroke: '#fff', 'stroke-width': 2.4, 'stroke-linecap': 'round', opacity: '.45' }));
     return s;
   }
+  // The honor board: a midnight-blue panel with brass name plates, like a donor recognition wall.
   function render(data, o) {
-    o = o || {}; if (o.style === 'wall') return renderWall(data, o);
-    var lang = o.lang === 'he' ? 'he' : 'en', X = T[lang];
-    data = data || { members: [], counts: {}, total: 0 };
-    var box = el('div', 'cb'); box.setAttribute('lang', lang); box.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
-    var frame = el('div', 'cb-frame'), paper = el('div', 'cb-paper'); frame.appendChild(paper); box.appendChild(frame);
-    var head = el('div', 'cb-head'); head.appendChild(el('div', 'cb-he', 'מועדון חי')); if (lang === 'en') head.appendChild(el('h2', 'cb-title', X.title));
-    head.appendChild(el('div', 'cb-orn', '✦')); head.appendChild(el('p', 'cb-sub', X.sub)); paper.appendChild(head);
-    var any = false;
-    LEVELS.forEach(function (L) {
-      var count = (data.counts && data.counts[L.id]) || 0, names = (data.members || []).filter(function (m) { return m.level === L.id; });
-      var tier = el('section', 'cb-tier'); tier.setAttribute('data-level', L.id);
-      var th = el('div', 'cb-th'); th.appendChild(medal(L.id, 34));
-      var tt = el('div'); tt.appendChild(el('div', 'cb-tn', L[lang])); tt.appendChild(el('div', 'cb-tr', L.range[lang])); th.appendChild(tt);
-      if (count) th.appendChild(el('div', 'cb-ct', X.members(count)));
-      tier.appendChild(th);
-      if (names.length) { any = true; var grid = el('div', 'cb-names'); names.forEach(function (m, i) { var p = el('div', 'cb-plaque'); p.style.animationDelay = Math.min(i, 12) * 40 + 'ms'; p.appendChild(medal(L.id, 18)); p.appendChild(el('span', '', m.name)); grid.appendChild(p); }); tier.appendChild(grid); }
-      var quiet = count - names.length;
-      if (quiet > 0) { // donors who joined anonymously still get a plaque and a medal
-        any = true; var ag = el('div', 'cb-names'), shown = Math.min(quiet, 18);
-        for (var q = 0; q < shown; q++) { var ap = el('div', 'cb-plaque cb-anon'); ap.appendChild(medal(L.id, 18)); ap.appendChild(el('span', '', X.anon)); ag.appendChild(ap); }
-        tier.appendChild(ag); if (quiet > shown) tier.appendChild(el('div', 'cb-quiet', X.more(quiet - shown)));
-      }
-      if (!count) tier.appendChild(el('div', 'cb-empty', X.empty));
-      paper.appendChild(tier);
-    });
-    var foot = el('div', 'cb-foot'); foot.appendChild(el('div', '', X.foot));
-    if (o.joinHref) { var a = el('a', 'cb-cta', X.join); a.href = o.joinHref; a.target = '_top'; foot.appendChild(a); }
-    else if (o.onJoin) { var b = el('button', 'cb-cta', X.join); b.type = 'button'; b.setAttribute('data-act', 'clubJoinPage'); foot.appendChild(b); }
-    paper.appendChild(foot);
-    return box;
-  }
-  // "Wall plaque" style: a walnut panel with brass name plates, like a donor recognition wall.
-  function renderWall(data, o) {
+    o = o || {};
     var lang = o.lang === 'he' ? 'he' : 'en', X = T[lang]; data = data || { members: [], counts: {}, total: 0 };
     var box = el('div', 'cbw'); box.setAttribute('lang', lang); box.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
     var frame = el('div', 'cbw-frame'), wood = el('div', 'cbw-wood'); frame.appendChild(wood); box.appendChild(frame);

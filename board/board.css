@@ -1,54 +1,21 @@
-/* Chai Club honor board: shared by the app and the embeddable page. */
-.cb{--gold:#b68235;--gold-d:#7d5411;--ink:#201f1d;--paper:#fbf8f2;--line:rgba(125,84,17,.35);font-family:Lora,Georgia,serif;color:var(--ink);max-width:760px;margin:0 auto;box-sizing:border-box}
-.cb *{box-sizing:border-box}
-.cb-frame{position:relative;padding:10px;border-radius:6px;background:linear-gradient(135deg,#e9c987,#b68235 45%,#8a5f1a 70%,#e1ad66);box-shadow:0 12px 32px rgba(45,43,43,.22)}
-.cb-paper{position:relative;border-radius:3px;padding:30px 22px 26px;background:radial-gradient(ellipse at 50% 0,#fffdf8 0,var(--paper) 55%,#f3ecdd 100%);box-shadow:inset 0 0 0 1px var(--line),inset 0 0 0 7px var(--paper),inset 0 0 0 8px var(--line)}
-.cb-head{text-align:center;margin-bottom:18px}
-.cb-he{font:600 38px/1.1 "Cormorant Garamond",Georgia,serif;color:#173766;letter-spacing:.04em}
-.cb-title{font:400 30px/1.15 "Cormorant Garamond",Georgia,serif;margin:4px 0 2px}
-.cb-sub{font-size:13px;color:#605d5d;max-width:440px;margin:6px auto 0}
-.cb-orn{display:flex;align-items:center;gap:10px;justify-content:center;color:var(--gold);margin:12px auto 0;max-width:260px}
-.cb-orn:before,.cb-orn:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}.cb-orn:after{transform:scaleX(-1)}
-.cb-tier{margin-top:22px}
-.cb-th{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:12px}
-.cb-th svg{flex:none}
-.cb-tn{font:600 22px/1.1 "Cormorant Garamond",Georgia,serif;letter-spacing:.06em;text-transform:uppercase}
-.cb-tr{font-size:12px;color:#605d5d}
-.cb-ct{margin-inline-start:auto;font:400 13px Lora,Georgia,serif;color:var(--gold-d);border:1px solid var(--line);border-radius:12px;padding:1px 10px}
-.cb-names{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:9px}
-.cb-plaque{display:flex;align-items:center;gap:9px;padding:8px 12px;border-radius:3px;background:linear-gradient(180deg,#fffdf9,#f4ecdb);border:1px solid var(--line);box-shadow:0 1px 2px rgba(45,43,43,.12);font:600 17px/1.2 "Cormorant Garamond",Georgia,serif;animation:cbIn .5s both}
-.cb-plaque svg{flex:none}
-.cb-plaque span{overflow-wrap:anywhere}
-.cb-quiet{margin-top:9px;font-size:12.5px;font-style:italic;color:#605d5d}
-.cb-empty{text-align:center;color:#605d5d;font-style:italic;padding:8px 0 2px}
-.cb-foot{margin-top:22px;text-align:center;font-size:12px;color:#605d5d}
-.cb-cta{display:inline-block;margin-top:10px;border:1px solid var(--gold);border-radius:26px;padding:9px 22px;color:var(--gold-d);text-decoration:none;font:600 15px Lora,Georgia,serif;background:transparent;cursor:pointer}
-.cb-cta:hover{background:rgba(182,130,53,.12)}
-.cb-summary{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:12px}
-.cb-sum{display:flex;align-items:center;gap:6px;font-size:13px;color:#444141}
-@keyframes cbIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.cb-plaque{animation:none}}
-@media (max-width:480px){.cb-paper{padding:24px 14px 20px}.cb-title{font-size:26px}.cb-names{grid-template-columns:1fr}}
-
-.cb-anon span{font-style:italic;font-weight:400;color:#605d5d}
-
-/* ===== Wall plaque style ===== */
-.cbw{max-width:760px;margin:0 auto;font-family:"Cormorant Garamond",Georgia,serif;color:#f3e6c8}
+/* Chai Club honor board: a midnight-blue panel with brass and silver name plates. Shared by the app and the embeddable page. */
+.cbw{max-width:760px;margin:0 auto;font-family:"Cormorant Garamond",Georgia,serif;color:#e8eefb}
 .cbw *{box-sizing:border-box}
-.cbw-frame{padding:14px;border-radius:6px;background:linear-gradient(135deg,#6b4423,#3a2312 40%,#5a3a1d 70%,#2a180a);box-shadow:0 16px 36px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,220,160,.25)}
-.cbw-wood{position:relative;padding:26px 20px 24px;border-radius:3px;background:repeating-linear-gradient(90deg,rgba(0,0,0,.14) 0 1px,transparent 1px 9px),repeating-linear-gradient(90deg,rgba(255,225,170,.05) 0 2px,transparent 2px 23px),linear-gradient(180deg,#4a2c15,#3a220f 50%,#46290f);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5),inset 0 3px 14px rgba(0,0,0,.55)}
+.cbw-frame{padding:10px;border-radius:8px;background:linear-gradient(135deg,#f6dd92,#b8872a 28%,#8a5d14 52%,#f0cf76 78%,#a8741a);box-shadow:0 18px 40px rgba(11,23,48,.45),inset 0 1px 0 rgba(255,255,255,.5)}
+.cbw-wood{position:relative;padding:30px 22px 26px;border-radius:4px;background:radial-gradient(120% 60% at 50% 0,rgba(70,120,200,.28),transparent 60%),repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 7px),linear-gradient(180deg,#14305e,#0e2347 55%,#0a1a38);box-shadow:inset 0 0 0 1px rgba(246,221,146,.55),inset 0 0 0 6px #0e2347,inset 0 0 0 7px rgba(246,221,146,.28),inset 0 8px 30px rgba(0,0,0,.35)}
 .cbw-head{text-align:center;margin-bottom:20px}
 .cbw-plate-title{display:inline-block;min-width:60%;padding:10px 30px 12px;border-radius:4px;background:linear-gradient(135deg,#f3d88a,#b8872a 45%,#f0cf76 70%,#9a6c1b);box-shadow:0 3px 8px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.55),inset 0 -2px 3px rgba(80,48,6,.45);color:#3a2504;position:relative}
 .cbw-plate-title::before,.cbw-plate-title::after,.cbw-name::before,.cbw-name::after{content:"";position:absolute;top:50%;width:7px;height:7px;margin-top:-3.5px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0,#c9c9c9 35%,#6a6a6a 100%);box-shadow:0 1px 1px rgba(0,0,0,.5)}
 .cbw-plate-title::before,.cbw-name::before{left:8px}.cbw-plate-title::after,.cbw-name::after{right:8px}
 .cbw-he{font:700 34px/1.1 "Frank Ruhl Libre","Cormorant Garamond",serif;text-shadow:0 1px 0 rgba(255,255,255,.45)}
 .cbw-en{font:700 24px/1.1 "Cormorant Garamond",Georgia,serif;letter-spacing:.28em;text-shadow:0 1px 0 rgba(255,255,255,.45);margin-top:2px}
-.cbw-sub{margin:12px auto 0;max-width:460px;font:italic 500 16px/1.3 "Cormorant Garamond",Georgia,serif;color:#e8d7b0}
+.cbw-sub{margin:12px auto 0;max-width:460px;font:italic 500 16px/1.3 "Cormorant Garamond",Georgia,serif;color:#cdd9f0}
 .cbw-tier{margin-top:24px}
-.cbw-th{display:flex;align-items:center;gap:14px;padding:6px 14px;border-radius:4px;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.2));box-shadow:inset 0 1px 3px rgba(0,0,0,.6),0 1px 0 rgba(255,220,160,.18);margin-bottom:12px}
+.cbw-th{display:flex;align-items:center;gap:14px;padding:6px 14px;border-radius:4px;background:linear-gradient(180deg,rgba(5,12,30,.55),rgba(5,12,30,.3));box-shadow:inset 0 1px 3px rgba(0,0,0,.6),0 1px 0 rgba(246,221,146,.28);border-left:3px solid #d6a43c;margin-bottom:12px}
+html[dir=rtl] .cbw-th,.cbw[dir=rtl] .cbw-th{border-left:0;border-right:3px solid #d6a43c}
 .cbw-tn{font:700 24px/1.1 "Cormorant Garamond",Georgia,serif;letter-spacing:.2em;text-transform:uppercase;color:#f3d88a}
-.cbw-tr{font:500 14px "Cormorant Garamond",Georgia,serif;color:#cdb98d}
-.cbw-ct{margin-inline-start:auto;font:600 14px "Cormorant Garamond",Georgia,serif;color:#f3d88a;border:1px solid rgba(243,216,138,.5);border-radius:12px;padding:1px 10px}
+.cbw-tr{font:500 14px "Cormorant Garamond",Georgia,serif;color:#b6c4e0}
+.cbw-ct{margin-inline-start:auto;font:600 14px "Cormorant Garamond",Georgia,serif;color:#f3d88a;border:1px solid rgba(243,216,138,.55);border-radius:12px;padding:1px 10px}
 .cbw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
 .cbw-name{position:relative;padding:9px 26px 10px;text-align:center;border-radius:3px;background:linear-gradient(135deg,#f3d88a,#b8872a 45%,#f0cf76 70%,#9a6c1b);box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.55),inset 0 -2px 3px rgba(80,48,6,.45);color:#3a2504;font:700 18px/1.15 "Cormorant Garamond",Georgia,serif;letter-spacing:.06em;text-transform:uppercase;text-shadow:0 1px 0 rgba(255,255,255,.4)}
 .cbw-name span{overflow-wrap:anywhere}
@@ -56,8 +23,10 @@
 .t-platinum .cbw-name,.t-platinum .cbw-plate-title{background:linear-gradient(135deg,#f6fbff,#9db4cf 45%,#e9f2fb 70%,#7e97b6);color:#1b2c44;box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 #fff,inset 0 -2px 3px rgba(30,50,80,.4)}
 .t-silver .cbw-name{background:linear-gradient(135deg,#f4f5f7,#aeb4bd 45%,#eceef1 70%,#8a919b);color:#262b33;box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 #fff,inset 0 -2px 3px rgba(40,44,52,.4)}
 .t-bronze .cbw-name{background:linear-gradient(135deg,#f0c79c,#b87a45 45%,#e8b48a 70%,#8a5427);color:#3a1d07;box-shadow:0 3px 6px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,235,210,.6),inset 0 -2px 3px rgba(70,30,6,.45)}
-.cbw-empty{font:italic 500 16px "Cormorant Garamond",Georgia,serif;color:#cdb98d;padding:6px 4px}
-.cbw-more{margin-top:8px;font:italic 500 15px "Cormorant Garamond",Georgia,serif;color:#cdb98d}
-.cbw-foot{margin-top:26px;text-align:center;font:italic 500 16px "Cormorant Garamond",Georgia,serif;color:#e8d7b0}
+.cbw-empty{font:italic 500 16px "Cormorant Garamond",Georgia,serif;color:#b6c4e0;padding:6px 4px}
+.cbw-more{margin-top:8px;font:italic 500 15px "Cormorant Garamond",Georgia,serif;color:#b6c4e0}
+.cbw-foot{margin-top:26px;text-align:center;font:italic 500 16px "Cormorant Garamond",Georgia,serif;color:#cdd9f0}
 .cbw-cta{display:inline-block;margin-top:12px;padding:9px 24px;border-radius:3px;border:0;cursor:pointer;text-decoration:none;font:700 16px "Cormorant Garamond",Georgia,serif;letter-spacing:.14em;text-transform:uppercase;color:#3a2504;background:linear-gradient(135deg,#f3d88a,#b8872a 45%,#f0cf76 70%,#9a6c1b);box-shadow:0 3px 8px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.55)}
-@media (max-width:480px){.cbw-wood{padding:20px 12px}.cbw-grid{grid-template-columns:1fr}.cbw-tn{font-size:20px}}
+@media (max-width:480px){.cbw-wood{position:relative;padding:30px 22px 26px;border-radius:4px;background:radial-gradient(120% 60% at 50% 0,rgba(70,120,200,.28),transparent 60%),repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 7px),linear-gradient(180deg,#14305e,#0e2347 55%,#0a1a38);box-shadow:inset 0 0 0 1px rgba(246,221,146,.55),inset 0 0 0 6px #0e2347,inset 0 0 0 7px rgba(246,221,146,.28),inset 0 8px 30px rgba(0,0,0,.35)}.cbw-grid{grid-template-columns:1fr}.cbw-tn{font-size:20px}}
+.cbw-th svg{flex:none}.cbw-ct{white-space:nowrap;flex:none}.cbw-tt{min-width:0}
+@media (max-width:480px){.cbw-tr{font-size:12.5px}.cbw-th{gap:10px;padding:6px 10px}.cbw-tn{letter-spacing:.14em}}
