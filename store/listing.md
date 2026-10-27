@@ -19,6 +19,11 @@ Make giving a daily habit:
 • Build a weekday streak and get gentle reminders, including before Shabbat candle lighting.
 • When it's full, empty it to Chabad of Lamorinda in one tap. Your card is saved securely with Stripe and charged automatically. No forms, no redirects.
 
+Remember and belong:
+• Join the Chai Club of monthly donors at Bronze, Silver, Gold or Platinum level, by name or anonymously, and see the honor board.
+• Keep yahrzeit dates with reminders a month, a week and a day before, and give in their memory.
+• Donate in honor or memory of someone, add birthdays and anniversaries, and keep a streak with achievements. A kids' mode, family names and undo for mistakes are built in.
+
 Give your way:
 • Choose from our funds: General Fund, Chai Club, Jewish Preschool Scholarships, Bay Kosher Market, Building Campaign, Holiday Programs, Synagogue, End of Year Campaign, Children Events and Pledge.
 • One-time or monthly gifts, with a dedication or note, and an optional processing-fee add-on.
@@ -48,6 +53,11 @@ Your privacy matters: no ads, no tracking, and we never see your card number.
 • הטילו מטבע לקופה בכל עת, וראו אותה מתמלאת בזהב ככל שאתם מתקרבים ליעד.
 • בנו רצף ימי חול וקבלו תזכורות עדינות, כולל לפני הדלקת נרות שבת.
 • כשהקופה מלאה, רוקנו אותה לבית חב״ד בהקשה אחת. הכרטיס נשמר בבטחה אצל Stripe ומחויב אוטומטית. בלי טפסים ובלי מעבר לאתר אחר.
+
+זוכרים ושייכים:
+• הצטרפו למועדון חי של תורמים חודשיים בדרגות ארד, כסף, זהב ופלטינה, בשם או באנונימיות, וראו את לוח הכבוד.
+• שמרו תאריכי יארצייט עם תזכורות חודש, שבוע ויום לפני, ותרמו לעילוי נשמתם.
+• תרמו לכבוד או לעילוי נשמת, הוסיפו ימי הולדת ויום נישואין, ושמרו על רצף עם הישגים. מצב ילדים, שמות בני משפחה וביטול טעויות מובנים באפליקציה.
 
 נותנים בדרך שלכם:
 • בחרו קרן: קרן כללית, מועדון חי, מלגות לגן הילדים היהודי, בי קושר מרקט, קמפיין הבנייה, תוכניות חגים, בית הכנסת, קמפיין סוף השנה, אירועי ילדים והתחייבות.

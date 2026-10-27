@@ -30,3 +30,5 @@ html[dir=rtl] .cbw-th,.cbw[dir=rtl] .cbw-th{border-left:0;border-right:3px solid
 @media (max-width:480px){.cbw-wood{position:relative;padding:30px 22px 26px;border-radius:4px;background:radial-gradient(120% 60% at 50% 0,rgba(70,120,200,.28),transparent 60%),repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 7px),linear-gradient(180deg,#14305e,#0e2347 55%,#0a1a38);box-shadow:inset 0 0 0 1px rgba(246,221,146,.55),inset 0 0 0 6px #0e2347,inset 0 0 0 7px rgba(246,221,146,.28),inset 0 8px 30px rgba(0,0,0,.35)}.cbw-grid{grid-template-columns:1fr}.cbw-tn{font-size:20px}}
 .cbw-th svg{flex:none}.cbw-ct{white-space:nowrap;flex:none}.cbw-tt{min-width:0}
 @media (max-width:480px){.cbw-tr{font-size:12.5px}.cbw-th{gap:10px;padding:6px 10px}.cbw-tn{letter-spacing:.14em}}
+.cbw-tt{flex:1}
+@media (max-width:400px){.cbw-tn{font-size:18px;letter-spacing:.1em}.cbw-ct{font-size:12px;padding:1px 8px}.cbw-th svg{width:34px;height:auto}.cbw-name{font-size:16px;padding:8px 22px 9px}}
