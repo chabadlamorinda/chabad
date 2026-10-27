@@ -37,9 +37,13 @@ Boosting a post (paid promotion) is done in Facebook's Meta Business Suite.
 * **Google Ad Grants** ($10,000/month of free search ads, which you already have): the full campaign plan, with keywords and the page for each, is in [`store/google-ad-grants.md`](google-ad-grants.md).
 * Events already carry Google's Event markup, so they can appear in Google's event listings once the site is indexed.
 
-## 4. The "Ask us" chat (free)
-The chat is free: it answers from the website itself (the best matching question and answer, guide or page, plus your phone number) and hands anything else to you with "Send to the Rabbi".
-Optional and **not free**: adding an Anthropic API key (**ANTHROPIC_API_KEY**) makes Claude write the answers. API usage is billed by Anthropic separately from any Claude subscription (a fraction of a cent per question on the cheapest model). Leave it unset to pay nothing.
+## 4. The "Ask us" chat
+The chat box ("Ask us", bottom corner of every page) answers in English, Hebrew or Russian, suggests follow-up questions to tap, knows which page the visitor is reading, and can send the conversation to you ("Send to the Rabbi").
+
+* **Free by default:** without a key it answers from the website itself (the best matching question and answer, guides and pages, plus your phone number).
+* **Claude answers (not free, but cheap):** in Render → Environment add **ANTHROPIC_API_KEY** (create it at console.anthropic.com → API keys, and add a payment method or prepaid credits there; this is billed separately from any Claude subscription). It always uses Claude Haiku 5.5, the cheapest and fastest model. Each question sends the website's core facts (cached, so they are billed at a reduced rate) plus only the 3 to 4 guides that match, and answers are kept short.
+* **Spending cap:** at most **300 Claude answers a day** (change with **CHAT_DAILY_LIMIT**); after that the free answers take over until the next day. You can also set a monthly spend limit in the Anthropic console.
+* **Walled off:** the chat has no access to the database, accounts, family details, forms, donations, drafts or the Rabbi area. It only sees published website content and what the visitor types. Visitors' questions (only the question text) are listed for you in the Rabbi area so you can see what people ask.
 
 ## 5. Launch day (moving chabadoflamorinda.com over)
 Do this only when everything above is working and the content is approved.

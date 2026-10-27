@@ -220,21 +220,29 @@
     var ask = function (q) {
       if (busy || !q.trim()) return;
       busy = true; history.push({ role: 'user', content: q.trim() }); save(); bubble('user', q.trim());
-      var b = bubble('assistant', T('Thinking…')), got = '';
-      fetch('/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: history, lang: LANG }) }).then(function (r) {
+      Array.prototype.forEach.call(panel.log.querySelectorAll('.chips'), function (c) { c.remove(); });
+      var b = el('div', { class: 'cm assistant typing', 'aria-label': T('Thinking…') }, [el('span'), el('span'), el('span')]), got = '', more = [];
+      panel.log.appendChild(b); panel.log.scrollTop = panel.log.scrollHeight;
+      fetch('/api/site/chat', { method: 'POST', credentials: 'omit', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: history, lang: LANG, page: location.pathname }) }).then(function (r) {
         if (!r.ok || !r.body) throw new Error('chat');
         var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
         var pump = function () { return reader.read().then(function (x) {
           if (x.done) return;
           buf += dec.decode(x.value, { stream: true });
           var parts = buf.split('\n\n'); buf = parts.pop();
-          parts.forEach(function (p) { var d = /^data: (.*)$/m.exec(p); if (!d) return; try { var j = JSON.parse(d[1]); if (j.text) { got += j.text; render(got, b); panel.log.scrollTop = panel.log.scrollHeight; } } catch (e) {} });
+          parts.forEach(function (p) { var d = /^data: (.*)$/m.exec(p); if (!d) return; try { var j = JSON.parse(d[1]); if (j.text) { got += j.text; b.classList.remove('typing'); render(got, b); panel.log.scrollTop = panel.log.scrollHeight; } if (j.suggest) more = j.suggest; } catch (e) {} });
           return pump();
         }); };
         return pump();
-      }).then(function () { if (!got) throw new Error('empty'); history.push({ role: 'assistant', content: got }); save(); })
-        .catch(function () { render(T('Sorry, something went wrong. Please call 925-384-7242.'), b); history.pop(); save(); })
+      }).then(function () { if (!got) throw new Error('empty'); history.push({ role: 'assistant', content: got }); save(); offer(more); })
+        .catch(function () { b.classList.remove('typing'); render(T('Sorry, something went wrong. Please call 925-384-7242.'), b); history.pop(); save(); })
         .then(function () { busy = false; panel.input.focus(); });
+    };
+    var offer = function (qs) {
+      if (!qs || !qs.length) return;
+      var chips = el('div', { class: 'chips' });
+      qs.forEach(function (q) { chips.appendChild(el('button', { type: 'button', class: 'chip', text: q, on: { click: function () { ask(q); } } })); });
+      panel.log.appendChild(chips); panel.log.scrollTop = panel.log.scrollHeight;
     };
     var handoff = function () {
       var box = el('form', { class: 'handoff' }), name = el('input', { required: true, autocomplete: 'name', placeholder: T('Your name') }), email = el('input', { type: 'email', required: true, autocomplete: 'email', placeholder: T('Your email'), dir: 'ltr' }), m = el('p', { class: 'msg', hidden: true });
