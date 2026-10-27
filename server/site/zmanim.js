@@ -56,7 +56,13 @@ async function thisShabbat(now = new Date(), where = HOME) {
 // never later than "latest" (summer), so it never starts after sunset. "dates" sets a single Friday by hand.
 async function kabbalatShabbat(rule = {}, now = new Date()) {
   const { candles } = await thisShabbat(now);
+  return kabbalatFor(rule, candles);
+}
+// The same rule for any Friday's candle lighting (null for a holiday that is not on a Friday).
+function kabbalatFor(rule = {}, candles) {
   if (!candles || !candles.time) return null;
+  const [y, mo, d] = candles.date.split('-').map(Number);
+  if (new Date(y, mo - 1, d).getDay() !== 5) return null;
   if (rule.dates && rule.dates[candles.date]) return rule.dates[candles.date];
   const p = new Intl.DateTimeFormat('en-GB', { timeZone: TZ, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(candles.time).split(':').map(Number);
   const round = rule.roundTo || 15, mins = Math.floor((p[0] * 60 + p[1]) / round) * round;
@@ -142,4 +148,4 @@ async function dailyStudy(day) {
   return out;
 }
 
-module.exports = { kabbalatShabbat, dailyStudy, dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };
+module.exports = { kabbalatShabbat, kabbalatFor, dailyStudy, dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };

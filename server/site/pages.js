@@ -5,7 +5,7 @@ const express = require('express');
 const path = require('path');
 const { md, esc, plain } = require('./md.js');
 const { layout } = require('./layout.js');
-const { fullAddress } = require('./content.js');
+const { fullAddress, fmtClock } = require('./content.js');
 const Z = require('./zmanim.js');
 const { googleCalendarUrl } = require('./social.js');
 const { withShare } = require('./share.js');
@@ -70,7 +70,7 @@ function mountPages(app, ctx) {
     if (req.path === '/' && !ctx.isHome(req)) return next(); // the app's own address still opens My Pushka
     const X = ctxOf(req), { t, C } = X, o = C.org;
     const [sh, hols, cnt, pics, posts] = await Promise.all([Z.thisShabbat(), Z.upcomingHolidays(200), counts(), photos ? photos(14).catch(() => []) : [], news(3).catch(() => [])]);
-    const mosaic = pics.slice(0, 6), strip = pics.slice(6, 14);
+    const mosaic = pics.slice(0, 6), strip = pics.slice(6, 14), ks = o.kabbalatShabbat ? Z.kabbalatFor(o.kabbalatShabbat, sh.candles) : null;
     const evs = upcoming(new Date(), C).slice(0, 4), nextHol = hols[0], holPage = nextHol && C.holidays.find((h) => h.slug === nextHol.slug);
     const help = C.help.slice(0, 6);
     const body = `
@@ -86,6 +86,7 @@ function mountPages(app, ctx) {
     <div class="card shabbat-card" aria-label="${esc(t('This Shabbat'))}">
       <p class="eyebrow">${esc(t('This Shabbat'))}${sh.parsha ? ' · ' + esc(X.hc(sh.parsha)) : ''}</p>
       ${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p>${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}
+      ${ks ? `<p>${esc(t('Kabbalat Shabbat at Chabad of Lamorinda: {time}', { time: fmtClock(ks, X.lang) }))}</p>` : ''}
       ${sh.havdalah ? `<p>${esc(t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}</p>` : ''}
       <div class="quick" data-shabbat-quick data-date="${sh.candles ? sh.candles.date : ''}" data-day="${sh.candles ? esc(X.shortDate(sh.candles.date)) : ''}" hidden></div>
       <p><a href="/shabbat">${esc(t('Services & Shabbat meals'))} →</a></p>
@@ -211,15 +212,15 @@ ${prog ? `<p>${esc(t('Part of'))} <a href="/programs/${prog.slug}">${esc(prog.na
       else if (weeks.length && e.cat === 'parashat') weeks[weeks.length - 1].parsha = e;
       else if (weeks.length && e.cat === 'havdalah' && !weeks[weeks.length - 1].havdalah) weeks[weeks.length - 1].havdalah = e;
     }
-    const svc = C.org.services || [];
+    const svc = C.org.services || [], rule = C.org.kabbalatShabbat || null;
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Shabbat in Lamorinda'))}</h1>
 <p class="lead-d">${esc(t('Shabbat is a gift: 25 hours to slow down, connect and recharge. Join us for services, a warm Kiddush and Shabbat dinners. No membership needed, no Hebrew needed.'))}</p>
 ${weeks[0] ? `<div class="card quick" data-shabbat-quick data-date="${weeks[0].candles.date}" data-day="${esc(X.shortDate(weeks[0].candles.date))}" hidden></div>` : ''}
 ${svc.length ? `<h2>${esc(t('Services'))}</h2><ul class="list">${svc.map((s) => `<li><strong>${esc(s.name)}</strong> ${esc(s.time)}${s.note ? ` <span class="muted">· ${esc(s.note)}</span>` : ''}</li>`).join('')}</ul>` : ''}
 <h2>${esc(t('Candle lighting times for Lafayette, Moraga and Orinda'))}</h2>
-<table class="tbl"><thead><tr><th>${esc(t('Shabbat'))}</th><th>${esc(t('Candle lighting'))}</th><th>${esc(t('Shabbat ends'))}</th></tr></thead><tbody>
-${weeks.map((w) => `<tr><td>${w.parsha ? esc(X.hc(w.parsha)) : ''}<br><span class="muted">${esc(X.shortDate(w.candles.date))}</span></td><td>${esc(X.tm(w.candles))}</td><td>${w.havdalah ? esc(X.tm(w.havdalah)) : ''}</td></tr>`).join('')}
-</tbody></table>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>${esc(t('Shabbat'))}</th><th>${esc(t('Candle lighting'))}</th>${rule ? `<th>${esc(t('Kabbalat Shabbat'))}</th>` : ''}<th>${esc(t('Shabbat ends'))}</th></tr></thead><tbody>
+${weeks.map((w) => { const k = rule ? Z.kabbalatFor(rule, w.candles) : null; return `<tr><td>${w.parsha ? esc(X.hc(w.parsha)) : ''}<br><span class="muted">${esc(X.shortDate(w.candles.date))}</span></td><td>${esc(X.tm(w.candles))}</td>${rule ? `<td>${k ? esc(fmtClock(k, X.lang)) : ''}</td>` : ''}<td>${w.havdalah ? esc(X.tm(w.havdalah)) : ''}</td></tr>`; }).join('')}
+</tbody></table></div>
 <p class="muted">${esc(t('Candle lighting is 18 minutes before sunset. Shabbat ends at nightfall.'))} <a href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a> · <a href="/jewish-holidays-${new Date().getFullYear()}">${esc(t('Holiday times'))}</a></p>
 ${md(C.org.shabbatText || '')}
 <p class="btns"><a class="btn gold" href="/events?c=shabbat">${esc(t('Shabbat dinners and events'))}</a><a class="btn ghost" href="/contact">${esc(t('Host or be hosted for a meal'))}</a></p>

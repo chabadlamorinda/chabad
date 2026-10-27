@@ -5,7 +5,7 @@ const { esc } = require('./md.js');
 
 const HOLIDAY = {
   'rosh-hashanah': /rosh-hashanah|shofar|tashlich|elul|selichot|teshuvah/, 'yom-kippur': /yom-kippur|kol-nidre|yizkor|teshuvah/,
-  sukkot: /sukk|four-kinds|ushpizin|hoshana/, 'simchat-torah': /hakafot|torah-reading|simchat/, chanukah: /chanukah|dreidel/,
+  sukkot: /sukk|four-kinds|ushpizin|hoshana/, 'simchat-torah': /hakafot|torah-reading|simchat/, chanukah: /chanukah|dreidel|al-hanissim|kislev|jewish-in-december/,
   'tu-bishvat': /tu-bishvat/, purim: /purim|megillah|mishloach/, passover: /passover|seder-plate|afikoman|four-questions|matzah|chametz|exodus|pesach/,
   'lag-baomer': /omer|lag-baomer/, shavuot: /shavuot|ten-commandments|omer/, 'tisha-bav': /three-weeks|tisha|holy-temple|western-wall/,
 };

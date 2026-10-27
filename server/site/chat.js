@@ -10,7 +10,7 @@
 const express = require('express');
 const { plain } = require('./md.js');
 const { siteDocs } = require('./search.js');
-const { fullAddress } = require('./content.js');
+const { fullAddress, fmtClock } = require('./content.js');
 const Z = require('./zmanim.js');
 
 const MAX_TURNS = 16, MAX_CHARS = 2000;
@@ -25,6 +25,7 @@ function knowledge(C) {
   L.push('', '## Services and weekly schedule');
   for (const s of o.services || []) L.push(`- ${s.name}: ${s.time}${s.note ? ' (' + s.note + ')' : ''}`);
   for (const w of o.weekly || []) L.push(`- ${w.day} ${w.time}: ${w.name} (${w.link})`);
+  if (o.kabbalatShabbat) L.push(`- The Friday Kabbalat Shabbat time above is this week's. It changes every week with the season: close to candle lighting in winter, never later than ${fmtClock(o.kabbalatShabbat.latest, 'en')} in summer, so it never starts after sunset. Each Friday's time is in the table on /shabbat.`);
   L.push(plain(o.shabbatText || ''));
   L.push('', '## Programs');
   for (const p of C.programs) L.push(`### ${p.name} (/programs/${p.slug})`, `${p.audience || ''}. ${p.summary} ${p.schedule ? 'When: ' + p.schedule + '.' : ''}`, plain(p.details || ''));

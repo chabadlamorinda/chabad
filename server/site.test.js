@@ -84,6 +84,8 @@ test('Kabbalat Shabbat follows candle lighting, rounded down to the quarter hour
   assert.ok(C.learn.find((a) => a.slug === 'shabbat-in-lamorinda').body.includes('4:45 PM'));
   const c = client(), now = await kabbalatShabbat(load().org.kabbalatShabbat), h = parseInt(now, 10), en = `${h % 12 || 12}:${now.slice(3)} ${h < 12 ? 'AM' : 'PM'}`;
   assert.ok((await c.call('GET', '/learn/shabbat-in-lamorinda')).text.includes(en));
+  assert.ok((await c.call('GET', '/shabbat')).text.includes('<th>Kabbalat Shabbat</th>'), 'the Shabbat table has a Kabbalat Shabbat column');
+  assert.equal(require('./site/zmanim.js').kabbalatFor({ latest: '18:45' }, { date: '2026-10-29', time: new Date() }), null, 'only Fridays');
   for (const l of ['he', 'ru']) { const t = (await c.call('GET', `/${l}/learn/shabbat-in-lamorinda`)).text; assert.ok(t.includes(now) && !t.includes('{kabbalat-shabbat}'), l); }
 });
 
