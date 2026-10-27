@@ -1,7 +1,8 @@
 // In-memory fake of the Stripe API surface used by server/index.js. For tests only.
 'use strict';
+const Stripe = require('stripe');
 function fakeStripe() {
-  const st = { customers: {}, pms: {}, pis: {}, subs: {}, products: {}, seq: 0, idem: {}, calls: [], failNext: null };
+  const st = { customers: {}, pms: {}, pis: {}, subs: {}, products: {}, sessions: {}, seq: 0, idem: {}, calls: [], failNext: null };
   const id = (p) => p + '_' + (++st.seq).toString(36).padStart(6, '0') + 'Abc';
   const withIdem = (key, fn) => { if (key && st.idem[key]) return st.idem[key]; const r = fn(); if (key) st.idem[key] = r; return r; };
   const s = {
@@ -35,6 +36,15 @@ function fakeStripe() {
       cancel: async (i) => { st.subs[i].status = 'canceled'; return st.subs[i]; },
     },
   };
+  s.webhooks = new Stripe('sk_test_dummy').webhooks; // real signature checking
+  s.checkout = { sessions: {
+    create: async (p, o) => { st.calls.push(['checkout.sessions.create', p, o]);
+      if (st.failNext) { const f = st.failNext; st.failNext = null; throw f; }
+      return withIdem(o && o.idempotencyKey, () => { const x = { id: id('cs_test'), url: 'https://checkout.stripe.com/c/pay/test', status: 'open', payment_status: 'unpaid', payment_intent: null, metadata: p.metadata, params: p }; st.sessions[x.id] = x; return x; }); },
+    retrieve: async (i) => st.sessions[i],
+    expire: async (i) => { st.sessions[i].status = 'expired'; return st.sessions[i]; },
+  } };
+  s.payCheckout = (i) => Object.assign(st.sessions[i], { status: 'complete', payment_status: 'paid', payment_intent: 'pi_' + i }); // simulate the donor paying
   s.addCard = (customer) => { const m = { id: id('pm'), created: ++st.seq, customer, card: { brand: 'visa', last4: '4242', exp_month: 12, exp_year: 2030 } }; st.pms[m.id] = m; return m; };
   return s;
 }

@@ -1,0 +1,61 @@
+{
+  "_README": "This is the ONE file that makes the Kiddush board yours. Fill in your details, keep the quote marks and commas exactly as they are, and save. Anything you leave empty is simply left off. After deploying you can still change prices, payment details and contact info from the staff page (Settings); this file gives the starting values.",
+
+  "organization": {
+    "name": "Chabad of Anytown",
+    "headerLine1": "CHABAD",
+    "headerLine2": "ANYTOWN",
+    "nameHe": "חב״ד אנימטאון",
+    "headerLine1He": "חב״ד",
+    "headerLine2He": "אנימטאון"
+  },
+
+  "location": {
+    "_help": "timezone: a name like America/New_York, America/Chicago, America/Denver, America/Los_Angeles, Europe/London. zip: US zip code, used for candle lighting and Havdalah times on the TV. Outside the US leave zip empty and use geonameid (find your city at geonames.org). Candle lighting is 18 minutes before sunset. Shabbat/Yom Tov ends when the sun is 8.5 degrees below the horizon, so the time follows the seasons by itself (leave havdalahMinutesAfterSunset as null; put a number such as 40 only if you want a fixed number of minutes after sunset). Compare one week with your website or Chabad.org to check.",
+    "timezone": "America/New_York",
+    "zip": "10001",
+    "geonameid": null,
+    "candleLightingMinutesBeforeSunset": 18,
+    "havdalahMinutesAfterSunset": null,
+    "havdalahExtraMinutes": 1
+  },
+
+  "contact": {
+    "email": "rabbi@example.org",
+    "phone": "555-555-5555"
+  },
+
+  "_publicUrl_help": "publicUrl: the real address of this app if you gave it your own domain (leave empty to use the hosting address). shareUrl: the address to show on the TV and in its QR code, for example https://www.example.org/kiddush. Set it only once that address really opens the sponsor page (for example a page on your website that forwards to it).",
+  "publicUrl": "",
+  "shareUrl": "",
+
+  "prices": {
+    "_help": "Dollars. 'board' is the price to sponsor the whole board for the year.",
+    "shabbat": 500,
+    "holiday": 720,
+    "board": 5000,
+    "standardNote": "Standard Kiddush for 25 people",
+    "standardNoteHe": "קידוש רגיל ל-25 איש"
+  },
+
+  "payments": {
+    "_help": "Card payments need Stripe (see SETUP-GUIDE.md). For Zelle, Venmo, check and cash the sponsor is shown how to pay and you confirm it in the staff page. Leave an id/handle empty to hide that option.",
+    "card": true,
+    "coverFee": true,
+    "zelle":  { "id": "", "name": "" },
+    "venmo":  { "handle": "" },
+    "check":  { "payableTo": "Chabad of Anytown", "mailTo": "123 Main Street, Anytown, NY 10001" },
+    "cash": true
+  },
+
+  "board": {
+    "_help": "Optional. Leave blessing/blessingHe out to use the traditional Mi Sheberach text.",
+    "includePurim": true
+  },
+
+  "reminders": {
+    "_help": "Unpaid Zelle/Venmo/check/cash pledges: remind the sponsor by email after this many days (needs the optional email setup).",
+    "automatic": true,
+    "afterDays": 3
+  }
+}

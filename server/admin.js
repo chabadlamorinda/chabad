@@ -10,7 +10,7 @@ const { ptParts } = require('./scheduler.js');
 const COOKIE = 'cl_admin';
 const TTL = 12 * 3600e3;
 
-function mountAdmin(app, { store, stripe, password, secret, limit, send, log = console, levelOf }) {
+function mountAdmin(app, { store, stripe, password, secret, limit, send, log = console, levelOf, extend = null }) {
   if (!password || password.length < 12) return false;
   const needDb = (req, res, next) => (store ? next() : res.status(503).json({ code: 'not_configured', error: 'The database is not connected yet (DATABASE_URL).' }));
   const mac = (s) => crypto.createHmac('sha256', secret + ':admin').update(s).digest('base64url');
@@ -121,6 +121,11 @@ function mountAdmin(app, { store, stripe, password, secret, limit, send, log = c
     res.json({ ok: true, sent, total: subs.length });
   }));
 
+  if (extend) {
+    extend(r, { authed, wrap });
+    r.get('/kiddush', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'kiddush.html')));
+    r.get('/kiddush.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'kiddush.js')));
+  }
   r.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'admin', 'index.html')));
   r.get('/admin.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'admin.js')));
   r.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));

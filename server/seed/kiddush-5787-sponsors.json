@@ -1,0 +1,102 @@
+[
+ {
+  "weekId": "2026-09-12",
+  "name": "Bar & Meghan Levy",
+  "anonymous": false,
+  "kind": "honor",
+  "dedication": "",
+  "amount": 720.0,
+  "method": "check",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-09-12",
+  "name": "Anonymous",
+  "anonymous": true,
+  "kind": "honor",
+  "dedication": "",
+  "amount": 720.0,
+  "method": "check",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-09-13",
+  "name": "Yossi Harrush",
+  "anonymous": false,
+  "kind": "",
+  "dedication": "",
+  "amount": 720.0,
+  "method": "check",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-09-13",
+  "name": "The steinberg family",
+  "anonymous": false,
+  "kind": "memory",
+  "dedication": "Their grandfather ברוך מרדכי בן אברהם",
+  "amount": 720.0,
+  "method": "zelle",
+  "status": "pending"
+ },
+ {
+  "weekId": "2026-09-19",
+  "name": "איזי לייטנר",
+  "anonymous": false,
+  "kind": "honor",
+  "dedication": "להצלחת ישראל הכהן בן שרה, עדי בת יעל וחיים נחמן יהלי הכהן בן עדי לברכה והצלחה",
+  "amount": 500.0,
+  "method": "zelle",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-09-26",
+  "name": "Yossi Harrush",
+  "anonymous": false,
+  "kind": "honor",
+  "dedication": "Birthday of Ben Lavi Azkara for Lavi Buhbut",
+  "amount": 720.0,
+  "method": "cash",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-10-03",
+  "name": "Anonymous",
+  "anonymous": true,
+  "kind": "honor",
+  "dedication": "",
+  "amount": 720.0,
+  "method": "check",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-10-10",
+  "name": "Yakir Avrahami",
+  "anonymous": false,
+  "kind": "memory",
+  "dedication": "His father Chaim Ben Aziz",
+  "amount": 500.0,
+  "method": "check",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-10-10",
+  "name": "Anonymous",
+  "anonymous": true,
+  "kind": "honor",
+  "dedication": "",
+  "amount": 500.0,
+  "method": "check",
+  "status": "paid"
+ },
+ {
+  "weekId": "2026-10-17",
+  "name": "Yosef Chaim Harrush",
+  "anonymous": false,
+  "kind": "memory",
+  "dedication": "His Father's Yohrtzeit Nissim Ben Yosef Chaim & Sulika",
+  "amount": 500.0,
+  "method": "check",
+  "status": "paid"
+ }
+]

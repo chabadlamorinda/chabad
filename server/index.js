@@ -16,6 +16,7 @@ const crypto = require('crypto');
 const express = require('express');
 const { mountMembers } = require('./members.js');
 const { mountAdmin } = require('./admin.js');
+const { createKiddush } = require('./kiddush.js');
 
 const ROOT = path.join(__dirname, '..');
 const FUND_NAMES = {
@@ -44,9 +45,12 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '' }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
+  const kiddush = createKiddush({ store, stripe, log, now, mailer });
+  if (reminders) kiddush.startReminders(); // emails unpaid sponsors a reminder after a few days (needs email set up)
   const app = express();
+  app.locals.kiddush = kiddush; // (used by tests)
   app.disable('x-powered-by');
   app.set('trust proxy', 1);
 
@@ -122,6 +126,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   });
   async function handleStripeEvent(event) {
     if (!store) return;
+    if (await kiddush.onStripeEvent(event)) return; // Kiddush sponsorship checkouts
     const o = event.data && event.data.object || {};
     const cus = typeof o.customer === 'string' ? o.customer : (o.customer && o.customer.id) || null;
     switch (event.type) {
@@ -170,7 +175,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   };
   const wrap = (fn) => (req, res) => Promise.resolve(fn(req, res)).catch((err) => handleError(err, res));
   function handleError(err, res) {
-    if (err instanceof HttpError) return res.status(err.status).json({ code: err.code, error: err.message });
+    if (err instanceof HttpError || err instanceof kiddush.HttpError) return res.status(err.status).json({ code: err.code, error: err.message });
     if (err && err.type === 'StripeCardError') {
       return res.status(402).json({ code: err.code === 'authentication_required' ? 'authentication_required' : 'card_error', error: err.message || 'Your card was declined.' });
     }
@@ -360,9 +365,19 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   }));
 
   mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, limit });
+  // Kiddush board API (its own router so the shared per-IP limit above does not throttle a room full of phones).
+  const kapi = express.Router();
+  kapi.use(express.json({ limit: '16kb' }));
+  kapi.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
+  kiddush.mountPublic(kapi, { wrap, limit });
+  kapi.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
+  app.use('/api/kiddush', kapi);
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  mountAdmin(app, { store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, levelOf: clubLevel });
+  const adminOn = mountAdmin(app, { store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: kiddush.mountAdmin, levelOf: clubLevel });
+  if (!adminOn) { // explain instead of a bare "Not found" when the staff area has not been switched on yet
+    app.get(/^\/admin(\/.*)?$/, (req, res) => res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Staff area not set up yet</title><body style="font:18px/1.5 Georgia,serif;max-width:560px;margin:8vh auto;padding:0 20px;color:#3b2412"><h1 style="font-weight:400">Staff area not set up yet</h1><p>The staff page switches on once this setting is added in Render (your hosting account):</p><ol><li><b>ADMIN_PASSWORD</b>: a password of 12 or more characters</li></ol><p>Some screens (yahrzeits, members, sponsorships) also need <b>DATABASE_URL</b>, the address of your database (for example a free one from neon.com).</p><p>After you save it, Render restarts and this page becomes your sign-in page. Step-by-step: <code>store/rabbi-setup.md</code>.</p>'));
+  }
 
   // ---------- website (only the public files are served) ----------
   // Google Play "Trusted Web Activity" verification: proves this site and the Android app belong together.
@@ -371,7 +386,10 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     res.json(fps.length ? [{ relation: ['delegate_permission/common.handle_all_urls'], target: { namespace: 'android_app', package_name: androidPackage, sha256_cert_fingerprints: fps } }] : []);
   });
   // The app is the front door: any address pointed at this server (for example pushka.chabadoflamorinda.com) opens it.
-  app.get(['/', '/index.html'], (req, res) => res.redirect(302, '/pushka/'));
+  // (an address starting with "kiddush." opens the Kiddush sponsor page instead)
+  app.get(['/', '/index.html'], (req, res) => res.redirect(302, /^kiddush\./i.test(req.hostname) ? '/kiddush/' : '/pushka/'));
+  // Kiddush board: /kiddush/ is the phone sponsor page, /kiddush/tv/ is the TV display.
+  app.use('/kiddush', express.static(path.join(ROOT, 'kiddush'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   // The honor board page can be embedded (iframe) on the organisation's own website.
   const frameOk = (process.env.BOARD_FRAME_ANCESTORS || "https://www.chabadoflamorinda.com https://chabadoflamorinda.com https://*.chabadoflamorinda.com https://chabad-lamorinda.onrender.com").trim();
   app.use('/board', (req, res, next) => {
@@ -402,6 +420,7 @@ if (require.main === module) {
     if (process.env.DATABASE_URL) {
       store = require('./store.js').createStore(process.env.DATABASE_URL);
       await store.migrate();
+      try { const n = await require('./kiddush-legacy.js').importLegacy(store); if (n) console.log('Imported ' + n + ' sponsors from the original Kiddush board.'); } catch (e) { console.error('Kiddush import skipped:', e.message); }
       console.log('Database connected: members, yahrzeits and reminders are on.');
     } else console.log('DATABASE_URL not set: yahrzeit sharing, reminders and the Rabbi area are off.');
     if (vapidPub && vapidPriv) {
@@ -412,7 +431,7 @@ if (require.main === module) {
     if (store && sendPush) { require('./scheduler.js').createScheduler({ store, send: sendPush }).start(); console.log('Reminder scheduler started.'); }
     createApp({
       stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '',
-      store, sendPush, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
+      store, sendPush, mailer: require('./mailer.js').createMailer({ url: process.env.SMTP_URL, from: process.env.MAIL_FROM }), reminders: true, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
     }).listen(port, () => console.log('Listening on ' + port));
   })().catch((e) => { console.error('Startup failed:', e.message); process.exit(1); });
 }
