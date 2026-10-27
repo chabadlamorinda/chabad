@@ -301,7 +301,7 @@ h2 { letter-spacing: -.01em; font-weight: 600; }
 .sh { display: inline-flex; align-items: center; min-height: 40px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: 600 .92rem var(--sans); text-decoration: none; cursor: pointer; }
 .sh:hover { border-color: var(--gold); }
 .sh.native { background: var(--navy); color: #fff; border-color: var(--navy); }
-.sh.wa { color: #1f8f4e; } .sh.fb { color: #1b5fc4; } .sh.tg { color: #1d8ad1; }
+.sh.wa { color: #17703c; } .sh.fb { color: #1b5fc4; } .sh.tg { color: #13679d; }
 @media (prefers-color-scheme: dark) { .sh.wa, .sh.fb, .sh.tg { color: var(--ink); } }
 .quick { margin: 14px 0; padding: 14px 16px; border: 1px dashed var(--gold); border-radius: 14px; background: #fffaf0; }
 .quick-h { margin: 0 0 6px; font-weight: 600; }
