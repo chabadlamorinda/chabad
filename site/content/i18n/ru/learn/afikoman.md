@@ -2,7 +2,7 @@
 title: Афикоман: смысл, обычай прятать и когда его есть
 description: Что такое афикоман, почему мы разламываем среднюю мацу, когда и сколько есть на седере и обычай его прятать.
 category: Shabbat & holidays
-related: passover-seder, matzah, seder-plate, four-questions
+related: passover-seder, passover-with-kids, matzah, seder-plate, four-questions
 local: Закажите ручную шмуру-мацу для вашего седера на chabadoflamorinda.com/forms/matzah или по телефону 925-384-7242.
 ---
 Афикоман - это кусок мацы, который откладывают в начале пасхального седера и едят в конце трапезы последним за вечер. Он напоминает о пасхальной жертве, которую во времена Храма ели в конце трапезы седера.

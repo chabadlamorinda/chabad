@@ -2,7 +2,7 @@
 title: מאכלים יהודיים מסורתיים ומה הם מסמלים
 description: המשמעות שמאחורי מאכלים יהודיים מסורתיים: חלה, חמין (צ׳ולנט), קוגל, גפילטע פיש, לביבות, אוזני המן, עוגת דבש ובלינצ׳ס.
 category: Jewish home
-related: kosher, challah, shabbat-meals, kosher-kitchen
+related: kosher, cholent, challah, shabbat-meals, kosher-kitchen
 local: טעמו אוכל יהודי מסורתי בסעודת שבת איתנו; הירשמו ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 מאכלים יהודיים מסורתיים קשורים לשבת, לחגים ולהלכה, ולכן לרובם יש סיפור או משמעות מעבר לטעם. חלה, צ׳ולנט, לביבות ואוזני המן אינם רק מתכונים: כל אחד מהם מלמד משהו על החיים וההיסטוריה של עם ישראל.

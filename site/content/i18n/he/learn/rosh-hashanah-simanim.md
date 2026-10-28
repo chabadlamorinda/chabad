@@ -2,7 +2,7 @@
 title: סימנים לראש השנה: תפוח בדבש ושאר המאכלים הסמליים
 description: המאכלים הסמליים שאוכלים בליל ראש השנה, מתפוח בדבש ועד רימון וראש דג, עם משמעותם והברכות שלהם.
 category: Shabbat & holidays
-related: shofar, tashlich, challah, jewish-foods
+related: shofar, rosh-hashanah-with-kids, tashlich, challah, jewish-foods
 local: הצטרפו אלינו לתפילות ולסעודות ראש השנה; ראו chabadoflamorinda.com/forms/high-holidays או התקשרו 925-384-7242.
 ---
 סימנים הם מאכלים סמליים שאוכלים בסעודת ליל ראש השנה, וכל אחד מהם מלווה בתפילה קצרה לשנה טובה. המוכר מכולם הוא פלח תפוח טבול בדבש, עם תפילה ל"שנה טובה ומתוקה".

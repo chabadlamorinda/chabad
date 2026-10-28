@@ -2,7 +2,7 @@
 title: Traditional Jewish Foods and What They Mean
 description: The meaning behind traditional Jewish foods: challah, cholent, kugel, gefilte fish, latkes, hamantashen, honey cake and blintzes.
 category: Jewish home
-related: kosher, challah, shabbat-meals, kosher-kitchen
+related: kosher, cholent, challah, shabbat-meals, kosher-kitchen
 local: Taste traditional Jewish food at a Shabbat meal with us; sign up at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Traditional Jewish foods are tied to Shabbat, holidays and Jewish law, so most of them carry a story or a meaning beyond their taste. Challah, cholent, latkes and hamantashen are not just recipes: each one teaches something about Jewish life and history.

@@ -2,7 +2,7 @@
 title: Mishloach Manot: How to Send Purim Food Gifts
 description: What mishloach manot are, the simple rules for sending Purim food gifts, what to put in a basket, and how they differ from gifts to the poor.
 category: Shabbat & holidays
-related: megillah, tzedakah, chesed, hachnasat-orchim
+related: megillah, purim-for-kids, tzedakah, chesed, hachnasat-orchim
 local: Celebrate Purim with the Lamorinda community and give gifts to the needy through us. Visit chabadoflamorinda.com/holidays/purim or call 925-384-7242.
 ---
 Mishloach manot are gifts of ready-to-eat food sent to friends on Purim day. The basic mitzvah is to send at least two different kinds of food to at least one person, and the goal is to build friendship and unity among Jews.

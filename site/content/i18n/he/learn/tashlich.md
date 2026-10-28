@@ -2,7 +2,7 @@
 title: תשליך: תפילת ראש השנה ליד המים
 description: מהו תשליך, מתי ואיפה אומרים אותו בראש השנה, מה משמעות התפילה ואיך עושים אותו שלב אחר שלב עם המשפחה.
 category: Shabbat & holidays
-related: shofar, teshuvah, elul, tehillim
+related: shofar, rosh-hashanah-with-kids, teshuvah, elul, tehillim
 local: הצטרפו לקהילה לתשליך ולתפילות ראש השנה. פרטים ב-chabadoflamorinda.com/holidays/rosh-hashanah או בטלפון 925-384-7242.
 ---
 תשליך היא תפילה קצרה שאומרים ביום ראש השנה אחר הצהריים ליד מקור מים שיש בו דגים. שמה לקוח מהמילה "וְתַשְׁלִיךְ", והיא מסמלת את השלכת הטעויות שלנו והתחלה חדשה ונקייה של השנה.

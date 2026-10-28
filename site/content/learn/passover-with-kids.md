@@ -3,7 +3,7 @@ title: Passover with Kids: Making the Seder Fun for Children
 description: Easy ways to make the Passover Seder fun for children: the Four Questions, plague props, the afikoman, kids' roles, and getting ready together.
 category: Shabbat & holidays
 related: four-questions, afikoman, passover-seder, holidays-with-toddlers, exodus-story
-local: Chabad of Lamorinda's Hebrew School and preschool families in Lafayette, Moraga and Orinda prepare for Passover together. For Seder questions, call the Rabbi at 925-384-7242.
+local: Chabad of Lamorinda in Lafayette is here to help families in Lafayette, Moraga and Orinda get ready for Passover. For Seder questions, call the Rabbi at 925-384-7242. This year's dates: chabadoflamorinda.com/holidays/passover
 ---
 The Passover Seder was designed with children in mind. Many of its customs exist for one reason: to make kids curious, keep them awake and get them asking questions. With a little planning, the Seder can be the night your children remember all year.
 

@@ -2,7 +2,7 @@
 title: האפיקומן: משמעות, מנהג ההחבאה ומתי אוכלים אותו
 description: מהו האפיקומן, למה בוצעים את המצה האמצעית, מתי וכמה אוכלים בסדר, ומנהג החבאת האפיקומן.
 category: Shabbat & holidays
-related: passover-seder, matzah, seder-plate, four-questions
+related: passover-seder, passover-with-kids, matzah, seder-plate, four-questions
 local: הזמינו מצות שמורה עבודת יד לסדר שלכם ב-chabadoflamorinda.com/forms/matzah או התקשרו 925-384-7242.
 ---
 האפיקומן הוא חתיכת המצה שמפרישים בתחילת ליל הסדר ואוכלים בסוף הסעודה, כמאכל האחרון של הלילה. הוא מזכיר את קרבן הפסח, שבימי בית המקדש אכלו אותו בסוף סעודת הסדר.

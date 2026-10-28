@@ -2,7 +2,7 @@
 title: Rosh Hashanah Simanim: Apple and Honey and the Symbolic Foods
 description: The symbolic foods eaten on Rosh Hashanah night, from apple dipped in honey to pomegranate and fish head, with their meanings and blessings.
 category: Shabbat & holidays
-related: shofar, tashlich, challah, jewish-foods
+related: shofar, rosh-hashanah-with-kids, tashlich, challah, jewish-foods
 local: Join us for Rosh Hashanah services and meals; see chabadoflamorinda.com/forms/high-holidays or call 925-384-7242.
 ---
 Simanim (signs) are symbolic foods eaten at the Rosh Hashanah evening meal, each paired with a short prayer for a good year. The best known is a slice of apple dipped in honey, with a prayer for "a good and sweet year."

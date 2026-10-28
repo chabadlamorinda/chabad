@@ -2,7 +2,7 @@
 title: אושפיזין: שבעת האורחים הקדושים בסוכה
 description: מי הם האושפיזין, איזה אורח בא בכל לילה של סוכות, האושפיזין החסידיים ואיך מקבלים אותם בסוכה שלכם.
 category: Shabbat & holidays
-related: sukkah, four-kinds, hachnasat-orchim, hoshana-rabbah
+related: sukkah, sukkot-with-kids, four-kinds, hachnasat-orchim, hoshana-rabbah
 local: בואו לבקר בסוכה שלנו והזמינו לולב ואתרוג ב-chabadoflamorinda.com/forms/lulav-etrog, או התקשרו 925-384-7242.
 ---
 אושפיזין הם שבעה "אורחים" קדושים שלפי הזוהר מבקרים בכל סוכה בשבעת ימי סוכות: אברהם, יצחק, יעקב, משה, אהרן, יוסף ודוד המלך. בכל יום אחד מהם מוביל, והאחרים באים איתו.

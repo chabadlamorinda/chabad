@@ -2,7 +2,7 @@
 title: How to Build a Sukkah: Rules, Size and the Blessing
 description: What a sukkah is, how to build a kosher sukkah step by step, what to use for the roof, the blessing, and how to eat and live in it on Sukkot.
 category: Shabbat & holidays
-related: four-kinds, hoshana-rabbah, shabbat-meals, hachnasat-orchim
+related: four-kinds, sukkot-with-kids, hoshana-rabbah, shabbat-meals, hachnasat-orchim
 local: Need help building a sukkah or a sukkah to eat in? Call 925-384-7242 and see our Sukkot events at chabadoflamorinda.com/holidays/sukkot.
 ---
 A sukkah is a temporary hut with a roof of branches or other plant material, where Jews eat their meals during the seven days of Sukkot. It recalls the clouds of glory that protected our ancestors in the desert, and how G-d still shelters us today.

@@ -2,7 +2,7 @@
 title: Shabbat in Lafayette, Moraga and Orinda: Services, Dinners and Times
 description: Shabbat in Lafayette, Moraga and Orinda: Friday night Kabbalat Shabbat, Saturday services with Kiddush lunch, and dinner with the Rabbi's family.
 category: Lamorinda
-related: shabbat-for-beginners, shabbat-candles, shabbat-meals, first-time-at-synagogue
+related: shabbat-for-beginners, cholent, shabbat-candles, shabbat-meals, first-time-at-synagogue
 local: RSVP for Shabbat dinner at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Every week, from Friday at sunset until Saturday night, Shabbat turns the busy pace of Lamorinda into a day of rest, family and soul. Whether you live in Lafayette, Moraga, Orinda, Pleasant Hill or Martinez, you have a Shabbat table and a shul at Chabad of Lamorinda, 3477 Golden Gate Way in Lafayette. No membership, no dues and no Hebrew needed.

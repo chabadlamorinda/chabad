@@ -2,7 +2,7 @@
 title: What Is a Niggun? Chassidic Melodies and Their Meaning
 description: What a niggun is, why Chassidim sing wordless melodies, the kinds of niggunim, famous Chabad niggunim, and how to start singing one.
 category: Jewish ideas
-related: chassidus, jewish-meditation, prayer, the-rebbe
+related: chassidus, zemirot, jewish-meditation, prayer, the-rebbe
 local: Hear and sing niggunim at a Shabbat meal or farbrengen with us; see chabadoflamorinda.com/events or call 925-384-7242.
 ---
 A niggun is a Jewish melody, usually sung without words, that expresses what words cannot: longing for G-d, joy, or a quiet stirring of the soul. Niggunim are at the heart of Chassidic life, sung at the Shabbat table, before prayer and at Chassidic gatherings called farbrengens.

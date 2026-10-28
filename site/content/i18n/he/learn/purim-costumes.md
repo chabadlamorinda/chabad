@@ -2,7 +2,7 @@
 title: תחפושות לפורים: למה מתחפשים ורעיונות לילדים
 description: למה יהודים מתחפשים בפורים, המשמעות שמאחורי המנהג, כללים שכדאי לזכור ורעיונות קלים לתחפושות לילדים.
 category: Shabbat & holidays
-related: megillah, mishloach-manot, jewish-parenting
+related: megillah, purim-for-kids, mishloach-manot, jewish-parenting
 local: בואו מחופשים לחגיגת הפורים שלנו; ראו chabadoflamorinda.com/holidays/purim או התקשרו 925-384-7242.
 ---
 התחפושת בפורים היא מנהג יהודי שמח שמזכיר את הניסים הנסתרים של סיפור פורים. ילדים ומבוגרים כאחד באים לקריאת המגילה ולמסיבת הפורים כמלכים, מלכות, גיבורים ועוד.

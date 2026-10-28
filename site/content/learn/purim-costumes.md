@@ -2,7 +2,7 @@
 title: Purim Costumes: Why We Dress Up and Ideas for Kids
 description: Why Jews dress up in costumes on Purim, the meaning behind the custom, guidelines to keep in mind, and easy costume ideas for kids.
 category: Shabbat & holidays
-related: megillah, mishloach-manot, jewish-parenting
+related: megillah, purim-for-kids, mishloach-manot, jewish-parenting
 local: Come in costume to our Purim celebration; see chabadoflamorinda.com/holidays/purim or call 925-384-7242.
 ---
 Dressing up in costumes on Purim is a joyful Jewish custom that recalls the hidden miracles of the Purim story. Children and adults alike come to the Megillah reading and Purim party as kings, queens, heroes and more.

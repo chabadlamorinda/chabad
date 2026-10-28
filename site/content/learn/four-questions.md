@@ -2,7 +2,7 @@
 title: The Four Questions (Mah Nishtanah): Words, Meaning and Who Asks
 description: The Four Questions of the Passover seder in transliteration and English, who asks them, why we ask, and how the Haggadah answers.
 category: Shabbat & holidays
-related: passover-seder, seder-plate, afikoman, exodus-story
+related: passover-seder, passover-with-kids, seder-plate, afikoman, exodus-story
 local: Order handmade shmurah matzah at chabadoflamorinda.com/forms/matzah or call 925-384-7242 if you need help preparing your seder.
 ---
 The Four Questions, known by their opening words Mah Nishtanah ("What is different?"), are asked near the start of the Passover seder, usually by the youngest child. They point out what makes this night unusual and open the telling of the story of the Exodus.

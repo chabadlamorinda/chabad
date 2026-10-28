@@ -2,7 +2,7 @@
 title: Tashlich: The Rosh Hashanah Prayer by the Water
 description: What Tashlich is, when and where it is said on Rosh Hashanah, what the prayer means, and how to do it step by step with your family.
 category: Shabbat & holidays
-related: shofar, teshuvah, elul, tehillim
+related: shofar, rosh-hashanah-with-kids, teshuvah, elul, tehillim
 local: Join the community for Tashlich and other Rosh Hashanah services. Find details at chabadoflamorinda.com/holidays/rosh-hashanah or call 925-384-7242.
 ---
 Tashlich is a short prayer said on Rosh Hashanah afternoon beside a body of water that has fish. It means "you shall cast," and it symbolizes casting away our mistakes and starting the new year fresh.

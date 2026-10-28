@@ -2,7 +2,7 @@
 title: אשת חיל: השיר של ליל שבת
 description: מהו אשת חיל, למה שרים אותו לפני הקידוש בליל שבת, משמעותו והפירושים היהודיים העמוקים שלו.
 category: Shabbat & holidays
-related: shalom-aleichem, jewish-women, kiddush, shabbat-meals
+related: shalom-aleichem, zemirot, jewish-women, kiddush, shabbat-meals
 local: חוו את אשת חיל ליד שולחן שבת עם חב״ד למורינדה. ראו chabadoflamorinda.com/shabbat או התקשרו 925-384-7242.
 ---
 אשת חיל הוא שיר בן 22 פסוקים מסוף ספר משלי, ששרים אותו בבית בליל שבת לפני הקידוש. הוא משבח את האישה החכמה, הטובה והמוכשרת שבונה בית יהודי, ולעיתים קרובות הבעל והילדים שרים אותו לכבוד עקרת הבית.

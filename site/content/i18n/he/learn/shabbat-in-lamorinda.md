@@ -2,7 +2,7 @@
 title: שבת בלאפייט, מוראגה ואורינדה: תפילות, סעודות וזמנים
 description: שבת בלאפייט, מוראגה ואורינדה: קבלת שבת בליל שישי, תפילת שבת בבוקר עם קידוש וארוחה, וסעודת שבת עם משפחת הרב.
 category: Lamorinda
-related: shabbat-for-beginners, shabbat-candles, shabbat-meals, first-time-at-synagogue
+related: shabbat-for-beginners, cholent, shabbat-candles, shabbat-meals, first-time-at-synagogue
 local: הירשמו לסעודת שבת ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 בכל שבוע, מיום שישי בשקיעה ועד מוצאי שבת, השבת הופכת את הקצב העמוס של למורינדה ליום של מנוחה, משפחה ונשמה. בין שאתם גרים בלאפייט, במוראגה, באורינדה, בפלזנט היל או במרטינז, יש לכם שולחן שבת ובית כנסת בחב״ד למורינדה, 3477 Golden Gate Way בלאפייט. בלי דמי חבר, בלי תשלומים ובלי צורך לדעת עברית.

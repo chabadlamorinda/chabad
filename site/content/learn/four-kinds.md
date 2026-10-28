@@ -2,7 +2,7 @@
 title: Lulav and Etrog: How to Shake the Four Kinds on Sukkot
 description: What the lulav, etrog, hadassim and aravot are, what they mean, how to hold and shake them step by step, and the blessing to say on Sukkot.
 category: Shabbat & holidays
-related: sukkah, hoshana-rabbah, blessings, jewish-calendar
+related: sukkah, sukkot-with-kids, hoshana-rabbah, blessings, jewish-calendar
 local: Order a lulav and etrog set at chabadoflamorinda.com/forms/lulav-etrog or call 925-384-7242, and we will help you shake it.
 ---
 The Four Kinds are a lulav (palm branch), an etrog (citron), hadassim (myrtle branches) and aravot (willow branches), held together and waved each day of Sukkot. It is one of the most joyful mitzvot of the year.

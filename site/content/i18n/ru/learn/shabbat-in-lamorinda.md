@@ -2,7 +2,7 @@
 title: Шабат в Лафайетте, Мораге и Оринде: службы, ужины и время
 description: Шабат в Лафайетте, Мораге и Оринде: Каббалат Шабат в пятницу вечером, субботняя служба с обедом-Кидушем и ужин с семьей раввина.
 category: Lamorinda
-related: shabbat-for-beginners, shabbat-candles, shabbat-meals, first-time-at-synagogue
+related: shabbat-for-beginners, cholent, shabbat-candles, shabbat-meals, first-time-at-synagogue
 local: Запишитесь на шабатний ужин на chabadoflamorinda.com/forms/shabbat-meal или звоните 925-384-7242.
 ---
 Каждую неделю, с заката пятницы до вечера субботы, Шабат превращает суетный ритм Ламоринды в день отдыха, семьи и души. Живете ли вы в Лафайетте, Мораге, Оринде, Плезант-Хилле или Мартинесе, у вас есть шабатний стол и синагога в Хабаде Ламоринды, 3477 Golden Gate Way в Лафайетте. Без членства, без взносов, и знать иврит не нужно.

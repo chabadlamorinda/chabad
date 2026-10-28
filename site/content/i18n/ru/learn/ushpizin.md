@@ -2,7 +2,7 @@
 title: Ушпизин: семь святых гостей сукки
 description: Кто такие Ушпизин, какой гость приходит в каждый вечер Суккота, хасидские Ушпизин и как встретить их в вашей сукке.
 category: Shabbat & holidays
-related: sukkah, four-kinds, hachnasat-orchim, hoshana-rabbah
+related: sukkah, sukkot-with-kids, four-kinds, hachnasat-orchim, hoshana-rabbah
 local: Приходите в нашу сукку и заказывайте лулав и этрог на chabadoflamorinda.com/forms/lulav-etrog или по телефону 925-384-7242.
 ---
 Ушпизин - это семь святых «гостей», которые, согласно Зоару, посещают каждую сукку в семь дней Суккота: Авраам, Ицхак, Яаков, Моше, Аарон, Йосеф и царь Давид. Каждый день один из них возглавляет, а остальные приходят вместе с ним.

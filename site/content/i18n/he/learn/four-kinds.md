@@ -2,7 +2,7 @@
 title: לולב ואתרוג: איך מנענעים את ארבעת המינים בסוכות
 description: מה הם לולב, אתרוג, הדסים וערבות, מה משמעותם, איך אוחזים ומנענעים אותם שלב אחר שלב, והברכה שאומרים בסוכות.
 category: Shabbat & holidays
-related: sukkah, hoshana-rabbah, blessings, jewish-calendar
+related: sukkah, sukkot-with-kids, hoshana-rabbah, blessings, jewish-calendar
 local: הזמינו סט לולב ואתרוג ב-chabadoflamorinda.com/forms/lulav-etrog או בטלפון 925-384-7242, ונעזור לכם לנענע.
 ---
 ארבעת המינים הם לולב (כף תמר), אתרוג, הדסים וערבות, שאוחזים אותם יחד ומנענעים בכל יום של חג הסוכות. זו אחת המצוות השמחות ביותר בשנה.

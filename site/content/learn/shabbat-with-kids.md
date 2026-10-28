@@ -2,7 +2,7 @@
 title: Shabbat with Kids: Ideas to Make It Meaningful and Fun
 description: Practical ideas for celebrating Shabbat with children: candles, blessing the kids, Kiddush, songs, parsha talk, games and Shabbat afternoon.
 category: Shabbat & holidays
-related: shabbat, jewish-parenting, shabbat-candles, shabbat-meals
+related: shabbat, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
 local: Our Jewish preschool and Hebrew school bring Shabbat to life for kids; see chabadoflamorinda.com/programs/hebrew-school or call 925-384-7242.
 ---
 Shabbat with kids works best when children are part of every step: helping prepare, lighting candles, receiving a blessing and leading songs at the table. Small traditions done every week give children memories and Jewish identity that last a lifetime.

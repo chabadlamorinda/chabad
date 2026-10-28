@@ -2,7 +2,7 @@
 title: Kiddush: How to Make Kiddush on Shabbat and Holidays
 description: What Kiddush is, how to say it over wine on Friday night and Shabbat day, the blessing in English, and what to do if you do not drink wine.
 category: Shabbat & holidays
-related: shabbat, challah, shabbat-candles, blessings
+related: shabbat, cholent, challah, shabbat-candles, blessings
 local: We can help you learn to make Kiddush, give you a printed Kiddush text, and welcome you to Kiddush at our Shabbat services. Call 925-384-7242.
 ---
 Kiddush is the blessing over a cup of wine or grape juice that begins the Shabbat and holiday meals. It fulfills the Torah's command to "remember the Shabbat day to keep it holy" by declaring out loud that this day is sacred.

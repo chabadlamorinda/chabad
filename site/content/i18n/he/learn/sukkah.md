@@ -2,7 +2,7 @@
 title: איך בונים סוכה: הלכות, גודל והברכה
 description: מהי סוכה, איך בונים סוכה כשרה שלב אחר שלב, ממה עושים את הסכך, הברכה ואיך אוכלים וגרים בסוכה בחג.
 category: Shabbat & holidays
-related: four-kinds, hoshana-rabbah, shabbat-meals, hachnasat-orchim
+related: four-kinds, sukkot-with-kids, hoshana-rabbah, shabbat-meals, hachnasat-orchim
 local: צריכים עזרה בבניית סוכה או סוכה לאכול בה? התקשרו 925-384-7242 וראו את אירועי סוכות שלנו ב-chabadoflamorinda.com/holidays/sukkot.
 ---
 סוכה היא דירת עראי עם גג של ענפים או חומר צמחי אחר, שבה יהודים אוכלים את ארוחותיהם במשך שבעת ימי חג הסוכות. היא מזכירה את ענני הכבוד שהגנו על אבותינו במדבר, ואת האופן שבו ה׳ מגונן עלינו גם היום.

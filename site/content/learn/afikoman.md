@@ -2,7 +2,7 @@
 title: The Afikoman: Meaning, Hiding Custom and When to Eat It
 description: What the afikoman is, why we break the middle matzah, when and how much to eat at the seder, and the custom of hiding it.
 category: Shabbat & holidays
-related: passover-seder, matzah, seder-plate, four-questions
+related: passover-seder, passover-with-kids, matzah, seder-plate, four-questions
 local: Order handmade shmurah matzah for your seder at chabadoflamorinda.com/forms/matzah or call 925-384-7242.
 ---
 The afikoman is the piece of matzah set aside early in the Passover seder and eaten at the end of the meal as the last food of the night. It recalls the Passover offering, which was eaten at the end of the seder meal in Temple times.

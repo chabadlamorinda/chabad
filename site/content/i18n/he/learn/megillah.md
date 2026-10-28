@@ -2,7 +2,7 @@
 title: קריאת המגילה בפורים: איך ומתי שומעים את מגילת אסתר
 description: מהי המגילה, למה קוראים את מגילת אסתר בפורים, מתי שומעים אותה בלילה וביום, הברכות, ולמה מרעישים בשם המן.
 category: Shabbat & holidays
-related: mishloach-manot, tzedakah, fast-days, jewish-calendar
+related: mishloach-manot, purim-for-kids, tzedakah, fast-days, jewish-calendar
 local: שמעו את המגילה וחגגו איתנו את פורים. פרטים ב-chabadoflamorinda.com/holidays/purim, או התקשרו 925-384-7242 אם אתם צריכים שיקראו לכם את המגילה.
 ---
 המגילה היא מגילת אסתר, הכתובה בכתב יד על קלף, וקוראים אותה בקול בפורים, פעם אחת בלילה ופעם אחת ביום. שמיעת כל מילה בה היא אחת מארבע מצוות הפורים.

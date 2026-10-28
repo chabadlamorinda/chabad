@@ -2,7 +2,7 @@
 title: משלוח מנות: איך שולחים מתנות אוכל בפורים
 description: מהו משלוח מנות, ההלכות הפשוטות של שליחת מתנות אוכל בפורים, מה לשים בסלסלה, ובמה הוא שונה ממתנות לאביונים.
 category: Shabbat & holidays
-related: megillah, tzedakah, chesed, hachnasat-orchim
+related: megillah, purim-for-kids, tzedakah, chesed, hachnasat-orchim
 local: חגגו את פורים עם קהילת למורינדה ותנו מתנות לנזקקים דרכנו. בקרו ב-chabadoflamorinda.com/holidays/purim או התקשרו 925-384-7242.
 ---
 משלוח מנות הן מתנות של אוכל מוכן לאכילה ששולחים לחברים ביום פורים. עיקר המצווה הוא לשלוח לפחות שני סוגי מאכלים לפחות לאדם אחד, והמטרה היא לבנות חברות ואחדות בין יהודים.

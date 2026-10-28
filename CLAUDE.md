@@ -85,6 +85,7 @@ The site's area is Lafayette, Moraga and Orinda first (`"tier": "home"` in towns
 
 ## Guides (learn/)
 Every page leads with what the reader came for (the quick answer, and for mezuzah, tefillin, giving or a meeting the Call/Text/WhatsApp buttons right under the title), then the guide, its questions, and one "Read next" card (the first entry in `related`, so put the most inviting next guide first).
+Where new guides go (so pages never get cluttered): only in the Learn library under their category, and as the second entry in `related` of 2 to 4 closely related existing guides (in all three languages; the first entry stays, so each page's "Read next" does not change). Holiday guides also appear by themselves at the end of their holiday page. Never add guides to the home page or the top of other pages; the chat and search find them.
 Each guide has front matter (title, description under 155 characters, category, related, local) and ends with `## Common questions` and `### Question?` entries, which become Google FAQ markup. Write in simple English, from a warm Chabad perspective; for case-by-case halacha say "ask the Rabbi". Add a guide whenever people ask about a topic that has none.
 
 ## Automatic pages (nothing to type)

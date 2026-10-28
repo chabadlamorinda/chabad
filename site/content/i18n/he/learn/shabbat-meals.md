@@ -2,7 +2,7 @@
 title: שלוש סעודות שבת: מנהגים, סדר ומה מגישים
 description: מהן שלוש סעודות השבת, הסדר של ארוחת ליל שבת, הברכות על היין ועל החלה, שירים ומאכלי שבת מסורתיים.
 category: Shabbat & holidays
-related: kiddush, challah, shabbat, hachnasat-orchim
+related: kiddush, zemirot, cholent, challah, shabbat, hachnasat-orchim
 local: הצטרפו אלינו לסעודת שבת או בקשו שישלחו לכם סעודה ב-chabadoflamorinda.com/forms/shabbat-meal, או התקשרו 925-384-7242.
 ---
 בשבת מצווה לאכול שלוש סעודות חגיגיות: ארוחת ליל שבת, סעודת צהריים בשבת וסעודה שלישית בשעות אחר הצהריים המאוחרות. כל אחת מתחילה בחלה, ושתי הראשונות מתחילות בקידוש על היין.

@@ -2,7 +2,7 @@
 title: מה נשתנה: ארבע הקושיות, משמעותן ומי שואל
 description: ארבע הקושיות של ליל הסדר בעברית ובתרגום, מי שואל אותן, למה שואלים ואיך ההגדה עונה.
 category: Shabbat & holidays
-related: passover-seder, seder-plate, afikoman, exodus-story
+related: passover-seder, passover-with-kids, seder-plate, afikoman, exodus-story
 local: הזמינו מצות שמורה עבודת יד ב-chabadoflamorinda.com/forms/matzah או התקשרו 925-384-7242 אם אתם צריכים עזרה בהכנת הסדר.
 ---
 ארבע הקושיות, שנקראות לפי מילות הפתיחה שלהן "מה נשתנה", נשאלות סמוך לתחילת ליל הסדר, בדרך כלל על ידי הילד הצעיר ביותר. הן מצביעות על מה שעושה את הלילה הזה יוצא דופן ופותחות את סיפור יציאת מצרים.

@@ -2,7 +2,7 @@
 title: Holidays with Toddlers: Making Shabbat and the Jewish Year Fun
 description: Simple, joyful ways to celebrate Shabbat and every Jewish holiday with babies and toddlers: short rituals, songs, crafts and realistic expectations.
 category: Shabbat & holidays
-related: shabbat-with-kids, chanukah-for-kids, jewish-parenting, upsherin
+related: shabbat-with-kids, passover-with-kids, chanukah-for-kids, jewish-parenting, upsherin
 local: Families with little ones in Lafayette, Moraga and Orinda: call Rabbi Yisroel or Rebbetzin Tzipora Labkowski for family events and ideas, 925-384-7242.
 ---
 With a toddler, nothing goes exactly as planned. That is fine. Little children do not need a perfect Shabbat or holiday. They need warm, happy memories, repeated often. A few minutes of joy each week builds a Jewish identity that lasts.

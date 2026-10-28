@@ -2,7 +2,7 @@
 title: The Passover Seder: A Simple Step-by-Step Guide
 description: What the Passover Seder is, the 15 steps in order, what goes on the Seder plate, the four cups and four questions, and tips for hosting your own.
 category: Shabbat & holidays
-related: matzah, chametz, kiddush, counting-the-omer
+related: matzah, passover-with-kids, chametz, kiddush, counting-the-omer
 local: Order handmade shmurah matzah at chabadoflamorinda.com/forms/matzah, and see our Passover plans at chabadoflamorinda.com/holidays/passover or call 925-384-7242.
 ---
 The Passover Seder is the festive meal held on the first night of Passover (and the second night outside Israel), where we retell the story of the Exodus from Egypt. It follows a set order of 15 steps, with matzah, four cups of wine, bitter herbs and the Haggadah.

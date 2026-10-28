@@ -2,7 +2,7 @@
 title: ליל הסדר: מדריך פשוט שלב אחר שלב
 description: מהו ליל הסדר, 15 הסימנים לפי הסדר, מה מניחים בקערת הסדר, ארבע הכוסות וארבע הקושיות, וטיפים לעריכת סדר משלכם.
 category: Shabbat & holidays
-related: matzah, chametz, kiddush, counting-the-omer
+related: matzah, passover-with-kids, chametz, kiddush, counting-the-omer
 local: הזמינו מצות שמורה עבודת יד ב-chabadoflamorinda.com/forms/matzah, וראו את תוכניות הפסח שלנו ב-chabadoflamorinda.com/holidays/passover או התקשרו 925-384-7242.
 ---
 ליל הסדר הוא הסעודה החגיגית שעורכים בלילה הראשון של פסח (ובחוץ לארץ גם בלילה השני), שבה מספרים מחדש את סיפור יציאת מצרים. הוא מתנהל לפי סדר קבוע של 15 סימנים, עם מצה, ארבע כוסות יין, מרור וההגדה.

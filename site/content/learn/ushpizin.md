@@ -2,7 +2,7 @@
 title: Ushpizin: The Seven Holy Guests of the Sukkah
 description: Who the Ushpizin are, which guest visits each night of Sukkot, the Chassidic Ushpizin, and how to welcome them in your sukkah.
 category: Shabbat & holidays
-related: sukkah, four-kinds, hachnasat-orchim, hoshana-rabbah
+related: sukkah, sukkot-with-kids, four-kinds, hachnasat-orchim, hoshana-rabbah
 local: Visit our sukkah and order your lulav and etrog at chabadoflamorinda.com/forms/lulav-etrog, or call 925-384-7242.
 ---
 Ushpizin are seven holy "guests" who, according to the Zohar, visit every sukkah during the seven days of Sukkot: Abraham, Isaac, Jacob, Moses, Aaron, Joseph and King David. Each day one of them leads, and the others come along.

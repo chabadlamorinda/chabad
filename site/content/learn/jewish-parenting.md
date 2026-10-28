@@ -2,7 +2,7 @@
 title: Jewish Parenting: Raising Children With Torah Values
 description: A simple guide to Jewish parenting: teaching by example, daily mitzvot with kids, Shabbat and holidays, Jewish education, and discipline with love.
 category: Jewish home
-related: honoring-parents, chesed, jewish-home-library, upsherin
+related: honoring-parents, technology-and-screens-jewish-view, chesed, jewish-home-library, upsherin
 local: Give your child a warm Jewish start at our Jewish preschool and Hebrew school. See chabadoflamorinda.com/programs/jewish-preschool or call 925-384-7242.
 ---
 Jewish parenting means raising children with love, Torah values and a strong Jewish identity, mainly by living those values yourself. Jewish tradition sees every child as a precious soul entrusted to parents by G-d, and education as a sacred task.

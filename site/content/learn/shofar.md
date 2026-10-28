@@ -2,7 +2,7 @@
 title: The Shofar: Why We Blow It on Rosh Hashanah and How to Hear It
 description: What the shofar is, why it is blown on Rosh Hashanah, the meaning of its sounds, the blessing, and how to make sure you hear it.
 category: Shabbat & holidays
-related: elul, tashlich, teshuvah, selichot
+related: elul, rosh-hashanah-with-kids, tashlich, teshuvah, selichot
 local: Hear the shofar with us on Rosh Hashanah, or call 925-384-7242 if you need it blown for you at home. Details at chabadoflamorinda.com/holidays/rosh-hashanah.
 ---
 The shofar is a ram's horn blown on Rosh Hashanah, and hearing its sound is the main mitzvah of the day. Its piercing, simple cry is a call to wake up, return to G-d and crown Him as King of the world for the new year.

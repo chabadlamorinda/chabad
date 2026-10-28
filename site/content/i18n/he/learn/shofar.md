@@ -2,7 +2,7 @@
 title: השופר: למה תוקעים בו בראש השנה ואיך שומעים אותו
 description: מהו שופר, למה תוקעים בו בראש השנה, משמעות הקולות, הברכה ואיך לוודא ששומעים אותו כראוי.
 category: Shabbat & holidays
-related: elul, tashlich, teshuvah, selichot
+related: elul, rosh-hashanah-with-kids, tashlich, teshuvah, selichot
 local: בואו לשמוע איתנו תקיעת שופר בראש השנה, או התקשרו 925-384-7242 אם אתם צריכים שיתקעו לכם בבית. פרטים ב-chabadoflamorinda.com/holidays/rosh-hashanah.
 ---
 השופר הוא קרן של איל שתוקעים בה בראש השנה, ושמיעת קולו היא המצווה העיקרית של היום. הקול החודר והפשוט שלו קורא לנו להתעורר, לשוב אל ה׳ ולהמליך אותו כמלך העולם לשנה החדשה.
