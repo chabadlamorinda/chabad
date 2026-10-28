@@ -539,7 +539,7 @@ test('mezuzah, tefillin, giving and meetings: Call / Text / WhatsApp the Rabbi, 
   // A private conversation with the Rabbi or the Rebbetzin: on conflict, family and help pages, a line on every other guide.
   const inl = (await c.call('GET', '/learn/in-laws')).text;
   assert.match(inl, /rabbi-contact consult/); assert.match(inl, /data-lead="consult" data-channel="whatsapp" data-who="rebbetzin"/); assert.match(inl, /Hi%20Rebbetzin%20Labkowski/); assert.match(inl, /wa\.me\/19253847241\?text=Hi%20Rebbetzin/, "the Rebbetzin's own phone"); assert.match(inl, /href="mailto:info@chabadoflamorinda\.com\?subject=/);
-  assert.match((await c.call('GET', '/help/someone-is-sick')).text, /rabbi-contact consult/);
+  { const sick = (await c.call('GET', '/help/someone-is-sick')).text; assert.match(sick, /class="card callbox/); assert.match(sick, /data-lead="consult" data-channel="call" data-who="rebbetzin"/); assert.ok(!/rabbi-contact consult/.test(sick), 'one contact box per help page'); }
   assert.match((await c.call('GET', '/learn/dreidel')).text, /class="consult-line rabbi-contact"/);
   const r3 = await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ lang: 'en', cid: 'conv8', messages: [{ role: 'user', content: 'My husband and I keep fighting about his parents' }] }) });
   const ev3 = readSse(await r3.text()).find((e) => e.contact);

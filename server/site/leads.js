@@ -94,7 +94,7 @@ function actionCard(X, topic, text) {
 }
 function withContact(X, body, path) {
   const topic = topicForPage(path);
-  if (/rabbi-contact/.test(body) || (!topic && !/^\/learn\/[a-z0-9-]+$/.test(path))) return body;
+  if (/rabbi-contact|class="card callbox/.test(body) || (!topic && !/^\/learn\/[a-z0-9-]+$/.test(path))) return body;
   const box = topic ? contactBox(X, topic) : consultLine(X), rn = body.lastIndexOf('<section class="read-next"'), i = rn >= 0 ? rn : Math.max(body.lastIndexOf('</article>'), body.lastIndexOf('</section>'));
   return i < 0 ? body + box : body.slice(0, i) + box + body.slice(i);
 }

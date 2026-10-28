@@ -10,6 +10,7 @@ const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
 const { validYmd } = require('./tools.js');
 const { readNext } = require('./links.js');
+const { links: leadLinks } = require('./leads.js');
 
 const LETTERS = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ', 'ק', 'ר', 'ש', 'ת'];
 const FINAL = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
@@ -61,7 +62,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
     const body = `<article class="wrap sec narrow help-page">
 <p class="crumbs"><a href="/help">${esc(t("We're here for you"))}</a> ›</p>
 <h1>${esc(h.title)}</h1>
-<div class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${phoneLink(o)}<a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p></div>
+<div class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${phoneLink(o)}<a class="btn ghost" href="${esc(leadLinks(o, 'consult', t).whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="rabbi" rel="noopener" target="_blank">WhatsApp</a><a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p>${o.rebbetzinMobile ? `<p class="muted">${esc(t('Or talk privately with Rebbetzin Tzipora Labkowski:'))} <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').call)}" data-lead="consult" data-channel="call" data-who="rebbetzin" dir="ltr">${esc(o.rebbetzinMobile)}</a> · <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="rebbetzin" rel="noopener" target="_blank">WhatsApp</a></p>` : ''}</div>
 ${md(h.body)}
 ${extras ? `<div class="grid">${extras}</div>` : ''}
 ${h.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(h.faq)}` : ''}
