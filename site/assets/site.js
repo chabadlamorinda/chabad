@@ -220,6 +220,30 @@
     ['pointerdown', 'focusin', 'wheel', 'touchstart'].forEach(function (ev) { track.addEventListener(ev, stop, { passive: true }); });
   });
 
+  // ---------- Spin the dreidel (/dreidel) ----------
+  Array.prototype.forEach.call(document.querySelectorAll('[data-dreidel]'), function (g) {
+    var L = []; try { L = JSON.parse(g.querySelector('[data-dr-letters]').textContent); } catch (e) { return; }
+    var you = 10, pot = 4, busy = false, d = g.querySelector('.dreidel'), letter = g.querySelector('.dr-letter'), msg = g.querySelector('.dr-msg');
+    var spinB = g.querySelector('[data-dr-spin]'), again = g.querySelector('[data-dr-reset]');
+    var show = function () { g.querySelector('[data-dr-you]').textContent = you; g.querySelector('[data-dr-pot]').textContent = pot; };
+    spinB.addEventListener('click', function () {
+      if (busy) return; busy = true; spinB.disabled = true;
+      if (pot === 0) { you--; pot++; } // an empty pot: everyone puts one in
+      var i = Math.floor(Math.random() * 4), turns = 0;
+      d.classList.remove('landed'); d.classList.add('spinning');
+      var tick = setInterval(function () { letter.textContent = L[turns++ % 4].he; }, 90);
+      setTimeout(function () {
+        clearInterval(tick); d.classList.remove('spinning'); d.classList.add('landed'); letter.textContent = L[i].he;
+        if (i === 1) { you += pot; pot = 0; } else if (i === 2) { var h = Math.ceil(pot / 2); you += h; pot -= h; } else if (i === 3 && you > 0) { you--; pot++; }
+        msg.textContent = L[i].name + ': ' + L[i].what;
+        if (you <= 0) { msg.textContent += ' ' + T('Out of coins! Play again?'); spinB.hidden = true; again.hidden = false; }
+        else if (you >= 30) { msg.textContent += ' ' + T('30 coins: you win! A freilichen Chanukah!'); spinB.hidden = true; again.hidden = false; }
+        show(); busy = false; spinB.disabled = false;
+      }, 1600);
+    });
+    again.addEventListener('click', function () { you = 10; pot = 4; show(); msg.textContent = T('Ready? Tap Spin!'); spinB.hidden = false; again.hidden = true; });
+  });
+
   // ---------- Giving (/donate, /chai-club): on to Stripe's secure checkout page ----------
   Array.prototype.forEach.call(document.querySelectorAll('form[data-give]'), function (f) {
     var err = f.querySelector('.give-err'), btn = f.querySelector('button[type=submit]'), other = f.elements.other;

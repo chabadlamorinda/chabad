@@ -17,6 +17,7 @@ The Rabbi runs this website by talking to Claude. When he asks for something ("a
 | Pages: about, contact, privacy... (`/about` = `pages/about.md`) | `site/content/pages/*.md` |
 | Holiday guides (`/holidays/chanukah`...) | `site/content/holidays/*.md` |
 | Flyers, photos, PDFs (served at `/media/...`) | `site/media/` |
+| Free atmosphere photos (Shabbat, challah, menorah, Torah, kids...) and which page shows each | `site/media/photos/` (CREDITS.md), `PHOTOS` in `server/site/art.js` |
 | Design | `site/assets/site.css` |
 | Server code | `server/site/` |
 
@@ -63,6 +64,9 @@ Things only the Rabbi can do (Render settings, accounts, launch) are in `store/r
 1. `npm test` (checks every content file; a bad date or a typo in a slug fails with a clear message).
 2. Commit with a plain-English message ("Add Chanukah celebration on Dec 6"), push.
 3. Tell the Rabbi in one or two sentences what changed and the page address.
+
+## Look and feel
+Warm and personal, not corporate: cream paper colors, Lora headings, small handwritten touches in Caveat (`.hand`, eyebrows), and real photos everywhere. Free photos (Pexels, see `site/media/photos/CREDITS.md`) are only for atmosphere and are never captioned as our community; real community photos come from Facebook or the Rabbi and always win. Fun things to play live in `server/site/fun.js` (`/dreidel`).
 
 ## Facts and wording
 * Only publish facts the Rabbi gave or that already appear in the content. Never invent dates, prices, names or quotes; ask.

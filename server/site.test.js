@@ -473,6 +473,11 @@ test('home page: large banners, smaller banners, what we built, ways to get invo
     assert.ok((h.match(/class="sb theme-/g) || []).length <= 8, 'at most 8 small banners');
   }
   assert.match((await client().call('GET', '/')).text, /Shabbat at Chabad of Lamorinda/);
+  assert.match((await client().call('GET', '/')).text, /class="story"/); assert.match((await client().call('GET', '/')).text, /\/media\/photos\/[a-z-]+\.jpg/);
+  for (const L of ['', '/he', '/ru']) { const d = await client().call('GET', L + '/dreidel'); assert.equal(d.status, 200); assert.match(d.text, /data-dreidel/); }
+  assert.match((await client().call('GET', '/holidays/chanukah')).text, /href="\/dreidel"/);
+  assert.match((await client().call('GET', '/programs/hebrew-school')).text, /class="page-photo"/);
+  const fs = require('fs'); for (const f of fs.readdirSync(path.join(DIR, '..', 'media', 'photos')).filter((x) => x.endsWith('.jpg'))) assert.ok(fs.statSync(path.join(DIR, '..', 'media', 'photos', f)).size < 400 * 1024, f + ' is under 400 KB');
   assert.match((await client().call('GET', '/he/')).text, /שבת בחב״ד למורינדה/);
 });
 

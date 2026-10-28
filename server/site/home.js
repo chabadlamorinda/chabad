@@ -26,9 +26,17 @@ ${!img && b.art ? `<div class="bn-art" aria-hidden="true">${artImg(b.art, 'lg')}
 }
 
 function tile(x) {
-  return `<a class="sb theme-${themeOf(x.theme, 'blue')}" href="${esc(x.url)}">${x.image ? `<img class="sb-img" src="${esc(x.image)}" alt="" loading="lazy" decoding="async">` : `<span class="sb-art" aria-hidden="true">${artImg(x.art || 'star-of-david')}</span>`}
+  if (x.image) return `<a class="sb has-photo" href="${esc(x.url)}"><img class="sb-photo" src="${esc(x.image)}" alt="" loading="lazy" decoding="async">
+<span class="sb-t">${x.eyebrow ? `<span class="sb-eyebrow">${esc(x.eyebrow)}</span>` : ''}<strong>${esc(x.title)}</strong>${x.text ? `<span>${esc(x.text)}</span>` : ''}</span></a>`;
+  return `<a class="sb theme-${themeOf(x.theme, 'blue')}" href="${esc(x.url)}"><span class="sb-art" aria-hidden="true">${artImg(x.art || 'star-of-david')}</span>
 <span class="sb-t">${x.eyebrow ? `<span class="sb-eyebrow">${esc(x.eyebrow)}</span>` : ''}<strong>${esc(x.title)}</strong>${x.text ? `<span>${esc(x.text)}</span>` : ''}</span></a>`;
 }
+// A photo for each holiday's banner (free photos in site/media/photos).
+const HOLIDAY_PHOTO = { chanukah: 'chanukah-table', 'rosh-hashanah': 'apples-honey', 'yom-kippur': 'tallit-siddur', passover: 'seder-plate', shavuot: 'torah-yad', 'simchat-torah': 'torah-ark', 'shabbat': 'shabbat-table' };
+// Events without their own picture get one that fits their kind.
+const CAT_PHOTO = { shabbat: 'shabbat-table', class: 'torah-study', kids: 'kids-crafts', family: 'family-menorah', women: 'challah-hands', men: 'tefillin', teens: 'dreidel-kids', community: 'shabbat-dinner' };
+const catPhoto = (c) => (CAT_PHOTO[c] ? '/media/photos/' + CAT_PHOTO[c] + '.jpg' : '');
+const holidayPhoto = (slug) => (HOLIDAY_PHOTO[slug] ? '/media/photos/' + HOLIDAY_PHOTO[slug] + '.jpg' : '');
 
 function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, today }) {
   const { t, C } = X, o = C.org, H = C.home || {};
@@ -36,16 +44,16 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, today }) {
   const soon = (e) => (e.start.slice(0, 10) <= new Date(Date.parse(today + 'T12:00:00Z') + 60 * 864e5).toISOString().slice(0, 10));
   const big = evs.filter((e) => (e.featured || e.category === 'holiday') && soon(e)).slice(0, 3);
   const evBanner = (e) => ({ title: e.title, text: e.summary, eyebrow: X.when(e), url: '/events/' + e.slug + (e.rsvp ? '#rsvp' : ''), button: e.rsvp ? t('RSVP') : t('Details'),
-    url2: e.rsvp ? '/events/' + e.slug : '', button2: t('Details'), image: picture(e), art: artFor('event', e.slug, e.holiday || e.category), theme: CAT_THEME[e.category] || 'blue' });
+    url2: e.rsvp ? '/events/' + e.slug : '', button2: t('Details'), image: picture(e) || holidayPhoto(e.holiday), art: artFor('event', e.slug, e.holiday || e.category), theme: CAT_THEME[e.category] || 'blue' });
   const slides = big.map(evBanner);
   const nh = hols[0], days = nh ? Math.round((Date.parse(nh.date + 'T12:00:00Z') - Date.parse(today + 'T12:00:00Z')) / 864e5) : 99;
   if (nh && days <= 45 && !big.some((e) => e.holiday === nh.slug)) {
     slides.push({ eyebrow: t('Next holiday') + (days > 1 ? ' · ' + t('in {n} days', { n: days }) : ''), title: holPage ? holPage.title : X.hc(nh), text: X.longDate(nh.date) + (nh.time ? ' · ' + t('candle lighting {time}', { time: X.tm(nh) }) : ''),
-      url: '/holidays/' + nh.slug, button: t('Celebrate with us'), art: artFor('holiday', nh.slug), theme: 'gold' });
+      url: '/holidays/' + nh.slug, button: t('Celebrate with us'), art: artFor('holiday', nh.slug), image: holidayPhoto(nh.slug), theme: 'gold' });
   }
   for (const b of H.banners || []) slides.push(fromProgram(C, b));
   // Smaller banners: the other events coming up, then the programs people see every week.
-  const small = evs.filter((e) => !big.includes(e)).slice(0, 4).map((e) => ({ title: e.title, eyebrow: X.when(e), url: '/events/' + e.slug, image: picture(e), art: artFor('event', e.slug, e.holiday || e.category), theme: CAT_THEME[e.category] || 'blue' }))
+  const small = evs.filter((e) => !big.includes(e)).slice(0, 4).map((e) => ({ title: e.title, eyebrow: X.when(e), url: '/events/' + e.slug, image: picture(e) || holidayPhoto(e.holiday) || catPhoto(e.category), art: artFor('event', e.slug, e.holiday || e.category), theme: CAT_THEME[e.category] || 'blue' }))
     .concat((H.tiles || []).map((x) => fromProgram(C, x))).slice(0, 8);
   const stats = (H.stats || []).filter((s) => s.number && s.label);
   const involved = [
@@ -77,6 +85,12 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, today }) {
   <div class="sbs">${small.map(tile).join('')}</div>
   ${(o.weekly || []).length ? `<ul class="week-strip">${o.weekly.map((w) => `<li><a href="${esc(w.link || '/events')}"><b>${esc(w.day)}</b> ${esc(w.name)} <span class="muted">${esc(w.time)}</span></a></li>`).join('')}</ul>` : ''}
 </section>
+${H.story ? `<section class="wrap sec"><div class="story">
+  ${H.story.image ? `<div class="story-photo"><img src="${esc(H.story.image)}" alt="" loading="lazy" decoding="async">${H.story.tag ? `<span class="tag">${esc(H.story.tag)}</span>` : ''}</div>` : ''}
+  <div><div class="sec-h"><h2>${esc(H.story.title)}</h2></div><p>${esc(H.story.text)}</p>
+  ${(H.story.timeline || []).length ? `<ol class="timeline">${H.story.timeline.map((x) => `<li><b>${esc(x.year)}</b><span>${esc(x.text)}</span></li>`).join('')}</ol>` : ''}
+  ${H.story.url ? `<p><a class="btn ghost" href="${esc(H.story.url)}">${esc(H.story.button || t('About us'))}</a></p>` : ''}</div>
+</div></section>` : ''}
 <section class="band built"><div class="wrap">
   <div class="sec-h"><h2>${esc(t('What we have built together'))}</h2><a href="/about">${esc(t('About us'))} →</a></div>
   <p class="lead-d">${esc(t('Rabbi Yisroel and Rebbetzin Tzipora Labkowski, emissaries of the Lubavitcher Rebbe, and a community that keeps growing. Thank you to everyone who makes it happen.'))}</p>
@@ -106,8 +120,9 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, today }) {
     <a href="/jewish-holidays-${today.slice(0, 4)}">${artImg('calendar')}<span>${esc(t('Jewish holidays this year'))}</span></a>
     <button type="button" data-chat-open>${artImg('chat-bubble')}<span>${esc(t('Ask us anything'))}</span></button>
     <a href="/learn">${artImg('open-book')}<span>${esc(t('Learn about Judaism'))}</span></a>
+    ${nh && nh.slug === 'chanukah' && days <= 45 ? `<a href="/dreidel">${artImg('dreidel')}<span>${esc(t('Spin the dreidel'))}</span></a>` : ''}
   </div>
 </section>
 ${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Community news'))}</h2><a href="/community">${esc(t('Community board'))} →</a></div><div class="grid">${posts.map((i) => `<a class="card tile" href="/community"><p class="eyebrow">${esc(t(i.kind === 'mazal-tov' ? 'Mazal Tov' : i.kind === 'shiva' ? 'Condolences' : 'News'))}</p><h3>${esc(i.title)}</h3></a>`).join('')}</div></section>` : ''}`;
 }
-module.exports = { homeBody, fromProgram };
+module.exports = { homeBody, fromProgram, holidayPhoto };

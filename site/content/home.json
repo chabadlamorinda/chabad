@@ -1,5 +1,5 @@
 {
-  "_help": "The home page. banners = the large slides at the top (after featured events and the next holiday). tiles = the smaller banners. highlights = what Chabad of Lamorinda has built. stats = big numbers, e.g. {\"id\": \"families\", \"number\": \"300+\", \"label\": \"families\"} (only real numbers from the Rabbi). A banner or tile can point at a program (\"program\": \"hebrew-school\") to use its name and summary, or have its own title and text. art = a picture name from site/assets/art; theme = navy, blue, green, gold or burgundy; image = /media/... photo.",
+  "_help": "The home page. banners = the large slides at the top (after featured events and the next holiday). tiles = the smaller banners. highlights = what Chabad of Lamorinda has built. stats = big numbers, e.g. {\"id\": \"families\", \"number\": \"300+\", \"label\": \"families\"} (only real numbers from the Rabbi). A banner or tile can point at a program (\"program\": \"hebrew-school\") to use its name and summary, or have its own title and text. art = a picture name from site/assets/art; theme = navy, blue, green, gold or burgundy; image = /media/... photo (free photos in site/media/photos, see CREDITS.md; real community photos are best). story = the \"Our story\" section.",
   "banners": [
     {
       "id": "shabbat",
@@ -8,7 +8,8 @@
       "button": "Shabbat times and services",
       "url": "/shabbat",
       "art": "shabbat-candles",
-      "theme": "navy"
+      "theme": "navy",
+      "image": "/media/photos/shabbat-table.jpg"
     },
     {
       "id": "hebrew-school",
@@ -16,7 +17,8 @@
       "button": "Register for Hebrew School",
       "url": "/forms/hebrew-school",
       "art": "school",
-      "theme": "blue"
+      "theme": "blue",
+      "image": "/media/photos/kids-crafts.jpg"
     },
     {
       "id": "preschool",
@@ -24,7 +26,8 @@
       "button": "Learn about the preschool",
       "url": "/programs/jewish-preschool",
       "art": "playground",
-      "theme": "green"
+      "theme": "green",
+      "image": "/media/photos/preschool-play.jpg"
     }
   ],
   "tiles": [
@@ -33,42 +36,48 @@
       "program": "adult-education",
       "url": "/programs/adult-education",
       "art": "open-book",
-      "theme": "navy"
+      "theme": "navy",
+      "image": "/media/photos/torah-study.jpg"
     },
     {
       "id": "women",
       "program": "womens-circle",
       "url": "/programs/womens-circle",
       "art": "candle-pair-gold",
-      "theme": "burgundy"
+      "theme": "burgundy",
+      "image": "/media/photos/challah-hands.jpg"
     },
     {
       "id": "men",
       "program": "mens-club",
       "url": "/programs/mens-club",
       "art": "tefillin",
-      "theme": "blue"
+      "theme": "blue",
+      "image": "/media/photos/tefillin.jpg"
     },
     {
       "id": "ckids",
       "program": "ckids-afterschool",
       "url": "/programs/ckids-afterschool",
       "art": "playground",
-      "theme": "green"
+      "theme": "green",
+      "image": "/media/photos/kids-learning.jpg"
     },
     {
       "id": "teens",
       "program": "kids-and-teens",
       "url": "/programs/kids-and-teens",
       "art": "dreidel",
-      "theme": "gold"
+      "theme": "gold",
+      "image": "/media/photos/dreidel-kids.jpg"
     },
     {
       "id": "bar-bat",
       "program": "bar-bat-mitzvah",
       "url": "/programs/bar-bat-mitzvah",
       "art": "torah-scroll",
-      "theme": "navy"
+      "theme": "navy",
+      "image": "/media/photos/torah-yad.jpg"
     },
     {
       "id": "kiddush",
@@ -76,14 +85,16 @@
       "text": "Mark a birthday, anniversary or yahrzeit with the whole community at the Shabbat Kiddush.",
       "url": "/sponsor-a-kiddush",
       "art": "kiddush-cup",
-      "theme": "burgundy"
+      "theme": "burgundy",
+      "image": "/media/photos/kiddush-cup.jpg"
     },
     {
       "id": "kosher",
       "program": "bay-kosher",
       "url": "/programs/bay-kosher",
       "art": "kosher-pot",
-      "theme": "green"
+      "theme": "green",
+      "image": "/media/photos/challah-rolls.jpg"
     }
   ],
   "highlights": [
@@ -130,5 +141,35 @@
       "art": "star-of-david"
     }
   ],
-  "stats": []
+  "stats": [],
+  "story": {
+    "title": "Our story",
+    "image": "/media/photos/challah-breaking.jpg",
+    "tag": "Shabbat Shalom!",
+    "text": "In 2015, Rabbi Yisroel and Tzipora Labkowski moved from Brooklyn to Lafayette with one hope: that every Jew in Lafayette, Moraga and Orinda would have a warm Jewish home to walk into. There is no membership and no dues. Whoever you are and whatever you know, you belong here.",
+    "timeline": [
+      {
+        "id": "2015",
+        "year": "2015",
+        "text": "The Labkowskis arrive from Brooklyn. The first High Holiday services are held at the Lafayette Library."
+      },
+      {
+        "id": "2019",
+        "year": "2019",
+        "text": "The Chabad center opens its doors in Lafayette."
+      },
+      {
+        "id": "2020",
+        "year": "2020",
+        "text": "Kosher meat comes to Contra Costa County, sold right at the center."
+      },
+      {
+        "id": "today",
+        "year": "Today",
+        "text": "A preschool, a Hebrew School, Shabbat every week, classes, holidays and a helping hand for every family."
+      }
+    ],
+    "button": "Read more about us",
+    "url": "/about"
+  }
 }
