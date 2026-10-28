@@ -44,7 +44,7 @@ Chabad of Lamorinda is happy to talk with anyone who is exploring conversion, pr
 It varies from person to person. Most conversions take at least a year, and often longer, because it involves real learning and change, not just a ceremony.
 
 ### Can I convert for marriage?
-A conversion must be sincere and for its own sake. If a relationship is what first brought you to Judaism, speak openly with the Rabbi about where you stand. See also our guide to [interfaith families](/learn/interfaith-families).
+A conversion must be sincere and for its own sake. If a relationship is what first brought you to Judaism, speak openly with the Rabbi about where you stand.
 
 ### Are children of a convert Jewish?
 Yes. Children born to a woman after her conversion are fully Jewish from birth.

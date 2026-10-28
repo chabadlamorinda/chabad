@@ -248,13 +248,15 @@
         into.appendChild(node);
       });
     };
+    // Keep the start of the answer in view (a long answer is read from its top, not scrolled to its end).
+    var lastAnswer = null, show = function (b) { if (!b) return; var lg = panel.log; lg.scrollTop = Math.min(lg.scrollHeight, lg.scrollTop + b.getBoundingClientRect().top - lg.getBoundingClientRect().top - 8); };
     var bubble = function (role, text) { var b = el('div', { class: 'cm ' + role }); render(text, b); panel.log.appendChild(b); panel.log.scrollTop = panel.log.scrollHeight; return b; };
     var ask = function (q) {
       if (busy || !q.trim()) return;
       busy = true; history.push({ role: 'user', content: q.trim() }); save(); bubble('user', q.trim());
       Array.prototype.forEach.call(panel.log.querySelectorAll('.chips'), function (c) { c.remove(); });
       var b = el('div', { class: 'cm assistant typing', 'aria-label': T('Thinking…') }, [el('span'), el('span'), el('span')]), got = '', more = [], contact = null;
-      panel.log.appendChild(b); panel.log.scrollTop = panel.log.scrollHeight;
+      panel.log.appendChild(b); panel.log.scrollTop = panel.log.scrollHeight; lastAnswer = b;
       fetch('/api/site/chat', { method: 'POST', credentials: 'omit', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: history, lang: LANG, page: location.pathname, cid: cid() }) }).then(function (r) {
         if (!r.ok || !r.body) throw new Error('chat');
         var reader = r.body.getReader(), dec = new TextDecoder(), buf = '';
@@ -262,7 +264,7 @@
           if (x.done) return;
           buf += dec.decode(x.value, { stream: true });
           var parts = buf.split('\n\n'); buf = parts.pop();
-          parts.forEach(function (p) { var d = /^data: (.*)$/m.exec(p); if (!d) return; try { var j = JSON.parse(d[1]); if (j.text) { got += j.text; b.classList.remove('typing'); render(got, b); panel.log.scrollTop = panel.log.scrollHeight; } if (j.suggest) more = j.suggest; if (j.contact) contact = j.contact; } catch (e) {} });
+          parts.forEach(function (p) { var d = /^data: (.*)$/m.exec(p); if (!d) return; try { var j = JSON.parse(d[1]); if (j.text) { got += j.text; b.classList.remove('typing'); render(got, b); show(b); } if (j.suggest) more = j.suggest; if (j.contact) contact = j.contact; } catch (e) {} });
           return pump();
         }); };
         return pump();
@@ -281,13 +283,13 @@
       if (c.rebbetzin) kids.push(el('span', { text: c.labels.rabbi }), row(c, 'rabbi'), el('span', { text: c.labels.rebbetzin }), row(c.rebbetzin, 'rebbetzin')); else kids.push(row(c, 'rabbi'));
       kids.push(el('p', { class: 'muted', text: c.note }));
       panel.log.appendChild(el('div', { class: 'cm assistant reach' }, kids));
-      panel.log.scrollTop = panel.log.scrollHeight;
+      show(lastAnswer);
     };
     var offer = function (qs) {
       if (!qs || !qs.length) return;
       var chips = el('div', { class: 'chips' });
       qs.forEach(function (q) { chips.appendChild(el('button', { type: 'button', class: 'chip', text: q, on: { click: function () { ask(q); } } })); });
-      panel.log.appendChild(chips); panel.log.scrollTop = panel.log.scrollHeight;
+      panel.log.appendChild(chips); show(lastAnswer);
     };
     var handoff = function () {
       var box = el('form', { class: 'handoff' }), name = el('input', { required: true, autocomplete: 'name', placeholder: T('Your name') }), email = el('input', { type: 'email', required: true, autocomplete: 'email', placeholder: T('Your email'), dir: 'ltr' }), m = el('p', { class: 'msg', hidden: true });

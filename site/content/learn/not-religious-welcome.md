@@ -38,7 +38,7 @@ You do not have to do everything. You do not have to do anything. But if you wan
 
 ## Questions you might have
 
-Wondering whether you are Jewish, or what counts? See [am I Jewish?](/help/jewish-identity) and [who is a Jew?](/learn/who-is-a-jew). In an interfaith family? You are welcome too; see [interfaith families in Lamorinda](/learn/interfaith-families-in-lamorinda). For questions about your own situation, ask the Rabbi.
+Wondering whether you are Jewish, or what counts? See [am I Jewish?](/help/jewish-identity) and [who is a Jew?](/learn/who-is-a-jew). For questions about your own situation, ask the Rabbi.
 
 ## Stay in touch, at your pace
 

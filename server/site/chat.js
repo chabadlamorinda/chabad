@@ -103,11 +103,15 @@ function searchAnswer(C, question, t) {
   const score = (title, text, body) => { let s = 0; const T = norm(title), X = norm(text), B = norm(body); for (const w of words) { if (T.includes(w)) s += 4; if (X.includes(w)) s += 2; if (B.includes(w)) s += 0.5; } return s; };
   const bestQa = qa.map((x) => ({ ...x, s: score(x.q, '', x.a) })).sort((a, b) => b.s - a.s)[0];
   const top = docs.map((d) => ({ ...d, s: score(d.title, d.text, d.body) * d.boost })).filter((d) => d.s > 0).sort((a, b) => b.s - a.s).slice(0, 4);
+  // A short, direct answer (the best matching question's own answer) and one page to read more, not a list of links.
   const lines = [];
   const qWords = bestQa ? words.filter((w) => norm(bestQa.q).includes(w)).length : 0;
-  if (bestQa && words.length && qWords >= Math.ceil(words.length / 2) && bestQa.s >= Math.max(4, words.length * 2.5)) lines.push(`**${bestQa.q}**`, plain(bestQa.a), `[${t('Read more')}](${bestQa.url})`, '');
-  if (top.length) { lines.push(t('Here is what I found on our site:')); for (const d of top) lines.push(`- [${d.title}](${d.url})${d.text ? ': ' + clip(d.text, 120) : ''}`); }
-  else if (!lines.length) lines.push(t('I could not find that on our site.'));
+  const good = bestQa && words.length && qWords >= Math.ceil(words.length / 2) && bestQa.s >= Math.max(4, words.length * 2.5);
+  const inTitle = (d) => words.filter((w) => norm(d.title).includes(w)).length >= Math.min(words.length, Math.max(2, Math.ceil(words.length / 2))); // only a page that is really about it
+  const page = top.find((d) => (!good || d.url !== bestQa.url) && (good || inTitle(d))) || null;
+  if (good) { lines.push(bestQa.a.trim()); const u = page || { url: bestQa.url, title: t('Read more') }; lines.push('', `[${t('Read more')}: ${u.title}](${u.url})`); }
+  else if (page) lines.push(t('This page should help:') + ` [${page.title}](${page.url})`);
+  else lines.push(t('I could not find that on our site.'));
   lines.push('', t('For anything else, call Rabbi Labkowski at {phone} or use the button below to send your question to the Rabbi.', { phone: C.org.phone }));
   return lines.join('\n');
 }

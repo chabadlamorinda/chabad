@@ -2,7 +2,7 @@
 title: Jewish in December: Celebrating Chanukah with Pride
 description: For Jewish families in a season full of Christmas: how to make Chanukah shine, talk with kids and schools, and share Jewish light with warmth and respect.
 category: Jewish ideas
-related: chanukah-menorah, chanukah-for-kids, jewish-pride, interfaith-families
+related: chanukah-menorah, chanukah-for-kids, jewish-pride
 local: Public menorah lightings, Chanukah events and menorahs and candles for your home in Lafayette, Moraga and Orinda: chabadoflamorinda.com/holidays/chanukah or 925-384-7242.
 ---
 In December, the stores, the radio and the neighborhood all seem to celebrate someone else's holiday. Many Jewish families feel it, especially families with children. Here is a Jewish way to think about the season, and practical ideas for making it your own.
@@ -29,10 +29,6 @@ That is why the Lubavitcher Rebbe encouraged **public menorah lightings**, in pa
 ## Respect for our neighbors
 
 Being proud of Chanukah does not mean looking down on anyone. Wishing a neighbor well, thanking a colleague for an invitation and taking part in a community's kindness are good manners. At the same time, Jewish families keep their own traditions and do not take part in another religion's rituals. If you are unsure about a particular invitation, ask the Rabbi.
-
-## For interfaith families
-
-Many families in Lamorinda include a parent or grandparents who are not Jewish. Every family's situation is different, and you are welcome at Chabad as you are. Lighting the menorah with your children is a beautiful place to start. See our guide for [interfaith families](/learn/interfaith-families).
 
 ## Common questions
 

@@ -3,7 +3,7 @@ title: Separating Challah (Hafrashat Challah): How and Why
 description: What hafrashat challah is, how much dough needs it, the blessing in Hebrew and English, and how to separate challah step by step.
 category: Jewish home
 related: challah, jewish-women, shabbat-meals, blessings
-local: Want to learn to bake and separate challah with other women? Visit chabadoflamorinda.com/programs/womens-circle or call Tzipora Labkowski at 925-384-7242.
+local: Want to learn to bake and separate challah with other women? Visit chabadoflamorinda.com/programs/womens-circle or call Tzipora Labkowski at 925-384-7241.
 ---
 Hafrashat challah means "separating challah": taking a small piece from a batch of dough before baking and setting it aside as a gift to G-d. It is one of the special mitzvot entrusted especially to Jewish women, and many see the moment of separating as a time of great blessing and prayer.
 
