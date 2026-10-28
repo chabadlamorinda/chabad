@@ -107,6 +107,9 @@ Mezuzah, tefillin, giving and meeting pages (and the chat, whenever someone asks
 ## Community submissions
 Mazal Tovs, announcements, shiva notices, ideas and resources sent through `/community` wait in the Rabbi area for approval. When the Rabbi approves a resource or idea, add it to the right content file.
 
+## Website address
+The site runs at PUBLIC_URL (set in Render; the main address is https://jewishlamorinda.com). Website addresses written in content as "chabadoflamorinda.com/..." are shown with the real domain automatically (email addresses are not touched). Extra domains in FORWARD_DOMAINS (default `jewishlamorinda.org`) forward to the main address, keeping the page.
+
 ## Do not
 * Do not edit `kiddush-kit/` (a separate shareable copy) when changing the website.
 * Do not commit secrets. Settings live in Render's Environment tab (see `store/website-setup.md`).

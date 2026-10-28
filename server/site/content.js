@@ -18,12 +18,16 @@ function fmtClock(hhmm, lang) {
   const [h, m] = hhmm.split(':').map(Number);
   return lang === 'en' ? `${h % 12 || 12}:${String(m).padStart(2, '0')} ${h < 12 ? 'AM' : 'PM'}` : hhmm;
 }
-function fillTimes(data, hhmm, lang) {
-  if (!hhmm) return data;
-  const time = fmtClock(hhmm, lang), seen = new Set();
+// The website's address written in the text ("see chabadoflamorinda.com/holidays") follows the address the site
+// actually runs on (PUBLIC_URL), so it is right wherever it lives. Email addresses (info@...) are left alone.
+const SITE_IN_TEXT = /(?<![@\w.-])(?:www\.)?chabadoflamorinda\.com/g;
+function fillTimes(data, hhmm, lang, siteHost = '') {
+  if (!hhmm && !siteHost) return data;
+  const time = hhmm ? fmtClock(hhmm, lang) : null, seen = new Set();
+  const fix = (s) => { if (time) s = s.replace(TIME_TOKEN, time); if (siteHost) s = s.replace(SITE_IN_TEXT, siteHost); return s; };
   const walk = (x) => {
     if (!x || typeof x !== 'object' || seen.has(x)) return; seen.add(x);
-    for (const k of Object.keys(x)) { if (typeof x[k] === 'string') x[k] = x[k].replace(TIME_TOKEN, time); else walk(x[k]); }
+    for (const k of Object.keys(x)) { if (typeof x[k] === 'string') x[k] = fix(x[k]); else walk(x[k]); }
   };
   walk(data);
   return data;
@@ -113,7 +117,7 @@ function load(dir = DIR, opts = {}) {
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
   for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, kabbalat, loadedAt: new Date() }, kabbalat, 'en');
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

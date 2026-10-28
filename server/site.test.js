@@ -580,6 +580,16 @@ test("the Rabbi's morning summary: requests and people looking at important topi
   assert.match(d[0].text, /REQUESTS[\s\S]*asked the chat about mezuzah/); assert.match(d[0].text, /\/admin\/community/);
 });
 
+test('the website address in the text follows the real domain; email addresses stay', () => {
+  const C = load(DIR, { siteHost: 'jewishlamorinda.com' }), txt = JSON.stringify(C.learn.find((a) => a.slug === 'chanukah-gelt'));
+  assert.match(txt, /jewishlamorinda\.com\/holidays\/chanukah/); assert.ok(!/(?<!@)chabadoflamorinda\.com\/holidays/.test(txt));
+  assert.match(JSON.stringify(C.org), /info@chabadoflamorinda\.com/);
+});
+test('jewishlamorinda.org forwards to the main address, keeping the page', async () => {
+  const u = new URL(base), r = await new Promise((ok, bad) => require('http').get({ host: u.hostname, port: u.port, path: '/learn/mezuzah?x=1', headers: { host: 'www.jewishlamorinda.org' } }, ok).on('error', bad));
+  r.resume(); assert.equal(r.statusCode, 301); assert.equal(r.headers.location, 'http://site.test/learn/mezuzah?x=1');
+});
+
 test('chat without Claude: answers with matching pages', () => {
   const { searchAnswer } = require('./site/chat.js');
   const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));

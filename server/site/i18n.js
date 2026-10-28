@@ -95,7 +95,7 @@ function createI18n(dir) {
     };
     // Event locations follow the translated org name when they are "at the center".
     for (const e of data.events) if (!e.location) e.loc = { ...e.loc, name: data.org.name };
-    fillTimes(data, en.kabbalat, lang);
+    fillTimes(data, en.kabbalat, lang, en.siteHost);
     cache.set(lang, { src: en, data });
     return data;
   }

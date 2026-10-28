@@ -50,11 +50,12 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const analytics = { ga: /^(G|AW)-[A-Z0-9]+$/.test(env.GA_ID || '') ? env.GA_ID : '', google: tag(env.GOOGLE_SITE_VERIFICATION), bing: tag(env.BING_SITE_VERIFICATION) };
   // Any secret value works (Render's generated ones contain + and /): it is turned into a 32-letter hex key.
   const indexNowKey = env.INDEXNOW_KEY ? require('crypto').createHash('sha256').update(env.INDEXNOW_KEY).digest('hex').slice(0, 32) : '';
-  let data = load(contentDir); // throws with a clear list if a content file is wrong
+  const siteHost = /onrender\.com$|localhost|127\.0\.0\.1|site\.test/.test(host) ? '' : new URL(base).hostname; // text addresses follow the real domain
+  let data = load(contentDir, { siteHost }); // throws with a clear list if a content file is wrong
   const content = () => data;
   // Kabbalat Shabbat moves with sunset: work out this week's time, and again every hour.
   const refreshKabbalat = async () => {
-    try { const k = await kabbalatShabbat(data.org.kabbalatShabbat); if (k && k !== data.kabbalat) data = load(contentDir, { kabbalat: k }); } catch (e) { log.error('kabbalat shabbat time:', e && e.message); }
+    try { const k = await kabbalatShabbat(data.org.kabbalatShabbat); if (k && k !== data.kabbalat) data = load(contentDir, { kabbalat: k, siteHost }); } catch (e) { log.error('kabbalat shabbat time:', e && e.message); }
   };
   const kabbalatReady = data.org.kabbalatShabbat ? refreshKabbalat() : Promise.resolve();
   if (data.org.kabbalatShabbat) setInterval(refreshKabbalat, 3600e3).unref();
@@ -84,6 +85,10 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     "connect-src 'self'" + (analytics.ga ? ' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com' : ''), "font-src 'self'", "frame-src 'self'", "object-src 'none'", "base-uri 'self'", "form-action 'self'", "frame-ancestors 'none'"].join('; ');
   app.use((req, res, next) => { if (!/^\/(?:pushka|kiddush|board|admin|api)(?:\/|$)/.test(req.path)) res.setHeader('Content-Security-Policy', csp); next(); });
 
+  // Extra domains (jewishlamorinda.org...) forward to the main address, keeping the page.
+  const forward = new Set(String(env.FORWARD_DOMAINS || 'jewishlamorinda.org').split(',').map((d) => d.trim().toLowerCase().replace(/^www\./, '')).filter(Boolean));
+  forward.delete(host);
+  app.use((req, res, next) => (forward.has(String(req.hostname || '').toLowerCase().replace(/^www\./, '')) ? res.redirect(301, base + req.originalUrl) : next()));
   // Old Chabad.org addresses (/3186196, /templates/.../aid/3186196/..., /article.asp?aid=3186196) keep working.
   app.use((req, res, next) => {
     if (req.method !== 'GET' && req.method !== 'HEAD') return next();
@@ -148,7 +153,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   };
   return {
     content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
-    reload() { data = load(contentDir, { kabbalat: data.kabbalat }); refreshKabbalat(); return data; },
+    reload() { data = load(contentDir, { kabbalat: data.kabbalat, siteHost }); refreshKabbalat(); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {
       // Which settings are in place (yes/no only, never the values), matching store/rabbi-todo.md.
@@ -160,7 +165,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
         { label: 'Facebook page', done: !!(env.FB_PAGE_ID && env.FB_PAGE_TOKEN), todo: 6 },
         { label: 'Instagram', done: !!env.IG_USER_ID, todo: 6, optional: true },
         { label: 'Google Analytics', done: !!env.GA_ID, todo: 8, optional: true },
-        { label: 'Launch: chabadoflamorinda.com points here', done: /chabadoflamorinda\.com/.test(env.PUBLIC_URL || ''), todo: 10 },
+        { label: 'Website address (jewishlamorinda.com) connected', done: !!env.PUBLIC_URL && !/onrender\.com/.test(env.PUBLIC_URL), todo: 20 },
         { label: 'Google Search Console', done: !!env.GOOGLE_SITE_VERIFICATION, todo: 10 },
         { label: 'Phone notifications for the app', done: !!(env.VAPID_PUBLIC_KEY || process.env.VAPID_PUBLIC_KEY), todo: 11, optional: true },
       ] }));
