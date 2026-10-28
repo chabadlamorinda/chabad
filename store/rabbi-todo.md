@@ -17,6 +17,9 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 10. **Launch day** (after "go ahead"): connect chabadoflamorinda.com to the new site, then Google Search Console and Bing (so Google, ChatGPT and Copilot find it).
 11. **Phone notifications for the app** (`VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`), optional: Claude generates the two keys for you; you paste them.
 
+## Website address
+20. **Buy jewishlamorinda.com** (it looked available on Oct 28): Cloudflare Registrar (at cost, about $10-11 a year, free privacy) or Porkbun. Turn on auto-renew. Then, at a computer, Claude walks you through connecting it to Render (about 15 minutes) and switches the site's address.
+
 ## Ideas you liked (a few minutes each)
 12. **Google review link:** in Google Business Profile, tap "Ask for reviews" and send Claude the link. After every event, the thank-you email will ask happy guests for a review (the #1 thing for "synagogue near me" and Google Maps).
 13. **Nextdoor:** join Nextdoor as Chabad of Lamorinda (or with your own account). Then for each event, Rabbi area → Social drafts → "Copy & open Nextdoor" and paste.
