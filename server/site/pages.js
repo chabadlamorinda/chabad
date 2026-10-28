@@ -90,7 +90,7 @@ function mountPages(app, ctx) {
     const cats = [...new Set(evs.map((e) => e.category).filter(Boolean))];
     const body = `<section class="wrap sec"><h1>${esc(t('Upcoming events'))}</h1>
 <p class="lead-d">${esc(t('Shabbat dinners, holiday celebrations, classes and family programs in Lafayette, Moraga and Orinda. Everyone is welcome.'))}</p>
-<p class="chips"><a class="chip${c ? '' : ' on'}" href="/events">${esc(t('All'))}</a>${cats.map((k) => `<a class="chip${k === c ? ' on' : ''}" href="/events?c=${k}">${esc(cat(X, k))}</a>`).join('')}<a class="chip" href="/calendar">${esc(t('Jewish calendar'))}</a><a class="chip" href="/events.ics">${esc(t('Add calendar to my phone'))}</a></p>
+<p class="chips"><a class="chip${c ? '' : ' on'}" href="/events">${esc(t('All'))}</a>${cats.map((k) => `<a class="chip${k === c ? ' on' : ''}" href="/events?c=${k}">${esc(cat(X, k))}</a>`).join('')}<a class="chip" href="/calendar">${esc(t('Calendar'))}</a><a class="chip" href="/events.ics">${esc(t('Add calendar to my phone'))}</a></p>
 <h2 class="sr-only">${esc(t('Upcoming events'))}</h2>${list.length ? `<div class="evs">${list.map((e) => eventCard(e, cnt, X)).join('')}</div>` : `<p class="muted">${esc(t('No events in this list yet. Please check back soon.'))}</p>`}
 ${c ? '' : weeklyHtml(C.org, X)}
 </section>`;

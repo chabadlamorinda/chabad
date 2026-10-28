@@ -273,19 +273,11 @@
         .catch(function (e2) { btn.disabled = false; btn.textContent = T('Continue to secure payment'); fail(e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.')); });
     });
   });
-  // The Chai Club honor board (names the partners chose to show; amounts are never shown).
+  // The Chai Club honor board: a medal for every monthly partner, grouped by level (board/board.js; amounts are never shown).
   Array.prototype.forEach.call(document.querySelectorAll('[data-club-board]'), function (box) {
-    fetch('/api/club', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (d) {
-      box.textContent = '';
-      var levels = [['platinum', 'Platinum'], ['gold', 'Gold'], ['silver', 'Silver'], ['bronze', 'Bronze']], any = false;
-      levels.forEach(function (l) {
-        var names = (d.members || []).filter(function (m) { return m.level === l[0]; });
-        if (!names.length) return; any = true;
-        box.appendChild(el('div', { class: 'club-row ' + l[0] }, [el('h3', { text: T(l[1]) }), el('ul', {}, names.map(function (m) { return el('li', { text: m.name }); }))]));
-      });
-      if (d.total) box.appendChild(el('p', { class: 'muted', text: T('{n} partners in all', { n: d.total }) }));
-      if (!any && !d.total) box.appendChild(el('p', { class: 'muted', text: T('Be the first to join!') }));
-    }).catch(function () { box.textContent = ''; });
+    var draw = function (d) { if (!window.ClubBoard) return; box.textContent = ''; box.appendChild(window.ClubBoard.render(d, { lang: box.getAttribute('data-lang') || LANG, joinHref: '#give' })); };
+    var go = function () { draw(null); fetch('/api/club', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(draw).catch(function () {}); };
+    if (window.ClubBoard) go(); else window.addEventListener('load', go);
   });
 
   // ---------- "Ask us" chat ----------

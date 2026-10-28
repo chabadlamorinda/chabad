@@ -6,7 +6,7 @@
   document.documentElement.lang = lang;
   var mount = document.getElementById('board');
   function height() { if (embed && parent !== window) parent.postMessage({ type: 'chai-board-height', height: document.documentElement.scrollHeight }, '*'); }
-  function show(data) { mount.textContent = ''; mount.appendChild(ClubBoard.render(data, { lang: lang, joinHref: '/pushka/?go=club' })); height(); }
+  function show(data) { mount.textContent = ''; mount.appendChild(ClubBoard.render(data, { lang: lang, joinHref: '/chai-club' })); height(); }
   show(null);
   ClubBoard.load('').then(show).catch(function () {});
   window.addEventListener('resize', height); setTimeout(height, 400);

@@ -593,3 +593,38 @@ h1 { font-weight: 600; }
 .dreidel-game .btns { justify-content: center; }
 .this-shabbat { border-color: var(--gold); background: var(--soft); } .this-shabbat p { margin: 4px 0; } .this-shabbat b { white-space: nowrap; }
 .shabbat-page h2 { margin-top: 1.6em; }
+
+/* calendar (/calendar): month grid on computers, day list on phones */
+.cal-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 10px 0 14px; }
+.cal-bar h2 { margin: 0; min-width: 10ch; text-align: center; }
+.cal-legend { margin-inline-start: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; background: var(--card); }
+.cal-h { padding: 8px; font-weight: 700; font-size: .85rem; text-align: center; background: var(--soft); border-bottom: 1px solid var(--line); }
+.cal-d { min-height: 118px; padding: 6px; border-inline-end: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.cal-d:nth-child(7n) { border-inline-end: 0; }
+.cal-d.out { background: var(--soft); opacity: .5; }
+.cal-d.today { background: #fff7e3; box-shadow: inset 0 0 0 2px var(--gold); }
+.cal-n { font-weight: 700; font-size: .9rem; }
+.ce { display: block; font-size: .78rem; line-height: 1.25; padding: 3px 6px; border-radius: 6px; text-decoration: none; color: var(--ink); overflow: hidden; text-overflow: ellipsis; }
+.cal-legend .ce { display: inline-block; }
+a.ce:hover { filter: brightness(.95); text-decoration: underline; }
+.ce.ev { background: #fbe3c4; border-inline-start: 3px solid var(--clay); }
+.ce.ev.c-holiday { background: #fff0b8; border-color: var(--gold); }
+.ce.ev.c-kids, .ce.ev.c-family, .ce.ev.c-teens { background: #dcefe3; border-color: #2a8a63; }
+.ce.wk { background: #e3ebf7; border-inline-start: 3px solid var(--navy-2); }
+.ce.hol { background: var(--navy); color: #fff; font-weight: 600; }
+.ce.pa { background: transparent; color: var(--gold-ink); font-style: italic; padding-block: 0; }
+.ce.sh { background: transparent; color: var(--muted); padding-block: 0; }
+.ce-act { font-size: .72rem; font-weight: 700; color: var(--clay); margin: -2px 0 2px 6px; text-decoration: none; }
+.ce-act::after { content: " ›"; }
+.cal-list { display: none; }
+@media (max-width: 760px) {
+  .cal-grid, .cal-legend { display: none; }
+  .cal-list { display: grid; gap: 12px; }
+  .cl-day { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; box-shadow: var(--shadow); }
+  .cl-day.today { border-color: var(--gold); }
+  .cl-day h3 { margin: 0 0 8px; font-size: 1.05rem; }
+  .cl-item { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin: 6px 0; }
+  .cl-item .ce { font-size: .95rem; padding: 6px 10px; flex: 1 1 60%; }
+  .cl-item .muted { flex-basis: 100%; font-size: .85rem; padding-inline-start: 10px; }
+}

@@ -48,7 +48,8 @@ function mountGive(r, { render, wrap, ctxOf }) {
 <h2>${esc(t('Join the Chai Club'))}</h2>
 ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
 <h2>${esc(t('Our Chai Club partners'))}</h2>
-<div class="club-board" data-club-board><p class="muted">${esc(t('Loading…'))}</p></div>
+<div class="club-board" data-club-board data-lang="${X.lang}"><p class="muted">${esc(t('Loading…'))}</p></div>
+<link rel="stylesheet" href="/kiddush/fonts.css"><link rel="stylesheet" href="/board/board.css"><script src="/board/board.js" defer></script>
 <p class="muted">${esc(t('Thank you to every partner. Partners who chose to be listed are shown here by level; amounts are never shown.'))}</p></section>`;
     await render(res, { path: '/chai-club', title: t('Chai Club: monthly partners of Chabad of Lamorinda'), description: t('Join the Chai Club: monthly partners who carry Jewish life in Lafayette, Moraga and Orinda. Bronze, Silver, Gold and Platinum levels, and an honor board.'), body });
   }));

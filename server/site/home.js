@@ -81,7 +81,7 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, today }) {
 </div></section>
 <section class="wrap sec" data-for-you hidden></section>
 <section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Coming up and every week'))}</h2><a href="/events">${esc(t('Full calendar'))} →</a></div>
+  <div class="sec-h"><h2>${esc(t('Coming up and every week'))}</h2><a href="/calendar">${esc(t('Full calendar'))} →</a></div>
   <div class="sbs">${small.map(tile).join('')}</div>
   ${(o.weekly || []).length ? `<ul class="week-strip">${o.weekly.map((w) => `<li><a href="${esc(w.link || '/events')}"><b>${esc(w.day)}</b> ${esc(w.name)} <span class="muted">${esc(w.time)}</span></a></li>`).join('')}</ul>` : ''}
 </section>

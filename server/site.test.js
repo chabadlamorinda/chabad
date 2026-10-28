@@ -488,6 +488,26 @@ test('Bar Mitzvah parshah finder: the date and the Torah portion, also for a Bar
   assert.match((await client().call('GET', '/he/tools/bar-bat-mitzvah?d=1980-05-14')).text, /פרשת במדבר/);
 });
 
+test('calendar: a month grid with every event (page and RSVP links), the weekly schedule with Register, holidays and Chanukah nights', async () => {
+  const C = load(), ev = C.events.find((e) => e.published), m = ev.start.slice(0, 7);
+  const cal = (await client().call('GET', '/calendar?m=' + m)).text;
+  assert.match(cal, /class="cal-grid"/); assert.match(cal, /class="cal-list"/);
+  assert.ok(cal.includes('href="/events/' + ev.slug + '"'), 'the event links to its page');
+  if (ev.rsvp) assert.ok(cal.includes('href="/events/' + ev.slug + '#rsvp"'), 'and straight to its RSVP');
+  assert.match(cal, /href="\/forms\/hebrew-school"/, 'Hebrew School Sundays link to registration');
+  const dec = (await client().call('GET', '/calendar?m=2026-12')).text;
+  for (let n = 1; n <= 8; n++) assert.ok(dec.includes('Chanukah: night ' + n), 'Chanukah night ' + n);
+  const sep = (await client().call('GET', '/calendar?m=2026-09')).text;
+  assert.ok(!/<span class="cal-n">12<\/span>(?:(?!cal-d).)*Shabbat services/s.test(sep), 'no weekly services listed on Rosh Hashanah');
+  assert.equal((await client().call('GET', '/ru/calendar')).status, 200);
+});
+test('Chai Club page shows the medal honor board (board.js, all three languages)', async () => {
+  const p = (await client().call('GET', '/chai-club')).text;
+  assert.match(p, /data-club-board/); assert.match(p, /\/board\/board\.js/);
+  const js = require('fs').readFileSync(path.join(__dirname, '..', 'board', 'board.js'), 'utf8');
+  assert.match(js, /ru: \{ title:/); assert.match(js, /pl\.appendChild\(medal\(L\.id/);
+});
+
 test('the donation page works on the site itself', async () => {
   const d = (await client().call('GET', '/donate')).text;
   assert.match(d, /<form class="card give" id="give" data-give/); assert.match(d, /name="amt" value="180"/); assert.ok(!/href="\/pushka\//.test(d.split('<main')[1].split('</main>')[0]), 'giving stays on the website');
@@ -715,7 +735,7 @@ test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () =>
   const hb = (await c.call('GET', '/tools/hebrew-birthday?d=1985-04-02')).text;
   assert.match(hb, /11 Nisan|Nisan 11|11th of Nisan/); assert.match(hb, /\/tehillim\?b=1985-04-02/);
   const cal = (await c.call('GET', '/calendar?m=2026-12')).text;
-  assert.match(cal, /Chanukah: 1 Candle/); assert.match(cal, /Rosh Chodesh Tevet/);
+  assert.match(cal, /Chanukah: night 1/); assert.match(cal, /Rosh Chodesh Tevet/);
   assert.equal((await c.call('GET', '/calendar?m=2026-13')).status, 302);
   assert.equal((await c.call('GET', '/parsha')).status, 200);
   const ds = (await c.call('GET', '/daily-study')).text; assert.match(ds, /Tanya/); assert.match(ds, /Rambam/); assert.match(ds, /sefaria\.org/);

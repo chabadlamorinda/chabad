@@ -8,7 +8,7 @@ const { fullAddress } = require('./content.js');
 const { LANGS, RTL, withLang } = require('./i18n.js');
 
 const NAV = [
-  ['/events', 'Events'], ['/shabbat', 'Shabbat'], ['/holidays', 'Holidays'], ['/programs', 'Programs'],
+  ['/events', 'Events'], ['/calendar', 'Calendar'], ['/shabbat', 'Shabbat'], ['/holidays', 'Holidays'], ['/programs', 'Programs'],
   ['/learn', 'Learn'], ['/jewish-lamorinda', 'Jewish Lamorinda'], ['/community', 'Community'], ['/help', 'Help'],
 ];
 
@@ -124,7 +124,7 @@ function footer(c, t) {
     </div>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Community'))}</summary><div class="ftr-links">
-      ${a('/events', 'Events calendar')}${a('/calendar', 'Jewish calendar')}${a('/shabbat', 'Shabbat times')}${a('/holidays', 'Jewish holidays')}${a('/programs', 'Programs')}${a('/photos', 'Photos')}${a('/community', 'Community board')}
+      ${a('/calendar', 'Calendar')}${a('/events', 'Upcoming events')}${a('/shabbat', 'Shabbat times')}${a('/holidays', 'Jewish holidays')}${a('/programs', 'Programs')}${a('/photos', 'Photos')}${a('/community', 'Community board')}
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t("We're here for you"))}</summary><div class="ftr-links">

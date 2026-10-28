@@ -148,4 +148,4 @@ async function dailyStudy(day) {
   return out;
 }
 
-module.exports = { kabbalatShabbat, kabbalatFor, dailyStudy, dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES };
+module.exports = { kabbalatShabbat, kabbalatFor, dailyStudy, dayTimes, events, thisShabbat, upcomingHolidays, nextDateOf, hebrewDate, mitzvahDate, todayLocal, ymd, fmtTime, TZ, HOLIDAY_PAGES, holidaySlug };
