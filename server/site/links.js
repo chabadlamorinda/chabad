@@ -2,6 +2,7 @@
 // every program page the guides for that program, and every town page the local Lamorinda guides.
 'use strict';
 const { esc } = require('./md.js');
+const { artForPath, artImg } = require('./art.js');
 
 const HOLIDAY = {
   'rosh-hashanah': /rosh-hashanah|shofar|tashlich|elul|selichot|teshuvah/, 'yom-kippur': /yom-kippur|kol-nidre|yizkor|teshuvah/,
@@ -27,10 +28,21 @@ function guidesFor(C, path) {
   const key = (m && m[1] || '').split('-')[0], rank = (a) => (a.category === 'Lamorinda' ? 0 : a.slug.includes(key) ? 1 : 2);
   return /^\/jewish-/.test(path) ? list.slice(0, 6) : list.sort((a, b) => rank(a) - rank(b) || a.slug.localeCompare(b.slug)).slice(0, 8);
 }
+// "Read next": one inviting card (picture, title, why it is worth reading) and a few short links, instead of a long grid.
+// items: [{ href, title, description }]
+function readNext(X, items, heading) {
+  const list = items.filter(Boolean);
+  if (!list.length) return '';
+  const [first, ...more] = list;
+  return `<section class="read-next"><p class="eyebrow">${esc(heading || X.t('Read next'))}</p>
+<a class="card rn-main" href="${esc(first.href)}">${artImg(artForPath(first.href.split(/[?#]/)[0], first.title), 'lg')}<span class="rn-t"><strong>${esc(first.title)}</strong>${first.description ? `<span>${esc(first.description)}</span>` : ''}<span class="rn-go">${esc(X.t('Read next'))} →</span></span></a>
+${more.length ? `<ul class="rn-more">${more.slice(0, 3).map((x) => `<li><a href="${esc(x.href)}">${esc(x.title)}</a></li>`).join('')}</ul>` : ''}</section>`;
+}
+const asItem = (a) => ({ href: '/learn/' + a.slug, title: a.title, description: a.description });
 function withGuides(X, body, path) {
   const list = guidesFor(X.C, path);
   if (!list.length) return body;
-  const html = `<h2>${esc(X.t(/^\/jewish-/.test(path) ? 'Guides to Jewish life in Lamorinda' : 'Guides to read'))}</h2><div class="grid">${list.map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>`;
+  const html = readNext(X, list.slice(0, 4).map(asItem), X.t(/^\/jewish-/.test(path) ? 'Guides to Jewish life in Lamorinda' : 'Guides to read'));
   const i = Math.max(body.lastIndexOf('</article>'), body.lastIndexOf('</section>'));
   return i < 0 ? body + html : body.slice(0, i) + html + body.slice(i);
 }
@@ -44,4 +56,4 @@ function friendlyLinks(X, html) {
   };
   return html.replace(/<a href="(\/[a-z0-9/-]*)">\1<\/a>/g, (m, p) => { const n = name(p); return n ? `<a href="${p}">${esc(n)}</a>` : m; });
 }
-module.exports = { guidesFor, withGuides, friendlyLinks };
+module.exports = { guidesFor, withGuides, friendlyLinks, readNext, asItem };

@@ -6,6 +6,8 @@
 const { md, esc, plain } = require('./md.js');
 const { fullAddress, LEARN_CATEGORIES, fmtClock } = require('./content.js');
 const { artImg } = require('./art.js');
+const { readNext, asItem } = require('./links.js');
+const { actionCard, topicForPage, contactBox } = require('./leads.js');
 const Z = require('./zmanim.js');
 
 const townPath = (t) => '/jewish-' + t.slug;
@@ -95,16 +97,20 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     const X = ctxOf(req), { t, C } = X, a = C.learn.find((x) => x.slug === req.params.slug);
     if (!a) return next();
     const rel = a.related.map((s) => C.learn.find((x) => x.slug === s)).filter(Boolean), occ = OCCASION[a.slug];
+    // What the reader came for comes first: the quick answer, and (for mezuzah, tefillin, giving...) how to get it done.
+    // Then the guide, the questions people ask, and one inviting guide to read next.
+    const topic = topicForPage('/learn/' + a.slug), act = topic && topic !== 'consult';
     const body = `<article class="wrap sec narrow learn">
 <p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › ${esc(t(a.category))}</p>
 <h1>${esc(a.title)}</h1>
-<p class="meta muted">${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))}</p>
-${(() => { const html = md(a.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]; return (hs.length >= 3 ? `<nav class="toc" aria-label="${esc(t('On this page'))}"><p class="eyebrow">${esc(t('On this page'))}</p>${hs.map((h) => `<a href="#${h[1]}">${h[2]}</a>`).join('')}</nav>` : '') + html; })()}
-${a.local ? `<div class="card local"><p class="eyebrow">${esc(t('In Lamorinda'))}</p><p>${esc(a.local)}</p><p class="btns"><a class="btn gold" href="/help/talk-to-the-rabbi">${esc(t('Contact the Rabbi'))}</a><a class="btn ghost" href="/events">${esc(t('Upcoming events'))}</a></p></div>` : ''}
-${occ ? `<div class="card occasion"><p>${esc(t('Mark the occasion: sponsor a Kiddush or give in their honor'))}</p><p class="btns"><a class="btn gold" href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory'))}</a><a class="btn ghost" href="/tehillim">${esc(t('Tehillim for this'))}</a>${occ === 'yahrzeit' ? `<a class="btn ghost" href="/kaddish">${esc(t('Kaddish'))}</a>` : ''}</p></div>` : ''}
+<p class="lead-d">${esc(a.description)}</p>
+${act ? actionCard(X, topic, a.local || '') : ''}
+${(() => { const html = md(a.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]; return (hs.length >= 4 ? `<details class="toc"><summary>${esc(t('On this page'))} · ${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))}</summary>${hs.map((h) => `<a href="#${h[1]}">${h[2]}</a>`).join('')}</details>` : '') + html; })()}
+${a.local && !act ? `<div class="card local"><p><strong>${esc(t('In Lamorinda'))}:</strong> ${esc(a.local)}</p><p class="btns"><a class="btn gold sm" href="/help/talk-to-the-rabbi">${esc(t('Contact the Rabbi'))}</a></p></div>` : ''}
+${occ ? `<p class="occasion-line">${esc(t('Mark the occasion: sponsor a Kiddush or give in their honor'))} <a href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory'))} →</a></p>` : ''}
 ${a.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(a.faq)}` : ''}
-${rel.length ? `<h2>${esc(t('Keep learning'))}</h2><div class="grid">${rel.map((x) => `<a class="card tile" href="/learn/${x.slug}"><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p></a>`).join('')}</div>` : ''}
-<div class="card support"><p>${esc(t('These guides are free for everyone, thanks to our partners.'))} <a href="/donate">${esc(t('Become a partner'))}</a> · <a href="/programs/chai-club">${esc(t('Join the Chai Club'))}</a></p></div>
+${topic === 'consult' ? contactBox(X, 'consult') : ''}
+${readNext(X, rel.map(asItem))}
 </article>`;
     await render(res, { path: '/learn/' + a.slug, title: a.title, description: a.description, body,
       ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description, articleBody: plain(a.body).slice(0, 5000), wordCount: plain(a.body).split(/\s+/).length, inLanguage: X.lang, author: { '@type': 'Organization', name: C.org.name, url: base + '/' }, publisher: { '@id': base + '/#org' }, mainEntityOfPage: base + X.path('/learn/' + a.slug), image: base + '/assets/og.png' },

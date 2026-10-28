@@ -9,6 +9,7 @@ const { md, esc } = require('./md.js');
 const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
 const { validYmd } = require('./tools.js');
+const { readNext } = require('./links.js');
 
 const LETTERS = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ', 'ק', 'ר', 'ש', 'ת'];
 const FINAL = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
@@ -64,8 +65,8 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
 ${md(h.body)}
 ${extras ? `<div class="grid">${extras}</div>` : ''}
 ${h.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(h.faq)}` : ''}
-${rel.length ? `<h2>${esc(t('Related'))}</h2><ul class="list">${rel.map((x) => `<li><a href="${x.href}">${esc(x.title)}</a></li>`).join('')}</ul>` : ''}
 <h2 id="message">${esc(t('Send the Rabbi a message'))}</h2>${rabbiForm(X, h.title)}
+${readNext(X, rel.map((x) => ({ ...x, description: (C.learn.find((a) => '/learn/' + a.slug === x.href) || C.help.find((y) => '/help/' + y.slug === x.href) || {}).description })))}
 </article>`;
     await render(res, { path: '/help/' + h.slug, title: h.title, description: h.description, body, ld: [crumbs(base, [[t("We're here for you"), '/help'], [h.title, '/help/' + h.slug]]), ...(h.faq.length ? [faqLd(h.faq)] : [])] });
   }));

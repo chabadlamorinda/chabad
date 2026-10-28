@@ -84,10 +84,18 @@ function contactBox(X, topic) {
   return `<div class="card rabbi-contact"><h2>${esc(t(TOPICS[topic].title))}</h2><p>${esc(t('Call, text, WhatsApp or email Rabbi Labkowski directly, and he will take care of you:'))}</p>
 <p class="btns">${a('call', t('Call'))}${a('text', t('Text'))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}${L.email ? a('email', t('Email')) : ''}</p></div>`;
 }
+// The page's main action, near the top: "Need a mezuzah? Call, Text, WhatsApp or Email the Rabbi", with what we do locally.
+function actionCard(X, topic, text) {
+  if (topic === 'consult') return consultBox(X);
+  const t = X.t, L = links(X.C.org, topic, t);
+  const a = (ch, label, extra = '') => `<a class="btn sm ${ch === 'whatsapp' ? 'gold' : 'ghost'}" href="${esc(L[ch])}" data-lead="${topic}" data-channel="${ch}"${extra}>${esc(label)}</a>`;
+  return `<div class="card rabbi-contact action-top"><p><strong>${esc(t(TOPICS[topic].title))}</strong>${text ? ' ' + esc(text) : ''}</p>
+<p class="btns">${a('call', t('Call'))}${a('text', t('Text'))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}${L.email ? a('email', t('Email')) : ''}</p></div>`;
+}
 function withContact(X, body, path) {
   const topic = topicForPage(path);
   if (/rabbi-contact/.test(body) || (!topic && !/^\/learn\/[a-z0-9-]+$/.test(path))) return body;
-  const box = topic ? contactBox(X, topic) : consultLine(X), i = Math.max(body.lastIndexOf('</article>'), body.lastIndexOf('</section>'));
+  const box = topic ? contactBox(X, topic) : consultLine(X), rn = body.lastIndexOf('<section class="read-next"'), i = rn >= 0 ? rn : Math.max(body.lastIndexOf('</article>'), body.lastIndexOf('</section>'));
   return i < 0 ? body + box : body.slice(0, i) + box + body.slice(i);
 }
 
@@ -128,4 +136,4 @@ function mountLeads(app, { store, mailer, notifyTo = '', content, base = '', lim
     },
   };
 }
-module.exports = { mountLeads, topicOf, links, contactBox, withContact, topicForPage, TOPICS, PAGE_TOPICS };
+module.exports = { mountLeads, topicOf, links, contactBox, actionCard, withContact, topicForPage, TOPICS, PAGE_TOPICS };

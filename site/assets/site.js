@@ -202,6 +202,24 @@
     });
   }
 
+  // ---------- Home: the large banners slide by themselves, and with the dots, arrows or a swipe ----------
+  Array.prototype.forEach.call(document.querySelectorAll('[data-carousel]'), function (track) {
+    var root = track.parentNode, dots = root.querySelectorAll('.bn-dots button'), n = track.children.length, cur = 0, timer = null;
+    if (n < 2) return;
+    var rtl = document.documentElement.dir === 'rtl';
+    var go = function (i) { cur = (i + n) % n; track.scrollTo({ left: (rtl ? -1 : 1) * cur * track.clientWidth, behavior: 'smooth' }); };
+    var mark = function () { cur = Math.round(Math.abs(track.scrollLeft) / track.clientWidth); Array.prototype.forEach.call(dots, function (d, i) { d.setAttribute('aria-selected', String(i === cur)); }); };
+    track.addEventListener('scroll', function () { clearTimeout(track._t); track._t = setTimeout(mark, 80); }, { passive: true });
+    Array.prototype.forEach.call(dots, function (d, i) { d.addEventListener('click', function () { stop(); go(i); }); });
+    var prev = root.querySelector('.bn-prev'), next = root.querySelector('.bn-next');
+    if (prev) prev.addEventListener('click', function () { stop(); go(cur - 1); });
+    if (next) next.addEventListener('click', function () { stop(); go(cur + 1); });
+    var stop = function () { clearInterval(timer); timer = null; };
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!still) timer = setInterval(function () { if (!document.hidden) go(cur + 1); }, 7000);
+    ['pointerdown', 'focusin', 'wheel', 'touchstart'].forEach(function (ev) { track.addEventListener(ev, stop, { passive: true }); });
+  });
+
   // ---------- Giving (/donate, /chai-club): on to Stripe's secure checkout page ----------
   Array.prototype.forEach.call(document.querySelectorAll('form[data-give]'), function (f) {
     var err = f.querySelector('.give-err'), btn = f.querySelector('button[type=submit]'), other = f.elements.other;

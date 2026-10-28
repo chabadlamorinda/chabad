@@ -1,0 +1,134 @@
+{
+  "_help": "The home page. banners = the large slides at the top (after featured events and the next holiday). tiles = the smaller banners. highlights = what Chabad of Lamorinda has built. stats = big numbers, e.g. {\"id\": \"families\", \"number\": \"300+\", \"label\": \"families\"} (only real numbers from the Rabbi). A banner or tile can point at a program (\"program\": \"hebrew-school\") to use its name and summary, or have its own title and text. art = a picture name from site/assets/art; theme = navy, blue, green, gold or burgundy; image = /media/... photo.",
+  "banners": [
+    {
+      "id": "shabbat",
+      "title": "Shabbat at Chabad of Lamorinda",
+      "text": "Kabbalat Shabbat on Friday at {kabbalat-shabbat}, and Shabbat services on Saturday at 10 AM with a hot Kiddush lunch. Everyone is welcome, no membership needed.",
+      "button": "Shabbat times and services",
+      "url": "/shabbat",
+      "art": "shabbat-candles",
+      "theme": "navy"
+    },
+    {
+      "id": "hebrew-school",
+      "program": "hebrew-school",
+      "button": "Register for Hebrew School",
+      "url": "/forms/hebrew-school",
+      "art": "school",
+      "theme": "blue"
+    },
+    {
+      "id": "preschool",
+      "program": "jewish-preschool",
+      "button": "Learn about the preschool",
+      "url": "/programs/jewish-preschool",
+      "art": "playground",
+      "theme": "green"
+    }
+  ],
+  "tiles": [
+    {
+      "id": "classes",
+      "program": "adult-education",
+      "url": "/programs/adult-education",
+      "art": "open-book",
+      "theme": "navy"
+    },
+    {
+      "id": "women",
+      "program": "womens-circle",
+      "url": "/programs/womens-circle",
+      "art": "candle-pair-gold",
+      "theme": "burgundy"
+    },
+    {
+      "id": "men",
+      "program": "mens-club",
+      "url": "/programs/mens-club",
+      "art": "tefillin",
+      "theme": "blue"
+    },
+    {
+      "id": "ckids",
+      "program": "ckids-afterschool",
+      "url": "/programs/ckids-afterschool",
+      "art": "playground",
+      "theme": "green"
+    },
+    {
+      "id": "teens",
+      "program": "kids-and-teens",
+      "url": "/programs/kids-and-teens",
+      "art": "dreidel",
+      "theme": "gold"
+    },
+    {
+      "id": "bar-bat",
+      "program": "bar-bat-mitzvah",
+      "url": "/programs/bar-bat-mitzvah",
+      "art": "torah-scroll",
+      "theme": "navy"
+    },
+    {
+      "id": "kiddush",
+      "title": "Sponsor a Kiddush",
+      "text": "Mark a birthday, anniversary or yahrzeit with the whole community at the Shabbat Kiddush.",
+      "url": "/sponsor-a-kiddush",
+      "art": "kiddush-cup",
+      "theme": "burgundy"
+    },
+    {
+      "id": "kosher",
+      "program": "bay-kosher",
+      "url": "/programs/bay-kosher",
+      "art": "kosher-pot",
+      "theme": "green"
+    }
+  ],
+  "highlights": [
+    {
+      "id": "preschool",
+      "title": "Lamorinda Jewish Preschool",
+      "text": "A warm Jewish start for the youngest children, directed by Rebbetzin Tzipora Labkowski.",
+      "url": "/programs/jewish-preschool",
+      "art": "playground"
+    },
+    {
+      "id": "hebrew-school",
+      "title": "Lamorinda Hebrew School",
+      "text": "Hebrew reading, the holidays and Bar and Bat Mitzvah preparation for ages 3 to 13, every Sunday.",
+      "url": "/programs/hebrew-school",
+      "art": "school"
+    },
+    {
+      "id": "shabbat",
+      "title": "Shabbat every week",
+      "text": "Services, a hot Kiddush lunch and Shabbat dinners with the Rabbi's family, for anyone who wants to come.",
+      "url": "/shabbat",
+      "art": "challah"
+    },
+    {
+      "id": "kosher",
+      "title": "Bay Kosher",
+      "text": "Kosher meat, groceries and Judaica delivered across the area, a project of Chabad of Lamorinda.",
+      "url": "/programs/bay-kosher",
+      "art": "kosher-pot"
+    },
+    {
+      "id": "help",
+      "title": "There in every moment",
+      "text": "Hospital visits, weddings, funerals, shiva and private help for families, from beginning to end.",
+      "url": "/help",
+      "art": "hands-heart"
+    },
+    {
+      "id": "open",
+      "title": "No membership, no dues",
+      "text": "Every Jew belongs. The community is carried by partners who give monthly in the Chai Club.",
+      "url": "/chai-club",
+      "art": "star-of-david"
+    }
+  ],
+  "stats": []
+}

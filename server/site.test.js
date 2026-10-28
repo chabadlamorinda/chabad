@@ -251,7 +251,8 @@ test('learn guides: index, article with Q&A markup, related guides', async () =>
   assert.ok(C.learn.length >= 16);
   const a = C.learn.find((x) => x.slug === 'mezuzah');
   const r = await c.call('GET', '/learn/mezuzah');
-  assert.equal(r.status, 200); assert.match(r.text, /"@type":"Article"/); assert.match(r.text, /In Lamorinda/);
+  assert.equal(r.status, 200); assert.match(r.text, /"@type":"Article"/); assert.match(r.text, new RegExp(a.local.slice(0, 30).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  assert.ok(r.text.indexOf('action-top') < r.text.indexOf('<h2'), 'the way to get a mezuzah comes before the guide'); assert.match(r.text, /class="read-next"/); assert.ok(!/Become a partner/.test(r.text));
   if (a.faq.length) assert.match(r.text, /"@type":"FAQPage"/);
   assert.match((await c.call('GET', '/learn')).text, /href="\/learn\/shabbat"/);
   assert.equal((await c.call('GET', '/learn/not-a-guide')).status, 404);
@@ -465,6 +466,16 @@ test('forms: Hebrew School registration with tuition, camp pricing, chametz auth
   assert.equal((await a.call('GET', '/admin/api/site/forms/lulav-etrog')).json.items[0].data.quality, 'Mehudar (extra beautiful)');
 });
 
+test('home page: large banners, smaller banners, what we built, ways to get involved (in three languages)', async () => {
+  for (const L of ['', '/he', '/ru']) {
+    const h = (await client().call('GET', L + '/')).text;
+    assert.match(h, /<h1 class="sr-only">/); assert.match(h, /data-carousel/); assert.match(h, /class="bn theme-/); assert.match(h, /class="sbs"/); assert.match(h, /class="hl"/); assert.match(h, /class="gi"/);
+    assert.ok((h.match(/class="sb theme-/g) || []).length <= 8, 'at most 8 small banners');
+  }
+  assert.match((await client().call('GET', '/')).text, /Shabbat at Chabad of Lamorinda/);
+  assert.match((await client().call('GET', '/he/')).text, /שבת בחב״ד למורינדה/);
+});
+
 test('the donation page works on the site itself', async () => {
   const d = (await client().call('GET', '/donate')).text;
   assert.match(d, /<form class="card give" id="give" data-give/); assert.match(d, /name="amt" value="180"/); assert.ok(!/href="\/pushka\//.test(d.split('<main')[1].split('</main>')[0]), 'giving stays on the website');
@@ -508,7 +519,7 @@ test('chat: answers from the site with Claude, in the visitor language, and logs
 });
 test('mezuzah, tefillin, giving and meetings: Call / Text / WhatsApp the Rabbi, and he hears about every request', async () => {
   const c = client(), page = (await c.call('GET', '/learn/mezuzah')).text;
-  assert.match(page, /class="card rabbi-contact"/); assert.match(page, /wa\.me\/19253847242\?text=/); assert.match(page, /tel:\+19253847242/); assert.match(page, /data-lead="mezuzah" data-channel="whatsapp"/);
+  assert.match(page, /class="card rabbi-contact action-top"/); assert.match(page, /wa\.me\/19253847242\?text=/); assert.match(page, /tel:\+19253847242/); assert.match(page, /data-lead="mezuzah" data-channel="whatsapp"/);
   assert.match((await c.call('GET', '/donate')).text, /data-lead="donation"/);
   assert.match((await c.call('GET', '/he/learn/tefillin')).text, /wa\.me\/19253847242\?text=%D7%A9%D7%9C%D7%95%D7%9D/, 'the ready message is in Hebrew');
   const before = mails.length;

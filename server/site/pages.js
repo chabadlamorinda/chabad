@@ -1,6 +1,7 @@
 // The public website pages, in English, Hebrew and Russian. Everything is rendered on the server from site/content/
 // plus live data (Shabbat times, holidays, RSVP counts, Facebook photos), so every page is complete for Google and AI.
 'use strict';
+const { homeBody } = require('./home.js');
 const express = require('express');
 const path = require('path');
 const { md, esc, plain } = require('./md.js');
@@ -71,93 +72,15 @@ function mountPages(app, ctx) {
     if (req.path === '/' && !ctx.isHome(req)) return next(); // the app's own address still opens My Pushka
     const X = ctxOf(req), { t, C } = X, o = C.org;
     const [sh, hols, cnt, pics, posts] = await Promise.all([Z.thisShabbat(), Z.upcomingHolidays(200), counts(), photos ? photos(14).catch(() => []) : [], news(3).catch(() => [])]);
-    const mosaic = pics.slice(0, 6), strip = pics.slice(6, 14), ks = o.kabbalatShabbat ? Z.kabbalatFor(o.kabbalatShabbat, sh.candles) : null;
-    const evs = upcoming(new Date(), C).slice(0, 4), nextHol = hols[0], holPage = nextHol && C.holidays.find((h) => h.slug === nextHol.slug);
-    const help = C.help.slice(0, 6);
-    const body = `
-<section class="hero${mosaic.length ? ' photo' : ''}">
-  ${mosaic.length ? `<div class="mosaic" aria-hidden="true">${mosaic.map((p, i) => `<img src="${esc(p.src)}" alt="" decoding="async"${i > 2 ? ' loading="lazy"' : ''} width="300" height="300">`).join('')}</div>` : ''}
-  <div class="wrap hero-in">
-    <div>
-      <p class="eyebrow">${esc(t('Lafayette · Moraga · Orinda'))}</p>
-      <h1>${esc(o.tagline)}</h1>
-      <p class="lead">${esc(o.description)}</p>
-      <p class="btns"><a class="btn gold" href="/events">${esc(t('See upcoming events'))}</a><a class="btn ghost-l" href="/account">${esc(t('Join our community'))}</a></p>
-    </div>
-    <div class="card shabbat-card" aria-label="${esc(t('This Shabbat'))}">
-      <p class="eyebrow">${esc(t('This Shabbat'))}${sh.parsha ? ' · ' + esc(X.hc(sh.parsha)) : ''}</p>
-      ${sh.candles ? `<p class="big">${esc(X.tm(sh.candles))}</p><p class="big-l">${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}</p>` : ''}
-      ${ks || sh.havdalah ? `<dl class="sh-times">${ks ? `<div><dt>${esc(t('Kabbalat Shabbat'))} <span class="muted">${esc(t('at Chabad'))}</span></dt><dd>${esc(fmtClock(ks, X.lang))}</dd></div>` : ''}${sh.havdalah ? `<div><dt>${esc(t('Shabbat ends'))} <span class="muted">${esc(X.shortDate(sh.havdalah.date))}</span></dt><dd>${esc(X.tm(sh.havdalah))}</dd></div>` : ''}</dl>` : ''}
-      <div class="quick" data-shabbat-quick data-date="${sh.candles ? sh.candles.date : ''}" data-day="${sh.candles ? esc(X.shortDate(sh.candles.date)) : ''}" hidden></div>
-      <p><a href="/shabbat">${esc(t('Services & Shabbat meals'))} →</a></p>
-      <p><a href="/parsha">${esc(t("This week's Torah portion"))} →</a> · <a href="/shabbat-times">${esc(t('Shabbat times'))}</a> · <a href="/tools/zmanim">${esc(t('Daily prayer times (zmanim)'))}</a></p>
-    </div>
-  </div>
-</section>
-<section class="wrap sec" data-for-you hidden></section>
-<section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Coming up'))}</h2><a href="/events">${esc(t('Full calendar'))} →</a></div>
-  ${evs.length ? `<div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : `<p class="muted">${esc(t('New events are posted here first.'))} <a href="/account">${esc(t('Sign in'))}</a></p>`}
-${weeklyHtml(o, X)}
-</section>
-<section class="band help-band"><div class="wrap">
-  <div class="sec-h"><h2>${esc(t("We're here for you"))}</h2><a href="/help">${esc(t('All life situations'))} →</a></div>
-  <p>${esc(t('Illness, a loss, a new baby, a wedding, a hard time at home or at work: call the Rabbi first. We help with everything, from beginning to end.'))} <a href="tel:${esc(o.phone.replace(/[^0-9+]/g, ''))}" dir="ltr"><strong>${esc(o.phone)}</strong></a></p>
-  <p class="first-call"><a href="/help/disputes"><strong>${esc(t('Disputes, shalom bayit and family matters: talk to the Rabbi first, before things spiral. We help, with great success.'))}</strong></a></p>
-  <div class="chips">${help.map((h) => `<a class="chip${h.urgent === 'yes' ? ' urgent' : ''}" href="/help/${h.slug}">${esc(h.title)}</a>`).join('')}<a class="chip" href="/kaddish">${esc(t('Kaddish'))}</a><a class="chip" href="/tehillim">${esc(t('Tehillim for every occasion'))}</a></div>
-</div></section>
-${nextHol ? `<section class="wrap sec"><div class="holiday-band">${artImgFor('/holidays/' + nextHol.slug)}<div class="hb-text"><p class="eyebrow">${esc(t('Next holiday'))}${(() => { const n = Math.round((new Date(nextHol.date + 'T12:00:00Z') - new Date(Z.ymd(Z.todayLocal()) + 'T12:00:00Z')) / 864e5); return n > 1 ? ' · ' + esc(t('in {n} days', { n })) : ''; })()}</p><h2>${esc(holPage ? holPage.title : X.hc(nextHol))}</h2><p>${esc(X.longDate(nextHol.date))}${nextHol.time ? ' · ' + esc(t('candle lighting {time}', { time: X.tm(nextHol) })) : ''}</p></div><a class="btn gold" href="/holidays/${nextHol.slug}">${esc(t('Celebrate with us'))}</a></div></section>` : ''}
-<section class="wrap sec"><a class="card mz-cta" href="/mitzvah"><span class="eyebrow">${esc(t('Do a mitzvah this week'))}</span><strong>${esc(t('Light Shabbat candles, put on tefillin, give tzedakah, call a parent: pick one and join the community count.'))}</strong><span class="btn gold sm">${esc(t("I'll do it"))} →</span></a></section>
-<section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Programs for every age'))}</h2><a href="/programs">${esc(t('All programs'))} →</a></div>
-  <div class="grid">${C.programs.slice(0, 8).map((p) => `<a class="card tile" href="/programs/${p.slug}"><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p></a>`).join('')}</div>
-</section>
-<section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Mark a yahrzeit, birthday or simcha'))}</h2><a href="/sponsor">${esc(t('Sponsor in honor or memory'))} →</a></div>
-  <p>${esc(t('Sponsor a Kiddush, a Shabbat dinner or a class in honor or in memory of someone you love. Your dedication is shared with the community.'))}</p>
-  <div class="chips">${(C.sponsor.occasions || []).map((x) => `<a class="chip" href="/sponsor?o=${x.id}">${esc(x.title)}</a>`).join('')}</div>
-</section>
-${C.learn.some((a) => a.category === 'Lamorinda') ? `<section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Jewish life in Lafayette, Moraga and Orinda'))}</h2><a href="/learn#lamorinda">${esc(t('All local guides'))} →</a></div>
-  <div class="grid">${C.learn.filter((a) => a.category === 'Lamorinda').slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>
-</section>` : ''}
-<section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Every day'))}</h2></div>
-  <div class="grid">
-    <a class="card tile" href="/jewish-holidays-${new Date().getFullYear()}"><h3>${esc(t('Jewish holidays this year'))}</h3><p>${esc(t('Every holiday with its date and candle lighting time.'))}</p></a>
-    <a class="card tile" href="/tools/zmanim"><h3>${esc(t('Daily prayer times (zmanim)'))}</h3><p>${esc(t('Sunrise, latest Shema, Mincha and nightfall for your town.'))}</p></a>
-    <a class="card tile" href="/parsha"><h3>${esc(t("This week's Torah portion"))}</h3><p>${esc(t('A short summary and a lesson for this week.'))}</p></a>
-    <a class="card tile" href="/calendar"><h3>${esc(t('Jewish calendar'))}</h3><p>${esc(t('Holidays, Rosh Chodesh, fasts and Shabbat times, month by month.'))}</p></a>
-    <a class="card tile" href="/ask"><h3>${esc(t('Ask the Rabbi'))}</h3><p>${esc(t('Real questions, answered by Rabbi Labkowski.'))}</p></a>
-    <a class="card tile" href="/tools/hebrew-birthday"><h3>${esc(t('Hebrew birthday calculator'))}</h3><p>${esc(t('Find your Hebrew birthday and your Tehillim chapter.'))}</p></a>
-  </div>
-</section>
-<section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Everything Jewish in Lamorinda'))}</h2><a href="/jewish-lamorinda">${esc(t('The full guide'))} →</a></div>
-  <div class="chips">${C.directory.map((g) => `<a class="chip" href="/jewish-lamorinda#${g.id || ''}">${esc(g.group)}</a>`).join('')}<a class="chip" href="/tools/hebrew-date">${esc(t('Hebrew date converter'))}</a><a class="chip" href="/tools/yahrzeit">${esc(t('Yahrzeit calculator'))}</a><a class="chip" href="/tools/bar-bat-mitzvah">${esc(t('Bar & Bat Mitzvah date'))}</a></div>
-</section>
-${strip.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Moments from our community'))}</h2><a href="/photos">${esc(t('More photos'))} →</a></div><div class="pics">${strip.map((p) => `<a href="${esc(p.link)}" rel="noopener" target="_blank"><img src="${esc(p.src)}" alt="${esc(p.alt)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div></section>` : ''}
-<section class="band"><div class="wrap"><div class="sec-h"><h2>${esc(t('Your Jewish home in your town'))}</h2><a href="/our-area">${esc(t('Our area'))} →</a></div>
-  <p class="chips">${C.towns.map((x) => `<a class="chip" href="/jewish-${x.slug}">${esc(t('Jewish {town}', { town: x.name }))}</a>`).join('')}</p></div></section>
-<section class="wrap sec">
-  <div class="sec-h"><h2>${esc(t('Learn about Judaism'))}</h2><a href="/learn">${esc(t('All guides'))} →</a></div>
-  <nav class="explore" aria-label="${esc(t('Learn about Judaism'))}">${[['Lamorinda', 'map-pin'], ['Shabbat & holidays', 'shabbat-candles'], ['Jewish home', 'mezuzah'], ['Kosher', 'kosher-pot'], ['Prayer & Torah', 'torah-scroll'], ['Life cycle', 'chuppah'], ['Mourning & remembrance', 'candle-flame'], ['Jewish ideas', 'sparkles']].map(([cat, art]) => `<a href="/learn#${cat.toLowerCase().replace(/[^a-z]+/g, '-')}">${artImg(art)}<span>${esc(t(cat))}</span><small>${C.learn.filter((a) => a.category === cat).length}</small></a>`).join('')}</nav>
-  <div class="grid">${['shabbat', 'kosher', 'mezuzah', 'bar-mitzvah', 'jewish-wedding', 'shiva', 'yahrzeit', 'tefillin'].map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>
-</section>
-${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Community news'))}</h2><a href="/community">${esc(t('Community board'))} →</a></div><div class="grid">${posts.map((i) => `<a class="card tile" href="/community"><p class="eyebrow">${esc(t(i.kind === 'mazal-tov' ? 'Mazal Tov' : i.kind === 'shiva' ? 'Condolences' : 'News'))}</p><h3>${esc(i.title)}</h3></a>`).join('')}</div></section>` : ''}
-<section class="wrap sec join">
-  <div class="card join-card">
-    <h2>${esc(t('One sign-in for everything'))}</h2>
-    <p>${esc(t('Save your family once: names, Hebrew names, birthdays and yahrzeits. Then RSVP to any event in one tap, get reminders for yahrzeits and Hebrew birthdays, and hear about what is coming up.'))}</p>
-    <p class="btns"><a class="btn gold" href="/account">${esc(t('Create my free account'))}</a><a class="btn ghost" href="/get-involved">${esc(t('More ways to get involved'))}</a></p>
-  </div>
-</section>
+    const ks = o.kabbalatShabbat ? Z.kabbalatFor(o.kabbalatShabbat, sh.candles) : null;
+    const nextHol = hols[0], holPage = nextHol && C.holidays.find((h) => h.slug === nextHol.slug);
+    const body = homeBody(X, { sh, ks, hols, evs: upcoming(new Date(), C), cnt, pics, posts, holPage, today: Z.ymd(Z.todayLocal()) }) + `
 <section class="wrap sec narrow">
   <h2>${esc(t('Questions people ask'))}</h2>
-  ${faqHtml(C.faq.slice(0, 6))}
+  ${faqHtml(C.faq.slice(0, 5))}
   <p><a href="/faq">${esc(t('All questions'))} →</a></p>
 </section>`;
-    await render(res, { path: '/', title: o.name, description: o.description, body: decorate(body, '/__home'), ld: [faqLd(C.faq.slice(0, 6)), { '@context': 'https://schema.org', '@type': 'WebSite', name: o.name, url: base + '/', inLanguage: X.lang }] });
+    await render(res, { path: '/', title: o.name, description: o.description, body: decorate(body, '/__home'), ld: [faqLd(C.faq.slice(0, 5)), { '@context': 'https://schema.org', '@type': 'WebSite', name: o.name, url: base + '/', inLanguage: X.lang }] });
   }));
 
   // ---------- events ----------

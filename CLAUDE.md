@@ -6,6 +6,7 @@ The Rabbi runs this website by talking to Claude. When he asks for something ("a
 | What | File |
 | --- | --- |
 | Name, address, phone, email, staff, service times, weekly classes, social links | `site/content/org.json` |
+| Home page: big banners, smaller banners, accomplishments (and numbers) | `site/content/home.json` |
 | Events (one-time) | `site/content/events.json` |
 | Programs (preschool, Hebrew school, classes...) | `site/content/programs.json` |
 | Questions & answers (also shown to Google/AI as FAQ) | `site/content/faq.json` |
@@ -48,6 +49,7 @@ Add an object to `site/content/events.json`:
 * `holiday` (a file name in `holidays/`) and `program` (a slug in `programs.json`) link the event onto those pages.
 * `rsvp`: `{}` for unlimited, `{ "capacity": N }` to cap it, `"kids": false` to hide the children counter. Leave `rsvp` out for no RSVP.
 * `"status": "draft"` hides an event until it is ready. Remove it to publish.
+* `"featured": true` makes it a large banner at the top of the home page (holiday events are large automatically, within 60 days); other events show as smaller banners. A big banner looks best with an `image` (a wide photo or flyer, 1600x700 or so).
 * After the event: `"album": "https://www.facebook.com/media/set/?set=..."` adds a "See all the photos" button, and `"photos": ["/media/chanukah-2026-1.jpg", ...]` shows a few pictures on the page (save them in `site/media/`, under ~400 KB each).
 * Translations: add `"he": { "title", "summary", "details", "price" }` and `"ru": { ... }` to every event (the site is in English, Hebrew and Russian).
 * Images: save flyers/photos into `site/media/` (JPG/PNG/PDF, keep images under ~400 KB; resize first).
@@ -78,6 +80,7 @@ The whole site is in English, Hebrew (/he/...) and Russian (/ru/...); visitors g
 The site's area is Lafayette, Moraga and Orinda first (`"tier": "home"` in towns.json), then nearby towns (`"tier": "near"`). When writing any page, FAQ or event, name the towns ("for families in Lafayette, Moraga and Orinda"). To add a town, add it to towns.json with real facts only (neighborhoods, landmarks); its page, Shabbat times and questions are generated.
 
 ## Guides (learn/)
+Every page leads with what the reader came for (the quick answer, and for mezuzah, tefillin, giving or a meeting the Call/Text/WhatsApp buttons right under the title), then the guide, its questions, and one "Read next" card (the first entry in `related`, so put the most inviting next guide first).
 Each guide has front matter (title, description under 155 characters, category, related, local) and ends with `## Common questions` and `### Question?` entries, which become Google FAQ markup. Write in simple English, from a warm Chabad perspective; for case-by-case halacha say "ask the Rabbi". Add a guide whenever people ask about a topic that has none.
 
 ## Automatic pages (nothing to type)

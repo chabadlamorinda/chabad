@@ -46,7 +46,7 @@ const EXTRA = '.kd{min-height:0;border:1px solid var(--line);border-radius:18px;
 function mountKiddushPage(r, { render, wrap, ctxOf }) {
   let css = null;
   r.get('/assets/kiddush-embed.css', (req, res) => {
-    if (!css) css = scopeCss(fs.readFileSync(path.join(DIR, 'sponsor.css'), 'utf8')) + EXTRA;
+    if (!css) css = scopeCss(fs.readFileSync(path.join(DIR, 'sponsor.css'), 'utf8')).replace(/\.kd main\b/g, '.kd .kd-main') + EXTRA; // one <main> per page: the Kiddush list is a div here
     res.type('css').set('Cache-Control', 'public, max-age=3600').send(css);
   });
   let list = null;
@@ -58,11 +58,11 @@ function mountKiddushPage(r, { render, wrap, ctxOf }) {
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor a Kiddush'))}</h1>
 <p class="lead-d">${esc(t('Dedicate the Shabbat Kiddush in honor or in memory of someone dear. Your name and dedication are shown on our Kiddush board, and the whole community joins in the merit.'))}</p>
 <div class="kd${lang === 'he' ? ' he' : ''}">
-<div class="top" id="top"><section class="thisweek" id="thisWeek" aria-live="polite" hidden></section></div>
-<main><div id="notice" role="status" aria-live="polite"></div>
+<div class="top" id="top"><div class="thisweek" id="thisWeek" aria-live="polite" hidden></div></div>
+<div class="kd-main"><div id="notice" role="status" aria-live="polite"></div>
 <div class="bar"><div class="tabs" id="years" role="tablist" aria-label="Year"></div>
 <label class="chk"><input type="checkbox" id="onlyOpen"> <span data-t="Show weeks without a sponsor yet">${T('Show weeks without a sponsor yet')}</span></label></div>
-<div id="list" aria-live="polite"><p class="muted center">${esc(t('Loading…'))}</p></div></main>
+<div id="list" aria-live="polite"><p class="muted center">${esc(t('Loading…'))}</p></div></div>
 <section id="boardCard" class="board-card" hidden></section>
 <footer><p class="blessing" id="blessing"></p><p class="muted" id="contact"></p></footer>
 <div id="sheet" class="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle"><div class="sheet-bg" data-close></div><div class="sheet-card" id="sheetCard"></div></div>
