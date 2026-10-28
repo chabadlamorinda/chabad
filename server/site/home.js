@@ -32,9 +32,9 @@ function tile(x) {
 <span class="sb-t">${x.eyebrow ? `<span class="sb-eyebrow">${esc(x.eyebrow)}</span>` : ''}<strong>${esc(x.title)}</strong>${x.text ? `<span>${esc(x.text)}</span>` : ''}</span></a>`;
 }
 // A photo for each holiday's banner (free photos in site/media/photos).
-const HOLIDAY_PHOTO = { chanukah: 'chanukah-table', 'rosh-hashanah': 'apples-honey', 'yom-kippur': 'tallit-siddur', passover: 'seder-plate', shavuot: 'torah-yad', 'simchat-torah': 'torah-ark', 'shabbat': 'shabbat-table' };
+const HOLIDAY_PHOTO = { chanukah: 'chanukah-donuts', 'rosh-hashanah': 'apples-honey', 'yom-kippur': 'tallit-siddur', passover: 'seder-plate', shavuot: 'torah-yad', 'simchat-torah': 'torah-ark', 'shabbat': 'shabbat-table' };
 // Events without their own picture get one that fits their kind.
-const CAT_PHOTO = { shabbat: 'shabbat-table', class: 'torah-study', kids: 'kids-crafts', family: 'family-menorah', women: 'challah-hands', men: 'tefillin', teens: 'dreidel-kids', community: 'shabbat-dinner' };
+const CAT_PHOTO = { shabbat: 'shabbat-table', class: 'torah-study', kids: 'kids-crafts', family: 'shabbat-dinner', women: 'challah-hands', men: 'tefillin', teens: 'challah-kid', community: 'shabbat-dinner' };
 const catPhoto = (c) => (CAT_PHOTO[c] ? '/media/photos/' + CAT_PHOTO[c] + '.jpg' : '');
 const holidayPhoto = (slug) => (HOLIDAY_PHOTO[slug] ? '/media/photos/' + HOLIDAY_PHOTO[slug] + '.jpg' : '');
 

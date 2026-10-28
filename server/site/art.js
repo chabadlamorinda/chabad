@@ -69,12 +69,12 @@ function artForPath(p, title = '') {
 // A real photo at the top of a page (free photos in site/media/photos, see CREDITS.md). Pages without one keep the drawing.
 const PHOTOS = {
   '/programs/jewish-preschool': 'preschool-play', '/programs/hebrew-school': 'kids-crafts', '/programs/ckids-afterschool': 'kids-learning', '/programs/adult-education': 'torah-study',
-  '/programs/womens-circle': 'challah-hands', '/programs/mens-club': 'tefillin', '/programs/kids-and-teens': 'dreidel-kids', '/programs/bar-bat-mitzvah': 'torah-yad', '/programs/bay-kosher': 'challah-rolls',
+  '/programs/womens-circle': 'challah-hands', '/programs/mens-club': 'tefillin', '/programs/kids-and-teens': 'challah-kid', '/programs/bar-bat-mitzvah': 'torah-yad', '/programs/bay-kosher': 'kosher-delivery',
   '/holidays/chanukah': 'chanukah-lighting', '/holidays/rosh-hashanah': 'apples-honey', '/holidays/yom-kippur': 'tallit-siddur', '/holidays/passover': 'seder-plate', '/holidays/shavuot': 'torah-yad', '/holidays/simchat-torah': 'torah-ark',
-  '/shabbat': 'shabbat-table', '/about': 'challah-breaking', '/welcome': 'shabbat-dinner', '/our-area': 'diablo-hills', '/sponsor-a-kiddush': 'kiddush-cup', '/chai-club': 'challah-breaking', '/sponsor': 'kiddush-cup',
+  '/shabbat': 'shabbat-table', '/about': 'diablo-hills', '/welcome': 'shabbat-dinner', '/our-area': 'diablo-hills', '/sponsor-a-kiddush': 'kiddush-cup', '/sponsor': 'kiddush-cup',
   '/learn/mezuzah': 'mezuzah', '/learn/shabbat': 'shabbat-table', '/learn/challah': 'challah-close', '/learn/tefillin': 'tefillin', '/learn/shofar': 'shofar', '/learn/passover-seder': 'seder-plate', '/learn/matzah': 'matzah',
   '/learn/chanukah-menorah': 'menorah-glow', '/learn/torah': 'torah-scroll', '/learn/bar-mitzvah': 'torah-yad', '/learn/kiddush': 'kiddush-cup', '/learn/shabbat-candles': 'shabbat-table', '/learn/hebrew-school-in-lamorinda': 'kids-crafts',
-  '/learn/shabbat-in-lamorinda': 'shabbat-dinner', '/learn/moving-to-lamorinda': 'lamorinda-hills', '/learn/chanukah-for-kids': 'family-menorah', '/learn/dreidel': 'dreidel-kids',
+  '/learn/shabbat-in-lamorinda': 'shabbat-dinner', '/learn/moving-to-lamorinda': 'lamorinda-hills', '/learn/chanukah-for-kids': 'family-menorah', '/learn/chanukah-foods': 'sufganiyot', '/learn/dreidel': 'dreidel-kids',
 };
 const photoForPath = (p) => (PHOTOS[p] ? '/media/photos/' + PHOTOS[p] + '.jpg' : '');
 // Add pictures to a finished page: every card tile, and a large one at the top of the page (a photo when there is one).

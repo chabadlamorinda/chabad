@@ -39,8 +39,12 @@
   // Header: "Sign in" becomes "My account" once signed in on this device.
   // Footer: on phones the link groups start folded; on wide screens they always stay open.
   var cols = document.querySelectorAll('.ftr-col');
-  if (window.matchMedia('(max-width: 699px)').matches) [].forEach.call(cols, function (d) { d.open = false; });
-  else [].forEach.call(cols, function (d) { d.querySelector('summary').addEventListener('click', function (e) { e.preventDefault(); }); });
+  // (also when the screen turns or the window is resized, so the links never stay hidden on a wide screen)
+  var narrow = window.matchMedia('(max-width: 699px)');
+  var fold = function () { [].forEach.call(cols, function (d) { d.open = !narrow.matches; }); };
+  fold();
+  if (narrow.addEventListener) narrow.addEventListener('change', fold); else if (narrow.addListener) narrow.addListener(fold);
+  [].forEach.call(cols, function (d) { d.querySelector('summary').addEventListener('click', function (e) { if (!narrow.matches) e.preventDefault(); }); });
   // Share with a friend: the phone's own share menu where there is one, and copy link.
   [].forEach.call(document.querySelectorAll('[data-share]'), function (box) {
     var nat = box.querySelector('[data-share-native]'), url = box.getAttribute('data-url'), title = box.getAttribute('data-title');
