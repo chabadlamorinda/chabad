@@ -6,7 +6,7 @@ The Android app is a thin shell around the live website (a "Trusted Web Activity
 - Installable web app: manifest, icons (including the Android adaptive icon), offline support. Verified in Chrome.
 - Privacy policy (English and Hebrew) at `/pushka/privacy.html`, support page at `/pushka/support.html`.
 - The verification file Google checks, at `/.well-known/assetlinks.json` (filled in from the `ANDROID_SHA256` setting in Render).
-- Store assets in `store/android/`: 512 icon, 1024x500 feature graphic, 7 phone screenshots (1080x1920).
+- Store assets in `store/android/`: 512 icon, 1024x500 feature graphic, 7 phone screenshots (1080x2160).
 - Listing text in English and Hebrew: `store/listing.md`.
 
 ## Your steps

@@ -20,6 +20,7 @@ const { createKiddush } = require('./kiddush.js');
 const { mountSite } = require('./site/index.js');
 
 const ROOT = path.join(__dirname, '..');
+// <KIT:FUNDS>
 const FUND_NAMES = {
   general: 'General Fund',
   chai: 'Chai Club',
@@ -32,6 +33,7 @@ const FUND_NAMES = {
   children: 'Children Events',
   pledge: 'Pledge',
 };
+// </KIT:FUNDS>
 // Chai Club (monthly donors). A gift of exactly a boundary amount belongs to the higher level.
 const CLUB_LEVELS = [['platinum', 72000], ['gold', 36000], ['silver', 18000], ['bronze', 7200]];
 const clubLevel = (cents) => { const l = CLUB_LEVELS.find(([, min]) => cents >= min); return l ? l[0] : null; };
@@ -354,6 +356,23 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     }
     res.json(clubCache.data);
   }));
+  // ---- community counter (anonymous: only totals) and announcements the Rabbi writes in the staff area ----
+  const mem = { days: new Map(), ann: [] }, today = () => require('./scheduler.js').ptParts(new Date()).ymd;
+  api.post('/community/coins', limit('community', 90, 10 * 60 * 1000), wrap(async (req, res) => {
+    const n = Math.min(Math.max(parseInt(req.body && req.body.n, 10) || 0, 0), 50), cents = Math.min(Math.max(Math.round(Number(req.body && req.body.cents) || 0), 0), 100000);
+    if (n > 0) { if (store) await store.addCommunity(today(), n, cents); else { const d = mem.days.get(today()) || { coins: 0 }; d.coins += n; mem.days.set(today(), d); } }
+    res.json({ ok: true });
+  }));
+  api.get('/community', limit('community-read', 120, 10 * 60 * 1000), wrap(async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    const since = require('../pushka/hebdate.js').addDays(today(), -6);
+    let coins = 0; if (store) coins = (await store.communitySince(since)).coins; else for (const [d, v] of mem.days) if (d >= since) coins += v.coins;
+    res.json({ weekCoins: coins });
+  }));
+  api.get('/announcements', limit('announce', 120, 10 * 60 * 1000), wrap(async (req, res) => {
+    const list = store ? await store.getKv('announcements', []) : mem.ann, now = today();
+    res.json({ items: (Array.isArray(list) ? list : []).filter((a) => !a.until || a.until >= now).slice(0, 4) });
+  }));
   api.get('/subscriptions', needStripe, auth, wrap(async (req, res) => {
     res.json({ subscriptions: (await activeSubs(req.customerId)).map(subView) });
   }));
@@ -382,9 +401,9 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/api/kiddush', kapi);
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  const adminOn = mountAdmin(app, { store, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: (r, ctx) => { kiddush.mountAdmin(r, ctx); site.mountAdmin(r, ctx); } });
+  const adminOn = mountAdmin(app, { funds: FUND_NAMES, store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: (r, ctx) => { kiddush.mountAdmin(r, ctx); site.mountAdmin(r, ctx); }, levelOf: clubLevel });
   if (!adminOn) { // explain instead of a bare "Not found" when the staff area has not been switched on yet
-    app.get(/^\/admin(\/.*)?$/, (req, res) => res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Staff area not set up yet</title><body style="font:18px/1.5 Georgia,serif;max-width:560px;margin:8vh auto;padding:0 20px;color:#3b2412"><h1 style="font-weight:400">Staff area not set up yet</h1><p>The staff page switches on once two settings are added in Render (your hosting account):</p><ol><li><b>DATABASE_URL</b>: the address of your database (for example a free one from neon.com)</li><li><b>ADMIN_PASSWORD</b>: a password of 12 or more characters</li></ol><p>After you save them, Render restarts and this page becomes your sign-in page. Step-by-step: <code>store/rabbi-setup.md</code>.</p>'));
+    app.get(/^\/admin(\/.*)?$/, (req, res) => res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Staff area not set up yet</title><body style="font:18px/1.5 Georgia,serif;max-width:560px;margin:8vh auto;padding:0 20px;color:#3b2412"><h1 style="font-weight:400">Staff area not set up yet</h1><p>The staff page switches on once this setting is added in Render (your hosting account):</p><ol><li><b>ADMIN_PASSWORD</b>: a password of 12 or more characters</li></ol><p>Some screens (yahrzeits, members, sponsorships) also need <b>DATABASE_URL</b>, the address of your database (for example a free one from neon.com).</p><p>After you save it, Render restarts and this page becomes your sign-in page. Step-by-step: <code>store/rabbi-setup.md</code>.</p>'));
   }
 
   // ---------- website (only the public files are served) ----------

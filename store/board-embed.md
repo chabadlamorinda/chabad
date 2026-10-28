@@ -3,7 +3,7 @@
 The board is a page served by the app, so it updates itself whenever someone joins, changes level or leaves. Only people who chose "Show my name on the board" are named. Amounts are never shown.
 
 **Board address:** `https://chabad-lamorinda-app.onrender.com/board/` (use your own address once you connect a custom domain).
-Add `?embed=1` for the version without a background (for embedding) and `&lang=he` for Hebrew.
+Add `?embed=1` for the version without a page background (for embedding) and `&lang=he` for Hebrew.
 
 ## Option A: this repo's website
 `chai-club.html` is already in the repo and linked from the home page menu ("Chai Club"). If your app address differs, change it in that file (two places).

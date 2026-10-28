@@ -8,7 +8,8 @@
     "start": "node server/index.js",
     "test": "node --test server/server.test.js server/members.test.js server/kiddush.test.js server/site.test.js",
     "facebook:post": "node scripts/facebook-post.js",
-    "dev": "node scripts/dev.js"
+    "dev": "node scripts/dev.js",
+    "kit": "node scripts/make-pushka-kit.js"
   },
   "engines": {
     "node": ">=20"

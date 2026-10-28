@@ -1,4 +1,5 @@
 'use strict';
+process.env.PUSHKA_TIMEZONE = 'America/' + 'Los_Angeles'; // the reminder tests use fixed Pacific-time instants
 // Needs a Postgres: starts a throwaway one automatically (or uses TEST_DATABASE_URL).
 const test = require('node:test');
 const assert = require('node:assert/strict');
@@ -236,4 +237,38 @@ test('yahrzeit reminders default to a month, a week and a day before', async () 
   assert.equal(await sch.tick(now), 1); assert.match(sent[0].body, /about a month/);
   assert.equal(await sch.tick(new Date(Date.UTC(2026, 10, 7, 16, 5))), 1); // 7 days before (pacific 8:05)
   assert.equal(await sch.tick(new Date(Date.UTC(2026, 10, 13, 16, 5))), 1); // 1 day before
+});
+
+test('community counter and announcements', async () => {
+  assert.equal((await call('POST', '/api/community/coins', { n: 3, cents: 540 })).status, 200);
+  assert.equal((await call('POST', '/api/community/coins', { n: 999999, cents: -5 })).status, 200); // clamped, never negative
+  const w = (await call('GET', '/api/community')).json.weekCoins; assert.equal(w, 53);
+  assert.deepEqual((await call('GET', '/api/announcements')).json.items, []);
+  const a = await adminLogin();
+  assert.equal((await call('PUT', '/admin/api/announcements', { items: [{ title: '' }] }, { headers: a })).status, 400);
+  const items = [{ kind: 'cause', title: 'Shabbos meals', body: 'Help us feed 60 families', goal: 1800, raised: 900, fund: 'general', until: '2999-01-01' }, { kind: 'match', title: 'Old match', until: '2000-01-01', fund: 'nope' }];
+  const saved = await call('PUT', '/admin/api/announcements', { items }, { headers: a }); assert.equal(saved.status, 200); assert.equal(saved.json.items[1].fund, '');
+  const pub = (await call('GET', '/api/announcements')).json.items; assert.equal(pub.length, 1); assert.equal(pub[0].title, 'Shabbos meals'); assert.equal(pub[0].raised, 900);
+  assert.equal((await call('PUT', '/admin/api/announcements', { items }, {})).status, 401);
+});
+
+test('scheduler: custom reminders, one-off, weekly summary, streak rescue, birthdays', async () => {
+  const sub = (prefs) => call('POST', '/api/push/subscribe', { subscription: { endpoint: 'https://push.example/' + Math.random().toString(36).slice(2), keys: { p256dh: 'a', auth: 'b' } }, prefs });
+  const sch = createScheduler({ store, send: async (s, p) => { sent.push(p); }, getCandles: async () => [], log: { error() {} } });
+  await sub({ lang: 'en', custom: [{ id: 'c1', time: '08:00', days: 'daily', text: 'Good morning coin' }, { id: 'c2', time: '09:00', days: 'once', date: '2026-10-21', text: 'Travel coin' }, { id: 'c3', time: '10:00', days: 'chai', text: 'Chai day' }, { id: 'bad', time: 'xx', days: 'daily' }] });
+  // Wed 21 Oct 2026, 8:05 am Pacific
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 21, 15, 5))), 1); assert.equal(sent[0].body, 'Good morning coin');
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 21, 15, 6))), 0); // once only
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 21, 16, 5))), 1); assert.equal(sent[1].body, 'Travel coin'); // 9:05, one-off on its date
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 22, 16, 5))), 0); // next day: one-off gone, daily one not yet due
+  await store.reset(); sent.length = 0;
+  await sub({ lang: 'en', weekly: { on: true }, week: { coins: 4, sum: 7.2 } });
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 25, 17, 5))), 1); assert.match(sent[0].body, /4 coins/); // Sunday 10:05
+  await store.reset(); sent.length = 0;
+  await sub({ lang: 'he', streak: { on: true }, streakN: 12, lastCoin: '' });
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 22, 3, 5))), 1); assert.match(sent[0].body, /12/); // Wed 8:05 pm Pacific, 12-day streak
+  await store.reset(); sent.length = 0;
+  await sub({ lang: 'en', tz: 'America/' + 'New_York', dates: [{ id: 'd1', name: 'Rachel', kind: 'birthday', m: 10, d: 28 }] });
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 21, 12, 5))), 1); assert.match(sent[0].title, /Rachel.*7 days/); // 8:05 am Eastern, 7 days before
+  assert.equal(await sch.tick(new Date(Date.UTC(2026, 9, 28, 12, 5))), 1); assert.match(sent[1].title, /Today/);
 });

@@ -1,0 +1,1 @@
+https://<your-app-address>/pushka/privacy.html   (replace with your final address, e.g. https://pushka.chabadoflamorinda.com/pushka/privacy.html)

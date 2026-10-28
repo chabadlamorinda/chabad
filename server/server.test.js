@@ -1,4 +1,5 @@
 'use strict';
+process.env.PUSHKA_TIMEZONE = 'America/' + 'Los_Angeles'; // the reminder tests use fixed Pacific-time instants
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { createApp } = require('./index.js');
@@ -141,14 +142,14 @@ test('payment lookup only returns your own payments', async (t) => {
 
 test('monthly gift: creates product + subscription, lists it, cancels it', async (t) => {
   const c = await signedIn(t); c.stripe.addCard(c.token.split('.')[0]);
-  const r = await c.call('POST', '/api/subscribe', gift({ amount: 18, fund: 'preschool', idem: 'idem-sub-00000000000001' }), c.token);
+  const r = await c.call('POST', '/api/subscribe', gift({ amount: 18, fund: 'holidays', idem: 'idem-sub-00000000000001' }), c.token);
   assert.equal(r.status, 200); assert.equal(r.json.status, 'active'); assert.equal(r.json.receiptUrl, 'https://invoice.stripe.com/i/test');
-  assert.ok(c.stripe._st.products['pushka-monthly-preschool']);
+  assert.ok(c.stripe._st.products['pushka-monthly-holidays']);
   const [, p] = c.stripe._st.calls.find((x) => x[0] === 'subscriptions.create');
   assert.equal(p.items[0].price_data.unit_amount, 1800); assert.deepEqual(p.items[0].price_data.recurring, { interval: 'month' });
   assert.equal(p.off_session, true); assert.equal(p.payment_behavior, 'error_if_incomplete');
   const list = await c.call('GET', '/api/subscriptions', null, c.token);
-  assert.equal(list.json.subscriptions.length, 1); assert.equal(list.json.subscriptions[0].amount, 18); assert.equal(list.json.subscriptions[0].fund, 'preschool'); assert.equal(list.json.subscriptions[0].next, 1893456000000);
+  assert.equal(list.json.subscriptions.length, 1); assert.equal(list.json.subscriptions[0].amount, 18); assert.equal(list.json.subscriptions[0].fund, 'holidays'); assert.equal(list.json.subscriptions[0].next, 1893456000000);
   assert.equal((await c.call('DELETE', '/api/subscriptions/' + r.json.id, null, c.token)).status, 200);
   assert.equal((await c.call('GET', '/api/subscriptions', null, c.token)).json.subscriptions.length, 0);
 });
@@ -187,9 +188,9 @@ test('rate limit: too many donate attempts get 429', async (t) => {
   assert.equal(last.status, 429);
 });
 
-test('every website fund is accepted; old fund ids are not', async (t) => {
+test('every configured fund is accepted; unknown fund ids are not', async (t) => {
   const c = await signedIn(t); c.stripe.addCard(c.token.split('.')[0]);
-  const ids = ['general', 'chai', 'preschool', 'market', 'building', 'holidays', 'synagogue', 'endyear', 'children', 'pledge'];
+  const ids = Object.keys(require('./index.js').FUND_NAMES); assert.ok(ids.includes('chai') && ids.includes('general'));
   for (const [i, fund] of ids.entries()) assert.equal((await c.call('POST', '/api/donate', gift({ fund, idem: 'idem-fund-0000000000' + String(i).padStart(2, '0') }), c.token)).status, 200, fund);
   assert.equal((await c.call('POST', '/api/donate', gift({ fund: 'school' }), c.token)).json.code, 'invalid_fund');
 });
@@ -269,5 +270,25 @@ test('chai club: levels, board shows only chosen names, replace switches level, 
   b = (await c.call('GET', '/api/club')).json; assert.equal(b.counts.bronze, 1); assert.ok(!JSON.stringify(b).includes('Secret'));
   assert.equal(b.members[0].level, 'platinum');
   const r = await fetch(c.base + '/api/club'); assert.equal(r.headers.get('access-control-allow-origin'), '*');
-  const page = await fetch(c.base + '/board/'); assert.equal(page.status, 200); assert.match(page.headers.get('content-security-policy'), /frame-ancestors 'self' https:\/\/www\.chabadoflamorinda\.com/);
+  const page = await fetch(c.base + '/board/'); assert.equal(page.status, 200); assert.match(page.headers.get('content-security-policy'), /frame-ancestors 'self' https:\/\//);
+});
+
+test('admin: monthly donors screen lists people with levels and contact details (private)', async (t) => {
+  const stripe = fakeStripe();
+  const app = createApp({ stripe, publishableKey: 'pk_test_abc', sessionSecret: 'a'.repeat(32), log: { error() {} }, adminPassword: 'correct horse battery' });
+  const server = await new Promise((r) => { const sv = app.listen(0, () => r(sv)); }); t.after(() => server.close());
+  const base = 'http://127.0.0.1:' + server.address().port;
+  const cus = await stripe.customers.create({ name: 'Dina Cohen', email: 'dina@example.com' }); stripe.addCard(cus.id);
+  const token = require('crypto').createHmac('sha256', 'a'.repeat(32)).update(cus.id).digest('base64url');
+  const post = (path, body, headers = {}) => fetch(base + path, { method: 'POST', headers: { 'content-type': 'application/json', ...headers }, body: JSON.stringify(body) });
+  const sub = (amount, club, fund) => post('/api/subscribe', { amount, fund, idem: 'idem-adm-' + amount + '-xxxxxxxxxx', club }, { authorization: 'Bearer ' + cus.id + '.' + token });
+  assert.equal((await sub(360, { name: 'The Cohens', show: true }, 'chai')).status, 200);
+  assert.equal((await sub(50, { name: 'x', show: true }, 'chai')).status, 200);
+  assert.equal((await fetch(base + '/admin/api/donors')).status, 401);
+  const login = await post('/admin/api/login', { password: 'correct horse battery' });
+  const h = { cookie: login.headers.get('set-cookie').split(';')[0] };
+  const j = await (await fetch(base + '/admin/api/donors', { headers: h })).json();
+  assert.equal(j.donors.length, 2); assert.equal(j.donors[0].level, 'gold'); assert.equal(j.donors[0].email, 'dina@example.com'); assert.equal(j.donors[0].onBoard, true);
+  assert.equal(j.donors[1].level, null); assert.equal(j.byLevel.gold.count, 1); assert.equal(j.byLevel.gold.monthly, 360); assert.equal(j.total.count, 2);
+  assert.equal((await fetch(base + '/admin/api/members', { headers: h })).status, 503); // no database connected
 });

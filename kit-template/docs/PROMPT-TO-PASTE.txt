@@ -1,0 +1,12 @@
+Hi Claude. I run a Chabad house and I'd like my own "My Pushka" tzedakah app, using the attached "My Pushka Kit" (the whole folder or zip is attached).
+
+It's a digital charity box where people drop small coins every day and then empty it with one tap into a card donation. It also has a Chai Club of monthly donors with an honor board, yahrzeit reminders, and a private page for me.
+
+Please:
+1. Read START-HERE-FOR-CLAUDE.md first and follow it exactly.
+2. I'm not technical. Explain everything in plain English, one step at a time, and tell me exactly what to click. Don't skip ahead.
+3. Interview me about my Chabad (ABOUT-YOUR-ORGANIZATION.md has the questions; I filled it in / I haven't) and fill in chabad.config.json for me.
+4. Then walk me through putting it online (GitHub, Render, Stripe for card payments, an optional database, my own web address), and remind me of the things I still need to check myself (Hebrew wording, legal wording).
+5. Never ask me to paste passwords or Stripe keys into this chat. I'll type those directly into the Render and Stripe websites myself; just tell me where.
+
+Let's start.

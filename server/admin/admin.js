@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-  var app = document.getElementById('app'), tab = 'yahrzeits';
+  var app = document.getElementById('app'), tab = 'donors';
   function el(tag, attrs, kids) {
     var n = document.createElement(tag);
     for (var k in (attrs || {})) { if (k === 'text') n.textContent = attrs[k]; else if (k === 'class') n.className = attrs[k]; else if (k.slice(0, 2) === 'on') n.addEventListener(k.slice(2), attrs[k]); else n.setAttribute(k, attrs[k]); }
@@ -17,7 +17,7 @@
     app.appendChild(el('h1', { text: 'Rabbi’s desk' }));
     app.appendChild(el('div', { class: 'small', text: 'Chabad of Lamorinda · private' }));
     var nav = el('nav');
-    [['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
+    [['donors', 'Monthly donors'], ['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['announce', 'Announcements'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
       nav.appendChild(el('button', { class: tab === t[0] ? 'on' : '', text: t[1], onclick: function () { tab = t[0]; load(); } }));
     });
     nav.appendChild(el('a', { href: '/admin/kiddush/', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Kiddush board' }));
@@ -36,6 +36,54 @@
   }
   function wrapErr(p) { return p.catch(function (e) { if (e.status === 401) { login(); return null; } throw e; }); }
 
+  var LV = { platinum: 'Platinum', gold: 'Gold', silver: 'Silver', bronze: 'Bronze' }, LC = { platinum: '#3f6490', gold: '#a06f24', silver: '#7d8590', bronze: '#8a5427' };
+  function money(n) { return '$' + (Math.round(n * 100) / 100).toLocaleString('en-US', { maximumFractionDigits: 2 }); }
+  function donors() {
+    var box = el('div');
+    wrapErr(api('GET', '/donors')).then(function (j) {
+      if (!j) return;
+      var sum = el('div', 'row');
+      ['platinum', 'gold', 'silver', 'bronze'].forEach(function (l) {
+        var c = el('div', 'card'); c.style.borderTop = '4px solid ' + LC[l]; c.style.minWidth = '150px';
+        c.appendChild(el('strong', { text: LV[l] })); c.appendChild(el('div', { text: j.byLevel[l].count + (j.byLevel[l].count === 1 ? ' donor' : ' donors') }));
+        c.appendChild(el('div', { class: 'small', text: money(j.byLevel[l].monthly) + ' / month' })); sum.appendChild(c);
+      });
+      box.appendChild(sum);
+      box.appendChild(el('p', { class: 'small', text: 'All monthly gifts: ' + j.total.count + ' people, ' + money(j.total.monthly) + ' a month (before Stripe fees). Private to you: amounts and contact details are never shown on the public board.' }));
+      if (!j.donors.length) box.appendChild(el('p', { text: 'No monthly donors yet.' }));
+      j.donors.forEach(function (d) {
+        var lvl = d.level ? el('span', { class: 'pill', text: LV[d.level] }) : el('span', { class: 'pill', text: d.club ? 'Under $72 (no medal)' : 'Other fund' });
+        if (d.level) lvl.style.borderColor = LC[d.level];
+        box.appendChild(el('div', { class: 'card' }, [
+          el('div', { class: 'row' }, [el('strong', { text: d.name || d.email || 'Unnamed' }), lvl, el('span', { class: 'small', text: money(d.monthly) + ' / month' })]),
+          el('div', { class: 'small', text: [d.email, d.phone].filter(Boolean).join(' · ') }),
+          el('div', { class: 'small', text: (d.club ? (d.onBoard ? 'On the board as “' + d.boardName + '”' : 'Counted, not named on the board') : 'Fund: ' + d.fund) + ' · since ' + new Date(d.since).toLocaleDateString() + (d.next ? ' · next gift ' + new Date(d.next).toLocaleDateString() : '') })
+        ]));
+      });
+    }).catch(function (e) { box.textContent = e.message; });
+    return box;
+  }
+  var FUND_LIST = [];
+  function announce() {
+    var box = el('div'), items = [], status = el('span', { class: 'small' });
+    function draw() {
+      box.textContent = '';
+      box.appendChild(el('p', { class: 'small', text: 'These appear on the home screen of everyone using the app. Use them for a matching day, a cause with a progress bar, or a short thank-you note. Up to 6; expired ones hide themselves.' }));
+      items.forEach(function (a, i) {
+        function f(label, key, type, ph) { var inp = el(type === 'area' ? 'textarea' : 'input', { 'aria-label': label, placeholder: label + (ph ? ' ' + ph : '') }); if (type === 'area') inp.rows = 2; else if (type) inp.type = type; inp.value = a[key] == null ? '' : a[key]; inp.addEventListener('input', function () { a[key] = type === 'number' ? Number(inp.value) : inp.value; }); return el('div', { style: 'margin:6px 0' }, [el('div', { class: 'small', text: label }), inp]); }
+        var kind = el('select', { 'aria-label': 'Type' }); [['match', 'Matching day'], ['cause', 'Cause with progress bar'], ['impact', 'Thank-you / impact note']].forEach(function (k) { var o = el('option', { value: k[0], text: k[1] }); if (a.kind === k[0]) o.selected = true; kind.appendChild(o); });
+        kind.addEventListener('change', function () { a.kind = kind.value; });
+        var fund = el('select', { 'aria-label': 'Fund' }); [['', 'No fund (just a message)']].concat(FUND_LIST).forEach(function (k) { var o = el('option', { value: k[0], text: k[1] }); if (a.fund === k[0]) o.selected = true; fund.appendChild(o); });
+        fund.addEventListener('change', function () { a.fund = fund.value; });
+        box.appendChild(el('div', { class: 'card' }, [kind, f('Title', 'title'), f('Message', 'body', 'area'), f('Goal in dollars (cause only)', 'goal', 'number'), f('Raised so far in dollars (cause only)', 'raised', 'number'), f('Hide after this date (optional)', 'until', 'date'), el('div', { class: 'small', text: 'Button gives to:' }), fund,
+          el('p', {}, [el('button', { text: 'Remove', onclick: function () { items.splice(i, 1); draw(); } })])]));
+      });
+      box.appendChild(el('p', {}, [el('button', { text: 'Add announcement', onclick: function () { if (items.length < 6) { items.push({ kind: 'impact', title: '', body: '', goal: 0, raised: 0, fund: '', until: '' }); draw(); } } }), ' ',
+        el('button', { class: 'on', text: 'Save', onclick: function () { status.textContent = 'Saving…'; api('PUT', '/announcements', { items: items }).then(function (j) { items = j.items; status.textContent = 'Saved'; }).catch(function (e) { status.textContent = e.message; }); } }), ' ', status]));
+    }
+    wrapErr(api('GET', '/funds').then(function (f) { FUND_LIST = f.funds.map(function (x) { return [x.id, x.name]; }); return api('GET', '/announcements'); })).then(function (j) { if (!j) return; items = j.items; draw(); }).catch(function (e) { box.textContent = e.message; });
+    return box;
+  }
   function yahrzeits() {
     var box = el('div');
     wrapErr(api('GET', '/yahrzeits?days=60')).then(function (j) {
@@ -98,7 +146,7 @@
       } }), out]);
   }
   function load() {
-    var views = { yahrzeits: yahrzeits, members: members, payments: payments, push: push };
+    var views = { announce: announce, donors: donors, yahrzeits: yahrzeits, members: members, payments: payments, push: push };
     shell(views[tab]());
   }
   api('GET', '/me').then(load).catch(function () { login(); });

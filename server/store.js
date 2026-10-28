@@ -40,7 +40,9 @@ CREATE TABLE IF NOT EXISTS payment_events (
   event_id TEXT PRIMARY KEY, type TEXT NOT NULL, customer_id TEXT, email TEXT NOT NULL DEFAULT '',
   amount_cents INT NOT NULL DEFAULT 0, message TEXT NOT NULL DEFAULT '', resolved BOOLEAN NOT NULL DEFAULT FALSE,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);`;
+);
+CREATE TABLE IF NOT EXISTS kv (key TEXT PRIMARY KEY, value JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS community_days (day DATE PRIMARY KEY, coins INT NOT NULL DEFAULT 0, cents BIGINT NOT NULL DEFAULT 0);`;
 
 function createStore(url, opts = {}) {
   const pool = new Pool({ connectionString: url, max: 5, ssl: /sslmode=require/.test(url) || process.env.DATABASE_SSL === '1' ? { rejectUnauthorized: false } : undefined, ...opts });
@@ -54,7 +56,11 @@ function createStore(url, opts = {}) {
     pool,
     migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); await q(OUTREACH_SCHEMA); },
     close: () => pool.end(),
-    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, family, rsvps, login_codes, submissions, social_posts, email_log, form_responses, chat_questions, email_unsubscribes, qa, member_activity, outreach_done CASCADE'), // tests only
+    reset: async () => { // tests only (the shareable kit has no website tables)
+      const want = ['members', 'yahrzeits', 'push_subs', 'push_log', 'followups', 'payment_events', 'family', 'rsvps', 'login_codes', 'submissions', 'social_posts', 'email_log', 'form_responses', 'chat_questions', 'email_unsubscribes', 'qa', 'member_activity', 'outreach_done', 'kv', 'community_days'];
+      const have = (await q('SELECT tablename FROM pg_tables WHERE schemaname = current_schema() AND tablename = ANY($1)', [want])).rows.map((r) => r.tablename);
+      if (have.length) await q(`TRUNCATE ${have.join(', ')} CASCADE`);
+    },
 
     // ----- members -----
     async createMember(m) {
@@ -102,6 +108,12 @@ function createStore(url, opts = {}) {
     listFollowups: () => rows("SELECT yahrzeit_id, to_char(occurrence,'YYYY-MM-DD') AS occurrence, note, done_at FROM followups"),
 
     // ----- payment events (from Stripe webhooks) -----
+    // ----- small shared settings (announcements) and the anonymous community coin counter -----
+    async getKv(key, fallback = null) { const r = await one('SELECT value FROM kv WHERE key=$1', [key]); return r ? r.value : fallback; },
+    setKv: (key, value) => q('INSERT INTO kv (key, value) VALUES ($1,$2) ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value, updated_at=now()', [key, JSON.stringify(value)]),
+    addCommunity: (day, coins, cents) => q('INSERT INTO community_days (day, coins, cents) VALUES ($1,$2,$3) ON CONFLICT (day) DO UPDATE SET coins=community_days.coins+EXCLUDED.coins, cents=community_days.cents+EXCLUDED.cents', [day, coins, cents]),
+    async communitySince(day) { const r = await one("SELECT COALESCE(sum(coins),0)::int AS coins, COALESCE(sum(cents),0)::bigint AS cents FROM community_days WHERE day >= $1", [day]); return { coins: r.coins, cents: Number(r.cents) }; },
+
     async recordPaymentEvent(e) {
       return (await q('INSERT INTO payment_events (event_id, type, customer_id, email, amount_cents, message) VALUES ($1,$2,$3,$4,$5,$6) ON CONFLICT DO NOTHING', [e.id, e.type, e.customerId || null, e.email || '', e.amount || 0, e.message || ''])).rowCount === 1;
     },

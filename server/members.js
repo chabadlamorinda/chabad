@@ -1,6 +1,7 @@
 // Members (name/email/phone), yahrzeit sync, and push-notification subscriptions.
 'use strict';
 const H = require('../pushka/hebdate.js');
+const { validTz } = require('./scheduler.js');
 
 const clean = (s, n) => String(s == null ? '' : s).replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, n);
 const validEmail = (e) => /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/.test(e) && e.length <= 254;
@@ -25,6 +26,12 @@ function sanitizePrefs(p) {
     streak: { on: !!(p.streak && p.streak.on) },
     yahrzeit: { on: !!(p.yahrzeit && p.yahrzeit.on), leads },
     lastCoin: /^\d{4}-\d{2}-\d{2}$/.test(p.lastCoin || '') ? p.lastCoin : '',
+    streakN: Math.min(Math.max(parseInt(p.streakN, 10) || 0, 0), 5000),
+    tz: validTz(p.tz) ? p.tz : '',
+    weekly: { on: !!(p.weekly && p.weekly.on) },
+    week: { coins: Math.min(Math.max(parseInt(p.week && p.week.coins, 10) || 0, 0), 10000), sum: Math.min(Math.max(Number(p.week && p.week.sum) || 0, 0), 1e7) },
+    custom: (Array.isArray(p.custom) ? p.custom : []).slice(0, 12).map((c) => ({ id: clean(c && c.id, 20).replace(/[^A-Za-z0-9_-]/g, ''), time: /^\d{2}:\d{2}$/.test(c && c.time) ? c.time : '', days: ['daily', 'weekdays', 'friday', 'roshchodesh', 'chai', 'erevrc', 'prefast', 'once'].includes(c && c.days) ? c.days : '', date: /^\d{4}-\d{2}-\d{2}$/.test((c && c.date) || '') ? c.date : '', text: clean(c && c.text, 120) })).filter((c) => c.id && c.time && c.days && (c.days !== 'once' || c.date)),
+    dates: (Array.isArray(p.dates) ? p.dates : []).slice(0, 20).map((d) => ({ id: clean(d && d.id, 20).replace(/[^A-Za-z0-9_-]/g, ''), name: clean(d && d.name, 60), kind: clean(d && d.kind, 20), m: parseInt(d && d.m, 10), d: parseInt(d && d.d, 10) })).filter((d) => d.id && d.name && d.m >= 1 && d.m <= 12 && d.d >= 1 && d.d <= 31),
   };
 }
 
