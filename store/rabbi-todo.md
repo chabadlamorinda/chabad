@@ -4,6 +4,9 @@ When you say "I'm at a computer", Claude goes through this list with you one ite
 
 Tick an item off by telling Claude it's done; Claude will check it works.
 
+## Next time you're at a computer (asked for Oct 28)
+**First: turn on real answers in the chat** (item 5). About 7 minutes: console.anthropic.com (account, $10 prepaid credit, a $10 monthly limit, Create Key) then Render, chabad-lamorinda-app, Environment, add `ANTHROPIC_API_KEY`, Save. Then Claude tests the chat on the live site.
+
 ## At a computer
 1. **Database** (needed for sign-in, RSVPs, the Rabbi area lists and "Requests from the website"). Free at neon.tech; paste one code into Render as `DATABASE_URL`. Skip if already done; Claude will check.
 2. **Password for the Rabbi area** (`ADMIN_PASSWORD` in Render). Skip if you already sign in at /admin.
