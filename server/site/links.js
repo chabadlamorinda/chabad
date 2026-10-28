@@ -51,7 +51,7 @@ function friendlyLinks(X, html) {
   const C = X.C, t = X.t, name = (p) => {
     const m = /^\/(learn|help|holidays|programs|forms)\/([a-z0-9-]+)$/.exec(p);
     if (m) { const list = { learn: C.learn, help: C.help || [], holidays: C.holidays, programs: C.programs, forms: C.forms || [] }[m[1]], x = list.find((y) => (y.slug || y.id) === m[2]); return x && (x.title || x.name); }
-    const FIXED = { '/kaddish': 'Kaddish', '/tehillim': 'Tehillim for every occasion', '/sponsor': 'Sponsor in honor or memory', '/parsha': "This week's Torah portion", '/contact': 'Contact', '/events': 'Upcoming events', '/shabbat': 'Shabbat times and services in Lafayette', '/donate': 'Donate', '/account': 'My account', '/help': "We're here for you", '/learn': 'Learn about Judaism', '/calendar': 'Jewish calendar', '/community': 'Community board', '/welcome': 'New to the area?', '/sponsor-a-kiddush': 'Sponsor a Kiddush', '/chai-club': 'Chai Club', '/pushka/': 'My Pushka app' };
+    const FIXED = { '/kaddish': 'Kaddish', '/tehillim': 'Tehillim for every occasion', '/sponsor': 'Sponsor in honor or memory of a loved one', '/parsha': "This week's Torah portion", '/contact': 'Contact', '/events': 'Upcoming events', '/shabbat': 'Shabbat times and services in Lafayette', '/donate': 'Donate', '/account': 'My account', '/help': "We're here for you", '/learn': 'Learn about Judaism', '/calendar': 'Jewish calendar', '/community': 'Community board', '/welcome': 'New to the area?', '/sponsor-a-kiddush': 'Sponsor a Kiddush', '/chai-club': 'Chai Club', '/pushka/': 'My Pushka app' };
     return FIXED[p] && t(FIXED[p]);
   };
   return html.replace(/<a href="(\/[a-z0-9/-]*)">\1<\/a>/g, (m, p) => { const n = name(p); return n ? `<a href="${p}">${esc(n)}</a>` : m; });

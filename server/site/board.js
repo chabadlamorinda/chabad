@@ -52,7 +52,7 @@ ${items.length ? items.map((i) => `<article class="card post"><p class="eyebrow"
 <div class="grid">
 ${tile('/account', 'Create your free account', 'Save your family once and RSVP to anything in one tap.')}
 ${tile('/events', 'Come to an event', 'Bring a friend. Every Jew is welcome.')}
-${tile('/sponsor', 'Sponsor in honor or memory', 'Mark a yahrzeit, birthday or simcha with a Kiddush, a Shabbat dinner or a class.')}
+${tile('/sponsor', 'Sponsor in honor or memory of a loved one', 'Mark a yahrzeit, birthday or simcha with a Kiddush, a Shabbat dinner or a class.')}
 ${tile('/community#share', 'Share your news', 'Births, weddings, bar and bat mitzvahs, and notices for the community.')}
 ${tile('/programs/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.')}
 ${tile('/contact?about=Host%20a%20Shabbat%20meal', 'Host a Shabbat meal', 'Open your table to a newcomer or a student. We will make the match.')}

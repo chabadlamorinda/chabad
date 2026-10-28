@@ -43,7 +43,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
 <h2 class="sr-only">${esc(t('All life situations'))}</h2><div class="grid help-grid">${C.help.map((h) => `<a class="card tile${h.urgent === 'yes' ? ' urgent' : ''}" href="/help/${h.slug}"><h3>${esc(h.title)}</h3><p>${esc(h.description)}</p></a>`).join('')}
 <a class="card tile" href="/kaddish"><h3>${esc(t('Saying Kaddish'))}</h3><p>${esc(t('Join our minyan, or arrange for Kaddish to be said for your loved one.'))}</p></a>
 <a class="card tile" href="/tehillim"><h3>${esc(t('Tehillim for every occasion'))}</h3><p>${esc(t('Which Psalms to say for someone sick, a birth, a yahrzeit or a birthday.'))}</p></a>
-<a class="card tile" href="/sponsor"><h3>${esc(t('Sponsor in honor or memory'))}</h3><p>${esc(t('Mark a yahrzeit, birthday or simcha with the community.'))}</p></a></div>
+<a class="card tile" href="/sponsor"><h3>${esc(t('Sponsor in honor or memory of a loved one'))}</h3><p>${esc(t('Mark a yahrzeit, birthday or simcha with the community.'))}</p></a></div>
 <p class="muted">${esc(t('In a medical emergency call 911. The Rabbi is not a substitute for medical, legal or mental health care, and can refer you to trusted professionals.'))}</p></section>`;
     await render(res, { path: '/help', title: t("We're here for you: help with every life situation"), description: t('Illness, a death and Jewish burial, a new baby, bar mitzvah, marriage, family or business disputes, grief: Rabbi Yisroel Labkowski of Chabad of Lamorinda helps with everything.'), body });
   }));
@@ -56,7 +56,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
       if (k === 'kaddish') return `<a class="card tile" href="/kaddish"><h3>${esc(t('Kaddish'))}</h3><p>${esc(t('Join our minyan, or arrange for Kaddish to be said for your loved one.'))}</p></a>`;
       if (k === 'prayer') return `<a class="card tile" href="/tehillim#prayer-list"><h3>${esc(t('Add a name to our prayer list'))}</h3><p>${esc(t('The Rabbi and the community will pray for a complete recovery.'))}</p></a>`;
       if (k === 'tehillim') { const s = C.tehillim.situations.find((y) => y.id === v); return s ? `<a class="card tile" href="/tehillim#${v}"><h3>${esc(t('Tehillim'))}: ${esc(s.title)}</h3><p>${esc(t('Which chapters to say, with the text.'))}</p></a>` : ''; }
-      if (k === 'sponsor') { const s = C.sponsor.occasions.find((y) => y.id === v); return s ? `<a class="card tile" href="/sponsor?o=${v}"><h3>${esc(t('Sponsor in honor or memory'))}</h3><p>${esc(s.text)}</p></a>` : ''; }
+      if (k === 'sponsor') { const s = C.sponsor.occasions.find((y) => y.id === v); return s ? `<a class="card tile" href="/sponsor?o=${v}"><h3>${esc(t('Sponsor in honor or memory of a loved one'))}</h3><p>${esc(s.text)}</p></a>` : ''; }
       return '';
     }).join('');
     const body = `<article class="wrap sec narrow help-page">
@@ -161,7 +161,7 @@ ${sit}
     const ded = oc ? (who ? oc.dedication.replace('{name}', who) : oc.dedication.replace(/\s*\{name\}('s)?\s*/, ' ').replace(/\s+/g, ' ').trim()) : '';
     const opts = S.options.map((p) => `<div class="card dir-i"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p><p><a class="btn ${p.id === 'kiddush' ? 'gold' : 'ghost'} sm" href="${p.url ? esc(p.url) : esc(giveUrl(p.fund, ded))}">${esc(p.id === 'kiddush' ? t('Choose a Shabbat') : t('Sponsor'))}</a></p></div>`).join('');
     const sit = oc && { yahrzeit: 'yahrzeit', refuah: 'refuah', 'new-baby': 'new-baby', birthday: 'birthday' }[oc.id];
-    const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor in honor or memory'))}</h1>
+    const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor in honor or memory of a loved one'))}</h1>
 <p class="lead-d">${esc(S.intro)}</p>
 <form class="card tool loved-one" method="get" action="/sponsor#mark">
   <p class="hand">${esc(t('Add a loved one'))}</p>

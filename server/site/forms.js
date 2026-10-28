@@ -133,7 +133,7 @@ ${formHtml(X, f, prefillOf(f, req.query))}
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Donate'))}</h1><p class="lead-d">${esc(G.intro || '')}</p>
 <h2>${esc(t('Give online'))}</h2>
 ${giveForm(X, { fund: String(req.query.fund || ''), amt: req.query.amt, ded: String(req.query.ded || ''), freq: req.query.freq === 'monthly' ? 'monthly' : 'once', back: '/donate' })}
-<p class="btns"><a class="btn ghost" href="/chai-club">${esc(t('Give monthly: join the Chai Club'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory'))}</a><a class="btn ghost" href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a></p>
+<p class="btns"><a class="btn ghost" href="/chai-club">${esc(t('Give monthly: join the Chai Club'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory of a loved one'))}</a><a class="btn ghost" href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a></p>
 <h2>${esc(t('Choose where your gift goes'))}</h2>
 <div class="dir">${(G.funds || []).map((f) => `<div class="card dir-i" id="${f.id}"><h3>${esc(f.name)}</h3><p>${esc(f.text)}</p><p><a class="btn ghost sm" href="${esc(f.id === 'chai' ? '/chai-club' : giveUrl(f.id, 0, ''))}">${esc(t('Give'))}</a></p></div>`).join('')}</div>
 ${G.building ? `<h2 id="building">${esc(t('Building Campaign'))}</h2><p>${esc(G.building.text)}</p><table class="tbl"><tbody>${G.building.levels.map(([n, a]) => `<tr><td>${esc(t(n))}</td><td>${money(a)}</td><td>${a <= MAX_CARD ? `<a href="${esc(giveUrl('building', a, 'Building Campaign: ' + n))}">${esc(t('Give'))}</a>` : `<a href="/contact?about=${encodeURIComponent('Building Campaign: ' + n)}">${esc(t('Contact us'))}</a>`}</td></tr>`).join('')}</tbody></table>` : ''}

@@ -25,7 +25,7 @@ function siteDocs(C, t) {
     page(t('This week in Jewish Lamorinda'), '', 'this week shabbat parsha events', '/this-week'),
     page(t('Kaddish'), '', 'kaddish minyan mourner yahrzeit', '/kaddish'),
     page(t('Tehillim for every occasion'), '', 'tehillim psalms sick refuah prayer list birthday chapter', '/tehillim'),
-    page(t('Sponsor in honor or memory'), '', 'sponsor kiddush yahrzeit birthday memory honor dedication', '/sponsor'),
+    page(t('Sponsor in honor or memory of a loved one'), '', 'sponsor kiddush yahrzeit birthday memory honor dedication', '/sponsor'),
     page(t('Donate'), '', 'donate donation give charity tzedakah venmo zelle check stock', '/donate'),
     page(t('Upcoming events'), '', 'events calendar rsvp upcoming', '/events'),
     page(t('Daily prayer times (zmanim)'), '', 'zmanim sunrise sunset shema mincha times today', '/tools/zmanim', 2, 'tool'),
