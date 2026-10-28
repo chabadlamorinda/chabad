@@ -82,11 +82,15 @@ function mountTools(r, { render, wrap, ctxOf }) {
     let out = '';
     if (validYmd(d)) {
       const m = await Z.mitzvahDate(local(d), night, girl);
-      out = `<div class="card answer"><p>${esc(girl ? t('Bat Mitzvah (age 12)') : t('Bar Mitzvah (age 13)'))}:</p><p class="big">${esc(X.longDate(m.date))}</p><p><span class="he" lang="he">${esc(m.he)}</span></p><p class="muted">${esc(t('It begins the evening before at sunset.'))}</p><p class="btns"><a class="btn gold" href="/help/bar-bat-mitzvah">${esc(t('Plan the Bar or Bat Mitzvah with the Rabbi'))}</a></p></div>`;
+      // The Torah portion read on the Shabbat on or right after the Bar/Bat Mitzvah (the one the boy reads or is called up for).
+      const sh = await Z.thisShabbat(new Date(m.date + 'T20:00:00Z')).catch(() => ({})), ps = sh.parsha, P = require('./parsha.js');
+      const first = ps ? (P.portionsOf(ps.title)[0] || null) : null, psName = ps ? (X.lang === 'he' ? ps.titleHe : t(ps.title)) : '';
+      out = `<div class="card answer"><p>${esc(girl ? t('Bat Mitzvah (age 12)') : t('Bar Mitzvah (age 13)'))}:</p><p class="big">${esc(X.longDate(m.date))}</p><p><span class="he" lang="he">${esc(m.he)}</span></p><p class="muted">${esc(t('It begins the evening before at sunset.'))}</p>
+${ps ? `<div class="parsha-answer"><p class="hand">${esc(t('Your Torah portion'))}</p><p class="big">${esc(psName)}</p><p class="muted">${esc(t('Read on Shabbat, {date}', { date: X.longDate(sh.parsha.date || (sh.havdalah && sh.havdalah.date) || m.date) }))}</p>${first ? `<p><a href="/parsha/${P.slugOf(first.name)}">${esc(t('What this portion is about'))} →</a></p>` : ''}</div>` : ''}<p class="btns"><a class="btn gold" href="/help/bar-bat-mitzvah">${esc(t('Plan the Bar or Bat Mitzvah with the Rabbi'))}</a></p></div>`;
     }
     const extra = `<fieldset class="radios"><legend>${esc(t('For'))}</legend><label><input type="radio" name="g" value="boy"${girl ? '' : ' checked'}> ${esc(t('Boy (Bar Mitzvah, 13)'))}</label><label><input type="radio" name="g" value="girl"${girl ? ' checked' : ''}> ${esc(t('Girl (Bat Mitzvah, 12)'))}</label></fieldset>`;
-    await render(res, { path: '/tools/bar-bat-mitzvah', noindex: !!d, title: t('Bar & Bat Mitzvah date calculator'), description: t('Find the Hebrew date of a Bar Mitzvah (13) or Bat Mitzvah (12) from the birth date.'),
-      body: `<section class="wrap sec narrow"><h1>${esc(t('Bar & Bat Mitzvah date calculator'))}</h1><p class="lead-d">${esc(t('A boy becomes Bar Mitzvah on his 13th Hebrew birthday, a girl becomes Bat Mitzvah on her 12th. Enter the birth date:'))}</p>${form(X, '/tools/bar-bat-mitzvah', d, night, extra)}${out}</section>` });
+    await render(res, { path: '/tools/bar-bat-mitzvah', noindex: !!d, title: t('Bar & Bat Mitzvah date and Torah portion'), description: t('Find the Hebrew date and the Torah portion (parshah) of a Bar Mitzvah (13) or Bat Mitzvah (12) from the birth date, past or future.'),
+      body: `<section class="wrap sec narrow"><h1>${esc(t('Find your Bar or Bat Mitzvah parshah'))}</h1><p class="lead-d">${esc(t('A boy becomes Bar Mitzvah on his 13th Hebrew birthday, a girl becomes Bat Mitzvah on her 12th. Enter the birth date to see the date and the Torah portion. It works for a past Bar Mitzvah too: find the parshah of your own.'))}</p>${form(X, '/tools/bar-bat-mitzvah', d, night, extra)}${out}</section>` });
   }));
 }
 module.exports = { mountTools, validYmd };

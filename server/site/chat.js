@@ -54,7 +54,7 @@ function knowledge(C) {
   for (const a of C.learn) L.push(`- ${a.title} (/learn/${a.slug})`);
   L.push('', '## Help in life situations (/help)');
   for (const h of C.help || []) L.push(`- ${h.title} (/help/${h.slug}): ${h.description || ''}`);
-  L.push('', '## Tools', '- Hebrew date converter: /tools/hebrew-date', '- Yahrzeit calculator: /tools/yahrzeit', '- Bar/Bat Mitzvah date: /tools/bar-bat-mitzvah', '- Account (family, birthdays, yahrzeits, one-tap RSVP): /account', '- Community board (Mazal Tovs, notices): /community', '- Weekly email: /forms/newsletter');
+  L.push('', '## Tools', '- Hebrew date converter: /tools/hebrew-date', '- Yahrzeit calculator: /tools/yahrzeit', '- Bar/Bat Mitzvah date and Torah portion (parshah), also for a past Bar Mitzvah: /tools/bar-bat-mitzvah', '- Account (family, birthdays, yahrzeits, one-tap RSVP): /account', '- Community board (Mazal Tovs, notices): /community', '- Weekly email: /forms/newsletter');
   return L.join('\n');
 }
 

@@ -481,6 +481,12 @@ test('home page: large banners, smaller banners, what we built, ways to get invo
   assert.match((await client().call('GET', '/he/')).text, /שבת בחב״ד למורינדה/);
 });
 
+test('Bar Mitzvah parshah finder: the date and the Torah portion, also for a Bar Mitzvah years ago', async () => {
+  const r = (await client().call('GET', '/tools/bar-bat-mitzvah?d=1980-05-14')).text;
+  assert.match(r, /May 19, 1993/); assert.match(r, /Parashat Bamidbar/); assert.match(r, /href="\/parsha\/bamidbar"/);
+  assert.match((await client().call('GET', '/he/tools/bar-bat-mitzvah?d=1980-05-14')).text, /פרשת במדבר/);
+});
+
 test('the donation page works on the site itself', async () => {
   const d = (await client().call('GET', '/donate')).text;
   assert.match(d, /<form class="card give" id="give" data-give/); assert.match(d, /name="amt" value="180"/); assert.ok(!/href="\/pushka\//.test(d.split('<main')[1].split('</main>')[0]), 'giving stays on the website');

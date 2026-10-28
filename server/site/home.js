@@ -117,6 +117,7 @@ ${H.story ? `<section class="wrap sec"><div class="story">
     <a href="/tools/hebrew-birthday">${artImg('gift')}<span>${esc(t('Find your Hebrew birthday'))}</span></a>
     <a href="/shabbat-times">${artImg('candle-flame')}<span>${esc(t('Shabbat times for your town'))}</span></a>
     <a href="/parsha">${artImg('torah-scroll')}<span>${esc(t("This week's Torah portion"))}</span></a>
+    <a href="/tools/bar-bat-mitzvah">${artImg('tallit')}<span>${esc(t('Find your Bar Mitzvah parshah'))}</span></a>
     <a href="/jewish-holidays-${today.slice(0, 4)}">${artImg('calendar')}<span>${esc(t('Jewish holidays this year'))}</span></a>
     <button type="button" data-chat-open>${artImg('chat-bubble')}<span>${esc(t('Ask us anything'))}</span></button>
     <a href="/learn">${artImg('open-book')}<span>${esc(t('Learn about Judaism'))}</span></a>
