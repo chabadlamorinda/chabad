@@ -7,6 +7,13 @@
   'use strict';
   var app = document.getElementById('app');
   function el(t, a, kids) { var n = document.createElement(t); for (var k in a || {}) { if (k === 'text') n.textContent = a[k]; else if (k === 'onclick') n.onclick = a[k]; else n.setAttribute(k, a[k]); } (kids || []).forEach(function (c) { if (c) n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); }); return n; }
+  // Dates as people say them: "Today, 12:37 PM", "Yesterday, 9:05 AM", "Wed, Oct 21, 3:05 PM"; days as "Sat, Oct 31".
+  function when(ts) {
+    var d = new Date(ts); if (isNaN(d)) return String(ts || '');
+    var time = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }), days = Math.round((new Date().setHours(0, 0, 0, 0) - new Date(d).setHours(0, 0, 0, 0)) / 864e5);
+    return days === 0 ? 'Today, ' + time : days === 1 ? 'Yesterday, ' + time : d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }) + ', ' + time;
+  }
+  function day(ts) { var d = /^\d{4}-\d{2}-\d{2}$/.test(ts) ? new Date(ts + 'T12:00:00') : new Date(ts); return isNaN(d) ? String(ts || '') : d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }); }
   function api(m, p, body) { return fetch('/admin/api' + p, { method: m, credentials: 'same-origin', headers: { 'x-admin': '1', 'content-type': 'application/json' }, body: body ? JSON.stringify(body) : undefined }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; return j; }); }); }
   var cell = function (v) { var s = String(v == null ? '' : v); if (/^[=+\-@\t\r]/.test(s)) s = "'" + s; return '"' + s.replace(/"/g, '""') + '"'; };
   function csv(name, rows) { var b = new Blob([rows.map(function (r) { return r.map(cell).join(','); }).join('\r\n')], { type: 'text/csv' }); var a = el('a', { href: URL.createObjectURL(b), download: name }); a.click(); }
@@ -47,7 +54,7 @@
       var NAME = { mezuzah: 'Mezuzah', tefillin: 'Tefillin', donation: 'Giving', meeting: 'Meeting', consult: 'Private conversation' }, HOW = { call: 'tapped Call', text: 'tapped Text', email: 'tapped Email', whatsapp: 'tapped WhatsApp', chat: 'asked the chat' };
       x.items.slice(0, 60).forEach(function (i) {
         sr.appendChild(el('div', { class: 'card' }, [el('strong', { text: NAME[i.topic] || i.topic }), el('span', { class: 'pill', text: HOW[i.channel] || i.channel }), i.lang !== 'en' ? el('span', { class: 'pill', text: i.lang }) : null,
-          el('div', { class: 'small', text: new Date(i.created_at).toLocaleString() + (i.page ? ' · ' + i.page : '') }), i.detail ? el('div', { class: 'small', text: i.detail }) : null]));
+          el('div', { class: 'small', text: when(i.created_at) + (i.page ? ' · ' + i.page : '') }), i.detail ? el('div', { class: 'small', text: i.detail }) : null]));
       });
     });
 
@@ -106,7 +113,7 @@
           msg.textContent = Object.keys(r.results).map(function (n) { var x = r.results[n]; return n + ': ' + (x.ok ? 'published' : x.error); }).join(' · ');
         });
       } });
-      var status = [fbDone ? 'On Facebook since ' + new Date(fbDone.at).toLocaleDateString() : 'Not yet on Facebook', soc.instagram ? (igDone ? 'on Instagram' : 'not yet on Instagram') : ''].filter(Boolean).join(' · ');
+      var status = [fbDone ? 'On Facebook since ' + day(fbDone.at) : 'Not yet on Facebook', soc.instagram ? (igDone ? 'on Instagram' : 'not yet on Instagram') : ''].filter(Boolean).join(' · ');
       var copyBtn = el('button', { text: 'Copy post text', onclick: function () { copy(text.value, copyBtn); } });
       var gBtn = el('button', { text: 'Copy Google Business post', onclick: function () { copy(e.google, gBtn); } });
       var ndBtn = el('button', { text: 'Copy & open Nextdoor', onclick: function () { copy(e.nextdoor, ndBtn); window.open('https://nextdoor.com/news_feed/', '_blank', 'noopener'); } });
@@ -143,7 +150,7 @@
       x.items.forEach(function (i) {
         var st = el('span', { class: 'pill', text: i.status });
         var set = function (status) { api('POST', '/site/submissions/' + i.id, { status: status }).then(function (r) { if (r.ok) st.textContent = status; }); };
-        s2.appendChild(el('div', { class: 'card' }, [el('div', { class: 'small', text: (x.kinds[i.kind] ? x.kinds[i.kind].label : i.kind) + ' · from ' + i.name + ' <' + i.email + '> · ' + new Date(i.created_at).toLocaleDateString() }), el('strong', { text: i.title }), el('div', { text: i.body }), i.link ? el('a', { href: i.link, target: '_blank', rel: 'noopener', text: i.link }) : null,
+        s2.appendChild(el('div', { class: 'card' }, [el('div', { class: 'small', text: (x.kinds[i.kind] ? x.kinds[i.kind].label : i.kind) + ' · from ' + i.name + ' <' + i.email + '> · ' + day(i.created_at) }), el('strong', { text: i.title }), el('div', { text: i.body }), i.link ? el('a', { href: i.link, target: '_blank', rel: 'noopener', text: i.link }) : null,
           el('div', { class: 'row' }, [st, el('button', { text: 'Approve', onclick: function () { set('approved'); } }), el('button', { text: 'Decline', onclick: function () { set('declined'); } }), el('a', { href: 'mailto:' + i.email + '?subject=' + encodeURIComponent('Re: ' + i.title), text: 'Reply' })])]));
       });
     });
@@ -160,7 +167,7 @@
           el('div', { class: 'row' }, [
             el('button', { text: 'Show', onclick: function () { api('GET', '/site/forms/' + f.id).then(function (y) { list.textContent = ''; if (!y.items.length) list.textContent = 'None yet.';
               y.items.forEach(function (i) { var st = el('span', { class: 'pill', text: i.status });
-                list.appendChild(el('div', { class: 'card' }, [el('div', { class: 'small', text: new Date(i.created_at).toLocaleString() + ' · ' + i.name + ' <' + i.email + '>' + (i.amount_cents ? ' · $' + i.amount_cents / 100 : '') }),
+                list.appendChild(el('div', { class: 'card' }, [el('div', { class: 'small', text: when(i.created_at) + ' · ' + i.name + ' <' + i.email + '>' + (i.amount_cents ? ' · $' + i.amount_cents / 100 : '') }),
                   el('div', { class: 'small', text: f.fields.map(function (fl) { var v = flat(i.data[fl.id]); return v ? fl.label + ': ' + v : ''; }).filter(Boolean).join(' | ') }),
                   el('div', { class: 'row' }, [st, el('button', { text: 'Done', onclick: function () { api('POST', '/site/forms/response/' + i.id, { status: 'done' }).then(function (r) { if (r.ok) st.textContent = 'done'; }); } }), el('button', { text: 'Paid', onclick: function () { api('POST', '/site/forms/response/' + i.id, { status: 'paid' }).then(function (r) { if (r.ok) st.textContent = 'paid'; }); } }), el('a', { href: 'mailto:' + i.email, text: 'Email' })])])); }); }); } }),
             el('button', { text: 'Download CSV', onclick: function () { api('GET', '/site/forms/' + f.id).then(function (y) { csv(f.id + '.csv', [['When', 'Name', 'Email', 'Amount', 'Status'].concat(f.fields.map(function (fl) { return fl.label; }))].concat(y.items.map(function (i) { return [i.created_at, i.name, i.email, i.amount_cents / 100, i.status].concat(f.fields.map(function (fl) { return flat(i.data[fl.id]); })); }))); }); } })]), list]));
@@ -172,7 +179,7 @@
     api('GET', '/site/chat-questions').then(function (x) {
       if (x._status !== 200 || !x.items.length) { sq.appendChild(el('p', { class: 'small', text: 'No questions yet.' })); return; }
       sq.count(x.items.filter(function (i) { return Date.now() - new Date(i.created_at) < 7 * 864e5; }).length);
-      var ul = el('ul'); x.items.slice(0, 100).forEach(function (i) { ul.appendChild(el('li', { class: 'small' }, [new Date(i.created_at).toLocaleDateString() + ' (' + i.lang + '): ' + i.question + ' ', el('button', { text: 'Answer publicly', onclick: function () { qq.value = i.question; ql.value = i.lang; qa.focus(); qbox.scrollIntoView(); } })])); }); sq.appendChild(ul);
+      var ul = el('ul'); x.items.slice(0, 100).forEach(function (i) { ul.appendChild(el('li', { class: 'small' }, [day(i.created_at) + ' (' + i.lang + '): ' + i.question + ' ', el('button', { text: 'Answer publicly', onclick: function () { qq.value = i.question; ql.value = i.lang; qa.focus(); qbox.scrollIntoView(); } })])); }); sq.appendChild(ul);
     });
 
     // ---- Ask the Rabbi (public answers) ----
@@ -203,7 +210,7 @@
       s4.count(b.items.length);
       b.items.forEach(function (i) {
         var what = i.kind === 'anniversary' ? i.years + ' years married' : i.kind === 'birthday' ? 'turns ' + i.age : 'Hebrew birthday (' + i.hebrew + ')';
-        s4.appendChild(el('div', { class: 'card' }, [el('strong', { text: i.date + ' · ' + i.name }), el('span', { class: 'small', text: ' ' + what + (i.relation && i.relation !== 'self' ? ' · ' + i.relation + ' of ' + i.family : '') }), el('div', { class: 'small', text: [i.email, i.phone].filter(Boolean).join(' · ') })]));
+        s4.appendChild(el('div', { class: 'card' }, [el('strong', { text: day(i.date) + ' · ' + i.name }), el('span', { class: 'small', text: ' ' + what + (i.relation && i.relation !== 'self' ? ' · ' + i.relation + ' of ' + i.family : '') }), el('div', { class: 'small', text: [i.email, i.phone].filter(Boolean).join(' · ') })]));
       });
     });
   });

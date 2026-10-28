@@ -156,22 +156,22 @@ function mountOutreach(app, { store, readMember, content, base, ctxOf, upcoming 
       for (const y of p.yahrzeits) {
         const n = H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, t0); if (!n) continue;
         const left = H.daysBetween(t0, n.date);
-        if (left >= 0 && left <= 10) add(p, `yahrzeit:${y.id}:${n.date}`, 'yahrzeit', 1, `Yahrzeit of ${y.name}${y.relation ? ' (' + y.relation + ')' : ''} on ${n.date}`, message(L, 'yahrzeit', { first: f1, name: y.name, date: n.date, url: linkFor(L, '/kaddish') }), 'Yahrzeit');
+        if (left >= 0 && left <= 10) add(p, `yahrzeit:${y.id}:${n.date}`, 'yahrzeit', 1, `Yahrzeit of ${y.name}${y.relation ? ' (' + y.relation + ')' : ''} on ${nice(n.date)}`, message(L, 'yahrzeit', { first: f1, name: y.name, date: n.date, url: linkFor(L, '/kaddish') }), 'Yahrzeit');
       }
       const people2 = [{ name: p.name, birthday: p.birthday, night: p.birth_after_sunset, relation: 'self' }, ...p.family.map((f) => ({ ...f, night: f.birth_after_sunset }))];
       for (const x of people2) {
         if (!x.birthday) continue;
         const hp = H.hebrewOf(x.birthday, x.night), n = H.next({ day: hp.day, month: hp.month }, t0);
-        if (n && H.daysBetween(t0, n.date) <= 3) add(p, `hb:${x.name}:${n.date}`, 'hebrew-birthday', 3, `${x.name}${x.relation !== 'self' ? ' (' + x.relation + ')' : ''}: Hebrew birthday on ${n.date}`, message(L, 'hebrewBirthday', { first: f1, name: x.relation === 'self' ? f1 : x.name, date: n.date }), 'Mazal Tov');
+        if (n && H.daysBetween(t0, n.date) <= 3) add(p, `hb:${x.name}:${n.date}`, 'hebrew-birthday', 3, `${x.name}${x.relation !== 'self' ? ' (' + x.relation + ')' : ''}: Hebrew birthday on ${nice(n.date)}`, message(L, 'hebrewBirthday', { first: f1, name: x.relation === 'self' ? f1 : x.name, date: n.date }), 'Mazal Tov');
         if (x.relation === 'child' && (x.gender === 'm' || x.gender === 'f')) {
           const [yy, mo, dd] = x.birthday.split('-').map(Number), md = await Z.mitzvahDate(new Date(yy, mo - 1, dd), x.night, x.gender === 'f'), left = H.daysBetween(t0, md.date);
           const kind = (KIND[L] || KIND.en)[x.gender === 'f' ? 'bat' : 'bar'];
-          if (left > 0 && left <= 548) add(p, `mitzvah:${x.name}`, 'mitzvah', 2, `${x.name}: ${x.gender === 'f' ? 'Bat' : 'Bar'} Mitzvah on ${md.date} (in ${Math.round(left / 30)} months): offer to start planning`, message(L, 'mitzvah', { first: f1, name: x.name, kind, date: md.date }), kind);
+          if (left > 0 && left <= 548) add(p, `mitzvah:${x.name}`, 'mitzvah', 2, `${x.name}: ${x.gender === 'f' ? 'Bat' : 'Bar'} Mitzvah on ${nice(md.date)} (in ${Math.round(left / 30)} months): offer to start planning`, message(L, 'mitzvah', { first: f1, name: x.name, kind, date: md.date }), kind);
         }
       }
       const hard = [...new Set(p.views.filter((v) => SENSITIVE[v.path] && H.daysBetween(v.day, t0) <= 14).map((v) => SENSITIVE[v.path]))];
       if (hard.length) add(p, 'checkin:' + t0.slice(0, 7), 'check-in', 1, `Read about ${hard.join(' and ')} in the last two weeks: a gentle, personal check-in`, message(L, 'checkin', { first: f1 }), 'Thinking of you');
-      if (p.last_login && H.daysBetween(d10(p.created_at), t0) <= 14) add(p, 'welcome', 'welcome', 2, `New: joined on ${d10(p.created_at)}`, message(L, 'welcome', { first: f1, url: linkFor(L, '/forms/shabbat-meal') }), 'Welcome');
+      if (p.last_login && H.daysBetween(d10(p.created_at), t0) <= 14) add(p, 'welcome', 'welcome', 2, `New: joined on ${nice(d10(p.created_at))}`, message(L, 'welcome', { first: f1, url: linkFor(L, '/forms/shabbat-meal') }), 'Welcome');
       const lastRsvp = p.rsvps.map((r) => d10(r.created_at)).sort().pop();
       if (p.rsvps.length >= 2 && lastRsvp && H.daysBetween(lastRsvp, t0) > 90) {
         const e = soon.map((ev) => [ev, fit(p, ev, C) || { score: 0, reasons: [], who: 'you' }]).sort((a, b) => b[1].score - a[1].score)[0];
