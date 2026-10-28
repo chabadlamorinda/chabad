@@ -37,7 +37,7 @@ const TOPICS = {
 // Pages that show the buttons.
 const PAGE_TOPICS = {
   '/learn/mezuzah': 'mezuzah', '/learn/chanukat-habayit': 'mezuzah', '/learn/jewish-home-in-lamorinda': 'mezuzah',
-  '/learn/tefillin': 'tefillin', '/learn/buying-tefillin': 'tefillin', '/learn/choosing-a-mezuzah': 'mezuzah', '/learn/hachnasat-sefer-torah': 'donation', '/learn/mitzvah-tanks': 'tefillin', '/learn/bar-mitzvah': 'tefillin', '/learn/jewish-men-in-lamorinda': 'tefillin',
+  '/learn/tefillin': 'tefillin', '/learn/buying-tefillin': 'tefillin', '/learn/choosing-a-mezuzah': 'mezuzah', '/learn/hachnasat-sefer-torah': 'donation', '/learn/mitzvah-tanks': 'tefillin', '/learn/jewish-men-in-lamorinda': 'tefillin',
   '/donate': 'donation', '/learn/supporting-chabad-of-lamorinda': 'donation', '/learn/halachic-will': 'donation',
   '/contact': 'meeting', '/help/talk-to-the-rabbi': 'meeting',
 };

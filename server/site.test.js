@@ -373,7 +373,7 @@ test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitatio
   assert.match(url, /^webcal:\/\/site\.test\/api\/site\/me\/calendar\.ics\?k=m_/);
   const ics = await client().call('GET', url.replace(/^webcal:\/\/site\.test/, ''));
   assert.equal(ics.status, 200); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.match(ics.text, /SUMMARY:Bat Mitzvah: Chaya/); assert.match(ics.text, /SUMMARY:Mezuzahs due for checking/);
-  assert.equal((await client().call('GET', url.replace(/^webcal:\/\/site\.test/, '').replace(/.$/, 'x'))).status, 404, 'a wrong key shows nothing');
+  assert.equal((await client().call('GET', url.replace(/^webcal:\/\/site\.test/, '').replace(/.$/, (c) => (c === 'x' ? 'y' : 'x')))).status, 404, 'a wrong key shows nothing');
 });
 
 test('languages: Hebrew and Russian pages, automatic choice, switch, hreflang', async () => {
@@ -506,6 +506,17 @@ test('Chai Club page shows the medal honor board (board.js, all three languages)
   assert.match(p, /data-club-board/); assert.match(p, /\/board\/board\.js/);
   const js = require('fs').readFileSync(path.join(__dirname, '..', 'board', 'board.js'), 'utf8');
   assert.match(js, /ru: \{ title:/); assert.match(js, /pl\.appendChild\(medal\(L\.id/);
+});
+
+test('Bar Mitzvah: the parshah finder leads straight into the sign-up form, filled in; every Bar/Bat Mitzvah page leads to the form', async () => {
+  const r = (await client().call('GET', '/tools/bar-bat-mitzvah?d=2014-05-01&g=girl&night=1')).text;
+  assert.match(r, /id="start"/); assert.match(r, /data-form="bar-bat-mitzvah"/); assert.match(r, /value="2014-05-01" name="children\.0\.birthday"/);
+  assert.match(r, /<option value="1" selected>Bat Mitzvah/); assert.match(r, /Born after sunset/); assert.match(r, /action="\/tools\/bar-bat-mitzvah#answer"/);
+  for (const p of ['/learn/bar-mitzvah', '/learn/bat-mitzvah', '/learn/bar-bat-mitzvah-in-lamorinda', '/help/bar-bat-mitzvah']) {
+    const h = (await client().call('GET', p)).text; assert.match(h, /class="card action-top start-card"/, p); assert.match(h, /href="\/forms\/bar-bat-mitzvah"/, p);
+  }
+  assert.ok(!/data-lead="tefillin"/.test((await client().call('GET', '/learn/bar-mitzvah')).text.split('start-card')[0]), 'no tefillin buttons at the top of the Bar Mitzvah guide');
+  assert.match((await client().call('GET', '/forms/bar-bat-mitzvah?type=0&children.0.birthday=2014-05-01')).text, /value="2014-05-01" name="children\.0\.birthday"/);
 });
 
 test('the donation page works on the site itself', async () => {

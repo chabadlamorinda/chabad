@@ -7,7 +7,7 @@ const { esc } = require('./md.js');
 
 const validYmd = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s || '') && !isNaN(new Date(s + 'T12:00:00Z')) && new Date(s + 'T12:00:00Z').toISOString().slice(0, 10) === s && s >= '1900-01-01' && s <= '2100-12-31';
 const local = (ymd) => { const [y, m, d] = ymd.split('-').map(Number); return new Date(y, m - 1, d); };
-const form = (X, action, d, sunset, extra = '') => `<form class="card tool" method="get" action="${action}">
+const form = (X, action, d, sunset, extra = '') => `<form class="card tool" method="get" action="${action}#answer">
   <label>${esc(X.t('Date'))} <input type="date" name="d" value="${esc(d || '')}" required></label>
   <label class="check"><input type="checkbox" name="night" value="1"${sunset ? ' checked' : ''}> ${esc(X.t('After sunset (the Hebrew day starts at nightfall)'))}</label>
   ${extra}<button class="btn gold" type="submit">${esc(X.t('Calculate'))}</button></form>`;
@@ -38,7 +38,7 @@ function mountTools(r, { render, wrap, ctxOf }) {
       const p = H.hebrewOf(d, night), rows = []; let from = Z.ymd(Z.todayLocal());
       for (let i = 0; i < 5; i++) { const n = H.next({ day: p.day, month: p.month }, from); if (!n) break; rows.push(n); from = H.addDays(n.date, 1); }
       const heb = X.lang === 'he' ? H.label(p, true) : X.lang === 'ru' ? `${p.day} ${t(p.month)}` : H.label(p);
-      out = `<div class="card answer"><p>${esc(t('Your Hebrew birthday is'))}</p><p class="big">${esc(heb)}</p>
+      out = `<div class="card answer" id="answer"><p>${esc(t('Your Hebrew birthday is'))}</p><p class="big">${esc(heb)}</p>
 <table class="tbl"><tbody>${rows.map((n) => `<tr><td>${esc(X.longDate(n.date))}</td></tr>`).join('')}</tbody></table>
 <p class="btns"><a class="btn gold" href="/tehillim?b=${esc(d)}${night ? '&night=1' : ''}#birthday">${esc(t('Your Tehillim chapter'))}</a><a class="btn ghost" href="/sponsor?o=birthday">${esc(t('Sponsor a Kiddush for your birthday'))}</a><a class="btn ghost" href="/account">${esc(t('Save it and get a reminder every year'))}</a></p></div>`;
     }
@@ -52,7 +52,7 @@ function mountTools(r, { render, wrap, ctxOf }) {
     let out = '';
     if (validYmd(d)) {
       const h = await Z.hebrewDate(local(d), night);
-      out = `<div class="card answer"><p>${esc(X.longDate(d))}${night ? ' ' + esc(t('(after sunset)')) : ''} =</p><p class="big">${esc(X.lang === 'he' ? h.he : X.lang === 'ru' ? `${h.day} ${t(h.month)} ${h.year}` : h.en)}</p>${X.lang !== 'he' ? `<p class="he" lang="he">${esc(h.he)}</p>` : ''}</div>`;
+      out = `<div class="card answer" id="answer"><p>${esc(X.longDate(d))}${night ? ' ' + esc(t('(after sunset)')) : ''} =</p><p class="big">${esc(X.lang === 'he' ? h.he : X.lang === 'ru' ? `${h.day} ${t(h.month)} ${h.year}` : h.en)}</p>${X.lang !== 'he' ? `<p class="he" lang="he">${esc(h.he)}</p>` : ''}</div>`;
     }
     const today = await X.hebrewDate(Z.todayLocal());
     await render(res, { path: '/tools/hebrew-date', noindex: !!d, title: t('Hebrew date converter'), description: t('Convert any date to the Hebrew (Jewish) calendar. Today is {date}.', { date: today }),
@@ -68,7 +68,7 @@ function mountTools(r, { render, wrap, ctxOf }) {
       let from = Z.ymd(Z.todayLocal());
       for (let i = 0; i < 10; i++) { const n = H.next(entry, from); if (!n) break; rows.push(n); from = H.addDays(n.date, 1); }
       const heb = X.lang === 'he' ? H.label(entry, true) : X.lang === 'ru' ? `${p.day} ${t(p.month)}` : H.label(entry);
-      out = `<div class="card answer"><p>${esc(t('Passing on {date}: Hebrew date {hebrew} {year}.', { date: X.longDate(d), hebrew: heb, year: p.year }))}</p>
+      out = `<div class="card answer" id="answer"><p>${esc(t('Passing on {date}: Hebrew date {hebrew} {year}.', { date: X.longDate(d), hebrew: heb, year: p.year }))}</p>
 <table class="tbl"><thead><tr><th>${esc(t('Yahrzeit'))}</th><th>${esc(t('Light the candle the evening before'))}</th></tr></thead><tbody>${rows.map((n) => `<tr><td>${esc(X.longDate(n.date))}</td><td>${esc(X.longDate(H.addDays(n.date, -1)))}</td></tr>`).join('')}</tbody></table>
 <p class="btns"><a class="btn gold" href="/account#yahrzeits">${esc(t('Save this yahrzeit and get a reminder every year'))}</a><a class="btn ghost" href="/sponsor?o=yahrzeit">${esc(t('Sponsor a Kiddush in their memory'))}</a><a class="btn ghost" href="/kaddish">${esc(t('Kaddish'))}</a><a class="btn ghost" href="/tehillim#yahrzeit">${esc(t('Tehillim for a yahrzeit'))}</a></p></div>`;
     }
@@ -85,8 +85,13 @@ function mountTools(r, { render, wrap, ctxOf }) {
       // The Torah portion read on the Shabbat on or right after the Bar/Bat Mitzvah (the one the boy reads or is called up for).
       const sh = await Z.thisShabbat(new Date(m.date + 'T20:00:00Z')).catch(() => ({})), ps = sh.parsha, P = require('./parsha.js');
       const first = ps ? (P.portionsOf(ps.title)[0] || null) : null, psName = ps ? (X.lang === 'he' ? ps.titleHe : t(ps.title)) : '';
-      out = `<div class="card answer"><p>${esc(girl ? t('Bat Mitzvah (age 12)') : t('Bar Mitzvah (age 13)'))}:</p><p class="big">${esc(X.longDate(m.date))}</p><p><span class="he" lang="he">${esc(m.he)}</span></p><p class="muted">${esc(t('It begins the evening before at sunset.'))}</p>
-${ps ? `<div class="parsha-answer"><p class="hand">${esc(t('Your Torah portion'))}</p><p class="big">${esc(psName)}</p><p class="muted">${esc(t('Read on Shabbat, {date}', { date: X.longDate(sh.parsha.date || (sh.havdalah && sh.havdalah.date) || m.date) }))}</p>${first ? `<p><a href="/parsha/${P.slugOf(first.name)}">${esc(t('What this portion is about'))} →</a></p>` : ''}</div>` : ''}<p class="btns"><a class="btn gold" href="/help/bar-bat-mitzvah">${esc(t('Plan the Bar or Bat Mitzvah with the Rabbi'))}</a></p></div>`;
+      out = `<div class="card answer" id="answer"><p>${esc(girl ? t('Bat Mitzvah (age 12)') : t('Bar Mitzvah (age 13)'))}:</p><p class="big">${esc(X.longDate(m.date))}</p><p><span class="he" lang="he">${esc(m.he)}</span></p><p class="muted">${esc(t('It begins the evening before at sunset.'))}</p>
+${ps ? `<div class="parsha-answer"><p class="hand">${esc(t('Your Torah portion'))}</p><p class="big">${esc(psName)}</p><p class="muted">${esc(t('Read on Shabbat, {date}', { date: X.longDate(sh.parsha.date || (sh.havdalah && sh.havdalah.date) || m.date) }))}</p>${first ? `<p><a href="/parsha/${P.slugOf(first.name)}">${esc(t('What this portion is about'))} →</a></p>` : ''}</div>` : ''}<p class="btns"><a class="btn gold" href="#start">${esc(t('Start preparing with the Rabbi'))}</a></p></div>`;
+      // Straight on to the sign-up, on this page, with the birthday and Bar or Bat Mitzvah already filled in.
+      const f = (X.C.forms || []).find((x) => x.id === 'bar-bat-mitzvah');
+      if (f) out += `<section class="start-prep" id="start"><p class="hand">${esc(t('Ready to begin?'))}</p><h2>${esc(t('Start preparing with the Rabbi'))}</h2><p>${esc(f.intro)}</p>
+${require('./forms.js').formHtml(X, f, { 'children.0.birthday': d, type: girl ? '1' : '0', message: night ? t('Born after sunset.') : '' })}
+<p class="muted">${esc(t('Questions? Call {phone}.', { phone: X.C.org.phone }))}</p></section>`;
     }
     const extra = `<fieldset class="radios"><legend>${esc(t('For'))}</legend><label><input type="radio" name="g" value="boy"${girl ? '' : ' checked'}> ${esc(t('Boy (Bar Mitzvah, 13)'))}</label><label><input type="radio" name="g" value="girl"${girl ? ' checked' : ''}> ${esc(t('Girl (Bat Mitzvah, 12)'))}</label></fieldset>`;
     await render(res, { path: '/tools/bar-bat-mitzvah', noindex: !!d, title: t('Bar & Bat Mitzvah date and Torah portion'), description: t('Find the Hebrew date and the Torah portion (parshah) of a Bar Mitzvah (13) or Bat Mitzvah (12) from the birth date, past or future.'),

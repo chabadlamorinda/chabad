@@ -49,6 +49,42 @@ function readAnswers(form, body) {
   return { out, errors, amount };
 }
 
+// The form itself, so it can also be shown inside other pages (the Bar Mitzvah parshah finder shows the sign-up).
+// pre: values to fill in, by field id ("children.0.birthday" for a child's row; the option number for a select).
+function formHtml(X, f, pre = {}) {
+  const { t } = X, v = (k) => (pre[k] != null ? ` value="${esc(String(pre[k]))}"` : '');
+  const input = (x) => {
+    const req_ = x.required ? ' required' : '', lab = (inner) => `<label>${esc(x.label)}${x.required ? ' *' : ''} ${inner}</label>`;
+    switch (x.type) {
+      case 'textarea': return lab(`<textarea name="${x.id}" rows="4" maxlength="3000"${req_}>${pre[x.id] != null ? esc(String(pre[x.id])) : ''}</textarea>`);
+      case 'select': return lab(`<select name="${x.id}"${req_}><option value="">—</option>${x.options.map((o, i) => `<option value="${i}"${String(pre[x.id]) === String(i) ? ' selected' : ''}>${esc(optLabel(o))}</option>`).join('')}</select>`);
+      case 'checkbox': return `<label class="check"><input type="checkbox" name="${x.id}"${req_}> ${esc(x.label)}${x.required ? ' *' : ''}</label>`;
+      case 'checkboxes': return `<fieldset class="radios" data-group="${x.id}"><legend>${esc(x.label)}${x.required ? ' *' : ''}</legend>${x.options.map((o, i) => `<label><input type="checkbox" name="${x.id}" value="${i}"> ${esc(optLabel(o))}</label>`).join('')}</fieldset>`;
+      case 'number': return lab(`<input type="number" name="${x.id}" min="${x.min || 0}" max="${x.max || 1000}" inputmode="numeric"${req_}>`);
+      case 'children': return `<fieldset class="kids" data-children="${x.id}"><legend>${esc(x.label)}${x.required ? ' *' : ''}</legend>${Array.from({ length: x.rows || 3 }, (_, i) => `<div class="fields kid" data-row="${i}">${x.columns.map((c) => `<label>${esc(t(COLUMNS[c] || c))} <input${v(x.id + '.' + i + '.' + c)} name="${x.id}.${i}.${c}"${c === 'birthday' ? ' type="date"' : ''}${x.required && i === 0 && c === 'name' ? ' required' : ''}></label>`).join('')}</div>`).join('')}</fieldset>`;
+      default: return lab(`<input${v(x.id)} type="${x.type === 'email' ? 'email' : x.type === 'tel' ? 'tel' : x.type === 'date' ? 'date' : 'text'}" name="${x.id}"${x.id === 'name' ? ' autocomplete="name"' : x.type === 'email' ? ' autocomplete="email"' : x.type === 'tel' ? ' autocomplete="tel"' : ''}${req_}>`);
+    }
+  };
+  return `<form class="card tool" data-form="${f.id}">
+${f.fields.map(input).join('\n')}
+<button class="btn gold" type="submit">${esc(f.button || t('Send'))}</button><p class="msg" hidden></p>
+<p class="pay-next" hidden><a class="btn gold" href="#">${esc(f.payment ? f.payment.label : '')}</a></p>
+</form>`;
+}
+// "Get started" at the top of the guides and help pages for something people sign up for (Bar/Bat Mitzvah...).
+const START = { 'bar-bat-mitzvah': { form: 'bar-bat-mitzvah', pages: ['/learn/bar-mitzvah', '/learn/bat-mitzvah', '/learn/bar-bat-mitzvah-in-lamorinda', '/learn/bar-mitzvah-speech', '/learn/bat-mitzvah-projects', '/help/bar-bat-mitzvah'], more: ['/tools/bar-bat-mitzvah', 'Find the Bar or Bat Mitzvah parshah'] } };
+function startCard(X, path) {
+  const s = Object.values(START).find((x) => x.pages.includes(path)), f = s && (X.C.forms || []).find((x) => x.id === s.form);
+  if (!f) return '';
+  return `<div class="card action-top start-card"><p><strong>${esc(f.title)}</strong> ${esc(f.intro)}</p>
+<p class="btns"><a class="btn gold sm" href="/forms/${f.id}">${esc(X.t('Get started'))}</a>${s.more ? `<a class="btn ghost sm" href="${s.more[0]}">${esc(X.t(s.more[1]))}</a>` : ''}</p></div>`;
+}
+// Fill a form in from the address (?type=0&children.0.birthday=2014-05-01), only for fields the form has.
+function prefillOf(f, query) {
+  const ok = new Set(f.fields.flatMap((x) => (x.type === 'children' ? Array.from({ length: x.rows || 3 }, (_, i) => x.columns.map((c) => `${x.id}.${i}.${c}`)).flat() : [x.id])));
+  return Object.fromEntries(Object.entries(query || {}).filter(([k, val]) => ok.has(k) && typeof val === 'string').map(([k, val]) => [k, val.slice(0, 200)]));
+}
+
 function mountForms(r, { base, store, mailer, content, render, wrap, limit, readMember, ctxOf, tOf, log = console, notifyTo = '', confirmNews = null }) {
   const pool = store && store.pool, q = (t, p) => pool.query(t, p);
   const formsOf = (C) => C.forms || [];
@@ -63,24 +99,8 @@ function mountForms(r, { base, store, mailer, content, render, wrap, limit, read
   r.get('/forms/:id', wrap(async (req, res, next) => {
     const X = ctxOf(req), { t, C } = X, f = formsOf(C).find((x) => x.id === req.params.id);
     if (!f) return next();
-    const input = (x) => {
-      const req_ = x.required ? ' required' : '', lab = (inner) => `<label>${esc(x.label)}${x.required ? ' *' : ''} ${inner}</label>`;
-      switch (x.type) {
-        case 'textarea': return lab(`<textarea name="${x.id}" rows="4" maxlength="3000"${req_}></textarea>`);
-        case 'select': return lab(`<select name="${x.id}"${req_}><option value="">—</option>${x.options.map((o, i) => `<option value="${i}">${esc(optLabel(o))}</option>`).join('')}</select>`);
-        case 'checkbox': return `<label class="check"><input type="checkbox" name="${x.id}"${req_}> ${esc(x.label)}${x.required ? ' *' : ''}</label>`;
-        case 'checkboxes': return `<fieldset class="radios" data-group="${x.id}"><legend>${esc(x.label)}${x.required ? ' *' : ''}</legend>${x.options.map((o, i) => `<label><input type="checkbox" name="${x.id}" value="${i}"> ${esc(optLabel(o))}</label>`).join('')}</fieldset>`;
-        case 'number': return lab(`<input type="number" name="${x.id}" min="${x.min || 0}" max="${x.max || 1000}" inputmode="numeric"${req_}>`);
-        case 'children': return `<fieldset class="kids" data-children="${x.id}"><legend>${esc(x.label)}${x.required ? ' *' : ''}</legend>${Array.from({ length: x.rows || 3 }, (_, i) => `<div class="fields kid" data-row="${i}">${x.columns.map((c) => `<label>${esc(t(COLUMNS[c] || c))} <input name="${x.id}.${i}.${c}"${c === 'birthday' ? ' type="date"' : ''}${x.required && i === 0 && c === 'name' ? ' required' : ''}></label>`).join('')}</div>`).join('')}</fieldset>`;
-        default: return lab(`<input type="${x.type === 'email' ? 'email' : x.type === 'tel' ? 'tel' : x.type === 'date' ? 'date' : 'text'}" name="${x.id}"${x.id === 'name' ? ' autocomplete="name"' : x.type === 'email' ? ' autocomplete="email"' : x.type === 'tel' ? ' autocomplete="tel"' : ''}${req_}>`);
-      }
-    };
     const body = `<section class="wrap sec narrow"><p class="crumbs"><a href="/forms">${esc(t('Sign-ups and orders'))}</a> ›</p><h1>${esc(f.title)}</h1><p class="lead-d">${esc(f.intro)}</p>
-<form class="card tool" data-form="${f.id}">
-${f.fields.map(input).join('\n')}
-<button class="btn gold" type="submit">${esc(f.button || t('Send'))}</button><p class="msg" hidden></p>
-<p class="pay-next" hidden><a class="btn gold" href="#">${esc(f.payment ? f.payment.label : '')}</a></p>
-</form>
+${formHtml(X, f, prefillOf(f, req.query))}
 <p class="muted">${esc(t('Questions? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/forms/' + f.id, title: f.title, description: f.intro, body });
   }));
@@ -139,4 +159,4 @@ ${G.building ? `<h2 id="building">${esc(t('Building Campaign'))}</h2><p>${esc(G.
     },
   };
 }
-module.exports = { mountForms, readAnswers };
+module.exports = { mountForms, readAnswers, formHtml, startCard };

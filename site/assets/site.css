@@ -628,3 +628,24 @@ a.ce:hover { filter: brightness(.95); text-decoration: underline; }
   .cl-item .ce { font-size: .95rem; padding: 6px 10px; flex: 1 1 60%; }
   .cl-item .muted { flex-basis: 100%; font-size: .85rem; padding-inline-start: 10px; }
 }
+
+/* forms that feel part of the page: soft panels instead of boxed fieldsets */
+form.tool { gap: 16px; padding: 22px; }
+form.tool fieldset.kids { border: 0; margin: 0; padding: 14px 14px 4px; border-radius: 14px; background: var(--soft); }
+form.tool fieldset.kids legend { float: left; width: 100%; padding: 0 0 8px; font-weight: 700; font-size: .95rem; }
+form.tool fieldset.kids legend + * { clear: both; }
+form.tool .fields.kid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+form.tool input, form.tool select, form.tool textarea { background: var(--card); }
+form.tool fieldset.radios { gap: 10px 18px; }
+form.tool fieldset.radios legend { font-weight: 700; font-size: .95rem; margin-bottom: 6px; }
+form.tool .btn.gold { justify-self: start; min-width: 200px; }
+/* the answer of a calculator */
+.card.answer { margin: 18px 0; border-color: var(--gold); background: linear-gradient(160deg, #fff8e6, var(--card) 60%); text-align: center; padding: 22px 18px; }
+.card.answer .big { font-family: var(--serif); font-size: clamp(1.5rem, 5vw, 2rem); font-weight: 600; margin: 4px 0; line-height: 1.2; }
+.card.answer .he { font-size: 1.2rem; }
+.card.answer .btns { justify-content: center; }
+.parsha-answer { margin: 16px auto 4px; padding-top: 14px; border-top: 1px dashed var(--line); max-width: 420px; }
+.parsha-answer .hand { margin: 0; }
+.start-prep { margin-top: 30px; padding-top: 6px; }
+.start-prep .hand { margin: 0; } .start-prep h2 { margin-top: 2px; }
+.start-card .btns { margin: 0; }

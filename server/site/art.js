@@ -89,7 +89,7 @@ function decorate(html, pagePath) {
   return top ? html.replace(/<h1>/, `<div class="page-art" aria-hidden="true">${artImg(top, 'lg')}</div><h1>`) : html;
 }
 
-const artImg = (name, size = 'sm') => (name ? `<img class="art art-${size}" src="/assets/art/${name}.svg" alt="" width="${size === 'lg' ? 96 : 56}" height="${size === 'lg' ? 96 : 56}" loading="lazy" decoding="async">` : '');
+const artImg = (name, size = 'sm') => (name ? `<img class="art art-${size}" src="/assets/art/${name}.svg" alt="" width="${size === 'lg' ? 96 : 56}" height="${size === 'lg' ? 96 : 56}"${size === 'lg' ? '' : ' loading="lazy"'} decoding="async">` : ''); // the big one at the top shows at once
 const art = (kind, slug, extra, size) => artImg(artFor(kind, slug, extra), size);
 
 module.exports = { art, artFor, artForPath, artImg, decorate, photoForPath, PHOTOS, reset: () => { have = null; } };

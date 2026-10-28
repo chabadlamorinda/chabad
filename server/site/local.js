@@ -104,7 +104,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
 <p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › ${esc(t(a.category))}</p>
 <h1>${esc(a.title)}</h1>
 <p class="lead-d">${esc(a.description)}</p>
-${act ? actionCard(X, topic, a.local || '') : ''}
+${act ? actionCard(X, topic, a.local || '') : require('./forms.js').startCard(X, '/learn/' + a.slug)}
 ${(() => { const html = md(a.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]; return (hs.length >= 4 ? `<details class="toc"><summary>${esc(t('On this page'))} · ${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))}</summary>${hs.map((h) => `<a href="#${h[1]}">${h[2]}</a>`).join('')}</details>` : '') + html; })()}
 ${a.local && !act ? `<div class="card local"><p><strong>${esc(t('In Lamorinda'))}:</strong> ${esc(a.local)}</p><p class="btns"><a class="btn gold sm" href="/help/talk-to-the-rabbi">${esc(t('Contact the Rabbi'))}</a></p></div>` : ''}
 ${occ ? `<p class="occasion-line">${esc(t('Mark the occasion: sponsor a Kiddush or give in their honor'))} <a href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory'))} →</a></p>` : ''}

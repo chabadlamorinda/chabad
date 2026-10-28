@@ -968,7 +968,7 @@
  "Get the Friday candle-lighting email": "Получайте письмо со временем зажигания свечей по пятницам",
  "Add a yahrzeit to remember": "Добавьте йорцайт",
  "Add a phone number": "Добавьте номер телефона",
- "Get started": "Начнём",
+ "Get started": "Начать",
  "{done} of {all} done": "Готово: {done} из {all}",
  "Name for prayer (Hebrew name and mother's name, if you know them)": "Имя для молитвы (еврейское имя и имя матери, если знаете)",
  "on the list since {date}": "в списке с {date}",
@@ -1257,5 +1257,9 @@
  "Everything at Chabad of Lamorinda this month: events, classes, Shabbat and the holidays. Tap anything to see more or sign up.": "Всё, что происходит в Хабаде Ламоринды в этом месяце: события, уроки, Шабат и праздники. Нажмите на любой пункт, чтобы узнать больше или записаться.",
  "Nothing more this month.": "В этом месяце больше ничего нет.",
  "The Chabad of Lamorinda calendar: events, weekly classes, Shabbat and Jewish holidays in Lafayette, Moraga and Orinda, with links to sign up.": "Календарь Хабада Ламоринды: события, еженедельные уроки, Шабат и праздники в Лафайетте, Мораге и Оринде, со ссылками для записи.",
- "Chanukah: night {n}": "Ханука: {n}-й вечер"
+ "Chanukah: night {n}": "Ханука: {n}-й вечер",
+ "Start preparing with the Rabbi": "Начните подготовку с раввином",
+ "Ready to begin?": "Готовы начать?",
+ "Born after sunset.": "Родился(-ась) после заката.",
+ "Find the Bar or Bat Mitzvah parshah": "Узнать главу Торы бар- или бат-мицвы"
 }
