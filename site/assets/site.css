@@ -191,6 +191,11 @@ textarea { font: inherit; }
 .chapters a { display: inline-block; min-width: 2.2em; text-align: center; padding: 2px 4px; }
 .occasion { margin: 24px 0; border-color: var(--gold); }
 .dedication { font-size: 1.1rem; }
+.loved-one .hand, .dedication-card .hand { font-size: 1.5rem; margin: 0 0 .3rem; color: var(--gold-ink); }
+.loved-one .occ { border: 0; padding: 0; margin: 0 0 .8rem; }
+.loved-one .occ legend { font-weight: 600; margin-bottom: .4rem; }
+.dedication-card { text-align: center; background: var(--soft); }
+.dedication-card .ded-text { font-family: var(--serif); font-size: 1.35rem; font-style: italic; margin: .2rem 0 .6rem; }
 .give-next { margin-top: 12px; }
 
 /* "Ask us" chat */

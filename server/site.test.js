@@ -403,6 +403,9 @@ test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const sp = (await c.call('GET', '/sponsor?o=yahrzeit&name=Avraham%20ben%20Yitzchak')).text;
   assert.match(sp, /In memory of Avraham ben Yitzchak/); assert.match(sp, /\/donate\?fund=general&amp;ded=In%20memory%20of%20Avraham%20ben%20Yitzchak#give/);
   assert.match(sp, /href="\/sponsor-a-kiddush"/);
+  const lo = (await c.call('GET', '/sponsor?o=yahrzeit&name=Sarah%20Cohen&hn=Sarah%20bat%20Avraham')).text; // "Add a loved one"
+  assert.match(lo, /Add a loved one/); assert.match(lo, /class="ded-text">In memory of Sarah Cohen \(Sarah bat Avraham\)/); assert.match(lo, /href="\/account\?yahrzeit=Sarah%20Cohen#yahrzeits"/);
+  assert.match((await c.call('GET', '/he/sponsor?o=birthday&name=A')).text, /הוסיפו אדם יקר/);
   const th = (await c.call('GET', '/tehillim?name=' + encodeURIComponent('משה'))).text;
   assert.match(th, /Psalms\.119\.97-104/); assert.match(th, /Psalms\.119\.161-168/); assert.match(th, /Psalms\.119\.33-40/); // מ ש ה
   const bd = (await c.call('GET', '/tehillim?b=1986-05-01')).text;

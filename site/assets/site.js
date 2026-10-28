@@ -515,6 +515,8 @@
       div.row = row; yList.appendChild(div);
     };
     web.forEach(addY);
+    var yq = (new URLSearchParams(location.search).get('yahrzeit') || '').trim().slice(0, 60); /* from /sponsor: "Remember them every year" */
+    if (yq && !web.some(function (y) { return y.name === yq; })) addY({ name: yq });
     var s3 = el('form', { class: 'card', id: 'yahrzeits' }, [el('h2', { text: T('Yahrzeits') }), el('p', { class: 'muted', text: T('We work out the Hebrew date and remind you every year.') }),
       fromApp.length ? el('ul', {}, fromApp.map(function (y) { return el('li', {}, [y.name + ' · ' + y.day + ' ' + y.month + (y.next ? ' · ' + T('next yahrzeit {date}', { date: y.next }) : '') + ' ' + T('(from the My Pushka app)') + ' ', sponsorLink(y)]); })) : null,
       yList, el('p', { class: 'btns' }, [el('button', { type: 'button', class: 'btn ghost', text: T('+ Add a yahrzeit'), on: { click: function () { addY(); } } }), el('button', { class: 'btn gold', text: T('Save yahrzeits') })]), m3]);

@@ -155,18 +155,23 @@ ${sit}
 
   // ---------- Sponsor in honor or memory ----------
   r.get('/sponsor', wrap(async (req, res) => {
-    const X = ctxOf(req), { t, C } = X, S = C.sponsor, oc = S.occasions.find((x) => x.id === req.query.o) || null, who = String(req.query.name || '').trim().slice(0, 60);
+    const X = ctxOf(req), { t, C } = X, S = C.sponsor, oc = S.occasions.find((x) => x.id === req.query.o) || null, who0 = String(req.query.name || '').trim().slice(0, 60);
+    // "Add a loved one": their name (and Hebrew name), the occasion, and the dedication carries into every way to mark it.
+    const hn = String(req.query.hn || '').trim().slice(0, 60), who = who0 && hn ? `${who0} (${hn})` : who0 || hn;
     const ded = oc ? (who ? oc.dedication.replace('{name}', who) : oc.dedication.replace(/\s*\{name\}('s)?\s*/, ' ').replace(/\s+/g, ' ').trim()) : '';
     const opts = S.options.map((p) => `<div class="card dir-i"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p><p><a class="btn ${p.id === 'kiddush' ? 'gold' : 'ghost'} sm" href="${p.url ? esc(p.url) : esc(giveUrl(p.fund, ded))}">${esc(p.id === 'kiddush' ? t('Choose a Shabbat') : t('Sponsor'))}</a></p></div>`).join('');
     const sit = oc && { yahrzeit: 'yahrzeit', refuah: 'refuah', 'new-baby': 'new-baby', birthday: 'birthday' }[oc.id];
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor in honor or memory'))}</h1>
 <p class="lead-d">${esc(S.intro)}</p>
-<form class="card tool" method="get" action="/sponsor">
-  <label>${esc(t('The occasion'))} <select name="o">${S.occasions.map((x) => `<option value="${x.id}"${oc && oc.id === x.id ? ' selected' : ''}>${esc(x.title)}</option>`).join('')}</select></label>
-  <label>${esc(t('For whom? (name)'))} <input name="name" value="${esc(who)}" maxlength="60"></label>
-  <button class="btn ghost" type="submit">${esc(t('Continue'))}</button>
+<form class="card tool loved-one" method="get" action="/sponsor#mark">
+  <p class="hand">${esc(t('Add a loved one'))}</p>
+  <fieldset class="radios occ"><legend>${esc(t('The occasion'))}</legend><div class="chips">${S.occasions.map((x, i) => `<label class="chip pick"><input type="radio" name="o" value="${x.id}"${(oc ? oc.id === x.id : i === 0) ? ' checked' : ''}> ${esc(x.title)}</label>`).join('')}</div></fieldset>
+  <div class="fields"><label>${esc(t('Their name'))} <input name="name" value="${esc(who0)}" maxlength="60" autocomplete="off" placeholder="${esc(t('e.g. Sarah Cohen'))}"></label>
+  <label>${esc(t('Hebrew name (optional)'))} <input name="hn" value="${esc(hn)}" maxlength="60" dir="auto" placeholder="${esc(t('e.g. Sarah bat Avraham'))}"></label></div>
+  <button class="btn gold" type="submit">${esc(t('Continue'))}</button>
 </form>
-${oc ? `<p class="dedication">${esc(t('Your dedication:'))} <strong>${esc(ded)}</strong></p>` : ''}
+${oc && who ? `<div class="card dedication-card" id="mark"><p class="hand">${esc(t('Your dedication'))}</p><p class="ded-text">${esc(ded)}</p>
+${oc.id === 'yahrzeit' ? `<p class="btns"><a class="btn ghost sm" href="/account?yahrzeit=${encodeURIComponent(who0 || hn)}#yahrzeits">${esc(t('Remember {name} every year: get a yahrzeit reminder', { name: who0 || hn }))}</a></p>` : ''}</div>` : oc ? `<p class="dedication" id="mark">${esc(t('Your dedication:'))} <strong>${esc(ded)}</strong></p>` : ''}
 <h2>${esc(t('Choose how to mark it'))}</h2>
 <div class="dir">${opts}</div>
 ${sit ? `<p class="btns"><a class="btn ghost" href="/tehillim#${sit}">${esc(t('Tehillim to say for this'))}</a>${oc.id === 'yahrzeit' ? `<a class="btn ghost" href="/kaddish">${esc(t('Kaddish'))}</a><a class="btn ghost" href="/tools/yahrzeit">${esc(t('Yahrzeit calculator'))}</a>` : ''}</p>` : ''}

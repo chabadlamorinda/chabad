@@ -1181,5 +1181,12 @@
  "This Shabbat in Lafayette: candle lighting {time} on {date}.": "השבת בלאפייט: הדלקת נרות ב־{time}, {date}.",
  "Kabbalat Shabbat at Chabad: {time}.": "קבלת שבת בחב״ד: {time}.",
  "Shabbat ends Saturday at {time}.": "השבת יוצאת במוצאי שבת ב־{time}.",
- "{holiday} begins at sundown on {eve}; the first day is {date}.": "{holiday} מתחיל עם השקיעה ב{eve}; היום הראשון הוא {date}."
+ "{holiday} begins at sundown on {eve}; the first day is {date}.": "{holiday} מתחיל עם השקיעה ב{eve}; היום הראשון הוא {date}.",
+ "Add a loved one": "הוסיפו אדם יקר",
+ "Hebrew name (optional)": "שם עברי (לא חובה)",
+ "Remember {name} every year: get a yahrzeit reminder": "לזכור את {name} בכל שנה: קבלו תזכורת ליום השנה",
+ "Their name": "השם",
+ "Your dedication": "ההקדשה שלכם",
+ "e.g. Sarah Cohen": "למשל: שרה כהן",
+ "e.g. Sarah bat Avraham": "למשל: שרה בת אברהם"
 }

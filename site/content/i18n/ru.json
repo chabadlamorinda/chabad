@@ -1273,5 +1273,12 @@
  "This Shabbat in Lafayette: candle lighting {time} on {date}.": "Шабат в Лафайетте: зажигание свечей в {time}, {date}.",
  "Kabbalat Shabbat at Chabad: {time}.": "Встреча Шабата в Хабаде: {time}.",
  "Shabbat ends Saturday at {time}.": "Шабат заканчивается в субботу в {time}.",
- "{holiday} begins at sundown on {eve}; the first day is {date}.": "{holiday} начинается на закате, {eve}; первый день — {date}."
+ "{holiday} begins at sundown on {eve}; the first day is {date}.": "{holiday} начинается на закате, {eve}; первый день — {date}.",
+ "Add a loved one": "Добавьте близкого человека",
+ "Hebrew name (optional)": "Еврейское имя (необязательно)",
+ "Remember {name} every year: get a yahrzeit reminder": "Помнить {name} каждый год: напоминание о йорцайте",
+ "Their name": "Имя",
+ "Your dedication": "Ваше посвящение",
+ "e.g. Sarah Cohen": "например, Сара Коэн",
+ "e.g. Sarah bat Avraham": "например, Сара бат Авраам"
 }
