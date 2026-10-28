@@ -393,3 +393,7 @@ h2[id] { scroll-margin-top: 80px; }
 .mz-cta { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; border-inline-start: 4px solid var(--gold, #c9a227); }
 .mz-cta .btn { align-self: flex-start; }
 .consult-line .btn { margin-inline-end: 8px; margin-bottom: 6px; vertical-align: middle; }
+/* /learn: the first guides of each subject as cards, the rest as a compact two-column list */
+.more-guides { list-style: none; padding: 0; margin: 14px 0 6px; columns: 2 280px; column-gap: 28px; }
+.more-guides li { break-inside: avoid; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.more-guides a { text-decoration: none; color: var(--ink); } .more-guides a:hover { color: var(--navy); text-decoration: underline; }

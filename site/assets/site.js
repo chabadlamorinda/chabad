@@ -339,7 +339,7 @@
     box.addEventListener('input', function () {
       var q = box.value.trim().toLowerCase();
       [].forEach.call(items, function (it) { it.hidden = !!q && it.textContent.toLowerCase().indexOf(q) < 0; });
-      [].forEach.call(document.querySelectorAll('#guides h2'), function (h) { var g = h.nextElementSibling; h.hidden = g && ![].some.call(g.children, function (c) { return !c.hidden; }); });
+      [].forEach.call(document.querySelectorAll('#guides h2'), function (h) { var g = h.nextElementSibling; h.hidden = g && ![].some.call(g.querySelectorAll('.tile'), function (c) { return !c.hidden; }); });
     });
   });
 
