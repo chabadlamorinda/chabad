@@ -387,7 +387,7 @@ h2[id] { scroll-margin-top: 80px; }
 .cm.reach > span { font-weight: 600; font-size: .9rem; }
 .first-call { margin: 6px 0 14px; } .first-call a { color: inherit; text-decoration-color: var(--gold, #c9a227); text-underline-offset: 3px; }
 .mz-total { font-size: 1.15rem; } .mz-total strong { font-size: 2rem; color: var(--navy); font-family: var(--serif, Georgia, serif); }
-.mitzvah h3 a { color: inherit; text-decoration: none; }
+.mitzvah .mz-h { font-size: 1.15rem; margin: 0 0 6px; } .mitzvah .mz-h a { color: inherit; text-decoration: none; }
 .mz-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .mitzvah .rabbi-contact { margin: 12px 0 0; box-shadow: none; }
 .mz-cta { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; border-inline-start: 4px solid var(--gold, #c9a227); }

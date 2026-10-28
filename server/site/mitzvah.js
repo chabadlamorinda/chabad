@@ -47,7 +47,7 @@ function mountMitzvah(app, r, { store, render, wrap, ctxOf, limit, base = '', lo
 
   r.get('/mitzvah', wrap(async (req, res) => {
     const X = ctxOf(req), t = X.t, c = await counts(), total = Object.values(c).reduce((a, b) => a + b, 0);
-    const card = (m) => `<div class="card mitzvah" data-mitzvah="${m.id}"><h3><a href="${m.link}">${esc(t(m.title))}</a></h3><p>${esc(t(m.why))}</p>
+    const card = (m) => `<div class="card mitzvah" data-mitzvah="${m.id}"><h2 class="mz-h"><a href="${m.link}">${esc(t(m.title))}</a></h2><p>${esc(t(m.why))}</p>
 <p class="mz-row"><button type="button" class="btn gold sm" data-mitzvah-do>${esc(t("I'll do it"))}</button><span class="muted" data-mitzvah-count>${esc(t('{n} this month', { n: c[m.id] || 0 }))}</span></p>
 <div class="mz-done" hidden><p><strong>${esc(t('Thank you! Every mitzvah adds light to the world.'))}</strong> <a href="${m.link}">${esc(t('How to do it'))} →</a></p>${m.lead ? contactBox(X, m.lead) : ''}</div></div>`;
     const body = `<section class="wrap sec"><h1>${esc(t('Do a mitzvah this week'))}</h1>
