@@ -569,6 +569,17 @@ test('visitors: pages noted under an anonymous id, linked to a person when they 
   assert.match((await client().call('GET', '/privacy')).text, /do not keep IP addresses/);
 });
 
+test("the Rabbi's morning summary: requests and people looking at important topics, once a day", async () => {
+  const { createReminders } = require('./site/reminders.js');
+  await store.pool.query("INSERT INTO site_leads (topic, channel, page, detail) VALUES ('mezuzah','chat','/learn/mezuzah','- Can someone put up a mezuzah?')");
+  const out = [], day = new Date().toISOString().slice(0, 10), rem = createReminders({ store, mailer: { send: async (m) => out.push(m) }, base: 'http://site.test', org: load().org, notifyTo: 'rabbi@example.org', now: () => new Date(day + 'T17:30:00Z') });
+  await store.pool.query("DELETE FROM email_log WHERE key LIKE 'digest:%'");
+  await rem.run(); await rem.run();
+  const d = out.filter((m) => /^Website this morning/.test(m.subject));
+  assert.equal(d.length, 1, 'once a day'); assert.equal(d[0].to, 'rabbi@example.org');
+  assert.match(d[0].text, /REQUESTS[\s\S]*asked the chat about mezuzah/); assert.match(d[0].text, /\/admin\/community/);
+});
+
 test('chat without Claude: answers with matching pages', () => {
   const { searchAnswer } = require('./site/chat.js');
   const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));

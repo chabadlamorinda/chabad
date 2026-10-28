@@ -126,7 +126,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     }, 30e3).unref();
   }
   const weekly = mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log, upcoming: () => pages.upcoming() });
-  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
+  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, notifyTo: env.ADMIN_EMAIL || '', townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   if (reminders && mail) mail.start();
   // Account page: the form is drawn by site.js from /api/site/me.
   r.get('/account', wrap(async (req, res) => {

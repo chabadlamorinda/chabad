@@ -8,7 +8,7 @@ const { fmtClock } = require('./content.js');
 
 const ptNow = (d) => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' }).formatToParts(d).map((x) => [x.type, x.value])); return { ymd: `${p.year}-${p.month}-${p.day}`, hour: +p.hour }; };
 
-function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null, townsOf = null }) {
+function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null, townsOf = null, notifyTo = '' }) {
   if (!store || !mailer) return null;
   const q = (t, p) => store.pool.query(t, p);
   const T = (lang) => (i18n ? i18n.makeT(lang) : (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x));
@@ -24,6 +24,11 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
     const send = async (k, msg) => { try { await mailer.send(msg); sent++; } catch (e) { await q('DELETE FROM email_log WHERE key=$1', [k]).catch(() => {}); log.error('reminder email:', e && e.message); } };
     const { ymd: today, hour } = ptNow(now());
     if (hour < 9) return 0;
+    // The Rabbi's morning summary (once a day, only when something happened).
+    if ((notifyTo || org.email) && await once(key = `digest:${today}`)) {
+      const d = await require('./digest.js').morningDigest(q, base).catch((e) => { log.error('digest:', e && e.message); return null; });
+      if (d) await send(key, { to: notifyTo || org.email, subject: d.subject, text: d.text });
+    }
     // Website members (signed in at least once) get email; app-only members get the app's push reminders.
     const ys = (await q(`SELECT y.*, m.name AS member_name, m.email, m.lang FROM yahrzeits y JOIN members m ON m.id=y.member_id WHERE m.last_login IS NOT NULL AND m.email <> ''`)).rows;
     for (const y of ys) {
