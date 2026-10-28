@@ -134,7 +134,7 @@
         var pub = /^(mazal-tov|announcement|shiva)$/.test(f.getAttribute('data-kind') || val('kind'));
         msg(m, pub ? T('Thank you! The Rabbi will review it and post it soon.') : T('Thank you! We received it and the Rabbi will be in touch.'), true);
         var give = $('.give-next', f);
-        if (give) { var l = $('a', give), ded = (l.getAttribute('data-ded') || '').replace('{name}', who); l.href = l.href.replace(/([?&]ded=)[^&]*/, '$1' + encodeURIComponent(ded.slice(0, 80))); give.hidden = false; }
+        if (give) { var l = $('a', give), ded = (l.getAttribute('data-ded') || '').replace('{name}', who); l.href = l.href.replace(/([?&]ded=)[^&#]*/, '$1' + encodeURIComponent(ded.slice(0, 80))); give.hidden = false; }
         [].forEach.call(f.querySelectorAll('textarea, input[name=title], input[name=link]'), function (x) { if (x.type !== 'hidden') x.value = ''; });
       });
     });
@@ -201,6 +201,46 @@
       });
     });
   }
+
+  // ---------- Giving (/donate, /chai-club): on to Stripe's secure checkout page ----------
+  Array.prototype.forEach.call(document.querySelectorAll('form[data-give]'), function (f) {
+    var err = f.querySelector('.give-err'), btn = f.querySelector('button[type=submit]'), other = f.elements.other;
+    var fail = function (m, at) { err.textContent = m; err.hidden = false; if (at && at.focus) at.focus(); };
+    if (other) other.addEventListener('input', function () { if (other.value) Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.checked = false; }); });
+    Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.addEventListener('change', function () { if (other) other.value = ''; }); });
+    f.addEventListener('submit', function (e) {
+      e.preventDefault(); err.hidden = true;
+      var pick = f.querySelector('input[name=amt]:checked'), amount = Number(other && other.value ? other.value : pick ? pick.value : 0);
+      if (!(amount >= 1 && amount <= 10000)) return fail(T('Please enter an amount between $1 and $10,000.'), other);
+      var freq = f.elements.freq, monthly = (freq && (freq.value || (f.querySelector('input[name=freq]:checked') || {}).value)) === 'monthly';
+      var body = { amount: amount, fund: f.elements.fund.value, freq: monthly ? 'monthly' : 'once', dedication: f.elements.dedication.value, fee: f.elements.fee.checked, lang: LANG, back: f.getAttribute('data-back') || '/donate', idem: 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
+      if (f.elements.show) {
+        body.club = { show: f.elements.show.checked, name: f.elements.boardName.value.trim() };
+        if (body.club.show && !body.club.name) return fail(T('Please enter the name for the board.'), f.elements.boardName);
+      }
+      btn.disabled = true; btn.textContent = T('Opening secure checkout…');
+      fetch('/api/give/checkout', { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, status: r.status, j: j }; }); })
+        .then(function (x) {
+          if (x.ok && x.j.url) { if (window.gtag) window.gtag('event', 'begin_checkout', { value: amount, currency: 'USD' }); location.href = x.j.url; return; }
+          throw new Error(x.status === 503 ? T('Online giving is opening soon. Please call 925-384-7242, or see other ways to give below.') : (x.j.error || T('Something went wrong. Please try again.')));
+        })
+        .catch(function (e2) { btn.disabled = false; btn.textContent = T('Continue to secure payment'); fail(e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.')); });
+    });
+  });
+  // The Chai Club honor board (names the partners chose to show; amounts are never shown).
+  Array.prototype.forEach.call(document.querySelectorAll('[data-club-board]'), function (box) {
+    fetch('/api/club', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (d) {
+      box.textContent = '';
+      var levels = [['platinum', 'Platinum'], ['gold', 'Gold'], ['silver', 'Silver'], ['bronze', 'Bronze']], any = false;
+      levels.forEach(function (l) {
+        var names = (d.members || []).filter(function (m) { return m.level === l[0]; });
+        if (!names.length) return; any = true;
+        box.appendChild(el('div', { class: 'club-row ' + l[0] }, [el('h3', { text: T(l[1]) }), el('ul', {}, names.map(function (m) { return el('li', { text: m.name }); }))]));
+      });
+      if (d.total) box.appendChild(el('p', { class: 'muted', text: T('{n} partners in all', { n: d.total }) }));
+      if (!any && !d.total) box.appendChild(el('p', { class: 'muted', text: T('Be the first to join!') }));
+    }).catch(function () { box.textContent = ''; });
+  });
 
   // ---------- "Ask us" chat ----------
   // "I'll do it" on /mitzvah: counts the pledge, shows how-to (and Call / WhatsApp the Rabbi for tefillin and mezuzah).

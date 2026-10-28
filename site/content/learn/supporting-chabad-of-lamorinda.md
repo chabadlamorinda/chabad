@@ -45,7 +45,7 @@ The Building Campaign is helping to build a permanent home for Jewish life in La
 
 ## Give in honor or in memory
 
-Mark a birthday, yahrzeit, anniversary or recovery by [sponsoring a Kiddush](/kiddush/), a Shabbat dinner, a Torah class or a children's program. See all the options on the [sponsor page](/sponsor). And keep a [pushka](/learn/pushka), a charity box, at home, so your family can give a little every weekday.
+Mark a birthday, yahrzeit, anniversary or recovery by [sponsoring a Kiddush](/sponsor-a-kiddush), a Shabbat dinner, a Torah class or a children's program. See all the options on the [sponsor page](/sponsor). And keep a [pushka](/learn/pushka), a charity box, at home, so your family can give a little every weekday.
 
 ## Giving your time
 

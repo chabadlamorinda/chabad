@@ -399,8 +399,8 @@ test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const c = client();
   for (const p of ['/help', '/help/someone-passed-away', '/help/someone-is-sick', '/kaddish', '/tehillim', '/sponsor', '/he/help', '/ru/kaddish', '/he/tehillim']) assert.equal((await c.call('GET', p)).status, 200, p);
   const sp = (await c.call('GET', '/sponsor?o=yahrzeit&name=Avraham%20ben%20Yitzchak')).text;
-  assert.match(sp, /In memory of Avraham ben Yitzchak/); assert.match(sp, /\/pushka\/\?go=give&amp;fund=general&amp;ded=In%20memory%20of%20Avraham%20ben%20Yitzchak/);
-  assert.match(sp, /href="\/kiddush\/"/);
+  assert.match(sp, /In memory of Avraham ben Yitzchak/); assert.match(sp, /\/donate\?fund=general&amp;ded=In%20memory%20of%20Avraham%20ben%20Yitzchak#give/);
+  assert.match(sp, /href="\/sponsor-a-kiddush"/);
   const th = (await c.call('GET', '/tehillim?name=' + encodeURIComponent('משה'))).text;
   assert.match(th, /Psalms\.119\.97-104/); assert.match(th, /Psalms\.119\.161-168/); assert.match(th, /Psalms\.119\.33-40/); // מ ש ה
   const bd = (await c.call('GET', '/tehillim?b=1986-05-01')).text;
@@ -448,7 +448,7 @@ test('forms: Hebrew School registration with tuition, camp pricing, chametz auth
   assert.equal(bad.status, 400); assert.match(bad.json.error, /Email/);
   const ok = await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Sara Levi', email: 'sara@x.co', phone: '925', emergency: 'David 925', photos: true, children: [{ name: 'Noa', birthday: '2016-01-15', grade: '4' }, { name: 'Eli', grade: '1' }, { name: '' }] } });
   assert.equal(ok.status, 200); assert.equal(ok.json.amount, 1200);
-  assert.match(ok.json.payUrl, /^\/pushka\/\?go=give&fund=children&amt=1200&ded=/);
+  assert.match(ok.json.payUrl, /^\/donate\?fund=children&amt=1200&ded=.*#give$/);
   assert.ok(mails.some((m) => /^We received it: Lamorinda Hebrew School registration/.test(m.subject)));
   const camp = await g.call('POST', '/api/site/forms/summer-camp', { fields: { name: 'A', email: 'a@x.co', phone: '1', plan: 1, weeks: 3, children: [{ name: 'Kid' }] } });
   assert.equal(camp.json.amount, 1500);
@@ -467,7 +467,16 @@ test('forms: Hebrew School registration with tuition, camp pricing, chametz auth
 
 test('the donation page works on the site itself', async () => {
   const d = (await client().call('GET', '/donate')).text;
-  assert.match(d, /\/pushka\/\?go=give&amp;fund=general&amp;amt=180/); assert.match(d, /id="building"/); assert.match(d, /CHABAD-LAMORINDA/); assert.match(d, /47-4642750/);
+  assert.match(d, /<form class="card give" id="give" data-give/); assert.match(d, /name="amt" value="180"/); assert.ok(!/href="\/pushka\//.test(d.split('<main')[1].split('</main>')[0]), 'giving stays on the website');
+  const pre = (await client().call('GET', '/donate?fund=children&amt=250&ded=For%20Sara')).text;
+  assert.match(pre, /<option value="children" selected/); assert.match(pre, /name="other"[^>]*value="250"/); assert.match(pre, /value="For Sara"/);
+  const club = (await client().call('GET', '/chai-club')).text;
+  assert.match(club, /data-club-board/); assert.match(club, /name="boardName"/); assert.match(club, /Platinum/);
+  for (const L of ['', '/he', '/ru']) { const k = await client().call('GET', L + '/sponsor-a-kiddush'); assert.equal(k.status, 200); assert.match(k.text, /id="kiddush-embed"/); assert.match(k.text, /\/kiddush\/sponsor\.js/); }
+  assert.match((await client().call('GET', '/ru/sponsor-a-kiddush')).text, /СПОНСОР/);
+  const css = (await client().call('GET', '/assets/kiddush-embed.css')).text;
+  assert.match(css, /^\.kd\{/); assert.ok(!/(^|\})(body|html|main|footer|h1)\{/.test(css), 'every Kiddush style stays inside .kd');
+  assert.match(d, /id="building"/); assert.match(d, /CHABAD-LAMORINDA/); assert.match(d, /47-4642750/);
   assert.ok(!/chabadoflamorinda\.com\/\d/.test(d), 'no links to the old site');
 });
 
@@ -728,7 +737,7 @@ test('Ask the Rabbi: publish an answer, it becomes a page with Q&A markup', asyn
 
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
-  const ok = new Set(['/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',
+  const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',
     ...C.learn.map((a) => '/learn/' + a.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.help.map((h) => '/help/' + h.slug), ...C.forms.map((f) => '/forms/' + f.id), ...C.towns.map((t) => '/jewish-' + t.slug),
     '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah', '/tools/zmanim', '/tools/hebrew-birthday', '/shabbat-times', '/this-week', ...['moraga', 'orinda', 'pleasant-hill', 'martinez'].map((t) => '/shabbat-times/' + t), ...[0, 1].map((n) => '/jewish-holidays-' + (new Date().getFullYear() + n))]);
   const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));

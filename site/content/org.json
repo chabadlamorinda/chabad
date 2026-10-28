@@ -41,7 +41,7 @@
     }
   ],
   "legal": "A 501(c)(3) nonprofit, tax ID 47-4642750.",
-  "donateUrl": "/pushka/",
+  "donateUrl": "/donate",
   "social": {
     "facebook": "https://www.facebook.com/chabadoflamorinda"
   },
@@ -117,5 +117,5 @@
       "endTime": "12:00"
     }
   ],
-  "shabbatText": "## Shabbat dinner with the Rabbi's family\nRabbi Yisroel and Tzipora Labkowski and their family host Shabbat dinners: a traditional Friday night meal with Jewish songs, warm conversation and a festive table. It is a wonderful way to get to know the Rabbi and Rebbetzin. You are welcome any week of the year; please let us know you are coming at 925-384-7242 or through [contact](/contact).\n\n## Sponsor a Kiddush\nCelebrating a birthday, anniversary or yahrzeit? [Sponsor a Kiddush](/kiddush/) and share the occasion with the whole community."
+  "shabbatText": "## Shabbat dinner with the Rabbi's family\nRabbi Yisroel and Tzipora Labkowski and their family host Shabbat dinners: a traditional Friday night meal with Jewish songs, warm conversation and a festive table. It is a wonderful way to get to know the Rabbi and Rebbetzin. You are welcome any week of the year; please let us know you are coming at 925-384-7242 or through [contact](/contact).\n\n## Sponsor a Kiddush\nCelebrating a birthday, anniversary or yahrzeit? [Sponsor a Kiddush](/sponsor-a-kiddush) and share the occasion with the whole community."
 }

@@ -397,3 +397,20 @@ h2[id] { scroll-margin-top: 80px; }
 .more-guides { list-style: none; padding: 0; margin: 14px 0 6px; columns: 2 280px; column-gap: 28px; }
 .more-guides li { break-inside: avoid; padding: 7px 0; border-bottom: 1px solid var(--line); }
 .more-guides a { text-decoration: none; color: var(--ink); } .more-guides a:hover { color: var(--navy); text-decoration: underline; }
+
+/* giving form, Chai Club levels and honor board */
+.give { display: grid; gap: 16px; margin: 16px 0 24px; border-color: var(--gold); }
+.give fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; }
+.give legend { font-weight: 600; font-size: .95rem; margin-bottom: 6px; padding: 0; }
+.chip.pick { display: inline-flex; align-items: center; gap: 0; cursor: pointer; font-weight: 600; min-height: 44px; padding: 10px 16px; }
+.chip.pick input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.chip.pick:has(input:checked) { background: var(--navy); color: #fff; border-color: var(--navy); }
+.chip.pick:has(input:focus-visible) { outline: 3px solid var(--gold-2); outline-offset: 2px; }
+.give .small { font-size: .85rem; margin: 0; }
+.club-levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 16px 0; }
+.club-l { border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 2px; background: var(--card); border-top: 5px solid var(--lv, var(--gold)); }
+.club-l span { color: var(--muted); font-size: .9rem; }
+.club-l.platinum, .club-row.platinum { --lv: #8a96a8; } .club-l.gold, .club-row.gold { --lv: #c99a2e; } .club-l.silver, .club-row.silver { --lv: #b4bcc8; } .club-l.bronze, .club-row.bronze { --lv: #b07a4a; }
+.club-row { border-inline-start: 5px solid var(--lv); padding-inline-start: 12px; margin: 12px 0; }
+.club-row h3 { margin: 0 0 4px; }
+.club-row ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; }

@@ -23,6 +23,6 @@
     "details": "Every child learns at their own pace with the Rabbi and Rebbetzin. Boys learn to read from the Torah and put on tefillin; girls join the Bat Mitzvah Club. Find the date with our [Bar/Bat Mitzvah calculator](/tools/bar-bat-mitzvah)." },
   { "slug": "bay-kosher", "name": "Bay Kosher", "audience": "Everyone", "summary": "Kosher meat, groceries and Judaica, ordered online and delivered.", "url": "https://baykosher.com", "cta": "Shop at Bay Kosher",
     "details": "Bay Kosher, a project of Chabad of Lamorinda, makes keeping kosher in the East Bay easy: kosher meat and poultry, groceries, holiday foods and Judaica, delivered." },
-  { "slug": "chai-club", "name": "Chai Club", "audience": "Partners", "summary": "No dues, no building fund: our community is carried by monthly partners giving in multiples of 18.", "url": "/pushka/?go=club", "cta": "Join the Chai Club",
+  { "slug": "chai-club", "name": "Chai Club", "audience": "Partners", "summary": "No dues, no building fund: our community is carried by monthly partners giving in multiples of 18.", "url": "/chai-club", "cta": "Join the Chai Club",
     "details": "Chabad of Lamorinda has no membership dues. The Chai Club partners make it all possible with a monthly gift in multiples of 18 ($18, $36, $72, $180, $360 and up). Give Chai, get Chai! See the [Chai Club honor board](/board/)." }
 ]

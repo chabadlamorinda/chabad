@@ -64,30 +64,34 @@
   var DOW_HE = ['יום ראשון', 'יום שני', 'יום שלישי', 'יום רביעי', 'יום חמישי', 'יום שישי', 'שבת'];
   var DOW_EN = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Shabbos'];
 
+  // Inside the website (/sponsor-a-kiddush) the page's own language is used, and the website supplies the Russian.
+  var EMB = null;
+  try { var ej = document.getElementById('kiddush-embed'); if (ej) EMB = JSON.parse(ej.textContent); } catch (e) { EMB = null; }
   function pick() {
+    if (EMB) return EMB.lang === 'he' || EMB.lang === 'ru' ? EMB.lang : 'en';
     var m = /[?&]lang=(he|en)\b/.exec(location.search), v = null;
     if (m) { v = m[1]; try { localStorage.setItem('kiddush-lang', v); } catch (e) { /* private mode */ } return v; }
     try { v = localStorage.getItem('kiddush-lang'); } catch (e) { /* ignore */ }
     return v === 'he' ? 'he' : 'en';
   }
-  var lang = pick(), HEB = lang === 'he';
+  var lang = pick(), HEB = lang === 'he', RU = lang === 'ru', RUS = (EMB && EMB.s) || {}, LOC = HEB ? 'he-IL' : RU ? 'ru-RU' : '';
 
   function t(s, vars) {
-    var r = HEB && HE[s] ? HE[s] : s;
+    var r = HEB && HE[s] ? HE[s] : RU && RUS[s] ? RUS[s] : s;
     if (vars) Object.keys(vars).forEach(function (k) { r = r.split('{' + k + '}').join(vars[k]); });
     return r;
   }
   var d12 = function (iso) { var p = iso.split('-'); return new Date(+p[0], +p[1] - 1, +p[2], 12); };
   var KI = {
-    lang: lang, he: HEB, t: t,
+    lang: lang, he: HEB, embed: !!EMB, t: t,
     // "Oct 17" / "17 באוקטובר"
-    dateLabel: function (s) { if (!HEB) return s.dateLabel; try { return new Intl.DateTimeFormat('he-IL', { day: 'numeric', month: 'long' }).format(d12(s.date)); } catch (e) { return s.dateLabel; } },
-    monthYear: function (iso) { var d = d12(iso); if (HEB) { try { return new Intl.DateTimeFormat('he-IL', { month: 'long', year: 'numeric' }).format(d); } catch (e) { /* fall through */ } } return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][d.getMonth()] + ' ' + d.getFullYear(); },
-    dowName: function (iso) { var i = d12(iso).getDay(); return HEB ? DOW_HE[i] : DOW_EN[i]; },
-    dowShort: function (iso) { var i = d12(iso).getDay(); return HEB ? (i === 6 ? 'שבת' : 'יום ' + 'אבגדהו'[i] + '׳') : ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][i]; },
+    dateLabel: function (s) { if (!LOC) return s.dateLabel; try { return new Intl.DateTimeFormat(LOC, { day: 'numeric', month: 'long' }).format(d12(s.date)); } catch (e) { return s.dateLabel; } },
+    monthYear: function (iso) { var d = d12(iso); if (LOC) { try { return new Intl.DateTimeFormat(LOC, { month: 'long', year: 'numeric' }).format(d); } catch (e) { /* fall through */ } } return ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][d.getMonth()] + ' ' + d.getFullYear(); },
+    dowName: function (iso) { var i = d12(iso).getDay(); return HEB ? DOW_HE[i] : RU ? (i === 6 ? t('Shabbos') : new Intl.DateTimeFormat('ru-RU', { weekday: 'long' }).format(d12(iso))) : DOW_EN[i]; },
+    dowShort: function (iso) { var i = d12(iso).getDay(); if (RU) return new Intl.DateTimeFormat('ru-RU', { weekday: 'short' }).format(d12(iso)).toUpperCase(); return HEB ? (i === 6 ? 'שבת' : 'יום ' + 'אבגדהו'[i] + '׳') : ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][i]; },
     title: function (s) { return HEB && s.titleHe ? s.titleHe : s.title; },
     hebDate: function (s) { return HEB && s.hebHe ? s.hebHe : s.heb; },
-    kindLabel: function (k, english) { return HEB && KINDS_HE[k] ? KINDS_HE[k] : english; },
+    kindLabel: function (k, english) { return HEB && KINDS_HE[k] ? KINDS_HE[k] : t(english); },
     // "In honor of Sara" / "לכבוד Sara"
     reason: function (x) { if (!x) return ''; if (!HEB) return x.dedication || ''; return x.reason ? (KINDS_HE[x.kind] ? KINDS_HE[x.kind] + ' ' : '') + x.reason : ''; },
     // calendar note (yahrzeit, event...): "Tuesday, Oct 20: Yahrzeit of ..."
@@ -104,12 +108,12 @@
       return (dow >= 0 ? DOW_HE[dow] : r[1]) + ', ' + hh + ':' + r[3] + ' ו-' + r[5] + ' חלקים';
     },
     time: function (txt) { return HEB ? txt.replace(/(\d+):(\d+)\s*(AM|PM)/i, function (_, h, m, ap) { return ((+h % 12) + (/pm/i.test(ap) ? 12 : 0)) + ':' + m; }) : txt; },
-    error: function (e) { return HEB ? (ERR_HE[e.code] || (e.code === 'network' ? t('Can’t reach the server. Check your connection and try again.') : t('Something went wrong. Please try again.'))) : e.message; },
+    error: function (e) { if (RU) return t(e.message); return HEB ? (ERR_HE[e.code] || (e.code === 'network' ? t('Can’t reach the server. Check your connection and try again.') : t('Something went wrong. Please try again.'))) : e.message; },
     blessing: function (S) { return HEB && S.blessingHe ? S.blessingHe : S.blessing; },
     standard: function (S) { return HEB ? (S.standardNoteHe || '') : (S.standardNote ? S.standardNote + '.' : ''); },
     // set the page direction/language, translate the static [data-t] text, and add the toggle button
     apply: function () {
-      var root = document.documentElement; root.lang = lang; root.dir = HEB ? 'rtl' : 'ltr'; root.classList.toggle('he', HEB);
+      var root = document.documentElement; if (!EMB) { root.lang = lang; root.dir = HEB ? 'rtl' : 'ltr'; root.classList.toggle('he', HEB); }
       Array.prototype.forEach.call(document.querySelectorAll('[data-t]'), function (n) { n.textContent = t(n.getAttribute('data-t')); });
       Array.prototype.forEach.call(document.querySelectorAll('[data-t-ph]'), function (n) { n.placeholder = t(n.getAttribute('data-t-ph')); });
       var b = document.getElementById('langBtn');

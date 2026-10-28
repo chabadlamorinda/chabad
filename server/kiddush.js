@@ -202,6 +202,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       dedication: clean(b.dedication, 120), phone: clean(b.phone, 30), note: clean(b.note, 300), fee: b.fee === true && method === 'card' && st.coverFee,
     };
   }
+  // Which page the sponsor comes back to after paying: the website's Kiddush page, or the Kiddush app's own page.
+  const pageOf = (body) => (/^\/(?:(?:he|ru)\/)?sponsor-a-kiddush$/.test(String((body && body.page) || '')) ? body.page : '/kiddush/');
   const baseUrl = (req, st) => {
     const configured = /^https:\/\/[^/\s]+$/.test(st.publicUrl.replace(/\/+$/, '')) ? st.publicUrl.replace(/\/+$/, '') : '';
     return configured || req.protocol + '://' + req.get('host');
@@ -230,8 +232,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       customer_email: f.email,
       payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: 'unrecorded', slot: slot.key } },
       metadata: { source: 'kiddush', sponsorship: 'unrecorded', slot: slot.key, sponsor: f.name, anonymous: f.anonymous ? 'yes' : 'no', dedication_kind: f.kind, dedication: f.dedication, phone: f.phone, note: f.note, amount_cents: String(f.amount), fee_covered: fee ? 'yes' : 'no' },
-      success_url: base + '/kiddush/?paid=unrecorded&session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: base + '/kiddush/?cancelled=unrecorded',
+      success_url: base + pageOf(body) + '?paid=unrecorded&session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: base + pageOf(body) + '?cancelled=unrecorded',
       expires_at: Math.floor(Date.now() / 1000) + 31 * 60,
     }, { idempotencyKey: 'kiddush-unrec-' + f.idem });
     return { ok: true, recorded: false, status: 'pending', method: 'card', url: session.url };
@@ -263,8 +265,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
         customer_email: f.email,
         payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: id, slot: slot.key } },
         metadata: { source: 'kiddush', sponsorship: id, slot: slot.key, fee_covered: fee ? 'yes' : 'no' },
-        success_url: base + '/kiddush/?paid=' + id + '&session_id={CHECKOUT_SESSION_ID}',
-        cancel_url: base + '/kiddush/?cancelled=' + id,
+        success_url: base + pageOf(body) + '?paid=' + id + '&session_id={CHECKOUT_SESSION_ID}',
+        cancel_url: base + pageOf(body) + '?cancelled=' + id,
         expires_at: Math.floor(Date.now() / 1000) + 31 * 60,
       }, { idempotencyKey: 'kiddush-' + id });
       await store.attachSession(id, session.id);

@@ -3,7 +3,7 @@ title: Sponsor a Kiddush in Lafayette: Honor a Birthday, Yahrzeit or Simcha at C
 description: How Kiddush sponsorship works at Chabad of Lamorinda in Lafayette: mark a yahrzeit, birthday, anniversary or simcha with the Shabbat community.
 category: Lamorinda
 related: kiddush, yahrzeit, tzedakah, hebrew-birthday
-local: Choose your Shabbat and add your dedication at chabadoflamorinda.com/kiddush/ or call 925-384-7242.
+local: Choose your Shabbat and add your dedication at chabadoflamorinda.com/sponsor-a-kiddush or call 925-384-7242.
 ---
 Every Shabbat at Chabad of Lamorinda in Lafayette, after services end at noon, the whole community sits down together to a hot **Kiddush lunch**. Families from Lafayette, Moraga, Orinda and beyond make Kiddush over wine, eat, sing and catch up. It is one of the warmest hours of the week. When you sponsor the Kiddush, you share your occasion with everyone at that table.
 
@@ -21,7 +21,7 @@ Jewish tradition teaches that we mark the important moments of life by sharing t
 
 ## How it works
 
-1. **Go to the [Kiddush page](/kiddush/).** You can see the coming weeks, and show only the weeks that do not have a sponsor yet.
+1. **Go to the [Kiddush page](/sponsor-a-kiddush).** You can see the coming weeks, and show only the weeks that do not have a sponsor yet.
 2. **Pick your Shabbat.** For a yahrzeit, choose the Shabbat before or after the date. Not sure of the Hebrew date? Use the [yahrzeit calculator](/tools/yahrzeit) or the [Hebrew birthday tool](/tools/hebrew-birthday).
 3. **Write your dedication**, for example "In memory of..." or "In honor of...'s birthday."
 4. **Complete your sponsorship online.**
@@ -50,7 +50,7 @@ For a loved one who has passed away, you can also arrange [Kaddish](/kaddish) an
 ## Common questions
 
 ### How do I sponsor a Kiddush at Chabad of Lamorinda?
-Go to [chabadoflamorinda.com/kiddush/](/kiddush/), pick an open Shabbat, add your dedication and complete it online. Or call 925-384-7242.
+Go to [chabadoflamorinda.com/sponsor-a-kiddush](/sponsor-a-kiddush), pick an open Shabbat, add your dedication and complete it online. Or call 925-384-7242.
 
 ### Can I sponsor a Kiddush for a yahrzeit?
 Yes. Many people sponsor the Kiddush on the Shabbat near a yahrzeit. Your dedication honors their memory, and you can say Kaddish at services.

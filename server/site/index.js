@@ -34,6 +34,8 @@ const { createI18n, LANGS, withLang } = require('./i18n.js');
 const { makeCtx } = require('./ctx.js');
 const { mountLife } = require('./life.js');
 const { mountForms } = require('./forms.js');
+const { mountGive } = require('./give.js');
+const { mountKiddushPage } = require('./kiddush-page.js');
 const { mountChat } = require('./chat.js');
 const { mountParsha, mountCalendar, mountDaily } = require('./parsha.js');
 const { mountWeekly } = require('./weekly.js');
@@ -116,6 +118,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   yearly = mountYearly(r, { render: pages.render, wrap, ctxOf, base, upcoming: pages.upcoming });
   mountLocal(r, { content, base, wrap, ctxOf, ...pages });
   const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });
+  mountGive(r, { render: pages.render, wrap, ctxOf });
+  mountKiddushPage(r, { render: pages.render, wrap, ctxOf });
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   mountMitzvah(app, r, { store, render: pages.render, wrap, ctxOf, limit, base, log });

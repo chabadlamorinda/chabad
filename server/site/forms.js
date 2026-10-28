@@ -2,7 +2,7 @@
 // Everything the old website did with forms now happens here: preschool and Hebrew School registration, camp,
 // High Holiday reservations, Yizkor names, lulav and etrog, matzah, selling chametz, mezuzah and tefillin requests,
 // Shabbat meal matching, volunteers and the weekly email. Answers are saved, emailed to the Rabbi, listed in the
-// Rabbi area (with CSV), and the person gets a confirmation. Forms with a price offer "Pay now" through My Pushka.
+// Rabbi area (with CSV), and the person gets a confirmation. Forms with a price offer "Pay now" (the giving form on /donate, filled in).
 // Signed-in members find the form already filled in (their details and their children from "My family").
 'use strict';
 const crypto = require('crypto');
@@ -13,7 +13,7 @@ const { clean } = require('../members.js');
 const COLUMNS = { name: 'Name', hebrewName: 'Hebrew name', birthday: 'Birthday', grade: 'Grade', school: 'School', allergies: 'Allergies or medical notes' };
 const validEmail = (e) => /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/.test(e) && e.length <= 254;
 const optLabel = (o) => (typeof o === 'string' ? o : o.label);
-const giveUrl = (fund, amt, ded) => `/pushka/?go=give&fund=${encodeURIComponent(fund || 'general')}${amt ? '&amt=' + amt : ''}&ded=${encodeURIComponent(String(ded || '').slice(0, 80))}`;
+const { giveForm, giveUrl } = require('./give.js');
 const MAX_CARD = 10000;
 
 // Check the answers against the form (English form, so stored answers are always in English) and price them.
@@ -112,10 +112,10 @@ ${f.fields.map(input).join('\n')}
     const X = ctxOf(req), { t, C } = X, G = C.giving || {}, money = (n) => '$' + Number(n).toLocaleString('en-US');
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Donate'))}</h1><p class="lead-d">${esc(G.intro || '')}</p>
 <h2>${esc(t('Give online'))}</h2>
-<p class="chips">${(G.amounts || []).map((a) => `<a class="chip" href="${esc(giveUrl('general', a, ''))}">${money(a)}</a>`).join('')}<a class="chip" href="/pushka/?go=give&amp;fund=general">${esc(t('Other amount'))}</a></p>
-<p class="btns"><a class="btn gold" href="/pushka/?go=give&amp;fund=general">${esc(t('Give now'))}</a><a class="btn ghost" href="/pushka/?go=club">${esc(t('Give monthly: join the Chai Club'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory'))}</a></p>
+${giveForm(X, { fund: String(req.query.fund || ''), amt: req.query.amt, ded: String(req.query.ded || ''), freq: req.query.freq === 'monthly' ? 'monthly' : 'once', back: '/donate' })}
+<p class="btns"><a class="btn ghost" href="/chai-club">${esc(t('Give monthly: join the Chai Club'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory'))}</a><a class="btn ghost" href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a></p>
 <h2>${esc(t('Choose where your gift goes'))}</h2>
-<div class="dir">${(G.funds || []).map((f) => `<div class="card dir-i" id="${f.id}"><h3>${esc(f.name)}</h3><p>${esc(f.text)}</p><p><a class="btn ghost sm" href="${esc(f.id === 'chai' ? '/pushka/?go=club' : giveUrl(f.id, 0, ''))}">${esc(t('Give'))}</a></p></div>`).join('')}</div>
+<div class="dir">${(G.funds || []).map((f) => `<div class="card dir-i" id="${f.id}"><h3>${esc(f.name)}</h3><p>${esc(f.text)}</p><p><a class="btn ghost sm" href="${esc(f.id === 'chai' ? '/chai-club' : giveUrl(f.id, 0, ''))}">${esc(t('Give'))}</a></p></div>`).join('')}</div>
 ${G.building ? `<h2 id="building">${esc(t('Building Campaign'))}</h2><p>${esc(G.building.text)}</p><table class="tbl"><tbody>${G.building.levels.map(([n, a]) => `<tr><td>${esc(t(n))}</td><td>${money(a)}</td><td>${a <= MAX_CARD ? `<a href="${esc(giveUrl('building', a, 'Building Campaign: ' + n))}">${esc(t('Give'))}</a>` : `<a href="/contact?about=${encodeURIComponent('Building Campaign: ' + n)}">${esc(t('Contact us'))}</a>`}</td></tr>`).join('')}</tbody></table>` : ''}
 <h2 id="other">${esc(t('Other ways to give'))}</h2>
 <div class="dir">${(G.ways || []).map((w) => `<div class="card dir-i" id="${w.id}"><h3>${esc(w.name)}</h3><p>${esc(w.text)}</p>${w.url ? `<p><a class="btn ghost sm" href="${esc(w.url)}" rel="noopener" target="_blank">${esc(t('Open'))} ${esc(w.name)}</a></p>` : ''}</div>`).join('')}</div>

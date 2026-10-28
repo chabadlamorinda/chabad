@@ -30,7 +30,7 @@ The holidays are richer with every generation at the table. Bring your grandchil
 - **Kaddish:** join the weekday minyan, Monday to Friday at 6:30 AM and Sunday at 8:00 AM. Tell us you are saying Kaddish and we will make sure there is a minyan, or we can arrange for Kaddish to be said on your behalf at [Kaddish](/kaddish).
 - **Yahrzeits:** find the date with the [yahrzeit calculator](/tools/yahrzeit) and save it in [your account](/account) for a reminder every year.
 - **Yizkor:** add your loved ones' names to the [Yizkor memorial booklet](/forms/yizkor).
-- **A Kiddush in their memory:** [sponsor the Shabbat Kiddush](/kiddush/) on a yahrzeit and share the memory with the community.
+- **A Kiddush in their memory:** [sponsor the Shabbat Kiddush](/sponsor-a-kiddush) on a yahrzeit and share the memory with the community.
 
 ## When someone is ill
 

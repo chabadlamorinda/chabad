@@ -154,6 +154,26 @@ test('monthly gift: creates product + subscription, lists it, cancels it', async
   assert.equal((await c.call('GET', '/api/subscriptions', null, c.token)).json.subscriptions.length, 0);
 });
 
+test('website giving: Stripe checkout once or monthly, Chai Club details for the honor board', async (t) => {
+  const c = await start(); t.after(c.close);
+  const once = await c.call('POST', '/api/give/checkout', { ...gift({ amount: 180, idem: 'idem-site-0000000000001' }), freq: 'once', lang: 'he', back: '/donate' });
+  assert.equal(once.status, 200); assert.match(once.json.url, /^https:\/\/checkout\.stripe\.com\//);
+  let p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
+  assert.equal(p.mode, 'payment'); assert.equal(p.line_items[0].price_data.unit_amount, 18000); assert.equal(p.payment_intent_data.metadata.source, 'pushka');
+  assert.match(p.success_url, /\/he\/donate\/thank-you\?session_id=/); assert.match(p.cancel_url, /\/he\/donate$/);
+  const club = await c.call('POST', '/api/give/checkout', { ...gift({ amount: 180, fund: 'chai', idem: 'idem-site-0000000000002' }), freq: 'monthly', club: { show: true, name: 'The Levi Family' }, back: '/chai-club' });
+  assert.equal(club.status, 200);
+  p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
+  assert.equal(p.mode, 'subscription'); assert.deepEqual(p.line_items[0].price_data.recurring, { interval: 'month' });
+  assert.equal(p.subscription_data.metadata.club, 'yes'); assert.equal(p.subscription_data.metadata.board_name, 'The Levi Family'); assert.equal(p.subscription_data.metadata.gift_cents, '18000');
+  assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ fund: 'chai', idem: 'idem-site-0000000000003' }), freq: 'once', club: { show: true, name: 'X' } })).status, 400, 'the club is monthly');
+  assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 0, idem: 'idem-site-0000000000004' }) })).status, 400);
+  const evil = await c.call('POST', '/api/give/checkout', { ...gift({ idem: 'idem-site-0000000000005' }), back: '//evil.example' });
+  assert.match(c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1].cancel_url, /\/donate$/); assert.equal(evil.status, 200);
+  const off = await start({ stripe: null }); t.after(off.close);
+  assert.equal((await off.call('POST', '/api/give/checkout', gift())).status, 503);
+});
+
 test('cannot cancel someone else\'s subscription', async (t) => {
   const a = await signedIn(t); a.stripe.addCard(a.token.split('.')[0]);
   const sub = await a.call('POST', '/api/subscribe', gift({ idem: 'idem-sub-00000000000002' }), a.token);

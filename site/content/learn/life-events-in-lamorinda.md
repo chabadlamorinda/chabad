@@ -12,7 +12,7 @@ The big moments of life, the joyful ones and the hard ones, are when a family mo
 Mazal tov! Call the Rabbi soon after the birth.
 
 - **For a boy:** the bris is on the eighth day. The Rabbi helps work out the correct date, arrange a qualified mohel, and plan the honors and the blessings.
-- **For a girl:** she is named at the Torah, usually at the first Torah reading after the birth. Many families celebrate by [sponsoring a Kiddush](/kiddush/).
+- **For a girl:** she is named at the Torah, usually at the first Torah reading after the birth. Many families celebrate by [sponsoring a Kiddush](/sponsor-a-kiddush).
 - **A Hebrew name:** the Rabbi is glad to help you choose one.
 - **Pidyon haben:** for a firstborn son, when it applies, on the 31st day.
 
@@ -53,4 +53,4 @@ With the Rabbi and Rebbetzin at Chabad of Lamorinda in Lafayette. Lessons are pe
 Yes. The Rabbi visits at home, in hospitals, care facilities and hospice. Call 925-384-7242.
 
 ### Can we celebrate a simcha with the community?
-Yes. [Sponsor a Kiddush](/kiddush/) after Shabbat services, or see more ways to mark an occasion on the [sponsor page](/sponsor).
+Yes. [Sponsor a Kiddush](/sponsor-a-kiddush) after Shabbat services, or see more ways to mark an occasion on the [sponsor page](/sponsor).

@@ -324,6 +324,33 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     res.json({ status: sub.status, id: sub.id, receiptUrl: typeof sub.latest_invoice === 'object' && sub.latest_invoice ? sub.latest_invoice.hosted_invoice_url || '' : '' });
   }));
 
+  // Giving on the website (/donate, /chai-club, sponsor pages): Stripe's secure checkout page, once or monthly.
+  // Gifts carry the same details as the app's (source "pushka"), so the honor board, staff screens and receipts treat them alike.
+  api.post('/give/checkout', limit('give', 20, 10 * 60 * 1000), needStripe, wrap(async (req, res) => {
+    const b = req.body || {}, g = readGift(b), monthly = b.freq === 'monthly', lang = ['he', 'ru'].includes(b.lang) ? b.lang : 'en';
+    let club = null;
+    if (b.club) {
+      if (g.fund !== 'chai' || !monthly) throw new HttpError(400, 'invalid_fund', 'Please choose a fund.');
+      club = { name: clean(b.club.name, 60), show: b.club.show === true && !!clubLevel(g.cents) };
+      if (club.show && !club.name) throw new HttpError(400, 'invalid_name', 'Please enter the name for the board.');
+    }
+    const back = /^\/(?!\/)[a-z0-9/._-]{0,120}$/i.test(String(b.back || '')) ? b.back : '/donate';
+    const configured = /^https:\/\/[^/\s]+$/.test(String(siteEnv.PUBLIC_URL || '').replace(/\/+$/, '')) ? siteEnv.PUBLIC_URL.replace(/\/+$/, '') : '';
+    const base = configured || req.protocol + '://' + req.get('host'), pre = lang === 'en' ? '' : '/' + lang;
+    const meta = { source: 'pushka', via: 'website', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents), ...(club ? { club: 'yes', board_show: club.show ? 'yes' : 'no', board_name: club.show ? club.name : '' } : {}) };
+    const name = (monthly ? 'Monthly gift: ' : 'Gift: ') + FUND_NAMES[g.fund] + (g.dedication ? ' (' + g.dedication + ')' : '');
+    const session = await stripe.checkout.sessions.create({
+      mode: monthly ? 'subscription' : 'payment', locale: lang === 'en' ? 'auto' : lang,
+      line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: g.total, ...(monthly ? { product: await ensureProduct(g.fund), recurring: { interval: 'month' } } : { product_data: { name } }) } }],
+      ...(monthly ? { subscription_data: { description: 'Monthly gift: ' + FUND_NAMES[g.fund], metadata: meta } } : { submit_type: 'donate', payment_intent_data: { description: name, metadata: meta } }),
+      metadata: meta,
+      success_url: base + pre + '/donate/thank-you?session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: base + pre + back,
+    }, { idempotencyKey: 'site-give-' + g.idem });
+    if (club) clubCache = { at: 0, data: null };
+    res.json({ url: session.url });
+  }));
+
   const subView = (s) => {
     const item = s.items && s.items.data && s.items.data[0];
     const end = s.current_period_end || (item && item.current_period_end) || null;

@@ -34,7 +34,7 @@ Our [bar and bat mitzvah help page](/help/bar-bat-mitzvah) goes deeper into each
 
 ## Celebrate with the community
 
-A bar mitzvah boy can be called to the Torah at Shabbat services on Saturday morning. Ask the Rabbi to plan it with you. You can [sponsor the Kiddush](/kiddush/) in honor of the bar or bat mitzvah and share the joy with the whole community. A pair of tefillin is also a beautiful bar mitzvah gift; ask through the [tefillin form](/forms/mezuzah-tefillin).
+A bar mitzvah boy can be called to the Torah at Shabbat services on Saturday morning. Ask the Rabbi to plan it with you. You can [sponsor the Kiddush](/sponsor-a-kiddush) in honor of the bar or bat mitzvah and share the joy with the whole community. A pair of tefillin is also a beautiful bar mitzvah gift; ask through the [tefillin form](/forms/mezuzah-tefillin).
 
 ## Never had one?
 

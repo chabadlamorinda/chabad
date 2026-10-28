@@ -35,7 +35,7 @@ function knowledge(C) {
   for (const p of C.programs) L.push(`### ${p.name} (/programs/${p.slug})`, `${p.audience || ''}. ${p.summary} ${p.schedule ? 'When: ' + p.schedule + '.' : ''}`, plain(p.details || ''));
   L.push('', '## Sign-ups, registrations and orders (forms on the site)');
   for (const f of C.forms || []) L.push(`- ${f.title}: /forms/${f.id}. ${f.intro}`);
-  L.push('', '## Giving', plain((C.giving && C.giving.intro) || ''), 'Donate page: /donate (online once or monthly via the My Pushka app, Chai Club, Building Campaign, Venmo @CHABAD-LAMORINDA, check, donor advised fund, stock, crypto, wire). Sponsor a Kiddush or program in honor or memory: /sponsor. Kiddush sponsorship board: /kiddush/.');
+  L.push('', '## Giving', plain((C.giving && C.giving.intro) || ''), 'Donate page: /donate (online once or monthly right on the website, Chai Club at /chai-club, Kiddush sponsorship at /sponsor-a-kiddush, Building Campaign, Venmo @CHABAD-LAMORINDA, check, donor advised fund, stock, crypto, wire). Sponsor a Kiddush or program in honor or memory: /sponsor. Kiddush sponsorship board: /sponsor-a-kiddush.');
   for (const x of (C.sponsor && C.sponsor.options) || []) L.push(`- ${x.title}: ${x.text}`);
   L.push('', '## Help with life situations (/help)', 'For a death, a serious illness or any crisis: tell them to call Rabbi Labkowski at ' + o.phone + ' first. Kaddish: /kaddish (join the minyan or arrange for Kaddish to be said). Tehillim for every occasion and the prayer list: /tehillim.');
   for (const h of C.help || []) L.push(`### ${h.title} (/help/${h.slug})`, plain(h.body).slice(0, 2500));

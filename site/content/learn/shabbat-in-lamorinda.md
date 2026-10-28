@@ -33,7 +33,7 @@ Shabbat starts at home with the candles. Our guides to [Shabbat candles](/learn/
 
 ## Celebrate and give
 
-Celebrating a birthday, anniversary or yahrzeit? [Sponsor a Kiddush](/kiddush/) and share it with the whole community. You can also [sponsor a Shabbat dinner](/sponsor) for families, students and newcomers. Want to help? [Volunteer](/forms/volunteer) to bake challah or set up the Kiddush.
+Celebrating a birthday, anniversary or yahrzeit? [Sponsor a Kiddush](/sponsor-a-kiddush) and share it with the whole community. You can also [sponsor a Shabbat dinner](/sponsor) for families, students and newcomers. Want to help? [Volunteer](/forms/volunteer) to bake challah or set up the Kiddush.
 
 ## Common questions
 

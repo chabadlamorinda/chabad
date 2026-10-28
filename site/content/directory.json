@@ -24,7 +24,7 @@
   { "id": "remembering", "group": "Remembering loved ones", "items": [
     { "name": "Yahrzeit calculator and reminders", "url": "/tools/yahrzeit", "text": "Find the yahrzeit date for the next ten years and save it for an annual reminder." },
     { "name": "Kaddish", "url": "/contact", "text": "We can make sure Kaddish is said for your loved one, and teach you to say it." },
-    { "name": "Sponsor a Kiddush in memory", "url": "/kiddush/", "text": "Honor a loved one's memory by sponsoring the Shabbat Kiddush." }
+    { "name": "Sponsor a Kiddush in memory", "url": "/sponsor-a-kiddush", "text": "Honor a loved one's memory by sponsoring the Shabbat Kiddush." }
   ] },
   { "id": "learning", "group": "Jewish learning", "items": [
     { "name": "Weekly classes", "url": "/programs/adult-education", "text": "Torah (Sunday), Hebrew class with a meal (Tuesday) and Tanya (Wednesday)." },

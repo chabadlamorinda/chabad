@@ -15,7 +15,7 @@ const FINAL = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
 // The monthly cycle of Tehillim by day of the Hebrew month (on a 29-day month, day 29 also says day 30's portion).
 const MONTHLY = ['1-9', '10-17', '18-22', '23-28', '29-34', '35-38', '39-43', '44-48', '49-54', '55-59', '60-65', '66-68', '69-71', '72-76', '77-78', '79-82', '83-87', '88-89', '90-96', '97-103', '104-105', '106-107', '108-112', '113-118', '119:1-96', '119:97-176', '120-134', '135-139', '140-144', '145-150'];
 const sefaria = (ref, lang) => `https://www.sefaria.org/Psalms.${ref}?lang=${lang === 'he' ? 'he' : 'bi'}`;
-const giveUrl = (fund, ded) => `/pushka/?go=give&fund=${encodeURIComponent(fund || 'general')}&ded=${encodeURIComponent(String(ded || '').slice(0, 80))}`;
+const giveUrl = (fund, ded) => `/donate?fund=${encodeURIComponent(fund || 'general')}&ded=${encodeURIComponent(String(ded || '').slice(0, 80))}#give`; // the giving form on /donate, filled in
 
 // Which extra boxes a help page shows.
 const HELP_EXTRAS = {
