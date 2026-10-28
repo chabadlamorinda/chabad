@@ -273,11 +273,19 @@
         .catch(function (e2) { btn.disabled = false; btn.textContent = T('Continue to secure payment'); fail(e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.')); });
     });
   });
-  // The Chai Club honor board: a medal for every monthly partner, grouped by level (board/board.js; amounts are never shown).
+  // The Chai Club honor board (/chai-club): each listed partner under their level, with that level's medal; counts per level.
   Array.prototype.forEach.call(document.querySelectorAll('[data-club-board]'), function (box) {
-    var draw = function (d) { if (!window.ClubBoard) return; box.textContent = ''; box.appendChild(window.ClubBoard.render(d, { lang: box.getAttribute('data-lang') || LANG, joinHref: '#give' })); };
-    var go = function () { draw(null); fetch('/api/club', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(draw).catch(function () {}); };
-    if (window.ClubBoard) go(); else window.addEventListener('load', go);
+    fetch('/api/club', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (d) {
+      var counts = d.counts || {};
+      Array.prototype.forEach.call(document.querySelectorAll('[data-count]'), function (c) { var n = counts[c.getAttribute('data-count')] || 0; c.textContent = n === 1 ? T('1 partner') : n ? T('{n} partners', { n: n }) : ''; });
+      Array.prototype.forEach.call(box.querySelectorAll('[data-tier]'), function (tier) {
+        var id = tier.getAttribute('data-tier'), ul = tier.querySelector('.hb-names'), tpl = tier.querySelector('template');
+        var names = (d.members || []).filter(function (m) { return m.level === id; }), quiet = (counts[id] || 0) - names.length;
+        names.forEach(function (m) { var li = el('li'); if (tpl) li.appendChild(tpl.content.cloneNode(true)); li.appendChild(el('span', { text: m.name })); ul.appendChild(li); });
+        if (quiet > 0) { var q = tier.querySelector('.hb-quiet'); q.textContent = T('and {n} who give quietly', { n: quiet }); q.hidden = false; }
+        tier.querySelector('.hb-empty').hidden = !!(counts[id] || names.length);
+      });
+    }).catch(function () {});
   });
 
   // ---------- "Ask us" chat ----------

@@ -503,7 +503,8 @@ test('calendar: a month grid with every event (page and RSVP links), the weekly 
 });
 test('Chai Club page shows the medal honor board (board.js, all three languages)', async () => {
   const p = (await client().call('GET', '/chai-club')).text;
-  assert.match(p, /data-club-board/); assert.match(p, /\/board\/board\.js/);
+  assert.match(p, /data-club-board/); for (const l of ['platinum', 'gold', 'silver', 'bronze']) assert.match(p, new RegExp('data-tier="' + l + '"'));
+  assert.ok((p.match(/<svg class="medal"/g) || []).length >= 12, 'a medal on every level card, every level of the board and the join amounts'); assert.ok(!/board\.css/.test(p), 'in the site\'s own style');
   const js = require('fs').readFileSync(path.join(__dirname, '..', 'board', 'board.js'), 'utf8');
   assert.match(js, /ru: \{ title:/); assert.match(js, /pl\.appendChild\(medal\(L\.id/);
 });

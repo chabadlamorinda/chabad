@@ -649,3 +649,23 @@ form.tool .btn.gold { justify-self: start; min-width: 200px; }
 .start-prep { margin-top: 30px; padding-top: 6px; }
 .start-prep .hand { margin: 0; } .start-prep h2 { margin-top: 2px; }
 .start-card .btns { margin: 0; }
+
+/* Chai Club (/chai-club): levels, joining and the honor board, all in the site's own style */
+.chai .club-levels { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.chai .club-l { border-top: 0; text-align: center; justify-items: center; padding: 16px 10px; gap: 4px; box-shadow: var(--shadow); border-radius: var(--r); background: var(--card); }
+.chai .club-l .medal { margin-bottom: 4px; filter: drop-shadow(0 3px 4px rgba(60,40,10,.25)); }
+.chai .club-l b { font-family: var(--serif); font-size: 1.2rem; }
+.club-l.platinum { background: linear-gradient(180deg, #eef5fd, var(--card) 70%); } .club-l.gold { background: linear-gradient(180deg, #fff4d6, var(--card) 70%); }
+.club-l.silver { background: linear-gradient(180deg, #f3f4f6, var(--card) 70%); } .club-l.bronze { background: linear-gradient(180deg, #fbe9da, var(--card) 70%); }
+.cl-count { font-family: var(--hand); font-size: 1.2rem; color: var(--gold-ink); min-height: 1em; }
+.chip.pick.with-medal { gap: 6px; padding-inline-start: 10px; } .chip.pick .medal { flex: none; }
+.honor { display: grid; gap: 14px; margin-top: 14px; }
+.hb-tier { --lv: #c98a55; --lv2: #fbe9da; background: var(--card); border: 1px solid var(--line); border-inline-start: 5px solid var(--lv); border-radius: var(--r); padding: 14px 16px; box-shadow: var(--shadow); }
+.hb-tier.platinum { --lv: #6f93bf; --lv2: #eef5fd; } .hb-tier.gold { --lv: #d4a53a; --lv2: #fff4d6; } .hb-tier.silver { --lv: #a7adb6; --lv2: #f3f4f6; }
+.hb-tier header { display: flex; align-items: center; gap: 12px; }
+.hb-tier header h3 { margin: 0; font-size: 1.25rem; } .hb-tier header .muted { font-size: .9rem; }
+.hb-count { margin-inline-start: auto; font-family: var(--hand); font-size: 1.25rem; color: var(--gold-ink); white-space: nowrap; }
+.hb-names { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.hb-names li { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px 6px 8px; border-radius: 999px; background: var(--lv2); border: 1px solid var(--line); font-family: var(--serif); font-weight: 600; }
+.hb-quiet, .hb-empty { margin: 10px 0 0; }
+@media (prefers-color-scheme: dark) { .hb-names li, .chai .club-l { background: var(--card); } }
