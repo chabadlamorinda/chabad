@@ -520,6 +520,12 @@ test('Bar Mitzvah: the parshah finder leads straight into the sign-up form, fill
   assert.match((await client().call('GET', '/forms/bar-bat-mitzvah?type=0&children.0.birthday=2014-05-01')).text, /value="2014-05-01" name="children\.0\.birthday"/);
 });
 
+test('program pages open with when it meets and the sign-up, before the details', async () => {
+  const h = (await client().call('GET', '/programs/hebrew-school')).text;
+  assert.match(h, /class="card action-top program-join"/); assert.ok(h.indexOf('program-join') < h.indexOf('<h2'), 'joining comes before the details');
+  assert.match(h.split('program-join')[1].split('</div>')[0], /href="\/forms\/hebrew-school"/);
+});
+
 test('the donation page works on the site itself', async () => {
   const d = (await client().call('GET', '/donate')).text;
   assert.match(d, /<form class="card give" id="give" data-give/); assert.match(d, /name="amt" value="180"/); assert.ok(!/href="\/pushka\//.test(d.split('<main')[1].split('</main>')[0]), 'giving stays on the website');
