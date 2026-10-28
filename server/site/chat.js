@@ -94,14 +94,48 @@ How to answer:
 const clip = (x, n) => { x = String(x); if (x.length <= n) return x; const c = x.slice(0, n); return c.slice(0, Math.max(c.lastIndexOf(' '), n / 2)).replace(/[,;:\s]+$/, '') + '…'; };
 // The free answer (no Claude, no cost): finds the best matching questions, guides and pages on our own site.
 // A strong match to a question-and-answer gives the answer itself; otherwise the best pages with a line about each.
+// Hello, thank you, "can you help?", "who are you?": a friendly reply instead of a search (English, Hebrew, Russian).
+const SMALL_TALK = /^\s*(hi|hello|hey|shalom|good (morning|evening|afternoon)|thanks?( you)?|thank you( so much)?|can you (help( me)?|answer( a| my)? questions?)|are you (there|a (bot|person|human))|who are you|what can you do|test(ing)?|שלום|היי|תודה( רבה)?|מי אתה|привет|здравствуйте|спасибо|кто ты)[\s!.?,]*$/i;
+function smallTalk(C, question, t) {
+  if (!SMALL_TALK.test(question)) return null;
+  if (/^\s*(thanks?|thank you|תודה|спасибо)/i.test(question)) return t("You're welcome! Anything else I can help with?");
+  return [t('Shalom! Of course, ask me anything: Shabbat and holiday times, our programs and events, Jewish customs, or how to reach the Rabbi.'), '',
+    t('For example: When does Shabbat start this week? How do I register for Hebrew School? What is a mezuzah?')].join('\n');
+}
+// "When is Chanukah?", "When does Shabbat start?": answered from the calendar itself, not from a page that mentions it.
+const HOLIDAY_WORDS = [[/chanuk|hanuk|ханук|חנוכ/i, 'chanukah'], [/purim|пурим|פורים/i, 'purim'], [/passover|pesach|песах|פסח/i, 'passover'], [/rosh ha ?shan|рош ха|ראש השנה/i, 'rosh-hashanah'],
+  [/yom kipp|йом кип|יום כיפור/i, 'yom-kippur'], [/sukkot|succot|суккот|סוכות/i, 'sukkot'], [/shavuot|шавуот|שבועות/i, 'shavuot'], [/simchat torah|симхат|שמחת תורה/i, 'simchat-torah'], [/tu b.?shvat|ту би|ט״ו בשבט|טו בשבט/i, 'tu-bishvat'], [/lag b.?omer|лаг ба|ל״ג בעומר|לג בעומר/i, 'lag-baomer']];
+async function timesAnswer(C, question, t, lang) {
+  if (!/\b(when|what time|what date|start|begin)|когда|во сколько|מתי|באיזו שעה/i.test(question)) return null;
+  const day = (ymd) => new Intl.DateTimeFormat({ he: 'he-IL', ru: 'ru-RU' }[lang] || 'en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(ymd + 'T12:00:00Z'));
+  const hw = HOLIDAY_WORDS.find(([re]) => re.test(question));
+  if (hw) {
+    const h = await Z.nextDateOf(hw[1]); if (!h) return null;
+    const page = C.holidays.find((x) => x.slug === hw[1]), name = page ? page.title : h.desc;
+    // Chanukah's date is the evening of the first candle; other holidays begin at sundown the evening before their first day.
+    const eve = new Date(Date.parse(h.date + 'T12:00:00Z') - 864e5).toISOString().slice(0, 10);
+    const when = hw[1] === 'chanukah' ? t('{holiday} begins on {date}.', { holiday: name, date: day(h.date) }) : t('{holiday} begins at sundown on {eve}; the first day is {date}.', { holiday: name, eve: day(eve), date: day(h.date) });
+    return [when + (h.time ? ' ' + t('Candle lighting in Lafayette: {time}.', { time: h.timeStr }) : ''), '',
+      `[${t('Read more')}: ${name}](/holidays/${hw[1]})`].join('\n');
+  }
+  if (/shabbat|shabbos|candle|havdalah|шабат|свеч|שבת|נרות/i.test(question)) {
+    const sh = await Z.thisShabbat(); if (!sh.candles) return null;
+    const { fmtClock } = require('./content.js'), ks = C.org.kabbalatShabbat ? Z.kabbalatFor(C.org.kabbalatShabbat, sh.candles) : null;
+    return [t('This Shabbat in Lafayette: candle lighting {time} on {date}.', { time: sh.candles.timeStr, date: day(sh.candles.date) }), ks ? t('Kabbalat Shabbat at Chabad: {time}.', { time: fmtClock(ks, lang) }) : '',
+      sh.havdalah ? t('Shabbat ends Saturday at {time}.', { time: sh.havdalah.timeStr }) : '', '', `[${t('Shabbat at Chabad')}](/shabbat) · [${t('Shabbat times for the whole year')}](/shabbat-times)`].filter((x, i) => x || i === 3).join('\n');
+  }
+  return null;
+}
 function searchAnswer(C, question, t) {
+  const hi = smallTalk(C, question, t);
+  if (hi) return hi;
   const norm = (x) => String(x).toLowerCase().normalize('NFKD').replace(/[\u0591-\u05c7]/g, '');
-  const STOP = new Set(['the', 'and', 'for', 'how', 'what', 'when', 'where', 'who', 'why', 'can', 'does', 'are', 'you', 'your', 'our', 'with', 'about', 'there', 'this', 'that', 'have', 'need', 'want', 'from', 'into', 'some', 'any', 'יש', 'מה', 'איך', 'מתי', 'איפה', 'של', 'את', 'עם', 'как', 'что', 'где', 'когда', 'для', 'это']);
+  const STOP = new Set(['help', 'find', 'tell', 'know', 'please', 'like', 'would', 'could', 'should', 'get', 'me', 'the', 'and', 'for', 'how', 'what', 'when', 'where', 'who', 'why', 'can', 'does', 'are', 'you', 'your', 'our', 'with', 'about', 'there', 'this', 'that', 'have', 'need', 'want', 'from', 'into', 'some', 'any', 'יש', 'מה', 'איך', 'מתי', 'איפה', 'של', 'את', 'עם', 'как', 'что', 'где', 'когда', 'для', 'это']);
   const words = norm(question).split(/[^\p{L}\p{N}]+/u).filter((w) => w.length > 2 && !STOP.has(w));
-  const qa = [...C.faq.map((f) => ({ q: f.q, a: f.a, url: '/faq' })), ...C.learn.flatMap((a) => a.faq.map((f) => ({ q: f.q, a: f.a, url: '/learn/' + a.slug }))), ...(C.help || []).flatMap((h) => (h.faq || []).map((f) => ({ q: f.q, a: f.a, url: '/help/' + h.slug })))];
+  const qa = [...C.faq.map((f) => ({ q: f.q, a: f.a, url: '/faq', local: true })), ...C.learn.flatMap((a) => a.faq.map((f) => ({ q: f.q, a: f.a, url: '/learn/' + a.slug }))), ...(C.help || []).flatMap((h) => (h.faq || []).map((f) => ({ q: f.q, a: f.a, url: '/help/' + h.slug })))];
   const docs = siteDocs(C, t);
   const score = (title, text, body) => { let s = 0; const T = norm(title), X = norm(text), B = norm(body); for (const w of words) { if (T.includes(w)) s += 4; if (X.includes(w)) s += 2; if (B.includes(w)) s += 0.5; } return s; };
-  const bestQa = qa.map((x) => ({ ...x, s: score(x.q, '', x.a) })).sort((a, b) => b.s - a.s)[0];
+  const bestQa = qa.map((x) => ({ ...x, s: score(x.q, '', x.a) * (x.local ? 1.5 : 1) })).sort((a, b) => b.s - a.s)[0];
   const top = docs.map((d) => ({ ...d, s: score(d.title, d.text, d.body) * d.boost })).filter((d) => d.s > 0).sort((a, b) => b.s - a.s).slice(0, 4);
   // A short, direct answer (the best matching question's own answer) and one page to read more, not a list of links.
   const lines = [];
@@ -159,7 +193,7 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
       send({ contact: { topic, title: t(TOPICS[topic].title), note: t('The Rabbi gets a note about this conversation so he can help.'), call: L.call, text: L.text, whatsapp: L.whatsapp, email: L.email, labels: { call: t('Call'), text: t('Text'), email: t('Email'), rabbi: t('Rabbi Yisroel Labkowski'), rebbetzin: t('Rebbetzin Tzipora Labkowski') }, rebbetzin: R } });
       if (leads) leads.record({ topic, channel: 'chat', page, lang, cid, detail: msgs.filter((m) => m.role === 'user').map((m) => '- ' + m.content).join('\n') }).catch(() => {});
     }
-    if (!client || !underCap()) { send({ text: searchAnswer(C, question, t) }); return finish(); }
+    if (!client || !underCap()) { send({ text: (await timesAnswer(C, question, t, lang).catch(() => null)) || searchAnswer(C, question, t) }); return finish(); }
 
     // Today's facts change daily, so they go after the cached knowledge.
     const [hd, sh] = await Promise.all([Z.hebrewDate(Z.todayLocal()).catch(() => null), Z.thisShabbat().catch(() => null)]);
@@ -205,4 +239,4 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
     },
   };
 }
-module.exports = { mountChat, knowledge, relevant, suggestions, searchAnswer, RULES };
+module.exports = { timesAnswer, mountChat, knowledge, relevant, suggestions, searchAnswer, RULES };

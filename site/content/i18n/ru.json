@@ -1264,5 +1264,14 @@
  "Find the Bar or Bat Mitzvah parshah": "Узнать главу Торы бар- или бат-мицвы",
  "and {n} who give quietly": "и ещё {n}, кто жертвует без огласки",
  "1 partner": "1 партнёр",
- "{n} partners": "партнёров: {n}"
+ "{n} partners": "партнёров: {n}",
+ "You're welcome! Anything else I can help with?": "Пожалуйста! Чем ещё могу помочь?",
+ "Shalom! Of course, ask me anything: Shabbat and holiday times, our programs and events, Jewish customs, or how to reach the Rabbi.": "Шалом! Конечно, спрашивайте: время Шабата и праздников, наши программы и события, еврейские обычаи или как связаться с раввином.",
+ "For example: When does Shabbat start this week? How do I register for Hebrew School? What is a mezuzah?": "Например: когда начинается Шабат на этой неделе? Как записаться в еврейскую школу? Что такое мезуза?",
+ "{holiday} begins on {date}.": "{holiday} начинается: {date}.",
+ "Candle lighting in Lafayette: {time}.": "Зажигание свечей в Лафайетте: {time}.",
+ "This Shabbat in Lafayette: candle lighting {time} on {date}.": "Шабат в Лафайетте: зажигание свечей в {time}, {date}.",
+ "Kabbalat Shabbat at Chabad: {time}.": "Встреча Шабата в Хабаде: {time}.",
+ "Shabbat ends Saturday at {time}.": "Шабат заканчивается в субботу в {time}.",
+ "{holiday} begins at sundown on {eve}; the first day is {date}.": "{holiday} начинается на закате, {eve}; первый день — {date}."
 }

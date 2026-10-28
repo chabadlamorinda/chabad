@@ -1172,5 +1172,14 @@
  "Find the Bar or Bat Mitzvah parshah": "מצאו את פרשת הבר או בת המצווה",
  "and {n} who give quietly": "ועוד {n} שתורמים בשקט",
  "1 partner": "שותף אחד",
- "{n} partners": "{n} שותפים"
+ "{n} partners": "{n} שותפים",
+ "You're welcome! Anything else I can help with?": "בשמחה! אפשר לעזור במשהו נוסף?",
+ "Shalom! Of course, ask me anything: Shabbat and holiday times, our programs and events, Jewish customs, or how to reach the Rabbi.": "שלום! בוודאי, שאלו אותי כל דבר: זמני שבת וחגים, התוכניות והאירועים שלנו, מנהגים יהודיים, או איך להשיג את הרב.",
+ "For example: When does Shabbat start this week? How do I register for Hebrew School? What is a mezuzah?": "למשל: מתי נכנסת השבת השבוע? איך נרשמים לבית הספר העברי? מה זו מזוזה?",
+ "{holiday} begins on {date}.": "{holiday} מתחיל ב{date}.",
+ "Candle lighting in Lafayette: {time}.": "הדלקת נרות בלאפייט: {time}.",
+ "This Shabbat in Lafayette: candle lighting {time} on {date}.": "השבת בלאפייט: הדלקת נרות ב־{time}, {date}.",
+ "Kabbalat Shabbat at Chabad: {time}.": "קבלת שבת בחב״ד: {time}.",
+ "Shabbat ends Saturday at {time}.": "השבת יוצאת במוצאי שבת ב־{time}.",
+ "{holiday} begins at sundown on {eve}; the first day is {date}.": "{holiday} מתחיל עם השקיעה ב{eve}; היום הראשון הוא {date}."
 }

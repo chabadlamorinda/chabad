@@ -667,6 +667,18 @@ test('Google may list the site on the real domain, never on the onrender.com pre
   assert.match(await robots({ PUBLIC_URL: 'https://jewishlamorinda.com', SITE_INDEXABLE: '0' }), /Disallow: \/\n/);
 });
 
+test('chat without Claude: greets, answers "when is" questions from the calendar, and prefers our own answers', async () => {
+  const { searchAnswer, timesAnswer } = require('./site/chat.js'), C = load(), tt = (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s);
+  for (const q of ['Can you answer a question?', 'hi', 'שלום', 'Привет!']) assert.match(searchAnswer(C, q, tt), /^Shalom! Of course/, q);
+  assert.match(searchAnswer(C, 'Thank you!', tt), /welcome/);
+  assert.ok(!/^Shalom/.test(searchAnswer(C, 'Can you help me find kosher food?', tt)), 'a real question is answered, not greeted');
+  assert.match(searchAnswer(C, 'Can you help me find kosher food?', tt), /Bay Kosher/);
+  assert.match(await timesAnswer(C, 'When is Chanukah?', tt, 'en'), /Chanukah begins on .*December/);
+  assert.match(await timesAnswer(C, 'When is Passover?', tt, 'en'), /begins at sundown on/);
+  assert.match(await timesAnswer(C, 'When does Shabbat start?', tt, 'en'), /candle lighting \d/);
+  assert.equal(await timesAnswer(C, 'Why do we light candles?', tt, 'en'), null);
+});
+
 test('chat without Claude: answers with matching pages', () => {
   const { searchAnswer } = require('./site/chat.js');
   const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));
