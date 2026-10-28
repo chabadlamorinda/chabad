@@ -129,28 +129,21 @@ ${prog ? `<p>${esc(t('Part of'))} <a href="/programs/${prog.slug}">${esc(prog.na
   }));
 
   // ---------- Shabbat ----------
+  // What Shabbat with us feels like: always a seat at the Friday night table, services open to all, Kiddush with cholent.
+  // Only this week's times here; the full list is on /shabbat-times and the calendar.
   r.get('/shabbat', wrap(async (req, res) => {
-    const X = ctxOf(req), { t, C } = X, today = Z.todayLocal(), end = new Date(today); end.setDate(end.getDate() + 70);
-    const list = await Z.events(today, end), weeks = [];
-    for (const e of list) {
-      if (e.cat === 'candles') weeks.push({ candles: e });
-      else if (weeks.length && e.cat === 'parashat') weeks[weeks.length - 1].parsha = e;
-      else if (weeks.length && e.cat === 'havdalah' && !weeks[weeks.length - 1].havdalah) weeks[weeks.length - 1].havdalah = e;
-    }
-    const svc = C.org.services || [], rule = C.org.kabbalatShabbat || null;
-    const body = `<section class="wrap sec narrow"><h1>${esc(t('Shabbat in Lamorinda'))}</h1>
-<p class="lead-d">${esc(t('Shabbat is a gift: 25 hours to slow down, connect and recharge. Join us for services, a warm Kiddush and Shabbat dinners. No membership needed, no Hebrew needed.'))}</p>
-${weeks[0] ? `<div class="card quick" data-shabbat-quick data-date="${weeks[0].candles.date}" data-day="${esc(X.shortDate(weeks[0].candles.date))}" hidden></div>` : ''}
-${svc.length ? `<h2>${esc(t('Services'))}</h2><ul class="list">${svc.map((s) => `<li><strong>${esc(s.name)}</strong> ${esc(s.time)}${s.note ? ` <span class="muted">· ${esc(s.note)}</span>` : ''}</li>`).join('')}</ul>` : ''}
-<h2>${esc(t('Candle lighting times for Lafayette, Moraga and Orinda'))}</h2>
-<div class="tbl-wrap"><table class="tbl"><thead><tr><th>${esc(t('Shabbat'))}</th><th>${esc(t('Candle lighting'))}</th>${rule ? `<th>${esc(t('Kabbalat Shabbat'))}</th>` : ''}<th>${esc(t('Shabbat ends'))}</th></tr></thead><tbody>
-${weeks.map((w) => { const k = rule ? Z.kabbalatFor(rule, w.candles) : null; return `<tr><td>${w.parsha ? esc(X.hc(w.parsha)) : ''}<br><span class="muted">${esc(X.shortDate(w.candles.date))}</span></td><td>${esc(X.tm(w.candles))}</td>${rule ? `<td>${k ? esc(fmtClock(k, X.lang)) : ''}</td>` : ''}<td>${w.havdalah ? esc(X.tm(w.havdalah)) : ''}</td></tr>`; }).join('')}
-</tbody></table></div>
-<p class="muted">${esc(t('Candle lighting is 18 minutes before sunset. Shabbat ends at nightfall.'))} <a href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a> · <a href="/jewish-holidays-${new Date().getFullYear()}">${esc(t('Holiday times'))}</a></p>
+    const X = ctxOf(req), { t, C } = X, sh = await Z.thisShabbat(), rule = C.org.kabbalatShabbat || null, ks = rule && sh.candles ? Z.kabbalatFor(rule, sh.candles) : null;
+    const body = `<section class="wrap sec narrow shabbat-page"><h1>${esc(t('Shabbat at Chabad of Lamorinda'))}</h1>
+<p class="lead-d">${esc(t('Put the phone away, light the candles and let the week fall away. For 25 hours, from Friday before sunset until Saturday night, there is time for family, friends, good food and a little soul. At Chabad of Lamorinda you always have a place at the table.'))}</p>
+${sh.candles ? `<div class="card this-shabbat"><p class="hand">${esc(t('This Shabbat'))}${sh.parsha ? ' · ' + esc(X.hc(sh.parsha)) : ''}</p>
+<p>${esc(t('Candle lighting'))} <b>${esc(X.tm(sh.candles))}</b> · ${ks ? `${esc(t('Kabbalat Shabbat'))} <b>${esc(fmtClock(ks, X.lang))}</b> · ` : ''}${esc(t('Services'))} <b>${esc(t('Saturday 10 AM'))}</b>${sh.havdalah ? ` · ${esc(t('Shabbat ends'))} <b>${esc(X.tm(sh.havdalah))}</b>` : ''}</p>
+<p class="btns"><a class="btn gold sm" href="/forms/shabbat-meal">${esc(t('Come for a Shabbat meal'))}</a></p>
+<p class="muted"><a href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a> · <a href="/calendar">${esc(t('Jewish calendar'))}</a></p></div>
+<div class="card quick" data-shabbat-quick data-date="${sh.candles.date}" data-day="${esc(X.shortDate(sh.candles.date))}" hidden></div>` : ''}
 ${md(C.org.shabbatText || '')}
-<p class="btns"><a class="btn gold" href="/events?c=shabbat">${esc(t('Shabbat dinners and events'))}</a><a class="btn ghost" href="/contact">${esc(t('Host or be hosted for a meal'))}</a></p>
+<p class="btns"><a class="btn gold" href="/forms/shabbat-meal">${esc(t('Come for a Shabbat meal'))}</a><a class="btn ghost" href="/learn/shabbat-for-beginners">${esc(t('New to Shabbat? Start here'))}</a></p>
 </section>`;
-    await render(res, { path: '/shabbat', title: t('Shabbat times and services in Lafayette'), description: t('Shabbat candle lighting times for Lafayette, Moraga and Orinda, Shabbat services, Kiddush and Shabbat dinners at Chabad of Lamorinda.'), body });
+    await render(res, { path: '/shabbat', title: t('Shabbat at Chabad of Lamorinda in Lafayette'), description: t('Friday night dinner with the Rabbi\'s family, Shabbat services open to all and a hot Kiddush with cholent at Chabad of Lamorinda in Lafayette, for Lafayette, Moraga and Orinda.'), body });
   }));
 
   // ---------- holidays ----------

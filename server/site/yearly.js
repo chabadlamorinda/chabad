@@ -95,19 +95,21 @@ function mountYearly(r, { render, wrap, ctxOf, base, upcoming = () => [] }) {
     if (!town && slug === 'lafayette') return res.redirect(301, X.path('/shabbat-times'));
     const today = Z.todayLocal(), end = new Date(today); end.setDate(end.getDate() + 372);
     const list = await Z.events(today, end, { lat: tw.lat, lng: tw.lng, name: tw.slug });
+    const rule = C.org.kabbalatShabbat || null;
     const rows = list.filter((e) => e.cat === 'candles').map((c) => {
       const h = list.find((e) => e.cat === 'havdalah' && e.date > c.date);
       const p = list.find((e) => e.cat === 'parashat' && e.date > c.date && e.date <= Z.ymd(new Date(day(c.date).getTime() + 2 * 864e5)));
       const hol = list.find((e) => e.date > c.date && e.date <= Z.ymd(new Date(day(c.date).getTime() + 864e5)) && /holiday/.test(e.cat) && !/^Erev/.test(e.desc));
       const what = p && day(c.date).getDay() === 5 ? `<a href="/parsha">${esc(X.hc(p))}</a>` : hol ? esc(X.hc(hol)) : '';
-      return `<tr><td>${esc(X.shortDate(c.date))}</td><td>${what}</td><td><strong>${esc(X.tm(c))}</strong></td><td>${h ? `${esc(X.tm(h))} <span class="muted">(${esc(X.shortDate(h.date))})</span>` : ''}</td></tr>`;
+      const k = town && rule ? Z.kabbalatFor(rule, c) : null; // Kabbalat Shabbat at Chabad (Lafayette page only)
+      return `<tr><td>${esc(X.shortDate(c.date))}</td><td>${what}</td><td><strong>${esc(X.tm(c))}</strong></td>${town && rule ? `<td>${k ? esc(fmtClock(k, X.lang)) : ''}</td>` : ''}<td>${h ? `${esc(X.tm(h))} <span class="muted">(${esc(X.shortDate(h.date))})</span>` : ''}</td></tr>`;
     }).join('');
     const others = C.towns.filter((x) => x.slug !== tw.slug).map((x) => `<a class="chip" href="${x.slug === 'lafayette' ? '/shabbat-times' : '/shabbat-times/' + x.slug}">${esc(x.name)}</a>`).join('');
     const name = tw.name, path = town ? '/shabbat-times' : '/shabbat-times/' + tw.slug;
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Shabbat candle lighting times in {town}', { town: name }))}</h1>
 <p class="lead-d">${esc(t('Candle lighting (18 minutes before sunset) and the time Shabbat and holidays end in {town}, California, for the next twelve months.', { town: name }))}</p>
 <p class="chips">${others}</p>
-<div class="tbl-wrap"><table class="tbl"><thead><tr><th>${esc(t('Date'))}</th><th>${esc(t('Shabbat or holiday'))}</th><th>${esc(t('Candle lighting'))}</th><th>${esc(t('Ends'))}</th></tr></thead><tbody>${rows}</tbody></table></div>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>${esc(t('Date'))}</th><th>${esc(t('Shabbat or holiday'))}</th><th>${esc(t('Candle lighting'))}</th>${town && rule ? `<th>${esc(t('Kabbalat Shabbat'))}</th>` : ''}<th>${esc(t('Ends'))}</th></tr></thead><tbody>${rows}</tbody></table></div>
 <p>${esc(t('Join us for Shabbat at Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette: Kabbalat Shabbat on Friday evening and services with a Kiddush lunch on Saturday.'))}</p>
 <p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/forms/shabbat-meal">${esc(t('Shabbat dinner with the Rabbi'))}</a><a class="btn ghost" href="/learn/shabbat-candles">${esc(t('How to light Shabbat candles'))}</a></p></section>`;
     await render(res, { path, title: t('Shabbat times {town}: candle lighting and Havdalah', { town: name }), description: t('Shabbat candle lighting and Havdalah times for {town}, CA for the next twelve months, from Chabad of Lamorinda in Lafayette.', { town: name }), body });

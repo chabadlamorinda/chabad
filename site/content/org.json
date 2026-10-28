@@ -45,7 +45,10 @@
   "social": {
     "facebook": "https://www.facebook.com/chabadoflamorinda"
   },
-  "kabbalatShabbat": { "latest": "18:45", "dates": {} },
+  "kabbalatShabbat": {
+    "latest": "18:45",
+    "dates": {}
+  },
   "services": [
     {
       "name": "Shacharit (morning prayers)",
@@ -117,5 +120,5 @@
       "endTime": "12:00"
     }
   ],
-  "shabbatText": "## Shabbat dinner with the Rabbi's family\nRabbi Yisroel and Tzipora Labkowski and their family host Shabbat dinners: a traditional Friday night meal with Jewish songs, warm conversation and a festive table. It is a wonderful way to get to know the Rabbi and Rebbetzin. You are welcome any week of the year; please let us know you are coming at 925-384-7242 or through [contact](/contact).\n\n## Sponsor a Kiddush\nCelebrating a birthday, anniversary or yahrzeit? [Sponsor a Kiddush](/sponsor-a-kiddush) and share the occasion with the whole community."
+  "shabbatText": "## Friday night: there is always a seat for you\nKabbalat Shabbat starts at {kabbalat-shabbat}, and then the Labkowski family sits down to Friday night dinner, and you are always welcome to join. Fresh challah, Kiddush over wine, songs around the table and good conversation that nobody is in a hurry to end. Come on your own, with your family or with a friend; your first time is as welcome as your fiftieth. Just let us know you are coming, with the "Come for a Shabbat meal" button or at 925-384-7242.\n\n## Shabbat morning: services open to everyone\nSaturday at 10 AM. Traditional prayers in a relaxed, friendly room, with a bilingual prayer book so you can follow along whether or not you read Hebrew. There is the Torah reading, a short talk, and children are part of it all. Come for the whole morning or for part of it; nobody is counting.\n\n## Kiddush: come for the cholent\nAfter services the whole community sits down together to a hot Kiddush lunch: a warm bowl of cholent, a l'chaim and plenty of time to talk. It is open to everyone, every Shabbat. Join us whenever you'd like.\n\n## Mark an occasion with the community\nA birthday, an anniversary or a yahrzeit? [Sponsor a Kiddush](/sponsor-a-kiddush) and the whole community celebrates or remembers with you."
 }

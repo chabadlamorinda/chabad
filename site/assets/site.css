@@ -591,3 +591,5 @@ h1 { font-weight: 600; }
 .play-cta { display: grid; gap: 2px; margin: 20px 0; text-decoration: none; color: inherit; border-color: var(--gold); background: linear-gradient(120deg, #fff8e6, var(--card)); }
 .play-cta strong { font-family: var(--serif); font-size: 1.3rem; } .play-cta span:last-child { color: var(--muted); }
 .dreidel-game .btns { justify-content: center; }
+.this-shabbat { border-color: var(--gold); background: var(--soft); } .this-shabbat p { margin: 4px 0; } .this-shabbat b { white-space: nowrap; }
+.shabbat-page h2 { margin-top: 1.6em; }
