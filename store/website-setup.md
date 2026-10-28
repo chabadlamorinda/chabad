@@ -49,6 +49,6 @@ The chat box ("Ask us", bottom corner of every page) answers in English, Hebrew 
 Do this only when everything above is working and the content is approved.
 1. Render → chabad-lamorinda-app → **Settings → Custom Domains**: add `www.chabadoflamorinda.com` and `chabadoflamorinda.com`.
 2. At the domain's DNS (ask Chabad.org if they manage it): point `www` (CNAME) and the root (A/ALIAS) to the targets Render shows. Email (MX records) is not touched.
-3. In Environment set **PUBLIC_URL** = `https://www.chabadoflamorinda.com` and **SITE_INDEXABLE** = `1`.
+3. In Environment set **PUBLIC_URL** = `https://www.chabadoflamorinda.com` (Google may then list the site automatically; **SITE_INDEXABLE** = `0` would hide it).
 4. Ask Claude to add redirects from the old Chabad.org page addresses (for example `/3186196` → `/programs/hebrew-school`) so old links and Google results keep working.
 5. Submit the sitemap in Search Console and update the website link on Facebook, Instagram and the Google Business Profile.

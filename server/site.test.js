@@ -590,6 +590,19 @@ test('jewishlamorinda.org forwards to the main address, keeping the page', async
   r.resume(); assert.equal(r.statusCode, 301); assert.equal(r.headers.location, 'http://site.test/learn/mezuzah?x=1');
 });
 
+test('Google may list the site on the real domain, never on the onrender.com preview', async () => {
+  const express = require('express'), { mountSite } = require('./site/index.js');
+  const robots = async (env) => {
+    const app = express(); mountSite(app, { secret: 'x'.repeat(32), limit: () => (q, s, n) => n(), log: { error() {}, info() {}, warn() {} }, env: { SITE_HOME: '1', ...env } });
+    const srv = app.listen(0); await new Promise((ok) => srv.once('listening', ok));
+    try { return await (await fetch(`http://127.0.0.1:${srv.address().port}/robots.txt`)).text(); } finally { srv.close(); }
+  };
+  assert.match(await robots({ PUBLIC_URL: 'https://jewishlamorinda.com' }), /Sitemap: https:\/\/jewishlamorinda\.com/);
+  assert.match(await robots({ PUBLIC_URL: 'https://chabad-lamorinda-app.onrender.com' }), /Disallow: \/\n/);
+  assert.match(await robots({}), /Disallow: \/\n/);
+  assert.match(await robots({ PUBLIC_URL: 'https://jewishlamorinda.com', SITE_INDEXABLE: '0' }), /Disallow: \/\n/);
+});
+
 test('chat without Claude: answers with matching pages', () => {
   const { searchAnswer } = require('./site/chat.js');
   const out = searchAnswer(load(), 'how do I register for hebrew school', (s, v) => (v ? s.replace(/\{(\w+)\}/g, (m, k) => v[k]) : s));

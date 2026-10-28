@@ -4,7 +4,8 @@
 // Settings (all optional):
 //   PUBLIC_URL      the site's public address (default https://www.chabadoflamorinda.com); used for links, sitemap, emails
 //   SITE_HOME=1     open the website at "/" on every address (otherwise "/" opens it only on PUBLIC_URL's host)
-//   SITE_INDEXABLE=1  let Google and AI crawlers index the site. Leave unset on the preview until launch day.
+//   SITE_INDEXABLE=1  let Google and AI crawlers index the site (0 = never). Unset: indexed once PUBLIC_URL is a real
+//                   domain (jewishlamorinda.com), never on the onrender.com preview.
 //   GA_ID           Google Analytics 4 / Google Ads tag id (G-... or AW-...)
 //   FB_PAGE_ID, FB_PAGE_TOKEN   Facebook Page connection (photos in, event posts out); IG_USER_ID adds Instagram
 //   GOOGLE_SITE_VERIFICATION, BING_SITE_VERIFICATION   ownership tags for Google Search Console / Bing Webmaster Tools
@@ -45,7 +46,8 @@ const { mountMitzvah } = require('./mitzvah.js');
 function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch, chatClient = undefined }) {
   const base = (env.PUBLIC_URL || 'https://www.chabadoflamorinda.com').replace(/\/+$/, '');
   const host = new URL(base).hostname.replace(/^www\./, '');
-  const indexable = env.SITE_INDEXABLE === '1', siteHome = env.SITE_HOME === '1';
+  const realDomain = !!env.PUBLIC_URL && !/onrender\.com$|localhost|127\.0\.0\.1/.test(host);
+  const indexable = env.SITE_INDEXABLE ? env.SITE_INDEXABLE === '1' : realDomain, siteHome = env.SITE_HOME === '1';
   const tag = (v) => (/^[A-Za-z0-9_-]{8,100}$/.test(v || '') ? v : '');
   const analytics = { ga: /^(G|AW)-[A-Z0-9]+$/.test(env.GA_ID || '') ? env.GA_ID : '', google: tag(env.GOOGLE_SITE_VERIFICATION), bing: tag(env.BING_SITE_VERIFICATION) };
   // Any secret value works (Render's generated ones contain + and /): it is turned into a 32-letter hex key.

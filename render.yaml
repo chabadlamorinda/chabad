@@ -52,7 +52,7 @@ services:
         value: "1"
       - key: PUBLIC_URL               # the website's address; change to https://www.chabadoflamorinda.com on launch day
         value: https://chabad-lamorinda-app.onrender.com
-      - key: SITE_INDEXABLE           # set to 1 on launch day so Google and AI assistants index it (leave unset on the preview)
+      - key: SITE_INDEXABLE           # leave unset: Google may list the site once PUBLIC_URL is the real domain (0 = never, 1 = always)
         sync: false
       - key: GA_ID                    # Google Analytics 4 / Google Ads tag, e.g. G-XXXXXXX (optional)
         sync: false
