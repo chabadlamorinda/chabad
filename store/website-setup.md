@@ -45,6 +45,30 @@ The chat box ("Ask us", bottom corner of every page) answers in English, Hebrew 
 * **Spending cap:** at most **300 Claude answers a day** (change with **CHAT_DAILY_LIMIT**); after that the free answers take over until the next day. You can also set a monthly spend limit in the Anthropic console.
 * **Walled off:** the chat has no access to the database, accounts, family details, forms, donations, drafts or the Rabbi area. It only sees published website content and what the visitor types. Visitors' questions (only the question text) are listed for you in the Rabbi area so you can see what people ask.
 
+## 4b. Connect jewishlamorinda.com (bought at Cloudflare)
+About 15 minutes. Free. jewishlamorinda.com is the main address; jewishlamorinda.org forwards to it.
+
+**In Render** (dashboard.render.com)
+1. Open the service **chabad-lamorinda-app** -> **Settings** -> scroll to **Custom Domains** -> **+ Add Custom Domain**.
+2. Type `jewishlamorinda.com`, click **Save**. Render adds `www.jewishlamorinda.com` by itself.
+3. Do the same for `jewishlamorinda.org` (and `www.jewishlamorinda.org` if it is not added by itself).
+4. Leave this page open: each domain shows "DNS update needed" and the record Render wants.
+
+**In Cloudflare** (dash.cloudflare.com)
+5. Click **jewishlamorinda.com** -> **DNS** -> **Records**. Delete any old A, AAAA or CNAME records for `@` and `www` (Cloudflare sometimes adds "parking" ones).
+6. **+ Add record**: Type **CNAME**, Name `@`, Target `chabad-lamorinda-app.onrender.com`, **Proxy status: OFF (grey cloud, "DNS only")**. Save.
+7. **+ Add record**: Type **CNAME**, Name `www`, Target `chabad-lamorinda-app.onrender.com`, **grey cloud**. Save.
+8. Go back to the Cloudflare home, click **jewishlamorinda.org**, and repeat steps 5-7 there.
+9. **SSL/TLS** (left menu) for each domain: set to **Full**. (With the grey cloud this does not matter, but it avoids trouble later.)
+
+**Back in Render**
+10. Next to each domain click **Verify**. Usually green within a few minutes (up to an hour). Render then makes the free https certificate by itself.
+11. **Environment** tab -> **+ Add Environment Variable**: `PUBLIC_URL` = `https://jewishlamorinda.com` -> **Save Changes**. Render restarts (about 2 minutes).
+12. Check: open https://jewishlamorinda.com (the new site), https://jewishlamorinda.org/learn/mezuzah (should jump to jewishlamorinda.com/learn/mezuzah), and https://jewishlamorinda.com/robots.txt (should list the sitemap: Google may now list the site).
+13. Then Google Search Console (section 3) with the address `https://jewishlamorinda.com`.
+
+Why the grey cloud: Render makes the security certificate itself; Cloudflare's orange cloud would get in the way of that.
+
 ## 5. Launch day (moving chabadoflamorinda.com over)
 Do this only when everything above is working and the content is approved.
 1. Render → chabad-lamorinda-app → **Settings → Custom Domains**: add `www.chabadoflamorinda.com` and `chabadoflamorinda.com`.
