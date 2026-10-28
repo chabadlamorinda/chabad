@@ -2,7 +2,7 @@
 title: ביקור חולים: מצוות ביקור החולה
 description: מה פירוש ביקור חולים, למה זו מצווה גדולה, איך מבקרים נכון, מה אומרים ואיך מתפללים על מי שחולה.
 category: Jewish ideas
-related: chesed, mi-sheberach, tehillim, comforting-mourners
+related: chesed, when-a-loved-one-is-dying, mi-sheberach, tehillim, comforting-mourners
 local: אם מישהו יקר לכם חולה, התקשרו לרב לבקובסקי 925-384-7242 או היכנסו ל-chabadoflamorinda.com/help/someone-is-sick ונעזור בתפילות, בביקורים ובתמיכה.
 ---
 ביקור חולים הוא אחת ממצוות החסד הגדולות ביהדות. ביקור, שיחת טלפון או תפילה מרימים את רוחו של החולה, מקלים על המעמסה שלו, וכפי שמלמדים חז״ל, מקרבים אותו לרפואה.

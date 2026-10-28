@@ -2,7 +2,7 @@
 title: Chesed: Acts of Loving-Kindness in Judaism
 description: What chesed means, why kindness is one of the pillars of the world in Jewish teaching, and simple ways to do acts of loving-kindness every day.
 category: Jewish ideas
-related: tzedakah, hachnasat-orchim, lashon-hara, comforting-mourners
+related: tzedakah, jewish-friendship, hachnasat-orchim, lashon-hara, comforting-mourners
 local: Want to help others in the Lamorinda Jewish community? Sign up to volunteer at chabadoflamorinda.com/forms/volunteer or call 925-384-7242.
 ---
 Chesed means loving-kindness: going out of your way to do good for others, with your time, effort and heart. The Mishnah teaches that the world stands on three pillars: Torah, prayer and acts of loving-kindness.

@@ -2,7 +2,7 @@
 title: Tehillim (Psalms): How and When to Say Them
 description: What Tehillim, the Book of Psalms, are, why Jews say them in good times and hard times, Chabad customs, and which psalms to say for healing.
 category: Prayer & Torah
-related: prayer, the-rebbe, blessings, torah
+related: prayer, prayer-before-surgery, the-rebbe, blessings, torah
 local: We can help you get a Tehillim book, join others in saying Tehillim for someone in need, and learn the customs. Call 925-384-7242.
 ---
 Tehillim is the Hebrew name for the Book of Psalms, 150 songs and prayers composed mostly by King David. For thousands of years, Jews have turned to Tehillim in every situation: to give thanks, to ask for help, to pray for someone who is sick, and simply to feel close to G-d.

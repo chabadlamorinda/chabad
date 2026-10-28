@@ -2,7 +2,7 @@
 title: שבת בבית החולים: מדריך מעשי למטופלים ולמשפחות
 description: בבית החולים בשבת או בחג? מה מותר לחולה, נרות, קידוש, אוכל, ביקורים, ואיך הרב יכול לעזור.
 category: Shabbat & holidays
-related: pikuach-nefesh, bikur-cholim, mi-sheberach, shabbat-candles
+related: pikuach-nefesh, prayer-before-surgery, bikur-cholim, mi-sheberach, shabbat-candles
 local: חולים ומשפחות מלאפייט, מוראגה, אורינדה ואיסט ביי: התקשרו לרב ישראל לבקובסקי לביקור, לצורכי שבת או לשאלה, 925-384-7242.
 ---
 אף אחד לא מתכנן לבלות שבת בבית החולים. אם אתם או אדם יקר לכם נמצאים שם בשבת או בחג, הנה מה שכדאי לדעת. קודם כול, והכי חשוב: **בריאות החולה קודמת לכול.** ראו [פיקוח נפש](/learn/pikuach-nefesh).

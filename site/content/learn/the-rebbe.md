@@ -2,7 +2,7 @@
 title: The Lubavitcher Rebbe: Who Was Rabbi Menachem Mendel Schneerson?
 description: Who the Lubavitcher Rebbe was, his life and leadership, his teachings, and why his influence is felt in Jewish communities worldwide.
 category: Jewish ideas
-related: chabad, chassidus, moshiach, tanya
+related: chabad, gimmel-tammuz, chassidus, moshiach, tanya
 local: Chabad of Lamorinda is one of thousands of Chabad centers inspired by the Rebbe. Call Rabbi Labkowski at 925-384-7242 to learn more about the Rebbe's teachings.
 ---
 The Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson (1902 to 1994), was the seventh leader of the Chabad-Lubavitch movement and one of the most influential Jewish leaders of modern times. From his headquarters in Brooklyn, New York, he inspired a worldwide network of emissaries and a renewal of Jewish life across the globe.

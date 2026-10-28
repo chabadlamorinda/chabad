@@ -2,7 +2,7 @@
 title: Хесед: дела любящей доброты в иудаизме
 description: Что означает хесед, почему доброта в еврейском учении - одна из опор мира, и простые способы каждый день совершать дела любящей доброты.
 category: Jewish ideas
-related: tzedakah, hachnasat-orchim, lashon-hara, comforting-mourners
+related: tzedakah, jewish-friendship, hachnasat-orchim, lashon-hara, comforting-mourners
 local: Хотите помогать другим в еврейской общине Ламоринды? Запишитесь волонтером на chabadoflamorinda.com/forms/volunteer или звоните 925-384-7242.
 ---
 Хесед означает любящую доброту: делать добро другим, не жалея своего времени, сил и сердца. Мишна учит, что мир стоит на трех опорах: Торе, молитве и делах любящей доброты.

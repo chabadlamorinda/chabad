@@ -2,7 +2,7 @@
 title: לטפל באדם יקר: כוח יהודי למטפלים
 description: מטפלים בבן זוג, הורה או ילד חולה: המצווה שאתם עושים, איך להימנע משחיקה, לבקש עזרה, תפילה ותמיכה מהקהילה.
 category: Life cycle
-related: caring-for-aging-parents, bikur-cholim, mi-sheberach, mental-health-jewish-view
+related: caring-for-aging-parents, when-a-loved-one-is-dying, bikur-cholim, mi-sheberach, mental-health-jewish-view
 local: מטפלים בלאפייט, מוראגה, אורינדה ובאיסט ביי: התקשרו לרב ישראל או לרבנית ציפורה לבקובסקי לתמיכה, לביקור או לתפילה, 925-384-7242.
 ---
 לטפל במישהו שאתם אוהבים, שהוא חולה, עם מוגבלות או מזדקן, הוא אחד ממעשי החסד הגדולים ביותר, ואחד המתישים ביותר. אם אתם מטפלים, המדריך הזה בשבילכם.

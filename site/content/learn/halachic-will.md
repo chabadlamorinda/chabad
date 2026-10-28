@@ -2,7 +2,7 @@
 title: A Jewish Will: Estate Planning with Jewish Values
 description: Planning your estate the Jewish way: why Jewish law cares about inheritance, a halachic will, burial wishes, tzedakah and legacy gifts, and an ethical will.
 category: Life cycle
-related: ethical-will, jewish-funeral, cremation-jewish-view, tzedakah
+related: ethical-will, when-a-loved-one-is-dying, jewish-funeral, cremation-jewish-view, tzedakah
 local: Families in Lafayette, Moraga, Orinda and the East Bay: Rabbi Yisroel Labkowski can talk with you about Jewish wishes for your will and burial. 925-384-7242.
 ---
 Planning a will is a gift to the people you love. Judaism adds three things to think about: making sure your plan is valid in Jewish law, leaving clear Jewish burial wishes, and passing on your values, not only your assets.

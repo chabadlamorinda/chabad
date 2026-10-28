@@ -2,7 +2,7 @@
 title: Pirkei Avot: Ethics of the Fathers and Its Timeless Teachings
 description: What Pirkei Avot is, why Jews study a chapter each Shabbat afternoon in the summer, and famous teachings from Hillel, Ben Zoma and other Sages.
 category: Prayer & Torah
-related: mishnah, talmud, daily-torah-study, torah
+related: mishnah, jewish-friendship, talmud, daily-torah-study, torah
 local: Want to study Pirkei Avot with others? Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 Pirkei Avot, "Chapters of the Fathers," usually called Ethics of the Fathers, is a small book of big wisdom. It collects the favorite sayings of the great Sages of the Mishnah about how to live: how to treat people, how to learn, how to work, and how to stay humble. Many of its lines have become everyday Jewish sayings.

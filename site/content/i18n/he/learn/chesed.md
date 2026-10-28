@@ -2,7 +2,7 @@
 title: חסד: גמילות חסדים ביהדות
 description: מה פירוש חסד, למה החסד הוא אחד מעמודי העולם לפי היהדות, ודרכים פשוטות לגמול חסד בכל יום.
 category: Jewish ideas
-related: tzedakah, hachnasat-orchim, lashon-hara, comforting-mourners
+related: tzedakah, jewish-friendship, hachnasat-orchim, lashon-hara, comforting-mourners
 local: רוצים לעזור לאחרים בקהילה היהודית בלמורינדה? הירשמו להתנדבות ב-chabadoflamorinda.com/forms/volunteer או התקשרו 925-384-7242.
 ---
 חסד פירושו אהבה ונדיבות: להתאמץ במיוחד כדי להיטיב עם אחרים, בזמן, במאמץ ובלב. המשנה מלמדת שהעולם עומד על שלושה דברים: על התורה, על העבודה ועל גמילות חסדים.

@@ -2,7 +2,7 @@
 title: מרגישים בודדים: למצוא קשר וקהילה
 description: בדידות פוגעת באנשים בכל גיל. חכמה יהודית על קשר, צעדים פשוטים למצוא חברים וקהילה, וקבלת פנים חמה בחב״ד למורינדה.
 category: Jewish ideas
-related: shabbat-guest-guide, jewish-seniors-in-lamorinda, young-professionals-in-lamorinda, mental-health-jewish-view
+related: shabbat-guest-guide, jewish-friendship, jewish-seniors-in-lamorinda, young-professionals-in-lamorinda, mental-health-jewish-view
 local: בודדים או חדשים בלאפייט, מוראגה, אורינדה או בסביבה? בואו לשבת, לשיעור או לחג בחב״ד למורינדה, או התקשרו 925-384-7242 לשיחה ידידותית.
 ---
 אחרי מעבר דירה, גירושין, אובדן בן או בת זוג, פרישה לגמלאות, או פשוט חיים עמוסים, אנשים רבים מרגישים בודדים. אתם לא לבד בתחושת הבדידות, והיהדות תמיד הייתה דת של קהילה.

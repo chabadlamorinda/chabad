@@ -2,7 +2,7 @@
 title: Одиночество: как найти близость и общину
 description: Одиночество знакомо людям любого возраста. Еврейская мудрость о близости, простые шаги к друзьям и общине и теплый прием в Хабаде Ламоринды.
 category: Jewish ideas
-related: shabbat-guest-guide, jewish-seniors-in-lamorinda, young-professionals-in-lamorinda, mental-health-jewish-view
+related: shabbat-guest-guide, jewish-friendship, jewish-seniors-in-lamorinda, young-professionals-in-lamorinda, mental-health-jewish-view
 local: Одиноко или вы недавно в Лафайетте, Мораге, Оринде или рядом? Приходите на Шабат, урок или праздник в Хабад Ламоринды или звоните 925-384-7242 просто поговорить.
 ---
 После переезда, развода, потери супруга, выхода на пенсию или просто в суете жизни многие чувствуют себя одиноко. Вы не одиноки в своем одиночестве, а иудаизм всегда был религией общины.

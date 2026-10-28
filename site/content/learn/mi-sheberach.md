@@ -2,7 +2,7 @@
 title: Mi Sheberach: The Prayer for Healing and Blessing
 description: What the Mi Sheberach prayer is, how to request one for someone who is sick, why the mother's name is used, and other occasions it is said.
 category: Prayer & Torah
-related: tehillim, prayer, aliyah, tzedakah
+related: tehillim, prayer-before-surgery, prayer, aliyah, tzedakah
 local: To add a name to our prayers for healing, visit chabadoflamorinda.com/help/someone-is-sick or call Rabbi Labkowski at 925-384-7242.
 ---
 Mi Sheberach is a short prayer, usually said at the Torah, asking G-d to bless a person. It is best known as the prayer for healing, said for someone who is ill, but there are also Mi Sheberach prayers for someone called to the Torah, for a new baby, for the community and more.

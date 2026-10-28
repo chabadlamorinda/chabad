@@ -2,7 +2,7 @@
 title: Shabbat in the Hospital: A Practical Guide for Patients and Families
 description: In the hospital over Shabbat or a holiday? What is permitted for the patient, candles, Kiddush, food, visiting, and how the Rabbi can help.
 category: Shabbat & holidays
-related: pikuach-nefesh, bikur-cholim, mi-sheberach, shabbat-candles
+related: pikuach-nefesh, prayer-before-surgery, bikur-cholim, mi-sheberach, shabbat-candles
 local: Patients and families from Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski for a visit, Shabbat supplies or a question, 925-384-7242.
 ---
 Nobody plans to spend Shabbat in the hospital. If you or someone you love is there over Shabbat or a holiday, here is what to know. First and most important: **the patient's health comes first.** See [Pikuach Nefesh](/learn/pikuach-nefesh).

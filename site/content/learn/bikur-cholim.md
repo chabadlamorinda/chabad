@@ -2,7 +2,7 @@
 title: Bikur Cholim: The Mitzvah of Visiting the Sick
 description: What bikur cholim means, why visiting the sick is a great mitzvah, how to visit well, what to say, and how to pray for someone who is ill.
 category: Jewish ideas
-related: chesed, mi-sheberach, tehillim, comforting-mourners
+related: chesed, when-a-loved-one-is-dying, mi-sheberach, tehillim, comforting-mourners
 local: If someone you love is ill, call Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/help/someone-is-sick and we will help with prayers, visits and support.
 ---
 Bikur cholim means "visiting the sick," and it is one of the great mitzvahs of kindness in Judaism. A visit, a call or a prayer lifts a sick person's spirit, eases their burden and, as the Sages teach, brings them closer to healing.

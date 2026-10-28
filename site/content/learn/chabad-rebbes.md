@@ -2,7 +2,7 @@
 title: The Seven Chabad Rebbes: A Short History of Chabad Leadership
 description: Meet the seven Rebbes of Chabad-Lubavitch, from Rabbi Schneur Zalman of Liadi to the Lubavitcher Rebbe, and how each shaped the movement.
 category: Jewish ideas
-related: chabad, the-rebbe, baal-shem-tov, tanya
+related: chabad, gimmel-tammuz, the-rebbe, baal-shem-tov, tanya
 local: Chabad of Lamorinda carries forward the Rebbes' mission of caring for every Jew. Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/events.
 ---
 Chabad-Lubavitch has been led by seven Rebbes over more than two hundred years. Each one built on the teachings of the [Baal Shem Tov](/learn/baal-shem-tov) and his predecessors, guiding Chassidim through persecution, war and emigration, and spreading Torah and love for every Jew.
