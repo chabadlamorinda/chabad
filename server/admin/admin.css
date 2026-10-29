@@ -29,3 +29,12 @@ details.sec>summary .cnt:not(:empty){margin-inline-start:auto;font-family:system
 .wait-row b{font-family:system-ui,sans-serif;background:#b68235;color:#fff;border-radius:999px;padding:2px 10px;font-size:15px}
 .wait-row span{margin-inline-start:auto;color:#7d5411;font-size:22px}
 .waiting a.big{display:block;text-align:center;margin-top:10px;padding:12px;border-radius:9px;background:#fff3e4;border:1px solid #b68235;color:#7d5411;text-decoration:none}
+/* Finances */
+.fin-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.fin-cards .card{margin:0;display:grid;gap:2px}
+.fin-big{font-size:26px;font-weight:400}.fin-big.in{color:#1f7a46}.fin-big.out{color:#9b2c2c}
+.fin-chart{display:flex;gap:4px;align-items:flex-end;height:140px;margin:10px 0 4px}.fin-m{flex:1;display:flex;flex-direction:column;align-items:center;height:100%}
+.fin-bars{flex:1;width:100%;display:flex;gap:2px;align-items:flex-end}.fin-bars i{flex:1;display:block;border-radius:3px 3px 0 0;min-height:1px}
+.fin-bars i.in,.fin-key.in{background:#3a9a64}.fin-bars i.out,.fin-key.out{background:#c26a5a}.fin-m span{font-size:11px;color:#605d5d}
+.fin-key{display:inline-block;width:10px;height:10px;border-radius:2px}
+table.fin{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}table.fin td,table.fin th{padding:6px 4px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}table.fin th{font-size:13px;color:#605d5d;font-weight:400}
+.fin-form{display:grid;gap:8px}.fin-form [hidden]{display:none}.fin-tx.in b{color:#1f7a46}.fin-tx.out b{color:#9b2c2c}

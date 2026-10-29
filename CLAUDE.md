@@ -133,6 +133,14 @@ A campaign is one entry in `site/content/campaigns.json` (and its words in `i18n
 ## The Rabbi area (admin)
 `/admin` (Rabbi's desk, `server/admin/admin.js`) and `/admin/community` (website: requests, people to reach out to, social drafts, weekly email, approvals, sign-ups, chat questions, Ask the Rabbi, RSVPs, birthdays; `server/admin/community.js`). Both share `server/admin/admin.css`. In community.js each block is `section(title, note, shortName)`; call `.count(n, waiting)` on it to show a count in the sticky menu (and open it when something waits for the Rabbi). Keep it phone-first: big buttons, short words. The Rabbi's desk opens with "Waiting for you": one line per thing waiting (new requests, approvals, people to reach out to, sign-ups, visitors on important topics), each opening its section (`/admin/community#requests`). What counts as waiting is defined once in `server/admin/waiting.js`, used by both pages; a section's `shortName` is its `#id`. The order of the sections (things to act on first, the setup checklist last) is one list at the end of community.js. The "Setup checklist" section (`/admin/api/site/setup` in `server/site/index.js`) shows which settings are in place; keep it in step with `store/rabbi-todo.md`.
 
+## Finances (the built-in books and donor records)
+`/admin/finances` (button on the Rabbi's desk; `server/finances.js`, screen `server/admin/finances.js`). Tables `fin_tx` (every dollar in and out), `fin_people` (donors and payees, matched by email), `fin_budget`, created on first use.
+* Comes in by itself, every 6 hours and with the "Bring in online gifts now" button: every Stripe payment (donations, Chai Club, campaigns, Kiddush, form payments; category from what the website put on the payment), Stripe's fee as an expense, refunds as money out (payouts to the bank are neither), and campaign gifts entered by hand. Nothing is counted twice (`ext_id`).
+* By hand: checks, cash, Zelle, grants, rent received, and every expense (category, who it was paid to, check number, note). Online payments keep their amount and date and cannot be deleted.
+* Overview: money in, out and left over against last year, month by month, by category (with the budget), fund and how paid; top donors; who gave last year but not yet this year; who gives again and again (invite to the Chai Club).
+* People: giving by year, payment history, contact, notes, tags; a printable year-end tax letter (`/admin/finances/letter/<id>?year=`) with the tax ID from org.json `legal`; "Email letters to every donor" (needs email sending). Reports: a CSV for the accountant, the yearly budget.
+* Categories are the lists at the top of `server/finances.js`; funds are the giving funds in `server/index.js`.
+
 ## Community submissions
 Mazal Tovs, announcements, shiva notices, ideas and resources sent through `/community` wait in the Rabbi area for approval. When the Rabbi approves a resource or idea, add it to the right content file.
 

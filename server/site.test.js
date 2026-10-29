@@ -883,6 +883,50 @@ test('campaigns: draft template hidden, a live one leads every page, ambassadors
   fs.rmSync(dir, { recursive: true, force: true });
 });
 
+test('finances: online gifts come in from Stripe with fees and refunds, money in and out by hand, reports, donor letters', async () => {
+  const { fakeStripe } = require('./fake-stripe.js'), { createFinances } = require('./finances.js');
+  const stripe = fakeStripe(), y = new Date().getFullYear(), sec = (m, d) => Math.floor(Date.UTC(y, m - 1, d, 20) / 1000);
+  stripe._st.balance.push(
+    { id: 'txn_1', type: 'charge', amount: 18000, fee: 552, created: sec(1, 10), source: { id: 'ch_1', description: 'Gift: General Fund', metadata: { fund: 'general', dedication: 'In honor of Mom' }, billing_details: { name: 'Sara Levi', email: 'Sara@Example.com' } } },
+    { id: 'txn_2', type: 'charge', amount: 18000, fee: 552, created: sec(2, 10), source: { id: 'ch_2', description: 'Subscription update', metadata: {}, billing_details: { name: 'Sara Levi', email: 'sara@example.com' }, invoice: { subscription_details: { metadata: { fund: 'chai', club: 'yes' } } } } },
+    { id: 'txn_3', type: 'charge', amount: 360000, fee: 500, created: sec(3, 1), source: { id: 'ch_3', metadata: { campaign: 'roof-2026', fund: 'building' }, billing_details: { name: 'The Cohens', email: 'cohen@example.com' } } },
+    { id: 'txn_4', type: 'refund', amount: -18000, fee: 0, created: sec(3, 2), source: { id: 're_1', charge: 'ch_1' } },
+    { id: 'txn_5', type: 'payout', amount: -300000, fee: 0, created: sec(3, 3), source: {} });
+  const F = createFinances({ stripe, store, content: server_site().content, funds: { general: 'General Fund', chai: 'Chai Club', building: 'Building Campaign' }, mailer: { send: async (m) => { mails.push(m); } } });
+  assert.equal((await F.sync()).added, 4, 'three gifts and a refund; the payout is not income');
+  assert.equal((await F.sync()).added, 0, 'nothing twice');
+  const s = await F.summary(y);
+  assert.equal(s.income, 396000); assert.equal(s.expenses, 552 + 552 + 500 + 18000, 'fees and the refund are money out');
+  assert.deepEqual(s.byCategory.filter((x) => x.kind === 'in').map((x) => x.key).sort(), ['Campaign', 'Chai Club (monthly)', 'Donations']);
+  assert.equal(s.donors[0].name, 'The Cohens'); assert.equal(s.donors.find((d) => d.name === 'Sara Levi').n, 2, 'one person, matched by email');
+
+  // By hand, through the Rabbi area: a check from last year (so Rachel shows as "gave last year, not yet this year"), an expense, a budget.
+  const a = await admin(), H = { 'x-admin': '1' };
+  assert.equal((await a.call('GET', '/admin/finances')).status, 200);
+  assert.equal((await a.call('POST', '/admin/api/fin/tx', { kind: 'in', amount: 500, day: `${y - 1}-06-01`, category: 'Donations', method: 'check', ref: '1042', personName: 'Rachel Green', personEmail: 'rachel@example.com' }, H)).status, 200);
+  const rent = await a.call('POST', '/admin/api/fin/tx', { kind: 'out', amount: 2500, day: `${y}-01-05`, category: 'Rent / mortgage', method: 'check', payee: 'Landlord', deductible: true }, H);
+  assert.equal(rent.status, 200);
+  assert.equal((await a.call('POST', '/admin/api/fin/tx', { kind: 'out', amount: 0, day: `${y}-01-05` }, H)).status, 400);
+  assert.equal((await a.call('PUT', '/admin/api/fin/budget', { year: y, items: [{ category: 'Rent / mortgage', amount: 30000 }] }, H)).status, 200);
+  const sum = (await a.call('GET', '/admin/api/fin/summary?year=' + y, undefined, H)).json;
+  assert.equal(sum.expenses, 19604 + 250000); assert.equal(sum.budget[0].cents, 3000000);
+  assert.equal(sum.lapsed[0].name, 'Rachel Green');
+  const tx = (await a.call('GET', '/admin/api/fin/tx?year=' + y + '&q=landlord', undefined, H)).json.items;
+  assert.equal(tx.length, 1); assert.equal(tx[0].deductible, false, 'an expense is never a tax-deductible gift');
+  const online = (await a.call('GET', '/admin/api/fin/tx?year=' + y + '&kind=in', undefined, H)).json.items.find((t) => t.source === 'stripe');
+  assert.equal((await a.call('DELETE', '/admin/api/fin/tx/' + online.id, undefined, H)).status, 400, 'online payments stay');
+  assert.equal((await a.call('DELETE', '/admin/api/fin/tx/' + rent.json.id, undefined, H)).status, 200);
+  const csv = (await a.call('GET', '/admin/api/fin/export.csv?year=' + y, undefined, H)).text;
+  assert.match(csv, /"Date","In\/Out","Amount"/); assert.match(csv, /"3600.00","Campaign","Building Campaign","Online/);
+  const sara = (await a.call('GET', '/admin/api/fin/people?q=sara', undefined, H)).json.items[0];
+  assert.equal(sara.total, 36000);
+  const letter = (await a.call('GET', `/admin/finances/letter/${sara.id}?year=${y}`)).text;
+  assert.match(letter, /\$360\.00/); assert.match(letter, /tax ID 47-4642750/);
+  assert.equal((await a.call('PUT', '/admin/api/fin/people/' + sara.id, { name: 'Sara Levi', email: 'sara@example.com', notes: 'Loves the Shabbat dinners', tags: 'board' }, H)).status, 200);
+  assert.equal((await a.call('GET', '/admin/api/fin/people/' + sara.id, undefined, H)).json.person.tags, 'board');
+  assert.equal((await client().call('GET', '/admin/api/fin/summary', undefined, H)).status, 401);
+});
+
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',

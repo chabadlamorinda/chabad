@@ -35,6 +35,8 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 
 20. **More ways to pay in campaigns (5 minutes, free to switch on):** in Stripe, Settings → Payment methods, switch on **ACH Direct Debit (bank account)**, which costs far less than a card for large gifts (0.8%, at most $5), and **Link**, **Cash App Pay** and any others you like. They then appear by themselves on the secure payment page of every campaign and of /donate. Apple Pay and Google Pay are already on.
 
+21. **Finances, first look (10 minutes):** open the Rabbi's desk → Finances → "Bring in online gifts now". Every online gift since the website started comes in. Then add this year's checks and the main expenses (rent, utilities...), and set a budget under Reports. If it says Stripe refused, the Stripe key in Render needs permission to read balance transactions (Claude will walk you through it).
+
 ## Questions you can answer any time (no computer needed)
 * Should "Talk privately with the Rebbetzin" go to the Rebbetzin's own cell phone? If so, which number? (Right now it goes to 925-384-7242 with a message addressed to her.)
 * Chanukah: date, time and place of the Grand Menorah Lighting, and any party, kids' event or Shabbat Chanukah dinner.

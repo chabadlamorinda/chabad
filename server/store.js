@@ -57,7 +57,7 @@ function createStore(url, opts = {}) {
     migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); await q(OUTREACH_SCHEMA); },
     close: () => pool.end(),
     reset: async () => { // tests only (the shareable kit has no website tables)
-      const want = ['members', 'yahrzeits', 'push_subs', 'push_log', 'followups', 'payment_events', 'family', 'rsvps', 'login_codes', 'submissions', 'social_posts', 'email_log', 'form_responses', 'chat_questions', 'email_unsubscribes', 'qa', 'member_activity', 'outreach_done', 'kv', 'community_days'];
+      const want = ['members', 'yahrzeits', 'push_subs', 'push_log', 'followups', 'payment_events', 'family', 'rsvps', 'login_codes', 'submissions', 'social_posts', 'email_log', 'form_responses', 'chat_questions', 'email_unsubscribes', 'qa', 'member_activity', 'outreach_done', 'kv', 'community_days', 'fin_tx', 'fin_people', 'fin_budget'];
       const have = (await q('SELECT tablename FROM pg_tables WHERE schemaname = current_schema() AND tablename = ANY($1)', [want])).rows.map((r) => r.tablename);
       if (have.length) await q(`TRUNCATE ${have.join(', ')} CASCADE`);
     },

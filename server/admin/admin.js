@@ -21,6 +21,7 @@
     [['donors', 'Monthly donors'], ['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['announce', 'Announcements'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
       nav.appendChild(el('button', { class: tab === t[0] ? 'on' : '', text: t[1], onclick: function () { tab = t[0]; load(); } }));
     });
+    nav.appendChild(el('a', { href: '/admin/finances', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Finances' }));
     nav.appendChild(el('a', { href: '/admin/kiddush/', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Kiddush board' }));
     nav.appendChild(el('a', { href: '/admin/community', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Website: requests, sign-ups, RSVPs' }));
     nav.appendChild(el('button', { text: 'Sign out', onclick: function () { api('POST', '/logout').then(function () { login(); }); } }));

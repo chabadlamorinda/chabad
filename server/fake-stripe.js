@@ -47,6 +47,8 @@ function fakeStripe() {
       search: async ({ query }) => ({ data: Object.values(st.subs).filter((x) => matchQuery(x, query)), has_more: false }),
     },
   };
+  st.balance = []; // balance transactions the tests add (charges with their fees, refunds, payouts)
+  s.balanceTransactions = { list: async ({ created, starting_after }) => { const all = st.balance.filter((b) => !created || b.created >= created.gte), i = starting_after ? all.findIndex((b) => b.id === starting_after) + 1 : 0; return { data: all.slice(i, i + 100), has_more: all.length > i + 100 }; } };
   s.webhooks = new Stripe('sk_test_dummy').webhooks; // real signature checking
   s.checkout = { sessions: {
     create: async (p, o) => { st.calls.push(['checkout.sessions.create', p, o]);
