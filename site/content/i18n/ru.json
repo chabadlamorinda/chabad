@@ -1450,5 +1450,8 @@
  "over {n} years": "за {n} лет",
  "plus {amount} pledged": "и ещё {amount} обещано",
  "{amount} a year": "{amount} в год",
- "{n} yearly payments": "{n} ежегодных платежей"
+ "{n} yearly payments": "{n} ежегодных платежей",
+ "Bring a friend": "Приведите друга",
+ "Everything is better together. Send a friend your personal invitation:": "Вместе всё лучше. Отправьте другу личное приглашение:",
+ "I'm going to {title} ({when}) at Chabad of Lamorinda. Come with me! {url}": "Я иду на «{title}» ({when}) в Хабаде Ламоринды. Пойдём со мной! {url}"
 }

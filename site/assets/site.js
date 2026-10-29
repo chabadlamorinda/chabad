@@ -83,6 +83,17 @@
   var box = $('[data-rsvp]');
   if (box) {
     var slug = box.getAttribute('data-rsvp'), ui = $('.rsvp-ui', box), withKids = box.getAttribute('data-kids') === '1';
+    // "Bring a friend": a friend's invite link carries ?ref=<their code>; keep it for this visit so their RSVP is credited.
+    var refKey = 'cl_ref_' + slug, refIn = (location.search.match(/[?&]ref=([a-z0-9]{6,16})/) || [])[1];
+    try { if (refIn) sessionStorage.setItem(refKey, refIn); } catch (e) {}
+    var invite = function (code) {
+      if (!code || box.querySelector('.invite')) return;
+      var url = location.origin + location.pathname + '?ref=' + code, text = T("I'm going to {title} ({when}) at Chabad of Lamorinda. Come with me! {url}", { title: box.getAttribute('data-title'), when: box.getAttribute('data-when'), url: url }), enc = encodeURIComponent(text);
+      var copy = el('button', { type: 'button', class: 'btn ghost sm', text: T('Copy link') });
+      copy.addEventListener('click', function () { (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { copy.textContent = T('Link copied'); }, function () { prompt(T('Copy link'), url); }); });
+      box.appendChild(el('div', { class: 'invite' }, [el('p', { class: 'hand', text: T('Bring a friend') }), el('p', { text: T('Everything is better together. Send a friend your personal invitation:') }),
+        el('p', { class: 'btns' }, [el('a', { class: 'btn gold sm', href: 'https://wa.me/?text=' + enc, target: '_blank', rel: 'noopener', text: 'WhatsApp' }), el('a', { class: 'btn ghost sm', href: 'sms:?&body=' + enc, text: T('Text message') }), el('a', { class: 'btn ghost sm', href: 'mailto:?subject=' + encodeURIComponent(box.getAttribute('data-title')) + '&body=' + enc, text: T('Email') }), copy])]));
+    };
     api('GET', '/rsvp/' + slug).then(function (s) {
       ui.hidden = false;
       if (s._status === 503) { ui.appendChild(el('p', { text: T('Online RSVP is coming soon. Please call or email us to RSVP.') })); return; }
@@ -103,10 +114,11 @@
       form.addEventListener('submit', function (ev) {
         ev.preventDefault(); go.disabled = true;
         var body = { adults: adults.value(), kids: withKids ? kids.value() : 0, note: note.value, name: name.value, email: email.value, phone: phone.value };
+        try { body.ref = sessionStorage.getItem(refKey) || ''; } catch (e) {}
         if (!s.signedIn) store.set('cl_guest', { name: name.value, email: email.value, phone: phone.value });
         api('POST', '/rsvp/' + slug, body).then(function (r) {
           go.disabled = false;
-          if (r.ok) { msg(m, T('Thank you! You are on the list. See you there.'), true); nudge(m.parentNode); go.textContent = T('Update my RSVP'); if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug }); }
+          if (r.ok) { msg(m, T('Thank you! You are on the list. See you there.'), true); nudge(m.parentNode); invite(r.invite); go.textContent = T('Update my RSVP'); if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug }); }
           else msg(m, r.error || T('Something went wrong.'));
         });
       });

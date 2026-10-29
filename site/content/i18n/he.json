@@ -1362,5 +1362,8 @@
  "over {n} years": "במשך {n} שנים",
  "plus {amount} pledged": "ועוד {amount} בהתחייבויות",
  "{amount} a year": "{amount} לשנה",
- "{n} yearly payments": "{n} תשלומים שנתיים"
+ "{n} yearly payments": "{n} תשלומים שנתיים",
+ "Bring a friend": "הביאו חבר",
+ "Everything is better together. Send a friend your personal invitation:": "הכול טוב יותר ביחד. שלחו לחבר הזמנה אישית:",
+ "I'm going to {title} ({when}) at Chabad of Lamorinda. Come with me! {url}": "אני הולך/ת ל{title} ({when}) בחב״ד למורינדה. בואו איתי! {url}"
 }

@@ -800,3 +800,7 @@ form.tool .btn.gold { justify-self: start; min-width: 200px; }
 .cmp-topbar .cmp-bar { flex: 1; height: 7px; min-width: 50px; background: rgba(255,255,255,.15); }
 .cmp-topbar-go { flex: none; padding: 4px 12px; border-radius: 999px; background: linear-gradient(180deg, var(--gold-2), var(--gold)); color: #1b1300; font-weight: 700; font-size: .85rem; }
 @media (max-width: 560px) { .cmp-topbar b { display: none; } }
+
+/* "Bring a friend" after an RSVP */
+.invite { margin-top: 14px; padding: 14px 16px; border-radius: var(--r); background: var(--soft); border: 1px dashed var(--gold); }
+.invite .hand { font-size: 1.5rem; margin: 0; color: var(--gold-ink); } .invite p { margin: 4px 0; }

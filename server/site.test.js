@@ -16,7 +16,18 @@ let pg, store, server, base, mails, fbPosts, theApp;
 const chatCalls = [];
 const server_site = () => theApp.locals.site;
 
+// The tests run on a copy of the website content in which the test event (EVENT) is always a few weeks ahead, so they
+// never depend on today's date (a real event dated tomorrow would otherwise disappear from the pages once it is past).
+const EVENT = 'kabbalat-shabbat-and-dinner-2026-10-30';
+const TEST_CONTENT = fs.mkdtempSync(path.join(os.tmpdir(), 'site-content-'));
+let EVENT_START = '';
 test.before(async () => {
+  fs.cpSync(DIR, TEST_CONTENT, { recursive: true });
+  const evPath = path.join(TEST_CONTENT, 'events.json'), evs = JSON.parse(fs.readFileSync(evPath, 'utf8')), ev = evs.find((e) => e.slug === EVENT);
+  const d = new Date(Date.now() + 40 * 864e5); d.setUTCDate(d.getUTCDate() + ((5 - d.getUTCDay() + 7) % 7)); // a Friday about six weeks ahead
+  const day = d.toISOString().slice(0, 10); EVENT_START = day + 'T17:45';
+  ev.start = EVENT_START; if (ev.end) ev.end = day + ev.end.slice(10);
+  fs.writeFileSync(evPath, JSON.stringify(evs, null, 2));
   pg = await startPg(); store = createStore(pg.url); await store.migrate();
   mails = []; fbPosts = [];
   const facebook = { instagram: true, photos: async () => [{ src: 'https://scontent.xx.fbcdn.net/a.jpg', alt: 'Menorah lighting', link: 'https://facebook.com/p/1' }],
@@ -27,13 +38,13 @@ test.before(async () => {
     const text = 'Shabbat services are Saturday at 10 AM. See [Shabbat times](/shabbat).';
     return { async *[Symbol.asyncIterator]() { for (const w of text.match(/.{1,12}/g)) yield { type: 'content_block_delta', delta: { type: 'text_delta', text: w } }; }, finalMessage: async () => ({ stop_reason: 'end_turn' }) };
   } } };
-  const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook, chatClient,
+  const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook, chatClient, siteContentDir: TEST_CONTENT,
     mailer: { send: async (m) => { mails.push(m); } } });
   theApp = app;
   server = await new Promise((r) => { const s = app.listen(0, () => r(s)); });
   base = 'http://127.0.0.1:' + server.address().port;
 });
-test.after(async () => { server.close(); await store.close(); await pg.stop(); });
+test.after(async () => { fs.rmSync(TEST_CONTENT, { recursive: true, force: true }); server.close(); await store.close(); await pg.stop(); });
 test.beforeEach(async () => { await store.reset(); mails.length = 0; });
 
 // A tiny cookie-keeping client, like a browser.
@@ -60,7 +71,6 @@ async function signIn(email = 'Sara@Example.com') {
   assert.equal((await c.call('POST', '/api/site/verify', { email, code })).status, 200);
   return c;
 }
-const EVENT = 'kabbalat-shabbat-and-dinner-2026-10-30';
 
 test('content files are valid and linked together', () => {
   const c = load();
@@ -110,7 +120,7 @@ test('home and key pages render with structured data and security headers', asyn
   assert.match(home.text, /fbcdn\.net\/a\.jpg/);
   assert.match(home.headers.get('content-security-policy'), /img-src 'self' data: https:\/\/\*\.fbcdn\.net/);
   const ev = await c.call('GET', '/events/' + EVENT);
-  assert.match(ev.text, /"@type":"Event"/); assert.match(ev.text, /"startDate":"2026-10-30T17:45:00-07:00"/);
+  assert.match(ev.text, /"@type":"Event"/); assert.ok(ev.text.includes('"startDate":"' + withOffset(EVENT_START) + '"'));
   assert.match(ev.text, /data-rsvp="kabbalat-shabbat-and-dinner-2026-10-30"/);
   assert.match((await c.call('GET', '/events')).text, /"@type":"EventSeries".*"byDay":"https:\/\/schema.org\/Sunday"/);
   for (const p of ['/events', '/shabbat', '/holidays', '/holidays/passover', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/about', '/faq', '/contact', '/photos', '/account', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10']) {
@@ -133,7 +143,7 @@ test('SEO and AI files', async () => {
   assert.match(robots.text, /User-agent: GPTBot\nAllow: \//); assert.match(robots.text, /User-agent: ClaudeBot/); assert.match(robots.text, /Sitemap: http:\/\/site\.test\/sitemap\.xml/);
   const sm = await c.call('GET', '/sitemap.xml'); assert.match(sm.text, /<loc>http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.ok(!sm.text.includes('grand-menorah'));
   const llms = await c.call('GET', '/llms.txt'); assert.match(llms.text, /^# Chabad of Lamorinda/); assert.match(llms.text, /3477 Golden Gate Way/);
-  const ics = await c.call('GET', '/events.ics'); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.match(ics.text, /DTSTART;TZID=America\/Los_Angeles:20261030T174500/);
+  const ics = await c.call('GET', '/events.ics'); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.ok(ics.text.includes('DTSTART;TZID=America/Los_Angeles:' + EVENT_START.replace(/[-:]/g, '') + '00'));
   assert.match((await c.call('GET', '/feed.xml')).text, /<rss/);
 });
 
@@ -504,7 +514,7 @@ test('Bar Mitzvah parshah finder: the date and the Torah portion, also for a Bar
 });
 
 test('calendar: a month grid with every event (page and RSVP links), the weekly schedule with Register, holidays and Chanukah nights', async () => {
-  const C = load(), ev = C.events.find((e) => e.published), m = ev.start.slice(0, 7);
+  const C = load(TEST_CONTENT), ev = C.events.find((e) => e.published), m = ev.start.slice(0, 7);
   const cal = (await client().call('GET', '/calendar?m=' + m)).text;
   assert.match(cal, /class="cal-grid"/); assert.match(cal, /class="cal-list"/);
   assert.ok(cal.includes('href="/events/' + ev.slug + '"'), 'the event links to its page');
@@ -925,6 +935,19 @@ test('finances: online gifts come in from Stripe with fees and refunds, money in
   assert.equal((await a.call('PUT', '/admin/api/fin/people/' + sara.id, { name: 'Sara Levi', email: 'sara@example.com', notes: 'Loves the Shabbat dinners', tags: 'board' }, H)).status, 200);
   assert.equal((await a.call('GET', '/admin/api/fin/people/' + sara.id, undefined, H)).json.person.tags, 'board');
   assert.equal((await client().call('GET', '/admin/api/fin/summary', undefined, H)).status, 401);
+});
+
+test('bring a friend: every RSVP gets an invite link, and a friend who RSVPs through it is credited', async () => {
+  const a = await client().call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Dina Inviter', email: 'dina@example.com' });
+  assert.equal(a.status, 200); assert.match(a.json.invite, /^[a-f0-9]{10}$/);
+  const page = (await client().call('GET', '/events/' + EVENT)).text; assert.match(page, /data-title="[^"]+" data-when="[^"]+"/);
+  assert.equal((await client().call('POST', '/api/site/rsvp/' + EVENT, { adults: 2, name: 'Friend One', email: 'friend1@example.com', ref: a.json.invite })).status, 200);
+  assert.equal((await client().call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Stranger', email: 'x@example.com', ref: 'notacode1' })).status, 200);
+  assert.equal((await client().call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Dina again', email: 'other@example.com', ref: '' })).status, 200);
+  const list = (await (await admin()).call('GET', '/admin/api/site/rsvps/' + EVENT, undefined, { 'x-admin': '1' })).json.list;
+  assert.equal(list.find((p) => p.email === 'friend1@example.com').brought_by, 'Dina Inviter');
+  assert.equal(list.find((p) => p.email === 'dina@example.com').brought, 1);
+  assert.equal(list.find((p) => p.email === 'x@example.com').brought_by, null, 'an unknown code credits no one');
 });
 
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {

@@ -50,6 +50,9 @@ CREATE TABLE IF NOT EXISTS rsvps (
   note TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE UNIQUE INDEX IF NOT EXISTS rsvps_event_email_idx ON rsvps (event_slug, lower(email));
+-- "Bring a friend": every RSVP gets its own invite code; a friend who RSVPs through it is noted as brought by them.
+ALTER TABLE rsvps ADD COLUMN IF NOT EXISTS invite_code TEXT NOT NULL DEFAULT '';
+ALTER TABLE rsvps ADD COLUMN IF NOT EXISTS ref TEXT NOT NULL DEFAULT '';
 CREATE TABLE IF NOT EXISTS submissions (
   id TEXT PRIMARY KEY, kind TEXT NOT NULL, member_id TEXT REFERENCES members(id) ON DELETE SET NULL,
   name TEXT NOT NULL, email TEXT NOT NULL, title TEXT NOT NULL, body TEXT NOT NULL DEFAULT '', link TEXT NOT NULL DEFAULT '',
@@ -132,10 +135,14 @@ function communityStore(store) {
         await c.query('COMMIT');
       } catch (e) { await c.query('ROLLBACK'); throw e; } finally { c.release(); }
     },
+    // Returns the RSVP's invite code (for "Bring a friend"). A ref counts only if it is another guest's code for the same event.
     async upsertRsvp(r) {
-      return one(`INSERT INTO rsvps (id, event_slug, member_id, name, email, phone, adults, kids, note) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
-        ON CONFLICT (event_slug, lower(email)) DO UPDATE SET member_id=COALESCE(EXCLUDED.member_id, rsvps.member_id), name=EXCLUDED.name, phone=EXCLUDED.phone, adults=EXCLUDED.adults, kids=EXCLUDED.kids, note=EXCLUDED.note, updated_at=now()
-        RETURNING id`, [newId('r_'), r.event, r.memberId || null, r.name, r.email, r.phone, r.adults, r.kids, r.note]);
+      const ref = r.ref && /^[a-z0-9]{6,16}$/.test(r.ref) && await one("SELECT 1 FROM rsvps WHERE event_slug=$1 AND invite_code=$2 AND lower(email)<>$3", [r.event, r.ref, r.email]) ? r.ref : '';
+      const row = await one(`INSERT INTO rsvps (id, event_slug, member_id, name, email, phone, adults, kids, note, invite_code, ref) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+        ON CONFLICT (event_slug, lower(email)) DO UPDATE SET member_id=COALESCE(EXCLUDED.member_id, rsvps.member_id), name=EXCLUDED.name, phone=EXCLUDED.phone, adults=EXCLUDED.adults, kids=EXCLUDED.kids, note=EXCLUDED.note, updated_at=now(),
+          invite_code=CASE WHEN rsvps.invite_code='' THEN EXCLUDED.invite_code ELSE rsvps.invite_code END, ref=CASE WHEN rsvps.ref='' THEN EXCLUDED.ref ELSE rsvps.ref END
+        RETURNING id, invite_code`, [newId('r_'), r.event, r.memberId || null, r.name, r.email, r.phone, r.adults, r.kids, r.note, crypto.randomBytes(5).toString('hex'), ref]);
+      return row;
     },
     cancelRsvp: (event, email) => q('DELETE FROM rsvps WHERE event_slug=$1 AND lower(email)=$2', [event, email]),
     rsvpFor: (event, email) => one('SELECT adults, kids, note FROM rsvps WHERE event_slug=$1 AND lower(email)=$2', [event, email]),
@@ -143,6 +150,7 @@ function communityStore(store) {
     async counts() { const out = {}; for (const r of await rows('SELECT event_slug, sum(adults+kids)::int AS n FROM rsvps GROUP BY event_slug')) out[r.event_slug] = r.n; return out; },
     // Allergies and dietary needs the family saved in their account come along with the RSVP, for meals and kids' programs.
     rsvpList: (event) => rows(`SELECT r.name, r.email, r.phone, r.adults, r.kids, r.note, r.created_at, r.member_id,
+      (SELECT b.name FROM rsvps b WHERE b.event_slug=r.event_slug AND r.ref<>'' AND b.invite_code=r.ref LIMIT 1) AS brought_by, (SELECT count(*)::int FROM rsvps f WHERE f.event_slug=r.event_slug AND r.invite_code<>'' AND f.ref=r.invite_code) AS brought,
       concat_ws('; ', NULLIF(m.diet, ''), (SELECT string_agg(f.name || ': ' || f.diet, '; ') FROM family f WHERE f.member_id=r.member_id AND f.diet <> '')) AS diet
       FROM rsvps r LEFT JOIN members m ON m.id=r.member_id WHERE r.event_slug=$1 ORDER BY r.created_at`, [event]),
     // For the Rabbi: everyone with a birthday or anniversary on file (members and their families).
@@ -343,10 +351,10 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     if (!m && adults + kids > 12) return bad(res, 'invalid_count', tOf(req)('For a group larger than 12, please contact us.'));
     const cap = e.rsvp.capacity;
     if (cap && n - (prev ? prev.adults + prev.kids : 0) + adults + kids > cap) return res.status(409).json({ code: 'full', error: tOf(req)('Sorry, there is not enough room left. Please contact us to join the waiting list.') });
-    await cs.upsertRsvp({ event: e.slug, memberId: m ? m.id : null, name, email, phone: m ? m.phone : clean(b.phone, 30), adults, kids, note: clean(b.note, 300) });
+    const saved = await cs.upsertRsvp({ event: e.slug, memberId: m ? m.id : null, name, email, phone: m ? m.phone : clean(b.phone, 30), adults, kids, note: clean(b.note, 300), ref: String(b.ref || '') });
     const t = tOf(req), L = langOf(req), title = (L !== 'en' && e[L] && e[L].title) || e.title, page = base + (L === 'en' ? '' : '/' + L) + '/events/' + e.slug;
     if (mailer) mailer.send({ to: email, subject: t("You're coming: {title}", { title }), text: t('Thank you, {name}! You are on the list. Number of people: {n}.', { name, n: adults + kids }) + `\n\n${title}\n${e.start.replace('T', ' ')}\n${page}\n\n` + t('Add it to your calendar:') + ` ${base}/events/${e.slug}.ics` }).catch((err) => log.error('rsvp email:', err && err.message));
-    res.json({ ok: true, going: (await cs.counts())[e.slug] || 0 });
+    res.json({ ok: true, going: (await cs.counts())[e.slug] || 0, invite: saved && saved.invite_code });
   }));
   r.delete('/rsvp/:slug', need, authed, wrap(async (req, res) => { await cs.cancelRsvp(req.params.slug, req.member.email.toLowerCase()); res.json({ ok: true }); }));
 
