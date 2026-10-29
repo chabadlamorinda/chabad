@@ -113,22 +113,22 @@ Mezuzah, tefillin, giving and meeting pages (and the chat, whenever someone asks
 Donations, the Chai Club and Kiddush sponsorships happen on the website itself, never by sending people to the My Pushka app: `/donate` (giving form, once or monthly, any fund; link to it filled in with `/donate?fund=general&amt=180&ded=...#give`), `/chai-club` (monthly partners and the honor board) and `/sponsor-a-kiddush` (the Kiddush calendar inside the website, in all three languages). Paying is on Stripe's secure checkout page (`POST /api/give/checkout` in `server/index.js`; `server/site/give.js`, `server/site/kiddush-page.js`). Link to these pages, not to `/pushka/` or `/kiddush/`.
 
 ## Fundraising campaigns (building campaign, year-end...)
-A campaign is one entry in `site/content/campaigns.json` (and its title, tagline and story in `i18n/he|ru/campaigns.json`):
+A campaign is one entry in `site/content/campaigns.json` (and its words in `i18n/he|ru/campaigns.json`). The building-campaign template (`building-campaign`, a hidden draft, preview at `/campaign/building-campaign?preview=1`) shows every option; copy it for a new campaign:
 ```json
-{ "slug": "building-2027", "title": "Building Campaign", "tagline": "One sentence.", "fund": "building",
-  "goal": 500000, "bonusGoal": 600000, "start": "2027-03-01", "end": "2027-03-31T23:59",
-  "image": "/media/building.jpg", "video": "https://youtu.be/...", "story": "Markdown",
-  "months": [12, 24, 36], "amounts": [36, 180, 360, 1000, 1800, 3600],
-  "matching": { "multiplier": 2, "cap": 250000, "text": "Thanks to our matchers ..." },
-  "teams": [{ "slug": "cohen-family", "name": "The Cohen Family", "goal": 10000 }],
-  "levels": [{ "id": "classroom", "title": "Dedicate a classroom", "amount": 18000, "quantity": 3, "text": "..." }] }
+{ "slug": "building-2027", "eyebrow": "Building Campaign", "title": "...", "tagline": "One sentence.", "fund": "building",
+  "goal": 1000000, "bonusGoal": 1200000, "start": "2027-03-01", "end": "2027-03-31T23:59",
+  "image": "/media/building.jpg", "gallery": [{ "src": "/media/plan-1.jpg", "caption": "..." }], "video": "https://youtu.be/...", "story": "Markdown",
+  "amounts": [180, 360, 1000, 1800, 3600, 10000], "months": [12, 24, 36], "years": [2, 3, 5],
+  "matching": { "multiplier": 2, "cap": 250000, "text": "...", "matchers": ["The ... Family"] },
+  "teams": [], "ambassadorGoal": 1800,
+  "levels": [{ "id": "classroom", "title": "A classroom", "amount": 54000, "quantity": 4, "text": "..." }] }
 ```
-* While it runs (start to end, Lafayette time) it is the banner at the very top of the home page (name, live progress, countdown, quick-gift buttons); `"featured": false` keeps it off the home page. `"status": "draft"` hides it; the Rabbi can preview a draft at `/campaign/<slug>?preview=1`.
-* Pages: `/campaign/<slug>` (progress, countdown, matching, giving form, dedication levels with how many are left, teams, story, video, donor wall with search, sharing, "become an ambassador", questions), `/campaign/<slug>/<team>` (an ambassador's own page and goal), `/campaign` (the one running now).
-* Giving: one payment (up to $100,000) or a larger gift split into the campaign's `months` (12, 24, 36...) of equal monthly payments that stop by themselves after the last one (Stripe subscription with `cancel_at`). A split gift counts in full toward the goal right away. Donors choose to show their name or give anonymously, hide the amount, add a dedication and a message, credit a team, cover the fee.
-* Matching only when the Rabbi has real matchers: `multiplier` 2 doubles every gift, up to `cap` dollars of matching.
-* Totals come from Stripe (`server/campaign.js`, cached a minute) plus gifts the Rabbi adds by hand in the Rabbi area (Campaign section: checks, cash, donor-advised funds); also a spreadsheet of every gift.
-* Never invent a goal, matchers, teams or levels: ask the Rabbi.
+* While it runs (start to end, Lafayette time): a slim bar at the top of every page (name, live progress, Donate) and a grand navy-and-gold banner leading the home page (`"featured": false` turns both off). `"status": "draft"` hides it; preview with `?preview=1`. Code: `server/site/campaign-page.js` (pages), `server/campaign.js` (money, pledges, ambassadors), styles under "Fundraising campaigns" in site.css.
+* The page: hero with live total, gold progress bar with milestones, donors, days left, matching; matchers band; sticky section menu; giving card (amounts; give online now: one payment, monthly or yearly payments that stop by themselves; or pledge now, pay later by check, wire, stock or donor-advised fund); naming opportunities with how many are left; story, pictures, video; ambassadors' leaderboard; donor wall (search, largest/recent, show more); sharing; questions.
+* Paying online is Stripe's checkout with every payment method switched on in Stripe (card, Apple Pay, Google Pay, and bank account/ACH once switched on: rabbi-todo 20). One payment up to $250,000; over time up to $1,000,000; a gift paid over time counts in full right away.
+* Ambassadors open their own page alone (`/campaign/<slug>/join`, or the button on the page): name, goal, a few words; live at once at `/campaign/<slug>/<their-name>`, gifts through it count for them and the campaign, they get a private edit link by email, the Rabbi is emailed and can hide a page. `"ambassadors": false` turns this off. Teams the Rabbi names go in `"teams"`.
+* Pledges and gifts by check: the Rabbi area's Campaign section lists pledges ("Received: count it" adds them to the total), lets him add checks, cash and wires, hide ambassador pages, and download every gift as a spreadsheet. Pending pledges show on the Rabbi's desk under "Waiting for you".
+* Matching only with real matchers: `multiplier` 2 doubles every gift, up to `cap` dollars of matching. Never invent a goal, matchers, teams or naming opportunities: ask the Rabbi.
 
 ## The Rabbi area (admin)
 `/admin` (Rabbi's desk, `server/admin/admin.js`) and `/admin/community` (website: requests, people to reach out to, social drafts, weekly email, approvals, sign-ups, chat questions, Ask the Rabbi, RSVPs, birthdays; `server/admin/community.js`). Both share `server/admin/admin.css`. In community.js each block is `section(title, note, shortName)`; call `.count(n, waiting)` on it to show a count in the sticky menu (and open it when something waits for the Rabbi). Keep it phone-first: big buttons, short words. The Rabbi's desk opens with "Waiting for you": one line per thing waiting (new requests, approvals, people to reach out to, sign-ups, visitors on important topics), each opening its section (`/admin/community#requests`). What counts as waiting is defined once in `server/admin/waiting.js`, used by both pages; a section's `shortName` is its `#id`. The order of the sections (things to act on first, the setup checklist last) is one list at the end of community.js. The "Setup checklist" section (`/admin/api/site/setup` in `server/site/index.js`) shows which settings are in place; keep it in step with `store/rabbi-todo.md`.

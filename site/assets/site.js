@@ -296,95 +296,144 @@
         .catch(function (e2) { btn.disabled = false; btn.textContent = T('Continue to secure payment'); fail(e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.')); });
     });
   });
-  // Fundraising campaigns (/campaign/..., and the banner on the home page): live totals, countdown, teams, levels left,
-  // the donor wall, and the giving form (one payment or monthly payments). Numbers come from /api/campaign/<slug>.
+  // Fundraising campaigns (/campaign/..., the bar at the top of every page, the home page banner): live totals and days
+  // left, ambassadors' leaderboard, naming opportunities left, the donor wall, the giving form (online now, monthly or
+  // yearly payments, or pledge now and pay later) and the ambassador forms. Numbers come from /api/campaign/<slug>.
   var usd = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); }, cdata = {};
   var campaignData = function (slug) { if (!cdata[slug]) cdata[slug] = fetch('/api/campaign/' + encodeURIComponent(slug), { credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); return cdata[slug]; };
+  var postJson = function (url, body) { return fetch(url, { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, status: r.status, j: j }; }); }); };
+  var oops = function (e2) { return e2 && e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.'); };
+  var pageSlug = function () { var m = document.querySelector('.cmp [data-campaign]'); return m && m.getAttribute('data-campaign'); };
   Array.prototype.forEach.call(document.querySelectorAll('[data-campaign]'), function (box) {
     var slug = box.getAttribute('data-campaign'), team = box.getAttribute('data-team'), goal = +box.getAttribute('data-goal') || 0, bonus = +box.getAttribute('data-bonus') || 0;
-    var q = function (s) { return box.querySelector(s); }, clock = q('[data-c-clock]'), start = Date.parse(box.getAttribute('data-start')), end = Date.parse(box.getAttribute('data-end'));
-    var tick = function () {
-      var now = Date.now(), until = now < start ? start : end, left = until - now;
-      if (!(left > 0) || isNaN(until)) { clock.textContent = T('The campaign has ended'); clock.hidden = false; return; }
-      var d = Math.floor(left / 864e5), h = Math.floor(left / 36e5) % 24, m = Math.floor(left / 6e4) % 60, s2 = Math.floor(left / 1e3) % 60;
-      clock.textContent = (now < start ? T('Starts in') : T('Ends in')) + ' ' + (d ? d + T('d') + ' ' : '') + h + T('h') + ' ' + m + T('m') + ' ' + s2 + T('s');
-      clock.hidden = false; setTimeout(tick, 1000);
-    };
-    tick();
+    var q = function (s) { return box.querySelector(s); }, start = Date.parse(box.getAttribute('data-start')), end = Date.parse(box.getAttribute('data-end'));
+    var days = q('[data-c-days]'), dw = q('[data-c-days-word]');
+    if (days && dw) {
+      var now = Date.now();
+      if (now < start) { days.textContent = Math.ceil((start - now) / 864e5); dw.textContent = dw.getAttribute('data-soon'); }
+      else if (now >= end) { days.textContent = '✓'; dw.textContent = dw.getAttribute('data-over'); }
+      else { var left = end - now, d = Math.floor(left / 864e5); if (d >= 1) { days.textContent = d; dw.textContent = dw.getAttribute(d === 1 ? 'data-one' : 'data-many'); } else { days.textContent = Math.max(1, Math.ceil(left / 36e5)); dw.textContent = dw.getAttribute('data-hours'); } }
+    }
     campaignData(slug).then(function (d) {
       if (!d) return;
-      var raised = team ? (d.teams[team] || 0) : d.raised, donors = team ? d.wall.filter(function (w) { return w.team === team; }).length : d.donors;
+      var raised = team ? (d.teams[team] || 0) : d.raised, donors = team ? (d.teamDonors[team] || 0) : d.donors;
       var target = bonus && raised >= goal ? bonus : goal, pct = target ? Math.min(100, Math.round(raised / target * 100)) : 0;
-      q('[data-c-raised]').textContent = usd(raised); q('[data-c-donors]').textContent = donors; var dw = q('[data-c-donors-word]'); if (dw && donors === 1) dw.textContent = dw.getAttribute('data-one');
-      q('[data-c-pct]').textContent = (goal ? Math.round(raised / goal * 100) : 0) + '%';
-      q('[data-c-bar]').style.width = pct + '%'; q('.cmp-bar').setAttribute('aria-valuenow', pct);
-      if (bonus && raised >= goal) q('[data-c-bonus]').hidden = false;
+      var set = function (sel, v) { var el2 = q(sel); if (el2) el2.textContent = v; };
+      set('[data-c-raised]', usd(raised)); set('[data-c-donors]', donors); set('[data-c-pct]', (goal ? Math.round(raised / goal * 100) : 0) + '%');
+      var w = q('[data-c-donors-word]'); if (w && donors === 1) w.textContent = w.getAttribute('data-one');
+      var bar = q('[data-c-bar]'); if (bar) { bar.style.width = Math.max(pct, raised > 0 ? 1.5 : 0) + '%'; var pb = bar.parentNode; if (pb.getAttribute('role')) pb.setAttribute('aria-valuenow', pct); }
+      var pl = q('[data-c-pledged]'); if (pl && !team && d.pledged > 0) { pl.textContent = pl.getAttribute('data-text').replace('{amount}', usd(d.pledged)); pl.hidden = false; }
+      if (bonus && raised >= goal && q('[data-c-bonus]')) q('[data-c-bonus]').hidden = false;
     });
   });
-  Array.prototype.forEach.call(document.querySelectorAll('[data-wall]'), function (ul) {
-    var slug = (document.querySelector('[data-campaign]') || {}).getAttribute && document.querySelector('[data-campaign]').getAttribute('data-campaign');
-    var team = document.querySelector('[data-campaign][data-team]'), teamSlug = team && team.getAttribute('data-team');
-    var search = document.querySelector('[data-wall-search]'), sort = document.querySelector('[data-wall-sort]'), all = [];
-    var draw = function () {
-      var words = (search && search.value || '').toLowerCase(), list = all.filter(function (w) { return !words || (w.name || '').toLowerCase().indexOf(words) >= 0 || (w.message || '').toLowerCase().indexOf(words) >= 0; });
-      if (sort && sort.value === 'largest') list = list.slice().sort(function (a, b) { return (b.cents || 0) - (a.cents || 0); });
-      ul.textContent = '';
-      list.slice(0, 120).forEach(function (w) {
-        var li = document.createElement('li'), top = document.createElement('p'), b = document.createElement('b');
-        b.textContent = w.name || ul.getAttribute('data-anon'); top.appendChild(b);
-        if (w.cents != null) { var a = document.createElement('span'); a.className = 'amt'; a.textContent = usd(w.cents / 100) + (w.months ? ' ' + ul.getAttribute('data-monthly').replace('{n}', w.months) : ''); top.appendChild(a); }
-        li.appendChild(top);
-        [w.dedication, w.message].forEach(function (x) { if (x) { var p2 = document.createElement('p'); p2.className = 'small'; p2.textContent = x; li.appendChild(p2); } });
-        ul.appendChild(li);
-      });
-      if (!list.length && all.length) { var li2 = document.createElement('li'); li2.className = 'muted'; li2.textContent = '—'; ul.appendChild(li2); }
-    };
-    if (search) search.addEventListener('input', draw); if (sort) sort.addEventListener('change', draw);
-    if (slug) campaignData(slug).then(function (d) { if (!d || !d.wall.length) return; all = teamSlug ? d.wall.filter(function (w) { return w.team === teamSlug; }) : d.wall; if (all.length) draw(); });
-  });
-  Array.prototype.forEach.call(document.querySelectorAll('[data-team-card]'), function (card) {
-    var slug = document.querySelector('[data-campaign]').getAttribute('data-campaign'), id = card.getAttribute('data-team-card'), goal = +card.getAttribute('data-goal') || 0;
-    campaignData(slug).then(function (d) { if (!d) return; var n = d.teams[id] || 0; card.querySelector('[data-team-raised]').textContent = usd(n); card.querySelector('.cmp-bar i').style.width = (goal ? Math.min(100, n / goal * 100) : 0) + '%'; });
+  // Ambassadors' leaderboard: each one's total, highest first.
+  var board = document.querySelector('.cmp-board');
+  if (board && pageSlug()) campaignData(pageSlug()).then(function (d) {
+    if (!d) return;
+    var items = Array.prototype.slice.call(board.children);
+    items.forEach(function (li) { var n = d.teams[li.getAttribute('data-team-card')] || 0, goal = +li.getAttribute('data-goal') || 0; li.n = n; li.querySelector('[data-team-raised]').textContent = usd(n); li.querySelector('.cmp-bar i').style.width = (goal ? Math.min(100, n / goal * 100) : 0) + '%'; });
+    items.sort(function (a, b) { return b.n - a.n; }).forEach(function (li) { board.appendChild(li); });
   });
   Array.prototype.forEach.call(document.querySelectorAll('[data-left]'), function (el2) {
-    var slug = document.querySelector('[data-campaign]').getAttribute('data-campaign');
-    campaignData(slug).then(function (d) { if (!d) return; var left = Math.max(0, +el2.getAttribute('data-quantity') - (d.levels[el2.getAttribute('data-left')] || 0)); el2.textContent = left ? T('{n} available', { n: left }) : T('All taken: thank you!'); });
+    campaignData(pageSlug()).then(function (d) { if (!d) return; var left = Math.max(0, +el2.getAttribute('data-quantity') - (d.levels[el2.getAttribute('data-left')] || 0)); el2.textContent = left ? T('{n} available', { n: left }) : T('All taken: thank you!'); if (!left) el2.parentNode.classList.add('taken'); });
+  });
+  // The donor wall: newest or largest first, search, 30 at a time.
+  Array.prototype.forEach.call(document.querySelectorAll('[data-wall]'), function (ul) {
+    var meterTeam = document.querySelector('.cmp-hero [data-team]'), teamSlug = meterTeam && meterTeam.getAttribute('data-team');
+    var search = document.querySelector('[data-wall-search]'), sort = document.querySelector('[data-wall-sort]'), more = document.querySelector('[data-wall-more]'), all = [], shown = 30;
+    var draw = function () {
+      var words = (search && search.value || '').toLowerCase(), list = all.filter(function (w) { return !words || (w.name || '').toLowerCase().indexOf(words) >= 0 || (w.message || '').toLowerCase().indexOf(words) >= 0 || (w.dedication || '').toLowerCase().indexOf(words) >= 0; });
+      if (sort && sort.value === 'largest') list = list.slice().sort(function (a, b) { return (b.cents || 0) - (a.cents || 0); });
+      ul.textContent = '';
+      list.slice(0, shown).forEach(function (w) {
+        var li = document.createElement('li'), av = document.createElement('span'), body = document.createElement('div'), top = document.createElement('p'), b = document.createElement('b'), name = w.name || ul.getAttribute('data-anon');
+        av.className = 'cmp-av'; av.setAttribute('aria-hidden', 'true'); av.textContent = w.name ? (name.split(/\s+/).filter(function (x) { return !/^(the|family|and|&)$/i.test(x); }).slice(0, 2).map(function (x) { return x.charAt(0).toUpperCase(); }).join('') || '♥') : '♥';
+        b.textContent = name; top.appendChild(b);
+        if (w.cents != null) { var a = document.createElement('span'); a.className = 'amt'; a.textContent = usd(w.cents / 100) + (w.count ? ' ' + ul.getAttribute(w.interval === 'year' ? 'data-years' : 'data-months').replace('{n}', w.count) : ''); top.appendChild(a); }
+        body.appendChild(top);
+        [w.dedication, w.message].forEach(function (x) { if (x) { var p2 = document.createElement('p'); p2.className = 'small'; p2.textContent = x; body.appendChild(p2); } });
+        li.appendChild(av); li.appendChild(body); ul.appendChild(li);
+      });
+      if (more) more.hidden = list.length <= shown;
+    };
+    if (search) search.addEventListener('input', draw); if (sort) sort.addEventListener('change', draw);
+    if (more) more.addEventListener('click', function () { shown += 30; draw(); });
+    if (pageSlug()) campaignData(pageSlug()).then(function (d) { if (!d) return; all = teamSlug ? d.wall.filter(function (w) { return w.team === teamSlug; }) : d.wall; if (all.length) draw(); });
   });
   Array.prototype.forEach.call(document.querySelectorAll('[data-campaign-confirm]'), function (el2) {
-    var sid = el2.getAttribute('data-campaign-confirm'); if (!sid) return;
-    fetch('/api/campaign/confirm', { method: 'POST', credentials: 'omit', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ session_id: sid }) }).catch(function () {});
+    var sid = el2.getAttribute('data-campaign-confirm'); if (sid) postJson('/api/campaign/confirm', { session_id: sid }).catch(function () {});
   });
   Array.prototype.forEach.call(document.querySelectorAll('form[data-campaign-give]'), function (f) {
-    var err = f.querySelector('.give-err'), btn = f.querySelector('button[type=submit]'), other = f.elements.other, x = +f.getAttribute('data-multiplier') || 1, matchLine = f.querySelector('[data-c-matchline]');
+    var err = f.querySelector('.give-err'), btn = f.querySelector('button[type=submit]'), other = f.elements.other, x = +f.getAttribute('data-multiplier') || 1, matchLine = f.querySelector('[data-c-matchline]'), done = f.querySelector('[data-pledge-done]');
     var fail = function (m, at) { err.textContent = m; err.hidden = false; if (at && at.focus) at.focus(); };
     var amount = function () { var pick = f.querySelector('input[name=amt]:checked'); return Number(other.value ? other.value : pick ? pick.value : 0); };
-    var months = function () { var m = f.querySelector('input[name=months]:checked'); return m ? +m.value : 1; };
+    var way = function () { return (f.querySelector('input[name=way]:checked') || {}).value || 'online'; };
+    var plan = function () { var r = f.querySelector('input[name=plan]:checked'); return r ? r.value : 'once'; };
+    var money2 = function (m) { return '$' + m.toLocaleString('en-US', { minimumFractionDigits: m % 1 ? 2 : 0, maximumFractionDigits: 2 }); };
     var update = function () {
-      var a = amount();
-      Array.prototype.forEach.call(f.querySelectorAll('[data-per]'), function (s2) { s2.textContent = a >= 1 ? '(' + T('{amount} a month', { amount: (function (m) { return '$' + m.toLocaleString('en-US', { minimumFractionDigits: m % 1 ? 2 : 0, maximumFractionDigits: 2 }); })(Math.ceil(a / +s2.getAttribute('data-per') * 100) / 100) }) + ')' : ''; });
+      var a = amount(), pledge = way() === 'pledge';
+      Array.prototype.forEach.call(f.querySelectorAll('[data-online]'), function (n) { n.hidden = pledge; });
+      f.querySelector('[data-pledge]').hidden = !pledge;
+      btn.textContent = btn.getAttribute(pledge ? 'data-pledge-label' : 'data-online-label');
+      Array.prototype.forEach.call(f.querySelectorAll('input[name=plan][data-group]'), function (r) {
+        var sel = f.elements[r.getAttribute('data-group') + 'Plan'], p = sel.value, n = +p.split('-')[1], lab = r.parentNode.querySelector('[data-per-label]');
+        r.value = p; lab.textContent = a >= 1 ? T(r.getAttribute('data-group') === 'year' ? '{amount} a year' : '{amount} a month', { amount: money2(Math.ceil(a / n * 100) / 100) }) : '';
+      });
       if (matchLine) { matchLine.hidden = !(x > 1 && a >= 1); matchLine.textContent = T('With matching, your {gift} becomes {total}!', { gift: usd(a), total: usd(a * x) }); }
     };
+    f.addEventListener('change', function (e) {
+      var t2 = e.target;
+      if (t2.name === 'amt') other.value = '';
+      if (t2.name === 'monthPlan' || t2.name === 'yearPlan') { var r = f.querySelector('input[data-group="' + t2.name.replace('Plan', '') + '"]'); if (r) r.checked = true; }
+      if (t2.name === 'level') { var o = t2.selectedOptions[0], a = o && +o.getAttribute('data-amount'); if (a) { other.value = a; Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r2) { r2.checked = +r2.value === a; if (r2.checked) other.value = ''; }); } }
+      if (t2.name === 'anonymous') f.elements.name.disabled = t2.checked;
+      update();
+    });
     other.addEventListener('input', function () { if (other.value) Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.checked = false; }); update(); });
-    Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.addEventListener('change', function () { other.value = ''; update(); }); });
-    if (f.elements.level) f.elements.level.addEventListener('change', function () { var o = f.elements.level.selectedOptions[0], a = o && +o.getAttribute('data-amount'); if (a) { other.value = a; Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.checked = +r.value === a; if (r.checked) other.value = ''; }); update(); } });
-    if (f.elements.anonymous) f.elements.anonymous.addEventListener('change', function () { f.elements.name.disabled = f.elements.anonymous.checked; });
     update();
-    // The floating Donate button (phones) steps aside while the form itself is on screen.
+    // The floating Donate button (phones) steps aside while the hero's buttons or the form itself are on screen.
     var sticky = document.querySelector('.cmp-sticky');
-    if (sticky && window.IntersectionObserver) new IntersectionObserver(function (es) { sticky.hidden = es[0].isIntersecting; }).observe(f);
+    var near = document.querySelectorAll('.cmp-hero .cmp-ctas, form[data-campaign-give]'), seen = [];
+    if (sticky && window.IntersectionObserver) { sticky.hidden = true; var io = new IntersectionObserver(function (es) { es.forEach(function (e2) { seen[Array.prototype.indexOf.call(near, e2.target)] = e2.isIntersecting; }); sticky.hidden = seen.some(Boolean); }); Array.prototype.forEach.call(near, function (n) { io.observe(n); }); }
+    f.addEventListener('submit', function (e) {
+      e.preventDefault(); err.hidden = true; done.hidden = true;
+      var a = amount(), p = plan(), n = p === 'once' ? 1 : +p.split('-')[1], pledge = way() === 'pledge';
+      var base = { campaign: f.getAttribute('data-campaign-give'), amount: a, level: f.elements.level ? f.elements.level.value : '', team: f.elements.team ? f.elements.team.value : '', name: f.elements.name.value.trim(), anonymous: f.elements.anonymous.checked, hideAmount: f.elements.hideAmount.checked, dedication: f.elements.dedication.value, message: f.elements.message.value, lang: LANG };
+      if (!(a >= 1)) return fail(T('Please enter an amount.'), other);
+      var label = btn.textContent;
+      if (pledge) {
+        if (!f.elements.fullName.value.trim()) return fail(T('Please enter your name.'), f.elements.fullName);
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(f.elements.email.value.trim())) return fail(T('Please enter a valid email address.'), f.elements.email);
+        base.fullName = f.elements.fullName.value.trim(); base.email = f.elements.email.value.trim(); base.phone = f.elements.phone.value.trim(); base.how = f.elements.how.value;
+        btn.disabled = true;
+        postJson('/api/campaign/pledge', base).then(function (r) {
+          btn.disabled = false;
+          if (!r.ok) throw new Error(r.j.error || T('Something went wrong. Please try again.'));
+          done.textContent = T('Thank you for your pledge of {amount}! We will be in touch soon with the details.', { amount: usd(a) }); done.hidden = false; f.reset(); update();
+        }).catch(function (e2) { btn.disabled = false; btn.textContent = label; fail(oops(e2)); });
+        return;
+      }
+      if (n > 1 && a / n < 5) return fail(T('Each payment needs to be at least $5.'), other);
+      base.plan = p; base.fee = f.elements.fee.checked; base.idem = 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14);
+      btn.disabled = true; btn.textContent = T('Opening secure checkout…');
+      postJson('/api/campaign/checkout', base).then(function (r) {
+        if (r.ok && r.j.url) { if (window.gtag) window.gtag('event', 'begin_checkout', { value: a, currency: 'USD' }); location.href = r.j.url; return; }
+        throw new Error(r.status === 503 ? T('Online giving is opening soon. Please call 925-384-7242, or see other ways to give below.') : (r.j.error || T('Something went wrong. Please try again.')));
+      }).catch(function (e2) { btn.disabled = false; btn.textContent = label; fail(oops(e2)); });
+    });
+  });
+  // Open your own ambassador page, or change it (private link).
+  Array.prototype.forEach.call(document.querySelectorAll('form[data-ambassador], form[data-ambassador-edit]'), function (f) {
+    var err = f.querySelector('.give-err'), btn = f.querySelector('button[type=submit]'), edit = f.hasAttribute('data-ambassador-edit');
     f.addEventListener('submit', function (e) {
       e.preventDefault(); err.hidden = true;
-      var a = amount(), n = months();
-      if (!(a >= 1 && a <= (n > 1 ? 250000 : 100000))) return fail(n > 1 ? T('Please enter an amount between $1 and $250,000.') : T('Please enter an amount between $1 and $100,000. For a larger gift, choose monthly payments or call us.'), other);
-      if (n > 1 && a / n < 5) return fail(T('Each monthly payment needs to be at least $5.'), other);
-      var body = { campaign: f.getAttribute('data-campaign-give'), amount: a, months: n, level: f.elements.level ? f.elements.level.value : '', team: f.elements.team ? f.elements.team.value : '', name: f.elements.name.value.trim(), anonymous: f.elements.anonymous.checked, hideAmount: f.elements.hideAmount.checked, dedication: f.elements.dedication.value, message: f.elements.message.value, fee: f.elements.fee.checked, lang: LANG, idem: 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
-      btn.disabled = true; btn.textContent = T('Opening secure checkout…');
-      fetch('/api/campaign/checkout', { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, status: r.status, j: j }; }); })
-        .then(function (r) {
-          if (r.ok && r.j.url) { if (window.gtag) window.gtag('event', 'begin_checkout', { value: a, currency: 'USD' }); location.href = r.j.url; return; }
-          throw new Error(r.status === 503 ? T('Online giving is opening soon. Please call 925-384-7242, or see other ways to give below.') : (r.j.error || T('Something went wrong. Please try again.')));
-        })
-        .catch(function (e2) { btn.disabled = false; btn.textContent = T('Continue to secure payment'); fail(e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.')); });
+      var slug = f.getAttribute(edit ? 'data-ambassador-edit' : 'data-ambassador'), body = { name: f.elements.name.value.trim(), goal: +f.elements.goal.value, message: f.elements.message.value, lang: LANG };
+      if (!edit) { body.email = f.elements.email.value.trim(); body.phone = f.elements.phone.value.trim(); } else body.k = f.getAttribute('data-k');
+      btn.disabled = true;
+      postJson('/api/campaign/' + encodeURIComponent(slug) + '/ambassador' + (edit ? '/' + encodeURIComponent(f.getAttribute('data-team')) : ''), body).then(function (r) {
+        if (!r.ok) throw new Error(r.j.error || T('Something went wrong. Please try again.'));
+        location.href = edit ? P('/campaign/' + slug + '/' + f.getAttribute('data-team')) : r.j.url;
+      }).catch(function (e2) { btn.disabled = false; err.textContent = oops(e2); err.hidden = false; });
     });
   });
   // The Chai Club honor board (/chai-club): each listed partner under their level, with that level's medal; counts per level.

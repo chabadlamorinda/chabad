@@ -33,6 +33,8 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 18. **WhatsApp announcements group:** create a WhatsApp Community or announcements group and send Claude the invite link; a "Join" button goes on every page and email.
 19. **Partners:** Saint Mary's College in Moraga (Jewish students), local senior communities, school parent groups, and realtors. Tell Claude which to start with and Claude drafts the first emails for you.
 
+20. **More ways to pay in campaigns (5 minutes, free to switch on):** in Stripe, Settings → Payment methods, switch on **ACH Direct Debit (bank account)**, which costs far less than a card for large gifts (0.8%, at most $5), and **Link**, **Cash App Pay** and any others you like. They then appear by themselves on the secure payment page of every campaign and of /donate. Apple Pay and Google Pay are already on.
+
 ## Questions you can answer any time (no computer needed)
 * Should "Talk privately with the Rebbetzin" go to the Rebbetzin's own cell phone? If so, which number? (Right now it goes to 925-384-7242 with a message addressed to her.)
 * Chanukah: date, time and place of the Grand Menorah Lighting, and any party, kids' event or Shabbat Chanukah dinner.

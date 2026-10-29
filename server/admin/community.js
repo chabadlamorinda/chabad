@@ -158,30 +158,43 @@
     // ---- Fundraising campaigns: totals, every gift, and gifts given by check, cash or a donor-advised fund ----
     var sc = section('Campaigns', 'Each campaign (site/content/campaigns.json): how much is raised, who gave, and a form to add gifts that came by check, cash or a donor-advised fund so they count and appear on the donor wall. To start a new campaign, tell Claude its name, goal and dates.', 'Campaign');
     var usd = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
-    var HOW = { card: 'card', check: 'check', cash: 'cash', daf: 'donor-advised fund', pledge: 'pledge', other: 'other' };
+    var HOW = { online: 'online', card: 'online', check: 'check', cash: 'cash', wire: 'wire transfer', stock: 'stock', daf: 'donor-advised fund', pledge: 'pledge', other: 'other' };
     var loadCampaigns = function () {
       sc.textContent = '';
       api('GET', '/campaigns').then(function (x) {
         if (x._status !== 200 || !x.campaigns || !x.campaigns.length) { sc.appendChild(el('p', { class: 'small', text: 'No campaigns yet.' })); return; }
+        sc.count(W['campaign'](x), true);
         x.campaigns.forEach(function (c) {
           var list = el('div', { hidden: 'hidden' });
-          var f = { name: el('input', { placeholder: 'Name (e.g. The Cohen Family)' }), amount: el('input', { type: 'number', min: '1', placeholder: 'Amount ($)' }), how: el('select', {}, ['check', 'cash', 'daf', 'pledge', 'other'].map(function (h) { return el('option', { value: h, text: HOW[h] }); })), team: el('select', {}, [el('option', { value: '', text: 'No team' })].concat(c.teams.map(function (t) { return el('option', { value: t.slug, text: t.name }); }))), message: el('input', { placeholder: 'Message or dedication (optional)' }), show: el('input', { type: 'checkbox', checked: 'checked' }) };
+          var f = { name: el('input', { placeholder: 'Name (e.g. The Cohen Family)' }), amount: el('input', { type: 'number', min: '1', placeholder: 'Amount ($)' }), how: el('select', {}, ['check', 'cash', 'wire', 'stock', 'daf', 'other'].map(function (h) { return el('option', { value: h, text: HOW[h] }); })), team: el('select', {}, [el('option', { value: '', text: 'No team' })].concat(c.teams.map(function (t) { return el('option', { value: t.slug, text: t.name }); }))), message: el('input', { placeholder: 'Message or dedication (optional)' }), show: el('input', { type: 'checkbox', checked: 'checked' }) };
           var msg = el('p', { class: 'small' });
           var add = el('div', { class: 'card' }, [el('strong', { text: 'Add a gift by check, cash or donor-advised fund' }), f.name, f.amount, el('div', { class: 'row' }, [f.how, c.teams.length ? f.team : null]), f.message, el('label', { class: 'row small' }, [f.show, 'Show the name on the donor wall']),
             el('button', { class: 'on', text: 'Add gift', onclick: function () { api('POST', '/campaigns/' + c.slug + '/offline', { name: f.name.value, amount: f.amount.value, how: f.how.value, team: f.team.value, message: f.message.value, show: f.show.checked }).then(function (r) { if (r._status === 200) loadCampaigns(); else msg.textContent = r.error || 'Could not add it.'; }); } }), msg]);
           c.gifts.forEach(function (g) {
-            list.appendChild(el('div', { class: 'card' }, [el('div', { class: 'row' }, [el('strong', { text: g.name || 'Anonymous' }), el('span', { text: usd(g.cents / 100) + (g.months ? ' over ' + g.months + ' months' : '') }), el('span', { class: 'pill', text: HOW[g.how] || g.how }), g.show ? null : el('span', { class: 'pill', text: 'anonymous' })]),
+            list.appendChild(el('div', { class: 'card' }, [el('div', { class: 'row' }, [el('strong', { text: g.name || 'Anonymous' }), el('span', { text: usd(g.cents / 100) + (g.count ? ' over ' + g.count + (g.interval === 'year' ? ' years' : ' months') : '') }), el('span', { class: 'pill', text: HOW[g.how] || g.how }), g.show ? null : el('span', { class: 'pill', text: 'anonymous' })]),
               el('div', { class: 'small', text: [day(new Date(g.at).toISOString()), g.team && ('team: ' + g.team), g.dedication, g.message].filter(Boolean).join(' · ') }),
               /^off_/.test(g.id) ? el('button', { text: 'Remove', onclick: function () { if (confirm('Remove this gift?')) api('DELETE', '/campaigns/' + c.slug + '/offline/' + g.id).then(loadCampaigns); } }) : null]));
           });
+          var pend = c.pledges.filter(function (p) { return p.status === 'pending'; });
+          var pledgeBox = pend.length ? el('div', { class: 'card hot' }, [el('strong', { text: 'Pledges to follow up (' + pend.length + ')' })].concat(pend.map(function (p) {
+            return el('div', { class: 'card' }, [el('div', { class: 'row' }, [el('strong', { text: p.fullName }), el('span', { text: usd(p.cents / 100) }), el('span', { class: 'pill', text: 'by ' + (HOW[p.how] || p.how) })]),
+              el('div', { class: 'small', text: [p.email, p.phone, day(new Date(p.at).toISOString()), p.dedication, p.message].filter(Boolean).join(' · ') }),
+              el('div', { class: 'row' }, [el('a', { href: 'mailto:' + p.email + '?subject=' + encodeURIComponent(c.title), text: 'Email' }), p.phone ? el('a', { href: 'tel:' + p.phone, text: 'Call' }) : null,
+                el('button', { class: 'on', text: 'Received: count it', onclick: function () { api('POST', '/campaigns/' + c.slug + '/pledges/' + p.id, { action: 'received' }).then(loadCampaigns); } }),
+                el('button', { text: 'Cancel', onclick: function () { if (confirm('Cancel this pledge?')) api('POST', '/campaigns/' + c.slug + '/pledges/' + p.id, { action: 'cancel' }).then(loadCampaigns); } })])]);
+          }))) : null;
+          var ambBox = c.ambassadors.length ? el('details', { class: 'card' }, [el('summary', { text: 'Ambassador pages (' + c.ambassadors.length + ')' })].concat(c.ambassadors.map(function (t) {
+            return el('div', { class: 'row small' }, [el('a', { href: '/campaign/' + c.slug + '/' + t.slug, target: '_blank', text: t.name }), el('span', { text: usd(c.teamTotals[t.slug] || 0) + ' of ' + usd(t.goal) }), el('span', { text: [t.email, t.phone].filter(Boolean).join(' · ') }),
+              el('button', { text: t.hidden ? 'Show again' : 'Hide', onclick: function () { api('POST', '/campaigns/' + c.slug + '/ambassadors/' + t.slug, { hidden: !t.hidden }).then(loadCampaigns); } }), t.hidden ? el('span', { class: 'pill', text: 'hidden' }) : null]);
+          }))) : null;
           sc.appendChild(el('div', { class: 'card' + (c.live ? ' hot' : '') }, [
             el('div', { class: 'row' }, [el('strong', { text: c.title }), el('span', { class: 'pill', text: c.status === 'draft' ? 'draft (hidden)' : c.live ? 'live now' : 'not running' })]),
-            el('p', { text: usd(c.raised) + ' raised of ' + usd(c.goal) + (c.raised !== c.given ? ' (with matching; ' + usd(c.given) + ' given)' : '') + ' · ' + c.gifts.length + (c.gifts.length === 1 ? ' gift · ' : ' gifts · ') + day(c.start) + ' to ' + day(c.end) }),
+            el('p', { text: usd(c.raised) + ' raised of ' + usd(c.goal) + (c.raised !== c.given ? ' (with matching; ' + usd(c.given) + ' given)' : '') + (c.pledged ? ' · ' + usd(c.pledged) + ' pledged, not yet received' : '') + ' · ' + c.gifts.length + (c.gifts.length === 1 ? ' gift · ' : ' gifts · ') + day(c.start) + ' to ' + day(c.end) }),
             c.teams.length ? el('div', { class: 'small', text: 'Teams: ' + c.teams.map(function (t) { return t.name + ' ' + usd(c.teamTotals[t.slug] || 0) + (t.goal ? ' of ' + usd(t.goal) : ''); }).join(' · ') }) : null,
             el('div', { class: 'row' }, [el('a', { href: '/campaign/' + c.slug + (c.status === 'draft' ? '?preview=1' : ''), target: '_blank', text: c.status === 'draft' ? 'Preview the page' : 'Open the page' }),
               el('button', { text: 'Show gifts', onclick: function () { list.hidden = !list.hidden; } }),
-              el('button', { text: 'Download CSV', onclick: function () { csv(c.slug + '.csv', [['Date', 'Name', 'Amount', 'Months', 'How', 'Team', 'On the wall', 'Dedication', 'Message']].concat(c.gifts.map(function (g) { return [new Date(g.at).toISOString().slice(0, 10), g.name, g.cents / 100, g.months || '', HOW[g.how] || g.how, g.team, g.show ? 'yes' : 'no', g.dedication, g.message]; }))); } })]),
-            add, list]));
+              el('button', { text: 'Download CSV', onclick: function () { csv(c.slug + '.csv', [['Date', 'Name', 'Amount', 'Paid over', 'How', 'Team', 'On the wall', 'Dedication', 'Message']].concat(c.gifts.map(function (g) { return [new Date(g.at).toISOString().slice(0, 10), g.name, g.cents / 100, g.count ? g.count + ' ' + (g.interval === 'year' ? 'years' : 'months') : '', HOW[g.how] || g.how, g.team, g.show ? 'yes' : 'no', g.dedication, g.message]; }))); } })]),
+            pledgeBox, add, ambBox, list]));
         });
       });
     };

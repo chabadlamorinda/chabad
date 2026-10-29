@@ -123,7 +123,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountGive(r, { render: pages.render, wrap, ctxOf });
   mountKiddushPage(r, { render: pages.render, wrap, ctxOf });
   mountFun(r, { render: pages.render, wrap, ctxOf });
-  mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base });
+  mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base, store });
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   mountMitzvah(app, r, { store, render: pages.render, wrap, ctxOf, limit, base, log });

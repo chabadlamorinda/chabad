@@ -107,6 +107,9 @@ function load(dir = DIR, opts = {}) {
     need(c.title && Number(c.goal) > 0, `campaign ${c.slug}: title and goal (a number of dollars) are required`);
     need(WHEN.test(c.start || '') && WHEN.test(c.end || '') && c.start < c.end, `campaign ${c.slug}: start and end are required, like "2026-11-01" or "2026-12-31T23:59", and end comes after start`);
     need(!c.months || (Array.isArray(c.months) && c.months.every((m) => Number.isInteger(m) && m > 1 && m <= 60)), `campaign ${c.slug}: months must be a list like [12, 24, 36]`);
+    need(!c.years || (Array.isArray(c.years) && c.years.every((m) => Number.isInteger(m) && m > 1 && m <= 10)), `campaign ${c.slug}: years must be a list like [2, 3, 5]`);
+    need(!c.gallery || (Array.isArray(c.gallery) && c.gallery.every((g) => /^\/media\//.test((g && g.src) || g))), `campaign ${c.slug}: gallery pictures must be in site/media ("/media/...")`);
+    need(!c.image || /^\/media\//.test(c.image), `campaign ${c.slug}: image must be in site/media ("/media/...")`);
     for (const t of c.teams || []) { uniq('campaign team ' + c.slug, t.slug); need(t.name, `campaign ${c.slug}: every team needs a name`); }
     for (const l of c.levels || []) need(l.id && l.title && Number(l.amount) > 0, `campaign ${c.slug}: every giving level needs id, title and amount`);
     need(!c.matching || Number(c.matching.multiplier) >= 1, `campaign ${c.slug}: matching.multiplier must be a number like 2`);

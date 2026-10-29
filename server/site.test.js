@@ -442,7 +442,7 @@ test('Kaddish requests and the prayer list stay private', async () => {
 test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
   const c = client(), i18n = server_site().i18n;
   i18n.missing.clear();
-  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/menorah', '/campaign/year-end-2026?preview=1', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask', '/shabbat-times', '/shabbat-times/orinda', '/this-week', '/jewish-holidays-' + new Date().getFullYear()];
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/menorah', '/campaign/building-campaign?preview=1', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask', '/shabbat-times', '/shabbat-times/orinda', '/this-week', '/jewish-holidays-' + new Date().getFullYear()];
   for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
   assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
   // and the content itself: every guide, help page, holiday and page has both translations
@@ -823,34 +823,63 @@ test('Ask the Rabbi: publish an answer, it becomes a page with Q&A markup', asyn
   assert.equal((await g.call('POST', '/admin/api/site/qa', { question: 'x', answer: 'y' })).status, 401);
 });
 
-test('campaigns: draft is hidden (preview only), a live one leads the home page, gifts by check count', async () => {
-  const g = client();
-  assert.equal((await g.call('GET', '/campaign/year-end-2026')).status, 404, 'a draft is not public');
-  const pre = await g.call('GET', '/campaign/year-end-2026?preview=1'); assert.equal(pre.status, 200); assert.match(pre.text, /data-campaign-give="year-end-2026"/); assert.match(pre.text, /noindex/);
-  assert.match((await g.call('GET', '/he/campaign/year-end-2026?preview=1')).text, /קמפיין סוף השנה 2026/);
+test('campaigns: draft template hidden, a live one leads every page, ambassadors open their own pages, pledges count when received', async () => {
+  const g = client(), H = { 'x-admin': '1' };
+  assert.equal((await g.call('GET', '/campaign/building-campaign')).status, 404, 'a draft is not public');
+  const pre = await g.call('GET', '/campaign/building-campaign?preview=1'); assert.equal(pre.status, 200);
+  assert.match(pre.text, /data-campaign-give="building-campaign"/); assert.match(pre.text, /noindex/); assert.match(pre.text, /value="year-2"/); assert.match(pre.text, /Pledge now, pay later/);
+  assert.match((await g.call('GET', '/he/campaign/building-campaign?preview=1')).text, /בית לחיים יהודיים בלמורינדה/);
   const r = await fetch(base + '/campaign', { redirect: 'manual' }); assert.match(r.headers.get('location'), /\/donate$/);
-  assert.doesNotMatch((await g.call('GET', '/')).text, /class="cmp-banner"/);
+  assert.doesNotMatch((await g.call('GET', '/')).text, /cmp-topbar|cmp-home/);
   const list = server_site().content().campaigns, live = { slug: 'roof-2026', title: 'New Roof', tagline: 'Keep us dry', goal: 50000, start: '2020-01-01', end: '2099-12-31', startIso: withOffset('2020-01-01T00:00'), endIso: withOffset('2099-12-31T23:59'), teams: [{ slug: 'team-a', name: 'Team A', goal: 1000 }], levels: [], amounts: [18, 54, 180, 360, 720] };
   list.push(live);
   try {
     const home = (await g.call('GET', '/')).text;
-    assert.match(home, /class="cmp-banner"/); assert.match(home, /New Roof/); assert.match(home, /href="\/campaign\/roof-2026\?amt=54#give"/);
-    assert.match((await g.call('GET', '/campaign/roof-2026')).text, /data-goal="50000"/);
-    const team = await g.call('GET', '/campaign/roof-2026/team-a'); assert.equal(team.status, 200); assert.match(team.text, /Team A is raising money for/);
+    assert.match(home, /class="cmp-topbar"/); assert.match(home, /cmp-hero cmp-home/); assert.match(home, /href="\/campaign\/roof-2026\?amt=54#give"/);
+    assert.match((await g.call('GET', '/learn/shabbat')).text, /class="cmp-topbar" href="\/campaign\/roof-2026"/, 'the bar is on every page');
+    const page = (await g.call('GET', '/campaign/roof-2026')).text;
+    assert.match(page, /data-goal="50000"/); assert.doesNotMatch(page, /cmp-topbar/, 'not on the campaign itself'); assert.doesNotMatch(page, /<h1>/, 'the hero title is not decorated');
     assert.equal((await g.call('GET', '/campaign/roof-2026/nobody')).status, 404);
+
+    // An ambassador opens a page alone, sees it at once, and can change it with the private link.
+    const amb = await g.call('POST', '/api/campaign/roof-2026/ambassador', { name: 'The Cohen Family', goal: 5000, message: 'For our kids.', email: 'Cohen@Example.com' });
+    assert.equal(amb.status, 200); assert.match(amb.json.url, /^\/campaign\/roof-2026\/the-cohen-family\?welcome=1&k=/);
+    const k = new URL(amb.json.url, base).searchParams.get('k');
+    const mine = (await g.call('GET', amb.json.url)).text;
+    assert.match(mine, /The Cohen Family is raising money for/); assert.match(mine, /For our kids\./); assert.match(mine, /class="card cmp-welcome"/); assert.doesNotMatch(mine, /Cohen@Example\.com/i, 'email is never shown');
+    assert.doesNotMatch((await g.call('GET', '/campaign/roof-2026/the-cohen-family')).text, /cmp-welcome/, 'the welcome needs the private key');
+    assert.match(mails.map((m) => m.subject).join('\n'), /New ambassador page for New Roof: The Cohen Family/);
+    assert.match(mails.find((m) => m.to === 'cohen@example.com').text, /\/campaign\/roof-2026\/the-cohen-family\/edit\?k=/);
+    assert.equal((await g.call('POST', '/api/campaign/roof-2026/ambassador', { name: 'The Cohen Family', goal: 5000, email: 'b@example.com' })).json.url.split('?')[0], '/campaign/roof-2026/the-cohen-family-2', 'same name gets its own address');
+    assert.equal((await g.call('POST', '/api/campaign/roof-2026/ambassador', { name: 'X', goal: 5000, email: 'x@example.com' })).status, 400);
+    assert.equal((await g.call('POST', '/api/campaign/roof-2026/ambassador/the-cohen-family', { k: 'wrong-key-wrong-key-xyz1', goal: 9 })).status, 403);
+    assert.equal((await g.call('POST', '/api/campaign/roof-2026/ambassador/the-cohen-family', { k, goal: 8000, message: 'Every brick counts.' })).status, 200);
+    assert.match((await g.call('GET', '/campaign/roof-2026/the-cohen-family/edit?k=' + k)).text, /value="8000"/);
+    assert.match((await g.call('GET', '/campaign/roof-2026/the-cohen-family/edit?k=nope')).text, /This link is not valid/);
+    assert.match((await g.call('GET', '/campaign/roof-2026')).text, /href="\/campaign\/roof-2026\/the-cohen-family"/, 'on the leaderboard');
+
+    // A pledge waits for the Rabbi; marked received, it counts.
+    assert.equal((await g.call('POST', '/api/campaign/pledge', { campaign: 'roof-2026', amount: 25000, fullName: 'Rachel Green', email: 'rachel@example.com', how: 'wire', team: 'the-cohen-family' })).status, 200);
+    assert.equal((await g.call('POST', '/api/campaign/pledge', { campaign: 'roof-2026', amount: 25000, fullName: 'R', email: 'nope' })).status, 400);
+    let tot = (await g.call('GET', '/api/campaign/roof-2026')).json; assert.equal(tot.raised, 0); assert.equal(tot.pledged, 25000);
     const a = await admin();
-    assert.equal((await a.call('POST', '/admin/api/campaigns/roof-2026/offline', { name: 'The Greens', amount: 2500, how: 'check', team: 'team-a', message: 'Go team!' }, { 'x-admin': '1' })).status, 200);
-    const tot = (await g.call('GET', '/api/campaign/roof-2026')).json;
-    assert.equal(tot.raised, 2500); assert.equal(tot.teams['team-a'], 2500); assert.equal(tot.wall[0].name, 'The Greens');
-    const adm = (await a.call('GET', '/admin/api/campaigns', undefined, { 'x-admin': '1' })).json.campaigns.find((c) => c.slug === 'roof-2026');
-    assert.equal(adm.gifts.length, 1); assert.equal(adm.live, true);
-    assert.equal((await a.call('DELETE', '/admin/api/campaigns/roof-2026/offline/' + adm.gifts[0].id, undefined, { 'x-admin': '1' })).status, 200);
-    assert.equal((await g.call('GET', '/admin/api/campaigns', undefined, { 'x-admin': '1' })).status, 401);
-  } finally { list.splice(list.indexOf(live), 1); }
+    assert.equal((await a.call('POST', '/admin/api/campaigns/roof-2026/offline', { name: 'The Greens', amount: 2500, how: 'check', team: 'team-a', message: 'Go team!' }, H)).status, 200);
+    let adm = (await a.call('GET', '/admin/api/campaigns', undefined, H)).json.campaigns.find((c) => c.slug === 'roof-2026');
+    assert.equal(adm.pledges[0].fullName, 'Rachel Green'); assert.equal(adm.ambassadors.length, 2); assert.equal(adm.ambassadors[0].token, undefined, 'the private key never leaves the server');
+    assert.equal((await a.call('POST', '/admin/api/campaigns/roof-2026/pledges/' + adm.pledges[0].id, { action: 'received' }, H)).status, 200);
+    tot = (await g.call('GET', '/api/campaign/roof-2026')).json;
+    assert.equal(tot.raised, 27500); assert.equal(tot.pledged, 0); assert.equal(tot.teams['the-cohen-family'], 25000); assert.equal(tot.teams['team-a'], 2500);
+    assert.equal((await a.call('POST', '/admin/api/campaigns/roof-2026/ambassadors/the-cohen-family-2', { hidden: true }, H)).status, 200);
+    assert.equal((await g.call('GET', '/campaign/roof-2026/the-cohen-family-2')).status, 404, 'a hidden page is gone');
+    adm = (await a.call('GET', '/admin/api/campaigns', undefined, H)).json.campaigns.find((c) => c.slug === 'roof-2026');
+    const gift = adm.gifts.find((x) => x.name === 'The Greens');
+    assert.equal((await a.call('DELETE', '/admin/api/campaigns/roof-2026/offline/' + gift.id, undefined, H)).status, 200);
+    assert.equal((await g.call('GET', '/admin/api/campaigns', undefined, H)).status, 401);
+  } finally { list.splice(list.indexOf(live), 1); await store.setKv('campaign-teams:roof-2026', []); }
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'content-'));
   fs.cpSync(DIR, dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'campaigns.json'), JSON.stringify([{ slug: 'x', title: 'X', goal: 0, start: 'soon', end: '2026-01-01', months: [1] }]));
-  assert.throws(() => load(dir), (e) => e.errors.some((m) => /campaign x: title and goal/.test(m)) && e.errors.some((m) => /campaign x: start and end/.test(m)) && e.errors.some((m) => /campaign x: months/.test(m)));
+  fs.writeFileSync(path.join(dir, 'campaigns.json'), JSON.stringify([{ slug: 'x', title: 'X', goal: 0, start: 'soon', end: '2026-01-01', months: [1], years: [20], image: 'http://x/y.jpg' }]));
+  assert.throws(() => load(dir), (e) => ['title and goal', 'start and end', 'months', 'years', 'image'].every((w) => e.errors.some((m) => m.includes('campaign x: ' + w))));
   fs.rmSync(dir, { recursive: true, force: true });
 });
 

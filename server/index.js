@@ -421,7 +421,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 
   mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, limit });
   // Fundraising campaigns (/campaign/...): checkout (one payment or split into monthly payments), totals, donor wall.
-  const campaigns = createCampaigns({ stripe, store, content: site.content, log, clean, HttpError, ensureProduct, FUND_NAMES, FEE_RATE, siteEnv });
+  const campaigns = createCampaigns({ stripe, store, content: site.content, log, clean, HttpError, ensureProduct, FUND_NAMES, FEE_RATE, siteEnv, mailer });
   campaigns.mountPublic(api, { wrap, limit });
   app.locals.campaigns = campaigns;
   // Kiddush board API (its own router so the shared per-IP limit above does not throttle a room full of phones).

@@ -174,11 +174,11 @@ test('website giving: Stripe checkout once or monthly, Chai Club details for the
   assert.equal((await off.call('POST', '/api/give/checkout', gift())).status, 503);
 });
 
-test('campaigns: one payment or a gift split into monthly payments that stop by themselves; totals and the donor wall', async (t) => {
+test('campaigns: one payment, or monthly or yearly payments that stop by themselves; totals and the donor wall', async (t) => {
   const c = await start(); t.after(c.close);
   const { lastPaymentEnd, withMatch } = require('./campaign.js');
   const data = c.app.locals.site.content();
-  data.campaigns.push({ slug: 'test-drive', title: 'Test Drive', goal: 10000, start: '2020-01-01', end: '2099-12-31', fund: 'building', months: [12, 24], matching: { multiplier: 2, cap: 1000 }, teams: [{ slug: 'levis', name: 'The Levis', goal: 2000 }], levels: [{ id: 'room', title: 'A room', amount: 1800, quantity: 2 }] });
+  data.campaigns.push({ slug: 'test-drive', title: 'Test Drive', goal: 10000, start: '2020-01-01', end: '2099-12-31', fund: 'building', months: [12, 24], years: [3], matching: { multiplier: 2, cap: 1000 }, teams: [{ slug: 'levis', name: 'The Levis', goal: 2000 }], levels: [{ id: 'room', title: 'A room', amount: 1800, quantity: 2 }] });
   const give = (o) => c.call('POST', '/api/campaign/checkout', { campaign: 'test-drive', amount: 180, idem: 'idem-camp-' + Math.random().toString(36).slice(2, 12) + 'abcdef', ...o });
   const calls = () => c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
 
@@ -186,32 +186,37 @@ test('campaigns: one payment or a gift split into monthly payments that stop by 
   assert.equal(once.status, 200); let p = calls();
   assert.equal(p.mode, 'payment'); assert.equal(p.line_items[0].price_data.unit_amount, 5000000); assert.equal(p.payment_intent_data.metadata.campaign, 'test-drive');
   assert.equal(p.payment_intent_data.metadata.team, 'levis'); assert.equal(p.payment_intent_data.metadata.level, 'room'); assert.equal(p.payment_intent_data.metadata.fund, 'building');
+  assert.equal(p.payment_method_types, undefined, 'every payment method switched on in Stripe is offered');
   assert.match(p.success_url, /\/he\/campaign\/test-drive\/thank-you\?session_id=\{CHECKOUT_SESSION_ID\}&team=levis$/);
 
-  const split = await give({ amount: 36000, months: 24, fee: true, anonymous: true });
+  const split = await give({ amount: 36000, plan: 'month-24', fee: true, anonymous: true });
   assert.equal(split.status, 200); p = calls();
   assert.equal(p.mode, 'subscription'); assert.deepEqual(p.line_items[0].price_data.recurring, { interval: 'month' });
   assert.equal(p.line_items[0].price_data.unit_amount, Math.round(150000 * 1.035), '$36,000 over 24 months is $1,500 a month, plus the fee');
   assert.equal(p.subscription_data.metadata.installments, '24'); assert.equal(p.subscription_data.metadata.pledge_cents, '3600000'); assert.equal(p.subscription_data.metadata.wall_show, 'no');
+  assert.equal((await give({ amount: 360000, plan: 'year-3' })).status, 200); p = calls();
+  assert.deepEqual(p.line_items[0].price_data.recurring, { interval: 'year' }); assert.equal(p.line_items[0].price_data.unit_amount, 12000000); assert.equal(p.subscription_data.metadata.interval, 'year');
 
-  assert.equal((await give({ months: 7 })).status, 400, 'only the months the campaign offers');
-  assert.equal((await give({ amount: 200000 })).status, 400, 'over $100,000 in one payment');
-  assert.equal((await give({ amount: 300000, months: 12 })).status, 400, 'over $250,000');
-  assert.equal((await give({ amount: 60, months: 24 })).status, 400, 'at least $5 a month');
-  assert.equal((await give({ campaign: 'year-end-2026' })).status, 400, 'a draft campaign takes no gifts');
+  assert.equal((await give({ plan: 'month-7' })).status, 400, 'only the plans the campaign offers');
+  assert.equal((await give({ plan: 'year-5' })).status, 400);
+  assert.equal((await give({ amount: 300000 })).status, 400, 'over $250,000 in one payment');
+  assert.equal((await give({ amount: 2000000, plan: 'month-12' })).status, 400, 'over $1,000,000');
+  assert.equal((await give({ amount: 60, plan: 'month-24' })).status, 400, 'at least $5 a payment');
+  assert.equal((await give({ campaign: 'building-campaign' })).status, 400, 'a draft campaign takes no gifts');
 
   // The donor pays: a one-time gift (shown with name), a split gift (anonymous). Totals count the whole pledge, with matching up to the cap.
   const st = c.stripe._st;
   st.pis.pi_a = { id: 'pi_a', status: 'succeeded', created: 1800000000, amount_received: 18000, metadata: { campaign: 'test-drive', gift_cents: '18000', wall_name: 'The Cohens', wall_show: 'yes', team: 'levis', level: 'room', message: 'Mazal tov!' } };
   st.subs.sub_a = { id: 'sub_a', status: 'active', created: 1800000100, billing_cycle_anchor: 1800000100, metadata: { campaign: 'test-drive', installments: '24', pledge_cents: '3600000', gift_cents: '150000', wall_name: 'Secret', wall_show: 'no', hide_amount: 'yes' } };
+  st.subs.sub_y = { id: 'sub_y', status: 'active', created: 1800000200, billing_cycle_anchor: 1800000200, metadata: { campaign: 'test-drive', installments: '3', interval: 'year', pledge_cents: '300000', gift_cents: '100000', wall_name: 'The Yearlys', wall_show: 'yes' } };
   const tot = (await c.call('GET', '/api/campaign/test-drive')).json;
-  assert.equal(tot.given, 36180); assert.equal(tot.raised, 36180 + 1000, 'matching adds up to its $1,000 cap');
-  assert.equal(tot.donors, 2); assert.equal(tot.teams.levis, 360); assert.equal(tot.levels.room, 1);
-  assert.deepEqual(tot.wall.map((w) => [w.name, w.cents]), [['', null], ['The Cohens', 18000]], 'anonymous and hidden amounts stay hidden');
+  assert.equal(tot.given, 39180); assert.equal(tot.raised, 39180 + 1000, 'matching adds up to its $1,000 cap');
+  assert.equal(tot.donors, 3); assert.equal(tot.teams.levis, 360); assert.equal(tot.teamDonors.levis, 1); assert.equal(tot.levels.room, 1);
+  assert.deepEqual(tot.wall.map((w) => [w.name, w.cents, w.count, w.interval]), [['The Yearlys', 300000, 3, 'year'], ['', null, 24, 'month'], ['The Cohens', 18000, 0, '']], 'anonymous and hidden amounts stay hidden');
   assert.equal(st.subs.sub_a.cancel_at, lastPaymentEnd(1800000100, 24), 'the split gift stops after its 24th payment');
-  assert.equal(st.subs.sub_a.proration_behavior, 'none');
-  const end = new Date(lastPaymentEnd(Date.UTC(2026, 0, 15) / 1000, 12) * 1000).toISOString().slice(0, 10);
-  assert.equal(end, '2026-12-16', 'payments Jan 15 ... Dec 15, then it stops');
+  assert.equal(st.subs.sub_y.cancel_at, lastPaymentEnd(1800000200, 3, 'year')); assert.equal(st.subs.sub_a.proration_behavior, 'none');
+  assert.equal(new Date(lastPaymentEnd(Date.UTC(2026, 0, 15) / 1000, 12) * 1000).toISOString().slice(0, 10), '2026-12-16', 'payments Jan 15 ... Dec 15, then it stops');
+  assert.equal(new Date(lastPaymentEnd(Date.UTC(2026, 0, 15) / 1000, 3, 'year') * 1000).toISOString().slice(0, 10), '2028-01-16', 'payments 2026, 2027, 2028');
   assert.equal(withMatch({ matching: { multiplier: 3 } }, 100), 300);
   assert.equal((await c.call('GET', '/api/campaign/nope')).status, 404);
   const off = await start({ stripe: null }); t.after(off.close);
