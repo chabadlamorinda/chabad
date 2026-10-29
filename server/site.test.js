@@ -47,6 +47,12 @@ function client() {
   };
   return { call, get cookie() { return cookie; } };
 }
+// One signed-in Rabbi-area client for all tests (the sign-in page allows only a few tries per 15 minutes).
+let adminClient = null;
+async function admin() {
+  if (!adminClient) { adminClient = client(); assert.equal((await adminClient.call('POST', '/admin/api/login', { password: PW })).status, 200); }
+  return adminClient;
+}
 async function signIn(email = 'Sara@Example.com') {
   const c = client();
   assert.equal((await c.call('POST', '/api/site/login', { email })).status, 200);
@@ -277,7 +283,7 @@ test('community board: submit, moderate, then it appears', async () => {
   assert.equal((await g.call('POST', '/api/site/submit', { kind: 'mazal-tov', title: 'Mazal Tov to the Levi family on the twins!', body: 'Welcome Noa!', name: 'Sara', email: 'sara@x.co' })).status, 200);
   assert.match(mails[mails.length - 1].subject, /^Mazal Tov: Mazal Tov to the Levi family/);
   assert.ok(!(await g.call('GET', '/community')).text.includes('Levi family on the twins'), 'not shown before approval');
-  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const a = await admin();
   const item = (await a.call('GET', '/admin/api/site/submissions')).json.items[0];
   assert.equal((await a.call('POST', '/admin/api/site/submissions/' + item.id, { status: 'approved' }, { 'x-admin': '1' })).status, 200);
   assert.match((await g.call('GET', '/community')).text, /Levi family on the twins/);
@@ -348,7 +354,7 @@ test('mezuzah and tefillin checking reminders, and the Bar/Bat Mitzvah invitatio
   // Outreach: pages a signed-in member reads help the Rabbi know whom to invite or check in on.
   await c.call('PUT', '/api/site/me', { name: 'Rivka Stein', phone: '(925) 555-0100' });
   for (const path of ['/events/' + EVENT, '/he/help/someone-passed-away', '/about']) assert.equal((await c.call('POST', '/api/site/seen', { path }, { 'x-site': '1' })).status, 204);
-  const adm = client(); await adm.call('POST', '/admin/api/login', { password: PW });
+  const adm = await admin();
   const inv = (await adm.call('GET', '/admin/api/site/outreach/event/' + EVENT)).json.items.find((x) => x.name === 'Rivka Stein');
   assert.ok(inv && inv.reasons.includes('looked at this event'), 'a family that looked at the event is suggested');
   assert.match(inv.whatsapp, /^https:\/\/wa\.me\/19255550100\?text=Hi%20Rivka!/);
@@ -423,7 +429,7 @@ test('Kaddish requests and the prayer list stay private', async () => {
   assert.equal((await g.call('POST', '/api/site/submit', { kind: 'kaddish', title: 'Kaddish: Avraham', body: 'Kaddish for: 11 months', name: 'Sara', email: 'sara@x.co' })).status, 200);
   assert.equal((await g.call('POST', '/api/site/submit', { kind: 'tehillim', title: 'Moshe ben Sarah', body: 'For: refuah', name: 'Sara', email: 'sara@x.co' })).status, 200);
   assert.match(mails[mails.length - 1].subject, /^\[Private\] Prayer list/);
-  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const a = await admin();
   const items = (await a.call('GET', '/admin/api/site/submissions')).json.items;
   for (const i of items) await a.call('POST', '/admin/api/site/submissions/' + i.id, { status: 'approved' }, { 'x-admin': '1' });
   const board = (await g.call('GET', '/community')).text;
@@ -436,7 +442,7 @@ test('Kaddish requests and the prayer list stay private', async () => {
 test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
   const c = client(), i18n = server_site().i18n;
   i18n.missing.clear();
-  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/menorah', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask', '/shabbat-times', '/shabbat-times/orinda', '/this-week', '/jewish-holidays-' + new Date().getFullYear()];
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/menorah', '/campaign/year-end-2026?preview=1', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask', '/shabbat-times', '/shabbat-times/orinda', '/this-week', '/jewish-holidays-' + new Date().getFullYear()];
   for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
   assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
   // and the content itself: every guide, help page, holiday and page has both translations
@@ -463,7 +469,7 @@ test('forms: Hebrew School registration with tuition, camp pricing, chametz auth
   assert.equal(camp.json.amount, 1500);
   assert.equal((await g.call('POST', '/api/site/forms/sell-chametz', { fields: { name: 'A', email: 'a@x.co', locations: 'Home', signature: 'A' } })).status, 400, 'authorization box is required');
   assert.equal((await g.call('POST', '/api/site/forms/sell-chametz', { fields: { name: 'A', email: 'a@x.co', locations: 'Home', signature: 'A', authorize: true } })).status, 200);
-  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const a = await admin();
   const list = (await a.call('GET', '/admin/api/site/forms')).json.forms;
   assert.equal(list.find((f) => f.id === 'hebrew-school').fresh, 1);
   const items = (await a.call('GET', '/admin/api/site/forms/hebrew-school')).json.items;
@@ -571,7 +577,7 @@ test('chat: answers from the site with Claude, in the visitor language, and logs
   for (const secret of ['@example.com', 'chanukah-grand-menorah-lighting-2026', 'verified_email', 'password', SECRET]) assert.ok(!sent.includes(secret), 'chat must not see ' + secret);
   assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' })).status, 403);
   assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: [] }) })).status, 400);
-  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const a = await admin();
   await new Promise((res) => setTimeout(res, 50));
   assert.ok((await a.call('GET', '/admin/api/site/chat-questions')).json.items.some((x) => x.question === 'When are Shabbat services?'));
   assert.match((await client().call('GET', '/')).text, /data-chat-open/);
@@ -791,7 +797,7 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
   assert.match((await g.call('GET', confLink.replace(/t=[^&]+/, 't=wrong'))).text, /not valid/);
   assert.match((await g.call('GET', confLink)).text, /You are signed up/);
   const m = await signIn('member@x.co'); await m.call('PUT', '/api/site/me', { name: 'Member' });
-  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const a = await admin();
   const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
   assert.equal(pv.recipients, 2); assert.match(pv.text, /^Good Shabbos everyone!/); assert.match(pv.text, /COMING UP/); assert.match(pv.text, /LEARN SOMETHING NEW/);
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', {}, { 'x-admin': '1' })).status, 400, 'needs confirmation');
@@ -807,7 +813,7 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
 });
 
 test('Ask the Rabbi: publish an answer, it becomes a page with Q&A markup', async () => {
-  const a = client(); await a.call('POST', '/admin/api/login', { password: PW });
+  const a = await admin();
   const r = (await a.call('POST', '/admin/api/site/qa', { question: 'Can I light Shabbat candles if I am not religious?', answer: 'Yes! Every Jewish woman and girl is welcome to light. See [how](/learn/shabbat-candles).' }, { 'x-admin': '1' })).json;
   assert.equal(r.ok, true); assert.match(r.url, /\/ask\/can-i-light-shabbat-candles-if-i-am-not-religious$/);
   const g = client(), page = await g.call('GET', '/ask/can-i-light-shabbat-candles-if-i-am-not-religious');
@@ -815,6 +821,37 @@ test('Ask the Rabbi: publish an answer, it becomes a page with Q&A markup', asyn
   assert.match((await g.call('GET', '/ask')).text, /Can I light Shabbat candles/);
   assert.match((await g.call('GET', '/sitemap.xml')).text, /\/ask\/can-i-light-shabbat-candles/);
   assert.equal((await g.call('POST', '/admin/api/site/qa', { question: 'x', answer: 'y' })).status, 401);
+});
+
+test('campaigns: draft is hidden (preview only), a live one leads the home page, gifts by check count', async () => {
+  const g = client();
+  assert.equal((await g.call('GET', '/campaign/year-end-2026')).status, 404, 'a draft is not public');
+  const pre = await g.call('GET', '/campaign/year-end-2026?preview=1'); assert.equal(pre.status, 200); assert.match(pre.text, /data-campaign-give="year-end-2026"/); assert.match(pre.text, /noindex/);
+  assert.match((await g.call('GET', '/he/campaign/year-end-2026?preview=1')).text, /קמפיין סוף השנה 2026/);
+  const r = await fetch(base + '/campaign', { redirect: 'manual' }); assert.match(r.headers.get('location'), /\/donate$/);
+  assert.doesNotMatch((await g.call('GET', '/')).text, /class="cmp-banner"/);
+  const list = server_site().content().campaigns, live = { slug: 'roof-2026', title: 'New Roof', tagline: 'Keep us dry', goal: 50000, start: '2020-01-01', end: '2099-12-31', startIso: withOffset('2020-01-01T00:00'), endIso: withOffset('2099-12-31T23:59'), teams: [{ slug: 'team-a', name: 'Team A', goal: 1000 }], levels: [], amounts: [18, 54, 180, 360, 720] };
+  list.push(live);
+  try {
+    const home = (await g.call('GET', '/')).text;
+    assert.match(home, /class="cmp-banner"/); assert.match(home, /New Roof/); assert.match(home, /href="\/campaign\/roof-2026\?amt=54#give"/);
+    assert.match((await g.call('GET', '/campaign/roof-2026')).text, /data-goal="50000"/);
+    const team = await g.call('GET', '/campaign/roof-2026/team-a'); assert.equal(team.status, 200); assert.match(team.text, /Team A is raising money for/);
+    assert.equal((await g.call('GET', '/campaign/roof-2026/nobody')).status, 404);
+    const a = await admin();
+    assert.equal((await a.call('POST', '/admin/api/campaigns/roof-2026/offline', { name: 'The Greens', amount: 2500, how: 'check', team: 'team-a', message: 'Go team!' }, { 'x-admin': '1' })).status, 200);
+    const tot = (await g.call('GET', '/api/campaign/roof-2026')).json;
+    assert.equal(tot.raised, 2500); assert.equal(tot.teams['team-a'], 2500); assert.equal(tot.wall[0].name, 'The Greens');
+    const adm = (await a.call('GET', '/admin/api/campaigns', undefined, { 'x-admin': '1' })).json.campaigns.find((c) => c.slug === 'roof-2026');
+    assert.equal(adm.gifts.length, 1); assert.equal(adm.live, true);
+    assert.equal((await a.call('DELETE', '/admin/api/campaigns/roof-2026/offline/' + adm.gifts[0].id, undefined, { 'x-admin': '1' })).status, 200);
+    assert.equal((await g.call('GET', '/admin/api/campaigns', undefined, { 'x-admin': '1' })).status, 401);
+  } finally { list.splice(list.indexOf(live), 1); }
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'content-'));
+  fs.cpSync(DIR, dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'campaigns.json'), JSON.stringify([{ slug: 'x', title: 'X', goal: 0, start: 'soon', end: '2026-01-01', months: [1] }]));
+  assert.throws(() => load(dir), (e) => e.errors.some((m) => /campaign x: title and goal/.test(m)) && e.errors.some((m) => /campaign x: start and end/.test(m)) && e.errors.some((m) => /campaign x: months/.test(m)));
+  fs.rmSync(dir, { recursive: true, force: true });
 });
 
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {

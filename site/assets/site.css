@@ -696,3 +696,36 @@ form.tool .btn.gold { justify-self: start; min-width: 200px; }
 .mn-tonight { font-size: 1.1rem; background: var(--soft); border-radius: var(--r); padding: 12px 16px; }
 .mn-bless .he { font-size: 1.35rem; line-height: 1.7; margin: 0; }
 .mn-bless.mn-dim { opacity: .55; }
+
+/* Fundraising campaigns (/campaign/..., and the banner at the top of the home page) */
+.cmp-hero { border-radius: var(--r); padding: 4px 0 8px; }
+.cmp-hero.has-img { color: #fff; padding: 64px 22px 22px; margin-top: 8px; background: linear-gradient(180deg, rgba(20,30,50,.15), rgba(20,30,50,.75)), var(--cmp-img) center / cover; }
+.cmp-hero.has-img .lead-d, .cmp-hero.has-img .hand { color: #fff; }
+.cmp-match { background: #fff3d6; border: 1px solid var(--gold-2); border-radius: var(--r); padding: 10px 14px; }
+.cmp-progress { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 18px; margin: 14px 0; box-shadow: var(--shadow); }
+.cmp-raised { margin: 0 0 8px; } .cmp-raised b { font-family: var(--serif); font-size: clamp(1.9rem, 7vw, 2.6rem); color: var(--navy); }
+.cmp-raised span { color: var(--muted); }
+.cmp-bar { display: block; height: 14px; background: var(--soft); border-radius: 999px; overflow: hidden; }
+.cmp-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), var(--gold-2)); border-radius: inherit; transition: width 1s ease-out; }
+.cmp-stats { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 0; color: var(--muted); } .cmp-stats b { color: var(--ink); }
+.cmp-clock { margin-inline-start: auto; font-variant-numeric: tabular-nums; color: var(--gold-ink); font-weight: 600; }
+.cmp-bonus { margin: 8px 0 0; font-size: 1.3rem; color: var(--gold-ink); }
+.cmp-plan label { display: block; margin: 4px 0; }
+.cmp-matchline { font-size: 1.3rem; color: var(--gold-ink); margin: 4px 0; }
+.cmp-levels, .cmp-teams { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.cmp-level, .cmp-team { display: grid; gap: 4px; text-decoration: none; color: inherit; }
+.cmp-level b { font-family: var(--serif); font-size: 1.4rem; color: var(--navy); }
+.cmp-video { position: relative; aspect-ratio: 16 / 9; margin: 16px 0; } .cmp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: var(--r); }
+.cmp-wall-tools { display: flex; gap: 8px; margin-bottom: 8px; } .cmp-wall-tools input { flex: 1; min-width: 0; }
+.cmp-wall { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.cmp-wall li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; }
+.cmp-wall li p { margin: 0; } .cmp-wall li p:first-child { display: flex; justify-content: space-between; gap: 10px; } .cmp-wall .amt { color: var(--gold-ink); font-weight: 600; white-space: nowrap; }
+.cmp-amb { margin-top: 20px; }
+.cmp details { border-bottom: 1px solid var(--line); padding: 10px 0; } .cmp summary { cursor: pointer; font-weight: 600; }
+.cmp-sticky { position: fixed; z-index: 30; inset-inline-start: 16px; inset-inline-end: 150px; bottom: 16px; text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+@media (min-width: 760px) { .cmp-sticky { display: none; } } .cmp-sticky[hidden] { display: none; }
+.cmp-banner { background: linear-gradient(180deg, #fff8e6, var(--bg)); border-bottom: 1px solid var(--line); padding: 18px 0 8px; }
+.cmp-banner[style] { background: linear-gradient(180deg, rgba(255,248,230,.94), rgba(255,252,246,.97)), var(--cmp-img) center / cover; }
+.cmp-banner h2 { margin: 0; font-size: clamp(1.5rem, 5vw, 2.1rem); } .cmp-banner h2 a { color: inherit; text-decoration: none; }
+.cmp-banner .hand { margin: 0; } .cmp-banner .cmp-progress { margin: 10px 0; }
+.cmp-quick .btn { min-width: 72px; }

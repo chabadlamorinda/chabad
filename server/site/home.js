@@ -2,6 +2,7 @@
 // smaller banners for other events and the programs people see every week, what Chabad of Lamorinda has built,
 // ways to get involved, photos from Facebook, and a few things to try. Words live in site/content/home.json.
 'use strict';
+const { campaignBanner } = require('./campaign-page.js');
 const { esc } = require('./md.js');
 const { artFor, artImg } = require('./art.js');
 const { fmtClock } = require('./content.js');
@@ -66,6 +67,7 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, today }) {
   ];
   const phone = o.phone.replace(/[^0-9+]/g, '');
   return `<h1 class="sr-only">${esc(o.name)}: ${esc(o.tagline)}</h1>
+${campaignBanner(X)}
 <section class="hero-banners" aria-roledescription="carousel" aria-label="${esc(t('Featured'))}">
   <div class="bn-track" data-carousel tabindex="0">${slides.map(banner).join('')}</div>
   ${slides.length > 1 ? `<div class="bn-nav"><button type="button" class="bn-prev" aria-label="${esc(t('Previous'))}">‹</button><div class="bn-dots" role="tablist">${slides.map((s, i) => `<button type="button" role="tab" aria-label="${esc(s.title)}"${i ? '' : ' aria-selected="true"'}></button>`).join('')}</div><button type="button" class="bn-next" aria-label="${esc(t('Next'))}">›</button></div>` : ''}

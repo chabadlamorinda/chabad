@@ -17,6 +17,7 @@ const express = require('express');
 const { mountMembers } = require('./members.js');
 const { mountAdmin } = require('./admin.js');
 const { createKiddush } = require('./kiddush.js');
+const { createCampaigns } = require('./campaign.js');
 const { mountSite } = require('./site/index.js');
 
 const ROOT = path.join(__dirname, '..');
@@ -419,6 +420,10 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   }));
 
   mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, limit });
+  // Fundraising campaigns (/campaign/...): checkout (one payment or split into monthly payments), totals, donor wall.
+  const campaigns = createCampaigns({ stripe, store, content: site.content, log, clean, HttpError, ensureProduct, FUND_NAMES, FEE_RATE, siteEnv });
+  campaigns.mountPublic(api, { wrap, limit });
+  app.locals.campaigns = campaigns;
   // Kiddush board API (its own router so the shared per-IP limit above does not throttle a room full of phones).
   const kapi = express.Router();
   kapi.use(express.json({ limit: '16kb' }));
@@ -428,7 +433,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/api/kiddush', kapi);
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  const adminOn = mountAdmin(app, { funds: FUND_NAMES, store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: (r, ctx) => { kiddush.mountAdmin(r, ctx); site.mountAdmin(r, ctx); }, levelOf: clubLevel });
+  const adminOn = mountAdmin(app, { funds: FUND_NAMES, store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: (r, ctx) => { kiddush.mountAdmin(r, ctx); site.mountAdmin(r, ctx); campaigns.mountAdmin(r, ctx); }, levelOf: clubLevel });
   if (!adminOn) { // explain instead of a bare "Not found" when the staff area has not been switched on yet
     app.get(/^\/admin(\/.*)?$/, (req, res) => res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Staff area not set up yet</title><body style="font:18px/1.5 Georgia,serif;max-width:560px;margin:8vh auto;padding:0 20px;color:#3b2412"><h1 style="font-weight:400">Staff area not set up yet</h1><p>The staff page switches on once this setting is added in Render (your hosting account):</p><ol><li><b>ADMIN_PASSWORD</b>: a password of 12 or more characters</li></ol><p>Some screens (yahrzeits, members, sponsorships) also need <b>DATABASE_URL</b>, the address of your database (for example a free one from neon.com).</p><p>After you save it, Render restarts and this page becomes your sign-in page. Step-by-step: <code>store/rabbi-setup.md</code>.</p>'));
   }

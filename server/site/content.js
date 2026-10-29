@@ -60,6 +60,7 @@ function load(dir = DIR, opts = {}) {
   const sponsor = optJson(dir, 'sponsor.json', { occasions: [], options: [] }), tehillim = optJson(dir, 'tehillim.json', { situations: [] });
   const forms = optJson(dir, 'forms.json', []), giving = optJson(dir, 'giving.json', {}), home = optJson(dir, 'home.json', {});
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
+  const campaigns = optJson(dir, 'campaigns.json', []);
   const errors = [];
   const need = (cond, msg) => { if (!cond) errors.push(msg); };
 
@@ -99,6 +100,17 @@ function load(dir = DIR, opts = {}) {
   for (const a of learn) { uniq('learn', a.slug); need(a.title && a.description, `learn ${a.slug}: title and description are required`); need(LEARN_CATEGORIES.includes(a.category), `learn ${a.slug}: category must be one of ${LEARN_CATEGORIES.join(', ')}`); }
   for (const [from, to] of Object.entries(redirects)) need(/^\/[^\s]*$/.test(from) && /^(\/|https?:\/\/)/.test(to), `redirects.json: "${from}" -> "${to}" must both be paths`);
   for (const g of directory) { need(g.group && Array.isArray(g.items), 'directory.json: every group needs group and items'); for (const i of g.items || []) need(i.name && i.text, `directory ${g.group}: every item needs name and text`); }
+  // Fundraising campaigns (campaigns.json): see server/campaign.js and server/site/campaign-page.js.
+  const WHEN = /^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?$/;
+  for (const c of campaigns) {
+    uniq('campaign', c.slug);
+    need(c.title && Number(c.goal) > 0, `campaign ${c.slug}: title and goal (a number of dollars) are required`);
+    need(WHEN.test(c.start || '') && WHEN.test(c.end || '') && c.start < c.end, `campaign ${c.slug}: start and end are required, like "2026-11-01" or "2026-12-31T23:59", and end comes after start`);
+    need(!c.months || (Array.isArray(c.months) && c.months.every((m) => Number.isInteger(m) && m > 1 && m <= 60)), `campaign ${c.slug}: months must be a list like [12, 24, 36]`);
+    for (const t of c.teams || []) { uniq('campaign team ' + c.slug, t.slug); need(t.name, `campaign ${c.slug}: every team needs a name`); }
+    for (const l of c.levels || []) need(l.id && l.title && Number(l.amount) > 0, `campaign ${c.slug}: every giving level needs id, title and amount`);
+    need(!c.matching || Number(c.matching.multiplier) >= 1, `campaign ${c.slug}: matching.multiplier must be a number like 2`);
+  }
   if (errors.length) { const e = new Error('Website content has problems:\n- ' + errors.join('\n- ')); e.errors = errors; throw e; }
 
   for (const e of events) {
@@ -107,6 +119,7 @@ function load(dir = DIR, opts = {}) {
     e.published = e.status !== 'draft';
   }
   events.sort((a, b) => a.start.localeCompare(b.start));
+  for (const c of campaigns) { c.startIso = withOffset(c.start.length === 10 ? c.start + 'T00:00' : c.start); c.endIso = withOffset(c.end.length === 10 ? c.end + 'T23:59' : c.end); }
   const learnSlugs = new Set(learn.map((a) => a.slug));
   for (const a of learn) {
     const { body, faq: qa } = splitFaq(a.body);
@@ -117,7 +130,7 @@ function load(dir = DIR, opts = {}) {
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
   for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

@@ -296,6 +296,97 @@
         .catch(function (e2) { btn.disabled = false; btn.textContent = T('Continue to secure payment'); fail(e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.')); });
     });
   });
+  // Fundraising campaigns (/campaign/..., and the banner on the home page): live totals, countdown, teams, levels left,
+  // the donor wall, and the giving form (one payment or monthly payments). Numbers come from /api/campaign/<slug>.
+  var usd = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); }, cdata = {};
+  var campaignData = function (slug) { if (!cdata[slug]) cdata[slug] = fetch('/api/campaign/' + encodeURIComponent(slug), { credentials: 'omit' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); return cdata[slug]; };
+  Array.prototype.forEach.call(document.querySelectorAll('[data-campaign]'), function (box) {
+    var slug = box.getAttribute('data-campaign'), team = box.getAttribute('data-team'), goal = +box.getAttribute('data-goal') || 0, bonus = +box.getAttribute('data-bonus') || 0;
+    var q = function (s) { return box.querySelector(s); }, clock = q('[data-c-clock]'), start = Date.parse(box.getAttribute('data-start')), end = Date.parse(box.getAttribute('data-end'));
+    var tick = function () {
+      var now = Date.now(), until = now < start ? start : end, left = until - now;
+      if (!(left > 0) || isNaN(until)) { clock.textContent = T('The campaign has ended'); clock.hidden = false; return; }
+      var d = Math.floor(left / 864e5), h = Math.floor(left / 36e5) % 24, m = Math.floor(left / 6e4) % 60, s2 = Math.floor(left / 1e3) % 60;
+      clock.textContent = (now < start ? T('Starts in') : T('Ends in')) + ' ' + (d ? d + T('d') + ' ' : '') + h + T('h') + ' ' + m + T('m') + ' ' + s2 + T('s');
+      clock.hidden = false; setTimeout(tick, 1000);
+    };
+    tick();
+    campaignData(slug).then(function (d) {
+      if (!d) return;
+      var raised = team ? (d.teams[team] || 0) : d.raised, donors = team ? d.wall.filter(function (w) { return w.team === team; }).length : d.donors;
+      var target = bonus && raised >= goal ? bonus : goal, pct = target ? Math.min(100, Math.round(raised / target * 100)) : 0;
+      q('[data-c-raised]').textContent = usd(raised); q('[data-c-donors]').textContent = donors; var dw = q('[data-c-donors-word]'); if (dw && donors === 1) dw.textContent = dw.getAttribute('data-one');
+      q('[data-c-pct]').textContent = (goal ? Math.round(raised / goal * 100) : 0) + '%';
+      q('[data-c-bar]').style.width = pct + '%'; q('.cmp-bar').setAttribute('aria-valuenow', pct);
+      if (bonus && raised >= goal) q('[data-c-bonus]').hidden = false;
+    });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-wall]'), function (ul) {
+    var slug = (document.querySelector('[data-campaign]') || {}).getAttribute && document.querySelector('[data-campaign]').getAttribute('data-campaign');
+    var team = document.querySelector('[data-campaign][data-team]'), teamSlug = team && team.getAttribute('data-team');
+    var search = document.querySelector('[data-wall-search]'), sort = document.querySelector('[data-wall-sort]'), all = [];
+    var draw = function () {
+      var words = (search && search.value || '').toLowerCase(), list = all.filter(function (w) { return !words || (w.name || '').toLowerCase().indexOf(words) >= 0 || (w.message || '').toLowerCase().indexOf(words) >= 0; });
+      if (sort && sort.value === 'largest') list = list.slice().sort(function (a, b) { return (b.cents || 0) - (a.cents || 0); });
+      ul.textContent = '';
+      list.slice(0, 120).forEach(function (w) {
+        var li = document.createElement('li'), top = document.createElement('p'), b = document.createElement('b');
+        b.textContent = w.name || ul.getAttribute('data-anon'); top.appendChild(b);
+        if (w.cents != null) { var a = document.createElement('span'); a.className = 'amt'; a.textContent = usd(w.cents / 100) + (w.months ? ' ' + ul.getAttribute('data-monthly').replace('{n}', w.months) : ''); top.appendChild(a); }
+        li.appendChild(top);
+        [w.dedication, w.message].forEach(function (x) { if (x) { var p2 = document.createElement('p'); p2.className = 'small'; p2.textContent = x; li.appendChild(p2); } });
+        ul.appendChild(li);
+      });
+      if (!list.length && all.length) { var li2 = document.createElement('li'); li2.className = 'muted'; li2.textContent = '—'; ul.appendChild(li2); }
+    };
+    if (search) search.addEventListener('input', draw); if (sort) sort.addEventListener('change', draw);
+    if (slug) campaignData(slug).then(function (d) { if (!d || !d.wall.length) return; all = teamSlug ? d.wall.filter(function (w) { return w.team === teamSlug; }) : d.wall; if (all.length) draw(); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-team-card]'), function (card) {
+    var slug = document.querySelector('[data-campaign]').getAttribute('data-campaign'), id = card.getAttribute('data-team-card'), goal = +card.getAttribute('data-goal') || 0;
+    campaignData(slug).then(function (d) { if (!d) return; var n = d.teams[id] || 0; card.querySelector('[data-team-raised]').textContent = usd(n); card.querySelector('.cmp-bar i').style.width = (goal ? Math.min(100, n / goal * 100) : 0) + '%'; });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-left]'), function (el2) {
+    var slug = document.querySelector('[data-campaign]').getAttribute('data-campaign');
+    campaignData(slug).then(function (d) { if (!d) return; var left = Math.max(0, +el2.getAttribute('data-quantity') - (d.levels[el2.getAttribute('data-left')] || 0)); el2.textContent = left ? T('{n} available', { n: left }) : T('All taken: thank you!'); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-campaign-confirm]'), function (el2) {
+    var sid = el2.getAttribute('data-campaign-confirm'); if (!sid) return;
+    fetch('/api/campaign/confirm', { method: 'POST', credentials: 'omit', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ session_id: sid }) }).catch(function () {});
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('form[data-campaign-give]'), function (f) {
+    var err = f.querySelector('.give-err'), btn = f.querySelector('button[type=submit]'), other = f.elements.other, x = +f.getAttribute('data-multiplier') || 1, matchLine = f.querySelector('[data-c-matchline]');
+    var fail = function (m, at) { err.textContent = m; err.hidden = false; if (at && at.focus) at.focus(); };
+    var amount = function () { var pick = f.querySelector('input[name=amt]:checked'); return Number(other.value ? other.value : pick ? pick.value : 0); };
+    var months = function () { var m = f.querySelector('input[name=months]:checked'); return m ? +m.value : 1; };
+    var update = function () {
+      var a = amount();
+      Array.prototype.forEach.call(f.querySelectorAll('[data-per]'), function (s2) { s2.textContent = a >= 1 ? '(' + T('{amount} a month', { amount: (function (m) { return '$' + m.toLocaleString('en-US', { minimumFractionDigits: m % 1 ? 2 : 0, maximumFractionDigits: 2 }); })(Math.ceil(a / +s2.getAttribute('data-per') * 100) / 100) }) + ')' : ''; });
+      if (matchLine) { matchLine.hidden = !(x > 1 && a >= 1); matchLine.textContent = T('With matching, your {gift} becomes {total}!', { gift: usd(a), total: usd(a * x) }); }
+    };
+    other.addEventListener('input', function () { if (other.value) Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.checked = false; }); update(); });
+    Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.addEventListener('change', function () { other.value = ''; update(); }); });
+    if (f.elements.level) f.elements.level.addEventListener('change', function () { var o = f.elements.level.selectedOptions[0], a = o && +o.getAttribute('data-amount'); if (a) { other.value = a; Array.prototype.forEach.call(f.querySelectorAll('input[name=amt]'), function (r) { r.checked = +r.value === a; if (r.checked) other.value = ''; }); update(); } });
+    if (f.elements.anonymous) f.elements.anonymous.addEventListener('change', function () { f.elements.name.disabled = f.elements.anonymous.checked; });
+    update();
+    // The floating Donate button (phones) steps aside while the form itself is on screen.
+    var sticky = document.querySelector('.cmp-sticky');
+    if (sticky && window.IntersectionObserver) new IntersectionObserver(function (es) { sticky.hidden = es[0].isIntersecting; }).observe(f);
+    f.addEventListener('submit', function (e) {
+      e.preventDefault(); err.hidden = true;
+      var a = amount(), n = months();
+      if (!(a >= 1 && a <= (n > 1 ? 250000 : 100000))) return fail(n > 1 ? T('Please enter an amount between $1 and $250,000.') : T('Please enter an amount between $1 and $100,000. For a larger gift, choose monthly payments or call us.'), other);
+      if (n > 1 && a / n < 5) return fail(T('Each monthly payment needs to be at least $5.'), other);
+      var body = { campaign: f.getAttribute('data-campaign-give'), amount: a, months: n, level: f.elements.level ? f.elements.level.value : '', team: f.elements.team ? f.elements.team.value : '', name: f.elements.name.value.trim(), anonymous: f.elements.anonymous.checked, hideAmount: f.elements.hideAmount.checked, dedication: f.elements.dedication.value, message: f.elements.message.value, fee: f.elements.fee.checked, lang: LANG, idem: 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
+      btn.disabled = true; btn.textContent = T('Opening secure checkout…');
+      fetch('/api/campaign/checkout', { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, status: r.status, j: j }; }); })
+        .then(function (r) {
+          if (r.ok && r.j.url) { if (window.gtag) window.gtag('event', 'begin_checkout', { value: a, currency: 'USD' }); location.href = r.j.url; return; }
+          throw new Error(r.status === 503 ? T('Online giving is opening soon. Please call 925-384-7242, or see other ways to give below.') : (r.j.error || T('Something went wrong. Please try again.')));
+        })
+        .catch(function (e2) { btn.disabled = false; btn.textContent = T('Continue to secure payment'); fail(e2.message && e2.message !== 'Failed to fetch' ? e2.message : T('Something went wrong. Please try again.')); });
+    });
+  });
   // The Chai Club honor board (/chai-club): each listed partner under their level, with that level's medal; counts per level.
   Array.prototype.forEach.call(document.querySelectorAll('[data-club-board]'), function (box) {
     fetch('/api/club', { credentials: 'omit' }).then(function (r) { return r.json(); }).then(function (d) {

@@ -20,7 +20,7 @@ const LOCALE = { en: 'en-US', he: 'he-IL', ru: 'ru-RU' };
 const RTL = new Set(['he']);
 const FAQ_HEADING = { en: 'Common questions', he: 'שאלות נפוצות', ru: 'Частые вопросы' };
 // Fields that are keys or data, never translated (a translator's copy of these is ignored).
-const KEEP = new Set(['art', 'theme', 'featured', 'album', 'photos', 'slug', 'id', 'url', 'link', 'lat', 'lng', 'tier', 'start', 'end', 'category', 'holiday', 'program', 'image', 'flyer', 'rsvp', 'status', 'geo', 'phone', 'email', 'social', 'donateUrl', 'chapters', 'fund', 'amount', 'kind', 'related', 'order', 'urgent', 'icon', 'online', 'priceAmount', 'miles', 'address', 'staff', 'areaServed', 'alternateNames', 'name_en', 'type', 'required', 'rows', 'columns', 'min', 'max', 'amountEach', 'perChild', 'optional', 'levels', 'amounts', 'program', 'byDay', 'startTime', 'endTime', 'kabbalatShabbat']);
+const KEEP = new Set(['video', 'goal', 'bonusGoal', 'months', 'multiplier', 'cap', 'quantity', 'art', 'theme', 'featured', 'album', 'photos', 'slug', 'id', 'url', 'link', 'lat', 'lng', 'tier', 'start', 'end', 'category', 'holiday', 'program', 'image', 'flyer', 'rsvp', 'status', 'geo', 'phone', 'email', 'social', 'donateUrl', 'chapters', 'fund', 'amount', 'kind', 'related', 'order', 'urgent', 'icon', 'online', 'priceAmount', 'miles', 'address', 'staff', 'areaServed', 'alternateNames', 'name_en', 'type', 'required', 'rows', 'columns', 'min', 'max', 'amountEach', 'perChild', 'optional', 'levels', 'amounts', 'program', 'byDay', 'startTime', 'endTime', 'kabbalatShabbat']);
 
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { if (e.code === 'ENOENT') return null; throw new Error(`${f}: ${e.message}`); } };
 
@@ -88,6 +88,7 @@ function createI18n(dir) {
       forms: overlay(en.forms || [], j('forms.json')),
       giving: overlay(en.giving || {}, j('giving.json')),
       home: overlay(en.home || {}, j('home.json')),
+      campaigns: overlay(en.campaigns || [], j('campaigns.json')),
       events: en.events.map((e) => (e[lang] ? { ...e, ...Object.fromEntries(Object.entries(e[lang]).filter(([k, v]) => ['title', 'summary', 'details', 'price'].includes(k) && typeof v === 'string' && v.trim())) } : e)),
       pages: md('pages', en.pages),
       holidays: md('holidays', en.holidays),

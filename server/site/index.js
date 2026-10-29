@@ -37,6 +37,7 @@ const { mountForms } = require('./forms.js');
 const { mountGive } = require('./give.js');
 const { mountKiddushPage } = require('./kiddush-page.js');
 const { mountFun } = require('./fun.js');
+const { mountCampaignPages } = require('./campaign-page.js');
 const { mountChat } = require('./chat.js');
 const { mountParsha, mountCalendar, mountDaily } = require('./parsha.js');
 const { mountWeekly } = require('./weekly.js');
@@ -87,7 +88,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   // The site's own security policy: our scripts only (plus Google's tag if GA_ID is set), images from Facebook's CDN.
   const gtag = analytics.ga ? ' https://www.googletagmanager.com' : '';
   const csp = ["default-src 'self'", `script-src 'self'${gtag}`, "style-src 'self' 'unsafe-inline'", "img-src 'self' data: https://*.fbcdn.net https://w2.chabad.org" + (analytics.ga ? ' https://www.google-analytics.com https://www.googletagmanager.com' : ''),
-    "connect-src 'self'" + (analytics.ga ? ' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com' : ''), "font-src 'self'", "frame-src 'self'", "object-src 'none'", "base-uri 'self'", "form-action 'self'", "frame-ancestors 'none'"].join('; ');
+    "connect-src 'self'" + (analytics.ga ? ' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com' : ''), "font-src 'self'", "frame-src 'self' https://www.youtube-nocookie.com", "object-src 'none'", "base-uri 'self'", "form-action 'self'", "frame-ancestors 'none'"].join('; ');
   app.use((req, res, next) => { if (!/^\/(?:pushka|kiddush|board|admin|api)(?:\/|$)/.test(req.path)) res.setHeader('Content-Security-Policy', csp); next(); });
 
   // Extra domains (jewishlamorinda.org...) forward to the main address, keeping the page.
@@ -122,6 +123,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountGive(r, { render: pages.render, wrap, ctxOf });
   mountKiddushPage(r, { render: pages.render, wrap, ctxOf });
   mountFun(r, { render: pages.render, wrap, ctxOf });
+  mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base });
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   mountMitzvah(app, r, { store, render: pages.render, wrap, ctxOf, limit, base, log });
