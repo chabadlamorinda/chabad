@@ -12,7 +12,7 @@
 // * Nothing is stored about card details; the donor wall shows only what the donor chose to show.
 'use strict';
 const crypto = require('crypto');
-const { withOffset } = require('./site/content.js');
+const { withOffset } = require('./time.js');
 
 const MAX_TOTAL = 100000000;  // $1,000,000 for a whole gift paid over time
 const MAX_ONCE = 25000000;    // $250,000 in one online payment
@@ -56,10 +56,11 @@ async function teamsOf(store, c) {
 }
 
 function createCampaigns({ stripe, store, content, log = console, clean, HttpError, ensureProduct, FUND_NAMES, FEE_RATE, siteEnv = process.env, mailer = null }) {
-  const list = () => (content().campaigns || []);
+  const site = () => (content && content()) || {}; // the kit has no website content
+  const list = () => site().campaigns || [];
   const find = (slug) => list().find((c) => c.slug === slug);
   const cache = new Map();
-  const notify = (subject, text) => { const to = siteEnv.ADMIN_EMAIL || content().org.email; if (mailer && to) mailer.send({ to, subject, text }).catch((e) => log.error('campaign mail:', e && e.message)); };
+  const notify = (subject, text) => { const to = siteEnv.ADMIN_EMAIL || (site().org || {}).email; if (mailer && to) mailer.send({ to, subject, text }).catch((e) => log.error('campaign mail:', e && e.message)); };
   const siteBase = (req) => { const configured = String(siteEnv.PUBLIC_URL || '').replace(/\/+$/, ''); return /^https:\/\/[^/\s]+$/.test(configured) ? configured : req.protocol + '://' + req.get('host'); };
 
   // A split gift: stop the plan after its last payment (done when the donor returns, and again whenever totals are read).
@@ -191,7 +192,7 @@ function createCampaigns({ stripe, store, content, log = console, clean, HttpErr
       await store.setKv(ambKey(c.slug), [...all, t]);
       const lang = ['he', 'ru'].includes(b.lang) ? b.lang : 'en', pre = lang === 'en' ? '' : '/' + lang, page = siteBase(req) + pre + '/campaign/' + c.slug + '/' + slug;
       notify(`New ambassador page for ${c.title}: ${name}`, `${name} <${email}>${t.phone ? ' ' + t.phone : ''} opened a fundraising page with a goal of $${goal.toLocaleString('en-US')}:\n${page}\n\n${t.message}\n\nTo hide it, open the Rabbi area, Campaign section.`);
-      if (mailer) mailer.send({ to: email, subject: `Your page for ${c.title} is ready`, text: `Thank you for raising money for ${c.title}!\n\nYour page: ${page}\nShare it with friends and family by WhatsApp, text and email.\n\nTo change your goal or your words later (keep this link private):\n${page}/edit?k=${token}\n\n${content().org.name}` }).catch(() => {});
+      if (mailer) mailer.send({ to: email, subject: `Your page for ${c.title} is ready`, text: `Thank you for raising money for ${c.title}!\n\nYour page: ${page}\nShare it with friends and family by WhatsApp, text and email.\n\nTo change your goal or your words later (keep this link private):\n${page}/edit?k=${token}\n\n${(site().org || {}).name || ''}` }).catch(() => {});
       res.json({ ok: true, url: pre + '/campaign/' + c.slug + '/' + slug + '?welcome=1&k=' + token });
     }));
     // The ambassador changes their goal or words (with the private link).

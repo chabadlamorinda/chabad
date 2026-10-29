@@ -176,6 +176,7 @@ test('website giving: Stripe checkout once or monthly, Chai Club details for the
 
 test('campaigns: one payment, or monthly or yearly payments that stop by themselves; totals and the donor wall', async (t) => {
   const c = await start(); t.after(c.close);
+  if (!c.app.locals.site.content) return t.skip('the shareable kit has no website');
   const { lastPaymentEnd, withMatch } = require('./campaign.js');
   const data = c.app.locals.site.content();
   data.campaigns.push({ slug: 'test-drive', title: 'Test Drive', goal: 10000, start: '2020-01-01', end: '2099-12-31', fund: 'building', months: [12, 24], years: [3], matching: { multiplier: 2, cap: 1000 }, teams: [{ slug: 'levis', name: 'The Levis', goal: 2000 }], levels: [{ id: 'room', title: 'A room', amount: 1800, quantity: 2 }] });
