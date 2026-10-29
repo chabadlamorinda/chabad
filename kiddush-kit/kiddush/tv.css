@@ -122,17 +122,11 @@ html.he .events{text-align:right}
 .p-qr .q2h,.p-qr .q2p{font-family:"Oswald",sans-serif;font-weight:600;font-size:calc(var(--u)*2.3);white-space:nowrap;max-width:100%;overflow:hidden;color:#33200a}
 .p-qr .q2p{font-size:calc(var(--u)*2.6);font-weight:700}
 
-/* small gold clock, right above "This week's Kiddush" on the plate (a deeper gold so it reads on the gold plate) */
+/* small gold clock, right above the QR code on the plate (a deeper gold so it reads on the gold plate) */
 .clock{font-family:"Cinzel","Oswald",serif;font-weight:700;font-size:calc(var(--u)*2.7);line-height:1;letter-spacing:.05em;white-space:nowrap;margin-bottom:calc(var(--u)*.5);
   color:#7a5410;text-shadow:0 1px 0 rgba(255,244,190,.85)}
 
-/* room for the clock on the plate */
-.plate{height:calc(var(--u)*38)}
-.plate.tall{height:calc(var(--u)*41.5)}
-.mark{height:calc(var(--u)*7)}
-.title{font-size:calc(var(--u)*6.2)}
-.year{font-size:calc(var(--u)*5.2)}
-.plate-in{inset:calc(var(--u)*1.2) calc(var(--u)*3.4)}
-.p-rule{margin:calc(var(--u)*.7) 0}
-.clock{font-size:calc(var(--u)*2.4);margin-bottom:calc(var(--u)*.3)}
-.p-lbl{font-size:calc(var(--u)*1.7)}
+/* a little extra height on the plate for the clock above the QR code */
+.plate{height:calc(var(--u)*34.5)}
+.plate.tall{height:calc(var(--u)*38)}
+.clock{font-size:calc(var(--u)*2.4);margin-bottom:calc(var(--u)*.5)}

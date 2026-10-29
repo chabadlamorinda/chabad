@@ -57,7 +57,6 @@
     if (!s) { box.appendChild(el('div', 'loading', T('See you at the next Kiddush'))); return; }
     var days = Math.round((new Date(s.date + 'T12:00:00') - new Date(b.today + 'T12:00:00')) / 864e5);
     var main = el('div', 'p-main');
-    main.appendChild(el('div', 'clock', '')); // the clock sits right above the "This week's Kiddush" label
     main.appendChild(el('div', 'p-lbl', days <= 7 ? (s.kind === 'shabbat' ? T('THIS WEEK’S KIDDUSH') : T('THIS KIDDUSH')) : T('NEXT KIDDUSH')));
     main.appendChild(el('div', 'p-name', KI.title(s)));
     var d = el('div', 'p-date');
@@ -78,9 +77,11 @@
     (s.notes || []).forEach(function (n) { main.appendChild(el('div', 'p-note', KI.note(n))); }); // this week's notes go last, after the sponsors
     box.appendChild(main);
     var sh = shareAddress(b.settings), url = sh.url || (sh.base + '/kiddush/?w=' + encodeURIComponent(s.key));
-    var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url); qr.appendChild(q);
+    var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url);
+    qr.appendChild(el('div', 'clock', '')); // the clock sits right above the QR code
+    qr.appendChild(q);
     qr.appendChild(el('div', 'q1', sps.length ? T('SPONSOR A KIDDUSH') : T('SCAN TO SPONSOR')));
-    var q2 = el('div', 'q2'), cut = sh.label.indexOf('/'); // address on two lines (site, then path) so it never breaks mid-word
+    var q2 = el('div', 'q2'), cut = sh.label.indexOf('/'); q2.dir = 'ltr'; // web addresses always read left to right // address on two lines (site, then path) so it never breaks mid-word
     q2.appendChild(el('div', 'q2h', cut > 0 ? sh.label.slice(0, cut) : sh.label)); if (cut > 0) q2.appendChild(el('div', 'q2p', sh.label.slice(cut)));
     qr.appendChild(q2);
     box.appendChild(qr);
