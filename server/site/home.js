@@ -121,6 +121,7 @@ ${H.story ? `<section class="wrap sec"><div class="story">
     <a href="/jewish-holidays-${today.slice(0, 4)}">${artImg('calendar')}<span>${esc(t('Jewish holidays this year'))}</span></a>
     <button type="button" data-chat-open>${artImg('chat-bubble')}<span>${esc(t('Ask us anything'))}</span></button>
     <a href="/learn">${artImg('open-book')}<span>${esc(t('Learn about Judaism'))}</span></a>
+    ${nh && nh.slug === 'chanukah' && days <= 45 ? `<a href="/menorah">${artImg('menorah')}<span>${esc(t('Light the menorah'))}</span></a>` : ''}
     ${nh && nh.slug === 'chanukah' && days <= 45 ? `<a href="/dreidel">${artImg('dreidel')}<span>${esc(t('Spin the dreidel'))}</span></a>` : ''}
   </div>
 </section>

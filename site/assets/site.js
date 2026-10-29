@@ -225,6 +225,29 @@
   });
 
   // ---------- Spin the dreidel (/dreidel) ----------
+  // Light the menorah (/menorah): candles 1..N are placed from the right; the shamash first, then the newest (N) down to 1.
+  Array.prototype.forEach.call(document.querySelectorAll('[data-menorah]'), function (g) {
+    var M = JSON.parse(g.querySelector('[data-mn-text]').textContent), msg = g.querySelector('.mn-msg'), night = +g.getAttribute('data-night') || 1, next;
+    var c = function (i) { return g.querySelector('.mn-c[data-i="' + i + '"]'); };
+    var setup = function () {
+      for (var i = 0; i <= 8; i++) { var b = c(i); b.classList.toggle('mn-off', i > night); b.disabled = i > night; b.classList.remove('lit'); }
+      next = 0; msg.textContent = M.shamash;
+      Array.prototype.forEach.call(g.querySelectorAll('.mn-nights .chip'), function (b) { b.classList.toggle('on', +b.getAttribute('data-n') === night); });
+      var first = document.querySelector('.mn-first'); if (first) first.classList.toggle('mn-dim', night > 1);
+    };
+    g.addEventListener('click', function (ev) {
+      var n = ev.target.closest('.mn-nights .chip'); if (n) { night = +n.getAttribute('data-n'); setup(); return; }
+      if (ev.target.closest('[data-mn-reset]')) { setup(); return; }
+      var b = ev.target.closest('.mn-c'); if (!b || b.classList.contains('lit')) return;
+      var i = +b.getAttribute('data-i'), want = next === 0 ? 0 : next;
+      if (i !== want) { msg.textContent = next === 0 ? M.shamash : M.wrong; return; }
+      b.classList.add('lit');
+      next = next === 0 ? night : next - 1;
+      msg.textContent = next === 0 ? M.done : i === 0 ? M.next : M.more;
+      if (next === 0) next = -1;
+    });
+    setup();
+  });
   Array.prototype.forEach.call(document.querySelectorAll('[data-dreidel]'), function (g) {
     var L = []; try { L = JSON.parse(g.querySelector('[data-dr-letters]').textContent); } catch (e) { return; }
     var you = 10, pot = 4, busy = false, d = g.querySelector('.dreidel'), letter = g.querySelector('.dr-letter'), msg = g.querySelector('.dr-msg');

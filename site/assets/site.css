@@ -674,3 +674,25 @@ form.tool .btn.gold { justify-self: start; min-width: 200px; }
 .hb-names li { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px 6px 8px; border-radius: 999px; background: var(--lv2); border: 1px solid var(--line); font-family: var(--serif); font-weight: 600; }
 .hb-quiet, .hb-empty { margin: 10px 0 0; }
 @media (prefers-color-scheme: dark) { .hb-names li, .chai .club-l { background: var(--card); } }
+
+/* Light the menorah (/menorah) */
+.menorah-game { text-align: center; }
+.mn-nights { justify-content: center; margin-bottom: 8px; }
+.mn-nights .chip.on { background: var(--navy); color: #fff; border-color: var(--navy); }
+.mn-stage { padding: 54px 4px 0; }
+.mn-row { display: flex; justify-content: center; align-items: flex-end; gap: clamp(6px, 2.4vw, 16px); min-height: 110px; }
+.mn-c { position: relative; width: clamp(18px, 6vw, 26px); height: 64px; padding: 0; border: 0; border-radius: 4px 4px 2px 2px; cursor: pointer;
+  background: repeating-linear-gradient(135deg, #f7f1e3 0 6px, #e9dcc0 6px 9px); box-shadow: inset 0 0 0 1px #d9c8a3; }
+.mn-c.mn-off { height: 10px; background: var(--line); box-shadow: none; cursor: default; } .mn-c.mn-off::before { display: none; }
+.mn-shamash { height: 92px; background: repeating-linear-gradient(135deg, #fbf3d9 0 6px, #ecd9a6 6px 9px); }
+.mn-c::before { content: ""; position: absolute; left: 50%; top: -7px; width: 2px; height: 7px; background: #4a3b2a; transform: translateX(-50%); }
+.mn-flame { position: absolute; left: 50%; bottom: calc(100% + 6px); width: 16px; height: 26px; transform: translateX(-50%) scale(0); transform-origin: 50% 100%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; background: radial-gradient(circle at 50% 70%, #fff7c2 0 25%, #ffc93c 45%, #ff8a1f 80%); box-shadow: 0 0 18px 6px rgba(255, 190, 60, .55); transition: transform .35s ease-out; }
+.mn-c.lit .mn-flame { transform: translateX(-50%) scale(1); animation: mn-flicker 1.6s ease-in-out infinite alternate; }
+@keyframes mn-flicker { 0% { transform: translateX(-50%) scale(1) rotate(-2deg); } 100% { transform: translateX(-50%) scale(1.06, .96) rotate(2deg); } }
+@media (prefers-reduced-motion: reduce) { .mn-c.lit .mn-flame { animation: none; } }
+.mn-base { height: 12px; margin: 0 auto; width: min(100%, 380px); border-radius: 0 0 40px 40px; background: linear-gradient(var(--gold-2), var(--gold)); }
+.mn-msg { min-height: 3em; margin: 14px 0 4px; font-size: 1.05rem; }
+.mn-tonight { font-size: 1.1rem; background: var(--soft); border-radius: var(--r); padding: 12px 16px; }
+.mn-bless .he { font-size: 1.35rem; line-height: 1.7; margin: 0; }
+.mn-bless.mn-dim { opacity: .55; }

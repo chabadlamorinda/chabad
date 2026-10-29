@@ -66,7 +66,7 @@ Things only the Rabbi can do (Render settings, accounts, launch) are in `store/r
 3. Tell the Rabbi in one or two sentences what changed and the page address.
 
 ## Look and feel
-Warm and personal, not corporate: cream paper colors, Lora headings, small handwritten touches in Caveat (`.hand`, eyebrows), and real photos everywhere. Free photos (Pexels, see `site/media/photos/CREDITS.md`) are only for atmosphere and are never captioned as our community; real community photos come from Facebook or the Rabbi and always win. Fun things to play live in `server/site/fun.js` (`/dreidel`).
+Warm and personal, not corporate: cream paper colors, Lora headings, small handwritten touches in Caveat (`.hand`, eyebrows), and real photos everywhere. Free photos (Pexels, see `site/media/photos/CREDITS.md`) are only for atmosphere and are never captioned as our community; real community photos come from Facebook or the Rabbi and always win. Fun things to play live in `server/site/fun.js` (`/dreidel`, and `/menorah`: light tonight's Chanukah candles in order, with the blessings and a countdown before Chanukah).
 
 ## Facts and wording
 * Only publish facts the Rabbi gave or that already appear in the content. Never invent dates, prices, names or quotes; ask.
