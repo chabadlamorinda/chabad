@@ -32,3 +32,5 @@ html.light body{background-image:none;color:#5e2f1a;cursor:none}
 .light .tbody>div{overflow:hidden;text-overflow:ellipsis}
 .light .tile{overflow:hidden}
 :root{color-scheme:light only}
+
+.light .clock{color:#a87a1a;text-shadow:0 1px 0 rgba(255,244,190,.9)}

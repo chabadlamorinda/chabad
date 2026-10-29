@@ -174,8 +174,17 @@
     var nm = d.querySelector('.donor-name'); if (nm) fit(nm, .5);
   }
 
+  // Small gold clock in the corner of the centre column (in the shul's time zone once the board has loaded; the TV's own clock until then).
+  function tickClock() {
+    var n = $('clock'); if (!n) return;
+    var tz = board && board.settings && board.settings.timezone, opts = { hour: 'numeric', minute: '2-digit', hour12: !KI.he };
+    try { if (tz) opts.timeZone = tz; n.textContent = new Intl.DateTimeFormat(KI.he ? 'he-IL' : 'en-US', opts).format(new Date()); }
+    catch (e) { n.textContent = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }); }
+  }
+  tickClock(); setInterval(tickClock, 5000);
+
   function render(b) {
-    board = b;
+    board = b; tickClock();
     $('yearNum').textContent = KI.he ? '' : b.year; $('yearHe').textContent = b.yearHe; $('year').querySelector('.dash').style.display = KI.he ? 'none' : '';
     var s = b.settings, ol = KI.orgLines(s);
     $('orgL1').textContent = ol[0]; $('orgL2').textContent = ol[1]; document.title = (KI.he ? 'תורמי הקידוש' : 'Kiddush Sponsors') + (KI.org(s) ? ' — ' + KI.org(s) : '');
