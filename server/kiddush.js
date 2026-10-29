@@ -45,6 +45,7 @@ const dedicationText = (kind, text) => (text ? (KINDS[kind] ? KINDS[kind] + ' ' 
 
 const MAX_REMINDERS = 3;
 // The address shown on the TV and in its QR code unless Staff > Settings says otherwise.
+const TIMEZONE = 'America/Los_Angeles'; // Lafayette, CA (the clock on the TV)
 const SHARE_DEFAULT = 'https://chabadoflamorinda.com/kiddush';
 
 function createKiddush({ store, stripe, log = console, now = () => new Date(), mailer = null }) {
@@ -168,7 +169,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     return {
       orgName: st.orgName, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
-      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl || SHARE_DEFAULT, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
+      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl || SHARE_DEFAULT, timezone: TIMEZONE, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,
     };
   }

@@ -121,3 +121,9 @@ html.he .events{text-align:right}
 .p-qr .q2{word-break:normal;opacity:1;margin-top:calc(var(--u)*.5);line-height:1.15}
 .p-qr .q2h,.p-qr .q2p{font-family:"Oswald",sans-serif;font-weight:600;font-size:calc(var(--u)*2.3);white-space:nowrap;max-width:100%;overflow:hidden;color:#33200a}
 .p-qr .q2p{font-size:calc(var(--u)*2.6);font-weight:700}
+
+/* small gold clock, top corner of the centre column */
+.center{position:relative}
+.clock{position:absolute;top:calc(var(--u)*.6);right:calc(var(--u)*.4);font-family:"Cinzel","Oswald",serif;font-weight:700;font-size:calc(var(--u)*3.2);line-height:1;letter-spacing:.04em;white-space:nowrap;
+  color:#e0bc5a;text-shadow:0 calc(var(--u)*.12) calc(var(--u)*.3) rgba(0,0,0,.5)}
+html.he .clock{right:auto;left:calc(var(--u)*.4)}
