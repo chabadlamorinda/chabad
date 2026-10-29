@@ -16,14 +16,33 @@
     app.textContent = '';
     app.appendChild(el('h1', { text: 'Rabbi’s desk' }));
     app.appendChild(el('div', { class: 'small', text: 'Chabad of Lamorinda · private' }));
+    app.appendChild(waitingCard());
     var nav = el('nav');
     [['donors', 'Monthly donors'], ['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['announce', 'Announcements'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
       nav.appendChild(el('button', { class: tab === t[0] ? 'on' : '', text: t[1], onclick: function () { tab = t[0]; load(); } }));
     });
     nav.appendChild(el('a', { href: '/admin/kiddush/', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Kiddush board' }));
-    nav.appendChild(el('a', { href: '/admin/community', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Website: RSVPs & birthdays' }));
+    nav.appendChild(el('a', { href: '/admin/community', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Website: requests, sign-ups, RSVPs' }));
     nav.appendChild(el('button', { text: 'Sign out', onclick: function () { api('POST', '/logout').then(function () { login(); }); } }));
     app.appendChild(nav); app.appendChild(body);
+  }
+  // "Waiting for you": one tappable line per thing waiting on the website (counted by waiting.js), each opening its
+  // section on the Website community page. Built once per visit; hidden where the website part is not installed.
+  var waitBox = null;
+  function waitingCard() {
+    if (waitBox) return waitBox;
+    var list = el('div'), slots = (window.WAITING || []).map(function () { return list.appendChild(el('div')); }), left = slots.length, any = false;
+    waitBox = el('div', { class: 'card waiting' }, [el('h2', { text: 'Waiting for you' }), list, el('a', { class: 'big', href: '/admin/community', text: 'Open the website area ›' })]);
+    if (!left) { waitBox.hidden = true; return waitBox; }
+    (window.WAITING || []).forEach(function (w, i) {
+      fetch('/admin/api' + w.path, { credentials: 'same-origin', headers: { 'x-admin': '1' } }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (j) {
+        if (j) { any = true; var n = w.count(j); if (n) slots[i].appendChild(el('a', { class: 'wait-row', href: '/admin/community#' + w.id }, [el('b', { text: String(n) }), ' ' + (n === 1 ? w.one : w.many), el('span', { text: '›' })])); }
+        if (--left) return;
+        if (!any) waitBox.hidden = true;
+        else if (!list.querySelector('a')) list.appendChild(el('p', { class: 'small', text: 'Nothing waiting right now.' }));
+      });
+    });
+    return waitBox;
   }
   function login(msg) {
     app.textContent = '';

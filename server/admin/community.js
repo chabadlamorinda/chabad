@@ -20,9 +20,9 @@
   function copy(text, btn) { (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(function () { var t = btn.textContent; btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = t; }, 1500); }, function () { prompt('Copy this:', text); }); }
   // Each section folds away; a sticky row of buttons at the top jumps to it and shows how many items wait there.
   // Sections with something waiting for the Rabbi open by themselves.
-  var jump = el('nav', { class: 'jump' }), nSec = 0;
+  var jump = el('nav', { class: 'jump' }), nSec = 0, W = window.WAITING_BY_ID; // ids: the short names, so /admin/community#requests opens that section
   function section(title, note, short) {
-    var id = 's' + (++nSec), badge = el('span', { class: 'cnt' }), chipBadge = el('b', { class: 'cnt' });
+    var id = String(short || 's' + (++nSec)).toLowerCase().replace(/[^a-z0-9]+/g, '-'), badge = el('span', { class: 'cnt' }), chipBadge = el('b', { class: 'cnt' });
     var d = el('details', { class: 'sec', id: id }, [el('summary', {}, [el('h2', { text: title }), badge])]), body = el('div', { class: 'sec-b' });
     if (note) body.appendChild(el('p', { class: 'small', text: note }));
     d.appendChild(body); app.appendChild(d);
@@ -50,7 +50,7 @@
     var sr = section('Requests from the website', 'People who tapped Call, Text, WhatsApp or Email, or asked the chat, about a mezuzah, tefillin, giving, meeting you or a private conversation. Each one is also emailed to you as it happens; the call or message itself goes straight to your phone.', 'Requests');
     api('GET', '/site/leads').then(function (x) {
       if (x._status !== 200 || !x.items || !x.items.length) { sr.appendChild(el('p', { class: 'small', text: 'None yet.' })); return; }
-      sr.count(x.items.filter(function (i) { return Date.now() - new Date(i.created_at) < 7 * 864e5; }).length, true);
+      sr.count(W['requests'](x), true);
       var NAME = { mezuzah: 'Mezuzah', tefillin: 'Tefillin', donation: 'Giving', meeting: 'Meeting', consult: 'Private conversation' }, HOW = { call: 'tapped Call', text: 'tapped Text', email: 'tapped Email', whatsapp: 'tapped WhatsApp', chat: 'asked the chat' };
       x.items.slice(0, 60).forEach(function (i) {
         sr.appendChild(el('div', { class: 'card' }, [el('strong', { text: NAME[i.topic] || i.topic }), el('span', { class: 'pill', text: HOW[i.channel] || i.channel }), i.lang !== 'en' ? el('span', { class: 'pill', text: i.lang }) : null,
@@ -64,7 +64,7 @@
       if (x._status !== 200) { sv.appendChild(el('p', { class: 'small', text: 'Needs the database (DATABASE_URL).' })); return; }
       sv.appendChild(el('p', { class: 'small' }, [el('strong', { text: x.week.visitors + ' visitors this week. ' }), x.week.interests.slice(0, 8).map(function (i) { return i.label + ': ' + i.n; }).join(' · ')]));
       if (!x.items.length) { sv.appendChild(el('p', { class: 'small', text: 'No one has left their details yet.' })); return; }
-      sv.count(x.items.filter(function (p) { return p.hot; }).length, true);
+      sv.count(W['visitors'](x), true);
       x.items.forEach(function (p) {
         var digits = String(p.phone || '').replace(/\D/g, ''), tel = digits.length === 10 ? '1' + digits : digits, pages = el('div', { class: 'small', hidden: 'hidden' }, p.pages.map(function (v) { return el('div', { text: v.day + '  ' + v.path }); }));
         sv.appendChild(el('div', { class: 'card' + (p.hot ? ' hot' : '') }, [
@@ -90,7 +90,7 @@
     api('GET', '/site/outreach').then(function (o) {
       if (o._status !== 200) { so.appendChild(el('p', { class: 'small', text: 'Not available yet (the database is not connected).' })); return; }
       if (!o.items.length) { so.appendChild(el('p', { class: 'small', text: 'Nothing for now. As families sign in, save dates and come to events, suggestions appear here.' })); return; }
-      so.count(o.items.length, true);
+      so.count(W['reach-out'](o), true);
       o.items.forEach(function (i) { person(i, so); });
     });
 
@@ -146,7 +146,7 @@
     api('GET', '/site/submissions').then(function (x) {
       if (x._status !== 200) { s2.appendChild(el('p', { class: 'small', text: 'Needs the database (DATABASE_URL).' })); return; }
       if (!x.items.length) s2.appendChild(el('p', { class: 'small', text: 'Nothing new.' }));
-      s2.count(x.items.filter(function (i) { return i.status === 'new' || i.status === 'pending'; }).length, true);
+      s2.count(W['approve'](x), true);
       x.items.forEach(function (i) {
         var st = el('span', { class: 'pill', text: i.status });
         var set = function (status) { api('POST', '/site/submissions/' + i.id, { status: status }).then(function (r) { if (r.ok) st.textContent = status; }); };
@@ -159,7 +159,7 @@
     var sf = section('Sign-ups, registrations and orders', 'Everything people filled in on the website. New ones are marked; download any list as a spreadsheet.', 'Sign-ups');
     api('GET', '/site/forms').then(function (x) {
       if (x._status !== 200) { sf.appendChild(el('p', { class: 'small', text: 'Needs the database (DATABASE_URL).' })); return; }
-      sf.count(x.forms.reduce(function (a, f) { return a + (f.fresh || 0); }, 0), true);
+      sf.count(W['sign-ups'](x), true);
       x.forms.forEach(function (f) {
         var list = el('div');
         var flat = function (v) { return Array.isArray(v) ? v.map(function (r) { return typeof r === 'object' ? Object.values(r).filter(Boolean).join(' / ') : r; }).join('; ') : v === true ? 'yes' : v === false ? '' : (v == null ? '' : v); };
@@ -213,5 +213,9 @@
         s4.appendChild(el('div', { class: 'card' }, [el('strong', { text: day(i.date) + ' · ' + i.name }), el('span', { class: 'small', text: ' ' + what + (i.relation && i.relation !== 'self' ? ' · ' + i.relation + ' of ' + i.family : '') }), el('div', { class: 'small', text: [i.email, i.phone].filter(Boolean).join(' · ') })]));
       });
     });
+
+    // Opened from a link on the Rabbi's desk (/admin/community#requests...): open that section and go to it.
+    var target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target && target.tagName === 'DETAILS') { target.open = true; target.scrollIntoView(); }
   });
 })();

@@ -23,3 +23,9 @@ details.sec>summary h2{font-weight:400;font-size:20px;margin:0}
 details.sec>summary::after{content:"▾";color:#7d5411}details.sec[open]>summary::after{content:"▴"}
 details.sec>summary .cnt:not(:empty){margin-inline-start:auto;font-family:system-ui,sans-serif;font-size:13px;background:#b68235;color:#fff;border-radius:999px;padding:2px 9px}
 .sec-b{padding:0 16px 14px}.sec-b>.card{background:#fbfaf9}
+/* Rabbi's desk: "Waiting for you" */
+.waiting h2{font-weight:400;font-size:20px;margin:0 0 6px}
+.wait-row{display:flex;align-items:center;gap:10px;padding:12px 4px;border-bottom:1px solid #eee9e3;color:#201f1d;text-decoration:none;font-size:17px}
+.wait-row b{font-family:system-ui,sans-serif;background:#b68235;color:#fff;border-radius:999px;padding:2px 10px;font-size:15px}
+.wait-row span{margin-inline-start:auto;color:#7d5411;font-size:22px}
+.waiting a.big{display:block;text-align:center;margin-top:10px;padding:12px;border-radius:9px;background:#fff3e4;border:1px solid #b68235;color:#7d5411;text-decoration:none}
