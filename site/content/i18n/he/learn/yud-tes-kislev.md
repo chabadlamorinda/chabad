@@ -2,7 +2,7 @@
 title: י״ט כסלו: ראש השנה לחסידות
 description: מה חוגגים בי״ט כסלו, סיפור מאסרו ושחרורו של אדמו״ר הזקן, ואיך מציינים אותו בהתוועדויות ובלימוד תורה.
 category: Shabbat & holidays
-related: chassidus, tanya, chabad, chabad-rebbes
+related: chassidus, yud-kislev, tanya, chabad, chabad-rebbes
 local: רוצים להצטרף להתוועדות או ללמוד תניא בלאפייט? התקשרו לרב ישראל לבקובסקי 925-384-7242 או ראו chabadoflamorinda.com/programs/adult-education.
 ---
 י״ט בכסלו הוא יום שמחה לקהילות חב״ד בכל מקום. הוא נקרא **ראש השנה לחסידות**, "השנה החדשה" של תורת החסידות, ומציינים אותו בהתוועדויות, בשירה ובלימוד תורה.

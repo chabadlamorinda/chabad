@@ -2,7 +2,7 @@
 title: Caring for a Loved One: Jewish Strength for Caregivers
 description: Caring for a sick spouse, parent or child: the mitzvah you are doing, avoiding burnout, asking for help, prayer, and support from the community.
 category: Life cycle
-related: caring-for-aging-parents, when-a-loved-one-is-dying, bikur-cholim, mi-sheberach, mental-health-jewish-view
+related: caring-for-aging-parents, when-a-parent-has-dementia, when-a-loved-one-is-dying, bikur-cholim, mi-sheberach, mental-health-jewish-view
 local: Caregivers in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel or Rebbetzin Tzipora Labkowski for support, a visit or a prayer, 925-384-7242.
 ---
 Caring for someone you love who is ill, disabled or aging is one of the greatest acts of kindness, and one of the most exhausting. If you are a caregiver, this guide is for you.

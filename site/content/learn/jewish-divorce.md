@@ -2,7 +2,7 @@
 title: Jewish Divorce and the Get: A Gentle Guide
 description: What a get is, why a Jewish divorce is needed even after a civil divorce, how the process works through a Beth Din, and where to find support.
 category: Life cycle
-related: shalom-bayit, jewish-wedding, jewish-dating, teshuvah
+related: shalom-bayit, blended-families, jewish-wedding, jewish-dating, teshuvah
 local: For confidential support, visit chabadoflamorinda.com/help/shalom-bayit or call Rabbi Labkowski at 925-384-7242.
 ---
 A Jewish divorce is completed with a get, a document written according to Jewish law and given by the husband to the wife in the presence of a Beth Din, a rabbinical court. A civil divorce alone does not end a Jewish marriage, so a get is needed for either person to remarry according to Jewish law.

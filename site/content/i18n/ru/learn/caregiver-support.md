@@ -2,7 +2,7 @@
 title: Уход за близким: еврейская сила для тех, кто ухаживает
 description: Уход за больным супругом, родителем или ребенком: какую мицву вы исполняете, как не выгореть, просить о помощи, молитва и поддержка общины.
 category: Life cycle
-related: caring-for-aging-parents, when-a-loved-one-is-dying, bikur-cholim, mi-sheberach, mental-health-jewish-view
+related: caring-for-aging-parents, when-a-parent-has-dementia, when-a-loved-one-is-dying, bikur-cholim, mi-sheberach, mental-health-jewish-view
 local: Ухаживаете за близким в Лафайетте, Мораге, Оринде или Ист-Бэй? Звоните раввину Исроэлю или ребецн Ципоре Лабковским за поддержкой, визитом или молитвой: 925-384-7242.
 ---
 Ухаживать за любимым человеком, который болен, имеет инвалидность или стареет, - одно из величайших проявлений доброты и одно из самых изматывающих. Если вы ухаживаете за близким, этот гид для вас.

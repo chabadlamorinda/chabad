@@ -2,7 +2,7 @@
 title: Месяц Кислев: месяц света и чудес
 description: Еврейский месяц Кислев: Ханука, Йуд-Тет Кислева, хасидские дни освобождения и почему Кислев называют месяцем чудес и снов.
 category: Shabbat & holidays
-related: yud-tes-kislev, cheshvan, chanukah-menorah, rosh-chodesh, jewish-calendar
+related: yud-tes-kislev, yud-kislev, cheshvan, chanukah-menorah, rosh-chodesh, jewish-calendar
 local: Даты Кислева и Хануки на этот год для Лафайетта, Мораги и Оринды - на chabadoflamorinda.com/holidays, или звоните 925-384-7242.
 ---
 Кислев - третий месяц еврейского года, если считать от Рош а-Шана, и обычно он приходится на ноябрь и декабрь. Ночи в это время самые длинные, и все же Кислев - месяц света: в нем Ханука и несколько радостных хасидских дней.

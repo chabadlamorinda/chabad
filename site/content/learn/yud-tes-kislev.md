@@ -2,7 +2,7 @@
 title: Yud Tes Kislev: The Rosh Hashanah of Chassidus
 description: What Yud Tes Kislev (19 Kislev) celebrates, the story of the Alter Rebbe's arrest and release, and how it is marked with farbrengens and Torah study.
 category: Shabbat & holidays
-related: chassidus, tanya, chabad, chabad-rebbes
+related: chassidus, yud-kislev, tanya, chabad, chabad-rebbes
 local: Want to join a farbrengen or learn Tanya in Lafayette? Call Rabbi Yisroel Labkowski at 925-384-7242 or see chabadoflamorinda.com/programs/adult-education.
 ---
 The 19th of Kislev, Yud Tes Kislev in Hebrew, is a joyous day for Chabad communities everywhere. It is called the **Rosh Hashanah of Chassidus**, the "new year" of the teachings of Chassidus, and it is marked with gatherings, singing and Torah study.

@@ -2,7 +2,7 @@
 title: כיבוד הורים ביהדות: מה המצווה דורשת
 description: מה פירוש מצוות כיבוד ומורא הורים בהלכה, דוגמאות מעשיות, טיפול בהורים מזדקנים, ומה עושים כשזה קשה.
 category: Jewish ideas
-related: ten-commandments, jewish-parenting, kaddish, yahrzeit
+related: ten-commandments, blended-families, jewish-parenting, kaddish, yahrzeit
 local: מתמודדים עם מצב משפחתי קשה או מטפלים בהורה מזדקן? דברו עם הרב דרך chabadoflamorinda.com/help/talk-to-the-rabbi או התקשרו 925-384-7242.
 ---
 כיבוד אב ואם הוא אחד מעשרת הדיברות, וההלכה מפרטת אותו בשני חלקים: כיבוד, כלומר דאגה לצורכי ההורים, ומורא, כלומר יחס של כבוד והערכה. התורה מבטיחה אריכות ימים כשכרו.

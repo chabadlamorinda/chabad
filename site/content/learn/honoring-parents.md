@@ -2,7 +2,7 @@
 title: Honoring Your Parents in Judaism: What the Mitzvah Requires
 description: What the mitzvah of honoring and revering parents means in Jewish law, practical examples, caring for aging parents, and what to do when it is hard.
 category: Jewish ideas
-related: ten-commandments, jewish-parenting, kaddish, yahrzeit
+related: ten-commandments, blended-families, jewish-parenting, kaddish, yahrzeit
 local: Facing a hard family situation or caring for an aging parent? Talk to the Rabbi at chabadoflamorinda.com/help/talk-to-the-rabbi or call 925-384-7242.
 ---
 Honoring your father and mother is one of the Ten Commandments, and Jewish law spells it out in two parts: honor, which means caring for parents, and reverence, which means treating them with respect. The Torah promises long life as its reward.

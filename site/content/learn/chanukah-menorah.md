@@ -2,7 +2,7 @@
 title: How to Light the Chanukah Menorah: Blessings and Step by Step
 description: How to light the Chanukah menorah each night, where to place it, when to light, which candle goes first, and the blessings in Hebrew and English.
 category: Shabbat & holidays
-related: dreidel, shabbat-candles, blessings, jewish-calendar
+related: dreidel, zot-chanukah, shabbat-candles, blessings, jewish-calendar
 local: Need a menorah or candles, or want to join a public menorah lighting? Call 925-384-7242 and see chabadoflamorinda.com/holidays/chanukah.
 ---
 On each of the eight nights of Chanukah, we light a menorah, adding one more light every night until all eight burn on the last night. The lights recall the miracle of the oil in the Holy Temple and publicize that light overcomes darkness.

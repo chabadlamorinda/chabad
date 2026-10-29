@@ -2,7 +2,7 @@
 title: טיפול בהורים מזדקנים: מדריך יהודי
 description: איך המסורת היהודית מדריכה ילדים בוגרים בטיפול בהורים מזדקנים, מכיבוד וטיפול יומיומי ועד דמנציה, מטפלים והגבולות שלכם.
 category: Jewish home
-related: honoring-parents, chesed, mi-sheberach, tehillim
+related: honoring-parents, when-a-parent-has-dementia, chesed, mi-sheberach, tehillim
 local: מטפלים בהורה וזקוקים לתמיכה או להדרכה? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו בכתובת chabadoflamorinda.com/help/someone-is-sick.
 ---
 היהדות מלמדת שטיפול בהורה מזדקן הוא אחת המצוות החשובות ביותר שאדם יכול לקיים. מצוות כיבוד אב ואם לא נגמרת כשמתבגרים. לעיתים קרובות היא הופכת למשמעותית ביותר דווקא בשלב מאוחר יותר בחיים, כשההורים זקוקים לילדיהם יותר מכול.

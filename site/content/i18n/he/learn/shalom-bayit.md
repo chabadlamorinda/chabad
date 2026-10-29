@@ -2,7 +2,7 @@
 title: שלום בית: שלום בבית היהודי
 description: מה פירוש שלום בית, למה היהדות מייחסת חשיבות כה גדולה לשלום בין בעל לאשה, ודרכים פשוטות לבנות בית יהודי רגוע ואוהב.
 category: Jewish home
-related: jewish-wedding, shabbat-candles, mikvah, honoring-parents
+related: jewish-wedding, blended-families, shabbat-candles, mikvah, honoring-parents
 local: לשיחה דיסקרטית עם הרב או הרבנית לבקובסקי, היכנסו ל-chabadoflamorinda.com/help/shalom-bayit או התקשרו 925-384-7242.
 ---
 שלום בית פירושו שלום בבית, והוא מתאר את הקשר החם והמכבד בין בעל לאשה, שהיהדות רואה בו את היסוד של חיי המשפחה. זה לא רק רעיון יפה אלא ערך יהודי של ממש, שנבנה מבחירות יומיומיות של חסד, סבלנות וכבוד.

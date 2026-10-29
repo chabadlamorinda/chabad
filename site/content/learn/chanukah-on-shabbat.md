@@ -2,7 +2,7 @@
 title: Chanukah on Shabbat: Lighting the Menorah Friday and Saturday Night
 description: How to light the Chanukah menorah on Friday before Shabbat and on Saturday night after Shabbat: the order, the timing and the candles to use.
 category: Shabbat & holidays
-related: chanukah-menorah, shabbat-candles, havdalah, chanukah-gelt
+related: chanukah-menorah, zot-chanukah, shabbat-candles, havdalah, chanukah-gelt
 local: Questions about lighting times in Lafayette, Moraga or Orinda? See this year's times at chabadoflamorinda.com/holidays/chanukah or call the Rabbi at 925-384-7242.
 ---
 Every Chanukah includes at least one Shabbat, and some years Chanukah begins on a Friday night. On Shabbat itself we do not light fire, so the Friday and Saturday night lightings need a little planning. Here is how it works.

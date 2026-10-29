@@ -2,7 +2,7 @@
 title: על הניסים והלל: התפילות של חנוכה
 description: מה זה על הניסים, איפה מוסיפים אותו בחנוכה ובפורים, מה עושים אם שוכחים, ולמה אומרים הלל שלם בכל יום של חנוכה.
 category: Prayer & Torah
-related: chanukah-menorah, chanukah-on-shabbat, amidah, birkat-hamazon
+related: chanukah-menorah, zot-chanukah, chanukah-on-shabbat, amidah, birkat-hamazon
 local: הצטרפו למניין שחרית בבית חב״ד למורינדה בלאפייט בימי החנוכה, להלל ולקריאת התורה. התקשרו 925-384-7242 לזמנים.
 ---
 חנוכה הוא חג של הודיה. מלבד הדלקת החנוכייה, חז״ל הוסיפו לתפילות היומיות שני דברים לכל שמונת הימים: את התפילה **על הניסים**, ואת מזמורי השמחה של **הלל**.

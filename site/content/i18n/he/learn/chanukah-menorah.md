@@ -2,7 +2,7 @@
 title: איך מדליקים נרות חנוכה: הברכות שלב אחר שלב
 description: איך מדליקים את החנוכייה בכל לילה, איפה מניחים אותה, מתי מדליקים, איזה נר קודם, והברכות בעברית.
 category: Shabbat & holidays
-related: dreidel, shabbat-candles, blessings, jewish-calendar
+related: dreidel, zot-chanukah, shabbat-candles, blessings, jewish-calendar
 local: צריכים חנוכייה או נרות, או רוצים להצטרף להדלקת חנוכייה ציבורית? התקשרו 925-384-7242 וראו chabadoflamorinda.com/holidays/chanukah.
 ---
 בכל אחד משמונת לילות החנוכה מדליקים חנוכייה, ומוסיפים בכל לילה נר אחד עד שבלילה האחרון דולקים כל השמונה. הנרות מזכירים את נס פך השמן בבית המקדש ומפרסמים שהאור מנצח את החושך.

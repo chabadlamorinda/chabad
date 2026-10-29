@@ -2,7 +2,7 @@
 title: גירושין והגט: מדריך עדין
 description: מהו גט, למה צריך גירושין יהודיים גם אחרי גירושין אזרחיים, איך התהליך מתנהל בבית דין, ואיפה מוצאים תמיכה.
 category: Life cycle
-related: shalom-bayit, jewish-wedding, jewish-dating, teshuvah
+related: shalom-bayit, blended-families, jewish-wedding, jewish-dating, teshuvah
 local: לתמיכה דיסקרטית, היכנסו ל-chabadoflamorinda.com/help/shalom-bayit או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 גירושין יהודיים מושלמים בגט, מסמך שנכתב לפי ההלכה והבעל נותן לאשה בנוכחות בית דין רבני. גירושין אזרחיים לבדם אינם מסיימים נישואין יהודיים, ולכן צריך גט כדי ששני בני הזוג יוכלו להינשא שוב לפי ההלכה.

@@ -2,7 +2,7 @@
 title: חנוכה בשבת: הדלקת החנוכייה בערב שבת ובמוצאי שבת
 description: איך מדליקים את החנוכייה ביום שישי לפני שבת ובמוצאי שבת אחרי צאת השבת: הסדר, הזמנים ואילו נרות להשתמש.
 category: Shabbat & holidays
-related: chanukah-menorah, shabbat-candles, havdalah, chanukah-gelt
+related: chanukah-menorah, zot-chanukah, shabbat-candles, havdalah, chanukah-gelt
 local: שאלות על זמני ההדלקה בלאפייט, מוראגה או אורינדה? ראו את הזמנים של השנה ב-chabadoflamorinda.com/holidays/chanukah או התקשרו לרב 925-384-7242.
 ---
 בכל חנוכה יש לפחות שבת אחת, ובשנים מסוימות חנוכה מתחיל ביום שישי בערב. בשבת עצמה לא מדליקים אש, ולכן ההדלקות של יום שישי ומוצאי שבת דורשות מעט תכנון. כך זה עובד.

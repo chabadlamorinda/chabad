@@ -2,7 +2,7 @@
 title: חודש כסלו: חודש של אור וניסים
 description: החודש העברי כסלו: חנוכה, י״ט כסלו, ימי הגאולה החסידיים, ולמה כסלו נקרא חודש של ניסים וחלומות.
 category: Shabbat & holidays
-related: yud-tes-kislev, cheshvan, chanukah-menorah, rosh-chodesh, jewish-calendar
+related: yud-tes-kislev, yud-kislev, cheshvan, chanukah-menorah, rosh-chodesh, jewish-calendar
 local: ראו את תאריכי כסלו וחנוכה של השנה ללאפייט, מוראגה ואורינדה ב-chabadoflamorinda.com/holidays או התקשרו 925-384-7242.
 ---
 כסלו הוא החודש השלישי בשנה היהודית כשסופרים מראש השנה, והוא חל בדרך כלל בנובמבר ובדצמבר. הלילות הם הארוכים ביותר, ובכל זאת כסלו הוא חודש של אור: יש בו את חנוכה ועוד כמה ימי שמחה חסידיים.

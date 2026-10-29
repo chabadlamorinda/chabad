@@ -2,7 +2,7 @@
 title: Shalom Bayit: Peace in the Jewish Home
 description: What shalom bayit means, why Judaism treasures peace between husband and wife, and simple daily ways to build a calm, loving Jewish home.
 category: Jewish home
-related: jewish-wedding, shabbat-candles, mikvah, honoring-parents
+related: jewish-wedding, blended-families, shabbat-candles, mikvah, honoring-parents
 local: For a confidential conversation with Rabbi or Rebbetzin Labkowski, visit chabadoflamorinda.com/help/shalom-bayit or call 925-384-7242.
 ---
 Shalom bayit means "peace in the home," and it describes the warm, respectful relationship between husband and wife that Judaism sees as the foundation of family life. It is not only a nice idea but a real Jewish value, built through daily choices of kindness, patience and respect.

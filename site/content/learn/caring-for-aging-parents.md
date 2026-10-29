@@ -2,7 +2,7 @@
 title: Caring for Aging Parents: A Jewish Guide
 description: How Jewish tradition guides adult children caring for aging parents, from honoring them and daily care to dementia, caregivers and your own limits.
 category: Jewish home
-related: honoring-parents, chesed, mi-sheberach, tehillim
+related: honoring-parents, when-a-parent-has-dementia, chesed, mi-sheberach, tehillim
 local: Caring for a parent and need support or guidance? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/help/someone-is-sick.
 ---
 Judaism teaches that caring for an aging parent is one of the most important mitzvot a person can do. The commandment to honor your father and mother does not end when you grow up; it often becomes most meaningful later in life, when parents need their children most.

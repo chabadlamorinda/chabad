@@ -2,7 +2,7 @@
 title: Al HaNissim and Hallel: The Chanukah Prayers
 description: What Al HaNissim is, where it is added on Chanukah and Purim, what to do if you forget it, and why the full Hallel is said every day of Chanukah.
 category: Prayer & Torah
-related: chanukah-menorah, chanukah-on-shabbat, amidah, birkat-hamazon
+related: chanukah-menorah, zot-chanukah, chanukah-on-shabbat, amidah, birkat-hamazon
 local: Join the morning minyan at Chabad of Lamorinda in Lafayette during Chanukah for Hallel and the Torah reading. Call 925-384-7242 for times.
 ---
 Chanukah is a holiday of thanks. Besides lighting the menorah, the Sages added two things to our daily prayers for all eight days: the prayer **Al HaNissim**, "for the miracles," and the joyful psalms of **Hallel**.
