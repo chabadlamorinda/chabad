@@ -57,6 +57,7 @@
     if (!s) { box.appendChild(el('div', 'loading', T('See you at the next Kiddush'))); return; }
     var days = Math.round((new Date(s.date + 'T12:00:00') - new Date(b.today + 'T12:00:00')) / 864e5);
     var main = el('div', 'p-main');
+    main.appendChild(el('div', 'clock', '')); // the clock sits right above the "This week's Kiddush" label
     main.appendChild(el('div', 'p-lbl', days <= 7 ? (s.kind === 'shabbat' ? T('THIS WEEK’S KIDDUSH') : T('THIS KIDDUSH')) : T('NEXT KIDDUSH')));
     main.appendChild(el('div', 'p-name', KI.title(s)));
     var d = el('div', 'p-date');
@@ -89,9 +90,11 @@
     Array.prototype.forEach.call(box.querySelectorAll('.q2h, .q2p'), function (n) { fit(n, .6); });
     // a long dedication must never push the label off the plate: shrink the sponsor text until everything fits
     var pm = box.querySelector('.p-main'), guard = 0;
-    while (pm && pm.scrollHeight > pm.clientHeight + 1 && guard++ < 14) {
+    if (pm) pm.style.justifyContent = 'flex-start'; // measure from the top: centred overflow would be hidden above the first line
+    while (pm && pm.scrollHeight > pm.clientHeight + 1 && guard++ < 18) {
       Array.prototype.forEach.call(pm.querySelectorAll('.p-sp, .p-ded, .p-note'), function (n) { n.style.fontSize = parseFloat(getComputedStyle(n).fontSize) * .93 + 'px'; });
     }
+    if (pm) pm.style.justifyContent = '';
     var ded = box.querySelector('.p-ded'); if (ded) { var g = 0; while (ded.scrollHeight > ded.clientHeight + 1 && ded.scrollHeight > parseFloat(getComputedStyle(ded).fontSize) * 2.4 && g++ < 12) ded.style.fontSize = parseFloat(getComputedStyle(ded).fontSize) * .92 + 'px'; }
   }
 
@@ -176,21 +179,21 @@
 
   // Small gold clock in the corner of the centre column (in the shul's time zone once the board has loaded; the TV's own clock until then).
   function tickClock() {
-    var n = $('clock'); if (!n) return;
+    var nodes = document.querySelectorAll('.clock'); if (!nodes.length) return;
     var tz = board && board.settings && board.settings.timezone, opts = { hour: 'numeric', minute: '2-digit', hour12: !KI.he };
-    try { if (tz) opts.timeZone = tz; n.textContent = new Intl.DateTimeFormat(KI.he ? 'he-IL' : 'en-US', opts).format(new Date()); }
-    catch (e) { n.textContent = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }); }
+    var txt; try { if (tz) opts.timeZone = tz; txt = new Intl.DateTimeFormat(KI.he ? 'he-IL' : 'en-US', opts).format(new Date()); } catch (e) { txt = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }); }
+    Array.prototype.forEach.call(nodes, function (n) { n.textContent = txt; });
   }
   tickClock(); setInterval(tickClock, 5000);
 
   function render(b) {
-    board = b; tickClock();
+    board = b;
     $('yearNum').textContent = KI.he ? '' : b.year; $('yearHe').textContent = b.yearHe; $('year').querySelector('.dash').style.display = KI.he ? 'none' : '';
     var s = b.settings, ol = KI.orgLines(s);
     $('orgL1').textContent = ol[0]; $('orgL2').textContent = ol[1]; document.title = (KI.he ? 'תורמי הקידוש' : 'Kiddush Sponsors') + (KI.org(s) ? ' — ' + KI.org(s) : '');
     $('blessing').textContent = KI.blessing(s) || '';
     renderDonor(b);
-    layout(b); renderPlate(b);
+    layout(b); renderPlate(b); tickClock();
     fit(document.querySelector('.title'), .6);
   }
 
