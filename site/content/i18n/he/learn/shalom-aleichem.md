@@ -2,7 +2,7 @@
 title: שלום עליכם: השיר של ליל שבת שמקבל את המלאכים
 description: מה פירוש שלום עליכם, הסיפור על מלאכי השבת שמאחוריו, המילים ופירושן, ומתי שרים אותו.
 category: Shabbat & holidays
-related: eishet-chayil, zemirot, kiddush, shabbat-meals, shabbat-for-beginners
+related: eishet-chayil, kabbalat-shabbat, zemirot, kiddush, shabbat-meals, shabbat-for-beginners
 local: שמעו את שלום עליכם ליד שולחן שבת חם. התקשרו לחב״ד למורינדה 925-384-7242 או ראו chabadoflamorinda.com/shabbat.
 ---
 שלום עליכם הוא השיר ששרים בבית בליל שבת לפני הקידוש, ובו מקבלים את המלאכים שמלווים אותנו הביתה מבית הכנסת בשבת. שמו הוא ברכת שלום, והוא פותח את סעודת השבת בחום ובברכה.

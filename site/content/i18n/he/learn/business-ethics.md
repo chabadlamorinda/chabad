@@ -2,7 +2,7 @@
 title: אתיקה עסקית יהודית: יושר בעבודה בדרך התורה
 description: מה ההלכה מלמדת על יושר בעסקים, מחיר הוגן, תשלום לעובדים בזמן, עמידה במילה והתנהגות הוגנת כלפי מתחרים.
 category: Jewish ideas
-related: maaser, tzedakah, lashon-hara, teshuvah
+related: maaser, parnassah-work-and-livelihood, tzedakah, lashon-hara, teshuvah
 local: יש לכם שאלה בהלכה על עניין עסקי או מחלוקת ליישב? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או ראו chabadoflamorinda.com/help/disputes.
 ---
 היהדות מלמדת שיושר בעסקים קדוש בדיוק כמו תפילה או שבת. בתורה יש דינים מפורטים על משא ומתן הוגן, והתלמוד אומר שאחת השאלות הראשונות שאדם נשאל אחרי פטירתו היא: "נשאת ונתת באמונה?"

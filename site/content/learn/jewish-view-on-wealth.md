@@ -2,7 +2,7 @@
 title: Money and Success: A Jewish View of Wealth
 description: What Judaism teaches about earning, spending and giving: wealth as a trust from G-d, honest business, tzedakah and maaser, contentment, and teaching kids about money.
 category: Jewish ideas
-related: tzedakah, maaser, business-ethics, bitachon
+related: tzedakah, parnassah-work-and-livelihood, maaser, business-ethics, bitachon
 local: Want to talk about giving, a family foundation or a legacy gift? Rabbi Yisroel Labkowski in Lafayette is glad to help: 925-384-7242.
 ---
 Judaism does not see money as evil, nor as the goal of life. It sees wealth as a tool and a trust: G-d gives it to us so we can live well, support our families and do good.

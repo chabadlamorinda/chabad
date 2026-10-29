@@ -2,7 +2,7 @@
 title: Shabbat for Beginners: How to Start Keeping Shabbat
 description: A simple, step-by-step guide to your first Shabbat: candles, Kiddush, challah, the meal, rest and Havdalah, one small step at a time.
 category: Shabbat & holidays
-related: shabbat, shabbat-candles, kiddush, havdalah
+related: shabbat, kabbalat-shabbat, shabbat-candles, kiddush, havdalah
 local: Join us for a Shabbat meal or ask for help getting started at chabadoflamorinda.com/forms/shabbat-meal, or call 925-384-7242.
 ---
 Shabbat is the Jewish day of rest, from just before sunset on Friday until nightfall on Saturday. You do not need to do everything at once: start with one or two parts, such as lighting candles and sharing a Friday night meal, and add more as you go.

@@ -2,7 +2,7 @@
 title: Going to Synagogue for the First Time: What to Expect
 description: A friendly guide for first-time visitors to a synagogue: what to wear, what happens during services, Shabbat etiquette, and how to follow along.
 category: Prayer & Torah
-related: siddur, kippah, prayer, shabbat
+related: siddur, kabbalat-shabbat, kippah, prayer, shabbat
 local: Thinking of visiting? Find Shabbat information at chabadoflamorinda.com/shabbat or call Rabbi Labkowski at 925-384-7242 and we will welcome you personally.
 ---
 Your first time at synagogue can feel a little unfamiliar, but you do not need to know anything to walk in. Come as you are, take a seat, and let the people around you help you follow along. At Chabad, every Jew is welcome, whatever their background or knowledge.

@@ -2,7 +2,7 @@
 title: Daily Prayers: Shacharit, Mincha and Maariv Made Simple
 description: The three daily Jewish prayers: when to say them, what is in each, praying alone or with a minyan, short versions for beginners, and women's prayer.
 category: Prayer & Torah
-related: prayer, amidah, shema, minyan
+related: prayer, prayers-for-rain, amidah, shema, minyan
 local: Want to learn to pray, or borrow a siddur? Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 Jews pray three times a day: in the morning, the afternoon and the evening. Our Sages teach that Abraham, Isaac and Jacob each began one of these prayers, and they also correspond to the daily offerings in the Holy Temple. Prayer is a daily conversation with G-d, a few minutes to stop, give thanks and ask for what we need.

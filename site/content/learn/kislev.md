@@ -2,7 +2,7 @@
 title: The Month of Kislev: A Month of Light and Miracles
 description: The Hebrew month of Kislev: Chanukah, Yud Tes Kislev, the Chassidic days of freedom, and why Kislev is called a month of miracles and dreams.
 category: Shabbat & holidays
-related: yud-tes-kislev, chanukah-menorah, rosh-chodesh, jewish-calendar
+related: yud-tes-kislev, cheshvan, chanukah-menorah, rosh-chodesh, jewish-calendar
 local: See this year's Kislev and Chanukah dates for Lafayette, Moraga and Orinda at chabadoflamorinda.com/holidays or call 925-384-7242.
 ---
 Kislev is the third month of the Jewish year counting from Rosh Hashanah, and it usually falls in November and December. The nights are at their longest, and yet Kislev is the month of light: it holds Chanukah and several Chassidic days of joy.

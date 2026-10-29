@@ -2,7 +2,7 @@
 title: Maaser: Giving a Tenth to Charity in Judaism
 description: What maaser is, how to calculate giving ten percent of your income to tzedakah, which causes qualify, and practical tips for keeping track.
 category: Jewish ideas
-related: tzedakah, pushka, business-ethics, chesed
+related: tzedakah, parnassah-work-and-livelihood, pushka, business-ethics, chesed
 local: Want to direct your maaser to Jewish life in Lamorinda? Give at chabadoflamorinda.com/donate or call Rabbi Labkowski at 925-384-7242 with any question.
 ---
 Maaser means "a tenth." It is the Jewish custom of giving ten percent of your income to tzedakah, charity. Many Jews keep this practice as a basic part of their financial life, giving with gratitude for the blessings G-d has given them.

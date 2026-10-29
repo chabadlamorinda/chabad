@@ -2,7 +2,7 @@
 title: The Amidah: The Central Jewish Prayer Explained
 description: What the Amidah (Shemoneh Esrei) is, its structure of praise, requests and thanks, when it is said, and how to stand and pray it.
 category: Prayer & Torah
-related: prayer, siddur, minyan, shema
+related: prayer, prayers-for-rain, siddur, minyan, shema
 local: Want to learn the Amidah step by step? Join a class at chabadoflamorinda.com/programs/adult-education or call 925-384-7242.
 ---
 The Amidah is the central prayer of every Jewish service, said silently while standing, facing Jerusalem. It is also called Shemoneh Esrei, "eighteen," for its original eighteen blessings, and in the Talmud simply Tefillah, "the prayer."

@@ -2,7 +2,7 @@
 title: Shalom Aleichem: The Friday Night Song Welcoming the Angels
 description: What Shalom Aleichem means, the story of the Shabbat angels behind it, the words in transliteration and English, and when to sing it.
 category: Shabbat & holidays
-related: eishet-chayil, zemirot, kiddush, shabbat-meals, shabbat-for-beginners
+related: eishet-chayil, kabbalat-shabbat, zemirot, kiddush, shabbat-meals, shabbat-for-beginners
 local: Hear Shalom Aleichem sung at a warm Shabbat table. Call Chabad of Lamorinda at 925-384-7242 or see chabadoflamorinda.com/shabbat.
 ---
 Shalom Aleichem is the song sung at home on Friday night before Kiddush, welcoming the angels who accompany us home from synagogue on Shabbat. Its name means "peace be upon you," and it opens the Shabbat meal with warmth and blessing.

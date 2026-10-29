@@ -2,7 +2,7 @@
 title: מעשר: נתינת עשירית לצדקה ביהדות
 description: מהו מעשר, איך מחשבים עשרה אחוזים מההכנסה לצדקה, אילו מטרות מתאימות, וטיפים מעשיים למעקב.
 category: Jewish ideas
-related: tzedakah, pushka, business-ethics, chesed
+related: tzedakah, parnassah-work-and-livelihood, pushka, business-ethics, chesed
 local: רוצים להפנות את המעשר שלכם לחיים היהודיים בלמורינדה? תרמו בכתובת chabadoflamorinda.com/donate או התקשרו לרב לבקובסקי בטלפון 925-384-7242 בכל שאלה.
 ---
 מעשר פירושו עשירית. זה המנהג היהודי לתת עשרה אחוזים מההכנסה לצדקה. יהודים רבים נוהגים כך כחלק בסיסי מהחיים הכלכליים שלהם, ונותנים מתוך הכרת תודה על הברכות שה׳ נתן להם.

@@ -2,7 +2,7 @@
 title: Jewish Business Ethics: Honesty at Work the Torah Way
 description: What Jewish law teaches about honesty in business, fair pricing, paying workers on time, keeping your word and treating competitors fairly.
 category: Jewish ideas
-related: maaser, tzedakah, lashon-hara, teshuvah
+related: maaser, parnassah-work-and-livelihood, tzedakah, lashon-hara, teshuvah
 local: Have a question about Jewish law in business or a dispute to resolve? Call Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/help/disputes.
 ---
 Judaism teaches that honesty in business is just as holy as prayer or Shabbat. The Torah has detailed laws about fair dealing, and the Talmud says that one of the first questions a person is asked after life is, "Were you honest in your business dealings?"
