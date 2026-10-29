@@ -821,11 +821,15 @@ test('no broken links inside the content (English, Hebrew, Russian)', async () =
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',
     ...C.learn.map((a) => '/learn/' + a.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.help.map((h) => '/help/' + h.slug), ...C.forms.map((f) => '/forms/' + f.id), ...C.towns.map((t) => '/jewish-' + t.slug),
-    '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah', '/tools/zmanim', '/tools/hebrew-birthday', '/shabbat-times', '/this-week', '/mitzvah', '/menorah', '/dreidel', ...['moraga', 'orinda', 'pleasant-hill', 'martinez'].map((t) => '/shabbat-times/' + t), ...[0, 1].map((n) => '/jewish-holidays-' + (new Date().getFullYear() + n))]);
+    '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah', '/tools/zmanim', '/tools/hebrew-birthday', '/shabbat-times', '/this-week', ...['moraga', 'orinda', 'pleasant-hill', 'martinez'].map((t) => '/shabbat-times/' + t), ...[0, 1].map((n) => '/jewish-holidays-' + (new Date().getFullYear() + n))]);
   const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
   for (const f of walk(DIR).filter((f) => /\.(md|json)$/.test(f) && !f.endsWith('strings-en.json'))) {
     const src = fs.readFileSync(f, 'utf8');
-    for (const m of src.matchAll(/\]\((\/[^)\s#?]*)[^)]*\)/g)) if (!ok.has(m[1]) && !/^\/(pushka|kiddush|board|media)\//.test(m[1])) bad.push(path.relative(DIR, f) + ' -> ' + m[1]);
+    for (const m of src.matchAll(/\]\((\/[^)\s#?]*)[^)]*\)/g)) if (!ok.has(m[1]) && !/^\/(pushka|kiddush|board|media)\//.test(m[1])) bad.push([path.relative(DIR, f), m[1]]);
   }
-  assert.deepEqual(bad, [], 'fix these links');
+  // A page that is not in the list above (a new page like /menorah) is fetched from the running site: a link is
+  // broken only if that page really does not answer, so new pages need no change here.
+  const answers = new Map();
+  for (const [, href] of bad) if (!answers.has(href)) answers.set(href, (await client().call('GET', href)).status < 400);
+  assert.deepEqual(bad.filter(([, href]) => !answers.get(href)).map(([f, href]) => f + ' -> ' + href), [], 'fix these links');
 });

@@ -214,6 +214,12 @@
       });
     });
 
+    // Things to act on first, then the tools, then the setup checklist (the menu at the top follows the same order).
+    ['requests', 'approve', 'reach-out', 'sign-ups', 'rsvps', 'visitors', 'birthdays', 'social', 'email', 'ask-the-rabbi', 'chat', 'setup'].forEach(function (id) {
+      var sec = document.getElementById(id), chip = jump.querySelector('a[href="#' + id + '"]');
+      if (sec) app.appendChild(sec); if (chip) jump.appendChild(chip);
+    });
+
     // Opened from a link on the Rabbi's desk (/admin/community#requests...): open that section and go to it.
     var target = location.hash && document.getElementById(location.hash.slice(1));
     if (target && target.tagName === 'DETAILS') { target.open = true; target.scrollIntoView(); }
