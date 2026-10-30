@@ -21,7 +21,7 @@ The blessing for lightning or thunder is said once per storm; if the clouds clea
 
 - **The ocean**, seen after not having seen it for 30 days: **she'asah et hayam hagadol**, "who made the great sea." Opinions differ about which seas this applies to, so many say **oseh ma'aseh vereishit** instead. Ask the Rabbi before your next trip to the Pacific coast.
 - **Majestic mountains, great deserts or other awe-inspiring landscapes**: **oseh ma'aseh vereishit**.
-- **Fruit trees in blossom**, once a year in the spring month of Nisan: **shelo chisar be'olamo davar, uvara vo beriyot tovot ve'ilanot tovot, leihanot bahem bnei adam**, "who has withheld nothing from His world, and created in it good creatures and good trees for people to enjoy."
+- **Fruit trees in blossom**, once a year in the spring month of Nisan: **shelo chisar be'olamo kelum, uvara vo beriyot tovot ve'ilanot tovot, leihanot bahem bnei adam**, "who has withheld nothing from His world, and created in it good creatures and good trees for people to enjoy."
 
 ## Moments with people
 
