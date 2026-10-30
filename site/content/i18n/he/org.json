@@ -1,0 +1,119 @@
+{
+  "name": "חב״ד למורינדה",
+  "shortName": "חב״ד למורינדה",
+  "alternateNames": [
+    "Chabad Lamorinda",
+    "Chabad of Lafayette",
+    "Chabad of Moraga",
+    "Chabad of Orinda",
+    "Lamorinda Shul"
+  ],
+  "tagline": "יהדות עם חיוך, לכל יהודי בלמורינדה",
+  "description": "חב״ד למורינדה הוא מרכז יהודי חם ומזמין בלאפייט, קליפורניה, המשרת את לאפייט, מוראגה ואורינדה עם תפילות שבת וחג, גן ילדים יהודי, תלמוד תורה, שיעורים ואירועים קהילתיים. אין צורך בחברות.",
+  "address": {
+    "street": "3477 Golden Gate Way",
+    "city": "Lafayette",
+    "region": "CA",
+    "postal": "94549"
+  },
+  "geo": {
+    "lat": 37.8858,
+    "lng": -122.118
+  },
+  "phone": "925-384-7242",
+  "email": "info@chabadoflamorinda.com",
+  "areaServed": [
+    "Lafayette",
+    "Moraga",
+    "Orinda",
+    "Pleasant Hill",
+    "Martinez"
+  ],
+  "staff": [
+    {
+      "name": "Rabbi Yisroel Labkowski",
+      "role": "Rabbi and Director"
+    },
+    {
+      "name": "Tzipora Labkowski",
+      "role": "Rebbetzin; Director of Lamorinda Jewish Preschool and Lamorinda Hebrew School"
+    }
+  ],
+  "legal": "עמותה ללא כוונת רווח 501(c)(3), מספר מזהה למס 47-4642750.",
+  "donateUrl": "/donate",
+  "social": {
+    "facebook": "https://www.facebook.com/chabadoflamorinda"
+  },
+  "services": [
+    {
+      "name": "שחרית (תפילת הבוקר)",
+      "time": "יום ראשון 8:00; שני עד שישי 6:30"
+    },
+    {
+      "name": "קבלת שבת",
+      "time": "ליל שישי, {kabbalat-shabbat}",
+      "note": "השעה עשויה להשתנות לפי עונות השנה"
+    },
+    {
+      "name": "שבת בבוקר",
+      "time": "שבת 10:00 עד 12:00",
+      "note": "קריאת התורה, דבר תורה קצר והשתתפות הילדים, ולאחר מכן קידוש עם ארוחת צהריים חמה"
+    }
+  ],
+  "weekly": [
+    {
+      "day": "יום ראשון",
+      "time": "10:00–12:00",
+      "name": "תלמוד תורה למורינדה",
+      "link": "/programs/hebrew-school",
+      "byDay": "Sunday",
+      "startTime": "10:00",
+      "endTime": "12:00"
+    },
+    {
+      "day": "יום ראשון",
+      "time": "21:00–22:00",
+      "name": "שיעור תורה שבועי (באנגלית)",
+      "link": "/programs/adult-education",
+      "byDay": "Sunday",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "day": "יום שלישי",
+      "time": "20:30–21:30",
+      "name": "שיעור תורה בעברית, עם ארוחה",
+      "link": "/programs/adult-education",
+      "byDay": "Tuesday",
+      "startTime": "20:30",
+      "endTime": "21:30"
+    },
+    {
+      "day": "יום רביעי",
+      "time": "13:00–14:00",
+      "name": "שיעור תניא (באנגלית)",
+      "link": "/programs/adult-education",
+      "byDay": "Wednesday",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "day": "יום שישי",
+      "time": "{kabbalat-shabbat}",
+      "name": "קבלת שבת",
+      "link": "/shabbat",
+      "byDay": "Friday",
+      "startTime": "17:45"
+    },
+    {
+      "day": "שבת",
+      "time": "10:00",
+      "name": "תפילות שבת וקידוש עם ארוחת צהריים",
+      "link": "/shabbat",
+      "byDay": "Saturday",
+      "startTime": "10:00",
+      "endTime": "12:00"
+    }
+  ],
+  "shabbatText": "## ליל שבת: תמיד יש לכם מקום\nקבלת שבת מתחילה ב־{kabbalat-shabbat}, ואחריה משפחת לבקובסקי מתיישבת לסעודת ליל שבת, ואתם תמיד מוזמנים להצטרף. חלה טרייה, קידוש על היין, שירים סביב השולחן ושיחה טובה שאף אחד לא ממהר לסיים. בואו לבד, עם המשפחה או עם חבר; הפעם הראשונה שלכם רצויה בדיוק כמו החמישים. רק תודיעו לנו שאתם באים, בכפתור ״בואו לסעודת שבת״ או ב־925-384-7242.\n\n## שבת בבוקר: התפילות פתוחות לכולם\nבשבת ב־10:00. תפילה מסורתית באווירה נינוחה וחמה, עם סידור דו־לשוני כדי שתוכלו לעקוב גם אם אינכם קוראים עברית. יש קריאת התורה, דבר תורה קצר, והילדים שותפים בהכול. בואו לכל הבוקר או לחלק ממנו; אף אחד לא סופר.\n\n## קידוש: בואו לצ׳ולנט\nאחרי התפילה כל הקהילה מתיישבת יחד לקידוש עם ארוחה חמה: קערת צ׳ולנט חמה, לחיים והרבה זמן לדבר. הקידוש פתוח לכולם, בכל שבת. הצטרפו מתי שתרצו.\n\n## ציינו אירוע עם הקהילה\nיום הולדת, יום נישואין או יארצייט? [תרמו קידוש](/sponsor-a-kiddush) וכל הקהילה תחגוג או תזכור יחד אתכם."
+}

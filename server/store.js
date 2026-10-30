@@ -4,6 +4,8 @@
 const crypto = require('crypto');
 const { Pool } = require('pg');
 const { kiddushStore } = require('./kiddush-store.js');
+const { SCHEMA: SITE_SCHEMA } = require('./site/community.js');
+const { SCHEMA: OUTREACH_SCHEMA } = require('./site/outreach.js');
 
 const newId = (p) => p + crypto.randomBytes(12).toString('hex');
 
@@ -56,9 +58,13 @@ function createStore(url, opts = {}) {
   return {
     ...kiddush,
     pool,
-    migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); },
+    migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); await q(OUTREACH_SCHEMA); },
     close: () => pool.end(),
-    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, kv, community_days, auth_codes, account_state CASCADE'), // tests only
+    reset: async () => { // tests only (the shareable kit has no website tables)
+      const want = ['members', 'yahrzeits', 'push_subs', 'push_log', 'followups', 'payment_events', 'family', 'rsvps', 'login_codes', 'submissions', 'social_posts', 'email_log', 'form_responses', 'chat_questions', 'email_unsubscribes', 'qa', 'member_activity', 'auth_codes', 'account_state', 'outreach_done', 'kv', 'community_days', 'fin_tx', 'fin_people', 'fin_budget'];
+      const have = (await q('SELECT tablename FROM pg_tables WHERE schemaname = current_schema() AND tablename = ANY($1)', [want])).rows.map((r) => r.tablename);
+      if (have.length) await q(`TRUNCATE ${have.join(', ')} CASCADE`);
+    },
 
     // ----- members -----
     async createMember(m) {
@@ -79,7 +85,7 @@ function createStore(url, opts = {}) {
       const c = await pool.connect();
       try {
         await c.query('BEGIN');
-        await c.query('DELETE FROM yahrzeits WHERE member_id=$1', [memberId]);
+        await c.query("DELETE FROM yahrzeits WHERE member_id=$1 AND source='app'", [memberId]); // the website's own entries (source 'web') stay
         for (const e of entries) await c.query('INSERT INTO yahrzeits (id, member_id, name, relation, h_day, h_month, h_year, notes) VALUES ($1,$2,$3,$4,$5,$6,$7,$8)', [memberId + ':' + e.id, memberId, e.name, e.relation, e.day, e.month, e.year || null, e.notes]);
         await c.query('COMMIT');
       } catch (err) { await c.query('ROLLBACK'); throw err; } finally { c.release(); }

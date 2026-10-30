@@ -18,6 +18,9 @@ const { mountMembers } = require('./members.js');
 const { mountAdmin } = require('./admin.js');
 const { mountAccounts } = require('./accounts.js');
 const { createKiddush } = require('./kiddush.js');
+const { createCampaigns } = require('./campaign.js');
+const { createFinances } = require('./finances.js');
+const { mountSite } = require('./site/index.js');
 
 const ROOT = path.join(__dirname, '..');
 // <KIT:FUNDS>
@@ -48,13 +51,15 @@ class HttpError extends Error {
 /**
  * @param {{ stripe: import('stripe').Stripe | null, publishableKey?: string, sessionSecret: string, log?: Pick<Console, 'error'> }} opts
  */
-function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false }) {
+function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false, siteEnv = process.env, facebook = undefined, chatClient = undefined, siteContentDir = undefined }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
   const kiddush = createKiddush({ store, stripe, log, now, mailer });
   if (reminders) kiddush.startReminders(); // emails unpaid sponsors a reminder after a few days (needs email set up)
   const app = express();
   app.locals.kiddush = kiddush; // (used by tests)
   app.disable('x-powered-by');
+  // Compress pages, styles and scripts (about 4x smaller). The chat's live stream is left alone.
+  app.use(require('compression')({ filter: (req, res) => !/text\/event-stream/.test(String(res.getHeader('Content-Type') || '')) && require('compression').filter(req, res) }));
   app.set('trust proxy', 1);
 
   // ---------- tokens ----------
@@ -161,6 +166,11 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 
   // ---------- sign-in by emailed code and saved pushkas (own parsers, so they are mounted before the general API) ----------
   const accountsOn = mountAccounts(app, { store, mailer, tokens, sessionSecret, limit, log });
+
+  // The website (pages, accounts, RSVPs, SEO files). Mounted before the app's own "/" redirect below
+  // and before /api, whose catch-all would otherwise answer /api/site.
+  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook, reminders, chatClient, contentDir: siteContentDir });
+  app.locals.site = site;
 
   // ---------- API ----------
   const api = express.Router();
@@ -321,6 +331,33 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     res.json({ status: sub.status, id: sub.id, receiptUrl: typeof sub.latest_invoice === 'object' && sub.latest_invoice ? sub.latest_invoice.hosted_invoice_url || '' : '' });
   }));
 
+  // Giving on the website (/donate, /chai-club, sponsor pages): Stripe's secure checkout page, once or monthly.
+  // Gifts carry the same details as the app's (source "pushka"), so the honor board, staff screens and receipts treat them alike.
+  api.post('/give/checkout', limit('give', 20, 10 * 60 * 1000), needStripe, wrap(async (req, res) => {
+    const b = req.body || {}, g = readGift(b), monthly = b.freq === 'monthly', lang = ['he', 'ru'].includes(b.lang) ? b.lang : 'en';
+    let club = null;
+    if (b.club) {
+      if (g.fund !== 'chai' || !monthly) throw new HttpError(400, 'invalid_fund', 'Please choose a fund.');
+      club = { name: clean(b.club.name, 60), show: b.club.show === true && !!clubLevel(g.cents) };
+      if (club.show && !club.name) throw new HttpError(400, 'invalid_name', 'Please enter the name for the board.');
+    }
+    const back = /^\/(?!\/)[a-z0-9/._-]{0,120}$/i.test(String(b.back || '')) ? b.back : '/donate';
+    const configured = /^https:\/\/[^/\s]+$/.test(String(siteEnv.PUBLIC_URL || '').replace(/\/+$/, '')) ? siteEnv.PUBLIC_URL.replace(/\/+$/, '') : '';
+    const base = configured || req.protocol + '://' + req.get('host'), pre = lang === 'en' ? '' : '/' + lang;
+    const meta = { source: 'pushka', via: 'website', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents), ...(club ? { club: 'yes', board_show: club.show ? 'yes' : 'no', board_name: club.show ? club.name : '' } : {}) };
+    const name = (monthly ? 'Monthly gift: ' : 'Gift: ') + FUND_NAMES[g.fund] + (g.dedication ? ' (' + g.dedication + ')' : '');
+    const session = await stripe.checkout.sessions.create({
+      mode: monthly ? 'subscription' : 'payment', locale: lang === 'en' ? 'auto' : lang,
+      line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: g.total, ...(monthly ? { product: await ensureProduct(g.fund), recurring: { interval: 'month' } } : { product_data: { name } }) } }],
+      ...(monthly ? { subscription_data: { description: 'Monthly gift: ' + FUND_NAMES[g.fund], metadata: meta } } : { submit_type: 'donate', payment_intent_data: { description: name, metadata: meta } }),
+      metadata: meta,
+      success_url: base + pre + '/donate/thank-you?session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: base + pre + back,
+    }, { idempotencyKey: 'site-give-' + g.idem });
+    if (club) clubCache = { at: 0, data: null };
+    res.json({ url: session.url });
+  }));
+
   const subView = (s) => {
     const item = s.items && s.items.data && s.items.data[0];
     const end = s.current_period_end || (item && item.current_period_end) || null;
@@ -389,6 +426,14 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   }));
 
   mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, limit });
+  // Fundraising campaigns (/campaign/...): checkout (one payment or split into monthly payments), totals, donor wall.
+  const campaigns = createCampaigns({ stripe, store, content: site.content, log, clean, HttpError, ensureProduct, FUND_NAMES, FEE_RATE, siteEnv, mailer });
+  campaigns.mountPublic(api, { wrap, limit });
+  app.locals.campaigns = campaigns;
+  // Finances: the books and donor records in the Rabbi area (/admin/finances); online gifts come in from Stripe by themselves.
+  const finances = createFinances({ stripe, store, content: site.content, mailer, log, funds: FUND_NAMES, now });
+  if (reminders) finances.startAutoSync();
+  app.locals.finances = finances;
   // Kiddush board API (its own router so the shared per-IP limit above does not throttle a room full of phones).
   const kapi = express.Router();
   kapi.use(express.json({ limit: '16kb' }));
@@ -398,7 +443,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   app.use('/api/kiddush', kapi);
   api.use((req, res) => res.status(404).json({ code: 'not_found', error: 'Not found.' }));
   app.use('/api', api);
-  const adminOn = mountAdmin(app, { funds: FUND_NAMES, store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: kiddush.mountAdmin, levelOf: clubLevel });
+  const adminOn = mountAdmin(app, { funds: FUND_NAMES, store, stripe, password: adminPassword, secret: sessionSecret, limit, send: sendPush, log, extend: (r, ctx) => { kiddush.mountAdmin(r, ctx); site.mountAdmin(r, ctx); campaigns.mountAdmin(r, ctx); finances.mountAdmin(r, ctx); }, levelOf: clubLevel });
   if (!adminOn) { // explain instead of a bare "Not found" when the staff area has not been switched on yet
     app.get(/^\/admin(\/.*)?$/, (req, res) => res.status(404).type('html').send('<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Staff area not set up yet</title><body style="font:18px/1.5 Georgia,serif;max-width:560px;margin:8vh auto;padding:0 20px;color:#3b2412"><h1 style="font-weight:400">Staff area not set up yet</h1><p>The staff page switches on once this setting is added in Render (your hosting account):</p><ol><li><b>ADMIN_PASSWORD</b>: a password of 12 or more characters</li></ol><p>Some screens (yahrzeits, members, sponsorships) also need <b>DATABASE_URL</b>, the address of your database (for example a free one from neon.com).</p><p>After you save it, Render restarts and this page becomes your sign-in page. Step-by-step: <code>store/rabbi-setup.md</code>.</p>'));
   }
@@ -421,7 +466,16 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     next();
   }, express.static(path.join(ROOT, 'board'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
   app.use('/pushka', express.static(path.join(ROOT, 'pushka'), { dotfiles: 'ignore', maxAge: 0, etag: true }));
+  app.use(site.notFound);
   app.use((req, res) => res.status(404).type('text').send('Not found'));
+  // Last stop for errors: a short message, never the server's code (bad JSON or a broken address is the visitor's 4xx).
+  app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
+    const status = err && (err.status || err.statusCode) >= 400 && (err.status || err.statusCode) < 500 ? (err.status || err.statusCode) : 500;
+    if (status === 500) log.error('server error:', err && err.message);
+    if (res.headersSent) return res.end();
+    if (/^\/(api|admin\/api)\//.test(req.path)) return res.status(status).json({ code: status === 500 ? 'server_error' : 'bad_request', error: status === 500 ? 'Something went wrong. Please try again.' : 'Bad request.' });
+    res.status(status === 400 ? 404 : status).type('text').send(status === 500 ? 'Something went wrong. Please try again, or call 925-384-7242.' : 'Not found');
+  });
   return app;
 }
 
@@ -457,6 +511,14 @@ if (require.main === module) {
       stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '',
       store, sendPush, mailer: require('./mailer.js').createMailer({ url: process.env.SMTP_URL, from: process.env.MAIL_FROM }), reminders: true, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
     }).listen(port, () => console.log('Listening on ' + port));
+    // Render's free plan puts the server to sleep after 15 minutes without visitors; the next visitor then waits up to
+    // a minute, and no reminder emails go out while it sleeps. Visiting our own public address every 10 minutes keeps
+    // it awake (one always-on service fits in the free plan's 750 hours a month). KEEP_AWAKE=0 turns this off.
+    const self = process.env.RENDER_EXTERNAL_URL || '';
+    if (process.env.RENDER && self && process.env.KEEP_AWAKE !== '0') {
+      setInterval(() => { fetch(self.replace(/\/$/, '') + '/healthz').catch(() => {}); }, 10 * 60 * 1000).unref();
+      console.log('Keeping the server awake: ' + self);
+    }
   })().catch((e) => { console.error('Startup failed:', e.message); process.exit(1); });
 }
 

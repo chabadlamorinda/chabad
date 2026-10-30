@@ -1,6 +1,8 @@
 # Chabad of Lamorinda: website and My Pushka app
 
-* `index.html`, `styles.css`: the main website.
+**The new website** (`site/` content + `server/site/` code) is served by the Node server: events with one-tap RSVP, member accounts with family, birthdays and yahrzeits, Shabbat and holiday times, Jewish calendar tools, and full Google/AI metadata (structured data, sitemap, `llms.txt`). Claude edits it by conversation; see [`CLAUDE.md`](CLAUDE.md). Setup and launch: [`store/website-setup.md`](store/website-setup.md).
+
+* `index.html`, `styles.css`: the original placeholder page (static service), replaced by the new website.
 * `pushka/`: the **My Pushka** app (English and Hebrew), installable on a phone's home screen.
 * `server/`: a small Node server that serves the site and handles **Stripe card payments** for the app.
 * `kiddush/`: the **Kiddush board**: a TV display (`/kiddush/tv/`), a phone sponsor page (`/kiddush/`) and an admin page (`/admin/kiddush/`). Setup: [`store/kiddush-setup.md`](store/kiddush-setup.md).

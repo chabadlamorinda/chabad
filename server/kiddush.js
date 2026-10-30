@@ -45,6 +45,7 @@ const dedicationText = (kind, text) => (text ? (KINDS[kind] ? KINDS[kind] + ' ' 
 
 const MAX_REMINDERS = 3;
 // The address shown on the TV and in its QR code unless Staff > Settings says otherwise.
+const TIMEZONE = 'America/Los_Angeles'; // Lafayette, CA (the clock on the TV)
 const SHARE_DEFAULT = 'https://chabadoflamorinda.com/kiddush';
 
 function createKiddush({ store, stripe, log = console, now = () => new Date(), mailer = null }) {
@@ -106,7 +107,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   async function board({ year, admin = false, exact = false } = {}) {
     const st = await settings();
     const { today } = await todayInfo();
-    const [overrides, events, live, notes] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), allNotes()]) : [new Map(), [], [], await allNotes()];
+    const [overrides, events, live, allNotesList] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), allNotes()]) : [new Map(), [], [], await allNotes()];
+    const notes = admin ? allNotesList : allNotesList.filter((n) => n.date >= today); // a note disappears from the board once its own date has passed
     const byKey = new Map(); // slot key -> every live sponsorship of that week, oldest first
     for (const sp of live) { if (!byKey.has(sp.slot_key)) byKey.set(sp.slot_key, []); byKey.get(sp.slot_key).push(sp); }
     let y, all, next;
@@ -167,7 +169,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     return {
       orgName: st.orgName, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
-      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl || SHARE_DEFAULT, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
+      contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl || SHARE_DEFAULT, timezone: TIMEZONE, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,
     };
   }
@@ -201,6 +203,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       dedication: clean(b.dedication, 120), phone: clean(b.phone, 30), note: clean(b.note, 300), fee: b.fee === true && method === 'card' && st.coverFee,
     };
   }
+  // Which page the sponsor comes back to after paying: the website's Kiddush page, or the Kiddush app's own page.
+  const pageOf = (body) => (/^\/(?:(?:he|ru)\/)?sponsor-a-kiddush$/.test(String((body && body.page) || '')) ? body.page : '/kiddush/');
   const baseUrl = (req, st) => {
     const configured = /^https:\/\/[^/\s]+$/.test(st.publicUrl.replace(/\/+$/, '')) ? st.publicUrl.replace(/\/+$/, '') : '';
     return configured || req.protocol + '://' + req.get('host');
@@ -229,8 +233,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       customer_email: f.email,
       payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: 'unrecorded', slot: slot.key } },
       metadata: { source: 'kiddush', sponsorship: 'unrecorded', slot: slot.key, sponsor: f.name, anonymous: f.anonymous ? 'yes' : 'no', dedication_kind: f.kind, dedication: f.dedication, phone: f.phone, note: f.note, amount_cents: String(f.amount), fee_covered: fee ? 'yes' : 'no' },
-      success_url: base + '/kiddush/?paid=unrecorded&session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: base + '/kiddush/?cancelled=unrecorded',
+      success_url: base + pageOf(body) + '?paid=unrecorded&session_id={CHECKOUT_SESSION_ID}',
+      cancel_url: base + pageOf(body) + '?cancelled=unrecorded',
       expires_at: Math.floor(Date.now() / 1000) + 31 * 60,
     }, { idempotencyKey: 'kiddush-unrec-' + f.idem });
     return { ok: true, recorded: false, status: 'pending', method: 'card', url: session.url };
@@ -262,8 +266,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
         customer_email: f.email,
         payment_intent_data: { description: title, receipt_email: f.email, metadata: { source: 'kiddush', sponsorship: id, slot: slot.key } },
         metadata: { source: 'kiddush', sponsorship: id, slot: slot.key, fee_covered: fee ? 'yes' : 'no' },
-        success_url: base + '/kiddush/?paid=' + id + '&session_id={CHECKOUT_SESSION_ID}',
-        cancel_url: base + '/kiddush/?cancelled=' + id,
+        success_url: base + pageOf(body) + '?paid=' + id + '&session_id={CHECKOUT_SESSION_ID}',
+        cancel_url: base + pageOf(body) + '?cancelled=' + id,
         expires_at: Math.floor(Date.now() / 1000) + 31 * 60,
       }, { idempotencyKey: 'kiddush-' + id });
       await store.attachSession(id, session.id);

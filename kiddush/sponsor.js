@@ -96,7 +96,7 @@
       years.appendChild(h('button', { class: 'tab', role: 'tab', 'aria-selected': String(y === st.year), text: String(y), onclick: function () { load(y); } }));
     });
     var list = $('list'); list.textContent = '';
-    var slots = b.slots.filter(function (s) { return !st.onlyOpen || (s.status === 'open' && !s.past); });
+    var slots = b.slots.filter(function (s) { return (!st.onlyOpen || (s.status === 'open' && !s.past)) && !(KI.embed && s.past); }); // the website shows only weeks still to come
     if (!slots.length) list.appendChild(h('p', { class: 'muted center', text: st.onlyOpen ? T('Every upcoming week this year is sponsored. Thank you!') : T('No upcoming weeks in this year.') }));
     var last = '';
     slots.forEach(function (s) {
@@ -104,7 +104,7 @@
       if (label !== last) { list.appendChild(h('div', { class: 'month', text: label })); last = label; }
       list.appendChild(card(s));
     });
-    if (!st.scrolled) { st.scrolled = true; scrollToCurrent(); }
+    if (!st.scrolled) { st.scrolled = true; if (!KI.embed) scrollToCurrent(); } // on the website the page opens at its top
   }
   // Land on the current week (the floating top covers the header); earlier weeks are just above.
   function scrollToCurrent() {
@@ -202,7 +202,7 @@
       if (!way()) return fail(T('Please choose how you would like to pay.'));
       st.busy = true; go.disabled = true; err.textContent = '';
       store('kiddush-me', { name: f.name.value.trim(), email: f.email.value.trim(), phone: f.phone.value.trim() });
-      api('/sponsor', { slot: s.key, name: f.name.value, anonymous: f.anon.checked, dedicationKind: f.ded.value.trim() ? f.kind.value : '', dedication: f.ded.value, email: f.email.value, phone: f.phone.value, amount: amount, method: way(), fee: f.fee.checked && way() === 'card', note: f.note.value, idem: idem, lang: KI.lang })
+      api('/sponsor', { page: KI.embed ? location.pathname : '', slot: s.key, name: f.name.value, anonymous: f.anon.checked, dedicationKind: f.ded.value.trim() ? f.kind.value : '', dedication: f.ded.value, email: f.email.value, phone: f.phone.value, amount: amount, method: way(), fee: f.fee.checked && way() === 'card', note: f.note.value, idem: idem, lang: KI.lang })
         .then(function (r) {
           if (r.method === 'card' && r.url) { go.textContent = T('Opening secure checkout…'); location.href = r.url; return; }
           st.busy = false; thanks(r, s, false, { name: f.name.value.trim(), email: f.email.value.trim(), phone: f.phone.value.trim(), amount: amount });
@@ -277,7 +277,7 @@
     } else if (params.get('cancelled')) {
       api('/cancel', { id: params.get('cancelled') }).then(function () { note(T('Payment cancelled. No charge was made and the week was released.')); load(st.year); }, function () {});
     }
-    if (id || params.get('cancelled')) history.replaceState(null, '', location.pathname + (KI.he ? '?lang=he' : ''));
+    if (id || params.get('cancelled')) history.replaceState(null, '', location.pathname + (KI.he && !KI.embed ? '?lang=he' : ''));
   }
 
   // Staff entry: not shown anywhere until the bottom-left corner of the screen is tapped.

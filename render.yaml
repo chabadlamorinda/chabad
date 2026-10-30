@@ -18,6 +18,8 @@ services:
     envVars:
       - key: NODE_VERSION
         value: "22"
+      - key: NODE_ENV                 # production: short error pages, faster templates
+        value: production
       - key: STRIPE_SECRET_KEY        # sk_test_... first, then sk_live_...  (set in the Render dashboard)
         sync: false
       - key: STRIPE_PUBLISHABLE_KEY   # pk_test_... first, then pk_live_...  (set in the Render dashboard)
@@ -44,4 +46,27 @@ services:
       - key: MAIL_FROM
         sync: false
       - key: APPLE_PAY_ASSOC          # contents of Stripe's Apple Pay domain file (optional)
+        sync: false
+      # ---- The new website (see store/website-setup.md) ----
+      - key: SITE_HOME                # 1 = this server's "/" opens the new website (pushka.* / kiddush.* addresses still open their apps)
+        value: "1"
+      - key: PUBLIC_URL               # the website's address; change to https://www.chabadoflamorinda.com on launch day
+        value: https://chabad-lamorinda-app.onrender.com
+      - key: SITE_INDEXABLE           # leave unset: Google may list the site once PUBLIC_URL is the real domain (0 = never, 1 = always)
+        sync: false
+      - key: GA_ID                    # Google Analytics 4 / Google Ads tag, e.g. G-XXXXXXX (optional)
+        sync: false
+      - key: FB_PAGE_ID               # Facebook Page id (photos in, event posts out)
+        sync: false
+      - key: FB_PAGE_TOKEN            # long-lived Page access token
+        sync: false
+      - key: IG_USER_ID               # Instagram business account id (posts the same drafts to Instagram)
+        sync: false
+      - key: GOOGLE_SITE_VERIFICATION # the code from Google Search Console's "HTML tag" option
+        sync: false
+      - key: BING_SITE_VERIFICATION   # Bing Webmaster Tools (Bing powers ChatGPT and Copilot search)
+        sync: false
+      - key: INDEXNOW_KEY             # any random 32-letter code; tells Bing and others about new pages instantly
+        generateValue: true
+      - key: ADMIN_EMAIL              # where "someone sent a Mazal Tov / idea" notices go (default: the site's email)
         sync: false

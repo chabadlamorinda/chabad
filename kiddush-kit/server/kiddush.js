@@ -92,7 +92,8 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   async function board({ year, admin = false, exact = false } = {}) {
     const st = await settings();
     const { today } = await todayInfo();
-    const [overrides, events, live, notes] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), store.listNotes()]) : [new Map(), [], [], []];
+    const [overrides, events, live, allNotesList] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), store.listNotes()]) : [new Map(), [], [], []];
+    const notes = admin ? allNotesList : allNotesList.filter((n) => n.date >= today); // a note disappears from the board once its own date has passed
     const byKey = new Map(); // slot key -> every live sponsorship of that week, oldest first
     for (const sp of live) { if (!byKey.has(sp.slot_key)) byKey.set(sp.slot_key, []); byKey.get(sp.slot_key).push(sp); }
     let y, all, next;
@@ -151,7 +152,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
   }
   function publicSettings(st) {
     return {
-      orgName: st.orgName, org: config.org, hebcalQuery: config.hebcalQuery, havdalahPad: config.havdalahPad, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
+      orgName: st.orgName, org: config.org, timezone: config.timezone, hebcalQuery: config.hebcalQuery, havdalahPad: config.havdalahPad, standardNote: st.standardNote, standardNoteHe: st.standardNoteHe, blessingHe: st.blessingHe, ways: waysOf(st), coverFee: st.coverFee, feeRate: FEE_RATE,
       zelleId: st.zelleId, zelleName: st.zelleName, venmoHandle: st.venmoHandle.replace(/^@/, ''), checkPayable: st.checkPayable, checkAddress: st.checkAddress,
       contactEmail: st.contactEmail, contactPhone: st.contactPhone, publicUrl: st.publicUrl, shareUrl: st.shareUrl, blessing: st.blessing, donorEn: st.donorEn, donorHe: st.donorHe,
       kinds: KINDS,

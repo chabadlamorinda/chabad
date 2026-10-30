@@ -2,7 +2,7 @@
 // Visual system from the design handoff ("Classical"). English and Hebrew (RTL).
 // Cards are saved and charged through our own Stripe-backed server (/api); the donation-page
 // redirect below is only a fallback used when the server has no Stripe keys yet.
-const DONATE_URL = "https://www.chabadoflamorinda.com/donate";
+const DONATE_URL = "https://www.chabadoflamorinda.com/donate"; // the website's donation page (used when card payments are not set up)
 const CANDLE_ZIP = "94549";                                      // Lafayette, CA
 const SITE_EMAIL = "rabbi@chabadoflamorinda.com";
 const MODEKEY = "lamorinda-pushka-mode";
@@ -13,13 +13,13 @@ const SITE = "https://www.chabadoflamorinda.com";
 const C3_HTML = `<bdi dir="ltr" style="white-space:nowrap">501(c)(3)</bdi>`;
 const EIN_HTML = `<bdi dir="ltr">47-4642750</bdi>`;
 const ORG_EIN = "47-4642750", ORG_PHONE = "925-384-7242", ORG_ADDR = "3477 Golden Gate Way, Lafayette, CA 94549", VENMO = "CHABAD-LAMORINDA";
-const ZELLE_EMAIL = ""; // the Zelle address from chabadoflamorinda.com/4970020 (it is hidden on the website by an anti-spam filter)
-const STOCK_URL = SITE + "/templates/articlecco_cdo/aid/5322044/jewish/Stock-Donations.htm", CRYPTO_URL = SITE + "/templates/articlecco_cdo/aid/5322110/jewish/Crypto-Donations.htm", BUILD_URL = SITE + "/templates/articlecco_cdo/aid/5322043/jewish/Building-Campaign.htm";
+const ZELLE_EMAIL = ""; // the Zelle address (also set "zelle" in site/content/org.json so the website shows it)
+const STOCK_URL = SITE + "/donate#stock", CRYPTO_URL = SITE + "/donate#crypto", BUILD_URL = SITE + "/donate#building"; // pages on the new website
 const FEE_RATE = 0.035, MAX_CARD = 10000;
 // <KIT:FEATURES> switches for parts that belong to one organisation (the kit turns the building campaign off)
 const FEATURES = { building: true, kiddush: true };
 // </KIT:FEATURES>
-// The same funds, amounts and options as chabadoflamorinda.com/4970020
+// The same funds, amounts and options as the website's donation page (/donate)
 // <KIT:FUNDS>
 const FUNDS = [
   { id: "general", name: "General Fund", desc: "Where it’s needed most", long: "Supports the day-to-day work of Chabad of Lamorinda across Lafayette, Moraga and Orinda." },
@@ -504,7 +504,7 @@ PG.otherways = () => sub(tt("Other ways to give"), `<div>${WAYS().map(([id, name
 function waysHtml(id) {
   const ein = EIN_HTML, copy = (v) => `<button class="btn btn-ghost" data-act="copy" data-v="${esc(v)}">${t("Copy")}</button>`, link = (u, l) => `<a class="btn btn-secondary cta" href="${esc(u)}" target="_blank" rel="noopener">${l}</a>`;
   return ({
-    zelle: ZELLE_EMAIL ? `<p>${t("Send your gift by Zelle to:")}</p><div class="card"><b dir="ltr" style="flex:1">${esc(ZELLE_EMAIL)}</b>${copy(ZELLE_EMAIL)}</div>` : `<p>${t("Send your gift by Zelle to the address shown on our donation page, or ask us for it.")}</p>${link(SITE + "/4970020", t("Open our donation page"))}`,
+    zelle: ZELLE_EMAIL ? `<p>${t("Send your gift by Zelle to:")}</p><div class="card"><b dir="ltr" style="flex:1">${esc(ZELLE_EMAIL)}</b>${copy(ZELLE_EMAIL)}</div>` : `<p>${t("Send your gift by Zelle to the address shown on our donation page, or ask us for it.")}</p>${link(SITE + "/donate#zelle", t("Open our donation page"))}`,
     venmo: `<p>${t("Send your gift on Venmo to:")}</p><div class="card"><b dir="ltr" style="flex:1">@${VENMO}</b>${copy("@" + VENMO)}</div>${link("https://venmo.com/u/" + VENMO, t("Open Venmo"))}`,
     daf: `<p>${t("Recommend a grant from your donor advised fund to Chabad of Lamorinda (Tax ID {ein}).", { ein })}</p><div class="card"><span dir="ltr" style="flex:1">${esc(ORG_ADDR)}</span>${copy(ORG_ADDR)}</div>`,
     check: `<p>${t("Make your check payable to Chabad of Lamorinda and mail it to:")}</p><div class="card"><span dir="ltr" style="flex:1">${esc(ORG_ADDR)}</span>${copy(ORG_ADDR)}</div>`,
@@ -1444,6 +1444,11 @@ A.install = async () => {
 
 // ---------- start ----------
 applyLang();
+// From the website's "sponsor in honor / in memory" buttons: /pushka/?go=give&fund=general&amt=180&ded=In%20memory%20of...
+try {
+  const q = new URLSearchParams(location.search);
+  if (q.get("go") === "give" && q.get("fund")) { const f = q.get("fund"), a = parseFloat(q.get("amt")); Object.assign(U, { giveFund: FUNDS.some((x) => x.id === f) ? f : "general", giveAmt: a > 0 && a <= 100000 ? r2(a) : 36, freq: "once", dedication: String(q.get("ded") || "").slice(0, 80) }); }
+} catch (e) {}
 try { const go = new URLSearchParams(location.search).get("go"); if (go === "coin") { setTimeout(() => A.dropPrimary(), 900); history.replaceState(null, "", location.pathname); } else if (go === "empty") { setTimeout(() => A.openEmpty(), 900); history.replaceState(null, "", location.pathname); } else if (["yahrzeit", "club", "give", "board", "occasions"].includes(go)) { U.page = go; U.stack = [go === "club" ? "give" : go === "give" ? "" : "more"].filter(Boolean); history.replaceState(null, "", location.pathname); } } catch (e) {}
 draw();
 if (S.bio) { showLock(); A.unlock(); }

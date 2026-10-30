@@ -19,13 +19,16 @@ fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive:
 
 // 1. what goes in
 for (const f of ['package.json', 'package-lock.json', '.gitignore']) cp_(f);
-copyDir('server', (r) => /server\/seed(\/|$)/.test(r));
+copyDir('server', (r) => /server\/(seed|site)(\/|$)|server\/site\.test\.js$/.test(r)); // the website (server/site) is not part of the kit
 copyDir('pushka', (r) => /pushka\/(icon[^/]*|logo[^/]*)$/.test(r));
 copyDir('board'); copyDir('kiddush');
 cp_('android/twa-manifest.json');
 for (const f of ['rabbi-setup.md', 'kiddush-setup.md', 'board-embed.md', 'ideas.md', 'android-guide.md']) cp_('store/' + f);
 
 // 2. private data out
+write('server/site/index.js', "// (The original organisation's website is not part of the kit.)\n'use strict';\nfunction mountSite() { return { mountAdmin() {}, notFound: (req, res, next) => next() }; }\nmodule.exports = { mountSite };\n");
+// the app's own tables get the same extra columns the website adds (the app code reads them)
+for (const f of ['community', 'outreach']) write(`server/site/${f}.js`, "'use strict';\nmodule.exports = { SCHEMA: " + JSON.stringify(fs.readFileSync(path.join(ROOT, `server/site/${f}.js`), "utf8").split('\n').filter((l) => /^ALTER TABLE (members|yahrzeits) /.test(l)).join('\n')) + ' };\n');
 write('server/calendar-notes.json', '[]\n');
 write('server/kiddush-legacy.js', "// (The original organisation's one-time import is not part of the kit.)\n'use strict';\nasync function importLegacy() { return 0; }\nmodule.exports = { importLegacy };\n");
 { // remove the tests that belong to that private data
@@ -97,7 +100,7 @@ Play Console answers (check each against Google's current wording):
 - Data safety: collects name, email, optional phone and mailing address, payment info (entered into Stripe's secure form; you never see the card number), the gift amount, and only if the user opts in: yahrzeit names/dates and a push-notification address. Not sold. Encrypted in transit. Users can delete their data in the app (More → Profile → Delete account).
 - Ads: none. In-app purchases: none (donations to a nonprofit are not purchases of digital goods). Target audience: 18 and over.
 `);
-const pj = JSON.parse(read('package.json')); pj.scripts = Object.assign({ customize: 'node scripts/customize.js' }, pj.scripts); pj.description = 'My Pushka: a tzedakah app for your Chabad house'; write('package.json', JSON.stringify(pj, null, 2) + '\n');
+const pj = JSON.parse(read('package.json')); pj.scripts = Object.assign({ customize: 'node scripts/customize.js' }, pj.scripts); pj.scripts.test = pj.scripts.test.replace(' server/site.test.js', ''); delete pj.scripts.dev; delete pj.scripts['facebook:post']; pj.description = 'My Pushka: a tzedakah app for your Chabad house'; write('package.json', JSON.stringify(pj, null, 2) + '\n');
 
 // 5. checks: nothing of the original organisation may remain
 const leftovers = [];

@@ -32,3 +32,4 @@ html[dir=rtl] .cbw-th,.cbw[dir=rtl] .cbw-th{border-left:0;border-right:3px solid
 @media (max-width:480px){.cbw-tr{font-size:12.5px}.cbw-th{gap:10px;padding:6px 10px}.cbw-tn{letter-spacing:.14em}}
 .cbw-tt{flex:1}
 @media (max-width:400px){.cbw-tn{font-size:18px;letter-spacing:.1em}.cbw-ct{font-size:12px;padding:1px 8px}.cbw-th svg{width:34px;height:auto}.cbw-name{font-size:16px;padding:8px 22px 9px}}
+.cbw-name{display:flex;align-items:center;justify-content:center;gap:8px}.cbw-name svg{flex:none;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}

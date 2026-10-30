@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "building-campaign",
+    "status": "draft",
+    "eyebrow": "Building Campaign",
+    "title": "A Home for Jewish Life in Lamorinda",
+    "tagline": "Help build a permanent Chabad center for Lafayette, Moraga and Orinda.",
+    "fund": "building",
+    "goal": 1000000,
+    "start": "2027-01-01",
+    "end": "2027-12-31",
+    "months": [12, 24, 36],
+    "years": [2, 3, 5],
+    "amounts": [180, 360, 1000, 1800, 3600, 10000, 18000, 36000],
+    "ambassadorGoal": 1800,
+    "story": "[Template: replace this with the real story.]\n\n## Why we are building\n[A few warm sentences: what happens at Chabad of Lamorinda today, and why a permanent home matters for the families of Lafayette, Moraga and Orinda.]\n\n## What the building will hold\n[The sanctuary, classrooms, the kitchen and social hall... only what is really planned.]\n\n## How you can help\nEvery gift, of every size, is a brick in this home. You can give once, spread your gift over months or years, dedicate a part of the building in honor or in memory of someone dear, or open your own ambassador page and invite your friends.",
+    "teams": [],
+    "levels": [
+      { "id": "building", "title": "[Example] Dedication of the building", "amount": 1000000, "quantity": 1, "text": "Your family's name on the building, for generations." },
+      { "id": "sanctuary", "title": "[Example] The sanctuary", "amount": 360000, "quantity": 1 },
+      { "id": "social-hall", "title": "[Example] The social hall", "amount": 180000, "quantity": 1 },
+      { "id": "classroom", "title": "[Example] A classroom", "amount": 54000, "quantity": 4 },
+      { "id": "ark", "title": "[Example] The Holy Ark", "amount": 36000, "quantity": 1 },
+      { "id": "library", "title": "[Example] The library", "amount": 25000, "quantity": 1 },
+      { "id": "mezuzah", "title": "[Example] A doorway's mezuzah", "amount": 1800, "quantity": 20 },
+      { "id": "brick", "title": "[Example] A brick on the donor wall", "amount": 360, "text": "Your name or a loved one's on the donor wall." }
+    ]
+  }
+]

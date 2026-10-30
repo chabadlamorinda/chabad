@@ -1,0 +1,46 @@
+/* Shared look for the Rabbi area pages (Rabbi's desk and Website community). Phone first: big buttons, nothing tiny. */
+body{font:16px/1.5 Georgia,serif;background:#f3f2f2;color:#201f1d;margin:0}
+main{max-width:900px;margin:0 auto;padding:20px}
+h1{font-weight:400;margin:0 0 4px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px}
+button{font:inherit;border:1px solid #b68235;background:transparent;color:#7d5411;border-radius:7px;padding:8px 14px;cursor:pointer;min-height:40px}
+button.on{background:#fff3e4}button.wa{background:#1f8f4e;border-color:#1f8f4e;color:#fff}
+input,textarea,select{font:inherit;border:1px solid #bab6b6;border-radius:7px;padding:8px;width:100%;box-sizing:border-box}textarea{margin:6px 0}
+.card{background:#fff;border:1px solid #d7d3d3;border-radius:9px;padding:12px 14px;margin:10px 0}
+.small{font-size:13px;color:#605d5d}.warn{color:#9b2c2c}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.hot{border-color:#b68235;box-shadow:0 0 0 2px #fff3e4}
+.pill{display:inline-block;border:1px solid #b68235;border-radius:12px;padding:0 8px;font-size:12px;color:#7d5411}.card .pill{margin-inline-start:6px}
+/* Sticky jump menu with counts, and folding sections */
+nav.jump{position:sticky;top:0;z-index:5;background:#f3f2f2;padding:8px 0;margin:8px 0 12px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;border-bottom:1px solid #d7d3d3}
+nav.jump a{flex:none;text-decoration:none;color:#7d5411;border:1px solid #d7c3a3;background:#fff;border-radius:999px;padding:6px 12px;font-size:15px;white-space:nowrap}
+nav.jump a.hot{background:#b68235;color:#fff;border-color:#b68235}
+nav.jump b.cnt:not(:empty){margin-inline-start:6px;font-family:system-ui,sans-serif;font-size:12px;background:#7d5411;color:#fff;border-radius:999px;padding:1px 7px}
+nav.jump a.hot b.cnt:not(:empty){background:#fff;color:#7d5411}
+details.sec{background:#fff;border:1px solid #d7d3d3;border-radius:12px;margin:12px 0;scroll-margin-top:64px}
+details.sec>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary h2{font-weight:400;font-size:20px;margin:0}
+details.sec>summary::after{content:"▾";color:#7d5411}details.sec[open]>summary::after{content:"▴"}
+details.sec>summary .cnt:not(:empty){margin-inline-start:auto;font-family:system-ui,sans-serif;font-size:13px;background:#b68235;color:#fff;border-radius:999px;padding:2px 9px}
+.sec-b{padding:0 16px 14px}.sec-b>.card{background:#fbfaf9}
+/* Rabbi's desk: "Waiting for you" */
+.waiting h2{font-weight:400;font-size:20px;margin:0 0 6px}
+.wait-row{display:flex;align-items:center;gap:10px;padding:12px 4px;border-bottom:1px solid #eee9e3;color:#201f1d;text-decoration:none;font-size:17px}
+.wait-row b{font-family:system-ui,sans-serif;background:#b68235;color:#fff;border-radius:999px;padding:2px 10px;font-size:15px}
+.wait-row span{margin-inline-start:auto;color:#7d5411;font-size:22px}
+.waiting a.big{display:block;text-align:center;margin-top:10px;padding:12px;border-radius:9px;background:#fff3e4;border:1px solid #b68235;color:#7d5411;text-decoration:none}
+/* Finances */
+.fin-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}.fin-cards .card{margin:0;display:grid;gap:2px}
+.fin-big{font-size:26px;font-weight:400}.fin-big.in{color:#1f7a46}.fin-big.out{color:#9b2c2c}
+.fin-chart{display:flex;gap:4px;align-items:flex-end;height:140px;margin:10px 0 4px}.fin-m{flex:1;display:flex;flex-direction:column;align-items:center;height:100%}
+.fin-bars{flex:1;width:100%;display:flex;gap:2px;align-items:flex-end}.fin-bars i{flex:1;display:block;border-radius:3px 3px 0 0;min-height:1px}
+.fin-bars i.in,.fin-key.in{background:#3a9a64}.fin-bars i.out,.fin-key.out{background:#c26a5a}.fin-m span{font-size:11px;color:#605d5d}
+.fin-key{display:inline-block;width:10px;height:10px;border-radius:2px}
+table.fin{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}table.fin td,table.fin th{padding:6px 4px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}table.fin th{font-size:13px;color:#605d5d;font-weight:400}
+.fin-form{display:grid;gap:8px}.fin-form [hidden]{display:none}.fin-tx.in b{color:#1f7a46}.fin-tx.out b{color:#9b2c2c}
+/* Check-in at the door */
+.ck{margin-top:10px}.ck-head{font-size:20px;margin:6px 0}
+.ck-row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin:6px 0;padding:12px 14px;min-height:60px;border:1px solid #d7d3d3;border-radius:12px;background:#fff;color:#201f1d}
+.ck-row.here{background:#e8f6ee;border-color:#3a9a64}.ck-mark{flex:none;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:2px solid #b8b3a8;font-size:20px;color:#fff}
+.ck-row.here .ck-mark{background:#1f7a46;border-color:#1f7a46}.ck-body{display:grid;gap:2px}.ck-body b{font-size:18px;font-weight:400}.ck-body small{color:#605d5d;font-size:13px}
+.ck input[type=number]{width:70px}

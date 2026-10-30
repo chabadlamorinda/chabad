@@ -3,13 +3,14 @@
   'use strict';
   var NS = 'http://www.w3.org/2000/svg';
   var LEVELS = [
-    { id: 'platinum', c: ['#ffffff', '#9fc0e3', '#3f6490', '#d6e8fa'], range: { en: '$720 and above a month', he: '720$ ומעלה בחודש' }, en: 'Platinum', he: 'פלטינה' },
-    { id: 'gold', c: ['#fff0b8', '#e0b046', '#a06f24', '#f6d98a'], range: { en: '$360 – $719 a month', he: '360$–719$ בחודש' }, en: 'Gold', he: 'זהב' },
-    { id: 'silver', c: ['#ffffff', '#cfd3d8', '#8a9099', '#f2f3f5'], range: { en: '$180 – $359 a month', he: '180$–359$ בחודש' }, en: 'Silver', he: 'כסף' },
-    { id: 'bronze', c: ['#f3c9a0', '#c98a55', '#8a5427', '#ecb98a'], range: { en: '$72 – $179 a month', he: '72$–179$ בחודש' }, en: 'Bronze', he: 'ארד' }
+    { id: 'platinum', c: ['#ffffff', '#9fc0e3', '#3f6490', '#d6e8fa'], range: { en: '$720 and above a month', he: '720$ ומעלה בחודש', ru: 'от $720 в месяц' }, en: 'Platinum', he: 'פלטינה', ru: 'Платина' },
+    { id: 'gold', c: ['#fff0b8', '#e0b046', '#a06f24', '#f6d98a'], range: { en: '$360 – $719 a month', he: '360$–719$ בחודש', ru: '$360–$719 в месяц' }, en: 'Gold', he: 'זהב', ru: 'Золото' },
+    { id: 'silver', c: ['#ffffff', '#cfd3d8', '#8a9099', '#f2f3f5'], range: { en: '$180 – $359 a month', he: '180$–359$ בחודש', ru: '$180–$359 в месяц' }, en: 'Silver', he: 'כסף', ru: 'Серебро' },
+    { id: 'bronze', c: ['#f3c9a0', '#c98a55', '#8a5427', '#ecb98a'], range: { en: '$72 – $179 a month', he: '72$–179$ בחודש', ru: '$72–$179 в месяц' }, en: 'Bronze', he: 'ארד', ru: 'Бронза' }
   ];
   var T = {
     en: { title: 'Chai Club', sub: 'Monthly donors who sustain Chabad of Lamorinda, day in and day out.', empty: 'Be the first to join', anon: 'Anonymous', more: function (n) { return '+ ' + n + ' more'; }, foot: 'Every monthly gift, large or small, keeps our community going. Thank you.', join: 'Join the Chai Club', members: function (n) { return n === 1 ? '1 member' : n + ' members'; } },
+    ru: { title: 'Клуб «Хай»', sub: 'Ежемесячные партнёры, которые день за днём поддерживают Хабад Ламоринды.', empty: 'Станьте первым', anon: 'Анонимно', more: function (n) { return '+ ещё ' + n; }, foot: 'Каждое ежемесячное пожертвование, большое или маленькое, поддерживает нашу общину. Спасибо.', join: 'Вступить в клуб «Хай»', members: function (n) { return 'партнёров: ' + n; } },
     he: { title: 'מועדון חי', sub: 'תורמים חודשיים התומכים בבית חב״ד לאמורינדה יום אחר יום.', empty: 'היו הראשונים להצטרף', anon: 'אנונימי', more: function (n) { return '+ עוד ' + n; }, foot: 'כל תרומה חודשית, גדולה או קטנה, מקיימת את הקהילה שלנו. תודה.', join: 'הצטרפו למועדון חי', members: function (n) { return n === 1 ? 'חבר אחד' : n + ' חברים'; } }
   };
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
@@ -37,11 +38,11 @@
   // The honor board: a midnight-blue panel with brass name plates, like a donor recognition wall.
   function render(data, o) {
     o = o || {};
-    var lang = o.lang === 'he' ? 'he' : 'en', X = T[lang]; data = data || { members: [], counts: {}, total: 0 };
+    var lang = o.lang === 'he' || o.lang === 'ru' ? o.lang : 'en', X = T[lang]; data = data || { members: [], counts: {}, total: 0 };
     var box = el('div', 'cbw'); box.setAttribute('lang', lang); box.setAttribute('dir', lang === 'he' ? 'rtl' : 'ltr');
     var frame = el('div', 'cbw-frame'), wood = el('div', 'cbw-wood'); frame.appendChild(wood); box.appendChild(frame);
     var head = el('div', 'cbw-head'), plate = el('div', 'cbw-plate-title'); plate.appendChild(el('div', 'cbw-he', 'מועדון חי'));
-    if (lang === 'en') plate.appendChild(el('div', 'cbw-en', 'CHAI CLUB')); head.appendChild(plate); head.appendChild(el('p', 'cbw-sub', X.sub)); wood.appendChild(head);
+    if (lang !== 'he') plate.appendChild(el('div', 'cbw-en', lang === 'ru' ? 'КЛУБ «ХАЙ»' : 'CHAI CLUB')); head.appendChild(plate); head.appendChild(el('p', 'cbw-sub', X.sub)); wood.appendChild(head);
     LEVELS.forEach(function (L) {
       var count = (data.counts && data.counts[L.id]) || 0, names = (data.members || []).filter(function (m) { return m.level === L.id; }), quiet = count - names.length;
       var tier = el('section', 'cbw-tier t-' + L.id); tier.setAttribute('data-level', L.id);
@@ -50,8 +51,8 @@
       if (count) th.appendChild(el('div', 'cbw-ct', X.members(count)));
       tier.appendChild(th);
       var grid = el('div', 'cbw-grid');
-      names.forEach(function (m) { var pl = el('div', 'cbw-name'); pl.appendChild(el('span', '', m.name)); grid.appendChild(pl); });
-      for (var q = 0; q < Math.min(quiet, 18); q++) { var ap = el('div', 'cbw-name cbw-anon'); ap.appendChild(el('span', '', X.anon)); grid.appendChild(ap); }
+      names.forEach(function (m) { var pl = el('div', 'cbw-name'); pl.appendChild(medal(L.id, 24)); pl.appendChild(el('span', '', m.name)); grid.appendChild(pl); }); // every partner gets a medal of their level
+      for (var q = 0; q < Math.min(quiet, 18); q++) { var ap = el('div', 'cbw-name cbw-anon'); ap.appendChild(medal(L.id, 24)); ap.appendChild(el('span', '', X.anon)); grid.appendChild(ap); }
       if (!count) grid.appendChild(el('div', 'cbw-empty', X.empty));
       tier.appendChild(grid);
       if (quiet > 18) tier.appendChild(el('div', 'cbw-more', X.more(quiet - 18)));

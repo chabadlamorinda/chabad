@@ -1,0 +1,141 @@
+[
+  { "id": "newsletter", "title": "קבלו את המייל השבועי שלנו", "intro": "זמני שבת, אירועים קרובים, תוכניות לחגים ורעיון קצר מהתורה, פעם בשבוע. אפשר לבטל את ההרשמה בכל עת.", "button": "הרשמה",
+    "fields": [
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "interests", "label": "מה מעניין אותי במיוחד", "type": "checkboxes", "options": ["אירועים וחגים", "שיעורים", "תוכניות לילדים ולמשפחה", "מעגל הנשים", "מועדון הגברים"] }
+    ] },
+  { "id": "preschool", "title": "גן הילדים היהודי למורינדה: סיורים, מידע והרשמה", "intro": "תאמו סיור, שאלו שאלה, הצטרפו לרשימת ההמתנה או התחילו בהרשמה. הרבנית ציפורה לבקובסקי תחזור אליכם.", "program": "jewish-preschool", "button": "שליחה",
+    "fields": [
+      { "id": "request", "label": "ברצוני", "type": "select", "required": true, "options": ["לתאם סיור", "לקבל מידע נוסף", "להירשם לשנת הלימודים הבאה", "להצטרף לרשימת ההמתנה", "לשאול על שהייה מזדמנת"] },
+      { "id": "name", "label": "שם ההורה", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel", "required": true },
+      { "id": "children", "label": "ילדים", "type": "children", "rows": 3, "columns": ["name", "birthday"] },
+      { "id": "start", "label": "תאריך התחלה מועדף", "type": "date" },
+      { "id": "days", "label": "ימים", "type": "checkboxes", "options": ["יום שני", "יום שלישי", "יום רביעי", "יום חמישי", "יום שישי"] },
+      { "id": "message", "label": "שאלות או הערות", "type": "textarea" }
+    ] },
+  { "id": "hebrew-school", "title": "הרשמה לתלמוד תורה למורינדה", "intro": "בימי ראשון בין 10:00 ל־12:00, לגילאי 3 עד 13. שכר הלימוד הוא 600$ לילד, כולל ספרים וציוד. אפשר לשלם בתשלומים, ואף ילד לא יידחה בגלל מחסור באמצעים.", "program": "hebrew-school", "button": "הרשמה",
+    "payment": { "fund": "children", "perChild": 600, "label": "תשלום שכר הלימוד עכשיו" },
+    "fields": [
+      { "id": "name", "label": "שם ההורה", "type": "text", "required": true },
+      { "id": "parent2", "label": "שם ההורה השני", "type": "text" },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel", "required": true },
+      { "id": "address", "label": "כתובת מגורים", "type": "text" },
+      { "id": "children", "label": "ילדים", "type": "children", "rows": 4, "required": true, "columns": ["name", "hebrewName", "birthday", "grade", "allergies"] },
+      { "id": "emergency", "label": "איש קשר לשעת חירום (שם וטלפון)", "type": "text", "required": true },
+      { "id": "photos", "label": "ניתן לפרסם תמונות של ילדיי בניוזלטר וברשתות החברתיות של הקהילה", "type": "checkbox" },
+      { "id": "plan", "label": "אשמח לפריסת תשלומים או למלגה", "type": "checkbox" },
+      { "id": "message", "label": "משהו שכדאי שנדע", "type": "textarea" }
+    ] },
+  { "id": "ckids", "title": "הרשמה לצהרון CKids", "intro": "גילאי 5 עד 13, בימי חול בין 15:00 ל־18:00: עזרה בשיעורי בית, ספורט, STEAM, עברית, מורשת יהודית וארוחה חמה.", "program": "ckids-afterschool", "button": "הרשמה",
+    "fields": [
+      { "id": "name", "label": "שם ההורה", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel", "required": true },
+      { "id": "children", "label": "ילדים", "type": "children", "rows": 4, "required": true, "columns": ["name", "birthday", "school", "grade", "allergies"] },
+      { "id": "days", "label": "ימים", "type": "checkboxes", "required": true, "options": ["יום שני", "יום שלישי", "יום רביעי", "יום חמישי", "יום שישי"] },
+      { "id": "pickup", "label": "מי רשאי לאסוף את הילדים", "type": "text" },
+      { "id": "message", "label": "משהו שכדאי שנדע", "type": "textarea" }
+    ] },
+  { "id": "summer-camp", "title": "הרשמה לקייטנת הקיץ היהודית למורינדה", "intro": "גילאי 2 עד 4, בין 8:30 ל־17:00. 3,200$ לכל הקיץ או 500$ לשבוע. מספר המקומות מוגבל.", "program": "summer-camp", "button": "הרשמה",
+    "payment": { "fund": "children", "label": "תשלום עכשיו" },
+    "fields": [
+      { "id": "name", "label": "שם ההורה", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel", "required": true },
+      { "id": "children", "label": "ילדים", "type": "children", "rows": 3, "required": true, "columns": ["name", "birthday", "allergies"] },
+      { "id": "plan", "label": "סוג ההרשמה", "type": "select", "required": true, "options": [{ "label": "כל הקיץ (3,200$ לילד)", "amount": 3200, "perChild": true }, { "label": "שבועות בודדים (500$ לשבוע לכל ילד)", "amount": 0 }] },
+      { "id": "weeks", "label": "מספר שבועות (בהרשמה לשבועות בודדים)", "type": "number", "min": 0, "max": 7, "amountEach": 500, "perChild": true },
+      { "id": "message", "label": "אילו שבועות, וכל דבר נוסף שכדאי שנדע", "type": "textarea" }
+    ] },
+  { "id": "bar-bat-mitzvah", "title": "בר ובת מצווה: מתחילים", "intro": "ספרו לנו על ילדכם, והרב או הרבנית ייצרו איתכם קשר כדי לתכנן את ההכנה ואת החגיגה. גם מבוגרים שלא חגגו בר או בת מצווה מוזמנים.", "program": "bar-bat-mitzvah", "button": "שליחה",
+    "fields": [
+      { "id": "name", "label": "שם ההורה", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel" },
+      { "id": "children", "label": "ילד/ה", "type": "children", "rows": 1, "columns": ["name", "hebrewName", "birthday"] },
+      { "id": "type", "label": "סוג", "type": "select", "options": ["בר מצווה", "בת מצווה (ומועדון בנות המצווה)", "בר או בת מצווה למבוגרים"] },
+      { "id": "message", "label": "שאלות או בקשות", "type": "textarea" }
+    ] },
+  { "id": "high-holidays", "title": "שריון מקומות לימים הנוראים", "intro": "התפילות בראש השנה וביום כיפור פתוחות לכולם, ללא כרטיסים וללא דמי חבר. השריון עוזר לנו לשמור לכם מקום ולהכין מספיק אוכל.", "holiday": "rosh-hashanah", "button": "שריון מקום",
+    "payment": { "fund": "holidays", "label": "תרומה לכבוד החג", "optional": true },
+    "fields": [
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel" },
+      { "id": "adults", "label": "מבוגרים", "type": "number", "min": 0, "max": 30, "required": true },
+      { "id": "kids", "label": "ילדים", "type": "number", "min": 0, "max": 30 },
+      { "id": "services", "label": "אני מתכנן/ת להגיע אל", "type": "checkboxes", "options": ["ערב ראש השנה", "ראש השנה, יום א׳", "ראש השנה, יום ב׳", "תקיעת שופר ותשליך במאגר לאפייט", "סעודת ראש השנה הקהילתית", "כל נדרי", "תפילות יום כיפור", "יזכור", "נעילה וסעודת סיום הצום"] },
+      { "id": "yizkor", "label": "שמות לחוברת הזיכרון של יזכור (שם וקרבה)", "type": "textarea" },
+      { "id": "message", "label": "הערות", "type": "textarea" }
+    ] },
+  { "id": "yizkor", "title": "חוברת הזיכרון של יזכור", "intro": "תפילת יזכור נאמרת ביום כיפור, בשמיני עצרת, ביום האחרון של פסח ובשבועות. הוסיפו את שמות יקיריכם לחוברת הזיכרון שלנו, והם ייזכרו יחד עם הקהילה.", "holiday": "yom-kippur", "button": "הוספת השמות",
+    "payment": { "fund": "holidays", "label": "תרומה לעילוי נשמתם", "optional": true },
+    "fields": [
+      { "id": "names", "label": "שמות יקיריכם (שם באנגלית ושם עברי אם ידוע, וקרבה)", "type": "textarea", "required": true },
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true }
+    ] },
+  { "id": "lulav-etrog", "title": "הזמנת סט לולב ואתרוג", "intro": "הזמינו את ארבעת המינים שלכם לסוכות. נעדכן אתכם במחיר ובמועד האיסוף.", "holiday": "sukkot", "button": "הזמנה",
+    "fields": [
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel", "required": true },
+      { "id": "quality", "label": "סט", "type": "select", "options": ["רגיל (כשר)", "מהודר (יפה במיוחד)", "סט לילדים"] },
+      { "id": "quantity", "label": "כמה סטים", "type": "number", "min": 1, "max": 20, "required": true },
+      { "id": "message", "label": "הערות", "type": "textarea" }
+    ] },
+  { "id": "matzah", "title": "הזמנת מצה שמורה וערכות לסדר", "intro": "מצה שמורה בעבודת יד וערכות ״סדר לדרך״ לפסח. נאשר את המחירים ואת מועד האיסוף.", "holiday": "passover", "button": "הזמנה",
+    "fields": [
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel", "required": true },
+      { "id": "matzah", "label": "מצה שמורה (בליברות)", "type": "number", "min": 0, "max": 50 },
+      { "id": "kits", "label": "ערכות ״סדר לדרך״", "type": "number", "min": 0, "max": 20 },
+      { "id": "seder", "label": "נשמח להצטרף גם לסדר הקהילתי", "type": "checkbox" },
+      { "id": "message", "label": "הערות", "type": "textarea" }
+    ] },
+  { "id": "sell-chametz", "title": "מכירת חמץ", "intro": "לקראת פסח: אסור ליהודי שיהיה ברשותו חמץ (מאכל מחמיץ). ייפו את כוחו של הרב למכור את החמץ שלכם בשמכם. במהלך הפסח אחסנו אותו בארון או בחדר סגור; לאחר החג הוא נקנה בחזרה עבורכם.", "holiday": "passover", "button": "מתן הרשאה למכירה",
+    "payment": { "fund": "holidays", "label": "מתן הצדקה הנהוגה", "optional": true },
+    "fields": [
+      { "id": "name", "label": "שם מלא", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel" },
+      { "id": "locations", "label": "הכתובות שבהן יימצא החמץ שלכם (בית, משרד, רכב...)", "type": "textarea", "required": true },
+      { "id": "where", "label": "היכן בכל מקום (למשל ארון המטבח מעל המקרר, מדף במוסך)", "type": "textarea" },
+      { "id": "travel", "label": "אם תהיו באזור זמן אחר במהלך הפסח, היכן?", "type": "text" },
+      { "id": "authorize", "label": "אני הח״מ מייפה את כוחו של הרב ישראל לבקובסקי להיות שלוחי למכור כל חמץ שברשותי, בכל מקום שהוא, ולהשכיר את המקומות שבהם הוא נמצא, כדין וכהלכה, ולקנותו בחזרה עבורי לאחר הפסח.", "type": "checkbox", "required": true },
+      { "id": "signature", "label": "הקלידו את שמכם המלא כחתימה", "type": "text", "required": true }
+    ] },
+  { "id": "mezuzah-tefillin", "title": "מזוזות ותפילין: רכישה, בדיקה או קביעה", "intro": "רכשו מזוזה או תפילין כשרים, תנו לסופר סת״ם לבדוק את שלכם, או הזמינו את הרב שיבוא ויעזור לקבוע את המזוזות.", "button": "שליחה",
+    "fields": [
+      { "id": "request", "label": "ברצוני", "type": "checkboxes", "required": true, "options": ["לרכוש מזוזה", "לבדוק את המזוזות שלי", "לקבל עזרה בקביעת מזוזות", "לרכוש תפילין", "לבדוק את התפילין שלי", "ללמוד להניח תפילין"] },
+      { "id": "count", "label": "כמה מזוזות (אם רלוונטי)", "type": "number", "min": 0, "max": 50 },
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel", "required": true },
+      { "id": "address", "label": "כתובת", "type": "text" },
+      { "id": "message", "label": "הערות", "type": "textarea" }
+    ] },
+  { "id": "shabbat-meal", "title": "לארח או להתארח לסעודת שבת", "intro": "חדשים בעיר, סטודנטים, או סתם רוצים חברה לשבת? או אולי תרצו לפתוח את השולחן שלכם לאחרים? אנחנו נדאג להתאמה.", "button": "שליחה",
+    "fields": [
+      { "id": "role", "label": "ברצוני", "type": "select", "required": true, "options": ["להתארח לסעודת שבת", "לארח אורחים לסעודת שבת", "להצטרף למשפחת הרב לסעודת ליל שבת"] },
+      { "id": "people", "label": "כמה אנשים", "type": "number", "min": 1, "max": 20 },
+      { "id": "date", "label": "איזו שבת", "type": "date" },
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel" },
+      { "id": "message", "label": "העדפות תזונתיות או הערות", "type": "textarea" }
+    ] },
+  { "id": "volunteer", "title": "התנדבות", "intro": "עזרו לבנות חיים יהודיים בלמורינדה, שעה אחת או עונה שלמה בכל פעם.", "button": "רשמו אותי",
+    "fields": [
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel" },
+      { "id": "help", "label": "במה אוכל לעזור", "type": "checkboxes", "options": ["אירועי חגים", "הקמת הסוכה", "אפיית חלות", "הכנת הקידוש", "ביקור קשישים וחולים", "הסעות", "הוראה או שיעורים פרטיים", "צילום", "עזרה במשרד"] },
+      { "id": "message", "label": "מתי אתם פנויים?", "type": "textarea" }
+    ] }
+]

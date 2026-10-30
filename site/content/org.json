@@ -1,0 +1,124 @@
+{
+  "name": "Chabad of Lamorinda",
+  "shortName": "Chabad of Lamorinda",
+  "alternateNames": [
+    "Chabad Lamorinda",
+    "Chabad of Lafayette",
+    "Chabad of Moraga",
+    "Chabad of Orinda",
+    "Lamorinda Shul"
+  ],
+  "tagline": "Judaism with a smile, for every Jew in Lamorinda",
+  "description": "Chabad of Lamorinda is a warm, welcoming Jewish center in Lafayette, California, serving Lafayette, Moraga and Orinda with Shabbat and holiday services, a Jewish preschool, Hebrew school, classes and community events. No membership required.",
+  "address": {
+    "street": "3477 Golden Gate Way",
+    "city": "Lafayette",
+    "region": "CA",
+    "postal": "94549"
+  },
+  "geo": {
+    "lat": 37.8858,
+    "lng": -122.118
+  },
+  "phone": "925-384-7242",
+  "email": "info@chabadoflamorinda.com",
+  "rebbetzinMobile": "925-384-7241",
+  "areaServed": [
+    "Lafayette",
+    "Moraga",
+    "Orinda",
+    "Pleasant Hill",
+    "Martinez"
+  ],
+  "staff": [
+    {
+      "name": "Rabbi Yisroel Labkowski",
+      "role": "Rabbi and Director"
+    },
+    {
+      "name": "Tzipora Labkowski",
+      "role": "Rebbetzin; Director of Lamorinda Jewish Preschool and Lamorinda Hebrew School"
+    }
+  ],
+  "legal": "A 501(c)(3) nonprofit, tax ID 47-4642750.",
+  "donateUrl": "/donate",
+  "social": {
+    "facebook": "https://www.facebook.com/chabadoflamorinda"
+  },
+  "kabbalatShabbat": {
+    "latest": "18:45",
+    "dates": {}
+  },
+  "services": [
+    {
+      "name": "Shacharit (morning prayers)",
+      "time": "Sunday 8:00 AM; Monday to Friday 6:30 AM"
+    },
+    {
+      "name": "Kabbalat Shabbat",
+      "time": "Friday evening, {kabbalat-shabbat}",
+      "note": "time may change with the season"
+    },
+    {
+      "name": "Shabbat morning",
+      "time": "Saturday 10:00 AM to 12:00 PM",
+      "note": "Torah reading, a short talk and children's participation, then a hot Kiddush lunch"
+    }
+  ],
+  "weekly": [
+    {
+      "day": "Sunday",
+      "time": "10:00 AM – 12:00 PM",
+      "name": "Lamorinda Hebrew School",
+      "link": "/programs/hebrew-school",
+      "byDay": "Sunday",
+      "startTime": "10:00",
+      "endTime": "12:00"
+    },
+    {
+      "day": "Sunday",
+      "time": "9:00 – 10:00 PM",
+      "name": "Weekly Torah class (English)",
+      "link": "/programs/adult-education",
+      "byDay": "Sunday",
+      "startTime": "21:00",
+      "endTime": "22:00"
+    },
+    {
+      "day": "Tuesday",
+      "time": "8:30 – 9:30 PM",
+      "name": "Torah class in Hebrew, with a meal",
+      "link": "/programs/adult-education",
+      "byDay": "Tuesday",
+      "startTime": "20:30",
+      "endTime": "21:30"
+    },
+    {
+      "day": "Wednesday",
+      "time": "1:00 – 2:00 PM",
+      "name": "Tanya class (English)",
+      "link": "/programs/adult-education",
+      "byDay": "Wednesday",
+      "startTime": "13:00",
+      "endTime": "14:00"
+    },
+    {
+      "day": "Friday",
+      "time": "{kabbalat-shabbat}",
+      "name": "Kabbalat Shabbat",
+      "link": "/shabbat",
+      "byDay": "Friday",
+      "startTime": "17:45"
+    },
+    {
+      "day": "Saturday",
+      "time": "10:00 AM",
+      "name": "Shabbat services and Kiddush lunch",
+      "link": "/shabbat",
+      "byDay": "Saturday",
+      "startTime": "10:00",
+      "endTime": "12:00"
+    }
+  ],
+  "shabbatText": "## Friday night: there is always a seat for you\nKabbalat Shabbat starts at {kabbalat-shabbat}, and then the Labkowski family sits down to Friday night dinner, and you are always welcome to join. Fresh challah, Kiddush over wine, songs around the table and good conversation that nobody is in a hurry to end. Come on your own, with your family or with a friend; your first time is as welcome as your fiftieth. Just let us know you are coming, with the “Come for a Shabbat meal” button or at 925-384-7242.\n\n## Shabbat morning: services open to everyone\nSaturday at 10 AM. Traditional prayers in a relaxed, friendly room, with a bilingual prayer book so you can follow along whether or not you read Hebrew. There is the Torah reading, a short talk, and children are part of it all. Come for the whole morning or for part of it; nobody is counting.\n\n## Kiddush: come for the cholent\nAfter services the whole community sits down together to a hot Kiddush lunch: a warm bowl of cholent, a l'chaim and plenty of time to talk. It is open to everyone, every Shabbat. Join us whenever you'd like.\n\n## Mark an occasion with the community\nA birthday, an anniversary or a yahrzeit? [Sponsor a Kiddush](/sponsor-a-kiddush) and the whole community celebrates or remembers with you."
+}

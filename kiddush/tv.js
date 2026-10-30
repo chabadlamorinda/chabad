@@ -77,9 +77,11 @@
     (s.notes || []).forEach(function (n) { main.appendChild(el('div', 'p-note', KI.note(n))); }); // this week's notes go last, after the sponsors
     box.appendChild(main);
     var sh = shareAddress(b.settings), url = sh.url || (sh.base + '/kiddush/?w=' + encodeURIComponent(s.key));
-    var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url); qr.appendChild(q);
+    var qr = el('div', 'p-qr'), q = el('div', 'qr'); q.innerHTML = qrSvg(url);
+    qr.appendChild(el('div', 'clock', '')); // the clock sits right above the QR code
+    qr.appendChild(q);
     qr.appendChild(el('div', 'q1', sps.length ? T('SPONSOR A KIDDUSH') : T('SCAN TO SPONSOR')));
-    var q2 = el('div', 'q2'), cut = sh.label.indexOf('/'); // address on two lines (site, then path) so it never breaks mid-word
+    var q2 = el('div', 'q2'), cut = sh.label.indexOf('/'); q2.dir = 'ltr'; // web addresses always read left to right // address on two lines (site, then path) so it never breaks mid-word
     q2.appendChild(el('div', 'q2h', cut > 0 ? sh.label.slice(0, cut) : sh.label)); if (cut > 0) q2.appendChild(el('div', 'q2p', sh.label.slice(cut)));
     qr.appendChild(q2);
     box.appendChild(qr);
@@ -89,9 +91,11 @@
     Array.prototype.forEach.call(box.querySelectorAll('.q2h, .q2p'), function (n) { fit(n, .6); });
     // a long dedication must never push the label off the plate: shrink the sponsor text until everything fits
     var pm = box.querySelector('.p-main'), guard = 0;
-    while (pm && pm.scrollHeight > pm.clientHeight + 1 && guard++ < 14) {
+    if (pm) pm.style.justifyContent = 'flex-start'; // measure from the top: centred overflow would be hidden above the first line
+    while (pm && pm.scrollHeight > pm.clientHeight + 1 && guard++ < 18) {
       Array.prototype.forEach.call(pm.querySelectorAll('.p-sp, .p-ded, .p-note'), function (n) { n.style.fontSize = parseFloat(getComputedStyle(n).fontSize) * .93 + 'px'; });
     }
+    if (pm) pm.style.justifyContent = '';
     var ded = box.querySelector('.p-ded'); if (ded) { var g = 0; while (ded.scrollHeight > ded.clientHeight + 1 && ded.scrollHeight > parseFloat(getComputedStyle(ded).fontSize) * 2.4 && g++ < 12) ded.style.fontSize = parseFloat(getComputedStyle(ded).fontSize) * .92 + 'px'; }
   }
 
@@ -173,13 +177,22 @@
     var nm = d.querySelector('.donor-name'); if (nm) fit(nm, .5);
   }
 
+  // Small gold clock in the corner of the centre column (in the shul's time zone once the board has loaded; the TV's own clock until then).
+  function tickClock() {
+    var nodes = document.querySelectorAll('.clock'); if (!nodes.length) return;
+    var tz = board && board.settings && board.settings.timezone, opts = { hour: 'numeric', minute: '2-digit', hour12: !KI.he };
+    var txt; try { if (tz) opts.timeZone = tz; txt = new Intl.DateTimeFormat(KI.he ? 'he-IL' : 'en-US', opts).format(new Date()); } catch (e) { txt = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }); }
+    Array.prototype.forEach.call(nodes, function (n) { n.textContent = txt; });
+  }
+  tickClock(); setInterval(tickClock, 5000);
+
   function render(b) {
     board = b;
     $('yearNum').textContent = KI.he ? '' : b.year; $('yearHe').textContent = b.yearHe; $('year').querySelector('.dash').style.display = KI.he ? 'none' : '';
     var s = b.settings;
     $('blessing').textContent = KI.blessing(s) || '';
     renderDonor(b);
-    layout(b); renderPlate(b);
+    layout(b); renderPlate(b); tickClock();
     fit(document.querySelector('.title'), .6);
   }
 

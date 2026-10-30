@@ -1,0 +1,141 @@
+[
+  { "id": "newsletter", "title": "Подпишитесь на нашу еженедельную рассылку", "intro": "Время Шабата, ближайшие события, праздничные программы и короткая мысль из Торы раз в неделю. Отписаться можно в любой момент.", "button": "Подписаться",
+    "fields": [
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "interests", "label": "Меня особенно интересуют", "type": "checkboxes", "options": ["События и праздники", "Уроки", "Программы для детей и семей", "Женский клуб", "Мужской клуб"] }
+    ] },
+  { "id": "preschool", "title": "Еврейский детский сад Ламоринды: экскурсии, информация и запись", "intro": "Запишитесь на экскурсию, задайте вопрос, встаньте в лист ожидания или начните запись. Ребецен Ципора Лабковская свяжется с вами.", "program": "jewish-preschool", "button": "Отправить",
+    "fields": [
+      { "id": "request", "label": "Я хочу", "type": "select", "required": true, "options": ["Записаться на экскурсию", "Получить больше информации", "Подать заявку на следующий учебный год", "Встать в лист ожидания", "Узнать о разовом посещении"] },
+      { "id": "name", "label": "Имя родителя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel", "required": true },
+      { "id": "children", "label": "Дети", "type": "children", "rows": 3, "columns": ["name", "birthday"] },
+      { "id": "start", "label": "Желаемая дата начала", "type": "date" },
+      { "id": "days", "label": "Дни", "type": "checkboxes", "options": ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница"] },
+      { "id": "message", "label": "Вопросы или примечания", "type": "textarea" }
+    ] },
+  { "id": "hebrew-school", "title": "Запись в Еврейскую школу Ламоринды", "intro": "По воскресеньям с 10:00 до 12:00, для детей от 3 до 13 лет. Стоимость обучения $600 за ребёнка, включая книги и материалы. Возможна оплата в рассрочку, и ни одному ребёнку не откажут из-за нехватки средств.", "program": "hebrew-school", "button": "Записаться",
+    "payment": { "fund": "children", "perChild": 600, "label": "Оплатить обучение сейчас" },
+    "fields": [
+      { "id": "name", "label": "Имя родителя", "type": "text", "required": true },
+      { "id": "parent2", "label": "Имя второго родителя", "type": "text" },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel", "required": true },
+      { "id": "address", "label": "Домашний адрес", "type": "text" },
+      { "id": "children", "label": "Дети", "type": "children", "rows": 4, "required": true, "columns": ["name", "hebrewName", "birthday", "grade", "allergies"] },
+      { "id": "emergency", "label": "Контакт на экстренный случай (имя и телефон)", "type": "text", "required": true },
+      { "id": "photos", "label": "Фотографии моих детей можно публиковать в рассылке и социальных сетях общины", "type": "checkbox" },
+      { "id": "plan", "label": "Я хотел(а) бы рассрочку или стипендию", "type": "checkbox" },
+      { "id": "message", "label": "Что нам следует знать", "type": "textarea" }
+    ] },
+  { "id": "ckids", "title": "Запись на продлёнку CKids", "intro": "Дети от 5 до 13 лет, по будням с 15:00 до 18:00: помощь с домашним заданием, спорт, STEAM, иврит, еврейское наследие и горячее питание.", "program": "ckids-afterschool", "button": "Записаться",
+    "fields": [
+      { "id": "name", "label": "Имя родителя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel", "required": true },
+      { "id": "children", "label": "Дети", "type": "children", "rows": 4, "required": true, "columns": ["name", "birthday", "school", "grade", "allergies"] },
+      { "id": "days", "label": "Дни", "type": "checkboxes", "required": true, "options": ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница"] },
+      { "id": "pickup", "label": "Кто может забирать детей", "type": "text" },
+      { "id": "message", "label": "Что нам следует знать", "type": "textarea" }
+    ] },
+  { "id": "summer-camp", "title": "Запись в еврейский летний лагерь Ламоринды", "intro": "Дети от 2 до 4 лет, с 8:30 до 17:00. $3 200 за всё лето или $500 в неделю. Количество мест ограничено.", "program": "summer-camp", "button": "Записаться",
+    "payment": { "fund": "children", "label": "Оплатить сейчас" },
+    "fields": [
+      { "id": "name", "label": "Имя родителя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel", "required": true },
+      { "id": "children", "label": "Дети", "type": "children", "rows": 3, "required": true, "columns": ["name", "birthday", "allergies"] },
+      { "id": "plan", "label": "Вариант записи", "type": "select", "required": true, "options": [{ "label": "Всё лето ($3 200 за ребёнка)", "amount": 3200, "perChild": true }, { "label": "Отдельные недели ($500 в неделю за ребёнка)", "amount": 0 }] },
+      { "id": "weeks", "label": "Количество недель (для отдельных недель)", "type": "number", "min": 0, "max": 7, "amountEach": 500, "perChild": true },
+      { "id": "message", "label": "Какие недели, и всё, что нам следует знать", "type": "textarea" }
+    ] },
+  { "id": "bar-bat-mitzvah", "title": "Бар- и бат-мицва: с чего начать", "intro": "Расскажите нам о своём ребёнке, и раввин или ребецен свяжутся с вами, чтобы спланировать подготовку и праздник. Взрослые, у которых не было бар- или бат-мицвы, тоже приглашаются.", "program": "bar-bat-mitzvah", "button": "Отправить",
+    "fields": [
+      { "id": "name", "label": "Имя родителя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel" },
+      { "id": "children", "label": "Ребёнок", "type": "children", "rows": 1, "columns": ["name", "hebrewName", "birthday"] },
+      { "id": "type", "label": "Тип", "type": "select", "options": ["Бар-мицва", "Бат-мицва (и клуб бат-мицвы)", "Бар- или бат-мицва для взрослых"] },
+      { "id": "message", "label": "Вопросы или пожелания", "type": "textarea" }
+    ] },
+  { "id": "high-holidays", "title": "Бронирование мест на Высокие праздники", "intro": "Молитвы на Рош а-Шана и Йом Кипур открыты для всех, без билетов и членских взносов. Бронирование помогает нам оставить для вас место и приготовить достаточно еды.", "holiday": "rosh-hashanah", "button": "Забронировать",
+    "payment": { "fund": "holidays", "label": "Сделать праздничное пожертвование", "optional": true },
+    "fields": [
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel" },
+      { "id": "adults", "label": "Взрослые", "type": "number", "min": 0, "max": 30, "required": true },
+      { "id": "kids", "label": "Дети", "type": "number", "min": 0, "max": 30 },
+      { "id": "services", "label": "Я планирую прийти на", "type": "checkboxes", "options": ["Вечер Рош а-Шана", "Рош а-Шана, 1-й день", "Рош а-Шана, 2-й день", "Шофар и Ташлих у водохранилища Лафайетт", "Общинный ужин на Рош а-Шана", "Коль Нидрей", "Йом Кипур, дневные молитвы", "Изкор", "Неила и трапеза после поста"] },
+      { "id": "yizkor", "label": "Имена для поминальной книжки Изкор (имя и степень родства)", "type": "textarea" },
+      { "id": "message", "label": "Примечания", "type": "textarea" }
+    ] },
+  { "id": "yizkor", "title": "Поминальная книжка Изкор", "intro": "Изкор читают в Йом Кипур, Шмини Ацерет, последний день Песаха и Шавуот. Добавьте имена ваших близких в нашу поминальную книжку, и их вспомнят вместе со всей общиной.", "holiday": "yom-kippur", "button": "Добавить имена",
+    "payment": { "fund": "holidays", "label": "Пожертвовать в их память", "optional": true },
+    "fields": [
+      { "id": "names", "label": "Имена ваших близких (имя по-английски и еврейское имя, если известно, и степень родства)", "type": "textarea", "required": true },
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true }
+    ] },
+  { "id": "lulav-etrog", "title": "Заказать набор лулава и этрога", "intro": "Закажите четыре вида растений к Суккоту. Мы сообщим цену и когда можно забрать заказ.", "holiday": "sukkot", "button": "Заказать",
+    "fields": [
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel", "required": true },
+      { "id": "quality", "label": "Набор", "type": "select", "options": ["Стандартный (кошерный)", "Меадар (особо красивый)", "Детский набор"] },
+      { "id": "quantity", "label": "Сколько наборов", "type": "number", "min": 1, "max": 20, "required": true },
+      { "id": "message", "label": "Примечания", "type": "textarea" }
+    ] },
+  { "id": "matzah", "title": "Заказать мацу шмура и наборы для Седера", "intro": "Маца шмура ручной выпечки и готовые наборы для Седера на Песах. Мы подтвердим цены и время получения.", "holiday": "passover", "button": "Заказать",
+    "fields": [
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel", "required": true },
+      { "id": "matzah", "label": "Маца шмура (в фунтах)", "type": "number", "min": 0, "max": 50 },
+      { "id": "kits", "label": "Готовые наборы для Седера", "type": "number", "min": 0, "max": 20 },
+      { "id": "seder", "label": "Мы также хотели бы прийти на общинный Седер", "type": "checkbox" },
+      { "id": "message", "label": "Примечания", "type": "textarea" }
+    ] },
+  { "id": "sell-chametz", "title": "Продажа хамеца", "intro": "Перед Песахом: еврею нельзя владеть хамецем (квасным). Поручите раввину продать ваш хамец от вашего имени. На время Песаха уберите его в закрытый шкаф или комнату; после праздника его выкупят обратно для вас.", "holiday": "passover", "button": "Поручить продажу",
+    "payment": { "fund": "holidays", "label": "Дать принятую цдаку", "optional": true },
+    "fields": [
+      { "id": "name", "label": "Полное имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel" },
+      { "id": "locations", "label": "Адреса, где будет находиться ваш хамец (дом, офис, машина...)", "type": "textarea", "required": true },
+      { "id": "where", "label": "Где именно в каждом месте (например, кухонный шкаф над холодильником, полка в гараже)", "type": "textarea" },
+      { "id": "travel", "label": "Если на Песах вы будете в другом часовом поясе, то где?", "type": "text" },
+      { "id": "authorize", "label": "Я, нижеподписавшийся, уполномочиваю раввина Исроэля Лабковского действовать в качестве моего представителя (шалиаха), чтобы продать весь хамец, находящийся в моём владении, где бы он ни находился, и сдать в аренду места, где он хранится, в соответствии с еврейским законом (галахой), а также выкупить его обратно для меня после Песаха.", "type": "checkbox", "required": true },
+      { "id": "signature", "label": "Введите своё полное имя в качестве подписи", "type": "text", "required": true }
+    ] },
+  { "id": "mezuzah-tefillin", "title": "Мезуза и тфилин: купить, проверить или прибить", "intro": "Приобретите кошерную мезузу или тфилин, отдайте свои на проверку писцу (сойферу) или пригласите раввина помочь прибить мезузы.", "button": "Отправить",
+    "fields": [
+      { "id": "request", "label": "Я хочу", "type": "checkboxes", "required": true, "options": ["Купить мезузу", "Проверить мои мезузы", "Получить помощь с установкой мезуз", "Купить тфилин", "Проверить мои тфилин", "Научиться накладывать тфилин"] },
+      { "id": "count", "label": "Сколько мезуз (если нужно)", "type": "number", "min": 0, "max": 50 },
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel", "required": true },
+      { "id": "address", "label": "Адрес", "type": "text" },
+      { "id": "message", "label": "Примечания", "type": "textarea" }
+    ] },
+  { "id": "shabbat-meal", "title": "Пригласить гостей или прийти в гости на субботнюю трапезу", "intro": "Вы недавно в городе, студент или просто хотите провести Шабат в компании? Или хотите пригласить к себе гостей? Мы всё устроим.", "button": "Отправить",
+    "fields": [
+      { "id": "role", "label": "Я хочу", "type": "select", "required": true, "options": ["Прийти в гости на субботнюю трапезу", "Пригласить гостей на субботнюю трапезу", "Прийти на субботний ужин к семье раввина"] },
+      { "id": "people", "label": "Сколько человек", "type": "number", "min": 1, "max": 20 },
+      { "id": "date", "label": "Какой Шабат", "type": "date" },
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel" },
+      { "id": "message", "label": "Особенности питания или примечания", "type": "textarea" }
+    ] },
+  { "id": "volunteer", "title": "Волонтёрство", "intro": "Помогите строить еврейскую жизнь в Ламоринде, хоть час, хоть целый сезон.", "button": "Записаться",
+    "fields": [
+      { "id": "name", "label": "Ваше имя", "type": "text", "required": true },
+      { "id": "email", "label": "Эл. почта", "type": "email", "required": true },
+      { "id": "phone", "label": "Телефон", "type": "tel" },
+      { "id": "help", "label": "Чем я могу помочь", "type": "checkboxes", "options": ["Праздничные мероприятия", "Строительство сукки", "Выпечка хал", "Подготовка Кидуша", "Посещение пожилых и больных", "Помощь с поездками", "Преподавание или репетиторство", "Фотосъёмка", "Помощь в офисе"] },
+      { "id": "message", "label": "Когда вы свободны?", "type": "textarea" }
+    ] }
+]

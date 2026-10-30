@@ -1,6 +1,15 @@
 // In-memory fake of the Stripe API surface used by server/index.js. For tests only.
 'use strict';
 const Stripe = require('stripe');
+// Stripe search, just enough for the campaign totals: metadata['key']:'value' and status:'value', joined by AND.
+function matchQuery(x, query) {
+  return String(query).split(' AND ').every((part) => {
+    const m = /^metadata\['(\w+)'\]:'([^']*)'$/.exec(part.trim()), st = /^status:'(\w+)'$/.exec(part.trim());
+    if (m) return ((x.metadata || {})[m[1]] || '') === m[2];
+    if (st) return x.status === st[1];
+    return false;
+  });
+}
 function fakeStripe() {
   const st = { customers: {}, pms: {}, pis: {}, subs: {}, products: {}, sessions: {}, seq: 0, idem: {}, calls: [], failNext: null };
   const id = (p) => p + '_' + (++st.seq).toString(36).padStart(6, '0') + 'Abc';
@@ -22,6 +31,7 @@ function fakeStripe() {
         if (st.failNext) { const f = st.failNext; st.failNext = null; throw f; }
         return withIdem(o && o.idempotencyKey, () => { const pi = { id: id('pi'), status: 'succeeded', customer: p.customer, latest_charge: { receipt_url: 'https://pay.stripe.com/receipts/test' } }; st.pis[pi.id] = pi; return pi; }); },
       retrieve: async (i) => st.pis[i],
+      search: async ({ query }) => ({ data: Object.values(st.pis).filter((x) => matchQuery(x, query)), has_more: false }),
     },
     products: {
       retrieve: async (i) => { if (!st.products[i]) { const e = new Error('no'); e.code = 'resource_missing'; throw e; } return st.products[i]; },
@@ -34,8 +44,11 @@ function fakeStripe() {
       retrieve: async (i) => st.subs[i],
       update: async (i, p) => Object.assign(st.subs[i], p),
       cancel: async (i) => { st.subs[i].status = 'canceled'; return st.subs[i]; },
+      search: async ({ query }) => ({ data: Object.values(st.subs).filter((x) => matchQuery(x, query)), has_more: false }),
     },
   };
+  st.balance = []; // balance transactions the tests add (charges with their fees, refunds, payouts)
+  s.balanceTransactions = { list: async ({ created, starting_after }) => { const all = st.balance.filter((b) => !created || b.created >= created.gte), i = starting_after ? all.findIndex((b) => b.id === starting_after) + 1 : 0; return { data: all.slice(i, i + 100), has_more: all.length > i + 100 }; } };
   s.webhooks = new Stripe('sk_test_dummy').webhooks; // real signature checking
   s.checkout = { sessions: {
     create: async (p, o) => { st.calls.push(['checkout.sessions.create', p, o]);
