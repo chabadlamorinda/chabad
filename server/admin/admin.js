@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-  var app = document.getElementById('app'), tab = 'donors';
+  var app = document.getElementById('app'), tab = null;
   function el(tag, attrs, kids) {
     var n = document.createElement(tag);
     for (var k in (attrs || {})) { if (k === 'text') n.textContent = attrs[k]; else if (k === 'class') n.className = attrs[k]; else if (k.slice(0, 2) === 'on') n.addEventListener(k.slice(2), attrs[k]); else n.setAttribute(k, attrs[k]); }
@@ -12,20 +12,64 @@
       return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) { var e = new Error(j.error || 'Error'); e.status = r.status; throw e; } return j; });
     });
   }
+  // The desk, phone first: what waits for the Rabbi, today's event, then every tool as a big tile with one line on
+  // what it is for, in three groups. A tool opens below the tiles' place, with a way back to the desk.
+  var TOOLS = [
+    ['People', [
+      ['members', 'Members', 'Families who use the app, with their details'],
+      ['yahrzeits', 'Yahrzeits', 'Coming in the next 60 days, to call or remember'],
+      ['donors', 'Monthly donors', 'Who gives every month, and how much'],
+    ]],
+    ['Money', [
+      ['/admin/finances', 'Finances', 'Money in and out, donors, tax letters, reports'],
+      ['payments', 'Payment issues', 'Cards that failed or need a look'],
+      ['/admin/kiddush/', 'Kiddush board', 'Sponsors and the Kiddush TV screen'],
+    ]],
+    ['Website and app', [
+      ['/admin/community', 'Website', 'Requests, sign-ups, RSVPs, approvals, visitors'],
+      ['announce', 'Announcements', 'Notices on the app’s home screen'],
+      ['push', 'Send a message', 'A notification to everyone’s phone'],
+    ]],
+  ];
   function shell(body) {
     app.textContent = '';
-    app.appendChild(el('h1', { text: 'Rabbi’s desk' }));
-    app.appendChild(el('div', { class: 'small', text: 'Chabad of Lamorinda · private' }));
+    app.appendChild(el('div', { class: 'desk-top' }, [el('div', {}, [el('h1', { text: 'Rabbi’s desk' }), el('div', { class: 'small', text: 'Chabad of Lamorinda · private' })]),
+      el('button', { class: 'quiet', text: 'Sign out', onclick: function () { api('POST', '/logout').then(function () { login(); }); } })]));
+    if (tab) {
+      // One tool open: its name, a way back, and the tool itself.
+      var name = '';
+      TOOLS.forEach(function (g) { g[1].forEach(function (t) { if (t[0] === tab) name = t[1]; }); });
+      app.appendChild(el('div', { class: 'tool-head' }, [el('button', { class: 'quiet', text: '‹ Desk', onclick: function () { tab = null; load(); } }), el('h2', { text: name })]));
+      app.appendChild(body);
+      return;
+    }
     app.appendChild(waitingCard());
-    var nav = el('nav');
-    [['donors', 'Monthly donors'], ['yahrzeits', 'Yahrzeits'], ['members', 'Members'], ['announce', 'Announcements'], ['payments', 'Payment issues'], ['push', 'Send a message']].forEach(function (t) {
-      nav.appendChild(el('button', { class: tab === t[0] ? 'on' : '', text: t[1], onclick: function () { tab = t[0]; load(); } }));
+    app.appendChild(todayCard());
+    TOOLS.forEach(function (g) {
+      app.appendChild(el('h2', { class: 'group-h', text: g[0] }));
+      app.appendChild(el('div', { class: 'tiles' }, g[1].map(function (t) {
+        var kids = [el('strong', { text: t[1] }), el('span', { text: t[2] })];
+        return t[0].charAt(0) === '/' ? el('a', { class: 'tile', href: t[0] }, kids) : el('button', { class: 'tile', onclick: function () { tab = t[0]; load(); window.scrollTo(0, 0); } }, kids);
+      })));
     });
-    nav.appendChild(el('a', { href: '/admin/finances', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Finances' }));
-    nav.appendChild(el('a', { href: '/admin/kiddush/', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Kiddush board' }));
-    nav.appendChild(el('a', { href: '/admin/community', class: 'pill', style: 'padding:8px 14px;font-size:16px;text-decoration:none', text: 'Website: requests, sign-ups, RSVPs' }));
-    nav.appendChild(el('button', { text: 'Sign out', onclick: function () { api('POST', '/logout').then(function () { login(); }); } }));
-    app.appendChild(nav); app.appendChild(body);
+  }
+  // "Today": the next event that takes RSVPs (through the day after it), how many are coming, and one tap to check
+  // guests in at the door. Hidden when there is none (or the website part is not installed).
+  function todayCard() {
+    var box = el('div', { class: 'card today' }); box.hidden = true;
+    fetch('/admin/api/site/rsvps', { credentials: 'same-origin', headers: { 'x-admin': '1' } }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (j) {
+      var e = j && (j.events || []).filter(function (x) { return !x.draft; }).sort(function (a, b) { return a.start < b.start ? -1 : 1; })[0];
+      if (!e) return;
+      var d = new Date(e.start), when = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) + ', ' + d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+      var today = new Date().toDateString() === d.toDateString();
+      box.appendChild(el('p', { class: 'eyebrow', text: today ? 'Today' : 'Next event' }));
+      box.appendChild(el('strong', { class: 'today-t', text: e.title }));
+      box.appendChild(el('div', { class: 'small', text: when }));
+      box.appendChild(el('div', { class: 'today-n' }, [el('b', { text: String(e.going) }), e.going === 1 ? ' person coming' : ' people coming', e.capacity ? el('span', { class: 'small', text: ' of ' + e.capacity + ' places' }) : null]));
+      box.appendChild(el('div', { class: 'row' }, [el('a', { class: 'big', href: '/admin/community?checkin=' + encodeURIComponent(e.slug), text: 'Check in at the door' }), el('a', { class: 'big quiet', href: '/admin/community#rsvps', text: 'Who is coming' })]));
+      box.hidden = false;
+    });
+    return box;
   }
   // "Waiting for you": one tappable line per thing waiting on the website (counted by waiting.js), each opening its
   // section on the Website community page. Built once per visit; hidden where the website part is not installed.
@@ -168,7 +212,7 @@
   }
   function load() {
     var views = { announce: announce, donors: donors, yahrzeits: yahrzeits, members: members, payments: payments, push: push };
-    shell(views[tab]());
+    shell(tab ? views[tab]() : null);
   }
   api('GET', '/me').then(load).catch(function () { login(); });
 })();

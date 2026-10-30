@@ -39,8 +39,21 @@ details.sec>summary .cnt:not(:empty){margin-inline-start:auto;font-family:system
 table.fin{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}table.fin td,table.fin th{padding:6px 4px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}table.fin th{font-size:13px;color:#605d5d;font-weight:400}
 .fin-form{display:grid;gap:8px}.fin-form [hidden]{display:none}.fin-tx.in b{color:#1f7a46}.fin-tx.out b{color:#9b2c2c}
 /* Check-in at the door */
-.ck{margin-top:10px}.ck-head{font-size:20px;margin:6px 0}
+.ck{margin-top:10px;scroll-margin-top:64px}.ck-head{font-size:20px;margin:6px 0}
 .ck-row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;margin:6px 0;padding:12px 14px;min-height:60px;border:1px solid #d7d3d3;border-radius:12px;background:#fff;color:#201f1d}
 .ck-row.here{background:#e8f6ee;border-color:#3a9a64}.ck-mark{flex:none;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:2px solid #b8b3a8;font-size:20px;color:#fff}
 .ck-row.here .ck-mark{background:#1f7a46;border-color:#1f7a46}.ck-body{display:grid;gap:2px}.ck-body b{font-size:18px;font-weight:400}.ck-body small{color:#605d5d;font-size:13px}
 .ck input[type=number]{width:70px}
+/* Rabbi's desk: header, "Today", and the tools as big tiles in groups (two across on a phone) */
+.desk-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+button.quiet,a.quiet{border-color:#d7c3a3;color:#7d5411;background:#fff}
+.tool-head{display:flex;align-items:center;gap:12px;margin:14px 0 6px}.tool-head h2{font-weight:400;font-size:22px;margin:0}
+.today .eyebrow{margin:0;font-family:system-ui,sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7d5411}
+.today-t{display:block;font-size:20px;font-weight:400;margin:2px 0}
+.today-n{margin:8px 0 10px;font-size:17px}.today-n b{font-family:system-ui,sans-serif;font-size:26px;color:#1f7a46}
+.today .row a.big{flex:1 1 140px;text-align:center;padding:12px;border-radius:9px;border:1px solid #b68235;background:#fff3e4;color:#7d5411;text-decoration:none;font-size:17px}
+.today .row a.big.quiet{background:#fff;border-color:#d7c3a3}
+.group-h{font-weight:400;font-size:15px;font-family:system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#605d5d;margin:22px 0 8px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tiles .tile{display:flex;flex-direction:column;gap:4px;text-align:left;background:#fff;border:1px solid #d7d3d3;border-radius:12px;padding:14px;min-height:92px;color:#201f1d;text-decoration:none;font:inherit;cursor:pointer}
+.tiles .tile:hover{border-color:#b68235}.tiles .tile strong{font-size:18px;font-weight:400;color:#7d5411}.tiles .tile span{font-size:13px;color:#605d5d;line-height:1.35}

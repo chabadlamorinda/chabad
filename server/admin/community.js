@@ -271,6 +271,8 @@
             el('button', { class: 'on', text: 'Check in at the door', onclick: function () { checkin(e, list); } }),
             el('button', { text: 'Who to invite', onclick: function () { api('GET', '/site/outreach/event/' + e.slug).then(function (x) { list.textContent = ''; if (!x.items || !x.items.length) { list.textContent = 'No matches yet: as families come to events and read pages, matches appear here.'; return; } x.items.forEach(function (i) { person(i, list); }); }); } }),
             el('button', { text: 'Download CSV', onclick: function () { api('GET', '/site/rsvps/' + e.slug).then(function (x) { csv(e.slug + '.csv', [['Name', 'Email', 'Phone', 'Adults', 'Kids', 'Note', 'Allergies / diet', 'When']].concat(x.list.map(function (p) { return [p.name, p.email, p.phone, p.adults, p.kids, p.note, p.diet || '', p.created_at]; }))); }); } })]), list]));
+        // Opened from the desk's "Check in at the door" (?checkin=<event>): start check-in for that event right away.
+        if (new URLSearchParams(location.search).get('checkin') === e.slug) { s3.closest('details').open = true; checkin(e, list); }
       });
     });
 

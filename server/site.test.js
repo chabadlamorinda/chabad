@@ -978,6 +978,9 @@ test('check-in at the door: tap guests as they arrive, add walk-ins, see who is 
   list = (await a.call('GET', '/admin/api/site/rsvps/' + EVENT, undefined, H)).json.list;
   assert.equal(list.find((p) => p.email === 'levi.ck@example.com').arrived_at, null, 'tap again to undo');
   assert.equal((await client().call('POST', '/admin/api/site/rsvps/' + EVENT + '/arrived', { email: 'x@example.com' }, H)).status, 401);
+  // The Rabbi's desk links today's event straight to check-in, and the website page opens it from that link.
+  assert.match((await client().call('GET', '/admin/admin.js')).text, /\/admin\/community\?checkin=/);
+  assert.match((await client().call('GET', '/admin/community.js')).text, /get\('checkin'\) === e\.slug/);
 });
 
 test('print a flyer: every event has a one-page printable flyer with a QR code to its RSVP, in three languages', async () => {
