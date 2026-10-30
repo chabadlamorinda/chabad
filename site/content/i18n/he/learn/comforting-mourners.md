@@ -2,7 +2,7 @@
 title: ניחום אבלים: מה לומר ומה לעשות אחרי אובדן
 description: איך מנחמים אבל יהודי, מה לומר וממה להימנע, נוסח הניחומים המסורתי, ואיך ממשיכים לתמוך גם אחרי שהשבעה מסתיימת.
 category: Mourning & remembrance
-related: shiva, chesed, kaddish, jewish-funeral
+related: shiva, grief-during-the-holidays, chesed, kaddish, jewish-funeral
 local: רוצים לעזור למשפחה אבלה או זקוקים לתמיכה בעצמכם? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או ראו chabadoflamorinda.com/help/grief-and-hard-times.
 ---
 ניחום אבלים הוא אחד ממעשי החסד הגדולים ביותר ביהדות. הדבר החשוב ביותר הוא פשוט להיות שם, להקשיב ולתת לאבל לדעת שהוא לא לבד.

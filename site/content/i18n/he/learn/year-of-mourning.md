@@ -2,7 +2,7 @@
 title: שנת האבלות על הורה ביהדות
 description: מה כוללת שנת האבלות היהודית על הורה, למה אומרים קדיש אחד עשר חודשים, ואיך האבלים מכבדים את ההורה לאורך כל השנה.
 category: Mourning & remembrance
-related: kaddish, sheloshim, yahrzeit, unveiling
+related: kaddish, grief-during-the-holidays, sheloshim, yahrzeit, unveiling
 local: לא יכולים לומר קדיש כל יום? חב״ד למורינדה יכול לדאוג שיאמרו קדיש לעילוי נשמת יקירכם. ראו chabadoflamorinda.com/kaddish או התקשרו 925-384-7242.
 ---
 כשהורה נפטר, המסורת היהודית מקדישה שנים עשר חודשים לאבלות. במשך השנה הזאת הילדים אומרים קדיש, נותנים צדקה ועושים מעשים טובים לזכר ההורה, תוך הגבלה עדינה של שמחות.

@@ -2,7 +2,7 @@
 title: Ханукальная еда: латкес, суфганийот и почему мы их едим
 description: Почему на Хануку едят жаренное в масле, история сырных и молочных блюд и простые советы по кошерным латкес и суфганийот для вашей семьи.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-gelt, jewish-foods, kosher-kitchen
+related: chanukah-menorah, hosting-a-chanukah-party, chanukah-gelt, jewish-foods, kosher-kitchen
 local: Хотите жарить латкес вместе с другими семьями Ламоринды? Следите за нашими мероприятиями на chabadoflamorinda.com/events или звоните 925-384-7242.
 ---
 У каждого еврейского праздника есть свои блюда, и ханукальные - одни из самых любимых: хрустящие картофельные латкес, пончики с джемом и сырные лакомства. Каждое из них рассказывает часть истории Хануки.

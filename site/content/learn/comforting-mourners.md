@@ -2,7 +2,7 @@
 title: Comforting Mourners: What to Say and Do After a Jewish Loss
 description: How to comfort a Jewish mourner, what to say and avoid, the traditional words of comfort, and how to keep supporting them after shiva ends.
 category: Mourning & remembrance
-related: shiva, chesed, kaddish, jewish-funeral
+related: shiva, grief-during-the-holidays, chesed, kaddish, jewish-funeral
 local: Want to help a grieving family or need support yourself? Call Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/help/grief-and-hard-times.
 ---
 Comforting mourners, called *nichum aveilim* in Hebrew, is one of the greatest acts of kindness in Judaism. The most important thing is simply to be present, listen, and let the mourner know they are not alone.

@@ -2,7 +2,7 @@
 title: הכנסת אורחים: מצוות קבלת האורחים ביהדות
 description: מה פירוש הכנסת אורחים, למה האירוח הוא מצווה גדולה, איך אברהם קיבל אורחים, וטיפים מעשיים לאירוח סעודת שבת או חג.
 category: Jewish ideas
-related: chesed, shabbat-meals, tzedakah, shalom-bayit
+related: chesed, hosting-a-chanukah-party, shabbat-meals, tzedakah, shalom-bayit
 local: מכירים מישהו שצריך סעודת שבת, או רוצים לארח? בקרו ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 הכנסת אורחים היא המצווה לקבל אורחים בביתכם, ולהציע להם אוכל, מנוחה וחום. המסורת היהודית מלמדת שהכנסת אורחים גדולה אפילו מקבלת פני השכינה.

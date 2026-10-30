@@ -2,7 +2,7 @@
 title: The Minor Fast Days: Tzom Gedaliah, 10 Tevet, Esther and 17 Tammuz
 description: A guide to the four minor Jewish fast days: what each one remembers, when it falls, fasting times, who is exempt and the special prayers.
 category: Shabbat & holidays
-related: fast-days, three-weeks, teshuvah, selichot
+related: fast-days, tevet, three-weeks, teshuvah, selichot
 local: Check fast start and end times with our zmanim tool at chabadoflamorinda.com/tools/zmanim, or call Rabbi Labkowski at 925-384-7242 with questions.
 ---
 The minor fast days are four days in the Jewish year when we refrain from eating and drinking from dawn until nightfall: the Fast of Gedaliah, the Tenth of Tevet, the Fast of Esther and the Seventeenth of Tammuz. They recall tragic events, or in the case of Esther, a day of prayer, and they call us to reflect and return to G-d.

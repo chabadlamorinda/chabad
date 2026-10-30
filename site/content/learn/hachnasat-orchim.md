@@ -2,7 +2,7 @@
 title: Hachnasat Orchim: The Jewish Mitzvah of Welcoming Guests
 description: What hachnasat orchim means, why hospitality is a great mitzvah, how Abraham welcomed guests, and practical tips for hosting a Shabbat or holiday meal.
 category: Jewish ideas
-related: chesed, shabbat-meals, tzedakah, shalom-bayit
+related: chesed, hosting-a-chanukah-party, shabbat-meals, tzedakah, shalom-bayit
 local: Know someone who needs a Shabbat meal, or want to host? Visit chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Hachnasat orchim is the mitzvah of welcoming guests into your home, offering them food, rest and warmth. Jewish tradition teaches that welcoming guests is even greater than receiving the Divine presence.

@@ -2,7 +2,7 @@
 title: Building a Jewish Home Library: The Essential Books to Own
 description: Which Jewish books every home should have, from a Chumash and siddur to Tehillim and Tanya, plus tips on caring for holy books and how to start.
 category: Jewish home
-related: torah, tehillim, tanya, mezuzah
+related: torah, hey-teves, tehillim, tanya, mezuzah
 local: Want help choosing books for your home or joining a class? Call 925-384-7242 or see chabadoflamorinda.com/programs/adult-education.
 ---
 A Jewish home library is a collection of holy books, called sefarim, kept in the home for prayer and study. Even a small shelf with a Chumash, a siddur and a book of Tehillim turns a house into a place of Torah.

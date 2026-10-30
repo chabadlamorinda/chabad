@@ -2,7 +2,7 @@
 title: מאכלי חנוכה: לביבות, סופגניות ולמה אוכלים אותם
 description: למה אוכלים מאכלים מטוגנים בשמן בחנוכה, הסיפור מאחורי מאכלי הגבינה והחלב, וטיפים קלים ללביבות ולסופגניות כשרות למשפחה.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-gelt, jewish-foods, kosher-kitchen
+related: chanukah-menorah, hosting-a-chanukah-party, chanukah-gelt, jewish-foods, kosher-kitchen
 local: רוצים להכין לביבות עם משפחות אחרות בלמורינדה? עקבו אחרי האירועים שלנו ב-chabadoflamorinda.com/events או התקשרו 925-384-7242.
 ---
 לכל חג יהודי יש את המאכלים שלו, ושל חנוכה הם מהאהובים ביותר: לביבות תפוחי אדמה פריכות, סופגניות ריבה ומעדני גבינה. כל אחד מהם מספר חלק מסיפור החנוכה.

@@ -2,7 +2,7 @@
 title: Chanukah Foods: Latkes, Sufganiyot and Why We Eat Them
 description: Why we eat foods fried in oil on Chanukah, the story behind cheese and dairy foods, and easy kosher latkes and sufganiyot tips for your family.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-gelt, jewish-foods, kosher-kitchen
+related: chanukah-menorah, hosting-a-chanukah-party, chanukah-gelt, jewish-foods, kosher-kitchen
 local: Want to make latkes with other families in Lamorinda? Watch our events at chabadoflamorinda.com/events or call 925-384-7242.
 ---
 Every Jewish holiday has its foods, and Chanukah's are among the most loved: crispy potato latkes, jelly doughnuts and cheese treats. Each one tells part of the Chanukah story.

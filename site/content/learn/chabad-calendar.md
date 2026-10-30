@@ -2,7 +2,7 @@
 title: The Chabad Calendar: Chassidic Days of Joy and Remembrance
 description: The special days of the Chabad year, from 6 Tishrei and 19 Kislev to 11 Nissan, Gimmel Tammuz and Chai Elul, and how they are marked.
 category: Shabbat & holidays
-related: yud-tes-kislev, the-rebbe, chabad-rebbes, jewish-calendar
+related: yud-tes-kislev, hey-teves, the-rebbe, chabad-rebbes, jewish-calendar
 local: Want to join a farbrengen in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242 or see our events page.
 ---
 Besides the holidays every Jew knows, the Chabad year has its own special days: anniversaries of the Rebbes' births, releases from prison and passings. They are not new holidays in Jewish law. They are days to remember, to learn and to be inspired. Like every Jewish date, each begins the evening before.

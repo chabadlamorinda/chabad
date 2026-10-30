@@ -2,7 +2,7 @@
 title: The Year of Mourning for a Parent in Judaism
 description: What the Jewish year of mourning for a parent involves, why Kaddish is said for eleven months, and how mourners honor a parent all year.
 category: Mourning & remembrance
-related: kaddish, sheloshim, yahrzeit, unveiling
+related: kaddish, grief-during-the-holidays, sheloshim, yahrzeit, unveiling
 local: Unable to say Kaddish every day? Chabad of Lamorinda can arrange for it to be said for your loved one. See chabadoflamorinda.com/kaddish or call 925-384-7242.
 ---
 When a parent passes away, Jewish tradition sets aside twelve months of mourning. During this year the child says Kaddish, gives tzedakah and does good deeds in the parent's memory, while gently limiting celebrations.

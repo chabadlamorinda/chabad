@@ -2,7 +2,7 @@
 title: בניית ספרייה יהודית בבית: הספרים החיוניים
 description: אילו ספרים יהודיים צריכים להיות בכל בית, מחומש וסידור ועד תהילים ותניא, וטיפים לשמירה על ספרי קודש ואיך להתחיל.
 category: Jewish home
-related: torah, tehillim, tanya, mezuzah
+related: torah, hey-teves, tehillim, tanya, mezuzah
 local: רוצים עזרה בבחירת ספרים לבית או בהצטרפות לשיעור? התקשרו 925-384-7242 או ראו chabadoflamorinda.com/programs/adult-education.
 ---
 ספרייה יהודית בבית היא אוסף של ספרי קודש שנשמרים בבית לתפילה וללימוד. אפילו מדף קטן עם חומש, סידור וספר תהילים הופך בית למקום של תורה.
