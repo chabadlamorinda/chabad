@@ -79,7 +79,9 @@ function createStore(url, opts = {}) {
     deleteMember: (id) => q('DELETE FROM members WHERE id=$1', [id]),
     listMembers: () => rows(`SELECT m.*, (SELECT count(*) FROM yahrzeits y WHERE y.member_id=m.id)::int AS yahrzeit_count,
       (SELECT count(*) FROM push_subs p WHERE p.member_id=m.id)::int AS push_count,
-      (SELECT updated_at FROM account_state a WHERE a.member_id=m.id) AS saved_at FROM members m ORDER BY m.created_at DESC`),
+      (SELECT updated_at FROM account_state a WHERE a.member_id=m.id) AS saved_at,
+      (SELECT COALESCE(sum(e.amount_cents),0)::int FROM payment_events e WHERE e.type='gift' AND ((m.stripe_customer_id IS NOT NULL AND e.customer_id=m.stripe_customer_id) OR (e.email<>'' AND lower(e.email)=lower(m.email)))) AS gift_cents,
+      (SELECT count(*) FROM payment_events e WHERE e.type='gift' AND ((m.stripe_customer_id IS NOT NULL AND e.customer_id=m.stripe_customer_id) OR (e.email<>'' AND lower(e.email)=lower(m.email))))::int AS gift_count FROM members m ORDER BY m.created_at DESC`),
 
     // ----- yahrzeits -----
     async replaceYahrzeits(memberId, entries) {
@@ -139,7 +141,7 @@ function createStore(url, opts = {}) {
     async recordPaymentEvent(e) {
       return (await q('INSERT INTO payment_events (event_id, type, customer_id, email, amount_cents, message) VALUES ($1,$2,$3,$4,$5,$6) ON CONFLICT DO NOTHING', [e.id, e.type, e.customerId || null, e.email || '', e.amount || 0, e.message || ''])).rowCount === 1;
     },
-    listPaymentEvents: () => rows('SELECT * FROM payment_events ORDER BY created_at DESC LIMIT 200'),
+    listPaymentEvents: () => rows("SELECT * FROM payment_events WHERE type <> 'gift' ORDER BY created_at DESC LIMIT 200"),
     resolvePayment: (eventId) => q('UPDATE payment_events SET resolved=TRUE WHERE event_id=$1', [eventId]),
     resolveCustomerPayments: (cus) => q("UPDATE payment_events SET resolved=TRUE WHERE customer_id=$1 AND type LIKE '%failed'", [cus]),
     flagCardIssue: (cus, msg) => q('UPDATE members SET card_issue=$2 WHERE stripe_customer_id=$1', [cus, msg || 'payment_failed']),

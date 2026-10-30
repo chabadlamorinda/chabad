@@ -32,5 +32,8 @@ test('the Rabbi is emailed once when a pushka gift succeeds, and not for other p
   await hook({ id: 'evt_o', type: 'payment_intent.succeeded', data: { object: { id: 'pi_2', amount: 500, metadata: { source: 'something-else' } } } }); await settle();
   assert.equal(sent.length, 1);
   await hook({ id: 'evt_m', type: 'invoice.paid', data: { object: { customer: 'cus_X', customer_email: 'club@example.com', amount_paid: 18000, subscription_details: { metadata: { source: 'pushka', fund: 'general', club: 'yes' } } } } }); await settle();
+  const mid = await store.createVerifiedMember('club@example.com', 'Club Donor');
   assert.equal(sent.length, 2); assert.match(sent[1].subject, /monthly/); assert.match(sent[1].subject, /Chai Club/);
+  const me = (await store.listMembers()).find((m) => m.id === mid); assert.equal(me.gift_cents, 18000); assert.equal(me.gift_count, 1);
+  assert.equal((await store.listPaymentEvents()).length, 0, 'gifts are not payment problems');
 });
