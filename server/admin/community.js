@@ -233,6 +233,31 @@
     var qbox = el('div', { class: 'card' }, [qq, qa, el('div', { class: 'row' }, [ql, el('button', { class: 'on', text: 'Publish', onclick: function () { fetch('/admin/api/site/qa', { method: 'POST', credentials: 'same-origin', headers: { 'x-admin': '1', 'content-type': 'application/json' }, body: JSON.stringify({ question: qq.value, answer: qa.value, lang: ql.value }) }).then(function (r) { return r.json(); }).then(function (r) { qmsg.textContent = r.ok ? 'Published: ' + r.url : r.error; if (r.ok) { qq.value = ''; qa.value = ''; } }); } })]), qmsg]);
     sa.appendChild(qbox);
 
+    // ---- Check-in at the door: tap each guest as they arrive (big rows for a phone), add walk-ins, see who is here ----
+    function checkin(e, box) {
+      var q = el('input', { type: 'search', placeholder: 'Find a name' }), head = el('p', { class: 'ck-head' }), rows = el('div'), people = [];
+      var draw = function () {
+        var here = people.filter(function (p) { return p.arrived_at; }), n = function (l) { return l.reduce(function (a, p) { return a + p.adults + p.kids; }, 0); };
+        head.textContent = n(here) + ' of ' + n(people) + ' people here (' + here.length + ' of ' + people.length + ' families)';
+        rows.textContent = ''; var words = q.value.toLowerCase();
+        people.filter(function (p) { return !words || p.name.toLowerCase().indexOf(words) >= 0; }).forEach(function (p) {
+          var row = el('button', { class: 'ck-row' + (p.arrived_at ? ' here' : ''), onclick: function () {
+            var yes = !p.arrived_at; p.arrived_at = yes ? new Date().toISOString() : null; draw();
+            api('POST', '/site/rsvps/' + e.slug + '/arrived', { email: p.email, arrived: yes });
+          } }, [el('span', { class: 'ck-mark', text: p.arrived_at ? '✓' : '' }), el('span', { class: 'ck-body' }, [el('b', { text: p.name }), el('small', { text: [p.adults + (p.adults === 1 ? ' adult' : ' adults') + (p.kids ? ', ' + p.kids + (p.kids === 1 ? ' child' : ' children') : ''), p.diet && ('Diet: ' + p.diet), p.note, p.brought_by && ('brought by ' + p.brought_by), p.arrived_at && ('arrived ' + new Date(p.arrived_at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }))].filter(Boolean).join(' · ') })])]);
+          rows.appendChild(row);
+        });
+      };
+      var load = function () { api('GET', '/site/rsvps/' + e.slug).then(function (x) { people = (x.list || []).sort(function (a, b) { return a.name.localeCompare(b.name); }); draw(); }); };
+      var w = { name: el('input', { placeholder: 'Walk-in name' }), adults: el('input', { type: 'number', min: '0', value: '1', 'aria-label': 'Adults' }), kids: el('input', { type: 'number', min: '0', value: '0', 'aria-label': 'Children' }), phone: el('input', { type: 'tel', placeholder: 'Phone (optional)' }), email: el('input', { type: 'email', placeholder: 'Email (optional)' }) }, wmsg = el('span', { class: 'small warn' });
+      var walk = el('details', { class: 'card' }, [el('summary', { text: '+ Add a walk-in' }), w.name, el('div', { class: 'row small' }, ['Adults', w.adults, 'Children', w.kids]), w.phone, w.email,
+        el('button', { class: 'on', text: 'Add and check in', onclick: function () { api('POST', '/site/rsvps/' + e.slug + '/walkin', { name: w.name.value, adults: w.adults.value, kids: w.kids.value, phone: w.phone.value, email: w.email.value }).then(function (r) { if (r._status === 200) { w.name.value = w.phone.value = w.email.value = ''; w.adults.value = 1; w.kids.value = 0; wmsg.textContent = ''; load(); } else wmsg.textContent = r.error || 'Could not add.'; }); } }), wmsg]);
+      q.oninput = draw;
+      box.textContent = '';
+      box.appendChild(el('div', { class: 'ck' }, [el('strong', { text: 'Check-in: ' + e.title }), head, el('div', { class: 'row' }, [q, el('button', { text: 'Refresh', onclick: load })]), rows, walk]));
+      load(); box.scrollIntoView();
+    }
+
     // ---- RSVPs ----
     var s3 = section('RSVPs', '', 'RSVPs');
     api('GET', '/site/rsvps').then(function (r) {
@@ -240,9 +265,10 @@
       s3.count(r.events.reduce(function (a, e) { return a + (e.going || 0); }, 0));
       r.events.forEach(function (e) {
         var list = el('div');
-        s3.appendChild(el('div', { class: 'card' }, [el('strong', { text: e.title }), el('div', { class: 'small', text: e.start.replace('T', ' ') + ' · ' + e.going + ' coming' + (e.capacity ? ' of ' + e.capacity : '') }),
+        s3.appendChild(el('div', { class: 'card' }, [el('strong', { text: e.title }), e.draft ? el('span', { class: 'pill', text: 'draft: not on the website yet' }) : null, el('div', { class: 'small', text: e.start.replace('T', ' ') + ' · ' + e.going + ' coming' + (e.capacity ? ' of ' + e.capacity : '') }),
           el('div', { class: 'row' }, [
             el('button', { text: 'Who is coming', onclick: function () { api('GET', '/site/rsvps/' + e.slug).then(function (x) { list.textContent = ''; x.list.forEach(function (p) { list.appendChild(el('div', { class: 'small', text: p.name + ' · ' + (p.adults + p.kids) + ' (' + p.adults + ' adults, ' + p.kids + ' kids) · ' + p.email + (p.phone ? ' · ' + p.phone : '') + (p.brought_by ? ' · brought by ' + p.brought_by : '') + (p.brought ? ' · brought ' + p.brought + (p.brought === 1 ? ' friend' : ' friends') : '') + (p.note ? ' · “' + p.note + '”' : '') + (p.diet ? ' · Allergies/diet: ' + p.diet : '') })); }); if (!x.list.length) list.textContent = 'No one yet.'; }); } }),
+            el('button', { class: 'on', text: 'Check in at the door', onclick: function () { checkin(e, list); } }),
             el('button', { text: 'Who to invite', onclick: function () { api('GET', '/site/outreach/event/' + e.slug).then(function (x) { list.textContent = ''; if (!x.items || !x.items.length) { list.textContent = 'No matches yet: as families come to events and read pages, matches appear here.'; return; } x.items.forEach(function (i) { person(i, list); }); }); } }),
             el('button', { text: 'Download CSV', onclick: function () { api('GET', '/site/rsvps/' + e.slug).then(function (x) { csv(e.slug + '.csv', [['Name', 'Email', 'Phone', 'Adults', 'Kids', 'Note', 'Allergies / diet', 'When']].concat(x.list.map(function (p) { return [p.name, p.email, p.phone, p.adults, p.kids, p.note, p.diet || '', p.created_at]; }))); }); } })]), list]));
       });

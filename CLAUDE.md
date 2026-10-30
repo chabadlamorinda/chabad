@@ -57,6 +57,7 @@ Add an object to `site/content/events.json`:
 * Past events drop off the site automatically; leave them in the file.
 * After an RSVP, "Bring a friend" offers a personal invitation (WhatsApp, text, email, link with `?ref=`); a friend who RSVPs through it shows in the Rabbi area's RSVP list as "brought by ..." (rsvps `invite_code` / `ref`).
 * Every upcoming event has "Print a flyer" (`/events/<slug>/flyer`, `server/site/flyer.js`): one printable page with the picture, when, where, cost, summary and a QR code to its RSVP, in all three languages. A good `image` and `summary` make a good flyer.
+* At the door: Rabbi area → RSVPs → "Check in at the door": big rows to tap as guests arrive (tap again to undo), a search box, "X of Y people here", and walk-ins added on the spot (rsvps `arrived_at`; note "Walk-in"). Events stay in that list through the day after (Lafayette time).
 * Tests run on a copy of the content with the test event moved a few weeks ahead (`TEST_CONTENT` in site.test.js), so they never depend on today's date.
 
 ## The Rabbi's to-do list

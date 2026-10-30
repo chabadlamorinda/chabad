@@ -937,6 +937,22 @@ test('finances: online gifts come in from Stripe with fees and refunds, money in
   assert.equal((await client().call('GET', '/admin/api/fin/summary', undefined, H)).status, 401);
 });
 
+test('check-in at the door: tap guests as they arrive, add walk-ins, see who is here', async () => {
+  const H = { 'x-admin': '1' }, a = await admin();
+  await client().call('POST', '/api/site/rsvp/' + EVENT, { adults: 2, kids: 1, name: 'Levi Family', email: 'levi.ck@example.com' });
+  assert.ok((await a.call('GET', '/admin/api/site/rsvps', undefined, H)).json.events.some((e) => e.slug === EVENT));
+  assert.equal((await a.call('POST', '/admin/api/site/rsvps/' + EVENT + '/arrived', { email: 'LEVI.ck@example.com' }, H)).status, 200);
+  assert.equal((await a.call('POST', '/admin/api/site/rsvps/' + EVENT + '/walkin', { name: 'Walk-in Guest', adults: 2 }, H)).status, 200);
+  assert.equal((await a.call('POST', '/admin/api/site/rsvps/' + EVENT + '/walkin', { name: '' }, H)).status, 400);
+  let list = (await a.call('GET', '/admin/api/site/rsvps/' + EVENT, undefined, H)).json.list;
+  assert.ok(list.find((p) => p.email === 'levi.ck@example.com').arrived_at, 'checked in');
+  const walk = list.find((p) => p.name === 'Walk-in Guest'); assert.ok(walk.arrived_at); assert.equal(walk.note, 'Walk-in'); assert.equal(walk.adults, 2);
+  assert.equal((await a.call('POST', '/admin/api/site/rsvps/' + EVENT + '/arrived', { email: 'levi.ck@example.com', arrived: false }, H)).status, 200);
+  list = (await a.call('GET', '/admin/api/site/rsvps/' + EVENT, undefined, H)).json.list;
+  assert.equal(list.find((p) => p.email === 'levi.ck@example.com').arrived_at, null, 'tap again to undo');
+  assert.equal((await client().call('POST', '/admin/api/site/rsvps/' + EVENT + '/arrived', { email: 'x@example.com' }, H)).status, 401);
+});
+
 test('print a flyer: every event has a one-page printable flyer with a QR code to its RSVP, in three languages', async () => {
   const g = client();
   const page = (await g.call('GET', '/events/' + EVENT)).text; assert.match(page, new RegExp('href="/events/' + EVENT + '/flyer"'));

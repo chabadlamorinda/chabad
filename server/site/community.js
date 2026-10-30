@@ -53,6 +53,8 @@ CREATE UNIQUE INDEX IF NOT EXISTS rsvps_event_email_idx ON rsvps (event_slug, lo
 -- "Bring a friend": every RSVP gets its own invite code; a friend who RSVPs through it is noted as brought by them.
 ALTER TABLE rsvps ADD COLUMN IF NOT EXISTS invite_code TEXT NOT NULL DEFAULT '';
 ALTER TABLE rsvps ADD COLUMN IF NOT EXISTS ref TEXT NOT NULL DEFAULT '';
+-- Check-in at the door: when the guest arrived (empty until then); walk-ins are added at the door.
+ALTER TABLE rsvps ADD COLUMN IF NOT EXISTS arrived_at TIMESTAMPTZ;
 CREATE TABLE IF NOT EXISTS submissions (
   id TEXT PRIMARY KEY, kind TEXT NOT NULL, member_id TEXT REFERENCES members(id) ON DELETE SET NULL,
   name TEXT NOT NULL, email TEXT NOT NULL, title TEXT NOT NULL, body TEXT NOT NULL DEFAULT '', link TEXT NOT NULL DEFAULT '',
@@ -149,7 +151,8 @@ function communityStore(store) {
     myRsvps: (email) => rows('SELECT event_slug, adults, kids FROM rsvps WHERE lower(email)=$1', [email]),
     async counts() { const out = {}; for (const r of await rows('SELECT event_slug, sum(adults+kids)::int AS n FROM rsvps GROUP BY event_slug')) out[r.event_slug] = r.n; return out; },
     // Allergies and dietary needs the family saved in their account come along with the RSVP, for meals and kids' programs.
-    rsvpList: (event) => rows(`SELECT r.name, r.email, r.phone, r.adults, r.kids, r.note, r.created_at, r.member_id,
+    setArrived: (event, email, yes) => q(`UPDATE rsvps SET arrived_at = ${yes ? 'COALESCE(arrived_at, now())' : 'NULL'} WHERE event_slug=$1 AND lower(email)=lower($2)`, [event, email]),
+    rsvpList: (event) => rows(`SELECT r.name, r.email, r.arrived_at, r.phone, r.adults, r.kids, r.note, r.created_at, r.member_id,
       (SELECT b.name FROM rsvps b WHERE b.event_slug=r.event_slug AND r.ref<>'' AND b.invite_code=r.ref LIMIT 1) AS brought_by, (SELECT count(*)::int FROM rsvps f WHERE f.event_slug=r.event_slug AND r.invite_code<>'' AND f.ref=r.invite_code) AS brought,
       concat_ws('; ', NULLIF(m.diet, ''), (SELECT string_agg(f.name || ': ' || f.diet, '; ') FROM family f WHERE f.member_id=r.member_id AND f.diet <> '')) AS diet
       FROM rsvps r LEFT JOIN members m ON m.id=r.member_id WHERE r.event_slug=$1 ORDER BY r.created_at`, [event]),
@@ -386,12 +389,28 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
 
 // Rabbi area: RSVP lists, upcoming birthdays (English and Hebrew), community families.
 function mountCommunityAdmin(r, { authed, wrap }, { cs, content, store }) {
+  const bad = (res, code, error) => res.status(400).json({ code, error });
   if (!cs) return;
   r.get('/api/site/rsvps', authed, wrap(async (req, res) => {
-    const counts = await cs.counts(), today = new Date().toISOString().slice(0, 10);
-    res.json({ events: content().events.filter((e) => e.rsvp && (e.end || e.start).slice(0, 10) >= today).map((e) => ({ slug: e.slug, title: e.title, start: e.start, capacity: e.rsvp.capacity || null, going: counts[e.slug] || 0 })) });
+    // Lafayette's date, and events stay listed through the day after, so check-in works all evening (and the next morning).
+    const counts = await cs.counts(), yesterday = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles' }).format(new Date(Date.now() - 864e5));
+    res.json({ events: content().events.filter((e) => e.rsvp && (e.end || e.start).slice(0, 10) >= yesterday).map((e) => ({ slug: e.slug, title: e.title, start: e.start, capacity: e.rsvp.capacity || null, going: counts[e.slug] || 0, draft: !e.published })) });
   }));
   r.get('/api/site/rsvps/:slug', authed, wrap(async (req, res) => res.json({ list: await cs.rsvpList(req.params.slug) })));
+  // Check-in at the door: mark a guest as arrived (or not), and add walk-ins.
+  r.post('/api/site/rsvps/:slug/arrived', authed, wrap(async (req, res) => {
+    const b = req.body || {}; if (!b.email) return bad(res, 'invalid', 'Which guest?');
+    await cs.setArrived(req.params.slug, String(b.email), b.arrived !== false); res.json({ ok: true });
+  }));
+  r.post('/api/site/rsvps/:slug/walkin', authed, wrap(async (req, res) => {
+    const e = content().events.find((x) => x.slug === req.params.slug && x.rsvp); if (!e) return res.status(404).json({ error: 'No such event.' });
+    const b = req.body || {}, name = clean(b.name, 100), adults = Math.min(Math.max(Math.trunc(Number(b.adults)) || 1, 0), 30), kids = Math.min(Math.max(Math.trunc(Number(b.kids)) || 0, 0), 30);
+    if (!name) return bad(res, 'invalid_name', 'Please enter a name.');
+    const email = validEmail(clean(b.email, 254).toLowerCase()) ? clean(b.email, 254).toLowerCase() : 'walkin-' + crypto.randomBytes(5).toString('hex') + '@walk-in.invalid';
+    await cs.upsertRsvp({ event: e.slug, memberId: null, name, email, phone: clean(b.phone, 30), adults, kids, note: 'Walk-in' });
+    await cs.setArrived(e.slug, email, true);
+    res.json({ ok: true });
+  }));
   r.get('/api/site/birthdays', authed, wrap(async (req, res) => {
     const days = Math.min(Math.max(parseInt(req.query.days, 10) || 30, 1), 366), today = new Date().toISOString().slice(0, 10), out = [];
     for (const b of await cs.birthdays()) {
