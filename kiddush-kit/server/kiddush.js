@@ -81,11 +81,13 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
 
   const spView = (sp) => ({
     id: sp.id, status: sp.status, method: sp.method, name: sp.name, anonymous: sp.anonymous, dedicationKind: sp.dedication_kind, dedication: sp.dedication,
-    email: sp.email, phone: sp.phone, note: sp.note, amountCents: sp.amount_cents, feeCents: sp.fee_cents, source: sp.source, paidAt: sp.paid_at, createdAt: sp.created_at, remindedAt: sp.reminded_at, reminderCount: sp.reminder_count || 0, remindAt: sp.remind_at || null, remindersOff: !!sp.reminders_off,
+    email: sp.email, phone: sp.phone, note: sp.note, amountCents: sp.amount_cents, feeCents: sp.fee_cents, source: sp.source, paidAt: sp.paid_at, createdAt: sp.created_at, remindedAt: sp.reminded_at, reminderCount: sp.reminder_count || 0, remindAt: sp.remind_at || null, showPublic: !!sp.show_public, remindersOff: !!sp.reminders_off,
   });
   // Only CONFIRMED (paid) sponsorships ever appear on the TV or the phone page. Card payments confirm themselves through
   // Stripe; Zelle, Venmo, check and cash appear once the Rabbi marks them paid.
-  const publicSponsor = (sp) => (sp && sp.status === 'paid'
+  // A sponsorship shows on the board when it is paid, or when staff chose to show it while it is still waiting for payment.
+  const isShown = (sp) => !!sp && (sp.status === 'paid' || (sp.status === 'pending' && !!sp.show_public));
+  const publicSponsor = (sp) => (isShown(sp)
     ? { name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication), kind: sp.dedication_kind || '', reason: sp.dedication || '' } : null);
 
   /** The board for one Hebrew year. `admin` adds hidden weeks and private donor details. */
@@ -123,7 +125,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       const out = {
         key: s.key, year: s.year, kind: s.kind, title: s.title, titleHe: s.titleHe, note: s.note, mevarchim: s.mevarchim || '', molad: s.molad || '', date: s.date, dow: s.dow, dateLabel: s.dateLabel, heb: s.heb, hebHe: s.hebHe,
         priceCents: s.priceCents, past: s.kind === 'board' ? false : s.date < today,
-        status: sps.some((sp) => sp.status === 'paid') ? 'sponsored' : 'open',
+        status: sps.some(isShown) ? 'sponsored' : 'open',
         sponsor: shown[0] || null, sponsors: shown,
         notes: (notesBySlot.get(s.key) || []).map((n) => { const d = noteDates.get(n.date) || {}; return { id: admin ? n.id : undefined, kind: n.kind, text: n.text, textHe: n.textHe, date: n.date, dateLabel: d.dateLabel, heb: d.heb, hebHe: d.hebHe }; }),
       };
@@ -381,6 +383,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       put('name', clean(b.name, 80));
       if ((!partial || 'name' in out) && !out.name) bad('invalid_name', 'Please enter a name.');
       put('anonymous', b.anonymous === true);
+      put('showPublic', b.showPublic === true);
       put('dedicationKind', Object.prototype.hasOwnProperty.call(KINDS, b.dedicationKind) ? b.dedicationKind : '');
       put('dedication', clean(b.dedication, 120)); put('email', clean(b.email, 254).toLowerCase()); put('phone', clean(b.phone, 30)); put('note', clean(b.note, 300));
       put('method', METHODS.concat(['other']).includes(b.method) ? b.method : 'other');

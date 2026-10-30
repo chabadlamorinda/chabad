@@ -94,6 +94,7 @@
     var method = el('select', {}, Object.keys(METHODS).filter(function (k) { return k !== 'card' || (sp && sp.method === 'card'); }).map(function (k) { return el('option', { value: k, text: METHODS[k], selected: sp ? sp.method === k : k === 'check' }); }));
     var anon = el('input', { type: 'checkbox', checked: sp && sp.anonymous });
     var paid = el('select', {}, [el('option', { value: 'paid', text: 'Paid — money received', selected: !sp || sp.status === 'paid' }), el('option', { value: 'pending', text: 'Waiting for payment', selected: sp && sp.status === 'pending' })]);
+    var showNow = el('input', { type: 'checkbox', checked: sp && sp.showPublic });
     var note = el('textarea', { rows: '2' }); note.value = sp ? sp.note : '';
     var hide = el('input', { type: 'checkbox', checked: s.hidden }), title = el('input', { value: s.customTitle ? s.title : '', placeholder: s.title }), price = el('input', { type: 'number', value: s.customPrice ? s.priceCents / 100 : '', placeholder: String(s.priceCents / 100), min: '1' });
     var err = el('div', { class: 'warn' });
@@ -103,7 +104,7 @@
       el('h2', { text: s.title }), el('div', { class: 'small', text: s.dateLabel + ' · ' + s.heb + (s.note ? ' · ' + s.note : '') }),
       sp && sp.createdAt ? el('div', { class: 'small', text: 'Entered ' + (sp.source === 'admin' ? 'by you' : 'online') + ' on ' + new Date(sp.createdAt).toLocaleDateString() + (sp.paidAt ? ' · paid ' + new Date(sp.paidAt).toLocaleDateString() : '') }) : null,
       L.length ? el('div', { style: 'margin-top:10px' }, [el('label', { text: L.length > 1 ? 'Sponsors of this week (tap one to edit)' : 'Sponsor of this week' })].concat(L.map(function (x) {
-        return el('div', { class: 'row', style: 'padding:4px 0' }, [el('button', { class: sp && sp.id === x.id ? 'on' : '', text: x.name + ' · ' + (x.status === 'paid' ? 'paid' : 'waiting') + ' · ' + money(x.amountCents), onclick: function () { editor(s, b, x.id); } })]);
+        return el('div', { class: 'row', style: 'padding:4px 0' }, [el('button', { class: sp && sp.id === x.id ? 'on' : '', text: x.name + ' · ' + (x.status === 'paid' ? 'paid' : 'waiting' + (x.showPublic ? ', on the board' : '')) + ' · ' + money(x.amountCents), onclick: function () { editor(s, b, x.id); } })]);
       }).concat([el('div', { class: 'row', style: 'padding:4px 0' }, [el('button', { class: sp ? '' : 'on', text: '+ Add another sponsor', onclick: function () { editor(s, b, null); } })])]))) : null,
       el('h2', { style: 'margin-top:12px', text: sp ? 'Edit this sponsor' : (L.length ? 'Add another sponsor' : 'Add a sponsor') }),
       inp('Name (as shown on the board)', 'name', sp && sp.name, { maxlength: '80' }),
@@ -112,10 +113,11 @@
       el('div', { class: 'grid2' }, [inp('Email', 'email', sp && sp.email), inp('Phone', 'phone', sp && sp.phone)]),
       el('div', { class: 'grid2' }, [inp('Amount ($)', 'amount', sp ? sp.amountCents / 100 : s.priceCents / 100, { type: 'number', min: '0' }), el('div', {}, [el('label', { text: 'Paid by' }), method])]),
       el('div', {}, [el('label', { text: 'Status' }), paid]),
+      el('label', {}, [showNow, ' While waiting for payment, show this name on the board anyway (it stays “waiting” here until you confirm payment)']),
       el('div', {}, [el('label', { text: 'Note' }), note]), err,
       el('div', { class: 'row', style: 'margin-top:10px' }, [
         el('button', { class: 'pri', text: sp ? 'Save changes' : 'Add sponsor', onclick: function () {
-          var body = { name: f.name.value, anonymous: anon.checked, dedicationKind: kind.value, dedication: f.ded.value, email: f.email.value, phone: f.phone.value, amount: f.amount.value, method: method.value, status: paid.value, note: note.value };
+          var body = { name: f.name.value, anonymous: anon.checked, dedicationKind: kind.value, dedication: f.ded.value, email: f.email.value, phone: f.phone.value, amount: f.amount.value, method: method.value, status: paid.value, showPublic: paid.value === 'pending' && showNow.checked, note: note.value };
           if (!body.name.trim()) { err.textContent = 'Please enter a name.'; return; }
           run(sp ? api('PATCH', '/sponsorship/' + sp.id, body) : api('POST', '/sponsorship', Object.assign({ slot: s.key }, body)));
         } }),
@@ -146,13 +148,14 @@
       r.pending.forEach(function (p) {
         var age = Math.floor((Date.now() - new Date(p.createdAt)) / 864e5), overdue = p.method !== 'card' && age >= days, toast = el('span', { class: 'small ok' });
         box.appendChild(el('div', { class: 'card' + (overdue ? ' overdue' : ''), style: overdue ? 'border-color:#9b2c2c' : '' }, [
-          el('div', { class: 'row' }, [el('b', { text: p.slot.title + ' · ' + p.slot.dateLabel }), el('span', { class: 'pill pending', text: METHODS[p.method] || p.method }),
+          el('div', { class: 'row' }, [el('b', { text: p.slot.title + ' · ' + p.slot.dateLabel }), el('span', { class: 'pill pending', text: METHODS[p.method] || p.method }), p.showPublic ? el('span', { class: 'pill paid', text: 'shown on the board' }) : null,
             el('span', { class: overdue ? 'small warn' : 'small', text: (age === 0 ? 'today' : age + ' day' + (age > 1 ? 's' : '') + ' ago') + (overdue ? ' · reminder due' : '') })]),
           el('div', { text: p.name + ' · ' + money(p.amountCents) }), el('div', { class: 'small', text: [p.email, p.phone, ded(p.dedicationKind, p.dedication)].filter(Boolean).join(' · ') }), p.note ? el('div', { class: 'small', text: 'Note: ' + p.note }) : null,
           p.reminderCount ? el('div', { class: 'small', text: 'Reminded ' + p.reminderCount + '×, last on ' + new Date(p.remindedAt).toLocaleDateString() }) : null,
           reminderControls(p, mail),
           el('div', { class: 'row', style: 'margin-top:8px' }, [
             el('button', { class: 'pri', text: 'Confirm payment', onclick: function () { guard(api('PATCH', '/sponsorship/' + p.id, { status: 'paid' })).then(function (j) { if (j) { toast.textContent = 'Confirmed' + (j.emailed ? ' (thank-you email sent)' : ''); setTimeout(load, 700); } }); } }),
+            el('button', { text: p.showPublic ? 'Hide from the board' : 'Show on the board now', onclick: function () { guard(api('PATCH', '/sponsorship/' + p.id, { showPublic: !p.showPublic })).then(function (j) { if (j) { toast.textContent = p.showPublic ? 'Hidden from the board (still waiting)' : 'Now shown on the board (still waiting for payment)'; setTimeout(load, 700); } }); } }),
             p.method !== 'card' ? el('button', { text: 'Send reminder', onclick: function () {
               guard(api('POST', '/sponsorship/' + p.id + '/remind', {})).then(function (j) {
                 if (!j) return;

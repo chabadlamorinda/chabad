@@ -520,3 +520,30 @@ test('notes disappear from the board once their date has passed (the board clock
   assert.ok(all.includes('Happening today'), 'a note for today still shows');
   assert.ok((await call('GET', '/admin/api/kiddush/notes', undefined, h)).json.notes.some((n) => n.text === 'Already happened'), 'the staff list still has it, so it can be edited or deleted');
 });
+
+test('show a name on the board while payment is still pending (staff choice), without confirming the payment', async () => {
+  const h = { headers: await adminLogin() };
+  const s = await firstOpen((x) => x.kind === 'shabbat');
+  const hidden = await call('POST', '/admin/api/kiddush/sponsorship', { slot: s.key, name: 'Hidden Pledge', status: 'pending', method: 'check', amount: 500 }, h);
+  const shown = await call('POST', '/admin/api/kiddush/sponsorship', { slot: s.key, name: 'Shown Pledge', status: 'pending', method: 'zelle', amount: 500, showPublic: true }, h);
+  assert.equal(shown.status, 200, shown.text);
+  let slot = (await board()).slots.find((x) => x.key === s.key);
+  assert.deepEqual(slot.sponsors.map((x) => x.name), ['Shown Pledge'], 'only the one staff chose to show is public');
+  assert.equal(slot.status, 'sponsored');
+  // a pledge that has not been confirmed stays "waiting" in the staff views, and can be shown or hidden later
+  const pend = (await call('GET', '/admin/api/kiddush/pending', undefined, h)).json.pending;
+  assert.equal(pend.find((p) => p.name === 'Shown Pledge').showPublic, true);
+  assert.equal(pend.find((p) => p.name === 'Hidden Pledge').showPublic, false);
+  assert.equal((await call('PATCH', '/admin/api/kiddush/sponsorship/' + hidden.json.id, { showPublic: true }, h)).status, 200);
+  slot = (await board()).slots.find((x) => x.key === s.key);
+  assert.equal(slot.sponsors.length, 2);
+  assert.equal((await call('PATCH', '/admin/api/kiddush/sponsorship/' + shown.json.id, { showPublic: false }, h)).status, 200);
+  slot = (await board()).slots.find((x) => x.key === s.key);
+  assert.deepEqual(slot.sponsors.map((x) => x.name), ['Hidden Pledge']);
+  // a later online reservation is hidden by default, and the public board never leaks contact details
+  const online = await call('POST', '/api/kiddush/sponsor', form(s, { method: 'check' }));
+  assert.equal(online.status, 200, online.text);
+  assert.ok(!(await board()).slots.find((x) => x.key === s.key).sponsors.some((x) => x.name === 'The Levy Family'));
+  // unconfirmed: still waiting for payment, so reminders keep working
+  assert.ok(pend.every((p) => p.status === 'pending'));
+});
