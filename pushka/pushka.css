@@ -409,6 +409,7 @@ html[lang=he] .hd-main h1{font-size:30px}
 .wd.future b{opacity:.4;border-style:dashed}.wd.future i{opacity:.5}
 /* a clear second call to action: gold outline and gold text, so it stands out from the quiet buttons */
 .btn-honor{border:2px solid #d6a43c;background:rgba(214,164,60,.12);color:var(--a800);font-weight:700}
+.btn-honor{height:auto;min-height:52px;padding:10px 16px;line-height:1.25;text-align:center;white-space:normal}
 .btn-honor:hover{background:rgba(214,164,60,.2)}
 #app.home .btn-honor{border:2px solid #f0cd7a;background:rgba(240,205,122,.14);color:#ffe9b0;box-shadow:0 0 0 1px rgba(240,205,122,.15),0 6px 18px rgba(0,0,0,.25)}
 #app.home .btn-honor:hover{background:rgba(240,205,122,.24)}

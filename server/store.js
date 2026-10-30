@@ -41,6 +41,10 @@ CREATE TABLE IF NOT EXISTS payment_events (
   amount_cents INT NOT NULL DEFAULT 0, message TEXT NOT NULL DEFAULT '', resolved BOOLEAN NOT NULL DEFAULT FALSE,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+ALTER TABLE members ADD COLUMN IF NOT EXISTS verified_at TIMESTAMPTZ;
+CREATE UNIQUE INDEX IF NOT EXISTS members_verified_email_idx ON members (lower(email)) WHERE verified_at IS NOT NULL;
+CREATE TABLE IF NOT EXISTS auth_codes (email TEXT PRIMARY KEY, code_hash TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, attempts INT NOT NULL DEFAULT 0, sent_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS account_state (member_id TEXT PRIMARY KEY REFERENCES members(id) ON DELETE CASCADE, rev INT NOT NULL DEFAULT 1, state JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS kv (key TEXT PRIMARY KEY, value JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS community_days (day DATE PRIMARY KEY, coins INT NOT NULL DEFAULT 0, cents BIGINT NOT NULL DEFAULT 0);`;
 
@@ -57,7 +61,7 @@ function createStore(url, opts = {}) {
     migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); await q(OUTREACH_SCHEMA); },
     close: () => pool.end(),
     reset: async () => { // tests only (the shareable kit has no website tables)
-      const want = ['members', 'yahrzeits', 'push_subs', 'push_log', 'followups', 'payment_events', 'family', 'rsvps', 'login_codes', 'submissions', 'social_posts', 'email_log', 'form_responses', 'chat_questions', 'email_unsubscribes', 'qa', 'member_activity', 'outreach_done', 'kv', 'community_days', 'fin_tx', 'fin_people', 'fin_budget'];
+      const want = ['members', 'yahrzeits', 'push_subs', 'push_log', 'followups', 'payment_events', 'family', 'rsvps', 'login_codes', 'submissions', 'social_posts', 'email_log', 'form_responses', 'chat_questions', 'email_unsubscribes', 'qa', 'member_activity', 'auth_codes', 'account_state', 'outreach_done', 'kv', 'community_days', 'fin_tx', 'fin_people', 'fin_budget'];
       const have = (await q('SELECT tablename FROM pg_tables WHERE schemaname = current_schema() AND tablename = ANY($1)', [want])).rows.map((r) => r.tablename);
       if (have.length) await q(`TRUNCATE ${have.join(', ')} CASCADE`);
     },
@@ -74,7 +78,10 @@ function createStore(url, opts = {}) {
     setShare: (id, on) => q('UPDATE members SET share_yahrzeits=$2, updated_at=now() WHERE id=$1', [id, !!on]),
     deleteMember: (id) => q('DELETE FROM members WHERE id=$1', [id]),
     listMembers: () => rows(`SELECT m.*, (SELECT count(*) FROM yahrzeits y WHERE y.member_id=m.id)::int AS yahrzeit_count,
-      (SELECT count(*) FROM push_subs p WHERE p.member_id=m.id)::int AS push_count FROM members m ORDER BY m.created_at DESC`),
+      (SELECT count(*) FROM push_subs p WHERE p.member_id=m.id)::int AS push_count,
+      (SELECT updated_at FROM account_state a WHERE a.member_id=m.id) AS saved_at,
+      (SELECT COALESCE(sum(e.amount_cents),0)::int FROM payment_events e WHERE e.type='gift' AND ((m.stripe_customer_id IS NOT NULL AND e.customer_id=m.stripe_customer_id) OR (e.email<>'' AND lower(e.email)=lower(m.email)))) AS gift_cents,
+      (SELECT count(*) FROM payment_events e WHERE e.type='gift' AND ((m.stripe_customer_id IS NOT NULL AND e.customer_id=m.stripe_customer_id) OR (e.email<>'' AND lower(e.email)=lower(m.email))))::int AS gift_count FROM members m ORDER BY m.created_at DESC`),
 
     // ----- yahrzeits -----
     async replaceYahrzeits(memberId, entries) {
@@ -108,6 +115,23 @@ function createStore(url, opts = {}) {
     listFollowups: () => rows("SELECT yahrzeit_id, to_char(occurrence,'YYYY-MM-DD') AS occurrence, note, done_at FROM followups"),
 
     // ----- payment events (from Stripe webhooks) -----
+    // ----- sign-in with an emailed code, and the saved pushka that follows the person between devices -----
+    async putAuthCode(email, hash, minutes) { await q(`INSERT INTO auth_codes (email, code_hash, expires_at, attempts, sent_at) VALUES ($1,$2, now() + ($3 || ' minutes')::interval, 0, now())
+      ON CONFLICT (email) DO UPDATE SET code_hash=EXCLUDED.code_hash, expires_at=EXCLUDED.expires_at, attempts=0, sent_at=now()`, [email, hash, String(minutes)]); },
+    getAuthCode: (email) => one('SELECT *, (expires_at > now()) AS live, extract(epoch FROM (now() - sent_at)) AS age FROM auth_codes WHERE email=$1', [email]),
+    bumpAuthAttempts: (email) => q('UPDATE auth_codes SET attempts = attempts + 1 WHERE email=$1', [email]),
+    deleteAuthCode: (email) => q('DELETE FROM auth_codes WHERE email=$1', [email]),
+    verifiedMemberByEmail: (email) => one('SELECT * FROM members WHERE lower(email)=lower($1) AND verified_at IS NOT NULL', [email]),
+    async createVerifiedMember(email, name) { const id = newId('m_'); await q('INSERT INTO members (id, name, email, verified_at) VALUES ($1,$2,$3, now())', [id, name || '', email]); return id; },
+    getState: (memberId) => one('SELECT rev, state, updated_at FROM account_state WHERE member_id=$1', [memberId]),
+    // Save a new version only if the caller saw the latest one (baseRev). Returns the new revision, or null when someone else saved first.
+    async putState(memberId, baseRev, state) {
+      if (!baseRev) { const r = await q('INSERT INTO account_state (member_id, rev, state) VALUES ($1, 1, $2) ON CONFLICT DO NOTHING RETURNING rev', [memberId, JSON.stringify(state)]); return r.rows[0] ? r.rows[0].rev : null; }
+      const r = await q('UPDATE account_state SET rev = rev + 1, state=$3, updated_at=now() WHERE member_id=$1 AND rev=$2 RETURNING rev', [memberId, baseRev, JSON.stringify(state)]);
+      return r.rows[0] ? r.rows[0].rev : null;
+    },
+    async forceState(memberId, state) { const r = await q(`INSERT INTO account_state (member_id, rev, state) VALUES ($1, 1, $2) ON CONFLICT (member_id) DO UPDATE SET rev = account_state.rev + 1, state=EXCLUDED.state, updated_at=now() RETURNING rev`, [memberId, JSON.stringify(state)]); return r.rows[0].rev; },
+
     // ----- small shared settings (announcements) and the anonymous community coin counter -----
     async getKv(key, fallback = null) { const r = await one('SELECT value FROM kv WHERE key=$1', [key]); return r ? r.value : fallback; },
     setKv: (key, value) => q('INSERT INTO kv (key, value) VALUES ($1,$2) ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value, updated_at=now()', [key, JSON.stringify(value)]),
@@ -117,7 +141,7 @@ function createStore(url, opts = {}) {
     async recordPaymentEvent(e) {
       return (await q('INSERT INTO payment_events (event_id, type, customer_id, email, amount_cents, message) VALUES ($1,$2,$3,$4,$5,$6) ON CONFLICT DO NOTHING', [e.id, e.type, e.customerId || null, e.email || '', e.amount || 0, e.message || ''])).rowCount === 1;
     },
-    listPaymentEvents: () => rows('SELECT * FROM payment_events ORDER BY created_at DESC LIMIT 200'),
+    listPaymentEvents: () => rows("SELECT * FROM payment_events WHERE type <> 'gift' ORDER BY created_at DESC LIMIT 200"),
     resolvePayment: (eventId) => q('UPDATE payment_events SET resolved=TRUE WHERE event_id=$1', [eventId]),
     resolveCustomerPayments: (cus) => q("UPDATE payment_events SET resolved=TRUE WHERE customer_id=$1 AND type LIKE '%failed'", [cus]),
     flagCardIssue: (cus, msg) => q('UPDATE members SET card_issue=$2 WHERE stripe_customer_id=$1', [cus, msg || 'payment_failed']),

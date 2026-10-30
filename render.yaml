@@ -41,7 +41,7 @@ services:
         sync: false
       - key: STRIPE_WEBHOOK_SECRET    # whsec_... from Stripe -> Developers -> Webhooks
         sync: false
-      - key: SMTP_URL                 # optional: emails for Kiddush payment reminders (see store/kiddush-setup.md)
+      - key: SMTP_URL                 # emails the sign-in code and Kiddush reminders (see store/rabbi-setup.md, "Sign-in")
         sync: false
       - key: MAIL_FROM
         sync: false

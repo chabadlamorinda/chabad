@@ -30,6 +30,7 @@ Work in **test mode** first (switch on "Test mode" in the Stripe dashboard).
 ## 5. The extras (all optional; each adds features)
 | You want | Set in Render → Environment |
 |---|---|
+| Sign in with email so each person has their own pushka on all devices | `DATABASE_URL` as below, plus `SMTP_URL` and `MAIL_FROM` (an email account that can send the 6-digit code; a Gmail "App password" works: `smtps://you%40gmail.com:APPPASSWORD@smtp.gmail.com:465`). Share `https://your-site/pushka/?signin=1` |
 | Yahrzeit sharing with the Rabbi, announcements, members, failed-payment alerts | `DATABASE_URL` (a free database from neon.com: create a project, copy the connection string; delete `channel_binding=require` if it appears) |
 | Your private staff page at `/admin/` | `ADMIN_PASSWORD` (12 or more characters; also needs the database for most screens) |
 | Reminders when the app is closed | `VAPID_PUBLIC_KEY` and `VAPID_PRIVATE_KEY` (run `npx web-push generate-vapid-keys` once) and the Render **Starter** plan |

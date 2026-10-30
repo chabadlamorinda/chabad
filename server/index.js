@@ -16,6 +16,7 @@ const crypto = require('crypto');
 const express = require('express');
 const { mountMembers } = require('./members.js');
 const { mountAdmin } = require('./admin.js');
+const { mountAccounts } = require('./accounts.js');
 const { createKiddush } = require('./kiddush.js');
 const { createCampaigns } = require('./campaign.js');
 const { createFinances } = require('./finances.js');
@@ -77,6 +78,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   const mmac = (id) => crypto.createHmac('sha256', sessionSecret + ':member').update(id).digest('base64url');
   const tokens = {
     verifyCustomer: verify,
+    signCustomer: sign,
     signMember: (id) => id + '.' + mmac(id),
     verifyMember(tok) {
       if (typeof tok !== 'string' || tok.length > 100) return null;
@@ -131,6 +133,19 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     try { await handleStripeEvent(event); res.json({ received: true }); }
     catch (e) { log.error('webhook error:', event.type, e && e.message); res.status(500).json({ code: 'server_error', error: 'Webhook failed.' }); }
   });
+  // Email the Rabbi when a gift comes in through the app (one email per Stripe event, even if Stripe retries).
+  async function notifyGift(event, o, cus) {
+    const meta = o.metadata || {}, sub = (o.subscription_details && o.subscription_details.metadata) || (o.lines && o.lines.data && o.lines.data[0] && o.lines.data[0].metadata) || {};
+    const isPi = event.type === 'payment_intent.succeeded';
+    if (isPi ? meta.source !== 'pushka' : (sub.source || meta.source) !== 'pushka') return;
+    const orgEmail = ((((site.content && site.content()) || {}).org) || {}).email, to = (siteEnv && siteEnv.ADMIN_EMAIL) || orgEmail || ''; if (!mailer || !to) return;
+    const cents = isPi ? (o.amount_received || o.amount || 0) : (o.amount_paid || 0), email = o.customer_email || o.receipt_email || '';
+    if (!(cents > 0) || !(await store.recordPaymentEvent({ id: 'gift_' + event.id, type: 'gift', customerId: cus, email, amount: cents, message: 'Gift received' }))) return;
+    await store.resolvePayment('gift_' + event.id);
+    const fund = FUND_NAMES[meta.fund || sub.fund] || meta.fund || sub.fund || 'General', monthly = !isPi, club = (sub.club || meta.club) === 'yes';
+    const dedication = meta.dedication || sub.dedication || '';
+    mailer.send({ to, subject: `Gift received: $${(cents / 100).toFixed(2)}${monthly ? ' monthly' : ''}${club ? ' (Chai Club)' : ''}`, text: `A gift came in through My Pushka.\n\nAmount: $${(cents / 100).toFixed(2)}${monthly ? ' (monthly)' : ''}\nFund: ${fund}${club ? '\nChai Club member' : ''}${dedication ? '\nDedication: ' + dedication : ''}${email ? '\nFrom: ' + email : ''}\n\nSee everything in your Rabbi area: /admin/` }).catch((e) => log.error('gift email failed:', e && e.message));
+  }
   async function handleStripeEvent(event) {
     if (!store) return;
     if (await kiddush.onStripeEvent(event)) return; // Kiddush sponsorship checkouts
@@ -148,6 +163,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
       case 'invoice.payment_succeeded':
       case 'invoice.paid':
       case 'payment_intent.succeeded':
+        await notifyGift(event, o, cus);
         if (cus && (event.type !== 'payment_intent.succeeded' || (o.metadata && o.metadata.source === 'pushka'))) { await store.clearCardIssue(cus); await store.resolveCustomerPayments(cus); }
         return;
       case 'charge.refunded':
@@ -162,6 +178,9 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   // Apple Pay domain verification file (paste its contents into the APPLE_PAY_ASSOC setting).
   app.get('/.well-known/apple-developer-merchantid-domain-association', (req, res) => (applePayAssoc ? res.type('text').send(applePayAssoc) : res.status(404).type('text').send('Not found')));
 
+  // ---------- sign-in by emailed code and saved pushkas (own parsers, so they are mounted before the general API) ----------
+  const accountsOn = mountAccounts(app, { store, mailer, tokens, sessionSecret, limit, log });
+
   // The website (pages, accounts, RSVPs, SEO files). Mounted before the app's own "/" redirect below
   // and before /api, whose catch-all would otherwise answer /api/site.
   const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook, reminders, chatClient, contentDir: siteContentDir });
@@ -174,7 +193,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   api.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
 
   api.get('/config', (req, res) => {
-    res.json({ enabled: !!stripe, publishableKey: stripe ? publishableKey : '', livemode: /^pk_live_/.test(publishableKey || ''), members: !!store, vapidPublicKey: store && sendPush ? vapidPublicKey : '' });
+    res.json({ enabled: !!stripe, publishableKey: stripe ? publishableKey : '', livemode: /^pk_live_/.test(publishableKey || ''), members: !!store, accounts: accountsOn, vapidPublicKey: store && sendPush ? vapidPublicKey : '' });
   });
 
   const needStripe = (req, res, next) => (stripe ? next() : res.status(503).json({ code: 'not_configured', error: 'Card payments are not set up yet.' }));
