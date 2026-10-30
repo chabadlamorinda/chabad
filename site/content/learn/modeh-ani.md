@@ -2,7 +2,7 @@
 title: Modeh Ani: The Jewish Morning Prayer of Thanks
 description: The Modeh Ani prayer said on waking up, in Hebrew, transliteration and English, what it means, and how to wash hands in the morning.
 category: Prayer & Torah
-related: prayer, shema, blessings, hebrew-alphabet
+related: prayer, making-every-day-count, shema, blessings, hebrew-alphabet
 local: We are happy to teach you and your children Modeh Ani and the morning routine, and can give you a Modeh Ani card. Call 925-384-7242.
 ---
 Modeh Ani is the short prayer Jews say the moment they wake up, thanking G-d for returning their soul and giving them a new day. It is just twelve words in Hebrew, and it is usually the very first prayer children learn.

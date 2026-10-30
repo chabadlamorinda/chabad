@@ -2,7 +2,7 @@
 title: Before Surgery or a Medical Procedure: Jewish Prayers and Customs
 description: What Jews do before surgery or a hard medical test: Tehillim, a Mi Sheberach, tzedakah, checking mezuzahs, a blessing from the Rabbi and a short prayer.
 category: Prayer & Torah
-related: mi-sheberach, tehillim, bikur-cholim, bitachon, shabbat-in-the-hospital
+related: mi-sheberach, birkat-hagomel, tehillim, bikur-cholim, bitachon, shabbat-in-the-hospital
 local: Having surgery soon? Call or text Rabbi Yisroel Labkowski at 925-384-7242 for a blessing, and we will add your name to our prayers at Chabad of Lamorinda in Lafayette.
 ---
 Surgery, a biopsy, a scan you are worried about: it is natural to feel anxious. Judaism gives us simple, meaningful things to do before a medical procedure, so we go in with faith, with the prayers of others behind us, and with trust that G-d works through the hands of the doctors.

@@ -2,7 +2,7 @@
 title: Шабат с детьми: идеи, чтобы он был осмысленным и веселым
 description: Практические идеи, как отмечать Шабат с детьми: свечи, благословение детей, Кидуш, песни, беседа о главе, игры и субботний день.
 category: Shabbat & holidays
-related: shabbat, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
+related: shabbat, blessing-your-children, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
 local: Наш еврейский детский сад и воскресная школа оживляют Шабат для детей: chabadoflamorinda.com/programs/hebrew-school или по телефону 925-384-7242.
 ---
 Шабат с детьми удается лучше всего, когда дети участвуют в каждом шаге: помогают готовиться, зажигают свечи, получают благословение и запевают песни за столом. Маленькие традиции, повторяемые каждую неделю, дают детям воспоминания и еврейскую идентичность на всю жизнь.

@@ -2,7 +2,7 @@
 title: Shehecheyanu Blessing: When and How to Say It
 description: The Shehecheyanu blessing in Hebrew, transliteration and English, what it means, and when to say it: holidays, new fruit, new clothes and more.
 category: Prayer & Torah
-related: blessings, kiddush, jewish-calendar, shabbat-candles
+related: blessings, blessings-on-nature, kiddush, jewish-calendar, shabbat-candles
 local: Want to learn more blessings or celebrate the holidays with us? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/holidays.
 ---
 Shehecheyanu is a short blessing of thanks said on happy, new or seasonal occasions. It thanks G-d "who has kept us alive, sustained us, and brought us to this time," and is said at the start of holidays, when eating a new fruit of the season, and on other joyful firsts.

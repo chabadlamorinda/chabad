@@ -2,7 +2,7 @@
 title: חינוך ילדים יהודי: לגדל ילדים עם ערכי תורה
 description: מדריך פשוט לחינוך יהודי: חינוך בדוגמה אישית, מצוות יומיות עם הילדים, שבת וחגים, חינוך יהודי ומשמעת באהבה.
 category: Jewish home
-related: honoring-parents, technology-and-screens-jewish-view, chesed, jewish-home-library, upsherin
+related: honoring-parents, blessing-your-children, technology-and-screens-jewish-view, chesed, jewish-home-library, upsherin
 local: תנו לילדכם התחלה יהודית חמה בגן הילדים היהודי ובתלמוד התורה שלנו. ראו chabadoflamorinda.com/programs/jewish-preschool או התקשרו 925-384-7242.
 ---
 חינוך ילדים יהודי פירושו לגדל ילדים באהבה, בערכי תורה ובזהות יהודית חזקה, בעיקר על ידי כך שאתם חיים את הערכים האלה בעצמכם. המסורת היהודית רואה בכל ילד נשמה יקרה שה׳ הפקיד בידי ההורים, ובחינוך משימה קדושה.

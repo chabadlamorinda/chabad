@@ -2,7 +2,7 @@
 title: Jewish Blessings Over Food: Which Bracha to Say and When
 description: A simple guide to Jewish blessings (brachot): the six blessings before food, the blessings after eating, Shehecheyanu, and how to say them.
 category: Prayer & Torah
-related: prayer, challah, kiddush, modeh-ani
+related: prayer, blessings-on-nature, challah, kiddush, modeh-ani
 local: We are happy to teach you the blessings, answer questions about which bracha to say, and give you a blessings card. Call 925-384-7242.
 ---
 A bracha (blessing) is a short prayer Jews say before and after eating, before doing a mitzvah, and at special moments in life. Saying a blessing turns an ordinary act, like eating an apple, into a moment of connection with G-d.

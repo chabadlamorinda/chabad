@@ -2,7 +2,7 @@
 title: ברכת שהחיינו: מתי ואיך מברכים
 description: נוסח ברכת שהחיינו ופירושה, ומתי מברכים אותה: בחגים, על פרי חדש, על בגד חדש ועוד.
 category: Prayer & Torah
-related: blessings, kiddush, jewish-calendar, shabbat-candles
+related: blessings, blessings-on-nature, kiddush, jewish-calendar, shabbat-candles
 local: רוצים ללמוד עוד ברכות או לחגוג איתנו את החגים? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו בכתובת chabadoflamorinda.com/holidays.
 ---
 שהחיינו היא ברכת הודיה קצרה שאומרים באירועים שמחים, חדשים או עונתיים. היא מודה לה׳ "שֶׁהֶחֱיָנוּ וְקִיְּמָנוּ וְהִגִּיעָנוּ לַזְּמַן הַזֶּה", ואומרים אותה בתחילת החגים, כשאוכלים פרי חדש של העונה, ובפעמים ראשונות שמחות אחרות.

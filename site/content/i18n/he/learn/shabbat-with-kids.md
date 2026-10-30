@@ -2,7 +2,7 @@
 title: שבת עם ילדים: רעיונות שיהפכו אותה למשמעותית ומהנה
 description: רעיונות מעשיים לחגיגת שבת עם ילדים: נרות, ברכת הילדים, קידוש, שירים, שיחה על הפרשה, משחקים ושבת אחר הצהריים.
 category: Shabbat & holidays
-related: shabbat, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
+related: shabbat, blessing-your-children, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
 local: הגן היהודי ותלמוד התורה שלנו מחיים את השבת לילדים; ראו chabadoflamorinda.com/programs/hebrew-school או התקשרו 925-384-7242.
 ---
 שבת עם ילדים מצליחה במיוחד כשהילדים שותפים בכל שלב: עוזרים בהכנות, מדליקים נרות, מקבלים ברכה ומובילים שירים ליד השולחן. מסורות קטנות שחוזרות כל שבוע נותנות לילדים זיכרונות וזהות יהודית לכל החיים.

@@ -2,7 +2,7 @@
 title: Why Am I Here? The Jewish View of Life's Purpose
 description: What Judaism teaches about the meaning of life: why G-d created the world, why your soul came down, and how ordinary days become meaningful.
 category: Jewish ideas
-related: the-soul, why-mitzvot, hashgacha-pratit, free-will, belief-in-g-d
+related: the-soul, making-every-day-count, why-mitzvot, hashgacha-pratit, free-will, belief-in-g-d
 local: Big questions are welcome at Chabad of Lamorinda. Come to a class in Lafayette, or sit down with Rabbi Yisroel Labkowski over coffee: 925-384-7242.
 ---
 Sooner or later, everyone asks it: *Why am I here? Does my life matter?* Judaism gives a clear and hopeful answer. You are here on purpose, with a mission no one else can do, and you carry it out in the most ordinary places: at home, at work, at the dinner table.

@@ -2,7 +2,7 @@
 title: הכרת הטוב: תודה ביהדות
 description: מה פירוש הכרת הטוב, למה תודה היא יסוד ביהדות, להודות לה׳ ולאנשים, ותרגולים יומיומיים פשוטים לחיים מלאי תודה.
 category: Jewish ideas
-related: modeh-ani, jealousy-and-envy, blessings, honoring-parents, birkat-hamazon
+related: modeh-ani, birkat-hagomel, jealousy-and-envy, blessings, honoring-parents, birkat-hamazon
 local: רוצים להודות לה׳ בדרך מיוחדת? הקדישו קידוש או תהילים לכבוד ברכה ב-chabadoflamorinda.com/sponsor או התקשרו 925-384-7242.
 ---
 הכרת הטוב היא הערך היהודי של תודה כלפי ה׳ וכלפי בני אדם. היהדות רואה בתודה יסוד של מידות טובות: המילה "יהודי" עצמה באה משורש עברי שפירושו להודות.

@@ -2,7 +2,7 @@
 title: Birkat Kohanim: The Priestly Blessing and Blessing Our Children
 description: The Priestly Blessing: its three verses, who the Kohanim are, when it is said in synagogue, and how parents bless children with it on Friday night.
 category: Prayer & Torah
-related: pidyon-haben, shabbat-meals, prayer, the-holy-temple
+related: pidyon-haben, blessing-your-children, shabbat-meals, prayer, the-holy-temple
 local: Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski with any question, 925-384-7242.
 ---
 Birkat Kohanim, the Priestly Blessing, is one of the oldest blessings in the world. G-d commanded Aaron the High Priest and his descendants, the Kohanim, to bless the Jewish people with these words, and they have been said ever since: in the Holy Temple, in synagogues around the world, and by parents over their children's heads every Friday night.
