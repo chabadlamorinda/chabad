@@ -4,7 +4,7 @@
 'use strict';
 const { esc } = require('./md.js');
 
-const SHAREABLE = /^\/(learn|events|holidays|programs|help|parsha|ask|jewish-[a-z-]+|shabbat-times|this-week|shabbat|kaddish|tehillim|sponsor|welcome|tools|mitzvah)(\/|$)/;
+const SHAREABLE = /^\/(learn|events|holidays|programs|help|parsha|ask|jewish-[a-z-]+|shabbat-times|this-week|shabbat|kaddish|tehillim|sponsor|welcome|tools|mitzvah|menorah|dreidel)(\/|$)/;
 
 function shareBar(X, url, title) {
   const t = X.t, u = encodeURIComponent(url), msg = encodeURIComponent(title + ' ' + url), sub = encodeURIComponent(title);

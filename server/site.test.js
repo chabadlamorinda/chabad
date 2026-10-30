@@ -452,7 +452,7 @@ test('Kaddish requests and the prayer list stay private', async () => {
 test('every interface phrase on the main pages is translated into Hebrew and Russian', async () => {
   const c = client(), i18n = server_site().i18n;
   i18n.missing.clear();
-  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/menorah', '/campaign/building-campaign?preview=1', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask', '/shabbat-times', '/shabbat-times/orinda', '/this-week', '/jewish-holidays-' + new Date().getFullYear()];
+  const pages = ['/', '/events', '/events/' + EVENT, '/shabbat', '/holidays', '/holidays/chanukah', '/programs', '/programs/hebrew-school', '/jewish-lamorinda', '/learn', '/learn/mezuzah', '/learn/yahrzeit', '/our-area', '/jewish-moraga', '/community', '/get-involved', '/help', '/help/someone-passed-away', '/kaddish', '/tehillim', '/tehillim?b=1986-05-01&name=%D7%9E%D7%A9%D7%94', '/sponsor?o=yahrzeit&name=A', '/account', '/about', '/contact', '/faq', '/photos', '/tools/hebrew-date?d=2026-10-25', '/tools/yahrzeit?d=2020-03-10', '/tools/bar-bat-mitzvah?d=2014-03-10', '/no-such-page', '/donate', '/forms', '/forms/hebrew-school', '/forms/summer-camp', '/forms/sell-chametz', '/welcome', '/jewish-martinez', '/help/disputes', '/parsha', '/calendar', '/tools/zmanim', '/menorah', '/chanukah-quiz', '/campaign/building-campaign?preview=1', '/tools/hebrew-birthday?d=1985-04-02', '/daily-study', '/ask', '/shabbat-times', '/shabbat-times/orinda', '/this-week', '/jewish-holidays-' + new Date().getFullYear()];
   for (const l of ['he', 'ru']) for (const p of pages) await c.call('GET', '/' + l + p);
   assert.deepEqual([...i18n.missing], [], 'add these to site/content/i18n/he.json and ru.json');
   // and the content itself: every guide, help page, holiday and page has both translations
@@ -502,6 +502,12 @@ test('home page: large banners, smaller banners, what we built, ways to get invo
   assert.match((await client().call('GET', '/holidays/chanukah')).text, /href="\/dreidel"/);
   for (const L of ['', '/he', '/ru']) { const m = await client().call('GET', L + '/menorah'); assert.equal(m.status, 200); assert.match(m.text, /data-menorah/); assert.match(m.text, /להדליק נר חנכה|לְהַדְלִיק נֵר חֲנֻכָּה/); }
   assert.match((await client().call('GET', '/holidays/chanukah')).text, /href="\/menorah"/);
+  // The Chanukah quiz: ten questions, each with exactly one right answer that exists, in all three languages.
+  const { QUIZ } = require('./site/fun.js');
+  assert.equal(QUIZ.length, 10);
+  for (const [, answers, right, , link] of QUIZ) { assert.ok(answers[right], 'right answer exists'); assert.match(link, /^\//); }
+  for (const L of ['', '/he', '/ru']) { const q = await client().call('GET', L + '/chanukah-quiz'); assert.equal(q.status, 200); assert.match(q.text, /data-quiz/); assert.equal((q.text.match(/class="card qz-q"/g) || []).length, 10); }
+  assert.match((await client().call('GET', '/holidays/chanukah')).text, /href="\/chanukah-quiz"/);
   assert.match((await client().call('GET', '/programs/hebrew-school')).text, /class="page-photo"/);
   const fs = require('fs'); for (const f of fs.readdirSync(path.join(DIR, '..', 'media', 'photos')).filter((x) => x.endsWith('.jpg'))) assert.ok(fs.statSync(path.join(DIR, '..', 'media', 'photos', f)).size < 400 * 1024, f + ' is under 400 KB');
   assert.match((await client().call('GET', '/he/')).text, /שבת בחב״ד למורינדה/);

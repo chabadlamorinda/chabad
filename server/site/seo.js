@@ -7,7 +7,7 @@ const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 const { LANGS, withLang } = require('./i18n.js');
 
-const STATIC = ['/', '/mitzvah', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/tools/zmanim', '/tools/hebrew-birthday', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
+const STATIC = ['/', '/mitzvah', '/menorah', '/dreidel', '/chanukah-quiz', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/tools/zmanim', '/tools/hebrew-birthday', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
 // AI and search crawlers we explicitly welcome (being cited by assistants is a goal of this site).
 const BOTS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'meta-externalagent', 'FacebookBot', 'DuckDuckBot', 'YandexBot', 'cohere-ai', 'MistralAI-User'];
 

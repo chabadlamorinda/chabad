@@ -37,6 +37,34 @@
   }
 
   // Header: "Sign in" becomes "My account" once signed in on this device.
+  // Chanukah quiz (/chanukah-quiz): each question shows right or wrong and why; after the last one, the score and
+  // a ready "challenge a friend" message.
+  Array.prototype.forEach.call(document.querySelectorAll('[data-quiz]'), function (g) {
+    var Q = JSON.parse(g.querySelector('[data-qz-text]').textContent), qs = g.querySelectorAll('.qz-q'), end = g.querySelector('.qz-end'), score = 0, done = 0;
+    var fill = function (s) { return s.replace('{score}', score); };
+    var reset = function () {
+      score = 0; done = 0; end.hidden = true;
+      Array.prototype.forEach.call(qs, function (q) {
+        q.classList.remove('qz-done'); q.querySelector('.qz-why').hidden = true;
+        Array.prototype.forEach.call(q.querySelectorAll('.qz-b'), function (b) { b.disabled = false; b.classList.remove('qz-right', 'qz-wrong'); });
+      });
+    };
+    g.addEventListener('click', function (ev) {
+      if (ev.target.closest('[data-qz-again]')) { reset(); window.scrollTo({ top: g.offsetTop, behavior: 'smooth' }); return; }
+      var b = ev.target.closest('.qz-b'), q = b && b.closest('.qz-q'); if (!q || q.classList.contains('qz-done')) return;
+      var right = +q.getAttribute('data-right'), j = +b.getAttribute('data-j'), bs = q.querySelectorAll('.qz-b');
+      q.classList.add('qz-done'); Array.prototype.forEach.call(bs, function (x) { x.disabled = true; });
+      bs[right].classList.add('qz-right'); if (j !== right) b.classList.add('qz-wrong'); else score++;
+      var why = q.querySelector('.qz-why'); why.querySelector('.qz-mark').textContent = j === right ? Q.right : Q.wrong; why.hidden = false;
+      if (++done < qs.length) return;
+      var n = qs.length, lvl = score === n ? 3 : score >= n * 0.7 ? 2 : score >= n * 0.4 ? 1 : 0, brag = fill(Q.brag);
+      end.querySelector('.qz-score').textContent = fill(Q.score); end.querySelector('.qz-level').textContent = Q.levels[lvl];
+      end.querySelector('[data-qz-wa]').href = 'https://wa.me/?text=' + encodeURIComponent(brag);
+      var sh = end.querySelector('[data-qz-share]');
+      if (navigator.share) { sh.hidden = false; sh.onclick = function () { navigator.share({ text: brag }).catch(function () {}); }; }
+      end.hidden = false; end.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
   // Footer: on phones the link groups start folded; on wide screens they always stay open.
   var cols = document.querySelectorAll('.ftr-col');
   // (also when the screen turns or the window is resized, so the links never stay hidden on a wide screen)
