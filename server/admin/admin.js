@@ -133,8 +133,9 @@
     wrapErr(api('GET', '/members')).then(function (j) {
       if (!j) return;
       if (!j.members.length) box.appendChild(el('p', { text: 'No members yet.' }));
+      else box.appendChild(el('p', { text: j.members.length + ' people in all · ' + j.members.filter(function (m) { return m.signedIn; }).length + ' signed in with their own pushka' }));
       j.members.forEach(function (m) {
-        box.appendChild(el('div', { class: 'card' }, [el('strong', { text: m.name }), el('div', { class: 'small', text: m.email + (m.phone ? ' · ' + m.phone : '') }),
+        box.appendChild(el('div', { class: 'card' }, [el('strong', { text: m.name || '(no name yet)' }), el('div', { class: 'small', text: (m.signedIn ? 'Signed in with email' : 'Saved details only') + ' · joined ' + new Date(m.joined).toLocaleDateString() + (m.savedAt ? ' · pushka last saved ' + new Date(m.savedAt).toLocaleDateString() : '') }), el('div', { class: 'small', text: m.email + (m.phone ? ' · ' + m.phone : '') }),
           el('div', { class: 'small', text: (m.shares ? 'Shares yahrzeits (' + m.yahrzeits + ')' : 'Does not share yahrzeits') + ' · notifications on ' + m.push + ' device(s)' }),
           m.cardIssue ? el('div', { class: 'warn small', text: 'Card problem: ' + m.cardIssue }) : null]));
       });

@@ -69,7 +69,7 @@ function mountAdmin(app, { funds = {}, store, stripe, password, secret, limit, s
     res.json({ ok: true });
   }));
   r.get('/api/members', authed, needDb, wrap(async (req, res) => {
-    res.json({ members: (await store.listMembers()).map((m) => ({ id: m.id, name: m.name, email: m.email, phone: m.phone, shares: m.share_yahrzeits, yahrzeits: m.share_yahrzeits ? m.yahrzeit_count : null, push: m.push_count, cardIssue: m.card_issue, joined: m.created_at })) });
+    res.json({ members: (await store.listMembers()).map((m) => ({ id: m.id, name: m.name, email: m.email, phone: m.phone, shares: m.share_yahrzeits, yahrzeits: m.share_yahrzeits ? m.yahrzeit_count : null, push: m.push_count, cardIssue: m.card_issue, joined: m.created_at, signedIn: !!m.verified_at, savedAt: m.saved_at })) });
   }));
   r.get('/api/payments', authed, needDb, wrap(async (req, res) => { res.json({ events: await store.listPaymentEvents() }); }));
   r.post('/api/payments/:id/resolve', authed, needDb, wrap(async (req, res) => { await store.resolvePayment(req.params.id); res.json({ ok: true }); }));

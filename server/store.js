@@ -78,7 +78,8 @@ function createStore(url, opts = {}) {
     setShare: (id, on) => q('UPDATE members SET share_yahrzeits=$2, updated_at=now() WHERE id=$1', [id, !!on]),
     deleteMember: (id) => q('DELETE FROM members WHERE id=$1', [id]),
     listMembers: () => rows(`SELECT m.*, (SELECT count(*) FROM yahrzeits y WHERE y.member_id=m.id)::int AS yahrzeit_count,
-      (SELECT count(*) FROM push_subs p WHERE p.member_id=m.id)::int AS push_count FROM members m ORDER BY m.created_at DESC`),
+      (SELECT count(*) FROM push_subs p WHERE p.member_id=m.id)::int AS push_count,
+      (SELECT updated_at FROM account_state a WHERE a.member_id=m.id) AS saved_at FROM members m ORDER BY m.created_at DESC`),
 
     // ----- yahrzeits -----
     async replaceYahrzeits(memberId, entries) {
