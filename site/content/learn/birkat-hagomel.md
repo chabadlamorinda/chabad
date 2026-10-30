@@ -16,7 +16,7 @@ The blessing comes from Psalm 107, which describes four kinds of people who shou
 - someone who **traveled through the desert** or another dangerous journey;
 - someone who was **released from captivity**.
 
-From these, Jewish law teaches that anyone who came safely through real danger says it, for example after a serious accident or a dangerous situation. Customs differ about air travel and about a woman after childbirth, so ask the Rabbi about your own case.
+From these, Jewish law teaches that anyone who came safely through real danger says it, for example after a serious accident or a dangerous situation. After a **flight over the ocean**, such as to Israel or Europe, the blessing is said. For a woman after childbirth, it depends on the family's custom; ask the Rabbi.
 
 ## How and when
 
@@ -43,6 +43,9 @@ After a serious illness or major surgery, usually yes, once you are well enough 
 
 ### Can I say it if I cannot come to synagogue?
 It is meant to be said with a minyan. If that is hard, talk to the Rabbi; often a minyan can be gathered where you are.
+
+### Do I say it after a flight?
+Yes, after a flight that crossed the ocean, for example to Israel, Europe or Hawaii. Say it at the first Torah reading you can attend after you land.
 
 ### Can someone say it for me?
 The person who was saved says it themselves. Others can add their own thanks, give tzedakah in your honor, and answer "Amen."
