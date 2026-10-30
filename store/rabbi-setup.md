@@ -35,6 +35,13 @@ Donors whose card fails then see "We couldn't charge your card — Update card" 
 - **Google Pay** needs nothing: it appears automatically on Android/Chrome when the donor has a card in Google Pay.
 - **Apple Pay**: Stripe → Settings → Payment methods → Apple Pay → **Add new domain** → enter your app's domain → Stripe gives you a file; open it in a text editor, copy everything and paste it into Render as `APPLE_PAY_ASSOC`. Back in Stripe press **Verify**.
 
+## Sign-in: "your own pushka" for everyone (optional)
+This lets anyone you send the link to sign in with their email and have **their own pushka for Chabad of Lamorinda** that follows them to every phone or computer. Money still goes to Chabad of Lamorinda. No one needs an account: it is only offered.
+It needs two things in Render → Environment:
+1. `DATABASE_URL` (step above).
+2. Email, so the 6-digit code can be sent: `SMTP_URL` and `MAIL_FROM`. Easiest is a Gmail address with an **App password** (Google Account → Security → 2-Step Verification → App passwords): `SMTP_URL` = `smtps://yourname%40gmail.com:APPPASSWORD@smtp.gmail.com:465` (write `@` as `%40`), `MAIL_FROM` = `My Pushka <yourname@gmail.com>`. A mail service such as Resend or Brevo also works.
+When both are set, the app shows **Sign in** by itself. Send people **https://your-site/pushka/?signin=1**, which opens the sign-in right away; the plain link works too, and they can also "Install the app" from More → Profile. Until both are set, the app works exactly as before on one device.
+
 ## Privacy
 Sharing is **off by default** and only the people who switch it on appear on your page. The privacy policy inside the app already says this. If you later change what you collect, update `pushka/privacy.html` and the Google Play "Data safety" form.
 

@@ -78,6 +78,9 @@ function load() {
   let o = null;
   try { o = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
   if (!o && !PRACTICE) { try { const v = JSON.parse(localStorage.getItem("lamorinda-pushka-v3")); if (v) o = { name: v.name, email: v.email, history: v.history, pushkas: [{ id: "p1", name: "", balance: v.balance || 0, drops: v.drops || 0 }] }; } catch (e) {} }
+  return normalize(o);
+}
+function normalize(o) {
   const b = def(), s = Object.assign({}, b, o || {});
   s.rem = Object.assign({}, b.rem, (o && o.rem) || {}); s.rem.candle = Object.assign({}, b.rem.candle, s.rem.candle); s.rem.streak = Object.assign({}, b.rem.streak, s.rem.streak);
   if (!Array.isArray(s.rem.custom)) s.rem.custom = [];
@@ -93,7 +96,9 @@ function load() {
   return s;
 }
 let S = load();
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+const save = () => { if (S.auth && !PRACTICE && !noSync) { S.dirty = true; syncSoon(); } persist(); };
+let noSync = false;
 const P = () => S.pushkas.find((p) => p.id === S.cur) || S.pushkas[0];
 const U = { page: "home", stack: [], pending: null, giveFund: null, giveAmt: 36, freq: "once", dedication: "", segQ: "", segCat: "All", segId: null, maaserAmt: "", drawn: "", busy: false, onClose: null };
 const pushHist = (h) => { S.history.unshift(h); if (S.history.length > 1000) S.history.length = 1000; };
@@ -244,7 +249,7 @@ async function api(path, opts = {}) {
   const headers = { "Content-Type": "application/json" }, tok = opts.member ? S.mtoken : S.token; if (tok) headers.Authorization = "Bearer " + tok;
   let r; try { r = await fetch("/api" + path, { method: opts.method || "GET", headers, body: opts.body ? JSON.stringify(opts.body) : undefined }); } catch (e) { throw Object.assign(new Error("network"), { code: "network" }); }
   let j = {}; try { j = await r.json(); } catch (e) {}
-  if (!r.ok) { if (r.status === 401 && opts.member && S.mtoken) { S.mtoken = ""; S.msig = ""; save(); } else if (r.status === 401 && !opts.member && S.token) { S.token = ""; S.synced = ""; API.card = null; save(); } throw Object.assign(new Error(j.error || "Request failed"), { code: j.code || "server_error", status: r.status }); }
+  if (!r.ok) { if (r.status === 401 && opts.member && S.mtoken) { S.mtoken = ""; S.msig = ""; if (S.auth) S.auth = null; save(); } else if (r.status === 401 && !opts.member && S.token) { S.token = ""; S.synced = ""; API.card = null; save(); } throw Object.assign(new Error(j.error || "Request failed"), { code: j.code || "server_error", status: r.status, data: j }); }
   return j;
 }
 const BRANDS = { visa: "Visa", mastercard: "Mastercard", amex: "American Express", discover: "Discover", diners: "Diners Club", jcb: "JCB", unionpay: "UnionPay" };
@@ -253,7 +258,7 @@ const cardExp = () => (API.card && API.card.expMonth ? String(API.card.expMonth)
 const cardExpired = () => { const c = API.card; if (!c || !c.expYear) return false; const n = new Date(); return c.expYear < n.getFullYear() || (c.expYear === n.getFullYear() && c.expMonth < n.getMonth() + 1); };
 async function refreshCard() { try { API.card = (await api("/payment-method")).card; } catch (e) { API.card = null; } }
 async function loadSubs() { try { API.subs = (await api("/subscriptions")).subscriptions; } catch (e) { API.subs = []; } if (U.page === "profile" || U.page === "club") draw(); }
-async function initPay() { if (PRACTICE) { API.enabled = true; API.card = { brand: "visa", last4: "4242" }; API.subs = S.pracSubs || []; return draw(); } try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } API.members = !!c.members; API.vapid = c.vapidPublicKey || ""; if (API.members && S.mtoken) { try { API.cardIssue = (await api("/member", { member: true })).cardIssue || ""; } catch (e) {} } if (API.vapid && S.pushOn) pushSync(); } catch (e) {} draw(); }
+async function initPay() { if (PRACTICE) { API.enabled = true; API.card = { brand: "visa", last4: "4242" }; API.subs = S.pracSubs || []; return draw(); } try { const c = await api("/config"); if (c.enabled && c.publishableKey) { API.enabled = true; API.pk = c.publishableKey; API.live = !!c.livemode; if (S.token) await refreshCard(); } API.members = !!c.members; API.accounts = !!c.accounts && !PRACTICE; API.vapid = c.vapidPublicKey || ""; if (API.members && S.mtoken) { try { API.cardIssue = (await api("/member", { member: true })).cardIssue || ""; } catch (e) {} } if (API.vapid && S.pushOn) pushSync(); } catch (e) {} draw(); }
 let stripeP = null;
 function loadStripe() {
   if (stripeP) return stripeP;
@@ -649,7 +654,7 @@ PG.profile = () => {
   const payRow = API.enabled
     ? `<div class="row-btn" style="cursor:default"><span style="color:var(--accent)">${ico(I.card, 20)}</span><div class="grow" style="font-size:14px;direction:ltr;text-align:start">${API.card ? esc(cardLabel()) : t("No card saved")}</div><button class="btn btn-ghost" data-act="cardChange">${API.card ? t("Change") : t("Add")}</button>${API.card ? `<button class="btn btn-ghost" data-act="removeCard">${t("Remove")}</button>` : ""}</div>`
     : `<div class="rowp">${t("Card payments are not switched on yet. Gifts are completed on our donation page.")}</div>`;
-  return sub(tt("Profile"), `${f("name", t("Name"), S.name)}${f("email", t("Email"), S.email)}${f("billingEmail", t("Billing email"), S.billingEmail)}${f("phone", t("Phone number"), S.phone)}${f("address", t("Mailing address"), S.address)}
+  return sub(tt("Profile"), `${accountCard()}${installCard()}${f("name", t("Name"), S.name)}${f("email", t("Email"), S.email)}${f("billingEmail", t("Billing email"), S.billingEmail)}${f("phone", t("Phone number"), S.phone)}${f("address", t("Mailing address"), S.address)}
     ${sec(t("Recurring"))}${rec}${sec(t("Payment"))}${payRow}
     ${sec(t("Manage account"))}<button class="row-btn" data-act="deleteAcct" style="color:#9b1c5a"><span style="flex:none">${ico(I.trash, 22)}</span><div class="grow" style="font-size:16px">${t("Delete account?")}</div></button>`);
 };
@@ -972,7 +977,7 @@ A.yzGive = (v) => { const e = S.yz.find((x) => x.id === v); if (!e) return; Obje
 async function memberSync() {
   const sig = [S.name, S.email, S.phone, S.address, S.token].join("|");
   if (S.mtoken && S.msig === sig) return true;
-  const r = await api("/member", { method: "POST", member: true, body: { name: S.name, email: S.email, phone: S.phone, address: S.address, stripeToken: S.token || undefined } });
+  const r = await api("/member", { method: "POST", member: true, body: { name: S.name, email: S.auth ? S.auth.email : S.email, phone: S.phone, address: S.address, stripeToken: S.token || undefined } });
   S.mtoken = r.token; S.msig = sig; save(); return true;
 }
 async function ensureMember() {
@@ -1059,17 +1064,18 @@ A.notifGo = async () => { U.notifHidden = true; try { if (pushOk()) await pushEn
 // ---------- gentle, optional nudge to save your details (never required) ----------
 const NUDGE_GAP = [3, 14, 30, 60]; // days to wait after each "Not now"
 function nudgeDue() {
-  if (S.email || PRACTICE || U.nudgeHidden) return false;
+  if (PRACTICE || U.nudgeHidden || (API.accounts ? S.auth : S.email)) return false;
   const n = S.nudge || (S.nudge = { at: 0, n: 0, first: Date.now() }), gap = NUDGE_GAP[Math.min(n.n, NUDGE_GAP.length - 1)] * 864e5;
   const used = S.pushkas.reduce((a, p) => a + p.drops, 0) >= 3;
   return used && Date.now() - (n.at || n.first) > (n.at ? gap : 2 * 864e5);
 }
 function nudgeBanner() {
   if (!nudgeDue()) return "";
+  if (API.accounts) return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Keep your pushka safe (optional)")}</div><div class="h-s">${t("Sign in with your email to have your own pushka on every device. You can use the whole app without this.")}</div><div style="display:flex;gap:8px"><button class="btn btn-secondary" data-act="nudgeYes">${t("Sign in")}</button><button class="btn btn-ghost" data-act="nudgeNo">${t("Not now")}</button></div></div>`;
   return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Save your details? (optional)")}</div><div class="h-s">${t("Get receipts, reminders and your list of yahrzeits kept safe. You can use the whole app without this.")}</div><div style="display:flex;gap:8px"><button class="btn btn-secondary" data-act="nudgeYes">${t("Save my details")}</button><button class="btn btn-ghost" data-act="nudgeNo">${t("Not now")}</button></div></div>`;
 }
 A.nudgeNo = () => { S.nudge = { at: Date.now(), n: ((S.nudge && S.nudge.n) || 0) + 1, first: (S.nudge && S.nudge.first) || Date.now() }; save(); U.nudgeHidden = true; draw(); };
-A.nudgeYes = async () => { U.nudgeHidden = true; if (await askDetails()) { if (API.members && !PRACTICE) { try { await memberSync(); } catch (e) {} } toast(tt("Saved. Thank you!")); } else U.nudgeHidden = false; draw(); };
+A.nudgeYes = async () => { if (API.accounts) return signInSheet(""); U.nudgeHidden = true; if (await askDetails()) { if (API.members && !PRACTICE) { try { await memberSync(); } catch (e) {} } toast(tt("Saved. Thank you!")); } else U.nudgeHidden = false; draw(); };
 
 
 // ---------- Chai Club: monthly donors, four levels, honor board ----------
@@ -1337,10 +1343,109 @@ A.resetAsk = (v) => {
 };
 A.resetGo = (v) => { const p = S.pushkas.find((x) => x.id === v) || P(); S.history = S.history.filter((h) => !(h.kind === "coin" && h.pid === p.id && h.t > S.lastEmptied)); p.balance = 0; p.drops = 0; U.fillFor = ""; save(); closeSheet(); draw(); if (S.pushOn) pushPrefsSoon(); toast(tt("Pushka reset")); };
 
+// ---------- sign in, and your own pushka on every device (optional) ----------
+const DEVICE_KEYS = ["token", "mtoken", "msig", "auth", "rev", "dirty", "synced", "bio", "notified", "candles", "pushOn"];
+const stateDoc = () => { const d = JSON.parse(JSON.stringify(S)); DEVICE_KEYS.forEach((k) => delete d[k]); return d; };
+const hasLocal = () => S.history.length > 0 || S.pushkas.some((p) => p.balance > 0 || p.drops > 0);
+function applyDoc(doc, rev) {
+  const keep = {}; DEVICE_KEYS.forEach((k) => { if (k in S) keep[k] = S[k]; });
+  noSync = true; S = normalize(Object.assign({}, doc, keep)); S.rev = rev; S.dirty = false; noSync = false; persist(); applyLang(); draw();
+}
+let syncT = 0, syncing = false, syncAgain = false;
+function syncSoon() { if (syncing) { syncAgain = true; return; } clearTimeout(syncT); syncT = setTimeout(() => pushState(), 2500); }
+async function pushState(force) {
+  if (!S.auth || !S.mtoken || syncing || PRACTICE) return false; syncing = true; clearTimeout(syncT); let ok = false;
+  try { const r = await api("/account/state", { method: "PUT", member: true, body: { state: stateDoc(), baseRev: S.rev || 0, force: force === true } }); S.rev = r.rev; S.dirty = false; persist(); ok = true; }
+  catch (e) { if (e.status === 409 && e.data && e.data.state) { applyDoc(e.data.state, e.data.rev); toast(tt("Updated from your other device")); ok = true; } }
+  syncing = false; if (syncAgain) { syncAgain = false; syncSoon(); }
+  return ok;
+}
+async function pullState() {
+  if (!S.auth || !S.mtoken || PRACTICE || syncing) return;
+  try { if (S.dirty) return void (await pushState()); const r = await api("/account/state", { member: true }); if (r.state && r.rev > (S.rev || 0)) applyDoc(r.state, r.rev); } catch (e) {}
+}
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") pullState(); });
+window.addEventListener("online", () => pullState());
+const authErr = (e) => (e.code === "network" ? tt("No connection. Please try again.") : tt(e.message));
+
+function signInSheet(email, err) {
+  sheet(`<div><h3>${t("Sign in")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Enter your email and we’ll send you a 6-digit code. No password needed. Your pushka is saved to your account and follows you to any phone or computer.")}</div></div>
+    <div class="field"><label for="si1">${t("Email")}</label><input class="input" id="si1" type="email" autocomplete="email" inputmode="email" maxlength="254" value="${esc(email || S.email)}"></div>
+    <div id="siErr" class="err" role="alert">${err ? esc(err) : ""}</div><button class="btn btn-primary cta" id="siGo">${t("Send me a code")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`,
+  (o) => {
+    const go = async () => {
+      const e = $("#si1", o).value.trim().toLowerCase(), er = $("#siErr", o), b = $("#siGo", o);
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(e)) { er.textContent = tt("Please enter a valid email address."); return; }
+      b.disabled = true; er.textContent = "";
+      try { await api("/auth/request", { method: "POST", body: { email: e, lang: LANG } }); codeSheet(e); }
+      catch (x) { er.textContent = authErr(x); b.disabled = false; }
+    };
+    $("#siGo", o).onclick = go; $("#si1", o).onkeydown = (ev) => { if (ev.key === "Enter") go(); }; setTimeout(() => { try { $("#si1", o).focus(); } catch (e) {} }, 50);
+  });
+}
+function codeSheet(email) {
+  sheet(`<div><h3>${t("Enter your code")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("We sent a 6-digit code to {email}. It works for 10 minutes.", { email: `<b dir="ltr">${esc(email)}</b>` })}</div></div>
+    <div class="field"><label for="si2">${t("6-digit code")}</label><input class="input" id="si2" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]*" style="letter-spacing:.35em;font-size:22px;text-align:center;direction:ltr"></div>
+    <div id="siErr" class="err" role="alert"></div><button class="btn btn-primary cta" id="siGo">${t("Sign in")}</button>
+    <button class="btn btn-ghost" id="siAgain">${t("Send a new code")}</button><button class="btn btn-ghost" id="siOther">${t("Use a different email")}</button>`,
+  (o) => {
+    const er = $("#siErr", o), go = async () => {
+      const code = $("#si2", o).value.replace(/\s/g, ""); if (!/^\d{6}$/.test(code)) { er.textContent = tt("Please enter the 6-digit code."); return; }
+      $("#siGo", o).disabled = true; er.textContent = "";
+      try { await finishSignIn(await api("/auth/verify", { method: "POST", body: { email, code } })); }
+      catch (x) { er.textContent = authErr(x); $("#siGo", o).disabled = false; }
+    };
+    $("#siGo", o).onclick = go; $("#si2", o).oninput = (ev) => { ev.target.value = ev.target.value.replace(/\D/g, "").slice(0, 6); if (ev.target.value.length === 6) go(); };
+    $("#siAgain", o).onclick = async () => { er.textContent = ""; try { await api("/auth/request", { method: "POST", body: { email, lang: LANG } }); er.textContent = tt("A new code is on its way."); } catch (x) { er.textContent = authErr(x); } };
+    $("#siOther", o).onclick = () => signInSheet("");
+    setTimeout(() => { try { $("#si2", o).focus(); } catch (e) {} }, 50);
+  });
+}
+async function finishSignIn(r) {
+  S.mtoken = r.token; S.auth = { email: r.email, at: Date.now() }; if (!S.email) S.email = r.email; if (!S.name && r.name) S.name = r.name;
+  if (r.stripeToken) { S.token = r.stripeToken; S.synced = ""; API.card = null; API.subs = null; }
+  S.msig = [S.name, S.email, S.phone, S.address, S.token].join("|"); S.rev = 0; persist();
+  if (API.enabled && S.token) refreshCard().catch(() => {});
+  if (r.hasState && hasLocal()) return conflictSheet();
+  if (r.hasState) { const st = await api("/account/state", { member: true }); applyDoc(st.state, st.rev); closeSheet(); return toast(tt("Welcome back! Your pushka is restored.")); }
+  S.dirty = true; await pushState(); closeSheet(); draw(); toast(tt("Signed in. Your pushka is saved."));
+}
+function conflictSheet() {
+  sheet(`<div><h3>${t("Which pushka should we keep?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Your account already has a saved pushka, and this device has one too. Choose one. The other will be replaced.")}</div></div>
+    <button class="btn btn-primary cta" data-act="signCloud">${t("Use my saved pushka")}</button><button class="btn btn-ghost" data-act="signLocal">${t("Use this device’s pushka")}</button>`, null, null, true);
+}
+A.signIn = () => signInSheet("");
+A.signCloud = async () => { try { const st = await api("/account/state", { member: true }); applyDoc(st.state, st.rev); closeSheet(); toast(tt("Welcome back! Your pushka is restored.")); } catch (e) { toast(authErr(e)); } };
+A.signLocal = async () => { S.dirty = true; if (await pushState(true)) { closeSheet(); draw(); toast(tt("Signed in. Your pushka is saved.")); } else toast(tt("No connection. Please try again.")); };
+A.signOutAsk = () => sheet(`<div><h3>${t("Sign out?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Your pushka stays saved in your account. This device will be cleared so the next person starts fresh. Sign in again any time to get it back.")}</div></div>
+  <button class="btn btn-primary cta" data-act="signOutGo">${t("Sign out")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Cancel")}</button>`);
+A.signOutGo = async () => {
+  if (S.dirty && !(await pushState())) return toast(tt("We couldn’t save your latest changes. Check your connection and try again."));
+  noSync = true; const lang = S.lang; try { localStorage.removeItem(KEY); } catch (e) {} S = normalize({ lang }); noSync = false; API.card = null; API.subs = null;
+  persist(); applyLang(); closeSheet(); U.stack = []; U.page = "home"; draw(); toast(tt("Signed out"));
+};
+function accountCard() {
+  if (!API.accounts) return "";
+  if (S.auth) return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Signed in")}</div><div class="h-s" dir="ltr" style="text-align:start">${esc(S.auth.email)}</div><div class="h-s">${S.dirty ? t("Saving…") : t("Your pushka is saved to your account and follows you to any device.")}</div><button class="btn btn-ghost" data-act="signOutAsk">${t("Sign out")}</button></div>`;
+  return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Keep your pushka on every device")}</div><div class="h-s">${t("Sign in with your email to have your own pushka that follows you to any phone or computer. No password.")}</div><button class="btn btn-primary cta" data-act="signIn">${t("Sign in")}</button></div>`;
+}
+const standalone = () => (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); U.installEv = e; if (U.drawn === "profile") draw(); });
+window.addEventListener("appinstalled", () => { U.installEv = null; });
+function installCard() {
+  if (PRACTICE || standalone()) return "";
+  return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Get the app")}</div><div class="h-s">${t("Add My Pushka to your home screen to open it like an app.")}</div><button class="btn btn-ghost" data-act="install">${t("Install the app")}</button></div>`;
+}
+A.install = async () => {
+  if (U.installEv) { const e = U.installEv; U.installEv = null; try { e.prompt(); await e.userChoice; } catch (x) {} return draw(); }
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  infoSheet(tt("Install the app"), ios ? t("In Safari, tap the Share button, then “Add to Home Screen.”") : t("In your browser menu, choose “Install app” or “Add to Home Screen.”"));
+};
+
 // ---------- start ----------
 applyLang();
 try { const go = new URLSearchParams(location.search).get("go"); if (go === "coin") { setTimeout(() => A.dropPrimary(), 900); history.replaceState(null, "", location.pathname); } else if (go === "empty") { setTimeout(() => A.openEmpty(), 900); history.replaceState(null, "", location.pathname); } else if (["yahrzeit", "club", "give", "board", "occasions"].includes(go)) { U.page = go; U.stack = [go === "club" ? "give" : go === "give" ? "" : "more"].filter(Boolean); history.replaceState(null, "", location.pathname); } } catch (e) {}
 draw();
 if (S.bio) { showLock(); A.unlock(); }
-initPay(); loadExtras(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500); autoCoins();
+initPay().then(() => { pullState(); try { if (API.accounts && !S.auth && new URLSearchParams(location.search).get("signin")) { history.replaceState(null, "", location.pathname); signInSheet(""); } } catch (e) {} }); loadExtras(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500); autoCoins();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

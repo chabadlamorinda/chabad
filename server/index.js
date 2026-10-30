@@ -16,6 +16,7 @@ const crypto = require('crypto');
 const express = require('express');
 const { mountMembers } = require('./members.js');
 const { mountAdmin } = require('./admin.js');
+const { mountAccounts } = require('./accounts.js');
 const { createKiddush } = require('./kiddush.js');
 
 const ROOT = path.join(__dirname, '..');
@@ -72,6 +73,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   const mmac = (id) => crypto.createHmac('sha256', sessionSecret + ':member').update(id).digest('base64url');
   const tokens = {
     verifyCustomer: verify,
+    signCustomer: sign,
     signMember: (id) => id + '.' + mmac(id),
     verifyMember(tok) {
       if (typeof tok !== 'string' || tok.length > 100) return null;
@@ -157,6 +159,9 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   // Apple Pay domain verification file (paste its contents into the APPLE_PAY_ASSOC setting).
   app.get('/.well-known/apple-developer-merchantid-domain-association', (req, res) => (applePayAssoc ? res.type('text').send(applePayAssoc) : res.status(404).type('text').send('Not found')));
 
+  // ---------- sign-in by emailed code and saved pushkas (own parsers, so they are mounted before the general API) ----------
+  const accountsOn = mountAccounts(app, { store, mailer, tokens, sessionSecret, limit, log });
+
   // ---------- API ----------
   const api = express.Router();
   api.use(express.json({ limit: '64kb' }));
@@ -164,7 +169,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   api.use((req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
 
   api.get('/config', (req, res) => {
-    res.json({ enabled: !!stripe, publishableKey: stripe ? publishableKey : '', livemode: /^pk_live_/.test(publishableKey || ''), members: !!store, vapidPublicKey: store && sendPush ? vapidPublicKey : '' });
+    res.json({ enabled: !!stripe, publishableKey: stripe ? publishableKey : '', livemode: /^pk_live_/.test(publishableKey || ''), members: !!store, accounts: accountsOn, vapidPublicKey: store && sendPush ? vapidPublicKey : '' });
   });
 
   const needStripe = (req, res, next) => (stripe ? next() : res.status(503).json({ code: 'not_configured', error: 'Card payments are not set up yet.' }));

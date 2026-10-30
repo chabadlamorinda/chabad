@@ -39,6 +39,10 @@ CREATE TABLE IF NOT EXISTS payment_events (
   amount_cents INT NOT NULL DEFAULT 0, message TEXT NOT NULL DEFAULT '', resolved BOOLEAN NOT NULL DEFAULT FALSE,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+ALTER TABLE members ADD COLUMN IF NOT EXISTS verified_at TIMESTAMPTZ;
+CREATE UNIQUE INDEX IF NOT EXISTS members_verified_email_idx ON members (lower(email)) WHERE verified_at IS NOT NULL;
+CREATE TABLE IF NOT EXISTS auth_codes (email TEXT PRIMARY KEY, code_hash TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, attempts INT NOT NULL DEFAULT 0, sent_at TIMESTAMPTZ NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS account_state (member_id TEXT PRIMARY KEY REFERENCES members(id) ON DELETE CASCADE, rev INT NOT NULL DEFAULT 1, state JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS kv (key TEXT PRIMARY KEY, value JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS community_days (day DATE PRIMARY KEY, coins INT NOT NULL DEFAULT 0, cents BIGINT NOT NULL DEFAULT 0);`;
 
@@ -54,7 +58,7 @@ function createStore(url, opts = {}) {
     pool,
     migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); },
     close: () => pool.end(),
-    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, kv, community_days CASCADE'), // tests only
+    reset: () => q('TRUNCATE members, yahrzeits, push_subs, push_log, followups, payment_events, kv, community_days, auth_codes, account_state CASCADE'), // tests only
 
     // ----- members -----
     async createMember(m) {
@@ -102,6 +106,23 @@ function createStore(url, opts = {}) {
     listFollowups: () => rows("SELECT yahrzeit_id, to_char(occurrence,'YYYY-MM-DD') AS occurrence, note, done_at FROM followups"),
 
     // ----- payment events (from Stripe webhooks) -----
+    // ----- sign-in with an emailed code, and the saved pushka that follows the person between devices -----
+    async putAuthCode(email, hash, minutes) { await q(`INSERT INTO auth_codes (email, code_hash, expires_at, attempts, sent_at) VALUES ($1,$2, now() + ($3 || ' minutes')::interval, 0, now())
+      ON CONFLICT (email) DO UPDATE SET code_hash=EXCLUDED.code_hash, expires_at=EXCLUDED.expires_at, attempts=0, sent_at=now()`, [email, hash, String(minutes)]); },
+    getAuthCode: (email) => one('SELECT *, (expires_at > now()) AS live, extract(epoch FROM (now() - sent_at)) AS age FROM auth_codes WHERE email=$1', [email]),
+    bumpAuthAttempts: (email) => q('UPDATE auth_codes SET attempts = attempts + 1 WHERE email=$1', [email]),
+    deleteAuthCode: (email) => q('DELETE FROM auth_codes WHERE email=$1', [email]),
+    verifiedMemberByEmail: (email) => one('SELECT * FROM members WHERE lower(email)=lower($1) AND verified_at IS NOT NULL', [email]),
+    async createVerifiedMember(email, name) { const id = newId('m_'); await q('INSERT INTO members (id, name, email, verified_at) VALUES ($1,$2,$3, now())', [id, name || '', email]); return id; },
+    getState: (memberId) => one('SELECT rev, state, updated_at FROM account_state WHERE member_id=$1', [memberId]),
+    // Save a new version only if the caller saw the latest one (baseRev). Returns the new revision, or null when someone else saved first.
+    async putState(memberId, baseRev, state) {
+      if (!baseRev) { const r = await q('INSERT INTO account_state (member_id, rev, state) VALUES ($1, 1, $2) ON CONFLICT DO NOTHING RETURNING rev', [memberId, JSON.stringify(state)]); return r.rows[0] ? r.rows[0].rev : null; }
+      const r = await q('UPDATE account_state SET rev = rev + 1, state=$3, updated_at=now() WHERE member_id=$1 AND rev=$2 RETURNING rev', [memberId, baseRev, JSON.stringify(state)]);
+      return r.rows[0] ? r.rows[0].rev : null;
+    },
+    async forceState(memberId, state) { const r = await q(`INSERT INTO account_state (member_id, rev, state) VALUES ($1, 1, $2) ON CONFLICT (member_id) DO UPDATE SET rev = account_state.rev + 1, state=EXCLUDED.state, updated_at=now() RETURNING rev`, [memberId, JSON.stringify(state)]); return r.rows[0].rev; },
+
     // ----- small shared settings (announcements) and the anonymous community coin counter -----
     async getKv(key, fallback = null) { const r = await one('SELECT value FROM kv WHERE key=$1', [key]); return r ? r.value : fallback; },
     setKv: (key, value) => q('INSERT INTO kv (key, value) VALUES ($1,$2) ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value, updated_at=now()', [key, JSON.stringify(value)]),
