@@ -133,6 +133,19 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     try { await handleStripeEvent(event); res.json({ received: true }); }
     catch (e) { log.error('webhook error:', event.type, e && e.message); res.status(500).json({ code: 'server_error', error: 'Webhook failed.' }); }
   });
+  // Email the Rabbi when a gift comes in through the app (one email per Stripe event, even if Stripe retries).
+  async function notifyGift(event, o, cus) {
+    const meta = o.metadata || {}, sub = (o.subscription_details && o.subscription_details.metadata) || (o.lines && o.lines.data && o.lines.data[0] && o.lines.data[0].metadata) || {};
+    const isPi = event.type === 'payment_intent.succeeded';
+    if (isPi ? meta.source !== 'pushka' : (sub.source || meta.source) !== 'pushka') return;
+    const orgEmail = ((((site.content && site.content()) || {}).org) || {}).email, to = (siteEnv && siteEnv.ADMIN_EMAIL) || orgEmail || ''; if (!mailer || !to) return;
+    const cents = isPi ? (o.amount_received || o.amount || 0) : (o.amount_paid || 0), email = o.customer_email || o.receipt_email || '';
+    if (!(cents > 0) || !(await store.recordPaymentEvent({ id: 'gift_' + event.id, type: 'gift', customerId: cus, email, amount: cents, message: 'Gift received' }))) return;
+    await store.resolvePayment('gift_' + event.id);
+    const fund = FUND_NAMES[meta.fund || sub.fund] || meta.fund || sub.fund || 'General', monthly = !isPi, club = (sub.club || meta.club) === 'yes';
+    const dedication = meta.dedication || sub.dedication || '';
+    mailer.send({ to, subject: `Gift received: $${(cents / 100).toFixed(2)}${monthly ? ' monthly' : ''}${club ? ' (Chai Club)' : ''}`, text: `A gift came in through My Pushka.\n\nAmount: $${(cents / 100).toFixed(2)}${monthly ? ' (monthly)' : ''}\nFund: ${fund}${club ? '\nChai Club member' : ''}${dedication ? '\nDedication: ' + dedication : ''}${email ? '\nFrom: ' + email : ''}\n\nSee everything in your Rabbi area: /admin/` }).catch((e) => log.error('gift email failed:', e && e.message));
+  }
   async function handleStripeEvent(event) {
     if (!store) return;
     if (await kiddush.onStripeEvent(event)) return; // Kiddush sponsorship checkouts
@@ -150,6 +163,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
       case 'invoice.payment_succeeded':
       case 'invoice.paid':
       case 'payment_intent.succeeded':
+        await notifyGift(event, o, cus);
         if (cus && (event.type !== 'payment_intent.succeeded' || (o.metadata && o.metadata.source === 'pushka'))) { await store.clearCardIssue(cus); await store.resolveCustomerPayments(cus); }
         return;
       case 'charge.refunded':

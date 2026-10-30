@@ -42,6 +42,9 @@ It needs two things in Render → Environment:
 2. Email, so the 6-digit code can be sent: `SMTP_URL` and `MAIL_FROM`. Easiest is a Gmail address with an **App password** (Google Account → Security → 2-Step Verification → App passwords): `SMTP_URL` = `smtps://yourname%40gmail.com:APPPASSWORD@smtp.gmail.com:465` (write `@` as `%40`), `MAIL_FROM` = `My Pushka <yourname@gmail.com>`. A mail service such as Resend or Brevo also works.
 When both are set, the app shows **Sign in** by itself. Send people **https://your-site/pushka/?signin=1**, which opens the sign-in right away; the plain link works too, and they can also "Install the app" from More → Profile. Until both are set, the app works exactly as before on one device.
 
+## Emails when someone gives
+When a gift comes in through the app (once, monthly or Chai Club), you get an email with the amount, fund, dedication and the donor's email. It uses the same email settings as sign-in (`SMTP_URL`, `MAIL_FROM`) and goes to `ADMIN_EMAIL` (or the website's email if that is not set). It also needs the Stripe webhook (step 4). The donor gets Stripe's own receipt.
+
 ## Privacy
 Sharing is **off by default** and only the people who switch it on appear on your page. The privacy policy inside the app already says this. If you later change what you collect, update `pushka/privacy.html` and the Google Play "Data safety" form.
 
