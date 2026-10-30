@@ -2,7 +2,7 @@
 title: שמחה ביהדות
 description: מה היהדות מלמדת על שמחה: עבודת ה׳ בשמחה, ההבדל בין שמחה לעצבות ולמרירות, ודרכים מעשיות להכניס יותר שמחה לחיים.
 category: Jewish ideas
-related: chassidus, tanya, niggun, belief-in-g-d
+related: chassidus, jealousy-and-envy, tanya, niggun, belief-in-g-d
 local: מרגישים ירודים או נושאים משהו כבד? דברו עם הרב לבקובסקי 925-384-7242 או ראו chabadoflamorinda.com/help/grief-and-hard-times.
 ---
 היהדות מלמדת ששמחה אינה מותרות אלא חלק מרכזי בעבודת ה׳. "עִבְדוּ אֶת ה׳ בְּשִׂמְחָה" (תהילים ק, ב) הוא פסוק מנחה בחיי החסידות, ותורת החסידות רואה בשמחה מקור כוח שעוזר להתגבר כמעט על כל דבר.

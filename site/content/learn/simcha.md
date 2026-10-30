@@ -2,7 +2,7 @@
 title: Simcha: Happiness and Joy in Judaism
 description: What Judaism teaches about happiness: serving G-d with joy, joy versus sadness and bitterness, and practical ways to bring more simcha into life.
 category: Jewish ideas
-related: chassidus, tanya, niggun, belief-in-g-d
+related: chassidus, jealousy-and-envy, tanya, niggun, belief-in-g-d
 local: Feeling low or carrying something heavy? Talk to Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/help/grief-and-hard-times.
 ---
 Simcha means joy, and Judaism teaches that joy is not a luxury but a central part of serving G-d. "Serve G-d with joy" (Psalms 100:2) is a guiding verse in Chassidic life, and Chassidic teaching sees happiness as a source of strength that helps us overcome almost anything.

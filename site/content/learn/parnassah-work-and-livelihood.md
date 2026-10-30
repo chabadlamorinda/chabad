@@ -2,7 +2,7 @@
 title: Parnassah: the Jewish View of Work and Making a Living
 description: What Judaism teaches about work, earning a living, faith and effort, honesty, giving a tenth, rest on Shabbat, and blessing your business or office.
 category: Jewish ideas
-related: bitachon, business-ethics, maaser, jewish-view-on-wealth, shabbat-for-working-parents
+related: bitachon, success-and-failure, business-ethics, maaser, jewish-view-on-wealth, shabbat-for-working-parents
 local: Professionals and business owners in Lafayette, Moraga and Orinda: call Rabbi Labkowski at 925-384-7242 to put up a mezuzah at your office, or just to talk.
 ---
 "Parnassah" is the Jewish word for a livelihood, making a living. Judaism does not see work as something separate from spiritual life. Earning an honest living, supporting a family and building something good are themselves part of serving G-d.

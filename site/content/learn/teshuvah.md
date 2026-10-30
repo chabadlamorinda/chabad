@@ -2,7 +2,7 @@
 title: Teshuvah: Repentance and Returning to G-d in Judaism
 description: What teshuvah means, the steps of Jewish repentance, how to make amends with others, and why it is never too late to return.
 category: Jewish ideas
-related: fast-days, tanya, 613-mitzvot, moshiach
+related: fast-days, success-and-failure, tanya, 613-mitzvot, moshiach
 local: Whatever you are carrying, Rabbi Labkowski is here to listen with no judgment. Call 925-384-7242 to talk privately.
 ---
 Teshuvah means "return" in Hebrew. It is the Jewish path of repentance: recognizing a mistake, regretting it, and resolving to do better, returning to G-d and to our truest self. Judaism teaches that teshuvah is always possible, for anyone, at any time.

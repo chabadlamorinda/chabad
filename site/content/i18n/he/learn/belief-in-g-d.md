@@ -2,7 +2,7 @@
 title: אמונה בה׳ ביהדות: מה יהודים מאמינים על ה׳
 description: מה היהדות מלמדת על ה׳, מאחדות ובריאה ועד השגחה פרטית, ואיך האמונה גדלה דרך שאלות, לימוד ומצוות.
 category: Jewish ideas
-related: shema, the-soul, why-mitzvot, ten-commandments
+related: shema, purpose-of-life, the-soul, why-mitzvot, ten-commandments
 local: יש לכם שאלות על ה׳ ועל אמונה? דברו עליהן עם הרב לבקובסקי בטלפון 925-384-7242, או הכירו את שיעורי המבוגרים שלנו בכתובת chabadoflamorinda.com/programs/adult-education.
 ---
 היהדות מלמדת שיש אלוקים אחד, שברא את העולם, מקיים אותו בכל רגע ודואג לכל אדם. האמונה בה׳ היא היסוד של התורה והראשון בעשרת הדיברות: "אָנֹכִי ה׳ אֱלֹקֶיךָ".

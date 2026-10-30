@@ -2,7 +2,7 @@
 title: פרנסה: המבט היהודי על עבודה ועל פרנסה
 description: מה היהדות מלמדת על עבודה, פרנסה, אמונה והשתדלות, יושר, מעשר, מנוחה בשבת, וברכה לעסק או למשרד.
 category: Jewish ideas
-related: bitachon, business-ethics, maaser, jewish-view-on-wealth, shabbat-for-working-parents
+related: bitachon, success-and-failure, business-ethics, maaser, jewish-view-on-wealth, shabbat-for-working-parents
 local: אנשי מקצוע ובעלי עסקים בלאפייט, מוראגה ואורינדה: התקשרו לרב לבקובסקי 925-384-7242 כדי לקבוע מזוזה במשרד, או סתם כדי לדבר.
 ---
 "פרנסה" היא המילה היהודית למחיה, להשתכרות. היהדות לא רואה בעבודה משהו נפרד מהחיים הרוחניים. להרוויח בכבוד וביושר, לפרנס משפחה ולבנות משהו טוב הם בעצמם חלק מעבודת ה׳.

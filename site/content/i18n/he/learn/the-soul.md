@@ -2,7 +2,7 @@
 title: הנשמה ביהדות: מהי נשמה?
 description: מה היהדות מלמדת על הנשמה, חמש דרגות הנשמה, הנפש האלוקית והנפש הבהמית, ומטרת המסע של הנשמה בעולם הזה.
 category: Jewish ideas
-related: tanya, kabbalah, afterlife, chassidus
+related: tanya, purpose-of-life, kabbalah, afterlife, chassidus
 local: רוצים ללמוד עוד על הנשמה? הצטרפו לשיעור דרך chabadoflamorinda.com/programs/adult-education או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 היהדות מלמדת שלכל אדם יש נשמה, כוח חיים רוחני שנותן לנו מודעות, רגשות ותכלית. הנשמה היהודית מתוארת כ"חלק אלוקה ממעל", נצחית וטהורה, שבאה לעולם הזה בשליחות.

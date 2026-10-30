@@ -2,7 +2,7 @@
 title: Belief in G-d in Judaism: What Jews Believe About G-d
 description: What Judaism teaches about G-d, from oneness and creation to Divine Providence, and how faith grows through questions, learning and mitzvot.
 category: Jewish ideas
-related: shema, the-soul, why-mitzvot, ten-commandments
+related: shema, purpose-of-life, the-soul, why-mitzvot, ten-commandments
 local: Have questions about G-d and faith? Talk them through with Rabbi Labkowski at 925-384-7242, or explore our adult education classes at chabadoflamorinda.com/programs/adult-education.
 ---
 Judaism teaches that there is one G-d, who created the world, keeps it in existence every moment, and cares about each person. Belief in G-d is the foundation of the Torah and the first of the Ten Commandments: "I am the L-rd your G-d."

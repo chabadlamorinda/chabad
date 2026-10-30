@@ -2,7 +2,7 @@
 title: Hakarat Hatov: Gratitude in Judaism
 description: What hakarat hatov means, why gratitude is a Jewish foundation, thanking G-d and people, and simple daily practices for a more grateful life.
 category: Jewish ideas
-related: modeh-ani, blessings, honoring-parents, birkat-hamazon
+related: modeh-ani, jealousy-and-envy, blessings, honoring-parents, birkat-hamazon
 local: Want to say thank you to G-d in a special way? Sponsor a kiddush or Tehillim in honor of a blessing at chabadoflamorinda.com/sponsor or call 925-384-7242.
 ---
 Hakarat hatov means "recognizing the good," and it is the Jewish value of gratitude toward G-d and toward people. Judaism treats gratitude as a foundation of character: the very word Jew, Yehudi, comes from a Hebrew root that means to thank.

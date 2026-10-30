@@ -2,7 +2,7 @@
 title: Bitachon: Trusting G-d When Life Is Uncertain
 description: What bitachon (trust in G-d) means, how it differs from faith, why we still make an effort, and practical ways to worry less and trust more.
 category: Jewish ideas
-related: belief-in-g-d, tehillim, prayer, free-will
+related: belief-in-g-d, talking-to-g-d-in-your-own-words, tehillim, prayer, free-will
 local: Going through a hard time? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/help/talk-to-the-rabbi. You do not have to face it alone.
 ---
 Bitachon means trust in G-d: the calm confidence that G-d loves you, is in charge, and will bring about what is truly good. It goes one step beyond faith. Faith believes G-d can help; bitachon relies on Him, and that trust brings peace of mind in uncertain times.

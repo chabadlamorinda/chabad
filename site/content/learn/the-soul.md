@@ -2,7 +2,7 @@
 title: The Soul in Judaism: What Is a Neshamah?
 description: What Judaism teaches about the soul, the five levels of the soul, the G-dly and animal souls, and the purpose of the soul's journey in this world.
 category: Jewish ideas
-related: tanya, kabbalah, afterlife, chassidus
+related: tanya, purpose-of-life, kabbalah, afterlife, chassidus
 local: Want to learn more about the soul? Join a class through chabadoflamorinda.com/programs/adult-education or call Rabbi Labkowski at 925-384-7242.
 ---
 Judaism teaches that every person has a soul, a spiritual life force that gives us awareness, feelings and purpose. The Jewish soul, called the *neshamah*, is described as "a part of G-d above," eternal and pure, which came into this world on a mission.

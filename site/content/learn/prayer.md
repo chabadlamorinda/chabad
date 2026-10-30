@@ -2,7 +2,7 @@
 title: Jewish Prayer: How and When Jews Pray, a Beginner's Guide
 description: A beginner's guide to Jewish prayer: the three daily services, the siddur, praying with a minyan, praying in any language, and how to start.
 category: Prayer & Torah
-related: shema, modeh-ani, blessings, tehillim
+related: shema, talking-to-g-d-in-your-own-words, modeh-ani, blessings, tehillim
 local: We welcome you to pray with us, can help you get a siddur, and are happy to teach you how to follow the service. Call 925-384-7242.
 ---
 Jewish prayer is a daily conversation with G-d, made up of set prayers from the siddur (prayer book) and our own personal words. Jews traditionally pray three times a day: in the morning, afternoon and evening.
