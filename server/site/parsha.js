@@ -6,6 +6,10 @@ const fs = require('fs');
 const path = require('path');
 const { esc } = require('./md.js');
 const Z = require('./zmanim.js');
+const { guideCards, guidesForDays } = require('./links.js');
+// Guides about the Torah reading, under every Torah portion.
+const TORAH_GUIDES = ['weekly-parsha', 'torah-reading', 'haftarah'];
+const torahGuides = (C) => TORAH_GUIDES.map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean);
 
 const FILE = path.join(__dirname, '..', '..', 'site', 'content', 'parshiot.json');
 const slugOf = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -37,11 +41,14 @@ function mountParsha(r, { render, wrap, ctxOf, base }) {
   };
   r.get('/parsha', wrap(async (req, res) => {
     const X = ctxOf(req), t = X.t, sh = await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [];
+    const today = Z.todayLocal(), end = new Date(today); end.setDate(end.getDate() + 7);
+    const guides = [...new Set([...torahGuides(X.C), ...guidesForDays(X.C, await Z.events(today, end))])].slice(0, 6);
     const body = `<section class="wrap sec narrow"><h1>${esc(t("This week's Torah portion"))}</h1>
 ${sh.parsha ? `<p class="lead-d">${esc(X.hc(sh.parsha))} · ${esc(X.longDate(sh.parsha.date))}</p>` : `<p class="lead-d">${esc(t('This Shabbat is a holiday, with a special Torah reading.'))}</p>`}
 ${ps.map((p) => block(X, p)).join('')}
 ${sh.candles ? `<p class="card">${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}: <strong>${esc(X.tm(sh.candles))}</strong>${sh.havdalah ? ` · ${esc(t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}` : ''}</p>` : ''}
 <p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/programs/adult-education">${esc(t('Torah classes'))}</a><a class="btn ghost" href="/forms/newsletter">${esc(t('Get it by email every week'))}</a></p>
+${guideCards(X, guides, t('Learn more'))}
 <h2>${esc(t('All the Torah portions'))}</h2><p class="chips">${all().map((p) => `<a class="chip" href="/parsha/${slugOf(p.name)}">${esc(X.lang === 'he' ? p.hebrew : t('Parashat ' + p.name).replace(/^(Parashat|Недельная глава)\s+/, ''))}</a>`).join('')}</p></section>`;
     await render(res, { path: '/parsha', title: t("This week's Torah portion (parsha)"), description: t('The weekly Torah portion: a short summary, a lesson for today, and this week\'s Shabbat candle lighting times in Lafayette, from Chabad of Lamorinda.'), body });
   }));
@@ -51,6 +58,7 @@ ${sh.candles ? `<p class="card">${esc(t('Candle lighting, {date}', { date: X.sho
     const i = all().indexOf(p), prev = all()[i - 1], nxt = all()[i + 1];
     const body = `<article class="wrap sec narrow"><p class="crumbs"><a href="/parsha">${esc(t("This week's Torah portion"))}</a> ›</p>
 <h1>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}</h1>${block(X, p)}
+${guideCards(X, torahGuides(X.C), t('Learn more'))}
 <p class="btns">${prev ? `<a class="btn ghost" href="/parsha/${slugOf(prev.name)}">← ${esc(X.lang === 'he' ? prev.hebrew : prev.name)}</a>` : ''}${nxt ? `<a class="btn ghost" href="/parsha/${slugOf(nxt.name)}">${esc(X.lang === 'he' ? nxt.hebrew : nxt.name)} →</a>` : ''}</p></article>`;
     const L = p[X.lang] || p.en;
     await render(res, { path: '/parsha/' + slugOf(p.name), title: t('Parashat {name}: summary and lesson', { name: X.lang === 'he' ? p.hebrew : p.name }), description: L.summary.slice(0, 155), body,

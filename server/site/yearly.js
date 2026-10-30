@@ -5,6 +5,7 @@
 const { esc } = require('./md.js');
 const Z = require('./zmanim.js');
 const { fmtClock } = require('./content.js');
+const { guideCards, guidesForDays } = require('./links.js');
 
 // [name shown, first day, last day, guide page, how it begins]
 const HOLIDAYS = [
@@ -122,6 +123,7 @@ function mountYearly(r, { render, wrap, ctxOf, base, upcoming = () => [] }) {
     const sh = towns.length ? towns[0][1] : await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [];
     const cal = (await Z.events(today, end)).filter((e) => !['candles', 'havdalah', 'parashat'].includes(e.cat) && !/^(Chanukah: \d|Omer)/.test(e.desc) || /Chanukah: 1 Candle/.test(e.desc));
     const evs = upcoming(new Date(), C).filter((e) => e.start.slice(0, 10) <= Z.ymd(end));
+    const dayGuides = guidesForDays(C, await Z.events(today, end));
     const L = (p) => p[X.lang] || p.en, guide = guideOfWeek(C), ks = C.org.kabbalatShabbat ? await Z.kabbalatShabbat(C.org.kabbalatShabbat) : null;
     const body = `<section class="wrap sec narrow"><h1>${esc(t('This week in Jewish Lamorinda'))}</h1>
 <p class="lead-d">${esc(t('Shabbat times, the Torah portion, events and Jewish dates for Lafayette, Moraga, Orinda and nearby, updated every week.'))}</p>
@@ -134,7 +136,8 @@ ${ks ? `<p class="lead-d"><strong>${esc(t('Kabbalat Shabbat at Chabad of Lamorin
 ${evs.length ? `<ul class="list">${evs.map((e) => `<li><a href="/events/${e.slug}"><strong>${esc(e.title)}</strong></a><br><span class="muted">${esc(X.when(e))}</span></li>`).join('')}</ul>` : ''}
 <ul class="list">${C.org.weekly.map((w) => `<li><strong>${esc(w.day)}</strong>: ${w.link ? `<a href="${esc(w.link)}">${esc(w.name)}</a>` : esc(w.name)} <span class="muted">${esc(w.time)}</span></li>`).join('')}</ul>
 ${cal.length ? `<h2>${esc(t('Jewish dates this week'))}</h2><ul class="list">${cal.map((e) => `<li><strong>${esc(X.shortDate(e.date))}</strong>: ${esc(X.hc(e))}</li>`).join('')}</ul>` : ''}
-${guide ? `<h2>${esc(t('Guide of the week'))}</h2><a class="card tile" href="/learn/${guide.slug}"><h3>${esc(guide.title)}</h3><p>${esc(guide.description)}</p></a>` : ''}
+${guideCards(X, dayGuides.slice(0, 6), t('Learn about this week'))}
+${guide ? guideCards(X, [guide], t('Guide of the week')) : ''}
 <p class="btns"><a class="btn gold" href="/mitzvah">${esc(t('Do a mitzvah this week'))}</a><a class="btn ghost" href="/forms/newsletter">${esc(t('Get it by email every week'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory of a loved one'))}</a><a class="btn ghost" href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a></p></section>`;
     await render(res, { path: '/this-week', title: t('This week in Jewish Lamorinda: Shabbat times, parsha and events'), description: t('This week\'s Shabbat candle lighting in Lafayette, Moraga and Orinda, the Torah portion, Jewish dates and events at Chabad of Lamorinda.'), body });
   }));

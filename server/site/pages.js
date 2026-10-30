@@ -10,10 +10,10 @@ const { fullAddress, fmtClock } = require('./content.js');
 const Z = require('./zmanim.js');
 const { googleCalendarUrl } = require('./social.js');
 const { withShare } = require('./share.js');
-const { withGuides, friendlyLinks } = require('./links.js');
+const { withGuides, friendlyLinks, guidesForDays } = require('./links.js');
 const { withContact } = require('./leads.js');
 const { parseLocal } = require('./ctx.js');
-const { decorate, artImg, artFor, artForPath } = require('./art.js');
+const { decorate, artImg, artFor, artForPath, setLearn } = require('./art.js');
 const artImgFor = (p) => artImg(artForPath(p), 'lg');
 
 const ROOT = path.join(__dirname, '..', '..');
@@ -57,6 +57,7 @@ function mountPages(app, ctx) {
     const X = ctxOf(res.req), to = status === 200 && !opts.noRedirect && X.redirectTo();
     if (to) return res.set('Vary', 'Accept-Language, Cookie').redirect(302, to);
     const [hd, sh] = await Promise.all([X.hebrewDate(Z.todayLocal()).catch(() => ''), Z.thisShabbat().catch(() => null)]);
+    setLearn(X.C.learn);
     const html = layout(X.C, { base, indexable, analytics, hebrewDate: hd, shabbat: sh, lang: X.lang, t: X.t, fmtDay: X.shortDate, tm: X.tm, ...opts, body: opts.path === '/' ? opts.body : decorate(status === 200 ? withShare(X, withContact(X, withGuides(X, friendlyLinks(X, opts.body), opts.path), opts.path), opts.path, opts.title, base) : opts.body, opts.path) });
     res.status(status).set('Cache-Control', 'public, max-age=60, stale-while-revalidate=600').set('Vary', 'Accept-Language, Cookie').type('html').send(X.links(html));
   }
@@ -74,7 +75,10 @@ function mountPages(app, ctx) {
     const [sh, hols, cnt, pics, posts] = await Promise.all([Z.thisShabbat(), Z.upcomingHolidays(200), counts(), photos ? photos(14).catch(() => []) : [], news(3).catch(() => [])]);
     const ks = o.kabbalatShabbat ? Z.kabbalatFor(o.kabbalatShabbat, sh.candles) : null;
     const nextHol = hols[0], holPage = nextHol && C.holidays.find((h) => h.slug === nextHol.slug);
-    const body = homeBody(X, { sh, ks, hols, evs: upcoming(new Date(), C), cnt, pics, posts, holPage, today: Z.ymd(Z.todayLocal()) }) + `
+    // Guides for the Jewish dates of the coming week (Rosh Chodesh, a fast, a holiday), shown only when there is one.
+    const soon = Z.todayLocal(), wk = new Date(soon); wk.setDate(wk.getDate() + 7);
+    const dayGuides = guidesForDays(C, (await Z.events(soon, wk).catch(() => [])).filter((e) => e.cat !== 'parashat')).slice(0, 3);
+    const body = homeBody(X, { sh, ks, hols, evs: upcoming(new Date(), C), cnt, pics, posts, holPage, dayGuides, today: Z.ymd(Z.todayLocal()) }) + `
 <section class="wrap sec narrow">
   <h2>${esc(t('Questions people ask'))}</h2>
   ${faqHtml(C.faq.slice(0, 5))}

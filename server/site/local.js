@@ -5,7 +5,7 @@
 'use strict';
 const { md, esc, plain } = require('./md.js');
 const { fullAddress, LEARN_CATEGORIES, fmtClock } = require('./content.js');
-const { artImg } = require('./art.js');
+const { artImg, artFor, guidePhoto } = require('./art.js');
 const { readNext, asItem } = require('./links.js');
 const { actionCard, topicForPage, contactBox } = require('./leads.js');
 const Z = require('./zmanim.js');
@@ -87,7 +87,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
       body: `<section class="wrap sec"><h1>${esc(t('Learn about Judaism'))}</h1><p class="lead-d">${esc(t('{n} clear, friendly guides to Jewish life, from lighting Shabbat candles to saying Kaddish.', { n: C.learn.length }))} <a href="/help/talk-to-the-rabbi">${esc(t('Have a question that is not here? Ask the Rabbi.'))}</a></p>
 <p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
 <p class="chips">${groups.map(([cat]) => `<a class="chip" href="#${id(cat)}">${esc(t(cat))}</a>`).join('')}<a class="chip" href="/holidays">${esc(t('Holidays'))}</a><a class="chip" href="/tehillim">${esc(t('Tehillim'))}</a></p>
-<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${esc(a.title)}</a></li>`).join('')}</ul>` : ''}</div>`).join('')}</div></section>`,
+<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${artImg(artFor('learn', a.slug, a.category))}<span>${esc(a.title)}</span></a></li>`).join('')}</ul>` : ''}</div>`).join('')}</div></section>`,
       ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
   }));
 
@@ -97,6 +97,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     const X = ctxOf(req), { t, C } = X, a = C.learn.find((x) => x.slug === req.params.slug);
     if (!a) return next();
     const rel = a.related.map((s) => C.learn.find((x) => x.slug === s)).filter(Boolean), occ = OCCASION[a.slug];
+    const ph = guidePhoto(a.slug, a.category), photo = ph ? '/media/photos/' + ph + '.jpg' : '';
     // What the reader came for comes first: the quick answer, and (for mezuzah, tefillin, giving...) how to get it done.
     // Then the guide, the questions people ask, and one inviting guide to read next.
     const topic = topicForPage('/learn/' + a.slug), act = topic && topic !== 'consult';
@@ -112,8 +113,8 @@ ${a.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(a.faq)}` : ''}
 ${topic === 'consult' ? contactBox(X, 'consult') : ''}
 ${readNext(X, rel.map(asItem))}
 </article>`;
-    await render(res, { path: '/learn/' + a.slug, title: a.title, description: a.description, body,
-      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description, articleBody: plain(a.body).slice(0, 5000), wordCount: plain(a.body).split(/\s+/).length, inLanguage: X.lang, author: { '@type': 'Organization', name: C.org.name, url: base + '/' }, publisher: { '@id': base + '/#org' }, mainEntityOfPage: base + X.path('/learn/' + a.slug), image: base + '/assets/og.png' },
+    await render(res, { path: '/learn/' + a.slug, title: a.title, description: a.description, image: photo || undefined, body,
+      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description, articleBody: plain(a.body).slice(0, 5000), wordCount: plain(a.body).split(/\s+/).length, inLanguage: X.lang, author: { '@type': 'Organization', name: C.org.name, url: base + '/' }, publisher: { '@id': base + '/#org' }, mainEntityOfPage: base + X.path('/learn/' + a.slug), image: base + (photo || '/assets/og.png') },
         crumbs(base, [[t('Learn'), '/learn'], [a.title, '/learn/' + a.slug]]), ...(a.faq.length ? [faqLd(a.faq)] : [])] });
   }));
 }

@@ -279,6 +279,27 @@ test('learn guides: index, article with Q&A markup, related guides', async () =>
   assert.equal((await c.call('GET', '/learn/not-a-guide')).status, 404);
 });
 
+test('every guide has a fitting picture, and guides show as picture cards wherever they belong', async () => {
+  const { guidePhoto } = require('./site/art.js'), { guidesForDays, guidesForEvent } = require('./site/links.js'), C = load(TEST_CONTENT);
+  const photos = path.join(DIR, '..', 'media', 'photos');
+  for (const a of C.learn) { const ph = guidePhoto(a.slug, a.category); assert.ok(ph, 'a photo for ' + a.slug); assert.ok(fs.existsSync(path.join(photos, ph + '.jpg')) && fs.existsSync(path.join(photos, ph + '-sm.jpg')), ph + ' and its card version'); }
+  // Jewish dates lead to their guides.
+  const slugs = (l) => l.map((a) => a.slug);
+  assert.deepEqual(slugs(guidesForDays(C, [{ desc: 'Rosh Chodesh Kislev', cat: 'roshchodesh' }])), ['kislev', 'rosh-chodesh']);
+  assert.ok(slugs(guidesForDays(C, [{ desc: "Asara B'Tevet", cat: 'holiday' }])).includes('minor-fast-days'));
+  assert.deepEqual(slugs(guidesForDays(C, [{ desc: 'Parashat Noach', cat: 'parashat' }])), ['weekly-parsha']);
+  // Events lead to the guides they are about.
+  assert.equal(guidesForEvent(C, C.events.find((e) => e.slug === EVENT))[0].slug, 'kabbalat-shabbat');
+  const c = client(), ev = await c.call('GET', '/events/' + EVENT);
+  assert.match(ev.text, /class="gcard" href="\/learn\/kabbalat-shabbat"/); assert.match(ev.text, /class="gc-img" src="\/media\/photos\/[a-z-]+-sm\.jpg"/);
+  for (const p of ['/holidays/chanukah', '/shabbat', '/kaddish', '/parsha', '/he/holidays/chanukah']) assert.match((await c.call('GET', p)).text, /class="gcard"/, p);
+  // A guide page: its photo at the top, for sharing and in the article markup; the library shows photo cards.
+  const g = await c.call('GET', '/learn/purpose-of-life');
+  assert.match(g.text, /class="page-photo"/); assert.match(g.text, /og:image" content="[^"]+\/media\/photos\/[a-z-]+\.jpg"/);
+  assert.match((await c.call('GET', '/learn')).text, /class="tile-photo"/);
+  assert.match((await c.call('GET', '/sitemap.xml')).text, /<image:loc>[^<]+\/media\/photos\/[a-z-]+\.jpg<\/image:loc>/);
+});
+
 test('old Chabad.org addresses redirect to the new pages', async () => {
   const c = client();
   for (const [from, to] of [['/3186196', '/programs/hebrew-school'], ['/templates/section_cdo/aid/5180613/jewish/Lamorinda-Jewish-Preschool.htm', '/programs/jewish-preschool'], ['/article.asp?aid=3186877', '/programs/hebrew-school'], ['/4970020', '/donate']]) {

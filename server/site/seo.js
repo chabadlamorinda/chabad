@@ -6,6 +6,7 @@ const { plain } = require('./md.js');
 const { fullAddress } = require('./content.js');
 const Z = require('./zmanim.js');
 const { LANGS, withLang } = require('./i18n.js');
+const { photoForPath, setLearn } = require('./art.js');
 
 const STATIC = ['/', '/mitzvah', '/menorah', '/dreidel', '/chanukah-quiz', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/tools/zmanim', '/tools/hebrew-birthday', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
 // AI and search crawlers we explicitly welcome (being cited by assistants is a goal of this site).
@@ -81,9 +82,12 @@ function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
   r.get('/sitemap.xml', async (req, res) => {
     const C = c(), today = new Date().toISOString().slice(0, 10), extra = more ? await more().catch(() => []) : [];
     const paths = [...STATIC, ...C.pages.map((p) => '/' + p.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.towns.map((t) => '/jewish-' + t.slug), ...C.learn.map((a) => '/learn/' + a.slug), ...(C.help || []).map((h) => '/help/' + h.slug), ...(C.forms || []).map((f) => '/forms/' + f.id), ...require('./parsha.js').all().map((p) => '/parsha/' + require('./parsha.js').slugOf(p.name)), ...upcoming().map((e) => '/events/' + e.slug), ...extra];
+    // Each page's photo (every guide has one), so pictures can show in Google Images.
+    setLearn(C.learn);
+    const img = (p) => { const ph = photoForPath(p); return ph ? `<image:image><image:loc>${xml(base + ph)}</image:loc></image:image>` : ''; };
     // Every page in English, Hebrew and Russian, each listing its other language versions (hreflang).
     const alt = (p) => LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${xml(base + withLang(l, p))}"/>`).join('');
-    res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${paths.flatMap((p) => LANGS.map((l) => `<url><loc>${xml(base + withLang(l, p))}</loc><lastmod>${today}</lastmod>${alt(p)}</url>`)).join('\n')}\n</urlset>\n`);
+    res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.flatMap((p) => LANGS.map((l) => `<url><loc>${xml(base + withLang(l, p))}</loc><lastmod>${today}</lastmod>${alt(p)}${img(p)}</url>`)).join('\n')}\n</urlset>\n`);
   });
   r.get('/llms.txt', async (req, res, next) => { try { res.type('text/plain; charset=utf-8').set('Cache-Control', 'public, max-age=3600').send(await llmsText(c(), base, upcoming, false)); } catch (e) { next(e); } });
   r.get('/llms-full.txt', async (req, res, next) => { try { res.type('text/plain; charset=utf-8').set('Cache-Control', 'public, max-age=3600').send(await llmsText(c(), base, upcoming, true)); } catch (e) { next(e); } });

@@ -76,11 +76,72 @@ const PHOTOS = {
   '/learn/chanukah-menorah': 'menorah-glow', '/learn/torah': 'torah-scroll', '/learn/bar-mitzvah': 'torah-yad', '/learn/kiddush': 'kiddush-cup', '/learn/shabbat-candles': 'shabbat-table', '/learn/hebrew-school-in-lamorinda': 'kids-crafts',
   '/learn/shabbat-in-lamorinda': 'shabbat-dinner', '/learn/moving-to-lamorinda': 'lamorinda-hills', '/learn/chanukah-for-kids': 'family-menorah', '/learn/chanukah-foods': 'sufganiyot', '/learn/dreidel': 'dreidel-kids',
 };
-const photoForPath = (p) => (PHOTOS[p] ? '/media/photos/' + PHOTOS[p] + '.jpg' : '');
+// A photo for every guide: the page's own photo if it has one (PHOTOS), otherwise the first rule here that matches
+// its address, otherwise its subject's photo. Photos missing from site/media/photos are skipped (the drawing is used).
+const GUIDE_PHOTOS = [
+  [/chanukah-foods|sufganiyot/, 'sufganiyot'], [/dreidel/, 'dreidel-kids'], [/chanukah-for-kids|hosting-a-chanukah/, 'family-menorah'], [/chanukah|menorah|gelt|al-hanissim|kislev/, 'menorah-glow'],
+  [/rosh-hashanah-simanim/, 'pomegranate'], [/shofar/, 'shofar'], [/rosh-hashanah|elul|selichot|tashlich/, 'apples-honey'],
+  [/teshuvah|forgiveness|starting-jewish-observance|success-and-failure|not-religious/, 'walking-path'], [/yom-kippur|kol-nidre|kapparot/, 'tallit-siddur'],
+  [/four-kinds/, 'lulav-etrog'], [/sukk|ushpizin|hoshana/, 'sukkah'], [/simchat-torah|hakafot|hachnasat-sefer-torah|letter-in-a-torah/, 'torah-ark'],
+  [/mishloach/, 'hamantaschen'], [/purim|megillah/, 'purim-costumes'],
+  [/seder|four-questions|afikoman|exodus|passover/, 'seder-plate'], [/matzah|chametz|pesach/, 'matzah'],
+  [/shavuot|ten-commandments|counting-the-omer/, 'mountain'], [/tu-bishvat|bal-tashchit/, 'tree-nature'],
+  [/tu-bav|jewish-dating|jewish-engagement|choosing-a-wedding-date/, 'wedding-rings'],
+  [/three-weeks|tisha|holy-temple|western-wall/, 'western-wall'], [/jerusalem|israel|making-aliyah|first-trip/, 'jerusalem'],
+  [/havdalah|melave-malka/, 'havdalah'], [/kiddush(?!-levana)|kosher-wine/, 'kiddush-cup'],
+  [/challah/, 'challah-hands'], [/hamotzi|netilat|birkat-hamazon|blessings-after-food/, 'challah-breaking'],
+  [/shabbat-meals|shabbat-guest|shalom-aleichem|zemirot|cholent|eishet-chayil|shabbat-with-kids|shabbat-for-working|shabbat-in-lamorinda|hachnasat-orchim/, 'shabbat-dinner'],
+  [/shabbat|kabbalat|muktzeh|melachot|eruv(?!-tavshilin)|electricity|traveling-on/, 'shabbat-table'],
+  [/kiddush-levana|rosh-chodesh|birkat-hachodesh|calendar|cheshvan|tevet|pesach-sheni/, 'moon-night'],
+  [/mezuzah|chanukat-habayit/, 'mezuzah'], [/tefillin|mitzvah-tanks/, 'tefillin'], [/tallit|tzitzit|kippah|shatnez/, 'tallit-siddur'],
+  [/kosher|meat-and-milk|checking-for-insects|tevilat-kelim|chalav|cooking-on|eruv-tavshilin|shavuot-dairy/, 'cooking-kitchen'],
+  [/pregnancy-loss|loss-of-a-pet/, 'memorial-candle'],
+  [/wedding|chuppah|ketubah|sheva-brachot|kallah|chosson|first-year-of-marriage/, 'wedding-chuppah'], [/mikvah|family-purity/, 'water-ripples'],
+  [/marriage|shalom-bayit|in-laws|divorce|blended/, 'couple-talking'],
+  [/brit|baby|naming|pidyon|pregnancy|simchat-bat|new-parents|adoption|infertility|genetic/, 'baby-newborn'],
+  [/grandparent|seniors|aging|retirement|dementia/, 'grandparents'],
+  [/teens|college|students|young-professionals|campus|bat-mitzvah-projects/, 'teens-friends'],
+  [/upsherin|kids|children|parenting|sibling|preschool|hebrew-school|toddlers|talking-to-kids|bedtime/, 'reading-child'],
+  [/unveiling|visiting-a-grave|jewish-funeral|cremation|kriah|halachic-will/, 'grave-stones'],
+  [/yahrzeit|yizkor|kaddish|aninut|sheloshim|mourning|shiva|grief|suicide|ethical-will|holocaust|comforting/, 'memorial-candle'],
+  [/bikur-cholim|caregiver|caring-for|loved-one-is-dying|surgery|hospital|mi-sheberach|organ|health|mental-health|addiction/, 'caring-hands'],
+  [/tzedakah|maaser|pushka|supporting|ribbit/, 'tzedakah-coins'], [/chesed|volunteering|kindness/, 'volunteers-food'],
+  [/hebrew-alphabet|hebrew-reading|hebrew-phrases|hebrew-names|baby-names|shemot/, 'hebrew-letters'],
+  [/talmud|mishnah|daily-torah|home-library|torah-study|torah-classes|chassidus|tanya|rambam|maimonides|pirkei|halacha|hey-teves|judaica/, 'seforim-shelf'],
+  [/bar-mitzvah|bat-mitzvah/, 'torah-yad'], [/torah|parsha|haftarah|tanach|aliyah/, 'torah-scroll'],
+  [/prayer|amidah|shema|siddur|daily-prayers|minyan|modeh|tehillim|talking-to-g-d|blessings|asher-yatzar|tefilat|synagogue|rabbi|shehecheyanu/, 'tallit-siddur'],
+  [/star-of-david|symbols|jewish-pride|who-is-a-jew|identity|jewelry|chai-symbol|antisemitism|converting|noahide/, 'star-of-david'],
+  [/moving-to|lamorinda|visiting-lamorinda/, 'lamorinda-hills'],
+  [/family|friendship|lonely|honoring-parents|feuds/, 'family-table'],
+];
+const CATEGORY_PHOTO = { 'Shabbat & holidays': 'shabbat-table', 'Jewish home': 'family-table', Kosher: 'cooking-kitchen', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'family-table', 'Mourning & remembrance': 'memorial-candle', 'Jewish ideas': 'sunrise-sky', Lamorinda: 'lamorinda-hills' };
+const PHOTO_DIR = path.join(__dirname, '..', '..', 'site', 'media', 'photos');
+let photos = null;
+const hasPhoto = (name) => { if (!photos) { try { photos = new Set(fs.readdirSync(PHOTO_DIR).map((f) => f.replace(/\.jpg$/, ''))); } catch (e) { photos = new Set(); } } return photos.has(name); };
+// The photo's name (no folder or .jpg) for a guide, or '' when there is none.
+function guidePhoto(slug, category = '') {
+  const fixed = PHOTOS['/learn/' + slug];
+  if (fixed && hasPhoto(fixed)) return fixed;
+  for (const [re, name] of GUIDE_PHOTOS) if (re.test(slug) && hasPhoto(name)) return name;
+  const c = CATEGORY_PHOTO[category];
+  return c && hasPhoto(c) ? c : '';
+}
+// The photo for a page address: a fixed one, or (for a guide) its guide photo. small: the card version (-sm.jpg).
+let learnCategory = () => '';
+let learnList = null;
+const setLearn = (list) => { if (!list || list === learnList) return; learnList = list; const m = new Map(list.map((a) => [a.slug, a.category])); learnCategory = (s) => m.get(s) || ''; };
+function photoName(p) {
+  if (PHOTOS[p]) return PHOTOS[p];
+  const m = /^\/learn\/([a-z0-9-]+)$/.exec(p);
+  return m ? guidePhoto(m[1], learnCategory(m[1])) : '';
+}
+const photoForPath = (p, small = false) => { const n = photoName(p); return !n ? '' : small && hasPhoto(n + '-sm') ? '/media/photos/' + n + '-sm.jpg' : '/media/photos/' + n + '.jpg'; };
 // Add pictures to a finished page: every card tile, and a large one at the top of the page (a photo when there is one).
 function decorate(html, pagePath) {
   html = html.replace(/<a class="card tile([^"]*)" href="(\/[^"]*)"([^>]*)>(\s*(?:<p class="eyebrow">[^<]*<\/p>)?\s*<h3>)([^<]*)/g, (m, cls, href, rest, before, title) => {
-    const name = artForPath(href.split(/[?#]/)[0], title);
+    const p = href.split(/[?#]/)[0], ph = /^\/learn\//.test(p) && photoForPath(p, true);
+    if (ph) return `<a class="card tile has-photo${cls}" href="${href}"${rest}><img class="tile-photo" src="${ph}" alt="" loading="lazy" decoding="async" width="560" height="380">${before}${title}`;
+    const name = artForPath(p, title);
     return name ? `<a class="card tile has-art${cls}" href="${href}"${rest}>${artImg(name)}${before}${title}` : m;
   });
   const photo = photoForPath(pagePath);
@@ -92,4 +153,4 @@ function decorate(html, pagePath) {
 const artImg = (name, size = 'sm') => (name ? `<img class="art art-${size}" src="/assets/art/${name}.svg" alt="" width="${size === 'lg' ? 96 : 56}" height="${size === 'lg' ? 96 : 56}"${size === 'lg' ? '' : ' loading="lazy"'} decoding="async">` : ''); // the big one at the top shows at once
 const art = (kind, slug, extra, size) => artImg(artFor(kind, slug, extra), size);
 
-module.exports = { art, artFor, artForPath, artImg, decorate, photoForPath, PHOTOS, reset: () => { have = null; } };
+module.exports = { art, artFor, artForPath, artImg, decorate, photoForPath, guidePhoto, setLearn, PHOTOS, GUIDE_PHOTOS, reset: () => { have = null; photos = null; } };

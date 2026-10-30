@@ -6,6 +6,7 @@ const { campaignBanner } = require('./campaign-page.js');
 const { esc } = require('./md.js');
 const { artFor, artImg } = require('./art.js');
 const { fmtClock } = require('./content.js');
+const { guideCards } = require('./links.js');
 
 const THEMES = new Set(['navy', 'blue', 'green', 'gold', 'burgundy']);
 const themeOf = (x, fallback = 'navy') => (THEMES.has(x) ? x : fallback);
@@ -39,7 +40,7 @@ const CAT_PHOTO = { shabbat: 'shabbat-table', class: 'torah-study', kids: 'kids-
 const catPhoto = (c) => (CAT_PHOTO[c] ? '/media/photos/' + CAT_PHOTO[c] + '.jpg' : '');
 const holidayPhoto = (slug) => (HOLIDAY_PHOTO[slug] ? '/media/photos/' + HOLIDAY_PHOTO[slug] + '.jpg' : '');
 
-function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, today }) {
+function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, dayGuides = [], today }) {
   const { t, C } = X, o = C.org, H = C.home || {};
   // Large banners: featured events and holiday events coming in the next two months, then the next holiday, then home.json.
   const soon = (e) => (e.start.slice(0, 10) <= new Date(Date.parse(today + 'T12:00:00Z') + 60 * 864e5).toISOString().slice(0, 10));
@@ -87,6 +88,7 @@ ${campaignBanner(X)}
   <div class="sbs">${small.map(tile).join('')}</div>
   ${(o.weekly || []).length ? `<ul class="week-strip">${o.weekly.map((w) => `<li><a href="${esc(w.link || '/events')}"><b>${esc(w.day)}</b> ${esc(w.name)} <span class="muted">${esc(w.time)}</span></a></li>`).join('')}</ul>` : ''}
 </section>
+${dayGuides.length ? `<section class="wrap sec">${guideCards(X, dayGuides, t('This week on the Jewish calendar'))}</section>` : ''}
 ${H.story ? `<section class="wrap sec"><div class="story">
   ${H.story.image ? `<div class="story-photo"><img src="${esc(H.story.image)}" alt="" loading="lazy" decoding="async">${H.story.tag ? `<span class="tag">${esc(H.story.tag)}</span>` : ''}</div>` : ''}
   <div><div class="sec-h"><h2>${esc(H.story.title)}</h2></div><p>${esc(H.story.text)}</p>
