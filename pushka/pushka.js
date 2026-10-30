@@ -461,7 +461,7 @@ PG.home = () => {
     <div class="progress"><div class="pg-track"><div class="pg-fill" id="progFill" style="width:${(U.fillFor === p.id ? U.pctShown : 0)}%"></div></div><div class="pg-t">${progTxt}</div></div>
     ${familyChips()}<div><div class="tap">${t("Tap to drop a coin")}</div><div class="quick">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="drop" data-v="${a}">${money(a)}</button>`).join("")}<button class="btn btn-secondary" data-act="other">${t("Other")}</button></div></div>
     <button class="btn btn-primary cta" data-act="openEmpty" ${p.balance <= 0 ? "disabled" : ""}>${t("Empty pushka to Chabad")}</button>
-    <button class="btn btn-honor cta" data-act="why">${ico(I.give, 20)} ${t("Donate in honor or memory")}</button>
+    <button class="btn btn-honor cta" data-act="why">${ico(I.give, 20)} ${t("Donate in honor or in memory of a loved one")}</button>
     <div class="row2"><button class="btn btn-ghost" data-act="donateNow">${t("Donate now")}</button><button class="btn btn-ghost" data-act="go" data-v="settings">${ico(I.gear, 16)} ${t("Pushka settings")}</button></div>
     ${annCards()}${boardCard()}${commCard()}${todayCard()}${occasionCard()}
     ${reminder}
@@ -1131,7 +1131,7 @@ function weekStrip() { // the calendar week, Sunday to Shabbat
   return `<div class="week" role="img" aria-label="${esc(tt("This week"))}">${out.join("")}</div>`;
 }
 U.hm = { k: "honor", name: "" };
-A.why = () => { U.hm = { k: "honor", name: "" }; sheet(`<div><h3>${t("Donate in honor or memory")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("The coin goes into your pushka, dedicated to someone special.")}</div></div>
+A.why = () => { U.hm = { k: "honor", name: "" }; sheet(`<div><h3>${t("Donate in honor or in memory of a loved one")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("The coin goes into your pushka, dedicated to someone special.")}</div></div>
   <div class="seg"><label><input type="radio" name="hmk" value="honor" data-chg="hmKind" checked>${t("In honor of")}</label><label><input type="radio" name="hmk" value="memory" data-chg="hmKind">${t("In memory of")}</label></div>
   <div class="field"><label for="hmN">${t("Name")}</label><input class="input" id="hmN" maxlength="60" data-inp="hmName" placeholder="${esc(tt("e.g. Rachel bat Sarah"))}"></div>
   <div class="amts three">${S.presets.map((a) => `<button class="btn btn-secondary" data-act="whyDrop" data-v="${a}">${money(a)}</button>`).join("")}</div>
