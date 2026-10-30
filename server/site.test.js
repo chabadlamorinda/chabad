@@ -937,6 +937,16 @@ test('finances: online gifts come in from Stripe with fees and refunds, money in
   assert.equal((await client().call('GET', '/admin/api/fin/summary', undefined, H)).status, 401);
 });
 
+test('print a flyer: every event has a one-page printable flyer with a QR code to its RSVP, in three languages', async () => {
+  const g = client();
+  const page = (await g.call('GET', '/events/' + EVENT)).text; assert.match(page, new RegExp('href="/events/' + EVENT + '/flyer"'));
+  const f = await g.call('GET', '/events/' + EVENT + '/flyer');
+  assert.equal(f.status, 200); assert.match(f.text, /<svg[^>]*viewBox/); assert.match(f.text, /Scan to RSVP/); assert.match(f.text, /noindex/); assert.match(f.text, /src="\/assets\/flyer.js"/);
+  const he = await g.call('GET', '/he/events/' + EVENT + '/flyer'); assert.match(he.text, /dir="rtl"/); assert.match(he.text, /סרקו לאישור הגעה/);
+  assert.equal((await g.call('GET', '/events/no-such-event/flyer')).status, 404);
+  const { qrSvg } = require('./site/flyer.js'); assert.match(qrSvg('http://site.test/events/x#rsvp'), /^<svg/);
+});
+
 test('bring a friend: every RSVP gets an invite link, and a friend who RSVPs through it is credited', async () => {
   const a = await client().call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Dina Inviter', email: 'dina@example.com' });
   assert.equal(a.status, 200); assert.match(a.json.invite, /^[a-f0-9]{10}$/);

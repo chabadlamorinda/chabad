@@ -1453,5 +1453,12 @@
  "{n} yearly payments": "{n} ежегодных платежей",
  "Bring a friend": "Приведите друга",
  "Everything is better together. Send a friend your personal invitation:": "Вместе всё лучше. Отправьте другу личное приглашение:",
- "I'm going to {title} ({when}) at Chabad of Lamorinda. Come with me! {url}": "Я иду на «{title}» ({when}) в Хабаде Ламоринды. Пойдём со мной! {url}"
+ "I'm going to {title} ({when}) at Chabad of Lamorinda. Come with me! {url}": "Я иду на «{title}» ({when}) в Хабаде Ламоринды. Пойдём со мной! {url}",
+ "Back to the event": "Назад к событию",
+ "Flyer": "Листовка",
+ "Print": "Печать",
+ "Print a flyer": "Распечатать листовку",
+ "Scan for details": "Сканируйте, чтобы узнать больше",
+ "Scan to RSVP": "Сканируйте, чтобы записаться",
+ "You are invited!": "Приглашаем вас!"
 }

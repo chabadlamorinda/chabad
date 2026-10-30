@@ -38,6 +38,7 @@ const { mountGive } = require('./give.js');
 const { mountKiddushPage } = require('./kiddush-page.js');
 const { mountFun } = require('./fun.js');
 const { mountCampaignPages } = require('./campaign-page.js');
+const { mountFlyer } = require('./flyer.js');
 const { mountChat } = require('./chat.js');
 const { mountParsha, mountCalendar, mountDaily } = require('./parsha.js');
 const { mountWeekly } = require('./weekly.js');
@@ -124,6 +125,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountKiddushPage(r, { render: pages.render, wrap, ctxOf });
   mountFun(r, { render: pages.render, wrap, ctxOf });
   mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base, store });
+  mountFlyer(r, { wrap, ctxOf, base });
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   mountMitzvah(app, r, { store, render: pages.render, wrap, ctxOf, limit, base, log });
