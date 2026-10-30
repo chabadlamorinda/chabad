@@ -3,7 +3,7 @@
 // about what it celebrates, and the weekly pages the guides for that week's Jewish dates. Shown as picture cards.
 'use strict';
 const { esc } = require('./md.js');
-const { artForPath, artImg, photoForPath } = require('./art.js');
+const { artForPath, artImg, photoForPath, guidePhotos } = require('./art.js');
 
 const HOLIDAY = {
   'rosh-hashanah': /rosh-hashanah|shofar|tashlich|elul|selichot|teshuvah/, 'yom-kippur': /yom-kippur|kol-nidre|yizkor|teshuvah/,
@@ -104,10 +104,17 @@ function picture(href, title, size) {
   return ph ? `<img class="gc-img" src="${ph}" alt="" loading="lazy" decoding="async" width="560" height="380">` : artImg(artForPath(p, title), size);
 }
 // Picture cards for a few guides: a photo, the title and one line on what it covers.
+// Cards side by side never repeat a photo: each takes the first of its fitting photos not used yet (else its drawing).
 function guideCards(X, guides, heading) {
-  const list = guides.filter(Boolean);
+  const list = guides.filter(Boolean), used = new Set();
   if (!list.length) return '';
-  return `<section class="guide-cards">${heading ? `<h2>${esc(heading)}</h2>` : ''}<div class="gc-grid">${list.map((a) => `<a class="gcard" href="/learn/${a.slug}">${picture('/learn/' + a.slug, a.title)}<span class="gc-t"><strong>${esc(a.title)}</strong><span>${esc(a.description)}</span></span></a>`).join('')}</div></section>`;
+  const pic = (a) => {
+    const n = guidePhotos(a.slug, a.category).find((x) => !used.has(x));
+    if (!n) return artImg(artForPath('/learn/' + a.slug, a.title));
+    used.add(n);
+    return `<img class="gc-img" src="/media/photos/${n}-sm.jpg" alt="" loading="lazy" decoding="async" width="560" height="380">`;
+  };
+  return `<section class="guide-cards">${heading ? `<h2>${esc(heading)}</h2>` : ''}<div class="gc-grid">${list.map((a) => `<a class="gcard" href="/learn/${a.slug}">${pic(a)}<span class="gc-t"><strong>${esc(a.title)}</strong><span>${esc(a.description)}</span></span></a>`).join('')}</div></section>`;
 }
 function withGuides(X, body, path) {
   const list = guidesFor(X.C, path);

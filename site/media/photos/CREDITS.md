@@ -34,3 +34,35 @@ Free photos from Pexels (https://www.pexels.com/license/: free to use, no paymen
 | sufganiyot.jpg | https://www.pexels.com/photo/6150703/ |
 | challah-kid.jpg | https://www.pexels.com/photo/3730955/ |
 | kosher-delivery.jpg | https://www.pexels.com/photo/7363163/ |
+| wedding-chuppah.jpg | https://www.pexels.com/photo/31416469/ |
+| wedding-rings.jpg | https://www.pexels.com/photo/230290/ |
+| baby-newborn.jpg | https://www.pexels.com/photo/325690/ |
+| memorial-candle.jpg | https://www.pexels.com/photo/230971/ |
+| grave-stones.jpg | https://www.pexels.com/photo/32150365/ |
+| caring-hands.jpg | https://www.pexels.com/photo/8172814/ |
+| seforim-shelf.jpg | https://www.pexels.com/photo/5986455/ |
+| tzedakah-coins.jpg | https://www.pexels.com/photo/11114830/ |
+| western-wall.jpg | https://www.pexels.com/photo/415713/ |
+| sunrise-sky.jpg | https://www.pexels.com/photo/32212173/ |
+| tree-nature.jpg | https://www.pexels.com/photo/16409246/ |
+| lulav-etrog.jpg | https://www.pexels.com/photo/38446039/ |
+| hamantaschen.jpg | https://www.pexels.com/photo/38431285/ |
+| purim-costumes.jpg | https://www.pexels.com/photo/6800536/ |
+| havdalah.jpg | https://www.pexels.com/photo/4033495/ |
+| cooking-kitchen.jpg | https://www.pexels.com/photo/3730922/ |
+| couple-talking.jpg | https://www.pexels.com/photo/5698213/ |
+| grandparents.jpg | https://www.pexels.com/photo/8307718/ |
+| teens-friends.jpg | https://www.pexels.com/photo/7683897/ |
+| hebrew-letters.jpg | https://www.pexels.com/photo/5342255/ |
+| moon-night.jpg | https://www.pexels.com/photo/8488394/ |
+| star-of-david.jpg | https://www.pexels.com/photo/5488299/ |
+| pomegranate.jpg | https://www.pexels.com/photo/12148143/ |
+| mountain.jpg | https://www.pexels.com/photo/37982174/ |
+| quill-writing.jpg | https://www.pexels.com/photo/360941/ |
+| water-ripples.jpg | https://www.pexels.com/photo/38167809/ |
+| reading-child.jpg | https://www.pexels.com/photo/1741230/ |
+| volunteers-food.jpg | https://www.pexels.com/photo/6591154/ |
+| walking-path.jpg | https://www.pexels.com/photo/744912/ |
+| family-table.jpg | https://www.pexels.com/photo/6054108/ |
+
+Each photo also has a small card version, <name>-sm.jpg.

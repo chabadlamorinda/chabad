@@ -868,3 +868,11 @@ form.tool .btn.gold { justify-self: start; min-width: 200px; }
 .rn-main .gc-img { flex: none; width: 128px; height: 96px; object-fit: cover; border-radius: 12px; }
 .more-guides a { display: flex; align-items: center; gap: 10px; }
 .more-guides .art { width: 28px; height: 28px; margin: 0; flex: none; }
+@media (max-width: 520px) {
+  .tile.has-photo { display: grid; grid-template-columns: 112px 1fr; grid-template-rows: auto 1fr; }
+  .tile.has-photo > .tile-photo { grid-row: 1 / span 3; width: 112px; height: 100%; min-height: 104px; aspect-ratio: auto; }
+  .tile.has-photo > :not(.tile-photo) { grid-column: 2; padding-inline: 14px; }
+  .tile.has-photo h3 { margin-top: 12px; font-size: 1.02rem; }
+  .tile.has-photo p { font-size: .92rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .tile.has-photo > :last-child { padding-bottom: 0; margin-bottom: 12px; }
+}
