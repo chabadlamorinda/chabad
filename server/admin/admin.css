@@ -57,3 +57,5 @@ button.quiet,a.quiet{border-color:#d7c3a3;color:#7d5411;background:#fff}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
 .tiles .tile{display:flex;flex-direction:column;gap:4px;text-align:left;background:#fff;border:1px solid #d7d3d3;border-radius:12px;padding:14px;min-height:92px;color:#201f1d;text-decoration:none;font:inherit;cursor:pointer}
 .tiles .tile:hover{border-color:#b68235}.tiles .tile strong{font-size:18px;font-weight:400;color:#7d5411}.tiles .tile span{font-size:13px;color:#605d5d;line-height:1.35}
+/* Weekly email: sent, opened, clicked */
+.em-stats{gap:8px;margin:8px 0}.em-stats div{flex:1 1 90px;background:#fff;border:1px solid #eee5d6;border-radius:10px;padding:8px 10px;display:grid}.em-stats b{font:400 20px Georgia,serif;color:#1f7a46}.em-stats span{font-size:12px;color:#605d5d}

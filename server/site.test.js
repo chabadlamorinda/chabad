@@ -836,7 +836,7 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
   const m = await signIn('member@x.co'); await m.call('PUT', '/api/site/me', { name: 'Member' });
   const a = await admin();
   const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
-  assert.equal(pv.recipients, 2); assert.match(pv.text, /^Good Shabbos everyone!/); assert.match(pv.text, /COMING UP/); assert.match(pv.text, /LEARN SOMETHING NEW/);
+  assert.equal(pv.recipients, 2); assert.match(pv.text, /A WORD FROM THE RABBI\nGood Shabbos everyone!/); assert.match(pv.text, /SHABBAT TIMES/); assert.match(pv.text, /WORTH READING THIS WEEK/); assert.match(pv.text, /JOKE OF THE WEEK/);
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', {}, { 'x-admin': '1' })).status, 400, 'needs confirmation');
   const wa = (await a.call('GET', '/admin/api/site/weekly/whatsapp?lang=he')).json.text;
   assert.match(wa, /שבת שלום מחב״ד למורינדה/); assert.match(wa, /\/he\/this-week/);
@@ -847,6 +847,55 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
   assert.match((await g.call('GET', link)).text, /You are unsubscribed/);
   assert.equal((await a.call('GET', '/admin/api/site/weekly')).json.recipients, 1);
   assert.match((await g.call('GET', '/unsubscribe?e=reader@x.co&t=wrongwrongwrongwrongwrong')).text, /not valid/);
+});
+
+test('email system: sign up from any page, the designed email in each language, tracking, subscribers, by itself', async () => {
+  const g = client(), a = await admin(), H = { 'x-admin': '1' };
+  // Every page has the sign-up band and the pop-up (not the sign-up or giving pages); /subscribe explains what comes.
+  const home = (await g.call('GET', '/learn/mezuzah')).text; assert.match(home, /data-subscribe="band"/); assert.match(home, /data-nl-pop/);
+  assert.doesNotMatch((await g.call('GET', '/donate')).text, /data-nl-pop/);
+  assert.match((await g.call('GET', '/subscribe')).text, /data-subscribe="page"/);
+  // Sign up in Russian: pending until confirmed from the inbox (in Russian), then in the Russian list.
+  mails.length = 0;
+  assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'nope' })).status, 400);
+  assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'Olga@X.co', name: 'Olga', lang: 'ru', source: 'popup:/' })).json.pending, true);
+  const conf = mails.find((m) => m.to === 'olga@x.co'); assert.ok(conf && conf.html, 'a designed confirmation email');
+  assert.match((await g.call('GET', /(\/ru\/newsletter\/confirm\?\S+)/.exec(conf.text)[1])).text, /<html lang="ru"/);
+  assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'olga@x.co', lang: 'ru' })).json.already, true);
+  let subs = (await a.call('GET', '/admin/api/site/email/subscribers')).json;
+  const olga = subs.items.find((s) => s.email === 'olga@x.co'); assert.equal(olga.status, 'confirmed'); assert.equal(olga.lang, 'ru');
+  // The Rabbi adds someone in Hebrew; the designed email in each language; the holiday edition; his own message.
+  assert.equal((await a.call('POST', '/admin/api/site/email/subscribers', { email: 'dana@x.co', name: 'Dana', lang: 'he' }, H)).json.ok, true);
+  const pv = (await a.call('GET', '/admin/api/site/weekly/preview?lang=he&note=' + encodeURIComponent('שבת שלום'))).text;
+  assert.match(pv, /dir="rtl"/); assert.match(pv, /\/he\/learn\//); assert.match(pv, /media\/photos\/[a-z-]+-sm\.jpg/);
+  const en = (await a.call('GET', '/admin/api/site/weekly/preview?kind=holiday')).text; assert.match(en, /\/holidays\//);
+  assert.match((await a.call('GET', '/admin/api/site/weekly/preview?kind=message&message=' + encodeURIComponent('Dear friends, **thank you**!'))).text, /<strong>thank you<\/strong>/);
+  // A test to the Rabbi, then to everyone: each in their language, links tracked, one-click unsubscribe.
+  mails.length = 0;
+  assert.equal((await a.call('POST', '/admin/api/site/weekly/test', { to: 'rabbi@x.co' }, H)).json.ok, true);
+  assert.match(mails[0].subject, /^\[Test\]/);
+  mails.length = 0;
+  const sent = (await a.call('POST', '/admin/api/site/weekly/send', { confirm: true, kind: 'message', subject: 'A note from the Rabbi', message: 'Hello everyone' }, H)).json;
+  assert.ok(sent.sent >= 2);
+  const ru = mails.find((m) => m.to === 'olga@x.co'), he = mails.find((m) => m.to === 'dana@x.co');
+  assert.match(ru.html, /lang="ru"/); assert.match(he.html, /dir="rtl"/); assert.match(ru.headers['List-Unsubscribe'], /\/unsubscribe\?e=olga/);
+  const open = /src="http:\/\/site\.test(\/e\/o\/[^"]+\.gif)"/.exec(ru.html)[1], click = /href="http:\/\/site\.test(\/e\/c\/[^"]+)"/.exec(ru.html)[1].replace(/&amp;/g, '&');
+  assert.equal((await g.call('GET', open)).status, 200);
+  const r = await g.call('GET', click); assert.equal(r.status, 302); assert.match(r.headers.get('location'), /utm_source=email/);
+  assert.equal((await g.call('GET', click.replace(/s=[^&]+/, 's=bad'))).headers.get('location'), 'http://site.test/', 'no open redirect');
+  await new Promise((ok) => setTimeout(ok, 100));
+  const camp = (await a.call('GET', '/admin/api/site/email/campaigns')).json.items[0];
+  assert.equal(camp.subject, 'A note from the Rabbi'); assert.ok(camp.opened >= 1); assert.ok(camp.clicked >= 1); assert.ok(camp.links.length >= 1);
+  // Language choice, and the subscribers list as a spreadsheet.
+  const prefs = /http:\/\/site\.test(\/email\/prefs\?\S+)/.exec(ru.text)[1];
+  assert.match((await g.call('GET', prefs + '&lang=he')).text, /dir="rtl"/);
+  assert.equal((await a.call('GET', '/admin/api/site/email/subscribers')).json.items.find((s) => s.email === 'olga@x.co').lang, 'he');
+  assert.match((await a.call('GET', '/admin/api/site/email/subscribers.csv')).text, /olga@x\.co/);
+  // By itself: off until the Rabbi turns it on; then a day and hour.
+  assert.equal((await a.call('GET', '/admin/api/site/weekly/auto')).json.on, false);
+  assert.equal((await a.call('POST', '/admin/api/site/weekly/auto', { on: true, day: 4, hour: 10 }, H)).json.on, true);
+  await a.call('POST', '/admin/api/site/weekly/auto', { on: false, day: 4, hour: 10 }, H);
+  assert.equal((await g.call('GET', '/admin/api/site/email/subscribers')).status, 401);
 });
 
 test('Ask the Rabbi: publish an answer, it becomes a page with Q&A markup', async () => {

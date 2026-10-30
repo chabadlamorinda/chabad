@@ -138,7 +138,7 @@ ${evs.length ? `<ul class="list">${evs.map((e) => `<li><a href="/events/${e.slug
 ${cal.length ? `<h2>${esc(t('Jewish dates this week'))}</h2><ul class="list">${cal.map((e) => `<li><strong>${esc(X.shortDate(e.date))}</strong>: ${esc(X.hc(e))}</li>`).join('')}</ul>` : ''}
 ${guideCards(X, dayGuides.slice(0, 6), t('Learn about this week'))}
 ${guide ? guideCards(X, [guide], t('Guide of the week')) : ''}
-<p class="btns"><a class="btn gold" href="/mitzvah">${esc(t('Do a mitzvah this week'))}</a><a class="btn ghost" href="/forms/newsletter">${esc(t('Get it by email every week'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory of a loved one'))}</a><a class="btn ghost" href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a></p></section>`;
+<p class="btns"><a class="btn gold" href="/mitzvah">${esc(t('Do a mitzvah this week'))}</a><a class="btn ghost" href="/subscribe">${esc(t('Get it by email every week'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory of a loved one'))}</a><a class="btn ghost" href="/shabbat-times">${esc(t('Shabbat times for the whole year'))}</a></p></section>`;
     await render(res, { path: '/this-week', title: t('This week in Jewish Lamorinda: Shabbat times, parsha and events'), description: t('This week\'s Shabbat candle lighting in Lafayette, Moraga and Orinda, the Torah portion, Jewish dates and events at Chabad of Lamorinda.'), body });
   }));
   r.get('/shabbat-times', timesPage('lafayette'));

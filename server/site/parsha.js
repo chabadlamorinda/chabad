@@ -47,7 +47,7 @@ function mountParsha(r, { render, wrap, ctxOf, base }) {
 ${sh.parsha ? `<p class="lead-d">${esc(X.hc(sh.parsha))} · ${esc(X.longDate(sh.parsha.date))}</p>` : `<p class="lead-d">${esc(t('This Shabbat is a holiday, with a special Torah reading.'))}</p>`}
 ${ps.map((p) => block(X, p)).join('')}
 ${sh.candles ? `<p class="card">${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}: <strong>${esc(X.tm(sh.candles))}</strong>${sh.havdalah ? ` · ${esc(t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}` : ''}</p>` : ''}
-<p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/programs/adult-education">${esc(t('Torah classes'))}</a><a class="btn ghost" href="/forms/newsletter">${esc(t('Get it by email every week'))}</a></p>
+<p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/programs/adult-education">${esc(t('Torah classes'))}</a><a class="btn ghost" href="/subscribe">${esc(t('Get it by email every week'))}</a></p>
 ${guideCards(X, guides, t('Learn more'))}
 <h2>${esc(t('All the Torah portions'))}</h2><p class="chips">${all().map((p) => `<a class="chip" href="/parsha/${slugOf(p.name)}">${esc(X.lang === 'he' ? p.hebrew : t('Parashat ' + p.name).replace(/^(Parashat|Недельная глава)\s+/, ''))}</a>`).join('')}</p></section>`;
     await render(res, { path: '/parsha', title: t("This week's Torah portion (parsha)"), description: t('The weekly Torah portion: a short summary, a lesson for today, and this week\'s Shabbat candle lighting times in Lafayette, from Chabad of Lamorinda.'), body });

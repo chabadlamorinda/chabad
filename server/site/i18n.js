@@ -89,6 +89,7 @@ function createI18n(dir) {
       giving: overlay(en.giving || {}, j('giving.json')),
       home: overlay(en.home || {}, j('home.json')),
       campaigns: overlay(en.campaigns || [], j('campaigns.json')),
+      jokes: overlay(en.jokes || [], j('jokes.json')),
       events: en.events.map((e) => (e[lang] ? { ...e, ...Object.fromEntries(Object.entries(e[lang]).filter(([k, v]) => ['title', 'summary', 'details', 'price'].includes(k) && typeof v === 'string' && v.trim())) } : e)),
       pages: md('pages', en.pages),
       holidays: md('holidays', en.holidays),

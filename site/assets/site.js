@@ -65,6 +65,42 @@
       end.hidden = false; end.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
+  // The weekly email: every sign-up form (the band above the footer, the pop-up, /subscribe). Remembered on this phone
+  // so the pop-up never comes back after signing up.
+  Array.prototype.forEach.call(document.querySelectorAll('[data-subscribe]'), function (f) {
+    f.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var msg = f.querySelector('.nl-msg'), email = f.querySelector('[name=email]').value.trim(), name = f.querySelector('[name=name]'), btn = f.querySelector('button[type=submit]');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = T('Please enter a valid email address.'); return; }
+      btn.disabled = true;
+      api('POST', '/subscribe', { email: email, name: name ? name.value.trim() : '', lang: LANG, source: f.getAttribute('data-subscribe') + ':' + location.pathname }).then(function (r) {
+        btn.disabled = false;
+        if (r._status !== 200) { msg.textContent = r.error || T('Something went wrong. Please try again.'); return; }
+        store.set('cl_nl', 'done');
+        msg.textContent = r.already ? T('You are already signed up. Thank you!') : T('Thank you! Please check your email and tap the link to confirm.');
+        f.classList.add('done');
+        var pop = f.closest('[data-nl-pop]'); if (pop) setTimeout(function () { pop.classList.remove('on'); setTimeout(function () { pop.hidden = true; }, 300); }, 4000);
+      }, function () { btn.disabled = false; msg.textContent = T('Something went wrong. Please try again.'); });
+    });
+  });
+  // The pop-up: once a visitor has spent about 40 seconds reading (across pages), not before the second page, and never
+  // again for three weeks after closing it (or ever, after signing up).
+  (function () {
+    var pop = document.querySelector('[data-nl-pop]'); if (!pop) return;
+    var later = Number(store.get('cl_nl_later')) || 0;
+    if (store.get('cl_nl') === 'done' || store.get('cl_signed') || Date.now() < later) return;
+    var pages = +(sessionStorage.getItem('cl_nl_pages') || 0) + 1, spent = +(sessionStorage.getItem('cl_nl_secs') || 0), shown = false;
+    try { sessionStorage.setItem('cl_nl_pages', pages); } catch (e) {}
+    var close = function () { pop.classList.remove('on'); setTimeout(function () { pop.hidden = true; }, 300); store.set('cl_nl_later', String(Date.now() + 21 * 864e5)); };
+    pop.querySelector('[data-nl-close]').addEventListener('click', close);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !pop.hidden) close(); });
+    var timer = setInterval(function () {
+      if (document.hidden) return;
+      spent += 5; try { sessionStorage.setItem('cl_nl_secs', spent); } catch (e) {}
+      if (shown || spent < 40 || pages < 2 || document.querySelector('.chat.open, .chat:not([hidden])')) return;
+      shown = true; clearInterval(timer); pop.hidden = false; requestAnimationFrame(function () { pop.classList.add('on'); });
+    }, 5000);
+  })();
   // Footer: on phones the link groups start folded; on wide screens they always stay open.
   var cols = document.querySelectorAll('.ftr-col');
   // (also when the screen turns or the window is resized, so the links never stay hidden on a wide screen)

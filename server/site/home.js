@@ -62,7 +62,7 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, dayGuides =
     ['challah', 'Come for a Shabbat meal', 'Join the Rabbi\'s family for Friday night dinner, or we will match you with a host.', '/forms/shabbat-meal'],
     ['open-book', 'Join a class', 'Torah, Tanya and Hebrew classes every week, for every level.', '/programs/adult-education'],
     ['hands-heart', 'Volunteer', 'Cook, drive, set up, visit: lend a hand at events and for families in need.', '/forms/volunteer'],
-    ['envelope', 'Get the weekly email', 'Shabbat times, events and a short Torah thought, once a week.', '/forms/newsletter'],
+    ['envelope', 'Get the weekly email', 'Shabbat times, events and a short Torah thought, once a week.', '/subscribe'],
     ['coin', 'Join the Chai Club', 'Become a monthly partner and carry Jewish life in Lamorinda.', '/chai-club'],
     ['sparkles', 'Do a mitzvah this week', 'Pick one good deed and join the community count.', '/mitzvah'],
   ];

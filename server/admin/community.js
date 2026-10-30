@@ -127,11 +127,59 @@
     });
 
     // ---- Weekly email ----
-    var sw = section('Weekly email', 'Written automatically from the website: Shabbat times, the Torah portion, upcoming events, the next holiday and a guide. Add a personal note, check it, and send.', 'Email');
-    var note = el('textarea', { rows: '3', placeholder: 'A personal note at the top (optional)' }), prev = el('pre', { style: 'white-space:pre-wrap;font:14px/1.5 system-ui;background:#fff;border:1px solid #ddd;border-radius:8px;padding:12px' }), info = el('div', { class: 'small' });
-    var load = function () { api('GET', '/site/weekly?note=' + encodeURIComponent(note.value)).then(function (m) { if (m._status !== 200) { info.textContent = m.error || 'Needs the database.'; return; } prev.textContent = 'Subject: ' + m.subject + '\n\n' + m.text; info.textContent = m.recipients + ' people will receive it.' + (m.email ? '' : ' Email is not set up yet (SMTP_URL).'); }); };
-    var sendBtn = el('button', { class: 'on', text: 'Send to everyone', onclick: function () { if (!confirm('Send the weekly email now?')) return; sendBtn.disabled = true; fetch('/admin/api/site/weekly/send', { method: 'POST', credentials: 'same-origin', headers: { 'x-admin': '1', 'content-type': 'application/json' }, body: JSON.stringify({ confirm: true, note: note.value }) }).then(function (r) { return r.json(); }).then(function (r) { sendBtn.disabled = false; info.textContent = r.ok ? 'Sent to ' + r.sent + ' of ' + r.total + '.' : r.error; }); } });
-    sw.appendChild(el('div', { class: 'card' }, [note, el('div', { class: 'row' }, [el('button', { text: 'Preview', onclick: load }), sendBtn]), info, prev]));
+    // Compose (which edition, the Rabbi's word, this week's joke), see the real email, send a test to himself, send to
+    // everyone or let it go by itself every week; then the sent emails (opened, clicked) and the subscribers.
+    var sw = section('Weekly email', 'Written by itself from the website every week: the Rabbi\'s word, Shabbat times, the Torah portion, events, guides, a question, a mitzvah, a joke and giving. Each person gets it in their language.', 'Email');
+    var kind = el('select', {}, [['auto', 'Weekly (holiday edition by itself when a holiday is near)'], ['shabbat', 'Weekly: Shabbat edition'], ['holiday', 'Holiday edition'], ['message', 'My own message (with the events and giving below it)']].map(function (o) { return el('option', { value: o[0], text: o[1] }); }));
+    var note = el('textarea', { rows: '4', placeholder: 'A word from the Rabbi (optional): a thought on the parsha or the holiday, a story, a greeting' });
+    var subj = el('input', { placeholder: 'Subject (optional: written for you)' }), msgBox = el('textarea', { rows: '8', placeholder: 'Your message' }), joke = el('textarea', { rows: '2', placeholder: 'Joke of the week (optional: one is picked for you)' });
+    var lang = el('select', {}, [['en', 'Preview in English'], ['he', 'Preview in Hebrew'], ['ru', 'Preview in Russian']].map(function (o) { return el('option', { value: o[0], text: o[1] }); }));
+    var info = el('div', { class: 'small' });
+    var see = el('a', { class: 'pill', target: '_blank', rel: 'noopener', style: 'padding:10px 16px;font-size:16px;text-decoration:none', text: 'See the email ↗' });
+    var opts = function () { return { kind: kind.value, note: note.value, joke: joke.value, subject: subj.value, message: msgBox.value }; };
+    var qs = function () { var o = opts(); return Object.keys(o).map(function (k) { return k + '=' + encodeURIComponent(o[k]); }).join('&') + '&lang=' + lang.value; };
+    var show = function () { msgBox.parentNode.hidden = kind.value !== 'message'; note.hidden = kind.value === 'message'; };
+    var load = function () { show(); see.href = '/admin/api/site/weekly/preview?' + qs(); api('GET', '/site/weekly?' + qs()).then(function (m) { if (m._status !== 200) { info.textContent = m.error || 'Needs the database.'; return; } var bl = m.byLang || {}; info.textContent = 'Subject: ' + m.subject + ' · ' + m.recipients + ' people will receive it (' + ['en', 'he', 'ru'].map(function (l) { return (bl[l] || 0) + ' ' + { en: 'English', he: 'Hebrew', ru: 'Russian' }[l]; }).join(', ') + ').' + (m.email ? '' : ' Email sending is not set up yet (SMTP_URL in Render).'); }); };
+    var post = function (path, body, out, btnEl) { btnEl.disabled = true; return api('POST', path, body).then(function (r) { btnEl.disabled = false; out.textContent = r._status === 200 ? '' : (r.error || 'Something went wrong.'); return r; }); };
+    var testTo = el('input', { type: 'email', placeholder: 'Send a test to (empty: to you)' }), testOut = el('div', { class: 'small' });
+    var testBtn = el('button', { text: 'Send me a test', onclick: function () { var b = opts(); b.to = testTo.value; b.lang = lang.value; post('/site/weekly/test', b, testOut, testBtn).then(function (r) { if (r.ok) testOut.textContent = 'Test sent to ' + r.to + '.'; }); } });
+    var sendBtn = el('button', { class: 'on', text: 'Send to everyone now', onclick: function () { if (!confirm('Send this email to everyone now?')) return; var b = opts(); b.confirm = true; post('/site/weekly/send', b, info, sendBtn).then(function (r) { if (r.ok) { info.textContent = r.background ? 'Sending to ' + r.total + ' people now. See "Sent emails" below in a few minutes.' : 'Sent to ' + r.sent + ' of ' + r.total + '.'; sent(); } }); } });
+    [kind, lang].forEach(function (x) { x.onchange = load; });
+    sw.appendChild(el('div', { class: 'card' }, [el('label', {}, ['Edition ', kind]), note, el('div', { hidden: '' }, [subj, msgBox]), joke,
+      el('div', { class: 'row' }, [el('button', { text: 'Update', onclick: load }), lang, see]), info,
+      el('div', { class: 'row' }, [testTo, testBtn, sendBtn]), testOut]));
+    // Every week by itself.
+    var autoOn = el('input', { type: 'checkbox' }); autoOn.style.width = 'auto';
+    var autoDay = el('select', {}, ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].map(function (d, i) { return el('option', { value: String(i), text: d }); }));
+    var autoHour = el('select', {}, [7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map(function (h) { return el('option', { value: String(h), text: (h > 12 ? h - 12 : h) + (h >= 12 ? ' PM' : ' AM') }); })), autoOut = el('div', { class: 'small' });
+    var saveAuto = function () { api('POST', '/site/weekly/auto', { on: autoOn.checked, day: autoDay.value, hour: autoHour.value }).then(function (r) { autoOut.textContent = r.ok ? (r.on ? 'On: it goes out by itself every ' + autoDay.options[autoDay.selectedIndex].text + ' at ' + autoHour.options[autoHour.selectedIndex].text + ' (Lafayette time), with the holiday edition when a holiday is near.' : 'Off: send it with the button.') : 'Could not save.'; }); };
+    [autoOn, autoDay, autoHour].forEach(function (x) { x.onchange = saveAuto; });
+    api('GET', '/site/weekly/auto').then(function (a) { if (a._status !== 200) return; autoOn.checked = !!a.on; autoDay.value = String(a.day); autoHour.value = String(a.hour); autoOut.textContent = a.on ? 'On.' : 'Off: send it with the button.'; });
+    sw.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'Send it by itself every week' }), el('div', { class: 'small', text: 'Written fresh each week from the website. Any word you want to add, send it with the button that week instead (everyone gets one email a week).' }), el('label', {}, [autoOn, ' On']), el('div', { class: 'row' }, [autoDay, autoHour]), autoOut]));
+    // Sent emails: how many got it, opened it, clicked; the most clicked links.
+    var sentBox = el('div');
+    var sent = function () { api('GET', '/site/email/campaigns').then(function (r) { sentBox.textContent = ''; if (r._status !== 200) return; if (!r.items.length) sentBox.appendChild(el('p', { class: 'small', text: 'Nothing sent yet.' }));
+      r.items.forEach(function (c) { var pct = function (n) { return c.sent ? Math.round(100 * n / c.sent) + '%' : '0%'; };
+        sentBox.appendChild(el('div', { class: 'card' }, [el('strong', { text: c.subject }), el('div', { class: 'small', text: new Date(c.created_at).toLocaleString() + (c.auto ? ' · sent by itself' : '') + (c.done_at ? '' : ' · still sending') }),
+          el('div', { class: 'row em-stats' }, [['Sent', c.sent + ' of ' + c.total], ['Opened', c.opened + ' (' + pct(c.opened) + ')'], ['Clicked', c.clicked + ' (' + pct(c.clicked) + ')']].concat(c.failed ? [['Failed', String(c.failed)]] : []).map(function (x) { return el('div', {}, [el('b', { text: x[1] }), el('span', { text: x[0] })]); })),
+          c.links.length ? el('div', { class: 'small', text: 'Most clicked: ' + c.links.map(function (l) { return l.url + ' (' + l.n + ')'; }).join(' · ') }) : null])); }); }); };
+    sw.appendChild(el('h3', { text: 'Sent emails' })); sw.appendChild(sentBox); sent();
+    // Subscribers.
+    var subBox = el('div'), subQ = el('input', { type: 'search', placeholder: 'Find a name or email' }), subAll = [];
+    var drawSubs = function () { var q = subQ.value.toLowerCase(); subBox.textContent = ''; subAll.filter(function (s) { return !q || (s.email + ' ' + (s.name || '')).toLowerCase().indexOf(q) >= 0; }).slice(0, 200).forEach(function (s) {
+      subBox.appendChild(el('div', { class: 'card' }, [el('strong', { text: s.name || s.email }), el('span', { class: 'pill', text: s.status }), el('span', { class: 'pill', text: { en: 'English', he: 'Hebrew', ru: 'Russian' }[s.lang] || s.lang }),
+        el('div', { class: 'small', text: (s.name ? s.email + ' · ' : '') + 'from ' + (s.source || '?') + (s.created_at ? ' · ' + new Date(s.created_at).toLocaleDateString() : '') + ' · got ' + s.got + ', opened ' + s.opened + ', clicked ' + s.clicked }),
+        s.status !== 'unsubscribed' ? el('button', { text: 'Remove', onclick: function () { if (confirm('Remove ' + s.email + ' from the weekly email?')) api('DELETE', '/site/email/subscribers/' + encodeURIComponent(s.email)).then(subs); } }) : null])); }); };
+    var subInfo = el('div', { class: 'small' });
+    var subs = function () { api('GET', '/site/email/subscribers').then(function (r) { if (r._status !== 200) return; subAll = r.items; subInfo.textContent = r.confirmed + ' signed up · ' + r.pending + ' waiting to confirm · ' + r.unsubscribed + ' unsubscribed'; drawSubs(); }); };
+    subQ.oninput = drawSubs;
+    var addEmail = el('input', { type: 'email', placeholder: 'Email' }), addName = el('input', { placeholder: 'Name' }), addLang = el('select', {}, [['en', 'English'], ['he', 'Hebrew'], ['ru', 'Russian']].map(function (o) { return el('option', { value: o[0], text: o[1] }); })), addOut = el('div', { class: 'small' });
+    var addBtn = el('button', { text: 'Add', onclick: function () { post('/site/email/subscribers', { email: addEmail.value, name: addName.value, lang: addLang.value }, addOut, addBtn).then(function (r) { if (r.ok) { addOut.textContent = 'Added.'; addEmail.value = addName.value = ''; subs(); } }); } });
+    var remindOut = el('div', { class: 'small' }), remindBtn = el('button', { text: 'Ask the unconfirmed again', onclick: function () { post('/site/email/subscribers/remind', {}, remindOut, remindBtn).then(function (r) { if (r.ok) remindOut.textContent = 'Asked ' + r.sent + ' people to confirm.'; }); } });
+    sw.appendChild(el('h3', { text: 'Subscribers' }));
+    sw.appendChild(el('div', { class: 'card' }, [subInfo, el('div', { class: 'small', text: 'Add someone who asked you in person (they are signed up at once):' }), el('div', { class: 'row' }, [addName, addEmail, addLang, addBtn]), addOut,
+      el('div', { class: 'row' }, [el('a', { href: '/admin/api/site/email/subscribers.csv', text: 'Download all (CSV)' }), remindBtn]), remindOut, subQ, subBox]));
+    subs();
     load();
     // The same week as a WhatsApp message for the community groups (pick the language, copy or open WhatsApp).
     var waText = el('textarea', { rows: '12' }), waLang = el('select', {}, [['en', 'English'], ['he', 'Hebrew'], ['ru', 'Russian']].map(function (o) { return el('option', { value: o[0], text: o[1] }); }));

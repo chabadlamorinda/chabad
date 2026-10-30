@@ -5,6 +5,7 @@
 function createMailer({ url, from }) {
   if (!url || !from) return null;
   const transport = require('nodemailer').createTransport(url);
-  return { from, send: ({ to, subject, text }) => transport.sendMail({ from, to, subject, text }) };
+  // html (optional): a designed version shown by email programs that can; headers: e.g. List-Unsubscribe.
+  return { from, send: ({ to, subject, text, html, headers }) => transport.sendMail({ from, to, subject, text, ...(html ? { html } : {}), ...(headers ? { headers } : {}) }) };
 }
 module.exports = { createMailer };

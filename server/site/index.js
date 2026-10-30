@@ -142,7 +142,16 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
         .then((x) => { if (!x.ok && x.status !== 202) log.error('IndexNow: HTTP ' + x.status); }, (e) => log.error('IndexNow:', e && e.message));
     }, 30e3).unref();
   }
-  const weekly = mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log, upcoming: () => pages.upcoming() });
+  const weekly = mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log, limit, notifyTo: env.ADMIN_EMAIL || '', auto: !!reminders, upcoming: (C) => pages.upcoming(new Date(), C) });
+  // /subscribe: what the weekly email brings, and the sign-up box.
+  r.get('/subscribe', wrap(async (req, res) => {
+    const X = ctxOf(req), t = X.t, items = [['shabbat-candles', 'Shabbat times', 'Candle lighting and Havdalah for Lafayette, Moraga and Orinda.'], ['torah-scroll', "This week's Torah portion", 'The parsha in two minutes, with a lesson for today.'], ['calendar', 'Upcoming events', 'Shabbat dinners, holidays, classes and programs, with one-tap RSVP.'], ['open-book', 'Something to read', 'Guides for the week\'s holidays and Jewish dates, and more.'], ['hands-heart', 'A mitzvah and a smile', 'One good deed to try, the question of the week and a joke.'], ['menorah', 'Holiday editions', 'Before every holiday: the dates, times, events and how to celebrate.']];
+    await pages.render(res, { path: '/subscribe', title: t('Get the weekly email'), description: t('The free weekly email from Chabad of Lamorinda: Shabbat times for Lafayette, Moraga and Orinda, events, the Torah portion and more, in English, Hebrew or Russian.'),
+      body: `<section class="wrap sec narrow"><p class="eyebrow hand">${esc(t('Every week, free'))}</p><h1>${esc(t('Get the weekly email'))}</h1><p class="lead-d">${esc(t('Everything Jewish in Lamorinda, once a week, in your language. Unsubscribe any time.'))}</p>
+<form class="nl-form big" data-subscribe="page" novalidate><label for="nl-page-name">${esc(t('Your name'))}</label><input id="nl-page-name" name="name" autocomplete="name"><label for="nl-page">${esc(t('Email'))}</label><input id="nl-page" type="email" name="email" autocomplete="email" required><button class="btn gold" type="submit">${esc(t('Sign me up'))}</button><p class="nl-msg" role="status" aria-live="polite"></p></form>
+<h2>${esc(t('What you get'))}</h2><div class="grid">${items.map(([a, h, d]) => `<div class="card tile has-art">${require('./art.js').artImg(a)}<h3>${esc(t(h))}</h3><p>${esc(t(d))}</p></div>`).join('')}</div>
+<p class="muted">${esc(t('We never share your email.'))} <a href="/privacy">${esc(t('Privacy'))}</a> · <a href="/this-week">${esc(t('See this week'))}</a></p></section>` });
+  }));
   const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, notifyTo: env.ADMIN_EMAIL || '', townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   if (reminders && mail) mail.start();
   // Account page: the form is drawn by site.js from /api/site/me.

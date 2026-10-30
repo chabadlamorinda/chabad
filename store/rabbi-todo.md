@@ -10,7 +10,7 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 ## At a computer
 1. **Database** (needed for sign-in, RSVPs, the Rabbi area lists and "Requests from the website"). Free at neon.tech; paste one code into Render as `DATABASE_URL`. Skip if already done; Claude will check.
 2. **Password for the Rabbi area** (`ADMIN_PASSWORD` in Render). Skip if you already sign in at /admin.
-3. **Email sending** (`SMTP_URL`, `MAIL_FROM`): sign-in codes, RSVP confirmations, and the emails to you about mezuzah / tefillin / giving / meeting requests. Uses your Google account (an "App Password").
+3. **Email sending** (`SMTP_URL`, `MAIL_FROM`): sign-in codes, RSVP confirmations, the emails to you about mezuzah / tefillin / giving / meeting requests, and **the weekly email** (everyone who signs up on the website). Uses your Google account (an "App Password"). A regular Gmail account can send about 500 emails a day, Google Workspace about 2,000; when the list grows past that, Claude will move it to a free-tier email service. After this is set up: Rabbi area → Website → Weekly email → "Ask the unconfirmed again" (people who signed up before sending worked), "Send me a test", and turn on "Send it by itself every week" if you like.
 4. **Where your notifications go** (`ADMIN_EMAIL` in Render): the email address that should receive requests and form submissions.
 5. **AI answers in the chat** (`ANTHROPIC_API_KEY`), **costs money but little**: create a key at console.anthropic.com, add a payment method, and set a monthly spending limit there. Without it the chat stays free and answers from the website.
 6. **Facebook and Instagram** (`FB_PAGE_ID`, `FB_PAGE_TOKEN`, `IG_USER_ID`): photos from your page on the website, and one-button posting of events.
