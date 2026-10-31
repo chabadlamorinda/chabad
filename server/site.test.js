@@ -300,6 +300,18 @@ test('every guide has a fitting picture, and guides show as picture cards wherev
   assert.match((await c.call('GET', '/sitemap.xml')).text, /<image:loc>[^<]+\/media\/photos\/[a-z-]+\.jpg<\/image:loc>/);
 });
 
+test('what people read and search: searches that found nothing come first in the Rabbi area', async () => {
+  const g = client(), a = await admin();
+  await g.call('GET', '/search?q=' + encodeURIComponent('Qwxzvbn'));
+  await g.call('GET', '/search?q=mezuzah');
+  await new Promise((ok) => setTimeout(ok, 50));
+  const r = (await a.call('GET', '/admin/api/site/reading')).json;
+  assert.ok(r.missed.some((x) => x.q === 'qwxzvbn' && x.n >= 1), 'the search that found nothing is listed');
+  assert.ok(!r.missed.some((x) => x.q === 'mezuzah')); assert.ok(r.top.some((x) => x.q === 'mezuzah'));
+  assert.equal(typeof r.guidesTotal, 'number');
+  assert.equal((await g.call('GET', '/admin/api/site/reading')).status, 401);
+});
+
 test('old Chabad.org addresses redirect to the new pages', async () => {
   const c = client();
   for (const [from, to] of [['/3186196', '/programs/hebrew-school'], ['/templates/section_cdo/aid/5180613/jewish/Lamorinda-Jewish-Preschool.htm', '/programs/jewish-preschool'], ['/article.asp?aid=3186877', '/programs/hebrew-school'], ['/4970020', '/donate']]) {

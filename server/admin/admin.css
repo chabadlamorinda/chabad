@@ -59,3 +59,7 @@ button.quiet,a.quiet{border-color:#d7c3a3;color:#7d5411;background:#fff}
 .tiles .tile:hover{border-color:#b68235}.tiles .tile strong{font-size:18px;font-weight:400;color:#7d5411}.tiles .tile span{font-size:13px;color:#605d5d;line-height:1.35}
 /* Weekly email: sent, opened, clicked */
 .em-stats{gap:8px;margin:8px 0}.em-stats div{flex:1 1 90px;background:#fff;border:1px solid #eee5d6;border-radius:10px;padding:8px 10px;display:grid}.em-stats b{font:400 20px Georgia,serif;color:#1f7a46}.em-stats span{font-size:12px;color:#605d5d}
+/* What people read and search */
+.rd-row{display:grid;grid-template-columns:minmax(0,1fr) 30% auto;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid #f0ebe3;font-size:15px}
+.rd-row a,.rd-row span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#201f1d}.rd-row i{display:block;height:8px;border-radius:4px;background:#b68235}.rd-row b{font-family:system-ui,sans-serif;font-size:13px;color:#605d5d}
+.rd-row:has(> :nth-child(2):last-child){grid-template-columns:minmax(0,1fr) auto}

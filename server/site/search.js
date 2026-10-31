@@ -54,13 +54,14 @@ function search(C, q, t, limit = 30) {
   return { words, results, answers };
 }
 
-function mountSearch(r, { render, wrap, ctxOf }) {
+function mountSearch(r, { render, wrap, ctxOf, logSearch = null }) {
   r.get('/search', wrap(async (req, res) => {
     const X0 = ctxOf(req), q = String(req.query.q || '').slice(0, 100).trim();
     // Typed in Hebrew or Russian: search that language's pages.
     const script = /[\u0590-\u05ff]/.test(q) ? 'he' : /[\u0400-\u04ff]/.test(q) ? 'ru' : null;
     if (script && script !== X0.lang) return res.redirect(302, '/' + script + '/search?q=' + encodeURIComponent(q));
     const X = X0, t = X.t, { results, answers } = search(X.C, q, t);
+    if (q && logSearch) logSearch(q, X.lang, results.length + answers.length); // what people look for (see reading.js)
     const KIND = { guide: t('Guide'), help: t("We're here for you"), program: t('Program'), holiday: t('Holiday'), event: t('Event'), form: t('Sign up'), tool: t('Tool'), page: '' };
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Search'))}</h1>
 <form class="searchbar" action="/search" role="search"><input type="search" name="q" value="${esc(q)}" placeholder="${esc(t('Search the website'))}" aria-label="${esc(t('Search the website'))}" autofocus><button class="btn gold" type="submit">${esc(t('Search'))}</button></form>

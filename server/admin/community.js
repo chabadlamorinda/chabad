@@ -328,6 +328,22 @@
       });
     });
 
+    // ---- What people read and search (reading.js) ----
+    var sr = section('What people read and search', 'The most-read guides and pages this month, and what people searched for on the website. Searches that found nothing tell us what to write next.', 'Reading');
+    api('GET', '/site/reading').then(function (r) {
+      if (r._status !== 200) { sr.appendChild(el('p', { class: 'small', text: 'Needs the database.' })); return; }
+      var list = function (title, items, line) { var c = el('div', { class: 'card' }, [el('strong', { text: title })]); if (!items.length) c.appendChild(el('div', { class: 'small', text: 'Nothing yet.' })); items.forEach(function (x) { c.appendChild(line(x)); }); sr.appendChild(c); };
+      var bar = function (label, n, max, href) { return el('div', { class: 'rd-row' }, [href ? el('a', { href: href, target: '_blank', rel: 'noopener', text: label }) : el('span', { text: label }), el('i', { style: 'width:' + Math.max(4, Math.round(100 * n / (max || 1))) + '%' }), el('b', { text: String(n) })]); };
+      var gmax = r.guides.length ? r.guides[0].n : 1, pmax = r.pages.length ? r.pages[0].n : 1;
+      list('Searches that found nothing (last 90 days)', r.missed, function (x) { return el('div', { class: 'rd-row' }, [el('span', { text: '“' + x.q + '”' + (x.lang !== 'en' ? ' (' + { he: 'Hebrew', ru: 'Russian' }[x.lang] + ')' : '') }), el('b', { text: x.n + '×' })]); });
+      if (r.missed.length) sr.appendChild(el('p', { class: 'small', text: 'Tell Claude "write guides for the missed searches" and they become new guides.' }));
+      list('Most-read guides (last 30 days)', r.guides, function (x) { return bar(x.title, x.n, gmax, x.path); });
+      sr.appendChild(el('p', { class: 'small', text: r.unread + ' of ' + r.guidesTotal + ' guides were not opened this month.' }));
+      list('Most-visited pages (last 30 days)', r.pages, function (x) { return bar(x.path, x.n, pmax, x.path); });
+      list('What people search for (last 30 days)', r.top, function (x) { return el('div', { class: 'rd-row' }, [el('span', { text: x.q }), el('b', { text: x.n + '×' })]); });
+      sr.count(r.missed.length);
+    });
+
     // ---- Birthdays ----
     var s4 = section('Birthdays & anniversaries (next 30 days)', '', 'Birthdays');
     api('GET', '/site/birthdays?days=30').then(function (b) {
@@ -340,7 +356,7 @@
     });
 
     // Things to act on first, then the tools, then the setup checklist (the menu at the top follows the same order).
-    ['requests', 'approve', 'reach-out', 'sign-ups', 'campaign', 'rsvps', 'visitors', 'birthdays', 'social', 'email', 'ask-the-rabbi', 'chat', 'setup'].forEach(function (id) {
+    ['requests', 'approve', 'reach-out', 'sign-ups', 'campaign', 'rsvps', 'visitors', 'reading', 'birthdays', 'social', 'email', 'ask-the-rabbi', 'chat', 'setup'].forEach(function (id) {
       var sec = document.getElementById(id), chip = jump.querySelector('a[href="#' + id + '"]');
       if (sec) app.appendChild(sec); if (chip) jump.appendChild(chip);
     });
