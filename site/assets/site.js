@@ -143,6 +143,23 @@
     });
   }
 
+  // "Welcome back": the last guide read on this phone (and the one it suggests next) on the home page, for 45 days.
+  (function () {
+    var bare = function (p) { return String(p || '').replace(/^\/(he|ru)(?=\/)/, ''); }, here = bare(location.pathname);
+    if (/^\/learn\/[a-z0-9-]+$/.test(here)) {
+      var h1 = $('h1'), rn = $('.rn-main'), rt = rn && rn.querySelector('strong'), ph = $('.page-photo img'), ri = rn && rn.querySelector('img.gc-img');
+      store.set('cl_last', { p: here, t: h1 ? h1.textContent.trim() : '', img: ph ? ph.getAttribute('src').replace(/\.jpg$/, '-sm.jpg') : '', n: rn ? bare(rn.getAttribute('href')) : '', nt: rt ? rt.textContent.trim() : '', nimg: ri ? ri.getAttribute('src') : '', at: Date.now() });
+    }
+    var cont = $('[data-continue]'), last = store.get('cl_last');
+    if (!cont || !last || !last.p || !last.t || Date.now() - last.at > 45 * 864e5) return;
+    var tile = function (href, img, eyebrow, title) { return el('a', { class: 'card tile' + (img ? ' has-photo' : ''), href: P(href) }, [img ? el('img', { class: 'tile-photo', src: img, alt: '', loading: 'lazy', width: '560', height: '380' }) : null, el('p', { class: 'eyebrow', text: eyebrow }), el('h3', { text: title })]); };
+    var links = [tile(last.p, last.img, T('Pick up where you left off'), last.t)];
+    if (last.n && last.nt) links.push(tile(last.n, last.nimg && last.nimg !== last.img ? last.nimg : '', T('Read next'), last.nt)); // never the same photo twice
+    cont.appendChild(el('div', { class: 'sec-h' }, [el('h2', { text: T('Welcome back!') })]));
+    cont.appendChild(el('div', { class: 'grid' }, links));
+    cont.hidden = false;
+  })();
+
   // ---------- RSVP ----------
   var box = $('[data-rsvp]');
   if (box) {

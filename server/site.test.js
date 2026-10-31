@@ -867,6 +867,7 @@ test('email system: sign up from any page, the designed email in each language, 
   const home = (await g.call('GET', '/learn/mezuzah')).text; assert.match(home, /data-subscribe="band"/); assert.match(home, /data-nl-pop/);
   assert.doesNotMatch((await g.call('GET', '/donate')).text, /data-nl-pop/);
   assert.match((await g.call('GET', '/subscribe')).text, /data-subscribe="page"/);
+  assert.match((await g.call('GET', '/')).text, /data-continue hidden/, 'the home page has the place for "Welcome back"');
   // Sign up in Russian: pending until confirmed from the inbox (in Russian), then in the Russian list.
   mails.length = 0;
   assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'nope' })).status, 400);

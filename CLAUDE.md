@@ -103,6 +103,9 @@ All three come from the calendar and events.json (`server/site/yearly.js`).
 ## Accounts: what families can save
 Hebrew names, birthdays, anniversary, family members (with allergies or dietary needs, shown to the Rabbi with RSVPs and pre-filled in kids' forms), yahrzeits, and the dates mezuzahs and tefillin were last checked. From these the site sends yahrzeit, Hebrew birthday, Bar/Bat Mitzvah (18 months ahead) and checking reminders (`server/site/reminders.js`), and gives each family a private calendar link of their Jewish dates. Families can also choose their town and get a Friday candle-lighting email, keep a prayer list (Tehillim names they can renew), and see each child's Bar/Bat Mitzvah Torah portion; a Get started checklist on /account and a nudge after guest RSVPs and forms invite people to set up their account.
 
+## Returning visitors
+"Welcome back!" on the home page (site.js, `cl_last` in the browser only, nothing sent to the server): the last guide read on this phone in the last 45 days, with its photo, and the guide it suggests next.
+
 ## Google Ads (Ad Grants)
 Campaigns live in `store/google-ads/campaigns.json`; `node scripts/google-ads.js` builds `ads.csv` and `keywords.csv` for Google Ads Editor. `npm test` checks Google's character limits and that every ad lands on a working page.
 

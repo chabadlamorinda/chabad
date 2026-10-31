@@ -82,6 +82,7 @@ ${campaignBanner(X)}
   <a class="btn sm ghost" href="/shabbat">${esc(t('Shabbat at Chabad'))} →</a>
   <div class="quick" data-shabbat-quick data-date="${sh.candles ? sh.candles.date : ''}" data-day="${sh.candles ? esc(X.shortDate(sh.candles.date)) : ''}" hidden></div>
 </div></section>
+<section class="wrap sec" data-continue hidden></section>
 <section class="wrap sec" data-for-you hidden></section>
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Coming up and every week'))}</h2><a href="/calendar">${esc(t('Full calendar'))} →</a></div>
