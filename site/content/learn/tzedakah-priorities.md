@@ -2,7 +2,7 @@
 title: Tzedakah Priorities: Who to Give to First
 description: Jewish law's order of giving: family, your own community, the poor of your city, Israel. Giving with dignity, Rambam's eight levels, and giving to all.
 category: Jewish ideas
-related: tzedakah, maaser, pushka, chesed
+related: tzedakah, giving-to-people-who-ask, maaser, pushka, chesed
 local: Questions about tzedakah or maaser in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 There are more good causes than any of us can support. Jewish law does not leave us guessing. It gives a clear, loving order of priorities, and it cares just as much about **how** we give as **to whom**. See [Tzedakah](/learn/tzedakah) for the basics.

@@ -2,7 +2,7 @@
 title: סכסוכי שכנים: חוכמת התורה לחיים זה לצד זה
 description: רעש, עצים, גדרות, חניה, חיות מחמד או גבולות מגרש: מה ההלכה מלמדת על שכנים, איך ליישב סכסוך בטוב, ומתי לשאול את הרב.
 category: Jewish ideas
-related: forgiveness-and-making-peace, business-disputes, lashon-hara, chesed
+related: forgiveness-and-making-peace, being-a-good-neighbor, business-disputes, lashon-hara, chesed
 local: שכנים בלאפייט, מוראגה, אורינדה והאיסט ביי: הרב ישראל לבקובסקי ישמח לעזור לכם למצוא פתרון של שלום. 925-384-7242.
 ---
 "וְאָהַבְתָּ לְרֵעֲךָ כָּמוֹךָ" הוא כלל גדול בתורה, ולפעמים הכי קשה לקיים אותו דווקא עם האנשים שגרים ממש בבית הסמוך. בהלכה יש פרק שלם על שכנים, שנכתב הרבה לפני ועדי שכונה ותקנות עירוניות.

@@ -2,7 +2,7 @@
 title: הוזמנתם לסעודת שבת? מה להביא ולמה לצפות
 description: מדריך ידידותי לאורחים בסעודת שבת: מה להביא כמתנה, מתי להגיע, מה ללבוש, ומה קורה ליד השולחן.
 category: Shabbat & holidays
-related: shabbat-meals, shabbat-for-beginners, kiddush, hachnasat-orchim
+related: shabbat-meals, hosting-your-first-shabbat-dinner, shabbat-for-beginners, kiddush, hachnasat-orchim
 local: הרב ישראל והרבנית ציפורה לבקובסקי מארחים סעודות שבת בלאפייט בכל שבוע בשנה. הודיעו לנו שאתם מגיעים ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 אם הוזמנתם לסעודת שבת, המתנה הטובה ביותר היא משהו סגור וכשר, כמו בקבוק יין כשר, קופסת שוקולדים עם הכשר, או פרחים שנשלחים לפני שבת. תכננו להגיע לפני השקיעה ביום שישי, ובואו מוכנים ליהנות מסעודה רגועה וחגיגית עם ברכות, שירה ושיחה טובה.

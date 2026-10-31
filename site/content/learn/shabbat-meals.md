@@ -2,7 +2,7 @@
 title: The Three Shabbat Meals: Customs, Order and What to Serve
 description: What the three Shabbat meals are, the order of a Friday night dinner, the blessings over wine and challah, songs, and traditional Shabbat foods.
 category: Shabbat & holidays
-related: kiddush, zemirot, cholent, challah, shabbat, hachnasat-orchim
+related: kiddush, hosting-your-first-shabbat-dinner, zemirot, cholent, challah, shabbat, hachnasat-orchim
 local: Join us for a Shabbat meal or request one delivered at chabadoflamorinda.com/forms/shabbat-meal, or call 925-384-7242.
 ---
 On Shabbat, it is a mitzvah to eat three festive meals: Friday night dinner, Shabbat lunch, and a third meal in the late afternoon. Each begins with challah, and the first two begin with Kiddush over wine.

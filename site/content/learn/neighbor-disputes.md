@@ -2,7 +2,7 @@
 title: Neighbor Disputes: Torah Wisdom for Living Side by Side
 description: Noise, trees, fences, parking, pets or property lines: what Jewish law teaches about neighbors, how to settle a dispute kindly, and when to ask the Rabbi.
 category: Jewish ideas
-related: forgiveness-and-making-peace, business-disputes, lashon-hara, chesed
+related: forgiveness-and-making-peace, being-a-good-neighbor, business-disputes, lashon-hara, chesed
 local: Neighbors in Lafayette, Moraga, Orinda and the East Bay: Rabbi Yisroel Labkowski is glad to help you find a peaceful solution. 925-384-7242.
 ---
 "Love your neighbor as yourself" is a great principle of the Torah, and sometimes it is hardest with the people who actually live next door. Jewish law has a whole section on neighbors, written long before HOAs and city codes.

@@ -2,7 +2,7 @@
 title: Netilat Yadayim: How to Wash Hands the Jewish Way
 description: What netilat yadayim is, how to wash hands with a cup step by step, the blessing in Hebrew and English, and when Jewish law calls for washing.
 category: Prayer & Torah
-related: blessings, challah, modeh-ani, birkat-hamazon
+related: blessings, jewish-morning-routine, challah, modeh-ani, birkat-hamazon
 local: Want a washing cup for your home, or a hand learning any blessing? Call Rabbi Labkowski at 925-384-7242.
 ---
 Netilat yadayim is the Jewish ritual of washing the hands with a cup. It is not about getting clean, since the hands should already be clean; it is a moment of spiritual preparation, done before eating bread, after waking up and at a few other times.

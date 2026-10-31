@@ -2,7 +2,7 @@
 title: Invited for Shabbat Dinner? What to Bring and What to Expect
 description: A friendly guide for Shabbat dinner guests: what to bring as a gift, when to arrive, what to wear, and what happens at the table.
 category: Shabbat & holidays
-related: shabbat-meals, shabbat-for-beginners, kiddush, hachnasat-orchim
+related: shabbat-meals, hosting-your-first-shabbat-dinner, shabbat-for-beginners, kiddush, hachnasat-orchim
 local: Rabbi Yisroel and Tzipora Labkowski host Shabbat dinners in Lafayette any week of the year. Let us know you are coming at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 If you are invited to a Shabbat dinner, the best gift is something sealed and kosher, like a bottle of kosher wine, a box of chocolates with a kosher symbol, or flowers delivered before Shabbat. Plan to arrive before sunset on Friday, and come ready to enjoy a relaxed, festive meal with blessings, singing and good conversation.
