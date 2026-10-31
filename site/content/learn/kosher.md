@@ -2,7 +2,7 @@
 title: What Is Kosher? A Simple Guide to Jewish Dietary Laws
 description: What kosher means, which foods are kosher, why meat and dairy are kept apart, and how to start keeping kosher, explained in plain English.
 category: Kosher
-related: kosher-kitchen, kosher-symbols, blessings, 613-mitzvot
+related: kosher-kitchen, keeping-kosher-with-family, kosher-symbols, blessings, 613-mitzvot
 local: We help people learn about kosher, answer questions about products and kitchens, and can guide you step by step. Call 925-384-7242.
 ---
 Kosher food is food that meets the requirements of Jewish law as set out in the Torah. It is not a style of cooking or a blessing a rabbi says over food: it is about which foods we eat, how animals are slaughtered, and keeping meat and dairy separate.

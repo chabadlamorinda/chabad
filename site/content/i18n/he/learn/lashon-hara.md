@@ -2,7 +2,7 @@
 title: לשון הרע: הלכות רכילות ודיבור טוב ביהדות
 description: מהי לשון הרע, למה דיבור שלילי אסור גם כשהוא נכון, מתי מותר לשתף מידע, ודרכים מעשיות לשמור על הלשון.
 category: Jewish ideas
-related: chesed, technology-and-screens-jewish-view, teshuvah, shalom-bayit, 613-mitzvot
+related: chesed, giving-criticism-kindly, technology-and-screens-jewish-view, teshuvah, shalom-bayit, 613-mitzvot
 local: הצטרפו לשיעור תורה על מוסר ומידות ביהדות ב-chabadoflamorinda.com/programs/adult-education, או התקשרו 925-384-7242.
 ---
 לשון הרע פירושה "דיבור רע": לומר משהו שלילי על אדם אחר, גם כשהוא נכון. התורה אוסרת אותה, יחד עם רכילות והוצאת שם רע, כי למילים יש כוח לפגוע באנשים, להרוס קשרים ולפלג קהילות.

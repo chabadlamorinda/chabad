@@ -79,6 +79,7 @@ const PHOTOS = {
 // A photo for every guide: the page's own photo if it has one (PHOTOS), otherwise the first rule here that matches
 // its address, otherwise its subject's photo. Photos missing from site/media/photos are skipped (the drawing is used).
 const GUIDE_PHOTOS = [
+  [/keeping-kosher-with-family/, ['family-table', 'cooking-kitchen']], [/shabbat-alone/, ['shabbat-table', 'memorial-candle']], [/^patience$/, ['walking-path', 'grandparents']], [/giving-criticism/, ['couple-talking', 'walking-path']],
   [/blessing-your-children/, ['family-table', 'shabbat-dinner']], [/blessings-on-nature/, ['tree-nature', 'sunrise-sky', 'water-ripples']], [/birkat-hagomel/, ['sunrise-sky', 'caring-hands']], [/making-every-day-count/, ['walking-path', 'sunrise-sky']],
   [/chanukah-foods|sufganiyot/, 'sufganiyot'], [/dreidel/, 'dreidel-kids'], [/chanukah-for-kids|hosting-a-chanukah/, 'family-menorah'], [/chanukah|menorah|gelt|al-hanissim|kislev/, ['menorah-glow', 'chanukah-lighting', 'family-menorah', 'chanukah-donuts']],
   [/rosh-hashanah-simanim/, 'pomegranate'], [/shofar/, 'shofar'], [/rosh-hashanah|elul|selichot|tashlich/, ['apples-honey', 'pomegranate', 'shofar']],

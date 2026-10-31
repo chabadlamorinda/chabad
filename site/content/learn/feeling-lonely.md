@@ -2,7 +2,7 @@
 title: Feeling Lonely: Finding Connection and Community
 description: Loneliness touches people of every age. Jewish wisdom on connection, simple steps to find friends and community, and a warm welcome at Chabad of Lamorinda.
 category: Jewish ideas
-related: shabbat-guest-guide, jewish-friendship, jewish-seniors-in-lamorinda, young-professionals-in-lamorinda, mental-health-jewish-view
+related: shabbat-guest-guide, shabbat-alone, jewish-friendship, jewish-seniors-in-lamorinda, young-professionals-in-lamorinda, mental-health-jewish-view
 local: Lonely or new in Lafayette, Moraga, Orinda or nearby? Come for Shabbat, a class or a holiday at Chabad of Lamorinda, or call 925-384-7242 for a friendly chat.
 ---
 After a move, a divorce, the loss of a spouse, retirement, or simply a busy life, many people feel lonely. You are not alone in feeling alone, and Judaism has always been a religion of community.

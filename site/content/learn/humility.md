@@ -2,7 +2,7 @@
 title: Humility: What Being Humble Really Means in Judaism
 description: Jewish teachings on humility: Moses the humblest of men, why humility is not low self-esteem, the Chassidic idea of bittul, and practical steps.
 category: Jewish ideas
-related: chassidus, pirkei-avot, anger-jewish-view, hakarat-hatov
+related: chassidus, patience, pirkei-avot, anger-jewish-view, hakarat-hatov
 local: Want to learn Chassidus or Pirkei Avot in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 "Be very, very humble" (Ethics of the Fathers 4:4). Humility, **anavah** in Hebrew, is one of the most valued traits in Judaism. But it is often misunderstood. Being humble does not mean thinking you are worthless. It means seeing yourself, and everyone else, truthfully.

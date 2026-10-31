@@ -2,7 +2,7 @@
 title: חותנים וחמים: לבנות קשר טוב בדרך היהודית
 description: חוכמה יהודית להסתדרות עם ההורים של בן או בת הזוג: לכבד אותם, לשים את הנישואין במקום הראשון, חגים ונכדים, והתמודדות עם מתח בחסד.
 category: Jewish home
-related: shalom-bayit, marriage-arguments-jewish-wisdom, honoring-parents, jewish-grandparents
+related: shalom-bayit, keeping-kosher-with-family, marriage-arguments-jewish-wisdom, honoring-parents, jewish-grandparents
 local: זוגות והורים בלאפייט, מוראגה, אורינדה והאיסט ביי יכולים לשוחח בפרטיות עם הרב ישראל או הרבנית ציפורה לבקובסקי: 925-384-7242.
 ---
 כששני אנשים מתחתנים, שתי משפחות מתחברות. החותנים והחמים יכולים להיות ברכה גדולה, עוד אהבה, עוד חוכמה, ועוד סבא וסבתא לילדים, והם יכולים להיות גם מקור למתח. המסורת היהודית נותנת הדרכה ברורה לשני הצדדים.

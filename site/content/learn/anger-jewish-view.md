@@ -2,7 +2,7 @@
 title: Anger: Jewish Wisdom for Calming Down and Making Things Right
 description: What Judaism teaches about anger: why the sages compare it to idol worship, Maimonides' advice, practical ways to calm down, and anger as a parent.
 category: Jewish ideas
-related: forgiveness-and-making-peace, shalom-bayit, marriage-arguments-jewish-wisdom, jewish-parenting
+related: forgiveness-and-making-peace, patience, shalom-bayit, marriage-arguments-jewish-wisdom, jewish-parenting
 local: Struggling with anger at home or at work? Rabbi Yisroel and Rebbetzin Tzipora Labkowski in Lafayette are glad to talk: 925-384-7242.
 ---
 Everyone gets angry sometimes. Judaism does not pretend otherwise. But it takes anger very seriously, because a few angry moments can undo years of love, and because anger changes who we are while it lasts.

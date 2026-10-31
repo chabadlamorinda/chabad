@@ -2,7 +2,7 @@
 title: Шабат для начинающих: как начать соблюдать Шабат
 description: Простое пошаговое руководство к вашему первому Шабату: свечи, Кидуш, хала, трапеза, отдых и Авдала, понемногу шаг за шагом.
 category: Shabbat & holidays
-related: shabbat, kabbalat-shabbat, shabbat-candles, kiddush, havdalah
+related: shabbat, shabbat-alone, kabbalat-shabbat, shabbat-candles, kiddush, havdalah
 local: Приходите к нам на шабатнюю трапезу или попросите помочь вам начать: chabadoflamorinda.com/forms/shabbat-meal или по телефону 925-384-7242.
 ---
 Шабат - это еврейский день отдыха, от времени незадолго до захода солнца в пятницу до наступления ночи в субботу. Не нужно делать все сразу: начните с одной-двух частей, например с зажигания свечей и пятничной трапезы, и добавляйте постепенно.

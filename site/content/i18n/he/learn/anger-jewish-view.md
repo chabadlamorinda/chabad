@@ -2,7 +2,7 @@
 title: כעס: חוכמה יהודית להירגע ולתקן
 description: מה היהדות מלמדת על כעס: למה חז״ל משווים אותו לעבודה זרה, העצה של הרמב״ם, דרכים מעשיות להירגע, וכעס של הורים.
 category: Jewish ideas
-related: forgiveness-and-making-peace, shalom-bayit, marriage-arguments-jewish-wisdom, jewish-parenting
+related: forgiveness-and-making-peace, patience, shalom-bayit, marriage-arguments-jewish-wisdom, jewish-parenting
 local: מתמודדים עם כעס בבית או בעבודה? הרב ישראל והרבנית ציפורה לבקובסקי בלאפייט ישמחו לדבר: 925-384-7242.
 ---
 כל אחד כועס לפעמים. היהדות לא מעמידה פנים שזה אחרת. אבל היא מתייחסת לכעס ברצינות רבה, כי כמה רגעים של כעס יכולים להרוס שנים של אהבה, וכי הכעס משנה את מי שאנחנו כל זמן שהוא נמשך.

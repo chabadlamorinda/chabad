@@ -2,7 +2,7 @@
 title: שבת למתחילים: איך מתחילים לשמור שבת
 description: מדריך פשוט, שלב אחר שלב, לשבת הראשונה שלכם: נרות, קידוש, חלה, הסעודה, מנוחה והבדלה, צעד קטן אחד בכל פעם.
 category: Shabbat & holidays
-related: shabbat, kabbalat-shabbat, shabbat-candles, kiddush, havdalah
+related: shabbat, shabbat-alone, kabbalat-shabbat, shabbat-candles, kiddush, havdalah
 local: הצטרפו אלינו לסעודת שבת או בקשו עזרה בצעדים הראשונים ב-chabadoflamorinda.com/forms/shabbat-meal, או התקשרו 925-384-7242.
 ---
 שבת היא יום המנוחה היהודי, מעט לפני השקיעה ביום שישי ועד צאת הכוכבים במוצאי שבת. לא צריך לעשות הכול בבת אחת: התחילו בחלק אחד או שניים, כמו הדלקת נרות וסעודת ליל שבת משותפת, והוסיפו עוד עם הזמן.

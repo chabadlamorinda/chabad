@@ -2,7 +2,7 @@
 title: In-Laws: Building a Good Relationship the Jewish Way
 description: Jewish wisdom for getting along with in-laws: honoring them, putting your marriage first, holidays and grandchildren, and handling tension with kindness.
 category: Jewish home
-related: shalom-bayit, marriage-arguments-jewish-wisdom, honoring-parents, jewish-grandparents
+related: shalom-bayit, keeping-kosher-with-family, marriage-arguments-jewish-wisdom, honoring-parents, jewish-grandparents
 local: Couples and parents in Lafayette, Moraga, Orinda and the East Bay can talk privately with Rabbi Yisroel or Rebbetzin Tzipora Labkowski: 925-384-7242.
 ---
 When two people marry, two families join. In-laws can be a great blessing, extra love, wisdom and grandparents for the children, and they can also be a source of tension. Jewish tradition gives clear guidance on both sides.

@@ -2,7 +2,7 @@
 title: Lashon Hara: The Jewish Laws of Gossip and Kind Speech
 description: What lashon hara is, why negative speech is forbidden even when true, when sharing information is allowed, and practical ways to guard your tongue.
 category: Jewish ideas
-related: chesed, technology-and-screens-jewish-view, teshuvah, shalom-bayit, 613-mitzvot
+related: chesed, giving-criticism-kindly, technology-and-screens-jewish-view, teshuvah, shalom-bayit, 613-mitzvot
 local: Join a Torah class on Jewish ethics and character at chabadoflamorinda.com/programs/adult-education, or call 925-384-7242.
 ---
 Lashon hara means "evil speech": saying something negative about another person, even when it is true. The Torah forbids it, along with gossip and slander, because words have the power to hurt people, damage relationships and divide communities.

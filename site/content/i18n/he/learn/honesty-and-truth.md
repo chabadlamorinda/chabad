@@ -2,7 +2,7 @@
 title: יושר ואמת: האמת בחיים היהודיים
 description: למה אמת היא חותמו של ה׳, לעמוד במילה, מתי מותר לשנות מפני השלום, יושר בעסקים ומול ילדים, והודאה בטעות.
 category: Jewish ideas
-related: business-ethics, lashon-hara, humility, teshuvah
+related: business-ethics, giving-criticism-kindly, lashon-hara, humility, teshuvah
 local: רוצים לדבר על מוסר יהודי בלאפייט, מוראגה או אורינדה? התקשרו לרב ישראל לבקובסקי, 925-384-7242.
 ---
 **אמת** נמצאת בלב לבה של היהדות. "חותמו של הקב"ה אמת" (תלמוד, שבת נה ע"א). אדם שחי ביושר נושא את חותמו של ה׳.

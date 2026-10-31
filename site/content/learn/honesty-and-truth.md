@@ -2,7 +2,7 @@
 title: Honesty and Truth: Emet in Jewish Life
 description: Why truth is G-d's seal, keeping your word, when Judaism allows a small change for peace, honesty in business and with children, and admitting mistakes.
 category: Jewish ideas
-related: business-ethics, lashon-hara, humility, teshuvah
+related: business-ethics, giving-criticism-kindly, lashon-hara, humility, teshuvah
 local: Want to talk about Jewish ethics in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 **Emet**, truth, is at the very center of Judaism. "The seal of the Holy One, blessed be He, is truth" (Talmud, Shabbat 55a). A person who lives honestly carries G-d's seal.
