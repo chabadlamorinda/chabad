@@ -907,7 +907,9 @@ test('email system: sign up from any page, the designed email in each language, 
   // The Rabbi's word: approved words go in by themselves (in the Shabbat edition); the email pushes Shabbat, programs,
   // the Chai Club, the Kiddush and a legacy gift, and /legacy explains the legacy gift.
   assert.equal((await a.call('POST', '/admin/api/site/weekly/word', { text: 'Approved words for this Shabbat.' }, H)).json.ok, true);
-  const wk = (await a.call('GET', '/admin/api/site/weekly')).json; assert.equal(wk.word.approved, true); assert.equal(wk.word.text, 'Approved words for this Shabbat.');
+  const wk = (await a.call('GET', '/admin/api/site/weekly')).json; assert.equal(wk.word.approved, true);
+  assert.equal((await a.call('GET', '/admin/api/site/weekly/word')).json.approved, true, 'the desk knows nothing waits');
+  assert.ok((await a.call('GET', '/admin/api/site/setup')).json.items.some((i) => /weekly email goes out by itself/.test(i.label))); assert.equal(wk.word.text, 'Approved words for this Shabbat.');
   const full = (await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat')).text;
   assert.match(full, /Approved words for this Shabbat\./); assert.match(full, /Join us this Shabbat/); assert.match(full, /\/forms\/hebrew-school/); assert.match(full, /\/chai-club/); assert.match(full, /\/sponsor-a-kiddush/); assert.match(full, /\/legacy/);
   assert.doesNotMatch((await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat&note=')).text, /Approved words/, 'an emptied box means no word');

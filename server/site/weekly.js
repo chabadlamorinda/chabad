@@ -284,6 +284,8 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
         await mailer.send({ to, subject: '[Test] ' + m.subject, text: pz.text, html: pz.html });
         res.json({ ok: true, to });
       }));
+      // This week's word and whether it is approved (the Rabbi's desk shows it under "Waiting for you").
+      r2.get('/api/site/weekly/word', authed, wrap(async (req, res) => res.json(await wordFor(await shabbatOf()))));
       // The Rabbi approves this week's word (as written, or with his changes).
       r2.post('/api/site/weekly/word', authed, J, wrap(async (req, res) => {
         const week = await shabbatOf(), text = String((req.body && req.body.text) || '').slice(0, 4000);

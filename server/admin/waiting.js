@@ -7,6 +7,7 @@ window.WAITING = [
   { id: 'approve', path: '/site/submissions', one: 'submission to approve', many: 'submissions to approve', count: function (x) { return (x.items || []).filter(function (i) { return i.status === 'new' || i.status === 'pending'; }).length; } },
   { id: 'reach-out', path: '/site/outreach', one: 'person to reach out to', many: 'people to reach out to', count: function (x) { return (x.items || []).length; } },
   { id: 'campaign', path: '/campaigns', one: 'campaign pledge to follow up', many: 'campaign pledges to follow up', count: function (x) { return (x.campaigns || []).reduce(function (a, c) { return a + (c.pledges || []).filter(function (p) { return p.status === 'pending'; }).length; }, 0); } },
+  { id: 'email', path: '/site/weekly/word', one: 'word for this Shabbat\'s email to read and approve', many: 'words to approve', count: function (x) { return x.draft && !x.approved ? 1 : 0; } },
   { id: 'sign-ups', path: '/site/forms', one: 'new sign-up', many: 'new sign-ups', count: function (x) { return (x.forms || []).reduce(function (a, f) { return a + (f.fresh || 0); }, 0); } },
   { id: 'visitors', path: '/site/visitors', one: 'visitor looking at an important topic', many: 'visitors looking at important topics', count: function (x) { return (x.items || []).filter(function (p) { return p.hot; }).length; } },
 ];
