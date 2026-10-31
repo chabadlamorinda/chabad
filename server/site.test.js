@@ -836,7 +836,7 @@ test('weekly email: preview, send once to subscribers and members, unsubscribe',
   const m = await signIn('member@x.co'); await m.call('PUT', '/api/site/me', { name: 'Member' });
   const a = await admin();
   const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
-  assert.equal(pv.recipients, 2); assert.match(pv.text, /A WORD FROM THE RABBI\nGood Shabbos everyone!/); assert.match(pv.text, /SHABBAT TIMES/); assert.match(pv.text, /WORTH READING THIS WEEK/); assert.match(pv.text, /JOKE OF THE WEEK/);
+  assert.equal(pv.recipients, 2); assert.match(pv.text, /A WORD FROM THE RABBI\nGood Shabbos everyone!/); assert.match(pv.text, /JOIN US THIS SHABBAT/); assert.match(pv.text, /THE PARTNERS WHO MAKE EVERYTHING POSSIBLE/); assert.match(pv.text, /WORTH READING THIS WEEK/); assert.match(pv.text, /JOKE OF THE WEEK/);
   assert.equal((await a.call('POST', '/admin/api/site/weekly/send', {}, { 'x-admin': '1' })).status, 400, 'needs confirmation');
   const wa = (await a.call('GET', '/admin/api/site/weekly/whatsapp?lang=he')).json.text;
   assert.match(wa, /שבת שלום מחב״ד למורינדה/); assert.match(wa, /\/he\/this-week/);
@@ -891,6 +891,14 @@ test('email system: sign up from any page, the designed email in each language, 
   assert.match((await g.call('GET', prefs + '&lang=he')).text, /dir="rtl"/);
   assert.equal((await a.call('GET', '/admin/api/site/email/subscribers')).json.items.find((s) => s.email === 'olga@x.co').lang, 'he');
   assert.match((await a.call('GET', '/admin/api/site/email/subscribers.csv')).text, /olga@x\.co/);
+  // The Rabbi's word: approved words go in by themselves (in the Shabbat edition); the email pushes Shabbat, programs,
+  // the Chai Club, the Kiddush and a legacy gift, and /legacy explains the legacy gift.
+  assert.equal((await a.call('POST', '/admin/api/site/weekly/word', { text: 'Approved words for this Shabbat.' }, H)).json.ok, true);
+  const wk = (await a.call('GET', '/admin/api/site/weekly')).json; assert.equal(wk.word.approved, true); assert.equal(wk.word.text, 'Approved words for this Shabbat.');
+  const full = (await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat')).text;
+  assert.match(full, /Approved words for this Shabbat\./); assert.match(full, /Join us this Shabbat/); assert.match(full, /\/forms\/hebrew-school/); assert.match(full, /\/chai-club/); assert.match(full, /\/sponsor-a-kiddush/); assert.match(full, /\/legacy/);
+  assert.doesNotMatch((await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat&note=')).text, /Approved words/, 'an emptied box means no word');
+  for (const L of ['', '/he', '/ru']) assert.equal((await g.call('GET', L + '/legacy')).status, 200);
   // By itself: off until the Rabbi turns it on; then a day and hour.
   assert.equal((await a.call('GET', '/admin/api/site/weekly/auto')).json.on, false);
   assert.equal((await a.call('POST', '/admin/api/site/weekly/auto', { on: true, day: 4, hour: 10 }, H)).json.on, true);

@@ -48,7 +48,7 @@ const { mountLeads } = require('./leads.js');
 const { mountVisitors } = require('./visitors.js');
 const { mountMitzvah } = require('./mitzvah.js');
 
-function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch, chatClient = undefined }) {
+function mountSite(app, { store = null, mailer = null, secret, limit, log = console, env = process.env, contentDir, facebook = undefined, reminders = false, fetchImpl = fetch, chatClient = undefined, giving = {} }) {
   const base = (env.PUBLIC_URL || 'https://www.chabadoflamorinda.com').replace(/\/+$/, '');
   const host = new URL(base).hostname.replace(/^www\./, '');
   const realDomain = !!env.PUBLIC_URL && !/onrender\.com$|localhost|127\.0\.0\.1/.test(host);
@@ -142,7 +142,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
         .then((x) => { if (!x.ok && x.status !== 202) log.error('IndexNow: HTTP ' + x.status); }, (e) => log.error('IndexNow:', e && e.message));
     }, 30e3).unref();
   }
-  const weekly = mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log, limit, notifyTo: env.ADMIN_EMAIL || '', auto: !!reminders, upcoming: (C) => pages.upcoming(new Date(), C) });
+  const weekly = mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log, limit, notifyTo: env.ADMIN_EMAIL || '', auto: !!reminders, giving, upcoming: (C) => pages.upcoming(new Date(), C) });
   // /subscribe: what the weekly email brings, and the sign-up box.
   r.get('/subscribe', wrap(async (req, res) => {
     const X = ctxOf(req), t = X.t, items = [['shabbat-candles', 'Shabbat times', 'Candle lighting and Havdalah for Lafayette, Moraga and Orinda.'], ['torah-scroll', "This week's Torah portion", 'The parsha in two minutes, with a lesson for today.'], ['calendar', 'Upcoming events', 'Shabbat dinners, holidays, classes and programs, with one-tap RSVP.'], ['open-book', 'Something to read', 'Guides for the week\'s holidays and Jewish dates, and more.'], ['hands-heart', 'A mitzvah and a smile', 'One good deed to try, the question of the week and a joke.'], ['menorah', 'Holiday editions', 'Before every holiday: the dates, times, events and how to celebrate.']];

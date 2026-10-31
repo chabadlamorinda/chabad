@@ -183,7 +183,8 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 
   // The website (pages, accounts, RSVPs, SEO files). Mounted before the app's own "/" redirect below
   // and before /api, whose catch-all would otherwise answer /api/site.
-  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook, reminders, chatClient, contentDir: siteContentDir });
+  const site = mountSite(app, { store, mailer, secret: sessionSecret, limit, log, env: siteEnv, facebook, reminders, chatClient, contentDir: siteContentDir,
+    giving: { club: () => clubBoard(), kiddush: () => kiddush.board() } }); // the weekly email shows the Chai Club honor board and this week's Kiddush
   app.locals.site = site;
 
   // ---------- API ----------
@@ -385,7 +386,10 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   let clubCache = { at: 0, data: null };
   api.get('/club', limit('club', 60, 10 * 60 * 1000), wrap(async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    if (!stripe) return res.json({ members: [], counts: {}, total: 0 });
+    res.json(await clubBoard());
+  }));
+  async function clubBoard() {
+    if (!stripe) return { members: [], counts: {}, total: 0 };
     if (!clubCache.data || Date.now() - clubCache.at > 5 * 60 * 1000) {
       const members = [], counts = { platinum: 0, gold: 0, silver: 0, bronze: 0 }; let after;
       for (let page = 0; page < 50; page++) {
@@ -402,8 +406,8 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
       members.sort((a, b) => rank(a.level) - rank(b.level) || a.since - b.since);
       clubCache = { at: Date.now(), data: { members, counts, total: Object.values(counts).reduce((a, b) => a + b, 0) } };
     }
-    res.json(clubCache.data);
-  }));
+    return clubCache.data;
+  }
   // ---- community counter (anonymous: only totals) and announcements the Rabbi writes in the staff area ----
   const mem = { days: new Map(), ann: [] }, today = () => require('./scheduler.js').ptParts(new Date()).ymd;
   api.post('/community/coins', limit('community', 90, 10 * 60 * 1000), wrap(async (req, res) => {

@@ -55,6 +55,9 @@ function load(dir = DIR, opts = {}) {
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
   const campaigns = optJson(dir, 'campaigns.json', []);
   const jokes = optJson(dir, 'jokes.json', []); // the weekly email's joke of the week
+  // "A word from the Rabbi" for the weekly email: Claude's draft for each Shabbat (week = the Shabbat's date), in three
+  // languages, waiting for the Rabbi to read and approve (in the Rabbi area, or "approved": true when he approves in chat).
+  const rabbiWords = optJson(dir, 'rabbi-words.json', []);
   const errors = [];
   const need = (cond, msg) => { if (!cond) errors.push(msg); };
 
@@ -89,6 +92,7 @@ function load(dir = DIR, opts = {}) {
   }
   for (const h of help) { uniq('help', h.slug); need(h.title && h.description, `help ${h.slug}: title and description are required`); }
   for (const o of sponsor.occasions.concat(sponsor.options)) need(o.id && o.title, 'sponsor.json: every occasion and option needs id and title');
+  for (const w of rabbiWords) need(/^\d{4}-\d{2}-\d{2}$/.test(w.week || '') && w.text && w.text.trim(), `rabbi-words.json: every entry needs "week" (the Shabbat's date, YYYY-MM-DD) and "text"`);
   for (const x of tehillim.situations) need(x.id && x.title && Array.isArray(x.chapters) && x.chapters.every((n) => Number.isInteger(n) && n >= 1 && n <= 150), `tehillim.json ${x.id}: chapters must be numbers 1 to 150`);
   for (const t of towns) { uniq('town', t.slug); need(t.name && t.intro && Number.isFinite(t.lat) && Number.isFinite(t.lng) && ['home', 'near'].includes(t.tier), `town ${t.slug}: name, intro, lat, lng and tier (home or near) are required`); }
   for (const a of learn) { uniq('learn', a.slug); need(a.title && a.description, `learn ${a.slug}: title and description are required`); need(LEARN_CATEGORIES.includes(a.category), `learn ${a.slug}: category must be one of ${LEARN_CATEGORIES.join(', ')}`); }
@@ -127,7 +131,7 @@ function load(dir = DIR, opts = {}) {
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
   for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, jokes, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, jokes, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

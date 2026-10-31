@@ -24,7 +24,7 @@ const validEmail = (e) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e) && e.length <= 25
 const lower = (e) => String(e || '').trim().toLowerCase().slice(0, 254);
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = console, upcoming = () => [], limit = () => (req, res, next) => next(), notifyTo = '', auto = false, now = () => new Date(), delayMs = 250 }) {
+function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = console, upcoming = () => [], giving = {}, limit = () => (req, res, next) => next(), notifyTo = '', auto = false, now = () => new Date(), delayMs = 250 }) {
   const pool = store && store.pool, q = (t, p) => pool.query(t, p);
   const X = (lang) => ctxOf({ lang: LANGS.includes(lang) ? lang : 'en', method: 'GET', originalUrl: '/', query: {}, get: () => '' });
   const hmac = (what, s) => crypto.createHmac('sha256', secret + ':' + what).update(s).digest('base64url').slice(0, 24);
@@ -93,7 +93,31 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
     const text = m.text.replace(/\{\{unsub\}\}/g, unsubUrl(email)).replace(/\{\{prefs\}\}/g, prefsUrl(email));
     return { html, text };
   }
-  const compose = (lang, opts = {}) => composeEmail(X(lang), { base, upcoming, now: now(), ...opts });
+  // "A word from the Rabbi": Claude writes a draft for each Shabbat (rabbi-words.json, in three languages); it goes out
+  // only once the Rabbi approves it (the Approve button, saved in kv "email-word:<Shabbat date>", or "approved": true
+  // in the file when he approves in chat). If he changes the words, everyone gets his words as he wrote them.
+  // The Shabbat the next email is for: this week's, or from Shabbat day on, the next one.
+  const shabbatOf = async () => {
+    const day = (sh) => (sh.parsha && sh.parsha.date) || (sh.havdalah && sh.havdalah.date) || '';
+    const d = day(await Z.thisShabbat(now())), today = Z.ymd(Z.todayLocal(now()));
+    return d && d <= today ? day(await Z.thisShabbat(new Date(now().getTime() + 864e5))) : d;
+  };
+  async function wordFor(week) {
+    const draft = (content().rabbiWords || []).find((w) => w.week === week) || null;
+    const saved = store && store.getKv ? await store.getKv('email-word:' + week, null).catch(() => null) : null;
+    return { week, draft, approved: !!(saved || (draft && draft.approved)), text: saved ? saved.text : draft ? draft.text : '' };
+  }
+  const wordIn = (L, text, w) => {
+    if (!String(text || '').trim()) return null;
+    const d = w && w.draft;
+    if (d && text.trim() === d.text.trim()) return { title: (d[L] && d[L].title) || d.title || '', text: (d[L] && d[L].text) || d.text };
+    return { title: '', text };
+  };
+  // opts.note: the words in the Rabbi area's box (as he left them); without it (sending by itself), the approved word.
+  const compose = async (lang, opts = {}) => {
+    const w = await wordFor(await shabbatOf()), text = opts.note != null ? opts.note : w.approved ? w.text : '';
+    return composeEmail(X(lang), { base, upcoming, giving, now: now(), ...opts, word: wordIn(lang, text, w) });
+  };
 
   // Send to everyone (or a list). opts: { kind: 'auto'|'shabbat'|'holiday'|'message', note, joke, subject, message, auto }.
   // Each person gets it once per edition and day (email_log), in their language.
@@ -135,6 +159,15 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
     const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: Z.TZ, weekday: 'long', hour: 'numeric', hourCycle: 'h23' }).formatToParts(now()).map((x) => [x.type, x.value]));
     if (DAYS.indexOf(p.weekday) !== s.day || Number(p.hour) < s.hour) return;
     const sun = Z.todayLocal(now()); sun.setDate(sun.getDate() - sun.getDay());
+    // The Rabbi reviews his word first: until he approves this week's draft, the email waits and he gets one reminder.
+    const w = await wordFor(await shabbatOf());
+    if (w.draft && !w.approved) {
+      const to = lower(notifyTo) || lower(content().org.email);
+      if (to && (await q('INSERT INTO email_log (key) VALUES ($1) ON CONFLICT DO NOTHING', ['word-review:' + w.week])).rowCount === 1) {
+        await mailer.send({ to, subject: 'The weekly email is waiting for your word', text: `Your word for this Shabbat is ready for you to read:\n\n${w.draft.text}\n\nApprove it (or change it) in the Rabbi area: ${base}/admin/community#email\nThe weekly email goes out as soon as you approve it.` }).catch((e) => log.error('word review:', e && e.message));
+      }
+      return;
+    }
     if ((await q('INSERT INTO email_log (key) VALUES ($1) ON CONFLICT DO NOTHING', ['weekly-auto:' + Z.ymd(sun)])).rowCount !== 1) return;
     await sendAll({ kind: 'auto', auto: true }, await recipients());
   }
@@ -217,7 +250,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
     return lines.join('\n');
   }
 
-  const optsOf = (src) => ({ kind: ['auto', 'shabbat', 'holiday', 'message'].includes(src.kind) ? src.kind : 'auto', note: String(src.note || '').slice(0, 4000), joke: String(src.joke || '').slice(0, 600), subject: String(src.subject || '').slice(0, 150), message: String(src.message || '').slice(0, 8000) });
+  const optsOf = (src) => ({ kind: ['auto', 'shabbat', 'holiday', 'message'].includes(src.kind) ? src.kind : 'auto', note: src.note == null ? undefined : String(src.note).slice(0, 4000), joke: String(src.joke || '').slice(0, 600), subject: String(src.subject || '').slice(0, 150), message: String(src.message || '').slice(0, 8000) });
 
   return {
     compose, composeWhatsApp, recipients, unsubUrl, confirmUrl, subscribe, sendAll, autoTick,
@@ -227,7 +260,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
       // Preview (text and counts) and the full designed email (for the preview frame).
       r2.get('/api/site/weekly', authed, wrap(async (req, res) => {
         const m = await compose(LANGS.includes(req.query.lang) ? req.query.lang : 'en', optsOf(req.query)), list = await recipients();
-        res.json({ subject: m.subject, edition: m.edition, text: m.text, recipients: list.length, byLang: list.reduce((a, r) => ({ ...a, [r.lang]: (a[r.lang] || 0) + 1 }), {}), email: !!mailer, auto: await getAuto() });
+        res.json({ subject: m.subject, edition: m.edition, text: m.text, word: await wordFor(await shabbatOf()), recipients: list.length, byLang: list.reduce((a, r) => ({ ...a, [r.lang]: (a[r.lang] || 0) + 1 }), {}), email: !!mailer, auto: await getAuto() });
       }));
       r2.get('/api/site/weekly/preview', authed, wrap(async (req, res) => {
         const m = await compose(LANGS.includes(req.query.lang) ? req.query.lang : 'en', optsOf(req.query));
@@ -238,6 +271,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
         if (!mailer) return res.status(503).json({ code: 'not_configured', error: 'Email is not set up yet (SMTP_URL and MAIL_FROM in Render).' });
         if (!req.body || req.body.confirm !== true) return res.status(400).json({ code: 'confirm', error: 'Please confirm before sending.' });
         const o = optsOf(req.body); if (o.kind === 'message' && !o.message.trim()) return res.status(400).json({ code: 'empty', error: 'Please write the message.' });
+        if (o.note != null) { const week = await shabbatOf(); if (week) await store.setKv('email-word:' + week, { text: o.note, approvedAt: new Date().toISOString() }); } // sending is approving
         const r = await sendAll(o, await recipients());
         res.json({ ok: true, ...r });
       }));
@@ -249,6 +283,13 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
         const m = await compose(LANGS.includes(req.body.lang) ? req.body.lang : 'en', optsOf(req.body || {})), pz = personalize(m, 'test', to, 'test');
         await mailer.send({ to, subject: '[Test] ' + m.subject, text: pz.text, html: pz.html });
         res.json({ ok: true, to });
+      }));
+      // The Rabbi approves this week's word (as written, or with his changes).
+      r2.post('/api/site/weekly/word', authed, J, wrap(async (req, res) => {
+        const week = await shabbatOf(), text = String((req.body && req.body.text) || '').slice(0, 4000);
+        if (!week) return res.status(400).json({ error: 'No Shabbat found.' });
+        await store.setKv('email-word:' + week, { text, approvedAt: new Date().toISOString() });
+        res.json({ ok: true, week });
       }));
       r2.get('/api/site/weekly/auto', authed, wrap(async (req, res) => res.json(await getAuto())));
       r2.post('/api/site/weekly/auto', authed, J, wrap(async (req, res) => {
