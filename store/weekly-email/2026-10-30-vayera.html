@@ -4,14 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shabbat Shalom from Chabad of Lamorinda · Parshat Vayera</title>
-<!--
-  Weekly email for ChabadOne Communicator.
-  Order: 1 Shabbat times · 2 This Shabbat · 3 Rabbi's message · 4 Parshah · 5 This week's calendar · 6 Schools
-         7 Classes · 8 Coming up · 9 Mitzvah & joke · 10 Ways to give · 11 Here for you · footer
-  Each numbered part sits between "SECTION" comments and can be copied, changed or removed on its own.
-  Pictures and links use the new website (https://chabad-lamorinda-app.onrender.com); on launch day replace
-  that address everywhere with the final one (Find & Replace).
--->
 <style>
   /* Phones: side-by-side boxes go one under the other */
   @media (max-width:520px){
@@ -19,6 +11,23 @@
     .col img{width:100%!important;max-width:320px;margin:0 auto 14px!important}
   }
 </style>
+<!--
+  WEEKLY EMAIL TEMPLATE, Chabad of Lamorinda (for ChabadOne Communicator)
+
+  HOW IT IS BUILT
+  Every part of the email is ONE BLOCK: a box that starts with  <!== BLOCK: name ==>  and ends with  <!== END BLOCK ==>
+  (written with "!--" in the file). Each block holds its own title, words, pictures and buttons, so you can:
+    - move a block up or down (cut it, paste it somewhere else),
+    - delete a block you don't need this week,
+    - copy a block to make another one (for example a second event).
+  Change the words between the tags; leave the style="..." parts as they are.
+
+  BLOCKS (in order): Header · Shabbat times · This Shabbat · Message from the Rabbi · Parshah · This week's calendar
+                     Preschool · Hebrew School · Learn with us · Coming up · Mitzvah & joke · Ways to give · We're here for you · Footer
+
+  LINKS go to www.chabadoflamorinda.com. Calendar days use:
+    https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=MONTH/DAY/YEAR&mosadid=9861
+-->
 </head>
 <body style="margin:0;padding:0;background:#f6f1e7;">
 <div style="display:none;max-height:0;overflow:hidden;font-size:1px;line-height:1px;color:#f6f1e7;">Candles 5:53 PM · Shabbat dinner tonight · Parshat Vayera · Hebrew School &amp; Preschool registration open</div>
@@ -27,18 +36,23 @@
 <tr><td align="center" style="padding:20px 10px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
 
-<!-- SECTION: header -->
-<tr><td style="padding:0 0 6px;text-align:right;font:13px Georgia,serif;color:#85600f;">ב״ה</td></tr>
-<tr><td align="center" style="background:#ffffff;border:1px solid #e8dfcc;border-bottom:0;border-radius:14px 14px 0 0;padding:26px 24px 18px;">
-  <img src="https://chabad-lamorinda-app.onrender.com/media/email/flame-logo.png" width="64" height="64" alt="" style="display:block;margin:0 auto 6px;border:0;">
-  <p style="margin:0;font:600 28px/1.2 Georgia,'Times New Roman',serif;color:#14284b;">Chabad of Lamorinda</p>
-  <p style="margin:6px 0 0;font:italic 18px/1.4 Georgia,serif;color:#85600f;">Shabbat Shalom!</p>
+<!-- ================= BLOCK: Header ================= -->
+<tr><td style="padding:0 0 18px;">
+  <p style="margin:0 0 6px;text-align:right;font:13px Georgia,serif;color:#85600f;">ב״ה</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
+    <tr><td align="center" style="padding:26px 24px 18px;">
+      <a href="https://www.chabadoflamorinda.com/"><img src="https://chabad-lamorinda-app.onrender.com/media/email/flame-logo.png" width="64" height="64" alt="Chabad of Lamorinda" style="display:block;margin:0 auto 6px;border:0;"></a>
+      <p style="margin:0;font:600 28px/1.2 Georgia,'Times New Roman',serif;color:#14284b;">Chabad of Lamorinda</p>
+      <p style="margin:6px 0 0;font:italic 18px/1.4 Georgia,serif;color:#85600f;">Shabbat Shalom!</p>
+    </td></tr>
+    <tr><td align="center" style="background:#14284b;border-radius:0 0 13px 13px;padding:10px 16px;font:600 13px/1.4 Arial,sans-serif;letter-spacing:.06em;color:#ffffff;">PARSHAT VAYERA &nbsp;·&nbsp; 19 CHESHVAN 5787 &nbsp;·&nbsp; OCTOBER 30, 2026</td></tr>
+  </table>
 </td></tr>
-<tr><td align="center" style="background:#14284b;padding:10px 16px;font:600 13px/1.4 Arial,sans-serif;letter-spacing:.06em;color:#ffffff;">PARSHAT VAYERA &nbsp;·&nbsp; 19 CHESHVAN 5787 &nbsp;·&nbsp; OCTOBER 30, 2026</td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 1: Shabbat times -->
-<tr><td style="background:#ffffff;border-left:1px solid #e8dfcc;border-right:1px solid #e8dfcc;border-bottom:1px solid #e8dfcc;border-radius:0 0 14px 14px;padding:0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<!-- ================= BLOCK: Shabbat times ================= -->
+<tr><td style="padding:0 0 26px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
     <tr>
       <td width="25%" align="center" valign="top" style="padding:16px 4px;border-right:1px solid #e8dfcc;">
         <p style="margin:0;font:600 11px Arial,sans-serif;letter-spacing:.06em;color:#85600f;">CANDLE LIGHTING</p>
@@ -63,164 +77,199 @@
     </tr>
   </table>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 2: This Shabbat at Chabad -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">THIS SHABBAT AT CHABAD</td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:0;">
-  <img src="https://chabad-lamorinda-app.onrender.com/media/email/synagogue-service.jpg" width="598" alt="Torah scrolls in the ark" style="display:block;width:100%;height:auto;border:0;border-radius:14px 14px 0 0;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<!-- ================= BLOCK: This Shabbat ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">THIS SHABBAT AT CHABAD</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
+    <tr><td style="padding:0;"><a href="https://www.chabadoflamorinda.com/Shul"><img src="https://chabad-lamorinda-app.onrender.com/media/email/synagogue-service.jpg" width="598" alt="Torah scrolls in the ark" style="display:block;width:100%;height:auto;border:0;border-radius:14px 14px 0 0;"></a></td></tr>
     <tr><td style="padding:22px 28px 6px;">
       <p style="margin:0 0 4px;font:600 12px Arial,sans-serif;letter-spacing:.08em;color:#85600f;">TONIGHT · FRIDAY · 5:45 PM</p>
       <p style="margin:0 0 8px;font:600 22px/1.25 Georgia,serif;color:#14284b;">Kabbalat Shabbat and Shabbat Dinner</p>
       <p style="margin:0 0 14px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">Welcome Shabbat with joyful singing, then stay for a traditional Shabbat dinner with our family. No membership, no Hebrew needed, children welcome. Free (donations welcome). Please let us know you're coming so we can set a place for you.</p>
-      <a href="https://chabad-lamorinda-app.onrender.com/events/kabbalat-shabbat-and-dinner-2026-10-30" style="display:inline-block;padding:12px 24px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 15px Arial,sans-serif;text-decoration:none;">Save me a seat →</a>
+      <a href="mailto:rabbi@chabadoflamorinda.com?subject=Shabbat%20dinner%20RSVP" style="display:inline-block;margin:0 6px 6px 0;padding:12px 24px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 15px Arial,sans-serif;text-decoration:none;">RSVP: save me a seat</a>
+      <a href="https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=10/30/2026&amp;mosadid=9861" style="display:inline-block;margin:0 0 6px;padding:11px 20px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 15px Arial,sans-serif;text-decoration:none;">Details</a>
     </td></tr>
     <tr><td style="padding:20px 28px 24px;">
       <hr style="border:0;border-top:1px solid #e8dfcc;margin:0 0 18px;">
       <p style="margin:0 0 4px;font:600 12px Arial,sans-serif;letter-spacing:.08em;color:#85600f;">SHABBAT MORNING · SATURDAY · 10:00 AM</p>
       <p style="margin:0 0 8px;font:600 22px/1.25 Georgia,serif;color:#14284b;">Shabbat Services and Hot Kiddush Lunch</p>
-      <p style="margin:0 0 14px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">A joyful, interactive service with the Torah reading, a short talk and children's participation, followed by a hot Kiddush luncheon. Open to all, no membership required.</p>
-      <!-- When someone sponsors the Kiddush, put this line here:
-      <p style="margin:0 0 14px;padding:12px 16px;background:#fbf7ee;border-radius:10px;font:15px/1.5 Arial,sans-serif;color:#1f2433;">🍷 <strong>This week's Kiddush is sponsored by [Name]</strong>, in memory of / in honor of [...]</p> -->
-      <a href="https://chabad-lamorinda-app.onrender.com/shabbat" style="display:inline-block;padding:11px 22px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 15px Arial,sans-serif;text-decoration:none;">Learn more</a>
+      <p style="margin:0 0 14px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">A joyful, interactive service with the Torah reading, a short talk and children's participation, followed by a hot Kiddush luncheon. At 3477 Golden Gate Way, Lafayette. Open to all, no membership required.</p>
+      <!-- When someone sponsors the Kiddush, remove the two dashes-and-arrow marks around this line to show it:
+      <p style="margin:0 0 14px;padding:12px 16px;background:#fbf7ee;border-radius:10px;font:15px/1.5 Arial,sans-serif;color:#1f2433;">🍷 <strong>This week's Kiddush is sponsored by [Name]</strong>, in memory of / in honor of [...]</p>
+      -->
+      <a href="https://www.chabadoflamorinda.com/Shul" style="display:inline-block;padding:11px 22px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 15px Arial,sans-serif;text-decoration:none;">Learn more</a>
     </td></tr>
   </table>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 3: Message from the Rabbi -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">MESSAGE FROM THE RABBI</td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:26px 28px;">
-  <p style="margin:0 0 14px;font:600 22px/1.3 Georgia,serif;color:#14284b;">Abraham's open tent</p>
-  <p style="margin:0 0 12px;font:16px/1.65 Georgia,serif;color:#1f2433;">This week's Torah portion, Vayera, opens with Abraham sitting at the door of his tent on the hottest day of the year. He is ninety-nine years old and still in pain from his circumcision. Then he sees three strangers on the road, and he doesn't wait for them to knock. He <em>runs</em> to greet them, and he serves them himself.</p>
-  <p style="margin:0 0 12px;font:16px/1.65 Georgia,serif;color:#1f2433;">Our Sages learn that welcoming guests is so great that Abraham even paused his conversation with G-d to do it. The Rebbe often encouraged us to open our homes, especially for a Shabbat meal, to anyone who needs a place. A warm table and a kind word can change someone's whole week.</p>
-  <p style="margin:0 0 12px;font:16px/1.65 Georgia,serif;color:#1f2433;">Our door is open this Friday night and every Friday night. And if there is someone in your life who could use a Shabbat table, bring them along. That's how we walk in Abraham's footsteps.</p>
-  <p style="margin:0 0 4px;font:16px/1.65 Georgia,serif;color:#1f2433;">Have a wonderful Shabbat and a great week!</p>
-  <p style="margin:0;font:italic 18px/1.5 Georgia,serif;color:#14284b;">Rabbi Israel &amp; Tzipora Labkowski</p>
-</td></tr>
-
-<!-- SECTION 4: Parshah -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">PARSHAH IN A NUTSHELL</td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:24px 28px;">
-  <p style="margin:0 0 4px;font:600 12px Arial,sans-serif;letter-spacing:.08em;color:#5f6470;">GENESIS 18:1 – 22:24</p>
-  <p style="margin:0 0 12px;font:600 22px/1.3 Georgia,serif;color:#14284b;">Vayera <span style="font-weight:normal;color:#85600f;">וַיֵּרָא</span> · "And He appeared"</p>
-  <p style="margin:0 0 10px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">Abraham welcomes three travelers, who turn out to be angels. They announce that Sarah will have a son within a year, and Sarah laughs. Abraham pleads with G-d to spare Sodom for the sake of fifty righteous people, then down to ten. Not even ten are found. Lot and his daughters are rescued, and Lot's wife looks back and becomes a pillar of salt.</p>
-  <p style="margin:0 0 16px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">Isaac is born to Abraham and Sarah in their old age. Finally G-d tests Abraham with the Binding of Isaac on Mount Moriah. At the last moment an angel stops him, and Abraham offers a ram instead.</p>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf7ee;border-radius:10px;">
-    <tr><td style="padding:14px 18px;font:15px/1.9 Arial,sans-serif;color:#1f2433;">
-      <strong style="color:#85600f;">Read:</strong> <a href="https://chabad-lamorinda-app.onrender.com/parsha/vayera" style="color:#14284b;font-weight:600;">Vayera and a lesson for today</a><br>
-      <strong style="color:#85600f;">Learn:</strong> <a href="https://chabad-lamorinda-app.onrender.com/learn/hachnasat-orchim" style="color:#14284b;font-weight:600;">Welcoming guests, the Abraham way</a><br>
-      <strong style="color:#85600f;">Go deeper:</strong> <a href="https://www.chabad.org/parshah" style="color:#14284b;font-weight:600;">This week's parshah on Chabad.org</a><br>
-      <strong style="color:#85600f;">At the table:</strong> "Abraham ran to his guests even when he was in pain. Who could <em>we</em> invite?"
+<!-- ================= BLOCK: Message from the Rabbi ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">MESSAGE FROM THE RABBI</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
+    <tr><td style="padding:26px 28px;">
+      <p style="margin:0 0 14px;font:600 22px/1.3 Georgia,serif;color:#14284b;">Abraham's open tent</p>
+      <p style="margin:0 0 12px;font:16px/1.65 Georgia,serif;color:#1f2433;">This week's Torah portion, Vayera, opens with Abraham sitting at the door of his tent on the hottest day of the year. He is ninety-nine years old and still in pain from his circumcision. Then he sees three strangers on the road, and he doesn't wait for them to knock. He <em>runs</em> to greet them, and he serves them himself.</p>
+      <p style="margin:0 0 12px;font:16px/1.65 Georgia,serif;color:#1f2433;">Our Sages learn that welcoming guests is so great that Abraham even paused his conversation with G-d to do it. The Rebbe often encouraged us to open our homes, especially for a Shabbat meal, to anyone who needs a place. A warm table and a kind word can change someone's whole week.</p>
+      <p style="margin:0 0 12px;font:16px/1.65 Georgia,serif;color:#1f2433;">Our door is open this Friday night and every Friday night. And if there is someone in your life who could use a Shabbat table, bring them along. That's how we walk in Abraham's footsteps.</p>
+      <p style="margin:0 0 4px;font:16px/1.65 Georgia,serif;color:#1f2433;">Have a wonderful Shabbat and a great week!</p>
+      <p style="margin:0;font:italic 18px/1.5 Georgia,serif;color:#14284b;">Rabbi Israel &amp; Tzipora Labkowski</p>
     </td></tr>
   </table>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 5: This week's calendar -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">THIS WEEK'S CALENDAR</td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:12px 28px 22px;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-    <tr>
-      <td width="96" valign="top" style="padding:12px 10px 12px 0;font:600 14px Arial,sans-serif;color:#85600f;">FRI 10/30<br><span style="font-weight:normal;color:#5f6470;">5:45 PM</span></td>
-      <td valign="top" style="padding:12px 0;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://chabad-lamorinda-app.onrender.com/events/kabbalat-shabbat-and-dinner-2026-10-30" style="color:#14284b;font-weight:600;text-decoration:none;">Kabbalat Shabbat and Shabbat Dinner</a><br>Free · please RSVP</td>
-    </tr>
-    <tr>
-      <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">SAT 10/31<br><span style="font-weight:normal;color:#5f6470;">10:00 AM</span></td>
-      <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://chabad-lamorinda-app.onrender.com/shabbat" style="color:#14284b;font-weight:600;text-decoration:none;">Shabbat Services and Kiddush</a><br>Torah reading, short talk, kids take part</td>
-    </tr>
-    <tr>
-      <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">SUN 11/1<br><span style="font-weight:normal;color:#5f6470;">10 AM – 12</span></td>
-      <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://chabad-lamorinda-app.onrender.com/programs/hebrew-school" style="color:#14284b;font-weight:600;text-decoration:none;">Hebrew School: Hands-on &amp; Fun</a><br>Ages 3–14</td>
-    </tr>
-    <tr>
-      <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">SUN 11/1<br><span style="font-weight:normal;color:#5f6470;">9:00 PM</span></td>
-      <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://chabad-lamorinda-app.onrender.com/programs/adult-education" style="color:#14284b;font-weight:600;text-decoration:none;">Weekly Torah Class (English)</a><br>The parshah, in English</td>
-    </tr>
-    <tr>
-      <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">TUE 11/3<br><span style="font-weight:normal;color:#5f6470;">8:30 PM</span></td>
-      <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://chabad-lamorinda-app.onrender.com/programs/adult-education" style="color:#14284b;font-weight:600;text-decoration:none;">שיעור שבועי בעברית ואוכל כיד המלך</a><br>Torah class in Hebrew, with a meal</td>
-    </tr>
-    <tr>
-      <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">WED 11/4<br><span style="font-weight:normal;color:#5f6470;">1:00 PM</span></td>
-      <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://chabad-lamorinda-app.onrender.com/programs/adult-education" style="color:#14284b;font-weight:600;text-decoration:none;">Navigate Your Soul: Tanya Class</a><br>1061 Laurel Dr, Lafayette</td>
-    </tr>
-    <tr>
-      <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">FRI 11/6<br><span style="font-weight:normal;color:#5f6470;">4:45 PM</span></td>
-      <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://chabad-lamorinda-app.onrender.com/shabbat" style="color:#14284b;font-weight:600;text-decoration:none;">Kabbalat Shabbat</a><br>Earlier now that the clocks go back · candles 4:46 PM</td>
-    </tr>
+<!-- ================= BLOCK: Parshah ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">PARSHAH IN A NUTSHELL</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
+    <tr><td style="padding:24px 28px;">
+      <p style="margin:0 0 4px;font:600 12px Arial,sans-serif;letter-spacing:.08em;color:#5f6470;">GENESIS 18:1 – 22:24</p>
+      <p style="margin:0 0 12px;font:600 22px/1.3 Georgia,serif;color:#14284b;">Vayera <span style="font-weight:normal;color:#85600f;">וַיֵּרָא</span> · "And He appeared"</p>
+      <p style="margin:0 0 10px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">Abraham welcomes three travelers, who turn out to be angels. They announce that Sarah will have a son within a year, and Sarah laughs. Abraham pleads with G-d to spare Sodom for the sake of fifty righteous people, then down to ten. Not even ten are found. Lot and his daughters are rescued, and Lot's wife looks back and becomes a pillar of salt.</p>
+      <p style="margin:0 0 16px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">Isaac is born to Abraham and Sarah in their old age. Finally G-d tests Abraham with the Binding of Isaac on Mount Moriah. At the last moment an angel stops him, and Abraham offers a ram instead.</p>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf7ee;border-radius:10px;">
+        <tr><td style="padding:14px 18px;font:15px/1.9 Arial,sans-serif;color:#1f2433;">
+          <strong style="color:#85600f;">Browse:</strong> <a href="https://www.chabadoflamorinda.com/parshah/article_cdo/aid/97235/jewish/Parshah-Columnists.htm" style="color:#14284b;font-weight:600;">This week's Parshah columnists</a><br>
+          <strong style="color:#85600f;">Read:</strong> <a href="https://www.chabadoflamorinda.com/parshah/article_cdo/aid/579794/jewish/Haftorah-in-a-Nutshell.htm" style="color:#14284b;font-weight:600;">Haftorah in a Nutshell</a><br>
+          <strong style="color:#85600f;">Learn:</strong> <a href="https://www.chabadoflamorinda.com/library/article_cdo/aid/112356/jewish/The-Story-of-Abraham.htm" style="color:#14284b;font-weight:600;">The story of Abraham</a> · <a href="https://www.chabadoflamorinda.com/library/article_cdo/aid/112357/jewish/The-Story-of-Isaac-in-the-Bible.htm" style="color:#14284b;font-weight:600;">The story of Isaac</a> · <a href="https://www.chabadoflamorinda.com/library/article_cdo/aid/2017931/jewish/Sodom-and-Gomorrah-Cities-Destroyed-by-G-d.htm" style="color:#14284b;font-weight:600;">Sodom and Gomorrah</a><br>
+          <strong style="color:#85600f;">Ask:</strong> <a href="mailto:rabbi@chabadoflamorinda.com?subject=Weekly%20Torah%20Portion" style="color:#14284b;font-weight:600;">A question on the parshah? Email the Rabbi</a><br>
+          <strong style="color:#85600f;">At the table:</strong> "Abraham ran to his guests even when he was in pain. Who could <em>we</em> invite?"
+        </td></tr>
+      </table>
+    </td></tr>
   </table>
-  <p style="margin:12px 0 0;"><a href="https://chabad-lamorinda-app.onrender.com/calendar" style="display:inline-block;padding:10px 20px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">See the full calendar →</a></p>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 6: Our schools -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">OUR SCHOOLS · REGISTRATION OPEN FOR 2026–2027</td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:0;">
-  <a href="https://chabad-lamorinda-app.onrender.com/programs/jewish-preschool"><img src="https://chabad-lamorinda-app.onrender.com/media/email/preschool-enrollment.jpg" width="598" alt="Lamorinda Jewish Preschool: enrollment now open" style="display:block;width:100%;height:auto;border:0;border-radius:14px 14px 0 0;"></a>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<!-- ================= BLOCK: This week's calendar ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">THIS WEEK'S CALENDAR</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
+    <tr><td style="padding:12px 28px 22px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <!-- one row per event: copy a <tr>...</tr> to add one -->
+        <tr>
+          <td width="96" valign="top" style="padding:12px 10px 12px 0;font:600 14px Arial,sans-serif;color:#85600f;">FRI 10/30<br><span style="font-weight:normal;color:#5f6470;">5:45 PM</span></td>
+          <td valign="top" style="padding:12px 0;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=10/30/2026&amp;mosadid=9861" style="color:#14284b;font-weight:600;text-decoration:none;">Kabbalat Shabbat and Shabbat Dinner</a><br>Free · please RSVP</td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">SAT 10/31<br><span style="font-weight:normal;color:#5f6470;">10:00 AM</span></td>
+          <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=10/31/2026&amp;mosadid=9861" style="color:#14284b;font-weight:600;text-decoration:none;">Shabbat Services followed by a Kiddush</a><br>Torah reading, short talk, kids take part</td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">SUN 11/1<br><span style="font-weight:normal;color:#5f6470;">8:00 AM</span></td>
+          <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=11/1/2026&amp;mosadid=9861" style="color:#14284b;font-weight:600;text-decoration:none;">Sunday Morning Minyan</a><br>Shacharit, the morning prayers</td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">SUN 11/1<br><span style="font-weight:normal;color:#5f6470;">10 AM – 12</span></td>
+          <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/3186196" style="color:#14284b;font-weight:600;text-decoration:none;">Hebrew School: Hands-on &amp; Fun</a><br>Ages 3–14</td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">SUN 11/1<br><span style="font-weight:normal;color:#5f6470;">9:00 PM</span></td>
+          <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=11/1/2026&amp;mosadid=9861" style="color:#14284b;font-weight:600;text-decoration:none;">Weekly Torah Class (English)</a><br>The parshah, in English</td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">TUE 11/3<br><span style="font-weight:normal;color:#5f6470;">8:30 PM</span></td>
+          <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=11/3/2026&amp;mosadid=9861" style="color:#14284b;font-weight:600;text-decoration:none;">שיעור שבועי בעברית ואוכל כיד המלך</a><br>Torah class in Hebrew, with a meal</td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">WED 11/4<br><span style="font-weight:normal;color:#5f6470;">1:00 PM</span></td>
+          <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/3080801" style="color:#14284b;font-weight:600;text-decoration:none;">Navigate Your Soul: Tanya Class</a><br>1061 Laurel Dr, Lafayette</td>
+        </tr>
+        <tr>
+          <td valign="top" style="padding:12px 10px 12px 0;border-top:1px solid #e8dfcc;font:600 14px Arial,sans-serif;color:#85600f;">FRI 11/6<br><span style="font-weight:normal;color:#5f6470;">4:45 PM</span></td>
+          <td valign="top" style="padding:12px 0;border-top:1px solid #e8dfcc;font:15px/1.45 Arial,sans-serif;color:#5f6470;"><a href="https://www.chabadoflamorinda.com/calendar/view/day.asp?tdate=11/6/2026&amp;mosadid=9861" style="color:#14284b;font-weight:600;text-decoration:none;">Kabbalat Shabbat</a><br>Earlier now that the clocks go back · candles 4:46 PM</td>
+        </tr>
+      </table>
+      <p style="margin:12px 0 0;"><a href="https://www.chabadoflamorinda.com/templates/events.asp?mosadid=9861" style="display:inline-block;padding:10px 20px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">View all upcoming events →</a></p>
+    </td></tr>
+  </table>
+</td></tr>
+<!-- ================= END BLOCK ================= -->
+
+<!-- ================= BLOCK: Preschool ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">LAMORINDA JEWISH PRESCHOOL 2026–2027</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
+    <tr><td style="padding:0;"><a href="https://www.chabadoflamorinda.com/5180613"><img src="https://chabad-lamorinda-app.onrender.com/media/email/preschool-enrollment.jpg" width="598" alt="Lamorinda Jewish Preschool: enrollment now open" style="display:block;width:100%;height:auto;border:0;border-radius:14px 14px 0 0;"></a></td></tr>
     <tr><td style="padding:20px 28px 24px;">
-      <p style="margin:0 0 6px;font:600 21px/1.3 Georgia,serif;color:#14284b;">Lamorinda Jewish Preschool</p>
-      <p style="margin:0 0 14px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">Ages 1–4 · 8:30 AM – 5:00 PM · $1,700 a month, lunch and snacks included. A warm, nurturing Jewish start where children thrive. Space is limited.</p>
-      <a href="https://chabad-lamorinda-app.onrender.com/programs/jewish-preschool" style="display:inline-block;padding:12px 24px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 15px Arial,sans-serif;text-decoration:none;">Enroll in the Preschool →</a>
+      <p style="margin:0 0 6px;font:600 21px/1.3 Georgia,serif;color:#14284b;">Enrollment is open!</p>
+      <p style="margin:0 0 14px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">Ages 1–4 · 8:30 AM – 5:00 PM · $1,700 a month, lunch and snacks included. A warm, nurturing Jewish start where children thrive. Space is limited, so sign up today!</p>
+      <a href="https://www.chabadoflamorinda.com/5180613" style="display:inline-block;padding:12px 24px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 15px Arial,sans-serif;text-decoration:none;">Enroll in the Preschool →</a>
     </td></tr>
   </table>
 </td></tr>
-<tr><td style="padding:14px 0 0;"></td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:24px 24px;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<!-- ================= END BLOCK ================= -->
+
+<!-- ================= BLOCK: Hebrew School ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">LAMORINDA JEWISH HEBREW SCHOOL 2026–2027</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
     <tr>
-      <td class="col" width="230" valign="top" style="padding:0 20px 0 0;"><a href="https://chabad-lamorinda-app.onrender.com/programs/hebrew-school"><img src="https://chabad-lamorinda-app.onrender.com/media/email/hebrew-school-flyer.jpg" width="230" alt="Hebrew School: Sundays 10 AM to 12 PM, ages 3 to 14" style="display:block;width:230px;height:auto;border:0;border-radius:10px;"></a></td>
-      <td class="col" valign="middle">
-        <p style="margin:0 0 6px;font:600 21px/1.3 Georgia,serif;color:#14284b;">Lamorinda Jewish Hebrew School</p>
-        <p style="margin:0 0 10px;font:15px/1.6 Arial,sans-serif;color:#1f2433;">Sundays 10 AM – 12 PM · ages 3–14</p>
-        <p style="margin:0 0 16px;font:15px/1.6 Arial,sans-serif;color:#1f2433;">Hands-on projects, Jewish holidays, Hebrew reading, songs, Jewish pride and Bar &amp; Bat Mitzvah prep. Where Judaism comes alive!</p>
-        <a href="https://chabad-lamorinda-app.onrender.com/programs/hebrew-school" style="display:inline-block;padding:12px 22px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 15px Arial,sans-serif;text-decoration:none;">Register →</a>
+      <td class="col" width="230" valign="top" style="padding:24px 20px 24px 24px;"><a href="https://www.chabadoflamorinda.com/3186196"><img src="https://chabad-lamorinda-app.onrender.com/media/email/hebrew-school-flyer.jpg" width="230" alt="Hebrew School: Sundays 10 AM to 12 PM, ages 3 to 14" style="display:block;width:230px;height:auto;border:0;border-radius:10px;"></a></td>
+      <td class="col" valign="middle" style="padding:24px 24px 24px 0;">
+        <p style="margin:0 0 6px;font:600 21px/1.3 Georgia,serif;color:#14284b;">Where Judaism comes alive!</p>
+        <p style="margin:0 0 10px;font:600 15px/1.6 Arial,sans-serif;color:#1f2433;">Sundays 10 AM – 12 PM · ages 3–14</p>
+        <p style="margin:0 0 16px;font:15px/1.6 Arial,sans-serif;color:#1f2433;">Hands-on projects, Jewish holidays, Hebrew reading, songs, Jewish pride and Bar &amp; Bat Mitzvah prep. Registration is open; space is limited.</p>
+        <a href="https://www.chabadoflamorinda.com/3186196" style="display:inline-block;padding:12px 22px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 15px Arial,sans-serif;text-decoration:none;">Register →</a>
       </td>
     </tr>
   </table>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 7: Classes -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">LEARN WITH US</td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:24px 24px;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<!-- ================= BLOCK: Learn with us ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">LEARN WITH US</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
     <tr>
-      <td class="col" valign="middle" style="padding:0 20px 0 4px;">
+      <td class="col" valign="middle" style="padding:24px 20px 16px 28px;">
         <p style="margin:0 0 6px;font:600 21px/1.3 Georgia,serif;color:#14284b;">Navigate Your Soul</p>
         <p style="margin:0 0 10px;font:italic 15px/1.5 Georgia,serif;color:#85600f;">Ancient Jewish mysticism for modern life</p>
         <p style="margin:0 0 10px;font:15px/1.6 Arial,sans-serif;color:#1f2433;">We study the teachings of the Jewish mystics and how they apply to our lives today. Open to men and women; bring a friend! Coffee and refreshments served.</p>
         <p style="margin:0 0 14px;font:600 15px/1.6 Arial,sans-serif;color:#14284b;">Every Wednesday, 1:00 PM<br><span style="font-weight:normal;color:#5f6470;">1061 Laurel Dr, Lafayette</span></p>
-        <p style="margin:0;font:14px/1.5 Arial,sans-serif;color:#5f6470;">Also: Torah class in English, Sundays 9 PM · in Hebrew with a meal, Tuesdays 8:30 PM. <a href="https://chabad-lamorinda-app.onrender.com/programs/adult-education" style="color:#14284b;font-weight:600;">All classes →</a></p>
+        <a href="https://www.chabadoflamorinda.com/3080801" style="display:inline-block;padding:10px 20px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">More info →</a>
       </td>
-      <td class="col" width="210" valign="top"><a href="https://chabad-lamorinda-app.onrender.com/programs/adult-education"><img src="https://chabad-lamorinda-app.onrender.com/media/email/tanya-navigate-your-soul.jpg" width="210" alt="Navigate Your Soul: every Wednesday at 1 PM" style="display:block;width:210px;height:auto;border:0;border-radius:10px;"></a></td>
+      <td class="col" width="210" valign="top" style="padding:24px 24px 16px 0;"><a href="https://www.chabadoflamorinda.com/3080801"><img src="https://chabad-lamorinda-app.onrender.com/media/email/tanya-navigate-your-soul.jpg" width="210" alt="Navigate Your Soul: every Wednesday at 1 PM" style="display:block;width:210px;height:auto;border:0;border-radius:10px;"></a></td>
     </tr>
+    <tr><td colspan="2" style="padding:0 28px 24px;">
+      <p style="margin:0 0 12px;font:14px/1.6 Arial,sans-serif;color:#5f6470;">Also every week: Torah class in English, Sundays 9 PM · Torah class in Hebrew, with a meal, Tuesdays 8:30 PM.</p>
+      <p style="margin:0;padding:12px 16px;background:#fbf7ee;border-radius:10px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">📖 <strong>Sponsor a Torah class</strong> in memory of a loved one. <a href="https://www.chabadoflamorinda.com/article.asp?AID=4843095" style="color:#14284b;font-weight:600;">Sponsor here →</a></p>
+    </td></tr>
   </table>
-  <p style="margin:16px 0 0;padding:12px 16px;background:#fbf7ee;border-radius:10px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">📖 <strong>Sponsor a Torah class</strong> in memory of a loved one. <a href="tel:9253847242" style="color:#14284b;font-weight:600;">Call 925-384-7242</a></p>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 8: Coming up -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">COMING UP</td></tr>
-<tr><td style="background:#14284b;border-radius:14px;padding:24px 28px;">
-  <p style="margin:0 0 4px;font:600 12px Arial,sans-serif;letter-spacing:.08em;color:#e7c873;">5 WEEKS AWAY</p>
-  <p style="margin:0 0 8px;font:600 22px/1.3 Georgia,serif;color:#ffffff;">🕎 Chanukah begins Friday evening, December 4</p>
-  <p style="margin:0 0 16px;font:15px/1.55 Arial,sans-serif;color:#c9d2e3;">Get the kids excited early: watch the countdown and light the menorah on our website, or see who in the family can beat the Chanukah quiz. Watch this email for our Chanukah celebration.</p>
-  <a href="https://chabad-lamorinda-app.onrender.com/menorah" style="display:inline-block;margin:0 8px 8px 0;padding:10px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Menorah countdown</a>
-  <a href="https://chabad-lamorinda-app.onrender.com/chanukah-quiz" style="display:inline-block;margin:0 8px 8px 0;padding:10px 18px;border-radius:999px;border:1px solid #e7c873;color:#e7c873;font:600 14px Arial,sans-serif;text-decoration:none;">Take the quiz</a>
+<!-- ================= BLOCK: Coming up ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">COMING UP</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#14284b;border-radius:14px;">
+    <tr><td style="padding:24px 28px;">
+      <p style="margin:0 0 4px;font:600 12px Arial,sans-serif;letter-spacing:.08em;color:#e7c873;">BEGINS FRIDAY EVENING, DECEMBER 4</p>
+      <p style="margin:0 0 8px;font:600 22px/1.3 Georgia,serif;color:#ffffff;">🕎 Chanukah is coming!</p>
+      <p style="margin:0;font:15px/1.6 Arial,sans-serif;color:#c9d2e3;">Next week, all the information for Chanukah, including our menorah lightings and events, will be up and open for registration. Keep an eye on your inbox!</p>
+    </td></tr>
+  </table>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 9: Mitzvah and joke -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">FOR YOUR SHABBAT TABLE</td></tr>
-<tr><td style="padding:0;">
+<!-- ================= BLOCK: Mitzvah & joke ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">FOR YOUR SHABBAT TABLE</p>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
       <td class="col" width="50%" valign="top" style="padding:0 7px 0 0;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;"><tr><td style="padding:20px 20px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;"><tr><td style="padding:20px;">
           <p style="margin:0 0 4px;font:600 11px Arial,sans-serif;letter-spacing:.08em;color:#85600f;">MITZVAH OF THE WEEK</p>
           <p style="margin:0 0 8px;font:600 18px/1.3 Georgia,serif;color:#14284b;">Invite a guest for a Shabbat meal</p>
-          <p style="margin:0 0 10px;font:14px/1.55 Arial,sans-serif;color:#1f2433;">Welcoming guests was Abraham's special mitzvah, straight from this week's parshah. One extra chair makes a Shabbat.</p>
-          <a href="https://chabad-lamorinda-app.onrender.com/learn/shabbat-guest-guide" style="font:600 14px Arial,sans-serif;color:#14284b;">Hosting tips →</a>
+          <p style="margin:0;font:14px/1.55 Arial,sans-serif;color:#1f2433;">Welcoming guests was Abraham's special mitzvah, straight from this week's parshah. A neighbor, a new family in town, a student far from home: one extra chair makes a Shabbat.</p>
         </td></tr></table>
       </td>
       <td class="col" width="50%" valign="top" style="padding:0 0 0 7px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;"><tr><td style="padding:20px 20px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;"><tr><td style="padding:20px;">
           <p style="margin:0 0 4px;font:600 11px Arial,sans-serif;letter-spacing:.08em;color:#85600f;">JOKE OF THE WEEK</p>
           <p style="margin:0;font:italic 15px/1.6 Georgia,serif;color:#1f2433;">A man asks the Rabbi, "How long should a sermon be?" The Rabbi answers, "About twenty minutes, with G-d's help." "And without G-d's help?" "About an hour."</p>
         </td></tr></table>
@@ -228,67 +277,77 @@
     </tr>
   </table>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 10: Ways to give -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">WAYS TO GIVE</td></tr>
-<tr><td style="background:#fbf3df;border:1px solid #ecd9a8;border-radius:14px;padding:22px 20px 14px;">
-  <p style="margin:0 0 16px;padding:0 6px;text-align:center;font:16px/1.55 Arial,sans-serif;color:#1f2433;">Join in and become a partner in the work we do. Every gift is secure online and tax-deductible.</p>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-    <tr>
-      <td class="col" width="50%" valign="top" style="padding:0 6px 12px 0;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
-          <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">❤️ Join the Chai Club</p>
-          <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">Chai means life. A monthly gift that keeps our community growing. Give Chai, get Chai!</p>
-          <a href="https://chabad-lamorinda-app.onrender.com/chai-club" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Join</a>
-        </td></tr></table>
-      </td>
-      <td class="col" width="50%" valign="top" style="padding:0 0 12px 6px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
-          <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">🍷 Sponsor a Kiddush</p>
-          <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">For a birthday, anniversary or yahrzeit, and the whole community celebrates or remembers with you.</p>
-          <a href="https://chabad-lamorinda-app.onrender.com/sponsor-a-kiddush" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Pick a Shabbat</a>
-        </td></tr></table>
-      </td>
-    </tr>
-    <tr>
-      <td class="col" width="50%" valign="top" style="padding:0 6px 12px 0;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
-          <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">🌳 Leave a legacy</p>
-          <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">Remember Chabad of Lamorinda in your will, retirement account or life insurance. The Rabbi would be honored to talk with you, in confidence.</p>
-          <a href="https://chabad-lamorinda-app.onrender.com/help/talk-to-the-rabbi" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Talk to the Rabbi</a>
-        </td></tr></table>
-      </td>
-      <td class="col" width="50%" valign="top" style="padding:0 0 12px 6px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
-          <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">✨ Give for something special</p>
-          <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">In honor of a simcha, in memory of a loved one, for a refuah shleimah, or just because. Add your dedication.</p>
-          <a href="https://chabad-lamorinda-app.onrender.com/donate?fund=general#give" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Give now</a>
-        </td></tr></table>
-      </td>
-    </tr>
+<!-- ================= BLOCK: Ways to give ================= -->
+<tr><td style="padding:0 0 26px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">WAYS TO GIVE</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fbf3df;border:1px solid #ecd9a8;border-radius:14px;">
+    <tr><td style="padding:22px 20px 10px;">
+      <p style="margin:0 0 16px;padding:0 6px;text-align:center;font:16px/1.55 Arial,sans-serif;color:#1f2433;">Join in and become a partner in the work we do!</p>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="col" width="50%" valign="top" style="padding:0 6px 12px 0;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
+              <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">❤️ Join the Chai Club</p>
+              <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">Chai means life. A monthly gift that keeps our community growing, for your family and every family. Give Chai, get Chai!</p>
+              <a href="https://www.chabadoflamorinda.com/chai" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Join</a>
+            </td></tr></table>
+          </td>
+          <td class="col" width="50%" valign="top" style="padding:0 0 12px 6px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
+              <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">🍷 Sponsor a Kiddush</p>
+              <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">For a birthday, anniversary or yahrzeit, and the whole community celebrates or remembers with you.</p>
+              <a href="mailto:rabbi@chabadoflamorinda.com?subject=Sponsor%20a%20Kiddush" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Choose a Shabbat</a>
+            </td></tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td class="col" width="50%" valign="top" style="padding:0 6px 12px 0;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
+              <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">🌳 Leave a legacy</p>
+              <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">Remember Chabad of Lamorinda in your will, retirement account or life insurance. The Rabbi would be honored to talk with you, in confidence.</p>
+              <a href="mailto:rabbi@chabadoflamorinda.com?subject=Leaving%20a%20legacy" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Talk to the Rabbi</a>
+            </td></tr></table>
+          </td>
+          <td class="col" width="50%" valign="top" style="padding:0 0 12px 6px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border-radius:12px;"><tr><td style="padding:18px;">
+              <p style="margin:0 0 6px;font:600 17px Georgia,serif;color:#14284b;">✨ Give for something special</p>
+              <p style="margin:0 0 12px;font:14px/1.5 Arial,sans-serif;color:#1f2433;">In honor of a simcha, in memory of a loved one, for a refuah shleimah, or just because.</p>
+              <a href="https://www.chabadoflamorinda.com/donate" style="display:inline-block;padding:9px 18px;border-radius:999px;background:#c99a2e;color:#1b1405;font:600 14px Arial,sans-serif;text-decoration:none;">Donate here</a>
+            </td></tr></table>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
   </table>
-  <p style="margin:4px 0 8px;text-align:center;font:14px/1.6 Arial,sans-serif;color:#5f6470;">Or give to: <a href="https://chabad-lamorinda-app.onrender.com/donate?fund=preschool#give" style="color:#14284b;font-weight:600;">Preschool scholarships</a> · <a href="https://chabad-lamorinda-app.onrender.com/donate?fund=holidays#give" style="color:#14284b;font-weight:600;">Holiday programs</a> · <a href="https://chabad-lamorinda-app.onrender.com/donate?fund=children#give" style="color:#14284b;font-weight:600;">Children's events</a> · <a href="https://chabad-lamorinda-app.onrender.com/donate" style="color:#14284b;font-weight:600;">Where it's needed most</a></p>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION 11: Here for you -->
-<tr><td style="padding:28px 4px 10px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">WE'RE HERE FOR YOU</td></tr>
-<tr><td style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;padding:22px 28px;text-align:center;">
-  <p style="margin:0 0 14px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">A mezuzah to put up or check, tefillin, a hospital visit, a new baby, a yahrzeit, or a hard time: reach out to the Rabbi anytime.</p>
-  <a href="tel:9253847242" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">📞 Call</a>
-  <a href="sms:9253847242" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">💬 Text</a>
-  <a href="https://wa.me/19253847242" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">WhatsApp</a>
-  <a href="mailto:rabbi@chabadoflamorinda.com" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">✉️ Email</a>
+<!-- ================= BLOCK: We're here for you ================= -->
+<tr><td style="padding:0 0 18px;">
+  <p style="margin:0 0 10px 4px;font:600 13px Arial,sans-serif;letter-spacing:.1em;color:#85600f;">WE'RE HERE FOR YOU</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;border:1px solid #e8dfcc;border-radius:14px;">
+    <tr><td align="center" style="padding:22px 28px;">
+      <p style="margin:0 0 14px;font:16px/1.6 Arial,sans-serif;color:#1f2433;">A mezuzah to put up or check, tefillin, a hospital visit, a new baby, a yahrzeit, or a hard time: reach out to the Rabbi anytime.</p>
+      <a href="tel:9253847242" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">📞 Call</a>
+      <a href="sms:9253847242" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">💬 Text</a>
+      <a href="https://wa.me/19253847242" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">WhatsApp</a>
+      <a href="https://www.chabadoflamorinda.com/Article.asp?AID=3045216" style="display:inline-block;margin:0 4px 8px;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;font:600 14px Arial,sans-serif;text-decoration:none;">✉️ Contact us</a>
+    </td></tr>
+  </table>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
-<!-- SECTION: footer -->
-<tr><td style="padding:26px 20px 8px;text-align:center;font:14px/1.6 Arial,sans-serif;color:#5f6470;">
-  <img src="https://chabad-lamorinda-app.onrender.com/media/email/flame-logo.png" width="36" height="36" alt="" style="display:block;margin:0 auto 6px;border:0;">
+<!-- ================= BLOCK: Footer ================= -->
+<tr><td style="padding:12px 20px 8px;text-align:center;font:14px/1.6 Arial,sans-serif;color:#5f6470;">
   <p style="margin:0 0 6px;font:600 16px Georgia,serif;color:#14284b;">Chabad of Lamorinda</p>
   <p style="margin:0 0 6px;"><a href="https://maps.google.com/?q=3477%20Golden%20Gate%20Way%2C%20Lafayette%2C%20CA%2094549" style="color:#5f6470;">3477 Golden Gate Way, Lafayette, CA</a> · <a href="tel:9253847242" style="color:#5f6470;">925-384-7242</a></p>
   <p style="margin:0 0 10px;">Weekday prayers: Sunday 8:00 AM · Monday–Friday 6:30 AM</p>
-  <p style="margin:0 0 10px;"><a href="https://www.facebook.com/chabadoflamorinda" style="color:#14284b;font-weight:600;">Facebook</a> · <a href="https://chabad-lamorinda-app.onrender.com/this-week" style="color:#14284b;font-weight:600;">This week online</a> · <a href="https://chabad-lamorinda-app.onrender.com/" style="color:#14284b;font-weight:600;">Our website</a></p>
+  <p style="margin:0 0 10px;"><a href="https://www.chabadoflamorinda.com/" style="color:#14284b;font-weight:600;">Our website</a> · <a href="https://www.chabadoflamorinda.com/templates/events.asp?mosadid=9861" style="color:#14284b;font-weight:600;">Events</a> · <a href="https://www.chabadoflamorinda.com/donate" style="color:#14284b;font-weight:600;">Donate</a> · <a href="https://www.facebook.com/chabadoflamorinda" style="color:#14284b;font-weight:600;">Facebook</a></p>
   <p style="margin:0;font:italic 13px Georgia,serif;color:#85600f;">Every Jew is welcome. No membership required.</p>
 </td></tr>
+<!-- ================= END BLOCK ================= -->
 
 </table>
 </td></tr>
