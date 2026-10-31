@@ -135,7 +135,7 @@ function footer(c, t) {
     </div>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Community'))}</summary><div class="ftr-links">
-      ${a('/calendar', 'Calendar')}${a('/events', 'Upcoming events')}${a('/shabbat', 'Shabbat times')}${a('/holidays', 'Jewish holidays')}${a('/programs', 'Programs')}${a('/photos', 'Photos')}${a('/community', 'Community board')}
+      ${a('/calendar', 'Calendar')}${a('/events', 'Upcoming events')}${a('/shabbat', 'Shabbat times')}${a('/holidays', 'Jewish holidays')}${a('/programs', 'Programs')}${a('/kids', "Kids' corner")}${a('/photos', 'Photos')}${a('/community', 'Community board')}
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t("We're here for you"))}</summary><div class="ftr-links">

@@ -79,6 +79,30 @@ ${blessings.map(([he, tr, en, firstOnly]) => `<div class="card mn-bless${firstOn
 </section>`;
     await render(res, { path: '/menorah', title: t('Light the menorah: a Chanukah guide you can tap'), description: t('Light the Chanukah menorah online, night by night: which candles, in what order, the blessings and tonight’s time for Lafayette, Moraga and Orinda.'), body });
   }));
+  // Kids' corner: the games, the holiday guides for children (the next holiday's first), programs and events for kids,
+  // and a few guides for parents, in one place.
+  r.get('/kids', wrap(async (req, res) => {
+    const X = ctxOf(req), { t, C } = X, { guideCards } = require('./links.js');
+    const KIDS = { chanukah: 'chanukah-for-kids', purim: 'purim-for-kids', passover: 'passover-with-kids', 'rosh-hashanah': 'rosh-hashanah-with-kids', sukkot: 'sukkot-with-kids' };
+    const next = (await Z.upcomingHolidays(120).catch(() => [])).map((h) => KIDS[h.slug]).filter(Boolean);
+    const order = [...new Set([...next, 'shabbat-with-kids', 'holidays-with-toddlers', 'hebrew-alphabet', ...Object.values(KIDS)])];
+    const guides = order.map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean);
+    const parents = ['jewish-parenting', 'blessing-your-children', 'jewish-kids-in-lamorinda'].map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean);
+    const progs = ['jewish-preschool', 'hebrew-school', 'ckids-afterschool', 'summer-camp', 'kids-and-teens'].map((s) => C.programs.find((p) => p.slug === s)).filter(Boolean);
+    const today = Z.ymd(Z.todayLocal()), evs = C.events.filter((e) => e.published && ['kids', 'family'].includes(e.category) && (e.end || e.start).slice(0, 10) >= today).slice(0, 4);
+    const play = [['/dreidel', t('Play!'), t('Spin the dreidel'), t('Nun, Gimmel, Hei, Shin: try to win the pot.')], ['/menorah', t('Tap to light'), t('Light the menorah'), t('Tonight’s candles, the order and the blessings.')], ['/chanukah-quiz', t('Quiz!'), t('The Chanukah quiz'), t('Ten quick questions for the whole family.')], ['/mitzvah', t('Do a mitzvah'), t('Do a mitzvah this week'), t('Pick one good deed and join the community count.')]];
+    const body = `<section class="wrap sec">
+<h1>${esc(t("Kids' corner"))}</h1>
+<p class="lead-d">${esc(t('Games to play, holidays to celebrate together, and programs for children in Lafayette, Moraga and Orinda.'))}</p>
+<div class="grid kids-play">${play.map(([h, tag, title, text]) => `<a class="card play-cta" href="${h}"><span class="hand">${esc(tag)}</span><strong>${esc(title)}</strong><span>${esc(text)}</span></a>`).join('')}</div>
+${guideCards(X, guides.slice(0, 6), t('Celebrate together'))}
+${progs.length ? `<h2>${esc(t('Programs for children'))}</h2><div class="grid">${progs.map((p) => `<a class="card tile" href="/programs/${p.slug}"><h3>${esc(p.name)}</h3><p>${esc(p.summary || '')}</p></a>`).join('')}</div>` : ''}
+${evs.length ? `<h2>${esc(t('Coming up for kids and families'))}</h2><ul class="list">${evs.map((e) => `<li><a href="/events/${e.slug}"><strong>${esc((e[X.lang] && e[X.lang].title) || e.title)}</strong></a><br><span class="muted">${esc(X.when(e))}</span></li>`).join('')}</ul>` : ''}
+${guideCards(X, parents, t('For parents'))}
+</section>`;
+    await render(res, { path: '/kids', title: t("Kids' corner: Jewish games, holidays and programs for children"), description: t('Jewish games, holiday guides for kids and programs for children in Lafayette, Moraga and Orinda: preschool, Hebrew school, afterschool and camp, from Chabad of Lamorinda.'), body });
+  }));
+
   // Chanukah quiz: tap an answer, see right or wrong and why; the score at the end, with "challenge a friend".
   r.get('/chanukah-quiz', wrap(async (req, res) => {
     const X = ctxOf(req), { t } = X, url = base + X.path('/chanukah-quiz');

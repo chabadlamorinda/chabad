@@ -119,6 +119,7 @@ ${H.story ? `<section class="wrap sec"><div class="story">
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Try this'))}</h2></div>
   <div class="try">
+    <a href="/kids">${artImg('playground')}<span>${esc(t("Kids' corner"))}</span></a>
     <a href="/tools/hebrew-birthday">${artImg('gift')}<span>${esc(t('Find your Hebrew birthday'))}</span></a>
     <a href="/shabbat-times">${artImg('candle-flame')}<span>${esc(t('Shabbat times for your town'))}</span></a>
     <a href="/parsha">${artImg('torah-scroll')}<span>${esc(t("This week's Torah portion"))}</span></a>
