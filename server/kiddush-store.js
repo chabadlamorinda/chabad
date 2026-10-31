@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS kiddush_sponsorships (
 DROP INDEX IF EXISTS kiddush_live_slot; -- a week can now have more than one sponsor
 CREATE INDEX IF NOT EXISTS kiddush_slot_idx ON kiddush_sponsorships (slot_key);
 ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminded_at TIMESTAMPTZ;
+ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS show_public BOOLEAN NOT NULL DEFAULT FALSE; -- shown on the board while still waiting for payment (staff choice)
 ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminder_count INT NOT NULL DEFAULT 0;
 ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS remind_at TIMESTAMPTZ;
 ALTER TABLE kiddush_sponsorships ADD COLUMN IF NOT EXISTS reminders_off BOOLEAN NOT NULL DEFAULT FALSE;
@@ -40,7 +41,7 @@ CREATE TABLE IF NOT EXISTS kiddush_notes (
 CREATE INDEX IF NOT EXISTS kiddush_sp_email ON kiddush_sponsorships (lower(email));
 CREATE INDEX IF NOT EXISTS kiddush_sp_session ON kiddush_sponsorships (stripe_session_id);`;
 
-const COLS = { name: 'name', anonymous: 'anonymous', dedicationKind: 'dedication_kind', dedication: 'dedication', email: 'email', phone: 'phone', note: 'note', amountCents: 'amount_cents', feeCents: 'fee_cents', method: 'method' };
+const COLS = { name: 'name', anonymous: 'anonymous', dedicationKind: 'dedication_kind', dedication: 'dedication', email: 'email', phone: 'phone', note: 'note', amountCents: 'amount_cents', feeCents: 'fee_cents', method: 'method', showPublic: 'show_public' };
 
 function kiddushStore({ q, rows, one }) {
   const expire = () => q(`UPDATE kiddush_sponsorships SET status='expired', updated_at=now() WHERE status='pending' AND method='card' AND created_at < now() - interval '${HOLD_MINUTES} minutes'`);
@@ -89,9 +90,9 @@ function kiddushStore({ q, rows, one }) {
       await expire();
       const id = newId('ks_');
       {
-        await q(`INSERT INTO kiddush_sponsorships (id, slot_key, status, method, name, anonymous, dedication_kind, dedication, email, phone, note, amount_cents, fee_cents, source, idem, paid_at)
-          VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15, CASE WHEN $3='paid' THEN now() ELSE NULL END)`,
-          [id, s.slotKey, s.status, s.method, s.name, !!s.anonymous, s.dedicationKind || '', s.dedication || '', s.email || '', s.phone || '', s.note || '', s.amountCents || 0, s.feeCents || 0, s.source || 'online', s.idem || null]);
+        await q(`INSERT INTO kiddush_sponsorships (id, slot_key, status, method, name, anonymous, dedication_kind, dedication, email, phone, note, amount_cents, fee_cents, source, idem, show_public, paid_at)
+          VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16, CASE WHEN $3='paid' THEN now() ELSE NULL END)`,
+          [id, s.slotKey, s.status, s.method, s.name, !!s.anonymous, s.dedicationKind || '', s.dedication || '', s.email || '', s.phone || '', s.note || '', s.amountCents || 0, s.feeCents || 0, s.source || 'online', s.idem || null, !!s.showPublic]);
       }
       return id;
     },

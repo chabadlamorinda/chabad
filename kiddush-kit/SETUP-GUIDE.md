@@ -67,6 +67,7 @@ A free Render service goes to sleep after 15 minutes without visitors, and the f
 ## Step 9. Everyday use
 * Put the QR code on the TV to work: people scan it and land on the right week.
 * **Staff page → Waiting for payment:** when a Zelle/Venmo/check/cash payment arrives, press **Confirm payment**; only then does the name appear on the TV and phone page. Card payments appear by themselves.
+* To show a name on the board before payment arrives, press **Show on the board now** on that pledge (or tick the box when adding a sponsor by hand with status "Waiting for payment"). It stays "waiting" until you confirm payment.
 * Remind someone, schedule a reminder for a time you choose, or cancel reminders, on the same tab.
 * **Add an event** for anything extra people can sponsor; **Calendar notes** for a yahrzeit or an event this week. They show on the TV (the "Upcoming events" box) and the phone page.
 * The staff link is hidden on the phone page: tap the bottom-left corner of the screen and a faint "Staff sign-in" appears.

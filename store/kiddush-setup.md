@@ -28,6 +28,7 @@ Open the TV address in the TV's web browser (or a laptop / Chromecast / Fire Sti
 * **Card (Stripe)** payments confirm themselves and the name appears right away.
 * **Zelle, Venmo, check and cash** pledges are held in **Waiting for payment** and do **not** appear on the TV or the phone page until you press **Confirm payment**. The sponsor sees instructions on how to send the payment and a thank-you saying their name will appear once the payment is confirmed.
 * **Reminders:** a pledge unconfirmed after **3 days** is flagged in red in that tab, and you can press **Send reminder** at any time. With email set up (below) the reminder goes out automatically after 3 days, then every 3 days, up to 3 times, and a thank-you email goes out when you confirm. Without email set up, **Send reminder** opens a ready-to-send email in your own mail app.
+* **Show a name before the money arrives:** when you add a sponsor by hand with status "Waiting for payment", tick **"While waiting for payment, show this name on the board anyway"**. For a pledge that is already in **Waiting for payment**, press **Show on the board now** (and **Hide from the board** to take it off again). It stays "waiting" in your lists, with reminders still going, until you press **Confirm payment**.
 * **Past weeks** that had no sponsor can still be sponsored afterwards, in honor or in memory of someone. They show on the board once confirmed.
 
 ### Turning on automatic emails (optional, uses your Gmail)
