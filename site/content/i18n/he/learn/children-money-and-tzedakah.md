@@ -2,7 +2,7 @@
 title: ילדים, כסף וצדקה: לגדל ילדים נדיבים
 description: חוכמה יהודית ללמד ילדים על כסף: קופת צדקה משלהם, נתינה מדמי הכיס, יושר ושמחה במה שיש.
 category: Jewish home
-related: tzedakah, pushka, maaser, jewish-parenting, jewish-view-on-wealth
+related: tzedakah, raising-kind-children, pushka, maaser, jewish-parenting, jewish-view-on-wealth
 local: רוצים רעיונות למשפחה שלכם? הרב ישראל והרבנית ציפורה לבקובסקי ישמחו לעזור למשפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 ילדים לומדים על כסף הרבה לפני שהם מרוויחים. הם רואים איך אנחנו מוציאים, חוסכים ונותנים. היהדות מציעה הרגלים פשוטים לכל החיים שהופכים את הכסף לדרך לעשות טוב.

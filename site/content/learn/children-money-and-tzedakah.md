@@ -2,7 +2,7 @@
 title: Children, Money and Tzedakah: Raising Generous Kids
 description: Jewish wisdom for teaching children about money: a pushka of their own, giving from their allowance, honesty, and being happy with what you have.
 category: Jewish home
-related: tzedakah, pushka, maaser, jewish-parenting, jewish-view-on-wealth
+related: tzedakah, raising-kind-children, pushka, maaser, jewish-parenting, jewish-view-on-wealth
 local: Want ideas for your family? Rabbi Yisroel and Rebbetzin Tzipora Labkowski are happy to help families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Children learn about money long before they earn any. They watch how we spend, how we save and how we give. Judaism offers simple, lifelong habits that turn money into a way to do good.
