@@ -6,7 +6,9 @@
 const { md, esc, plain } = require('./md.js');
 const { fullAddress, LEARN_CATEGORIES, fmtClock } = require('./content.js');
 const { artImg, artFor, guidePhoto } = require('./art.js');
-const { readNext, asItem } = require('./links.js');
+const { readNext, asItem, guideCards, guidesFor } = require('./links.js');
+// The first guides to read, at the top of the library.
+const START = ['shabbat-for-beginners', 'mezuzah', 'kosher', 'prayer', 'kaddish', 'jewish-calendar'];
 const { actionCard, topicForPage, contactBox } = require('./leads.js');
 const Z = require('./zmanim.js');
 
@@ -82,12 +84,19 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     const id = (cat) => cat.toLowerCase().replace(/[^a-z]+/g, '-');
     // The most essential guides of each subject come first, as cards; the rest follow as a compact list.
     const rank = (a) => { const i = FEATURED.indexOf(a.slug); return i < 0 ? 999 : i; };
-    const groups = LEARN_CATEGORIES.map((cat) => [cat, C.learn.filter((a) => a.category === cat).sort((a, b) => rank(a) - rank(b))]).filter(([, l]) => l.length);
+    // Lamorinda's own guides last: everyone first sees Judaism itself.
+    const cats = LEARN_CATEGORIES.filter((c) => c !== 'Lamorinda').concat(LEARN_CATEGORIES.includes('Lamorinda') ? ['Lamorinda'] : []);
+    const nh = (await Z.upcomingHolidays(45).catch(() => []))[0];
+    const season = nh ? guidesFor(C, '/holidays/' + nh.slug).slice(0, 3) : [];
+    const groups = cats.map((cat) => [cat, C.learn.filter((a) => a.category === cat).sort((a, b) => rank(a) - rank(b))]).filter(([, l]) => l.length);
     await render(res, { path: '/learn', title: t('Learn about Judaism: guides to every Jewish topic'), description: t('Plain-language guides to Shabbat, kosher, mezuzah, tefillin, prayer, life events, mourning, the Jewish calendar, Torah and Jewish ideas, from Chabad of Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Learn about Judaism'))}</h1><p class="lead-d">${esc(t('{n} clear, friendly guides to Jewish life, from lighting Shabbat candles to saying Kaddish.', { n: C.learn.length }))} <a href="/help/talk-to-the-rabbi">${esc(t('Have a question that is not here? Ask the Rabbi.'))}</a></p>
 <p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
 <p class="chips">${groups.map(([cat]) => `<a class="chip" href="#${id(cat)}">${esc(t(cat))}</a>`).join('')}<a class="chip" href="/holidays">${esc(t('Holidays'))}</a><a class="chip" href="/tehillim">${esc(t('Tehillim'))}</a></p>
-<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${artImg(artFor('learn', a.slug, a.category))}<span>${esc(a.title)}</span></a></li>`).join('')}</ul>` : ''}</div>`).join('')}</div></section>`,
+${guideCards(X, START.map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean), t('Start here'))}
+${season.length ? guideCards(X, season, t('This season')) : ''}
+<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} guides', { n: list.length }))}</summary><ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${artImg(artFor('learn', a.slug, a.category))}<span>${esc(a.title)}</span></a></li>`).join('')}</ul></details>` : ''}</div>`).join('')}</div>
+<p class="muted" data-filter-empty hidden>${esc(t('Nothing found. Try another word, or ask us.'))} <button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask us'))}</button></p></section>`,
       ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
   }));
 
@@ -107,8 +116,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
 <p class="lead-d">${esc(a.description)}</p>
 ${act ? actionCard(X, topic, a.local || '') : require('./forms.js').startCard(X, '/learn/' + a.slug)}
 ${(() => { const html = md(a.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]; return (hs.length >= 4 ? `<details class="toc"><summary>${esc(t('On this page'))} · ${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))}</summary>${hs.map((h) => `<a href="#${h[1]}">${h[2]}</a>`).join('')}</details>` : '') + html; })()}
-${a.local && !act ? `<div class="card local"><p><strong>${esc(t('In Lamorinda'))}:</strong> ${esc(a.local)}</p><p class="btns"><a class="btn gold sm" href="/help/talk-to-the-rabbi">${esc(t('Contact the Rabbi'))}</a></p></div>` : ''}
-${occ ? `<p class="occasion-line">${esc(t('Mark the occasion: sponsor a Kiddush or give in their honor'))} <a href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory of a loved one'))} →</a></p>` : ''}
+${(a.local && !act) || occ ? `<div class="card local">${a.local && !act ? `<p><strong>${esc(t('In Lamorinda'))}:</strong> ${esc(a.local)}</p>` : ''}${occ ? `<p class="occasion-line">${esc(occ === 'yahrzeit' ? t('Remember them: sponsor a Kiddush or give in their memory.') : t('Mark the occasion: sponsor a Kiddush or give in their honor'))} <a href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory of a loved one'))} →</a></p>` : ''}</div>` : ''}
 ${a.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(a.faq)}` : ''}
 ${topic === 'consult' ? contactBox(X, 'consult') : ''}
 ${readNext(X, rel.map(asItem))}

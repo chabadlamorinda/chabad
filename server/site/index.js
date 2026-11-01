@@ -107,7 +107,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const visitors = mountVisitors(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log, readMember: (req) => (community ? community.readMember(req) : null) });
   const leads = mountLeads(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log });
   const chat = mountChat(app, { env, client: chatClient, content, ctxOf, limit, store, log, leads });
-  community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf, townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
+  community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf, whenOf: (l, e) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).when(e), townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   // pushka.* and kiddush.* addresses keep opening their apps.
   const isHome = (req) => !/^(pushka|kiddush)\./i.test(req.hostname) && (siteHome || req.hostname.replace(/^www\./, '') === host);
   const pages = mountPages(app, { content, base, indexable, isHome, analytics, ctxOf, rsvpCounts: community.counts, photos: fb ? fb.photos : null });

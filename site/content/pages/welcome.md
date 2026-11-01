@@ -5,7 +5,7 @@ description: Just moved to Lamorinda or nearby? Here is how to find Jewish commu
 Welcome to the neighborhood! Whether you just moved to Lafayette, Moraga, Orinda, Pleasant Hill, Martinez or anywhere nearby, we would love to meet you. There is no membership and no expectations: just a warm Jewish community happy to have you.
 
 ## Your first month, step by step
-1. **Come for Shabbat.** Join us Saturday at 10 AM for services and a hot Kiddush lunch, or for a Friday night Shabbat dinner with the Rabbi's family. [Shabbat times](/shabbat)
+1. **Come for Shabbat.** Join us Saturday at 10 AM for services and a hot Kiddush lunch, or for a Friday night Shabbat dinner with the Rabbi's family. [Come for a Shabbat meal](/forms/shabbat-meal) · [Shabbat times](/shabbat)
 2. **Create your free account.** Save your family once and RSVP to anything in one tap. [My account](/account)
 3. **Find a place for your kids.** [Lamorinda Jewish Preschool](/programs/jewish-preschool), [Hebrew School](/programs/hebrew-school) on Sundays, and [CKids afterschool](/programs/ckids-afterschool).
 4. **Put up a mezuzah.** A new home is the perfect time. We will help you get a kosher mezuzah and put it up with the blessing. [Learn about mezuzah](/learn/mezuzah)

@@ -228,7 +228,7 @@ function checkDue(last) {
   return t.toISOString().slice(0, 10);
 }
 
-function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en', townsOf = null }) {
+function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en', townsOf = null, whenOf = (lang, e) => e.start.replace('T', ' ') }) {
   const cs = store ? communityStore(store) : null;
   const mac = (s) => crypto.createHmac('sha256', secret + ':site-member').update(s).digest('base64url');
   const issue = (id) => { const exp = String(Date.now() + TTL_DAYS * 864e5); return `${id}.${exp}.${mac(id + '.' + exp)}`; };
@@ -350,13 +350,17 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     if (!validEmail(email)) return bad(res, 'invalid_email', tOf(req)('Please enter a valid email address.'));
     const prev = await cs.rsvpFor(e.slug, email), n = (await cs.counts())[e.slug] || 0;
     // Without signing in, an RSVP can be made but not changed: only the owner of the email can change it.
-    if (prev && !m) return res.status(409).json({ code: 'exists', error: tOf(req)('This email is already on the list. Sign in to change your RSVP.') });
+    if (prev && !m) return res.status(409).json({ code: 'exists', error: tOf(req)('You are already on the list for this event. To change the number of people, sign in with this email or call {phone}.', { phone: content().org.phone }) });
     if (!m && adults + kids > 12) return bad(res, 'invalid_count', tOf(req)('For a group larger than 12, please contact us.'));
     const cap = e.rsvp.capacity;
     if (cap && n - (prev ? prev.adults + prev.kids : 0) + adults + kids > cap) return res.status(409).json({ code: 'full', error: tOf(req)('Sorry, there is not enough room left. Please contact us to join the waiting list.') });
     const saved = await cs.upsertRsvp({ event: e.slug, memberId: m ? m.id : null, name, email, phone: m ? m.phone : clean(b.phone, 30), adults, kids, note: clean(b.note, 300), ref: String(b.ref || '') });
     const t = tOf(req), L = langOf(req), title = (L !== 'en' && e[L] && e[L].title) || e.title, page = base + (L === 'en' ? '' : '/' + L) + '/events/' + e.slug;
-    if (mailer) mailer.send({ to: email, subject: t("You're coming: {title}", { title }), text: t('Thank you, {name}! You are on the list. Number of people: {n}.', { name, n: adults + kids }) + `\n\n${title}\n${e.start.replace('T', ' ')}\n${page}\n\n` + t('Add it to your calendar:') + ` ${base}/events/${e.slug}.ics` }).catch((err) => log.error('rsvp email:', err && err.message));
+    // The confirmation: when (in the reader's language), where with a map, the page, a friend's invitation, the calendar.
+    const where = [e.loc.name, e.loc.address].filter(Boolean).join(', ');
+    if (mailer) mailer.send({ to: email, subject: t("You're coming: {title}", { title }), text: t('Thank you, {name}! You are on the list. Number of people: {n}.', { name, n: adults + kids })
+      + `\n\n${title}\n${whenOf(L, e)}\n${where}\n${t('Map')}: https://maps.google.com/?q=${encodeURIComponent(where)}\n${page}\n\n`
+      + (saved && saved.invite_code ? t('Bring a friend') + `: ${page}?ref=${saved.invite_code}\n` : '') + t('Add it to your calendar:') + ` ${base}/events/${e.slug}.ics` }).catch((err) => log.error('rsvp email:', err && err.message));
     res.json({ ok: true, going: (await cs.counts())[e.slug] || 0, invite: saved && saved.invite_code });
   }));
   r.delete('/rsvp/:slug', need, authed, wrap(async (req, res) => { await cs.cancelRsvp(req.params.slug, req.member.email.toLowerCase()); res.json({ ok: true }); }));

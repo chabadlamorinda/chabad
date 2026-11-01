@@ -196,6 +196,7 @@
       var phone = el('input', { name: 'phone', type: 'tel', autocomplete: 'tel', value: guest.phone || '' });
       var note = el('input', { name: 'note', placeholder: T('Anything we should know? (optional)') });
       var m = el('p', { class: 'msg', hidden: true }), go = el('button', { class: 'btn gold', type: 'submit', text: mine ? T('Update my RSVP') : (s.signedIn ? T("I'm coming") : T('RSVP')) });
+      if (refIn && !mine) ui.appendChild(el('p', { class: 'invited hand', text: T('A friend is going and invited you. Join them!') }));
       var form = el('form', {}, [
         s.signedIn ? el('p', { text: (mine ? T('You are coming.') + ' ' : '') + T('RSVP as {name}.', { name: s.name || '' }) }) : null,
         adults, withKids ? kids : null,
@@ -209,7 +210,15 @@
         if (!s.signedIn) store.set('cl_guest', { name: name.value, email: email.value, phone: phone.value });
         api('POST', '/rsvp/' + slug, body).then(function (r) {
           go.disabled = false;
-          if (r.ok) { msg(m, T('Thank you! You are on the list. See you there.'), true); nudge(m.parentNode); invite(r.invite); go.textContent = T('Update my RSVP'); if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug }); }
+          if (r.ok) {
+            if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug });
+            if (s.signedIn) { msg(m, T('Thank you! You are on the list. See you there.'), true); nudge(m.parentNode); invite(r.invite); go.textContent = T('Update my RSVP'); return; }
+            // A guest: the form gives way to a clear "you're coming", the calendar, then bringing a friend and an account.
+            form.hidden = true;
+            var done = el('div', { class: 'rsvp-done' }, [el('p', { class: 'hand', text: T('Thank you! You are on the list. See you there.') }),
+              el('p', { class: 'btns' }, [el('a', { class: 'btn gold sm', href: '/events/' + slug + '.ics', text: T('Add to my calendar') })])]);
+            ui.appendChild(done); invite(r.invite); nudge(done);
+          }
           else msg(m, r.error || T('Something went wrong.'));
         });
       });
@@ -272,15 +281,22 @@
   var form = $('[data-form]');
   if (form) {
     var fid = form.getAttribute('data-form'), E = form.elements;
+    // Children: one row to start, "+ Add another child" opens the next (the last one hides the button).
+    Array.prototype.forEach.call(form.querySelectorAll('[data-add-kid]'), function (b) {
+      var fs = b.closest('fieldset'), sync = function () { b.hidden = !fs.querySelector('.kid[hidden]'); };
+      b.addEventListener('click', function () { var r = fs.querySelector('.kid[hidden]'); if (r) { r.hidden = false; var i = r.querySelector('input'); if (i) i.focus(); } sync(); });
+      sync();
+    });
     // Signed in: fill in the parent's details and the children from "My family".
-    api('GET', '/me').then(function (me) {
+    if (store.get('cl_signed')) api('GET', '/me').then(function (me) {
       if (me._status !== 200) return;
       var p = me.profile, put = function (n, v) { if (E[n] && !E[n].value && v) E[n].value = v; };
       put('name', p.name); put('email', p.email); put('phone', p.phone); put('address', p.address);
       var kids = me.family.filter(function (f) { return f.relation === 'child'; });
       [].forEach.call(form.querySelectorAll('[data-children]'), function (fs) {
         var id = fs.getAttribute('data-children');
-        kids.forEach(function (k, i) { ['name', 'hebrewName', 'birthday', 'allergies'].forEach(function (c) { var x = E[id + '.' + i + '.' + c], v = c === 'allergies' ? k.diet : k[c]; if (x && !x.value && v) x.value = v; }); });
+        kids.forEach(function (k, i) { ['name', 'hebrewName', 'birthday', 'allergies'].forEach(function (c) { var x = E[id + '.' + i + '.' + c], v = c === 'allergies' ? k.diet : k[c]; if (x && !x.value && v) { x.value = v; var row = x.closest('.kid'); if (row) row.hidden = false; } }); });
+        var add = fs.querySelector('[data-add-kid]'); if (add) add.hidden = !fs.querySelector('.kid[hidden]');
       });
       // Shabbat meals: the family's saved dietary needs.
       if (fid === 'shabbat-meal') put('message', [p.diet].concat(me.family.filter(function (f) { return f.diet; }).map(function (f) { return f.name + ': ' + f.diet; })).filter(Boolean).join('; '));
@@ -694,6 +710,8 @@
       var q = box.value.trim().toLowerCase();
       [].forEach.call(items, function (it) { it.hidden = !!q && it.textContent.toLowerCase().indexOf(q) < 0; });
       [].forEach.call(document.querySelectorAll('#guides h2'), function (h) { var g = h.nextElementSibling; h.hidden = g && ![].some.call(g.querySelectorAll('.tile'), function (c) { return !c.hidden; }); });
+      [].forEach.call(document.querySelectorAll('#guides .more-wrap'), function (d) { if (q) d.open = true; }); // search looks inside every list
+      var none = document.querySelector('[data-filter-empty]'); if (none) none.hidden = !q || [].some.call(items, function (it) { return !it.hidden; });
     });
   });
 

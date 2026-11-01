@@ -907,3 +907,18 @@ form.tool .btn.gold { justify-self: start; min-width: 200px; }
 @media (max-width: 600px) { .shabbat-strip { padding-bottom: 76px; } }
 @media (max-width: 440px) { html[lang="ru"] .brand span { font-size: .82rem; white-space: normal; line-height: 1.15; max-width: 7.5em; } }
 .more-results { margin-top: 12px; } .more-results > summary { list-style: none; display: inline-block; cursor: pointer; } .more-results > summary::-webkit-details-marker { display: none; } .more-results[open] > summary { display: none; }
+.rsvp-done .hand, .invited { font-size: 1.4rem; color: var(--gold-ink); margin: 6px 0 10px; }
+
+/* Review fixes: "Read next" as a big picture card on phones; the library's long lists one tap away */
+@media (max-width: 640px) {
+  .rn-main { flex-direction: column; align-items: stretch; padding: 0; overflow: hidden; gap: 0; }
+  .rn-main .gc-img { width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 0; }
+  .rn-main .art { margin: 16px auto 0; }
+  .rn-main .rn-t { padding: 14px 16px 16px; }
+  .rn-main .rn-t span:not(.rn-go) { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+}
+.more-wrap { margin: 12px 0 4px; } .more-wrap > summary { list-style: none; display: inline-block; cursor: pointer; } .more-wrap > summary::-webkit-details-marker { display: none; } .more-wrap[open] > summary { display: none; }
+html { scroll-padding-top: 84px; }
+@media (max-width: 600px) { form[data-give], .give { padding-bottom: 76px; } }
+@media (max-width: 440px) { .brand { margin-inline-end: 8px; } }
+.nw { white-space: nowrap; }

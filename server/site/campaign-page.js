@@ -11,7 +11,7 @@
 // slim bar at the top of every page and campaignBanner() leads the home page. site.js fills in the live numbers
 // ([data-campaign]) and runs the forms.
 'use strict';
-const { esc, md } = require('./md.js');
+const { esc, md, escLtr } = require('./md.js');
 const { shareBar } = require('./share.js');
 const { isLive, hasEnded, plansOf, teamsOf, ambassadors } = require('../campaign.js');
 
@@ -85,7 +85,7 @@ ${teams.length ? `<label>${esc(t('Give through an ambassador (optional)'))} <sel
 <p class="give-err msg err" role="alert" hidden></p>
 <p class="msg ok" data-pledge-done hidden></p>
 <button type="submit" class="btn gold cmp-submit" data-online-label="${esc(t('Continue to secure payment'))}" data-pledge-label="${esc(t('Send my pledge'))}">${esc(t('Continue to secure payment'))}</button>
-<ul class="cmp-trust"><li>${esc(t('Secure payment by Stripe'))}</li><li>${esc(t('Receipt by email'))}</li>${C.org.legal ? `<li>${esc(C.org.legal)}</li>` : ''}</ul>
+<ul class="cmp-trust"><li>${esc(t('Secure payment by Stripe'))}</li><li>${esc(t('Receipt by email'))}</li>${C.org.legal ? `<li>${escLtr(C.org.legal)}</li>` : ''}</ul>
 </form>`;
 }
 
@@ -138,7 +138,7 @@ ${shareBar(X, base + X.path(path), c.title)}
 <section class="cmp-sec cmp-faq"><h2>${esc(t('Questions'))}</h2>
 <details><summary>${esc(t('How do monthly or yearly payments work?'))}</summary><p>${esc(t('Choose how many payments; the same amount is charged each month or each year, and the payments stop by themselves after the last one. Your whole gift counts toward the goal right away. Need to change something? Just call us.'))}</p></details>
 <details><summary>${esc(t('Can I give by check, wire transfer, stock or a donor-advised fund?'))}</summary><p>${esc(t('Yes. Choose "Pledge now, pay later" and we will be in touch with the details. Checks are payable to {name} and mailed to {address}. Questions? Call {phone}.', { name: o.name, address: [o.address.street, o.address.city, o.address.region, o.address.postal].filter(Boolean).join(', '), phone: o.phone }))}</p></details>
-<details><summary>${esc(t('Is my gift tax-deductible?'))}</summary><p>${esc(o.legal || t('Please call us for our tax details.'))} ${esc(t('A receipt is emailed to you right after you give.'))}</p></details>
+<details><summary>${esc(t('Is my gift tax-deductible?'))}</summary><p>${escLtr(o.legal || t('Please call us for our tax details.'))} ${esc(t('A receipt is emailed to you right after you give.'))}</p></details>
 <details><summary>${esc(t('Is it safe to give online?'))}</summary><p>${esc(t('Yes. Payment happens on Stripe’s secure checkout page; your card details never touch our website.'))}</p></details>
 <details><summary>${esc(t('What does an ambassador do?'))}</summary><p>${esc(t('An ambassador opens their own page with their own goal and shares it with family and friends. Every gift through the page counts toward both the ambassador’s goal and the campaign.'))}</p></details>
 </section>

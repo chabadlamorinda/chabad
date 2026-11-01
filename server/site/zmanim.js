@@ -47,7 +47,8 @@ async function events(start, end, where = HOME) {
 async function thisShabbat(now = new Date(), where = HOME) {
   const today = todayLocal(now), end = new Date(today); end.setDate(end.getDate() + 8);
   const list = await events(today, end, where);
-  const candles = list.find((e) => e.cat === 'candles'), parsha = list.find((e) => e.cat === 'parashat');
+  // The parsha read on the Shabbat of these candles (on Shabbat day itself, next week's), so the two always match.
+  const candles = list.find((e) => e.cat === 'candles'), parsha = list.find((e) => e.cat === 'parashat' && (!candles || e.date > candles.date));
   const havdalah = list.find((e) => e.cat === 'havdalah' && (!candles || e.date > candles.date));
   return { candles, parsha, havdalah };
 }

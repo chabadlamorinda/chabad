@@ -12,7 +12,7 @@ function makeCtx({ content, i18n }) {
     const lang = req.lang || 'en', loc = LOCALE[lang], t = i18n.makeT(lang), C = i18n.localize(content(), lang, splitFaq);
     const f = (opts) => new Intl.DateTimeFormat(loc, { timeZone: 'UTC', ...opts });
     const day = (ymd, opts) => { const [y, m, d] = ymd.split('-').map(Number); return f(opts).format(utc(y, m, d)); };
-    const clock = (h, mi) => f({ hour: 'numeric', minute: mi ? '2-digit' : undefined }).format(utc(2000, 1, 1, h, mi));
+    const clock = (h, mi) => f({ hour: 'numeric', minute: mi || lang !== 'en' ? '2-digit' : undefined }).format(utc(2000, 1, 1, h, mi)); // 24-hour clocks always show minutes (20:00, not 20)
     const X = {
       lang, t, C, req,
       longDate: (ymd) => day(ymd, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }),

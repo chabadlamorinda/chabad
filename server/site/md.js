@@ -41,8 +41,10 @@ function md(src) {
     flushList(); para.push(line.trim());
   }
   flushPara(); flushList();
-  return out.join('\n');
+  return ltr(out.join('\n'));
 }
+// Phone numbers and "501(c)(3)" read left to right and never break, also inside Hebrew text (only in text, not tags).
+const ltr = (html) => String(html).replace(/>([^<]+)</g, (m, txt) => '>' + txt.replace(/(\+?1[ -])?\b\d{3}-\d{3}-\d{4}\b|501\(c\)\(3\)/g, (x) => `<bdi dir="ltr" class="nw">${x}</bdi>`) + '<');
 // Plain text (for meta descriptions, llms.txt, JSON-LD).
 const plain = (src) => String(src || '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[#>*_`]/g, '').replace(/\s+/g, ' ').trim();
 
@@ -55,4 +57,6 @@ function frontMatter(src) {
   return { meta, body: m[2] };
 }
 
-module.exports = { md, inline, esc, plain, frontMatter, safeUrl };
+// The same for plain text that is about to be escaped (the legal line, a phone in a sentence).
+const escLtr = (s) => ltr('>' + esc(s) + '<').slice(1, -1);
+module.exports = { md, inline, esc, plain, frontMatter, safeUrl, ltr, escLtr };

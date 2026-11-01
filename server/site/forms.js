@@ -7,7 +7,7 @@
 'use strict';
 const crypto = require('crypto');
 const express = require('express');
-const { esc, md } = require('./md.js');
+const { esc, md, escLtr } = require('./md.js');
 const { clean } = require('../members.js');
 
 const COLUMNS = { name: 'Name', hebrewName: 'Hebrew name', birthday: 'Birthday', grade: 'Grade', school: 'School', allergies: 'Allergies or medical notes' };
@@ -61,7 +61,7 @@ function formHtml(X, f, pre = {}) {
       case 'checkbox': return `<label class="check"><input type="checkbox" name="${x.id}"${req_}> ${esc(x.label)}${x.required ? ' *' : ''}</label>`;
       case 'checkboxes': return `<fieldset class="radios" data-group="${x.id}"><legend>${esc(x.label)}${x.required ? ' *' : ''}</legend>${x.options.map((o, i) => `<label><input type="checkbox" name="${x.id}" value="${i}"> ${esc(optLabel(o))}</label>`).join('')}</fieldset>`;
       case 'number': return lab(`<input type="number" name="${x.id}" min="${x.min || 0}" max="${x.max || 1000}" inputmode="numeric"${req_}>`);
-      case 'children': return `<fieldset class="kids" data-children="${x.id}"><legend>${esc(x.label)}${x.required ? ' *' : ''}</legend>${Array.from({ length: x.rows || 3 }, (_, i) => `<div class="fields kid" data-row="${i}">${x.columns.map((c) => `<label>${esc(t(COLUMNS[c] || c))} <input${v(x.id + '.' + i + '.' + c)} name="${x.id}.${i}.${c}"${c === 'birthday' ? ' type="date"' : ''}${x.required && i === 0 && c === 'name' ? ' required' : ''}></label>`).join('')}</div>`).join('')}</fieldset>`;
+      case 'children': return `<fieldset class="kids" data-children="${x.id}"><legend>${esc(x.label)}${x.required ? ' *' : ''}</legend>${Array.from({ length: x.rows || 3 }, (_, i) => { const filled = x.columns.some((c) => v(x.id + '.' + i + '.' + c)); return `<div class="fields kid" data-row="${i}"${i && !filled ? ' hidden' : ''}>${x.columns.map((c) => `<label>${esc(t(COLUMNS[c] || c))} <input${v(x.id + '.' + i + '.' + c)} name="${x.id}.${i}.${c}"${c === 'birthday' ? ' type="date"' : ''}${x.required && i === 0 && c === 'name' ? ' required' : ''}></label>`).join('')}</div>`; }).join('')}<p><button type="button" class="btn ghost sm" data-add-kid>${esc(t('+ Add another child'))}</button></p></fieldset>`; // one child to start; more on request
       default: return lab(`<input${v(x.id)} type="${x.type === 'email' ? 'email' : x.type === 'tel' ? 'tel' : x.type === 'date' ? 'date' : 'text'}" name="${x.id}"${x.id === 'name' ? ' autocomplete="name"' : x.type === 'email' ? ' autocomplete="email"' : x.type === 'tel' ? ' autocomplete="tel"' : ''}${req_}>`);
     }
   };
@@ -140,7 +140,7 @@ ${G.building ? `<h2 id="building">${esc(t('Building Campaign'))}</h2><p>${esc(G.
 <h2 id="other">${esc(t('Other ways to give'))}</h2>
 <div class="dir">${(G.ways || []).map((w) => `<div class="card dir-i" id="${w.id}"><h3>${esc(w.name)}</h3><p>${esc(w.text)}</p>${w.url ? `<p><a class="btn ghost sm" href="${esc(w.url)}" rel="noopener" target="_blank">${esc(t('Open'))} ${esc(w.name)}</a></p>` : ''}</div>`).join('')}</div>
 <div class="card legacy-cta"><h2>${esc(t('A gift that lasts'))}</h2><p>${esc(t('Remember Chabad of Lamorinda in your will or as a beneficiary of a retirement account or life insurance, and your values keep giving for generations. The Rabbi would be honored to talk with you, in confidence.'))}</p><p><a class="btn gold" href="/legacy">${esc(t('Leave a legacy'))}</a></p></div>
-<p class="muted">${esc(C.org.legal || '')} ${esc(t('Questions? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
+<p class="muted">${escLtr(C.org.legal || '')} ${escLtr(t('Questions? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/donate', title: t('Donate to Chabad of Lamorinda'), description: t('Give online once or monthly, sponsor in honor or memory, or give by Venmo, Zelle, check, donor advised fund, stock or crypto. Tax ID 47-4642750.'), body });
   }));
 

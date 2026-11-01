@@ -2,7 +2,7 @@
 // page (/chai-club: monthly partners and the honor board) and the thank-you page. Paying happens on Stripe's secure
 // checkout page (POST /api/give/checkout in server/index.js), so card numbers never touch this site.
 'use strict';
-const { esc } = require('./md.js');
+const { esc, escLtr } = require('./md.js');
 
 // Links that open the giving form already filled in (sponsor pages, forms with "Pay now", yahrzeits...).
 const giveUrl = (fund, amt, ded) => {
@@ -40,12 +40,12 @@ ${club ? '<input type="hidden" name="fund" value="chai"><input type="hidden" nam
 <label>${esc(t('Other amount ($)'))} <input type="number" name="other" min="1" max="10000" step="1" inputmode="decimal" value="${preset ? '' : esc(String(amt))}"></label></fieldset>
 ${club ? '' : `<label>${esc(t('Where should it go?'))} <select name="fund">${funds.map((f) => `<option value="${esc(f.id)}"${f.id === (opts.fund || 'general') ? ' selected' : ''}>${esc(f.name)}</option>`).join('')}</select></label>`}
 <label>${esc(t('In honor or in memory of (optional)'))} <input type="text" name="dedication" maxlength="80" value="${esc(opts.ded || '')}" placeholder="${esc(t('e.g. In memory of Sarah bat Avraham'))}"></label>
-${club ? `<label class="check"><input type="checkbox" name="show" checked> ${esc(t('Show our name on the Chai Club board (amounts are never shown)'))}</label>
+${club ? `<label class="check"><input type="checkbox" name="show" checked> ${esc(t('Show our name on the Chai Club board (amounts are never shown)'))}</label><p class="muted small">${esc(t('Names appear on the board from $72 a month.'))}</p>
 <label>${esc(t('Name for the board'))} <input type="text" name="boardName" maxlength="60" autocomplete="name" placeholder="${esc(t('e.g. The Cohen Family'))}"></label>` : ''}
 <label class="check"><input type="checkbox" name="fee"> ${esc(t('Add 3.5% to cover the card processing fee'))}</label>
 <p class="give-err msg err" role="alert" hidden></p>
 <button type="submit" class="btn gold">${esc(t('Continue to secure payment'))}</button>
-<p class="muted small">${esc(t('Secure payment by Stripe: card, Apple Pay or Google Pay. A receipt is emailed to you.'))} ${club || opts.freq === 'monthly' ? esc(t('Monthly gifts can be changed or stopped any time: just call or email us.')) + ' ' : ''}${esc(C.org.legal || '')}</p>
+<p class="muted small">${esc(t('Secure payment by Stripe: card, Apple Pay or Google Pay. A receipt is emailed to you.'))} ${club || opts.freq === 'monthly' ? esc(t('Monthly gifts can be changed or stopped any time: just call or email us.')) + ' ' : ''}${escLtr(C.org.legal || '')}</p>
 </form>`;
 }
 

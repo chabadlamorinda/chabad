@@ -68,7 +68,10 @@ const nice = (ymd, lang) => (/^\d{4}-\d{2}-\d{2}$/.test(ymd) ? new Date(ymd + 'T
 function message(lang, kind, v) {
   const L = MSG[lang] ? lang : 'en';
   if (v.date) v = { ...v, date: nice(v.date, L) };
-  return MSG[L][kind].replace(/\{(\w+)\}/g, (m, k) => (v[k] == null ? '' : v[k])) + '\n' + MSG[L].sign;
+  let msg = MSG[L][kind];
+  // No first name yet: "Hi! Welcome..." rather than "Hi , welcome...".
+  if (!v.first) msg = msg.replace(/, \{first\}!/, '!').replace(/ \{first\}[,!]\s*(\S)/, (m, c) => '! ' + c.toUpperCase());
+  return msg.replace(/\{(\w+)\}/g, (m, k) => (v[k] == null ? '' : v[k])) + '\n' + MSG[L].sign;
 }
 // Links the Rabbi taps: WhatsApp with the message ready, a text message, an email, a call.
 function contact(m, text, subject) {
