@@ -506,6 +506,15 @@ test('spam guard: a robot gets "ok" but nothing is saved; people and members pas
   assert.equal(await n(), before + 1, 'a person is saved');
 });
 
+test('backup: the Rabbi can download a full copy of the database; robots cannot', async () => {
+  const zlib = require('zlib');
+  assert.equal((await client().call('GET', '/admin/api/backup')).status === 200, false, 'not without signing in');
+  const r = await fetch(base + '/admin/api/backup', { headers: { cookie: (await admin()).cookie } });
+  assert.equal(r.status, 200); { const data = JSON.parse(zlib.gunzipSync(Buffer.from(await r.arrayBuffer())).toString()); assert.ok(data.tables.members, 'members are in it'); assert.ok(!data.tables.visitor_views, 'page views are left out'); }
+  const { backupFile } = require('./backup.js'), f = await backupFile(store.pool);
+  assert.match(f.name, /^chabad-lamorinda-backup-\d{4}-\d{2}-\d{2}\.json\.gz$/); assert.ok('submissions' in f.counts && 'rsvps' in f.counts);
+});
+
 test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const c = client();
   for (const p of ['/help', '/help/someone-passed-away', '/help/someone-is-sick', '/kaddish', '/tehillim', '/sponsor', '/he/help', '/ru/kaddish', '/he/tehillim']) assert.equal((await c.call('GET', p)).status, 200, p);

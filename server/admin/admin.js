@@ -29,6 +29,7 @@
       ['/admin/community', 'Website', 'Requests, sign-ups, RSVPs, approvals, visitors'],
       ['announce', 'Announcements', 'Notices on the app’s home screen'],
       ['push', 'Send a message', 'A notification to everyone’s phone'],
+      ['/admin/api/backup', 'Download a full backup', 'A copy of everything, for safekeeping (also emailed every Sunday)'],
     ]],
   ];
   function shell(body) {

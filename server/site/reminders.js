@@ -29,6 +29,11 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
       const d = await require('./digest.js').morningDigest(q, base).catch((e) => { log.error('digest:', e && e.message); return null; });
       if (d) await send(key, { to: notifyTo || org.email, subject: d.subject, text: d.text });
     }
+    // Sunday: a full backup of the database to the Rabbi (server/backup.js), so a copy always exists outside it.
+    if (new Date(today + 'T12:00:00Z').getUTCDay() === 0 && (notifyTo || org.email) && await once(key = `backup:${today}`)) {
+      const f = await require('../backup.js').backupFile(store.pool).catch((e) => { log.error('backup:', e && e.message); return null; });
+      if (f) await send(key, { to: notifyTo || org.email, subject: `Weekly backup of the website (${today})`, text: `Attached is a full copy of everything the website keeps: members, families and yahrzeits, RSVPs, forms, Kaddish and prayer requests, subscribers, donors and the books, Kiddush sponsorships and campaigns.\n\nKeep this email (or save the file to a folder). If anything is ever lost, Claude can restore from it.\n\n${Object.entries(f.counts).filter(([, n]) => n).map(([k, n]) => k + ': ' + n).join('\n')}\n\nYou can also download a fresh copy any time: ${base}/admin/ (Rabbi's desk → Download a full backup).`, attachments: [{ filename: f.name, content: f.content }] });
+    }
     // Website members (signed in at least once) get email; app-only members get the app's push reminders.
     const ys = (await q(`SELECT y.*, m.name AS member_name, m.email, m.lang FROM yahrzeits y JOIN members m ON m.id=y.member_id WHERE m.last_login IS NOT NULL AND m.email <> ''`)).rows;
     for (const y of ys) {

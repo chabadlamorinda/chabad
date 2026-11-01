@@ -178,6 +178,11 @@ Mazal Tovs, announcements, shiva notices, ideas and resources sent through `/com
 ## Website address
 The site runs at PUBLIC_URL (set in Render; the main address is https://jewishlamorinda.com). Website addresses written in content as "chabadoflamorinda.com/..." are shown with the real domain automatically (email addresses are not touched). Extra domains in FORWARD_DOMAINS (default `jewishlamorinda.org`) forward to the main address, keeping the page.
 
+## Safe updates and backups
+* **Updates never take the site down:** Render starts the new version and switches visitors to it only when `/healthz` says "ok", and /healthz first opens the main pages of that new version in all three languages (`CHECK` in `server/index.js`); if any fails, the deploy fails and the working version keeps running. On shutdown (SIGTERM) the server finishes open requests first. GitHub runs every test on each push (`.github/workflows/tests.yml`); with Render's Auto-Deploy set to "After CI Checks Pass" (rabbi-todo 22) nothing goes live unless the tests pass. Always run the full `npm test` before publishing.
+* **Backups:** `server/backup.js`: every table except page views and the email log, as one gzip JSON. Rabbi's desk → "Download a full backup" (`/admin/api/backup`), and emailed to the Rabbi every Sunday (reminders.js). Content (guides, events, pages) is in Git with its full history.
+* `server/mailer.js` is copied into the shareable app kit: after changing it (or any server file the kit uses), run `node scripts/make-pushka-kit.js` and commit `pushka-kit.zip`.
+
 ## Do not
 * Do not edit `kiddush-kit/` (a separate shareable copy) when changing the website.
 * Do not commit secrets. Settings live in Render's Environment tab (see `store/website-setup.md`).

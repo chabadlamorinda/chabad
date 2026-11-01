@@ -122,7 +122,29 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   };
   setInterval(() => { const now = Date.now(); for (const [k, v] of hits) if (now > v.reset) hits.delete(k); }, 60000).unref();
 
-  app.get('/healthz', (req, res) => res.type('text').send('ok'));
+  // Render switches visitors to a new version only after /healthz answers "ok". So it does not just say "ok": the first
+  // time (and again a minute after any failure) it opens the main pages of this very server, in every language, and only
+  // when they all work does it say "ok". A change that breaks the pages therefore never goes live: Render keeps the
+  // working version running and the deploy is marked failed. After the first success it answers at once.
+  const CHECK = ['/', '/learn', '/learn/shiva', '/learn/series/shabbat', '/events', '/shabbat', '/donate', '/help', '/kaddish', '/he/learn', '/ru/events', '/search?q=shabbat'];
+  let healthy = false, checking = null, failedAt = 0, lastProblem = '';
+  async function selfCheck(port) {
+    if (!app.locals.site || !app.locals.site.content) return true; // the app alone (the shareable kit has no website)
+    for (const p of CHECK) {
+      const r = await fetch('http://127.0.0.1:' + port + p, { redirect: 'manual', headers: { 'user-agent': 'healthz' }, signal: AbortSignal.timeout(20000) }).catch((e) => ({ status: 0, text: async () => String(e && e.message) }));
+      const body = r.status === 200 ? await r.text() : '';
+      if (r.status >= 400 || r.status === 0 || (r.status === 200 && !/<\/html>\s*$/i.test(body))) { lastProblem = p + ' answered ' + r.status; return false; }
+    }
+    return true;
+  }
+  app.get('/healthz', async (req, res) => {
+    if (!healthy && !checking && Date.now() - failedAt > 60000) {
+      checking = selfCheck(req.socket.localPort).then((ok) => { healthy = ok; if (!ok) { failedAt = Date.now(); log.error('health check failed: ' + lastProblem); } }).catch((e) => { failedAt = Date.now(); lastProblem = String(e && e.message); }).finally(() => { checking = null; });
+    }
+    if (checking) await checking;
+    res.set('Cache-Control', 'no-store');
+    return healthy ? res.type('text').send('ok') : res.status(503).type('text').send('not ready: ' + lastProblem);
+  });
 
   // ---------- Stripe webhook (needs the raw request body to check Stripe's signature) ----------
   app.post('/api/stripe/webhook', express.raw({ type: 'application/json', limit: '1mb' }), async (req, res) => {
@@ -531,10 +553,18 @@ if (require.main === module) {
       sendPush = (sub, payload) => webpush.sendNotification({ endpoint: sub.endpoint, keys: { p256dh: sub.p256dh, auth: sub.auth } }, JSON.stringify(payload), { TTL: 6 * 3600 });
     }
     if (store && sendPush) { require('./scheduler.js').createScheduler({ store, send: sendPush }).start(); console.log('Reminder scheduler started.'); }
-    createApp({
+    const server = createApp({
       stripe, publishableKey: pk, sessionSecret, androidPackage: process.env.ANDROID_PACKAGE || undefined, androidSha256: process.env.ANDROID_SHA256 || '',
       store, sendPush, mailer: require('./mailer.js').createMailer({ url: process.env.SMTP_URL, from: process.env.MAIL_FROM }), reminders: true, vapidPublicKey: vapidPub, webhookSecret: process.env.STRIPE_WEBHOOK_SECRET || '', adminPassword: process.env.ADMIN_PASSWORD || '', applePayAssoc: process.env.APPLE_PAY_ASSOC || '',
     }).listen(port, () => console.log('Listening on ' + port));
+    // An update (or a restart) sends SIGTERM: stop taking new visitors, let the ones being served finish (a payment, a
+    // form), then close the database, so no one is cut off halfway. Render already sends new visitors to the new version.
+    const stop = (sig) => {
+      console.log(sig + ': finishing open requests, then stopping.');
+      server.close(() => { Promise.resolve(store && store.pool && store.pool.end()).catch(() => {}).finally(() => process.exit(0)); });
+      setTimeout(() => process.exit(0), 25000).unref();
+    };
+    process.once('SIGTERM', () => stop('SIGTERM')); process.once('SIGINT', () => stop('SIGINT'));
     // Render's free plan puts the server to sleep after 15 minutes without visitors; the next visitor then waits up to
     // a minute, and no reminder emails go out while it sleeps. Visiting our own public address every 10 minutes keeps
     // it awake (one always-on service fits in the free plan's 750 hours a month). KEEP_AWAKE=0 turns this off.

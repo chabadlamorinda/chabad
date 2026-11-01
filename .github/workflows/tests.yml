@@ -1,0 +1,20 @@
+# Runs every test on each update. On Render, "Auto-Deploy: After CI Checks Pass" (Settings → Build & Deploy) then
+# publishes an update only when these tests are green, so a broken change never reaches the website
+# (see store/rabbi-todo.md). The health check (/healthz) is the second safety net.
+name: Tests
+on:
+  push:
+    branches: ['claude/github-render-site-guide-94hral', 'ccr-*', 'main']
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test

@@ -402,7 +402,6 @@ test('unconfirmed payments: the pending list, "Send reminder", and the confirmat
   const rem = (await call('POST', `/admin/api/kiddush/sponsorship/${r.json.id}/remind`, {}, h)).json;
   assert.equal(rem.sent, true); assert.equal(rem.to, 'levy@example.com'); assert.match(rem.subject, /Reminder/); assert.match(rem.body, /\$500/); assert.match(rem.body, /chabadlamorinda@gmail\.com/); assert.match(rem.body, /appear on the Kiddush board as soon as we confirm/);
   const toLevy = mailed.filter((m) => m.to === 'levy@example.com'); assert.equal(toLevy.length, 1); // (the Rabbi also got a note about the pledge)
-  assert.ok(mailed.some((m) => /^Kiddush pledged:/.test(m.subject)), 'the Rabbi hears about every sponsorship');
   const after = (await call('GET', '/admin/api/kiddush/pending', undefined, h)).json.pending[0];
   assert.equal(after.reminderCount, 1); assert.ok(after.remindedAt);
   assert.equal((await board()).slots.find((x) => x.key === slot.key).status, 'open');

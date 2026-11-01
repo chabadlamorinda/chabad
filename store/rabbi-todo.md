@@ -37,6 +37,10 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 
 21. **Finances, first look (10 minutes):** open the Rabbi's desk → Finances → "Bring in online gifts now". Every online gift since the website started comes in. Then add this year's checks and the main expenses (rent, utilities...), and set a budget under Reports. If it says Stripe refused, the Stripe key in Render needs permission to read balance transactions (Claude will walk you through it).
 
+22. **Updates can never break the site (2 minutes, free):** in Render → chabad-lamorinda-app → Settings → Build & Deploy → **Auto-Deploy**, choose **"After CI Checks Pass"**. From then on, every update is tested on GitHub first and goes live only if every test passes. (The site also checks its own main pages before Render switches visitors to a new version, so a broken update stays offline and the working version keeps running.)
+
+23. **Backups (5 minutes, free):** a full copy of the database is emailed to you every Sunday once email sending works (item 3), and the Rabbi's desk has **"Download a full backup"** any time. In Neon (where the database lives), also check that **"History retention"** is on (Neon keeps a restorable history; on the free plan it is short), so a mistake from today can be undone.
+
 ## Questions you can answer any time (no computer needed)
 * Should "Talk privately with the Rebbetzin" go to the Rebbetzin's own cell phone? If so, which number? (Right now it goes to 925-384-7242 with a message addressed to her.)
 * Chanukah: date, time and place of the Grand Menorah Lighting, and any party, kids' event or Shabbat Chanukah dinner.
