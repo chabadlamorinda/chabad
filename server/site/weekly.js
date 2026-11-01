@@ -25,6 +25,7 @@ const lower = (e) => String(e || '').trim().toLowerCase().slice(0, 254);
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function mountWeekly(app, { store, mailer, content, base, secret, ctxOf, log = console, upcoming = () => [], giving = {}, limit = () => (req, res, next) => next(), notifyTo = '', auto = false, now = () => new Date(), delayMs = 250 }) {
+  const notify = require('./notify.js').makeNotify({ mailer, notifyTo, content, base, log });
   const pool = store && store.pool, q = (t, p) => pool.query(t, p);
   const X = (lang) => ctxOf({ lang: LANGS.includes(lang) ? lang : 'en', method: 'GET', originalUrl: '/', query: {}, get: () => '' });
   const hmac = (what, s) => crypto.createHmac('sha256', secret + ':' + what).update(s).digest('base64url').slice(0, 24);
@@ -181,10 +182,12 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
     const lang = (/^\/(he|ru)\//.exec(req.originalUrl) || [])[1] || 'en', X2 = X(lang), t = X2.t;
     if (ok && pool) {
       await ensure();
+      const was = (await q('SELECT status FROM email_subscribers WHERE email=$1', [email])).rows[0];
       await q("UPDATE form_responses SET status='confirmed' WHERE form_id='newsletter' AND lower(email)=$1", [email]);
       await q(`INSERT INTO email_subscribers (email, lang, source, status, confirmed_at) VALUES ($1,$2,'form','confirmed',now())
         ON CONFLICT (email) DO UPDATE SET status='confirmed', confirmed_at=now(), lang=$2`, [email, lang]);
       await q('DELETE FROM email_unsubscribes WHERE email=$1', [email]);
+      if (!was || was.status !== 'confirmed') notify(`New weekly-email subscriber: ${email}`, `${email} confirmed their sign-up for the weekly email (${lang}).`, '/admin/community#email');
     }
     res.type('html').send(page(X2, t('Weekly email'), ok ? `<p>${esc(t('You are signed up. The weekly email will come every week, with Shabbat times, events and more.'))}</p><p>${esc(t('While you wait for the first one:'))}</p><p><a href="${X2.path('/events')}">${esc(t('Upcoming events'))}</a> · <a href="${X2.path('/this-week')}">${esc(t('This week in Jewish Lamorinda'))}</a> · <a href="${X2.path('/learn')}">${esc(t('Jewish guides'))}</a></p>` : `<p>${esc(t('This link is not valid.'))}</p>`));
   });

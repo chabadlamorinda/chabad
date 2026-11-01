@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const { esc } = require('./md.js');
+const { callRow } = require('./leads.js');
 
 const DIR = path.join(__dirname, '..', '..', 'kiddush');
 
@@ -67,7 +68,8 @@ function mountKiddushPage(r, { render, wrap, ctxOf }) {
 <footer><p class="blessing" id="blessing"></p><p class="muted" id="contact"></p></footer>
 <div id="sheet" class="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle"><div class="sheet-bg" data-close></div><div class="sheet-card" id="sheetCard"></div></div>
 <button id="staffHot" class="staff-hot" type="button" hidden aria-hidden="true" tabindex="-1"></button><a id="staffLink" class="staff-link" href="/admin/" hidden></a>
-</div></section>
+</div>
+<div class="card callbox"><p><strong>${esc(t('Rather arrange it with the Rabbi? Call, text or WhatsApp.'))}</strong></p><p class="btns">${callRow(X, 'donation')}</p></div></section>
 <script type="application/json" id="kiddush-embed">${JSON.stringify(embed).replace(/</g, '\\u003c')}</script>
 <link rel="stylesheet" href="/kiddush/fonts.css"><link rel="stylesheet" href="/assets/kiddush-embed.css">
 <script src="/kiddush/i18n.js" defer></script><script src="/kiddush/sponsor.js" defer></script>`;

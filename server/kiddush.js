@@ -48,7 +48,18 @@ const MAX_REMINDERS = 3;
 const TIMEZONE = 'America/Los_Angeles'; // Lafayette, CA (the clock on the TV)
 const SHARE_DEFAULT = 'https://chabadoflamorinda.com/kiddush';
 
-function createKiddush({ store, stripe, log = console, now = () => new Date(), mailer = null }) {
+function createKiddush({ store, stripe, log = console, now = () => new Date(), mailer = null, notifyTo = () => '' }) {
+  // The Rabbi gets an email for every sponsorship: pledged (to pay by Zelle, Venmo, check or cash) and paid online.
+  const notified = new Set();
+  const tellRabbi = async (sp, what) => {
+    const to = notifyTo(); if (!mailer || !to || !sp || notified.has(sp.id + what)) return;
+    notified.add(sp.id + what);
+    const slot = await findSlot(sp.slot_key, { allowHidden: true }).catch(() => null), title = slot ? slot.title + (slot.kind === 'board' ? '' : ' (' + slot.dateLabel + ')') : sp.slot_key;
+    const amt = '$' + ((sp.amount_cents || 0) / 100).toLocaleString('en-US');
+    mailer.send({ to, subject: `Kiddush ${what}: ${title}, ${sp.name}, ${amt}`, text: [`${sp.name} <${sp.email}>${sp.phone ? ' ' + sp.phone : ''}`, `${what === 'paid' ? 'Paid online' : 'Will pay by ' + sp.method}: ${amt}`, title,
+      sp.dedication ? `Dedication: ${dedicationText(sp.dedication_kind, sp.dedication)}` : '', sp.anonymous ? 'Anonymous on the board.' : '', sp.note ? 'Note: ' + sp.note : ''].filter(Boolean).join('\n') + '\n\nRabbi area: the Kiddush board' })
+      .catch((e) => log.error('kiddush notify:', e && e.message));
+  };
   const needStore = () => { if (!store) throw new HttpError(503, 'not_configured', 'Sponsorships are not set up yet. Please contact the office.'); };
 
   async function settings() {
@@ -258,6 +269,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
       email: f.email, phone: f.phone, note: f.note, amountCents: f.amount, feeCents: fee, source: 'online', idem: f.idem,
     });
     const sp = await store.getSponsorship(id);
+    if (f.method !== 'card') tellRabbi(sp, 'pledged');
     if (f.method !== 'card') return { ok: true, id, status: 'pending', method: f.method, slot: slotBrief(slot), display: sponsorBrief(sp), amountCents: f.amount, instructions: instructionsFor(f.method, st, slot, f.amount), contact: contactOf(st) };
     try {
       const base = baseUrl(req, st);
@@ -309,6 +321,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     if (session.metadata && session.metadata.sponsorship !== sp.id) throw new HttpError(404, 'not_found', 'We could not find that sponsorship.');
     if (session.payment_status === 'paid') {
       const done = await store.markPaid(sp.id, { paymentIntent: typeof session.payment_intent === 'string' ? session.payment_intent : session.payment_intent && session.payment_intent.id });
+      tellRabbi(done, 'paid');
       return { status: 'paid', ...brief };
     }
     return { status: session.status === 'expired' ? 'expired' : sp.status, ...brief };
@@ -330,7 +343,9 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     if (!o.metadata || o.metadata.source !== 'kiddush' || !o.metadata.sponsorship) return false;
     if (event.type === 'checkout.session.completed' || event.type === 'checkout.session.async_payment_succeeded') {
       if (o.payment_status === 'paid') {
-        await store.markPaid(o.metadata.sponsorship, { paymentIntent: typeof o.payment_intent === 'string' ? o.payment_intent : undefined });
+        const before = await store.getSponsorship(o.metadata.sponsorship);
+        const done = await store.markPaid(o.metadata.sponsorship, { paymentIntent: typeof o.payment_intent === 'string' ? o.payment_intent : undefined });
+        if (before && before.status !== 'paid') tellRabbi(done, 'paid');
       }
     } else if (event.type === 'checkout.session.expired' || event.type === 'checkout.session.async_payment_failed') {
       await store.releaseSponsorship(o.metadata.sponsorship, 'expired', true);

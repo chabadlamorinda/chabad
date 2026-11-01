@@ -53,7 +53,7 @@ class HttpError extends Error {
  */
 function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = console, androidPackage = 'com.chabadoflamorinda.pushka', androidSha256 = '', store = null, sendPush = null, vapidPublicKey = '', webhookSecret = '', adminPassword = '', applePayAssoc = '', now = () => new Date(), mailer = null, reminders = false, siteEnv = process.env, facebook = undefined, chatClient = undefined, siteContentDir = undefined }) {
   const stripe = /** @type {import('stripe').Stripe} */ (maybeStripe);
-  const kiddush = createKiddush({ store, stripe, log, now, mailer });
+  const kiddush = createKiddush({ store, stripe, log, now, mailer, notifyTo: () => (siteEnv && siteEnv.ADMIN_EMAIL) || (app.locals.site && app.locals.site.content ? (app.locals.site.content().org || {}).email : '') || '' });
   if (reminders) kiddush.startReminders(); // emails unpaid sponsors a reminder after a few days (needs email set up)
   const app = express();
   app.locals.kiddush = kiddush; // (used by tests)
@@ -133,6 +133,10 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     try { await handleStripeEvent(event); res.json({ received: true }); }
     catch (e) { log.error('webhook error:', event.type, e && e.message); res.status(500).json({ code: 'server_error', error: 'Webhook failed.' }); }
   });
+  const tellRabbi = (subject, text) => {
+    const to = (siteEnv && siteEnv.ADMIN_EMAIL) || ((((site && site.content && site.content()) || {}).org) || {}).email || '';
+    if (mailer && to) Promise.resolve(mailer.send({ to, subject, text })).catch((e) => log.error('notify:', e && e.message));
+  };
   // Email the Rabbi when a gift comes in through the app (one email per Stripe event, even if Stripe retries).
   async function notifyGift(event, o, cus) {
     const meta = o.metadata || {}, sub = (o.subscription_details && o.subscription_details.metadata) || (o.lines && o.lines.data && o.lines.data[0] && o.lines.data[0].metadata) || {};
@@ -158,6 +162,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
         const msg = event.type === 'invoice.payment_failed' ? 'Monthly gift could not be charged' : ((o.last_payment_error && o.last_payment_error.message) || 'Payment failed');
         const fresh = await store.recordPaymentEvent({ id: event.id, type: event.type, customerId: cus, email: o.customer_email || o.receipt_email || '', amount: o.amount_due || o.amount || 0, message: msg });
         if (fresh && cus) await store.flagCardIssue(cus, msg);
+        if (fresh) tellRabbi(`Gift could not be charged: ${o.customer_email || o.receipt_email || cus || ''}`, `${msg}.\nAmount: $${((o.amount_due || o.amount || 0) / 100).toFixed(2)}\nEmail: ${o.customer_email || o.receipt_email || ''}\n\nStripe usually tries again; the donor may need a new card.`);
         return;
       }
       case 'invoice.payment_succeeded':
@@ -171,6 +176,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
         await store.recordPaymentEvent({ id: event.id, type: event.type, customerId: cus, email: o.billing_details && o.billing_details.email || '', amount: o.amount_refunded || o.amount || 0, message: event.type === 'charge.refunded' ? 'Gift refunded' : 'Monthly gift ended' });
         // These are informational: mark resolved right away so they do not look like open problems.
         await store.resolvePayment(event.id);
+        tellRabbi(event.type === 'charge.refunded' ? `Refund: $${((o.amount_refunded || 0) / 100).toFixed(2)}` : 'A monthly gift was stopped', `${event.type === 'charge.refunded' ? 'A payment was refunded' : 'A monthly gift was cancelled'}.\nEmail: ${(o.billing_details && o.billing_details.email) || ''}\nStripe customer: ${cus || ''}`);
         return;
       default:
     }

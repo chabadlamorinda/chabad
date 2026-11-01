@@ -230,8 +230,16 @@ function checkDue(last) {
   return t.toISOString().slice(0, 10);
 }
 
-function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en', townsOf = null, whenOf = (lang, e) => e.start.replace('T', ' ') }) {
+function mountCommunity(app, { store, mailer, secret, base, limit, log = console, content, now = () => new Date(), tOf = () => (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x), langOf = () => 'en', townsOf = null, whenOf = (lang, e) => e.start.replace('T', ' '), notifyTo = '' }) {
   const cs = store ? communityStore(store) : null;
+  const notify = require('./notify.js').makeNotify({ mailer, notifyTo, content, base, log });
+  // Signing in by code or by the emailed link: the member, and an email to the Rabbi the first time someone opens an account.
+  async function memberFor(email, lang) {
+    const isNew = !(await store.pool.query('SELECT 1 FROM members WHERE verified_email=$1', [email]).catch(() => ({ rows: [1] }))).rows.length;
+    const id = await cs.memberForEmail(email);
+    if (isNew) notify(`New account on the website: ${email}`, `${email} just opened an account on the website (language: ${lang}).`, '/admin/');
+    return id;
+  }
   const mac = (s) => crypto.createHmac('sha256', secret + ':site-member').update(s).digest('base64url');
   const issue = (id) => { const exp = String(Date.now() + TTL_DAYS * 864e5); return `${id}.${exp}.${mac(id + '.' + exp)}`; };
   const readCookie = (req) => {
@@ -280,7 +288,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   r.post('/verify', need, limit('site-verify', 12, 15 * 60 * 1000), wrap(async (req, res) => {
     const email = clean(req.body && req.body.email, 254).toLowerCase(), code = String((req.body && req.body.code) || '').replace(/\D/g, '');
     if (!validEmail(email) || code.length !== 6 || !(await cs.useCode(email, { code }))) return bad(res, 'bad_code', tOf(req)('That code is not right or has expired. Please try again.'));
-    const id = await cs.memberForEmail(email); await cs.setLang(id, langOf(req));
+    const id = await memberFor(email, langOf(req)); await cs.setLang(id, langOf(req));
     setCookie(res, id); res.json({ ok: true });
   }));
   r.post('/logout', (req, res) => { res.setHeader('Set-Cookie', `${COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure}`); res.json({ ok: true }); });
@@ -363,7 +371,9 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     if (mailer) mailer.send({ to: email, subject: t("You're coming: {title}", { title }), text: t('Thank you, {name}! You are on the list. Number of people: {n}.', { name, n: adults + kids })
       + `\n\n${title}\n${whenOf(L, e)}\n${where}\n${t('Map')}: https://maps.google.com/?q=${encodeURIComponent(where)}\n${page}\n\n`
       + (saved && saved.invite_code ? t('Bring a friend') + `: ${page}?ref=${saved.invite_code}\n` : '') + t('Add it to your calendar:') + ` ${base}/events/${e.slug}.ics` }).catch((err) => log.error('rsvp email:', err && err.message));
-    res.json({ ok: true, going: (await cs.counts())[e.slug] || 0, invite: saved && saved.invite_code });
+    const going = (await cs.counts())[e.slug] || 0;
+    notify(`${prev ? 'RSVP changed' : 'RSVP'}: ${e.title} (${name}, ${adults + kids})`, `${name} <${email}>${saved && saved.phone ? ' ' + saved.phone : ''} ${prev ? 'changed their RSVP' : 'is coming'}: ${adults} adult${adults === 1 ? '' : 's'}${kids ? `, ${kids} child${kids === 1 ? '' : 'ren'}` : ''}.${clean(b.note, 300) ? '\nNote: ' + clean(b.note, 300) : ''}${b.ref ? '\nInvited by a friend.' : ''}\n\n${e.title}, ${whenOf('en', e)}\nNow coming: ${going}${cap ? ' of ' + cap : ''}`, '/admin/community#rsvps');
+    res.json({ ok: true, going, invite: saved && saved.invite_code });
   }));
   r.delete('/rsvp/:slug', need, authed, wrap(async (req, res) => { await cs.cancelRsvp(req.params.slug, req.member.email.toLowerCase()); res.json({ ok: true }); }));
 
@@ -384,7 +394,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     const b = req.body || {};
     const email = clean(b.e, 254).toLowerCase(), link = String(b.t || '');
     if (!cs || !validEmail(email) || link.length < 20 || !(await cs.useCode(email, { link }))) return res.redirect(302, '/account?expired=1');
-    const L = ['he', 'ru'].includes(b.l) ? b.l : 'en', id = await cs.memberForEmail(email);
+    const L = ['he', 'ru'].includes(b.l) ? b.l : 'en', id = await memberFor(email, L);
     if (L !== 'en') await cs.setLang(id, L);
     setCookie(res, id); res.redirect(302, (L === 'en' ? '' : '/' + L) + '/account');
   }));

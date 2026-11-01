@@ -168,6 +168,7 @@ ${sit}
     const sit = oc && { yahrzeit: 'yahrzeit', refuah: 'refuah', 'new-baby': 'new-baby', birthday: 'birthday' }[oc.id];
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor in honor or memory of a loved one'))}</h1>
 <p class="lead-d">${esc(S.intro)}</p>
+<div class="card callbox"><p><strong>${esc(t('Rather arrange it with the Rabbi? Call, text or WhatsApp.'))}</strong></p><p class="btns">${callRow(X, 'donation')}</p></div>
 <form class="card tool loved-one" method="get" action="/sponsor#mark">
   <p class="hand">${esc(t('Add a loved one'))}</p>
   <fieldset class="radios occ"><legend>${esc(t('The occasion'))}</legend><div class="chips">${S.occasions.map((x, i) => `<label class="chip pick"><input type="radio" name="o" value="${x.id}"${(oc ? oc.id === x.id : i === 0) ? ' checked' : ''}> ${esc(x.title)}</label>`).join('')}</div></fieldset>

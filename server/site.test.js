@@ -168,6 +168,7 @@ test('email sign-in: code, link, wrong codes; an app record with the same email 
   const u = new URL('http://x' + link), form = new URLSearchParams({ e: u.searchParams.get('e'), t: u.searchParams.get('t'), l: 'en' }).toString();
   const v = await c.call('POST', '/account/verify', form, { 'content-type': 'application/x-www-form-urlencoded' }); assert.equal(v.status, 302); assert.equal(v.headers.get('location'), '/account');
   const me = await c.call('GET', '/api/site/me'); assert.equal(me.status, 200); assert.equal(me.json.profile.name, '', 'not the app record');
+  assert.equal(mails.filter((m) => /^New account on the website: sara@example\.com/.test(m.subject)).length, 1, 'the Rabbi hears about a new account');
   assert.equal((await c.call('POST', '/account/verify', form, { 'content-type': 'application/x-www-form-urlencoded' })).headers.get('location'), '/account?expired=1', 'links work once');
 });
 
@@ -200,7 +201,7 @@ test('RSVP: one tap for members (family counted), guests by form, capacity, upda
   const s = (await c.call('GET', '/api/site/rsvp/' + EVENT)).json;
   assert.equal(s.signedIn, true); assert.deepEqual(s.suggest, { adults: 2, kids: 1 }); assert.equal(s.capacity, 40);
   assert.equal((await c.call('POST', '/api/site/rsvp/' + EVENT, { adults: 2, kids: 1 })).json.going, 3);
-  assert.equal(mails[mails.length - 1].subject, "You're coming: Kabbalat Shabbat and Shabbat Dinner");
+  assert.equal(mails.filter((m) => /^You're coming/.test(m.subject)).pop().subject, "You're coming: Kabbalat Shabbat and Shabbat Dinner"); assert.ok(mails.some((m) => /^RSVP: Kabbalat Shabbat/.test(m.subject)), 'the Rabbi hears about it');
   assert.equal((await c.call('POST', '/api/site/rsvp/' + EVENT, { adults: 2, kids: 2 })).json.going, 4, 'second RSVP updates, not duplicates');
   const g = client();
   assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1 })).json.code, 'invalid_name');
@@ -481,6 +482,16 @@ test('a quiet giving form ($360) only where giving fits, and step-by-step series
   assert.match((await c.call('GET', '/ru/learn')).text, /Шаг за шагом/);
 });
 
+test('the Rabbi gets an email for everything: RSVPs and chat questions (new accounts: in the sign-in test)', async () => {
+  const org = load(TEST_CONTENT).org.email, toRabbi = (re) => mails.some((m) => m.to === org && re.test(m.subject));
+  const g = client();
+  await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, kids: 0, name: 'Notify Guest', email: 'notify-guest@x.co' });
+  assert.ok(toRabbi(/^RSVP: .*Notify Guest, 1\)/), 'RSVP');
+  const before = mails.length;
+  for (let i = 0; i < 2; i++) await (await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ lang: 'en', cid: 'notifytest1', messages: [{ role: 'user', content: 'Is there a Purim party for teens?' }] }) })).text();
+  assert.equal(mails.slice(before).filter((m) => /^Chat question: Is there a Purim party/.test(m.subject)).length, 1, 'one email per conversation');
+});
+
 test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const c = client();
   for (const p of ['/help', '/help/someone-passed-away', '/help/someone-is-sick', '/kaddish', '/tehillim', '/sponsor', '/he/help', '/ru/kaddish', '/he/tehillim']) assert.equal((await c.call('GET', p)).status, 200, p);
@@ -495,7 +506,7 @@ test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const bd = (await c.call('GET', '/tehillim?b=1986-05-01')).text;
   assert.match(bd, /Your chapter this year is/); assert.match(bd, /Psalm (41|42)\b/);
   assert.match((await c.call('GET', '/tehillim')).text, /Today&#39;s Tehillim/);
-  for (const p of ['/help/someone-passed-away', '/help/end-of-life', '/help/new-baby', '/kaddish', '/tehillim']) {
+  for (const p of ['/help/someone-passed-away', '/help/end-of-life', '/help/new-baby', '/kaddish', '/tehillim', '/sponsor', '/sponsor-a-kiddush']) {
     const h = (await c.call('GET', p)).text; // Call, Text and WhatsApp the Rabbi on every help page, Kaddish and Tehillim
     assert.match(h, /data-channel="call"/, p); assert.match(h, /data-channel="text"/, p); assert.match(h, /data-channel="whatsapp"/, p);
   }
