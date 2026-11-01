@@ -2,7 +2,7 @@
 title: Еврейские знакомства: как найти свою половину по-еврейски
 description: Как еврейская традиция смотрит на знакомства и поиск супруга, от шидуха до того, на что обращать внимание, с практическими советами.
 category: Life cycle
-related: jewish-wedding, tu-bav, genetic-screening, shalom-bayit, mikvah, hebrew-names
+related: jewish-wedding, being-single-jewish-view, tu-bav, genetic-screening, shalom-bayit, mikvah, hebrew-names
 local: Нужен совет или теплая еврейская община, где можно познакомиться с людьми? Звоните раввину Лабковскому: 925-384-7242, или зайдите на chabadoflamorinda.com/help/getting-married.
 ---
 В еврейской традиции знакомства и свидания - это не развлечение. Это серьезный и полный надежды поиск родной души, с которой можно построить еврейский дом. Цель - брак, а подход вдумчивый, уважительный и наполненный молитвой.

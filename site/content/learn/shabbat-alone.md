@@ -2,7 +2,7 @@
 title: Shabbat When You Live Alone
 description: How to make Shabbat warm and meaningful when you live on your own: candles, Kiddush, a festive meal, rest, and finding company when you want it.
 category: Shabbat & holidays
-related: feeling-lonely, shabbat-for-beginners, shabbat-candles, kiddush, shabbat-guest-guide
+related: feeling-lonely, being-single-jewish-view, shabbat-for-beginners, shabbat-candles, kiddush, shabbat-guest-guide
 local: You always have a seat at the table: come for Kabbalat Shabbat and Shabbat dinner at Chabad of Lamorinda in Lafayette, or call 925-384-7242.
 ---
 Shabbat is often pictured as a big family table. But many people live alone: students, singles, widows and widowers, people whose children have grown and moved away. Shabbat is just as much yours. It is a gift for every Jew, and it can be deeply peaceful and beautiful on your own.

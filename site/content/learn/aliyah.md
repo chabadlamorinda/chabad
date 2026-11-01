@@ -2,7 +2,7 @@
 title: Getting an Aliyah: How to Be Called Up to the Torah
 description: What an aliyah to the Torah is, who gets called up and when, the blessings to say, and step by step what to do at the bimah.
 category: Prayer & Torah
-related: torah-reading, bar-mitzvah, minyan, haftarah
+related: torah-reading, getting-a-hebrew-name-as-an-adult, bar-mitzvah, minyan, haftarah
 local: Want an aliyah for a yahrzeit, birthday or simcha? Call Rabbi Labkowski at 925-384-7242 and we will arrange it and help you practice.
 ---
 An aliyah is the honor of being called up to the Torah during the public Torah reading to say the blessings before and after a section is read. The word means "going up," because you step up to the bimah and, spiritually, rise closer to G-d.

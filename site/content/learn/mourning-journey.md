@@ -2,7 +2,7 @@
 title: The Jewish Mourning Journey: From Loss to Remembrance, Step by Step
 description: The stages of Jewish mourning, from the passing through the funeral, shiva, sheloshim, the year, the yahrzeit and unveiling, and what helps at each one.
 category: Mourning & remembrance
-related: aninut, shiva, sheloshim, year-of-mourning
+related: aninut, losing-a-spouse, shiva, sheloshim, year-of-mourning
 local: Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel or Rebbetzin Tzipora Labkowski any time, day or night, 925-384-7242.
 ---
 Losing someone you love turns the world upside down. Judaism does not ask mourners to "get over it." Instead, it offers a path, with stages that slowly lead from the rawest grief back toward life, while keeping the bond with the person who passed away. Here is the whole journey in one place, with links to a fuller guide for each step.

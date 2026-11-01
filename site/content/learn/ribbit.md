@@ -2,7 +2,7 @@
 title: Ribbit: The Jewish Law on Interest Between Jews
 description: Why the Torah forbids interest on loans between Jews, who the prohibition covers, the heter iska business arrangement, and free-loan gemachs.
 category: Jewish ideas
-related: business-ethics, tzedakah, jewish-view-on-wealth, maaser
+related: business-ethics, gemach-interest-free-loans, tzedakah, jewish-view-on-wealth, maaser
 local: Lending to or borrowing from another Jew in Lafayette, Moraga or Orinda? Speak with Rabbi Yisroel Labkowski first, 925-384-7242.
 ---
 The Torah forbids one Jew to lend money to another Jew with interest. This law is called **ribbit** (or "neshech"). It surprises many people, because interest is a normal part of modern finance. But it reflects a beautiful idea: between Jews, a loan is meant to be an act of kindness, not a way to make money from someone's need.
