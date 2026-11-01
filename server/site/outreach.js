@@ -188,6 +188,11 @@ function mountOutreach(app, { store, readMember, content, base, ctxOf, upcoming 
   }
 
   // For a signed-in member: upcoming events that fit their family.
+  // Guide titles and photos in the reader's language (for "Welcome back" when they read in another language).
+  app.get('/api/site/guides', (req, res) => {
+    const lang = String(req.get('x-lang') || req.query.lang || 'en'), C = ctxOf({ lang: ['he', 'ru'].includes(lang) ? lang : 'en', method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C, slugs = String(req.query.slugs || '').split(',').slice(0, 5);
+    res.json(Object.fromEntries(slugs.map((s) => [s, C.learn.find((a) => a.slug === s)]).filter(([, a]) => a).map(([s, a]) => [s, { title: a.title }])));
+  });
   app.get('/api/site/for-you', async (req, res) => {
     res.set('Cache-Control', 'no-store');
     try {

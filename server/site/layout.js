@@ -50,10 +50,12 @@ function layout(c, { base, indexable, path, title, description, body, ld = [], i
   const d0 = String(description || o.description).replace(/\s+/g, ' ').trim(), desc = d0.length <= 160 ? d0 : d0.slice(0, 157).replace(/\s+\S*$/, '') + '…';
   const img = image ? (image.startsWith('http') ? image : base + image) : base + '/assets/og.png';
   const robots = !indexable || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1';
-  const nav = NAV.map(([href, label]) => `<a href="${href}"${path.startsWith(href) ? ' aria-current="page"' : ''}>${esc(t(label))}</a>`).join('');
+  // On mid-size screens (laptops) the header shows the six most used links; the menu button keeps them all.
+  const MORE = new Set(['/calendar', '/jewish-lamorinda', '/community']);
+  const nav = NAV.map(([href, label]) => `<a href="${href}"${MORE.has(href) ? ' class="nw-more"' : ''}${path.startsWith(href) ? ' aria-current="page"' : ''}>${esc(t(label))}</a>`).join('');
   const lds = [orgLd(c, base), ...(path === '/' ? [{ '@context': 'https://schema.org', '@type': 'WebSite', name: c.org.name, url: base + '/', inLanguage: lang, potentialAction: { '@type': 'SearchAction', target: base + '/search?q={search_term_string}', 'query-input': 'required name=search_term_string' } }] : []), ...ld].map((x) => `<script type="application/ld+json">${JSON.stringify(x).replace(/</g, '\\u003c')}</script>`).join('\n');
   const parsha = shabbat && shabbat.parsha ? (lang === 'he' ? shabbat.parsha.titleHe : t(shabbat.parsha.title)) : '';
-  const strip = shabbat && shabbat.candles ? `<div role="region" aria-label="${esc(t('This Shabbat'))}"><a class="topstrip" href="/shabbat">${esc(hebrewDate)} · ${esc(t('Shabbat candles'))} ${esc(fmtDay(shabbat.candles.date))} ${esc(tm(shabbat.candles))}${parsha ? ' · ' + esc(parsha) : ''}</a></div>` : '';
+  const strip = shabbat && shabbat.candles ? `<div role="region" aria-label="${esc(t('This Shabbat'))}"><a class="topstrip" href="/shabbat">${esc(String(hebrewDate).replace(/[\u0591-\u05C7]/g, ''))} · ${esc(t('Shabbat candles'))} ${esc(fmtDay(shabbat.candles.date))} ${esc(tm(shabbat.candles))}${parsha ? ' · ' + esc(parsha) : ''}</a></div>` : '';
   const ga = analytics.ga ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(analytics.ga)}"></script><script src="/assets/gtag.js" data-id="${esc(analytics.ga)}"></script>` : '';
   // Language switch: /lang/he?to=/events remembers the choice and opens that page in Hebrew.
   const langs = LANGS.map((l) => `<a href="/lang/${l}?to=${encodeURIComponent(path)}" hreflang="${l}" lang="${l}"${l === lang ? ' aria-current="true"' : ''}>${l === 'en' ? 'EN' : l === 'he' ? 'עב' : 'RU'}</a>`).join('');
@@ -94,7 +96,7 @@ ${campaignBar(c, t, path)}
 <header class="hdr">
   <div class="wrap hdr-in">
     <a class="brand" href="/" aria-label="${esc(o.name)}"><img src="/assets/logo.svg" alt="" width="40" height="26"><span>${esc(o.shortName || o.name)}</span></a>
-    <details class="menu"><summary aria-label="${esc(t('Menu'))}"><span></span></summary><nav aria-label="${esc(t('Main'))}"><a href="/search">${esc(t('Search'))}</a>${nav}<p class="langs">${langs}</p></nav></details>
+    <details class="menu"><summary aria-label="${esc(t('Menu'))}"><span></span></summary><nav aria-label="${esc(t('Main'))}"><a href="/search">${esc(t('Search'))}</a>${nav}<a href="/account" data-account>${esc(t('Sign in'))}</a><p class="langs">${langs}</p></nav></details>
     <nav class="nav-wide" aria-label="${esc(t('Main'))}">${nav}</nav>
     <div class="hdr-cta"><a class="search-btn" href="/search" aria-label="${esc(t('Search'))}"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a><p class="langs wide" aria-label="${esc(t('Language'))}">${langs}</p><a class="btn sm ghost" href="/account" data-account>${esc(t('Sign in'))}</a><a class="btn sm gold" href="/donate">${esc(t('Donate'))}</a></div>
   </div>
@@ -115,9 +117,11 @@ ${signUp(t, path)}${footer(c, t)}
 const NO_SIGNUP = /^\/(subscribe|donate|chai-club|sponsor|campaign|account|forms|admin|newsletter|unsubscribe|kiddush|pushka)/;
 function signUp(t, path) {
   if (NO_SIGNUP.test(path)) return '';
+  const day = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', weekday: 'short' }).format(new Date());
+  const hello = ['Thu', 'Fri', 'Sat'].includes(day) ? t('Shabbat Shalom!') : t('Have a good week!');
   const form = (src, cls) => `<form class="nl-form ${cls}" data-subscribe="${src}" novalidate><label class="sr-only" for="nl-${src}">${esc(t('Email'))}</label><input id="nl-${src}" type="email" name="email" autocomplete="email" required placeholder="${esc(t('Your email'))}"><button class="btn gold" type="submit">${esc(t('Sign me up'))}</button><p class="nl-msg" role="status" aria-live="polite"></p></form>`;
   return `<section class="nl-band" aria-labelledby="nl-h"><div class="wrap nl-in"><div><p class="eyebrow hand">${esc(t('Every week, free'))}</p><h2 id="nl-h">${esc(t('Get the weekly email'))}</h2><p>${esc(t('Shabbat times, upcoming events, the Torah portion in two minutes, a guide to read, a mitzvah and a smile. Unsubscribe any time.'))}</p></div>${form('band', '')}</div></section>
-<aside class="nl-pop" data-nl-pop hidden aria-labelledby="nl-pop-h"><button type="button" class="nl-x" data-nl-close aria-label="${esc(t('Close'))}">×</button><p class="eyebrow hand">${esc(t('Shabbat Shalom!'))}</p><h2 id="nl-pop-h">${esc(t('Get the weekly email'))}</h2><p>${esc(t('Candle lighting, events and a little Torah, once a week, in your language.'))}</p>${form('popup', 'stack')}<p class="nl-small">${esc(t('We never share your email.'))}</p></aside>`;
+${path === '/' ? '' : `<aside class="nl-pop" data-nl-pop hidden aria-labelledby="nl-pop-h"><button type="button" class="nl-x" data-nl-close aria-label="${esc(t('Close'))}">×</button><p class="eyebrow hand">${esc(hello)}</p><h2 id="nl-pop-h">${esc(t('Get the weekly email'))}</h2><p>${esc(t('Candle lighting, events and a little Torah, once a week, in your language.'))}</p>${form('popup', 'stack')}<p class="nl-small">${esc(t('We never share your email.'))}</p></aside>`}`;
 }
 function footer(c, t) {
   const o = c.org, s = o.social || {};
@@ -135,7 +139,7 @@ function footer(c, t) {
     </div>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Community'))}</summary><div class="ftr-links">
-      ${a('/calendar', 'Calendar')}${a('/events', 'Upcoming events')}${a('/shabbat', 'Shabbat times')}${a('/holidays', 'Jewish holidays')}${a('/programs', 'Programs')}${a('/kids', "Kids' corner")}${a('/photos', 'Photos')}${a('/community', 'Community board')}
+      ${a('/calendar', 'Calendar')}${a('/events', 'Upcoming events')}${a('/shabbat', 'Shabbat at Chabad')}${a('/holidays', 'Jewish holidays')}${a('/programs', 'Programs')}${a('/kids', "Kids' corner")}${a('/photos', 'Photos')}${a('/community', 'Community board')}
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t("We're here for you"))}</summary><div class="ftr-links">
@@ -151,7 +155,7 @@ function footer(c, t) {
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Get involved'))}</summary><div class="ftr-links">
-      ${a('/account', 'My account & family')}${a('/forms', 'Sign-ups and orders')}${a('/subscribe', 'Get our weekly email')}${a('/sponsor', 'Sponsor in honor or memory of a loved one')}${a('/mitzvah', 'Do a mitzvah this week')}${a('/get-involved', 'Get involved')}${a('/welcome', 'New to the area?')}${a('/donate', 'Donate')}${a('/legacy', 'Leave a legacy')}<a href="/pushka/">${esc(t('My Pushka app'))}</a><a href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a><a href="/board/">${esc(t('Chai Club'))}</a>
+      ${a('/account', 'My account & family')}${a('/forms', 'Sign-ups and orders')}${a('/subscribe', 'Get our weekly email')}${a('/sponsor', 'Sponsor in honor or memory of a loved one')}${a('/mitzvah', 'Do a mitzvah this week')}${a('/get-involved', 'Get involved')}${a('/welcome', 'New to the area?')}${a('/donate', 'Donate')}${a('/legacy', 'Leave a legacy')}<a href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a><a href="/chai-club">${esc(t('Chai Club'))}</a>
     </div></details>
   </div>
   <div class="wrap ftr-base"><p>&copy; ${new Date().getFullYear()} ${esc(o.name)}. ${esc(o.legal || '')} ${esc(t('Part of the worldwide Chabad-Lubavitch movement.'))}</p><p>${a('/privacy', 'Privacy')} · ${a('/accessibility', 'Accessibility')}</p></div>

@@ -20,7 +20,7 @@ function fromProgram(C, x) {
 }
 
 function banner(b, i) {
-  const img = b.image ? `<img class="bn-img" src="${esc(b.image)}" alt="" ${i ? 'loading="lazy" ' : 'fetchpriority="high" '}decoding="async">` : '';
+  const img = b.image ? `<img class="bn-img" src="${esc(b.image)}" alt="" ${i > 1 ? 'loading="lazy" ' : i ? '' : 'fetchpriority="high" '}decoding="async">` : '';
   return `<article class="bn theme-${themeOf(b.theme)}${img ? ' has-img' : ''}" aria-roledescription="slide" aria-label="${esc(b.title)}">${img}
 <div class="bn-in">${b.eyebrow ? `<p class="bn-eyebrow">${esc(b.eyebrow)}</p>` : ''}<h2>${esc(b.title)}</h2>${b.text ? `<p class="bn-text">${esc(b.text)}</p>` : ''}
 <p class="btns">${b.url ? `<a class="btn gold" href="${esc(b.url)}">${esc(b.button || 'More')}</a>` : ''}${b.url2 ? `<a class="btn ghost-l" href="${esc(b.url2)}">${esc(b.button2)}</a>` : ''}</p></div>
@@ -60,9 +60,7 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, dayGuides =
   const stats = (H.stats || []).filter((s) => s.number && s.label);
   const involved = [
     ['challah', 'Come for a Shabbat meal', 'Join the Rabbi\'s family for Friday night dinner, or we will match you with a host.', '/forms/shabbat-meal'],
-    ['open-book', 'Join a class', 'Torah, Tanya and Hebrew classes every week, for every level.', '/programs/adult-education'],
     ['hands-heart', 'Volunteer', 'Cook, drive, set up, visit: lend a hand at events and for families in need.', '/forms/volunteer'],
-    ['envelope', 'Get the weekly email', 'Shabbat times, events and a short Torah thought, once a week.', '/subscribe'],
     ['coin', 'Join the Chai Club', 'Become a monthly partner and carry Jewish life in Lamorinda.', '/chai-club'],
     ['sparkles', 'Do a mitzvah this week', 'Pick one good deed and join the community count.', '/mitzvah'],
   ];
@@ -79,7 +77,7 @@ ${campaignBanner(X)}
   ${ks ? `<span><small>${esc(t('Kabbalat Shabbat'))}</small><b>${esc(fmtClock(ks, X.lang))}</b></span>` : ''}
   <span><small>${esc(t('Services'))}</small><b>${esc(t('Saturday 10 AM'))}</b></span>
   ${sh.havdalah ? `<span><small>${esc(t('Shabbat ends'))}</small><b>${esc(X.tm(sh.havdalah))}</b></span>` : ''}
-  <a class="btn sm ghost" href="/shabbat">${esc(t('Shabbat at Chabad'))} →</a>
+  <span class="ss-btns"><a class="btn sm gold" href="/forms/shabbat-meal">${esc(t('Shabbat dinner with the Rabbi'))}</a><a class="btn sm ghost" href="/shabbat">${esc(t('Shabbat at Chabad'))} →</a></span>
   <div class="quick" data-shabbat-quick data-date="${sh.candles ? sh.candles.date : ''}" data-day="${sh.candles ? esc(X.shortDate(sh.candles.date)) : ''}" hidden></div>
 </div></section>
 <section class="wrap sec" data-continue hidden></section>
@@ -89,6 +87,10 @@ ${campaignBanner(X)}
   <div class="sbs">${small.map(tile).join('')}</div>
   ${(o.weekly || []).length ? `<ul class="week-strip">${o.weekly.map((w) => `<li><a href="${esc(w.link || '/events')}"><b>${esc(w.day)}</b> ${esc(w.name)} <span class="muted">${esc(w.time)}</span></a></li>`).join('')}</ul>` : ''}
 </section>
+<section class="band help-band"><div class="wrap here">
+  <div><h2>${esc(t("We're here for you"))}</h2><p>${esc(t('Illness, a loss, a new baby, a wedding, a hard time at home or at work: call the Rabbi first. We help with everything, from beginning to end.'))}</p></div>
+  <p class="btns"><a class="btn gold" href="tel:${esc(phone)}" dir="ltr">${esc(t('Call {phone}', { phone: o.phone }))}</a><a class="btn ghost" href="/help">${esc(t('All life situations'))}</a></p>
+</div></section>
 ${dayGuides.length ? `<section class="wrap sec">${guideCards(X, dayGuides, t('This week on the Jewish calendar'))}</section>` : ''}
 ${H.story ? `<section class="wrap sec"><div class="story">
   ${H.story.image ? `<div class="story-photo"><img src="${esc(H.story.image)}" alt="" loading="lazy" decoding="async">${H.story.tag ? `<span class="tag">${esc(H.story.tag)}</span>` : ''}</div>` : ''}
@@ -100,22 +102,18 @@ ${H.story ? `<section class="wrap sec"><div class="story">
   <div class="sec-h"><h2>${esc(t('What we have built together'))}</h2><a href="/about">${esc(t('About us'))} →</a></div>
   <p class="lead-d">${esc(t('Rabbi Yisroel and Rebbetzin Tzipora Labkowski, emissaries of the Lubavitcher Rebbe, and a community that keeps growing. Thank you to everyone who makes it happen.'))}</p>
   ${stats.length ? `<div class="stats">${stats.map((s) => `<div class="stat"><b>${esc(s.number)}</b><span>${esc(s.label)}</span></div>`).join('')}</div>` : ''}
-  <div class="hl">${(H.highlights || []).map((h) => `<a class="hl-i" href="${esc(h.url || '/about')}">${artImg(h.art || 'star-of-david')}<strong>${esc(h.title)}</strong><span>${esc(h.text)}</span></a>`).join('')}
-    <a class="hl-i" href="/learn">${artImg('open-book')}<strong>${esc(t('{n} guides to Jewish life', { n: C.learn.length }))}</strong><span>${esc(t('Free, friendly answers in English, Hebrew and Russian, from Shabbat candles to Kaddish.'))}</span></a></div>
+  <div class="hl"><a class="hl-i" href="/learn">${artImg('open-book')}<strong>${esc(t('{n} guides to Jewish life', { n: C.learn.length }))}</strong><span>${esc(t('Free, friendly answers in English, Hebrew and Russian, from Shabbat candles to Kaddish.'))}</span></a></div>
 </div></section>
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Get involved'))}</h2><a href="/get-involved">${esc(t('More ways'))} →</a></div>
   <div class="gi">${involved.map(([a, h, p, u]) => `<a class="gi-i" href="${u}">${artImg(a)}<strong>${esc(t(h))}</strong><span>${esc(t(p))}</span></a>`).join('')}</div>
 </section>
-<section class="wrap sec photos-sec">
+${pics.length ? `<section class="wrap sec photos-sec">
   <div class="sec-h"><h2>${esc(t('Moments from our community'))}</h2>${pics.length ? `<a href="/photos">${esc(t('More photos'))} →</a>` : ''}</div>
   ${pics.length ? `<div class="pics">${pics.slice(0, 8).map((p) => `<a href="${esc(p.link)}" rel="noopener" target="_blank"><img src="${esc(p.src)}" alt="${esc(p.alt)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}
   ${o.social && o.social.facebook ? `<p class="follow"><a class="btn ghost" href="${esc(o.social.facebook)}" rel="noopener" target="_blank">${esc(t('Follow us on Facebook'))}</a>${o.social.instagram ? ` <a class="btn ghost" href="${esc(o.social.instagram)}" rel="noopener" target="_blank">${esc(t('Follow us on Instagram'))}</a>` : ''}</p>` : ''}
-</section>
-<section class="band help-band"><div class="wrap here">
-  <div><h2>${esc(t("We're here for you"))}</h2><p>${esc(t('Illness, a loss, a new baby, a wedding, a hard time at home or at work: call the Rabbi first. We help with everything, from beginning to end.'))}</p></div>
-  <p class="btns"><a class="btn gold" href="tel:${esc(phone)}" dir="ltr">${esc(t('Call {phone}', { phone: o.phone }))}</a><a class="btn ghost" href="/help">${esc(t('All life situations'))}</a></p>
-</div></section>
+</section>` : ''}
+
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Try this'))}</h2></div>
   <div class="try">
@@ -125,10 +123,8 @@ ${H.story ? `<section class="wrap sec"><div class="story">
     <a href="/parsha">${artImg('torah-scroll')}<span>${esc(t("This week's Torah portion"))}</span></a>
     <a href="/tools/bar-bat-mitzvah">${artImg('tallit')}<span>${esc(t('Find your Bar Mitzvah parshah'))}</span></a>
     <a href="/jewish-holidays-${today.slice(0, 4)}">${artImg('calendar')}<span>${esc(t('Jewish holidays this year'))}</span></a>
-    <button type="button" data-chat-open>${artImg('chat-bubble')}<span>${esc(t('Ask us anything'))}</span></button>
-    <a href="/learn">${artImg('open-book')}<span>${esc(t('Learn about Judaism'))}</span></a>
-    ${nh && nh.slug === 'chanukah' && days <= 45 ? `<a href="/menorah">${artImg('menorah')}<span>${esc(t('Light the menorah'))}</span></a>` : ''}
-    ${nh && nh.slug === 'chanukah' && days <= 45 ? `<a href="/dreidel">${artImg('dreidel')}<span>${esc(t('Spin the dreidel'))}</span></a>` : ''}
+    ${nh && nh.slug === 'chanukah' && days <= 21 ? `<a href="/menorah">${artImg('menorah')}<span>${esc(t('Light the menorah'))}</span></a>` : ''}
+    ${nh && nh.slug === 'chanukah' && days <= 21 ? `<a href="/dreidel">${artImg('dreidel')}<span>${esc(t('Spin the dreidel'))}</span></a>` : ''}
   </div>
 </section>
 ${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Community news'))}</h2><a href="/community">${esc(t('Community board'))} →</a></div><div class="grid">${posts.map((i) => `<a class="card tile" href="/community"><p class="eyebrow">${esc(t(i.kind === 'mazal-tov' ? 'Mazal Tov' : i.kind === 'shiva' ? 'Condolences' : 'News'))}</p><h3>${esc(i.title)}</h3></a>`).join('')}</div></section>` : ''}`;

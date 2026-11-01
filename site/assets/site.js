@@ -129,7 +129,7 @@
     try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname }) }).catch(function () {}); } catch (e) {}
   })();
   if (store.get('cl_signed')) {
-    var a = $('[data-account]'); if (a) a.textContent = T('My account');
+    Array.prototype.forEach.call(document.querySelectorAll('[data-account]'), function (a) { a.textContent = T('My account'); }); // header button and the menu
     // So the Rabbi can suggest events that fit (only when "Suggest things for my family" is on in My account).
     var here = location.pathname.replace(/^\/(he|ru)(?=\/)/, '');
     if (/^\/(learn|help|programs|holidays|events|forms)\/[a-z0-9-]+$|^\/kaddish$/.test(here)) fetch('/api/site/seen', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: here }) }).catch(function () {});
@@ -148,16 +148,26 @@
     var bare = function (p) { return String(p || '').replace(/^\/(he|ru)(?=\/)/, ''); }, here = bare(location.pathname);
     if (/^\/learn\/[a-z0-9-]+$/.test(here)) {
       var h1 = $('h1'), rn = $('.rn-main'), rt = rn && rn.querySelector('strong'), ph = $('.page-photo img'), ri = rn && rn.querySelector('img.gc-img');
-      store.set('cl_last', { p: here, t: h1 ? h1.textContent.trim() : '', img: ph ? ph.getAttribute('src').replace(/\.jpg$/, '-sm.jpg') : '', n: rn ? bare(rn.getAttribute('href')) : '', nt: rt ? rt.textContent.trim() : '', nimg: ri ? ri.getAttribute('src') : '', at: Date.now() });
+      store.set('cl_last', { p: here, t: h1 ? h1.textContent.trim() : '', img: ph ? ph.getAttribute('src').replace(/\.jpg$/, '-sm.jpg') : '', n: rn ? bare(rn.getAttribute('href')) : '', nt: rt ? rt.textContent.trim() : '', nimg: ri ? ri.getAttribute('src') : '', lang: LANG, at: Date.now() });
     }
     var cont = $('[data-continue]'), last = store.get('cl_last');
     if (!cont || !last || !last.p || !last.t || Date.now() - last.at > 45 * 864e5) return;
+    var show = function () {
     var tile = function (href, img, eyebrow, title) { return el('a', { class: 'card tile' + (img ? ' has-photo' : ''), href: P(href) }, [img ? el('img', { class: 'tile-photo', src: img, alt: '', loading: 'lazy', width: '560', height: '380' }) : null, el('p', { class: 'eyebrow', text: eyebrow }), el('h3', { text: title })]); };
     var links = [tile(last.p, last.img, T('Pick up where you left off'), last.t)];
     if (last.n && last.nt) links.push(tile(last.n, last.nimg && last.nimg !== last.img ? last.nimg : '', T('Read next'), last.nt)); // never the same photo twice
     cont.appendChild(el('div', { class: 'sec-h' }, [el('h2', { text: T('Welcome back!') })]));
     cont.appendChild(el('div', { class: 'grid' }, links));
     cont.hidden = false;
+    };
+    // Read in another language: show the titles in this one.
+    if ((last.lang || 'en') === LANG) return show();
+    var slug = function (p) { return String(p || '').replace(/^\/learn\//, ''); };
+    api('GET', '/guides?slugs=' + [slug(last.p), slug(last.n)].filter(Boolean).join(',')).then(function (r) {
+      if (r[slug(last.p)]) last.t = r[slug(last.p)].title;
+      if (last.n && r[slug(last.n)]) last.nt = r[slug(last.n)].title;
+      show();
+    }, show);
   })();
 
   // ---------- RSVP ----------

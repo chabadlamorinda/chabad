@@ -46,7 +46,9 @@ html, body { overflow-x: clip; }
 .menu summary span::before { position: absolute; top: -7px; } .menu summary span::after { position: absolute; top: 7px; }
 .menu nav { position: absolute; left: 0; right: 0; top: 100%; background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 16px 16px; display: grid; }
 .menu nav a { padding: 12px 8px; border-bottom: 1px solid var(--line); }
-@media (min-width: 1400px) { .nav-wide { display: flex; } .menu { display: none; } .hdr-cta { margin-inline-start: 8px; } }
+@media (min-width: 1100px) { .nav-wide { display: flex; } .hdr-cta { margin-inline-start: 8px; } }
+@media (min-width: 1100px) and (max-width: 1399px) { .nav-wide .nw-more { display: none; } .nav-wide a { padding: 8px 8px; } }
+@media (min-width: 1400px) { .menu { display: none; } }
 @media (max-width: 420px) { .brand span { font-size: 1rem; } .hdr-cta .ghost { display: none; } }
 
 /* buttons */
@@ -899,3 +901,9 @@ form.tool .btn.gold { justify-self: start; min-width: 200px; }
 @media (max-width: 520px) { .nl-pop { inset-inline: 12px; bottom: 12px; width: auto; } }
 @media (prefers-reduced-motion: reduce) { .nl-pop { transition: none; } }
 .tile.has-photo > .eyebrow { margin: 12px 0 0; } .tile.has-photo > .eyebrow + h3 { margin-top: 2px; }
+
+/* Home page: the Shabbat strip's buttons, and room for the "Ask us" button on phones */
+.ss-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 600px) { .shabbat-strip { padding-bottom: 76px; } }
+@media (max-width: 440px) { html[lang="ru"] .brand span { font-size: .82rem; white-space: normal; line-height: 1.15; max-width: 7.5em; } }
+.more-results { margin-top: 12px; } .more-results > summary { list-style: none; display: inline-block; cursor: pointer; } .more-results > summary::-webkit-details-marker { display: none; } .more-results[open] > summary { display: none; }
