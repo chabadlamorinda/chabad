@@ -2,7 +2,7 @@
 title: Who Is a Jew? Jewish Identity According to Jewish Law
 description: A gentle explanation of who is Jewish according to traditional Jewish law, why it passes through the mother, and how conversion works.
 category: Jewish ideas
-related: jewish-women, russian-speaking-jews-in-lamorinda, jewish-genealogy, hebrew-names, noahide-laws, teshuvah
+related: jewish-women, why-be-jewish, russian-speaking-jews-in-lamorinda, jewish-genealogy, hebrew-names, noahide-laws, teshuvah
 local: If you have questions about your own Jewish background, Rabbi Labkowski is happy to talk privately and kindly. Call 925-384-7242.
 ---
 According to traditional Jewish law (halacha), a person is Jewish if their mother is Jewish, or if they converted to Judaism according to Jewish law. Jewish identity is not lost by lack of observance, belief or knowledge: a Jew is always a Jew.

@@ -2,9 +2,9 @@
   { "id": "mourning", "title": "When we lose someone, step by step", "intro": "From the last days to the yearly yahrzeit: what Judaism teaches, one step at a time.",
     "guides": ["when-a-loved-one-is-dying", "aninut", "jewish-funeral", "kriah", "shiva", "setting-up-a-shiva-house", "comforting-mourners", "kaddish", "sheloshim", "year-of-mourning", "unveiling", "yahrzeit", "yizkor", "visiting-a-grave"] },
   { "id": "shabbat", "title": "Shabbat, step by step", "intro": "From lighting the candles on Friday to Havdalah on Saturday night.",
-    "guides": ["shabbat-for-beginners", "shabbat-candles", "kabbalat-shabbat", "shalom-aleichem", "kiddush", "hamotzi", "shabbat-meals", "zemirot", "shabbat-day", "thirty-nine-melachot", "havdalah"] },
+    "guides": ["shabbat-for-beginners", "preparing-for-shabbat", "shabbat-candles", "kabbalat-shabbat", "shalom-aleichem", "kiddush", "hamotzi", "shabbat-meals", "zemirot", "shabbat-day", "thirty-nine-melachot", "havdalah"] },
   { "id": "kosher", "title": "Keeping kosher, step by step", "intro": "What kosher means, how to shop, and how to set up a kosher kitchen.",
-    "guides": ["kosher", "kosher-symbols", "meat-and-milk", "kosher-kitchen", "kosher-meat", "tevilat-kelim", "checking-for-insects", "kosher-on-a-budget", "keeping-kosher-with-family", "kosher-when-traveling"] },
+    "guides": ["kosher", "kosher-symbols", "kosher-certification", "meat-and-milk", "kosher-kitchen", "kosher-meat", "chalav-yisrael", "kosher-wine", "tevilat-kelim", "checking-for-insects", "kosher-on-a-budget", "keeping-kosher-with-family", "kosher-when-traveling"] },
   { "id": "prayer", "title": "Learning to pray", "intro": "From the first words in the morning to the Shema at night.",
     "guides": ["prayer", "modeh-ani", "morning-blessings", "shema", "amidah", "siddur", "daily-prayers", "minyan", "talking-to-g-d-in-your-own-words", "why-pray", "bedtime-shema"] },
   { "id": "marriage", "title": "Love and marriage, step by step", "intro": "From dating and the engagement to the wedding and a happy home.",
@@ -20,7 +20,7 @@
   { "id": "high-holidays", "title": "The High Holidays, step by step", "intro": "From the month of Elul through Rosh Hashanah to Yom Kippur.",
     "guides": ["elul", "selichot", "rosh-hashanah-simanim", "shofar", "tashlich", "teshuvah", "kapparot", "kol-nidre", "yom-kippur-fast"] },
   { "id": "big-questions", "title": "Life's big questions", "intro": "G-d, the soul, free will, suffering and what it all means.",
-    "guides": ["belief-in-g-d", "why-pray", "the-soul", "purpose-of-life", "free-will", "why-bad-things-happen", "hashgacha-pratit", "miracles-jewish-view", "afterlife", "moshiach"] },
+    "guides": ["why-be-jewish", "belief-in-g-d", "why-pray", "the-soul", "purpose-of-life", "free-will", "why-bad-things-happen", "hashgacha-pratit", "miracles-jewish-view", "afterlife", "moshiach"] },
   { "id": "character", "title": "Growing as a person", "intro": "Jewish wisdom for becoming kinder, calmer and more honest, one trait at a time.",
-    "guides": ["humility", "anger-jewish-view", "patience", "jealousy-and-envy", "hakarat-hatov", "honesty-and-truth", "lashon-hara", "giving-criticism-kindly", "forgiveness-and-making-peace", "changing-a-bad-habit"] }
+    "guides": ["humility", "judging-others-favorably", "anger-jewish-view", "patience", "jealousy-and-envy", "hakarat-hatov", "simcha", "honesty-and-truth", "lashon-hara", "giving-criticism-kindly", "forgiveness-and-making-peace", "changing-a-bad-habit"] }
 ]

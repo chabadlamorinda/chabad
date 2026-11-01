@@ -2,7 +2,7 @@
 title: Shabbat Candles: How and When to Light, With the Blessing
 description: How to light Shabbat candles: the time, how many candles, the blessing in Hebrew and English, and who lights. A simple step-by-step guide.
 category: Shabbat & holidays
-related: shabbat, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, jewish-women, havdalah
+related: shabbat, preparing-for-shabbat, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, jewish-women, havdalah
 local: We can give you a free candle lighting kit with candlesticks and a blessing card, and answer any questions. Call 925-384-7242.
 ---
 Shabbat candles are lit by Jewish women and girls 18 minutes before sunset every Friday, and before Jewish holidays. Lighting them welcomes Shabbat into the home and brings light, peace and blessing to the whole family.
