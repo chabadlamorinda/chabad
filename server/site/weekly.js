@@ -186,7 +186,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
         ON CONFLICT (email) DO UPDATE SET status='confirmed', confirmed_at=now(), lang=$2`, [email, lang]);
       await q('DELETE FROM email_unsubscribes WHERE email=$1', [email]);
     }
-    res.type('html').send(page(X2, t('Weekly email'), ok ? `<p>${esc(t('You are signed up. The weekly email will come every week, with Shabbat times, events and more.'))}</p>` : `<p>${esc(t('This link is not valid.'))}</p>`));
+    res.type('html').send(page(X2, t('Weekly email'), ok ? `<p>${esc(t('You are signed up. The weekly email will come every week, with Shabbat times, events and more.'))}</p><p>${esc(t('While you wait for the first one:'))}</p><p><a href="${X2.path('/events')}">${esc(t('Upcoming events'))}</a> · <a href="${X2.path('/this-week')}">${esc(t('This week in Jewish Lamorinda'))}</a> · <a href="${X2.path('/learn')}">${esc(t('Jewish guides'))}</a></p>` : `<p>${esc(t('This link is not valid.'))}</p>`));
   });
 
   const unsubscribe = async (email) => { await ensure(); await q('INSERT INTO email_unsubscribes (email) VALUES ($1) ON CONFLICT DO NOTHING', [email]); await q('UPDATE members SET news=FALSE WHERE lower(email)=$1 OR lower(verified_email)=$1', [email]); await q("UPDATE email_subscribers SET status='unsubscribed' WHERE email=$1", [email]); };

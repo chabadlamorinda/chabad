@@ -54,7 +54,7 @@ ${tile('/account', 'Create your free account', 'Save your family once and RSVP t
 ${tile('/events', 'Come to an event', 'Bring a friend. Every Jew is welcome.')}
 ${tile('/sponsor', 'Sponsor in honor or memory of a loved one', 'Mark a yahrzeit, birthday or simcha with a Kiddush, a Shabbat dinner or a class.')}
 ${tile('/community#share', 'Share your news', 'Births, weddings, bar and bat mitzvahs, and notices for the community.')}
-${tile('/programs/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.')}
+${tile('/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.')}
 ${tile('/contact?about=Host%20a%20Shabbat%20meal', 'Host a Shabbat meal', 'Open your table to a newcomer or a student. We will make the match.')}
 ${tile('/tehillim', 'Say Tehillim for others', 'Join in praying for those on our community prayer list.')}
 ${tile('/community?k=event-idea#share', 'Suggest an event or class', 'Tell us what you would love to see.')}

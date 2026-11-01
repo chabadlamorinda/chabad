@@ -204,6 +204,8 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
   r.get('/programs/:slug', wrap(async (req, res, next) => {
     const X = ctxOf(req), { t, C } = X, p = C.programs.find((x) => x.slug === req.params.slug);
     if (!p) return next();
+    // A program that is its own page on the website (the Chai Club): one page, not two.
+    if (/^\/[^/]/.test(p.url || '') && !(C.forms || []).some((f) => f.program === p.slug)) return res.redirect(301, X.path(p.url));
     const evs = upcoming(new Date(), C).filter((e) => e.program === p.slug), cnt = await counts();
     const body = `<article class="wrap sec narrow"><p class="crumbs"><a href="/programs">${esc(t('Programs'))}</a> ›</p>
 <h1>${esc(p.name)}</h1>${p.audience ? `<p class="eyebrow">${esc(p.audience)}</p>` : ''}<p class="lead-d">${esc(p.summary)}</p>

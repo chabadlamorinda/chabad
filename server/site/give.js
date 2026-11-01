@@ -61,7 +61,7 @@ function mountGive(r, { render, wrap, ctxOf }) {
 <div class="club-levels">${levels.map(([id, min, nm], i, a) => `<div class="club-l ${id}">${medal(id, 52)}<b>${esc(t(nm))}</b><span>${esc(range(i, a, min))}</span><span class="cl-count" data-count="${id}"></span></div>`).join('')}</div>
 <h2>${esc(t('Join the Chai Club'))}</h2>
 ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
-<div class="sec-h"><h2>${esc(t('Our Chai Club partners'))}</h2></div>
+<div class="sec-h" id="partners"><h2>${esc(t('Our Chai Club partners'))}</h2></div>
 <p class="muted">${esc(t('Thank you to every partner. Partners who chose to be listed are shown here by level; amounts are never shown.'))}</p>
 <div class="honor" data-club-board>${levels.map(([id, min, nm], i, a) => `<section class="hb-tier ${id}" data-tier="${id}"><header>${medal(id, 40)}<div><h3>${esc(t(nm))}</h3><span class="muted">${esc(range(i, a, min))}</span></div><span class="hb-count" data-count="${id}"></span></header>
 <ul class="hb-names"></ul><p class="hb-quiet muted" hidden></p><p class="hb-empty muted">${esc(t('Be the first to join!'))} <a href="#give">${esc(t('Join the Chai Club'))}</a></p><template>${medal(id, 22)}</template></section>`).join('')}</div>

@@ -37,7 +37,7 @@ New baby, bar mitzvah, a wedding, or a hard time? The Rabbi and Rebbetzin are he
 
 ## Give back
 
-Once you are settled, consider the [Chai Club](/programs/chai-club), monthly partners who keep Jewish life here going with no dues, or [volunteer](/forms/volunteer) an hour or a season.
+Once you are settled, consider the [Chai Club](/chai-club), monthly partners who keep Jewish life here going with no dues, or [volunteer](/forms/volunteer) an hour or a season.
 
 ## Common questions
 

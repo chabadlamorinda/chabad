@@ -3,7 +3,7 @@ title: Supporting Chabad of Lamorinda: No Dues, the Chai Club and Ways to Give
 description: Chabad of Lamorinda in Lafayette has no dues. How families in Lafayette, Moraga and Orinda support it: Chai Club, funds, Building Campaign, ways to give.
 category: Lamorinda
 related: tzedakah, pushka, maaser, chesed
-local: Become a monthly partner in the Chai Club at chabadoflamorinda.com/programs/chai-club, or give at chabadoflamorinda.com/donate.
+local: Become a monthly partner in the Chai Club at chabadoflamorinda.com/chai-club, or give at chabadoflamorinda.com/donate.
 ---
 Chabad of Lamorinda has **no membership dues** and no building fund fee. Anyone can walk in for Shabbat, a class, a holiday or help in a hard time, and nobody is ever asked for a ticket. So how does it all happen? Through the generosity of families in Lafayette, Moraga, Orinda and the nearby towns who believe in a Jewish home that is open to every Jew. Every gift is tax deductible: Chabad of Lamorinda is a 501(c)(3), tax ID 47-4642750.
 
@@ -13,7 +13,7 @@ Shabbat services and the weekly Kiddush lunch. Shabbat dinners with the Rabbi's 
 
 ## The Chai Club: monthly partners
 
-The [Chai Club](/programs/chai-club) is the backbone of our community. Partners give a monthly gift in multiples of 18, the number for "chai," life: **$18, $36, $72, $180, $360** and up. A steady monthly gift, at any level, lets us plan with confidence. Give Chai, get Chai!
+The [Chai Club](/chai-club) is the backbone of our community. Partners give a monthly gift in multiples of 18, the number for "chai," life: **$18, $36, $72, $180, $360** and up. A steady monthly gift, at any level, lets us plan with confidence. Give Chai, get Chai!
 
 ## Choose where your gift goes
 
@@ -63,4 +63,4 @@ Yes. Chabad of Lamorinda is a 501(c)(3) nonprofit, tax ID 47-4642750.
 Yes. Recommend a grant to Chabad of Lamorinda, tax ID 47-4642750. For stock, crypto, wire or ACH, call 925-384-7242 or email info@chabadoflamorinda.com.
 
 ### What is the Chai Club?
-A monthly partnership in multiples of 18, starting at $18 a month. [Join the Chai Club](/programs/chai-club).
+A monthly partnership in multiples of 18, starting at $18 a month. [Join the Chai Club](/chai-club).

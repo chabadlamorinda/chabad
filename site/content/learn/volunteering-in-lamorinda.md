@@ -40,7 +40,7 @@ The Torah teaches that the world stands on three things: Torah, prayer and acts 
 - See all the ways to take part on the [get involved page](/get-involved).
 - Come to an event on the [events calendar](/events) and bring a friend.
 - [Get our weekly email](/forms/newsletter) to hear what is coming up.
-- Support the community as a monthly [Chai Club](/programs/chai-club) partner.
+- Support the community as a monthly [Chai Club](/chai-club) partner.
 
 ## Common questions
 

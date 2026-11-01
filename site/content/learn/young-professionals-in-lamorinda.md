@@ -45,7 +45,7 @@ Hoping to meet the right person? Read our guide to [Jewish dating](/learn/jewish
 
 ## Give back
 
-[Volunteer](/forms/volunteer) an hour or a season: holiday events, setting up the sukkah, baking challah, Kiddush setup, visiting seniors, tutoring or photography. Or join the [Chai Club](/programs/chai-club), monthly partners who keep Jewish life in Lamorinda going with no dues.
+[Volunteer](/forms/volunteer) an hour or a season: holiday events, setting up the sukkah, baking challah, Kiddush setup, visiting seniors, tutoring or photography. Or join the [Chai Club](/chai-club), monthly partners who keep Jewish life in Lamorinda going with no dues.
 
 ## Common questions
 
