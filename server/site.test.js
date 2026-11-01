@@ -450,6 +450,23 @@ test('languages: Hebrew and Russian pages, automatic choice, switch, hreflang', 
   assert.match((await c.call('GET', '/sitemap.xml')).text, /<loc>http:\/\/site\.test\/he\/learn\/mezuzah<\/loc>/);
 });
 
+test('lists put what visitors open most first (popular.js), urgent help stays first, the written order breaks ties', async () => {
+  const popular = require('./site/popular.js'), c = client();
+  await c.call('GET', '/'); // let the first background read finish before setting counts by hand
+  popular.setCounts({ '/kaddish': 40, '/help/new-baby': 12, '/help/disputes': 2, '/programs/hebrew-school': 30, '/learn/kosher-symbols': 25 });
+  try {
+    const help = (await c.call('GET', '/help')).text, at = (h) => help.indexOf('href="' + h + '"');
+    assert.ok(at('/help/someone-passed-away') < at('/kaddish') && at('/help/end-of-life') < at('/kaddish'), 'urgent help always first');
+    assert.ok(at('/kaddish') < at('/help/new-baby') && at('/help/new-baby') < at('/help/someone-is-sick'), 'most opened next');
+    assert.ok(at('/help/getting-married') < at('/help/disputes'), 'a page with too few views keeps its place');
+    const progs = (await c.call('GET', '/programs')).text;
+    const grid = progs.indexOf('<div class="grid">');
+    assert.equal(progs.indexOf('href="/programs/', grid), progs.indexOf('href="/programs/hebrew-school"', grid), 'the most opened program first');
+    const learn = (await c.call('GET', '/learn')).text, kos = learn.indexOf('id="kosher"');
+    assert.equal(learn.indexOf('href="/learn/', kos), learn.indexOf('href="/learn/kosher-symbols"', kos), 'the most read kosher guide leads its subject');
+  } finally { popular.setCounts({}); }
+});
+
 test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const c = client();
   for (const p of ['/help', '/help/someone-passed-away', '/help/someone-is-sick', '/kaddish', '/tehillim', '/sponsor', '/he/help', '/ru/kaddish', '/he/tehillim']) assert.equal((await c.call('GET', p)).status, 200, p);

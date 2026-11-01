@@ -118,6 +118,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountSeo(r, { content, base, indexable, upcoming: pages.upcoming, more: async () => [...(yearly ? yearly.paths(content()) : []), ...(ask ? (await ask.published()).map((x) => '/ask/' + encodeURIComponent(x.slug)) : [])] });
   mountTools(r, { render: pages.render, wrap, ctxOf });
   const reading = require('./reading.js').mountReading({ store, content, log });
+  // Lists put what visitors open most first (popular.js).
+  require('./popular.js').start(store && store.pool ? (t, p) => store.pool.query(t, p) : null, log);
   mountSearch(r, { render: pages.render, wrap, ctxOf, logSearch: reading.logSearch });
   yearly = mountYearly(r, { render: pages.render, wrap, ctxOf, base, upcoming: pages.upcoming });
   mountLocal(r, { content, base, wrap, ctxOf, ...pages });

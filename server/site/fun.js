@@ -2,6 +2,7 @@
 // candles in the right order, with the blessings and tonight's time for Lafayette) and /chanukah-quiz (ten questions,
 // a score to share). site.js runs all three ([data-dreidel], [data-menorah], [data-quiz]).
 'use strict';
+const { byPopularity } = require('./popular.js');
 const { esc } = require('./md.js');
 const Z = require('./zmanim.js');
 
@@ -94,9 +95,9 @@ ${blessings.map(([he, tr, en, firstOnly]) => `<div class="card mn-bless${firstOn
     const body = `<section class="wrap sec">
 <h1>${esc(t("Kids' corner"))}</h1>
 <p class="lead-d">${esc(t('Games to play, holidays to celebrate together, and programs for children in Lafayette, Moraga and Orinda.'))}</p>
-<div class="grid kids-play">${play.map(([h, tag, title, text]) => `<a class="card play-cta" href="${h}"><span class="hand">${esc(tag)}</span><strong>${esc(title)}</strong><span>${esc(text)}</span></a>`).join('')}</div>
+<div class="grid kids-play">${byPopularity(play, ([h]) => h).map(([h, tag, title, text]) => `<a class="card play-cta" href="${h}"><span class="hand">${esc(tag)}</span><strong>${esc(title)}</strong><span>${esc(text)}</span></a>`).join('')}</div>
 ${guideCards(X, guides.slice(0, 6), t('Celebrate together'))}
-${progs.length ? `<h2>${esc(t('Programs for children'))}</h2><div class="grid">${progs.map((p) => `<a class="card tile" href="/programs/${p.slug}"><h3>${esc(p.name)}</h3><p>${esc(p.summary || '')}</p></a>`).join('')}</div>` : ''}
+${progs.length ? `<h2>${esc(t('Programs for children'))}</h2><div class="grid">${byPopularity(progs, (p) => '/programs/' + p.slug).map((p) => `<a class="card tile" href="/programs/${p.slug}"><h3>${esc(p.name)}</h3><p>${esc(p.summary || '')}</p></a>`).join('')}</div>` : ''}
 ${evs.length ? `<h2>${esc(t('Coming up for kids and families'))}</h2><ul class="list">${evs.map((e) => `<li><a href="/events/${e.slug}"><strong>${esc((e[X.lang] && e[X.lang].title) || e.title)}</strong></a><br><span class="muted">${esc(X.when(e))}</span></li>`).join('')}</ul>` : ''}
 ${guideCards(X, parents, t('For parents'))}
 </section>`;

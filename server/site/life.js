@@ -5,6 +5,7 @@
 //                        and adding a name to the prayer list; every occasion invites charity in the person's merit
 //  /sponsor              sponsor a Kiddush, a Shabbat dinner or a class for a yahrzeit, birthday, simcha or recovery
 'use strict';
+const { byPopularity } = require('./popular.js');
 const { md, esc } = require('./md.js');
 const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
@@ -40,10 +41,12 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
     const body = `<section class="wrap sec"><h1>${esc(t("We're here for you"))}</h1>
 <p class="lead-d">${esc(t('Whatever you are going through, in joy or in sorrow, Chabad of Lamorinda is here. Call the Rabbi first: we help with everything, from beginning to end, for every Jew, no membership needed.'))}</p>
 <p class="btns">${phoneLink(o)}<a class="btn ghost" href="/help/talk-to-the-rabbi">${esc(t('Talk to the Rabbi'))}</a></p>
-<h2 class="sr-only">${esc(t('All life situations'))}</h2><div class="grid help-grid">${C.help.map((h) => `<a class="card tile${h.urgent === 'yes' ? ' urgent' : ''}" href="/help/${h.slug}"><h3>${esc(h.title)}</h3><p>${esc(h.description)}</p></a>`).join('')}
-<a class="card tile" href="/kaddish"><h3>${esc(t('Saying Kaddish'))}</h3><p>${esc(t('Join our minyan, or arrange for Kaddish to be said for your loved one.'))}</p></a>
-<a class="card tile" href="/tehillim"><h3>${esc(t('Tehillim for every occasion'))}</h3><p>${esc(t('Which Psalms to say for someone sick, a birth, a yahrzeit or a birthday.'))}</p></a>
-<a class="card tile" href="/sponsor"><h3>${esc(t('Sponsor in honor or memory of a loved one'))}</h3><p>${esc(t('Mark a yahrzeit, birthday or simcha with the community.'))}</p></a></div>
+<h2 class="sr-only">${esc(t('All life situations'))}</h2><div class="grid help-grid">${byPopularity([
+  ...C.help.map((h) => ({ href: '/help/' + h.slug, title: h.title, text: h.description, urgent: h.urgent === 'yes' })),
+  { href: '/kaddish', title: t('Saying Kaddish'), text: t('Join our minyan, or arrange for Kaddish to be said for your loved one.') },
+  { href: '/tehillim', title: t('Tehillim for every occasion'), text: t('Which Psalms to say for someone sick, a birth, a yahrzeit or a birthday.') },
+  { href: '/sponsor', title: t('Sponsor in honor or memory of a loved one'), text: t('Mark a yahrzeit, birthday or simcha with the community.') },
+], (x) => x.href, { pinned: (x) => x.urgent }).map((x) => `<a class="card tile${x.urgent ? ' urgent' : ''}" href="${x.href}"><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></a>`).join('\n')}</div>
 <p class="muted">${esc(t('In a medical emergency call 911. The Rabbi is not a substitute for medical, legal or mental health care, and can refer you to trusted professionals.'))}</p></section>`;
     await render(res, { path: '/help', title: t("We're here for you: help with every life situation"), description: t('Illness, a death and Jewish burial, a new baby, bar mitzvah, marriage, family or business disputes, grief: Rabbi Yisroel Labkowski of Chabad of Lamorinda helps with everything.'), body });
   }));

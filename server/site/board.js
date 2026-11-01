@@ -3,6 +3,7 @@
 //  * Private to the Rabbi: event ideas, resources, photo links, the Tehillim prayer list, Kaddish requests and confidential messages.
 // Every submission emails the Rabbi (ADMIN_EMAIL or the site email) and waits in the Rabbi area.
 'use strict';
+const { byPopularity } = require('./popular.js');
 const crypto = require('crypto');
 const express = require('express');
 const { esc, md } = require('./md.js');
@@ -50,16 +51,18 @@ ${items.length ? items.map((i) => `<article class="card post"><p class="eyebrow"
     await render(res, { path: '/get-involved', title: t('Get involved'), description: t('Volunteer, host a Shabbat meal, sponsor a Kiddush, share your news, join the Chai Club and help build Jewish life in Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Get involved'))}</h1><p class="lead-d">${esc(t('Chabad of Lamorinda is built by the community, for the community. Here is how you can be part of it, in five minutes or five hours.'))}</p>
 <div class="grid">
-${tile('/account', 'Create your free account', 'Save your family once and RSVP to anything in one tap.')}
-${tile('/events', 'Come to an event', 'Bring a friend. Every Jew is welcome.')}
-${tile('/sponsor', 'Sponsor in honor or memory of a loved one', 'Mark a yahrzeit, birthday or simcha with a Kiddush, a Shabbat dinner or a class.')}
-${tile('/community#share', 'Share your news', 'Births, weddings, bar and bat mitzvahs, and notices for the community.')}
-${tile('/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.')}
-${tile('/contact?about=Host%20a%20Shabbat%20meal', 'Host a Shabbat meal', 'Open your table to a newcomer or a student. We will make the match.')}
-${tile('/tehillim', 'Say Tehillim for others', 'Join in praying for those on our community prayer list.')}
-${tile('/community?k=event-idea#share', 'Suggest an event or class', 'Tell us what you would love to see.')}
-${tile('/community?k=resource#share', 'Add a resource', 'Know a Jewish service in the area? Help us make the guide complete.')}
-${tile('/community?k=photo#share', 'Share your photos', 'Took great photos at an event? Send us the link.')}
+${byPopularity([
+  ['/account', 'Create your free account', 'Save your family once and RSVP to anything in one tap.'],
+  ['/events', 'Come to an event', 'Bring a friend. Every Jew is welcome.'],
+  ['/sponsor', 'Sponsor in honor or memory of a loved one', 'Mark a yahrzeit, birthday or simcha with a Kiddush, a Shabbat dinner or a class.'],
+  ['/community#share', 'Share your news', 'Births, weddings, bar and bat mitzvahs, and notices for the community.'],
+  ['/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.'],
+  ['/contact?about=Host%20a%20Shabbat%20meal', 'Host a Shabbat meal', 'Open your table to a newcomer or a student. We will make the match.'],
+  ['/tehillim', 'Say Tehillim for others', 'Join in praying for those on our community prayer list.'],
+  ['/community?k=event-idea#share', 'Suggest an event or class', 'Tell us what you would love to see.'],
+  ['/community?k=resource#share', 'Add a resource', 'Know a Jewish service in the area? Help us make the guide complete.'],
+  ['/community?k=photo#share', 'Share your photos', 'Took great photos at an event? Send us the link.'],
+], ([href]) => (/[?#]/.test(href) ? '' : href)).map(([href, h, p]) => tile(href, h, p)).join('\n')}
 </div>
 <h2>${esc(t('Volunteer'))}</h2>${vol.length ? `<div class="grid">${vol.map((e) => `<a class="card tile" href="/events/${e.slug}"><h3>${esc(e.title)}</h3><p>${esc(e.summary || '')}</p></a>`).join('')}</div>` : `<p>${esc(t('Help set up the sukkah, bake challah, greet guests at holiday events or visit seniors.'))} <a href="/contact?about=Volunteering">${esc(t('Tell us you would like to help'))}</a></p>`}
 <h2>${esc(t('Invite a friend'))}</h2><p class="btns"><a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent(t('Come with me to Chabad of Lamorinda!') + ' ' + base + X.path('/events'))}" rel="noopener" target="_blank">${esc(t('Share on WhatsApp'))}</a><a class="btn ghost" href="mailto:?subject=${encodeURIComponent('Chabad of Lamorinda')}&body=${encodeURIComponent(t('Thought you would enjoy this:') + ' ' + base + X.path('/events'))}">${esc(t('Share by email'))}</a></p>

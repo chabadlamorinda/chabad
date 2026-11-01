@@ -1,6 +1,7 @@
 // The public website pages, in English, Hebrew and Russian. Everything is rendered on the server from site/content/
 // plus live data (Shabbat times, holidays, RSVP counts, Facebook photos), so every page is complete for Google and AI.
 'use strict';
+const { byPopularity } = require('./popular.js');
 const { homeBody } = require('./home.js');
 const express = require('express');
 const path = require('path');
@@ -198,7 +199,7 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
   r.get('/programs', wrap(async (req, res) => {
     const X = ctxOf(req), { t, C } = X;
     const body = `<section class="wrap sec"><h1>${esc(t('Programs'))}</h1><p class="lead-d">${esc(t('Something for every age and stage, from toddlers to seniors.'))}</p>
-<div class="grid">${C.programs.map((p) => `<a class="card tile" href="/programs/${p.slug}"><p class="eyebrow">${esc(p.audience || '')}</p><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p></a>`).join('')}</div></section>`;
+<div class="grid">${byPopularity(C.programs, (p) => '/programs/' + p.slug).map((p) => `<a class="card tile" href="/programs/${p.slug}"><p class="eyebrow">${esc(p.audience || '')}</p><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p></a>`).join('')}</div></section>`;
     await render(res, { path: '/programs', title: t('Jewish programs for kids, teens and adults'), description: t("Hebrew school, adult classes, teen and kids programs, women's circle and more at Chabad of Lamorinda."), body });
   }));
   r.get('/programs/:slug', wrap(async (req, res, next) => {

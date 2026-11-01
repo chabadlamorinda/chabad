@@ -3,6 +3,7 @@
 //    distance, neighborhoods and local questions, so people searching in their own town find us;
 //  * /learn: guides to every Jewish topic, each tied back to how we help locally.
 'use strict';
+const { byPopularity, views } = require('./popular.js');
 const { md, esc, plain } = require('./md.js');
 const { fullAddress, LEARN_CATEGORIES, fmtClock } = require('./content.js');
 const { artImg, artFor, guidePhoto } = require('./art.js');
@@ -85,10 +86,12 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     // The most essential guides of each subject come first, as cards; the rest follow as a compact list.
     const rank = (a) => { const i = FEATURED.indexOf(a.slug); return i < 0 ? 999 : i; };
     // Lamorinda's own guides last: everyone first sees Judaism itself.
-    const cats = LEARN_CATEGORIES.filter((c) => c !== 'Lamorinda').concat(LEARN_CATEGORIES.includes('Lamorinda') ? ['Lamorinda'] : []);
+    // The subjects and, inside each, the guides people open most come first (popular.js); the written order breaks ties.
+    const catViews = (cat) => C.learn.filter((a) => a.category === cat).reduce((n, a) => n + views('/learn/' + a.slug), 0);
+    const cats = byPopularity(LEARN_CATEGORIES.filter((c) => c !== 'Lamorinda'), (c) => c, { score: catViews }).concat(LEARN_CATEGORIES.includes('Lamorinda') ? ['Lamorinda'] : []);
     const nh = (await Z.upcomingHolidays(45).catch(() => []))[0];
     const season = nh ? guidesFor(C, '/holidays/' + nh.slug).slice(0, 3) : [];
-    const groups = cats.map((cat) => [cat, C.learn.filter((a) => a.category === cat).sort((a, b) => rank(a) - rank(b))]).filter(([, l]) => l.length);
+    const groups = cats.map((cat) => [cat, byPopularity(C.learn.filter((a) => a.category === cat).sort((a, b) => rank(a) - rank(b)), (a) => '/learn/' + a.slug)]).filter(([, l]) => l.length);
     await render(res, { path: '/learn', title: t('Learn about Judaism: guides to every Jewish topic'), description: t('Plain-language guides to Shabbat, kosher, mezuzah, tefillin, prayer, life events, mourning, the Jewish calendar, Torah and Jewish ideas, from Chabad of Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Learn about Judaism'))}</h1><p class="lead-d">${esc(t('{n} clear, friendly guides to Jewish life, from lighting Shabbat candles to saying Kaddish.', { n: C.learn.length }))} <a href="/help/talk-to-the-rabbi">${esc(t('Have a question that is not here? Ask the Rabbi.'))}</a></p>
 <p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
