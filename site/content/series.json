@@ -2,7 +2,7 @@
   { "id": "mourning", "title": "When we lose someone, step by step", "intro": "From the last days to the yearly yahrzeit: what Judaism teaches, one step at a time.",
     "guides": ["when-a-loved-one-is-dying", "aninut", "jewish-funeral", "writing-a-eulogy", "kriah", "shiva", "setting-up-a-shiva-house", "comforting-mourners", "kaddish", "sheloshim", "year-of-mourning", "losing-a-spouse", "unveiling", "yahrzeit", "yizkor", "visiting-a-grave"] },
   { "id": "shabbat", "title": "Shabbat, step by step", "intro": "From lighting the candles on Friday to Havdalah on Saturday night.",
-    "guides": ["shabbat-for-beginners", "preparing-for-shabbat", "shabbat-candles", "kabbalat-shabbat", "shalom-aleichem", "kiddush", "hamotzi", "shabbat-meals", "zemirot", "shabbat-day", "thirty-nine-melachot", "havdalah"] },
+    "guides": ["shabbat-for-beginners", "preparing-for-shabbat", "shabbat-candles", "friday-night-dinner-step-by-step", "kabbalat-shabbat", "shalom-aleichem", "kiddush", "hamotzi", "shabbat-meals", "zemirot", "shabbat-day", "thirty-nine-melachot", "havdalah"] },
   { "id": "kosher", "title": "Keeping kosher, step by step", "intro": "What kosher means, how to shop, and how to set up a kosher kitchen.",
     "guides": ["kosher", "kosher-symbols", "kosher-certification", "meat-and-milk", "kosher-kitchen", "kosher-meat", "chalav-yisrael", "kosher-wine", "tevilat-kelim", "checking-for-insects", "kosher-on-a-budget", "keeping-kosher-with-family", "eating-out-kosher", "kosher-when-traveling"] },
   { "id": "prayer", "title": "Learning to pray", "intro": "From the first words in the morning to the Shema at night.",

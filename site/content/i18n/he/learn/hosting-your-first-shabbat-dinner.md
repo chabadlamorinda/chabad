@@ -2,7 +2,7 @@
 title: לארח את סעודת השבת הראשונה שלכם: מדריך פשוט צעד אחר צעד
 description: כל מה שצריך כדי לארח סעודת ליל שבת חמה בבית: מה לקנות, סדר הערב, הברכות, ואיך לגרום לאורחים להרגיש בבית.
 category: Shabbat & holidays
-related: shabbat-meals, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
+related: shabbat-meals, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
 local: רוצים לראות קודם איך זה נראה? הצטרפו לסעודת שבת עם משפחת הרב בחב״ד למורינדה בלאפייט, או התקשרו 925-384-7242 לנרות ולחלה.
 ---
 לא צריך בית גדול, כלים מפוארים או עברית מושלמת כדי לארח סעודת שבת. צריך שולחן, כמה חברים או בני משפחה, ורצון לעשות את ליל שבת למיוחד. הנה הכול, צעד אחר צעד.

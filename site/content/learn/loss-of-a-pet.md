@@ -2,7 +2,7 @@
 title: Losing a Pet: A Jewish Perspective on Grief
 description: How Judaism views the loss of a beloved pet, kindness to animals, comforting children, and meaningful Jewish ways to remember a pet.
 category: Mourning & remembrance
-related: chesed, the-soul, tehillim, tzedakah
+related: chesed, pets-and-jewish-life, the-soul, tehillim, tzedakah
 local: Grieving and want someone to talk to? Rabbi Yisroel and Tzipora Labkowski are here for you. Call 925-384-7242 or visit chabadoflamorinda.com/help/grief-and-hard-times.
 ---
 Losing a pet can be truly painful, and Judaism takes that pain seriously. While the formal mourning rituals, such as shiva and Kaddish, are reserved for human relatives, your grief is real, and there are meaningful Jewish ways to remember an animal you loved.

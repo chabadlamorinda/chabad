@@ -2,7 +2,7 @@
 title: Hebrew Birthday: How to Find and Celebrate Your Jewish Birthday
 description: What a Hebrew birthday is, how to find yours on the Jewish calendar, and the meaningful customs for celebrating it, including your personal Psalm.
 category: Life cycle
-related: jewish-calendar, jewish-birthday-customs, tehillim, tzedakah, the-rebbe
+related: jewish-calendar, jewish-leap-year-and-calendar, jewish-birthday-customs, tehillim, tzedakah, the-rebbe
 local: Find your Hebrew birthday with our free tool at chabadoflamorinda.com/tools/hebrew-birthday, or call 925-384-7242 to arrange an aliyah on the Shabbat before it.
 ---
 Your Hebrew birthday is the date you were born according to the Jewish calendar. Because the Jewish calendar follows the moon, it usually falls on a different day of the secular calendar each year, and it is a special day for blessing, reflection and growth.

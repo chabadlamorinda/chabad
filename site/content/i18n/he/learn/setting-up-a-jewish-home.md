@@ -2,7 +2,7 @@
 title: הקמת בית יהודי: רשימה לזוגות צעירים ולמי שעבר דירה
 description: אחרי חתונה או מעבר דירה: מזוזות, מטבח כשר, טבילת כלים, פמוטים לשבת, קופת צדקה, ספרי קודש ושולחן שבת.
 category: Jewish home
-related: mezuzah, judaica-buying-guide, kosher-kitchen, chanukat-habayit, jewish-home-library
+related: mezuzah, pets-and-jewish-life, judaica-buying-guide, kosher-kitchen, chanukat-habayit, jewish-home-library
 local: בית חדש בלאפייט, מוראגה, אורינדה או באיסט ביי? הרב ישראל לבקובסקי ישמח לעזור לקבוע מזוזות ולהכשיר את המטבח שלכם, 925-384-7242.
 ---
 בית חדש הוא התחלה חדשה. בין אם התחתנתם עכשיו ובין אם עברתם דירה, השבועות הראשונים הם הזמן הקל ביותר לסדר את הבית בדרך היהודית. המסורת היהודית קוראת לבית "מקדש מעט", וכמה צעדים פשוטים הופכים אותו לכזה.

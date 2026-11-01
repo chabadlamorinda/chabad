@@ -2,7 +2,7 @@
 title: Tzaar Baalei Chayim: Kindness to Animals in Judaism
 description: The Jewish view of animals: the mitzvah not to cause them pain, caring for pets, feeding animals first, and how kosher slaughter reflects compassion.
 category: Jewish ideas
-related: kosher-meat, chesed, noahide-laws, kosher
+related: kosher-meat, pets-and-jewish-life, chesed, noahide-laws, kosher
 local: Have a question about pets, animals or kosher meat? Call Rabbi Labkowski at 925-384-7242. We are always happy to talk.
 ---
 Tzaar baalei chayim means "the suffering of living creatures," and Jewish law forbids causing animals unnecessary pain. Judaism teaches that animals are G-d's creations, and treating them with compassion is both a mitzvah and a mark of good character.
