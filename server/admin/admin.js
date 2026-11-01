@@ -55,12 +55,18 @@
     });
   }
   // "Today": the next event that takes RSVPs (through the day after it), how many are coming, and one tap to check
-  // guests in at the door. Hidden when there is none (or the website part is not installed).
+  // guests in at the door. Says so when there is none; hidden only where the website part is not installed.
   function todayCard() {
     var box = el('div', { class: 'card today' }); box.hidden = true;
     fetch('/admin/api/site/rsvps', { credentials: 'same-origin', headers: { 'x-admin': '1' } }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (j) {
-      var e = j && (j.events || []).filter(function (x) { return !x.draft; }).sort(function (a, b) { return a.start < b.start ? -1 : 1; })[0];
-      if (!e) return;
+      if (!j) return;
+      var e = (j.events || []).filter(function (x) { return !x.draft; }).sort(function (a, b) { return a.start < b.start ? -1 : 1; })[0];
+      if (!e) {
+        var drafts = (j.events || []).length;
+        box.appendChild(el('p', { class: 'eyebrow', text: 'Today' }));
+        box.appendChild(el('div', { class: 'small', text: drafts ? 'No event taking RSVPs yet (' + drafts + ' draft' + (drafts === 1 ? '' : 's') + ' not on the website yet).' : 'No event taking RSVPs yet.' }));
+        box.hidden = false; return;
+      }
       var d = new Date(e.start), when = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }) + ', ' + d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
       var today = new Date().toDateString() === d.toDateString();
       box.appendChild(el('p', { class: 'eyebrow', text: today ? 'Today' : 'Next event' }));
@@ -107,7 +113,7 @@
     var box = el('div');
     wrapErr(api('GET', '/donors')).then(function (j) {
       if (!j) return;
-      var sum = el('div', 'row');
+      var sum = el('div', { class: 'row' });
       ['platinum', 'gold', 'silver', 'bronze'].forEach(function (l) {
         var c = el('div', 'card'); c.style.borderTop = '4px solid ' + LC[l]; c.style.minWidth = '150px';
         c.appendChild(el('strong', { text: LV[l] })); c.appendChild(el('div', { text: j.byLevel[l].count + (j.byLevel[l].count === 1 ? ' donor' : ' donors') }));
@@ -154,11 +160,11 @@
     wrapErr(api('GET', '/yahrzeits?days=60')).then(function (j) {
       if (!j) return;
       box.appendChild(el('p', { class: 'small', text: 'Only people who chose “Share with the Rabbi” appear here. Next 60 days.' }));
-      box.appendChild(el('p', {}, [el('a', { href: '/admin/api/export.csv', text: 'Download all (CSV)' })]));
+      box.appendChild(el('p', {}, [el('a', { class: 'btn', href: '/admin/api/export.csv', text: 'Download all (CSV)' })]));
       if (!j.items.length) box.appendChild(el('p', { text: 'No upcoming yahrzeits to follow up on.' }));
       j.items.forEach(function (i) {
         var note = el('textarea', { rows: '2', 'aria-label': 'Follow-up note' }); note.value = i.followup.note;
-        var done = el('input', { type: 'checkbox' }); done.checked = i.followup.done; done.style.width = 'auto';
+        var done = el('input', { type: 'checkbox' }); done.checked = i.followup.done;
         var saved = el('span', { class: 'small' });
         function save() { api('PUT', '/followup', { yahrzeitId: i.id, occurrence: i.date, note: note.value, done: done.checked }).then(function () { saved.textContent = 'Saved'; }).catch(function (e) { saved.textContent = e.message; }); }
         var when = i.daysLeft === 0 ? 'Today' : i.daysLeft === 1 ? 'Tomorrow' : 'In ' + i.daysLeft + ' days';
@@ -167,7 +173,7 @@
           el('div', { class: 'row' }, [el('strong', { text: i.name }), i.relation ? el('span', { class: 'pill', text: i.relation }) : null, el('span', { class: 'small', text: when + ' · ' + i.date + ' · ' + i.hebrew })]),
           i.notes ? el('div', { class: 'small', text: i.notes }) : null, extra,
           el('div', { class: 'small', text: 'Family: ' + i.member.name + ' · ' + i.member.email + (i.member.phone ? ' · ' + i.member.phone : '') }),
-          note, el('div', { class: 'row' }, [el('label', {}, [done, ' Followed up']), el('button', { text: 'Save', onclick: save }), saved])
+          note, el('div', { class: 'row' }, [el('label', { class: 'check' }, [done, 'Followed up']), el('button', { text: 'Save', onclick: save }), saved])
         ]));
       });
     }).catch(function (e) { box.textContent = e.message; });
@@ -203,9 +209,9 @@
   }
   function push() {
     var title = el('input', { maxlength: '60', placeholder: 'Title' }), body = el('textarea', { rows: '3', maxlength: '200', placeholder: 'Message' });
-    var url = el('input', { value: '/pushka/' }), out = el('div', { class: 'small' }), ok = el('input', { type: 'checkbox' }); ok.style.width = 'auto';
+    var url = el('input', { value: '/pushka/' }), out = el('div', { class: 'small' }), ok = el('input', { type: 'checkbox' });
     return el('div', { class: 'card' }, [el('p', { class: 'small', text: 'Sends a notification to everyone who turned notifications on.' }), title, body, el('p', { class: 'small', text: 'Opens (inside the app):' }), url,
-      el('p', {}, [el('label', {}, [ok, ' I have read this and want to send it to everyone'])]),
+      el('p', {}, [el('label', { class: 'check' }, [ok, 'I have read this and want to send it to everyone'])]),
       el('button', { text: 'Send', onclick: function () {
         out.textContent = 'Sending…';
         api('POST', '/broadcast', { title: title.value, body: body.value, url: url.value, confirm: ok.checked }).then(function (j) { out.textContent = 'Sent to ' + j.sent + ' of ' + j.total + ' device(s).'; }).catch(function (e) { out.textContent = e.message; });

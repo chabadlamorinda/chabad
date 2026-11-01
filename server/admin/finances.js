@@ -19,20 +19,20 @@
     for (var y = new Date().getFullYear(); y >= new Date().getFullYear() - 6; y--) ys.appendChild(opt(y, String(y), y === year));
     var nav = el('nav', { class: 'jump' });
     [['overview', 'Overview'], ['money', 'Money in & out'], ['people', 'People'], ['reports', 'Reports']].forEach(function (x) { nav.appendChild(el('a', { href: '#' + x[0], class: tab === x[0] ? 'hot' : '', onclick: function () { tab = x[0]; shell(); show(); } }, [x[1]])); });
-    app.appendChild(el('div', { class: 'row' }, [ys, el('span', { class: 'small', text: 'Year' })]));
+    app.appendChild(el('label', { class: 'fin-year' }, ['Year ', ys]));
     app.appendChild(nav); app.appendChild(body);
   }
   function show() { body.textContent = ''; ({ overview: overview, money: money, people: people, reports: reports })[tab] ? ({ overview: overview, money: money, people: people, reports: reports })[tab]() : overview(); }
   function card(title, kids, cls) { return el('div', { class: 'card' + (cls ? ' ' + cls : '') }, [title ? el('strong', { text: title }) : null].concat(kids || [])); }
-  function table(rows, heads) { var t = el('table', { class: 'fin' }); if (heads) t.appendChild(el('tr', {}, heads.map(function (h) { return el('th', { text: h }); }))); rows.forEach(function (r) { t.appendChild(el('tr', {}, r.map(function (c) { return el('td', {}, [typeof c === 'object' && c ? c : String(c == null ? '' : c)]); }))); }); return t; }
+  function table(rows, heads) { var t = el('table', { class: 'fin' }), wrap = el('div', { class: 'tbl' }, [t]); if (heads) t.appendChild(el('tr', {}, heads.map(function (h) { return el('th', { text: h }); }))); rows.forEach(function (r) { t.appendChild(el('tr', {}, r.map(function (c) { return el('td', {}, [typeof c === 'object' && c ? c : String(c == null ? '' : c)]); }))); }); return wrap; }
   function personLink(id, name) { return el('a', { href: '#people', onclick: function (e) { e.preventDefault(); tab = 'people'; shell(); person(id); }, text: name || '(no name)' }); }
 
   // ---- Overview ----
   function overview() {
     var syncMsg = el('span', { class: 'small' });
-    var syncBtn = el('button', { class: 'on', text: M.online ? 'Bring in online gifts now' : 'Online gifts: Stripe not connected', onclick: function () { syncBtn.disabled = true; syncMsg.textContent = 'Working…'; api('POST', '/fin/sync').then(function (r) { syncBtn.disabled = false; syncMsg.textContent = r._status === 200 ? r.added + ' new' : (r.error || 'Could not sync.'); show(); }); } });
-    if (!M.online) syncBtn.disabled = true;
-    body.appendChild(el('div', { class: 'row' }, [syncBtn, syncMsg]));
+    var syncBtn = el('button', { class: 'on', text: 'Bring in online gifts now', onclick: function () { syncBtn.disabled = true; syncMsg.textContent = 'Working…'; api('POST', '/fin/sync').then(function (r) { syncBtn.disabled = false; syncMsg.textContent = r._status === 200 ? r.added + ' new' : (r.error || 'Could not bring them in, try again.'); show(); }); } });
+    if (M.online) body.appendChild(el('div', { class: 'row' }, [syncBtn, syncMsg]));
+    else body.appendChild(el('p', { class: 'small', text: 'Online giving is not connected yet, so only what you add by hand shows here. Tell Claude: "I\'m at a computer".' }));
     api('GET', '/fin/summary?year=' + year).then(function (s) {
       if (s._status !== 200) { body.appendChild(el('p', { class: 'warn', text: s.error || 'Could not load.' })); return; }
       syncMsg.textContent = s.lastSync ? 'Last brought in: ' + new Date(s.lastSync).toLocaleString() : '';
@@ -55,7 +55,7 @@
       var how = s.byMethod.filter(function (x) { return x.kind === 'in'; });
       if (how.length) body.appendChild(card('Money in, by how it was paid', [table(how.map(function (x) { return [M.methods[x.key] || x.key, usd(x.cents), x.n]; }))]));
       if (s.donors.length) body.appendChild(card('Top donors in ' + s.year, [table(s.donors.map(function (d) { return [personLink(d.id, d.name || d.email), usd(d.cents), d.n + (d.n === 1 ? ' gift' : ' gifts')]; }))]));
-      var contact = function (p) { return el('span', {}, [p.email ? el('a', { href: 'mailto:' + p.email, text: 'Email' }) : null, p.email && p.phone ? ' · ' : '', p.phone ? el('a', { href: 'tel:' + p.phone, text: 'Call' }) : null]); };
+      var contact = function (p) { return el('span', { class: 'row', style: 'flex-wrap:nowrap' }, [p.phone ? el('a', { class: 'btn', href: 'tel:' + p.phone, text: 'Call' }) : null, p.email ? el('a', { class: 'btn', href: 'mailto:' + p.email, text: 'Email' }) : null]); };
       if (s.lapsed.length) body.appendChild(card('Gave in ' + (s.year - 1) + ', not yet in ' + s.year + ' (' + s.lapsed.length + ')', [el('p', { class: 'small', text: 'A personal call or note brings most people back.' }), table(s.lapsed.map(function (p) { return [personLink(p.id, p.name || p.email), usd(p.cents) + ' last year', contact(p)]; }))], 'hot'));
       if (s.repeat.length) body.appendChild(card('Give again and again: invite them to the Chai Club (' + s.repeat.length + ')', [table(s.repeat.map(function (p) { return [personLink(p.id, p.name || p.email), p.n + ' gifts, ' + usd(p.cents), contact(p)]; }))]));
       if (!s.income && !s.expenses) body.appendChild(el('p', { class: 'small', text: 'Nothing for ' + s.year + ' yet. Online gifts come in by themselves; add checks, cash and expenses under "Money in & out".' }));
@@ -74,14 +74,14 @@
     var memo = el('input', { placeholder: 'Note (optional)' }); memo.value = t.memo || ''; payee.value = t.payee || '';
     var ref = el('input', { placeholder: 'Check # or reference (optional)' }); ref.value = t.ref || '';
     var ded = el('input', { type: 'checkbox' }); ded.checked = t.deductible !== false;
-    var dedL = el('label', { class: 'row small' }, [ded, 'Tax-deductible gift (goes on their year-end letter)']), msg = el('p', { class: 'small warn' });
+    var dedL = el('label', { class: 'check' }, [ded, 'Tax-deductible gift (goes on their year-end letter)']), msg = el('p', { class: 'small warn' });
     var editing = !!t.id, online = t.source && t.source !== 'manual';
     var fill = function () { cat.textContent = ''; (kind.value === 'in' ? M.in : M.out).forEach(function (c) { cat.appendChild(opt(c, c, t.category === c)); }); var i = kind.value === 'in'; who.hidden = email.hidden = editing || !i; dedL.hidden = fund.hidden = !i; payee.hidden = i; };
     kind.onchange = fill; fill();
     if (online) { kind.disabled = amount.disabled = day.disabled = true; }
     var save = el('button', { class: 'on', text: editing ? 'Save' : 'Add', onclick: function () {
       var b = { kind: kind.value, amount: amount.value, day: day.value, category: cat.value, fund: fund.value, method: method.value, payee: payee.value, memo: memo.value, ref: ref.value, deductible: ded.checked, personName: who.value, personEmail: email.value };
-      api(editing ? 'PUT' : 'POST', '/fin/tx' + (editing ? '/' + t.id : ''), b).then(function (r) { if (r._status === 200) done(); else msg.textContent = r.error || 'Could not save.'; });
+      save.disabled = true; api(editing ? 'PUT' : 'POST', '/fin/tx' + (editing ? '/' + t.id : ''), b).then(function (r) { save.disabled = false; if (r._status === 200) { save.textContent = 'Saved ✓'; save.classList.add('ok'); done(); } else { msg.textContent = r.error || 'Could not save, try again.'; } }, function () { save.disabled = false; msg.textContent = 'Could not save, try again.'; });
     } });
     return el('div', { class: 'card fin-form' }, [el('strong', { text: editing ? 'Change' : 'Add money in or out' }), online ? el('p', { class: 'small', text: 'An online payment: its amount and date come from Stripe.' }) : null, kind, amount, day, cat, fund, method, who, email, payee, ref, memo, dedL, el('div', { class: 'row' }, [save, editing ? el('button', { text: 'Cancel', onclick: done }) : null]), msg]);
   }
@@ -111,7 +111,9 @@
   // ---- People ----
   function people() {
     var q = el('input', { type: 'search', placeholder: 'Search name, email, phone, tag' }), list = el('div');
-    var add = el('button', { text: '+ Add a person', onclick: function () { var n = prompt('Name'); if (!n) return; var e = prompt('Email (optional)') || ''; api('POST', '/fin/people', { name: n, email: e }).then(function (r) { if (r.id) person(r.id); }); } });
+    var addName = el('input', { placeholder: 'Name' }), addEmail = el('input', { type: 'email', placeholder: 'Email (optional)' }), addMsg = el('span', { class: 'small warn' });
+    var addForm = el('div', { class: 'card fin-form', hidden: 'hidden' }, [el('strong', { text: 'Add a person' }), addName, addEmail, el('div', { class: 'row' }, [el('button', { class: 'on', text: 'Add', onclick: function () { if (!addName.value.trim()) { addMsg.textContent = 'Please write the name.'; return; } api('POST', '/fin/people', { name: addName.value.trim(), email: addEmail.value.trim() }).then(function (r) { if (r.id) person(r.id); else addMsg.textContent = r.error || 'Could not save, try again.'; }); } }), el('button', { text: 'Cancel', onclick: function () { addForm.hidden = true; } }), addMsg])]);
+    var add = el('button', { text: '+ Add a person', onclick: function () { addForm.hidden = !addForm.hidden; if (!addForm.hidden) addName.focus(); } });
     var load = function () {
       api('GET', '/fin/people?q=' + encodeURIComponent(q.value)).then(function (x) {
         list.textContent = '';
@@ -120,7 +122,7 @@
       });
     };
     var timer; q.oninput = function () { clearTimeout(timer); timer = setTimeout(load, 300); };
-    body.appendChild(el('div', { class: 'row' }, [q, add])); body.appendChild(list); load();
+    body.appendChild(el('div', { class: 'row' }, [q, add])); body.appendChild(addForm); body.appendChild(list); load();
   }
   function person(id) {
     body.textContent = 'Loading…';
@@ -130,32 +132,32 @@
       ['name', 'email', 'phone', 'address', 'tags'].forEach(function (k) { f[k] = el('input', { placeholder: k === 'tags' ? 'Tags (e.g. board, preschool parent)' : k[0].toUpperCase() + k.slice(1) }); f[k].value = p[k] || ''; });
       f.notes = el('textarea', { rows: '4', placeholder: 'Notes (only you see these)' }); f.notes.value = p.notes || '';
       body.appendChild(el('p', {}, [el('a', { href: '#people', onclick: function (e) { e.preventDefault(); show(); }, text: '← Everyone' })]));
-      body.appendChild(card(p.name || p.email, [el('div', { class: 'row' }, [p.email ? el('a', { href: 'mailto:' + p.email, text: 'Email' }) : null, p.phone ? el('a', { href: 'tel:' + p.phone, text: 'Call' }) : null, p.phone ? el('a', { href: 'https://wa.me/' + p.phone.replace(/\D/g, '').replace(/^(\d{10})$/, '1$1'), target: '_blank', rel: 'noopener', text: 'WhatsApp' }) : null]),
-        f.name, f.email, f.phone, f.address, f.tags, f.notes, el('div', { class: 'row' }, [el('button', { class: 'on', text: 'Save', onclick: function () { var b = {}; for (var k in f) b[k] = f[k].value; api('PUT', '/fin/people/' + p.id, b).then(function (r) { msg.textContent = r._status === 200 ? 'Saved.' : r.error; }); } }), msg])]));
-      if (x.years.length) body.appendChild(card('Giving by year', [table(x.years.map(function (y) { return [String(y.year), usd2(y.cents), y.n + (y.n === 1 ? ' gift' : ' gifts'), el('a', { href: '/admin/finances/letter/' + p.id + '?year=' + y.year, target: '_blank', text: 'Year-end letter' })]; }))]));
+      body.appendChild(card(p.name || p.email, [el('div', { class: 'row' }, [p.phone ? el('a', { class: 'btn', href: 'tel:' + p.phone, text: 'Call' }) : null, p.phone ? el('a', { class: 'btn', href: 'sms:' + p.phone, text: 'Text' }) : null, p.phone ? el('a', { class: 'btn wa', href: 'https://wa.me/' + p.phone.replace(/\D/g, '').replace(/^(\d{10})$/, '1$1'), target: '_blank', rel: 'noopener', text: 'WhatsApp' }) : null, p.email ? el('a', { class: 'btn', href: 'mailto:' + p.email, text: 'Email' }) : null]),
+        f.name, f.email, f.phone, f.address, f.tags, f.notes, el('div', { class: 'row' }, [el('button', { class: 'on', text: 'Save', onclick: function (ev) { var sb = ev.currentTarget, b = {}; for (var k in f) b[k] = f[k].value; sb.disabled = true; api('PUT', '/fin/people/' + p.id, b).then(function (r) { sb.disabled = false; msg.textContent = r._status === 200 ? 'Saved ✓' : (r.error || 'Could not save, try again.'); msg.className = r._status === 200 ? 'small ok-text' : 'small warn'; }); } }), msg])]));
+      if (x.years.length) body.appendChild(card('Giving by year', [table(x.years.map(function (y) { return [String(y.year), usd2(y.cents), y.n + (y.n === 1 ? ' gift' : ' gifts'), el('a', { class: 'btn', href: '/admin/finances/letter/' + p.id + '?year=' + y.year, target: '_blank', text: 'Year-end letter' })]; }))]));
       body.appendChild(card('Payment history', x.tx.length ? x.tx.map(function (t) { return el('div', { class: 'small' }, [t.day + '  ' + (t.kind === 'in' ? '+' : '−') + usd2(t.cents) + '  ' + t.category + (t.memo ? ' · ' + t.memo : '')]); }) : [el('p', { class: 'small', text: 'None yet.' })]));
     });
   }
 
   // ---- Reports ----
   function reports() {
-    body.appendChild(card('Spreadsheet for the accountant', [el('p', { class: 'small', text: 'Every dollar in and out in ' + year + ', with category, fund, how it was paid and who.' }), el('a', { class: 'pill', href: '/admin/api/fin/export.csv?year=' + year, text: 'Download ' + year + ' (CSV, opens in Excel)' })]));
+    body.appendChild(card('Spreadsheet for the accountant', [el('p', { class: 'small', text: 'Every dollar in and out in ' + year + ', with category, fund, how it was paid and who.' }), el('a', { class: 'btn on', href: '/admin/api/fin/export.csv?year=' + year, text: 'Download ' + year + ' (CSV, opens in Excel)' })]));
     var lmsg = el('p', { class: 'small' });
     body.appendChild(card('Year-end tax letters', [el('p', { class: 'small', text: 'Each donor’s letter lists their tax-deductible gifts for the year with your tax ID. Open any donor under People to print theirs, or email everyone at once.' }),
-      el('button', { class: 'on', text: 'Email ' + year + ' letters to every donor', onclick: function () { if (!confirm('Email a ' + year + ' giving letter to every donor with an email address?')) return; lmsg.textContent = 'Sending…'; api('POST', '/fin/letters', { year: year, confirm: true }).then(function (r) { lmsg.textContent = r._status === 200 ? 'Sent ' + r.sent + ' of ' + r.total + '.' : r.error; }); } }), lmsg]));
+      el('button', { class: 'on', text: 'Email ' + year + ' letters to every donor', onclick: function () { if (!confirm('Email a ' + year + ' giving letter to every donor with an email address?')) return; lmsg.textContent = 'Sending…'; api('POST', '/fin/letters', { year: year, confirm: true }).then(function (r) { lmsg.textContent = r._status === 200 ? 'Sent ' + r.sent + ' of ' + r.total + '.' : (r.error || 'Could not send, try again.'); }); } }), lmsg]));
     var inputs = {}, bmsg = el('span', { class: 'small' });
     api('GET', '/fin/summary?year=' + year).then(function (s) {
       var have = {}; (s.budget || []).forEach(function (b) { have[b.category] = b.cents; });
       var rows = M.in.concat(M.out).map(function (c) { var i = el('input', { type: 'number', min: '0', step: '1', inputmode: 'numeric', placeholder: '$' }); if (have[c]) i.value = have[c] / 100; inputs[c] = i; return [c, i]; });
       body.appendChild(card('Budget for ' + year, [el('p', { class: 'small', text: 'Set a yearly amount for the categories you want to watch; the overview shows how much of each is used.' }), table(rows, ['Category', 'Budget ($)']),
-        el('div', { class: 'row' }, [el('button', { class: 'on', text: 'Save budget', onclick: function () { api('PUT', '/fin/budget', { year: year, items: Object.keys(inputs).map(function (c) { return { category: c, amount: inputs[c].value }; }) }).then(function (r) { bmsg.textContent = r._status === 200 ? 'Saved.' : r.error; }); } }), bmsg])]));
+        el('div', { class: 'row' }, [el('button', { class: 'on', text: 'Save budget', onclick: function () { api('PUT', '/fin/budget', { year: year, items: Object.keys(inputs).map(function (c) { return { category: c, amount: inputs[c].value }; }) }).then(function (r) { bmsg.textContent = r._status === 200 ? 'Saved ✓' : (r.error || 'Could not save, try again.'); bmsg.className = r._status === 200 ? 'small ok-text' : 'small warn'; }); } }), bmsg])]));
     });
   }
 
   api('GET', '/fin/meta').then(function (m) {
     if (m._status === 401) { location.href = '/admin'; return; }
     M = m; shell();
-    if (!m.db) { body.appendChild(el('p', { class: 'warn', text: 'The finances need the database (DATABASE_URL).' })); return; }
+    if (!m.db) { body.appendChild(el('p', { class: 'warn', text: 'The finances are not set up yet. Tell Claude: "I\'m at a computer".' })); return; }
     show();
   });
 })();
