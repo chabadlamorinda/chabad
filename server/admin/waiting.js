@@ -5,6 +5,7 @@
 window.WAITING = [
   { id: 'requests', path: '/site/leads', one: 'new request this week', many: 'new requests this week', count: function (x) { return (x.items || []).filter(function (i) { return Date.now() - new Date(i.created_at) < 7 * 864e5; }).length; } },
   { id: 'approve', path: '/site/submissions', one: 'submission to approve', many: 'submissions to approve', count: function (x) { return (x.items || []).filter(function (i) { return i.status === 'new' || i.status === 'pending'; }).length; } },
+  { id: 'kaddish', path: '/site/submissions?private=1', one: 'Kaddish, prayer list or private message to answer', many: 'Kaddish, prayer list and private messages to answer', count: function (x) { return (x.items || []).filter(function (i) { return i.status === 'pending'; }).length; } },
   { id: 'reach-out', path: '/site/outreach', one: 'person to reach out to', many: 'people to reach out to', count: function (x) { return (x.items || []).length; } },
   { id: 'campaign', path: '/campaigns', one: 'campaign pledge to follow up', many: 'campaign pledges to follow up', count: function (x) { return (x.campaigns || []).reduce(function (a, c) { return a + (c.pledges || []).filter(function (p) { return p.status === 'pending'; }).length; }, 0); } },
   { id: 'email', path: '/site/weekly/word', one: 'word for this Shabbat\'s email to read and approve', many: 'words to approve', count: function (x) { return x.draft && !x.approved ? 1 : 0; } },

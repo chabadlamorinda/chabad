@@ -208,6 +208,38 @@
       });
     });
 
+    // ---- Kaddish requests, the prayer list and confidential messages (private forms), kept for good ----
+    var sk = section('Kaddish, prayer list & private messages', 'Everything people sent through the Kaddish, Tehillim and "message to the Rabbi" forms, newest first. Mark each one done when you have taken care of it.', 'Kaddish');
+    api('GET', '/site/submissions?private=1').then(function (x) {
+      if (x._status !== 200) { sk.appendChild(el('p', { class: 'small', text: 'Needs the database (DATABASE_URL).' })); return; }
+      sk.count(W['kaddish'](x), true);
+      var kq = el('input', { type: 'search', placeholder: 'Search a name, email or word' }), kk = el('select', {}, [el('option', { value: '', text: 'All kinds' })].concat(['kaddish', 'tehillim', 'rabbi'].map(function (k) { return el('option', { value: k, text: x.kinds[k] ? x.kinds[k].label : k }); })));
+      var showDone = el('input', { type: 'checkbox' }), box = el('div');
+      sk.appendChild(el('div', { class: 'row' }, [kq, kk, el('label', { class: 'row small' }, [showDone, 'Show done']), el('a', { href: '/admin/api/site/submissions.csv', text: 'Download all (CSV)' })]));
+      sk.appendChild(box);
+      var draw = function () {
+        box.textContent = '';
+        var q = kq.value.trim().toLowerCase(), list = x.items.filter(function (i) {
+          return (!kk.value || i.kind === kk.value) && (showDone.checked || i.status === 'pending') && (!q || [i.name, i.email, i.phone, i.title, i.body].join(' ').toLowerCase().indexOf(q) >= 0);
+        });
+        if (!list.length) box.appendChild(el('p', { class: 'small', text: x.items.length ? 'Nothing here. Tick "Show done" to see earlier ones.' : 'Nothing yet.' }));
+        list.forEach(function (i) {
+          var digits = String(i.phone || '').replace(/\D/g, ''), tel = digits.length === 10 ? '1' + digits : digits;
+          var st = el('span', { class: 'pill', text: i.status === 'pending' ? 'new' : i.status });
+          var set = function (status) { api('POST', '/site/submissions/' + i.id, { status: status }).then(function (r) { if (r.ok) { i.status = status; draw(); } }); };
+          box.appendChild(el('div', { class: 'card' + (i.status === 'pending' ? ' hot' : '') }, [
+            el('div', { class: 'small', text: (x.kinds[i.kind] ? x.kinds[i.kind].label : i.kind) + ' · ' + day(i.created_at) }),
+            el('strong', { text: i.title }), el('div', { style: 'white-space:pre-line', text: i.body }),
+            el('div', { class: 'small', text: 'From ' + i.name + ' · ' + i.email + (i.phone ? ' · ' + i.phone : '') }),
+            el('div', { class: 'row' }, [st,
+              tel ? el('a', { href: 'tel:+' + tel, text: 'Call' }) : null, tel ? el('a', { href: 'sms:+' + tel, text: 'Text' }) : null, tel ? el('a', { href: 'https://wa.me/' + tel, target: '_blank', rel: 'noopener', text: 'WhatsApp' }) : null,
+              el('a', { href: 'mailto:' + i.email + '?subject=' + encodeURIComponent('Re: ' + i.title), text: 'Email' }),
+              i.status === 'pending' ? el('button', { class: 'on', text: 'Done', onclick: function () { set('done'); } }) : el('button', { text: 'Open again', onclick: function () { set('pending'); } })])]));
+        });
+      };
+      kq.oninput = draw; kk.onchange = draw; showDone.onchange = draw; draw();
+    });
+
     // ---- Fundraising campaigns: totals, every gift, and gifts given by check, cash or a donor-advised fund ----
     var sc = section('Campaigns', 'Each campaign (site/content/campaigns.json): how much is raised, who gave, and a form to add gifts that came by check, cash or a donor-advised fund so they count and appear on the donor wall. To start a new campaign, tell Claude its name, goal and dates.', 'Campaign');
     var usd = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
@@ -357,7 +389,7 @@
     });
 
     // Things to act on first, then the tools, then the setup checklist (the menu at the top follows the same order).
-    ['requests', 'approve', 'reach-out', 'sign-ups', 'campaign', 'rsvps', 'visitors', 'reading', 'birthdays', 'social', 'email', 'ask-the-rabbi', 'chat', 'setup'].forEach(function (id) {
+    ['requests', 'kaddish', 'approve', 'reach-out', 'sign-ups', 'campaign', 'rsvps', 'visitors', 'reading', 'birthdays', 'social', 'email', 'ask-the-rabbi', 'chat', 'setup'].forEach(function (id) {
       var sec = document.getElementById(id), chip = jump.querySelector('a[href="#' + id + '"]');
       if (sec) app.appendChild(sec); if (chip) jump.appendChild(chip);
     });

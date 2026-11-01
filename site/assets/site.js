@@ -251,7 +251,7 @@
       var body = [val('body')].concat(extras).filter(Boolean).join('\n');
       var who = val('deceased') || val('pname');
       store.set('cl_guest', { name: val('name'), email: val('email'), phone: val('phone') || guestInfo.phone || '' });
-      api('POST', '/submit', { kind: f.getAttribute('data-kind') || val('kind'), title: title, body: body, link: val('link'), name: val('name'), email: val('email') }).then(function (r) {
+      api('POST', '/submit', { kind: f.getAttribute('data-kind') || val('kind'), title: title, body: body, link: val('link'), name: val('name'), email: val('email'), phone: val('phone') }).then(function (r) {
         b.disabled = false;
         if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
         var pub = /^(mazal-tov|announcement|shiva)$/.test(f.getAttribute('data-kind') || val('kind'));

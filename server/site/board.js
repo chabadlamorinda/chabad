@@ -75,14 +75,14 @@ ${byPopularity([
     if (!pool) return res.status(503).json({ code: 'not_configured', error: t('Sending is not switched on yet. Please call or email us.') });
     const b = req.body || {}, kind = Object.prototype.hasOwnProperty.call(KINDS, b.kind) ? b.kind : null;
     const title = clean(b.title, 120), body = String(b.body || '').replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '').trim().slice(0, 3000), link = clean(b.link, 300);
-    const m = readMember ? await readMember(req) : null, name = clean(b.name, 100) || (m && m.name) || '', email = (clean(b.email, 254) || (m && m.email) || '').toLowerCase();
+    const m = readMember ? await readMember(req) : null, name = clean(b.name, 100) || (m && m.name) || '', email = (clean(b.email, 254) || (m && m.email) || '').toLowerCase(), phone = clean(b.phone, 40) || (m && m.phone) || '';
     if (!kind) return res.status(400).json({ code: 'invalid_kind', error: t('Please choose what you are sharing.') });
     if (!title) return res.status(400).json({ code: 'invalid_title', error: t('Please add a headline.') });
     if (link && !/^https?:\/\//.test(link)) return res.status(400).json({ code: 'invalid_link', error: t('Links must start with https://') });
     if (!name || !validEmail(email)) return res.status(400).json({ code: 'invalid_contact', error: t('Please add your name and email so the Rabbi can reach you.') });
-    await q('INSERT INTO submissions (id, kind, member_id, name, email, title, body, link) VALUES ($1,$2,$3,$4,$5,$6,$7,$8)', ['s_' + crypto.randomBytes(12).toString('hex'), kind, m ? m.id : null, name, email, title, body, link]);
+    await q('INSERT INTO submissions (id, kind, member_id, name, email, phone, title, body, link) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)', ['s_' + crypto.randomBytes(12).toString('hex'), kind, m ? m.id : null, name, email, phone, title, body, link]);
     const to = notifyTo || content().org.email;
-    if (mailer && to) mailer.send({ to, subject: `${KINDS[kind].private ? '[Private] ' : ''}${KINDS[kind].label}: ${title}`, text: `${name} <${email}> sent:\n\n${title}\n\n${body}\n${link}\n\nRabbi area: ${base}/admin/community` }).catch((e) => log.error('notify:', e && e.message));
+    if (mailer && to) mailer.send({ to, subject: `${KINDS[kind].private ? '[Private] ' : ''}${KINDS[kind].label}: ${title}`, text: `${name} <${email}>${phone ? ' ' + phone : ''} sent:\n\n${title}\n\n${body}\n${link}\n\nRabbi area: ${base}/admin/community` }).catch((e) => log.error('notify:', e && e.message));
     res.json({ ok: true });
   }));
 
@@ -105,7 +105,19 @@ ${byPopularity([
     prayerList: async () => (pool ? (await q("SELECT title, created_at FROM submissions WHERE kind='tehillim' AND status <> 'declined' AND created_at > now() - interval '90 days' ORDER BY created_at DESC")).rows : []),
     mountAdmin(r2, { authed, wrap: w }) {
       if (!pool) return;
-      r2.get('/api/site/submissions', authed, w(async (req, res) => res.json({ kinds: KINDS, items: (await q("SELECT * FROM submissions WHERE status='pending' OR decided_at > now() - interval '60 days' ORDER BY created_at DESC LIMIT 200")).rows })));
+      // Two lists: things to approve for the community board (default), and the private requests people sent through the
+      // forms (?private=1: Kaddish, the prayer list, confidential messages), kept for good so the Rabbi can always look
+      // back, with a spreadsheet of everything (submissions.csv).
+      const PRIVATE = Object.keys(KINDS).filter((k) => KINDS[k].private);
+      r2.get('/api/site/submissions', authed, w(async (req, res) => {
+        if (req.query.private) return res.json({ kinds: KINDS, items: (await q('SELECT * FROM submissions WHERE kind = ANY($1) ORDER BY created_at DESC LIMIT 1000', [PRIVATE])).rows });
+        res.json({ kinds: KINDS, items: (await q("SELECT * FROM submissions WHERE NOT (kind = ANY($1)) AND (status='pending' OR decided_at > now() - interval '60 days') ORDER BY created_at DESC LIMIT 200", [PRIVATE])).rows });
+      }));
+      r2.get('/api/site/submissions.csv', authed, w(async (req, res) => {
+        const rows = (await q('SELECT * FROM submissions ORDER BY created_at DESC')).rows, c = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+        const out = [['Date', 'Kind', 'Name', 'Email', 'Phone', 'Title', 'Details', 'Link', 'Status']].concat(rows.map((r) => [new Date(r.created_at).toISOString().slice(0, 16).replace('T', ' '), KINDS[r.kind] ? KINDS[r.kind].label : r.kind, r.name, r.email, r.phone, r.title, r.body, r.link, r.status]));
+        res.set('Cache-Control', 'no-store').type('text/csv').attachment('website-forms.csv').send(out.map((r) => r.map(c).join(',')).join('\r\n'));
+      }));
       r2.post('/api/site/submissions/:id', authed, express.json({ limit: '4kb' }), w(async (req, res) => {
         const status = req.body && req.body.status;
         if (!['approved', 'declined', 'pending', 'done'].includes(status)) return res.status(400).json({ code: 'invalid', error: 'Invalid status.' });

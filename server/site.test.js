@@ -495,15 +495,24 @@ test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const bd = (await c.call('GET', '/tehillim?b=1986-05-01')).text;
   assert.match(bd, /Your chapter this year is/); assert.match(bd, /Psalm (41|42)\b/);
   assert.match((await c.call('GET', '/tehillim')).text, /Today&#39;s Tehillim/);
-  assert.match((await c.call('GET', '/help/someone-passed-away')).text, /tel:9253847242/);
+  for (const p of ['/help/someone-passed-away', '/help/end-of-life', '/help/new-baby', '/kaddish', '/tehillim']) {
+    const h = (await c.call('GET', p)).text; // Call, Text and WhatsApp the Rabbi on every help page, Kaddish and Tehillim
+    assert.match(h, /data-channel="call"/, p); assert.match(h, /data-channel="text"/, p); assert.match(h, /data-channel="whatsapp"/, p);
+  }
 });
 
 test('Kaddish requests and the prayer list stay private', async () => {
   const g = client();
-  assert.equal((await g.call('POST', '/api/site/submit', { kind: 'kaddish', title: 'Kaddish: Avraham', body: 'Kaddish for: 11 months', name: 'Sara', email: 'sara@x.co' })).status, 200);
+  assert.equal((await g.call('POST', '/api/site/submit', { kind: 'kaddish', title: 'Kaddish: Avraham', body: 'Kaddish for: 11 months', name: 'Sara', email: 'sara@x.co', phone: '925-555-0101' })).status, 200);
   assert.equal((await g.call('POST', '/api/site/submit', { kind: 'tehillim', title: 'Moshe ben Sarah', body: 'For: refuah', name: 'Sara', email: 'sara@x.co' })).status, 200);
   assert.match(mails[mails.length - 1].subject, /^\[Private\] Prayer list/);
   const a = await admin();
+  // Saved for good in their own list (with the phone, to call back), not among the board approvals, and in the spreadsheet.
+  const priv = (await a.call('GET', '/admin/api/site/submissions?private=1')).json.items, k = priv.find((i) => i.title === 'Kaddish: Avraham');
+  assert.equal(k.phone, '925-555-0101'); assert.equal(k.status, 'pending');
+  assert.ok(!(await a.call('GET', '/admin/api/site/submissions')).json.items.some((i) => i.kind === 'kaddish'), 'not mixed with approvals');
+  assert.equal((await a.call('POST', '/admin/api/site/submissions/' + k.id, { status: 'done' }, { 'x-admin': '1' })).status, 200);
+  assert.match((await a.call('GET', '/admin/api/site/submissions.csv')).text, /Kaddish request.*925-555-0101/);
   const items = (await a.call('GET', '/admin/api/site/submissions')).json.items;
   for (const i of items) await a.call('POST', '/admin/api/site/submissions/' + i.id, { status: 'approved' }, { 'x-admin': '1' });
   const board = (await g.call('GET', '/community')).text;

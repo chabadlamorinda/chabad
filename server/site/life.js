@@ -11,7 +11,7 @@ const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
 const { validYmd } = require('./tools.js');
 const { readNext } = require('./links.js');
-const { links: leadLinks } = require('./leads.js');
+const { links: leadLinks, callRow } = require('./leads.js');
 
 const LETTERS = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ', 'ק', 'ר', 'ש', 'ת'];
 const FINAL = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
@@ -65,7 +65,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
     const body = `<article class="wrap sec narrow help-page">
 <p class="crumbs"><a href="/help">${esc(t("We're here for you"))}</a> ›</p>
 <h1>${esc(h.title)}</h1>
-<div class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${phoneLink(o)}<a class="btn ghost" href="${esc(leadLinks(o, 'consult', t).whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="rabbi" rel="noopener" target="_blank">WhatsApp</a><a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p>${o.rebbetzinMobile ? `<p class="muted">${esc(t('Or talk privately with Rebbetzin Tzipora Labkowski:'))} <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').call)}" data-lead="consult" data-channel="call" data-who="rebbetzin" dir="ltr">${esc(o.rebbetzinMobile)}</a> · <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="rebbetzin" rel="noopener" target="_blank">WhatsApp</a></p>` : ''}</div>
+<div class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${callRow(X)}<a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p>${o.rebbetzinMobile ? `<p class="muted">${esc(t('Or talk privately with Rebbetzin Tzipora Labkowski:'))} <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').call)}" data-lead="consult" data-channel="call" data-who="rebbetzin" dir="ltr">${esc(o.rebbetzinMobile)}</a> · <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="rebbetzin" rel="noopener" target="_blank">WhatsApp</a></p>` : ''}</div>
 ${require('./forms.js').startCard(X, '/help/' + h.slug)}
 ${md(h.body)}
 ${extras ? `<div class="grid">${extras}</div>` : ''}
@@ -81,6 +81,7 @@ ${readNext(X, rel.map((x) => ({ ...x, description: (C.learn.find((a) => '/learn/
     const X = ctxOf(req), { t, C } = X, o = C.org, k = C.sponsor.kaddish || {}, svc = o.services || [];
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Saying Kaddish'))}</h1>
 <p class="lead-d">${esc(t('Kaddish is the prayer said for a parent or close relative during the eleven months after their passing and on every yahrzeit. It elevates the soul of your loved one. We will help you say it, or arrange for it to be said.'))} <a href="/learn/kaddish">${esc(t('What is Kaddish?'))}</a></p>
+<div class="card callbox"><p><strong>${esc(t('Talk with the Rabbi about Kaddish'))}</strong></p><p class="btns">${callRow(X)}</p></div>
 <h2>${esc(t('Join our minyan'))}</h2>
 <p>${esc(t('Kaddish is said with a minyan, a group of ten. Come to our services and say it with the community; if you are new to it, we will guide you through the words. Let us know you are coming, so we can make sure there is a minyan.'))}</p>
 <ul class="list">${svc.map((s) => `<li><strong>${esc(s.name)}</strong> ${esc(s.time)}</li>`).join('')}</ul>
@@ -143,12 +144,13 @@ ${s.name119 ? `<p class="muted"><a href="#name119">${esc(t('Psalm 119 by Hebrew 
 ${sit}
 <section class="card tehillim" id="name119"><h2>${esc(t('Psalm 119 by Hebrew name'))}</h2><p>${esc(t('Psalm 119 has a section of eight verses for each letter of the Hebrew alphabet. For someone who is sick, or in memory of someone, say the sections that spell their Hebrew name.'))}</p>
 <form class="tool" method="get" action="/tehillim#name119"><label>${esc(t('Hebrew name (in Hebrew letters)'))} <input name="name" lang="he" dir="rtl" value="${esc(name)}" required></label><button class="btn ghost" type="submit">${esc(t('Show the sections'))}</button></form>${byName}</section>
+<div class="card callbox"><p><strong>${esc(t('Someone needs prayers or help? Talk with the Rabbi.'))}</strong></p><p class="btns">${callRow(X)}</p></div>
 <section class="card tehillim" id="prayer-list"><h2>${esc(t('Add a name to our prayer list'))}</h2><p>${esc(t('The Rabbi and the community pray for everyone on our list, and the name is mentioned at the Torah reading (Mi Shebeirach). Please give the Hebrew name and the mother\'s Hebrew name if you know them.'))}</p>
 <form class="tool" data-submit data-kind="tehillim" data-title="{pname} ben/bat {pmother}">
   <div class="fields"><label>${esc(t('Name (Hebrew name if known)'))} <input name="pname" required data-extra="Name"></label><label>${esc(t("Mother's name (Hebrew if known)"))} <input name="pmother" data-extra="Mother's name"></label>
   <label>${esc(t('For'))} <select name="reason" data-extra="For"><option value="refuah">${esc(t('A complete recovery'))}</option><option value="birth">${esc(t('An easy and healthy birth'))}</option><option value="match">${esc(t('Finding a match'))}</option><option value="children">${esc(t('Children'))}</option><option value="livelihood">${esc(t('Livelihood'))}</option><option value="other">${esc(t('Other'))}</option></select></label></div>
   <label>${esc(t('Anything the Rabbi should know (private)'))} <textarea name="body" rows="3" maxlength="1000"></textarea></label>
-  <div class="fields"><label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email" required></label></div>
+  <div class="fields"><label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email" required></label><label>${esc(t('Phone (optional)'))} <input name="phone" type="tel" autocomplete="tel"></label></div>
   <button class="btn gold" type="submit">${esc(t('Add to the prayer list'))}</button><p class="msg" hidden></p>
   <p class="give-next" hidden><a class="btn gold" href="${giveUrl('general', '')}" data-ded="${esc(t('For a complete recovery for {name}'))}">${esc(t('Give charity in their merit'))}</a></p>
 </form></section>

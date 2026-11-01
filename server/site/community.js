@@ -61,6 +61,8 @@ CREATE TABLE IF NOT EXISTS submissions (
   status TEXT NOT NULL DEFAULT 'pending', created_at TIMESTAMPTZ NOT NULL DEFAULT now(), decided_at TIMESTAMPTZ
 );
 CREATE INDEX IF NOT EXISTS submissions_status_idx ON submissions (status, created_at);
+-- The phone number people leave on the Kaddish, prayer list and Rabbi forms (to call, text or WhatsApp them back).
+ALTER TABLE submissions ADD COLUMN IF NOT EXISTS phone TEXT NOT NULL DEFAULT '';
 CREATE TABLE IF NOT EXISTS social_posts (
   event_slug TEXT NOT NULL, network TEXT NOT NULL, post_id TEXT NOT NULL DEFAULT '', message TEXT NOT NULL DEFAULT '',
   posted_at TIMESTAMPTZ NOT NULL DEFAULT now(), PRIMARY KEY (event_slug, network)

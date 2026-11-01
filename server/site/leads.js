@@ -72,6 +72,13 @@ function consultBox(X) {
   return `<div class="card rabbi-contact consult"><h2>${esc(t('Talk privately with the Rabbi or the Rebbetzin'))}</h2><p>${esc(t('We help with every kind of dispute and family matter, with great success. Come early, before things spiral; and it is never too late. With the Torah\'s way and a positive outlook, there is a way forward from any situation. Reach out privately; no membership needed.'))}</p>
 ${row('rabbi', t('Rabbi Yisroel Labkowski'))}${row('rebbetzin', t('Rebbetzin Tzipora Labkowski'))}</div>`;
 }
+// One row of Call (with the number) / Text / WhatsApp the Rabbi, each tap recorded as a request: the top of every help
+// page, Kaddish and Tehillim.
+function callRow(X, topic = 'consult', cls = '') {
+  const t = X.t, o = X.C.org, L = links(o, topic, t);
+  const a = (ch, label, extra = '') => `<a class="btn ${ch === 'call' ? 'gold call' : ch === 'whatsapp' ? 'ghost wa' : 'ghost'}${cls}" href="${esc(L[ch])}" data-lead="${topic}" data-channel="${ch}"${extra}>${label}</a>`;
+  return `${a('call', `${esc(t('Call'))} <span dir="ltr">${esc(o.mobile || o.phone)}</span>`)}${a('text', esc(t('Text')))}${a('whatsapp', 'WhatsApp', ' rel="noopener" target="_blank"')}`;
+}
 // One short line on every other guide and help page.
 function consultLine(X) {
   const t = X.t, w = (who, name) => `<a href="${esc(links(X.C.org, 'consult', t, who).whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="${who}" rel="noopener" target="_blank">${esc(name)}</a>`;
@@ -136,4 +143,4 @@ function mountLeads(app, { store, mailer, notifyTo = '', content, base = '', lim
     },
   };
 }
-module.exports = { mountLeads, topicOf, links, contactBox, actionCard, withContact, topicForPage, TOPICS, PAGE_TOPICS };
+module.exports = { mountLeads, topicOf, links, contactBox, actionCard, withContact, topicForPage, callRow, TOPICS, PAGE_TOPICS };
