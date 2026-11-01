@@ -74,7 +74,9 @@ ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Thank you!'))}</h1>
 <p class="lead-d">${esc(t('Your gift was received. A receipt has been emailed to you.'))}</p>
 <p>${esc(t('Your generosity keeps Jewish life warm and open to everyone in Lafayette, Moraga and Orinda. May G-d bless you and your family with health, happiness and success.'))}</p>
-<p class="btns"><a class="btn gold" href="/">${esc(t('Back to the home page'))}</a><a class="btn ghost" href="/events">${esc(t('Upcoming events'))}</a></p>
+<h2>${esc(t('What would you like to do next?'))}</h2>
+<div class="grid">${[['/shabbat', 'Come for Shabbat', 'Services, the Kiddush and a warm Shabbat meal.'], ['/events', 'Upcoming events', 'Holidays, classes and gatherings for the whole family.'], ['/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.'], ['/sponsor-a-kiddush', 'Sponsor a Kiddush', 'In honor or in memory of a loved one.'], ['/subscribe', 'Get the weekly email', 'Shabbat times, events and a word from the Rabbi.'], ['/learn', 'Learn about Judaism', 'Clear, friendly guides to Jewish life.']].map(([href, h, p]) => `<a class="card tile" href="${X.path(href)}"><h3>${esc(t(h))}</h3><p>${esc(t(p))}</p></a>`).join('')}</div>
+<p class="btns"><a class="btn ghost" href="${X.path('/')}">${esc(t('Back to the home page'))}</a></p>
 <p class="muted">${esc(t('Questions about your gift? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/donate/thank-you', title: t('Thank you!'), description: t('Thank you for your gift to Chabad of Lamorinda.'), body, noindex: true });
   }));

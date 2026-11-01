@@ -248,7 +248,7 @@ ${pics.length ? `<div class="pics big">${pics.map((p) => `<a href="${esc(p.link)
     const X = ctxOf(req), { t, C } = X, p = C.pages.find((x) => x.slug === req.params.slug);
     if (!p) return next();
     const faqs = p.slug === 'faq' ? C.faq : [];
-    const body = `<article class="wrap sec narrow"><h1>${esc(p.title || p.slug)}</h1>${md(p.body)}${faqs.length ? faqHtml(faqs) : ''}${p.slug === 'contact' ? contactBlock(C, X) : ''}</article>`;
+    const body = `<article class="wrap sec narrow"><h1>${esc(p.title || p.slug)}</h1>${md(p.body)}${faqs.length ? `<p><input type="search" class="search" data-filter="#faq-list .qa" placeholder="${esc(t('Search the questions'))}" aria-label="${esc(t('Search the questions'))}"></p><div id="faq-list">${faqHtml(faqs)}</div><p class="muted" data-filter-empty hidden>${esc(t('Nothing found. Try another word, or ask us.'))} <button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask us'))}</button></p>` : ''}${p.slug === 'contact' ? contactBlock(C, X) : ''}</article>`;
     await render(res, { path: '/' + p.slug, title: p.title || p.slug, description: p.description || p.text.slice(0, 160), body, ld: faqs.length ? [faqLd(faqs)] : [] });
   });
   return { render, upcoming, eventLd, eventCard, faqHtml, faqLd, crumbs, counts, setNews, pagesRoute, when: (e) => ctxOf({ lang: 'en' }).when(e) };

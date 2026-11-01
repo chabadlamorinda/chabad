@@ -922,3 +922,12 @@ html { scroll-padding-top: 84px; }
 @media (max-width: 600px) { form[data-give], .give { padding-bottom: 76px; } }
 @media (max-width: 440px) { .brand { margin-inline-end: 8px; } }
 .nw { white-space: nowrap; }
+/* Donate: the funds as one compact list, other ways to give folded */
+.fund-list { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+.fund-list li + li { border-top: 1px solid var(--line); }
+.fund-list a { display: flex; flex-direction: column; padding: 10px 2px; text-decoration: none; color: inherit; position: relative; padding-inline-end: 28px; }
+.fund-list a::after { content: '›'; position: absolute; inset-inline-end: 6px; top: 50%; transform: translateY(-50%); font-size: 1.4rem; color: var(--gold, #c9a227); }
+[dir="rtl"] .fund-list a::after { content: '‹'; }
+.fund-list span { color: var(--muted, #666); font-size: .95rem; }
+.card.ways { padding-top: 4px; padding-bottom: 4px; }
+.card.ways .qa:last-child { border-bottom: 0; }

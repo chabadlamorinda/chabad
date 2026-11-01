@@ -703,6 +703,10 @@
     if (history.length && store.get('cl_chat_open')) open();
   }
 
+  // ---------- A link to a folded item (/donate#stock) opens it ----------
+  function openHash() { try { var el = location.hash && document.getElementById(location.hash.slice(1)); if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView(); } } catch (e) {} }
+  openHash(); window.addEventListener('hashchange', openHash);
+
   // ---------- Search box on lists (guides) ----------
   [].forEach.call(document.querySelectorAll('[data-filter]'), function (box) {
     var items = document.querySelectorAll(box.getAttribute('data-filter'));
