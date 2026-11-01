@@ -103,6 +103,16 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     const to = R[req.path.replace(/\/+$/, '') || '/'] || (aid && R['/' + aid]);
     return to ? res.redirect(301, to) : next();
   });
+  // Spam guard for the forms (no puzzle for people): site.js adds a hidden field that only robots fill (x-hp) and says how
+  // long the page was open (x-age, seconds). A robot gets a polite "ok" and nothing is saved, emailed or counted.
+  // Signed-in members are never stopped (a one-tap RSVP can be fast).
+  app.use('/api/site', (req, res, next) => {
+    if (req.method !== 'POST' || !/^\/(submit|forms\/|subscribe|rsvp\/|leads?\b)/.test(req.path) || /(?:^|; )cl_member=/.test(req.get('cookie') || '')) return next();
+    const age = Number(req.get('x-age')), robot = req.get('x-hp') === '1' || (req.get('x-age') != null && age >= 0 && age < 2);
+    if (!robot) return next();
+    log.error && log.error('spam guard: stopped a robot on', req.path);
+    res.json({ ok: true, going: 0 });
+  });
   let community = null; // set just below; visitors links signed-in members through it
   const visitors = mountVisitors(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log, readMember: (req) => (community ? community.readMember(req) : null) });
   const leads = mountLeads(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log });

@@ -16,8 +16,15 @@
     (kids || []).forEach(function (c) { if (c) n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
     return n;
   }
+  // Spam guard (see server/site/index.js): a hidden field in every form that only robots fill, and how long the page has
+  // been open; a person never sees either.
+  var openedAt = Date.now();
+  [].forEach.call(document.querySelectorAll('form:not([action])'), function (f) { // (forms sent by this script; not search boxes)
+    var hp = document.createElement('input'); hp.name = 'website_url'; hp.className = 'hp'; hp.tabIndex = -1; hp.autocomplete = 'off'; hp.setAttribute('aria-hidden', 'true'); f.appendChild(hp);
+  });
   function api(method, path, body) {
-    return fetch('/api/site' + path, { method: method, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1', 'x-lang': LANG }, body: body ? JSON.stringify(body) : undefined })
+    var robot = [].some.call(document.querySelectorAll('input.hp'), function (x) { return x.value; });
+    return fetch('/api/site' + path, { method: method, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1', 'x-lang': LANG, 'x-age': String(Math.round((Date.now() - openedAt) / 1000)), 'x-hp': robot ? '1' : '0' }, body: body ? JSON.stringify(body) : undefined })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j._status = r.status; return j; }); });
   }
   // After a guest RSVP or form: invite them to save their details for next time.
@@ -312,7 +319,7 @@
       ev.preventDefault();
       var m = $('.msg', form), b = $('button[type=submit]', form), fields = {};
       [].forEach.call(form.querySelectorAll('input, select, textarea'), function (x) {
-        if (!x.name) return;
+        if (!x.name || x.classList.contains('hp')) return;
         var parts = x.name.split('.');
         if (parts.length === 3) { var a = fields[parts[0]] = fields[parts[0]] || []; a[+parts[1]] = a[+parts[1]] || {}; a[+parts[1]][parts[2]] = x.value; return; }
         if (x.type === 'checkbox' && x.closest('[data-group]')) { fields[x.name] = fields[x.name] || []; if (x.checked) fields[x.name].push(+x.value); return; }

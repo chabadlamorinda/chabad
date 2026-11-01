@@ -480,6 +480,10 @@ test('a quiet giving form ($360) only where giving fits, and step-by-step series
   assert.match(shiva, /Part \d+ of \d+/); assert.match(shiva, /class="card series-next" href="\/learn\/setting-up-a-shiva-house"/);
   assert.match((await c.call('GET', '/learn/visiting-a-grave')).text, /You have reached the end of this series/);
   assert.match((await c.call('GET', '/ru/learn')).text, /Шаг за шагом/);
+  const sp = (await c.call('GET', '/learn/series/shabbat')).text; // each series has its own page, in order, in the sitemap
+  assert.match(sp, /Shabbat, step by step/); assert.match(sp, /"@type":"ItemList"/); assert.ok(sp.indexOf('/learn/shabbat-for-beginners') < sp.indexOf('/learn/havdalah'));
+  assert.equal((await c.call('GET', '/he/learn/series/mourning')).status, 200);
+  assert.match((await c.call('GET', '/sitemap.xml')).text, /\/learn\/series\/kosher/);
 });
 
 test('the Rabbi gets an email for everything: RSVPs and chat questions (new accounts: in the sign-in test)', async () => {
@@ -490,6 +494,16 @@ test('the Rabbi gets an email for everything: RSVPs and chat questions (new acco
   const before = mails.length;
   for (let i = 0; i < 2; i++) await (await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ lang: 'en', cid: 'notifytest1', messages: [{ role: 'user', content: 'Is there a Purim party for teens?' }] }) })).text();
   assert.equal(mails.slice(before).filter((m) => /^Chat question: Is there a Purim party/.test(m.subject)).length, 1, 'one email per conversation');
+});
+
+test('spam guard: a robot gets "ok" but nothing is saved; people and members pass', async () => {
+  const g = client(), a = await admin(), n = async () => (await a.call('GET', '/admin/api/site/submissions?private=1')).json.items.length;
+  const body = { kind: 'rabbi', title: 'Hello', body: 'Robot text', name: 'Bot', email: 'bot@x.co' }, before = await n();
+  assert.equal((await g.call('POST', '/api/site/submit', body, { 'x-hp': '1' })).json.ok, true);
+  assert.equal((await g.call('POST', '/api/site/submit', body, { 'x-age': '0' })).json.ok, true);
+  assert.equal(await n(), before, 'robots are not saved');
+  assert.equal((await g.call('POST', '/api/site/submit', { ...body, name: 'Person' }, { 'x-age': '25', 'x-hp': '0' })).status, 200);
+  assert.equal(await n(), before + 1, 'a person is saved');
 });
 
 test('help, Kaddish, Tehillim and sponsor pages', async () => {

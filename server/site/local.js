@@ -45,13 +45,13 @@ function seriesBox(X, { s, i }) {
 <div class="series-bar" aria-hidden="true"><i style="width:${Math.round((i + 1) / s.guides.length * 100)}%"></i></div>
 ${next ? `<a class="card series-next" href="/learn/${next.slug}"><span class="hand">${esc(t('Next'))}</span><strong>${esc(next.title)}</strong><span>${esc(next.description)}</span></a>` : `<p>${esc(t('You have reached the end of this series.'))}</p>`}
 <p class="btns">${prev ? `<a class="btn ghost sm" href="/learn/${prev.slug}">‹ ${esc(t('Previous'))}</a>` : ''}</p>
-<details class="series-all"><summary>${esc(t('All {n} parts', { n: s.guides.length }))}</summary><ol>${items}</ol></details></section>`;
+<details class="series-all"><summary>${esc(t('All {n} parts', { n: s.guides.length }))}</summary><ol>${items}</ol><p><a href="/learn/series/${s.id}">${esc(t('See the whole series'))} →</a></p></details></section>`;
 }
 // The series as tiles for /learn ("Step by step"), most opened first.
 function seriesTiles(X) {
-  const { t, C } = X, list = byPopularity(C.series || [], (s) => '/learn/' + s.guides[0]);
+  const { t, C } = X, list = byPopularity(C.series || [], (s) => '/learn/series/' + s.id);
   if (!list.length) return '';
-  const tile = (s) => `<a class="card tile" href="/learn/${s.guides[0]}"><p class="eyebrow">${esc(t('{n} parts', { n: s.guides.length }))}</p><h3>${esc(s.title)}</h3><p>${esc(s.intro || '')}</p></a>`;
+  const tile = (s) => `<a class="card tile" href="/learn/series/${s.id}"><p class="eyebrow">${esc(t('{n} parts', { n: s.guides.length }))}</p><h3>${esc(s.title)}</h3><p>${esc(s.intro || '')}</p></a>`;
   return `<h2 id="series">${esc(t('Step by step'))}</h2><div class="grid series-tiles">${list.slice(0, 4).map(tile).join('')}</div>${list.length > 4 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} series', { n: list.length }))}</summary><div class="grid series-tiles">${list.slice(4).map(tile).join('')}</div></details>` : ''}`;
 }
 
@@ -130,6 +130,24 @@ ${seriesTiles(X)}
 
   // Guides connected to an occasion get a "mark it" box (sponsor / Tehillim / Kaddish).
   const OCCASION = { yahrzeit: 'yahrzeit', yizkor: 'yahrzeit', kaddish: 'yahrzeit', shiva: 'yahrzeit', unveiling: 'yahrzeit', 'jewish-funeral': 'yahrzeit', 'brit-milah': 'new-baby', 'baby-naming': 'new-baby', 'bar-mitzvah': 'bar-bat-mitzvah', 'bat-mitzvah': 'bar-bat-mitzvah', 'jewish-wedding': 'anniversary', tehillim: 'refuah', tzedakah: 'honor' };
+  // Each step-by-step series on its own page (/learn/series/shabbat): every part in order, as picture cards.
+  r.get('/learn/series', (req, res) => res.redirect(301, ctxOf(req).path('/learn') + '#series'));
+  r.get('/learn/series/:id', wrap(async (req, res, next) => {
+    const X = ctxOf(req), { t, C } = X, s = (C.series || []).find((x) => x.id === req.params.id);
+    if (!s) return next();
+    const parts = s.guides.map((g) => C.learn.find((a) => a.slug === g)).filter(Boolean), others = (C.series || []).filter((x) => x !== s);
+    const body = `<section class="wrap sec series-page"><p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › <a href="/learn#series">${esc(t('Step by step'))}</a></p>
+<p class="eyebrow">${esc(t('Step by step'))} · ${esc(t('{n} parts', { n: parts.length }))}</p>
+<h1>${esc(s.title)}</h1>
+<p class="lead-d">${esc(s.intro || '')}</p>
+<p class="btns"><a class="btn gold" href="/learn/${parts[0].slug}">${esc(t('Start with part 1'))} →</a></p>
+${guideCards(X, parts)}
+<h2>${esc(t('More step-by-step series'))}</h2><p class="chips">${others.map((x) => `<a class="chip" href="/learn/series/${x.id}">${esc(x.title)}</a>`).join('')}</p></section>`;
+    await render(res, { path: '/learn/series/' + s.id, title: s.title, description: s.intro || s.title, body,
+      ld: [{ '@context': 'https://schema.org', '@type': 'ItemList', name: s.title, itemListOrder: 'https://schema.org/ItemListOrderAscending', numberOfItems: parts.length,
+        itemListElement: parts.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: base + X.path('/learn/' + a.slug), name: a.title })) }] });
+  }));
+
   r.get('/learn/:slug', wrap(async (req, res, next) => {
     const X = ctxOf(req), { t, C } = X, a = C.learn.find((x) => x.slug === req.params.slug);
     if (!a) return next();

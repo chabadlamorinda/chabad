@@ -954,3 +954,8 @@ html { scroll-padding-top: 84px; }
 .series-all ol { padding-inline-start: 1.4rem; margin: .6rem 0 0; }
 .series-all li { margin: .25rem 0; }
 .series-all li.done a { color: var(--muted); }
+.hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
+/* A series page: the parts numbered in order */
+.series-page .gc-grid { counter-reset: part; }
+.series-page .gcard { position: relative; }
+.series-page .gcard::before { counter-increment: part; content: counter(part); position: absolute; top: 8px; inset-inline-start: 8px; z-index: 1; background: var(--gold); color: #fff; font-weight: 700; border-radius: 999px; min-width: 28px; height: 28px; display: grid; place-items: center; font-size: .9rem; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
