@@ -2,7 +2,7 @@
 title: סדר בוקר יהודי: לפתוח את היום במשמעות
 description: דרך יהודית פשוטה לפתוח כל בוקר: מודה אני, נטילת ידיים, ברכה, רגע של תפילה, מטבע לצדקה וכמה דקות של לימוד.
 category: Prayer & Torah
-related: modeh-ani, netilat-yadayim, daily-prayers, shema, making-every-day-count
+related: modeh-ani, morning-blessings, netilat-yadayim, daily-prayers, shema, making-every-day-count
 local: רוצים עזרה בהנחת תפילין או בהתחלת תפילה? הרב ישראל לבקובסקי ישמח לעזור בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 הדרך שבה אנחנו פותחים את הבוקר מעצבת את היום כולו. היהדות מציעה סדר בוקר יפה שלוקח כמה זמן שיש לכם, מעט או הרבה. אפילו חמש דקות יכולות להפוך בוקר לחוץ לבוקר רגוע ומלא הכרת תודה.

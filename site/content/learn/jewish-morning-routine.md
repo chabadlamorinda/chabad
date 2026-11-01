@@ -2,7 +2,7 @@
 title: A Jewish Morning Routine: Starting the Day with Meaning
 description: A simple Jewish way to start each morning: Modeh Ani, washing hands, a blessing, a moment of prayer, a coin for tzedakah and a few minutes of learning.
 category: Prayer & Torah
-related: modeh-ani, netilat-yadayim, daily-prayers, shema, making-every-day-count
+related: modeh-ani, morning-blessings, netilat-yadayim, daily-prayers, shema, making-every-day-count
 local: Want help putting on tefillin or starting to pray? Rabbi Yisroel Labkowski is glad to help in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 How we start the morning shapes the whole day. Judaism offers a beautiful morning routine that takes as little or as much time as you have. Even five minutes can turn a rushed morning into a calm, grateful one.
