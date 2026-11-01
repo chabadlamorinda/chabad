@@ -2,7 +2,7 @@
 title: פורים לילדים: תחפושות, רעשנים ומצוות לילדים
 description: פורים לילדים: הסיפור בפשטות, ארבע המצוות בשפה של ילדים, למה מתחפשים, משלוחי מנות שמכינים יחד ואוזני המן.
 category: Shabbat & holidays
-related: purim-costumes, mishloach-manot, megillah, purim-seudah, tzedakah
+related: purim-costumes, fast-of-esther, mishloach-manot, megillah, purim-seudah, tzedakah
 local: חב״ד למורינדה בלאפייט חוגג את פורים עם משפחות מלאפייט, מוראגה ואורינדה, ובית הספר העברי של למורינדה מתקיים בימי ראשון 10:00 עד 12:00 לגילאי 3 עד 13. התאריכים והאירועים של השנה: chabadoflamorinda.com/holidays/purim או 925-384-7242.
 ---
 פורים הוא היום השמח ביותר בשנה היהודית, וילדים אוהבים אותו: תחפושות, רעש, ממתקים ומתנות לחברים. כל חלק של היום הוא מצווה שילדים יכולים לקיים בעצמם.

@@ -2,7 +2,7 @@
 title: Пост Йом Кипура: правила, советы и кто освобожден
 description: Как проходит 25-часовой пост Йом Кипура, пять запретов, кому не следует поститься, советы для более легкого поста и как его завершить.
 category: Shabbat & holidays
-related: teshuvah, kapparot, fast-days, yizkor, selichot
+related: teshuvah, yom-kippur-for-beginners, kapparot, fast-days, yizkor, selichot
 local: Забронируйте места на праздники на chabadoflamorinda.com/forms/high-holidays, а подробности о Йом Кипуре смотрите на chabadoflamorinda.com/holidays/yom-kippur.
 ---
 В Йом Кипур евреи постятся около 25 часов, с заката до наступления темноты на следующий день, совсем без еды и питья. Пост - часть самого святого дня года, дня молитвы, [тшувы](/learn/teshuvah) и близости к Б-гу.

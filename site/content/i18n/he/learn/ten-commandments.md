@@ -2,7 +2,7 @@
 title: עשרת הדיברות: מה כתוב בהם ומה משמעותם
 description: עשרת הדיברות בשפה פשוטה, איפה הם מופיעים בתורה, איך ניתנו בסיני, ולמה שומעים את קריאתם בשבועות.
 category: Prayer & Torah
-related: torah, shavuot-dairy-foods, 613-mitzvot, counting-the-omer, shabbat
+related: torah, shavuot-night-learning, shavuot-dairy-foods, 613-mitzvot, counting-the-omer, shabbat
 local: שמעו את קריאת עשרת הדיברות בבית הכנסת בשבועות, אירוע מיוחד גם לילדים. פרטים ב-chabadoflamorinda.com/holidays/shavuot או בטלפון 925-384-7242.
 ---
 עשרת הדיברות הם עשרת הדברים שה׳ אמר לכל עם ישראל בהר סיני, ואחר כך חקק על שני לוחות אבן. הם כוללים אמונה בה׳, שמירת שבת, כיבוד הורים, ואיסור רצח, גניבה ושקר.

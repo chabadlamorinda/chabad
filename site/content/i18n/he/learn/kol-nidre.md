@@ -2,7 +2,7 @@
 title: כל נדרי: משמעות, זמן ומה קורה בתפילה
 description: מהו כל נדרי, למה הוא פותח את יום הכיפורים, מה פירוש המילים, מתי הוא מתחיל ולמה לצפות בתפילה.
 category: Shabbat & holidays
-related: yom-kippur-fast, keeping-your-word, ten-days-of-repentance, teshuvah, tallit, yizkor
+related: yom-kippur-fast, yom-kippur-for-beginners, keeping-your-word, ten-days-of-repentance, teshuvah, tallit, yizkor
 local: הצטרפו אלינו לכל נדרי ולכל תפילות יום הכיפורים; הירשמו ב-chabadoflamorinda.com/forms/high-holidays או התקשרו 925-384-7242.
 ---
 כל נדרי הוא התפילה שפותחת את יום הכיפורים בערב שבו החג מתחיל. זוהי התרה רשמית של נדרים אישיים, שאומרים שלוש פעמים לפני השקיעה, והיא קובעת את אווירת הענווה והתשובה של היום הקדוש ביותר בשנה.

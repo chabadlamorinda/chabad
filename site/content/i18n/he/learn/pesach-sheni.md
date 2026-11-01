@@ -2,7 +2,7 @@
 title: פסח שני: הפסח השני וההזדמנות השנייה
 description: מהו פסח שני בי״ד באייר, הסיפור שלו בתורה, מנהג אכילת המצה, והלקח שלו שאף פעם לא מאוחר.
 category: Shabbat & holidays
-related: counting-the-omer, matzah, teshuvah, jewish-calendar
+related: counting-the-omer, lag-baomer, matzah, teshuvah, jewish-calendar
 local: שאלות על פסח שני? התקשרו לחב״ד למורינדה 925-384-7242, ומצאו את התאריך של השנה ב-chabadoflamorinda.com/tools/hebrew-date.
 ---
 פסח שני חל בי״ד באייר, בדיוק חודש אחרי ערב פסח. בימי בית המקדש הוא היה הזדמנות שנייה להקריב את קרבן הפסח למי שהחמיץ אותו, והיום הוא נושא מסר נצחי: אף פעם לא מאוחר לתקן.

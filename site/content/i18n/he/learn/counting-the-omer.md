@@ -2,7 +2,7 @@
 title: ספירת העומר: איך סופרים את 49 הימים מפסח לשבועות
 description: מהי ספירת העומר, איך ומתי סופרים בכל לילה, הברכה, מה עושים אם שוכחים, ומנהגי האבלות של ימי הספירה.
 category: Shabbat & holidays
-related: passover-seder, shavuot-dairy-foods, pesach-sheni, ten-commandments, jewish-calendar, blessings
+related: passover-seder, lag-baomer, shavuot-dairy-foods, pesach-sheni, ten-commandments, jewish-calendar, blessings
 local: ספרו איתנו את העומר בתפילות וחגגו יחד את ל״ג בעומר. פרטים ב-chabadoflamorinda.com/holidays/lag-baomer או בטלפון 925-384-7242.
 ---
 ספירת העומר היא המצווה לספור כל אחד מ-49 הימים מהלילה השני של פסח ועד שבועות. בכל לילה, אחרי צאת הכוכבים, מברכים וסופרים את היום בקול, כהכנה למתן תורה.

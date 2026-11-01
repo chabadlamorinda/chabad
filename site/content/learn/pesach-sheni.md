@@ -2,7 +2,7 @@
 title: Pesach Sheni: The Second Passover and Second Chances
 description: What Pesach Sheni, the Second Passover on 14 Iyar, is, its story in the Torah, the custom of eating matzah, and its lesson that it is never too late.
 category: Shabbat & holidays
-related: counting-the-omer, matzah, teshuvah, jewish-calendar
+related: counting-the-omer, lag-baomer, matzah, teshuvah, jewish-calendar
 local: Questions about Pesach Sheni? Call Chabad of Lamorinda at 925-384-7242, and find this year's date at chabadoflamorinda.com/tools/hebrew-date.
 ---
 Pesach Sheni, the "Second Passover," falls on the 14th of Iyar, exactly one month after the day before Passover. In Temple times it was a second chance to bring the Passover offering for those who missed it, and today it carries a timeless message: it is never too late to make things right.

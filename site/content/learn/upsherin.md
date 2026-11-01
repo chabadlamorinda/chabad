@@ -2,7 +2,7 @@
 title: Upsherin: The Jewish Boy's First Haircut at Age Three
 description: What an upsherin is, why Jewish boys wait until three for a first haircut, and how to celebrate this joyful milestone.
 category: Life cycle
-related: tzitzit, hebrew-alphabet, brit-milah, torah
+related: tzitzit, lag-baomer, hebrew-alphabet, brit-milah, torah
 local: Planning an upsherin? Call Rabbi Labkowski at 925-384-7242 and we will help you make your child's first haircut a joyful and meaningful celebration.
 ---
 An upsherin (Yiddish for "shearing") is a boy's first haircut, traditionally held at age three. It is a joyful celebration that marks the start of his formal Jewish education, when he begins wearing a kippah and tzitzit and learning the letters of the Hebrew alphabet. In Hebrew it is also called a chalakah.
