@@ -39,7 +39,7 @@ ${club ? '<input type="hidden" name="fund" value="chai"><input type="hidden" nam
 <div class="chips">${amounts.map((a) => `<label class="chip pick${club ? ' with-medal' : ''}"><input type="radio" name="amt" value="${a}"${preset && a === amt ? ' checked' : ''}>${club ? medal(lvl(a), 20) : ''} ${esc(label(a))}</label>`).join('')}</div>
 <label>${esc(t('Other amount ($)'))} <input type="number" name="other" min="1" max="10000" step="1" inputmode="decimal" value="${preset ? '' : esc(String(amt))}"></label></fieldset>
 ${club ? '' : `<label>${esc(t('Where should it go?'))} <select name="fund">${funds.map((f) => `<option value="${esc(f.id)}"${f.id === (opts.fund || 'general') ? ' selected' : ''}>${esc(f.name)}</option>`).join('')}</select></label>`}
-<label>${esc(t('In honor or in memory of (optional)'))} <input type="text" name="dedication" maxlength="80" value="${esc(opts.ded || '')}" placeholder="${esc(t('e.g. In memory of Sarah bat Avraham'))}"></label>
+<label>${esc(t('In honor or in memory of (optional)'))} <input type="text" name="dedication" maxlength="80" value="${esc(opts.ded || '')}" placeholder="${esc(opts.placeholder || t('e.g. In memory of Sarah bat Avraham'))}"></label>
 ${club ? `<label class="check"><input type="checkbox" name="show" checked> ${esc(t('Show our name on the Chai Club board (amounts are never shown)'))}</label><p class="muted small">${esc(t('Names appear on the board from $72 a month.'))}</p>
 <label>${esc(t('Name for the board'))} <input type="text" name="boardName" maxlength="60" autocomplete="name" placeholder="${esc(t('e.g. The Cohen Family'))}"></label>` : ''}
 <label class="check"><input type="checkbox" name="fee"> ${esc(t('Add 3.5% to cover the card processing fee'))}</label>
@@ -81,4 +81,32 @@ ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
     await render(res, { path: '/donate/thank-you', title: t('Thank you!'), description: t('Thank you for your gift to Chabad of Lamorinda.'), body, noindex: true });
   }));
 }
-module.exports = { giveForm, giveUrl, mountGive, CLUB, medal };
+// A quiet giving form at the end of the pages where giving is part of the moment (the Rabbi's direction: "only in the
+// right context, don't push it"): Kaddish and yahrzeits (in memory), praying for someone who is ill (in the merit of
+// their recovery), the guides on tzedakah, and holidays whose mitzvah is giving. $360 is chosen; the dedication box
+// shows a fitting example. render() adds it by itself (pages.js); to add a page, add its address here.
+const GIVE_KINDS = {
+  memory: ['Give in their memory', 'Giving tzedakah in memory of a loved one is an age-old Jewish custom: a merit for their soul, and for the living a way to carry on their good. You can write their name below.', 'e.g. In memory of Sarah bat Avraham', 'general'],
+  refuah: ['Give in the merit of their recovery', 'Since the time of the Talmud, Jews have given tzedakah in the merit of someone who is ill. Write their name, and the Rabbi will include them in his prayers.', 'e.g. For the recovery of Moshe ben Rivka', 'general'],
+  tzedakah: ['Give tzedakah today', 'Every gift, large or small, keeps Jewish life warm and open to everyone in Lafayette, Moraga and Orinda.', 'e.g. In honor of my family', 'general'],
+  holiday: ['Help others celebrate', 'Giving before and on the holiday is part of the mitzvah. Your gift helps families in Lamorinda celebrate, and keeps our holiday programs open to all.', 'e.g. In honor of the holiday', 'holidays'],
+};
+const GIVE_ON = {
+  '/kaddish': 'memory', '/tools/yahrzeit': 'memory', '/learn/yahrzeit': 'memory', '/learn/kaddish': 'memory', '/learn/yizkor': 'memory', '/learn/yahrzeit-candle': 'memory', '/learn/year-of-mourning': 'memory', '/holidays/yom-kippur': 'memory',
+  '/tehillim': 'refuah', '/help/someone-is-sick': 'refuah', '/learn/mi-sheberach': 'refuah',
+  '/learn/tzedakah': 'tzedakah', '/learn/maaser': 'tzedakah', '/learn/pushka': 'tzedakah', '/learn/tzedakah-priorities': 'tzedakah', '/learn/children-money-and-tzedakah': 'tzedakah',
+  '/holidays/purim': 'holiday', '/holidays/passover': 'holiday',
+};
+function giveBox(X, kind, path) {
+  const { t } = X, [title, text, example, fund] = GIVE_KINDS[kind];
+  return `<section class="give-box" id="give-here"><h2>${esc(t(title))}</h2><p>${esc(t(text))}</p>
+${giveForm(X, { fund, amt: 360, placeholder: t(example), back: path })}</section>`;
+}
+function withGive(X, body, path) {
+  const kind = GIVE_ON[path];
+  if (!kind || /data-give/.test(body)) return body;
+  const box = giveBox(X, kind, path), rn = body.lastIndexOf('<section class="read-next"'), i = rn >= 0 ? rn : Math.max(body.lastIndexOf('</article>'), body.lastIndexOf('</section>'));
+  return i < 0 ? body + box : body.slice(0, i) + box + body.slice(i);
+}
+
+module.exports = { giveForm, giveUrl, mountGive, CLUB, medal, withGive, GIVE_ON };

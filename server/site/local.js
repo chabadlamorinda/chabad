@@ -31,6 +31,30 @@ function townFaq(X, t, sh) {
   ].filter(Boolean);
 }
 
+// Step-by-step series (series.json): the guide's place in its first series, and the box at the end of the guide with
+// every part, Previous and Next, so a reader can keep going on the same subject.
+function seriesOf(C, slug) {
+  for (const s of C.series || []) { const i = s.guides.indexOf(slug); if (i >= 0) return { s, i }; }
+  return null;
+}
+function seriesBox(X, { s, i }) {
+  const { t, C } = X, g = (slug) => C.learn.find((x) => x.slug === slug), prev = g(s.guides[i - 1]), next = g(s.guides[i + 1]);
+  const items = s.guides.map((slug, j) => { const x = g(slug); return j === i ? `<li aria-current="step"><strong>${esc(x.title)}</strong></li>` : `<li${j < i ? ' class="done"' : ''}><a href="/learn/${slug}">${esc(x.title)}</a></li>`; }).join('');
+  return `<section class="card series" id="series"><p class="eyebrow">${esc(t('Step by step'))} · ${esc(t('Part {n} of {total}', { n: i + 1, total: s.guides.length }))}</p>
+<h2>${esc(s.title)}</h2>
+<div class="series-bar" aria-hidden="true"><i style="width:${Math.round((i + 1) / s.guides.length * 100)}%"></i></div>
+${next ? `<a class="card series-next" href="/learn/${next.slug}"><span class="hand">${esc(t('Next'))}</span><strong>${esc(next.title)}</strong><span>${esc(next.description)}</span></a>` : `<p>${esc(t('You have reached the end of this series.'))}</p>`}
+<p class="btns">${prev ? `<a class="btn ghost sm" href="/learn/${prev.slug}">‹ ${esc(t('Previous'))}</a>` : ''}</p>
+<details class="series-all"><summary>${esc(t('All {n} parts', { n: s.guides.length }))}</summary><ol>${items}</ol></details></section>`;
+}
+// The series as tiles for /learn ("Step by step"), most opened first.
+function seriesTiles(X) {
+  const { t, C } = X, list = byPopularity(C.series || [], (s) => '/learn/' + s.guides[0]);
+  if (!list.length) return '';
+  const tile = (s) => `<a class="card tile" href="/learn/${s.guides[0]}"><p class="eyebrow">${esc(t('{n} parts', { n: s.guides.length }))}</p><h3>${esc(s.title)}</h3><p>${esc(s.intro || '')}</p></a>`;
+  return `<h2 id="series">${esc(t('Step by step'))}</h2><div class="grid series-tiles">${list.slice(0, 4).map(tile).join('')}</div>${list.length > 4 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} series', { n: list.length }))}</summary><div class="grid series-tiles">${list.slice(4).map(tile).join('')}</div></details>` : ''}`;
+}
+
 function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crumbs, counts, wrap, ctxOf }) {
   r.get('/our-area', wrap(async (req, res) => {
     const X = ctxOf(req), { t, C } = X, home = C.towns.filter((x) => x.tier === 'home'), near = C.towns.filter((x) => x.tier === 'near');
@@ -98,6 +122,7 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
 <p class="chips">${groups.map(([cat]) => `<a class="chip" href="#${id(cat)}">${esc(t(cat))}</a>`).join('')}<a class="chip" href="/holidays">${esc(t('Holidays'))}</a><a class="chip" href="/tehillim">${esc(t('Tehillim'))}</a></p>
 ${guideCards(X, START.map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean), t('Start here'))}
 ${season.length ? guideCards(X, season, t('This season')) : ''}
+${seriesTiles(X)}
 <div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} guides', { n: list.length }))}</summary><ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${artImg(artFor('learn', a.slug, a.category))}<span>${esc(a.title)}</span></a></li>`).join('')}</ul></details>` : ''}</div>`).join('')}</div>
 <p class="muted" data-filter-empty hidden>${esc(t('Nothing found. Try another word, or ask us.'))} <button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask us'))}</button></p></section>`,
       ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
@@ -109,6 +134,7 @@ ${season.length ? guideCards(X, season, t('This season')) : ''}
     const X = ctxOf(req), { t, C } = X, a = C.learn.find((x) => x.slug === req.params.slug);
     if (!a) return next();
     const rel = a.related.map((s) => C.learn.find((x) => x.slug === s)).filter(Boolean), occ = OCCASION[a.slug];
+    const ser = seriesOf(C, a.slug);
     const ph = guidePhoto(a.slug, a.category), photo = ph ? '/media/photos/' + ph + '.jpg' : '';
     // What the reader came for comes first: the quick answer, and (for mezuzah, tefillin, giving...) how to get it done.
     // Then the guide, the questions people ask, and one inviting guide to read next.
@@ -117,12 +143,14 @@ ${season.length ? guideCards(X, season, t('This season')) : ''}
 <p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › ${esc(t(a.category))}</p>
 <h1>${esc(a.title)}</h1>
 <p class="lead-d">${esc(a.description)}</p>
+${ser ? `<p class="series-line"><a href="#series">${esc(t('Part {n} of {total}', { n: ser.i + 1, total: ser.s.guides.length }))} · ${esc(ser.s.title)}</a></p>` : ''}
 ${act ? actionCard(X, topic, a.local || '') : require('./forms.js').startCard(X, '/learn/' + a.slug)}
 ${(() => { const html = md(a.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]; return (hs.length >= 4 ? `<details class="toc"><summary>${esc(t('On this page'))} · ${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))}</summary>${hs.map((h) => `<a href="#${h[1]}">${h[2]}</a>`).join('')}</details>` : '') + html; })()}
 ${(a.local && !act) || occ ? `<div class="card local">${a.local && !act ? `<p><strong>${esc(t('In Lamorinda'))}:</strong> ${esc(a.local)}</p>` : ''}${occ ? `<p class="occasion-line">${esc(occ === 'yahrzeit' ? t('Remember them: sponsor a Kiddush or give in their memory.') : t('Mark the occasion: sponsor a Kiddush or give in their honor'))} <a href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory of a loved one'))} →</a></p>` : ''}</div>` : ''}
 ${a.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(a.faq)}` : ''}
+${ser ? seriesBox(X, ser) : ''}
 ${topic === 'consult' ? contactBox(X, 'consult') : ''}
-${readNext(X, rel.map(asItem))}
+${readNext(X, rel.filter((r) => !ser || r.slug !== ser.s.guides[ser.i + 1]).map(asItem))}
 </article>`;
     await render(res, { path: '/learn/' + a.slug, title: a.title, description: a.description, image: photo || undefined, body,
       ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: a.description, articleBody: plain(a.body).slice(0, 5000), wordCount: plain(a.body).split(/\s+/).length, inLanguage: X.lang, author: { '@type': 'Organization', name: C.org.name, url: base + '/' }, publisher: { '@id': base + '/#org' }, mainEntityOfPage: base + X.path('/learn/' + a.slug), image: base + (photo || '/assets/og.png') },

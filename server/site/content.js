@@ -55,6 +55,8 @@ function load(dir = DIR, opts = {}) {
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
   const campaigns = optJson(dir, 'campaigns.json', []);
   const jokes = optJson(dir, 'jokes.json', []); // the weekly email's joke of the week
+  // Step-by-step series of guides ("Part 3 of 10", Previous / Next): each lists its guides in reading order.
+  const series = optJson(dir, 'series.json', []);
   // "A word from the Rabbi" for the weekly email: Claude's draft for each Shabbat (week = the Shabbat's date), in three
   // languages, waiting for the Rabbi to read and approve (in the Rabbi area, or "approved": true when he approves in chat).
   const rabbiWords = optJson(dir, 'rabbi-words.json', []);
@@ -127,11 +129,12 @@ function load(dir = DIR, opts = {}) {
     a.body = body; a.faq = qa;
     a.related = String(a.related || '').split(',').map((x) => x.trim()).filter((x) => learnSlugs.has(x) && x !== a.slug);
   }
+  for (const s of series) for (const g of s.guides || []) if (!learnSlugs.has(g)) throw new Error(`series.json: "${s.id}" lists "${g}", which is not a guide in learn/`);
   for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
   for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, jokes, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, jokes, series, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

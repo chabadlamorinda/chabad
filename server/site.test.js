@@ -467,6 +467,20 @@ test('lists put what visitors open most first (popular.js), urgent help stays fi
   } finally { popular.setCounts({}); }
 });
 
+test('a quiet giving form ($360) only where giving fits, and step-by-step series of guides', async () => {
+  const c = client();
+  for (const p of ['/kaddish', '/tehillim', '/tools/yahrzeit', '/learn/tzedakah', '/holidays/purim', '/he/kaddish']) {
+    const h = (await c.call('GET', p)).text;
+    assert.match(h, /class="give-box"/, p); assert.match(h, /name="amt" value="360" checked/, p);
+  }
+  assert.doesNotMatch((await c.call('GET', '/learn/mezuzah')).text, /give-box/, 'not on every page');
+  assert.equal(((await c.call('GET', '/donate')).text.match(/data-give/g) || []).length, 1, 'never twice on a page');
+  const shiva = (await c.call('GET', '/learn/shiva')).text;
+  assert.match(shiva, /Part \d+ of \d+/); assert.match(shiva, /class="card series-next" href="\/learn\/setting-up-a-shiva-house"/);
+  assert.match((await c.call('GET', '/learn/visiting-a-grave')).text, /You have reached the end of this series/);
+  assert.match((await c.call('GET', '/ru/learn')).text, /Шаг за шагом/);
+});
+
 test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const c = client();
   for (const p of ['/help', '/help/someone-passed-away', '/help/someone-is-sick', '/kaddish', '/tehillim', '/sponsor', '/he/help', '/ru/kaddish', '/he/tehillim']) assert.equal((await c.call('GET', p)).status, 200, p);

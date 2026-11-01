@@ -937,3 +937,20 @@ html { scroll-padding-top: 84px; }
 .qz-prog i { display: block; height: 100%; width: 0; background: var(--gold); transition: width .3s; }
 .qz-bar b { white-space: nowrap; font-size: .95rem; }
 .qz-q { scroll-margin-top: 130px; }
+/* The quiet giving form at the end of Kaddish, yahrzeit, Tehillim, tzedakah and some holiday pages (give.js GIVE_ON) */
+.give-box { margin: 2.2rem 0 1.5rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.give-box > p { color: var(--muted); }
+/* Step-by-step series of guides (series.json, local.js seriesBox) */
+.series-line { margin: -.4rem 0 1rem; font-size: .95rem; }
+.series-line a { color: var(--gold-ink); text-decoration: none; font-weight: 600; }
+.card.series { margin: 2rem 0; border-color: var(--gold-2); }
+.card.series h2 { margin-top: .2rem; }
+.series-bar { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; margin: .4rem 0 1rem; }
+.series-bar i { display: block; height: 100%; background: var(--gold); }
+.series-next { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: inherit; background: var(--soft); padding: 14px 16px; }
+.series-next strong { font-family: Lora, Georgia, serif; font-size: 1.15rem; }
+.series-next span:last-child { color: var(--muted); font-size: .95rem; }
+.series-all summary { cursor: pointer; color: var(--link); margin-top: .4rem; }
+.series-all ol { padding-inline-start: 1.4rem; margin: .6rem 0 0; }
+.series-all li { margin: .25rem 0; }
+.series-all li.done a { color: var(--muted); }

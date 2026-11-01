@@ -1642,5 +1642,22 @@
   "Shabbat times, events and a word from the Rabbi.": "Время Шабата, события и слово раввина.",
   "Clear, friendly guides to Jewish life.": "Понятные и доброжелательные статьи о еврейской жизни.",
   "See the giving levels": "Уровни пожертвований",
-  "{score} right out of {done}": "{score} верно из {done}"
+  "{score} right out of {done}": "{score} верно из {done}",
+  "Give in their memory": "Пожертвование в их память",
+  "Giving tzedakah in memory of a loved one is an age-old Jewish custom: a merit for their soul, and for the living a way to carry on their good. You can write their name below.": "Давать цдаку в память о близком человеке - древний еврейский обычай: заслуга для его души, а для живых - способ продолжить его добрые дела. Имя можно написать ниже.",
+  "Give in the merit of their recovery": "Пожертвование ради их выздоровления",
+  "Since the time of the Talmud, Jews have given tzedakah in the merit of someone who is ill. Write their name, and the Rabbi will include them in his prayers.": "Со времен Талмуда евреи дают цдаку ради выздоровления больного. Напишите его имя, и раввин включит его в свои молитвы.",
+  "e.g. For the recovery of Moshe ben Rivka": "напр.: ради выздоровления Моше бен Ривка",
+  "Give tzedakah today": "Дайте цдаку сегодня",
+  "Every gift, large or small, keeps Jewish life warm and open to everyone in Lafayette, Moraga and Orinda.": "Каждое пожертвование, большое или маленькое, сохраняет еврейскую жизнь теплой и открытой для всех в Лафайетте, Мораге и Оринде.",
+  "e.g. In honor of my family": "напр.: в честь моей семьи",
+  "Help others celebrate": "Помогите другим отпраздновать",
+  "Giving before and on the holiday is part of the mitzvah. Your gift helps families in Lamorinda celebrate, and keeps our holiday programs open to all.": "Давать перед праздником и в праздник - часть заповеди. Ваш дар помогает семьям Ламоринды праздновать и сохраняет наши праздничные программы открытыми для всех.",
+  "e.g. In honor of the holiday": "напр.: в честь праздника",
+  "All {n} parts": "Все части ({n})",
+  "Part {n} of {total}": "Часть {n} из {total}",
+  "Step by step": "Шаг за шагом",
+  "You have reached the end of this series.": "Вы дошли до конца этой серии.",
+  "{n} parts": "Частей: {n}",
+  "All {n} series": "Все серии ({n})"
 }
