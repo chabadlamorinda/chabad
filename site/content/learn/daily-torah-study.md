@@ -2,7 +2,7 @@
 title: Daily Torah Study: How to Start a Learning Routine
 description: Why Judaism asks every Jew to learn Torah every day, the Chabad daily study cycles of Chitas and Rambam, and simple ways to begin.
 category: Prayer & Torah
-related: torah, tanya, rambam, weekly-parsha
+related: torah, torah-study-for-women, retirement-jewish-view, tanya, rambam, weekly-parsha
 local: Find a class or a study partner at chabadoflamorinda.com/programs/adult-education or call Rabbi Labkowski at 925-384-7242.
 ---
 Torah study is a daily mitzvah for every Jew, man or woman, young or old. Even a few minutes each day connects you to G-d's wisdom and gives your whole day a different feeling.

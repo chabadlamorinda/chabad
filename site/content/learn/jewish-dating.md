@@ -2,7 +2,7 @@
 title: Jewish Dating: Finding Your Match the Jewish Way
 description: How Jewish tradition approaches dating and finding a spouse, from shidduchim to what to look for, with practical guidance for singles today.
 category: Life cycle
-related: jewish-wedding, shalom-bayit, mikvah, hebrew-names
+related: jewish-wedding, tu-bav, genetic-screening, shalom-bayit, mikvah, hebrew-names
 local: Looking for guidance or a warm Jewish community to meet people? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/help/getting-married.
 ---
 In Jewish tradition, dating is not a pastime. It is the serious, hopeful search for a soulmate with whom to build a Jewish home. The goal is marriage, and the approach is thoughtful, respectful and full of prayer.

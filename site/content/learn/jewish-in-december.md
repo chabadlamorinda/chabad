@@ -2,7 +2,7 @@
 title: Jewish in December: Celebrating Chanukah with Pride
 description: For Jewish families in a season full of Christmas: how to make Chanukah shine, talk with kids and schools, and share Jewish light with warmth and respect.
 category: Jewish ideas
-related: chanukah-menorah, chanukah-for-kids, jewish-pride
+related: chanukah-menorah, halloween-jewish-view, chanukah-for-kids, jewish-pride
 local: Public menorah lightings, Chanukah events and menorahs and candles for your home in Lafayette, Moraga and Orinda: chabadoflamorinda.com/holidays/chanukah or 925-384-7242.
 ---
 In December, the stores, the radio and the neighborhood all seem to celebrate someone else's holiday. Many Jewish families feel it, especially families with children. Here is a Jewish way to think about the season, and practical ideas for making it your own.

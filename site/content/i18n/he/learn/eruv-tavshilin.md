@@ -2,7 +2,7 @@
 title: עירוב תבשילין: איך מבשלים ביום טוב לשבת
 description: מהו עירוב תבשילין, מתי צריך אותו, איך עושים אותו שלב אחר שלב עם הברכה, ומה עושים אם שכחו.
 category: Shabbat & holidays
-related: shabbat, eruv, shabbat-meals, jewish-calendar
+related: shabbat, cooking-on-yom-tov, eruv, shabbat-meals, jewish-calendar
 local: לא בטוחים אם חג השנה נמשך לתוך שבת? בדקו ב-chabadoflamorinda.com/jewish-holidays-2026 או התקשרו לרב לבקובסקי 925-384-7242.
 ---
 עירוב תבשילין הוא טקס פשוט שעושים ביום שלפני חג שחל ביום חמישי או שישי, והוא מאפשר לבשל ביום טוב לשבת. לפני החג מניחים בצד תבשיל ופת או מצה, מברכים ואומרים הצהרה קצרה, ואז שומרים אותם לשבת.

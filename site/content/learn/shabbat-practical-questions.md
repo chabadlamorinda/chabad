@@ -2,7 +2,7 @@
 title: Shabbat Practical Questions: Lights, Fridge, Elevators and Phones
 description: Practical answers about lights, timers, the fridge, hot water, phones, elevators, doorbells and cooking on Shabbat, with simple tips to prepare ahead.
 category: Shabbat & holidays
-related: thirty-nine-melachot, shabbat-for-beginners, eruv, shabbat-meals
+related: thirty-nine-melachot, electricity-on-shabbat, cooking-on-yom-tov, shabbat-for-beginners, eruv, shabbat-meals
 local: Have a Shabbat question about your home in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/shabbat.
 ---
 Most practical Shabbat questions come down to one idea: on Shabbat we do not create, cook, kindle or switch things on and off, so we set things up before Shabbat starts. Lights can be left on or put on timers, food is kept warm on a covered stove or hot plate, and the fridge light is turned off ahead of time.

@@ -2,7 +2,7 @@
 title: ברכת המוציא: הברכה על הלחם
 description: נוסח ברכת המוציא, מתי מברכים אותה, איך עושים זאת שלב אחר שלב, ומנהג הטבילה במלח.
 category: Prayer & Torah
-related: blessings, challah, birkat-hamazon, shabbat-meals
+related: blessings, blessings-after-food, challah, birkat-hamazon, shabbat-meals
 local: הצטרפו לרב ישראל ולרבנית ציפורה לבקובסקי לסעודת שבת בלאפייט ושמעו ברכת המוציא על חלה טרייה. הודיעו לנו שאתם מגיעים ב-chabadoflamorinda.com/forms/shabbat-meal.
 ---
 המוציא היא הברכה שיהודים מברכים לפני אכילת לחם. היא מודה לה׳ "המוציא לחם מן הארץ", והיא פותחת כל סעודת שבת וחג, וכל סעודה עם לחם.

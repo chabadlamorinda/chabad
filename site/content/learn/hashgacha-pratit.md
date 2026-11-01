@@ -2,7 +2,7 @@
 title: Hashgacha Pratit: Divine Providence in Everyday Life
 description: What hashgacha pratit (Divine Providence) means, the Baal Shem Tov's teaching that G-d guides every detail, and how it changes the way we see our lives.
 category: Jewish ideas
-related: belief-in-g-d, baal-shem-tov, free-will, chassidus
+related: belief-in-g-d, miracles-jewish-view, baal-shem-tov, free-will, chassidus
 local: Explore these ideas in a class with Rabbi Labkowski at chabadoflamorinda.com/programs/adult-education or call 925-384-7242 to talk.
 ---
 Hashgacha pratit means "Divine Providence," the belief that G-d personally watches over and directs every detail of creation. In Chassidic teaching, nothing is random: every event, encounter and moment in our lives is part of G-d's plan and holds a purpose.

@@ -2,7 +2,7 @@
 title: היכרויות ביהדות: למצוא את בן או בת הזוג בדרך היהודית
 description: איך המסורת היהודית ניגשת להיכרויות ולמציאת בן או בת זוג, משידוכים ועד מה לחפש, עם הדרכה מעשית לרווקים ולרווקות היום.
 category: Life cycle
-related: jewish-wedding, shalom-bayit, mikvah, hebrew-names
+related: jewish-wedding, tu-bav, genetic-screening, shalom-bayit, mikvah, hebrew-names
 local: מחפשים הדרכה או קהילה יהודית חמה להכיר בה אנשים? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו בכתובת chabadoflamorinda.com/help/getting-married.
 ---
 במסורת היהודית, היכרויות אינן בילוי. הן חיפוש רציני ומלא תקווה אחר נפש תאומה שאיתה בונים בית יהודי. המטרה היא נישואין, והגישה היא שקולה, מכבדת ומלאה בתפילה.

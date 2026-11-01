@@ -2,7 +2,7 @@
 title: Tzniut: Modesty in Judaism Explained
 description: What tzniut (Jewish modesty) means for men and women: dignity in dress, speech and behavior, why it matters, and how to start in a simple way.
 category: Jewish home
-related: jewish-women, mikvah, kippah, shalom-bayit
+related: jewish-women, head-covering-for-women, mikvah, kippah, shalom-bayit
 local: Questions about modesty, dress or Jewish life at home? The Rebbetzin and Rabbi are happy to talk. Call 925-384-7242 or see chabadoflamorinda.com/programs/womens-circle.
 ---
 Tzniut means modesty, and in Judaism it is a way of living with dignity and inner focus that applies to both men and women. It touches how we dress, speak and act, reflecting the idea that what is most precious is often kept private.

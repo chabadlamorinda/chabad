@@ -2,7 +2,7 @@
 title: צניעות ביהדות: הסבר פשוט
 description: מהי צניעות לגברים ולנשים: כבוד בלבוש, בדיבור ובהתנהגות, למה היא חשובה, ואיך מתחילים בצורה פשוטה.
 category: Jewish home
-related: jewish-women, mikvah, kippah, shalom-bayit
+related: jewish-women, head-covering-for-women, mikvah, kippah, shalom-bayit
 local: שאלות על צניעות, לבוש או חיים יהודיים בבית? הרבנית והרב ישמחו לדבר. התקשרו 925-384-7242 או ראו chabadoflamorinda.com/programs/womens-circle.
 ---
 צניעות ביהדות היא דרך חיים של כבוד וריכוז פנימי, והיא חלה על גברים ועל נשים כאחד. היא נוגעת באופן שבו אנחנו מתלבשים, מדברים ומתנהגים, ומשקפת את הרעיון שהדברים היקרים ביותר נשמרים לעיתים קרובות בפרטיות.

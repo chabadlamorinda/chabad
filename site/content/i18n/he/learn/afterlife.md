@@ -2,7 +2,7 @@
 title: העולם הבא ביהדות: מה קורה אחרי המוות?
 description: מה היהדות מלמדת על החיים שאחרי המוות, גן עדן, העולם הבא ותחיית המתים, ואיך החיים יכולים לעזור לנשמת אדם יקר.
 category: Jewish ideas
-related: the-soul, moshiach, kaddish, yahrzeit
+related: the-soul, reincarnation, moshiach, kaddish, yahrzeit
 local: יש לכם שאלות על אובדן או על החיים שאחרי המוות? הרב לבקובסקי ישמח לשוחח. התקשרו 925-384-7242 או ראו chabadoflamorinda.com/help/grief-and-hard-times.
 ---
 היהדות מלמדת שהמוות אינו הסוף. הנשמה נצחית: היא עוזבת את הגוף, חוזרת אל ה׳, וממשיכה להתקיים ולצמוח בעולם רוחני. בעתיד, כך מלמדת המסורת היהודית, הצדיקים יקומו לתחייה בתחיית המתים.

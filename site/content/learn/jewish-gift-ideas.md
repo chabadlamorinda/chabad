@@ -2,7 +2,7 @@
 title: Jewish Gift Ideas: Meaningful Judaica for Every Occasion
 description: Thoughtful Jewish gift ideas for a new home, a baby, a bar or bat mitzvah, a wedding and the holidays, plus tips for giving gifts to observant friends.
 category: Jewish home
-related: jewish-home-library, mezuzah, pushka, shabbat-candles
+related: jewish-home-library, judaica-buying-guide, mezuzah, pushka, shabbat-candles
 local: Want help choosing a kosher mezuzah, tefillin or a Jewish book as a gift? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 The most meaningful Jewish gifts are ones that help someone do a mitzvah: a kosher mezuzah for a new home, Shabbat candlesticks for a bride, a siddur for a bar mitzvah, or a pushka for a new baby. A gift like this is used again and again, and every time it is used, the giver shares in the mitzvah.

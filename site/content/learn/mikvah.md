@@ -2,7 +2,7 @@
 title: Mikvah: What It Is and Why Jewish Women Immerse
 description: A gentle guide to the mikvah, the Jewish ritual bath: its meaning, family purity, preparation, and who uses it and when.
 category: Life cycle
-related: jewish-wedding, jewish-women, kosher-kitchen, teshuvah
+related: jewish-wedding, head-covering-for-women, jewish-women, kosher-kitchen, teshuvah
 local: For private, caring guidance on mikvah, reach out to Rebbetzin Tzipora Labkowski at 925-384-7241. Every conversation is confidential.
 ---
 A mikvah is a pool of natural water used for ritual immersion in Jewish life. Its most central use is by married Jewish women, who immerse monthly as part of the laws of family purity (taharat hamishpachah), a practice that has sustained Jewish marriages for thousands of years.

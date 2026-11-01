@@ -2,7 +2,7 @@
 title: ברכת החודש: מברכים את החודש החדש בשבת מברכים
 description: מהי ברכת החודש, מתי מברכים את החודש בבית הכנסת, הכרזת המולד ומנהגי חב״ד בשבת מברכים.
 category: Prayer & Torah
-related: rosh-chodesh, jewish-calendar, tehillim, torah-reading
+related: rosh-chodesh, kiddush-levana, jewish-calendar, tehillim, torah-reading
 local: הצטרפו אלינו לתפילות שבת ואמרו איתנו תהלים; ראו chabadoflamorinda.com/shabbat או התקשרו 925-384-7242.
 ---
 ברכת החודש היא תפילה שאומרים בבית הכנסת בשבת שלפני ראש חודש, ובה מכריזים מתי מתחיל החודש העברי החדש ומבקשים מה׳ חודש של ברכה. השבת הזו נקראת שבת מברכים.

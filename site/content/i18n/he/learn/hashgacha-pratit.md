@@ -2,7 +2,7 @@
 title: השגחה פרטית: יד ה׳ בחיי היומיום
 description: מהי השגחה פרטית, תורת הבעל שם טוב שה׳ מנהיג כל פרט, ואיך היא משנה את הדרך שבה אנחנו רואים את חיינו.
 category: Jewish ideas
-related: belief-in-g-d, baal-shem-tov, free-will, chassidus
+related: belief-in-g-d, miracles-jewish-view, baal-shem-tov, free-will, chassidus
 local: העמיקו ברעיונות האלה בשיעור עם הרב לבקובסקי ב-chabadoflamorinda.com/programs/adult-education או התקשרו 925-384-7242 לשיחה.
 ---
 השגחה פרטית היא האמונה שה׳ משגיח באופן אישי על כל פרט בבריאה ומכוון אותו. בתורת החסידות שום דבר אינו מקרי: כל אירוע, כל מפגש וכל רגע בחיינו הם חלק מתוכנית ה׳ ויש בהם תכלית.

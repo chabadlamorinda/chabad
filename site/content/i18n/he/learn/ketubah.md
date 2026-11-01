@@ -2,7 +2,7 @@
 title: כתובה וטבעת נישואין: חוזה הנישואין היהודי
 description: מהי כתובה, מה כתוב בה, מי חותם עליה, ולמה טבעת הנישואין היהודית היא טבעת חלקה שניתנת תחת החופה.
 category: Life cycle
-related: jewish-wedding, jewish-wedding-customs, sheva-brachot, shalom-bayit
+related: jewish-wedding, jewish-wedding-on-a-budget, jewish-wedding-customs, sheva-brachot, shalom-bayit
 local: מתכננים חתונה יהודית? הרב לבקובסקי ילווה אתכם בכתובה, בטבעת ובכל חלקי הטקס. בקרו ב-chabadoflamorinda.com/help/getting-married או התקשרו 925-384-7242.
 ---
 כתובה היא חוזה הנישואין היהודי, הכתוב בארמית, שבו החתן מתחייב לדאוג לאשתו ולפרנס אותה. שני עדים חותמים עליה לפני הטקס, היא נקראת בקול תחת החופה, וניתנת לכלה לשמור כל חייה.

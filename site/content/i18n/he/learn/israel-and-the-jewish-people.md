@@ -2,7 +2,7 @@
 title: ארץ ישראל ועם ישראל: קשר של אמונה והיסטוריה
 description: הקשר הרוחני וההיסטורי בין עם ישראל לארץ ישראל, מהבטחת ה׳ לאברהם ועד התפילות שאנחנו אומרים למען ישראל.
 category: Jewish ideas
-related: tehillim, prayer, torah, three-weeks
+related: tehillim, making-aliyah, israelis-in-lamorinda, prayer, torah, three-weeks
 local: רוצים להתפלל למען ישראל יחד עם הקהילה שלנו? אמרו תהילים בכתובת chabadoflamorinda.com/tehillim או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 ארץ ישראל היא הארץ שה׳ הבטיח לעם ישראל. כבר יותר משלושת אלפים שנה, יהודים בכל מקום מתפללים לכיוון ירושלים, כוספים לציון ומרגישים קשר עמוק לארץ, קשר רוחני, היסטורי ואישי.

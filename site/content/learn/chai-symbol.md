@@ -2,7 +2,7 @@
 title: Chai Symbol: Meaning of Chai and the Number 18
 description: What the Hebrew word chai means, why it equals 18, why Jews give gifts in multiples of 18, and how chai connects to L'chaim.
 category: Jewish ideas
-related: jewish-symbols, star-of-david, tzedakah, hebrew-alphabet
+related: jewish-symbols, jewish-jewelry, star-of-david, tzedakah, hebrew-alphabet
 local: Give tzedakah in multiples of chai through chabadoflamorinda.com/donate, or call Chabad of Lamorinda at 925-384-7242.
 ---
 Chai (חַי) is the Hebrew word for "alive" or "life," written with two letters, chet and yud. Because those letters add up to 18, Jews give gifts and tzedakah in multiples of 18 as a blessing for life.

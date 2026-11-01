@@ -2,7 +2,7 @@
 title: חנוכת הבית: חגיגת כניסה לבית חדש
 description: איך עושים חנוכת בית יהודית: קביעת מזוזות, ברכות, מפגש חגיגי ומילוי הבית בתורה.
 category: Jewish home
-related: mezuzah, jewish-home-library, pushka, hachnasat-orchim
+related: mezuzah, moving-to-lamorinda, jewish-home-library, pushka, hachnasat-orchim
 local: עוברים לבית חדש? חב״ד למורינדה תעזור לכם להשיג מזוזות כשרות ולקבוע אותן. היעזרו ב-chabadoflamorinda.com/forms/mezuzah-tefillin או התקשרו 925-384-7242.
 ---
 חנוכת הבית היא הדרך היהודית לחגוג מעבר לבית או לדירה חדשים. הלב שלה הוא קביעת מזוזות כשרות, ולעיתים קרובות אחריה בא מפגש חגיגי עם דברי תורה, ברכות ואוכל טוב.

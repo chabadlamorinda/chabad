@@ -2,7 +2,7 @@
 title: The Yom Kippur Fast: Rules, Tips and Who Is Exempt
 description: How the 25-hour Yom Kippur fast works, the five restrictions, who should not fast, tips for an easier fast, and how to break the fast.
 category: Shabbat & holidays
-related: teshuvah, fast-days, yizkor, selichot
+related: teshuvah, kapparot, fast-days, yizkor, selichot
 local: Reserve your High Holiday seats at chabadoflamorinda.com/forms/high-holidays and see Yom Kippur details at chabadoflamorinda.com/holidays/yom-kippur.
 ---
 On Yom Kippur, Jews fast for about 25 hours, from before sunset until after nightfall the next day, with no food or drink at all. The fast is part of the holiest day of the year, a day of prayer, [teshuvah](/learn/teshuvah) and closeness to G-d.

@@ -2,7 +2,7 @@
 title: Sheva Brachot: The Seven Wedding Blessings Explained
 description: What the Sheva Brachot are, what the seven blessings say, and how the week of festive Sheva Brachot meals after a Jewish wedding works.
 category: Life cycle
-related: jewish-wedding, birkat-hamazon, minyan, shalom-bayit
+related: jewish-wedding, jewish-wedding-on-a-budget, first-year-of-marriage, birkat-hamazon, minyan, shalom-bayit
 local: Hosting Sheva Brachot or planning a wedding? Call Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/help/getting-married.
 ---
 Sheva Brachot means "seven blessings." They are recited under the chuppah at a Jewish wedding and again at festive meals held in honor of the bride and groom during the week after the wedding.

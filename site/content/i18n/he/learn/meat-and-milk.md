@@ -2,7 +2,7 @@
 title: בשר וחלב בהלכה: כמה מחכים ולמה
 description: למה יהודים לא מערבבים בשר וחלב, כמה מחכים ביניהם, מה פירוש פרווה, ואיך שומרים על הפרדה בין בשר לחלב בבית.
 category: Kosher
-related: kosher-kitchen, kosher-meat, kosher, kosher-symbols
+related: kosher-kitchen, shavuot-dairy-foods, chalav-yisrael, kosher-meat, kosher, kosher-symbols
 local: מסדרים מטבח עם הפרדה בין בשרי לחלבי? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונלווה אתכם בתהליך.
 ---
 ההלכה אוסרת לבשל, לאכול וליהנות מבשר וחלב יחד. בפועל פירוש הדבר: כלים נפרדים לבשרי ולחלבי, והמתנה בין אכילת בשר לאכילת מאכלי חלב.

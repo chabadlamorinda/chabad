@@ -2,7 +2,7 @@
 title: Mezuzah: What It Is and How to Put One Up
 description: What a mezuzah is, where and how to hang it, the blessing in Hebrew and English, and how to make sure your mezuzah scroll is kosher.
 category: Jewish home
-related: shema, kosher-kitchen, tefillin, blessings
+related: shema, moving-to-lamorinda, kosher-kitchen, tefillin, blessings
 local: We help you buy a kosher mezuzah, check yours, and put it up with the blessing. Call 925-384-7242.
 ---
 A mezuzah is a small handwritten parchment scroll containing the Shema prayer, placed on the doorposts of a Jewish home. It marks the home as a Jewish space and, as Jewish tradition teaches, brings G-d's protection to everyone inside.

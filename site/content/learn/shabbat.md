@@ -2,7 +2,7 @@
 title: Shabbat: What It Is and How to Celebrate It
 description: A plain-English guide to Shabbat, the Jewish day of rest: what it means, when it starts and ends, and how to celebrate it at home step by step.
 category: Shabbat & holidays
-related: shabbat-candles, kiddush, challah, havdalah
+related: shabbat-candles, holiday-greetings, kiddush, challah, havdalah
 local: We would love to have you at a Shabbat table and can help you start your own Shabbat at home. Call 925-384-7242.
 ---
 Shabbat (Sabbath) is the Jewish day of rest, from just before sunset on Friday until nightfall on Saturday. It is a weekly gift of 25 hours to step away from work and screens and focus on family, friends, prayer, good food and G-d.

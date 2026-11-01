@@ -2,7 +2,7 @@
 title: Making Every Day Count: The Jewish View of Time
 description: What Judaism teaches about time: why every day is a gift with a purpose, how to use it well, and simple daily habits that make days count.
 category: Jewish ideas
-related: purpose-of-life, modeh-ani, daily-torah-study, bedtime-shema, success-and-failure
+related: purpose-of-life, changing-a-bad-habit, modeh-ani, daily-torah-study, bedtime-shema, success-and-failure
 local: Want to add a little Torah to your week? Join a class at Chabad of Lamorinda in Lafayette, or call Rabbi Labkowski at 925-384-7242.
 ---
 "Teach us to number our days," Moses prays in Psalm 90, "so we may gain a heart of wisdom." Judaism treats time as the most precious thing we have. Money can be earned back; a day, once gone, never returns. And yet the Jewish view of time is not anxious. It is hopeful: every day is a gift, given on purpose, with its own chance to do good.

@@ -2,7 +2,7 @@
 title: Jewish Baby Naming: How and When a Jewish Baby Gets a Name
 description: How Jewish babies receive their Hebrew name, when a girl is named at the Torah, and how families choose a meaningful name.
 category: Life cycle
-related: hebrew-names, brit-milah, torah, jewish-women
+related: hebrew-names, simchat-bat, jewish-baby-shower, brit-milah, torah, jewish-women
 local: Welcoming a new baby? Call Rabbi Labkowski at 925-384-7242 to arrange a naming at the Torah or to talk through choosing a Hebrew name.
 ---
 A Jewish baby boy is named at his brit milah on the eighth day, and a baby girl is traditionally named in the synagogue when her father is called up to the Torah. The name is announced with a special prayer asking G-d to bless the child with health, wisdom and good deeds.

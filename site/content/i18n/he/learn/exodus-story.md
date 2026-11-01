@@ -2,7 +2,7 @@
 title: סיפור יציאת מצרים: איך היהודים יצאו ממצרים
 description: סיפור יציאת מצרים בשפה פשוטה: השעבוד, משה, עשר המכות, קריעת ים סוף ולמה אנחנו זוכרים אותו בכל יום.
 category: Shabbat & holidays
-related: passover-seder, ten-commandments, four-questions, matzah
+related: passover-seder, jewish-history-overview, ten-commandments, four-questions, matzah
 local: חוו מחדש את יציאת מצרים בליל הסדר עם חב״ד למורינדה. ראו chabadoflamorinda.com/holidays/passover או התקשרו 925-384-7242.
 ---
 יציאת מצרים היא סיפור שחרורו של עם ישראל מעבדות במצרים בידי ה׳, בהנהגת משה, לפני יותר מ-3,300 שנה. היא מסופרת בספר שמות, מסופרת מחדש בכל שנה בליל הסדר, ונזכרת בתפילה היהודית בכל יום ויום.

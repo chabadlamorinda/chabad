@@ -2,7 +2,7 @@
 title: Birkat HaGomel: Thanking G-d After Coming Through Danger
 description: The blessing said after recovering from illness, surgery, a dangerous trip or an accident: who says it, when, the words, and how it is done in synagogue.
 category: Prayer & Torah
-related: hakarat-hatov, prayer-before-surgery, tefilat-haderech, torah-reading
+related: hakarat-hatov, miracles-jewish-view, prayer-before-surgery, tefilat-haderech, torah-reading
 local: Want to say Birkat HaGomel? Come to Shabbat services at Chabad of Lamorinda in Lafayette, or call Rabbi Labkowski at 925-384-7242 to arrange it.
 ---
 When we come safely through something dangerous, Judaism gives us a way to say thank you out loud, in front of the community: **Birkat HaGomel**, the blessing of thanksgiving. It turns relief into gratitude, and lets friends share in our joy.

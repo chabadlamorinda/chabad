@@ -2,7 +2,7 @@
 title: להתמודד עם אנטישמיות: צעדים מעשיים וכוח יהודי
 description: מה עושים אחרי אירוע אנטישמי בבית הספר, בעבודה, ברשת או בשכונה: ביטחון, דיווח, שיחה עם הילדים, ותשובה של עוד אור.
 category: Jewish ideas
-related: jewish-pride, jewish-identity-for-teens, israel-and-the-jewish-people, jewish-in-december
+related: jewish-pride, bullying-jewish-view, jewish-identity-for-teens, israel-and-the-jewish-people, jewish-in-december
 local: אם אתם או ילדכם נתקלתם באנטישמיות בלאפייט, מוראגה, אורינדה או בכל מקום בסביבה, התקשרו לרב ישראל לבקובסקי בטלפון 925-384-7242. אתם לא לבד.
 ---
 אנטישמיות כואבת, בין אם זו קללה בבית הספר, צלב קרס על קיר, פוסט עוין או איום. הנה מה עושים, ואיך עונים לה בדרך יהודית.

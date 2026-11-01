@@ -2,7 +2,7 @@
 title: Birkat Hamazon: Grace After Meals Explained
 description: What Birkat Hamazon is, when to say it, its four blessings, zimun with three or more, holiday additions, and the shorter blessings for other foods.
 category: Prayer & Torah
-related: blessings, shabbat-meals, challah, siddur
+related: blessings, thanksgiving-jewish-view, blessings-after-food, shabbat-meals, challah, siddur
 local: Want a bentcher or a quick lesson in saying Birkat Hamazon? Call Rabbi Labkowski at 925-384-7242.
 ---
 Birkat Hamazon, also called "bentching," is the blessing said after a meal that included bread. It is a mitzvah from the Torah itself: "You shall eat and be satisfied, and bless the L-rd your G-d for the good land He has given you" (Deuteronomy 8:10).

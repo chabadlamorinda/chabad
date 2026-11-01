@@ -2,7 +2,7 @@
 title: ל״ט מלאכות: מה נחשב מלאכה בשבת
 description: מהן 39 אבות המלאכה האסורות בשבת, מאיפה הן באות, הרשימה המלאה בשפה פשוטה, ואיך הן חלות היום.
 category: Shabbat & holidays
-related: shabbat, eruv, shabbat-candles, havdalah
+related: shabbat, electricity-on-shabbat, cooking-on-yom-tov, eruv, shabbat-candles, havdalah
 local: יש לכם שאלה על שמירת שבת בבית? התקשרו לרב לבקובסקי בטלפון 925-384-7242, וראו chabadoflamorinda.com/shabbat לשבת איתנו.
 ---
 39 המלאכות הן אבות המלאכה היוצרת שהתורה אוסרת בשבת. הן באות מהעבודה שנעשתה בבניית המשכן, המקדש הנייד במדבר, והן כוללות פעולות כמו בישול, כתיבה, הדלקת אש וטלטול ברשות הרבים.

@@ -2,7 +2,7 @@
 title: Jewish Pregnancy: Customs, Prayers and Preparing for Birth
 description: Jewish customs during pregnancy, prayers and Psalms for the mother and baby, preparing for birth on Shabbat, and what to plan after the baby arrives.
 category: Life cycle
-related: brit-milah, baby-naming, tehillim, mezuzah
+related: brit-milah, jewish-baby-shower, genetic-screening, baby-naming, tehillim, mezuzah
 local: Expecting a baby? Call Rabbi Labkowski or Rebbetzin Tzipora Labkowski at 925-384-7242 for blessings and guidance, or see chabadoflamorinda.com/help/new-baby.
 ---
 In Judaism, pregnancy is a time of great blessing, when a mother partners with G-d in bringing a new soul into the world. Jewish tradition surrounds this time with prayer, good deeds and simple customs that help both parents prepare with joy and calm.

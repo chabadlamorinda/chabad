@@ -2,7 +2,7 @@
 title: הורים ובני נוער: חוכמה יהודית לשנים הקשות
 description: מתנגשים עם הנער או הנערה? חוכמת התורה על גידול בני נוער באהבה ובגבולות: הקשבה, כללים, מסכים, זהות יהודית ומתי לפנות לעזרה.
 category: Life cycle
-related: jewish-parenting, jewish-teens-in-lamorinda, jewish-identity-for-teens, honoring-parents
+related: jewish-parenting, bullying-jewish-view, jewish-teens-in-lamorinda, jewish-identity-for-teens, honoring-parents
 local: הורים בלאפייט, מוראגה, אורינדה והאיסט ביי יכולים לשוחח בפרטיות עם הרב ישראל או הרבנית ציפורה לבקובסקי: 925-384-7242.
 ---
 גיל ההתבגרות יכול להיות התקופה הקשה ביותר בהורות. דלתות נטרקות, הטלפון לא עוזב את היד, והילד שפעם סיפר לכם הכול עכשיו לא מספר כלום. המסורת היהודית ליוותה הורים בדרך הזאת במשך אלפי שנים.

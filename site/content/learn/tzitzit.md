@@ -2,7 +2,7 @@
 title: Tzitzit and Tallit: What They Are and How to Wear Them
 description: What tzitzit and the tallit are, who wears them, the meaning of the fringes, how to put them on, and the blessings in Hebrew and English.
 category: Prayer & Torah
-related: tefillin, prayer, shema, 613-mitzvot
+related: tefillin, shatnez, prayer, shema, 613-mitzvot
 local: We can help you get a tallit or tzitzit, check that the strings are kosher, and learn the blessing. Call 925-384-7242.
 ---
 Tzitzit are the special knotted fringes tied to the four corners of a garment, as commanded in the Torah. Jewish men wear them on a tallit, the prayer shawl, and many also wear a small four-cornered garment with tzitzit, called a tallit katan, all day.

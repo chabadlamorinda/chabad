@@ -2,7 +2,7 @@
 title: מגן דוד: משמעות והיסטוריה
 description: מהו מגן דוד, מאין בא המגן דוד בעל ששת הקודקודים, מה הוא מסמל ואיך יהודים משתמשים בו היום.
 category: Jewish ideas
-related: jewish-symbols, chai-symbol, jewish-pride, kabbalah
+related: jewish-symbols, jewish-jewelry, chai-symbol, jewish-pride, kabbalah
 local: יש לכם שאלה על סמלים יהודיים או שאתם מחפשים מתנה יהודית למישהו מיוחד? התקשרו לחב״ד למורינדה 925-384-7242 או פנו אלינו ב-chabadoflamorinda.com/contact.
 ---
 המגן דוד הוא הכוכב בעל ששת הקודקודים, העשוי משני משולשים חופפים, שהפך לסמל המוכר ביותר של עם ישראל. הוא אינו מצווה ואינו חפץ קדוש, אבל במשך הדורות הוא הפך לסימן גאה של זהות יהודית בכל העולם.

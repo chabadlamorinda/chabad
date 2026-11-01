@@ -2,7 +2,7 @@
 title: The Jewish Calendar Explained: Months, Leap Years and Holidays
 description: How the Hebrew calendar works: lunar months, leap years, the 12 Jewish months, why holidays move, and why days start at sunset.
 category: Shabbat & holidays
-related: rosh-chodesh, fast-days, yahrzeit, hebrew-alphabet
+related: rosh-chodesh, kiddush-levana, holiday-greetings, fast-days, yahrzeit, hebrew-alphabet
 local: Find upcoming holidays on our holidays page or convert any date with our Hebrew date tool. Questions? Call Rabbi Labkowski at 925-384-7242.
 ---
 The Jewish calendar is a lunar-solar calendar: its months follow the moon, while an extra month is added in leap years to keep the holidays in their proper seasons. That is why Jewish holidays fall on different English dates each year but always in the same season.

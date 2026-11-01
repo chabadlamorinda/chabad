@@ -2,7 +2,7 @@
 title: Choosing a Mezuzah: How to Buy a Kosher Scroll
 description: The scroll matters more than the case. How to tell a kosher mezuzah from a printed one, sizes, mehudar quality and where to buy.
 category: Jewish home
-related: mezuzah, chanukat-habayit, setting-up-a-jewish-home, buying-tefillin
+related: mezuzah, judaica-buying-guide, chanukat-habayit, setting-up-a-jewish-home, buying-tefillin
 local: Rabbi Yisroel Labkowski helps families in Lafayette, Moraga and Orinda order kosher mezuzahs, put them up and have them checked. Call 925-384-7242.
 ---
 Many people shop for a mezuzah by looking at the case: glass, silver, ceramic or wood. But the mitzvah is the scroll inside. A beautiful case with the wrong scroll is not a mezuzah at all. Here is how to choose well. For where and how to hang one, see [Mezuzah](/learn/mezuzah).

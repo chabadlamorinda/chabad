@@ -2,7 +2,7 @@
 title: Visiting a Jewish Grave: When to Go and What to Say
 description: When Jews visit the graves of loved ones, which prayers and Psalms to say, why we leave a stone, and the customs to follow at a Jewish cemetery.
 category: Mourning & remembrance
-related: yahrzeit, unveiling, tehillim, kaddish
+related: yahrzeit, jewish-genealogy, unveiling, tehillim, kaddish
 local: Would you like the Rabbi to join you at a grave or help with the prayers? Call Rabbi Labkowski at 925-384-7242.
 ---
 Visiting the grave of a loved one is a meaningful Jewish custom, especially on a yahrzeit and in the weeks before the High Holidays. At the grave we pray, say Psalms, give charity in their memory and leave a small stone as a sign that we were there.

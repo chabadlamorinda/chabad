@@ -2,7 +2,7 @@
 title: The Afterlife in Judaism: What Happens After We Die?
 description: What Judaism teaches about life after death, Gan Eden, the World to Come and the resurrection, and how the living can help a loved one's soul.
 category: Jewish ideas
-related: the-soul, moshiach, kaddish, yahrzeit
+related: the-soul, reincarnation, moshiach, kaddish, yahrzeit
 local: Have questions about loss or life after death? Rabbi Labkowski is happy to talk. Call 925-384-7242 or see chabadoflamorinda.com/help/grief-and-hard-times.
 ---
 Judaism teaches that death is not the end. The soul is eternal: it leaves the body, returns to G-d, and continues to exist and grow in a spiritual world. In the future, Jewish tradition teaches, the righteous will rise again in the resurrection of the dead.

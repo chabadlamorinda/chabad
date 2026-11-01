@@ -2,7 +2,7 @@
 title: Star of David (Magen David): Meaning and History
 description: What the Star of David is, where the six-pointed Magen David comes from, what it symbolizes, and how Jews use it today.
 category: Jewish ideas
-related: jewish-symbols, chai-symbol, jewish-pride, kabbalah
+related: jewish-symbols, jewish-jewelry, chai-symbol, jewish-pride, kabbalah
 local: Have a question about Jewish symbols or want a Jewish gift for someone special? Call Chabad of Lamorinda at 925-384-7242 or reach us at chabadoflamorinda.com/contact.
 ---
 The Star of David, called the Magen David in Hebrew, is the six-pointed star made of two overlapping triangles that has become the best-known symbol of the Jewish people. It is not a mitzvah or a holy object, but over the centuries it has become a proud sign of Jewish identity around the world.

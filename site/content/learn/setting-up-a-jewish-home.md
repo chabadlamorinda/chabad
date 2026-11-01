@@ -2,7 +2,7 @@
 title: Setting Up a Jewish Home: A Checklist for Newlyweds and New Movers
 description: After a wedding or a move: mezuzahs, a kosher kitchen, tevilat kelim, Shabbat candlesticks, a pushka, Jewish books and a Shabbat table.
 category: Jewish home
-related: mezuzah, kosher-kitchen, chanukat-habayit, jewish-home-library
+related: mezuzah, judaica-buying-guide, kosher-kitchen, chanukat-habayit, jewish-home-library
 local: New home in Lafayette, Moraga, Orinda or the East Bay? Rabbi Yisroel Labkowski is glad to help put up mezuzahs and kasher your kitchen, 925-384-7242.
 ---
 A new home is a new beginning. Whether you just got married or just moved, the first weeks are the easiest time to set things up the Jewish way. Jewish tradition calls the home a "small sanctuary," and a few simple steps make it one.

@@ -2,7 +2,7 @@
 title: Chanukat HaBayit: Jewish Housewarming and Home Dedication
 description: How to make a Jewish housewarming, called Chanukat HaBayit: putting up mezuzahs, blessings, a festive gathering and filling the home with Torah.
 category: Jewish home
-related: mezuzah, jewish-home-library, pushka, hachnasat-orchim
+related: mezuzah, moving-to-lamorinda, jewish-home-library, pushka, hachnasat-orchim
 local: Moving into a new home? Chabad of Lamorinda can help you get kosher mezuzahs and put them up. Use chabadoflamorinda.com/forms/mezuzah-tefillin or call 925-384-7242.
 ---
 Chanukat HaBayit, "dedication of the home," is the Jewish way to celebrate moving into a new house or apartment. The heart of it is putting up kosher mezuzahs, often followed by a festive gathering with words of Torah, blessings and good food.

@@ -2,7 +2,7 @@
 title: בחירה חופשית ביהדות: האם אנחנו באמת בוחרים?
 description: מה היהדות מלמדת על בחירה חופשית, איך היא מתיישבת עם ידיעת ה׳ את העתיד, וכלים חסידיים מעשיים לבחירות טובות בכל יום.
 category: Jewish ideas
-related: teshuvah, the-soul, belief-in-g-d, tanya
+related: teshuvah, changing-a-bad-habit, reincarnation, the-soul, belief-in-g-d, tanya
 local: רוצים לעסוק בשאלות גדולות כמו בחירה חופשית? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או ראו את שיעורי המבוגרים שלנו בכתובת chabadoflamorinda.com/programs/adult-education.
 ---
 היהדות מלמדת שלכל אדם יש בחירה חופשית: הכוח לבחור בין טוב לרע. החירות הזאת היא עיקרון יסודי בתורה. בלעדיה, למצוות, לשכר ולתשובה לא הייתה משמעות.

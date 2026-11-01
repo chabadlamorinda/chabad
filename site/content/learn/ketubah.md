@@ -2,7 +2,7 @@
 title: Ketubah and Wedding Ring: The Jewish Marriage Contract Explained
 description: What a ketubah is, what it says, who signs it, and why a Jewish wedding ring is a plain band given under the chuppah.
 category: Life cycle
-related: jewish-wedding, jewish-wedding-customs, sheva-brachot, shalom-bayit
+related: jewish-wedding, jewish-wedding-on-a-budget, jewish-wedding-customs, sheva-brachot, shalom-bayit
 local: Planning a Jewish wedding? Rabbi Labkowski can guide you through the ketubah, the ring and every part of the ceremony. Visit chabadoflamorinda.com/help/getting-married or call 925-384-7242.
 ---
 A ketubah is the Jewish marriage contract, written in Aramaic, in which the groom commits to care for and support his wife. It is signed by two witnesses before the ceremony, read aloud under the chuppah, and given to the bride to keep for life.

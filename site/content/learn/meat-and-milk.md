@@ -2,7 +2,7 @@
 title: Meat and Milk in Jewish Law: How Long to Wait and Why
 description: Why Jews do not mix meat and dairy, how long to wait between them, what pareve means, and how to keep meat and milk apart at home.
 category: Kosher
-related: kosher-kitchen, kosher-meat, kosher, kosher-symbols
+related: kosher-kitchen, shavuot-dairy-foods, chalav-yisrael, kosher-meat, kosher, kosher-symbols
 local: Setting up separate meat and dairy in your kitchen? Call Rabbi Labkowski at 925-384-7242 and we can walk you through it.
 ---
 Jewish law forbids cooking, eating or benefiting from meat and milk together. In practice this means separate dishes and utensils for meat and dairy, and waiting between eating meat and eating dairy.

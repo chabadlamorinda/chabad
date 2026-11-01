@@ -2,7 +2,7 @@
 title: Your First Trip to Israel: A Jewish Guide
 description: Planning a first trip to Israel: the holy places, Shabbat in Jerusalem, kosher food, mitzvahs to bring along, and how to make it a journey of the soul.
 category: Jewish ideas
-related: jerusalem, western-wall, israel-and-the-jewish-people, kosher-when-traveling
+related: jerusalem, making-aliyah, western-wall, israel-and-the-jewish-people, kosher-when-traveling
 local: Going to Israel from Lafayette, Moraga or Orinda? Ask Rabbi Labkowski for a blessing, tzedakah to bring, and tips before you go: 925-384-7242.
 ---
 For many Jews, the first trip to Israel changes everything: standing at the Western Wall, a Shabbat in Jerusalem, walking where our ancestors walked. Here is how to make it more than a vacation.

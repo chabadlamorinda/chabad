@@ -2,7 +2,7 @@
 title: בריאות הנפש: מבט יהודי והיכן למצוא תמיכה
 description: חרדה, דיכאון וקשיים רגשיים מנקודת מבט יהודית: לבקש עזרה זו מצווה, איך אמונה וטיפול פועלים יחד, ולאן לפנות.
 category: Jewish ideas
-related: bitachon, simcha, jewish-health-and-body, tehillim
+related: bitachon, suicide-and-jewish-mourning, addiction-and-recovery, simcha, jewish-health-and-body, tehillim
 local: צריכים מישהו לדבר איתו? הרב ישראל לבקובסקי כאן בשביל כל אחד בלאפייט, מוראגה, אורינדה והאיסט ביי: 925-384-7242. במצב משבר, התקשרו או שלחו הודעה ל-988.
 ---
 אנשים רבים, בכל גיל ומכל רקע, מתמודדים עם חרדה, דיכאון, אובדן או לחץ. היהדות מתייחסת לזה ברצינות. הנפש והנשמה שלכם יקרות, והדאגה להן היא מצווה.

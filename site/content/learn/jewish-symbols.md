@@ -2,7 +2,7 @@
 title: Jewish Symbols and Their Meanings
 description: A plain-English guide to Jewish symbols: the menorah, Star of David, chai, mezuzah, tablets, shofar, tallit, kippah and more, with their meaning.
 category: Jewish ideas
-related: star-of-david, chai-symbol, mezuzah, the-holy-temple
+related: star-of-david, jewish-jewelry, chai-symbol, mezuzah, the-holy-temple
 local: Want a mezuzah, tefillin or Jewish items for your home? Call Chabad of Lamorinda at 925-384-7242 or use chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 The best-known Jewish symbols are the seven-branched menorah, the Star of David, the word chai, and the two Tablets of the Ten Commandments. Some symbols are actual mitzvah objects, like the mezuzah and tefillin, while others are simply traditional signs of Jewish identity.

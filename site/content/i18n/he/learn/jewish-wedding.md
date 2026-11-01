@@ -2,7 +2,7 @@
 title: החתונה היהודית: המסורות והטקס שלב אחר שלב
 description: מדריך שלב אחר שלב לחתונה היהודית: הכתובה, החופה, הטבעת, שבע הברכות, שבירת הכוס ומשמעותם.
 category: Life cycle
-related: mikvah, hebrew-names, jewish-women, kosher-kitchen
+related: mikvah, life-events-in-lamorinda, jewish-wedding-on-a-budget, hebrew-names, jewish-women, kosher-kitchen
 local: מתחתנים? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לכם לתכנן חתונה יהודית מסורתית, חמה, אישית ומשמעותית.
 ---
 חתונה יהודית היא טקס מתחת לחופה שבו חתן וכלה מתחברים באמצעות טבעת, שטר נישואין שנקרא כתובה ושבע ברכות. זה נחשב לאחד הימים הקדושים בחייו של אדם, יום שבו שני חצאים של נשמה אחת מתאחדים מחדש.

@@ -2,7 +2,7 @@
 title: Вы не религиозны? Вы свой в Хабаде Ламоринды
 description: Вы не религиозны? В Хабад Ламоринды приходят евреи любого происхождения из Лафайетта, Мораги и Оринды. Без членства и осуждения, приходите как есть.
 category: Lamorinda
-related: first-time-at-synagogue, shabbat-for-beginners, who-is-a-jew, why-mitzvot
+related: first-time-at-synagogue, starting-jewish-observance, shabbat-for-beginners, who-is-a-jew, why-mitzvot
 local: Сделайте первый шаг: запишитесь на шабатний ужин на chabadoflamorinda.com/forms/shabbat-meal или звоните 925-384-7242.
 ---
 Может быть, вы не были в синагоге со своей бар- или бат-мицвы. Может быть, ее у вас никогда и не было. Может быть, вы не уверены, во что верите, или знаете всего несколько слов на иврите. Вы свой в Хабаде Ламоринды.

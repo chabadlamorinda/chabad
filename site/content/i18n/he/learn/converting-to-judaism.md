@@ -2,7 +2,7 @@
 title: גיור: מדריך מכבד לתהליך
 description: איך מתנהל גיור לפי ההלכה: מחויבות כנה, לימוד, בית דין מוכר, מקווה, ומה כדאי לדעת לפני שמתחילים.
 category: Life cycle
-related: who-is-a-jew, noahide-laws, mikvah, 613-mitzvot
+related: who-is-a-jew, jewish-adoption, noahide-laws, mikvah, 613-mitzvot
 local: בוחנים גיור או את הזהות היהודית שלכם? שוחחו עם הרב בדיסקרטיות ב-chabadoflamorinda.com/help/jewish-identity או התקשרו 925-384-7242.
 ---
 גיור לפי ההלכה הוא מחויבות כנה לקבל את התורה ואת מצוותיה, שמושלמת לפני בית דין אורתודוקסי מוכר אחרי תקופת לימוד ארוכה. מי שמתגייר הופך ליהודי לכל דבר, חבר אהוב בעם ישראל מכל בחינה.

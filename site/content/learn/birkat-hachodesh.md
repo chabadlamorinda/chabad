@@ -2,7 +2,7 @@
 title: Birkat Hachodesh: Blessing the New Month on Shabbat Mevarchim
 description: What Birkat Hachodesh is, when the new month is blessed in synagogue, the molad announcement, and Chabad customs of Shabbat Mevarchim.
 category: Prayer & Torah
-related: rosh-chodesh, jewish-calendar, tehillim, torah-reading
+related: rosh-chodesh, kiddush-levana, jewish-calendar, tehillim, torah-reading
 local: Join us for Shabbat services and say Tehillim with us; see chabadoflamorinda.com/shabbat or call 925-384-7242.
 ---
 Birkat Hachodesh, the "blessing of the month," is a prayer said in synagogue on the Shabbat before Rosh Chodesh, announcing when the new Hebrew month begins and asking G-d for a month of blessing. This Shabbat is called Shabbat Mevarchim, "the Shabbat of blessing."

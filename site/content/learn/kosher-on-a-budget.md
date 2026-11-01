@@ -2,7 +2,7 @@
 title: Keeping Kosher on a Budget: Practical Tips That Work
 description: How to keep kosher without overspending: smart shopping, which foods need a hechsher, cooking at home, buying meat wisely and stocking a kosher pantry.
 category: Kosher
-related: kosher, kosher-symbols, kosher-kitchen, kosher-meat
+related: kosher, kosher-on-campus, kosher-symbols, kosher-kitchen, kosher-meat
 local: Bay Kosher, a project of Chabad of Lamorinda, delivers kosher meat, poultry and groceries in the East Bay. Questions? Call 925-384-7242.
 ---
 Keeping kosher does not have to be expensive. Most kosher food in a regular supermarket costs the same as non-kosher food, and the biggest savings come from planning meals, cooking at home and buying meat and specialty items wisely.

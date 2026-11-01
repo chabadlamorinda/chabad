@@ -2,7 +2,7 @@
 title: Israel and the Jewish People: A Bond of Faith and History
 description: The spiritual and historical bond between the Jewish people and the Land of Israel, from G-d's promise to Abraham to the prayers we say for Israel.
 category: Jewish ideas
-related: tehillim, prayer, torah, three-weeks
+related: tehillim, making-aliyah, israelis-in-lamorinda, prayer, torah, three-weeks
 local: Want to pray for Israel together with our community? Say Tehillim at chabadoflamorinda.com/tehillim or call Rabbi Labkowski at 925-384-7242.
 ---
 The Land of Israel is the land G-d promised to the Jewish people. For more than three thousand years, Jews everywhere have prayed toward Jerusalem, longed for Zion and felt a deep bond with the land, a connection that is spiritual, historical and personal.

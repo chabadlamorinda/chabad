@@ -2,7 +2,7 @@
 title: לימוד תורה יומי: איך מתחילים שגרת לימוד
 description: למה היהדות מבקשת מכל יהודי ללמוד תורה בכל יום, מחזורי הלימוד היומיים של חב״ד, חת״ת ורמב״ם, ודרכים פשוטות להתחיל.
 category: Prayer & Torah
-related: torah, tanya, rambam, weekly-parsha
+related: torah, torah-study-for-women, retirement-jewish-view, tanya, rambam, weekly-parsha
 local: מצאו שיעור או חברותא ב-chabadoflamorinda.com/programs/adult-education או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 לימוד תורה הוא מצווה יומית לכל יהודי, איש או אשה, צעיר או מבוגר. אפילו כמה דקות בכל יום מחברות אתכם לחכמת ה׳ ונותנות לכל היום תחושה אחרת.

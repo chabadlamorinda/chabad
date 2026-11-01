@@ -2,7 +2,7 @@
 title: Ежедневное изучение Торы: как выработать привычку учиться
 description: Почему иудаизм призывает каждого еврея учить Тору ежедневно, циклы изучения Хабада, Хитас и Рамбам, и простые способы начать.
 category: Prayer & Torah
-related: torah, tanya, rambam, weekly-parsha
+related: torah, torah-study-for-women, retirement-jewish-view, tanya, rambam, weekly-parsha
 local: Найдите урок или напарника для учебы на chabadoflamorinda.com/programs/adult-education или звоните раввину Лабковскому: 925-384-7242.
 ---
 Изучение Торы - это ежедневная заповедь для каждого еврея, мужчины и женщины, молодого и пожилого. Даже несколько минут в день связывают вас с мудростью Б-га и придают всему дню иное ощущение.

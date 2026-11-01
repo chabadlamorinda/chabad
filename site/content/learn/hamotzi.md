@@ -2,7 +2,7 @@
 title: Hamotzi: The Blessing Over Bread in Hebrew and English
 description: The Hamotzi blessing over bread in Hebrew, transliteration and English, when to say it, how to do it step by step, and the custom of dipping in salt.
 category: Prayer & Torah
-related: blessings, challah, birkat-hamazon, shabbat-meals
+related: blessings, blessings-after-food, challah, birkat-hamazon, shabbat-meals
 local: Join Rabbi Yisroel and Tzipora Labkowski for Shabbat dinner in Lafayette and hear Hamotzi over fresh challah. Let us know you are coming at chabadoflamorinda.com/forms/shabbat-meal.
 ---
 Hamotzi is the blessing Jews say before eating bread. It thanks G-d "who brings forth bread from the earth," and it begins every Shabbat and holiday meal, as well as any meal with bread.

@@ -2,7 +2,7 @@
 title: לא דתיים? אתם שייכים לחב״ד למורינדה
 description: לא דתיים? יהודים מכל רקע מגיעים לחב״ד למורינדה מלאפייט, מוראגה ואורינדה. בלי דמי חבר, בלי שיפוטיות, בואו כמו שאתם.
 category: Lamorinda
-related: first-time-at-synagogue, shabbat-for-beginners, who-is-a-jew, why-mitzvot
+related: first-time-at-synagogue, starting-jewish-observance, shabbat-for-beginners, who-is-a-jew, why-mitzvot
 local: עשו צעד ראשון: הירשמו לסעודת שבת ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 אולי לא הייתם בבית כנסת מאז הבר או הבת מצווה. אולי אף פעם לא חגגתם בר או בת מצווה. אולי אתם לא בטוחים במה אתם מאמינים, או שאתם מכירים רק כמה מילים בעברית. אתם שייכים לחב״ד למורינדה.
