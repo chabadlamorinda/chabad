@@ -931,3 +931,9 @@ html { scroll-padding-top: 84px; }
 .fund-list span { color: var(--muted, #666); font-size: .95rem; }
 .card.ways { padding-top: 4px; padding-bottom: 4px; }
 .card.ways .qa:last-child { border-bottom: 0; }
+/* Chanukah quiz: the running score stays at the top while you play */
+.qz-bar { position: sticky; top: 64px; z-index: 5; display: flex; align-items: center; gap: 12px; background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; margin: 0 0 14px; }
+.qz-prog { flex: 1; height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.qz-prog i { display: block; height: 100%; width: 0; background: var(--gold); transition: width .3s; }
+.qz-bar b { white-space: nowrap; font-size: .95rem; }
+.qz-q { scroll-margin-top: 130px; }

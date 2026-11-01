@@ -1287,5 +1287,6 @@
  "{n} yearly payments",
  "{org} holds Rosh Hashanah and Yom Kippur services every year, open to all with no tickets or membership. See [Rosh Hashanah](/holidays/rosh-hashanah) and [Yom Kippur](/holidays/yom-kippur).",
  "{org} is the Chabad synagogue right here in Lafayette, at {address}. Everyone is welcome and no membership is required.",
- "{org} is the Chabad synagogue serving {town}, about {miles} miles away at {address}. Everyone is welcome and no membership is required."
+ "{org} is the Chabad synagogue serving {town}, about {miles} miles away at {address}. Everyone is welcome and no membership is required.",
+ "{score} right out of {done}"
 ]

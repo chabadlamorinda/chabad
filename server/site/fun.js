@@ -111,13 +111,14 @@ ${guideCards(X, parents, t('For parents'))}
   <div class="qz-a">${answers.map((a, j) => `<button type="button" class="qz-b" data-j="${j}">${esc(t(a))}</button>`).join('')}</div>
   <p class="qz-why" hidden><span class="qz-mark" aria-live="polite"></span> ${esc(t(why))} <a href="${link}">${esc(t('Read more'))}</a></p>
 </fieldset>`).join('\n');
-    const text = { right: t('Right!'), wrong: t('Not quite.'), score: t('You got {score} out of {total}', { score: '{score}', total: QUIZ.length }),
+    const text = { right: t('Right!'), wrong: t('Not quite.'), score: t('You got {score} out of {total}', { score: '{score}', total: QUIZ.length }), live: t('{score} right out of {done}', { score: '{score}', done: '{done}' }),
       levels: [t('Every Chanukah is a chance to learn more. Read the story and try again!'), t('Nice try! Read up a little and try again.'), t('Great job! You know your Chanukah.'), t('Perfect! You are a true Chanukah expert.')],
       brag: t('I got {score} out of {total} on the Chanukah quiz. Can you beat me?', { score: '{score}', total: QUIZ.length }) + ' ' + url };
     const body = `<section class="wrap sec narrow fun" data-quiz>
 <p class="eyebrow">${esc(t('Chanukah'))}</p>
 <h1>${esc(t('The Chanukah quiz'))}</h1>
 <p class="lead-d">${esc(t('Ten quick questions about Chanukah, for kids and grown-ups. Tap an answer to see if you are right, then challenge a friend.'))}</p>
+<div class="qz-bar" aria-hidden="true"><span class="qz-prog"><i data-qz-prog></i></span><b data-qz-live>0/${QUIZ.length}</b></div>
 ${qs}
 <div class="card qz-end" hidden>
   <p class="hand qz-score" role="status" aria-live="polite"></p>
