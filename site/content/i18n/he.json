@@ -1579,5 +1579,6 @@
   "Rather arrange it with the Rabbi? Call, text or WhatsApp.": "מעדיפים לסדר את זה עם הרב? התקשרו, שלחו הודעה או וואטסאפ.",
   "More step-by-step series": "עוד סדרות צעד אחר צעד",
   "See the whole series": "לכל הסדרה",
-  "Start with part 1": "התחילו בחלק 1"
+  "Start with part 1": "התחילו בחלק 1",
+  "{score} right so far · question {done} of {total}": "{score} נכונות עד עכשיו · שאלה {done} מתוך {total}"
 }

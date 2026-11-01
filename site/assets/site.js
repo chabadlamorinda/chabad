@@ -609,6 +609,8 @@
     try { fetch('/api/site/lead', { method: 'POST', credentials: 'omit', keepalive: true, headers: { 'content-type': 'application/json', 'x-site': '1' }, body: body }); } catch (e) {}
   });
   var fab = $('.chat-fab[data-chat-open]');
+  // On a phone the button becomes a small round icon once the reader scrolls past the first screen.
+  if (fab) { var shrink = function () { fab.classList.toggle('compact', window.scrollY > 300); }; window.addEventListener('scroll', shrink, { passive: true }); shrink(); }
   if (fab) {
     var panel = null, history = [], busy = false;
     try { history = JSON.parse(sessionStorage.getItem('cl_chat') || '[]'); } catch (e) {}

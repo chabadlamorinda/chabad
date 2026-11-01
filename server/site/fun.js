@@ -55,7 +55,7 @@ function mountFun(r, { render, wrap, ctxOf, base }) {
     const status = tonight ? `<p class="mn-tonight"><strong>${esc(t('Tonight is night {n} of Chanukah', { n: tonight.n }))}</strong><br>${esc(when(tonight))} ${esc(t('in Lafayette, Moraga and Orinda.'))}</p>`
       : first && days > 0 ? `<p class="mn-tonight"><strong>${esc(days === 1 ? t('Chanukah begins tomorrow night!') : t('Chanukah begins in {n} days', { n: days }))}</strong><br>${esc(t('First candle: {date}.', { date: X.longDate(first.date) }))} ${esc(when(first))}</p>` : '';
     const start = tonight ? tonight.n : 1;
-    const holder = (i) => `<button type="button" class="mn-c" data-i="${i}" aria-label="${esc(t('Candle {n}', { n: i }))}"><span class="mn-flame" aria-hidden="true"></span></button>`;
+    const holder = (i) => `<button type="button" class="mn-c" data-i="${i}" aria-label="${esc(t('Candle {n}', { n: i }))}"><span class="mn-hit" aria-hidden="true"></span><span class="mn-flame" aria-hidden="true"></span></button>`;
     const blessings = [
       ['בָּרוּךְ אַתָּה אֲ-דֹנָי אֱ-לֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְצִוָּנוּ לְהַדְלִיק נֵר חֲנֻכָּה.', 'Baruch atah Ado-nai, Elo-heinu Melech ha-olam, asher kideshanu b’mitzvotav v’tzivanu l’hadlik ner Chanukah.', 'Blessed are You, L-rd our G-d, King of the universe, who has made us holy with His commandments and commanded us to light the Chanukah light.', false],
       ['בָּרוּךְ אַתָּה אֲ-דֹנָי אֱ-לֹהֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁעָשָׂה נִסִּים לַאֲבוֹתֵינוּ בַּיָּמִים הָהֵם בַּזְּמַן הַזֶּה.', 'Baruch atah Ado-nai, Elo-heinu Melech ha-olam, she-asah nissim la-avoteinu ba-yamim hahem bi-zman hazeh.', 'Blessed are You, L-rd our G-d, King of the universe, who performed miracles for our ancestors in those days, at this time.', false],
@@ -67,7 +67,7 @@ function mountFun(r, { render, wrap, ctxOf, base }) {
 ${status}
 <div class="card menorah-game" data-menorah data-night="${start}">
   <div class="chips mn-nights" role="group" aria-label="${esc(t('Which night?'))}">${[1, 2, 3, 4, 5, 6, 7, 8].map((n) => `<button type="button" class="chip pick${n === start ? ' on' : ''}" data-n="${n}">${esc(t('Night {n}', { n }))}</button>`).join('')}</div>
-  <div class="mn-stage" dir="ltr"><div class="mn-row">${[8, 7, 6, 5].map(holder).join('')}<button type="button" class="mn-c mn-shamash" data-i="0" aria-label="${esc(t('The shamash'))}"><span class="mn-flame" aria-hidden="true"></span></button>${[4, 3, 2, 1].map(holder).join('')}</div><div class="mn-base" aria-hidden="true"></div></div>
+  <div class="mn-stage" dir="ltr"><div class="mn-row">${[8, 7, 6, 5].map(holder).join('')}<button type="button" class="mn-c mn-shamash" data-i="0" aria-label="${esc(t('The shamash'))}"><span class="mn-hit" aria-hidden="true"></span><span class="mn-flame" aria-hidden="true"></span></button>${[4, 3, 2, 1].map(holder).join('')}</div><div class="mn-base" aria-hidden="true"></div></div>
   <p class="mn-msg" role="status" aria-live="polite"></p>
   <p class="btns"><button type="button" class="btn ghost" data-mn-reset>${esc(t('Start again'))}</button></p>
   <script type="application/json" data-mn-text>${JSON.stringify({ shamash: t('First light the shamash, the helper candle in the middle. Tap it.'), next: t('Now say the blessings below, then light the newest candle, on the left. Tap it.'), more: t('Lovely! Now the next one, moving to the right.'), wrong: t('Almost: we light the newest candle (on the left) first, then move right.'), done: t('The menorah is lit. Happy Chanukah! Place it in a window, so its light reaches the street.') }).replace(/</g, '\\u003c')}</script>
@@ -112,7 +112,7 @@ ${guideCards(X, parents, t('For parents'))}
   <div class="qz-a">${answers.map((a, j) => `<button type="button" class="qz-b" data-j="${j}">${esc(t(a))}</button>`).join('')}</div>
   <p class="qz-why" hidden><span class="qz-mark" aria-live="polite"></span> ${esc(t(why))} <a href="${link}">${esc(t('Read more'))}</a></p>
 </fieldset>`).join('\n');
-    const text = { right: t('Right!'), wrong: t('Not quite.'), score: t('You got {score} out of {total}', { score: '{score}', total: QUIZ.length }), live: t('{score} right out of {done}', { score: '{score}', done: '{done}' }),
+    const text = { right: t('Right!'), wrong: t('Not quite.'), score: t('You got {score} out of {total}', { score: '{score}', total: QUIZ.length }), live: t('{score} right so far · question {done} of {total}', { score: '{score}', done: '{done}', total: QUIZ.length }),
       levels: [t('Every Chanukah is a chance to learn more. Read the story and try again!'), t('Nice try! Read up a little and try again.'), t('Great job! You know your Chanukah.'), t('Perfect! You are a true Chanukah expert.')],
       brag: t('I got {score} out of {total} on the Chanukah quiz. Can you beat me?', { score: '{score}', total: QUIZ.length }) + ' ' + url };
     const body = `<section class="wrap sec narrow fun" data-quiz>

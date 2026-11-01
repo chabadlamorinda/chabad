@@ -203,7 +203,7 @@ textarea { font: inherit; }
 /* "Ask us" chat */
 .chat-fab { position: fixed; inset-inline-end: 16px; bottom: 16px; z-index: 40; border: 0; border-radius: 999px; padding: 14px 20px; background: var(--navy); color: #fff; font: 600 1rem var(--sans); box-shadow: 0 6px 24px rgba(0,0,0,.25); cursor: pointer; }
 .chat-fab::before { content: "💬 "; }
-.chat { position: fixed; inset-inline-end: 16px; bottom: 16px; z-index: 50; width: min(400px, calc(100vw - 32px)); height: min(600px, calc(100vh - 32px)); display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,.25); overflow: hidden; }
+.chat { position: fixed; inset-inline-end: 16px; bottom: 16px; z-index: 50; width: min(400px, calc(100vw - 32px)); height: min(600px, calc(100vh - 32px)); height: min(600px, calc(100dvh - 32px)); display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,.25); overflow: hidden; }
 .chat[hidden] { display: none; }
 .chat-h { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: var(--navy); color: #fff; }
 .chat-h span { display: flex; gap: 8px; align-items: center; }
@@ -954,8 +954,19 @@ html { scroll-padding-top: 84px; }
 .series-all ol { padding-inline-start: 1.4rem; margin: .6rem 0 0; }
 .series-all li { margin: .25rem 0; }
 .series-all li.done a { color: var(--muted); }
-.hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
+.hp { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden; clip-path: inset(50%); opacity: 0; pointer-events: none; } /* never left:-9999px: in Hebrew (right-to-left) that makes the page 10,000 px wide */
 /* A series page: the parts numbered in order */
 .series-page .gc-grid { counter-reset: part; }
 .series-page .gcard { position: relative; }
 .series-page .gcard::before { counter-increment: part; content: counter(part); position: absolute; top: 8px; inset-inline-start: 8px; z-index: 1; background: var(--gold); color: #fff; font-weight: 700; border-radius: 999px; min-width: 28px; height: 28px; display: grid; place-items: center; font-size: .9rem; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
+/* Phone fixes from the visitor check: the "Ask us" button shrinks to a round icon after the first screen so it never
+   hides buttons or text; bigger tap areas for menorah candles, banner dots and breadcrumbs */
+@media (max-width: 600px) {
+  .chat-fab.compact { font-size: 0; padding: 0; width: 56px; height: 56px; display: grid; place-items: center; }
+  .chat-fab.compact::before { content: "💬"; font-size: 1.5rem; }
+  main { padding-bottom: 72px; }
+}
+.bn-dots button { position: relative; }
+.bn-dots button::after { content: ""; position: absolute; inset: -10px; }
+.crumbs a { display: inline-block; padding: 8px 0; }
+.mn-c > .mn-hit { position: absolute; inset: 0 -9px; }

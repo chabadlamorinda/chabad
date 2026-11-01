@@ -515,6 +515,11 @@ test('backup: the Rabbi can download a full copy of the database; robots cannot'
   assert.match(f.name, /^chabad-lamorinda-backup-\d{4}-\d{2}-\d{2}\.json\.gz$/); assert.ok('submissions' in f.counts && 'rsvps' in f.counts);
 });
 
+test('no CSS pushes things far off to the side (in Hebrew, right-to-left, that makes the page thousands of pixels wide)', () => {
+  const css = require('fs').readFileSync(require('path').join(__dirname, '..', 'site', 'assets', 'site.css'), 'utf8');
+  assert.deepEqual(css.match(/(?:^|[;{\s])(?:left|right|margin-left|margin-right|text-indent)\s*:\s*-\d{4,}px/g) || [], []);
+});
+
 test('help, Kaddish, Tehillim and sponsor pages', async () => {
   const c = client();
   for (const p of ['/help', '/help/someone-passed-away', '/help/someone-is-sick', '/kaddish', '/tehillim', '/sponsor', '/he/help', '/ru/kaddish', '/he/tehillim']) assert.equal((await c.call('GET', p)).status, 200, p);

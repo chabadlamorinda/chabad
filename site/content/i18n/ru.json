@@ -1665,5 +1665,6 @@
   "Rather arrange it with the Rabbi? Call, text or WhatsApp.": "Хотите договориться с раввином? Позвоните, напишите или отправьте WhatsApp.",
   "More step-by-step series": "Другие серии шаг за шагом",
   "See the whole series": "Вся серия",
-  "Start with part 1": "Начните с части 1"
+  "Start with part 1": "Начните с части 1",
+  "{score} right so far · question {done} of {total}": "Пока верно: {score} · вопрос {done} из {total}"
 }
