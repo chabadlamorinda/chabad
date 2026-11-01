@@ -1047,7 +1047,7 @@ test('campaigns: draft template hidden, a live one leads every page, ambassadors
     // A pledge waits for the Rabbi; marked received, it counts.
     assert.equal((await g.call('POST', '/api/campaign/pledge', { campaign: 'roof-2026', amount: 25000, fullName: 'Rachel Green', email: 'rachel@example.com', how: 'wire', team: 'the-cohen-family' })).status, 200);
     assert.equal((await g.call('POST', '/api/campaign/pledge', { campaign: 'roof-2026', amount: 25000, fullName: 'R', email: 'nope' })).status, 400);
-    let tot = (await g.call('GET', '/api/campaign/roof-2026')).json; assert.equal(tot.raised, 0); assert.equal(tot.pledged, 25000);
+    let tot = (await g.call('GET', '/api/campaign/roof-2026')).json; assert.equal(tot.raised, 0); assert.equal(tot.pledged, 0, 'not shown publicly until received');
     const a = await admin();
     assert.equal((await a.call('POST', '/admin/api/campaigns/roof-2026/offline', { name: 'The Greens', amount: 2500, how: 'check', team: 'team-a', message: 'Go team!' }, H)).status, 200);
     let adm = (await a.call('GET', '/admin/api/campaigns', undefined, H)).json.campaigns.find((c) => c.slug === 'roof-2026');

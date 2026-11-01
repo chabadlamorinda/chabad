@@ -168,4 +168,6 @@ function decorate(html, pagePath) {
 const artImg = (name, size = 'sm') => (name ? `<img class="art art-${size}" src="/assets/art/${name}.svg" alt="" width="${size === 'lg' ? 96 : 56}" height="${size === 'lg' ? 96 : 56}"${size === 'lg' ? '' : ' loading="lazy"'} decoding="async">` : ''); // the big one at the top shows at once
 const art = (kind, slug, extra, size) => artImg(artFor(kind, slug, extra), size);
 
-module.exports = { art, artFor, artForPath, artImg, decorate, photoForPath, guidePhoto, guidePhotos, setLearn, PHOTOS, GUIDE_PHOTOS, reset: () => { have = null; photos = null; } };
+// The card-size copy (-sm, 560 px) of a site photo, when it exists; any other image as it is.
+const smallOf = (src) => { const m = /^\/media\/photos\/([a-z0-9-]+)\.jpg$/.exec(src || ''); return m && !m[1].endsWith('-sm') && hasPhoto(m[1] + '-sm') ? '/media/photos/' + m[1] + '-sm.jpg' : ''; };
+module.exports = { art, artFor, artForPath, artImg, decorate, photoForPath, smallOf, guidePhoto, guidePhotos, setLearn, PHOTOS, GUIDE_PHOTOS, reset: () => { have = null; photos = null; } };

@@ -114,7 +114,7 @@ ${byPopularity([
         res.json({ kinds: KINDS, items: (await q("SELECT * FROM submissions WHERE NOT (kind = ANY($1)) AND (status='pending' OR decided_at > now() - interval '60 days') ORDER BY created_at DESC LIMIT 200", [PRIVATE])).rows });
       }));
       r2.get('/api/site/submissions.csv', authed, w(async (req, res) => {
-        const rows = (await q('SELECT * FROM submissions ORDER BY created_at DESC')).rows, c = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+        const rows = (await q('SELECT * FROM submissions ORDER BY created_at DESC')).rows, c = (v) => { let s = String(v == null ? '' : v); if (/^[=+\-@\t\r]/.test(s)) s = "'" + s; return '"' + s.replace(/"/g, '""') + '"'; }; // (a leading = + - @ would run as a spreadsheet formula)
         const out = [['Date', 'Kind', 'Name', 'Email', 'Phone', 'Title', 'Details', 'Link', 'Status']].concat(rows.map((r) => [new Date(r.created_at).toISOString().slice(0, 16).replace('T', ' '), KINDS[r.kind] ? KINDS[r.kind].label : r.kind, r.name, r.email, r.phone, r.title, r.body, r.link, r.status]));
         res.set('Cache-Control', 'no-store').type('text/csv').attachment('website-forms.csv').send(out.map((r) => r.map(c).join(',')).join('\r\n'));
       }));

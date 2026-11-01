@@ -7,10 +7,11 @@ const Z = require('./zmanim.js');
 const parseLocal = (s) => { const [d, t = '00:00'] = s.split('T'); const [y, m, da] = d.split('-').map(Number); const [h, mi] = t.split(':').map(Number); return { y, m, d: da, h, mi }; };
 const utc = (y, m, d, h = 12, mi = 0) => new Date(Date.UTC(y, m - 1, d, h, mi));
 
+const FMT = new Map(); // date formatters by language and options
 function makeCtx({ content, i18n }) {
   return function ctxOf(req) {
     const lang = req.lang || 'en', loc = LOCALE[lang], t = i18n.makeT(lang), C = i18n.localize(content(), lang, splitFaq);
-    const f = (opts) => new Intl.DateTimeFormat(loc, { timeZone: 'UTC', ...opts });
+    const f = (opts) => { const k = loc + JSON.stringify(opts || {}); let x = FMT.get(k); if (!x) FMT.set(k, x = new Intl.DateTimeFormat(loc, { timeZone: 'UTC', ...opts })); return x; }; // made once, reused (much faster)
     const day = (ymd, opts) => { const [y, m, d] = ymd.split('-').map(Number); return f(opts).format(utc(y, m, d)); };
     const clock = (h, mi) => f({ hour: 'numeric', minute: mi || lang !== 'en' ? '2-digit' : undefined }).format(utc(2000, 1, 1, h, mi)); // 24-hour clocks always show minutes (20:00, not 20)
     const X = {

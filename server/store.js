@@ -49,7 +49,8 @@ CREATE TABLE IF NOT EXISTS kv (key TEXT PRIMARY KEY, value JSONB NOT NULL, updat
 CREATE TABLE IF NOT EXISTS community_days (day DATE PRIMARY KEY, coins INT NOT NULL DEFAULT 0, cents BIGINT NOT NULL DEFAULT 0);`;
 
 function createStore(url, opts = {}) {
-  const pool = new Pool({ connectionString: url, max: 5, ssl: /sslmode=require/.test(url) || process.env.DATABASE_SSL === '1' ? { rejectUnauthorized: false } : undefined, ...opts });
+  // Timeouts: a slow or unreachable database makes a page skip what it needs (RSVP counts...) instead of hanging.
+  const pool = new Pool({ connectionString: url, max: 5, connectionTimeoutMillis: 5000, statement_timeout: 20000, ssl: /sslmode=require/.test(url) || process.env.DATABASE_SSL === '1' ? { rejectUnauthorized: false } : undefined, ...opts });
   const q = (text, params) => pool.query(text, params);
   const rows = async (text, params) => (await q(text, params)).rows;
   const one = async (text, params) => (await q(text, params)).rows[0] || null;

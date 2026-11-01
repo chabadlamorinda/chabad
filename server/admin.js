@@ -13,7 +13,9 @@ const TTL = 12 * 3600e3;
 function mountAdmin(app, { funds = {}, store, stripe, password, secret, limit, send, log = console, levelOf, extend = null }) {
   if (!password || password.length < 12) return false;
   const needDb = (req, res, next) => (store ? next() : res.status(503).json({ code: 'not_configured', error: 'The database is not connected yet (DATABASE_URL).' }));
-  const mac = (s) => crypto.createHmac('sha256', secret + ':admin').update(s).digest('base64url');
+  // Tied to the password too: changing ADMIN_PASSWORD signs everyone out at once (a lost phone stops working).
+  const pwKey = crypto.createHash('sha256').update(String(password)).digest('hex');
+  const mac = (s) => crypto.createHmac('sha256', secret + ':admin:' + pwKey).update(s).digest('base64url');
   const issue = () => { const exp = String(Date.now() + TTL); return exp + '.' + mac(exp); };
   const valid = (tok) => {
     if (typeof tok !== 'string') return false;

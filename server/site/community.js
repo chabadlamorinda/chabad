@@ -95,6 +95,7 @@ function nextAnnual(today, ymd) {
 const d10 = (v) => (v ? (v instanceof Date ? v.toISOString() : String(v)).slice(0, 10) : '');
 
 function communityStore(store) {
+  const countCache = { at: 0, val: null };
   const { pool } = store;
   const q = (t, p) => pool.query(t, p), rows = async (t, p) => (await q(t, p)).rows, one = async (t, p) => (await q(t, p)).rows[0] || null;
   return {
@@ -141,6 +142,7 @@ function communityStore(store) {
     },
     // Returns the RSVP's invite code (for "Bring a friend"). A ref counts only if it is another guest's code for the same event.
     async upsertRsvp(r) {
+      countCache.val = null;
       const ref = r.ref && /^[a-z0-9]{6,16}$/.test(r.ref) && await one("SELECT 1 FROM rsvps WHERE event_slug=$1 AND invite_code=$2 AND lower(email)<>$3", [r.event, r.ref, r.email]) ? r.ref : '';
       const row = await one(`INSERT INTO rsvps (id, event_slug, member_id, name, email, phone, adults, kids, note, invite_code, ref) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
         ON CONFLICT (event_slug, lower(email)) DO UPDATE SET member_id=COALESCE(EXCLUDED.member_id, rsvps.member_id), name=EXCLUDED.name, phone=EXCLUDED.phone, adults=EXCLUDED.adults, kids=EXCLUDED.kids, note=EXCLUDED.note, updated_at=now(),
@@ -148,10 +150,15 @@ function communityStore(store) {
         RETURNING id, invite_code`, [newId('r_'), r.event, r.memberId || null, r.name, r.email, r.phone, r.adults, r.kids, r.note, crypto.randomBytes(5).toString('hex'), ref]);
       return row;
     },
-    cancelRsvp: (event, email) => q('DELETE FROM rsvps WHERE event_slug=$1 AND lower(email)=$2', [event, email]),
+    cancelRsvp: (event, email) => (countCache.val = null, q('DELETE FROM rsvps WHERE event_slug=$1 AND lower(email)=$2', [event, email])),
     rsvpFor: (event, email) => one('SELECT adults, kids, note FROM rsvps WHERE event_slug=$1 AND lower(email)=$2', [event, email]),
     myRsvps: (email) => rows('SELECT event_slug, adults, kids FROM rsvps WHERE lower(email)=$1', [email]),
-    async counts() { const out = {}; for (const r of await rows('SELECT event_slug, sum(adults+kids)::int AS n FROM rsvps GROUP BY event_slug')) out[r.event_slug] = r.n; return out; },
+    // How many are coming to each event: kept for 30 seconds (every page with events asks), refreshed at once after an RSVP.
+    async counts() {
+      if (countCache.val && Date.now() - countCache.at < 30000) return countCache.val;
+      const out = {}; for (const r of await rows('SELECT event_slug, sum(adults+kids)::int AS n FROM rsvps GROUP BY event_slug')) out[r.event_slug] = r.n;
+      countCache.at = Date.now(); countCache.val = out; return out;
+    },
     // Allergies and dietary needs the family saved in their account come along with the RSVP, for meals and kids' programs.
     setArrived: (event, email, yes) => q(`UPDATE rsvps SET arrived_at = ${yes ? 'COALESCE(arrived_at, now())' : 'NULL'} WHERE event_slug=$1 AND lower(email)=lower($2)`, [event, email]),
     rsvpList: (event) => rows(`SELECT r.name, r.email, r.arrived_at, r.phone, r.adults, r.kids, r.note, r.created_at, r.member_id,

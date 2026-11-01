@@ -4,7 +4,7 @@
 'use strict';
 const { campaignBanner } = require('./campaign-page.js');
 const { esc } = require('./md.js');
-const { artFor, artImg } = require('./art.js');
+const { artFor, artImg, smallOf } = require('./art.js');
 const { fmtClock } = require('./content.js');
 const { guideCards } = require('./links.js');
 
@@ -20,7 +20,9 @@ function fromProgram(C, x) {
 }
 
 function banner(b, i) {
-  const img = b.image ? `<img class="bn-img" src="${esc(b.image)}" alt="" ${i > 1 ? 'loading="lazy" ' : i ? '' : 'fetchpriority="high" '}decoding="async">` : '';
+  // Phones get the 560 px copy of a site photo (a quarter of the bytes); only the first banner loads right away.
+  const sm = smallOf(b.image), set = sm ? ` srcset="${sm} 560w, ${esc(b.image)} 1600w" sizes="(max-width: 600px) 100vw, 1200px"` : '';
+  const img = b.image ? `<img class="bn-img" src="${esc(b.image)}"${set} alt="" ${i ? 'loading="lazy" ' : 'fetchpriority="high" '}decoding="async">` : '';
   return `<article class="bn theme-${themeOf(b.theme)}${img ? ' has-img' : ''}" aria-roledescription="slide" aria-label="${esc(b.title)}">${img}
 <div class="bn-in">${b.eyebrow ? `<p class="bn-eyebrow">${esc(b.eyebrow)}</p>` : ''}<h2>${esc(b.title)}</h2>${b.text ? `<p class="bn-text">${esc(b.text)}</p>` : ''}
 <p class="btns">${b.url ? `<a class="btn gold" href="${esc(b.url)}">${esc(b.button || 'More')}</a>` : ''}${b.url2 ? `<a class="btn ghost-l" href="${esc(b.url2)}">${esc(b.button2)}</a>` : ''}</p></div>
@@ -28,7 +30,7 @@ ${!img && b.art ? `<div class="bn-art" aria-hidden="true">${artImg(b.art, 'lg')}
 }
 
 function tile(x) {
-  if (x.image) return `<a class="sb has-photo" href="${esc(x.url)}"><img class="sb-photo" src="${esc(x.image)}" alt="" loading="lazy" decoding="async">
+  if (x.image) return `<a class="sb has-photo" href="${esc(x.url)}"><img class="sb-photo" src="${esc(smallOf(x.image) || x.image)}" alt="" loading="lazy" decoding="async">
 <span class="sb-t">${x.eyebrow ? `<span class="sb-eyebrow">${esc(x.eyebrow)}</span>` : ''}<strong>${esc(x.title)}</strong>${x.text ? `<span>${esc(x.text)}</span>` : ''}</span></a>`;
   return `<a class="sb theme-${themeOf(x.theme, 'blue')}" href="${esc(x.url)}"><span class="sb-art" aria-hidden="true">${artImg(x.art || 'star-of-david')}</span>
 <span class="sb-t">${x.eyebrow ? `<span class="sb-eyebrow">${esc(x.eyebrow)}</span>` : ''}<strong>${esc(x.title)}</strong>${x.text ? `<span>${esc(x.text)}</span>` : ''}</span></a>`;

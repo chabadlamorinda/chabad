@@ -107,9 +107,10 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   // long the page was open (x-age, seconds). A robot gets a polite "ok" and nothing is saved, emailed or counted.
   // Signed-in members are never stopped (a one-tap RSVP can be fast).
   app.use('/api/site', (req, res, next) => {
-    if (req.method !== 'POST' || !/^\/(submit|forms\/|subscribe|rsvp\/|leads?\b)/.test(req.path) || /(?:^|; )cl_member=/.test(req.get('cookie') || '')) return next();
+    if (req.method !== 'POST' || !/^\/(submit|forms\/|subscribe|rsvp\/|leads?\b)/.test(req.path)) return next();
     const age = Number(req.get('x-age')), robot = req.get('x-hp') === '1' || (req.get('x-age') != null && age >= 0 && age < 2);
     if (!robot) return next();
+    if (community) return community.readMember(req).then((m) => { if (m) return next(); res.json({ ok: true, going: 0 }); }).catch(() => next()); // a real signed-in member (cookie checked) is never stopped
     log.error && log.error('spam guard: stopped a robot on', req.path);
     res.json({ ok: true, going: 0 });
   });

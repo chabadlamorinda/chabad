@@ -194,7 +194,7 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
       send({ contact: { topic, title: t(TOPICS[topic].title), note: t('The Rabbi gets a note about this conversation so he can help.'), call: L.call, text: L.text, whatsapp: L.whatsapp, email: L.email, labels: { call: t('Call'), text: t('Text'), email: t('Email'), rabbi: t('Rabbi Yisroel Labkowski'), rebbetzin: t('Rebbetzin Tzipora Labkowski') }, rebbetzin: R } });
       if (leads) leads.record({ topic, channel: 'chat', page, lang, cid, detail: msgs.filter((m) => m.role === 'user').map((m) => '- ' + m.content).join('\n') }).catch(() => {});
     } else { // any other question: the Rabbi hears about each conversation once a day (mezuzah, giving... go through leads above)
-      const key = (cid || question.slice(0, 60)) + ':' + new Date().toISOString().slice(0, 10);
+      const key = (req.ip || cid) + ':' + new Date().toISOString().slice(0, 10); // per visitor (not per chat id, which anyone can change)
       if (!told.has(key)) {
         told.set(key, 1); if (told.size > 2000) told.clear();
         notify(`Chat question: ${question.slice(0, 70)}`, `Someone asked the website chat${page ? ' on ' + page : ''} (${lang}):\n\n${msgs.filter((m) => m.role === 'user').map((m) => '- ' + m.content).join('\n')}`, '/admin/community#chat');

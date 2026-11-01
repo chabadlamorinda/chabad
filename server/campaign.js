@@ -16,7 +16,7 @@ const { withOffset } = require('./time.js');
 
 const MAX_TOTAL = 100000000;  // $1,000,000 for a whole gift paid over time
 const MAX_ONCE = 25000000;    // $250,000 in one online payment
-const MAX_PLEDGE = 1000000000; // $10,000,000 pledged to pay later
+const MAX_PLEDGE = 100000000; // $1,000,000 pledged to pay later (larger: the Rabbi enters it by hand)
 const MIN_PAYMENT = 500;      // each monthly or yearly payment at least $5
 const CACHE_MS = 60 * 1000;
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -115,7 +115,9 @@ function createCampaigns({ stripe, store, content, log = console, clean, HttpErr
     }
     const wall = all.slice(0, 300).map((g) => ({ name: g.show && g.name ? g.name : '', cents: g.hideAmount ? null : g.cents, count: g.count || 0, interval: g.interval || '', team: g.team, message: g.message, dedication: g.dedication, at: g.at }));
     const pend = (await pledges(c.slug)).filter((p) => p.status === 'pending').reduce((a, p) => a + p.cents, 0);
-    const data = { raised: withMatch(c, base) / 100, given: base / 100, pledged: pend / 100, donors: all.length, teams: Object.fromEntries(Object.entries(teams).map(([k, v]) => [k, v / 100])), teamDonors, levels, wall };
+    // Pledges not yet received are not shown publicly (anyone can type one); "Received: count it" adds them to the total.
+    void pend;
+    const data = { raised: withMatch(c, base) / 100, given: base / 100, pledged: 0, donors: all.length, teams: Object.fromEntries(Object.entries(teams).map(([k, v]) => [k, v / 100])), teamDonors, levels, wall };
     cache.set(c.slug, { at: Date.now(), data });
     return data;
   }
@@ -138,7 +140,7 @@ function createCampaigns({ stripe, store, content, log = console, clean, HttpErr
       if (!Number.isFinite(cents) || cents < 100 || cents > (split ? MAX_TOTAL : MAX_ONCE)) throw new HttpError(400, 'invalid_amount', split ? 'Please enter an amount between $1 and $1,000,000.' : 'Please enter an amount between $1 and $250,000. For a larger gift, choose payments over time or pledge now and pay later.');
       const each = split ? Math.ceil(cents / n) : 0;
       if (split && each < MIN_PAYMENT) throw new HttpError(400, 'invalid_amount', 'Each payment needs to be at least $5.');
-      const team = await teamOk(c, b.team), level = (c.levels || []).find((l) => l.id === b.level);
+      const team = await teamOk(c, b.team), level = (c.levels || []).find((l) => l.id === b.level && cents >= Math.round(l.amount * 100)); // a naming opportunity only for its full amount
       const idem = clean(b.idem, 80); if (idem.length < 16) throw new HttpError(400, 'invalid_request', 'Missing request id.');
       const fee = b.fee === true, withFee = (x) => (fee ? Math.round(x * (1 + FEE_RATE)) : x);
       const lang = ['he', 'ru'].includes(b.lang) ? b.lang : 'en', pre = lang === 'en' ? '' : '/' + lang;
@@ -168,8 +170,9 @@ function createCampaigns({ stripe, store, content, log = console, clean, HttpErr
       if (!fullName) throw new HttpError(400, 'invalid_name', 'Please enter your name.');
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw new HttpError(400, 'invalid_email', 'Please enter a valid email address.');
       const how = ['check', 'wire', 'stock', 'daf', 'other'].includes(b.how) ? b.how : 'check';
+      if ((await pledges(c.slug)).filter((x) => x.status === 'pending' && x.email === email).length >= 3) throw new HttpError(429, 'too_many', 'You already have pledges waiting. Please contact us.');
       const p = { id: 'pl_' + crypto.randomBytes(6).toString('hex'), status: 'pending', fullName, email, phone: clean(b.phone, 30), how, cents, name: b.anonymous === true ? '' : clean(b.name, 60) || fullName, show: b.anonymous !== true, hideAmount: b.hideAmount === true,
-        team: await teamOk(c, b.team), level: ((c.levels || []).find((l) => l.id === b.level) || {}).id || '', dedication: clean(b.dedication, 80), message: clean(b.message, 140), at: Date.now() };
+        team: await teamOk(c, b.team), level: ((c.levels || []).find((l) => l.id === b.level && cents >= Math.round(l.amount * 100)) || {}).id || '', dedication: clean(b.dedication, 80), message: clean(b.message, 140), at: Date.now() };
       await store.setKv(pledgeKey(c.slug), [p, ...await pledges(c.slug)]); cache.delete(c.slug);
       notify(`New pledge for ${c.title}: $${(cents / 100).toLocaleString('en-US')}`, `${fullName} <${email}>${p.phone ? ' ' + p.phone : ''} pledged $${(cents / 100).toLocaleString('en-US')} to ${c.title}, to pay by ${how}.${p.dedication ? '\nDedication: ' + p.dedication : ''}${p.message ? '\nMessage: ' + p.message : ''}\n\nWhen it arrives, mark it received in the Rabbi area (Campaign section) so it counts.`);
       res.json({ ok: true });
@@ -236,7 +239,7 @@ function createCampaigns({ stripe, store, content, log = console, clean, HttpErr
     r.post('/api/campaigns/:slug/offline', authed, wrap(async (req, res) => {
       const c = find(req.params.slug); if (!c || !store) return res.status(404).json({ error: 'No such campaign.' });
       const b = req.body || {}, cents = Math.round(Number(b.amount) * 100);
-      if (!Number.isFinite(cents) || cents < 100 || cents > MAX_PLEDGE) return res.status(400).json({ error: 'Please enter the amount.' });
+      if (!Number.isFinite(cents) || cents < 100 || cents > 1000000000) return res.status(400).json({ error: 'Please enter the amount.' }); // up to $10,000,000 by hand
       const name = clean(b.name, 60); if (!name) return res.status(400).json({ error: 'Please enter the name.' });
       const g = { id: 'off_' + Date.now().toString(36) + crypto.randomBytes(3).toString('hex'), name, show: b.show !== false, hideAmount: b.hideAmount === true, cents, team: await teamOk(c, b.team), level: ((c.levels || []).find((l) => l.id === b.level) || {}).id || '', message: clean(b.message, 140), dedication: clean(b.dedication, 80), at: Date.now(), how: ['check', 'cash', 'wire', 'stock', 'daf', 'pledge', 'other'].includes(b.how) ? b.how : 'check' };
       await addOffline(c, g);

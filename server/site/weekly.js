@@ -326,7 +326,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
         res.json({ items, confirmed: count('confirmed'), pending: count('pending'), unsubscribed: count('unsubscribed'), email: !!mailer });
       }));
       r2.get('/api/site/email/subscribers.csv', authed, wrap(async (req, res) => {
-        const c = (v) => `"${String(v == null ? '' : v instanceof Date ? v.toISOString().slice(0, 10) : v).replace(/"/g, '""')}"`;
+        const c = (v) => { let s = String(v == null ? '' : v instanceof Date ? v.toISOString().slice(0, 10) : v); if (/^[=+\-@\t\r]/.test(s)) s = "'" + s; return `"${s.replace(/"/g, '""')}"`; }; // (no spreadsheet formulas)
         const rows = [['Email', 'Name', 'Language', 'Signed up from', 'Status', 'Signed up', 'Emails received', 'Opened', 'Clicked', 'Last opened'], ...(await subscribers()).map((s) => [s.email, s.name, s.lang, s.source, s.status, s.created_at, s.got, s.opened, s.clicked, s.last_open])];
         res.type('text/csv').attachment('subscribers.csv').send(rows.map((r) => r.map(c).join(',')).join('\n'));
       }));

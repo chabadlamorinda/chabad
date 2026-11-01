@@ -92,6 +92,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
   // ---------- security headers ----------
   app.use((req, res, next) => {
     res.setHeader('X-Content-Type-Options', 'nosniff');
+    if (req.secure) res.setHeader('Strict-Transport-Security', 'max-age=31536000'); // browsers always use https from now on
     res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
     res.setHeader('Content-Security-Policy', [
       "default-src 'self'",
@@ -543,7 +544,14 @@ if (require.main === module) {
     const vapidPub = process.env.VAPID_PUBLIC_KEY || '', vapidPriv = process.env.VAPID_PRIVATE_KEY || '';
     if (process.env.DATABASE_URL) {
       store = require('./store.js').createStore(process.env.DATABASE_URL);
-      await store.migrate();
+      // If the database is down when the server starts (or restarts during an update), the website still opens: most pages
+      // need no database. It tries for half a minute, then starts anyway and keeps trying every minute in the background.
+      let ready = false;
+      for (let i = 0; i < 6 && !ready; i++) { try { await store.migrate(); ready = true; } catch (e) { console.error('Database not ready (' + (e && e.message) + '), trying again...'); await new Promise((r) => setTimeout(r, 5000)); } }
+      if (!ready) {
+        console.error('Database not reachable: starting the website anyway; trying again every minute.');
+        const t = setInterval(() => { store.migrate().then(() => { clearInterval(t); console.log('Database connected.'); }).catch(() => {}); }, 60000); t.unref();
+      }
       try { const n = await require('./kiddush-legacy.js').importLegacy(store); if (n) console.log('Imported ' + n + ' sponsors from the original Kiddush board.'); } catch (e) { console.error('Kiddush import skipped:', e.message); }
       console.log('Database connected: members, yahrzeits and reminders are on.');
     } else console.log('DATABASE_URL not set: yahrzeit sharing, reminders and the Rabbi area are off.');
