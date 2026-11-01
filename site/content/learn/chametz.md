@@ -2,7 +2,7 @@
 title: Chametz: What It Is and How to Get Rid of It Before Passover
 description: What counts as chametz, why it is forbidden on Passover, and how to clean, search, sell and burn your chametz step by step before the holiday.
 category: Shabbat & holidays
-related: matzah, passover-seder, kosher-kitchen, kosher
+related: matzah, selling-your-chametz, passover-seder, kosher-kitchen, kosher
 local: Sell your chametz online at chabadoflamorinda.com/forms/sell-chametz, or call 925-384-7242 with any Passover questions.
 ---
 Chametz is any food made from wheat, barley, rye, oats or spelt that has risen by coming into contact with water for more than 18 minutes. On Passover, Jews may not eat, own or benefit from chametz, so before the holiday we clean it out, search for it, sell it and burn it.

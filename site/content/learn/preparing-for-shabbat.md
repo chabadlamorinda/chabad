@@ -45,4 +45,4 @@ In winter, Shabbat can begin before 5 PM. Do what you can ahead, keep the menu s
 No, cooking is one of the kinds of work we refrain from on Shabbat, so food is prepared beforehand and kept warm. See [the 39 categories of work](/learn/thirty-nine-melachot).
 
 ### I am running late and the time has passed. What should I do?
-Once the time has passed, do not light. Shabbat has begun; welcome it anyway with Kiddush and a meal, and next week start a little earlier. Ask the Rabbi if you have questions.
+If the 18 minutes have passed but the sun has not yet set, light right away. Once the sun has set, do not light: Shabbat has begun; welcome it anyway with Kiddush and a meal, and next week start a little earlier. Ask the Rabbi if you have questions.

@@ -2,7 +2,7 @@
 title: Jealousy and Envy: Jewish Wisdom for When You Compare Yourself
 description: Why we envy others, what the Torah and the Sages say about jealousy, and practical Jewish ways to find contentment and joy in your own life.
 category: Jewish ideas
-related: hakarat-hatov, simcha, humility, bitachon
+related: hakarat-hatov, being-content, simcha, humility, bitachon
 local: Want to talk something through? Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 A neighbor's new car, a friend's perfect vacation photos, a colleague's promotion. Envy is one of the most human feelings, and social media has made it easier than ever to feel that everyone else has more. The last of the [Ten Commandments](/learn/ten-commandments) speaks directly to it: "You shall not covet... anything that belongs to your neighbor."

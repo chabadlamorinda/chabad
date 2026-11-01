@@ -2,7 +2,7 @@
 title: Kosher for Passover: What It Means and How to Prepare
 description: What makes food kosher for Passover, chametz and kitniyot explained, how to prepare your kitchen, and why Passover certification matters.
 category: Kosher
-related: chametz, matzah, passover-seder, kosher-kitchen
+related: chametz, selling-your-chametz, matzah, passover-seder, kosher-kitchen
 local: Sell your chametz at chabadoflamorinda.com/forms/sell-chametz and order handmade shmurah matzah at chabadoflamorinda.com/forms/matzah, or call 925-384-7242.
 ---
 Kosher for Passover means food that contains no chametz, leavened grain, and was made with equipment free of chametz. During the eight days of [Passover](/holidays/passover) Jews may not eat or even own chametz, so year-round kosher food is not enough.

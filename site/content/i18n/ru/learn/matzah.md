@@ -2,7 +2,7 @@
 title: Маца: что это такое и почему важна шмура-маца
 description: Что такое маца, заповедь есть ее на пасхальном седере, что такое шмура-маца, сколько нужно съесть и благословение на иврите и в переводе.
 category: Shabbat & holidays
-related: passover-seder, pesach-sheni, chametz, blessings, kosher
+related: passover-seder, selling-your-chametz, pesach-sheni, chametz, blessings, kosher
 local: Закажите шмуру-мацу ручной выпечки для вашего седера на chabadoflamorinda.com/forms/matzah или по телефону 925-384-7242.
 ---
 Маца - это плоский пресный хлеб только из муки и воды, который быстро выпекают, прежде чем он успеет подняться. Есть мацу в первый вечер Песаха - заповедь Торы, и весь праздник мы едим ее вместо хлеба.

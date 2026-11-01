@@ -2,7 +2,7 @@
 title: The Chanukah Story: The Maccabees and the Miracle of the Oil
 description: The story of Chanukah in plain English: the Greek decrees, the Maccabees' revolt, the miracle of the oil, and what it means today.
 category: Shabbat & holidays
-related: chanukah-menorah, miracles-jewish-view, dreidel, chanukah-gelt, the-holy-temple
+related: chanukah-menorah, lessons-of-chanukah, miracles-jewish-view, dreidel, chanukah-gelt, the-holy-temple
 local: Celebrate Chanukah with us; see chabadoflamorinda.com/holidays/chanukah for menorah lightings and events, or call 925-384-7242.
 ---
 Chanukah celebrates two miracles from about 2,200 years ago: a small band of Jews, the Maccabees, defeated the mighty Syrian-Greek army, and a single jar of pure oil lit the Temple menorah for eight days. We remember both by lighting the menorah for eight nights.

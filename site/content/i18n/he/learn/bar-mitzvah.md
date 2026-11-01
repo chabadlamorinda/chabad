@@ -2,7 +2,7 @@
 title: בר מצווה: מה המשמעות ואיך מתכוננים
 description: מהי בר מצווה, למה היא בגיל 13, איך מתכוננים ומה קורה בטקס ובחגיגה.
 category: Life cycle
-related: tefillin, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
+related: tefillin, bar-bat-mitzvah-timeline, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
 local: בית חב״ד למורינדה מציע הכנה חמה ואישית לבר מצווה לכל משפחה. התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו בעמוד תוכנית הבר מצווה שלנו כדי להתחיל.
 ---
 בר מצווה היא הרגע שבו נער יהודי מגיע לגיל 13 ונעשה אחראי לקיום מצוות התורה. זה קורה מאליו ביום הולדתו ה-13 לפי הלוח העברי. הטקס והמסיבה חוגגים את אבן הדרך הזו, אבל הוא נעשה בר מצווה בין אם יש אירוע ובין אם לא.

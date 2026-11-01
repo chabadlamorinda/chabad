@@ -2,7 +2,7 @@
 title: Kol Nidre: Meaning, Time and What Happens
 description: What Kol Nidre is, why it opens Yom Kippur, what the words mean, when it starts and what to expect at the service.
 category: Shabbat & holidays
-related: yom-kippur-fast, teshuvah, tallit, yizkor
+related: yom-kippur-fast, keeping-your-word, ten-days-of-repentance, teshuvah, tallit, yizkor
 local: Join us for Kol Nidre and all Yom Kippur services; reserve at chabadoflamorinda.com/forms/high-holidays or call 925-384-7242.
 ---
 Kol Nidre is the prayer that opens Yom Kippur on the evening the holiday begins. It is a formal release from personal vows, chanted three times before sunset, and it sets the tone of humility and return for the holiest day of the year.

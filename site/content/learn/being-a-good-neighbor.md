@@ -9,7 +9,7 @@ In Pirkei Avot, Rabban Yochanan ben Zakkai asked his students to find the best p
 
 ## Kindness close to home
 
-"Love your fellow as yourself" begins with the people closest to us. Bring a meal when a neighbor has a new baby, an illness or a loss. Take in the mail when they travel. Shovel the walk or carry groceries for an older neighbor. Small things build trust and warmth.
+"Love your fellow as yourself" begins with the people closest to us. Bring a meal when a neighbor has a new baby, an illness or a loss. Take in the mail when they travel. Rake the leaves or carry groceries for an older neighbor. Small things build trust and warmth.
 
 ## Welcome the new family
 

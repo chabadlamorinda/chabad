@@ -21,15 +21,13 @@ The Talmud adds a promise: "One who prays for mercy for another, and needs the s
 
 **Tehillim.** Saying Psalms for a sick person is one of the oldest Jewish responses to illness. Psalm 20, 121 and 130 are often said, and some people say the verses of Psalm 119 that spell the person's name. You can add a name to our community prayer list at [Tehillim](/tehillim). See the guide to [Tehillim](/learn/tehillim).
 
-**A mitzvah in their merit.** Give [tzedakah](/learn/tzedakah), light Shabbat candles a few minutes early, or take on a small mitzvah "in the merit of a complete recovery for ...". A good deed in someone's merit is itself a form of prayer.
-
 ## The mother's name
 
 When we pray for someone who is ill, the custom is to use their Hebrew name followed by their mother's name: "Chaim ben (son of) Sarah," "Leah bat (daughter of) Rivkah." For most other purposes, such as being called to the Torah, we use the father's name. The Zohar connects prayers for mercy with the mother, and the sages see a hint in King David's words, "Save the son of Your handmaid" (Psalm 116). If you do not know the mother's Hebrew name, use her English name, or simply pray for the person as you know them. G-d knows who you mean. See [Hebrew names](/learn/hebrew-names).
 
 ## Praying for family
 
-You do not need a crisis to pray for the people you love. Many parents say a few words for each child every morning or at candle lighting on Friday night, a moment the Jewish tradition treasures for exactly this. See [blessing your children](/learn/blessing-your-children) and [Shabbat candles](/learn/shabbat-candles). A spouse's name, a parent's health, a brother looking for work, a daughter looking for a match: all of it belongs in the Amidah's blessings for healing, livelihood and peace.
+You do not need a crisis to pray for the people you love. Many parents say a few words for each child every morning or at candle lighting on Friday night, a moment the Jewish tradition treasures for exactly this. See [blessing your children](/learn/blessing-your-children) and [Shabbat candles](/learn/shabbat-candles).
 
 ## Praying for the world
 
@@ -45,6 +43,3 @@ Use the name you know, in any language. A prayer said with love for "my friend M
 
 ### Does my prayer help if I am not religious?
 Yes. The Talmud's promise about praying for others does not come with conditions. Every sincere prayer rises, and a prayer for someone else is among the most sincere there are. See [why pray](/learn/why-pray).
-
-### How long do we keep praying for someone?
-Until they recover, as long as the illness lasts, or, sadly, until they pass away. Community prayer lists are refreshed from time to time; our [prayer list](/tehillim) lets you renew a name so it stays on.

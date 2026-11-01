@@ -2,7 +2,7 @@
 title: מצה: מה היא ולמה מצה שמורה חשובה
 description: מהי מצה, מצוות אכילת מצה בליל הסדר, מה פירוש מצה שמורה, כמה לאכול, והברכה בעברית.
 category: Shabbat & holidays
-related: passover-seder, pesach-sheni, chametz, blessings, kosher
+related: passover-seder, selling-your-chametz, pesach-sheni, chametz, blessings, kosher
 local: הזמינו מצות שמורה עבודת יד לסדר שלכם ב-chabadoflamorinda.com/forms/matzah או בטלפון 925-384-7242.
 ---
 מצה היא לחם שטוח שלא החמיץ, העשוי רק מקמח ומים ונאפה מהר לפני שיספיק לתפוח. אכילת מצה בלילה הראשון של פסח היא מצווה מן התורה, ובמשך כל החג אוכלים מצה במקום לחם.

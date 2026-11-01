@@ -11,7 +11,7 @@ A eulogy, in Hebrew a *hesped*, is one of the oldest Jewish customs. When Sarah 
 
 The sages give a hesped two purposes. The first is honor for the one who passed away (*kavod hamet*): to tell the truth about a life, so that the goodness in it is seen and remembered. The second is to move the people listening: to open their hearts, to let them cry, and to leave them wanting to be a little better because of the person they are burying. A eulogy that does both has done its job, however simple the words.
 
-Chassidic teaching adds a third layer. The soul is present at its own funeral, and the good that is said and the good deeds that people take on in its memory bring it real joy and real elevation. You are not only speaking about the person; in a sense you are speaking for them and to them.
+Chassidic teaching adds a third layer. The soul is present at its own funeral, and the good that is said and the good deeds that people take on in its memory bring it real joy and real elevation.
 
 ## What to include
 
@@ -31,11 +31,11 @@ Write it down and read from the page. Grief makes even confident speakers lose t
 
 ## Who speaks
 
-Usually the Rabbi, who weaves the family's memories into Jewish teaching, and then one or a few family members or close friends. There is no rule that a child must speak; some find it is a comfort, others find it too much, and both are right. A eulogy can also be written by one person and read by another. Jewish custom limits eulogies on certain joyous days of the calendar; the Rabbi will tell you if that applies.
+Usually the Rabbi, who weaves the family's memories into Jewish teaching, and then one or a few family members or close friends. There is no rule that a child must speak; some find it is a comfort, others find it too much, and both are right. Jewish custom limits eulogies on certain joyous days of the calendar; the Rabbi will tell you if that applies.
 
 ## The Rabbi can help
 
-Before every funeral, Rabbi Labkowski sits with the family to hear about their loved one. Bring him your draft, or just your memories, and he will help you shape them. Many people find that the conversation itself is the first step of healing. See [Jewish funeral customs](/learn/jewish-funeral), [planning a Jewish funeral](/help/planning-a-jewish-funeral) and [when someone passes away](/help/someone-passed-away). After the funeral come [shiva](/learn/shiva) and [Kaddish](/kaddish), when the stories you told are told again, and again.
+Before every funeral, Rabbi Labkowski sits with the family to hear about their loved one. Bring him your draft, or just your memories, and he will help you shape them. See [Jewish funeral customs](/learn/jewish-funeral), [planning a Jewish funeral](/help/planning-a-jewish-funeral) and [when someone passes away](/help/someone-passed-away). After the funeral come [shiva](/learn/shiva) and [Kaddish](/kaddish), when the stories you told are told again, and again.
 
 ## Common questions
 
@@ -47,6 +47,3 @@ It can be, if that was who the person was. A loving, funny story that makes peop
 
 ### Can I mention their faults?
 Lightly and lovingly, if at all. Jewish custom is to focus on the good; a eulogy is not the place to settle accounts. "He was stubborn, and that stubbornness kept this family together" is a eulogy; a list of grievances is not.
-
-### Do eulogies happen at the graveside or in a chapel?
-Either, or both. Many funerals have the eulogies at the chapel or synagogue and a shorter service at the grave; some are entirely at the cemetery. The Rabbi will arrange the order with the family.

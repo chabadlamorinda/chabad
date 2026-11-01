@@ -2,7 +2,7 @@
 title: История Хануки: Маккавеи и чудо масла
 description: История Хануки простыми словами: греческие указы, восстание Маккавеев, чудо масла и что это значит сегодня.
 category: Shabbat & holidays
-related: chanukah-menorah, miracles-jewish-view, dreidel, chanukah-gelt, the-holy-temple
+related: chanukah-menorah, lessons-of-chanukah, miracles-jewish-view, dreidel, chanukah-gelt, the-holy-temple
 local: Празднуйте Хануку с нами: зажигания ханукии и мероприятия на chabadoflamorinda.com/holidays/chanukah или по телефону 925-384-7242.
 ---
 На Хануку празднуют два чуда, случившихся около 2200 лет назад: небольшой отряд евреев, Маккавеи, победил могучую сирийско-греческую армию, а единственный кувшин чистого масла горел в светильнике Храма восемь дней. Мы вспоминаем оба чуда, зажигая ханукию восемь вечеров.

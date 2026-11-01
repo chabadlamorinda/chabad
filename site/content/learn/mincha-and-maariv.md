@@ -21,8 +21,6 @@ The sages say Mincha deserves special care, because it comes in the middle of wo
 
 Maariv is prayed after nightfall. It opens with the [Shema](/learn/shema) and its blessings, which thank G-d for bringing on the evening and recall the Exodus, and continues with the Amidah and Aleinu. On weekdays it also takes about ten minutes. Many communities pray Mincha and Maariv one right after the other, around sunset, so a person only comes out once.
 
-Maariv is different from the other two prayers in one way: the Talmud records that it began as optional, and over time the Jewish people accepted it as a fixed part of every day. Maariv is a prayer we chose. There is something beautiful in ending the day with a prayer our ancestors took on out of love.
-
 ## How short can it be?
 
 Shorter than you think. If you are just beginning, or truly pressed for time:
@@ -36,8 +34,6 @@ A short prayer said with attention is worth more than a long one rushed through.
 ## Alone or with a minyan?
 
 Both Mincha and Maariv can be prayed alone, anywhere clean and quiet. With a [minyan](/learn/minyan) of ten, the prayer gains Kaddish, the repetition of the Amidah at Mincha, and the strength of a community praying together. Mourners saying [Kaddish](/learn/kaddish) need a minyan, which is one reason afternoon and evening minyanim matter so much: they are often the only time a working person can say Kaddish for a parent.
-
-If you cannot get to a minyan, pray on your own. If you can, come; a tenth person is sometimes the difference between a minyan and no minyan for someone else.
 
 ## How to begin
 

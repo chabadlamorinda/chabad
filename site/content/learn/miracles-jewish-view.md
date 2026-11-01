@@ -2,7 +2,7 @@
 title: Miracles: A Jewish View of the Wonders Big and Small
 description: What Judaism teaches about miracles: the open ones of Chanukah and Passover, the hidden ones of every day, and how to notice them in your own life.
 category: Jewish ideas
-related: chanukah-story, hashgacha-pratit, birkat-hagomel, bitachon, blessings-on-nature
+related: chanukah-story, torah-and-science, hashgacha-pratit, birkat-hagomel, bitachon, blessings-on-nature
 local: Something wonderful happened, or you need a miracle right now? Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 A sick child recovers. A near-accident ends with everyone safe. A chance meeting changes a life. Most of us have a story we can only call a miracle. Judaism has a lot to say about such moments, and even more about the quiet wonders we stop noticing.

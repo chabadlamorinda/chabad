@@ -1,11 +1,11 @@
 ---
 title: Eating Out While Keeping Kosher
-description: How to eat out and keep kosher: what makes a restaurant kosher, why vegetarian is not enough, meals at friends' homes, business dinners, travel and airline meals.
+description: How to eat out and keep kosher: what makes a restaurant kosher, why vegetarian is not enough, meals at friends' homes, business dinners and travel.
 category: Kosher
 related: kosher, kosher-certification, kosher-symbols, kosher-when-traveling, kosher-in-lamorinda
 local: For kosher restaurants, caterers and stores near Lafayette, Moraga and Orinda, see our Jewish Lamorinda guide, or call Rabbi Labkowski at 925-384-7242.
 ---
-Keeping kosher at home is one thing: you control the kitchen. Eating out is where the questions begin. A dinner invitation, a client lunch, a road trip, a vegan cafe with a tempting menu. The good news is that you can keep kosher and still have a full social life. Here is how.
+Keeping kosher at home is one thing: you control the kitchen. Eating out is where the questions begin. The good news is that you can keep kosher and still have a full social life. Here is how.
 
 ## What makes a restaurant kosher
 
@@ -19,11 +19,11 @@ This is the most common misunderstanding. A vegetarian or vegan restaurant has n
 
 ## Eating at friends' homes
 
-An invitation from friends who do not keep kosher is a kindness, and you can answer it kindly. Most people appreciate honesty more than they mind it: "We keep kosher, so we cannot eat food cooked in your kitchen, but we would love to come." Then make it easy: bring a kosher dish or dessert that everyone can share, eat fresh whole fruit, or drink from sealed bottles with a kosher symbol. Many friends ask what they can buy, and sealed kosher products on paper plates are a lovely answer. The friendship matters to Judaism too; see [Jewish friendship](/learn/jewish-friendship).
+An invitation from friends who do not keep kosher is a kindness, and you can answer it kindly. Most people appreciate honesty more than they mind it: "We keep kosher, so we cannot eat food cooked in your kitchen, but we would love to come." Then make it easy: bring a kosher dish or dessert that everyone can share, eat fresh whole fruit, or drink from sealed bottles with a kosher symbol. See [Jewish friendship](/learn/jewish-friendship).
 
 ## Business meals
 
-Suggest a kosher restaurant when you can; colleagues are usually happy to try somewhere new. If the meeting is elsewhere, eat before, and at the table order a sealed drink, a whole fruit, or nothing at all with a smile; nobody minds, and many respect it. If you entertain, a kosher caterer solves everything. Keeping kosher at work openly and without apology is itself a quiet [Kiddush Hashem](/learn/kiddush-hashem).
+Suggest a kosher restaurant when you can; colleagues are usually happy to try somewhere new. If the meeting is elsewhere, eat before, and at the table order a sealed drink, a whole fruit, or nothing at all with a smile; nobody minds, and many respect it. Keeping kosher at work openly and without apology is itself a quiet [Kiddush Hashem](/learn/kiddush-hashem).
 
 ## Travel and airline meals
 
@@ -43,6 +43,3 @@ Fish with fins and scales, such as salmon and tuna, are kosher, but sushi in an 
 
 ### Can I drink coffee at a cafe?
 Plain black coffee from a cafe is widely allowed, and many people also take it with milk in a paper cup; flavored syrups and pastries need a kosher symbol. Ask the Rabbi about the practice he recommends.
-
-### How do I find out whether a restaurant's certification is reliable?
-Look for the agency's name on the certificate and check that it is current. Reliable agencies have their restaurants listed online. When in doubt, call the Rabbi, who knows the local scene.

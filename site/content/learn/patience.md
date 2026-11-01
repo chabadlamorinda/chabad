@@ -9,7 +9,7 @@ Traffic on Highway 24, a toddler who will not put on shoes, a prayer that seems 
 
 ## Patience is G-dly
 
-When G-d revealed His Thirteen Attributes of Mercy to Moses, one of them was "erech apayim," slow to anger, literally "long of face": patient. The Sages taught that we should walk in G-d's ways: just as He is patient, we try to be patient. Every time we hold back an impatient word, we are acting in a G-dly way.
+When G-d revealed His Thirteen Attributes of Mercy to Moses, one of them was "erech apayim," slow to anger, literally "long of nose," the Hebrew idiom for someone whose anger takes a long time to flare: patient. The Sages taught that we should walk in G-d's ways: just as He is patient, we try to be patient. Every time we hold back an impatient word, we are acting in a G-dly way.
 
 ## Hillel's patience
 

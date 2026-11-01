@@ -2,7 +2,7 @@
 title: Matzah: What It Is and Why Shmurah Matzah Matters
 description: What matzah is, the mitzvah of eating it at the Passover Seder, what shmurah matzah means, how much to eat, and the blessing in Hebrew and English.
 category: Shabbat & holidays
-related: passover-seder, pesach-sheni, chametz, blessings, kosher
+related: passover-seder, selling-your-chametz, pesach-sheni, chametz, blessings, kosher
 local: Order handmade shmurah matzah for your Seder at chabadoflamorinda.com/forms/matzah or call 925-384-7242.
 ---
 Matzah is flat, unleavened bread made only of flour and water, baked quickly before it can rise. Eating matzah on the first night of Passover is a mitzvah from the Torah, and we eat it in place of bread for the whole holiday.

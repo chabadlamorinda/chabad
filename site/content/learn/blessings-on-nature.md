@@ -25,7 +25,7 @@ The blessing for lightning or thunder is said once per storm; if the clouds clea
 
 ## Moments with people
 
-- **Seeing a dear friend after 30 days**, with real joy: [Shehecheyanu](/learn/shehecheyanu). After more than a year: **mechayeh hametim**, "who revives the dead."
+- **Seeing a dear friend after 30 days**, with real joy, the Shulchan Aruch gives [Shehecheyanu](/learn/shehecheyanu), and after more than a year **mechayeh hametim**, "who revives the dead." In practice today, when we keep in touch by phone and already knew the friend was well, these are usually not said; ask the Rabbi.
 - **Seeing a great Torah scholar**: **shechalak mechochmato lirei'av**, "who has shared His wisdom with those who revere Him."
 
 ## Why bless the weather?
