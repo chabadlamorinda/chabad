@@ -2,7 +2,7 @@
 title: סיפור חנוכה: החשמונאים ונס פך השמן
 description: סיפור חנוכה בשפה פשוטה: גזירות היוונים, מרד החשמונאים, נס פך השמן ומה הוא אומר לנו היום.
 category: Shabbat & holidays
-related: chanukah-menorah, lessons-of-chanukah, miracles-jewish-view, dreidel, chanukah-gelt, the-holy-temple
+related: chanukah-menorah, the-maccabees, lessons-of-chanukah, miracles-jewish-view, dreidel, chanukah-gelt, the-holy-temple
 local: חגגו איתנו את חנוכה; ראו chabadoflamorinda.com/holidays/chanukah להדלקות חנוכייה ולאירועים, או התקשרו 925-384-7242.
 ---
 חנוכה מציין שני ניסים מלפני כ-2,200 שנה: קבוצה קטנה של יהודים, החשמונאים (המכבים), ניצחה את הצבא הסורי-יווני האדיר, ופך אחד של שמן טהור הדליק את מנורת בית המקדש שמונה ימים. אנחנו זוכרים את שניהם בהדלקת החנוכייה שמונה לילות.

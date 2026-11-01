@@ -2,7 +2,7 @@
 title: Shabbat Table Songs (Zemirot): Singing at the Shabbat Meal
 description: What zemirot are, when they are sung, classic Shabbat table songs like Yah Ribon and Kah Echsof, Chassidic niggunim, and how to start at home.
 category: Shabbat & holidays
-related: shalom-aleichem, niggun, eishet-chayil, shabbat-meals, melave-malka
+related: shalom-aleichem, chanukah-songs, niggun, eishet-chayil, shabbat-meals, melave-malka
 local: Hear the songs at the Labkowski family's Friday night table at Chabad of Lamorinda; you are always welcome for a Friday night meal. Call 925-384-7242.
 ---
 Zemirot are the songs sung around the table at the Shabbat meals. Between courses, families and guests sing together, in Hebrew and Aramaic, about the joy of Shabbat, G-d's kindness and the hope for redemption. Singing turns a dinner into a Shabbat meal.

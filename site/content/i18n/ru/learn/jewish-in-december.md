@@ -2,7 +2,7 @@
 title: Еврей в декабре: праздновать Хануку с гордостью
 description: Для еврейских семей в сезон Рождества: как сделать Хануку яркой, говорить с детьми и школой и делиться еврейским светом тепло и с уважением.
 category: Jewish ideas
-related: chanukah-menorah, halloween-jewish-view, chanukah-for-kids, jewish-pride
+related: chanukah-menorah, secular-new-year-jewish-view, halloween-jewish-view, chanukah-for-kids, jewish-pride
 local: Публичные зажигания ханукии, ханукальные мероприятия, ханукии и свечи для дома в Лафайетте, Мораге и Оринде: chabadoflamorinda.com/holidays/chanukah или 925-384-7242.
 ---
 В декабре магазины, радио и вся округа, кажется, празднуют чужой праздник. Многие еврейские семьи это чувствуют, особенно семьи с детьми. Вот еврейский взгляд на это время года и практические идеи, как сделать его своим.

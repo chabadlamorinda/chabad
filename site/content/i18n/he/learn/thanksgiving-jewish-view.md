@@ -2,7 +2,7 @@
 title: יום ההודיה: מבט יהודי על הכרת תודה
 description: איך משפחות יהודיות יכולות להתייחס ליום ההודיה, המנהג היהודי להודות לה׳ בכל יום, וטיפים מעשיים לארוחת חג כשרה.
 category: Jewish ideas
-related: hakarat-hatov, modeh-ani, birkat-hamazon, blessings
+related: hakarat-hatov, secular-new-year-jewish-view, modeh-ani, birkat-hamazon, blessings
 local: הפכו את סוף השבוע של יום ההודיה גם לשבת: הצטרפו אלינו לשבת בלאפייט, או התקשרו 925-384-7242 כדי להתארח בשולחן של הרב.
 ---
 יום ההודיה (Thanksgiving) הוא חג אמריקאי, לא יהודי, אבל הרעיון המרכזי שלו, הכרת תודה, נמצא בלב היהדות. למעשה, המילה "יהודי" באה מ"יהודה", שפירושו הודיה.

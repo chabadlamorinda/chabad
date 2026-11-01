@@ -2,7 +2,7 @@
 title: Уроки Хануки: чему менора учит в повседневной жизни
 description: Чему Ханука учит в повседневной жизни через учение Хабада: добавлять свет каждую ночь, немного света рассеивает тьму, делиться им у окна.
 category: Shabbat & holidays
-related: chanukah-story, chanukah-menorah, zot-chanukah, jewish-in-december, kiddush-hashem
+related: chanukah-story, the-maccabees, chanukah-menorah, zot-chanukah, jewish-in-december, kiddush-hashem
 local: Большое зажигание меноры Хабада Ламоринды собирает семьи из Лафайетта, Мораги и Оринды; о празднике этого года смотрите на странице Хануки или звоните 925-384-7242.
 ---
 Хануку легко любить: свечи, латкес, дрейдлы, дети. Но менора в окне - еще и учитель. Ребе возвращался к ее урокам год за годом. Вот некоторые из них.

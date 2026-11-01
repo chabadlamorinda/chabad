@@ -2,7 +2,7 @@
 title: Thanksgiving: A Jewish View of Gratitude
 description: How Jewish families can approach Thanksgiving, the Jewish practice of thanking G-d every day, and practical tips for a kosher Thanksgiving dinner.
 category: Jewish ideas
-related: hakarat-hatov, modeh-ani, birkat-hamazon, blessings
+related: hakarat-hatov, secular-new-year-jewish-view, modeh-ani, birkat-hamazon, blessings
 local: Make your Thanksgiving weekend a Shabbat too: join us in Lafayette for Shabbat, or call 925-384-7242 to be a guest at the Rabbi's table.
 ---
 Thanksgiving is an American holiday, not a Jewish one, yet its central idea, gratitude, is at the very heart of Judaism. In fact, the word "Jew" comes from Yehudah, which means "thanks."
