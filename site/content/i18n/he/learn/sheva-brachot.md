@@ -2,7 +2,7 @@
 title: שבע ברכות: הסבר על שבע ברכות החתונה
 description: מהן שבע ברכות, מה אומרות שבע הברכות, ואיך מתנהל שבוע סעודות שבע הברכות החגיגיות אחרי חתונה יהודית.
 category: Life cycle
-related: jewish-wedding, jewish-wedding-on-a-budget, first-year-of-marriage, birkat-hamazon, minyan, shalom-bayit
+related: jewish-wedding, attending-a-jewish-wedding, jewish-wedding-on-a-budget, first-year-of-marriage, birkat-hamazon, minyan, shalom-bayit
 local: עורכים שבע ברכות או מתכננים חתונה? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או ראו chabadoflamorinda.com/help/getting-married.
 ---
 שבע ברכות הן הברכות שאומרים מתחת לחופה בחתונה יהודית, ושוב בסעודות חגיגיות שעורכים לכבוד החתן והכלה בשבוע שאחרי החתונה.

@@ -2,7 +2,7 @@
 title: ישיבת שבעה: מדריך פשוט לאבלים ולמנחמים
 description: מה פירוש ישיבת שבעה, כמה זמן היא נמשכת, מנהגי האבלות בבית, ומה לומר ולהביא כשבאים לבית אבלים.
 category: Mourning & remembrance
-related: jewish-funeral, writing-a-eulogy, suicide-and-jewish-mourning, kaddish, yahrzeit, tehillim
+related: jewish-funeral, writing-a-condolence-note, writing-a-eulogy, suicide-and-jewish-mourning, kaddish, yahrzeit, tehillim
 local: אם משפחתכם יושבת שבעה, התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לארגן מניינים ולתמוך בכם לאורך השבוע.
 ---
 שבעה היא תקופת אבלות של שבעה ימים שמתחילה מיד אחרי הלוויה. האבלים נשארים בבית, מניחים בצד את שגרת היום, ומקבלים מנחמים שבאים לנחם אותם ולשתף זיכרונות מהנפטר.

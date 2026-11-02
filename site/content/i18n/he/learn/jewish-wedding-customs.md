@@ -2,7 +2,7 @@
 title: מנהגי החתונה היהודית ומשמעותם
 description: משמעות מנהגי החתונה היהודית: עלייה לתורה, צום, הכיסוי (באדעקן), חופה, הקפות, טבעת, כתובה, שבירת הכוס, ייחוד ועוד.
 category: Life cycle
-related: jewish-wedding, sheva-brachot, jewish-dating, mikvah
+related: jewish-wedding, attending-a-jewish-wedding, sheva-brachot, jewish-dating, mikvah
 local: מתכננים חתונה יהודית? הרב לבקובסקי ישמח לעזור. ראו chabadoflamorinda.com/help/getting-married או התקשרו 925-384-7242.
 ---
 למנהגי החתונה היהודית, מכיסוי פני הכלה ועד שבירת הכוס, יש משמעות עמוקה על אהבה, מחויבות ובניית בית יהודי. המדריך הזה מסביר את המסורות הנפוצות ביותר, בסדר שבו הן מתקיימות בדרך כלל. על הטקס העיקרי והלכותיו, ראו את המדריך הראשי שלנו על [החתונה היהודית](/learn/jewish-wedding).

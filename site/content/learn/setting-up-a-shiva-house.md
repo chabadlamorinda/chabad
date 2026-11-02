@@ -2,7 +2,7 @@
 title: Setting Up a Shiva House: A Practical Checklist for Families
 description: How to prepare a home for shiva: covered mirrors, low seats, a memorial candle, water at the door, prayer books, a minyan, meals and visiting hours.
 category: Mourning & remembrance
-related: shiva, comforting-mourners, jewish-funeral, kaddish
+related: shiva, writing-a-condolence-note, comforting-mourners, jewish-funeral, kaddish
 local: Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski any time, 925-384-7242, and he will help you set up the shiva house and arrange a minyan.
 ---
 When a family is about to sit shiva, there is a lot to arrange in very little time, often while still at the funeral. This checklist covers the practical side of getting a home ready. For what shiva means and how long it lasts, see our guide to [sitting shiva](/learn/shiva); for visitors, see [comforting mourners](/learn/comforting-mourners).

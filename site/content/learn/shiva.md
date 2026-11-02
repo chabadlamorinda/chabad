@@ -2,7 +2,7 @@
 title: Sitting Shiva: A Simple Guide for Mourners and Visitors
 description: What sitting shiva means, how long it lasts, mourning customs at home, and what to say and bring when you visit a shiva house.
 category: Mourning & remembrance
-related: jewish-funeral, writing-a-eulogy, suicide-and-jewish-mourning, kaddish, yahrzeit, tehillim
+related: jewish-funeral, writing-a-condolence-note, writing-a-eulogy, suicide-and-jewish-mourning, kaddish, yahrzeit, tehillim
 local: If your family is sitting shiva, call Rabbi Labkowski at 925-384-7242 and we will help arrange prayer services and support you through the week.
 ---
 Shiva is the seven-day period of mourning that begins right after a Jewish funeral. Mourners stay at home, set aside daily routines, and receive visitors who come to comfort them and share memories of the person who passed away.

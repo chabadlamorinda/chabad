@@ -2,7 +2,7 @@
 title: הכנת בית אבלים: רשימה מעשית למשפחות
 description: איך מכינים בית לשבעה: כיסוי מראות, מושבים נמוכים, נר נשמה, מים בפתח, סידורים, מניין, ארוחות ושעות ביקור.
 category: Mourning & remembrance
-related: shiva, comforting-mourners, jewish-funeral, kaddish
+related: shiva, writing-a-condolence-note, comforting-mourners, jewish-funeral, kaddish
 local: משפחות בלאפייט, מוראגה, אורינדה ובאיסט ביי: התקשרו לרב ישראל לבקובסקי בכל שעה, 925-384-7242, והוא יעזור לכם להכין את בית האבלים ולארגן מניין.
 ---
 כשמשפחה עומדת לשבת שבעה, יש הרבה מה לארגן בזמן קצר מאוד, לעתים קרובות עוד בזמן הלוויה. הרשימה הזו עוסקת בצד המעשי של הכנת הבית. על משמעות השבעה וכמה זמן היא נמשכת, ראו את המדריך שלנו ל[ישיבת שבעה](/learn/shiva); למנחמים, ראו [ניחום אבלים](/learn/comforting-mourners).

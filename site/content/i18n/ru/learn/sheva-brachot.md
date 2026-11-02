@@ -2,7 +2,7 @@
 title: Шева брахот: семь свадебных благословений
 description: Что такое Шева брахот, о чем говорят семь благословений и как проходит неделя праздничных трапез Шева брахот после еврейской свадьбы.
 category: Life cycle
-related: jewish-wedding, jewish-wedding-on-a-budget, first-year-of-marriage, birkat-hamazon, minyan, shalom-bayit
+related: jewish-wedding, attending-a-jewish-wedding, jewish-wedding-on-a-budget, first-year-of-marriage, birkat-hamazon, minyan, shalom-bayit
 local: Устраиваете Шева брахот или планируете свадьбу? Звоните раввину Лабковскому: 925-384-7242, или зайдите на chabadoflamorinda.com/help/getting-married.
 ---
 Шева брахот означает «семь благословений». Их произносят под хупой на еврейской свадьбе и снова на праздничных трапезах в честь жениха и невесты в течение недели после свадьбы.

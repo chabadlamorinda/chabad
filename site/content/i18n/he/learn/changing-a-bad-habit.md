@@ -2,7 +2,7 @@
 title: לשנות הרגל רע: חוכמה יהודית לשינוי אמיתי
 description: איך לשבור הרגל רע ולבנות הרגל טוב, עם צעדים מעשיים מהתורה, מהרמב״ם ומהתניא: צעדים קטנים, שגרה חדשה והתחלה חדשה בכל יום.
 category: Jewish ideas
-related: teshuvah, free-will, anger-jewish-view, patience, making-every-day-count
+related: teshuvah, forgiving-yourself, free-will, anger-jewish-view, patience, making-every-day-count
 local: רוצים לדבר על זה? הרב ישראל והרבנית ציפורה לבקובסקי כאן בשביל משפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 יותר מדי זמן בטלפון, כעס מהיר, רכילות, ג׳אנק פוד, דחיינות. כמעט לכל אחד יש הרגל שהיה שמח לשנות. ביהדות יש שפע של חוכמה מעשית על שינוי, כי היא מאמינה שכל אדם יכול להשתנות.

@@ -2,7 +2,7 @@
 title: Bar Mitzvah: What It Means and How to Prepare
 description: What a bar mitzvah is, why it happens at 13, how to prepare, and what takes place at the ceremony and celebration.
 category: Life cycle
-related: tefillin, bar-bat-mitzvah-timeline, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
+related: tefillin, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
 local: Chabad of Lamorinda offers warm, personalized bar mitzvah preparation for every family. Call Rabbi Labkowski at 925-384-7242 or visit our bar mitzvah program page to get started.
 ---
 A bar mitzvah is the moment a Jewish boy turns 13 and becomes responsible for keeping the mitzvot (commandments) of the Torah. It happens automatically on his 13th Hebrew birthday; the ceremony and party celebrate this milestone, but he becomes a bar mitzvah whether or not there is an event.
