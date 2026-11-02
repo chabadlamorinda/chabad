@@ -2,7 +2,7 @@
 title: Еврейские бабушки и дедушки: передавать традицию с любовью
 description: Роль еврейских бабушек и дедушек: почитать их, делиться историями и традициями, благословлять и помогать внукам расти гордыми евреями.
 category: Jewish home
-related: honoring-parents, grandparenting-from-afar, retirement-jewish-view, jewish-parenting, ethical-will
+related: honoring-parents, honoring-the-elderly, grandparenting-from-afar, retirement-jewish-view, jewish-parenting, ethical-will
 local: Приводите внуков на праздник или семейное мероприятие в Хабад Ламоринды. Смотрите chabadoflamorinda.com/events или звоните 925-384-7242.
 ---
 Еврейские бабушки и дедушки занимают особое место в еврейской жизни как живая связь между поколениями: они передают истории, ценности и традиции с теплом, которое могут дать только они. Еврейский закон также просит внуков почитать бабушек и дедушек, во многом так же, как они почитают родителей.

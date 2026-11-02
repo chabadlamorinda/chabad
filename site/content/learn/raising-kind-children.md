@@ -2,7 +2,7 @@
 title: Raising Kind Children the Jewish Way
 description: Raising kind children the Jewish way: chesed at home, a pushka, welcoming guests, visiting the sick and grandparents, kind words and your example.
 category: Jewish home
-related: chesed, children-money-and-tzedakah, jewish-parenting, hachnasat-orchim, bikur-cholim
+related: chesed, returning-lost-items, children-money-and-tzedakah, jewish-parenting, hachnasat-orchim, bikur-cholim
 local: Families in Lafayette, Moraga and Orinda: Rabbi Yisroel and Rebbetzin Tzipora Labkowski are glad to share ideas for your family. Call 925-384-7242.
 ---
 Every parent wants a kind child. Judaism wants it too, and it does not leave it to chance. The Mishnah teaches that the world stands on three things: Torah, prayer and acts of kindness, and a Jewish home is a workshop where children practice all three. Kindness, in Jewish eyes, is not a trait some children are born with; it is a mitzvah, something we do, and it grows with practice.

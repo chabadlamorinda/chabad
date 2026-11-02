@@ -2,7 +2,7 @@
 title: Moving to Lafayette, Moraga or Orinda: A Jewish Newcomer's Guide to Lamorinda
 description: Jewish and new to Lafayette, Moraga or Orinda? Find Shabbat, preschool, Hebrew school, kosher food and friends with Chabad of Lamorinda.
 category: Lamorinda
-related: mezuzah, chanukat-habayit, kosher-kitchen, shabbat-for-beginners
+related: mezuzah, welcoming-the-stranger, chanukat-habayit, kosher-kitchen, shabbat-for-beginners
 local: Say hello at chabadoflamorinda.com/welcome or call Rabbi Yisroel and Rebbetzin Tzipora Labkowski at 925-384-7242.
 ---
 Welcome to Lamorinda! Moving to Lafayette, Moraga or Orinda means a new home, new neighbors and new routines. It also means a warm Jewish community waiting to meet you. Chabad of Lamorinda, at 3477 Golden Gate Way in Lafayette, is a home for every Jew in the three towns and nearby Pleasant Hill and Martinez. There is no membership and no dues: everyone belongs.

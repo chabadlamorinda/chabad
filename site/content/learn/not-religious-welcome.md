@@ -2,7 +2,7 @@
 title: Not Religious? You Belong at Chabad of Lamorinda
 description: Not religious? Jews of every background come to Chabad of Lamorinda in Lafayette, Moraga and Orinda. No membership, no judgment, come as you are.
 category: Lamorinda
-related: first-time-at-synagogue, why-be-jewish, starting-jewish-observance, shabbat-for-beginners, who-is-a-jew, why-mitzvot
+related: first-time-at-synagogue, welcoming-the-stranger, why-be-jewish, starting-jewish-observance, shabbat-for-beginners, who-is-a-jew, why-mitzvot
 local: Take a first step: RSVP for Shabbat dinner at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Maybe you have not been to a synagogue since your bar or bat mitzvah. Maybe you never had one. Maybe you are not sure what you believe, or you only know a few Hebrew words. You belong at Chabad of Lamorinda.

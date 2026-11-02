@@ -2,7 +2,7 @@
 title: Brit Milah: A Simple Guide to the Jewish Circumcision Ceremony
 description: What a bris is, why it is done on the eighth day, who takes part, and what to expect at a Jewish circumcision ceremony.
 category: Life cycle
-related: baby-naming, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
+related: baby-naming, preparing-for-a-bris, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
 local: Expecting a baby boy? Call Rabbi Labkowski at 925-384-7242 and we will help you plan a beautiful bris and the celebration that follows.
 ---
 A brit milah (often called a bris) is the Jewish circumcision ceremony, performed on a baby boy on the eighth day of his life. It marks his entry into the covenant G-d made with Abraham, and it is one of the oldest and most universally kept traditions in Jewish life.

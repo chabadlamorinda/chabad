@@ -2,7 +2,7 @@
 title: שמות יהודיים לתינוקות: איך בוחרים שם עברי לתינוק
 description: איך הורים יהודים בוחרים שם לתינוק, קריאת שם על שם קרובים, מנהגי אשכנז וספרד, ושמות עבריים נפוצים ופירושם.
 category: Life cycle
-related: baby-naming, simchat-bat, jewish-adoption, hebrew-names, brit-milah, jewish-pregnancy
+related: baby-naming, preparing-for-a-bris, simchat-bat, jewish-adoption, hebrew-names, brit-milah, jewish-pregnancy
 local: מצפים לתינוק? התקשרו לרב לבקובסקי בטלפון 925-384-7242 כדי לדבר על שם עברי, או ראו ב-chabadoflamorinda.com/help/new-baby איך נוכל לעזור.
 ---
 הורים יהודים בוחרים בדרך כלל שם עברי שמכבד קרוב משפחה אהוב או דמות גדולה מההיסטוריה היהודית, ושיש בו משמעות שהם מקווים שהילד יגדל אליה. המסורת היהודית מלמדת שהורים זוכים לניצוץ של נבואה כשהם קוראים שם לילד, ולכן השם אינו רק כינוי: הוא קשור לנשמת הילד.

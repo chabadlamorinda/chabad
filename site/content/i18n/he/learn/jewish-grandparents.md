@@ -2,7 +2,7 @@
 title: סבים וסבתות יהודים: מעבירים את המסורת באהבה
 description: תפקידם של סבים וסבתות יהודים: כיבודם, שיתוף סיפורים ומסורות, ברכות, ועזרה לנכדים לגדול כיהודים גאים.
 category: Jewish home
-related: honoring-parents, grandparenting-from-afar, retirement-jewish-view, jewish-parenting, ethical-will
+related: honoring-parents, honoring-the-elderly, grandparenting-from-afar, retirement-jewish-view, jewish-parenting, ethical-will
 local: הביאו את הנכדים לחג או לאירוע משפחתי בחב״ד למורינדה. ראו chabadoflamorinda.com/events או התקשרו 925-384-7242.
 ---
 לסבים ולסבתות יש מקום מיוחד בחיים היהודיים כחוליה החיה שבין הדורות, שמעבירה סיפורים, ערכים ומסורות בחום שרק הם יכולים לתת. ההלכה גם מבקשת מהנכדים לכבד את סביהם וסבתותיהם, בדומה לכיבוד הורים.

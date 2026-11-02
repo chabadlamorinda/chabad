@@ -2,7 +2,7 @@
 title: Jewish Grandparents: Passing On Tradition with Love
 description: The role of Jewish grandparents: honoring them, sharing stories and traditions, giving blessings, and helping grandchildren grow up proudly Jewish.
 category: Jewish home
-related: honoring-parents, grandparenting-from-afar, retirement-jewish-view, jewish-parenting, ethical-will
+related: honoring-parents, honoring-the-elderly, grandparenting-from-afar, retirement-jewish-view, jewish-parenting, ethical-will
 local: Bring your grandchildren to a holiday or family event at Chabad of Lamorinda. See chabadoflamorinda.com/events or call 925-384-7242.
 ---
 Jewish grandparents hold a special place in Jewish life as the living link between generations, passing on stories, values and traditions with a warmth only they can give. Jewish law also asks grandchildren to honor their grandparents, much as they honor their parents.

@@ -2,7 +2,7 @@
 title: גיל הזהב בלאפייט, מוראגה ואורינדה: שיעורים, שבת ותמיכה
 description: לבני הגיל השלישי ולמשפחותיהם בלאפייט, מוראגה ואורינדה: שיעור תניא בצהריים, שבת, חגים, קדיש, יארצייט ועזרה בעת מחלה.
 category: Lamorinda
-related: caring-for-aging-parents, grandparenting-from-afar, retirement-jewish-view, jewish-grandparents, yahrzeit, kaddish
+related: caring-for-aging-parents, honoring-the-elderly, grandparenting-from-afar, retirement-jewish-view, jewish-grandparents, yahrzeit, kaddish
 local: התקשרו לרב ישראל לבקובסקי בטלפון 925-384-7242 לביקור, לשיעור או למקום בשבת, או ראו chabadoflamorinda.com/help/someone-is-sick.
 ---
 בין שאתם גרים בלאפייט, במוראגה או באורינדה כבר חמישים שנה, ובין שעברתם לכאן זה עתה כדי להיות קרובים לנכדים, חב״ד למורינדה הוא הבית היהודי שלכם. אנחנו נמצאים ב-3477 Golden Gate Way בלאפייט, קרוב למרכז העיר ולתחנת ה-BART של לאפייט, ומשרתים גם את פלזנט היל ומרטינז הסמוכות. אין דמי חבר ואין תשלומים. אתם פשוט מוזמנים.

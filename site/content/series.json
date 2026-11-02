@@ -10,7 +10,7 @@
   { "id": "marriage", "title": "Love and marriage, step by step", "intro": "From dating and the engagement to the wedding and a happy home.",
     "guides": ["jewish-dating", "jewish-engagement", "choosing-a-wedding-date", "kallah-classes", "chosson-classes", "ketubah", "jewish-wedding", "jewish-wedding-customs", "attending-a-jewish-wedding", "sheva-brachot", "first-year-of-marriage", "shalom-bayit"] },
   { "id": "baby", "title": "A new baby, step by step", "intro": "From pregnancy and choosing a name to the first haircut.",
-    "guides": ["jewish-pregnancy", "jewish-baby-names", "brit-milah", "simchat-bat", "baby-naming", "pidyon-haben", "upsherin"] },
+    "guides": ["jewish-pregnancy", "jewish-baby-names", "preparing-for-a-bris", "brit-milah", "simchat-bat", "baby-naming", "pidyon-haben", "upsherin"] },
   { "id": "bar-bat-mitzvah", "title": "Bar and Bat Mitzvah, step by step", "intro": "What it means, how to prepare, and how to make it meaningful.",
     "guides": ["bar-mitzvah", "bat-mitzvah", "bar-bat-mitzvah-timeline", "tefillin", "bar-mitzvah-speech", "attending-a-bar-bat-mitzvah", "bat-mitzvah-projects"] },
   { "id": "chanukah", "title": "Chanukah, step by step", "intro": "The story, the menorah, the songs, the food and the last day.",
@@ -22,5 +22,5 @@
   { "id": "big-questions", "title": "Life's big questions", "intro": "G-d, the soul, free will, suffering and what it all means.",
     "guides": ["why-be-jewish", "belief-in-g-d", "torah-and-science", "why-pray", "the-soul", "purpose-of-life", "free-will", "why-bad-things-happen", "hope-in-hard-times", "hashgacha-pratit", "miracles-jewish-view", "afterlife", "moshiach"] },
   { "id": "character", "title": "Growing as a person", "intro": "Jewish wisdom for becoming kinder, calmer and more honest, one trait at a time.",
-    "guides": ["humility", "judging-others-favorably", "anger-jewish-view", "patience", "jealousy-and-envy", "being-content", "hakarat-hatov", "simcha", "honesty-and-truth", "keeping-your-word", "lashon-hara", "giving-criticism-kindly", "forgiveness-and-making-peace", "forgiving-yourself", "changing-a-bad-habit"] }
+    "guides": ["humility", "judging-others-favorably", "anger-jewish-view", "patience", "jealousy-and-envy", "being-content", "hakarat-hatov", "simcha", "honesty-and-truth", "returning-lost-items", "keeping-your-word", "lashon-hara", "giving-criticism-kindly", "forgiveness-and-making-peace", "forgiving-yourself", "changing-a-bad-habit"] }
 ]
