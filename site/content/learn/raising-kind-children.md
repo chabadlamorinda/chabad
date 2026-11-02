@@ -9,7 +9,7 @@ Every parent wants a kind child. Judaism wants it too, and it does not leave it 
 
 ## Kindness is taught by hands, not only by words
 
-Children copy what they see. When a child watches a parent bring soup to a neighbor, call a lonely relative, or hold the door for a stranger, a lesson is learned that no speech could give. The Torah describes Abraham running to welcome three tired travelers, and the sages note that his son Isaac was right there, learning. Before you plan a program for raising a kind child, look at your own week: what acts of [chesed](/learn/chesed) does your child see you do?
+Children copy what they see. When a child watches a parent bring soup to a neighbor, call a lonely relative, or hold the door for a stranger, a lesson is learned that no speech could give. The Torah describes Abraham running to welcome three tired travelers, and the sages note that he had his son help prepare the meal, to train him in doing kindness. Before you plan a program for raising a kind child, look at your own week: what acts of [chesed](/learn/chesed) does your child see you do?
 
 ## A pushka in the kitchen
 

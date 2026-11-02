@@ -43,7 +43,7 @@ Shavuot is also the holiday of [dairy foods](/learn/shavuot-dairy-foods), and it
 No. Staying up all night is a beloved custom, not a law. Learn as long as you comfortably can. Those who do stay up say the morning prayers and then sleep during the day.
 
 ### I have no Jewish background. Can I still come?
-Yes. Shavuot night classes are for everyone, and questions are the best part. Everything is in English, with the Hebrew explained. Come as you are.
+Yes. Shavuot night classes are for everyone, and questions are the best part. Classes are usually in English, with the Hebrew explained. Come as you are.
 
 ### Can my children come to the Ten Commandments reading?
 Yes, please bring them, even the smallest. The reading is short, and children are the reason we read it. Many synagogues have something for children afterwards; ask the Rabbi what is planned this year.

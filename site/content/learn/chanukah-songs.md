@@ -9,7 +9,7 @@ The candles are lit, the room is dim, and for a moment everyone is quiet. Then s
 
 ## Haneirot Halalu: "These lights"
 
-Right after the blessings, as the candles are lit, we say or sing *Haneirot Halalu*, "These lights." The words are very old; they are quoted in the Talmud. In Chabad custom it is said every night, beginning after the first candle is lit, while the rest are kindled.
+Right after the blessings, as the candles are lit, we say or sing *Haneirot Halalu*, "These lights." The words are very old; they appear in the tractate Soferim, from the age of the Talmud. In Chabad custom it is said every night, beginning after the first candle is lit, while the rest are kindled.
 
 The paragraph says in plain words why we are here: "We light these lights for the miracles, the wonders, the salvations and the battles You performed for our ancestors in those days, at this time, through Your holy priests." Then comes the heart of it: "These lights are holy, and we are not permitted to make use of them, only to look at them, in order to thank and praise Your great Name."
 

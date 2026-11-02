@@ -35,7 +35,7 @@ Usually the Rabbi, who weaves the family's memories into Jewish teaching, and th
 
 ## The Rabbi can help
 
-Before every funeral, Rabbi Labkowski sits with the family to hear about their loved one. Bring him your draft, or just your memories, and he will help you shape them. See [Jewish funeral customs](/learn/jewish-funeral), [planning a Jewish funeral](/help/planning-a-jewish-funeral) and [when someone passes away](/help/someone-passed-away). After the funeral come [shiva](/learn/shiva) and [Kaddish](/kaddish), when the stories you told are told again, and again.
+Before a funeral, Rabbi Labkowski is glad to sit with the family and hear about their loved one. Bring him your draft, or just your memories, and he will help you shape them. See [Jewish funeral customs](/learn/jewish-funeral), [planning a Jewish funeral](/help/planning-a-jewish-funeral) and [when someone passes away](/help/someone-passed-away). After the funeral come [shiva](/learn/shiva) and [Kaddish](/kaddish), when the stories you told are told again, and again.
 
 ## Common questions
 

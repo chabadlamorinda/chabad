@@ -11,7 +11,7 @@ There is no loss quite like this one. The person who shared your bed, your table
 
 In Jewish law a husband or wife is one of the seven relatives for whom we formally mourn. From the passing until the funeral you are an *onen*, free of other obligations so you can arrange the burial ([aninut](/learn/aninut)). The funeral is held as soon as possible, and at it you tear a garment ([kriah](/learn/kriah)). Then come the seven days of [shiva](/learn/shiva) at home, when friends come to you, and the thirty days of [sheloshim](/learn/sheloshim).
 
-You do not have to know any of this in advance. Call the Rabbi first, before the funeral home if you can, and he will take care of the arrangements and explain each step. See [when someone has passed away](/help/someone-passed-away) and, for the whole path at a glance, [the Jewish mourning journey](/learn/mourning-journey).
+You do not have to know any of this in advance. Call the Rabbi first, before the funeral home if you can, and he will help with the arrangements and explain each step. See [when someone has passed away](/help/someone-passed-away) and, for the whole path at a glance, [the Jewish mourning journey](/learn/mourning-journey).
 
 ## After the thirty days
 
@@ -19,11 +19,11 @@ For a parent, formal mourning lasts a year; for a spouse, it ends after sheloshi
 
 ## The loneliness
 
-The hardest part often begins when the casseroles stop. Judaism's answer is not a slogan; it is people. Come to Shabbat dinner, even once, even if you cry. Accept invitations before you feel ready. Let Rebbetzin Labkowski pair you with another family for the holidays. A community that does not leave a widow or widower alone is doing one of the greatest mitzvot there is. If grief turns into a darkness that does not lift, please speak with a doctor or a grief counselor as well as with the Rabbi; asking for help is strength. See [feeling lonely](/learn/feeling-lonely) and [Shabbat when you live alone](/learn/shabbat-alone).
+The hardest part often begins when the casseroles stop. Judaism's answer is not a slogan; it is people. Come to Shabbat dinner, even once, even if you cry. Accept invitations before you feel ready. Tell Rebbetzin Labkowski you would rather not be alone for the holidays; she will gladly help you find a table. A community that does not leave a widow or widower alone is doing one of the greatest mitzvot there is. If grief turns into a darkness that does not lift, please speak with a doctor or a grief counselor as well as with the Rabbi; asking for help is strength. See [feeling lonely](/learn/feeling-lonely) and [Shabbat when you live alone](/learn/shabbat-alone).
 
 ## Practical matters
 
-Grief makes paperwork cruel. Judaism counts practical help as a mitzvah too, so let people help: a friend beside you for the bank and insurance calls, a child to sort the mail, a neighbor to drive. Your spouse's Hebrew name and the Hebrew date of passing matter for the yahrzeit; the Rabbi will work it out for you, and you can save it in your account on this website for a yearly reminder.
+Grief makes paperwork cruel. Judaism counts practical help as a mitzvah too, so let people help: a friend beside you for the bank and insurance calls, a child to sort the mail, a neighbor to drive. Your spouse's Hebrew name and the Hebrew date of passing matter for the yahrzeit; the Rabbi can work it out for you, and you can save it in your account on this website for a yearly reminder.
 
 ## The holidays
 

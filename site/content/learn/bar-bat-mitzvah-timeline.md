@@ -3,9 +3,9 @@ title: Preparing for a Bar or Bat Mitzvah: A Step-by-Step Timeline
 description: A month-by-month plan for a Bar or Bat Mitzvah: the Hebrew date and Torah portion, learning, tefillin, a mitzvah project, the speech and the celebration.
 category: Life cycle
 related: bar-mitzvah, bat-mitzvah, tefillin, bar-mitzvah-speech, bat-mitzvah-projects
-local: Chabad of Lamorinda prepares boys and girls from Lafayette, Moraga and Orinda for their Bar or Bat Mitzvah, one on one. Call Rabbi Labkowski at 925-384-7242 to begin.
+local: Chabad of Lamorinda prepares boys and girls from Lafayette, Moraga and Orinda for their Bar or Bat Mitzvah. Call Rabbi Labkowski at 925-384-7242 to begin.
 ---
-A Bar or Bat Mitzvah happens by itself: on the 13th Hebrew birthday for a boy and the 12th for a girl, a Jewish child becomes responsible for the mitzvot, with or without a ceremony. The preparation is what turns that date into a milestone the child will carry for life. Here is how families usually pace it. There is no single right way, and the Rabbi will shape a plan around your child.
+A Bar or Bat Mitzvah happens by itself: on the 13th Hebrew birthday for a boy and the 12th for a girl, a Jewish child becomes responsible for the mitzvot, with or without a ceremony. The preparation is what turns that date into a milestone the child will carry for life. Here is how families usually pace it. There is no single right way, and the Rabbi can help shape a plan around your child.
 
 ## About a year before: the date and the portion
 
@@ -38,7 +38,7 @@ A Bar or Bat Mitzvah speech is a few minutes of Torah: a thought from the week's
 
 ## The day and the celebration
 
-At the service, the boy is called to the Torah for his first aliyah; candy is thrown, Mazal Tov is sung, and the family says Shehecheyanu. A girl may share her Torah thought at a Shabbat meal, a women's gathering or a celebration. Then comes the *seudat mitzvah*, the festive meal, which can be a Kiddush after services, a Shabbat dinner at home, or a party. See [Bar Mitzvah](/learn/bar-mitzvah) and [Bar and Bat Mitzvah in Lamorinda](/learn/bar-bat-mitzvah-in-lamorinda).
+At the service, the boy is called to the Torah for his first aliyah; candy is thrown, Mazal Tov is sung, and his father says the short blessing *Baruch Shepetarani*; ask the Rabbi about the wording. A girl may share her Torah thought at a Shabbat meal, a women's gathering or a celebration. Then comes the *seudat mitzvah*, the festive meal, which can be a Kiddush after services, a Shabbat dinner at home, or a party. See [Bar Mitzvah](/learn/bar-mitzvah) and [Bar and Bat Mitzvah in Lamorinda](/learn/bar-bat-mitzvah-in-lamorinda).
 
 ## After the day
 
@@ -47,7 +47,7 @@ The Bar or Bat Mitzvah is a beginning, not a graduation. Tefillin every weekday,
 ## Common questions
 
 ### We are starting late. Is six months enough?
-Often, yes. The Rabbi will build a plan around the time you have, focusing on what matters most: the blessings, the meaning and a part of the reading or a Torah thought. Even a few weeks are enough for a meaningful Bar or Bat Mitzvah.
+Often, yes. The Rabbi can build a plan around the time you have, focusing on what matters most: the blessings, the meaning and a part of the reading or a Torah thought. Even a few weeks are enough for a meaningful Bar or Bat Mitzvah.
 
 ### Does the ceremony have to be on Shabbat?
 No. The Torah is also read on Monday and Thursday mornings and on Rosh Chodesh, and many families choose a weekday or a celebration in Israel. Talk with the Rabbi about what fits your family.

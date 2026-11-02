@@ -35,7 +35,7 @@ Fasting is a mitzvah for healthy adults. It is also a mitzvah *not* to fast when
 - **Morning prayers and the Torah reading**, with the Viduy confession, said together, quietly tapping the heart.
 - **Yizkor**, late in the morning service, a memorial prayer for parents and loved ones who have passed. Those whose parents are living traditionally step out. See [Yizkor](/learn/yizkor).
 - **Mincha**, the afternoon service, with the Book of Jonah: a story about second chances.
-- **Neilah**, "the closing of the gates," as the sun sets: the most intense hour of the year, ending with the Shema, "G-d is the L-rd" seven times, and one long shofar blast. Then everyone breaks the fast together.
+- **Neilah**, "the closing of the gates," as the sun sets: the most intense hour of the year, ending with the Shema, then "The L-rd is G-d" called out seven times, and one long shofar blast. Then everyone breaks the fast together.
 
 ## What to wear
 
