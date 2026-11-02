@@ -147,7 +147,7 @@ function footer(c, t) {
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Jewish life'))}</summary><div class="ftr-links">
-      ${a('/jewish-lamorinda', 'Everything Jewish in Lamorinda')}${a('/learn', 'Learn about Judaism')}${a('/parsha', "This week's Torah portion")}${a('/this-week', 'This week in Jewish Lamorinda')}${a('/shabbat-times', 'Shabbat times')}${a('/jewish-holidays-' + new Date().getFullYear(), 'Jewish holidays this year')}${a('/tools/zmanim', 'Daily prayer times (zmanim)')}${a('/tools/hebrew-date', 'Hebrew date converter')}${a('/tools/hebrew-birthday', 'Hebrew birthday calculator')}${a('/tools/yahrzeit', 'Yahrzeit calculator')}${a('/tools/bar-bat-mitzvah', 'Bar & Bat Mitzvah date')}${a('/faq', 'Questions & answers')}
+      ${a('/jewish-lamorinda', 'Everything Jewish in Lamorinda')}${a('/learn', 'Learn about Judaism')}${a('/stories', 'Jewish stories and jokes')}${a('/parsha', "This week's Torah portion")}${a('/this-week', 'This week in Jewish Lamorinda')}${a('/shabbat-times', 'Shabbat times')}${a('/jewish-holidays-' + new Date().getFullYear(), 'Jewish holidays this year')}${a('/tools/zmanim', 'Daily prayer times (zmanim)')}${a('/tools/hebrew-date', 'Hebrew date converter')}${a('/tools/hebrew-birthday', 'Hebrew birthday calculator')}${a('/tools/yahrzeit', 'Yahrzeit calculator')}${a('/tools/bar-bat-mitzvah', 'Bar & Bat Mitzvah date')}${a('/faq', 'Questions & answers')}
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Our area'))}</summary><div class="ftr-links">

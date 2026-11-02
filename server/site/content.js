@@ -55,6 +55,14 @@ function load(dir = DIR, opts = {}) {
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
   const campaigns = optJson(dir, 'campaigns.json', []);
   const jokes = optJson(dir, 'jokes.json', []); // the weekly email's joke of the week
+  // Jewish stories and jokes (/stories, server/site/stories.js): the Rabbi's collection and stories from reputable sources.
+  const stories = optJson(dir, 'stories.json', []);
+  { const seen = new Set(), SEC = ['jokes', 'rebbe', 'chassidic', 'talmud-midrash', 'inspirational', 'courage', 'parable'];
+    for (const s of stories) {
+      if (!/^[a-z0-9-]+$/.test(s.slug || '') || seen.has(s.slug)) throw new Error(`stories.json: missing or repeated slug "${s.slug}"`);
+      if (!SEC.includes(s.section)) throw new Error(`stories.json: "${s.slug}" has an unknown section "${s.section}"`);
+      seen.add(s.slug);
+    } }
   // Step-by-step series of guides ("Part 3 of 10", Previous / Next): each lists its guides in reading order.
   const series = optJson(dir, 'series.json', []);
   // "A word from the Rabbi" for the weekly email: Claude's draft for each Shabbat (week = the Shabbat's date), in three
@@ -134,7 +142,7 @@ function load(dir = DIR, opts = {}) {
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
   for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, jokes, series, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, jokes, stories, series, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

@@ -81,7 +81,7 @@ function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
   });
   r.get('/sitemap.xml', async (req, res) => {
     const C = c(), today = new Date().toISOString().slice(0, 10), extra = more ? await more().catch(() => []) : [];
-    const paths = [...STATIC, ...C.pages.map((p) => '/' + p.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.towns.map((t) => '/jewish-' + t.slug), ...C.learn.map((a) => '/learn/' + a.slug), ...(C.series || []).map((s) => '/learn/series/' + s.id), ...(C.help || []).map((h) => '/help/' + h.slug), ...(C.forms || []).map((f) => '/forms/' + f.id), ...require('./parsha.js').all().map((p) => '/parsha/' + require('./parsha.js').slugOf(p.name)), ...upcoming().map((e) => '/events/' + e.slug), ...extra];
+    const paths = [...STATIC, ...C.pages.map((p) => '/' + p.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.towns.map((t) => '/jewish-' + t.slug), ...C.learn.map((a) => '/learn/' + a.slug), ...(C.series || []).map((s) => '/learn/series/' + s.id), '/stories', ...(C.stories || []).map((s) => '/stories/' + s.slug), ...(C.help || []).map((h) => '/help/' + h.slug), ...(C.forms || []).map((f) => '/forms/' + f.id), ...require('./parsha.js').all().map((p) => '/parsha/' + require('./parsha.js').slugOf(p.name)), ...upcoming().map((e) => '/events/' + e.slug), ...extra];
     // Each page's photo (every guide has one), so pictures can show in Google Images.
     setLearn(C.learn);
     const img = (p) => { const ph = photoForPath(p); return ph ? `<image:image><image:loc>${xml(base + ph)}</image:loc></image:image>` : ''; };

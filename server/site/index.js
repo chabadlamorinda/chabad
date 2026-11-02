@@ -136,6 +136,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountLocal(r, { content, base, wrap, ctxOf, ...pages });
   const board = mountBoard(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, log, notifyTo: env.ADMIN_EMAIL || '', ctxOf, tOf });
   mountGive(r, { render: pages.render, wrap, ctxOf });
+  require('./stories.js').mountStories(r, { render: pages.render, wrap, ctxOf });
   mountKiddushPage(r, { render: pages.render, wrap, ctxOf });
   mountFun(r, { render: pages.render, wrap, ctxOf, base });
   mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base, store });
