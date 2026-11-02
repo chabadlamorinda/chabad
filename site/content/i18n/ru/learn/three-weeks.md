@@ -2,7 +2,7 @@
 title: Три недели и Девять дней: еврейские обычаи траура
 description: Что такое Три недели и Девять дней, почему евреи скорбят между 17 тамуза и Девятым ава, какие обычаи соблюдают и когда.
 category: Shabbat & holidays
-related: fast-days, tu-bav, jewish-calendar, moshiach, tzedakah
+related: fast-days, tisha-bav-for-beginners, tu-bav, jewish-calendar, moshiach, tzedakah
 local: Узнайте больше о Девятом ава и Трех неделях на chabadoflamorinda.com/holidays/tisha-bav или звоните с вопросами по телефону 925-384-7242.
 ---
 Три недели - это период между постом 17 тамуза и постом Девятого ава, когда евреи скорбят о разрушении Святого Храма в Иерусалиме. Последние девять дней - самые тяжелые, и в них соблюдают больше обычаев траура.

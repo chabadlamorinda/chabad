@@ -2,7 +2,7 @@
 title: The Holy Temple in Jerusalem (Beit HaMikdash)
 description: What the Holy Temple was, the First and Second Temples, why they were destroyed, how we remember them today, and the Third Temple.
 category: Jewish ideas
-related: jerusalem, the-maccabees, jewish-history-overview, western-wall, three-weeks, moshiach
+related: jerusalem, tisha-bav-for-beginners, the-maccabees, jewish-history-overview, western-wall, three-weeks, moshiach
 local: Join Chabad of Lamorinda to learn more about the Temple and Jewish history in our classes at chabadoflamorinda.com/programs/adult-education, or call 925-384-7242.
 ---
 The Holy Temple, called the Beit HaMikdash, was the central house of G-d in Jerusalem, where the Jewish people came to pray, bring offerings and feel G-d's presence. Two Temples stood on the same holy mountain, and Jewish tradition teaches that a Third Temple will be built in the time of Moshiach.

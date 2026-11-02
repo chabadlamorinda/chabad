@@ -18,7 +18,7 @@
   { "id": "passover", "title": "Passover, step by step", "intro": "From cleaning out the chametz to the Seder and counting the Omer.",
     "guides": ["chametz", "selling-your-chametz", "kosher-for-passover", "matzah", "seder-plate", "passover-seder", "four-questions", "afikoman", "exodus-story", "counting-the-omer", "lag-baomer", "shavuot-night-learning"] },
   { "id": "high-holidays", "title": "The High Holidays, step by step", "intro": "From the month of Elul through Rosh Hashanah to Yom Kippur.",
-    "guides": ["elul", "selichot", "rosh-hashanah-simanim", "shofar", "tashlich", "ten-days-of-repentance", "yom-kippur-for-beginners", "teshuvah", "kapparot", "kol-nidre", "yom-kippur-fast"] },
+    "guides": ["elul", "selichot", "rosh-hashanah-for-beginners", "rosh-hashanah-simanim", "shofar", "tashlich", "ten-days-of-repentance", "yom-kippur-for-beginners", "teshuvah", "kapparot", "kol-nidre", "yom-kippur-fast"] },
   { "id": "big-questions", "title": "Life's big questions", "intro": "G-d, the soul, free will, suffering and what it all means.",
     "guides": ["why-be-jewish", "belief-in-g-d", "torah-and-science", "why-pray", "the-soul", "purpose-of-life", "free-will", "why-bad-things-happen", "hope-in-hard-times", "hashgacha-pratit", "miracles-jewish-view", "afterlife", "moshiach"] },
   { "id": "character", "title": "Growing as a person", "intro": "Jewish wisdom for becoming kinder, calmer and more honest, one trait at a time.",
