@@ -12,11 +12,13 @@ For the next Claude conversation about the Chabad of Lamorinda website. Read `CL
 * Nothing that costs money without saying so. Lists sort by what people open most (`popular.js`). An email to the Rabbi for everything people do on the site (`notify.js`). Donation form ($360) only where giving fits (`GIVE_ON` in give.js).
 * His usage limits run out fast (weekly limit resets Tuesdays 1 AM Pacific). He asked to use Fable (model `fable`) for heavy work, at most 3 agents at a time, and the lighter schedules above. The old conversation is very long and expensive: work in a fresh conversation ("read HANDOFF.md").
 
-## Scheduled tasks (claude-code-remote triggers, bound to the old session)
-* `trig_01CKTQxhahKem5QBxUP37ojn` work block: ON, once a day, weekdays 2:17 AM Pacific (was every 4 hours; the Rabbi can say "back to every 4 hours").
-* `trig_01Wh6kqgAqk7Mi2Fp65s4jJh` ideas list: ON, weekly, Wednesdays 9:41 AM Pacific.
-* `trig_01Ut9ZJYn4ipy2Abu66bt9Np` Monday draft of the Rabbi's word for the weekly email (`site/content/rabbi-words.json`, approved:false until he approves).
-* `trig_01LGVngEG9p3rmEHKKKL2ALR` regular to-do reminder (the Mon one-shot has fired).
+## Scheduled tasks: ALL PAUSED (the Rabbi said "Stop everything", Nov 3)
+Nothing runs by itself. Turn one back on only when the Rabbi asks (update_trigger with enabled=true):
+* `trig_01CKTQxhahKem5QBxUP37ojn` work block (weekdays 2:17 AM Pacific once a day; was every 4 hours): disabled.
+* `trig_01Wh6kqgAqk7Mi2Fp65s4jJh` ideas list (Wednesdays 9:41 AM Pacific): disabled.
+* `trig_01Ut9ZJYn4ipy2Abu66bt9Np` Monday draft of the Rabbi's word for the weekly email (`site/content/rabbi-words.json`, approved:false until he approves): disabled, so no new word is drafted until it is re-enabled.
+* `trig_01LGVngEG9p3rmEHKKKL2ALR` regular to-do reminder: disabled.
+* The jokes batch 7 agent (40 jokes, `write-7.json`) was stopped before writing anything.
 
 ## The Jewish stories and jokes corner (first batch LIVE on Nov 3)
 * Live at /stories (+ /he, /ru): 105 items from the Rabbi's PDF "Compliation of Stories and Jokes" (952 items; Google Drive "Claude" folder, file id 112gMDBJZ5i1UteFRkwi9QztRwcD0bzyE): 60 jokes, 45 stories (rebbe 5, chassidic 7, inspirational 9, courage 8, parable 16). Code `server/site/stories.js`; content `site/content/stories.json` + `i18n/he|ru/stories.json`; see CLAUDE.md "Jewish stories and jokes".
