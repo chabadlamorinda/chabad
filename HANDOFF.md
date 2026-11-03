@@ -1,4 +1,4 @@
-# Handoff: where things stand (written Nov 2, 2026)
+# Handoff: where things stand (updated Nov 3, 2026)
 
 For the next Claude conversation about the Chabad of Lamorinda website. Read `CLAUDE.md` first (how the site works); this file is only what is in flight and what the Rabbi is waiting on.
 
@@ -10,21 +10,20 @@ For the next Claude conversation about the Chabad of Lamorinda website. Read `CL
 * Never invent local facts, dates, prices, names or quotes. Never state what Chabad of Lamorinda specifically does, holds or provides unless he confirmed it; write "call Rabbi Labkowski to hear what is planned" instead. Confirmed: every Jew is welcome, no membership is required, phone 925-384-7242 (Rebbetzin 925-384-7241).
 * Guides are for everyday Jews of every background, Chabad.org style (general Judaism through Chabad teaching); no Chabad-insider topics unless asked. Every new page in English, Hebrew and Russian.
 * Nothing that costs money without saying so. Lists sort by what people open most (`popular.js`). An email to the Rabbi for everything people do on the site (`notify.js`). Donation form ($360) only where giving fits (`GIVE_ON` in give.js).
-* He hit his usage limits (weekly 93%, Fable 82% on Nov 2). He asked to pause until Tuesday 1 AM Pacific and to use Fable (model `fable`) for heavy work, at most 3 agents at a time. This conversation is very long; use a fresh one for new tasks.
+* His usage limits run out fast (weekly limit resets Tuesdays 1 AM Pacific). He asked to use Fable (model `fable`) for heavy work, at most 3 agents at a time, and the lighter schedules above. The old conversation is very long and expensive: work in a fresh conversation ("read HANDOFF.md").
 
 ## Scheduled tasks (claude-code-remote triggers, bound to the old session)
-* `trig_01CKTQxhahKem5QBxUP37ojn` work block (paused; a one-shot re-enables it Tue 1:05 AM on a lighter schedule: daily 2:17 AM weekdays).
-* `trig_01Wh6kqgAqk7Mi2Fp65s4jJh` daily ideas (paused; same one-shot sets it to weekly, Wednesdays 9:41 AM).
+* `trig_01CKTQxhahKem5QBxUP37ojn` work block: ON, once a day, weekdays 2:17 AM Pacific (was every 4 hours; the Rabbi can say "back to every 4 hours").
+* `trig_01Wh6kqgAqk7Mi2Fp65s4jJh` ideas list: ON, weekly, Wednesdays 9:41 AM Pacific.
 * `trig_01Ut9ZJYn4ipy2Abu66bt9Np` Monday draft of the Rabbi's word for the weekly email (`site/content/rabbi-words.json`, approved:false until he approves).
-* `trig_01LGVngEG9p3rmEHKKKL2ALR` regular to-do reminder; `trig_018QhBqtmkNWF4acvvF8U2Yw` one-shot reminder (Mon 10:12 AM).
-* `trig_01E8EjJqJa6cKwZ5VPb2Mccm` one-shot Tue 1:30 AM: resume the stories and jokes corner (below).
+* `trig_01LGVngEG9p3rmEHKKKL2ALR` regular to-do reminder (the Mon one-shot has fired).
 
-## In flight: the Jewish stories and jokes corner
-* Code is done and committed (not live): `server/site/stories.js` (/stories, /stories/<slug>, sections, joke of the day, search, source line, footer link, sitemap), content in `site/content/stories.json` + `i18n/he|ru/stories.json` (empty arrays so far), loader checks in content.js, strings in he.json/ru.json.
-* Source: the Rabbi's PDF "Compliation of Stories and Jokes" (952 items) in his Google Drive "Claude" folder (file id 112gMDBJZ5i1UteFRkwi9QztRwcD0bzyE). Work files in the scratchpad `/tmp/claude-0/-home-user-chabad/5183aa3f-8258-57c5-9c7e-03317f5cf95c/scratchpad/stories-src/`: `items.json` (all items), `sorted-all.json` (every item classified: kind, section, keep, score, family, named, source, tags), `write-1..6.json` (first batch: 57 best stories, 60 best family jokes), `write-rules.txt` and `verify-rules.txt` (instructions for the writer and fact-checker agents), partial outputs `out-*-*.json`. If the scratchpad is gone, re-download the PDF, `pdftotext`, and redo the sort with 6 Fable agents using `sort-rules.txt` (same folder) or from CLAUDE.md's description.
-* Rules the Rabbi gave: all stories must be true, from Chabad.org or other reputable Jewish sources. So: fact-check each story (verdicts documented / traditional / legend / unclear); documented and traditional go in their sections with "Source:" + URL; legends only as labeled parables or dropped; unclear dropped. Retell in our own words (never copy Chabad.org text), label parables as parables, "From Rabbi Labkowski's story collection" as the source line for his items.
-* Known legends in the batch (not true events): "Paid in Full With One Glass of Milk" (Dr. Howard Kelly), "A Thousand Marbles", Brandeis-and-the-professor; "Shaya's Grand Slam" disputed.
-* After the first batch: ~520 more suitable items remain (499 jokes, 144 stories in total).
+## The Jewish stories and jokes corner (first batch LIVE on Nov 3)
+* Live at /stories (+ /he, /ru): 105 items from the Rabbi's PDF "Compliation of Stories and Jokes" (952 items; Google Drive "Claude" folder, file id 112gMDBJZ5i1UteFRkwi9QztRwcD0bzyE): 60 jokes, 45 stories (rebbe 5, chassidic 7, inspirational 9, courage 8, parable 16). Code `server/site/stories.js`; content `site/content/stories.json` + `i18n/he|ru/stories.json`; see CLAUDE.md "Jewish stories and jokes".
+* How it was done (repeat this for the next batches): 6 Fable sorters classified every item (`sorted-all.json`); writers tidied the best ones in our own words and translated (`write-rules.txt`); fact-checkers searched Chabad.org and other reputable sources for every true-story claim (`verify-rules.txt`: documented / traditional / legend / unclear); a fixer applied the verdicts (source + URL; legends moved to "parable" with "A well-known story; its details cannot be confirmed"; unclear dropped; details corrected to match the source). Work files are in the session scratchpad `/tmp/claude-0/-home-user-chabad/5183aa3f-8258-57c5-9c7e-03317f5cf95c/scratchpad/stories-src/` (may be gone in a new session: then re-download the PDF, `pdftotext`, and re-sort).
+* Remaining from the collection: about 440 jokes and 100 stories marked keep=true but not yet written; do them in batches of ~60, same pipeline, at most 3 Fable agents at a time.
+* 12 stories were dropped as unverifiable (e.g. Rabbi Steinsaltz and the professor, the Baal Shem Tov's seder tears, Der Yosemel's esrog, One Shabbos for the Rabbi's son, the cheerful Al Chet). If the Rabbi gives a source, check it and add them.
+* Ideas not yet built: a story in the weekly email (email.js still uses jokes.json), stories on /kids, photos per story.
 
 ## Waiting on the Rabbi (also in store/rabbi-todo.md and store/content-to-confirm.md)
 1. Email sending in Render (SMTP_URL, MAIL_FROM): until then no notification emails, no sign-in codes, no weekly backup email.
