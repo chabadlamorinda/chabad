@@ -29,7 +29,8 @@ const excerpt = (s, n = 150) => { const p = plain(s).replace(/\s+/g, ' ').trim()
 function mountStories(r, { render, wrap, ctxOf }) {
   const list = (C) => (C.stories || []);
   // A different joke each day, the same for everyone that day.
-  const jokeOfDay = (C) => { const j = list(C).filter((x) => x.kind === 'joke'); return j.length ? j[Math.floor(Date.now() / 864e5) % j.length] : null; };
+  // A different short joke each day, the same for everyone that day (long ones would fill a phone screen).
+  const jokeOfDay = (C) => { const j = list(C).filter((x) => x.kind === 'joke' && plain(x.text).length <= 420); return j.length ? j[Math.floor(Date.now() / 864e5) % j.length] : null; };
 
   r.get('/stories', wrap(async (req, res) => {
     const X = ctxOf(req), { t, C } = X, all = list(C), jd = jokeOfDay(C);
