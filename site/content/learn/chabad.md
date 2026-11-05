@@ -2,7 +2,7 @@
 title: What Is Chabad? Chabad-Lubavitch Explained Simply
 description: What Chabad is, what the name means, its history and values, and what to expect when you visit a Chabad House.
 category: Jewish ideas
-related: the-rebbe, chassidus, tanya, moshiach
+related: the-rebbe, chabad-in-the-bay-area, chassidus, tanya, moshiach
 local: Chabad of Lamorinda in Lafayette welcomes every Jew in Lafayette, Moraga, Orinda and beyond. Call Rabbi Labkowski at 925-384-7242 or stop by 3477 Golden Gate Way.
 ---
 Chabad, also called Chabad-Lubavitch, is a worldwide Jewish movement rooted in Chassidic teachings, known for its warmth, its focus on Jewish learning and mitzvot, and its Chabad centers that welcome every Jew. Today Chabad serves Jews in more than 100 countries, from big cities to small towns.

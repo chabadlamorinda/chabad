@@ -2,7 +2,7 @@
 title: Sponsor a Kiddush in Lafayette: Honor a Birthday, Yahrzeit or Simcha at Chabad of Lamorinda
 description: How Kiddush sponsorship works at Chabad of Lamorinda in Lafayette: mark a yahrzeit, birthday, anniversary or simcha with the Shabbat community.
 category: Lamorinda
-related: kiddush, yahrzeit, tzedakah, hebrew-birthday
+related: kiddush, getting-involved-in-jewish-lamorinda, yahrzeit, tzedakah, hebrew-birthday
 local: Choose your Shabbat and add your dedication at chabadoflamorinda.com/sponsor-a-kiddush or call 925-384-7242.
 ---
 Every Shabbat at Chabad of Lamorinda in Lafayette, after services end at noon, the whole community sits down together to a hot **Kiddush lunch**. Families from Lafayette, Moraga, Orinda and beyond make Kiddush over wine, eat, sing and catch up. It is one of the warmest hours of the week. When you sponsor the Kiddush, you share your occasion with everyone at that table.

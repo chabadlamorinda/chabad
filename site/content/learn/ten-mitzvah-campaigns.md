@@ -2,7 +2,7 @@
 title: The Rebbe's Ten Mitzvah Campaigns: What They Are and How to Start
 description: The Lubavitcher Rebbe's ten mitzvah campaigns (mivtzoim) explained one by one, why he chose them, and a simple first step for each.
 category: Jewish ideas
-related: the-rebbe, mitzvah-tanks, chabad, 613-mitzvot
+related: the-rebbe, what-is-a-mitzvah, mitzvah-tanks, chabad, 613-mitzvot
 local: Want to start one of the ten mitzvahs: tefillin, Shabbat candles, a mezuzah or a pushka? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 The ten mitzvah campaigns, or *mivtzoim*, are ten mitzvot that the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson, asked every Jew to take on and to share with others. Each one is simple enough to start today, and each one opens a door to a deeper Jewish life.

@@ -2,7 +2,7 @@
 title: Staying Up to Learn on Shavuot Night (Tikkun Leil Shavuot)
 description: Why Jews stay up learning Torah on Shavuot night, what is studied, how to join or learn at home, and bringing children to hear the Ten Commandments.
 category: Shabbat & holidays
-related: ten-commandments, shavuot-dairy-foods, torah, daily-torah-study, counting-the-omer
+related: ten-commandments, shavuot-for-beginners, shavuot-dairy-foods, torah, daily-torah-study, counting-the-omer
 local: Families in Lafayette, Moraga and Orinda: call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned for Shavuot this year.
 ---
 Once a year, Jews around the world do something unusual: they stay up all night studying Torah. It happens on the first night of Shavuot, the holiday of the giving of the Torah, and it is called *Tikkun Leil Shavuot*, "the repair of Shavuot night." Coffee, cheesecake and a room full of people learning until the sky turns light: for many it is the most memorable night of the Jewish year.

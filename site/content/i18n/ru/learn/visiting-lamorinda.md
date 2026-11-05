@@ -2,7 +2,7 @@
 title: Едете в Лафайетт, Морагу или Оринду? Гид для еврейских гостей Ламоринды
 description: Едете в Лафайетт, Морагу или Оринду? Шабатние службы и ужин, миньян, Кадиш, кошерная еда через Bay Kosher и праздники в Хабаде Ламоринды.
 category: Lamorinda
-related: kosher-when-traveling, tefilat-haderech, hachnasat-orchim, shabbat-in-lamorinda
+related: kosher-when-traveling, start-here-jewish-lamorinda, jewish-san-francisco, jewish-bay-area-history, tefilat-haderech, hachnasat-orchim, shabbat-in-lamorinda
 local: Будете у нас на Шабат? Запишитесь на chabadoflamorinda.com/forms/shabbat-meal или позвоните раввину Исроэлю Лабковскому по номеру 925-384-7242.
 ---
 Приезжаете в Ламоринду навестить детей и внуков, на свадьбу, на выпускной в Saint Mary's College или в командировку? Добро пожаловать! Хабад Ламоринды по адресу 3477 Golden Gate Way в Лафайетте с радостью станет вашим еврейским домом вдали от дома. Никакого членства и никаких взносов, а гостям мы всегда рады.

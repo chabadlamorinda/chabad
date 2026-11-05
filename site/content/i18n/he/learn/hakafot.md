@@ -2,7 +2,7 @@
 title: הקפות: ריקודים עם התורה בשמחת תורה
 description: מה הן הקפות, איך מתנהלים שבעת סיבובי הריקודים עם התורה בשמחת תורה, המנהגים ולמה כולם מצטרפים.
 category: Shabbat & holidays
-related: torah, torah-reading, hoshana-rabbah, sukkah
+related: torah, simchat-torah-for-beginners, torah-reading, hoshana-rabbah, sukkah
 local: הצטרפו להקפות שמחת תורה שלנו; ראו chabadoflamorinda.com/holidays/simchat-torah או התקשרו 925-384-7242.
 ---
 הקפות הן מעגלי השירה והריקודים השמחים עם ספרי התורה בשמחת תורה. מוציאים את כל הספרים מארון הקודש ומקיפים איתם את בית הכנסת שבע פעמים, וכולם, צעירים ומבוגרים, רוקדים יחד.

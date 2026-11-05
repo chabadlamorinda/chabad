@@ -2,7 +2,7 @@
 title: Почему на Шавуот едят молочное: обычаи, причины и любимые блюда
 description: Почему на Шавуот едят молочные блюда, например чизкейк и блинчики, причины обычая и как правильно устроить молочную и мясную трапезы.
 category: Shabbat & holidays
-related: ten-commandments, shavuot-night-learning, meat-and-milk, counting-the-omer, torah
+related: ten-commandments, shavuot-for-beginners, shavuot-night-learning, meat-and-milk, counting-the-omer, torah
 local: Услышьте Десять заповедей на Шавуот в Хабаде Ламоринды в Лафайетте. Смотрите chabadoflamorinda.com/holidays/shavuot и chabadoflamorinda.com/events или звоните 925-384-7242.
 ---
 На Шавуот евреи едят молочные блюда, например чизкейк, блинчики с творогом и сырные креплах, как сладкое напоминание о даровании Торы на горе Синай. Многие семьи устраивают молочную трапезу или кидуш, а также праздничную мясную трапезу, правильно разделяя их.

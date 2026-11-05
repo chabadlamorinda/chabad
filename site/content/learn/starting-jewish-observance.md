@@ -2,7 +2,7 @@
 title: Where to Start: Taking On More Jewish Practice, One Step at a Time
 description: Want to be more Jewish but not sure where to begin? Simple first steps, how to grow at your own pace, and how to bring your family along with joy.
 category: Jewish ideas
-related: shabbat-for-beginners, ten-mitzvah-campaigns, not-religious-welcome, why-mitzvot
+related: shabbat-for-beginners, start-here-jewish-lamorinda, ten-mitzvah-campaigns, not-religious-welcome, why-mitzvot
 local: For anyone in Lafayette, Moraga, Orinda and the East Bay: start with Shabbat at Chabad of Lamorinda, a class, or a coffee with the Rabbi. Call 925-384-7242.
 ---
 Many people feel a pull to connect more: after a loss, a birth, a trip to Israel, or simply a feeling that something is missing. Judaism is not all or nothing. Every mitzvah counts on its own, and every step forward is precious.

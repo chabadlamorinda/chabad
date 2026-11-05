@@ -2,7 +2,7 @@
 title: מבקרים בלאפייט, מוראגה או אורינדה? מדריך למבקר היהודי בלמורינדה
 description: מבקרים בלאפייט, מוראגה או אורינדה? תפילות וסעודת שבת, מניין, קדיש, אוכל כשר דרך Bay Kosher וחגים בחב״ד למורינדה.
 category: Lamorinda
-related: kosher-when-traveling, tefilat-haderech, hachnasat-orchim, shabbat-in-lamorinda
+related: kosher-when-traveling, start-here-jewish-lamorinda, jewish-san-francisco, jewish-bay-area-history, tefilat-haderech, hachnasat-orchim, shabbat-in-lamorinda
 local: מבקרים בשבת? הירשמו ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו לרב ישראל לבקובסקי בטלפון 925-384-7242.
 ---
 באים ללמורינדה לבקר את הילדים והנכדים, לחתונה, לטקס סיום ב-Saint Mary's College, או לנסיעת עבודה? ברוכים הבאים! חב״ד למורינדה, ב-3477 Golden Gate Way בלאפייט, ישמח להיות הבית היהודי שלכם הרחק מהבית. אין דמי חבר ואין תשלומים, ומבקרים תמיד מוזמנים.

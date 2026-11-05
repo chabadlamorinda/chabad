@@ -2,7 +2,7 @@
 title: בין המצרים ותשעת הימים: מנהגי האבלות
 description: מהם שלושת השבועות ותשעת הימים, למה מתאבלים בין י״ז בתמוז לתשעה באב, ואילו מנהגים חלים ומתי.
 category: Shabbat & holidays
-related: fast-days, tisha-bav-for-beginners, tu-bav, jewish-calendar, moshiach, tzedakah
+related: fast-days, yom-yerushalayim, tisha-bav-for-beginners, tu-bav, jewish-calendar, moshiach, tzedakah
 local: למדו על תשעה באב ועל בין המצרים ב-chabadoflamorinda.com/holidays/tisha-bav, או התקשרו 925-384-7242 עם שאלות.
 ---
 שלושת השבועות הם התקופה שבין צום י״ז בתמוז לצום תשעה באב, שבה יהודים מתאבלים על חורבן בית המקדש בירושלים. תשעת הימים האחרונים הם החמורים ביותר, עם מנהגי אבלות נוספים.

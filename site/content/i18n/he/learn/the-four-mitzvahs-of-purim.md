@@ -2,7 +2,7 @@
 title: ארבע מצוות פורים, הכול במקום אחד
 description: לפורים ארבע מצוות: מקרא מגילה, משלוח מנות, מתנות לאביונים וסעודת פורים. מהי כל אחת ואיך מקיימים אותה.
 category: Shabbat & holidays
-related: megillah, mishloach-manot, purim-seudah, purim-for-kids, purim-costumes
+related: megillah, purim-for-beginners, mishloach-manot, purim-seudah, purim-for-kids, purim-costumes
 local: כל יהודי מלאפייט, מוראגה ואורינדה מוזמן בפורים; בלי צורך בחברות. התקשרו לרב ישראל לבקובסקי, 925-384-7242, כדי לשמוע מה חב״ד למורינדה מתכננת השנה.
 ---
 פורים הוא היום השמח ביותר בלוח השנה היהודי, וגם אחד העמוסים. מתחת לתחפושות ולרעש יש מבנה ברור: ארבע מצוות, הקבועות במגילת אסתר עצמה, שכל אחת מהן מיועדת ליום הפורים. הנה הן לפי הסדר.

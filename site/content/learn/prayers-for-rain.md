@@ -2,7 +2,7 @@
 title: Prayers for Rain: Mashiv HaRuach and V'ten Tal UMatar
 description: When Jews start praying for rain each year, what the words mean, why the dates differ in Israel and abroad, and what to do if you forget.
 category: Prayer & Torah
-related: amidah, daily-prayers, prayer, cheshvan
+related: amidah, shemini-atzeret, daily-prayers, prayer, cheshvan
 local: Here in Lafayette, Moraga and Orinda we know how precious rain is. Join the prayers at Chabad of Lamorinda; questions? Call Rabbi Labkowski at 925-384-7242.
 ---
 Jewish prayer follows the seasons. Twice a year the words of the Amidah change, so that in the rainy season of the Land of Israel we ask G-d for rain, and in the dry season we ask for dew. Here in California, where every rainy winter matters, these short phrases feel very close to home.

@@ -2,7 +2,7 @@
 title: למה אוכלים מאכלי חלב בשבועות: מנהגים, טעמים ומאכלים אהובים
 description: למה יהודים אוכלים מאכלי חלב כמו עוגת גבינה ובלינצ׳ס בשבועות, הטעמים למנהג, ואיך מגישים סעודה חלבית וסעודה בשרית כראוי.
 category: Shabbat & holidays
-related: ten-commandments, shavuot-night-learning, meat-and-milk, counting-the-omer, torah
+related: ten-commandments, shavuot-for-beginners, shavuot-night-learning, meat-and-milk, counting-the-omer, torah
 local: שמעו את עשרת הדברות בשבועות בחב״ד למורינדה בלאפייט. ראו chabadoflamorinda.com/holidays/shavuot ו-chabadoflamorinda.com/events, או התקשרו 925-384-7242.
 ---
 יהודים אוכלים מאכלי חלב בשבועות, כמו עוגת גבינה, בלינצ׳ס וקרעפלעך גבינה, כזכר מתוק לקבלת התורה בהר סיני. משפחות רבות עורכות סעודה או קידוש חלבי וגם סעודה בשרית חגיגית, ומקפידות על הפרדה ראויה ביניהן.

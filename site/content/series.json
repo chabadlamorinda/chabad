@@ -1,26 +1,241 @@
 [
-  { "id": "mourning", "title": "When we lose someone, step by step", "intro": "From the last days to the yearly yahrzeit: what Judaism teaches, one step at a time.",
-    "guides": ["when-a-loved-one-is-dying", "aninut", "jewish-funeral", "writing-a-eulogy", "kriah", "shiva", "setting-up-a-shiva-house", "comforting-mourners", "writing-a-condolence-note", "kaddish", "sheloshim", "year-of-mourning", "losing-a-spouse", "unveiling", "yahrzeit", "yizkor", "visiting-a-grave"] },
-  { "id": "shabbat", "title": "Shabbat, step by step", "intro": "From lighting the candles on Friday to Havdalah on Saturday night.",
-    "guides": ["shabbat-for-beginners", "preparing-for-shabbat", "shabbat-candles", "friday-night-dinner-step-by-step", "kabbalat-shabbat", "shalom-aleichem", "kiddush", "hamotzi", "shabbat-meals", "zemirot", "shabbat-day", "thirty-nine-melachot", "havdalah"] },
-  { "id": "kosher", "title": "Keeping kosher, step by step", "intro": "What kosher means, how to shop, and how to set up a kosher kitchen.",
-    "guides": ["kosher", "kosher-symbols", "kosher-certification", "meat-and-milk", "kosher-kitchen", "kosher-meat", "chalav-yisrael", "kosher-wine", "tevilat-kelim", "checking-for-insects", "kosher-on-a-budget", "keeping-kosher-with-family", "eating-out-kosher", "kosher-when-traveling"] },
-  { "id": "prayer", "title": "Learning to pray", "intro": "From the first words in the morning to the Shema at night.",
-    "guides": ["prayer", "modeh-ani", "morning-blessings", "shema", "amidah", "siddur", "daily-prayers", "mincha-and-maariv", "minyan", "talking-to-g-d-in-your-own-words", "praying-for-others", "why-pray", "bedtime-shema"] },
-  { "id": "marriage", "title": "Love and marriage, step by step", "intro": "From dating and the engagement to the wedding and a happy home.",
-    "guides": ["jewish-dating", "jewish-engagement", "choosing-a-wedding-date", "kallah-classes", "chosson-classes", "ketubah", "jewish-wedding", "jewish-wedding-customs", "attending-a-jewish-wedding", "sheva-brachot", "first-year-of-marriage", "shalom-bayit"] },
-  { "id": "baby", "title": "A new baby, step by step", "intro": "From pregnancy and choosing a name to the first haircut.",
-    "guides": ["jewish-pregnancy", "jewish-baby-names", "preparing-for-a-bris", "brit-milah", "simchat-bat", "baby-naming", "pidyon-haben", "upsherin"] },
-  { "id": "bar-bat-mitzvah", "title": "Bar and Bat Mitzvah, step by step", "intro": "What it means, how to prepare, and how to make it meaningful.",
-    "guides": ["bar-mitzvah", "bat-mitzvah", "bar-bat-mitzvah-timeline", "tefillin", "bar-mitzvah-speech", "attending-a-bar-bat-mitzvah", "bat-mitzvah-projects"] },
-  { "id": "chanukah", "title": "Chanukah, step by step", "intro": "The story, the menorah, the songs, the food and the last day.",
-    "guides": ["chanukah-story", "the-maccabees", "chanukah-menorah", "lessons-of-chanukah", "al-hanissim-and-hallel", "chanukah-songs", "dreidel", "chanukah-foods", "chanukah-gelt", "chanukah-on-shabbat", "chanukah-away-from-home", "zot-chanukah"] },
-  { "id": "passover", "title": "Passover, step by step", "intro": "From cleaning out the chametz to the Seder and counting the Omer.",
-    "guides": ["chametz", "selling-your-chametz", "kosher-for-passover", "matzah", "seder-plate", "passover-seder", "four-questions", "afikoman", "exodus-story", "counting-the-omer", "lag-baomer", "shavuot-night-learning"] },
-  { "id": "high-holidays", "title": "The High Holidays, step by step", "intro": "From the month of Elul through Rosh Hashanah to Yom Kippur.",
-    "guides": ["elul", "selichot", "rosh-hashanah-for-beginners", "rosh-hashanah-simanim", "shofar", "tashlich", "ten-days-of-repentance", "yom-kippur-for-beginners", "teshuvah", "kapparot", "kol-nidre", "yom-kippur-fast"] },
-  { "id": "big-questions", "title": "Life's big questions", "intro": "G-d, the soul, free will, suffering and what it all means.",
-    "guides": ["why-be-jewish", "belief-in-g-d", "torah-and-science", "why-pray", "the-soul", "purpose-of-life", "free-will", "why-bad-things-happen", "hope-in-hard-times", "hashgacha-pratit", "miracles-jewish-view", "afterlife", "moshiach"] },
-  { "id": "character", "title": "Growing as a person", "intro": "Jewish wisdom for becoming kinder, calmer and more honest, one trait at a time.",
-    "guides": ["humility", "judging-others-favorably", "anger-jewish-view", "patience", "jealousy-and-envy", "being-content", "hakarat-hatov", "simcha", "honesty-and-truth", "returning-lost-items", "keeping-your-word", "lashon-hara", "giving-criticism-kindly", "forgiveness-and-making-peace", "forgiving-yourself", "changing-a-bad-habit"] }
+ {
+  "id": "mourning",
+  "title": "When we lose someone, step by step",
+  "intro": "From the last days to the yearly yahrzeit: what Judaism teaches, one step at a time.",
+  "guides": [
+   "when-a-loved-one-is-dying",
+   "aninut",
+   "jewish-funeral",
+   "writing-a-eulogy",
+   "kriah",
+   "shiva",
+   "setting-up-a-shiva-house",
+   "comforting-mourners",
+   "writing-a-condolence-note",
+   "kaddish",
+   "sheloshim",
+   "year-of-mourning",
+   "losing-a-spouse",
+   "unveiling",
+   "yahrzeit",
+   "yizkor",
+   "visiting-a-grave"
+  ]
+ },
+ {
+  "id": "shabbat",
+  "title": "Shabbat, step by step",
+  "intro": "From lighting the candles on Friday to Havdalah on Saturday night.",
+  "guides": [
+   "shabbat-for-beginners",
+   "preparing-for-shabbat",
+   "shabbat-candles",
+   "friday-night-dinner-step-by-step",
+   "kabbalat-shabbat",
+   "shalom-aleichem",
+   "kiddush",
+   "hamotzi",
+   "shabbat-meals",
+   "zemirot",
+   "shabbat-day",
+   "thirty-nine-melachot",
+   "havdalah"
+  ]
+ },
+ {
+  "id": "kosher",
+  "title": "Keeping kosher, step by step",
+  "intro": "What kosher means, how to shop, and how to set up a kosher kitchen.",
+  "guides": [
+   "kosher",
+   "kosher-symbols",
+   "kosher-certification",
+   "meat-and-milk",
+   "kosher-kitchen",
+   "kosher-meat",
+   "chalav-yisrael",
+   "kosher-wine",
+   "tevilat-kelim",
+   "checking-for-insects",
+   "kosher-on-a-budget",
+   "keeping-kosher-with-family",
+   "eating-out-kosher",
+   "kosher-when-traveling"
+  ]
+ },
+ {
+  "id": "prayer",
+  "title": "Learning to pray",
+  "intro": "From the first words in the morning to the Shema at night.",
+  "guides": [
+   "prayer",
+   "modeh-ani",
+   "morning-blessings",
+   "shacharit-morning-service",
+   "ashrei",
+   "shema",
+   "amidah",
+   "aleinu",
+   "siddur",
+   "daily-prayers",
+   "mincha-and-maariv",
+   "minyan",
+   "talking-to-g-d-in-your-own-words",
+   "praying-for-others",
+   "why-pray",
+   "bedtime-shema"
+  ]
+ },
+ {
+  "id": "marriage",
+  "title": "Love and marriage, step by step",
+  "intro": "From dating and the engagement to the wedding and a happy home.",
+  "guides": [
+   "jewish-dating",
+   "jewish-engagement",
+   "choosing-a-wedding-date",
+   "kallah-classes",
+   "chosson-classes",
+   "ketubah",
+   "jewish-wedding",
+   "jewish-wedding-customs",
+   "attending-a-jewish-wedding",
+   "sheva-brachot",
+   "first-year-of-marriage",
+   "shalom-bayit"
+  ]
+ },
+ {
+  "id": "baby",
+  "title": "A new baby, step by step",
+  "intro": "From pregnancy and choosing a name to the first haircut.",
+  "guides": [
+   "jewish-pregnancy",
+   "jewish-baby-names",
+   "preparing-for-a-bris",
+   "brit-milah",
+   "simchat-bat",
+   "baby-naming",
+   "pidyon-haben",
+   "upsherin"
+  ]
+ },
+ {
+  "id": "bar-bat-mitzvah",
+  "title": "Bar and Bat Mitzvah, step by step",
+  "intro": "What it means, how to prepare, and how to make it meaningful.",
+  "guides": [
+   "bar-mitzvah",
+   "bat-mitzvah",
+   "bar-bat-mitzvah-timeline",
+   "tefillin",
+   "bar-mitzvah-speech",
+   "attending-a-bar-bat-mitzvah",
+   "bat-mitzvah-projects"
+  ]
+ },
+ {
+  "id": "chanukah",
+  "title": "Chanukah, step by step",
+  "intro": "The story, the menorah, the songs, the food and the last day.",
+  "guides": [
+   "chanukah-story",
+   "the-maccabees",
+   "chanukah-menorah",
+   "lessons-of-chanukah",
+   "al-hanissim-and-hallel",
+   "chanukah-songs",
+   "dreidel",
+   "chanukah-foods",
+   "chanukah-gelt",
+   "chanukah-on-shabbat",
+   "chanukah-away-from-home",
+   "zot-chanukah"
+  ]
+ },
+ {
+  "id": "passover",
+  "title": "Passover, step by step",
+  "intro": "From cleaning out the chametz to the Seder and counting the Omer.",
+  "guides": [
+   "passover-for-beginners",
+   "chametz",
+   "selling-your-chametz",
+   "kosher-for-passover",
+   "matzah",
+   "seder-plate",
+   "passover-seder",
+   "four-questions",
+   "afikoman",
+   "exodus-story",
+   "counting-the-omer",
+   "lag-baomer",
+   "shavuot-for-beginners",
+   "shavuot-night-learning"
+  ]
+ },
+ {
+  "id": "high-holidays",
+  "title": "The High Holidays, step by step",
+  "intro": "From the month of Elul through Rosh Hashanah to Yom Kippur.",
+  "guides": [
+   "elul",
+   "selichot",
+   "rosh-hashanah-for-beginners",
+   "rosh-hashanah-simanim",
+   "shofar",
+   "tashlich",
+   "ten-days-of-repentance",
+   "shabbat-shuva",
+   "yom-kippur-for-beginners",
+   "teshuvah",
+   "kapparot",
+   "kol-nidre",
+   "yom-kippur-fast"
+  ]
+ },
+ {
+  "id": "big-questions",
+  "title": "Life's big questions",
+  "intro": "G-d, the soul, free will, suffering and what it all means.",
+  "guides": [
+   "why-be-jewish",
+   "belief-in-g-d",
+   "torah-and-science",
+   "why-pray",
+   "the-soul",
+   "purpose-of-life",
+   "free-will",
+   "why-bad-things-happen",
+   "hope-in-hard-times",
+   "hashgacha-pratit",
+   "miracles-jewish-view",
+   "afterlife",
+   "moshiach"
+  ]
+ },
+ {
+  "id": "character",
+  "title": "Growing as a person",
+  "intro": "Jewish wisdom for becoming kinder, calmer and more honest, one trait at a time.",
+  "guides": [
+   "humility",
+   "judging-others-favorably",
+   "anger-jewish-view",
+   "patience",
+   "jealousy-and-envy",
+   "being-content",
+   "hakarat-hatov",
+   "simcha",
+   "honesty-and-truth",
+   "returning-lost-items",
+   "keeping-your-word",
+   "lashon-hara",
+   "giving-criticism-kindly",
+   "forgiveness-and-making-peace",
+   "forgiving-yourself",
+   "changing-a-bad-habit"
+  ]
+ }
 ]

@@ -2,7 +2,7 @@
 title: Акафот: танцы с Торой на Симхат Тора
 description: Что такое акафот, как проходят семь кругов танцев с Торой на Симхат Тора, обычаи и почему в них участвуют все.
 category: Shabbat & holidays
-related: torah, torah-reading, hoshana-rabbah, sukkah
+related: torah, simchat-torah-for-beginners, torah-reading, hoshana-rabbah, sukkah
 local: Приходите на наши акафот в Симхат Тора: chabadoflamorinda.com/holidays/simchat-torah или по телефону 925-384-7242.
 ---
 Акафот - это радостные круги песен и танцев со свитками Торы на Симхат Тора. Все свитки вынимают из ковчега и семь раз обносят вокруг синагоги, и все, от мала до велика, танцуют вместе с ними.

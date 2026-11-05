@@ -2,7 +2,7 @@
 title: The Fast of Esther: The Quiet Day Before Purim
 description: Why we fast the day before Purim, who fasts, when the fast moves earlier, the half-shekel coins given that afternoon, and how it leads into Purim's joy.
 category: Shabbat & holidays
-related: megillah, mishloach-manot, purim-seudah, minor-fast-days, tzedakah
+related: megillah, purim-for-beginners, mishloach-manot, purim-seudah, minor-fast-days, tzedakah
 local: Families in Lafayette, Moraga and Orinda: call Rabbi Yisroel Labkowski at 925-384-7242 to hear about this year's Megillah reading and Purim plans at Chabad of Lamorinda.
 ---
 Purim is the noisiest, happiest day of the Jewish year. The day before it is one of the quietest. Taanit Esther, the Fast of Esther, is a daytime fast that leads straight into the Megillah reading, and understanding it makes Purim itself deeper.

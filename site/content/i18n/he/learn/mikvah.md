@@ -2,7 +2,7 @@
 title: מקווה: מה זה ולמה נשים יהודיות טובלות
 description: מדריך עדין למקווה: משמעותו, טהרת המשפחה, ההכנה לטבילה, ומי טובלת ומתי.
 category: Life cycle
-related: jewish-wedding, head-covering-for-women, jewish-women, kosher-kitchen, teshuvah
+related: jewish-wedding, jewish-east-bay, head-covering-for-women, jewish-women, kosher-kitchen, teshuvah
 local: להדרכה אישית, דיסקרטית ואכפתית בנושא מקווה, אפשר לפנות לרבנית ציפורה לבקובסקי בטלפון 925-384-7241. כל שיחה נשמרת בסודיות מלאה.
 ---
 מקווה הוא בריכה של מים טבעיים המשמשת לטבילה בחיים היהודיים. השימוש המרכזי בו הוא של נשים יהודיות נשואות, הטובלות בכל חודש כחלק מדיני טהרת המשפחה, מנהג ששמר על הנישואין היהודיים במשך אלפי שנים.

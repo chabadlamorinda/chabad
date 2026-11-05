@@ -2,7 +2,7 @@
 title: Jerusalem in Judaism: Why It Is the Holy City
 description: Why Jerusalem is the holiest city in Judaism, its history from King David to the Temples, and how Jews remember Jerusalem every day.
 category: Jewish ideas
-related: the-holy-temple, making-aliyah, western-wall, israel-and-the-jewish-people, moshiach
+related: the-holy-temple, yom-yerushalayim, yom-haatzmaut, making-aliyah, western-wall, israel-and-the-jewish-people, moshiach
 local: Learn more about Jerusalem and Jewish history in Chabad of Lamorinda's classes at chabadoflamorinda.com/programs/adult-education, or call 925-384-7242.
 ---
 Jerusalem is the holiest city in Judaism because it is the place G-d chose for the Holy Temple, the spiritual center of the Jewish people. For more than three thousand years, Jews have prayed toward Jerusalem, mourned its destruction and longed for its rebuilding.

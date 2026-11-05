@@ -2,7 +2,7 @@
 title: The Ten Days of Repentance: Between Rosh Hashanah and Yom Kippur
 description: What the Ten Days of Teshuvah are, what Shabbat Shuvah is, and simple things to do between Rosh Hashanah and Yom Kippur: tzedakah, apologies, resolutions.
 category: Shabbat & holidays
-related: teshuvah, forgiveness-and-making-peace, kapparot, kol-nidre, selichot
+related: teshuvah, shabbat-shuva, forgiveness-and-making-peace, kapparot, kol-nidre, selichot
 local: Chabad of Lamorinda welcomes everyone from Lafayette, Moraga and Orinda for Shabbat Shuvah and Yom Kippur, no membership needed; questions to Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Rosh Hashanah is over, and Yom Kippur is not here yet. The days in between are not a break. They are the *Aseret Yemei Teshuvah*, the Ten Days of Repentance (counting Rosh Hashanah and Yom Kippur themselves), and the Jewish tradition treats them as the most precious days of the year for setting things right.

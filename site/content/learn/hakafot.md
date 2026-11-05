@@ -2,7 +2,7 @@
 title: Hakafot: Dancing with the Torah on Simchat Torah
 description: What hakafot are, how the seven circles of dancing with the Torah work on Simchat Torah, the customs, and why everyone joins in.
 category: Shabbat & holidays
-related: torah, torah-reading, hoshana-rabbah, sukkah
+related: torah, simchat-torah-for-beginners, torah-reading, hoshana-rabbah, sukkah
 local: Join our Simchat Torah hakafot; see chabadoflamorinda.com/holidays/simchat-torah or call 925-384-7242.
 ---
 Hakafot are the joyful circles of singing and dancing with the Torah scrolls on Simchat Torah. All the scrolls are taken out of the ark and carried around the synagogue seven times, with everyone, young and old, dancing along.

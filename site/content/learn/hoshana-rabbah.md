@@ -2,7 +2,7 @@
 title: Hoshana Rabbah: The Seventh Day of Sukkot Explained
 description: What Hoshana Rabbah is, why it is the final day of judgment, the willow branch custom, the night of learning, and how to observe it.
 category: Shabbat & holidays
-related: four-kinds, sukkah, teshuvah, tehillim
+related: four-kinds, shemini-atzeret, simchat-torah-for-beginners, sukkah, teshuvah, tehillim
 local: Celebrate Sukkot, Shemini Atzeret and Simchat Torah with us. See chabadoflamorinda.com/holidays/sukkot or call 925-384-7242.
 ---
 Hoshana Rabbah is the seventh and final day of Sukkot, when the judgment that began on Rosh Hashanah is sealed for the final time. It is a joyful festival day with special prayers, seven circuits around the synagogue, and the custom of beating willow branches.

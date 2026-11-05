@@ -2,7 +2,7 @@
 title: Counting the Omer: How to Count the 49 Days From Passover to Shavuot
 description: What Sefirat HaOmer is, how and when to count each night, the blessing, what to do if you forget, and the mourning customs of the Omer period.
 category: Shabbat & holidays
-related: passover-seder, lag-baomer, shavuot-dairy-foods, pesach-sheni, ten-commandments, jewish-calendar, blessings
+related: passover-seder, shavuot-for-beginners, lag-baomer, shavuot-dairy-foods, pesach-sheni, ten-commandments, jewish-calendar, blessings
 local: Count the Omer with us at services and celebrate Lag BaOmer together. See chabadoflamorinda.com/holidays/lag-baomer or call 925-384-7242.
 ---
 Counting the Omer is the mitzvah of counting each of the 49 days from the second night of Passover until Shavuot. Each night, after nightfall, we say a blessing and count the day aloud, building up to the giving of the Torah.

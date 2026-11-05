@@ -2,7 +2,7 @@
 title: תענית אסתר: היום השקט שלפני פורים
 description: למה צמים ביום שלפני פורים, מי צם, מתי הצום מוקדם, מחצית השקל שנותנים באותו אחר צהריים, ואיך הוא מוביל אל שמחת פורים.
 category: Shabbat & holidays
-related: megillah, mishloach-manot, purim-seudah, minor-fast-days, tzedakah
+related: megillah, purim-for-beginners, mishloach-manot, purim-seudah, minor-fast-days, tzedakah
 local: משפחות מלאפייט, מוראגה ואורינדה: התקשרו לרב ישראל לבקובסקי 925-384-7242 כדי לשמוע על קריאת המגילה ותוכניות פורים השנה בחב״ד למורינדה.
 ---
 פורים הוא היום הרועש והשמח ביותר בשנה היהודית. היום שלפניו הוא אחד השקטים ביותר. תענית אסתר היא צום של יום אחד שמוביל ישר אל קריאת המגילה, והבנתו מעמיקה את פורים עצמו.

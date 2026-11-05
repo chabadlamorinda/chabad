@@ -2,7 +2,7 @@
 title: ברכות השחר: להתחיל את היום בתודה
 description: ברכות השחר: מה הן, מה הן אומרות ואיך מתחילים לומר אותן, מ"מודה אני" ועד ברכות התורה.
 category: Prayer & Torah
-related: modeh-ani, netilat-yadayim, asher-yatzar, daily-prayers, jewish-morning-routine
+related: modeh-ani, shacharit-morning-service, ashrei, netilat-yadayim, asher-yatzar, daily-prayers, jewish-morning-routine
 local: רוצים ללמוד את ברכות השחר עם מישהו? הצטרפו למניין הבוקר שלנו בימי חול בלאפייט או התקשרו לרב: 925-384-7242.
 ---
 לפני הקפה, לפני הטלפון, לפני החדשות: המסורת היהודית פותחת את היום בסדרה קצרה של תודות שנקראת **ברכות השחר**. הן לוקחות כמה דקות ומשנות את התחושה של כל היום.

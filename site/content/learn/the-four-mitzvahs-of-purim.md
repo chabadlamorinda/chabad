@@ -2,7 +2,7 @@
 title: The Four Mitzvahs of Purim, All in One Place
 description: Purim has four mitzvahs: hearing the Megillah, mishloach manot, gifts to the poor and the festive meal. What each one is and how to do it.
 category: Shabbat & holidays
-related: megillah, mishloach-manot, purim-seudah, purim-for-kids, purim-costumes
+related: megillah, purim-for-beginners, mishloach-manot, purim-seudah, purim-for-kids, purim-costumes
 local: Every Jew from Lafayette, Moraga and Orinda is welcome on Purim; no membership needed. Call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned this year.
 ---
 Purim is the happiest day on the Jewish calendar, and also one of the busiest. Underneath the costumes and the noise there is a clear structure: four mitzvahs, set down in the Book of Esther itself, each one meant to be done on Purim day. Here they are in order.

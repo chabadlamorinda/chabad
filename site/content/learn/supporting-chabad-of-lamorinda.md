@@ -2,7 +2,7 @@
 title: Supporting Chabad of Lamorinda: No Dues, the Chai Club and Ways to Give
 description: Chabad of Lamorinda in Lafayette has no dues. How families in Lafayette, Moraga and Orinda support it: Chai Club, funds, Building Campaign, ways to give.
 category: Lamorinda
-related: tzedakah, pushka, maaser, chesed
+related: tzedakah, getting-involved-in-jewish-lamorinda, chabad-in-the-bay-area, pushka, maaser, chesed
 local: Become a monthly partner in the Chai Club at chabadoflamorinda.com/chai-club, or give at chabadoflamorinda.com/donate.
 ---
 Chabad of Lamorinda has **no membership dues** and no building fund fee. Anyone can walk in for Shabbat, a class, a holiday or help in a hard time, and nobody is ever asked for a ticket. So how does it all happen? Through the generosity of families in Lafayette, Moraga, Orinda and the nearby towns who believe in a Jewish home that is open to every Jew. Every gift is tax deductible: Chabad of Lamorinda is a 501(c)(3), tax ID 47-4642750.

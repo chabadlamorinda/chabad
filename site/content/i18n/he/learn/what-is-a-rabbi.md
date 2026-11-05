@@ -2,7 +2,7 @@
 title: מהו רב? משמעות, תפקיד והכשרה
 description: מה פירוש המילה רב, מה רב עושה, איך רבנים לומדים ומוסמכים, ובמה רב שונה מרבי או מכהן.
 category: Jewish ideas
-related: chabad, the-rebbe, torah, talmud
+related: chabad, chabad-in-the-bay-area, the-rebbe, torah, talmud
 local: יש לכם שאלה, גדולה או קטנה? הרב ישראל לבקובסקי כאן בשביל כל יהודי בלאפייט, מוראגה ואורינדה. התקשרו 925-384-7242 או בקרו ב-chabadoflamorinda.com/help/talk-to-the-rabbi.
 ---
 רב הוא מורה תורה ומדריך בחיים היהודיים. המילה "רב" פירושה "גדול" או "אדון", והתואר "רבי" פירושו המילולי "המורה שלי".

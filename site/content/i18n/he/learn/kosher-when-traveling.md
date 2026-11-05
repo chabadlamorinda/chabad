@@ -2,7 +2,7 @@
 title: שמירת כשרות בנסיעות: טיפים מעשיים
 description: איך שומרים כשרות בדרכים, במלונות ובטיסות, מה לארוז, איך משתמשים בתנור או במיקרוגל לא כשרים, ואיפה מוצאים אוכל כשר.
 category: Kosher
-related: kosher, chanukah-away-from-home, eating-out-kosher, traveling-on-shabbat, kosher-on-campus, kosher-symbols, checking-for-insects, prayer
+related: kosher, jewish-san-francisco, chanukah-away-from-home, eating-out-kosher, traveling-on-shabbat, kosher-on-campus, kosher-symbols, checking-for-insects, prayer
 local: נוסעים בקרוב ויש לכם שאלה בענייני כשרות? התקשרו לרב לבקובסקי בטלפון 925-384-7242 לפני הנסיעה ונעזור לכם לתכנן.
 ---
 אפשר לשמור כשרות כמעט בכל מקום עם קצת תכנון: אורזים מוצרי בסיס, מזמינים ארוחות כשרות בטיסה, קונים מוצרים עם הכשר בחנויות המקומיות, ויוצרים קשר עם הקהילה היהודית במקום. מטיילים רבים מגלים ששמירת כשרות בדרכים הופכת לחלק מההרפתקה.

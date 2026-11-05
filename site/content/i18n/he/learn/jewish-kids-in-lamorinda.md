@@ -2,7 +2,7 @@
 title: ילדים יהודים בלאפייט, מוראגה ואורינדה: גן, תלמוד תורה, CKids וקייטנה
 description: תוכניות יהודיות לילדים בלאפייט, מוראגה ואורינדה: גן ילדים, תלמוד תורה ביום ראשון, צהרון CKids, קייטנה ואירועי חגים.
 category: Lamorinda
-related: jewish-parenting, shabbat-with-kids, upsherin, hebrew-alphabet
+related: jewish-parenting, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
 local: רשמו את הילדים ב-chabadoflamorinda.com/forms/hebrew-school או התקשרו 925-384-7242 כדי למצוא את התוכנית המתאימה.
 ---
 מגדלים ילדים יהודים בלאפייט, מוראגה או אורינדה? בחב״ד למורינדה בלאפייט יש מקום לכל גיל, מיום ההולדת הראשון ועד בר או בת המצווה. הילדים עומדים כאן במרכז, וכל תוכנית פתוחה לכל משפחה יהודית, בלי צורך בדמי חבר.

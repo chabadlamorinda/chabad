@@ -2,7 +2,7 @@
 title: Visiting Lafayette, Moraga or Orinda? A Jewish Visitor's Guide to Lamorinda
 description: Visiting Lafayette, Moraga or Orinda? Shabbat services and dinner, minyan, Kaddish, kosher food via Bay Kosher and holidays at Chabad of Lamorinda.
 category: Lamorinda
-related: kosher-when-traveling, tefilat-haderech, hachnasat-orchim, shabbat-in-lamorinda
+related: kosher-when-traveling, start-here-jewish-lamorinda, jewish-san-francisco, jewish-bay-area-history, tefilat-haderech, hachnasat-orchim, shabbat-in-lamorinda
 local: Visiting for Shabbat? RSVP at chabadoflamorinda.com/forms/shabbat-meal or call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Coming to Lamorinda to visit your children and grandchildren, for a wedding, a graduation at Saint Mary's College, or a business trip? Welcome! Chabad of Lamorinda, at 3477 Golden Gate Way in Lafayette, is happy to be your Jewish home away from home. There is no membership and no dues, and visitors are always welcome.

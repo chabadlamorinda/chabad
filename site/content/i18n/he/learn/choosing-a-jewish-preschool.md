@@ -2,7 +2,7 @@
 title: בחירת גן ילדים יהודי בלאפייט, מוראגה ואורינדה: מה לשאול בסיור
 description: גן ילדים יהודי בלאפייט, מוראגה ואורינדה: עובדות על גן הילדים היהודי למורינדה, גילאי 12 חודשים עד 4, ומה לשאול בסיור.
 category: Lamorinda
-related: jewish-parenting, shabbat-with-kids, upsherin, hebrew-alphabet
+related: jewish-parenting, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
 local: קבעו סיור בגן הילדים היהודי למורינדה ב-chabadoflamorinda.com/forms/preschool או התקשרו 925-384-7242.
 ---
 בחירת גן היא אחת ההחלטות הגדולות הראשונות של משפחה צעירה. אם אתם גרים בלאפייט, מוראגה או אורינדה ורוצים שהמסגרת הראשונה של הילד שלכם תהיה חמה, שמחה ויהודית, הנה מה שכדאי לדעת על **גן הילדים היהודי למורינדה** בלאפייט, והשאלות שכדאי לשאול בכל סיור.

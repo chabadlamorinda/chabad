@@ -2,7 +2,7 @@
 title: Иерусалим в иудаизме: почему это святой город
 description: Почему Иерусалим - самый святой город в иудаизме, его история от царя Давида до Храмов и как евреи помнят об Иерусалиме каждый день.
 category: Jewish ideas
-related: the-holy-temple, making-aliyah, western-wall, israel-and-the-jewish-people, moshiach
+related: the-holy-temple, yom-yerushalayim, yom-haatzmaut, making-aliyah, western-wall, israel-and-the-jewish-people, moshiach
 local: Узнайте больше об Иерусалиме и еврейской истории на занятиях Хабада Ламоринды: chabadoflamorinda.com/programs/adult-education или по телефону 925-384-7242.
 ---
 Иерусалим - самый святой город в иудаизме, потому что это место, которое Б-г избрал для Святого Храма, духовного центра еврейского народа. Более трех тысяч лет евреи молятся, обратившись к Иерусалиму, оплакивают его разрушение и мечтают о его восстановлении.

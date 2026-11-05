@@ -2,7 +2,7 @@
 title: The 613 Mitzvot: What They Are and Why They Matter
 description: What the 613 commandments of the Torah are, how they are counted and divided, which apply today, and what a mitzvah really means.
 category: Jewish ideas
-related: torah, shatnez, talmud, noahide-laws, tzedakah
+related: torah, what-is-a-mitzvah, shatnez, talmud, noahide-laws, tzedakah
 local: Want to explore the mitzvot one step at a time? Call Rabbi Labkowski at 925-384-7242 and we will help you find a meaningful place to begin.
 ---
 The 613 mitzvot are the commandments G-d gave in the Torah: 248 positive commandments ("do") and 365 negative commandments ("do not"). They cover every part of life, from prayer and holidays to business ethics, food and how we treat other people.

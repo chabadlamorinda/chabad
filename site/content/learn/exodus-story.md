@@ -2,7 +2,7 @@
 title: The Exodus Story: How the Jews Left Egypt
 description: The story of the Exodus from Egypt in plain English: slavery, Moses, the Ten Plagues, the splitting of the sea and why we remember it daily.
 category: Shabbat & holidays
-related: passover-seder, jewish-history-overview, ten-commandments, four-questions, matzah
+related: passover-seder, passover-for-beginners, jewish-history-overview, ten-commandments, four-questions, matzah
 local: Relive the Exodus at a Passover seder with Chabad of Lamorinda. See chabadoflamorinda.com/holidays/passover or call 925-384-7242.
 ---
 The Exodus is the story of how G-d freed the Jewish people from slavery in Egypt, led by Moses, more than 3,300 years ago. It is told in the Book of Exodus, retold every year at the Passover seder, and remembered in Jewish prayer every single day.

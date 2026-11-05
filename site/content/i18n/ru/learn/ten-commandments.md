@@ -2,7 +2,7 @@
 title: Десять заповедей: что в них сказано и что они означают
 description: Десять заповедей простыми словами, где они записаны в Торе, как были дарованы у Синая и почему мы слушаем их чтение на Шавуот.
 category: Prayer & Torah
-related: torah, shavuot-night-learning, shavuot-dairy-foods, 613-mitzvot, counting-the-omer, shabbat
+related: torah, shavuot-for-beginners, shavuot-night-learning, shavuot-dairy-foods, 613-mitzvot, counting-the-omer, shabbat
 local: Послушайте чтение Десяти заповедей в синагоге на Шавуот, это особое событие и для детей. Подробности на chabadoflamorinda.com/holidays/shavuot или по телефону 925-384-7242.
 ---
 Десять заповедей - это десять речений, которые Б-г произнес всему еврейскому народу у горы Синай, а затем высек на двух каменных скрижалях. Среди них вера в Б-га, соблюдение Шабата, почитание родителей и запрет убивать, красть и лгать.

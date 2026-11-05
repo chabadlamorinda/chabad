@@ -2,7 +2,7 @@
 title: מאיפה מתחילים: להוסיף עוד שמירת מצוות, צעד אחר צעד
 description: רוצים יותר יהדות בחיים אבל לא בטוחים מאיפה להתחיל? צעדים ראשונים פשוטים, איך לצמוח בקצב שלכם, ואיך לצרף את המשפחה בשמחה.
 category: Jewish ideas
-related: shabbat-for-beginners, ten-mitzvah-campaigns, not-religious-welcome, why-mitzvot
+related: shabbat-for-beginners, start-here-jewish-lamorinda, ten-mitzvah-campaigns, not-religious-welcome, why-mitzvot
 local: לכל מי שבלאפייט, מוראגה, אורינדה והאיסט ביי: התחילו בשבת בחב״ד למורינדה, בשיעור, או בקפה עם הרב. התקשרו 925-384-7242.
 ---
 אנשים רבים מרגישים משיכה להתחבר יותר: אחרי אובדן, לידה, טיול לישראל, או פשוט תחושה שמשהו חסר. היהדות אינה "הכול או כלום". כל מצווה נחשבת בפני עצמה, וכל צעד קדימה יקר.

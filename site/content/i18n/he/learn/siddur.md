@@ -2,7 +2,7 @@
 title: הסידור: מדריך לספר התפילה היהודי
 description: מהו הסידור, איך הוא בנוי, מאיפה באות התפילות שבו, באיזה סידור משתמשים בחב״ד, וטיפים למי שמתפלל מסידור בפעם הראשונה.
 category: Prayer & Torah
-related: prayer, what-is-a-synagogue, amidah, shema, modeh-ani
+related: prayer, shacharit-morning-service, what-is-a-synagogue, amidah, shema, modeh-ani
 local: רוצים סידור משלכם או שיעור אישי על איך להשתמש בו? התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 הסידור הוא ספר התפילה היהודי, ובו תפילות החול, השבת והחגים לפי סדרן הקבוע. שמו בא מהמילה "סדר", כי הוא מסדר את השיחה שלנו עם ה׳ לדרך יומית ברורה.

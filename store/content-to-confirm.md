@@ -93,3 +93,10 @@ These came from the current website, which disagrees with itself in places, or w
 * Purim: where and when is the Megillah reading, and are half-shekel coins provided after the Fast of Esther?
 * High Holidays: is seating free for everyone, or are there reserved seats/tickets? (The site only says no membership is needed.)
 * Mi Sheberach: how should people send a name for the prayer for the sick (text you, the prayer-list form, either)?
+
+## New guides (Nov 5): please glance at these (all three languages are live; each guide only says "ask the Rabbi" where unsure)
+44. Customs to confirm in the holiday guides: Shemini Atzeret meals in the sukkah without the blessing and none on Simchat Torah (/learn/shemini-atzeret); no Torah reading at the Simchat Torah night service and kids' flags topped with an apple (/learn/simchat-torah-for-beginners); some Chabad families do not soak matzah in liquid (/learn/passover-for-beginners); the Chabad paragraph on Yom Haatzmaut (regular prayers, no added Hallel, the Rebbe's call for tefillin; /learn/yom-haatzmaut).
+45. Local plans the new guides avoid stating: Yom Haatzmaut or Yom Yerushalayim event, Megillah reading, a Ten Commandments reading for kids on Shavuot, a Shabbat Shuva talk.
+46. Prayer guides: Aleinu bowing (the guide says customs vary and many fall to the ground in Musaf on Rosh Hashanah and Yom Kippur; /learn/aleinu); the minyan wording "ten adults, traditionally ten men" (/learn/shacharit-morning-service).
+47. Programs: summer camp is listed for ages 2 to 4 in programs.json; is there camp for older children? Are preschool tours booked through /forms/preschool?
+48. Bay Area guides (/learn/jewish-bay-area-history, jewish-san-francisco, jewish-east-bay, chabad-in-the-bay-area): they name no synagogues, kosher places or other Chabad Houses. Tell Claude which local institutions you would like mentioned, and which kosher places you recommend. The Contemporary Jewish Museum is described as "reported closed, check before visiting" (a Wikipedia report only). Please have a native reader check the Hebrew and Russian spelling of "Drizin" and of Sherith Israel.
