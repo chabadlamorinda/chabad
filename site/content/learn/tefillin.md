@@ -2,7 +2,7 @@
 title: Tefillin: What They Are and How to Put Them On
 description: What tefillin are, who wears them and when, step-by-step instructions for putting them on, and the blessing in Hebrew and English.
 category: Prayer & Torah
-related: shema, jewish-men-in-lamorinda, bar-mitzvah-speech, prayer, bar-mitzvah, tzitzit
+related: shema, checking-mezuzahs-and-tefillin, jewish-men-in-lamorinda, bar-mitzvah-speech, prayer, bar-mitzvah, tzitzit
 local: We can help you put on tefillin, buy a kosher pair, or have yours checked. Call 925-384-7242 or stop by.
 ---
 Tefillin are two small black leather boxes containing handwritten Torah passages, worn on the arm and head by Jewish men during weekday morning prayers. Putting them on binds our mind, heart and actions to G-d, and it is one of the most important mitzvot in the Torah.

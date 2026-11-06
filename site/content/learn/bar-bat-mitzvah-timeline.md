@@ -2,7 +2,7 @@
 title: Preparing for a Bar or Bat Mitzvah: A Step-by-Step Timeline
 description: A month-by-month plan for a Bar or Bat Mitzvah: the Hebrew date and Torah portion, learning, tefillin, a mitzvah project, the speech and the celebration.
 category: Life cycle
-related: bar-mitzvah, bat-mitzvah, tefillin, bar-mitzvah-speech, bat-mitzvah-projects
+related: bar-mitzvah, bar-mitzvah-parsha, bat-mitzvah, tefillin, bar-mitzvah-speech, bat-mitzvah-projects
 local: Chabad of Lamorinda prepares boys and girls from Lafayette, Moraga and Orinda for their Bar or Bat Mitzvah. Call Rabbi Labkowski at 925-384-7242 to begin.
 ---
 A Bar or Bat Mitzvah happens by itself: on the 13th Hebrew birthday for a boy and the 12th for a girl, a Jewish child becomes responsible for the mitzvot, with or without a ceremony. The preparation is what turns that date into a milestone the child will carry for life. Here is how families usually pace it. There is no single right way, and the Rabbi can help shape a plan around your child.

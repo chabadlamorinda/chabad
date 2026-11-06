@@ -2,7 +2,7 @@
 title: פורים למתחילים: הסיפור, המגילה וארבע המצוות
 description: חדשים בפורים? סיפור אסתר והמן בקצרה, למה לצפות בקריאת המגילה, תחפושות, אוזני המן וארבע מצוות היום.
 category: Shabbat & holidays
-related: megillah, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, purim-for-kids
+related: megillah, purim-in-lamorinda, parshat-zachor, adar, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, purim-for-kids
 local: משפחות מלאפייט, מוראגה ואורינדה מוזמנות לשמוע את המגילה; אין צורך בעברית. התקשרו לרב לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן.
 ---
 פורים הוא חג שמח שחוגג איך יהודי פרס הקדומה ניצלו ממזימת המן להשמידם. אנו שומעים את סיפור אסתר נקרא, שולחים מתנות אוכל, נותנים לעניים וחוגגים בסעודה, לעיתים בתחפושת. זהו אחד החגים הקלים והמהנים ביותר להצטרף אליהם בפעם הראשונה.

@@ -2,7 +2,7 @@
 title: הרמב״ם: חייו, חיבוריו ותורתו
 description: מי היה הרמב״ם, חיבוריו הגדולים ובהם משנה תורה ומורה נבוכים, שלושה עשר עיקרי האמונה שלו, ומורשתו.
 category: Jewish ideas
-related: rambam, talmud, mishnah, belief-in-g-d
+related: rambam, thirteen-principles-of-faith, talmud, mishnah, belief-in-g-d
 local: הצטרפו ללימוד היומי העולמי של הרמב״ם או שאלו על לימוד עם הרב. התקשרו 925-384-7242 או ראו chabadoflamorinda.com/programs/adult-education.
 ---
 הרמב״ם, רבי משה בן מימון, היה מגדולי חכמי ישראל בכל הדורות. הוא חי במאה ה-12, כתב את הספר המלא הראשון של ההלכה היהודית, והיה גם פילוסוף ורופא נודע.

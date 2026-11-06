@@ -2,7 +2,7 @@
 title: שריפת גופות ביהדות: ההשקפה היהודית על קבורה
 description: למה המסורת היהודית מחייבת קבורה ולא שריפה, המשמעות שמאחורי זה, ואיך הרב יכול לעזור לכל משפחה, יהיה אשר יהיה.
 category: Mourning & remembrance
-related: jewish-funeral, the-soul, afterlife, kaddish
+related: jewish-funeral, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, the-soul, afterlife, kaddish
 local: עומדים בפני החלטה על קבורה או שריפה, או חוששים מהעלות? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או ראו chabadoflamorinda.com/help/planning-a-jewish-funeral.
 ---
 המסורת היהודית מחייבת לקבור את הגוף באדמה ואינה נוהגת בשריפת גופות. זה אחד המנהגים היהודיים העתיקים ביותר, שמושרש בתורה ובכבוד עמוק לגוף האדם כמשכן הנשמה.

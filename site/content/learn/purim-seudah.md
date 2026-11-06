@@ -2,7 +2,7 @@
 title: The Purim Seudah: How to Celebrate the Festive Purim Meal
 description: What the Purim seudah is, when to hold it, what to serve, the custom of drinking l'chaim, and how to make the festive Purim meal joyful and safe.
 category: Shabbat & holidays
-related: megillah, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, birkat-hamazon
+related: megillah, hamantaschen, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, birkat-hamazon
 local: Join the Purim celebration at Chabad of Lamorinda; see chabadoflamorinda.com/events and chabadoflamorinda.com/holidays/purim, or call 925-384-7242.
 ---
 The Purim seudah is the festive meal held on the afternoon of Purim day, and it is one of the four mitzvahs of Purim. Families and friends gather around a table full of good food and wine to celebrate how G-d saved the Jewish people in the days of Mordechai and Esther.

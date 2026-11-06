@@ -2,7 +2,7 @@
 title: שאלות מעשיות בשבת: אורות, מקרר, מעליות וטלפונים
 description: תשובות מעשיות על אורות, שעוני שבת, מקרר, מים חמים, טלפונים, מעליות, פעמוני דלת ובישול בשבת, עם טיפים פשוטים להכנה מראש.
 category: Shabbat & holidays
-related: thirty-nine-melachot, electricity-on-shabbat, cooking-on-yom-tov, shabbat-for-beginners, eruv, shabbat-meals
+related: thirty-nine-melachot, keeping-food-warm-on-shabbat, electricity-on-shabbat, cooking-on-yom-tov, shabbat-for-beginners, eruv, shabbat-meals
 local: יש לכם שאלה על שבת בבית שלכם בלאפייט, מוראגה או אורינדה? התקשרו לרב לבקובסקי 925-384-7242 או ראו chabadoflamorinda.com/shabbat.
 ---
 רוב השאלות המעשיות בשבת חוזרות לרעיון אחד: בשבת לא יוצרים, לא מבשלים, לא מבעירים ולא מדליקים או מכבים דברים, ולכן מכינים הכול לפני שבת. אפשר להשאיר אורות דולקים או להפעיל אותם בשעון שבת, את האוכל שומרים חם על כיריים מכוסות או על פלטה, ואת נורת המקרר מנתקים מראש.

@@ -2,7 +2,7 @@
 title: Chalav Yisrael: What Cholov Yisroel Milk Means
 description: What chalav Yisrael (cholov Yisroel) milk is, how it differs from regular kosher dairy, why many observe it, and how to find and identify it.
 category: Kosher
-related: kosher, kosher-symbols, meat-and-milk, kosher-kitchen
+related: kosher, kosher-cheese, kosher-symbols, meat-and-milk, kosher-kitchen
 local: Questions about chalav Yisrael or kosher dairy in Lafayette, Moraga or Orinda? Call Chabad of Lamorinda at 925-384-7242.
 ---
 Chalav Yisrael, often spelled cholov Yisroel, is milk that was supervised by a Jew from the time of milking, to make sure it comes only from kosher animals. Regular kosher-certified milk in the US is not chalav Yisrael, but many authorities permit it; Chabad and many other communities make an effort to use chalav Yisrael.

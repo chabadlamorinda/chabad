@@ -2,7 +2,7 @@
 title: Cremation in Judaism: The Jewish View on Burial
 description: Why Jewish tradition calls for burial rather than cremation, the meaning behind it, and how the Rabbi can help any family, whatever has happened.
 category: Mourning & remembrance
-related: jewish-funeral, the-soul, afterlife, kaddish
+related: jewish-funeral, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, the-soul, afterlife, kaddish
 local: Facing a decision about burial or cremation, or worried about cost? Call Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/help/planning-a-jewish-funeral.
 ---
 Jewish tradition calls for burying the body in the earth and does not practice cremation. This is one of the oldest Jewish customs, rooted in the Torah and in a deep respect for the human body as the home of the soul.

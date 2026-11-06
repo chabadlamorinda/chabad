@@ -2,7 +2,7 @@
 title: Passover for Beginners: What to Do and How to Prepare
 description: New to Passover? What the holiday is, how to prepare with chametz and matzah, how the Seder works, and the first steps to take in time.
 category: Shabbat & holidays
-related: chametz, matzah, passover-seder, selling-your-chametz, passover-with-kids
+related: chametz, passover-in-lamorinda, matzah, passover-seder, selling-your-chametz, passover-with-kids
 local: Families from Lafayette, Moraga and Orinda can order shmurah matzah at /forms/matzah and sell their chametz at /forms/sell-chametz; call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
 Passover (Pesach) is the eight-day spring holiday celebrating the Jewish people's freedom from slavery in Egypt. For a week we do not eat bread or other leavened grain, we eat matzah, and on the first nights (the first two nights outside Israel) we gather for the Seder to retell the story. If this is your first Passover, you can begin with three simple steps.

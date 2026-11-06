@@ -2,7 +2,7 @@
 title: חיים יהודיים בלמורינדה עם ילדים קטנים: מדריך להורים
 description: מדריך להורים יהודים בלפייט, מורגה ואורינדה, מגיל תינוק עד 13: גן, בית ספר עברי, קייטנה, שבת וחגים עם ילדים.
 category: Lamorinda
-related: jewish-kids-in-lamorinda, shabbat-with-kids, choosing-a-jewish-preschool, new-parents-in-lamorinda, jewish-parenting
+related: jewish-kids-in-lamorinda, jewish-summer-camp-in-lamorinda, shabbat-with-kids, choosing-a-jewish-preschool, new-parents-in-lamorinda, jewish-parenting
 local: הכירו את הרבנית וראו את הכיתות. קבעו סיור ב-chabadoflamorinda.com/forms/preschool או התקשרו 925-384-7242.
 ---
 גידול ילדים יהודים בלפייט, מורגה ואורינדה יכול להיות שמח, ואתם לא צריכים לעשות זאת לבד. מהחודשים הראשונים ועד בר או בת מצווה, לבית חב״ד למורינדה יש תוכנית לכל שלב, וכל המשפחה מוזמנת בלי חברות. הנה הדרך, צעד אחר צעד.

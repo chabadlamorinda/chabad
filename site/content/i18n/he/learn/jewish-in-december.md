@@ -2,7 +2,7 @@
 title: יהודים בדצמבר: לחגוג את חנוכה בגאווה
 description: למשפחות יהודיות בעונה מלאה בחג המולד: איך להאיר את חנוכה, לדבר עם הילדים ועם בית הספר, ולשתף באור היהודי בחום ובכבוד.
 category: Jewish ideas
-related: chanukah-menorah, jewish-east-bay, secular-new-year-jewish-view, halloween-jewish-view, chanukah-for-kids, jewish-pride
+related: chanukah-menorah, chanukah-in-lamorinda, jewish-east-bay, secular-new-year-jewish-view, halloween-jewish-view, chanukah-for-kids, jewish-pride
 local: הדלקות חנוכייה ציבוריות, אירועי חנוכה, וחנוכיות ונרות לבית בלאפייט, מוראגה ואורינדה: chabadoflamorinda.com/holidays/chanukah או 925-384-7242.
 ---
 בדצמבר נדמה שהחנויות, הרדיו והשכונה כולם חוגגים חג של מישהו אחר. משפחות יהודיות רבות מרגישות את זה, במיוחד משפחות עם ילדים. הנה דרך יהודית לחשוב על העונה הזו, ורעיונות מעשיים להפוך אותה לשלכם.

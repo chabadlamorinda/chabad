@@ -2,7 +2,7 @@
 title: Purim for Kids: Costumes, Groggers and Mitzvahs for Children
 description: Purim for children: the story told simply, the four mitzvahs in kid terms, why we dress up, mishloach manot to make together and hamantaschen.
 category: Shabbat & holidays
-related: purim-costumes, fast-of-esther, mishloach-manot, megillah, purim-seudah, tzedakah
+related: purim-costumes, hamantaschen, fast-of-esther, mishloach-manot, megillah, purim-seudah, tzedakah
 local: Chabad of Lamorinda in Lafayette celebrates Purim with families from Lafayette, Moraga and Orinda, and Lamorinda Hebrew School meets Sundays 10 AM to 12 PM for ages 3 to 13. This year's dates and events: chabadoflamorinda.com/holidays/purim or 925-384-7242.
 ---
 Purim is the happiest day of the Jewish year, and children love it: costumes, noise, treats and presents for friends. Every part of the day is a mitzvah that kids can do themselves.

@@ -2,7 +2,7 @@
 title: מיהו יהודי? הזהות היהודית על פי ההלכה
 description: הסבר עדין על מיהו יהודי לפי ההלכה, למה היהדות עוברת דרך האם, ואיך מתבצע גיור.
 category: Jewish ideas
-related: jewish-women, why-be-jewish, russian-speaking-jews-in-lamorinda, jewish-genealogy, hebrew-names, noahide-laws, teshuvah
+related: jewish-women, adult-brit-milah, why-be-jewish, russian-speaking-jews-in-lamorinda, jewish-genealogy, hebrew-names, noahide-laws, teshuvah
 local: אם יש לכם שאלות על הרקע היהודי שלכם, הרב לבקובסקי ישמח לשוחח איתכם באופן אישי וברגישות. התקשרו 925-384-7242.
 ---
 לפי ההלכה, אדם הוא יהודי אם אמו יהודייה, או אם התגייר כהלכה. הזהות היהודית אינה הולכת לאיבוד בגלל חוסר שמירת מצוות, אמונה או ידע: יהודי הוא תמיד יהודי.

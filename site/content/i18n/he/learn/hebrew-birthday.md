@@ -2,7 +2,7 @@
 title: יום הולדת עברי: איך מוצאים וחוגגים את יום ההולדת היהודי
 description: מהו יום הולדת עברי, איך מוצאים אותו בלוח השנה היהודי, והמנהגים המשמעותיים לחגיגתו, כולל פרק התהילים האישי שלכם.
 category: Life cycle
-related: jewish-calendar, jewish-leap-year-and-calendar, jewish-birthday-customs, tehillim, tzedakah, the-rebbe
+related: jewish-calendar, bar-mitzvah-parsha, jewish-leap-year-and-calendar, jewish-birthday-customs, tehillim, tzedakah, the-rebbe
 local: מצאו את יום ההולדת העברי שלכם בכלי החינמי שלנו בכתובת chabadoflamorinda.com/tools/hebrew-birthday, או התקשרו 925-384-7242 כדי לתאם עלייה לתורה בשבת שלפניו.
 ---
 יום ההולדת העברי שלכם הוא התאריך שבו נולדתם לפי הלוח העברי. מכיוון שהלוח העברי הולך לפי הירח, הוא חל בדרך כלל ביום אחר בלוח הלועזי בכל שנה, וזהו יום מיוחד לברכה, להתבוננות ולצמיחה.

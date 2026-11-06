@@ -2,7 +2,7 @@
 title: Шива: простое руководство для скорбящих и посетителей
 description: Что значит сидеть шиву, сколько она длится, обычаи траура дома, что сказать и что принести, навещая дом скорбящих.
 category: Mourning & remembrance
-related: jewish-funeral, writing-a-condolence-note, writing-a-eulogy, suicide-and-jewish-mourning, kaddish, yahrzeit, tehillim
+related: jewish-funeral, shiva-and-holidays, what-to-bring-to-a-shiva-house, writing-a-condolence-note, writing-a-eulogy, suicide-and-jewish-mourning, kaddish, yahrzeit, tehillim
 local: Если ваша семья сидит шиву, позвоните раввину Лабковскому по телефону 925-384-7242. Мы поможем организовать молитвы и поддержим вас в течение этой недели.
 ---
 Шива - это семидневный период траура, который начинается сразу после еврейских похорон. Скорбящие остаются дома, откладывают повседневные дела и принимают посетителей, которые приходят утешить их и поделиться воспоминаниями об ушедшем.

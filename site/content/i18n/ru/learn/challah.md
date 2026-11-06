@@ -2,7 +2,7 @@
 title: Хала: субботний хлеб и заповедь отделения халы
 description: Что такое хала, почему в Шабат едят две халы, как произносить «а-моци» и как исполнить заповедь отделения халы с благословением.
 category: Shabbat & holidays
-related: shabbat, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, blessings, jewish-women
+related: shabbat, baking-challah, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, blessings, jewish-women
 local: Мы можем научить вас печь халу и отделять ее с благословением, а также ответить на любые вопросы об этом. Звоните: 925-384-7242.
 ---
 Хала - это плетеный хлеб, который едят на трапезах Шабата и праздников, и одновременно название заповеди: отделять небольшой кусочек теста при выпечке хлеба. И то и другое напоминает нам, что наша еда и все, что у нас есть, приходит от Б-га.

@@ -2,7 +2,7 @@
 title: Пуримская трапеза: как отмечать праздничную сеуду
 description: Что такое пуримская сеуда, когда её проводят, что подают, обычай пить «лехаим», и как сделать праздничную трапезу радостной и безопасной.
 category: Shabbat & holidays
-related: megillah, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, birkat-hamazon
+related: megillah, hamantaschen, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, birkat-hamazon
 local: Приходите на празднование Пурима в Хабад Ламоринды; смотрите chabadoflamorinda.com/events и chabadoflamorinda.com/holidays/purim или звоните 925-384-7242.
 ---
 Пуримская сеуда это праздничная трапеза во второй половине дня Пурима, одна из четырёх заповедей Пурима. Семьи и друзья собираются за столом, полным вкусной еды и вина, чтобы отпраздновать, как Б-г спас еврейский народ во времена Мордехая и Эстер.

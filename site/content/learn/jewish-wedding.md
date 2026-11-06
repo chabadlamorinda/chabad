@@ -2,7 +2,7 @@
 title: The Jewish Wedding: Traditions and Ceremony Explained Step by Step
 description: A step-by-step guide to the Jewish wedding: the ketubah, chuppah, ring, seven blessings, breaking the glass, and what they mean.
 category: Life cycle
-related: mikvah, attending-a-jewish-wedding, life-events-in-lamorinda, jewish-wedding-on-a-budget, hebrew-names, jewish-women, kosher-kitchen
+related: mikvah, jewish-wedding-in-lamorinda, attending-a-jewish-wedding, life-events-in-lamorinda, jewish-wedding-on-a-budget, hebrew-names, jewish-women, kosher-kitchen
 local: Getting married? Call Rabbi Labkowski at 925-384-7242 and we will help you plan a traditional Jewish wedding that is warm, personal and meaningful.
 ---
 A Jewish wedding is a ceremony under a chuppah (canopy) in which a bride and groom are joined through a ring, a marriage contract called a ketubah, and seven blessings. It is considered one of the holiest days of a person's life, when two halves of one soul are reunited.

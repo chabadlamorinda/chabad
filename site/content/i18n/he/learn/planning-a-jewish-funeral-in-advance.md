@@ -1,6 +1,6 @@
 ---
 title: תכנון הלוויה יהודית מראש: משאלות קבורה, חלקת קבר ומתנה למשפחה
-description: איך מתכננים הלוויה יהודית מראש: כותבים משאלות, שוקלים חלקה בבית עלמין יהודי, ואומרים למשפחה למי להתקשר. פגישה פרטית עם הרב.
+description: תכנון הלוויה יהודית מראש: כותבים משאלות, שוקלים חלקה בבית עלמין יהודי ואומרים למשפחה למי להתקשר. פגישה פרטית עם הרב.
 category: Mourning & remembrance
 related: halachic-will, ethical-will, jewish-funeral, cremation-jewish-view, chevra-kadisha-and-tahara
 local: רוצים לחשוב על זה עם מישהו אכפתי? התקשרו לרב לבקובסקי 925-384-7242 או כתבו דרך /help/talk-to-the-rabbi. זו שיחה פרטית.

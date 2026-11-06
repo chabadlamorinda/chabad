@@ -2,7 +2,7 @@
 title: Кремация в иудаизме: еврейский взгляд на погребение
 description: Почему еврейская традиция предписывает погребение, а не кремацию, в чем смысл этого и как раввин может помочь любой семье, что бы ни случилось.
 category: Mourning & remembrance
-related: jewish-funeral, the-soul, afterlife, kaddish
+related: jewish-funeral, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, the-soul, afterlife, kaddish
 local: Стоите перед выбором между погребением и кремацией или беспокоитесь о расходах? Звоните раввину Лабковскому: 925-384-7242, или зайдите на chabadoflamorinda.com/help/planning-a-jewish-funeral.
 ---
 Еврейская традиция предписывает предавать тело земле и не практикует кремацию. Это один из древнейших еврейских обычаев, укорененный в Торе и в глубоком уважении к человеческому телу как к дому души.

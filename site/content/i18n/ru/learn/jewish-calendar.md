@@ -2,7 +2,7 @@
 title: Еврейский календарь: месяцы, високосные годы и праздники
 description: Как устроен еврейский календарь: лунные месяцы, високосные годы, 12 еврейских месяцев, почему праздники смещаются и почему сутки начинаются с заката.
 category: Shabbat & holidays
-related: rosh-chodesh, jewish-leap-year-and-calendar, secular-new-year-jewish-view, kiddush-levana, holiday-greetings, fast-days, yahrzeit, hebrew-alphabet
+related: rosh-chodesh, shevat, jewish-leap-year-and-calendar, secular-new-year-jewish-view, kiddush-levana, holiday-greetings, fast-days, yahrzeit, hebrew-alphabet
 local: Ближайшие праздники смотрите на нашей странице праздников, а любую дату можно перевести с помощью нашего конвертера еврейских дат. Есть вопросы? Звоните раввину Лабковскому по номеру 925-384-7242.
 ---
 Еврейский календарь - лунно-солнечный: его месяцы следуют за луной, а в високосные годы добавляется дополнительный месяц, чтобы праздники приходились на свое время года. Вот почему еврейские праздники каждый год выпадают на разные даты гражданского календаря, но всегда в одно и то же время года.

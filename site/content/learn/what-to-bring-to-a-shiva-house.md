@@ -1,6 +1,6 @@
 ---
 title: What to Bring to a Shiva House: Food, Kindness and Presence, Not Flowers
-description: What to bring to a shiva house? Kosher food, a memory, your presence. Why Jews usually do not send flowers, and how to give in memory. Help in Lafayette.
+description: What to bring to a shiva house? Kosher food, a memory, your presence. Why Jews usually skip flowers, and how to give in memory.
 category: Mourning & remembrance
 related: comforting-mourners, shiva, writing-a-condolence-note, setting-up-a-shiva-house, kaddish
 local: Not sure what a family needs? Call Rabbi Labkowski at 925-384-7242 and we will help you help them. To give in memory, see /donate.

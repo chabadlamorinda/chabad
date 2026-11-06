@@ -2,7 +2,7 @@
 title: סעודת פורים: איך חוגגים את הסעודה החגיגית
 description: מהי סעודת פורים, מתי עורכים אותה, מה מגישים, מנהג השתייה ל"חיים", ואיך עושים את הסעודה שמחה ובטוחה.
 category: Shabbat & holidays
-related: megillah, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, birkat-hamazon
+related: megillah, hamantaschen, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, birkat-hamazon
 local: הצטרפו לחגיגת פורים בחב״ד למורינדה; ראו chabadoflamorinda.com/events ו-chabadoflamorinda.com/holidays/purim, או התקשרו 925-384-7242.
 ---
 סעודת פורים היא הסעודה החגיגית שנערכת אחר הצהריים ביום הפורים, והיא אחת מארבע מצוות הפורים. משפחות וחברים מתאספים סביב שולחן מלא באוכל טוב וביין כדי לחגוג את ההצלה שה׳ הביא לעם ישראל בימי מרדכי ואסתר.

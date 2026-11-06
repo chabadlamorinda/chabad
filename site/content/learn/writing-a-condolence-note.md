@@ -2,7 +2,7 @@
 title: Writing a Jewish Condolence Note: What to Say and What Not to Say
 description: How to write a Jewish condolence note or message: the traditional words, sharing a memory, what to avoid, when to send it, and giving tzedakah in memory.
 category: Mourning & remembrance
-related: comforting-mourners, shiva, kaddish, yahrzeit, sheloshim
+related: comforting-mourners, what-to-bring-to-a-shiva-house, shiva, kaddish, yahrzeit, sheloshim
 local: If someone in Lafayette, Moraga or Orinda has lost a loved one and you are not sure what to do, call Rabbi Yisroel Labkowski: 925-384-7242.
 ---
 Someone you know has lost a parent, a spouse, a child, a friend. You want to reach out, and the pen freezes. What can words do? In Jewish tradition, words do a great deal: they tell the mourner that they are not alone, and that the person they lost is remembered.

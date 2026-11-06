@@ -2,7 +2,7 @@
 title: The Month of Tevet: Chanukah's Last Days and a Winter of Learning
 description: The Hebrew month of Tevet: the end of Chanukah, Hey Teves, the fast of the Tenth of Tevet, and the yahrzeits of the Rambam and the Alter Rebbe.
 category: Shabbat & holidays
-related: hey-teves, kislev, minor-fast-days, rosh-chodesh, jewish-calendar
+related: hey-teves, shevat, kislev, minor-fast-days, rosh-chodesh, jewish-calendar
 local: See this year's Tevet dates and fast times for Lafayette, Moraga and Orinda at chabadoflamorinda.com/jewish-holidays, or call Rabbi Labkowski at 925-384-7242.
 ---
 Tevet is the fourth month of the Jewish year counting from Rosh Hashanah, and it usually falls in December and January. It opens in the middle of Chanukah, with the menorah still glowing in the window, and continues through the coldest, darkest weeks of winter.

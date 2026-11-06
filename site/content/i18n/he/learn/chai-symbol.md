@@ -2,7 +2,7 @@
 title: הסמל חי: משמעות המילה חי והמספר 18
 description: מה פירוש המילה חי, למה היא שווה 18, למה יהודים נותנים מתנות בכפולות של 18, ואיך חי קשור ל"לחיים".
 category: Jewish ideas
-related: jewish-symbols, jewish-jewelry, star-of-david, tzedakah, hebrew-alphabet
+related: jewish-symbols, gematria, jewish-jewelry, star-of-david, tzedakah, hebrew-alphabet
 local: תנו צדקה בכפולות של חי דרך chabadoflamorinda.com/donate, או התקשרו לחב״ד למורינדה 925-384-7242.
 ---
 חַי פירושו "חי" או "חיים", והמילה נכתבת בשתי אותיות, חי״ת ויו״ד. מכיוון שערכן של האותיות האלה הוא 18, יהודים נותנים מתנות וצדקה בכפולות של 18 כברכה לחיים.

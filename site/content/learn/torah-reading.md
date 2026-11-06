@@ -2,7 +2,7 @@
 title: The Torah Reading in Synagogue: When, Why and How
 description: When the Torah is read in synagogue, how the weekly cycle works, what happens during the reading, and what to do as it takes place.
 category: Prayer & Torah
-related: aliyah, shabbat-day, tanach, haftarah, weekly-parsha, torah
+related: aliyah, parshat-zachor, shabbat-day, tanach, haftarah, weekly-parsha, torah
 local: For Shabbat information, visit chabadoflamorinda.com/shabbat or call 925-384-7242, and we will gladly help you feel at home at the Torah reading.
 ---
 The Torah is read aloud from a handwritten scroll in synagogue every Monday, Thursday and Shabbat, as well as on holidays, Rosh Chodesh and fast days. Over the course of a year, the whole Five Books of Moses are read, one weekly portion at a time.

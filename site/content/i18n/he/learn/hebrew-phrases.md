@@ -2,7 +2,7 @@
 title: ביטויים נפוצים בעברית וביידיש ומתי אומרים אותם
 description: ביטויים יהודיים יומיומיים: שבת שלום, מזל טוב, ברוך השם, בעזרת השם, רפואה שלמה, לחיים, שנה טובה ועוד.
 category: Jewish ideas
-related: hebrew-alphabet, israelis-in-lamorinda, holiday-greetings, hebrew-reading-for-adults, blessings, chai-symbol
+related: hebrew-alphabet, mazal-and-astrology, israelis-in-lamorinda, holiday-greetings, hebrew-reading-for-adults, blessings, chai-symbol
 local: רוצים ללמוד עברית באווירה ידידותית? שאלו על שיעורים ב-chabadoflamorinda.com/programs/adult-education או התקשרו 925-384-7242.
 ---
 כמה ביטויים בעברית וביידיש חוזרים שוב ושוב בחיים היהודיים, מ"שבת שלום" ביום שישי ועד "מזל טוב" בכל שמחה. כשיודעים מה פירושם ומתי לומר אותם, כל אחד מרגיש בנוח בבית הכנסת, ליד שולחן השבת או בשמחה.

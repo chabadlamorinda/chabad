@@ -2,7 +2,7 @@
 title: Challah: Shabbat Bread and the Mitzvah of Separating Challah
 description: What challah is, why we eat two loaves on Shabbat, how to say Hamotzi, and how to do the mitzvah of separating challah with the blessing.
 category: Shabbat & holidays
-related: shabbat, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, blessings, jewish-women
+related: shabbat, baking-challah, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, blessings, jewish-women
 local: We can teach you to bake challah and do the separation with the blessing, and help with any question about it. Call 925-384-7242.
 ---
 Challah is the braided bread eaten at Shabbat and holiday meals, and it is also the name of a mitzvah: separating a small piece of dough when baking bread. Both remind us that our food, and everything we have, comes from G-d.

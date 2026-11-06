@@ -2,7 +2,7 @@
 title: Buying Tefillin: How to Choose a Kosher Pair
 description: What makes tefillin kosher, why prices vary, gassos and dakos, avoiding fakes, Chabad custom, and how to have your tefillin checked.
 category: Prayer & Torah
-related: tefillin, bar-mitzvah, mezuzah, choosing-a-mezuzah
+related: tefillin, checking-mezuzahs-and-tefillin, bar-mitzvah, mezuzah, choosing-a-mezuzah
 local: Rabbi Yisroel Labkowski helps families in Lafayette, Moraga and Orinda order kosher tefillin, check them and learn to put them on. Call 925-384-7242.
 ---
 A pair of tefillin is one of the most important things a Jewish man will ever own. He wears them almost every weekday of his life. Here is what to look for, so that the tefillin you buy are truly kosher. For what tefillin are and how to wear them, see [Tefillin](/learn/tefillin).

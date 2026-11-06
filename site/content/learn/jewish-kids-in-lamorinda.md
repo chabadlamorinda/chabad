@@ -2,7 +2,7 @@
 title: Jewish Kids in Lafayette, Moraga and Orinda: Preschool, Hebrew School, CKids and Camp
 description: Jewish programs for kids in Lafayette, Moraga and Orinda: preschool, Sunday Hebrew School, CKids afterschool, camp and holiday events.
 category: Lamorinda
-related: jewish-parenting, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
+related: jewish-parenting, jewish-summer-camp-in-lamorinda, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
 local: Register your kids at chabadoflamorinda.com/forms/hebrew-school or call 925-384-7242 to find the right program.
 ---
 Raising Jewish kids in Lafayette, Moraga or Orinda? Chabad of Lamorinda in Lafayette has a place for every age, from a first birthday to a bar or bat mitzvah. Children are a central focus here, and every program is open to every Jewish family, with no membership required.

@@ -2,7 +2,7 @@
 title: Tu BiShvat Seder: How to Celebrate the New Year for Trees
 description: How to hold a Tu BiShvat seder or fruit gathering: the seven species, the right blessings and their order, and the Kabbalistic customs.
 category: Shabbat & holidays
-related: shehecheyanu, bal-tashchit, blessings, jewish-calendar, jewish-foods
+related: shehecheyanu, blessing-on-blossoming-trees, seven-species, shevat, bal-tashchit, blessings, jewish-calendar, jewish-foods
 local: Celebrate Tu BiShvat with us; see chabadoflamorinda.com/holidays/tu-bishvat or call 925-384-7242.
 ---
 A Tu BiShvat seder is a festive gathering on the 15th of the Hebrew month of Shevat, the New Year for Trees, where we eat a variety of fruits, especially those for which the Land of Israel is praised, and say blessings over them. It is a simple, joyful way to thank G-d for His gifts and to learn about the trees of Israel.

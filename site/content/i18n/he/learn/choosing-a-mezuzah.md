@@ -2,7 +2,7 @@
 title: בחירת מזוזה: איך קונים קלף כשר
 description: הקלף חשוב יותר מהבית. איך מבדילים בין מזוזה כשרה למודפסת, גדלים, איכות מהודרת ואיפה לקנות.
 category: Jewish home
-related: mezuzah, judaica-buying-guide, chanukat-habayit, setting-up-a-jewish-home, buying-tefillin
+related: mezuzah, checking-mezuzahs-and-tefillin, judaica-buying-guide, chanukat-habayit, setting-up-a-jewish-home, buying-tefillin
 local: הרב ישראל לבקובסקי עוזר למשפחות בלאפייט, מוראגה ואורינדה להזמין מזוזות כשרות, לקבוע אותן ולבדוק אותן. התקשרו 925-384-7242.
 ---
 אנשים רבים בוחרים מזוזה לפי הבית: זכוכית, כסף, קרמיקה או עץ. אבל המצווה היא הקלף שבפנים. בית יפה עם קלף לא נכון אינו מזוזה כלל. הנה איך לבחור נכון. איפה ואיך קובעים מזוזה, ראו [מזוזה](/learn/mezuzah).

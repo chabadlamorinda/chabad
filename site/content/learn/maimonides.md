@@ -2,7 +2,7 @@
 title: Maimonides (the Rambam): His Life, Works and Teachings
 description: Who Maimonides was, his great works including the Mishneh Torah and the Guide for the Perplexed, his 13 Principles of Faith, and his legacy.
 category: Jewish ideas
-related: rambam, talmud, mishnah, belief-in-g-d
+related: rambam, thirteen-principles-of-faith, talmud, mishnah, belief-in-g-d
 local: Join the worldwide daily study of the Rambam or ask about learning with the Rabbi. Call 925-384-7242 or see chabadoflamorinda.com/programs/adult-education.
 ---
 Maimonides, known in Hebrew as the Rambam, was Rabbi Moshe ben Maimon, one of the greatest Jewish scholars of all time. He lived in the 12th century, wrote the first complete code of Jewish law, and was also a philosopher and a renowned physician.

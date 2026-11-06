@@ -2,7 +2,7 @@
 title: צוואה מוסרית: איך כותבים מכתב מורשת יהודי
 description: מהי צוואה מוסרית, שורשיה בתורה, וצעדים פשוטים לכתיבת מכתב שמעביר את הערכים שלכם למשפחה.
 category: Life cycle
-related: jewish-parenting, yahrzeit, honoring-parents, tzedakah
+related: jewish-parenting, planning-a-jewish-funeral-in-advance, yahrzeit, honoring-parents, tzedakah
 local: רוצים עזרה בחשיבה על הצוואה המוסרית שלכם או בתכנון יהודי לסוף החיים? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו בכתובת chabadoflamorinda.com/help/talk-to-the-rabbi.
 ---
 צוואה מוסרית היא מכתב שבו אתם מעבירים לילדיכם ולאהוביכם את הערכים, החוכמה, הברכות והתקוות שלכם. צוואה משפטית מעבירה רכוש. צוואה מוסרית מעבירה את מי שאתם.

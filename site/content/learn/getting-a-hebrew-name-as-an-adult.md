@@ -2,7 +2,7 @@
 title: Getting a Hebrew Name as an Adult
 description: Never received a Hebrew name, or not sure what it is? Why it matters, how to choose one, naming at the Torah, and whose name follows yours.
 category: Life cycle
-related: hebrew-names, jewish-baby-names, aliyah, mi-sheberach, ketubah
+related: hebrew-names, adult-bar-bat-mitzvah, jewish-baby-names, aliyah, mi-sheberach, ketubah
 local: Never got a Hebrew name, or want to receive one properly in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242, and we will do it together.
 ---
 "I don't think I ever got a Hebrew name." Rabbis hear this all the time. The good news is simple: it is never too late. Receiving a Hebrew name as an adult is a short, joyful step, and one of the most common things a Chabad Rabbi helps with.

@@ -2,7 +2,7 @@
 title: Hosting a Chanukah Party: a Simple Guide
 description: How to host a warm Chanukah party at home: lighting the menorah together, the blessings, foods, dreidel, gelt, ideas for kids, and inviting someone new.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-foods, dreidel, hachnasat-orchim
+related: chanukah-menorah, menorah-oil-and-candles, chanukah-foods, dreidel, hachnasat-orchim
 local: Want a menorah, candles or a dreidel for your party? Call Chabad of Lamorinda at 925-384-7242, and see our Chanukah events for Lafayette, Moraga and Orinda.
 ---
 Chanukah is the perfect holiday to open your home. It lasts eight nights, the main mitzvah takes a few minutes, and everyone, from toddlers to grandparents, can take part. A Chanukah party does not need to be big or fancy: a menorah, some latkes, a dreidel and a few friends make a wonderful evening.

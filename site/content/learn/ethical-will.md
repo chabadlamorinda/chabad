@@ -2,7 +2,7 @@
 title: Ethical Will: How to Write a Jewish Legacy Letter
 description: What an ethical will (tzava'ah) is, its roots in the Torah, and simple steps for writing a letter that passes on your values to your family.
 category: Life cycle
-related: jewish-parenting, yahrzeit, honoring-parents, tzedakah
+related: jewish-parenting, planning-a-jewish-funeral-in-advance, yahrzeit, honoring-parents, tzedakah
 local: Want help thinking through your ethical will or Jewish end-of-life planning? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/help/talk-to-the-rabbi.
 ---
 An ethical will is a letter in which you pass on your values, wisdom, blessings and hopes to your children and loved ones. A legal will passes on property; an ethical will passes on who you are.

@@ -6,12 +6,15 @@
   "guides": [
    "when-a-loved-one-is-dying",
    "aninut",
+   "chevra-kadisha-and-tahara",
    "jewish-funeral",
    "writing-a-eulogy",
    "kriah",
    "shiva",
    "setting-up-a-shiva-house",
+   "shiva-and-holidays",
    "comforting-mourners",
+   "what-to-bring-to-a-shiva-house",
    "writing-a-condolence-note",
    "kaddish",
    "sheloshim",
@@ -30,6 +33,7 @@
   "guides": [
    "shabbat-for-beginners",
    "preparing-for-shabbat",
+   "keeping-food-warm-on-shabbat",
    "shabbat-candles",
    "friday-night-dinner-step-by-step",
    "kabbalat-shabbat",
@@ -52,10 +56,14 @@
    "kosher-symbols",
    "kosher-certification",
    "meat-and-milk",
+   "pareve",
    "kosher-kitchen",
    "kosher-meat",
+   "kosher-fish",
    "chalav-yisrael",
+   "kosher-cheese",
    "kosher-wine",
+   "pas-yisrael-and-bishul-yisrael",
    "tevilat-kelim",
    "checking-for-insects",
    "kosher-on-a-budget",
@@ -94,6 +102,7 @@
   "guides": [
    "jewish-dating",
    "jewish-engagement",
+   "jewish-wedding-in-lamorinda",
    "choosing-a-wedding-date",
    "kallah-classes",
    "chosson-classes",
@@ -113,6 +122,7 @@
   "guides": [
    "jewish-pregnancy",
    "jewish-baby-names",
+   "shalom-zachar",
    "preparing-for-a-bris",
    "brit-milah",
    "simchat-bat",
@@ -129,10 +139,12 @@
    "bar-mitzvah",
    "bat-mitzvah",
    "bar-bat-mitzvah-timeline",
+   "bar-mitzvah-parsha",
    "tefillin",
    "bar-mitzvah-speech",
    "attending-a-bar-bat-mitzvah",
-   "bat-mitzvah-projects"
+   "bat-mitzvah-projects",
+   "adult-bar-bat-mitzvah"
   ]
  },
  {
@@ -143,7 +155,9 @@
    "chanukah-story",
    "the-maccabees",
    "chanukah-menorah",
+   "menorah-oil-and-candles",
    "lessons-of-chanukah",
+   "women-and-chanukah",
    "al-hanissim-and-hallel",
    "chanukah-songs",
    "dreidel",
@@ -202,6 +216,7 @@
   "guides": [
    "why-be-jewish",
    "belief-in-g-d",
+   "thirteen-principles-of-faith",
    "torah-and-science",
    "why-pray",
    "the-soul",
@@ -235,7 +250,8 @@
    "giving-criticism-kindly",
    "forgiveness-and-making-peace",
    "forgiving-yourself",
-   "changing-a-bad-habit"
+   "changing-a-bad-habit",
+   "yetzer-hara"
   ]
  }
 ]

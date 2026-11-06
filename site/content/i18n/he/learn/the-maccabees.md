@@ -2,7 +2,7 @@
 title: מי היו המכבים? מתתיהו, יהודה, יהודית ואומץ הלב של חנוכה
 description: מי היו המכבים: מתתיהו הכהן ובניו, יהודה המכבי, גזירות היוונים, הדלקת המנורה מחדש במקדש, יהודית, ומה זה אומר לנו היום.
 category: Shabbat & holidays
-related: chanukah-story, lessons-of-chanukah, the-holy-temple, jewish-pride, jewish-history-overview
+related: chanukah-story, women-and-chanukah, lessons-of-chanukah, the-holy-temple, jewish-pride, jewish-history-overview
 local: שמעו את הסיפור לילדים ולמבוגרים בחגיגות חנוכה של חב״ד למורינדה ללאפייט, מוראגה ואורינדה; פרטים בעמוד חנוכה או בטלפון 925-384-7242.
 ---
 בכל חנוכה אנחנו מודים לה׳ "על המלחמות" וגם על נס פך השמן. מי נלחם בהן? המכבים היו משפחת כהנים מעיירה קטנה שסירבה לתת ליהדות להימחק, ושאומץ ליבם, נגד כל הסיכויים, נתן לנו את החג שאנחנו עדיין חוגגים כ-2,200 שנה אחר כך.

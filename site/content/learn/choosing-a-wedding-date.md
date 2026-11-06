@@ -2,7 +2,7 @@
 title: Choosing a Wedding Date: Jewish Calendar Guidelines
 description: Which days Jewish weddings are not held, the Chabad custom of the first half of the month, planning around the mikvah, and the wedding-day fast.
 category: Life cycle
-related: jewish-wedding, jewish-calendar, counting-the-omer, three-weeks
+related: jewish-wedding, jewish-wedding-in-lamorinda, jewish-calendar, counting-the-omer, three-weeks
 local: Planning a wedding in Lafayette, Moraga, Orinda or the East Bay? Call Rabbi Yisroel or Rebbetzin Tzipora Labkowski before booking a date, 925-384-7242.
 ---
 Before booking a hall, it is wise to check the Jewish calendar. Some days are not used for weddings, some are especially favored, and the bride's own calendar matters too. A short call to the Rabbi before you sign a contract can save a lot of trouble.

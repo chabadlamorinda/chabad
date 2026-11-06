@@ -2,7 +2,7 @@
 title: Jewish Lamorinda With Young Children: A Parents' Guide
 description: A guide for Jewish parents in Lafayette, Moraga and Orinda, from baby to age 13: preschool, Hebrew school, camp, Shabbat and holidays with kids.
 category: Lamorinda
-related: jewish-kids-in-lamorinda, shabbat-with-kids, choosing-a-jewish-preschool, new-parents-in-lamorinda, jewish-parenting
+related: jewish-kids-in-lamorinda, jewish-summer-camp-in-lamorinda, shabbat-with-kids, choosing-a-jewish-preschool, new-parents-in-lamorinda, jewish-parenting
 local: Meet the Rebbetzin and see the classrooms. Schedule a tour at chabadoflamorinda.com/forms/preschool or call 925-384-7242.
 ---
 Raising Jewish children in Lafayette, Moraga and Orinda can be joyful, and you do not have to do it alone. From the first months to a bar or bat mitzvah, Chabad of Lamorinda has a program for each stage, and the whole family is welcome with no membership. Here is the path, step by step.

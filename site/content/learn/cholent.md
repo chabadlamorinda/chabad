@@ -2,7 +2,7 @@
 title: Cholent: the Shabbat Stew and Why We Eat It
 description: What cholent is, why Jews eat a hot stew on Shabbat day, how it is kept warm from Friday, Sephardi hamin and a simple recipe outline.
 category: Shabbat & holidays
-related: shabbat-meals, jewish-foods, sponsoring-a-kiddush, thirty-nine-melachot, shabbat-practical-questions
+related: shabbat-meals, keeping-food-warm-on-shabbat, jewish-foods, sponsoring-a-kiddush, thirty-nine-melachot, shabbat-practical-questions
 local: Taste it for yourself: there is hot cholent at the Kiddush after Shabbat services (Saturday at 10 AM) every week at Chabad of Lamorinda, open to everyone.
 ---
 Cholent is the slow-cooked stew of meat, beans, barley and potatoes that Jews have eaten for lunch on Shabbat for centuries. It goes on the fire before Shabbat begins on Friday afternoon, simmers gently all night, and comes to the table on Saturday hot, rich and fragrant.

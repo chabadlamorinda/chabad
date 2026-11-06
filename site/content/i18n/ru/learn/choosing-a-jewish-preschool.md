@@ -2,7 +2,7 @@
 title: Как выбрать еврейский детский сад в Лафайетте, Мораге и Оринде: что спросить на экскурсии
 description: Еврейский детский сад в Лафайетте, Мораге и Оринде: факты о Еврейском детском саде Ламоринды, от 12 месяцев до 4 лет, и что спросить на экскурсии.
 category: Lamorinda
-related: jewish-parenting, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
+related: jewish-parenting, jewish-summer-camp-in-lamorinda, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
 local: Запишитесь на экскурсию в Еврейский детский сад Ламоринды на chabadoflamorinda.com/forms/preschool или звоните 925-384-7242.
 ---
 Выбор детского сада - одно из первых больших решений молодой семьи. Если вы живете в Лафайетте, Мораге или Оринде и хотите, чтобы первое учебное заведение вашего ребенка было теплым, радостным и еврейским, вот что стоит знать о **Еврейском детском саде Ламоринды** в Лафайетте, и какие вопросы стоит задать на любой экскурсии.

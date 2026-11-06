@@ -2,7 +2,7 @@
 title: Седер Ту би-Шват: как отмечать Новый год деревьев
 description: Как провести седер Ту би-Шват или фруктовое застолье: семь видов, правильные благословения и их порядок, каббалистические обычаи.
 category: Shabbat & holidays
-related: shehecheyanu, bal-tashchit, blessings, jewish-calendar, jewish-foods
+related: shehecheyanu, blessing-on-blossoming-trees, seven-species, shevat, bal-tashchit, blessings, jewish-calendar, jewish-foods
 local: Отмечайте Ту би-Шват с нами: chabadoflamorinda.com/holidays/tu-bishvat или по телефону 925-384-7242.
 ---
 Седер Ту би-Шват - это праздничное застолье 15-го числа еврейского месяца шват, в Новый год деревьев. На нем едят разные плоды, особенно те, которыми славится Земля Израиля, и произносят над ними благословения. Это простой и радостный способ поблагодарить Б-га за Его дары и узнать о деревьях Израиля.

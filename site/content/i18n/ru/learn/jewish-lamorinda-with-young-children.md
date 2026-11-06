@@ -2,7 +2,7 @@
 title: Еврейская жизнь в Ламоринде с маленькими детьми: руководство для родителей
 description: Руководство для еврейских родителей в Лафайете, Морага и Оринде, от младенца до 13 лет: детский сад, еврейская школа, лагерь, Шаббат и праздники.
 category: Lamorinda
-related: jewish-kids-in-lamorinda, shabbat-with-kids, choosing-a-jewish-preschool, new-parents-in-lamorinda, jewish-parenting
+related: jewish-kids-in-lamorinda, jewish-summer-camp-in-lamorinda, shabbat-with-kids, choosing-a-jewish-preschool, new-parents-in-lamorinda, jewish-parenting
 local: Познакомьтесь с ребецн и посмотрите классы. Запишитесь на экскурсию на chabadoflamorinda.com/forms/preschool или позвоните 925-384-7242.
 ---
 Растить еврейских детей в Лафайете, Мораге и Оринде может быть радостно, и вам не нужно делать это в одиночку. С первых месяцев до бар- или бат-мицвы в Хабаде Ламоринды есть программа для каждого возраста, и вся семья желанна без всякого членства. Вот путь шаг за шагом.

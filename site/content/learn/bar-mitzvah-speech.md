@@ -2,7 +2,7 @@
 title: Bar Mitzvah Speech: How to Write and Give a D'var Torah
 description: How to write a bar mitzvah speech: a simple structure, linking it to the Torah portion, a Chassidic thought, thanking parents and tips for the day.
 category: Life cycle
-related: bar-mitzvah, weekly-parsha, tefillin, bar-bat-mitzvah-in-lamorinda
+related: bar-mitzvah, bar-mitzvah-parsha, weekly-parsha, tefillin, bar-bat-mitzvah-in-lamorinda
 local: Bar mitzvah boys in Lafayette, Moraga, Orinda and the East Bay: Rabbi Yisroel Labkowski is glad to help write and practice the speech, 925-384-7242.
 ---
 At most bar mitzvah celebrations, the bar mitzvah boy stands up and shares a short Torah thought, called a d'var Torah or drasha. For many boys it is the first time they teach Torah in public. It does not need to be long or complicated. It needs to be his.

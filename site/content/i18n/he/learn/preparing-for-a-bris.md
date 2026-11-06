@@ -2,7 +2,7 @@
 title: מתכוננים לברית: מדריך צעד אחר צעד להורים טריים
 description: תכנון ברית מילה: היום השמיני ומתי דוחים, בחירת מוהל, הסנדק והקווטר, הסעודה, מתן השם ונוחות התינוק.
 category: Life cycle
-related: brit-milah, jewish-baby-names, baby-naming, new-parents-in-lamorinda, pidyon-haben
+related: brit-milah, shalom-zachar, jewish-baby-names, baby-naming, new-parents-in-lamorinda, pidyon-haben
 local: מצפים לבן בלאפייט, מוראגה או אורינדה? התקשרו לרב ישראל לבקובסקי, 925-384-7242, ונעזור לכם בכל שלב של הברית.
 ---
 מזל טוב! בן בדרך, או שזה עתה נולד, ובעוד כשבוע תתקיים ברית. המדריך הזה מלווה אתכם צעד אחר צעד. הטקס עצמו מוסבר ב[ברית מילה](/learn/brit-milah); כאן נתמקד בהכנות.

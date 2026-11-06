@@ -2,7 +2,7 @@
 title: Preparing for a Bris: A Step-by-Step Guide for New Parents
 description: Planning a brit milah: the eighth day and when it is delayed, choosing a mohel, the sandak and kvatter, the meal, the naming and the baby's comfort.
 category: Life cycle
-related: brit-milah, jewish-baby-names, baby-naming, new-parents-in-lamorinda, pidyon-haben
+related: brit-milah, shalom-zachar, jewish-baby-names, baby-naming, new-parents-in-lamorinda, pidyon-haben
 local: Expecting a baby boy in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242 and we will help you with every step of the bris.
 ---
 Mazal tov! A baby boy is on the way, or has just arrived, and in about a week there will be a bris. This guide walks you through it step by step. The ceremony itself is explained in [brit milah](/learn/brit-milah); here we focus on getting ready.

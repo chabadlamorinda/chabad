@@ -2,7 +2,7 @@
 title: Kosher Meat: What Makes Meat and Poultry Kosher
 description: Which animals are kosher, how shechita and inspection work, what glatt means, and how kosher meat is salted to remove the blood.
 category: Kosher
-related: kosher, kosher-certification, kosher-symbols, meat-and-milk, kosher-kitchen
+related: kosher, kosher-fish, kosher-certification, kosher-symbols, meat-and-milk, kosher-kitchen
 local: Have a question about buying or preparing kosher meat? Call Rabbi Labkowski at 925-384-7242 and we will gladly help.
 ---
 Kosher meat comes from a kosher species of animal or bird that was slaughtered by a trained shochet, inspected for health, and then soaked and salted to remove the blood. Every step matters, so meat from a kosher animal is still not kosher unless all of them were done properly.

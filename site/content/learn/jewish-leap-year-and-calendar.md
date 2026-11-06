@@ -2,7 +2,7 @@
 title: The Jewish Leap Year and How the Calendar Works, in Plain Words
 description: Why Jewish holidays seem to move: lunar months, the leap year with a second Adar, Rosh Chodesh, your Hebrew birthday and why days begin at night.
 category: Jewish ideas
-related: jewish-calendar, rosh-chodesh, hebrew-birthday, birkat-hachodesh, kiddush-levana
+related: jewish-calendar, adar, rosh-chodesh, hebrew-birthday, birkat-hachodesh, kiddush-levana
 local: Want to know your Hebrew birthday or a yahrzeit date? Rabbi Yisroel Labkowski will work it out for you, for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 "Is Chanukah early this year?" Every Jewish family asks it. The answer is that Chanukah is always on the 25th of Kislev; it is the Jewish calendar and the everyday calendar that drift apart and come back together. Here is how it all works, without the math.

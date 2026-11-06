@@ -2,7 +2,7 @@
 title: אנינות: הזמן שבין הפטירה לקבורה
 description: מהי אנינות, מיהו אונן, הדינים המיוחדים לאבלים לפני הלוויה, ואיך עוזרים למשפחה בשעות הראשונות אחרי האובדן.
 category: Mourning & remembrance
-related: jewish-funeral, shiva, kaddish, comforting-mourners
+related: jewish-funeral, chevra-kadisha-and-tahara, shiva, kaddish, comforting-mourners
 local: אם מישהו נפטר זה עתה, התקשרו לרב לבקובסקי בטלפון 925-384-7242 וראו chabadoflamorinda.com/help/someone-passed-away. נלווה את משפחתכם בכל שלב.
 ---
 אנינות היא תקופת האבלות מרגע פטירתו של קרוב משפחה קרוב ועד הקבורה. אבל בתקופה הזאת נקרא *אונן*, וההלכה היהודית פוטרת אותו מחובות רבות כדי שיוכל להתמסר כולו לטיפול בנפטר.

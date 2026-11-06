@@ -2,7 +2,7 @@
 title: Changing a Bad Habit: Jewish Wisdom for Real Change
 description: How to break a bad habit and build a good one, with practical steps from the Torah, Maimonides and the Tanya: small steps, a new routine and a fresh start every day.
 category: Jewish ideas
-related: teshuvah, forgiving-yourself, free-will, anger-jewish-view, patience, making-every-day-count
+related: teshuvah, yetzer-hara, forgiving-yourself, free-will, anger-jewish-view, patience, making-every-day-count
 local: Want to talk it through? Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Too much time on the phone, a short temper, gossip, junk food, putting things off. Almost everyone has a habit they would love to change. Judaism is full of practical wisdom about change, because it believes every person can change.

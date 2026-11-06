@@ -2,7 +2,7 @@
 title: שלושים: שלושים ימי האבלות שאחרי הלוויה
 description: מהם השלושים, איך סופרים את שלושים ימי האבלות, אילו מנהגים חלים בהם, ואיך משפחות מציינות את סיום השלושים.
 category: Mourning & remembrance
-related: shiva, kaddish, year-of-mourning, yahrzeit
+related: shiva, shiva-and-holidays, kaddish, year-of-mourning, yahrzeit
 local: כדי לארגן קדיש, אזכרה לשלושים או לימוד לזכר יקירכם, התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו בכתובת chabadoflamorinda.com/kaddish.
 ---
 השלושים הם תקופת אבלות של 30 יום שמתחילה ביום הקבורה וכוללת את שבוע השבעה. אחרי שהשבעה מסתיימת, האבלים חוזרים לעבודה ולשגרה, אבל ממשיכים לנהוג במנהגי אבלות מסוימים עד היום השלושים.

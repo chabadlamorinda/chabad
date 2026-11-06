@@ -2,7 +2,7 @@
 title: Aninut: The Time Between Death and Burial
 description: What aninut is, who is an onen, the special rules for mourners before the funeral, and how to help a family during the first hours after a loss.
 category: Mourning & remembrance
-related: jewish-funeral, shiva, kaddish, comforting-mourners
+related: jewish-funeral, chevra-kadisha-and-tahara, shiva, kaddish, comforting-mourners
 local: If someone has just passed away, call Rabbi Labkowski at 925-384-7242 and see chabadoflamorinda.com/help/someone-passed-away. We will guide your family through every step.
 ---
 Aninut is the period of mourning from the moment of a close relative's death until the burial. A mourner during this time is called an *onen*, and Jewish law frees them from many obligations so they can focus fully on caring for the person who passed away.

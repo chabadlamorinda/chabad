@@ -2,7 +2,7 @@
 title: Пурим для детей: костюмы, трещотки и мицвот для детей
 description: Пурим для детей: история простыми словами, четыре мицвы понятным языком, зачем наряжаться, мишлоах манот вместе и гоменташи.
 category: Shabbat & holidays
-related: purim-costumes, fast-of-esther, mishloach-manot, megillah, purim-seudah, tzedakah
+related: purim-costumes, hamantaschen, fast-of-esther, mishloach-manot, megillah, purim-seudah, tzedakah
 local: Хабад Ламоринды в Лафайетте празднует Пурим с семьями Лафайетта, Мораги и Оринды, а еврейская школа Ламоринды занимается по воскресеньям с 10:00 до 12:00 для детей от 3 до 13 лет. Даты и мероприятия этого года: chabadoflamorinda.com/holidays/purim или 925-384-7242.
 ---
 Пурим - самый радостный день еврейского года, и дети его обожают: костюмы, шум, сладости и подарки друзьям. Каждая часть этого дня - мицва, которую дети могут выполнить сами.

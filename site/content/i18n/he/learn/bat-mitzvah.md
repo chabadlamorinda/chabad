@@ -2,7 +2,7 @@
 title: בת מצווה: מה המשמעות ואיך חוגגים בגיל 12
 description: מהי בת מצווה, למה בנות יהודיות מגיעות לגיל מצוות ב-12, ודרכים משמעותיות להתכונן ולחגוג.
 category: Life cycle
-related: bar-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah-projects, jewish-women, shabbat-candles, challah
+related: bar-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah-projects, jewish-women, shabbat-candles, challah
 local: בית חב״ד למורינדה עוזר לבנות להתכונן לבת מצווה משמעותית ואישית. התקשרו לרב לבקובסקי או לרבנית ציפורה לבקובסקי בטלפון 925-384-7242 או בקרו בעמוד תוכנית הבת מצווה שלנו.
 ---
 בת מצווה היא הרגע שבו נערה יהודייה מגיעה לגיל 12 ונעשית אחראית לקיום המצוות. זה קורה מאליו ביום הולדתה ה-12 לפי הלוח העברי. חגיגה מכבדת את אבן הדרך הזו, אבל היא נעשית בת מצווה עם חגיגה או בלעדיה.

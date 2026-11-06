@@ -2,7 +2,7 @@
 title: Jewish Life Events in Lafayette, Moraga and Orinda: Who to Call and How We Help
 description: A birth, bar or bat mitzvah, wedding, illness or death in Lafayette, Moraga, Orinda or nearby? Who to call at Chabad of Lamorinda and how we help.
 category: Lamorinda
-related: brit-milah, bar-mitzvah, jewish-wedding, jewish-funeral
+related: brit-milah, jewish-wedding-in-lamorinda, jewish-funerals-near-lafayette, bar-mitzvah, jewish-wedding, jewish-funeral
 local: For any life event, call Rabbi Yisroel Labkowski at 925-384-7242 or see chabadoflamorinda.com/help.
 ---
 The big moments of life, the joyful ones and the hard ones, are when a family most needs a Rabbi who knows them. For Jewish families in Lafayette, Moraga, Orinda, Pleasant Hill and Martinez, the answer to "who do we call?" is simple: call **Rabbi Yisroel Labkowski at 925-384-7242**. He and Rebbetzin Tzipora Labkowski help with every life event, whatever your background or level of observance. There is no membership, and you do not need to have been here before.

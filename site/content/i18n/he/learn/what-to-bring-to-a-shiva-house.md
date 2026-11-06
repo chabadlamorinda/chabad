@@ -1,6 +1,6 @@
 ---
 title: מה מביאים לבית אבל בשבעה: אוכל, חסד ונוכחות, לא פרחים
-description: מה מביאים לבית אבל? אוכל כשר, זיכרון ונוכחות. למה בדרך כלל לא שולחים פרחים, ואיך תורמים לזכרו. עזרה בלפייט.
+description: מה מביאים לבית אבל? אוכל כשר, זיכרון ונוכחות. למה בדרך כלל לא שולחים פרחים, ואיך תורמים לזכרו.
 category: Mourning & remembrance
 related: comforting-mourners, shiva, writing-a-condolence-note, setting-up-a-shiva-house, kaddish
 local: לא בטוחים מה המשפחה צריכה? התקשרו לרב לבקובסקי 925-384-7242 ונעזור לכם לעזור להם. לתרומה לזכרו ראו /donate.

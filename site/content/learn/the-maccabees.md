@@ -2,7 +2,7 @@
 title: Who Were the Maccabees? Mattityahu, Judah, Yehudit and the Courage of Chanukah
 description: Who the Maccabees were: Mattityahu the priest and his sons, Judah the Maccabee, the Greek decrees, the Temple relit, Yehudit, and what it means today.
 category: Shabbat & holidays
-related: chanukah-story, lessons-of-chanukah, the-holy-temple, jewish-pride, jewish-history-overview
+related: chanukah-story, women-and-chanukah, lessons-of-chanukah, the-holy-temple, jewish-pride, jewish-history-overview
 local: Hear the story told to children and grown-ups at Chabad of Lamorinda's Chanukah celebrations for Lafayette, Moraga and Orinda; details on the Chanukah page or at 925-384-7242.
 ---
 Every Chanukah we thank G-d for "the battles" as well as the miracle of the oil. Who fought them? The Maccabees were a family of priests from a small town who refused to let Judaism be erased, and whose courage, against all odds, gave us the holiday we still celebrate about 2,200 years later.
