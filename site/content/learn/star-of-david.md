@@ -13,7 +13,7 @@ Magen David (מָגֵן דָּוִד) means "Shield of David." It refers to King
 
 ## Where it comes from
 
-The six-pointed star is not described in the Torah or the Talmud. It appears as a decoration in some ancient and medieval Jewish settings, alongside many other designs. Over time, especially in Central Europe in the late Middle Ages, Jewish communities began using it on flags, prayer books and synagogue buildings. By the 1800s it was widely recognized as the Jewish symbol, in the way the cross became the symbol of Christianity.
+The six-pointed star is not described in the Torah or the Talmud. It appears as a decoration in some ancient and medieval Jewish settings, alongside many other designs. Over time, especially in Central Europe in the late Middle Ages, Jewish communities began using it on flags, prayer books and synagogue buildings. By the 1800s it was widely recognized as the Jewish symbol.
 
 During the Holocaust, the Nazis forced Jews to wear a yellow star as a badge of shame. Jews turned it back into a badge of honor, and today it appears on the flag of Israel, on synagogues, on jewelry and on Jewish gravestones.
 

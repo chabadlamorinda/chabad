@@ -53,10 +53,6 @@ Jewish belief is that the entire Torah was given by G-d to Moses, word for word.
 
 The Torah is written in Hebrew. Translations exist in nearly every language, and many people study with an English translation side by side.
 
-### Is the Torah the same as the Old Testament?
-
-The Hebrew Bible (Tanach) contains the same books Christians call the Old Testament, though the order and interpretation differ. Jewish understanding of the text is guided by the Oral Torah.
-
 ### Where should a beginner start?
 
 A great start is reading the weekly Torah portion with a good English commentary, or joining a class. Ask us and we will suggest something that fits your interests.

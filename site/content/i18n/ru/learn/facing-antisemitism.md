@@ -2,7 +2,7 @@
 title: Столкнулись с антисемитизмом: практические шаги и еврейская сила
 description: Что делать после антисемитского случая в школе, на работе, в интернете или по соседству: безопасность, жалобы, разговор с детьми и ответ светом.
 category: Jewish ideas
-related: jewish-pride, bullying-jewish-view, jewish-identity-for-teens, israel-and-the-jewish-people, jewish-in-december
+related: jewish-pride, bullying-jewish-view, jewish-identity-for-teens, israel-and-the-jewish-people
 local: Если вы или ваш ребенок столкнулись с антисемитизмом в Лафайетте, Мораге, Оринде или где-то рядом, звоните раввину Исроэлю Лабковскому: 925-384-7242. Вы не одни.
 ---
 Антисемитизм ранит, будь то оскорбление в школе, свастика на стене, враждебный пост или угроза. Вот что делать и как ответить на это по-еврейски.

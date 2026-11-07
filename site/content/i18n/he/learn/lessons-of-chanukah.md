@@ -2,7 +2,7 @@
 title: הלקחים של חנוכה: מה המנורה מלמדת לחיי היומיום
 description: מה חנוכה מלמד לחיי היומיום לפי תורת חב״ד: להוסיף אור בכל לילה, מעט אור דוחה הרבה חושך, ולשתף אותו בחלון.
 category: Shabbat & holidays
-related: chanukah-story, the-maccabees, chanukah-menorah, zot-chanukah, jewish-in-december, kiddush-hashem
+related: chanukah-story, the-maccabees, chanukah-menorah, zot-chanukah, kiddush-hashem
 local: הדלקת המנורה הגדולה של חב״ד למורינדה מאחדת משפחות מלאפייט, מוראגה ואורינדה; ראו את עמוד חנוכה לחגיגה של השנה או התקשרו 925-384-7242.
 ---
 קל לאהוב את חנוכה: הנרות, הלביבות, הסביבונים, הילדים. אבל המנורה בחלון היא גם מורה. הרבי חזר ללקחים שלה שנה אחר שנה. הנה כמה מהם.

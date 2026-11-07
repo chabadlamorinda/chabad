@@ -29,7 +29,7 @@ To preserve Torah in exile, Rabbi Yehudah HaNasi compiled the [Mishnah](/learn/m
 
 ## The long exile
 
-Jewish communities spread across the Middle East, North Africa and Europe. Great teachers arose, among them Rashi in France and [Maimonides](/learn/maimonides) in Spain and Egypt. Jews often faced persecution, including the Crusades and the expulsion from Spain in 1492, yet Torah learning continued everywhere they went.
+Jewish communities spread across the Middle East, North Africa and Europe. Great teachers arose, among them Rashi in France and [Maimonides](/learn/maimonides) in Spain and Egypt. Jews often faced persecution, including the expulsion from Spain in 1492, yet Torah learning continued everywhere they went.
 
 ## Chassidus
 

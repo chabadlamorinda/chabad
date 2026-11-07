@@ -49,10 +49,6 @@ Jews pray for Moshiach three times a day in the Amidah prayer. Many traditional 
 
 ## Common questions
 
-### Is the Jewish Moshiach the same as the Christian Messiah?
-
-No. In Jewish belief, Moshiach is a human leader who will bring about the specific changes described above, such as world peace, the ingathering of exiles and the rebuilding of the Temple. Since these have not yet happened, Jews believe Moshiach has not yet come.
-
 ### When will Moshiach come?
 
 No one knows the exact time. The Talmud mentions that the redemption can come in its destined time or sooner, if we merit it. That is why every good deed matters.

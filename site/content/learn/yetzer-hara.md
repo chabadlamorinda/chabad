@@ -47,7 +47,7 @@ The yetzer hara is the evil inclination, the inner pull toward selfish or harmfu
 The yetzer tov (יֵצֶר טוֹב) is the good inclination, the inner voice that pushes us to be kind, honest and holy. We are meant to strengthen it every day.
 
 ### Do Jews believe in the devil?
-Not in the Christian sense. The Satan in Jewish sources is an angel acting under G-d's authority. Our struggle is within us.
+Not as a rival to G-d. The Satan in Jewish sources is an angel acting under G-d's authority. Our struggle is within us.
 
 ### How do you overcome temptation in Judaism?
 Pause, add light through mitzvahs and Torah, work in small steps and ask for help from a teacher.

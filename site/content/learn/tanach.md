@@ -26,7 +26,7 @@ Five of the Writings are known as the five Megillot (scrolls): Song of Songs, Ru
 
 ## Why 24 books?
 
-Christian Bibles split some books in two (Samuel, Kings, Chronicles, Ezra and Nehemiah) and count the Twelve Prophets separately, so they list 39 books. The text is the same; the Jewish count is 5 + 8 + 11 = 24. The order of the books differs too.
+Jewish tradition counts Samuel, Kings, Chronicles and Ezra-Nehemiah each as one book, and the Twelve Prophets as one book. That gives 5 + 8 + 11 = 24.
 
 ## How Tanach is read in synagogue
 

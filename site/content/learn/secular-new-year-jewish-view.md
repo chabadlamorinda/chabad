@@ -2,7 +2,7 @@
 title: January 1st and the Jewish Calendar: A Jewish Look at the Secular New Year
 description: Rosh Hashanah is the Jewish new year, so what is January 1st for a Jew? A warm look at resolutions, taking stock and living in Jewish time.
 category: Jewish ideas
-related: jewish-calendar, teshuvah, making-every-day-count, jewish-in-december, hebrew-birthday
+related: jewish-calendar, teshuvah, making-every-day-count, hebrew-birthday
 local: Want to start the year with something Jewish? Rabbi Yisroel Labkowski welcomes families from Lafayette, Moraga and Orinda to a class or a Shabbat meal: 925-384-7242.
 ---
 Fireworks at midnight, and everyone asks about your resolutions. For a Jew, this raises a quiet question: our new year was months ago, on Rosh Hashanah. So what is January 1st? Not a Jewish holiday, but not nothing either.
@@ -15,7 +15,7 @@ The Jewish year begins on the first of Tishrei, Rosh Hashanah, the anniversary o
 
 The civil calendar is the calendar of the world we work and live in, and Judaism has no quarrel with using it. We date our checks, file our taxes and plan the school year by it. Jews have always carried two calendars: the one in our pocket and the one in our soul.
 
-January 1st is not a Jewish holiday, and for centuries in Europe it was a church holiday that Jews kept their distance from. So there is no mitzvah or Jewish celebration connected to it. At the same time, there is no need to be sour about a long weekend, a day off, or a neighbor's good wishes. A friendly "Happy New Year" back is simple good manners; see [Thanksgiving: a Jewish view](/learn/thanksgiving-jewish-view) for a similar approach.
+January 1st is not a Jewish holiday. So there is no mitzvah or Jewish celebration connected to it. At the same time, there is no need to be sour about a long weekend, a day off, or a neighbor's good wishes. A friendly "Happy New Year" back is simple good manners; see [Thanksgiving: a Jewish view](/learn/thanksgiving-jewish-view) for a similar approach.
 
 ## The difference between a party and a new beginning
 

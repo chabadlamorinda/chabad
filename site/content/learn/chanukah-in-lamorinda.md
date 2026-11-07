@@ -2,7 +2,7 @@
 title: Chanukah in Lafayette, Moraga and Orinda: Menorah Lighting, Kids and Ways to Celebrate
 description: Chanukah near you in Lafayette, Moraga and Orinda: the grand menorah lighting, a menorah for your home, kids' fun and how to take part. Call us.
 category: Lamorinda
-related: chanukah-menorah, chanukah-for-kids, hosting-a-chanukah-party, jewish-in-december, chanukah-story
+related: chanukah-menorah, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
 local: Ask what is planned for Chanukah this year: call Rabbi Labkowski at 925-384-7242 or see /events.
 ---
 Chanukah in Lafayette, Moraga and Orinda is celebrated at home by lighting the menorah each night for eight nights, and together with Chabad of Lamorinda at its community Chanukah celebration with a grand menorah lighting, latkes, donuts and music. Call Rabbi Labkowski at 925-384-7242 or check the [events calendar](/events) to hear what is planned this year.
@@ -27,7 +27,7 @@ Many homes in Contra Costa County do not own a menorah yet. Ask Chabad of Lamori
 
 ## Chanukah in a December full of lights
 
-For Jewish families in the East Bay, Chanukah often falls near Christmas. [Jewish in December](/learn/jewish-in-december) helps you explain the holiday to children and neighbors with pride. The [story of Chanukah](/learn/chanukah-story) and the [lessons of Chanukah](/learn/lessons-of-chanukah) show why one small light matters.
+The [story of Chanukah](/learn/chanukah-story) and the [lessons of Chanukah](/learn/lessons-of-chanukah) show why one small light matters.
 
 ## Common questions
 
