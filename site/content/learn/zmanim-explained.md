@@ -1,6 +1,6 @@
 ---
 title: Zmanim Explained: What the Jewish Times of Day Mean and Why They Change
-description: What are zmanim? A plain-English guide to dawn, sunrise, latest Shema, midday, sunset and nightfall, and the "halachic hour" that changes with the seasons.
+description: What are zmanim? A plain guide to dawn, sunrise, latest Shema, midday, sunset and nightfall, and the "halachic hour" that changes with the seasons.
 category: Prayer & Torah
 related: daily-prayers, mincha-and-maariv, shabbat-in-winter, shema, jewish-calendar
 local: Not sure which time applies to you? Call Rabbi Labkowski at 925-384-7242 and ask.
@@ -18,7 +18,7 @@ We never type the times by hand on this site; the calendar computes them for Laf
 Here are the main zmanim, in the order they happen through the day, with definitions based on Chabad.org:
 
 - **Alot Hashachar (עלות השחר), dawn:** the moment the first light appears on the eastern horizon.
-- **Misheyakir (משיכיר):** when there is enough light to recognize an acquaintance from a short distance. It is ideally the earliest time to put on a tallit and tefillin and to say the morning Shema.
+- **Misheyakir (מִשֶּׁיַּכִּיר):** when there is enough light to recognize an acquaintance from a short distance. It is ideally the earliest time to put on a tallit and tefillin and to say the morning Shema.
 - **Netz or Hanetz Hachamah (הנץ החמה), sunrise:** when the top edge of the sun becomes visible. It is ideally the earliest time for the morning Amidah.
 - **Sof Zman Shema (סוף זמן קריאת שמע), latest time for the morning Shema:** the end of the third proportional hour of the day.
 - **Sof Zman Tefilah (סוף זמן תפילה), latest time for the morning prayer:** the end of the fourth proportional hour. If missed, Shacharit can be said until midday.

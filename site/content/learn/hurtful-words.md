@@ -13,8 +13,6 @@ Whether in a family kitchen in Lafayette, a group chat in Moraga or a school hal
 
 Chabad.org, in its explanation of this commandment, says it prohibits verbally distressing or humiliating another person. It adds that the Sages considered hurtful words a graver sin than cheating someone of money, because money can be returned, but words cannot be taken back.
 
-The Torah ends the verse with "and you shall fear your G-d." Chabad teaching understands this as a hint: the wrong is often hidden, since only the speaker knows what he or she meant. G-d knows.
-
 ## Everyday examples
 
 Chabad.org gives these examples:

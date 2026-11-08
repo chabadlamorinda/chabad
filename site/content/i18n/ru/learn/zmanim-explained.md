@@ -1,6 +1,6 @@
 ---
 title: Zmanim Explained: What the Jewish Times of Day Mean and Why They Change
-description: What are zmanim? A plain-English guide to dawn, sunrise, latest Shema, midday, sunset and nightfall, and the "halachic hour" that changes with the seasons.
+description: What are zmanim? A plain guide to dawn, sunrise, latest Shema, midday, sunset and nightfall, and the "halachic hour" that changes with the seasons.
 category: Prayer & Torah
 related: daily-prayers, mincha-and-maariv, shabbat-in-winter, shema, jewish-calendar
 local: Не уверены, какое время вам подходит? Позвоните раввину Лабковскому: 925-384-7242 и спросите.
@@ -62,7 +62,7 @@ Chabad.org советует добавлять или вычитать не ме
 ### Почему к времени добавляют несколько минут?
 Из-за температуры, давления, часов и округления. Chabad.org советует запас не менее двух минут.
 
-### Где получить помощь со временем в Лафайете, Мораге или Ориндe?
+### Где получить помощь со временем в Лафайете, Мораге или Оринде?
 Позвоните в Хабад Ламоринды в Лафайете: 925-384-7242 или посмотрите время Шаббата для каждого города.
 
 ## Следующий шаг
