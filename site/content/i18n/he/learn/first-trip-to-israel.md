@@ -2,7 +2,7 @@
 title: הטיול הראשון שלכם לישראל: מדריך יהודי
 description: מתכננים טיול ראשון לישראל: המקומות הקדושים, שבת בירושלים, אוכל כשר, מצוות לקחת איתכם, ואיך להפוך אותו למסע של הנשמה.
 category: Jewish ideas
-related: jerusalem, bar-mitzvah-in-israel, tzfat, making-aliyah, western-wall, israel-and-the-jewish-people, kosher-when-traveling
+related: jerusalem, gap-year-in-israel, bar-mitzvah-in-israel, tzfat, making-aliyah, western-wall, israel-and-the-jewish-people, kosher-when-traveling
 local: נוסעים לישראל מלאפייט, מוראגה או אורינדה? בקשו מהרב לבקובסקי ברכה, כסף צדקה לקחת איתכם ועצות לפני הנסיעה: 925-384-7242.
 ---
 ליהודים רבים, הטיול הראשון לישראל משנה הכל: לעמוד מול הכותל המערבי, שבת בירושלים, ללכת במקומות שבהם הלכו אבותינו. כך תהפכו אותו ליותר מחופשה.

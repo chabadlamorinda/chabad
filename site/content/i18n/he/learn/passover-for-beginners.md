@@ -2,7 +2,7 @@
 title: פסח למתחילים: מה עושים ואיך מתכוננים
 description: חדשים בפסח? מהו החג, איך מתכוננים עם חמץ ומצה, איך מתנהל הסדר, והצעדים הראשונים לעשות בזמן.
 category: Shabbat & holidays
-related: chametz, chol-hamoed, passover-cleaning, passover-in-lamorinda, matzah, passover-seder, selling-your-chametz, passover-with-kids
+related: chametz, shalosh-regalim, nissan, maot-chitim, chol-hamoed, passover-cleaning, passover-in-lamorinda, matzah, passover-seder, selling-your-chametz, passover-with-kids
 local: משפחות מלאפייט, מוראגה ואורינדה יכולות להזמין מצה שמורה ב-/forms/matzah ולמכור חמץ ב-/forms/sell-chametz; התקשרו לרב לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן.
 ---
 פסח הוא חג אביב בן שמונה ימים החוגג את חירות עם ישראל מעבדות מצרים. במשך שבוע איננו אוכלים לחם או דגן חמוץ אחר, אוכלים מצה, ובלילות הראשונים (שני הלילות הראשונים בחוץ לארץ) מתכנסים לסדר כדי לספר את הסיפור. אם זה הפסח הראשון שלכם, אפשר להתחיל בשלושה צעדים פשוטים.

@@ -2,7 +2,7 @@
 title: Ту бе-Ав: 15 ава, еврейский день любви и радости
 description: Что такое Ту бе-Ав, почему Талмуд называет его одним из самых радостных дней года, его связь с любовью и сватовством и как его отмечать.
 category: Shabbat & holidays
-related: jewish-dating, three-weeks, jewish-wedding, daily-torah-study
+related: jewish-dating, menachem-av, three-weeks, jewish-wedding, daily-torah-study
 local: Сделайте удлинившиеся после Ту бе-Ав ночи временем учебы; наши занятия на chabadoflamorinda.com/programs/adult-education или по телефону 925-384-7242.
 ---
 Ту бе-Ав, 15-й день еврейского месяца ав, - это малый еврейский праздник радости, любви и новых начинаний. Мишна говорит, что не было у еврейского народа таких праздничных дней, как 15 ава и Йом Кипур.

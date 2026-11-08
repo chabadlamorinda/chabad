@@ -2,7 +2,7 @@
 title: Песах с детьми: как сделать седер интересным для детей
 description: Простые способы сделать пасхальный седер веселым для детей: четыре вопроса, реквизит для казней, афикоман, роли для детей и подготовка вместе.
 category: Shabbat & holidays
-related: four-questions, haggadah, afikoman, passover-seder, holidays-with-toddlers, exodus-story
+related: four-questions, seder-songs, hosting-your-first-seder, haggadah, afikoman, passover-seder, holidays-with-toddlers, exodus-story
 local: Хабад Ламоринды в Лафайетте поможет семьям из Лафайетта, Мораги и Оринды подготовиться к Песаху. С вопросами о седере звоните раввину: 925-384-7242. Даты в этом году: chabadoflamorinda.com/holidays/passover
 ---
 Пасхальный седер изначально задуман для детей. Многие его обычаи существуют ради одного: пробудить у детей любопытство, не дать им уснуть и побудить их задавать вопросы. Немного подготовки, и седер станет вечером, который ваши дети будут вспоминать весь год.

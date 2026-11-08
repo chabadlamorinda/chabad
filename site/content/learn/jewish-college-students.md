@@ -2,7 +2,7 @@
 title: Jewish College Students: Staying Connected on Campus
 description: A practical guide for Jewish college students: Shabbat, kosher food, holidays and exams, handling antisemitism, and finding a Jewish home near campus.
 category: Life cycle
-related: shabbat, kosher-on-campus, jewish-students-in-lamorinda, kosher, jewish-pride, mezuzah
+related: shabbat, gap-year-in-israel, kosher-on-campus, jewish-students-in-lamorinda, kosher, jewish-pride, mezuzah
 local: Students at Saint Mary's College in Moraga, Diablo Valley College in Pleasant Hill and beyond are welcome for Shabbat at Chabad of Lamorinda. Call 925-384-7242 or see chabadoflamorinda.com/shabbat.
 ---
 College is a time of independence, new ideas and big decisions, and it can be a wonderful time to discover your Jewish identity for yourself. With a little planning, Jewish students can keep Shabbat, eat kosher, celebrate holidays and find a warm Jewish community wherever they study.

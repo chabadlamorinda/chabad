@@ -2,7 +2,7 @@
 title: Песах шени: второй Песах и второй шанс
 description: Что такое Песах шени, второй Песах 14 ияра, его история в Торе, обычай есть мацу и урок о том, что никогда не поздно.
 category: Shabbat & holidays
-related: counting-the-omer, lag-baomer, matzah, teshuvah, jewish-calendar
+related: counting-the-omer, iyar, lag-baomer, matzah, teshuvah, jewish-calendar
 local: Вопросы о Песах шени? Звоните в Хабад Ламоринды по телефону 925-384-7242; дату этого года ищите на chabadoflamorinda.com/tools/hebrew-date.
 ---
 Песах шени, «второй Песах», приходится на 14 ияра, ровно через месяц после кануна Песаха. Во времена Храма это был второй шанс принести пасхальную жертву для тех, кто пропустил ее, а сегодня он несет вечный урок: никогда не поздно все исправить.

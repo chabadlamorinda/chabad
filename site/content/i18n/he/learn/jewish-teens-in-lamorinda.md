@@ -2,7 +2,7 @@
 title: נוער יהודי בלאפייט, מוראגה ואורינדה: תוכניות, התנדבות ומצוות
 description: נוער יהודי בלאפייט, מוראגה ואורינדה: אירועי נוער, בר ובת מצווה, התנדבות, שבת ולימוד עם חב״ד למורינדה.
 category: Lamorinda
-related: jewish-pride, tefillin, jewish-college-students, shabbat-candles
+related: jewish-pride, gap-year-in-israel, tefillin, jewish-college-students, shabbat-candles
 local: שאלו על תוכניות נוער והתנדבות ב-chabadoflamorinda.com/forms/volunteer או התקשרו לרב בטלפון 925-384-7242.
 ---
 בין שיעורים, ספורט והגשת מועמדות לקולג', השבוע של נער או נערה בלמורינדה מלא. החיים היהודיים יכולים בקלות להידחק הצידה. חב״ד למורינדה בלאפייט הוא מקום שבו בני נוער יהודים מלאפייט, מוראגה ואורינדה יכולים להשתייך, לשאול שאלות אמיתיות וליהנות, בלי צורך בדמי חבר.

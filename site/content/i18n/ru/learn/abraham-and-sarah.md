@@ -2,7 +2,7 @@
 title: Авраам и Сара: первые евреи и чему они нас учат
 description: Кто такие Авраам и Сара? Первая еврейская семья: разбитые идолы, Лех леха, открытый шатёр и десять испытаний, и почему они наши предки.
 category: Jewish ideas
-related: hachnasat-orchim, noah-and-the-flood, jacob-our-father, the-matriarchs, jewish-history-overview, brit-milah, why-be-jewish, converting-to-judaism
+related: hachnasat-orchim, binding-of-isaac, isaac-our-father, noah-and-the-flood, jacob-our-father, the-matriarchs, jewish-history-overview, brit-milah, why-be-jewish, converting-to-judaism
 local: Почувствуйте открытый шатёр Авраама за субботним столом в Лафайетте: /forms/shabbat-meal или 925-384-7242.
 ---
 Авраам и Сара были первой еврейской четой, которая около 3800 лет назад открыла единого Б-га и рассказала о Нём миру. Каждый еврей дитя Авраама и Сары, как и те, кто выбирает иудаизм, геры.

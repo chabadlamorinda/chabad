@@ -2,7 +2,7 @@
 title: סטודנטים יהודים: להישאר מחוברים בקמפוס
 description: מדריך מעשי לסטודנטים יהודים: שבת, אוכל כשר, חגים ומבחנים, התמודדות עם אנטישמיות ומציאת בית יהודי ליד הקמפוס.
 category: Life cycle
-related: shabbat, kosher-on-campus, jewish-students-in-lamorinda, kosher, jewish-pride, mezuzah
+related: shabbat, gap-year-in-israel, kosher-on-campus, jewish-students-in-lamorinda, kosher, jewish-pride, mezuzah
 local: סטודנטים בסיינט מרי׳ס קולג׳ במוראגה, בדיאבלו ואלי קולג׳ בפלזנט היל ובמקומות נוספים מוזמנים לשבת בחב״ד למורינדה. התקשרו 925-384-7242 או ראו chabadoflamorinda.com/shabbat.
 ---
 הקולג׳ הוא זמן של עצמאות, רעיונות חדשים והחלטות גדולות, והוא יכול להיות זמן נפלא לגלות בעצמכם את הזהות היהודית שלכם. עם קצת תכנון, סטודנטים יהודים יכולים לשמור שבת, לאכול כשר, לחגוג את החגים ולמצוא קהילה יהודית חמה בכל מקום שבו הם לומדים.

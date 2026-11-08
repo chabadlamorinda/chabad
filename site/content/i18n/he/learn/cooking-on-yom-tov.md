@@ -2,7 +2,7 @@
 title: בישול ביום טוב: במה החגים שונים מהשבת
 description: מה מותר בחגים ואסור בשבת: בישול מאש קיימת, טלטול, בישול רק לאותו יום ועירוב תבשילין.
 category: Shabbat & holidays
-related: eruv-tavshilin, thirty-nine-melachot, shabbat-practical-questions, jewish-calendar
+related: eruv-tavshilin, yom-tov-candle-lighting, thirty-nine-melachot, shabbat-practical-questions, jewish-calendar
 local: מתכננים ארוחות חג בלאפייט, מוראגה או אורינדה? התקשרו להרב ישראל לבקובסקי 925-384-7242 עם כל שאלה על המטבח ביום טוב.
 ---
 יום טוב, כשמו כן הוא, "יום שהוא טוב": ימי החג של פסח, שבועות, סוכות, שמיני עצרת, שמחת תורה וראש השנה. כמו שבת, אלה ימי מנוחה עם הדלקת נרות, קידוש וסעודות חג. אבל יש הבדל גדול אחד: ביום טוב מותר לבשל ולעשות מלאכות אחרות שנחוצות לאוכל של אותו יום.

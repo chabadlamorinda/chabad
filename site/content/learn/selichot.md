@@ -2,7 +2,7 @@
 title: Selichot: The Prayers for Forgiveness Before Rosh Hashanah
 description: What Selichot are, when they begin before Rosh Hashanah, why they are said late at night or early morning, and the Thirteen Attributes of Mercy.
 category: Prayer & Torah
-related: elul, teshuvah, shofar, prayer
+related: elul, avinu-malkeinu, teshuvah, shofar, prayer
 local: For Selichot and High Holiday services in Lamorinda, see chabadoflamorinda.com/holidays/rosh-hashanah or call 925-384-7242.
 ---
 Selichot are special prayers asking G-d for forgiveness, said in the days before Rosh Hashanah and through Yom Kippur. Ashkenazi Jews begin them on the Saturday night before Rosh Hashanah, while Sephardic Jews say them for the entire month of Elul.

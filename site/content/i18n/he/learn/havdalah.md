@@ -2,7 +2,7 @@
 title: הבדלה: איך נפרדים מהשבת ביין, בשמים ואש
 description: מדריך שלב אחר שלב להבדלה, הטקס שחותם את השבת: מתי אומרים אותה, מה צריך ומהן ארבע הברכות.
 category: Shabbat & holidays
-related: shabbat, elijah-the-prophet, alcohol-free-kiddush, shabbat-day, kiddush, blessings, shabbat-candles
+related: shabbat, break-fast-after-yom-kippur, elijah-the-prophet, alcohol-free-kiddush, shabbat-day, kiddush, blessings, shabbat-candles
 local: נשמח לעזור לכם להשיג ערכת הבדלה וללמוד את הברכות, ואתם מוזמנים להצטרף להבדלה אצלנו. התקשרו 925-384-7242.
 ---
 הבדלה היא טקס קצר במוצאי שבת שחותם את השבת ופותח את השבוע החדש. משתמשים בה בכוס יין, בבשמים ריחניים ובנר קלוע, והיא לוקחת רק כמה דקות.

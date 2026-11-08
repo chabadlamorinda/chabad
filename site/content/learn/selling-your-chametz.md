@@ -2,7 +2,7 @@
 title: Selling Your Chametz Before Passover: How It Works
 description: Why Jews sell their chametz before Passover, how the sale through the Rabbi works, what to put away and where, the buyback, and how to do it online.
 category: Shabbat & holidays
-related: chametz, kosher-beer-and-spirits, passover-in-lamorinda, kosher-for-passover, matzah, passover-seder, kosher-kitchen
+related: chametz, passover-away-from-home, kosher-beer-and-spirits, passover-in-lamorinda, kosher-for-passover, matzah, passover-seder, kosher-kitchen
 local: Families in Lafayette, Moraga and Orinda can sell their chametz through Rabbi Labkowski online in two minutes; questions, call 925-384-7242.
 ---
 Every spring, Jews around the world do something that sounds strange the first time you hear it: they sell their bread, pasta, whisky and cereal to a non-Jew for the week of Passover, and buy it all back afterwards. It is one of the most practical customs in Jewish life, and you can do it from your phone. Here is what it is and why it matters.

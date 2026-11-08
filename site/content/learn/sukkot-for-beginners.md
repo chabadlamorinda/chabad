@@ -2,7 +2,7 @@
 title: Sukkot for Beginners: The Sukkah, the Lulav and a Week of Joy
 description: New to Sukkot? The sukkah, the four kinds, the ushpizin guests, Hoshana Rabbah, Shemini Atzeret and Simchat Torah, explained simply for first-timers.
 category: Shabbat & holidays
-related: sukkah, chol-hamoed, simchat-torah-for-beginners, four-kinds, ushpizin, hakafot, sukkot-with-kids
+related: sukkah, shalosh-regalim, tishrei, simchat-beit-hashoevah, chol-hamoed, simchat-torah-for-beginners, four-kinds, ushpizin, hakafot, sukkot-with-kids
 local: Every Jew from Lafayette, Moraga and Orinda is welcome on Sukkot; no membership needed. Call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned this year and to find a sukkah to eat in.
 ---
 Five days after Yom Kippur, the mood changes completely. Fasting and long prayers give way to a week of eating outdoors under a roof of branches, waving a palm frond, singing and dancing. The Torah calls Sukkot "the time of our joy." Here is the whole week in one place.

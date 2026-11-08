@@ -2,7 +2,7 @@
 title: Mikvah Near Lafayette, Moraga and Orinda: How to Arrange a Visit
 description: Ищете микву рядом с Лафайеттом, Морагой или Ориндой? Женщины здесь обычно ходят в микву Хабада в Беркли; визит организуется конфиденциально через ребецин.
 category: Lamorinda
-related: mikvah, family-purity, kallah-classes, jewish-wedding-in-lamorinda, converting-to-judaism
+related: mikvah, mikvah-for-men, family-purity, kallah-classes, jewish-wedding-in-lamorinda, converting-to-judaism
 local: Чтобы договориться о посещении миквы, позвоните или напишите ребецин Ципоре Лабковски конфиденциально: 925-384-7241. Каждый разговор остаётся между вами.
 ---
 Женщины Лафайетта, Мораги и Оринда обычно ходят в микву Хабада в Беркли, а визит организуется конфиденциально через ребецин Ципору Лабковски из Хабада Ламоринда по телефону 925-384-7241. Не нужно быть членом какой-либо организации, и не нужно уже бывать в микве.

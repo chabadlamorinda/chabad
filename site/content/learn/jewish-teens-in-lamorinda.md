@@ -2,7 +2,7 @@
 title: Jewish Teens in Lafayette, Moraga and Orinda: Programs, Volunteering and Mitzvahs
 description: Jewish teens in Lafayette, Moraga and Orinda: teen events, bar and bat mitzvah, volunteering, Shabbat and learning with Chabad of Lamorinda.
 category: Lamorinda
-related: jewish-pride, tefillin, jewish-college-students, shabbat-candles
+related: jewish-pride, gap-year-in-israel, tefillin, jewish-college-students, shabbat-candles
 local: Ask about teen programs and volunteering at chabadoflamorinda.com/forms/volunteer or call the Rabbi at 925-384-7242.
 ---
 Between classes, sports and college applications, a teen's week in Lamorinda is full. Jewish life can easily get squeezed out. Chabad of Lamorinda in Lafayette is a place where Jewish teens from Lafayette, Moraga and Orinda can belong, ask real questions and have fun, with no membership required.

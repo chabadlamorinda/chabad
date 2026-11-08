@@ -2,7 +2,7 @@
 title: Judaism and Health: Caring for the Body and Soul
 description: What Judaism teaches about health and the body: the mitzvah to guard your health, Maimonides on healthy living, and the Asher Yatzar blessing.
 category: Jewish ideas
-related: the-soul, kosher-medicine-and-vitamins, tattoos-jewish-view, maimonides, blessings, why-mitzvot
+related: the-soul, jewish-view-of-sleep, kosher-medicine-and-vitamins, tattoos-jewish-view, maimonides, blessings, why-mitzvot
 local: If you or someone you love is unwell, Chabad of Lamorinda is here for you. See chabadoflamorinda.com/help/someone-is-sick or call 925-384-7242.
 ---
 Judaism teaches that the body is a gift from G-d and the home of the soul, so taking care of your health is a mitzvah. Eating well, sleeping, exercising and getting medical care are part of serving G-d, not a distraction from it.

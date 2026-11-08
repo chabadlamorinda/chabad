@@ -2,7 +2,7 @@
 title: שבועות למתחילים: עשרת הדיברות, מאכלי חלב ולימוד כל הלילה
 description: חדשים בשבועות? מה החג חוגג, למה עומדים בקריאת עשרת הדיברות, אוכלים חלב, מקשטים בירק ונשארים ערים ללמוד.
 category: Shabbat & holidays
-related: ten-commandments, shavuot-dairy-foods, shavuot-night-learning, counting-the-omer, torah
+related: ten-commandments, shavuot-with-kids, book-of-ruth, sivan, shavuot-dairy-foods, shavuot-night-learning, counting-the-omer, torah
 local: הביאו את כל המשפחה, כולל תינוקות, לשמוע את עשרת הדיברות; כל אחד מלאפייט, מוראגה ואורינדה מוזמן. התקשרו לרב לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן.
 ---
 שבועות הוא החג החוגג את מתן התורה לעם ישראל בהר סיני. הוא בא שבעה שבועות אחרי פסח, ומציינים אותו בשמיעת עשרת הדיברות בבית הכנסת, באכילת מאכלי חלב, בקישוט פרחים וירק וכמובן בלימוד תורה. זהו חג נפלא למשפחות, כי לילדים יש בו תפקיד מיוחד.

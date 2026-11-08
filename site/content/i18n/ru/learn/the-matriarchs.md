@@ -2,7 +2,7 @@
 title: Четыре праматери: Сара, Ривка, Рахель и Лея, матери еврейского народа
 description: Кто такие четыре праматери, история и дар Сары, Ривки, Рахели и Леи, почему их четыре и как еврейские женщины продолжают их наследие.
 category: Prayer & Torah
-related: abraham-and-sarah, jacob-our-father, jewish-women, blessing-your-children, jewish-women-in-lamorinda, moses
+related: abraham-and-sarah, isaac-our-father, jacob-our-father, jewish-women, blessing-your-children, jewish-women-in-lamorinda, moses
 local: Женщины Ламоринды приглашаются в наш Женский кружок: /programs/womens-circle или 925-384-7242.
 ---
 Четыре праматери (имахот, אמהות) это Сара, Ривка, Рахель и Лея, жены Авраама, Ицхака и Яакова и матери еврейского народа. Их истории наполняют книгу Берешит, а Талмуд видит в них духовную основу, на которой построен народ.

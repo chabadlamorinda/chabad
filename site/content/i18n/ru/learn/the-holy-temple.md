@@ -2,7 +2,7 @@
 title: Святой Храм в Иерусалиме (Бейт а-Микдаш)
 description: Чем был Святой Храм, Первый и Второй Храмы, почему они были разрушены, как мы помним о них сегодня и Третий Храм.
 category: Jewish ideas
-related: jerusalem, king-solomon, yom-yerushalayim, tisha-bav-for-beginners, the-maccabees, jewish-history-overview, western-wall, three-weeks, moshiach
+related: jerusalem, the-mishkan, shalosh-regalim, king-solomon, yom-yerushalayim, tisha-bav-for-beginners, the-maccabees, jewish-history-overview, western-wall, three-weeks, moshiach
 local: Узнайте больше о Храме и еврейской истории на занятиях Хабада Ламоринды: chabadoflamorinda.com/programs/adult-education или по телефону 925-384-7242.
 ---
 Святой Храм, Бейт а-Микдаш, был главным домом Б-га в Иерусалиме, куда еврейский народ приходил молиться, приносить жертвы и ощущать присутствие Б-га. Два Храма стояли на одной и той же святой горе, и еврейская традиция учит, что во времена Мошиаха будет построен Третий Храм.

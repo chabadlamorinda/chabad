@@ -2,7 +2,7 @@
 title: Keeping Kosher When Traveling: Practical Tips
 description: How to keep kosher on the road, in hotels and on flights, what to pack, how to use a non-kosher oven or microwave, and where to find kosher food.
 category: Kosher
-related: kosher, shabbat-in-a-hotel, jewish-san-francisco, chanukah-away-from-home, eating-out-kosher, traveling-on-shabbat, kosher-on-campus, kosher-symbols, checking-for-insects, prayer
+related: kosher, passover-away-from-home, shabbat-in-a-hotel, jewish-san-francisco, chanukah-away-from-home, eating-out-kosher, traveling-on-shabbat, kosher-on-campus, kosher-symbols, checking-for-insects, prayer
 local: Traveling soon and have a kosher question? Call Rabbi Labkowski at 925-384-7242 before you go and we will help you plan.
 ---
 You can keep kosher almost anywhere with a little planning: pack basics, order kosher airline meals, buy certified products at local stores, and connect with the Jewish community at your destination. Many travelers find that keeping kosher on the road becomes part of the adventure.

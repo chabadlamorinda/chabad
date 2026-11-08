@@ -41,6 +41,7 @@
    "shabbat-clothes",
    "keeping-food-warm-on-shabbat",
    "shabbat-candles",
+   "early-shabbat-in-summer",
    "friday-night-dinner-step-by-step",
    "kabbalat-shabbat",
    "shalom-aleichem",
@@ -194,6 +195,7 @@
   "intro": "From cleaning out the chametz to the Seder and counting the Omer.",
   "guides": [
    "passover-for-beginners",
+   "maot-chitim",
    "chametz",
    "passover-cleaning",
    "selling-your-chametz",
@@ -204,16 +206,20 @@
    "gluten-free-passover",
    "seder-plate",
    "haggadah",
+   "hosting-your-first-seder",
    "passover-seder",
    "four-cups",
    "four-questions",
    "afikoman",
+   "seder-songs",
    "exodus-story",
    "last-days-of-passover",
    "counting-the-omer",
    "lag-baomer",
    "shavuot-for-beginners",
-   "shavuot-night-learning"
+   "book-of-ruth",
+   "shavuot-night-learning",
+   "shavuot-with-kids"
   ]
  },
  {
@@ -224,16 +230,23 @@
    "elul",
    "selichot",
    "rosh-hashanah-for-beginners",
+   "binding-of-isaac",
    "rosh-hashanah-simanim",
    "shofar",
+   "unetaneh-tokef",
    "tashlich",
    "ten-days-of-repentance",
+   "avinu-malkeinu",
    "shabbat-shuva",
    "yom-kippur-for-beginners",
+   "yom-kippur-with-kids",
    "teshuvah",
    "kapparot",
+   "erev-yom-kippur",
    "kol-nidre",
-   "yom-kippur-fast"
+   "book-of-jonah",
+   "yom-kippur-fast",
+   "neilah"
   ]
  },
  {
@@ -266,6 +279,7 @@
   "intro": "Jewish wisdom for becoming kinder, calmer and more honest, one trait at a time.",
   "guides": [
    "humility",
+   "self-esteem-jewish-view",
    "judging-others-favorably",
    "ahavat-yisrael",
    "being-a-mensch",

@@ -2,7 +2,7 @@
 title: הלוח העברי בפשטות: חודשים, שנים מעוברות וחגים
 description: איך עובד הלוח העברי: חודשי ירח, שנים מעוברות, 12 החודשים העבריים, למה החגים זזים ולמה היום מתחיל בשקיעה.
 category: Shabbat & holidays
-related: rosh-chodesh, shevat, jewish-leap-year-and-calendar, secular-new-year-jewish-view, kiddush-levana, holiday-greetings, fast-days, yahrzeit, hebrew-alphabet
+related: rosh-chodesh, four-jewish-new-years, tishrei, nissan, shevat, jewish-leap-year-and-calendar, secular-new-year-jewish-view, kiddush-levana, holiday-greetings, fast-days, yahrzeit, hebrew-alphabet
 local: בדקו את החגים הקרובים בעמוד החגים שלנו או המירו כל תאריך בכלי התאריך העברי שלנו. שאלות? התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 הלוח העברי הוא לוח ירחי-שמשי: החודשים שלו הולכים לפי הירח, ובשנים מעוברות מוסיפים חודש כדי שהחגים יישארו בעונות שלהם. לכן החגים היהודיים חלים בכל שנה בתאריך לועזי אחר, אבל תמיד באותה עונה.

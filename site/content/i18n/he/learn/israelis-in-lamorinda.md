@@ -2,7 +2,7 @@
 title: ישראלים בלמורינדה: שיעור תורה בעברית, שבת ותוכניות לילדים בלאפייט
 description: לישראלים ולדוברי עברית בלאפייט, מוראגה ואורינדה: שיעור תורה בעברית עם ארוחה בימי שלישי, שבת, חגים ותוכניות לילדים.
 category: Lamorinda
-related: israel-and-the-jewish-people, yom-haatzmaut, hebrew-phrases, shabbat-meals, daily-torah-study
+related: israel-and-the-jewish-people, lashon-hakodesh, yom-haatzmaut, hebrew-phrases, shabbat-meals, daily-torah-study
 local: בואו לשיעור התורה בעברית ביום שלישי ב-20:30, או הירשמו לסעודת שבת ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 כשגרים בלאפייט, במוראגה או באורינדה, רחוק מהמשפחה בישראל, קל להתגעגע לתחושת השבת ביום שישי אחר הצהריים, לאווירת החגים ברחוב, ופשוט לדבר עברית עם חברים. בחב״ד למורינדה, ישראלים ודוברי עברית מוצאים בית יהודי חם במרחק כמה דקות בלבד, ב-3477 Golden Gate Way בלאפייט. אין דמי חבר ואין תשלומים. אתם פשוט מוזמנים.

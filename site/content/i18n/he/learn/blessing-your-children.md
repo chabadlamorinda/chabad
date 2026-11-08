@@ -2,7 +2,7 @@
 title: ברכת הילדים בליל שבת
 description: איך ולמה הורים יהודים מברכים את ילדיהם בכל ליל שבת: הנוסח לבנים ולבנות, ברכת כהנים, ואיך להפוך את הברכה לשלכם.
 category: Jewish home
-related: shabbat-with-kids, the-matriarchs, grandparenting-from-afar, birkat-kohanim, kabbalat-shabbat, jewish-parenting
+related: shabbat-with-kids, erev-yom-kippur, yom-kippur-with-kids, the-matriarchs, grandparenting-from-afar, birkat-kohanim, kabbalat-shabbat, jewish-parenting
 local: רוצים לראות איך עושים את זה? בואו לסעודת ליל שבת עם משפחת הרב בבית חב״ד למורינדה בלאפייט; התקשרו 925-384-7242.
 ---
 אחד הרגעים היפים ביותר בשבוע היהודי לוקח פחות מדקה. בליל שבת, לפני הקידוש, ההורים מניחים את ידיהם על ראש כל ילד ומברכים אותו. ילדים שגדלים עם זה זוכרים את זה כל חייהם, ורבים ממשיכים להתקשר הביתה לבקש ברכה גם כשהם כבר מבוגרים.

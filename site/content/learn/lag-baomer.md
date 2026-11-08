@@ -2,7 +2,7 @@
 title: Lag BaOmer: Bonfires, Rabbi Shimon and a Day of Joy
 description: What Lag BaOmer is, why we light bonfires and celebrate Rabbi Shimon bar Yochai, the children's parades, first haircuts, and how to join the joy.
 category: Shabbat & holidays
-related: counting-the-omer, zohar, upsherin, kabbalah, chassidus, pesach-sheni
+related: counting-the-omer, rabbi-akiva, iyar, zohar, upsherin, kabbalah, chassidus, pesach-sheni
 local: Families in Lafayette, Moraga and Orinda: call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned for Lag BaOmer this year.
 ---
 In the middle of the spring, between Passover and Shavuot, comes a day of bonfires, music, picnics and children marching with flags. It is called Lag BaOmer, and for many families it is the happiest outdoor day of the Jewish year.

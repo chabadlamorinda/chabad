@@ -2,7 +2,7 @@
 title: Havdalah: How to End Shabbat With Wine, Spices and Flame
 description: A step-by-step guide to Havdalah, the ceremony that ends Shabbat: when to say it, what you need, and the four blessings in English.
 category: Shabbat & holidays
-related: shabbat, elijah-the-prophet, alcohol-free-kiddush, shabbat-day, kiddush, blessings, shabbat-candles
+related: shabbat, break-fast-after-yom-kippur, elijah-the-prophet, alcohol-free-kiddush, shabbat-day, kiddush, blessings, shabbat-candles
 local: We can help you get a Havdalah set and learn the blessings, and you are welcome to join Havdalah with us. Call 925-384-7242.
 ---
 Havdalah is the short ceremony on Saturday night that ends Shabbat and begins the new week. It uses a cup of wine, fragrant spices and a braided candle, and takes just a few minutes.

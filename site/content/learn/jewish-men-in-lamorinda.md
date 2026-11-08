@@ -2,7 +2,7 @@
 title: Jewish Men in Lafayette, Moraga and Orinda: Men's Club, Tefillin, Minyan and Classes
 description: For Jewish men in Lafayette, Moraga and Orinda: the Men's Club, tefillin with the Rabbi, a weekday morning minyan and weekly Torah classes.
 category: Lamorinda
-related: tefillin, minyan, kaddish, weekly-parsha
+related: tefillin, mikvah-for-men, minyan, kaddish, weekly-parsha
 local: Put on tefillin with the Rabbi or join the morning minyan: call 925-384-7242 or sign up at chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 Between work, the commute through Orinda or Lafayette, kids' games in Moraga and everything else, it is easy for a Jewish man to go weeks without a moment for his soul. At Chabad of Lamorinda, at 3477 Golden Gate Way in Lafayette, there are simple ways to change that: a few minutes of tefillin, a morning minyan, an evening class, or a l'chaim with friends at the Men's Club. No membership, no dues and no experience needed.

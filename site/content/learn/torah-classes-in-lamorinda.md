@@ -2,7 +2,7 @@
 title: Torah Classes in Lafayette, Moraga and Orinda: Weekly Torah, Tanya and Hebrew Classes
 description: Weekly Torah classes in Lafayette for Moraga and Orinda too: English Torah on Sunday, Hebrew class with a meal on Tuesday, Tanya on Wednesday.
 category: Lamorinda
-related: weekly-parsha, getting-involved-in-jewish-lamorinda, tanya, daily-torah-study, talmud
+related: weekly-parsha, what-is-a-yeshiva, getting-involved-in-jewish-lamorinda, tanya, daily-torah-study, talmud
 local: Come to any class, or ask the Rabbi for one-on-one study at chabadoflamorinda.com/programs/adult-education or 925-384-7242.
 ---
 You do not need a background, a membership or perfect Hebrew to study Torah in Lamorinda. Chabad of Lamorinda in Lafayette offers weekly classes for adults of every level, from your very first class to deep Talmud and Kabbalah. Neighbors from Lafayette, Moraga, Orinda, Pleasant Hill and Martinez come to learn, ask questions and enjoy lively discussion. Questions are always welcome.

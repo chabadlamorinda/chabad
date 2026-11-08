@@ -2,7 +2,7 @@
 title: Зажигание ханукии вне дома: в гостях, в поездке, в колледже, в гостинице и в больнице
 description: Как зажигать ханукию, когда вы не дома: в гостях, в поездке, в колледже, в гостинице или в больнице, и когда спросить раввина.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
+related: chanukah-menorah, passover-away-from-home, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
 local: Вы не дома на Хануку или принимаете гостя, который не дома? Раввин Исроэль Лабковский рад помочь семьям из Лафайетта, Мораги и Оринды: 925-384-7242.
 ---
 Ханука - домашний праздник, но жизнь не всегда оставляет нас дома на восемь вечеров. Хорошая новость: ханукия отлично путешествует. Вот общие правила; о вашей ситуации спросите раввина.

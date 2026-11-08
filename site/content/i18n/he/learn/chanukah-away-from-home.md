@@ -2,7 +2,7 @@
 title: הדלקת חנוכייה מחוץ לבית: אורחים, נסיעות, קולג׳, מלונות ובתי חולים
 description: איך מדליקים חנוכייה כשלא נמצאים בבית: כאורחים, בנסיעה, בקולג׳, במלון או בבית חולים, ומתי לשאול את הרב.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
+related: chanukah-menorah, passover-away-from-home, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
 local: לא בבית בחנוכה, או מארחים מישהו שלא בביתו? הרב ישראל לבקובסקי ישמח לעזור למשפחות מלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 חנוכה הוא חג של הבית, אבל החיים לא תמיד משאירים אותנו בבית שמונה לילות. החדשות הטובות: החנוכייה נוסעת היטב. הנה ההדרכה הכללית; לגבי המצב שלכם, שאלו את הרב.

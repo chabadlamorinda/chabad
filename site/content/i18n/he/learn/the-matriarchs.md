@@ -2,7 +2,7 @@
 title: ארבע האמהות: שרה, רבקה, רחל ולאה, אמהות עם ישראל
 description: מי היו ארבע האמהות, סיפורן ומתנתן של שרה, רבקה, רחל ולאה, למה ארבע, ואיך נשים יהודיות ממשיכות את מורשתן.
 category: Prayer & Torah
-related: abraham-and-sarah, jacob-our-father, jewish-women, blessing-your-children, jewish-women-in-lamorinda, moses
+related: abraham-and-sarah, isaac-our-father, jacob-our-father, jewish-women, blessing-your-children, jewish-women-in-lamorinda, moses
 local: נשות לאמורינדה מוזמנות לחוג הנשים שלנו. ראו /programs/womens-circle או התקשרו 925-384-7242.
 ---
 ארבע האמהות הן שרה, רבקה, רחל ולאה, נשותיהם של אברהם, יצחק ויעקב ואמהות עם ישראל. סיפוריהן ממלאים את ספר בראשית, והתלמוד רואה בהן את הבסיס הרוחני שעליו נבנה העם.

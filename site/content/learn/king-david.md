@@ -2,7 +2,7 @@
 title: Who Was King David? Shepherd, Psalmist and King of Israel
 description: Who King David was: shepherd boy, Goliath, king in Jerusalem, his repentance, the Psalms Jews still say, and why Moshiach comes from his family.
 category: Prayer & Torah
-related: tehillim, king-solomon, moshiach, jerusalem, the-holy-temple, moses
+related: tehillim, samuel-the-prophet, book-of-ruth, king-solomon, moshiach, jerusalem, the-holy-temple, moses
 local: Say Psalms for someone who needs healing. Add a name to our prayer list at /help/talk-to-the-rabbi or call 925-384-7242.
 ---
 King David (David HaMelech, דוד המלך) was a shepherd from Bethlehem who became the second king of Israel, made Jerusalem its capital, and composed much of the Book of Psalms. Jews still say his Psalms every day, and Jewish tradition teaches that Moshiach will come from his family.

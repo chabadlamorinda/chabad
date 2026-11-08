@@ -2,7 +2,7 @@
 title: Lighting the Menorah Away From Home: Guests, Travel, College, Hotels and Hospitals
 description: How to light the Chanukah menorah when you are not home: as a guest, on a trip, at college, in a hotel or a hospital, and when to ask the Rabbi.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
+related: chanukah-menorah, passover-away-from-home, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
 local: Away from home over Chanukah, or hosting someone who is? Rabbi Yisroel Labkowski is happy to help families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Chanukah is a home holiday, but life does not always keep us home for eight nights. The good news: the menorah travels well. Here is the general guidance; for your own situation, ask the Rabbi.

@@ -2,7 +2,7 @@
 title: Blessings After Food: Al Hamichya and Borei Nefashot
 description: Which blessing to say after eating: Al Hamichya for grains, wine and special fruits, Borei Nefashot for everything else, and Grace After Meals for bread.
 category: Prayer & Torah
-related: blessings, seven-species, birkat-hamazon, hamotzi, kiddush
+related: blessings, eating-as-a-mitzvah, seven-species, birkat-hamazon, hamotzi, kiddush
 local: Want a blessings card or a quick lesson in the after-blessings? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Just as we say a blessing before we eat, we thank G-d after we eat. There are three after-blessings: the full Grace After Meals for bread, Al Hamichya for certain special foods, and Borei Nefashot for everything else. Knowing which one to say is easier than it sounds.

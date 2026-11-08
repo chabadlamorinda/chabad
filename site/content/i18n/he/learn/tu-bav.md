@@ -2,7 +2,7 @@
 title: ט״ו באב: יום האהבה והשמחה היהודי
 description: מהו ט״ו באב, למה התלמוד קורא לו אחד הימים השמחים בשנה, הקשר שלו לאהבה ולשידוכים, ואיך מציינים אותו.
 category: Shabbat & holidays
-related: jewish-dating, three-weeks, jewish-wedding, daily-torah-study
+related: jewish-dating, menachem-av, three-weeks, jewish-wedding, daily-torah-study
 local: הפכו את הלילות הארוכים שאחרי ט״ו באב לזמן של לימוד; ראו את השיעורים שלנו ב-chabadoflamorinda.com/programs/adult-education או התקשרו 925-384-7242.
 ---
 ט״ו באב, היום החמישה עשר בחודש אב, הוא חג יהודי קטן של שמחה, אהבה והתחלות חדשות. המשנה אומרת: "לא היו ימים טובים לישראל כחמישה עשר באב וכיום הכיפורים".

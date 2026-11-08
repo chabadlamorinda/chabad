@@ -2,7 +2,7 @@
 title: מכירת חמץ לפני פסח: איך זה עובד
 description: למה יהודים מוכרים את החמץ לפני פסח, איך המכירה דרך הרב עובדת, מה לאחסן ואיפה, מתי קונים בחזרה, ואיך עושים זאת באינטרנט.
 category: Shabbat & holidays
-related: chametz, kosher-beer-and-spirits, passover-in-lamorinda, kosher-for-passover, matzah, passover-seder, kosher-kitchen
+related: chametz, passover-away-from-home, kosher-beer-and-spirits, passover-in-lamorinda, kosher-for-passover, matzah, passover-seder, kosher-kitchen
 local: משפחות בלאפייט, מוראגה ואורינדה יכולות למכור את החמץ דרך הרב לבקובסקי באינטרנט בשתי דקות; לשאלות, התקשרו 925-384-7242.
 ---
 בכל אביב, יהודים בכל העולם עושים משהו שנשמע מוזר בפעם הראשונה ששומעים עליו: הם מוכרים את הלחם, הפסטה, הוויסקי ודגני הבוקר שלהם לגוי לשבוע של פסח, וקונים הכול בחזרה אחר כך. זה אחד המנהגים המעשיים ביותר בחיים היהודיים, ואפשר לעשות אותו מהטלפון. הנה מה זה ולמה זה חשוב.

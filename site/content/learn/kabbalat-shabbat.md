@@ -2,7 +2,7 @@
 title: Kabbalat Shabbat: Welcoming Shabbat on Friday Night
 description: What Kabbalat Shabbat is, the psalms and the song Lecha Dodi, why we turn to the door, and how to join the Friday night service in Lafayette.
 category: Shabbat & holidays
-related: shabbat, tzfat, shalom-aleichem, shabbat-meals, first-time-at-synagogue, zemirot
+related: shabbat, early-shabbat-in-summer, tzfat, shalom-aleichem, shabbat-meals, first-time-at-synagogue, zemirot
 local: Kabbalat Shabbat at Chabad of Lamorinda in Lafayette is on Friday evening at {kabbalat-shabbat}, followed by a warm Shabbat dinner. Everyone from Lafayette, Moraga and Orinda is welcome; call 925-384-7242.
 ---
 Kabbalat Shabbat means "welcoming Shabbat." It is the short, musical service on Friday at sunset, when the week ends and Shabbat arrives. The Sages pictured Shabbat as a queen and a bride, and Kabbalat Shabbat is how we go out to greet her: with songs, psalms and joy.

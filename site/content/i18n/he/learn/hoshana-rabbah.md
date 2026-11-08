@@ -2,7 +2,7 @@
 title: הושענא רבה: היום השביעי של סוכות
 description: מהו הושענא רבה, למה הוא יום הדין האחרון, מנהג חביטת הערבות, ליל הלימוד ואיך מציינים אותו.
 category: Shabbat & holidays
-related: four-kinds, chol-hamoed, shemini-atzeret, simchat-torah-for-beginners, sukkah, teshuvah, tehillim
+related: four-kinds, simchat-beit-hashoevah, chol-hamoed, shemini-atzeret, simchat-torah-for-beginners, sukkah, teshuvah, tehillim
 local: חגגו איתנו את סוכות, שמיני עצרת ושמחת תורה. פרטים ב-chabadoflamorinda.com/holidays/sukkot או בטלפון 925-384-7242.
 ---
 הושענא רבה הוא היום השביעי והאחרון של סוכות, שבו נחתם בפעם האחרונה הדין שהתחיל בראש השנה. זהו יום חג שמח עם תפילות מיוחדות, שבע הקפות סביב הבימה בבית הכנסת ומנהג חביטת הערבות.

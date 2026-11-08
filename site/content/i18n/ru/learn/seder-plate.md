@@ -2,7 +2,7 @@
 title: Пасхальное блюдо (кеара): что на нем лежит и как его разложить
 description: Шесть продуктов на блюде пасхального седера, смысл каждого и как разложить блюдо шаг за шагом по обычаю Хабада.
 category: Shabbat & holidays
-related: passover-seder, four-cups, matzah, afikoman, four-questions
+related: passover-seder, hosting-your-first-seder, four-cups, matzah, afikoman, four-questions
 local: Закажите ручную шмуру-мацу для вашего седера на chabadoflamorinda.com/forms/matzah или по телефону 925-384-7242.
 ---
 Блюдо седера (кеара) содержит символические продукты, которые используют на пасхальном седере: кость, яйцо, горькую зелень, харосет, овощ и вторую горькую зелень. Вместе с тремя мацами оно рассказывает историю рабства и свободы прямо на столе.

@@ -2,7 +2,7 @@
 title: יהדות ובריאות: שמירה על הגוף והנשמה
 description: מה היהדות מלמדת על הבריאות והגוף: המצווה לשמור על הבריאות, הרמב״ם על אורח חיים בריא, וברכת אשר יצר.
 category: Jewish ideas
-related: the-soul, kosher-medicine-and-vitamins, tattoos-jewish-view, maimonides, blessings, why-mitzvot
+related: the-soul, jewish-view-of-sleep, kosher-medicine-and-vitamins, tattoos-jewish-view, maimonides, blessings, why-mitzvot
 local: אם אתם או מישהו יקר לכם אינם חשים בטוב, חב״ד למורינדה כאן בשבילכם. ראו chabadoflamorinda.com/help/someone-is-sick או התקשרו 925-384-7242.
 ---
 היהדות מלמדת שהגוף הוא מתנה מה׳ ומשכן הנשמה, ולכן שמירה על הבריאות היא מצווה. תזונה טובה, שינה, פעילות גופנית וטיפול רפואי הם חלק מעבודת ה׳, לא הסחת דעת ממנה.

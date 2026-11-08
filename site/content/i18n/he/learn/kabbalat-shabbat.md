@@ -2,7 +2,7 @@
 title: קבלת שבת: מקבלים את השבת בליל שישי
 description: מהי קבלת שבת, המזמורים והפיוט "לכה דודי", למה פונים אל הדלת, ואיך מצטרפים לתפילת ליל שבת בלאפייט.
 category: Shabbat & holidays
-related: shabbat, tzfat, shalom-aleichem, shabbat-meals, first-time-at-synagogue, zemirot
+related: shabbat, early-shabbat-in-summer, tzfat, shalom-aleichem, shabbat-meals, first-time-at-synagogue, zemirot
 local: קבלת שבת בחב״ד למורינדה בלאפייט מתקיימת ביום שישי בערב ב־{kabbalat-shabbat}, ואחריה סעודת שבת חמה. כולם מלאפייט, מוראגה ואורינדה מוזמנים; התקשרו 925-384-7242.
 ---
 קבלת שבת פירושה "לקבל את פני השבת". זו התפילה הקצרה והמלאה בשירה שאומרים ביום שישי עם השקיעה, כשהשבוע נגמר והשבת מגיעה. חז״ל תיארו את השבת כמלכה וככלה, וקבלת שבת היא הדרך שבה אנחנו יוצאים לקראתה: בשירים, במזמורי תהילים ובשמחה.

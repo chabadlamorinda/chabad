@@ -2,7 +2,7 @@
 title: Ханукат а-байт: еврейское новоселье и освящение дома
 description: Как устроить еврейское новоселье, Ханукат а-байт: мезузы, благословения, праздничная встреча и дом, наполненный Торой.
 category: Jewish home
-related: mezuzah, moving-to-lamorinda, jewish-home-library, pushka, hachnasat-orchim
+related: mezuzah, the-mishkan, moving-to-lamorinda, jewish-home-library, pushka, hachnasat-orchim
 local: Переезжаете в новый дом? Хабад Ламоринды поможет приобрести кошерные мезузы и прикрепить их. Воспользуйтесь chabadoflamorinda.com/forms/mezuzah-tefillin или звоните 925-384-7242.
 ---
 Ханукат а-байт, «освящение дома», - это еврейский способ отпраздновать переезд в новый дом или квартиру. Главное в нем - прикрепление кошерных мезуз, за которым часто следует праздничное собрание со словами Торы, благословениями и вкусной едой.

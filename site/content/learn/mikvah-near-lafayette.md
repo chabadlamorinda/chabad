@@ -2,7 +2,7 @@
 title: Mikvah Near Lafayette, Moraga and Orinda: How to Arrange a Visit
 description: Looking for a mikvah near Lafayette, Moraga or Orinda? Women here generally use the Chabad mikvah in Berkeley, arranged privately with the Rebbetzin.
 category: Lamorinda
-related: mikvah, family-purity, kallah-classes, jewish-wedding-in-lamorinda, converting-to-judaism
+related: mikvah, mikvah-for-men, family-purity, kallah-classes, jewish-wedding-in-lamorinda, converting-to-judaism
 local: To arrange a mikvah visit, call or text Rebbetzin Tzipora Labkowski privately at 925-384-7241. Every conversation is confidential.
 ---
 Women in Lafayette, Moraga and Orinda generally use the Chabad mikvah in Berkeley, and the visit is arranged privately through Rebbetzin Tzipora Labkowski of Chabad of Lamorinda at 925-384-7241. You do not need to be a member of anything, and you do not need to have been to a mikvah before.

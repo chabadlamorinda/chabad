@@ -2,7 +2,7 @@
 title: Mikvah Near Lafayette, Moraga and Orinda: How to Arrange a Visit
 description: מחפשות מקווה ליד לאפייט, מוראגה או אורינדה? נשות האזור משתמשות בדרך כלל במקווה חב"ד בברקלי, בתיאום דיסקרטי עם הרבנית.
 category: Lamorinda
-related: mikvah, family-purity, kallah-classes, jewish-wedding-in-lamorinda, converting-to-judaism
+related: mikvah, mikvah-for-men, family-purity, kallah-classes, jewish-wedding-in-lamorinda, converting-to-judaism
 local: לתיאום ביקור במקווה, התקשרו או שלחו הודעה לרבנית צִפּוֹרָה לבקובסקי בדיסקרטיות: 925-384-7241. כל שיחה חסויה.
 ---
 נשות לאפייט, מוראגה ואורינדה משתמשות בדרך כלל במקווה חב"ד בברקלי, והביקור מתואם בדיסקרטיות דרך הרבנית צפורה לבקובסקי מחב"ד לאמורינדה, בטלפון 925-384-7241. אין צורך להיות חברות בשום מקום, ואין צורך שכבר ביקרתן במקווה.

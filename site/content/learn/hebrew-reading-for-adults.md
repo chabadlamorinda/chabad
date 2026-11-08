@@ -2,7 +2,7 @@
 title: Learning to Read Hebrew as an Adult
 description: A friendly guide for adults learning to read Hebrew: the alef-bet, vowels, reading the siddur, practice tips, and where to start.
 category: Prayer & Torah
-related: hebrew-alphabet, siddur, hebrew-phrases, prayer
+related: hebrew-alphabet, lashon-hakodesh, siddur, hebrew-phrases, prayer
 local: Learn to read Hebrew with Chabad of Lamorinda. Ask about adult classes at chabadoflamorinda.com/programs/adult-education or call 925-384-7242.
 ---
 Any adult can learn to read Hebrew, and most people are surprised how quickly it comes. With the 22 letters, a handful of vowel signs and a little steady practice, you can begin following along in the siddur within weeks.

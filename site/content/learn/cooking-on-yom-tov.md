@@ -2,7 +2,7 @@
 title: Cooking on Yom Tov: How Holidays Differ from Shabbat
 description: What is allowed on Jewish holidays that is not on Shabbat: cooking from an existing flame, carrying, cooking only for that day and eruv tavshilin.
 category: Shabbat & holidays
-related: eruv-tavshilin, thirty-nine-melachot, shabbat-practical-questions, jewish-calendar
+related: eruv-tavshilin, yom-tov-candle-lighting, thirty-nine-melachot, shabbat-practical-questions, jewish-calendar
 local: Planning holiday meals in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242 with any Yom Tov kitchen question.
 ---
 Yom Tov means "a good day": the festival days of Pesach, Shavuot, Sukkot, Shemini Atzeret, Simchat Torah and Rosh Hashanah. Like Shabbat, they are days of rest with candle lighting, Kiddush and festive meals. But there is one big difference: on Yom Tov we may cook and do other work needed for food that day.

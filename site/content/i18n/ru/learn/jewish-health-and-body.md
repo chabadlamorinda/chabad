@@ -2,7 +2,7 @@
 title: Иудаизм и здоровье: забота о теле и душе
 description: Чему иудаизм учит о здоровье и теле: заповедь беречь здоровье, Рамбам о здоровом образе жизни и благословение «Ашер яцар».
 category: Jewish ideas
-related: the-soul, kosher-medicine-and-vitamins, tattoos-jewish-view, maimonides, blessings, why-mitzvot
+related: the-soul, jewish-view-of-sleep, kosher-medicine-and-vitamins, tattoos-jewish-view, maimonides, blessings, why-mitzvot
 local: Если вы или ваш близкий человек нездоровы, Хабад Ламоринды рядом с вами. Смотрите chabadoflamorinda.com/help/someone-is-sick или звоните 925-384-7242.
 ---
 Иудаизм учит, что тело - это дар Б-га и дом души, поэтому забота о здоровье - заповедь. Хорошее питание, сон, физические упражнения и медицинская помощь - часть служения Б-гу, а не отвлечение от него.
