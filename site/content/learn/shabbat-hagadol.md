@@ -1,6 +1,6 @@
 ---
 title: Shabbat HaGadol: The Great Shabbat Before Passover and Why It Is Called Great
-description: What is Shabbat HaGadol? The Shabbat before Passover, why it is called "the Great Shabbat," the miracle of the lamb, the Haggadah reading and the rabbi's talk.
+description: What is Shabbat HaGadol? The Shabbat before Passover: why it is called "the Great Shabbat," the miracle of the lamb, the Haggadah and the rabbi's talk.
 category: Shabbat & holidays
 related: passover-for-beginners, nissan, elijah-the-prophet, selling-your-chametz, haggadah, passover-cleaning, exodus-story
 local: Join us for Shabbat in the weeks before Passover, whether you live in Lafayette, Moraga or Orinda: call Rabbi Yisroel Labkowski at 925-384-7242 to hear what is planned, or see [this week's events](/events).

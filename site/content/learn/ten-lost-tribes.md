@@ -5,7 +5,7 @@ category: Jewish ideas
 related: twelve-tribes, jewish-history-overview, moshiach, kingdoms-of-israel-and-judah, what-is-a-prophet
 local: Curious about your Jewish roots and history? Call Rabbi Yisroel Labkowski at 925-384-7242 or join a class under [adult education](/programs/adult-education), open to every Jew in Lafayette, Moraga and Orinda.
 ---
-The Ten Lost Tribes are the ten of the twelve tribes of Israel who made up the northern Kingdom of Israel and were exiled by Assyria about 2,700 years ago. They disappeared from history, and Jewish tradition teaches that they will be gathered back when Moshiach comes. No one has conclusively identified where they are.
+The Ten Lost Tribes are the ten of the twelve tribes of Israel who made up the northern Kingdom of Israel and were exiled by Assyria in the time of the First Temple. They disappeared from history, and Jewish tradition teaches that they will be gathered back when Moshiach comes. No one has conclusively identified where they are.
 
 ## Who were the ten tribes?
 
