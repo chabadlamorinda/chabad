@@ -25,7 +25,7 @@ Alkabetz signed his name in an acrostic: the first letters of the first eight st
 
 ## Standing and turning at the door
 
-Near the end of Lecha Dodi, at the stanza that begins "Bo'i vesholom" and the words "Bo'i kallah" (come, bride), the congregation turns, and many bow slightly. Customs differ, so here are common explanations:
+Near the end of Lecha Dodi, at the stanza that begins "Bo'i beshalom" and the words "Bo'i kallah" (come, bride), the congregation turns, and many bow slightly. Customs differ, so here are common explanations:
 
 - It recalls the old practice of going outdoors to welcome Shabbat.
 - Many turn toward the entrance of the room, as if welcoming a guest.

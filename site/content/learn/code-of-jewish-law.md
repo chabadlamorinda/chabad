@@ -35,7 +35,7 @@ Chabad.org notes that its opening line urges a person to rise "like a lion" to s
 
 - **Kitzur Shulchan Aruch.** Rabbi Shlomo Ganzfried (1804-1886) wrote an original, short and readable version for ordinary people. It is a good first book. See [a Jewish home library](/learn/jewish-home-library).
 - **Mishnah Berurah.** The Chafetz Chaim (1839-1933) wrote a six-volume commentary on Orach Chaim, widely used for daily life.
-- **Shulchan Aruch HaRav.** Rabbi Schneur Zalman of Liadi, the Alter Rebbe and founder of Chabad, wrote a longer version at the request of the Maggid of Mezritch. It explains the reasoning for each law and gives a final ruling that takes later opinions into account. Chabad Jews study and follow it. See [the Chabad Rebbes](/learn/chabad-rebbes).
+- **Shulchan Aruch HaRav.** Rabbi Schneur Zalman of Liadi, the Alter Rebbe and founder of Chabad, wrote a longer version at the request of the Maggid of Mezritch. It explains the reasoning for each law and gives a final ruling that takes later opinions into account. See [the Chabad Rebbes](/learn/chabad-rebbes).
 
 Chabad.org points out that the name has become a word for Jewish law itself, and that someone who lives closely by it is sometimes called a "Shulchan Aruch Yid."
 
