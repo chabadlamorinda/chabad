@@ -1,6 +1,6 @@
 ---
 title: "Hillel and Shammai: The Famous Sages and Their Arguments for Heaven"
-description: Who were Hillel and Shammai? The sages behind the Houses of Hillel and Shammai, the story of the convert on one foot and lessons for peaceful disagreement.
+description: Who were Hillel and Shammai? The sages behind the two Houses, the story of the convert on one foot and lessons for peaceful disagreement.
 category: Jewish ideas
 related: pirkei-avot, ahavat-yisrael, humility, talmud, aaron-the-high-priest
 local: Come learn Pirkei Avot and the Talmud's wisdom with others. Call 925-384-7242 to hear what classes are planned.

@@ -1,5 +1,5 @@
 ---
-title: "Am Yisrael Chai" Meaning: The Jewish People Lives
+title: Am Yisrael Chai Meaning: The Jewish People Lives
 description: What does "Am Yisrael Chai" mean? The Jewish people lives. Learn the phrase, its message of Jewish survival, and how to answer hard times with mitzvahs.
 category: Jewish ideas
 related: jewish-pride, tehillim, israel-and-the-jewish-people, facing-antisemitism, shabbat-candles

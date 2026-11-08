@@ -1,6 +1,6 @@
 ---
 title: "King Solomon: The Wisest Man, the First Temple and His Three Books"
-description: Who was King Solomon? His request for wisdom, the two mothers, building the First Temple and the three books of the Bible he wrote, with lessons for today.
+description: Who was King Solomon? His request for wisdom, the two mothers, building the First Temple and the three books he wrote, with lessons for today.
 category: Prayer & Torah
 related: king-david, the-holy-temple, eishet-chayil, pirkei-avot, moses
 local: Want to study the Bible's wisdom books with others? Call 925-384-7242 to hear what classes are planned.

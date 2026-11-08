@@ -1,5 +1,5 @@
 ---
-title: "עם ישראל חי" פירוש: העם היהודי חי
+title: עם ישראל חי פירוש: העם היהודי חי
 description: מה פירוש "עם ישראל חי"? העם היהודי חי. למדו את הביטוי, את מסר ההישרדות היהודית ואיך עונים לזמנים קשים במצוות.
 category: Jewish ideas
 related: jewish-pride, tehillim, israel-and-the-jewish-people, facing-antisemitism, shabbat-candles
