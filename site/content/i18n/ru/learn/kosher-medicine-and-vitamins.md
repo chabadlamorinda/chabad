@@ -1,5 +1,5 @@
 ---
-title: "Должны ли лекарства и витамины быть кошерными?"
+title: Должны ли лекарства и витамины быть кошерными?
 description: Должны ли витамины и лекарства быть кошерными? Таблетки, желатиновые капсулы, Песах, посты и Шаббат. Здоровье прежде всего. Спросите раввина.
 category: Kosher
 related: pikuach-nefesh, kosher-for-passover, jewish-health-and-body, jewish-seniors-in-lamorinda, hidden-kosher-ingredients

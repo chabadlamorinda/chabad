@@ -1,5 +1,5 @@
 ---
-title: "שאלות על מזוזה: שכירות, משרדים, מעונות ומעבר דירה"
+title: שאלות על מזוזה: שכירות, משרדים, מעונות ומעבר דירה
 description: האם צריך מזוזה בדירה שכורה? ומה לגבי משרד, מעונות סטודנטים או מעבר דירה? תשובות ברורות לפי מנהג חב"ד ואל מי פונים בלמורינדה.
 category: Jewish home
 related: mezuzah, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students

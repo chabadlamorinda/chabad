@@ -1,5 +1,5 @@
 ---
-title: "האם בירה, ויסקי ומשקאות חריפים כשרים? מדריך פשוט"
+title: האם בירה, ויסקי ומשקאות חריפים כשרים? מדריך פשוט
 description: האם בירה כשרה? האם ויסקי כשר? מדריך פשוט לבירה, וודקה, ויסקי, ברנדי וליקרים, לברכה ולפסח. שאלו את חב"ד למורינדה.
 category: Kosher
 related: kosher-wine, selling-your-chametz, blessings, kosher-for-passover, kosher-symbols

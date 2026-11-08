@@ -1,5 +1,5 @@
 ---
-title: "Покупки к Песаху: что требует знака «кошерно для Песаха»"
+title: Покупки к Песаху: что требует знака «кошерно для Песаха»
 description: Список покупок к Песаху: какие продукты требуют знака «кошерно для Песаха», что допустимо без него и что купить для седера. Помощь в Лафайете.
 category: Kosher
 related: kosher-for-passover, kosher-in-lamorinda, chametz, passover-seder, gluten-free-passover

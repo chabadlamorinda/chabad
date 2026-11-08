@@ -1,5 +1,5 @@
 ---
-title: "ביצים כשרות: כתמי דם, בדיקת ביצים ולמה ביצים פרווה"
+title: ביצים כשרות: כתמי דם, בדיקת ביצים ולמה ביצים פרווה
 description: האם ביצים כשרות ופרווה? איך בודקים ביצה לכתם דם, מה עושים אם מוצאים כתם, ודיני בישול ביצים. צעדים פשוטים מחב"ד.
 category: Kosher
 related: pareve, kosher-kitchen, checking-for-insects, meat-and-milk, kosher-symbols

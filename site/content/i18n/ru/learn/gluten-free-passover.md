@@ -1,5 +1,5 @@
 ---
-title: "Безглютеновая маца: Песах при целиакии или аллергии на пшеницу"
+title: Безглютеновая маца: Песах при целиакии или аллергии на пшеницу
 description: Есть ли безглютеновая маца для седера? Овсяная маца, почему «маца» из риса или картофеля не считается и как подготовить Песах при целиакии.
 category: Kosher
 related: matzah, passover-seder, kosher-for-passover, passover-shopping-list, passover-for-beginners

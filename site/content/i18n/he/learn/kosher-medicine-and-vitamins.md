@@ -1,5 +1,5 @@
 ---
-title: "האם תרופות וויטמינים צריכים להיות כשרים?"
+title: האם תרופות וויטמינים צריכים להיות כשרים?
 description: האם ויטמינים ותרופות צריכים להיות כשרים? מדריך ברור לכדורים, קפסולות ג'לטין, פסח, תעניות ושבת. הבריאות קודמת. שאלו את הרב.
 category: Kosher
 related: pikuach-nefesh, kosher-for-passover, jewish-health-and-body, jewish-seniors-in-lamorinda, hidden-kosher-ingredients

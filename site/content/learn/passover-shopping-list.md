@@ -1,5 +1,5 @@
 ---
-title: "Passover Shopping: What Needs a Kosher-for-Passover Label"
+title: Passover Shopping: What Needs a Kosher-for-Passover Label
 description: Your Passover shopping list: which foods need a Kosher for Passover label, what is fine without one, and what to buy for the Seder. Help from Lafayette.
 category: Kosher
 related: kosher-for-passover, kosher-in-lamorinda, chametz, passover-seder, gluten-free-passover

@@ -1,5 +1,5 @@
 ---
-title: "קניות לפסח: מה צריך תווית כשר לפסח"
+title: קניות לפסח: מה צריך תווית כשר לפסח
 description: רשימת הקניות לפסח: אילו מאכלים צריכים תווית כשר לפסח, מה בסדר בלעדיה ומה קונים לסדר. עזרה מלפייט.
 category: Kosher
 related: kosher-for-passover, kosher-in-lamorinda, chametz, passover-seder, gluten-free-passover

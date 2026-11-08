@@ -1,5 +1,5 @@
 ---
-title: "Are Beer, Whiskey and Liquor Kosher? A Simple Guide"
+title: Are Beer, Whiskey and Liquor Kosher? A Simple Guide
 description: Is beer kosher? Is whiskey kosher? A simple guide to beer, vodka, whiskey, brandy and liqueurs, the blessing, and Passover. Ask Chabad of Lamorinda.
 category: Kosher
 related: kosher-wine, selling-your-chametz, blessings, kosher-for-passover, kosher-symbols

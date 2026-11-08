@@ -1,5 +1,5 @@
 ---
-title: "Кидуш без вина: виноградный сок и безалкогольные варианты"
+title: Кидуш без вина: виноградный сок и безалкогольные варианты
 description: Можно ли делать Кидуш на виноградном соке? Да. Варианты для тех, кто не пьёт алкоголь: пятница вечером, утро Шаббата, Авдала и четыре бокала.
 category: Shabbat & holidays
 related: kiddush, havdalah, addiction-and-recovery, kosher-wine, shabbat-for-beginners

@@ -1,5 +1,5 @@
 ---
-title: "מצה ללא גלוטן: פסח עם צליאק או אלרגיה לחיטה"
+title: מצה ללא גלוטן: פסח עם צליאק או אלרגיה לחיטה
 description: האם יש מצה ללא גלוטן לליל הסדר? מצת שיבולת שועל, למה "מצה" מאורז או תפוחי אדמה אינה נחשבת, ואיך מתכננים פסח עם צליאק.
 category: Kosher
 related: matzah, passover-seder, kosher-for-passover, passover-shopping-list, passover-for-beginners

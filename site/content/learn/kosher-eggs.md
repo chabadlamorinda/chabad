@@ -1,5 +1,5 @@
 ---
-title: "Kosher Eggs: Blood Spots, Checking Eggs and Why Eggs Are Pareve"
+title: Kosher Eggs: Blood Spots, Checking Eggs and Why Eggs Are Pareve
 description: Are eggs kosher and pareve? How to check an egg for a blood spot, what to do if you find one, and the rules for cooking eggs. Simple steps from Chabad.
 category: Kosher
 related: pareve, kosher-kitchen, checking-for-insects, meat-and-milk, kosher-symbols

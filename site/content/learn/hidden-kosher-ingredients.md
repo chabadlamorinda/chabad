@@ -1,5 +1,5 @@
 ---
-title: "Is It Kosher? Gelatin, Rennet, Carmine and Other Hidden Ingredients"
+title: Is It Kosher? Gelatin, Rennet, Carmine and Other Hidden Ingredients
 description: Is gelatin kosher? Which hidden ingredients (gelatin, carmine, glycerin, natural flavors) need a reliable kosher symbol, and who to ask in Lamorinda.
 category: Kosher
 related: kosher-symbols, kosher-certification, kosher-cheese, pareve, kosher-wine

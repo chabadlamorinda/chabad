@@ -1,5 +1,5 @@
 ---
-title: "Do Medicines and Vitamins Need to Be Kosher?"
+title: Do Medicines and Vitamins Need to Be Kosher?
 description: Do vitamins and medicines need to be kosher? A clear guide to pills, gel caps, Passover, fast days and Shabbat. Health always comes first. Ask the Rabbi.
 category: Kosher
 related: pikuach-nefesh, kosher-for-passover, jewish-health-and-body, jewish-seniors-in-lamorinda, hidden-kosher-ingredients

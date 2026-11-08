@@ -1,5 +1,5 @@
 ---
-title: "קידוש בלי יין: מיץ ענבים ואפשרויות ללא אלכוהול"
+title: קידוש בלי יין: מיץ ענבים ואפשרויות ללא אלכוהול
 description: אפשר לעשות קידוש על מיץ ענבים? כן. אפשרויות למי שאינו שותה אלכוהול, לליל שבת, לשבת בבוקר, להבדלה ולארבע כוסות.
 category: Shabbat & holidays
 related: kiddush, havdalah, addiction-and-recovery, kosher-wine, shabbat-for-beginners

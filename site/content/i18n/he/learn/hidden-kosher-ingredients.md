@@ -1,5 +1,5 @@
 ---
-title: "האם זה כשר? ג'לטין, קיבה, קרמין ומרכיבים נסתרים"
+title: האם זה כשר? ג'לטין, קיבה, קרמין ומרכיבים נסתרים
 description: האם ג'לטין כשר? אילו מרכיבים נסתרים (ג'לטין, קרמין, גליצרין, טעמים טבעיים) דורשים הכשר אמין, ואל מי פונים בלמורינדה.
 category: Kosher
 related: kosher-symbols, kosher-certification, kosher-cheese, pareve, kosher-wine

@@ -1,5 +1,5 @@
 ---
-title: "Gluten-Free Matzah: Passover with Celiac or a Wheat Allergy"
+title: Gluten-Free Matzah: Passover with Celiac or a Wheat Allergy
 description: Is there gluten-free matzah for the Seder? Learn about oat matzah, why rice or potato matzah does not count, and how to plan Passover with celiac disease.
 category: Kosher
 related: matzah, passover-seder, kosher-for-passover, passover-shopping-list, passover-for-beginners

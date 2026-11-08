@@ -1,5 +1,5 @@
 ---
-title: "Kiddush Without Wine: Grape Juice and Alcohol-Free Options"
+title: Kiddush Without Wine: Grape Juice and Alcohol-Free Options
 description: Can you make Kiddush on grape juice? Yes. Options for those who do not drink alcohol, for Friday night, Shabbat morning, Havdalah and the four cups.
 category: Shabbat & holidays
 related: kiddush, havdalah, addiction-and-recovery, kosher-wine, shabbat-for-beginners

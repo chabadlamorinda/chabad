@@ -1,5 +1,5 @@
 ---
-title: "Вопросы о мезузе: аренда, офис, общежитие и переезд"
+title: Вопросы о мезузе: аренда, офис, общежитие и переезд
 description: Нужна ли мезуза в съёмной квартире? А в офисе, общежитии или при переезде? Ясные ответы по обычаю Хабада и к кому обратиться в Ламоринде.
 category: Jewish home
 related: mezuzah, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students
