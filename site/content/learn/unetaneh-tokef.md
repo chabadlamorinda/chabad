@@ -1,6 +1,6 @@
 ---
 title: Unetaneh Tokef: "Who Will Live and Who Will Die" Explained
-description: What the Unetaneh Tokef prayer says, the story of Rabbi Amnon, and its hopeful message of teshuvah, tefillah and tzedakah. Join us this High Holiday season.
+description: What the Unetaneh Tokef prayer says, the story of Rabbi Amnon, and its hopeful message of teshuvah, tefillah and tzedakah. Join us this season.
 category: Shabbat & holidays
 related: ten-days-of-repentance, teshuvah, shofar, kol-nidre, tzedakah
 local: Families in Lafayette, Moraga and Orinda are welcome to hear Unetaneh Tokef with us; no Hebrew needed. Call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned.

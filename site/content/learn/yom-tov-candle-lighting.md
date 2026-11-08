@@ -1,6 +1,6 @@
 ---
 title: Yom Tov Candle Lighting: The Blessings and the Rules
-description: How to light holiday candles: the blessings in English and transliteration, Shehecheyanu, the second night from an existing flame, and Yom Tov after Shabbat.
+description: How to light Yom Tov candles: blessings with transliteration, Shehecheyanu, the second night from an existing flame, and Yom Tov after Shabbat.
 category: Shabbat & holidays
 related: shabbat-candles, cooking-on-yom-tov, eruv-tavshilin, blessings, jewish-calendar
 local: Need help lighting candles or finding candlesticks? Call Rebbetzin Tzipora or Rabbi Labkowski at 925-384-7242.
