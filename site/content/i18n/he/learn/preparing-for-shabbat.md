@@ -2,7 +2,7 @@
 title: מתכוננים לשבת: רשימה ליום שישי
 description: איך מתכוננים לשבת ביום שישי: אוכל, שולחן, נרות, אורות, בגדים ולב רגוע, עם רשימה פשוטה למשפחות.
 category: Shabbat & holidays
-related: shabbat-candles, baking-challah, keeping-food-warm-on-shabbat, shabbat-for-beginners, hosting-your-first-shabbat-dinner, shabbat-for-working-parents, cholent
+related: shabbat-candles, shabbat-clothes, baking-challah, keeping-food-warm-on-shabbat, shabbat-for-beginners, hosting-your-first-shabbat-dinner, shabbat-for-working-parents, cholent
 local: זמני הדלקת הנרות ללאפייט, מוראגה ואורינדה נמצאים בעמוד זמני השבת שלנו. שאלות? התקשרו לרב: 925-384-7242.
 ---
 השבת נכנסת בשקיעה ביום שישי, אבל השלווה שלה מתחילה קודם, בהכנות. חז״ל לימדו: "מי שטרח בערב שבת, יאכל בשבת". ההכנה איננה מטלה לפני המצווה; היא חלק ממנה.

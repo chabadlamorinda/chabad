@@ -2,7 +2,7 @@
 title: Planning a Jewish Funeral in Advance: Burial Wishes, Plots and a Gift to Your Family
 description: Plan a Jewish funeral in advance: write your wishes, consider a plot in a Jewish cemetery, tell your family whom to call. Meet the Rabbi privately.
 category: Mourning & remembrance
-related: halachic-will, ethical-will, jewish-funeral, cremation-jewish-view, chevra-kadisha-and-tahara
+related: halachic-will, autopsy-jewish-view, ethical-will, jewish-funeral, cremation-jewish-view, chevra-kadisha-and-tahara
 local: Would you like to think this through with someone kind? Call Rabbi Labkowski at 925-384-7242 or write via /help/talk-to-the-rabbi. It is a private conversation.
 ---
 To plan a Jewish funeral in advance, write down your wishes (burial in the ground, tahara, a plain casket, no embalming or cremation), consider a plot in a Jewish cemetery, and tell your family whom to call first, which should be your Rabbi. It is a kindness to your family, who will not have to guess in a hard moment.

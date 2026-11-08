@@ -2,7 +2,7 @@
 title: The Hebrew Month of Shevat: Tu BiShvat, Trees and a Month of Growth
 description: What is the Hebrew month of Shevat? Rain, Tu BiShvat, Moses' last words and the Torah in 70 languages. See what the month holds, from Lafayette.
 category: Shabbat & holidays
-related: tu-bishvat-seder, tevet, jewish-calendar, seven-species, shabbat-shirah
+related: tu-bishvat-seder, a-person-is-like-a-tree, tevet, jewish-calendar, seven-species, shabbat-shirah
 local: Planning to mark Tu BiShvat? Call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned for families in Lafayette, Moraga and Orinda.
 ---
 Shevat (שבט) is the eleventh month of the Hebrew calendar, counting from Nissan, and it is best known for Tu BiShvat, the New Year for Trees on the 15th of the month. It falls in the heart of the winter rains, the season in which trees begin to wake up.

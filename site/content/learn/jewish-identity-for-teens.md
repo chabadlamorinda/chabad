@@ -2,7 +2,7 @@
 title: Jewish Identity for Teens: Being Proudly Jewish in High School
 description: A guide for Jewish teens: what being Jewish means, handling questions and antisemitism, simple mitzvahs, Jewish friends and finding your own connection.
 category: Jewish ideas
-related: jewish-pride, bar-mitzvah, bat-mitzvah, jewish-college-students
+related: jewish-pride, talking-to-kids-about-antisemitism, raising-jewish-kids-in-a-small-community, bar-mitzvah, bat-mitzvah, jewish-college-students
 local: Teens in Lafayette, Moraga and Orinda are welcome at Chabad of Lamorinda for events, volunteering and real conversations. Call the Rabbi at 925-384-7242.
 ---
 Being Jewish as a teen means you are part of a people more than 3,000 years old, with a soul that is fully Jewish whether or not you feel religious. High school is a great time to figure out what that means for you, ask hard questions and find your own way to connect.

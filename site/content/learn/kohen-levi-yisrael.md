@@ -2,7 +2,7 @@
 title: Kohen, Levi or Yisrael? The Tribes of Israel and Your Family Line
 description: Am I a Kohen or a Levi? How Kohen, Levi and Yisrael status passes from father to son, what a surname or DNA test can show, and how to ask the Rabbi.
 category: Jewish ideas
-related: birkat-kohanim, pidyon-haben, jewish-genealogy, aliyah, who-is-a-jew
+related: birkat-kohanim, jewish-last-names, twelve-tribes, pidyon-haben, jewish-genealogy, aliyah, who-is-a-jew
 local: Wondering if your family is Kohen or Levi? Rabbi Labkowski will help you privately. Call or text 925-384-7242.
 ---
 A Kohen (כֹּהֵן, priest) is a Jewish man descended in the male line from Aaron, a Levi (לֵוִי) is descended in the male line from the tribe of Levi, and everyone else is a Yisrael (יִשְׂרָאֵל). Each status passes from father to son, so the best way to know yours is your family tradition, and the Rabbi can help you check.

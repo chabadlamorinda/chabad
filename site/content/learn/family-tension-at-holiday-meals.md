@@ -1,6 +1,6 @@
 ---
 title: Family Tension at Holiday Meals: Jewish Wisdom for Keeping the Peace
-description: How to keep the peace at Thanksgiving, Chanukah and Seder tables: Jewish wisdom on seating, topics, judging favorably and silence. A private talk is always welcome.
+description: Keep the peace at Thanksgiving, Chanukah and Seder tables: Jewish wisdom on seating, topics, judging favorably and silence. A private talk is welcome.
 category: Jewish home
 related: family-feuds-and-inheritance, judging-others-favorably, shalom-bayit, forgiveness-and-making-peace, in-laws
 local: Dreading a family gathering? Talk it over privately with the Rabbi or Rebbetzin: 925-384-7242 or /help/talk-to-the-rabbi.

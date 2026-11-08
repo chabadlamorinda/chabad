@@ -2,7 +2,7 @@
 title: השבת אבידה: המצווה להחזיר דברים שאבדו
 description: מה התורה אומרת על השבת אבידה, מה עושים כשמוצאים ארנק או טלפון, איך בעלים מוכיח שהחפץ שלו, וחינוך ילדים ליושר.
 category: Jewish ideas
-related: honesty-and-truth, business-ethics, keeping-your-word, raising-kind-children, being-a-good-neighbor
+related: honesty-and-truth, rabbi-meir-baal-haness, business-ethics, keeping-your-word, raising-kind-children, being-a-good-neighbor
 local: מצאתם משהו ולא בטוחים מה ההלכה מבקשת מכם? הרב ישראל לבקובסקי ישמח לעזור, למשפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 אתם הולכים בחניון ורואים ארנק על הרצפה. טלפון נשכח על ספסל. בכל אחד מהרגעים האלה יש לתורה מה לומר, וזה יותר מ"תהיו נחמדים". החזרת דברים שאבדו, השבת אבידה, היא מצווה בפני עצמה.

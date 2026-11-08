@@ -2,7 +2,7 @@
 title: Adult Bar or Bat Mitzvah: It Is Never Too Late to Celebrate
 description: Never had a bar or bat mitzvah? An adult bar or bat mitzvah marks taking on what you already are. Learn how, and call Chabad of Lamorinda to begin.
 category: Life cycle
-related: bar-mitzvah-parsha, hebrew-reading-for-adults, getting-a-hebrew-name-as-an-adult, tefillin, bar-mitzvah
+related: bar-mitzvah-parsha, bar-mitzvah-at-83, hebrew-reading-for-adults, getting-a-hebrew-name-as-an-adult, tefillin, bar-mitzvah
 local: Thinking about your own bar or bat mitzvah? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi. No experience needed.
 ---
 An adult bar or bat mitzvah is a celebration, at any age, of becoming responsible for the mitzvahs (commandments) as a Jewish adult. In Jewish law you became bar mitzvah at 13 or bat mitzvah at 12 automatically, with or without a party, so an adult celebration does not "make" you Jewish-adult; it marks the moment you choose to embrace it.

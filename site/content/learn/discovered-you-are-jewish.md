@@ -2,7 +2,7 @@
 title: Just Found Out You're Jewish? A DNA Test, a Family Secret and What Comes Next
 description: Learned you may be Jewish from a DNA test or a family secret? What it means, why the mother's line matters, and kind first steps. Ask Rabbi Labkowski.
 category: Jewish ideas
-related: who-is-a-jew, proving-jewish-ancestry, jewish-genealogy, russian-speaking-jews-in-lamorinda, hebrew-names
+related: who-is-a-jew, jewish-last-names, proving-jewish-ancestry, jewish-genealogy, russian-speaking-jews-in-lamorinda, hebrew-names
 local: Found a Jewish root in your family? Rabbi Labkowski will talk with you privately and kindly. Call 925-384-7242.
 ---
 According to traditional Jewish law, you are Jewish if your mother is Jewish, meaning her own mother was, and so on back, or if you converted properly. A DNA test can point to Jewish ancestors, but it cannot by itself say whether you are Jewish under Jewish law, so the kind next step is to ask the Rabbi, privately and without pressure.

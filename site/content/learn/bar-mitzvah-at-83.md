@@ -1,6 +1,6 @@
 ---
 title: A Second Bar Mitzvah at 83: Celebrating Seventy More Years
-description: Why some Jews celebrate a second bar mitzvah at 83, what the custom means and how to mark it with an aliyah, a Kiddush and family. Ask the Rabbi: 925-384-7242.
+description: Why some Jews celebrate a second bar mitzvah at 83, what it means and how to mark it with an aliyah, a Kiddush and family. Ask the Rabbi: 925-384-7242.
 category: Life cycle
 related: adult-bar-bat-mitzvah, jewish-seniors-in-lamorinda, jewish-birthday-customs, bar-mitzvah, aliyah
 local: Turning 83, or planning it for a parent? Call Rabbi Labkowski at 925-384-7242 and we will plan it together.

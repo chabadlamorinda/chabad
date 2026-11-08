@@ -2,7 +2,7 @@
 title: Free Will in Judaism: Do We Really Choose?
 description: What Judaism teaches about free will, how it fits with G-d knowing the future, and practical Chassidic tools for making good choices every day.
 category: Jewish ideas
-related: teshuvah, yetzer-hara, torah-and-science, changing-a-bad-habit, reincarnation, the-soul, belief-in-g-d, tanya
+related: teshuvah, adam-and-eve, yetzer-hara, torah-and-science, changing-a-bad-habit, reincarnation, the-soul, belief-in-g-d, tanya
 local: Want to explore big questions like free will? Call Rabbi Labkowski at 925-384-7242 or see our adult education classes at chabadoflamorinda.com/programs/adult-education.
 ---
 Judaism teaches that every person has free will: the power to choose between good and bad. This freedom is a basic principle of the Torah. Without it, mitzvot, reward and teshuvah would have no meaning.

@@ -2,7 +2,7 @@
 title: סדר ט״ו בשבט: איך חוגגים את ראש השנה לאילנות
 description: איך עורכים סדר ט״ו בשבט או מפגש פירות: שבעת המינים, הברכות הנכונות וסדרן, והמנהגים הקבליים.
 category: Shabbat & holidays
-related: shehecheyanu, blessing-on-blossoming-trees, seven-species, shevat, bal-tashchit, blessings, jewish-calendar, jewish-foods
+related: shehecheyanu, a-person-is-like-a-tree, blessing-on-blossoming-trees, seven-species, shevat, bal-tashchit, blessings, jewish-calendar, jewish-foods
 local: חגגו איתנו את ט״ו בשבט; ראו chabadoflamorinda.com/holidays/tu-bishvat או התקשרו 925-384-7242.
 ---
 סדר ט״ו בשבט הוא מפגש חגיגי בחמישה עשר בחודש שבט, ראש השנה לאילנות, שבו אוכלים מגוון פירות, במיוחד אלה שארץ ישראל נשתבחה בהם, ומברכים עליהם. זו דרך פשוטה ושמחה להודות לה׳ על מתנותיו וללמוד על עצי ארץ ישראל.

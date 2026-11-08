@@ -28,7 +28,7 @@ Chabad.org does not set a ritual for wedding anniversaries, so these are suggest
 
 ## Milestone years
 
-Couples often make more of milestone years, such as the 25th and 50th. Chabad.org has long carried blessings for these milestones. A blessing for the next years is a heartfelt way to mark them, and you are welcome to ask the Rabbi or Rebbetzin for one. We will not invent customs, so for questions about a particular tradition, ask the Rabbi.
+Couples often make more of milestone years, such as the 25th and 50th. A blessing for the next years is a heartfelt way to mark them, and you are welcome to ask the Rabbi or Rebbetzin for one. We will not invent customs, so for questions about a particular tradition, ask the Rabbi.
 
 ## Save your date with us
 

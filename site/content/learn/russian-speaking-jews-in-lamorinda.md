@@ -2,7 +2,7 @@
 title: Russian-Speaking Jews in Lafayette, Moraga and Orinda: A Warm Jewish Home
 description: Russian-speaking Jews in Lafayette, Moraga, Orinda and nearby are warmly welcome at Chabad of Lamorinda: Shabbat, holidays, life events, site in Russian.
 category: Lamorinda
-related: who-is-a-jew, soviet-jewry-history, proving-jewish-ancestry, discovered-you-are-jewish, adult-brit-milah, shabbat-for-beginners, hebrew-names, yahrzeit
+related: who-is-a-jew, jewish-languages, yiddish-words-and-phrases, soviet-jewry-history, proving-jewish-ancestry, discovered-you-are-jewish, adult-brit-milah, shabbat-for-beginners, hebrew-names, yahrzeit
 local: Come for Shabbat, RSVP at chabadoflamorinda.com/forms/shabbat-meal, or call the Rabbi at 925-384-7242.
 ---
 If you or your parents came from Russia, Ukraine, Belarus, Moldova or anywhere in the former Soviet Union, and now live in Lafayette, Moraga, Orinda, Pleasant Hill or Martinez, Chabad of Lamorinda would love to meet you. Many Jewish families grew up with little chance to practice Judaism openly. Whatever your story, you are welcome here, just as you are. There is no membership, no dues and no test.

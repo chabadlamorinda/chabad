@@ -2,7 +2,7 @@
 title: Hope in Hard Times: What Judaism Teaches About Not Giving Up
 description: Jewish hope and trust in G-d when life is hard: think good and it will be good, our people's story of hope, small daily steps, and asking for help.
 category: Jewish ideas
-related: bitachon, why-bad-things-happen, mental-health-jewish-view, tehillim, feeling-lonely
+related: bitachon, doubts-in-faith, why-bad-things-happen, mental-health-jewish-view, tehillim, feeling-lonely
 local: If you are going through a hard time in Lafayette, Moraga or Orinda, Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here for you: 925-384-7242.
 ---
 Hard times come to everyone: an illness, a job lost, a marriage in trouble, a loss that does not heal. Judaism does not pretend these do not hurt. It does teach that the story is not over.

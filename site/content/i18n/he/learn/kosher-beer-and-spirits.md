@@ -2,7 +2,7 @@
 title: האם בירה, ויסקי ומשקאות חריפים כשרים? מדריך פשוט
 description: האם בירה כשרה? האם ויסקי כשר? מדריך פשוט לבירה, וודקה, ויסקי, ברנדי וליקרים, לברכה ולפסח. שאלו את חב"ד למורינדה.
 category: Kosher
-related: kosher-wine, selling-your-chametz, blessings, kosher-for-passover, kosher-symbols
+related: kosher-wine, lchaim-and-farbrengen, selling-your-chametz, blessings, kosher-for-passover, kosher-symbols
 local: יש בקבוק או בירה שאתם לא בטוחים לגביהם? התקשרו לרב לבקובסקי 925-384-7242.
 ---
 בירה רגילה ומשקאות חריפים רגילים ללא טעמים, כמו וודקה, ג'ין ורוב סוגי הוויסקי, נחשבים בדרך כלל כשרים, כי הם עשויים מדגנים ולא מענבים. משקאות על בסיס יין, כמו ברנדי וקוניאק, ליקרים בטעמים וכמה משקאות מיוחדים או כאלה שהוזקנו בחביות הם עניין אחר, וצריכים [סמל כשרות](/learn/kosher-symbols) מהימן או שאלה לרב.

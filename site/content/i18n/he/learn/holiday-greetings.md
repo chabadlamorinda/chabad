@@ -2,7 +2,7 @@
 title: ברכות לחגים: מה אומרים בכל חג יהודי
 description: שבת שלום, שנה טובה, חג שמח, גוט יום טוב ועוד: מה אומרים בכל חג יהודי, מה הפירוש ואיך עונים.
 category: Shabbat & holidays
-related: hebrew-phrases, jewish-calendar, shabbat, rosh-chodesh
+related: hebrew-phrases, yiddish-words-and-phrases, jewish-calendar, shabbat, rosh-chodesh
 local: בואו להגיד "שבת שלום" פנים אל פנים בחב״ד למורינדה בלאפייט. החגים הקרובים ב-chabadoflamorinda.com/holidays או בטלפון 925-384-7242.
 ---
 ברכת החג הנפוצה ביותר היא "חג שמח", ובשבת אומרים "שבת שלום". לכל חג יש גם איחולים מיוחדים משלו, בעברית או ביידיש, והיכרות איתם היא דרך חמה להתחבר לחברים, לשכנים ולעמיתים יהודים.

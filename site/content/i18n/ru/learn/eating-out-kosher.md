@@ -2,7 +2,7 @@
 title: Как есть вне дома и соблюдать кашрут
 description: Как есть вне дома и соблюдать кашрут: что делает ресторан кошерным, почему вегетарианского мало, еда у друзей, деловые обеды, поездки и самолет.
 category: Kosher
-related: kosher, hosting-a-kosher-guest, pas-yisrael-and-bishul-yisrael, kosher-fish, kosher-certification, kosher-symbols, kosher-when-traveling, kosher-in-lamorinda
+related: kosher, vegan-and-vegetarian-kosher, hosting-a-kosher-guest, pas-yisrael-and-bishul-yisrael, kosher-fish, kosher-certification, kosher-symbols, kosher-when-traveling, kosher-in-lamorinda
 local: Кошерные рестораны, кейтеринг и магазины рядом с Лафайеттом, Морагой и Ориндой смотрите в нашем путеводителе по еврейской Ламоринде или звоните раввину Лабковскому: 925-384-7242.
 ---
 Соблюдать кашрут дома - одно дело: кухня в ваших руках. Вне дома начинаются вопросы. Хорошая новость: можно соблюдать кашрут и при этом жить полной общественной жизнью. Вот как.

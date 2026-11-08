@@ -2,7 +2,7 @@
 title: אברהם ושרה: היהודים הראשונים ומה הם מלמדים אותנו
 description: מי היו אברהם ושרה? המשפחה היהודית הראשונה: שבירת האלילים, לך לך, האוהל הפתוח ועשרת הניסיונות, ולמה הם אבותינו.
 category: Jewish ideas
-related: hachnasat-orchim, the-matriarchs, jewish-history-overview, brit-milah, why-be-jewish, converting-to-judaism
+related: hachnasat-orchim, noah-and-the-flood, jacob-our-father, the-matriarchs, jewish-history-overview, brit-milah, why-be-jewish, converting-to-judaism
 local: חוו את האוהל הפתוח של אברהם בשולחן שבת בלפאייט: ראו /forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 אברהם ושרה היו הזוג היהודי הראשון, שלפני כ-3,800 שנה גילו את ה' האחד ולימדו את העולם עליו. כל יהודי הוא בן של אברהם ושרה, וכך גם מי שבוחר ביהדות, הגרים.

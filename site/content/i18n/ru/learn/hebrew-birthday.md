@@ -2,7 +2,7 @@
 title: Еврейский день рождения: как узнать и отметить его
 description: Что такое еврейский день рождения, как найти его по еврейскому календарю и какие обычаи связаны с ним, включая ваш личный псалом.
 category: Life cycle
-related: jewish-calendar, bar-mitzvah-parsha, jewish-leap-year-and-calendar, jewish-birthday-customs, tehillim, tzedakah, the-rebbe
+related: jewish-calendar, jewish-wedding-anniversary, bar-mitzvah-parsha, jewish-leap-year-and-calendar, jewish-birthday-customs, tehillim, tzedakah, the-rebbe
 local: Узнайте свой еврейский день рождения с помощью нашего бесплатного инструмента на chabadoflamorinda.com/tools/hebrew-birthday или позвоните 925-384-7242, чтобы получить алию в Шабат перед ним.
 ---
 Ваш еврейский день рождения - это дата вашего рождения по еврейскому календарю. Поскольку еврейский календарь следует за луной, каждый год эта дата обычно выпадает на другой день светского календаря, и это особый день для благословения, размышлений и роста.

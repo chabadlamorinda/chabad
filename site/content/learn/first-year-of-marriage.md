@@ -2,7 +2,7 @@
 title: The First Year of Marriage: Shana Rishona in Jewish Tradition
 description: The Torah calls the first year of marriage a year of joy. How to use shana rishona to build habits, talk well, handle in-laws and share Shabbat.
 category: Life cycle
-related: shalom-bayit, sheva-brachot, in-laws, marriage-arguments-jewish-wisdom
+related: shalom-bayit, jewish-wedding-anniversary, sheva-brachot, in-laws, marriage-arguments-jewish-wisdom
 local: Newlyweds in Lafayette, Moraga, Orinda and the East Bay: Rabbi Yisroel and Rebbetzin Tzipora Labkowski are glad to talk with you, privately, 925-384-7242.
 ---
 The first year of marriage has a special name in Jewish tradition: shana rishona, "the first year." The Torah treats it as a protected year of joy, a time to build the foundation of a lifelong partnership.

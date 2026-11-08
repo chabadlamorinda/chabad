@@ -2,7 +2,7 @@
 title: Свобода выбора в иудаизме: действительно ли мы выбираем?
 description: Чему иудаизм учит о свободе выбора, как она сочетается со знанием Б-гом будущего и практические хасидские способы делать добрый выбор каждый день.
 category: Jewish ideas
-related: teshuvah, yetzer-hara, torah-and-science, changing-a-bad-habit, reincarnation, the-soul, belief-in-g-d, tanya
+related: teshuvah, adam-and-eve, yetzer-hara, torah-and-science, changing-a-bad-habit, reincarnation, the-soul, belief-in-g-d, tanya
 local: Хотите поразмышлять над большими вопросами вроде свободы выбора? Звоните раввину Лабковскому: 925-384-7242, или посмотрите наши занятия для взрослых на chabadoflamorinda.com/programs/adult-education.
 ---
 Иудаизм учит, что у каждого человека есть свобода выбора: способность выбирать между добром и злом. Эта свобода - основной принцип Торы. Без нее заповеди, награда и тшува не имели бы смысла.

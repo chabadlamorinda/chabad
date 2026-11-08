@@ -2,7 +2,7 @@
 title: השנה הראשונה לנישואין: שנה ראשונה במסורת היהודית
 description: התורה קוראת לשנה הראשונה לנישואין שנה של שמחה. איך לנצל אותה לבניית הרגלים, לתקשורת טובה, ליחסים עם המשפחות ולשבת משותפת.
 category: Life cycle
-related: shalom-bayit, sheva-brachot, in-laws, marriage-arguments-jewish-wisdom
+related: shalom-bayit, jewish-wedding-anniversary, sheva-brachot, in-laws, marriage-arguments-jewish-wisdom
 local: זוגות טריים בלאפייט, מוראגה, אורינדה ובאיסט ביי: הרב ישראל והרבנית ציפורה לבקובסקי ישמחו לשוחח איתכם, באופן פרטי, 925-384-7242.
 ---
 לשנה הראשונה לנישואין יש במסורת היהודית שם מיוחד: "שנה ראשונה". התורה מתייחסת אליה כאל שנה מוגנת של שמחה, זמן להניח את היסודות לשותפות של כל החיים.

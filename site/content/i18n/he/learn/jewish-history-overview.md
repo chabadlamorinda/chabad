@@ -2,7 +2,7 @@
 title: ההיסטוריה היהודית: סקירה קצרה מאברהם ועד היום
 description: ציר זמן פשוט של ההיסטוריה היהודית, מאברהם ומתן תורה דרך בתי המקדש, הגלות, גדולי החכמים, החסידות והעת החדשה.
 category: Jewish ideas
-related: exodus-story, soviet-jewry-history, abraham-and-sarah, jewish-bay-area-history, the-holy-temple, chabad-rebbes, baal-shem-tov
+related: exodus-story, jewish-languages, soviet-jewry-history, abraham-and-sarah, jewish-bay-area-history, the-holy-temple, chabad-rebbes, baal-shem-tov
 local: העמיקו בהיסטוריה היהודית בשיעורי המבוגרים של חב״ד למורינדה, chabadoflamorinda.com/programs/adult-education, או התקשרו 925-384-7242.
 ---
 ההיסטוריה היהודית מתחילה לפני כמעט ארבעת אלפים שנה עם אברהם, שלימד את העולם שיש אלוקים אחד. היא עוברת דרך מתן תורה בסיני, שני בתי מקדש, מאות שנים ארוכות של גלות, והשרידות המופלאה של עם שהתורה מחזיקה אותו יחד.

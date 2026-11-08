@@ -2,7 +2,7 @@
 title: לאכול בחוץ ולשמור כשרות
 description: איך אוכלים בחוץ ושומרים כשרות: מה הופך מסעדה לכשרה, למה צמחוני לא מספיק, ארוחות אצל חברים, ארוחות עסקיות, נסיעות וארוחות בטיסה.
 category: Kosher
-related: kosher, hosting-a-kosher-guest, pas-yisrael-and-bishul-yisrael, kosher-fish, kosher-certification, kosher-symbols, kosher-when-traveling, kosher-in-lamorinda
+related: kosher, vegan-and-vegetarian-kosher, hosting-a-kosher-guest, pas-yisrael-and-bishul-yisrael, kosher-fish, kosher-certification, kosher-symbols, kosher-when-traveling, kosher-in-lamorinda
 local: למסעדות, קייטרינג וחנויות כשרים ליד לאפייט, מוראגה ואורינדה, ראו את מדריך למורינדה היהודית שלנו, או התקשרו לרב לבקובסקי 925-384-7242.
 ---
 לשמור כשרות בבית זה דבר אחד: אתם שולטים במטבח. לאכול בחוץ זה המקום שבו השאלות מתחילות. החדשות הטובות הן שאפשר לשמור כשרות ועדיין לנהל חיי חברה מלאים. הנה איך.

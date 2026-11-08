@@ -2,7 +2,7 @@
 title: Checking Produce for Insects: A Kosher Guide
 description: Why Jewish law forbids eating insects, which fruits and vegetables need checking, and simple steps for washing and inspecting produce.
 category: Kosher
-related: kosher, kosher-eggs, kosher-kitchen, kosher-symbols, blessings
+related: kosher, vegan-and-vegetarian-kosher, kosher-eggs, kosher-kitchen, kosher-symbols, blessings
 local: Have a question about checking a specific fruit, vegetable or herb? Call Rabbi Labkowski at 925-384-7242 and we will gladly help.
 ---
 Jewish law forbids eating insects, so produce that commonly has small bugs, like leafy greens, herbs, broccoli and berries, is washed and checked before eating. With a few simple habits, checking becomes a quick part of kosher cooking.

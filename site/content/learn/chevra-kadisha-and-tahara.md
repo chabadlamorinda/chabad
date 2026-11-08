@@ -2,7 +2,7 @@
 title: What Is Tahara? The Chevra Kadisha and Preparing a Jewish Body for Burial
 description: What is tahara and the Chevra Kadisha? How a Jewish body is washed, dressed in white shrouds and watched until burial. Call the Rabbi first, 925-384-7242.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, cremation-jewish-view, when-a-loved-one-is-dying, shiva
+related: jewish-funeral, autopsy-jewish-view, aninut, cremation-jewish-view, when-a-loved-one-is-dying, shiva
 local: If someone has died or is dying, call Rabbi Labkowski right away at 925-384-7242. If you would like to learn about helping, ask about it too.
 ---
 Tahara (טָהֳרָה, "purification") is the Jewish ritual of washing and dressing a person who has died, done by the Chevra Kadisha (חֶבְרָה קַדִּישָׁא, the "holy society") before burial. The body is cleansed, dressed in plain white shrouds and placed in a simple casket, as an act of deep respect called a *chesed shel emet*, "a true kindness," because it can never be repaid.

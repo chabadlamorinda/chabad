@@ -2,7 +2,7 @@
 title: Difficult Relationships with Parents: Honoring Them and Protecting Yourself
 description: The mitzvah to honor parents when the relationship is hard: what it requires, what it does not, setting boundaries, estrangement, and making peace.
 category: Life cycle
-related: honoring-parents, caring-for-aging-parents, forgiveness-and-making-peace, in-laws
+related: honoring-parents, family-tension-at-holiday-meals, caring-for-aging-parents, forgiveness-and-making-peace, in-laws
 local: Adult children in Lafayette, Moraga, Orinda and the East Bay can talk privately with Rabbi Yisroel or Rebbetzin Tzipora Labkowski: 925-384-7242.
 ---
 "Honor your father and your mother" is one of the Ten Commandments. For many people it is a joy. For others, whose parents are critical, controlling, unwell or hurtful, it can be one of the hardest mitzvahs. Judaism speaks to both.

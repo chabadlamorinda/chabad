@@ -2,7 +2,7 @@
 title: Yahrzeit: How to Observe the Anniversary of a Loved One's Passing
 description: What a yahrzeit is, how to find the Hebrew date, lighting a yahrzeit candle, saying Kaddish, and other ways to honor a loved one.
 category: Mourning & remembrance
-related: kaddish, yizkor, shiva, jewish-calendar
+related: kaddish, el-malei-rachamim, yizkor, shiva, jewish-calendar
 local: Use our yahrzeit calculator to find the date, and call Rabbi Labkowski at 925-384-7242 if you would like help saying Kaddish with a minyan. Save the yahrzeit in your free account at chabadoflamorinda.com/account and we will email you a reminder a week and a day before, every year.
 ---
 A yahrzeit is the yearly anniversary of a loved one's passing, observed on the Hebrew date of death. On the yahrzeit, family members light a 24-hour candle, say Kaddish, and do good deeds in the person's memory.

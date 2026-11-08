@@ -2,7 +2,7 @@
 title: Bar and Bat Mitzvah in Lafayette, Moraga and Orinda: Lessons, Dates and Planning
 description: Plan a bar or bat mitzvah in Lafayette, Moraga or Orinda: personal lessons, tefillin, Torah reading and the Bat Mitzvah Club at Chabad of Lamorinda.
 category: Lamorinda
-related: bar-mitzvah, special-needs-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah, tefillin, aliyah
+related: bar-mitzvah, bar-mitzvah-in-israel, special-needs-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah, tefillin, aliyah
 local: Start planning at chabadoflamorinda.com/forms/bar-bat-mitzvah or call the Rabbi at 925-384-7242.
 ---
 A bar or bat mitzvah is a milestone your child will carry for life. For families in Lafayette, Moraga and Orinda, Chabad of Lamorinda offers personal, meaningful preparation, with the Rabbi and Rebbetzin teaching each child at their own pace. There is no membership required, and every family is welcome, whatever your background.

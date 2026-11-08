@@ -2,7 +2,7 @@
 title: Friday Night Dinner, Step by Step: Your First Shabbat Meal at Home
 description: The whole Friday night Shabbat dinner in order, from candle lighting to Birkat Hamazon, with what to say at each step in simple words.
 category: Shabbat & holidays
-related: hosting-your-first-shabbat-dinner, shabbat-candles, kiddush, hamotzi, birkat-hamazon
+related: hosting-your-first-shabbat-dinner, parsha-for-kids, shabbat-candles, kiddush, hamotzi, birkat-hamazon
 local: Want to see it done first? Join us for a Shabbat dinner at Chabad of Lamorinda in Lafayette, for families from Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 A Friday night dinner has a shape to it, and once you know the order it feels natural. Nothing here needs to be perfect. If you light candles and share a meal, you have made Shabbat. Here is the whole evening, step by step, with a few simple words for each part.

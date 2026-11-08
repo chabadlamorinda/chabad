@@ -2,7 +2,7 @@
 title: Прощение и примирение: как просить прощения и как прощать
 description: Еврейское учение о том, как просить прощения и прощать других: что сказать, если не прощают, как простить себя и стремиться к миру, как Аарон.
 category: Jewish ideas
-related: teshuvah, forgiving-yourself, judging-others-favorably, difficult-relationships-with-parents, shalom-bayit, lashon-hara, yom-kippur-fast
+related: teshuvah, aaron-the-high-priest, forgiving-yourself, judging-others-favorably, difficult-relationships-with-parents, shalom-bayit, lashon-hara, yom-kippur-fast
 local: Нужна помощь, чтобы помириться с кем-то? Раввин Исроэль и ребецн Ципора Лабковские в Лафайетте с радостью помогут: 925-384-7241.
 ---
 «Будь из учеников Аарона: люби мир и стремись к миру» (Пиркей Авот, 1:12). Аарон, брат Моше, приходил к двум поссорившимся людям и говорил каждому, как сильно другой сожалеет, пока они не обнимались. Установление мира - одна из величайших мицв.

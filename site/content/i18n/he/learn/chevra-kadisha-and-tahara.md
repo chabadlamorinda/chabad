@@ -2,7 +2,7 @@
 title: מהי טהרה? החברה קדישא והכנת גוף יהודי לקבורה
 description: מהן טהרה וחברה קדישא? איך מכינים גוף יהודי: רחיצה, תכריכים לבנים ושמירה עד הקבורה. התקשרו קודם לרב, 925-384-7242.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, cremation-jewish-view, when-a-loved-one-is-dying, shiva
+related: jewish-funeral, autopsy-jewish-view, aninut, cremation-jewish-view, when-a-loved-one-is-dying, shiva
 local: אם מישהו נפטר או גוסס, התקשרו מיד לרב לבקובסקי 925-384-7242. אם תרצו ללמוד על עזרה בתחום, שאלו גם על כך.
 ---
 טהרה היא הטקס היהודי של רחיצה והלבשה של אדם שנפטר, הנעשה על ידי החברה קדישא לפני הקבורה. הגוף מנוקה, מולבש בתכריכים לבנים פשוטים ומונח בארון פשוט, כמעשה של כבוד עמוק הנקרא *חסד של אמת*, כי אי אפשר להחזיר עליו.

@@ -2,7 +2,7 @@
 title: What Is Chassidus? Chassidic Teachings and the Chassidic Movement
 description: What Chassidus is, how the Baal Shem Tov began the Chassidic movement, its core ideas of joy and G-d's closeness, and how Chabad fits in.
 category: Jewish ideas
-related: chabad, tanya, kabbalah, the-rebbe
+related: chabad, lchaim-and-farbrengen, tanya, kabbalah, the-rebbe
 local: Want to taste Chassidic wisdom? Call Rabbi Labkowski at 925-384-7242 and we will help you find a way to learn that suits you.
 ---
 Chassidus (also spelled Chassidism or Hasidism) is a movement and a body of teachings that reveal the inner, soulful side of Judaism. Founded by the Baal Shem Tov in the 18th century, it teaches that G-d is present everywhere and that every Jew can serve Him with joy, love and sincerity.

@@ -2,7 +2,7 @@
 title: The Names of G-d in Judaism and Why We Write G-d
 description: The Hebrew names of G-d, what each one means, why Jews write G-d with a dash, and how to treat pages that contain G-d's name.
 category: Prayer & Torah
-related: belief-in-g-d, shema, prayer, siddur
+related: belief-in-g-d, genizah, shema, prayer, siddur
 local: Have an old siddur or Torah book with G-d's name that needs to be buried? Call Chabad of Lamorinda at 925-384-7242 and we will help.
 ---
 Judaism uses several Hebrew names for G-d, each describing a different way He relates to the world. Because these names are holy, Jewish law forbids erasing or destroying them, which is why many Jews write "G-d" in English and why old prayer books are buried, not thrown away.

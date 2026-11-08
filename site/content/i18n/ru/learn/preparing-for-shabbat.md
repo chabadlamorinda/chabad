@@ -2,7 +2,7 @@
 title: Готовимся к Шабату: список дел на пятницу
 description: Как подготовиться к Шабату в пятницу: еда, стол, свечи, свет, одежда и спокойное сердце, с простым списком для семей.
 category: Shabbat & holidays
-related: shabbat-candles, baking-challah, keeping-food-warm-on-shabbat, shabbat-for-beginners, hosting-your-first-shabbat-dinner, shabbat-for-working-parents, cholent
+related: shabbat-candles, shabbat-clothes, baking-challah, keeping-food-warm-on-shabbat, shabbat-for-beginners, hosting-your-first-shabbat-dinner, shabbat-for-working-parents, cholent
 local: Время зажигания свечей для Лафайетта, Мораги и Оринды - на нашей странице времени Шабата. Вопросы? Позвоните раввину: 925-384-7242.
 ---
 Шабат начинается на закате в пятницу, но его покой начинается раньше, в приготовлениях. Мудрецы учили: «Кто трудился в канун Шабата, тот будет есть в Шабат». Подготовка - не обязанность перед заповедью, а ее часть.

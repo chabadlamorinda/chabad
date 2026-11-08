@@ -2,7 +2,7 @@
 title: Jewish Funeral Customs: What to Do When a Loved One Passes Away
 description: A gentle guide to Jewish funeral customs: first steps, tahara, burial, the service, and how to support a grieving family.
 category: Mourning & remembrance
-related: shiva, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
+related: shiva, el-malei-rachamim, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
 local: When a loved one passes, call Rabbi Labkowski at 925-384-7242 at any hour and we will guide your family through every step with care.
 ---
 A Jewish funeral is a simple, dignified service followed by burial in the earth, ideally as soon as possible after death. Its customs focus on two values: honoring the person who passed away (kavod hamet) and comforting the family who remains.

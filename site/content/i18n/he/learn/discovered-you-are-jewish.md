@@ -2,7 +2,7 @@
 title: Just Found Out You're Jewish? A DNA Test, a Family Secret and What Comes Next
 description: גיליתם שאולי אתם יהודים בבדיקת DNA או בסוד משפחתי? מה זה אומר, למה קו האם חשוב, וצעדים ראשונים עדינים. שאלו את הרב לבקובסקי.
 category: Jewish ideas
-related: who-is-a-jew, proving-jewish-ancestry, jewish-genealogy, russian-speaking-jews-in-lamorinda, hebrew-names
+related: who-is-a-jew, jewish-last-names, proving-jewish-ancestry, jewish-genealogy, russian-speaking-jews-in-lamorinda, hebrew-names
 local: מצאתם שורש יהודי במשפחה? הרב לבקובסקי ישוחח איתכם בפרטיות ובאדיבות. התקשרו: 925-384-7242.
 ---
 לפי ההלכה, אתם יהודים אם אמכם יהודייה, כלומר גם אמה, וכן הלאה אחורה, או אם התגיירתם כדין. בדיקת DNA יכולה להצביע על אבות יהודים, אבל היא לבדה אינה קובעת אם אתם יהודים לפי ההלכה, ולכן הצעד הנכון הוא לשאול את הרב, בפרטיות וללא לחץ.

@@ -2,7 +2,7 @@
 title: Are Beer, Whiskey and Liquor Kosher? A Simple Guide
 description: Is beer kosher? Is whiskey kosher? A simple guide to beer, vodka, whiskey, brandy and liqueurs, the blessing, and Passover. Ask Chabad of Lamorinda.
 category: Kosher
-related: kosher-wine, selling-your-chametz, blessings, kosher-for-passover, kosher-symbols
+related: kosher-wine, lchaim-and-farbrengen, selling-your-chametz, blessings, kosher-for-passover, kosher-symbols
 local: Have a bottle or a brew you are unsure about? Call Rabbi Labkowski at 925-384-7242.
 ---
 Plain beer and plain, unflavored spirits such as vodka, gin and most whiskey are generally considered kosher, because they are made from grain and not from grapes. Wine-based drinks like brandy and cognac, flavored liqueurs, and some specialty or barrel-aged drinks are different and need a reliable [kosher symbol](/learn/kosher-symbols) or a question to the Rabbi.

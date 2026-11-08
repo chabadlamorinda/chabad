@@ -2,7 +2,7 @@
 title: Returning Lost Items: The Mitzvah of Hashavat Aveidah
 description: What the Torah says about returning lost things, what to do with a found wallet or phone, how an owner proves it is theirs, and teaching kids honesty.
 category: Jewish ideas
-related: honesty-and-truth, business-ethics, keeping-your-word, raising-kind-children, being-a-good-neighbor
+related: honesty-and-truth, rabbi-meir-baal-haness, business-ethics, keeping-your-word, raising-kind-children, being-a-good-neighbor
 local: Found something and not sure what Jewish law asks of you? Rabbi Yisroel Labkowski is happy to help, for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 You are walking through a parking lot and see a wallet on the ground. A phone is left on a bench. In each of these moments, the Torah has something to say, and it is more than "be nice." Returning lost things, *hashavat aveidah*, is a mitzvah in its own right.

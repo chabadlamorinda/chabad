@@ -2,7 +2,7 @@
 title: סמלי כשרות: איך קוראים תוויות כשרות והכשרים
 description: מה פירוש סמלי הכשרות, איך קוראים את הסימונים D, DE, P ופרווה, למה K פשוט שונה, ואיך קונים מוצרים כשרים בביטחון.
 category: Kosher
-related: kosher, hidden-kosher-ingredients, pareve, kosher-cheese, kosher-certification, chalav-yisrael, kosher-kitchen, blessings
+related: kosher, kosher-salt, hidden-kosher-ingredients, pareve, kosher-cheese, kosher-certification, chalav-yisrael, kosher-kitchen, blessings
 local: לא בטוחים לגבי סמל או מוצר? נשמח לעזור לכם לבדוק. התקשרו 925-384-7242.
 ---
 סמל כשרות, שנקרא הכשר, הוא סימון על האריזה שמראה שגוף רבני השגיח על המוצר ומאשר שהוא כשר. כשלומדים לקרוא את הסמלים האלה, קניית אוכל כשר הופכת לפשוטה, כמעט בכל סופרמרקט.

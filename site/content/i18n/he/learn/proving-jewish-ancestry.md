@@ -2,7 +2,7 @@
 title: How to Show You Are Jewish: Documents for a Wedding, Bar Mitzvah or Aliyah
 description: איך מוכיחים שאתם יהודים לחתונה, בר מצווה או עלייה: קו האם, מסמכים שעוזרים, מסמכים סובייטיים, ומה עושים כשאין ניירות.
 category: Life cycle
-related: who-is-a-jew, discovered-you-are-jewish, jewish-genealogy, jewish-wedding-in-lamorinda, russian-speaking-jews-in-lamorinda
+related: who-is-a-jew, jewish-last-names, discovered-you-are-jewish, jewish-genealogy, jewish-wedding-in-lamorinda, russian-speaking-jews-in-lamorinda
 local: מתכננים חתונה או בר מצווה וצריכים להראות את הרקע היהודי שלכם? הרב לבקובסקי יעזור. התקשרו: 925-384-7242.
 ---
 כדי להראות שאתם יהודים, מראים שאמכם, אמה וכן הלאה יהודיות, או שהתגיירתם כהלכה. רב בוחן מסמכים ועדויות משפחתיות, והרב בחב"ד לאמורינדה ישמח לעזור למשפחות בלאפייט, מוראגה ואורינדה לברר זאת לפני חתונה, בר מצווה או עלייה.

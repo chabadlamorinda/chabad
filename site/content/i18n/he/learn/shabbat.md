@@ -2,7 +2,7 @@
 title: שבת: מה זה ואיך חוגגים אותה
 description: מדריך פשוט לשבת, יום המנוחה היהודי: מה המשמעות שלה, מתי היא נכנסת ויוצאת, ואיך חוגגים אותה בבית צעד אחר צעד.
 category: Shabbat & holidays
-related: shabbat-candles, holiday-greetings, kiddush, challah, havdalah
+related: shabbat-candles, shmita, holiday-greetings, kiddush, challah, havdalah
 local: נשמח לארח אתכם לשולחן שבת ולעזור לכם להתחיל לשמור שבת בבית. התקשרו 925-384-7242.
 ---
 שבת היא יום המנוחה היהודי, מקצת לפני השקיעה ביום שישי ועד צאת הכוכבים במוצאי שבת. זו מתנה שבועית של 25 שעות להתנתק מהעבודה ומהמסכים ולהתמקד במשפחה, בחברים, בתפילה, באוכל טוב ובהשם.

@@ -2,7 +2,7 @@
 title: מנהגי לוויה יהודית: מה עושים כשאדם יקר נפטר
 description: מדריך עדין למנהגי לוויה יהודית: הצעדים הראשונים, טהרה, קבורה, הטקס ואיך לתמוך במשפחה האבלה.
 category: Mourning & remembrance
-related: shiva, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
+related: shiva, el-malei-rachamim, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
 local: כשאדם יקר נפטר, התקשרו לרב לבקובסקי בטלפון 925-384-7242 בכל שעה, ונלווה את המשפחה שלכם בכל שלב ברגישות.
 ---
 לוויה יהודית היא טקס פשוט ומכובד שאחריו באה קבורה באדמה, ועדיף מוקדם ככל האפשר אחרי הפטירה. המנהגים מתמקדים בשני ערכים: כבוד המת, ונחמת המשפחה שנשארה.

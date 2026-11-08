@@ -2,7 +2,7 @@
 title: בר או בת מצווה למבוגרים: אף פעם לא מאוחר מדי
 description: לא עשיתם בר או בת מצווה? חגיגה בגיל מבוגר מסמלת קבלה מודעת של מה שאתם כבר. כך מתחילים, בבית חב"ד לאמורינדה.
 category: Life cycle
-related: bar-mitzvah-parsha, hebrew-reading-for-adults, getting-a-hebrew-name-as-an-adult, tefillin, bar-mitzvah
+related: bar-mitzvah-parsha, bar-mitzvah-at-83, hebrew-reading-for-adults, getting-a-hebrew-name-as-an-adult, tefillin, bar-mitzvah
 local: חושבים על בר או בת מצווה משלכם? התקשרו לרב לבקובסקי 925-384-7242 או כתבו דרך /help/talk-to-the-rabbi. אין צורך בניסיון.
 ---
 בר או בת מצווה למבוגרים היא חגיגה, בכל גיל, של קבלת האחריות על המצוות כיהודי בוגר. לפי ההלכה הפכתם לבר מצווה בגיל 13 או לבת מצווה בגיל 12 באופן אוטומטי, עם מסיבה או בלעדיה. החגיגה אינה "יוצרת" את הבגרות, אלא מסמנת את הרגע שבו אתם בוחרים לאמץ אותה.

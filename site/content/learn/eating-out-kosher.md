@@ -2,7 +2,7 @@
 title: Eating Out While Keeping Kosher
 description: How to eat out and keep kosher: what makes a restaurant kosher, why vegetarian is not enough, meals at friends' homes, business dinners and travel.
 category: Kosher
-related: kosher, hosting-a-kosher-guest, pas-yisrael-and-bishul-yisrael, kosher-fish, kosher-certification, kosher-symbols, kosher-when-traveling, kosher-in-lamorinda
+related: kosher, vegan-and-vegetarian-kosher, hosting-a-kosher-guest, pas-yisrael-and-bishul-yisrael, kosher-fish, kosher-certification, kosher-symbols, kosher-when-traveling, kosher-in-lamorinda
 local: For kosher restaurants, caterers and stores near Lafayette, Moraga and Orinda, see our Jewish Lamorinda guide, or call Rabbi Labkowski at 925-384-7242.
 ---
 Keeping kosher at home is one thing: you control the kitchen. Eating out is where the questions begin. The good news is that you can keep kosher and still have a full social life. Here is how.

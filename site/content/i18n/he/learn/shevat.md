@@ -2,7 +2,7 @@
 title: חודש שבט: ט"ו בשבט, עצים וחודש של צמיחה
 description: מהו חודש שבט? גשמים, ט"ו בשבט, דברי משה האחרונים והתורה בשבעים לשון. מה יש בחודש, מלפאייט.
 category: Shabbat & holidays
-related: tu-bishvat-seder, tevet, jewish-calendar, seven-species, shabbat-shirah
+related: tu-bishvat-seder, a-person-is-like-a-tree, tevet, jewish-calendar, seven-species, shabbat-shirah
 local: מתכננים לציין את ט"ו בשבט? התקשרו לרב ישראל לבקובסקי, 925-384-7242, ושמעו מה מתוכנן ב-Chabad of Lamorinda למשפחות בלפאייט, מוראגה ואורינדה.
 ---
 שבט הוא החודש האחד עשר בלוח העברי, כשמונים מניסן, והוא ידוע בעיקר בזכות ט"ו בשבט, ראש השנה לאילנות, בחמישה עשר בחודש. הוא חל בלב עונת הגשמים, בזמן שבו העצים מתחילים להתעורר.

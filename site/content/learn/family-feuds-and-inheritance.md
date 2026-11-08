@@ -2,7 +2,7 @@
 title: Family Feuds and Inheritance Disputes: Making Peace Among Relatives
 description: When siblings or relatives fight over an inheritance, caring for a parent or an old hurt: Jewish law, mediation, and steps to bring a family back together.
 category: Jewish ideas
-related: halachic-will, sibling-rivalry, forgiveness-and-making-peace, business-disputes
+related: halachic-will, family-tension-at-holiday-meals, sibling-rivalry, forgiveness-and-making-peace, business-disputes
 local: Families in Lafayette, Moraga, Orinda and the East Bay: Rabbi Yisroel Labkowski can listen, mediate, or refer to a Beth Din. 925-384-7242.
 ---
 Few things hurt like a family torn apart. Siblings stop speaking over a parent's estate, cousins over a family business, relatives over who did more for an aging parent. The Torah takes these rifts seriously, and offers a path back.

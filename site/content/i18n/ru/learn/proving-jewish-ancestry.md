@@ -2,7 +2,7 @@
 title: How to Show You Are Jewish: Documents for a Wedding, Bar Mitzvah or Aliyah
 description: Как подтвердить еврейство для свадьбы, бар-мицвы или репатриации: линия матери, полезные документы, советские бумаги и что делать, если документов нет.
 category: Life cycle
-related: who-is-a-jew, discovered-you-are-jewish, jewish-genealogy, jewish-wedding-in-lamorinda, russian-speaking-jews-in-lamorinda
+related: who-is-a-jew, jewish-last-names, discovered-you-are-jewish, jewish-genealogy, jewish-wedding-in-lamorinda, russian-speaking-jews-in-lamorinda
 local: Готовитесь к свадьбе или бар-мицве и нужно подтвердить еврейское происхождение? Раввин Лабковски поможет. Звоните: 925-384-7242.
 ---
 Чтобы подтвердить, что вы еврей, нужно показать, что ваша мать, её мать и так далее были еврейками, либо что вы прошли гиюр по закону. Раввин смотрит документы и свидетельства семьи, а раввин Хабада Ламоринда с радостью поможет семьям Лафайетта, Мораги и Оринда разобраться в этом до свадьбы, бар-мицвы или репатриации.

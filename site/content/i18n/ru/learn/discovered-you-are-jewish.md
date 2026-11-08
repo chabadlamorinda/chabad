@@ -2,7 +2,7 @@
 title: Just Found Out You're Jewish? A DNA Test, a Family Secret and What Comes Next
 description: Узнали, что вы, возможно, еврей, из ДНК-теста или семейной тайны? Что это значит, почему важна линия матери и с чего начать. Спросите раввина Лабковски.
 category: Jewish ideas
-related: who-is-a-jew, proving-jewish-ancestry, jewish-genealogy, russian-speaking-jews-in-lamorinda, hebrew-names
+related: who-is-a-jew, jewish-last-names, proving-jewish-ancestry, jewish-genealogy, russian-speaking-jews-in-lamorinda, hebrew-names
 local: Нашли еврейские корни в семье? Раввин Лабковски побеседует с вами конфиденциально и бережно. Звоните: 925-384-7242.
 ---
 По традиционному еврейскому закону евреем считается тот, чья мать еврейка (то есть и её мать, и так далее по цепочке) или кто прошёл гиюр по закону. ДНК-тест может указать на еврейских предков, но сам по себе не говорит, еврей ли вы по закону, поэтому правильный следующий шаг это спросить раввина, конфиденциально и без давления.

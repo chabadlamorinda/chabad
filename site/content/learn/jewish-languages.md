@@ -23,7 +23,7 @@ Aramaic was adopted during the Babylonian exile and served as a Jewish common la
 
 ## Languages of the Middle East and Central Asia
 
-- **Judeo-Arabic:** Arabic dialects developed by Jews after the 7th-century Muslim conquest of Mesopotamia, written in Hebrew letters.
+- **Judeo-Arabic:** Arabic dialects that Jews spoke in the Middle East and North Africa for centuries, written in Hebrew letters.
 - **Judeo-Persian:** Persian dialects spoken by Jews. **Juhuri** (Judeo-Tat) is spoken by the Mountain Jews of the Caucasus.
 - **Bukharian**, a Jewish language of Central Asia, and **Judeo-Georgian** each have about 80,000 speakers.
 - Others, such as Judeo-Provençal, Jewish Malayalam in Cochin, Judeo-Roman and Yevanic, are almost gone.

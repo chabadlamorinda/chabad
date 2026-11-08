@@ -2,7 +2,7 @@
 title: מהי התורה? מדריך פשוט לתורת ישראל
 description: מהי התורה, חמישה חומשי תורה, תורה שבכתב ותורה שבעל פה, איך נכתב ספר תורה, ופרשת השבוע.
 category: Prayer & Torah
-related: talmud, moses, simchat-torah-for-beginners, tanach, 613-mitzvot, hebrew-alphabet, prayer
+related: talmud, midrash, moses, simchat-torah-for-beginners, tanach, 613-mitzvot, hebrew-alphabet, prayer
 local: רוצים ללמוד תורה באווירה נינוחה וידידותית? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או הציצו בעמוד האירועים שלנו, ונמצא דרך ללמוד יחד.
 ---
 התורה היא ההוראה של השם לעם ישראל, שניתנה למשה בהר סיני לפני יותר מ־3,300 שנה. במובן המצומצם הכוונה לחמישה חומשי תורה, ובמובן הרחב היא כוללת את כל תורת ישראל, מהתנ״ך דרך התלמוד ועד חוכמתם של חכמי ימינו.

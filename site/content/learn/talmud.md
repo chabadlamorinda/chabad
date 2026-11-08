@@ -2,7 +2,7 @@
 title: What Is the Talmud? A Beginner's Guide to the Oral Torah
 description: What the Talmud is, how the Mishnah and Gemara fit together, who wrote it, and how people study it today, explained simply.
 category: Prayer & Torah
-related: torah, rashi, dreams-jewish-view, 613-mitzvot, tanya, kabbalah
+related: torah, midrash, hillel-and-shammai, rashi, dreams-jewish-view, 613-mitzvot, tanya, kabbalah
 local: Curious to try a page of Talmud? Call Rabbi Labkowski at 925-384-7242 and we will help you get started, no experience needed.
 ---
 The Talmud is the central text of the Oral Torah, a vast collection of Jewish law, debate, stories and wisdom compiled about 1,500 years ago. It explains how to understand and live the Torah, and it has been studied by Jews every day for centuries.

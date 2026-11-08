@@ -2,7 +2,7 @@
 title: Ahavat Yisrael: How to Love Every Jew Like Yourself
 description: What Ahavat Yisrael means in Judaism: loving every Jew as yourself, why Chassidic teaching says we share one soul, and simple ways to practice it today.
 category: Jewish ideas
-related: judging-others-favorably, chesed, ten-mitzvah-campaigns, lashon-hara, chosen-people
+related: judging-others-favorably, love-jewish-view, being-a-mensch, hillel-and-shammai, chesed, ten-mitzvah-campaigns, lashon-hara, chosen-people
 local: Come meet other Jews of every background at Chabad of Lamorinda. See /events or call 925-384-7242.
 ---
 Ahavat Yisrael (אהבת ישראל) means love of a fellow Jew: the Torah's command to "love your neighbor as yourself" (Leviticus 19:18), which Chassidic teaching explains as seeing every Jew as part of the same soul. Chabad's welcome to every Jew, whatever their background, grows from this idea.

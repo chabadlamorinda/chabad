@@ -2,7 +2,7 @@
 title: The Four Matriarchs: Sarah, Rebecca, Rachel and Leah, Mothers of the Jewish People
 description: Who the four matriarchs were, the story and gift of Sarah, Rebecca, Rachel and Leah, why there are four, and how Jewish women carry on their legacy.
 category: Prayer & Torah
-related: abraham-and-sarah, jewish-women, blessing-your-children, jewish-women-in-lamorinda, moses
+related: abraham-and-sarah, jacob-our-father, jewish-women, blessing-your-children, jewish-women-in-lamorinda, moses
 local: Women of Lamorinda are welcome at our Women's Circle. See /programs/womens-circle or call 925-384-7242.
 ---
 The four matriarchs (imahot, אמהות) are Sarah, Rebecca, Rachel and Leah, the wives of Abraham, Isaac and Jacob and the mothers of the Jewish people. Their stories fill the Book of Genesis, and the Talmud calls them the spiritual base on which the nation was built.

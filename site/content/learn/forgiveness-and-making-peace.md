@@ -2,7 +2,7 @@
 title: Forgiveness and Making Peace: How to Apologize and How to Forgive
 description: Jewish teachings on asking forgiveness and forgiving others: what to say, what if they refuse, forgiving yourself, and pursuing peace like Aaron.
 category: Jewish ideas
-related: teshuvah, forgiving-yourself, judging-others-favorably, difficult-relationships-with-parents, shalom-bayit, lashon-hara, yom-kippur-fast
+related: teshuvah, aaron-the-high-priest, forgiving-yourself, judging-others-favorably, difficult-relationships-with-parents, shalom-bayit, lashon-hara, yom-kippur-fast
 local: Need help making peace with someone? Rabbi Yisroel and Rebbetzin Tzipora Labkowski in Lafayette are glad to help: 925-384-7242.
 ---
 "Be among the students of Aaron: love peace and pursue peace" (Ethics of the Fathers 1:12). Aaron, Moses' brother, would go to two people who had quarreled, and tell each one how much the other regretted it, until they embraced. Making peace is one of the greatest mitzvahs.

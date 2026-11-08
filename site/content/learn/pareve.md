@@ -2,7 +2,7 @@
 title: What Does Pareve Mean? Neutral Foods in a Kosher Kitchen
 description: What does pareve (parve) mean? Foods that are neither meat nor dairy, like eggs, fish and vegetables. Learn the rules and ask Chabad of Lamorinda.
 category: Kosher
-related: meat-and-milk, kosher-eggs, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
+related: meat-and-milk, vegan-and-vegetarian-kosher, kosher-eggs, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
 local: Setting up a kosher kitchen in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 and we will help you start.
 ---
 Pareve (also spelled parve, פַּרְוֶה) means a food that is neither meat nor dairy, so it can be eaten with either one. Fruits, vegetables, grains, eggs, fish and plain nuts are pareve, as long as they are prepared without any meat or dairy.

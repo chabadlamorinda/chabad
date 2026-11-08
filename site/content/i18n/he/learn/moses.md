@@ -2,7 +2,7 @@
 title: מי היה משה רבנו? גדול הנביאים ומורה עם ישראל
 description: מי היה משה: התיבה על הנילוס, הסנה הבוער, יציאת מצרים, מעמד הר סיני והר נבו, ולמה קוראים לו משה רבנו.
 category: Prayer & Torah
-related: ten-commandments, exodus-story, humility, torah, elijah-the-prophet
+related: ten-commandments, miriam, aaron-the-high-priest, exodus-story, humility, torah, elijah-the-prophet
 local: רוצים ללמוד בשיעור ידידותי את התורה שמשה הוריד? ראו את לימודי המבוגרים שלנו ב-/programs/adult-education או התקשרו 925-384-7242.
 ---
 משה רבנו (משה) היה גדול הנביאים שחיו אי פעם, המנהיג שהוציא את עם ישראל מעבדות מצרים והביא להם את התורה בהר סיני. אנו קוראים לו "משה רבנו", משה מורנו, כי כל מה שאנו לומדים חוזר אל מה שלימד.

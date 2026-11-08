@@ -2,7 +2,7 @@
 title: The Morning Service (Shacharit): A First-Timer's Guide
 description: Walk through Shacharit, the Jewish morning service, step by step: blessings, psalms, Shema, Amidah, Torah reading and the closing prayers.
 category: Prayer & Torah
-related: first-time-at-synagogue, morning-blessings, shema, amidah, torah-reading
+related: first-time-at-synagogue, barchu, morning-blessings, shema, amidah, torah-reading
 local: Join our weekday morning minyan, or call Rabbi Labkowski at 925-384-7242 and we will show you where we are in the prayer book.
 ---
 Shacharit is the Jewish morning service, said every day of the year. It follows a set order, so once you know the map, you can find your place at any minyan. A weekday service takes about half an hour to 45 minutes; on Shabbat it is longer, with the Torah reading and a talk. You do not need Hebrew: a prayer book with English will carry you through.

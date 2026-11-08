@@ -2,7 +2,7 @@
 title: קשר קשה עם ההורים: לכבד אותם ולשמור על עצמכם
 description: מצוות כיבוד הורים כשהקשר קשה: מה היא דורשת ומה לא, הצבת גבולות, נתק, ועשיית שלום.
 category: Life cycle
-related: honoring-parents, caring-for-aging-parents, forgiveness-and-making-peace, in-laws
+related: honoring-parents, family-tension-at-holiday-meals, caring-for-aging-parents, forgiveness-and-making-peace, in-laws
 local: ילדים בוגרים בלאפייט, מוראגה, אורינדה והאיסט ביי יכולים לשוחח בפרטיות עם הרב ישראל או הרבנית ציפורה לבקובסקי: 925-384-7242.
 ---
 "כַּבֵּד אֶת אָבִיךָ וְאֶת אִמֶּךָ" הוא אחד מעשרת הדיברות. לאנשים רבים זו שמחה. לאחרים, שההורים שלהם ביקורתיים, שתלטנים, חולים או פוגעים, זו יכולה להיות אחת המצוות הקשות ביותר. היהדות מדברת אל שניהם.

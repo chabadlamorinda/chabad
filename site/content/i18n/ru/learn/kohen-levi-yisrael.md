@@ -2,7 +2,7 @@
 title: Kohen, Levi or Yisrael? The Tribes of Israel and Your Family Line
 description: Я коэн или левит? Как статус коэна, левита и исраэля передаётся от отца к сыну, что могут показать фамилия или ДНК-тест и как спросить раввина.
 category: Jewish ideas
-related: birkat-kohanim, pidyon-haben, jewish-genealogy, aliyah, who-is-a-jew
+related: birkat-kohanim, jewish-last-names, twelve-tribes, pidyon-haben, jewish-genealogy, aliyah, who-is-a-jew
 local: Интересно, коэны или левиты ваши предки? Раввин Лабковски поможет конфиденциально. Звоните или пишите: 925-384-7242.
 ---
 Коэн (כֹּהֵן, священник) это еврей, происходящий по мужской линии от Аарона, левит (לֵוִי) происходит по мужской линии от колена Леви, а все остальные исраэли (יִשְׂרָאֵל). Каждый статус передаётся от отца к сыну, поэтому лучший способ узнать свой это семейное предание, а раввин поможет вам проверить.

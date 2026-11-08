@@ -2,7 +2,7 @@
 title: שבת כשגרים לבד
 description: איך להפוך את השבת לחמה ומשמעותית כשגרים לבד: נרות, קידוש, סעודה חגיגית, מנוחה, ומציאת חברה כשרוצים.
 category: Shabbat & holidays
-related: feeling-lonely, being-single-jewish-view, shabbat-for-beginners, shabbat-candles, kiddush, shabbat-guest-guide
+related: feeling-lonely, shabbat-in-a-hotel, being-single-jewish-view, shabbat-for-beginners, shabbat-candles, kiddush, shabbat-guest-guide
 local: תמיד יש לכם מקום ליד השולחן: בואו לקבלת שבת ולסעודת שבת בחב״ד למורינדה בלאפייט, או התקשרו 925-384-7242.
 ---
 לרוב מדמיינים את השבת כשולחן משפחתי גדול. אבל אנשים רבים גרים לבד: סטודנטים, רווקים ורווקות, אלמנים ואלמנות, אנשים שילדיהם גדלו ועברו לגור רחוק. השבת שייכת גם לכם בדיוק באותה מידה. היא מתנה לכל יהודי, והיא יכולה להיות שלווה ויפה מאוד גם כשאתם לבד.

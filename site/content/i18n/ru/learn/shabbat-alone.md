@@ -2,7 +2,7 @@
 title: Шабат, когда вы живете один
 description: Как сделать Шабат теплым и значимым, если вы живете один: свечи, Кидуш, праздничная трапеза, отдых и компания, когда ее хочется.
 category: Shabbat & holidays
-related: feeling-lonely, being-single-jewish-view, shabbat-for-beginners, shabbat-candles, kiddush, shabbat-guest-guide
+related: feeling-lonely, shabbat-in-a-hotel, being-single-jewish-view, shabbat-for-beginners, shabbat-candles, kiddush, shabbat-guest-guide
 local: За столом всегда есть место для вас: приходите на Кабалат Шабат и шабатний ужин в Хабад Ламоринды в Лафайетте или звоните 925-384-7242.
 ---
 Шабат часто представляют большим семейным столом. Но многие живут одни: студенты, одинокие люди, вдовы и вдовцы, те, чьи дети выросли и разъехались. Шабат принадлежит вам не меньше. Это подарок каждому еврею, и даже в одиночестве он может быть глубоко спокойным и прекрасным.

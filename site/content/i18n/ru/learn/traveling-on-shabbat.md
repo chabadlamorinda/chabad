@@ -2,7 +2,7 @@
 title: Шабат в поездке: как соблюдать Шабат вдали от дома
 description: Шабат вне дома? Планируйте прилет заранее, возьмите свечи и еду, решите вопросы с отелем и найдите Бейт Хабад, куда бы вы ни поехали.
 category: Shabbat & holidays
-related: kosher-when-traveling, shabbat-candles, tefilat-haderech, shabbat-practical-questions
+related: kosher-when-traveling, shabbat-in-a-hotel, shabbat-candles, tefilat-haderech, shabbat-practical-questions
 local: Едете из Лафайетта, Мораги или Оринды? Позвоните раввину Исроэлю Лабковскому перед поездкой с любым вопросом о Шабате, 925-384-7242.
 ---
 Командировки, отпуск, поездки по колледжам и семейные торжества часто выпадают на выходные. Если немного все спланировать, Шабат в дороге может стать одним из самых запоминающихся в году.

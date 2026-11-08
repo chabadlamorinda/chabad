@@ -2,7 +2,7 @@
 title: קשיי פוריות: תמיכה, תפילה והדרכה יהודית
 description: לזוגות שמייחלים לילד: אמונה ונחמה, תפילות ומנהגים, טיפולים כמו הפריה חוץ גופית (IVF) והשאלות לשאול רב, ותמיכה.
 category: Life cycle
-related: jewish-pregnancy, pregnancy-loss, jewish-adoption, tehillim, mikvah, bitachon
+related: jewish-pregnancy, hannah-and-her-prayer, pregnancy-loss, jewish-adoption, tehillim, mikvah, bitachon
 local: זוגות בלאפייט, מוראגה, אורינדה והאיסט ביי מוזמנים לשיחה פרטית עם הרב ישראל או הרבנית ציפורה לבקובסקי: 925-384-7242.
 ---
 הכמיהה לילד יכולה להיות אחד הכאבים העמוקים בחיים. רבות מאמותינו הגדולות, שרה, רבקה, רחל וחנה, חיכו שנים לילד. הסיפורים שלהן הם חלק מהתורה, כי הם מדברים אל כל זוג שמחכה ומתפלל.

@@ -2,7 +2,7 @@
 title: שבת שירה: שבת השירה ולמה ילדים מאכילים ציפורים
 description: מהי שבת שירה? שירת הים, מנהג האכלת הציפורים לפני שבת ודרך משפחתית להגיע לתפילות בלפאייט.
 category: Shabbat & holidays
-related: shabbat-with-kids, weekly-parsha, tzaar-baalei-chayim, shevat, torah-reading
+related: shabbat-with-kids, miriam, weekly-parsha, tzaar-baalei-chayim, shevat, torah-reading
 local: הביאו את המשפחה לתפילות שבת בלפאייט: התקשרו לרב ישראל לבקובסקי, 925-384-7242, ושמעו מה מתוכנן לשבת שירה.
 ---
 שבת שירה היא השבת שבה קוראים את פרשת בשלח, ובה שירת הים, השיר ששרו בני ישראל אחרי קריעת ים סוף. יש מנהג ידוע להניח מזון לציפורים, והדרך הטובה לעשות זאת היא לפני כניסת השבת.

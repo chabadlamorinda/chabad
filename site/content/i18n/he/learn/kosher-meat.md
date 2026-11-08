@@ -2,7 +2,7 @@
 title: בשר כשר: מה הופך בשר ועוף לכשרים
 description: אילו בעלי חיים כשרים, איך נעשות השחיטה והבדיקה, מה פירוש גלאט, ואיך מולחים בשר כשר כדי להוציא ממנו את הדם.
 category: Kosher
-related: kosher, kosher-fish, kosher-certification, kosher-symbols, meat-and-milk, kosher-kitchen
+related: kosher, kosher-salt, kosher-fish, kosher-certification, kosher-symbols, meat-and-milk, kosher-kitchen
 local: יש לכם שאלה על קנייה או הכנה של בשר כשר? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונשמח לעזור.
 ---
 בשר כשר בא מבהמה או מעוף ממין כשר, שנשחטו על ידי שוחט מוסמך, נבדקו, ואחר כך הושרו והומלחו כדי להוציא את הדם. כל שלב חשוב, ולכן גם בשר של בהמה כשרה אינו כשר אם אחד השלבים לא נעשה כראוי.

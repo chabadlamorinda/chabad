@@ -2,7 +2,7 @@
 title: Organ Donation: What Does Judaism Say?
 description: The Jewish view on organ donation: saving a life, respect for the body, living donors, brain death, and why every case needs a rabbi's guidance.
 category: Jewish ideas
-related: jewish-health-and-body, cremation-jewish-view, jewish-funeral, the-soul
+related: jewish-health-and-body, autopsy-jewish-view, cremation-jewish-view, jewish-funeral, the-soul
 local: Facing a decision about organ donation, for yourself or a loved one? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/help/end-of-life.
 ---
 Judaism holds that saving a life is one of the greatest mitzvot, and it also teaches deep respect for the human body, in life and after death. Because organ donation touches both values, Jewish law permits it in some situations and not in others, and each case should be discussed with a rabbi.

@@ -2,7 +2,7 @@
 title: Talking to G-d in Your Own Words
 description: How to pray personally, in any language and at any time: what Judaism teaches about speaking to G-d from the heart, with simple ways to begin.
 category: Prayer & Torah
-related: prayer, why-pray, tehillim, daily-prayers, bitachon, shema
+related: prayer, hannah-and-her-prayer, why-pray, tehillim, daily-prayers, bitachon, shema
 local: Have a question about prayer, or want someone to pray for? Call Rabbi Yisroel Labkowski at Chabad of Lamorinda in Lafayette: 925-384-7242.
 ---
 Many people think Jewish prayer means reading Hebrew from a prayer book, in synagogue, at set times. That is an important part of it. But Judaism also teaches something simpler and very personal: you can talk to G-d anytime, anywhere, in your own words, and He is listening.

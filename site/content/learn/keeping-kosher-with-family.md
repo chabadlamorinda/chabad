@@ -2,7 +2,7 @@
 title: Keeping Kosher When Your Family Doesn't
 description: How to keep kosher with love when parents, in-laws or a spouse don't: eating at family meals, holidays, hosting, and keeping peace at home.
 category: Kosher
-related: kosher, hosting-a-kosher-guest, in-laws, kosher-kitchen, honoring-parents, kosher-when-traveling
+related: kosher, family-tension-at-holiday-meals, hosting-a-kosher-guest, in-laws, kosher-kitchen, honoring-parents, kosher-when-traveling
 local: Questions about kosher at a family event, or need kosher food in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Many people start keeping kosher while their parents, in-laws, siblings or even spouse do not. It can feel lonely, and family meals can become tense. With patience and some planning, keeping kosher can actually bring families closer, and it never needs to cost you your relationships.

@@ -2,7 +2,7 @@
 title: The Seven Species: The Fruits and Grains of the Land of Israel
 description: What are the seven species of Israel? Wheat, barley, grapes, figs, pomegranates, olives and dates: their meaning, blessings and a Tu BiShvat table.
 category: Shabbat & holidays
-related: tu-bishvat-seder, blessings, blessings-after-food, shevat, jewish-foods
+related: tu-bishvat-seder, a-person-is-like-a-tree, blessings, blessings-after-food, shevat, jewish-foods
 local: Bring the children to learn about the fruits of Israel: call Rabbi Yisroel Labkowski at 925-384-7242 to hear about Tu BiShvat plans for families in Lafayette, Moraga and Orinda, or visit /kids.
 ---
 The seven species (שבעת המינים, Shivat HaMinim) are the seven foods with which the Torah praises the land of Israel: wheat, barley, grapes, figs, pomegranates, olives and dates. They appear in the verse in Deuteronomy 8:8, and are traditionally eaten on Tu BiShvat.

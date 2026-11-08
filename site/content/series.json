@@ -6,6 +6,7 @@
   "guides": [
    "when-a-loved-one-is-dying",
    "aninut",
+   "autopsy-jewish-view",
    "chevra-kadisha-and-tahara",
    "jewish-funeral",
    "writing-a-eulogy",
@@ -26,6 +27,7 @@
    "unveiling",
    "yahrzeit",
    "yizkor",
+   "el-malei-rachamim",
    "visiting-a-grave"
   ]
  },
@@ -36,6 +38,7 @@
   "guides": [
    "shabbat-for-beginners",
    "preparing-for-shabbat",
+   "shabbat-clothes",
    "keeping-food-warm-on-shabbat",
    "shabbat-candles",
    "friday-night-dinner-step-by-step",
@@ -62,8 +65,10 @@
    "hidden-kosher-ingredients",
    "meat-and-milk",
    "pareve",
+   "vegan-and-vegetarian-kosher",
    "kosher-kitchen",
    "kosher-meat",
+   "kosher-salt",
    "kosher-fish",
    "chalav-yisrael",
    "kosher-cheese",
@@ -89,8 +94,10 @@
    "morning-blessings",
    "shacharit-morning-service",
    "ashrei",
+   "barchu",
    "shema",
    "amidah",
+   "kedushah",
    "aleinu",
    "siddur",
    "daily-prayers",
@@ -119,6 +126,7 @@
    "attending-a-jewish-wedding",
    "sheva-brachot",
    "first-year-of-marriage",
+   "jewish-wedding-anniversary",
    "shalom-bayit",
    "remarriage"
   ]
@@ -148,13 +156,15 @@
    "bar-mitzvah",
    "bat-mitzvah",
    "bar-bat-mitzvah-timeline",
+   "bar-mitzvah-in-israel",
    "bar-mitzvah-parsha",
    "tefillin",
    "bar-mitzvah-speech",
    "attending-a-bar-bat-mitzvah",
    "bat-mitzvah-projects",
    "special-needs-bar-bat-mitzvah",
-   "adult-bar-bat-mitzvah"
+   "adult-bar-bat-mitzvah",
+   "bar-mitzvah-at-83"
   ]
  },
  {
@@ -234,11 +244,13 @@
    "why-be-jewish",
    "chosen-people",
    "belief-in-g-d",
+   "doubts-in-faith",
    "thirteen-principles-of-faith",
    "torah-and-science",
    "why-pray",
    "the-soul",
    "purpose-of-life",
+   "tikkun-olam",
    "free-will",
    "why-bad-things-happen",
    "hope-in-hard-times",
@@ -256,6 +268,7 @@
    "humility",
    "judging-others-favorably",
    "ahavat-yisrael",
+   "being-a-mensch",
    "anger-jewish-view",
    "patience",
    "jealousy-and-envy",

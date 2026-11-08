@@ -2,7 +2,7 @@
 title: Yizkor: The Jewish Memorial Prayer and When It Is Said
 description: What the Yizkor memorial prayer is, the four days it is recited, who says it, and why giving charity is part of Yizkor.
 category: Mourning & remembrance
-related: yahrzeit, last-days-of-passover, shemini-atzeret, kaddish, tzedakah, fast-days
+related: yahrzeit, el-malei-rachamim, last-days-of-passover, shemini-atzeret, kaddish, tzedakah, fast-days
 local: You are welcome to join us for Yizkor at Chabad of Lamorinda on the holidays. Check our holidays page for times, or call Rabbi Labkowski at 925-384-7242.
 ---
 Yizkor is a memorial prayer recited in synagogue four times a year, asking G-d to remember the souls of loved ones who have passed away. It is said on Yom Kippur, the last day of Passover, Shavuot, and Shemini Atzeret.

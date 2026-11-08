@@ -2,7 +2,7 @@
 title: How to Show You Are Jewish: Documents for a Wedding, Bar Mitzvah or Aliyah
 description: How to prove you are Jewish for a wedding, bar mitzvah or aliyah: the mother's line, helpful papers, Soviet documents, and missing papers.
 category: Life cycle
-related: who-is-a-jew, discovered-you-are-jewish, jewish-genealogy, jewish-wedding-in-lamorinda, russian-speaking-jews-in-lamorinda
+related: who-is-a-jew, jewish-last-names, discovered-you-are-jewish, jewish-genealogy, jewish-wedding-in-lamorinda, russian-speaking-jews-in-lamorinda
 local: Planning a wedding or bar mitzvah and need to show your Jewish background? Rabbi Labkowski will help. Call 925-384-7242.
 ---
 To show you are Jewish, you show that your mother, her mother and so on are Jewish, or that you converted according to Jewish law. A rabbi looks at documents and family testimony, and the Rabbi at Chabad of Lamorinda is glad to help families in Lafayette, Moraga and Orinda sort this out before a wedding, bar mitzvah or aliyah.

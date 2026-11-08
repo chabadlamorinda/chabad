@@ -2,7 +2,7 @@
 title: The Shema Prayer: Meaning, Words and When to Say It
 description: The Shema Yisrael prayer in Hebrew, transliteration and English, what it means, when to say it, and how to say the bedtime Shema.
 category: Prayer & Torah
-related: prayer, shemot-names-of-g-d, mezuzah, tefillin, modeh-ani
+related: prayer, barchu, shemot-names-of-g-d, mezuzah, tefillin, modeh-ani
 local: We are happy to teach you and your children the Shema and help you get a siddur or Shema card. Call 925-384-7242.
 ---
 The Shema is the central declaration of Jewish faith: "Hear O Israel, the L-rd is our G-d, the L-rd is One." Jews say it every morning and night, at bedtime, and it is traditionally the first prayer a child learns and the last words a Jew says in life.

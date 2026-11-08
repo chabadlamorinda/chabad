@@ -2,7 +2,7 @@
 title: Еврейские похоронные обычаи: что делать, когда уходит близкий человек
 description: Бережное руководство по еврейским похоронным обычаям: первые шаги, тагара, погребение, церемония и как поддержать скорбящую семью.
 category: Mourning & remembrance
-related: shiva, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
+related: shiva, el-malei-rachamim, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
 local: Если ушел из жизни близкий человек, звоните раввину Лабковскому по номеру 925-384-7242 в любое время суток, и мы бережно проведем вашу семью через каждый шаг.
 ---
 Еврейские похороны - это простая, достойная церемония, за которой следует погребение в земле, как можно скорее после смерти. Обычаи сосредоточены на двух ценностях: почтении к ушедшему (кавод а-мет) и утешении оставшейся семьи.

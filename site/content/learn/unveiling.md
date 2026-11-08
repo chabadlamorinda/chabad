@@ -2,7 +2,7 @@
 title: Unveiling a Headstone: Jewish Customs and What to Expect
 description: What a Jewish unveiling is, when the headstone is set, what to write on it, and how to hold a simple graveside ceremony.
 category: Mourning & remembrance
-related: jewish-funeral, yahrzeit, kaddish, hebrew-names
+related: jewish-funeral, el-malei-rachamim, yahrzeit, kaddish, hebrew-names
 local: Planning an unveiling? Call Rabbi Labkowski at 925-384-7242 and we will help with the headstone text and lead a meaningful graveside ceremony.
 ---
 An unveiling is a short ceremony at the cemetery when a headstone is dedicated to a loved one, usually within the first year after their passing. Family and friends gather, recite Psalms, share memories, and remove a cloth covering the stone.

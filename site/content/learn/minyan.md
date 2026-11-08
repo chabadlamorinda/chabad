@@ -2,7 +2,7 @@
 title: Minyan: Why Jewish Prayer Needs Ten
 description: What a minyan is, who counts, why ten are needed, which prayers require one, and how you can help make a minyan happen.
 category: Prayer & Torah
-related: prayer, mincha-and-maariv, what-is-a-synagogue, jewish-men-in-lamorinda, kaddish, amidah, torah-reading
+related: prayer, kedushah, barchu, mincha-and-maariv, what-is-a-synagogue, jewish-men-in-lamorinda, kaddish, amidah, torah-reading
 local: Need a minyan to say Kaddish or for a shiva house? Call Rabbi Labkowski at 925-384-7242 and we will do our best to help.
 ---
 A minyan is a group of ten Jewish men age 13 or older who gather for prayer. Certain holy parts of the service, like Kaddish, Kedushah and the Torah reading, can only be said when a minyan is present.

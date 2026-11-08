@@ -2,7 +2,7 @@
 title: Do Jews Celebrate Birthdays? Jewish Birthday Customs and Parties
 description: Do Jews celebrate birthdays? What Jewish tradition says, Chabad birthday customs, how to make a meaningful Jewish birthday party, and what to wish.
 category: Life cycle
-related: hebrew-birthday, tehillim, tzedakah, upsherin
+related: hebrew-birthday, bar-mitzvah-at-83, tehillim, tzedakah, upsherin
 local: Find your Hebrew birthday at chabadoflamorinda.com/tools/hebrew-birthday, and call 925-384-7242 to arrange an aliyah on the Shabbat before it.
 ---
 Yes, Jews celebrate birthdays, and in Chabad a birthday is a very special day: a personal new year, a time to give thanks, take stock and grow. The Lubavitcher Rebbe encouraged every Jew, young and old, to mark their birthday with joy and with meaningful Jewish customs.

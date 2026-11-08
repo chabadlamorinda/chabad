@@ -2,7 +2,7 @@
 title: Facing Antisemitism: Practical Steps and Jewish Strength
 description: What to do after an antisemitic incident at school, at work, online or in the neighborhood: safety, reporting, talking with kids, and answering with more light.
 category: Jewish ideas
-related: jewish-pride, bullying-jewish-view, jewish-identity-for-teens, israel-and-the-jewish-people
+related: jewish-pride, am-yisrael-chai, talking-to-kids-about-antisemitism, bullying-jewish-view, jewish-identity-for-teens, israel-and-the-jewish-people
 local: If you or your child faced antisemitism in Lafayette, Moraga, Orinda or anywhere nearby, call Rabbi Yisroel Labkowski at 925-384-7242. You are not alone.
 ---
 Antisemitism hurts, whether it is a slur at school, a swastika on a wall, a hostile post or a threat. Here is what to do, and how to answer it in a Jewish way.

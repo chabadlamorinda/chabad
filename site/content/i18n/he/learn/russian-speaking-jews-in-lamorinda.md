@@ -2,7 +2,7 @@
 title: יהודים דוברי רוסית בלאפייט, מוראגה ואורינדה: בית יהודי חם
 description: יהודים דוברי רוסית בלאפייט, מוראגה, אורינדה והסביבה מוזמנים בחום לחב״ד למורינדה: שבת, חגים, אירועי חיים ואתר ברוסית.
 category: Lamorinda
-related: who-is-a-jew, soviet-jewry-history, proving-jewish-ancestry, discovered-you-are-jewish, adult-brit-milah, shabbat-for-beginners, hebrew-names, yahrzeit
+related: who-is-a-jew, jewish-languages, yiddish-words-and-phrases, soviet-jewry-history, proving-jewish-ancestry, discovered-you-are-jewish, adult-brit-milah, shabbat-for-beginners, hebrew-names, yahrzeit
 local: בואו לשבת, הירשמו ב-chabadoflamorinda.com/forms/shabbat-meal, או התקשרו לרב בטלפון 925-384-7242.
 ---
 אם אתם או ההורים שלכם הגעתם מרוסיה, אוקראינה, בלארוס, מולדובה או מכל מקום בברית המועצות לשעבר, ואתם גרים עכשיו בלאפייט, מוראגה, אורינדה, פלזנט היל או מרטינז, חב״ד למורינדה ישמח מאוד להכיר אתכם. משפחות יהודיות רבות גדלו כמעט בלי אפשרות לקיים יהדות בגלוי. יהיה הסיפור שלכם אשר יהיה, אתם רצויים כאן, בדיוק כמו שאתם. אין דמי חבר, אין תשלומים ואין מבחן.

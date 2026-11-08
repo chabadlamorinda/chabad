@@ -2,7 +2,7 @@
 title: Пушка: копилка для цдаки в еврейском доме
 description: Что такое пушка (копилка для цдаки), почему она нужна каждому еврейскому дому и ребенку, когда давать и что делать с деньгами, когда она заполнится.
 category: Jewish home
-related: tzedakah, children-money-and-tzedakah, supporting-chabad-of-lamorinda, maaser, shabbat-candles, jewish-parenting
+related: tzedakah, rabbi-meir-baal-haness, children-money-and-tzedakah, supporting-chabad-of-lamorinda, maaser, shabbat-candles, jewish-parenting
 local: Попробуйте приложение My Pushka от Хабада Ламоринды на chabadoflamorinda.com/pushka/ или звоните 925-384-7242 с любым вопросом о цдаке.
 ---
 Пушка - это копилка для цдаки, которая стоит в еврейском доме. Каждый день члены семьи опускают в нее несколько монет, превращая отдачу в ежедневную привычку, а дом - в место доброты и благословения.

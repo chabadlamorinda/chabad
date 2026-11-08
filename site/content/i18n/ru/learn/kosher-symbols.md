@@ -2,7 +2,7 @@
 title: Знаки кошерности: как читать кошерные этикетки и эхшеры
 description: Что означают знаки кошерности, как читать пометки D, DE, P и парве, чем отличается простая буква K и как уверенно покупать кошерные продукты.
 category: Kosher
-related: kosher, hidden-kosher-ingredients, pareve, kosher-cheese, kosher-certification, chalav-yisrael, kosher-kitchen, blessings
+related: kosher, kosher-salt, hidden-kosher-ingredients, pareve, kosher-cheese, kosher-certification, chalav-yisrael, kosher-kitchen, blessings
 local: Сомневаетесь насчет знака или продукта? Мы с радостью поможем проверить. Звоните: 925-384-7242.
 ---
 Знак кошерности, который называется эхшер, - это отметка на упаковке, показывающая, что раввинская организация надзирала за продуктом и подтверждает его кошерность. Если научиться читать эти знаки, покупать кошерные продукты становится просто почти в любом супермаркете.

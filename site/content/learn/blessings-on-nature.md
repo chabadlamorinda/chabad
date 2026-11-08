@@ -2,7 +2,7 @@
 title: Blessings for Rainbows, Thunder, the Ocean and Other Wonders
 description: The short Jewish blessings for lightning, thunder, a rainbow, the ocean, mountains, blossoming trees and seeing an old friend, with the words and when to say them.
 category: Prayer & Torah
-related: blessings, blessing-on-blossoming-trees, shehecheyanu, hakarat-hatov, modeh-ani
+related: blessings, noah-and-the-flood, blessing-on-blossoming-trees, shehecheyanu, hakarat-hatov, modeh-ani
 local: Questions about which blessing to say? Ask Rabbi Yisroel Labkowski at Chabad of Lamorinda in Lafayette: 925-384-7242.
 ---
 Judaism teaches us to notice. Besides blessings over food, there are short blessings for moments of wonder: a flash of lightning, a rainbow after the rain, the first sight of the ocean. Each one takes a few seconds and turns "Wow!" into a moment of connection with the Creator.

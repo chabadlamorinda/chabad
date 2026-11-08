@@ -2,7 +2,7 @@
 title: סליחה ועשיית שלום: איך מבקשים סליחה ואיך סולחים
 description: מה היהדות מלמדת על בקשת סליחה ועל סליחה לאחרים: מה לומר, מה אם מסרבים, לסלוח לעצמך, ולרדוף שלום כמו אהרן.
 category: Jewish ideas
-related: teshuvah, forgiving-yourself, judging-others-favorably, difficult-relationships-with-parents, shalom-bayit, lashon-hara, yom-kippur-fast
+related: teshuvah, aaron-the-high-priest, forgiving-yourself, judging-others-favorably, difficult-relationships-with-parents, shalom-bayit, lashon-hara, yom-kippur-fast
 local: צריכים עזרה להשלים עם מישהו? הרב ישראל והרבנית ציפורה לבקובסקי בלאפייט ישמחו לעזור: 925-384-7242.
 ---
 "הֱוֵי מִתַּלְמִידָיו שֶׁל אַהֲרֹן, אוֹהֵב שָׁלוֹם וְרוֹדֵף שָׁלוֹם" (פרקי אבות א, יב). אהרן, אחיו של משה, היה הולך אל שני אנשים שרבו, ואומר לכל אחד מהם כמה השני מתחרט, עד שהתחבקו. עשיית שלום היא אחת המצוות הגדולות ביותר.

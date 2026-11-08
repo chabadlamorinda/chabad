@@ -2,7 +2,7 @@
 title: גנאלוגיה יהודית: איך מתחקים אחר השורשים היהודיים שלכם
 description: איך חוקרים את אילן היוחסין היהודי: שמות עבריים, מצבות, כתובות, ייחוס כהונה ולוויה, רישומי שואה ובדיקות DNA.
 category: Jewish ideas
-related: hebrew-names, kohen-levi-yisrael, proving-jewish-ancestry, discovered-you-are-jewish, who-is-a-jew, visiting-a-grave, holocaust-remembrance
+related: hebrew-names, jewish-last-names, kohen-levi-yisrael, proving-jewish-ancestry, discovered-you-are-jewish, who-is-a-jew, visiting-a-grave, holocaust-remembrance
 local: מצאתם מצבה בעברית, כתובה או מסמך ישן שאינכם מצליחים לקרוא? הביאו אותו לרב לבקובסקי או התקשרו 925-384-7242 ונעזור לפענח.
 ---
 המעקב אחר השורשים היהודיים מתחיל במשפחה: שמות, סיפורים ומסמכים, ובמיוחד מצבות בעברית וכתובות, שבהן רשומים השם העברי של כל אדם ושם אביו. המסורת היהודית מייחסת ערך רב לזיכרון מאין באנו, וגילוי סיפור המשפחה יכול להעמיק את החיים היהודיים שלכם.

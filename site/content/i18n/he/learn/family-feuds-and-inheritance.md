@@ -2,7 +2,7 @@
 title: מריבות משפחתיות וסכסוכי ירושה: להשכין שלום בין קרובים
 description: כשאחים או קרובים רבים על ירושה, על הטיפול בהורה או על פגיעה ישנה: ההלכה, גישור, וצעדים לאיחוד המשפחה מחדש.
 category: Jewish ideas
-related: halachic-will, sibling-rivalry, forgiveness-and-making-peace, business-disputes
+related: halachic-will, family-tension-at-holiday-meals, sibling-rivalry, forgiveness-and-making-peace, business-disputes
 local: משפחות בלאפייט, מוראגה, אורינדה והאיסט ביי: הרב ישראל לבקובסקי יכול להקשיב, לגשר או להפנות לבית דין. 925-384-7242.
 ---
 מעט דברים כואבים כמו משפחה שנקרעה. אחים מפסיקים לדבר בגלל העיזבון של הורה, בני דודים בגלל עסק משפחתי, קרובים בגלל השאלה מי עשה יותר בשביל הורה מזדקן. התורה מתייחסת לקרעים האלה ברצינות, ומציעה דרך חזרה.

@@ -2,7 +2,7 @@
 title: Еврейское воспитание: растить детей с ценностями Торы
 description: Еврейское воспитание: личный пример, ежедневные заповеди с детьми, Шабат и праздники, еврейское образование и дисциплина с любовью.
 category: Jewish home
-related: honoring-parents, raising-kind-children, talking-to-kids-about-g-d, teaching-children-to-pray, halloween-jewish-view, blessing-your-children, technology-and-screens-jewish-view, chesed, jewish-home-library, upsherin
+related: honoring-parents, raising-jewish-kids-in-a-small-community, raising-kind-children, talking-to-kids-about-g-d, teaching-children-to-pray, halloween-jewish-view, blessing-your-children, technology-and-screens-jewish-view, chesed, jewish-home-library, upsherin
 local: Дайте ребенку теплый еврейский старт в нашем еврейском детском саду и еврейской школе. Смотрите chabadoflamorinda.com/programs/jewish-preschool или звоните 925-384-7242.
 ---
 Еврейское воспитание означает растить детей с любовью, ценностями Торы и крепкой еврейской идентичностью, прежде всего живя по этим ценностям самим. Еврейская традиция видит в каждом ребенке драгоценную душу, которую Б-г доверил родителям, а в воспитании - святую задачу.

@@ -2,7 +2,7 @@
 title: תלמוד תורה בלאפייט, מוראגה ואורינדה: תלמוד תורה למורינדה
 description: תלמוד תורה לילדי לאפייט, מוראגה ואורינדה בגילאי 3 עד 13: בימי ראשון 10:00 עד 12:00, 600$, בלי צורך בדמי חבר.
 category: Lamorinda
-related: hebrew-alphabet, jewish-parenting, bar-mitzvah, bat-mitzvah
+related: hebrew-alphabet, raising-jewish-kids-in-a-small-community, jewish-parenting, bar-mitzvah, bat-mitzvah
 local: הירשמו לתלמוד תורה למורינדה ב-chabadoflamorinda.com/forms/hebrew-school או התקשרו 925-384-7242.
 ---
 מחפשים תלמוד תורה בלאפייט, מוראגה או אורינדה שהילדים שלכם באמת יחכו לו? **תלמוד תורה למורינדה** בחב״ד למורינדה בלאפייט מציע לימוד יהודי מעשי וכיפי פעם בשבוע, בימי ראשון, במשך שעתיים בלבד. הוא פתוח לכל ילד יהודי, בלי צורך בחברות בבית כנסת או בהשתייכות כלשהי.
