@@ -2,7 +2,7 @@
 title: פיקוח נפש: הצלת חיים קודמת לכול
 description: בהלכה, הצלת חיים דוחה שבת, יום כיפור וכמעט כל מצווה. מה זה אומר, דוגמאות מהחיים ושלושת היוצאים מן הכלל.
 category: Jewish ideas
-related: shabbat, yom-kippur-fast, jewish-health-and-body, organ-donation-jewish-view
+related: shabbat, kosher-medicine-and-vitamins, yom-kippur-fast, jewish-health-and-body, organ-donation-jewish-view
 local: שאלות על בריאות, שבת או צום בלאפייט, מוראגה או אורינדה? התקשרו לרב ישראל לבקובסקי, 925-384-7242. במקרה חירום, התקשרו קודם ל-911.
 ---
 **פיקוח נפש** פירושו "הצלת נפש". זהו אחד העקרונות החשובים ביותר בהלכה: כשחיי אדם עלולים להיות בסכנה, כמעט כל מצווה אחרת נדחית.

@@ -2,7 +2,7 @@
 title: When a Loved One Is Dying: A Jewish Guide for the Last Days
 description: How to be with a loved one at the end of life the Jewish way: being present, the Shema and Vidui, what to do at the moment of passing, and who to call.
 category: Mourning & remembrance
-related: bikur-cholim, jewish-funerals-near-lafayette, caregiver-support, shema, jewish-funeral, mourning-journey
+related: bikur-cholim, hospice-and-end-of-life-care, jewish-funerals-near-lafayette, caregiver-support, shema, jewish-funeral, mourning-journey
 local: Families in Lafayette, Moraga and Orinda: call Rabbi Yisroel Labkowski at 925-384-7242, or the Rebbetzin at 925-384-7241. We will help you through these days, at home, in hospice or in the hospital.
 ---
 When someone we love is near the end of their life, it can feel like there is nothing left to do. Judaism teaches the opposite: these days are precious, and there is a great deal of love, dignity and holiness we can still give. You do not need to know everything. Call the Rabbi, and we will walk with you.

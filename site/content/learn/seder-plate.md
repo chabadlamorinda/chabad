@@ -2,7 +2,7 @@
 title: The Seder Plate: What Goes On It and How to Arrange It
 description: The six items on the Passover seder plate, what each one means, and how to arrange the plate step by step according to Chabad custom.
 category: Shabbat & holidays
-related: passover-seder, matzah, afikoman, four-questions
+related: passover-seder, four-cups, matzah, afikoman, four-questions
 local: Order handmade shmurah matzah for your seder at chabadoflamorinda.com/forms/matzah or call 925-384-7242.
 ---
 The seder plate (ke'arah) holds the symbolic foods used at the Passover seder: the shank bone, egg, bitter herbs, charoset, vegetable and a second bitter herb. Together with three matzahs, it tells the story of slavery and freedom right on the table.

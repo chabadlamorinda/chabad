@@ -2,7 +2,7 @@
 title: What Is an Eruv? Carrying on Shabbat Explained
 description: What an eruv is, why carrying is forbidden on Shabbat, how an eruv works, how to check if it is up, and what you can and cannot carry.
 category: Shabbat & holidays
-related: thirty-nine-melachot, shabbat, shabbat-meals, jewish-parenting
+related: thirty-nine-melachot, babies-and-toddlers-on-shabbat, shabbat, shabbat-meals, jewish-parenting
 local: Not sure whether there is an eruv where you live in Lamorinda? Ask Rabbi Labkowski at 925-384-7242 before carrying on Shabbat.
 ---
 An eruv is a symbolic boundary, often made of wires, poles and existing walls, that encloses an area so that carrying is permitted there on Shabbat. Without an eruv, Jewish law forbids carrying anything from a home into a public area, or within a public area.

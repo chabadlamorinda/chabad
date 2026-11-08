@@ -2,7 +2,7 @@
 title: Мезуза: что это такое и как ее прикрепить
 description: Что такое мезуза, где и как ее прикрепить, благословение на иврите и в переводе и как убедиться, что свиток вашей мезузы кошерный.
 category: Jewish home
-related: shema, checking-mezuzahs-and-tefillin, moving-to-lamorinda, kosher-kitchen, tefillin, blessings
+related: shema, mezuzah-questions, checking-mezuzahs-and-tefillin, moving-to-lamorinda, kosher-kitchen, tefillin, blessings
 local: Мы поможем вам купить кошерную мезузу, проверить вашу и прикрепить ее с благословением. Звоните: 925-384-7242.
 ---
 Мезуза - это небольшой рукописный пергаментный свиток с молитвой «Шма», который прикрепляют к дверным косякам еврейского дома. Она отмечает дом как еврейское пространство и, как учит еврейская традиция, приносит защиту Б-га всем, кто в нем находится.

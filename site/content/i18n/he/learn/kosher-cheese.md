@@ -2,7 +2,7 @@
 title: האם גבינה כשרה? רנט, השגחה וחלב ישראל
 description: האם גבינה כשרה? רק עם הכשר מהימן, בגלל רנט ורכיבים אחרים. כך קוראים תווית, ואפשר לשאול את חב"ד לאמורינדה בלפאייט.
 category: Kosher
-related: pareve, chalav-yisrael, meat-and-milk, kosher-symbols, kosher-certification
+related: pareve, hidden-kosher-ingredients, chalav-yisrael, meat-and-milk, kosher-symbols, kosher-certification
 local: לא בטוחים שהגבינה שלכם כשרה? התקשרו לרב לבקובסקי: 925-384-7242. משפחות בלפאייט, מוראגה ואורינדה מוזמנות לשאול.
 ---
 גבינה כשרה רק כשיש עליה הכשר מהימן. חלב של בעל חיים כשר הוא כשר, אבל גבינה מיוצרת עם תוספות, כמו רנט, שאולי אינן כשרות, ולכן ההלכה דורשת שמשגיח יהודי יפקח על הייצור.

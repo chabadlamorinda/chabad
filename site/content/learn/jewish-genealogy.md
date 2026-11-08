@@ -2,7 +2,7 @@
 title: Jewish Genealogy: How to Trace Your Jewish Roots
 description: How to research your Jewish family tree: Hebrew names, tombstones, ketubahs, Kohen and Levi lineage, Holocaust records and DNA tests.
 category: Jewish ideas
-related: hebrew-names, who-is-a-jew, visiting-a-grave, holocaust-remembrance
+related: hebrew-names, kohen-levi-yisrael, proving-jewish-ancestry, discovered-you-are-jewish, who-is-a-jew, visiting-a-grave, holocaust-remembrance
 local: Found a Hebrew tombstone, ketubah or old document you cannot read? Bring it to Rabbi Labkowski or call 925-384-7242 and we will help you decode it.
 ---
 Tracing your Jewish roots starts with the family: names, stories and documents, especially Hebrew tombstones and marriage contracts, which record each person's Hebrew name and father's name. Jewish tradition values remembering where we come from, and discovering your family's story can deepen your own Jewish life.

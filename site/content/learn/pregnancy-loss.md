@@ -2,7 +2,7 @@
 title: Pregnancy Loss: Jewish Comfort After a Miscarriage or Stillbirth
 description: For parents who lost a pregnancy or a baby: Jewish comfort, what Jewish law says about burial and mourning, how to remember, and how friends can help.
 category: Mourning & remembrance
-related: grief-and-hard-times, infertility-jewish-support, tehillim, comforting-mourners
+related: grief-and-hard-times, losing-a-child, infertility-jewish-support, tehillim, comforting-mourners
 local: Parents in Lafayette, Moraga, Orinda and the East Bay can call Rabbi Yisroel or Rebbetzin Tzipora Labkowski any time, privately: 925-384-7242.
 ---
 Losing a pregnancy or a baby is a deep and often silent grief. Many parents feel alone, and the people around them do not know what to say. Judaism recognizes this loss, and offers comfort and guidance.

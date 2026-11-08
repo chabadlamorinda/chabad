@@ -2,7 +2,7 @@
 title: עלייה לתורה: איך עולים לתורה
 description: מהי עלייה לתורה, מי עולה ומתי, אילו ברכות מברכים, ומה עושים ליד הבימה, שלב אחר שלב.
 category: Prayer & Torah
-related: torah-reading, getting-a-hebrew-name-as-an-adult, bar-mitzvah, minyan, haftarah
+related: torah-reading, kohen-levi-yisrael, getting-a-hebrew-name-as-an-adult, bar-mitzvah, minyan, haftarah
 local: רוצים עלייה לתורה ליארצייט, ליום הולדת או לשמחה? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונסדר אותה ונעזור לכם להתכונן.
 ---
 עלייה לתורה היא הכבוד להיקרא לתורה בזמן קריאת התורה בציבור, כדי לברך את הברכות לפני קריאת קטע ואחריה. השם "עלייה" בא מכך שעולים לבימה, וברוחניות מתקרבים לה׳.

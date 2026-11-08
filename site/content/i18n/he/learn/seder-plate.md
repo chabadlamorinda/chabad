@@ -2,7 +2,7 @@
 title: קערת הסדר: מה מניחים עליה ואיך מסדרים אותה
 description: ששת הפריטים בקערת ליל הסדר, מה כל אחד מהם מסמל, ואיך מסדרים את הקערה שלב אחר שלב לפי מנהג חב״ד.
 category: Shabbat & holidays
-related: passover-seder, matzah, afikoman, four-questions
+related: passover-seder, four-cups, matzah, afikoman, four-questions
 local: הזמינו מצות שמורה עבודת יד לסדר שלכם ב-chabadoflamorinda.com/forms/matzah או התקשרו 925-384-7242.
 ---
 קערת הסדר מחזיקה את המאכלים הסמליים שמשמשים בליל הסדר: זרוע, ביצה, מרור, חרוסת, כרפס וחזרת. יחד עם שלוש מצות, היא מספרת את סיפור העבדות והחירות ממש על השולחן.

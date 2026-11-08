@@ -2,7 +2,7 @@
 title: אובדן בעל או אישה: מדריך יהודי לימים ולשנה שאחרי
 description: כשבן או בת הזוג נפטרים: הימים הראשונים, השבעה והשנה, הבדידות, עזרה מעשית, החגים, ילדים ונכדים, ואיך הקהילה מחזיקה אתכם.
 category: Mourning & remembrance
-related: mourning-journey, shiva, year-of-mourning, grief-during-the-holidays, feeling-lonely
+related: mourning-journey, remarriage, losing-a-child, shiva, year-of-mourning, grief-during-the-holidays, feeling-lonely
 local: אם איבדתם את בן או בת הזוג, הרב ישראל והרבנית ציפורה לבקובסקי כאן בשבילכם בלאפייט, מוראגה ואורינדה, ביום ובלילה: 925-384-7242.
 ---
 אין אובדן שדומה לזה. האדם שחלק איתכם את המיטה, את השולחן, את ההחלטות ואת הזיכרונות איננו, והבית פתאום שקט מדי. היהדות לא ממהרת אתכם לעבור את זה. היא הולכת לצידכם, עם דרך ברורה לימים הראשונים, קצב לשנה הראשונה, וקהילה שתפקידה להחזיק אתכם.

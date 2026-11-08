@@ -2,7 +2,7 @@
 title: כשאדם יקר נמצא בימיו האחרונים: מדריך יהודי
 description: איך להיות עם אדם יקר בסוף חייו בדרך היהודית: נוכחות, קריאת שמע ווידוי, מה עושים ברגע הפטירה, ולמי להתקשר.
 category: Mourning & remembrance
-related: bikur-cholim, jewish-funerals-near-lafayette, caregiver-support, shema, jewish-funeral, mourning-journey
+related: bikur-cholim, hospice-and-end-of-life-care, jewish-funerals-near-lafayette, caregiver-support, shema, jewish-funeral, mourning-journey
 local: משפחות בלאפייט, מוראגה ואורינדה: התקשרו להרב ישראל לבקובסקי בטלפון 925-384-7242, או לרבנית בטלפון 925-384-7241. נעזור לכם לעבור את הימים האלה, בבית, בהוספיס או בבית החולים.
 ---
 כשאדם שאנחנו אוהבים מתקרב לסוף חייו, אפשר להרגיש שכבר אין מה לעשות. היהדות מלמדת את ההפך: הימים האלה יקרים, ויש עוד הרבה אהבה, כבוד וקדושה שאנחנו יכולים לתת. לא צריך לדעת הכול. התקשרו לרב, ונלך איתכם יחד.

@@ -2,7 +2,7 @@
 title: פדיון הבן: פדיית הבן הבכור מכהן
 description: מהו פדיון הבן, אילו תינוקות צריכים אותו, מתי הוא נערך, איך מתנהל הטקס עם כהן וחמישה מטבעות כסף, ומה משמעותו.
 category: Life cycle
-related: brit-milah, baby-naming, jewish-pregnancy, 613-mitzvot
+related: brit-milah, kohen-levi-yisrael, fast-of-the-firstborn, baby-naming, jewish-pregnancy, 613-mitzvot
 local: מצפים לבן בכור או שזה עתה נולד לכם? היכנסו ל-chabadoflamorinda.com/help/new-baby או התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לכם לתכנן.
 ---
 פדיון הבן הוא מצווה שבה אב פודה את בנו הבכור מכהן בכך שהוא נותן לו חמישה מטבעות כסף. הוא נערך כשהתינוק בן 31 יום, וחוגגים אותו בסעודה חגיגית.

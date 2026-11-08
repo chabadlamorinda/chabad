@@ -2,7 +2,7 @@
 title: How to Make Your Kitchen Kosher: A Step-by-Step Guide
 description: How to set up a kosher kitchen: separate meat and dairy, kashering your sink, oven and counters, toiveling dishes, and what can and cannot be koshered.
 category: Kosher
-related: kosher, pas-yisrael-and-bishul-yisrael, pareve, moving-to-lamorinda, kosher-symbols, mikvah, jewish-women
+related: kosher, kosher-eggs, pas-yisrael-and-bishul-yisrael, pareve, moving-to-lamorinda, kosher-symbols, mikvah, jewish-women
 local: We can help you kosher your kitchen, go over what can be koshered, and guide you through immersing new dishes. Call 925-384-7242.
 ---
 A kosher kitchen is one where only kosher food is prepared, and meat and dairy are kept completely separate, with their own dishes, pots and utensils. Making your kitchen kosher usually takes a day or two of preparation, and the Rabbi can help you through it.

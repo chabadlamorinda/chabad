@@ -2,7 +2,7 @@
 title: Kriah: Tearing the Garment When a Loved One Passes Away
 description: What kriah is, who tears, when and on which side, the blessing Baruch Dayan HaEmet, and how long the torn garment is worn.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, shiva, setting-up-a-shiva-house
+related: jewish-funeral, who-sits-shiva, aninut, shiva, setting-up-a-shiva-house
 local: Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski any time, 925-384-7242. He will guide you through kriah at the funeral.
 ---
 Kriah (pronounced kree-AH) means "tearing." It is one of the oldest Jewish mourning customs: a mourner tears a garment he or she is wearing, as Jacob tore his clothes when he thought Joseph had died. The tear is an outward sign of an inner loss, and a way to let grief out rather than hold it in.

@@ -2,7 +2,7 @@
 title: האישה ביהדות: התפקיד והמצוות של האישה היהודייה
 description: איך היהדות רואה את האישה, המצוות המיוחדות לנשים, נשים מעוררות השראה מההיסטוריה היהודית והכוח של הבית היהודי.
 category: Jewish ideas
-related: shabbat-candles, women-and-chanukah, jewish-women-in-lamorinda, head-covering-for-women, mikvah, bat-mitzvah, challah
+related: shabbat-candles, the-matriarchs, women-and-chanukah, jewish-women-in-lamorinda, head-covering-for-women, mikvah, bat-mitzvah, challah
 local: הרבנית ציפורה לבקובסקי מזמינה נשים מכל הרקעים ללמוד ולהתחבר. התקשרו 925-384-7241 או בדקו את עמוד האירועים שלנו.
 ---
 היהדות רואה בנשים שוות לגברים מבחינה רוחנית, עם תפקיד ייחודי וחיוני בחיים היהודיים. נשים יהודיות עיצבו את עם ישראל מההתחלה ממש, והזהות היהודית עצמה עוברת דרך האם.

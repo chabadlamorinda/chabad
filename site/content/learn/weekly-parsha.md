@@ -2,7 +2,7 @@
 title: The Weekly Parsha: How the Torah Is Read Each Week
 description: What the weekly Torah portion (parsha) is, how the 54 portions fit the Jewish year, and easy ways to study and discuss the parsha each week.
 category: Prayer & Torah
-related: torah-reading, rashi, shabbat-shirah, torah-study-for-women, bar-mitzvah-speech, torah, daily-torah-study, haftarah
+related: torah-reading, joseph-and-his-brothers, rashi, shabbat-shirah, torah-study-for-women, bar-mitzvah-speech, torah, daily-torah-study, haftarah
 local: Read weekly Torah insights at chabadoflamorinda.com/parsha or join a class at chabadoflamorinda.com/programs/adult-education.
 ---
 The weekly parsha is the section of the Torah read in synagogue each Shabbat. The Five Books of Moses are divided into 54 portions, so that the entire Torah is read once a year, from the creation of the world to the passing of Moses.

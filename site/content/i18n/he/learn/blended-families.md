@@ -2,7 +2,7 @@
 title: משפחות מעורבות: חוכמה יהודית להורים חורגים ולילדים חורגים
 description: חוכמה יהודית למשפחות מעורבות: כיבוד הורה חורג, חיבור שתי משפחות לאחת, חגים ושמחות, ושלום בית.
 category: Life cycle
-related: shalom-bayit, divorce-and-children, honoring-parents, jewish-parenting, sibling-rivalry, jewish-divorce
+related: shalom-bayit, remarriage, who-sits-shiva, divorce-and-children, honoring-parents, jewish-parenting, sibling-rivalry, jewish-divorce
 local: משפחות בלאפייט, מוראגה ואורינדה: הרב ישראל והרבנית ציפורה לבקובסקי ישמחו לשוחח בפרטיות על כל שאלה משפחתית. התקשרו 925-384-7242.
 ---
 הרבה משפחות היום הן משפחות מעורבות: הורה מתחתן שוב, וילדים, הורים חורגים ואחים חורגים לומדים להפוך לבית אחד. זו יכולה להיות ברכה גדולה, וזה יכול להיות קשה. במסורת היהודית יש חוכמה אמיתית לכך, שמתחילה ברעיון פשוט אחד: בית נבנה על שלום, סבלנות וחסד, יום אחרי יום.

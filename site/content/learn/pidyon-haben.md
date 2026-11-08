@@ -2,7 +2,7 @@
 title: Pidyon Haben: Redemption of the Firstborn Son
 description: What a pidyon haben is, which baby boys need one, when it takes place, how the ceremony works with a Kohen and five silver coins, and its meaning.
 category: Life cycle
-related: brit-milah, baby-naming, jewish-pregnancy, 613-mitzvot
+related: brit-milah, kohen-levi-yisrael, fast-of-the-firstborn, baby-naming, jewish-pregnancy, 613-mitzvot
 local: Expecting or just welcomed a firstborn son? Visit chabadoflamorinda.com/help/new-baby or call Rabbi Labkowski at 925-384-7242 and we will help you plan.
 ---
 Pidyon haben, "redemption of the son," is a mitzvah in which a father redeems his firstborn son from a Kohen by giving him five silver coins. It takes place when the baby is 31 days old and is celebrated with a festive meal.

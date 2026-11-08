@@ -2,7 +2,7 @@
 title: Is Cheese Kosher? Rennet, Supervision and Chalav Yisrael
 description: Is cheese kosher? Only with reliable kosher certification, because of rennet and other ingredients. See how to read labels and ask Chabad of Lamorinda.
 category: Kosher
-related: pareve, chalav-yisrael, meat-and-milk, kosher-symbols, kosher-certification
+related: pareve, hidden-kosher-ingredients, chalav-yisrael, meat-and-milk, kosher-symbols, kosher-certification
 local: Not sure if your cheese is kosher? Call Rabbi Labkowski at 925-384-7242. Families in Lafayette, Moraga and Orinda are welcome to ask.
 ---
 Cheese is kosher only when it carries reliable kosher certification (a hechsher). Milk from a kosher animal is kosher, but cheese is made with added ingredients, such as rennet, that may not be, so Jewish law asks that a Jewish supervisor oversee its production.

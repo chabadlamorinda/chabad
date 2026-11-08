@@ -2,7 +2,7 @@
 title: Jewish Baby Shower Customs: What to Do Before and After a Birth
 description: Why many Jewish families skip the baby shower before a birth, what to do instead, gifts after the baby arrives and the Shir Hamaalot cards.
 category: Life cycle
-related: jewish-pregnancy, brit-milah, baby-naming, ayin-hara
+related: jewish-pregnancy, giving-birth-jewish-customs, brit-milah, baby-naming, ayin-hara
 local: Expecting families in Lafayette, Moraga, Orinda and the East Bay: Rebbetzin Tzipora Labkowski is glad to talk, 925-384-7241, or call the Rabbi at 925-384-7242.
 ---
 In many places a baby shower before the birth is a given. Many traditional Jewish families do things differently: they wait until after the baby is born to celebrate, give gifts and set up the nursery. Here is why, and some warm ways to celebrate and help instead.

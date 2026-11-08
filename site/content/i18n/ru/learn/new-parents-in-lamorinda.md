@@ -2,7 +2,7 @@
 title: Молодые еврейские родители в Лафайетте, Мораге и Оринде: брит, имя и детский сад
 description: Молодые еврейские родители в Лафайетте, Мораге или Оринде: брит, имянаречение, еврейские имена, Тегилим и еврейский детский сад с 12 месяцев.
 category: Lamorinda
-related: jewish-pregnancy, shalom-zachar, jewish-lamorinda-with-young-children, preparing-for-a-bris, simchat-bat, brit-milah, baby-naming, hebrew-birthday
+related: jewish-pregnancy, babies-and-toddlers-on-shabbat, giving-birth-jewish-customs, shalom-zachar, jewish-lamorinda-with-young-children, preparing-for-a-bris, simchat-bat, brit-milah, baby-naming, hebrew-birthday
 local: У вас родился ребенок? Позвоните раввину Исроэлю Лабковскому по номеру 925-384-7242 или смотрите chabadoflamorinda.com/help/new-baby.
 ---
 Мазл тов! Ждете ли вы ребенка или только что вернулись из роддома, Хабад Ламоринды с радостью отпразднует вместе с вашей семьей. Раввин Исроэль и ребецн Ципора Лабковские помогают молодым родителям в Лафайетте, Мораге, Оринде и соседних Плезант-Хилле и Мартинесе на каждом шагу: от молитвы во время беременности до брит-милы, имянаречения и первого детского сада. Членство не требуется. Звоните **925-384-7241**.

@@ -2,7 +2,7 @@
 title: לדון לכף זכות: האמנות היהודית לראות את הטוב באחרים
 description: מה פירוש "הוי דן את כל האדם לכף זכות", סיפור הפועל שלא קיבל שכר בתלמוד, ודרכים פשוטות לדון את הזולת לטובה.
 category: Jewish ideas
-related: lashon-hara, forgiveness-and-making-peace, humility, anger-jewish-view, being-a-good-neighbor
+related: lashon-hara, lamed-vav-tzaddikim, ahavat-yisrael, forgiveness-and-making-peace, humility, anger-jewish-view, being-a-good-neighbor
 local: קשה לכם עם מישהו? הרב ישראל והרבנית ציפורה לבקובסקי כאן להקשיב, למשפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 חבר לא עונה להודעה. נהג חותך אתכם. קרוב משפחה שוכח את יום ההולדת שלכם. בשבריר שנייה המוח כותב סיפור: לא אכפת לו, הוא גס, הוא אנוכי. התורה מבקשת שנכתוב סיפור אחר.

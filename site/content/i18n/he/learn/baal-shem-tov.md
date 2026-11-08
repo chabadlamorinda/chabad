@@ -2,7 +2,7 @@
 title: הבעל שם טוב: מייסד תנועת החסידות
 description: מי היה הבעל שם טוב, איך ייסד את החסידות במאה ה-18, תורתו על שמחה, אהבה והשגחה פרטית, והמורשת שהשאיר.
 category: Jewish ideas
-related: chassidus, chabad, chabad-rebbes, kabbalah
+related: chassidus, lamed-vav-tzaddikim, chabad, chabad-rebbes, kabbalah
 local: רוצים ללמוד את תורת הבעל שם טוב? ראו chabadoflamorinda.com/programs/adult-education או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 הבעל שם טוב היה רבי ישראל בן אליעזר (1698 עד 1760), מייסד תנועת החסידות. הוא הביא חיים חדשים ושמחה לקהילות היהודיות במזרח אירופה, ולימד שכל יהודי, תלמיד חכם או אדם פשוט, יקר לה׳ ויכול לעבוד אותו באהבה.

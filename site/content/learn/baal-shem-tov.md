@@ -2,7 +2,7 @@
 title: The Baal Shem Tov: Founder of the Chassidic Movement
 description: Who the Baal Shem Tov was, how he founded Chassidism in the 1700s, his key teachings on joy, love and Divine Providence, and his lasting legacy.
 category: Jewish ideas
-related: chassidus, chabad, chabad-rebbes, kabbalah
+related: chassidus, lamed-vav-tzaddikim, chabad, chabad-rebbes, kabbalah
 local: Want to learn the teachings of the Baal Shem Tov? See chabadoflamorinda.com/programs/adult-education or call Rabbi Labkowski at 925-384-7242.
 ---
 The Baal Shem Tov was Rabbi Israel ben Eliezer (1698 to 1760), the founder of the Chassidic movement. He brought new life and joy to Jewish communities in Eastern Europe, teaching that every Jew, scholar or simple person, is precious to G-d and can serve Him with love.

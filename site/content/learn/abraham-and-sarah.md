@@ -2,7 +2,7 @@
 title: Abraham and Sarah: The First Jews and What They Teach Us
 description: Who were Abraham and Sarah? The first Jewish family: smashing idols, Lech Lecha, the open tent and the ten tests, and why they are our ancestors.
 category: Jewish ideas
-related: hachnasat-orchim, jewish-history-overview, brit-milah, why-be-jewish, converting-to-judaism
+related: hachnasat-orchim, the-matriarchs, jewish-history-overview, brit-milah, why-be-jewish, converting-to-judaism
 local: Experience Abraham's open tent at a Shabbat table in Lafayette: see /forms/shabbat-meal or call 925-384-7242.
 ---
 Abraham and Sarah were the first Jewish couple, who, around 3,800 years ago, discovered the One G-d and taught the world about Him. Every Jew is a child of Abraham and Sarah, and so are those who choose Judaism, as converts.

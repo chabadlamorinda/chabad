@@ -2,7 +2,7 @@
 title: Judging Others Favorably: The Jewish Art of the Benefit of the Doubt
 description: What "judge every person favorably" means, the Talmud's story of the unpaid worker, and simple ways to give others the benefit of the doubt.
 category: Jewish ideas
-related: lashon-hara, forgiveness-and-making-peace, humility, anger-jewish-view, being-a-good-neighbor
+related: lashon-hara, lamed-vav-tzaddikim, ahavat-yisrael, forgiveness-and-making-peace, humility, anger-jewish-view, being-a-good-neighbor
 local: Struggling with someone? Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here to listen, for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 A friend does not answer your message. A driver cuts you off. A relative forgets your birthday. In a split second the mind writes a story: they do not care, they are rude, they are selfish. The Torah asks us to write a different story.

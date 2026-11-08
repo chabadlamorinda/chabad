@@ -2,7 +2,7 @@
 title: מתחילים כאן: חיים יהודיים בלפייט, מורגה ואורינדה
 description: חדשים בחיים יהודיים בלפייט, מורגה או אורינדה? מפה ידידותית של שבת, חגים, כשרות, ילדים, מעגל החיים ולימוד, עם צעד ראשון.
 category: Lamorinda
-related: moving-to-lamorinda, shabbat-in-lamorinda, not-religious-welcome, jewish-year-in-lamorinda, first-time-at-synagogue
+related: moving-to-lamorinda, talk-to-a-rabbi, shabbat-in-lamorinda, not-religious-welcome, jewish-year-in-lamorinda, first-time-at-synagogue
 local: לא בטוחים מאיפה להתחיל? בואו להגיד שלום ב-chabadoflamorinda.com/welcome או התקשרו לרב ישראל ולרבנית ציפורה לבקובסקי 925-384-7242.
 ---
 ברוכים הבאים. אם אתם חדשים בחיים יהודיים, או חוזרים אליהם אחרי זמן רב, הגעתם למקום הנכון, ואין צורך שתדעו כלום עדיין. הצעד הראשון פשוט: **בואו לשבת**, או התקשרו 925-384-7242 ותגידו שלום. כל השאר בעמוד הזה הוא מפה שאפשר להשתמש בה כשתהיו מוכנים.

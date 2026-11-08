@@ -2,7 +2,7 @@
 title: Sheloshim: The 30 Days of Mourning After a Funeral
 description: What sheloshim is, how the 30 days of Jewish mourning are counted, which customs apply, and how families mark the end of sheloshim.
 category: Mourning & remembrance
-related: shiva, shiva-and-holidays, kaddish, year-of-mourning, yahrzeit
+related: shiva, mourners-and-celebrations, shiva-and-holidays, kaddish, year-of-mourning, yahrzeit
 local: To arrange Kaddish, a sheloshim gathering or a learning session in memory of a loved one, call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/kaddish.
 ---
 Sheloshim is the 30-day period of mourning that begins on the day of the burial and includes the week of shiva. After shiva ends, mourners return to work and daily life, but keep certain mourning customs until the 30th day.

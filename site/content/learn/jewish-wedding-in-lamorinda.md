@@ -2,7 +2,7 @@
 title: A Jewish Wedding in Lafayette, Moraga or Orinda: Rabbi, Chuppah and Planning
 description: Planning a Jewish wedding near Lafayette, Moraga or Orinda? What you need: a rabbi, two witnesses, ketubah, ring and chuppah. Call Rabbi Labkowski.
 category: Lamorinda
-related: jewish-wedding, jewish-engagement, ketubah, choosing-a-wedding-date, mikvah
+related: jewish-wedding, proving-jewish-ancestry, jewish-engagement, ketubah, choosing-a-wedding-date, mikvah
 local: Getting married? Call Rabbi Labkowski at 925-384-7242, ideally several months ahead, or see /help.
 ---
 A Jewish wedding in Lafayette, Moraga or Orinda needs a rabbi, a chuppah (wedding canopy), a ketubah (marriage contract), a ring and two kosher witnesses. Rabbi Yisroel Labkowski of Chabad of Lamorinda officiates at Jewish weddings according to Jewish law and helps with the date, the ketubah and the chuppah; call 925-384-7242 as early as you can, ideally several months ahead.

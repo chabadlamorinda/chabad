@@ -2,7 +2,7 @@
 title: חתונה יהודית בלאפייט, מוראגה או אורינדה: רב, חופה ותכנון
 description: מתכננים חתונה יהודית ליד לאפייט, מוראגה או אורינדה? מה צריך: רב, שני עדים, כתובה, טבעת וחופה. התקשרו לרב לבקובסקי.
 category: Lamorinda
-related: jewish-wedding, jewish-engagement, ketubah, choosing-a-wedding-date, mikvah
+related: jewish-wedding, proving-jewish-ancestry, jewish-engagement, ketubah, choosing-a-wedding-date, mikvah
 local: מתחתנים? התקשרו לרב לבקובסקי 925-384-7242, רצוי כמה חודשים מראש, או ראו /help.
 ---
 לחתונה יהודית בלאפייט, מוראגה או אורינדה צריך רב, חופה, כתובה, טבעת ושני עדים כשרים. הרב ישראל לבקובסקי מבית חב״ד למורינדה מסדר קידושין כדת משה וישראל ועוזר עם התאריך, הכתובה והחופה; התקשרו 925-384-7242 מוקדם ככל האפשר, רצוי כמה חודשים מראש.

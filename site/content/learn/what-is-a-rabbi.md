@@ -2,7 +2,7 @@
 title: What Is a Rabbi? Meaning, Role and Training
 description: What the word rabbi means, what a rabbi does, how rabbis are trained and ordained, and how a rabbi differs from a Rebbe or a priest.
 category: Jewish ideas
-related: chabad, chabad-in-the-bay-area, the-rebbe, torah, talmud
+related: chabad, talk-to-a-rabbi, chabad-in-the-bay-area, the-rebbe, torah, talmud
 local: Have a question, big or small? Rabbi Yisroel Labkowski is here for every Jew in Lafayette, Moraga and Orinda. Call 925-384-7242 or visit chabadoflamorinda.com/help/talk-to-the-rabbi.
 ---
 A rabbi is a teacher of Torah and a guide in Jewish life. The word comes from the Hebrew *rav*, meaning "great" or "master," and *rabbi* literally means "my teacher."

@@ -2,7 +2,7 @@
 title: Start Here: Jewish Life in Lafayette, Moraga and Orinda
 description: New to Jewish life in Lafayette, Moraga or Orinda? A friendly map of Shabbat, holidays, kosher, kids, life events and learning, with a first step.
 category: Lamorinda
-related: moving-to-lamorinda, shabbat-in-lamorinda, not-religious-welcome, jewish-year-in-lamorinda, first-time-at-synagogue
+related: moving-to-lamorinda, talk-to-a-rabbi, shabbat-in-lamorinda, not-religious-welcome, jewish-year-in-lamorinda, first-time-at-synagogue
 local: Not sure where to begin? Say hello at chabadoflamorinda.com/welcome or call Rabbi Yisroel and Rebbetzin Tzipora Labkowski at 925-384-7242.
 ---
 Welcome. If you are new to Jewish life, or coming back after a long time, you are in the right place, and you do not need to know anything yet. Your first step is simple: **come for Shabbat**, or call 925-384-7242 and say hello. Everything else on this page is a map you can use whenever you are ready.

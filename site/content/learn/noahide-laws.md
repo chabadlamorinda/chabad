@@ -2,7 +2,7 @@
 title: The Seven Noahide Laws: Judaism's Universal Code for All Humanity
 description: What the Seven Noahide Laws are, where they come from, what each one means, and why Judaism sees them as a path for every person.
 category: Jewish ideas
-related: 613-mitzvot, who-is-a-jew, the-rebbe, torah
+related: 613-mitzvot, chosen-people, who-is-a-jew, the-rebbe, torah
 local: Questions about the Noahide laws or about Judaism's view of non-Jews? Call Rabbi Labkowski at 925-384-7242. We are happy to help.
 ---
 The Seven Noahide Laws are a set of universal moral commandments that, according to the Torah, G-d gave to all of humanity through Noah after the Flood. Judaism teaches that a non-Jew who keeps these seven laws lives a righteous life and has a share in the World to Come.

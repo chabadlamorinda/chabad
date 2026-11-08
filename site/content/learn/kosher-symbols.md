@@ -2,7 +2,7 @@
 title: Kosher Symbols: How to Read Kosher Labels and Hechshers
 description: What kosher symbols mean, how to read D, DE, P and pareve markings, why a plain K is different, and how to shop for kosher products with confidence.
 category: Kosher
-related: kosher, pareve, kosher-cheese, kosher-certification, chalav-yisrael, kosher-kitchen, blessings
+related: kosher, hidden-kosher-ingredients, pareve, kosher-cheese, kosher-certification, chalav-yisrael, kosher-kitchen, blessings
 local: Not sure about a symbol or product? We are happy to help you check it. Call 925-384-7242.
 ---
 A kosher symbol, called a hechsher, is a mark on a package showing that a rabbinic agency supervised the product and certifies it as kosher. Learning to read these symbols makes shopping for kosher food simple, in almost any supermarket.

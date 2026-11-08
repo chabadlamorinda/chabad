@@ -2,7 +2,7 @@
 title: Кошерная сертификация: как работают OU, OK, Star-K и другие
 description: Как устроена кошерная сертификация: что проверяют OU, OK и Star-K, чем занимается машгиах и почему стандарты различаются.
 category: Kosher
-related: kosher-symbols, pas-yisrael-and-bishul-yisrael, eating-out-kosher, kosher, kosher-meat, kosher-kitchen
+related: kosher-symbols, hidden-kosher-ingredients, pas-yisrael-and-bishul-yisrael, eating-out-kosher, kosher, kosher-meat, kosher-kitchen
 local: Вопросы о продукте, ресторане или кошерном кейтеринге для вашего мероприятия в Лафайетте, Мораге или Оринде? Звоните раввину Лабковскому: 925-384-7242.
 ---
 Кошерная сертификация - это услуга, при которой раввинская организация, например OU, OK или Star-K, проверяет каждый ингредиент, каждую машину и каждый процесс на пищевом предприятии или кухне, а затем разрешает размещать свой знак на продукте. Знак говорит вам, что за содержимое ручаются люди, знающие еврейский закон.

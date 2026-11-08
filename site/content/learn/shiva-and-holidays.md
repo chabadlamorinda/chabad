@@ -2,7 +2,7 @@
 title: Shiva and Holidays: What Happens When a Holiday or Shabbat Comes During Mourning
 description: Does a holiday cancel shiva? Shabbat counts but public mourning pauses; major festivals end shiva; Chanukah and Purim do not. Call 925-384-7242.
 category: Mourning & remembrance
-related: shiva, sheloshim, grief-during-the-holidays, setting-up-a-shiva-house, kaddish
+related: shiva, mourners-and-celebrations, sheloshim, grief-during-the-holidays, setting-up-a-shiva-house, kaddish
 local: If a holiday is near, call Rabbi Labkowski right away at 925-384-7242. Every situation is different, and we will walk through it with you.
 ---
 Shabbat counts as one of the seven days of shiva, but public mourning pauses, and a major festival (Rosh Hashanah, Yom Kippur, Sukkot, Passover or Shavuot) ends the rest of shiva if the mourner has already observed some mourning before it begins. Chanukah and Purim do not end shiva. Because every case depends on the exact day, please call the Rabbi.

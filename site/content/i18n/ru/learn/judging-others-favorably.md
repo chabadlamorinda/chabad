@@ -2,7 +2,7 @@
 title: Судить других в лучшую сторону: еврейское искусство видеть в людях хорошее
 description: Что значит «суди каждого человека в лучшую сторону», талмудическая история о работнике без зарплаты и простые способы видеть в других хорошее.
 category: Jewish ideas
-related: lashon-hara, forgiveness-and-making-peace, humility, anger-jewish-view, being-a-good-neighbor
+related: lashon-hara, lamed-vav-tzaddikim, ahavat-yisrael, forgiveness-and-making-peace, humility, anger-jewish-view, being-a-good-neighbor
 local: Трудно с кем-то? Раввин Исроэль и ребецн Ципора Лабковские готовы выслушать семьи Лафайетта, Мораги и Оринды: 925-384-7242.
 ---
 Друг не отвечает на сообщение. Водитель подрезает вас. Родственник забывает о вашем дне рождения. За долю секунды ум сочиняет историю: ему все равно, он груб, он эгоист. Тора просит нас сочинить другую историю.

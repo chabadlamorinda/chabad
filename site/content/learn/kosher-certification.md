@@ -2,7 +2,7 @@
 title: Kosher Certification: How OU, OK, Star-K and Others Work
 description: How kosher certification works behind the label: what agencies like OU, OK and Star-K check, what a mashgiach does, and why standards differ.
 category: Kosher
-related: kosher-symbols, pas-yisrael-and-bishul-yisrael, eating-out-kosher, kosher, kosher-meat, kosher-kitchen
+related: kosher-symbols, hidden-kosher-ingredients, pas-yisrael-and-bishul-yisrael, eating-out-kosher, kosher, kosher-meat, kosher-kitchen
 local: Questions about a product, a restaurant or kosher catering for your event in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242.
 ---
 Kosher certification is a service in which a rabbinic agency, such as the OU, OK or Star-K, checks every ingredient, machine and process in a food plant or kitchen and then allows its symbol on the product. The symbol tells you that people trained in Jewish law are standing behind what is inside.

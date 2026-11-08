@@ -2,7 +2,7 @@
 title: קנאה בין אחים: לגדל אחים ואחיות שאוהבים זה את זה
 description: חוכמה יהודית על מריבות בין אחים: למה התורה מזהירה מהעדפת ילד אחד, איך להתמודד עם מריבות, ואיך לעזור לאחים להיות חברים לכל החיים.
 category: Life cycle
-related: jewish-parenting, parents-and-teenagers, shalom-bayit, honoring-parents
+related: jewish-parenting, joseph-and-his-brothers, parents-and-teenagers, shalom-bayit, honoring-parents
 local: הורים בלאפייט, מוראגה, אורינדה והאיסט ביי יכולים לשוחח בפרטיות עם הרב ישראל או הרבנית ציפורה לבקובסקי: 925-384-7242.
 ---
 הסיפור הראשון בתורה על אחים הוא קין והבל; אחריו באים יצחק וישמעאל, יעקב ועשו, יוסף ואחיו. התורה לא מסתירה קנאה בין אחים. היא לומדת ממנה.

@@ -2,7 +2,7 @@
 title: Sibling Rivalry: Raising Brothers and Sisters Who Love Each Other
 description: Jewish wisdom on sibling fights: why the Torah warns against favoritism, how to handle fighting, and helping brothers and sisters become friends for life.
 category: Life cycle
-related: jewish-parenting, parents-and-teenagers, shalom-bayit, honoring-parents
+related: jewish-parenting, joseph-and-his-brothers, parents-and-teenagers, shalom-bayit, honoring-parents
 local: Parents in Lafayette, Moraga, Orinda and the East Bay can talk privately with Rabbi Yisroel or Rebbetzin Tzipora Labkowski: 925-384-7242.
 ---
 The Torah's first story about brothers is Cain and Abel; later come Isaac and Ishmael, Jacob and Esau, Joseph and his brothers. The Torah does not hide sibling rivalry. It teaches from it.

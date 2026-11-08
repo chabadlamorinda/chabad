@@ -2,7 +2,7 @@
 title: Losing a Husband or Wife: A Jewish Guide for the Days and the Year After
 description: When a husband or wife passes away: the first days, the year after, loneliness, practical help, holidays, grandchildren and the community's role.
 category: Mourning & remembrance
-related: mourning-journey, shiva, year-of-mourning, grief-during-the-holidays, feeling-lonely
+related: mourning-journey, remarriage, losing-a-child, shiva, year-of-mourning, grief-during-the-holidays, feeling-lonely
 local: If you have lost your husband or wife, Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here for you in Lafayette, Moraga and Orinda, day or night: 925-384-7242.
 ---
 There is no loss quite like this one. The person who shared your bed, your table, your decisions and your memories is gone, and the house is suddenly too quiet. Judaism does not rush you through this. It walks beside you, with a clear path for the first days, a rhythm for the first year, and a community that is meant to hold you up.

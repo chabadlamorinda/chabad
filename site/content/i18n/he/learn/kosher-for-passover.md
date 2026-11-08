@@ -2,7 +2,7 @@
 title: כשר לפסח: מה זה אומר ואיך מתכוננים
 description: מה הופך אוכל לכשר לפסח, הסבר על חמץ וקטניות, איך מכינים את המטבח, ולמה חשוב הכשר מיוחד לפסח.
 category: Kosher
-related: chametz, selling-your-chametz, matzah, passover-seder, kosher-kitchen
+related: chametz, passover-shopping-list, gluten-free-passover, kosher-medicine-and-vitamins, passover-cleaning, selling-your-chametz, matzah, passover-seder, kosher-kitchen
 local: מכרו את החמץ שלכם ב-chabadoflamorinda.com/forms/sell-chametz והזמינו מצות שמורה עבודת יד ב-chabadoflamorinda.com/forms/matzah, או התקשרו 925-384-7242.
 ---
 כשר לפסח הוא אוכל שאין בו חמץ, דגן שהחמיץ, ושיוצר בציוד נקי מחמץ. בשמונת ימי [פסח](/holidays/passover) אסור ליהודים לאכול חמץ ואפילו להחזיק אותו ברשותם, ולכן אוכל כשר רגיל של כל השנה אינו מספיק.

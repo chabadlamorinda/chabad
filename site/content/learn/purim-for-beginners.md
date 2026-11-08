@@ -2,7 +2,7 @@
 title: Purim for Beginners: The Story, the Megillah and the Four Mitzvahs
 description: New to Purim? The story of Esther and Haman in brief, what to expect at a Megillah reading, costumes, hamantaschen and the four mitzvahs of the day.
 category: Shabbat & holidays
-related: megillah, purim-in-lamorinda, parshat-zachor, adar, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, purim-for-kids
+related: megillah, purim-story, purim-in-lamorinda, parshat-zachor, adar, the-four-mitzvahs-of-purim, mishloach-manot, purim-costumes, purim-for-kids
 local: Families from Lafayette, Moraga and Orinda are welcome to hear the Megillah; no Hebrew needed. Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
 Purim is the joyful Jewish holiday that celebrates how the Jews of ancient Persia were saved from Haman's plan to destroy them. We hear the story of Esther read aloud, send gifts of food, give to the poor, and enjoy a festive meal, often in costume. It is one of the easiest and most fun holidays to join for the first time.

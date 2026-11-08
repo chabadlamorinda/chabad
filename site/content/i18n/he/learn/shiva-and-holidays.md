@@ -2,7 +2,7 @@
 title: שבעה וחגים: מה קורה כשחג או שבת חלים בזמן האבל
 description: האם חג מבטל שבעה? שבת נספרת אך האבלות הפומבית נפסקת; חגים גדולים מבטלים שבעה; חנוכה ופורים לא. התקשרו 925-384-7242.
 category: Mourning & remembrance
-related: shiva, sheloshim, grief-during-the-holidays, setting-up-a-shiva-house, kaddish
+related: shiva, mourners-and-celebrations, sheloshim, grief-during-the-holidays, setting-up-a-shiva-house, kaddish
 local: אם חג מתקרב, התקשרו מיד לרב לבקובסקי 925-384-7242. כל מצב שונה, ונעבור עליו יחד איתכם.
 ---
 שבת נספרת כאחד משבעת ימי השבעה, אך האבלות הפומבית נפסקת בה, וחג גדול (ראש השנה, יום כיפור, סוכות, פסח או שבועות) מבטל את שארית השבעה אם האבל כבר נהג קצת אבלות לפניו. חנוכה ופורים אינם מבטלים שבעה. מכיוון שכל מקרה תלוי ביום המדויק, אנא התקשרו לרב.

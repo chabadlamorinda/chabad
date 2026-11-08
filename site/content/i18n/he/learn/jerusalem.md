@@ -2,7 +2,7 @@
 title: ירושלים ביהדות: למה היא עיר הקודש
 description: למה ירושלים היא העיר הקדושה ביותר ביהדות, ההיסטוריה שלה מדוד המלך ועד בתי המקדש, ואיך יהודים זוכרים אותה בכל יום.
 category: Jewish ideas
-related: the-holy-temple, yom-yerushalayim, yom-haatzmaut, making-aliyah, western-wall, israel-and-the-jewish-people, moshiach
+related: the-holy-temple, king-david, yom-yerushalayim, yom-haatzmaut, making-aliyah, western-wall, israel-and-the-jewish-people, moshiach
 local: למדו עוד על ירושלים ועל ההיסטוריה היהודית בשיעורים של חב״ד למורינדה ב-chabadoflamorinda.com/programs/adult-education, או התקשרו 925-384-7242.
 ---
 ירושלים היא העיר הקדושה ביותר ביהדות, כי היא המקום שה׳ בחר בו לבית המקדש, המרכז הרוחני של עם ישראל. יותר משלושת אלפים שנה יהודים מתפללים לעבר ירושלים, מתאבלים על חורבנה ומתגעגעים לבניינה.
