@@ -2,7 +2,7 @@
 title: "Ханна и ее молитва: как она научила нас молиться от сердца"
 description: Кто такая Ханна в Библии? Ее безмолвная молитва в Шило, рождение Шмуэля и почему ее историю читают на Рош а-Шана и она определила Амиду.
 category: Prayer & Torah
-related: amidah, infertility-jewish-support, talking-to-g-d-in-your-own-words, rosh-hashanah-for-beginners, miriam
+related: amidah, seven-prophetesses, infertility-jewish-support, talking-to-g-d-in-your-own-words, rosh-hashanah-for-beginners, miriam
 local: Что-то лежит на сердце и хочется поговорить? Поговорите наедине с Равом или ребецн: /help/talk-to-the-rabbi или 925-384-7242.
 ---
 Ханна (Хана, חַנָּה) была женой Элканы и матерью пророка Шмуэля (Самуила). Ее искренняя безмолвная молитва о ребенке в Скинии в Шило - образец того, как евреи произносят [Амиду](/learn/amidah): тихо, шевеля губами, изливая сердце Б-гу. Ее историю читают на Рош а-Шана.

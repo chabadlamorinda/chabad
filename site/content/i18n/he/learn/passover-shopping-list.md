@@ -2,7 +2,7 @@
 title: קניות לפסח: מה צריך תווית כשר לפסח
 description: רשימת הקניות לפסח: אילו מאכלים צריכים תווית כשר לפסח, מה בסדר בלעדיה ומה קונים לסדר. עזרה מלפייט.
 category: Kosher
-related: kosher-for-passover, kosher-in-lamorinda, chametz, passover-seder, gluten-free-passover
+related: kosher-for-passover, kitniyot, kosher-in-lamorinda, chametz, passover-seder, gluten-free-passover
 local: לא בטוחים לגבי פריט ברשימה? התקשרו לרב לבקובסקי 925-384-7242 או הזמינו דרך בי קושר.
 ---
 בפסח, כל מזון ארוז או מעובד צריך תווית "כשר לפסח" מהימנה, ואילו פירות וירקות טריים וביצים אינם צריכים. קנו קודם מצות, יין ופריטי הסדר, ואחר כך עברו על שאר הרשימה פריט פריט, ושאלו את הרב על כל מה שלא ברור.

@@ -2,7 +2,7 @@
 title: The Gemach: Judaism's Interest-Free Loan Tradition
 description: What a gemach is, why lending without interest is a mitzvah, how free-loan funds for money, clothing and simcha items work, and how to start one.
 category: Jewish ideas
-related: ribbit, tzedakah, tzedakah-priorities, chesed, jewish-view-on-wealth
+related: ribbit, borrowing-and-lending, money-worries, tzedakah, tzedakah-priorities, chesed, jewish-view-on-wealth
 local: Thinking of starting a gemach, or in need of a quiet helping hand in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 In almost every Jewish community there is a quiet institution with no sign on the door. Someone keeps a fund and lends money to neighbors who need it, with no interest and no shame. Someone else keeps a closet of wedding gowns, a shelf of folding tables, a drawer of baby carriers, all lent for free. This is a **gemach**, one of the most beautiful ideas Judaism gave the world.

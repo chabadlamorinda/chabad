@@ -2,7 +2,7 @@
 title: "The Month of Nissan: The Jewish Month of Redemption, Spring and Passover"
 description: What is the month of Nissan? The first Jewish month: Passover, the twelve princes, the blessing on blossoming trees and what it teaches us.
 category: Shabbat & holidays
-related: blessing-on-blossoming-trees, passover-for-beginners, jewish-calendar, rosh-chodesh, iyar
+related: blessing-on-blossoming-trees, shabbat-hagadol, passover-for-beginners, jewish-calendar, rosh-chodesh, iyar
 local: Welcome the month of redemption with us. Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
 Nissan (נִיסָן) is the first month of the Jewish calendar and the month of redemption, when the Jewish people left Egypt. It falls in March or April, the Torah calls it "the month of spring" (Chodesh HaAviv), and it holds Passover, the blessing over blossoming trees and a special custom of reading about the twelve princes of Israel.

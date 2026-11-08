@@ -2,7 +2,7 @@
 title: זמירות שבת: שירה ליד שולחן השבת
 description: מהן זמירות, מתי שרים אותן, שירי שבת קלאסיים כמו יה ריבון וקה אכסוף, ניגוני חסידים, ואיך מתחילים לשיר בבית.
 category: Shabbat & holidays
-related: shalom-aleichem, chanukah-songs, niggun, eishet-chayil, shabbat-meals, melave-malka
+related: shalom-aleichem, lecha-dodi, chanukah-songs, niggun, eishet-chayil, shabbat-meals, melave-malka
 local: שמעו את השירים ליד שולחן ליל שבת של משפחת לבקובסקי בחב״ד למורינדה; אתם תמיד מוזמנים לסעודת ליל שבת. התקשרו 925-384-7242.
 ---
 זמירות הן השירים ששרים ליד השולחן בסעודות השבת. בין המנות, המשפחה והאורחים שרים יחד, בעברית ובארמית, על שמחת השבת, על חסדי ה' ועל התקווה לגאולה. השירה הופכת ארוחת ערב לסעודת שבת.

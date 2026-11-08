@@ -2,7 +2,7 @@
 title: The Mishnah: The Foundation of the Oral Torah
 description: What the Mishnah is, who wrote it down and why, its six orders, how it relates to the Talmud, and the custom of learning Mishnah for a loved one.
 category: Prayer & Torah
-related: talmud, torah, daily-torah-study, yahrzeit
+related: talmud, oral-torah, torah, daily-torah-study, yahrzeit
 local: Want to learn Mishnah, or arrange Mishnah study in memory of a loved one? Call Rabbi Labkowski at 925-384-7242.
 ---
 The Mishnah is the first written collection of the Oral Torah, the explanations and laws that G-d gave Moses at Sinai together with the Written Torah. It was compiled by Rabbi Yehudah HaNasi around the year 200 CE and is the foundation of the Talmud and all of Jewish law.

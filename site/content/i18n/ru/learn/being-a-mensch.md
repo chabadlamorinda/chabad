@@ -2,7 +2,7 @@
 title: Кто такой ментш? Как быть ментшем: повседневная еврейская порядочность
 description: Что значит ментш? Слово из идиша, идея Торы за ним и простая самопроверка для подростков, родителей и всех в Ламоринде.
 category: Jewish ideas
-related: ahavat-yisrael, raising-kind-children, pirkei-avot, chesed, love-jewish-view
+related: ahavat-yisrael, hurtful-words, raising-kind-children, pirkei-avot, chesed, love-jewish-view
 local: Воспитайте ментша: еврейская школа и детские программы развивают характер. См. /programs/hebrew-school или 925-384-7242.
 ---
 Ментш (מענטש, англ. mensch или mentsch) на идише это порядочный, внимательный, надёжный человек. Буквально слово значит «человек», и когда еврейский родитель говорит ребёнку «будь ментшем», он имеет в виду: будь добрым в душе, чего бы ты ни добился.

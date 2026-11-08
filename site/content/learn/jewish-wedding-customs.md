@@ -2,7 +2,7 @@
 title: Jewish Wedding Customs and Traditions Explained
 description: The meaning of Jewish wedding customs: the aufruf, fasting, bedeken, chuppah, circling, ring, ketubah, breaking the glass, yichud and more.
 category: Life cycle
-related: jewish-wedding, attending-a-jewish-wedding, sheva-brachot, jewish-dating, mikvah
+related: jewish-wedding, aufruf, attending-a-jewish-wedding, sheva-brachot, jewish-dating, mikvah
 local: Planning a Jewish wedding? Rabbi Labkowski is glad to help. See chabadoflamorinda.com/help/getting-married or call 925-384-7242.
 ---
 Jewish wedding customs, from the veiling of the bride to the breaking of the glass, each carry a deep meaning about love, commitment and building a Jewish home. This guide explains the most common traditions, in the order they usually happen. For the core ceremony and its laws, see our main [Jewish wedding](/learn/jewish-wedding) guide.

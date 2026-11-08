@@ -2,7 +2,7 @@
 title: "Hannah and Her Prayer: How She Taught Us to Pray From the Heart"
 description: Who was Hannah in the Bible? Her silent prayer at Shiloh, the birth of Samuel and why her story is read on Rosh Hashanah and shapes the Amidah.
 category: Prayer & Torah
-related: amidah, infertility-jewish-support, talking-to-g-d-in-your-own-words, rosh-hashanah-for-beginners, miriam
+related: amidah, seven-prophetesses, infertility-jewish-support, talking-to-g-d-in-your-own-words, rosh-hashanah-for-beginners, miriam
 local: Longing for something and want to talk? Speak privately with the Rabbi or Rebbetzin: /help/talk-to-the-rabbi or 925-384-7242.
 ---
 Hannah (Chanah, חַנָּה) was the wife of Elkanah and the mother of the prophet Samuel. Her heartfelt, silent prayer for a child at the Tabernacle in Shiloh is the model for how Jews pray the [Amidah](/learn/amidah): quietly, with moving lips, pouring out the heart to G-d. Her story is read on Rosh Hashanah.

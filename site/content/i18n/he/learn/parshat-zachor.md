@@ -2,7 +2,7 @@
 title: פרשת זכור וארבע השבתות המיוחדות שלפני פסח
 description: מהי פרשת זכור? השבת שלפני פורים, הקריאה לזכור את עמלק, וארבע הקריאות המיוחדות: שקלים, זכור, פרה, החודש.
 category: Shabbat & holidays
-related: purim-for-beginners, torah-reading, fast-of-esther, adar, hamantaschen
+related: purim-for-beginners, the-four-parshiyot, torah-reading, fast-of-esther, adar, hamantaschen
 local: בואו לתפילות שבת בלפאייט לפרשת זכור: התקשרו לרב ישראל לבקובסקי, 925-384-7242, לזמנים ולשמוע מה מתוכנן.
 ---
 פרשת זכור היא קריאת התורה המיוחדת בשבת שלפני פורים, שבה נצטווינו "לזכור" מה עשה עמלק לעם ישראל ולמחות את זכרו. לפי פוסקים רבים יש חובה מן התורה לגברים לשמוע קריאה זו, ולכן כל כך הרבה אנשים באים לבית הכנסת באותה שבת.

@@ -2,7 +2,7 @@
 title: Молодые евреи в Лафайетте, Мораге и Оринде: Шабат, уроки и друзья
 description: Вам от 20 до 40 и вы живете в Лафайетте, Мораге или Оринде? Шабатние ужины, вечерние уроки, праздники и волонтерство в Хабаде Ламоринды.
 category: Lamorinda
-related: shabbat-meals, jewish-dating, torah-classes-in-lamorinda, volunteering-in-lamorinda
+related: shabbat-meals, job-burnout, jewish-dating, torah-classes-in-lamorinda, volunteering-in-lamorinda
 local: Приходите на шабатний ужин: запишитесь на chabadoflamorinda.com/forms/shabbat-meal или звоните 925-384-7242.
 ---
 Вы переехали в Ламоринду ради холмов, школ или удобной дороги на работу, а может быть, выросли здесь и вернулись. Так или иначе, если вы еврей, вам от 20 до 40, вы свободны или в паре, Хабад Ламоринды в Лафайетте - место, где можно найти Шабат, хороший разговор и друзей. Никакого членства и никаких взносов. Просто приходите.

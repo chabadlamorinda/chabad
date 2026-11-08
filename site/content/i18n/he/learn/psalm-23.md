@@ -2,7 +2,7 @@
 title: 'תהילים כ"ג (מזמור לדוד): משמעות ושימוש בחיים היהודיים'
 description: מזמור כ"ג, "ה' רועי", פסוק אחר פסוק: מה התכוון דוד המלך, מתי יהודים אומרים אותו, ואיך הוא מנחם. שאלו אותנו על תהילים.
 category: Prayer & Torah
-related: tehillim, bitachon, hope-in-hard-times, king-david, praying-for-others
+related: tehillim, psalm-91, bitachon, hope-in-hard-times, king-david, praying-for-others
 local: רוצים שיאמרו תהילים עבור מישהו, או רגע של נחמה? התקשרו לרב לבקובסקי 925-384-7242 או בקרו ב-/help/talk-to-the-rabbi.
 ---
 מזמור כ"ג בתהילים ("מִזְמוֹר לְדָוִד") הוא שיר קצר של ביטחון, שבו דוד המלך מתאר את ה' כרועה שלו, המספק, מנחה ומגן עליו. יהודים פונים אליו בעת דאגה, מחלה ואבל, ורבים שרים אותו בשולחן השבת.

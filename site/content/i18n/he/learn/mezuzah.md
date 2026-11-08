@@ -2,7 +2,7 @@
 title: מזוזה: מה היא ואיך קובעים אותה
 description: מהי מזוזה, איפה ואיך קובעים אותה, נוסח הברכה ואיך מוודאים שקלף המזוזה שלכם כשר.
 category: Jewish home
-related: shema, mezuzah-questions, checking-mezuzahs-and-tefillin, moving-to-lamorinda, kosher-kitchen, tefillin, blessings
+related: shema, a-jewish-childs-bedroom, mezuzah-questions, checking-mezuzahs-and-tefillin, moving-to-lamorinda, kosher-kitchen, tefillin, blessings
 local: נעזור לכם לקנות מזוזה כשרה, לבדוק את המזוזות שלכם ולקבוע אותן בברכה. התקשרו 925-384-7242.
 ---
 מזוזה היא קלף קטן בכתב יד שכתובה בו פרשת שמע, וקובעים אותה על מזוזות הפתחים בבית יהודי. היא מסמנת את הבית כמרחב יהודי, וכפי שמלמדת המסורת היהודית, מביאה את שמירת ה׳ לכל מי שבתוכו.

@@ -2,7 +2,7 @@
 title: Цфат (Цфат, Сафед): посещение города Каббалы в Израиле
 description: Почему Цфат — город Каббалы: Ари, рабби Йосеф Каро, Леха доди, голубые двери и старое кладбище. Путеводитель для вашей поездки в Израиль.
 category: Jewish ideas
-related: first-trip-to-israel, kabbalah, kabbalat-shabbat, western-wall, israel-and-the-jewish-people
+related: first-trip-to-israel, lecha-dodi, kabbalah, kabbalat-shabbat, western-wall, israel-and-the-jewish-people
 local: Планируете поездку в Израиль? Позвоните раввину Лабковскому 925-384-7242 за советом перед поездкой.
 ---
 Цфат, также Сафед (צפת), — город в горах на севере Израиля и один из четырёх святых городов вместе с Иерусалимом, Хевроном и Тверией. Его называют городом Каббалы, потому что великие мистики XVI века жили, учили и похоронены здесь.

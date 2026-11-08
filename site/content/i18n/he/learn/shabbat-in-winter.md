@@ -2,7 +2,7 @@
 title: שבת בחורף: להתכונן כשיום שישי קצר
 description: כששבת נכנסת ב-4:30 ביום שישי בחורף: תכנון מראש, בישול, יציאה מוקדמת מהעבודה, ילדים ושמירת האוכל חם, עם טיפים מעשיים.
 category: Shabbat & holidays
-related: shabbat-for-beginners, shabbat-candles, shabbat-meals, shabbat-practical-questions
+related: shabbat-for-beginners, zmanim-explained, shabbat-candles, shabbat-meals, shabbat-practical-questions
 local: זמן הדלקת הנרות של השבוע ללאפייט, מוראגה ואורינדה נמצא ב-chabadoflamorinda.com/shabbat. שאלות? התקשרו לרב ישראל לבקובסקי 925-384-7242.
 ---
 כשמזיזים את השעון אחורה בנובמבר, השבת פתאום מגיעה מוקדם. באזור המפרץ, הדלקת הנרות ביום שישי בדצמבר יכולה להיות כבר בסביבות 4:30 אחר הצהריים. עם קצת תכנון, ימי שישי הקצרים יכולים להיות רגועים, וליל שבת הארוך הופך לאחת המתנות הטובות ביותר של החורף.

@@ -2,7 +2,7 @@
 title: Passover Shopping: What Needs a Kosher-for-Passover Label
 description: Your Passover shopping list: which foods need a Kosher for Passover label, what is fine without one, and what to buy for the Seder. Help from Lafayette.
 category: Kosher
-related: kosher-for-passover, kosher-in-lamorinda, chametz, passover-seder, gluten-free-passover
+related: kosher-for-passover, kitniyot, kosher-in-lamorinda, chametz, passover-seder, gluten-free-passover
 local: Not sure about an item on your list? Call Rabbi Labkowski at 925-384-7242 or order through Bay Kosher.
 ---
 For Passover, any packaged or processed food needs a reliable "Kosher for Passover" label, while fresh fruit and vegetables, and eggs, need none. Buy your matzah, wine and Seder items first, then check the rest of your list item by item, and ask the Rabbi about anything you are unsure of.

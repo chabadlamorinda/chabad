@@ -2,7 +2,7 @@
 title: What Is the Torah? A Simple Guide to the Jewish Bible
 description: What the Torah is, the Five Books of Moses, the Written and Oral Torah, how a Torah scroll is made, and the weekly portion.
 category: Prayer & Torah
-related: talmud, midrash, moses, simchat-torah-for-beginners, tanach, 613-mitzvot, hebrew-alphabet, prayer
+related: talmud, book-of-genesis, midrash, moses, simchat-torah-for-beginners, tanach, 613-mitzvot, hebrew-alphabet, prayer
 local: Want to learn Torah in a relaxed, friendly setting? Call Rabbi Labkowski at 925-384-7242 or check our events page, and we will find a way to learn together.
 ---
 The Torah is G-d's teaching to the Jewish people, given to Moses at Mount Sinai over 3,300 years ago. In its narrowest sense it means the Five Books of Moses, and in its widest sense it includes all of Jewish teaching, from the Bible to the Talmud to the wisdom of today's sages.

@@ -2,7 +2,7 @@
 title: "\"האדם עץ השדה\": מה מלמד אותנו ט\"ו בשבט על צמיחה"
 description: למה התורה משווה אדם לעץ: שורשים, צמיחה ופרי. הרהור לט"ו בשבט לכל מי שרוצה לצמוח, גם בעונת חורף שקטה.
 category: Jewish ideas
-related: tu-bishvat-seder, seven-species, shevat, blessing-on-blossoming-trees, humility
+related: tu-bishvat-seder, tu-bishvat-for-kids, seven-species, shevat, blessing-on-blossoming-trees, humility
 local: בואו לחגוג איתנו ט"ו בשבט וללמוד. ראו /events או התקשרו 925-384-7242 ושמעו מה מתוכנן.
 ---
 "כִּי הָאָדָם עֵץ הַשָּׂדֶה" אומרת התורה (דברים כ:יט), וט"ו בשבט הוא "ראש השנה לאילנות" והיום לשאול מה זה אומר. לעץ יש שורשים, הוא גדל, וקיים כדי לשאת פרי ובו זרעים חדשים; גם אדם נועד להיות מושרש, לצמוח וליצור מעשים טובים שמעוררים עוד טוב.

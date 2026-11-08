@@ -2,7 +2,7 @@
 title: The Haggadah: What It Is, How to Read It and Choosing One
 description: What is a Haggadah? What is inside, how to read it at the Seder with guests and kids, and how to choose one with Hebrew, English or Russian.
 category: Shabbat & holidays
-related: passover-seder, seder-songs, four-questions, passover-with-kids, seder-plate, four-cups
+related: passover-seder, ten-plagues, seder-songs, four-questions, passover-with-kids, seder-plate, four-cups
 local: Join the Passover Seder at Chabad of Lamorinda or ask which Haggadah suits your family; call Rabbi Yisroel Labkowski at 925-384-7242, or see /forms/matzah.
 ---
 The Haggadah (הַגָּדָה, "telling") is the book we read at the Passover Seder to tell the story of the Exodus from Egypt, in a set order that includes the Four Questions, the four sons, the ten plagues, Dayenu, the blessings over matzah and bitter herbs, and Hallel. It guides the whole night, so the right edition can make the Seder a joy for Jewish families in Lafayette, Moraga and Orinda, whatever their background.

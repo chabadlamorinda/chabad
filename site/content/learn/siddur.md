@@ -2,7 +2,7 @@
 title: The Siddur: A Guide to the Jewish Prayer Book
 description: What the siddur is, how it is organized, where its prayers come from, which siddur Chabad uses, and tips for praying from it for the first time.
 category: Prayer & Torah
-related: prayer, shacharit-morning-service, what-is-a-synagogue, amidah, shema, modeh-ani
+related: prayer, adon-olam, shacharit-morning-service, what-is-a-synagogue, amidah, shema, modeh-ani
 local: Want a siddur of your own or a personal lesson on how to use it? Call Rabbi Labkowski at 925-384-7242.
 ---
 The siddur is the Jewish prayer book, containing the daily, Shabbat and holiday prayers in their set order. Its name comes from the Hebrew word seder, "order," because it arranges our conversation with G-d into a clear daily path.

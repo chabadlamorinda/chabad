@@ -66,4 +66,4 @@ Call 925-384-7242 or use [talk to the Rabbi](/help/talk-to-the-rabbi). Rabbi Lab
 - Call or message us at [talk to the Rabbi](/help/talk-to-the-rabbi). You do not need to know the right words.
 - Read about the [year of mourning](/learn/year-of-mourning) and [the unveiling](/learn/unveiling).
 - Ask about remembering your parent at Yizkor: [Yizkor](/forms/yizkor).
-- If your relationship with your parent was complicated, read [Mourning a Parent You Had a Hard Relationship With](/learn/mourning-a-difficult-parent).
+- If your relationship with your parent was complicated, read Mourning a Parent You Had a Hard Relationship With.

@@ -2,7 +2,7 @@
 title: Blessing Your Children on Friday Night
 description: How and why Jewish parents bless their children every Friday night: the words for sons and daughters, the Priestly Blessing, and making it your own.
 category: Jewish home
-related: shabbat-with-kids, erev-yom-kippur, yom-kippur-with-kids, the-matriarchs, grandparenting-from-afar, birkat-kohanim, kabbalat-shabbat, jewish-parenting
+related: shabbat-with-kids, ephraim-and-menashe, erev-yom-kippur, yom-kippur-with-kids, the-matriarchs, grandparenting-from-afar, birkat-kohanim, kabbalat-shabbat, jewish-parenting
 local: Want to see it done? Come for a Friday night Shabbat dinner with the Rabbi's family at Chabad of Lamorinda in Lafayette; call 925-384-7242.
 ---
 One of the most beautiful moments of the Jewish week takes less than a minute. On Friday night, before Kiddush, parents place their hands on each child's head and bless them. Children who grow up with it remember it for the rest of their lives, and many keep calling home for a blessing even as adults.

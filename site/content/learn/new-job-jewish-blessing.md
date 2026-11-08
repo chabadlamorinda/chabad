@@ -2,7 +2,7 @@
 title: Starting a New Job or Business: A Jewish Guide to Beginning Well
 description: Jewish wisdom for a new job or business: prayer and trust in G-d, tzedakah from your first earnings, honesty, Shabbat and holidays at work, and a mezuzah.
 category: Jewish ideas
-related: parnassah-work-and-livelihood, bitachon, maaser, business-ethics, jewish-holidays-at-school-and-work
+related: parnassah-work-and-livelihood, losing-a-job, bitachon, maaser, business-ethics, jewish-holidays-at-school-and-work
 local: Starting something new in Lafayette, Moraga or Orinda? Rabbi Yisroel Labkowski would be glad to wish you well and to affix a mezuzah at your office: 925-384-7242.
 ---
 A first day at a new job, the keys to a new office, a business you built from an idea: these are moments of hope and a little nervousness. Judaism has a way of beginning things well. Here is a simple plan for starting your new work with blessing.

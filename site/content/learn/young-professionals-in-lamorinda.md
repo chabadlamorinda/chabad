@@ -2,7 +2,7 @@
 title: Young Jewish Professionals in Lafayette, Moraga and Orinda: Shabbat, Classes and Friends
 description: Jewish, in your 20s or 30s, in Lafayette, Moraga or Orinda? Shabbat dinners, evening classes, holidays and volunteering with Chabad of Lamorinda.
 category: Lamorinda
-related: shabbat-meals, jewish-dating, torah-classes-in-lamorinda, volunteering-in-lamorinda
+related: shabbat-meals, job-burnout, jewish-dating, torah-classes-in-lamorinda, volunteering-in-lamorinda
 local: Come for Shabbat dinner: RSVP at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 You moved to Lamorinda for the hills, the schools or the commute, or maybe you grew up here and came back. Either way, if you are Jewish and in your 20s or 30s, single or a couple, Chabad of Lamorinda in Lafayette is a place to find Shabbat, good conversation and friends. There is no membership and no dues. Just come.

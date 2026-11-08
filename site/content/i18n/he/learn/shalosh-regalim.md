@@ -2,7 +2,7 @@
 title: "שלוש הרגלים: פסח, שבועות וסוכות"
 description: שלוש הרגלים, פסח שבועות וסוכות, מוסברים: מה כל חג מציין ולמה עלו לירושלים. הצטרפו לחב"ד לאמורינדה.
 category: Shabbat & holidays
-related: passover-for-beginners, shavuot-for-beginners, sukkot-for-beginners, the-holy-temple, yizkor
+related: passover-for-beginners, hallel, shavuot-for-beginners, sukkot-for-beginners, the-holy-temple, yizkor
 local: חוגגים את החגים עם חברים: ראו /events או התקשרו לחב"ד לאמורינדה 925-384-7242.
 ---
 שלוש הרגלים (שָׁלֹשׁ רְגָלִים) הם פסח, שבועות וסוכות, שלושת החגים שבהם התורה מצווה לעלות לירושלים ולשמוח בבית המקדש. הם מציינים חירות, מתן תורה ואסיף התבואה, ובימינו כל אחד מהם נחגג בתפילות מיוחדות ובשמחה.

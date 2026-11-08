@@ -2,7 +2,7 @@
 title: עבודה חדשה או עסק חדש: מדריך יהודי להתחלה טובה
 description: חוכמה יהודית לעבודה או עסק חדשים: תפילה וביטחון בה׳, צדקה מהרווחים הראשונים, יושר, שבת וחגים בעבודה, ומזוזה.
 category: Jewish ideas
-related: parnassah-work-and-livelihood, bitachon, maaser, business-ethics, jewish-holidays-at-school-and-work
+related: parnassah-work-and-livelihood, losing-a-job, bitachon, maaser, business-ethics, jewish-holidays-at-school-and-work
 local: מתחילים משהו חדש בלאפייט, מוראגה או אורינדה? הרב ישראל לבקובסקי ישמח לאחל לכם הצלחה ולקבוע מזוזה במשרד שלכם: 925-384-7242.
 ---
 יום ראשון בעבודה חדשה, מפתחות למשרד חדש, עסק שבניתם מרעיון: אלה רגעים של תקווה ומעט התרגשות. ליהדות יש דרך להתחיל דברים כמו שצריך. הנה תוכנית פשוטה להתחיל את העבודה החדשה שלכם בברכה.

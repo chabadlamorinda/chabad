@@ -2,7 +2,7 @@
 title: Shabbat in the Winter: Getting Ready When Friday Is Short
 description: When Shabbat starts at 4:30 on a winter Friday: planning ahead, cooking, leaving work early, kids, and keeping food warm, with practical tips.
 category: Shabbat & holidays
-related: shabbat-for-beginners, shabbat-candles, shabbat-meals, shabbat-practical-questions
+related: shabbat-for-beginners, zmanim-explained, shabbat-candles, shabbat-meals, shabbat-practical-questions
 local: This week's candle lighting for Lafayette, Moraga and Orinda is on chabadoflamorinda.com/shabbat. Questions? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 When the clocks go back in November, Shabbat suddenly comes early. In the Bay Area, candle lighting on a December Friday can be as early as about 4:30 PM. With a little planning, short Fridays can be calm and the long Friday nights become one of winter's best gifts.

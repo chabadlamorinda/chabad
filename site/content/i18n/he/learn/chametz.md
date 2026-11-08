@@ -2,7 +2,7 @@
 title: חמץ: מה הוא ואיך נפטרים ממנו לפני פסח
 description: מה נחשב חמץ, למה הוא אסור בפסח, ואיך מנקים, בודקים, מוכרים ושורפים את החמץ שלב אחר שלב לפני החג.
 category: Shabbat & holidays
-related: matzah, passover-shopping-list, passover-cleaning, passover-for-beginners, selling-your-chametz, passover-seder, kosher-kitchen, kosher
+related: matzah, kitniyot, passover-shopping-list, passover-cleaning, passover-for-beginners, selling-your-chametz, passover-seder, kosher-kitchen, kosher
 local: מכרו את החמץ שלכם באינטרנט ב-chabadoflamorinda.com/forms/sell-chametz, או התקשרו 925-384-7242 עם כל שאלה על פסח.
 ---
 חמץ הוא כל מאכל העשוי מחיטה, שעורה, שיפון, שיבולת שועל או כוסמין שהחמיץ במגע עם מים יותר מ-18 דקות. בפסח אסור ליהודים לאכול חמץ, להחזיק בו או ליהנות ממנו, ולכן לפני החג מנקים אותו, בודקים אחריו, מוכרים אותו ושורפים אותו.

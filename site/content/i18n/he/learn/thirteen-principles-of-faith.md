@@ -2,7 +2,7 @@
 title: במה מאמינים יהודים? שלושה עשר עיקרי האמונה של הרמב"ם
 description: במה מאמינים יהודים? שלושה עשר עיקרי האמונה של הרמב"ם במילים פשוטות, היכן הם בסידור, ואיך ללמוד עוד. שאלות תמיד מתקבלות בברכה.
 category: Jewish ideas
-related: belief-in-g-d, maimonides, why-be-jewish, moshiach, siddur
+related: belief-in-g-d, resurrection-of-the-dead, maimonides, why-be-jewish, moshiach, siddur
 local: רוצים לברר במה אתם מאמינים? הצטרפו לשיעור תורה עם הרב לבקובסקי (/programs/adult-education), או התקשרו 925-384-7242.
 ---
 יהודים מאמינים בה' אחד שברא ומנהיג את העולם, שנתן את התורה בסיני ושיביא את המשיח. הרמב"ם (1138 עד 1204) אסף את אמונות היסוד האלה בשלושה עשר עיקרים שיהודים בכל העולם שרים ואומרים בסידור.

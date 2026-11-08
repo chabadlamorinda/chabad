@@ -2,7 +2,7 @@
 title: "Двенадцать колен Израиля: имена, значение и как узнать свое"
 description: Имена 12 колен Израиля, сыновей Яакова, что значат Леви и Иегуда сегодня, десять потерянных колен и как узнать свое колено.
 category: Prayer & Torah
-related: kohen-levi-yisrael, joseph-and-his-brothers, jacob-our-father, israel-and-the-jewish-people, the-matriarchs
+related: kohen-levi-yisrael, ten-lost-tribes, ephraim-and-menashe, joseph-and-his-brothers, jacob-our-father, israel-and-the-jewish-people, the-matriarchs
 local: Не уверены, кохен вы, леви или исраэль? Спросите Рава: 925-384-7242 или /help/talk-to-the-rabbi.
 ---
 Двенадцать колен Израиля происходят от двенадцати сыновей Яакова: Реувена, Шимона, Леви, Иегуды, Иссахара, Звулуна, Дана, Нафтали, Гада, Ашера, Иосифа и Биньямина. Сегодня почти каждый еврей принадлежит к еврейскому народу, а еврейская семья обычно знает лишь, кохены они, левиты или исраэли.

@@ -2,7 +2,7 @@
 title: מי הוא אליהו הנביא? כוס אליהו, פתיחת הדלת והברית
 description: מי הוא אליהו הנביא, למה מוזגים כוס אליהו ופותחים את הדלת בסדר, למה יש כיסא בברית, ולמה הוא יבשר את בוא המשיח.
 category: Prayer & Torah
-related: passover-seder, what-is-a-prophet, brit-milah, havdalah, moshiach, moses
+related: passover-seder, shabbat-hagadol, what-is-a-prophet, brit-milah, havdalah, moshiach, moses
 local: מתכננים סדר או ברית? נשמח לעזור. ראו /forms/matzah או התקשרו לרב לבקובסקי 925-384-7242.
 ---
 אליהו הנביא היה נביא מקראי שלפי המסורת לא מת אלא עלה השמיימה, ושישוב לבשר את בוא המשיח. משפחות יהודיות זוכרות אותו בכוס אליהו ובפתיחת הדלת בליל הסדר, בכיסא בברית ובשיר בצאת השבת.

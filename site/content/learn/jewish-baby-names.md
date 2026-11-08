@@ -2,7 +2,7 @@
 title: Jewish Baby Names: How to Choose a Hebrew Name for Your Baby
 description: How Jewish parents choose a baby name, naming after relatives, Ashkenazi and Sephardic customs, popular Hebrew names and their meanings.
 category: Life cycle
-related: baby-naming, preparing-for-a-bris, simchat-bat, jewish-adoption, hebrew-names, brit-milah, jewish-pregnancy
+related: baby-naming, sandek-and-kvater, preparing-for-a-bris, simchat-bat, jewish-adoption, hebrew-names, brit-milah, jewish-pregnancy
 local: Expecting a baby? Call Rabbi Labkowski at 925-384-7242 to talk through a Hebrew name, or see chabadoflamorinda.com/help/new-baby for how we can help.
 ---
 Jewish parents usually choose a Hebrew name that honors a beloved relative or a great figure from Jewish history, and that carries a meaning they hope their child will grow into. Jewish tradition teaches that parents receive a spark of prophecy when they name a child, so the name is more than a label: it is connected to the child's soul.

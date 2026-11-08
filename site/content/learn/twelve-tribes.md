@@ -2,7 +2,7 @@
 title: "The Twelve Tribes of Israel: Names, Meaning and Which One Is Yours"
 description: The names of the 12 tribes of Israel, the sons of Jacob, what Levi and Judah mean today, the ten lost tribes and how to learn your own tribe.
 category: Prayer & Torah
-related: kohen-levi-yisrael, joseph-and-his-brothers, jacob-our-father, israel-and-the-jewish-people, the-matriarchs
+related: kohen-levi-yisrael, ten-lost-tribes, ephraim-and-menashe, joseph-and-his-brothers, jacob-our-father, israel-and-the-jewish-people, the-matriarchs
 local: Not sure if you are a Kohen, Levi or Israelite? Ask the Rabbi: 925-384-7242 or /help/talk-to-the-rabbi.
 ---
 The twelve tribes of Israel descend from the twelve sons of Jacob: Reuben, Simeon, Levi, Judah, Issachar, Zebulun, Dan, Naphtali, Gad, Asher, Joseph and Benjamin. Today almost every Jew is a member of the Jewish people, and a Jewish family often knows only whether it is Kohen, Levi or Yisrael.

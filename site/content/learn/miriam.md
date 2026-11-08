@@ -2,7 +2,7 @@
 title: "Miriam the Prophetess: Who She Was, Her Song at the Sea and Her Well"
 description: Who was Miriam in the Bible? Moses's sister, a prophetess who watched over him at the Nile, led the women's song at the sea and brought the well.
 category: Prayer & Torah
-related: jewish-women, shabbat-shirah, moses, aaron-the-high-priest, hannah-and-her-prayer
+related: jewish-women, deborah, shabbat-shirah, moses, aaron-the-high-priest, hannah-and-her-prayer
 local: Women and girls are warmly invited to learn and celebrate together. See /programs/womens-circle or call 925-384-7242.
 ---
 Miriam (מִרְיָם) was the older sister of Moses and Aaron, one of the seven prophetesses of the Jewish people. She watched over baby [Moses](/learn/moses) in the Nile, led the women in song and dance after the splitting of the Red Sea, and, according to our Sages, the miraculous well that gave the Jews water in the desert was in her merit.

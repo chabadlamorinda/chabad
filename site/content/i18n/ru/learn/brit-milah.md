@@ -2,7 +2,7 @@
 title: Брит-мила: простое руководство по еврейскому обрезанию
 description: Что такое брит, почему его делают на восьмой день, кто в нем участвует и чего ожидать на церемонии еврейского обрезания.
 category: Life cycle
-related: baby-naming, elijah-the-prophet, abraham-and-sarah, shalom-zachar, adult-brit-milah, preparing-for-a-bris, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
+related: baby-naming, sandek-and-kvater, elijah-the-prophet, abraham-and-sarah, shalom-zachar, adult-brit-milah, preparing-for-a-bris, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
 local: Ждете мальчика? Позвоните раввину Лабковскому по номеру 925-384-7242, и мы поможем спланировать красивый брит и праздник после него.
 ---
 Брит-мила (часто ее называют просто брит) - это еврейская церемония обрезания, которую совершают над мальчиком на восьмой день его жизни. Она знаменует его вступление в союз, который Б-г заключил с Авраамом, и это одна из древнейших и самых широко соблюдаемых традиций еврейской жизни.

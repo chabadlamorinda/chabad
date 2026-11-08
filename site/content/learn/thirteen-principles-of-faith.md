@@ -2,7 +2,7 @@
 title: What Do Jews Believe? Maimonides' 13 Principles of Faith
 description: What do Jews believe? Maimonides' 13 Principles of Faith in plain words, where they appear in the siddur, and how to learn more. Questions welcome.
 category: Jewish ideas
-related: belief-in-g-d, maimonides, why-be-jewish, moshiach, siddur
+related: belief-in-g-d, resurrection-of-the-dead, maimonides, why-be-jewish, moshiach, siddur
 local: Want to explore what you believe? Join a Torah class with Rabbi Labkowski (/programs/adult-education), or call 925-384-7242.
 ---
 Jews believe in one G-d who created and runs the world, who gave the Torah at Sinai, and who will bring Moshiach. Maimonides (the Rambam, 1138 to 1204) gathered these core beliefs into thirteen principles, which Jews around the world sing and say in the siddur.

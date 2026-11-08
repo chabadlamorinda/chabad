@@ -2,7 +2,7 @@
 title: צפת: ביקור בעיר הקבלה בישראל
 description: למה צפת היא עיר הקבלה: האר"י, רבי יוסף קארו, לכה דודי, הדלתות הכחולות ובית הקברות הישן. מדריך לטיול שלכם בישראל.
 category: Jewish ideas
-related: first-trip-to-israel, kabbalah, kabbalat-shabbat, western-wall, israel-and-the-jewish-people
+related: first-trip-to-israel, lecha-dodi, kabbalah, kabbalat-shabbat, western-wall, israel-and-the-jewish-people
 local: מתכננים טיול לישראל? התקשרו לרב לבקובסקי 925-384-7242 לעצה לפני שאתם נוסעים.
 ---
 צפת היא עיר בהרים בצפון ישראל ואחת מארבע הערים הקדושות, יחד עם ירושלים, חברון וטבריה. היא ידועה כעיר הקבלה משום שגדולי המקובלים של המאה ה-16 חיו, לימדו ונקברו בה.

@@ -2,7 +2,7 @@
 title: Chol HaMoed: The In-Between Days of Passover and Sukkot
 description: What is Chol HaMoed? What is allowed and what to avoid on the in-between days of Passover and Sukkot, from work and driving to haircuts and outings.
 category: Shabbat & holidays
-related: passover-for-beginners, sukkot-for-beginners, hoshana-rabbah, passover-with-kids, sukkot-with-kids
+related: passover-for-beginners, song-of-songs, sukkot-for-beginners, hoshana-rabbah, passover-with-kids, sukkot-with-kids
 local: Ask about work, travel and family plans on Chol HaMoed, or join us for the holiday; call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned.
 ---
 Chol HaMoed (חוֹל הַמּוֹעֵד, "the weekday of the festival") are the in-between days of Passover and Sukkot, between the first and last days of each holiday: they are still part of the holiday, but are not full Yom Tov days, so ordinary activities like driving and cooking are allowed while non-essential work is avoided. It is half holiday, half weekday, a time for family, outings and festive meals.

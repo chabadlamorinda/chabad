@@ -2,7 +2,7 @@
 title: "What Is a Prophet in Judaism? The Prophets and Their Books"
 description: What is a prophet in Judaism? The 48 prophets, seven prophetesses, the books of Nevi'im and the Haftarah explained. Ask Chabad of Lamorinda.
 category: Prayer & Torah
-related: tanach, haftarah, elijah-the-prophet, moses, miriam
+related: tanach, jeremiah, joshua, haftarah, elijah-the-prophet, moses, miriam
 local: Curious about the prophets? Join a Torah class: see /programs/adult-education or call 925-384-7242.
 ---
 A prophet (navi, נָבִיא) in Judaism is a person chosen by G-d to deliver a message to the Jewish people: to guide them, rebuke them when they go astray and comfort them in hard times. Prophecy is not fortune-telling. The Talmud counts 48 prophets and seven prophetesses whose messages were meant for all generations, and the greatest of all was Moses.

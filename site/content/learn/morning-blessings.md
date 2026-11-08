@@ -2,7 +2,7 @@
 title: The Morning Blessings: Starting the Day With Thanks
 description: The morning blessings (Birchot HaShachar): what they are, what they say, and how to begin saying them, from Modeh Ani to the blessings over Torah.
 category: Prayer & Torah
-related: modeh-ani, shacharit-morning-service, ashrei, netilat-yadayim, asher-yatzar, daily-prayers, jewish-morning-routine
+related: modeh-ani, adon-olam, shacharit-morning-service, ashrei, netilat-yadayim, asher-yatzar, daily-prayers, jewish-morning-routine
 local: Want to learn the morning blessings with someone? Join our weekday morning minyan in Lafayette or call the Rabbi at 925-384-7242.
 ---
 Before coffee, before the phone, before the news: Jewish tradition begins the day with a short series of thank-yous called **Birchot HaShachar**, the morning blessings. They take a few minutes and change how the whole day feels.

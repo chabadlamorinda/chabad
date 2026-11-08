@@ -2,7 +2,7 @@
 title: "\"A Person Is Like a Tree\": What Tu BiShvat Teaches About Growing"
 description: Why the Torah compares a person to a tree: roots, growth and fruit. A Tu BiShvat reflection for anyone who wants to grow, even in a quiet winter season.
 category: Jewish ideas
-related: tu-bishvat-seder, seven-species, shevat, blessing-on-blossoming-trees, humility
+related: tu-bishvat-seder, tu-bishvat-for-kids, seven-species, shevat, blessing-on-blossoming-trees, humility
 local: Come celebrate Tu BiShvat and learn with us. See /events or call 925-384-7242 to hear what is planned.
 ---
 "A person is a tree of the field," says the Torah (Deuteronomy 20:19), and Tu BiShvat, the 15th of Shevat, is the "new year for trees" and the day to ask what that means. A tree has roots, grows, and exists to bear fruit that holds new seeds; a person, too, is meant to be rooted, to grow and to produce good deeds that inspire more good.

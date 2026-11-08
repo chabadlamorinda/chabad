@@ -2,7 +2,7 @@
 title: הריון ביהדות: מנהגים, תפילות והכנה ללידה
 description: מנהגים יהודיים בזמן ההריון, תפילות ותהילים לאם ולתינוק, הכנה ללידה בשבת, ומה לתכנן אחרי שהתינוק נולד.
 category: Life cycle
-related: brit-milah, giving-birth-jewish-customs, jewish-baby-shower, genetic-screening, baby-naming, tehillim, mezuzah
+related: brit-milah, psalm-121, giving-birth-jewish-customs, jewish-baby-shower, genetic-screening, baby-naming, tehillim, mezuzah
 local: מצפים לתינוק? התקשרו לרב לבקובסקי או לרבנית ציפורה לבקובסקי בטלפון 925-384-7242 לברכות ולהדרכה, או ראו chabadoflamorinda.com/help/new-baby.
 ---
 ביהדות, הריון הוא זמן של ברכה גדולה, שבו האם שותפה עם ה׳ בהבאת נשמה חדשה לעולם. המסורת היהודית עוטפת את התקופה הזאת בתפילה, במעשים טובים ובמנהגים פשוטים שעוזרים לשני ההורים להתכונן בשמחה ובשלווה.

@@ -2,7 +2,7 @@
 title: Who Is Elijah the Prophet? Elijah's Cup, the Open Door and the Bris
 description: Who Elijah the Prophet is, why we pour Elijah's Cup and open the door at the Seder, why there is a chair at a bris, and why he will announce Moshiach.
 category: Prayer & Torah
-related: passover-seder, what-is-a-prophet, brit-milah, havdalah, moshiach, moses
+related: passover-seder, shabbat-hagadol, what-is-a-prophet, brit-milah, havdalah, moshiach, moses
 local: Planning a Seder or a bris? We would love to help. See /forms/matzah or call Rabbi Labkowski at 925-384-7242.
 ---
 Elijah the Prophet (Eliyahu HaNavi, אליהו הנביא) was a Biblical prophet who, tradition says, never died but rose to heaven, and who will return to announce the coming of Moshiach. Jewish families remember him with Elijah's Cup and the open door at the Passover Seder, the chair at a bris, and a song after Shabbat.

@@ -2,7 +2,7 @@
 title: "חודש ניסן: חודש הגאולה, האביב והפסח"
 description: מהו חודש ניסן? החודש הראשון בלוח היהודי: פסח, נשיאי השבטים, ברכת האילנות ומה הוא מלמד אותנו.
 category: Shabbat & holidays
-related: blessing-on-blossoming-trees, passover-for-beginners, jewish-calendar, rosh-chodesh, iyar
+related: blessing-on-blossoming-trees, shabbat-hagadol, passover-for-beginners, jewish-calendar, rosh-chodesh, iyar
 local: קבלו את חודש הגאולה איתנו. התקשרו לרב לבקובסקי 925-384-7242 לשמוע מה מתוכנן.
 ---
 ניסן הוא החודש הראשון בלוח היהודי וחודש הגאולה, שבו יצאו ישראל ממצרים. הוא חל במרץ או באפריל, התורה קוראת לו "חודש האביב", ובו פסח, ברכת האילנות ומנהג מיוחד של קריאה על נשיאי י"ב השבטים.

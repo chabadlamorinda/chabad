@@ -2,7 +2,7 @@
 title: חודש אדר: למה מרבים בשמחה, אדר א' ואדר ב' ופורים קטן
 description: משנכנס אדר מרבים בשמחה. על אדר בשנה מעוברת, אדר א' ואדר ב', פורים קטן ואיך מוסיפים שמחה כל החודש, מלפאייט.
 category: Shabbat & holidays
-related: purim-for-beginners, jewish-leap-year-and-calendar, simcha, parshat-zachor, hamantaschen
+related: purim-for-beginners, the-four-parshiyot, jewish-leap-year-and-calendar, simcha, parshat-zachor, hamantaschen
 local: תכננו את פורים עם Chabad of Lamorinda: התקשרו לרב ישראל לבקובסקי, 925-384-7242, ושמעו מה מתוכנן למשפחות בלפאייט, מוראגה ואורינדה, או ראו /holidays/purim.
 ---
 אדר הוא החודש העברי שעליו אומרת הגמרא "משנכנס אדר מרבים בשמחה". זה חודש פורים, ובשנה מעוברת הוא מופיע פעמיים: אדר א' ואדר ב'.

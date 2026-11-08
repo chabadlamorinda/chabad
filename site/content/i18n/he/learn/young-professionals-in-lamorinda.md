@@ -2,7 +2,7 @@
 title: צעירים יהודים בלאפייט, מוראגה ואורינדה: שבת, שיעורים וחברים
 description: יהודים בשנות ה-20 או ה-30 בלאפייט, מוראגה או אורינדה? סעודות שבת, שיעורי ערב, חגים והתנדבות עם חב״ד למורינדה.
 category: Lamorinda
-related: shabbat-meals, jewish-dating, torah-classes-in-lamorinda, volunteering-in-lamorinda
+related: shabbat-meals, job-burnout, jewish-dating, torah-classes-in-lamorinda, volunteering-in-lamorinda
 local: בואו לסעודת שבת: הירשמו ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 עברתם ללמורינדה בגלל הגבעות, בתי הספר או הנסיעה לעבודה, או אולי גדלתם כאן וחזרתם. כך או כך, אם אתם יהודים בשנות ה-20 או ה-30 לחייכם, רווקים או בזוגיות, חב״ד למורינדה בלאפייט הוא מקום למצוא בו שבת, שיחה טובה וחברים. אין דמי חבר ואין תשלומים. פשוט בואו.

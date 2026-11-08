@@ -2,7 +2,7 @@
 title: Tanach: The Hebrew Bible, Its 24 Books and How We Read It
 description: What Tanach is: the Torah, Prophets and Writings, the 24 books, how they are read in synagogue, and why the Oral Torah goes with them.
 category: Prayer & Torah
-related: torah, daniel, what-is-a-prophet, samuel-the-prophet, rashi, torah-reading, haftarah, talmud
+related: torah, song-of-songs, book-of-genesis, daniel, what-is-a-prophet, samuel-the-prophet, rashi, torah-reading, haftarah, talmud
 local: Want to start learning Tanach? Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 Tanach is the Hebrew name for the Jewish Bible. The word is an acronym of its three parts: **T**orah, **N**evi'im (Prophets) and **K**etuvim (Writings). It is the book the whole world calls "the Bible," but for Jews it is our family story, our law and our song, read and studied every week for over three thousand years.

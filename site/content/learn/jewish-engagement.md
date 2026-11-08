@@ -2,7 +2,7 @@
 title: Jewish Engagement: The L'chaim, Tenaim and the Months Before the Wedding
 description: What happens when a Jewish couple gets engaged: the l'chaim or vort, tenaim, the ring, and how to use the time before the wedding well.
 category: Life cycle
-related: jewish-dating, genetic-screening, jewish-wedding, jewish-wedding-customs, ketubah
+related: jewish-dating, aufruf, genetic-screening, jewish-wedding, jewish-wedding-customs, ketubah
 local: Newly engaged in Lafayette, Moraga, Orinda or the East Bay? Mazal tov! Rabbi Yisroel and Rebbetzin Tzipora Labkowski are glad to help you plan, 925-384-7242.
 ---
 Mazal tov! An engagement is the beginning of a new Jewish home. Jewish tradition surrounds this time with joy, a few lovely customs, and a focus on preparing not just for a wedding but for a marriage.

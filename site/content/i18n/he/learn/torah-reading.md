@@ -2,7 +2,7 @@
 title: קריאת התורה בבית הכנסת: מתי, למה ואיך
 description: מתי קוראים בתורה בבית הכנסת, איך עובד המחזור השבועי, מה קורה בזמן הקריאה, ומה עושים בזמן שהיא מתקיימת.
 category: Prayer & Torah
-related: aliyah, parshat-zachor, shabbat-day, tanach, haftarah, weekly-parsha, torah
+related: aliyah, the-four-parshiyot, parshat-zachor, shabbat-day, tanach, haftarah, weekly-parsha, torah
 local: למידע על השבת, היכנסו ל-chabadoflamorinda.com/shabbat או התקשרו 925-384-7242, ונשמח לעזור לכם להרגיש בבית בקריאת התורה.
 ---
 בבית הכנסת קוראים בקול מספר תורה כתוב ביד בכל יום שני, חמישי ושבת, וגם בחגים, בראש חודש ובימי תענית. במשך השנה נקראים כל חמשת חומשי תורה, פרשה אחת בכל שבוע.

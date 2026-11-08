@@ -2,7 +2,7 @@
 title: Песах для начинающих: что делать и как подготовиться
 description: Впервые на Песах? Что это за праздник, как готовиться с хамецом и мацой, как проходит седер и первые шаги, которые стоит сделать вовремя.
 category: Shabbat & holidays
-related: chametz, shalosh-regalim, nissan, maot-chitim, chol-hamoed, passover-cleaning, passover-in-lamorinda, matzah, passover-seder, selling-your-chametz, passover-with-kids
+related: chametz, shabbat-hagadol, shalosh-regalim, nissan, maot-chitim, chol-hamoed, passover-cleaning, passover-in-lamorinda, matzah, passover-seder, selling-your-chametz, passover-with-kids
 local: Семьи из Лафайетта, Мораги и Оринды могут заказать шмуру-мацу на /forms/matzah и продать хамец на /forms/sell-chametz; позвоните раввину Лабковскому, 925-384-7242, чтобы узнать, что запланировано.
 ---
 Песах это восьмидневный весенний праздник в честь освобождения еврейского народа из египетского рабства. Неделю мы не едим хлеб и другие квасные злаки, едим мацу, а в первые ночи (за пределами Израиля в две первые ночи) собираемся на седер, чтобы рассказать эту историю. Если это ваш первый Песах, начните с трёх простых шагов.

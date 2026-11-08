@@ -2,7 +2,7 @@
 title: Спонсируйте Кидуш в Лафайетте: день рождения, йорцайт или радостное событие в Хабаде Ламоринды
 description: Как спонсировать Кидуш в Хабаде Ламоринды в Лафайетте: отметьте йорцайт, день рождения, годовщину или радость вместе с общиной в Шабат.
 category: Lamorinda
-related: kiddush, jewish-wedding-anniversary, getting-involved-in-jewish-lamorinda, yahrzeit, tzedakah, hebrew-birthday
+related: kiddush, aufruf, jewish-wedding-anniversary, getting-involved-in-jewish-lamorinda, yahrzeit, tzedakah, hebrew-birthday
 local: Выберите Шабат и добавьте посвящение на chabadoflamorinda.com/sponsor-a-kiddush или звоните 925-384-7242.
 ---
 Каждый Шабат в Хабаде Ламоринды в Лафайетте, после того как служба заканчивается в полдень, вся община садится вместе за горячий **обед-Кидуш**. Семьи из Лафайетта, Мораги, Оринды и окрестностей делают Кидуш над вином, едят, поют и делятся новостями. Это один из самых теплых часов недели. Когда вы спонсируете Кидуш, вы разделяете свое событие со всеми за этим столом.

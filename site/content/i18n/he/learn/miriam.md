@@ -2,7 +2,7 @@
 title: "מרים הנביאה: מי הייתה, שירתה על הים והבאר שלה"
 description: מי הייתה מרים בתנ"ך? אחות משה, נביאה ששמרה עליו ביאור, הובילה את שירת הנשים על הים והבאר שלה.
 category: Prayer & Torah
-related: jewish-women, shabbat-shirah, moses, aaron-the-high-priest, hannah-and-her-prayer
+related: jewish-women, deborah, shabbat-shirah, moses, aaron-the-high-priest, hannah-and-her-prayer
 local: נשים ובנות מוזמנות ללמוד ולחגוג יחד. ראו /programs/womens-circle או התקשרו 925-384-7242.
 ---
 מרים (מִרְיָם) הייתה אחותם הגדולה של משה ואהרן, אחת משבע הנביאות של עם ישראל. היא שמרה על [משה](/learn/moses) התינוק ביאור, הובילה את הנשים בשיר ובמחול אחרי קריעת ים סוף, ולפי חכמינו הבאר הנסית שנתנה לעם מים במדבר הייתה בזכותה.

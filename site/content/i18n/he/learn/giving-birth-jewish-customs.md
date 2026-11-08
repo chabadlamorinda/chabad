@@ -2,7 +2,7 @@
 title: לידה: מנהגים יהודיים, תפילות ולידה בשבת
 description: מנהגים יהודיים ללידה: תהילים, כרטיס שיר המעלות, נסיעה לבית החולים בשבת ומה בא אחר כך. תמיכה למשפחות בלפייט.
 category: Life cycle
-related: baby-naming, brit-milah, jewish-pregnancy, shabbat-in-the-hospital, new-parents-in-lamorinda
+related: baby-naming, psalm-121, brit-milah, jewish-pregnancy, shabbat-in-the-hospital, new-parents-in-lamorinda
 local: בהריון? התקשרו לרב ישראל לבקובסקי 925-384-7242 כדי להתחבר למוהל, לשם התינוקת ולביקור בבית החולים.
 ---
 המסורת היהודית מקיפה לידה בתפילה: הבעל אומר תהילים, כרטיס עם שיר המעלות (תהילים קכ״א) תלוי בחדר, ואם הצירים מתחילים בשבת, האישה נוסעת לבית החולים ללא היסוס. שמירת החיים והבריאות דוחה את השבת, והכלל הראשון הוא להגיע בבטחה לרופאים.

@@ -2,7 +2,7 @@
 title: The Month of Adar: Why Joy Increases, Adar I and II and Purim Katan
 description: When Adar begins, we increase in joy. Learn about Adar in a leap year, Adar I and II, Purim Katan and how to add joy all month, from Lafayette.
 category: Shabbat & holidays
-related: purim-for-beginners, jewish-leap-year-and-calendar, simcha, parshat-zachor, hamantaschen
+related: purim-for-beginners, the-four-parshiyot, jewish-leap-year-and-calendar, simcha, parshat-zachor, hamantaschen
 local: Plan for Purim with Chabad of Lamorinda: call Rabbi Yisroel Labkowski at 925-384-7242 to hear what is planned for families in Lafayette, Moraga and Orinda, or see /holidays/purim.
 ---
 Adar (אדר) is the Hebrew month in which, as the Talmud says, "when Adar begins, we increase in joy" (*mishenichnas Adar marbim besimchah*). It is the month of Purim, and in a leap year it appears twice: Adar I and Adar II.

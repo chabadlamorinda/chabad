@@ -2,7 +2,7 @@
 title: "Psalm 23 (Mizmor LeDavid): Meaning and Use in Jewish Life"
 description: Psalm 23, "The L-rd is my shepherd," verse by verse: what King David meant, when Jews recite it, and how it comforts. Ask us about Tehillim.
 category: Prayer & Torah
-related: tehillim, bitachon, hope-in-hard-times, king-david, praying-for-others
+related: tehillim, psalm-91, bitachon, hope-in-hard-times, king-david, praying-for-others
 local: Want a Psalm said for someone, or a moment of comfort? Call Rabbi Labkowski at 925-384-7242 or visit /help/talk-to-the-rabbi.
 ---
 Psalm 23 (מִזְמוֹר לְדָוִד, "A Psalm of David") is a short song of trust in which King David describes G-d as his shepherd who provides, guides and protects him. Jews turn to it in times of worry, illness and loss, and many sing it at the Shabbat table.

@@ -2,7 +2,7 @@
 title: Женщина в иудаизме: роль и заповеди еврейской женщины
 description: Как иудаизм смотрит на женщину, особые заповеди еврейских женщин, вдохновляющие женщины еврейской истории и сила еврейского дома.
 category: Jewish ideas
-related: shabbat-candles, miriam, the-matriarchs, women-and-chanukah, jewish-women-in-lamorinda, head-covering-for-women, mikvah, bat-mitzvah, challah
+related: shabbat-candles, seven-prophetesses, deborah, miriam, the-matriarchs, women-and-chanukah, jewish-women-in-lamorinda, head-covering-for-women, mikvah, bat-mitzvah, challah
 local: Ребецн Ципора Лабковская рада женщинам любого происхождения, которые хотят учиться и общаться. Звоните: 925-384-7242 или смотрите нашу страницу мероприятий.
 ---
 Иудаизм видит в женщине духовно равную мужчине, с особой и незаменимой ролью в еврейской жизни. Еврейские женщины формировали еврейский народ с самого начала, а сама принадлежность к еврейству передается через мать.

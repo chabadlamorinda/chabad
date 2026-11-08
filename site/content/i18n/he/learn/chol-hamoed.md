@@ -2,7 +2,7 @@
 title: חול המועד: ימי הביניים של פסח וסוכות
 description: מהו חול המועד? מה מותר ומה להימנע בימי הביניים של פסח וסוכות, מעבודה ונהיגה ועד תספורת וטיולים.
 category: Shabbat & holidays
-related: passover-for-beginners, sukkot-for-beginners, hoshana-rabbah, passover-with-kids, sukkot-with-kids
+related: passover-for-beginners, song-of-songs, sukkot-for-beginners, hoshana-rabbah, passover-with-kids, sukkot-with-kids
 local: שאלו על עבודה, נסיעות ותוכניות משפחתיות בחול המועד, או הצטרפו אלינו לחג; התקשרו לרב ישראל לבקובסקי, 925-384-7242, לשמוע מה מתוכנן בחב"ד לאמורינדה.
 ---
 חול המועד הוא ימי הביניים של פסח וסוכות, בין הימים הראשונים והאחרונים של כל חג: הם עדיין חלק מהחג, אך אינם ימי יום טוב מלאים, ולכן פעולות רגילות כמו נהיגה ובישול מותרות ועבודה שאינה הכרחית נמנעת. זהו חצי חג וחצי חול, זמן למשפחה, לטיולים ולסעודות חגיגיות.

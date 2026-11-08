@@ -2,7 +2,7 @@
 title: Bullying: Helping Your Child, and Raising Kind Kids
 description: When a child is bullied, or bullies others: Jewish values on dignity and words, what parents can do, working with the school, and building confidence.
 category: Life cycle
-related: parents-and-teenagers, facing-antisemitism, lashon-hara, jewish-parenting
+related: parents-and-teenagers, hurtful-words, facing-antisemitism, lashon-hara, jewish-parenting
 local: Parents in Lafayette, Moraga, Orinda and the East Bay can talk privately with Rabbi Yisroel or Rebbetzin Tzipora Labkowski: 925-384-7242.
 ---
 Every child deserves to feel safe and respected. When a child is bullied, in person or online, it can hurt deeply. Judaism takes the dignity of every person, and the power of words, very seriously.

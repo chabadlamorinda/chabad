@@ -2,7 +2,7 @@
 title: Who Was Moses? The Greatest Prophet and Teacher of the Jewish People
 description: Who Moses was: the basket on the Nile, the burning bush, the Exodus, Sinai and Mount Nebo, and why Jews call him Moshe Rabbeinu, "Moses our Teacher."
 category: Prayer & Torah
-related: ten-commandments, what-is-a-prophet, miriam, aaron-the-high-priest, exodus-story, humility, torah, elijah-the-prophet
+related: ten-commandments, ten-plagues, joshua, book-of-exodus, what-is-a-prophet, miriam, aaron-the-high-priest, exodus-story, humility, torah, elijah-the-prophet
 local: Want to learn the Torah Moses brought down, in a friendly class? See our adult education at /programs/adult-education or call 925-384-7242.
 ---
 Moses (Moshe, משה) was the greatest prophet who ever lived, the leader who took the Jewish people out of slavery in Egypt and brought them the Torah at Mount Sinai. Jews call him Moshe Rabbeinu, "Moses our Teacher," because everything we learn goes back to what he taught.

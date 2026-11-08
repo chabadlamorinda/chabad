@@ -2,7 +2,7 @@
 title: Giving Birth: Jewish Customs, Prayers and Labor on Shabbat
 description: Jewish customs for giving birth: Psalms, the Shir Hamaalot card, going to the hospital on Shabbat, and what comes next. Support for Lafayette families.
 category: Life cycle
-related: baby-naming, brit-milah, jewish-pregnancy, shabbat-in-the-hospital, new-parents-in-lamorinda
+related: baby-naming, psalm-121, brit-milah, jewish-pregnancy, shabbat-in-the-hospital, new-parents-in-lamorinda
 local: Expecting? Call Rabbi Yisroel Labkowski at 925-384-7242 to be connected with a mohel, a naming and a visit to the hospital.
 ---
 Jewish tradition surrounds a birth with prayer: the husband says Psalms, a card with Shir Hamaalot (Psalm 121) hangs in the room, and if labor begins on Shabbat, a woman goes to the hospital without hesitation. Preserving life and health overrides Shabbat, and the first rule is to get safely to the doctors.

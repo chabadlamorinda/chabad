@@ -2,7 +2,7 @@
 title: Месяц Адар: почему радости становится больше, Адар I и II и Пурим катан
 description: С наступлением Адара радости прибавляется. Об Адаре в високосный год, Адаре I и II, Пуриме катан и как добавить радости всему месяцу, из Лафайета.
 category: Shabbat & holidays
-related: purim-for-beginners, jewish-leap-year-and-calendar, simcha, parshat-zachor, hamantaschen
+related: purim-for-beginners, the-four-parshiyot, jewish-leap-year-and-calendar, simcha, parshat-zachor, hamantaschen
 local: Спланируйте Пурим вместе с Chabad of Lamorinda: позвоните раввину Исроэлю Лабковскому, 925-384-7242, и узнайте, что готовится для семей Лафайета, Морага и Ориндзы, или откройте /holidays/purim.
 ---
 Адар (אדר) это еврейский месяц, о котором Талмуд говорит: «С наступлением Адара прибавляется радости» (*мишенихнас Адар марбин бе-симха*). Это месяц Пурима, а в високосный год он бывает дважды: Адар I и Адар II.

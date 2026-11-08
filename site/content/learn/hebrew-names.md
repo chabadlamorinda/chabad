@@ -2,7 +2,7 @@
 title: Hebrew Names: How to Find, Choose and Use Your Jewish Name
 description: What a Hebrew name is, how it is formed, how to find yours if you do not know it, and when it is used in Jewish life.
 category: Life cycle
-related: baby-naming, getting-a-hebrew-name-as-an-adult, russian-speaking-jews-in-lamorinda, jewish-genealogy, bar-mitzvah, bat-mitzvah, hebrew-alphabet
+related: baby-naming, adding-a-name-for-healing, getting-a-hebrew-name-as-an-adult, russian-speaking-jews-in-lamorinda, jewish-genealogy, bar-mitzvah, bat-mitzvah, hebrew-alphabet
 local: Not sure of your Hebrew name, or never received one? Call Rabbi Labkowski at 925-384-7242 and we will help you find or choose one.
 ---
 A Hebrew name is the Jewish name a person receives at birth, at their bris for a boy or at a Torah naming for a girl. It is written as your first name, followed by "son of" (ben) or "daughter of" (bat) and a parent's name, for example Moshe ben Avraham or Leah bat Sarah.

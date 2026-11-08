@@ -2,7 +2,7 @@
 title: New Jewish Parents in Lafayette, Moraga and Orinda: Bris, Baby Naming and Preschool
 description: New Jewish parents in Lafayette, Moraga or Orinda: bris, baby naming, Hebrew names, Tehillim and Lamorinda Jewish Preschool from 12 months.
 category: Lamorinda
-related: jewish-pregnancy, babies-and-toddlers-on-shabbat, giving-birth-jewish-customs, shalom-zachar, jewish-lamorinda-with-young-children, preparing-for-a-bris, simchat-bat, brit-milah, baby-naming, hebrew-birthday
+related: jewish-pregnancy, sandek-and-kvater, babies-and-toddlers-on-shabbat, giving-birth-jewish-customs, shalom-zachar, jewish-lamorinda-with-young-children, preparing-for-a-bris, simchat-bat, brit-milah, baby-naming, hebrew-birthday
 local: Just had a baby? Call Rabbi Yisroel Labkowski at 925-384-7242 or see chabadoflamorinda.com/help/new-baby.
 ---
 Mazal Tov! Whether you are expecting or just came home from the hospital, Chabad of Lamorinda would love to celebrate with your family. Rabbi Yisroel and Rebbetzin Tzipora Labkowski help new parents in Lafayette, Moraga, Orinda and nearby Pleasant Hill and Martinez with every step, from a prayer during pregnancy to a bris, a baby naming and a first preschool. There is no membership required. Call **925-384-7242**.

@@ -2,7 +2,7 @@
 title: "חנה ותפילתה: כיצד לימדה אותנו להתפלל מן הלב"
 description: מי הייתה חנה בתנ"ך? תפילתה השקטה בשילה, הולדת שמואל ולמה סיפורה נקרא בראש השנה ומעצב את תפילת העמידה.
 category: Prayer & Torah
-related: amidah, infertility-jewish-support, talking-to-g-d-in-your-own-words, rosh-hashanah-for-beginners, miriam
+related: amidah, seven-prophetesses, infertility-jewish-support, talking-to-g-d-in-your-own-words, rosh-hashanah-for-beginners, miriam
 local: מתגעגעים למשהו ורוצים לדבר? שיחה פרטית עם הרב או הרבנית: /help/talk-to-the-rabbi או 925-384-7242.
 ---
 חנה (חַנָּה) הייתה אשת אלקנה ואם שמואל הנביא. תפילתה השקטה והכנה על ילד במשכן שילה היא המודל לדרך שבה יהודים מתפללים [עמידה](/learn/amidah): בשקט, בשפתיים נעות, בשפיכת הלב לפני ה'. סיפורה נקרא בראש השנה.

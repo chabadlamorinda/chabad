@@ -2,7 +2,7 @@
 title: What Is a Mensch? How to Be a Mensch with Everyday Jewish Decency
 description: What does mensch mean? The Yiddish word, the Torah idea behind it, and a simple self-check for teens, parents and everyone in Lamorinda.
 category: Jewish ideas
-related: ahavat-yisrael, raising-kind-children, pirkei-avot, chesed, love-jewish-view
+related: ahavat-yisrael, hurtful-words, raising-kind-children, pirkei-avot, chesed, love-jewish-view
 local: Raise a mensch: Hebrew school and kids' programs build character. See /programs/hebrew-school or call 925-384-7242.
 ---
 A mensch (מענטש, also spelled mentsch) is Yiddish for a decent, considerate, trustworthy person. Literally the word means "a human being," and when a Jewish parent tells a child "be a mensch," they mean: be good at heart, whatever else you achieve.

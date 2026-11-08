@@ -2,7 +2,7 @@
 title: Grief During the Holidays: When Someone Is Missing at the Table
 description: Getting through Chanukah, Passover, Rosh Hashanah or Thanksgiving after a loss: Jewish wisdom, practical ideas, and how to help a friend who is grieving.
 category: Mourning & remembrance
-related: year-of-mourning, shiva-and-holidays, losing-a-spouse, comforting-mourners, yahrzeit, feeling-lonely
+related: year-of-mourning, angry-at-g-d, shiva-and-holidays, losing-a-spouse, comforting-mourners, yahrzeit, feeling-lonely
 local: If the holidays are hard this year, Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here for families in Lafayette, Moraga and Orinda. Call 925-384-7242, or simply come for Shabbat.
 ---
 The holidays are built around family: the Seder table, the menorah, the Rosh Hashanah meal, the people who were always there. After a loss, those same moments can hurt the most. The empty chair is easy to see, and the songs bring back a voice we miss. If you are dreading a holiday this year, you are not alone, and nothing is wrong with you.

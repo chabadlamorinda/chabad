@@ -2,7 +2,7 @@
 title: קריאת שמע שעל המיטה: תפילות לפני השינה
 description: מהי קריאת שמע שעל המיטה, למה אומרים אותה, החלקים המרכזיים בה כולל ברכת המפיל, וגרסה פשוטה לילדים.
 category: Prayer & Torah
-related: shema, jewish-view-of-sleep, mincha-and-maariv, teaching-children-to-pray, dreams-jewish-view, angels, modeh-ani, siddur, jewish-parenting
+related: shema, cheshbon-hanefesh, psalm-91, jewish-view-of-sleep, mincha-and-maariv, teaching-children-to-pray, dreams-jewish-view, angels, modeh-ani, siddur, jewish-parenting
 local: רוצים עזרה בלימוד קריאת שמע שעל המיטה עם הילדים? התקשרו לרבנית לבקובסקי בטלפון 925-384-7241 או ראו chabadoflamorinda.com/programs/hebrew-school.
 ---
 קריאת שמע שעל המיטה היא סדר קצר של תפילות שאומרים לפני השינה. בלבה עומדת הפרשה הראשונה של [קריאת שמע](/learn/shema), יחד עם מחילה לאחרים וברכה שבה מבקשים מה׳ שיניח לנו לנוח בשלום ולקום בבוקר.

@@ -2,7 +2,7 @@
 title: פסח עם ילדים: איך להפוך את ליל הסדר לחוויה לילדים
 description: דרכים פשוטות להפוך את ליל הסדר למהנה לילדים: מה נשתנה, אביזרים למכות, האפיקומן, תפקידים לילדים והכנות משותפות.
 category: Shabbat & holidays
-related: four-questions, seder-songs, hosting-your-first-seder, haggadah, afikoman, passover-seder, holidays-with-toddlers, exodus-story
+related: four-questions, ten-plagues, seder-songs, hosting-your-first-seder, haggadah, afikoman, passover-seder, holidays-with-toddlers, exodus-story
 local: חב״ד למורינדה בלאפייט כאן כדי לעזור למשפחות בלאפייט, מוראגה ואורינדה להתכונן לפסח. לשאלות על ליל הסדר, התקשרו לרב: 925-384-7242. התאריכים השנה: chabadoflamorinda.com/holidays/passover
 ---
 ליל הסדר נבנה מלכתחילה בשביל הילדים. רבים מהמנהגים שלו קיימים מסיבה אחת: לעורר את הסקרנות של הילדים, להשאיר אותם ערים ולגרום להם לשאול שאלות. עם קצת תכנון, ליל הסדר יכול להיות הלילה שהילדים שלכם יזכרו כל השנה.

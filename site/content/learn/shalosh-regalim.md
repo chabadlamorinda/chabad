@@ -2,7 +2,7 @@
 title: "The Three Pilgrimage Festivals (Shalosh Regalim): Passover, Shavuot and Sukkot"
 description: The three pilgrimage festivals, Passover, Shavuot and Sukkot, explained: what each celebrates and why Jews went up to Jerusalem. Join Chabad of Lamorinda.
 category: Shabbat & holidays
-related: passover-for-beginners, shavuot-for-beginners, sukkot-for-beginners, the-holy-temple, yizkor
+related: passover-for-beginners, hallel, shavuot-for-beginners, sukkot-for-beginners, the-holy-temple, yizkor
 local: Celebrate the festivals with friends: see /events or call Chabad of Lamorinda at 925-384-7242.
 ---
 The three pilgrimage festivals, called Shalosh Regalim (שָׁלֹשׁ רְגָלִים), are Passover, Shavuot and Sukkot, the three holidays on which the Torah commands Jews to travel to Jerusalem and rejoice at the Holy Temple. They celebrate freedom, the giving of the Torah and the ingathering of the harvest, and today each one is still marked with special prayers and joy.
