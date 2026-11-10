@@ -1,6 +1,6 @@
 ---
 title: King Saul: The First King of Israel
-description: Who King Saul was: the humble young man who went looking for lost donkeys and became Israel's first king, why he lost the kingdom, his rivalry with David and his death.
+description: Who King Saul was: the humble young man seeking lost donkeys who became Israel's first king, why he lost the kingdom, and his rivalry with David.
 category: Prayer & Torah
 related: samuel-the-prophet, king-david, kingdoms-of-israel-and-judah, humility, parshat-zachor
 local: Bring your questions about Bible and Torah to Chabad of Lamorinda. Call 925-384-7242 to hear what classes are planned.

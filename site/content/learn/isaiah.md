@@ -1,6 +1,6 @@
 ---
 title: The Prophet Isaiah: Visions of Comfort and Peace
-description: Who Isaiah was, the words of his we still say and hear, from "swords into plowshares" to "Nachamu, comfort My people," and the hope he gave the Jewish people.
+description: Who Isaiah was and the words of his we still say and hear, from "swords into plowshares" to "Nachamu, comfort My people."
 category: Prayer & Torah
 related: what-is-a-prophet, haftarah, moshiach, the-holy-temple, ezekiel
 local: Hear Isaiah's words of comfort read at Shabbat services. Call Chabad of Lamorinda at 925-384-7242 to hear what is planned.
