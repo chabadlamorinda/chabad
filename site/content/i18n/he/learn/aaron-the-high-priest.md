@@ -2,7 +2,7 @@
 title: "אהרן הכהן: אוהב שלום ורודף שלום"
 description: מי היה אהרן בתנ"ך? אחיו של משה, הכהן הגדול הראשון ורודף השלום הגדול, וכיצד לצעוד בדרכו במשפחה שלכם.
 category: Prayer & Torah
-related: moses, birkat-kohanim, forgiveness-and-making-peace, miriam, kohen-levi-yisrael
+related: moses, the-priestly-garments, birkat-kohanim, forgiveness-and-making-peace, miriam, kohen-levi-yisrael
 local: צריכים עזרה בשלום בית? שיחה פרטית עם הרב או הרבנית: /help/talk-to-the-rabbi או 925-384-7242.
 ---
 אהרן (אַהֲרֹן) היה אחיהם הבכור של משה ומרים, הכהן הגדול הראשון ואבי כל הכהנים. הוא נזכר בעיקר כמי שאהב שלום ורדף שלום: המשנה מלמדת, "הוי מתלמידיו של אהרן, אוהב שלום ורודף שלום".

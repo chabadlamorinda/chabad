@@ -2,7 +2,7 @@
 title: Shabbat Day: From Morning Services to the Last Light
 description: What happens on Shabbat day: morning prayers and the Torah reading, Kiddush and lunch, a restful afternoon, the third meal and Havdalah.
 category: Shabbat & holidays
-related: havdalah, torah-reading, kiddush, shabbat-meals, thirty-nine-melachot
+related: havdalah, nishmat, musaf, torah-reading, kiddush, shabbat-meals, thirty-nine-melachot
 local: Join us Saturday morning in Lafayette for services, the Torah reading and a hot Kiddush lunch. Families from Lafayette, Moraga and Orinda are welcome; no membership needed.
 ---
 Friday night gets most of the attention: candles, challah, a family dinner. But Shabbat continues for a whole day, and the day has a beauty of its own: unhurried prayer, time with family and friends, a long lunch, a walk, a nap, a good book. Here is how a Shabbat day unfolds.

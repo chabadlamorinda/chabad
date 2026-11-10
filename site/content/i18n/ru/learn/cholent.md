@@ -2,7 +2,7 @@
 title: Чолнт: шабатнее рагу и почему его едят
 description: Что такое чолнт, почему в Шабат днем едят горячее, как его держат теплым с пятницы, сефардский хамин и простой домашний рецепт.
 category: Shabbat & holidays
-related: shabbat-meals, keeping-food-warm-on-shabbat, jewish-foods, sponsoring-a-kiddush, thirty-nine-melachot, shabbat-practical-questions
+related: shabbat-meals, kugel, keeping-food-warm-on-shabbat, jewish-foods, sponsoring-a-kiddush, thirty-nine-melachot, shabbat-practical-questions
 local: Попробуйте сами: каждую неделю в Хабаде Ламоринды на Кидуше после шабатней молитвы (суббота, 10 утра) подают горячий чолнт, приходить могут все.
 ---
 Чолнт - это медленно томящееся рагу из мяса, фасоли, перловки и картофеля, которое евреи едят на шабатний обед уже много веков. Его ставят на огонь в пятницу днем, до наступления Шабата, оно тихо томится всю ночь и в субботу приходит на стол горячим, сытным и ароматным.

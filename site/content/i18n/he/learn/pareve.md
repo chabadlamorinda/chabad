@@ -2,7 +2,7 @@
 title: מה זה פרווה? מאכלים ניטרליים במטבח כשר
 description: מה זה פרווה? מאכלים שאינם בשריים ואינם חלביים, כמו ביצים, דגים וירקות. הכללים בפשטות, ואפשר לשאול את חב"ד לאמורינדה.
 category: Kosher
-related: meat-and-milk, vegan-and-vegetarian-kosher, kosher-eggs, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
+related: meat-and-milk, kugel, vegan-and-vegetarian-kosher, kosher-eggs, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
 local: מקימים מטבח כשר בלפאייט, מוראגה או אורינדה? התקשרו לרב לבקובסקי: 925-384-7242 ונעזור לכם להתחיל.
 ---
 פרווה (פַּרְוֶה) הוא מאכל שאינו בשרי ואינו חלבי, ולכן אפשר לאכול אותו עם כל אחד מהם. פירות, ירקות, דגנים, ביצים, דגים ואגוזים טבעיים הם פרווה, כל עוד הוכנו בלי בשר וחלב.

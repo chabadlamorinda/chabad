@@ -2,7 +2,7 @@
 title: Kosher Fish: Fins and Scales, Is Shrimp Kosher, and Buying Fish
 description: Which fish are kosher? Fish need fins and scales, so salmon and tuna yes, shrimp and shark no. Learn how to buy fish and ask Chabad of Lamorinda.
 category: Kosher
-related: pareve, eating-out-kosher, kosher-meat, meat-and-milk, kosher-symbols
+related: pareve, gefilte-fish, eating-out-kosher, kosher-meat, meat-and-milk, kosher-symbols
 local: Questions about fish, sushi or setting up a kosher kitchen in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242.
 ---
 A fish is kosher if it has both fins and scales, so salmon, cod, tuna, trout and herring are kosher, while shrimp, lobster, crab, shark and catfish are not. Fish needs no special slaughter or salting, which makes it the simplest kosher food to begin with.

@@ -2,7 +2,7 @@
 title: Зачем быть евреем? Что делает еврейскую жизнь стоящей
 description: Зачем быть евреем сегодня? Душа, миссия, семья еврейского народа и смысл, который приносит одна заповедь, с теплым объяснением в свете учения Хабада.
 category: Jewish ideas
-related: who-is-a-jew, doubts-in-faith, chosen-people, thirteen-principles-of-faith, the-soul, purpose-of-life, starting-jewish-observance, jewish-pride
+related: who-is-a-jew, myths-and-facts-about-judaism, doubts-in-faith, chosen-people, thirteen-principles-of-faith, the-soul, purpose-of-life, starting-jewish-observance, jewish-pride
 local: Каждый еврей желанный гость в Хабаде Ламоринды в Лафайетте, независимо от происхождения; членство не требуется. Поговорите с раввином в любое время: 925-384-7242.
 ---
 Многие вырастают, зная, что они евреи, но никто не объяснял им, почему это важно. В занятой современной жизни это честный вопрос: зачем быть евреем? Вот как отвечает иудаизм, и особенно хасидское учение.

@@ -2,7 +2,7 @@
 title: מי שברך: התפילה לרפואה ולברכה
 description: מהי תפילת מי שברך, איך מבקשים מי שברך לחולה, למה משתמשים בשם האם, ובאילו הזדמנויות נוספות אומרים אותה.
 category: Prayer & Torah
-related: tehillim, adding-a-name-for-healing, hospital-stay-in-contra-costa, getting-a-hebrew-name-as-an-adult, praying-for-others, prayer-before-surgery, prayer, aliyah, tzedakah
+related: tehillim, living-with-chronic-illness, adding-a-name-for-healing, hospital-stay-in-contra-costa, getting-a-hebrew-name-as-an-adult, praying-for-others, prayer-before-surgery, prayer, aliyah, tzedakah
 local: כדי להוסיף שם לתפילות שלנו לרפואה, היכנסו ל-chabadoflamorinda.com/help/someone-is-sick או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 מי שברך היא תפילה קצרה, שנאמרת בדרך כלל ליד ספר התורה, ובה מבקשים מה׳ לברך אדם. היא מוכרת בעיקר כתפילה לרפואה, שנאמרת על חולה, אבל יש גם תפילות מי שברך לעולה לתורה, לתינוק שנולד, לקהילה ועוד.

@@ -2,7 +2,7 @@
 title: Raising Jewish Kids Where There Are Few Jewish Families
 description: Is your child the only Jewish kid in class? Practical ways to build Jewish pride, friends and traditions in Lafayette, Moraga, Orinda and the East Bay.
 category: Jewish home
-related: jewish-kids-in-lamorinda, a-jewish-childs-bedroom, jewish-pride, shabbat-with-kids, jewish-parenting, hebrew-school-in-lamorinda
+related: jewish-kids-in-lamorinda, twelve-torah-verses, a-jewish-childs-bedroom, jewish-pride, shabbat-with-kids, jewish-parenting, hebrew-school-in-lamorinda
 local: Want your child to meet other Jewish kids? Call 925-384-7242 or see the Hebrew School and Preschool pages.
 ---
 You can raise confident Jewish children even when they are the only Jewish kid in their class, by making Judaism warm and joyful at home, giving them Jewish friends, and letting them take pride in who they are. Children who feel Jewish at the family table, with other Jewish children, carry that pride with them anywhere.

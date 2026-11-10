@@ -2,7 +2,7 @@
 title: Mincha and Maariv: The Afternoon and Evening Prayers
 description: What Mincha and Maariv are, when to say them, how short they can be, praying alone or with a minyan, and an easy way to begin.
 category: Prayer & Torah
-related: daily-prayers, zmanim-explained, isaac-our-father, aleinu, amidah, minyan, shema, bedtime-shema
+related: daily-prayers, tachanun, zmanim-explained, isaac-our-father, aleinu, amidah, minyan, shema, bedtime-shema
 local: Looking for an afternoon or evening minyan in Lafayette, Moraga or Orinda? Call or text Rabbi Yisroel Labkowski at 925-384-7242 and he will tell you when the next one is.
 ---
 Most people know about the morning prayers. Fewer know that a Jewish day has two more stops: **Mincha** in the afternoon and **Maariv** (also called Arvit) at night. They are short, they fit into almost any schedule, and they may be the easiest way to bring G-d into the middle of a busy day.

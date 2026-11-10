@@ -2,7 +2,7 @@
 title: What Is the Oral Torah? Why the Written Torah Needs a Teacher
 description: The Oral Torah is the explanation of the Written Torah given at Sinai. Learn what it is, examples, how it was passed down and why it was written.
 category: Prayer & Torah
-related: mishnah, talmud, what-is-halacha, torah, tanach
+related: mishnah, the-sanhedrin, talmud, what-is-halacha, torah, tanach
 local: Хотите учиться у живого учителя? Узнайте о занятиях на /programs/adult-education или позвоните раввину Лабковскому: 925-384-7242.
 ---
 Устная Тора (Тора ше-бе-аль-пе) - это объяснение Письменной Торы, которое, согласно еврейской традиции, Б-г дал Моше на горе Синай вместе с письменным текстом. Она даёт подробности, без которых заповеди невозможно выполнять, и передавалась от учителя к ученику, пока не была записана в Мишне и Талмуде.

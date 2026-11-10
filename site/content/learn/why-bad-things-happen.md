@@ -2,7 +2,7 @@
 title: Why Do Bad Things Happen? A Jewish View of Suffering and Faith
 description: How Judaism approaches suffering: Job, the limits of understanding, hidden good, crying out to G-d, and helping those in pain.
 category: Jewish ideas
-related: bitachon, hope-in-hard-times, belief-in-g-d, hashgacha-pratit, moshiach
+related: bitachon, book-of-job, hope-in-hard-times, belief-in-g-d, hashgacha-pratit, moshiach
 local: Going through something painful? Rabbi Yisroel and Rebbetzin Tzipora Labkowski in Lafayette are here to listen, whatever you believe: 925-384-7242.
 ---
 "Why do good people suffer?" is one of the oldest questions there is. Moses asked it, King David asked it in the Psalms, and the whole Book of Job is about it. Judaism does not offer a neat answer that makes the pain go away. It offers a way to live with the question, to keep faith, and above all to help.

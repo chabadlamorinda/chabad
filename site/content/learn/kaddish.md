@@ -2,7 +2,7 @@
 title: The Mourner's Kaddish: Meaning, When to Say It and Who Says It
 description: What the Mourner's Kaddish is, what its words mean, who recites it, how long it is said, and what to do if you cannot say it yourself.
 category: Mourning & remembrance
-related: shiva, losing-a-parent, aleinu, suicide-and-jewish-mourning, jewish-men-in-lamorinda, yahrzeit, yizkor, prayer
+related: shiva, learning-in-memory-of-a-loved-one, amen, losing-a-parent, aleinu, suicide-and-jewish-mourning, jewish-men-in-lamorinda, yahrzeit, yizkor, prayer
 local: To say Kaddish with a minyan or arrange for Kaddish to be said for your loved one, call Rabbi Labkowski at 925-384-7242.
 ---
 The Mourner's Kaddish is a short prayer recited by mourners in memory of a loved one. Remarkably, it never mentions death: it is a declaration praising G-d, and saying it brings great merit and elevation to the soul of the person who passed away.

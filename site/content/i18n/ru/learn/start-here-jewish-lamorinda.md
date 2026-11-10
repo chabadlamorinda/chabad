@@ -2,7 +2,7 @@
 title: Начните здесь: еврейская жизнь в Лафайете, Морага и Оринде
 description: Впервые в еврейской жизни в Лафайете, Морага или Оринде? Дружеская карта: Шаббат, праздники, кашрут, дети, события жизни, учеба и первый шаг.
 category: Lamorinda
-related: moving-to-lamorinda, talk-to-a-rabbi, shabbat-in-lamorinda, not-religious-welcome, jewish-year-in-lamorinda, first-time-at-synagogue
+related: moving-to-lamorinda, myths-and-facts-about-judaism, talk-to-a-rabbi, shabbat-in-lamorinda, not-religious-welcome, jewish-year-in-lamorinda, first-time-at-synagogue
 local: Не знаете, с чего начать? Поздоровайтесь на chabadoflamorinda.com/welcome или позвоните раввину Исроэлю и Ципоре Лабковским 925-384-7242.
 ---
 Добро пожаловать. Если вы только знакомитесь с еврейской жизнью или возвращаетесь к ней после долгого перерыва, вы пришли по адресу, и пока вам совсем не нужно ничего знать. Первый шаг прост: **приходите на Шаббат** или позвоните 925-384-7242 и поздоровайтесь. Все остальное на этой странице - карта, которой можно пользоваться, когда будете готовы.

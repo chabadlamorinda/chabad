@@ -2,7 +2,7 @@
 title: Недельная глава: как Тору читают каждую неделю
 description: Что такое недельная глава Торы (парша), как 54 главы укладываются в еврейский год и простые способы изучать и обсуждать паршу каждую неделю.
 category: Prayer & Torah
-related: torah-reading, book-of-exodus, book-of-genesis, the-mishkan, parsha-for-kids, joseph-and-his-brothers, rashi, shabbat-shirah, torah-study-for-women, bar-mitzvah-speech, torah, daily-torah-study, haftarah
+related: torah-reading, dvar-torah-at-the-shabbat-table, book-of-exodus, book-of-genesis, the-mishkan, parsha-for-kids, joseph-and-his-brothers, rashi, shabbat-shirah, torah-study-for-women, bar-mitzvah-speech, torah, daily-torah-study, haftarah
 local: Читайте мысли о недельной главе на chabadoflamorinda.com/parsha или приходите на урок: chabadoflamorinda.com/programs/adult-education.
 ---
 Недельная глава, или парша, - это отрывок Торы, который читают в синагоге каждый Шабат. Пятикнижие Моше разделено на 54 главы, так что вся Тора прочитывается раз в год, от сотворения мира до кончины Моше.

@@ -2,7 +2,7 @@
 title: קריאת שמע: המשמעות, הנוסח ומתי אומרים אותה
 description: קריאת שמע ישראל: הנוסח, הפירוש, מתי אומרים אותה, ואיך אומרים קריאת שמע שעל המיטה.
 category: Prayer & Torah
-related: prayer, barchu, shemot-names-of-g-d, mezuzah, tefillin, modeh-ani
+related: prayer, loving-g-d, kavanah-in-prayer, barchu, shemot-names-of-g-d, mezuzah, tefillin, modeh-ani
 local: נשמח ללמד אתכם ואת הילדים את קריאת שמע ולעזור לכם להשיג סידור או כרטיס שמע. התקשרו 925-384-7242.
 ---
 שמע ישראל היא הצהרת האמונה המרכזית של היהדות: "שמע ישראל, ה׳ אלוקינו, ה׳ אחד". יהודים אומרים אותה בכל בוקר ובכל ערב, וגם לפני השינה, ועל פי המסורת זו התפילה הראשונה שילד לומד והמילים האחרונות שיהודי אומר בחייו.

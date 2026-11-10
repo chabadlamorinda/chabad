@@ -2,7 +2,7 @@
 title: Кто такой царь Давид? Пастух, псалмопевец и царь Израиля
 description: Кто такой царь Давид: пастушок, Голиаф, царь в Иерусалиме, его раскаяние, Псалмы, которые евреи читают до сих пор, и почему Машиах из его рода.
 category: Prayer & Torah
-related: tehillim, samuel-the-prophet, book-of-ruth, king-solomon, moshiach, jerusalem, the-holy-temple, moses
+related: tehillim, king-saul, samuel-the-prophet, book-of-ruth, king-solomon, moshiach, jerusalem, the-holy-temple, moses
 local: Прочтите Псалмы за того, кому нужно исцеление. Добавьте имя в наш список молитв: /help/talk-to-the-rabbi или 925-384-7242.
 ---
 Царь Давид (Давид а-Мелех, דוד המלך) был пастухом из Бейт-Лехема, ставшим вторым царем Израиля, сделавшим Иерусалим столицей и написавшим большую часть книги Псалмов. Евреи читают его Псалмы каждый день, а еврейская традиция учит, что Машиах придет из его рода.

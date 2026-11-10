@@ -2,7 +2,7 @@
 title: What Is Love? The Jewish View of Love, Ahavah and Giving
 description: What does Judaism say about love? Ahavah comes from "hav," to give. Love of G-d, spouse, children and neighbor, and how love grows. For Lamorinda couples.
 category: Jewish ideas
-related: shalom-bayit, ahavat-yisrael, jewish-dating, being-a-mensch, tikkun-olam
+related: shalom-bayit, bashert, ahavat-yisrael, jewish-dating, being-a-mensch, tikkun-olam
 local: Strengthen your marriage or find your match with guidance from the Rabbi and Rebbetzin: /help/talk-to-the-rabbi or 925-384-7242.
 ---
 In Judaism, love (אַהֲבָה, ahavah) is not only a feeling but a way of giving: the Hebrew word comes from the root "hav," meaning "give." The more you give to someone, the more your love for them grows.

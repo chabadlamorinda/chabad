@@ -2,7 +2,7 @@
 title: "Aaron the High Priest: Love Peace and Pursue Peace"
 description: Who was Aaron in the Bible? Moses's brother, the first High Priest and the great peacemaker, and how to follow his path in your own family.
 category: Prayer & Torah
-related: moses, birkat-kohanim, forgiveness-and-making-peace, miriam, kohen-levi-yisrael
+related: moses, the-priestly-garments, birkat-kohanim, forgiveness-and-making-peace, miriam, kohen-levi-yisrael
 local: Need help making peace in your family? Talk privately with the Rabbi or Rebbetzin: /help/talk-to-the-rabbi or 925-384-7242.
 ---
 Aaron (Aharon, אַהֲרֹן) was the older brother of Moses and Miriam, the first High Priest (Kohen Gadol) and the ancestor of all the Kohanim. He is remembered above all as the man who loved peace and pursued peace: the Mishnah teaches, "Be of the disciples of Aaron, loving peace and pursuing peace."

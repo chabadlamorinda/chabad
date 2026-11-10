@@ -2,7 +2,7 @@
 title: Shabbat Shirah: The Shabbat of Song and Why Children Feed the Birds
 description: What is Shabbat Shirah? The Song of the Sea, the bird-feeding custom before Shabbat and a family way to come to services in Lafayette.
 category: Shabbat & holidays
-related: shabbat-with-kids, deborah, miriam, weekly-parsha, tzaar-baalei-chayim, shevat, torah-reading
+related: shabbat-with-kids, the-manna, deborah, miriam, weekly-parsha, tzaar-baalei-chayim, shevat, torah-reading
 local: Bring the family to Shabbat services in Lafayette: call Rabbi Yisroel Labkowski at 925-384-7242 to hear what is planned for Shabbat Shirah.
 ---
 Shabbat Shirah (שבת שירה) is the Shabbat on which we read the Torah portion Beshalach, which includes the Song of the Sea, the song the Jewish people sang after crossing the Red Sea. There is a well-known custom of putting out food for the birds, and the best way to do it is before Shabbat begins.

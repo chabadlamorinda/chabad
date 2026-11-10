@@ -2,7 +2,7 @@
 title: Being Single: A Full Jewish Life, Right Now
 description: Judaism's warmth toward singles: a full Jewish life today, Shabbat and community, hope and prayer for a match, and help from the Rabbi and Rebbetzin.
 category: Life cycle
-related: jewish-dating, shabbat-alone, feeling-lonely, young-professionals-in-lamorinda, bitachon
+related: jewish-dating, bashert, shabbat-alone, feeling-lonely, young-professionals-in-lamorinda, bitachon
 local: Single in Lafayette, Moraga or Orinda? There is a seat for you at the Shabbat table at Chabad of Lamorinda. Call Rabbi Yisroel or Rebbetzin Tzipora Labkowski, 925-384-7242.
 ---
 Judaism loves marriage. It also loves you, exactly where you are today. If you are single, whether you have never married, are divorced or are widowed, this guide is not about what is missing. It is about the whole, rich Jewish life that is already yours, and about the hope Judaism holds for your future.

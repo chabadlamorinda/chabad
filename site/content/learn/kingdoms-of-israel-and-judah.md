@@ -2,7 +2,7 @@
 title: The Kingdoms of Israel and Judah: When the Jewish People Split in Two
 description: Why did Israel split into two kingdoms? Rehoboam and Jeroboam, the northern kingdom's exile, Judah and the fall of the First Temple, in a simple timeline.
 category: Jewish ideas
-related: king-solomon, jewish-history-overview, the-holy-temple, ten-lost-tribes, what-is-a-prophet
+related: king-solomon, king-hezekiah, king-saul, jewish-history-overview, the-holy-temple, ten-lost-tribes, what-is-a-prophet
 local: Love Jewish history? Call Rabbi Yisroel Labkowski at 925-384-7242 or join a class under [adult education](/programs/adult-education); every Jew in Lafayette, Moraga and Orinda is welcome.
 ---
 After King Solomon died, the Jewish people split into two kingdoms: the northern Kingdom of Israel, made up of ten tribes, and the southern Kingdom of Judah, with the tribes of Judah, Benjamin and Levi. For about two centuries they were two parallel monarchies, until the north was exiled by Assyria and, later, Judah and the First Temple fell to Babylon.

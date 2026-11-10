@@ -2,7 +2,7 @@
 title: למה להתפלל אם ה׳ כבר יודע מה אנחנו צריכים?
 description: אם ה׳ יודע הכול, למה להתפלל? התשובה היהודית: תפילה אינה מסירת מידע לה׳ אלא התקשרות אליו, והיא משנה את המתפלל.
 category: Jewish ideas
-related: prayer, talking-to-g-d-in-your-own-words, belief-in-g-d, bitachon, the-soul
+related: prayer, kavanah-in-prayer, talking-to-g-d-in-your-own-words, belief-in-g-d, bitachon, the-soul
 local: שאלות על אמונה מתקבלות בברכה. דברו עם הרב ישראל לבקובסקי, או בואו לשיעור בחב״ד למורינדה בלאפייט.
 ---
 זו אחת השאלות הטבעיות ביותר. ה׳ יודע הכול; הוא יודע מה אנחנו צריכים טוב יותר מאיתנו. אז מה הטעם לבקש? ואם ה׳ כבר החליט, איך המילים שלנו יכולות לשנות משהו?

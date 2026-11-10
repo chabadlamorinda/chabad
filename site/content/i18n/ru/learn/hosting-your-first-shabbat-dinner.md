@@ -2,7 +2,7 @@
 title: Ваш первый субботний ужин: простое пошаговое руководство
 description: Все, что нужно для теплого пятничного ужина в Шабат дома: что купить, порядок вечера, благословения и как гостям почувствовать себя как дома.
 category: Shabbat & holidays
-related: shabbat-meals, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
+related: shabbat-meals, dvar-torah-at-the-shabbat-table, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
 local: Хотите сначала посмотреть, как это бывает? Приходите на субботний ужин с семьей раввина в Хабад Ламоринды в Лафайетте или звоните 925-384-7242, чтобы получить свечи и халу.
 ---
 Чтобы устроить субботний ужин, не нужны большой дом, красивая посуда или безупречный иврит. Нужны стол, несколько друзей или родных и желание сделать вечер пятницы особенным. Вот все по порядку.

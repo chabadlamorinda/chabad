@@ -2,7 +2,7 @@
 title: מהי אהבה? המבט היהודי על אהבה, אהבה ונתינה
 description: מה אומרת היהדות על אהבה? אהבה מגיעה מהשורש "הב", לתת. אהבת ה', בן זוג, ילדים ורע, ואיך אהבה גדלה. לזוגות בלמורינדה.
 category: Jewish ideas
-related: shalom-bayit, ahavat-yisrael, jewish-dating, being-a-mensch, tikkun-olam
+related: shalom-bayit, bashert, ahavat-yisrael, jewish-dating, being-a-mensch, tikkun-olam
 local: חזקו את הנישואין או מצאו את הזיווג בהדרכת הרב והרבנית: /help/talk-to-the-rabbi או 925-384-7242.
 ---
 ביהדות אהבה (אַהֲבָה) אינה רק רגש אלא דרך של נתינה: המילה העברית באה מהשורש "הב", שפירושו "תן". ככל שאתם נותנים לאדם יותר, כך אהבתכם אליו גדלה.

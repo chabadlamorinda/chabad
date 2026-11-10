@@ -2,7 +2,7 @@
 title: Why Pray If G-d Already Knows What We Need?
 description: If G-d knows everything, why pray? The Jewish answer: prayer is not informing G-d but connecting to Him, and it changes the one who prays.
 category: Jewish ideas
-related: prayer, talking-to-g-d-in-your-own-words, belief-in-g-d, bitachon, the-soul
+related: prayer, kavanah-in-prayer, talking-to-g-d-in-your-own-words, belief-in-g-d, bitachon, the-soul
 local: Questions about faith are welcome. Talk with Rabbi Yisroel Labkowski, or come to a class at Chabad of Lamorinda in Lafayette.
 ---
 It is one of the most natural questions there is. G-d knows everything; He knows what we need better than we do. So what is the point of asking? And if G-d has already decided, how can our words change anything?

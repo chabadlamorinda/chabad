@@ -2,7 +2,7 @@
 title: Распространенные выражения на иврите и идише и когда их говорить
 description: Повседневные еврейские выражения: Шабат шалом, Мазл тов, Барух Ашем, Бе-эзрат Ашем, Рефуа шлема, Лехаим, Шана това и другие.
 category: Jewish ideas
-related: hebrew-alphabet, yiddish-words-and-phrases, mazal-and-astrology, israelis-in-lamorinda, holiday-greetings, hebrew-reading-for-adults, blessings, chai-symbol
+related: hebrew-alphabet, shalom, amen, yiddish-words-and-phrases, mazal-and-astrology, israelis-in-lamorinda, holiday-greetings, hebrew-reading-for-adults, blessings, chai-symbol
 local: Хотите выучить иврит в дружеской обстановке? Узнайте о занятиях на chabadoflamorinda.com/programs/adult-education или по телефону 925-384-7242.
 ---
 Несколько выражений на иврите и идише снова и снова звучат в еврейской жизни, от «Шабат шалом» в пятницу до «Мазл тов» на каждом торжестве. Если знать, что они означают и когда их говорить, любой почувствует себя как дома в синагоге, за шабатним столом или на семейном празднике.

@@ -2,7 +2,7 @@
 title: Ахават Исраэль: как любить каждого еврея как самого себя
 description: Что такое Ахават Исраэль в иудаизме: любить каждого еврея как себя, почему хасидизм говорит об одной душе, и простые способы применять это сегодня.
 category: Jewish ideas
-related: judging-others-favorably, rabbi-akiva, love-jewish-view, being-a-mensch, hillel-and-shammai, chesed, ten-mitzvah-campaigns, lashon-hara, chosen-people
+related: judging-others-favorably, mah-tovu, rabbi-akiva, love-jewish-view, being-a-mensch, hillel-and-shammai, chesed, ten-mitzvah-campaigns, lashon-hara, chosen-people
 local: Приходите познакомиться с евреями любого происхождения в Хабаде Ламоринды. Смотрите /events или звоните 925-384-7242.
 ---
 Ахават Исраэль (אהבת ישראל) это любовь к ближнему еврею: заповедь Торы «возлюби ближнего твоего как самого себя» (Ваикра 19:18), которую хасидизм объясняет как взгляд на каждого еврея как на часть одной души. Радушие Хабада к каждому еврею, независимо от его прошлого, вырастает из этой идеи.

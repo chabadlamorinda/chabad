@@ -2,7 +2,7 @@
 title: "What Is the Mishkan? The Tabernacle in the Desert and G-d's Home"
 description: The Mishkan, the Tabernacle in the desert: what it was, what was inside and why G-d asked to dwell within us. Learn with Chabad of Lamorinda.
 category: Prayer & Torah
-related: the-holy-temple, chanukat-habayit, weekly-parsha, ten-commandments, mezuzah
+related: the-holy-temple, book-of-leviticus, the-priestly-garments, chanukat-habayit, weekly-parsha, ten-commandments, mezuzah
 local: Want to learn the Torah portion with us? Call Chabad of Lamorinda at 925-384-7242 or see /programs/adult-education.
 ---
 The Mishkan (מִשְׁכָּן, "dwelling place") was the portable sanctuary, or Tabernacle, that the Jewish people built in the desert soon after the Exodus, so that G-d's presence could dwell among them. It traveled with them for forty years and was the forerunner of the Holy Temple in Jerusalem.

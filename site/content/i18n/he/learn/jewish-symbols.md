@@ -2,7 +2,7 @@
 title: סמלים יהודיים ומשמעותם
 description: מדריך פשוט לסמלים יהודיים: המנורה, המגן דוד, חי, המזוזה, הלוחות, השופר, הטלית, הכיפה ועוד, עם משמעותם.
 category: Jewish ideas
-related: star-of-david, jewish-jewelry, chai-symbol, mezuzah, the-holy-temple
+related: star-of-david, beards-and-peyot, jewish-jewelry, chai-symbol, mezuzah, the-holy-temple
 local: מחפשים מזוזה, תפילין או תשמישי קדושה לבית? התקשרו לחב״ד למורינדה 925-384-7242 או היעזרו ב-chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 הסמלים היהודיים המוכרים ביותר הם המנורה בעלת שבעת הקנים, המגן דוד, המילה חי ושני לוחות הברית. חלק מהסמלים הם חפצי מצווה של ממש, כמו המזוזה והתפילין, ואחרים הם פשוט סימנים מסורתיים של זהות יהודית.

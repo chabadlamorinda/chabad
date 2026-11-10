@@ -2,7 +2,7 @@
 title: Tzfat (Safed): Visiting the City of Kabbalah in Israel
 description: Why Tzfat (Safed) is the city of Kabbalah: the Arizal, Rabbi Yosef Caro, Lecha Dodi, the blue doors and the old cemetery. A guide for your trip to Israel.
 category: Jewish ideas
-related: first-trip-to-israel, lecha-dodi, kabbalah, kabbalat-shabbat, western-wall, israel-and-the-jewish-people
+related: first-trip-to-israel, the-arizal, lecha-dodi, kabbalah, kabbalat-shabbat, western-wall, israel-and-the-jewish-people
 local: Planning a trip to Israel? Call Rabbi Labkowski at 925-384-7242 for advice before you go.
 ---
 Tzfat, also spelled Safed (צפת), is a hill city in northern Israel and one of the four holy cities, along with Jerusalem, Hebron and Tiberias. It is known as the city of Kabbalah because the great mystics of the 1500s lived, taught and are buried there.

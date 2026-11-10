@@ -2,7 +2,7 @@
 title: "יהושע בן נון: תלמידו של משה שהכניס אותנו לארץ"
 description: מי היה יהושע? תלמידו הנאמן של משה, אחד משני המרגלים הטובים, המנהיג שחצה את הירדן והפיל את יריחו, ודגם ללמידה נאמנה.
 category: Prayer & Torah
-related: moses, what-is-a-prophet, pirkei-avot, twelve-tribes, torah
+related: moses, samson, what-is-a-prophet, pirkei-avot, twelve-tribes, torah
 local: רוצים שילדכם ילמד מגיבורי התורה כמו יהושע? ראו /programs/hebrew-school או התקשרו 925-384-7242.
 ---
 יהושע היה תלמידו ומשרתו הנאמן של משה, שהפך למנהיג העם היהודי אחרי פטירת משה. הוא הוביל אותם מעבר לירדן אל ארץ ישראל, והוא החוליה השנייה בשרשרת שמעבירה את התורה מדור לדור.

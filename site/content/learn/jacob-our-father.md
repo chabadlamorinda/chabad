@@ -2,7 +2,7 @@
 title: "Jacob (Yaakov): The Third Patriarch, Who Became Israel"
 description: Who was Jacob in the Bible? The twins, the ladder, Rachel and Leah, the wrestling angel and why he was renamed Israel, with the Rebbe's lesson for today.
 category: Prayer & Torah
-related: joseph-and-his-brothers, twelve-tribes, the-matriarchs, abraham-and-sarah, israel-and-the-jewish-people
+related: joseph-and-his-brothers, jews-hebrews-israelites, twelve-tribes, the-matriarchs, abraham-and-sarah, israel-and-the-jewish-people
 local: Studying the Torah portions week by week is easier together. Call 925-384-7242 to hear what classes are planned.
 ---
 Jacob (Yaakov, יַעֲקֹב) was the third of the Patriarchs, after Abraham and Isaac, and the father of the twelve sons who became the twelve tribes of Israel. After wrestling with a mysterious angel he was given a second name, Israel (Yisrael, יִשְׂרָאֵל), the name of the whole Jewish people.

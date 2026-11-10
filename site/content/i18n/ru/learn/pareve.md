@@ -2,7 +2,7 @@
 title: Что значит парве? Нейтральные продукты на кошерной кухне
 description: Что значит парве? Продукты, которые не мясные и не молочные: яйца, рыба, овощи. Простые правила и вопросы к Хабаду Ламоринды.
 category: Kosher
-related: meat-and-milk, vegan-and-vegetarian-kosher, kosher-eggs, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
+related: meat-and-milk, kugel, vegan-and-vegetarian-kosher, kosher-eggs, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
 local: Заводите кошерную кухню в Лафайетте, Мораге или Оринде? Позвоните раввину Лабковскому: 925-384-7242, и мы поможем начать.
 ---
 Парве (פַּרְוֶה) это продукт, который не мясной и не молочный, поэтому его можно есть и с мясным, и с молочным. Фрукты, овощи, крупы, яйца, рыба и простые орехи парве, если их готовили без мяса и молока.

@@ -2,7 +2,7 @@
 title: Talk to a Rabbi Near You: Call, Text or Meet in Lafayette
 description: Хотите поговорить с раввином рядом с Лафайеттом? Раввин Лабковски готов побеседовать конфиденциально: по телефону, в сообщении или лично.
 category: Lamorinda
-related: what-is-a-rabbi, life-events-in-lamorinda, start-here-jewish-lamorinda, mezuzah, who-is-a-jew
+related: what-is-a-rabbi, finding-a-mentor, life-events-in-lamorinda, start-here-jewish-lamorinda, mezuzah, who-is-a-jew
 local: Позвоните раввину Исроэлю Лабковски, 925-384-7242, или воспользуйтесь кнопками звонка и сообщения на странице /help/talk-to-the-rabbi.
 ---
 Поговорить с раввином в Лафайетте можно, позвонив раввину Исроэлю Лабковски из Хабада Ламоринда по номеру 925-384-7242, а также написав ему в сообщении или WhatsApp. Любой еврей из Лафайетта, Мораги, Оринда и Ист-Бэй может обратиться, всё конфиденциально, членство не требуется.

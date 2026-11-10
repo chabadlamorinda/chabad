@@ -2,7 +2,7 @@
 title: Addiction and Recovery: Jewish Support and Hope
 description: A Jewish view of addiction and recovery: no shame in getting help, how faith supports the 12 steps, help for families, and where to turn in the East Bay.
 category: Jewish ideas
-related: mental-health-jewish-view, alcohol-free-kiddush, teshuvah, bitachon, the-soul
+related: mental-health-jewish-view, smoking-and-vaping-jewish-view, alcohol-free-kiddush, teshuvah, bitachon, the-soul
 local: For anyone in Lafayette, Moraga, Orinda and nearby facing addiction, yourself or someone you love: call Rabbi Yisroel Labkowski at 925-384-7242, confidentially.
 ---
 Addiction to alcohol, drugs, gambling, or anything else, touches Jewish families too, more than most people realize. If it is touching yours, you are not alone, and there is real hope.

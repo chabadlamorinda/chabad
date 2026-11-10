@@ -2,7 +2,7 @@
 title: בית המקדש בירושלים
 description: מה היה בית המקדש, הבית הראשון והבית השני, למה הם נחרבו, איך אנחנו זוכרים אותם היום, ובית המקדש השלישי.
 category: Jewish ideas
-related: jerusalem, kingdoms-of-israel-and-judah, jeremiah, the-mishkan, shalosh-regalim, king-solomon, yom-yerushalayim, tisha-bav-for-beginners, the-maccabees, jewish-history-overview, western-wall, three-weeks, moshiach
+related: jerusalem, rabbi-yochanan-ben-zakkai, ezra-and-nehemiah, shechinah, kingdoms-of-israel-and-judah, jeremiah, the-mishkan, shalosh-regalim, king-solomon, yom-yerushalayim, tisha-bav-for-beginners, the-maccabees, jewish-history-overview, western-wall, three-weeks, moshiach
 local: הצטרפו לחב״ד למורינדה כדי ללמוד עוד על בית המקדש ועל ההיסטוריה היהודית בשיעורים שלנו ב-chabadoflamorinda.com/programs/adult-education, או התקשרו 925-384-7242.
 ---
 בית המקדש היה הבית המרכזי של ה׳ בירושלים, שאליו עם ישראל בא להתפלל, להקריב קרבנות ולהרגיש את נוכחות ה׳. שני בתי מקדש עמדו על אותו הר קדוש, והמסורת היהודית מלמדת שבית המקדש השלישי ייבנה בימות המשיח.

@@ -2,7 +2,7 @@
 title: Lecha Dodi: Meaning, Author and Why We Turn to Welcome Shabbat
 description: Lecha Dodi, the Friday night hymn "Come, my beloved, to greet the bride": its meaning, author, acrostic and the custom of turning toward the door.
 category: Shabbat & holidays
-related: shalom-aleichem, tzfat, zemirot, shabbat-candles, friday-night-dinner-step-by-step
+related: shalom-aleichem, the-arizal, tzfat, zemirot, shabbat-candles, friday-night-dinner-step-by-step
 local: Присоединяйтесь к нам на Кабалат Шаббат и пойте Леха Диди вместе. Позвоните раввину Лабковскому: 925-384-7242 или смотрите /events.
 ---
 «Леха диди» («Приди, мой возлюбленный») - гимн, который поют в начале пятничной вечерней службы, чтобы встретить Шаббат как невесту. Его написал в Цфате в XVI веке рабби Шломо а-Леви Алкабец, и он - кульминация Кабалат Шаббат. В эту пятницу Кабалат Шаббат в Хабаде Ламоринды в {kabbalat-shabbat}.

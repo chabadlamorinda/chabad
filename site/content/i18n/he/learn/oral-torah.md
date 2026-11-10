@@ -2,7 +2,7 @@
 title: What Is the Oral Torah? Why the Written Torah Needs a Teacher
 description: The Oral Torah is the explanation of the Written Torah given at Sinai. Learn what it is, examples, how it was passed down and why it was written.
 category: Prayer & Torah
-related: mishnah, talmud, what-is-halacha, torah, tanach
+related: mishnah, the-sanhedrin, talmud, what-is-halacha, torah, tanach
 local: סקרנים ללמוד ממורה חי? שאלו על שיעורים ב-/programs/adult-education או התקשרו אל הרב לבקובסקי: 925-384-7242.
 ---
 תורה שבעל פה היא הביאור של התורה שבכתב, שלפי המסורת היהודית ניתן למשה בהר סיני יחד עם הטקסט הכתוב. היא מספקת את הפרטים שמאפשרים לקיים את המצוות, ועברה מרב לתלמיד עד שנכתבה במשנה ובתלמוד.

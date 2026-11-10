@@ -2,7 +2,7 @@
 title: "ספר שמות: מעבדות עד סיני"
 description: סיכום פשוט של ספר שמות: אחת עשרה פרשות, למה הוא נקרא "שמות", ואיך הוא מוביל אל סיני, המשכן ופסח.
 category: Prayer & Torah
-related: exodus-story, moses, weekly-parsha, ten-commandments, passover-for-beginners
+related: exodus-story, book-of-leviticus, moses, weekly-parsha, ten-commandments, passover-for-beginners
 local: שמעו את פרשות שמות בלפאייט והתכוננו לפסח איתנו. התקשרו 925-384-7242 או ראו /events.
 ---
 ספר שמות הוא השני מחמשת חומשי תורה. הוא מספר איך העם היהודי, משועבד במצרים, נגאל, מקבל את התורה בהר סיני, ובונה את המשכן כדי שהקב"ה ישכון בתוכו.

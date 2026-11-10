@@ -2,7 +2,7 @@
 title: Fear of G-d: What Yirat Shamayim Really Means
 description: Does Judaism want us to be afraid of G-d? Yirat Shamayim means awe and respect, not terror. Chabad teaching on love, awe and how to feel it daily.
 category: Jewish ideas
-related: tanya, why-mitzvot, humility, belief-in-g-d, blessings
+related: tanya, loving-g-d, why-mitzvot, humility, belief-in-g-d, blessings
 local: Questions about G-d, awe and faith are welcome. Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 Yirat Shamayim (יראת שמים), usually translated "fear of G-d" or "fear of Heaven," means awe, respect and reverence before G-d, not terror. Chabad.org describes it as a "liberating mitzvah": the one thing we are meant to be in awe of is G-d, which frees us from fear of failure, of other people and even of death.

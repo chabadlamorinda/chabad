@@ -2,7 +2,7 @@
 title: צ'ולנט: התבשיל של שבת ולמה אוכלים אותו
 description: מהו צ'ולנט, למה אוכלים תבשיל חם ביום השבת, איך שומרים אותו חם מיום שישי, חמין ספרדי ומתכון ביתי פשוט.
 category: Shabbat & holidays
-related: shabbat-meals, keeping-food-warm-on-shabbat, jewish-foods, sponsoring-a-kiddush, thirty-nine-melachot, shabbat-practical-questions
+related: shabbat-meals, kugel, keeping-food-warm-on-shabbat, jewish-foods, sponsoring-a-kiddush, thirty-nine-melachot, shabbat-practical-questions
 local: בואו לטעום בעצמכם: בכל שבת יש צ'ולנט חם בקידוש שאחרי תפילת שבת (שבת בבוקר ב-10:00) בחב״ד למורינדה, פתוח לכולם.
 ---
 צ'ולנט הוא התבשיל של בשר, שעועית, גריסים ותפוחי אדמה שמתבשל לאט, ושיהודים אוכלים בסעודת הצהריים של שבת כבר מאות שנים. הוא עולה על האש ביום שישי אחר הצהריים לפני כניסת השבת, מתבשל בעדינות כל הלילה, ומגיע לשולחן בשבת חם, עשיר וריחני.

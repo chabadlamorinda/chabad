@@ -2,7 +2,7 @@
 title: Ми шеберах: молитва об исцелении и благословении
 description: Что такое молитва «Ми шеберах», как попросить ее для больного, почему используют имя матери и в каких еще случаях ее произносят.
 category: Prayer & Torah
-related: tehillim, adding-a-name-for-healing, hospital-stay-in-contra-costa, getting-a-hebrew-name-as-an-adult, praying-for-others, prayer-before-surgery, prayer, aliyah, tzedakah
+related: tehillim, living-with-chronic-illness, adding-a-name-for-healing, hospital-stay-in-contra-costa, getting-a-hebrew-name-as-an-adult, praying-for-others, prayer-before-surgery, prayer, aliyah, tzedakah
 local: Чтобы добавить имя в наши молитвы об исцелении, зайдите на chabadoflamorinda.com/help/someone-is-sick или звоните раввину Лабковскому: 925-384-7242.
 ---
 «Ми шеберах» - это короткая молитва, которую обычно произносят у Торы, прося Б-га благословить человека. Лучше всего она известна как молитва об исцелении больного, но есть также «Ми шеберах» для вызванного к Торе, для новорожденного, для общины и другие.

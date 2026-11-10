@@ -2,7 +2,7 @@
 title: "שנים עשר שבטי ישראל: שמות, משמעות ומאיזה שבט אתם"
 description: שמות י"ב השבטים, בני יעקב, מה משמעות לוי ויהודה היום, עשרת השבטים האבודים ואיך לברר את שבטכם.
 category: Prayer & Torah
-related: kohen-levi-yisrael, ten-lost-tribes, ephraim-and-menashe, joseph-and-his-brothers, jacob-our-father, israel-and-the-jewish-people, the-matriarchs
+related: kohen-levi-yisrael, jews-hebrews-israelites, ten-lost-tribes, ephraim-and-menashe, joseph-and-his-brothers, jacob-our-father, israel-and-the-jewish-people, the-matriarchs
 local: לא בטוחים אם אתם כהן, לוי או ישראל? שאלו את הרב: 925-384-7242 או /help/talk-to-the-rabbi.
 ---
 שנים עשר שבטי ישראל יוצאים משנים עשר בני יעקב: ראובן, שמעון, לוי, יהודה, יששכר, זבולון, דן, נפתלי, גד, אשר, יוסף ובנימין. כיום כמעט כל יהודי הוא חלק מעם ישראל, ומשפחה יהודית יודעת לרוב רק אם היא כהן, לוי או ישראל.

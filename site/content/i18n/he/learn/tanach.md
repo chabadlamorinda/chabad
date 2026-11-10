@@ -2,7 +2,7 @@
 title: תנ״ך: 24 הספרים ואיך אנחנו קוראים בהם
 description: מהו התנ״ך: תורה, נביאים וכתובים, 24 הספרים, איך קוראים בהם בבית הכנסת, ולמה התורה שבעל פה הולכת איתם.
 category: Prayer & Torah
-related: torah, song-of-songs, book-of-genesis, daniel, what-is-a-prophet, samuel-the-prophet, rashi, torah-reading, haftarah, talmud
+related: torah, book-of-job, song-of-songs, book-of-genesis, daniel, what-is-a-prophet, samuel-the-prophet, rashi, torah-reading, haftarah, talmud
 local: רוצים להתחיל ללמוד תנ״ך? משפחות בלאפייט, מוראגה, אורינדה והאיסט ביי: התקשרו לרב ישראל לבקובסקי, 925-384-7242.
 ---
 תנ״ך הוא השם העברי של כתבי הקודש היהודיים. המילה היא ראשי תיבות של שלושת חלקיו: **ת**ורה, **נ**ביאים ו**כ**תובים. זה הספר שכל העולם קורא לו "הביבליה", אבל בשבילנו, היהודים, הוא סיפור המשפחה שלנו, החוק שלנו והשיר שלנו, שקוראים ולומדים אותו בכל שבוע כבר יותר משלושת אלפים שנה.

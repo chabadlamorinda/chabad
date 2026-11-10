@@ -2,7 +2,7 @@
 title: "מהו המשכן? המשכן במדבר ובית לה'"
 description: המשכן במדבר: מה היה, מה היה בתוכו ולמה ה' ביקש לשכון בתוכנו. למדו עם חב"ד לאמורינדה.
 category: Prayer & Torah
-related: the-holy-temple, chanukat-habayit, weekly-parsha, ten-commandments, mezuzah
+related: the-holy-temple, book-of-leviticus, the-priestly-garments, chanukat-habayit, weekly-parsha, ten-commandments, mezuzah
 local: רוצים ללמוד איתנו את פרשת השבוע? התקשרו לחב"ד לאמורינדה 925-384-7242 או ראו /programs/adult-education.
 ---
 המשכן (מִשְׁכָּן, "מקום שכינה") היה המקדש הנייד שבנו בני ישראל במדבר זמן קצר אחרי יציאת מצרים, כדי שהשכינה תשרה ביניהם. הוא נדד איתם ארבעים שנה והיה הקדמה לבית המקדש בירושלים.

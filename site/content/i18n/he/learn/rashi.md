@@ -2,7 +2,7 @@
 title: מי היה רש"י? המורה שמאחורי כל דף תנ"ך ותלמוד
 description: מי היה רש"י? רבי שלמה יצחקי מטרואה, פירושו המפורסם לתורה, מהי כתב רש"י, ואיך מתחילים קוראים את הפרשה עם רש"י.
 category: Prayer & Torah
-related: weekly-parsha, midrash, tanach, talmud, daily-torah-study, torah
+related: weekly-parsha, ramban, midrash, tanach, talmud, daily-torah-study, torah
 local: למדו את פרשת השבוע עם רש"י בשיעור ידידותי: ראו /programs/adult-education או התקשרו 925-384-7242.
 ---
 רש"י הוא רבי שלמה יצחקי (1040 עד 1105), רב צרפתי מטרואה, שפירושו הקצר והברור לתורה ולתלמוד מודפס כמעט בכל עמוד בשניהם. השם רש"י הוא ראשי התיבות של שמו, ובמשך כאלף שנה הוא המורה הראשון כמעט של כל תלמיד יהודי.

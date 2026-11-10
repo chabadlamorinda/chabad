@@ -2,7 +2,7 @@
 title: Teaching Children to Pray: Simple Steps for Every Family
 description: How to teach your children to pray, from Modeh Ani in the morning to the Shema at bedtime and blessings on food, even if you are still learning yourself.
 category: Prayer & Torah
-related: modeh-ani, talking-to-kids-about-g-d, bedtime-shema, blessings, jewish-parenting, siddur
+related: modeh-ani, twelve-torah-verses, talking-to-kids-about-g-d, bedtime-shema, blessings, jewish-parenting, siddur
 local: Our Hebrew school and preschool teach children the prayers with songs and stories. Families in Lafayette, Moraga and Orinda can call 925-384-7242.
 ---
 Children love to talk to G-d. They ask big questions, they say thank you easily, and they remember songs. Teaching a child to pray is one of the most precious gifts a parent can give, and you do not need to be an expert to begin.

@@ -2,7 +2,7 @@
 title: אהבת ישראל: איך אוהבים כל יהודי כמו עצמך
 description: מהי אהבת ישראל ביהדות: לאהוב כל יהודי כמו עצמך, למה תורת החסידות אומרת שיש לנו נשמה אחת, ואיך מתרגלים זאת היום.
 category: Jewish ideas
-related: judging-others-favorably, rabbi-akiva, love-jewish-view, being-a-mensch, hillel-and-shammai, chesed, ten-mitzvah-campaigns, lashon-hara, chosen-people
+related: judging-others-favorably, mah-tovu, rabbi-akiva, love-jewish-view, being-a-mensch, hillel-and-shammai, chesed, ten-mitzvah-campaigns, lashon-hara, chosen-people
 local: בואו לפגוש יהודים מכל רקע בבית חב"ד לאמורינדה. ראו /events או התקשרו 925-384-7242.
 ---
 אהבת ישראל היא אהבת היהודי השני: ציווי התורה "ואהבת לרעך כמוך" (ויקרא יט, יח), שתורת החסידות מסבירה כראיית כל יהודי כחלק מאותה נשמה. הקבלה החמה של חב"ד לכל יהודי, בלי קשר לרקע, צומחת מהרעיון הזה.

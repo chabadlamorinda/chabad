@@ -2,7 +2,7 @@
 title: Hosting Your First Shabbat Dinner: A Simple Step-by-Step Guide
 description: Everything you need to host a warm Friday night Shabbat dinner at home: what to buy, the order of the evening, the blessings, and how to make guests feel at home.
 category: Shabbat & holidays
-related: shabbat-meals, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
+related: shabbat-meals, dvar-torah-at-the-shabbat-table, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
 local: Want to see one first? Join a Shabbat dinner with the Rabbi's family at Chabad of Lamorinda in Lafayette, or call 925-384-7242 for candles and a challah.
 ---
 You do not need a big house, fancy dishes or perfect Hebrew to host a Shabbat dinner. You need a table, a few friends or family, and the wish to make Friday night special. Here is everything, step by step.

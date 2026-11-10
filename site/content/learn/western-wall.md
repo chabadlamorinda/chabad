@@ -2,7 +2,7 @@
 title: The Western Wall (Kotel): History and Meaning
 description: What the Western Wall is, why it is the holiest place where Jews pray today, the custom of placing notes, and how to visit.
 category: Jewish ideas
-related: the-holy-temple, bar-mitzvah-in-israel, yom-yerushalayim, jerusalem, prayer, tehillim
+related: the-holy-temple, shechinah, bar-mitzvah-in-israel, yom-yerushalayim, jerusalem, prayer, tehillim
 local: Want to say a prayer or Tehillim for someone? Share names with Chabad of Lamorinda through chabadoflamorinda.com/tehillim or call 925-384-7242.
 ---
 The Western Wall, called the Kotel in Hebrew, is part of the ancient retaining wall that surrounded the Temple Mount in Jerusalem. It is the closest place to the site of the Holy Temple where Jews gather to pray today, and for many centuries it has been the heart of Jewish prayer and longing.

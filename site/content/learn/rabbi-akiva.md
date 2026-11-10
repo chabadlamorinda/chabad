@@ -2,7 +2,7 @@
 title: Rabbi Akiva: The Shepherd Who Became the Greatest Sage
 description: Who was Rabbi Akiva? His story from shepherd at 40 to teacher of thousands, Rachel's faith, "love your fellow," and why we mourn his students in the Omer.
 category: Prayer & Torah
-related: counting-the-omer, lag-baomer, ahavat-yisrael, talmud, pirkei-avot
+related: counting-the-omer, rabbi-yochanan-ben-zakkai, lag-baomer, ahavat-yisrael, talmud, pirkei-avot
 local: Come learn Torah with us in Lafayette, Moraga and Orinda. It is never too late to start. Call 925-384-7242 or see /programs/adult-education.
 ---
 Rabbi Akiva was a Jewish sage of the first and second centuries who began studying Torah at age 40 and became one of the greatest teachers in Jewish history. His story teaches that no one is too old or too far behind to begin, and that love for every fellow Jew is the heart of the Torah.

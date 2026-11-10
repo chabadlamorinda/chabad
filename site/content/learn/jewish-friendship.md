@@ -2,7 +2,7 @@
 title: Friendship in Judaism: How to Be a Good Friend
 description: What the Torah and the Sages teach about friendship: "acquire a friend," David and Jonathan, loving your fellow as yourself, and making and keeping good friends.
 category: Jewish ideas
-related: chesed, feeling-lonely, pirkei-avot, forgiveness-and-making-peace, lashon-hara
+related: chesed, finding-a-mentor, feeling-lonely, pirkei-avot, forgiveness-and-making-peace, lashon-hara
 local: Looking for friends and community in Lafayette, Moraga and Orinda? Come for Shabbat, a class or a holiday at Chabad of Lamorinda: everyone is welcome. Call 925-384-7242.
 ---
 "Acquire for yourself a friend" (Pirkei Avot 1:6). Judaism takes friendship seriously. A good friend is not a luxury; it is one of the main ways we grow, keep our spirits up and serve G-d. Here is what Jewish tradition teaches about finding, being and keeping a good friend.

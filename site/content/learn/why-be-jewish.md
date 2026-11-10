@@ -2,7 +2,7 @@
 title: Why Be Jewish? What Makes Jewish Life Worth Living
 description: Why be Jewish today? The soul, the mission, the family of the Jewish people and the meaning that a single mitzvah brings, explained warmly through Chabad teaching.
 category: Jewish ideas
-related: who-is-a-jew, doubts-in-faith, chosen-people, thirteen-principles-of-faith, the-soul, purpose-of-life, starting-jewish-observance, jewish-pride
+related: who-is-a-jew, myths-and-facts-about-judaism, doubts-in-faith, chosen-people, thirteen-principles-of-faith, the-soul, purpose-of-life, starting-jewish-observance, jewish-pride
 local: Every Jew is welcome at Chabad of Lamorinda in Lafayette, whatever your background; no membership needed. Talk with the Rabbi any time: 925-384-7242.
 ---
 Many people grow up knowing they are Jewish without ever being told why it matters. In a busy, modern life, it is a fair question: why be Jewish? Here is how Judaism, and especially Chassidic teaching, answers it.

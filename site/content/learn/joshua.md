@@ -2,7 +2,7 @@
 title: "Joshua in the Bible: Moses' Student Who Led Us Into the Land"
 description: Who was Joshua? Moses' devoted student, one of the two faithful spies, the leader who crossed the Jordan and fell Jericho, and a model of loyal learning.
 category: Prayer & Torah
-related: moses, what-is-a-prophet, pirkei-avot, twelve-tribes, torah
+related: moses, samson, what-is-a-prophet, pirkei-avot, twelve-tribes, torah
 local: Want your child to learn from Torah heroes like Joshua? See /programs/hebrew-school or call 925-384-7242.
 ---
 Joshua (יהושע, Yehoshua) was the devoted student and attendant of Moses who became the leader of the Jewish people after Moses died. He led them across the Jordan River into the Land of Israel, and he is the second link in the chain that passes the Torah from one generation to the next.

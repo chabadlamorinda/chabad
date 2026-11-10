@@ -2,7 +2,7 @@
 title: Daily Rambam Study: Learning the Mishneh Torah
 description: What the Rambam's Mishneh Torah is, why the Rebbe launched daily Rambam study, the three study tracks, and how to join the cycle.
 category: Prayer & Torah
-related: maimonides, daily-torah-study, 613-mitzvot, the-rebbe
+related: maimonides, ramban, daily-torah-study, 613-mitzvot, the-rebbe
 local: Want help starting daily Rambam study? Join a class at chabadoflamorinda.com/programs/adult-education or call 925-384-7242.
 ---
 Daily Rambam study is a worldwide learning cycle in which Jews study the Rambam's Mishneh Torah, a complete code of Jewish law, on a fixed daily schedule. It was launched by the Lubavitcher Rebbe in 1984 so that Jews everywhere could learn the entire Torah's laws together.

@@ -2,7 +2,7 @@
 title: לגדל ילדים יהודים במקום שיש בו מעט משפחות יהודיות
 description: הילד שלכם היהודי היחיד בכיתה? דרכים מעשיות לבנות גאווה יהודית, חברים ומסורת בלפאייט, מוראגה, אורינדה והאיסט ביי.
 category: Jewish home
-related: jewish-kids-in-lamorinda, a-jewish-childs-bedroom, jewish-pride, shabbat-with-kids, jewish-parenting, hebrew-school-in-lamorinda
+related: jewish-kids-in-lamorinda, twelve-torah-verses, a-jewish-childs-bedroom, jewish-pride, shabbat-with-kids, jewish-parenting, hebrew-school-in-lamorinda
 local: רוצים שהילד יפגוש ילדים יהודים אחרים? התקשרו 925-384-7242 או ראו את עמודי בית הספר העברי והגן.
 ---
 אפשר לגדל ילדים יהודים בטוחים בעצמם גם כשהם הילד היהודי היחיד בכיתה, אם הופכים את היהדות לחמה ושמחה בבית, נותנים להם חברים יהודים ומאפשרים להם גאווה במי שהם. ילדים שמרגישים יהודים ליד שולחן המשפחה, עם ילדים יהודים אחרים, נושאים את הגאווה הזו לכל מקום.

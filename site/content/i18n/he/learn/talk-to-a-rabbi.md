@@ -2,7 +2,7 @@
 title: Talk to a Rabbi Near You: Call, Text or Meet in Lafayette
 description: רוצים לדבר עם רב ליד לאפייט, מוראגה או אורינדה? הרב לבקובסקי ישמח לשוחח בפרטיות, בטלפון, בהודעה או פנים אל פנים. בלי חברות.
 category: Lamorinda
-related: what-is-a-rabbi, life-events-in-lamorinda, start-here-jewish-lamorinda, mezuzah, who-is-a-jew
+related: what-is-a-rabbi, finding-a-mentor, life-events-in-lamorinda, start-here-jewish-lamorinda, mezuzah, who-is-a-jew
 local: התקשרו אל הרב ישראל לבקובסקי, 925-384-7242, או השתמשו בכפתורי ההתקשרות וההודעה בעמוד /help/talk-to-the-rabbi.
 ---
 אפשר לדבר עם רב בלאפייט בטלפון 925-384-7242, עם הרב ישראל לבקובסקי מחב"ד לאמורינדה, וגם בהודעה או בוואטסאפ. כל יהודי בלאפייט, מוראגה, אורינדה ומזרח המפרץ מוזמן לשאול, הכול פרטי, ואין צורך בחברות.

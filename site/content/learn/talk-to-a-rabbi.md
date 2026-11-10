@@ -2,7 +2,7 @@
 title: Talk to a Rabbi Near You: Call, Text or Meet in Lafayette
 description: Want to talk to a rabbi near Lafayette, Moraga or Orinda? Rabbi Labkowski is happy to talk privately, by call, text or in person. No membership needed.
 category: Lamorinda
-related: what-is-a-rabbi, life-events-in-lamorinda, start-here-jewish-lamorinda, mezuzah, who-is-a-jew
+related: what-is-a-rabbi, finding-a-mentor, life-events-in-lamorinda, start-here-jewish-lamorinda, mezuzah, who-is-a-jew
 local: Call Rabbi Yisroel Labkowski at 925-384-7242, or use the Call, Text and WhatsApp buttons at /help/talk-to-the-rabbi.
 ---
 You can talk to a rabbi in Lafayette by calling Rabbi Yisroel Labkowski of Chabad of Lamorinda at 925-384-7242, or by texting or using WhatsApp. Every Jew in Lafayette, Moraga, Orinda and the East Bay is welcome to ask, it is private, and no membership is required.

@@ -2,7 +2,7 @@
 title: "Self-Esteem in Judaism: A Jewish View of Self-Worth and Humility"
 description: A Jewish view of self-esteem: why you matter, why humility is not low self-worth, and the two-pocket teaching. Talk with Chabad of Lamorinda.
 category: Jewish ideas
-related: humility, the-soul, mental-health-jewish-view, forgiving-yourself, what-is-a-mitzvah
+related: humility, the-beinoni, the-soul, mental-health-jewish-view, forgiving-yourself, what-is-a-mitzvah
 local: Need someone to talk to? Reach Rabbi or Rebbetzin Labkowski privately at /help/talk-to-the-rabbi or 925-384-7242.
 ---
 In Judaism, healthy self-esteem means knowing that you have real worth and a mission that only you can fulfill, while humility means recognizing that your gifts come from G-d. The two do not conflict: humility is not thinking you are nothing, and self-worth is not thinking you are better than others.

@@ -2,7 +2,7 @@
 title: "Samuel the Prophet: Hannah's Son and the Man Who Anointed David"
 description: Who was Samuel the prophet? Hannah's long-awaited son, raised at Shiloh, who called G-d's word, led Israel and anointed Saul and David. Read his story.
 category: Prayer & Torah
-related: hannah-and-her-prayer, king-david, talking-to-g-d-in-your-own-words, tanach, prayer
+related: hannah-and-her-prayer, king-saul, king-david, talking-to-g-d-in-your-own-words, tanach, prayer
 local: Want to learn the Prophets with a teacher? Ask about classes: call Rabbi Labkowski at 925-384-7242.
 ---
 Samuel the prophet (שְׁמוּאֵל הַנָּבִיא, Shmuel HaNavi) was the son of Hannah and Elkanah, the last of the judges of Israel, and the prophet who anointed both King Saul and King David. His name means "G-d heard," because he was the answer to a mother's prayer.

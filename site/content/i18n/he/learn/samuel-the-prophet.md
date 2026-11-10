@@ -2,7 +2,7 @@
 title: "שמואל הנביא: בנה של חנה והאיש שמשח את דוד"
 description: מי היה שמואל הנביא? בנה של חנה שהתפללה, שגדל בשילה, שמע את דבר ה', הנהיג את ישראל ומשח את שאול ודוד. קראו את סיפורו.
 category: Prayer & Torah
-related: hannah-and-her-prayer, king-david, talking-to-g-d-in-your-own-words, tanach, prayer
+related: hannah-and-her-prayer, king-saul, king-david, talking-to-g-d-in-your-own-words, tanach, prayer
 local: רוצים ללמוד נביאים עם מורה? שאלו על שיעורים: התקשרו לרב לבקובסקי 925-384-7242.
 ---
 שמואל הנביא היה בנם של חנה ואלקנה, אחרון שופטי ישראל, והנביא שמשח את שאול המלך ואת דוד המלך. שמו פירושו "שמע אל", כי הוא היה התשובה לתפילת אם.

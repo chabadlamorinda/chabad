@@ -2,7 +2,7 @@
 title: Кто такой еврей? Еврейская идентичность согласно еврейскому закону
 description: Деликатное объяснение того, кто является евреем по традиционному еврейскому закону, почему это передается по матери и как проходит гиюр.
 category: Jewish ideas
-related: jewish-women, chosen-people, proving-jewish-ancestry, discovered-you-are-jewish, adult-brit-milah, why-be-jewish, russian-speaking-jews-in-lamorinda, jewish-genealogy, hebrew-names, noahide-laws, teshuvah
+related: jewish-women, jews-hebrews-israelites, chosen-people, proving-jewish-ancestry, discovered-you-are-jewish, adult-brit-milah, why-be-jewish, russian-speaking-jews-in-lamorinda, jewish-genealogy, hebrew-names, noahide-laws, teshuvah
 local: Если у вас есть вопросы о вашем собственном еврейском происхождении, раввин Лабковский с радостью поговорит с вами наедине и доброжелательно. Звоните: 925-384-7242.
 ---
 Согласно традиционному еврейскому закону (алахе), человек является евреем, если его мать еврейка или если он прошел гиюр (переход в иудаизм) по еврейскому закону. Еврейство не утрачивается из-за несоблюдения заповедей, отсутствия веры или знаний: еврей всегда остается евреем.

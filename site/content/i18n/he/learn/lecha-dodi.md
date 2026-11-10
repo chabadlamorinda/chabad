@@ -2,7 +2,7 @@
 title: Lecha Dodi: Meaning, Author and Why We Turn to Welcome Shabbat
 description: Lecha Dodi, the Friday night hymn "Come, my beloved, to greet the bride": its meaning, author, acrostic and the custom of turning toward the door.
 category: Shabbat & holidays
-related: shalom-aleichem, tzfat, zemirot, shabbat-candles, friday-night-dinner-step-by-step
+related: shalom-aleichem, the-arizal, tzfat, zemirot, shabbat-candles, friday-night-dinner-step-by-step
 local: הצטרפו אלינו לקבלת שבת ושירת לכה דודי בציבור. התקשרו אל הרב לבקובסקי: 925-384-7242 או ראו /events.
 ---
 "לְכָה דוֹדִי" הוא הפיוט שאומרים בתחילת תפילת ליל שבת כדי לקבל את השבת ככלה. הוא נכתב בצפת במאה ה-16 על ידי רבי שלמה הלוי אלקבץ והוא שיא קבלת שבת. הערב, קבלת שבת בחב"ד לאמורינדה היא ב-{kabbalat-shabbat}.

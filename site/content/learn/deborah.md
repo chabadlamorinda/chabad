@@ -2,7 +2,7 @@
 title: "Deborah the Prophetess: Judge, Leader and Singer of Israel"
 description: Who was Deborah the prophetess? The only woman judge, her palm tree, Barak, Yael, her song, and what she teaches women and girls today.
 category: Prayer & Torah
-related: miriam, jewish-women, shabbat-shirah, hannah-and-her-prayer, bat-mitzvah
+related: miriam, samson, jewish-women, shabbat-shirah, hannah-and-her-prayer, bat-mitzvah
 local: Moms, daughters and friends are welcome at the Women's Circle. See /programs/womens-circle or call 925-384-7242.
 ---
 Deborah (דְּבוֹרָה) was a prophetess and the only woman among the judges who led the Jewish people after Joshua. She judged Israel from beneath a palm tree, led the nation to victory over the Canaanites with Barak, and composed a song of thanks to G-d that we read in synagogue to this day.

@@ -2,7 +2,7 @@
 title: Lecha Dodi: Meaning, Author and Why We Turn to Welcome Shabbat
 description: Lecha Dodi, the Friday night hymn "Come, my beloved, to greet the bride": its meaning, author, acrostic and the custom of turning toward the door.
 category: Shabbat & holidays
-related: shalom-aleichem, tzfat, zemirot, shabbat-candles, friday-night-dinner-step-by-step
+related: shalom-aleichem, the-arizal, tzfat, zemirot, shabbat-candles, friday-night-dinner-step-by-step
 local: Join us for Kabbalat Shabbat and sing Lecha Dodi together. Call Rabbi Labkowski at 925-384-7242 or see /events.
 ---
 Lecha Dodi (לְכָה דוֹדִי), "Come, my beloved," is the hymn sung at the start of the Friday night service to welcome Shabbat as a bride. It was written in Safed in the 1500s by Rabbi Shlomo HaLevi Alkabetz and is the highlight of Kabbalat Shabbat. This Friday night, Kabbalat Shabbat at Chabad of Lamorinda is at {kabbalat-shabbat}.

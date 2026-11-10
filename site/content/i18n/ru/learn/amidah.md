@@ -2,7 +2,7 @@
 title: Амида: главная еврейская молитва
 description: Что такое Амида (Шмоне эсре), ее структура из восхваления, просьб и благодарности, когда ее читают и как стоять и молиться.
 category: Prayer & Torah
-related: prayer, kedushah, hannah-and-her-prayer, shuckling, ashrei, aleinu, prayers-for-rain, siddur, minyan, shema
+related: prayer, musaf, tachanun, kedushah, hannah-and-her-prayer, shuckling, ashrei, aleinu, prayers-for-rain, siddur, minyan, shema
 local: Хотите шаг за шагом изучить Амиду? Приходите на занятия: chabadoflamorinda.com/programs/adult-education или звоните: 925-384-7242.
 ---
 Амида - это центральная молитва каждого еврейского богослужения. Ее читают про себя, стоя лицом к Иерусалиму. Ее также называют «Шмоне эсре», «восемнадцать», по восемнадцати изначальным благословениям, а в Талмуде просто «Тфила», «молитва».

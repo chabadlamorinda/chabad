@@ -2,7 +2,7 @@
 title: "The Book of Exodus (Shemot): From Slavery to Sinai"
 description: A plain summary of the Book of Exodus (Shemot): its 11 weekly portions, why it is called Names, and how it leads to Sinai, the Mishkan and Passover.
 category: Prayer & Torah
-related: exodus-story, moses, weekly-parsha, ten-commandments, passover-for-beginners
+related: exodus-story, book-of-leviticus, moses, weekly-parsha, ten-commandments, passover-for-beginners
 local: Hear the Exodus portions read in Lafayette and prepare for Passover with us. Call 925-384-7242 or see /events.
 ---
 The Book of Exodus, called Shemot (שמות, "Names") in Hebrew, is the second of the Five Books of Moses. It tells how the Jewish people, enslaved in Egypt, are redeemed, receive the Torah at Mount Sinai, and build the Mishkan, the portable Sanctuary, so that G-d can dwell among them.

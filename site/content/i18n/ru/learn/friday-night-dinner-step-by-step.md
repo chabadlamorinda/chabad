@@ -2,7 +2,7 @@
 title: Пятничный ужин шаг за шагом: ваша первая субботняя трапеза дома
 description: Весь пятничный ужин Шабата по порядку, от зажигания свечей до Биркат а-мазон, и что говорить на каждом шаге простыми словами.
 category: Shabbat & holidays
-related: hosting-your-first-shabbat-dinner, parsha-for-kids, shabbat-candles, kiddush, hamotzi, birkat-hamazon
+related: hosting-your-first-shabbat-dinner, dvar-torah-at-the-shabbat-table, parsha-for-kids, shabbat-candles, kiddush, hamotzi, birkat-hamazon
 local: Хотите сначала увидеть, как это делается? Приходите на субботний ужин в Хабад Ламоринды в Лафайетте, для семей из Лафайетта, Мораги и Оринды: 925-384-7242.
 ---
 У пятничного ужина есть своя форма, и как только вы узнаете порядок, он становится естественным. Ничто здесь не должно быть идеальным. Если вы зажгли свечи и разделили трапезу, вы сделали Шабат. Вот весь вечер, шаг за шагом, с несколькими простыми словами для каждой части.

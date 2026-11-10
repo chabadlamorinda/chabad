@@ -2,7 +2,7 @@
 title: Kohen, Levi or Yisrael? The Tribes of Israel and Your Family Line
 description: האם אני כהן או לוי? איך מעמד כהן, לוי וישראל עובר מאב לבן, מה שם משפחה או בדיקת DNA יכולים להראות, ואיך שואלים את הרב.
 category: Jewish ideas
-related: birkat-kohanim, jewish-last-names, twelve-tribes, pidyon-haben, jewish-genealogy, aliyah, who-is-a-jew
+related: birkat-kohanim, the-priestly-garments, jewish-last-names, twelve-tribes, pidyon-haben, jewish-genealogy, aliyah, who-is-a-jew
 local: תוהים אם משפחתכם כהנים או לוויים? הרב לבקובסקי יעזור לכם בפרטיות. התקשרו או שלחו הודעה: 925-384-7242.
 ---
 כהן הוא גבר יהודי שיורד בקו האב מאהרן, לוי יורד בקו האב משבט לוי, וכל השאר ישראלים. כל מעמד עובר מאב לבן, ולכן הדרך הטובה ביותר לדעת מהו שלכם היא מסורת המשפחה, והרב יכול לעזור לכם לבדוק.

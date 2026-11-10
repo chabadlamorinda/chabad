@@ -2,7 +2,7 @@
 title: הכותל המערבי: היסטוריה ומשמעות
 description: מהו הכותל המערבי, למה הוא המקום הקדוש ביותר שבו יהודים מתפללים היום, מנהג הפתקים ואיך מבקרים בו.
 category: Jewish ideas
-related: the-holy-temple, bar-mitzvah-in-israel, yom-yerushalayim, jerusalem, prayer, tehillim
+related: the-holy-temple, shechinah, bar-mitzvah-in-israel, yom-yerushalayim, jerusalem, prayer, tehillim
 local: רוצים לומר תפילה או תהלים בשביל מישהו? שלחו שמות לחב״ד למורינדה דרך chabadoflamorinda.com/tehillim או התקשרו 925-384-7242.
 ---
 הכותל המערבי הוא חלק מחומת התמך העתיקה שהקיפה את הר הבית בירושלים. זהו המקום הקרוב ביותר למקום בית המקדש שבו יהודים מתכנסים להתפלל היום, ובמשך מאות שנים הוא לב התפילה והגעגוע היהודיים.

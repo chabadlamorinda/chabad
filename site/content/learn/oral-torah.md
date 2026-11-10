@@ -2,7 +2,7 @@
 title: What Is the Oral Torah? Why the Written Torah Needs a Teacher
 description: The Oral Torah is the explanation of the Written Torah given at Sinai. Learn what it is, examples, how it was passed down and why it was written.
 category: Prayer & Torah
-related: mishnah, talmud, what-is-halacha, torah, tanach
+related: mishnah, the-sanhedrin, talmud, what-is-halacha, torah, tanach
 local: Curious to learn from a living teacher? Ask about classes at /programs/adult-education or call Rabbi Labkowski at 925-384-7242.
 ---
 The Oral Torah (תּוֹרָה שֶׁבְּעַל פֶּה, Torah shebe'al peh) is the explanation of the Written Torah that, according to Jewish tradition, G-d gave Moses at Mount Sinai together with the written text. It supplies the details that make the commandments possible to keep, and it was handed down from teacher to student until it was written as the Mishnah and the Talmud.

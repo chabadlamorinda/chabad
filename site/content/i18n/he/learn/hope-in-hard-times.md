@@ -2,7 +2,7 @@
 title: תקווה בזמנים קשים: מה היהדות מלמדת על לא לוותר
 description: תקווה וביטחון בה׳ כשהחיים קשים: חשוב טוב יהיה טוב, סיפור התקווה של עמנו, צעדים קטנים בכל יום, ומתי לבקש עזרה.
 category: Jewish ideas
-related: bitachon, angry-at-g-d, psalm-23, doubts-in-faith, why-bad-things-happen, mental-health-jewish-view, tehillim, feeling-lonely
+related: bitachon, king-hezekiah, angry-at-g-d, psalm-23, doubts-in-faith, why-bad-things-happen, mental-health-jewish-view, tehillim, feeling-lonely
 local: אם אתם עוברים תקופה קשה בלאפייט, מוראגה או אורינדה, הרב ישראל והרבנית ציפורה לבקובסקי כאן בשבילכם: 925-384-7242.
 ---
 זמנים קשים מגיעים לכולם: מחלה, אובדן עבודה, נישואים במשבר, אובדן שאינו מחלים. היהדות אינה מעמידה פנים שהדברים האלה לא כואבים. היא כן מלמדת שהסיפור עוד לא נגמר.

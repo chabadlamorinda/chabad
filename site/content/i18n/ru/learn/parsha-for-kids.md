@@ -2,7 +2,7 @@
 title: Недельная глава для детей: как говорить о Торе за субботним столом
 description: Простой пятиминутный ритуал в пятницу вечером, чтобы обсудить недельную главу Торы с детьми от 3 до 13 лет: одна история, один вопрос, один урок.
 category: Jewish home
-related: weekly-parsha, shabbat-with-kids, friday-night-dinner-step-by-step, jewish-parenting, hebrew-school-in-lamorinda
+related: weekly-parsha, samson, shabbat-with-kids, friday-night-dinner-step-by-step, jewish-parenting, hebrew-school-in-lamorinda
 local: Недельную главу ищите на /parsha, а по телефону 925-384-7242 спросите о еврейской школе и детских программах.
 ---
 Чтобы научить детей недельной главе Торы (паршe), уделите пять минут за субботним столом одной истории, одному вопросу и одному уроку и позвольте детям говорить больше. В каждой неделе года есть своя глава, поэтому всегда есть что-то новое.

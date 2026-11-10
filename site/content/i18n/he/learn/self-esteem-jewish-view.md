@@ -2,7 +2,7 @@
 title: "הערך העצמי ביהדות: מבט יהודי על ערך עצמי וענווה"
 description: מבט יהודי על ערך עצמי: למה אתם חשובים, למה ענווה אינה ערך עצמי נמוך, ותורת שתי הכיסים. דברו עם חב"ד לאמורינדה.
 category: Jewish ideas
-related: humility, the-soul, mental-health-jewish-view, forgiving-yourself, what-is-a-mitzvah
+related: humility, the-beinoni, the-soul, mental-health-jewish-view, forgiving-yourself, what-is-a-mitzvah
 local: צריכים עם מי לדבר? פנו ברצינות ובפרטיות לרב או לרבנית לבקובסקי ב-/help/talk-to-the-rabbi או 925-384-7242.
 ---
 ביהדות, ערך עצמי בריא פירושו לדעת שיש לכם ערך אמיתי ושליחות שרק אתם יכולים למלא, ואילו ענווה פירושה להכיר בכך שכישרונותיכם ניתנו מה'. השניים אינם סותרים: ענווה אינה לחשוב שאתם כלום, וערך עצמי אינו לחשוב שאתם טובים מאחרים.

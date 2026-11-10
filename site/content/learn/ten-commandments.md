@@ -2,7 +2,7 @@
 title: The Ten Commandments: What They Say and What They Mean
 description: The Ten Commandments in plain English, where they appear in the Torah, how they were given at Sinai, and why we hear them read on Shavuot.
 category: Prayer & Torah
-related: torah, sivan, shavuot-for-beginners, shavuot-night-learning, shavuot-dairy-foods, 613-mitzvot, counting-the-omer, shabbat
+related: torah, jethro, sivan, shavuot-for-beginners, shavuot-night-learning, shavuot-dairy-foods, 613-mitzvot, counting-the-omer, shabbat
 local: Hear the Ten Commandments read in synagogue on Shavuot, a special event for children too. See chabadoflamorinda.com/holidays/shavuot or call 925-384-7242.
 ---
 The Ten Commandments are the ten statements G-d spoke to the entire Jewish people at Mount Sinai, and later engraved on two stone tablets. They include believing in G-d, keeping Shabbat, honoring parents, and not murdering, stealing or lying.

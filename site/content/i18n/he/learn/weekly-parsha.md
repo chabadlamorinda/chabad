@@ -2,7 +2,7 @@
 title: פרשת השבוע: איך קוראים בתורה בכל שבוע
 description: מהי פרשת השבוע, איך 54 הפרשות מתחלקות לאורך השנה היהודית, ודרכים קלות ללמוד את הפרשה ולשוחח עליה בכל שבוע.
 category: Prayer & Torah
-related: torah-reading, book-of-exodus, book-of-genesis, the-mishkan, parsha-for-kids, joseph-and-his-brothers, rashi, shabbat-shirah, torah-study-for-women, bar-mitzvah-speech, torah, daily-torah-study, haftarah
+related: torah-reading, dvar-torah-at-the-shabbat-table, book-of-exodus, book-of-genesis, the-mishkan, parsha-for-kids, joseph-and-his-brothers, rashi, shabbat-shirah, torah-study-for-women, bar-mitzvah-speech, torah, daily-torah-study, haftarah
 local: קראו רעיונות שבועיים מהתורה ב-chabadoflamorinda.com/parsha או הצטרפו לשיעור ב-chabadoflamorinda.com/programs/adult-education.
 ---
 פרשת השבוע היא הקטע מהתורה שקוראים בבית הכנסת בכל שבת. חמשת חומשי תורה מחולקים ל-54 פרשות, כך שכל התורה נקראת פעם בשנה, מבריאת העולם ועד פטירת משה.

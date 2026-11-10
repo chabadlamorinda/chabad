@@ -2,7 +2,7 @@
 title: "Что такое Мишкан? Скиния в пустыне и дом для Б-га"
 description: Мишкан, скиния в пустыне: что это было, что было внутри и почему Б-г пожелал обитать в нас. Учитесь с Хабадом Ламоринды.
 category: Prayer & Torah
-related: the-holy-temple, chanukat-habayit, weekly-parsha, ten-commandments, mezuzah
+related: the-holy-temple, book-of-leviticus, the-priestly-garments, chanukat-habayit, weekly-parsha, ten-commandments, mezuzah
 local: Хотите изучать недельную главу вместе с нами? Позвоните в Хабад Ламоринды 925-384-7242 или см. /programs/adult-education.
 ---
 Мишкан (מִשְׁכָּן, «место обитания») - переносное святилище, или скиния, которое евреи построили в пустыне вскоре после исхода из Египта, чтобы Б-жественное присутствие обитало среди них. Он сорок лет странствовал с народом и стал предшественником Храма в Иерусалиме.

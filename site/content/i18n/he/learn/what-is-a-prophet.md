@@ -2,7 +2,7 @@
 title: "מהו נביא ביהדות? הנביאים וספריהם"
 description: מהו נביא ביהדות? ארבעים ושמונה נביאים, שבע נביאות, ספרי נביאים והפטרה מוסברים. שאלו את חב"ד לאמורינדה.
 category: Prayer & Torah
-related: tanach, jeremiah, joshua, haftarah, elijah-the-prophet, moses, miriam
+related: tanach, ezekiel, isaiah, jeremiah, joshua, haftarah, elijah-the-prophet, moses, miriam
 local: סקרנים לגבי הנביאים? הצטרפו לשיעור תורה: ראו /programs/adult-education או התקשרו 925-384-7242.
 ---
 נביא (נָבִיא) ביהדות הוא אדם שה' בחר למסור מסר לעם ישראל: להדריך, להוכיח כשסוטים מהדרך ולנחם בימים קשים. נבואה אינה ניחוש עתידות. התלמוד מונה ארבעים ושמונה נביאים ושבע נביאות שמסריהם נועדו לכל הדורות, והגדול מכולם היה משה.

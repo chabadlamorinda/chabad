@@ -2,7 +2,7 @@
 title: Jewish Meditation: Hisbonenus, Chassidic Contemplation and Prayer
 description: What Jewish meditation is in Chassidic teaching: hisbonenus, contemplating G-d before and during prayer, with simple steps to begin.
 category: Jewish ideas
-related: chassidus, tanya, prayer, niggun
+related: chassidus, kavanah-in-prayer, tanya, prayer, niggun
 local: Learn Chassidic teachings and contemplative prayer in our adult education classes at chabadoflamorinda.com/programs/adult-education, or call 925-384-7242.
 ---
 Jewish meditation in Chassidic teaching is called hisbonenus, "contemplation": thinking deeply about an idea of G-dliness until it moves the heart, especially before and during prayer. Unlike techniques that aim to empty the mind, hisbonenus fills the mind with a true idea and lets it shape our feelings and actions.

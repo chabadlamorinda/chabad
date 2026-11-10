@@ -2,7 +2,7 @@
 title: עשרת המבצעים של הרבי: מה הם ואיך מתחילים
 description: עשרת מבצעי המצוות של הרבי מליובאוויטש מוסברים אחד אחד, למה בחר בהם, וצעד ראשון פשוט לכל אחד.
 category: Jewish ideas
-related: the-rebbe, tikkun-olam, ahavat-yisrael, what-is-a-mitzvah, mitzvah-tanks, chabad, 613-mitzvot
+related: the-rebbe, twelve-torah-verses, tikkun-olam, ahavat-yisrael, what-is-a-mitzvah, mitzvah-tanks, chabad, 613-mitzvot
 local: רוצים להתחיל אחת מעשר המצוות: תפילין, נרות שבת, מזוזה או קופת צדקה? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו ב-chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 עשרת מבצעי המצוות, *המבצעים*, הם עשר מצוות שהרבי מליובאוויטש, רבי מנחם מענדל שניאורסון, ביקש מכל יהודי לקבל על עצמו ולשתף עם אחרים. כל אחת מהן פשוטה מספיק כדי להתחיל היום, וכל אחת פותחת דלת לחיים יהודיים עמוקים יותר.

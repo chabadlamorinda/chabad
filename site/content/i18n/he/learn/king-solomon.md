@@ -2,7 +2,7 @@
 title: "שלמה המלך: החכם באדם, בית המקדש הראשון ושלושת ספריו"
 description: מי היה שלמה המלך? בקשת החכמה, שתי האמהות, בניין בית המקדש הראשון ושלושת ספרי התנ"ך שכתב, עם לקחים להיום.
 category: Prayer & Torah
-related: king-david, kingdoms-of-israel-and-judah, song-of-songs, the-holy-temple, eishet-chayil, pirkei-avot, moses
+related: king-david, book-of-ecclesiastes, kingdoms-of-israel-and-judah, song-of-songs, the-holy-temple, eishet-chayil, pirkei-avot, moses
 local: רוצים ללמוד ספרי חכמה בחברותא? התקשרו 925-384-7242 ושמעו אילו שיעורים מתוכננים.
 ---
 שלמה המלך (שְׁלֹמֹה) היה המלך השלישי של ישראל, בנם של דוד המלך ובת שבע, מפורסם כחכם באדם ובונה בית המקדש הראשון בירושלים. הוא מלך ארבעים שנה, תקופה של שלום ושגשוג, ומיוחסים לו שלושה ספרי תנ"ך: משלי, שיר השירים וקהלת.

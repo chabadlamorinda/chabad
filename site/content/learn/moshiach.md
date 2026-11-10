@@ -2,7 +2,7 @@
 title: Moshiach: The Jewish Belief in the Messiah and the Messianic Era
 description: What Judaism teaches about Moshiach, the Messiah: who he will be, what the Messianic era will look like, and how we prepare for it.
 category: Jewish ideas
-related: the-rebbe, ten-lost-tribes, king-david, last-days-of-passover, 613-mitzvot, teshuvah, chabad
+related: the-rebbe, isaiah, ten-lost-tribes, king-david, last-days-of-passover, 613-mitzvot, teshuvah, chabad
 local: Want to learn more about Moshiach and the Messianic era? Call Rabbi Labkowski at 925-384-7242 and we will be happy to study it with you.
 ---
 Moshiach (the Messiah) is a future leader from the family of King David who, according to Jewish belief, will bring the Jewish people back to the Land of Israel, rebuild the Holy Temple in Jerusalem, and usher in an era of peace and knowledge of G-d for the whole world. Belief in Moshiach is one of the 13 principles of Jewish faith listed by Maimonides.

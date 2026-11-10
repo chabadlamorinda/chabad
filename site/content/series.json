@@ -27,6 +27,7 @@
    "losing-a-parent",
    "unveiling",
    "yahrzeit",
+   "learning-in-memory-of-a-loved-one",
    "yizkor",
    "el-malei-rachamim",
    "visiting-a-grave"
@@ -51,6 +52,7 @@
    "alcohol-free-kiddush",
    "hamotzi",
    "shabbat-meals",
+   "dvar-torah-at-the-shabbat-table",
    "zemirot",
    "shabbat-day",
    "thirty-nine-melachot",
@@ -94,6 +96,7 @@
   "guides": [
    "prayer",
    "modeh-ani",
+   "mah-tovu",
    "adon-olam",
    "morning-blessings",
    "shacharit-morning-service",
@@ -102,7 +105,9 @@
    "shema",
    "amidah",
    "kedushah",
+   "tachanun",
    "hallel",
+   "musaf",
    "aleinu",
    "siddur",
    "daily-prayers",
@@ -111,6 +116,7 @@
    "talking-to-g-d-in-your-own-words",
    "praying-for-others",
    "why-pray",
+   "kavanah-in-prayer",
    "bedtime-shema"
   ]
  },
@@ -120,6 +126,7 @@
   "intro": "From dating and the engagement to the wedding and a happy home.",
   "guides": [
    "jewish-dating",
+   "bashert",
    "jewish-engagement",
    "jewish-wedding-in-lamorinda",
    "choosing-a-wedding-date",
@@ -267,6 +274,7 @@
    "chosen-people",
    "belief-in-g-d",
    "fear-of-g-d",
+   "loving-g-d",
    "doubts-in-faith",
    "thirteen-principles-of-faith",
    "torah-and-science",
@@ -276,6 +284,7 @@
    "tikkun-olam",
    "free-will",
    "why-bad-things-happen",
+   "book-of-job",
    "angry-at-g-d",
    "hope-in-hard-times",
    "hashgacha-pratit",
@@ -311,7 +320,8 @@
    "forgiving-yourself",
    "changing-a-bad-habit",
    "cheshbon-hanefesh",
-   "yetzer-hara"
+   "yetzer-hara",
+   "the-beinoni"
   ]
  }
 ]

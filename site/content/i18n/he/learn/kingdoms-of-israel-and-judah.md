@@ -2,7 +2,7 @@
 title: ממלכת ישראל וממלכת יהודה: כשעם ישראל התפצל לשניים
 description: למה התפצלה ממלכת ישראל לשתי ממלכות? רחבעם וירבעם, גלות הממלכה הצפונית, יהודה וחורבן בית ראשון, בציר זמן פשוט.
 category: Jewish ideas
-related: king-solomon, jewish-history-overview, the-holy-temple, ten-lost-tribes, what-is-a-prophet
+related: king-solomon, king-hezekiah, king-saul, jewish-history-overview, the-holy-temple, ten-lost-tribes, what-is-a-prophet
 local: אוהבים היסטוריה יהודית? התקשרו לרב ישראל לבקובסקי, 925-384-7242, או הצטרפו לשיעור ב[לימודי מבוגרים](/programs/adult-education); כל יהודי בלפאייט, מוראגה ואורינדה מוזמן.
 ---
 אחרי מות שלמה המלך התפצל עם ישראל לשתי ממלכות: ממלכת ישראל הצפונית, בת עשרה שבטים, וממלכת יהודה הדרומית, עם שבטי יהודה, בנימין ולוי. במשך כמאתיים שנה היו שתי מלכויות מקבילות, עד שהצפון הוגלה בידי אשור ומאוחר יותר נפלו יהודה ובית המקדש הראשון לבבל.

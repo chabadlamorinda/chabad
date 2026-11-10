@@ -2,7 +2,7 @@
 title: Techiyat HaMeitim: The Jewish Belief in the Resurrection of the Dead
 description: What Jews believe about resurrection of the dead (techiyat hameitim): the 13th principle of faith, the Amidah, Ezekiel's dry bones, and Moshiach.
 category: Jewish ideas
-related: moshiach, afterlife, thirteen-principles-of-faith, the-soul, amidah
+related: moshiach, ezekiel, afterlife, thirteen-principles-of-faith, the-soul, amidah
 local: Questions about life, death and what comes after are welcome. Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 Techiyat hameitim (תחיית המתים), the resurrection of the dead, is the Jewish belief that in the time of Moshiach the dead will be brought back to life, with soul and body reunited. It is the thirteenth of the thirteen principles of Jewish faith, and we mention it in our prayers every day.

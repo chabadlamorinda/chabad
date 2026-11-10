@@ -2,7 +2,7 @@
 title: Who Was Rashi? The Teacher Behind Every Jewish Bible and Talmud Page
 description: Who was Rashi? Rabbi Shlomo Yitzchaki of Troyes, his famous Torah commentary, what Rashi script is, and how a beginner can read the parsha with Rashi.
 category: Prayer & Torah
-related: weekly-parsha, midrash, tanach, talmud, daily-torah-study, torah
+related: weekly-parsha, ramban, midrash, tanach, talmud, daily-torah-study, torah
 local: Learn the weekly parsha with Rashi in a friendly class: see /programs/adult-education or call 925-384-7242.
 ---
 Rashi is Rabbi Shlomo Yitzchaki (1040 to 1105), a French rabbi from Troyes whose short, clear commentary on the Torah and the Talmud is printed on nearly every page of both. The name Rashi is simply the initials of his name, and for almost a thousand years he has been the first teacher of nearly every Jewish student.

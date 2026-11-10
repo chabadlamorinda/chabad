@@ -2,7 +2,7 @@
 title: Что такое любовь? Еврейский взгляд на любовь, ахава и отдачу
 description: Что говорит иудаизм о любви? Слово ахава происходит от «хав», «давать». Любовь к Б-гу, супругу, детям и ближнему. Для пар Ламоринды.
 category: Jewish ideas
-related: shalom-bayit, ahavat-yisrael, jewish-dating, being-a-mensch, tikkun-olam
+related: shalom-bayit, bashert, ahavat-yisrael, jewish-dating, being-a-mensch, tikkun-olam
 local: Укрепите брак или найдите пару с советом рава и ребецин: /help/talk-to-the-rabbi или 925-384-7242.
 ---
 В иудаизме любовь (אַהֲבָה, ахава) это не только чувство, но и способ отдавать: ивритское слово происходит от корня «хав», что значит «дай». Чем больше вы отдаёте человеку, тем сильнее ваша любовь к нему.

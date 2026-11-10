@@ -2,7 +2,7 @@
 title: סעודת ליל שבת צעד אחר צעד: הסעודה הראשונה שלכם בבית
 description: כל סעודת ליל שבת לפי הסדר, מהדלקת נרות ועד ברכת המזון, עם מה אומרים בכל שלב במילים פשוטות.
 category: Shabbat & holidays
-related: hosting-your-first-shabbat-dinner, parsha-for-kids, shabbat-candles, kiddush, hamotzi, birkat-hamazon
+related: hosting-your-first-shabbat-dinner, dvar-torah-at-the-shabbat-table, parsha-for-kids, shabbat-candles, kiddush, hamotzi, birkat-hamazon
 local: רוצים לראות קודם איך זה נעשה? הצטרפו לסעודת שבת בחב״ד למורינדה בלאפייט, למשפחות מלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 לסעודת ליל שבת יש מבנה, וברגע שמכירים את הסדר הוא מרגיש טבעי. שום דבר כאן לא צריך להיות מושלם. אם הדלקתם נרות וחלקתם ארוחה, עשיתם שבת. הנה כל הערב, צעד אחר צעד, עם כמה מילים פשוטות לכל חלק.

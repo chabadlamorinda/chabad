@@ -2,7 +2,7 @@
 title: What Is the Yetzer Hara? Judaism on the Inner Struggle and How to Win It
 description: What is the yetzer hara, the evil inclination? Judaism's view of inner struggle, the two souls in Tanya, and practical Chassidic tools. Join a class.
 category: Jewish ideas
-related: changing-a-bad-habit, the-soul, tanya, free-will, why-bad-things-happen
+related: changing-a-bad-habit, the-beinoni, the-soul, tanya, free-will, why-bad-things-happen
 local: Join the Tanya class and learn how to handle your inner struggles; see /programs/adult-education or call 925-384-7242.
 ---
 The yetzer hara (יֵצֶר הָרַע) is the "evil inclination," the inner voice that pulls a person toward selfishness, laziness or wrongdoing. Judaism does not see it as a devil outside us, but as a part of human nature that we are meant to master and even turn to good.

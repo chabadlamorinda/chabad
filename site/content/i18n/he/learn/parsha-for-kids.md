@@ -2,7 +2,7 @@
 title: פרשת השבוע לילדים: שיחה על פרשת השבוע ליד שולחן השבת
 description: שגרה פשוטה של חמש דקות בליל שבת לשיחה על פרשת השבוע עם ילדים בני 3 עד 13: סיפור אחד, שאלה אחת, לקח אחד.
 category: Jewish home
-related: weekly-parsha, shabbat-with-kids, friday-night-dinner-step-by-step, jewish-parenting, hebrew-school-in-lamorinda
+related: weekly-parsha, samson, shabbat-with-kids, friday-night-dinner-step-by-step, jewish-parenting, hebrew-school-in-lamorinda
 local: את פרשת השבוע תמצאו ב-/parsha, והתקשרו 925-384-7242 לשאול על בית הספר העברי ותוכניות לילדים.
 ---
 כדי ללמד את ילדיכם את פרשת השבוע, הקדישו חמש דקות ליד שולחן השבת לסיפור אחד, שאלה אחת ולקח אחד, ותנו לילדים לדבר ברוב הזמן. לכל שבוע בשנה יש פרשה, ולכן תמיד יש משהו חדש לחלוק.

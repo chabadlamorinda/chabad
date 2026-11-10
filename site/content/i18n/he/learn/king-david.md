@@ -2,7 +2,7 @@
 title: מי היה דוד המלך? רועה, משורר ומלך ישראל
 description: מי היה דוד המלך: נער רועים, גוליית, מלך בירושלים, תשובתו, התהילים שאנו אומרים עד היום ולמה משיח בא מזרעו.
 category: Prayer & Torah
-related: tehillim, samuel-the-prophet, book-of-ruth, king-solomon, moshiach, jerusalem, the-holy-temple, moses
+related: tehillim, king-saul, samuel-the-prophet, book-of-ruth, king-solomon, moshiach, jerusalem, the-holy-temple, moses
 local: אמרו תהילים לחולה. הוסיפו שם לרשימת התפילה ב-/help/talk-to-the-rabbi או התקשרו 925-384-7242.
 ---
 דוד המלך היה רועה צאן מבית לחם שהפך למלך השני של ישראל, עשה את ירושלים לבירה והיה מחבר רוב ספר תהילים. היהודים אומרים את תהיליו בכל יום, והמסורת מלמדת שמשיח יבוא מזרעו.

@@ -2,7 +2,7 @@
 title: "Аарон, первосвященник: любите мир и стремитесь к миру"
 description: Кто такой Аарон в Библии? Брат Моисея, первый первосвященник и великий миротворец, и как идти его путем в собственной семье.
 category: Prayer & Torah
-related: moses, birkat-kohanim, forgiveness-and-making-peace, miriam, kohen-levi-yisrael
+related: moses, the-priestly-garments, birkat-kohanim, forgiveness-and-making-peace, miriam, kohen-levi-yisrael
 local: Нужна помощь в семейном мире? Поговорите наедине с Равом или ребецн: /help/talk-to-the-rabbi или 925-384-7242.
 ---
 Аарон (Агарон, אַהֲרֹן) был старшим братом Моисея и Мирьям, первым первосвященником (коэн гадоль) и предком всех коэнов. Его помнят прежде всего как человека, любившего мир и стремившегося к миру: Мишна учит: "Будь учеником Аарона, любящим мир и стремящимся к миру".

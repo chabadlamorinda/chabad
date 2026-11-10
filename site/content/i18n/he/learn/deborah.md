@@ -2,7 +2,7 @@
 title: "דבורה הנביאה: שופטת, מנהיגה ומשוררת"
 description: מי היתה דבורה הנביאה? השופטת היחידה, התמר, ברק, יעל, שירתה, ומה היא מלמדת נשים ובנות היום.
 category: Prayer & Torah
-related: miriam, jewish-women, shabbat-shirah, hannah-and-her-prayer, bat-mitzvah
+related: miriam, samson, jewish-women, shabbat-shirah, hannah-and-her-prayer, bat-mitzvah
 local: אמהות, בנות וחברות מוזמנות לחוג הנשים. ראו /programs/womens-circle או התקשרו 925-384-7242.
 ---
 דבורה היתה נביאה והאישה היחידה בין השופטים שהנהיגו את העם אחרי יהושע. היא שפטה את ישראל תחת תמר, הובילה את העם לניצחון על הכנענים עם ברק, והלחינה שיר הודיה לה' שאנו קוראים עד היום בבית הכנסת.

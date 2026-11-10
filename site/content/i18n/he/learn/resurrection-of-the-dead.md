@@ -2,7 +2,7 @@
 title: תחיית המתים: האמונה היהודית בתחיית המתים
 description: מה מאמינים היהודים על תחיית המתים: היסוד השלושה עשר, התפילה, עצמות יחזקאל והמשיח.
 category: Jewish ideas
-related: moshiach, afterlife, thirteen-principles-of-faith, the-soul, amidah
+related: moshiach, ezekiel, afterlife, thirteen-principles-of-faith, the-soul, amidah
 local: שאלות על חיים, מוות ומה אחרי תמיד מתקבלות בברכה. התקשרו לרב לבקובסקי 925-384-7242 או ראו /help/talk-to-the-rabbi.
 ---
 תחיית המתים היא האמונה היהודית שבימות המשיח המתים יחזרו לחיים, כשהנשמה והגוף מתאחדים. זה היסוד השלושה עשר משלושה עשר עיקרי האמונה, ואנחנו מזכירים אותו בתפילה בכל יום.

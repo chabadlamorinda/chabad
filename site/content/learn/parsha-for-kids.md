@@ -2,7 +2,7 @@
 title: Parsha for Kids: Talking About the Weekly Torah Portion at Your Shabbat Table
 description: A simple five-minute Friday night routine to discuss the weekly Torah portion (parsha) with kids ages 3 to 13: one story, one question, one lesson.
 category: Jewish home
-related: weekly-parsha, shabbat-with-kids, friday-night-dinner-step-by-step, jewish-parenting, hebrew-school-in-lamorinda
+related: weekly-parsha, samson, shabbat-with-kids, friday-night-dinner-step-by-step, jewish-parenting, hebrew-school-in-lamorinda
 local: Find this week's portion at /parsha, and call 925-384-7242 to ask about Hebrew School and kids' programs.
 ---
 To teach your children the weekly Torah portion (parsha), take five minutes at the Shabbat table for one story, one question and one lesson, and let the children do much of the talking. Every week of the year has a portion, so you always have something new to share.
