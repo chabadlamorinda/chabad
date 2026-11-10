@@ -1,6 +1,6 @@
 ---
 title: How Can You Love G-d? The Mitzvah of Ahavat Hashem
-description: How to love G-d in Judaism: the mitzvah from the Shema, the Rambam's path of contemplating creation, the Tanya's hidden love in every soul, and daily steps.
+description: How to love G-d in Judaism: the mitzvah in the Shema, the Rambam's path of contemplating creation, the Tanya's hidden love in every soul, daily steps.
 category: Jewish ideas
 related: shema, fear-of-g-d, belief-in-g-d, tanya, prayer
 local: Want to explore this with someone? Call Rabbi Labkowski at 925-384-7242, or see /programs/adult-education.

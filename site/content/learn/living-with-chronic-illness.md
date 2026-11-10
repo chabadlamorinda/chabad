@@ -1,6 +1,6 @@
 ---
 title: Living With Chronic Illness: Jewish Strength for the Long Road
-description: How Judaism and the Rebbe's letters help when illness lasts: doctors, trust in G-d, joy, prayer, a name on the Mi Sheberach list, and care for the caregiver.
+description: How Judaism and the Rebbe's letters help when illness lasts: doctors, trust in G-d, joy, prayer, a Mi Sheberach name, and care for caregivers.
 category: Life cycle
 related: mi-sheberach, caregiver-support, bitachon, tehillim, bikur-cholim
 local: You do not have to carry this alone. Call Rabbi Labkowski at 925-384-7242 to talk, or add a name to the prayer list at /help/talk-to-the-rabbi.
