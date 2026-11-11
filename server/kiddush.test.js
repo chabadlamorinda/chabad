@@ -547,3 +547,9 @@ test('show a name on the board while payment is still pending (staff choice), wi
   // unconfirmed: still waiting for payment, so reminders keep working
   assert.ok(pend.every((p) => p.status === 'pending'));
 });
+
+test('the board carries a pages version so the TV can reload itself after an update', async () => {
+  const v = (await board()).version;
+  assert.match(v, /^\d{10,}$/);
+  assert.equal((await board()).version, v, 'stable between requests');
+});
