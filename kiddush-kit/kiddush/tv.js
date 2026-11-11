@@ -157,7 +157,7 @@
     var kids = [].slice.call(t.querySelectorAll('.tt, .td, .ts, .n, .s, .r')), cs = getComputedStyle(t), g = 0;
     var avail = t.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
     var used = function () { return kids.reduce(function (a, k) { return a + k.offsetHeight; }, 0); };
-    while (used() > avail + 1 && g++ < 16) kids.forEach(function (k) { k.style.fontSize = parseFloat(getComputedStyle(k).fontSize) * .93 + 'px'; });
+    while (used() > avail + 1 && g++ < 22) kids.forEach(function (k) { k.style.fontSize = parseFloat(getComputedStyle(k).fontSize) * .93 + 'px'; });
   }
   function sizeRows(rows) {
     var col = $('c0'), h = col.clientHeight, gap = parseFloat(getComputedStyle(col).rowGap) || 0;
@@ -217,6 +217,13 @@
   var cached = null; try { cached = JSON.parse(localStorage.getItem(KEY)); } catch (e) { /* none */ }
   if (cached && cached.slots) render(cached);
   load(); setInterval(load, 60e3);
+  // The first drawing can happen before the web fonts have loaded (different letter sizes), so draw once more when they are ready and a moment later.
+  var redrawn = 0;
+  function redraw() { if (board && redrawn < 3) { redrawn++; render(board); } }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { setTimeout(redraw, 150); });
+  window.addEventListener('load', function () { setTimeout(redraw, 1200); });
+  setTimeout(redraw, 4000);
+
   setTimeout(function () { location.reload(); }, 12 * 3600e3); // pick up new versions of this page
   if (navigator.wakeLock) { var wl = function () { navigator.wakeLock.request('screen').catch(function () {}); }; wl(); document.addEventListener('visibilitychange', function () { if (!document.hidden) wl(); }); }
 })();
