@@ -33,3 +33,6 @@ html.light body{background-image:none;color:#5e2f1a;cursor:none}
 .light .tile{overflow:hidden}
 :root{color-scheme:light only}
 
+
+.light .tile.past .tbody>div{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.05}
+.light .tile.past .tt{white-space:normal}
