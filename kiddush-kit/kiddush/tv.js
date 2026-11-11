@@ -136,8 +136,8 @@
     eventsBox(b, rows);
     Array.prototype.forEach.call(document.querySelectorAll('.tile .n'), function (n) { fit(n, .5); });
     Array.prototype.forEach.call(document.querySelectorAll('.tile .s, .tile .ts'), function (n) { fit(n, .5); });
-    Array.prototype.forEach.call(document.querySelectorAll('.tile .r, .tile.past .td'), function (n) { fit(n, .8); }); // long reasons are cut short with … rather than shrunk to nothing
     Array.prototype.forEach.call(document.querySelectorAll('.tile .tt, .tile:not(.past) .td'), function (n) { fit(n, .55); });
+    Array.prototype.forEach.call(document.querySelectorAll('.tile.past'), fitTileText);
   }
   // The empty space at the bottom of the last column holds an "Upcoming events" box (notes added in Staff → Calendar notes).
   function eventsBox(b, rows) {
@@ -151,6 +151,13 @@
       var it = el('div', 'ev'); it.appendChild(el('div', 'ev-d', KI.dowName(n.date) + ', ' + KI.dateLabel(n))); it.appendChild(el('div', 'ev-t', KI.he && n.textHe ? n.textHe : n.text)); box.appendChild(it);
     });
     while (box.children.length > 2 && box.scrollHeight > box.clientHeight + 1) box.removeChild(box.lastChild); // show as many as fit
+  }
+  // Past weeks show the whole dedication: it may wrap onto extra lines, and the text of the tile shrinks until everything fits (never cut off with "...").
+  function fitTileText(t) {
+    var kids = [].slice.call(t.querySelectorAll('.tt, .td, .ts, .n, .s, .r')), cs = getComputedStyle(t), g = 0;
+    var avail = t.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    var used = function () { return kids.reduce(function (a, k) { return a + k.offsetHeight; }, 0); };
+    while (used() > avail + 1 && g++ < 16) kids.forEach(function (k) { k.style.fontSize = parseFloat(getComputedStyle(k).fontSize) * .93 + 'px'; });
   }
   function sizeRows(rows) {
     var col = $('c0'), h = col.clientHeight, gap = parseFloat(getComputedStyle(col).rowGap) || 0;
