@@ -5,6 +5,8 @@
 // the instructions; the Rabbi marks it paid in the admin page once the money arrives.
 'use strict';
 const cal = require('./kiddush-calendar.js');
+const fs = require('fs');
+const path = require('path');
 const { loadConfig, makeLocalParts } = require('./config.js');
 
 const KINDS = { honor: 'In honor of', memory: 'In loving memory of', refuah: 'For the speedy recovery of', celebration: 'In celebration of', merit: 'In the merit of' };
@@ -40,6 +42,18 @@ class HttpError extends Error { constructor(status, code, message) { super(messa
 const clean = (s, n) => String(s == null ? '' : s).replace(/[\u0000-\u001f\u007f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, n);
 const validEmail = (e) => /^[^\s@]{1,64}@[^\s@]{1,255}\.[^\s@]{2,}$/.test(e) && e.length <= 254;
 const dedicationText = (kind, text) => (text ? (KINDS[kind] ? KINDS[kind] + ' ' : '') + text : '');
+
+// Version of the pages (the newest file date under kiddush/): the TV reloads itself when this changes, so updates reach it within a minute.
+const KIDDUSH_DIR = path.join(__dirname, '..', 'kiddush');
+let versionCache = { at: 0, v: '' };
+function pagesVersion() {
+  if (Date.now() - versionCache.at < 30e3) return versionCache.v;
+  let newest = 0;
+  const walk = (dir) => { for (const f of fs.readdirSync(dir, { withFileTypes: true })) { if (f.name === 'fonts' || f.name === 'img' || f.name === 'vendor') continue; const p = path.join(dir, f.name); if (f.isDirectory()) walk(p); else newest = Math.max(newest, fs.statSync(p).mtimeMs); } };
+  try { walk(KIDDUSH_DIR); } catch (e) { /* no files: no version */ }
+  versionCache = { at: Date.now(), v: newest ? String(Math.round(newest)) : '' };
+  return versionCache.v;
+}
 
 const MAX_REMINDERS = 3;
 
@@ -138,7 +152,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     const upcoming = [];
     for (const n of notes) if (n.date >= today && upcoming.length < 8) { const d = await cal.describeDate(n.date); upcoming.push({ kind: n.kind, text: n.text, textHe: n.text_he, date: n.date, dateLabel: d.dateLabel, heb: d.heb, hebHe: d.hebHe }); }
     return {
-      events: upcoming, today, year: y, yearHe: await cal.yearHe(y), current: next ? next.key : null, years: [y], slots, boardSponsor,
+      events: upcoming, version: pagesVersion(), today, year: y, yearHe: await cal.yearHe(y), current: next ? next.key : null, years: [y], slots, boardSponsor,
       sponsoring: true, recorded: !!store, settings: publicSettings(st),
     };
   }

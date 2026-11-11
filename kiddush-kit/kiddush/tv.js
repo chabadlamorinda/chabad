@@ -3,7 +3,7 @@
 'use strict';
 (function () {
   var $ = function (id) { return document.getElementById(id); };
-  var KEY = 'kiddush-tv-last', board = null, lastOk = Date.now();
+  var KEY = 'kiddush-tv-last', board = null, lastOk = Date.now(), loadedVersion = '';
   var LIGHT = !/[?&]theme=dark\b/.test(location.search); // light look (matches the sponsor page) is the default; add ?theme=dark for the wood board
   if (LIGHT) document.documentElement.classList.add('light');
   var T = KI.t; KI.apply();
@@ -208,6 +208,7 @@
   function load() {
     fetch('/api/kiddush/board', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('bad'); return r.json(); }).then(function (b) {
       lastOk = Date.now(); $('offline').hidden = true;
+      if (b.version) { if (!loadedVersion) loadedVersion = b.version; else if (b.version !== loadedVersion) { location.reload(); return; } } // a newer version of these pages was published
       var sig = JSON.stringify(b); if (!board || sig !== board.__sig) { b.__sig = sig; render(b); }
       try { localStorage.setItem(KEY, JSON.stringify(b)); } catch (e) { /* private mode */ }
     }).catch(function () { if (Date.now() - lastOk > 5 * 60e3) $('offline').hidden = false; });
