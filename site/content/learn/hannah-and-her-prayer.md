@@ -21,7 +21,7 @@ Chabad.org notes that this is the source for the way we recite the Amidah: in a 
 
 ## The birth of Samuel
 
-Hannah conceived and named her son Samuel (Shmuel). When he was weaned she brought him to Shiloh to be raised by Eli, as she promised. Samuel grew into a prophet and leader of Israel. Hannah later had two more sons and two daughters. She offered a song of thanks (I Samuel 2:1-10), considered prophetic, and our Sages count her among the seven prophetesses, like [Miriam](/learn/miriam).
+Hannah conceived and named her son Samuel (Shmuel). When he was weaned she brought him to Shiloh to be raised by Eli, as she promised. Samuel grew into a prophet and leader of Israel. Hannah later had three more sons and two daughters. She offered a song of thanks (I Samuel 2:1-10), considered prophetic, and our Sages count her among the seven prophetesses, like [Miriam](/learn/miriam).
 
 ## Hannah on Rosh Hashanah
 

@@ -13,7 +13,7 @@ The leader says: **Barchu et Adonai hamevorach.** ("Bless G-d, the blessed One."
 
 The congregation answers: **Baruch Adonai hamevorach le'olam va'ed.** ("Blessed is G-d, the blessed One, forever and ever.")
 
-In the Chabad custom, the leader says the response together with the congregation, and no one answers "Amen" to this line. Many stand for Barchu. Follow the people around you, and ask the Rabbi about bowing customs.
+The congregation answers, and the leader then repeats the response. Many stand for Barchu. Follow the people around you, and ask the Rabbi about bowing customs.
 
 ## Why it needs a minyan
 

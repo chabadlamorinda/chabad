@@ -19,7 +19,7 @@ Customs vary widely. Some families do not even buy baby items before the birth; 
 
 ## Warm alternatives before the birth
 
-- **A blessing gathering.** In some communities women gather before a birth to say [Tehillim](/learn/tehillim) and blessings for the mother. This is sometimes called a "Brucha." It focuses on prayer and good wishes rather than gifts.
+- **A blessing gathering.** In some communities women gather before a birth to say [Tehillim](/learn/tehillim) and blessings for the mother. It focuses on prayer and good wishes rather than gifts.
 - **Practical help.** Offer to plan meals for after the birth, arrange rides or help with older children.
 - **Mitzvot for the mother.** Some women take on an extra mitzvah or give [tzedakah](/learn/tzedakah) in the merit of an easy birth.
 

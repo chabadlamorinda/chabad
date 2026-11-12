@@ -7,7 +7,7 @@ local: Planning a bar or bat mitzvah for a child with special needs? Call Rabbi 
 ---
 Every Jewish child becomes a bar mitzvah at 13 (a boy) or a bat mitzvah at 12 (a girl), including a child with autism, Down syndrome or other needs. The milestone is a change of status, not a performance: the child now counts in the community and is responsible for mitzvos according to their ability.
 
-A day can and should be shaped to fit your child. Rabbi Labkowski will plan it with you privately, and nothing here is a rule you must meet.
+A day can and should be shaped to fit your child. Rabbi Labkowski will plan it with you privately, and nothing here is a rule you must meet. Questions about your child's own obligations in Jewish law are personal, so please ask the Rabbi.
 
 ## What a bar or bat mitzvah really is
 

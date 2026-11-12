@@ -15,7 +15,7 @@ It is customary for the husband to recite Psalms (Tehillim) during labor, as tim
 
 ## Shir Hamaalot in the room
 
-Many families hang a card with Psalm 121, *Shir Hamaalot* (שִׁיר הַמַּעֲלוֹת, "A Song of Ascents"), and other prayers, near the door of the mother's and the baby's room, even in the hospital. The idea is that the baby begins life surrounded by holy words. Ask the Rabbi for a printed card.
+Many families hang a card with Psalm 121, *Shir Lamaalot* ("A Song of Ascents," often called Shir Hamaalot), and other prayers, near the door of the mother's and the baby's room, even in the hospital. The idea is that the baby begins life surrounded by holy words. Ask the Rabbi for a printed card.
 
 ## Labor on Shabbat
 

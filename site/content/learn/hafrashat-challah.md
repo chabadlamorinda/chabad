@@ -18,10 +18,10 @@ The word *challah* originally meant this separated portion. Later, the braided S
 The mitzvah applies to dough made from any of the five grains: wheat, barley, rye, oats or spelt. Whether you bake bread, rolls or even some cakes, it depends mainly on how much flour is in the batch:
 
 - **A small batch** needs no separation at all.
-- **A medium batch** is separated **without** a blessing.
+- **A medium batch** is separated, and you ask the Rabbi whether to say the blessing.
 - **A large batch** is separated **with** a blessing.
 
-Many follow these approximate amounts: from about 2 lb 11 oz (1.2 kg) of flour, separate without a blessing, and from about 4 lb 15 oz (2.25 kg) of flour, separate with a blessing. Customs differ, and dough made mostly with juice or eggs instead of water has its own rules, so ask the Rabbi for your recipe.
+Chabad.org gives these amounts: under about 2.5 lb (1.1 kg) of flour, no separation; from 5 lb (about 2.25 kg), separate with a blessing; in between, separate and ask a rabbi about the blessing. Customs differ, and dough made mostly with juice or eggs instead of water has its own rules, so ask the Rabbi for your recipe.
 
 ## How to separate challah, step by step
 

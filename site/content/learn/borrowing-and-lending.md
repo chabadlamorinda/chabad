@@ -17,7 +17,7 @@ Communities are encouraged to set up free loan funds, called [gemachs](/learn/ge
 
 ## Who comes first
 
-Chabad.org lists an order of priority: family first, then people in your city, then Jews in Israel, then Jews elsewhere. Lending to a wealthy person with a real need is also a mitzvah, but the poor come first. Poor non-Jews may also receive loans. One is asked to lend up to a fifth of one's wealth, no more, and only when confident the borrower will repay. If it would put your own family in difficulty, ask the Rabbi.
+Jewish tradition suggests an order of priority, as with tzedakah: family first, then people in your city, then Jews in Israel, then Jews elsewhere. Lending to a wealthy person with a real need is also a mitzvah, but the poor come first. Poor non-Jews may also receive loans. Chabad.org says to lend as much as the borrower needs and as much as you can afford, and only when you are reasonably confident the borrower will repay. If it would put your own family in difficulty, ask the Rabbi.
 
 ## Write it down
 
@@ -30,7 +30,7 @@ The Torah encourages recording loans in writing, even between close friends. Thi
 
 ## The borrower's duties
 
-Repaying is a mitzvah, and the Torah takes a debt seriously. Chabad.org lists several obligations for borrowers:
+Repaying is a mitzvah, and the Torah takes a debt seriously. Jewish teaching asks borrowers to keep several obligations:
 
 - Do not gamble the money on risky ventures without telling the lender.
 - Do not waste it on non-essentials so that you cannot repay.

@@ -32,7 +32,7 @@ It is best to begin a few months before the wedding. This leaves time to learn w
 
 ## Why it matters
 
-The Sages call a Jewish home a "small sanctuary." The laws a bride learns before her wedding bring holiness, renewal and closeness into married life. Many women say their kallah classes shaped the way they think about marriage, and gave them a lifelong sense of meaning and pride.
+Jewish tradition calls a Jewish home a "small sanctuary." The laws a bride learns before her wedding bring holiness, renewal and closeness into married life. Many women say their kallah classes shaped the way they think about marriage, and gave them a lifelong sense of meaning and pride.
 
 ## Common questions
 

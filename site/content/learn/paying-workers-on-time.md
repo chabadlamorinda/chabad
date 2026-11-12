@@ -5,7 +5,7 @@ category: Jewish home
 related: business-ethics, honesty-and-truth, keeping-your-word, borrowing-and-lending, jewish-parenting
 local: Not sure how the rule applies to your arrangement? Call Rabbi Labkowski at 925-384-7242 or ask through /help/talk-to-the-rabbi.
 ---
-The Torah commands employers to pay a worker's wages on time, generally on the day the work is finished: a day worker should be paid before sunrise the next morning, and a night worker by the following nightfall. This mitzvah applies to anyone who hires help, including a babysitter, gardener, house cleaner or contractor.
+The Torah commands employers to pay a worker's wages on time, generally on the day the work is finished: a day worker should be paid before dawn the next morning, and a night worker by the following nightfall. This mitzvah applies to anyone who hires help, including a babysitter, gardener, house cleaner or contractor.
 
 Many families in Lafayette, Moraga and Orinda hire help every week, so you may be keeping, or breaking, this mitzvah without knowing it.
 
@@ -15,7 +15,7 @@ The sources are Leviticus 19:13 ("The wages of a hired worker shall not remain w
 
 According to Chabad.org, the timing depends on the worker's schedule:
 
-- A **day worker** who finishes at the end of the day must be paid before the next sunrise.
+- A **day worker** who finishes at the end of the day must be paid before the next dawn.
 - A **night worker** who finishes at daybreak has until the following nightfall.
 - If work ends before the day is over, payment is due by nightfall. If it ends in the middle of the night, by morning.
 
@@ -33,7 +33,7 @@ All workers are included, whatever their gender, age, wealth, religion or backgr
 
 ## Babysitters: a common case
 
-Chabad.org's guide on hiring babysitters notes several points for families:
+Some points to keep in mind for families (ask the Rabbi about your own case):
 
 1. **Pay when the job ends.** Sitters are often teenagers who may be too embarrassed to ask. If you cannot pay on time, tell them in advance.
 2. **Do not cancel casually.** If you cancel at the last minute and the sitter turned down other work, you may owe compensation. Local custom matters, so ask the Rabbi.
@@ -43,7 +43,7 @@ Other details, such as the kosher kitchen with a sitter present, are covered in 
 
 ## If you cannot pay right now
 
-The Chabad.org article explains that if an employer genuinely lacks the money, he is exempt from the deadline until he can pay, and borrowing to pay is praiseworthy. If funds are limited, poorer workers come first. Even after the deadline passes, withholding wages you have is still forbidden. For specific employer-employee questions, such as contracts, benefits or business situations, ask the Rabbi and your own professional advisers.
+Jewish law explains that if an employer genuinely lacks the money, he is exempt from the deadline until he can pay, and borrowing to pay is praiseworthy. If funds are limited, poorer workers come first. Even after the deadline passes, withholding wages you have is still forbidden. For specific employer-employee questions, such as contracts, benefits or business situations, ask the Rabbi and your own professional advisers.
 
 ## Small steps to keep the mitzvah
 

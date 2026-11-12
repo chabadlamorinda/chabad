@@ -1011,6 +1011,10 @@ test('email system: sign up from any page, the designed email in each language, 
   assert.equal((await a.call('GET', '/admin/api/site/weekly/word')).json.approved, true, 'the desk knows nothing waits');
   assert.ok((await a.call('GET', '/admin/api/site/setup')).json.items.some((i) => /weekly email goes out by itself/.test(i.label))); assert.equal(wk.word.text, 'Approved words for this Shabbat.');
   const full = (await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat')).text;
+  // the designed template: navy banner with an at-a-glance strip, date badges, and add-to-calendar links for events and weekly classes
+  assert.match(full, /background:#14284b;border-radius:18px/); assert.match(full, /Candle lighting<\/p>/); assert.match(full, /Kabbalat Shabbat<\/p>/); assert.match(full, /Torah portion<\/p>/);
+  assert.match(full, /\/weekly\/lamorinda-hebrew-school\.ics/); assert.match(full, /webcal:\/\/[^"]+\/events\.ics/);
+  const evMail = (await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat')).text; assert.ok(!/undefined|\[object/.test(evMail), 'no broken values in the email');
   assert.match(full, /Approved words for this Shabbat\./); assert.match(full, /Join us this Shabbat/); assert.match(full, /\/forms\/hebrew-school/); assert.match(full, /\/chai-club/); assert.match(full, /\/sponsor-a-kiddush/); assert.match(full, /\/legacy/);
   assert.doesNotMatch((await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat&note=')).text, /Approved words/, 'an emptied box means no word');
   for (const L of ['', '/he', '/ru']) assert.equal((await g.call('GET', L + '/legacy')).status, 200);

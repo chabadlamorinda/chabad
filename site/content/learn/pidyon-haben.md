@@ -25,7 +25,7 @@ Because the details can be complicated, it is best to ask the Rabbi early, even 
 
 ## When it takes place
 
-The pidyon haben takes place on the 31st day after birth, counting the day of birth as day one. It is not held on Shabbat or a Jewish holiday. In that case it is postponed to the next day. It is usually held in the afternoon or evening, followed by a meal. Our [Hebrew date tool](/tools/hebrew-date) can help you find the day.
+The pidyon haben takes place on the 31st day after birth, counting the day of birth as day one. It is not held on Shabbat or a Jewish holiday. In that case it is postponed to the next day. It is usually held in the afternoon, followed by a meal. Ask the Rabbi to set the exact time. Our [Hebrew date tool](/tools/hebrew-date) can help you find the day.
 
 ## How the ceremony works
 

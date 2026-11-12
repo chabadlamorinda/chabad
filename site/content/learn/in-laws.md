@@ -9,7 +9,7 @@ When two people marry, two families join. In-laws can be a great blessing, extra
 
 ## Honor your in-laws
 
-Jewish law teaches that a person should honor their father-in-law and mother-in-law. Moses went out to greet his father-in-law Yitro and bowed to him, and King David called his father-in-law Saul "my father." Kindness to a spouse's parents is also kindness to your spouse.
+Jewish tradition teaches that a person should honor their father-in-law and mother-in-law. Moses went out to greet his father-in-law Yitro and bowed to him, and King David called his father-in-law Saul "my father." Kindness to a spouse's parents is also kindness to your spouse.
 
 ## Your marriage comes first
 
@@ -36,7 +36,7 @@ Pick one small step toward peace: a kind word, a thank-you note, a gift for no r
 ## Common questions
 
 ### Do I have to honor my in-laws like my own parents?
-Jewish law requires honoring in-laws, though the obligation is not as extensive as for one's own parents. Kindness and respect are the heart of it.
+Jewish tradition teaches honoring in-laws, though it is not the same obligation as honoring one's own parents. Kindness and respect are the heart of it. Ask the Rabbi about specifics.
 
 ### My parents and my spouse don't get along. What do I do?
 Stand by your spouse in private, honor your parents in words and actions, and look for calm settings where everyone can connect. Ask the Rabbi for guidance.

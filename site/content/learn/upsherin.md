@@ -28,7 +28,7 @@ Most upsherins include these elements:
 
 The upsherin is usually held on or soon after the child's third Hebrew birthday. Use our [Hebrew date converter](/tools/hebrew-date) to find it. If the birthday falls during a period when haircuts are not customary, such as the Omer period between Passover and Shavuot or the Three Weeks in summer, the celebration may be moved. Ask the Rabbi about the right date.
 
-Some families hold an upsherin at home, some at a synagogue, and some travel to Meron in Israel on Lag BaOmer, a traditional upsherin day.
+Some families hold an upsherin at home, some at a synagogue, and some travel to Meron in Israel on Lag BaOmer, a traditional upsherin day. Chabad guidance is to hold it close to the third birthday rather than postpone it for months until Lag BaOmer; ask the Rabbi about your date.
 
 ## Common questions
 

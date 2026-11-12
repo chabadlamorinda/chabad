@@ -32,7 +32,7 @@ While details vary, a conversion according to Jewish law includes:
 5. **Brit milah** for men, or a symbolic drop of blood if already circumcised.
 6. **Immersion in a [mikvah](/learn/mikvah)** in the presence of the Beth Din.
 
-Only a conversion done according to Jewish law, through a recognized Beth Din, is accepted universally, including for marriage and in Israel.
+Only a conversion done according to Jewish law, through a recognized Beth Din, is widely accepted, including for marriage and in Israel. Ask the Rabbi which Batei Din are recognized.
 
 ## How Chabad of Lamorinda can help
 

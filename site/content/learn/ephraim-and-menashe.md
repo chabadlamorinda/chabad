@@ -25,7 +25,7 @@ The story is in the portion Vayechi, at the end of [Genesis](/learn/book-of-gene
 
 The words are: **Yesimcha Elokim ke'Efrayim vechi'Menasheh** (יְשִׂמְךָ אֱלֹקִים כְּאֶפְרַיִם וְכִמְנַשֶּׁה), "May G-d make you like Ephraim and Menashe." Parents place a hand on the child's head and then say the Priestly Blessing. Daughters are blessed to be like our Matriarchs. See the full words and steps in [Blessing your children](/learn/blessing-your-children).
 
-Chabad.org notes that many families give the blessing every Friday night, and that this is not the Chabad custom for everyone. Ask the Rabbi what is best for your family.
+Many families give the blessing every Friday night, but this is not the widespread Chabad custom; Chabad families often bless their children at special times, such as before Yom Kippur or at a wedding. Ask the Rabbi what is best for your family.
 
 ## Common questions
 
@@ -39,7 +39,7 @@ Because Jacob said that Israel would bless its sons this way. They stayed faithf
 Jacob saw that Ephraim's descendants would be greater, and Chabad teaching adds that Ephraim's name stands for growing and succeeding even in hard places.
 
 ### Do we say it every Friday night?
-Many families do. Chabad.org says it is not the Chabad custom in every home, so ask the Rabbi.
+Many families do. It is not the widespread Chabad custom, so ask the Rabbi.
 
 ### Is there a blessing for daughters?
 Yes: "May G-d make you like Sarah, Rebecca, Rachel and Leah." See [the Matriarchs](/learn/the-matriarchs).

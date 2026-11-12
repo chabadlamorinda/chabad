@@ -26,9 +26,9 @@ A widow or widower may marry again after mourning. Ask the Rabbi about the waiti
 According to Chabad.org:
 
 - The ketubah wording changes; the word for "maiden" is replaced by the word for a widow or a divorcee, and the amounts are adjusted ([ketubah](/learn/ketubah)).
-- The seven days of festive meals with the sheva brachot are held for only one day, unless one of the two has never been married ([sheva brachot](/learn/sheva-brachot)).
-- Some customs of a first wedding, such as the veil, are not required.
-- Other details, including who walks and who escorts, are left to the couple.
+- The seven blessings are said only under the chuppah and after the wedding meal, not through a week of festive meals as at a first wedding. If one of you has never been married, ask the Rabbi ([sheva brachot](/learn/sheva-brachot)).
+- The badeken, the groom's veiling of the bride, is omitted. A veil may be placed over the bride's face before the chuppah, but not by the groom.
+- Other details, including who attends the chuppah, are best decided with the Rabbi. By common custom, the couple's children join the reception rather than the chuppah.
 
 Ask the Rabbi for precise guidance on your situation. See [Jewish wedding customs](/learn/jewish-wedding-customs).
 
@@ -55,7 +55,7 @@ Yes, after the mourning period. Ask the Rabbi for the timing.
 Somewhat. The ketubah wording differs, the sheva brachot are shorter, and some customs are optional.
 
 ### Should children come to the wedding?
-That is for the couple to decide with sensitivity. Include them as warmly as possible.
+That is for the couple to decide with sensitivity, together with the Rabbi. By common custom, children join the reception rather than the chuppah. Include them as warmly as possible.
 
 ### Who can officiate in Lafayette, Moraga or Orinda?
 Call Rabbi Yisroel Labkowski at 925-384-7242.

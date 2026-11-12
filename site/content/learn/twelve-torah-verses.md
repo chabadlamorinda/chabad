@@ -21,7 +21,7 @@ A passuk (פסוק) is a verse. According to Chabad.org, the Rebbe selected thes
 6. **V'hineh Hashem (Tanya, chapter 41).** G-d is aware of each person, which inspires awe.
 7. **Bereishit (Genesis 1:1).** The world was created for Torah, so even ordinary acts like eating can be holy.
 8. **V'shinantam (Deuteronomy 6:7).** Teach Torah to your children and keep it in daily speech.
-9. **Yagati (Job).** Real success comes through effort.
+9. **Yagati (Megillah 6b).** Real success comes through effort.
 10. **V'ahavta (Leviticus 19:18).** Love your fellow as yourself.
 11. **Vezeh Kol HaAdam (Tanya, chapter 33).** We are here to make our homes and the world a dwelling place for G-d through mitzvot.
 12. **Yismach (Tanya, chapter 33).** Every Jew should rejoice in this mission.

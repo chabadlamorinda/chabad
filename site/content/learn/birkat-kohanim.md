@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: pidyon-haben, aaron-the-high-priest, kohen-levi-yisrael, blessing-your-children, shabbat-meals, prayer, the-holy-temple
 local: Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski with any question, 925-384-7242.
 ---
-Birkat Kohanim, the Priestly Blessing, is one of the oldest blessings in the world. G-d commanded Aaron the High Priest and his descendants, the Kohanim, to bless the Jewish people with these words, and they have been said ever since: in the Holy Temple, in synagogues around the world, and by parents over their children's heads every Friday night.
+Birkat Kohanim, the Priestly Blessing, is one of the oldest blessings in the world. G-d commanded Aaron the High Priest and his descendants, the Kohanim, to bless the Jewish people with these words, and they have been said ever since: in the Holy Temple, in synagogues around the world, and by many parents over their children's heads, often on Friday night.
 
 ## The three verses
 
@@ -31,7 +31,7 @@ If you think you may be a Kohen, tell the Rabbi.
 ## When is it said in synagogue?
 
 - **In Israel,** Kohanim bless the congregation every day.
-- **Outside Israel,** in Ashkenazi communities including Chabad, the Kohanim bless the congregation only on the holidays, during the Musaf prayer.
+- **Outside Israel,** in Ashkenazi communities including Chabad, the Kohanim bless the congregation only on the holidays, during the Musaf prayer (and on Yom Kippur also at Neilah).
 - **On other days,** the chazzan recites the verses in the repetition of the Amidah, and the congregation answers "Ken yehi ratzon," "May it be G-d's will."
 
 ## What happens during the blessing
@@ -53,7 +53,7 @@ Many parents bless their children every Friday night, often before Kiddush or wh
 - **For a girl:** "Yesimech Elo-him k'Sarah, Rivkah, Rachel v'Leah," "May G-d make you like Sarah, Rebecca, Rachel and Leah."
 - Then the three verses of the Priestly Blessing.
 
-Customs differ in the details. Add a kiss, a hug or a few words of your own. Children remember this moment for life. See [Shabbat with kids](/learn/shabbat-with-kids).
+Customs differ in the details, and Chabad custom is to bless children at special times, such as before Yom Kippur; ask the Rabbi about Fridays. Add a kiss, a hug or a few words of your own. Children remember this moment for life. See [Shabbat with kids](/learn/shabbat-with-kids).
 
 ## Common questions
 

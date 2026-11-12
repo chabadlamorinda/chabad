@@ -25,7 +25,7 @@ Some respected rabbis in the past did not forbid smoking, mainly because it was 
 
 Chabad.org says that many rabbinic authorities strongly discourage vaping because of its health risks, and that discussing its kosher status is not an endorsement. Vaping is common among teenagers and young adults, and it is often presented as a safer alternative to smoking.
 
-There is also a kosher question. Many authorities consider the vapor to be like eating or drinking. The liquid may contain glycerin, which can come from animal or plant sources, and flavorings may include alcohol from grain, which matters on Passover. So the ideal is not to vape at all. If someone does, many authorities require reliable kosher certification. Ask the Rabbi for guidance.
+There is also a kosher question. Some authorities treat inhaling the vapor like eating or drinking, so kosher concerns arise. The liquid may contain glycerin, which can come from animal or plant sources, and flavorings may include alcohol from grain, which matters on Passover. So the ideal is not to vape at all. If someone does, many authorities require reliable kosher certification. Ask the Rabbi for guidance.
 
 ## Smoke around others
 

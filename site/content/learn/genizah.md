@@ -54,7 +54,7 @@ Do not throw it away. Set it aside for genizah burial through a synagogue or Jew
 First have a scribe check whether they can still be used. If not, they go to genizah.
 
 ### What do I do with an old mezuzah?
-Have the scroll checked. If it is no longer kosher, it should be buried. The case can be reused or respectfully discarded.
+Have the scroll checked. If it is no longer kosher, it should be buried. The case can be reused. A case you no longer use is treated as an accessory to a holy item, so ask the Rabbi before discarding it.
 
 ### Can I recycle Hebrew books?
 Books with Torah content, G-d's names or prayers need genizah, not recycling.

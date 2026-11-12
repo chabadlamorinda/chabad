@@ -13,7 +13,7 @@ A mikvah is a pool built according to Jewish law, filled with natural water, in 
 
 ## Before Yom Kippur
 
-Chabad.org teaches that every Jew should immerse in a mikvah on the day before Yom Kippur, to honor the sanctity of the day and to repent and be purified. This practice goes back to the Prophets. Today it is among the most widely kept mikvah customs of the year, and many men who go at no other time go then. The custom is not to say a blessing on this immersion. See [the day before Yom Kippur](/learn/erev-yom-kippur) and [Yom Kippur for beginners](/learn/yom-kippur-for-beginners).
+Chabad.org describes it as a widely accepted custom for men to immerse in a mikvah on the day before Yom Kippur, to honor the sanctity of the day and to repent and be purified. Today it is among the most widely kept mikvah customs of the year, and many men who go at no other time go then. The custom is not to say a blessing on this immersion. See [the day before Yom Kippur](/learn/erev-yom-kippur) and [Yom Kippur for beginners](/learn/yom-kippur-for-beginners).
 
 ## Every day: the Chassidic custom
 
@@ -46,7 +46,7 @@ Chabad teaching connects the Hebrew word for immersion, tevilah (טבילה), to
 Yes. Jewish men immerse by custom, especially before Yom Kippur, and many do so before Shabbat, holidays and daily prayer.
 
 ### Why do men immerse before Yom Kippur?
-To honor the sanctity of the day and to repent and be purified. The practice goes back to the Prophets, and every Jew is encouraged to do it.
+To honor the sanctity of the day and to repent and be purified. It is a widely accepted custom for men, and every man is encouraged to do it.
 
 ### Is it required for a man to go to the mikvah?
 Most of these are customs, not requirements. For a personal question, ask the Rabbi.

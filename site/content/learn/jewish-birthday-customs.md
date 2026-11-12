@@ -15,7 +15,7 @@ Some people are surprised to hear that birthdays have a place in Judaism, since 
 - The Jerusalem Talmud teaches that on a person's birthday, their *mazal*, their spiritual source of blessing, is especially strong.
 - **The Rebbe** taught that just as Rosh Hashanah is the birthday of the world, each person's birthday is his or her own Rosh Hashanah.
 
-In 1988, after the passing of his wife, Rebbetzin Chaya Mushka, the Rebbe launched a worldwide birthday campaign, encouraging every Jew to celebrate their birthday as a day of spiritual growth, and to gather friends for a joyful celebration.
+In 1988 the Rebbe launched a worldwide birthday campaign, encouraging every Jew to celebrate their birthday as a day of spiritual growth, and to gather friends for a joyful celebration.
 
 ## Which date: Hebrew or English?
 

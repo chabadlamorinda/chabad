@@ -12,7 +12,7 @@ local: Families in Lafayette, Moraga, Orinda and the East Bay who are adopting o
 A child's Jewish status comes from the birth mother. So:
 
 - **A child born to a Jewish mother** is Jewish, whoever adopts the child.
-- **A child born to a mother who is not Jewish** becomes Jewish through conversion: for a boy, a brit milah and immersion in a mikvah; for a girl, immersion in a mikvah, before a rabbinic court (beit din). When the child comes of age, they may affirm it.
+- **A child born to a mother who is not Jewish** becomes Jewish through conversion: for a boy, a brit milah and immersion in a mikvah; for a girl, immersion in a mikvah, before a rabbinic court (beit din). Ask the Rabbi what happens when the child comes of age.
 
 Speak with a rabbi early in the process, ideally before the adoption is final, so the conversion is done properly and in time. See our [conversion](/learn/converting-to-judaism) guide.
 
@@ -39,7 +39,7 @@ Only if the birth mother is not Jewish. If she was Jewish, the child is already 
 Usually as soon as possible after the adoption. Ask the Rabbi to guide you through the timing.
 
 ### Can an adopted son say Kaddish for his adoptive parents?
-Yes. An adopted child may say Kaddish for the parents who raised him, with great merit for their souls.
+Yes. An adopted child may say Kaddish for the parents who raised him, with great merit for their souls. Ask the Rabbi about the details.
 
 ### Who can help us?
 Rabbi Yisroel Labkowski at 925-384-7242 will guide you step by step.

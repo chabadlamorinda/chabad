@@ -26,7 +26,7 @@ The Rebbe strongly encouraged using chalav Yisrael, especially for children, sin
 - **Milk and cream**, the main focus.
 - **Butter, yogurt, ice cream and dairy desserts.**
 - **Chocolate and baked goods** that contain milk or milk powder.
-- **Cheese** has an additional rule, called gevinat Yisrael, requiring Jewish involvement in making it. Most kosher-certified cheese meets this.
+- **Cheese** has an additional rule, called gevinat Yisrael, requiring Jewish involvement in making it. Many certified cheeses are made this way; ask the Rabbi about a cheese you are unsure of.
 
 ## How to identify it
 

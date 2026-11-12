@@ -44,7 +44,7 @@ The mohel will give instructions about feeding before the ceremony and care in t
 The bris waits until the doctors and the mohel agree the baby is healthy, however long that takes. Ask the Rabbi to help set the new date; it will not be on Shabbat or a holiday.
 
 ### What do the parents do during the ceremony?
-Very little. The father says one blessing (the mohel shows him the words), and everyone answers "Amen." The mother may be in the room or in a quieter room nearby; both are fine.
+Very little. The father says a blessing (the mohel shows him the words), and everyone answers "Amen." The mother may be in the room or in a quieter room nearby; both are fine.
 
 ### We are not very observant. Can we still have a bris?
 Of course. The bris belongs to every Jewish family, and the Rabbi helps families of every background. Call 925-384-7242; we will take care of the details together.

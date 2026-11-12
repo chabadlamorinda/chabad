@@ -27,7 +27,7 @@ This is a beautiful picture of Isaac's role: he did not invent a new path, he cl
 
 ## The blessings
 
-When Isaac was old and blind, he intended to bless Esau. Rebecca helped Jacob receive the blessing instead, and Isaac blessed Jacob. Jacob then left for Padan Aram, and Isaac did not see him for more than 22 years. The Torah shows us a father who cared deeply about blessing his children, a custom Jewish parents continue every Friday night: see [blessing your children](/learn/blessing-your-children).
+When Isaac was old and blind, he intended to bless Esau. Rebecca helped Jacob receive the blessing instead, and Isaac blessed Jacob. Jacob then left for Padan Aram, and Isaac did not see him for more than 22 years. The Torah shows us a father who cared deeply about blessing his children, a custom many Jewish parents continue on Friday night: see [blessing your children](/learn/blessing-your-children).
 
 ## Isaac and the Mincha prayer
 

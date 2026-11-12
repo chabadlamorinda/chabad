@@ -28,7 +28,7 @@ Every doorway in the home used by people, including the front door, bedrooms and
 1. **Get a kosher scroll** from a reliable source. Roll it from the end of the text toward the beginning, so the first word, Shema, is on the outside.
 2. **Put it in a case.** Wrapping it in plastic helps protect it from moisture.
 3. **Find the spot:** on the right side of the doorway as you walk into the room or house, on the doorpost itself.
-4. **Measure the height:** at the bottom of the top third of the doorway, usually around shoulder height. It should be at least a handbreadth (about 4 inches) from the top.
+4. **Measure the height:** at the bottom of the top third of the doorway, usually around shoulder height. It should be at least a handbreadth from the top of the doorway.
 5. **Tilt it.** In Ashkenazi practice, including Chabad, the top of the mezuzah tilts inward toward the room. Sephardim usually hang it straight up.
 6. **Say the blessing** (below), and right away attach the mezuzah with nails, screws or strong double-sided tape.
 
