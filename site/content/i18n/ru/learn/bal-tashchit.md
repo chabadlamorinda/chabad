@@ -2,7 +2,7 @@
 title: Баль ташхит: еврейский запрет на расточительство
 description: Что такое баль ташхит, запрет Торы на бессмысленное уничтожение, и как традиция учит беречь еду, вещи и окружающую среду.
 category: Jewish ideas
-related: tu-bishvat-seder, why-mitzvot, business-ethics, noahide-laws
+related: tu-bishvat-seder, jewish-hiking-in-the-east-bay-hills, why-mitzvot, business-ethics, noahide-laws
 local: Хотите узнать больше о еврейском взгляде на мир вокруг нас? Приходите на урок к раввину Лабковскому: chabadoflamorinda.com/programs/adult-education или звоните 925-384-7242.
 ---
 Баль ташхит означает «не уничтожай». Это запрет Торы тратить впустую или бессмысленно уничтожать что-либо полезное. Он начался как закон о фруктовых деревьях и вырос в целый еврейский подход к еде, имуществу и природе.

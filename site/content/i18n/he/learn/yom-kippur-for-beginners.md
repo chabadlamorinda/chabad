@@ -2,7 +2,7 @@
 title: יום כיפור למתחילים: יום הכיפורים הראשון שלכם
 description: מדריך למי שזה יום כיפור ראשון: מה משמעות היום, חמשת העינויים, מי לא צם, כל נדרי, יזכור ונעילה, מה לובשים ואיך הופכים אותו למשמעותי.
 category: Shabbat & holidays
-related: yom-kippur-fast, book-of-jonah, neilah, unetaneh-tokef, shabbat-shuva, kol-nidre, yizkor, teshuvah, ten-days-of-repentance
+related: yom-kippur-fast, high-holidays-in-lamorinda, book-of-jonah, neilah, unetaneh-tokef, shabbat-shuva, kol-nidre, yizkor, teshuvah, ten-days-of-repentance
 local: כל יהודי מלאפייט, מוראגה ואורינדה מוזמן לחב״ד למורינדה, בלי צורך בחברות; התקשרו לרב ישראל לבקובסקי 925-384-7242 לגבי יום כיפור השנה.
 ---
 אם זה יום הכיפורים הראשון שלכם, או הראשון אחרי שנים רבות, ברוכים הבאים. אתם לא צריכים לדעת עברית, להחזיק סידור או להיות בבית כנסת קודם. הנה מהו היום, מה קורה בו, ואיך להפוך אותו לשלכם.

@@ -2,7 +2,7 @@
 title: קטניות בפסח: אורז, שעועית ותירס ומי נמנע מהם
 description: מהן קטניות? למה אשכנזים רבים נמנעים מאורז, שעועית, תירס וקטניות בפסח, מי אוכל אותן, ומה לגבי תפוחי אדמה וקינואה.
 category: Shabbat & holidays
-related: chametz, passover-shopping-list, gluten-free-passover, kosher-for-passover, matzah, passover-for-beginners
+related: chametz, ashkenazi-and-sephardi, passover-shopping-list, gluten-free-passover, kosher-for-passover, matzah, passover-for-beginners
 local: משפחה מעורבת או לא בטוחים מה המנהג שלכם? התקשרו לרב ישראל לבקובסקי, 925-384-7242, לקבלת הנחיה, בכל מקום בלפאייט, מוראגה ואורינדה.
 ---
 קטניות הן קבוצת מאכלים, ובהם אורז, תירס, שעועית, עדשים וקטניות אחרות, שאשכנזים רבים, וגם חלק מהספרדים, אינם אוכלים בפסח. הן אינן חמץ, אך מנהג מימי הביניים, שכל הקהילות האשכנזיות קיבלו, מרחיק אותן משולחן הפסח.

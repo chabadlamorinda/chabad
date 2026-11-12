@@ -2,7 +2,7 @@
 title: מהו עירוב? טלטול בשבת בפשטות
 description: מהו עירוב, למה אסור לטלטל בשבת, איך עירוב עובד, איך בודקים אם הוא תקין, ומה מותר ואסור לטלטל.
 category: Shabbat & holidays
-related: thirty-nine-melachot, babies-and-toddlers-on-shabbat, shabbat, shabbat-meals, jewish-parenting
+related: thirty-nine-melachot, techum-shabbat, shabbat-walks-in-lamorinda, babies-and-toddlers-on-shabbat, shabbat, shabbat-meals, jewish-parenting
 local: לא בטוחים אם יש עירוב במקום מגוריכם בלמורינדה? שאלו את הרב לבקובסקי בטלפון 925-384-7242 לפני שאתם מטלטלים בשבת.
 ---
 עירוב הוא גבול סמלי, לרוב עשוי מחוטים, מעמודים ומקירות קיימים, שמקיף אזור כך שמותר לטלטל בו בשבת. בלי עירוב, ההלכה אוסרת להוציא כל דבר מהבית לרשות הרבים, או לטלטל בתוך רשות הרבים.

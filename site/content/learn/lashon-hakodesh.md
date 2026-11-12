@@ -2,7 +2,7 @@
 title: "Lashon HaKodesh: Why Hebrew Is Called the Holy Tongue"
 description: Why Hebrew is called Lashon HaKodesh, the Holy Tongue; how Biblical and modern Hebrew differ; and why prayer in Hebrew matters. Learn to read with us.
 category: Jewish ideas
-related: hebrew-alphabet, hebrew-reading-for-adults, israelis-in-lamorinda, jewish-languages, hebrew-phrases
+related: hebrew-alphabet, raising-hebrew-speaking-kids-in-lamorinda, hebrew-reading-for-adults, israelis-in-lamorinda, jewish-languages, hebrew-phrases
 local: Want to read Hebrew with confidence? Ask about adult classes: call Rabbi Labkowski at 925-384-7242 or see /programs/adult-education.
 ---
 Lashon HaKodesh (לְשׁוֹן הַקֹּדֶשׁ) means "the Holy Tongue," the traditional name for the Hebrew of the Torah and prayer. Jewish tradition teaches that it is the language through which G-d created the world, and that is why it is holy.

@@ -2,7 +2,7 @@
 title: Jewish Fast Days: Dates, Meaning and How to Fast
 description: A guide to the Jewish fast days, from Yom Kippur and Tisha B'Av to the minor fasts: when they are, why we fast, and who is exempt.
 category: Shabbat & holidays
-related: jewish-calendar, fast-of-the-firstborn, tisha-bav-for-beginners, teshuvah, rosh-chodesh, yizkor
+related: jewish-calendar, asara-btevet, yom-kippur-katan, fast-of-the-firstborn, tisha-bav-for-beginners, teshuvah, rosh-chodesh, yizkor
 local: Check our holidays page for upcoming fast days and times, or call Rabbi Labkowski at 925-384-7242 with any questions about fasting.
 ---
 The Jewish calendar has six public fast days: two major fasts, Yom Kippur and Tisha B'Av, which last about 25 hours, and four minor fasts that last from dawn until nightfall. Fasting is a time for reflection, prayer and teshuvah, returning to G-d.

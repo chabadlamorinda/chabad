@@ -2,7 +2,7 @@
 title: השנה היהודית בלאפייט, מוראגה ואורינדה: כל החגים עם חב״ד למורינדה
 description: החגים היהודיים בלאפייט, מוראגה ואורינדה: ימים נוראים, סוכות, חנוכה, פורים, פסח ועוד עם חב״ד למורינדה. כולם מוזמנים.
 category: Lamorinda
-related: jewish-calendar, passover-in-lamorinda, purim-in-lamorinda, chanukah-in-lamorinda, shofar, sukkah, passover-seder
+related: jewish-calendar, seasons-of-jewish-life-in-lamorinda, high-holidays-in-lamorinda, jewish-holidays-and-lamorinda-school-calendars, building-a-sukkah-in-lamorinda, passover-in-lamorinda, purim-in-lamorinda, chanukah-in-lamorinda, shofar, sukkah, passover-seder
 local: את כל החגים ואת התאריכים של השנה תמצאו ב-chabadoflamorinda.com/holidays, ואפשר להירשם לדיוור השבועי ב-chabadoflamorinda.com/forms/newsletter.
 ---
 השנה היהודית היא מסע, ובלמורינדה לא צריך לעבור אותו לבד. חב״ד למורינדה בלאפייט חוגג כל חג עם משפחות מלאפייט, מוראגה, אורינדה, פלזנט היל ומרטינז. אין דמי חבר ואין כרטיסים, וכולם מוזמנים, מכל רקע שהוא. הנה איך נראית כל עונה אצלנו, עם קישור לעמוד של כל חג לתאריכים ולפרטים.

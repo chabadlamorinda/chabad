@@ -2,7 +2,7 @@
 title: "Лашон а-кодеш: почему иврит называют святым языком"
 description: Почему иврит называют лашон а-кодеш; чем библейский иврит отличается от современного и почему важна молитва на иврите. Учитесь читать с нами.
 category: Jewish ideas
-related: hebrew-alphabet, hebrew-reading-for-adults, israelis-in-lamorinda, jewish-languages, hebrew-phrases
+related: hebrew-alphabet, raising-hebrew-speaking-kids-in-lamorinda, hebrew-reading-for-adults, israelis-in-lamorinda, jewish-languages, hebrew-phrases
 local: Хотите уверенно читать на иврите? Спросите об уроках для взрослых: звоните раввину Лабковскому 925-384-7242 или см. /programs/adult-education.
 ---
 Лашон а-кодеш («святой язык») традиционное название иврита Торы и молитвы. Еврейская традиция учит, что это язык, которым Б-г сотворил мир, и потому он свят.

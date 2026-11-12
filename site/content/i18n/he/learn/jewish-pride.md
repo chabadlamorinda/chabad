@@ -2,7 +2,7 @@
 title: גאווה יהודית: לחיות כיהודי בגאווה ובגלוי
 description: מה פירוש גאווה יהודית ביהדות, למה היא חשובה, ודרכים פשוטות ויומיומיות לבטא את הזהות היהודית שלכם בביטחון ובשמחה.
 category: Jewish ideas
-related: who-is-a-jew, am-yisrael-chai, talking-to-kids-about-antisemitism, why-be-jewish, mezuzah, chanukah-menorah, kippah
+related: who-is-a-jew, shabbat-and-youth-sports, am-yisrael-chai, talking-to-kids-about-antisemitism, why-be-jewish, mezuzah, chanukah-menorah, kippah
 local: מחפשים קהילה יהודית חמה לחגוג איתה? ראו chabadoflamorinda.com/events או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 גאווה יהודית פירושה להרגיש טוב עם היותכם יהודים ולחיות זאת בגלוי, בביטחון ובשמחה. זה לא עניין של להרגיש טובים יותר מאחרים. זה עניין של לדעת מי אתם, מאין באתם ואיזה אור יש לכם לחלוק עם העולם.

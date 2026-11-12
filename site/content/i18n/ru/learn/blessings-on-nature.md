@@ -2,7 +2,7 @@
 title: Благословения на радугу, гром, океан и другие чудеса
 description: Короткие еврейские благословения на молнию, гром, радугу, океан, горы, цветущие деревья и встречу со старым другом: слова и когда их говорить.
 category: Prayer & Torah
-related: blessings, noah-and-the-flood, blessing-on-blossoming-trees, shehecheyanu, hakarat-hatov, modeh-ani
+related: blessings, barchi-nafshi, jewish-hiking-in-the-east-bay-hills, noah-and-the-flood, blessing-on-blossoming-trees, shehecheyanu, hakarat-hatov, modeh-ani
 local: Есть вопросы о том, какое благословение сказать? Спросите раввина Исроэля Лабковского в Хабаде Ламоринды в Лафайетте: 925-384-7242.
 ---
 Иудаизм учит нас замечать. Кроме благословений на еду, есть короткие благословения на моменты восхищения: вспышку молнии, радугу после дождя, первый взгляд на океан. Каждое занимает несколько секунд и превращает «Ух ты!» в момент связи с Творцом.

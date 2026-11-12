@@ -2,7 +2,7 @@
 title: When a Parent Has Dementia: Jewish Wisdom and Support
 description: Caring for a parent with Alzheimer's or dementia: honoring them with dignity, Jewish life at home or in memory care, prayer, and help for caregivers.
 category: Life cycle
-related: caregiver-support, caring-for-aging-parents, honoring-parents, bikur-cholim, mi-sheberach
+related: caregiver-support, jewish-life-in-senior-living-lamorinda, caring-for-aging-parents, honoring-parents, bikur-cholim, mi-sheberach
 local: Families in Lafayette, Moraga and Orinda: call Rabbi Yisroel Labkowski at 925-384-7242, or the Rebbetzin at 925-384-7241, to talk, ask for a visit, or add a name to our prayers.
 ---
 Watching a parent lose their memory is one of the hardest things a family can go through. The person you love is still there, and yet so much seems to slip away. Judaism has deep and gentle teachings for this time, and you do not have to face it alone.

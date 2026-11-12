@@ -2,7 +2,7 @@
 title: Muktzeh: What Not to Move on Shabbat and Why
 description: What muktzeh means on Shabbat: money, phones, tools and candlesticks, the main categories in simple terms, and tips to prepare your home before Shabbat.
 category: Shabbat & holidays
-related: thirty-nine-melachot, shabbat-practical-questions, shabbat-for-beginners, shabbat-candles
+related: thirty-nine-melachot, shabbat-walks-in-lamorinda, shabbat-practical-questions, shabbat-for-beginners, shabbat-candles
 local: Have a muktzeh question about your home in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Muktzeh means "set aside." On Shabbat, certain objects are set aside and not moved, even inside the house. Money, phones, tools, pens and the lit Shabbat candlesticks are common examples. The idea is simple: things that belong to the workweek stay put, so Shabbat feels like a different kind of day.

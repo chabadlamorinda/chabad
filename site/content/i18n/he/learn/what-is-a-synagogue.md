@@ -2,7 +2,7 @@
 title: מהו בית כנסת (שול)? מדריך פשוט
 description: מהו בית כנסת או שול, מה קורה בו, מה רואים בפנים, ואיך להרגיש בבית בביקור הראשון.
 category: Prayer & Torah
-related: first-time-at-synagogue, minyan, siddur, torah-reading
+related: first-time-at-synagogue, synagogue-roles, minyan, siddur, torah-reading
 local: חב״ד למורינדה ב-3477 Golden Gate Way בלאפייט מקבל בברכה כל יהודי, בלי צורך בחברות. מידע על שבת ב-chabadoflamorinda.com/shabbat או בטלפון 925-384-7242.
 ---
 בית כנסת הוא בית יהודי של תפילה, לימוד וקהילה. יהודים מתאספים בו כדי להתפלל יחד, לקרוא בתורה, ללמוד ולשמוח, ורבים פשוט קוראים לו *שול*, המילה ביידיש ל"בית ספר".

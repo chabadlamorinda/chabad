@@ -2,7 +2,7 @@
 title: חב״ד באזור המפרץ: מה עושים בתי חב״ד ואיפה למורינדה משתלבת
 description: מהו בית חב״ד, מי הם השליחים, איך חב״ד צמחה באזור המפרץ, ומה חב״ד למורינדה מציע לכל יהודי באיסט ביי.
 category: Lamorinda
-related: jewish-east-bay, chanukah-in-lamorinda, jewish-bay-area-history, jewish-san-francisco, chabad
+related: jewish-east-bay, jewish-history-of-contra-costa, chanukah-in-lamorinda, jewish-bay-area-history, jewish-san-francisco, chabad
 local: בואו לראות בית חב״ד במו עיניכם: הזמינו סעודת שבת ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 בית חב״ד הוא מרכז קהילתי יהודי בהנהגת רב ואשתו, הנקראים שליחים, שעוברים למקום כדי לשרת כל יהודי שגר בו. ברחבי אזור המפרץ כל בית חב״ד מעט שונה, כי כל אחד מעוצב על ידי הקהילה שלו. חב״ד למורינדה, בלאפייט, הוא זה של לאפייט, מוראגה ואורינדה.

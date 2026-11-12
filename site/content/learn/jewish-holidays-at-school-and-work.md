@@ -2,7 +2,7 @@
 title: Jewish Holidays at School and Work: Taking the Day Off
 description: How to ask for Jewish holidays off school and work in California: which days matter most, what the law allows, and sample notes to teachers and bosses.
 category: Shabbat & holidays
-related: jewish-calendar, chanukah-at-work-and-college, rosh-hashanah-simanim, yom-kippur-fast
+related: jewish-calendar, jewish-holidays-and-lamorinda-school-calendars, chanukah-at-work-and-college, rosh-hashanah-simanim, yom-kippur-fast
 local: For families in Lafayette, Moraga, Orinda and the East Bay: the Rabbi is happy to write a letter for school or work. Call 925-384-7242.
 ---
 Jewish holidays follow the Hebrew calendar, so they fall on different weekdays every year, often in the middle of the school or work week. With a little planning, you can keep the holidays fully and still keep teachers and employers happy.

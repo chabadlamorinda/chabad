@@ -2,7 +2,7 @@
 title: Getting Involved in Jewish Lamorinda: Ways to Take Part
 description: Ways to take part in Jewish life in Lafayette, Moraga and Orinda: Shabbat, classes, Women's Circle, Men's Club, volunteering and giving.
 category: Lamorinda
-related: volunteering-in-lamorinda, shabbat-in-lamorinda, torah-classes-in-lamorinda, supporting-chabad-of-lamorinda, sponsoring-a-kiddush
+related: volunteering-in-lamorinda, why-jewish-community-matters, shabbat-in-lamorinda, torah-classes-in-lamorinda, supporting-chabad-of-lamorinda, sponsoring-a-kiddush
 local: Ready to take part? Sign up to volunteer at chabadoflamorinda.com/forms/volunteer or call 925-384-7242.
 ---
 There is a place for you at Chabad of Lamorinda, whether you have an hour a month or a lifetime of experience. You can come, learn, help and give, in any order. The easiest first step is to show up once: come to Shabbat or a class, and the rest follows.

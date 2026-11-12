@@ -2,7 +2,7 @@
 title: Your Personal Psalm: Which Chapter of Tehillim Matches Your Age
 description: Which psalm to say for your age: add one to your age to find your personal chapter of Tehillim. A beginner guide to the Baal Shem Tov's custom.
 category: Prayer & Torah
-related: tehillim, jewish-birthday-customs, hebrew-birthday, blessing-your-children, baal-shem-tov
+related: tehillim, barchi-nafshi, jewish-birthday-customs, hebrew-birthday, blessing-your-children, baal-shem-tov
 local: Нужна помощь найти свой псалом или псалом ребёнка? Позвоните раввину Лабковскому: 925-384-7242 или напишите через /help/talk-to-the-rabbi.
 ---
 Чтобы найти свой личный псалом, прибавьте к возрасту единицу: глава Теилим (Псалмов), соответствующая году жизни, в котором вы находитесь, и есть та, которую читают каждый день. Тринадцатилетний, идущий в 14-й год жизни, читает Псалом 14; малыш в первый год жизни читает Псалом 1.

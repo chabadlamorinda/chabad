@@ -2,7 +2,7 @@
 title: Еврейская гордость: жить гордо и открыто как еврей
 description: Что означает еврейская гордость в иудаизме, почему она важна и простые повседневные способы выражать свою еврейскую идентичность уверенно и радостно.
 category: Jewish ideas
-related: who-is-a-jew, am-yisrael-chai, talking-to-kids-about-antisemitism, why-be-jewish, mezuzah, chanukah-menorah, kippah
+related: who-is-a-jew, shabbat-and-youth-sports, am-yisrael-chai, talking-to-kids-about-antisemitism, why-be-jewish, mezuzah, chanukah-menorah, kippah
 local: Ищете теплую еврейскую общину, чтобы праздновать вместе? Зайдите на chabadoflamorinda.com/events или звоните раввину Лабковскому: 925-384-7242.
 ---
 Еврейская гордость - это когда тебе хорошо оттого, что ты еврей, и ты живешь этим открыто, уверенно и радостно. Дело не в том, чтобы чувствовать себя лучше других. Дело в том, чтобы знать, кто ты, откуда ты и какой свет ты можешь дать миру.

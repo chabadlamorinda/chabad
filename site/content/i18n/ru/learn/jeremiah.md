@@ -2,7 +2,7 @@
 title: "Пророк Ирмеяху (Иеремия): весть предостережения и надежды"
 description: Кто такой пророк Ирмеяху? Его жизнь, разрушение Первого Храма, Плач, письмо изгнанникам и обещание возвращения.
 category: Prayer & Torah
-related: the-holy-temple, three-weeks, what-is-a-prophet, tisha-bav-for-beginners, tanach
+related: the-holy-temple, rachel-our-mother, three-weeks, what-is-a-prophet, tisha-bav-for-beginners, tanach
 local: Вопросы о трудных временах, вере или надежде? Поговорите с раввином наедине: звоните 925-384-7242 или смотрите /help/talk-to-the-rabbi.
 ---
 Ирмеяху (Иеремия) был пророком, который около сорока лет предупреждал народ перед разрушением Первого Храма в Иерусалиме, оплакал его в Книге Плач (Эйха), а потом принёс изгнанникам весть надежды и возвращения.

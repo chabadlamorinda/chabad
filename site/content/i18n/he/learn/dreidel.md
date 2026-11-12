@@ -2,7 +2,7 @@
 title: איך משחקים בסביבון: חוקים, אותיות ומשמעות
 description: איך משחקים בסביבון בחנוכה, מה פירוש ארבע האותיות, החוקים הפשוטים של המשחק, וההיסטוריה והמשמעות העמוקה של הסביבון.
 category: Shabbat & holidays
-related: chanukah-menorah, hebrew-alphabet, jewish-parenting, tzedakah
+related: chanukah-menorah, presenting-a-jewish-holiday-in-class, hebrew-alphabet, jewish-parenting, tzedakah
 local: הצטרפו לחגיגות החנוכה שלנו עם סביבונים, לביבות והדלקת חנוכייה. פרטים ב-chabadoflamorinda.com/holidays/chanukah או בטלפון 925-384-7242.
 ---
 סביבון הוא צעצוע מסתובב בעל ארבע צלעות, ועל כל צלע אות עברית, ומשחקים בו בחנוכה. האותיות הן ראשי התיבות של "נס גדול היה שם".

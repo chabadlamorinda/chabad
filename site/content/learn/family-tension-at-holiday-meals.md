@@ -2,7 +2,7 @@
 title: Family Tension at Holiday Meals: Jewish Wisdom for Keeping the Peace
 description: Keep the peace at Thanksgiving, Chanukah and Seder tables: Jewish wisdom on seating, topics, judging favorably and silence. A private talk is welcome.
 category: Jewish home
-related: family-feuds-and-inheritance, judging-others-favorably, shalom-bayit, forgiveness-and-making-peace, in-laws
+related: family-feuds-and-inheritance, hosting-family-for-the-holidays-in-lamorinda, judging-others-favorably, shalom-bayit, forgiveness-and-making-peace, in-laws
 local: Dreading a family gathering? Talk it over privately with the Rabbi or Rebbetzin: 925-384-7242 or /help/talk-to-the-rabbi.
 ---
 To keep the peace at a holiday meal, plan ahead, set a warm tone from the first minute, steer conversation toward shared memories and tradition, and choose silence over a sharp reply. Jewish wisdom treats peace in the home as a great mitzvah, worth a little effort and a little humility.

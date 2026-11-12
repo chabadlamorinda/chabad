@@ -2,7 +2,7 @@
 title: The 39 Melachot: What Counts as Work on Shabbat
 description: What the 39 categories of creative work forbidden on Shabbat are, where they come from, the full list in plain English, and how they apply today.
 category: Shabbat & holidays
-related: shabbat, electricity-on-shabbat, cooking-on-yom-tov, eruv, shabbat-candles, havdalah
+related: shabbat, techum-shabbat, electricity-on-shabbat, cooking-on-yom-tov, eruv, shabbat-candles, havdalah
 local: Have a question about keeping Shabbat at home? Call Rabbi Labkowski at 925-384-7242, and see chabadoflamorinda.com/shabbat for Shabbat with us.
 ---
 The 39 melachot are the categories of creative work that the Torah forbids on Shabbat. They come from the work done to build the Mishkan, the portable Sanctuary in the desert, and they include activities like cooking, writing, lighting a fire and carrying in a public area.

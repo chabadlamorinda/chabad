@@ -2,7 +2,7 @@
 title: Jewish Life in the East Bay and Contra Costa: Where Lamorinda Fits
 description: A friendly map of Jewish life in the East Bay and Contra Costa, and how Lafayette, Moraga and Orinda fit in with Berkeley, Walnut Creek and beyond.
 category: Jewish ideas
-related: chabad-in-the-bay-area, jewish-san-francisco, jewish-bay-area-history, moving-to-lamorinda
+related: chabad-in-the-bay-area, jewish-history-of-contra-costa, jewish-san-francisco, jewish-bay-area-history, moving-to-lamorinda
 local: New to the East Bay or just curious? Reserve a Shabbat meal at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 The East Bay is not one community but many neighborhoods and towns, each with its own Jewish flavor. Lafayette, Moraga and Orinda, together called Lamorinda, sit in the hills between Oakland and Walnut Creek. Chabad of Lamorinda, in Lafayette, is the Jewish home for families in all three towns, with no membership and no dues.

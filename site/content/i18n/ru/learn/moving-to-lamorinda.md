@@ -2,7 +2,7 @@
 title: Переезд в Лафайетт, Морагу или Оринду: еврейский гид для новоселов Ламоринды
 description: Вы еврей и недавно в Лафайетте, Мораге или Оринде? Шабат, детский сад, еврейская школа, кошерная еда и друзья в Хабаде Ламоринды.
 category: Lamorinda
-related: mezuzah, mezuzah-questions, start-here-jewish-lamorinda, jewish-east-bay, jewish-bay-area-history, welcoming-the-stranger, chanukat-habayit, kosher-kitchen, shabbat-for-beginners
+related: mezuzah, jewish-history-of-contra-costa, wildfire-readiness-for-jewish-families, mezuzah-questions, start-here-jewish-lamorinda, jewish-east-bay, jewish-bay-area-history, welcoming-the-stranger, chanukat-habayit, kosher-kitchen, shabbat-for-beginners
 local: Поздоровайтесь с нами на chabadoflamorinda.com/welcome или позвоните раввину Исроэлю и ребецн Ципоре Лабковским: 925-384-7242.
 ---
 Добро пожаловать в Ламоринду! Переезд в Лафайетт, Морагу или Оринду - это новый дом, новые соседи и новый распорядок. А еще это теплая еврейская община, которая ждет встречи с вами. Хабад Ламоринды по адресу 3477 Golden Gate Way в Лафайетте - дом для каждого еврея трех городов и соседних Плезант-Хилла и Мартинеса. Никакого членства и никаких взносов: здесь все свои.

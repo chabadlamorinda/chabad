@@ -2,7 +2,7 @@
 title: Как включиться в еврейскую жизнь Ламоринды: способы участия
 description: Способы участвовать в еврейской жизни в Лафайете, Морага и Оринде: Шаббат, уроки, женский круг, мужской клуб, волонтерство и пожертвования.
 category: Lamorinda
-related: volunteering-in-lamorinda, shabbat-in-lamorinda, torah-classes-in-lamorinda, supporting-chabad-of-lamorinda, sponsoring-a-kiddush
+related: volunteering-in-lamorinda, why-jewish-community-matters, shabbat-in-lamorinda, torah-classes-in-lamorinda, supporting-chabad-of-lamorinda, sponsoring-a-kiddush
 local: Готовы участвовать? Запишитесь в волонтеры на chabadoflamorinda.com/forms/volunteer или позвоните 925-384-7242.
 ---
 В Хабаде Ламоринды есть место для вас, будь у вас час в месяц или опыт всей жизни. Можно приходить, учиться, помогать и давать в любом порядке. Проще всего начать с того, чтобы прийти один раз: на Шаббат или на урок, а остальное придет само.

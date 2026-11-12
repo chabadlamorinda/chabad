@@ -2,7 +2,7 @@
 title: How to Play Dreidel: Rules, Letters and Meaning
 description: How to play dreidel on Chanukah, what the four Hebrew letters mean, the simple rules of the game, and the history and deeper meaning of the dreidel.
 category: Shabbat & holidays
-related: chanukah-menorah, hebrew-alphabet, jewish-parenting, tzedakah
+related: chanukah-menorah, presenting-a-jewish-holiday-in-class, hebrew-alphabet, jewish-parenting, tzedakah
 local: Join our Chanukah celebrations for dreidels, latkes and menorah lighting. See chabadoflamorinda.com/holidays/chanukah or call 925-384-7242.
 ---
 A dreidel is a four-sided spinning top with a Hebrew letter on each side, played with on Chanukah. The letters stand for "Nes Gadol Hayah Sham," meaning "A great miracle happened there."

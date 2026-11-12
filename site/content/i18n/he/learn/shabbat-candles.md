@@ -2,7 +2,7 @@
 title: נרות שבת: איך ומתי מדליקים, והברכה
 description: איך מדליקים נרות שבת: הזמן, כמה נרות, הברכה, ומי מדליקה. מדריך פשוט צעד אחר צעד.
 category: Shabbat & holidays
-related: shabbat, early-shabbat-in-summer, yom-tov-candle-lighting, preparing-for-shabbat, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, jewish-women, havdalah
+related: shabbat, shabbat-times-in-lamorinda-explained, wildfire-readiness-for-jewish-families, early-shabbat-in-summer, yom-tov-candle-lighting, preparing-for-shabbat, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, jewish-women, havdalah
 local: נשמח לתת לכם ערכת הדלקת נרות חינם עם פמוטים וכרטיס ברכה, ולענות על כל שאלה. התקשרו 925-384-7242.
 ---
 נשים ובנות יהודיות מדליקות נרות שבת 18 דקות לפני השקיעה בכל יום שישי, וגם לפני חגים. ההדלקה מקבלת את פני השבת בבית ומביאה אור, שלום וברכה לכל המשפחה.

@@ -2,7 +2,7 @@
 title: "Яаков (Иаков): третий праотец, ставший Исраэлем"
 description: Кто такой Яаков в Библии? Близнецы, лестница, Рахель и Лея, борьба с ангелом, имя Исраэль и урок Ребе для нас.
 category: Prayer & Torah
-related: joseph-and-his-brothers, jews-hebrews-israelites, twelve-tribes, the-matriarchs, abraham-and-sarah, israel-and-the-jewish-people
+related: joseph-and-his-brothers, rachel-our-mother, jews-hebrews-israelites, twelve-tribes, the-matriarchs, abraham-and-sarah, israel-and-the-jewish-people
 local: Изучать недельную главу Торы легче вместе. Позвоните 925-384-7242 и узнайте, какие занятия планируются.
 ---
 Яаков (יַעֲקֹב, Иаков) - третий из праотцев после Авраама и Ицхака и отец двенадцати сыновей, давших начало двенадцати коленам Израиля. После борьбы с таинственным ангелом он получил второе имя, Исраэль (יִשְׂרָאֵל), имя всего еврейского народа.

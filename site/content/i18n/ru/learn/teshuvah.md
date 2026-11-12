@@ -2,7 +2,7 @@
 title: Тшува: раскаяние и возвращение к Б-гу в иудаизме
 description: Что означает тшува, этапы раскаяния в иудаизме, как загладить вину перед другими и почему вернуться никогда не поздно.
 category: Jewish ideas
-related: fast-days, cheshbon-hanefesh, book-of-jonah, unetaneh-tokef, adam-and-eve, shabbat-shuva, forgiving-yourself, ten-days-of-repentance, changing-a-bad-habit, kapparot, addiction-and-recovery, success-and-failure, tanya, 613-mitzvot, moshiach
+related: fast-days, yom-kippur-katan, cheshbon-hanefesh, book-of-jonah, unetaneh-tokef, adam-and-eve, shabbat-shuva, forgiving-yourself, ten-days-of-repentance, changing-a-bad-habit, kapparot, addiction-and-recovery, success-and-failure, tanya, 613-mitzvot, moshiach
 local: Что бы ни лежало у вас на душе, раввин Лабковский готов выслушать вас без осуждения. Звоните по телефону 925-384-7242, чтобы поговорить наедине.
 ---
 Тшува на иврите означает «возвращение». Это еврейский путь раскаяния: признать ошибку, пожалеть о ней и принять решение стать лучше, вернувшись к Б-гу и к своему истинному «я». Иудаизм учит, что тшува возможна всегда, для любого человека и в любое время.

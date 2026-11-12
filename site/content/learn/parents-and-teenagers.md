@@ -2,7 +2,7 @@
 title: Parents and Teenagers: Jewish Wisdom for the Hard Years
 description: Clashing with your teen? Torah wisdom on raising teenagers with love and limits: listening, rules, screens, Jewish identity, and when to get help.
 category: Life cycle
-related: jewish-parenting, smoking-and-vaping-jewish-view, disciplining-children, bullying-jewish-view, jewish-teens-in-lamorinda, jewish-identity-for-teens, honoring-parents
+related: jewish-parenting, shabbat-and-youth-sports, smoking-and-vaping-jewish-view, disciplining-children, bullying-jewish-view, jewish-teens-in-lamorinda, jewish-identity-for-teens, honoring-parents
 local: Parents in Lafayette, Moraga, Orinda and the East Bay can talk privately with Rabbi Yisroel or Rebbetzin Tzipora Labkowski: 925-384-7242.
 ---
 The teenage years can be the hardest years of parenting. Doors slam, phones never leave their hands, and the child who used to tell you everything now tells you nothing. Jewish tradition has walked with parents through this for thousands of years.

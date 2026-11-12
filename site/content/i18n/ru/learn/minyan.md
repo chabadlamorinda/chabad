@@ -2,7 +2,7 @@
 title: Миньян: почему для еврейской молитвы нужны десять
 description: Что такое миньян, кто в него входит, почему нужны десять, для каких молитв он необходим и как вы можете помочь собрать миньян.
 category: Prayer & Torah
-related: prayer, kedushah, barchu, mincha-and-maariv, what-is-a-synagogue, jewish-men-in-lamorinda, kaddish, amidah, torah-reading
+related: prayer, why-jewish-community-matters, leading-the-prayers, kedushah, barchu, mincha-and-maariv, what-is-a-synagogue, jewish-men-in-lamorinda, kaddish, amidah, torah-reading
 local: Нужен миньян, чтобы сказать Кадиш, или для дома, где сидят шиву? Звоните раввину Лабковскому: 925-384-7242, и мы постараемся помочь.
 ---
 Миньян - это группа из десяти еврейских мужчин от 13 лет и старше, которые собираются для молитвы. Некоторые святые части богослужения, например Кадиш, Кдуша и чтение Торы, можно произносить только в присутствии миньяна.

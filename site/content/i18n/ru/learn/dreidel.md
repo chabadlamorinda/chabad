@@ -2,7 +2,7 @@
 title: Как играть в дрейдл: правила, буквы и смысл
 description: Как играть в дрейдл на Хануку, что означают четыре еврейские буквы, простые правила игры, история и глубокий смысл дрейдла.
 category: Shabbat & holidays
-related: chanukah-menorah, hebrew-alphabet, jewish-parenting, tzedakah
+related: chanukah-menorah, presenting-a-jewish-holiday-in-class, hebrew-alphabet, jewish-parenting, tzedakah
 local: Приходите на наши ханукальные праздники с дрейдлами, латкес и зажиганием меноры. Подробности на chabadoflamorinda.com/holidays/chanukah или по телефону 925-384-7242.
 ---
 Дрейдл - это четырехгранный волчок с еврейской буквой на каждой грани, в который играют на Хануку. Буквы означают «Нес гадоль хая шам», то есть «Великое чудо произошло там».

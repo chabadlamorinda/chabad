@@ -2,7 +2,7 @@
 title: Honoring the Elderly: "Rise Before the Aged" in Jewish Life
 description: Why Judaism asks us to stand for older people, respect their wisdom, visit and call, hear their stories and keep them part of Shabbat and holidays.
 category: Jewish ideas
-related: caring-for-aging-parents, jewish-grandparents, honoring-parents, jewish-seniors-in-lamorinda, chesed
+related: caring-for-aging-parents, derech-eretz, jewish-grandparents, honoring-parents, jewish-seniors-in-lamorinda, chesed
 local: Know an older person in Lafayette, Moraga or Orinda who would love a visit or a ride to Shabbat? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 In many places today, growing old means becoming invisible. The Torah sees it the other way around. An older person is someone to stand up for, to listen to, and to keep close. This guide looks at what Judaism teaches about honoring the elderly, and at simple ways to live it.

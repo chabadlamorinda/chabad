@@ -2,7 +2,7 @@
 title: תהילים: איך ומתי אומרים
 description: מהו ספר תהילים, למה יהודים אומרים תהילים בעתות שמחה ובעתות קושי, מנהגי חב״ד, ואילו מזמורים לומר לרפואה.
 category: Prayer & Torah
-related: prayer, your-personal-psalm, psalm-121, psalm-91, psalm-23, am-yisrael-chai, king-david, ashrei, praying-for-others, loss-of-a-pet, jewish-birthday-customs, prayer-before-surgery, the-rebbe, blessings, torah
+related: prayer, barchi-nafshi, your-personal-psalm, psalm-121, psalm-91, psalm-23, am-yisrael-chai, king-david, ashrei, praying-for-others, loss-of-a-pet, jewish-birthday-customs, prayer-before-surgery, the-rebbe, blessings, torah
 local: נשמח לעזור לכם להשיג ספר תהילים, להצטרף לאחרים באמירת תהילים עבור מי שזקוק לכך, וללמוד את המנהגים. התקשרו 925-384-7242.
 ---
 תהילים הוא ספר של 150 שירים ותפילות, שרובם חוברו בידי דוד המלך. במשך אלפי שנים פונים יהודים לתהילים בכל מצב: כדי להודות, כדי לבקש עזרה, כדי להתפלל על חולה, ופשוט כדי להרגיש קרובים להשם.

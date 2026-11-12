@@ -2,7 +2,7 @@
 title: Is My Last Name Jewish? Where Jewish Surnames Come From
 description: Is my last name Jewish? How Jewish surnames began, what Cohen, Levy, Katz and others mean, and why a surname alone cannot prove you are Jewish.
 category: Jewish ideas
-related: proving-jewish-ancestry, who-is-a-jew, kohen-levi-yisrael, jewish-genealogy, discovered-you-are-jewish
+related: proving-jewish-ancestry, ashkenazi-and-sephardi, who-is-a-jew, kohen-levi-yisrael, jewish-genealogy, discovered-you-are-jewish
 local: Wondering about your roots? Call Rabbi Labkowski at 925-384-7242 for a private, friendly conversation.
 ---
 A last name can hint at Jewish ancestry, but it cannot prove it. Most Jews took family names only about 200 years ago, and Jewish status in Jewish law passes through the mother, so a surname alone neither proves nor disproves that someone is Jewish.

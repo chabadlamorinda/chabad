@@ -2,7 +2,7 @@
 title: Common Hebrew and Yiddish Phrases and When to Say Them
 description: Everyday Jewish phrases explained: Shabbat Shalom, Mazal Tov, Baruch Hashem, B'ezrat Hashem, Refuah Shleimah, L'chaim, Shana Tova and more.
 category: Jewish ideas
-related: hebrew-alphabet, shalom, amen, yiddish-words-and-phrases, mazal-and-astrology, israelis-in-lamorinda, holiday-greetings, hebrew-reading-for-adults, blessings, chai-symbol
+related: hebrew-alphabet, raising-hebrew-speaking-kids-in-lamorinda, shalom, amen, yiddish-words-and-phrases, mazal-and-astrology, israelis-in-lamorinda, holiday-greetings, hebrew-reading-for-adults, blessings, chai-symbol
 local: Want to learn Hebrew in a friendly setting? Ask about classes at chabadoflamorinda.com/programs/adult-education or call 925-384-7242.
 ---
 A handful of Hebrew and Yiddish phrases come up again and again in Jewish life, from "Shabbat Shalom" on Friday to "Mazal Tov" at every celebration. Knowing what they mean, and when to say them, helps anyone feel at home in a synagogue, at a Shabbat table or at a simcha.

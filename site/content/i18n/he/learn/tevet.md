@@ -2,7 +2,7 @@
 title: חודש טבת: הימים האחרונים של חנוכה וחורף של לימוד
 description: החודש העברי טבת: סוף חנוכה, ה׳ טבת, צום עשרה בטבת, ויום ההילולא של הרמב״ם ושל אדמו״ר הזקן.
 category: Shabbat & holidays
-related: hey-teves, shevat, kislev, minor-fast-days, rosh-chodesh, jewish-calendar
+related: hey-teves, asara-btevet, shevat, kislev, minor-fast-days, rosh-chodesh, jewish-calendar
 local: ראו את תאריכי טבת וזמני הצום של השנה ללאפייט, מוראגה ואורינדה ב-chabadoflamorinda.com/jewish-holidays או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 טבת הוא החודש הרביעי בשנה היהודית כשסופרים מראש השנה, והוא חל בדרך כלל בדצמבר ובינואר. הוא מתחיל באמצע חנוכה, כשהחנוכייה עוד מאירה בחלון, ונמשך דרך השבועות הקרים והחשוכים ביותר של החורף.

@@ -2,7 +2,7 @@
 title: כשהורה סובל מדמנציה: חוכמה יהודית ותמיכה
 description: לטפל בהורה עם אלצהיימר או דמנציה: לכבד אותו בכבוד, חיים יהודיים בבית או במחלקה לטיפול בזיכרון, תפילה ועזרה למטפלים.
 category: Life cycle
-related: caregiver-support, caring-for-aging-parents, honoring-parents, bikur-cholim, mi-sheberach
+related: caregiver-support, jewish-life-in-senior-living-lamorinda, caring-for-aging-parents, honoring-parents, bikur-cholim, mi-sheberach
 local: משפחות בלאפייט, מוראגה ואורינדה: התקשרו להרב ישראל לבקובסקי 925-384-7242, או לרבנית 925-384-7241, כדי לשוחח, לבקש ביקור או להוסיף שם לתפילות שלנו.
 ---
 לראות הורה מאבד את זיכרונו הוא אחד הדברים הקשים ביותר שמשפחה יכולה לעבור. האדם שאתם אוהבים עדיין כאן, ובכל זאת נראה שכל כך הרבה חומק. ביהדות יש תורות עמוקות ועדינות לזמן הזה, ואתם לא צריכים להתמודד עם זה לבד.

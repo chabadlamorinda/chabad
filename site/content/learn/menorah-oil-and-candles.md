@@ -2,7 +2,7 @@
 title: Oil or Candles? Choosing and Preparing Your Chanukah Menorah
 description: Oil or candles for your Chanukah menorah? Olive oil, wicks, how long the lights must burn and Friday's longer lights, with help from Lafayette.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-on-shabbat, chanukah-foods, hosting-a-chanukah-party, chanukah-for-kids
+related: chanukah-menorah, menorah-at-home-in-lamorinda, chanukah-on-shabbat, chanukah-foods, hosting-a-chanukah-party, chanukah-for-kids
 local: Not sure what to buy? Call Rabbi Yisroel Labkowski at 925-384-7242 to hear how to get a menorah and candles in Lafayette, Moraga and Orinda, and see the community lighting on the events page (/events).
 ---
 You can light your Chanukah menorah with either olive oil or wax candles, but Chabad custom prefers olive oil, because the Temple menorah burned olive oil. Whatever you choose, there must be enough fuel to burn for at least half an hour after nightfall.

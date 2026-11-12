@@ -2,7 +2,7 @@
 title: חלאקה (אפשערניש): התספורת הראשונה של ילד יהודי בגיל שלוש
 description: מהי חלאקה, למה ילדים יהודים מחכים עד גיל שלוש לתספורת הראשונה, ואיך חוגגים את אבן הדרך המשמחת הזו.
 category: Life cycle
-related: tzitzit, beards-and-peyot, lag-baomer, hebrew-alphabet, brit-milah, torah
+related: tzitzit, jewish-customs-minhag, lag-baomer-in-lamorinda, beards-and-peyot, lag-baomer, hebrew-alphabet, brit-milah, torah
 local: מתכננים חלאקה? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לכם להפוך את התספורת הראשונה של ילדכם לחגיגה משמחת ומשמעותית.
 ---
 אפשערניש (ביידיש "גזיזה"), או בעברית חלאקה, היא התספורת הראשונה של ילד, שנערכת על פי המסורת בגיל שלוש. זו חגיגה משמחת שמציינת את תחילת החינוך היהודי שלו, כשהוא מתחיל לחבוש כיפה, ללבוש ציצית וללמוד את אותיות האלף בית.

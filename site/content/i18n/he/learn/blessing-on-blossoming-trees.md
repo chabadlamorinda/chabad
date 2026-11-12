@@ -2,7 +2,7 @@
 title: ברכת האילנות: הברכה השנתית על עצים פורחים (ואיפה לברך בלמורינדה)
 description: ברכת האילנות נאמרת פעם בשנה על עצי פרי פורחים. למדו את הנוסח, את העיתוי ואיך מברכים בלאפייט, מוראגה או אורינדה.
 category: Lamorinda
-related: blessings-on-nature, nissan, tu-bishvat-seder, blessings, shehecheyanu, jewish-year-in-lamorinda
+related: blessings-on-nature, seasons-of-jewish-life-in-lamorinda, jewish-hiking-in-the-east-bay-hills, nissan, tu-bishvat-seder, blessings, shehecheyanu, jewish-year-in-lamorinda
 local: לא בטוחים מתי לברך השנה? שאלו את הרב לבקובסקי 925-384-7242.
 ---
 ברכת האילנות היא הברכה על עצים פורחים, הנאמרת פעם בשנה כשרואים לראשונה עצי פרי בפריחה, בדרך כלל בחודש ניסן באביב. היא מודה לה' "שלא חיסר בעולמו דבר, וברא בו בריות טובות ואילנות טובים, ליהנות בהם בני אדם". בלאפייט, מוראגה ואורינדה, שבהן עצי פרי פורחים מוקדם, זה טיול משפחתי נעים.

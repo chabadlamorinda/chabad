@@ -2,7 +2,7 @@
 title: Кадиш скорбящего: смысл, когда его читают и кто его читает
 description: Что такое Кадиш скорбящего, что означают его слова, кто его читает, как долго и что делать, если вы не можете читать его сами.
 category: Mourning & remembrance
-related: shiva, learning-in-memory-of-a-loved-one, amen, losing-a-parent, aleinu, suicide-and-jewish-mourning, jewish-men-in-lamorinda, yahrzeit, yizkor, prayer
+related: shiva, leading-the-prayers, learning-in-memory-of-a-loved-one, amen, losing-a-parent, aleinu, suicide-and-jewish-mourning, jewish-men-in-lamorinda, yahrzeit, yizkor, prayer
 local: Чтобы читать Кадиш с миньяном или договориться, чтобы Кадиш читали за вашего близкого, звоните раввину Лабковскому по номеру 925-384-7242.
 ---
 Кадиш скорбящего - это короткая молитва, которую читают скорбящие в память о близком человеке. Удивительно, но в ней ни разу не упоминается смерть: это провозглашение хвалы Б-гу, и его чтение приносит большую заслугу и возвышение душе ушедшего.

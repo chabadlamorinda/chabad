@@ -2,7 +2,7 @@
 title: "איך לערוך סדר פסח: תוכנית רגועה, צעד אחר צעד, למארחים לראשונה"
 description: איך לערוך את סדר הפסח הראשון שלכם בבית: מה להכין, איך לערוך שולחן, להוביל את הערב ולקבל אורחים, צעד אחר צעד.
 category: Shabbat & holidays
-related: passover-seder, haggadah, seder-plate, passover-with-kids, four-questions
+related: passover-seder, hosting-family-for-the-holidays-in-lamorinda, haggadah, seder-plate, passover-with-kids, four-questions
 local: חוששים מהסדר הראשון? התקשרו לרב לבקובסקי 925-384-7242 ונלווה אתכם.
 ---
 כדי לערוך סדר פסח, אספו את האורחים, תנו לכולם את אותה הגדה, הכינו קערת סדר, מצות וארבע כוסות יין או מיץ ענבים, ופעלו לפי חמישה עשר סדרי ההגדה תוך כדי עצירות לשיחה ושאלות. אין צורך להיות מומחים: מטרת הליל היא לספר את סיפור יציאת מצרים לילדים ולאורחים, וקבלת פנים חמה חשובה יותר מארוחה מושלמת.

@@ -2,7 +2,7 @@
 title: "לשון הקודש: למה העברית נקראת השפה הקדושה"
 description: למה העברית נקראת לשון הקודש, במה שונות העברית התנכ"ית והמודרנית, ולמה התפילה בעברית חשובה. למדו לקרוא איתנו.
 category: Jewish ideas
-related: hebrew-alphabet, hebrew-reading-for-adults, israelis-in-lamorinda, jewish-languages, hebrew-phrases
+related: hebrew-alphabet, raising-hebrew-speaking-kids-in-lamorinda, hebrew-reading-for-adults, israelis-in-lamorinda, jewish-languages, hebrew-phrases
 local: רוצים לקרוא עברית בביטחון? שאלו על שיעורים למבוגרים: התקשרו לרב לבקובסקי 925-384-7242 או ראו /programs/adult-education.
 ---
 לשון הקודש היא השם המסורתי לעברית של התורה והתפילה. המסורת מלמדת שזו השפה שבה ברא ה' את העולם, ולכן היא קדושה.

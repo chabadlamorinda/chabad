@@ -2,7 +2,7 @@
 title: "יעקב אבינו: האבות השלישי שנעשה ישראל"
 description: מי היה יעקב בתנ"ך? התאומים, הסולם, רחל ולאה, המאבק עם המלאך ולמה נקרא ישראל, ומה מלמד הרבי.
 category: Prayer & Torah
-related: joseph-and-his-brothers, jews-hebrews-israelites, twelve-tribes, the-matriarchs, abraham-and-sarah, israel-and-the-jewish-people
+related: joseph-and-his-brothers, rachel-our-mother, jews-hebrews-israelites, twelve-tribes, the-matriarchs, abraham-and-sarah, israel-and-the-jewish-people
 local: קל יותר ללמוד את פרשת השבוע יחד. התקשרו 925-384-7242 ושמעו אילו שיעורים מתוכננים.
 ---
 יעקב אבינו (יַעֲקֹב) הוא השלישי באבות, אחרי אברהם ויצחק, ואבי י"ב הבנים שנעשו י"ב שבטי ישראל. אחרי שנאבק עם מלאך מסתורי ניתן לו שם נוסף, ישראל (יִשְׂרָאֵל), שם כל העם היהודי.

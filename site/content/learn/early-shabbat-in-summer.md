@@ -2,7 +2,7 @@
 title: "Early Shabbat in Summer: Why Kabbalat Shabbat Can Start Before Sunset"
 description: Why Shabbat can begin early on summer Fridays: plag hamincha, tosefet Shabbat, and how families with young children benefit. Check this week's time.
 category: Shabbat & holidays
-related: kabbalat-shabbat, shabbat-candles, shabbat-for-working-parents, shabbat-with-kids, shabbat-in-winter
+related: kabbalat-shabbat, shabbat-times-in-lamorinda-explained, shabbat-candles, shabbat-for-working-parents, shabbat-with-kids, shabbat-in-winter
 local: Not sure when to start Friday night? Check /shabbat-times or call Rabbi Labkowski at 925-384-7242.
 ---
 Jewish law allows you to bring Shabbat in early, from a point in the afternoon called plag hamincha (פְּלַג הַמִּנְחָה), about an hour and a quarter before sunset, and adding time to Shabbat is itself a mitzvah. That is why, in summer, when sunset is very late, Kabbalat Shabbat services and Friday-night dinners can start long before dark.

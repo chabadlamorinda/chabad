@@ -2,7 +2,7 @@
 title: Eruv Tavshilin: How to Cook on a Holiday for Shabbat
 description: What an eruv tavshilin is, when you need one, how to make it step by step with the blessing, and what to do if you forgot.
 category: Shabbat & holidays
-related: shabbat, yom-tov-candle-lighting, cooking-on-yom-tov, eruv, shabbat-meals, jewish-calendar
+related: shabbat, hosting-family-for-the-holidays-in-lamorinda, yom-tov-candle-lighting, cooking-on-yom-tov, eruv, shabbat-meals, jewish-calendar
 local: Not sure if a holiday this year leads into Shabbat? Check chabadoflamorinda.com/jewish-holidays-2026 or call Rabbi Labkowski at 925-384-7242.
 ---
 An eruv tavshilin is a simple ritual done the day before a Jewish holiday that falls on Thursday or Friday, which allows you to cook on the holiday for Shabbat. You set aside a cooked food and a piece of bread or matzah before the holiday, say a blessing and a short declaration, and then save them for Shabbat.

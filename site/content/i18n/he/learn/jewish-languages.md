@@ -2,7 +2,7 @@
 title: שפות יהודיות: עברית, יידיש, לאדינו, יהודית-ערבית ועוד
 description: באילו שפות מדברים יהודים? עברית, יידיש, לאדינו, ארמית, יהודית-ערבית, בוכרית ועוד, ואיך יהודים בנו שפה בכל מקום שחיו בו.
 category: Jewish ideas
-related: yiddish-words-and-phrases, hebrew-alphabet, russian-speaking-jews-in-lamorinda, jewish-history-overview, hebrew-phrases
+related: yiddish-words-and-phrases, ashkenazi-and-sephardi, hebrew-alphabet, russian-speaking-jews-in-lamorinda, jewish-history-overview, hebrew-phrases
 local: באיזו שפה שמשפחתכם דיברה, אתם מוזמנים. התקשרו 925-384-7242 ואמרו שלום בחב"ד לאמורינדה.
 ---
 ליהודים אין שפה אחת: לשון הקודש היא עברית, ובכל ארץ יהודים בנו גם שפות יומיומיות משלהם, כמו יידיש, לאדינו, יהודית-ערבית ובוכרית, שילוב של הדיבור המקומי עם עברית הכתוב באותיות עבריות. היום עברית היא שפת המדינה בישראל, ואנגלית היא השפה הנפוצה ביותר של החיים היהודיים באזור מפרץ סן פרנסיסקו.

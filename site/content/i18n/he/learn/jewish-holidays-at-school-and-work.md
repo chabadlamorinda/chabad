@@ -2,7 +2,7 @@
 title: חגי ישראל בבית הספר ובעבודה: לקחת יום חופש
 description: איך מבקשים חופש בחגים מבית הספר ומהעבודה בקליפורניה: אילו ימים הכי חשובים, מה החוק מאפשר, ומכתבים לדוגמה למורים ולמעסיקים.
 category: Shabbat & holidays
-related: jewish-calendar, chanukah-at-work-and-college, rosh-hashanah-simanim, yom-kippur-fast
+related: jewish-calendar, jewish-holidays-and-lamorinda-school-calendars, chanukah-at-work-and-college, rosh-hashanah-simanim, yom-kippur-fast
 local: למשפחות בלאפייט, מוראגה, אורינדה והאיסט ביי: הרב ישמח לכתוב מכתב לבית הספר או לעבודה. התקשרו 925-384-7242.
 ---
 חגי ישראל נקבעים לפי הלוח העברי, ולכן הם חלים בכל שנה ביום אחר בשבוע, ולעיתים קרובות באמצע שבוע הלימודים או העבודה. עם קצת תכנון אפשר לשמור את החגים במלואם, ועדיין לשמור על יחסים טובים עם המורים והמעסיקים.

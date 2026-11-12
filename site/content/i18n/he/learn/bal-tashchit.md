@@ -2,7 +2,7 @@
 title: בל תשחית: ההוראה היהודית נגד בזבוז
 description: מה פירוש בל תשחית, איסור התורה על השחתה לשווא, ואיך המסורת מדריכה אותנו לשמור על מזון, חפצים וסביבה.
 category: Jewish ideas
-related: tu-bishvat-seder, why-mitzvot, business-ethics, noahide-laws
+related: tu-bishvat-seder, jewish-hiking-in-the-east-bay-hills, why-mitzvot, business-ethics, noahide-laws
 local: רוצים ללמוד עוד על המבט היהודי על העולם שסביבנו? הצטרפו לשיעור עם הרב לבקובסקי ב-chabadoflamorinda.com/programs/adult-education או התקשרו 925-384-7242.
 ---
 בל תשחית פירושו "אל תשחית", וזהו איסור התורה לבזבז או להשמיד לשווא כל דבר שיש בו תועלת. הוא התחיל כדין על עצי פרי, והפך לגישה יהודית שלמה כלפי מזון, רכוש ועולם הטבע.

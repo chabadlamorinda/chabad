@@ -2,7 +2,7 @@
 title: השולחן ערוך: קיצור ההלכה שנכתב לכל יהודי, מדריך למתחילים
 description: מהו השולחן ערוך? קובץ ההלכה היהודי: מי כתב אותו, ארבעת חלקיו, הקיצור ושולחן ערוך הרב של האדמו"ר הזקן, ואיך מתחילים ללמוד.
 category: Prayer & Torah
-related: what-is-halacha, jewish-home-library, daily-torah-study, talmud, mishnah, chabad-rebbes
+related: what-is-halacha, jewish-customs-minhag, jewish-home-library, daily-torah-study, talmud, mishnah, chabad-rebbes
 local: רוצים להתחיל ללמוד הלכה מעשית עם מורה? התקשרו לרב ישראל לבקובסקי, 925-384-7242, או ראו [לימודי מבוגרים](/programs/adult-education) בלפאייט, מוראגה ואורינדה.
 ---
 השולחן ערוך הוא קובץ ההלכה היהודי: סיכום ברור ומעשי של איך חיים לפי התורה, מהקימה בבוקר ועד שבת, כשרות, נישואין ועסקים. הוא נכתב בידי רבי יוסף קארו במאה השש עשרה והוא יסוד ההלכה היום.

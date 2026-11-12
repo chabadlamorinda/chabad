@@ -2,7 +2,7 @@
 title: Holocaust Remembrance: Jewish Ways to Remember
 description: How to remember the six million in a Jewish way: Kaddish, Yom HaShoah, the Tenth of Tevet, candles, learning, tzedakah and living Jewishly.
 category: Mourning & remembrance
-related: kaddish, yizkor, yahrzeit, tehillim
+related: kaddish, asara-btevet, yizkor, yahrzeit, tehillim
 local: To say Kaddish, light a memorial candle or learn in memory of a relative lost in the Holocaust, call Rabbi Labkowski at 925-384-7242 or see chabadoflamorinda.com/kaddish.
 ---
 Jews remember the six million who were murdered in the Holocaust by saying Kaddish, lighting memorial candles, learning Torah and doing mitzvot in their memory. Above all, the Jewish response has been to live proudly as Jews, so that what the victims cherished lives on.

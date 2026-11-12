@@ -2,7 +2,7 @@
 title: מוקצה: מה לא מזיזים בשבת ולמה
 description: מה זה מוקצה בשבת: כסף, טלפונים, כלי עבודה ופמוטים, הסוגים העיקריים בפשטות, וטיפים להכנת הבית לפני שבת.
 category: Shabbat & holidays
-related: thirty-nine-melachot, shabbat-practical-questions, shabbat-for-beginners, shabbat-candles
+related: thirty-nine-melachot, shabbat-walks-in-lamorinda, shabbat-practical-questions, shabbat-for-beginners, shabbat-candles
 local: יש לכם שאלה על מוקצה בבית שלכם בלאפייט, מוראגה או אורינדה? התקשרו להרב ישראל לבקובסקי 925-384-7242.
 ---
 מוקצה פירושו "מופרש, מוצא מן השימוש". בשבת יש חפצים מסוימים שמופרשים ולא מזיזים אותם, גם בתוך הבית. כסף, טלפונים, כלי עבודה, עטים ופמוטי השבת הדולקים הם דוגמאות נפוצות. הרעיון פשוט: מה ששייך לימי החול נשאר במקומו, וכך השבת מרגישה כמו יום מסוג אחר.

@@ -2,7 +2,7 @@
 title: "Jeremiah the Prophet: A Message of Warning and Hope"
 description: Who was the prophet Jeremiah? His life, the destruction of the First Temple, Lamentations, his letter to the exiles and his promise of return.
 category: Prayer & Torah
-related: the-holy-temple, three-weeks, what-is-a-prophet, tisha-bav-for-beginners, tanach
+related: the-holy-temple, rachel-our-mother, three-weeks, what-is-a-prophet, tisha-bav-for-beginners, tanach
 local: Questions about hard times, faith or hope? Talk privately with the Rabbi: call 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 Jeremiah (יִרְמְיָהוּ, Yirmiyahu) was the prophet who warned the Jewish people for about forty years before the destruction of the First Temple in Jerusalem, who mourned it in the Book of Lamentations (Eichah), and who then gave the exiles a message of hope and return.

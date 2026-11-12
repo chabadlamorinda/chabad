@@ -2,7 +2,7 @@
 title: Как принять гостя, соблюдающего кашрут (если ваш дом не кошерный)
 description: Как принять кошерного гостя дома: запечатанная кошерная еда, одноразовая посуда, свежие фрукты и овощи и что спросить. Позвоните в Хабад Ламоринды.
 category: Jewish home
-related: keeping-kosher-with-family, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
+related: keeping-kosher-with-family, kosher-catering-for-a-simcha-in-lamorinda, hosting-shabbat-guests-in-lamorinda, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
 local: Принимаете родственника, соблюдающего кашрут, в Лафайетте, Мораге или Оринде? Позвоните раввину Лабковскому: 925-384-7242, и мы поможем спланировать.
 ---
 Чтобы принять гостя, соблюдающего кашрут, в некошерном доме, подавайте запечатанную еду с кошерным сертификатом на одноразовых тарелках с одноразовыми приборами, а также свежие фрукты и овощи. Спросите гостя, что он ест, а не гадайте, потому что в каждом кошерном доме своя степень строгости.

@@ -2,7 +2,7 @@
 title: "Maot Chitim: Helping Others Have a Passover (Wheat Money)"
 description: Maot Chitim ("wheat money") is the Passover charity that makes sure every Jew can have a Seder. What it is, when to give, and how to take part.
 category: Shabbat & holidays
-related: tzedakah, passover-for-beginners, tzedakah-priorities, passover-seder, matzah
+related: tzedakah, local-tzedakah-in-lamorinda, passover-for-beginners, tzedakah-priorities, passover-seder, matzah
 local: Want to help a family in our area have a Passover? Call Rabbi Labkowski at 925-384-7242 or give at /donate.
 ---
 Maot Chitim (מעות חיטים, "wheat money") is the Jewish custom of giving charity before Passover so that every person, rich or poor, can celebrate the holiday with matzah, wine and a festive meal. It is also called Kimcha Depischa (קמחא דפסחא, "Passover flour"), and Jewish tradition treats it as a special obligation, separate from ordinary giving all year.

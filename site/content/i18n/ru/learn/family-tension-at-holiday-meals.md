@@ -2,7 +2,7 @@
 title: Напряжение в семье за праздничным столом: еврейская мудрость для мира
 description: Как сохранить мир за столом на День благодарения, Хануку и Седер: еврейская мудрость о рассадке, темах и молчании. Личный разговор всегда возможен.
 category: Jewish home
-related: family-feuds-and-inheritance, judging-others-favorably, shalom-bayit, forgiveness-and-making-peace, in-laws
+related: family-feuds-and-inheritance, hosting-family-for-the-holidays-in-lamorinda, judging-others-favorably, shalom-bayit, forgiveness-and-making-peace, in-laws
 local: Боитесь семейной встречи? Поговорите наедине с раввином или ребецн: 925-384-7242 или /help/talk-to-the-rabbi.
 ---
 Чтобы сохранить мир за праздничным столом, готовьтесь заранее, задайте теплый тон с первой минуты, направляйте разговор к общим воспоминаниям и традиции и выбирайте молчание вместо резкого ответа. Еврейская мудрость считает мир в доме великой заповедью, достойной небольших усилий и смирения.

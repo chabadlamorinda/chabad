@@ -2,7 +2,7 @@
 title: Yom Kippur for Beginners: Your First Day of Atonement
 description: A first-timer's guide to Yom Kippur: what the day means, the five things we refrain from, who should not fast, Kol Nidre, Yizkor, Neilah and what to wear.
 category: Shabbat & holidays
-related: yom-kippur-fast, book-of-jonah, neilah, unetaneh-tokef, shabbat-shuva, kol-nidre, yizkor, teshuvah, ten-days-of-repentance
+related: yom-kippur-fast, high-holidays-in-lamorinda, book-of-jonah, neilah, unetaneh-tokef, shabbat-shuva, kol-nidre, yizkor, teshuvah, ten-days-of-repentance
 local: Every Jew in Lafayette, Moraga and Orinda is welcome at Chabad of Lamorinda, no membership needed; call Rabbi Yisroel Labkowski at 925-384-7242 about Yom Kippur this year.
 ---
 If this is your first Yom Kippur, or your first in many years, welcome. You do not need to know Hebrew, own a prayer book or have been to synagogue before. Here is what the day is, what happens, and how to make it yours.

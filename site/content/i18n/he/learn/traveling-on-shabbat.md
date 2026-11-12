@@ -2,7 +2,7 @@
 title: שבת בנסיעות: איך שומרים שבת הרחק מהבית
 description: שבת מחוץ לבית? תכננו טיסה שמגיעה מוקדם, ארזו נרות ואוכל, היערכו במלון, ומצאו בית חב"ד בכל מקום.
 category: Shabbat & holidays
-related: kosher-when-traveling, shabbat-in-a-hotel, shabbat-candles, tefilat-haderech, shabbat-practical-questions
+related: kosher-when-traveling, techum-shabbat, shabbat-for-lamorinda-commuters, shabbat-in-a-hotel, shabbat-candles, tefilat-haderech, shabbat-practical-questions
 local: נוסעים מלאפייט, מוראגה או אורינדה? התקשרו לרב ישראל לבקובסקי לפני הנסיעה עם כל שאלה על שבת, 925-384-7242.
 ---
 נסיעות עבודה, חופשות, ביקורים בקמפוסים ושמחות משפחתיות נופלים פעמים רבות על סוף השבוע. עם קצת תכנון, שבת בדרכים יכולה להיות אחת השבתות הזכורות ביותר בשנה.

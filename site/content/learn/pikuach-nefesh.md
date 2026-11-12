@@ -2,7 +2,7 @@
 title: Pikuach Nefesh: Saving a Life Comes First
 description: In Jewish law, saving a life overrides Shabbat, Yom Kippur and almost every mitzvah. What it means, real examples, and the three exceptions.
 category: Jewish ideas
-related: shabbat, kosher-medicine-and-vitamins, yom-kippur-fast, jewish-health-and-body, organ-donation-jewish-view
+related: shabbat, maakeh-safety-at-home, wildfire-readiness-for-jewish-families, kosher-medicine-and-vitamins, yom-kippur-fast, jewish-health-and-body, organ-donation-jewish-view
 local: Questions about health, Shabbat or a fast in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242. In an emergency, call 911 first.
 ---
 **Pikuach nefesh** means "saving a soul." It is one of the most important principles in Jewish law: when a human life may be in danger, almost every other mitzvah steps aside.

@@ -2,7 +2,7 @@
 title: רבי עקיבא: הרועה שהפך לגדול החכמים
 description: מי היה רבי עקיבא? סיפורו מרועה בגיל 40 למורה של אלפים, אמונתה של רחל, "ואהבת לרעך כמוך" ומדוע מתאבלים על תלמידיו בספירת העומר.
 category: Prayer & Torah
-related: counting-the-omer, rabbi-yochanan-ben-zakkai, lag-baomer, ahavat-yisrael, talmud, pirkei-avot
+related: counting-the-omer, lag-baomer-in-lamorinda, rabbi-yochanan-ben-zakkai, lag-baomer, ahavat-yisrael, talmud, pirkei-avot
 local: בואו ללמוד תורה איתנו בלפאייט, מוראגה ואורינדה. אף פעם לא מאוחר להתחיל. התקשרו 925-384-7242 או ראו /programs/adult-education.
 ---
 רבי עקיבא היה חכם יהודי שחי במאה הראשונה והשנייה, התחיל ללמוד תורה בגיל 40 והפך לאחד מגדולי המורים בתולדות ישראל. סיפורו מלמד שאיש אינו מבוגר מדי או רחוק מדי כדי להתחיל, ושאהבה לכל יהודי היא לב התורה.

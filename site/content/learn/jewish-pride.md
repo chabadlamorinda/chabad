@@ -2,7 +2,7 @@
 title: Jewish Pride: Living Proudly and Openly as a Jew
 description: What Jewish pride means in Judaism, why it matters, and simple, everyday ways to express your Jewish identity with confidence and joy.
 category: Jewish ideas
-related: who-is-a-jew, am-yisrael-chai, talking-to-kids-about-antisemitism, why-be-jewish, mezuzah, chanukah-menorah, kippah
+related: who-is-a-jew, shabbat-and-youth-sports, am-yisrael-chai, talking-to-kids-about-antisemitism, why-be-jewish, mezuzah, chanukah-menorah, kippah
 local: Looking for a warm Jewish community to celebrate with? See chabadoflamorinda.com/events or call Rabbi Labkowski at 925-384-7242.
 ---
 Jewish pride means feeling good about being Jewish and living it openly, with confidence and joy. It is not about feeling better than anyone else. It is about knowing who you are, where you come from, and the light you have to share with the world.

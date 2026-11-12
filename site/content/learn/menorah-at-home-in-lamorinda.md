@@ -2,7 +2,7 @@
 title: Lighting the Menorah at Home in Lafayette, Moraga and Orinda: Window, Door and Safety
 description: Where to put your Chanukah menorah in a Lamorinda house, townhouse or apartment, how to keep it safe in a dry December, and how to light with others.
 category: Lamorinda
-related: chanukah-menorah, menorah-oil-and-candles, chanukah-on-shabbat, chanukah-in-lamorinda, mezuzah-and-religious-displays-hoa-california
+related: chanukah-menorah, menorah-oil-and-candles, chanukah-on-shabbat, chanukah-in-lamorinda
 local: Need a menorah and candles, or a question about where to light? Call Rabbi Labkowski at 925-384-7242.
 ---
 The Chanukah menorah is placed where its light can be seen: at a window facing the street, or at the doorway of your home, on a stable, fireproof surface away from anything that can burn. If you are not sure which spot fits your house or apartment, ask the Rabbi.
@@ -42,7 +42,7 @@ Children love to help. Let them light under watchful eyes, and teach them to kee
 
 ## Renters, condos and HOAs
 
-California law protects a mezuzah on the entry door, but a menorah on a balcony or in a window is a different question. Many associations and landlords have rules about open flame on balconies and patios, and some prefer you not to light there. Speak with the property manager early and kindly, and ask the Rabbi about lighting indoors by the window or door. For the law on the mezuzah itself, see [your mezuzah, HOA and landlord](/learn/mezuzah-and-religious-displays-hoa-california).
+California law protects a mezuzah on the entry door, but a menorah on a balcony or in a window is a different question. Many associations and landlords have rules about open flame on balconies and patios, and some prefer you not to light there. Speak with the property manager early and kindly, and ask the Rabbi about lighting indoors by the window or door. For the law on the mezuzah itself, see your mezuzah, HOA and landlord.
 
 ## Light together
 

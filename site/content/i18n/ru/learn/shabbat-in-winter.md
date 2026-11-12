@@ -2,7 +2,7 @@
 title: Шабат зимой: как подготовиться, когда пятница короткая
 description: Когда Шабат начинается в 4:30 зимней пятницы: планирование, готовка, ранний уход с работы, дети и как сохранить еду тёплой. Практичные советы.
 category: Shabbat & holidays
-related: shabbat-for-beginners, zmanim-explained, shabbat-candles, shabbat-meals, shabbat-practical-questions
+related: shabbat-for-beginners, seasons-of-jewish-life-in-lamorinda, shabbat-for-lamorinda-commuters, zmanim-explained, shabbat-candles, shabbat-meals, shabbat-practical-questions
 local: Время зажигания свечей на этой неделе для Лафайетта, Мораги и Оринды - на chabadoflamorinda.com/shabbat. Вопросы? Звоните раввину Исроэлю Лабковскому: 925-384-7242.
 ---
 Когда в ноябре переводят часы назад, Шабат вдруг наступает рано. В районе Залива зажигание свечей в декабрьскую пятницу может быть уже около 4:30 дня. Если немного спланировать, короткие пятницы проходят спокойно, а длинные пятничные вечера становятся одним из лучших подарков зимы.

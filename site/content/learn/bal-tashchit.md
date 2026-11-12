@@ -2,7 +2,7 @@
 title: Bal Tashchit: The Jewish Teaching Against Waste
 description: What bal tashchit means, the Torah's ban on needless destruction, and how Jewish tradition guides us to care for food, things and the environment.
 category: Jewish ideas
-related: tu-bishvat-seder, why-mitzvot, business-ethics, noahide-laws
+related: tu-bishvat-seder, jewish-hiking-in-the-east-bay-hills, why-mitzvot, business-ethics, noahide-laws
 local: Want to learn more about the Jewish view of the world around us? Join a class with Rabbi Labkowski at chabadoflamorinda.com/programs/adult-education or call 925-384-7242.
 ---
 Bal tashchit means "do not destroy," and it is the Torah's prohibition against wasting or needlessly destroying anything useful. It began as a law about fruit trees and grew into a whole Jewish approach to food, possessions and the natural world.

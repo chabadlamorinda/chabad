@@ -2,7 +2,7 @@
 title: יארצייט: איך מציינים את יום הפטירה של אדם יקר
 description: מהו יארצייט, איך מוצאים את התאריך העברי, הדלקת נר נשמה, אמירת קדיש, ודרכים נוספות לכבד את זכר הנפטר.
 category: Mourning & remembrance
-related: kaddish, learning-in-memory-of-a-loved-one, el-malei-rachamim, yizkor, shiva, jewish-calendar
+related: kaddish, leading-the-prayers, learning-in-memory-of-a-loved-one, el-malei-rachamim, yizkor, shiva, jewish-calendar
 local: השתמשו במחשבון היארצייט שלנו כדי למצוא את התאריך, והתקשרו לרב לבקובסקי בטלפון 925-384-7242 אם תרצו עזרה באמירת קדיש במניין. שמרו את היארצייט בחשבון החינמי שלכם בכתובת chabadoflamorinda.com/account ונשלח לכם תזכורת במייל שבוע ויום לפני, בכל שנה.
 ---
 יארצייט הוא יום השנה לפטירתו של אדם יקר, שמציינים אותו בתאריך העברי של הפטירה. ביארצייט בני המשפחה מדליקים נר של 24 שעות, אומרים קדיש ועושים מעשים טובים לזכרו של הנפטר.

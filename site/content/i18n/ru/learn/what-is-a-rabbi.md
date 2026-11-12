@@ -2,7 +2,7 @@
 title: Кто такой раввин? Значение, роль и обучение
 description: Что означает слово «раввин», чем занимается раввин, как раввинов обучают и посвящают, и чем раввин отличается от Ребе или священника.
 category: Jewish ideas
-related: chabad, what-is-a-yeshiva, talk-to-a-rabbi, chabad-in-the-bay-area, the-rebbe, torah, talmud
+related: chabad, synagogue-roles, what-is-a-yeshiva, talk-to-a-rabbi, chabad-in-the-bay-area, the-rebbe, torah, talmud
 local: Есть вопрос, большой или маленький? Раввин Исроэль Лабковский здесь для каждого еврея в Лафайетте, Мораге и Оринде. Звоните 925-384-7242 или заходите на chabadoflamorinda.com/help/talk-to-the-rabbi.
 ---
 Раввин - это учитель Торы и наставник в еврейской жизни. Слово происходит от ивритского *рав*, что значит «великий» или «учитель», а *рабби* буквально означает «мой учитель».

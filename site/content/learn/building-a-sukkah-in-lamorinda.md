@@ -2,7 +2,7 @@
 title: Building a Sukkah in Lafayette, Moraga or Orinda: Hills, Wind, Rain and HOAs
 description: How to build a kosher sukkah on a hillside, deck or balcony in Lamorinda: walls that hold in wind, open sky, rain, HOAs, and no sukkah at home.
 category: Lamorinda
-related: sukkah, sukkot-for-beginners, four-kinds, jewish-year-in-lamorinda, mezuzah-and-religious-displays-hoa-california
+related: sukkah, sukkot-for-beginners, four-kinds, jewish-year-in-lamorinda
 local: No sukkah at home? Order a lulav and etrog at /forms/lulav-etrog, or call 925-384-7242 to hear what is planned.
 ---
 A kosher sukkah is a hut with at least two and a half walls that stand firm in ordinary wind, a roof of cut plant material (schach) that gives more shade than sun, and open sky above. In hilly, wooded Lafayette, Moraga and Orinda, the main challenges are overhanging trees, wind and the slope of your yard.
@@ -46,7 +46,7 @@ Early fall can still be dry and warm. Keep lights and extension cords away from 
 
 ## Neighbors, HOAs and renters
 
-Check your lease, your HOA's rules and your neighbors' view before building, especially on a shared balcony. Speak early and kindly; offer a time frame and a safe design. California law protects a mezuzah on your entry door but a sukkah is a different question; read [your mezuzah, HOA and landlord](/learn/mezuzah-and-religious-displays-hoa-california) and ask the Rabbi for ideas.
+Check your lease, your HOA's rules and your neighbors' view before building, especially on a shared balcony. Speak early and kindly; offer a time frame and a safe design. California law protects a mezuzah on your entry door but a sukkah is a different question; read your mezuzah, HOA and landlord and ask the Rabbi for ideas.
 
 ## No sukkah at home?
 

@@ -2,7 +2,7 @@
 title: האם שם המשפחה שלי יהודי? מאין מגיעים שמות משפחה יהודיים
 description: האם שם המשפחה שלי יהודי? איך החלו שמות משפחה יהודיים, מה פירוש כהן, לוי, כץ ואחרים, ולמה שם משפחה לבדו אינו מוכיח שאתם יהודים.
 category: Jewish ideas
-related: proving-jewish-ancestry, who-is-a-jew, kohen-levi-yisrael, jewish-genealogy, discovered-you-are-jewish
+related: proving-jewish-ancestry, ashkenazi-and-sephardi, who-is-a-jew, kohen-levi-yisrael, jewish-genealogy, discovered-you-are-jewish
 local: תוהים לגבי השורשים שלכם? התקשרו לרב לבקובסקי 925-384-7242 לשיחה פרטית וידידותית.
 ---
 שם משפחה יכול לרמוז על מוצא יהודי, אך אינו יכול להוכיח אותו. רוב היהודים קיבלו שמות משפחה רק לפני כ-200 שנה, והיהדות עוברת בדין התורה דרך האם, ולכן שם משפחה לבדו אינו מוכיח ואינו שולל שמישהו יהודי.

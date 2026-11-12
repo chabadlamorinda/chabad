@@ -2,7 +2,7 @@
 title: Месяц Тевет: последние дни Хануки и зима учебы
 description: Еврейский месяц Тевет: конец Хануки, Хей Тевет, пост 10 тевета и дни памяти Рамбама и Алтер Ребе.
 category: Shabbat & holidays
-related: hey-teves, shevat, kislev, minor-fast-days, rosh-chodesh, jewish-calendar
+related: hey-teves, asara-btevet, shevat, kislev, minor-fast-days, rosh-chodesh, jewish-calendar
 local: Даты Тевета и время поста на этот год для Лафайетта, Мораги и Оринды - на chabadoflamorinda.com/jewish-holidays, или звоните раввину Лабковскому: 925-384-7242.
 ---
 Тевет - четвертый месяц еврейского года, если считать от Рош а-Шана, и обычно он приходится на декабрь и январь. Он начинается посреди Хануки, когда ханукия еще светится в окне, и продолжается в самые холодные и темные недели зимы.

@@ -2,7 +2,7 @@
 title: Пикуах нефеш: спасение жизни прежде всего
 description: В еврейском законе спасение жизни важнее Шабата, Йом Кипура и почти любой мицвы. Что это значит, примеры из жизни и три исключения.
 category: Jewish ideas
-related: shabbat, kosher-medicine-and-vitamins, yom-kippur-fast, jewish-health-and-body, organ-donation-jewish-view
+related: shabbat, maakeh-safety-at-home, wildfire-readiness-for-jewish-families, kosher-medicine-and-vitamins, yom-kippur-fast, jewish-health-and-body, organ-donation-jewish-view
 local: Вопросы о здоровье, Шабате или посте в Лафайетте, Мораге или Оринде? Звоните раввину Исроэлю Лабковскому, 925-384-7242. В экстренной ситуации сначала звоните 911.
 ---
 **Пикуах нефеш** означает «спасение души». Это один из важнейших принципов еврейского закона: когда жизнь человека может быть в опасности, почти любая другая мицва отступает.

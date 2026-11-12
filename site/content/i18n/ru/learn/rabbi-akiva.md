@@ -2,7 +2,7 @@
 title: Рабби Акива: пастух, ставший величайшим мудрецом
 description: Кто такой рабби Акива? Его путь от пастуха в 40 лет до учителя тысяч, вера Рахели, «люби ближнего» и почему мы скорбим по его ученикам в Омер.
 category: Prayer & Torah
-related: counting-the-omer, rabbi-yochanan-ben-zakkai, lag-baomer, ahavat-yisrael, talmud, pirkei-avot
+related: counting-the-omer, lag-baomer-in-lamorinda, rabbi-yochanan-ben-zakkai, lag-baomer, ahavat-yisrael, talmud, pirkei-avot
 local: Приходите учить Тору вместе с нами в Лафайете, Морага и Ориндже. Никогда не поздно начать. Позвоните 925-384-7242 или откройте /programs/adult-education.
 ---
 Рабби Акива был еврейским мудрецом I-II веков, который начал учить Тору в 40 лет и стал одним из величайших учителей в истории еврейского народа. Его судьба учит, что никто не слишком стар и не слишком далёк, чтобы начать, и что любовь к каждому еврею — сердце Торы.

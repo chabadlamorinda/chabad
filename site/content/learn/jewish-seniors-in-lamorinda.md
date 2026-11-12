@@ -2,7 +2,7 @@
 title: Jewish Seniors in Lafayette, Moraga and Orinda: Classes, Shabbat and Support
 description: For Jewish seniors and their families in Lafayette, Moraga and Orinda: daytime Tanya class, Shabbat, holidays, Kaddish, yahrzeits and help when ill.
 category: Lamorinda
-related: caring-for-aging-parents, bar-mitzvah-at-83, honoring-the-elderly, grandparenting-from-afar, retirement-jewish-view, jewish-grandparents, yahrzeit, kaddish
+related: caring-for-aging-parents, jewish-life-in-senior-living-lamorinda, bar-mitzvah-at-83, honoring-the-elderly, grandparenting-from-afar, retirement-jewish-view, jewish-grandparents, yahrzeit, kaddish
 local: Call Rabbi Yisroel Labkowski at 925-384-7242 for a visit, a class or a seat at Shabbat, or see chabadoflamorinda.com/help/someone-is-sick.
 ---
 Whether you have lived in Lafayette, Moraga or Orinda for fifty years or just moved here to be near your grandchildren, Chabad of Lamorinda is your Jewish home. We are at 3477 Golden Gate Way in Lafayette, close to downtown and the Lafayette BART station, and we serve nearby Pleasant Hill and Martinez too. There is no membership and no dues. You are simply welcome.

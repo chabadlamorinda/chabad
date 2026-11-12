@@ -2,7 +2,7 @@
 title: Jewish History of the Bay Area: From the Gold Rush to Lamorinda
 description: How Jewish life began in the Bay Area in the Gold Rush, from the first services in San Francisco to Levi Strauss and today's East Bay communities.
 category: Jewish ideas
-related: jewish-san-francisco, jewish-east-bay, chabad-in-the-bay-area, jewish-history-overview
+related: jewish-san-francisco, jewish-history-of-contra-costa, jewish-east-bay, chabad-in-the-bay-area, jewish-history-overview
 local: Come and become part of the next chapter: reserve a Shabbat meal at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Jewish life in the Bay Area is almost as old as the modern Bay Area itself. When the Gold Rush brought thousands of newcomers to San Francisco in 1849, Jews were among them, and within a few years they had held services, founded congregations and begun building a community. Lafayette, Moraga and Orinda are part of the same story, which is still being written.

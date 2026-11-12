@@ -2,7 +2,7 @@
 title: "מעות חיטים: לעזור לאחרים לחגוג את פסח"
 description: מעות חיטים היא צדקה לפני פסח, כדי שכל יהודי יוכל לערוך סדר. מהי, מתי נותנים וכיצד משתתפים.
 category: Shabbat & holidays
-related: tzedakah, passover-for-beginners, tzedakah-priorities, passover-seder, matzah
+related: tzedakah, local-tzedakah-in-lamorinda, passover-for-beginners, tzedakah-priorities, passover-seder, matzah
 local: רוצים לעזור למשפחה באזור שלנו לחגוג פסח? התקשרו לרב לבקובסקי 925-384-7242 או תרמו ב-/donate.
 ---
 מעות חיטים הוא מנהג יהודי לתת צדקה לפני פסח, כדי שכל אדם, עשיר או עני, יוכל לחגוג את החג עם מצה, יין וסעודה חגיגית. המנהג נקרא גם קמחא דפסחא, והמסורת רואה בו חובה מיוחדת, נפרדת מהנתינה הרגילה בכל השנה.

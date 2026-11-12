@@ -2,7 +2,7 @@
 title: Why Do Jews Do Mitzvot? The Meaning of the Commandments
 description: What a mitzvah is, why Jews keep the commandments even when the reason is unclear, and how each mitzvah connects us to G-d and to the world.
 category: Jewish ideas
-related: 613-mitzvot, fear-of-g-d, what-is-a-mitzvah, shatnez, bal-tashchit, torah, belief-in-g-d, free-will
+related: 613-mitzvot, shiluach-haken, fear-of-g-d, what-is-a-mitzvah, shatnez, bal-tashchit, torah, belief-in-g-d, free-will
 local: Ready to try a new mitzvah? Call Rabbi Labkowski at 925-384-7242 and we will help you find one that is meaningful for you.
 ---
 A mitzvah is a commandment from G-d in the Torah. Jews do mitzvot because they are G-d's will, and because each mitzvah creates a real connection between the person, G-d and the world.

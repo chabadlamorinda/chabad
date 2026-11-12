@@ -2,7 +2,7 @@
 title: ראש השנה למתחילים: השנה החדשה היהודית הראשונה שלכם
 description: חדשים בראש השנה? מה משמעות היום, למה שומעים שופר, הסעודות, תשליך, הברכות ואיך להפוך את היום למשמעותי.
 category: Shabbat & holidays
-related: shofar, binding-of-isaac, four-jewish-new-years, tishrei, unetaneh-tokef, rosh-hashanah-simanim, tashlich, yom-kippur-for-beginners, first-time-at-synagogue
+related: shofar, high-holidays-in-lamorinda, binding-of-isaac, four-jewish-new-years, tishrei, unetaneh-tokef, rosh-hashanah-simanim, tashlich, yom-kippur-for-beginners, first-time-at-synagogue
 local: כל יהודי מלאפייט, מוראגה ואורינדה מוזמן בראש השנה; בלי חברות ובלי צורך בעברית. התקשרו לרב ישראל לבקובסקי, 925-384-7242, כדי לשמוע מה חב״ד למורינדה מתכננת השנה.
 ---
 ראש השנה הוא השנה החדשה היהודית, אבל הוא לא נראה כלל כמו 31 בדצמבר: קרן איל, חלה עגולה טבולה בדבש, יום בבית הכנסת, ותחושה שקטה של עמידה לפני ה׳ והתחלה מחדש. אם זו הפעם הראשונה שלכם, הנה למה לצפות.

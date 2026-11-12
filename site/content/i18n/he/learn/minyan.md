@@ -2,7 +2,7 @@
 title: מניין: למה תפילה יהודית צריכה עשרה
 description: מהו מניין, מי נחשב בו, למה צריך עשרה, אילו תפילות דורשות מניין, ואיך אתם יכולים לעזור להשלים מניין.
 category: Prayer & Torah
-related: prayer, kedushah, barchu, mincha-and-maariv, what-is-a-synagogue, jewish-men-in-lamorinda, kaddish, amidah, torah-reading
+related: prayer, why-jewish-community-matters, leading-the-prayers, kedushah, barchu, mincha-and-maariv, what-is-a-synagogue, jewish-men-in-lamorinda, kaddish, amidah, torah-reading
 local: צריכים מניין לאמירת קדיש או לבית אבלים? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעשה כמיטב יכולתנו לעזור.
 ---
 מניין הוא קבוצה של עשרה גברים יהודים בני 13 ומעלה שמתאספים לתפילה. חלקים קדושים מסוימים בתפילה, כמו קדיש, קדושה וקריאת התורה, נאמרים רק כשיש מניין.

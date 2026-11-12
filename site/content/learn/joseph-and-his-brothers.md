@@ -2,7 +2,7 @@
 title: Joseph and His Brothers: The Story We Read Around Chanukah
 description: The story of Joseph and his brothers in plain words, from the coat and the pit to forgiveness in Egypt, and why we read it around Chanukah.
 category: Prayer & Torah
-related: chanukah-story, ephraim-and-menashe, twelve-tribes, jacob-our-father, lessons-of-chanukah, weekly-parsha, dreams-jewish-view, sibling-rivalry
+related: chanukah-story, rachel-our-mother, ephraim-and-menashe, twelve-tribes, jacob-our-father, lessons-of-chanukah, weekly-parsha, dreams-jewish-view, sibling-rivalry
 local: Come hear the story of Joseph in the Torah reading on Shabbat; call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned for Shabbat and Chanukah.
 ---
 The story of Joseph and his brothers is the Torah's account of Jacob's favorite son, who is sold by his jealous brothers, rises from slavery and prison to rule Egypt, and finally forgives them and reunites the family. We read it in the Torah portions Vayeshev, Miketz and Vayigash, which usually fall in the weeks of Chanukah, so the light of Chanukah and the story of Joseph are read side by side.

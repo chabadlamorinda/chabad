@@ -2,7 +2,7 @@
 title: Israelis in Lamorinda: Hebrew Torah Class, Shabbat and Kids' Programs in Lafayette
 description: For Israelis and Hebrew speakers in Lafayette, Moraga and Orinda: a Tuesday Torah class in Hebrew with a meal, Shabbat, holidays and kids' programs.
 category: Lamorinda
-related: israel-and-the-jewish-people, lashon-hakodesh, yom-haatzmaut, hebrew-phrases, shabbat-meals, daily-torah-study
+related: israel-and-the-jewish-people, ashkenazi-and-sephardi, raising-hebrew-speaking-kids-in-lamorinda, lashon-hakodesh, yom-haatzmaut, hebrew-phrases, shabbat-meals, daily-torah-study
 local: Come to the Tuesday Torah class in Hebrew at 8:30 PM, or RSVP for Shabbat dinner at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Living in Lafayette, Moraga or Orinda, far from family in Israel, it is easy to miss the feeling of Shabbat on a Friday afternoon, the holidays in the street, and simply speaking Hebrew with friends. At Chabad of Lamorinda, Israelis and Hebrew speakers find a warm Jewish home just a few minutes away, at 3477 Golden Gate Way in Lafayette. There is no membership and no dues. You are simply welcome.

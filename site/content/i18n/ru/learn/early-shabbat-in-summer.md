@@ -2,7 +2,7 @@
 title: "Ранняя суббота летом: почему можно встречать Шаббат до заката"
 description: Почему летом в пятницу Шаббат можно начинать раньше: плаг а-минха, тосефет Шаббат и чем это помогает семьям с детьми. Узнайте время этой недели.
 category: Shabbat & holidays
-related: kabbalat-shabbat, shabbat-candles, shabbat-for-working-parents, shabbat-with-kids, shabbat-in-winter
+related: kabbalat-shabbat, shabbat-times-in-lamorinda-explained, shabbat-candles, shabbat-for-working-parents, shabbat-with-kids, shabbat-in-winter
 local: Не уверены, когда начинать пятничный вечер? Смотрите /shabbat-times или звоните раввину Лабковскому 925-384-7242.
 ---
 Еврейский закон разрешает встречать Шаббат раньше, начиная с момента во второй половине дня, называемого плаг а-минха, примерно за час и четверть до заката, а добавление ко времени Шаббата само по себе заповедь. Поэтому летом, когда закат очень поздний, кабалат Шабат и пятничный ужин можно начинать задолго до темноты.

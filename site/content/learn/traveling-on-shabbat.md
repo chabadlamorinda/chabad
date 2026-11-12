@@ -2,7 +2,7 @@
 title: Traveling on Shabbat: How to Keep Shabbat Away from Home
 description: Away for Shabbat? Plan flights to arrive early, pack candles and food, handle hotels, and find a Chabad center wherever you go.
 category: Shabbat & holidays
-related: kosher-when-traveling, shabbat-in-a-hotel, shabbat-candles, tefilat-haderech, shabbat-practical-questions
+related: kosher-when-traveling, techum-shabbat, shabbat-for-lamorinda-commuters, shabbat-in-a-hotel, shabbat-candles, tefilat-haderech, shabbat-practical-questions
 local: Traveling from Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski before your trip with any Shabbat question, 925-384-7242.
 ---
 Business trips, vacations, college visits and family simchas often land on a weekend. With some planning, Shabbat on the road can be one of the most memorable Shabbats of the year.

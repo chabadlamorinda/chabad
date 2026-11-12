@@ -2,7 +2,7 @@
 title: Pets and Jewish Life: Kindness, Shabbat, Passover and Saying Goodbye
 description: What Judaism says about pets: kindness to animals, feeding them before yourself, pets on Shabbat, pet food on Passover and when a pet dies.
 category: Jewish home
-related: tzaar-baalei-chayim, loss-of-a-pet, chametz, muktzeh, bal-tashchit
+related: tzaar-baalei-chayim, shiluach-haken, loss-of-a-pet, chametz, muktzeh, bal-tashchit
 local: Have a question about your dog, cat or any animal at home? Rabbi Yisroel Labkowski is glad to help families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Many Jewish homes in Lafayette, Moraga and Orinda have a dog at the door or a cat on the windowsill. Judaism has a lot to say about the animals in our care: how to treat them, how to feed them, and how our Jewish calendar touches their lives too. The short answer is that caring for a pet well is a mitzvah, and the details are easier than you might think.

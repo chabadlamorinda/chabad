@@ -2,7 +2,7 @@
 title: How to Host a Guest Who Keeps Kosher (When Your Home Isn't Kosher)
 description: How to host a kosher guest at home: sealed kosher food, disposable plates, fresh fruit and vegetables, and what to ask. Call Chabad of Lamorinda to help.
 category: Jewish home
-related: keeping-kosher-with-family, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
+related: keeping-kosher-with-family, kosher-catering-for-a-simcha-in-lamorinda, hosting-shabbat-guests-in-lamorinda, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
 local: Hosting a relative who keeps kosher in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 and we will help you plan.
 ---
 To host a guest who keeps kosher in a home that is not kosher, serve sealed, kosher-certified food on disposable plates with disposable cutlery, plus fresh fruit and vegetables. Ask your guest what they eat instead of guessing, because every kosher household has its own level of care.

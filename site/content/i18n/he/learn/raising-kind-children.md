@@ -2,7 +2,7 @@
 title: לגדל ילדים טובי לב בדרך היהודית
 description: איך לגדל ילדים טובי לב עם המסורת היהודית: חסד בבית, קופת צדקה, הכנסת אורחים, ביקור אצל סבא וסבתא ואצל חולים, מילים טובות והדוגמה שלכם.
 category: Jewish home
-related: chesed, being-a-mensch, returning-lost-items, children-money-and-tzedakah, jewish-parenting, hachnasat-orchim, bikur-cholim
+related: chesed, chinuch, being-a-mensch, returning-lost-items, children-money-and-tzedakah, jewish-parenting, hachnasat-orchim, bikur-cholim
 local: משפחות בלאפייט, מוראגה ואורינדה: הרב ישראל והרבנית ציפורה לבקובסקי ישמחו לחלוק רעיונות למשפחה שלכם. התקשרו 925-384-7242.
 ---
 כל הורה רוצה ילד טוב לב. גם היהדות רוצה בכך, והיא לא משאירה את זה ליד המקרה. המשנה מלמדת שהעולם עומד על שלושה דברים: על התורה, על העבודה ועל גמילות חסדים, ובית יהודי הוא בית מלאכה שבו ילדים מתאמנים בשלושתם. טוב לב, בעיניים יהודיות, אינו תכונה שילדים מסוימים נולדים איתה; זו מצווה, משהו שעושים, והיא גדלה עם האימון.

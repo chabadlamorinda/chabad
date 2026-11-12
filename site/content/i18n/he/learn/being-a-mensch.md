@@ -2,7 +2,7 @@
 title: מהו מענטש? איך להיות מענטש בנימוס ובהגינות יהודית יומיומית
 description: מה פירוש מענטש? המילה האידית, הרעיון התורני שמאחוריה, ובדיקה עצמית פשוטה לנוער, להורים ולכל אחד בלמורינדה.
 category: Jewish ideas
-related: ahavat-yisrael, hurtful-words, raising-kind-children, pirkei-avot, chesed, love-jewish-view
+related: ahavat-yisrael, derech-eretz, hurtful-words, raising-kind-children, pirkei-avot, chesed, love-jewish-view
 local: מגדלים מענטש: בתלמוד תורה ובתוכניות לילדים בונים אופי. ראו /programs/hebrew-school או 925-384-7242.
 ---
 מענטש (מענטש, ובאנגלית mensch או mentsch) הוא באידיש אדם הגון, מתחשב ואמין. המילה פירושה "בן אדם", וכשהורה יהודי אומר לילד "תהיה מענטש", הוא מתכוון: תהיה טוב לב, מה שלא תשיג.

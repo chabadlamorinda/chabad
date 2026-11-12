@@ -2,7 +2,7 @@
 title: Zmanim Explained: What the Jewish Times of Day Mean and Why They Change
 description: What are zmanim? A plain guide to dawn, sunrise, latest Shema, midday, sunset and nightfall, and the "halachic hour" that changes with the seasons.
 category: Prayer & Torah
-related: daily-prayers, mincha-and-maariv, shabbat-in-winter, shema, jewish-calendar
+related: daily-prayers, shabbat-times-in-lamorinda-explained, mincha-and-maariv, shabbat-in-winter, shema, jewish-calendar
 local: Не уверены, какое время вам подходит? Позвоните раввину Лабковскому: 925-384-7242 и спросите.
 ---
 Зманим («времена») - это время суток, установленное еврейским законом для молитв и заповедей: например, последний срок чтения утреннего Шма, полдень, закат и наступление ночи. Их рассчитывают по положению солнца на небе, поэтому они меняются каждый день и от места к месту; для Лафайета их можно посмотреть на [нашей странице времени Шаббата](/shabbat-times).

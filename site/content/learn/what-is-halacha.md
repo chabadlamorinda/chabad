@@ -2,7 +2,7 @@
 title: What Is Halacha? Jewish Law Explained Simply
 description: What halacha is, where Jewish law comes from (Torah, Talmud, Rambam, Shulchan Aruch, the Alter Rebbe), how a rabbi answers a question, and why to ask.
 category: Jewish ideas
-related: 613-mitzvot, the-sanhedrin, code-of-jewish-law, oral-torah, talmud, rambam, what-is-a-rabbi
+related: 613-mitzvot, jewish-customs-minhag, the-sanhedrin, code-of-jewish-law, oral-torah, talmud, rambam, what-is-a-rabbi
 local: Have a question about Jewish law? Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski any time, 925-384-7242. No question is too small.
 ---
 Halacha is Jewish law: the practical guide to how a Jew lives each day, from waking up to going to sleep, from the kitchen to the office to Shabbat. The word comes from the Hebrew for "to walk." Halacha is not a set of rules kept on a shelf. It is the way we walk through life with G-d.

@@ -2,7 +2,7 @@
 title: להשתלב בחיים יהודיים בלמורינדה: דרכים להשתתף
 description: דרכים להשתתף בחיים יהודיים בלפייט, מורגה ואורינדה: שבת, שיעורים, מעגל הנשים, מועדון הגברים, התנדבות ונתינה.
 category: Lamorinda
-related: volunteering-in-lamorinda, shabbat-in-lamorinda, torah-classes-in-lamorinda, supporting-chabad-of-lamorinda, sponsoring-a-kiddush
+related: volunteering-in-lamorinda, why-jewish-community-matters, shabbat-in-lamorinda, torah-classes-in-lamorinda, supporting-chabad-of-lamorinda, sponsoring-a-kiddush
 local: מוכנים להשתתף? הירשמו להתנדבות ב-chabadoflamorinda.com/forms/volunteer או התקשרו 925-384-7242.
 ---
 יש מקום בשבילכם בבית חב״ד למורינדה, בין אם יש לכם שעה בחודש ובין אם ניסיון של חיים שלמים. אפשר לבוא, ללמוד, לעזור ולתת, בכל סדר. הצעד הראשון הקל ביותר הוא להגיע פעם אחת: בואו לשבת או לשיעור, והשאר יבוא מעצמו.

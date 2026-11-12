@@ -2,7 +2,7 @@
 title: "ירמיהו הנביא: מסר של אזהרה ושל תקווה"
 description: מי היה ירמיהו הנביא? חייו, חורבן בית ראשון, מגילת איכה, מכתבו לגולים והבטחתו לשיבה.
 category: Prayer & Torah
-related: the-holy-temple, three-weeks, what-is-a-prophet, tisha-bav-for-beginners, tanach
+related: the-holy-temple, rachel-our-mother, three-weeks, what-is-a-prophet, tisha-bav-for-beginners, tanach
 local: שאלות על זמנים קשים, אמונה או תקווה? שוחחו בפרטיות עם הרב: התקשרו 925-384-7242 או ראו /help/talk-to-the-rabbi.
 ---
 ירמיהו היה הנביא שהזהיר את העם כארבעים שנה לפני חורבן בית המקדש הראשון בירושלים, שקונן עליו בספר איכה, ואחר כך נתן לגולים מסר של תקווה ושיבה.

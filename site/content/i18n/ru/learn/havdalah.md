@@ -2,7 +2,7 @@
 title: Авдала: как завершить Шабат вином, благовониями и огнем
 description: Пошаговое руководство по Авдале, церемонии завершения Шабата: когда ее делать, что понадобится и четыре благословения с переводом.
 category: Shabbat & holidays
-related: shabbat, break-fast-after-yom-kippur, elijah-the-prophet, alcohol-free-kiddush, shabbat-day, kiddush, blessings, shabbat-candles
+related: shabbat, seudah-shlishit, shabbat-times-in-lamorinda-explained, break-fast-after-yom-kippur, elijah-the-prophet, alcohol-free-kiddush, shabbat-day, kiddush, blessings, shabbat-candles
 local: Мы поможем вам приобрести набор для Авдалы и выучить благословения, и вы всегда можете сделать Авдалу вместе с нами. Звоните: 925-384-7242.
 ---
 Авдала - это короткая церемония в субботу вечером, которая завершает Шабат и открывает новую неделю. Для нее нужны бокал вина, ароматные благовония и плетеная свеча, и занимает она всего несколько минут.

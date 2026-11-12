@@ -2,7 +2,7 @@
 title: תפילין: מה הן ואיך מניחים אותן
 description: מה הן תפילין, מי מניח אותן ומתי, הוראות הנחה צעד אחר צעד, והברכה.
 category: Prayer & Torah
-related: shema, checking-mezuzahs-and-tefillin, jewish-men-in-lamorinda, bar-mitzvah-speech, prayer, bar-mitzvah, tzitzit
+related: shema, davening-on-the-commute, checking-mezuzahs-and-tefillin, jewish-men-in-lamorinda, bar-mitzvah-speech, prayer, bar-mitzvah, tzitzit
 local: נשמח לעזור לכם להניח תפילין, לקנות זוג כשר או לבדוק את התפילין שלכם. התקשרו 925-384-7242 או קפצו אלינו.
 ---
 תפילין הן שני בתים קטנים מעור שחור, שבתוכם פרשיות מן התורה הכתובות ביד, וגברים יהודים מניחים אותם על היד ועל הראש בתפילת שחרית של ימי החול. הנחת תפילין קושרת את המוח, הלב והמעשים שלנו להשם, והיא אחת המצוות החשובות ביותר בתורה.

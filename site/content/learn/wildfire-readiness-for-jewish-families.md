@@ -2,7 +2,7 @@
 title: Wildfire Season in Lamorinda: A Jewish Family's Readiness Guide
 description: If a wildfire threatens Lafayette, Moraga or Orinda, Jewish law says leave at once, even on Shabbat. A go-bag list, alerts and a calm Shabbat plan.
 category: Lamorinda
-related: pikuach-nefesh, shabbat-candles, power-outages-on-shabbat, moving-to-lamorinda, shabbat-practical-questions
+related: pikuach-nefesh, shabbat-candles, moving-to-lamorinda, shabbat-practical-questions
 local: Not sure what to pack or what to do on Shabbat? Call Rabbi Labkowski at 925-384-7242, or write to us at /help/talk-to-the-rabbi.
 ---
 When a wildfire threatens your home in Lafayette, Moraga or Orinda, Jewish law is clear: saving life comes first, and you leave right away, on Shabbat and holidays too. Prepare calmly now, so that on the day you can act without hesitation.
@@ -51,7 +51,7 @@ Chabad.org notes that saving life overrides Shabbat, so you may use a fire extin
 
 ## After a fire
 
-If your home or neighborhood is affected, call the Rabbi at 925-384-7242. We will listen, and help you find what you need, including replacement mezuzahs, tefillin and siddurim. A mezuzah that has been through smoke or fire should be checked by a scribe; see [mezuzah](/learn/mezuzah). Please also see the section on power outages in [power outages on Shabbat](/learn/power-outages-on-shabbat).
+If your home or neighborhood is affected, call the Rabbi at 925-384-7242. We will listen, and help you find what you need, including replacement mezuzahs, tefillin and siddurim. A mezuzah that has been through smoke or fire should be checked by a scribe; see [mezuzah](/learn/mezuzah). Please also see the section on power outages in power outages on Shabbat.
 
 ## Common questions
 
@@ -82,5 +82,5 @@ Yes, if there is danger. Saving life and preventing a spreading fire allows you 
 ## Take the next step
 
 - Call 925-384-7242 to hear what is planned and to ask your own question about Shabbat and safety.
-- Read about [power outages on Shabbat](/learn/power-outages-on-shabbat), a nearby danger in the same season.
+- Read about power outages on Shabbat, a nearby danger in the same season.
 - Make a plan for your family and put it with your [Shabbat candles](/learn/shabbat-candles).

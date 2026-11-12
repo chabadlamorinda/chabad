@@ -2,7 +2,7 @@
 title: תפילת הדרך: התפילה למי שיוצא לדרך
 description: מה אומרים בתפילת הדרך, מתי אומרים אותה בנסיעה ברכב או בטיסה, ומנהגים לדרך בטוחה.
 category: Prayer & Torah
-related: prayer, visiting-lamorinda, traveling-on-shabbat, blessings, tzedakah, siddur
+related: prayer, davening-on-the-commute, visiting-lamorinda, traveling-on-shabbat, blessings, tzedakah, siddur
 local: יוצאים לדרך בקרוב? התקשרו לחב״ד למורינדה 925-384-7242 עם שאלות על תפילת הדרך, או תנו צדקה לפני הנסיעה ב-chabadoflamorinda.com/donate.
 ---
 תפילת הדרך היא תפילה קצרה שבה מבקשים מה׳ דרך בטוחה ושלווה. אומרים אותה אחרי שיוצאים מהעיר לנסיעה למרחק משמעותי, ברכב, במטוס, ברכבת או בספינה.

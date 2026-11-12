@@ -2,7 +2,7 @@
 title: עוברים ללאפייט, מוראגה או אורינדה: מדריך למצטרפים חדשים לקהילה היהודית בלמורינדה
 description: יהודים וחדשים בלאפייט, מוראגה או אורינדה? מצאו שבת, גן ילדים, תלמוד תורה, אוכל כשר וחברים עם חב״ד למורינדה.
 category: Lamorinda
-related: mezuzah, mezuzah-questions, start-here-jewish-lamorinda, jewish-east-bay, jewish-bay-area-history, welcoming-the-stranger, chanukat-habayit, kosher-kitchen, shabbat-for-beginners
+related: mezuzah, jewish-history-of-contra-costa, wildfire-readiness-for-jewish-families, mezuzah-questions, start-here-jewish-lamorinda, jewish-east-bay, jewish-bay-area-history, welcoming-the-stranger, chanukat-habayit, kosher-kitchen, shabbat-for-beginners
 local: בואו להגיד שלום ב-chabadoflamorinda.com/welcome או התקשרו לרב ישראל ולרבנית ציפורה לבקובסקי בטלפון 925-384-7242.
 ---
 ברוכים הבאים ללמורינדה! מעבר ללאפייט, מוראגה או אורינדה פירושו בית חדש, שכנים חדשים ושגרה חדשה. הוא גם אומר שקהילה יהודית חמה מחכה להכיר אתכם. חב״ד למורינדה, ב-3477 Golden Gate Way בלאפייט, הוא בית לכל יהודי בשלוש הערים ובפלזנט היל ובמרטינז הסמוכות. אין דמי חבר ואין תשלומים: כולם שייכים.

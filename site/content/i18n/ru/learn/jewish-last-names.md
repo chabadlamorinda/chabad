@@ -2,7 +2,7 @@
 title: Еврейская ли моя фамилия? Откуда берутся еврейские фамилии
 description: Еврейская ли моя фамилия? Как появились еврейские фамилии, что значат Коэн, Леви, Кац и другие и почему фамилия сама не доказывает, что вы еврей.
 category: Jewish ideas
-related: proving-jewish-ancestry, who-is-a-jew, kohen-levi-yisrael, jewish-genealogy, discovered-you-are-jewish
+related: proving-jewish-ancestry, ashkenazi-and-sephardi, who-is-a-jew, kohen-levi-yisrael, jewish-genealogy, discovered-you-are-jewish
 local: Интересуетесь своими корнями? Позвоните раввину Лабковскому 925-384-7242 для частной дружеской беседы.
 ---
 Фамилия может намекать на еврейские корни, но не может их доказать. Большинство евреев получили фамилии лишь около 200 лет назад, а еврейство по закону передаётся через мать, поэтому одна фамилия не доказывает и не опровергает, что человек еврей.

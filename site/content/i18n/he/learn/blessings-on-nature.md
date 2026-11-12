@@ -2,7 +2,7 @@
 title: ברכות על קשת, רעמים, הים ושאר נפלאות הבריאה
 description: הברכות הקצרות על ברקים, רעמים, קשת בענן, הים, הרים, אילנות פורחים ופגישה עם חבר ותיק: הנוסח, ומתי מברכים.
 category: Prayer & Torah
-related: blessings, noah-and-the-flood, blessing-on-blossoming-trees, shehecheyanu, hakarat-hatov, modeh-ani
+related: blessings, barchi-nafshi, jewish-hiking-in-the-east-bay-hills, noah-and-the-flood, blessing-on-blossoming-trees, shehecheyanu, hakarat-hatov, modeh-ani
 local: שאלות על איזו ברכה לברך? שאלו את הרב ישראל לבקובסקי בבית חב״ד למורינדה בלאפייט: 925-384-7242.
 ---
 היהדות מלמדת אותנו לשים לב. מלבד ברכות על אוכל, יש ברכות קצרות לרגעים של פליאה: הבזק של ברק, קשת אחרי הגשם, המבט הראשון על הים. כל אחת לוקחת כמה שניות והופכת "וואו!" לרגע של חיבור עם הבורא.

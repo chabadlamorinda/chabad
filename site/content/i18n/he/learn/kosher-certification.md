@@ -2,7 +2,7 @@
 title: תעודת כשרות: איך עובדים OU, OK, Star-K ואחרים
 description: איך עובד פיקוח הכשרות מאחורי הסמל: מה בודקים גופים כמו OU, OK ו-Star-K, מה עושה משגיח, ולמה הסטנדרטים שונים.
 category: Kosher
-related: kosher-symbols, hidden-kosher-ingredients, pas-yisrael-and-bishul-yisrael, eating-out-kosher, kosher, kosher-meat, kosher-kitchen
+related: kosher-symbols, kosher-catering-for-a-simcha-in-lamorinda, hidden-kosher-ingredients, pas-yisrael-and-bishul-yisrael, eating-out-kosher, kosher, kosher-meat, kosher-kitchen
 local: שאלות על מוצר, מסעדה או קייטרינג כשר לאירוע שלכם בלאפייט, מוראגה או אורינדה? התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 תעודת כשרות היא שירות שבו גוף רבני, כמו OU, OK או Star-K, בודק כל רכיב, כל מכונה וכל תהליך במפעל מזון או במטבח, ואז מתיר להדפיס את הסמל שלו על המוצר. הסמל אומר לכם שאנשים שהוכשרו בהלכה עומדים מאחורי מה שבפנים.

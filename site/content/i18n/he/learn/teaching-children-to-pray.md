@@ -2,7 +2,7 @@
 title: ללמד ילדים להתפלל: צעדים פשוטים לכל משפחה
 description: איך ללמד את הילדים להתפלל, מ"מודה אני" בבוקר ועד קריאת שמע לפני השינה וברכות על האוכל, גם אם אתם עדיין לומדים בעצמכם.
 category: Prayer & Torah
-related: modeh-ani, twelve-torah-verses, talking-to-kids-about-g-d, bedtime-shema, blessings, jewish-parenting, siddur
+related: modeh-ani, chinuch, twelve-torah-verses, talking-to-kids-about-g-d, bedtime-shema, blessings, jewish-parenting, siddur
 local: בגן ובתלמוד תורה שלנו הילדים לומדים את התפילות בשירים ובסיפורים. משפחות בלאפייט, מוראגה ואורינדה מוזמנות להתקשר: 925-384-7242.
 ---
 ילדים אוהבים לדבר עם ה׳. הם שואלים שאלות גדולות, אומרים תודה בקלות וזוכרים שירים. ללמד ילד להתפלל זו אחת המתנות היקרות ביותר שהורה יכול לתת, ולא צריך להיות מומחה כדי להתחיל.

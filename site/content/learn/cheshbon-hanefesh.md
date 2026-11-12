@@ -2,7 +2,7 @@
 title: Cheshbon HaNefesh: A Jewish Way to Take Stock of Your Life
 description: Cheshbon hanefesh is a Jewish accounting of the soul. A kind, honest way to review your day, week and year, with five simple questions.
 category: Jewish ideas
-related: teshuvah, bedtime-shema, secular-new-year-jewish-view, changing-a-bad-habit, elul
+related: teshuvah, yom-kippur-katan, bedtime-shema, secular-new-year-jewish-view, changing-a-bad-habit, elul
 local: Want a friend or mentor to look at your life with you? Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 Cheshbon hanefesh (חשבון הנפש) means "an accounting of the soul": a regular, honest review of how you are living, so that you can correct what needs correcting and build on what is good. Chabad.org describes it as evaluating your life honestly and removing self-deception, and it is the heart of the days before Rosh Hashanah and Yom Kippur.

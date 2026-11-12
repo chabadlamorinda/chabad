@@ -2,7 +2,7 @@
 title: Три субботние трапезы: обычаи, порядок и что подавать
 description: Что такое три субботние трапезы, порядок ужина в пятницу вечером, благословения на вино и халу, песни и традиционные субботние блюда.
 category: Shabbat & holidays
-related: kiddush, gefilte-fish, kugel, jewish-chicken-soup, friday-night-dinner-step-by-step, shabbat-day, jewish-students-in-lamorinda, israelis-in-lamorinda, hosting-your-first-shabbat-dinner, zemirot, cholent, challah, shabbat, hachnasat-orchim
+related: kiddush, seudah-shlishit, gefilte-fish, kugel, jewish-chicken-soup, friday-night-dinner-step-by-step, shabbat-day, jewish-students-in-lamorinda, israelis-in-lamorinda, hosting-your-first-shabbat-dinner, zemirot, cholent, challah, shabbat, hachnasat-orchim
 local: Приходите к нам на субботнюю трапезу или закажите доставку на chabadoflamorinda.com/forms/shabbat-meal, или звоните 925-384-7242.
 ---
 В Шабат есть заповедь устроить три праздничные трапезы: ужин в пятницу вечером, обед в субботу и третью трапезу ближе к вечеру. Каждая начинается с халы, а первые две начинаются с Кидуша над вином.

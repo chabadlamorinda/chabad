@@ -2,7 +2,7 @@
 title: ההיסטוריה היהודית של אזור המפרץ: מימי הבהלה לזהב ועד למורינדה
 description: איך החלו החיים היהודיים באזור המפרץ בימי הבהלה לזהב: מהתפילות הראשונות בסן פרנסיסקו ועד לוי שטראוס והקהילות של האיסט ביי.
 category: Jewish ideas
-related: jewish-san-francisco, jewish-east-bay, chabad-in-the-bay-area, jewish-history-overview
+related: jewish-san-francisco, jewish-history-of-contra-costa, jewish-east-bay, chabad-in-the-bay-area, jewish-history-overview
 local: בואו להיות חלק מהפרק הבא: הזמינו סעודת שבת ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 החיים היהודיים באזור המפרץ כמעט עתיקים כמו אזור המפרץ המודרני עצמו. כשהבהלה לזהב הביאה אלפי עולים לסן פרנסיסקו ב-1849, היו ביניהם גם יהודים, ובתוך שנים ספורות הם קיימו תפילות, הקימו קהילות והחלו לבנות קהילה. לאפייט, מוראגה ואורינדה הן חלק מאותו סיפור, שעדיין נכתב.

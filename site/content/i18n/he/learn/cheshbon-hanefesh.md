@@ -2,7 +2,7 @@
 title: חשבון הנפש: דרך יהודית לעשות חשבון עם החיים
 description: חשבון הנפש הוא בדיקה כנה ועדינה של החיים. איך סוקרים את היום, השבוע והשנה, עם חמש שאלות פשוטות.
 category: Jewish ideas
-related: teshuvah, bedtime-shema, secular-new-year-jewish-view, changing-a-bad-habit, elul
+related: teshuvah, yom-kippur-katan, bedtime-shema, secular-new-year-jewish-view, changing-a-bad-habit, elul
 local: רוצים שחבר או מנטור יסתכל איתכם על החיים? התקשרו לרב לבקובסקי 925-384-7242 או ראו /help/talk-to-the-rabbi.
 ---
 חשבון הנפש הוא סקירה קבועה וכנה של האופן שבו אתם חיים, כדי לתקן מה שצריך תיקון ולבנות על מה שטוב. Chabad.org מתאר אותו כבדיקה כנה של החיים והסרת הטעיה עצמית, והוא לב הימים שלפני ראש השנה ויום כיפור.

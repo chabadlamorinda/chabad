@@ -2,7 +2,7 @@
 title: Еврейские студенты: как сохранить связь в университете
 description: Практическое руководство для еврейских студентов: Шабат, кошерная еда, праздники и экзамены, антисемитизм и еврейский дом рядом с кампусом.
 category: Life cycle
-related: shabbat, gap-year-in-israel, kosher-on-campus, jewish-students-in-lamorinda, kosher, jewish-pride, mezuzah
+related: shabbat, sending-a-lamorinda-teen-to-college, gap-year-in-israel, kosher-on-campus, jewish-students-in-lamorinda, kosher, jewish-pride, mezuzah
 local: Студентов колледжа Сент-Мэрис в Мораге, колледжа Диабло-Вэлли в Плезант-Хилле и других ждут на Шабат в Хабаде Ламоринды. Звоните 925-384-7242 или зайдите на chabadoflamorinda.com/shabbat.
 ---
 Студенческие годы - время независимости, новых идей и важных решений, и это может быть прекрасное время, чтобы открыть для себя свою еврейскую идентичность. Если немного все спланировать, еврейские студенты смогут соблюдать Шабат, есть кошерное, отмечать праздники и найти теплую еврейскую общину, где бы они ни учились.

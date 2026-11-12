@@ -2,7 +2,7 @@
 title: Getting Ready for Shabbat: A Friday Checklist
 description: How to prepare for Shabbat on Friday: food, the table, candles, lights, clothes and a calm heart, with a simple checklist for families.
 category: Shabbat & holidays
-related: shabbat-candles, shabbat-clothes, baking-challah, keeping-food-warm-on-shabbat, shabbat-for-beginners, hosting-your-first-shabbat-dinner, shabbat-for-working-parents, cholent
+related: shabbat-candles, shabbat-for-lamorinda-commuters, shabbat-clothes, baking-challah, keeping-food-warm-on-shabbat, shabbat-for-beginners, hosting-your-first-shabbat-dinner, shabbat-for-working-parents, cholent
 local: Candle-lighting times for Lafayette, Moraga and Orinda are on our Shabbat times page. Questions? Call the Rabbi at 925-384-7242.
 ---
 Shabbat begins at sunset on Friday, but its peace begins earlier, in the preparing. The sages taught, "Whoever toils on the eve of Shabbat will eat on Shabbat." Getting ready is not a chore before the mitzvah; it is part of it.

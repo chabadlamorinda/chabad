@@ -2,7 +2,7 @@
 title: Kitniyot: Rice, Beans and Corn on Passover and Who Avoids Them
 description: What is kitniyot? Why many Ashkenazi Jews avoid rice, beans, corn and legumes on Passover, who eats them, and what about potatoes and quinoa.
 category: Shabbat & holidays
-related: chametz, passover-shopping-list, gluten-free-passover, kosher-for-passover, matzah, passover-for-beginners
+related: chametz, ashkenazi-and-sephardi, passover-shopping-list, gluten-free-passover, kosher-for-passover, matzah, passover-for-beginners
 local: Mixed family or not sure what your custom is? Call Rabbi Yisroel Labkowski at 925-384-7242 for guidance, wherever you live in Lafayette, Moraga and Orinda.
 ---
 Kitniyot (קטניות) is a category of foods, including rice, corn, beans, lentils and other legumes, that many Ashkenazi Jews, and some Sephardic Jews, do not eat on Passover. They are not chametz, but a medieval custom, accepted by all Ashkenazi communities, keeps them off the Passover table.

@@ -2,7 +2,7 @@
 title: איך מארחים אורח שומר כשרות (כשהבית שלכם לא כשר)
 description: איך מארחים אורח שומר כשרות בבית: אוכל כשר אטום, צלחות חד פעמיות, פירות וירקות, ומה לשאול. התקשרו לחב"ד לאמורינדה ונעזור.
 category: Jewish home
-related: keeping-kosher-with-family, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
+related: keeping-kosher-with-family, kosher-catering-for-a-simcha-in-lamorinda, hosting-shabbat-guests-in-lamorinda, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
 local: מארחים קרוב משפחה שומר כשרות בלפאייט, מוראגה או אורינדה? התקשרו לרב לבקובסקי: 925-384-7242 ונעזור לכם לתכנן.
 ---
 כדי לארח אורח שומר כשרות בבית שאינו כשר, מגישים אוכל אטום עם הכשר על צלחות חד פעמיות עם סכו"ם חד פעמי, ועוד פירות וירקות טריים. שאלו את האורח מה הוא אוכל במקום לנחש, כי בכל בית כשר יש רמת הקפדה משלו.

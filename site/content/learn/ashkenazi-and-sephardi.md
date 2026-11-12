@@ -9,7 +9,7 @@ Ashkenazi Jews are Jews whose ancestors lived in Central and Eastern Europe, and
 
 ## Where the names come from
 
-"Sepharad" (סְפָרַד) is the Hebrew name for Spain, and "Ashkenaz" (אַשְׁכְּנַז) is the Hebrew name used for Germany and the lands around it. Chabad.org explains that the split between the two communities developed gradually over several hundred years and reached its peak between the 8th and 10th centuries. Jews then lived under two great powers: the Muslim lands, which included the Middle East, North Africa and Spain, and the Christian lands of Europe. Over time each community developed its own character.
+"Sepharad" (סְפָרַד) is the Hebrew name for Spain, and "Ashkenaz" (אַשְׁכְּנַז) is the Hebrew name used for Germany and the lands around it. Chabad.org explains that the split between the two communities developed gradually over several hundred years and reached its peak between the 8th and 10th centuries. Jews lived in many lands, from the Middle East, North Africa and Spain to the countries of Europe. Over time each community developed its own character.
 
 Spain became the center of Sephardi Jewry, and its influence spread across North Africa, the Land of Israel and the Middle East. Germany, northern France and Italy were the main centers of Ashkenazi Jewry. Chabad.org notes that the Jewish community of Spain flourished in a "Golden Age" of scholarship, and that Jews there served as physicians, ministers and generals.
 

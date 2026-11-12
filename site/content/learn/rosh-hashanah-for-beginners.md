@@ -2,7 +2,7 @@
 title: Rosh Hashanah for Beginners: Your First Jewish New Year
 description: New to Rosh Hashanah? What the day means, why we hear the shofar, the festive meals, tashlich, greetings and how to make it meaningful.
 category: Shabbat & holidays
-related: shofar, binding-of-isaac, four-jewish-new-years, tishrei, unetaneh-tokef, rosh-hashanah-simanim, tashlich, yom-kippur-for-beginners, first-time-at-synagogue
+related: shofar, high-holidays-in-lamorinda, binding-of-isaac, four-jewish-new-years, tishrei, unetaneh-tokef, rosh-hashanah-simanim, tashlich, yom-kippur-for-beginners, first-time-at-synagogue
 local: Every Jew from Lafayette, Moraga and Orinda is welcome on Rosh Hashanah; no membership, no Hebrew needed. Call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned this year.
 ---
 Rosh Hashanah is the Jewish New Year, but it looks nothing like December 31st: a ram's horn, a round challah dipped in honey, a day in the synagogue, and a quiet sense of standing before G-d and starting again. If this is your first time, here is what to expect.

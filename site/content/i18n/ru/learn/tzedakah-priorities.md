@@ -2,7 +2,7 @@
 title: Приоритеты цдаки: кому давать в первую очередь
 description: Порядок цдаки в еврейском законе: семья, своя община, бедные твоего города, Израиль. Давать с уважением, восемь ступеней Рамбама и помощь всем.
 category: Jewish ideas
-related: tzedakah, borrowing-and-lending, maot-chitim, gemach-interest-free-loans, giving-to-people-who-ask, maaser, pushka, chesed
+related: tzedakah, local-tzedakah-in-lamorinda, borrowing-and-lending, maot-chitim, gemach-interest-free-loans, giving-to-people-who-ask, maaser, pushka, chesed
 local: Вопросы о цдаке или маасере в Лафайетте, Мораге или Оринде? Звоните раввину Исроэлю Лабковскому, 925-384-7242.
 ---
 Добрых дел больше, чем любой из нас может поддержать. Еврейский закон не оставляет нас гадать. Он дает ясный и полный любви порядок приоритетов, и ему так же важно, **как** мы даем, как и **кому**. Основы см. в гиде [Цдака](/learn/tzedakah).

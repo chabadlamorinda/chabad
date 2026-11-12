@@ -2,7 +2,7 @@
 title: תעניות: תאריכים, משמעות ואיך צמים
 description: מדריך לימי הצום בלוח העברי, מיום כיפור ותשעה באב ועד הצומות הקלים: מתי הם, למה צמים ומי פטור.
 category: Shabbat & holidays
-related: jewish-calendar, fast-of-the-firstborn, tisha-bav-for-beginners, teshuvah, rosh-chodesh, yizkor
+related: jewish-calendar, asara-btevet, yom-kippur-katan, fast-of-the-firstborn, tisha-bav-for-beginners, teshuvah, rosh-chodesh, yizkor
 local: בדקו בעמוד החגים שלנו את התעניות הקרובות ואת הזמנים, או התקשרו לרב לבקובסקי בטלפון 925-384-7242 בכל שאלה על הצום.
 ---
 בלוח העברי יש שישה צומות ציבור: שני צומות חמורים, יום כיפור ותשעה באב, שנמשכים כ-25 שעות, וארבעה צומות קלים שנמשכים מעלות השחר ועד צאת הכוכבים. צום הוא זמן להתבוננות, לתפילה ולתשובה, חזרה אל ה׳.

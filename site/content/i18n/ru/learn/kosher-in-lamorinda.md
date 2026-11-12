@@ -2,7 +2,7 @@
 title: Кошерная еда в Лафайетте, Мораге и Оринде: Bay Kosher, помощь с кухней и праздничные заказы
 description: Кашрут в Лафайетте, Мораге и Оринде: доставка мяса и продуктов от Bay Kosher, помощь в кошеровании кухни и праздничные заказы.
 category: Lamorinda
-related: kosher, passover-shopping-list, kosher-kitchen, kosher-symbols, tevilat-kelim
+related: kosher, kosher-catering-for-a-simcha-in-lamorinda, passover-shopping-list, kosher-kitchen, kosher-symbols, tevilat-kelim
 local: Попросите раввина помочь откошеровать вашу кухню на chabadoflamorinda.com/contact или звоните 925-384-7242.
 ---
 Соблюдать кашрут в Ламоринде проще, чем может показаться. Соблюдаете ли вы кашрут всю жизнь или только делаете первый шаг, Хабад Ламоринды в Лафайетте готов помочь семьям из Лафайетта, Мораги, Оринды, Плезант-Хилла и Мартинеса едой, советом и праздничными заказами.

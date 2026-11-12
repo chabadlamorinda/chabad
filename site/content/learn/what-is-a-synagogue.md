@@ -2,7 +2,7 @@
 title: What Is a Synagogue (Shul)? A Simple Guide
 description: What a synagogue or shul is, what happens there, what you will see inside, and how to feel at home on your first visit.
 category: Prayer & Torah
-related: first-time-at-synagogue, minyan, siddur, torah-reading
+related: first-time-at-synagogue, synagogue-roles, minyan, siddur, torah-reading
 local: Chabad of Lamorinda at 3477 Golden Gate Way in Lafayette welcomes every Jew, no membership required. See Shabbat information at chabadoflamorinda.com/shabbat or call 925-384-7242.
 ---
 A synagogue is a Jewish house of prayer, study and community. Jews gather there to pray together, read the Torah, learn and celebrate, and many people simply call it *shul*, the Yiddish word for "school."

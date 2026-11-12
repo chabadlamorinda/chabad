@@ -2,7 +2,7 @@
 title: יוסף ואחיו: הסיפור שקוראים סביב חנוכה
 description: סיפור יוסף ואחיו במילים פשוטות, מהכתונת והבור ועד הסליחה במצרים, ולמה קוראים אותו סביב חנוכה.
 category: Prayer & Torah
-related: chanukah-story, ephraim-and-menashe, twelve-tribes, jacob-our-father, lessons-of-chanukah, weekly-parsha, dreams-jewish-view, sibling-rivalry
+related: chanukah-story, rachel-our-mother, ephraim-and-menashe, twelve-tribes, jacob-our-father, lessons-of-chanukah, weekly-parsha, dreams-jewish-view, sibling-rivalry
 local: בואו לשמוע את סיפור יוסף בקריאת התורה בשבת; התקשרו לרב ישראל לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן בחב"ד לאמורינדה לשבת ולחנוכה.
 ---
 סיפור יוסף ואחיו הוא תיאור התורה של בנו האהוב של יעקב, שאחיו הקנאים מוכרים אותו, והוא עולה מעבדות ומבית הכלא לשלטון במצרים, ולבסוף סולח להם ומאחד את המשפחה. אנו קוראים אותו בפרשות וישב, מקץ ויגש, שחלות בדרך כלל בשבועות חנוכה, כך שאור החנוכה וסיפור יוסף נקראים זה לצד זה.

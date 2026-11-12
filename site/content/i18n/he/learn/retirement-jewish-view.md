@@ -2,7 +2,7 @@
 title: פרישה לגמלאות: מבט יהודי על השנים שלפנינו
 description: ביהדות אין פרישה מצמיחה. איך לנצל את השנים האלה ללימוד, נתינה, סבאות ובריאות טובה, ברוח תורת הרבי.
 category: Jewish ideas
-related: jewish-seniors-in-lamorinda, jewish-grandparents, daily-torah-study, volunteering-in-lamorinda
+related: jewish-seniors-in-lamorinda, empty-nesters-in-lamorinda, jewish-grandparents, daily-torah-study, volunteering-in-lamorinda
 local: מבוגרים בלאפייט, מוראגה, אורינדה ובאיסט ביי: התקשרו לרב ישראל לבקובסקי לשיעור, לחברותא או לדרך לתת, 925-384-7242.
 ---
 פרישה לגמלאות מביאה לעיתים קרובות רגשות מעורבים: הקלה על העזיבה של העבודה, ושאלה מה הלאה. ליהדות יש תשובה ברורה. אפשר לפרוש מעבודה, אבל אין פרישה מצמיחה, מלימוד ומנתינה. במובנים רבים אלה יכולות להיות השנים העשירות ביותר בחיים.

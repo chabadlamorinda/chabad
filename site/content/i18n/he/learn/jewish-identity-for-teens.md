@@ -2,7 +2,7 @@
 title: זהות יהודית לבני נוער: להיות יהודי גאה בתיכון
 description: מדריך לבני נוער יהודים: מה זה להיות יהודי, התמודדות עם שאלות ואנטישמיות, מצוות פשוטות, חברים יהודים ומציאת החיבור האישי.
 category: Jewish ideas
-related: jewish-pride, daniel, talking-to-kids-about-antisemitism, raising-jewish-kids-in-a-small-community, bar-mitzvah, bat-mitzvah, jewish-college-students
+related: jewish-pride, jewish-customs-minhag, sending-a-lamorinda-teen-to-college, daniel, talking-to-kids-about-antisemitism, raising-jewish-kids-in-a-small-community, bar-mitzvah, bat-mitzvah, jewish-college-students
 local: בני נוער מלאפייט, מוראגה ואורינדה מוזמנים לחב״ד למורינדה לאירועים, להתנדבות ולשיחות אמיתיות. התקשרו לרב 925-384-7242.
 ---
 להיות יהודי בגיל ההתבגרות פירושו להיות חלק מעם בן יותר מ-3,000 שנה, עם נשמה יהודית שלמה, בין אם אתם מרגישים דתיים ובין אם לא. התיכון הוא זמן מצוין להבין מה זה אומר בשבילכם, לשאול שאלות קשות ולמצוא את הדרך שלכם להתחבר.

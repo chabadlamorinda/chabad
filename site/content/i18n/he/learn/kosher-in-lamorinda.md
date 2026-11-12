@@ -2,7 +2,7 @@
 title: אוכל כשר בלאפייט, מוראגה ואורינדה: Bay Kosher, עזרה במטבח והזמנות לחגים
 description: שמירת כשרות בלאפייט, מוראגה ואורינדה: משלוחי בשר ומצרכים מ-Bay Kosher, עזרה בהכשרת המטבח והזמנות לחגים.
 category: Lamorinda
-related: kosher, passover-shopping-list, kosher-kitchen, kosher-symbols, tevilat-kelim
+related: kosher, kosher-catering-for-a-simcha-in-lamorinda, passover-shopping-list, kosher-kitchen, kosher-symbols, tevilat-kelim
 local: בקשו מהרב עזרה בהכשרת המטבח ב-chabadoflamorinda.com/contact או התקשרו 925-384-7242.
 ---
 לשמור כשרות בלמורינדה קל יותר ממה שאולי נדמה לכם. בין שאתם שומרים כשרות כל החיים ובין שאתם רק מתחילים בצעד אחד, חב״ד למורינדה בלאפייט כאן כדי לעזור למשפחות בלאפייט, מוראגה, אורינדה, פלזנט היל ומרטינז, עם אוכל, הדרכה והזמנות לחגים.

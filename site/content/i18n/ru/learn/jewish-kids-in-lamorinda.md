@@ -2,7 +2,7 @@
 title: Еврейские дети в Лафайетте, Мораге и Оринде: детский сад, еврейская школа, CKids и лагерь
 description: Еврейские программы для детей в Лафайетте, Мораге и Оринде: детский сад, воскресная еврейская школа, продлёнка CKids, лагерь и праздники.
 category: Lamorinda
-related: jewish-parenting, raising-jewish-kids-in-a-small-community, jewish-summer-camp-in-lamorinda, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
+related: jewish-parenting, jewish-holidays-and-lamorinda-school-calendars, raising-jewish-kids-in-a-small-community, jewish-summer-camp-in-lamorinda, jewish-lamorinda-with-young-children, shabbat-with-kids, upsherin, hebrew-alphabet
 local: Запишите детей на chabadoflamorinda.com/forms/hebrew-school или звоните 925-384-7242, чтобы подобрать подходящую программу.
 ---
 Воспитываете еврейских детей в Лафайетте, Мораге или Оринде? В Хабаде Ламоринды в Лафайетте есть место для любого возраста, от первого дня рождения до бар- или бат-мицвы. Дети здесь в центре внимания, и каждая программа открыта для каждой еврейской семьи, членство не требуется.

@@ -2,7 +2,7 @@
 title: Retirement: A Jewish View of the Years Ahead
 description: Judaism has no retirement from growth. How to use these years for learning, giving, grandparenting and good health, in the spirit of the Rebbe's teaching.
 category: Jewish ideas
-related: jewish-seniors-in-lamorinda, jewish-grandparents, daily-torah-study, volunteering-in-lamorinda
+related: jewish-seniors-in-lamorinda, empty-nesters-in-lamorinda, jewish-grandparents, daily-torah-study, volunteering-in-lamorinda
 local: Seniors in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski for a class, a study partner or a way to give, 925-384-7242.
 ---
 Retirement often brings mixed feelings: relief at leaving work, and a question about what comes next. Judaism has a clear answer. You may retire from a job, but there is no retiring from growing, learning and giving. In many ways these can be the richest years of life.

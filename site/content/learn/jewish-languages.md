@@ -2,7 +2,7 @@
 title: Jewish Languages: Hebrew, Yiddish, Ladino, Judeo-Arabic and More
 description: What languages do Jews speak? Hebrew, Yiddish, Ladino, Aramaic, Judeo-Arabic, Bukharian and more, and how Jews built a language everywhere they lived.
 category: Jewish ideas
-related: yiddish-words-and-phrases, hebrew-alphabet, russian-speaking-jews-in-lamorinda, jewish-history-overview, hebrew-phrases
+related: yiddish-words-and-phrases, ashkenazi-and-sephardi, hebrew-alphabet, russian-speaking-jews-in-lamorinda, jewish-history-overview, hebrew-phrases
 local: Whatever language your family spoke, you are welcome. Call 925-384-7242 and say hello at Chabad of Lamorinda.
 ---
 Jews do not have one language: the holy tongue is Hebrew (Lashon Hakodesh, לשון הקודש), and in each land Jews also built their own everyday languages, such as Yiddish, Ladino, Judeo-Arabic and Bukharian, mixing the local speech with Hebrew and writing it in Hebrew letters. Today Hebrew is the national language of Israel, and English is the most common language of Jewish life in the Bay Area.

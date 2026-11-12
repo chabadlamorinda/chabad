@@ -2,7 +2,7 @@
 title: Chabad in the Bay Area: What Chabad Houses Do and Where Lamorinda Fits
 description: What a Chabad House is, who the shluchim are, how Chabad grew in the Bay Area, and what Chabad of Lamorinda offers every Jew in the East Bay.
 category: Lamorinda
-related: jewish-east-bay, chanukah-in-lamorinda, jewish-bay-area-history, jewish-san-francisco, chabad
+related: jewish-east-bay, jewish-history-of-contra-costa, chanukah-in-lamorinda, jewish-bay-area-history, jewish-san-francisco, chabad
 local: Come see a Chabad House for yourself: reserve a Shabbat meal at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 A Chabad House is a Jewish community center led by a rabbi and his wife, known as shluchim (emissaries), who move to a place to serve every Jew who lives there. Across the Bay Area, local Chabad Houses are each a little different, because each is shaped by its own community. Chabad of Lamorinda, in Lafayette, is the one for Lafayette, Moraga and Orinda.

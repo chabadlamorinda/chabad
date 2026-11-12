@@ -2,7 +2,7 @@
 title: "How to Host a Passover Seder: A Calm, Step-by-Step Plan for First-Timers"
 description: How to host your first Passover Seder at home: what to prepare, how to set the table, lead the evening and welcome guests, step by step.
 category: Shabbat & holidays
-related: passover-seder, haggadah, seder-plate, passover-with-kids, four-questions
+related: passover-seder, hosting-family-for-the-holidays-in-lamorinda, haggadah, seder-plate, passover-with-kids, four-questions
 local: Nervous about your first Seder? Call Rabbi Labkowski at 925-384-7242 and we will walk you through it.
 ---
 To host a Passover Seder, gather your guests, give everyone the same Haggadah, prepare the Seder plate, matzah and four cups of wine or grape juice, and follow the Haggadah's fifteen steps while pausing to talk and ask questions. You do not need to be an expert: the goal of the night is to tell the story of the Exodus to your children and guests, and a warm welcome matters more than a perfect meal.

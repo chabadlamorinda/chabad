@@ -2,7 +2,7 @@
 title: Счет Омера: как считать 49 дней от Песаха до Шавуота
 description: Что такое Сфират а-Омер, как и когда считать каждый вечер, благословение, что делать, если забыли, и обычаи траура в период Омера.
 category: Shabbat & holidays
-related: passover-seder, rabbi-akiva, sivan, iyar, sefirot, shavuot-for-beginners, lag-baomer, shavuot-dairy-foods, pesach-sheni, ten-commandments, jewish-calendar, blessings
+related: passover-seder, lag-baomer-in-lamorinda, rabbi-akiva, sivan, iyar, sefirot, shavuot-for-beginners, lag-baomer, shavuot-dairy-foods, pesach-sheni, ten-commandments, jewish-calendar, blessings
 local: Считайте Омер вместе с нами на молитвах и празднуйте Лаг ба-Омер вместе. Подробности на chabadoflamorinda.com/holidays/lag-baomer или по телефону 925-384-7242.
 ---
 Счет Омера - это заповедь отсчитывать каждый из 49 дней со второго вечера Песаха до Шавуота. Каждый вечер после наступления темноты мы произносим благословение и вслух называем день, постепенно приближаясь к дарованию Торы.

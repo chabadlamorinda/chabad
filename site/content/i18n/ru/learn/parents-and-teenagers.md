@@ -2,7 +2,7 @@
 title: Родители и подростки: еврейская мудрость для трудных лет
 description: Конфликты с подростком? Мудрость Торы о воспитании с любовью и границами: умение слушать, правила, экраны, еврейская идентичность и помощь.
 category: Life cycle
-related: jewish-parenting, smoking-and-vaping-jewish-view, disciplining-children, bullying-jewish-view, jewish-teens-in-lamorinda, jewish-identity-for-teens, honoring-parents
+related: jewish-parenting, shabbat-and-youth-sports, smoking-and-vaping-jewish-view, disciplining-children, bullying-jewish-view, jewish-teens-in-lamorinda, jewish-identity-for-teens, honoring-parents
 local: Родители в Лафайетте, Мораге, Оринде и Ист-Бэй могут конфиденциально поговорить с раввином Исроэлем или ребецн Ципорой Лабковской: 925-384-7242.
 ---
 Подростковые годы могут быть самыми трудными для родителей. Хлопают двери, телефон не выпускается из рук, а ребенок, который раньше рассказывал вам все, теперь не рассказывает ничего. Еврейская традиция сопровождает родителей на этом пути уже тысячи лет.

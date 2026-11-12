@@ -2,7 +2,7 @@
 title: Еврейская жизнь в Ист-Бэй и Контра-Коста: где в ней Ламоринда
 description: Дружеская карта еврейской жизни в Ист-Бэй и Контра-Коста: как Лафайетт, Морага и Оринда связаны с Беркли, Уолнат-Крик и другими городами.
 category: Jewish ideas
-related: chabad-in-the-bay-area, jewish-san-francisco, jewish-bay-area-history, moving-to-lamorinda
+related: chabad-in-the-bay-area, jewish-history-of-contra-costa, jewish-san-francisco, jewish-bay-area-history, moving-to-lamorinda
 local: Недавно в Ист-Бэй или просто интересно? Закажите субботнюю трапезу на chabadoflamorinda.com/forms/shabbat-meal или позвоните 925-384-7242.
 ---
 Ист-Бэй - это не одна община, а множество районов и городов, у каждого свой еврейский колорит. Лафайетт, Морага и Оринда, вместе Ламоринда, расположены в холмах между Окландом и Уолнат-Криком. Хабад Ламоринды в Лафайетте - еврейский дом для семей всех трех городов, без членства и без взносов.

@@ -2,7 +2,7 @@
 title: "שבת מוקדמת בקיץ: למה אפשר לקבל שבת לפני השקיעה"
 description: למה אפשר להכניס שבת מוקדם בימי שישי של הקיץ: פלג המנחה, תוספת שבת, ומה זה נותן למשפחות עם ילדים קטנים. בדקו את הזמן של השבוע.
 category: Shabbat & holidays
-related: kabbalat-shabbat, shabbat-candles, shabbat-for-working-parents, shabbat-with-kids, shabbat-in-winter
+related: kabbalat-shabbat, shabbat-times-in-lamorinda-explained, shabbat-candles, shabbat-for-working-parents, shabbat-with-kids, shabbat-in-winter
 local: לא בטוחים מתי להתחיל ליל שבת? בדקו ב-/shabbat-times או התקשרו לרב לבקובסקי 925-384-7242.
 ---
 ההלכה מתירה להכניס שבת מוקדם, מנקודה אחר הצהריים הנקראת פלג המנחה, כשעה ורבע לפני השקיעה, והוספה על השבת היא עצמה מצווה. לכן בקיץ, כשהשקיעה מאוחרת מאוד, אפשר להתחיל קבלת שבת וסעודת ליל שבת הרבה לפני החשכה.

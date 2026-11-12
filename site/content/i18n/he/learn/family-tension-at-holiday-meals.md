@@ -2,7 +2,7 @@
 title: מתחים במשפחה בסעודות החג: חוכמה יהודית לשמירה על שלום
 description: איך לשמור על שלום בשולחן חג ההודיה, חנוכה והסדר: חוכמה יהודית על מקומות ישיבה, נושאי שיחה, דן לכף זכות ושתיקה. שיחה פרטית תמיד מתקבלת בברכה.
 category: Jewish home
-related: family-feuds-and-inheritance, judging-others-favorably, shalom-bayit, forgiveness-and-making-peace, in-laws
+related: family-feuds-and-inheritance, hosting-family-for-the-holidays-in-lamorinda, judging-others-favorably, shalom-bayit, forgiveness-and-making-peace, in-laws
 local: חוששים מהמפגש המשפחתי? שוחחו בפרטיות עם הרב או הרבנית: 925-384-7242 או /help/talk-to-the-rabbi.
 ---
 כדי לשמור על שלום בסעודת חג, תכננו מראש, קבעו אווירה חמה מהרגע הראשון, כוונו את השיחה לזיכרונות משותפים ולמסורת, ובחרו בשתיקה על פני תשובה חדה. החוכמה היהודית רואה בשלום בית מצווה גדולה, ששווה מעט מאמץ ומעט ענווה.

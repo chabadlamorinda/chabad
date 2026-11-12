@@ -2,7 +2,7 @@
 title: The Shulchan Aruch: The Code of Jewish Law Explained for Beginners
 description: What is the Shulchan Aruch? The Code of Jewish Law: who wrote it, its four parts, the Kitzur and the Alter Rebbe's version, and how to start learning.
 category: Prayer & Torah
-related: what-is-halacha, jewish-home-library, daily-torah-study, talmud, mishnah, chabad-rebbes
+related: what-is-halacha, jewish-customs-minhag, jewish-home-library, daily-torah-study, talmud, mishnah, chabad-rebbes
 local: Want to start learning practical Jewish law with a teacher? Call Rabbi Yisroel Labkowski at 925-384-7242 or see [adult education](/programs/adult-education) for Lafayette, Moraga and Orinda.
 ---
 The Shulchan Aruch (שולחן ערוך), "the Set Table," is the Code of Jewish Law: a clear, practical summary of how to live according to the Torah, from waking up in the morning to Shabbat, kosher food, marriage and business. It was written by Rabbi Yosef Caro in the 1500s and is the foundation of Jewish law today.

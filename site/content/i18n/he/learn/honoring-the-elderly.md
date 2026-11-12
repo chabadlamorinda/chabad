@@ -2,7 +2,7 @@
 title: כבוד לזקנים: "מפני שיבה תקום" בחיים היהודיים
 description: למה היהדות מבקשת לקום מפני זקנים, לכבד את חוכמתם, לבקר ולהתקשר, להקשיב לסיפוריהם ולשמור אותם חלק מהשבת והחגים.
 category: Jewish ideas
-related: caring-for-aging-parents, jewish-grandparents, honoring-parents, jewish-seniors-in-lamorinda, chesed
+related: caring-for-aging-parents, derech-eretz, jewish-grandparents, honoring-parents, jewish-seniors-in-lamorinda, chesed
 local: מכירים אדם מבוגר בלאפייט, מוראגה או אורינדה שישמח לביקור או להסעה לשבת? התקשרו לרב ישראל לבקובסקי, 925-384-7242.
 ---
 במקומות רבים היום, להזדקן פירושו להפוך לבלתי נראה. התורה רואה את זה הפוך. אדם מבוגר הוא מי שקמים בפניו, מקשיבים לו ושומרים אותו קרוב. המדריך הזה בוחן מה היהדות מלמדת על כבוד לזקנים, ודרכים פשוטות לחיות את זה.
