@@ -53,7 +53,7 @@ Many parents bless their children every Friday night, often before Kiddush or wh
 - **For a girl:** "Yesimech Elo-him k'Sarah, Rivkah, Rachel v'Leah," "May G-d make you like Sarah, Rebecca, Rachel and Leah."
 - Then the three verses of the Priestly Blessing.
 
-Customs differ in the details, and Chabad custom is to bless children at special times, such as before Yom Kippur; ask the Rabbi about Fridays. Add a kiss, a hug or a few words of your own. Children remember this moment for life. See [Shabbat with kids](/learn/shabbat-with-kids).
+Customs differ in the details, and many Chabad families bless children at special times, such as before Yom Kippur; ask the Rabbi about Fridays. Add a kiss, a hug or a few words of your own. Children remember this moment for life. See [Shabbat with kids](/learn/shabbat-with-kids).
 
 ## Common questions
 

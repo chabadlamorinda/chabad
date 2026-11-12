@@ -27,7 +27,7 @@ The full Bedtime Shema in the [siddur](/learn/siddur) includes:
 
 Hamapil is a blessing to G-d "who casts the bonds of sleep upon my eyes." It asks for peaceful rest, good dreams, and to wake up to life. It begins: "Baruch atah Ado-nai, Elo-heinu melech ha'olam, hamapil chevlei sheinah al einai..."
 
-The custom is to say Hamapil last, right before falling asleep, and not to talk afterward. If you will not fall asleep soon, you can say it without the opening words of the blessing.
+The custom is to say Hamapil last, right before falling asleep, and not to talk afterward. If you are not sure you will fall asleep soon, say it later, closer to sleep. Ask the Rabbi if you have questions.
 
 ## A simple version for children
 

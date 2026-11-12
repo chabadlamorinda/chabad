@@ -14,7 +14,7 @@ The best first step is a short, friendly question: "What would make you feel mos
 ## What to serve: the simple list
 
 1. **Fresh fruit and vegetables.** Whole, washed fruit is always fine. For leafy greens and berries, which can hold insects, ask your guest, or see [checking for insects](/learn/checking-for-insects).
-2. **Sealed packaged food with a kosher symbol.** Chips, crackers, juice, cookies, wine and similar packaged foods are fine if they are kosher certified. Learn the marks in [kosher symbols](/learn/kosher-symbols).
+2. **Sealed packaged food with a kosher symbol.** Chips, crackers, juice, cookies and similar packaged foods are fine if they are kosher certified. Wine has extra rules (your guest may prefer to open and pour it), so ask your guest first. Learn the marks in [kosher symbols](/learn/kosher-symbols).
 3. **Disposable plates, cups and cutlery.** Because your dishes were used for non-kosher food, your guest will not eat from them. Disposable items solve this.
 4. **A kosher meal from a certified source.** Frozen kosher meals, or a meal ordered from a kosher caterer, are the closest to a full dinner. [Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda, delivers kosher food in the East Bay.
 
