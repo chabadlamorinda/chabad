@@ -765,6 +765,24 @@ test('holiday times can be added to a calendar, with reminders', async () => {
   assert.equal((await c.call('GET', '/holidays/nothing.ics')).status, 404);
 });
 
+test('add to calendar: events and weekly classes, with Google, Outlook, a calendar file and a way to send it on', async () => {
+  const c = client();
+  // a weekly class repeats every week (one tap, in the calendar for good)
+  const w = await c.call('GET', '/weekly/lamorinda-hebrew-school.ics');
+  assert.equal(w.status, 200); assert.match(w.text, /BEGIN:VCALENDAR/); assert.match(w.text, /SUMMARY:Lamorinda Hebrew School/); assert.match(w.text, /RRULE:FREQ=WEEKLY;BYDAY=SU/); assert.match(w.text, /DTSTART;TZID=America\/Los_Angeles:\d{8}T100000/); assert.match(w.text, /BEGIN:VTIMEZONE/);
+  // Kabbalat Shabbat changes with the season: the coming Fridays, each at its own time, not one repeating time
+  const k = await c.call('GET', '/weekly/kabbalat-shabbat.ics');
+  assert.equal(k.status, 200); assert.ok((k.text.match(/BEGIN:VEVENT/g) || []).length >= 4); assert.ok(!/RRULE:FREQ=WEEKLY/.test(k.text));
+  assert.equal((await c.call('GET', '/weekly/not-a-class.ics')).status, 404);
+  // the menu shows on the event page, the weekly list and the program page, in every language
+  for (const [path, needle] of [['/events/' + EVENT, '/events/' + EVENT + '.ics'], ['/events', '/weekly/lamorinda-hebrew-school.ics'], ['/programs/hebrew-school', '/weekly/lamorinda-hebrew-school.ics']]) {
+    const r = await c.call('GET', path); assert.equal(r.status, 200, path);
+    assert.ok(r.text.includes(needle), path + ' links ' + needle); assert.match(r.text, /Add to calendar/); assert.match(r.text, /calendar\.google\.com\/calendar\/render/); assert.match(r.text, /outlook\.live\.com\/calendar/); assert.match(r.text, /Send to someone/); assert.match(r.text, /wa\.me\/\?text=/);
+  }
+  assert.match((await c.call('GET', '/he/events/' + EVENT)).text, /הוסיפו ליומן/); assert.match((await c.call('GET', '/ru/programs/hebrew-school')).text, /Добавить в календарь/);
+  assert.match((await c.call('GET', '/programs/adult-education')).text, /weekly\/tanya-class-english\.ics/);
+});
+
 test('visitors: pages noted under an anonymous id, linked to a person when they leave details, and the Rabbi alerted about giving', async () => {
   const vid = 'v' + 'a1b2c3d4e5f6'.repeat(2), cookie = 'cl_vid=' + vid, post = (path, body, ck = cookie) => fetch(base + path, { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1', cookie: ck }, body: JSON.stringify(body) });
   assert.equal((await post('/api/site/view', { path: '/learn/bar-mitzvah' })).status, 204);
