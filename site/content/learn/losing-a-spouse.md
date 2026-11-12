@@ -15,7 +15,7 @@ You do not have to know any of this in advance. Call the Rabbi first, before the
 
 ## After the thirty days
 
-For a parent, formal mourning lasts a year; for a spouse, it ends after sheloshim. Many widows and widowers find this surprising, even hurtful, as if Judaism expects them to be finished. It does not. The law limits the outward signs of mourning so that life can gently call you back, but grief has no deadline, and the sages compared losing a spouse to seeing the Temple destroyed in one's own lifetime. Keep saying [Kaddish](/learn/kaddish) if you wish, light a [yahrzeit candle](/learn/yahrzeit-candle) each year, say [Yizkor](/learn/yizkor), and give tzedakah in their memory. See [the year of mourning](/learn/year-of-mourning).
+For a parent, formal mourning lasts a year; for a spouse, it ends after sheloshim. Many widows and widowers find this surprising, even hurtful, as if Judaism expects them to be finished. It does not. The law limits the outward signs of mourning so that life can gently call you back, but grief has no deadline. Ask the Rabbi about [Kaddish](/learn/kaddish) after the thirty days; light a [yahrzeit candle](/learn/yahrzeit-candle) each year, say [Yizkor](/learn/yizkor), and give tzedakah in their memory. See [the year of mourning](/learn/year-of-mourning).
 
 ## The loneliness
 
@@ -36,7 +36,7 @@ Your children have lost a parent while you have lost a partner; each of you grie
 ## Common questions
 
 ### Do I say Kaddish for my husband or wife?
-Kaddish is traditionally said for a spouse during the thirty days, and many continue for the full year as an expression of love. Ask the Rabbi about the custom and about a minyan.
+Kaddish is traditionally said for a spouse during the thirty days. Whether to continue after that is a question for the Rabbi, who can also help with a minyan.
 
 ### When may a widow or widower remarry?
 Jewish law asks a widower to wait until three festivals have passed (with exceptions, for example when there are young children) and a widow about three months. Every situation is different; ask the Rabbi.

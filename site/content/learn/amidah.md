@@ -51,7 +51,7 @@ When there is a [minyan](/learn/minyan), the chazan repeats the Amidah aloud. Du
 Yes. You can add personal requests in the relevant blessing, for example praying for someone sick in the blessing of healing, or in Shema Koleinu. Many also add personal words at the end, before stepping back.
 
 ### What if I do not know Hebrew?
-You may pray the Amidah in any language you understand. Using a [siddur](/learn/siddur) with translation helps you follow along.
+Ideally the Amidah is said in Hebrew, but if you do not know Hebrew you may pray it in a language you understand. Ask the Rabbi. Using a [siddur](/learn/siddur) with translation helps you follow along.
 
 ### Why do people sway during prayer?
 Swaying, or shuckling, helps many people concentrate. The soul is compared to a flame, always reaching upward. It is a custom, not a requirement.

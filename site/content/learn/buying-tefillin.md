@@ -33,7 +33,7 @@ Unfortunately, some tefillin sold online, in tourist shops or at very low prices
 
 ## Chabad custom
 
-There are different customs in the order of the passages inside the tefillin. The standard order, worn by nearly everyone, follows Rashi. Chabad custom is also to put on a second pair, according to Rabbeinu Tam, each weekday after the main prayers. Customs differ, and the Rabbi can explain what fits your family's tradition.
+There are different customs in the order of the passages inside the tefillin. The standard order, worn by nearly everyone, follows Rashi. Many Chabad men also put on a second pair, according to Rabbeinu Tam, each weekday after the main prayers. Customs differ, and the Rabbi can explain what fits your family's tradition.
 
 ## Caring for your tefillin
 

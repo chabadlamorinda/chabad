@@ -51,7 +51,7 @@ Rabbi Labkowski is glad to:
 ## Common questions
 
 ### Which doors need a mezuzah?
-Most doorways of rooms used for living, including bedrooms, the kitchen and the garage entrance. Bathrooms do not. Ask the Rabbi about closets and unusual doors.
+Most doorways of rooms used for living, including bedrooms and the kitchen. Bathrooms do not. Ask the Rabbi about garages, closets and unusual doors.
 
 ### Do I need to do everything at once?
 No. Start with mezuzahs and Shabbat candles, and add one step at a time.

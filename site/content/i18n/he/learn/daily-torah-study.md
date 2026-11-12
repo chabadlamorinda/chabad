@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: torah, code-of-jewish-law, shavuot-night-learning, torah-study-for-women, retirement-jewish-view, tanya, rambam, weekly-parsha
 local: מצאו שיעור או חברותא ב-chabadoflamorinda.com/programs/adult-education או התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
-לימוד תורה הוא מצווה יומית לכל יהודי, איש או אשה, צעיר או מבוגר. אפילו כמה דקות בכל יום מחברות אתכם לחכמת ה׳ ונותנות לכל היום תחושה אחרת.
+לימוד תורה הוא מצווה יומית לגברים יהודים, ונשים יהודיות חייבות ללמוד את ההלכות הנוגעות להן ומעודדות בחום ללמוד הרבה יותר. אפילו כמה דקות בכל יום מחברות אתכם לחכמת ה׳ ונותנות לכל היום תחושה אחרת.
 
 ## למה ללמוד בכל יום
 

@@ -14,7 +14,7 @@ The Torah tells us to remember what Amalek did and never to forget. Remembering 
 ## Days of remembrance
 
 - **The Tenth of Tevet.** Many victims' dates of death are unknown. Israel's Chief Rabbinate set the fast of the Tenth of Tevet as a general day of Kaddish, called Yom HaKaddish HaKlali, for those whose yahrzeit is not known. Families light a candle and say Kaddish on this day. See [minor fast days](/learn/minor-fast-days).
-- **Yom HaShoah.** Holocaust Remembrance Day falls on the 27th of Nissan, shortly after Passover. Communities hold memorial gatherings, read names and light six candles.
+- **Yom HaShoah.** Holocaust Remembrance Day falls on the 27th of Nissan, shortly after Passover. Communities hold memorial gatherings, read names and light six candles. The Rebbe was not in favor of a Holocaust memorial day in Nissan, a month of joy, so Chabad does not hold one then; ask the Rabbi.
 - **Yizkor.** In the [Yizkor](/learn/yizkor) memorial prayer on the holidays, many add a prayer for the martyrs of the Holocaust.
 - **Tisha B'Av.** On this saddest day of the year, kinot (elegies) are recited for Jewish tragedies through history, and many communities include kinot for the Holocaust.
 
@@ -37,7 +37,7 @@ Listening to survivors' stories, and recording them, is a mitzvah of kindness an
 That is common. You can say Kaddish and light a candle on the Tenth of Tevet, the general day of Kaddish. You may also choose another meaningful date. Ask the Rabbi for guidance.
 
 ### Can I say Kaddish for someone who is not my parent?
-Yes. Kaddish may be said for any Jew, including relatives lost in the Holocaust. A minyan is needed. We can help arrange it.
+Often, yes: for other relatives, and for Holocaust victims on the Tenth of Tevet. Ask the Rabbi about your case. A minyan is needed. We can help arrange it.
 
 ### How can I teach my children about the Holocaust?
 Speak in an age-appropriate way, focusing on Jewish courage, faith and continuity, not only on horror. Sharing family stories and doing a mitzvah in memory of a relative helps children connect in a positive way.

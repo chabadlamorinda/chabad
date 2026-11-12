@@ -16,7 +16,7 @@ Yahrzeit is a Yiddish word meaning "year's time." Jewish tradition teaches that 
 A yahrzeit follows the Hebrew calendar, so it falls on a different English date each year.
 
 - Use our [yahrzeit calculator](/tools/yahrzeit) to find the date.
-- Remember that a Hebrew day begins at sunset. If your loved one passed away after sundown, the Hebrew date is the next day.
+- Remember that a Hebrew day begins at nightfall. If your loved one passed away after nightfall, the Hebrew date is the next day; if it was between sunset and nightfall, ask the Rabbi.
 - The first yahrzeit is usually counted from the date of death. In some cases (such as when burial was delayed more than a few days), ask the Rabbi.
 - In a Jewish leap year, if the death occurred in the month of Adar, ask the Rabbi which Adar to observe.
 
@@ -34,7 +34,7 @@ The yahrzeit begins the evening before, at sunset, and continues until nightfall
 
 ## Mood of the day
 
-A yahrzeit is a day of remembrance, not sadness alone. Many people fast, while others share stories and gather family. It is a chance to keep the person's values alive.
+A yahrzeit is a day of remembrance, not sadness alone. Fasting on a yahrzeit is an old custom, but it is not the Chabad custom. Many share stories, gather family, give tzedakah and learn Torah. It is a chance to keep the person's values alive.
 
 ## Common questions
 

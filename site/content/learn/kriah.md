@@ -51,7 +51,7 @@ Wear something you are comfortable tearing and wearing for the week, such as a r
 Kriah is still done within the first 30 days. After 30 days, it is done only for a parent. Call the Rabbi and he will guide you.
 
 ### Do I need to tear a new garment if I change clothes during shiva?
-For a parent, there are customs about tearing again; for other relatives, generally not. Customs vary, so ask the Rabbi.
+For a parent, the other clothes worn during shiva should also be torn (ask the Rabbi how); for other relatives, generally not. Customs vary, so ask the Rabbi.
 
 ### Is kriah done for a relative who was not Jewish?
 This is a sensitive question with different answers in different cases. Please speak with the Rabbi privately.

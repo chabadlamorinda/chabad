@@ -41,7 +41,7 @@ An after-blessing is said when you ate at least an olive-sized amount (about one
 
 ## Shehecheyanu: the blessing for new things
 
-This blessing thanks G-d for bringing us to a special moment. It is said on eating a new seasonal fruit for the first time that year, wearing a significant new garment, on the first night of most holidays, and other joyous milestones.
+This blessing thanks G-d for bringing us to a special moment. It is said on eating a new seasonal fruit for the first time that year, wearing a significant new garment (many say it; Chabad custom is generally not to say it over clothing, so ask the Rabbi), on the first night of most holidays, and other joyous milestones.
 
 **Transliteration:** Baruch atah Ado-nai, Elo-heinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu lazman hazeh.
 

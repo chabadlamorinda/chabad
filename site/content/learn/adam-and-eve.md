@@ -25,7 +25,7 @@ The Torah does not name the fruit, and "apple" is not in the text. The Sages off
 
 ## Adam, Eve and science
 
-Many people ask how the story fits with science. Chabad's approach is that the Torah is not a science textbook but G-d's teaching for life, and that there are several ways to read the days of creation. For this question, see [Torah and science](/learn/torah-and-science) and ask the Rabbi.
+Many people ask how the story fits with science. Chabad's approach is that the Torah is not a science textbook but G-d's teaching for life. For this question, see [Torah and science](/learn/torah-and-science) and ask the Rabbi.
 
 ## A weekly taste of peace
 

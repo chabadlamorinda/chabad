@@ -18,7 +18,7 @@ Two authors, who never met, made the Shulchan Aruch what it is:
 - **Rabbi Yosef Caro (1488-1575)**, a Sephardic sage in Safed in the Land of Israel, wrote the main text. He meant it as a review for students of his larger work, the *Beit Yosef*, which explains the reasoning.
 - **Rabbi Moshe Isserles, the Rema**, an Ashkenazi rabbi in Cracow, Poland, was writing a similar book when he saw Rabbi Caro's. He stopped and instead added comments wherever Ashkenazi custom differs. He called them the *Mapah*, "the Tablecloth," a play on a "set table."
 
-The first edition (Venice, about 1566) had only Rabbi Caro's text. Later editions print both, with Rabbi Caro's words in block letters and the Rema's in Rashi script. Today Ashkenazi Jews follow the Rema where he differs, and Sephardic Jews generally follow Rabbi Caro. That is why you may hear "ask the Rabbi what your custom is."
+The first edition (Venice, about 1565) had only Rabbi Caro's text. Later editions print both, with Rabbi Caro's words in block letters and the Rema's in Rashi script. Today Ashkenazi Jews follow the Rema where he differs, and Sephardic Jews generally follow Rabbi Caro. That is why you may hear "ask the Rabbi what your custom is."
 
 ## The four parts
 

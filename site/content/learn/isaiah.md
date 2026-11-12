@@ -37,7 +37,7 @@ The Talmud describes the Book of Isaiah as a book of comfort. He taught that a g
 
 ## How did Isaiah's life end?
 
-The sources say that Isaiah died at the hands of Menashe, Hezekiah's son and Isaiah's grandson, a wicked king who accused him of contradicting Moses. The tradition explains that Isaiah's name drops a letter in this shortened form, "Yeshaya," because of how he died. His prophecies were written down by Hezekiah's students.
+The sources say that Isaiah died at the hands of Menashe, Hezekiah's son and Isaiah's grandson, a wicked king who accused him of contradicting Moses.  His prophecies were written down by Hezekiah's students.
 
 ## Take the next step
 

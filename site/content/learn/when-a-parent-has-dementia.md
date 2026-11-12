@@ -13,7 +13,7 @@ When Moses came down from Mount Sinai and saw the golden calf, he broke the firs
 
 ## Honoring a parent who does not recognize you
 
-The mitzvah of honoring parents continues even when a parent cannot understand it. The Talmud tells of a man whose mother, in her confusion, embarrassed him in public, and he did not answer her harshly. Honor today may look like a calm voice, a familiar song, holding a hand, or making sure they are clean, comfortable and treated kindly by others.
+The mitzvah of honoring parents continues even when a parent cannot understand it. Maimonides rules that if a parent's mind becomes disturbed, a child should try to treat the parent according to their state of mind, with patience; if the child truly cannot bear it, he or she may step away and have others care for the parent. Honor today may look like a calm voice, a familiar song, holding a hand, or making sure they are clean, comfortable and treated kindly by others.
 
 At the same time, Jewish law does not ask a child to do the impossible alone. When care at home becomes too much, arranging good professional care is itself a way of honoring a parent. Ask the Rabbi about your situation.
 

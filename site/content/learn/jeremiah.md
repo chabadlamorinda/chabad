@@ -9,7 +9,7 @@ Jeremiah (יִרְמְיָהוּ, Yirmiyahu) was the prophet who warned the Jewi
 
 ## Who was Jeremiah?
 
-According to Chabad.org, Jeremiah was born into a family of priests in Anatoth, in the territory of Benjamin. His father was Hilkiah, the High Priest. He began prophesying under King Josiah, when he was young, and said "I am still a boy." G-d reassured him, and he never stopped speaking, at risk of his life. Two other voices of his time were the prophet Zephaniah and the prophetess Huldah. See [what is a prophet](/learn/what-is-a-prophet).
+According to Chabad.org, Jeremiah was born into a family of priests in Anatoth, in the territory of Benjamin. His father was Hilkiah, a priest. He began prophesying under King Josiah, when he was young, and said "I am still a boy." G-d reassured him, and he never stopped speaking, at risk of his life. Two other voices of his time were the prophet Zephaniah and the prophetess Huldah. See [what is a prophet](/learn/what-is-a-prophet).
 
 ## His message
 

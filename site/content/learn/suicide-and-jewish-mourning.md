@@ -26,7 +26,7 @@ A person is not defined by the last moment of their life. Their soul is a part o
 
 ## Kaddish and remembering
 
-[Kaddish](/learn/kaddish) is said for a person who died by suicide, just as for anyone. The yahrzeit is kept each year, a candle is lit, and good deeds and tzedakah in the person's memory elevate their soul. If you cannot say Kaddish yourself, the Rabbi can arrange for it to be said. See [The Mourning Journey](/learn/mourning-journey).
+[Kaddish](/learn/kaddish) is generally said for a person who died by suicide, as for anyone; the Rabbi will guide you. The yahrzeit is kept each year, a candle is lit, and good deeds and tzedakah in the person's memory elevate their soul. If you cannot say Kaddish yourself, the Rabbi can arrange for it to be said. See [The Mourning Journey](/learn/mourning-journey).
 
 ## For friends and community
 

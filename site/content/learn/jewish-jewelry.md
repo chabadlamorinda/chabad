@@ -54,4 +54,4 @@ The hamsa is a popular folk symbol in many Jewish communities, but it does not c
 It should be covered or removed. Many people tuck it under their clothing. To avoid the issue, choose a design without G-d's name.
 
 ### Can a man wear Jewish jewelry?
-Yes. Many men wear a chai, Star of David or a ring. Jewish tradition encourages modest, dignified dress, and the Torah forbids men and women from wearing clothing meant for the other gender.
+Many men wear a simple chai, Star of David or ring, but customs differ about what jewelry suits a man, so ask the Rabbi. Jewish tradition encourages modest, dignified dress, and the Torah forbids men and women from wearing clothing meant for the other gender.

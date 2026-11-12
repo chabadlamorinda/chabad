@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: torah, code-of-jewish-law, shavuot-night-learning, torah-study-for-women, retirement-jewish-view, tanya, rambam, weekly-parsha
 local: Find a class or a study partner at chabadoflamorinda.com/programs/adult-education or call Rabbi Labkowski at 925-384-7242.
 ---
-Torah study is a daily mitzvah for every Jew, man or woman, young or old. Even a few minutes each day connects you to G-d's wisdom and gives your whole day a different feeling.
+Torah study is a daily mitzvah for Jewish men, and Jewish women are obligated to learn the laws that apply to them and are warmly encouraged to learn much more. Even a few minutes each day connects you to G-d's wisdom and gives your whole day a different feeling.
 
 ## Why study every day
 

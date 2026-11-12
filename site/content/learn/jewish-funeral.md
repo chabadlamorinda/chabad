@@ -34,7 +34,7 @@ The deceased is then dressed in tachrichim, simple white linen shrouds. Everyone
 
 A Jewish funeral is usually short and modest:
 
-- **Kriah (tearing):** immediate family members tear a garment or wear a torn ribbon, expressing grief.
+- **Kriah (tearing):** immediate family members tear a garment, expressing grief; a ribbon is not a substitute for tearing the garment.
 - **Psalms and eulogies:** a Rabbi and family members share words about the person's life.
 - **El Malei Rachamim:** a memorial prayer for the soul.
 - **Burial:** family and friends help fill the grave with earth, an act of kindness that cannot be repaid.

@@ -37,7 +37,7 @@ According to the summary on Chabad.org, the book also covers:
 2. **Holiness and purity.** Which animals a holy people may eat (the laws of kashrut), and the laws of ritual purity and impurity.
 3. **Laws for the Kohanim.** Whom they may marry and what they may not do.
 4. **The holidays.** Passover, Shavuot, Rosh Hashanah, Yom Kippur and Sukkot are listed. The service of the High Priest on Yom Kippur is described in detail.
-5. **Social and economic laws.** The Sabbatical year (Shemitah), when the land rests and debts are released, and the Jubilee (Yovel) every fiftieth year, when fields return to their original families.
+5. **Social and economic laws.** The Sabbatical year (Shemitah), when the land rests, and the Jubilee (Yovel) every fiftieth year, when fields return to their original families.
 6. **Blessings and warnings.** Peace and security for following the Torah, and a promise that G-d will remember His covenant even after hard times.
 
 ## "Love your fellow as yourself"

@@ -32,7 +32,7 @@ Anyone who has lost a parent says Yizkor. Many also say it for a spouse, child, 
 
 There is a widespread custom that people whose parents are both living step out of the sanctuary during Yizkor. This is a custom of sensitivity and good wishes, not a requirement.
 
-Customs differ on whether a mourner says Yizkor during the first year after a loss, so ask the Rabbi what to do.
+Chabad custom is not to say Yizkor during the first year after a loss (other communities differ), so ask the Rabbi what to do.
 
 ## How to say Yizkor
 

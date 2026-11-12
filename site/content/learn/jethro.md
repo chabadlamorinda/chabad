@@ -39,7 +39,7 @@ The teachers of Chabad.org also ask why the idea came from Jethro and not from M
 
 Parshat Yitro opens with his story and then moves to the greatest moment in Jewish history: the Giving of the Torah and the [Ten Commandments](/learn/ten-commandments) at Mount Sinai. Only a few Torah portions carry a person's name, and it is striking that this one belongs to someone who was not born into the Jewish people.
 
-The Zohar teaches that the Torah could not be given until Jethro acknowledged G-d's greatness. Chassidic teaching adds that Jethro represents bringing the wisdom of the world into line with the wisdom of G-d. The message: the door to Torah is open to anyone who sincerely seeks, and a person who searches honestly can lead others closer. If this speaks to you, read about [converting to Judaism](/learn/converting-to-judaism).
+Teachers explain that the Torah could not be given until Jethro acknowledged G-d's greatness. Chassidic teaching adds that Jethro represents bringing the wisdom of the world into line with the wisdom of G-d. The message: the door to Torah is open to anyone who sincerely seeks, and a person who searches honestly can lead others closer. If this speaks to you, read about [converting to Judaism](/learn/converting-to-judaism).
 
 ## What happened to Jethro afterward?
 

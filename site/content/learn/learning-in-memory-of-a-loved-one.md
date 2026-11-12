@@ -38,7 +38,7 @@ Chabad.org also recommends giving [tzedakah](/learn/tzedakah) and taking on a mi
 
 ## Kaddish
 
-[Kaddish](/learn/kaddish) is primarily a duty for children of the deceased. It is recited daily during eleven months after burial and then on each yahrzeit. If there are no children, another relative takes it on, or someone can be asked. Learning and charity are for everyone who loved the person, not only for those who say Kaddish. Ask the Rabbi about your family's case.
+[Kaddish](/learn/kaddish) is primarily a duty for children of the deceased. It is recited daily during the eleven months of mourning and then on each yahrzeit. If there are no children, another relative takes it on, or someone can be asked. Learning and charity are for everyone who loved the person, not only for those who say Kaddish. Ask the Rabbi about your family's case.
 
 ## Where to learn in Lafayette, Moraga and Orinda
 

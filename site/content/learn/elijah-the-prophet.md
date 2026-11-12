@@ -13,7 +13,7 @@ Elijah's story is told in the Book of Kings (I Kings 17 to II Kings 2). He came 
 
 ## Elijah and the bris
 
-At a bris (circumcision), tradition says, Elijah is present. The Midrash says that at Mount Sinai Elijah complained that the people had stopped circumcising their sons, and G-d promised he would be present at every bris to see that the covenant is kept. For this reason a chair is set aside for Elijah, "the angel of the covenant." Some families leave it empty, and in some places, including the widespread Chabad custom, the sandek who holds the baby sits on it. Ask the Rabbi or the mohel about the custom for your family. See [brit milah](/learn/brit-milah).
+At a bris (circumcision), tradition says, Elijah is present. The Midrash says that at Mount Sinai Elijah complained that the people had stopped circumcising their sons, and G-d promised he would be present at every bris to see that the covenant is kept. For this reason a chair is set aside for Elijah, "the angel of the covenant." Some families leave it empty, and in many places the sandek who holds the baby sits on it. Ask the Rabbi or the mohel about the custom for your family. See [brit milah](/learn/brit-milah).
 
 ## Elijah at the Seder
 

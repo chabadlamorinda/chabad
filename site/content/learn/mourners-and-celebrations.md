@@ -15,7 +15,7 @@ The idea is not to punish a person who is grieving. Mourning is a time of inward
 - **Sheloshim, the first thirty days:** For all seven relatives, joyous occasions are avoided until the thirty days end ([sheloshim](/learn/sheloshim)).
 - **Twelve months:** For those mourning a parent, restraint continues for the year.
 
-The count is from the burial, and the holidays can change it. See [shiva and holidays](/learn/shiva-and-holidays) and ask the Rabbi to work out the dates.
+Shiva and sheloshim are counted from the burial; the twelve months for a parent are counted from the day of death. Holidays can change the count. See [shiva and holidays](/learn/shiva-and-holidays) and ask the Rabbi to work out the dates.
 
 ## Weddings
 
