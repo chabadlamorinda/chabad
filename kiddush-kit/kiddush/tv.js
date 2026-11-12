@@ -3,7 +3,7 @@
 'use strict';
 (function () {
   var $ = function (id) { return document.getElementById(id); };
-  var KEY = 'kiddush-tv-last', board = null, lastOk = Date.now();
+  var KEY = 'kiddush-tv-last', board = null, lastOk = Date.now(), loadedVersion = '';
   var LIGHT = !/[?&]theme=dark\b/.test(location.search); // light look (matches the sponsor page) is the default; add ?theme=dark for the wood board
   if (LIGHT) document.documentElement.classList.add('light');
   var T = KI.t; KI.apply();
@@ -136,8 +136,8 @@
     eventsBox(b, rows);
     Array.prototype.forEach.call(document.querySelectorAll('.tile .n'), function (n) { fit(n, .5); });
     Array.prototype.forEach.call(document.querySelectorAll('.tile .s, .tile .ts'), function (n) { fit(n, .5); });
-    Array.prototype.forEach.call(document.querySelectorAll('.tile .r, .tile.past .td'), function (n) { fit(n, .8); }); // long reasons are cut short with … rather than shrunk to nothing
     Array.prototype.forEach.call(document.querySelectorAll('.tile .tt, .tile:not(.past) .td'), function (n) { fit(n, .55); });
+    Array.prototype.forEach.call(document.querySelectorAll('.tile.past'), fitTileText);
   }
   // The empty space at the bottom of the last column holds an "Upcoming events" box (notes added in Staff → Calendar notes).
   function eventsBox(b, rows) {
@@ -151,6 +151,13 @@
       var it = el('div', 'ev'); it.appendChild(el('div', 'ev-d', KI.dowName(n.date) + ', ' + KI.dateLabel(n))); it.appendChild(el('div', 'ev-t', KI.he && n.textHe ? n.textHe : n.text)); box.appendChild(it);
     });
     while (box.children.length > 2 && box.scrollHeight > box.clientHeight + 1) box.removeChild(box.lastChild); // show as many as fit
+  }
+  // Past weeks show the whole dedication: it may wrap onto extra lines, and the text of the tile shrinks until everything fits (never cut off with "...").
+  function fitTileText(t) {
+    var kids = [].slice.call(t.querySelectorAll('.tt, .td, .ts, .n, .s, .r')), cs = getComputedStyle(t), g = 0;
+    var avail = t.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+    var used = function () { return kids.reduce(function (a, k) { return a + k.offsetHeight; }, 0); };
+    while (used() > avail + 1 && g++ < 22) kids.forEach(function (k) { k.style.fontSize = parseFloat(getComputedStyle(k).fontSize) * .93 + 'px'; });
   }
   function sizeRows(rows) {
     var col = $('c0'), h = col.clientHeight, gap = parseFloat(getComputedStyle(col).rowGap) || 0;
@@ -201,6 +208,7 @@
   function load() {
     fetch('/api/kiddush/board', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('bad'); return r.json(); }).then(function (b) {
       lastOk = Date.now(); $('offline').hidden = true;
+      if (b.version) { if (!loadedVersion) loadedVersion = b.version; else if (b.version !== loadedVersion) { location.reload(); return; } } // a newer version of these pages was published
       var sig = JSON.stringify(b); if (!board || sig !== board.__sig) { b.__sig = sig; render(b); }
       try { localStorage.setItem(KEY, JSON.stringify(b)); } catch (e) { /* private mode */ }
     }).catch(function () { if (Date.now() - lastOk > 5 * 60e3) $('offline').hidden = false; });
@@ -210,6 +218,13 @@
   var cached = null; try { cached = JSON.parse(localStorage.getItem(KEY)); } catch (e) { /* none */ }
   if (cached && cached.slots) render(cached);
   load(); setInterval(load, 60e3);
+  // The first drawing can happen before the web fonts have loaded (different letter sizes), so draw once more when they are ready and a moment later.
+  var redrawn = 0;
+  function redraw() { if (board && redrawn < 3) { redrawn++; render(board); } }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { setTimeout(redraw, 150); });
+  window.addEventListener('load', function () { setTimeout(redraw, 1200); });
+  setTimeout(redraw, 4000);
+
   setTimeout(function () { location.reload(); }, 12 * 3600e3); // pick up new versions of this page
   if (navigator.wakeLock) { var wl = function () { navigator.wakeLock.request('screen').catch(function () {}); }; wl(); document.addEventListener('visibilitychange', function () { if (!document.hidden) wl(); }); }
 })();

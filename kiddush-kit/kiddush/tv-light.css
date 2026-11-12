@@ -33,3 +33,11 @@ html.light body{background-image:none;color:#5e2f1a;cursor:none}
 .light .tile{overflow:hidden}
 :root{color-scheme:light only}
 
+
+.light .tile.past .tbody>div{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.05}
+.light .tile.past .tt{white-space:normal}
+
+.light .tile.past{padding-top:calc(var(--rh)*.05);padding-bottom:calc(var(--rh)*.05)}
+.light .tile.past .td{font-size:calc(var(--rh)*.17);line-height:1.04}
+.light .tile.past .tt{font-size:calc(var(--rh)*.19);line-height:1.05}
+.light .tile.past .ts{font-size:calc(var(--rh)*.23);line-height:1.04}
