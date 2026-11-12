@@ -21,7 +21,7 @@ That is why a product with no obviously forbidden ingredient can still need supe
 
 **Glycerin.** Glycerin (a sweetener and moisturizer in candy, frosting, toothpaste and cosmetics) may come from animal fat or from plants. The label often just says "glycerin."
 
-**Carmine and cochineal.** These natural red dyes are made from crushed insects. The Torah forbids eating insects, so carmine is not kosher. It can be found in red candies, drinks, yogurt and some juices, listed as carmine, cochineal, or "natural red 4."
+**Carmine and cochineal.** These natural red dyes are made from crushed insects. Because it is made from insects, the major kosher agencies treat carmine as not kosher. It can be found in red candies, drinks, yogurt and some juices, listed as carmine, cochineal, or "natural red 4."
 
 **Natural flavors.** This phrase can cover hundreds of compounds, some from animal or grape sources. A reliable symbol means the formulas were checked.
 
@@ -43,7 +43,7 @@ Fish gelatin made from kosher fish is pareve, and there are certified products. 
 Gelatin is kosher only if it is certified. Most gelatin comes from non-kosher animals, so without a reliable symbol, do not assume it is kosher.
 
 ### Is carmine kosher?
-No. Carmine (cochineal) is made from insects, which the Torah forbids. It appears in some red foods and drinks, so check the label and the symbol.
+Not according to the major kosher agencies: carmine (cochineal) is made from insects, which the Torah forbids eating. It appears in some red foods and drinks, so check the label and the symbol.
 
 ### Why does apple juice need a kosher symbol?
 Juice can be made on equipment shared with grape products, and ingredients and flavors are added in processing. A symbol shows that the whole production was checked. Ask the Rabbi about a particular bottle.

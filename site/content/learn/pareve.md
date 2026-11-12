@@ -40,7 +40,7 @@ A "pareve" label on a package is only as good as the certification behind it. Tw
 1. **"Pareve" only counts with a kosher symbol.** Read about [kosher symbols](/learn/kosher-symbols).
 2. **"DE" means dairy equipment.** A pareve product made on the same equipment as dairy products may say "DE" or "Pareve DE." It has no dairy ingredients, but the equipment was dairy. Many families eat these foods, others avoid them with meat, so ask the Rabbi what your family should do.
 
-Also remember that a pareve food that looks like meat or dairy, such as almond milk or a soy burger, can confuse guests. Chabad.org suggests marking it, such as leaving the container on the table, so that people know it is pareve.
+Also remember that a pareve food that looks like meat or dairy, such as almond milk or a soy burger, can confuse guests. It helps to mark it, such as leaving the container on the table, so that people know it is pareve.
 
 ## A pareve dish for every table
 

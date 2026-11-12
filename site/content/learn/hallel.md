@@ -18,7 +18,7 @@ Hallel is preceded by a blessing in which we thank G-d for making us holy and co
 According to Chabad.org, full Hallel, the entire six psalms, is said on:
 
 - **Sukkot**, every day (and Shemini Atzeret). On Sukkot the Four Kinds are held during Hallel and the lulav is waved in six directions at four points; see [the four kinds](/learn/four-kinds).
-- **Chanukah**, every day. Work is allowed and it is not a biblical festival, but Hallel marks miracles, and each day marks the oil lasting one more day. See [al hanissim and Hallel](/learn/al-hanissim-and-hallel).
+- **Chanukah**, every day. Work is allowed and it is not a biblical festival, but Hallel marks the miracles of Chanukah. See [al hanissim and Hallel](/learn/al-hanissim-and-hallel).
 - **Passover**, the first day (the first two days outside Israel).
 - **Shavuot**.
 

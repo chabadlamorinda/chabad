@@ -46,7 +46,7 @@ Guests share a festive meal, sing, and wish the family mazel tov. The mohel give
 
 ### Does a bris have to be on the eighth day?
 
-Yes, when the baby is healthy. The day of birth counts as day one, so a boy born on a Monday has his bris the following Monday. Remember that a Jewish day begins at sunset, so a birth after sundown counts as the next day.
+Yes, when the baby is healthy. The day of birth counts as day one, so a boy born on a Monday has his bris the following Monday. Remember that a Jewish day begins at sunset, so a birth after sundown counts as the next day. If the baby was born around sunset, the day is uncertain, so ask the Rabbi right away.
 
 ### Is a hospital circumcision the same as a bris?
 

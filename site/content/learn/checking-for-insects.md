@@ -9,7 +9,7 @@ Jewish law forbids eating insects, so produce that commonly has small bugs, like
 
 ## Why insects are not kosher
 
-The Torah forbids eating "creeping things" (Leviticus 11:41 to 44). Insects are among the most serious of the kosher prohibitions, because eating even one whole tiny insect is a full violation. The Torah connects this mitzvah with holiness: "You shall be holy, for I am holy."
+The Torah forbids eating "creeping things" (Leviticus 11:41 to 44). Eating even a single whole insect, however tiny, is a violation of a Torah prohibition, so checking is taken very seriously. The Torah connects this mitzvah with holiness: "You shall be holy, for I am holy."
 
 The rule applies to insects that can be seen with the naked eye. Microscopic organisms that cannot be seen without magnification are not a concern.
 
@@ -36,13 +36,13 @@ A common method for leafy vegetables:
 5. **Check** a few leaves against a bright light or a light box, looking for tiny moving or still specks.
 6. **If you find insects,** repeat the process and check again.
 
-Raspberries and blackberries are hard to clean properly, and some people use them only blended and strained, or frozen with certification. Flour can be sifted before use.
+Raspberries and blackberries are extremely hard to clean properly, and many kosher authorities do not recommend eating them fresh at all; ask the Rabbi before using them. Flour can be sifted before use.
 
 ## Making it easier
 
 - **Buy certified pre-checked produce.** Bagged greens with a reliable kosher symbol have already been grown and washed under supervision. Read our guide to [kosher symbols](/learn/kosher-symbols).
 - **Use frozen certified vegetables** for broccoli and cauliflower.
-- **Choose firm, tight heads** of lettuce and cabbage, which often have fewer insects.
+- **Ask the Rabbi** about any vegetable that is hard to check; the method differs from one vegetable to another.
 - **Learn from others.** Checking is a skill that gets faster with practice.
 
 ## Common questions
@@ -51,7 +51,7 @@ Raspberries and blackberries are hard to clean properly, and some people use the
 A light box helps a lot, especially for greens and herbs, but a bright window or a strong white light also works. The goal is to see clearly.
 
 ### Is a vegetable with one bug ruined?
-No. Simply remove the insect and wash the rest well, then check again. If you keep finding insects, it may be better to use a different batch.
+No. Simply remove the insect and wash the rest well, then check again. If you keep finding insects, it may be better to use a different batch. If you are not sure what to do, ask the Rabbi.
 
 ### Are organic vegetables harder to check?
 Often, yes, because fewer pesticides are used. Organic produce is fine to eat, but it may need more careful washing.

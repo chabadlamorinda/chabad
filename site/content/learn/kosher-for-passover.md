@@ -15,7 +15,7 @@ The Torah is very strict about chametz on Passover. Even a tiny amount mixed int
 
 ## Matzah
 
-Matzah is made from flour and water, baked quickly before it can rise. At the Seder we eat [matzah](/learn/matzah) as a mitzvah. Chabad custom is to use only handmade shmurah matzah, "guarded" from the time the wheat is harvested.
+Matzah is made from flour and water, baked quickly before it can rise. At the Seder we eat [matzah](/learn/matzah) as a mitzvah. Chabad custom is to use handmade shmurah matzah, "guarded" from the time the wheat is harvested, at the Seder, and to make an effort to use it throughout Passover.
 
 ## Kitniyot
 

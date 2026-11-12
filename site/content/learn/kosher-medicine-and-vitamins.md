@@ -33,7 +33,7 @@ Some tablets use starch or other ingredients that can be chametz. Many authoriti
 
 **Fast days.** On Yom Kippur and Tisha B'Av, someone who is ill, elderly, pregnant or on essential medication may need to eat or drink. Do not decide this alone: talk to your doctor and the Rabbi before the fast. See [fast days](/learn/fast-days).
 
-**Shabbat.** Medicine that you need for a chronic condition, and any medicine in an emergency, is permitted. Treatments for mild discomfort have special rules. Call the Rabbi before Shabbat for a clear answer, and in any emergency call your doctor or 911 right away.
+**Shabbat.** Medicine that you need for a serious or ongoing condition, and any medicine in an emergency, is generally permitted; ask the Rabbi about your case. Treatments for mild discomfort have special rules. Call the Rabbi before Shabbat for a clear answer, and in any emergency call your doctor or 911 right away.
 
 ## A prayer for healing
 
@@ -54,7 +54,7 @@ Ask the Rabbi in advance. Many people who need a medicine are permitted to keep 
 Yes, if you need it. Pikuach nefesh overrides the fast. Speak to your doctor and the Rabbi before Yom Kippur so you know exactly what to do.
 
 ### Can I take medicine on Shabbat?
-Medicine for an ongoing or serious condition is permitted. For smaller matters, ask the Rabbi before Shabbat, and in an emergency do not wait.
+Medicine for an ongoing or serious condition is generally permitted, but ask the Rabbi about your case. For smaller matters, ask the Rabbi before Shabbat, and in an emergency do not wait.
 
 ### Who can I ask in Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda at 925-384-7242. Rabbi Labkowski can answer a medicine question confidentially.

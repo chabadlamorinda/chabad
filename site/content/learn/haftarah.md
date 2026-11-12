@@ -39,7 +39,7 @@ For many boys, chanting the Haftarah is the highlight of their [bar mitzvah](/le
 
 - **Shabbat morning** after the Torah reading
 - **Holidays** after the Torah reading
-- **Fast days** at the afternoon (Mincha) service, including Tisha B'Av and Yom Kippur
+- **Fast days** at the afternoon (Mincha) service; on Tisha B'Av and Yom Kippur there is also a Haftarah in the morning
 
 On Yom Kippur afternoon the Haftarah is the Book of Jonah, with its powerful message of [teshuvah](/learn/teshuvah).
 

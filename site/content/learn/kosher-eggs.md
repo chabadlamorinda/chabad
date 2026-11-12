@@ -15,7 +15,7 @@ An egg from a kosher bird (such as a chicken, duck, goose or turkey) is kosher e
 
 The Torah forbids eating blood. Occasionally an egg has a small spot of blood, usually a tiny red or brown speck on the yolk or in the white. It is most often caused by a small blood vessel breaking as the egg forms, and it is not a sign that the egg is unhealthy.
 
-Chabad.org teaches that every egg should be opened into a clear dish and checked before cooking or mixing, and that an egg with a blood spot is not to be eaten. By the strict letter of the law some authorities permit removing the spot and eating the rest, but the accepted custom, and the Chabad practice, is to discard the whole egg. Brown eggs tend to have somewhat more blood spots than white ones, so check them with extra care.
+Chabad.org teaches that every egg should be opened into a clear dish and checked before cooking or mixing, and that an egg with a blood spot is not to be eaten. By the strict letter of the law some authorities permit removing the spot and eating the rest, but the accepted custom, and the Chabad practice, is to discard the whole egg. Check every egg with care, whatever its color.
 
 Commercial eggs are scanned (candled) at the farm, so spots are rare in store-bought eggs, but they still happen, and the custom is to check anyway. Eggs from a backyard or a small farm deserve special care.
 

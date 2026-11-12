@@ -36,7 +36,7 @@ Chabad.org says to leave aside birthdays, astrology and similar signs. In its wo
 
 ## When the search is long
 
-Waiting is hard. Chabad.org points to Jacob, who searched and labored for twenty years before building his family. Perseverance, prayer and working on yourself are all ways to take part. Being a better person, and praying, are described as part of the matchmaking process. See [being single, a Jewish view](/learn/being-single-jewish-view) for encouragement, and [Jewish dating](/learn/jewish-dating) for practical advice.
+Waiting is hard. Think of Jacob, who labored for many years before building his family. Perseverance, prayer and working on yourself are all ways to take part. Being a better person, and praying, are described as part of the matchmaking process. See [being single, a Jewish view](/learn/being-single-jewish-view) for encouragement, and [Jewish dating](/learn/jewish-dating) for practical advice.
 
 ## If you have been married before
 

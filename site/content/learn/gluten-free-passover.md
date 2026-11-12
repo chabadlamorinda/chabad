@@ -5,7 +5,7 @@ category: Kosher
 related: matzah, kitniyot, passover-seder, kosher-for-passover, passover-shopping-list, passover-for-beginners
 local: Celiac or a wheat allergy in your family? Call Rabbi Labkowski at 925-384-7242 well before Passover.
 ---
-Yes: people who cannot eat wheat can use gluten-free oat matzah at the Passover Seder, since oats are one of the five grains from which matzah may be made. Rice, potato and tapioca "matzah" do not fulfill the mitzvah, and spelt matzah contains gluten, so it is not safe for celiac disease.
+People who cannot eat wheat can ask the Rabbi about gluten-free oat matzah for the Passover Seder: oats are one of the five grains from which matzah may be made, although some authorities are strict about oat matzah, so the Rabbi will guide you. Rice, potato and tapioca "matzah" do not fulfill the mitzvah, and spelt matzah contains gluten, so it is not safe for celiac disease.
 
 ## What makes matzah, matzah
 
@@ -21,7 +21,7 @@ Rice, potato, corn, tapioca and almond flours are not among the five grains. A p
 
 Doctors separate celiac disease (an autoimmune reaction to gluten), wheat allergy and milder sensitivity. For someone with celiac disease, even a little wheat is harmful, and Judaism asks us to protect our health first (see [pikuach nefesh](/learn/pikuach-nefesh)).
 
-- **Celiac or wheat allergy:** use oat matzah that is certified gluten-free and kosher for Passover. Spelt is not an option because it contains gluten.
+- **Celiac or wheat allergy:** ask the Rabbi about oat matzah that is certified gluten-free and kosher for Passover. Spelt is not an option because it contains gluten.
 - **A mild sensitivity:** ask your doctor, then ask the Rabbi what is right for you.
 - **Oats and celiac:** some people with celiac disease react to oats, even pure ones. Check with your doctor before the Seder, not at the table.
 
@@ -49,7 +49,7 @@ No. Matzah for the mitzvah must be made from one of the five grains. Rice and po
 No. Spelt contains gluten, so it is not suitable for celiac disease or a wheat allergy.
 
 ### Can someone with celiac disease fulfill the mitzvah of matzah?
-Yes, with certified gluten-free oat matzah, if oats are safe for that person. Talk to your doctor and the Rabbi.
+Often yes, with certified gluten-free oat matzah, if oats are safe for that person; some authorities are stricter about oat matzah. Talk to your doctor and the Rabbi.
 
 ### Is oat matzah okay if I just prefer not to eat gluten?
 Matzah made of oats is for people who cannot eat wheat for health reasons. Ask the Rabbi about your situation, including a preference or mild sensitivity.

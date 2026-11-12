@@ -24,7 +24,7 @@ Several major kosher agencies publish lists of beers and spirits they have revie
 
 ## The blessing on beer and spirits
 
-On beer, whiskey, vodka and even brandy or cognac, the blessing is *Shehakol nihyeh bidvaro* (שֶׁהַכֹּל נִהְיֶה בִּדְבָרוֹ), "by whose word everything came to be." Although brandy is made from wine, the wine taste is gone, so Chabad.org teaches that the usual blessing for drinks applies. Wine itself has its own blessing, *Borei pri hagafen*. See [blessings](/learn/blessings).
+On beer, whiskey, vodka and even brandy or cognac, the blessing is *Shehakol nihyeh bidvaro* (שֶׁהַכֹּל נִהְיֶה בִּדְבָרוֹ), "by whose word everything came to be." Although brandy is made from wine, the wine taste is gone, so the usual custom is that the blessing for drinks applies; ask the Rabbi if you are unsure. Wine itself has its own blessing, *Borei pri hagafen*. See [blessings](/learn/blessings).
 
 ## L'chaim, and doing it responsibly
 

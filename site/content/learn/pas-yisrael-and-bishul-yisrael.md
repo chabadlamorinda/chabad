@@ -18,7 +18,7 @@ What counts as "fit for a royal table" is a technical question, so ask the Rabbi
 
 ## What does "pas Yisrael" mean on a label?
 
-Many store-bought breads are kosher certified but are made in non-Jewish bakeries. This is called **pas palter** (פַּת פַּלְטֶר), commercial bread. Chabad.org explains that a hechsher alone does not make bread pas Yisrael unless the package says so. Commercial bread is allowed in some cases, when the bakery is under kosher supervision and bread baked with a Jew's help is not available, and many people avoid it even so. Everyone should avoid it between Rosh Hashanah and Yom Kippur. If bread is baked with dairy, ask the Rabbi.
+Many store-bought breads are kosher certified but are made in non-Jewish bakeries. This is called **pas palter** (פַּת פַּלְטֶר), commercial bread. Chabad.org explains that a hechsher alone does not make bread pas Yisrael unless the package says so. Commercial bread is allowed in some cases, when the bakery is under kosher supervision and bread baked with a Jew's help is not available, and many people avoid it even so. Many are especially careful to avoid it between Rosh Hashanah and Yom Kippur. If bread is baked with dairy, ask the Rabbi.
 
 Read [kosher certification](/learn/kosher-certification) to see what a symbol on the package does and does not tell you.
 
@@ -27,8 +27,8 @@ Read [kosher certification](/learn/kosher-certification) to see what a symbol on
 This comes up often in families with a caregiver, cleaner or cook, including many in Lafayette, Moraga and Orinda. If a non-Jew cooks in your kosher kitchen, the food may need a Jew to take part. The simple way to do that:
 
 1. **A Jew lights the burner or turns on the oven** (or turns up the flame), before the cooking begins.
-2. **The non-Jewish helper then cooks.** Under the Ashkenazi custom, this symbolic participation is enough. Stirring the pot also counts.
-3. **Sephardi custom is stricter:** a Jew should actually place the food on the fire. If you follow Sephardi practice, ask the Rabbi.
+2. **The non-Jewish helper then cooks.** Under the Ashkenazi custom, this symbolic participation is enough.
+3. **Sephardi custom is stricter:** a Jew should actually place the food on the fire or stir it once it is cooking. If you follow Sephardi practice, ask the Rabbi.
 
 A housekeeper also needs to know the basics, such as which pots and dishes are meat and which are dairy, so [setting up a kosher kitchen](/learn/kosher-kitchen) with clear labels is the first step.
 
