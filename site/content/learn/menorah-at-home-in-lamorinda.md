@@ -1,6 +1,6 @@
 ---
 title: Lighting the Menorah at Home in Lafayette, Moraga and Orinda: Window, Door and Safety
-description: Where to put your Chanukah menorah in a house, townhouse or apartment in Lamorinda, how to keep it safe in a dry December, and how to light with the community.
+description: Where to put your Chanukah menorah in a Lamorinda house, townhouse or apartment, how to keep it safe in a dry December, and how to light with others.
 category: Lamorinda
 related: chanukah-menorah, menorah-oil-and-candles, chanukah-on-shabbat, chanukah-in-lamorinda, mezuzah-and-religious-displays-hoa-california
 local: Need a menorah and candles, or a question about where to light? Call Rabbi Labkowski at 925-384-7242.

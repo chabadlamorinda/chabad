@@ -1,6 +1,6 @@
 ---
 title: A Jewish Year in Lamorinda's Seasons: Heat, Fire Season, Rain and Blossoms
-description: How the Jewish calendar fits Lamorinda's dry summers, rainy winters and spring blossoms: High Holidays in the heat, prayers for rain, early Shabbat and Tu BiShvat.
+description: How the Jewish calendar fits Lamorinda's dry summers, rainy winters and spring blossoms: holidays in the heat, prayers for rain, early Shabbat.
 category: Lamorinda
 related: jewish-year-in-lamorinda, prayers-for-rain, shabbat-in-winter, blessing-on-blossoming-trees, tashlich
 local: Wondering how your family can mark each season? Call Rabbi Labkowski at 925-384-7242 to hear what is planned.

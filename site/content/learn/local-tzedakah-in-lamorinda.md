@@ -1,6 +1,6 @@
 ---
 title: Tzedakah Begins at Home: Giving Locally in Lafayette, Moraga and Orinda
-description: Jewish law says the poor of your own city come first. What local tzedakah looks like in Lafayette, Moraga and Orinda, where need is quiet, and how to begin.
+description: Jewish law says the poor of your own city come first. What local tzedakah looks like in Lafayette, Moraga and Orinda, and how to begin.
 category: Lamorinda
 related: tzedakah-priorities, tzedakah, maot-chitim, gemach-interest-free-loans, supporting-chabad-of-lamorinda
 local: Want to give or help close to home? Call Rabbi Labkowski at 925-384-7242, or see /forms/volunteer.

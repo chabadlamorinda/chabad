@@ -1,6 +1,6 @@
 ---
 title: Seudah Shlishit: The Third Shabbat Meal
-description: What is seudah shlishit, the third Shabbat meal? Where it comes from, when it is eaten, whether it needs bread, and the Chassidic mood of the late afternoon.
+description: What is seudah shlishit, the third Shabbat meal? Its source, when it is eaten, whether it needs bread, and the quiet mood of late Shabbat afternoon.
 category: Shabbat & holidays
 related: shabbat-meals, shabbat-day, havdalah, niggun, techum-shabbat
 local: Come to Shabbat in Lafayette and ask Rabbi Labkowski, 925-384-7242, how a family can keep the third meal simply, in Lafayette, Moraga or Orinda.

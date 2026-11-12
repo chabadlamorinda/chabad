@@ -1,6 +1,6 @@
 ---
 title: Maakeh: The Mitzvah of a Safe Home
-description: The Torah commands a railing on the roof, and Jewish tradition turns it into a whole outlook on home safety: ladders, pools, balconies and smoke detectors.
+description: The Torah commands a railing on the roof, and tradition grows it into a Jewish view of home safety: ladders, pools, balconies and smoke detectors.
 category: Jewish home
 related: chanukat-habayit, setting-up-a-jewish-home, jewish-health-and-body, pikuach-nefesh, mezuzah
 local: Moving into a new home? Call Rabbi Labkowski at 925-384-7242 to put up your mezuzahs and bless your home.

@@ -1,6 +1,6 @@
 ---
 title: Shiluach HaKen: Sending Away the Mother Bird
-description: What is shiluach haken? The Torah's mitzvah of sending away the mother bird before taking the eggs, its promise of long life, and what it teaches about compassion.
+description: What is shiluach haken? The Torah's mitzvah of sending away the mother bird before taking eggs, its promise of long life, and its lesson of compassion.
 category: Jewish ideas
 related: tzaar-baalei-chayim, why-mitzvot, honoring-parents, pets-and-jewish-life, jewish-customs-minhag
 local: Curious about an unusual mitzvah? Ask Rabbi Labkowski at 925-384-7242 or at /help/talk-to-the-rabbi.
