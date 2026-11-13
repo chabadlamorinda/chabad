@@ -1,6 +1,6 @@
 ---
-title: Year-End Tzedakah: A Jewish Guide to Giving Before December 31
-description: How Jewish tradition thinks about year-end giving: tzedakah, maaser, the eight levels and who comes first. A calm guide for Lafayette, Moraga and Orinda.
+title: Цдака в конце года: еврейское руководство по пожертвованиям до 31 декабря
+description: Как еврейская традиция смотрит на пожертвования в конце года: цдака, маасер, восемь ступеней и кому в первую очередь. Для Лафейетта, Мораги и Оринды.
 category: Jewish home
 related: tzedakah, maaser, tzedakah-priorities, local-tzedakah-in-lamorinda, secular-new-year-jewish-view
 local: Есть вопросы о пожертвованиях? Позвоните раввину Исроэлю Лабковски: 925-384-7242.

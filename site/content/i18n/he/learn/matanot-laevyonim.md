@@ -1,6 +1,6 @@
 ---
-title: Matanot La'evyonim: Purim Gifts to the Poor, How Much and When
-description: Matanot la'evyonim is the Purim mitzvah of giving to at least two people in need. Learn how much to give, when, and how to do it with your family.
+title: מתנות לאביונים: מתנות לעניים בפורים, כמה ומתי
+description: מתנות לאביונים היא מצוות פורים לתת לפחות לשני אנשים נזקקים. כמה לתת, מתי, ואיך עושים זאת עם המשפחה.
 category: Shabbat & holidays
 related: the-four-mitzvahs-of-purim, mishloach-manot, tzedakah, purim-for-beginners, purim-seudah
 local: רוצים שמתנות הפורים שלכם יגיעו לנזקקים ביום פורים? התקשרו לרב לבקובסקי, 925-384-7242.

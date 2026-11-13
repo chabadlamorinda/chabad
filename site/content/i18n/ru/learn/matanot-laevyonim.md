@@ -1,6 +1,6 @@
 ---
-title: Matanot La'evyonim: Purim Gifts to the Poor, How Much and When
-description: Matanot la'evyonim is the Purim mitzvah of giving to at least two people in need. Learn how much to give, when, and how to do it with your family.
+title: Матанот ла-эвьоним: дары бедным на Пурим, сколько и когда
+description: Матанот ла-эвьоним — мицва Пурима: дать как минимум двум нуждающимся. Сколько давать, когда и как исполнить её всей семьёй.
 category: Shabbat & holidays
 related: the-four-mitzvahs-of-purim, mishloach-manot, tzedakah, purim-for-beginners, purim-seudah
 local: Хотите, чтобы ваши пуримские дары дошли до нуждающихся в день Пурима? Позвоните раввину Лабковски: 925-384-7242.

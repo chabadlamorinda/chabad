@@ -1,6 +1,6 @@
 ---
 title: The Eight Nights of Chanukah: A Night-by-Night Guide
-description: What to do on each of the eight nights of Chanukah: how many candles to light, an idea and a small mitzvah for every night, including Friday and Saturday night.
+description: What to do on each of the eight nights of Chanukah: how many candles to light, an idea and a small mitzvah for each night, including Friday and Saturday.
 category: Shabbat & holidays
 related: chanukah-menorah, chanukah-in-lamorinda, zot-chanukah, chanukah-on-shabbat, chanukah-for-kids
 local: Not sure what is planned near you? Call Rabbi Labkowski at 925-384-7242 or see /events.

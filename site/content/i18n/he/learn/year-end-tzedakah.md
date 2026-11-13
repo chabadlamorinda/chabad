@@ -1,6 +1,6 @@
 ---
-title: Year-End Tzedakah: A Jewish Guide to Giving Before December 31
-description: How Jewish tradition thinks about year-end giving: tzedakah, maaser, the eight levels and who comes first. A calm guide for Lafayette, Moraga and Orinda.
+title: צדקה בסוף השנה: מדריך יהודי לנתינה לפני 31 בדצמבר
+description: איך המסורת היהודית רואה נתינה בסוף השנה: צדקה, מעשר, שמונה המעלות ומי קודם. מדריך רגוע ללפייט, מוראגה ואורינדה.
 category: Jewish home
 related: tzedakah, maaser, tzedakah-priorities, local-tzedakah-in-lamorinda, secular-new-year-jewish-view
 local: יש לכם שאלות על נתינה? התקשרו לרב ישראל לבקובסקי, 925-384-7242.
