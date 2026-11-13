@@ -224,7 +224,7 @@
       // Optional sponsorship: tap an amount (tap again to clear); after the RSVP a button leads to the secure giving page with it filled in.
       var fund = box.getAttribute('data-fund') || 'general', pick = amountPicker([180, 360, 1000, 1800]);
       var sponsor = el('div', { class: 'sponsor-pick' }, [el('p', { class: 'hand', text: T('Sponsor this event (optional)') }), el('p', { class: 'muted', text: T('Help us welcome every family. Choose an amount, or skip it and just RSVP.') }), pick.node]);
-      var giveHref = function () { return P('/donate?fund=' + fund + '&amt=' + pick.value() + '&ded=' + encodeURIComponent(T('Sponsoring') + ': ' + box.getAttribute('data-title')).slice(0, 120) + '#give'); };
+      var giveHref = function () { return P('/donate?fund=' + fund + '&amt=' + pick.value() + '&ded=' + encodeURIComponent((T('Sponsoring') + ': ' + box.getAttribute('data-title')).slice(0, 80)) + '#give'); };
       var m = el('p', { class: 'msg', hidden: true }), go = el('button', { class: 'btn gold', type: 'submit', text: mine ? T('Update my RSVP') : (s.signedIn ? T("I'm coming") : T('RSVP')) });
       if (refIn && !mine) ui.appendChild(el('p', { class: 'invited hand', text: T('A friend is going and invited you. Join them!') }));
       var form = el('form', {}, [

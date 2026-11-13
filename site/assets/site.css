@@ -1009,3 +1009,5 @@ html { scroll-padding-top: 84px; }
 .media-box { margin: 18px 0; } .media-box .media-h { margin: 0 0 10px; font-size: 1.2rem; } .media-box .cmp-video { margin: 0 0 14px; }
 
 .sponsor-pick .chips input { width: 9.5em; border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; font: inherit; background: #fff; }
+
+@media print { .flyer { padding: 14px 24px 10px; border-top-width: 6px; } .fl-invite { font-size: 1.5rem; margin-top: 8px; } .flyer h1 { font-size: 2.1rem; margin: 2px 0 8px; } .fl-img { max-height: 190px; margin-bottom: 8px; } .fl-facts p { font-size: 1.05rem; } .fl-sum { font-size: 1rem; margin-bottom: 8px; } .fl-qr { margin: 8px 0; padding: 8px; } .fl-code { width: 120px; height: 120px; } .fl-foot { margin-top: 8px; padding-top: 6px; } }
