@@ -5,24 +5,24 @@ category: Lamorinda
 related: chanukah-foods, menorah-oil-and-candles, chanukah-gelt, chanukah-in-lamorinda
 local: Cannot find something for Chanukah? Call or text Rabbi Labkowski at 925-384-7242 and we will help, or order from Bay Kosher.
 ---
-Chanukah needs very little: a menorah, candles or oil, and a family to light with. Everything else (donuts, latkes, dreidels, gelt) is joy added on top. This is a simple shopping list for families in Lafayette, Moraga and Orinda, with what to look for in each item. **If you cannot find something, or are not sure what to buy, call or text Chabad of Lamorinda at 925-384-7242 and we will help.**
+Chanukah needs very little: a menorah, candles or oil, and a family to light with. Everything else (donuts, latkes, dreidels, gelt) is joy added on top. This is a simple shopping list for families in Lafayette, Moraga and Orinda, with what to look for in each item. **The easiest answer: [Bay Kosher](/programs/bay-kosher), our own local kosher market, is always stocked and always kosher.** Use it for every item on this list. And if you are not sure what to buy, call or text Chabad of Lamorinda at 925-384-7242 and we will help.
 
 ## 1. A menorah
 
-You need a menorah with eight places for lights in a straight row, all at the same height, plus a ninth place set apart for the helper light (shamash). Chabad custom is a menorah with the eight lights in a straight line. If you do not have one, ask us first: we can often help you get a menorah and candles. You can also order menorahs and Judaica from [Bay Kosher](/programs/bay-kosher). How to light it: [how to light the menorah](/learn/chanukah-menorah).
+You need a menorah with eight places for lights in a straight row, all at the same height, plus a ninth place set apart for the helper light (shamash). Chabad custom is a menorah with the eight lights in a straight line. If you do not have one, ask us first: we can often help you get a menorah and candles. Menorahs and Judaica are always available at [Bay Kosher](/programs/bay-kosher). How to light it: [how to light the menorah](/learn/chanukah-menorah).
 
 ## 2. Candles or oil
 
 - **Candles:** a box of Chanukah candles has 44, enough for all eight nights and the shamash. Candles must burn at least half an hour after nightfall; for Friday afternoon you need longer-burning candles or more oil because of Shabbat.
 - **Oil:** olive oil is the classic choice, with cotton wicks and glass cups. Read [menorah, oil and candles](/learn/menorah-oil-and-candles) for how much, and ask us about Friday.
 
-Candle boxes are often found in the seasonal section of grocery and variety stores before Chanukah; the stock changes every year, so it is best to buy early, or call us.
+Bay Kosher always has Chanukah candles and oil in stock. Other stores' stock changes every year, so for sure, start there.
 
 ## 3. Donuts (sufganiyot)
 
 We eat foods fried in oil to remember the miracle of the oil ([why we eat them](/learn/chanukah-foods)). For donuts, the question is kosher: a bakery donut or a mix is not automatically kosher.
 
-- Look for a reliable kosher certification (hechsher) on the package or from the bakery.
+- At [Bay Kosher](/programs/bay-kosher) everything is kosher, so you never have to check. Elsewhere, look for a reliable kosher certification (hechsher) on the package or from the bakery.
 - If you are baking at home, check the label of every packaged ingredient, and use kosher oil and a clean pan.
 - If you are not sure, ask us. Donuts are served for free at our [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on December 6.
 
@@ -33,11 +33,11 @@ Latkes are easy to make at home: potatoes, onion, eggs, a little flour or matzah
 ## 5. Dreidels and gelt
 
 - **Dreidel:** a top with four Hebrew letters: nun, gimel, hey and shin, for "a great miracle happened there." Any simple dreidel works. See [the dreidel](/learn/dreidel).
-- **Gelt:** chocolate coins, which are often sold in the same seasonal aisle as candles. Check for a kosher certification. Read about [Chanukah gelt](/learn/chanukah-gelt). There is also a Gelt Drop at the community lighting.
+- **Gelt:** chocolate coins, always kosher at [Bay Kosher](/programs/bay-kosher). Elsewhere, check for a kosher certification. Read about [Chanukah gelt](/learn/chanukah-gelt). There is also a Gelt Drop at the community lighting.
 
 ## 6. Kosher groceries and everything else
 
-For kosher meat, groceries, holiday foods and Judaica delivered to your door, see [Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda. For anything else you cannot find, contact us.
+[Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda, has kosher meat, groceries, holiday foods and Judaica, always in stock and always kosher, delivered to your door. This is the place for any local item. For anything else you cannot find, contact us.
 
 ## How Chabad can help
 
@@ -49,11 +49,11 @@ For kosher meat, groceries, holiday foods and Judaica delivered to your door, se
 
 ### Where can I buy Chanukah candles in Lafayette, Moraga or Orinda?
 
-Chanukah candles are often sold in the seasonal section of grocery stores in the weeks before the holiday, but stock varies from year to year. Call Chabad of Lamorinda at 925-384-7242 and we will help you get candles and a menorah, or order from [Bay Kosher](/programs/bay-kosher).
+[Bay Kosher](/programs/bay-kosher) always has Chanukah candles and menorahs in stock. You can also call Chabad of Lamorinda at 925-384-7242 and we will help.
 
 ### Where can I get kosher donuts for Chanukah near Lafayette?
 
-Look for a kosher certification on the package or from the bakery, since a regular bakery donut is not automatically kosher. If you are not sure, ask us at 925-384-7242. Free donuts are served at the community menorah lighting on December 6.
+Order from [Bay Kosher](/programs/bay-kosher), which is always kosher. If you buy elsewhere, look for a kosher certification, since a regular bakery donut is not automatically kosher. Or ask us at 925-384-7242. Free donuts are served at the community menorah lighting on December 6.
 
 ### What do I need to light a menorah for the first time?
 
