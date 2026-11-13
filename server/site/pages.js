@@ -1,6 +1,7 @@
 // The public website pages, in English, Hebrew and Russian. Everything is rendered on the server from site/content/
 // plus live data (Shabbat times, holidays, RSVP counts, Facebook photos), so every page is complete for Google and AI.
 'use strict';
+const isImg = (f) => /\.(jpe?g|png|webp)$/i.test(f || '');
 const { byPopularity } = require('./popular.js');
 const { homeBody } = require('./home.js');
 const express = require('express');
@@ -123,10 +124,11 @@ ${c ? '' : weeklyHtml(C.org, X, base)}
 ${e.price ? `<div><p class="eyebrow">${esc(t('Cost'))}</p><p>${esc(e.price)}</p></div>` : ''}
 ${e.rsvp && !past ? `<div><p class="eyebrow">${esc(t('RSVP'))}</p><p><a class="btn sm gold" href="#rsvp">${esc(t('RSVP in one tap'))}</a></p></div>` : ''}
 </div>
-${e.image ? `<img class="hero-img" src="${esc(e.image)}" alt="${esc(e.title)}" decoding="async">` : ''}
+${(isImg(e.flyer) || e.image) ? `<img class="hero-img" src="${esc(isImg(e.flyer) ? e.flyer : e.image)}" alt="${esc(e.title)}" decoding="async">` : ''}
 ${e.summary ? `<p class="lead-d">${esc(e.summary)}</p>` : ''}
 ${md(e.details || '')}
 ${e.flyer ? `<p><a class="btn ghost" href="${esc(e.flyer)}">${esc(t('Download the flyer'))}</a></p>` : ''}
+${past ? '' : `<p class="btns"><a class="btn gold" href="/donate?fund=${e.holiday ? 'holidays' : 'general'}#give">${esc(t('Sponsor or give'))}</a></p>`}
 ${e.photos && e.photos.length ? `<h2>${esc(t('Photos'))}</h2><div class="pics big">${e.photos.map((p) => `<a href="${esc(p)}"><img src="${esc(p)}" alt="${esc(e.title)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}
 ${e.album ? `<p><a class="btn gold" href="${esc(e.album)}" rel="noopener" target="_blank">${esc(t('See all the photos'))}</a></p>` : ''}
 ${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" data-kids="${e.rsvp.kids === false ? 0 : 1}" data-title="${esc(e.title)}" data-when="${esc(X.when(e))}">
