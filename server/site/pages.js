@@ -37,10 +37,10 @@ function eventLd(c, base, e) {
 
 function eventCard(e, counts, X) {
   const a = parseLocal(e.start), going = counts && counts[e.slug], t = X.t;
-  return `<article class="ev${e.image ? ' has-pic' : ''}">
-  ${e.image ? `<a class="ev-pic" href="/events/${e.slug}" tabindex="-1"><img src="${esc(e.image)}" alt="${esc(e.title)}" loading="lazy" decoding="async"></a>` : ''}
+  return `<article class="ev${e.card || e.image ? ' has-pic' : ''}${e.card ? ' pic-whole' : ''}">
+  ${e.card || e.image ? `<a class="ev-pic" href="/events/${e.slug}" tabindex="-1"><img src="${esc(e.card || e.image)}" alt="${esc(e.title)}" loading="lazy" decoding="async"></a>` : ''}
   <a class="ev-date" href="/events/${e.slug}" aria-hidden="true" tabindex="-1"><span>${esc(X.mon(a.m))}</span><b>${a.d}</b></a>
-  ${e.image ? '' : artImg(artFor('event', e.holiday || e.category || e.slug, e.title))}
+  ${e.card || e.image ? '' : artImg(artFor('event', e.holiday || e.category || e.slug, e.title))}
   <div class="ev-body">
     <h3><a href="/events/${e.slug}">${esc(e.title)}</a></h3>
     <p class="muted">${esc(X.when(e))} · ${esc(e.loc.name)}</p>
@@ -132,7 +132,7 @@ ${e.flyer ? `<p><a class="btn ghost" href="${esc(e.flyer)}">${esc(t('Download th
 ${past ? '' : `<p class="btns"><a class="btn gold" href="/donate?fund=${e.holiday ? 'holidays' : 'general'}#give">${esc(t('Sponsor or give'))}</a></p>`}
 ${e.photos && e.photos.length ? `<h2>${esc(t('Photos'))}</h2><div class="pics big">${e.photos.map((p) => `<a href="${esc(p)}"><img src="${esc(p)}" alt="${esc(e.title)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}
 ${e.album ? `<p><a class="btn gold" href="${esc(e.album)}" rel="noopener" target="_blank">${esc(t('See all the photos'))}</a></p>` : ''}
-${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" data-kids="${e.rsvp.kids === false ? 0 : 1}" data-title="${esc(e.title)}" data-when="${esc(X.when(e))}">
+${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" data-fund="${e.holiday ? 'holidays' : 'general'}" data-kids="${e.rsvp.kids === false ? 0 : 1}" data-title="${esc(e.title)}" data-when="${esc(X.when(e))}">
   <h2>${esc(t('RSVP'))}</h2>
   ${cap ? `<p class="muted">${esc(t('{left} of {cap} places left', { left: Math.max(cap - cnt, 0), cap }))}</p>` : cnt ? `<p class="muted">${esc(t('{n} people are coming', { n: cnt }))}</p>` : ''}
   <noscript><p>${esc(t('Please RSVP by email:'))} <a href="mailto:${esc(C.org.email || '')}?subject=${encodeURIComponent('RSVP: ' + e.title)}">${esc(C.org.email || '')}</a></p></noscript>

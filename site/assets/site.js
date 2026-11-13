@@ -209,28 +209,38 @@
       var email = el('input', { name: 'email', type: 'email', autocomplete: 'email', value: guest.email || '', required: true });
       var phone = el('input', { name: 'phone', type: 'tel', autocomplete: 'tel', value: guest.phone || '' });
       var note = el('input', { name: 'note', placeholder: T('Anything we should know? (optional)') });
+      // Optional sponsorship: tap an amount (tap again to clear); after the RSVP a button leads to the secure giving page with it filled in.
+      var sponsorAmt = 0, fund = box.getAttribute('data-fund') || 'general', chips = [36, 100, 180, 360].map(function (a) {
+        var b = el('button', { type: 'button', class: 'chip', 'aria-pressed': 'false', text: '$' + a });
+        b.addEventListener('click', function () { var on = sponsorAmt !== a; sponsorAmt = on ? a : 0; chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.classList.remove('on'); }); if (on) { b.setAttribute('aria-pressed', 'true'); b.classList.add('on'); } });
+        return b;
+      });
+      var sponsor = el('div', { class: 'sponsor-pick' }, [el('p', { class: 'hand', text: T('Sponsor this event (optional)') }), el('p', { class: 'muted', text: T('Help us welcome every family. Choose an amount, or skip it and just RSVP.') }), el('div', { class: 'chips' }, chips)]);
+      var giveHref = function () { return P('/donate?fund=' + fund + '&amt=' + sponsorAmt + '&ded=' + encodeURIComponent(T('Sponsoring') + ': ' + box.getAttribute('data-title')).slice(0, 120) + '#give'); };
       var m = el('p', { class: 'msg', hidden: true }), go = el('button', { class: 'btn gold', type: 'submit', text: mine ? T('Update my RSVP') : (s.signedIn ? T("I'm coming") : T('RSVP')) });
       if (refIn && !mine) ui.appendChild(el('p', { class: 'invited hand', text: T('A friend is going and invited you. Join them!') }));
       var form = el('form', {}, [
         s.signedIn ? el('p', { text: (mine ? T('You are coming.') + ' ' : '') + T('RSVP as {name}.', { name: s.name || '' }) }) : null,
         adults, withKids ? kids : null,
         s.signedIn ? null : el('div', { class: 'fields' }, [el('label', {}, [T('Name'), name]), el('label', {}, [T('Email'), email]), el('label', {}, [T('Phone (optional)'), phone])]),
-        el('label', {}, [T('Note'), note]), el('p', { class: 'btns' }, [go]), m,
+        el('label', {}, [T('Note'), note]), mine ? null : sponsor, el('p', { class: 'btns' }, [go]), m,
         s.signedIn ? null : el('p', { class: 'muted' }, [T('Tip:') + ' ', el('a', { href: P('/account'), text: T('sign in') }), ' ' + T('once and next time RSVP is a single tap.')])]);
       form.addEventListener('submit', function (ev) {
         ev.preventDefault(); go.disabled = true;
         var body = { adults: adults.value(), kids: withKids ? kids.value() : 0, note: note.value, name: name.value, email: email.value, phone: phone.value };
         try { body.ref = sessionStorage.getItem(refKey) || ''; } catch (e) {}
         if (!s.signedIn) store.set('cl_guest', { name: name.value, email: email.value, phone: phone.value });
+        var chosen = sponsorAmt;
         api('POST', '/rsvp/' + slug, body).then(function (r) {
           go.disabled = false;
           if (r.ok) {
+            var giveBtn = chosen ? el('p', { class: 'btns' }, [el('a', { class: 'btn gold', href: giveHref(), text: T('Complete my ${amount} sponsorship', { amount: chosen }) })]) : null;
             if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug });
-            if (s.signedIn) { msg(m, T('Thank you! You are on the list. See you there.'), true); nudge(m.parentNode); invite(r.invite); go.textContent = T('Update my RSVP'); return; }
+            if (s.signedIn) { msg(m, T('Thank you! You are on the list. See you there.'), true); if (giveBtn) m.parentNode.appendChild(giveBtn); nudge(m.parentNode); invite(r.invite); go.textContent = T('Update my RSVP'); return; }
             // A guest: the form gives way to a clear "you're coming", the calendar, then bringing a friend and an account.
             form.hidden = true;
             var done = el('div', { class: 'rsvp-done' }, [el('p', { class: 'hand', text: T('Thank you! You are on the list. See you there.') }),
-              el('p', { class: 'btns' }, [el('a', { class: 'btn gold sm', href: '/events/' + slug + '.ics', text: T('Add to my calendar') })])]);
+              giveBtn, el('p', { class: 'btns' }, [el('a', { class: 'btn gold sm', href: '/events/' + slug + '.ics', text: T('Add to my calendar') })])]);
             ui.appendChild(done); invite(r.invite); nudge(done);
           }
           else msg(m, r.error || T('Something went wrong.'));

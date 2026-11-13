@@ -996,3 +996,12 @@ html { scroll-padding-top: 84px; }
 .ev.has-pic .ev-body { padding: 16px; }
 @media (min-width: 900px) { .ev.has-pic { flex-direction: row; } .ev.has-pic .ev-pic { flex: 0 0 52%; } .ev.has-pic .ev-pic img { height: 100%; aspect-ratio: auto; min-height: 260px; } }
 .ev.has-pic .ev-date { display: none; }
+
+.sponsor-pick { margin: 10px 0 4px; } .sponsor-pick p { margin: 0 0 6px; } .sponsor-pick .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.sponsor-pick .chip { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 8px 16px; font: 600 1rem var(--sans, inherit); cursor: pointer; }
+.sponsor-pick .chip.on { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+/* A small whole-picture version of a flyer ("card" in events.json): never cropped */
+.ev.pic-whole .ev-pic { background: var(--navy); display: grid; place-items: center; }
+.ev.pic-whole .ev-pic img { width: 100%; max-width: 420px; height: auto; aspect-ratio: auto; min-height: 0; object-fit: contain; }
+@media (min-width: 900px) { .ev.pic-whole .ev-pic { flex: 0 0 38%; } }
