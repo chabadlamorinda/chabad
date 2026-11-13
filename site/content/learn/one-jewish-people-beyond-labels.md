@@ -34,7 +34,7 @@ That is why Chabad centers welcome people at every level of experience. You migh
 
 Chabad is a Chassidic movement within Orthodox Judaism, and it follows traditional Jewish law. But you do not need to be Orthodox, observant or "religious" to come. Chabad exists to welcome every Jew. Read [not religious? you are welcome](/learn/not-religious-welcome) and [what Chabad is](/learn/chabad).
 
-Is it comfortable if you are not used to Jewish practice? Visit for a class or a Shabbat meal and see for yourself. Many families in Lafayette, Moraga and Orinda started that way.
+Is it comfortable if you are not used to Jewish practice? Visit for a class or a Shabbat meal and see for yourself.
 
 ## Ahavat Yisrael: love for every Jew
 

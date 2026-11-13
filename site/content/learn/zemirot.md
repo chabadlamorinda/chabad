@@ -31,7 +31,7 @@ The Sages teach that the Shabbat meal should be more than food. Words of Torah a
 
 ## Niggunim: melodies without words
 
-In Chassidic homes, and especially in Chabad, a great deal of the singing is [niggunim](/learn/niggun), melodies sung without words. The Chassidic masters taught that a melody can say what words cannot, reaching the soul directly. Some niggunim are joyful and get the whole table singing; others are slow and thoughtful. Many Chabad families sing niggunim at the Shabbat table more than the printed zemirot, and some of these melodies were taught by the Rebbes themselves.
+In Chassidic homes, and especially in Chabad, a great deal of the singing is [niggunim](/learn/niggun), melodies sung without words. The Chassidic masters taught that a melody can say what words cannot, reaching the soul directly. Some niggunim are joyful and get the whole table singing; others are slow and thoughtful. Many Chabad families also sing niggunim at the Shabbat table, and some of these melodies were taught by the Rebbes themselves.
 
 A wordless niggun is also the easiest way to join in: there is nothing to read, so anyone can hum along from the first time.
 
