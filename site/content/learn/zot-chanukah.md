@@ -17,7 +17,7 @@ Seven stands for the natural world, the seven days of creation. Eight stands for
 
 ## A last chance from the High Holidays
 
-Chassidic and Kabbalistic teaching explains that the judgment of Rosh Hashanah and Yom Kippur is fully sealed only on Zot Chanukah. The days of Chanukah, and Zot Chanukah most of all, are a time when a prayer, a good resolution or an act of kindness carries special weight. Many people use the day to pray for their families and for anyone who needs a blessing.
+Chassidic and Kabbalistic teaching explains that the judgment of Rosh Hashanah and Yom Kippur is sealed by Hoshana Rabbah, but, according to the mystics, it is only "delivered" during Chanukah. The days of Chanukah, and Zot Chanukah most of all, are a time when a prayer, a good resolution or an act of kindness carries special weight. Many people use the day to pray for their families and for anyone who needs a blessing.
 
 ## How to make the day count
 

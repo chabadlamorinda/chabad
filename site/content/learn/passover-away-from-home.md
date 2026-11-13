@@ -14,14 +14,14 @@ Chametz is leavened grain that a Jew may not own on Passover. See [chametz](/lea
 Chabad.org advises:
 
 - **Selling.** Sell all your chametz through a rabbi. If you stay in your own time zone, your local rabbi can handle it: use [the chametz sale form](/forms/sell-chametz) or read [selling your chametz](/learn/selling-your-chametz). If you cross time zones, ask your rabbi, since timing depends on where the owner is located.
-- **Coming home before Passover ends.** Clean and search for chametz the night before you leave.
+- **Coming home before Passover ends.** Clean and search for chametz the night before you leave; ask the Rabbi how to handle your home.
 - **Away for the whole holiday.** Sell all the chametz and skip the home search; the search in your Passover accommodation is enough.
 
 ## 2. Hotels and rentals
 
 - Paying guests must search for chametz in the rooms they rent.
 - Non-paying guests are covered by the host's search.
-- If you rent a room, give the owner a symbolic payment before sunset on the night of the search. Ask the Rabbi about your case.
+- Whether you must search a rented room depends on the arrangement. Ask the Rabbi about your case.
 
 ## 3. Matzah
 

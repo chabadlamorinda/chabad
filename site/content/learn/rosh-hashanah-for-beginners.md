@@ -29,7 +29,7 @@ On the afternoon of the first day (or the second, if the first is Shabbat), we w
 
 ## Candles and greetings
 
-Candles are lit before the holiday begins on both evenings, with the festival blessing and [Shehecheyanu](/learn/shehecheyanu). See [Shabbat and holiday times](/shabbat-times) for Lafayette.
+Candles are lit on both evenings (on the first before sunset, on the second after nightfall from an existing flame), with the festival blessing and [Shehecheyanu](/learn/shehecheyanu). See [Shabbat and holiday times](/shabbat-times) for Lafayette.
 
 The greeting is "Shanah tovah" (a good year) or "Shanah tovah u'metukah" (a good and sweet year); on the first night many add "May you be written and sealed for a good year." See [holiday greetings](/learn/holiday-greetings).
 
@@ -45,7 +45,7 @@ Bring the kids; see [Rosh Hashanah with kids](/learn/rosh-hashanah-with-kids). T
 Yes, fully. Chabad prayer books generally have English on every page, the rabbi explains what is happening, and hearing the shofar needs no reading at all. See [your first time at synagogue](/learn/first-time-at-synagogue).
 
 ### What should I wear?
-Neat and modest, as for a nice occasion. Men wear a kippah (most synagogues keep extras at the door), and many wear something white or new in honor of the day.
+Neat and modest, as for a nice occasion. Men wear a kippah (most synagogues keep extras at the door), and many dress in their holiday best, some in white, in honor of the day.
 
 ### Is Rosh Hashanah one day or two?
 Two days, everywhere in the world, including Israel, each a full holiday with the shofar, meals and services.

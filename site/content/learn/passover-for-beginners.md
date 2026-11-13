@@ -25,7 +25,7 @@ The Seder (meaning "order") has fifteen steps: four cups of wine or grape juice,
 
 ## The rest of the holiday
 
-The first two days and last two days (outside Israel) are festival days with candle lighting, meals and services. In between, we keep eating matzah and no chametz. On the last day, Yizkor is said, and we count the Omer each night until Shavuot. See [counting the Omer](/learn/counting-the-omer). Some Chabad families do not soak matzah in liquid during the holiday; ask the Rabbi what to do in your household.
+The first two days and last two days (outside Israel) are festival days with candle lighting, meals and services. In between, we keep eating matzah and no chametz. On the last day, Yizkor is said, and we count the Omer each night until Shavuot. See [counting the Omer](/learn/counting-the-omer). Chabad custom is not to eat matzah that has become wet (gebrokts, such as matzah balls) until the last day of the holiday; ask the Rabbi what to do in your household.
 
 ## Take the next step
 

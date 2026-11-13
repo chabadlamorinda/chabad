@@ -59,4 +59,4 @@ No. The mitzvah requires hearing the reading directly from the person reading it
 The Fast of Esther, on the day before Purim, recalls how Esther and the Jewish people fasted and prayed before she approached the king. When Purim falls on Sunday, the fast is moved to the Thursday before.
 
 ### What if I miss a word?
-If you missed a word, you can read it yourself from a printed text and catch up to the reader, and you still fulfill the mitzvah. Paying close attention makes this rarely necessary.
+Listen closely, since every word must be heard. If you missed a word, ask the Rabbi what to do; usually it is read quietly from a Megillah while you catch up with the reader. Paying close attention makes this rarely necessary.

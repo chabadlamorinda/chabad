@@ -14,7 +14,7 @@ Pick one thing and keep it every week:
 - **Light [Shabbat candles](/learn/shabbat-candles)** before sunset on Friday.
 - **Say [Kiddush](/learn/kiddush)** over wine or grape juice and eat challah together.
 - **A family Friday-night dinner,** with phones off.
-- **Bless the children** before the meal.
+- **Bless the children** before the meal, if that is your family's custom (ask the Rabbi).
 
 When one ritual feels natural, add another. See [Shabbat for Beginners](/learn/shabbat-for-beginners).
 

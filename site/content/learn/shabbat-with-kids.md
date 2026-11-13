@@ -21,7 +21,7 @@ Children learn from what we do more than from what we say. A weekly Shabbat tabl
 ## Friday night, step by step
 
 1. **Candle lighting.** In Chabad custom, girls light their own candle from about age three, with the blessing, before their mother. It is a beautiful mitzvah for girls to take on. See our [candle lighting guide](/learn/shabbat-candles).
-2. **Bless the children.** Parents place their hands on each child's head:
+2. **Bless the children, if it is your family's custom.** In many communities, though not widely in Chabad (ask the Rabbi), parents place their hands on each child's head:
    - For boys: "Yesimcha Elokim k'Efrayim v'chiMenasheh," "May G-d make you like Ephraim and Manasseh."
    - For girls: "Yesimeich Elokim k'Sarah, Rivkah, Rachel v'Leah," "May G-d make you like Sarah, Rebecca, Rachel and Leah."
    - Then for all: the Priestly Blessing, "May G-d bless you and protect you..."

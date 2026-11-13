@@ -25,7 +25,7 @@ After about three years of fighting, the Maccabees retook Jerusalem. They cleare
 
 ## Yehudit, the heroine of Chanukah
 
-Jewish tradition also remembers a woman. Yehudit, a widow from a besieged town, went to the camp of the enemy general, fed him salty cheese and plenty of wine, and when he fell into a deep sleep, cut off his head. Leaderless, the army fled. Because of her, women have a special place on Chanukah: the custom to rest from work while the candles burn, and the custom of eating dairy foods. See [Chanukah foods](/learn/chanukah-foods) and [Jewish women](/learn/jewish-women).
+Jewish tradition also remembers a woman. Yehudit, a daughter of the Hasmonean family, went to the camp of the enemy general, fed him salty cheese and plenty of wine, and when he fell into a deep sleep, cut off his head. Leaderless, the army fled. Because of her, women have a special place on Chanukah: the custom to rest from work while the candles burn, and the custom of eating dairy foods. See [Chanukah foods](/learn/chanukah-foods) and [Jewish women](/learn/jewish-women).
 
 ## What their courage means today
 

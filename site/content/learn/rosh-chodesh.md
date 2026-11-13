@@ -30,7 +30,7 @@ The [Jewish calendar](/learn/jewish-calendar) guide explains why months vary in 
 
 **Festive meal:** it is a mitzvah to have a nicer meal than usual on Rosh Chodesh.
 
-**No fasting or eulogies:** as a joyful day, fasting is not allowed and eulogies are kept short.
+**No fasting or eulogies:** as a joyful day, fasting is not allowed and eulogies are not given.
 
 ## Blessing the new month
 

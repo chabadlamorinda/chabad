@@ -33,7 +33,7 @@ Those who do not fast should still eat simply and not indulge.
 
 1. **Selichot,** prayers for forgiveness, are added in the morning service. See our [Selichot guide](/learn/selichot).
 2. **Avinu Malkeinu** is said in the morning and afternoon.
-3. **Aneinu** ("Answer us") is added to the Amidah by those fasting.
+3. **Aneinu** ("Answer us") is added to the Amidah: by individuals at Mincha, and by the cantor in his repetition at Shacharit and Mincha.
 4. **The Torah is read** at Shacharit and Mincha, from the passage of Moses praying for forgiveness after the golden calf. A haftarah is read at Mincha.
 
 These public readings need a minyan with enough people fasting.

@@ -33,7 +33,7 @@ The excitement can begin well before the Seder:
 
 - **Crafts.** Make a matzah cover, a pillow for leaning, an Elijah's cup or a decorated Seder plate.
 - **Tell the story ahead of time.** Read the [Exodus story](/learn/exodus-story) at bedtime during the weeks before.
-- **Search for chametz.** On the night before Passover, the family searches the house for chametz by the light of a candle, and many families use a flashlight for safety. Kids love following the light into every corner. Parents often hide ten wrapped pieces of bread for them to find. See [chametz](/learn/chametz).
+- **Search for chametz.** On the night before Passover, the family searches the house for chametz by the light of a candle (ask the Rabbi about using a flashlight for dark corners). Kids love following the light into every corner. Parents often hide ten wrapped pieces of bread for them to find. See [chametz](/learn/chametz).
 - **Practice songs.** Mah Nishtanah, Dayeinu and Chad Gadya are easy and fun to learn together.
 
 ## Toddlers and older kids

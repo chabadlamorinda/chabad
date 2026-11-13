@@ -30,7 +30,7 @@ You do not have to do everything at once. Each mitzvah is valuable on its own.
 4. **Make Kiddush.** Before the meal, say [Kiddush](/learn/kiddush) over wine or grape juice.
 5. **Wash and eat challah.** Wash hands with a cup, then say Hamotzi over two loaves of [challah](/learn/challah).
 6. **Enjoy the meals.** Shabbat has three meals: Friday night, Saturday lunch and a light third meal late Saturday afternoon. Sing, share Torah thoughts and linger.
-7. **Rest.** On Shabbat we refrain from creative work (melachah), such as writing, cooking, driving, using electronics and handling money.
+7. **Rest.** On Shabbat we refrain from creative work (melachah), such as writing, cooking, driving and using electronics. We also do not handle money or tools (see [muktzeh](/learn/muktzeh)).
 8. **Say goodbye with Havdalah.** After nightfall on Saturday, [Havdalah](/learn/havdalah) separates Shabbat from the new week.
 
 ## What is not done on Shabbat

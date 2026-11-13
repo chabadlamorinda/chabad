@@ -27,7 +27,7 @@ In Nissan the whole Jewish people celebrate new life: trees bloom, the days are 
 
 **11 Nissan** is the birthday of the Lubavitcher Rebbe, Rabbi Menachem M. Schneerson, and Chabad communities gather in his honor. Many people take on an extra act of kindness or study that day.
 
-The Talmud also teaches that the three Patriarchs, Abraham, Isaac and Jacob, were born and passed away in Nissan.
+One opinion in the Talmud (Rabbi Yehoshua) is that the three Patriarchs, Abraham, Isaac and Jacob, were born and passed away in Nissan.
 
 ## Why this is the month of redemption
 

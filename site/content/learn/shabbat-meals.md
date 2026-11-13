@@ -17,7 +17,7 @@ Eating on Shabbat is not just physical. Chassidic teaching explains that the Sha
 
 1. **Light the [Shabbat candles](/learn/shabbat-candles)** before sunset.
 2. **Sing Shalom Aleichem**, welcoming the Shabbat angels, and Eishet Chayil, "A Woman of Valor," in honor of the women of the home.
-3. **Bless the children.** Many parents place their hands on each child's head and say the priestly blessing.
+3. **Bless the children.** In many communities parents place their hands on each child's head and bless them. This is not the widespread Chabad custom, so ask the Rabbi about yours.
 4. **Make [Kiddush](/learn/kiddush)** over a cup of wine or grape juice.
 5. **Wash hands** for bread with a cup, and say the blessing al netilat yadayim.
 6. **Say Hamotzi** over two whole loaves of [challah](/learn/challah), recalling the double portion of manna that fell before Shabbat. Dip the challah in salt and share it around.
@@ -30,7 +30,7 @@ The second meal follows the morning prayers. It begins with the daytime Kiddush,
 
 ## The third meal: Seudah Shlishit
 
-The third meal is eaten in the late afternoon, after the afternoon prayers and before sunset. There is no Kiddush, but ideally it starts with washing and Hamotzi over challah. It is often lighter, with quiet, soulful melodies, as Shabbat is ending. Chassidic teaching calls this a time of great spiritual closeness.
+The third meal is eaten in the late afternoon, after the afternoon prayers and before sunset. There is no Kiddush, but it is customary to wash and say Hamotzi over challah. (Chabad custom is to taste some food rather than make a full bread meal; see [Seudah shlishit](/learn/seudah-shlishit).) It is often lighter, with quiet, soulful melodies, as Shabbat is ending. Chassidic teaching calls this a time of great spiritual closeness.
 
 ## Traditional Shabbat foods
 

@@ -15,9 +15,9 @@ Mordechai asked Esther to speak to the king. Esther asked all the Jews to fast a
 
 ## The Megillah reading
 
-We hear the Megillah twice, in the evening and again the next day. It is read from a handwritten parchment scroll, and the main thing is simply to listen to every word, in a language you understand or following along in English.
+We hear the Megillah twice, in the evening and again the next day. It is read from a handwritten parchment scroll, and the main thing is simply to listen to every word, following along in English if you do not read Hebrew.
 
-Whenever Haman's name is read, children (and adults) make noise with noisemakers called graggers, and the reader pauses and then repeats the name so no word is missed. Many synagogues feel like a party, with kids in costume. Bring the children; see [Purim for kids](/learn/purim-for-kids).
+Whenever Haman's name is read, children (and adults) make noise with noisemakers called graggers, and the reader pauses until the noise stops so no word is missed. Many synagogues feel like a party, with kids in costume. Bring the children; see [Purim for kids](/learn/purim-for-kids).
 
 ## The four mitzvahs of Purim
 
@@ -59,7 +59,7 @@ G-d's hand is hidden in the story of Purim, as a person hides behind a mask. Cos
 Hamantaschen, three-cornered filled pastries, are the classic treat, and the festive meal is often a full holiday dinner. Your mishloach manot basket includes two kinds of ready-to-eat food.
 
 ### Why do we make noise when Haman's name is read?
-We blot out the name of Haman, who tried to destroy the Jews. After the noise the name is repeated, so every word is heard.
+We blot out the name of Haman, who tried to destroy the Jews. The reader waits for quiet before continuing, so every word is heard.
 
 ### Do I have to hear the Megillah in Hebrew?
 You must hear every word, so if you do not understand Hebrew, follow along in English. Anyone can come, and the Rabbi can help you.

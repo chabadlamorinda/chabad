@@ -19,7 +19,7 @@ The 3rd of Tammuz is the yahrzeit of the Lubavitcher Rebbe, Rabbi Menachem Mende
 
 ## 12-13 Tammuz: the Previous Rebbe's liberation
 
-The 12th and 13th of Tammuz mark the birthday of Rabbi Yosef Yitzchak Schneersohn, the sixth Chabad Rebbe, born in 1880, and the day of his release in 1927 from a death sentence and imprisonment in Soviet Russia, where he had been arrested for strengthening Jewish life. Chabad counts it as one of three "Festivals of Liberation," together with 3 Tammuz and the 10th of Kislev. On these days Chabad communities omit the Tachanun prayer, and gather for joyful farbrengens (Chassidic gatherings of stories, songs and Torah).
+The 12th and 13th of Tammuz mark the birthday of Rabbi Yosef Yitzchak Schneersohn, the sixth Chabad Rebbe, born in 1880, and the day of his release in 1927 from a death sentence and imprisonment in Soviet Russia, where he had been arrested for strengthening Jewish life. Chabad counts it as one of three "Festivals of Liberation," together with 10 Kislev and 19 Kislev. On these days Chabad communities omit the Tachanun prayer, and gather for joyful farbrengens (Chassidic gatherings of stories, songs and Torah).
 
 ## The 17th of Tammuz: the Three Weeks begin
 

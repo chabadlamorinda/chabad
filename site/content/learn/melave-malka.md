@@ -22,7 +22,7 @@ It is sometimes called the fourth Shabbat meal, after the three [Shabbat meals](
 
 ## Elijah the Prophet
 
-Saturday night is closely connected to Elijah the Prophet, who will announce the coming of [Moshiach](/learn/moshiach). After Havdalah, many sing "Eliyahu Hanavi," praying that he will soon come with good news. Tradition says Elijah records the merits of those who keep Shabbat.
+Saturday night is closely connected to Elijah the Prophet, who will announce the coming of [Moshiach](/learn/moshiach). After Havdalah, many sing "Eliyahu Hanavi," praying that he will soon come with good news.
 
 ## How to hold a Melave Malka, step by step
 

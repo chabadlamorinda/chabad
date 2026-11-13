@@ -11,7 +11,7 @@ Keeping Shabbat in a hotel is very doable with some preparation. Tell the hotel 
 
 Chabad.org recommends contacting the hotel early to flag possible issues, since staff are usually accommodating once they understand. Ask for:
 
-- **A regular key.** Key cards cannot be used on Shabbat. Request a metal key, or arrange for staff to open the door before Shabbat.
+- **A regular key.** Key cards are generally not used on Shabbat. Request a metal key, or arrange for staff to open the door before Shabbat.
 - **A lower floor,** because elevators pose many challenges. If the hotel has a "Shabbat elevator," ask your rabbi about using it.
 - **Continuous hallway lights,** if motion sensors would otherwise turn them on.
 - **A spare key** if your room needs a card in a slot for power.
@@ -52,7 +52,7 @@ Chabad centers around the world welcome Jewish visitors; look up the one at your
 ## Common questions
 
 ### Can I use a key card on Shabbat?
-No. Key cards are not used on Shabbat, so request a regular key or have staff open the door beforehand.
+Generally not. Request a regular key or have staff open the door beforehand, and ask the Rabbi about your hotel's system.
 
 ### Can I use the elevator on Shabbat?
 It is complicated, so request a lower-floor room, and ask your rabbi about a "Shabbat elevator."

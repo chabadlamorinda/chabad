@@ -25,7 +25,7 @@ Pots, pans and dishes used for chametz are also put away for the holiday; the ch
 
 ## Buying it back
 
-After Passover ends, the Rabbi buys the chametz back from the non-Jew on behalf of everyone who sold. Wait a little while after the holiday is over, about an hour, before opening the cabinet; the Rabbi announces when the buyback is done.
+After Passover ends, the Rabbi buys the chametz back from the non-Jew on behalf of everyone who sold. Wait before opening the cabinet; the Rabbi announces when the buyback is done.
 
 ## Do it online
 

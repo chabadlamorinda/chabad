@@ -43,7 +43,7 @@ After eating the five fruits, there is a special after-blessing, *Al Ha'etz*. Gr
 Set a table with the seven species and a few other fruits. Here is a simple plan:
 
 1. Put out dates, figs, pomegranate seeds, grapes and olives, with a little bread or a cookie made of wheat or barley.
-2. Say the blessing on each fruit in the order of the verse: the one mentioned earlier in the verse is eaten first.
+2. Say the blessing on each fruit. There is a traditional order of precedence among the seven species; ask the Rabbi which to eat first.
 3. Say one word of thanks for a land, a season and a year of growth.
 4. Say the after-blessing at the end.
 

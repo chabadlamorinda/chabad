@@ -48,7 +48,7 @@ Ways to bring the Ushpizin into your sukkah:
 - **Invite real guests.** The Zohar teaches that the share of the Ushpizin belongs to the poor. A sukkah without guests is missing something. See our guide to [hachnasat orchim](/learn/hachnasat-orchim).
 - **Share a story** at each meal about that day's guest.
 - **Give tzedakah** before the holiday or on the intermediate days.
-- **Let kids decorate** with pictures or name cards of the seven guests.
+- **Let kids make** pictures or name cards of the seven guests for the table.
 
 ## Common questions
 

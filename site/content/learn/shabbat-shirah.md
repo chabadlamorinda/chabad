@@ -29,7 +29,7 @@ Chabad.org explains that some people feed the birds on Shabbat Shirah, and the c
 
 ## Do it before Shabbat
 
-Feeding animals on Shabbat is generally restricted, and most authorities say it is not proper even on Shabbat Shirah. So we put food out for the birds just before Shabbat begins. Have the children scatter seeds or bread crumbs in the yard, a park or a garden in Lafayette, Moraga or Orinda on Friday afternoon. Some also eat buckwheat or wheat that day. Chabad.org suggests a light and cheerful custom, not a heavy one.
+Feeding animals on Shabbat is generally restricted, and most authorities say it is not proper even on Shabbat Shirah. So we put food out for the birds just before Shabbat begins. Have the children scatter seeds or bread crumbs in the yard, a park or a garden in Lafayette, Moraga or Orinda on Friday afternoon.
 
 See also [caring for animals](/learn/tzaar-baalei-chayim) for the Jewish view of kindness to creatures.
 

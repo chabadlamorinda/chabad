@@ -21,7 +21,7 @@ The Purim story is told in the Book of Esther (the Megillah): in ancient Persia,
 
 **The turn.** That night the king could not sleep, and his chronicles were read to him: they told of Mordechai's service, which had never been rewarded. In the morning the king asked Haman how to honor a man he wished to honor. Haman, assuming it was himself, described a royal parade, and then was told to do all of it for Mordechai. At the second banquet Esther revealed that she was Jewish and that Haman had plotted to destroy her people. Haman was hanged on the gallows he had made.
 
-**The victory.** A royal decree cannot be undone, so a second decree allowed the Jews to defend themselves. On the thirteenth of Adar they were saved, and the day became a day of joy, with feasting, gifts to friends and charity to the poor. Mordechai and Esther wrote the account down and established the holiday for all generations.
+**The victory.** A royal decree cannot be undone, so a second decree allowed the Jews to defend themselves. On the thirteenth of Adar they defended themselves and were saved; on the fourteenth they rested, and that day became a day of joy, with feasting, gifts to friends and charity to the poor. Mordechai and Esther wrote the account down and established the holiday for all generations.
 
 ## The hidden miracle
 

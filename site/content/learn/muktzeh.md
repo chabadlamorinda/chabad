@@ -44,7 +44,7 @@ Muktzeh rules give way in an emergency that may endanger life ([pikuach nefesh](
 A phone is generally treated as muktzeh, so it is not moved or used. Put it away before Shabbat begins. If you need it nearby for a medical reason, ask the Rabbi.
 
 ### Are Shabbat candlesticks muktzeh?
-Yes. Once candles are lit on them, the candlesticks are not moved for the rest of Shabbat, even after the candles go out. Set them up before lighting where they can stay.
+Yes. While the candles burn, the candlesticks are not moved. Whether they may be moved after the candles go out depends on the case, so ask the Rabbi. It is easiest to set them up before lighting where they can stay.
 
 ### Is a pen or pencil muktzeh?
 Yes. A pen is a tool for writing, which is forbidden on Shabbat. It may be moved only for a permitted use or if you need its place; it is easiest to put pens away before Shabbat.
