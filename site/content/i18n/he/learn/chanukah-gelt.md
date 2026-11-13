@@ -2,7 +2,7 @@
 title: דמי חנוכה: למה נותנים כסף בחנוכה
 description: למה נותנים דמי חנוכה, מתי נותנים אותם, איך המנהג קשור לחינוך ולצדקה, ורעיונות לנתינת דמי חנוכה לילדים.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-gifts, dreidel, tzedakah, jewish-parenting
+related: chanukah-menorah, chanukah-shopping-in-lamorinda, chanukah-gifts, dreidel, tzedakah, jewish-parenting
 local: הביאו את הילדים לחגיגות החנוכה שלנו; ראו chabadoflamorinda.com/holidays/chanukah או התקשרו 925-384-7242.
 ---
 דמי חנוכה (חנוכה געלט) הם כסף שנותנים לילדים, ולעיתים קרובות גם למלמדים ולאחרים, בימי חנוכה. "געלט" ביידיש פירושו "כסף", והמנהג בן מאות שנים, הרבה לפני שהיו מטבעות שוקולד.

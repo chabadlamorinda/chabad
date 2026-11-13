@@ -2,7 +2,7 @@
 title: הדלקת חנוכייה בבית בלאפייט, מוראגה ואורינדה: חלון, פתח ובטיחות
 description: איפה להציב את החנוכייה בבית, בטאון האוס או בדירה בלמורינדה, איך לשמור על בטיחות בדצמבר יבש, ואיך להדליק עם הקהילה.
 category: Lamorinda
-related: chanukah-menorah, menorah-oil-and-candles, chanukah-on-shabbat, chanukah-in-lamorinda
+related: chanukah-menorah, chanukah-shopping-in-lamorinda, menorah-oil-and-candles, chanukah-on-shabbat, chanukah-in-lamorinda
 local: צריכים חנוכייה ונרות, או שאלה איפה להדליק? התקשרו לרב לבקובסקי 925-384-7242.
 ---
 את חנוכיית החנוכה מציבים במקום שאורה נראה: בחלון הפונה לרחוב או בפתח הבית, על משטח יציב ועמיד באש, הרחק מכל דבר שנשרף. אם אינכם בטוחים איזה מקום מתאים לבית או לדירה שלכם, שאלו את הרב.

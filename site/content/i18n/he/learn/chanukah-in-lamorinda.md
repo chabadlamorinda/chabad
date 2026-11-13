@@ -2,7 +2,7 @@
 title: חנוכה בלאפייט, מוראגה ואורינדה: הדלקת חנוכייה, ילדים ודרכים לחגוג
 description: חנוכה ליד הבית בלפייט, מוראגה ואורינדה: הדלקת החנוכייה הגדולה ב-6 בדצמבר, חנוכייה לבית, כיף לילדים ואיך מצטרפים.
 category: Lamorinda
-related: chanukah-menorah, public-menorah-lighting, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
+related: chanukah-menorah, chanukah-shopping-in-lamorinda, public-menorah-lighting, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
 local: הדלקת החנוכייה הגדולה, יום ראשון, 6 בדצמבר, 16:00, פארק לפייט פלאזה. בחינם; הרשמה ב-/events/chanukah-grand-menorah-lighting-2026.
 ---
 חנוכה בלפייט, מוראגה ואורינדה נחגג בבית בהדלקת החנוכייה בכל אחד משמונת הלילות, וגם יחד ב**הדלקת החנוכייה הגדולה** של בית חב״ד למורינדה ב**יום ראשון, 6 בדצמבר, בשעה 16:00** בפארק לפייט פלאזה, עם מטר גלט, סופגניות, קקאו חם ומשחק סביבון ענק. הכניסה חופשית. [פרטים והרשמה](/events/chanukah-grand-menorah-lighting-2026).

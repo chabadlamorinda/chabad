@@ -37,9 +37,10 @@ function eventLd(c, base, e) {
 
 function eventCard(e, counts, X) {
   const a = parseLocal(e.start), going = counts && counts[e.slug], t = X.t;
-  return `<article class="ev">
+  return `<article class="ev${e.image ? ' has-pic' : ''}">
+  ${e.image ? `<a class="ev-pic" href="/events/${e.slug}" tabindex="-1"><img src="${esc(e.image)}" alt="${esc(e.title)}" loading="lazy" decoding="async"></a>` : ''}
   <a class="ev-date" href="/events/${e.slug}" aria-hidden="true" tabindex="-1"><span>${esc(X.mon(a.m))}</span><b>${a.d}</b></a>
-  ${artImg(artFor('event', e.holiday || e.category || e.slug, e.title))}
+  ${e.image ? '' : artImg(artFor('event', e.holiday || e.category || e.slug, e.title))}
   <div class="ev-body">
     <h3><a href="/events/${e.slug}">${esc(e.title)}</a></h3>
     <p class="muted">${esc(X.when(e))} · ${esc(e.loc.name)}</p>

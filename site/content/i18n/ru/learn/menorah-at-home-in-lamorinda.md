@@ -2,7 +2,7 @@
 title: Ханукия дома в Лафайете, Мораге и Оринда: окно, дверь и безопасность
 description: Где поставить ханукию в доме, таунхаусе или квартире в Ламоринде, как соблюсти безопасность в сухом декабре и как зажигать вместе с общиной.
 category: Lamorinda
-related: chanukah-menorah, menorah-oil-and-candles, chanukah-on-shabbat, chanukah-in-lamorinda
+related: chanukah-menorah, chanukah-shopping-in-lamorinda, menorah-oil-and-candles, chanukah-on-shabbat, chanukah-in-lamorinda
 local: Нужна ханукия и свечи или вопрос, где зажигать? Позвоните раввину Лабковскому: 925-384-7242.
 ---
 Ханукию ставят там, где виден её свет: у окна, выходящего на улицу, или у входа в дом, на устойчивой негорючей поверхности, вдали от всего, что может загореться. Если вы не уверены, какое место подходит вашему дому или квартире, спросите раввина.

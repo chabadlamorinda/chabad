@@ -2,7 +2,7 @@
 title: Chanukah in Lafayette, Moraga and Orinda: Menorah Lighting, Kids and Ways to Celebrate
 description: Chanukah near you in Lafayette, Moraga and Orinda: the Dec. 6 grand menorah lighting, a menorah for your home, kids' fun and how to take part.
 category: Lamorinda
-related: chanukah-menorah, public-menorah-lighting, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
+related: chanukah-menorah, chanukah-shopping-in-lamorinda, public-menorah-lighting, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
 local: Grand Chanukah Menorah Lighting, Sunday, December 6 at 4:00 PM, Lafayette Plaza Park. Free; sign up at /events/chanukah-grand-menorah-lighting-2026.
 ---
 Chanukah in Lafayette, Moraga and Orinda is celebrated at home by lighting the menorah each night for eight nights, and together at Chabad of Lamorinda's **Grand Chanukah Menorah Lighting** on **Sunday, December 6 at 4:00 PM** at Lafayette Plaza Park, with a Gelt Drop, donuts, hot cocoa and a giant dreidel game. It is free. [See the details and sign up](/events/chanukah-grand-menorah-lighting-2026).

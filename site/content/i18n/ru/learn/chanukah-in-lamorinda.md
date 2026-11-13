@@ -2,7 +2,7 @@
 title: Ханука в Лафайетте, Мораге и Оринде: зажигание ханукии, дети и как отпраздновать
 description: Ханука рядом с вами в Лафайетте, Мораге и Оринде: большое зажигание 6 декабря, ханукия для дома, радость для детей и как присоединиться.
 category: Lamorinda
-related: chanukah-menorah, public-menorah-lighting, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
+related: chanukah-menorah, chanukah-shopping-in-lamorinda, public-menorah-lighting, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
 local: Большое зажигание ханукии, воскресенье, 6 декабря, 16:00, Lafayette Plaza Park. Бесплатно; запись: /events/chanukah-grand-menorah-lighting-2026.
 ---
 Хануку в Лафайетте, Мораге и Оринде отмечают дома, зажигая ханукию каждый из восьми вечеров, а также вместе на **большом зажигании ханукии** Хабада Ламоринды в **воскресенье, 6 декабря, в 16:00** в парке Lafayette Plaza Park: дождь из гелт, пончики, горячее какао и гигантский дрейдл. Бесплатно. [Подробности и запись](/events/chanukah-grand-menorah-lighting-2026).

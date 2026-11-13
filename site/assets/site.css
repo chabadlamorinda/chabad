@@ -988,3 +988,11 @@ html { scroll-padding-top: 84px; }
 .addcal-send .share { margin-top: .45rem; padding: .6rem; border: 1px solid var(--line, #e6dccb); border-radius: 12px; background: var(--card, #fff); }
 .addcal-for { margin: .4rem 0 0; }
 .weekly li .addcal { margin: .45rem 0 .2rem; }
+
+/* Events with a picture: the picture leads, full width */
+.ev.has-pic { flex-direction: column; position: relative; padding: 0; overflow: hidden; gap: 0; grid-column: 1 / -1; }
+.ev.has-pic .ev-pic img { display: block; width: 100%; aspect-ratio: 2.286 / 1; object-fit: cover; }
+.ev.has-pic .ev-date { position: absolute; top: 12px; inset-inline-start: 12px; z-index: 1; }
+.ev.has-pic .ev-body { padding: 16px; }
+@media (min-width: 900px) { .ev.has-pic { flex-direction: row; } .ev.has-pic .ev-pic { flex: 0 0 52%; } .ev.has-pic .ev-pic img { height: 100%; aspect-ratio: auto; min-height: 260px; } }
+.ev.has-pic .ev-date { display: none; }
