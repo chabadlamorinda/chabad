@@ -29,7 +29,7 @@ Chabad.org gives three reasons.
 2. **The harvest.** The story takes place at harvest time, and Shavuot is also called the festival of the harvest.
 3. **Choosing the Torah.** Ruth's sincere conversion parallels the holiday's theme. On Shavuot the whole Jewish people accepted the Torah, so in a sense every Jew is a convert.
 
-It is read on the first night, often as part of the all-night learning ([Shavuot night learning](/learn/shavuot-night-learning)), or in the morning service on the second day. For the holiday as a whole, see [Shavuot for beginners](/learn/shavuot-for-beginners) and [the month of Sivan](/learn/sivan).
+In Chabad custom it is not usually read aloud as part of the synagogue service; it is recited privately, often as part of the all-night learning ([Shavuot night learning](/learn/shavuot-night-learning)). Many other communities read it in synagogue on the second day. For the holiday as a whole, see [Shavuot for beginners](/learn/shavuot-for-beginners) and [the month of Sivan](/learn/sivan).
 
 ## What Ruth teaches us
 
@@ -53,7 +53,7 @@ Ruth was a Moabite woman who married into Naomi's family. According to tradition
 These are Ruth's words to Naomi, declaring that she would join the Jewish people and serve the G-d of Israel. The Sages taught that she accepted the whole Torah.
 
 ### When is the Book of Ruth read?
-It is read on the first night of Shavuot, as part of all-night learning, or in the morning service on the second day. Ask the Rabbi about your community's custom.
+In Chabad custom it is recited privately, often as part of the all-night learning on the first night of Shavuot, and it is not usually read aloud in the synagogue service. Many other communities read it in the morning service on the second day. Ask the Rabbi about your community's custom.
 
 ### Where can I hear the Book of Ruth in Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242 to hear what is planned for Shavuot, and see the [events page](/events).

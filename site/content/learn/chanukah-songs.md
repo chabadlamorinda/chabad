@@ -19,7 +19,7 @@ That is the whole law of the Chanukah lights in one sentence. We do not read by 
 
 *Maoz Tzur* is the song most Jews know by heart. It was written in Europe about 800 years ago; the author signed his name, Mordechai, in the first letters of its verses. The first verse is a prayer: "Mighty Rock of my salvation, it is fitting to praise You; restore my house of prayer, and there we will bring a thanksgiving offering." The verses then walk through Jewish history, one rescue at a time: Egypt, Babylon, Haman's plot in Persia, and finally the Greeks, "who defiled all the oils," until "from the one remaining flask a miracle was made for the roses," a poetic name for the Jewish people. The last verse asks G-d to bring the final redemption.
 
-Many families sing only the first verse; some sing all six. The English "Rock of Ages" is a loose adaptation, not a translation. Chabad custom centers on Haneirot Halalu rather than Maoz Tzur, but the song is beloved everywhere and you are welcome to sing it. During Chanukah the prayers also add *Al Hanissim*, "For the miracles," a short retelling of the story that many sing at the table too; see [Al Hanissim and Hallel](/learn/al-hanissim-and-hallel).
+Many families sing only the first verse; some sing all six. The English "Rock of Ages" is a loose adaptation, not a translation. Haneirot Halalu comes first, right after the lighting, and Maoz Tzur is beloved everywhere; you are welcome to sing it. During Chanukah the prayers also add *Al Hanissim*, "For the miracles," a short retelling of the story that many sing at the table too; see [Al Hanissim and Hallel](/learn/al-hanissim-and-hallel).
 
 ## The children's songs
 

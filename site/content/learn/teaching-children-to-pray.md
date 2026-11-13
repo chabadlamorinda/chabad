@@ -14,7 +14,7 @@ The Talmud says that as soon as a child begins to speak, a parent should teach t
 Three easy beginnings:
 
 - **Modeh Ani** when they wake up: "I thank You, living and eternal King, for returning my soul to me with compassion. Great is Your faithfulness." See [Modeh Ani](/learn/modeh-ani).
-- **A blessing before eating:** *Shehakol* for most snacks, *Hamotzi* for bread. See [blessings](/learn/blessings).
+- **A blessing before eating:** *Shehakol* for drinks and some foods, *Hamotzi* for bread. The blessing depends on the food, so ask the Rabbi. See [blessings](/learn/blessings).
 - **The Shema at bedtime**, with a hand over the eyes. See [the bedtime Shema](/learn/bedtime-shema).
 
 ## Make it part of the day

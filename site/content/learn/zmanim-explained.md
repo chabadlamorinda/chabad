@@ -35,7 +35,7 @@ Shabbat and holidays end at a separate, slightly later time, when a smaller clus
 
 A halachic hour, called a shaah zmanit (שעה זמנית, "proportional hour"), is not 60 minutes. The daylight period from sunrise to sunset is divided into twelve equal parts, and each part is one hour. So in summer, when days are long, the hour is longer than 60 minutes; in winter it is shorter. Chabad.org gives an example: with sunrise at 5:00 am and sunset at 7:30 pm, there are 14.5 hours of daylight, and each halachic hour is 72.5 minutes, so the third hour ends at 8:37:30 am. (Another view counts from dawn to nightfall; this is why a "latest Shema" may differ between calendars.)
 
-This is also why the "latest Shema" time in winter comes earlier in the morning than in summer. It is a good thing to know when you read about [Shabbat in winter](/learn/shabbat-in-winter), when Shabbat begins early.
+This is also why the "latest Shema" time changes every day, so check it each morning. It is a good thing to know when you read about [Shabbat in winter](/learn/shabbat-in-winter), when Shabbat begins early.
 
 ## When does the Jewish day begin?
 

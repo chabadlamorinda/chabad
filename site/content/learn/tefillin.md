@@ -26,7 +26,7 @@ The arm tefillin rests opposite the heart, and the head tefillin sits over the m
 
 - **Jewish men and boys** from bar mitzvah age (13) wear tefillin. In Chabad custom, boys start practicing about two months before their bar mitzvah.
 - **Weekday mornings**, during morning prayers. They may be put on any time during daylight.
-- **Not on Shabbat or major Jewish holidays**, since these days are themselves a "sign" between G-d and the Jewish people.
+- **Not on Shabbat or major Jewish holidays**, since these days are themselves a "sign" between G-d and the Jewish people. In Chabad custom, tefillin are also not worn on Chol HaMoed, the intermediate days of Passover and Sukkot.
 
 ## How to put on tefillin, step by step
 
@@ -51,7 +51,7 @@ Never be shy to ask for help. It quickly becomes easy.
 
 **Translation:** Blessed are You, L-rd our G-d, King of the universe, who has made us holy with His commandments, and commanded us to put on tefillin.
 
-In Chabad custom, this one blessing covers both the arm and head tefillin. Many other communities add a second blessing before the head tefillin.
+In Chabad custom, this one blessing covers both the arm and head tefillin, as long as you do not speak between putting on the two. If you do speak, a second blessing ("al mitzvat tefillin") is said on the head tefillin. Many other communities say a second blessing before the head tefillin every time. If you are unsure, ask the Rabbi.
 
 ## Common questions
 
@@ -59,7 +59,7 @@ In Chabad custom, this one blessing covers both the arm and head tefillin. Many 
 No. Every Jewish man has the mitzvah of tefillin, whatever his background. Putting them on even once is a great mitzvah.
 
 ### What is the minimum I should say while wearing tefillin?
-At least the first paragraph of the Shema. If you have more time, say the full morning prayers. See our guide to [prayer](/learn/prayer).
+Ideally the Shema, and the full morning prayers if you have time. If you are short on time, ask the Rabbi what is best. See our guide to [prayer](/learn/prayer).
 
 ### How often should tefillin be checked?
 Tefillin can wear out or be damaged without you noticing. It is good practice to have them checked by a qualified scribe periodically, and if the boxes get damaged or the straps crack, check right away.

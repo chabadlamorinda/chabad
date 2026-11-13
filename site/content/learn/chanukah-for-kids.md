@@ -9,7 +9,7 @@ Chanukah is made for children: lights, songs, games, gelt and doughnuts, eight n
 
 ## A menorah for every child
 
-In Chabad custom, every boy, even a young child, lights his own menorah, and girls are included in the family lighting: they can stand beside the menorah, say Amen, sing and help set up the candles. Children who take part feel the mitzvah is theirs. Little ones can hold the shamash with a parent's hand over theirs. See [how to light the menorah](/learn/chanukah-menorah).
+Children are encouraged to light their own menorah, even young ones, and every child can take part in the family lighting: stand beside the menorah, say Amen, sing and help set up the candles. (Customs vary on who lights their own; ask the Rabbi.) Children who take part feel the mitzvah is theirs. Little ones can hold the shamash with a parent's hand over theirs. See [how to light the menorah](/learn/chanukah-menorah).
 
 ## Tell the story simply
 
@@ -23,7 +23,7 @@ In Chabad custom, every boy, even a young child, lights his own menorah, and gir
 4. **Night 4: Gelt and tzedakah.** Give Chanukah gelt and let each child put some in the [pushka](/learn/pushka).
 5. **Night 5: Craft night.** Make a menorah from clay or nuts and bolts, or draw the Maccabees.
 6. **Night 6: Mitzvah night.** Bring treats to a neighbor or call a grandparent to light together on video.
-7. **Night 7: Story night.** Read a Chanukah book by the light of the candles (but not using the light; the Chanukah lights are only for looking at).
+7. **Night 7: Story night.** Read a Chanukah book together while the candles burn (turn on another lamp to read by, because the Chanukah lights are only for looking at).
 8. **Night 8: Party night.** Invite friends to light with you, with every menorah in the window.
 
 ## Shabbat during Chanukah
@@ -40,7 +40,7 @@ Place menorahs on a stable, fireproof surface away from curtains, never leave bu
 As soon as they can do it safely with an adult's help; many boys light from age three or four. Parents decide what is safe.
 
 ### Do girls light their own menorah too?
-In Chabad custom, women and girls are included in the household lighting, and a woman living on her own lights her own menorah. Customs vary between families, so ask the Rabbi.
+Women and girls are obligated in the Chanukah lights too: they light their own or take part in the household lighting, and a woman living on her own lights her own menorah. Customs vary between families, so ask the Rabbi.
 
 ### Do we have to give presents every night?
 No. Gelt is the traditional custom. Many families keep presents small and focus on light, games and time together.

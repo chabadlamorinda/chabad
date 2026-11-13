@@ -33,7 +33,7 @@ Many people stay up the first night of Shavuot learning Torah. A Midrash says th
 
 ## Candles and Yizkor
 
-We light candles before the holiday begins, from an existing flame. On the second day, Yizkor is said; see [Yizkor](/learn/yizkor). Some also read the Book of Ruth, a story about a woman who chose the Torah and the Jewish people of her own free will.
+We light candles before the holiday begins on the first night, and after nightfall on the second night from an existing flame. On the second day, Yizkor is said; see [Yizkor](/learn/yizkor). Some also read the Book of Ruth, a story about a woman who chose the Torah and the Jewish people of her own free will.
 
 ## Take the next step
 

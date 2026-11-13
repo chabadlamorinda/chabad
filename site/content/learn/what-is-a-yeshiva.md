@@ -11,7 +11,7 @@ A yeshiva (יְשִׁיבָה, "sitting") is a place where Jews gather to study 
 
 The word comes from the Hebrew for "sitting," because students sit and learn. Jewish tradition traces study academies back to the time before the Torah was given, and after Sinai they were the way the Torah and the Oral Tradition were passed on. Through the centuries the great centers moved, from the land of Israel to Babylonia, then to Spain, France and Germany, and later to Eastern Europe.
 
-In 1896 Rabbi Shalom DovBer Schneersohn, the fifth Chabad Rebbe, opened a yeshiva in Lubavitch that joined Talmud and Jewish law with daily study of Chassidic teachings. That model inspired Chabad yeshivas around the world, including an underground network in the Soviet Union.
+In 1897 Rabbi Shalom DovBer Schneersohn, the fifth Chabad Rebbe, opened a yeshiva in Lubavitch that joined Talmud and Jewish law with daily study of Chassidic teachings. That model inspired Chabad yeshivas around the world, including an underground network in the Soviet Union.
 
 ## Chavruta: learning in pairs
 

@@ -18,7 +18,7 @@ There are several reasons for this beloved custom:
 
 ## When gelt is given
 
-Chabad custom, recorded in the book of Chabad customs, is to give Chanukah gelt on the fourth or fifth night. The Rebbe encouraged giving gelt every night of Chanukah, and on Friday giving a double portion for Shabbat, when money is not handled.
+Chabad custom, recorded in the book of Chabad customs, is to give Chanukah gelt on the fourth or fifth night. The Rebbe encouraged giving gelt every night of Chanukah, with a larger amount on the fourth or fifth night. Money is not handled on Shabbat, so some give the Shabbat portion on Friday before candle lighting; ask the Rabbi.
 
 Many families give gelt right after lighting the menorah, while the candles are burning.
 
@@ -52,4 +52,4 @@ Gelt is the traditional custom. Presents became common later. Many families keep
 Traditionally, gelt was given to children and to teachers. Many grandparents give it to grown grandchildren too, and it is always a nice gesture to support Torah teachers at Chanukah time.
 
 ### Can I give gelt on Shabbat?
-No. Money is not handled on Shabbat, which is why the Rebbe suggested giving a double portion on Friday before candle lighting.
+No. Money is not handled on Shabbat, which is why some give the Shabbat portion on Friday before candle lighting. Ask the Rabbi.

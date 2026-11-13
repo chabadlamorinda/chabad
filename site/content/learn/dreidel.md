@@ -53,7 +53,7 @@ Chanukah gelt, coins given to children, goes hand in hand with the dreidel. It i
 Families often play with coins or chocolate as a lighthearted game. Many prefer to use candy or nuts, especially with children, to keep it about fun and not gambling.
 
 ### When do we play dreidel?
-Traditionally after lighting the [menorah](/learn/chanukah-menorah), while the candles burn. Since we do not do work or use the lights during the first half hour, games like dreidel are a fun way to stay near the menorah.
+Traditionally after lighting the [menorah](/learn/chanukah-menorah), while the candles burn. כיוון שלא עושים מלאכה ולא משתמשים באור הנרות בחצי השעה הראשונה, משחקים like dreidel are a fun way to stay near the menorah.
 
 ### What do the Yiddish words have to do with the Hebrew letters?
 The Hebrew letters stand for "A great miracle happened there." The game rules use Yiddish words that begin with the same letters: nisht, gantz, halb and shtel. It is a clever double meaning.

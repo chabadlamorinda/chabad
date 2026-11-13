@@ -61,7 +61,7 @@ Blessed are You, L-rd our G-d, King of the universe, who performed miracles for 
 No. The Chanukah lights are only for looking at, not for using. That is one reason for the shamash, so any benefit comes from it.
 
 ### Who should light?
-Every Jew should light or be included in someone's lighting. In Chabad custom, each boy and man lights his own menorah, and women and girls are included in the household lighting. A woman living on her own lights her own menorah. Customs vary, so ask the Rabbi.
+Every Jew should light or be included in someone's lighting. Both men and women are obligated to light, or to take part in the household lighting, and children are encouraged to light their own menorah. Customs differ on whether each person lights their own, so ask the Rabbi. A woman living on her own lights her own menorah.
 
 ### What if I am traveling or staying with family?
 Light where you are sleeping that night. A guest can contribute toward the host's oil or candles and be included, or light their own. Ask the Rabbi for your situation.

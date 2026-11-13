@@ -40,4 +40,4 @@ Any safe arrangement of candles in a row, at the same height and far enough apar
 Lighting before nightfall is a question of details; sometimes it is allowed from a certain point in the late afternoon with enough fuel to burn into the night. Ask the Rabbi for your case. Lighting late at night when you return is usually the better option.
 
 ### Does an electric menorah count?
-Electric lights do not fulfill the mitzvah, so the blessings are not said over them, but where real flames are forbidden they still proclaim the miracle. You can also light [tonight's candles online](/menorah) with the blessings.
+Electric lights do not fulfill the mitzvah, so the blessings are not said over them, but where real flames are forbidden they still proclaim the miracle. You can also see [tonight's candles online](/menorah), but this does not replace lighting a real menorah.

@@ -25,7 +25,7 @@ Leah was Jacob's first wife and was not loved as much as Rachel, so she lived wi
 
 ## Why four?
 
-The Talmud (Berachot 16b) speaks of three patriarchs and four matriarchs. Jacob also had children with Bilhah and Zilpah, so why not six? The answer is that the title depends on spiritual role more than on bloodline: the four great women who formed the nation's spiritual base. The patriarchs and matriarchs, except Rachel, are buried together in the Cave of the Patriarchs in Hebron.
+The Talmud (Berachot 16b) speaks of three patriarchs and four matriarchs. Jacob also had children with Bilhah and Zilpah, so why not six? One explanation is that the title depends on spiritual role more than on bloodline: the four great women who formed the nation's spiritual base. The patriarchs and matriarchs, except Rachel, are buried together in the Cave of the Patriarchs in Hebron.
 
 ## How women carry on their legacy
 
@@ -37,7 +37,7 @@ Each mother gave a gift that is still passed on: Sarah's faith and Shabbat candl
 The four matriarchs are Sarah, Rebecca, Rachel and Leah, the wives of Abraham, Isaac and Jacob and the mothers of the Jewish people.
 
 ### Why are there only four matriarchs?
-The Talmud counts four because they were the women who formed the spiritual base of the nation, even though Jacob's other wives, Bilhah and Zilpah, also had children.
+The Talmud counts four. One explanation is that they were the women who formed the spiritual base of the nation, even though Jacob's other wives, Bilhah and Zilpah, also had children.
 
 ### Where are the matriarchs buried?
 Sarah, Rebecca and Leah are buried in the Cave of the Patriarchs in Hebron. Rachel was buried on the road near Bethlehem.

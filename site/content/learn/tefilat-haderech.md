@@ -34,7 +34,6 @@ Since rules about distance and timing have details, ask the Rabbi if you are uns
 ## How to say it
 
 - Stand if you can do so safely, for example when walking or on a train. If you are driving or seated on a plane, you may say it sitting.
-- Many have the custom to say it together with another blessing, such as the one after using the restroom, so it closes a blessing properly.
 - Say it with feeling. You are asking G-d to watch over you and everyone on the road.
 
 ## Tzedakah for the road

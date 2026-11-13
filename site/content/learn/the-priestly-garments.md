@@ -14,7 +14,7 @@ According to Chabad.org's summary, every ordinary priest wore these four garment
 1. **Ketonet (כֻּתֹּנֶת), a tunic.** A long linen shirt reaching to the heels.
 2. **Avnet (אַבְנֵט), a sash.** A long sash wound over the heart, made of linen woven with wool in blue, purple and red.
 3. **Migbaat (מִגְבַּעַת), a turban.** A linen headdress. The sources describe the turban a little differently for the High Priest and the other Kohanim, and the names differ, so we keep it simple here.
-4. **Michnasayim (מִכְנְסֵי), trousers.** Linen trousers, knee-length.
+4. **Michnasayim, trousers.** Linen trousers for modesty, covering from the waist down to the thighs (Exodus 28:42).
 
 
 ## The four extra garments of the High Priest

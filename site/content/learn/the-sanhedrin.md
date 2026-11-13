@@ -21,7 +21,7 @@ The Sanhedrin began in the Lishkat HaGazit, the Chamber of Hewn Stone, next to a
 
 ## The smaller courts
 
-The Great Sanhedrin was the top of a whole system. Chabad.org describes a court of 23 judges in Israel's larger cities, authorized to rule on money cases and on more serious matters, and a local court of three for smaller communities. The idea of smaller and larger courts goes back to Jethro, Moses' father-in-law. He saw Moses taking the whole burden of justice on himself and suggested a system of lower and higher courts. Chabad.org adds that Moses knew his own system could not last, and so he accepted the advice.
+The Great Sanhedrin was the top of a whole system. Chabad.org describes a court of 23 judges in Israel's larger cities, authorized to rule on the most serious cases, and a local court of three for money cases and everyday matters in smaller communities. The idea of smaller and larger courts goes back to Jethro, Moses' father-in-law. He saw Moses taking the whole burden of justice on himself and suggested a system of lower and higher courts. Chabad.org adds that Moses knew his own system could not last, and so he accepted the advice.
 
 ## The Sanhedrin travels
 
@@ -32,7 +32,7 @@ In the time of Roman rule, the Sanhedrin was forced to leave its home. Chabad.or
 3. From Jerusalem to Yavneh, after the Temple was destroyed.
 4. From Yavneh to Usha.
 5. Back to Yavneh.
-6. To Usha again, after the Roman emperor Trajan's persecutions.
+6. To Usha again, after Roman persecutions.
 7. From Usha to Shefaram.
 8. To Beit She'arim.
 9. To Tzippori.
