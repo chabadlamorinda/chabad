@@ -1,9 +1,9 @@
 ---
 title: Public Menorah Lightings: Why Chanukah Goes Into the Town Square
-description: What a public menorah lighting is, why Chabad lights giant menorahs, what to expect and how to bring the light home. Call us to hear what is planned.
+description: What a public menorah lighting is, why Chabad lights giant menorahs and what to expect. Lafayette's is Sunday, Dec. 6 at 4:00 PM, free.
 category: Shabbat & holidays
 related: chanukah-in-lamorinda, the-rebbe, mitzvah-tanks, chanukah-menorah, chanukah-story
-local: Call Rabbi Labkowski at 925-384-7242 to hear what is planned for Chanukah, or see /events.
+local: The Grand Chanukah Menorah Lighting is Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, free for everyone. Sign up at /events/chanukah-grand-menorah-lighting-2026.
 ---
 A public menorah lighting is a community event where a large Chanukah menorah is lit outdoors, with blessings and songs, so that everyone can see the light. It fulfills the idea of publicizing the miracle of Chanukah, and it is open to everyone.
 
@@ -31,7 +31,7 @@ Chabad.org is clear that attending a public lighting does not replace lighting a
 
 ## Public lighting in Lafayette, Moraga and Orinda
 
-Chabad of Lamorinda in Lafayette marks Chanukah each year for families from Lafayette, Moraga and Orinda. We have not yet confirmed the details of this year's grand menorah lighting, so please call Rabbi Labkowski at 925-384-7242 to hear what is planned. Read more at [Chanukah in Lafayette, Moraga and Orinda](/learn/chanukah-in-lamorinda) and on our [Chanukah page](/holidays/chanukah).
+Chabad of Lamorinda invites Lafayette, Moraga and Orinda to the **Grand Chanukah Menorah Lighting: Light Up Lafayette!** on **Sunday, December 6 at 4:00 PM** at Lafayette Plaza Park (corner of Mount Diablo Blvd and Moraga Rd, Downtown Lafayette). Expect a Gelt Drop, Decorate Your Own Donut, a Giant Dreidel Game, LED light wands for kids, and free hot cocoa, donuts and gelt, with the participation of local dignitaries. It is free and open to everyone. [See the details and sign up](/events/chanukah-grand-menorah-lighting-2026). Read more at [Chanukah in Lafayette, Moraga and Orinda](/learn/chanukah-in-lamorinda) and on our [Chanukah page](/holidays/chanukah).
 
 ## Common questions
 
@@ -48,10 +48,10 @@ Yes. Chabad.org says it is open to all, and children are welcome. You do not nee
 No. Chabad.org says you should still light a menorah at home with the usual blessings.
 
 ### Is there a menorah lighting near me in Lafayette, Moraga or Orinda?
-Call Chabad of Lamorinda at 925-384-7242 to hear what is planned this year, or check the [events](/events) page.
+The Grand Chanukah Menorah Lighting is Sunday, December 6 at 4:00 PM at Lafayette Plaza Park. [Sign up here](/events/chanukah-grand-menorah-lighting-2026) so we can plan for you, or call 925-384-7242.
 
 ## Take the next step
 
-- Call 925-384-7242 and ask what is planned, then bring a neighbor.
+- [Sign up for the Dec. 6 lighting](/events/chanukah-grand-menorah-lighting-2026) and bring a neighbor.
 - Read how to light at home in the [night-by-night guide](/learn/chanukah-night-by-night).
 - Learn about [the Rebbe](/learn/the-rebbe) and the idea behind the public menorah.

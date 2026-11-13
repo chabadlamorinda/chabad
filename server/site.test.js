@@ -27,6 +27,7 @@ test.before(async () => {
   const d = new Date(Date.now() + 40 * 864e5); d.setUTCDate(d.getUTCDate() + ((5 - d.getUTCDay() + 7) % 7)); // a Friday about six weeks ahead
   const day = d.toISOString().slice(0, 10); EVENT_START = day + 'T17:45';
   ev.start = EVENT_START; if (ev.end) ev.end = day + ev.end.slice(10);
+  evs.push({ slug: 'test-hidden-draft-2099', status: 'draft', title: 'Hidden draft', start: '2099-01-01T10:00', category: 'community', summary: 'A draft that must stay hidden.', details: 'Hidden.', rsvp: {} }); // a draft stays out of every page, the sitemap, RSVPs and the chat
   fs.writeFileSync(evPath, JSON.stringify(evs, null, 2));
   pg = await startPg(); store = createStore(pg.url); await store.migrate();
   mails = []; fbPosts = [];
@@ -128,7 +129,7 @@ test('home and key pages render with structured data and security headers', asyn
   }
   assert.match((await c.call('GET', '/tools/hebrew-date?d=2026-10-25')).text, /14th of Cheshvan, 5787/);
   // drafts stay hidden
-  assert.equal((await c.call('GET', '/events/chanukah-grand-menorah-lighting-2026')).status, 404);
+  assert.equal((await c.call('GET', '/events/test-hidden-draft-2099')).status, 404);
   const nf = await c.call('GET', '/no-such-page'); assert.equal(nf.status, 404); assert.match(nf.text, /could not find that page/);
 });
 test('the app itself stays reachable', async () => {
@@ -141,7 +142,7 @@ test('SEO and AI files', async () => {
   const c = client();
   const robots = await c.call('GET', '/robots.txt');
   assert.match(robots.text, /User-agent: GPTBot\nAllow: \//); assert.match(robots.text, /User-agent: ClaudeBot/); assert.match(robots.text, /Sitemap: http:\/\/site\.test\/sitemap\.xml/);
-  const sm = await c.call('GET', '/sitemap.xml'); assert.match(sm.text, /<loc>http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.ok(!sm.text.includes('grand-menorah'));
+  const sm = await c.call('GET', '/sitemap.xml'); assert.match(sm.text, /<loc>http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.ok(!sm.text.includes('hidden-draft'));
   const llms = await c.call('GET', '/llms.txt'); assert.match(llms.text, /^# Chabad of Lamorinda/); assert.match(llms.text, /3477 Golden Gate Way/);
   const ics = await c.call('GET', '/events.ics'); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.ok(ics.text.includes('DTSTART;TZID=America/Los_Angeles:' + EVENT_START.replace(/[-:]/g, '') + '00'));
   assert.match((await c.call('GET', '/feed.xml')).text, /<rss/);
@@ -210,7 +211,7 @@ test('RSVP: one tap for members (family counted), guests by form, capacity, upda
   const other = await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Someone', email: 'sara@example.com' });
   assert.equal(other.status, 409, "a guest cannot change someone else's RSVP");
   assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Guest', email: 'guest@x.co' })).json.going, 5);
-  assert.equal((await g.call('POST', '/api/site/rsvp/chanukah-grand-menorah-lighting-2026', { adults: 1, name: 'G', email: 'g@x.co' })).status, 404, 'drafts take no RSVPs');
+  assert.equal((await g.call('POST', '/api/site/rsvp/test-hidden-draft-2099', { adults: 1, name: 'G', email: 'g@x.co' })).status, 404, 'drafts take no RSVPs');
   assert.deepEqual((await c.call('GET', '/api/site/me')).json.rsvps, [{ event: EVENT, adults: 2, kids: 2 }]);
   assert.equal((await c.call('DELETE', '/api/site/rsvp/' + EVENT)).status, 200);
   assert.equal((await g.call('GET', '/api/site/rsvp/' + EVENT)).json.going, 1);
@@ -705,7 +706,7 @@ test('chat: answers from the site with Claude, in the visitor language, and logs
   await r2.text();
   const sent = JSON.stringify(chatCalls[chatCalls.length - 1]);
   assert.match(sent, /\/learn\/mezuzah/, 'knows the page being read');
-  for (const secret of ['@example.com', 'chanukah-grand-menorah-lighting-2026', 'verified_email', 'password', SECRET]) assert.ok(!sent.includes(secret), 'chat must not see ' + secret);
+  for (const secret of ['@example.com', 'test-hidden-draft-2099', 'verified_email', 'password', SECRET]) assert.ok(!sent.includes(secret), 'chat must not see ' + secret);
   assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' })).status, 403);
   assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: [] }) })).status, 400);
   const a = await admin();
