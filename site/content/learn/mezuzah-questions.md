@@ -9,7 +9,7 @@ Yes, renters put up a mezuzah too: outside Israel the obligation begins after 30
 
 ## Do I need a mezuzah if I rent?
 
-A mezuzah (מְזוּזָה) is the handwritten scroll on the doorpost that marks a Jewish home (see [mezuzah](/learn/mezuzah)). The mitzvah applies to anyone who lives in a home, whether they own it or rent it. Outside Israel, the Sages say a renter becomes obligated after 30 days, since the stay might still be temporary. Chabad custom, however, is to affix mezuzahs as soon as you move in, and the Rebbe encouraged doing it right away. Ask the Rabbi about saying the blessing, which is usually said on the first mezuzah if you intend to stay.
+A mezuzah (מְזוּזָה) is the handwritten scroll on the doorpost that marks a Jewish home (see [mezuzah](/learn/mezuzah)). The mitzvah applies to anyone who lives in a home, whether they own it or rent it. Outside Israel, the Sages say a renter becomes obligated after 30 days, since the stay might still be temporary. Chabad custom, however, is to affix mezuzahs as soon as you move in, and the Rebbe encouraged doing it right away. The usual Chabad practice is to put them up right away without a blessing; after 30 days one mezuzah is taken down and put back with the blessing. Ask the Rabbi about the blessing for your home.
 
 If you rent in Lafayette, Moraga, Orinda or anywhere in the East Bay, your landlord may have rules about nails or screws. Strong double-sided tape is a fine solution, and a landlord's concern should not stop you. See [choosing a mezuzah](/learn/choosing-a-mezuzah) and [moving to Lamorinda](/learn/moving-to-lamorinda).
 

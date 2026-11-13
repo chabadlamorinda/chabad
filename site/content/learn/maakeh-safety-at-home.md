@@ -11,7 +11,7 @@ For families in Lafayette, Moraga and Orinda, with hillside decks, balconies and
 
 ## What the Torah commands
 
-The verse is in the Torah portion Ki Teitzei. In Biblical times roofs were flat and people used them as living space, so a railing prevented a fatal fall. As Chabad.org explains, the obligation applies not only when you build a home but also when you buy or take over one without a railing. The Sifri says it begins as soon as the house becomes yours, even before you move in. The mitzvah is about responsibility: the people who live in a home are accountable for removing the danger of serious accidents.
+The verse is in the Torah portion Ki Teitzei. In Biblical times roofs were flat and people used them as living space, so a railing prevented a fatal fall. As Chabad.org explains, the obligation applies not only when you build a home but also when you buy or take over one without a railing. The mitzvah is about responsibility: the people who live in a home are accountable for removing the danger of serious accidents.
 
 The Torah calls the person who falls "the one who falls," even before anyone has fallen. The Sages explain that someone may have been destined to fall, but it is a merit to bring good through a person, and a debt to avoid bringing harm through one. We do not blame fate; we do what we can.
 

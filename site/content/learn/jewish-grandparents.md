@@ -5,7 +5,7 @@ category: Jewish home
 related: honoring-parents, empty-nesters-in-lamorinda, honoring-the-elderly, grandparenting-from-afar, retirement-jewish-view, jewish-parenting, ethical-will
 local: Bring your grandchildren to a holiday or family event at Chabad of Lamorinda. See chabadoflamorinda.com/events or call 925-384-7242.
 ---
-Jewish grandparents hold a special place in Jewish life as the living link between generations, passing on stories, values and traditions with a warmth only they can give. Jewish law also asks grandchildren to honor their grandparents, much as they honor their parents.
+Jewish grandparents hold a special place in Jewish life as the living link between generations, passing on stories, values and traditions with a warmth only they can give. Jewish tradition also teaches grandchildren to honor their grandparents, though the duty toward parents comes first.
 
 ## A link in the chain
 
@@ -15,7 +15,7 @@ Proverbs puts it beautifully: "Grandchildren are the crown of the elders" (17:6)
 
 ## Honoring grandparents
 
-Jewish law teaches that grandchildren should show respect to their grandparents, though the primary duty is to parents. Parents should also model this, since children learn how to treat their own parents by watching how parents treat theirs. See [honoring parents](/learn/honoring-parents).
+Jewish tradition teaches that grandchildren should show respect to their grandparents, though the primary duty is to parents. Parents should also model this, since children learn how to treat their own parents by watching how parents treat theirs. See [honoring parents](/learn/honoring-parents).
 
 Ways to honor grandparents:
 
@@ -48,7 +48,7 @@ Many grandparents today have grandchildren growing up with different levels of o
 ## Common questions
 
 ### Am I obligated to honor my grandparents?
-Yes. Jewish law teaches that one should honor grandparents, though the obligation toward parents comes first. In practice, warmth, respect and regular contact are what matter most.
+Yes. Jewish tradition teaches that one should honor grandparents, though the obligation toward parents comes first; ask the Rabbi for details. In practice, warmth, respect and regular contact are what matter most.
 
 ### How can I give my grandchildren a Jewish identity if their parents are not observant?
 Lead with love and respect for the parents' choices. Share holidays, stories and small mitzvahs when invited. If you have questions, the Rabbi is happy to talk with you.
