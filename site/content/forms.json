@@ -855,6 +855,7 @@
         "label": "When are you available?",
         "type": "textarea"
       }
-    ]
+    ],
+    "giftFund": "chesed"
   }
 ]

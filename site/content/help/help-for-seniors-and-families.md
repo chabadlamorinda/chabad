@@ -10,7 +10,7 @@ If you, your parent or a neighbor is alone, unwell, getting older or having a ha
 
 ## Ask for help
 
-Tell us what is going on and we will see how to help. It is private: only the Rabbi and the Rebbetzin see it. You can ask for yourself or for someone else.
+Whatever you need, we will do our best to give it, to anyone who needs it. Tell us what is going on. It is private: only the Rabbi and the Rebbetzin see it. You can ask for yourself or for someone else.
 
 - A visit at home, in the hospital or in a care home
 - A phone call or friendly company
@@ -34,11 +34,11 @@ Visiting the sick, bikur cholim, is a great mitzvah. The Rabbi and Rebbetzin vis
 
 ## Financial help
 
-Hard times can happen to anyone. If you are struggling, whether it is food, a bill, tuition or an emergency, tell us. Nothing is too small to ask about, and it stays between you and us.
+We offer whatever is needed, to whoever needs it. Hard times can happen to anyone. If you are struggling, whether it is food, a bill, tuition or an emergency, tell us. Nothing is too small to ask about, and it stays between you and us.
 
 ## Volunteer
 
-Visit a senior, call someone who is alone, drive to an appointment or deliver a Shabbat package. An hour makes a difference.
+Visit a senior, call someone who is alone, drive to an appointment or deliver a Shabbat package. An hour makes a difference. You can also add a gift to the Chesed Fund when you sign up.
 
 <p class="btns"><a class="btn gold" href="/forms/volunteer">Sign up to volunteer</a></p>
 
@@ -46,7 +46,7 @@ More ideas in [volunteering in Lamorinda](/learn/volunteering-in-lamorinda) and 
 
 ## Sponsor visits and help for those in need
 
-Your gift to the Chesed Fund goes to visiting seniors and the sick and to helping families in need. Give any amount, once or monthly, or in honor or in memory of someone.
+Your gift to the Chesed Fund goes to visiting seniors and the sick and to helping families in need. Give any amount, once or monthly, or in honor or in memory of someone. Sponsors can choose to sponsor a visit, a Shabbat package, a ride or a family's need.
 
 <p class="btns"><a class="btn gold" href="/donate?fund=chesed#give">Sponsor visits and help</a></p>
 

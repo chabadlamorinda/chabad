@@ -854,6 +854,7 @@
         "label": "מתי אתם פנויים?",
         "type": "textarea"
       }
-    ]
+    ],
+    "giftFund": "chesed"
   }
 ]

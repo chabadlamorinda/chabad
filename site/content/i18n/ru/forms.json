@@ -854,6 +854,7 @@
         "label": "Когда вы свободны?",
         "type": "textarea"
       }
-    ]
+    ],
+    "giftFund": "chesed"
   }
 ]

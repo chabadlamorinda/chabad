@@ -66,7 +66,7 @@ function formHtml(X, f, pre = {}) {
       default: return lab(`<input${v(x.id)} type="${x.type === 'email' ? 'email' : x.type === 'tel' ? 'tel' : x.type === 'date' ? 'date' : 'text'}" name="${x.id}"${x.id === 'name' ? ' autocomplete="name"' : x.type === 'email' ? ' autocomplete="email"' : x.type === 'tel' ? ' autocomplete="tel"' : ''}${req_}>`);
     }
   };
-  return `<form class="card tool" data-form="${f.id}"${f.noGift || (f.payment && !f.payment.optional) ? '' : ` data-gift="${esc((f.payment && f.payment.fund) || 'general')}" data-gift-title="${esc(f.title)}"`}>
+  return `<form class="card tool" data-form="${f.id}"${f.noGift || (f.payment && !f.payment.optional) ? '' : ` data-gift="${esc(f.giftFund || (f.payment && f.payment.fund) || 'general')}" data-gift-title="${esc(f.title)}"`}>
 ${f.fields.map(input).join('\n')}
 <button class="btn gold" type="submit">${esc(f.button || t('Send'))}</button><p class="msg" hidden></p>
 <p class="pay-next" hidden><a class="btn gold" href="#">${esc(f.payment ? f.payment.label : '')}</a></p>
