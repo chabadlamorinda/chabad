@@ -46,3 +46,6 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 * Chanukah: date, time and place of the Grand Menorah Lighting, and any party, kids' event or Shabbat Chanukah dinner.
 * Yud Tes Kislev farbrengen (you said yes): what day, time and place, and is there an RSVP?
 * The rest of the open questions are in `store/content-to-confirm.md`.
+
+## Record the Chanukah blessings (audio)
+The guide /learn/chanukah-menorah plays Chabad.org's video and links to its audio of the blessings. To have your own voice on the page: record about a minute on your phone (the three blessings, Haneirot Halalu, Maoz Tzur), send it to Claude in the chat, and it goes on the page as a play button (`audio:` line in the guide).

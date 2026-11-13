@@ -1005,3 +1005,5 @@ html { scroll-padding-top: 84px; }
 .ev.pic-whole .ev-pic { background: var(--navy); display: grid; place-items: center; }
 .ev.pic-whole .ev-pic img { width: 100%; max-width: 420px; height: auto; aspect-ratio: auto; min-height: 0; object-fit: contain; }
 @media (min-width: 900px) { .ev.pic-whole .ev-pic { flex: 0 0 38%; } }
+
+.media-box { margin: 18px 0; } .media-box .media-h { margin: 0 0 10px; font-size: 1.2rem; } .media-box .cmp-video { margin: 0 0 14px; }

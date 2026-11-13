@@ -163,6 +163,13 @@ ${guideCards(X, parts)}
 <p class="lead-d">${esc(a.description)}</p>
 ${ser ? `<p class="series-line"><a href="#series">${esc(t('Part {n} of {total}', { n: ser.i + 1, total: ser.s.guides.length }))} · ${esc(ser.s.title)}</a></p>` : ''}
 ${act ? actionCard(X, topic, a.local || '') : require('./forms.js').startCard(X, '/learn/' + a.slug)}
+${(() => { // optional "video" (a YouTube link), "audio" (a /media/ file) and "listen" (a link) in the guide's front matter
+  const yt = /(?:youtu\.be\/|v=|embed\/)([\w-]{11})/.exec(String(a.video || '')), parts = [];
+  if (yt) parts.push(`<h2 class="media-h">${esc(t('Watch how it is done'))}</h2><div class="cmp-video"><iframe src="https://www.youtube-nocookie.com/embed/${yt[1]}" title="${esc(a.title)}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`);
+  if (a.audio && /^\/media\/[\w./-]+\.(mp3|m4a|ogg)$/.test(a.audio)) parts.push(`<h2 class="media-h">${esc(t('Listen and say it along'))}</h2><audio controls preload="none" src="${esc(a.audio)}" style="width:100%"></audio>`);
+  if (a.listen && /^https:\/\//.test(a.listen)) parts.push(`<p><a class="btn gold" href="${esc(a.listen)}" rel="noopener" target="_blank">${esc(t('Listen to the blessings'))}</a></p>`);
+  return parts.length ? `<section class="card media-box">${parts.join('')}</section>` : '';
+})()}
 ${(() => { const html = md(a.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]; return (hs.length >= 4 ? `<details class="toc"><summary>${esc(t('On this page'))} · ${esc(t('{n} min read', { n: Math.max(1, Math.round(plain(a.body).split(/\s+/).length / 200)) }))}</summary>${hs.map((h) => `<a href="#${h[1]}">${h[2]}</a>`).join('')}</details>` : '') + html; })()}
 ${(a.local && !act) || occ ? `<div class="card local">${a.local && !act ? `<p><strong>${esc(t('In Lamorinda'))}:</strong> ${esc(a.local)}</p>` : ''}${occ ? `<p class="occasion-line">${esc(occ === 'yahrzeit' ? t('Remember them: sponsor a Kiddush or give in their memory.') : t('Mark the occasion: sponsor a Kiddush or give in their honor'))} <a href="/sponsor?o=${occ}">${esc(t('Sponsor in honor or memory of a loved one'))} →</a></p>` : ''}</div>` : ''}
 ${a.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(a.faq)}` : ''}
