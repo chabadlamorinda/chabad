@@ -9,7 +9,7 @@ The 39 melachot are the categories of creative work that the Torah forbids on Sh
 
 ## What does "work" mean on Shabbat?
 
-Many people think Shabbat work means effort. But in Jewish law, melachah means creative work: changing or creating something in the physical world. Moving heavy furniture inside your home is not a melachah, while flipping a light switch or writing a word can be.
+Many people think Shabbat work means effort. But in Jewish law, melachah means creative work: changing or creating something in the physical world. Carrying an object from room to room inside your home is not in itself a melachah (other rules, such as muktzeh, may apply), while flipping a light switch or writing a word can be.
 
 On Shabbat, we step back from creating and controlling the world, and acknowledge that G-d is the Creator. We stop being masters of the world for a day, and instead enjoy it.
 

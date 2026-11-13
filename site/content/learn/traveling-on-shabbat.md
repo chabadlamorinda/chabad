@@ -27,7 +27,7 @@ There are Chabad centers in cities, college towns and vacation spots around the 
 - **Food:** sealed kosher meals or snacks that need no cooking. See [Kosher When Traveling](/learn/kosher-when-traveling).
 - **A siddur** and a printed copy of the Shabbat times.
 
-A man traveling alone lights Shabbat candles himself, just as a woman would at home.
+A man traveling alone may light Shabbat candles himself, as a woman would at home; ask the Rabbi what applies to you.
 
 ## Hotels
 

@@ -30,7 +30,7 @@ It is not said on Shabbat, Rosh Chodesh, or the seventh and last days of Passove
 
 ### On new things
 - **A new fruit of the season:** the first time you eat a fruit that grows seasonally and that you have not tasted this season.
-- **Significant new clothing:** such as a new suit or dress, said when first wearing it. It is not said on everyday items like socks or undershirts.
+- **Significant new clothing:** such as a new suit or dress. Authorities differ on whether to bless when first wearing it (the Chabad custom is generally not to say Shehecheyanu on clothing), so ask the Rabbi. It is never said on everyday items like socks or undershirts.
 - **A major new purchase** that brings real joy, such as a new home, according to many authorities. Ask the Rabbi.
 
 ### On joyful occasions
@@ -45,7 +45,7 @@ It is not said on Shabbat, Rosh Chodesh, or the seventh and last days of Passove
 
 ## The Three Weeks
 
-From the 17th of Tammuz to Tisha B'Av, a time of mourning for the Holy Temple, the custom is to avoid occasions that call for Shehecheyanu, such as eating a new fruit or wearing new clothes. Some authorities permit it on Shabbat during this period, so ask the Rabbi. Read more in our guide to [the Three Weeks](/learn/three-weeks).
+From the 17th of Tammuz to Tisha B'Av, a time of mourning for the Holy Temple, the custom is to avoid occasions that call for Shehecheyanu, such as eating a new fruit or wearing new clothes. Some authorities permit it on Shabbat during this period, but the Chabad custom is to refrain from eating new fruit or wearing new clothing even on Shabbat. Ask the Rabbi. Read more in our guide to [the Three Weeks](/learn/three-weeks).
 
 ## Common questions
 

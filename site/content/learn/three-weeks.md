@@ -25,8 +25,8 @@ From the 17th of Tammuz, Ashkenazi custom includes:
 
 - No weddings.
 - No haircuts or shaving.
-- No listening to live music, and many avoid recorded music too.
-- Avoiding activities that require saying Shehecheyanu, such as eating a new fruit or wearing new clothes. Many permit this on Shabbat.
+- No listening to music, live or recorded (background music you cannot control is not a concern).
+- Avoiding activities that require saying Shehecheyanu, such as eating a new fruit or wearing new clothes of significant worth. Chabad custom is to refrain from this even on Shabbat and Rosh Chodesh.
 
 ## The Nine Days
 

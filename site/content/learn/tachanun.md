@@ -30,10 +30,10 @@ On Mondays and Thursdays the morning Tachanun is much longer. Chabad.org calls t
 It is a prayer of humility, so it is left out when the day is joyful. Among others, it is not said:
 
 - On Shabbat, starting from Friday afternoon, and on [Rosh Chodesh](/learn/rosh-chodesh)
-- On [Chanukah](/holidays/chanukah) and on Purim (the 13th to 15th of Adar)
+- On [Chanukah](/holidays/chanukah) and on Purim (from the afternoon of the 13th through the 15th of Adar)
 - Throughout the month of Nissan
 - On Lag BaOmer, and for the first twelve days of Sivan
-- On the days leading up to and after Rosh Hashanah and Yom Kippur, and Tisha B'Av
+- On the day before Rosh Hashanah and on Rosh Hashanah, from the day before Yom Kippur until 2 Cheshvan, and on Tisha B'Av
 - On Tu BiShvat and the 15th of Av
 
 Chabad also skips it on several days that remember miracles of release, such as the 10th, 19th and 20th of Kislev. The site calendar shows the holidays, so do not rely on a list typed from memory. For other occasions, such as a bris or a wedding in the synagogue, ask the Rabbi.

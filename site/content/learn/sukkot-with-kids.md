@@ -30,7 +30,7 @@ All week we eat our meals in the sukkah. When eating bread or cake, we say the b
 
 ## The lulav and etrog
 
-Every day of Sukkot except Shabbat, we take the Four Kinds together: the etrog (a citron), the lulav (a palm branch), three hadassim (myrtle) and two aravot (willow). We say a blessing and wave them to the front, right, back, left, up and down, because G-d is everywhere. Girls and boys both take part.
+Every day of Sukkot except Shabbat, we take the Four Kinds together: the etrog (a citron), the lulav (a palm branch), three hadassim (myrtle) and two aravot (willow). We say a blessing and wave them to the right, left, front, up, down and back (the Chabad order; ask the Rabbi to show you), because G-d is everywhere. Girls and boys both take part.
 
 Each kind is like a different kind of Jew. The etrog has taste and smell, like someone who learns Torah and does good deeds. The lulav's date has taste but no smell, the myrtle has smell but no taste, and the willow has neither. We hold them all together, because every Jew counts and we are one people. See [the Four Kinds](/learn/four-kinds).
 

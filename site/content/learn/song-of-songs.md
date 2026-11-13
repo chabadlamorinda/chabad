@@ -17,7 +17,7 @@ Chabad.org gives two reasons. First, the Song speaks of the exile and redemption
 
 ## When is it read?
 
-- **At the Seder.** It is customary to read it on the first night of Passover at the end of the Seder (the book is short, eight chapters). Some read it over both nights in the Diaspora. See [the Passover Seder](/learn/passover-seder).
+- **At the Seder.** In some communities it is also read at the end of the Seder (the book is short, eight chapters). Customs vary, so ask the Rabbi what to do. See [the Passover Seder](/learn/passover-seder).
 - **On Shabbat Chol HaMoed.** In Ashkenazi communities it is read publicly on the Sabbath of the intermediate days, before the Torah reading. See [Chol HaMoed](/learn/chol-hamoed).
 - **Other times.** Practice varies: in some communities, it is also recited on Friday afternoon before Shabbat. Ask the Rabbi what your family should do.
 
@@ -49,7 +49,7 @@ Because it alludes to the Exodus and the redemption, and because Passover is whe
 Jewish tradition attributes it to King Solomon.
 
 ### When do Jews read the Song of Songs?
-Many read it after the Seder, and Ashkenazi communities read it on the Shabbat in the middle of Passover. See [this week's schedule](/this-week) for the holiday dates.
+In some communities it is read after the Seder, and Ashkenazi communities read it on the Shabbat in the middle of Passover. See [this week's schedule](/this-week) for the holiday dates.
 
 ### Do you say a blessing before reading it?
 Practice varies. Many read it without a blessing. Ask the Rabbi.

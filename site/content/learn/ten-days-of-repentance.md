@@ -19,7 +19,7 @@ The Shabbat that falls in these days is called **Shabbat Shuvah**, the Shabbat o
 
 During these days, many Jews take on something they do not keep all year, as a way of saying to G-d: see, I can. Some pray three times a day who usually do not; some are more careful about what they say of others. The point is to show ourselves what we are capable of. See [teshuvah](/learn/teshuvah) and [lashon hara](/learn/lashon-hara).
 
-The daily prayers also change. We add a few lines to the Amidah asking to be "remembered for life," and we say *Avinu Malkeinu*, "Our Father, our King," each morning and afternoon. If you pray on your own, these additions are in every siddur. See [the Amidah](/learn/amidah).
+The daily prayers also change. We add a few lines to the Amidah asking to be "remembered for life," and we say *Avinu Malkeinu*, "Our Father, our King," each weekday morning and afternoon (not on Shabbat). If you pray on your own, these additions are in every siddur. See [the Amidah](/learn/amidah).
 
 ## Tzedakah
 

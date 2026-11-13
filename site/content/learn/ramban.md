@@ -21,7 +21,7 @@ The Ramban did not want to earn his living from Torah study, so he worked as a p
 
 His best-known work is his commentary on the Torah, which Chabad.org says he wrote after moving to the Land of Israel. Where [Rashi](/learn/rashi) explains the plain meaning in clear, short comments, the Ramban often goes deeper, bringing in the hidden, Kabbalistic dimension of the Torah and reflecting on the reasons for the commandments. Many people today study it alongside Rashi on the weekly [Torah portion](/learn/torah-reading). If you are curious about the hidden side of the Torah, see [Kabbalah](/learn/kabbalah).
 
-He is also credited with sending a copy of the Zohar from the Land of Israel to Spain, which helped bring that work to the Jewish communities of the West.
+His Torah commentary draws on the hidden, Kabbalistic dimension of the Torah, as described above.
 
 ## Moving to the Land of Israel
 

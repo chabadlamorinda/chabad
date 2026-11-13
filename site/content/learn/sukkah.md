@@ -28,7 +28,7 @@ The most important part of a sukkah is the roof, called schach. It must be made 
 5. **Put on the schach.** Place it after the walls are up. Use branches, bamboo poles, or schach mats made for this purpose. Do not use anything that was processed into a utensil, food, or a material that can become impure, such as metal, plastic or fabric.
 6. **Make it shady.** The schach must give more shade than sun inside, but ideally you can still see some stars through it at night.
 
-Decorating the sukkah with fruit, pictures and lights is a beautiful custom.
+Many communities decorate the sukkah with fruit, pictures and lights. Chabad custom is not to decorate the sukkah, but to make it beautiful with good materials and plenty of schach.
 
 ## The blessing
 

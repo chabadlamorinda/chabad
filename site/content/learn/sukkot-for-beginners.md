@@ -47,7 +47,7 @@ You do not need to do all of it. Eat one meal in a sukkah. Shake a lulav once. C
 The first two days, and Shemini Atzeret and Simchat Torah at the end, are full festival days like Shabbat. The middle days, *Chol Hamoed*, are semi-festive: we still eat in the sukkah and shake the lulav, but regular activities are allowed.
 
 ### What if it rains?
-If rain would spoil the meal, you are not required to eat in the sukkah; go inside. Ask the Rabbi about the first night, when the custom is a little different.
+If rain would spoil the meal, the law exempts you from eating in the sukkah, but Chabad custom is to eat in the sukkah in any weather. Ask the Rabbi, especially about the first night, when you should eat at least an olive-sized piece of bread in the sukkah.
 
 ### Can I shake a lulav if I don't have my own?
 Yes. One set serves a whole family or community, and many synagogues keep a set for everyone to use. Call the Rabbi to ask about shaking the lulav this year.

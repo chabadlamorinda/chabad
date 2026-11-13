@@ -17,7 +17,7 @@ As a grown man Moses saw the suffering of his people and tried to protect a Hebr
 
 ## The Exodus and Sinai
 
-After the Ten Plagues Pharaoh let the people go, and Moses led them through the sea. About six weeks later they stood at Mount Sinai and heard G-d speak the [Ten Commandments](/learn/ten-commandments). Moses then spent forty days on the mountain receiving the Torah. When the people made the golden calf, he broke the tablets, prayed for the people, and came down again with a second set. The story of this journey is told in the [Exodus story](/learn/exodus-story) and relived every year at the Passover Seder.
+After the Ten Plagues Pharaoh let the people go, and Moses led them through the sea. About seven weeks later (fifty days after the Exodus) they stood at Mount Sinai and heard G-d speak the [Ten Commandments](/learn/ten-commandments). Moses then spent forty days on the mountain receiving the Torah. When the people made the golden calf, he broke the tablets, prayed for the people, and came down again with a second set. The story of this journey is told in the [Exodus story](/learn/exodus-story) and relived every year at the Passover Seder.
 
 ## Forty years of leading
 

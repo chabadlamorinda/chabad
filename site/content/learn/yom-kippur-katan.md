@@ -17,7 +17,7 @@ Yom Kippur is the great day of forgiveness once a year. The Sages saw Rosh Chode
 
 Customs vary, and no one is required to keep all of them:
 
-- **Extra prayer and Psalms.** In Chabad circles, many recite Psalms and special prayers, and study Chassidic texts. The Rebbe customarily visited the Ohel, his predecessor's resting place, on this day (Chabad.org).
+- **Extra prayer and Psalms.** Some recite Psalms and special prayers and study Chassidic texts. The Rebbe customarily visited the Ohel, his predecessor's resting place, on this day (Chabad.org).
 - **Charity.** Giving extra tzedakah is a simple custom for everyone; see [tzedakah](/learn/tzedakah).
 - **Fasting.** The most pious fast until the afternoon or evening. Fasting is not for everyone; if you are ill, pregnant, nursing, elderly or have any health question, do not fast, and ask the Rabbi.
 - **Reflection (cheshbon hanefesh).** Take a few minutes to review the past month. See [cheshbon hanefesh](/learn/cheshbon-hanefesh).
@@ -57,7 +57,7 @@ The day before each Rosh Chodesh, except in certain months. See [this week](/thi
 
 ### What do Chabad Chassidim do on Yom Kippur Katan?
 
-Many say extra Psalms, give charity, study Chassidic teachings and reflect. The Rebbe visited the Ohel on this day.
+Chabad.org notes that the Rebbe customarily visited the Ohel on this day. Many people give extra charity, say Psalms and reflect; for other customs, ask the Rabbi.
 
 ### Can I observe it without fasting?
 

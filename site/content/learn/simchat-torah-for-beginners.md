@@ -25,7 +25,7 @@ Everyone is invited to carry a scroll for a round. If you have never held a Tora
 
 ## What the Torah reading looks like
 
-On the morning of Simchat Torah, every man in the room is called up for an aliyah, and the section is read again and again so that all can join. Children are called up together for a special aliyah, and their blessing is said with an adult beside them. Two honors go to the people who finish the Torah and begin it again. It is Chabad custom not to read the Torah at the night service, so the evening is just for the hakafot. Read more about [the Torah reading](/learn/torah-reading).
+On the morning of Simchat Torah, every man in the room is called up for an aliyah, and the section is read again and again so that all can join. Children are called up together for a special aliyah, and their blessing is said with an adult beside them. Two honors go to the people who finish the Torah and begin it again. The evening service is mostly the hakafot; the Torah reading is in the morning. Read more about [the Torah reading](/learn/torah-reading).
 
 ## Kids, flags and treats
 

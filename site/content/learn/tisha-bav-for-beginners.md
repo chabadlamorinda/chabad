@@ -15,7 +15,7 @@ The sages trace other sorrows to the same date, beginning with the night the spi
 
 ## The Three Weeks before
 
-Tisha B'Av ends a season that begins three weeks earlier with the fast of the 17th of Tammuz, the day the walls of Jerusalem were breached. During the Three Weeks we hold no weddings and do not listen to live music; from the first of Av, the "Nine Days," we also give up meat and wine except on Shabbat. See [the Three Weeks](/learn/three-weeks).
+Tisha B'Av ends a season that begins three weeks earlier with the fast of the 17th of Tammuz, the day the walls of Jerusalem were breached. During the Three Weeks we hold no weddings and do not listen to music, live or recorded; from the first of Av, the "Nine Days," we also give up meat and wine except on Shabbat. See [the Three Weeks](/learn/three-weeks).
 
 ## The fast and the customs of the day
 

@@ -21,11 +21,11 @@ Netilat yadayim is the Jewish ritual of washing the hands with a cup. It is not 
 
 ## How to wash for bread, step by step
 
-1. **Make sure your hands are clean and dry**, and remove rings so water reaches every part of the hand.
-2. **Fill a cup** with at least about 3.3 ounces (a *revi'it*) of water. A cup with two handles makes it easy, but any whole cup without holes works.
+1. **Make sure your hands are clean** and free of anything that blocks the water, and remove rings so water reaches every part of the hand.
+2. **Fill a cup** with enough water to cover the whole hand (a *revi'it* or more; ask the Rabbi which size cup to use). A cup with two handles makes it easy, but any whole cup without holes works.
 3. **Pour on the right hand.** Hold the cup in your left hand and pour over your whole right hand, up to the wrist. The Chabad custom is to pour three times on the right hand.
 4. **Pour on the left hand.** Switch hands and pour three times over the left hand. Many other communities pour twice on each hand.
-5. **Rub your hands together** and say the blessing, raising your hands slightly.
+5. **Say the blessing,** raising your hands slightly, then rub your hands together.
 6. **Dry your hands** well.
 7. **Do not speak** until you have said [Hamotzi](/learn/blessings) and eaten a bite of bread.
 
@@ -39,7 +39,7 @@ Netilat yadayim is the Jewish ritual of washing the hands with a cup. It is not 
 
 ## Morning washing
 
-In the morning, Chabad custom is to pour water alternately: right hand, left hand, three times each. Then wash your face and rinse your mouth. The blessing al netilat yadayim is said later, as part of the morning blessings. The washing removes the spiritual impurity of sleep and starts the day fresh, ready to serve G-d.
+In the morning, Chabad custom is to pour water alternately: right hand, left hand, three times each. The Chabad custom is to wash again after getting dressed and using the restroom, and only then to say the blessing al netilat yadayim, followed by Asher Yatzar and the other morning blessings. The washing removes the spiritual impurity of sleep and starts the day fresh, ready to serve G-d.
 
 ## Common questions
 
@@ -53,4 +53,4 @@ Talking about something unrelated before Hamotzi is best avoided. If you did spe
 Yes. Children who are old enough to eat bread at the table are taught to wash and say the blessing, which makes it a lovely habit from a young age.
 
 ### Do I wash before eating cake or crackers?
-No. Washing with a blessing is for bread. Foods over which you say *mezonot* do not need washing, unless you eat a full meal of them.
+No. Washing with a blessing is for bread. Foods over which you say *mezonot* do not need washing, unless you eat a full meal of them. For crackers and similar foods, ask the Rabbi which blessing applies.

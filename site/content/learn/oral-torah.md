@@ -40,9 +40,9 @@ According to Chabad.org, for many generations only the written text, the twenty-
 
 ## Why it was written down
 
-When Jewish life was threatened by exile and persecution, it became hard to teach, and disputes between teaching schools began to multiply. Rabbi Yehudah HaNasi, who lived in the late second century, was on friendly terms with the Roman emperor, which brought a period of calm. He used it to gather the teachings into the [Mishnah](/learn/mishnah), organized by subject, around the year 189 of the common era. He included minority opinions too, so that later claims about other traditions could be checked.
+When Jewish life was threatened by exile and persecution, it became hard to teach, and disputes between teaching schools began to multiply. Rabbi Yehudah HaNasi, who lived in the late second century, was on friendly terms with the Roman emperor, which brought a period of calm. He used it to gather the teachings into the [Mishnah](/learn/mishnah), organized by subject, around the year 200 of the common era. He included minority opinions too, so that later claims about other traditions could be checked.
 
-Later generations compiled the Jerusalem Talmud, begun about 290 and never fully edited, and the Babylonian Talmud, edited by Rav Ashi and Ravina around 392. The Babylonian Talmud is the more widely studied, and when people say [the Talmud](/learn/talmud), they usually mean it. From these sources comes [halacha](/learn/what-is-halacha), Jewish law.
+Over the following centuries the sages compiled the Jerusalem Talmud, never fully edited, and the Babylonian Talmud, edited by Rav Ashi and Ravina. The Babylonian Talmud is the more widely studied, and when people say [the Talmud](/learn/talmud), they usually mean it. From these sources comes [halacha](/learn/what-is-halacha), Jewish law.
 
 ## Why a living teacher still matters
 
@@ -59,7 +59,7 @@ It is the explanation of the Written Torah given to Moses at Sinai, passed down 
 The Written Torah is the Five Books of Moses. The Oral Torah explains how to understand and keep its commandments.
 
 ### Why was the Oral Torah written down?
-Because exile and persecution made it hard to teach, Rabbi Yehudah HaNasi gathered it into the Mishnah around the year 189.
+Because exile and persecution made it hard to teach, Rabbi Yehudah HaNasi gathered it into the Mishnah around the year 200.
 
 ### Is the Talmud the Oral Torah?
 The Talmud records much of the Oral Torah, with the Mishnah as its core. The Oral Torah is the teaching; the Talmud is where it was written.
