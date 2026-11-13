@@ -11,7 +11,7 @@ const { guideCards } = require('./links.js');
 const THEMES = new Set(['navy', 'blue', 'green', 'gold', 'burgundy']);
 const themeOf = (x, fallback = 'navy') => (THEMES.has(x) ? x : fallback);
 const CAT_THEME = { holiday: 'gold', shabbat: 'navy', kids: 'green', family: 'green', teens: 'green', women: 'burgundy', men: 'blue', class: 'blue', community: 'navy', seniors: 'burgundy' };
-const picture = (e) => e.image || (e.flyer && /\.(jpe?g|png|webp)$/i.test(e.flyer) ? e.flyer : '');
+const picture = (e) => e.banner || e.image || (e.flyer && /\.(jpe?g|png|webp)$/i.test(e.flyer) ? e.flyer : '');
 
 // A program's name and summary fill in a banner or tile that points at it.
 function fromProgram(C, x) {
@@ -47,7 +47,7 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, dayGuides =
   // Large banners: featured events and holiday events coming in the next two months, then the next holiday, then home.json.
   const soon = (e) => (e.start.slice(0, 10) <= new Date(Date.parse(today + 'T12:00:00Z') + 60 * 864e5).toISOString().slice(0, 10));
   const big = evs.filter((e) => (e.featured || e.category === 'holiday') && soon(e)).slice(0, 3);
-  const evBanner = (e) => ({ title: e.title, text: e.summary, eyebrow: X.when(e), url: '/events/' + e.slug + (e.rsvp ? '#rsvp' : ''), button: e.rsvp ? t('RSVP') : t('Details'),
+  const evBanner = (e) => ({ title: e.title, text: e.summary, eyebrow: X.when(e) + (e.loc && e.loc.name ? ' · ' + e.loc.name : ''), url: '/events/' + e.slug + (e.rsvp ? '#rsvp' : ''), button: e.rsvp ? t('RSVP') : t('Details'),
     url2: e.rsvp ? '/events/' + e.slug : '', button2: t('Details'), image: picture(e) || holidayPhoto(e.holiday), art: artFor('event', e.slug, e.holiday || e.category), theme: CAT_THEME[e.category] || 'blue' });
   const slides = big.map(evBanner);
   const nh = hols[0], days = nh ? Math.round((Date.parse(nh.date + 'T12:00:00Z') - Date.parse(today + 'T12:00:00Z')) / 864e5) : 99;
