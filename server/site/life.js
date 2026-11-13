@@ -89,7 +89,7 @@ ${readNext(X, rel.map((x) => ({ ...x, description: (C.learn.find((a) => '/learn/
 <h2 id="arrange">${esc(t('Have Kaddish said for your loved one'))}</h2>
 <p>${esc(t('If you cannot be at a minyan every day, the custom is to arrange for someone to say Kaddish on your behalf, and to give charity in the merit of the departed. We will make sure Kaddish is said for the full eleven months, on the yahrzeit, or both, and the Rabbi will remember your loved one by name.'))}</p>
 <p>${esc(k.amount ? t('Suggested donation: ${amount}', { amount: k.amount }) : t('With a donation of your choice.'))}</p>
-<form class="card tool" data-submit data-kind="kaddish" data-title="Kaddish: {deceased}" data-after="give">
+<form class="card tool" data-submit data-kind="kaddish" data-title="Kaddish: {deceased}" data-after="give" data-gift="${esc(k.fund || 'general')}" data-gift-ded="${esc(t('Kaddish for {name}'))}">
   <div class="fields">
     <label>${esc(t('Name of the departed'))} <input name="deceased" required data-extra="Name"></label>
     <label>${esc(t('Hebrew name (if known)'))} <input name="hebrew" data-extra="Hebrew name"></label>
@@ -146,7 +146,7 @@ ${sit}
 <form class="tool" method="get" action="/tehillim#name119"><label>${esc(t('Hebrew name (in Hebrew letters)'))} <input name="name" lang="he" dir="rtl" value="${esc(name)}" required></label><button class="btn ghost" type="submit">${esc(t('Show the sections'))}</button></form>${byName}</section>
 <div class="card callbox"><p><strong>${esc(t('Someone needs prayers or help? Talk with the Rabbi.'))}</strong></p><p class="btns">${callRow(X)}</p></div>
 <section class="card tehillim" id="prayer-list"><h2>${esc(t('Add a name to our prayer list'))}</h2><p>${esc(t('The Rabbi and the community pray for everyone on our list, and the name is mentioned at the Torah reading (Mi Shebeirach). Please give the Hebrew name and the mother\'s Hebrew name if you know them.'))}</p>
-<form class="tool" data-submit data-kind="tehillim" data-title="{pname} ben/bat {pmother}">
+<form class="tool" data-submit data-kind="tehillim" data-title="{pname} ben/bat {pmother}" data-gift="general" data-gift-ded="${esc(t('For a complete recovery for {name}'))}">
   <div class="fields"><label>${esc(t('Name (Hebrew name if known)'))} <input name="pname" required data-extra="Name"></label><label>${esc(t("Mother's name (Hebrew if known)"))} <input name="pmother" data-extra="Mother's name"></label>
   <label>${esc(t('For'))} <select name="reason" data-extra="For"><option value="refuah">${esc(t('A complete recovery'))}</option><option value="birth">${esc(t('An easy and healthy birth'))}</option><option value="match">${esc(t('Finding a match'))}</option><option value="children">${esc(t('Children'))}</option><option value="livelihood">${esc(t('Livelihood'))}</option><option value="other">${esc(t('Other'))}</option></select></label></div>
   <label>${esc(t('Anything the Rabbi should know (private)'))} <textarea name="body" rows="3" maxlength="1000"></textarea></label>

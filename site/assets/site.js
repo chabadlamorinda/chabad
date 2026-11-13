@@ -184,6 +184,18 @@
     }, show);
   })();
 
+  // Amount chips (tap again to clear) plus "Other amount": value() is the chosen number or 0.
+  var amountPicker = function (amounts) {
+    var amt = 0, other = el('input', { type: 'number', min: '1', max: '10000', step: '1', inputmode: 'numeric', placeholder: T('Other amount ($)'), 'aria-label': T('Other amount ($)') });
+    var chips = amounts.map(function (a) {
+      var b = el('button', { type: 'button', class: 'chip', 'aria-pressed': 'false', text: '$' + a });
+      b.addEventListener('click', function () { var on = amt !== a; amt = on ? a : 0; other.value = ''; chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.classList.remove('on'); }); if (on) { b.setAttribute('aria-pressed', 'true'); b.classList.add('on'); } });
+      return b;
+    });
+    other.addEventListener('input', function () { amt = 0; chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.classList.remove('on'); }); });
+    return { node: el('div', { class: 'chips' }, chips.concat([other])), value: function () { var o = Math.floor(Number(other.value)); return o > 0 ? Math.min(o, 10000) : amt; } };
+  };
+
   // ---------- RSVP ----------
   var box = $('[data-rsvp]');
   if (box) {
@@ -210,13 +222,9 @@
       var phone = el('input', { name: 'phone', type: 'tel', autocomplete: 'tel', value: guest.phone || '' });
       var note = el('input', { name: 'note', placeholder: T('Anything we should know? (optional)') });
       // Optional sponsorship: tap an amount (tap again to clear); after the RSVP a button leads to the secure giving page with it filled in.
-      var sponsorAmt = 0, fund = box.getAttribute('data-fund') || 'general', chips = [36, 100, 180, 360].map(function (a) {
-        var b = el('button', { type: 'button', class: 'chip', 'aria-pressed': 'false', text: '$' + a });
-        b.addEventListener('click', function () { var on = sponsorAmt !== a; sponsorAmt = on ? a : 0; chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.classList.remove('on'); }); if (on) { b.setAttribute('aria-pressed', 'true'); b.classList.add('on'); } });
-        return b;
-      });
-      var sponsor = el('div', { class: 'sponsor-pick' }, [el('p', { class: 'hand', text: T('Sponsor this event (optional)') }), el('p', { class: 'muted', text: T('Help us welcome every family. Choose an amount, or skip it and just RSVP.') }), el('div', { class: 'chips' }, chips)]);
-      var giveHref = function () { return P('/donate?fund=' + fund + '&amt=' + sponsorAmt + '&ded=' + encodeURIComponent(T('Sponsoring') + ': ' + box.getAttribute('data-title')).slice(0, 120) + '#give'); };
+      var fund = box.getAttribute('data-fund') || 'general', pick = amountPicker([180, 360, 1000, 1800]);
+      var sponsor = el('div', { class: 'sponsor-pick' }, [el('p', { class: 'hand', text: T('Sponsor this event (optional)') }), el('p', { class: 'muted', text: T('Help us welcome every family. Choose an amount, or skip it and just RSVP.') }), pick.node]);
+      var giveHref = function () { return P('/donate?fund=' + fund + '&amt=' + pick.value() + '&ded=' + encodeURIComponent(T('Sponsoring') + ': ' + box.getAttribute('data-title')).slice(0, 120) + '#give'); };
       var m = el('p', { class: 'msg', hidden: true }), go = el('button', { class: 'btn gold', type: 'submit', text: mine ? T('Update my RSVP') : (s.signedIn ? T("I'm coming") : T('RSVP')) });
       if (refIn && !mine) ui.appendChild(el('p', { class: 'invited hand', text: T('A friend is going and invited you. Join them!') }));
       var form = el('form', {}, [
@@ -230,7 +238,7 @@
         var body = { adults: adults.value(), kids: withKids ? kids.value() : 0, note: note.value, name: name.value, email: email.value, phone: phone.value };
         try { body.ref = sessionStorage.getItem(refKey) || ''; } catch (e) {}
         if (!s.signedIn) store.set('cl_guest', { name: name.value, email: email.value, phone: phone.value });
-        var chosen = sponsorAmt;
+        var chosen = pick.value();
         api('POST', '/rsvp/' + slug, body).then(function (r) {
           go.disabled = false;
           if (r.ok) {
@@ -249,6 +257,26 @@
       ui.appendChild(form);
     });
   }
+
+  // ---------- An optional gift inside a form ----------
+  // data-gift="<fund>" on a form adds a few amounts (tap again to clear) before the button; after the form is sent,
+  // a chosen amount becomes a "Complete my $X gift" button to the secure giving page. Skipping it changes nothing.
+  var giftOf = function (form) {
+    var fund = form.getAttribute('data-gift'); if (!fund || form._gift) return form._gift;
+    var pick = amountPicker([180, 360, 1000, 1800]);
+    var box = el('div', { class: 'sponsor-pick' }, [el('p', { class: 'hand', text: T('Add a gift (optional)') }), el('p', { class: 'muted', text: T('Every gift helps. Choose an amount, or skip it and just send.') }), pick.node]);
+    var sub = form.querySelector('button[type=submit]'); sub.parentNode.insertBefore(box, sub);
+    form._gift = { amount: pick.value, box: box };
+    return form._gift;
+  };
+  var giftDone = function (form, who) {
+    var g = form._gift, a = g && g.amount(); if (!a) return;
+    var ded = (form.getAttribute('data-gift-ded') || form.getAttribute('data-gift-title') || '').replace('{name}', who || '');
+    var btn = el('p', { class: 'btns' }, [el('a', { class: 'btn gold', href: P('/donate?fund=' + encodeURIComponent(form.getAttribute('data-gift')) + '&amt=' + a + (ded ? '&ded=' + encodeURIComponent(ded.slice(0, 80)) : '') + '#give'), text: T('Complete my ${amount} gift', { amount: a }) })]);
+    g.box.hidden = true; form.appendChild(btn);
+    var gn = form.querySelector('.give-next'); if (gn) gn.hidden = true;
+  };
+  [].forEach.call(document.querySelectorAll('form[data-gift]'), giftOf);
 
   // ---------- Forms that send something to the Rabbi ----------
   // data-kind fixes the kind; data-title builds the headline from fields ({deceased}); fields with data-extra are
@@ -273,8 +301,9 @@
         if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
         var pub = /^(mazal-tov|announcement|shiva)$/.test(f.getAttribute('data-kind') || val('kind'));
         msg(m, pub ? T('Thank you! The Rabbi will review it and post it soon.') : T('Thank you! We received it and the Rabbi will be in touch.'), true);
+        giftDone(f, who);
         var give = $('.give-next', f);
-        if (give) { var l = $('a', give), ded = (l.getAttribute('data-ded') || '').replace('{name}', who); l.href = l.href.replace(/([?&]ded=)[^&#]*/, '$1' + encodeURIComponent(ded.slice(0, 80))); give.hidden = false; }
+        if (give && !(f._gift && f._gift.amount())) { var l = $('a', give), ded = (l.getAttribute('data-ded') || '').replace('{name}', who); l.href = l.href.replace(/([?&]ded=)[^&#]*/, '$1' + encodeURIComponent(ded.slice(0, 80))); give.hidden = false; }
         [].forEach.call(f.querySelectorAll('textarea, input[name=title], input[name=link]'), function (x) { if (x.type !== 'hidden') x.value = ''; });
       });
     });
@@ -341,6 +370,7 @@
         b.disabled = false;
         if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
         msg(m, T('Thank you! We received it and the Rabbi will be in touch.') + (r.amount ? ' ' + T('Total: ${amount}', { amount: r.amount }) : ''), true); nudge(form);
+        giftDone(form, fields.name || '');
         var pay = $('.pay-next', form);
         if (pay && r.payUrl) { $('a', pay).href = r.payUrl; pay.hidden = false; }
         b.hidden = true;
