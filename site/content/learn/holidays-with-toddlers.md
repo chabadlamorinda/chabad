@@ -18,7 +18,7 @@ With a toddler, nothing goes exactly as planned. That is fine. Little children d
 
 - Many Chabad families encourage girls from about age three to light their own small Shabbat candle, with a parent's help. See [Shabbat Candles](/learn/shabbat-candles).
 - Give tzedakah together before candle lighting.
-- Bless the children on Friday night with a hand on their head.
+- Many families bless the children on Friday night with a hand on their head; ask the Rabbi about your family's custom.
 - Bake or decorate a small challah. See [Shabbat with Kids](/learn/shabbat-with-kids).
 
 ## Holiday by holiday

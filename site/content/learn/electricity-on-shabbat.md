@@ -28,7 +28,7 @@ You may open the fridge, but not if a light goes on. Before Shabbat, unscrew the
 
 - **An urn** filled and plugged in before Shabbat gives hot water for tea and coffee all day.
 - **Hot water from the tap** can cause the water heater to heat new water. Many people avoid it on Shabbat; ask the Rabbi about your system.
-- **Heating and air conditioning** can run on a thermostat or timer set before Shabbat.
+- **Heating and air conditioning** can run on a thermostat or timer set before Shabbat. Ask the Rabbi about your system, since a thermostat can raise questions.
 
 ## Shabbat-mode appliances
 

@@ -20,7 +20,7 @@ You do not need a big house, fancy dishes or perfect Hebrew to host a Shabbat di
 
 1. **Light Shabbat candles** before sunset, at candle-lighting time. See [Shabbat candles](/learn/shabbat-candles).
 2. **Sing Shalom Aleichem**, welcoming the Shabbat angels. See [Shalom Aleichem](/learn/shalom-aleichem).
-3. **Bless the children**, if there are any at the table. See [blessing your children](/learn/blessing-your-children).
+3. **Bless the children**, if there are any at the table and it is your family's custom (ask the Rabbi). See [blessing your children](/learn/blessing-your-children).
 4. **Make Kiddush** over the wine or grape juice and pass it around. See [Kiddush](/learn/kiddush).
 5. **Wash hands** for bread with the blessing. See [washing hands](/learn/netilat-yadayim).
 6. **Hamotzi:** uncover the challahs, say the blessing, slice, dip in salt and share.

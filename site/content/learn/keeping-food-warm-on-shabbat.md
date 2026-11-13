@@ -21,7 +21,7 @@ How to use one:
 
 1. **Before Shabbat, turn on the flame** (low) and cover the stove with the blech.
 2. **Place the pots on the blech before Shabbat.**
-3. **Only fully cooked food** may be put back later, and only on the cooler part, away from the flame.
+3. **Only fully cooked food** may be put back later, and only on the cooler part, away from the flame, and only under certain conditions, so ask the Rabbi before putting a pot back.
 4. **Do not move a pot from a cooler area over the flame.** You may move it from the hot area to a cooler one.
 5. **Do not add raw food** or partly cooked food to the blech on Shabbat.
 

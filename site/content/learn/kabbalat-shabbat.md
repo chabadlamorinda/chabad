@@ -28,7 +28,7 @@ You do not need to read Hebrew or know the tunes. Kabbalat Shabbat is about lett
 
 ## After the service
 
-At home, Friday night continues with [Shalom Aleichem](/learn/shalom-aleichem), the blessings over the children, Kiddush over wine, challah, and a festive meal with songs. If you do not have a Shabbat table to go to, you are always welcome at ours: see [Shabbat at Chabad](/shabbat).
+At home, Friday night continues with [Shalom Aleichem](/learn/shalom-aleichem), the blessing of the children (a custom in many homes), Kiddush over wine, challah, and a festive meal with songs. If you do not have a Shabbat table to go to, you are always welcome at ours: see [Shabbat at Chabad](/shabbat).
 
 ## Common questions
 

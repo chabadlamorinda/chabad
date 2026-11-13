@@ -19,14 +19,14 @@ Yom Kippur atones for sins between a person and G-d, but not for what we did to 
 4. **Mikvah.** Many immerse on this day. See [mikvah for men](/learn/mikvah-for-men).
 5. **Give tzedakah.** Give generously. It is a great source of merit. Read [tzedakah](/learn/tzedakah).
 6. **Festive meals.** The main mitzvah of the day is to eat and drink well. There are two festive meals, one earlier in the day and one just before the fast. Many families eat kreplach, filled dumplings.
-7. **Minchah.** The afternoon service is prayed relatively early to leave time for the final meal. Before Minchah, men traditionally receive symbolic "lashes," a reminder to repent.
+7. **Minchah.** The afternoon service is prayed relatively early to leave time for the final meal. Many men traditionally receive symbolic "lashes" (malkot) on this day, a reminder to repent.
 8. **Bless your children.** Before going to the synagogue, parents bless their children. The customary words invoke Ephraim and Menashe for sons, and Sarah, Rebecca, Rachel and Leah for daughters. Read [blessing your children](/learn/blessing-your-children).
 9. **Light candles.** Women and girls light the holiday candles 18 minutes before sunset; check the time on [Shabbat times](/shabbat-times). Two blessings are said, one for the candles of Yom Kippur and Shehecheyanu. Memorial candles also burn: a 25-hour candle in the synagogue, and for those whose parents have passed away, one at home.
 10. **Go to Kol Nidre.** The fast begins at candle lighting. Read [Kol Nidre](/learn/kol-nidre).
 
 ## When someone will not forgive you, or has passed away
 
-If you try and are refused, the Alter Rebbe's Shulchan Aruch says you may ask again, and, if still refused, tell ten people that you tried. If the person has passed away, ten people gather at the grave and the wrong is named there. These situations are delicate. Ask the Rabbi, or read [forgiveness and making peace](/learn/forgiveness-and-making-peace).
+If you try and are refused, you may ask again, up to three times, and others may be asked to help; if you are still refused, the responsibility is theirs. If the person has passed away, the Alter Rebbe's Shulchan Aruch says ten people gather at the grave and the wrong is named there. These situations are delicate. Ask the Rabbi, or read [forgiveness and making peace](/learn/forgiveness-and-making-peace).
 
 ## Take the next step
 

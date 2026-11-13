@@ -53,7 +53,7 @@ There are many tunes, some lively and some slow. Some families go around the tab
 Traditionally the husband sings it, often joined by the children, as a tribute to his wife. Anyone may sing it, and in many homes the whole family sings together.
 
 ### What if I am single or there is no woman at the table?
-It is still sung. Because of its deeper meanings about Shabbat, the Torah and the soul, Eishet Chayil is said every Friday night by everyone, not only by married men.
+Many families still sing it, because of its deeper meanings about Shabbat, the Torah and the soul, and it is not only married men who sing it. Ask the Rabbi about your family's custom.
 
 ### Is Eishet Chayil only for Friday night?
 It is sung on Friday night, and it is also often read at a woman's funeral as a tribute to her life. Some brides and couples choose verses from it for their wedding.

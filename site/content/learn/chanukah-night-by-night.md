@@ -33,7 +33,7 @@ Chabad.org offers a thought for every night. Here are the themes, retold simply,
 
 ## Friday night and Saturday night
 
-Because fire is not lit on Shabbat, the Friday night menorah is lit **before** the Shabbat candles, using enough oil or large candles to burn for the half hour; ordinary thin candles will not last. Chanukah candles are not moved or relit during Shabbat. This Friday's Shabbat candle time is [{kabbalat-shabbat}-style on our times page](/shabbat-times).
+Because fire is not lit on Shabbat, the Friday night menorah is lit **before** the Shabbat candles, using enough oil or large candles to burn for the half hour; ordinary thin candles will not last. Chanukah candles are not moved or relit during Shabbat. Candle-lighting times for every Friday are on our [Shabbat times](/shabbat-times) page.
 
 The Saturday night menorah is lit only after Shabbat ends, after Havdalah. Plan to light it a little later than on other nights. For the full picture see [Chanukah on Shabbat](/learn/chanukah-on-shabbat).
 

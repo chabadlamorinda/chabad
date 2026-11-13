@@ -11,7 +11,7 @@ To host a Passover Seder, gather your guests, give everyone the same Haggadah, p
 
 1. **Invite sincerely.** Think of people who may especially need an invitation: a neighbor, a coworker, a student, someone who lives alone. A phone call shows you really want them there. Chabad.org advises that texts and emails are fine, but a call is the most effective.
 2. **Get enough Haggadahs.** Use the same edition for everyone so you can follow along together. If guests speak different languages, a multilingual edition helps. See [what a Haggadah is](/learn/haggadah).
-3. **Plan the food.** Read [kosher for Passover](/learn/kosher-for-passover), [Passover cleaning](/learn/passover-cleaning) and the [shopping list](/learn/passover-shopping-list). Handmade shmurah matzah is ideal for the Seder. Spelt or oat matzah can work for guests who cannot eat wheat; ask the Rabbi.
+3. **Plan the food.** Read [kosher for Passover](/learn/kosher-for-passover), [Passover cleaning](/learn/passover-cleaning) and the [shopping list](/learn/passover-shopping-list). Handmade shmurah matzah is ideal for the Seder. For a guest who cannot eat wheat, ask the Rabbi what can be done.
 4. **Think about the cups.** Chabad.org suggests small cups holding at least 3 fluid ounces for the four cups. Offer grape juice for anyone who cannot drink wine. See [the four cups](/learn/four-cups).
 5. **Study a little.** Read a few insights ahead of time and ask family members to do the same, then share them at the table.
 

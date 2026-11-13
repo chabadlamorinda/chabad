@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: shofar, selichot, teshuvah, mezuzah
 local: Have your tefillin and mezuzahs checked before Rosh Hashanah through chabadoflamorinda.com/forms/mezuzah-tefillin, and reserve High Holiday seats at chabadoflamorinda.com/forms/high-holidays.
 ---
-Elul is the last month of the Jewish year, the 30 days leading up to Rosh Hashanah. It is a time of reflection, [teshuvah](/learn/teshuvah) and drawing closer to G-d, so we enter the new year prepared.
+Elul is the last month of the Jewish year, the month leading up to Rosh Hashanah. It is a time of reflection, [teshuvah](/learn/teshuvah) and drawing closer to G-d, so we enter the new year prepared.
 
 ## What is Elul?
 
@@ -23,7 +23,7 @@ During Elul, G-d is like the King in the field. He is close and approachable, wh
 
 ### Blowing the shofar
 
-The [shofar](/learn/shofar) is blown each weekday morning after prayers, from the beginning of Elul until the day before Rosh Hashanah. It is a wake-up call to prepare. It is not blown on the day before Rosh Hashanah, to separate the custom from the Rosh Hashanah mitzvah.
+The [shofar](/learn/shofar) is blown each weekday morning after prayers, from the beginning of Elul, except on Shabbat. It is a wake-up call to prepare. It is not blown on the day before Rosh Hashanah, to separate the custom from the Rosh Hashanah mitzvah.
 
 ### Psalm 27
 

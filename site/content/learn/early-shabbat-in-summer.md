@@ -43,7 +43,7 @@ Plag hamincha is the point 1¼ halachic hours before sunset, when the late after
 Summer sunsets are late, so Friday-night services in Lafayette are scheduled for a family-friendly hour. See {kabbalat-shabbat} for this week's time.
 
 ### Is it okay to light Shabbat candles early?
-You may light early, but the woman lighting accepts Shabbat at that moment. Ask the Rabbi how to do it in your home.
+Candles may be lit from plag hamincha on (not earlier, according to Chabad.org), and the woman lighting accepts Shabbat at that moment. Ask the Rabbi how to do it in your home, and when Kiddush and the meal may begin.
 
 ### When is candle lighting in Lafayette, Moraga and Orinda?
 Times change weekly and differ by town. See [Shabbat times](/shabbat-times).

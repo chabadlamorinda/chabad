@@ -19,10 +19,10 @@ Chabad.org notes that the Jerusalem Talmud, compiled about 1,600 years ago, alre
 
 ## When and how to give
 
-1. **Start 30 days before Passover.** That is when the collection traditionally begins, and the money should reach the families by the Shabbat before the holiday. This is the same period when we begin studying the laws of Passover.
+1. **Start 30 days before Passover.** That is when the collection traditionally begins, and the money should reach the families in time for them to prepare. This is the same period when we begin studying the laws of Passover.
 2. **Give what you can.** There is no fixed amount. Each person gives according to his or her means.
 3. **Give locally first.** Jewish law says the needy of your own community come first. That means helping people in Lafayette, Moraga, Orinda and the East Bay before sending far away.
-4. **Don't wait for the perfect moment.** If the Shabbat before Passover has passed, give anyway, right up until the holiday begins.
+4. **Don't wait for the perfect moment.** If the time to prepare has passed, give anyway, right up until the holiday begins.
 5. **Involve your children.** Let them put the coins in the box, or help pack a bag of matzah and grape juice. See [tzedakah for children](/learn/children-money-and-tzedakah).
 
 ## A gift of dignity
@@ -39,7 +39,7 @@ Maot Chitim feeds the table. The Seder itself also needs guests. If you know som
 Maot Chitim means "wheat money" in Hebrew. It is charity collected before Passover to help the needy buy matzah and holiday food, and it is also called Kimcha Depischa, "Passover flour."
 
 ### When do you give Maot Chitim?
-Collection traditionally begins 30 days before Passover, and the funds should be distributed by the Shabbat before the holiday. If you miss that time, you should still give until Passover begins.
+Collection traditionally begins 30 days before Passover, and the funds should be distributed before the holiday. If you miss that time, you should still give until Passover begins.
 
 ### How much should I give for Maot Chitim?
 There is no set amount. Each person gives according to his or her means. If you are unsure what is right for your family, ask the Rabbi.
@@ -48,7 +48,7 @@ There is no set amount. Each person gives according to his or her means. If you 
 Under Jewish law the local poor come first, so help your own community before others. Anyone who needs a Passover meal can receive it, whatever their background.
 
 ### Is Maot Chitim the same as regular tzedakah?
-It is separate. It is a special communal obligation before Passover, over and above your usual giving, so it should not come out of your regular tzedakah budget.
+It is separate. It is a special communal custom before Passover, customarily given in addition to your usual giving. Ask the Rabbi if you are unsure.
 
 ### Can I give Maot Chitim through Chabad of Lamorinda?
 Yes, you may give through [our donation page](/donate), and you can call Rabbi Labkowski at 925-384-7242 to hear what is planned for Passover and how to help a family in need.

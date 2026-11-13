@@ -11,7 +11,7 @@ Hoshana Rabbah is the seventh and final day of Sukkot, when the judgment that be
 
 The name means "the great Hoshana," after the Hoshana prayers that ask G-d to "save us, please." On every day of Sukkot, these prayers are said while circling the bimah (the Torah reading table) once, holding the [Four Kinds](/learn/four-kinds). On Hoshana Rabbah we circle it seven times.
 
-Hoshana Rabbah is a weekday of the intermediate days of Sukkot (Chol Hamoed), so work is not forbidden as on a full holiday. Yet it has a special solemnity mixed with joy.
+Hoshana Rabbah is a weekday of the intermediate days of Sukkot (Chol Hamoed), so the Yom Tov prohibitions do not apply (the Chol Hamoed rules about work still do; ask the Rabbi). Yet it has a special solemnity mixed with joy.
 
 ## Why it is a day of judgment
 
@@ -48,7 +48,7 @@ Hoshana Rabbah leads straight into Shemini Atzeret and Simchat Torah, when we da
 ## Common questions
 
 ### Is Hoshana Rabbah a full holiday?
-No. It is part of Chol Hamoed, the intermediate days of Sukkot, so driving, phones and work are permitted. Still, it is a special day, and many take time off to pray and celebrate.
+No. It is part of Chol Hamoed, the intermediate days of Sukkot, so driving and phones are permitted, though the Chol Hamoed rules about work still apply. Still, it is a special day, and many take time off to pray and celebrate.
 
 ### Where do I get willows for Hoshana Rabbah?
 Hoshanot are usually sold or given out in synagogue, often tied in bundles of five. They are separate from the two willows in your lulav set.
