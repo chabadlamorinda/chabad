@@ -46,7 +46,7 @@ California law protects a mezuzah on the entry door, but a menorah on a balcony 
 
 ## Light together
 
-Chanukah is a family and community holiday. Check [events](/events) and the [Chanukah page](/holidays/chanukah) for the community menorah lighting and celebrations in Lafayette, and call 925-384-7242 to hear what is planned. If you cannot be with others, [light along online](/menorah) with the blessings and the candle order for each night. For the local story, read [Chanukah in Lamorinda](/learn/chanukah-in-lamorinda).
+Chanukah is a family and community holiday. Check [events](/events) and the [Chanukah page](/holidays/chanukah) for the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM in Lafayette. If you cannot be with others, [light along online](/menorah) with the blessings and the candle order for each night. For the local story, read [Chanukah in Lamorinda](/learn/chanukah-in-lamorinda).
 
 ## Common questions
 
@@ -77,5 +77,5 @@ Chabad of Lamorinda holds a community Chanukah celebration with a grand menorah 
 ## Take the next step
 
 - Learn the order and blessings in [how to light the menorah](/learn/chanukah-menorah), and light along at [/menorah](/menorah).
-- Call 925-384-7242 for a menorah and candles, or to hear what is planned in Lafayette, Moraga and Orinda.
+- Get a menorah and candles at [Bay Kosher](/programs/bay-kosher) or call 925-384-7242, and [sign up for the December 6 menorah lighting](/events/chanukah-grand-menorah-lighting-2026).
 - Read [Chanukah in Lamorinda](/learn/chanukah-in-lamorinda) and bring a friend.

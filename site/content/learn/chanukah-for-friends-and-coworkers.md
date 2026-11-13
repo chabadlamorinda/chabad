@@ -38,7 +38,7 @@ Chanukah is not a major day off work, so many Jewish people go to work or school
 
 ## Seeing a menorah up close
 
-Public menorah lightings welcome everyone. According to Chabad.org, they are open to all, children are welcome, nothing needs to be brought, and it is wise to dress warmly for outdoor events. In Lafayette, Moraga and Orinda, call Rabbi Labkowski at 925-384-7242 to hear what is planned, and read about [public menorah lightings](/learn/public-menorah-lighting).
+Public menorah lightings welcome everyone. According to Chabad.org, they are open to all, children are welcome, nothing needs to be brought, and it is wise to dress warmly for outdoor events. In Lafayette, Moraga and Orinda, see the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on December 6 at 4:00 PM, and read about [public menorah lightings](/learn/public-menorah-lighting).
 
 ## Common questions
 
@@ -55,7 +55,7 @@ Yes. It is a friendly, welcome greeting. If you do not know whether someone cele
 A kosher-certified treat or a kind card is a safe, warm choice. Gifts are not required, since the traditional custom is gelt for children.
 
 ### Can anyone come to a menorah lighting in Lafayette, Moraga or Orinda?
-Public lightings are open to everyone, according to Chabad.org. Call Chabad of Lamorinda at 925-384-7242 to hear what is planned.
+Public lightings are open to everyone, according to Chabad.org. Chabad of Lamorinda's [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) is December 6 at 4:00 PM.
 
 ## Take the next step
 

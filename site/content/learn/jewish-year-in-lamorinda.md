@@ -17,7 +17,7 @@ The Jewish year is a journey, and in Lamorinda you do not have to travel it alon
 
 ## Winter: lights and trees
 
-On **[Chanukah](/holidays/chanukah)** we gather for a grand menorah lighting and community celebration with latkes, donuts and music, and kids make their own menorah. You can also be a Chanukah lamplighter by sponsoring a night of the community menorah. In the heart of winter, **[Tu BiShvat](/holidays/tu-bishvat)** is our family celebration of the New Year for Trees.
+On **[Chanukah](/holidays/chanukah)** we gather for the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) at Lafayette Plaza Park, with a Gelt Drop, a giant dreidel game, donuts and hot cocoa. You can also be a Chanukah lamplighter by sponsoring a night of the community menorah. In the heart of winter, **[Tu BiShvat](/holidays/tu-bishvat)** is our family celebration of the New Year for Trees.
 
 ## Spring: Purim to Shavuot
 

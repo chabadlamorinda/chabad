@@ -114,7 +114,8 @@ ${formHtml(X, f, prefillOf(f, req.query))}
     const { out, errors, amount } = readAnswers(f, (req.body && req.body.fields) || {});
     if (errors.length) return res.status(400).json({ code: 'invalid', error: t('Please fill in: {fields}', { fields: errors.map((e) => t(e)).join(', ') }), fields: errors });
     const m = readMember ? await readMember(req) : null, name = clean(out.name || (m && m.name), 100), email = (out.email || (m && m.email) || '').toLowerCase();
-    if (!name || !validEmail(email)) return res.status(400).json({ code: 'invalid_contact', error: t('Please add your name and email so the Rabbi can reach you.') });
+    const ef = f.fields.find((x) => x.type === 'email'), phoneOnly = !validEmail(email) && ef && !ef.required && out.phone; // a phone number is enough when the email is optional (someone asking for help)
+    if (!name || (!validEmail(email) && !phoneOnly)) return res.status(400).json({ code: 'invalid_contact', error: t('Please add your name and email so the Rabbi can reach you.') });
     const id = 'f_' + crypto.randomBytes(12).toString('hex');
     await q('INSERT INTO form_responses (id, form_id, member_id, name, email, data, amount_cents) VALUES ($1,$2,$3,$4,$5,$6,$7)', [id, f.id, m ? m.id : null, name, email, JSON.stringify(out), Math.round(amount * 100)]);
     const lines = f.fields.map((x) => { const v = out[x.id]; const s = Array.isArray(v) ? (x.type === 'children' ? v.map((r) => Object.values(r).filter(Boolean).join(', ')).join(' | ') : v.join(', ')) : v === true ? 'yes' : v === false ? 'no' : v; return s ? `${x.label}: ${s}` : null; }).filter(Boolean).join('\n');
@@ -123,7 +124,7 @@ ${formHtml(X, f, prefillOf(f, req.query))}
     // The confirmation repeats the answers only to a signed-in member's own email (so the form can't be used to send text to strangers).
     const own = m && m.email === email, L = ['he', 'ru'].includes(req.get('x-lang')) ? req.get('x-lang') : 'en';
     if (mailer && f.id === 'newsletter' && confirmNews) mailer.send({ to: email, subject: t('Please confirm: the weekly email from {org}', { org: C.org.name }), text: t('Please confirm you would like the weekly email from {org}:', { org: C.org.name }) + `\n${confirmNews(email, L)}\n\n` + t('If you did not ask for it, ignore this email.') }).catch((e) => log.error('newsletter confirm:', e && e.message));
-    else if (mailer) mailer.send({ to: email, subject: t('We received it: {title}', { title: f.title }), text: t('Thank you! We received your form and will be in touch soon.') + (own ? `\n\n${lines}` : '') + `\n\n${C.org.name} · ${C.org.phone}` }).catch((e) => log.error('form confirm:', e && e.message));
+    else if (mailer && validEmail(email)) mailer.send({ to: email, subject: t('We received it: {title}', { title: f.title }), text: t('Thank you! We received your form and will be in touch soon.') + (own ? `\n\n${lines}` : '') + `\n\n${C.org.name} · ${C.org.phone}` }).catch((e) => log.error('form confirm:', e && e.message));
     const p = f.payment, pay = p && (amount || p.optional) && amount <= MAX_CARD ? giveUrl(p.fund, amount || 0, `${f.title}: ${name}`) : null;
     res.json({ ok: true, amount, payUrl: pay, tooLarge: amount > MAX_CARD });
   }));

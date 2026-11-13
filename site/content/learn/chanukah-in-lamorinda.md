@@ -16,7 +16,7 @@ Our own area has a story too. In 2017, more than 200 neighbors gathered at Lafay
 ## Ways to celebrate Chanukah in Lamorinda
 
 1. **Come to the grand menorah lighting.** It is open to every Jew and every neighbor, with no membership and no tickets needed to be part of the light.
-2. **Make a menorah with your kids.** Chabad of Lamorinda's Chanukah programs include a make-your-own-menorah activity for children. See [Chanukah for kids](/learn/chanukah-for-kids).
+2. **Make a menorah with your kids.** At the December 6 menorah lighting there is a Gelt Drop, a giant dreidel game and LED light wands for kids. See also [Chanukah for kids](/learn/chanukah-for-kids).
 3. **Light at home each night.** Learn the blessings and the order in [how to light the Chanukah menorah](/learn/chanukah-menorah), and see tonight's candle lighting time for Lafayette, Moraga and Orinda on the [Chanukah page](/holidays/chanukah).
 4. **Invite friends over.** [Hosting a Chanukah party](/learn/hosting-a-chanukah-party) has simple ideas, and [Chanukah foods](/learn/chanukah-foods) explains why we eat latkes and donuts.
 5. **Sponsor a night.** Be a Chanukah lamplighter by sponsoring a night of the community menorah. Call 925-384-7242.

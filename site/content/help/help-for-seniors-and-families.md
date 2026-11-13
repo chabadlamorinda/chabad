@@ -10,7 +10,7 @@ If you, your parent or a neighbor is alone, unwell, getting older or having a ha
 
 ## Ask for help
 
-Whatever you need, we will do our best to give it, to anyone who needs it. Tell us what is going on. It is private: only the Rabbi and the Rebbetzin see it. You can ask for yourself or for someone else.
+Whatever you need, we will do our best to give it, to anyone who needs it. Tell us what is going on. It is confidential: your request goes straight to the Rabbi and the Rebbetzin. You can ask for yourself or for someone else.
 
 - A visit at home, in the hospital or in a care home
 - A phone call or friendly company
@@ -34,7 +34,7 @@ Visiting the sick, bikur cholim, is a great mitzvah. The Rabbi and Rebbetzin vis
 
 ## Financial help
 
-We offer whatever is needed, to whoever needs it. Hard times can happen to anyone. If you are struggling, whether it is food, a bill, tuition or an emergency, tell us. Nothing is too small to ask about, and it stays between you and us.
+We will do our best to help, whatever is needed. Hard times can happen to anyone. If you are struggling, whether it is food, a bill, tuition or an emergency, tell us. Nothing is too small to ask about, and it stays between you and us.
 
 ## Volunteer
 
@@ -46,7 +46,7 @@ More ideas in [volunteering in Lamorinda](/learn/volunteering-in-lamorinda) and 
 
 ## Sponsor visits and help for those in need
 
-Your gift to the Chesed Fund goes to visiting seniors and the sick and to helping families in need. Give any amount, once or monthly, or in honor or in memory of someone. Sponsors can choose to sponsor a visit, a Shabbat package, a ride or a family's need.
+Your gift to the Chesed Fund goes to visiting seniors and the sick and to helping families in need. Give any amount, once or monthly, or in honor or in memory of someone. Your gift supports all of this work.
 
 <p class="btns"><a class="btn gold" href="/donate?fund=chesed#give">Sponsor visits and help</a></p>
 
@@ -56,13 +56,13 @@ Your gift to the Chesed Fund goes to visiting seniors and the sick and to helpin
 
 Call Chabad of Lamorinda at 925-384-7242 or [ask for help online](/forms/need-help). We can arrange a visit, a call, a ride or a Shabbat meal. You do not need to be a member.
 
-### Who visits the sick in the hospital in Lamorinda?
+### Who visits the sick in the hospital near Lamorinda?
 
 The Rabbi and Rebbetzin visit at home, in the hospital and in care facilities. Call 925-384-7242 or [ask for a visit](/forms/need-help).
 
 ### Can Chabad help with financial need?
 
-Tell us what you need at [the help form](/forms/need-help) or by phone, 925-384-7242. It is private, and nothing is too small to ask about.
+Tell us what you need at [the help form](/forms/need-help) or by phone, 925-384-7242. It is confidential, and nothing is too small to ask about.
 
 ### How can I volunteer to visit seniors or the sick?
 

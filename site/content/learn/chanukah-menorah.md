@@ -66,7 +66,7 @@ Blessed are You, L-rd our G-d, King of the universe, who has made us holy with H
 
 **Second blessing (every night):**
 
-בָּרוּךְ אַתָּה ה' אֱלֹקֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁעָשָׂה נִסִּים לַאֲבוֹתֵינוּ, בַּיָּמִים הָהֵם בִּזְּמַן הַזֶּה
+בָּרוּךְ אַתָּה ה' אֱלֹקֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁעָשָׂה נִסִּים לַאֲבוֹתֵינוּ, בַּיָּמִים הָהֵם בִּזְמַן הַזֶּה
 
 Baruch atah Ado-nai, Elo-heinu melech ha'olam, she'asah nissim la'avoteinu, bayamim haheim bizman hazeh.
 
@@ -74,23 +74,23 @@ Blessed are You, L-rd our G-d, King of the universe, who performed miracles for 
 
 **Third blessing (first night only, or the first time you light this Chanukah):**
 
-בָּרוּךְ אַתָּה ה' אֱלֹקֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁהֶחֱיָנוּ וְקִיְּמָנוּ וְהִגִּיעָנוּ לַזְּמַן הַזֶּה
+בָּרוּךְ אַתָּה ה' אֱלֹקֵינוּ מֶלֶךְ הָעוֹלָם, שֶׁהֶחֱיָנוּ וְקִיְּמָנוּ וְהִגִּיעָנוּ לִזְמַן הַזֶּה
 
-Baruch atah Ado-nai, Elo-heinu melech ha'olam, shehecheyanu v'kiy'manu v'higi'anu lazman hazeh.
+Baruch atah Ado-nai, Elo-heinu melech ha'olam, shehecheyanu v'kiy'manu v'higi'anu lizman hazeh.
 
 Blessed are You, L-rd our G-d, King of the universe, who has kept us alive, sustained us and brought us to this season.
 
-On the first night say all three blessings, then light. On the other seven nights say only the first two. On the first night, light the newest candle (the far-right one) and then, on later nights, begin from the newest candle at the far left.
+On the first night say all three blessings, then light. On the other seven nights say only the first two. Always light the newest candle first: on the first night that is the single candle, and on later nights it is the one on the far left; then continue to the right.
 
 ### After the lighting: Haneirot Halalu
 
 Right after lighting, sing or read this short passage:
 
-הַנֵּרוֹת הַלָּלוּ אֲנַחְנוּ מַדְלִיקִין עַל הַנִּסִּים וְעַל הַנִּפְלָאוֹת, עַל הַתְּשׁוּעוֹת וְעַל הַמִּלְחָמוֹת, שֶׁעָשִׂיתָ לַאֲבוֹתֵינוּ בַּיָּמִים הָהֵם בַּזְּמַן הַזֶּה. וְכָל שְׁמוֹנַת יְמֵי חֲנֻכָּה הַנֵּרוֹת הַלָּלוּ קֹדֶשׁ הֵם, וְאֵין לָנוּ רְשׁוּת לְהִשְׁתַּמֵּשׁ בָּהֶם אֶלָּא לִרְאוֹתָם בִּלְבָד, כְּדֵי לְהוֹדוֹת וּלְהַלֵּל לְשִׁמְךָ הַגָּדוֹל עַל נִסֶּיךָ וְעַל נִפְלְאוֹתֶיךָ וְעַל יְשׁוּעָתֶךָ
+הַנֵּרוֹת הַלָּלוּ אֲנַחְנוּ מַדְלִיקִין עַל הַנִּסִּים וְעַל הַנִּפְלָאוֹת, עַל הַתְּשׁוּעוֹת וְעַל הַמִּלְחָמוֹת, שֶׁעָשִׂיתָ לַאֲבוֹתֵינוּ בַּיָּמִים הָהֵם בַּזְּמַן הַזֶּה, עַל יְדֵי כֹּהֲנֶיךָ הַקְּדוֹשִׁים. וְכָל שְׁמוֹנַת יְמֵי חֲנֻכָּה הַנֵּרוֹת הַלָּלוּ קֹדֶשׁ הֵם, וְאֵין לָנוּ רְשׁוּת לְהִשְׁתַּמֵּשׁ בָּהֶם אֶלָּא לִרְאוֹתָם בִּלְבָד, כְּדֵי לְהוֹדוֹת וּלְהַלֵּל לְשִׁמְךָ הַגָּדוֹל עַל נִסֶּיךָ וְעַל נִפְלְאוֹתֶיךָ וְעַל יְשׁוּעָתֶךָ
 
-Haneirot halalu anachnu madlikin al hanissim v'al hanifla'ot, al hatshu'ot v'al hamilchamot, she'asita la'avoteinu bayamim haheim bazman hazeh. V'chol shmonat y'mei Chanukah haneirot halalu kodesh heim, v'ein lanu r'shut l'hishtamesh bahem ela lir'otam bilvad, k'dei l'hodot ul'halel l'shimcha hagadol al nisecha v'al nifle'otecha v'al y'shu'atecha.
+Haneirot halalu anachnu madlikin al hanissim v'al hanifla'ot, al hatshu'ot v'al hamilchamot, she'asita la'avoteinu bayamim haheim bazman hazeh, al y'dei kohanecha hak'doshim. V'chol shmonat y'mei Chanukah haneirot halalu kodesh heim, v'ein lanu r'shut l'hishtamesh bahem ela lir'otam bilvad, k'dei l'hodot ul'halel l'shimcha hagadol al nisecha v'al nifle'otecha v'al y'shu'atecha.
 
-These lights we kindle for the miracles, the wonders, the salvations and the wars that You performed for our ancestors in those days, at this time. All eight days of Chanukah these lights are holy, and we have no permission to use them, only to look at them, in order to thank and praise Your great Name for Your miracles, Your wonders and Your salvations.
+These lights we kindle for the miracles, the wonders, the salvations and the wars that You performed for our ancestors in those days, at this time, through Your holy priests. All eight days of Chanukah these lights are holy, and we have no permission to use them, only to look at them, in order to thank and praise Your great Name for Your miracles, Your wonders and Your salvations.
 
 ### Then Maoz Tzur
 

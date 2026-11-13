@@ -747,7 +747,7 @@
   {
     "id": "need-help",
     "title": "I need help, or I know someone who does",
-    "intro": "Seniors, someone sick or homebound, a family going through a hard time, or a need for financial help. Tell us, and we will see how to help. It stays private: only the Rabbi and the Rebbetzin see it.",
+    "intro": "Seniors, someone sick or homebound, a family going through a hard time, or a need for financial help. Tell us, and we will see how to help. It is confidential: your request goes straight to the Rabbi and the Rebbetzin.",
     "button": "Ask for help",
     "noGift": true,
     "fields": [

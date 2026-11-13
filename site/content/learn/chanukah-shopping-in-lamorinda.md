@@ -5,7 +5,7 @@ category: Lamorinda
 related: chanukah-foods, menorah-oil-and-candles, chanukah-gelt, chanukah-in-lamorinda
 local: Cannot find something for Chanukah? Call or text Rabbi Labkowski at 925-384-7242 and we will help, or order from Bay Kosher.
 ---
-Chanukah needs very little: a menorah, candles or oil, and a family to light with. Everything else (donuts, latkes, dreidels, gelt) is joy added on top. This is a simple shopping list for families in Lafayette, Moraga and Orinda, with what to look for in each item. **The easiest answer: [Bay Kosher](/programs/bay-kosher), our own local kosher market, is always stocked and always kosher.** Use it for every item on this list. And if you are not sure what to buy, call or text Chabad of Lamorinda at 925-384-7242 and we will help.
+Chanukah needs very little: a menorah, candles or oil, and a family to light with. Everything else (donuts, latkes, dreidels, gelt) is joy added on top. This is a simple shopping list for families in Lafayette, Moraga and Orinda, with what to look for in each item. **The easiest answer: [Bay Kosher](/programs/bay-kosher), our kosher market, is always stocked and always kosher.** Use it for every item on this list. And if you are not sure what to buy, call or text Chabad of Lamorinda at 925-384-7242 and we will help.
 
 ## 1. A menorah
 
@@ -23,7 +23,7 @@ Bay Kosher always has Chanukah candles and oil in stock. Other stores' stock cha
 We eat foods fried in oil to remember the miracle of the oil ([why we eat them](/learn/chanukah-foods)). For donuts, the question is kosher: a bakery donut or a mix is not automatically kosher.
 
 - At [Bay Kosher](/programs/bay-kosher) everything is kosher, so you never have to check. Elsewhere, look for a reliable kosher certification (hechsher) on the package or from the bakery.
-- If you are baking at home, check the label of every packaged ingredient, and use kosher oil and a clean pan.
+- If you are baking at home, check the label of every packaged ingredient, and use kosher oil, and cook in a pan that is kosher (a kitchen that is not kosher needs the Rabbi's guidance first).
 - If you are not sure, ask us. Donuts are served for free at our [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on December 6.
 
 ## 4. Latkes
