@@ -2,7 +2,7 @@
 title: Simchat Bat: Celebrating and Naming a Baby Girl
 description: How a Jewish baby girl is named at the Torah reading, celebrating with a kiddush, choosing her Hebrew name, and how the Rabbi can help arrange it.
 category: Life cycle
-related: baby-naming, jewish-baby-names, hebrew-names, new-parents-in-lamorinda
+related: baby-naming, hebrew-names-for-girls, jewish-baby-names, hebrew-names, new-parents-in-lamorinda
 local: A new daughter in Lafayette, Moraga or Orinda? Mazal tov! Call Rabbi Yisroel Labkowski at 925-384-7242 to arrange her naming at the Torah.
 ---
 Mazal tov! A new daughter is a great blessing. Simchat bat means "joy of a daughter," and it is the name many families use for the celebration of a baby girl. The heart of it is simple: she receives her Hebrew name at the Torah reading, and family and friends share the joy.

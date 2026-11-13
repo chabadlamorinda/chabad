@@ -2,7 +2,7 @@
 title: What Does Mazal Tov Mean? Luck, Mazal and Astrology in Judaism
 description: What does Mazal Tov mean? Judaism's view of luck, mazal and astrology, why Israel is above the stars, and how mitzvahs and prayer change things.
 category: Jewish ideas
-related: hebrew-phrases, ayin-hara, hashgacha-pratit, free-will, kabbalah
+related: hebrew-phrases, segulot, ayin-hara, hashgacha-pratit, free-will, kabbalah
 local: Have a simcha to celebrate? Share your Mazal Tov with the community at /community, or call 925-384-7242.
 ---
 Mazal tov (מַזָּל טוֹב) is the Hebrew greeting for congratulations, and it literally means "good fortune" or "a good sign." Jewish tradition teaches that mazal is a spiritual channel through which blessing flows from above, but also that a Jew is never trapped by the stars.

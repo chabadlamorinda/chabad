@@ -2,7 +2,7 @@
 title: Как зажигать ханукальные свечи на работе, в общежитии и в поездке
 description: Как зажигать ханукию вне дома: в общежитии, в офисе, в отеле или у друзей, и когда произносить благословения.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-away-from-home, chanukah-story, jewish-college-students, kosher-when-traveling
+related: chanukah-menorah, chanukah-for-friends-and-coworkers, chanukah-away-from-home, chanukah-story, jewish-college-students, kosher-when-traveling
 local: Нужны ханукия и свечи для общежития, офиса или поездки? Позвоните в Хабад Ламоринды по телефону 925-384-7242, и мы поможем. Смотрите chabadoflamorinda.com/holidays/chanukah.
 ---
 Ханукию зажигают там, где живут и спят, поэтому студент зажигает в своей комнате в общежитии, а путешественник в номере отеля. Зажечь ханукию в офисе прекрасный способ рассказать о чуде, но обычно это не заменяет зажигания дома, и часто его делают без благословений.

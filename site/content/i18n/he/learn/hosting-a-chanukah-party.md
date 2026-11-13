@@ -2,7 +2,7 @@
 title: איך מארחים מסיבת חנוכה: מדריך פשוט
 description: איך מארחים מסיבת חנוכה חמה בבית: הדלקת החנוכייה יחד, הברכות, מאכלים, סביבון, דמי חנוכה, רעיונות לילדים, והזמנת מישהו חדש.
 category: Shabbat & holidays
-related: chanukah-menorah, menorah-oil-and-candles, chanukah-foods, dreidel, hachnasat-orchim
+related: chanukah-menorah, sufganiyot, latkes, menorah-oil-and-candles, chanukah-foods, dreidel, hachnasat-orchim
 local: רוצים חנוכייה, נרות או סביבון למסיבה? התקשרו לבית חב״ד למורינדה בטלפון 925-384-7242, וראו את אירועי החנוכה שלנו ללאפייט, מוראגה ואורינדה.
 ---
 חנוכה הוא החג המושלם לפתוח את הבית. הוא נמשך שמונה לילות, המצווה העיקרית לוקחת כמה דקות, וכולם, מהפעוטות ועד הסבים והסבתות, יכולים להשתתף. מסיבת חנוכה לא צריכה להיות גדולה או מפוארת: חנוכייה, כמה לביבות, סביבון וכמה חברים הם ערב נפלא.

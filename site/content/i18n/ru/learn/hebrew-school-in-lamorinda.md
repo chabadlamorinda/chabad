@@ -2,7 +2,7 @@
 title: Еврейская школа в Лафайетте, Мораге и Оринде: Еврейская школа Ламоринды
 description: Еврейская школа для детей из Лафайетта, Мораги и Оринды от 3 до 13 лет: воскресенье с 10 до 12, $600, членство не нужно.
 category: Lamorinda
-related: hebrew-alphabet, raising-jewish-kids-in-a-small-community, jewish-parenting, bar-mitzvah, bat-mitzvah
+related: hebrew-alphabet, choosing-jewish-education, raising-jewish-kids-in-a-small-community, jewish-parenting, bar-mitzvah, bat-mitzvah
 local: Запишитесь в Еврейскую школу Ламоринды на chabadoflamorinda.com/forms/hebrew-school или звоните 925-384-7242.
 ---
 Ищете еврейскую школу в Лафайетте, Мораге или Оринде, куда ваши дети будут ходить с радостью? **Еврейская школа Ламоринды** в Хабаде Ламоринды в Лафайетте предлагает живое, увлекательное еврейское обучение раз в неделю, по воскресеньям, всего два часа. Она открыта для каждого еврейского ребенка, без членства в синагоге и без принадлежности к общине.

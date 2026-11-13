@@ -2,7 +2,7 @@
 title: Ханука для детей: занятия, истории и традиции
 description: Простые способы сделать Хануку особенной для детей: своя ханукия, история простыми словами, дрейдл, гелт, поделки, песни и мицва каждый вечер.
 category: Shabbat & holidays
-related: chanukah-menorah, presenting-a-jewish-holiday-in-class, dreidel, chanukah-gelt, chanukah-story
+related: chanukah-menorah, sufganiyot, chanukah-gifts, presenting-a-jewish-holiday-in-class, dreidel, chanukah-gelt, chanukah-story
 local: Детские ханукальные мероприятия, CKids и еврейская школа для семей Лафайетта, Мораги и Оринды: chabadoflamorinda.com/holidays/chanukah или 925-384-7242.
 ---
 Ханука создана для детей: огни, песни, игры, гелт и пончики восемь вечеров подряд. Немного подготовки - и эти вечера превратятся в воспоминания, а еще в крепкое, радостное еврейское самосознание.

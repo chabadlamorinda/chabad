@@ -2,7 +2,7 @@
 title: חנוכה לילדים: פעילויות, סיפורים ומנהגים
 description: דרכים קלות להפוך את חנוכה למיוחד לילדים: חנוכייה משלהם, הסיפור בפשטות, סביבון, דמי חנוכה, יצירה, שירים ומצווה בכל לילה.
 category: Shabbat & holidays
-related: chanukah-menorah, presenting-a-jewish-holiday-in-class, dreidel, chanukah-gelt, chanukah-story
+related: chanukah-menorah, sufganiyot, chanukah-gifts, presenting-a-jewish-holiday-in-class, dreidel, chanukah-gelt, chanukah-story
 local: אירועי חנוכה לילדים, CKids ובית ספר עברי למשפחות בלאפייט, מוראגה ואורינדה: chabadoflamorinda.com/holidays/chanukah או 925-384-7242.
 ---
 חנוכה נועד לילדים: אורות, שירים, משחקים, דמי חנוכה וסופגניות, שמונה לילות ברצף. קצת תכנון הופך את הלילות האלה לזיכרונות, ולזהות יהודית חזקה ושמחה.

@@ -2,7 +2,7 @@
 title: Hebrew School in Lafayette, Moraga and Orinda: Lamorinda Hebrew School
 description: Hebrew school for Lafayette, Moraga and Orinda kids ages 3 to 13: Sundays 10 to 12, $600, no membership needed. Lamorinda Hebrew School.
 category: Lamorinda
-related: hebrew-alphabet, raising-jewish-kids-in-a-small-community, jewish-parenting, bar-mitzvah, bat-mitzvah
+related: hebrew-alphabet, choosing-jewish-education, raising-jewish-kids-in-a-small-community, jewish-parenting, bar-mitzvah, bat-mitzvah
 local: Register for Lamorinda Hebrew School at chabadoflamorinda.com/forms/hebrew-school or call 925-384-7242.
 ---
 Looking for a Hebrew school in Lafayette, Moraga or Orinda that your kids will actually look forward to? **Lamorinda Hebrew School** at Chabad of Lamorinda in Lafayette offers hands-on, fun Jewish learning once a week, on Sundays, for just two hours. It is open to every Jewish child, with no synagogue membership or affiliation required.

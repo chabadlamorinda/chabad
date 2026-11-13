@@ -2,7 +2,7 @@
 title: Символ «хай»: смысл слова «хай» и числа 18
 description: Что означает ивритское слово «хай», почему оно равно 18, почему евреи дарят суммы, кратные 18, и как «хай» связан с «Лехаим».
 category: Jewish ideas
-related: jewish-symbols, lamed-vav-tzaddikim, gematria, jewish-jewelry, star-of-david, tzedakah, hebrew-alphabet
+related: jewish-symbols, gifts-in-multiples-of-18, lamed-vav-tzaddikim, gematria, jewish-jewelry, star-of-david, tzedakah, hebrew-alphabet
 local: Давайте цдаку суммами, кратными «хай», через chabadoflamorinda.com/donate или звоните в Хабад Ламоринды по телефону 925-384-7242.
 ---
 Хай (חַי) - это ивритское слово, означающее «живой» или «жизнь», которое пишется двумя буквами, хет и йуд. Поскольку в сумме эти буквы дают 18, евреи дарят подарки и дают цдаку суммами, кратными 18, как благословение на жизнь.

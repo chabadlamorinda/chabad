@@ -2,7 +2,7 @@
 title: Jewish Wedding on a Budget: The Essentials and What You Can Skip
 description: What a Jewish wedding truly needs (ketubah, chuppah, ring, witnesses, minyan) versus the extras, the value of simplicity, and ways to save.
 category: Life cycle
-related: jewish-wedding, ketubah, sheva-brachot, choosing-a-wedding-date
+related: jewish-wedding, bar-bat-mitzvah-on-a-budget, ketubah, sheva-brachot, choosing-a-wedding-date
 local: Couples in Lafayette, Moraga, Orinda and the East Bay: Rabbi Yisroel Labkowski is glad to help plan a meaningful Jewish wedding, 925-384-7242.
 ---
 A Jewish wedding does not need to be expensive to be beautiful and fully kosher. The essentials are few and simple. Everything else is a choice. Knowing the difference can take a lot of pressure off a couple and their families.

@@ -2,7 +2,7 @@
 title: שמות עבריים: איך מוצאים, בוחרים ומשתמשים בשם היהודי
 description: מהו שם עברי, איך הוא בנוי, איך מוצאים את השם שלכם אם אינכם יודעים אותו, ומתי משתמשים בו בחיים היהודיים.
 category: Life cycle
-related: baby-naming, adding-a-name-for-healing, getting-a-hebrew-name-as-an-adult, russian-speaking-jews-in-lamorinda, jewish-genealogy, bar-mitzvah, bat-mitzvah, hebrew-alphabet
+related: baby-naming, hebrew-names-for-boys, hebrew-names-for-girls, adding-a-name-for-healing, getting-a-hebrew-name-as-an-adult, russian-speaking-jews-in-lamorinda, jewish-genealogy, bar-mitzvah, bat-mitzvah, hebrew-alphabet
 local: לא בטוחים מה השם העברי שלכם, או שמעולם לא קיבלתם שם? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לכם למצוא או לבחור שם.
 ---
 שם עברי הוא השם היהודי שאדם מקבל כשהוא נולד: בברית אצל בן, או בקריאת שם בתורה אצל בת. כותבים אותו כשם הפרטי, ואחריו "בן" או "בת" ושם של אחד ההורים, למשל משה בן אברהם או לאה בת שרה.

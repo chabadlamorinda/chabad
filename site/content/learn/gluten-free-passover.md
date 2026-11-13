@@ -2,7 +2,7 @@
 title: Gluten-Free Matzah: Passover with Celiac or a Wheat Allergy
 description: Is there gluten-free matzah for the Seder? Learn about oat matzah, why rice or potato matzah does not count, and how to plan Passover with celiac disease.
 category: Kosher
-related: matzah, kitniyot, passover-seder, kosher-for-passover, passover-shopping-list, passover-for-beginners
+related: matzah, passover-seder-menu, kitniyot, passover-seder, kosher-for-passover, passover-shopping-list, passover-for-beginners
 local: Celiac or a wheat allergy in your family? Call Rabbi Labkowski at 925-384-7242 well before Passover.
 ---
 People who cannot eat wheat can ask the Rabbi about gluten-free oat matzah for the Passover Seder: oats are one of the five grains from which matzah may be made, although some authorities are strict about oat matzah, so the Rabbi will guide you. Rice, potato and tapioca "matzah" do not fulfill the mitzvah, and spelt matzah contains gluten, so it is not safe for celiac disease.

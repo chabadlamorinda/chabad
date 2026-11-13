@@ -2,7 +2,7 @@
 title: January 1st and the Jewish Calendar: A Jewish Look at the Secular New Year
 description: Rosh Hashanah is the Jewish new year, so what is January 1st for a Jew? A warm look at resolutions, taking stock and living in Jewish time.
 category: Jewish ideas
-related: jewish-calendar, cheshbon-hanefesh, teshuvah, making-every-day-count, hebrew-birthday
+related: jewish-calendar, year-end-tzedakah, cheshbon-hanefesh, teshuvah, making-every-day-count, hebrew-birthday
 local: Want to start the year with something Jewish? Rabbi Yisroel Labkowski welcomes families from Lafayette, Moraga and Orinda to a class or a Shabbat meal: 925-384-7242.
 ---
 Fireworks at midnight, and everyone asks about your resolutions. For a Jew, this raises a quiet question: our new year was months ago, on Rosh Hashanah. So what is January 1st? Not a Jewish holiday, but not nothing either.

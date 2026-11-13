@@ -2,7 +2,7 @@
 title: "Хинух: еврейский путь воспитания детей"
 description: Хинух значит воспитывать ребёнка для еврейской жизни на всю жизнь. Смысл, источники и практические шаги для родителей Лафайета, Мораги и Оринда.
 category: Life cycle
-related: jewish-parenting, teaching-children-to-pray, raising-kind-children, choosing-a-jewish-preschool, derech-eretz
+related: jewish-parenting, choosing-jewish-education, teaching-children-to-pray, raising-kind-children, choosing-a-jewish-preschool, derech-eretz
 local: Вопросы о еврейском образовании вашего ребёнка? Позвоните раввину Лабковскому, 925-384-7242, или загляните на /programs/hebrew-school и /programs/jewish-preschool.
 ---
 Хинух (חִנּוּךְ) это еврейское слово для воспитания, и оно значит больше, чем передача знаний: это подготовка ребёнка, на его уровне, к еврейской жизни на всю жизнь. Родители первые учителя, а самые сильные уроки преподаются личным примером, с теплом и радостью.

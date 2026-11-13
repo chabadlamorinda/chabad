@@ -2,7 +2,7 @@
 title: Как научиться читать на иврите взрослому
 description: Дружеское руководство для взрослых, которые учатся читать на иврите: алфавит, огласовки, чтение сидура, советы по практике и с чего начать.
 category: Prayer & Torah
-related: hebrew-alphabet, lashon-hakodesh, siddur, hebrew-phrases, prayer
+related: hebrew-alphabet, hebrew-lessons-in-lamorinda, lashon-hakodesh, siddur, hebrew-phrases, prayer
 local: Учитесь читать на иврите в Хабаде Ламоринды. Узнайте о занятиях для взрослых на chabadoflamorinda.com/programs/adult-education или по телефону 925-384-7242.
 ---
 Любой взрослый может научиться читать на иврите, и большинство удивляются, как быстро это получается. Зная 22 буквы, несколько знаков огласовки и немного регулярно практикуясь, уже через несколько недель вы сможете следить за текстом в сидуре.

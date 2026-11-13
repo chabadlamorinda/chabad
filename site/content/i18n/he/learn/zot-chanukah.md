@@ -2,7 +2,7 @@
 title: זאת חנוכה: היום השמיני של חנוכה
 description: למה היום האחרון של חנוכה נקרא "זאת חנוכה", קריאת התורה שממנה בא השם, משמעותו בתורת החסידות, ואיך לנצל אותו.
 category: Shabbat & holidays
-related: chanukah-menorah, lessons-of-chanukah, chanukah-story, al-hanissim-and-hallel, chanukah-for-kids
+related: chanukah-menorah, chanukah-night-by-night, lessons-of-chanukah, chanukah-story, al-hanissim-and-hallel, chanukah-for-kids
 local: הדליקו איתנו את כל שמונת הנרות: הדלקות החנוכייה והאירועים של השנה למשפחות בלאפייט, מוראגה ואורינדה מופיעים בעמוד חנוכה, או התקשרו 925-384-7242.
 ---
 ליום השמיני והאחרון של חנוכה יש שם משלו: **זאת חנוכה**. בלילה שלפניו דולקים כל שמונת הנרות יחד, הלילה המואר ביותר בשנה. היום עצמו נחשב לשיא של החג כולו ולסיכום שלו.

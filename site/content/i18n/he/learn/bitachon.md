@@ -2,7 +2,7 @@
 title: ביטחון: לבטוח בה׳ כשהחיים לא ודאיים
 description: מהו ביטחון בה׳, במה הוא שונה מאמונה, למה עדיין צריך השתדלות, ודרכים מעשיות לדאוג פחות ולבטוח יותר.
 category: Jewish ideas
-related: belief-in-g-d, living-with-chronic-illness, money-worries, losing-a-job, adon-olam, psalm-23, shmita, hope-in-hard-times, addiction-and-recovery, talking-to-g-d-in-your-own-words, tehillim, prayer, free-will
+related: belief-in-g-d, anxiety-and-worry, living-with-chronic-illness, money-worries, losing-a-job, adon-olam, psalm-23, shmita, hope-in-hard-times, addiction-and-recovery, talking-to-g-d-in-your-own-words, tehillim, prayer, free-will
 local: עוברים תקופה קשה? התקשרו לרב לבקובסקי 925-384-7242 או היכנסו ל-chabadoflamorinda.com/help/talk-to-the-rabbi. אינכם צריכים להתמודד עם זה לבד.
 ---
 ביטחון בה׳ הוא האמון השקט שה׳ אוהב אתכם, מנהיג את העולם ויביא את מה שטוב באמת. הוא הולך צעד אחד מעבר לאמונה. אמונה מאמינה שה׳ יכול לעזור; ביטחון סומך עליו, והאמון הזה מביא שלווה בזמנים לא ודאיים.

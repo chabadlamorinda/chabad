@@ -2,7 +2,7 @@
 title: מיתוסים ועובדות על היהדות: שאלות שאנשים שואלים
 description: תשובות ברורות לשאלות נפוצות על היהדות: ה' אחד, תורה, מיהו יהודי, מצוות, שבת ושבע מצוות בני נח, מ-Chabad.org.
 category: Jewish ideas
-related: why-be-jewish, not-religious-welcome, start-here-jewish-lamorinda, who-is-a-jew, noahide-laws
+related: why-be-jewish, what-is-judaism, not-religious-welcome, start-here-jewish-lamorinda, who-is-a-jew, noahide-laws
 local: שאלו כל דבר, אין שאלה בסיסית מדי. דברו עם הרב ב-/help/talk-to-the-rabbi או התקשרו 925-384-7242.
 ---
 היהדות היא האמונה ואורח החיים של העם היהודי, המבוססת על האמונה בה' אחד בלתי נראה ועל התורה ותרי"ג מצוותיה. נולדים ליהדות מאם יהודייה או מצטרפים בגיור, והיהדות מבקשת מבני אדם שאינם יהודים רק לקיים את שבע מצוות בני נח.

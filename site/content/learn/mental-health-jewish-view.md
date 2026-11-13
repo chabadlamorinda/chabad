@@ -2,7 +2,7 @@
 title: Mental Health: A Jewish View and Where to Find Support
 description: Anxiety, depression and emotional struggles from a Jewish perspective: seeking help is a mitzvah, how faith and therapy work together, and where to turn.
 category: Jewish ideas
-related: bitachon, self-esteem-jewish-view, hope-in-hard-times, suicide-and-jewish-mourning, addiction-and-recovery, simcha, jewish-health-and-body, tehillim
+related: bitachon, anxiety-and-worry, self-esteem-jewish-view, hope-in-hard-times, suicide-and-jewish-mourning, addiction-and-recovery, simcha, jewish-health-and-body, tehillim
 local: Need someone to talk to? Rabbi Yisroel Labkowski is here for anyone in Lafayette, Moraga, Orinda and the East Bay: 925-384-7242. In a crisis, call or text 988.
 ---
 Many people, of every age and background, struggle with anxiety, depression, loss or stress. Judaism takes this seriously. Your mind and soul are precious, and caring for them is a mitzvah.

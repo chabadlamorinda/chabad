@@ -2,7 +2,7 @@
 title: "Gap Year in Israel: What Jewish Families Should Know Before Applying"
 description: A gap year in Israel for Jewish high-school graduates: kinds of programs, questions to ask, and how to decide. Lamorinda families, talk with us.
 category: Life cycle
-related: jewish-teens-in-lamorinda, first-trip-to-israel, jewish-college-students, what-is-a-yeshiva, jewish-identity-for-teens
+related: jewish-teens-in-lamorinda, jewish-overnight-camp, first-trip-to-israel, jewish-college-students, what-is-a-yeshiva, jewish-identity-for-teens
 local: Deciding what comes after high school? Talk it over with Rabbi Labkowski at 925-384-7242 or /help/talk-to-the-rabbi.
 ---
 A gap year in Israel is a year, usually between high school and college, that a young Jewish adult spends in Israel studying Torah, volunteering or both, often in a yeshiva or seminary program. For families in Lafayette, Moraga and Orinda, spring of senior year is when the decision becomes real.

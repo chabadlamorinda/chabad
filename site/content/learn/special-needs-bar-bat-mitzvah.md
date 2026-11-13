@@ -2,7 +2,7 @@
 title: Bar and Bat Mitzvah for a Child with Special Needs
 description: Bar or bat mitzvah for a child with autism, Down syndrome or other needs: what it requires and how to adapt it. A private plan with the Rabbi.
 category: Life cycle
-related: bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, tefillin, attending-a-bar-bat-mitzvah
+related: bar-mitzvah, special-needs-and-jewish-life, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, tefillin, attending-a-bar-bat-mitzvah
 local: Planning a bar or bat mitzvah for a child with special needs? Call Rabbi Yisroel Labkowski at 925-384-7242 for a private one-on-one conversation.
 ---
 Every Jewish child becomes a bar mitzvah at 13 (a boy) or a bat mitzvah at 12 (a girl), including a child with autism, Down syndrome or other needs. The milestone is a change of status, not a performance: the child now counts in the community and is responsible for mitzvos according to their ability.

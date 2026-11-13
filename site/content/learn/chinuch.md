@@ -2,7 +2,7 @@
 title: "Chinuch: The Jewish Way of Educating Children"
 description: Chinuch means educating a child toward a lifetime of Jewish living. Meaning, sources, and practical steps for parents in Lafayette, Moraga and Orinda.
 category: Life cycle
-related: jewish-parenting, teaching-children-to-pray, raising-kind-children, choosing-a-jewish-preschool, derech-eretz
+related: jewish-parenting, choosing-jewish-education, teaching-children-to-pray, raising-kind-children, choosing-a-jewish-preschool, derech-eretz
 local: Questions about your child's Jewish education? Call Rabbi Labkowski at 925-384-7242, or see /programs/hebrew-school and /programs/jewish-preschool.
 ---
 Chinuch (חִנּוּךְ) is the Jewish word for education, and it means more than teaching facts: it means training a child, at the child's own level, toward a lifetime of Jewish living. Parents are the first teachers, and the most powerful lessons are taught by example, with warmth and joy.

@@ -2,7 +2,7 @@
 title: Money Worries: A Jewish Guide to Financial Stress
 description: Тревожитесь о деньгах? Еврейский взгляд на финансовый стресс: доверие, бюджет, малая цдака и просьба о помощи. Для семей Лафайетта, Мораги и Ориндa.
 category: Jewish home
-related: bitachon, losing-a-job, jewish-view-on-wealth, gemach-interest-free-loans, tzedakah-priorities
+related: bitachon, anxiety-and-worry, losing-a-job, jewish-view-on-wealth, gemach-interest-free-loans, tzedakah-priorities
 local: Если с деньгами туго, не нужно справляться одному. Позвоните раву Лабковскому 925-384-7242 или напишите конфиденциально через /help/talk-to-the-rabbi.
 ---
 Ответ иудаизма на финансовый стресс: предпринимать практические шаги и верить, что Б-г обеспечивает, не позволяя тревоге управлять жизнью. Составьте план, тратьте осторожно, продолжайте понемногу давать и просите помощи без стыда.

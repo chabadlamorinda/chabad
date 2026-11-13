@@ -2,7 +2,7 @@
 title: Attending a Jewish Wedding: A Guest's Guide
 description: Invited to a Jewish wedding? What happens from the badeken to breaking the glass, what to wear, what to give, when to arrive and what "Mazal tov" means.
 category: Life cycle
-related: jewish-wedding, jewish-wedding-customs, sheva-brachot, ketubah, jewish-gift-ideas
+related: jewish-wedding, gifts-in-multiples-of-18, jewish-wedding-customs, sheva-brachot, ketubah, jewish-gift-ideas
 local: Invited to a wedding and not sure what to expect? Rabbi Yisroel Labkowski is happy to answer any question, for guests from Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 The invitation came, and you are thrilled, and maybe a little unsure. You do not need to know anything to enjoy a Jewish wedding; the joy carries everyone. But knowing what is coming makes it even sweeter.

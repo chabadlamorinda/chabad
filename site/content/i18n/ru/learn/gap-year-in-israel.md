@@ -2,7 +2,7 @@
 title: "Год в Израиле после школы: что нужно знать еврейским семьям"
 description: Год в Израиле после школы для еврейской молодёжи: виды программ, вопросы к организаторам и как решить. Семьи Ламоринды, поговорите с нами.
 category: Life cycle
-related: jewish-teens-in-lamorinda, first-trip-to-israel, jewish-college-students, what-is-a-yeshiva, jewish-identity-for-teens
+related: jewish-teens-in-lamorinda, jewish-overnight-camp, first-trip-to-israel, jewish-college-students, what-is-a-yeshiva, jewish-identity-for-teens
 local: Решаете, что делать после школы? Поговорите с раввином Лабковским: 925-384-7242 или /help/talk-to-the-rabbi.
 ---
 Год в Израиле («gap year») это год, обычно между школой и колледжем, который молодой еврей или молодая еврейка проводят в Израиле, изучая Тору, занимаясь волонтёрством или и тем и другим, часто в программе ешивы или семинарии. Для семей в Лафайетте, Мораге и Оринде решение становится реальным весной выпускного года.

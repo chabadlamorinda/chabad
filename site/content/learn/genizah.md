@@ -2,7 +2,7 @@
 title: Genizah: What to Do With Old Siddurim, Tefillin and Mezuzahs
 description: How to dispose of an old siddur, tefillin or mezuzah. What is holy, what can be thrown out, and how genizah burial works. Ask Chabad of Lamorinda.
 category: Jewish home
-related: checking-mezuzahs-and-tefillin, jewish-home-library, shemot-names-of-g-d, caring-for-aging-parents, mezuzah
+related: checking-mezuzahs-and-tefillin, why-jews-write-g-d, jewish-home-library, shemot-names-of-g-d, caring-for-aging-parents, mezuzah
 local: Clearing out a home or an old prayer book? Call Rabbi Labkowski at 925-384-7242 and ask how to handle holy items.
 ---
 Worn-out siddurim, tefillin, mezuzah scrolls and other holy items are not thrown away. Jewish law forbids destroying G-d's names and sacred texts, so they are set aside and buried in a process called genizah (גְּנִיזָה, "storing away"), also known as shaimos (שימוש, "[holy] names").

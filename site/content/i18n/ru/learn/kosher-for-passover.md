@@ -2,7 +2,7 @@
 title: Кошерно на Песах: что это значит и как подготовиться
 description: Что делает еду кошерной на Песах, что такое хамец и китнийот, как подготовить кухню и почему важна пасхальная сертификация.
 category: Kosher
-related: chametz, passover-shopping-list, gluten-free-passover, kosher-medicine-and-vitamins, passover-cleaning, selling-your-chametz, matzah, passover-seder, kosher-kitchen
+related: chametz, passover-seder-menu, passover-shopping-list, gluten-free-passover, kosher-medicine-and-vitamins, passover-cleaning, selling-your-chametz, matzah, passover-seder, kosher-kitchen
 local: Продайте хамец на chabadoflamorinda.com/forms/sell-chametz и закажите ручную шмуру-мацу на chabadoflamorinda.com/forms/matzah или звоните: 925-384-7242.
 ---
 «Кошерно на Песах» означает еду, которая не содержит хамеца, квасного зерна, и приготовлена на оборудовании, свободном от хамеца. В течение восьми дней [Песаха](/holidays/passover) евреям нельзя есть хамец и даже владеть им, поэтому обычной, круглогодичной кошерной еды недостаточно.

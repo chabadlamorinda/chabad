@@ -2,7 +2,7 @@
 title: ברית מילה: מדריך פשוט לטקס הברית
 description: מהי ברית מילה, למה עושים אותה ביום השמיני, מי משתתף בה ולמה לצפות בטקס.
 category: Life cycle
-related: baby-naming, sandek-and-kvater, elijah-the-prophet, abraham-and-sarah, shalom-zachar, adult-brit-milah, preparing-for-a-bris, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
+related: baby-naming, hebrew-names-for-boys, sandek-and-kvater, elijah-the-prophet, abraham-and-sarah, shalom-zachar, adult-brit-milah, preparing-for-a-bris, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
 local: מצפים לבן? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לכם לתכנן ברית יפה ואת החגיגה שאחריה.
 ---
 ברית מילה (שנקראת לפעמים פשוט "ברית" או "בריס") היא טקס המילה היהודי, שנעשה לתינוק ביום השמיני לחייו. היא מציינת את כניסתו לברית שה׳ כרת עם אברהם, והיא אחת המסורות העתיקות והנפוצות ביותר בחיים היהודיים.

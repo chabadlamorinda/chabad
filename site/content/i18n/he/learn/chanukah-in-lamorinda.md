@@ -2,7 +2,7 @@
 title: חנוכה בלאפייט, מוראגה ואורינדה: הדלקת חנוכייה, ילדים ודרכים לחגוג
 description: חנוכה ליד הבית בלאפייט, מוראגה ואורינדה: הדלקת החנוכייה הגדולה, חנוכייה לבית, כיף לילדים ואיך מצטרפים. התקשרו אלינו.
 category: Lamorinda
-related: chanukah-menorah, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
+related: chanukah-menorah, public-menorah-lighting, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-for-kids, hosting-a-chanukah-party, chanukah-story
 local: רוצים לדעת מה מתוכנן לחנוכה השנה? התקשרו לרב לבקובסקי 925-384-7242 או ראו /events.
 ---
 חנוכה בלאפייט, מוראגה ואורינדה נחגג בבית בהדלקת החנוכייה בכל אחד משמונת הלילות, וגם יחד עם בית חב״ד למורינדה באירוע החנוכה הקהילתי: הדלקת חנוכייה גדולה, לביבות, סופגניות ומוזיקה. התקשרו לרב לבקובסקי 925-384-7242 או בדקו ב[לוח האירועים](/events) מה מתוכנן השנה.

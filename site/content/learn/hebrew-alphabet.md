@@ -2,7 +2,7 @@
 title: The Hebrew Alphabet: All 22 Letters, Sounds and Meanings
 description: Learn the 22 letters of the Hebrew alphabet (the aleph-bet), their sounds, the five final forms, vowels, and the meaning behind the letters.
 category: Prayer & Torah
-related: torah, lashon-hakodesh, jewish-languages, gematria, hebrew-names, prayer, upsherin
+related: torah, hebrew-lessons-in-lamorinda, lashon-hakodesh, jewish-languages, gematria, hebrew-names, prayer, upsherin
 local: Want to learn to read Hebrew? Call Rabbi Labkowski at 925-384-7242, and ask about our Hebrew school for children.
 ---
 The Hebrew alphabet, called the aleph-bet, has 22 letters, all consonants, written and read from right to left. Vowels are shown with small dots and lines, and five letters take a different form at the end of a word.

@@ -2,7 +2,7 @@
 title: Еврейские подростки в Лафайетте, Мораге и Оринде: программы, волонтерство и заповеди
 description: Еврейские подростки в Лафайетте, Мораге и Оринде: события, бар- и бат-мицва, волонтерство, Шабат и учеба с Хабадом Ламоринды.
 category: Lamorinda
-related: jewish-pride, sending-a-lamorinda-teen-to-college, gap-year-in-israel, tefillin, jewish-college-students, shabbat-candles
+related: jewish-pride, jewish-overnight-camp, sending-a-lamorinda-teen-to-college, gap-year-in-israel, tefillin, jewish-college-students, shabbat-candles
 local: Спрашивайте о программах для подростков и волонтерстве на chabadoflamorinda.com/forms/volunteer или звоните раввину: 925-384-7242.
 ---
 Между уроками, спортом и заявками в колледж неделя подростка в Ламоринде расписана до минуты. Еврейская жизнь легко может оказаться вытесненной. Хабад Ламоринды в Лафайетте - место, где еврейские подростки из Лафайетта, Мораги и Оринды могут чувствовать себя своими, задавать настоящие вопросы и весело проводить время, членство не требуется.

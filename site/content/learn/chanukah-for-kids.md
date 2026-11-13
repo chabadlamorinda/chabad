@@ -2,7 +2,7 @@
 title: Chanukah for Kids: Activities, Stories and Traditions
 description: Easy ways to make Chanukah special for children: their own menorah, the story told simply, dreidel, gelt, crafts, songs and a mitzvah each night.
 category: Shabbat & holidays
-related: chanukah-menorah, presenting-a-jewish-holiday-in-class, dreidel, chanukah-gelt, chanukah-story
+related: chanukah-menorah, sufganiyot, chanukah-gifts, presenting-a-jewish-holiday-in-class, dreidel, chanukah-gelt, chanukah-story
 local: Kids' Chanukah events, CKids and Hebrew School for families in Lafayette, Moraga and Orinda: chabadoflamorinda.com/holidays/chanukah or 925-384-7242.
 ---
 Chanukah is made for children: lights, songs, games, gelt and doughnuts, eight nights in a row. A little planning turns those nights into memories, and into a strong, happy Jewish identity.

@@ -2,7 +2,7 @@
 title: למה להיות יהודי? מה שחיים יהודיים נותנים לנו
 description: למה להיות יהודי היום? הנשמה, השליחות, המשפחה של עם ישראל והמשמעות שמצווה אחת מביאה, בהסבר חם לאור תורת חב״ד.
 category: Jewish ideas
-related: who-is-a-jew, myths-and-facts-about-judaism, doubts-in-faith, chosen-people, thirteen-principles-of-faith, the-soul, purpose-of-life, starting-jewish-observance, jewish-pride
+related: who-is-a-jew, what-is-judaism, myths-and-facts-about-judaism, doubts-in-faith, chosen-people, thirteen-principles-of-faith, the-soul, purpose-of-life, starting-jewish-observance, jewish-pride
 local: כל יהודי מוזמן לחב״ד למורינדה בלאפייט, מכל רקע; אין צורך בחברות. דברו עם הרב בכל עת: 925-384-7242.
 ---
 אנשים רבים גדלים בידיעה שהם יהודים בלי שמישהו הסביר להם למה זה חשוב. בחיים עמוסים ומודרניים זו שאלה הוגנת: למה להיות יהודי? כך עונה היהדות, ובמיוחד תורת החסידות.

@@ -2,7 +2,7 @@
 title: "להציג חנוכה או פסח בכיתה של הילד: מדריך להורים"
 description: תכנית פשוטה של 20 דקות להצגת חנוכה או פסח בכיתה של ילדכם בלפאייט, מוראגה או אורינדה: סיפור, פעילות, מסר ורגישות.
 category: Lamorinda
-related: chanukah-for-kids, dreidel, chanukah-story, passover-with-kids, raising-jewish-kids-in-a-small-community
+related: chanukah-for-kids, chanukah-for-friends-and-coworkers, dreidel, chanukah-story, passover-with-kids, raising-jewish-kids-in-a-small-community
 local: מתכננים ביקור בכיתה? התקשרו לרב לבקובסקי, 925-384-7242, ושאלו במה אפשר לעזור.
 ---
 כדי להציג חג יהודי בכיתה של ילדכם, תכננו כ-20 דקות: ספרו את הסיפור כולו בפשטות, תנו לילדים משהו לעשות בידיים, וסיימו במסר ברור אחד. חנוכה עוסק באור ובאומץ להיות שונה, ופסח עוסק בחירות, ושניהם מתאימים בקלות לכיתה בלפאייט, מוראגה או אורינדה.

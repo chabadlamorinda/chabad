@@ -2,7 +2,7 @@
 title: ללמוד לקרוא עברית בגיל מבוגר
 description: מדריך ידידותי למבוגרים שלומדים לקרוא עברית: האלף בית, הניקוד, קריאה בסידור, טיפים לתרגול ומאיפה מתחילים.
 category: Prayer & Torah
-related: hebrew-alphabet, lashon-hakodesh, siddur, hebrew-phrases, prayer
+related: hebrew-alphabet, hebrew-lessons-in-lamorinda, lashon-hakodesh, siddur, hebrew-phrases, prayer
 local: למדו לקרוא עברית עם חב״ד למורינדה. שאלו על שיעורים למבוגרים ב-chabadoflamorinda.com/programs/adult-education או התקשרו 925-384-7242.
 ---
 כל מבוגר יכול ללמוד לקרוא עברית, ורוב האנשים מופתעים כמה מהר זה בא. עם 22 האותיות, כמה סימני ניקוד ומעט תרגול קבוע, אפשר להתחיל לעקוב בסידור בתוך שבועות.

@@ -2,7 +2,7 @@
 title: "שנת ביניים בישראל: מה משפחות יהודיות צריכות לדעת לפני שמגישים מועמדות"
 description: שנת ביניים בישראל לבוגרי תיכון יהודים: סוגי תכניות, שאלות לשאול, ואיך להחליט. משפחות בלמורינדה, שוחחו איתנו.
 category: Life cycle
-related: jewish-teens-in-lamorinda, first-trip-to-israel, jewish-college-students, what-is-a-yeshiva, jewish-identity-for-teens
+related: jewish-teens-in-lamorinda, jewish-overnight-camp, first-trip-to-israel, jewish-college-students, what-is-a-yeshiva, jewish-identity-for-teens
 local: מחליטים מה אחרי התיכון? שוחחו עם הרב לבקובסקי: 925-384-7242 או /help/talk-to-the-rabbi.
 ---
 שנת ביניים בישראל היא שנה, בדרך כלל בין התיכון לקולג', שבה צעיר או צעירה יהודים שוהים בישראל, לומדים תורה, מתנדבים או שניהם, לעתים בתכנית של ישיבה או סמינר. למשפחות בלפיית, מוראגה ואורינדה, באביב של שנת הלימודים האחרונה ההחלטה הופכת אמיתית.

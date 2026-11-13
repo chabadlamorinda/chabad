@@ -2,7 +2,7 @@
 title: Мифы и факты об иудаизме: вопросы, которые задают люди
 description: Ясные ответы на частые вопросы об иудаизме: единый Б-г, Тора, кто еврей, заповеди, Шаббат и семь законов Ноаха, по Chabad.org.
 category: Jewish ideas
-related: why-be-jewish, not-religious-welcome, start-here-jewish-lamorinda, who-is-a-jew, noahide-laws
+related: why-be-jewish, what-is-judaism, not-religious-welcome, start-here-jewish-lamorinda, who-is-a-jew, noahide-laws
 local: Спрашивайте что угодно, нет слишком простых вопросов. Поговорите с раввином: /help/talk-to-the-rabbi или звоните 925-384-7242.
 ---
 Иудаизм - это вера и образ жизни еврейского народа, основанные на вере в единого незримого Б-га и на Торе с её 613 заповедями, мицвот. В иудаизм рождаются от еврейской матери или приходят через гиюр, а от нееврейских людей иудаизм ждёт лишь соблюдения семи законов Ноаха.

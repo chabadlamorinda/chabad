@@ -2,7 +2,7 @@
 title: הדלקת נרות חנוכה בעבודה, במעונות ובנסיעות
 description: איך מדליקים חנוכייה מחוץ לבית: במעונות הסטודנטים, במשרד, במלון או אצל חברים, ומתי מברכים.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-away-from-home, chanukah-story, jewish-college-students, kosher-when-traveling
+related: chanukah-menorah, chanukah-for-friends-and-coworkers, chanukah-away-from-home, chanukah-story, jewish-college-students, kosher-when-traveling
 local: צריכים חנוכייה ונרות למעונות, למשרד או לנסיעה? התקשרו לחב״ד למורינדה 925-384-7242 ונעזור. ראו chabadoflamorinda.com/holidays/chanukah.
 ---
 מדליקים את החנוכייה במקום שבו גרים וישנים, ולכן סטודנט מדליק בחדר במעונות ומי שנוסע מדליק בחדר המלון. הדלקה במשרד היא דרך יפה לפרסם את הנס, אבל בדרך כלל היא אינה באה במקום ההדלקה בבית, ונהוג לעשות אותה בלי ברכות.

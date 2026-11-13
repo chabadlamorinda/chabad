@@ -2,7 +2,7 @@
 title: Jewish Summer Camp in Lamorinda: Lamorinda Jewish Summer Camp for Ages 2 to 4
 description: Jewish summer camp for toddlers in Lafayette, Moraga and Orinda: ages 2 to 4, seven weeks, 8:30 to 5. See what a day looks like and register early.
 category: Lamorinda
-related: jewish-kids-in-lamorinda, jewish-lamorinda-with-young-children, choosing-a-jewish-preschool, shabbat-in-lamorinda, jewish-year-in-lamorinda
+related: jewish-kids-in-lamorinda, jewish-overnight-camp, jewish-lamorinda-with-young-children, choosing-a-jewish-preschool, shabbat-in-lamorinda, jewish-year-in-lamorinda
 local: Hold a place for your child: register at /forms/summer-camp or call 925-384-7242.
 ---
 Lamorinda Jewish Summer Camp in Lafayette is a toddler summer camp for ages 2 to 4, running seven weeks in summer, 8:30 AM to 5:00 PM, with Jewish songs, Shabbat parties, water play and art. It is $3,200 for the full summer or $500 per week, spaces are limited, and early registration is recommended on the [summer camp form](/forms/summer-camp).

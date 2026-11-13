@@ -2,7 +2,7 @@
 title: Еврейский летний лагерь в Ламоринде: летний лагерь для малышей 2–4 лет
 description: Еврейский летний лагерь для малышей в Лафайетте, Мораге и Оринде: 2–4 года, семь недель, с 8:30 до 17:00. Узнайте о дне в лагере и запишитесь заранее.
 category: Lamorinda
-related: jewish-kids-in-lamorinda, jewish-lamorinda-with-young-children, choosing-a-jewish-preschool, shabbat-in-lamorinda, jewish-year-in-lamorinda
+related: jewish-kids-in-lamorinda, jewish-overnight-camp, jewish-lamorinda-with-young-children, choosing-a-jewish-preschool, shabbat-in-lamorinda, jewish-year-in-lamorinda
 local: Займите место для своего ребёнка: запишитесь на /forms/summer-camp или позвоните: 925-384-7242.
 ---
 Еврейский летний лагерь Ламоринды в Лафайетте — лагерь для малышей 2–4 лет: семь недель летом, с 8:30 до 17:00, с еврейскими песнями, праздниками Шабата, играми с водой и творчеством. Полное лето стоит 3200 долларов, неделя — 500 долларов; мест мало, поэтому лучше записаться заранее на [форме лагеря](/forms/summer-camp).

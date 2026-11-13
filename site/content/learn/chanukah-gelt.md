@@ -2,7 +2,7 @@
 title: Chanukah Gelt: Why We Give Money on Chanukah
 description: Why Jews give Chanukah gelt, when it is given, how the custom connects to education and tzedakah, and ideas for giving gelt to kids.
 category: Shabbat & holidays
-related: chanukah-menorah, dreidel, tzedakah, jewish-parenting
+related: chanukah-menorah, chanukah-gifts, dreidel, tzedakah, jewish-parenting
 local: Bring the kids to our Chanukah celebrations; see chabadoflamorinda.com/holidays/chanukah or call 925-384-7242.
 ---
 Chanukah gelt is money given to children, and often to teachers and others, during Chanukah. Gelt is Yiddish for "money," and the custom is centuries old, long before chocolate coins existed.

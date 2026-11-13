@@ -2,7 +2,7 @@
 title: Психическое здоровье: еврейский взгляд и где найти поддержку
 description: Тревога, депрессия и душевные трудности с еврейской точки зрения: обратиться за помощью - мицва, как вера и терапия работают вместе, куда обращаться.
 category: Jewish ideas
-related: bitachon, self-esteem-jewish-view, hope-in-hard-times, suicide-and-jewish-mourning, addiction-and-recovery, simcha, jewish-health-and-body, tehillim
+related: bitachon, anxiety-and-worry, self-esteem-jewish-view, hope-in-hard-times, suicide-and-jewish-mourning, addiction-and-recovery, simcha, jewish-health-and-body, tehillim
 local: Нужно с кем-то поговорить? Раввин Исроэль Лабковский рядом для всех в Лафайетте, Мораге, Оринде и Ист-Бэе: 925-384-7242. В кризисе звоните или пишите на 988.
 ---
 Многие люди любого возраста и происхождения борются с тревогой, депрессией, утратой или стрессом. Иудаизм относится к этому серьезно. Ваш разум и душа драгоценны, и забота о них - мицва.

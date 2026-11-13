@@ -2,7 +2,7 @@
 title: גניזה: מה עושים עם סידורים, תפילין ומזוזות ישנים
 description: איך נפטרים מסידור, תפילין או מזוזה ישנים. מה קדוש, מה אפשר לזרוק, ואיך פועלת גניזה. שאלו את חב"ד לאמורינדה.
 category: Jewish home
-related: checking-mezuzahs-and-tefillin, jewish-home-library, shemot-names-of-g-d, caring-for-aging-parents, mezuzah
+related: checking-mezuzahs-and-tefillin, why-jews-write-g-d, jewish-home-library, shemot-names-of-g-d, caring-for-aging-parents, mezuzah
 local: מפנים בית או סידור ישן? התקשרו לרב לבקובסקי, 925-384-7242, ושאלו איך מטפלים בחפצי קודש.
 ---
 סידורים בלויים, תפילין, קלפי מזוזה וחפצי קודש אחרים אינם נזרקים. ההלכה אוסרת להשחית שמות ה' וכתבי קודש, ולכן מניחים אותם בצד וקוברים אותם, תהליך הנקרא גניזה, או "שימוש" (שמות).

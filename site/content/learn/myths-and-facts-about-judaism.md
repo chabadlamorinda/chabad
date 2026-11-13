@@ -2,7 +2,7 @@
 title: Myths and Facts About Judaism: Questions People Ask
 description: Clear answers to common questions about Judaism: one G-d, Torah, who is a Jew, mitzvot, Shabbat and the seven Noahide laws, from Chabad.org.
 category: Jewish ideas
-related: why-be-jewish, not-religious-welcome, start-here-jewish-lamorinda, who-is-a-jew, noahide-laws
+related: why-be-jewish, what-is-judaism, not-religious-welcome, start-here-jewish-lamorinda, who-is-a-jew, noahide-laws
 local: Ask anything, no question is too basic. Talk with the Rabbi at /help/talk-to-the-rabbi or call 925-384-7242.
 ---
 Judaism is the faith and way of life of the Jewish people, based on the belief in one invisible G-d and on the Torah and its 613 commandments, the mitzvot. Jews are born into it through a Jewish mother or join it by conversion, and Judaism asks non-Jews only to follow the seven Noahide laws.

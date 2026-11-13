@@ -2,7 +2,7 @@
 title: Ханукальные деньги: почему на Хануку дарят деньги
 description: Почему евреи дарят ханукальные деньги (гелт), когда их дают, как обычай связан с образованием и цдакой, и идеи для детей.
 category: Shabbat & holidays
-related: chanukah-menorah, dreidel, tzedakah, jewish-parenting
+related: chanukah-menorah, chanukah-gifts, dreidel, tzedakah, jewish-parenting
 local: Приводите детей на наши праздники Хануки: chabadoflamorinda.com/holidays/chanukah или по телефону 925-384-7242.
 ---
 Ханукальные деньги, или ханука-гелт, - это деньги, которые на Хануку дарят детям, а часто и учителям, и другим людям. «Гелт» на идише означает «деньги», и этому обычаю много веков, он появился задолго до шоколадных монеток.

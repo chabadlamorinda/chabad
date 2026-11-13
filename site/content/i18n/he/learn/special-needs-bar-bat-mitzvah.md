@@ -2,7 +2,7 @@
 title: בר ובת מצווה לילד עם צרכים מיוחדים
 description: בר או בת מצווה לילד עם אוטיזם, תסמונת דאון או צרכים אחרים: מה נדרש וכיצד להתאים. תוכנית פרטית עם הרב בלפייט.
 category: Life cycle
-related: bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, tefillin, attending-a-bar-bat-mitzvah
+related: bar-mitzvah, special-needs-and-jewish-life, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, tefillin, attending-a-bar-bat-mitzvah
 local: מתכננים בר או בת מצווה לילד עם צרכים מיוחדים? התקשרו לרב ישראל לבקובסקי 925-384-7242 לשיחה פרטית אחד על אחד.
 ---
 כל ילד יהודי נעשה בר מצווה בגיל 13 (בן) או בת מצווה בגיל 12 (בת), גם ילד עם אוטיזם, תסמונת דאון או צרכים אחרים. אבן הדרך היא שינוי מעמד, לא הופעה: הילד נחשב מעתה בקהילה ואחראי למצוות לפי יכולתו.

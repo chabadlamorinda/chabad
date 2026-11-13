@@ -2,7 +2,7 @@
 title: קוגל: קוגל תפוחי אדמה ולוקשן לשבת, עם מתכון
 description: מהו קוגל, למה הוא אהוב בשבת, ומתכון קל לקוגל תפוחי אדמה פרווה לפי Chabad.org, עם טיפים להכנה מראש ולשמירה על חום.
 category: Jewish home
-related: shabbat-meals, cholent, pareve, keeping-food-warm-on-shabbat, jewish-foods
+related: shabbat-meals, brisket, latkes, cholent, pareve, keeping-food-warm-on-shabbat, jewish-foods
 local: רוצים לטעום אוכל שבת אמיתי עם קהילה? הירשמו לסעודת שבת ב-/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 קוגל הוא מאפה יהודי אפוי, לרוב מתפוחי אדמה מגוררים או מטוחנים או מאטריות ביצים, שמוגש בסעודות שבת וחג. המילה היא יידיש, והמאכל נמצא על שולחנות בלפיית, מוראגה ואורינדה ובכל מקום שבו יהודים מתכנסים לשבת.

@@ -2,7 +2,7 @@
 title: Money Worries: A Jewish Guide to Financial Stress
 description: דואגים לכסף? מדריך יהודי ללחץ כלכלי: ביטחון, תקציב, נתינה קטנה ובקשת עזרה, למשפחות בלפאייט, מוראגה ואורינדה.
 category: Jewish home
-related: bitachon, losing-a-job, jewish-view-on-wealth, gemach-interest-free-loans, tzedakah-priorities
+related: bitachon, anxiety-and-worry, losing-a-job, jewish-view-on-wealth, gemach-interest-free-loans, tzedakah-priorities
 local: אם הכסף דחוק, אין צורך להסביר זאת לבד. התקשרו לרב לבקובסקי 925-384-7242 או כתבו בפרטיות דרך /help/talk-to-the-rabbi.
 ---
 התשובה היהודית ללחץ כלכלי היא לנקוט צעדים מעשיים ולבטוח שה' מפרנס, בלי לתת לדאגה לנהל את החיים. עשו תכנית, הוציאו בזהירות, המשיכו לתת קצת, ובקשו עזרה בלי בושה.

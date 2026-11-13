@@ -2,7 +2,7 @@
 title: Jewish Holiday Greetings: What to Say for Every Holiday
 description: Shabbat Shalom, Shana Tova, Chag Sameach, Gut Yom Tov and more: what to say on each Jewish holiday, with meanings and how to answer.
 category: Shabbat & holidays
-related: hebrew-phrases, shalom, yiddish-words-and-phrases, jewish-calendar, shabbat, rosh-chodesh
+related: hebrew-phrases, chanukah-for-friends-and-coworkers, shalom, yiddish-words-and-phrases, jewish-calendar, shabbat, rosh-chodesh
 local: Come say "Shabbat Shalom" in person at Chabad of Lamorinda in Lafayette. See upcoming holidays at chabadoflamorinda.com/holidays or call 925-384-7242.
 ---
 The most common Jewish holiday greeting is "Chag Sameach" (Happy holiday), and on Shabbat people say "Shabbat Shalom" (a peaceful Sabbath). Each holiday also has its own special wishes, in Hebrew or Yiddish, and knowing them is a warm way to connect with Jewish friends, neighbors and coworkers.

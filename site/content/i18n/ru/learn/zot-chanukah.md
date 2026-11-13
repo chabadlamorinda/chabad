@@ -2,7 +2,7 @@
 title: Зот Ханука: восьмой день Хануки
 description: Почему последний день Хануки называют Зот Ханука, какое чтение Торы стоит за этим названием, его смысл в хасидском учении и как его провести.
 category: Shabbat & holidays
-related: chanukah-menorah, lessons-of-chanukah, chanukah-story, al-hanissim-and-hallel, chanukah-for-kids
+related: chanukah-menorah, chanukah-night-by-night, lessons-of-chanukah, chanukah-story, al-hanissim-and-hallel, chanukah-for-kids
 local: Зажгите все восемь свечей вместе с нами: зажигания ханукии и события этого года для Лафайетта, Мораги и Оринды - на странице Хануки, или звоните 925-384-7242.
 ---
 У восьмого, последнего дня Хануки есть собственное имя: **Зот Ханука**, «Это Ханука». Накануне вечером горят все восемь свечей вместе - самая светлая ночь года. Сам этот день считается вершиной и итогом всего праздника.

@@ -2,7 +2,7 @@
 title: Kugel: Potato and Noodle Kugel for Shabbat, With a Recipe
 description: What kugel is, why it is a Shabbat favorite, and an easy pareve potato kugel adapted from Chabad.org, with make-ahead and keeping-warm tips.
 category: Jewish home
-related: shabbat-meals, cholent, pareve, keeping-food-warm-on-shabbat, jewish-foods
+related: shabbat-meals, brisket, latkes, cholent, pareve, keeping-food-warm-on-shabbat, jewish-foods
 local: Want to taste real Shabbat food with a community? Sign up for a Shabbat meal at /forms/shabbat-meal or call 925-384-7242.
 ---
 Kugel is a baked Jewish casserole, most often made from grated or blended potatoes or from egg noodles, and served at Shabbat and holiday meals. The word is Yiddish, and the dish is a staple on tables in Lafayette, Moraga and Orinda and everywhere Jews gather for Shabbat.

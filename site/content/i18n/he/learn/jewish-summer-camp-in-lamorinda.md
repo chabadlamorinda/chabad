@@ -2,7 +2,7 @@
 title: קייטנה יהודית בלמורינדה: קייטנת הקיץ היהודית של למורינדה לגילאי 2 עד 4
 description: קייטנה יהודית לפעוטות בלאפייט, מוראגה ואורינדה: גילאי 2 עד 4, שבעה שבועות, 8:30 עד 5. ראו איך נראה יום והירשמו מוקדם.
 category: Lamorinda
-related: jewish-kids-in-lamorinda, jewish-lamorinda-with-young-children, choosing-a-jewish-preschool, shabbat-in-lamorinda, jewish-year-in-lamorinda
+related: jewish-kids-in-lamorinda, jewish-overnight-camp, jewish-lamorinda-with-young-children, choosing-a-jewish-preschool, shabbat-in-lamorinda, jewish-year-in-lamorinda
 local: שריינו מקום לילד שלכם: הירשמו ב-/forms/summer-camp או התקשרו 925-384-7242.
 ---
 קייטנת הקיץ היהודית של למורינדה בלאפייט היא קייטנה לפעוטות בגילאי 2 עד 4, שבעה שבועות בקיץ, 8:30 עד 17:00, עם שירים יהודיים, מסיבות שבת, משחקי מים ויצירה. העלות 3,200 דולר לכל הקיץ או 500 דולר לשבוע, המקומות מוגבלים, ומומלץ להירשם מוקדם ב[טופס הקייטנה](/forms/summer-camp).

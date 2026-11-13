@@ -2,7 +2,7 @@
 title: Money Worries: A Jewish Guide to Financial Stress
 description: Worried about money? A Jewish guide to financial stress: trust, budgeting, giving a little and asking for help, for Lafayette, Moraga and Orinda families.
 category: Jewish home
-related: bitachon, losing-a-job, jewish-view-on-wealth, gemach-interest-free-loans, tzedakah-priorities
+related: bitachon, anxiety-and-worry, losing-a-job, jewish-view-on-wealth, gemach-interest-free-loans, tzedakah-priorities
 local: If money is tight, you do not have to explain it alone. Call Rabbi Labkowski at 925-384-7242 or write privately through /help/talk-to-the-rabbi.
 ---
 Judaism's answer to financial stress is to take practical steps and to trust that G-d provides, without letting worry run your life. Make a plan, spend carefully, keep giving a little, and ask for help without shame.

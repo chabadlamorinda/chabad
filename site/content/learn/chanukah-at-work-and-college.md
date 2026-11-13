@@ -2,7 +2,7 @@
 title: Lighting Chanukah Candles at Work, in a Dorm or While Traveling
 description: How to light the Chanukah menorah away from home: in a college dorm, at the office, in a hotel or at a friend's house, and when to say the blessings.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-away-from-home, chanukah-story, jewish-college-students, kosher-when-traveling
+related: chanukah-menorah, chanukah-for-friends-and-coworkers, chanukah-away-from-home, chanukah-story, jewish-college-students, kosher-when-traveling
 local: Need a menorah and candles for your dorm, office or trip? Call Chabad of Lamorinda at 925-384-7242 and we will help. See chabadoflamorinda.com/holidays/chanukah.
 ---
 The Chanukah menorah is lit where you live and sleep, so a college student lights in the dorm and a traveler lights in the hotel room. Lighting at the office is a beautiful way to share the miracle, but it usually does not replace lighting at home, and is often done without the blessings.

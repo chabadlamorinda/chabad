@@ -2,7 +2,7 @@
 title: עין הרע: מה היהדות אומרת על עין הרע
 description: עין הרע במקורות היהודיים: מה מלמד התלמוד, מנהגים נפוצים כמו "בלי עין הרע", החוט האדום, וההגנה האמיתית.
 category: Jewish ideas
-related: mezuzah, mazal-and-astrology, lashon-hara, jewish-symbols, bitachon
+related: mezuzah, segulot, mazal-and-astrology, lashon-hara, jewish-symbols, bitachon
 local: רוצים לבדוק את המזוזות או שיש לכם שאלה על מנהג? התקשרו לרב ישראל לבקובסקי בלאפייט, 925-384-7242.
 ---
 סבתות יהודיות רבות אומרות "קיין עין הרע" כשהן משבחות נכד. לרעיון של עין הרע יש שורשים אמיתיים במקורות היהודיים. סביבו יש גם מנהגים עממיים. הנה מה זה אומר, ומה באמת שומר עלינו.

@@ -2,7 +2,7 @@
 title: "חינוך: הדרך היהודית לחנך ילדים"
 description: חינוך פירושו הכשרת ילד לחיים יהודיים לכל החיים. משמעות, מקורות וצעדים מעשיים להורים בלפאייט, מוראגה ואורינדה.
 category: Life cycle
-related: jewish-parenting, teaching-children-to-pray, raising-kind-children, choosing-a-jewish-preschool, derech-eretz
+related: jewish-parenting, choosing-jewish-education, teaching-children-to-pray, raising-kind-children, choosing-a-jewish-preschool, derech-eretz
 local: שאלות על החינוך היהודי של ילדכם? התקשרו לרב לבקובסקי, 925-384-7242, או ראו /programs/hebrew-school ו-/programs/jewish-preschool.
 ---
 חינוך (חִנּוּךְ) הוא המילה העברית להקניית ידע, ופירושו יותר מלימוד עובדות: הכשרת ילד, ברמתו שלו, לחיים יהודיים לכל החיים. ההורים הם המורים הראשונים, והשיעורים החזקים ביותר נלמדים בדוגמה, בחום ובשמחה.

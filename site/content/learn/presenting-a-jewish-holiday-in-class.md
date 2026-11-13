@@ -2,7 +2,7 @@
 title: "Presenting Chanukah or Passover in Your Child's Classroom: A Parent's Guide"
 description: A simple 20-minute plan to present Chanukah or Passover in your child's class in Lafayette, Moraga or Orinda: story, activity, message and sensitivity.
 category: Lamorinda
-related: chanukah-for-kids, dreidel, chanukah-story, passover-with-kids, raising-jewish-kids-in-a-small-community
+related: chanukah-for-kids, chanukah-for-friends-and-coworkers, dreidel, chanukah-story, passover-with-kids, raising-jewish-kids-in-a-small-community
 local: Planning a classroom visit? Call Rabbi Labkowski at 925-384-7242 to ask what he can help with.
 ---
 To present a Jewish holiday in your child's class, plan about 20 minutes: tell the whole story simply, give the children something to do with their hands, and end with one clear message. Chanukah is about light and the courage to be different, and Passover is about freedom, and both fit easily into a classroom in Lafayette, Moraga or Orinda.

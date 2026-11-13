@@ -2,7 +2,7 @@
 title: רעיונות למתנות יהודיות: יודאיקה משמעותית לכל אירוע
 description: רעיונות למתנות יהודיות לבית חדש, לתינוק, לבר ובת מצווה, לחתונה ולחגים, וטיפים למתנות לחברים שומרי מצוות.
 category: Jewish home
-related: jewish-home-library, judaica-buying-guide, mezuzah, pushka, shabbat-candles
+related: jewish-home-library, gifts-in-multiples-of-18, chanukah-gifts, judaica-buying-guide, mezuzah, pushka, shabbat-candles
 local: רוצים עזרה בבחירת מזוזה כשרה, תפילין או ספר יהודי כמתנה? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו ב-chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 המתנות היהודיות המשמעותיות ביותר הן כאלה שעוזרות למישהו לקיים מצווה: מזוזה כשרה לבית חדש, פמוטים לשבת לכלה, סידור לבר מצווה, או קופת צדקה לתינוק חדש. במתנה כזו משתמשים שוב ושוב, ובכל פעם שמשתמשים בה, הנותן שותף במצווה.

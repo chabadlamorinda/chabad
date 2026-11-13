@@ -2,7 +2,7 @@
 title: מתן שם לתינוק: איך ומתי תינוק יהודי מקבל את שמו
 description: איך תינוקות יהודים מקבלים את שמם העברי, מתי בת מקבלת שם בעלייה לתורה ואיך משפחות בוחרות שם משמעותי.
 category: Life cycle
-related: hebrew-names, simchat-bat, jewish-baby-shower, brit-milah, torah, jewish-women
+related: hebrew-names, hebrew-names-for-girls, simchat-bat, jewish-baby-shower, brit-milah, torah, jewish-women
 local: נולד לכם תינוק? התקשרו לרב לבקובסקי בטלפון 925-384-7242 כדי לתאם קריאת שם בעלייה לתורה או להתייעץ על בחירת שם עברי.
 ---
 תינוק יהודי מקבל את שמו בברית המילה ביום השמיני, ותינוקת מקבלת את שמה לפי המסורת בבית הכנסת, כשאביה עולה לתורה. השם מוכרז בתפילה מיוחדת שבה מבקשים מה׳ לברך את הילד בבריאות, בחוכמה ובמעשים טובים.

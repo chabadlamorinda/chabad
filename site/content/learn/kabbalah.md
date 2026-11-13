@@ -2,7 +2,7 @@
 title: What Is Kabbalah? Authentic Jewish Mysticism Explained Simply
 description: What Kabbalah is, its main ideas, key texts like the Zohar, who may study it, and how Chassidus makes it practical today.
 category: Jewish ideas
-related: chassidus, the-arizal, zohar, tzfat, sefirot, gematria, reincarnation, tanya, torah, moshiach
+related: chassidus, segulot, the-arizal, zohar, tzfat, sefirot, gematria, reincarnation, tanya, torah, moshiach
 local: Want to explore the deeper side of Judaism? Call Rabbi Labkowski at 925-384-7242 and we will help you learn Kabbalah and Chassidus in a clear, grounded way.
 ---
 Kabbalah is the mystical tradition of Judaism, the inner dimension of the Torah. It explores the nature of G-d, how He creates the world, and the deep purpose of the soul and the mitzvot.

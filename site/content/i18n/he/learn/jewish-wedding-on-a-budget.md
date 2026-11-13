@@ -2,7 +2,7 @@
 title: חתונה יהודית בתקציב: מה חיוני ומה אפשר לוותר
 description: מה חתונה יהודית באמת צריכה (כתובה, חופה, טבעת, עדים, מניין) לעומת התוספות, ערך הפשטות ודרכים לחסוך.
 category: Life cycle
-related: jewish-wedding, ketubah, sheva-brachot, choosing-a-wedding-date
+related: jewish-wedding, bar-bat-mitzvah-on-a-budget, ketubah, sheva-brachot, choosing-a-wedding-date
 local: זוגות בלאפייט, מוראגה, אורינדה ובאיסט ביי: הרב ישראל לבקובסקי ישמח לעזור לתכנן חתונה יהודית משמעותית, 925-384-7242.
 ---
 חתונה יהודית לא צריכה להיות יקרה כדי להיות יפה וכשרה לגמרי. הדברים החיוניים מעטים ופשוטים. כל השאר הוא בחירה. ההבנה של ההבדל יכולה להוריד הרבה לחץ מהזוג וממשפחותיהם.

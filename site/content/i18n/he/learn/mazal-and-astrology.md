@@ -2,7 +2,7 @@
 title: מה פירוש מזל טוב? מזל, אסטרולוגיה ויהדות
 description: מה פירוש מזל טוב? ההשקפה היהודית על מזל ואסטרולוגיה, למה ישראל למעלה מהמזל, ואיך מצוות ותפילה משנות. שתפו את השמחה איתנו.
 category: Jewish ideas
-related: hebrew-phrases, ayin-hara, hashgacha-pratit, free-will, kabbalah
+related: hebrew-phrases, segulot, ayin-hara, hashgacha-pratit, free-will, kabbalah
 local: יש לכם שמחה לחגוג? שתפו את המזל טוב עם הקהילה ב-/community, או התקשרו 925-384-7242.
 ---
 מזל טוב הוא ברכת המזל בעברית לאיחולים, ופירושו המילולי "מזל טוב" או "סימן טוב". המסורת היהודית מלמדת שמזל הוא צינור רוחני שדרכו זורמת ברכה מלמעלה, ושיהודי אינו כבול לכוכבים.

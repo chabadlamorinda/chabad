@@ -2,7 +2,7 @@
 title: Ayin Hara: What Judaism Says About the Evil Eye
 description: The evil eye in Jewish sources: what the Talmud teaches, common customs like "bli ayin hara," the red string, and the real protection.
 category: Jewish ideas
-related: mezuzah, mazal-and-astrology, lashon-hara, jewish-symbols, bitachon
+related: mezuzah, segulot, mazal-and-astrology, lashon-hara, jewish-symbols, bitachon
 local: Want your mezuzahs checked or have a question about a custom? Call Rabbi Yisroel Labkowski in Lafayette, 925-384-7242.
 ---
 Many Jewish grandmothers say "kein ayin hara" when they praise a grandchild. The idea of the ayin hara, the "evil eye," has real roots in Jewish sources. It is also surrounded by folk customs. Here is what it means, and what actually protects us.
