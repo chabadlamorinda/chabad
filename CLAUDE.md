@@ -189,3 +189,7 @@ The site runs at PUBLIC_URL (set in Render; the main address is https://jewishla
 ## Do not
 * Do not edit `kiddush-kit/` (a separate shareable copy) when changing the website.
 * Do not commit secrets. Settings live in Render's Environment tab (see `store/website-setup.md`).
+
+## Help, volunteers and the Chesed Fund
+`/help/help-for-seniors-and-families` (page, three languages) leads to three things: "Ask for help" (`need-help` in forms.json: visits, calls, rides, meals, groceries, financial help; private, emailed to the Rabbi like every form, no gift box because `"noGift": true`), "Volunteer" (`volunteer` form, with visiting seniors and the sick, hospital visits, phone calls, driving and Shabbat packages), and "Sponsor visits and help" (`/donate?fund=chesed`, the Chesed Fund in `FUND_NAMES` and giving.json). Never promise specific financial aid amounts; ask the Rabbi.
+Any form without a required payment shows an optional gift box (`data-gift`; amounts 180 to 1800 and "Other amount"), and a chosen amount becomes a "Complete my $X gift" button after sending.

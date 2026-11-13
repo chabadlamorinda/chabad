@@ -31,6 +31,7 @@ const FUND_NAMES = {
   market: 'Bay Kosher Market',
   building: 'Building Campaign',
   holidays: 'Holiday Programs',
+  chesed: 'Chesed: Visiting and Helping Those in Need',
   synagogue: 'Synagogue',
   endyear: 'End of Year Campaign',
   children: 'Children Events',
