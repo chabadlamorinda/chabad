@@ -9,9 +9,13 @@ You do not have to read the Tanya from the beginning. A good way to start is to 
 
 ## How to use this plan
 
-The [Tanya](/learn/tanya) was written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, the founder of Chabad. Its first part, Likkutei Amarim, is divided into chapters, and Chabad.org also offers the Iggeret HaKodesh, a collection of the Alter Rebbe's letters, and the Iggeret HaTeshuvah. Chabad.org describes the Tanya as a "one size fits all" life manual, and offers text in English and Hebrew, audio, video and the easy-to-read Tanya in Plain English. Its Plain English page points beginners to Chapters 26 to 28, 32 and 33.
+The [Tanya](/learn/tanya) was written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, the founder of Chabad. Its first part, Likkutei Amarim, is divided into chapters, and Chabad.org also offers the Iggeret HaKodesh, a collection of the Alter Rebbe's letters, and the Iggeret HaTeshuvah. Chabad.org describes the Tanya as a "one size fits all" life manual, and offers text in English and Hebrew, audio, video and the easy-to-read Tanya in Plain English. Its Tanya in Plain English page features Chapters 26 to 28, 32 and 33.
 
 Each line below gives the need, the place in the Tanya as we read it on Chabad.org, and a guide to read first. The chapter numbers are the ones on those pages. Tanya's guidance is spiritual. For sadness or anxiety that does not lift, professional help is also right, and for your own situation, ask the Rabbi.
+
+## If you are new to the Tanya
+
+Start with [how to start learning Tanya](/learn/how-to-start-learning-tanya), [the two souls explained](/learn/the-two-souls-explained), [Tanya chapter one explained](/learn/tanya-chapter-one-explained), [a glossary for beginners](/learn/tanya-glossary-for-beginners) and [the Alter Rebbe](/learn/the-alter-rebbe). Then see the [daily Tanya cycle](/learn/daily-tanya-cycle).
 
 ## If you feel worried, sad or hurt
 
@@ -40,21 +44,17 @@ Each line below gives the need, the place in the Tanya as we read it on Chabad.o
 - **Hard to love someone:** Chapter 32, on love for every Jew and why all Jewish souls share one source. See [Chapter 32: love every Jew](/learn/tanya-chapter-32-love-every-jew) and [loving someone you do not like](/learn/loving-someone-you-dont-like).
 - **Family and friends:** see [Tanya and marriage](/learn/tanya-and-marriage), [Tanya for parents](/learn/tanya-for-parents), [Tanya on friendship](/learn/tanya-on-friendship) and [forgiving others](/learn/tanya-on-forgiving-others).
 
-## If you are new to the Tanya
-
-Start with [how to start learning Tanya](/learn/how-to-start-learning-tanya), [the two souls explained](/learn/the-two-souls-explained), [Tanya chapter one explained](/learn/tanya-chapter-one-explained), [a glossary for beginners](/learn/tanya-glossary-for-beginners) and [the Alter Rebbe](/learn/the-alter-rebbe). Then see the [daily Tanya cycle](/learn/daily-tanya-cycle).
-
 ## For your stage of life
 
-[Teens and college students](/learn/tanya-for-teens-and-students), [busy professionals](/learn/tanya-for-busy-professionals), [seniors](/learn/tanya-for-seniors), and for the workday, money and time: [Tanya at work](/learn/tanya-at-work), [on money](/learn/tanya-on-money) [on time](/learn/tanya-on-time), and for the calendar, [Tanya and the Jewish year](/learn/tanya-and-the-jewish-year).
+[Teens and college students](/learn/tanya-for-teens-and-students), [busy professionals](/learn/tanya-for-busy-professionals), [seniors](/learn/tanya-for-seniors), and for the workday, money and time: [Tanya at work](/learn/tanya-at-work), [on money](/learn/tanya-on-money), [on time](/learn/tanya-on-time), and for the calendar, [Tanya and the Jewish year](/learn/tanya-and-the-jewish-year).
 
 ## Common questions
 
 ### Which chapter of the Tanya should a beginner read first?
-Chabad.org points beginners to Chapters 26 to 28 on anxiety, self-blame and sadness, Chapter 32 on love for every Jew and Chapter 33 on celebrating being Jewish. Many people also start with Chapter 1. See [how to start learning Tanya](/learn/how-to-start-learning-tanya).
+Chabad.org's Tanya in Plain English page features Chapters 26 to 28 on anxiety, self-blame and sadness, Chapter 32 on love for every Jew and Chapter 33 on celebrating being Jewish. Many people also start with Chapter 1. See [how to start learning Tanya](/learn/how-to-start-learning-tanya).
 
 ### Which Tanya chapter is about sadness and depression?
-Chapters 26 and 27 speak about joy, sadness and being crushed by failure. They are spiritual guidance and not medical advice. For ongoing low mood, professional help is also right.
+Chapters 26 and 27 speak about joy and sadness, including sadness over unwanted thoughts. They are spiritual guidance and not medical advice. For ongoing low mood, professional help is also right.
 
 ### Which part of the Tanya has letters of comfort?
 The Iggeret HaKodesh includes the Alter Rebbe's letters, among them condolence letters, Epistles 27 and 28. See [Tanya and grief](/learn/tanya-and-grief).
@@ -71,5 +71,5 @@ Call Rabbi Labkowski at 925-384-7242 to ask about learning Tanya together. See a
 ## Take the next step
 
 - Pick one need above, read its guide, then open that chapter on Chabad.org.
-- Come to the Wednesday 1:00 PM Tanya class at the Rabbi's home in Lafayette.
+- Come to the Wednesday 1:00 PM Tanya class at the Rabbi's home in Lafayette (call 925-384-7242 for the address).
 - Call 925-384-7242 to ask about learning Tanya together, or [sign up for the weekly email](/forms/newsletter).

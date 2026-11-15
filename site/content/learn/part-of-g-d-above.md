@@ -7,7 +7,7 @@ local: Want to learn Chapter 2 with others? Join the Wednesday 1:00 PM Tanya cla
 ---
 Chapter 2 of the Tanya says that the divine soul of every Jew is "truly a part of G-d above." It is not a symbol: the author adds the word "truly" to show he means it literally.
 
-This idea is the foundation of Jewish self-worth in Chabad teaching. This guide looks at it simply; it describes what the Tanya says about the Jewish soul.
+It is one of the best-known ideas in the Tanya. This guide looks at it simply; it describes what the Tanya says about the Jewish soul.
 
 ## Where the phrase comes from
 
@@ -15,7 +15,7 @@ According to Chabad.org's page on Chapter 2, the words "a part of G-d above" quo
 
 ## The breath
 
-Chabad.org explains the image the chapter uses. Genesis says that G-d "blew into his nostrils a soul of life," and the morning prayers say "You blew it into me." The Zohar says that "he who blows, blows from within him." Blowing takes more effort than speaking, and the breath comes from the inside of the one who blows. So the Jewish soul, says the chapter, comes from G-d's innermost depth.
+Chabad.org explains the image the chapter uses. Genesis says that G-d "blew into his nostrils a soul of life," and the morning prayers say "You blew it into me." The Zohar says that "he who blows, blows from within him." When a person blows with force, the breath comes from deep inside him. So the Jewish soul, says the chapter, comes from G-d's innermost depth.
 
 ## Every Jew
 
@@ -25,7 +25,7 @@ For other questions about how Judaism sees the Jewish people and the rest of hum
 
 ## What it means in daily life
 
-A Chabad.org article on Tanya says that having a bad day or an angry feeling is not a failure, as long as you do not act on it. When you stumble, it says, acknowledge it, express regret to G-d, resolve to continue and move on.
+A Chabad.org article on Tanya, "Clothing for the Soul," says not to blame yourself for an angry feeling or a wrong desire: what matters is not to act on it, not to speak in anger and not to dwell on it on purpose. When you stumble, it says, acknowledge it, express regret to G-d, resolve to continue and move on.
 
 Read this together with Chapter 1: the divine soul is a part of G-d, and the animal soul is real too. See [the two souls explained](/learn/the-two-souls-explained). For the wider Jewish view of self-worth, see [self-esteem](/learn/self-esteem-jewish-view) and [the soul](/learn/the-soul).
 
@@ -46,7 +46,7 @@ Yes. Chapter 2 says the soul of every Jew comes from G-d's thought and wisdom, t
 The soul is likened to a breath G-d blew from within himself, as in Genesis and the morning prayers.
 
 ### Does my behavior change my soul?
-Chapter 2 says all souls share one root. For your personal situation, ask the Rabbi.
+Chapter 2 says that even the lowest souls stay connected to their source. For your personal situation, ask the Rabbi.
 
 ### Where can I learn Chapter 2 near Lafayette, Moraga or Orinda?
 At the Tanya class in English, every Wednesday at 1:00 PM at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.

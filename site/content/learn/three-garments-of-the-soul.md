@@ -14,7 +14,7 @@ This simple picture explains why your small daily choices matter: they are what 
 According to Chabad.org's page on Chapter 4, every divine soul has three garments:
 
 - **Thought:** for the divine soul, this is grasping Torah as much as one can, on the levels of plain meaning, hint, interpretation and the hidden.
-- **Speech:** Torah study aloud, which explains the mitzvot and their laws.
+- **Speech:** studying Torah in words: the teachings that explain the mitzvot and their laws.
 - **Action:** doing the mitzvot, such as putting on tefillin.
 
 The chapter says that when a person engages in all three, the soul is "clothed" and its intellect and emotions find expression. Omit a mitzvah, and its place in the soul goes without a garment. See [what is a mitzvah](/learn/what-is-a-mitzvah).

@@ -23,7 +23,7 @@ You can also receive "Lessons in Tanya" by email and use the Daily Study app, wh
 
 ## Which ideas help most at work
 
-Chabad.org's Tanya in Plain English page points beginners toward accessible chapters. We suggest these starting points, which have a clear workday use.
+Chabad.org's Tanya in Plain English page features several chapters on everyday struggles. We suggest these starting points, which have a clear workday use.
 
 - **Chapters 26 to 28** speak about anxiety, self-blame and sadness. Chapter 26 compares the inner struggle to wrestling and says energy and an open heart win. Tanya's guidance is spiritual, and professional help is also right for lasting anxiety or low mood. See [Tanya in hard times](/learn/tanya-in-hard-times).
 - **Chapter 32** teaches love for every Jew, because all Jewish souls share one source. It is a useful lens for a tense meeting or a difficult colleague.

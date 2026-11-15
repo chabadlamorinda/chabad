@@ -25,9 +25,9 @@ The Tanya's main subject is the [beinoni](/learn/the-beinoni), the "intermediate
 
 ## When "not good enough" becomes heavy
 
-Chapter 27 has a gentle and surprising lesson. When unwanted thoughts or failures leave a person sad, the Alter Rebbe says this sadness is not a sign of piety. It comes from forgetting one's real level. A person should be glad to be a beinoni, not wicked, and should rejoice when he turns his mind away from a wrong thought, because turning away is itself a victory.
+Chapter 27 has a gentle and surprising lesson. When unwanted thoughts keep coming and leave a person sad, the Alter Rebbe says this distress is not a sign of piety. It comes from not knowing one's place, as if one should already be a tzaddik. Instead a person should rejoice each time he turns his mind away from a wrong thought, because turning away is itself a mitzvah and a victory.
 
-The chapter says to feel some concern so as not to become indifferent, but not to be crushed or deeply depressed, even if the struggle goes on for a lifetime. For many readers this is a relief: being hard on yourself is not holiness.
+The chapter says to feel some concern so as not to become indifferent, but not to be sorely troubled, even if the struggle goes on for a lifetime. For many readers this is a relief: being hard on yourself is not holiness.
 
 This is spiritual guidance. If feeling worthless is constant, or you feel hopeless, professional help is also right and good, and the Tanya's words are not a substitute. Ask the Rabbi about your own situation.
 
@@ -42,7 +42,7 @@ This is spiritual guidance. If feeling worthless is constant, or you feel hopele
 These are suggestions in the spirit of the Tanya, not quotations.
 
 1. Do one mitzvah this week, such as lighting Shabbat candles or giving tzedakah.
-2. When a harsh thought comes, let it go and turn your attention elsewhere, as Chapter 27 describes.
+2. When an unwanted thought comes, do not argue with it; turn your attention elsewhere, as Chapter 27 describes.
 3. Speak with someone who can encourage you.
 4. Come to learn, with no pressure and no prior knowledge.
 
@@ -52,7 +52,7 @@ These are suggestions in the spirit of the Tanya, not quotations.
 The Tanya teaches that every Jew's soul is "a part of G-d above" and that the ordinary struggling person, the beinoni, is the book's central figure. Your worth does not depend on how you feel today.
 
 ### Is feeling not good enough a Jewish value?
-Humility is. Feeling worthless is not the same thing. In Chapter 27 the Alter Rebbe says that sadness over one's failings can come from forgetting one's real level, and he encourages joy instead. See [self-esteem in Judaism](/learn/self-esteem-jewish-view).
+Humility is. Feeling worthless is not the same thing. In Chapter 27 the Alter Rebbe says that being crushed by unwanted thoughts comes from not knowing one's place, and he encourages joy in each small victory instead. See [self-esteem in Judaism](/learn/self-esteem-jewish-view).
 
 ### Am I a bad Jew if I do not keep all the mitzvot?
 Judaism welcomes every Jew. The Tanya's focus is on the next good choice, not on a score. See [not religious? you are welcome](/learn/not-religious-welcome) and ask the Rabbi for guidance.

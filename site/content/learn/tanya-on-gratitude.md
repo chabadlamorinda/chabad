@@ -27,7 +27,7 @@ When pain is real, none of this means you must feel thankful for it. Tanya's gui
 
 ## Joy as an inheritance
 
-In Chapter 33 of the Tanya, on Chabad.org, the Alter Rebbe teaches that deep awareness of G-d's presence brings real joy. He compares it to the joy of a simple person when a king visits his home. The chapter also notes that a blessing in the daily prayers speaks of gratitude for this awareness as an inheritance from our ancestors, not something we earn.
+In Chapter 33 of the Tanya, on Chabad.org, the Alter Rebbe teaches that deep awareness of G-d's presence brings real joy. He compares it to the joy of a simple person when a king visits his home. The chapter also points to the words the Sages set in the daily prayers, "How fortunate are we! How good is our portion," and compares this awareness of G-d to a great inheritance from our ancestors, which we did not earn.
 
 You do not have to manufacture a feeling. You are invited to notice a gift that is already there.
 

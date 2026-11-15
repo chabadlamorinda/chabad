@@ -5,7 +5,7 @@ category: Mourning & remembrance
 related: coping-with-grief-jewish-wisdom, the-soul, afterlife, kaddish, mourning-journey
 local: If someone has passed away, call Rabbi Labkowski first at 925-384-7242, before anyone else. For Kaddish for a loved one, see /kaddish.
 ---
-When a loved one dies, the Tanya's answer is not an argument but a letter: the Alter Rebbe wrote words of condolence to people in mourning, teaching that the spiritual life of a righteous person does not end, and that what they gave us lives on in us. Tanya's guidance is spiritual comfort. It does not replace the time grief needs.
+When a loved one dies, the Tanya's answer is not an argument but a letter: the Alter Rebbe wrote words of condolence to people in mourning, teaching that the spiritual life of a righteous person does not end, and that what he gave to those close to him lives on in them. Tanya's guidance is spiritual comfort. It does not replace the time grief needs.
 
 ## If someone has just died
 
@@ -24,13 +24,13 @@ We tell what Chabad.org's pages say, in our own words. Both letters are about th
 
 The Alter Rebbe explains the saying of the Sages that a tzaddik "left life for all the living." A tzaddik's real life is spiritual: faith, awe and love of G-d. When he passes, he leaves these qualities as a legacy to those connected with him, and they can receive even more than while he was alive. His soul rises to higher levels, yet something of it remains close, and his teachings go on producing good deeds and growth in later generations.
 
-The letter ends with a call to tzedakah, including for the family of the one who died. That is a Jewish instinct many mourners know: to turn loss into giving. See [tzedakah](/learn/tzedakah).
+Chabad.org notes that the letter ends with a call to give tzedakah, and especially to support Rabbi Menachem Mendel's family. That is a Jewish instinct many mourners know: to turn loss into giving. See [tzedakah](/learn/tzedakah).
 
 ## What Epistle 28 teaches
 
 To a father who lost his son, the Alter Rebbe writes that the passing of a righteous person draws down a special light into the world, comparing it to the Red Heifer, which purified. The tzaddik's hidden work in life, such as his prayer and his Torah study, is described as revealed in its full effect after he passes. The loss is not made smaller; the letter finds in it a spiritual gift for the whole generation.
 
-If these ideas feel far from your own grief, that is fine. Take what helps. The same pages remind us that a person's goodness continues in the lives they touched.
+If these ideas feel far from your own grief, that is fine. Take what helps. The letters speak of a tzaddik, yet many mourners find comfort in their idea that what a person gave goes on in those he touched. Ask the Rabbi how this speaks to your own loss.
 
 ## Ways to carry their memory
 

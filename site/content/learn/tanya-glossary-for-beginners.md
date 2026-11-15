@@ -23,12 +23,12 @@ Below are the words you will meet, in plain English, each as Chabad.org's Tanya 
 - **Garments:** the three ways the soul expresses itself: thought, speech and action ([three garments](/learn/three-garments-of-the-soul)).
 - **Chochmah, Binah, Daat:** the intellectual faculties of the soul: wisdom, understanding and knowledge ([Sefirot](/learn/sefirot)).
 - **Middot:** the emotions, such as love and fear of G-d.
-- **Love and awe (ahavah and yirah):** Chabad.org describes them as natural forces within the soul. See [loving G-d](/learn/loving-g-d) and [fear of G-d](/learn/fear-of-g-d).
+- **Love and awe (ahavah and yirah):** Chapter 12 speaks of a hidden, natural love and fear of G-d in the heart. See [loving G-d](/learn/loving-g-d) and [fear of G-d](/learn/fear-of-g-d).
 
 ## Kinds of people
 
 - **Tzaddik:** a righteous person whose inner desires have been transformed.
-- **Rasha:** a person ruled by the wrong inclination.
+- **Rasha:** "wicked." Tanya uses the word strictly: Chapter 12 says that someone who willingly indulges a wrong thought is called a rasha at that moment.
 - **Beinoni:** the "intermediate" person, who feels the desire but never lets it direct thought, speech or action ([the beinoni](/learn/the-beinoni)).
 
 ## Layers and levels
@@ -36,12 +36,12 @@ Below are the words you will meet, in plain English, each as Chabad.org's Tanya 
 - **Kelipah:** literally a "shell," a layer that conceals G-dliness. Chapter 1 says the animal soul comes from kelipah.
 - **Sitra achra:** "the other side," a name Chapter 1 gives alongside kelipah.
 - **Kelipat nogah:** a mixed realm of good and evil, which contains good. Tanya teaches that physical things from this realm can be raised up through a mitzvah (see [the animal soul](/learn/animal-soul-not-evil) and [eating as a mitzvah](/learn/eating-as-a-mitzvah)).
-- **Ein Sof:** "without end," G-d's infinite light.
+- **Ein Sof:** "the Infinite" (literally "without end"), a name for G-d; Tanya speaks of the light of the Ein Sof.
 - **Tzimtzum:** the "compression" of G-d's wisdom so that people can grasp it, as Chapter 4 describes it.
 
 ## Ideas of the struggle
 
-- **Iskafya:** the constant effort to subdue the animal soul's desires.
+- **Itkafya** (also spelled iskafya): the constant effort to subdue the animal soul's desires ([itkafya](/learn/itkafya-self-discipline)).
 - **Mind over heart:** the principle that the mind can guide the heart ([mind over heart](/learn/mind-over-heart-tanya)).
 - **Mitzvah:** a commandment, and a way to connect to G-d ([what is a mitzvah](/learn/what-is-a-mitzvah)).
 - **A dwelling in the lowest world:** the Sages' teaching, quoted in Chapter 37, that G-d desired an abode in the lower realms, our physical world.

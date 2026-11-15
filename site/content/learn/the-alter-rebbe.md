@@ -15,7 +15,7 @@ According to Chabad.org, he was born in Liozna, near Lubavitch, and his father w
 
 ## Meseritch and the Maggid
 
-At twenty he left home to look for guidance in serving G-d. Chabad.org says he weighed going to Vilna, the center of opposition to Chassidism, and chose Meseritch, where Rabbi Dovber, the Maggid, taught. He joined the Maggid's inner circle. When he was about twenty-five, the Maggid asked him to rewrite the Code of Jewish Law, the Shulchan Aruch, with the later rulings. That work is known as the Shulchan Aruch HaRav, and Chabad.org says scholars of many kinds praised it.
+At twenty he left home to look for guidance in serving G-d. Chabad.org says he weighed going to Vilna, the center of opposition to Chassidism, and chose Meseritch, where Rabbi Dovber, the Maggid, taught. He joined the Maggid's inner circle. When he was about twenty-five, the Maggid asked him to rewrite the Code of Jewish Law, the Shulchan Aruch, with the later rulings. That work is known as the Shulchan Aruch HaRav, and Chabad.org says it won recognition from Chassidim and scholars alike.
 
 After the Maggid died on 19 Kislev, 1772, his disciples dispersed. The Alter Rebbe took up the task of spreading Chassidus in Lithuania, and Chabad.org says the Chabad movement was founded then. See [Chassidus](/learn/chassidus) and the [Chabad Rebbes](/learn/chabad-rebbes).
 
@@ -33,7 +33,7 @@ The title page, as Chabad.org presents it, says the book is based on a verse fro
 
 ## Arrest and release
 
-In 1798 he was denounced and taken to St. Petersburg. He was freed on 19 Kislev, on the orders of Czar Paul I, and Chassidim have celebrated that day ever since. The story is told in [Yud Tes Kislev](/learn/yud-tes-kislev).
+In 1798 he was denounced and taken to St. Petersburg. He was freed on 19 Kislev, on the express orders of the Czar, and Chassidim have celebrated that day ever since. The story is told in [Yud Tes Kislev](/learn/yud-tes-kislev).
 
 ## His last years
 

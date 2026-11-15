@@ -11,7 +11,7 @@ This guide looks at the tool, as Chabad.org presents it. For the person who uses
 
 ## The mind naturally rules
 
-Chapter 12, according to Chabad.org, explains that the brain rules the heart by nature, and that the will of the mind can turn attention away from what the heart craves. It is especially effective when the aim is holy. The chapter gives an image: light drives out darkness without a struggle, so a small ray of holiness pushes away much of the animal soul's foolishness.
+Chapter 12, according to Chabad.org, explains that the brain rules the heart by nature, and that the will of the mind can turn attention away from what the heart craves. The chapter gives an image: light drives out darkness without a struggle, so a small ray of holiness pushes away much of the animal soul's foolishness.
 
 ## Feelings come; you choose what to do
 

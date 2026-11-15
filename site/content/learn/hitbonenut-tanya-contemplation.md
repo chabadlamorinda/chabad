@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: jewish-meditation, loving-g-d, fear-of-g-d, kavanah-in-prayer, prayer
 local: Want to try contemplation with someone? Call Rabbi Labkowski at 925-384-7242 or join the Wednesday 1:00 PM Tanya class at the Rabbi's home in Lafayette.
 ---
-Hitbonenut (הִתְבּוֹנְנוּת, also spelled hisbonenus) is deep, focused thought about G-d's greatness and closeness, until the mind's understanding reaches the heart as love and awe. It is the Tanya's main tool for feeling connected to G-d, and it needs no special skill: just time, quiet and an honest mind.
+Hitbonenut (התבוננות, also spelled hisbonenus) is deep, focused thought about G-d's greatness and closeness, until the mind's understanding reaches the heart as love and awe. It is the Tanya's main tool for feeling connected to G-d, and it needs no special skill: just time, quiet and an honest mind.
 
 ## What is hitbonenut?
 

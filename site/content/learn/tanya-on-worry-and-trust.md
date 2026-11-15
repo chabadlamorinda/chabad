@@ -27,7 +27,7 @@ The letter also sets a very high ideal, asking us to want even life's basics onl
 
 ## A true story: reading Epistle 11 through a quarantine
 
-Chabad.org tells of Reb Asher Grossman of Nikolayev, a shochet (ritual slaughterer) who also helped edit the Tanya. His friend Rav Meir Shlomo Yanovsky, the city's rabbi and the Lubavitcher Rebbe's maternal grandfather, caught typhus in an outbreak. The sick were quarantined outside the city, and many lost hope.
+Chabad.org tells of Reb Asher Grossman of Nikolayev, a shochet (ritual slaughterer) whom the Rebbe Rashab chose to proofread the Tanya for printing errors. His friend Rav Meir Shlomo Yanovsky, the city's rabbi and the Lubavitcher Rebbe's maternal grandfather, caught typhus in an outbreak. The sick were quarantined outside the city, and many lost hope.
 
 Reb Asher came every day and stood beneath his friend's window. For thirty days he read Epistle 11 aloud, not knowing whether Rav Meir Shlomo could hear. Rav Meir Shlomo recovered, and he later credited those readings with keeping him strong and hopeful. The story is told on Chabad.org (see the article about the Tanya in quarantine).
 

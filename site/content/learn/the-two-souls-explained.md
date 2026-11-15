@@ -21,7 +21,7 @@ The animal soul is the natural self: it wants comfort, pleasure and recognition.
 
 ## The divine soul
 
-The divine soul is what the Tanya calls a part of G-d. Chapter 4 says it has its own intellect (chochmah, binah and daat) and emotions (love and fear of G-d), and that it expresses itself through [thought, speech and action](/learn/three-garments-of-the-soul). Read more in [a part of G-d above](/learn/part-of-g-d-above).
+The divine soul is what the Tanya calls a part of G-d. Chapter 4 says that its intellect (chochmah, binah and daat) and its emotions (love and fear of G-d) find expression through [thought, speech and action](/learn/three-garments-of-the-soul). Read more in [a part of G-d above](/learn/part-of-g-d-above).
 
 ## Who is in charge?
 
@@ -37,7 +37,7 @@ These are our own examples of the two voices, not quotations from the Tanya:
 - an annoying message arrives, and one voice wants to reply at once while another says "wait";
 - there is an extra treat on the plate, and you ask what you really want.
 
-In each case, you are not either voice. You are the one who chooses.
+In each case, you can choose which voice leads.
 
 ## A note
 
@@ -55,7 +55,7 @@ Tanya explains it as the two souls pulling in different directions. Feeling the 
 No. Chapter 1 says it has good natural traits such as compassion and kindness, and Tanya teaches that it can be raised up through a mitzvah. See [is the animal soul bad?](/learn/animal-soul-not-evil).
 
 ### Which soul is the real me?
-Both are in you, and you are the one who chooses. Chapter 2 says the divine soul is a true part of G-d.
+Both are in you. Chapter 2 says the divine soul is truly a part of G-d, and Chapter 12 describes the beinoni, who lets it lead in thought, speech and action.
 
 ### Do I need to be very observant to learn about the two souls?
 No. The Tanya was written for ordinary people who struggle, and every Jew is welcome to learn it. Call Rabbi Labkowski at 925-384-7242 to ask about learning together.

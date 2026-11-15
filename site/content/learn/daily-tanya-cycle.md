@@ -23,7 +23,7 @@ Chabad.org says the daily study was instituted by the Sixth Chabad Rebbe, Rabbi 
 
 The Tanya cycle begins on the 19th of Kislev, which Chabad.org calls the "Rosh Hashanah of Chassidism." See [Yud Tes Kislev](/learn/yud-tes-kislev) for why that day matters. You do not have to start on that day. You can join the cycle on any day, with that day's portion.
 
-In a Jewish leap year, there are two tracks. Chabad.org explains that the leap-year track has smaller portions so that the cycle lasts one extra month. Because the cycle begins and ends on 19 Kislev, watch for the difference for some months after a leap year. If it is confusing, [ask the Rabbi](/help/talk-to-the-rabbi).
+In a Jewish leap year, there are two tracks. Chabad.org explains that the leap-year track has smaller portions so that the cycle lasts one extra month. If it is confusing, [ask the Rabbi](/help/talk-to-the-rabbi).
 
 ## How to follow it
 
@@ -45,7 +45,7 @@ The daily Tanya is the portion of the Tanya set for each day, so that the entire
 ### What does Chitas mean?
 Chitas stands for Chumash, Tehillim and Tanya, the three texts of the daily study program.
 
-### Who divided the Tanya into daily portions?
+### Who started the daily Tanya study?
 Chabad.org credits the Sixth Chabad Rebbe, Rabbi Yosef Yitzchak Schneersohn, with instituting the daily study. The page does not give the year.
 
 ### When does the Tanya cycle begin?

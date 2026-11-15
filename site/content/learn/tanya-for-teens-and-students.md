@@ -26,7 +26,7 @@ For a teenager that means: a feeling is not an order. You can feel the urge to s
 These are ways to think with the Tanya, not statements from the text.
 
 - **Peer pressure.** Ask yourself which soul is talking. Not every voice you hear is you.
-- **What you say and type.** Tanya (Chapters 12 and 37) speaks of thought, speech and action as the ways the soul acts in the world, and calls thought and speech "garments" of the soul. A message you send is speech. It leaves a mark. See [lashon hara](/learn/lashon-hara).
+- **What you say and type.** Tanya (Chapters 12 and 37) speaks of thought, speech and action as the ways the soul acts in the world, and calls thought, speech and action the "garments" of the soul. A message you send is speech. It leaves a mark. See [lashon hara](/learn/lashon-hara).
 - **Exam stress.** Epistle 11, on Chabad.org, teaches that G-d gives life at every moment and that the good is often hidden. Do your best, then let go of the outcome. See [exam stress: Jewish wisdom](/learn/exam-stress-jewish-wisdom) and [Tanya on worry and trust](/learn/tanya-on-worry-and-trust).
 - **Feeling not Jewish enough.** See [Tanya on self-worth](/learn/tanya-on-self-worth).
 - **Heading to campus.** See [Jewish college students](/learn/jewish-college-students) and [sending a Lamorinda teen to college](/learn/sending-a-lamorinda-teen-to-college).
@@ -35,7 +35,7 @@ If you feel anxious or very low, talk to a parent, school counselor or doctor. T
 
 ## Where to begin
 
-Chabad.org has a series of 53 audio classes called Tanya Basics, each covering one chapter, that aim to summarize the main ideas and their practical use. Chabad.org also has Tanya in Plain English, a modern translation. A first step could be one short chapter, such as Chapter 1.
+Chabad.org has a series of 53 audio classes called Tanya Basics, going through the book chapter by chapter, that aim to summarize the main ideas and their practical use. Chabad.org also has Tanya in Plain English, a modern translation. A first step could be one short chapter, such as Chapter 1.
 
 ## Common questions
 

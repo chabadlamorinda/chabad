@@ -28,8 +28,8 @@ These are big ideas. Few people feel them in the middle of a crisis, and the Tan
 Here is what the same pages give us, in simple terms.
 
 - **Strength from joy.** Chapter 26 compares the inner struggle to wrestling. A strong person who is sluggish still loses. Energy and an open heart win. Joy here means inner life and energy, not a forced smile.
-- **Fixed time for sadness, then release.** The chapter says real sadness has its place, in prayer and in contemplating one's shortcomings, and then one should let it go and trust G-d's forgiveness. It is not meant to follow you through every hour.
-- **A purpose in the struggle.** The chapter says the reward of those who accept hardship is a fuller revelation of G-d, in time.
+- **Fixed time for sadness, then release.** The chapter says real sadness over one's mistakes has its place, at specific, suitable times, and then one should let it go and trust G-d's forgiveness. It is not meant to follow you through every hour.
+- **A purpose in the struggle.** The chapter says those who accept hardship with love will see its hidden good revealed in the World to Come.
 - **You are not alone.** Your soul, in Tanya's words on Chabad.org, is "a part of G-d above" (see [the soul](/learn/the-soul)). Even in the dark, that connection is not broken.
 
 ## Small steps for hard days
@@ -50,7 +50,7 @@ The Tanya teaches that nothing truly evil comes from Above, that apparent suffer
 No. The Tanya invites us toward joy as a source of strength, and describes a high ideal, but nothing in it says that crying or asking for help is wrong. Be gentle with yourself.
 
 ### Is sadness a sin in Judaism?
-Sadness is human. The Tanya says real sadness has a time and place, such as remorse during prayer, and that we should not let heaviness take over our whole day. If sadness is heavy or lasting, professional help is also the right step.
+Sadness is human. The Tanya says real sadness has a time and place, such as remorse over one's mistakes at set times, and that we should not let heaviness take over our whole day. If sadness is heavy or lasting, professional help is also the right step.
 
 ### Where can I find comfort in Jewish tradition when I am struggling?
 Read [hope in hard times](/learn/hope-in-hard-times), say Psalms ([Tehillim](/tehillim)), and talk with someone. In Lafayette, Moraga and Orinda you can call Rabbi Labkowski at 925-384-7242.
