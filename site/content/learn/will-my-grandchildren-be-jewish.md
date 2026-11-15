@@ -1,6 +1,6 @@
 ---
 title: Will My Grandchildren Be Jewish? Jewish Continuity and What Keeps It Alive
-description: Worried whether your grandchildren will be Jewish? What Chabad.org teaches about Jewish continuity, and warm, practical ways to hand Judaism on, with no guilt.
+description: Will your grandchildren be Jewish? What Chabad.org teaches about Jewish continuity and warm ways to hand Judaism on, with no guilt.
 category: Jewish ideas
 related: jewish-grandparents, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
 local: Thinking about the Jewish future of your family? Talk with Rabbi Labkowski at 925-384-7242 or Rebbetzin Labkowski at 925-384-7241.

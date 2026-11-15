@@ -1,6 +1,6 @@
 ---
 title: Why Giving to Jewish Education Matters Most: A Gift That Reaches the Next Generation
-description: Why Jewish education is one of the most meaningful places to give tzedakah, what Jewish law teaches about teaching children, and how to support it in Lamorinda.
+description: Why Jewish education is a most meaningful place to give tzedakah, what Jewish law says about teaching children, and how to support it in Lamorinda.
 category: Jewish ideas
 related: choosing-jewish-education, tzedakah-priorities, hebrew-school-in-lamorinda, chinuch, will-my-grandchildren-be-jewish, leaving-a-jewish-legacy-gift
 local: Want to help a Jewish child in Lafayette, Moraga or Orinda learn? Call Rabbi Labkowski at 925-384-7242 to hear about the preschool and Hebrew school.
