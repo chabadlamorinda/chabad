@@ -1219,6 +1219,11 @@ test('closed programs, the bequest wording builder and the weekly email (no week
   assert.ok(!(await c.call('GET', '/forms')).text.includes('legacy-intent'), 'the legacy form is not in the public list');
   assert.ok(C.stories.filter((x) => x.kind === 'joke').length > 50, 'jokes for the weekly email');
 });
+test('Google Search Console verification file is served, other names are not', async () => {
+  const c = client(), r = await c.call('GET', '/google782f93ba7cc8f3ad.html');
+  assert.equal(r.status, 200); assert.equal(r.text, 'google-site-verification: google782f93ba7cc8f3ad.html');
+  assert.equal((await c.call('GET', '/google0000000000000000.html')).status, 404);
+});
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',

@@ -75,6 +75,9 @@ async function llmsText(c, base, upcoming, full) {
 function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
   const c = () => content();
   // IndexNow (Bing, Yandex and others): the key file proves the site is ours; `node scripts/indexnow.js` sends every address.
+  // Google Search Console: this one file proves the site is ours (kept for good: removing it un-verifies the site).
+  // Only the file the Rabbi downloaded from Search Console is served; any other name is a 404.
+  r.get('/google782f93ba7cc8f3ad.html', (req, res) => res.type('text/html').send('google-site-verification: google782f93ba7cc8f3ad.html'));
   r.get(/^\/([A-Za-z0-9]{16,64})\.txt$/, (req, res, next) => (process.env.INDEXNOW_KEY && req.params[0] === process.env.INDEXNOW_KEY ? res.type('text/plain').send(req.params[0]) : next()));
   r.get('/robots.txt', (req, res) => {
     res.type('text').set('Cache-Control', 'public, max-age=3600');
