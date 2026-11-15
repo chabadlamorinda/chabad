@@ -89,7 +89,7 @@ ${blessings.map(([he, tr, en, firstOnly]) => `<div class="card mn-bless${firstOn
     const order = [...new Set([...next, 'shabbat-with-kids', 'holidays-with-toddlers', 'hebrew-alphabet', ...Object.values(KIDS)])];
     const guides = order.map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean);
     const parents = ['jewish-parenting', 'blessing-your-children', 'jewish-kids-in-lamorinda'].map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean);
-    const progs = ['jewish-preschool', 'hebrew-school', 'ckids-afterschool', 'summer-camp', 'kids-and-teens'].map((s) => C.programs.find((p) => p.slug === s)).filter(Boolean);
+    const progs = ['jewish-preschool', 'hebrew-school', 'ckids-afterschool', 'summer-camp', 'kids-and-teens'].map((s) => C.programs.find((p) => p.slug === s)).filter((p) => p && !p.closed);
     const today = Z.ymd(Z.todayLocal()), evs = C.events.filter((e) => e.published && ['kids', 'family'].includes(e.category) && (e.end || e.start).slice(0, 10) >= today).slice(0, 4);
     const play = [['/dreidel', t('Play!'), t('Spin the dreidel'), t('Nun, Gimmel, Hei, Shin: try to win the pot.')], ['/menorah', t('Tap to light'), t('Light the menorah'), t('Tonight’s candles, the order and the blessings.')], ['/chanukah-quiz', t('Quiz!'), t('The Chanukah quiz'), t('Ten quick questions for the whole family.')], ['/mitzvah', t('Do a mitzvah'), t('Do a mitzvah this week'), t('Pick one good deed and join the community count.')]];
     const body = `<section class="wrap sec">

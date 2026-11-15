@@ -242,7 +242,8 @@
         "label": "Anything we should know",
         "type": "textarea"
       }
-    ]
+    ],
+    "closed": true
   },
   {
     "id": "summer-camp",
@@ -316,7 +317,8 @@
         "label": "Which weeks, and anything we should know",
         "type": "textarea"
       }
-    ]
+    ],
+    "closed": true
   },
   {
     "id": "bar-bat-mitzvah",
@@ -857,5 +859,47 @@
       }
     ],
     "giftFund": "chesed"
+  },
+  {
+    "id": "legacy-intent",
+    "hidden": true,
+    "noGift": true,
+    "title": "Tell the Rabbi about my legacy wording",
+    "intro": "Telling the Rabbi is your choice. Nothing is binding.",
+    "button": "Send to the Rabbi",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Your name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "label": "Phone",
+        "type": "tel"
+      },
+      {
+        "id": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "id": "wording",
+        "label": "Your wording",
+        "type": "textarea"
+      },
+      {
+        "id": "note",
+        "label": "Anything you would like the Rabbi to know",
+        "type": "textarea"
+      },
+      {
+        "id": "callme",
+        "label": "Please call me",
+        "type": "checkbox"
+      }
+    ]
   }
 ]

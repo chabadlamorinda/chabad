@@ -46,7 +46,7 @@ function md(src) {
 // Phone numbers and "501(c)(3)" read left to right and never break, also inside Hebrew text (only in text, not tags).
 const ltr = (html) => String(html).replace(/>([^<]+)</g, (m, txt) => '>' + txt.replace(/(\+?1[ -])?\b\d{3}-\d{3}-\d{4}\b|501\(c\)\(3\)/g, (x) => `<bdi dir="ltr" class="nw">${x}</bdi>`) + '<');
 // Plain text (for meta descriptions, llms.txt, JSON-LD).
-const plain = (src) => String(src || '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[#>*_`]/g, '').replace(/\s+/g, ' ').trim();
+const plain = (src) => String(src || '').replace(/\{bequest-builder\}/g, '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[#>*_`]/g, '').replace(/\s+/g, ' ').trim();
 
 // "---\nkey: value\n---\nbody" front matter (values are plain strings; lists as comma-separated).
 // A value written in quotes (title: "A \"Tree\"...") loses the quotes, as YAML would.

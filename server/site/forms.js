@@ -91,7 +91,7 @@ function mountForms(r, { base, store, mailer, content, render, wrap, limit, read
   const formsOf = (C) => C.forms || [];
 
   r.get('/forms', wrap(async (req, res) => {
-    const X = ctxOf(req), { t, C } = X, list = formsOf(C);
+    const X = ctxOf(req), { t, C } = X, list = formsOf(C).filter((f) => !f.closed && !f.hidden);
     await render(res, { path: '/forms', title: t('Sign-ups, registrations and orders'), description: t('Register for preschool, Hebrew School and camp, reserve High Holiday seats, order lulav and etrog or matzah, sell your chametz and more, online at Chabad of Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Sign-ups, registrations and orders'))}</h1><p class="lead-d">${esc(t('Everything you can sign up for or order, in one place. Signed in? Your details are filled in for you.'))}</p>
 <div class="grid">${byPopularity(list, (f) => '/forms/' + f.id).map((f) => `<a class="card tile" href="/forms/${f.id}"><h3>${esc(f.title)}</h3><p>${esc(f.intro)}</p></a>`).join('')}</div></section>` });
@@ -101,7 +101,7 @@ function mountForms(r, { base, store, mailer, content, render, wrap, limit, read
     const X = ctxOf(req), { t, C } = X, f = formsOf(C).find((x) => x.id === req.params.id);
     if (!f) return next();
     const body = `<section class="wrap sec narrow"><p class="crumbs"><a href="/forms">${esc(t('Sign-ups and orders'))}</a> ›</p><h1>${esc(f.title)}</h1><p class="lead-d">${esc(f.intro)}</p>
-${formHtml(X, f, prefillOf(f, req.query))}
+${f.closed ? `<div class="card"><p><strong>${esc(t('Not running this year.'))}</strong> ${esc(t('Call {phone} and we will tell you when registration opens.', { phone: C.org.phone }))}</p></div>` : formHtml(X, f, prefillOf(f, req.query))}
 <p class="muted">${esc(t('Questions? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/forms/' + f.id, title: f.title, description: f.intro, body });
   }));

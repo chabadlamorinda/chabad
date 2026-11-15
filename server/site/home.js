@@ -58,7 +58,7 @@ function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, dayGuides =
   for (const b of H.banners || []) slides.push(fromProgram(C, b));
   // Smaller banners: the other events coming up, then the programs people see every week.
   const small = evs.filter((e) => !big.includes(e)).slice(0, 4).map((e) => ({ title: e.title, eyebrow: X.when(e), url: '/events/' + e.slug, image: picture(e) || holidayPhoto(e.holiday) || catPhoto(e.category), art: artFor('event', e.slug, e.holiday || e.category), theme: CAT_THEME[e.category] || 'blue' }))
-    .concat((H.tiles || []).map((x) => fromProgram(C, x))).slice(0, 8);
+    .concat((H.tiles || []).filter((x) => !(x.program && (C.programs.find((y) => y.slug === x.program) || {}).closed)).map((x) => fromProgram(C, x))).slice(0, 8);
   const stats = (H.stats || []).filter((s) => s.number && s.label);
   const involved = [
     ['challah', 'Come for a Shabbat meal', 'Join the Rabbi\'s family for Friday night dinner, or we will match you with a host.', '/forms/shabbat-meal'],

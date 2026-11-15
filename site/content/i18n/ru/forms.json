@@ -856,5 +856,47 @@
       }
     ],
     "giftFund": "chesed"
+  },
+  {
+    "id": "legacy-intent",
+    "hidden": true,
+    "noGift": true,
+    "title": "Сообщить раввину о моей формулировке завещания",
+    "intro": "Сообщать раввину или нет, решаете вы. Это ни к чему не обязывает.",
+    "button": "Отправить раввину",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Ваше имя",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "label": "Телефон",
+        "type": "tel"
+      },
+      {
+        "id": "email",
+        "label": "Эл. почта",
+        "type": "email",
+        "required": true
+      },
+      {
+        "id": "wording",
+        "label": "Ваша формулировка",
+        "type": "textarea"
+      },
+      {
+        "id": "note",
+        "label": "Что бы вы хотели сообщить раввину",
+        "type": "textarea"
+      },
+      {
+        "id": "callme",
+        "label": "Пожалуйста, позвоните мне",
+        "type": "checkbox"
+      }
+    ]
   }
 ]

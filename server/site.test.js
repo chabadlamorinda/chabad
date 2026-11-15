@@ -1206,6 +1206,19 @@ test('Weekly parsha: every one of the 54 portions has a rich page in English, He
   assert.deepEqual(missing, [], 'every portion needs site/content/parsha/<slug>.md');
   for (const pre of ['', '/he', '/ru']) for (const p of [P[0], P[20], P[53]]) { const r = await c.call('GET', `${pre}/parsha/${slug(p.name)}`); assert.equal(r.status, 200); assert.ok(r.text.includes('parsha-rich'), 'rich teaching shows'); }
 });
+test('closed programs, the bequest wording builder and the weekly email (no weekday prayers under Shabbat, a joke from the stories)', async () => {
+  const c = client(), C = load(DIR);
+  for (const pre of ['', '/he', '/ru']) {
+    const prog = await c.call('GET', pre + '/programs/ckids-afterschool'); assert.equal(prog.status, 200); assert.ok(!prog.text.includes('/forms/ckids'), 'no sign-up for a closed program');
+    assert.ok(!(await c.call('GET', pre + '/programs')).text.includes('/programs/summer-camp"'), 'a closed program is not listed');
+    assert.ok(!(await c.call('GET', pre + '/forms')).text.includes('/forms/summer-camp"'), 'a closed form is not listed');
+    const g = await c.call('GET', pre + '/learn/sample-bequest-language-for-attorneys'); assert.equal(g.status, 200);
+    assert.ok(g.text.includes('data-kind') && g.text.includes('data-form="legacy-intent"') && g.text.includes('/assets/bequest.js'), 'the builder and the form to the Rabbi are on the guide');
+    { const i = g.text.indexOf('{bequest-builder}'); assert.ok(i < 0, pre + ' ' + g.text.slice(Math.max(0, i - 150), i + 60)); }
+  }
+  assert.ok(!(await c.call('GET', '/forms')).text.includes('legacy-intent'), 'the legacy form is not in the public list');
+  assert.ok(C.stories.filter((x) => x.kind === 'joke').length > 50, 'jokes for the weekly email');
+});
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',

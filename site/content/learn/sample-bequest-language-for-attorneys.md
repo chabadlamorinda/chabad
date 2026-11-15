@@ -22,6 +22,12 @@ These are the same details as on our [legacy page](/legacy). "Chabad of Lamorind
 - **A legacy gift counts as maaser,** the tenth of income given to tzedakah. See [Maaser](/learn/maaser).
 - **A gift can carry a name.** Chabad of Lamorinda gladly offers dedication opportunities, such as dedicating a room or a [memorial plaque in the synagogue](/learn/memorial-plaque-in-the-synagogue). Consult the Rabbi before you write a dedication into your will, so it can be agreed in advance.
 
+## Write your own wording
+
+Choose the kind of gift and fill in the blanks, and the wording appears as you type. Keep it for yourself (copy it, download it or print it), or send it to the Rabbi. Either way, your attorney should review it.
+
+{bequest-builder}
+
 ## Sample clauses for a will or living trust
 
 Fill in the blanks, and let your attorney fit the wording to your plan and to the law of your state. In a living trust, your attorney will usually write "the trustee shall distribute" in place of "I give and bequeath."

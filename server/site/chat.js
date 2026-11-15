@@ -32,7 +32,7 @@ function knowledge(C) {
   if (o.kabbalatShabbat) L.push(`- The Friday Kabbalat Shabbat time above is this week's. It changes every week with the season: close to candle lighting in winter, never later than ${fmtClock(o.kabbalatShabbat.latest, 'en')} in summer, so it never starts after sunset. Each Friday's time is in the table on /shabbat.`);
   L.push(plain(o.shabbatText || ''));
   L.push('', '## Programs');
-  for (const p of C.programs) L.push(`### ${p.name} (/programs/${p.slug})`, `${p.audience || ''}. ${p.summary} ${p.schedule ? 'When: ' + p.schedule + '.' : ''}`, plain(p.details || ''));
+  for (const p of C.programs.filter((x) => !x.closed)) L.push(`### ${p.name} (/programs/${p.slug})`, `${p.audience || ''}. ${p.summary} ${p.schedule ? 'When: ' + p.schedule + '.' : ''}`, plain(p.details || ''));
   L.push('', '## Sign-ups, registrations and orders (forms on the site)');
   for (const f of C.forms || []) L.push(`- ${f.title}: /forms/${f.id}. ${f.intro}`);
   L.push('', '## Giving', plain((C.giving && C.giving.intro) || ''), 'Donate page: /donate (online once or monthly right on the website, Chai Club at /chai-club, Kiddush sponsorship at /sponsor-a-kiddush, Building Campaign, Venmo @CHABAD-LAMORINDA, check, donor advised fund, stock, crypto, wire). Sponsor a Kiddush or program in honor or memory: /sponsor. Kiddush sponsorship board: /sponsor-a-kiddush.');

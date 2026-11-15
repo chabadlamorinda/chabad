@@ -1031,3 +1031,10 @@ a.ask-rabbi { text-decoration: underline dotted var(--gold-ink, #8a6a1f); text-u
 .parsha-rich h2 { margin-top: 1.8em; border-top: 1px solid var(--line, #e7dcc6); padding-top: .9em; }
 .parsha-rich h2:first-child { border-top: 0; padding-top: 0; }
 .parsha-teach { border-inline-start: 4px solid var(--gold, #b8872b); }
+
+/* The bequest wording builder (guide: sample bequest language) */
+.bequest .fields { display: grid; gap: 10px; margin: 12px 0; }
+.bequest label { display: block; font-weight: 600; }
+.bequest input, .bequest select { width: 100%; margin-top: 4px; }
+.bequest .bq-out { background: var(--cream, #fffdf6); border-inline-start: 4px solid var(--gold, #b8872b); color: var(--ink, #222); font-family: Lora, Georgia, serif; direction: ltr; text-align: left; }
+.bequest-share { margin-top: 22px; }

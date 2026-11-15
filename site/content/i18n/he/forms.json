@@ -856,5 +856,47 @@
       }
     ],
     "giftFund": "chesed"
+  },
+  {
+    "id": "legacy-intent",
+    "hidden": true,
+    "noGift": true,
+    "title": "לספר לרב על נוסח המורשת שלי",
+    "intro": "הבחירה אם לספר לרב היא שלכם. שום דבר אינו מחייב.",
+    "button": "שליחה לרב",
+    "fields": [
+      {
+        "id": "name",
+        "label": "השם שלך",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "label": "טלפון",
+        "type": "tel"
+      },
+      {
+        "id": "email",
+        "label": "אימייל",
+        "type": "email",
+        "required": true
+      },
+      {
+        "id": "wording",
+        "label": "הנוסח שלך",
+        "type": "textarea"
+      },
+      {
+        "id": "note",
+        "label": "משהו שתרצו שהרב ידע",
+        "type": "textarea"
+      },
+      {
+        "id": "callme",
+        "label": "נא להתקשר אליי",
+        "type": "checkbox"
+      }
+    ]
   }
 ]
