@@ -9,11 +9,11 @@ When a Jewish person dies, call Rabbi Yisroel Labkowski at 925-384-7242 (or Rebb
 
 **Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call at once.** See [help with the cost](/learn/jewish-burial-financial-help).
 
-This guide lists the steps Jewish tradition gives for the first hours. It does not repeat the prayers at the bedside (see [when a loved one is dying](/learn/when-a-loved-one-is-dying)) or the whole funeral (see [Jewish funeral customs](/learn/jewish-funeral)).
+This guide lists the traditional steps for the first hours. It does not repeat the prayers at the bedside (see [when a loved one is dying](/learn/when-a-loved-one-is-dying)) or the whole funeral (see [Jewish funeral customs](/learn/jewish-funeral)).
 
 ## The very first moments
 
-Chassidic teaching holds that everyone present should say the blessing that acknowledges G-d as the true Judge. The Rabbi can tell you the words by phone. Mourning begins at the moment of death for a father, mother, spouse, son, daughter, brother or sister. For the next steps, the tradition advises:
+Everyone present should say the blessing that acknowledges G-d as the true Judge. The Rabbi can tell you the words by phone. Mourning begins at the moment of death for a father, mother, spouse, son, daughter, brother or sister. For the next steps:
 
 - Do not touch or move the body for at least 15 minutes.
 - After that, the eyes are closed and the body is covered with a sheet.
@@ -25,23 +25,23 @@ Keep the room quiet. Conversation should be about the funeral arrangements and t
 
 ## Who to call
 
-Jewish tradition says the local **Chevra Kadisha** (the Jewish burial society) should be reached right away for instructions, to make sure the **funeral home**, if you use one, knows what a Jewish burial needs, and to ask a **rabbi** about anything unusual (a death on Shabbat or a holiday, burial far away, organ donation). Here in Lamorinda, the first call is to Rabbi Labkowski at 925-384-7242, before the burial society or a funeral home: that one call starts all of it, and he makes the arrangements. See [Jewish funerals near Lafayette](/learn/jewish-funerals-near-lafayette).
+The local **Chevra Kadisha** (the Jewish burial society) should be reached right away for instructions, to make sure the **funeral home**, if you use one, knows what a Jewish burial needs, and to ask a **rabbi** about anything unusual (a death on Shabbat or a holiday, burial far away, organ donation). Here in Lamorinda, the first call is to Rabbi Labkowski at 925-384-7242, before the burial society or a funeral home: that one call starts all of it, and he makes the arrangements. See [Jewish funerals near Lafayette](/learn/jewish-funerals-near-lafayette).
 
 Tell the funeral home that your loved one needs tahara (ritual washing), a *shomer* (a guard), white shrouds, a traditional wooden casket and the care of the Chevra Kadisha. See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
 
 ## If the death is in a hospital, hospice or care home
 
-Chassidic teaching says to tell the staff that the Chevra Kadisha will care for the body, and to ask them to wait for instructions before they do anything. If the body must be moved to the hospital morgue, a Jewish person should go along and stay in sight until the Chevra Kadisha takes over. Do not remove tubes or lines, and give the Chevra Kadisha any clothing or linens with blood on them, because they are buried with the person. A person who has just died is to be treated with the same dignity as a living person.
+Tell the staff that the Chevra Kadisha will care for the body, and ask them to wait for instructions before they do anything. If the body must be moved to the hospital morgue, a Jewish person should go along and stay in sight until the Chevra Kadisha takes over. Do not remove tubes or lines, and give the Chevra Kadisha any clothing or linens with blood on them, because they are buried with the person. A person who has just died is to be treated with the same dignity as a living person.
 
-Say clearly that you do **not** want an autopsy or embalming. The tradition says autopsies are strongly forbidden (if the authorities require one, ask a rabbi who knows this area at once) and embalming is forbidden. See [autopsy: the Jewish view](/learn/autopsy-jewish-view) and [embalming and viewing](/learn/embalming-and-viewing-jewish-view). Organ donation is a complicated question; speak to the Rabbi before deciding ([organ donation](/learn/organ-donation-jewish-view)).
+Say clearly that you do **not** want an autopsy or embalming. Autopsies are strongly forbidden (if the authorities require one, ask a rabbi who knows this area at once) and embalming is forbidden. See [autopsy: the Jewish view](/learn/autopsy-jewish-view) and [embalming and viewing](/learn/embalming-and-viewing-jewish-view). Organ donation is a complicated question; speak to the Rabbi before deciding ([organ donation](/learn/organ-donation-jewish-view)).
 
 ## Do not leave the body alone
 
-A Jewish person should stay with the body until burial. This is called *shemirah*, "guarding." It may be a family member, a friend, a member of the Chevra Kadisha or someone hired, and people may take turns. Jewish tradition says those who guard should not eat, drink, smoke or sleep in the room, and should read Psalms instead. If the body is driven anywhere, a Jewish person should ride along.
+A Jewish person should stay with the body until burial. This is called *shemirah*, "guarding." It may be a family member, a friend, a member of the Chevra Kadisha or someone hired, and people may take turns. Those who guard should not eat, drink, smoke or sleep in the room, and should read Psalms instead. If the body is driven anywhere, a Jewish person should ride along.
 
 ## If the death is on Shabbat or a holiday
 
-The restrictions of Shabbat and the holidays still apply, including to preparing for burial. Chassidic teaching says the body is not moved, is covered with a sheet, and is left until Shabbat or the holiday ends. Call the Rabbi, who will guide you through it.
+The restrictions of Shabbat and the holidays still apply, including to preparing for burial. The body is not moved, is covered with a sheet, and is left until Shabbat or the holiday ends. Call the Rabbi, who will guide you through it.
 
 ## Common questions
 

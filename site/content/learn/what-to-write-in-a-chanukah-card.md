@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: holiday-greetings, chanukah-for-friends-and-coworkers, chanukah-gifts, chanukah-glossary, hanukkah-or-chanukah-spelling
 local: Want a Chanukah message that comes from the heart? Call Rabbi Labkowski at 925-384-7242 and we will help you find the words.
 ---
-The simplest and best thing to write in a Chanukah card is "Happy Chanukah," which Jewish tradition says works in all settings and with all Jews. For a Hebrew touch, write *Chanukah sameach* (חנוכה שמח), and for a Yiddish one, *Freilichen Chanukah*; then add a warm line about light.
+The simplest and best thing to write in a Chanukah card is "Happy Chanukah," which works in all settings and with all Jews. For a Hebrew touch, write *Chanukah sameach* (חנוכה שמח), and for a Yiddish one, *Freilichen Chanukah*; then add a warm line about light.
 
 A card is a small way to spread the light of the holiday. Below are sample messages you can use as they are or make your own.
 

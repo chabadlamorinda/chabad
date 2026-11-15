@@ -9,7 +9,7 @@ local: Looking for a way to light up someone's life? Call Rabbi Labkowski at 925
 
 ## What does the verse say?
 
-The verse is translated: "Man's soul is the Lord's lamp, which searches out all the innermost parts." Rashi explains that the soul inside a person testifies about him. Other Chassidic writings use the words "candle," "lamp" and "flame" for the same idea. In Hebrew, the word *neshamah* (נשמה) is the soul, and the word *ner* (נר) is a candle.
+The verse is translated: "Man's soul is the Lord's lamp, which searches out all the innermost parts." Rashi explains that the soul inside a person testifies about him. Other writings use the words "candle," "lamp" and "flame" for the same idea. In Hebrew, the word *neshamah* (נשמה) is the soul, and the word *ner* (נר) is a candle.
 
 For a wider look at the soul, see [the soul](/learn/the-soul).
 
@@ -17,7 +17,7 @@ For a wider look at the soul, see [the soul](/learn/the-soul).
 
 The second Rebbe of Chabad, Rabbi DovBer of Lubavitch, wrote a Chanukah discourse that begins with this verse. It uses the parts of a lamp, the oil, the wick and the flame, to explain how each of us should serve G-d. Practical mitzvah observance is compared to oil, which joins the flame to the wick and keeps the soul's light burning in the body. Contemplation and inner growth are important, the discourse says, but it is the doing of mitzvot that is most essential.
 
-Another Chassidic teaching says the flame is like Torah study and the wick is like mitzvot, the action. We need both, learning and doing, for the light to burn. See [Chanukah and Torah study](/learn/chanukah-and-torah-study).
+Another teaching says the flame is like Torah study and the wick is like mitzvot, the action. We need both, learning and doing, for the light to burn. See [Chanukah and Torah study](/learn/chanukah-and-torah-study).
 
 ## A light that cannot be put out
 
@@ -25,7 +25,7 @@ Rabbi Yitzi Hurwitz explains that the soul has five levels, and that the highest
 
 ## One person lights another
 
-In the Chassidic commentary on the verse "when you light the lamps" (Numbers 8:2), the verse about the soul is quoted, and the lesson is: each Jew should make his own candle shine brightly and help light another Jew's candle, through learning Torah, doing mitzvot and inspiring others to do the same. For the Rebbe's call to bring Chanukah's light outside, see [the Rebbe on Chanukah](/learn/the-rebbe-on-chanukah).
+In a commentary on the verse "when you light the lamps" (Numbers 8:2), the verse about the soul is quoted, and the lesson is: each Jew should make his own candle shine brightly and help light another Jew's candle, through learning Torah, doing mitzvot and inspiring others to do the same. For the Rebbe's call to bring Chanukah's light outside, see [the Rebbe on Chanukah](/learn/the-rebbe-on-chanukah).
 
 ## A true story about one more light
 
@@ -45,10 +45,10 @@ It is from Proverbs (Mishlei) 20:27. Rashi explains that the soul inside a perso
 It is the highest level of the soul, according to Chassidic teaching, the part that is always connected to G-d and cannot be touched by negative influences.
 
 ### How can I help light another person's candle?
-Chassidic teaching says a person can help another by learning Torah, doing mitzvot and inspiring others to do the same.
+A person can help another by learning Torah, doing mitzvot and inspiring others to do the same.
 
 ### Why do Chanukah lights point to the soul?
-A flame gives light, and Chassidic writers compare the parts of a lamp to the parts of our service of G-d. One teaching adds that the darkness itself can be made to shine.
+A flame gives light, and writers compare the parts of a lamp to the parts of our service of G-d. One teaching adds that the darkness itself can be made to shine.
 
 ### Where can I light up someone's life near Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda at 925-384-7242, see [help for seniors and families](/help/help-for-seniors-and-families), or [sign up to volunteer](/forms/volunteer).

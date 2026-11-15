@@ -19,7 +19,7 @@ The prophet Jeremiah describes the scene: "A voice is heard on high, lamentation
 
 A Midrash on Lamentations tells how the Patriarchs and Moses pleaded for mercy, and G-d was silent until Rachel spoke. She reminded G-d that she had given Leah the secret signs, so that her sister would not be shamed when Leah married Jacob. She asked G-d to show the same restraint toward Israel. G-d promised to bring the Jewish people back to their place for Rachel's sake.
 
-This is the lesson: Rachel is the model of a Jewish mother. She sees the good in her children even when they are far from where they should be, and she never gives up on them. We can learn from her to look kindly at one another (see [Ahavat Yisrael](/learn/ahavat-yisrael)).
+The lesson is this: Rachel is the model of a Jewish mother. She sees the good in her children even when they are far from where they should be, and she never gives up on them. We can learn from her to look kindly at one another (see [Ahavat Yisrael](/learn/ahavat-yisrael)).
 
 ## The tomb through history
 

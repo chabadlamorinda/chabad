@@ -27,7 +27,7 @@ Leah had six sons while Rachel had none, and Rachel's longing was deep. At last 
 
 As the family traveled, Rachel died giving birth to her second son, Benjamin, and Jacob buried her on the road near Bethlehem, on the way to Efrat. Unlike the other Patriarchs and Matriarchs, she was not buried in the Cave of the Patriarchs in Hebron.
 
-Tradition gives this reason. Jacob foresaw that the Jewish people would one day pass along that road as exiles, and he buried Rachel there so she could pray for them as they went by.
+Rashi gives this reason, based on the Midrash. Jacob foresaw that the Jewish people would one day pass along that road as exiles, and he buried Rachel there so she could pray for them as they went by.
 
 ## Rachel weeps for her children
 
@@ -37,7 +37,7 @@ According to a Midrash, Rachel argued before G-d for mercy for her children, rem
 
 ## Rachel's Tomb today
 
-Rachel's Tomb is near Bethlehem, just south of Jerusalem. It is a place where people pour out their hearts, particularly women praying for children. Tradition marks her passing on the 11th of Cheshvan, and people come to the tomb to pray on that day. One custom connected to her grave is placing a small stone on a grave after visiting, which tradition traces to Jacob's sons, who each placed a stone on Rachel's grave. For more about this custom, see [visiting a grave](/learn/visiting-a-grave) and [yahrzeit](/learn/yahrzeit).
+Rachel's Tomb is near Bethlehem, just south of Jerusalem. It is a place where people pour out their hearts, particularly women praying for children. Tradition marks her passing on the 11th of Cheshvan, and people come to the tomb to pray on that day. One custom connected to her grave is placing a small stone on a grave after visiting, which some trace to Jacob's sons, who each placed a stone on Rachel's grave. For more about this custom, see [visiting a grave](/learn/visiting-a-grave) and [yahrzeit](/learn/yahrzeit).
 
 ## What Rachel teaches us
 
@@ -50,7 +50,7 @@ Whatever you are carrying, you can turn to the Matriarchs in prayer. And wheneve
 Rachel was the beloved wife of Jacob, one of the four Matriarchs, and the mother of Joseph and Benjamin.
 
 ### Why is Rachel buried on the road and not in Hebron?
-Tradition teaches that Jacob buried her by the road near Bethlehem so that she could pray for her children when they would pass by in exile.
+Rashi explains that Jacob buried her by the road near Bethlehem so that she could pray for her children when they would pass by in exile.
 
 ### What does "Rachel weeps for her children" mean?
 It comes from the prophet Jeremiah (31:14-16). G-d answers her that her children will return to their land.

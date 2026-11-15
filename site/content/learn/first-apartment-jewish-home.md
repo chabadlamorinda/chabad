@@ -5,7 +5,7 @@ category: Jewish home
 related: setting-up-a-jewish-home, mezuzah-questions, young-professionals-in-lamorinda, mezuzah, shabbat-candles
 local: Setting up your first place? Call Rabbi Labkowski at 925-384-7242 or request a mezuzah at /forms/mezuzah-tefillin.
 ---
-Yes, your first apartment can be a Jewish home from day one, and the first step is a kosher mezuzah (מְזוּזָה) on the doorpost. According to Jewish tradition, a renter outside Israel is not obligated to put up a mezuzah for the first 30 days, but it is the custom of Chabad and many others to hang the mezuzahs right away, without the blessing, and to say the blessing after 30 days.
+Yes, your first apartment can be a Jewish home from day one, and the first step is a kosher mezuzah (מְזוּזָה) on the doorpost. A renter outside Israel is not obligated to put up a mezuzah for the first 30 days, but it is the custom of Chabad and many others to hang the mezuzahs right away, without the blessing, and to say the blessing after 30 days.
 
 ## The mezuzah in a rental
 

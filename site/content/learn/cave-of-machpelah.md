@@ -13,7 +13,7 @@ Machpelah means "doubled." There are two explanations: either the cave had two l
 
 ## How Abraham bought the cave
 
-When Sarah passed away at the age of 127, Abraham came to Hebron to mourn her and to find a place to bury her. The Torah tells the story at length in the portion called *Chayei Sarah*. Ephron, the owner of the cave, offered it to Abraham as a gift. Abraham insisted on paying, and bought the cave and its field for 400 shekels of silver. It is called the first plot of land in the Holy Land legally owned by the Jewish people.
+When Sarah passed away at the age of 127, Abraham came to Hebron to mourn her and to find a place to bury her. The Torah tells the story at length in the portion called *Chayei Sarah*. Ephron, the owner of the cave, offered it to Abraham as a gift. Abraham insisted on paying, and bought the cave and its field for 400 shekels of silver. It was the first plot of land in the Holy Land legally owned by the Jewish people.
 
 Read about Abraham and Sarah in [Abraham and Sarah](/learn/abraham-and-sarah).
 

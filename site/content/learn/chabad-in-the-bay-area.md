@@ -15,7 +15,7 @@ Today there are roughly 4,900 emissary families running about 3,500 institutions
 
 ## Chabad comes to the Bay Area
 
-The story is told that Rabbi Chaim Itche Drizin came to the Bay Area as an emissary in 1971, and that he helped found Chabad's presence in Berkeley and San Francisco in the early 1970s. In 1975, on the first night of Chanukah, more than a thousand people gathered in San Francisco's Union Square for what is considered the first large public menorah lighting of modern times. Rabbi Drizin led the idea, together with rock promoter Bill Graham, and the menorah was a 25-foot structure of mahogany. Today public menorah lightings take place around the world. Read about [Chanukah](/holidays/chanukah) and the [Chanukah menorah](/learn/chanukah-menorah).
+Rabbi Chaim Itche Drizin came to the Bay Area as an emissary in 1971, and he helped found Chabad's presence in Berkeley and San Francisco in the early 1970s. In 1975, on the first night of Chanukah, more than a thousand people gathered in San Francisco's Union Square for what is considered the first large public menorah lighting of modern times. Rabbi Drizin led the idea, together with rock promoter Bill Graham, and the menorah was a 25-foot structure of mahogany. Today public menorah lightings take place around the world. Read about [Chanukah](/holidays/chanukah) and the [Chanukah menorah](/learn/chanukah-menorah).
 
 ## What every Chabad House has in common
 

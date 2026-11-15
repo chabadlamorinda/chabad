@@ -13,7 +13,7 @@ Jewish tradition holds up peace as one of the highest values. The Mishnah in Pir
 
 ## Lessons from a peaceful Seder
 
-Jewish tradition offers eight steps for defusing a tense Passover Seder. They work for any family meal, whether Thanksgiving, a Chanukah party or Shabbat:
+Here are eight steps for defusing a tense Passover Seder. They work for any family meal, whether Thanksgiving, a Chanukah party or Shabbat:
 
 1. **Arrive upbeat.** Greet everyone warmly and set a positive mindset before the meal begins.
 2. **Start right away.** Begin with well-loved songs or a toast so everyone feels connected, even if guests are still arriving.

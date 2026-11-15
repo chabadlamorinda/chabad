@@ -20,7 +20,7 @@ We follow Beit Hillel. In fact, the name of the holiday is read as a hint to thi
 
 ## The idea of "always going up"
 
-Why does Beit Hillel's way win? Jewish tradition explains that one reason is the principle in Hebrew called *ma'alin bakodesh v'ein moridin*: in matters of holiness we raise up, we do not bring down. A mitzvah done tonight is not erased tomorrow, so tomorrow should be more. Another reason offered is that each night we add to match the days that have already passed.
+Why does Beit Hillel's way win? One reason is the principle in Hebrew called *ma'alin bakodesh v'ein moridin*: in matters of holiness we raise up, we do not bring down. A mitzvah done tonight is not erased tomorrow, so tomorrow should be more. Another reason offered is that each night we add to match the days that have already passed.
 
 If you ever do not have enough candles for the full number on a certain night, ask the Rabbi what to do.
 
@@ -38,7 +38,7 @@ Shammai's view is not foolish. Chabad teaching gives a thoughtful explanation of
 - **A mitzvah's light is permanent.** The light of a mitzvah stays with a person and carries its blessing forward, and each day brings the light of the days before it.
 - **Actions, not plans.** Intentions do not give light by themselves. Only what a person actually does makes light.
 
-Jewish law suggests that perhaps Shammai's method suited a time when people had the spiritual strength for a direct battle, while in our times of exile a positive approach is what works. Even so, the best life often needs both: to stop the bad and to build the good.
+Chassidic thought suggests that perhaps Shammai's method suited a time when people had the spiritual strength for a direct battle, while in our times of exile a positive approach is what works. Even so, the best life often needs both: to stop the bad and to build the good.
 
 ## How to use this in your own life
 

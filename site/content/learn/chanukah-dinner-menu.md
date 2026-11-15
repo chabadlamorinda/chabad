@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: latkes, chanukah-foods, hosting-a-chanukah-party, sufganiyot, pareve
 local: Planning a Chanukah dinner and want a kosher tip? Call Rabbi Labkowski at 925-384-7242, or join the community menorah lighting at /events/chanukah-grand-menorah-lighting-2026.
 ---
-A good Chanukah dinner has something fried in oil, usually latkes, and is built around either a meat menu or a dairy menu, never both at once. Jewish tradition says eating oily foods is a custom of at least a thousand years, and dairy dishes are customary too, so both menus below are traditional.
+A good Chanukah dinner has something fried in oil, usually latkes, and is built around either a meat menu or a dairy menu, never both at once. Eating oily foods is a custom of at least a thousand years, and dairy dishes are customary too, so both menus below are traditional.
 
 ## First, choose: meat or dairy?
 
@@ -59,7 +59,7 @@ Serve something fried in oil, usually potato latkes, with either a meat menu or 
 Yes, if the latkes are pareve: made with potatoes, onion, eggs, flour, salt and oil, and no dairy. Serve them with applesauce, not sour cream.
 
 ### Is a dairy dinner on Chanukah required?
-No. Dairy is a custom, not a command. The tradition suggests hosting a dairy party in memory of Yehudit, but a meat dinner is also fine.
+No. Dairy is a custom, not a command. Many families host a dairy party in memory of Yehudit, but a meat dinner is also fine.
 
 ### Can I have dessert with milk after a meat dinner?
 Not right away. Jewish law requires waiting after meat before dairy. The Chabad custom, like that of most communities, is to wait six hours, though some families have other customs. Ask the Rabbi what is right for your family, or serve a pareve dessert.

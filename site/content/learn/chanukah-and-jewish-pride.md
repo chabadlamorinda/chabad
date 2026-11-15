@@ -15,7 +15,7 @@ In the second century BCE, the Seleucid Greeks who ruled the Holy Land tried to 
 
 ## Why the menorah faces the street
 
-The menorah is meant to be seen. Chassidic teaching explains that its light should be visible from outside the home, in a doorway, outdoors or in a window facing the street, to publicize the miracle. The Rebbe taught that the menorah's light is meant to shine outward, into the darkness outside. A doorway, as it is explained, is neither fully inside nor fully outside, neither wholly public nor private. The light that glows from the Jewish home is meant to radiate outward from a focused inner life; the Jewish home is called a *mikdash me'at*, a "mini Temple." See [the Chanukah menorah](/learn/chanukah-menorah) for how Chabad lights it in an interior doorway opposite the mezuzah.
+The menorah is meant to be seen. Its light should be visible from outside the home, in a doorway, outdoors or in a window facing the street, to publicize the miracle. The Rebbe taught that the menorah's light is meant to shine outward, into the darkness outside. A doorway is neither fully inside nor fully outside, neither wholly public nor private. The light that glows from the Jewish home is meant to radiate outward from a focused inner life; the Jewish home is called a *mikdash me'at*, a "mini Temple." See [the Chanukah menorah](/learn/chanukah-menorah) for how Chabad lights it in an interior doorway opposite the mezuzah.
 
 ## How Chanukah came out into the open
 
@@ -35,7 +35,7 @@ Pride never means putting anyone in danger. Where and how to display a menorah i
 Chanukah teaches that a small light can dispel great darkness, and that we should be proud of Jewish practice and not ashamed to stand out. The Maccabees stood up for what is right against daunting odds.
 
 ### Why do we light the menorah publicly?
-To publicize the miracle. Chassidic thought explains the menorah's light should be visible from outside the home, in a doorway or a window facing the street, or at a public lighting.
+To publicize the miracle. The menorah's light should be visible from outside the home, in a doorway or a window facing the street, or at a public lighting.
 
 ### Who started public menorah lightings?
 The modern campaign goes back to the Rebbe, Rabbi Menachem M. Schneerson, who announced it in December 1973. Public lightings followed in Philadelphia, San Francisco and Washington.

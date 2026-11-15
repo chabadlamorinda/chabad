@@ -19,7 +19,7 @@ Chanukah celebrates two miracles: a small group defeated a great army, and one f
 
 ## Brit milah on the eighth day
 
-A baby boy is circumcised on the eighth day of his life. This too is a mitzvah that goes beyond nature: it is a covenant that corrects the body beyond the way nature made it. Chassidic thought notes that the Greeks forbade circumcision, and that one explanation of the eight days of Chanukah ties them to it. Read [brit milah](/learn/brit-milah) to learn more about this covenant.
+A baby boy is circumcised on the eighth day of his life. This too is a mitzvah that goes beyond nature: it is a covenant that corrects the body beyond the way nature made it. The Greeks forbade circumcision, and one explanation of the eight days of Chanukah ties them to it. Read [brit milah](/learn/brit-milah) to learn more about this covenant.
 
 ## Shemini Atzeret, the eighth day
 
@@ -36,7 +36,7 @@ The Rebbe connected Chanukah's eight lights with the future redemption. Each nig
 ## Common questions
 
 ### Why is the number eight important in Judaism?
-Jewish tradition explains that seven stands for the natural order and eight for what is above nature. This is why Chanukah has eight lights, brit milah is on the eighth day and Shemini Atzeret is the eighth day.
+Seven stands for the natural order and eight for what is above nature. This is why Chanukah has eight lights, brit milah is on the eighth day and Shemini Atzeret is the eighth day.
 
 ### Why does the Chanukah menorah have eight branches when the Temple menorah had seven?
 The Rebbe taught that seven is complete within nature, and eight reaches beyond it. Today's spiritual darkness needs a light beyond nature.
@@ -45,10 +45,10 @@ The Rebbe taught that seven is complete within nature, and eight reaches beyond 
 Brit milah is on the eighth day, and the Greeks forbade it. One answer ties the eight days of Chanukah to it.
 
 ### What is Shemini Atzeret and how does it relate to Chanukah?
-It is the festival right after Sukkot, called "the eighth." A Chassidic teaching explains that both last eight days because both connect to what is beyond nature.
+It is the festival right after Sukkot, called "the eighth." Rabbi Yitzi Hurwitz explains that both last eight days because both connect to what is beyond nature.
 
 ### What does 358 have to do with Chanukah?
-The letters of the dreidel add up to 358, the same as the word Mashiach, according to a Chassidic teaching.
+The letters of the dreidel add up to 358, the same as the word Mashiach.
 
 ### Where can I learn more Jewish ideas near Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242 or see [adult education](/programs/adult-education).

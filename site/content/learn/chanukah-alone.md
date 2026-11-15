@@ -9,7 +9,7 @@ If you live alone, you light your own Chanukah menorah, with the blessings, ever
 
 ## Do I really light by myself, and with blessings?
 
-Yes. Jewish tradition teaches that the mitzvah of Chanukah (חֲנֻכָּה) is for the home, and that both men and women are obligated to light. Whoever lives alone lights alone, and says the blessings just as a family does. On the first night, or the first time you light this Chanukah, there are three blessings; on the other nights, two. The third is [Shehecheyanu](/learn/shehecheyanu), which thanks G-d for bringing us to this time. The words and the order are in [How to light the menorah](/learn/chanukah-menorah), and [tonight's candles](/menorah) shows which candle to light.
+Yes. The mitzvah of Chanukah (חֲנֻכָּה) is for the home, and both men and women are obligated to light. Whoever lives alone lights alone, and says the blessings just as a family does. On the first night, or the first time you light this Chanukah, there are three blessings; on the other nights, two. The third is [Shehecheyanu](/learn/shehecheyanu), which thanks G-d for bringing us to this time. The words and the order are in [How to light the menorah](/learn/chanukah-menorah), and [tonight's candles](/menorah) shows which candle to light.
 
 A short reminder of how it goes:
 
@@ -17,7 +17,7 @@ A short reminder of how it goes:
 2. Light the helper candle (shamash) first.
 3. Say the blessings.
 4. Light the newest candle first, then continue from left to right.
-5. Sing Haneirot Halalu, and sit near the lights for about half an hour. The tradition suggests telling stories and not using the glow for anything else. It is a good time to call someone or just be quiet.
+5. Sing Haneirot Halalu, and sit near the lights for about half an hour. Tell stories, and do not use the glow for anything else. It is a good time to call someone or just be quiet.
 
 Tea lights in a tray are fine and safe. See [oil and candles](/learn/menorah-oil-and-candles) for what works. If you cannot light a flame where you live, ask the Rabbi what to do.
 
@@ -39,7 +39,7 @@ Being alone in a holiday that everyone else spends in crowds can hurt. You do no
 - Ask for a [Shabbat meal](/forms/shabbat-meal) invitation. If Chanukah falls on a Friday night, see [Chanukah on Shabbat](/learn/chanukah-on-shabbat) for how to light before Shabbat begins.
 - Read [feeling lonely](/learn/feeling-lonely) and [Shabbat alone](/learn/shabbat-alone), which are written for exactly this.
 
-There is the story of a recreation therapist in a New York hospital who lit a small electric menorah each night for a roomful of Jewish residents, because candles were not allowed. When one bulb failed on the last night, he went searching for another, because he believed they deserved all the lights. One person's small effort lit a room. Your lights matter, too.
+A story is told of a recreation therapist in a New York hospital who lit a small electric menorah each night for a roomful of Jewish residents, because candles were not allowed. When one bulb failed on the last night, he went searching for another, because he believed they deserved all the lights. One person's small effort lit a room. Your lights matter, too.
 
 ## Common questions
 
@@ -50,7 +50,7 @@ Yes. A person living alone lights their own menorah every night, with the blessi
 Yes, on the first night, or the first time you light this Chanukah. On the other nights you say only the first two blessings. See [Shehecheyanu](/learn/shehecheyanu).
 
 ### Do women who live alone light the menorah?
-Yes. Jewish tradition teaches that both men and women are obligated, and a woman living alone lights her own menorah with the blessings.
+Yes. Both men and women are obligated, and a woman living alone lights her own menorah with the blessings.
 
 ### What if I am invited to someone else's home for Chanukah?
 Ask the Rabbi where and when to light, because it depends on whether you will be home that night or sleeping elsewhere. See [Chanukah away from home](/learn/chanukah-away-from-home).

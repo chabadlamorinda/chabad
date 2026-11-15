@@ -9,17 +9,17 @@ Your first Chanukah as a married couple is the moment to decide what your own ho
 
 ## Who lights the menorah in a married home?
 
-Jewish tradition teaches that both men and women are obligated in the mitzvah of Chanukah (חֲנֻכָּה), either by lighting their own menorah or by taking part in the household's lighting. In some families the head of the household lights while the others listen to the blessings and answer "Amen," and in many families each person, including the children, lights their own.
+Both men and women are obligated in the mitzvah of Chanukah (חֲנֻכָּה), either by lighting their own menorah or by taking part in the household's lighting. In some families the head of the household lights while the others listen to the blessings and answer "Amen," and in many families each person, including the children, lights their own.
 
 In many Chabad homes, the husband lights the menorah for the household and the wife takes part, hearing the blessings and answering "Amen." If the husband is away for the night, the wife lights. Other families follow different customs, and some wives light their own menorah as well. This is a question where tradition varies, so please ask the Rabbi what is right for your family. There is a place for both of you in the mitzvah, and a menorah that you light together, with both of you at the table, makes the evening feel like yours.
 
 ## Setting up your first Chanukah, step by step
 
 1. **Choose your menorah.** A menorah is a row of eight lights at the same height, plus the helper (shamash) set apart. It can be simple or beautiful. Many couples choose one they will pass down someday. If you like, ask the Rabbi about oil, wicks and candles. See [oil and candles](/learn/menorah-oil-and-candles).
-2. **Find the right spot.** Chassidic teaching describes placing the menorah in a doorway opposite the mezuzah, or in a window facing the street, so that others can see it. See [How to light the menorah](/learn/chanukah-menorah).
+2. **Find the right spot.** The menorah is placed in a doorway opposite the mezuzah, or in a window facing the street, so that others can see it. See [How to light the menorah](/learn/chanukah-menorah).
 3. **Stock up.** You need enough candles or oil for all the nights, and longer-lasting ones for Friday afternoon. The [getting ready checklist](/learn/getting-ready-for-chanukah) and [Bay Kosher](/programs/bay-kosher) help.
-4. **Learn the blessings together.** Say three blessings on the first night, and two on the others. The first night includes [Shehecheyanu](/learn/shehecheyanu), a blessing of thanks for reaching this moment, and what could be a better one for your first Chanukah together? The tradition gives the order in its guide to lighting.
-5. **Sit by the lights.** Jewish tradition suggests sitting near the lights for about half an hour, singing and telling stories, without using the light. It is a quiet half hour for just the two of you. Women traditionally refrain from housework while the lights burn; see [women and Chanukah](/learn/women-and-chanukah).
+4. **Learn the blessings together.** Say three blessings on the first night, and two on the others. The first night includes [Shehecheyanu](/learn/shehecheyanu), a blessing of thanks for reaching this moment, and what could be a better one for your first Chanukah together? Our guide to lighting gives the order.
+5. **Sit by the lights.** It is customary to sit near the lights for about half an hour, singing and telling stories, without using the light. It is a quiet half hour for just the two of you. Women traditionally refrain from housework while the lights burn; see [women and Chanukah](/learn/women-and-chanukah).
 
 ## Starting traditions of your own
 
@@ -38,7 +38,7 @@ Newlyweds often face the question of which family to spend the nights with. Your
 ## Common questions
 
 ### Who lights the menorah, the husband or the wife?
-Chassidic teaching holds that both are obligated, either lighting their own or taking part in the household lighting. In many Chabad homes the husband lights for the household and the wife takes part, but customs vary. Ask the Rabbi what to do in your home.
+Both are obligated, either lighting their own or taking part in the household lighting. In many Chabad homes the husband lights for the household and the wife takes part, but customs vary. Ask the Rabbi what to do in your home.
 
 ### Do we both say the blessings?
 Whoever lights says the blessings aloud, and the others answer "Amen." If you each light your own menorah, each says them. Check with the Rabbi about how this works in your case.

@@ -33,7 +33,7 @@ A [dreidel](/learn/dreidel) is a four-sided spinning top marked with the Hebrew 
 - **Canvas art.** Tape the shape of a menorah or dreidel on a small canvas with masking tape, paint the whole canvas, and peel the tape off when dry to reveal the design.
 - **A giant menorah of building bricks.** Let a group of kids build one together, a good activity for a party. See our guide to [hosting a Chanukah party](/learn/hosting-a-chanukah-party).
 - **Decorate a donut.** Ready-made donuts, icing and sprinkles. See [sufganiyot](/learn/sufganiyot), the jelly doughnuts of Chanukah.
-- **A gelt purse or bag.** A homemade pouch for [Chanukah gelt](/learn/chanukah-gelt) makes a nice present. Many families find a video helpful for this one.
+- **A gelt purse or bag.** A homemade pouch for [Chanukah gelt](/learn/chanukah-gelt) makes a nice present. An online video tutorial can help with this one.
 
 ## A craft menorah and the real thing
 

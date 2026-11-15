@@ -43,7 +43,7 @@ Here are 18 Chanukah facts that surprise even people who have lit the menorah al
 No. Chanukah is not mentioned in the 24 books of the Bible, which were sealed before the miracle. The Talmud tells its story briefly.
 
 ### Why do we eat latkes on Chanukah?
-Fried foods recall the oil that burned in the Temple for eight days. Jewish tradition adds that cheese pancakes, recalling Judith, were an older custom, and potato latkes came later. See [latkes](/learn/latkes).
+Fried foods recall the oil that burned in the Temple for eight days. Cheese pancakes, recalling Judith, were an older custom, and potato latkes came later. See [latkes](/learn/latkes).
 
 ### Can Chanukah start on any day of the week?
 It can start on any day except Tuesday, because Cheshvan can have 29 or 30 days.
