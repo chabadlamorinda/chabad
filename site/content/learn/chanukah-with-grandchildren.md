@@ -38,7 +38,7 @@ For more on staying close from a distance, see [grandparenting from afar](/learn
 
 ## If you cannot light a flame yourself
 
-Some grandparents live alone, in a care facility or have trouble lighting a match. Chabad.org suggests that tea lights set in a tray are a safe option. If a flame is not possible, ask the Rabbi. We also have help and visits for seniors: see [help for seniors and families](/help/help-for-seniors-and-families). More ideas for older adults are in [Jewish seniors in Lamorinda](/learn/jewish-seniors-in-lamorinda).
+Some grandparents live alone, in a care facility or have trouble lighting a match. Chabad.org suggests that tea lights set in a tray are a safe option. If a flame is not possible, ask the Rabbi. For help for seniors and families, see [help for seniors and families](/help/help-for-seniors-and-families). More ideas for older adults are in [Jewish seniors in Lamorinda](/learn/jewish-seniors-in-lamorinda).
 
 ## Take the next step
 
