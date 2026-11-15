@@ -17,7 +17,7 @@ In the human being, the chapter explains, the animal soul and the body are the "
 
 ## "Higher" and "lower"
 
-The chapter says higher and lower do not describe distance from G-d. Before Him all worlds are equal, and He fills every world equally. The terms describe how much of G-dliness is revealed. The more concealment, the lower the world, and ours is the lowest, with the most darkness.
+The chapter says higher and lower do not describe distance from G-d. Before Him all worlds, from the highest to the lowest, are equal. The terms describe how much of G-dliness is revealed. The more concealment, the lower the world, and ours is the lowest, with the most darkness.
 
 It also explains that creation came about through a chain of descending worlds, each with more veils. Without them, created beings could not endure the intensity of the light. The chapter cites "For no man can see Me and live" (Exodus 33:20).
 

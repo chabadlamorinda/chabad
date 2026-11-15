@@ -13,7 +13,7 @@ For families in Lafayette, Moraga and Orinda, whose days are full of carpools, c
 
 Chapter 37 on Chabad.org says that every Jew elevates a share of the world by using worldly things, for body and soul, in G-d's service: eating, drinking, a home and everyday tools. Before they are used for a mitzvah, the chapter explains, permitted things belong to kelipat nogah, the "mixed" realm that gives life to the physical world. A mitzvah lifts them into holiness.
 
-Some things cannot be lifted. Chapter 37 gives examples: fruit that may not be eaten (orlah) and money obtained by theft draw their life from the completely impure forces, so they cannot be raised to holiness. This is one reason Judaism cares about [honesty](/learn/business-ethics) and what is permitted. The teaching is for permitted things.
+Some things cannot be lifted. Chapter 37 gives the example of fruit that may not be eaten (orlah): it draws its life from the completely impure forces, so a mitzvah done with it cannot raise it to holiness. The same chapter speaks of tzedakah from money that was not obtained through theft. This is one reason Judaism cares about [honesty](/learn/business-ethics) and what is permitted. The teaching is for permitted things.
 
 ## Food that gives strength for a mitzvah
 
@@ -48,7 +48,7 @@ Ask the Rabbi what a mitzvah looks like in your own life. See also [what is holi
 Yes. The Tanya says the food and drink that give strength for a mitzvah are themselves elevated, and that each Jew lifts part of the world by using worldly things in G-d's service. A blessing and good intention make it so.
 
 ### What does the Tanya say about ordinary things?
-Chapter 37 says permitted things, such as food, drink and tools, belong to the "mixed" realm of kelipat nogah and are lifted into holiness when used for a mitzvah. Items connected to theft or forbidden things cannot be lifted.
+Chapter 37 says permitted things, such as food, drink and tools, belong to the "mixed" realm of kelipat nogah and are lifted into holiness when used for a mitzvah. Forbidden things, such as orlah fruit, cannot be lifted.
 
 ### Do I have to give up pleasures to be spiritual?
 The Tanya does not teach that. Chapter 37 describes permitted physical things being raised through a mitzvah. Ask the Rabbi about specific questions of law and practice.

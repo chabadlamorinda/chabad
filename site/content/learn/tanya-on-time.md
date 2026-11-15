@@ -5,19 +5,19 @@ category: Jewish ideas
 related: making-every-day-count, purpose-of-life, cheshbon-hanefesh, teshuvah, tanya-on-torah-study
 local: Come learn Tanya in English, Wednesdays at 1:00 PM at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.
 ---
-The Tanya teaches that a person is free at any moment to shake off the "spirit of folly" that dulls him to G-d and to choose a good deed. Because the Divine light within the soul is not bound by time, even a short act done with awareness can carry more weight than a long one done without it.
+The Tanya teaches that a person is free at any moment to shake off the "spirit of folly" that dulls him to G-d and to choose a good deed. Because the Divine light within the soul is not bound by time, an action that takes only a moment can be more momentous than one that takes much longer.
 
 For busy families in Lafayette, Moraga and Orinda, who often feel there is never enough time, this is not a lesson in squeezing in more. It is a reminder that a moment's choice is real.
 
 ## "At any time and moment"
 
-Chapter 25 on Chabad.org opens with the words: "For at any time and moment, a person is capable and free to rid himself of the spirit of folly." The chapter says that every Jew, even someone who has gone far from observance, has a hidden love of G-d, and that a person can choose to act on it at any moment. When a mitzvah is called for, that love moves him to do it. When temptation comes, it helps him resist.
+Chapter 25 on Chabad.org says: "For at any time and moment, a person is capable and free to rid himself of the spirit of folly." The chapter says that every Jew, even someone who has sinned, has a hidden love of G-d, and that a person can choose to act on it at any moment. When a mitzvah is called for, that love moves him to do it. When temptation comes, it helps him resist.
 
 The point is that you are never stuck in what you did yesterday. You may begin again now.
 
 ## Time does not rule the soul
 
-Chapter 25 also says that the Divine light within the soul is not bound by time. It rules over time. That is why the chapter teaches that a short act, done with this awareness, can carry more weight than a long one.
+Chapter 25 also says that the Divine light within the soul is not bound by time. It rules over time. That is why the chapter teaches that an action which took only a moment can be more momentous than one that takes much longer.
 
 It also describes the connection a mitzvah creates. Above, the union is eternal, because G-d and His will are above time. Below, in this world, the bond lasts while we are engaged in Torah or a mitzvah. The chapter adds that idle, purposeless activity breaks the connection, and a sincere return and request for forgiveness restore it.
 
@@ -38,7 +38,7 @@ Chapter 11 of Igeret HaTeshuvah, on Chabad.org, says: "Throughout one's days, on
 These are ideas that follow from the chapters above; how you use them is your choice:
 
 - When you notice you have drifted, remember that you are free to choose again right now.
-- Do one short mitzvah with full awareness, for example [a blessing before you eat](/learn/blessings). A short act with awareness can count for a great deal.
+- Do one short mitzvah with your full attention, for example [a blessing before you eat](/learn/blessings). Chapter 25 teaches that an act of a moment can carry great weight.
 - Begin the day with thanks. See [Modeh Ani](/learn/modeh-ani).
 - Set aside time for Torah. See [Why Study Torah?](/learn/tanya-on-torah-study).
 
@@ -47,7 +47,7 @@ For the general Jewish view of time, see [making every day count](/learn/making-
 ## Common questions
 
 ### What does the Tanya say about time?
-The Tanya says that at any moment a person is free to choose to do good, and that the Divine light of the soul is not bound by time, so a short act done with awareness can carry great weight. Chapter 25 explains this.
+The Tanya says that at any moment a person is free to choose to do good, and that the Divine light of the soul is not bound by time, so an act of a moment can carry great weight. Chapter 25 explains this.
 
 ### Can one moment really change a person?
 Chapter 25 says a person can, at any time and moment, rid himself of the spirit of folly, and Chapter 4 quotes the Sages that one hour of repentance and good deeds in this world is better than the whole life of the World to Come.

@@ -17,7 +17,7 @@ Then the chapter makes a point about the workday. Sadness about spiritual matter
 
 ## Set a time for reflection
 
-The chapter does not tell you to ignore your conscience. It advises setting aside fixed times, when the mind is calm, to reflect on G-d's greatness and on wrongs you have done. The chapter says the proper timing is explained in Iggeret HaTeshuvah (Chapters 7 and 11, per the footnotes); this page does not specify it. After that heart-searching, it says, remove the sorrow completely: G-d "pardons abundantly." Believing this is itself, in the chapter's words, the true joy in G-d.
+The chapter does not tell you to ignore your conscience. It advises setting aside fixed times, when the mind is calm, to reflect on G-d's greatness and on wrongs you have done. For when these times should be, the chapter's notes point to Iggeret HaTeshuvah, Chapters 7 and 11. After that heart-searching, it says, remove the sorrow completely: G-d "pardons abundantly." Believing this is itself, in the chapter's words, the true joy in G-d.
 
 So the Tanya gives each part of life its own time: reflection at fixed times, prayer, and then work with a clear head and a light heart. See [what the Tanya says about prayer](/learn/tanya-on-prayer).
 
@@ -27,7 +27,7 @@ This guide is about spiritual heaviness, not clinical depression or anxiety. If 
 
 Chapter 37 says something surprising about work. Tzedakah is special, it explains, because the money comes from one's labor, so the full energy of the animal soul goes into earning it. Giving it to charity lifts all that energy to G-d. Even someone who does not work for a living gives "the life of his soul," since the money could have sustained his life. See [Tanya on Money](/learn/tanya-on-money).
 
-Chapter 37 also says that things obtained through theft cannot be lifted into holiness. Honesty is part of the picture; see [business ethics](/learn/business-ethics).
+Chapter 37 speaks of giving tzedakah from money that was not obtained through theft. Honesty is part of the picture; see [business ethics](/learn/business-ethics).
 
 ## Calm trust
 

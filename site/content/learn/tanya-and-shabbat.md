@@ -5,9 +5,9 @@ category: Shabbat & holidays
 related: shabbat, shabbat-day, shabbat-for-beginners, kabbalat-shabbat, tanya-on-prayer
 local: Join us for Kabbalat Shabbat in Lafayette, or call Rabbi Labkowski at 925-384-7242 to hear what is planned. See /events.
 ---
-In Chabad teaching, Shabbat is not only a day of rest for the body: the Talmud teaches that every Jew receives an "additional soul" on Shabbat, and the Alter Rebbe explains that this is a revelation of the deepest level of the soul, which is always united with G-d. This guide is short on purpose, because it only says what Chabad.org supports.
+In Chabad teaching, Shabbat is not only a day of rest for the body: the Talmud teaches that every Jew receives an "additional soul" on Shabbat, and the Alter Rebbe explains that this is a revelation of the deepest level of the soul, which is always united with G-d.
 
-An honest note first. The chapters of the Tanya we read for this series, including Chapters 12 and 14, do not discuss Shabbat directly. What follows is the Alter Rebbe's teaching on the additional Shabbat soul, from his Torah Ohr as presented on Chabad.org, together with Tanya ideas that help us understand it. We have not found a Tanya passage on Shabbat and will not invent one.
+This guide draws on the Alter Rebbe's teaching on the additional Shabbat soul in his work Torah Ohr, as presented on Chabad.org, together with ideas from the Tanya on prayer and joy that help us understand it.
 
 ## The additional soul
 
@@ -42,8 +42,8 @@ For how to keep Shabbat in practice, see [Shabbat for beginners](/learn/shabbat-
 ### What is the additional soul on Shabbat?
 The Talmud teaches that an additional soul is given on Shabbat eve and taken back when Shabbat ends. The Alter Rebbe explains it as a revelation of the deepest level of the soul, the yechida, felt as a rise in spiritual life-force.
 
-### Does the Tanya talk about Shabbat?
-The Tanya chapters we read for this series do not discuss Shabbat directly. The Alter Rebbe's teaching on the additional soul comes from his Torah Ohr, presented on Chabad.org.
+### Where does the Alter Rebbe teach about the Shabbat soul?
+In his Torah Ohr, a collection of his teachings arranged by the Torah portions; Chabad.org presents it in "Our Super Shabbat Soul." The Tanya's chapters on prayer and joy help explain it.
 
 ### Is the additional soul extra physical energy?
 No. Chabad.org's article says it is a revelation of the soul's deepest level and is felt as a rise in spiritual life-force, not as physical energy.
@@ -60,5 +60,5 @@ There is a Tanya class in English every Wednesday at 1:00 PM, until 2:00 PM, at 
 ## Take the next step
 
 - Come to Kabbalat Shabbat this week, or ask what is planned: 925-384-7242. See [events](/events).
-- Continue with [Tanya and the Jewish Year: Lessons for Elul, the High Holidays and Beyond](/learn/tanya-and-the-jewish-year).
+- Continue with [Tanya and the Jewish Year: Teshuvah, Yom Kippur and 19 Kislev](/learn/tanya-and-the-jewish-year).
 - Join the Wednesday 1:00 PM Tanya class in Lafayette; call for the address.

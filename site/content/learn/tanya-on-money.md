@@ -19,7 +19,7 @@ This is why the Tanya does not treat earning money as something unspiritual. Hon
 
 ## Honesty comes first
 
-Chapter 37 also says that money obtained by theft cannot be lifted into holiness, since it draws its life from the completely impure forces. That fits what many learn at home: how you earn matters as much as what you do with it. See [business ethics](/learn/business-ethics).
+Chapter 37 speaks of tzedakah given from money that was not obtained through theft, and it teaches that a mitzvah done with something forbidden cannot be raised to holiness. That fits what many learn at home: how you earn matters as much as what you do with it. See [business ethics](/learn/business-ethics).
 
 ## Trust, not anxiety
 
@@ -27,11 +27,11 @@ Epistle 11 of the Iggeret HaKodesh on Chabad.org asks the reader not to crave ph
 
 The epistle gives no practical advice on earning, budgeting or debt. It speaks to the heart, not to the bank account. If money worry is heavy, the Tanya's teaching is spiritual support, not financial or medical advice, and it is right to seek practical help and to talk to the Rabbi. See [money worries](/learn/money-worries).
 
-## Maaser: the Rabbi's teaching
+## Giving and success: the Rabbi's teaching
 
-Chabad teaches that maaser, giving a tenth of your income to tzedakah, is different from other giving. Chabad.org's guide to maaser quotes the Talmud (Taanit 9a): "Give a tenth in order that you will become wealthy." It also quotes the verse from the prophet Malachi (3:10) where G-d says "Test Me on this," and calls maaser the one mitzvah where we are allowed to test G-d. Rabbi Labkowski teaches that maaser is G-d's promise of success.
+Chabad teaches, and Rabbi Labkowski teaches, that G-d rewards all giving of tzedakah with success. Maaser, giving a tenth of your income, is unique because there the Torah states the promise clearly. Chabad.org's guide to maaser quotes the Talmud (Taanit 9a): "Give a tenth in order that you will become wealthy," and the verse from the prophet Malachi (3:10) where G-d says "Test Me on this." The Rebbe taught that we may test G-d in this way with all tzedakah, not only with maaser. A legacy gift and a donor-advised fund grant also count as maaser.
 
-This applies to maaser, a tenth of income, as the Torah and the Sages teach it. It is not meant to pressure anyone, and no one who is struggling has done anything wrong. If your situation is hard, call the Rabbi. See [maaser](/learn/maaser) and [does tzedakah bring wealth](/learn/does-tzedakah-bring-wealth), or [giving when money is tight](/learn/giving-when-money-is-tight).
+This is not meant to pressure anyone, and no one who is struggling has done anything wrong. If your situation is hard, call the Rabbi. See [maaser](/learn/maaser) and [does tzedakah bring wealth](/learn/does-tzedakah-bring-wealth), or [giving when money is tight](/learn/giving-when-money-is-tight).
 
 ## Giving in Lamorinda
 
@@ -48,8 +48,8 @@ The Tanya does not call earning wrong. Chapter 37 treats honest earnings as carr
 ### How should I stop worrying about money, according to Chabad?
 Epistle 11 teaches trust in G-d as the spiritual answer. It does not offer financial advice, so seek practical help too, and talk to the Rabbi if the worry is heavy.
 
-### Is maaser a promise of success?
-Yes: Rabbi Labkowski teaches that maaser is G-d's promise of success. The Torah (Malachi 3:10) invites us to test G-d on this, and the Talmud (Taanit 9a) says to give a tenth in order to become wealthy. This is about maaser only, and for personal situations ask the Rabbi.
+### Is giving tzedakah a promise of success?
+Yes. Chabad teaches, and Rabbi Labkowski teaches, that G-d rewards all giving with success. Maaser is unique in that the promise is stated clearly: G-d says "Test Me" about the tithe (Malachi 3:10), and the Talmud teaches "give a tenth in order that you will become wealthy" (Taanit 9a). For personal situations, call the Rabbi.
 
 ### Does tzedakah count if I earn little?
 Chapter 37 says even someone who does not work for a living gives the life of his soul when he gives. Ask the Rabbi what is right for you; see [giving when money is tight](/learn/giving-when-money-is-tight).

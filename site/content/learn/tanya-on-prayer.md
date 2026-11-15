@@ -19,7 +19,7 @@ Chapter 41 then applies this to the morning. Before prayer, a person recites the
 
 The same chapter compares serving G-d to a bird. Love is one wing and awe is the other, and without both the bird cannot fly. Love alone, the Alter Rebbe says, is not enough before a positive mitzvah. Awe is also needed, felt in the heart or at least held in the mind.
 
-You do not have to be moved to tears. The chapter says a person who cannot reach deep awe through contemplation should still think about it in a simpler way, and sincere intention counts. See [kavanah in prayer](/learn/kavanah-in-prayer) for more on focus and intention.
+You do not have to be moved to tears. The chapter says a person who cannot reach deep awe through contemplation should at least arouse a feeling of awe in his mind, thinking about G-d's greatness in a simpler way. See [kavanah in prayer](/learn/kavanah-in-prayer) for more on focus and intention.
 
 ## When prayer lifts you
 
@@ -31,7 +31,7 @@ Chapter 12 is honest. After prayer the inspiration fades and the animal soul rea
 
 So if your prayer felt flat, the Tanya does not say it was wasted. And if it felt wonderful and an hour later you were short-tempered, that is also described in the book. This ties to the [beinoni](/learn/the-beinoni), the ordinary person at the center of the Tanya, for whom the inner struggle continues.
 
-The chapter closes with a saying of the Sixth Lubavitcher Rebbe: when a Jew studies Torah, he feels like a student before his teacher, and when he prays, he feels like a child before his father.
+Chabad.org's page on this chapter also brings a saying of the Sixth Lubavitcher Rebbe (from Hayom Yom): when a Jew studies Torah, he feels like a student before his teacher, and when he prays, he feels like a child before his father.
 
 ## A simple way to use this
 
@@ -56,7 +56,7 @@ Chapter 41 is about awe of G-d as the foundation of serving Him, and about prepa
 Chapter 12 explains that the inspiration of prayer fades and that this is normal; it does not mean the prayer failed. The hidden love of G-d in the heart remains. Ask the Rabbi if you would like personal guidance.
 
 ### Do I need to feel awe to pray correctly?
-No. Chapter 41 says that someone who cannot reach deep awe should still think about G-d's greatness at a simpler level, and sincere intention is what counts.
+Not as a strong emotion. Chapter 41 says that someone who cannot feel deep awe in the heart should at least arouse awe in the mind, by thinking about G-d's greatness at a simpler level.
 
 ### What are the morning blessings in the Tanya?
 Chapter 41 mentions the morning blessing that thanks G-d for the soul, given by Him and returned to Him, as the way to begin prayer. Many people say [Modeh Ani](/learn/modeh-ani) on waking.

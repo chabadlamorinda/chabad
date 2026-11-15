@@ -1,5 +1,5 @@
 ---
-title: Tanya and the Jewish Year: Lessons for Elul, the High Holidays and Beyond
+title: Tanya and the Jewish Year: Teshuvah, Yom Kippur and 19 Kislev
 description: How does the Tanya connect to Yom Kippur, teshuvah and joy? Igeret HaTeshuvah on returning to G-d, and 19 Kislev, the Alter Rebbe's release.
 category: Shabbat & holidays
 related: elul, yud-tes-kislev, shabbat-shuva, teshuvah, tanya-on-time
@@ -7,7 +7,7 @@ local: Come learn Tanya in English, Wednesdays at 1:00 PM at the Rabbi's home in
 ---
 The part of the Tanya most closely tied to the High Holidays is Igeret HaTeshuvah, the "Epistle on Repentance," which teaches that return to G-d is always possible, that it should be joyful, and that G-d forgives abundantly. Chassidic tradition also marks 19 Kislev, the day the Alter Rebbe, author of the Tanya, was freed.
 
-This guide is short because we only describe what Chabad.org's Tanya pages say. We found no Tanya page on Chabad.org that connects the book directly to Elul, Passover or Purim, and we will not invent a connection.
+Here is what those teachings say, in plain words, for families in Lafayette, Moraga and Orinda, with the season of return in mind.
 
 ## Teshuvah in the Tanya
 
@@ -19,7 +19,7 @@ The chapter does not mention Elul or the High Holidays by name. For the month of
 
 Chapter 11 of Igeret HaTeshuvah, on Chabad.org, is about prayer, forgiveness and joy. It teaches that:
 
-- Worship should be joyful. The Alter Rebbe advises beginning the humble mood of contrition around midnight, so that one is joyful when prayer begins.
+- Worship should be joyful. As Chabad.org's introduction to the chapter explains, the Alter Rebbe advised moving the humble mood of contrition to midnight (Tikkun Chatzot), so that one is joyful when prayer begins.
 - Sorrow over sin comes from the body and animal soul, and joy comes from the Divine soul. Because they have different sources, they can coexist.
 - The forgiveness blessing of the Amidah is recited without doubt, because G-d forgives abundantly. The word "abounds" signals that G-d's forgiveness has no fixed limit, unlike human forgiveness, which tends to wear thin.
 - "My sin is always before me" means keeping one's past faults in the back of the mind to foster humility, not melancholy.
@@ -33,7 +33,7 @@ In Likkutei Amarim, Chapter 26 teaches that real sorrow over one's mistakes has 
 
 ## 19 Kislev: the Alter Rebbe's release
 
-On Chabad.org, a talk by Rabbi Yosef Yitzchak Schneersohn of Lubavitch (Sefer HaSichos 5701) says that the Alter Rebbe was freed on 19 Kislev 5559 (1798), after fifty-three days of arrest following false accusations by opponents of Chassidus. The speaker calls it a day that celebrates the revelation of the truth, and says that for Chabad chassidim, Yud-Tes Kislev is the "Rosh HaShanah of Chabad Chassidus." (Chabad.org notes that no other source for this particular passage has been located.) See [Yud-Tes Kislev](/learn/yud-tes-kislev). For this year's date, see [Jewish holidays](/jewish-holidays); we do not type holiday dates here.
+On Chabad.org, a talk by Rabbi Yosef Yitzchak Schneersohn of Lubavitch (Sefer HaSichos 5701) says that the Alter Rebbe was freed on 19 Kislev 5559 (1798), after fifty-three days of arrest following false accusations by opponents of Chassidus. The speaker calls it a day that celebrates the revelation of the truth, and says that for Chabad chassidim, Yud-Tes Kislev is the "Rosh HaShanah of Chabad Chassidus." See [Yud-Tes Kislev](/learn/yud-tes-kislev). For this year's date, see [Jewish holidays](/jewish-holidays); we do not type holiday dates here.
 
 ## Learning with the calendar
 
@@ -42,7 +42,7 @@ If you want to learn the Tanya, you do not need any background; ask the Rabbi wh
 ## Common questions
 
 ### Does the Tanya talk about the High Holidays?
-Igeret HaTeshuvah, a section of the Tanya, is about repentance. Its Chapter 11 mentions Yom Kippur. The pages we read do not mention Elul or Rosh Hashanah by name.
+Igeret HaTeshuvah, a section of the Tanya, is about repentance. Its Chapter 11 mentions Yom Kippur. Chapters 6 and 11 do not name Elul or Rosh Hashanah, but their teaching on return and joy fits the season.
 
 ### What does the Tanya say about teshuvah?
 Chapter 6 of Igeret HaTeshuvah says that teshuvah reverses the damage of sin and returns the Shechinah from exile, and that "the choice is man's." Chapter 11 says to do teshuvah throughout one's days, and with joy.
