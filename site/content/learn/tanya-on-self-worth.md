@@ -1,6 +1,6 @@
 ---
 title: Feeling Not Good Enough? What Tanya Says About Your Worth
-description: Feeling not good enough or "not Jewish enough"? What the Tanya says about your soul, your struggle and why you do not need to feel holy. Warm and practical.
+description: Feeling not good enough or "not Jewish enough"? What the Tanya says about your soul, your struggle and why you do not need to feel holy. Warm, practical.
 category: Jewish ideas
 related: self-esteem-jewish-view, the-beinoni, not-religious-welcome, the-soul, tanya-in-hard-times
 local: Feel like you are not religious enough? You are welcome as you are. Call Rabbi Labkowski at 925-384-7242 or visit /help/talk-to-the-rabbi.

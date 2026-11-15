@@ -27,7 +27,7 @@ Each line below gives the need, the place in the Tanya as we read it on Chabad.o
 - **Unwanted thoughts:** Chapters 12, 27 and 28. See [Tanya and unwanted thoughts](/learn/tanya-unwanted-thoughts).
 - **Tempted or tired of the struggle:** Chapter 12 on the beinoni. See [the beinoni](/learn/the-beinoni), [Tanya on temptation](/learn/tanya-on-temptation) and [why do I still struggle?](/learn/why-do-i-still-struggle)
 - **Angry:** Chapter 12 describes answering anger and resentment with kindness. See [Tanya on anger](/learn/tanya-on-anger).
-- **Falling and starting again:** the Iggeret HaTeshuvah. See [Iggeret HaTeshuvah](/learn/iggeret-hateshuvah).
+- **Falling and starting again:** the Iggeret HaTeshuvah. See [Iggeret HaTeshuvah](/learn/iggeret-hateshuvah) and [starting over after you fall](/learn/starting-over-after-you-fall).
 
 ## If you want to feel closer to G-d
 
@@ -46,7 +46,7 @@ Start with [how to start learning Tanya](/learn/how-to-start-learning-tanya), [t
 
 ## For your stage of life
 
-[Teens and college students](/learn/tanya-for-teens-and-students), [busy professionals](/learn/tanya-for-busy-professionals), [seniors](/learn/tanya-for-seniors), and for the workday, money and time: [Tanya at work](/learn/tanya-at-work), [on money](/learn/tanya-on-money) and [on time](/learn/tanya-on-time).
+[Teens and college students](/learn/tanya-for-teens-and-students), [busy professionals](/learn/tanya-for-busy-professionals), [seniors](/learn/tanya-for-seniors), and for the workday, money and time: [Tanya at work](/learn/tanya-at-work), [on money](/learn/tanya-on-money) [on time](/learn/tanya-on-time), and for the calendar, [Tanya and the Jewish year](/learn/tanya-and-the-jewish-year).
 
 ## Common questions
 

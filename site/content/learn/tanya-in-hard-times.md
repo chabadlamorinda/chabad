@@ -1,6 +1,6 @@
 ---
 title: Tanya in Hard Times: Finding Strength When Life Hurts
-description: What the Tanya says to someone who is suffering: hidden good, joy as strength, and why asking for help is right. Gentle Jewish wisdom, with Lafayette support.
+description: What the Tanya says to someone who is suffering: hidden good, joy as strength, and why asking for help is right. Gentle Jewish wisdom.
 category: Jewish ideas
 related: tanya-on-worry-and-trust, hope-in-hard-times, why-bad-things-happen, angry-at-g-d, tanya-on-self-worth
 local: Going through something hard? Call Rabbi Labkowski at 925-384-7242 or visit /help/talk-to-the-rabbi. You do not have to face it alone.

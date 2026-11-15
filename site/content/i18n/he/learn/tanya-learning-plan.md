@@ -27,7 +27,7 @@ local: למדו תניא עם אחרים: השיעור באנגלית מתקיי
 - **מחשבות לא רצויות:** פרקים י"ב, כ"ז וכ"ח. ראו [התניא ומחשבות לא רצויות](/learn/tanya-unwanted-thoughts).
 - **מפותים או עייפים מהמאבק:** פרק י"ב על הבינוני. ראו [הבינוני](/learn/the-beinoni), [התניא על פיתוי](/learn/tanya-on-temptation) ו[למה אני עדיין נאבק?](/learn/why-do-i-still-struggle)
 - **כועסים:** פרק י"ב מתאר מענה לכעס ולטינה בחסד. ראו [התניא על כעס](/learn/tanya-on-anger).
-- **נופלים ומתחילים מחדש:** אגרת התשובה. ראו [אגרת התשובה](/learn/iggeret-hateshuvah).
+- **נופלים ומתחילים מחדש:** אגרת התשובה. ראו [אגרת התשובה](/learn/iggeret-hateshuvah) ו[להתחיל מחדש אחרי נפילה](/learn/starting-over-after-you-fall).
 
 ## אם אתם רוצים להרגיש קרובים יותר לה'
 
@@ -46,7 +46,7 @@ local: למדו תניא עם אחרים: השיעור באנגלית מתקיי
 
 ## לפי שלב החיים
 
-[בני נוער וסטודנטים](/learn/tanya-for-teens-and-students), [אנשי מקצוע עסוקים](/learn/tanya-for-busy-professionals), [קשישים](/learn/tanya-for-seniors), ולעבודה, כסף וזמן: [התניא בעבודה](/learn/tanya-at-work), [על כסף](/learn/tanya-on-money) ו[על זמן](/learn/tanya-on-time).
+[בני נוער וסטודנטים](/learn/tanya-for-teens-and-students), [אנשי מקצוע עסוקים](/learn/tanya-for-busy-professionals), [קשישים](/learn/tanya-for-seniors), ולעבודה, כסף וזמן: [התניא בעבודה](/learn/tanya-at-work), [על כסף](/learn/tanya-on-money) [על זמן](/learn/tanya-on-time), ולשנה היהודית: [התניא והשנה היהודית](/learn/tanya-and-the-jewish-year).
 
 ## שאלות נפוצות
 

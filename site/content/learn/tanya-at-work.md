@@ -1,6 +1,6 @@
 ---
 title: Tanya at Work: Bringing Your Soul to Your Job
-description: How can I be a good Jew at work? The Tanya says sadness during the workday is a trick, prayer is the time for heart-searching, and honest earnings can be holy.
+description: How can I be a good Jew at work? The Tanya says sadness mid-workday is a trick, prayer is the time for heart-searching, and honest earnings can be holy.
 category: Jewish ideas
 related: parnassah-work-and-livelihood, business-ethics, jewish-wisdom-for-busy-professionals, tanya-on-money, tanya-on-time
 local: Come learn Tanya in English, Wednesdays at 1:00 PM at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.

@@ -1,6 +1,6 @@
 ---
 title: Serving G-d in Everyday Life: Tanya on Food, Home and Ordinary Things
-description: Can eating, working and running a home be spiritual? Tanya Chapter 37 says permitted things used in G-d's service are lifted into holiness. Simple examples.
+description: Can eating, working and running a home be spiritual? Tanya Chapter 37 says permitted things used in G-d's service are lifted into holiness.
 category: Jewish ideas
 related: eating-as-a-mitzvah, what-is-holiness, purpose-of-life, making-a-home-for-g-d, tanya-at-work
 local: Come learn Tanya in English, Wednesdays at 1:00 PM at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.

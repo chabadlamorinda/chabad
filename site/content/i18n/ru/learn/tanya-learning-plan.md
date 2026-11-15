@@ -27,7 +27,7 @@ local: Изучайте Танию с другими: класс на англи
 - **Нежелательные мысли:** главы 12, 27 и 28. См. [Тания и нежелательные мысли](/learn/tanya-unwanted-thoughts).
 - **Искушение или усталость от борьбы:** глава 12 о бейнонии. См. [бейноний](/learn/the-beinoni), [Тания об искушении](/learn/tanya-on-temptation) и [почему я всё ещё борюсь?](/learn/why-do-i-still-struggle)
 - **Гнев:** глава 12 описывает, как отвечать на гнев и обиду добротой. См. [Тания о гневе](/learn/tanya-on-anger).
-- **Падение и новое начало:** Игерет а-Тшува. См. [Игерет а-Тшува](/learn/iggeret-hateshuvah).
+- **Падение и новое начало:** Игерет а-Тшува. См. [Игерет а-Тшува](/learn/iggeret-hateshuvah) и [начать заново после падения](/learn/starting-over-after-you-fall).
 
 ## Если вы хотите быть ближе к Б-гу
 
@@ -46,7 +46,7 @@ local: Изучайте Танию с другими: класс на англи
 
 ## По этапам жизни
 
-[Подростки и студенты](/learn/tanya-for-teens-and-students), [занятые профессионалы](/learn/tanya-for-busy-professionals), [пожилые](/learn/tanya-for-seniors), а для рабочего дня, денег и времени: [Тания на работе](/learn/tanya-at-work), [о деньгах](/learn/tanya-on-money) и [о времени](/learn/tanya-on-time).
+[Подростки и студенты](/learn/tanya-for-teens-and-students), [занятые профессионалы](/learn/tanya-for-busy-professionals), [пожилые](/learn/tanya-for-seniors), а для рабочего дня, денег и времени: [Тания на работе](/learn/tanya-at-work), [о деньгах](/learn/tanya-on-money) [о времени](/learn/tanya-on-time), а для календаря: [Тания и еврейский год](/learn/tanya-and-the-jewish-year).
 
 ## Частые вопросы
 
