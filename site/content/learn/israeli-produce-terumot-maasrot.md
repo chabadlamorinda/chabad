@@ -9,19 +9,19 @@ Produce grown in the Land of Israel must have its tithes (terumot and maasrot) s
 
 ## What are terumot and maasrot?
 
-When the Temple stood, farmers in the Land of Israel gave portions of their crop to the Kohanim, the Levites and the poor. These are the tithes: *terumah* (תרומה), the portion for the Kohen, *maaser rishon*, the first tithe for the Levite, and a second tithe, either *maaser sheni* or *maaser ani* (for the poor), depending on the year in the seven-year cycle. Chassidic teaching explains that maaser sheni is separated in years 1, 2, 4 and 5 of the cycle and maaser ani in years 3 and 6. You can read about tithing in general in [Maaser](/learn/maaser).
+When the Temple stood, farmers in the Land of Israel gave portions of their crop to the Kohanim, the Levites and the poor. These are the tithes: *terumah* (תרומה), the portion for the Kohen, *maaser rishon*, the first tithe for the Levite, and a second tithe, either *maaser sheni* or *maaser ani* (for the poor), depending on the year in the seven-year cycle. Maaser sheni is separated in years 1, 2, 4 and 5 of the cycle and maaser ani in years 3 and 6. You can read about tithing in general in [Maaser](/learn/maaser).
 
 Today these gifts are not given in the same way, but the produce is still not permitted to be eaten until the tithes have been separated. This mitzvah belongs to the Land (see [The Land of Israel in Jewish Tradition](/learn/the-land-of-israel-in-jewish-tradition)).
 
 ## Why it matters outside Israel
 
-Most fresh produce in stores carries no kosher certification, and Israeli produce is no different. According to Jewish tradition, produce from certified Israeli establishments needs no separation, because the certification covers it. Uncertified produce may not have been tithed. That is why many people avoid uncertified Israeli produce altogether.
+Most fresh produce in stores carries no kosher certification, and Israeli produce is no different. Produce from certified Israeli establishments needs no separation, because the certification covers it. Uncertified produce may not have been tithed. That is why many people avoid uncertified Israeli produce altogether.
 
 ## Three questions to ask about Israeli fruit and vegetables
 
 1. **Is it certified?** If it has reliable kosher certification, ask the Rabbi if you are unsure about the certificate (see [Kosher Symbols](/learn/kosher-symbols)).
-2. **Is it orlah?** The fruit of a tree in its first three years is forbidden (orlah), and the fourth year's fruit has special rules. Outside Israel, only fruit known to be orlah is forbidden, but Israeli fruit that might be orlah is a question for a rabbi. Jewish tradition notes that this applies to fruit, not vegetables, and that practices change, so ask a knowledgeable rabbi.
-3. **Was it grown in a shmita year?** In the seventh year, the land rests (see [Shmita](/learn/shmita)). Terumah and maaser do not apply to shmita-year produce, but other rules do. The tradition says it is generally advisable not to buy Israeli produce during shmita. Check the calendar and ask the Rabbi.
+2. **Is it orlah?** The fruit of a tree in its first three years is forbidden (orlah), and the fourth year's fruit has special rules. Outside Israel, only fruit known to be orlah is forbidden, but Israeli fruit that might be orlah is a question for a rabbi. This applies to fruit, not vegetables, and practices change, so ask a knowledgeable rabbi.
+3. **Was it grown in a shmita year?** In the seventh year, the land rests (see [Shmita](/learn/shmita)). Terumah and maaser do not apply to shmita-year produce, but other rules do. It is generally advisable not to buy Israeli produce during shmita. Check the calendar and ask the Rabbi.
 
 ## If you already bought uncertified Israeli produce
 
@@ -51,10 +51,10 @@ Normally no, since someone in the supply chain may already have separated the ti
 Orlah is the fruit of a tree in its first three years, which is forbidden. The fourth-year fruit has its own rules.
 
 ### Can I buy Israeli produce in a shmita year?
-Jewish tradition says it is generally advisable not to buy Israeli produce during shmita, because other issues arise. Ask the Rabbi.
+It is generally advisable not to buy Israeli produce during shmita, because other issues arise. Ask the Rabbi.
 
 ### Do I need to separate tithes from certified Israeli produce?
-The tradition says produce from certified Israeli establishments needs no separation, since the certification covers it.
+Produce from certified Israeli establishments needs no separation, since the certification covers it.
 
 ### Who can I ask in Lafayette, Moraga or Orinda?
 Call Rabbi Labkowski at Chabad of Lamorinda in Lafayette at 925-384-7242. For kosher food in the area, see [Bay Kosher](/programs/bay-kosher).

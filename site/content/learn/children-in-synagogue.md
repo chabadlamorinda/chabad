@@ -9,7 +9,7 @@ Yes, bring your children to synagogue. Children are a natural part of Jewish com
 
 ## Why children belong in synagogue
 
-Jewish tradition teaches that parents have a duty to educate their children in Jewish life from an early age, beginning once a child can do a given mitzvah. It describes teaching beginning around age three with blessings over food and basic prayers, and teaching the Shema as soon as a child speaks. A child who sees the synagogue as a happy, welcoming place is learning that Judaism belongs to them. The tradition also notes that synagogues often serve as centers of Jewish life, with classes, celebrations and Hebrew school for children.
+Parents have a duty to educate their children in Jewish life from an early age, beginning once a child can do a given mitzvah. Teaching begins around age three with blessings over food and basic prayers, and the Shema is taught as soon as a child speaks. A child who sees the synagogue as a happy, welcoming place is learning that Judaism belongs to them. Synagogues also often serve as centers of Jewish life, with classes, celebrations and Hebrew school for children.
 
 ## Before you go
 
@@ -55,7 +55,7 @@ You may not need to. Keep visits short, bring a quiet book or snack, and step ou
 Answer "Amen," say the Shema, sing, touch and kiss the Torah as it passes, and follow along in a children's siddur.
 
 ### At what age should children start coming to synagogue?
-There is no set age to start. Jewish tradition describes teaching beginning around age three with blessings and basic prayers, and bringing a child sooner is also fine.
+There is no set age to start. Teaching usually begins around age three with blessings and basic prayers, and bringing a child sooner is also fine.
 
 ### Is there a children's service at Chabad of Lamorinda?
 Yes. Chabad of Lamorinda has a children's program for kids during Shabbat services. Call Rabbi Labkowski at 925-384-7242 for the times.

@@ -13,7 +13,7 @@ A Chanukah menorah, also called a chanukiah (חֲנֻכִּיָּה), holds the 
 
 ## The must-haves
 
-According to Jewish tradition:
+According to Jewish law:
 
 1. **Eight lights, plus a ninth for the shamash.** The shamash sits apart from the eight, higher, lower or to the side. See [what is the shamash](/learn/what-is-the-shamash).
 2. **A straight line.** The eight lights are in a straight row, not in a curve or a circle.
@@ -26,11 +26,11 @@ A candle menorah needs candle holders that fit your candles snugly. See [oil or 
 
 ## Style and material
 
-Chassidic teaching encourages a beautiful menorah, such as silver, but any material that holds flames safely is fine. The Chabad custom is a menorah whose lights are all in one straight line, as described above, and that is the kind we recommend. Whether you choose a simple tin menorah or an heirloom, beauty adds to the mitzvah, but the points above are what make it kosher. For general buying advice for Judaica, see [the Judaica buying guide](/learn/judaica-buying-guide).
+A beautiful menorah, such as silver, is ideal, but any material that holds flames safely is fine. The Chabad custom is a menorah whose lights are all in one straight line, as described above, and that is the kind we recommend. Whether you choose a simple tin menorah or an heirloom, beauty adds to the mitzvah, but the points above are what make it kosher. For general buying advice for Judaica, see [the Judaica buying guide](/learn/judaica-buying-guide).
 
 ## Real flames, please
 
-The mitzvah is fulfilled with fuel, a wick and a flame, as the Temple menorah had, so an electric menorah does not fulfill the mitzvah. The tradition says it is nice for publicizing the holiday along with a real menorah. If flames are a problem where you live, ask the Rabbi; see [menorah in an apartment or condo](/learn/menorah-in-an-apartment-or-condo).
+The mitzvah is fulfilled with fuel, a wick and a flame, as the Temple menorah had, so an electric menorah does not fulfill the mitzvah. It is nice for publicizing the holiday along with a real menorah. If flames are a problem where you live, ask the Rabbi; see [menorah in an apartment or condo](/learn/menorah-in-an-apartment-or-condo).
 
 ## Where to get one locally
 

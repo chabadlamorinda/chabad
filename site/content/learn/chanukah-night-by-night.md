@@ -53,7 +53,7 @@ The first candle goes on the right and each new one is added to the left. You li
 On Friday afternoon you light the Chanukah menorah first, then the Shabbat candles. On Saturday night you light it after Shabbat ends.
 
 ### Can the menorah be electric?
-Jewish tradition says gas or electric lights do not fulfill the mitzvah; use oil with cotton wicks, or wax candles. An electric menorah can be used for decoration if a real flame is also lit.
+Gas or electric lights do not fulfill the mitzvah; use oil with cotton wicks, or wax candles. An electric menorah can be used for decoration if a real flame is also lit.
 
 ### Where can I see a menorah lit in Lafayette, Moraga or Orinda?
 Chabad of Lamorinda's [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) is Sunday, December 6 at 4:00 PM at Lafayette Plaza Park. Read about [public menorah lightings](/learn/public-menorah-lighting).

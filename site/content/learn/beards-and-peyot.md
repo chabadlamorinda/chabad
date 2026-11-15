@@ -11,7 +11,7 @@ Many men observe this commandment in different ways, and no one is judged by how
 
 ## What the Torah says
 
-According to Jewish tradition, the Talmud understands "the corners of your head" as the hair between the ears and the temples. This prohibition applies to men only. The Torah does not give a reason. Maimonides explains that shaving in this way was the practice of ancient idol-worshippers, and the Torah wished to separate Jews from it. Others say it is a *chok*, a commandment beyond human understanding.
+The Talmud understands "the corners of your head" as the hair between the ears and the temples. This prohibition applies to men only. The Torah does not give a reason. Maimonides explains that shaving in this way was the practice of ancient idol-worshippers, and the Torah wished to separate Jews from it. Others say it is a *chok*, a commandment beyond human understanding.
 
 ## The razor rule in plain words
 
@@ -21,13 +21,13 @@ What about electric shavers? This is a matter of discussion among rabbis, and pr
 
 ## The mystical meaning of the beard
 
-Jewish teaching explains that in Kabbalah the beard has special meaning. It describes the beard's "thirteen locks" as representing G-d's Thirteen Attributes of Mercy, so growing it connects a person to divine compassion. Another explanation is that hair grows from the head downward, linking the mind to action. A beard represents the bridge between knowing what is right and living it.
+In Kabbalah the beard has special meaning. Kabbalah describes the beard's "thirteen locks" as representing G-d's Thirteen Attributes of Mercy, so growing it connects a person to divine compassion. Another explanation is that hair grows from the head downward, linking the mind to action. A beard represents the bridge between knowing what is right and living it.
 
 Eastern European Jews generally wore full beards until the mid-nineteenth century. When the Enlightenment spread, many Jews stopped, but Chassidim were less influenced and kept them, partly because of the Kabbalistic meaning.
 
 ## Peyot: short and long
 
-Not every community wears peyot the same way. The tradition notes:
+Not every community wears peyot the same way:
 
 - **Chabad:** many, including Chabad, have the custom of trimming the peyot, so they are shorter and often tucked behind the ears.
 - **Other Chassidic groups:** some never cut them, and some curl or wrap them.
@@ -47,7 +47,7 @@ If you see a bearded man in Lafayette, Moraga or Orinda, say hello. Most are hap
 ## Common questions
 
 ### Why do some Jewish men have beards?
-They follow the verse in Leviticus 19:27 about not destroying the edge of the beard, and many also hold the Kabbalistic idea that the beard connects us to G-d's mercy. The Jewish tradition explains both.
+They follow the verse in Leviticus 19:27 about not destroying the edge of the beard, and many also hold the Kabbalistic idea that the beard connects us to G-d's mercy.
 
 ### What are peyot and why do some Jewish men wear them?
 Peyot are the sidelocks near the ears. The Torah says not to round off the corners of the head, and the Talmud identifies these corners as the hair between the ears and temples. This applies to men.
@@ -59,7 +59,7 @@ No. Practice varies among Jews, and no one is judged for his appearance. Many me
 According to the Talmud, a razor is the main concern. Opinions differ about electric shavers and trimming, so please ask the Rabbi.
 
 ### Do Chabad men have long sidecurls?
-Jewish tradition says that many, including Chabad, have the custom of trimming the peyot, following the Arizal. Other Chassidic groups do not cut theirs.
+Many, including Chabad, have the custom of trimming the peyot, following the Arizal. Other Chassidic groups do not cut theirs.
 
 ### What is an upsherin?
 It is a boy's first haircut at age three, leaving the peyot, as a celebration of the start of his Jewish education. See the guide on the upsherin.

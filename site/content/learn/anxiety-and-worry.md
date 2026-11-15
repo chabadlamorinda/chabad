@@ -11,7 +11,7 @@ If you are in crisis or thinking of hurting yourself, call or text 988, the Suic
 
 ## What bitachon means
 
-Jewish tradition explains that trust in G-d is more than love or awe. It is calm reliance, based on believing that G-d is good and that He cares about you, so that the future need not frighten you. We still act and make plans. The goal is to act without worrying in the mind.
+Trust in G-d is more than love or awe. It is calm reliance, based on believing that G-d is good and that He cares about you, so that the future need not frighten you. We still act and make plans. The goal is to act without worrying in the mind.
 
 A well-known parable (from the Maggid of Dubno) tells of a traveler who keeps carrying his heavy sack even after being offered a ride in a wagon. We are like that traveler when we insist on carrying every burden ourselves, although G-d carries them with us. Letting go takes reflection and practice, which is why trust is something we cultivate over time. See our guide on [bitachon](/learn/bitachon).
 

@@ -9,11 +9,11 @@ King Hezekiah (חזקיהו) was a righteous king of Judah who, when he became g
 
 ## Who was King Hezekiah?
 
-Hezekiah ruled the Kingdom of Judah, with its capital in Jerusalem, at a time when the powerful Assyrian empire threatened the land. You can read about the kingdom in [the kingdoms of Israel and Judah](/learn/kingdoms-of-israel-and-judah). Tradition describes his reign as a time of political and economic growth. It tells that idolatry was eliminated and the true Jewish spirit was revived, with the Temple as the spiritual center and devotion to G-d's commandments shaping daily life.
+Hezekiah ruled the Kingdom of Judah, with its capital in Jerusalem, at a time when the powerful Assyrian empire threatened the land. You can read about the kingdom in [the kingdoms of Israel and Judah](/learn/kingdoms-of-israel-and-judah). His reign was a time of political and economic growth. Idolatry was eliminated and the true Jewish spirit was revived, with the Temple as the spiritual center and devotion to G-d's commandments shaping daily life.
 
 ## The king falls ill
 
-Tradition tells that three days before the Assyrian army of Sennacherib was struck down at the gates of Jerusalem, Hezekiah fell seriously ill. The prophet Isaiah, who came to see him, told him that he would die. The reason, according to the account, was that Hezekiah had not married. Hezekiah had refused because he foresaw that his children would lead the people astray.
+Three days before the Assyrian army of Sennacherib was struck down at the gates of Jerusalem, Hezekiah fell seriously ill. The prophet Isaiah, who came to see him, told him that he would die. The reason, according to the account, was that Hezekiah had not married. Hezekiah had refused because he foresaw that his children would lead the people astray.
 
 Isaiah answered with a teaching that is still valuable today: we do not interfere in how G-d runs the world. Our task is to do what we are commanded and leave the rest to Him. (To learn what a prophet is, see [what is a prophet?](/learn/what-is-a-prophet))
 
@@ -21,11 +21,11 @@ Isaiah answered with a teaching that is still valuable today: we do not interfer
 
 Hezekiah did not argue. He turned his face to the wall and prayed fervently for his life. G-d accepted his prayer. Isaiah was sent back with new words: the king would recover and live another fifteen years.
 
-When Hezekiah asked for a sign, Isaiah said that the shadow on the sundial would go back ten degrees, and it did. Isaiah then applied a fig poultice to the king's boils, and Hezekiah recovered completely. According to the sources, his recovery came on the first day of the festival of [Passover](/holidays/passover), and the news of Sennacherib's defeat reached Jerusalem while the people were celebrating in the Temple, adding to their joy.
+When Hezekiah asked for a sign, Isaiah said that the shadow on the sundial would go back ten degrees, and it did. Isaiah then applied a fig poultice to the king's boils, and Hezekiah recovered completely. His recovery came on the first day of the festival of [Passover](/holidays/passover), and the news of Sennacherib's defeat reached Jerusalem while the people were celebrating in the Temple, adding to their joy.
 
 ## A mistake after the miracle
 
-Hezekiah's story also teaches humility. News of the sun's strange movement reached the king of Babylon, who sent envoys to congratulate him. Hezekiah showed them his palace and the treasures of the Temple. Isaiah rebuked him for boasting about his riches instead of using the occasion to honor G-d's power over life, death and nature. Isaiah warned that one day Babylon would carry off these treasures, though not in Hezekiah's lifetime. Jewish sources say that this mistake cost him the role of redeemer he had been meant for. Even great people are tested after success.
+Hezekiah's story also teaches humility. News of the sun's strange movement reached the king of Babylon, who sent envoys to congratulate him. Hezekiah showed them his palace and the treasures of the Temple. Isaiah rebuked him for boasting about his riches instead of using the occasion to honor G-d's power over life, death and nature. Isaiah warned that one day Babylon would carry off these treasures, though not in Hezekiah's lifetime. This mistake cost him the role of redeemer he had been meant for. Even great people are tested after success.
 
 ## What Hezekiah teaches us about prayer and healing
 
@@ -44,7 +44,7 @@ Hezekiah was a righteous king of Judah who ruled in Jerusalem at the time of the
 The prophet Isaiah told him he would die, but Hezekiah turned his face to the wall and prayed. G-d accepted the prayer and added fifteen years to his life.
 
 ### Does prayer really help when someone is ill?
-The tradition holds that sincere prayer is always valuable and that G-d can change what seems decided. We also turn to doctors, and the rabbi can guide you on specific questions.
+Sincere prayer is always valuable, and G-d can change what seems decided. We also turn to doctors, and the rabbi can guide you on specific questions.
 
 ### Who was Isaiah the prophet?
 Isaiah was the prophet who guided Hezekiah, and who brought both the warning that he would die and the news that he would recover.

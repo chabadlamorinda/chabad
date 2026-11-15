@@ -15,7 +15,7 @@ The custom began with matzah, which is why it is called "wheat" or "flour" money
 
 ## How old is this custom?
 
-The tradition notes that the Jerusalem Talmud, compiled about 1,600 years ago, already speaks of communities collecting money for the local poor to buy matzah. When Jewish communities had organized leadership, residents were required to contribute, and a person who did business in two cities gave in both. In Jewish communities today, it is carried out by rabbis, Chabad centers and charities, and by families who simply decide to help.
+The Jerusalem Talmud, compiled about 1,600 years ago, already speaks of communities collecting money for the local poor to buy matzah. When Jewish communities had organized leadership, residents were required to contribute, and a person who did business in two cities gave in both. In Jewish communities today, it is carried out by rabbis, Chabad centers and charities, and by families who simply decide to help.
 
 ## When and how to give
 
@@ -27,7 +27,7 @@ The tradition notes that the Jerusalem Talmud, compiled about 1,600 years ago, a
 
 ## A gift of dignity
 
-Many people who need help at Passover are neighbors who look fine from the outside: a family after a job loss, an elderly person living alone, a student far from home. Giving through a trusted organization or the Rabbi lets help arrive quietly and with respect. The best form of giving, Traditional teaching teaches, is the kind where the receiver's dignity is protected. For more on how to choose where to give, see [tzedakah](/learn/tzedakah) and [how to prioritize your giving](/learn/tzedakah-priorities).
+Many people who need help at Passover are neighbors who look fine from the outside: a family after a job loss, an elderly person living alone, a student far from home. Giving through a trusted organization or the Rabbi lets help arrive quietly and with respect. The best form of giving, Jewish tradition teaches, is the kind where the receiver's dignity is protected. For more on how to choose where to give, see [tzedakah](/learn/tzedakah) and [how to prioritize your giving](/learn/tzedakah-priorities).
 
 ## Beyond money: invite someone
 

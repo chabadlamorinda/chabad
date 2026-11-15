@@ -9,7 +9,7 @@ Chanukah is eight days long because, according to the Talmud, the Maccabees foun
 
 ## The question: why not seven?
 
-If the oil was enough for one day, the miracle was only the seven days after it. So why is the first night a holiday too? This is one of the oldest Chanukah questions, and it appears in the classic commentaries. Jewish tradition presents many of the answers, all retold below in plain words. For the story itself, see [the Chanukah story](/learn/chanukah-story).
+If the oil was enough for one day, the miracle was only the seven days after it. So why is the first night a holiday too? This is one of the oldest Chanukah questions, and it appears in the classic commentaries. There are many answers, all retold below in plain words. For the story itself, see [the Chanukah story](/learn/chanukah-story).
 
 ## Answer 1: The oil was divided into eight parts
 

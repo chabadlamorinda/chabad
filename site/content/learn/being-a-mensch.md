@@ -9,7 +9,7 @@ A mensch (מענטש, also spelled mentsch) is Yiddish for a decent, considerate
 
 ## What the word really means
 
-Chassidic teaching notes that mensch basically means "person" or "human," and that the word is hard to define exactly. It is similar to "refined" or "well-mannered," yet a mensch is a mensch. A mensch can be described as someone who respects the needs and wishes of others, especially those in his or her care.
+Mensch basically means "person" or "human," and the word is hard to define exactly. It is similar to "refined" or "well-mannered," yet a mensch is a mensch. A mensch can be described as someone who respects the needs and wishes of others, especially those in his or her care.
 
 The idea is older than the word. The Mishnah in Pirkei Avot says, "In a place where there are no people, strive to be a person" (2:5). Being a mensch is a choice made again and again, often when no one is watching.
 

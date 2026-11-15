@@ -9,9 +9,9 @@ Giving gifts is not a required mitzvah of Chanukah, but giving gelt, a little mo
 
 ## What Jewish tradition says about gifts and gelt
 
-The tradition explains it simply. There is no commandment to give presents on Chanukah. What there is, is the old custom of *gelt* (Yiddish for "money"), especially a reward for learning Torah. The foil-wrapped chocolate coins came later, from American candy makers.
+The answer is simple. There is no commandment to give presents on Chanukah. What there is, is the old custom of *gelt* (Yiddish for "money"), especially a reward for learning Torah. The foil-wrapped chocolate coins came later, from American candy makers.
 
-Children traditionally receive gelt after the menorah is lit. Jewish tradition adds that children should be encouraged to give part of their gelt to charity, and that adults can use gelt to reward good behavior such as diligence in study or acts of kindness. It is also customary to give more tzedakah during Chanukah, and to give double on Fridays, because money is not handled on Shabbat. For more on the custom, read our [Chanukah gelt](/learn/chanukah-gelt) guide.
+Children traditionally receive gelt after the menorah is lit. Children should be encouraged to give part of their gelt to charity, and adults can use gelt to reward good behavior such as diligence in study or acts of kindness. It is also customary to give more tzedakah during Chanukah, and to give double on Fridays, because money is not handled on Shabbat. For more on the custom, read our [Chanukah gelt](/learn/chanukah-gelt) guide.
 
 So gelt is the heart of the matter, and everything else is an extra that each family decides on for itself.
 
@@ -47,7 +47,7 @@ Chanukah is also a lovely time to thank teachers and those who help the communit
 Many do, but giving gifts is not a mitzvah. The old custom is giving gelt, a small amount of money, especially as a reward for Torah study.
 
 ### Why do we give Chanukah gelt?
-Gelt rewards learning and teaches generosity, since children are encouraged to give part to charity. The tradition describes it as a long-standing custom, not a commandment.
+Gelt rewards learning and teaches generosity, since children are encouraged to give part to charity. It is a long-standing custom, not a commandment.
 
 ### How many gifts should I give on Chanukah?
 There is no set number. Some families give something small each night, others one gift or only gelt. Do what suits your family and keep the holiday about light and family.

@@ -1,6 +1,6 @@
 ---
 title: Gefilte Fish: What It Is, Why We Eat It on Shabbat, and How to Make It
-description: What gefilte fish is, how Jewish tradition makes it from ground fish, horseradish on the side, and tips for Shabbat and Passover.
+description: What gefilte fish is, how it is made from ground fish, horseradish on the side, and tips for Shabbat and Passover.
 category: Jewish home
 related: kosher-fish, shabbat-meals, jewish-foods, passover-shopping-list, pareve
 local: Curious to taste it at a community table? Sign up for a Shabbat meal at /forms/shabbat-meal or call 925-384-7242.
@@ -9,7 +9,7 @@ Gefilte fish is a traditional Jewish dish of ground fish mixed with onion and eg
 
 ## What is gefilte fish?
 
-"Gefilte" (געפילטע) is Yiddish for "stuffed." The dish is made from ground fish, onions, eggs, salt and sugar. It is served cold, with a slice of cooked carrot on top and chrein (חריין), a sharp horseradish and beet relish, on the side. Chassidic teaching calls it a dish some people consider the quintessential Jewish food. It is a fish dish, so the fish must be kosher; see our guide to [kosher fish](/learn/kosher-fish).
+"Gefilte" (געפילטע) is Yiddish for "stuffed." The dish is made from ground fish, onions, eggs, salt and sugar. It is served cold, with a slice of cooked carrot on top and chrein (חריין), a sharp horseradish and beet relish, on the side. Some people consider it the quintessential Jewish food. It is a fish dish, so the fish must be kosher; see our guide to [kosher fish](/learn/kosher-fish).
 
 ## Why on Shabbat?
 

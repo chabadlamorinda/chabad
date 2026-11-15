@@ -11,11 +11,11 @@ King Saul (Shaul, שָׁאוּל) was the first king of the Jewish people. He be
 
 The Book of Samuel tells that Saul's father lost his donkeys, and Saul went to search for them. When he could not find them, his servant suggested asking the prophet Samuel. Samuel, who had been told by G-d to expect him, anointed Saul as king.
 
-Tradition emphasizes how humble Saul was. When Samuel spoke of the kingship, Saul answered that he was from the smallest of the tribes and from the least of its families. Afterward, he told his uncle about the donkeys but kept the news of the kingship to himself. The sources describe him as a man of "outstanding modesty and humility," and of natural nobility.
+Saul was remarkably humble. When Samuel spoke of the kingship, Saul answered that he was from the smallest of the tribes and from the least of its families. Afterward, he told his uncle about the donkeys but kept the news of the kingship to himself. The sources describe him as a man of "outstanding modesty and humility," and of natural nobility.
 
 ## A great beginning
 
-Saul led Israel in battle against its enemies, and the people accepted him. The sources say that he began "brilliantly." Read about [Samuel the prophet](/learn/samuel-the-prophet), who guided him, and about [the kingdoms of Israel and Judah](/learn/kingdoms-of-israel-and-judah) that followed.
+Saul led Israel in battle against its enemies, and the people accepted him. His reign began brilliantly. Read about [Samuel the prophet](/learn/samuel-the-prophet), who guided him, and about [the kingdoms of Israel and Judah](/learn/kingdoms-of-israel-and-judah) that followed.
 
 ## Why did Saul lose the kingdom?
 
@@ -23,19 +23,19 @@ The Sages and the sources point to several moments:
 
 1. **Impatience.** Before a battle with the Philistines, Saul was told to wait for Samuel to offer the sacrifices. When the soldiers grew restless, he did not wait. He was told that his kingdom would not last.
 2. **Amalek.** Saul's first mission was to wipe out Amalek completely. He spared King Agag and the best of the animals. When Samuel confronted him, Saul first explained himself. When he finally said he had sinned, it was too late. The Talmud warns against being "overly righteous" like Saul, who acted as if he was more merciful than G-d. For this nation and its meaning, see [Parshat Zachor](/learn/parshat-zachor).
-3. **Nob.** Saul listened to slander against the priests of the city of Nob and ordered them killed. Only one survived. Tradition says this sin sealed Saul's fate.
+3. **Nob.** Saul listened to slander against the priests of the city of Nob and ordered them killed. Only one survived. This sin sealed Saul's fate.
 
 The sources also say that Saul's humility, a wonderful quality, could turn into a weakness: he was afraid to stand firm against the will of the people. Humility means knowing your worth and using it for G-d, not fearing others. See [humility](/learn/humility).
 
 ## Saul and David
 
-G-d told Samuel to anoint a new king: [David](/learn/king-david), a young shepherd from Bethlehem. David came to serve Saul, and Saul remained king for years, but he no longer had G-d's favor. The tradition describes Saul as jealous of David and hunting him, even though David stayed loyal. David refused to harm Saul, who was still the anointed king. Read about [jealousy and envy](/learn/jealousy-and-envy).
+G-d told Samuel to anoint a new king: [David](/learn/king-david), a young shepherd from Bethlehem. David came to serve Saul, and Saul remained king for years, but he no longer had G-d's favor. Saul grew jealous of David and hunted him, even though David stayed loyal. David refused to harm Saul, who was still the anointed king. Read about [jealousy and envy](/learn/jealousy-and-envy).
 
 The Chassidic teachers contrast the two. When rebuked by the prophet Natan, David admitted his sin and repented, and so the royal line continued from him. Saul gave excuses.
 
 ## The death of Saul
 
-Facing the Philistines at Mount Gilboa, Saul had, according to the sources, tried to get guidance but could not. The account says the Israelite army was routed. Saul's sons, including Jonathan, were killed, and Saul, badly wounded, fell on his sword. The next day, the Philistines hung his body on the wall of Beth-Shan. The men of Jabesh-Gilead risked their lives to take the bodies down and bury them, and the people fasted for seven days.
+Facing the Philistines at Mount Gilboa, Saul had, according to the sources, tried to get guidance but could not. The Israelite army was routed. Saul's sons, including Jonathan, were killed, and Saul, badly wounded, fell on his sword. The next day, the Philistines hung his body on the wall of Beth-Shan. The men of Jabesh-Gilead risked their lives to take the bodies down and bury them, and the people fasted for seven days.
 
 David's lament for Saul and Jonathan ("How the mighty have fallen") is one of the most moving passages in the Bible. David mourned his rival as a king.
 
@@ -63,7 +63,7 @@ The sources point to his failure to wait for Samuel, his not carrying out the co
 His father's donkeys had been lost, and Saul went to find them. This led him to the prophet Samuel, who anointed him king.
 
 ### Was Saul jealous of David?
-The sources describe Saul as jealous of David and hounding him. David did not take revenge and honored Saul as king.
+Saul was jealous of David and hounded him. David did not take revenge and honored Saul as king.
 
 ### How did King Saul die?
 Saul died in battle with the Philistines at Mount Gilboa. His sons, including Jonathan, were killed in the same battle.

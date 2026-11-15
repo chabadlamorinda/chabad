@@ -9,7 +9,7 @@ The Talmud tells the story of Chanukah in just a few lines, on page 21b of the t
 
 ## What does the Talmud actually say?
 
-The passage, called the Gemara, begins with a question rather than a date: "What is Chanukah?" It then answers, in a retelling of the translation, in four short steps:
+The passage, called the Gemara, begins with a question rather than a date: "What is Chanukah?" It then answers, in four short steps:
 
 1. **The Greeks entered the Sanctuary** and defiled all the oil in it.
 2. **The Hasmonean kingdom prevailed** and defeated them. The Jews then searched and found only one flask of oil, which still bore the seal of the High Priest (Kohen Gadol).

@@ -13,13 +13,13 @@ There is no single kind of gap year. Programs differ widely in religious level, 
 
 - **Learning programs.** Young men often attend a yeshiva and young women a seminary, where the day centers on Torah, Talmud, Jewish thought and Jewish law. See [what is a yeshiva](/learn/what-is-a-yeshiva).
 - **Mixed programs.** Some combine study with volunteering, travel and living in a community.
-- **Chabad programs.** Jewish tradition describes a pattern: for young women, a year or two of seminary after high school, often away from home and commonly in Israel; for young men, yeshiva study followed in many cases by a year of shlichus, serving as emissaries. Chassidic teaching also lists yeshivas and programs, such as Mayanot in Jerusalem and Tzfat, as places for those who want a taste of immersive study.
+- **Chabad programs.** In Chabad, a common path is: for young women, a year or two of seminary after high school, often away from home and commonly in Israel; for young men, yeshiva study followed in many cases by a year of shlichus, serving as emissaries. Yeshivas and programs such as Mayanot in Jerusalem and Tzfat are places for those who want a taste of immersive study.
 
 We do not recommend or rank particular programs. Each has its own character, and the right one depends on your child.
 
 ## Why families choose it
 
-The tradition gives several reasons to spend time in yeshiva: learning how to use Jewish texts, discussing Torah with confidence, absorbing a heritage, being inspired by a community living a Jewish life, and an investment in a future Jewish home. A gap year in the Land of Israel adds the experience of Shabbat and holidays in the Jewish homeland. See [Jerusalem](/learn/jerusalem) and [first trip to Israel](/learn/first-trip-to-israel).
+There are several reasons to spend time in yeshiva: learning how to use Jewish texts, discussing Torah with confidence, absorbing a heritage, being inspired by a community living a Jewish life, and an investment in a future Jewish home. A gap year in the Land of Israel adds the experience of Shabbat and holidays in the Jewish homeland. See [Jerusalem](/learn/jerusalem) and [first trip to Israel](/learn/first-trip-to-israel).
 
 ## Questions to ask any program
 
@@ -46,7 +46,7 @@ It is a year between high school and college, spent in Israel in a Jewish study,
 Yeshiva usually refers to a men's study program and seminary to a women's. Both focus on Jewish learning. Many programs differ in style, so research each one.
 
 ### Do Chabad young people do a gap year?
-Jewish tradition describes seminary for young women, often in Israel, and yeshiva study followed by shlichus for young men. Ask the Rabbi for current information.
+The common Chabad path is seminary for young women, often in Israel, and yeshiva study followed by shlichus for young men. Ask the Rabbi for current information.
 
 ### How do I choose a gap year program?
 Ask about supervision, Shabbat, safety, cost, daily learning and fit, and speak with alumni families.

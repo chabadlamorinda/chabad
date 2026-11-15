@@ -14,7 +14,7 @@ After school, children are tired but curious. A Jewish program can use those hou
 ## A checklist: what to look for
 
 **1. The people**
-- **Warm, caring staff.** Watch how adults speak with children. Jewish tradition, in its discussion of teachers, stresses careful, patient educators who are skilled at what they teach, and encourages keeping children included rather than pushing them away.
+- **Warm, caring staff.** Watch how adults speak with children. Look for careful, patient educators who are skilled at what they teach and who keep children included rather than pushing them away.
 - **Enough adults.** Ask about the number of children per adult.
 - **Background checks and first aid training.** These are fair questions to ask any program.
 - **Open communication.** Can you reach someone easily? Do you get updates?

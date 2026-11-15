@@ -17,7 +17,7 @@ The Torah (Deuteronomy 12:3-4) tells the Jewish people to destroy idolatry in th
 
 ## English or Hebrew?
 
-According to Jewish tradition, the prohibition clearly applies to the Hebrew names of G-d. For other languages such as English, opinions differ. Some authorities apply the prohibition to every language. Others limit it to Hebrew, but even they advise avoiding erasing the name in other languages when possible. Everyone agrees that the name of G-d in any language must be treated respectfully and not defaced or used in disrespectful places.
+The prohibition clearly applies to the Hebrew names of G-d. For other languages such as English, opinions differ. Some authorities apply the prohibition to every language. Others limit it to Hebrew, but even they advise avoiding erasing the name in other languages when possible. Everyone agrees that the name of G-d in any language must be treated respectfully and not defaced or used in disrespectful places.
 
 So the dash is a precaution, and a good habit.
 
@@ -25,7 +25,7 @@ So the dash is a precaution, and a good habit.
 
 Religious Jewish newspapers in pre-Holocaust Europe began writing G-d's name with a hyphen so that readers would not worry about what happens to a paper after it is read. Today the habit covers articles, magazines and newspapers in Yiddish, English and other languages. Holy books such as a Bible or prayer book usually write the name in full, because they are expected to be treated with respect. Many Jewish publications still use the hyphen, partly because people print articles to read on Shabbat.
 
-What about a computer screen? Jewish tradition notes that most halachic authorities do not consider a screen and its contents to have sanctity: typed text is not permanent, and pixels keep changing. So deleting G-d's name on a screen is permitted. Even so, writing "G-d" with a dash when you type is recommended as a good habit, since text can be printed. For your own case, ask the Rabbi.
+What about a computer screen? Most halachic authorities do not consider a screen and its contents to have sanctity: typed text is not permanent, and pixels keep changing. So deleting G-d's name on a screen is permitted. Even so, writing "G-d" with a dash when you type is recommended as a good habit, since text can be printed. For your own case, ask the Rabbi.
 
 ## What to do with papers that carry G-d's name
 
@@ -33,7 +33,7 @@ If you have a worn prayer book, a Torah study sheet or other pages with G-d's na
 
 ## Why we say "Hashem"
 
-In everyday speech, Jews say "Hashem" (הַשֵּׁם), which means "the Name," instead of using G-d's proper names. The tradition explains that "Hashem" is a placeholder rather than a holy name, so it may be erased. It also explains that G-d's titles are not said aloud without good reason, such as in prayer or while saying a blessing, and that using them casually, for instance in "Oh my G-d!", is considered disrespectful and highly discouraged. In writing, many also write "G-d" and "L-rd." For more, see [the names of G-d](/learn/shemot-names-of-g-d).
+In everyday speech, Jews say "Hashem" (הַשֵּׁם), which means "the Name," instead of using G-d's proper names. "Hashem" is a placeholder rather than a holy name, so it may be erased. Also, G-d's titles are not said aloud without good reason, such as in prayer or while saying a blessing, and that using them casually, for instance in "Oh my G-d!", is considered disrespectful and highly discouraged. In writing, many also write "G-d" and "L-rd." For more, see [the names of G-d](/learn/shemot-names-of-g-d).
 
 ## Common questions
 
@@ -44,7 +44,7 @@ To avoid ever writing out G-d's name in full where it might be erased or discard
 No. Writing it is not forbidden, and holy books often write it in full. Writing "G-d" is a precaution for pages that may be thrown away.
 
 ### Can I erase G-d's name on a computer?
-Chassidic teaching says most authorities treat a screen as having no holiness, so you may delete it there. Typing "G-d" with a dash is still a recommended habit.
+Most authorities treat a screen as having no holiness, so you may delete it there. Typing "G-d" with a dash is still a recommended habit.
 
 ### What does "Hashem" mean?
 Hashem means "the Name." It is what Jews say in daily speech in place of G-d's holy names.
@@ -53,7 +53,7 @@ Hashem means "the Name." It is what Jews say in daily speech in place of G-d's h
 Do not discard it. Put it aside for genizah. Chabad of Lamorinda in Lafayette can help.
 
 ### Can I say "Oh my G-d" in conversation?
-Jewish tradition says that using G-d's names in a casual way, such as "Oh my G-d," is considered disrespectful and highly discouraged.
+Using G-d's names in a casual way, such as "Oh my G-d," is considered disrespectful and highly discouraged.
 
 ## Take the next step
 

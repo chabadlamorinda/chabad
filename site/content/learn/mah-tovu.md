@@ -9,7 +9,7 @@ Mah Tovu (מַה טֹבוּ), "How goodly," is the verse that begins "How goodly
 
 ## Where Mah Tovu comes from
 
-The words come from the Torah portion Balak. A prophet named Balaam was hired to curse the Jewish people as they camped in the desert. Instead, when he looked at their camp, he blessed them with these words. Jewish tradition explains, following Rashi, that what impressed him was modesty: the entrances of the tents were arranged so that no tent faced another, and nobody could look into a neighbor's home.
+The words come from the Torah portion Balak. A prophet named Balaam was hired to curse the Jewish people as they camped in the desert. Instead, when he looked at their camp, he blessed them with these words. Rashi explains that what impressed him was modesty: the entrances of the tents were arranged so that no tent faced another, and nobody could look into a neighbor's home.
 
 So Mah Tovu is praise for a people who respect each other's privacy. Our tradition also reads "tents" as the Jewish home and "dwelling places" as the houses of study and prayer, so the verse sits naturally at the door of a synagogue.
 
@@ -17,7 +17,7 @@ So Mah Tovu is praise for a people who respect each other's privacy. Our traditi
 
 The Sages teach that the verse refers to synagogues and study halls, which is why it is said on entering one. Many siddurim, including the Chabad siddur, place it near the start of the morning service, after [Modeh Ani](/learn/modeh-ani). Ask the Rabbi if you want to know exactly where it falls in the siddur you are holding.
 
-There is a second reason that Chabad teaching stresses. Before praying, many siddurim have the person say that he or she accepts the commandment to love a fellow Jew as oneself. The idea is that prayer is communal, and we come before G-d as part of a people. The tradition points out that the feeling stirred by Mah Tovu is itself that acceptance: we tend to notice faults in others, but here we choose to see the good, picturing a fellow Jew as he looks in synagogue and imagining him at home in the same light. Read more in [Ahavat Yisrael](/learn/ahavat-yisrael).
+There is a second reason that Chabad teaching stresses. Before praying, many siddurim have the person say that he or she accepts the commandment to love a fellow Jew as oneself. The idea is that prayer is communal, and we come before G-d as part of a people. The feeling stirred by Mah Tovu is itself that acceptance: we tend to notice faults in others, but here we choose to see the good, picturing a fellow Jew as he looks in synagogue and imagining him at home in the same light. Read more in [Ahavat Yisrael](/learn/ahavat-yisrael).
 
 ## A minute-long way to say it
 
@@ -45,7 +45,7 @@ Mah Tovu means "How goodly" (or "how beautiful"), and the full verse says "How g
 Balaam, a non-Jewish prophet, said it. He was hired to curse the Jewish people but blessed them instead after seeing how their tents were arranged.
 
 ### Why were the tents arranged that way?
-Traditional teaching explains, following Rashi, that the tent entrances did not face each other, so people could not look into one another's homes. It is praise for modesty and privacy.
+Rashi explains that the tent entrances did not face each other, so people could not look into one another's homes. It is praise for modesty and privacy.
 
 ### When do Jews say Mah Tovu?
 Many say it when entering a synagogue and near the start of the morning prayers. Ask the Rabbi about the custom of your own family or community.

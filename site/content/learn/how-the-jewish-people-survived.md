@@ -42,7 +42,7 @@ The traditional answer is that G-d preserves the Jewish people, and that the hum
 Not primarily. Jews have spent longer outside the land of Israel than in it, and have spoken many different languages. The Torah is the one thing shared across all places and times.
 
 ### Why do Jews study Torah and teach it to children?
-Because this is how the Torah's way of life continues from generation to generation. Jewish tradition says survival requires a concrete commitment to Torah study, teaching children and its practices.
+Because this is how the Torah's way of life continues from generation to generation. Survival requires a concrete commitment to Torah study, teaching children and its practices.
 
 ### Does being born Jewish guarantee that Jewish life continues?
 No. A person is Jewish from birth, but Goldman says birth alone does not guarantee survival. The chain continues only when people live and pass on the Torah.

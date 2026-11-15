@@ -13,7 +13,7 @@ That makes the smallest act, a coin in a pushka, a blessing before a meal or a S
 
 Rabbi Naftali Silberberg's "Let's Talk Tanya" class on Chapter 35 opens with the verse the Tanya is built around: "For the matter is very near to you, in your mouth and in your heart, that you may do it." Thought, speech and action are the three "garments" of the soul, and action is the climax of the verse.
 
-The page explains that creation expresses G-d's will through many layers of concealment, while mitzvot express His inner will with no concealment. That is why only mitzvot can truly be one with Him. The Alter Rebbe, following the Zohar, compares the body to a wick and good deeds to oil: the light of the Shechinah rests on a person through good deeds. The soul alone cannot merge fully with G-d, since even a tzaddik's love implies a lover and a beloved.
+The class explains that creation expresses G-d's will through many layers of concealment, while mitzvot express His inner will with no concealment. That is why only mitzvot can truly be one with Him. The Alter Rebbe, following the Zohar, compares the body to a wick and good deeds to oil: the light of the Shechinah rests on a person through good deeds. The soul alone cannot merge fully with G-d, since even a tzaddik's love implies a lover and a beloved.
 
 ## A mitzvah creates its own reward
 
@@ -29,7 +29,7 @@ Do not hear this as pressure. The chapter's point is that each mitzvah has its o
 
 ## It is not about how you feel
 
-The Chapter 35 page notes that the Tanya's key verse ends with "that you may do it." Practical observance matters most, even though love and awe are also "very near." So you do not need a special feeling first. Chapter 4 says love and awe are the roots of the mitzvot, and the page shows how the mitzvah itself pulls the whole person, even the physical body, into holiness: it describes the physical strength used in putting on tefillin being absorbed into holiness.
+The class on Chapter 35 notes that the Tanya's key verse ends with "that you may do it." Practical observance matters most, even though love and awe are also "very near." So you do not need a special feeling first. Chapter 4 says love and awe are the roots of the mitzvot, and the class shows how the mitzvah itself pulls the whole person, even the physical body, into holiness: it describes the physical strength used in putting on tefillin being absorbed into holiness.
 
 This connects to the [beinoni](/learn/the-beinoni): a person who still struggles inside yet keeps choosing the right action.
 

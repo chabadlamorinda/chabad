@@ -1,6 +1,6 @@
 ---
 title: Parshat Bereshit: The Rebbe's Teaching, a Story and Ideas for Shabbat
-description: Parshat Bereshit, the Rebbe's teaching on the first light, a true story of a fresh start, and questions for your Shabbat table in Lafayette, Moraga and Orinda.
+description: Parshat Bereshit: the Rebbe on the first light, a true story of a fresh start, and Shabbat table questions in Lafayette, Moraga and Orinda.
 related: modeh-ani, book-of-genesis, adam-and-eve, shabbat, weekly-parsha
 ---
 ## The Rebbe's teaching

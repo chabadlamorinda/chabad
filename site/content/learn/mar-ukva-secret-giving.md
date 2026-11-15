@@ -9,15 +9,15 @@ Mar Ukva was a Talmudic sage who gave money to a poor neighbor in secret, and wh
 
 ## The story
 
-A footnote to Maimonides' laws of gifts to the poor (Matnot Aniyim) retells it: Mar Ukva used to leave money at a poor neighbor's doorstep every day. One day the man ran out to see who his benefactor was. Mar Ukva hid by going into an oven that was still warm but no longer burning. Asked why, he said that it is preferable for a person to cast himself into an oven than to embarrass a colleague in public.
+The Talmud (Ketubot 67b) tells it: Mar Ukva used to leave money at a poor neighbor's doorstep every day. One day the man ran out to see who his benefactor was. Mar Ukva hid by going into an oven that was still warm but no longer burning. Asked why, he said that it is preferable for a person to cast himself into an oven than to embarrass a colleague in public.
 
-Another article, "Hurtful Words," adds what the Talmud tells next: Mar Ukva's feet were burned, and he became known as "Mar Ukva with burnt feet." His wife hid with him and was not burned. The page explains her merit as feeding poor people directly, while Mar Ukva gave money.
+The Talmud goes on: Mar Ukva's feet were burned, and he became known as "Mar Ukva with burnt feet." His wife hid with him and was not burned. The Talmud explains her merit as feeding poor people directly, while Mar Ukva gave money.
 
 ## The lesson: giving without taking a person's dignity
 
 The story is mainly about the person who receives. A gift can help, and it can also hurt, if it makes the receiver feel small. Mar Ukva was ready to go through a hot oven so that his neighbor never had to face his own need in front of someone else.
 
-Maimonides, as Jewish tradition presents him, ranks the levels of giving. The highest is helping someone before he falls into need, with a gift, a loan, a partnership or a job, so that he never has to ask. Giving where neither side knows the other is "an observance of the mitzvah for its sake alone." Partial secrecy, where only the giver or only the recipient knows, is also a level. For a how-to, see [Giving Anonymously](/learn/giving-anonymously).
+Maimonides ranks the levels of giving. The highest is helping someone before he falls into need, with a gift, a loan, a partnership or a job, so that he never has to ask. Giving where neither side knows the other is "an observance of the mitzvah for its sake alone." Partial secrecy, where only the giver or only the recipient knows, is also a level. For a how-to, see [Giving Anonymously](/learn/giving-anonymously).
 
 ## What we can take from it
 

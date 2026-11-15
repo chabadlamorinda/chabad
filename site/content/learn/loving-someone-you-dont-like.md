@@ -11,7 +11,7 @@ Everyone has someone like this: a relative, a coworker, a neighbor, a person in 
 
 ## Love and dislike can sit side by side
 
-Learning Chapter 32 begins with a puzzle. The Torah commands us to love every Jew, yet the Talmud speaks of hating a sinner. Can a person do both?
+Chapter 32 of the Tanya begins with a puzzle. The Torah commands us to love every Jew, yet the Talmud speaks of hating a sinner. Can a person do both?
 
 The Alter Rebbe, Rabbi Shneur Zalman of Liadi, says yes, because the two feelings have different objects. What we reject is the evil. What we love is the divine spark inside the person, the G-dly soul that gives them life. Both are real, and neither cancels the other.
 

@@ -25,7 +25,7 @@ See also [telling your boss you keep Shabbat](/learn/telling-your-boss-you-keep-
 
 ## Effort with trust
 
-Chassidic teaching draws on a classic text on trust in G-d which teaches that trust does not mean passivity. A person must still make honest, reasonable effort at livelihood and daily affairs, and rely on G-d for the outcome. For a professional this is a relief: you can give your best, without carrying the idea that everything depends on you alone. For worry that will not let go, read [anxiety and worry](/learn/anxiety-and-worry) and [bitachon](/learn/bitachon).
+A classic text on trust in G-d teaches that trust does not mean passivity. A person must still make honest, reasonable effort at livelihood and daily affairs, and rely on G-d for the outcome. For a professional this is a relief: you can give your best, without carrying the idea that everything depends on you alone. For worry that will not let go, read [anxiety and worry](/learn/anxiety-and-worry) and [bitachon](/learn/bitachon).
 
 ## Work as a mission
 

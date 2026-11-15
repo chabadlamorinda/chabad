@@ -11,7 +11,7 @@ This guide is general information. For fire and evacuation, always follow the in
 
 ## Life comes first: pikuach nefesh
 
-Pikuach nefesh (פִּקּוּחַ נֶפֶשׁ) means "saving a life." The Torah says of its commandments, "you shall live by them" (Leviticus 18:5), and the Sages teach that this means live by them, and not die by them. Jewish tradition explains that when life is in danger, Shabbat is treated like a weekday for whatever is needed, and that "it is forbidden to hesitate." Acting quickly is praiseworthy; asking questions while danger grows is not.
+Pikuach nefesh (פִּקּוּחַ נֶפֶשׁ) means "saving a life." The Torah says of its commandments, "you shall live by them" (Leviticus 18:5), and the Sages teach that this means live by them, and not die by them. When life is in danger, Shabbat is treated like a weekday for whatever is needed, and that "it is forbidden to hesitate." Acting quickly is praiseworthy; asking questions while danger grows is not.
 
 In practice, if an evacuation order or a real threat comes on Shabbat or a holiday, you may and should drive, use your phone to call for help, switch on lights and gather your family. Do not wait to ask permission. You can speak to the Rabbi afterwards. Read more in [pikuach nefesh](/learn/pikuach-nefesh).
 
@@ -47,7 +47,7 @@ On a day of high fire danger, light Shabbat candles with extra care:
 - Keep a bottle of water and a fire extinguisher where you can reach them, and know that you may use them if there is danger.
 - If it is safer, use fewer candles, or ask the Rabbi about an alternative on that Friday. Find this week's time at [Shabbat times](/shabbat-times); Kabbalat Shabbat at the Chabad center is {kabbalat-shabbat} this week.
 
-Jewish law notes that saving life overrides Shabbat, so you may use a fire extinguisher or call the fire department (Mechabeh). Possessions are different: ask the Rabbi in advance what to do about them.
+Saving life overrides Shabbat, so you may use a fire extinguisher or call the fire department (Mechabeh). Possessions are different: ask the Rabbi in advance what to do about them.
 
 ## After a fire
 

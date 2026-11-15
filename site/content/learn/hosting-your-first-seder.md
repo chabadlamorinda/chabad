@@ -9,10 +9,10 @@ To host a Passover Seder, gather your guests, give everyone the same Haggadah, p
 
 ## Weeks before: plan and invite
 
-1. **Invite sincerely.** Think of people who may especially need an invitation: a neighbor, a coworker, a student, someone who lives alone. A phone call shows you really want them there. Jewish tradition advises that texts and emails are fine, but a call is the most effective.
+1. **Invite sincerely.** Think of people who may especially need an invitation: a neighbor, a coworker, a student, someone who lives alone. A phone call shows you really want them there. Texts and emails are fine, but a call is the most effective.
 2. **Get enough Haggadahs.** Use the same edition for everyone so you can follow along together. If guests speak different languages, a multilingual edition helps. See [what a Haggadah is](/learn/haggadah).
 3. **Plan the food.** Read [kosher for Passover](/learn/kosher-for-passover), [Passover cleaning](/learn/passover-cleaning) and the [shopping list](/learn/passover-shopping-list). Handmade shmurah matzah is ideal for the Seder. For a guest who cannot eat wheat, ask the Rabbi what can be done.
-4. **Think about the cups.** The tradition suggests small cups holding at least 3 fluid ounces for the four cups. Offer grape juice for anyone who cannot drink wine. See [the four cups](/learn/four-cups).
+4. **Think about the cups.** Use small cups holding at least 3 fluid ounces for the four cups. Offer grape juice for anyone who cannot drink wine. See [the four cups](/learn/four-cups).
 5. **Study a little.** Read a few insights ahead of time and ask family members to do the same, then share them at the table.
 
 ## The day before and the afternoon
@@ -29,7 +29,7 @@ To host a Passover Seder, gather your guests, give everyone the same Haggadah, p
 3. **Pause between paragraphs.** Ask questions, share a thought, let the children talk. This is the heart of the Seder: the Haggadah is meant to be a conversation.
 4. **Follow the cues** for raising cups and covering and uncovering the matzah. Everyone recline to the left while drinking the four cups and eating the matzah.
 5. **Let the children shine.** A child traditionally recites the [Four Questions](/learn/four-questions). If no child is present, an adult asks. See [Passover with kids](/learn/passover-with-kids) and the [afikoman](/learn/afikoman).
-6. **Eat the matzah and bitter herbs without delay,** and finish the afikoman before halachic midnight on the first night. Jewish tradition suggests checking the exact time for your location.
+6. **Eat the matzah and bitter herbs without delay,** and finish the afikoman before halachic midnight on the first night. Check the exact time for your location.
 7. **Close with song** and "Next year in Jerusalem."
 
 ## Make everyone feel at home

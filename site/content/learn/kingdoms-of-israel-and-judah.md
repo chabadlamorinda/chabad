@@ -9,7 +9,7 @@ After King Solomon died, the Jewish people split into two kingdoms: the northern
 
 ## The split: Rehoboam and Jeroboam
 
-Solomon built the Holy Temple and ruled over a united people. But, as the sources tell, G-d had told Solomon that the kingdom would be torn away because of his wives' idolatry. When Solomon died, his son Rehoboam became king. The people asked him to lighten their burden. Rehoboam rejected the advice of the elders, who told him to listen, and the people rebelled and appointed Jeroboam of the tribe of Ephraim as their ruler. The prophet Ahijah had earlier told Jeroboam that he would rule part of the kingdom. See [King Solomon](/learn/king-solomon).
+Solomon built the Holy Temple and ruled over a united people. But G-d had told Solomon that the kingdom would be torn away because of his wives' idolatry. When Solomon died, his son Rehoboam became king. The people asked him to lighten their burden. Rehoboam rejected the advice of the elders, who told him to listen, and the people rebelled and appointed Jeroboam of the tribe of Ephraim as their ruler. The prophet Ahijah had earlier told Jeroboam that he would rule part of the kingdom. See [King Solomon](/learn/king-solomon).
 
 Rehoboam kept the south, Judah, with Jerusalem, the Temple and the line of King David. Jeroboam ruled the north.
 
@@ -17,7 +17,7 @@ Rehoboam kept the south, Judah, with Jerusalem, the Temple and the line of King 
 
 Jeroboam feared that if his people kept going up to Jerusalem for the festivals they would return to Rehoboam. So he set up shrines in Dan and Bethel with golden calves, and proclaimed new holidays. It was a tragic mistake that shaped the whole history of the north.
 
-Tradition says that the northern kings were universally wicked, and that Ahab's wife Jezebel introduced the worship of Baal. Prophets such as Elijah, Elisha, Hosea, Amos and Jonah called the people back. Under Jeroboam II the kingdom reached its largest size in Jewish history, but the people did not repent, and decline followed. The kingdom lasted 241 years. Read more in [what is a prophet](/learn/what-is-a-prophet).
+The northern kings were universally wicked, and Ahab's wife Jezebel introduced the worship of Baal. Prophets such as Elijah, Elisha, Hosea, Amos and Jonah called the people back. Under Jeroboam II the kingdom reached its largest size in Jewish history, but the people did not repent, and decline followed. The kingdom lasted 241 years. Read more in [what is a prophet](/learn/what-is-a-prophet).
 
 ## The end of the north
 
@@ -25,7 +25,7 @@ Assyria rose to power. The last king, Hoshea, turned to Egypt for help, and Shal
 
 ## The southern kingdom: Judah
 
-Judah survived longer, with the Temple in Jerusalem and kings of the House of David. Its kings varied: some, like Jotham, faithful to the prophets; some, like Ahaz, who asked Assyria for help. In the end, the tradition explains, Nebuchadnezzar of Babylon installed Zedekiah as king after taking earlier exiles, and Zedekiah rebelled against Babylon despite the warnings of the prophet Jeremiah. Jerusalem was besieged beginning on the tenth of Tevet, and the walls were breached in Tammuz. On the ninth of Av, the First Temple was set on fire.
+Judah survived longer, with the Temple in Jerusalem and kings of the House of David. Its kings varied: some, like Jotham, faithful to the prophets; some, like Ahaz, who asked Assyria for help. In the end, Nebuchadnezzar of Babylon installed Zedekiah as king after taking earlier exiles, and Zedekiah rebelled against Babylon despite the warnings of the prophet Jeremiah. Jerusalem was besieged beginning on the tenth of Tevet, and the walls were breached in Tammuz. On the ninth of Av, the First Temple was set on fire.
 
 The First Temple had stood about 410 years. Jeremiah taught the exiles to build homes and families in Babylon and promised that after seventy years G-d would remember them. The Davidic kingdom ended but, as the prophets promised, will be restored. See [the Holy Temple](/learn/the-holy-temple) and [Tisha B'Av](/learn/tisha-bav-for-beginners), when we remember the destruction.
 

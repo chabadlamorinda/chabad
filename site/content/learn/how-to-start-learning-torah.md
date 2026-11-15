@@ -5,23 +5,23 @@ category: Prayer & Torah
 related: daily-torah-study, tanya-learning-plan, tanya-on-torah-study, how-to-start-learning-tanya, chavruta-learning-partner, weekly-parsha, torah-classes-in-lamorinda, who-wrote-the-torah
 local: Come to your first class, no background needed: /programs/adult-education, or call Rabbi Labkowski at 925-384-7242.
 ---
-You can start learning Torah today with no background: choose a text, read it aloud, ask questions and, if possible, learn with a partner. Jewish tradition describes this as an active way of learning, and says the goal of study is to put it into practice. In Lafayette, Moraga and Orinda you can begin in a class with neighbors.
+You can start learning Torah today with no background: choose a text, read it aloud, ask questions and, if possible, learn with a partner. This is an active way of learning, and the goal of study is to put it into practice. In Lafayette, Moraga and Orinda you can begin in a class with neighbors.
 
 ## What "Torah" means
 
-The word Torah (תּוֹרָה) means "teaching." In its narrow sense it is the Five Books of Moses, the central text of Judaism. In the broad sense, Chassidic teaching explains, it includes the explanations of the mitzvahs that G-d gave the Jewish people. The Written Torah is the Five Books, with the Prophets and Writings bringing it to 24 books. The Oral Torah, later written in the Mishnah and Talmud, supplies the full meaning of the text. Read more in [What is the Oral Torah?](/learn/oral-torah) and [Tanach](/learn/tanach).
+The word Torah (תּוֹרָה) means "teaching." In its narrow sense it is the Five Books of Moses, the central text of Judaism. In the broad sense, it includes the explanations of the mitzvahs that G-d gave the Jewish people. The Written Torah is the Five Books, with the Prophets and Writings bringing it to 24 books. The Oral Torah, later written in the Mishnah and Talmud, supplies the full meaning of the text. Read more in [What is the Oral Torah?](/learn/oral-torah) and [Tanach](/learn/tanach).
 
 ## Five habits for beginners
 
-Tradition suggests an active approach to study. Here is how to use it.
+Take an active approach to study. Here is how to use it.
 
 1. **Learn aloud.** Reading out loud engages the whole body and helps you remember.
 2. **Review regularly.** Going back over what you learned helps it stay.
-3. **Sing the texts.** Jewish tradition says singing strengthens memory and connection.
+3. **Sing the texts.** Singing strengthens memory and connection.
 4. **Ask questions.** Questions are central to Jewish study. Never be embarrassed to ask. If you are curious about who wrote it, start with [Who Wrote the Torah?](/learn/who-wrote-the-torah).
 5. **Learn with a partner.** A study partner is called a chavruta. Debate with a partner leads to deeper understanding. See [Learning With a Partner](/learn/chavruta-learning-partner).
 
-The tradition adds that while Torah study is about connecting with G-d's mindset, its primary purpose is application: learning leads to doing.
+Chassidic thought adds that while Torah study is about connecting with G-d's mindset, its primary purpose is application: learning leads to doing.
 
 ## What to learn first
 

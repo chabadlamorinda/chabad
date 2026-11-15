@@ -18,13 +18,13 @@ One sage said it is an absolute duty for every person to spend half an hour each
 
 ## When to begin
 
-Chassidic teaching says to start early: as soon as a child begins to speak, teach key verses such as "The Torah that Moses commanded us" and the Shema. Around age three is the traditional time for blessings on food and basic prayers, and for boys to begin covering their heads and wearing tzitzit. (Girls begin lighting Shabbat candles at about this age.) See [tzitzit](/learn/tzitzit) and [teaching kids blessings on food](/learn/teaching-kids-blessings-on-food).
+Start early: as soon as a child begins to speak, teach key verses such as "The Torah that Moses commanded us" and the Shema. Around age three is the traditional time for blessings on food and basic prayers, and for boys to begin covering their heads and wearing tzitzit. (Girls begin lighting Shabbat candles at about this age.) See [tzitzit](/learn/tzitzit) and [teaching kids blessings on food](/learn/teaching-kids-blessings-on-food).
 
 ## Mothers and fathers together
 
-It is also frank that although the formal obligation to teach Torah rests on the father, the mother often does the most effective educating, because she usually spends more time with the children and is well placed to pass on values. Jewish parenting is a partnership, not a competition. Read [being a Jewish mother](/learn/being-a-jewish-mother) and [Jewish parenting](/learn/jewish-parenting).
+To be frank, although the formal obligation to teach Torah rests on the father, the mother often does the most effective educating, because she usually spends more time with the children and is well placed to pass on values. Jewish parenting is a partnership, not a competition. Read [being a Jewish mother](/learn/being-a-jewish-mother) and [Jewish parenting](/learn/jewish-parenting).
 
-The goal, Chassidic philosophy adds, is that children come to value each mitzvah for its own sake and for the connection to G-d it creates, not only to earn a reward.
+The goal, Chassidic teaching adds, is that children come to value each mitzvah for its own sake and for the connection to G-d it creates, not only to earn a reward.
 
 ## Ways to be there
 
@@ -40,10 +40,10 @@ The goal, Chassidic philosophy adds, is that children come to value each mitzvah
 A Jewish father teaches his children Torah and guides them in mitzvot. He is also a model of prayer, study and kindness.
 
 ### Does a father have to teach his daughters Torah too?
-The Torah obligation is stated for sons. Chassidic thought explains that chinuch, educating children to do mitzvot, applies to children generally. Ask the Rabbi about details, and see [Torah study for women](/learn/torah-study-for-women).
+The Torah obligation is stated for sons. Chinuch, educating children to do mitzvot, applies to children generally. Ask the Rabbi about details, and see [Torah study for women](/learn/torah-study-for-women).
 
 ### Can I hire a teacher instead?
-Yes. Chassidic teaching says a father who cannot teach personally may delegate to a teacher or school. [Hebrew school](/programs/hebrew-school) on Sundays is one option for Lafayette, Moraga and Orinda families.
+Yes. A father who cannot teach personally may delegate to a teacher or school. [Hebrew school](/programs/hebrew-school) on Sundays is one option for Lafayette, Moraga and Orinda families.
 
 ### My own Jewish education was limited. Can I still do this?
 Yes. Learn together with your children and ask the Rabbi to set up a study partner. Begin at [the Torah classes](/programs/adult-education).

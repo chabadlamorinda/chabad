@@ -9,7 +9,7 @@ Yes, a rabbi can marry you in a Jewish wedding, and in Lafayette, Moraga and Ori
 
 ## What does a Jewish wedding require?
 
-Chassidic teaching explains that a Jewish marriage has two stages, and both are needed for it to be valid:
+A Jewish marriage has two stages, and both are needed for it to be valid:
 
 1. **Kiddushin (betrothal).** The groom gives the bride a ring in front of two witnesses and says the words of betrothal, and she accepts. The ring is the object by which the betrothal is made. See [The Jewish wedding ring](/learn/jewish-wedding-ring).
 2. **Nissuin (the nuptials).** Under the chuppah, seven blessings are said and the couple is joined, and then they spend a few private minutes together in yichud. See [What is a chuppah?](/learn/what-is-a-chuppah) and [Yichud](/learn/yichud).
@@ -21,7 +21,7 @@ Between these two stages the ketubah, the marriage contract, is read aloud. It p
 The details matter in Jewish law, and a rabbi makes sure they are right. For example:
 
 - The **ring** must belong to the groom and be a plain band.
-- The **witnesses** must be specifically appointed. Jewish tradition says they must be Torah-observant adult Jewish men who are not relatives of the couple or of each other.
+- The **witnesses** must be specifically appointed. They must be Torah-observant adult Jewish men who are not relatives of the couple or of each other.
 - The **ketubah** is filled in by the officiating rabbi. If you want a designer ketubah, the rabbi should approve its text first.
 
 The rabbi also brings the warmth and meaning to the day, helping you choose honorees for the blessings and explaining what will happen to your families and guests.

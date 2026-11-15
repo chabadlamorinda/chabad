@@ -9,7 +9,7 @@ A moment of closeness to G-d is meant to send us back into the world, not to tak
 
 Drawing on Chassidic thought, the Rebbe explains that their fault was not an ordinary wrongdoing. Their longing to cleave to G-d burned so intensely that their souls left their bodies. They sought the ecstasy of closeness without any plan to return to the world. The Midrash lists several faults, such as entering without the proper garments and not marrying, and the Rebbe sees one root behind them all: the idea that we come close to G-d by withdrawing from life rather than by taking part in it.
 
-The Talmud tells of four sages who entered a mystical "orchard." Only Rabbi Akiva "entered in peace and left in peace." He went in with the intention to return. That is the model, and it is also the model for Aaron on Yom Kippur. He is told to enter the Holy of Holies with awe and humility, and he comes out to bless and to pray for the people's livelihood.
+The Talmud tells of four sages who entered a mystical "orchard." Only Rabbi Akiva "entered in peace and left in peace." He went in with the intention to return. That is the model, and it is also the model for Aaron on Yom Kippur. He is told to enter the Holy of Holies with awe and humility, and he comes out to pray for the people's livelihood.
 
 What it means for us: all of us have moments of spiritual intensity, on Shabbat, at a festival, at Yom Kippur, at a Jewish wedding or a funeral. The Rebbe teaches that the point of these moments is not the feeling itself. The point is what we do with it afterward, in our kitchens, offices and friendships. A high that does not reach Monday morning has missed its purpose. A high that does reach Monday morning makes the world itself a place where G-d is at home.
 
@@ -38,7 +38,7 @@ Almost every one of us has had a moment that felt like a doorway opening. Maybe 
 
 Parshat Achrei Mot does not scold us for that. It teaches something wiser. The Rebbe's explanation of Nadav and Avihu is that closeness to G-d without a return ticket is incomplete. G-d wants a home in the physical world, and we are the ones who build it, through ordinary acts: a business done honestly, a table set for guests, a phone call to someone who is lonely.
 
-This is why the Torah gives such careful instructions to Aaron on Yom Kippur. He enters the Holy of Holies, but his service is not complete until he steps back out into the camp to bless the people. The holiest place in the world is not a destination. It is a source.
+This is why the Torah gives such careful instructions to Aaron on Yom Kippur. He enters the Holy of Holies, but his service is not complete until he steps back out into the camp to pray for the people. The holiest place in the world is not a destination. It is a source.
 
 Here is a small way to practice it. After the next moment that moves you, a Shabbat meal, a prayer, a good class, ask: what is one concrete thing this makes me want to do differently on Monday? Write it down. Do only that one thing.
 

@@ -9,7 +9,7 @@ The Zohar (זֹהַר, "Splendor") is the primary text of Kabbalah, the Jewish m
 
 ## What the Zohar is
 
-The Zohar is a set of mystical teachings on the Five Books of Moses, with additional sections on other subjects. It explores the hidden meaning of the Torah, the nature of the soul, the structure of creation and how mitzvot affect the world above. Chassidic teaching calls it the primary text of Kabbalah. See the [Kabbalah](/learn/kabbalah) guide for the big picture.
+The Zohar is a set of mystical teachings on the Five Books of Moses, with additional sections on other subjects. It explores the hidden meaning of the Torah, the nature of the soul, the structure of creation and how mitzvot affect the world above. It is the primary text of Kabbalah. See the [Kabbalah](/learn/kabbalah) guide for the big picture.
 
 ## Rabbi Shimon bar Yochai
 
@@ -21,7 +21,7 @@ Rabbi Shimon's yahrzeit is celebrated on [Lag BaOmer](/holidays/lag-baomer) with
 
 The book first became widely known in the thirteenth century, when it was published in Spain by one of the leading Kabbalists of the time, Rabbi Moshe de Leon (c. 1240 to 1305). The story of how the manuscript reached him is surrounded by many legends and traditions.
 
-The tradition presents the question honestly. It notes that the prevailing academic opinion is that Rabbi Moshe de Leon himself wrote it, with some dissenters. Those who accept the Zohar as authentic, as Chabad does, generally hold that Rashbi wrote part but not all of the text, and that later hands added to it. This guide does not settle the scholarly debate; if you want to go deeper, ask the Rabbi.
+It is worth being honest about this question. The prevailing academic opinion is that Rabbi Moshe de Leon himself wrote it, with some dissenters. Those who accept the Zohar as authentic, as Chabad does, generally hold that Rashbi wrote part but not all of the text, and that later hands added to it. This guide does not settle the scholarly debate; if you want to go deeper, ask the Rabbi.
 
 ## How Chassidus makes it understandable
 

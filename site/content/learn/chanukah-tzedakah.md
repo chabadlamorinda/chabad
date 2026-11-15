@@ -17,12 +17,12 @@ The Rebbe also explained that on the second day we add something else: the study
 
 The best-known giving of Chanukah is *gelt* (Yiddish for "money"), the coins given to children. Here is the thought behind it:
 
-- **A way to teach tzedakah.** Gelt gives children a chance to give. The article suggests that a child set aside about a tenth of the gelt for charity and use the rest for good, wholesome things.
+- **A way to teach tzedakah.** Gelt gives children a chance to give. A child can set aside about a tenth of the gelt for charity and use the rest for good, wholesome things.
 - **A reward for learning.** Chanukah shares a root with *chinuch*, education, and gelt is given to children as a reward for Torah study.
 - **Wealth for holy purposes.** The Greeks tried to turn Jewish possessions toward ungodly ends. Gelt reminds us that money can serve a holy purpose.
 - **Helping those in need.** The Magen Avraham, a classic legal authority, notes that money given to the poor lets them buy Chanukah lights without embarrassment.
 
-The Chabad custom, according to the same article, is to give a little gelt every night, with a larger gift on the fourth or fifth night. The Talmud teaches that the Chanukah lights are not to be used for ordinary tasks such as counting money by their light, so we avoid counting money near the menorah. Our guide to [Chanukah gelt](/learn/chanukah-gelt) goes into more detail, and [children, money and tzedakah](/learn/children-money-and-tzedakah) helps parents teach the habit.
+Chabad custom is to give a little gelt every night, with a larger gift on the fourth or fifth night. The Talmud teaches that the Chanukah lights are not to be used for ordinary tasks such as counting money by their light, so we avoid counting money near the menorah. Our guide to [Chanukah gelt](/learn/chanukah-gelt) goes into more detail, and [children, money and tzedakah](/learn/children-money-and-tzedakah) helps parents teach the habit.
 
 ## A spiritual gift from the Rebbe
 

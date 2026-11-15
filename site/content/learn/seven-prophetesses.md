@@ -9,11 +9,11 @@ The Talmud names seven women as prophetesses of the Jewish people: Sarah, Miriam
 
 ## Who were the seven prophetesses?
 
-Jewish tradition presents the seven, drawing on the Talmud (Megillah 14a). Here is a short card on each.
+The Talmud (Megillah 14a) lists the seven. Here is a short card on each.
 
 ### 1. Sarah
 
-Sarah was Abraham's partner in teaching the world about one G-d, and tradition says she surpassed him in prophecy. Jewish tradition tells of the miracles in her tent: a cloud of glory, Shabbat candles that burned all week, and bread that stayed fresh. **Lesson:** a Jewish home, with its light, is holy. See [Abraham and Sarah](/learn/abraham-and-sarah).
+Sarah was Abraham's partner in teaching the world about one G-d, and tradition says she surpassed him in prophecy. The Midrash tells of the miracles in her tent: a cloud of glory, Shabbat candles that burned all week, and bread that stayed fresh. **Lesson:** a Jewish home, with its light, is holy. See [Abraham and Sarah](/learn/abraham-and-sarah).
 
 ### 2. Miriam
 
@@ -25,7 +25,7 @@ A judge who sat under a palm tree and led Israel to victory with Barak. **Lesson
 
 ### 4. Hannah (Chanah)
 
-Hannah had no children and prayed from the heart in the Tabernacle. The tradition notes that many laws of Jewish prayer come from her silent prayer. Her son was the prophet Samuel. **Lesson:** the power of heartfelt prayer. See [Hannah and her prayer](/learn/hannah-and-her-prayer).
+Hannah had no children and prayed from the heart in the Tabernacle. Many laws of Jewish prayer come from her silent prayer. Her son was the prophet Samuel. **Lesson:** the power of heartfelt prayer. See [Hannah and her prayer](/learn/hannah-and-her-prayer).
 
 ### 5. Abigail
 
@@ -37,11 +37,11 @@ When a Torah scroll was found during repairs to the Temple, King Josiah sent to 
 
 ### 7. Esther
 
-A queen who used her position to save her people from Haman's plan. Jewish tradition notes that she is the only woman to whom a book of the Bible is attributed as author. **Lesson:** speak up when your people need you. See [the Purim story](/learn/purim-story) and [the Megillah](/learn/megillah).
+A queen who used her position to save her people from Haman's plan. She is the only woman to whom a book of the Bible is attributed as author. **Lesson:** speak up when your people need you. See [the Purim story](/learn/purim-story) and [the Megillah](/learn/megillah).
 
 ## Why are there seven?
 
-The Sages count seven women whose prophecies are part of the Bible. The tradition notes that this shows that the highest spiritual level was open to women. Jewish teaching also says that women in each generation have a special strength of faith. See [Jewish women](/learn/jewish-women) and [the Matriarchs](/learn/the-matriarchs).
+The Sages count seven women whose prophecies are part of the Bible. This shows that the highest spiritual level was open to women. Jewish teaching also says that women in each generation have a special strength of faith. See [Jewish women](/learn/jewish-women) and [the Matriarchs](/learn/the-matriarchs).
 
 ## What they teach girls and women today
 

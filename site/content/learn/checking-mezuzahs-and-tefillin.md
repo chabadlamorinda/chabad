@@ -13,7 +13,7 @@ Mezuzah (מְזוּזָה) and tefillin (תְּפִלִּין) are handwritten p
 
 ## How often should a mezuzah be checked?
 
-- **Twice every seven years** by Jewish law, by a scribe. Jewish tradition adds that many have them checked every year before the High Holidays.
+- **Twice every seven years** by Jewish law, by a scribe. Many also have them checked every year before the High Holidays.
 - **Every year in Elul** by ancient custom. The Rebbe encouraged it. See [Elul](/learn/elul) for the month of preparation.
 - **More often for outdoor mezuzahs,** such as a front door that gets rain and sun. Some computer scanning can supplement a scribe's check, but it does not replace it.
 
@@ -34,7 +34,7 @@ If a scroll fails, the scribe can sometimes repair it, and sometimes you need a 
 
 1. Remove the mezuzah carefully, with the case, and number it with a pencil or a sticky note so you know which doorpost it came from.
 2. Take the scrolls to be checked. Nails, screws and tape can be thrown away, but the case and wrapping are sacred objects and are not thrown out. Ask the Rabbi what to do with them.
-3. Put each mezuzah back on its own doorpost, or on a similar one. The tradition teaches that a new blessing is needed only if the mezuzah was off the doorpost for at least one night. Otherwise, no blessing.
+3. Put each mezuzah back on its own doorpost, or on a similar one. A new blessing is needed only if the mezuzah was off the doorpost for at least one night. Otherwise, no blessing.
 4. Use the placement from the [mezuzah guide](/learn/mezuzah): right side, upper third, tilted inward.
 
 ## Checking in a hard time

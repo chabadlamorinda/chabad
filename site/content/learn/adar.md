@@ -9,13 +9,13 @@ Adar (אדר) is the Hebrew month in which, as the Talmud says, "when Adar begin
 
 ## Why do we increase in joy?
 
-The Talmud teaches that Adar is a fortunate month for the Jewish people, and Jewish tradition adds that the name Adar is related to *adir*, which means strength and power. Haman cast lots to choose Adar for his decree, thinking it the worst month for the Jews, and the opposite happened: it became the month of rescue.
+The Talmud teaches that Adar is a fortunate month for the Jewish people, and the name Adar is related to *adir*, which means strength and power. Haman cast lots to choose Adar for his decree, thinking it the worst month for the Jews, and the opposite happened: it became the month of rescue.
 
 Joy is a mitzvah in itself. Chassidic teaching stresses that joy breaks through barriers, and the Lubavitcher Rebbe taught that joy hastens the final redemption. So make this month a month of smiles, kindness and celebration. See [simcha, Jewish joy](/learn/simcha).
 
 ## What happens in the month?
 
-Jewish teaching gives nine points about Adar. Among them: Moses was both born and passed away on 7 Adar, and the Talmud teaches that his birthday helped avert the decree. The sign of Adar is Pisces (fish), a symbol of blessing, and the Jewish people thrive immersed in Torah, as fish thrive in water.
+A few facts about Adar: Moses was both born and passed away on 7 Adar, and the Talmud teaches that his birthday helped avert the decree. The sign of Adar is Pisces (fish), a symbol of blessing, and the Jewish people thrive immersed in Torah, as fish thrive in water.
 
 Haman was hanged in Nissan, not in Adar; Purim commemorates the rest after the victory. Adar was also the last month the Jewish people spent in Egypt before the Exodus, so its joy leads right into [Passover](/holidays/passover).
 
@@ -27,7 +27,7 @@ In a leap year, Purim is celebrated in Adar II, the month closest to Nissan, to 
 
 ## What is Purim Katan?
 
-Purim Katan ("Small Purim") falls on the 14th of Adar I, in a leap year. The tradition lists these customs: Tachanun, the penitential prayers, is omitted, beginning from the preceding afternoon prayer; there is no fasting; eulogies are generally not given. Some add a little to their joy and festive eating, but that is not required.
+Purim Katan ("Small Purim") falls on the 14th of Adar I, in a leap year. The customs are: Tachanun, the penitential prayers, is omitted, beginning from the preceding afternoon prayer; there is no fasting; eulogies are generally not given. Some add a little to their joy and festive eating, but that is not required.
 
 The Rebbe taught that joy should not depend on big events: even on an ordinary day like this, be joyful.
 

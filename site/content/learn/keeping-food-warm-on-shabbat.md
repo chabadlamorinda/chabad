@@ -15,7 +15,7 @@ The same rule explains why a hot Shabbat lunch is possible, from [cholent](/lear
 
 ## What is a blech?
 
-A blech (בְּלֶעךְ, Yiddish for "tin") is a metal sheet placed over the stove burners before Shabbat. It covers the flames and spreads the heat. Jewish tradition explains that it has zones: directly over the flame food would cook, farther away it is only warm. The zones decide where food may be put.
+A blech (בְּלֶעךְ, Yiddish for "tin") is a metal sheet placed over the stove burners before Shabbat. It covers the flames and spreads the heat. It has zones: directly over the flame food would cook, farther away it is only warm. The zones decide where food may be put.
 
 How to use one:
 

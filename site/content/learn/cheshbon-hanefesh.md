@@ -26,7 +26,7 @@ Notice the lesson. Honest accounting means noticing our excuses and taking respo
 The Rebbe taught different accountings throughout the year. Short ones cover the day, the week or the month, and the great, yearly reckoning is made in the month of Elul.
 
 - **Every night.** The bedtime Shema is described as the best setting for soul-accounting. The prayer includes a passage where we think of anyone we may have wronged. See [the bedtime Shema](/learn/bedtime-shema).
-- **Thursday night and the night before Rosh Chodesh.** The same article names these as especially good times.
+- **Thursday night and the night before Rosh Chodesh.** These are especially good times.
 - **Monthly.** Take a few minutes at the end of each month.
 - **In [Elul](/learn/elul).** The month before Rosh Hashanah, when the whole year is reviewed.
 - **At the secular new year.** Many people make resolutions now. See [the Jewish view of the secular new year](/learn/secular-new-year-jewish-view).
@@ -54,7 +54,7 @@ It is a Jewish "accounting of the soul," an honest, regular review of your actio
 Set aside a few quiet minutes. Ask what went well, whom you hurt, where you made excuses, what you will change, and what mitzvah you will add.
 
 ### When should I do it?
-The tradition notes it can be done daily, weekly and monthly, with the big yearly accounting in Elul. The bedtime Shema, especially Thursday night, is a favorite time.
+It can be done daily, weekly and monthly, with the big yearly accounting in Elul. The bedtime Shema, especially Thursday night, is a favorite time.
 
 ### Is cheshbon hanefesh the same as guilt?
 No. Guilt looks backward and can paralyze. Cheshbon hanefesh looks at the truth and then moves you forward.

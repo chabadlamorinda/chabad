@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: kavanah-in-prayer, siddur, hebrew-reading-for-adults, talking-to-g-d-in-your-own-words, hebrew-lessons-in-lamorinda
 local: Want to learn what the Hebrew means, or start praying with confidence? Call Rabbi Labkowski at 925-384-7242 or see /programs/adult-education.
 ---
-Yes, you can pray in English, or any language you understand. Jewish law says the Amidah, the heart of Jewish prayer, may be recited in any language, and that Hebrew is preferred when possible. What matters most is that you understand what you are saying and mean it.
+Yes, you can pray in English, or any language you understand. The Amidah, the heart of Jewish prayer, may be recited in any language, though Hebrew is preferred when possible. What matters most is that you understand what you are saying and mean it.
 
 ## What Jewish law says about the language of prayer
 

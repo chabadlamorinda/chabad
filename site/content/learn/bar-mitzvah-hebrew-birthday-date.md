@@ -32,7 +32,7 @@ Most children have a simple date. A few do not, and these are the ones to ask ab
 
 ## The date and the celebration are two things
 
-The child becomes Bar or Bat Mitzvah on the Hebrew birthday. The family then chooses a day for the service and celebration: a Monday or Thursday when the Torah is read, a Shabbat, or another day close by. Many choose the Shabbat on or after the birthday, and some travel to Israel. The halacha notes that the ideal first aliyah is a Monday or Thursday morning, or a Shabbat afternoon, and the Rabbi can help you choose. Read the [full timeline](/learn/bar-bat-mitzvah-timeline) to plan backward from the date.
+The child becomes Bar or Bat Mitzvah on the Hebrew birthday. The family then chooses a day for the service and celebration: a Monday or Thursday when the Torah is read, a Shabbat, or another day close by. Many choose the Shabbat on or after the birthday, and some travel to Israel. The ideal first aliyah is a Monday or Thursday morning, or a Shabbat afternoon, and the Rabbi can help you choose. Read the [full timeline](/learn/bar-bat-mitzvah-timeline) to plan backward from the date.
 
 ## Common questions
 

@@ -20,7 +20,7 @@ The Talmud (Taanit 7a) gives two images:
 - **Iron sharpens iron.** Rabbi Hama ben Hanina teaches, based on Proverbs 27:17, that two scholars sharpen each other's minds.
 - **Fire.** Rabbah bar bar Hanah teaches, based on Jeremiah 23:29 where the Torah is compared to fire, that just as fire does not ignite by itself, the words of Torah do not endure with someone who studies alone.
 
-The article closes with King Solomon's teaching in Ecclesiastes 4:9 that two are better than one.
+Finally, King Solomon teaches in Ecclesiastes 4:9 that two are better than one.
 
 ## What the author found in her own learning
 
@@ -40,7 +40,7 @@ You can ask for help at your local synagogue or Chabad house. Chabad of Lamorind
 ## Common questions
 
 ### What is chavruta?
-Chavruta is a way of learning Torah in pairs, reading and discussing a text together aloud. It is called the ideal method according to most modern authorities.
+Chavruta is a way of learning Torah in pairs, reading and discussing a text together aloud. Most modern authorities consider it the ideal method.
 
 ### Why do Jews study Torah with a partner?
 The Talmud teaches that two scholars sharpen each other like iron, and that Torah words, like fire, do not endure with someone who studies alone.

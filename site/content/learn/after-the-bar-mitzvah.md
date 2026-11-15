@@ -5,13 +5,13 @@ category: Life cycle
 related: jewish-teens-in-lamorinda, bar-mitzvah, bat-mitzvah, girls-lighting-shabbat-candles, starting-tefillin-before-bar-mitzvah
 local: Keep the connection going after the celebration. Call Rabbi Labkowski at 925-384-7242 or see /programs/kids-and-teens.
 ---
-After a Bar or Bat Mitzvah, a Jewish teen is responsible for keeping the mitzvot: a boy counts toward a minyan and wears tefillin on weekday mornings, a girl lights Shabbat candles and takes on her own mitzvot, and both are accountable for Shabbat, fasting and their daily choices. Jewish tradition stresses that this is the start of an active Jewish life, not a graduation from it.
+After a Bar or Bat Mitzvah, a Jewish teen is responsible for keeping the mitzvot: a boy counts toward a minyan and wears tefillin on weekday mornings, a girl lights Shabbat candles and takes on her own mitzvot, and both are accountable for Shabbat, fasting and their daily choices. This is the start of an active Jewish life, not a graduation from it.
 
 ## What actually changed
 
 The change happened on the Hebrew birthday, whether or not there was a party. From that day, the teen is a Jewish adult in religious terms: responsible for mitzvot and for his or her own choices. The earlier years of mitzvot were preparation. Read [Bar Mitzvah](/learn/bar-mitzvah) and [Bat Mitzvah](/learn/bat-mitzvah) for the meaning of the day.
 
-Jewish teaching notes that, by the letter of the law, a boy does not have to repent for things done before he became Bar Mitzvah, but it is proper for him to take on some form of teshuvah (return and improvement) for youthful mistakes. For most families this is a quiet good resolution rather than anything dramatic.
+By the letter of the law, a boy does not have to repent for things done before he became Bar Mitzvah, but it is proper for him to take on some form of teshuvah (return and improvement) for youthful mistakes. For most families this is a quiet good resolution rather than anything dramatic.
 
 ## For a boy
 
@@ -22,14 +22,14 @@ Jewish teaching notes that, by the letter of the law, a boy does not have to rep
 
 ## For a girl
 
-- **Shabbat candles.** The tradition lists lighting Shabbat candles, separating challah and prayer among the mitzvot a girl takes on. Girls can begin lighting at about age three; one who has not may start on the Shabbat closest to her Bat Mitzvah. See [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles) and [Shabbat candles](/learn/shabbat-candles).
+- **Shabbat candles.** Lighting Shabbat candles, separating challah and prayer are among the mitzvot a girl takes on. Girls can begin lighting at about age three; one who has not may start on the Shabbat closest to her Bat Mitzvah. See [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles) and [Shabbat candles](/learn/shabbat-candles).
 - **A personal mitzvah** such as daily prayer, charity or acts of kindness.
 - **Learning** why the mitzvot matter. See [Bat Mitzvah](/learn/bat-mitzvah).
 
 ## For both
 
 - **Shabbat and kosher.** Keeping [Shabbat](/learn/shabbat) and [kosher](/learn/kosher-kitchen) are now the teen's own mitzvot, not only the parents'. Ask the Rabbi how to take them on in a way that fits your family.
-- **Fasting.** Children are gradually trained to fast, and the Jewish tradition says the stricter view is for them to complete the Yom Kippur fast in the years before. Health always comes first: a young person who cannot fast safely should not. After Bar or Bat Mitzvah, the full fasts apply, with the usual health exceptions. Ask the Rabbi about your child, and see [Yom Kippur fast](/learn/yom-kippur-fast) and [fast days](/learn/fast-days).
+- **Fasting.** Children are gradually trained to fast, and the stricter view is for them to complete the Yom Kippur fast in the years before. Health always comes first: a young person who cannot fast safely should not. After Bar or Bat Mitzvah, the full fasts apply, with the usual health exceptions. Ask the Rabbi about your child, and see [Yom Kippur fast](/learn/yom-kippur-fast) and [fast days](/learn/fast-days).
 - **Tzedakah** that the teen gives on his or her own. See [tzedakah](/learn/tzedakah).
 
 ## Staying connected

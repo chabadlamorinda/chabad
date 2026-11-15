@@ -5,7 +5,7 @@ category: Mourning & remembrance
 related: jewish-funeral, planning-a-jewish-funeral-in-advance, israel-and-the-jewish-people, chevra-kadisha-and-tahara, halachic-will
 local: Thinking about burial in Israel for yourself or a loved one? Call Rabbi Labkowski at 925-384-7242 before any arrangements are made.
 ---
-Some Jews choose to be buried in the Land of Israel because of the sages' teachings, which are recorded in the sources, that those buried there will be the first to rise at the time of the resurrection, and that burial there atones for sins. It is arranged through a Jewish funeral home or burial society, and it should be discussed with a rabbi early.
+Some Jews choose to be buried in the Land of Israel because of the sages' teachings that those buried there will be the first to rise at the time of the resurrection, and that burial there atones for sins. It is arranged through a Jewish funeral home or burial society, and it should be discussed with a rabbi early.
 
 This guide explains the reasons and the basic questions. It is not a substitute for guidance for your own case.
 
@@ -22,11 +22,11 @@ These teachings speak of a special merit of the Land. They take nothing away fro
 
 ## The soil of Israel
 
-Jewish tradition describes a custom of the Chevra Kadisha: they sprinkle earth from the Land of Israel into the grave when a burial takes place. See [the Chevra Kadisha and tahara](/learn/chevra-kadisha-and-tahara).
+The Chevra Kadisha has a custom: they sprinkle earth from the Land of Israel into the grave when a burial takes place. See [the Chevra Kadisha and tahara](/learn/chevra-kadisha-and-tahara).
 
 ## Burial in Israel in practice
 
-The tradition notes several points about practical arrangements:
+Some points about practical arrangements:
 
 - **Plan ahead.** Buying a burial plot in advance is customary. If that was not done, the family should buy one before the burial.
 - **Moving a body.** A body may be moved to another city for burial in Israel if the family wishes, or if the person asked for it.
@@ -50,13 +50,13 @@ The sages teach that those buried in the Land will be the first to rise at the r
 Yes. A body may be moved to Israel if the family wishes or the person asked for it. Speak with a rabbi and a Jewish funeral home early.
 
 ### What is the soil of Israel in a Jewish burial?
-Jewish tradition says the Chevra Kadisha sprinkles earth from the Land of Israel into the grave at a burial.
+The Chevra Kadisha sprinkles earth from the Land of Israel into the grave at a burial.
 
 ### Is burial in Israel required?
 No. It is a special merit that some choose. Most Jewish families bury their loved ones in a Jewish cemetery near home, which is a full and proper Jewish burial. Ask the Rabbi about your own wishes.
 
 ### Should I buy a burial plot in advance?
-The tradition says that buying a plot in advance is customary.
+Buying a plot in advance is customary.
 
 ### Can a body buried abroad be moved to Israel later?
 The family may re-inter it in Israel, but any such move should be done in consultation with an expert rabbi.

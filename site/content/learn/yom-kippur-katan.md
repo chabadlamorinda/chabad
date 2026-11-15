@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: rosh-chodesh, fasting-on-your-wedding-day, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
 local: Want to start a monthly habit of reflection? Call Rabbi Labkowski at 925-384-7242, or see /programs/adult-education.
 ---
-Yom Kippur Katan (יוֹם כִּפּוּר קָטָן), the "Minor Yom Kippur," is the day before Rosh Chodesh, the new month. According to Jewish tradition, it recalls the sin offering brought in the Temple on Rosh Chodesh, and the most pious observe it with extra prayers, fasting and charity.
+Yom Kippur Katan (יוֹם כִּפּוּר קָטָן), the "Minor Yom Kippur," is the day before Rosh Chodesh, the new month. It recalls the sin offering brought in the Temple on Rosh Chodesh, and the most pious observe it with extra prayers, fasting and charity.
 
 Once a month it gives anyone, in Lafayette, Moraga, Orinda or anywhere, a chance to pause, take stock and start the new month fresh. You do not have to fast to benefit from it.
 

@@ -20,7 +20,7 @@ Rashi, the classic commentator, explains why Jonah fled: he feared that if the p
 
 ## Why we read it on Yom Kippur
 
-Jewish tradition gives two main reasons.
+There are two main reasons.
 
 - **You cannot escape accountability.** Jonah tried to flee from G-d and could not. We also cannot escape responsibility for what we have done, and Yom Kippur is the day we face it honestly.
 - **Repentance brings mercy.** G-d had decreed Nineveh's destruction, and yet when its people truly changed, He spared them. No matter what a person's past, [teshuvah](/learn/teshuvah) is available.

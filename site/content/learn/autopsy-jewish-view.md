@@ -11,24 +11,24 @@ If you are facing this question now, please stop and call the Rabbi at 925-384-7
 
 ## Why Judaism protects the body after death
 
-The Torah teaches that every person is created in the image of G-d. According to Jewish law, this holiness does not end when the soul departs: "One may not do violence to the human form even when the breath of life has expired." The body is laid to rest tenderly and lovingly, as a final act of respect. Chabad teaching explains that the soul still feels a connection to the body in the first days after death, which is why tradition treats it with such care. For the full picture of the days after a death, see [the Jewish funeral](/learn/jewish-funeral) and [the Chevra Kadisha and tahara](/learn/chevra-kadisha-and-tahara).
+The Torah teaches that every person is created in the image of G-d. This holiness does not end when the soul departs: "One may not do violence to the human form even when the breath of life has expired." The body is laid to rest tenderly and lovingly, as a final act of respect. Chabad teaching explains that the soul still feels a connection to the body in the first days after death, which is why tradition treats it with such care. For the full picture of the days after a death, see [the Jewish funeral](/learn/jewish-funeral) and [the Chevra Kadisha and tahara](/learn/chevra-kadisha-and-tahara).
 
 ## When an autopsy may be required or permitted
 
-Jewish law explains that there are exceptions to the general rule. Some examples it lists:
+There are exceptions to the general rule. Some examples:
 
 - **Required by the authorities.** When a death falls under government jurisdiction (for example a suspected crime or an accident), the medical examiner decides. This is the law of the land, and a rabbi can help the family with what follows.
 - **Medical need of the living.** For instance, a hereditary disease where the findings could protect relatives, or when another known person has the same deadly illness and a qualified medical authority believes an autopsy could yield vital information.
 - **A request by the person who died.** Rabbis differ on this, and it must be judged individually.
 
-These are examples, not a checklist you can apply yourself. Whether a particular case qualifies is a question for a rabbi who understands both Jewish law and the medical facts. The halacha adds that the decision should not be made by the doctor alone, however close the doctor is to the family.
+These are examples, not a checklist you can apply yourself. Whether a particular case qualifies is a question for a rabbi who understands both Jewish law and the medical facts. The decision should not be made by the doctor alone, however close the doctor is to the family.
 
 ## What to do, step by step
 
 1. **Call the Rabbi first.** Phone 925-384-7242, or visit [talk to the Rabbi](/help/talk-to-the-rabbi). Say that a death has occurred and an autopsy has been mentioned.
 2. **Do not sign a consent form yet.** Consent is usually given by the person legally responsible for burial, often a spouse or child. Take the time to speak with the Rabbi first.
 3. **Ask what is legally required.** We make no legal claims here. If the authorities say an autopsy is required, tell the Rabbi, who can guide you on how to protect the dignity of the body.
-4. **If an autopsy is performed,** Jewish law notes that any removed part of the body should be returned so it can be buried with the person. The Chevra Kadisha (the holy burial society) will explain how.
+4. **If an autopsy is performed,** any removed part of the body should be returned so it can be buried with the person. The Chevra Kadisha (the holy burial society) will explain how.
 5. **Let us carry the practical load.** Burial is meant to take place quickly, and the Rabbi can help with the funeral, [aninut](/learn/aninut) (the time between death and burial) and [shiva](/learn/shiva).
 
 ## A gentle word

@@ -9,7 +9,7 @@ Amen (אָמֵן) is a Hebrew word that means "true" or "so be it," and Jews say
 
 ## What Amen means
 
-The Talmud (Shavuot 36a), as Jewish tradition explains, gives three intentions in the word: an oath, accepting a statement, and confirming that it is faithful and true. After a blessing of praise, Amen says, "That is true." After a request, Amen says, "May it be affirmed and speedily fulfilled." Ideally, we have both thoughts in mind together.
+The Talmud (Shavuot 36a) gives three intentions in the word: an oath, accepting a statement, and confirming that it is faithful and true. After a blessing of praise, Amen says, "That is true." After a request, Amen says, "May it be affirmed and speedily fulfilled." Ideally, we have both thoughts in mind together.
 
 The letters of Amen share a root with emunah, belief or trust. Saying it is an act of faith, in one word.
 
@@ -56,10 +56,10 @@ Saying Amen means "I believe this is true" and joins you to the prayer. The Talm
 It is read as an acronym for El Melech Ne'eman, "G-d, faithful King." The Talmud teaches drawing out the Amen for as long as it takes to say those words.
 
 ### Do you say Amen to your own blessing?
-Amen is a response to what you hear from someone else. Whether to say it after your own blessing is a question for the Rabbi, since the sources we consulted do not address it.
+Amen is a response to what you hear from someone else. Whether to say it after your own blessing is a question for the Rabbi.
 
 ### What is "Amen, yehei shmei rabbah"?
-It is the congregation's answer in the Kaddish: "Amen, may His great Name be blessed." The tradition notes that answering it with focus is connected with canceling harsh decrees.
+It is the congregation's answer in the Kaddish: "Amen, may His great Name be blessed." Answering it with focus is connected with canceling harsh decrees.
 
 ### Can children say Amen?
 Yes. Children can learn to answer Amen very young, and it is a lovely way to include them in blessings.

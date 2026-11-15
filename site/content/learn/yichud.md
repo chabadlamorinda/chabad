@@ -9,25 +9,25 @@ Yichud (יחוד, "togetherness" or "seclusion") is the few private minutes that
 
 ## What is yichud?
 
-When the seven blessings under the chuppah are finished and the glass is broken, the couple does not go straight to the party. They are brought to a private room, the "yichud room." Jewish tradition explains that this is the final act of the chuppah. In Jewish law it is not just a nice custom: it completes the marriage and must be witnessed.
+When the seven blessings under the chuppah are finished and the glass is broken, the couple does not go straight to the party. They are brought to a private room, the "yichud room." This is the final act of the chuppah. In Jewish law it is not just a nice custom: it completes the marriage and must be witnessed.
 
 It is the couple's first time together in private as husband and wife. Moving the bride into her husband's home is a sign of marriage, and yichud completes that picture.
 
 ## Who are the witnesses?
 
-Two qualified witnesses, specifically appointed for this role, walk the couple to the room, check that nobody else is inside, and see that the door is closed and locked. They then wait outside during the time of seclusion. Jewish law says they should be Torah-observant adult Jewish men who are not related to the bride or groom or to each other. The same two witnesses may serve for the ring and for yichud, though families often honor different people with each role.
+Two qualified witnesses, specifically appointed for this role, walk the couple to the room, check that nobody else is inside, and see that the door is closed and locked. They then wait outside during the time of seclusion. They should be Torah-observant adult Jewish men who are not related to the bride or groom or to each other. The same two witnesses may serve for the ring and for yichud, though families often honor different people with each role.
 
 ## How long does yichud last?
 
-One source gives about eight or nine minutes, and cites the opinion of the Taz that the couple should walk hand in hand from the chuppah and stay together for about ten minutes. Your rabbi will tell you what is done in your wedding.
+Some give about eight or nine minutes; the Taz holds that the couple should walk hand in hand from the chuppah and stay together for about ten minutes. Your rabbi will tell you what is done in your wedding.
 
 ## What happens in the yichud room?
 
 - **The first meal.** Brides and grooms customarily fast on their wedding day (see [Fasting on your wedding day](/learn/fasting-on-your-wedding-day)), and the yichud room is where they break the fast. The room should be prepared in advance, with light refreshments arranged with the caterer.
-- **Quiet.** Amid photographers, relatives and guests, the couple needs a moment alone. Jewish tradition argues that the couple deserves this time and that denying it is wrong.
+- **Quiet.** Amid photographers, relatives and guests, the couple needs a moment alone. The couple deserves this time, and denying it to them is wrong.
 - **Joy and gratitude.** After a day of prayer and nerves, this is a moment to breathe and share the day together.
 
-Some couples also place a silver spoon on the threshold of the room. Jewish law lists this as an optional custom.
+Some couples also place a silver spoon on the threshold of the room. This is an optional custom.
 
 After yichud, the couple enters the wedding hall to music, singing and dancing. If you are a guest, see [Attending a Jewish wedding](/learn/attending-a-jewish-wedding) for what to expect.
 
@@ -39,7 +39,7 @@ The yichud room is a private room where the bride and groom spend a few minutes 
 
 ### How long is the yichud?
 
-The tradition mentions about eight to ten minutes. Ask your rabbi what is customary at your wedding.
+About eight to ten minutes. Ask your rabbi what is customary at your wedding.
 
 ### Why do bride and groom eat in the yichud room?
 
@@ -51,11 +51,11 @@ Two appointed witnesses wait outside after making sure the room is empty and the
 
 ### Is yichud required?
 
-Yes. According to Jewish law it is a firm requirement that is attested by witnesses. Your rabbi will make sure it is arranged properly.
+Yes. It is a firm requirement of Jewish law, attested by witnesses. Your rabbi will make sure it is arranged properly.
 
 ### What if our photographer wants us right away?
 
-Jewish tradition stresses that the couple deserves their private time. Tell your photographer in advance, and let the Rabbi help you plan the schedule.
+The couple deserves their private time. Tell your photographer in advance, and let the Rabbi help you plan the schedule.
 
 ## Take the next step
 

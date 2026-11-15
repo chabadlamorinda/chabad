@@ -1,15 +1,15 @@
 ---
 title: Maaser for Business Owners and Investors: Profit, Stock, Windfalls
-description: How Jewish tithing works for business profit, investments, stock and a sudden windfall, as Jewish law explains it, and when to ask the Rabbi.
+description: How Jewish tithing works for business profit, investments, stock and a sudden windfall, and when to ask the Rabbi.
 category: Jewish ideas
 related: what-maaser-can-and-cannot-pay-for, how-to-calculate-maaser, business-ethics, parnassah-work-and-livelihood, maaser
 local: Own a business or investments in Lamorinda? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi to work out your maaser.
 ---
-For a business owner, maaser is a tenth of the profit that remains after business expenses and taxes. For investments, Jewish law says maaser is not taken until the stock or asset is sold and the profit is actually received. These are the basics; every business is different, so ask the Rabbi about yours.
+For a business owner, maaser is a tenth of the profit that remains after business expenses and taxes. For investments, maaser is not taken until the stock or asset is sold and the profit is actually received. These are the basics; every business is different, so ask the Rabbi about yours.
 
 ## Business profit
 
-Halacha explains that maaser is taken from "the profits remaining once business expenses and taxes have been paid." The business expenses that come off first include:
+Maaser is taken from the profits remaining once business expenses and taxes have been paid. The business expenses that come off first include:
 
 - employee salaries,
 - business taxes and insurance,
@@ -18,13 +18,13 @@ Halacha explains that maaser is taken from "the profits remaining once business 
 
 Your personal living costs, such as your family's rent or food, are generally not deducted. That is the difference between a business expense and a personal one, and it is where questions most often come up. A mixed expense (a car used for both) is exactly the kind of case to bring to the Rabbi.
 
-If you are self-employed and do not yet know what you will owe in taxes, the law says you can calculate once a year when taxes are final, or estimate the taxes and adjust later. Your tax advisor is the right person for the tax side. See also [Business Ethics in Jewish Law](/learn/business-ethics) and [Parnassah: Work and Livelihood](/learn/parnassah-work-and-livelihood).
+If you are self-employed and do not yet know what you will owe in taxes, you can calculate once a year when taxes are final, or estimate the taxes and adjust later. Your tax advisor is the right person for the tax side. See also [Business Ethics in Jewish Law](/learn/business-ethics) and [Parnassah: Work and Livelihood](/learn/parnassah-work-and-livelihood).
 
 ## Investments and stock
 
-Jewish law says that when an investment goes up in value, maaser is not taken on the paper gain. It is taken when you sell and receive the profit. Then the profit, not the original amount you invested, is the income.
+When an investment goes up in value, maaser is not taken on the paper gain. It is taken when you sell and receive the profit. Then the profit, not the original amount you invested, is the income.
 
-Halacha also gives the example of a home sale: maaser applies to the net profit after the cost of buying, renovating and maintaining, and the part of the gain that comes only from inflation may be estimated and left out. Property taxes are not deducted, while mortgage interest is. Since details matter, ask the Rabbi if you sold property.
+Another example is a home sale: maaser applies to the net profit after the cost of buying, renovating and maintaining, and the part of the gain that comes only from inflation may be estimated and left out. Property taxes are not deducted, while mortgage interest is. Since details matter, ask the Rabbi if you sold property.
 
 Loans are not income, so borrowed money does not carry maaser.
 
@@ -34,7 +34,7 @@ The sources we reviewed do not say how maaser applies to retirement accounts, su
 
 ## A one-time windfall
 
-The law says maaser applies to all income, including gifts, inheritance and even money found with no identifiable owner, so a sudden windfall is generally included.
+Maaser applies to all income, including gifts, inheritance and even money found with no identifiable owner, so a sudden windfall is generally included.
 
 One exception: money given to you for a specific purpose, such as rent or tuition, is not counted, as explained in [How to Calculate Maaser](/learn/how-to-calculate-maaser).
 
@@ -42,21 +42,21 @@ If the windfall is large, it may be a good time to think about how to give meani
 
 ## When to set it aside
 
-Jewish law says the ideal is to separate maaser when income arrives. For a business that can mean setting aside a tenth of profit each time you calculate it. It also says you may calculate at any point in the year. If you are unsure of the amounts, a yearly review is a good habit; see [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).
+The ideal is to separate maaser when income arrives. For a business that can mean setting aside a tenth of profit each time you calculate it. It also says you may calculate at any point in the year. If you are unsure of the amounts, a yearly review is a good habit; see [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).
 
 ## Common questions
 
 ### Do business owners give maaser on gross sales or profit?
-On profit. Halacha says maaser is taken after business expenses and taxes. For your business details, ask the Rabbi.
+On profit. Maaser is taken after business expenses and taxes. For your business details, ask the Rabbi.
 
 ### Do I give maaser on stock that went up but I have not sold?
-The law says maaser is not taken until you sell and receive the profit.
+Maaser is not taken until you sell and receive the profit.
 
 ### Does maaser apply to a retirement account?
 We did not find this settled in the sources we reviewed, so please ask the Rabbi and your tax advisor.
 
 ### Do I give maaser on an inheritance or a windfall?
-Jewish law says maaser applies to inheritance and other windfalls, unless the money was given for a specific purpose.
+Maaser applies to inheritance and other windfalls, unless the money was given for a specific purpose.
 
 ### Can my business give maaser directly?
 That is a question for the Rabbi, because it depends on how the business is set up and whose money is being given.

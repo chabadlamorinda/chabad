@@ -13,7 +13,7 @@ Chanukah's foods are fried in oil, a custom that recalls the miracle of the oil 
 
 ## Choosing the oil
 
-Traditional Chanukah recipes call for vegetable or canola oil for frying. Use an oil that stays stable at frying heat, such as vegetable or canola oil. Extra-virgin olive oil is wonderful on salads and on the menorah, but it starts to smoke at lower heat, so many cooks use another oil for deep frying. If anyone in your home has a nut allergy, avoid peanut oil. Look for a kosher symbol on the bottle ([kosher symbols](/learn/kosher-symbols)). More on the meaning of oil: [olive oil in Jewish tradition](/learn/olive-oil-in-jewish-tradition).
+Many Chanukah recipes call for vegetable or canola oil for frying. Use an oil that stays stable at frying heat, such as vegetable or canola oil. Extra-virgin olive oil is wonderful on salads and on the menorah, but it starts to smoke at lower heat, so many cooks use another oil for deep frying. If anyone in your home has a nut allergy, avoid peanut oil. Look for a kosher symbol on the bottle ([kosher symbols](/learn/kosher-symbols)). More on the meaning of oil: [olive oil in Jewish tradition](/learn/olive-oil-in-jewish-tradition).
 
 ## Before you start
 
@@ -25,7 +25,7 @@ Traditional Chanukah recipes call for vegetable or canola oil for frying. Use an
 
 ## While you fry
 
-- **Watch the heat.** Heat oil gently until it shimmers or reaches the temperature in your recipe. Split pea latkes call for about 365°F. A kitchen thermometer helps. If the oil smokes, turn it down.
+- **Watch the heat.** Heat oil gently until it shimmers or reaches the temperature in your recipe. A split pea latke recipe calls for about 365°F. A kitchen thermometer helps. If the oil smokes, turn it down.
 - **Lower food in carefully,** placing it away from you.
 - **Do not crowd the pan.** This also gives you crisper latkes.
 - **Stay with the pan.** Do not walk away while oil is hot.
@@ -57,7 +57,7 @@ A burning menorah also needs a safe place: a flat, non-flammable surface, away f
 ## Common questions
 
 ### What oil is best for frying latkes?
-A neutral oil with a high smoke point, such as vegetable or canola oil, which traditional recipes use. Check for a kosher symbol.
+A neutral oil with a high smoke point, such as vegetable or canola oil, which many recipes use. Check for a kosher symbol.
 
 ### How do I put out a grease fire?
 Cover the pan with a lid, turn off the heat, leave it covered until cool, and never use water. Call 911 if it spreads.

@@ -1,6 +1,6 @@
 ---
 title: Parshat Vayikra: The Rebbe's Teaching, a Story and Ideas for the Shabbat Table
-description: Parshat Vayikra (Leviticus 1:1-5:26): the offering "of you" and drawing close to G-d today. The Rebbe's teaching, a Chassidic story, table ideas and an essay.
+description: Parshat Vayikra (Leviticus 1:1-5:26): the offering of you and drawing close to G-d. The Rebbe's teaching, a Chassidic story, table ideas, an essay.
 related: book-of-leviticus, prayer, teshuvah, the-poor-mans-offering, tanya-on-prayer
 ---
 ## The Rebbe's teaching
@@ -66,7 +66,7 @@ You are warmly invited to a Shabbat at Chabad of Lamorinda in Lafayette (call 92
 Parshat Vayikra is about the offerings brought in the Sanctuary: the burnt offering, the grain offering, the peace offering, and offerings for sin and guilt. It begins the book of Leviticus. See [Leviticus](/learn/book-of-leviticus).
 
 ### What does the Rebbe teach about Parshat Vayikra?
-The Rebbe teaches that every Jew has an inner Sanctuary and that the offering "of you" means offering ourselves and refining our physical drives in G-d's service. Past failings can be transformed by love and need not paralyze us.
+The Rebbe teaches that every Jew has an inner Sanctuary and that the offering of you means offering ourselves and refining our physical drives in G-d's service. Past failings can be transformed by love and need not paralyze us.
 
 ### What is the main lesson of Parshat Vayikra?
 The main lesson is that G-d wants us to come close and to offer our true selves, not only things. [Prayer](/learn/prayer) is today's way of drawing near, and [teshuvah](/learn/teshuvah) is how we return.

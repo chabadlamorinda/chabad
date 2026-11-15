@@ -13,11 +13,11 @@ Abraham is called Ha'Ivri, "the Hebrew." Literally, the word means someone from 
 
 ## Israelite (ישראל, Yisrael)
 
-Jacob, Abraham's grandson, was given the name Israel after wrestling with an angel at the Jabbok River. Tradition explains that the name can mean "prevailer over mighty beings," "prince of G-d" or "upright one of G-d." His twelve sons became the twelve tribes, and once they formed a nation, the people were called the Children of Israel. Read about [Jacob](/learn/jacob-our-father) and the [twelve tribes](/learn/twelve-tribes).
+Jacob, Abraham's grandson, was given the name Israel after wrestling with an angel at the Jabbok River. The name can mean "prevailer over mighty beings," "prince of G-d" or "upright one of G-d." His twelve sons became the twelve tribes, and once they formed a nation, the people were called the Children of Israel. Read about [Jacob](/learn/jacob-our-father) and the [twelve tribes](/learn/twelve-tribes).
 
 ## Jew (יהודי, Yehudi)
 
-The word comes from Judah (Yehudah), Jacob's fourth son. At first it may have meant only members of the tribe of Judah. After the kingdom split, the southern Kingdom of Judah survived, and after the ten northern tribes were exiled and lost, "Yehudi" came to mean every Israelite, whatever the tribe. According to the sources, the name became widespread during the Persian exile.
+The word comes from Judah (Yehudah), Jacob's fourth son. At first it may have meant only members of the tribe of Judah. After the kingdom split, the southern Kingdom of Judah survived, and after the ten northern tribes were exiled and lost, "Yehudi" came to mean every Israelite, whatever the tribe. The name became widespread during the Persian exile.
 
 There is a deeper meaning too. Yehudi is linked to the word hoda'ah, "acknowledgment" or "thanksgiving": a Jew is one who acknowledges G-d. The Talmud says that Mordechai, from the tribe of Benjamin, was called a Yehudi because he rejected idolatry.
 

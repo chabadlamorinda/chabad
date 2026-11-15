@@ -5,7 +5,7 @@ category: Kosher
 related: kosher-symbols, keeping-kosher-with-family, kosher-kitchen, starting-jewish-observance, kosher-shopping-at-the-supermarket
 local: Ready for your first step? Call Rabbi Labkowski at 925-384-7242, or see Bay Kosher at /programs/bay-kosher.
 ---
-Yes, you can keep kosher one step at a time. Jewish tradition teaches that taking small steps is a sound approach, not a compromise, and gives a simple plan in three stages: kosher meat and no mixing of meat and dairy, then kosher products and separate dishes, then a fully kosher kitchen with a rabbi's help.
+Yes, you can keep kosher one step at a time. Taking small steps is a sound approach, not a compromise. A simple plan has three stages: kosher meat and no mixing of meat and dairy, then kosher products and separate dishes, then a fully kosher kitchen with a rabbi's help.
 
 ## Is gradual growth a compromise?
 
@@ -42,10 +42,10 @@ See also [keeping kosher with family](/learn/keeping-kosher-with-family).
 Start with kosher meat and no mixing of meat and dairy. Then buy only certified products and separate your dishes, then ask a rabbi to help with your kitchen.
 
 ### Is it OK to keep kosher gradually?
-Yes. Jewish tradition says that small steps are not a compromise but the way to build something lasting.
+Yes. Small steps are not a compromise but the way to build something lasting.
 
 ### Is avoiding pork and shellfish enough?
-It is a start, but Jewish sources say that avoiding a few non-kosher foods does not by itself make a diet kosher.
+It is a start, but avoiding a few non-kosher foods does not by itself make a diet kosher.
 
 ### What if my spouse does not want a kosher kitchen?
 Keep your own practices peacefully, appreciate your spouse, and be patient. Call the Rabbi if you would like to talk it over.

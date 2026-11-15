@@ -1,6 +1,6 @@
 ---
 title: Chanukah Explained for Friends, Neighbors, Teachers and Coworkers
-description: Chanukah in two minutes for friends, neighbors, teachers and coworkers: what it is, how to greet someone, kind gifts and how to include a Jewish colleague.
+description: Chanukah in two minutes for friends, neighbors, teachers and coworkers: what it is, how to greet, kind gifts and how to include a Jewish colleague.
 category: Shabbat & holidays
 related: holiday-greetings, what-to-write-in-a-chanukah-card, chanukah-food-gifts-for-neighbors, presenting-a-jewish-holiday-in-class, chanukah-at-work-and-college, chanukah-story, chanukah-menorah
 local: Invite a friend to Chanukah with us: call Rabbi Labkowski at 925-384-7242 or see /events.
@@ -19,7 +19,7 @@ The most common greeting is simply "Happy Chanukah" (or "Happy Hanukkah"), and i
 
 ## Kind ideas for gifts and treats
 
-Giving a gift is never required, and Jewish tradition explains that gifts are not a mitzvah of Chanukah; the long-standing custom is gelt, a little money, mostly for children. If you would like to do something kind:
+Giving a gift is never required, and gifts are not a mitzvah of Chanukah; the long-standing custom is gelt, a little money, mostly for children. If you would like to do something kind:
 
 - **A kosher-certified treat,** such as a sealed box of chocolates or cookies with a kosher symbol. See [kosher symbols](/learn/kosher-symbols). Asking your friend what works for them is always welcome.
 - **A card** with a warm note about the holiday.

@@ -16,7 +16,7 @@ To plan a Jewish wedding, you need a rabbi, a date, a ketubah, two witnesses, a 
 ## 2. Prepare yourselves
 
 - **Learning.** Many couples take a few classes: [kallah classes](/learn/kallah-classes) for the bride and chosson classes for the groom.
-- **Mikvah.** The bride immerses in a [mikvah](/learn/mikvah) before the wedding; the Rebbetzin can help arrange this privately. Jewish tradition adds that it is proper for the groom to immerse on the wedding day.
+- **Mikvah.** The bride immerses in a [mikvah](/learn/mikvah) before the wedding; the Rebbetzin can help arrange this privately. It is also proper for the groom to immerse on the wedding day.
 - **Questions of Jewish status.** If either of you is unsure of Jewish status or has questions about paperwork, speak privately with the Rabbi.
 
 ## 3. The ceremony checklist

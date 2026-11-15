@@ -1,6 +1,6 @@
 ---
 title: Parshat Kedoshim: The Rebbe's Teaching, a Story and Ideas for the Shabbat Table
-description: Parshat Kedoshim (Leviticus 19-20): the Rebbe on loving every Jew, a story about honest scales and ideas for your Shabbat table in Lafayette, Moraga and Orinda.
+description: Parshat Kedoshim (Leviticus 19-20): the Rebbe on loving every Jew, a story about honest scales and ideas for your Shabbat table in Lamorinda.
 related: ahavat-yisrael, tanya-chapter-32-love-every-jew, honesty-and-truth, business-ethics, kedushah
 ---
 ## The Rebbe's teaching

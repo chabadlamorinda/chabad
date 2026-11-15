@@ -25,7 +25,7 @@ For other questions about how Judaism sees the Jewish people and the rest of hum
 
 ## What it means in daily life
 
-Chassidic teaching on the Tanya says not to blame yourself for an angry feeling or a wrong desire: what matters is not to act on it, not to speak in anger and not to dwell on it on purpose. When you stumble, it says, acknowledge it, express regret to G-d, resolve to continue and move on.
+Chassidic teaching on the Tanya says not to blame yourself for an angry feeling or a wrong desire: what matters is not to act on it, not to speak in anger and not to dwell on it on purpose. When you stumble, acknowledge it, express regret to G-d, resolve to continue and move on.
 
 Read this together with Chapter 1: the divine soul is a part of G-d, and the animal soul is real too. See [the two souls explained](/learn/the-two-souls-explained). For the wider Jewish view of self-worth, see [self-esteem](/learn/self-esteem-jewish-view) and [the soul](/learn/the-soul).
 

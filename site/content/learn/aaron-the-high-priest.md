@@ -9,7 +9,7 @@ Aaron (Aharon, אַהֲרֹן) was the older brother of Moses and Miriam, the fi
 
 ## Brother and partner of Moses
 
-When Moses was sent to free the Jewish people, Aaron went with him and spoke to Pharaoh as his partner. [Moses](/learn/moses) was the younger brother, and Jewish tradition highlights that Aaron accepted his brother's leadership with joy and without a trace of jealousy. The Torah says Aaron would rejoice in his heart when he saw Moses.
+When Moses was sent to free the Jewish people, Aaron went with him and spoke to Pharaoh as his partner. [Moses](/learn/moses) was the younger brother, yet Aaron accepted his brother's leadership with joy and without a trace of jealousy. The Torah says Aaron would rejoice in his heart when he saw Moses.
 
 ## The first High Priest
 

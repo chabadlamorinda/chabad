@@ -9,7 +9,7 @@ Birkat HaIlanot (בִּרְכַּת הָאִילָנוֹת) is the blessing on b
 
 ## What is the blessing on trees?
 
-It is a short blessing of gratitude for the beauty of creation. Jewish tradition teaches that the blessing is said once a year, over fruit-bearing trees that are in blossom, and that it is not said over a tree that has no fruit. The text, in transliteration: *Baruch atah Adonai, Eloheinu melech ha'olam, she'lo chisar ba'olamo davar, u'vara vo briyot tovot v'ilanot tovim, l'hanot bahem bnei adam.*
+It is a short blessing of gratitude for the beauty of creation. The blessing is said once a year, over fruit-bearing trees that are in blossom, and it is not said over a tree that has no fruit. The text, in transliteration: *Baruch atah Adonai, Eloheinu melech ha'olam, she'lo chisar ba'olamo davar, u'vara vo briyot tovot v'ilanot tovim, l'hanot bahem bnei adam.*
 
 ## When do you say it?
 

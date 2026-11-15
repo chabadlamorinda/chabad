@@ -9,7 +9,7 @@ Around the Jewish world, Chanukah foods are almost all fried in oil: latkes in A
 
 ## One idea, many dishes
 
-Jewish tradition explains that Jews have eaten oily foods on Chanukah for at least a thousand years, and that the main dishes are potato latkes and fried doughnuts. Another custom, eating dairy, honors Yehudit (Judith). So every community took its own local ingredients and made them into a Chanukah food. See [Chanukah foods](/learn/chanukah-foods) for the reasons.
+Jews have eaten oily foods on Chanukah for at least a thousand years, and the main dishes are potato latkes and fried doughnuts. Another custom, eating dairy, honors Yehudit (Judith). So every community took its own local ingredients and made them into a Chanukah food. See [Chanukah foods](/learn/chanukah-foods) for the reasons.
 
 ## Israel: sufganiyot
 
@@ -17,15 +17,15 @@ Jelly-filled doughnuts, [sufganiyot](/learn/sufganiyot) (סופגניות), are 
 
 ## Ashkenazi homes: latkes
 
-The tradition describes potato latkes as the traditional fried food in Ashkenazi communities, served with applesauce or sour cream. Cheese latkes combine the two customs, oil and dairy. Potatoes came late to Europe, so earlier latkes were made with other ingredients (see [latkes](/learn/latkes)). For the difference between communities, see [Ashkenazi and Sephardi](/learn/ashkenazi-and-sephardi).
+Potato latkes are the traditional fried food in Ashkenazi communities, served with applesauce or sour cream. Cheese latkes combine the two customs, oil and dairy. Potatoes came late to Europe, so earlier latkes were made with other ingredients (see [latkes](/learn/latkes)). For the difference between communities, see [Ashkenazi and Sephardi](/learn/ashkenazi-and-sephardi).
 
 ## Sephardi and Mediterranean homes: bimuelos
 
-Among Chanukah foods are fried doughnuts called *bumuelos*, or bimuelos, among Chanukah foods. These are fried fritters, often sweet. Many Sephardi families have their own fried treat, and each has a local name and style. If you have one in your family, it is a custom worth keeping.
+Fried doughnuts called *bumuelos*, or bimuelos, are also among the Chanukah foods. These are fried fritters, often sweet. Many Sephardi families have their own fried treat, and each has a local name and style. If you have one in your family, it is a custom worth keeping.
 
 ## A new twist: a themed menu
 
-A Mexican-style Chanukah menu has with tortilla chips, salsa, fish cakes, cheese quesadillas and cheese and black bean chimichangas. This is not an old community custom. It is an invitation to keep the oil and dairy themes while trying something new, especially after several nights of latkes. It is a reminder that the holiday grows with the families who keep it.
+There is also a Mexican-style Chanukah menu, with tortilla chips, salsa, fish cakes, cheese quesadillas and cheese and black bean chimichangas. This is not an old community custom. It is an invitation to keep the oil and dairy themes while trying something new, especially after several nights of latkes. It is a reminder that the holiday grows with the families who keep it.
 
 ## Russian-speaking families
 

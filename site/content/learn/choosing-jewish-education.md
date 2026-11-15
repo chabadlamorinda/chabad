@@ -9,11 +9,11 @@ The best Jewish education for your child is the one that fits your family's time
 
 ## What Jewish education is for
 
-The Hebrew word is *chinuch* (חינוך), education. Jewish tradition explains that parents have a duty, from the rabbis, to teach children the mitzvahs as soon as each child is able to do them. The Torah places the duty of teaching Torah on the father, who may entrust it to a teacher or school, and the mother often does the most effective teaching. See [Chinuch](/learn/chinuch).
+The Hebrew word is *chinuch* (חינוך), education. Parents have a duty, from the rabbis, to teach children the mitzvahs as soon as each child is able to do them. The Torah places the duty of teaching Torah on the father, who may entrust it to a teacher or school, and the mother often does the most effective teaching. See [Chinuch](/learn/chinuch).
 
 Chassidic teaching also says the goal is for children to value each mitzvah for itself and for the closeness to G-d it brings, not just for rewards. That is a useful test for any program: will my child come away loving being Jewish?
 
-The tradition notes that this learning begins early: blessings and simple prayers around age three, and short Torah verses and the Shema as soon as a child can speak.
+This learning begins early: blessings and simple prayers around age three, and short Torah verses and the Shema as soon as a child can speak.
 
 ## The main formats
 
@@ -23,7 +23,7 @@ There is no single right answer. Think about these in turn:
 - **Weekly Hebrew School.** A few hours a week, usually on a Sunday. It builds Hebrew reading, holidays and traditions, and leads toward bar or bat mitzvah.
 - **Afterschool.** Jewish activities folded into the school week, with homework help and a meal.
 - **Preschool.** A first Jewish classroom, where songs, Shabbat and holidays are part of the day. See [choosing a Jewish preschool](/learn/choosing-a-jewish-preschool).
-- **Summer camp.** Informal, joyful learning. Jewish tradition calls camp especially valuable for children who do not attend a Jewish school during the year.
+- **Summer camp.** Informal, joyful learning. Camp is especially valuable for children who do not attend a Jewish school during the year.
 
 ## What Chabad of Lamorinda offers
 
@@ -67,4 +67,4 @@ Chabad of Lamorinda offers a Jewish preschool, a Sunday Hebrew School, CKids aft
 No. Every Jewish family in Lafayette, Moraga and Orinda is welcome, with no membership required.
 
 ### What age should Jewish learning begin?
-Early. Chassidic teaching describes blessings and simple prayers from around age three, and the Shema as soon as a child can speak.
+Early. Blessings and simple prayers begin around age three, and the Shema as soon as a child can speak.

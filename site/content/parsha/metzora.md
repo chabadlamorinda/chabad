@@ -1,6 +1,6 @@
 ---
 title: Parshat Metzora: The Rebbe's Teaching, a Story and Ideas for the Shabbat Table
-description: Parshat Metzora (Leviticus 14-15): the Rebbe on returning, a story about the power of words, and questions for your Shabbat table in Lafayette, Moraga and Orinda.
+description: Parshat Metzora (Leviticus 14-15): the Rebbe on returning, a story about the power of words, and questions for your Shabbat table in Lamorinda.
 related: lashon-hara, tanya-on-speech, teshuvah, ahavat-yisrael, tanya-on-forgiving-others
 ---
 ## The Rebbe's teaching

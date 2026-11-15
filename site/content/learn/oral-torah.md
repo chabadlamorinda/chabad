@@ -9,7 +9,7 @@ The Oral Torah (תּוֹרָה שֶׁבְּעַל פֶּה, Torah shebe'al peh) 
 
 ## What is the Oral Torah?
 
-In its narrow sense, "Torah" means the Five Books of Moses, the Written Torah. Jewish tradition explains that the Written Torah is often brief and open to more than one reading, and so it was given together with an oral explanation that supplies its full meaning. The Oral Torah includes the detailed instructions for carrying out the commandments, the rules of interpretation, and later laws and accepted customs.
+In its narrow sense, "Torah" means the Five Books of Moses, the Written Torah. The Written Torah is often brief and open to more than one reading, and so it was given together with an oral explanation that supplies its full meaning. The Oral Torah includes the detailed instructions for carrying out the commandments, the rules of interpretation, and later laws and accepted customs.
 
 Maimonides taught that the commandments given at Sinai came with their interpretation: the "Torah" is the Written Torah and the "mitzvah" is what we call the Oral Torah. See [the Torah](/learn/torah), [Tanach](/learn/tanach) and [Moses](/learn/moses).
 

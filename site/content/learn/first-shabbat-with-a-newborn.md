@@ -43,7 +43,7 @@ Yes. Keep the parts you can, such as candles and a simple meal, and ask the Rabb
 When health is involved, yes. For the first days after childbirth, Shabbat may be set aside for the mother's needs. After that, ask the Rabbi about her situation.
 
 ### What do I do about bottles and formula on Shabbat?
-Prepare them before Shabbat. Jewish tradition has rules about warming, so read [babies and toddlers on Shabbat](/learn/babies-and-toddlers-on-shabbat) or ask the Rabbi.
+Prepare them before Shabbat. There are Shabbat rules about warming, so read [babies and toddlers on Shabbat](/learn/babies-and-toddlers-on-shabbat) or ask the Rabbi.
 
 ### Can I use a stroller on Shabbat?
 Only where there is an eruv. See [the eruv guide](/learn/eruv), and ask the Rabbi.

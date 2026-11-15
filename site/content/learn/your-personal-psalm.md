@@ -9,7 +9,7 @@ To find your personal psalm, add one to your age: the chapter of Tehillim (Psalm
 
 ## What is the "psalm for your age"?
 
-Tehillim has 150 chapters, and the custom is that each person has a chapter that corresponds to the year of life he or she is living. According to Jewish tradition, the number is your age plus one, "since the psalm corresponds to the year of life you are in."
+Tehillim has 150 chapters, and the custom is that each person has a chapter that corresponds to the year of life he or she is living. The number is your age plus one, "since the psalm corresponds to the year of life you are in."
 
 So during the year that begins on your birthday, you say that chapter. When your next birthday arrives, you move on to the next chapter. A child says Psalm 1 until the first birthday, Psalm 2 during the second year, and so on.
 
@@ -52,7 +52,7 @@ Some chapters are long, and Psalm 119 is very long. If your chapter is long, ask
 
 ## The daily and monthly Tehillim cycle
 
-Besides your personal psalm, there is a daily reading. Tehillim is divided into seven portions for a weekly cycle and thirty portions for a monthly cycle, and most Hebrew printings mark both. Jewish tradition recommends starting with the monthly cycle, which is about five chapters a day, and joining the many Jews who read the same portion that day. The Sixth Rebbe asked that the monthly portion be said after morning prayers, and the Rebbe urged everyone to say it daily on the monthly schedule. On a 29-day month, the last two portions are read together on the 29th.
+Besides your personal psalm, there is a daily reading. Tehillim is divided into seven portions for a weekly cycle and thirty portions for a monthly cycle, and most Hebrew printings mark both. It is good to start with the monthly cycle, which is about five chapters a day, and joining the many Jews who read the same portion that day. The Sixth Rebbe asked that the monthly portion be said after morning prayers, and the Rebbe urged everyone to say it daily on the monthly schedule. On a 29-day month, the last two portions are read together on the 29th.
 
 ## Common questions
 
@@ -63,7 +63,7 @@ Add one to your age. The chapter of Tehillim with that number is your personal p
 Psalm 14, because he or she is in the 14th year of life. A Bar or Bat Mitzvah child therefore begins a new chapter at the Hebrew birthday.
 
 ### Who started the custom of saying the psalm for your age?
-The tradition says it goes back at least to the Baal Shem Tov, who learned it from his teacher, according to a cited source.
+It goes back at least to the Baal Shem Tov, who learned it from his teacher, according to a cited source.
 
 ### Can I say my child's psalm?
 Yes. Parents often say it daily as a prayer for their child, and children are encouraged to say their own from time to time.

@@ -1,6 +1,6 @@
 ---
 title: Parshat Vayetzei: The Rebbe's Teaching, a Story and Ideas for Shabbat
-description: Parshat Vayetzei: the Rebbe on Jacob, work and Torah, a true story of a businessman's audience with the Rebbe, and Shabbat table ideas for working families.
+description: Parshat Vayetzei: the Rebbe on Jacob, work and Torah, a true story of a businessman and the Rebbe, and Shabbat table ideas for working families.
 related: tanya-at-work, parnassah-work-and-livelihood, jacob-our-father, business-ethics, shabbat-for-working-parents
 ---
 ## The Rebbe's teaching

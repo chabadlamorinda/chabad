@@ -1,6 +1,6 @@
 ---
 title: Parshat Behar: The Rebbe's Teaching, a Story and Ideas for the Shabbat Table
-description: Parshat Behar (Leviticus 25-26:2): the Rebbe on Shemittah and quieting the ego, a true story of faith in the Land of Israel and ideas for your Shabbat table.
+description: Parshat Behar (Leviticus 25-26:2): the Rebbe on Shemittah and quieting the ego, a true story of faith in Israel and ideas for your Shabbat table.
 related: shmita, shabbat, tanya-on-money, tzedakah, shabbat-for-working-parents
 ---
 ## The Rebbe's teaching

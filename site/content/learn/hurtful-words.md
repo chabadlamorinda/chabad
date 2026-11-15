@@ -22,7 +22,7 @@ Examples include:
 - **Misleading a buyer.** Do not send someone to a seller who has nothing for them.
 - **Pretending to shop.** Do not ask the price of an item when you have no intention of buying.
 
-Jewish tradition also mentions that the Torah is especially strict about words toward the vulnerable, such as a widow, orphan or convert, and says we must be sensitive and avoid anything that might shame, embarrass or hurt. It also states that threatening children with frightening things is not the Jewish way to raise them.
+The Torah is especially strict about words toward the vulnerable, such as a widow, orphan or convert, and we must be sensitive and avoid anything that might shame, embarrass or hurt. Threatening children with frightening things is not the Jewish way to raise them.
 
 ## Shaming in public
 
@@ -58,7 +58,7 @@ It is the Torah commandment not to hurt, shame or distress someone with words, b
 Lashon hara is speaking badly about someone to others. Ona'at devarim is hurting someone with words said to them.
 
 ### Is it really worse than stealing?
-The tradition says the Sages considered hurtful words a graver sin than cheating someone of money, since money can be returned but words cannot.
+The Sages considered hurtful words a graver sin than cheating someone of money, since money can be returned but words cannot.
 
 ### Is a joke allowed if no one means harm?
 Not if it hurts someone. Intent matters, but so does the effect on the person.

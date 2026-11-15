@@ -13,7 +13,7 @@ For someone who has lost a parent, it also marks the end of the twelve months of
 
 ## Finding the date
 
-The yahrzeit follows the Hebrew calendar, so it falls on a different secular date each year. Jewish tradition gives an example: a death on 4 Elul falls, a year later, on 4 Elul.
+The yahrzeit follows the Hebrew calendar, so it falls on a different secular date each year. For example, a death on 4 Elul falls, a year later, on 4 Elul.
 
 - **If burial was delayed,** the yahrzeit still follows the date of death. Some authorities use the burial date for the first year if burial was long delayed, so ask the Rabbi.
 - **If the death was at dusk,** the following day is considered the yahrzeit.
@@ -31,7 +31,7 @@ Light a memorial candle at nightfall on the evening before the yahrzeit, and let
 2. **Lead the services if you can,** or at least learn the short afternoon prayer, Minchah.
 3. **Learn Torah.** Mishnah is traditional, and its letters are the same as the word neshamah, "soul." If that is not possible, read a chapter of the Bible. See [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
 4. **Give tzedakah** in the person's memory: to a school, a synagogue, a medical cause or the poor.
-5. **Bring refreshments** to the morning service and say "l'chaim." Chassidic teaching says this is customary but should not become a full party.
+5. **Bring refreshments** to the morning service and say "l'chaim." This is customary, but it should not become a full party.
 
 On the Shabbat before the yahrzeit, a mourner traditionally receives an aliyah, and if possible chants the maftir.
 
@@ -41,7 +41,7 @@ Some mourners fast from dawn to nightfall. Once someone takes this on every year
 
 ## Visiting the grave
 
-An annual visit is traditional. Recite Psalms and the memorial prayer, in Hebrew or English, and study Mishnah at the graveside if you can. The tradition says it is better to say them yourself than to hire someone. Prayers are directed to G-d, not to the person who died. See [visiting a grave](/learn/visiting-a-grave). If the stone is not yet set, the [unveiling](/learn/unveiling) is customarily held within the first year.
+An annual visit is traditional. Recite Psalms and the memorial prayer, in Hebrew or English, and study Mishnah at the graveside if you can. It is better to say them yourself than to hire someone. Prayers are directed to G-d, not to the person who died. See [visiting a grave](/learn/visiting-a-grave). If the stone is not yet set, the [unveiling](/learn/unveiling) is customarily held within the first year.
 
 ## Common questions
 

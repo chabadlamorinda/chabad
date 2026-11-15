@@ -5,27 +5,27 @@ category: Jewish ideas
 related: who-is-a-jew, chosen-people, jews-hebrews-israelites, why-be-jewish, converting-to-judaism
 local: Whatever your background, you belong. Say hello at /welcome or call Rabbi Labkowski at 925-384-7242.
 ---
-The Jewish people are best described as a family bound by a covenant with G-d, made at Mount Sinai. That is the Chassidic answer to the question: Jewishness is not only a religion, not a race and not simply a nationality. A person is Jewish by being born to a Jewish mother or by converting according to Jewish law, and that identity lasts for life.
+The Jewish people are best described as a family bound by a covenant with G-d, made at Mount Sinai. That is the answer to the question: Jewishness is not only a religion, not a race and not simply a nationality. A person is Jewish by being born to a Jewish mother or by converting according to Jewish law, and that identity lasts for life.
 
 ## Why "religion" is not the whole answer
 
-Jewish tradition points out that Jews cannot be defined by religion alone, since many Jews are not observant. A Jew who does not believe in G-d is still a Jew. Once someone is Jewish, the identity is permanent. Jewish teaching even says that no one can revoke it.
+Jews cannot be defined by religion alone, since many Jews are not observant. A Jew who does not believe in G-d is still a Jew. Once someone is Jewish, the identity is permanent. Jewish law even holds that no one can revoke it.
 
 Religion is still part of the picture, because the Jewish people were formed by a covenant with G-d. Becoming Jewish through conversion means accepting that covenant, with its beliefs and practices. But the bond itself is deeper than what any one person believes or does on a given day.
 
 ## Why "race" does not fit
 
-Tradition notes that DNA does not make someone Jewish. Under Jewish law, a DNA test showing Jewish markers does not by itself make a person Jewish. What counts is a Jewish mother or a valid conversion. We are also reminded that converts have joined the Jewish people throughout history, including Ruth, the ancestor of King David.
+DNA does not make someone Jewish. Under Jewish law, a DNA test showing Jewish markers does not by itself make a person Jewish. What counts is a Jewish mother or a valid conversion. Converts have also joined the Jewish people throughout history, including Ruth, the ancestor of King David.
 
 ## A nation, in a special sense
 
-The tradition suggests that "nation" fits in one sense: Jews can be thought of as permanent citizens of a nation. At Sinai, every Israelite became a participant, with responsibilities as well as privileges, and that participation continued through centuries of exile without a king or a central authority. Unlike many nations, the Jewish people were formed by covenants before they had a land. The Abraham covenant created an eternal people. At Sinai, the people accepted the Torah with the words "We will do and we will obey."
+"Nation" fits in one sense: Jews can be thought of as permanent citizens of a nation. At Sinai, every Israelite became a participant, with responsibilities as well as privileges, and that participation continued through centuries of exile without a king or a central authority. Unlike many nations, the Jewish people were formed by covenants before they had a land. The Abraham covenant created an eternal people. At Sinai, the people accepted the Torah with the words "We will do and we will obey."
 
 ## A family
 
 The traditional Jewish self-image is a family. Like a birth family, it is a family you cannot leave. A convert is described as adopted into the family, joining the same covenant that the Jewish people entered at Sinai, before a rabbinic court.
 
-A family can have members who are close and members who are distant, and everyone still belongs. Tradition says all Jews are equally Jewish, though levels of engagement differ. It also says that a Jew who returns after years away does not have to "become Jewish" again. Their return is welcomed like a child coming home.
+A family can have members who are close and members who are distant, and everyone still belongs. All Jews are equally Jewish, though levels of engagement differ. A Jew who returns after years away does not have to "become Jewish" again. Their return is welcomed like a child coming home.
 
 ## What this means for you
 
@@ -37,13 +37,13 @@ If you are Jewish, you are part of this family whether you are a lifelong member
 Judaism is a religion, and being Jewish is also a matter of belonging to a people. Jewish tradition describes it as a family bound by the covenant at Sinai, so it is not only a religion and not a race.
 
 ### Are Jews a nation?
-In a certain sense, yes. The tradition suggests that Jews are permanent citizens of a nation formed by covenant at Sinai, even without a land or a king. But "family" is the traditional image for how the bond works.
+In a certain sense, yes. Jews are permanent citizens of a nation formed by covenant at Sinai, even without a land or a king. But "family" is the traditional image for how the bond works.
 
 ### What makes someone Jewish?
 A person is Jewish if born to a Jewish mother or if converted according to Jewish law. A child of a Jewish father and a non-Jewish mother is not Jewish unless converted. Ask the Rabbi if your own situation is unclear.
 
 ### Can you stop being Jewish?
-No. According to Jewish tradition, Jewishness is lifelong, regardless of belief or practice.
+No. Jewishness is lifelong, regardless of belief or practice.
 
 ### Can someone become Jewish?
 Yes, through conversion under a recognized Orthodox rabbinical court. See [converting to Judaism](/learn/converting-to-judaism).

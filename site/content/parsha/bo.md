@@ -17,7 +17,7 @@ The practical lessons are these. Jewish life has two parts: the inner work of To
 
 ## A story
 
-This is how the Rebbe's tefillin campaign began, as it is told in teachings of the Rebbe translated for Chabad.org. In early June 1967, as Egypt closed the Straits of Tiran and two days before the Six Day War began, the Rebbe spoke at a gathering. He cited the Torah's promise that "all the nations of the world will see that the Name of G-d is proclaimed upon you and will fear you," which the Sages read as referring to the tefillin worn on the head. He said that this mitzvah gives the Jewish people added strength in times of crisis.
+This is how the Rebbe's tefillin campaign began, as it is told in the Rebbe's own teachings. In early June 1967, as Egypt closed the Straits of Tiran and two days before the Six Day War began, the Rebbe spoke at a gathering. He cited the Torah's promise that "all the nations of the world will see that the Name of G-d is proclaimed upon you and will fear you," which the Sages read as referring to the tefillin worn on the head. He said that this mitzvah gives the Jewish people added strength in times of crisis.
 
 Chassidim around the world, especially in Israel, answered quickly. They looked for ways to offer soldiers and civilians a chance to put on tefillin. Shortly after the Western Wall was liberated, many Lubavitch chassidim, some in uniform, invited soldiers praying there to put on tefillin. Soon a pushcart with spare pairs stood at the Wall, staffed by approachable chassidim. Many of the hundreds of thousands who later began wearing tefillin first met the mitzvah there.
 

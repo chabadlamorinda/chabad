@@ -5,7 +5,7 @@ category: Jewish ideas
 related: the-poor-mans-offering, baal-shem-tov, chassidus, tzedakah, the-rebbes-sunday-dollars
 local: Want to hear more Chassidic stories about giving? Call Rabbi Labkowski at 925-384-7242 or reach him via /help/talk-to-the-rabbi.
 ---
-The Baal Shem Tov, the founder of the Chassidic movement, taught that giving should be done with joy, and Chassidic stories about him show tzedakah changing the lives of giver and receiver. Chassidic teaching preserves his teaching about generous giving and two classic tales, both retold below in our own words.
+The Baal Shem Tov, the founder of the Chassidic movement, taught that giving should be done with joy, and Chassidic stories about him show tzedakah changing the lives of giver and receiver. Below are his teaching about generous giving and two classic tales, retold in our own words.
 
 ## A teaching: giving with joy
 
@@ -40,13 +40,13 @@ For more on the Baal Shem Tov himself, see [The Baal Shem Tov](/learn/baal-shem-
 ## Common questions
 
 ### Did the Baal Shem Tov give a lot of charity?
-The teaching on charity notes that he gave more than a fifth of his income, and that he said joyful giving has no set limit.
+Rabbi Dr. Eliezer Shore notes that he gave more than a fifth of his income, and that he said joyful giving has no set limit.
 
 ### Why is there a limit of a fifth in Jewish law?
 The Talmud sets it so that a person does not impoverish himself. The Baal Shem Tov taught that one who gives joyfully is not limited the same way. Ask the Rabbi about your own situation.
 
 ### Are these Baal Shem Tov stories true?
-They are well-known Chassidic stories retold with care; their details cannot be confirmed historically. The teaching about giving more than a fifth is cited from the Baal Shem Tov's teachings.
+They are well-known Chassidic stories; their details cannot be confirmed historically. The teaching about giving more than a fifth is cited from the Baal Shem Tov's teachings.
 
 ### What is the message of the tale of two cows?
 That a gift given with sacrifice is not forgotten, and that the effect of giving can come back in unexpected ways.

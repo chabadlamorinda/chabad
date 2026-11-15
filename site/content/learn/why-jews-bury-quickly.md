@@ -11,28 +11,28 @@ Jewish law calls for burial as soon as possible after death, within 24 hours, be
 
 ## Where the rule comes from
 
-Jewish tradition points to the Torah verse in Deuteronomy (21:23). It both commands burial on the same day and warns against leaving the body overnight. From this, Jewish law requires burial within 24 hours. Jewish law adds that if the death is in the morning, the aim is to prepare and bury before dusk the same day, and otherwise to bury the next day.
+The source is the Torah verse in Deuteronomy (21:23). It both commands burial on the same day and warns against leaving the body overnight. From this, Jewish law requires burial within 24 hours. If the death is in the morning, the aim is to prepare and bury before dusk the same day, and otherwise to bury the next day.
 
-## Three reasons Jewish law gives
+## Three reasons
 
-1. **Respect for the person.** Every human being is made in G-d's image, so leaving the body unburied is a serious shame. The tradition notes that even the High Priest, who is normally forbidden to touch the dead, had to bury a Jew who had no one else to do so.
-2. **The soul.** Jewish tradition cites the Zohar, which teaches that the soul is pained until the body is buried, and that delay adds to its distress. (See [the soul](/learn/the-soul).)
+1. **Respect for the person.** Every human being is made in G-d's image, so leaving the body unburied is a serious shame. Even the High Priest, who is normally forbidden to touch the dead, had to bury a Jew who had no one else to do so.
+2. **The soul.** The Zohar teaches that the soul is pained until the body is buried, and that delay adds to its distress. (See [the soul](/learn/the-soul).)
 3. **The family.** Staying close to the body for a long time is a great emotional strain on mourners. A timely burial spares them that, and it allows them to begin [shiva](/learn/shiva) and to be comforted.
 
 ## When a short delay is allowed
 
-Jewish law explains that a delay is allowed "for the honor of the dead," and lists these cases:
+A delay is allowed "for the honor of the dead," in these cases:
 
 - **Legal requirements,** such as paperwork or transport, or an examination that the law requires.
 - **Preparation,** such as waiting for shrouds or a proper casket, or for tahara (see [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara)).
-- **Close relatives traveling from far,** such as children or parents. The wait should be based on when they are known to arrive and should not be unduly long. The tradition specifically says that the common belief that three days may be waited is not correct.
+- **Close relatives traveling from far,** such as children or parents. The wait should be based on when they are known to arrive and should not be unduly long. The common belief that three days may be waited is not correct.
 - **A rabbi** whose presence at the funeral would honor the deceased.
 
 Delay is not for convenience. A morning funeral is preferred: it is as early as possible, guests can return to their day, and mourners who live far from the cemetery can begin to mourn before nightfall. The funeral home and cemetery set the time; the family should consult the Rabbi before finalizing it.
 
 ## Shabbat and holidays
 
-Funerals are not held on Shabbat. Jewish tradition says the body is not moved, and is covered with a sheet until Shabbat ends. It also says that a funeral late on Friday afternoon can be moved to Sunday, since Shabbat intervenes. On the first day of a major festival, Jews do not bury; on the second day a burial is permitted, but Jewish law recommends postponing until after the festival, because a funeral on a festival day almost always leads to needless violations. In all these cases call the Rabbi, since each situation is different. See [shiva and holidays](/learn/shiva-and-holidays).
+Funerals are not held on Shabbat. The body is not moved, and is covered with a sheet until Shabbat ends. It also says that a funeral late on Friday afternoon can be moved to Sunday, since Shabbat intervenes. On the first day of a major festival, Jews do not bury; on the second day a burial is permitted, but it is best to postpone until after the festival, because a funeral on a festival day almost always leads to needless violations. In all these cases call the Rabbi, since each situation is different. See [shiva and holidays](/learn/shiva-and-holidays).
 
 ## Common questions
 
@@ -46,7 +46,7 @@ Yes, but only for the honor of the deceased: legal requirements, preparing shrou
 
 ### Can we wait three days for family to arrive?
 
-No. The tradition says explicitly that waiting three days is not allowed. A short delay for children or parents who are traveling is permitted, based on when they will arrive.
+No. Waiting three days is not allowed. A short delay for children or parents who are traveling is permitted, based on when they will arrive.
 
 ### Is a Jewish burial held on Shabbat?
 
@@ -54,7 +54,7 @@ No. If someone passes away on Shabbat, the body is covered and is not moved unti
 
 ### What is the best time of day for the funeral?
 
-Jewish tradition prefers the morning, so that burial is as early as possible. The family should consult the Rabbi, and the funeral home sets the time.
+The morning is preferred, so that burial is as early as possible. The family should consult the Rabbi, and the funeral home sets the time.
 
 ### What if we cannot afford to bury quickly?
 

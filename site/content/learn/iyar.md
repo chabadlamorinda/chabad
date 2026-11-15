@@ -9,15 +9,15 @@ Iyar (אִיָּר) is the second month of the Jewish calendar, falling in April
 
 ## What does Iyar mean?
 
-Iyar is the second month counting from Nissan and the eighth counting from Tishrei, since the Jewish calendar has two "starts" (see [the Jewish calendar](/learn/jewish-calendar)). The Torah calls it simply "the second month," and the Prophets call it "the month of radiance" (Chodesh Ziv), the time when the trees blossom. Jewish tradition notes a connection to the Hebrew word for light, "ohr," and to the manna that began to fall in this month. The name itself, as the Talmud teaches, came back with the Jews from the Babylonian exile.
+Iyar is the second month counting from Nissan and the eighth counting from Tishrei, since the Jewish calendar has two "starts" (see [the Jewish calendar](/learn/jewish-calendar)). The Torah calls it simply "the second month," and the Prophets call it "the month of radiance" (Chodesh Ziv), the time when the trees blossom. Its name is also linked to the Hebrew word for light, "ohr," and to the manna that began to fall in this month. The name itself, as the Talmud teaches, came back with the Jews from the Babylonian exile.
 
 ## Healing after the excitement of Nissan
 
-[Nissan](/learn/nissan) is full of dramatic events: the Exodus, the Seder, the miracles. Iyar is the quiet month that follows. Chassidic teaching teaches that this is its challenge: after the high of the holiday, to keep our Torah and mitzvot fresh and alive. Jewish tradition says G-d gives us "preventative medicine" for this, and we need only the effort to stay curious and engaged. It is the right month to ask yourself, what small habit would heal or strengthen me? Perhaps lighting [Shabbat candles](/learn/shabbat-candles), saying a short prayer in the morning, or calling someone who is lonely.
+[Nissan](/learn/nissan) is full of dramatic events: the Exodus, the Seder, the miracles. Iyar is the quiet month that follows. Chassidic teaching explains that this is its challenge: after the high of the holiday, to keep our Torah and mitzvot fresh and alive. Jewish tradition says G-d gives us "preventative medicine" for this, and we need only the effort to stay curious and engaged. It is the right month to ask yourself, what small habit would heal or strengthen me? Perhaps lighting [Shabbat candles](/learn/shabbat-candles), saying a short prayer in the morning, or calling someone who is lonely.
 
 ## The Omer: every day counts
 
-The Omer is counted from the second night of Passover until Shavuot, 49 days. Iyar is the only month in which every day is counted. Each night we say a blessing and count aloud, and ask G-d to help us refine a part of our character. The tradition adds that Iyar's zodiac sign is Taurus, the bull, which stands for our animal soul, strong and in need of direction. Counting the Omer is how we prepare to receive the Torah on Shavuot. See [counting the Omer](/learn/counting-the-omer).
+The Omer is counted from the second night of Passover until Shavuot, 49 days. Iyar is the only month in which every day is counted. Each night we say a blessing and count aloud, and ask G-d to help us refine a part of our character. Iyar's zodiac sign is Taurus, the bull, which stands for our animal soul, strong and in need of direction. Counting the Omer is how we prepare to receive the Torah on Shavuot. See [counting the Omer](/learn/counting-the-omer).
 
 ## Days of Iyar
 

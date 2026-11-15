@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: easy-shabbat-dinner-menu, shabbat-meals, kosher-on-a-budget, hosting-your-first-shabbat-dinner, setting-the-shabbat-table
 local: Not sure how to begin, or want a Shabbat meal with us? Request one at /forms/shabbat-meal or call Rabbi Labkowski at 925-384-7242.
 ---
-You can have a beautiful Shabbat on a budget, because the only things Shabbat truly requires at the table are candles, wine or grape juice, and two loaves of bread. Everything else, from fish to dessert, is a bonus. Jewish tradition teaches that the meal should feel special, not that it must be expensive.
+You can have a beautiful Shabbat on a budget, because the only things Shabbat truly requires at the table are candles, wine or grape juice, and two loaves of bread. Everything else, from fish to dessert, is a bonus. The meal should feel special; it does not have to be expensive.
 
 For families in Lafayette, Moraga and Orinda, where the cost of living is high, this is good news. A simple Shabbat done every week is worth far more than an impressive one done once a year.
 
@@ -34,7 +34,7 @@ A chicken or a big pot of soup made on Friday can become Shabbat lunch and Sunda
 
 ## Invite guests, and let them bring something
 
-Hosting does not have to cost more. Start small, with one or two friendly people; Chassidic teaching says a potluck is fine. Ask each guest to bring a dish, a dessert or a bottle of grape juice. Invite early in the week, and tell guests the few Shabbat basics, like phones put away, so everyone is comfortable. More tips are in [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Shabbat guest guide](/learn/shabbat-guest-guide).
+Hosting does not have to cost more. Start small, with one or two friendly people; a potluck is fine. Ask each guest to bring a dish, a dessert or a bottle of grape juice. Invite early in the week, and tell guests the few Shabbat basics, like phones put away, so everyone is comfortable. More tips are in [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Shabbat guest guide](/learn/shabbat-guest-guide).
 
 ## Kosher food without overspending
 
@@ -43,7 +43,7 @@ Buying kosher meat and groceries can feel pricey. Bay Kosher, a project of Chaba
 ## Common questions
 
 ### How can I have Shabbat dinner on a budget?
-Keep it simple: candles, grape juice, two loaves of bread and one or two homemade dishes. The tradition says store-bought, takeout or potluck food is fine, as long as it is kosher.
+Keep it simple: candles, grape juice, two loaves of bread and one or two homemade dishes. Store-bought, takeout or potluck food is fine, as long as it is kosher.
 
 ### What is the cheapest kosher Shabbat dinner?
 Chicken soup, roast chicken, a vegetable and kugel or rice are among the most economical. The exact price depends on where you shop, so we cannot name one.

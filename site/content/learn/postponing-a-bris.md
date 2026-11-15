@@ -49,7 +49,7 @@ Two more points:
 Yes. Jaundice is one of the most common reasons to postpone a bris. The bris waits until the baby has recovered, and the mohel and pediatrician guide the timing.
 
 ### Who decides whether to postpone a bris?
-The baby's doctors and a qualified mohel assess his health, and the Rabbi guides the Jewish law. If there is any doubt about the baby's strength, the bris is delayed.
+The baby's doctors and a qualified mohel assess his health, and the Rabbi guides on the halacha. If there is any doubt about the baby's strength, the bris is delayed.
 
 ### How long after recovery is the bris held?
 It depends on the case and on the sources. Some cases allow the bris right after recovery, others wait seven full days. Ask the mohel and Rabbi Labkowski, at 925-384-7242, about your son.

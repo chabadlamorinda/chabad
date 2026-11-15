@@ -9,9 +9,9 @@ You can bring Chanukah to a homebound neighbor, parent or friend with a short vi
 
 ## Why this matters on Chanukah
 
-Chanukah (חֲנֻכָּה) is the holiday of light in dark places. Each night we add one more candle, because we keep growing in light. There is a talk by the Rebbe on the second night of Chanukah, urging us each to add: more Torah, more mitzvot, more tzedakah, and more unity among Jews. Visiting someone who is alone is a way of adding.
+Chanukah (חֲנֻכָּה) is the holiday of light in dark places. Each night we add one more candle, because we keep growing in light. In a talk on the second night of Chanukah, the Rebbe urged each of us to add: more Torah, more mitzvot, more tzedakah, and more unity among Jews. Visiting someone who is alone is a way of adding.
 
-There is also the story of a man at a rehabilitation hospital in New York, where oil and candles were not allowed. He lit a small electric menorah every evening for the Jewish residents, many of them with memory loss, so the lights would remind them that the holiday had come. On the last night, one bulb failed, and he searched until he found a replacement, because he believed they deserved all the lights. His effort tells us how much a small light can mean to someone who rarely gets visitors.
+There is also a story of a man at a rehabilitation hospital in New York, where oil and candles were not allowed. He lit a small electric menorah every evening for the Jewish residents, many of them with memory loss, so the lights would remind them that the holiday had come. On the last night, one bulb failed, and he searched until he found a replacement, because he believed they deserved all the lights. His effort tells us how much a small light can mean to someone who rarely gets visitors.
 
 ## How to visit well
 

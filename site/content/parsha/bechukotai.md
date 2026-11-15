@@ -1,6 +1,6 @@
 ---
 title: Parshat Bechukotai: The Rebbe's Teaching, a Story and Ideas for the Shabbat Table
-description: Parshat Bechukotai (Leviticus 26-27): the Rebbe on engraving Torah into the soul, a Chassidic story and ideas for your Shabbat table in Lafayette, Moraga and Orinda.
+description: Parshat Bechukotai (Leviticus 26-27): the Rebbe on engraving Torah into the soul, a Chassidic story and ideas for your Shabbat table in Lamorinda.
 related: daily-torah-study, how-to-start-learning-torah, weekly-parsha, hitbonenut-tanya-contemplation, how-to-start-learning-tanya
 ---
 ## The Rebbe's teaching

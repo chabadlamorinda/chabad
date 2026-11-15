@@ -20,7 +20,7 @@ The verse most often quoted is in Proverbs 22:6: "Educate a child according to h
 
 ## Character comes first
 
-Rabbi Schneur Zalman of Liadi, the first Chabad Rebbe, taught that there can be no Torah without fine character. The goal of chinuch is not only a child who knows, but a child who is a *mentch* (a good, decent person). The educator's task is of refining character, together with patience: "A short-tempered person cannot teach" (Ethics of Our Fathers 2:5). Warmth matters too, as the verse says: "The words of the wise are heard when spoken gently." Read about [derech eretz](/learn/derech-eretz) and [raising kind children](/learn/raising-kind-children).
+Rabbi Schneur Zalman of Liadi, the first Chabad Rebbe, taught that there can be no Torah without fine character. The goal of chinuch is not only a child who knows, but a child who is a *mentch* (a good, decent person). The educator's task is to refine character, together with patience: "A short-tempered person cannot teach" (Ethics of Our Fathers 2:5). Warmth matters too, as the verse says: "The words of the wise are heard when spoken gently." Read about [derech eretz](/learn/derech-eretz) and [raising kind children](/learn/raising-kind-children).
 
 ## Practical steps at home
 

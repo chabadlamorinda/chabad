@@ -18,7 +18,7 @@ Little children understand family, stories and fun. You might say:
 
 *"We are Jewish because our family is part of the Jewish people. We celebrate Shabbat and holidays together, we do kind things, and G-d loves every one of us."*
 
-Then show them: light Shabbat candles, taste honey on Rosh Hashanah, shake a lulav. For young children, Jewish tradition stresses real, joyful experiences over explanations.
+Then show them: light Shabbat candles, taste honey on Rosh Hashanah, shake a lulav. For young children, real, joyful experiences matter more than explanations.
 
 **Ages 7 to 10: the chain and the stories**
 Children this age love stories, and they love to know where they come from. You can say:

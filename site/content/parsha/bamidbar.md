@@ -1,6 +1,6 @@
 ---
 title: Parshat Bamidbar: The Rebbe's Teaching, a Story and Ideas for the Shabbat Table
-description: Parshat Bamidbar (Numbers 1-4): the Rebbe on why every Jew counts, a true story of the Rebbe and ideas for your Shabbat table in Lafayette, Moraga and Orinda.
+description: Parshat Bamidbar (Numbers 1-4): the Rebbe on why every Jew counts, a true story of the Rebbe and ideas for your Shabbat table in Lamorinda.
 related: shavuot-for-beginners, ahavat-yisrael, tanya-on-self-worth, why-jewish-community-matters, counting-the-omer
 ---
 ## The Rebbe's teaching

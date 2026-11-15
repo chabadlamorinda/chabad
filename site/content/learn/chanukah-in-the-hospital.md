@@ -11,7 +11,7 @@ Hospitals do not allow open flames, so a patient cannot light a real menorah in 
 
 Fire in a room with oxygen and medical equipment is dangerous, and a hospital's rules are there to protect every patient. Judaism agrees: saving and guarding life overrides almost everything else, and no one is asked to risk their own safety or anyone else's to light a menorah.
 
-The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights with fuel, wick and flame. Jewish tradition explains that electric lights generally do not fulfill it, and that where a flame truly is not possible, you should ask a rabbi. The tradition also says that a battery-powered light may be considered in difficult circumstances, but that the blessings are not recited over it.
+The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights with fuel, wick and flame. Electric lights generally do not fulfill it, and where a flame truly is not possible, you should ask a rabbi. A battery-powered light may be considered in difficult circumstances, but the blessings are not recited over it.
 
 ## Options for a patient
 
@@ -42,7 +42,7 @@ Rabbi and Rebbetzin Labkowski visit the sick at home, in the hospital and in car
 No, hospitals do not allow open flames, and safety comes first. You can use a battery menorah if the hospital allows it, light at home, and sing and say the story with the patient.
 
 ### Do I say the blessings over an electric menorah in the hospital?
-No. Jewish tradition teaches that the blessings are not said over electric or battery lights. They still bring the joy of the holiday into the room.
+No. The blessings are not said over electric or battery lights. They still bring the joy of the holiday into the room.
 
 ### Can a spouse light at home for a patient in the hospital?
 A family member can light at home, and the patient shares in the joy. Whether it counts as the patient's own lighting depends on the situation, so please ask the Rabbi.

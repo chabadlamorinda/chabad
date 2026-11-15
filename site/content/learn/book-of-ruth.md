@@ -23,7 +23,7 @@ Naomi told Ruth to approach Boaz, and Ruth asked him to marry her and to redeem 
 
 ## Why we read it on Shavuot
 
-Jewish tradition gives three reasons.
+There are three reasons.
 
 1. **King David.** Shavuot is the day King David was born and passed away, and Ruth was his great-grandmother.
 2. **The harvest.** The story takes place at harvest time, and Shavuot is also called the festival of the harvest.

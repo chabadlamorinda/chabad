@@ -9,7 +9,7 @@ Whether your grandchildren will live and love their Judaism depends on what is h
 
 ## A Jew is someone with Jewish grandchildren
 
-Dr. Susan Handelman writes in an essay on why the family is so central to Judaism. She begins with a well-known saying that a Jew today is someone who has Jewish grandchildren. She calls it a metaphor, and she writes with compassion for the many who cannot have children.
+Dr. Susan Handelman has written an essay on why the family is so central to Judaism. She begins with a well-known saying that a Jew today is someone who has Jewish grandchildren. She calls it a metaphor, and she writes with compassion for the many who cannot have children.
 
 Her explanation is that the third generation confirms the first. The essay cites the principle that "three is a *chazakah*" (חֲזָקָה, a firm hold): what happens three times is established. When a grandchild carries Judaism forward, the chain is secure.
 
@@ -23,7 +23,7 @@ You do not need to do everything. A single candle lit with love can be the one t
 
 ## Teaching children early
 
-Jewish law places the education of children on the parents. Chassidic teaching explains that the mitzvah of *chinuch* (חִנּוּךְ, "education") begins when a child can understand, that basic blessings and prayers are traditionally taught from around age three, and that mothers are often the most effective educators. Parents can also delegate teaching to a teacher or school. See [Chinuch](/learn/chinuch) and [Jewish Grandparents](/learn/jewish-grandparents).
+Jewish law places the education of children on the parents. The mitzvah of *chinuch* (חִנּוּךְ, "education") begins when a child can understand. Basic blessings and prayers are traditionally taught from around age three, and mothers are often the most effective educators. Parents can also delegate teaching to a teacher or school. See [Chinuch](/learn/chinuch) and [Jewish Grandparents](/learn/jewish-grandparents).
 
 If you are a grandparent, your own example matters, and the Rabbi would be glad to suggest ideas that fit your family. Call 925-384-7242.
 
@@ -42,10 +42,10 @@ Jewish continuity means that Jewish identity, practice and learning are passed f
 In Jewish law, a child born to a Jewish mother is Jewish for life, however much or little the family practices. Whether they will live Jewishly depends on what each generation passes on: your example, your Shabbat table and your support for Jewish education all help. Every family's story is different, so for your own family, talk privately with the Rabbi.
 
 ### What if my children are not very observant?
-You are not too late, and no one is judging you. Jewish teaching suggests that grandparents and mentors can help in many ways, and each step you take counts. Call Rabbi Labkowski at 925-384-7242 for a friendly conversation.
+You are not too late, and no one is judging you. Grandparents and mentors can help in many ways, and each step you take counts. Call Rabbi Labkowski at 925-384-7242 for a friendly conversation.
 
 ### What can a grandparent do from far away?
-Jewish teaching points to teaching, mentoring and caring for children, and you can also support a Jewish school or program for children. Ask the Rabbi for ideas that fit your family.
+You can teach, mentor and care for children, and you can also support a Jewish school or program for children. Ask the Rabbi for ideas that fit your family.
 
 ### How can a gift help Jewish continuity?
 A gift to Jewish education and community helps children and families learn and celebrate Judaism. A legacy gift does this for future generations in Lafayette, Moraga and Orinda.

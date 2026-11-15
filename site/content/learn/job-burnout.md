@@ -17,7 +17,7 @@ Chassidic teaching puts it this way: "Our efforts are the vessel, but it is G-d 
 
 ## When work drains you
 
-Chassidic advice to someone stuck in a draining job says that work which exhausts a person harms physical, emotional, spiritual and family health. It notes that the body is the soul's vessel, so caring for your health is a religious duty, not a luxury.
+Work that exhausts a person harms physical, emotional, spiritual and family health. The body is the soul's vessel, so caring for your health is a religious duty, not a luxury.
 
 Some steps it suggests:
 

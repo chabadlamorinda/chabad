@@ -1,6 +1,6 @@
 ---
 title: Parshat Noach: The Rebbe's Teaching, a Story and Ideas for Shabbat
-description: Parshat Noach: what the Rebbe teaches about the ark and the small daily tasks, a true flood story of neighbors helping, and questions for your Shabbat table.
+description: Parshat Noach: what the Rebbe teaches about the ark and small daily tasks, a true flood story of neighbors helping, and Shabbat table questions.
 related: noah-and-the-flood, noahide-laws, tanya-on-worry-and-trust, hachnasat-orchim, weekly-parsha
 ---
 ## The Rebbe's teaching

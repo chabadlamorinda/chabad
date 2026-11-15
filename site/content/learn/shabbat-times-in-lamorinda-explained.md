@@ -11,13 +11,13 @@ For Lafayette, Moraga and Orinda, the exact times for this week and the whole ye
 
 ## What "candle lighting" means
 
-Candle lighting is the mitzvah that welcomes Shabbat, traditionally done by the woman of the house, and by the man of the house if no woman is present. Jewish tradition explains that you light about 18 minutes before sunset. Why 18 minutes? The custom is to "provide a margin for error." Sunset is the deadline, and the 18 minutes protect you from lighting too late.
+Candle lighting is the mitzvah that welcomes Shabbat, traditionally done by the woman of the house, and by the man of the house if no woman is present. You light about 18 minutes before sunset. Why 18 minutes? The custom is to "provide a margin for error." Sunset is the deadline, and the 18 minutes protect you from lighting too late.
 
 Once the candles are lit, and you have said the blessing, Shabbat has begun for you. You can read more about how in [Shabbat candles](/learn/shabbat-candles).
 
 ## Sunset, and why it matters
 
-Sunset is when Shabbat actually starts. That is why candle lighting is tied to it: it is a few minutes earlier, and never later. According to Jewish tradition, if you are running late, you may still light until shortly before sunset. After sunset, it is forbidden.
+Sunset is when Shabbat actually starts. That is why candle lighting is tied to it: it is a few minutes earlier, and never later. If you are running late, you may still light until shortly before sunset. After sunset, it is forbidden.
 
 The earliest time to light is *plag haminchah*, 1¼ halachic hours before sunset. Some families light earlier than 18 minutes before sunset, especially in the summer; see [early Shabbat in summer](/learn/early-shabbat-in-summer). Ask the Rabbi what you should do in your household.
 
@@ -57,11 +57,11 @@ They can differ slightly, because sunset depends on location. Each town has its 
 
 ### Why do we light candles 18 minutes before sunset?
 
-Jewish tradition explains that it is a margin for error, so that you do not light after Shabbat has begun.
+It is a margin for error, so that you do not light after Shabbat has begun.
 
 ### What is the latest I can light candles?
 
-The tradition teaches that you may light until shortly before sunset if you are running late. After sunset, it is forbidden.
+You may light until shortly before sunset if you are running late. After sunset, it is forbidden.
 
 ### When does Shabbat end in Contra Costa County?
 
@@ -69,7 +69,7 @@ Shabbat ends on Saturday night after dark, when stars are visible, and the exact
 
 ### What if I miss candle lighting?
 
-Jewish tradition says that if you missed it through carelessness, you add one candle in the weeks that follow, and if it was beyond your control, nothing is added. Ask the Rabbi about your situation.
+If you missed it through carelessness, you add one candle in the weeks that follow, and if it was beyond your control, nothing is added. Ask the Rabbi about your situation.
 
 ## Take the next step
 

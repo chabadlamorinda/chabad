@@ -1,6 +1,6 @@
 ---
 title: Parshat Lech Lecha: The Rebbe's Teaching, a Story and Ideas for Shabbat
-description: Parshat Lech Lecha: the Rebbe on Abraham's journey to himself, a true story of a rabbi sent to Albany, and Shabbat table questions for Lafayette, Moraga and Orinda.
+description: Parshat Lech Lecha: the Rebbe on Abraham's journey to himself, a true story of a rabbi sent to Albany, and Shabbat table questions.
 related: abraham-and-sarah, brit-milah, book-of-genesis, bitachon, weekly-parsha
 ---
 ## The Rebbe's teaching
