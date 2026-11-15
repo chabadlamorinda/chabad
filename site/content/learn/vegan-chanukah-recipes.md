@@ -28,7 +28,7 @@ Chabad.org also has a collection of fifteen latkes, from sweet potato and carniv
 
 ## Doughnuts without dairy or eggs
 
-Traditional doughnut dough often has eggs, and some use milk or butter. Choose a recipe that is clearly labeled vegan, or read each ingredient, and use a kosher oil. Sufganiyot are traditionally pareve, and see [sufganiyot](/learn/sufganiyot). Fill with jam, and check that the jam and any glaze are kosher certified.
+Traditional doughnut dough often has eggs, and some use milk or butter. Choose a recipe that is clearly labeled vegan, or read each ingredient, and use a kosher oil. Many sufganiyot recipes are pareve; see [sufganiyot](/learn/sufganiyot). Fill with jam, and check that the jam and any glaze are kosher certified.
 
 ## Sides and dessert for a vegan table
 

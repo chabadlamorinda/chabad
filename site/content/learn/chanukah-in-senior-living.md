@@ -17,7 +17,7 @@ For that reason, Chabad.org teaches that an electric menorah generally does not 
 
 Here are the choices, from the best to the simplest. Please call the Rabbi if you are not sure which fits.
 
-1. **Light in a place where it is allowed.** Ask the staff whether a menorah may be lit in a dining room, activity room, chapel or lobby, with a staff member present. Many facilities welcome it. The lights should burn for about half an hour after nightfall; ask the Rabbi about the details of the timing.
+1. **Light in a place where it is allowed.** Ask the staff whether a menorah may be lit in a dining room, activity room, chapel or lobby, with a staff member present. Some facilities allow it. The lights should burn for about half an hour after nightfall; ask the Rabbi about the details of the timing.
 2. **Light a real menorah at home on their behalf.** A family member can light at home with the resident in mind, and a call that evening shares the joy. Whether the resident can fulfill the mitzvah through someone else's lighting depends on the situation, so ask the Rabbi.
 3. **Use a safe flame if the home permits.** Chabad.org recommends tea lights (short, sturdy candles in a metal cup) on a fireproof tray, kept away from anything flammable. Never light in a place that forbids it, and never leave a flame unattended.
 4. **An electric or battery menorah as a reminder.** When no flame is possible, Chabad.org says to consult your rabbi. A battery-powered light may be used in difficult circumstances, but the blessings are not said over it. It brings the holiday into the room, and the resident can sing, say Haneirot Halalu and enjoy the glow.

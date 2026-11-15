@@ -39,12 +39,6 @@ The festive meal after a Bar Mitzvah is a *seudat mitzvah* (סְעוּדַת מ�
 
 A meaningful celebration is not a costly one. A Kiddush after services, a Shabbat dinner at home or a small gathering can carry as much meaning as a large hall. See [a Bar or Bat Mitzvah on a budget](/learn/bar-bat-mitzvah-on-a-budget). A gift of money in multiples of 18, the value of the Hebrew word *chai*, "life," is customary; see [gifts in multiples of 18](/learn/gifts-in-multiples-of-18).
 
-## Take the next step
-
-- Families in Lafayette, Moraga and Orinda can call Rabbi Labkowski at 925-384-7242 to talk through the day, or read [Bar and Bat Mitzvah in Lamorinda](/learn/bar-bat-mitzvah-in-lamorinda).
-- Choose how your child will keep growing: [after the Bar Mitzvah](/learn/after-the-bar-mitzvah).
-- See [the full timeline](/learn/bar-bat-mitzvah-timeline) and plan back from the date.
-
 ## Common questions
 
 ### How can we make a Bar Mitzvah meaningful?
@@ -64,3 +58,9 @@ Chabad.org suggests religious or educational books, ritual items or money, often
 
 ### How do we involve relatives who are new to Jewish customs?
 Welcome them warmly and explain the customs in the invitation or a short program. Ask the Rabbi for ideas.
+
+## Take the next step
+
+- Families in Lafayette, Moraga and Orinda can call Rabbi Labkowski at 925-384-7242 to talk through the day, or read [Bar and Bat Mitzvah in Lamorinda](/learn/bar-bat-mitzvah-in-lamorinda).
+- Choose how your child will keep growing: [after the Bar Mitzvah](/learn/after-the-bar-mitzvah).
+- See [the full timeline](/learn/bar-bat-mitzvah-timeline) and plan back from the date.

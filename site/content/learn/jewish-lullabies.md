@@ -5,7 +5,7 @@ category: Life cycle
 related: bedtime-shema, niggun, modeh-ani, jewish-nursery, jewish-parenting
 local: Looking for Jewish songs for your little one? Call 925-384-7242 or see Lamorinda Jewish Preschool at /programs/jewish-preschool.
 ---
-The best Jewish lullabies are simple: the Shema at bedtime, Modeh Ani at waking, a wordless niggun (melody) hummed while rocking, and a Yiddish lullaby about Torah. The Lubavitcher Rebbe taught that Jewish mothers have the beautiful custom of rocking their children to sleep with a Jewish lullaby, because the songs a child hears at night shape him for life.
+The best Jewish lullabies are simple: the Shema at bedtime, Modeh Ani at waking, a wordless niggun (melody) hummed while rocking, and a Yiddish lullaby about Torah. The Lubavitcher Rebbe spoke of the beautiful custom of Jewish mothers to rock their children to sleep with a Jewish lullaby whose message is that Torah is the most precious treasure.
 
 For parents in Lafayette, Moraga and Orinda, this is the easiest Jewish practice to start on night one. You do not need a good voice, and a baby does not care.
 
@@ -31,7 +31,7 @@ Chabad.org tells of "Oyfn Pripetchik," a Yiddish song that pictures a warm home 
 
 ## Songs of the Torah for toddlers
 
-Chabad.org's children's site has a set of short songs that set Torah verses to melodies. As your baby grows into a toddler, these are an easy way to learn verses by singing. When your child is ready, see [Lamorinda Jewish Preschool](/programs/jewish-preschool), which welcomes children from 12 months.
+As your baby grows into a toddler, short songs of Torah verses and blessings are an easy way to learn by singing. When your child is ready, see [Lamorinda Jewish Preschool](/programs/jewish-preschool), which welcomes children from 12 months.
 
 ## Common questions
 

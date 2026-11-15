@@ -39,7 +39,7 @@ Chabad.org's kids' pages suggest many things a toddler can enjoy with a grown-up
 
 ## Bedtime, naps and sleep
 
-Families with early bedtimes often wonder what to do. The lights are lit after nightfall, and Jewish tradition is to light at that time, so many families plan a short early dinner and a simple bath routine around it. If your little one's bedtime is a real problem on certain nights, such as Friday or the long Saturday-night lighting, ask the Rabbi about the best time for your family. On Friday, the Chanukah lights are lit before the Shabbat candles; see [Chanukah on Shabbat](/learn/chanukah-on-shabbat).
+Families with early bedtimes often wonder what to do. The lights are lit in the early evening, at the time shown on the [menorah page](/menorah), so many families plan a short early dinner and a simple bath routine around it. If your little one's bedtime is a real problem on certain nights, such as Friday or the later Saturday-night lighting, after Shabbat ends, ask the Rabbi about the best time for your family. On Friday, the Chanukah lights are lit before the Shabbat candles; see [Chanukah on Shabbat](/learn/chanukah-on-shabbat).
 
 A calm routine, a lullaby and the glow of the lights make a lovely way to end the day. For more general tips on holidays with little ones, see [holidays with toddlers](/learn/holidays-with-toddlers).
 

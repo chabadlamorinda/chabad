@@ -60,7 +60,7 @@ No. Learn the letters one step ahead of your child, or learn together. A childre
 Switch to games, songs and short sessions, and pause when they are tired. Praise effort. If the struggle continues, talk to a teacher about a different approach.
 
 ### Is there a custom of honey when a child starts learning letters?
-Yes, many Chabad families and schools have a custom of giving a child something sweet, such as honey, when they first begin to learn the Aleph-Bet, to show that Torah is sweet. Customs of the day vary, so ask the Rabbi if you would like to arrange it.
+Yes. There is a long-standing Jewish custom, kept in many Chabad homes and schools, of giving a child something sweet, such as honey, when they first begin to learn the Aleph-Bet, to show that Torah is sweet. Customs of the day vary, so ask the Rabbi if you would like to arrange it.
 
 ## Take the next step
 

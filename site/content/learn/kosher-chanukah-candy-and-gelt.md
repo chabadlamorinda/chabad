@@ -32,11 +32,11 @@ Most chocolate is dairy. Chabad.org suggests choosing pareve gelt if you serve i
 
 ## What about chalav Yisrael?
 
-Some families prefer dairy products made under Jewish supervision, called [chalav Yisrael](/learn/chalav-yisrael). Chabad.org notes that kosher milk should be produced under Jewish supervision, and where it is not available, some rabbinic authorities accept government inspection. Ask the Rabbi what you should do. Many people in Lafayette, Moraga and Orinda follow the general kosher symbol and ask the Rabbi for the rest.
+Some families prefer dairy products made under Jewish supervision, called [chalav Yisrael](/learn/chalav-yisrael). Chabad.org notes that kosher milk should be produced under Jewish supervision, and where it is not available, some rabbinic authorities accept government inspection. Ask the Rabbi what you should do.
 
 ## Gelt for charity
 
-Chabad.org also teaches that gelt reminds us to use money for good, and some give about a tenth of their gelt to charity. A simple idea is to let each child set aside a coin for [tzedakah](/learn/tzedakah).
+Chabad.org also teaches that gelt reminds us to use money for good, and children are encouraged to give part of their gelt to charity. A simple idea is to let each child set aside a coin for [tzedakah](/learn/tzedakah).
 
 ## Common questions
 

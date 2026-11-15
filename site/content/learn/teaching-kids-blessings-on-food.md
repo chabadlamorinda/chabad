@@ -18,7 +18,7 @@ Every blessing begins with the same words, in Hebrew *Baruch atah Ado-nai, Elo-h
 ## The simple chart: which blessing for what
 
 1. **Bread:** הַמּוֹצִיא לֶחֶם מִן הָאָרֶץ, *hamotzi lechem min ha'aretz*. Kids' question: is it bread?
-2. **Cake, cookies, crackers, pasta, cereal:** בּוֹרֵא מִינֵי מְזוֹנוֹת, *borei minei mezonot*. Is it made from flour or grain?
+2. **Cake, cookies, crackers, pasta:** בּוֹרֵא מִינֵי מְזוֹנוֹת, *borei minei mezonot*. Is it made from flour or grain?
 3. **Wine or grape juice:** בּוֹרֵא פְּרִי הַגָּפֶן, *borei pri hagafen*. Is it from grapes?
 4. **Fruit that grows on trees (apples, oranges, nuts):** בּוֹרֵא פְּרִי הָעֵץ, *borei pri ha'etz*. Does it grow on a tree?
 5. **Vegetables and food that grows from the ground (carrots, strawberries, potatoes):** בּוֹרֵא פְּרִי הָאֲדָמָה, *borei pri ha'adamah*. Does it grow from the ground?

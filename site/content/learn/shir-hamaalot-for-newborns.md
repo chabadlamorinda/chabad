@@ -24,7 +24,7 @@ Chabad.org gives two reasons:
 
 1. **When.** Chabad.org says to hang it as soon as the mother arrives at the hospital, to help ensure an easy birth.
 2. **In the delivery room.** Ask the staff politely. The Rebbe suggested explaining that it calms the mother, which helps everyone.
-3. **By the baby's crib.** Hang it on or near the crib. If the baby sleeps in the mother's room, a doorway of that room is also a place that is mentioned.
+3. **By the baby's crib.** Hang it on or near the crib.
 4. **At home.** Many families keep it up for the first weeks. Chabad.org does not give a fixed date for taking it down, so ask the Rabbi how long to keep it.
 
 ## Treating it with respect

@@ -62,7 +62,7 @@ Only if it is safe and made for real flames, with sturdy non-flammable holders a
 Nun, gimmel, hey and shin, which stand for "A great miracle happened there." In Israel the last letter is pey, for "here."
 
 ### How can crafts teach my child about Chanukah?
-Talk while you work: why we light eight nights, why the menorah faces the street, and what a miracle means. Children remember what they make with their hands.
+Talk while you work: why we light eight nights, why we light where others can see the menorah, and what a miracle means. Children remember what they make with their hands.
 
 ### Where can my family do Chanukah activities in Lamorinda?
 Families in Lafayette, Moraga and Orinda are welcome at Chabad of Lamorinda's Chanukah events. Call 925-384-7242 to hear what is planned for children.

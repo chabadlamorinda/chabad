@@ -23,12 +23,12 @@ The siddur (סידור) is the Jewish prayer book. The word comes from *seder*, 
 
 Once you know a few signposts, the service stops feeling like a blur. On Shabbat morning, listen for:
 
-- **The morning blessings and psalms** at the start, ending with a call to prayer by the leader. See morning blessings and Ashrei.
-- **Barchu**, where the leader calls the congregation to bless G-d and everyone answers. Read about Barchu.
+- **The morning blessings and psalms** at the start, ending with a call to prayer by the leader. See [morning blessings](/learn/morning-blessings) and [Ashrei](/learn/ashrei).
+- **Barchu**, where the leader calls the congregation to bless G-d and everyone answers. Read about [Barchu](/learn/barchu).
 - **The Shema**, said aloud together, usually with a hand over the eyes. See [Shema](/learn/shema).
 - **The Amidah**, the silent standing prayer. People pray quietly and then take three steps back at the end. See [Amidah](/learn/amidah).
 - **The Torah reading**, when the scroll is taken from the ark.
-- **Aleinu**, near the end, said standing. See Aleinu.
+- **Aleinu**, near the end, said standing. See [Aleinu](/learn/aleinu).
 
 For the full order of events, see [Shabbat Morning Services Explained](/learn/shabbat-morning-services-explained).
 
@@ -61,6 +61,6 @@ Many people want to. Ask the Rabbi what is available, and call 925-384-7242.
 
 ## Take the next step
 
-- Read the [Siddur guide](/learn/siddur) to meet the book, then Can I Pray in English?.
+- Read the [Siddur guide](/learn/siddur) to meet the book, then [Can I Pray in English?](/learn/can-i-pray-in-english)
 - Visitors from Lafayette, Moraga and Orinda: call Rabbi Labkowski at 925-384-7242 and ask for help getting started.
 - Come to learn the alef-bet at [Hebrew lessons in Lamorinda](/learn/hebrew-lessons-in-lamorinda).

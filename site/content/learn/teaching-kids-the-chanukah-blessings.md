@@ -34,7 +34,7 @@ The blessings are said before lighting, standing near the menorah, usually while
 2. **Teach one phrase at a time.** First "Baruch atah Ado-nai." The next night, add "Elo-heinu melech ha'olam." Add a little more each night, just as we add a candle each night.
 3. **Sing it.** A melody makes the words easy to hold on to. Ask the Rabbi for the tune you will hear in synagogue.
 4. **Say it slowly with the child, then let the child lead.** A four-year-old can say the opening alone; a seven-year-old can say the whole first blessing.
-5. **Answer "Amen."** Even the youngest can say Amen after a blessing. It counts as part of the mitzvah to listen and answer.
+5. **Answer "Amen."** Even the youngest can say Amen after a blessing. Answering Amen to a blessing is itself a mitzvah.
 6. **Use a card.** Print the blessings with transliteration, put them next to the menorah and let the children point as the family says them.
 
 ## Fun ways to practice
@@ -42,7 +42,7 @@ The blessings are said before lighting, standing near the menorah, usually while
 - **Talk about the miracle at dinner.** When the idea of "miracles for our ancestors" is familiar, the words sound familiar too.
 - **Listen to songs.** Chabad.org's kids' pages have videos with the lighting steps and children's songs. See also [Chanukah songs](/learn/chanukah-songs).
 - **Rehearse before Chanukah.** A pretend lighting with an unlit menorah, practicing the order of the candles, makes the real night calmer.
-- **Haneirot Halalu.** After the lights are kindled, many families sing a short hymn called Haneirot Halalu, "These lights we kindle." Ask the Rabbi for the words and the tune; children pick them up quickly.
+- **Haneirot Halalu.** As the lights are kindled, many families sing a short hymn called Haneirot Halalu, "These lights we kindle." Ask the Rabbi for the words and the tune; children pick them up quickly.
 
 ## Take the next step
 

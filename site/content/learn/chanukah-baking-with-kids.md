@@ -37,7 +37,7 @@ Peanut butter, nuts and eggs are common allergens, so ask before sharing treats 
 
 - Bake before the first night and let the kids decorate a few cookies for a neighbor ([Chanukah food gifts](/learn/chanukah-food-gifts-for-neighbors)).
 - Bake while telling [the Chanukah story](/learn/chanukah-story).
-- Use baking as a quiet activity on the Shabbat of Chanukah ([baking challah](/learn/baking-challah) is another good project).
+- Bake on Friday morning for the Shabbat of Chanukah (no baking on Shabbat itself); [baking challah](/learn/baking-challah) together is another good project.
 
 At Chabad of Lamorinda's Grand Chanukah Menorah Lighting, Light Up Lafayette, on Sunday, December 6, 2026 at 4:00 PM at Lafayette Plaza Park, there is a Decorate Your Own Donut, a Gelt Drop, a Giant Dreidel Game, LED light wands for kids, and free hot cocoa, donuts and gelt. It is free and open to everyone: [see details and sign up](/events/chanukah-grand-menorah-lighting-2026).
 

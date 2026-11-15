@@ -5,20 +5,20 @@ category: Life cycle
 related: bar-mitzvah-speech, blessing-your-children, bar-mitzvah, grandparents-at-a-bar-mitzvah, after-the-bar-mitzvah
 local: Want to plan the aliyah and the blessing? Call Rabbi Labkowski at 925-384-7242, or see /programs/bar-bat-mitzvah.
 ---
-Baruch Shepatarani (בָּרוּךְ שֶׁפְּטָרַנִי מֵעָנְשׁוֹ שֶׁל זֶה) is a one-line blessing a father says when his son is called to the Torah for his Bar Mitzvah aliyah. It means, "Blessed is the One who has freed me from the punishment of this one," and it marks the moment a father is no longer responsible for his son's mitzvot, because the boy is now responsible for himself.
+Baruch Shepatarani is a one-line blessing a father says when his son is called to the Torah for his Bar Mitzvah aliyah. It means, "Blessed is the One who has freed me from the punishment of this one," and it marks the moment a father is no longer responsible for his son's mitzvot, because the boy is now responsible for himself.
 
 ## What the blessing means
 
-Until 13, a father is responsible for teaching his son and, in a sense, answers for his son's mitzvot. At the Bar Mitzvah the boy takes that responsibility on himself. The father says the blessing to give thanks for reaching this day and to mark the handover. The tone is gratitude and joy, not a heavy one. Many fathers say it with tears.
+Until 13, a father is responsible for teaching his son and, in a sense, answers for his son's mitzvot. At the Bar Mitzvah the boy takes that responsibility on himself. The father says the blessing to give thanks for reaching this day and to mark the handover. The tone is gratitude and joy, not a heavy one.
 
 ## How and when it is said
 
 Chabad.org explains the details, and a few are worth knowing:
 
 - It is said when the **boy** has his aliyah, not when the father is called up.
-- The text is short, as written above. Say it aloud, standing beside your son.
+- The text is one short line; the Rabbi will give you the wording used in our community. Say it aloud, standing beside your son.
 - It can be said on a day the Torah is read: Shabbat, Monday, Thursday and Rosh Chodesh.
-- **The Divine Name is left out.** Chabad.org says that Chabad Chassidim generally do not say G-d's name in this blessing. A letter from the Rebbe notes that the Rebbes themselves did say it, but this is not a directive for everyone. Ask the Rabbi how it will be said at your Bar Mitzvah.
+- **The Divine Name is left out.** Chabad.org says that Chabad Chassidim generally do not say G-d's name in this blessing. Chabad.org adds that the Rebbes themselves did say it, but that this is not a directive for everyone. Ask the Rabbi how it will be said at your Bar Mitzvah.
 
 The [Bar Mitzvah timeline](/learn/bar-bat-mitzvah-timeline) shows where this moment fits in the day. Practice the Hebrew beforehand, so that you are not reading it for the first time in front of everyone.
 
@@ -41,12 +41,6 @@ Besides the blessing, many parents use the day to tell their child, in their own
 3. **Include a blessing.** Each Friday night many Jewish parents bless their children; see [blessing your children](/learn/blessing-your-children).
 4. **Include the mother.** At a Bar Mitzvah the mother's words are welcome at the meal or in a letter. For a Bat Mitzvah, both parents may speak at the celebration; see [Bat Mitzvah](/learn/bat-mitzvah).
 
-## Take the next step
-
-- Families in Lafayette, Moraga and Orinda can call Rabbi Labkowski at 925-384-7242 to plan the aliyah and the blessing, and to practice the wording.
-- Help your son with his own words: [the Bar Mitzvah speech](/learn/bar-mitzvah-speech).
-- Invite the grandparents to the moment: [grandparents at a Bar Mitzvah](/learn/grandparents-at-a-bar-mitzvah).
-
 ## Common questions
 
 ### What is Baruch Shepatarani?
@@ -66,3 +60,9 @@ There is no set blessing, but many mothers speak or write a blessing in their ow
 
 ### When should we practice the blessing?
 A few weeks before, with the Rabbi, together with your son's aliyah blessings.
+
+## Take the next step
+
+- Families in Lafayette, Moraga and Orinda can call Rabbi Labkowski at 925-384-7242 to plan the aliyah and the blessing, and to practice the wording.
+- Help your son with his own words: [the Bar Mitzvah speech](/learn/bar-mitzvah-speech).
+- Invite the grandparents to the moment: [grandparents at a Bar Mitzvah](/learn/grandparents-at-a-bar-mitzvah).

@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: chanukah-story, which-chanukah-miracle, why-add-a-candle-each-night, chinuch, lessons-of-chanukah
 local: Come to Chabad of Lamorinda's Chanukah celebrations for families in Lafayette, Moraga and Orinda; call 925-384-7242 to hear what is planned, or see /events.
 ---
-Chanukah (חֲנֻכָּה) is a Hebrew word that means "dedication." It names the day, 2,200 years ago, when the Maccabees cleaned the Holy Temple in Jerusalem and dedicated it to G-d again after the Greeks had defiled it.
+Chanukah (חֲנֻכָּה) is a Hebrew word that means "dedication." It names the day, about 2,200 years ago, when the Maccabees cleaned the Holy Temple in Jerusalem and dedicated it to G-d again after the Greeks had defiled it.
 
 That is the plain meaning, and it is the one most people learn. But Jewish teachers have always loved to look inside words, and the name Chanukah carries several more messages, each one a small lesson for today.
 

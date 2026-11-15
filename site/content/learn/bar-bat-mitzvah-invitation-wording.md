@@ -10,7 +10,7 @@ A good Bar or Bat Mitzvah invitation names the child with his or her Hebrew name
 ## What to include
 
 1. **The child's name,** English and Hebrew. Hebrew names follow the pattern "Shmuel ben Avraham v'Sarah" for a boy (son of) or "Rivka bat Avraham v'Sarah" for a girl (daughter of). See [Hebrew names](/learn/hebrew-names).
-2. **The date,** with the English date and the Hebrew date. Jewish dates are counted by the Hebrew calendar; see [finding the Hebrew date](/learn/bar-mitzvah-hebrew-birthday-date). For a Shabbat celebration, add the Torah portion (the parsha). A letter from the Rebbe acknowledging a Bar Mitzvah invitation, on Chabad.org, gives the day as Shabbat, the portion, and the Hebrew date.
+2. **The date,** with the English date and the Hebrew date. Jewish dates are counted by the Hebrew calendar; see [finding the Hebrew date](/learn/bar-mitzvah-hebrew-birthday-date). For a Shabbat celebration, add the Torah portion (the parsha).
 3. **The place and time** of the service and of the meal, with the address. Say clearly if guests are welcome at both.
 4. **What to expect** if the celebration is on Shabbat (see below).
 5. **A line about food:** if the meal is kosher, say so, which helps guests who keep kosher.
@@ -50,12 +50,6 @@ Many Jewish invitations begin with ב״ה (B"H) or בס״ד (B"S"D). Chabad.org 
 
 Tell your guests what to expect so that everyone is comfortable. A line such as "Shabbat is a day of rest: please leave phones and cameras at home and walk to the service if you can" helps non-observant guests and relatives. On Shabbat, Jewish law does not allow driving, photography or electronics, so this is a good place for a gentle explanation. Ask the Rabbi what to write and read [attending a Bar or Bat Mitzvah](/learn/attending-a-bar-bat-mitzvah) to see it from your guests' side.
 
-## Take the next step
-
-- Send the draft to Rabbi Labkowski at 925-384-7242 for a quick check of the Hebrew name, the date and the wording.
-- See how to keep the party simple in [a Bar or Bat Mitzvah on a budget](/learn/bar-bat-mitzvah-on-a-budget).
-- Think about the meaning of the day beyond the party: [a meaningful celebration](/learn/meaningful-bar-bat-mitzvah-celebration). Families in Lafayette, Moraga and Orinda can also see [Bar and Bat Mitzvah in Lamorinda](/learn/bar-bat-mitzvah-in-lamorinda).
-
 ## Common questions
 
 ### What should a Bar Mitzvah invitation say?
@@ -75,3 +69,9 @@ Explain gently what Shabbat involves, such as no phones, no photography and walk
 
 ### Is it all right to put G-d's name on the invitation?
 It is better not to spell it out. Write "G-d" or ה', since a printed invitation may be discarded. Ask the Rabbi.
+
+## Take the next step
+
+- Send the draft to Rabbi Labkowski at 925-384-7242 for a quick check of the Hebrew name, the date and the wording.
+- See how to keep the party simple in [a Bar or Bat Mitzvah on a budget](/learn/bar-bat-mitzvah-on-a-budget).
+- Think about the meaning of the day beyond the party: [a meaningful celebration](/learn/meaningful-bar-bat-mitzvah-celebration). Families in Lafayette, Moraga and Orinda can also see [Bar and Bat Mitzvah in Lamorinda](/learn/bar-bat-mitzvah-in-lamorinda).

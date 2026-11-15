@@ -3,7 +3,7 @@ title: Slow Cooker Shabbat Recipes: Cholent and More for Shabbat Lunch
 description: Slow cooker Shabbat recipes beyond cholent: chicken, brisket and vegetarian stews, plus the simple rules for using a crockpot on Shabbat. Ask the Rabbi.
 category: Shabbat & holidays
 related: cholent, keeping-food-warm-on-shabbat, shabbat-day, easy-shabbat-dinner-menu, shabbat-meals
-local: Want help setting up your slow cooker for Shabbat? Call Rabbi Labkowski at 925-384-7242 and he will walk you through your kitchen.
+local: Want help setting up your slow cooker for Shabbat? Call Rabbi Labkowski at 925-384-7242 to ask about your model.
 ---
 A slow cooker is one of the easiest ways to have a hot Shabbat lunch: you prepare the food before Shabbat, turn the cooker on before candle lighting, and leave it alone until the next day. Cholent is the classic dish, but chicken, brisket and vegetarian stews work just as well, and the rules for using a crockpot depend on your model, so ask the Rabbi.
 

@@ -1,11 +1,11 @@
 ---
 title: Choosing a Mohel: Questions to Ask Before the Bris
-description: How to choose a mohel for your son's bris: training, experience, and questions to ask. Call Rabbi Labkowski in Lafayette for help finding one.
+description: How to choose a mohel for your son's bris: training, experience, and questions to ask. Questions? Call Rabbi Labkowski in Lafayette.
 category: Life cycle
 related: preparing-for-a-bris, brit-milah, postponing-a-bris, sandek-and-kvater, new-parents-in-lamorinda
-local: Looking for a mohel? Call Rabbi Labkowski at 925-384-7242 and he will help you find a qualified one for your family.
+local: Looking for a mohel? Call Rabbi Labkowski at 925-384-7242 to talk it through.
 ---
-A mohel (מוֹהֵל) is a person trained in both the Jewish laws of circumcision and the medical procedure, who performs the bris on a baby boy's eighth day. To choose one, ask about training, experience and how he or she works with parents, and ask your rabbi and your pediatrician for advice.
+A mohel (מוֹהֵל) is a person trained in both the Jewish laws of circumcision and the medical procedure, who performs the bris on a baby boy's eighth day. To choose one, ask about training, experience and how he works with parents, and ask your rabbi and your pediatrician for advice.
 
 Families in Lafayette, Moraga and Orinda often ask us how to find a mohel they can trust. Chabad of Lamorinda does not endorse a name here, but Rabbi Yisroel Labkowski is glad to talk it through. Call 925-384-7242.
 
@@ -37,16 +37,16 @@ Your pediatrician cares for your baby's health. The mohel performs the bris. The
 ## Common questions
 
 ### What is a mohel?
-A mohel is a Jewish person trained in the laws of brit milah and in the procedure itself, who performs the circumcision at a bris. A mohel is not necessarily a doctor, and many are trained in both fields.
+A mohel is an observant Jew trained in the laws of brit milah and in the procedure itself, who performs the circumcision at a bris. A mohel is not necessarily a doctor, and many are trained in both fields.
 
 ### How do I find a mohel near Lafayette?
-Ask your rabbi, your pediatrician, and other Jewish parents. You can call Rabbi Labkowski at 925-384-7242 and he will help you find a qualified mohel for your family.
+Ask your rabbi, your pediatrician, and other Jewish parents. You can call Rabbi Labkowski at 925-384-7242 to talk it through.
 
 ### When should I choose a mohel?
 As early as possible, even during the pregnancy, since the bris is only a week after the birth. See [new parents in Lamorinda](/learn/new-parents-in-lamorinda).
 
 ### Can a pediatrician or surgeon do the bris?
-A bris is a religious act and must be performed by someone who knows Jewish law, which is why a mohel is used. Ask the Rabbi about your specific questions.
+A medical circumcision is not a bris. A bris is a mitzvah, done with its blessings by an observant Jew trained in its laws, which is why families use a mohel; some doctors are also trained mohalim. Ask the Rabbi about your situation.
 
 ### What if the mohel says my baby needs to wait?
 Then you wait. The baby's health always comes first, and the bris is held when he is ready.
@@ -56,6 +56,6 @@ Fees vary from one mohel to another, so ask the mohel directly when you call.
 
 ## Take the next step
 
-- Call Rabbi Labkowski at 925-384-7242 and ask for help finding a mohel.
+- Call Rabbi Labkowski at 925-384-7242 to talk through your choice of a mohel.
 - Read [preparing for a bris](/learn/preparing-for-a-bris) and learn who the [sandek and kvater](/learn/sandek-and-kvater) are.
 - If you will be a guest at a bris, see [attending a bris](/learn/attending-a-bris).

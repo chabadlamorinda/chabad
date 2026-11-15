@@ -15,7 +15,7 @@ Chanukah (חֲנֻכָּה) means "dedication," and a baby's first Chanukah is a
 
 ## Simple traditions for the first Chanukah
 
-1. **Light with the baby in your arms.** Choose a calm moment. Hold your baby at a safe distance from the flame, with another adult standing by. A baby carrier works well for parents with free hands.
+1. **Light with the baby in your arms.** Choose a calm moment. Let one parent hold the baby at a safe distance from the flame while the other lights.
 2. **Sing.** Babies love their parents' voices. Try the simple songs in [Chanukah songs](/learn/chanukah-songs), and sing Haneirot Halalu while the candles burn.
 3. **Sit for a moment.** Chabad.org suggests staying near the lights for the first half hour. A baby in a lap, a quiet song and the glow make that time easy.
 4. **Take a picture of the menorah.** A photo each year lets your child look back one day and see how the family grew.

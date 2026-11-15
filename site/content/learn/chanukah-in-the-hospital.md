@@ -23,7 +23,7 @@ The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights with fuel, wick a
 
 ## What a visit can bring
 
-Chanukah is a holiday of bringing light into dark places. Chabad.org shares a story of a woman whose husband was in intensive care during Chanukah. Candles were not allowed, so she brought an electric menorah and set it across from his bed. The small light stayed with the family for years. It shows that a modest light, offered with love, matters.
+Chanukah is a holiday of bringing light into dark places. Chabad.org shares a daughter's memory of a Chanukah when her father was in intensive care. Candles were not allowed, so her mother brought an electric menorah and set it on a shelf across from his bed, where he and the nurses could see it. That small light stayed with the family for years. It shows that a modest light, offered with love, matters.
 
 If you visit a patient this Chanukah:
 

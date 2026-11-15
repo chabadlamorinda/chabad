@@ -16,7 +16,7 @@ The holidays of the Torah, such as Rosh Hashanah and Passover, have restrictions
 - **Lighting the menorah each night.** This is the heart of the holiday. See [how to light](/learn/chanukah-menorah).
 - **The Chanukah lights are not for use.** No reading, working or other uses by their light. See [what the shamash is](/learn/what-is-the-shamash).
 - **The women's custom.** There is a longstanding custom for women not to do work while the lights burn. See [women and Chanukah](/learn/women-and-chanukah) for the details. This does not mean women cannot work during the day.
-- **Special prayers.** We add Al Hanissim (עַל הַנִּסִּים), "for the miracles," to the Amidah and to Grace After Meals, and we recite the full Hallel in synagogue. See [Al Hanissim and Hallel](/learn/al-hanissim-and-hallel).
+- **Special prayers.** We add Al Hanissim (עַל הַנִּסִּים), "for the miracles," to the Amidah and to Grace After Meals, and we add the full Hallel to the morning prayers. See [Al Hanissim and Hallel](/learn/al-hanissim-and-hallel).
 - **Joy.** The days are for gratitude, songs and food, with gifts and gelt for children. See [Chanukah foods](/learn/chanukah-foods).
 
 ## Fasting and mourning

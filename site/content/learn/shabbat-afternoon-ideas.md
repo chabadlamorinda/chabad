@@ -19,7 +19,7 @@ Chabad.org suggests Torah study, or attending a nearby class, as a natural way t
 
 - Read the week's Torah portion with your children; see [the parsha](/parsha) and [weekly parsha](/learn/weekly-parsha).
 - Read a Jewish book, stories or a short [dvar Torah](/learn/dvar-torah-at-the-shabbat-table).
-- In the summer, Chabad.org says to study a chapter of *Pirkei Avot* (Ethics of the Fathers) after the afternoon prayer. Ask the Rabbi about the custom.
+- Between Passover and Rosh Hashanah, Chabad.org says to study a chapter of *Pirkei Avot* (Ethics of the Fathers) after the afternoon prayer. Ask the Rabbi about the custom.
 - Read a story from [Jewish stories](/stories) aloud.
 
 ## Go outside, calmly
@@ -30,11 +30,11 @@ Chabad.org encourages walking within walking distance of home, to synagogue, to 
 
 Chabad.org suggests offering non-electronic games or toys so young children are happy at the table, and the same idea works all afternoon. Good choices:
 
-- Puzzles, books and playing with dolls or stuffed animals.
+- Books and playing with dolls or stuffed animals.
 - Storytelling, a family sing-along, and guessing games.
 - Running around the yard, within reason, or a calm game outside.
 
-Some activities are not for Shabbat, such as writing, drawing and playing a musical instrument, which Chabad.org lists among the things avoided. For particular games (board games, building sets, ball games), the answers depend on the details, so ask the Rabbi. More ideas are in [Shabbat with kids](/learn/shabbat-with-kids).
+Some activities are not for Shabbat, such as writing, drawing and playing a musical instrument, which Chabad.org lists among the things avoided. For particular games (puzzles, board games, building sets, ball games), the answers depend on the details, so ask the Rabbi. More ideas are in [Shabbat with kids](/learn/shabbat-with-kids).
 
 ## Visit friends and invite guests
 
@@ -50,7 +50,7 @@ Chabad.org describes the afternoon prayer, Mincha, followed by a light third mea
 Nap, read, study Torah, take a calm walk, play simple games, visit friends and eat a light third meal. Chabad.org lists all of these.
 
 ### What are good Shabbat games for kids?
-Puzzles, books, storytelling and singing are common. Writing and drawing are avoided, so ask the Rabbi about any specific game.
+Books, storytelling and singing are common. Writing and drawing are avoided, so ask the Rabbi about any specific game.
 
 ### Can children play outside on Shabbat?
 Yes, calmly. Simple play like tag is fine, but carrying outside an eruv is not. See [Shabbat walks](/learn/shabbat-walks-in-lamorinda).

@@ -21,7 +21,7 @@ That is it. Chabad.org even says takeout, store-bought food or a potluck is fine
 
 ## Plan the way families have for generations
 
-Chabad.org notes that Jewish families have saved all week to buy fish for Shabbat for generations, so Shabbat food was never only for the wealthy. A few simple habits help:
+For generations, Jewish families of modest means have set aside something special for Shabbat, so Shabbat food was never only for the wealthy. A few simple habits help:
 
 1. **Decide the menu on Sunday or Monday**, and buy once instead of several times.
 2. **Keep one "Shabbat" item in mind** as you shop, such as a good fruit or a recipe you want to try, and set it aside for Shabbat. This is an old Jewish idea of saving something special for the day.
@@ -34,7 +34,7 @@ A chicken or a big pot of soup made on Friday can become Shabbat lunch and Sunda
 
 ## Invite guests, and let them bring something
 
-Hosting does not have to cost more. Chabad.org suggests starting small, with one or two friendly people, and potluck is welcome. Ask each guest to bring a dish, a dessert or a bottle of grape juice. Invite early in the week, and tell guests the few Shabbat basics, like phones put away, so everyone is comfortable. More tips are in [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Shabbat guest guide](/learn/shabbat-guest-guide).
+Hosting does not have to cost more. Start small, with one or two friendly people; Chabad.org says a potluck is fine. Ask each guest to bring a dish, a dessert or a bottle of grape juice. Invite early in the week, and tell guests the few Shabbat basics, like phones put away, so everyone is comfortable. More tips are in [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Shabbat guest guide](/learn/shabbat-guest-guide).
 
 ## Kosher food without overspending
 
@@ -58,7 +58,7 @@ Yes. Kosher grape juice may be used for Kiddush, and many families use it every 
 Yes, if it is kosher and arrives before Shabbat begins, since carrying and cooking are not done on Shabbat. If you keep a kosher home, tell guests what to bring, and ask the Rabbi about anything you are unsure of.
 
 ### Where can I get help with Shabbat meals in Lafayette, Moraga or Orinda?
-Call Chabad of Lamorinda at 925-384-7242 or visit [the Shabbat meal page](/forms/shabbat-meal) to ask about joining a meal or having one delivered.
+Call Chabad of Lamorinda at 925-384-7242 or visit [the Shabbat meal page](/forms/shabbat-meal) to ask about joining a meal.
 
 ## Take the next step
 

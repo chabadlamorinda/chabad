@@ -42,12 +42,6 @@ Many teens drift after the party, which is natural. A few ways to keep the door 
 4. **Continue the mitzvah project** the family began.
 5. **Talk with the Rabbi.** Teens often ask better questions than adults.
 
-## Take the next step
-
-- Call Rabbi Labkowski at 925-384-7242 to hear what is planned for teens in Lafayette, Moraga and Orinda.
-- Read [Jewish teens in Lamorinda](/learn/jewish-teens-in-lamorinda) as a family.
-- Choose one mitzvah to keep for the next year.
-
 ## Common questions
 
 ### What does a boy have to do after his Bar Mitzvah?
@@ -67,3 +61,9 @@ That is common. Keep one small habit, find friends and stay in touch with the Ra
 
 ### Can a Bar or Bat Mitzvah teen lead a prayer?
 A boy can lead parts of the service. Ask the Rabbi what suits your teen and the community.
+
+## Take the next step
+
+- Call Rabbi Labkowski at 925-384-7242 to hear what is planned for teens in Lafayette, Moraga and Orinda.
+- Read [Jewish teens in Lamorinda](/learn/jewish-teens-in-lamorinda) as a family.
+- Choose one mitzvah to keep for the next year.

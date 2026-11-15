@@ -17,7 +17,7 @@ Chabad.org notes that Ashkenazim also tend to avoid naming after a deceased pers
 
 ## The Sephardi custom: honor the living
 
-Sephardi families do name babies after living relatives, often the grandparents, and the grandparent regards it as a great honor. If your family has both traditions, for example, one parent Ashkenazi and one Sephardi ask the Rabbi which custom to follow for your family.
+Sephardi families do name babies after living relatives, often the grandparents, and the grandparent regards it as a great honor. If your family has both traditions, for example, one parent Ashkenazi and one Sephardi, ask the Rabbi which custom to follow for your family.
 
 ## Exceptions that Ashkenazi sources mention
 
@@ -27,7 +27,7 @@ Chabad.org describes several allowances. Because these depend on the case, they 
 - **A living righteous person or Torah scholar.** A child may be named after such a person.
 - **A parent or grandparent who agrees.** Rarely, a living parent or grandparent allows the child to take the name.
 
-If a baby was already named after a living person, Chabad.org says the name should not be changed, but it should not be used as the main name. Ask the Rabbi what to do.
+If a baby was already named after a living relative, ask the Rabbi what to do.
 
 ## What if there are several loved ones, or a name is hard to use?
 

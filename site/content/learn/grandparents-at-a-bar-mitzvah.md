@@ -15,8 +15,8 @@ Judaism sees the Jewish people as a chain: parents teach children, who teach the
 
 At a Torah reading, honors such as an aliyah, opening the ark, lifting or dressing the Torah are given to family members. Customs and practice differ by synagogue and the day of the week, and who may be called depends on the situation, so please ask the Rabbi in advance. A few possibilities:
 
-- **An aliyah or another honor** for a grandfather, or for a grandmother in a way that suits the service. Ask the Rabbi what is possible at your celebration. See [aliyah](/learn/aliyah).
-- **Passing the Torah down the generations,** a custom in some families, where the Torah is handed from grandfather to father to child. It is a beautiful image. Ask whether it fits your service.
+- **An aliyah or another honor** for a grandfather. Ask the Rabbi what is possible at your celebration. See [aliyah](/learn/aliyah).
+- **A place of honor for a grandmother,** such as a blessing or a few words at the meal. Ask the Rabbi how best to honor her.
 - **Standing beside the child** as he or she begins. A grandparent can also hold the child's hand at the Kiddush.
 
 ## Giving a blessing in your own words
@@ -47,12 +47,6 @@ Chabad.org mentions books of Jewish learning, ritual items and gifts of money, o
 
 Many grandparents travel to Lafayette, Moraga or Orinda for the celebration, and some join by video if it is not on Shabbat or a festival, when screens are not used. For a Shabbat celebration, plan to arrive before Shabbat starts and ask the Rabbi about practical details, such as walking distance and meals. See [grandparenting from afar](/learn/grandparenting-from-afar) and [attending a Bar or Bat Mitzvah](/learn/attending-a-bar-bat-mitzvah).
 
-## Take the next step
-
-- Call Rabbi Labkowski at 925-384-7242 to ask about an honor for you or your spouse.
-- Read [the parents' moment](/learn/parents-blessing-at-bar-mitzvah) to see how the blessing fits together.
-- Start writing your letter today, and share this page with the parents.
-
 ## Common questions
 
 ### What is the grandparents' role at a Bar Mitzvah?
@@ -72,3 +66,9 @@ They are welcome in person. If the celebration is not on Shabbat or a festival, 
 
 ### Can grandparents help with the Bar Mitzvah preparation?
 Yes. Learning with a grandchild, telling the family story and helping with the mitzvah project are all precious. See [Jewish grandparents](/learn/jewish-grandparents).
+
+## Take the next step
+
+- Call Rabbi Labkowski at 925-384-7242 to ask about an honor for you or your spouse.
+- Read [the parents' moment](/learn/parents-blessing-at-bar-mitzvah) to see how the blessing fits together.
+- Start writing your letter today, and share this page with the parents.

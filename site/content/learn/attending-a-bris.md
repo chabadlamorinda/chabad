@@ -7,7 +7,7 @@ local: Invited to a bris in Lamorinda, or planning one? Call Rabbi Labkowski at 
 ---
 At a bris, the guests gather in the morning for a short ceremony in which a baby boy enters the covenant of Abraham and receives his Hebrew name, and then everyone shares a festive meal. You do not need to know Hebrew or what to do: dress modestly, arrive on time, say "Mazal tov!" and enjoy.
 
-If you live in Lafayette, Moraga or Orinda, you may be invited to a bris at a home, at Chabad or in a hall. Here is what to expect, step by step. The ceremony itself is explained in our [brit milah guide](/learn/brit-milah); this guide is for the guest.
+If you live in Lafayette, Moraga or Orinda, you may be invited to a bris at a home, a synagogue or a hall. Here is what to expect, step by step. The ceremony itself is explained in our [brit milah guide](/learn/brit-milah); this guide is for the guest.
 
 ## Before you go
 

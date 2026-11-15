@@ -15,7 +15,7 @@ The Chabad custom is to light shortly after sunset, before the stars come out. M
 
 ## How long the lights must burn
 
-The lights must burn for at least half an hour after nightfall. If you light at sunset, there is a gap before nightfall, so you need fuel for about 50 minutes in total. That is why a standard box of Chanukah candles is made to last long enough. See [oil or candles](/learn/menorah-oil-and-candles). If a candle is too short, use a different one rather than ignoring the rule.
+The lights must burn for at least half an hour after nightfall. If you light at sunset, there is a gap before nightfall, so Chabad.org says to have fuel for at least 50 minutes in total. Check that your candles or oil really last that long. See [oil or candles](/learn/menorah-oil-and-candles). If a candle is too short, use a different one rather than ignoring the rule.
 
 After lighting, it is a good custom to stay near the lights for about half an hour, to sing, learn or enjoy the glow with family.
 
@@ -41,10 +41,10 @@ The site works out sunset and nightfall for Lafayette. See [the menorah page](/m
 Chabad custom is to light shortly after sunset, and the lights must burn at least half an hour after nightfall. Tonight's exact time for Lafayette is on [the menorah page](/menorah).
 
 ### Can you light Chanukah candles before sunset?
-Not on a regular weekday. The mitzvah begins at sunset, so lights kindled earlier do not count. Friday is the exception: we light before Shabbat, and use extra fuel so they burn until after nightfall.
+Not on a regular weekday: the mitzvah begins at sunset. If you truly cannot light later, ask the Rabbi, since in some cases an earlier time is possible. Friday is the exception: we light before Shabbat, and use extra fuel so they burn until after nightfall.
 
 ### How long should the Chanukah candles burn?
-At least half an hour after nightfall. If lit at sunset, plan on about 50 minutes of fuel.
+At least half an hour after nightfall. If lit at sunset, plan on at least 50 minutes of fuel.
 
 ### When do you light the menorah on Friday?
 Before the Shabbat candles, with enough oil or long candles to last half an hour past nightfall.

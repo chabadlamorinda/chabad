@@ -50,7 +50,7 @@ You can light your own menorah, having decided not to rely on the earlier lighti
 Light where you will be sleeping that night. See [Chanukah away from home](/learn/chanukah-away-from-home).
 
 ### Does it matter if the lights are lit before or after the stars appear?
-The order of nights is the same. Chabad custom is shortly after sunset; other communities light at nightfall.
+Chabad custom is shortly after sunset; other communities light at nightfall. If you are late either way, you can still light later that night while the household is awake.
 
 ## Take the next step
 

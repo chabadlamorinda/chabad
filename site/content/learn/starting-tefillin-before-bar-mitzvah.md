@@ -34,12 +34,6 @@ A boy usually receives his own pair for the Bar Mitzvah. Tefillin must be handwr
 
 Chabad.org notes that the Shehecheyanu blessing is not said when a boy first puts on tefillin or on the day of his Bar Mitzvah, because his joy is mainly in the mitzvot he will do from now on. The words of the tefillin blessing are in [Tefillin](/learn/tefillin).
 
-## Take the next step
-
-- Families in Lafayette, Moraga and Orinda can ask for help at [tefillin and mezuzah help](/forms/mezuzah-tefillin) or by calling Rabbi Labkowski at 925-384-7242.
-- Read about the [Bar Mitzvah prep for a child with little Hebrew](/learn/bar-mitzvah-prep-without-hebrew-school).
-- Plan the moment the family will share: [the parents' blessing](/learn/parents-blessing-at-bar-mitzvah).
-
 ## Common questions
 
 ### When does a boy start tefillin before his Bar Mitzvah?
@@ -59,3 +53,9 @@ Go slowly and make a calm routine. Call the Rabbi, who will shape the practice a
 
 ### What if we have started late?
 It is never too late. Call Rabbi Labkowski at 925-384-7242 and he will build a plan with the time you have.
+
+## Take the next step
+
+- Families in Lafayette, Moraga and Orinda can ask for help at [tefillin and mezuzah help](/forms/mezuzah-tefillin) or by calling Rabbi Labkowski at 925-384-7242.
+- Read about the [Bar Mitzvah prep for a child with little Hebrew](/learn/bar-mitzvah-prep-without-hebrew-school).
+- Plan the moment the family will share: [the parents' blessing](/learn/parents-blessing-at-bar-mitzvah).

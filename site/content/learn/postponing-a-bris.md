@@ -11,7 +11,7 @@ Many parents in Lafayette, Moraga and Orinda hear "we need to wait" from the ped
 
 ## Why health comes first
 
-The brit milah (בְּרִית מִילָה, "covenant of circumcision") is a great mitzvah, but Jewish law places the life and health of a child above it. Maimonides, the great medieval sage, put it simply: a bris can always be done later, but a Jewish soul cannot be brought back. Chabad.org explains that the Lubavitcher Rebbe applied this principle to jaundice, following the ruling of the Tzemach Tzedek, the third Chabad Rebbe.
+The brit milah (בְּרִית מִילָה, "covenant of circumcision") is a great mitzvah, but Jewish law places the life and health of a child above it. Maimonides, the great medieval sage, put it simply: a bris can always be done later, but a Jewish soul cannot be brought back.
 
 The baby does not lose anything by waiting. The covenant is his from birth, and the bris is simply held on the day he is ready. See [Brit Milah: a simple guide](/learn/brit-milah) for what the ceremony means.
 
@@ -28,7 +28,7 @@ The doctors and a qualified mohel decide whether your baby is healthy enough. Th
 
 ## Setting the new date
 
-Once the baby has recovered, the bris is held without unnecessary delay. How soon exactly depends on the case. Chabad.org notes that in some cases the bris takes place right after recovery, and in others, such as when the skin color had to return to normal, the custom is to wait seven full days after recovery. Because sources differ, ask the mohel and the Rabbi what applies to your son.
+Once the baby has recovered, the bris is held without unnecessary delay. How soon exactly depends on the case. Chabad.org notes that in certain cases the custom is to wait seven full days after recovery. Which cases these are is for the mohel and the Rabbi to decide, so ask them what applies to your son.
 
 Two more points:
 

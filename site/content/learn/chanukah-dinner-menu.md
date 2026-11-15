@@ -9,7 +9,7 @@ A good Chanukah dinner has something fried in oil, usually latkes, and is built 
 
 ## First, choose: meat or dairy?
 
-Jewish law keeps meat and dairy apart (see [meat and milk](/learn/meat-and-milk)), so decide before you shop. The dairy custom recalls Yehudit (Judith), who fed cheese to an enemy general (see [Chanukah foods](/learn/chanukah-foods)). A meat dinner is just as welcome. Many families in Lafayette, Moraga and Orinda do dairy on one night and meat on another.
+Jewish law keeps meat and dairy apart (see [meat and milk](/learn/meat-and-milk)), so decide before you shop. The dairy custom recalls Yehudit (Judith), who fed cheese to an enemy general (see [Chanukah foods](/learn/chanukah-foods)). A meat dinner is just as welcome. Families in Lafayette, Moraga and Orinda can do dairy on one night and meat on another.
 
 [Pareve](/learn/pareve) foods, such as plain potato latkes, vegetables, salad, fruit and fish, go with either menu.
 
@@ -31,14 +31,14 @@ The one rule: serve applesauce, not sour cream, with the latkes, and check that 
 4. **Side:** a big salad.
 5. **Dessert:** sufganiyot, a cheesecake, or any dairy sweet, and the kids' gelt.
 
-Since cheese is something people may want to check, see [kosher cheese](/learn/kosher-cheese).
+Cheese needs its own kosher check, so see [kosher cheese](/learn/kosher-cheese).
 
 ## Kosher notes for the kitchen
 
 - Use ingredients with a reliable kosher symbol (see [kosher symbols](/learn/kosher-symbols)).
 - Check leafy vegetables and herbs for insects ([checking for insects](/learn/checking-for-insects)).
 - Use separate pots, pans and serving dishes for meat and dairy.
-- Meat and dairy dishes should not share a table at the same meal. If you cook both in the same week, ask the Rabbi how long to wait between them and how to keep your dishes straight.
+- Meat and dairy dishes should not share a table at the same meal. If you serve dairy after a meat meal, ask the Rabbi how long to wait, and keep your meat and dairy dishes clearly marked.
 - Do not fry dairy and meat items in the same pan.
 
 Need kosher meat, groceries or holiday foods in the East Bay? [Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda, is always kosher.
@@ -62,7 +62,7 @@ Yes, if the latkes are pareve: made with potatoes, onion, eggs, flour, salt and 
 No. Dairy is a custom, not a command. Chabad.org suggests hosting a dairy party in memory of Yehudit, but a meat dinner is also fine.
 
 ### Can I have dessert with milk after a meat dinner?
-Not right away. Jewish law requires waiting after meat before dairy, and families follow different customs about how long. Ask the Rabbi what is right for your family, or serve a pareve dessert.
+Not right away. Jewish law requires waiting after meat before dairy. The Chabad custom, like that of most communities, is to wait six hours, though some families have other customs. Ask the Rabbi what is right for your family, or serve a pareve dessert.
 
 ### What if some guests keep kosher and others do not?
 Keep the whole meal kosher, so everyone can eat at your table. See [hosting a kosher guest](/learn/hosting-a-kosher-guest).

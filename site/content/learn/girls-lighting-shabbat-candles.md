@@ -50,12 +50,6 @@ A very young child can say it a few words at a time after her mother. The blessi
 
 Jewish tradition sees the home as a small sanctuary, and Shabbat candles as its light. A girl who lights is not only learning a ritual: she is told that she can change the atmosphere of her family. Chinuch, the education of children, begins with doing, not only with explaining; see [chinuch](/learn/chinuch).
 
-## Take the next step
-
-- Families in Lafayette, Moraga and Orinda can call Rebbetzin Tzipora Labkowski or Rabbi Labkowski at 925-384-7242 with any question.
-- Read [Shabbat candles](/learn/shabbat-candles) for the details of the mitzvah, and visit [Shabbat times](/shabbat-times) for the week.
-- Coming up to a Bat Mitzvah? Read [what changes after a Bar or Bat Mitzvah](/learn/after-the-bar-mitzvah).
-
 ## Common questions
 
 ### Should girls light Shabbat candles?
@@ -75,3 +69,9 @@ It is encouraged. A special candlestick, perhaps a gift, makes the mitzvah her o
 
 ### What if we are away from home on Friday?
 Light where you will eat Shabbat dinner. Ask the Rabbi for practical advice about hotels or places that limit open flames.
+
+## Take the next step
+
+- Families in Lafayette, Moraga and Orinda can call Rebbetzin Tzipora Labkowski or Rabbi Labkowski at 925-384-7242 with any question.
+- Read [Shabbat candles](/learn/shabbat-candles) for the details of the mitzvah, and visit [Shabbat times](/shabbat-times) for the week.
+- Coming up to a Bat Mitzvah? Read [what changes after a Bar or Bat Mitzvah](/learn/after-the-bar-mitzvah).

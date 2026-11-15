@@ -25,7 +25,7 @@ When a child starts talking, these small things are a beautiful beginning:
 Chabad.org explains that age three is a major milestone in a child's Jewish life:
 
 - **Blessings.** The child begins to say blessings before food (see [teaching kids the blessings on food](/learn/teaching-kids-blessings-on-food)), as well as the morning blessings and Grace After Meals, in simple form.
-- **Boys: kippah and tzitzit.** A boy begins to wear a [kippah](/learn/kippah) and [tzitzit](/learn/tzitzit). Many families mark this with an [upsherin](/learn/upsherin), the first haircut, when a boy turns three. Some communities, such as Sephardic ones, wait until a later age.
+- **Boys: kippah and tzitzit.** A boy begins to wear a [kippah](/learn/kippah) and [tzitzit](/learn/tzitzit). Many families mark this with an [upsherin](/learn/upsherin), the first haircut, when a boy turns three. Customs about the age vary between communities.
 - **Girls: Shabbat candles.** A girl begins to light Shabbat candles, with her own small candle or a mother's help. See [Shabbat candles](/learn/shabbat-candles).
 - **Shema at night.** The nightly Shema becomes a regular bedtime routine.
 

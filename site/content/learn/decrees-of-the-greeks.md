@@ -57,7 +57,7 @@ Chabad teaching explains that the aim was different from the decree in the Purim
 A Hellenist (in Hebrew, *mityaven*) was a Jew who adopted Greek culture and turned away from the Torah. The word comes from "Hellas," the Greek name for Greece.
 
 ### How can my family keep these mitzvot today in Lafayette, Moraga or Orinda?
-Start small, with [Shabbat](/learn/shabbat) at home. Chabad of Lamorinda in Lafayette is glad to help with Shabbat, a bris or anything else: call 925-384-7242.
+Start small, with [Shabbat](/learn/shabbat) at home. Call Chabad of Lamorinda in Lafayette at 925-384-7242 with any question about Shabbat, a bris or anything else.
 
 ## Take the next step
 

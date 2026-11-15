@@ -29,16 +29,16 @@ Why is the holiday called "lights" rather than "oil"? Chabad.org teaches that a 
 
 ## Olive oil on your Chanukah menorah
 
-Both oil and wax candles are valid, but Chabad custom prefers olive oil, since the Temple menorah burned it. See [oil or candles](/learn/menorah-oil-and-candles) for how to choose, how much to pour and how long the lights must burn, and [how to light the menorah](/learn/chanukah-menorah). If you are not sure what to buy, ask the Rabbi.
+Both oil and wax candles are valid, but the finest way to do the mitzvah is with olive oil, since the Temple menorah burned it. See [oil or candles](/learn/menorah-oil-and-candles) for how to choose, how much to pour and how long the lights must burn, and [how to light the menorah](/learn/chanukah-menorah). If you are not sure what to buy, ask the Rabbi.
 
 ## Olive oil in the kitchen
 
-The custom of eating foods cooked in oil also recalls the miracle ([Chanukah foods](/learn/chanukah-foods)). Olive oil can go on salads and vegetables, and plenty of cooks use other oils for frying. See [frying safely](/learn/frying-safely-on-chanukah). Olive oil is also what many families in Lafayette, Moraga and Orinda put in their first menorah. If you would like a local kosher source for oil, [Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda, is always kosher.
+The custom of eating foods cooked in oil also recalls the miracle ([Chanukah foods](/learn/chanukah-foods)). Olive oil can go on salads and vegetables, and plenty of cooks use other oils for frying. See [frying safely](/learn/frying-safely-on-chanukah). Families in Lafayette, Moraga and Orinda who would like a local kosher source for oil can turn to [Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda, which is always kosher.
 
 ## Common questions
 
 ### Why do Jews use olive oil for the Chanukah menorah?
-Because the Temple menorah burned pure olive oil, and Chabad custom prefers it. Candles are also valid.
+Because the Temple menorah burned pure olive oil, so it is the finest choice. Candles are also valid.
 
 ### Is olive oil one of the seven species?
 Yes. The Torah praises Israel as a land of olive oil, and the olive is one of the seven species.

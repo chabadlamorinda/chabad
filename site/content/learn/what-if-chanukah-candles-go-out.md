@@ -53,7 +53,7 @@ After the lights have burned the required time, the mitzvah is complete. It is b
 Relight it, from inside the house, and make sure it is sheltered. Consider the doorway placement in [apartments](/learn/menorah-in-an-apartment-or-condo).
 
 ### What if a candle goes out because it was too short?
-Relight it, and next time use a longer candle. If it happened on Friday, ask the Rabbi.
+A light must have enough fuel for the required time from the start, so replace it with a candle that will last long enough and light it, without new blessings, and ask the Rabbi if you are unsure. If it happened after Shabbat began, do not relight.
 
 ## Take the next step
 

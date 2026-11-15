@@ -44,7 +44,7 @@ A mezuzah on the door, a Shir Hamaalot card, a tzedakah box and a few holy books
 On or near the baby's crib. Cover it in any room where the baby is changed, and ask the Rabbi how, since opinions differ.
 
 ### Can I decorate the nursery in any style?
-Yes. Any color and any design is fine. The goal is only to add a few meaningful, holy touches.
+Yes. Any color and design is fine. Chabad.org suggests avoiding pictures of non-kosher animals or negative images, and adding a few meaningful, holy touches.
 
 ### When should we set up the nursery's Jewish items?
 Ideally before the due date, so they are in place when the baby comes home. See [new parents in Lamorinda](/learn/new-parents-in-lamorinda).

@@ -44,7 +44,7 @@ Chabad.org teaches that both are obligated, either lighting their own or taking 
 Whoever lights says the blessings aloud, and the others answer "Amen." If you each light your own menorah, each says them. Check with the Rabbi about how this works in your case.
 
 ### Do newlyweds need two menorahs?
-Not necessarily. One menorah is enough to start. Some couples choose to have a second so that each can light.
+Not necessarily. One menorah is enough for a couple. Customs about a second menorah differ, so ask the Rabbi.
 
 ### What if my in-laws want us at their house for Chanukah?
 It is a lovely gesture to share the holiday, and you can often do both. Ask the Rabbi where to light on the nights you will be away. See [Chanukah away from home](/learn/chanukah-away-from-home).

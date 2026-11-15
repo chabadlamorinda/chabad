@@ -18,11 +18,11 @@ A long time ago a powerful king told the Jews they could not keep the Torah. A s
 When the Maccabees came back to the Temple in Jerusalem, they wanted to light the menorah. They found just one small jar of pure oil, sealed, enough for one day. They lit it anyway, and it burned for eight days, until new oil was ready. That is why we light for eight nights.
 
 ## Night 3: Yehudit and the cheese
-*A traditional account told in Chabad sources.*
+*A well-known story, told in Chabad sources; its details cannot be confirmed.*
 There once was a brave woman named Yehudit. When an enemy general threatened the Jewish people, she brought him cheese so he would grow thirsty, and then wine, and the danger to her people passed. That is one reason many families eat dairy foods, like cheese latkes, on Chanukah. Ask the Rabbi if you would like to know more about her story.
 
 ## Night 4: Why we spin a dreidel
-*A well-known tradition; its details cannot be confirmed.*
+*A well-known story; its details cannot be confirmed.*
 Some say that when Jewish children were forbidden to learn Torah, they studied in secret. If a soldier came by, they would pull out a spinning top and pretend to play. Whether or not that is how it began, the letters on the dreidel, nun, gimmel, hey, shin, stand for "A great miracle happened there." See [dreidel](/learn/dreidel).
 
 ## Night 5: A light in a very dark place
@@ -30,8 +30,8 @@ Some say that when Jewish children were forbidden to learn Torah, they studied i
 In the Bergen-Belsen camp, Jewish prisoners found a way to light a Chanukah light with almost nothing: as Chabad.org tells it, a wooden clog for a menorah, a string from a uniform for a wick, and shoe polish for oil. It was tiny, but it was a real light. It shows that even in the darkest place, a small flame can bring hope.
 
 ## Night 6: Not in a rusty can
-*A story from Chabad.org's Chanukah collection, about Soviet times.*
-Two men in a labor camp wanted to light Chanukah candles in secret. One of them, Nachman, said: "Not in a rusty can from the garbage." He wanted a real menorah, with eight cups in a row and a place for the shamash. And when the time came, they lit it, even in the dark barracks. For Nachman, the mitzvah deserved to be done beautifully.
+*A story told on Chabad.org about Reb Asher Sossonkin, a Chabad chassid, in a Soviet labor camp.*
+Reb Asher and his friend Nachman, prisoners in a labor camp, wanted to light the Chanukah lights in secret. Nachman said: "Not in a rusty can from the garbage." He wanted a real menorah, with eight cups in a row and a place for the shamash. And when the time came, they lit it, even in the dark barracks. For Nachman, the mitzvah deserved to be done beautifully.
 
 ## Night 7: The family that brought the light
 *An account on Chabad.org.*
@@ -59,7 +59,7 @@ The Maccabees and the oil come from the Talmud and the prayers. Some stories are
 Tell Night 2: the Maccabees found one small jar of oil, enough for one day, and it lasted eight days. It takes about a minute.
 
 ### Why do we eat cheese on Chanukah?
-One reason given on Chabad.org is the story of Yehudit, who fed an enemy general cheese. Other families eat fried foods, to remember the oil. See [Chanukah foods](/learn/chanukah-foods).
+One reason given on Chabad.org is the story of Yehudit, who fed an enemy general cheese. We also eat foods fried in oil, to remember the miracle of the oil. See [Chanukah foods](/learn/chanukah-foods).
 
 ### Where can I find more Jewish stories for children?
 On our [stories page](/stories), and on the kids' pages of Chabad.org. You can also ask Rabbi Labkowski at 925-384-7242.

@@ -16,7 +16,7 @@ The menorah is meant to be seen, so that people remember the miracle. Chabad.org
 
 ## What about upper floors?
 
-The sources note that a menorah should be lower than about 20 cubits, which is a bit under 30 feet, so passersby can see it. A window on a high floor is often above that, so a window may not publicize anything. For that reason, many Chabad families use the doorway inside the home. If you are not sure how high your window counts, ask the Rabbi.
+The sources note that a menorah should be lower than 20 cubits (amot), roughly 30 feet, so passersby can see it. A window on a high floor is often above that, so a window may not publicize anything. For that reason, many Chabad families use the doorway inside the home. If you are not sure how high your window counts, ask the Rabbi.
 
 ## How high off the floor
 
@@ -24,11 +24,11 @@ For a doorway, the lights are ideally between about 12 and 40 inches off the flo
 
 ## Dorm rooms and shared spaces
 
-Students lighting at college should light in their room, or in a shared dining space. Many dorms prohibit open flames, which makes this tricky. Chabad.org says that where a flame is prohibited you should ask a rabbi. See [Chanukah at work and college](/learn/chanukah-at-work-and-college) and [Jewish students in Lamorinda](/learn/jewish-students-in-lamorinda).
+Students lighting at college should light in their room, or in a shared dining space. Many dorms prohibit open flames, which makes this tricky. Where a flame is not allowed, ask the Rabbi before deciding what to do. See [Chanukah at work and college](/learn/chanukah-at-work-and-college) and [Jewish students in Lamorinda](/learn/jewish-students-in-lamorinda).
 
 ## What if flames are not allowed?
 
-An electric menorah is not considered to fulfill the mitzvah, according to Chabad.org: the Temple menorah burned fuel with a wick and fire. In real circumstances, such as a care facility or a building with strict rules, a rabbi may allow a battery-powered light, but the blessings are not said. A tea light in a tray (a tray filled with water adds safety) is another option for a person with real fire-safety concerns, such as an elderly person who lives alone. An electric menorah in a window can still publicize the miracle, as long as a real menorah is also lit. Your situation is personal, so please ask the Rabbi first.
+An electric menorah is not considered to fulfill the mitzvah, according to Chabad.org: the Temple menorah burned fuel with a wick and fire. If you truly cannot have a flame, such as in a care facility or a building with strict rules, ask the Rabbi: there may be another place to light, or another solution for your case. An electric menorah in a window can still publicize the miracle, as long as a real menorah is also lit. Your situation is personal, so please ask the Rabbi first.
 
 ## Common questions
 
@@ -36,7 +36,7 @@ An electric menorah is not considered to fulfill the mitzvah, according to Chaba
 Inside the doorway on the left, opposite the mezuzah, or in a street-facing window that is not too high up.
 
 ### How high can a window menorah be?
-The sources give a limit of about 20 cubits, a bit under 30 feet from the ground. Higher than that, the doorway is the better place.
+The sources give a limit of 20 cubits (amot), roughly 30 feet from the ground. Higher than that, the doorway is the better place.
 
 ### Can I light a menorah in a dorm?
 Yes, where you live, if the rules allow. If your dorm bans flames, ask the Rabbi what to do.

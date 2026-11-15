@@ -29,7 +29,7 @@ Quiet is most important during the silent [Amidah](/learn/amidah), during the To
 
 You will see a lot of standing and sitting. Do not worry about getting it perfect. A few common moments:
 
-- People stand for the Amidah and for the [Shema](/learn/shema) in many congregations.
+- Everyone stands for the Amidah; the [Shema](/learn/shema) is usually said seated.
 - Everyone stands when the ark is opened.
 - Many people stand as the Torah scroll is carried through the room.
 
@@ -52,7 +52,7 @@ Do not use your phone, talk during prayers, eat in the sanctuary, or walk in fro
 Yes. Chabad.org lists cell phone use among the things to avoid in synagogue. On Shabbat and holidays, observant Jews do not use phones at all, so it is kindest to switch yours off before you walk in.
 
 ### Can I talk in synagogue?
-Quietly and briefly between prayers, yes, but not during the prayers or the Torah reading. Chabad.org asks us to avoid idle talk and gossip in the synagogue.
+Keep conversation for the lobby or the Kiddush. During the prayers and the Torah reading, stay silent, and Chabad.org asks us to avoid idle talk and gossip in the synagogue at any time.
 
 ### When do you stand in synagogue?
 In general, people stand for the Amidah, when the ark is open, and as the Torah is carried. Customs vary, so watch those around you and ask the Rabbi if you wish.

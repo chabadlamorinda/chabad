@@ -33,7 +33,7 @@ In Chassidic tradition, a joyful gathering of song, stories and honest talk is c
 
 ## Is there a Chanukah meal for everyone?
 
-Yes: yours. A meal can be simple. Soup, latkes and a sing-along around the kitchen table count. What matters is that it is joyful, that the family is together and that it helps the children feel the holiday. If you have guests, see [hosting a Chanukah party](/learn/hosting-a-chanukah-party). Families in Lafayette, Moraga and Orinda often invite a neighbor who might otherwise be alone.
+Yes: yours. A meal can be simple. Soup, latkes and a sing-along around the kitchen table count. What matters is that it is joyful, that the family is together and that it helps the children feel the holiday. If you have guests, see [hosting a Chanukah party](/learn/hosting-a-chanukah-party). It is a lovely mitzvah for families in Lafayette, Moraga and Orinda to invite a neighbor who might otherwise be alone.
 
 ## Common questions
 

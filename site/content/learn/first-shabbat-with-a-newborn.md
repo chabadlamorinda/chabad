@@ -15,7 +15,7 @@ You do not need to do everything. A beautiful first Shabbat might be only candle
 
 ## The new mother and Shabbat
 
-The Jewish laws about a woman after childbirth are generous. Chabad.org, quoting the Shulchan Aruch, explains that for the first days after childbirth a mother is treated as a patient who may be in danger, and Shabbat may be set aside for her needs. After that the rules depend on how she feels and how many days have passed, and later on Shabbat help can be given in other ways. These laws depend on each person's health, so please call the Rabbi, or the Rebbetzin, and do not worry or hesitate if there is any health need. See [pikuach nefesh](/learn/pikuach-nefesh) and [giving birth](/learn/giving-birth-jewish-customs).
+The Jewish laws about a woman after childbirth are generous. Jewish law, as set out in the Shulchan Aruch, treats a mother in the first days after childbirth as a patient who may be in danger, so Shabbat may be set aside for her needs. After that the rules depend on how she feels and how many days have passed, and later on Shabbat help can be given in other ways. These laws depend on each person's health, so please call the Rabbi, or the Rebbetzin, and do not worry or hesitate if there is any health need. See [pikuach nefesh](/learn/pikuach-nefesh) and [giving birth](/learn/giving-birth-jewish-customs).
 
 ## Meals: let people help
 

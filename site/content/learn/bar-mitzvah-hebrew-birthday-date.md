@@ -17,7 +17,7 @@ The Jewish calendar follows the moon and adds a leap month in some years, so a H
 2. **Note the time of birth.** A Jewish day begins at nightfall. A child born in the evening, after dark, takes the next Hebrew date.
 3. **Convert it to the Hebrew date.** Use a Jewish calendar converter, or ask the Rabbi, who will do it with you.
 4. **Count forward 13 Hebrew years** for a boy, or 12 for a girl, to the same Hebrew day and month.
-5. **Look up the Shabbat that follows** to see the Torah portion; see [your child's Torah portion](/learn/bar-mitzvah-parsha).
+5. **Look up the Shabbat on or after that date** to see the Torah portion; see [your child's Torah portion](/learn/bar-mitzvah-parsha).
 
 Families in Lafayette, Moraga and Orinda can also save a child's Hebrew birthday in their [account](/account). The site then shows the Bar or Bat Mitzvah Torah portion for each child and sends reminders.
 
@@ -33,12 +33,6 @@ Most children have a simple date. A few do not, and these are the ones to ask ab
 ## The date and the celebration are two things
 
 The child becomes Bar or Bat Mitzvah on the Hebrew birthday. The family then chooses a day for the service and celebration: a Monday or Thursday when the Torah is read, a Shabbat, or another day close by. Many choose the Shabbat on or after the birthday, and some travel to Israel. Chabad.org notes that the ideal first aliyah is a Monday or Thursday morning, or a Shabbat afternoon, and the Rabbi can help you choose. Read the [full timeline](/learn/bar-bat-mitzvah-timeline) to plan backward from the date.
-
-## Take the next step
-
-- Find the date today, then call Rabbi Labkowski at 925-384-7242 to talk about the Shabbat and the preparation. See also the [Bar and Bat Mitzvah program](/programs/bar-bat-mitzvah).
-- A boy begins tefillin about two months before the date, so read [starting tefillin before the Bar Mitzvah](/learn/starting-tefillin-before-bar-mitzvah) next.
-- Celebrate every year: [your Hebrew birthday](/learn/hebrew-birthday).
 
 ## Common questions
 
@@ -59,3 +53,9 @@ These cases have special rules and depend on the exact birth date. Ask Rabbi Lab
 
 ### Do we have to hold the celebration on the exact day?
 No. The child is Bar or Bat Mitzvah on the date itself, and the aliyah and party are held on a day that suits the family. Ask the Rabbi about a good day.
+
+## Take the next step
+
+- Find the date today, then call Rabbi Labkowski at 925-384-7242 to talk about the Shabbat and the preparation. See also the [Bar and Bat Mitzvah program](/programs/bar-bat-mitzvah).
+- A boy begins tefillin about two months before the date, so read [starting tefillin before the Bar Mitzvah](/learn/starting-tefillin-before-bar-mitzvah) next.
+- Celebrate every year: [your Hebrew birthday](/learn/hebrew-birthday).

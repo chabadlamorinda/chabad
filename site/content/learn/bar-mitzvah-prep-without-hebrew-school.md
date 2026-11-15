@@ -40,12 +40,6 @@ For girls, Chabad.org notes that local Chabad centers offer pre-Bat Mitzvah clas
 
 If the date is only a few weeks away, say so on the first call. A shorter plan, with the blessings, one mitzvah and one Torah thought, can still be moving. If your child has learning differences, see [a Bar or Bat Mitzvah with special needs](/learn/special-needs-bar-bat-mitzvah).
 
-## Take the next step
-
-- Call Rabbi Labkowski at 925-384-7242 and tell him the date. That one call starts everything.
-- Read the [step-by-step timeline](/learn/bar-bat-mitzvah-timeline) to see what comes when.
-- Prepare to put on tefillin: [starting tefillin before the Bar Mitzvah](/learn/starting-tefillin-before-bar-mitzvah).
-
 ## Common questions
 
 ### Can my child have a Bar Mitzvah without Hebrew school?
@@ -65,3 +59,9 @@ Girls can join the Bat Mitzvah Club. Boys and girls can also ask about Hebrew sc
 
 ### What if neither parent knows Hebrew?
 That is fine. Learn alongside your child, and ask the Rabbi to help. See [Hebrew reading for adults](/learn/hebrew-reading-for-adults).
+
+## Take the next step
+
+- Call Rabbi Labkowski at 925-384-7242 and tell him the date. That one call starts everything.
+- Read the [step-by-step timeline](/learn/bar-bat-mitzvah-timeline) to see what comes when.
+- Prepare to put on tefillin: [starting tefillin before the Bar Mitzvah](/learn/starting-tefillin-before-bar-mitzvah).
