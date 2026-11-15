@@ -45,7 +45,7 @@ The Rebbe taught that seven is complete within nature, and eight reaches beyond 
 Brit milah is on the eighth day, and the Greeks forbade it. One answer ties the eight days of Chanukah to it.
 
 ### What is Shemini Atzeret and how does it relate to Chanukah?
-It is the festival right after Sukkot, called "the eighth." A teaching on the tradition explains that both last eight days because both connect to what is beyond nature.
+It is the festival right after Sukkot, called "the eighth." A Chassidic teaching explains that both last eight days because both connect to what is beyond nature.
 
 ### What does 358 have to do with Chanukah?
 The letters of the dreidel add up to 358, the same as the word Mashiach, according to a Chassidic teaching.

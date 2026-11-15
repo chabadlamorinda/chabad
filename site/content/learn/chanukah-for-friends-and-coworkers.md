@@ -15,11 +15,11 @@ Today Jewish families light a menorah, a special eight-branched candelabrum (plu
 
 ## How to wish someone a happy Chanukah
 
-The most common greeting is simply "Happy Chanukah" (or "Happy Hanukkah"), and in Hebrew, "Chanukah sameach," which means a joyous Chanukah. The tradition notes that both spellings are correct: Chanukah is the way many Ashkenazi Jews spell it, while Hanukkah is common among Sephardic Jews and those transliterating from modern Hebrew. Nobody will mind either way. A friendly "Happy Chanukah!" to a Jewish neighbor or coworker is a warm gesture. See [holiday greetings](/learn/holiday-greetings) for more.
+The most common greeting is simply "Happy Chanukah" (or "Happy Hanukkah"), and in Hebrew, "Chanukah sameach," which means a joyous Chanukah. Both spellings are correct: Chanukah is the way many Ashkenazi Jews spell it, while Hanukkah is common among Sephardic Jews and those transliterating from modern Hebrew. Nobody will mind either way. A friendly "Happy Chanukah!" to a Jewish neighbor or coworker is a warm gesture. See [holiday greetings](/learn/holiday-greetings) for more.
 
 ## Kind ideas for gifts and treats
 
-Giving a gift is never required, and jewish tradition explains that gifts are not a mitzvah of Chanukah; the long-standing custom is gelt, a little money, mostly for children. If you would like to do something kind:
+Giving a gift is never required, and Jewish tradition explains that gifts are not a mitzvah of Chanukah; the long-standing custom is gelt, a little money, mostly for children. If you would like to do something kind:
 
 - **A kosher-certified treat,** such as a sealed box of chocolates or cookies with a kosher symbol. See [kosher symbols](/learn/kosher-symbols). Asking your friend what works for them is always welcome.
 - **A card** with a warm note about the holiday.
@@ -38,7 +38,7 @@ Chanukah is not a major day off work, so many Jewish people go to work or school
 
 ## Seeing a menorah up close
 
-Public menorah lightings welcome everyone. According to Jewish tradition, they are open to all, children are welcome, nothing needs to be brought, and it is wise to dress warmly for outdoor events. In Lafayette, Moraga and Orinda, see the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on December 6 at 4:00 PM, and read about [public menorah lightings](/learn/public-menorah-lighting).
+Public menorah lightings welcome everyone. They are open to all, children are welcome, nothing needs to be brought, and it is wise to dress warmly for outdoor events. In Lafayette, Moraga and Orinda, see the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on December 6 at 4:00 PM, and read about [public menorah lightings](/learn/public-menorah-lighting).
 
 ## Common questions
 

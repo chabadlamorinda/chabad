@@ -25,7 +25,7 @@ In Modern Hebrew, the Chanukah lamp is called a *hanukkiah* (חֲנֻכִּיָ�
 
 ## Lights in public places
 
-Chanukah's mitzvah is meant to be public, and tradition describes how this looks in Israel. In 2012 it reported on Chabad's "Operation Chanukah," in which young men went to army bases and outposts to light menorahs with soldiers, and on "Chanukah Mobiles," vehicles with a menorah on the roof that drove through city centers, malls, medical centers and nursing homes. All 289 Chabad centers in Israel ran Chanukah activities, and Jerusalem had more than 50 public menorahs at landmarks such as the Old City walls and the Tower of David. Jewish tradition also says that the Rebbe directed that menorahs be lit on every Israeli army base. Read more on [public menorah lightings](/learn/public-menorah-lighting) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
+Chanukah's mitzvah is meant to be public, and this is how it looks in Israel. In 2012 there were reports on Chabad's "Operation Chanukah," in which young men went to army bases and outposts to light menorahs with soldiers, and on "Chanukah Mobiles," vehicles with a menorah on the roof that drove through city centers, malls, medical centers and nursing homes. All 289 Chabad centers in Israel ran Chanukah activities, and Jerusalem had more than 50 public menorahs at landmarks such as the Old City walls and the Tower of David. The Rebbe also directed that menorahs be lit on every Israeli army base. Read more on [public menorah lightings](/learn/public-menorah-lighting) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
 
 ## Common questions
 

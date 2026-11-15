@@ -1,6 +1,6 @@
 ---
 title: Chanukah While Mourning: Can a Mourner Light the Menorah and Say the Blessings?
-description: Does Chanukah cancel shiva? Can a mourner light the menorah and say Shehecheyanu? What jewish tradition teaches, what varies, and how to ask the Rabbi.
+description: Does Chanukah cancel shiva? Can a mourner light the menorah and say Shehecheyanu? What Jewish tradition teaches, what varies, and how to ask the Rabbi.
 category: Mourning & remembrance
 related: grief-during-the-holidays, shiva-and-holidays, year-of-mourning, chanukah-menorah, comforting-mourners
 local: Mourning this Chanukah? Rabbi Labkowski will answer your questions with care. Call 925-384-7242 or see /help/talk-to-the-rabbi.

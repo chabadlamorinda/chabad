@@ -38,7 +38,7 @@ The Zohar teaches that the cave is a gateway to the Garden of Eden. According to
 - **The Chabad tradition.** Rabbi DovBer, the second Chabad Rebbe, taught that although prayers rise through Jerusalem, they first go by way of Hebron on their way to G-d.
 - **Shabbat Chayei Sarah.** Each year, when the Torah reading tells of Abraham's purchase, many people come to Hebron for Shabbat.
 
-Jewish tradition notes that access to the cave itself was closed around the 1490s and remains closed; visitors pray in the building above it.
+Access to the cave itself was closed around the 1490s and remains closed; visitors pray in the building above it.
 
 ## Visiting today
 

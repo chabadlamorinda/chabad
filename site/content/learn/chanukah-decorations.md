@@ -21,14 +21,14 @@ Jewish symbols are natural decorations for the holiday: the menorah, the dreidel
 
 ## Craft your own
 
-There are craft ideas such as making your own dreidel, crafting a unique menorah, a Chanukah apron and coloring pages. A favorite is homemade wrapping paper, which you can also use for napkins, an apron, table cards or a tablecloth. Here is how jewish tradition describes it:
+There are craft ideas such as making your own dreidel, crafting a unique menorah, a Chanukah apron and coloring pages. A favorite is homemade wrapping paper, which you can also use for napkins, an apron, table cards or a tablecloth. Here is how Jewish tradition describes it:
 
 1. **Gather** Chanukah-shaped metal cookie cutters, a sharp knife, a large russet or sweet potato, paper towels, acrylic paint (fabric paint works better for fabric), a metal tray or paper plate for the paint, and paper or fabric to print on.
 2. **Cut and stamp the shape.** Cut the potato in half and press a cookie cutter into the cut side at least half an inch deep.
 3. **Carve the design.** Use a paring knife to cut away the potato around the cutter's outline, leaving the shape raised. Pat the stamp dry.
 4. **Print.** Dip the stamp in paint and press it onto your paper or fabric.
 
-The tradition suggests buying a few extra potatoes when you shop for latke ingredients. Craft menorahs and decorations are for display; the mitzvah uses real lights in a straight row. See more in [Chanukah crafts for kids](/learn/chanukah-crafts-for-kids).
+Buy a few extra potatoes when you shop for latke ingredients. Craft menorahs and decorations are for display; the mitzvah uses real lights in a straight row. See more in [Chanukah crafts for kids](/learn/chanukah-crafts-for-kids).
 
 ## Decorations that give
 

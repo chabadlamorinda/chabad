@@ -13,7 +13,7 @@ Jewish tradition explains that Jews have eaten oily foods on Chanukah for at lea
 
 ## Israel: sufganiyot
 
-The tradition says jelly-filled doughnuts, [sufganiyot](/learn/sufganiyot) (סופגניות), are very popular in Israel. Families in Lafayette, Moraga and Orinda with roots in Israel will know them well. The word is Hebrew, but jewish tradition notes that Yiddish speakers call them *ponchikes*, close to what many Russian speakers call doughnuts.
+Jelly-filled doughnuts, [sufganiyot](/learn/sufganiyot) (סופגניות), are very popular in Israel. Families in Lafayette, Moraga and Orinda with roots in Israel will know them well. The word is Hebrew, but Yiddish speakers call them *ponchikes*, close to what many Russian speakers call doughnuts.
 
 ## Ashkenazi homes: latkes
 
@@ -51,7 +51,7 @@ The differences between communities are not a problem to solve. They show how on
 Fried foods: potato latkes among Ashkenazi Jews, sufganiyot in Israel, and bimuelos among many Sephardi families. Dairy dishes are also customary.
 
 ### What do Israelis eat on Chanukah?
-Jewish tradition says jelly-filled doughnuts, sufganiyot, are very popular in Israel.
+Jelly-filled doughnuts, sufganiyot, are very popular in Israel.
 
 ### What do Sephardi Jews eat on Chanukah?
 Many eat fried fritters or doughnuts, called bimuelos or bumuelos. Customs vary, so ask your family or the Rabbi.

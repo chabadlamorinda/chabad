@@ -9,7 +9,7 @@ A Chabad House is a Jewish community center led by a rabbi and his wife, known a
 
 ## What is a shliach?
 
-Shliach means "emissary." Chabad families are sent, guided by the teachings of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson, to wherever Jews live: big cities, suburbs, college towns and small communities. A shliach and his wife build a Jewish home that anyone can walk into, with Shabbat meals, classes, holidays, a school or preschool, and a listening ear. The tradition describes a Chabad House as a Jewish community center in the truest sense, serving the whole community from children to seniors.
+Shliach means "emissary." Chabad families are sent, guided by the teachings of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson, to wherever Jews live: big cities, suburbs, college towns and small communities. A shliach and his wife build a Jewish home that anyone can walk into, with Shabbat meals, classes, holidays, a school or preschool, and a listening ear. A Chabad House is a Jewish community center in the truest sense, serving the whole community from children to seniors.
 
 Today there are roughly 4,900 emissary families running about 3,500 institutions in 100 countries and territories. For more on the movement, see [What is Chabad?](/learn/chabad) and [the Rebbe](/learn/the-rebbe).
 
@@ -46,7 +46,7 @@ No. Every Jew is welcome, whatever their background, with no membership and no d
 Yes. Chabad of Lamorinda is at 3477 Golden Gate Way in Lafayette, serving Lafayette, Moraga and Orinda. Call 925-384-7242.
 
 ### Who founded Chabad in the Bay Area?
-According to Jewish tradition, Rabbi Chaim Itche Drizin came as an emissary in 1971 and helped establish Chabad in Berkeley and San Francisco.
+Rabbi Chaim Itche Drizin came as an emissary in 1971 and helped establish Chabad in Berkeley and San Francisco.
 
 ## Take the next step
 

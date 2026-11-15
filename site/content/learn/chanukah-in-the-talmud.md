@@ -34,7 +34,7 @@ If the oil was enough for one day, why do we celebrate eight days and not seven?
 
 ## The lights of Beit Shammai and Beit Hillel
 
-The same page of Talmud records an argument between two schools of Sages. Beit Shammai said to light eight candles on the first night and one fewer each night. Beit Hillel said to light one and add one each night. We follow Beit Hillel. A teaching on jewish tradition explains the argument: Beit Shammai looked at the potential, the full oil of the first night shrinking day by day, while Beit Hillel looked at the miracle becoming greater each night, "for we go up in holiness and not down."
+The same page of Talmud records an argument between two schools of Sages. Beit Shammai said to light eight candles on the first night and one fewer each night. Beit Hillel said to light one and add one each night. We follow Beit Hillel. A Chassidic teaching explains the argument: Beit Shammai looked at the potential, the full oil of the first night shrinking day by day, while Beit Hillel looked at the miracle becoming greater each night, "for we go up in holiness and not down."
 
 The word Chanukah (חנוכה) can even be read as a hint. The first two letters, *ches* and *nun*, suggest "eight candles," and the rest, the words "and the halachah is like Beit Hillel."
 

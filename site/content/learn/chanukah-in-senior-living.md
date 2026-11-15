@@ -9,7 +9,7 @@ Many assisted living and care homes do not allow open flames, so a real menorah 
 
 ## What is the mitzvah, and why does a flame matter?
 
-The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights in the evening, adding one each night, so that the miracle is seen. The menorah is meant to recall the lamp of the Holy Temple, so jewish tradition explains that it should be a lamp with fuel, a wick and fire. Olive oil with cotton wicks is the ideal, and wax candles also work.
+The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights in the evening, adding one each night, so that the miracle is seen. The menorah is meant to recall the lamp of the Holy Temple, so Jewish tradition explains that it should be a lamp with fuel, a wick and fire. Olive oil with cotton wicks is the ideal, and wax candles also work.
 
 For that reason, the tradition teaches that an electric menorah generally does not fulfill the mitzvah. It is a lovely way to publicize the holiday, but it is not a replacement for fire. Everyone agrees that safety comes first, and Jewish law never asks anyone to endanger a life or a building.
 

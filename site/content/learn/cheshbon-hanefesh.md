@@ -23,7 +23,7 @@ Notice the lesson. Honest accounting means noticing our excuses and taking respo
 
 ## When to do it
 
-Jewish tradition notes that the Rebbe taught different accountings throughout the year. Short ones cover the day, the week or the month, and the great, yearly reckoning is made in the month of Elul.
+The Rebbe taught different accountings throughout the year. Short ones cover the day, the week or the month, and the great, yearly reckoning is made in the month of Elul.
 
 - **Every night.** The bedtime Shema is described as the best setting for soul-accounting. The prayer includes a passage where we think of anyone we may have wronged. See [the bedtime Shema](/learn/bedtime-shema).
 - **Thursday night and the night before Rosh Chodesh.** The same article names these as especially good times.
