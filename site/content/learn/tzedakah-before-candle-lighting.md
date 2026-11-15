@@ -28,7 +28,7 @@ Children can drop their coins in too.
 
 ## Before Yom Tov
 
-The Rebbe's letter speaks of Shabbat and Yom Tov candles together, and the custom is kept before holiday candles too. The Rebbe also noted that money is set aside, not handled, on Shabbat and Yom Tov, so give before the holiday begins, not after.
+The Rebbe's letter speaks of Shabbat and Yom Tov candles together, and Chabad.org's charity guide lists giving before both Shabbat and holiday candles. The Rebbe also noted that money is not handled on Shabbat and Yom Tov, so the coin goes in before the holiday begins. On a second night of a holiday, when the candles are lit while it is already Yom Tov, the giving is done before the holiday starts; ask the Rabbi if you are unsure.
 
 ## A small habit with a big idea
 
@@ -49,7 +49,7 @@ There is no set amount for this custom. A coin or a few dollars is common. For t
 Giving tzedakah is a mitzvah for everyone, and Chabad.org encourages giving every day, especially before praying. The candle-lighting custom is described for women and girls. For your own situation, ask the Rabbi.
 
 ### What if I forget to give before lighting?
-Give when you remember, and add it to the box before the next Friday. The point is to build the habit, not to be perfect.
+If you remember on Shabbat, wait until Shabbat is over, then add it to the box. The point is to build the habit, not to be perfect.
 
 ### Can children take part?
 Yes. Girls begin lighting candles at about age three, and children can hold the coin and drop it in the pushka. See [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).

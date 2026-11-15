@@ -27,9 +27,9 @@ The Rebbe once answered a young man who was worried about how he would earn a li
 - How can this job help other people?
 - Who can I ask for advice?
 
-## A trade for the next generation
+## Helping the next generation
 
-The Talmud lists teaching one's child a trade among a parent's duties. Today this reminds us to help our children become able to support themselves honorably, while respecting who they are. If you are a parent, listen to your teen's strengths. And if you are not sure how a career choice fits with Jewish life, ask the Rabbi.
+Parents want their children to be able to support themselves honorably. Help them find that path while respecting who they are. If you are a parent, listen to your teen's strengths. And if you are not sure how a career choice fits with Jewish life, ask the Rabbi.
 
 ## Common questions
 

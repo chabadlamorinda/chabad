@@ -22,7 +22,7 @@ Chabad.org notes that Hebrew is the everyday language of Israel. Children who kn
 - **Tu BiShvat** celebrates the trees and the fruits of the Land (see [Tu BiShvat for Kids](/learn/tu-bishvat-for-kids)).
 - **The seven species**: wheat, barley, grapes, figs, pomegranates, olives and dates, for which the Torah praises the Land (see [The Seven Species](/learn/seven-species)). Letting children taste them, one by one, is a way to taste the Land.
 - **Pilgrimage festivals**: Passover, Shavuot and Sukkot were the three times a year when Jews went up to Jerusalem.
-- **Jerusalem kugel**: Chabad.org tells that this noodle dish with caramelized sugar and pepper began in nineteenth-century Jerusalem. It is an easy way to bring a taste of Jerusalem to Shabbat.
+- **Jerusalem kugel**: a sweet and peppery noodle kugel named for the city, an easy way to bring a taste of Jerusalem to Shabbat.
 
 ## Places children can picture
 

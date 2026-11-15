@@ -21,7 +21,7 @@ A mother teaches her daughter to light Shabbat candles from about age three, whe
 
 ## A story: bread in exile
 
-Rebbetzin Chana Schneerson, the Rebbe's mother, joined her husband, Rabbi Levi Yitzchak Schneerson, when he was exiled in 1939 to a place called Ch'ili. According to her diaries, as described on Chabad.org, bread was scarce, and she stood in line for hours to get bread for Shabbat. Her husband encouraged her as she left, reminding her that G-d had given them Shabbat as "a fragrant spice" and that they needed to prepare for it. Before holidays she also worked to create a festive mood, even in exile.
+Rebbetzin Chana Schneerson, the Rebbe's mother, chose to join her husband, Rabbi Levi Yitzchak Schneerson, when the Soviet authorities, after arresting him in 1939 and holding him for nearly a year, sent him into exile in the remote village of Ch'ili in Central Asia. In her diary, as Chabad.org retells it, she wrote that bread was so scarce that before Shabbat she often had to wait in line until late to receive it. As she left for the bread line, her husband would say with feeling: G-d has given us a fragrant spice called Shabbat, and we need to prepare ourselves for Shabbat.
 
 ## Not stereotypes
 

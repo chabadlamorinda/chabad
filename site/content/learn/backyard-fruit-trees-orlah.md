@@ -9,7 +9,7 @@ The fruit of a fruit tree is forbidden for its first three years. This law is ca
 
 ## What is orlah?
 
-The Torah says that the fruit of a newly planted food tree is "blocked" for three years and may not be eaten (Leviticus 19:23 to 25). Chabad.org explains that in the fourth year the fruit is holy, and from the fifth year the owner may use it freely. The law applies to real fruit trees. Bananas and pineapples are not considered trees for this law.
+The Torah says that the fruit of a newly planted food tree is "blocked" for three years and may not be eaten (Leviticus 19:23 to 25). Chabad.org explains that in the fourth year the fruit is holy, and from the fifth year the owner may use it freely. The law applies to real fruit trees. A banana plant, for example, is not considered a tree for this law.
 
 It applies even to a tree grown in a pot, according to Chabad.org. It forbids the fruit, including the peel, not other edible parts of the plant.
 
@@ -29,7 +29,7 @@ In the fourth year, the fruit is called neta revai. Chabad.org says it must be r
 
 ## Cutting down a fruit tree
 
-Chabad.org teaches that cutting down a fruit tree is generally forbidden, even a young tree that has not yet borne fruit, and many authorities say not to cut even a branch without a good reason. It is permitted when the tree no longer bears fruit, when it may cause damage or injury, or when the space is needed to build a home. Even then, ask the Rabbi first. This is related to the Jewish value of not destroying needlessly; see [bal tashchit](/learn/bal-tashchit).
+Chabad.org teaches that cutting down a fruit tree is generally forbidden, and many authorities say not to cut even a branch without a good reason. It is permitted when the tree no longer bears fruit, when it may cause damage or injury, or when the space is needed to build a home. Even then, ask the Rabbi first. This is related to the Jewish value of not destroying needlessly; see [bal tashchit](/learn/bal-tashchit).
 
 ## Grafting and mixing plants
 

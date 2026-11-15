@@ -9,7 +9,7 @@ Bringing a meal to someone who is sick, grieving or in need is a classic act of 
 
 ## Why a meal matters
 
-Chesed (חֶסֶד) is the Hebrew word for kindness. Chabad.org explains that chesed generally means non-monetary acts such as visiting the sick and inviting guests. A meal is a kindness of both hands and heart. Chabad.org's guide to visiting the sick also lists simple practical help, such as groceries, a ride to the doctor or tidying up. For someone who is unwell or overwhelmed, a prepared meal removes one worry. See [Chesed](/learn/chesed).
+Chesed (חֶסֶד) is the Hebrew word for kindness. Chabad.org explains that chesed generally means non-monetary acts such as visiting the sick and inviting guests. A meal is a kindness of both hands and heart. Chabad.org's guide to visiting the sick says to find out what the person needs and to offer help. For someone who is unwell or overwhelmed, a prepared meal removes one worry. See [Chesed](/learn/chesed).
 
 ## For mourners: the first meal
 

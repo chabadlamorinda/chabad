@@ -30,7 +30,7 @@ The Rebbe suggested setting up Torah-study groups for older adults, called Tifer
 - **Learn.** Join a class, or read a little each day. See [daily Torah study](/learn/daily-torah-study) and [Torah classes in Lamorinda](/learn/torah-classes-in-lamorinda).
 - **Mentor.** Pass on what you know to a younger person, a grandchild or a neighbor. See [Jewish grandparents](/learn/jewish-grandparents).
 - **Give.** Tzedakah and kindness are open to everyone. Read about [tzedakah](/learn/tzedakah).
-- **Put it in writing.** In one of his letters the Rebbe called writing a will a spiritual remedy for long life. An [ethical will](/learn/ethical-will) shares your values and your story with your family. Ask the Rabbi about your own situation.
+- **Put it in writing.** In one of his letters the Rebbe mentioned the traditional saying that writing a will is itself a segulah, a spiritual help, for long life. An [ethical will](/learn/ethical-will) shares your values and your story with your family. Ask the Rabbi about your own situation.
 
 ## Common questions
 

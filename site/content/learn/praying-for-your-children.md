@@ -22,11 +22,11 @@ The best-known time for a mother's personal prayer is Friday afternoon. The step
 5. Keep your eyes covered a moment longer and pray from your heart.
 6. Uncover your eyes and greet your family with "Shabbat Shalom."
 
-The Chabad.org article does not give a special text for children here, only the invitation to pray for whatever you wish. If you would like a particular Hebrew prayer, ask the Rabbi or Rebbetzin; we will not guess at wording. Read more in [Shabbat candles](/learn/shabbat-candles).
+The Chabad.org article does not give a special text for children here, only the invitation to pray for whatever you wish. If you would like a particular Hebrew prayer, ask the Rabbi or Rebbetzin. Read more in [Shabbat candles](/learn/shabbat-candles).
 
 ## Hannah: the model of a parent's prayer
 
-Hannah (*Chanah*, חנה) was childless for years. She went to the Tabernacle in Shiloh and prayed from the depths of her heart, so quietly that only her lips moved. The high priest Eli thought she was drunk, but she told him that she had "poured out" her soul before G-d. He apologized and blessed her, and she left with renewed trust. Her story is read on Rosh Hashanah, and Chabad.org notes the lessons: heartfelt prayer matters, honesty with G-d is welcome, and trust can strengthen us. Read [Hannah and her prayer](/learn/hannah-and-her-prayer).
+Hannah (*Chanah*, חנה) was childless for years. She went to the Tabernacle in Shiloh and prayed from the depths of her heart, so quietly that only her lips moved. The high priest Eli thought she was drunk, but she told him that she had "poured out" her soul before G-d. He then blessed her, and she left with renewed trust. Her story is read on Rosh Hashanah, and Chabad.org notes the lessons: heartfelt prayer matters, honesty with G-d is welcome, and trust can strengthen us. Read [Hannah and her prayer](/learn/hannah-and-her-prayer).
 
 ## Other ways to pray for a child
 

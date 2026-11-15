@@ -9,14 +9,14 @@ A Jew far from Israel can help the Jewish people there through prayer, through a
 
 ## Pray, and let your children pray
 
-Chabad.org suggests setting aside a daily prayer for the safety and peace of the people of Israel. Psalms (Tehillim) are especially fitting. Chabad.org lists Psalms 20, 22, 69 and 150 for the safety of Israel's soldiers and all its residents. It also notes that the prayer of children is especially potent. See [Tehillim](/learn/tehillim), and say a chapter together at the Shabbat table. If you would like someone remembered in prayer, share a name at [Tehillim](/tehillim).
+Chabad.org suggests setting aside a daily prayer for the safety and peace of the people of Israel. Psalms (Tehillim) are especially fitting; Chabad.org offers a selection of Psalms for difficult times, beginning with Psalm 20. It also notes that the prayer of children is especially potent. See [Tehillim](/learn/tehillim), and say a chapter together at the Shabbat table. If you would like someone remembered in prayer, share a name at [Tehillim](/tehillim).
 
 ## Do a mitzvah
 
 The Rebbe, Rabbi Menachem Mendel Schneerson, taught that one good deed done now can add to the protection of Jews everywhere. At times of danger for Israel, he asked Jews to take on specific mitzvot. As Chabad.org tells it:
 
 - **1967: tefillin.** He asked every Jewish man and boy over bar mitzvah age to put on tefillin (see [Tefillin](/learn/tefillin)).
-- **1973: children's prayer.** He asked children to pray and study Torah, including at the Western Wall.
+- **1973: children's prayer.** He asked that Jewish children gather to pray and say Torah, at the Western Wall and elsewhere in Israel.
 - **1976: mezuzah.** He encouraged Jews to fulfill the mitzvah of mezuzah for protection (see [Mezuzah](/learn/mezuzah)).
 - **1982: a letter in a Torah scroll.** He asked every Jew to take part in a Torah scroll, as an act of unity.
 
@@ -42,7 +42,7 @@ This guide is about Jewish faith and mitzvot, and not about politics. For questi
 Say Tehillim, do a mitzvah such as tefillin, Shabbat candles or checking your mezuzah, give tzedakah and stay in touch with people in Israel.
 
 ### Which Psalms should I say for Israel?
-Chabad.org lists Psalms 20, 22, 69 and 150 for the safety of Israel's soldiers and all its residents. Many also say the whole book of Tehillim.
+Chabad.org offers a selection of Psalms for difficult times, beginning with Psalm 20. The Rabbi can suggest chapters to say.
 
 ### Can a mitzvah really protect Jews in Israel?
 Chabad teaching says that every mitzvah reaches the core where all Jews are bound together, so it can help Jews everywhere. This is a matter of faith, and the Rabbi is glad to discuss it.

@@ -20,7 +20,7 @@ A light points to its source, and lighting candles before Shabbat reminds us of 
 - Light at least 18 minutes before sunset. Find this week's time at [Shabbat times](/shabbat-times).
 - A girl lights one candle. After marriage, a woman lights at least two.
 - Put a few coins in a charity box first.
-- After the blessing, cover your eyes. This is an especially good moment for private prayer.
+- Cover your eyes while saying the blessing. The moment right after, with your eyes still covered, is an especially good time for private prayer.
 
 Girls can begin lighting around age three, when they can say the blessing. See [Shabbat candles](/learn/shabbat-candles) and [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles).
 
@@ -28,11 +28,11 @@ Girls can begin lighting around age three, when they can say the blessing. See [
 
 Before baking bread, a small piece of dough is separated and burned, as the Torah says: give "the first of your kneading" (Numbers 15). A piece of about an ounce is separated and said to be challah. Chabad teaching explains that it expresses that everything we have comes from G-d, and that serving Him comes first.
 
-The word *challah* even hints at the idea: *chol* (ordinary) and the letter *hei*, which stands for G-d's name. The mitzvah brings G-d into an ordinary act like baking. The blessing is said only when the dough is large enough (the Chabad.org article gives 59 ounces of flour; for a smaller amount, ask the Rabbi or Rebbetzin). Read the whole procedure in [taking challah](/learn/hafrashat-challah), and see the practical steps in [baking challah](/learn/baking-challah). Chabad teaching also connects this mitzvah to keeping kosher: holiness reaches the kitchen.
+The blessing is said only when the dough is large enough (the Chabad.org article gives 59 ounces of flour; for a smaller amount, ask the Rabbi or Rebbetzin). Read the whole procedure in [taking challah](/learn/hafrashat-challah), and see the practical steps in [baking challah](/learn/baking-challah). Chabad teaching also connects this mitzvah to keeping kosher: holiness reaches the kitchen.
 
 ## 3. Family purity
 
-The laws of family purity guide a husband and wife through each month: a time of separation and a time when the wife immerses in the mikvah, after which the couple reunites. Chabad.org calls them the touchstone of Jewish life and the portal to a Jewish future. They are a *chok*, a divine decree whose full reason is beyond us, but Chassidic teaching describes it as a rhythm like the week, where every descent leads to a greater ascent, and as bringing G-d into the closest part of marriage.
+The laws of family purity guide a husband and wife through each month: a time of separation and a time when the wife immerses in the mikvah, after which the couple reunites. Chabad.org calls them the touchstone of Jewish life and the portal to a Jewish future. 
 
 It is a private subject, best learned one-on-one. Start with [family purity](/learn/family-purity) and [the mikvah near Lafayette](/learn/mikvah-near-lafayette), then speak with the Rebbetzin.
 
@@ -58,6 +58,6 @@ Chabad of Lamorinda in Lafayette welcomes every woman. Call 925-384-7242 to hear
 
 ## Take the next step
 
-- Light two candles this Friday night, and read [Shabbat candles](/learn/shabbat-candles).
+- Light Shabbat candles this Friday, and read [Shabbat candles](/learn/shabbat-candles).
 - Read next [being a Jewish mother](/learn/being-a-jewish-mother), then [what a mass challah bake is](/learn/mass-challah-bake).
 - Join the [Jewish Women's Circle](/programs/womens-circle) or [call us](/contact).

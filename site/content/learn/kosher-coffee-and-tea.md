@@ -5,7 +5,7 @@ category: Kosher
 related: eating-out-kosher, hidden-kosher-ingredients, kosher-symbols, kosher-when-traveling, kosher-in-a-rental-kitchen
 local: Not sure about a drink or a coffee place? Call Rabbi Labkowski at 925-384-7242 and ask.
 ---
-Plain, unflavored coffee is generally considered acceptable even without a kosher symbol, and Chabad.org says unflavored coffee from rest stops or convenience stores is generally fine. Flavored coffee, and coffee from a place that prepares non-kosher food, raises more questions, so look for kosher certification or ask the Rabbi.
+Plain, unflavored coffee is the simplest case: Chabad.org says unflavored coffee from rest stops or convenience stores is generally fine. Flavored coffee, and coffee from a place that prepares non-kosher food, raises more questions, so look for kosher certification or ask the Rabbi.
 
 ## Plain coffee and tea
 
@@ -21,7 +21,7 @@ Milk and creamers have their own questions. Chabad.org teaches that kosher milk 
 
 ## Coffee shops
 
-Chabad.org says that coffee from a non-kosher cafe is uncertain and cannot be generalized. The concern is the place: Chabad.org notes that places that prepare non-kosher food pose more risk. If you want to buy a drink in Lafayette, Moraga, Orinda or anywhere in the East Bay, you may ask the Rabbi about a particular place. Please do not rely on a chain's name or reputation: only the Rabbi or a kashrut agency can tell you.
+Chabad.org says that coffee from a non-kosher cafe can be tricky, and it is hard to make a blanket statement. If you want to buy a drink in Lafayette, Moraga, Orinda or anywhere in the East Bay, you may ask the Rabbi about a particular place. Please do not rely on a chain's name or reputation: only the Rabbi or a kashrut agency can tell you.
 
 If you want a safe option away from home, Chabad.org suggests hot water from a dedicated urn with instant coffee or a tea bag that you bring.
 
@@ -32,10 +32,10 @@ Chabad.org says a hotel room coffee maker is usable if all the coffee pouches ar
 ## Common questions
 
 ### Is coffee kosher without a hechsher?
-Plain, unflavored coffee is generally acceptable. Flavored coffee and coffee mixes should carry a reliable kosher symbol.
+Chabad.org says plain, unflavored coffee from rest stops or convenience stores is generally fine. Flavored coffee and coffee mixes should carry a reliable kosher symbol; ask the Rabbi about a particular product.
 
 ### Is Starbucks coffee kosher?
-Chabad.org says coffee from a non-kosher cafe is uncertain and cannot be generalized, because the place prepares other foods and shares equipment. Ask the Rabbi about a specific location.
+Chabad.org says coffee from a non-kosher cafe can be tricky, and it is hard to make a blanket statement. Ask the Rabbi about a specific location.
 
 ### Is flavored coffee kosher?
 Only if the flavoring is kosher. Look for a reliable symbol or ask the Rabbi.

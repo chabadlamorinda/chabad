@@ -9,9 +9,9 @@ A Jewish husband is taught to honor his wife even more than he honors himself. I
 
 ## "Honor your wife more than yourself"
 
-Chabad.org tells a story about a couple with communication problems. The husband claimed that his wife must listen to him because he was "the master of the house." The Lubavitcher Rebbe replied that there is an earlier obligation: a man should honor his wife more than he honors himself. Do that first, said the Rebbe, and the respect and love of his wife will follow. (Chabad.org presents this teaching without naming a Talmudic page; if you want the source, ask the Rabbi.)
+Chabad.org's "Different But Equal" tells of a husband who claimed that his wife must listen to him because he was "the master of the house." The Lubavitcher Rebbe replied that there is an earlier obligation: a man should honor his wife more than he honors himself. Do that first, said the Rebbe, and the respect and love of his wife will follow.
 
-Another Chabad.org teaching, from the sages, says that the blessings a man receives come on account of his wife: "Honor your wife so you may become wealthy." A husband who treats his wife as a blessing in his life is on the right track. See [shalom bayit](/learn/shalom-bayit) and [the Woman of Valor](/learn/eishet-chayil), the song many husbands sing to their wives on Friday night.
+Chabad.org also brings the sages' teaching that the blessings a man receives come on account of his wife: "Honor your wife so you may become wealthy." A husband who treats his wife as a blessing in his life is on the right track. See [shalom bayit](/learn/shalom-bayit) and [the Woman of Valor](/learn/eishet-chayil), the song many husbands sing to their wives on Friday night.
 
 ## Five things that build harmony
 
@@ -40,7 +40,7 @@ He should honor her more than himself, with respectful words, caring actions and
 Chabad teaching does not stress authority first. The Rebbe pointed a husband to his duty to honor his wife before anything else. For questions about your own home, speak with the Rabbi.
 
 ### Does "Honor your wife so you may become wealthy" mean money?
-Chabad.org gives the sages' saying as written; it teaches that a man's blessings come on account of his wife. Ask the Rabbi how to understand the word "wealthy."
+Not only. Chabad.org brings it with the sages' teaching that a man's blessings come on account of his wife, so honoring her brings blessing into the whole home.
 
 ### What can I do for my wife this week?
 Choose one of the five teachings above: say thank you, listen without advice or put her needs first once.

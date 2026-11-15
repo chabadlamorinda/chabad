@@ -16,11 +16,11 @@ The reading is taken from one long passage, Numbers 7:1 to 8:4, divided over the
 - **Day 3:** 7:24 to 35
 - **Day 4:** 7:30 to 41
 - **Day 5:** 7:36 to 47
-- **Day 6:** 7:42 to 47
-- **Day 7:** 7:48 to 53
+- **Day 6 (Rosh Chodesh):** 7:42 to 47
+- **Day 7:** 7:48 to 53 when it is Rosh Chodesh (in years when it is not, the reading is a little longer)
 - **Day 8:** 7:54 to 8:4
 
-The passages overlap a little, so that each day's reading includes the prince of that day.
+The passages overlap a little, so that each day's reading includes the prince of that day. On Rosh Chodesh the Chanukah passage is shorter, because the Rosh Chodesh reading comes first.
 
 ## Why do we read about the Mishkan on Chanukah?
 

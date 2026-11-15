@@ -19,11 +19,11 @@ Chanukah celebrates two miracles: a small group defeated a great army, and one f
 
 ## Brit milah on the eighth day
 
-A baby boy is circumcised on the eighth day of his life. This too is a mitzvah that goes beyond nature: it is a covenant that perfects the body as nature made it. Chabad.org notes that the Greeks forbade circumcision, and that one explanation of the eight days of Chanukah ties them to it. Read [brit milah](/learn/brit-milah) to learn more about this covenant.
+A baby boy is circumcised on the eighth day of his life. This too is a mitzvah that goes beyond nature: it is a covenant that corrects the body beyond the way nature made it. Chabad.org notes that the Greeks forbade circumcision, and that one explanation of the eight days of Chanukah ties them to it. Read [brit milah](/learn/brit-milah) to learn more about this covenant.
 
 ## Shemini Atzeret, the eighth day
 
-The festival of Shemini Atzeret, "the eighth day of assembly," comes right after the seven days of Sukkot. On Chabad.org, Rabbi Yitzi Hurwitz connects the eight days of Chanukah to Sukkot and Shemini Atzeret. The Torah places the commandment of the Menorah right after the festival of Sukkot, including Shemini Atzeret, and the Sages saw this as a hint. During the first seven days of Sukkot we are surrounded by G-dly energy, but cannot fully take it in; on the eighth day we connect to a deeper bond with G-d, called the *yechidah*, and are able to absorb it. He describes this as a light that makes even the darkness shine. See [Shemini Atzeret](/learn/shemini-atzeret).
+The festival of Shemini Atzeret, "the eighth day of assembly," comes right after the seven days of Sukkot. On Chabad.org, Rabbi Yitzi Hurwitz explains that Sukkot with Shemini Atzeret, like Chanukah, is eight days because both connect to what is beyond nature. In the Temple, seventy bulls were offered over the seven days of Sukkot, and on the eighth day only one, pointing to the *yechidah*, the innermost level of the soul that is one with G-d. He describes this as a light that makes even the darkness shine. See [Shemini Atzeret](/learn/shemini-atzeret).
 
 ## Even in the dreidel
 
@@ -31,7 +31,7 @@ The four letters of the dreidel, nun, gimmel, hei and shin (נ, ג, ה, ש), sta
 
 ## What does this mean for us?
 
-The Rebbe taught that Chanukah prepares us for the messianic era. Each night we add a light, and the Rebbe taught that this shows steady growth "from strength to strength." For the practical side, see [lessons of Chanukah](/learn/lessons-of-chanukah).
+The Rebbe connected Chanukah's eight lights with the future redemption. Each night we add a light, and the Rebbe taught that this shows steady growth "from strength to strength." For the practical side, see [lessons of Chanukah](/learn/lessons-of-chanukah).
 
 ## Common questions
 
@@ -45,7 +45,7 @@ The Rebbe taught that seven is complete within nature, and eight reaches beyond 
 Brit milah is on the eighth day, and the Greeks forbade it. One answer on Chabad.org ties the eight days of Chanukah to it.
 
 ### What is Shemini Atzeret and how does it relate to Chanukah?
-It is the festival right after Sukkot, called "the eighth." Chabad.org notes that the Torah places the Menorah commandment right after Sukkot, including Shemini Atzeret.
+It is the festival right after Sukkot, called "the eighth." A teaching on Chabad.org explains that both last eight days because both connect to what is beyond nature.
 
 ### What does 358 have to do with Chanukah?
 The letters of the dreidel add up to 358, the same as the word Mashiach, according to a Chabad.org teaching.

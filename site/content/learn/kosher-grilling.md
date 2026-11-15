@@ -33,7 +33,7 @@ Keep meat and dairy apart as you would at home (see [meat and milk](/learn/meat-
 
 ## Washing hands and the blessings outdoors
 
-Before eating bread, we wash our hands. According to Chabad.org, bring water and a cup, or use water from a fountain, river or non-salty lake. Water from a bathroom should be taken outside to wash. If you will be moving around, Birkat Hamazon should be said where you ate, and you may have in mind at Hamotzi that you will finish the meal elsewhere.
+Before eating bread, we wash our hands. According to Chabad.org, bring water and a cup, or use water from a fountain, river or non-salty lake. Avoid water from a bathroom; if it is the only option, take it outside to wash. If you will be moving around, Birkat Hamazon should be said where you ate, and you may have in mind at Hamotzi that you will finish the meal elsewhere.
 
 ## Shabbat picnics
 

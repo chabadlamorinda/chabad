@@ -13,7 +13,7 @@ Machpelah means "doubled." Chabad.org gives two explanations: either the cave ha
 
 ## How Abraham bought the cave
 
-When Sarah passed away at the age of 127, Abraham came to Hebron to mourn her and to find a place to bury her. The Torah tells the story at length in the portion called *Chayei Sarah*. Ephron, the owner of the cave, offered it to Abraham as a gift. Abraham insisted on paying, and bought the cave and its field for 400 shekels of silver. The article on Chabad.org calls this the first recorded purchase of land in the Land of Israel by a Jew.
+When Sarah passed away at the age of 127, Abraham came to Hebron to mourn her and to find a place to bury her. The Torah tells the story at length in the portion called *Chayei Sarah*. Ephron, the owner of the cave, offered it to Abraham as a gift. Abraham insisted on paying, and bought the cave and its field for 400 shekels of silver. Chabad.org calls it the first plot of land in the Holy Land legally owned by the Jewish people.
 
 Read about Abraham and Sarah in [Abraham and Sarah](/learn/abraham-and-sarah).
 
@@ -33,12 +33,12 @@ The Zohar teaches that the cave is a gateway to the Garden of Eden. According to
 ## A place of prayer through the ages
 
 - **Caleb**, one of the twelve scouts Moses sent to the Land, went to Hebron to pray at the graves of the Patriarchs, according to the Talmud.
-- **Herod**, in the first century before the common era, built the large stone enclosure that still stands over the cave. Its stones resemble those of the Western Wall.
-- **Maimonides** and Rabbi Benjamin of Tudela are said to have visited and prayed there in the twelfth century.
+- **Herod**, in the first century before the common era, built the large stone enclosure that still stands over the cave.
+- **Maimonides** and the traveler Benjamin of Tudela both wrote that they visited and prayed there in the twelfth century.
 - **The Chabad tradition.** Rabbi DovBer, the second Chabad Rebbe, taught that although prayers rise through Jerusalem, they first go by way of Hebron on their way to G-d.
 - **Shabbat Chayei Sarah.** Each year, when the Torah reading tells of Abraham's purchase, many people come to Hebron for Shabbat.
 
-Access to the cave itself has been closed since the late fifteenth century; visitors pray in the building above it.
+Chabad.org notes that access to the cave itself was closed around the 1490s and remains closed; visitors pray in the building above it.
 
 ## Visiting today
 

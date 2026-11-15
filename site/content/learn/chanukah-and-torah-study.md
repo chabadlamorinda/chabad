@@ -9,7 +9,7 @@ Torah study is at the heart of Chanukah because the Greeks did not try to erase 
 
 ## What did the Greeks want from the Torah?
 
-Chabad.org gives a surprising answer. The Greeks were ready to admire the Torah as a work of human literature and philosophy. What they would not accept was that it comes from G-d, that it cannot be changed, and that it includes *chukim* (חוקים), commandments that go beyond human reason. According to Rabbi Avraham Brandwein, the Greeks believed that nature runs without Divine involvement and that success depends only on a person's own strength and wisdom. This is why they went after Shabbat, Rosh Chodesh and circumcision, the three mitzvot that point beyond nature.
+Chabad.org gives a surprising answer. The Greeks were ready to admire the Torah as a work of human literature and philosophy. What they would not accept was that it comes from G-d, that it cannot be changed, and that it includes *chukim* (חוקים), commandments that go beyond human reason. According to a Chabad.org article on the Greek kingdom, the Greeks believed that nature runs without Divine involvement and that success depends only on a person's own strength and wisdom. This is why they went after Shabbat, Rosh Chodesh and circumcision, the three mitzvot that point beyond nature.
 
 This is also why the Greeks defiled the oil rather than destroying it. They did not mind a lit Menorah, if it was lit with impure oil. For the history, see [the decrees of the Greeks](/learn/decrees-of-the-greeks).
 

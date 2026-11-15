@@ -19,7 +19,7 @@ The heart of a challah bake is the mitzvah of *hafrashat challah* (הפרשת ח
 
 1. Knead a dough from wheat, barley, spelt, oat or rye flour.
 2. A piece of about an ounce is separated and said to be challah, after the blessing.
-3. Because the Temple is not standing and the challah is not given to a *kohen*, the piece is not eaten but burned (wrapped in foil), in memory of that gift and in hope for the Temple's rebuilding.
+3. Because the Temple is not standing and the challah is not given to a *kohen*, the piece is not eaten: because of its holiness it may not be used, so it is burned (many wrap it in foil first).
 
 The blessing is said when the dough is large enough. Chabad.org's article on women's mitzvot gives 59 ounces of flour for a blessing; for a smaller amount, ask the Rabbi or Rebbetzin. See the full steps in [taking challah](/learn/hafrashat-challah) and [baking challah](/learn/baking-challah).
 
@@ -28,7 +28,6 @@ The blessing is said when the dough is large enough. Chabad.org's article on wom
 Chabad teaching gives several ideas:
 
 - **Everything is a gift.** Setting aside the first portion of the dough acknowledges that everything we have comes from G-d, and that serving Him comes first.
-- **The ordinary becomes holy.** The word *challah* hints at *chol* (ordinary) and the letter *hei*, which stands for G-d's name: bringing awareness of G-d into an ordinary act like baking.
 - **A link to Shabbat.** The challah brings the Shabbat feeling into the meal. See [challah](/learn/challah).
 - **A link to the past.** Chabad.org tells of a care center where baking challah brought elderly residents from Eastern Europe, who had been hard to engage, to life, as they remembered baking in their youth.
 
@@ -47,7 +46,7 @@ It is an event where many women bake challah together, take challah with a bless
 You do not need to be an expert to take part; ask the organizers what to bring when you sign up. For home baking see [baking challah](/learn/baking-challah).
 
 ### Why is part of the dough burned?
-Challah was once given to the *kohen*. Today that is not possible, so the piece is burned, as Chabad.org explains, in memory of that gift and in hope for the rebuilding of the Temple.
+Challah was once given to the *kohen*. Today that is not possible, and because the piece is holy it may not be used, so, as Chabad.org explains, it is burned.
 
 ### Can I bring a friend or my daughter?
 Chabad.org describes a bake where people of all ages gathered. Ask about a particular event when you call 925-384-7242.

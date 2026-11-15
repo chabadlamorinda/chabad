@@ -15,7 +15,7 @@ According to Chabad.org's article "Moving to a New Home," bringing bread and sal
 
 Chabad.org calls affixing a kosher mezuzah to the doorways of a home the primary requirement when moving in, one that protects everyone in the home. A mezuzah is a handwritten parchment scroll in a case. The scroll is what makes it kosher, so a gift mezuzah should contain a properly written scroll, not only a decorative case. See [mezuzah](/learn/mezuzah) and [checking mezuzahs](/learn/checking-mezuzahs-and-tefillin).
 
-Mezuzahs are put up with a blessing. Chabad of Lamorinda helps families buy kosher mezuzahs and put them up; use the [mezuzah form](/forms/mezuzah-tefillin) or call 925-384-7242.
+Mezuzahs are put up with a blessing (if you rent outside Israel, the timing is different: see [your first apartment](/learn/first-apartment-jewish-home)). Chabad of Lamorinda helps families buy kosher mezuzahs and put them up; use the [mezuzah form](/forms/mezuzah-tefillin) or call 925-384-7242.
 
 ## Jewish books and a tzedakah box
 
@@ -28,7 +28,7 @@ Soon after moving in, it is customary to hold a *chanukat habayit* (חנוכת �
 ## Simple gift ideas
 
 - A challah and salt.
-- A kosher mezuzah scroll and case, to be put up with a blessing.
+- A kosher mezuzah scroll and case.
 - A tzedakah box, with the first coins inside.
 - A Chumash, a book of Psalms or the Tanya.
 - A [Shabbat table](/learn/setting-the-shabbat-table) set, such as candlesticks.

@@ -11,7 +11,7 @@ The word means "dedication," for the rededication of the Holy Temple in Jerusale
 
 ## What Chanukah is about
 
-About 2,000 years ago, the Seleucid Greek rulers of the Holy Land tried to replace Jewish observance and belief in G-d with Greek culture. A small, poorly armed band led by Judah the Maccabee defeated a much larger army and reclaimed the Temple. When they went to light the Temple menorah, they found only one flask of pure olive oil. It burned for eight days, the time needed to prepare new pure oil. The Sages established Chanukah to thank G-d and to publicize these miracles. Read the full story in our [Chanukah story guide](/learn/chanukah-story) and meet [the Maccabees](/learn/the-maccabees).
+More than 2,000 years ago, the Seleucid Greek rulers of the Holy Land tried to replace Jewish observance and belief in G-d with Greek culture. A small, poorly armed band led by Judah the Maccabee defeated a much larger army and reclaimed the Temple. When they went to light the Temple menorah, they found only one flask of pure olive oil. It burned for eight days, the time needed to prepare new pure oil. The Sages established Chanukah to thank G-d and to publicize these miracles. Read the full story in our [Chanukah story guide](/learn/chanukah-story) and meet [the Maccabees](/learn/the-maccabees).
 
 ## How to light the menorah
 

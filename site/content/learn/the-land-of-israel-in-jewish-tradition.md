@@ -29,7 +29,7 @@ Because of this special holiness, tradition says a person living there should le
 The whole Land is holy, yet Jewish tradition singles out certain places:
 
 - **The Western Wall** in Jerusalem, where Jews pray for the rebuilding of the Temple, for peace and for Moshiach (see [The Western Wall](/learn/western-wall)).
-- **The resting places of the Patriarchs and Matriarchs** in Hebron, and Rachel's Tomb on the road nearby.
+- **The resting places of the Patriarchs and Matriarchs** in Hebron, and Rachel's Tomb on the road to Bethlehem.
 - **The graves of the sages** in the Galilee: Rabbi Shimon bar Yochai in Meron, the Rambam and Rabbi Meir Baal Haness in Tiberias, the Arizal and Rabbi Yosef Karo in Tzfat (see [Tzfat](/learn/tzfat)).
 
 Many great Jews have kissed the ground when arriving in the Land. It is a sign of love for a place that Jews have prayed for over thousands of years.

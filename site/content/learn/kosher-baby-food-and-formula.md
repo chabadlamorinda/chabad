@@ -5,7 +5,7 @@ category: Kosher
 related: kosher-symbols, new-parents-in-lamorinda, meat-and-milk, pikuach-nefesh, kosher-medicine-and-vitamins
 local: New baby and a food question? Call Rabbi Labkowski at 925-384-7242.
 ---
-Baby food and formula are made in factories that often share equipment between different products, so a kosher symbol on the package is the best guide. Your baby's health always comes first: never stop or change a baby's feeding on your own, and when there is a medical need, speak to your pediatrician and then ask the Rabbi.
+Baby food and formula are made in factories that often share equipment between different products, so a kosher symbol on the package is the best guide. Your baby's health always comes first: follow your pediatrician on what your baby needs, and ask the Rabbi about the kosher side.
 
 ## Why baby food is complicated
 
@@ -19,7 +19,7 @@ Look for a reliable kosher symbol (see [kosher symbols](/learn/kosher-symbols)).
 
 ## When your baby's health comes first
 
-Jewish law gives great weight to a child's needs. The OU notes that Jewish law has leniencies for children and the infirm. If your baby needs a specific formula for medical reasons, feed your baby as your pediatrician advises, and ask the Rabbi afterwards. When life or health is in danger, the Torah's principle is pikuach nefesh: saving a life comes first. See [pikuach nefesh](/learn/pikuach-nefesh). Do not delay a feeding to wait for an answer.
+Jewish law gives great weight to a child's needs. The OU notes that Jewish law has leniencies for children and the infirm. If your pediatrician says your baby needs a specific formula, tell the Rabbi, and he will guide you. When a life is in danger, the Torah's principle is pikuach nefesh: saving a life comes first. See [pikuach nefesh](/learn/pikuach-nefesh).
 
 ## Homemade baby food
 
@@ -43,7 +43,7 @@ For baby vitamins and medicine, see [kosher medicine and vitamins](/learn/kosher
 It depends on the product and its certification. Look for a reliable symbol, and ask the Rabbi about the formula you use.
 
 ### Can I feed my baby a formula without a kosher symbol?
-If your baby needs it for health, feed your baby as your pediatrician advises and ask the Rabbi. Health comes first.
+Your baby's health comes first. If your pediatrician says your baby needs a particular formula, ask the Rabbi; Jewish law has important leniencies for children and the sick.
 
 ### Is jarred baby food kosher?
 Many jarred foods are fruit and vegetable purees, but equipment can be shared. Look for a reliable symbol.

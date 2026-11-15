@@ -56,6 +56,6 @@ The [Men's Club](/programs/mens-club) is a place for fellowship, learning and a 
 
 ## Take the next step
 
-- This Friday night, bless each child by hand: read [blessing your children](/learn/blessing-your-children).
+- This Friday night, bless each of your children: read [blessing your children](/learn/blessing-your-children).
 - Read on for the daily rhythm of a Jewish man: [daily mitzvot for Jewish men](/learn/daily-mitzvot-for-jewish-men).
 - Ask the Rabbi to set up a study partner, or come to the [Men's Club](/programs/mens-club).

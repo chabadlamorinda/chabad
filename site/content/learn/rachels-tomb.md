@@ -15,7 +15,7 @@ Rashi, the great commentator, explains why. Centuries later, when the Jewish peo
 
 ## Rachel's tears and G-d's promise
 
-The prophet Jeremiah describes the scene: "A voice is heard on high, lamentation and bitter weeping; Rachel is weeping for her children" (Jeremiah 31:15). G-d answers that her deeds will be rewarded and that her children will return to their land.
+The prophet Jeremiah describes the scene: "A voice is heard on high, lamentation and bitter weeping; Rachel is weeping for her children" (Jeremiah 31:14). G-d answers that her deeds will be rewarded and that her children will return to their land.
 
 A Midrash on Lamentations tells how the Patriarchs and Moses pleaded for mercy, and G-d was silent until Rachel spoke. She reminded G-d that she had given Leah the secret signs, so that her sister would not be shamed when Leah married Jacob. She asked G-d to show the same restraint toward Israel. G-d promised to bring the Jewish people back to their place for Rachel's sake.
 

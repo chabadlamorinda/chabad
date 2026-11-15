@@ -19,8 +19,8 @@ Which approach is right for you is a personal question: ask the Rabbi or Rebbetz
 ## The three prayers
 
 - **Shacharit (morning),** שחרית: the Amidah is part of the daily minimum.
-- **Mincha (afternoon),** מנחה: Chabad.org calls it a definite obligation for women, and if someone must choose between Mincha and Musaf, Mincha comes first.
-- **Maariv (evening),** מעריב: optional for women, and rarely recited.
+- **Mincha (afternoon),** מנחה: Chabad.org includes it in a woman's daily prayer, and if someone must choose between Mincha and Musaf, Mincha comes first.
+- **Maariv (evening),** מעריב: optional for women, and, Chabad.org notes, rarely recited by them.
 
 The **Amidah** (עמידה) is the quiet, standing prayer at the heart of each service. See [daily prayers](/learn/daily-prayers) and [prayer](/learn/prayer).
 
@@ -55,7 +55,7 @@ Chabad.org says a woman caring for young children may be exempt from full prayer
 Yes, Chabad.org recommends a language you understand, though the standard prayers are in Hebrew. A siddur with translation helps; see [can I pray in English?](/learn/can-i-pray-in-english).
 
 ### Do women need a minyan?
-Chabad.org defines a minyan as ten men over 13, so women are not counted in it, but a woman's daily prayer does not depend on one; ask the Rabbi about your situation. See [praying alone at home](/learn/praying-alone-at-home).
+A minyan is a quorum of ten men over Bar Mitzvah age, and a woman's daily prayer does not depend on one; ask the Rabbi about your situation. See [praying alone at home](/learn/praying-alone-at-home).
 
 ### Where can I learn to pray in Lafayette, Moraga or Orinda?
 Chabad of Lamorinda in Lafayette welcomes every woman. Call 925-384-7242 or join the [Women's Circle](/programs/womens-circle).

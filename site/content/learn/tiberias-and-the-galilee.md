@@ -11,7 +11,7 @@ Tiberias (Tveriah, טְבֶרְיָה) is a city on the shore of the Kinneret, t
 
 Tiberias was built by Herod Antipas and named for the Roman emperor Tiberius. The site had an ancient cemetery, which made it ritually impure, and many Jews avoided it at first. Chabad.org tells that Rabbi Shimon bar Yochai purified the city, and it became a center of Torah.
 
-After the destruction of the Second Temple, the Sanhedrin, the supreme Jewish court, met in several places, including Yavneh, Usha and Tzippori. After the passing of Rabbi Judah the Prince, around the year 220, it moved to Tiberias. The Jerusalem Talmud was completed here, around the year 400. It is called the Jerusalem Talmud because it records the learning of the Land of Israel (see [The Talmud](/learn/talmud)).
+After the destruction of the Second Temple, the Sanhedrin, the supreme Jewish court, met in several places, including Yavneh, Usha and Tzippori. After the passing of Rabbi Judah the Prince, around the year 220, it moved to Tiberias. The Jerusalem Talmud was compiled here, around the year 400. It is called the Jerusalem Talmud because it records the learning of the Land of Israel (see [The Talmud](/learn/talmud)).
 
 ## The Masoretes: how the Torah is read
 
@@ -33,7 +33,7 @@ The Sea of Galilee lies hundreds of feet below sea level. Tiberias is nicknamed 
 
 ## A city that was rebuilt again and again
 
-Tiberias was destroyed and rebuilt many times. In the 1500s, Doña Gracia and her nephew Joseph Hanassi restored it and welcomed Jews fleeing the Inquisition. In the 1740s, Rabbi Chaim Abulafia resettled it. A strong earthquake in 1837 destroyed most of the city, and Chassidic Jews resettled it afterward.
+Tiberias was destroyed and rebuilt many times. In the 1500s, Doña Gracia and her nephew Joseph Hanassi restored its walls and built a yeshiva there. In the 1740s, Rabbi Chaim Abulafia resettled it. A strong earthquake in 1837 destroyed almost the entire city, and the Jewish community rebuilt it.
 
 ## Visiting the Galilee
 

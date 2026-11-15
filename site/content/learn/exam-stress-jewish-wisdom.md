@@ -28,11 +28,11 @@ These are general suggestions, not Jewish law:
 - Talk to a teacher, parent, friend or counselor if you are overwhelmed.
 - Remember that one result does not decide your future.
 
-Shabbat can be a gift for a stressed student: a day with no studying, screens or work. See [Shabbat for beginners](/learn/shabbat-for-beginners). For a student who feels they cannot take a break, ask the Rabbi to help work it out.
+Shabbat can be a gift for a stressed student: a day with no homework, exam cramming, screens or work, and with time for prayer, family and Torah. See [Shabbat for beginners](/learn/shabbat-for-beginners). For a student who feels they cannot take a break, ask the Rabbi to help work it out.
 
 ## When stress becomes more than stress
 
-Some stress is normal, but if you feel hopeless, cannot sleep for days, or have thoughts of harming yourself, please talk to a trusted adult or a doctor right away. In the United States you can call or text 988, the Suicide and Crisis Lifeline, at any hour. Jewish tradition values life above all. Read [mental health: a Jewish view](/learn/mental-health-jewish-view). The Rabbi and Rebbetzin are also available to talk, at 925-384-7242.
+Some stress is normal, but if you feel hopeless, cannot sleep for days, or have thoughts of harming yourself, please talk to a trusted adult or a doctor right away. In the United States you can call or text 988, the Suicide and Crisis Lifeline, at any hour. Jewish tradition values life above all. Read [mental health: a Jewish view](/learn/mental-health-jewish-view). You can also call Rabbi or Rebbetzin Labkowski at 925-384-7242.
 
 ## Common questions
 
@@ -48,8 +48,8 @@ Chabad.org teaches that the two go together. You make the effort, and G-d brings
 ### My teenager is overwhelmed by school pressure. What can I do?
 Listen first, and remind your child that their value is not one grade. See [parents and teenagers](/learn/parents-and-teenagers), and talk to the school counselor or your doctor if needed. The Rabbi is also glad to talk, at 925-384-7242.
 
-### Should I study on Shabbat?
-Please ask the Rabbi about studying and exams on Shabbat and holidays, since the rules depend on the situation.
+### Can I do schoolwork or study for exams on Shabbat?
+Learning Torah on Shabbat is a mitzvah, but schoolwork and exams on Shabbat and holidays raise questions that depend on the situation. Please ask the Rabbi.
 
 ### Where can students in Lafayette, Moraga and Orinda find support?
 Read [Jewish students in Lamorinda](/learn/jewish-students-in-lamorinda), or call 925-384-7242.

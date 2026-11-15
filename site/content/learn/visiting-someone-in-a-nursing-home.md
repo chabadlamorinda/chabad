@@ -25,13 +25,13 @@ There is also the matter of honoring older people. The Rebbe, Rabbi Menachem Men
 1. **Arrive upbeat.** Enter in a positive mood and avoid sadness or gloom.
 2. **Follow their lead.** Do not bring up the illness unless they do, and do not tell stories about someone else who did not recover.
 3. **Share something light.** A kind word, a cheerful story or a short Torah thought, whichever suits the person.
-4. **Ask what they need.** Chabad.org mentions simple help such as groceries, a ride to the doctor or tidying up.
+4. **Ask what they need.** Chabad.org says a visit should find out what the person needs, and offer help where you can.
 5. **Ask for their stories and advice.** Since older people have learned lessons that can guide the young, your interest tells them they still matter.
 6. **Keep it fairly short.** Tailor the length to the person's energy.
 
 ## Before you leave
 
-Wish the person a speedy recovery, a refuah sheleimah (רְפוּאָה שְׁלֵמָה). Chabad.org suggests saying a short prayer, such as asking G-d to heal them among all the other sick of Israel. It adds that a prayer need not be long; a sincere request counts. See [Mi Sheberach](/learn/mi-sheberach).
+Wish the person a speedy recovery, a refuah sheleimah (רְפוּאָה שְׁלֵמָה). Chabad.org suggests saying a short prayer, such as asking G-d to heal them among all the other Jewish sick. It adds that a prayer need not be long; a sincere request counts. See [Mi Sheberach](/learn/mi-sheberach).
 
 ## Bringing Shabbat and holidays
 
@@ -56,7 +56,7 @@ Bikur cholim applies to those who are seriously ill or unable to care for themse
 Electric lights can be used where an open flame is not possible, according to Chabad.org. Ask the staff and the Rabbi.
 
 ### Can the Rabbi or Rebbetzin visit someone in a care facility near Lafayette, Moraga or Orinda?
-The Rabbi and Rebbetzin visit the sick at home, in the hospital and in care facilities. To arrange a visit, call Rabbi Labkowski at 925-384-7242.
+The Rabbi and Rebbetzin visit the sick at home, in the hospital and in care facilities. To ask about a visit, call Rabbi Labkowski at 925-384-7242.
 
 ### What if the person has dementia or does not recognize me?
 You still fulfill the mitzvah: Chabad.org notes it counts even when the person is asleep or unaware, because you are praying for them and checking on their needs. See [When a Parent Has Dementia](/learn/when-a-parent-has-dementia).

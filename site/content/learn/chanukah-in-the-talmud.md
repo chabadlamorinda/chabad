@@ -30,7 +30,7 @@ The Gemara notes that the flask had the seal of the Kohen Gadol. One teaching on
 
 ## The question of eight days
 
-If the oil was enough for one day, why do we celebrate eight days and not seven? The great authority Rabbi Yosef Caro asked this in his *Beit Yosef*, and Chabad.org lists several of the answers: the oil was divided into eight portions, or the menorah remained full after the first night, or the entire flask was poured in and the miracle was that it lasted eight nights. Rabbi Yehuda Shurpin lists thirteen possible answers in all. A fuller discussion is in [Why is Chanukah eight days?](/learn/why-is-chanukah-eight-days) and in [Which Chanukah miracle?](/learn/which-chanukah-miracle).
+If the oil was enough for one day, why do we celebrate eight days and not seven? The great authority Rabbi Yosef Caro asked this in his *Beit Yosef*, and Chabad.org lists several of the answers: the oil was divided into eight portions, or the jug stayed full after the first night, or the Menorah was still full the next morning. Rabbi Yehuda Shurpin lists thirteen possible answers in all. A fuller discussion is in [Why is Chanukah eight days?](/learn/why-is-chanukah-eight-days) and in [Which Chanukah miracle?](/learn/which-chanukah-miracle).
 
 ## The lights of Beit Shammai and Beit Hillel
 

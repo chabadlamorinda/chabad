@@ -15,9 +15,9 @@ The Rebbe explained that this is why the Chanukah menorah has eight lights and n
 
 ## 2. A light no decree can stop
 
-In the same discourse, the Rebbe points out something striking. Some mitzvot can be prevented by a harsh government, because a Jew who refuses to give them up may be in danger. But the mitzvah of Chanukah can always be done: even in the hardest circumstances, one candle at the dinner table fulfills it. In this way, no decree can stop Chanukah. The Rebbe explained that the mitzvah is rooted in the soul's bond with G-d's essence, which no sin or exile can break.
+In the same discourse, the Rebbe points out something striking. The Greeks were able to defile the oil and stop the service of the Temple Menorah, but the Chanukah lights "will never be nullified": they keep shining even in the darkest exile. The Rebbe connected the Chanukah lights with the deepest bond between a Jew and G-d Himself.
 
-This is a teaching of courage. A very small flame can be kept anywhere. See also [menorahs in dark times](/learn/menorahs-in-dark-times).
+This is a teaching of courage: even a small flame keeps shining in the dark. See also [menorahs in dark times](/learn/menorahs-in-dark-times).
 
 ## 3. One more light each night
 
@@ -27,7 +27,7 @@ For the rules and customs of lighting, see [the Chanukah menorah](/learn/chanuka
 
 ## 4. Every home a Chabad House
 
-On the fifth, sixth and seventh nights of Chanukah in 1987, the Rebbe spoke to children and adults about a very practical mission. He asked children to request from their parents a symbolic "spiritual Chanukah gelt": to make their own room, and ideally the whole house, a place of prayer, learning and charity. Children can begin by saying *Modeh Ani* each morning, keeping a *pushkah* (charity box) in their room, and having a siddur or Chumash. Married adults, he said, should work together to make their home a Chabad House, a place of Torah, prayer and acts of kindness.
+On Chanukah of 1987, the Rebbe spoke to children and adults about a very practical mission. He asked children to request from their parents a symbolic "spiritual Chanukah gelt": to make their own room, and ideally the whole house, a place of prayer, learning and charity. Children can begin by keeping a *pushkah* (charity box) in their room, along with a siddur or Chumash for prayer and learning. Married adults, he said, should work together to make their home a Chabad House, a place of Torah, prayer and acts of kindness.
 
 The Rebbe also called for public menorahs in visible places in every city and town, to publicize the miracle, and to use those lightings to invite people to light at home. You can read about this in [public menorah lightings](/learn/public-menorah-lighting) and [the history of the menorah campaign](/learn/menorah-campaign-history).
 

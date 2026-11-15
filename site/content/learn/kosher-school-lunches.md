@@ -9,7 +9,7 @@ A kosher school lunch is simple when you decide what kind it is: a meat lunch, a
 
 ## Pick one: meat, dairy or pareve
 
-As the guide on [meat and milk](/learn/meat-and-milk) explains, every kosher food is meat, dairy or pareve. Pareve foods are neither, such as fruits, vegetables, grains, eggs and fish, and they can be eaten with either. For a lunchbox, the easiest rule is to make the whole lunch fit one category.
+As the guide on [meat and milk](/learn/meat-and-milk) explains, every kosher food is meat, dairy or pareve. Pareve foods are neither, such as fruits, vegetables, grains, eggs and fish, and they can be eaten with either (fish, though, is not eaten together with meat). For a lunchbox, the easiest rule is to make the whole lunch fit one category.
 
 - **A pareve lunch** is the simplest: fruit, vegetables, bread or crackers with a pareve spread, eggs.
 - **A dairy lunch** might include cheese, yogurt or milk, alongside bread, fruit and vegetables.
@@ -27,11 +27,11 @@ Your school may have its own rules about what can be brought, especially about a
 
 ## Save money
 
-Most kosher food in a regular store costs the same as other food. A lunchbox of fruit, vegetables and dry goods is inexpensive. For tips, see [keeping kosher on a budget](/learn/kosher-on-a-budget).
+A lunchbox of fruit, vegetables and dry goods is inexpensive. For tips, see [keeping kosher on a budget](/learn/kosher-on-a-budget).
 
 ## Blessings
 
-Before your child eats, they say a blessing. Chabad.org teaches that around age three a child begins to say blessings over food. A simple blessings card in the lunchbox can help. See [teaching kids the blessings on food](/learn/teaching-kids-blessings-on-food).
+Before your child eats, they say a blessing. Children can learn to say these blessings from a young age. A simple blessings card in the lunchbox can help. See [teaching kids the blessings on food](/learn/teaching-kids-blessings-on-food).
 
 ## Common questions
 

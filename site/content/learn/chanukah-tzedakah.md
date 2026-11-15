@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: tzedakah, chanukah-gelt, children-money-and-tzedakah, year-end-tzedakah, chanukah-mitzvah-projects-for-kids
 local: Help light up a life this Chanukah. Give to the holidays fund or the Chesed Fund, or call Rabbi Labkowski at 925-384-7242.
 ---
-Yes, Jewish tradition encourages us to give more tzedakah (צדקה, charity) during the eight days of Chanukah. The Lubavitcher Rebbe taught that on Chanukah "one should increase in giving tzedakah," because the lights of Chanukah and the giving of charity both bring light into the world and hasten the redemption.
+Yes, Jewish tradition encourages us to give more tzedakah (צדקה, charity) during the eight days of Chanukah. The Lubavitcher Rebbe, quoting the halachic authorities, taught that on Chanukah one should increase in giving tzedakah, because the lights of Chanukah and the giving of charity both bring light into the world and hasten the redemption.
 
 ## Where does the custom come from?
 
@@ -18,7 +18,7 @@ The Rebbe also explained that on the second day we add something else: the study
 The best-known giving of Chanukah is *gelt* (Yiddish for "money"), the coins given to children. A Chabad.org article explains the thought behind it:
 
 - **A way to teach tzedakah.** Gelt gives children a chance to give. The article suggests that a child set aside about a tenth of the gelt for charity and use the rest for good, wholesome things.
-- **A reward for learning.** Chanukah shares a root with *chinuch*, education, and gelt rewards a child's good behavior and love of Torah.
+- **A reward for learning.** Chanukah shares a root with *chinuch*, education, and gelt is given to children as a reward for Torah study.
 - **Wealth for holy purposes.** The Greeks tried to turn Jewish possessions toward ungodly ends. Gelt reminds us that money can serve a holy purpose.
 - **Helping those in need.** The Magen Avraham, a classic legal authority, notes that money given to the poor lets them buy Chanukah lights without embarrassment.
 
@@ -32,7 +32,7 @@ In 1987 the Rebbe spoke to children and asked them to request a special "spiritu
 
 - **Give to the needs of your own area.** Local giving is described in [local tzedakah in Lamorinda](/learn/local-tzedakah-in-lamorinda). Helping a neighbor, a senior or a family in need is a living Chanukah lesson. See the [help for seniors and families](/help/help-for-seniors-and-families) page.
 - **Share the joy.** [Give to the holidays fund](/donate?fund=holidays#give) to help others celebrate with Chabad of Lamorinda, or [sponsor visits and help](/donate?fund=chesed#give) through the Chesed Fund. The Rabbi and Rebbetzin visit the sick at home, in the hospital and in care facilities.
-- **Give before Shabbat.** On Shabbat we do not handle money. In the Rebbe's talk he mentioned giving extra on Friday. Ask the Rabbi if you have a question about the details.
+- **Give before Shabbat.** On Shabbat we do not handle money. In the Rebbe's talk he suggested giving tzedakah twice on Friday, once for Friday and once for Shabbat; on Shabbat itself one can give food and drink to those who need it. Ask the Rabbi if you have a question about the details.
 
 ## Common questions
 
@@ -43,7 +43,7 @@ Yes. Jewish legal authorities, quoted by the Rebbe, say that on Chanukah a perso
 A Chabad.org article suggests about ten percent, with the rest used for good purposes.
 
 ### Can I give tzedakah on Shabbat Chanukah?
-We do not handle money on Shabbat. The Rebbe spoke of giving extra on Friday, and also of giving food or drink. Ask the Rabbi about your situation.
+We do not handle money on Shabbat. The Rebbe suggested giving twice on Friday, once for Friday and once for Shabbat, and on Shabbat itself giving food or drink. Ask the Rabbi about your situation.
 
 ### Why does gelt go with tzedakah?
 Gelt teaches children to share, rewards learning and reminds us that wealth is meant for holy purposes.

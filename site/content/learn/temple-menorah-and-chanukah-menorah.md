@@ -24,7 +24,7 @@ Chabad.org also notes that the candles are placed from right to left and lit fro
 - **Lights:** seven in the Temple; eight plus the shamash on Chanukah.
 - **Material:** pure gold, one piece; any fire-safe material.
 - **Where:** inside the holy chamber; at the door or window, facing out.
-- **When:** in the daytime; after nightfall.
+- **When:** in the daytime; after sunset.
 - **Fuel:** pure olive oil only; olive oil is ideal, and safe candles are fine.
 
 ## The shape of the branches
@@ -33,7 +33,7 @@ Chabad.org notes that the Rambam (Maimonides) and Rashi describe the branches as
 
 ## Why seven in the Temple and eight on Chanukah?
 
-The Rebbe explained that seven stands for the natural order, like the seven days of creation, and eight stands for what is above nature. In the Temple, G-dliness was open and revealed, and seven lights were enough. Today there is more spiritual darkness, so we need a light that goes beyond nature, and so we light eight. He also noted that the ancient harp had seven strings, and that the future Temple is connected with the number eight. Read more about this idea in [Chanukah and the number eight](/learn/chanukah-and-the-number-eight).
+The Rebbe explained that seven stands for the natural order, like the seven days of creation, and eight stands for what is above nature. In the Temple, G-dliness was open and revealed, and seven lights were enough. Today there is more spiritual darkness, so we need a light that goes beyond nature, and so we light eight. He also noted that the harp of the Temple had seven strings, and that in the future Temple there will be eight strings in the harp. Read more about this idea in [Chanukah and the number eight](/learn/chanukah-and-the-number-eight).
 
 Another idea from the Rebbe's teaching: the Temple menorah was lit inside, where holiness was visible, while the Chanukah lights are placed at the doorway, to illuminate the street. The lights of Chanukah are meant to shine outward.
 

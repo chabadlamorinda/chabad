@@ -19,8 +19,8 @@ The psalm is a song of thanks from a person who has been through a hard time and
 
 - The writer says he will exalt G-d, because G-d has raised him up and has not let his enemies rejoice over him.
 - He cried out to G-d and was healed. Rashi explains that "healed" here means forgiven.
-- "His anger lasts but a moment; His favor is for life. Weeping may stay for the night, but joy comes in the morning."
-- At the end: "You have turned my lament into dancing; You loosened my sackcloth and girded me with joy." The psalm ends with the writer promising to sing G-d's praise forever.
+- "For His wrath lasts but a moment; life results from His favor; in the evening, weeping may tarry, but in the morning there is joyful singing."
+- At the end: "You have turned my lament into dancing for me; You loosened my sackcloth and girded me with joy." The psalm ends with the writer promising to sing G-d's praise forever.
 
 Rashi also records that the Sages read this psalm as being about Mordechai, Esther and Haman. It is a psalm that moves from darkness to light, a movement we also find in Chanukah.
 

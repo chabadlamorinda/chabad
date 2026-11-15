@@ -17,15 +17,15 @@ Chabad.org notes a hidden hint in the change. The four Israeli letters add up to
 
 ## Sufganiyot: Israel's Chanukah doughnut
 
-Fried foods recall the oil that burned in the Temple. Eastern European Jews made potato latkes, and Chabad.org calls the jelly-filled doughnut, the *sufganiya* (plural *sufganiyot*), the reigning Israeli favorite. Chabad.org adds that doughnuts have been a Chanukah favorite since the Middle Ages. Latkes are also eaten by many families, so some enjoy both. See [Chanukah foods](/learn/chanukah-foods) and [latkes](/learn/latkes).
+Fried foods recall the oil that burned in the Temple. Chabad.org notes that the oldest form of this custom was dough fried in oil, the forerunner of today's jelly-filled doughnut, the *sufganiya* (plural *sufganiyot*), which is very common in Israel today. Latkes are also eaten by many families, so some enjoy both. See [Chanukah foods](/learn/chanukah-foods) and [latkes](/learn/latkes).
 
 ## A hanukkiah, not just a menorah
 
-In Modern Hebrew, the Chanukah lamp is called a *hanukkiah* (חֲנֻכִּיָּה). Chabad.org says that speakers use this word for the Chanukah lamp, keep *ner* for a candle, and use *menorah* for an electric light, and that the word was coined by Hemda Ben Yehudah (1873 to 1951). In English, both menorah and hanukkiah are widely used. The straight row of nine flames, with the shamash set apart, is the same everywhere. See [the Chanukah menorah](/learn/chanukah-menorah).
+In Modern Hebrew, the Chanukah lamp is called a *hanukkiah* (חֲנֻכִּיָּה). In English, both menorah and hanukkiah are widely used. The straight row of nine flames, with the shamash set apart, is the same everywhere. See [the Chanukah menorah](/learn/chanukah-menorah).
 
 ## Lights in public places
 
-Chanukah's mitzvah is meant to be public, and Chabad.org describes how this looks in Israel. In one year it reported on Chabad's "Operation Chanukah," in which young men went to army bases and outposts to light menorahs with soldiers, and on "Chanukah Mobiles," vehicles with a menorah on the roof that drove through city centers, malls, medical centers and nursing homes. All 289 Chabad centers in Israel ran Chanukah activities, and Jerusalem had more than 50 public menorahs at landmarks such as the Old City walls and the Tower of David. Chabad.org also says the Rebbe directed that menorahs be lit on every Israeli army base. Read more on [public menorah lightings](/learn/public-menorah-lighting) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
+Chanukah's mitzvah is meant to be public, and Chabad.org describes how this looks in Israel. In 2012 it reported on Chabad's "Operation Chanukah," in which young men went to army bases and outposts to light menorahs with soldiers, and on "Chanukah Mobiles," vehicles with a menorah on the roof that drove through city centers, malls, medical centers and nursing homes. All 289 Chabad centers in Israel ran Chanukah activities, and Jerusalem had more than 50 public menorahs at landmarks such as the Old City walls and the Tower of David. Chabad.org also says that the Rebbe directed that menorahs be lit on every Israeli army base. Read more on [public menorah lightings](/learn/public-menorah-lighting) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
 
 ## Common questions
 

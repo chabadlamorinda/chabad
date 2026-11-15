@@ -19,13 +19,13 @@ The wish to be buried in Jerusalem is part of the general love for the Land of I
 
 ## What it costs, and why not everyone is buried there
 
-Chabad.org notes that plots on the Mount of Olives can be very expensive, sometimes tens of thousands of dollars. It also notes that some families arrange to bring their loved ones to Israel for burial from far away. Whether burial in Israel is right for a particular family depends on many things: the wishes of the person, the family's situation, the arrangements involved and Jewish law.
+Chabad.org notes that plots on the Mount of Olives can be very expensive, sometimes tens of thousands of dollars. Some families also arrange to bring their loved ones to Israel for burial from far away. Whether burial in Israel is right for a particular family depends on many things: the wishes of the person, the family's situation, the arrangements involved and Jewish law.
 
 If you are thinking about it for yourself or a loved one, please speak with the Rabbi before the need arises, and not in the middle of a crisis. Families in Lafayette, Moraga, Orinda and across the East Bay are welcome to call Rabbi Labkowski with these questions at 925-384-7242.
 
 ## What stays the same everywhere
 
-A Jew who is buried anywhere shares in the hope of resurrection. Jewish law asks that a Jew be buried in a Jewish cemetery, that the casket be placed directly in the earth and that the grave be marked by a simple stone. Visitors often place a small stone on a grave when they visit (see [Visiting a Grave](/learn/visiting-a-grave)). None of these depends on where the cemetery is.
+A Jew who is buried anywhere shares in the hope of resurrection. Jewish law asks that a Jew be buried in the earth, in a Jewish cemetery, and that the grave be marked by a stone. Visitors often place a small stone on a grave when they visit (see [Visiting a Grave](/learn/visiting-a-grave)). None of these depends on where the cemetery is.
 
 For a family that mourns, the Jewish approach is the same: the funeral, the seven days of [shiva](/learn/shiva), the [unveiling](/learn/unveiling) of the stone and the yahrzeit each year.
 

@@ -9,9 +9,9 @@ Rosh Chodesh Tevet, the first day of the Hebrew month of Tevet, always falls dur
 
 ## Why does Rosh Chodesh always fall on Chanukah?
 
-Chanukah begins on the 25th of Kislev and lasts eight days. The month of Kislev has either 29 or 30 days, so the new month of Tevet always arrives while Chanukah is still going. A teaching on Chabad.org notes that the eight days of Chanukah always include at least one Shabbat and Rosh Chodesh Tevet.
+Chanukah begins on the 25th of Kislev and lasts eight days. The month of Kislev has either 29 or 30 days, so the new month of Tevet always arrives while Chanukah is still going. The eight days of Chanukah always include at least one Shabbat and Rosh Chodesh Tevet.
 
-In years when Kislev has 30 days, Rosh Chodesh is two days: the last day of Kislev and the first of Tevet. Then two days of Chanukah are Rosh Chodesh. Chabad.org's schedule for such a year lists both days with the same reading.
+In years when Kislev has 30 days, Rosh Chodesh is two days: the last day of Kislev and the first of Tevet. Then two days of Chanukah are Rosh Chodesh. Chabad.org's schedule for such a year lists both days with the same Rosh Chodesh reading, followed by each day's own Chanukah reading.
 
 You can read about the new month in general in our guide to [Rosh Chodesh](/learn/rosh-chodesh) and about the month itself in [Tevet](/learn/tevet).
 
@@ -24,7 +24,7 @@ When Rosh Chodesh Tevet falls during Chanukah, two scrolls are taken from the ar
 - **First scroll:** Numbers 28:1 to 15, the passage of Rosh Chodesh, in three aliyot.
 - **Second scroll:** the Chanukah reading of that day, from the gifts of the tribal princes. On the sixth day of Chanukah this is Numbers 7:42 to 47 and on the seventh day Numbers 7:48 to 53.
 
-If Rosh Chodesh falls on Shabbat, the weekly Torah portion is read, with the passage that begins "On the day of the Shabbat" (Numbers 28:9 to 15) as the final reading. To see why the princes' gifts are read at all, see [the Torah reading on Chanukah](/learn/chanukah-torah-reading).
+If Rosh Chodesh Tevet falls on Shabbat, three scrolls are read: the weekly Torah portion, then the Shabbat and Rosh Chodesh passage that begins "On the day of the Shabbat" (Numbers 28:9 to 15), and finally the Chanukah reading of the day. To see why the princes' gifts are read at all, see [the Torah reading on Chanukah](/learn/chanukah-torah-reading).
 
 ## The prayers of the day
 
@@ -38,9 +38,9 @@ Our guide on [Al HaNissim and Hallel](/learn/al-hanissim-and-hallel) explains wh
 
 ## Why did the Greeks target Rosh Chodesh?
 
-Rabbi Yosef Caro, in his *Beit Yosef*, asks why Chanukah is eight days. In one explanation recorded on Chabad.org, the Greeks tried to abolish three mitzvot: Shabbat, Rosh Chodesh and circumcision (brit milah). The eight days of Chanukah always include a Shabbat and Rosh Chodesh Tevet, and the eighth day connects to brit milah, which takes place on the eighth day of a baby's life. So the festival itself holds all three mitzvot the Greeks tried to cancel.
+According to a teaching on Chabad.org, the Greeks decreed against three mitzvot: Shabbat, sanctifying the new month (Rosh Chodesh) and circumcision (brit milah). The eight days of Chanukah always include a Shabbat and Rosh Chodesh Tevet, and the number eight recalls brit milah, which takes place on the eighth day of a baby's life (Chabad.org lists brit milah among the reasons given for Chanukah's eight days). So the festival itself holds all three mitzvot the Greeks tried to cancel.
 
-Another Chabad.org teaching points out why the three were chosen. They all go beyond nature: Shabbat remembers creation, circumcision perfects the body as nature made it, and the new month is set by the Sages. The Greeks believed everything depends on nature alone.
+Another Chabad.org teaching points out why the three were chosen. They all go beyond nature: Shabbat remembers creation, circumcision corrects the body beyond the way nature made it, and the new month is set by the Sages. The Greeks believed everything depends on nature alone.
 
 ## Common questions
 

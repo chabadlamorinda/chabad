@@ -15,7 +15,7 @@ Hot water and soap carry the taste of food. In a kosher kitchen, meat and milk m
 
 Chabad.org says that the ideal is to designate one dishwasher for meat or for dairy only, and not to use it for both, even if they are never run at the same time. Some kitchens have two dishwashers.
 
-Many factors are involved (the type of dishwasher, whether the racks and interior can be cleaned and what happens if a mix-up occurs), so Chabad.org advises asking your rabbi for specific questions. If you have one dishwasher, do not start using it for both on your own. Call Rabbi Labkowski at 925-384-7242 first.
+Many factors are involved, so Chabad.org advises asking your rabbi for specific questions. If you have one dishwasher, do not start using it for both on your own. Call Rabbi Labkowski at 925-384-7242 first.
 
 ## The sink: one sink or two
 
@@ -34,7 +34,7 @@ A kosher kitchen has two sets of everything that touches food (see [how to make 
 
 ## If you make a mistake
 
-Put the item aside, do not use it, and ask the Rabbi. Chabad.org's advice for a kosher kitchen is that when in doubt, ask. Very often, the situation is fixable.
+Put the item aside, do not use it, and ask the Rabbi. Chabad.org's advice for a kosher kitchen is that when in doubt, ask.
 
 ## Common questions
 
