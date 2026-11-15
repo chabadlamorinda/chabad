@@ -17,7 +17,7 @@ To get ready for Chanukah you need a menorah (one per household, or one per pers
 
 Olive oil with cotton wicks is the ideal, and wax candles are also fine. Chabad.org says gas and electric lights do not count. The lights should burn for about half an hour after nightfall, so choose candles that last.
 
-To count the candles: one on the first night, two on the second, up to eight, which is 36 for the eight nights, plus a helper candle each night, for a total of 44. Buy a few extras. For [Friday](/learn/chanukah-on-shabbat), the lights are lit before Shabbat begins, so standard half-hour candles will not last. You need longer ones, or more oil. Chabad.org notes that the fuel must last well into the night on Friday.
+To count the candles: one on the first night, two on the second, up to eight, which is 36 for the eight nights, plus a helper candle each night, for a total of 44. Buy a few extras. For [Friday](/learn/chanukah-on-shabbat), the lights are lit before Shabbat begins, so standard half-hour candles will not last. You need longer ones, or more oil. Chabad.org notes that on Friday the fuel must last until about half an hour after nightfall, which is much longer than usual.
 
 [Oil and candles](/learn/menorah-oil-and-candles) explains the options, and the [Chanukah shopping guide](/learn/chanukah-shopping-in-lamorinda) lists what to get. [Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda, is always kosher and is the local source for Chanukah and kosher items.
 

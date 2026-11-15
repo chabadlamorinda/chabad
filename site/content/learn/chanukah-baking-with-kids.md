@@ -1,6 +1,6 @@
 ---
 title: Chanukah Baking With Kids: Gelt Cookies, Dreidel Treats and Easy Doughnut Decorating
-description: Easy Chanukah baking with kids: gelt cookies, dreidel treats and doughnut decorating, with kosher tips for the kitchen. Join Chabad of Lamorinda in Lafayette.
+description: Easy Chanukah baking with kids: gelt cookies, dreidel treats and doughnut decorating, with kosher tips. Join Chabad of Lamorinda in Lafayette.
 category: Shabbat & holidays
 related: chanukah-for-kids, sufganiyot, baking-challah, chanukah-gelt, dreidel
 local: Bring the kids to decorate a doughnut at Light Up Lafayette on Dec. 6 at 4:00 PM: sign up at /events/chanukah-grand-menorah-lighting-2026.

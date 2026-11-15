@@ -1,6 +1,6 @@
 ---
 title: "Learning to Chant the Torah for a Bar Mitzvah: Trope, Practice and Confidence"
-description: "How to learn Torah trope (cantillation) for a Bar Mitzvah: what the notes are, a simple practice plan and when reading is optional. Ask Chabad of Lamorinda."
+description: "How to learn Torah trope (cantillation) for a Bar Mitzvah: what the notes are, a simple practice plan, and when reading is optional. Ask Chabad."
 category: Life cycle
 related: bar-mitzvah-parsha, torah-reading, haftarah, bar-mitzvah-prep-without-hebrew-school, bar-mitzvah-speech
 local: Thinking of a Torah reading? Call Rabbi Labkowski at 925-384-7242, or see the Bar and Bat Mitzvah program at /programs/bar-bat-mitzvah.

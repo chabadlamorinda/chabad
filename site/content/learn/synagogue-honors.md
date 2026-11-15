@@ -13,16 +13,16 @@ In a synagogue, taking part in the Torah service is a privilege. Chabad.org expl
 
 ## The honors, one by one
 
-### Opening the ark (pesichah, פְּתִיחָה)
+**Opening the ark (pesichah, פְּתִיחָה)**
 Someone opens the *aron kodesh*, the ark, so the Torah scroll can be taken out or, later, returned. This is a good first honor, because it requires no knowledge at all. Everyone stands while the ark is open.
 
-### Carrying the Torah
+**Carrying the Torah**
 The scroll is carried from the ark to the reading table (the bimah) and back, often with the congregation singing as it passes. Many people touch it with a siddur or the corner of a tallit and kiss that.
 
-### An aliyah (עֲלִיָּה)
+**An aliyah (עֲלִיָּה)**
 This means being called up by name to say the blessings before and after a section of the reading. It is the best-known honor. For the details of how it works, read [Aliyah](/learn/aliyah).
 
-### Hagbah (הַגְבָּהָה): lifting the Torah
+**Hagbah (הַגְבָּהָה): lifting the Torah**
 After the reading, the scroll is raised so that the congregation can see the writing, and everyone points to it and says a verse. The Chabad.org page on hagbah describes opening the scroll three columns wide, with one seam in view, and then sliding the scroll toward you. Chabad custom is to touch the scroll with the tzitzit or belt and kiss it before lifting, and to roll it closed before sitting. Customs vary, so if you are offered this honor, ask the gabbai or the Rabbi to show you beforehand.
 
 **Lifting safely:**
@@ -31,10 +31,10 @@ After the reading, the scroll is raised so that the congregation can see the wri
 3. Slide the scroll toward you so the weight is centered, then lift with both hands.
 4. If it feels too heavy, it is fine to say so and decline, or to ask a stronger person to help. The scroll is heavy.
 
-### Gelilah (גְּלִילָה): dressing the Torah
+**Gelilah (גְּלִילָה): dressing the Torah**
 The person who does gelilah rolls the scroll closed and dresses it with its binder, cover and often a pointer and crown, while the person who lifted it holds it. Ask the gabbai which duties go together in your community.
 
-### Leading prayers
+**Leading prayers**
 The prayer leader, the *chazzan* or *shliach tzibbur*, leads some of the prayers aloud. In Orthodox communities this is a volunteer from the congregation. See [Leading the Prayers](/learn/leading-the-prayers).
 
 ## Who is given them

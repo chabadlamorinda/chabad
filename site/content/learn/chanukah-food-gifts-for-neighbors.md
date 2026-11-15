@@ -1,6 +1,6 @@
 ---
 title: Chanukah Food Gifts for Neighbors, Teachers and Friends
-description: What to bring to a Chanukah party or give a neighbor: kosher-friendly food gifts, wrapping ideas and a way to share the light. Chabad of Lamorinda, Lafayette.
+description: What to bring to a Chanukah party or give a neighbor: kosher-friendly food gifts, wrapping ideas and a way to share the light. Chabad of Lamorinda.
 category: Shabbat & holidays
 related: being-a-good-neighbor, chanukah-for-friends-and-coworkers, hosting-a-kosher-guest, chanukah-gifts, chanukah-baking-with-kids
 local: Bring a neighbor to light the giant menorah with us on Dec. 6 at 4:00 PM: sign up at /events/chanukah-grand-menorah-lighting-2026.

@@ -1,6 +1,6 @@
 ---
 title: "Bar and Bat Mitzvah Invitation Wording: Hebrew Dates, Names and Warm Examples"
-description: "How to word a Bar or Bat Mitzvah invitation: Hebrew name, Hebrew date, B'ezrat Hashem, Shabbat details and sample text. Questions? Ask Chabad of Lamorinda."
+description: "How to word a Bar or Bat Mitzvah invitation: Hebrew name, Hebrew date, B'ezrat Hashem, Shabbat details and samples. Ask Chabad of Lamorinda."
 category: Life cycle
 related: attending-a-bar-bat-mitzvah, bar-bat-mitzvah-on-a-budget, bar-mitzvah-hebrew-birthday-date, hebrew-names, meaningful-bar-bat-mitzvah-celebration
 local: Planning your invitations? Call Rabbi Labkowski at 925-384-7242 and we will check the wording, the Hebrew name and the date with you.
