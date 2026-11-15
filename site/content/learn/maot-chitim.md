@@ -9,7 +9,7 @@ Maot Chitim (מעות חיטים, "wheat money") is the Jewish custom of giving 
 
 ## Why Passover has its own charity
 
-The Haggadah opens with the words "All who are hungry, let them come and eat." But a family that cannot afford a Seder is not likely to knock on our door on the night itself. So Jewish tradition says the invitation must go out early: we send what they need to them, in time to prepare. Passover is the holiday of freedom, and no Jew should be left out of it for lack of food.
+The Haggadah opens with the words "All who are hungry, let them come and eat." But a family that cannot afford a Seder is not likely to knock on our door on the night itself. So the invitation must go out early: we send what they need to them, in time to prepare. Passover is the holiday of freedom, and no Jew should be left out of it for lack of food.
 
 The custom began with matzah, which is why it is called "wheat" or "flour" money. Over time it grew to include food, wine, holiday clothes and other needs of the holiday.
 

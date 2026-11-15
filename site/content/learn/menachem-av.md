@@ -27,7 +27,7 @@ Customs differ between communities, so ask the Rabbi about your own case.
 
 ## Joy inside the sadness: the siyum
 
-Following the Rebbe's encouragement, people complete a tractate of the Talmud during the Nine Days. A completion, a siyum, is a joyful occasion, which brings permitted celebration into these days. Chabad also encourages more Torah study, tzedakah and acts of kindness to answer the baseless hatred that Jewish tradition says led to the destruction.
+Following the Rebbe's encouragement, people complete a tractate of the Talmud during the Nine Days. A completion, a siyum, is a joyful occasion, which brings permitted celebration into these days. Chabad also encourages more Torah study, tzedakah and acts of kindness to answer the baseless hatred that the Talmud says led to the destruction.
 
 ## Tisha B'Av and the Shabbat before it
 

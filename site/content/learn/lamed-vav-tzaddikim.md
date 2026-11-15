@@ -30,7 +30,7 @@ The lesson of the 36 is simple. If the world is held up by people who look ordin
 ## Common questions
 
 ### Who are the 36 hidden righteous people?
-They are the thirty-six righteous people the Talmud says exist in every generation. Jewish tradition says they are humble, and often nobody knows who they are.
+They are the thirty-six righteous people the Talmud says exist in every generation. They are humble, and often nobody knows who they are.
 
 ### What does Lamed-Vav mean?
 Lamed-Vav means thirty-six: lamed is 30 and vav is 6 in the Hebrew alphabet.

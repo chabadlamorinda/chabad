@@ -17,7 +17,7 @@ What it means for us: when an obstacle appears in our Jewish life, our work or o
 
 ## A story
 
-This story is told on Chabad.org by Rabbi Yerachmiel Tilles, adapted from an account by Rabbi Benyamin Adilman. It is about Rabbi Avrohom Yehoshua Heschel, the Rebbe of Kopycznitz (1888-1967), who lived in New York after leaving Vienna and was known for his compassion for every Jew.
+This story is told by Rabbi Yerachmiel Tilles, adapted from an account by Rabbi Benyamin Adilman. It is about Rabbi Avrohom Yehoshua Heschel, the Rebbe of Kopycznitz (1888-1967), who lived in New York after leaving Vienna and was known for his compassion for every Jew.
 
 After the Second World War, a man who had survived the Nazi horrors came to the rebbe's door, hoping to settle in America. His wife had been denied entry because of her poor health and was being held on Ellis Island, facing deportation. The man was in despair and said that if she were sent back, he would not hesitate to take his own life.
 
@@ -27,7 +27,7 @@ One of the rebbe's students, Rabbi Morgenshtern, had seen the conversation. He a
 
 Then the rebbe took out his Psalms and prayed with great emotion late into the night, pleading that he not be proven wrong and that the woman be allowed into the country. According to the account, she was granted permission to stay in America and was reunited with her husband.
 
-(This is an account as it is told on Chabad.org, as a real event; the page does not give independent documentation.)
+(This is told as a real event; no independent documentation is given for it.)
 
 ## Ideas for the Shabbat table
 
