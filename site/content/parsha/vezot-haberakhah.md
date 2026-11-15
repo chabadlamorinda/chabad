@@ -13,19 +13,19 @@ His answer is that the heart of the idea is that G-d and His Torah are one. This
 
 The Rebbe then explained the dancing. On Simchat Torah the scrolls are wrapped and carried in dance, which seems odd for a holiday about learning. But the joy does not come from how much we have learned. It comes from the Torah's essence, which even an unlearned Jew shares. That is why the scroll is closed.
 
-He also taught that on Simchat Torah the Torah itself wants to dance around the reading platform, but it has no feet. So the Jewish people become its feet. Feet respond instantly to the head, and feet carry the head to places it could not reach alone. When we dance, we commit ourselves to carry out the Torah joyfully and spontaneously, and in doing so we lift the Torah higher.
+He also taught, citing the earlier Rebbes of Chabad, that on Simchat Torah the Torah itself wants to dance around the reading platform, but it has no feet. So the Jewish people become its feet. Feet respond instantly to the head, and feet carry the head to places it could not reach alone. When we dance, we commit ourselves to carry out the Torah joyfully and spontaneously, and in doing so we lift the Torah higher.
 
 What this means for us: no one has to qualify to belong. Our connection to the Torah does not depend on how much we know, only on being heirs. See [Simchat Torah for beginners](/learn/simchat-torah-for-beginners) and [hakafot](/learn/hakafot).
 
 ## A story
 
-A classic Chassidic tale; its details cannot be confirmed. It is told in a collection of stories about the Baal Shem Tov, adapted from the book Sipurei Chasidim.
+A well-known story; its details cannot be confirmed. It is told in Sipurei Chassidim, a classic collection of stories about the Baal Shem Tov and his students.
 
-One Simchat Torah in the town of Mezibuz, the closest students of the Baal Shem Tov danced late into the night, drinking as they danced. The wife of the Baal Shem Tov, Leah-Rachel, feared that the wine would run out before Kiddush and Havdalah. She asked her husband to tell them to stop. He smiled and told her to go and tell them herself, saying they would listen and go home.
+One Simchat Torah in the town of Mezibuz, the closest students of the Baal Shem Tov danced late into the night, drinking as they danced. The Baal Shem Tov's wife feared that the wine would run out before Kiddush and Havdalah. She asked her husband to tell them to stop. He smiled and told her to go and tell them herself, saying they would listen and go home.
 
 She opened the door of the room. And she saw the dancers surrounded by fire, hovering above them like a wedding canopy. She said nothing. Instead she went down to the cellar, carried up as much wine as she could, and quietly set it on their table.
 
-In a later year the same scene repeated. At the height of the joy, the shoelaces of one disciple tore, and he could no longer keep dancing. The Baal Shem Tov's daughter Udel, who had been married for many years with only one child, offered him a good pair of shoes if he promised her a son that year. He hesitated, since only the Baal Shem Tov could make such a promise, but he gave his word. In that year, according to the story, she gave birth to a son, Rabbi Baruch of Medzibuz, who became a Chassidic leader.
+In a later year the same scene repeated. At the height of the joy, the shoelaces of one disciple tore, and he could no longer keep dancing. The Baal Shem Tov's daughter Udel, who had been married for many years with only one child, offered him a good pair of shoes if he promised her a son that year. He hesitated, since only the Baal Shem Tov could make such a promise, but he gave his word. In that year, according to the story, she gave birth to a son, Rabbi Baruch of Mezibuz, who became a Chassidic leader.
 
 The tale teaches that the joy of dancing with the Torah is real enough to move even the people closest to holiness, and that this joy has a power of its own.
 
@@ -50,7 +50,7 @@ That may be why Simchat Torah is the most joyful day of the year. It is not a da
 
 And the same Torah that ends with Moses' last words immediately begins again with the first words of Genesis. Our connection never finishes. Every year we start over, as heirs who are still receiving.
 
-If you have never danced with a Torah, or you have forgotten how, you are welcome at Chabad of Lamorinda in Lafayette. Call Rabbi Labkowski at 925-384-7242 to hear what is planned, or join the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address), where families from Lafayette, Moraga and Orinda study side by side.
+If you have never danced with a Torah, or you have forgotten how, you are welcome at Chabad of Lamorinda in Lafayette. Call Rabbi Labkowski at 925-384-7242 to hear what is planned, or join the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address).
 
 ## Common questions
 

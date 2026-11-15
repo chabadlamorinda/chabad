@@ -23,7 +23,7 @@ In the early twentieth century, life was hard in the village of Chernestra in Uk
 
 In New York, a fellow villager helped him find work pressing shirts in a Lower East Side sweatshop, from early morning to late at night, six days a week. As autumn shortened the days, he realized he would need to leave early on Fridays. When he told his boss, the man threw his ironing board into the street and fired him.
 
-Berel left the board at a nearby laundry and went to a synagogue, and spent a lonely Shabbat with no income, but strong faith. After Shabbat, the laundry attendant returned the board without question. Soon a stranger offered him overtime pressing work. At the end of the week his envelope held far more than he had ever earned. The stranger turned out to be his former boss, who had been paying him only a fraction of his worth.
+Berel left the board at a nearby laundry and went to a synagogue, and spent a lonely Shabbat with no income, but strong faith. After Shabbat, the laundry attendant returned the board without question. Soon a stranger offered him overtime pressing work. At the end of the week his envelope held far more than he had ever earned. Only then did he realize that his former boss had been paying him a fraction of his worth.
 
 Berel later told his children that had he worked on Shabbat, he would have lost not only his share in the World to Come but his fair portion in this world too. A few years later, he brought his wife and children to New York. A century later, his descendants still keep Shabbat. The family also tells one variant: that his father asked him instead to put on tefillin every day before work.
 
