@@ -24,7 +24,7 @@ Most children can join in more than you expect:
 
 - **Answer "Amen"** after a blessing. This is a real mitzvah, and young children love it.
 - **Touch and kiss the Torah** with a siddur or the corner of a tallit as it passes, if it is carried near them.
-- **Say the Shema** along with you. See [Shema](/learn/shema).
+- **Say the Shema** along with you. See Shema.
 - **Follow in a children's siddur** with pictures, or find the page with you. See [Finding Your Place in the Siddur](/learn/finding-your-place-in-the-siddur).
 - **Sing,** especially at the end of the service, and enjoy the Kiddush with everyone else.
 - **Help a little.** Ask the gabbai first whether a child can open the ark or hold something. See [Synagogue Honors](/learn/synagogue-honors).
@@ -37,11 +37,11 @@ Most children can join in more than you expect:
 4. **Praise afterward.** Tell your child something specific that they did well.
 5. **Do not leave a young child alone.** Stay with them or ask a trusted adult.
 
-If there is a children's program at the time of the service, it is best to ask. Call Rabbi Labkowski at 925-384-7242 to hear what is planned for children, and see [Teaching Children to Pray](/learn/teaching-children-to-pray). You can also learn about [Hebrew School](/programs/hebrew-school), [Kids and Teens](/programs/kids-and-teens) and the [Kids' Corner](/kids).
+If there is a children's program at the time of the service, it is best to ask. Call Rabbi Labkowski at 925-384-7242 to hear what is planned for children, and see [Teaching Children to Pray](/learn/teaching-children-to-pray). You can also learn about Hebrew School, [Kids and Teens](/programs/kids-and-teens) and the [Kids' Corner](/kids).
 
 ## One more thing about separate seating
 
-In a traditional synagogue, men and women sit separately. If you have little ones, ask the Rabbi in advance about how families handle this. Read [the mechitzah guide](/learn/mechitzah).
+In a traditional synagogue, men and women sit separately. If you have little ones, ask the Rabbi in advance about how families handle this. Read the mechitzah guide.
 
 ## Common questions
 
@@ -65,6 +65,6 @@ Of course. Children often love meeting the Rabbi and Rebbetzin. Say hello at Kid
 
 ## Take the next step
 
-- Read [Teaching Children to Pray](/learn/teaching-children-to-pray) and [Shabbat with Kids](/learn/shabbat-with-kids).
+- Read Teaching Children to Pray and [Shabbat with Kids](/learn/shabbat-with-kids).
 - Families in Lafayette, Moraga and Orinda: see our [events](/events) and call 925-384-7242.
-- Visit the [Kids' Corner](/kids) at home.
+- Visit the Kids' Corner at home.

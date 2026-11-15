@@ -63,6 +63,6 @@ Not for opening the ark or carrying the Torah. For an aliyah, you say a short bl
 
 ## Take the next step
 
-- Read [Aliyah](/learn/aliyah) to get ready for your first honor, and [What Is a Sefer Torah?](/learn/sefer-torah) to know what you are lifting.
+- Read Aliyah to get ready for your first honor, and [What Is a Sefer Torah?](/learn/sefer-torah) to know what you are lifting.
 - Planning a birthday, yahrzeit or celebration in Lafayette, Moraga or Orinda? Call 925-384-7242 and ask about an honor.
 - See [Shabbat Morning Services Explained](/learn/shabbat-morning-services-explained).

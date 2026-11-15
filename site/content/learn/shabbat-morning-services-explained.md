@@ -26,7 +26,7 @@ The service opens with morning blessings and a long section of psalms and songs 
 
 ## 2. The Shema and the Amidah
 
-The prayer leader calls the congregation to bless G-d (Barchu), and everyone answers. Then comes the [Shema](/learn/shema), with its blessings, and the [Amidah](/learn/amidah), the silent standing prayer at the heart of every service. Please stay quiet while people are praying it, and do not walk in front of them.
+The prayer leader calls the congregation to bless G-d (Barchu), and everyone answers. Then comes the Shema, with its blessings, and the Amidah, the silent standing prayer at the heart of every service. Please stay quiet while people are praying it, and do not walk in front of them.
 
 ## 3. The Torah reading
 
@@ -40,16 +40,16 @@ Chabad.org notes that the rabbi often gives a sermon on Shabbat and holiday morn
 
 ## 5. Musaf and the closing prayers
 
-[Musaf](/learn/musaf) is an additional Amidah for Shabbat, recalling the additional offering in the Temple. It is followed by closing prayers and songs, including [Aleinu](/learn/aleinu). People often sing together at the end.
+[Musaf](/learn/musaf) is an additional Amidah for Shabbat, recalling the additional offering in the Temple. It is followed by closing prayers and songs, including Aleinu. People often sing together at the end.
 
 ## 6. Kiddush and lunch
 
-The service usually ends with Kiddush: the blessing over wine, followed by food and conversation. This is the best time to meet people. Read more in [Kiddush](/learn/kiddush), and if you would like to sponsor one, see [Sponsoring a Kiddush](/learn/sponsoring-a-kiddush).
+The service usually ends with Kiddush: the blessing over wine, followed by food and conversation. This is the best time to meet people. Read more in [Kiddush](/learn/kiddush), and if you would like to sponsor one, see Sponsoring a Kiddush.
 
 ## Tips for first-timers
 
 - Use a siddur with English and learn how to [find your place](/learn/finding-your-place-in-the-siddur).
-- Leave your phone at home or turned off; see [Synagogue Etiquette](/learn/synagogue-etiquette).
+- Leave your phone at home or turned off; see Synagogue Etiquette.
 - Ask a neighbor if you are lost. Everyone was new once.
 
 ## Common questions
@@ -64,16 +64,16 @@ According to Chabad.org, Shabbat morning prayers with Musaf last about three hou
 Yes. Many people arrive partway through. Come in quietly and join in.
 
 ### Why is the Torah read on Shabbat?
-The Torah is read aloud in synagogue on Shabbat morning, and the weekly portion is read in turn so the whole Five Books are completed each year. See [Torah Reading](/learn/torah-reading).
+The Torah is read aloud in synagogue on Shabbat morning, and the weekly portion is read in turn so the whole Five Books are completed each year. See Torah Reading.
 
 ### What is Musaf?
-Musaf (מוּסָף, "additional") is an extra Amidah said on Shabbat and holidays. See the [Musaf guide](/learn/musaf).
+Musaf (מוּסָף, "additional") is an extra Amidah said on Shabbat and holidays. See the Musaf guide.
 
 ### Is there food after the service?
 Usually yes. Kiddush is a light meal with wine and conversation. Ask the Rabbi what is planned.
 
 ## Take the next step
 
-- Read [Synagogue Honors](/learn/synagogue-honors) to see how a visitor might be invited to take part, then [Going to Synagogue for the First Time](/learn/first-time-at-synagogue).
+- Read Synagogue Honors to see how a visitor might be invited to take part, then [Going to Synagogue for the First Time](/learn/first-time-at-synagogue).
 - Families in Lafayette, Moraga and Orinda are welcome. Call 925-384-7242 to hear what is planned this Shabbat.
-- Check our [events](/events) and [Shabbat times](/shabbat-times).
+- Check our [events](/events) and Shabbat times.

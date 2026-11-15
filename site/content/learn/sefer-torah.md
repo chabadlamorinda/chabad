@@ -62,6 +62,6 @@ Call Rabbi Labkowski at 925-384-7242 to ask about seeing the Torah or being at a
 
 ## Take the next step
 
-- Read about a single letter in [A Letter in a Torah](/learn/letter-in-a-torah) and the [Torah reading](/learn/torah-reading).
-- Come to a Torah reading in Lafayette, and learn how a visitor can be honored in [Synagogue Honors](/learn/synagogue-honors).
+- Read about a single letter in A Letter in a Torah and the Torah reading.
+- Come to a Torah reading in Lafayette, and learn how a visitor can be honored in Synagogue Honors.
 - Study more through [adult education](/programs/adult-education).

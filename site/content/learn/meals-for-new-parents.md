@@ -1,6 +1,6 @@
 ---
 title: Bringing Meals to New Parents: A Jewish Guide to Helping After a Birth
-description: How to bring meals to new Jewish parents: kosher basics, timing, short visits, and ways to help after a birth. A Jewish guide to this simple act of chesed.
+description: How to bring meals to new Jewish parents: kosher basics, timing, short visits and other ways to help after a birth. A simple act of chesed.
 category: Life cycle
 related: chesed, new-parents-in-lamorinda, hosting-a-kosher-guest, first-shabbat-with-a-newborn, congratulating-new-parents
 local: Want to help new parents in Lamorinda? Sign up to volunteer at /forms/volunteer or call 925-384-7242.

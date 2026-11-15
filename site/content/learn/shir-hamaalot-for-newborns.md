@@ -1,6 +1,6 @@
 ---
 title: Shir Hamaalot Cards for a Newborn: The Protective Psalm in the Delivery Room and Nursery
-description: Why Jewish families hang a Shir Hamaalot (Psalm 121) card for a newborn, where to put it, how to cover it respectfully, and where to get one near Lafayette.
+description: Why Jewish families hang a Shir Hamaalot (Psalm 121) card for a newborn, where to put it, how to cover it respectfully and where to ask for one.
 category: Life cycle
 related: giving-birth-jewish-customs, psalm-121, jewish-pregnancy, jewish-nursery, new-parents-in-lamorinda
 local: Expecting? Call Rabbi Labkowski at 925-384-7242 and ask about a Shir Hamaalot card for the hospital and the nursery.

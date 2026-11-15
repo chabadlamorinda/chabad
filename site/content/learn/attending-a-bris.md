@@ -1,6 +1,6 @@
 ---
 title: Attending a Bris: What to Expect, What to Wear and What to Say
-description: Invited to a bris? What to expect at a brit milah, what to wear, whether to bring a gift, what to say to the parents, and what happens at the festive meal.
+description: Invited to a bris? What to expect at a brit milah, what to wear, whether to bring a gift, what to say to the parents and what happens at the meal.
 category: Life cycle
 related: brit-milah, preparing-for-a-bris, sandek-and-kvater, baby-naming, choosing-a-mohel
 local: Invited to a bris in Lamorinda, or planning one? Call Rabbi Labkowski at 925-384-7242 and we will gladly walk you through it.

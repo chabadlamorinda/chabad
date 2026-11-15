@@ -1,6 +1,6 @@
 ---
 title: Synagogue Etiquette: Phones, Talking, Standing and Other Things to Know
-description: Synagogue etiquette made simple: what to do about phones, talking, standing, dress and seating, and why it matters. Questions welcome at Chabad of Lamorinda.
+description: Synagogue etiquette made simple: phones, talking, standing, dress and seating, and why it matters. Questions welcome at Chabad of Lamorinda.
 category: Prayer & Torah
 related: first-time-at-synagogue, mechitzah, shabbat-morning-services-explained, what-is-a-synagogue, children-in-synagogue
 local: Not sure what to do when you walk in? Call Rabbi Labkowski at 925-384-7242 and he will gladly tell you what to expect.

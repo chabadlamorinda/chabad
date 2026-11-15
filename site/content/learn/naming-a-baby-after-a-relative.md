@@ -1,6 +1,6 @@
 ---
 title: Naming a Baby After a Relative: Ashkenazi and Sephardi Customs
-description: Can you name a baby after a living relative? Ashkenazi Jews name after those who passed away; Sephardim often honor the living. Customs and when to ask the Rabbi.
+description: Can you name a baby after a living relative? Ashkenazim name for those who passed; Sephardim often honor the living. Customs and when to ask the Rabbi.
 category: Life cycle
 related: jewish-baby-names, hebrew-names, baby-naming, hebrew-names-for-boys, hebrew-names-for-girls
 local: Choosing a name? Call Rabbi Labkowski at 925-384-7242 and he will help you find a Hebrew name that honors your family.

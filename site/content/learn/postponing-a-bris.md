@@ -1,6 +1,6 @@
 ---
 title: When a Bris Is Postponed: Jaundice, Health and the New Date
-description: When is a bris postponed? Jaundice, prematurity or illness delay a brit milah until the baby is healthy. What to do, who decides, and how to set the new date.
+description: When is a bris postponed? Jaundice, prematurity or illness delay a brit milah until the baby is healthy. Who decides and how to set the new date.
 category: Life cycle
 related: preparing-for-a-bris, brit-milah, sandek-and-kvater, giving-birth-jewish-customs, choosing-a-mohel
 local: Is your son's bris delayed? Call Rabbi Labkowski at 925-384-7242 and we will help you with the new date and the plans around it.

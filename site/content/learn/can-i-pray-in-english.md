@@ -21,10 +21,10 @@ Chabad.org says that you can say every word in Hebrew, but if your heart is not 
 
 ## A simple path: English, then Hebrew
 
-1. **Start with a siddur that has English.** Read the translation slowly. See [The Siddur](/learn/siddur).
+1. **Start with a siddur that has English.** Read the translation slowly. See The Siddur.
 2. **Pick a few lines to learn well.** Chabad.org suggests beginning with a few lines you have learned to understand, then slowly adding more.
-3. **Say the Shema.** Learn its first line in Hebrew with its meaning. See [Shema](/learn/shema).
-4. **Learn the letters.** You do not have to be fluent to start. Try [Hebrew Reading for Adults](/learn/hebrew-reading-for-adults) and [Hebrew Lessons in Lamorinda](/learn/hebrew-lessons-in-lamorinda).
+3. **Say the Shema.** Learn its first line in Hebrew with its meaning. See Shema.
+4. **Learn the letters.** You do not have to be fluent to start. Try Hebrew Reading for Adults and [Hebrew Lessons in Lamorinda](/learn/hebrew-lessons-in-lamorinda).
 5. **Keep speaking from the heart.** English works for your own words and requests. See [Talking to G-d in Your Own Words](/learn/talking-to-g-d-in-your-own-words).
 
 ## At a service, you can follow in English
@@ -46,13 +46,13 @@ There is a Talmudic dispute: one opinion says Hebrew only, another says any lang
 Prayer is meaningful when it is understood and sincere. Chabad.org says that words without heart are not true prayer, in any language.
 
 ### How can I learn to pray in Hebrew?
-Start small, learn the meaning, and learn to read. See [Hebrew Lessons in Lamorinda](/learn/hebrew-lessons-in-lamorinda) or call 925-384-7242.
+Start small, learn the meaning, and learn to read. See Hebrew Lessons in Lamorinda or call 925-384-7242.
 
 ### Can children pray in English?
 Yes. Children learn best when they understand. See [Teaching Children to Pray](/learn/teaching-children-to-pray).
 
 ## Take the next step
 
-- Read [Kavanah in Prayer](/learn/kavanah-in-prayer) and [What Does Daven Mean?](/learn/what-is-davening) to go deeper.
+- Read Kavanah in Prayer and [What Does Daven Mean?](/learn/what-is-davening) to go deeper.
 - Join [adult education](/programs/adult-education) in Lafayette, or call 925-384-7242 to ask about learning Hebrew.
-- Families in Lafayette, Moraga and Orinda can start with [Teaching Children to Pray](/learn/teaching-children-to-pray).
+- Families in Lafayette, Moraga and Orinda can start with Teaching Children to Pray.

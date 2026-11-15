@@ -16,9 +16,9 @@ A minyan (מִנְיָן) is a quorum of ten Jewish adults; Chabad.org describes
 According to Chabad.org, these are said only with a minyan:
 
 - **Kaddish** (קַדִּישׁ), the prayer of praise to G-d. See [Kaddish](/learn/kaddish).
-- **Barchu** (בָּרְכוּ), the call to bless G-d. See [Barchu](/learn/barchu).
+- **Barchu** (בָּרְכוּ), the call to bless G-d. See Barchu.
 - **The repetition of the Amidah** by the prayer leader.
-- **Kedushah** (קְדֻשָּׁה), the sanctification said in that repetition. See [Kedushah](/learn/kedushah).
+- **Kedushah** (קְדֻשָּׁה), the sanctification said in that repetition. See Kedushah.
 - **The public Torah reading.**
 
 When you pray alone, you simply skip these. That is not a loss, it is the rule. If you are saying Kaddish for a loved one and cannot find a minyan, please call the Rabbi at 925-384-7242 to ask about a minyan.
@@ -27,18 +27,18 @@ When you pray alone, you simply skip these. That is not a loss, it is the rule. 
 
 You can say the parts that belong to the individual:
 
-- Morning blessings and Modeh Ani (see [Modeh Ani](/learn/modeh-ani) and [Morning Blessings](/learn/morning-blessings))
-- Psalms and songs of praise, such as [Ashrei](/learn/ashrei)
+- Morning blessings and Modeh Ani (see Modeh Ani and Morning Blessings)
+- Psalms and songs of praise, such as Ashrei
 - The **Shema** and its blessings (see [Shema](/learn/shema))
 - The **Amidah**, which is said silently by each person while standing. See [Amidah](/learn/amidah).
-- Closing prayers such as [Aleinu](/learn/aleinu)
+- Closing prayers such as Aleinu
 
 If you are unsure about a specific prayer, such as whether it requires ten, ask the Rabbi.
 
 ## A simple plan for praying at home
 
 1. **Choose the time.** There are prayers in the morning, afternoon and evening. See [Daily Prayers](/learn/daily-prayers) and ask the Rabbi about times.
-2. **Use a siddur.** Chabad.org says to pray from a siddur, a prayer book. Choose one with English if you need it, and see [the siddur guide](/learn/siddur).
+2. **Use a siddur.** Chabad.org says to pray from a siddur, a prayer book. Choose one with English if you need it, and see the siddur guide.
 3. **Start small.** A few prayers said with attention are worth more than many said in a rush. Chabad.org stresses that concentration is the heart of prayer: "know before Whom you stand."
 4. **Pray in a language you understand** if Hebrew is hard. See [Can I Pray in English?](/learn/can-i-pray-in-english).
 5. **Add your own words.** See [Talking to G-d in Your Own Words](/learn/talking-to-g-d-in-your-own-words).
@@ -56,7 +56,7 @@ Yes. Chabad.org says that if no minyan is available, one prays alone. Praying wi
 Kaddish, Barchu, the repetition of the Amidah, Kedushah and the Torah reading. These are skipped when praying alone.
 
 ### Can I say the Shema alone?
-Yes. The Shema is said by each individual. See [Shema](/learn/shema).
+Yes. The Shema is said by each individual. See Shema.
 
 ### What can I skip when praying alone?
 The parts that need ten: Kaddish, Barchu, Kedushah, the Amidah repetition and the Torah reading. Ask the Rabbi if you are unsure about anything else.
@@ -69,6 +69,6 @@ Yes. Everyone can pray in their own words at any time. Ask Rebbetzin Labkowski o
 
 ## Take the next step
 
-- Read [Minyan](/learn/minyan) and [Daily Prayers](/learn/daily-prayers) to build a simple routine.
+- Read Minyan and Daily Prayers to build a simple routine.
 - Call Rabbi Labkowski at 925-384-7242 if you would like to join a minyan or need help.
-- Try [Talking to G-d in Your Own Words](/learn/talking-to-g-d-in-your-own-words).
+- Try Talking to G-d in Your Own Words.

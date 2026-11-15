@@ -1,6 +1,6 @@
 ---
 title: A Jewish Nursery: Mezuzah, Tzedakah Box, Shir Hamaalot and Holy Pictures
-description: How to set up a Jewish baby nursery: a kosher mezuzah, a Shir Hamaalot card, a tzedakah box, holy books and songs. Simple ideas from Chabad.org for new parents.
+description: How to set up a Jewish baby nursery: a kosher mezuzah, Shir Hamaalot card, tzedakah box, holy books and songs. Simple ideas for new parents.
 category: Jewish home
 related: a-jewish-childs-bedroom, mezuzah, pushka, shir-hamaalot-for-newborns, jewish-lullabies
 local: Setting up the nursery? Call 925-384-7242 or fill in the mezuzah form at /forms/mezuzah-tefillin and we will help with a kosher mezuzah.
