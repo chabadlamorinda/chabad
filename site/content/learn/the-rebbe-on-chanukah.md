@@ -1,6 +1,6 @@
 ---
 title: The Rebbe on Chanukah: Light, Courage and Bringing It Outside
-description: What did the Lubavitcher Rebbe teach about Chanukah? Four teachings on light outside, growing each night, making every home a Chabad House, and a light no decree can stop.
+description: What did the Lubavitcher Rebbe teach about Chanukah? Light outside, growing each night, every home a Chabad House, and a light no decree can stop.
 category: Shabbat & holidays
 related: the-rebbe, lessons-of-chanukah, chassidus, chanukah-and-the-soul, public-menorah-lighting
 local: Bring the Rebbe's light to your home. Call Rabbi Labkowski at 925-384-7242 or join the Grand Menorah Lighting at /events/chanukah-grand-menorah-lighting-2026.

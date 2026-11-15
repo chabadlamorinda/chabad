@@ -1,6 +1,6 @@
 ---
 title: Chanukah and the Number Eight: Beyond Nature in Jewish Thought
-description: What is special about the number eight in Judaism? Seven stands for nature and eight for what is beyond it: Chanukah's eight lights, brit milah and Shemini Atzeret.
+description: What is special about the number eight in Judaism? Seven is nature, eight is beyond it: Chanukah's eight lights, brit milah and Shemini Atzeret.
 category: Jewish ideas
 related: why-is-chanukah-eight-days, shemini-atzeret, brit-milah, gematria, temple-menorah-and-chanukah-menorah
 local: Curious about the deeper side of Jewish numbers and ideas? Call Rabbi Labkowski at 925-384-7242 or see /programs/adult-education.

@@ -1,6 +1,6 @@
 ---
 title: Giving Tzedakah on Chanukah: Gelt, Generosity and Lighting Up Lives
-description: Why do we give tzedakah on Chanukah? Learn the custom of increasing charity, how gelt teaches children to give, and simple ways to light up another life this year.
+description: Why give tzedakah on Chanukah? Learn the custom of increasing charity, how gelt teaches children to give, and ways to light up another life.
 category: Shabbat & holidays
 related: tzedakah, chanukah-gelt, children-money-and-tzedakah, year-end-tzedakah, chanukah-mitzvah-projects-for-kids
 local: Help light up a life this Chanukah. Give to the holidays fund or the Chesed Fund, or call Rabbi Labkowski at 925-384-7242.

@@ -1,6 +1,6 @@
 ---
 title: Psalm 30 on Chanukah: "A Song for the Dedication of the House"
-description: What is Psalm 30, "Mizmor Shir Chanukat HaBayit"? Learn what it says, why it is linked with Chanukah and with a new home, and how it fits in Jewish prayer.
+description: What is Psalm 30, "Mizmor Shir Chanukat HaBayit"? What it says, why it is linked with Chanukah and a new home, and where it is in prayer.
 category: Prayer & Torah
 related: tehillim, al-hanissim-and-hallel, chanukat-habayit, hallel, chanukah-and-the-soul
 local: Want a Tehillim prayer said for someone? Use the prayer list at /tehillim or call Rabbi Labkowski at 925-384-7242.
@@ -9,7 +9,7 @@ Psalm 30 begins with the words "Mizmor shir chanukat habayit, l'David," "A psalm
 
 ## What does the heading mean?
 
-According to Rashi, whose commentary appears with the psalm on Chabad.org, the Levites sang this song at the dedication of the Temple in the days of King Solomon. A Chabad.org article also describes it as a psalm composed for the dedication of the Holy Temple. The Hebrew word for dedication, *chanukah*, is the same word as the name of the holiday, which is the link with the festival that celebrates the rededication of the Temple.
+According to Rashi, whose commentary appears with the psalm on Chabad.org, the Levites sang this song at the dedication of the Temple in the days of King Solomon. A Chabad.org article also describes it as a psalm composed for the dedication of the Holy Temple, so the "House" in the heading is the Temple, G-d's House. The Hebrew word for dedication, *chanukah*, is the same word as the name of the holiday, which is the link with the festival that celebrates the rededication of the Temple.
 
 You can read more about the festival's name in [what Chanukah means](/learn/what-does-chanukah-mean) and about the home in [Chanukat HaBayit](/learn/chanukat-habayit).
 

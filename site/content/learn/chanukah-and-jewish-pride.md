@@ -47,7 +47,7 @@ Safety comes first, and each situation is different. Call the Rabbi at 925-384-7
 Join the Light Up Lafayette menorah lighting at Lafayette Plaza Park, free and open to everyone, and sign up online.
 
 ### What if I feel uneasy about being openly Jewish?
-You are not alone. Chabad.org tells of people who felt uneasy and found strength in coming together at public lightings. Call 925-384-7242 to talk with the Rabbi or Rebbetzin.
+You are not alone. Chabad.org quotes a woman who felt uneasy about expressing her Jewish identity in public and decided to attend a public lighting for the first time. Call 925-384-7242 to talk with the Rabbi or Rebbetzin.
 
 ## Take the next step
 

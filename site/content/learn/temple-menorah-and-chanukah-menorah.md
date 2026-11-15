@@ -1,6 +1,6 @@
 ---
 title: The Temple Menorah and the Chanukah Menorah: Seven Branches, Eight Lights
-description: What is the difference between the Temple menorah and the Chanukah menorah (chanukiah)? Seven branches or eight lights, gold or any safe metal, daytime or night.
+description: What is the difference between the Temple menorah and the Chanukah menorah (chanukiah)? Seven branches or eight lights, gold or any safe metal.
 category: Shabbat & holidays
 related: chanukah-menorah, the-holy-temple, the-mishkan, choosing-a-kosher-menorah, chanukah-and-the-number-eight
 local: Need a kosher menorah for your home? Bay Kosher, a project of Chabad of Lamorinda, is a local source: see /programs/bay-kosher or call 925-384-7242.

@@ -1,6 +1,6 @@
 ---
 title: Chanukah and Torah Study: Why the Greeks Targeted Learning, and How to Light Up Your Mind
-description: Why is Torah study part of Chanukah? Learn what the Greeks could not accept about the Torah, what the Rebbe taught about learning on Chanukah, and how to add a little each night.
+description: Why is Torah study part of Chanukah? What the Greeks could not accept, what the Rebbe taught about learning, and how to add a little each night.
 category: Shabbat & holidays
 related: daily-torah-study, torah-classes-in-lamorinda, lessons-of-chanukah, decrees-of-the-greeks, chanukah-tzedakah
 local: Add a little learning this Chanukah. Call Rabbi Labkowski at 925-384-7242 or see the adult education program at /programs/adult-education.

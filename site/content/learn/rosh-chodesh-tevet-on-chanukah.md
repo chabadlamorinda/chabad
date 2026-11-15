@@ -1,6 +1,6 @@
 ---
 title: Rosh Chodesh Tevet During Chanukah: Two Celebrations in One Day
-description: What happens when Rosh Chodesh Tevet falls on Chanukah? Two Torah scrolls, special prayers and the story of why the Greeks banned the new month. A simple guide.
+description: What happens when Rosh Chodesh Tevet falls on Chanukah? Two Torah scrolls, special prayers, and why the Greeks banned the new month.
 category: Shabbat & holidays
 related: rosh-chodesh, tevet, musaf, chanukah-torah-reading, al-hanissim-and-hallel
 local: Join us for Chanukah prayers in Lafayette. Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
