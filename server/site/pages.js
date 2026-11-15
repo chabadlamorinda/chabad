@@ -274,7 +274,7 @@ function seriesLd(C, base) {
 
 function weeklyHtml(o, X, base) {
   if (!(o.weekly || []).length) return '';
-  return `<h2>${esc(X.t('Every week'))}</h2><ul class="weekly">${o.weekly.map((w) => `<li><b>${esc(w.day)}</b><span>${w.link ? `<a href="${esc(w.link)}">${esc(w.name)}</a>` : esc(w.name)}<br><span class="muted">${esc(w.time)}</span>${w.byDay && w.startTime ? weeklyMenu(X, base, w) : ''}</span></li>`).join('')}</ul>`;
+  return `<h2>${esc(X.t('Every week'))}</h2><ul class="weekly">${o.weekly.map((w) => `<li><b>${esc(w.day)}</b><span>${w.link ? `<a href="${esc(w.link)}">${esc(w.name)}</a>` : esc(w.name)}<br><span class="muted">${esc(w.time)}${w.place ? ' · ' + esc(w.place) : ''}</span>${w.byDay && w.startTime ? weeklyMenu(X, base, w) : ''}</span></li>`).join('')}</ul>`;
 }
 
 function contactBlock(C, X) {

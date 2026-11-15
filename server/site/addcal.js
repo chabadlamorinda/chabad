@@ -74,7 +74,7 @@ function weeklyMenu(X, base, w) {
   const C = X.C, o = C.org, now = new Date(), occ = nextOccurrence(w, now);
   if (!occ) return '';
   const rule = w.seasonal ? null : `FREQ=WEEKLY;BYDAY=${DAY[w.byDay]}`;
-  return menu(X, base, { title: w.name, when: `${w.day} ${w.time}`, start: occ.start, end: occ.end, loc: `${o.name}, ${fullAddress(o)}`, details: `${base}${w.link || '/events'}`, icsPath: `/weekly/${weeklyId(w)}.ics`, ics: `${base}/weekly/${weeklyId(w)}.ics`, recur: rule });
+  return menu(X, base, { title: w.name, when: `${w.day} ${w.time}`, start: occ.start, end: occ.end, loc: w.place || `${o.name}, ${fullAddress(o)}`, details: `${base}${w.link || '/events'}`, icsPath: `/weekly/${weeklyId(w)}.ics`, ics: `${base}/weekly/${weeklyId(w)}.ics`, recur: rule });
 }
 
 function mountAddCal(r, { content, base }) {
@@ -82,7 +82,7 @@ function mountAddCal(r, { content, base }) {
     try {
       const C = content(), w = weeklyItem(C, req.params.id);
       if (!w) return next();
-      const o = C.org, loc = `${o.name}, ${fullAddress(o)}`, stamp = new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
+      const o = C.org, loc = w.place || `${o.name}, ${fullAddress(o)}`, stamp = new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
       const head = (st) => ['BEGIN:VEVENT', `DTSTAMP:${stamp}`, `SUMMARY:${icsText(w.name)}`, `LOCATION:${icsText(loc)}`, `DESCRIPTION:${icsText((w.time ? w.time + '. ' : '') + base + (w.link || '/events'))}`, `URL:${base}${w.link || '/events'}`, ...st];
       const alarm = ['BEGIN:VALARM', 'ACTION:DISPLAY', `DESCRIPTION:${icsText(w.name)}`, 'TRIGGER:-PT30M', 'END:VALARM', 'END:VEVENT'];
       let ev = [];

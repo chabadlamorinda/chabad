@@ -40,7 +40,7 @@ async function llmsText(c, base, upcoming, full) {
   if (sh && sh.candles) lines.push(`- This week: candle lighting ${sh.candles.timeStr} on ${sh.candles.date}${sh.havdalah ? `, Shabbat ends ${sh.havdalah.timeStr}` : ''} (Lafayette, CA)`);
   lines.push('', '## Services');
   for (const s of o.services || []) lines.push(`- ${s.name}: ${s.time}${s.note ? ' (' + s.note + ')' : ''}`);
-  if ((o.weekly || []).length) { lines.push('', '## Every week'); for (const w of o.weekly) lines.push(`- ${w.day} ${w.time}: ${w.name}${w.link ? ` (${base}${w.link})` : ''}`); }
+  if ((o.weekly || []).length) { lines.push('', '## Every week'); for (const w of o.weekly) lines.push(`- ${w.day} ${w.time}: ${w.name}${w.place ? ' (' + w.place + ')' : ''}${w.link ? ` (${base}${w.link})` : ''}`); }
   lines.push('', '## Programs');
   for (const p of c.programs) lines.push(`- [${p.name}](${base}/programs/${p.slug}): ${p.summary}`);
   lines.push('', '## Upcoming events');
