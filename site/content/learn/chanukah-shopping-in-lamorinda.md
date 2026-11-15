@@ -2,7 +2,7 @@
 title: Chanukah Shopping List for Lafayette, Moraga and Orinda: Donuts, Latkes, Menorah, Candles, Oil and Gelt
 description: What you need for Chanukah and where to look: menorah, candles, oil, donuts, latkes, dreidels and gelt, what to check for kosher, and how Chabad can help.
 category: Lamorinda
-related: chanukah-foods, menorah-oil-and-candles, chanukah-gelt, chanukah-in-lamorinda
+related: chanukah-foods, getting-ready-for-chanukah, choosing-a-kosher-menorah, menorah-oil-and-candles, chanukah-gelt, chanukah-in-lamorinda
 local: Cannot find something for Chanukah? Call or text Rabbi Labkowski at 925-384-7242 and we will help, or order from Bay Kosher.
 ---
 Chanukah needs very little: a menorah, candles or oil, and a family to light with. Everything else (donuts, latkes, dreidels, gelt) is joy added on top. This is a simple shopping list for families in Lafayette, Moraga and Orinda, with what to look for in each item. **The easiest answer: [Bay Kosher](/programs/bay-kosher), our kosher market, is always stocked and always kosher.** Use it for every item on this list. And if you are not sure what to buy, call or text Chabad of Lamorinda at 925-384-7242 and we will help.

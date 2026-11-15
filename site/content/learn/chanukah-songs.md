@@ -2,7 +2,7 @@
 title: The Songs of Chanukah: Haneirot Halalu, Maoz Tzur and the Children's Favorites
 description: What we sing after lighting the menorah: Haneirot Halalu, Maoz Tzur and the children's songs, what the words mean and when each one is sung.
 category: Shabbat & holidays
-related: chanukah-menorah, al-hanissim-and-hallel, zemirot, niggun, chanukah-for-kids
+related: chanukah-menorah, seudat-chanukah, al-hanissim-and-hallel, zemirot, niggun, chanukah-for-kids
 local: Sing with us at Chabad of Lamorinda's menorah lightings for families in Lafayette, Moraga and Orinda; details on the Chanukah page or at 925-384-7242.
 ---
 The candles are lit, the room is dim, and for a moment everyone is quiet. Then someone starts to sing. Chanukah has its own songs, and they are part of the mitzvah: the half hour while the candles burn is meant for sitting together, singing and telling the story. Here are the songs you will hear in almost every Jewish home.

@@ -2,7 +2,7 @@
 title: מסכים, טלפונים וטכנולוגיה: מבט יהודי
 description: איך היהדות מתייחסת לטלפונים, מסכים וטכנולוגיה: כלי לטובה, האתגרים האמיתיים, השבת כהפסקה שבועית ורעיונות מעשיים למשפחות.
 category: Jewish ideas
-related: shabbat-with-kids, lashon-hara, jewish-parenting, daily-torah-study, shabbat-for-working-parents
+related: shabbat-with-kids, unplugging-on-shabbat, lashon-hara, jewish-parenting, daily-torah-study, shabbat-for-working-parents
 local: משפחות מלאפייט, מורגה ואורינדה מוזמנות לחוות שבת בלי טלפונים סביב שולחן ליל השבת של משפחת לבקובסקי. כדי לדבר על איזון בבית, התקשרו לרב או לרבנית: 925-384-7242.
 ---
 טלפונים, טאבלטים ומחשבים נוכחים כמעט בכל רגע בחיינו. היהדות לא מבקשת מאיתנו לברוח מהם. היא שואלת שאלה טובה יותר: האם הכלי הזה משרת אותי ואת התכלית שלי, או שאני משרת אותו?

@@ -2,7 +2,7 @@
 title: Kiddush Hashem: Making G-d's Name Beloved in Everyday Life
 description: What it means to sanctify G-d's name through honesty and kindness, at work, online and in public, and the opposite, chillul Hashem.
 category: Jewish ideas
-related: business-ethics, jewish-pride, chesed, lashon-hara
+related: business-ethics, chana-and-her-seven-sons, jewish-pride, chesed, lashon-hara
 local: Want to learn more about Jewish ethics in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 **Kiddush Hashem** means "sanctifying G-d's name." The Torah says, "I shall be sanctified among the children of Israel" (Leviticus 22:32). Every Jew represents G-d and the Jewish people, and every Jew can make G-d's name beloved in the world.

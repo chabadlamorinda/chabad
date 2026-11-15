@@ -2,7 +2,7 @@
 title: The Purim Story: Esther, Mordechai and Haman, Told Simply
 description: The Purim story told simply: Queen Esther, Mordechai, wicked Haman and the hidden miracle in Persia, and what it asks of us today.
 category: Shabbat & holidays
-related: purim-for-beginners, megillah, the-four-mitzvahs-of-purim, purim-for-kids, fast-of-esther
+related: purim-for-beginners, who-was-antiochus, megillah, the-four-mitzvahs-of-purim, purim-for-kids, fast-of-esther
 local: Hear the Megillah and join the Purim celebration with your family from Lafayette, Moraga and Orinda; call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned.
 ---
 The Purim story is told in the Book of Esther (the Megillah): in ancient Persia, the wicked Haman plotted to destroy the Jews, but Queen Esther and her cousin Mordechai, with courage and a hidden Divine hand, turned the decree around and saved the Jewish people. We celebrate every year on Purim (פּוּרִים) by hearing the Megillah, giving gifts and charity, and holding a festive meal.

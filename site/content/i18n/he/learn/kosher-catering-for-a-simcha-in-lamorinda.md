@@ -2,7 +2,7 @@
 title: אוכל כשר לבר מצווה, לחתונה או למסיבה בלמורינדה: מה לשאול
 description: מתכננים אוכל כשר לבר מצווה, חתונה או מסיבה בלפאייט, מוראגה או אורינדה? השאלות לקייטרינג או לאולם, ואפשרויות פשוטות.
 category: Lamorinda
-related: kosher-in-lamorinda, kosher-certification, hosting-a-kosher-guest, bar-bat-mitzvah-in-lamorinda, kosher-wine
+related: kosher-in-lamorinda, meaningful-bar-bat-mitzvah-celebration, kosher-certification, hosting-a-kosher-guest, bar-bat-mitzvah-in-lamorinda, kosher-wine
 local: מתכננים שמחה עם אוכל כשר? התקשרו לרב לבקובסקי, 925-384-7242, והוא ישמח לעזור לכם לשאול את השאלות הנכונות.
 ---
 כדי להגיש אוכל כשר בבר מצווה, בחתונה או במסיבה בלמורינדה, שאלו את הקייטרינג או האולם מי נותן הכשר למטבח, אם יהיה משגיח כשרות, והאם התפריט בשרי או חלבי. אתר Chabad.org ממליץ לברר מי אחראי על הכשרות לפני שמזמינים, וקייטרינג אמין ישמח לענות. חב"ד למורינדה אינה ממליצה על עסקים, אך הרב יעזור לכם לבדוק את התשובות.

@@ -2,7 +2,7 @@
 title: Ashkenazi and Sephardi: One Torah, Different Customs
 description: What do Ashkenazi and Sephardi mean? How Jewish communities grew different customs, from prayer to Passover foods, while keeping one Torah.
 category: Jewish ideas
-related: jewish-customs-minhag, kitniyot, jewish-languages, jewish-last-names, israelis-in-lamorinda
+related: jewish-customs-minhag, chanukah-foods-around-the-jewish-world, kitniyot, jewish-languages, jewish-last-names, israelis-in-lamorinda
 local: Whatever your background, you are welcome. Call Rabbi Labkowski at 925-384-7242 or come to an event: /events.
 ---
 Ashkenazi Jews are Jews whose ancestors lived in Central and Eastern Europe, and Sephardi Jews are Jews whose ancestors lived in Spain, Portugal, North Africa and the Middle East. Both keep the same Torah and the same Jewish law, but each community developed its own customs, prayer melodies and foods over centuries.

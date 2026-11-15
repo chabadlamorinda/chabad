@@ -2,7 +2,7 @@
 title: שמונת ימי חנוכה: מדריך לילה אחר לילה
 description: מה עושים בכל אחד משמונת ימי חנוכה: כמה נרות מדליקים, רעיון ומצווה קטנה לכל לילה, כולל ליל שישי ומוצאי שבת.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-in-lamorinda, zot-chanukah, chanukah-on-shabbat, chanukah-for-kids
+related: chanukah-menorah, new-chanukah-family-traditions, why-add-a-candle-each-night, missed-lighting-the-menorah, why-is-chanukah-eight-days, chanukah-in-lamorinda, zot-chanukah, chanukah-on-shabbat, chanukah-for-kids
 local: הדלקת החנוכייה הגדולה, יום ראשון, 6 בדצמבר, 16:00, פארק לאפייט פלאזה. בחינם; הרשמה ב-/events/chanukah-grand-menorah-lighting-2026.
 ---
 בלילה הראשון של חנוכה מדליקים נר אחד (ועוד את השמש, נר העזר), ובכל לילה מוסיפים נר, עד שבלילה האחרון דולקים שמונה. כל לילה הוא הזדמנות להוסיף אור: עם הברכות, שיר, מעט דמי חנוכה לילדים ורעיון חדש לשוחח עליו.

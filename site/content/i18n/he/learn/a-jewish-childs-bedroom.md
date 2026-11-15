@@ -2,7 +2,7 @@
 title: A Jewish Child's Bedroom: Simple Touches That Matter
 description: איך מכינים חדר ילדים יהודי: מזוזה, סידור וחומש אישיים, קופת צדקה, שיר המעלות לתינוק וקריאת שמע לפני השינה. רעיונות פשוטים.
 category: Jewish home
-related: mezuzah, bedtime-shema, jewish-parenting, modeh-ani, raising-jewish-kids-in-a-small-community
+related: mezuzah, jewish-nursery, bedtime-shema, jewish-parenting, modeh-ani, raising-jewish-kids-in-a-small-community
 local: נשמח לעזור במזוזה או בסידור ראשון לילדכם. התקשרו 925-384-7242 או ראו /programs/kids-and-teens.
 ---
 חדר ילדים יהודי מסודר מסורתית עם מזוזה כשרה בדלת, סידור וחומש אישיים לילד, קופת צדקה על הקיר, ולתינוק, שיר המעלות (תהילים קכ"א) תלוי להגנה. הרבי מליובאוויטש עודד להפוך את חדרו של כל ילד למקום של תורה, תפילה ומעשים טובים.

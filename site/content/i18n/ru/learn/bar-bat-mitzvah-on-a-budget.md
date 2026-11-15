@@ -2,7 +2,7 @@
 title: Содержательная бар- или бат-мицва без больших расходов: что важнее всего
 description: Что на самом деле требуют бар- и бат-мицва и простые, содержательные способы отпраздновать. Хабад Ламоринды рад каждой семье, членство не нужно.
 category: Life cycle
-related: bar-bat-mitzvah-timeline, bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, jewish-wedding-on-a-budget
+related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-invitation-wording, bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, jewish-wedding-on-a-budget
 local: Планируете простую и содержательную бар- или бат-мицву? Позвоните раввину Исроэлю Лабковскому, 925-384-7242, или начните с /programs/bar-bat-mitzvah.
 ---
 Бар- или бат-мицве не нужна большая вечеринка: еврейский мальчик становится бар-мицвой в 13 лет, а девочка бат-мицвой в 12 автоматически, с праздником или без. Важно, что ребёнок принимает на себя заповеди. Chabad.org говорит прямо: церемония гораздо важнее вечеринки.

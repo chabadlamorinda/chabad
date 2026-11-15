@@ -40,12 +40,6 @@ For more on staying close from a distance, see [grandparenting from afar](/learn
 
 Some grandparents live alone, in a care facility or have trouble lighting a match. Sturdy tea lights on a fireproof plate are a simpler option. If a flame is not possible, ask the Rabbi. For help for seniors and families, see [help for seniors and families](/help/help-for-seniors-and-families). More ideas for older adults are in [Jewish seniors in Lamorinda](/learn/jewish-seniors-in-lamorinda).
 
-## Take the next step
-
-- Look through [new Chanukah family traditions](/learn/new-chanukah-family-traditions) for ideas to start with your grandchildren.
-- Bring them to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, a Gelt Drop, Decorate Your Own Donut, a Giant Dreidel Game and LED light wands, for families from Lafayette, Moraga and Orinda.
-- Call 925-384-7242 if you would like to ask the Rabbi about lighting together.
-
 ## Common questions
 
 ### How can grandparents celebrate Chanukah with grandchildren?
@@ -65,3 +59,8 @@ Share your own stories and customs, do the mitzvot together and show your joy. T
 
 ### Where can grandparents celebrate Chanukah in Lamorinda?
 At Chabad of Lamorinda's Grand Chanukah Menorah Lighting in Lafayette, and at other events. Call 925-384-7242 for what is planned.
+## Take the next step
+
+- Look through [new Chanukah family traditions](/learn/new-chanukah-family-traditions) for ideas to start with your grandchildren.
+- Bring them to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, a Gelt Drop, Decorate Your Own Donut, a Giant Dreidel Game and LED light wands, for families from Lafayette, Moraga and Orinda.
+- Call 925-384-7242 if you would like to ask the Rabbi about lighting together.

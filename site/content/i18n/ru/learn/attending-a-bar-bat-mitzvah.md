@@ -2,7 +2,7 @@
 title: В гостях на бар- или бат-мицве: путеводитель для гостя
 description: Вас пригласили на бар- или бат-мицву? Служба, алия, бросание конфет, праздник, подарки кратно 18, что надеть и телефоны в Шабат.
 category: Life cycle
-related: bar-mitzvah, bat-mitzvah, first-time-at-synagogue, torah-reading, jewish-gift-ideas
+related: bar-mitzvah, attending-a-bris, grandparents-at-a-bar-mitzvah, bar-bat-mitzvah-invitation-wording, bat-mitzvah, first-time-at-synagogue, torah-reading, jewish-gift-ideas
 local: Празднуете бар- или бат-мицву в Лафайетте, Мораге или Оринде? Раввин Исроэль Лабковский с радостью ответит на любой вопрос: 925-384-7242.
 ---
 Бар-мицва или бат-мицва - это совершеннолетие мальчика в тринадцать лет или девочки в двенадцать: день, когда они становятся ответственными за заповеди как взрослые евреи. Семья часто готовилась год и больше, и ваше присутствие - часть подарка. Вот чего ждать.

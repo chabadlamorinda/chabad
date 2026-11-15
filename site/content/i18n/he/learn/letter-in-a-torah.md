@@ -2,7 +2,7 @@
 title: אות בספר תורה: המבצע של הרבי לאחדות ישראל
 description: כל ילד ומבוגר יהודי יכול לקנות אות בספר תורה שנכתב לאחדות ישראל. מה זה, למה זה חשוב ואיך מקבלים אות.
 category: Prayer & Torah
-related: the-rebbe, ten-mitzvah-campaigns, torah, hachnasat-sefer-torah
+related: the-rebbe, sefer-torah, ten-mitzvah-campaigns, torah, hachnasat-sefer-torah
 local: כדי לקבל אות בספר תורה לילד שלכם או לעצמכם, התקשרו להרב ישראל לבקובסקי, 925-384-7242, והוא יעזור לכם להירשם.
 ---
 המצווה האחרונה מתרי״ג המצוות היא לכתוב ספר תורה. הרבי מליובאוויטש מצא דרך שכל יהודי יוכל להשתתף בה: על ידי אות משלו בספר תורה שנכתב לאחדות ישראל.

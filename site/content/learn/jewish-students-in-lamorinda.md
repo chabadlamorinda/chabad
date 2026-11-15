@@ -2,7 +2,7 @@
 title: Jewish Students at Saint Mary's College and Diablo Valley College: Shabbat Dinners and Holidays
 description: Jewish students at Saint Mary's College in Moraga and Diablo Valley College in Pleasant Hill: Shabbat dinners, holidays and a Rabbi nearby in Lafayette.
 category: Lamorinda
-related: jewish-college-students, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
+related: jewish-college-students, menorah-in-an-apartment-or-condo, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
 local: Students, RSVP for a Shabbat dinner at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Studying at **Saint Mary's College of California** in Moraga or at **Diablo Valley College** in Pleasant Hill, and wondering where to find Shabbat, a holiday meal or just a Jewish face? Chabad of Lamorinda, at 3477 Golden Gate Way in Lafayette, is your Jewish home away from home. Jewish students are always welcome for Shabbat dinner and for the holidays. No membership, no cost to belong and no background needed.

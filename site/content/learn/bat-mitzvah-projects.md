@@ -2,7 +2,7 @@
 title: Bat Mitzvah Projects: Meaningful Ideas for the Celebration
 description: Meaningful bat mitzvah ideas: mitzvah projects, challah baking, visiting seniors, tzedakah, learning about women of the Torah, a speech and candles.
 category: Life cycle
-related: bat-mitzvah, shabbat-candles, challah, tzedakah
+related: bat-mitzvah, teen-community-service-mitzvah, meaningful-bar-bat-mitzvah-celebration, shabbat-candles, challah, tzedakah
 local: Bat mitzvah girls and their families in Lafayette, Moraga, Orinda and the East Bay: Rebbetzin Tzipora Labkowski is glad to help plan, 925-384-7241.
 ---
 A Jewish girl becomes a bat mitzvah on her 12th Hebrew birthday. From that day she is responsible for the mitzvot, and her choices carry real weight. The celebration is a chance to mark that milestone with something she will remember for years: not just a party, but a project and a mitzvah that are her own. See our guide to the [bat mitzvah](/learn/bat-mitzvah).

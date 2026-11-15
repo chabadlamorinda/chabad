@@ -2,7 +2,7 @@
 title: How to Share a Short Torah Thought at Your Shabbat Table
 description: How to give a short dvar Torah at your Shabbat meal in three minutes: one question, one answer, one lesson, with ideas for involving children.
 category: Shabbat & holidays
-related: weekly-parsha, friday-night-dinner-step-by-step, hosting-your-first-shabbat-dinner, shabbat-meals, shabbat-in-lamorinda
+related: weekly-parsha, shabbat-table-conversation-starters, jewish-learning-at-home-with-kids, friday-night-dinner-step-by-step, hosting-your-first-shabbat-dinner, shabbat-meals, shabbat-in-lamorinda
 local: Not sure what to say? Join a Shabbat meal and listen first: /forms/shabbat-meal or call 925-384-7242.
 ---
 A dvar Torah (דבר תורה, "a word of Torah") is a short thought about the weekly Torah portion that you share at the Shabbat table. You can give one in about three minutes: ask one question about the portion, offer one answer, and finish with one lesson for the week ahead.

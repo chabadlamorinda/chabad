@@ -17,7 +17,7 @@ All three begin the same way: "Baruch atah Ado-nai, Elo-heinu melech ha'olam" (�
 *Tell your child:* "We say thank you to G-d for giving us this mitzvah, and then we do it."
 
 **2. Every night, for the miracle.**
-*she'asah nisim la'avoteinu, bayamim hahem bazman hazeh* (שֶׁעָשָׂה נִסִּים לַאֲבוֹתֵינוּ בַּיָּמִים הָהֵם בַּזְּמַן הַזֶּה).
+*she'asah nisim la'avoteinu, bayamim hahem bazman hazeh* (שֶׁעָשָׂה נִסִּים לַאֲבוֹתֵינוּ בַּיָּמִים הָהֵם בִּזְמַן הַזֶּה).
 "Who made miracles for our ancestors in those days, at this time."
 *Tell your child:* "The Maccabees' miracle happened long ago, and every year the same light comes back."
 
@@ -44,12 +44,6 @@ The blessings are said before lighting, standing near the menorah, usually while
 - **Rehearse before Chanukah.** A pretend lighting with an unlit menorah, practicing the order of the candles, makes the real night calmer.
 - **Haneirot Halalu.** As the lights are kindled, many families sing a short hymn called Haneirot Halalu, "These lights we kindle." Ask the Rabbi for the words and the tune; children pick them up quickly.
 
-## Take the next step
-
-- Children love to hear stories while they watch the flames. Our next guide has [Chanukah bedtime stories](/learn/chanukah-bedtime-stories).
-- A child who wants to learn more about prayer can start with [teaching children to pray](/learn/teaching-children-to-pray) and [blessings](/learn/blessings).
-- Come say the blessings together with the community at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026), Sunday, December 6 at 4:00 PM at Lafayette Plaza Park in Lafayette, open to families from Lafayette, Moraga and Orinda.
-
 ## Common questions
 
 ### What are the Chanukah blessings?
@@ -69,3 +63,8 @@ Only the first night, or the first time you light the menorah this Chanukah. It 
 
 ### Where can I hear the Chanukah blessings in Lamorinda?
 At Chabad of Lamorinda's Chanukah events, where families from Lafayette, Moraga and Orinda light together. Call 925-384-7242 to hear what is planned.
+## Take the next step
+
+- Children love to hear stories while they watch the flames. Our next guide has [Chanukah bedtime stories](/learn/chanukah-bedtime-stories).
+- A child who wants to learn more about prayer can start with [teaching children to pray](/learn/teaching-children-to-pray) and [blessings](/learn/blessings).
+- Come say the blessings together with the community at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026), Sunday, December 6 at 4:00 PM at Lafayette Plaza Park in Lafayette, open to families from Lafayette, Moraga and Orinda.

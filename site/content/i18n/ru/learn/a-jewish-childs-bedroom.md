@@ -2,7 +2,7 @@
 title: A Jewish Child's Bedroom: Simple Touches That Matter
 description: Как обустроить еврейскую детскую: мезуза, свой сидур и Хумаш, копилка для цдаки, Шир ла-маалот малышу и Шма на ночь. Простые идеи.
 category: Jewish home
-related: mezuzah, bedtime-shema, jewish-parenting, modeh-ani, raising-jewish-kids-in-a-small-community
+related: mezuzah, jewish-nursery, bedtime-shema, jewish-parenting, modeh-ani, raising-jewish-kids-in-a-small-community
 local: Мы рады помочь с мезузой или первым сидуром для вашего ребёнка. Звоните 925-384-7242 или см. /programs/kids-and-teens.
 ---
 Еврейскую детскую по традиции обустраивают так: кошерная мезуза на двери, у ребёнка свой молитвенник и Хумаш, копилка для цдаки на стене, а малышу вешают Псалом 121 (Шир ла-маалот) для защиты. Любавичский Ребе призывал сделать комнату каждого ребёнка местом Торы, молитвы и добрых дел.

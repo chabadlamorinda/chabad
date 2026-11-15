@@ -2,7 +2,7 @@
 title: איך שומרים על אוכל חם בשבת: פח, פלטה וקומקום
 description: איך שומרים על אוכל חם בשבת: מכינים פח או פלטה לפני שבת, עם אוכל מבושל לגמרי ויבש. כללים פשוטים, ואפשר לשאול את הרב.
 category: Shabbat & holidays
-related: cholent, shabbat-practical-questions, thirty-nine-melachot, shabbat-meals, shabbat-day
+related: cholent, slow-cooker-shabbat-recipes, shabbat-practical-questions, thirty-nine-melachot, shabbat-meals, shabbat-day
 local: בואו לטעום ארוחת קידוש חמה אחרי התפילה בשבת בחב"ד לאמורינדה בלפאייט. התקשרו 925-384-7242 ותשמעו מה מתוכנן.
 ---
 שומרים על אוכל חם בשבת על ידי הכנת מקור חום לפני כניסת השבת, כמו כיריים מכוסות בפח (בלעך) או פלטה עם הגדרה אחת, ועל ידי הנחת אוכל מבושל לגמרי ויבש בלבד. אסור לבשל בשבת, ולכן התוכנית נעשית ביום שישי והבישול מסתיים לפני הדלקת הנרות.

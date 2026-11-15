@@ -2,7 +2,7 @@
 title: Еврейский ночной лагерь: как выбрать летний лагерь после дневного
 description: Думаете о еврейском лагере с ночёвкой? Что искать, как понять, что ребёнок готов, и с чего начать семьям Лафайета, Мораги и Оринды.
 category: Jewish home
-related: jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda, gap-year-in-israel, choosing-jewish-education, kosher-on-campus
+related: jewish-summer-camp-in-lamorinda, preparing-for-jewish-camp, jewish-teens-in-lamorinda, gap-year-in-israel, choosing-jewish-education, kosher-on-campus
 local: Спросите раввина о лагерях с ночёвкой: /help/talk-to-the-rabbi или 925-384-7242.
 ---
 Еврейский ночной лагерь это летний лагерь с проживанием, где дети живут вместе одну смену: еврейские занятия, Шаббат, кошерная еда и отдых на природе. Chabad.org называет лагерь одним из сильнейших способов укрепить еврейскую идентичность, а семьи Лафайета, Мораги и Оринды могут начать с нашего дневного лагеря для малышей и спросить раввина о вариантах с ночёвкой.

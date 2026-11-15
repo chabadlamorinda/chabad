@@ -41,12 +41,6 @@ One Chanukah night, parents and their four children went to a senior residence. 
 *A true custom of our day.*
 Since the 1970s, many cities, with the help of Chabad, have set up giant menorahs in public squares, with neighbors, music and treats. Here in Lafayette, Chabad of Lamorinda's Grand Chanukah Menorah Lighting is at Lafayette Plaza Park. Everybody comes to see the light together.
 
-## Take the next step
-
-- Read the next guide, [the only Jewish kid in class at Chanukah](/learn/only-jewish-kid-in-class-at-chanukah), if your child ever feels different at school.
-- Find many more stories on our [stories page](/stories), each marked with its source.
-- Come see the big menorah on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park: [sign up here](/events/chanukah-grand-menorah-lighting-2026). Families from Lafayette, Moraga and Orinda are all welcome.
-
 ## Common questions
 
 ### What are good Chanukah stories for kids?
@@ -66,3 +60,8 @@ On our [stories page](/stories), and on the kids' pages of Chabad.org. You can a
 
 ### Can kids hear scary parts of the Chanukah story?
 Use your judgment for your child's age. Start with the gentle stories and keep it hopeful. Ask the Rabbi if you would like help.
+## Take the next step
+
+- Read the next guide, [the only Jewish kid in class at Chanukah](/learn/only-jewish-kid-in-class-at-chanukah), if your child ever feels different at school.
+- Find many more stories on our [stories page](/stories), each marked with its source.
+- Come see the big menorah on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park: [sign up here](/events/chanukah-grand-menorah-lighting-2026). Families from Lafayette, Moraga and Orinda are all welcome.

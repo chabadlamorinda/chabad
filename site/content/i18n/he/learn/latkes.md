@@ -2,7 +2,7 @@
 title: לביבות: פנקייק תפוחי אדמה לחנוכה, עם מתכון
 description: איך להכין לביבות תפוחי אדמה פריכות לחנוכה, למה אוכלים מאכלי שמן, מנהג החלב וטיפים לכשרות, עם מתכון פרווה פשוט מ-Chabad.org.
 category: Jewish home
-related: chanukah-foods, hosting-a-chanukah-party, kugel, pareve, chanukah-story
+related: chanukah-foods, frying-safely-on-chanukah, vegan-chanukah-recipes, healthier-chanukah-foods, chanukah-dinner-menu, hosting-a-chanukah-party, kugel, pareve, chanukah-story
 local: חגגו חנוכה עם חב"ד למורינדה בלפייט: התקשרו 925-384-7242 או ראו /events.
 ---
 לביבות הן פנקייק תפוחי אדמה מטוגן ופריך, מאכל חנוכה אהוב משום שהוא מבושל בשמן, זכר לנס פך השמן שדלק שמונה ימים. הסוד ללביבה פריכה הוא לסחוט כמה שיותר מים מתפוחי האדמה הרסוקים לפני הטיגון.

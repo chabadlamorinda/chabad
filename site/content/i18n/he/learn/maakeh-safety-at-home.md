@@ -2,7 +2,7 @@
 title: מעקה: מצוות בית בטוח
 description: התורה מצווה לעשות מעקה לגג, והמסורת היהודית הופכת זאת לגישה שלמה לבטיחות בבית: סולמות, בריכות, מרפסות וגלאי עשן.
 category: Jewish home
-related: chanukat-habayit, setting-up-a-jewish-home, jewish-health-and-body, pikuach-nefesh, mezuzah
+related: chanukat-habayit, menorah-fire-safety, setting-up-a-jewish-home, jewish-health-and-body, pikuach-nefesh, mezuzah
 local: עוברים לבית חדש? התקשרו לרב לבקובסקי 925-384-7242 לתלות מזוזות ולברך את הבית.
 ---
 מעקה (מַעֲקֶה) היא מצוות התורה לעשות מעקה, מחיצה, סביב הגג כדי שאיש לא ייפול: "כִּי תִבְנֶה בַיִת חָדָשׁ וְעָשִׂיתָ מַעֲקֶה לְגַגֶּךָ וְלֹא תָשִׂים דָּמִים בְּבֵיתֶךָ כִּי יִפֹּל הַנֹּפֵל מִמֶּנּוּ" (דברים כב, ח). המסורת היהודית מרחיבה זאת לכל סכנה בבית, ולכן בטיחות היא מצווה.

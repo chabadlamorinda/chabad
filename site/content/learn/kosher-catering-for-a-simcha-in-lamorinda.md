@@ -2,7 +2,7 @@
 title: Kosher Food for a Bar Mitzvah, Wedding or Party in Lamorinda: What to Ask
 description: Planning kosher food for a bar mitzvah, wedding or party in Lafayette, Moraga or Orinda? The questions to ask a caterer or venue, and simple options.
 category: Lamorinda
-related: kosher-in-lamorinda, kosher-certification, hosting-a-kosher-guest, bar-bat-mitzvah-in-lamorinda, kosher-wine
+related: kosher-in-lamorinda, meaningful-bar-bat-mitzvah-celebration, kosher-certification, hosting-a-kosher-guest, bar-bat-mitzvah-in-lamorinda, kosher-wine
 local: Planning a simcha with kosher food? Call Rabbi Labkowski at 925-384-7242 and he will gladly help you ask the right questions.
 ---
 To serve kosher food at a bar mitzvah, wedding or party in Lamorinda, ask your caterer or venue who certifies the kitchen, whether a kosher supervisor (a *mashgiach*, משגיח) will be present, and whether the menu is meat or dairy. Chabad.org advises finding out who is responsible for kashrut before you book, and a reliable caterer will be glad to answer. Chabad of Lamorinda does not recommend businesses, but the Rabbi will help you check the answers.

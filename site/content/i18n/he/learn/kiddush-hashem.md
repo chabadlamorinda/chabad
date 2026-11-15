@@ -2,7 +2,7 @@
 title: קידוש ה׳: לעשות את שם ה׳ אהוב בחיי היום יום
 description: מה זה לקדש את שם ה׳ ביושר ובחסד, בעבודה, ברשת ובציבור, ומהו ההפך: חילול ה׳.
 category: Jewish ideas
-related: business-ethics, jewish-pride, chesed, lashon-hara
+related: business-ethics, chana-and-her-seven-sons, jewish-pride, chesed, lashon-hara
 local: רוצים ללמוד עוד על מוסר יהודי בלאפייט, מוראגה או אורינדה? התקשרו לרב ישראל לבקובסקי, 925-384-7242.
 ---
 **קידוש ה׳** פירושו "קידוש שם ה׳". התורה אומרת: "ונקדשתי בתוך בני ישראל" (ויקרא כב, לב). כל יהודי מייצג את ה׳ ואת עם ישראל, וכל יהודי יכול לעשות את שם ה׳ אהוב בעולם.

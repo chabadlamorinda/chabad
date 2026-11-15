@@ -2,7 +2,7 @@
 title: Латкес: ханукальные картофельные оладьи, с рецептом
 description: Как приготовить хрустящие латкес на Хануку, почему едят жареное в масле, обычай молочного и советы по кашруту, с простым парве-рецептом с Chabad.org.
 category: Jewish home
-related: chanukah-foods, hosting-a-chanukah-party, kugel, pareve, chanukah-story
+related: chanukah-foods, frying-safely-on-chanukah, vegan-chanukah-recipes, healthier-chanukah-foods, chanukah-dinner-menu, hosting-a-chanukah-party, kugel, pareve, chanukah-story
 local: Празднуйте Хануку с Хабадом Ламоринды в Лафайетте: звоните 925-384-7242 или смотрите /events.
 ---
 Латкес - хрустящие жареные картофельные оладьи, любимое блюдо Хануки, потому что их готовят на масле, а это напоминает о чуде масла, горевшего восемь дней. Секрет хрустящих латкес - выжать из натёртого картофеля как можно больше жидкости перед жаркой.

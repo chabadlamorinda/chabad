@@ -2,7 +2,7 @@
 title: How Much to Give? Bar Mitzvah, Wedding and Baby Gifts in Multiples of 18
 description: Why Jews give gifts and charity in multiples of 18 (chai, "life"), and how to choose a meaningful gift for a bar or bat mitzvah, wedding or new baby.
 category: Life cycle
-related: chai-symbol, attending-a-bar-bat-mitzvah, jewish-gift-ideas, attending-a-jewish-wedding, tzedakah
+related: chai-symbol, bar-bat-mitzvah-invitation-wording, attending-a-bar-bat-mitzvah, jewish-gift-ideas, attending-a-jewish-wedding, tzedakah
 local: Not sure what to give for a simcha? Call Rabbi Yisroel Labkowski at 925-384-7242, or come to Chabad of Lamorinda in Lafayette and ask.
 ---
 Many Jews give money, gifts and charity in multiples of 18, such as 18, 36, 54 or 72, because the Hebrew word *chai* (חי), "life," has the numerical value of 18. The custom is a wish for a good, long life for the giver and for the one who receives. The custom is in the multiple, not in the size of the gift.

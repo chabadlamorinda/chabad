@@ -2,7 +2,7 @@
 title: Is Vegan Food Kosher? Vegetarian and Plant-Based Eating and Kashrut
 description: Is vegan food kosher? Why vegan or vegetarian is not automatically kosher, and how to make a plant-based kitchen kosher. Ask Chabad of Lamorinda.
 category: Kosher
-related: pareve, eating-out-kosher, checking-for-insects, kosher-wine, kosher-kitchen
+related: pareve, vegan-chanukah-recipes, eating-out-kosher, checking-for-insects, kosher-wine, kosher-kitchen
 local: Keep a vegetarian or vegan home and want it kosher? Call Rabbi Labkowski at 925-384-7242 for help.
 ---
 Vegan food is not automatically kosher. A vegan or vegetarian label does not tell you whether the equipment was kosher, the wine or grape juice was certified, or the ingredients were checked, so a kosher-certified restaurant or product is the reliable standard.

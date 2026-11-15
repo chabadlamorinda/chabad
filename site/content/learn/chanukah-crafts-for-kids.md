@@ -41,12 +41,6 @@ Children love making their own menorah from clay, wood or jars. It makes a lovel
 
 If you want to actually light a craft menorah, ask first: the mitzvah is done with real oil or wax flames, so the holders must be sturdy, deep enough for the oil or candle and made of something that does not burn. When in doubt, display the craft menorah and light a proper one beside it. See [how to light the menorah](/learn/chanukah-menorah) and [menorah fire safety](/learn/menorah-fire-safety). Never leave a child alone with a lit flame.
 
-## Take the next step
-
-- If a toddler is in your house, the next guide, [Chanukah with toddlers and babies](/learn/chanukah-with-toddlers), has gentle ideas for the youngest.
-- Bring your children's creations to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) in Lafayette on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park: Decorate Your Own Donut, a Giant Dreidel Game, LED light wands and more. It is free and open to everyone.
-- More fun for kids is on our [kids' page](/kids).
-
 ## Common questions
 
 ### What are easy Chanukah crafts for kids?
@@ -66,3 +60,8 @@ Talk while you work: why we light eight nights, why we light where others can se
 
 ### Where can my family do Chanukah activities in Lamorinda?
 Families in Lafayette, Moraga and Orinda are welcome at Chabad of Lamorinda's Chanukah events. Call 925-384-7242 to hear what is planned for children.
+## Take the next step
+
+- If a toddler is in your house, the next guide, [Chanukah with toddlers and babies](/learn/chanukah-with-toddlers), has gentle ideas for the youngest.
+- Bring your children's creations to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) in Lafayette on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park: Decorate Your Own Donut, a Giant Dreidel Game, LED light wands and more. It is free and open to everyone.
+- More fun for kids is on our [kids' page](/kids).

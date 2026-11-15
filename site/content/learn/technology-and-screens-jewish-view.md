@@ -2,7 +2,7 @@
 title: Screens, Phones and Technology: A Jewish View
 description: How Judaism sees phones, screens and technology: a tool for good, its real challenges, Shabbat as a weekly break, and practical ideas for families.
 category: Jewish ideas
-related: shabbat-with-kids, lashon-hara, jewish-parenting, daily-torah-study, shabbat-for-working-parents
+related: shabbat-with-kids, unplugging-on-shabbat, lashon-hara, jewish-parenting, daily-torah-study, shabbat-for-working-parents
 local: Families in Lafayette, Moraga and Orinda are welcome to experience a phone-free Shabbat at the Labkowski family's Friday night table. To talk about finding balance at home, call the Rabbi or Rebbetzin at 925-384-7242.
 ---
 Phones, tablets and computers are part of almost every moment of our lives. Judaism does not ask us to run away from them. It asks a better question: is this tool serving me and my purpose, or am I serving it?

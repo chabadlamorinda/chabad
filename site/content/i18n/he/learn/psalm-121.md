@@ -2,7 +2,7 @@
 title: Psalm 121: "I Lift My Eyes to the Mountains" and the Shir Lamaalot Card
 description: Psalm 121 (Shir Lamaalot) in Hebrew and English, and the custom of hanging a Shir Lamaalot card in the birthing room and by a newborn's crib.
 category: Prayer & Torah
-related: tehillim, jewish-pregnancy, giving-birth-jewish-customs, psalm-91, new-parents-in-lamorinda
+related: tehillim, shir-hamaalot-for-newborns, jewish-pregnancy, giving-birth-jewish-customs, psalm-91, new-parents-in-lamorinda
 local: ממתינים לתינוק? התקשרו אל הרבנית: 925-384-7241 או אל הרב לבקובסקי: 925-384-7242 ושאלו על כרטיס שיר למעלות.
 ---
 תהילים קכ"א, "שִׁיר לַמַּעֲלוֹת", הוא המזמור שמתחיל במילים "אֶשָּׂא עֵינַי אֶל הֶהָרִים, מֵאַיִן יָבֹא עֶזְרִי". יהודים אומרים אותו לנחמה ולשמירה, ומנהג חב"ד לתלות כרטיס עם המזמור בחדר הלידה ולצד עריסת היילוד.

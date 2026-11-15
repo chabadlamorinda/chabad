@@ -2,7 +2,7 @@
 title: "Raising Hebrew-Speaking Kids in Lamorinda: A Guide for Israeli Families"
 description: How Israeli and Hebrew-speaking families in Lafayette, Moraga and Orinda can keep Hebrew alive at home, with Shabbat, Torah and community. Call 925-384-7242.
 category: Lamorinda
-related: israelis-in-lamorinda, lashon-hakodesh, hebrew-phrases, raising-jewish-kids-in-a-small-community, modeh-ani
+related: israelis-in-lamorinda, teaching-kids-the-aleph-bet, lashon-hakodesh, hebrew-phrases, raising-jewish-kids-in-a-small-community, modeh-ani
 local: Come to the Tuesday Torah class in Hebrew with a meal, or call 925-384-7242 to ask about Hebrew School and the preschool.
 ---
 Israeli families in Lafayette, Moraga and Orinda keep their children speaking Hebrew by making it the language of the home, and by giving Hebrew a living place: songs, stories, Shabbat and the holidays. Children who hear Hebrew at the Shabbat table and in Torah learning grow up with more than a language. They keep a connection to their people.

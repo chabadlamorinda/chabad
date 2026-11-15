@@ -2,7 +2,7 @@
 title: Bar or Bat Mitzvah Date and Torah Portion: How to Find Yours
 description: How to find your bar or bat mitzvah date and Torah portion from your Hebrew birthday, including sunset births and leap years. Help in Lafayette.
 category: Life cycle
-related: bar-bat-mitzvah-timeline, hebrew-birthday, bar-mitzvah-speech, adult-bar-bat-mitzvah, jewish-leap-year-and-calendar
+related: bar-bat-mitzvah-timeline, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date, hebrew-birthday, bar-mitzvah-speech, adult-bar-bat-mitzvah, jewish-leap-year-and-calendar
 local: Not sure of your date or portion? Sign up through /forms/bar-bat-mitzvah or call Rabbi Labkowski at 925-384-7242, and save each child's dates in /account.
 ---
 A boy's bar mitzvah date is his 13th Hebrew birthday, and a girl's bat mitzvah date is her 12th Hebrew birthday, counted on the Jewish calendar and not the secular one. His or her Torah portion (*parsha*, פָּרָשָׁה) is the one read in the Shabbat of that week. Because the Jewish calendar is based on the moon, the date moves around the secular calendar, so you need to look it up.

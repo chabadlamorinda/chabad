@@ -2,7 +2,7 @@
 title: Еврейский куриный бульон: классика Шаббата, с рецептом
 description: Как приготовить еврейский куриный бульон к Шаббату: простой метод с Chabad.org, кнейдлах и креплах, заморозка и почему его подают.
 category: Jewish home
-related: shabbat-meals, jewish-foods, bikur-cholim, keeping-food-warm-on-shabbat, kosher-meat
+related: shabbat-meals, easy-shabbat-dinner-menu, jewish-foods, bikur-cholim, keeping-food-warm-on-shabbat, kosher-meat
 local: Готовите к Шаббату впервые? Запишитесь на субботнюю трапезу: /forms/shabbat-meal или звоните 925-384-7242.
 ---
 Еврейский куриный бульон - это золотистый отвар, который получается, если несколько часов томить курицу с луком, морковью, сельдереем и другими овощами; это классическое первое блюдо субботней трапезы. Семьи в Лафайете, Мораге и Орин­де варят его в четверг или пятницу, чтобы он был готов к началу Шаббата.

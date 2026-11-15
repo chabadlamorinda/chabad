@@ -2,7 +2,7 @@
 title: Hebrew School, Day School or Afterschool? Choosing Jewish Education for Your Child
 description: How to choose Jewish education for your child in Lafayette, Moraga and Orinda: what chinuch means, questions to ask, and our programs.
 category: Jewish home
-related: chinuch, hebrew-school-in-lamorinda, choosing-a-jewish-preschool, jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda
+related: chinuch, choosing-a-jewish-afterschool-program, is-hebrew-school-worth-it, hebrew-school-in-lamorinda, choosing-a-jewish-preschool, jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda
 local: Not sure which fits your child? Talk it through with the Rabbi at /help/talk-to-the-rabbi or call 925-384-7242.
 ---
 The best Jewish education for your child is the one that fits your family's time, your child's age and your hopes for Jewish life at home. Options range from a full-time Jewish day school to a once-a-week Hebrew School, an afterschool program or summer camp, and Chabad of Lamorinda in Lafayette offers several of these for families in Lafayette, Moraga and Orinda.

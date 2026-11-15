@@ -2,7 +2,7 @@
 title: Еврейская школа, дневная школа или продлёнка? Как выбрать еврейское образование для ребёнка
 description: Как выбрать еврейское образование для ребёнка в Лафайете, Мораге и Оринде: что такое хинух, вопросы для выбора и программы Хабада Ламоринды.
 category: Jewish home
-related: chinuch, hebrew-school-in-lamorinda, choosing-a-jewish-preschool, jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda
+related: chinuch, choosing-a-jewish-afterschool-program, is-hebrew-school-worth-it, hebrew-school-in-lamorinda, choosing-a-jewish-preschool, jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda
 local: Не уверены, что подойдёт вашему ребёнку? Поговорите с раввином: /help/talk-to-the-rabbi или 925-384-7242.
 ---
 Лучшее еврейское образование для ребёнка то, что подходит времени вашей семьи, возрасту ребёнка и вашим надеждам на еврейскую жизнь дома. Варианты: от полноценной еврейской дневной школы до еврейской школы раз в неделю, продлёнки или лагеря, и Хабад Ламоринды в Лафайете предлагает несколько из них семьям Лафайета, Мораги и Оринды.

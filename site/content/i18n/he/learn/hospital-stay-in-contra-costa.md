@@ -2,7 +2,7 @@
 title: בבית החולים בקונטרה קוסטה: מדריך יהודי למטופלים ולמשפחות
 description: יהודים בבית חולים ליד לאפייט, וולנט קריק או קונטרה קוסטה? בקשו ביקור רב, אוכל כשר ועזרה בשבת. התקשרו 925-384-7242.
 category: Lamorinda
-related: bikur-cholim, shabbat-in-the-hospital, prayer-before-surgery, mi-sheberach, tehillim
+related: bikur-cholim, chanukah-in-the-hospital, shabbat-in-the-hospital, prayer-before-surgery, mi-sheberach, tehillim
 local: מישהו בבית חולים? התקשרו לרב לבקובסקי 925-384-7242 או ראו /help.
 ---
 אם אתם או יקיר שלכם בבית חולים במחוז קונטרה קוסטה, אמרו לצוות שאתם יהודים, והתקשרו לרב ישראל לבקובסקי 925-384-7242. הוא מבקר בבתים, בבתי חולים, במוסדות סיעוד ובהוספיס ברחבי האזור, כולל לאפייט, מוראגה, אורינדה, פלזנט היל ומרטינז, ונוסיף את שם החולה ל[רשימת התהילים](/tehillim) שלנו.

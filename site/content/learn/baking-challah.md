@@ -2,7 +2,7 @@
 title: How to Make Challah at Home: A Simple Recipe, Braiding and the Blessing
 description: How to make challah: an easy dough, three- and six-strand braids, baking and freezing for Friday. Join the Women's Circle at Chabad of Lamorinda.
 category: Jewish home
-related: hafrashat-challah, challah, preparing-for-shabbat, shabbat-candles, shabbat-meals
+related: hafrashat-challah, chanukah-baking-with-kids, challah, preparing-for-shabbat, shabbat-candles, shabbat-meals
 local: Bake challah with other women in Lafayette, Moraga and Orinda: join the Jewish Women's Circle, or call 925-384-7242.
 ---
 Challah (חַלָּה) is the braided egg bread Jews eat on Shabbat and holidays, and you can make it at home with flour, yeast, water, oil, sugar, eggs and salt. Mix the dough, let it rise twice, braid it, brush it with egg and bake it until golden, ideally on Thursday or Friday.

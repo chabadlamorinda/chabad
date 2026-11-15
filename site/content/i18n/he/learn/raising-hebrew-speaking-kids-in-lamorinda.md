@@ -2,7 +2,7 @@
 title: "מגדלים ילדים דוברי עברית בלמורינדה: מדריך למשפחות ישראליות"
 description: איך משפחות ישראליות ודוברות עברית בלפאייט, מוראגה ואורינדה שומרות על העברית בבית, עם שבת, תורה וקהילה. טלפון 925-384-7242.
 category: Lamorinda
-related: israelis-in-lamorinda, lashon-hakodesh, hebrew-phrases, raising-jewish-kids-in-a-small-community, modeh-ani
+related: israelis-in-lamorinda, teaching-kids-the-aleph-bet, lashon-hakodesh, hebrew-phrases, raising-jewish-kids-in-a-small-community, modeh-ani
 local: בואו לשיעור התורה בעברית בימי שלישי עם סעודה, או התקשרו 925-384-7242 ושאלו על בית הספר העברי ועל הגן.
 ---
 משפחות ישראליות בלפאייט, מוראגה ואורינדה שומרות על העברית של ילדיהן כשהיא שפת הבית, ויש לה מקום חי: שירים, סיפורים, שבת וחגים. ילדים ששומעים עברית ליד שולחן השבת ובלימוד תורה גדלים עם יותר משפה. הם שומרים על קשר לעם שלהם.

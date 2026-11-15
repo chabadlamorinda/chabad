@@ -2,7 +2,7 @@
 title: Шаббат для тех, кто ездит на работу: как успеть домой из Сан-Франциско и Окленда
 description: Как успеть домой до Шаббата, если вы ездите на BART или по шоссе 24 из Сан-Франциско или Окленда в Лафайетт, Морагу или Оринду. Спокойный план на пятницу.
 category: Lamorinda
-related: shabbat-in-winter, shabbat-for-working-parents, preparing-for-shabbat, shabbat-candles, shabbat-times-in-lamorinda-explained
+related: shabbat-in-winter, telling-your-boss-you-keep-shabbat, shabbat-for-working-parents, preparing-for-shabbat, shabbat-candles, shabbat-times-in-lamorinda-explained
 local: Ездите на работу в город и хотите встретить Шаббат дома? Позвоните раву Лабковскому, 925-384-7242, или приходите на Кабалат Шаббат в Лафайетт.
 ---
 Чтобы успеть домой к Шаббату, узнайте время зажигания свечей на этой неделе, отсчитайте от него назад и выезжайте с работы так рано, чтобы пробка или задержка BART не застали вас врасплох. Свечи зажигают примерно за 18 минут до заката, а после заката зажигать уже поздно, поэтому план, составленный в четверг, сохраняет Шаббат спокойным.

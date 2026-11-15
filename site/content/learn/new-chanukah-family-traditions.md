@@ -46,12 +46,6 @@ Chabad.org lists several old and new traditions. Here they are, with ways to mak
 
 See [Jewish parenting](/learn/jewish-parenting) for more on raising children with a love of Judaism.
 
-## Take the next step
-
-- If grandparents are part of your holiday, the next guide, [Chanukah with grandchildren](/learn/chanukah-with-grandchildren), has ideas for lighting together, near or far.
-- Celebrate with the community at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park: a Gelt Drop, Decorate Your Own Donut, a Giant Dreidel Game and LED light wands for kids, open to families from Lafayette, Moraga and Orinda.
-- See all of our [events](/events) and call 925-384-7242 with questions.
-
 ## Common questions
 
 ### How do we start a new Chanukah tradition?
@@ -71,3 +65,8 @@ Choose the traditions that fit your home and ask the Rabbi about your questions.
 
 ### Where can we celebrate Chanukah in Lamorinda?
 At Chabad of Lamorinda's Grand Chanukah Menorah Lighting in Lafayette, and at other events listed on our [events page](/events). Call 925-384-7242.
+## Take the next step
+
+- If grandparents are part of your holiday, the next guide, [Chanukah with grandchildren](/learn/chanukah-with-grandchildren), has ideas for lighting together, near or far.
+- Celebrate with the community at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park: a Gelt Drop, Decorate Your Own Donut, a Giant Dreidel Game and LED light wands for kids, open to families from Lafayette, Moraga and Orinda.
+- See all of our [events](/events) and call 925-384-7242 with questions.

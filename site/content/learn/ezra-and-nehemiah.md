@@ -2,7 +2,7 @@
 title: Ezra and Nehemiah: Rebuilding Jerusalem and the Jewish People
 description: Who were Ezra the Scribe and Nehemiah? How they led the return from Babylon, rebuilt Jerusalem and gave us public Torah reading and our prayers.
 category: Prayer & Torah
-related: the-holy-temple, torah-reading, siddur, amidah, jewish-history-overview
+related: the-holy-temple, second-temple-period, torah-reading, siddur, amidah, jewish-history-overview
 local: Come hear the Torah read the way Ezra taught, and ask the Rabbi anything. Call 925-384-7242.
 ---
 Ezra the Scribe (עזרא הסופר, Ezra HaSofer) led the second wave of Jews home from Babylon to the Land of Israel and renewed Torah life there at the start of the Second Temple era. Nehemiah, a Jewish official from Babylon, came to rebuild Jerusalem's walls and protect the people, so that Ezra could rebuild their spirit.

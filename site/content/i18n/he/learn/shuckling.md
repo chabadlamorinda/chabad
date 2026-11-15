@@ -2,7 +2,7 @@
 title: למה יהודים מתנדנדים בתפילה? שוקלינג מוסבר
 description: למה יהודים מתנדנדים בתפילה? שוקלינג מוסבר: הנשמה כלהבה, השתחוויות ותנועות אחרות בתפילה, והאם חייבים. בואו לראות בעצמכם.
 category: Prayer & Torah
-related: first-time-at-synagogue, amidah, prayer, siddur, what-is-a-synagogue
+related: first-time-at-synagogue, what-is-davening, amidah, prayer, siddur, what-is-a-synagogue
 local: בואו לראות בעצמכם בתפילות שבת בלפאייט. התקשרו לרב לבקובסקי 925-384-7242 לשמוע מה מתוכנן, או ראו /events.
 ---
 יהודים מתנדנדים קדימה ואחורה בתפילה, מנהג שנקרא שוקלינג (מהמילה האידית ל"ניענוע"), כדי להתפלל בכל הגוף ולרכז את הדעת. זה מנהג ולא חובה, ויהודים רבים מתפללים היטב בעמידה בלי לנוע.

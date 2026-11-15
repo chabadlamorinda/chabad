@@ -2,7 +2,7 @@
 title: חשמל בשבת: אורות, מכשירים וטלפונים
 description: למה לא מדליקים ומכבים אורות ומכשירים בשבת, איך עובדים שעוני שבת, נורת המקרר, מים חמים, מצב שבת וצעדים ראשונים פשוטים.
 category: Shabbat & holidays
-related: shabbat-practical-questions, thirty-nine-melachot, shabbat-for-beginners, muktzeh
+related: shabbat-practical-questions, unplugging-on-shabbat, thirty-nine-melachot, shabbat-for-beginners, muktzeh
 local: משפחות בלאפייט, מוראגה ואורינדה מוזמנות להתקשר להרב ישראל לבקובסקי 925-384-7242 עם כל שאלה על מכשירי חשמל ושבת בבית.
 ---
 בשבת לא מדליקים ולא מכבים מכשירי חשמל. האורות נשארים כפי שכוונו לפני שבת, הטלפונים והמסכים מונחים בצד, ושעוני שבת עושים את ההדלקה והכיבוי בשבילנו. זה נשמע הרבה, אבל ברוב הבתים צריך רק כמה צעדים פשוטים ביום שישי אחר הצהריים.

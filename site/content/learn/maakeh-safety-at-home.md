@@ -2,7 +2,7 @@
 title: Maakeh: The Mitzvah of a Safe Home
 description: The Torah commands a railing on the roof, and tradition grows it into a Jewish view of home safety: ladders, pools, balconies and smoke detectors.
 category: Jewish home
-related: chanukat-habayit, setting-up-a-jewish-home, jewish-health-and-body, pikuach-nefesh, mezuzah
+related: chanukat-habayit, menorah-fire-safety, setting-up-a-jewish-home, jewish-health-and-body, pikuach-nefesh, mezuzah
 local: Moving into a new home? Call Rabbi Labkowski at 925-384-7242 to put up your mezuzahs and bless your home.
 ---
 Maakeh (מַעֲקֶה) is the Torah's commandment to put a railing, a parapet, around your roof so that no one falls: "When you build a new house, you shall make a railing for your roof, so that you do not bring blood upon your house if someone falls from it" (Deuteronomy 22:8). Jewish tradition extends it to every danger in the home, which makes safety a mitzvah.

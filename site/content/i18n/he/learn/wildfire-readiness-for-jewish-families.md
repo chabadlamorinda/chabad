@@ -2,7 +2,7 @@
 title: עונת השריפות בלמורינדה: מדריך היערכות למשפחה יהודית
 description: כשאש מאיימת על לאפייט, מוראגה או אורינדה, ההלכה אומרת לצאת מיד, גם בשבת. רשימת תיק חירום, התראות ותכנית לשבת רגועה.
 category: Lamorinda
-related: pikuach-nefesh, shabbat-candles, moving-to-lamorinda, shabbat-practical-questions
+related: pikuach-nefesh, menorah-fire-safety, shabbat-candles, moving-to-lamorinda, shabbat-practical-questions
 local: לא בטוחים מה לארוז או מה לעשות בשבת? התקשרו לרב לבקובסקי 925-384-7242 או כתבו לנו ב-/help/talk-to-the-rabbi.
 ---
 כששריפה מאיימת על הבית שלכם בלאפייט, במוראגה או באורינדה, ההלכה ברורה: פיקוח נפש קודם לכול, ויוצאים מיד, גם בשבת ובחגים. כדאי להתכונן בשקט מראש, כדי שביום האמת תוכלו לפעול בלי היסוס.

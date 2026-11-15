@@ -2,7 +2,7 @@
 title: כמה לתת? מתנות לבר מצווה, לחתונה וללידה בכפולות של 18
 description: למה נוהגים לתת מתנות וצדקה בכפולות של 18 (חי), ואיך לבחור מתנה משמעותית לבר או בת מצווה, לחתונה או ליילוד.
 category: Life cycle
-related: chai-symbol, attending-a-bar-bat-mitzvah, jewish-gift-ideas, attending-a-jewish-wedding, tzedakah
+related: chai-symbol, bar-bat-mitzvah-invitation-wording, attending-a-bar-bat-mitzvah, jewish-gift-ideas, attending-a-jewish-wedding, tzedakah
 local: לא בטוחים מה לתת לשמחה? התקשרו לרב ישראל לבקובסקי, 925-384-7242, או בואו לחב"ד לאמורינדה בלפייט ושאלו.
 ---
 יהודים רבים נותנים כסף, מתנות וצדקה בכפולות של 18, כמו 18, 36, 54 או 72, כי המילה העברית "חי" (חי) שווה 18 בגימטריה. המנהג הוא ברכה לחיים טובים וארוכים לנותן ולמקבל. המנהג הוא בכפולה, ולא בגודל המתנה.

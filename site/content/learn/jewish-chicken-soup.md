@@ -2,7 +2,7 @@
 title: Jewish Chicken Soup: The Shabbat Classic, With a Recipe
 description: How to make Jewish chicken soup for Shabbat, with a simple Chabad.org method, matzah balls and kreplach, freezing tips and why we serve it.
 category: Jewish home
-related: shabbat-meals, jewish-foods, bikur-cholim, keeping-food-warm-on-shabbat, kosher-meat
+related: shabbat-meals, easy-shabbat-dinner-menu, jewish-foods, bikur-cholim, keeping-food-warm-on-shabbat, kosher-meat
 local: Cooking for Shabbat for the first time? Sign up for a Shabbat meal at /forms/shabbat-meal or call 925-384-7242.
 ---
 Jewish chicken soup is a golden broth made by simmering chicken with onions, carrots, celery and other vegetables for several hours, and it is the classic first course of a Shabbat meal. Families in Lafayette, Moraga and Orinda make it on Thursday or Friday, so it is ready when Shabbat begins.

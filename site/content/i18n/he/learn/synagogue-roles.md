@@ -2,7 +2,7 @@
 title: מי עושה מה בבית הכנסת: רב, גבאי, חזן ובעל קורא
 description: מהו גבאי? חזן? בעל קורא? מדריך פשוט לתפקידים בבית הכנסת, ואיך מבקר בפעם הראשונה יכול לקבל כיבוד.
 category: Prayer & Torah
-related: first-time-at-synagogue, what-is-a-synagogue, torah-reading, what-is-a-rabbi, leading-the-prayers
+related: first-time-at-synagogue, synagogue-honors, what-is-a-synagogue, torah-reading, what-is-a-rabbi, leading-the-prayers
 local: סקרנים איך זה להשתתף בתפילה? התקשרו לרב לבקובסקי, 925-384-7242, והוא ישמח ללוות אתכם.
 ---
 בבית הכנסת הרב מלמד ומדריך את הקהילה, הגבאי מארגן את התפילה ומחלק כיבודים, החזן מוביל את התפילה, והבעל קורא קורא בתורה. את רוב התפקידים מבצעים מתנדבים מהקהל, ומבקר בפעם הראשונה יכול בדרך כלל לקבל כיבוד קטן אם ירצה.

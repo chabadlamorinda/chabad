@@ -2,7 +2,7 @@
 title: סופגניות: לחנוכה, עם מתכון
 description: מהן סופגניות, למה אוכלים סופגניות בחנוכה ואיך מכינים אותן בבית, עם מתכון מ-Chabad.org וטיפים לכשרות.
 category: Jewish home
-related: chanukah-foods, hosting-a-chanukah-party, chanukah-for-kids, latkes, chanukah-story
+related: chanukah-foods, frying-safely-on-chanukah, chanukah-baking-with-kids, hosting-a-chanukah-party, chanukah-for-kids, latkes, chanukah-story
 local: טעמו חנוכה עם חב"ד למורינדה בלפייט: התקשרו 925-384-7242 או ראו /events.
 ---
 סופגניות הן מאפה החנוכה: בצק שמרים מטוגן בשמן וממולא בריבה. אוכלים אותן כי הן מטוגנות בשמן, זכר לנס פך השמן שדלק שמונה ימים.

@@ -2,7 +2,7 @@
 title: Public Menorah Lightings: Why Chanukah Goes Into the Town Square
 description: What a public menorah lighting is, why Chabad lights giant menorahs and what to expect. Lafayette's is Sunday, Dec. 6 at 4:00 PM, free.
 category: Shabbat & holidays
-related: chanukah-in-lamorinda, the-rebbe, mitzvah-tanks, chanukah-menorah, chanukah-story
+related: chanukah-in-lamorinda, light-up-lafayette, menorah-campaign-history, the-rebbe, mitzvah-tanks, chanukah-menorah, chanukah-story
 local: The Grand Chanukah Menorah Lighting is Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, free for everyone. Sign up at /events/chanukah-grand-menorah-lighting-2026.
 ---
 A public menorah lighting is a community event where a large Chanukah menorah is lit outdoors, with blessings and songs, so that everyone can see the light. It fulfills the idea of publicizing the miracle of Chanukah, and it is open to everyone.

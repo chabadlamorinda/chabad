@@ -2,7 +2,7 @@
 title: Sandek, Kvater and the Honors at a Bris: Who Does What
 description: מהו סנדק, מיהם הקוואטער, מהו כסא של אליהו ואיך בוחרים את הכיבודים בברית. מדריך להורים חדשים.
 category: Life cycle
-related: preparing-for-a-bris, brit-milah, jewish-baby-names, new-parents-in-lamorinda, a-jewish-childs-bedroom
+related: preparing-for-a-bris, postponing-a-bris, brit-milah, jewish-baby-names, new-parents-in-lamorinda, a-jewish-childs-bedroom
 local: מתכננים ברית? התקשרו לרב לבקובסקי 925-384-7242 ונעזור לבחור כיבודים ולהתכונן. כולם מוזמנים.
 ---
 הסנדק הוא מי שמחזיק את התינוק בעת המילה בברית, ונחשב מסורתית לכבוד הגדול ביותר בטקס. הקוואטער הם זוג שמביאים את התינוק מהאם אל הסנדק, וכסא של אליהו הוא כיסא המיועד לאליהו הנביא, "מלאך הברית".

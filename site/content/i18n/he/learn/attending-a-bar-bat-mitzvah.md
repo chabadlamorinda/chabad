@@ -2,7 +2,7 @@
 title: אורחים בבר או בת מצווה: מדריך לאורח
 description: הוזמנתם לבר או בת מצווה? התפילה, העלייה לתורה, זריקת הסוכריות, המסיבה, מתנות בכפולות של 18, מה ללבוש וטלפונים בשבת.
 category: Life cycle
-related: bar-mitzvah, bat-mitzvah, first-time-at-synagogue, torah-reading, jewish-gift-ideas
+related: bar-mitzvah, attending-a-bris, grandparents-at-a-bar-mitzvah, bar-bat-mitzvah-invitation-wording, bat-mitzvah, first-time-at-synagogue, torah-reading, jewish-gift-ideas
 local: חוגגים בר או בת מצווה בלאפייט, מוראגה או אורינדה? הרב ישראל לבקובסקי ישמח לענות על כל שאלה: 925-384-7242.
 ---
 בר מצווה או בת מצווה הם יום ההתבגרות של נער בן שלוש עשרה או נערה בת שתים עשרה: היום שבו הם נעשים אחראים למצוות כיהודים בוגרים. המשפחה התכוננה לעיתים קרובות שנה ויותר, ועצם הנוכחות שלכם היא חלק מהמתנה. הנה למה לצפות.

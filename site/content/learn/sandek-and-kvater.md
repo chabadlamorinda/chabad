@@ -2,7 +2,7 @@
 title: Sandek, Kvater and the Honors at a Bris: Who Does What
 description: What a sandek is, who the kvater couple are, what the chair of Elijah means and how to choose the honors at a bris. A guide for new parents.
 category: Life cycle
-related: preparing-for-a-bris, brit-milah, jewish-baby-names, new-parents-in-lamorinda, a-jewish-childs-bedroom
+related: preparing-for-a-bris, postponing-a-bris, brit-milah, jewish-baby-names, new-parents-in-lamorinda, a-jewish-childs-bedroom
 local: Planning a bris? Call Rabbi Labkowski at 925-384-7242 and we will help you choose the honors and prepare. Everyone is welcome.
 ---
 The sandek (סנדק) is the person who holds the baby during the circumcision at a bris, and it is traditionally considered the greatest honor at the ceremony. The kvater (קוואטער) is a couple who bring the baby from the mother to the sandek, and the chair of Elijah is a seat set aside for Elijah the Prophet, the "guardian of the covenant."

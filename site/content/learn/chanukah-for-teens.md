@@ -38,12 +38,6 @@ If something hurtful happens at school, you are not alone. Talk with a parent, a
 
 Chanukah is a perfect time to do something for someone else. Give part of your gelt to tzedakah, bake for a neighbor, or visit a senior with a card. We have ideas in [Chanukah mitzvah projects for kids](/learn/chanukah-mitzvah-projects-for-kids). If you are working on a Bar or Bat Mitzvah, a Chanukah project is a good start; see our [Bar and Bat Mitzvah program](/programs/bar-bat-mitzvah). And if you will be away at college, see [Chanukah at work and college](/learn/chanukah-at-work-and-college).
 
-## Take the next step
-
-- Read the next guide, [Chanukah mitzvah projects for kids](/learn/chanukah-mitzvah-projects-for-kids), and pick one to do with your family or friends.
-- Come to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, free and open to everyone, and bring a friend.
-- Have a question about being Jewish that you have never asked? Talk to the Rabbi at [talk to the Rabbi](/help/talk-to-the-rabbi) or call 925-384-7242.
-
 ## Common questions
 
 ### How can teens celebrate Chanukah?
@@ -63,3 +57,8 @@ Gelt, small gifts and time with family are traditional; many families give part 
 
 ### Where can Lamorinda teens ask questions about Judaism?
 Ask Rabbi Labkowski at 925-384-7242. Teens from Lafayette, Moraga and Orinda are welcome.
+## Take the next step
+
+- Read the next guide, [Chanukah mitzvah projects for kids](/learn/chanukah-mitzvah-projects-for-kids), and pick one to do with your family or friends.
+- Come to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, free and open to everyone, and bring a friend.
+- Have a question about being Jewish that you have never asked? Talk to the Rabbi at [talk to the Rabbi](/help/talk-to-the-rabbi) or call 925-384-7242.

@@ -2,7 +2,7 @@
 title: איך מכינים חלה בבית: מתכון פשוט, קליעה וברכה
 description: איך מכינים חלה: בצק קל, קליעה של שלושה ושישה פתילים, אפייה והקפאה ליום שישי. הצטרפו לחוג הנשים של חב"ד לאמורינדה.
 category: Jewish home
-related: hafrashat-challah, challah, preparing-for-shabbat, shabbat-candles, shabbat-meals
+related: hafrashat-challah, chanukah-baking-with-kids, challah, preparing-for-shabbat, shabbat-candles, shabbat-meals
 local: אפו חלות יחד עם נשים אחרות בלפאייט, מוראגה ואורינדה: הצטרפו לחוג הנשים היהודי, או התקשרו 925-384-7242.
 ---
 חלה היא לחם הביצים הקלוע שיהודים אוכלים בשבת ובחגים, ואפשר להכין אותה בבית מקמח, שמרים, מים, שמן, סוכר, ביצים ומלח. מערבבים את הבצק, נותנים לו לתפוח פעמיים, קולעים, מורחים בביצה ואופים עד הזהבה, רצוי ביום חמישי או שישי.

@@ -2,7 +2,7 @@
 title: Wildfire Season in Lamorinda: A Jewish Family's Readiness Guide
 description: If a wildfire threatens Lafayette, Moraga or Orinda, Jewish law says leave at once, even on Shabbat. A go-bag list, alerts and a calm Shabbat plan.
 category: Lamorinda
-related: pikuach-nefesh, shabbat-candles, moving-to-lamorinda, shabbat-practical-questions
+related: pikuach-nefesh, menorah-fire-safety, shabbat-candles, moving-to-lamorinda, shabbat-practical-questions
 local: Not sure what to pack or what to do on Shabbat? Call Rabbi Labkowski at 925-384-7242, or write to us at /help/talk-to-the-rabbi.
 ---
 When a wildfire threatens your home in Lafayette, Moraga or Orinda, Jewish law is clear: saving life comes first, and you leave right away, on Shabbat and holidays too. Prepare calmly now, so that on the day you can act without hesitation.

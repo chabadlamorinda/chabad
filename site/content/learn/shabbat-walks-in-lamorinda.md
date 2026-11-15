@@ -2,7 +2,7 @@
 title: Shabbat Afternoon Walks in Lafayette, Moraga and Orinda
 description: Can you take a walk on Shabbat? Yes. What to know about carrying, pace and the Shabbat boundary, plus ideas for trails and streets in Lamorinda.
 category: Lamorinda
-related: shabbat-day, eruv, techum-shabbat, muktzeh, shabbat-with-kids
+related: shabbat-day, shabbat-afternoon-ideas, eruv, techum-shabbat, muktzeh, shabbat-with-kids
 local: Planning a Shabbat walk and not sure what you may carry? Ask Rabbi Labkowski at 925-384-7242 before Shabbat.
 ---
 Yes, you may take a walk on Shabbat, and it is a lovely way to spend the afternoon with your family. Chabad.org teaches that on Shabbat you walk calmly, you do not carry outside an eruv, and you stay within the Shabbat boundary, which is about 2,000 amot (just under 3/5 of a mile) from the edge of your town.

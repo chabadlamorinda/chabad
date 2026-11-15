@@ -2,7 +2,7 @@
 title: בית ספר עברי, בית ספר יהודי או צהרון? איך בוחרים חינוך יהודי לילד
 description: איך בוחרים חינוך יהודי לילד בלפאייט, מוראגה ואורינדה: מהו חינוך, שאלות לשאול, והאפשרויות בחב"ד לאמורינדה.
 category: Jewish home
-related: chinuch, hebrew-school-in-lamorinda, choosing-a-jewish-preschool, jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda
+related: chinuch, choosing-a-jewish-afterschool-program, is-hebrew-school-worth-it, hebrew-school-in-lamorinda, choosing-a-jewish-preschool, jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda
 local: לא בטוחים מה מתאים לילד? דברו עם הרב ב-/help/talk-to-the-rabbi או התקשרו 925-384-7242.
 ---
 החינוך היהודי הטוב ביותר לילד הוא זה שמתאים לזמן של המשפחה, לגיל הילד ולתקוות שלכם לחיים יהודיים בבית. האפשרויות נעות מבית ספר יהודי יום-שלם ועד בית ספר עברי פעם בשבוע, צהרון או קייטנה, וחב"ד לאמורינדה בלפאייט מציעה כמה מהן למשפחות בלפאייט, מוראגה ואורינדה.

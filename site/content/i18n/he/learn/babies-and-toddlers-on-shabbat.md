@@ -2,7 +2,7 @@
 title: תינוקות ופעוטות בשבת: עגלות, בקבוקים, חיתולים ושנת צהריים
 description: איך מטפלים בתינוק בשבת: עגלות ועירוב, בקבוקים, מטרנה, חיתולים ושגרה רגועה. עזרה מעשית להורים בלמורינדה.
 category: Shabbat & holidays
-related: shabbat-with-kids, eruv, new-parents-in-lamorinda, holidays-with-toddlers, shabbat-for-beginners
+related: shabbat-with-kids, first-shabbat-with-a-newborn, eruv, new-parents-in-lamorinda, holidays-with-toddlers, shabbat-for-beginners
 local: תינוק חדש ושבת? התקשרו לרב ישראל לבקובסקי 925-384-7242 ושאלו מה מתוכנן למשפחות עם קטנטנים.
 ---
 טיפול בתינוק בשבת הוא מצווה, והכללים מעשיים: מכינים בקבוקים ואוכל לפני שבת, משתמשים בעגלה רק במקום שיש עירוב, ובריאות התינוק קודמת. ילד חולה קודם לדיני שבת, ואסור לחכות עם התקשרות לרופא.

@@ -2,7 +2,7 @@
 title: Ashkenazi and Sephardi: One Torah, Different Customs
 description: מה פירוש אשכנזי וספרדי? איך קהילות יהודיות פיתחו מנהגים שונים, מתפילה ועד מאכלי פסח, ושמרו על תורה אחת.
 category: Jewish ideas
-related: jewish-customs-minhag, kitniyot, jewish-languages, jewish-last-names, israelis-in-lamorinda
+related: jewish-customs-minhag, chanukah-foods-around-the-jewish-world, kitniyot, jewish-languages, jewish-last-names, israelis-in-lamorinda
 local: מכל רקע שתבואו, אתם מוזמנים. התקשרו לרב לבקובסקי, 925-384-7242, או בואו לאירוע: /events.
 ---
 יהודים אשכנזים הם יהודים שאבותיהם חיו במרכז אירופה ובמזרחה, ויהודים ספרדים הם יהודים שאבותיהם חיו בספרד, בפורטוגל, בצפון אפריקה ובמזרח התיכון. שניהם שומרים אותה תורה ואותה הלכה, אך כל קהילה פיתחה לאורך מאות שנים מנהגים, ניגוני תפילה ומאכלים משלה.

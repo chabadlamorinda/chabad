@@ -2,7 +2,7 @@
 title: מרק עוף יהודי: הקלאסיקה של שבת, עם מתכון
 description: איך מכינים מרק עוף יהודי לשבת: שיטה פשוטה לפי Chabad.org, קניידלעך וקרעפלעך, הקפאה ולמה מגישים אותו.
 category: Jewish home
-related: shabbat-meals, jewish-foods, bikur-cholim, keeping-food-warm-on-shabbat, kosher-meat
+related: shabbat-meals, easy-shabbat-dinner-menu, jewish-foods, bikur-cholim, keeping-food-warm-on-shabbat, kosher-meat
 local: מבשלים לשבת בפעם הראשונה? הירשמו לסעודת שבת ב-/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 מרק עוף יהודי הוא ציר זהוב שמתקבל מבישול איטי של עוף עם בצל, גזר, סלרי וירקות נוספים במשך כמה שעות, והוא המנה הראשונה הקלאסית של סעודת שבת. משפחות בלפיית, מוראגה ואורינדה מכינות אותו ביום חמישי או שישי, כדי שיהיה מוכן עם כניסת השבת.

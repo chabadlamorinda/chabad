@@ -2,7 +2,7 @@
 title: Дата бар или бат-мицвы и недельная глава: как найти свою
 description: Как найти дату бар или бат-мицвы и недельную главу по еврейскому дню рождения, включая рождение после заката и високосные годы. Помощь в Лафайете.
 category: Life cycle
-related: bar-bat-mitzvah-timeline, hebrew-birthday, bar-mitzvah-speech, adult-bar-bat-mitzvah, jewish-leap-year-and-calendar
+related: bar-bat-mitzvah-timeline, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date, hebrew-birthday, bar-mitzvah-speech, adult-bar-bat-mitzvah, jewish-leap-year-and-calendar
 local: Не уверены в дате или главе? Запишитесь через /forms/bar-bat-mitzvah или позвоните раву Лабковскому, 925-384-7242, и сохраните даты детей в /account.
 ---
 Дата бар-мицвы мальчика это его 13-й еврейский день рождения, а дата бат-мицвы девочки её 12-й еврейский день рождения, по еврейскому календарю, а не по гражданскому. Его или её недельная глава (*параша*, פָּרָשָׁה) та, которую читают в субботу этой недели. Еврейский календарь основан на Луне, поэтому дата «гуляет» по гражданскому календарю, и её нужно проверять.

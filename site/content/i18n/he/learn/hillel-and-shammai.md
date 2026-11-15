@@ -2,7 +2,7 @@
 title: "הלל ושמאי: החכמים המפורסמים ומחלוקותיהם לשם שמים"
 description: מי היו הלל ושמאי? החכמים שמאחורי בית הלל ובית שמאי, סיפור הגר על רגל אחת ולקחים למחלוקת בשלום.
 category: Jewish ideas
-related: pirkei-avot, ahavat-yisrael, humility, talmud, aaron-the-high-priest
+related: pirkei-avot, why-add-a-candle-each-night, ahavat-yisrael, humility, talmud, aaron-the-high-priest
 local: בואו ללמוד פרקי אבות וחכמת התלמוד עם אחרים. התקשרו 925-384-7242 ושמעו אילו שיעורים מתוכננים.
 ---
 הלל ושמאי היו שני חכמים גדולים שחיו במאה הראשונה לפני הספירה והנהיגו את הסנהדרין, בית הדין הגבוה. שני בתי המדרש שלהם, בית הלל ובית שמאי, התווכחו על שאלות רבות בהלכה, ומחלוקותיהם נחשבות מופת למחלוקת "לשם שמים".

@@ -2,7 +2,7 @@
 title: Judaism Behind the Iron Curtain: How Jewish Life Survived in the Soviet Union
 description: Как евреи в СССР втайне хранили иудаизм: от подпольных школ до спрятанной мацы, и как семьи могут вернуться к традиции сегодня.
 category: Jewish ideas
-related: russian-speaking-jews-in-lamorinda, chabad-rebbes, jewish-history-overview, adult-brit-milah, adult-bar-bat-mitzvah
+related: russian-speaking-jews-in-lamorinda, chanukah-for-russian-speaking-families, menorahs-in-dark-times, chabad-rebbes, jewish-history-overview, adult-brit-milah, adult-bar-bat-mitzvah
 local: Ваша семья из бывшего Советского Союза? Приходите знакомиться в Хабад Ламоринда в Лафайетте. Звоните: 925-384-7242.
 ---
 Почти весь двадцатый век советская власть стремилась искоренить религию, а соблюдение иудаизма не поощрялось и часто каралось. Но евреи втайне сохраняли иудаизм: в подпольных школах, в тайных мацепекарнях, при тайных обрезаниях и за тихими шаббатними столами, и многие семьи в Лафайетте, Мораге, Оринде и Ист-Бэй это внуки тех людей.

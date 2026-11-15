@@ -2,7 +2,7 @@
 title: עזרא ונחמיה: בניין ירושלים ובניין העם
 description: מי היו עזרא הסופר ונחמיה? כך הובילו את השיבה מבבל, בנו את ירושלים והעניקו לנו את קריאת התורה בציבור ואת התפילות.
 category: Prayer & Torah
-related: the-holy-temple, torah-reading, siddur, amidah, jewish-history-overview
+related: the-holy-temple, second-temple-period, torah-reading, siddur, amidah, jewish-history-overview
 local: בואו לשמוע קריאה בתורה כפי שעזרא תיקן, ושאלו את הרב כל שאלה. התקשרו 925-384-7242.
 ---
 עזרא הסופר הוביל את העלייה השנייה של היהודים מבבל לארץ ישראל וחידש שם את חיי התורה בראשית ימי בית שני. נחמיה, פקיד יהודי מבבל, בא לבנות מחדש את חומות ירושלים ולהגן על העם, כדי שעזרא יוכל לבנות מחדש את רוחו.

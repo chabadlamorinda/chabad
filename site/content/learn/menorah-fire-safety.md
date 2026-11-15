@@ -44,12 +44,6 @@ Electric menorahs do not fulfill the mitzvah, according to Chabad.org: the mitzv
 
 Some people, such as an elderly person living alone, a person in a hospital or care facility, or a student in a dorm, cannot use a flame. Sturdy tea lights on a fireproof plate are often the easiest choice. Where flames are not allowed, Chabad.org says to consult a rabbi, so call Rabbi Labkowski. No blessing is said over an electric or battery light. For those who are elderly or hesitant, see [safety at home](/learn/maakeh-safety-at-home) and our [help for seniors and families](/help/help-for-seniors-and-families).
 
-## Take the next step
-
-- Read the next guide, [new Chanukah family traditions](/learn/new-chanukah-family-traditions), and plan a safe, joyful holiday.
-- Ask the Rabbi any lighting question at 925-384-7242. Families in Lafayette, Moraga and Orinda are welcome to call.
-- Join the community lighting at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026), Sunday, December 6 at 4:00 PM at Lafayette Plaza Park.
-
 ## Common questions
 
 ### How do I light a menorah safely at home?
@@ -69,3 +63,8 @@ If it goes out during the first half hour, Chabad.org says it is best to relight
 
 ### Can I blow out the menorah if I am worried?
 Not during the first half hour after nightfall. After that, Chabad.org says you may put the lights out if you need to, though it is not normally recommended. Tea lights on a fireproof plate can help you feel safer.
+## Take the next step
+
+- Read the next guide, [new Chanukah family traditions](/learn/new-chanukah-family-traditions), and plan a safe, joyful holiday.
+- Ask the Rabbi any lighting question at 925-384-7242. Families in Lafayette, Moraga and Orinda are welcome to call.
+- Join the community lighting at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026), Sunday, December 6 at 4:00 PM at Lafayette Plaza Park.

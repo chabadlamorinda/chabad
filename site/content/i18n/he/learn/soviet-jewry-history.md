@@ -2,7 +2,7 @@
 title: Judaism Behind the Iron Curtain: How Jewish Life Survived in the Soviet Union
 description: איך יהודי ברית המועצות שמרו על היהדות בסתר, מבתי ספר מחתרתיים ועד מצות חבויות, ואיך משפחות יכולות להתחבר מחדש היום. היסטוריה חמה ופשוטה.
 category: Jewish ideas
-related: russian-speaking-jews-in-lamorinda, chabad-rebbes, jewish-history-overview, adult-brit-milah, adult-bar-bat-mitzvah
+related: russian-speaking-jews-in-lamorinda, chanukah-for-russian-speaking-families, menorahs-in-dark-times, chabad-rebbes, jewish-history-overview, adult-brit-milah, adult-bar-bat-mitzvah
 local: המשפחה שלכם מברית המועצות לשעבר? בואו להכיר אחרים בחב"ד לאמורינדה בלאפייט. התקשרו: 925-384-7242.
 ---
 במשך רוב המאה העשרים פעל השלטון הסובייטי לעקור את הדת, וקיום מצוות נאסר ולעתים נענש. ובכל זאת שמרו יהודים על היהדות בסתר: בבתי ספר מחתרתיים, במאפיות מצות חבויות, בברית מילה חשאית ובשולחנות שבת שקטים, ומשפחות רבות בלאפייט, מוראגה, אורינדה ובמזרח המפרץ הן נכדיהם של אותם אנשים.

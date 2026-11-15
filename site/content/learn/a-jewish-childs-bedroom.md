@@ -2,7 +2,7 @@
 title: A Jewish Child's Bedroom: Simple Touches That Matter
 description: How to set up a Jewish child's bedroom: mezuzah, own siddur and Chumash, tzedakah box, Shir Lamaalot for babies and a bedtime Shema. Easy ideas.
 category: Jewish home
-related: mezuzah, bedtime-shema, jewish-parenting, modeh-ani, raising-jewish-kids-in-a-small-community
+related: mezuzah, jewish-nursery, bedtime-shema, jewish-parenting, modeh-ani, raising-jewish-kids-in-a-small-community
 local: We would be glad to help with a mezuzah or a first siddur for your child. Call 925-384-7242 or see /programs/kids-and-teens.
 ---
 A Jewish child's bedroom is traditionally set up with a kosher mezuzah on the door, the child's own prayer book and Chumash, a tzedakah box on the wall, and, for a baby, Psalm 121 (Shir Lamaalot) hung for protection. The Lubavitcher Rebbe encouraged making each child's room a place of Torah, prayer and good deeds.

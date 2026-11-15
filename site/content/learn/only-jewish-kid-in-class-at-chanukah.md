@@ -47,12 +47,6 @@ Teach them that being Jewish in a small group is not a burden but a chance to sh
 
 Being the only one is much easier with a few Jewish friends nearby. Many families in Lafayette, Moraga and Orinda feel exactly this. See [raising Jewish kids in a small community](/learn/raising-jewish-kids-in-a-small-community) for ideas, and look at our [kids and teens programs](/programs/kids-and-teens).
 
-## Take the next step
-
-- Read the next guide, [Chanukah for teens](/learn/chanukah-for-teens), for older children who want to make Chanukah their own.
-- Bring your child to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, where they will see many Jewish families together, with a Gelt Drop, a Giant Dreidel Game and LED light wands.
-- Call Rabbi Labkowski at 925-384-7242 or write through [talk to the Rabbi](/help/talk-to-the-rabbi) if your child needs encouragement.
-
 ## Common questions
 
 ### How do I help my child feel proud to be Jewish at school?
@@ -72,3 +66,8 @@ Place it in a window facing the street where it is safe, or by the main doorway 
 
 ### Where can my child meet other Jewish kids in Lamorinda?
 At Chabad of Lamorinda's programs and events for children, open to families from Lafayette, Moraga and Orinda. Call 925-384-7242 to hear what is planned.
+## Take the next step
+
+- Read the next guide, [Chanukah for teens](/learn/chanukah-for-teens), for older children who want to make Chanukah their own.
+- Bring your child to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, where they will see many Jewish families together, with a Gelt Drop, a Giant Dreidel Game and LED light wands.
+- Call Rabbi Labkowski at 925-384-7242 or write through [talk to the Rabbi](/help/talk-to-the-rabbi) if your child needs encouragement.

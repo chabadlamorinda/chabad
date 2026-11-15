@@ -2,7 +2,7 @@
 title: Восемь ночей Хануки: пошаговое руководство
 description: Что делать в каждую из восьми ночей Хануки: сколько свечей зажигать, мысль и маленькая мицва на каждую ночь, включая пятницу и субботний вечер.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-in-lamorinda, zot-chanukah, chanukah-on-shabbat, chanukah-for-kids
+related: chanukah-menorah, new-chanukah-family-traditions, why-add-a-candle-each-night, missed-lighting-the-menorah, why-is-chanukah-eight-days, chanukah-in-lamorinda, zot-chanukah, chanukah-on-shabbat, chanukah-for-kids
 local: Большое зажигание ханукии, воскресенье, 6 декабря, 16:00, Lafayette Plaza Park. Бесплатно; запись: /events/chanukah-grand-menorah-lighting-2026.
 ---
 В первую ночь Хануки зажигают одну свечу (и шамаш, свечу-помощника), а каждую следующую ночь добавляют ещё одну, пока в последнюю ночь не горят восемь. Каждая ночь - возможность добавить света: с благословениями, песней, монетками для детей и новой мыслью для разговора.

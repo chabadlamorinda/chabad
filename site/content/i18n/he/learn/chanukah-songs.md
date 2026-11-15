@@ -2,7 +2,7 @@
 title: שירי חנוכה: הנרות הללו, מעוז צור והשירים האהובים על הילדים
 description: מה שרים אחרי הדלקת החנוכייה: הנרות הללו, מעוז צור ושירי הילדים, מה פירוש המילים ומתי שרים כל שיר.
 category: Shabbat & holidays
-related: chanukah-menorah, al-hanissim-and-hallel, zemirot, niggun, chanukah-for-kids
+related: chanukah-menorah, seudat-chanukah, al-hanissim-and-hallel, zemirot, niggun, chanukah-for-kids
 local: שירו איתנו בהדלקות החנוכייה של חב״ד למורינדה למשפחות מלאפייט, מוראגה ואורינדה; פרטים בעמוד חנוכה או בטלפון 925-384-7242.
 ---
 הנרות דולקים, החדר מעומעם, ולרגע כולם שקטים. ואז מישהו מתחיל לשיר. לחנוכה יש שירים משלו, והם חלק מהמצווה: חצי השעה שבה הנרות דולקים נועדה לשבת יחד, לשיר ולספר את הסיפור. הנה השירים שתשמעו כמעט בכל בית יהודי.

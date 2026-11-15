@@ -4,7 +4,7 @@ description: Как зажигать ханукальную менору каж�
 video: https://www.youtube.com/watch?v=nDyGVKReP7M
 listen: https://www.chabad.org/multimedia/music_cdo/aid/340059/jewish/Menorah-Blessings.htm
 category: Shabbat & holidays
-related: dreidel, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-in-lamorinda, menorah-oil-and-candles, chanukah-away-from-home, chanukah-songs, lessons-of-chanukah, zot-chanukah, shabbat-candles, blessings, jewish-calendar
+related: dreidel, first-chanukah-as-a-couple, choosing-a-kosher-menorah, what-if-chanukah-candles-go-out, what-is-the-shamash, menorah-in-an-apartment-or-condo, who-lights-the-chanukah-menorah, missed-lighting-the-menorah, when-to-light-the-menorah, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-in-lamorinda, menorah-oil-and-candles, chanukah-away-from-home, chanukah-songs, lessons-of-chanukah, zot-chanukah, shabbat-candles, blessings, jewish-calendar
 local: Нужна менора или свечи, или хотите прийти на публичное зажигание меноры? Звоните 925-384-7242 и смотрите chabadoflamorinda.com/holidays/chanukah.
 ---
 В каждый из восьми вечеров Хануки мы зажигаем менору, каждый вечер добавляя еще один огонек, пока в последний вечер не загорятся все восемь. Огни напоминают о чуде с маслом в Святом Храме и возвещают, что свет побеждает тьму.

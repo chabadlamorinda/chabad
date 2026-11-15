@@ -2,7 +2,7 @@
 title: How to Keep Food Warm on Shabbat: The Blech, Hot Plate and Urn
 description: How to keep food warm on Shabbat: set up the blech or a hot plate before Shabbat, with food fully cooked and dry. Simple rules, and ask the Rabbi.
 category: Shabbat & holidays
-related: cholent, shabbat-practical-questions, thirty-nine-melachot, shabbat-meals, shabbat-day
+related: cholent, slow-cooker-shabbat-recipes, shabbat-practical-questions, thirty-nine-melachot, shabbat-meals, shabbat-day
 local: Come taste a hot Kiddush lunch after Shabbat services at Chabad of Lamorinda in Lafayette. Call 925-384-7242 to hear what is planned.
 ---
 You keep food warm on Shabbat by setting up a heat source before Shabbat begins, such as a covered stove (a blech) or a single-setting hot plate, and by putting on it only food that is fully cooked and dry. You may not cook on Shabbat, so the plan is made on Friday and the cooking is finished before candle lighting.

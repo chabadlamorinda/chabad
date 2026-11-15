@@ -2,7 +2,7 @@
 title: האם אוכל טבעוני כשר? אכילה צמחונית וטבעונית וכשרות
 description: האם אוכל טבעוני כשר? למה טבעוני או צמחוני אינו כשר אוטומטית, ואיך להכשיר מטבח צמחי. שאלו את חב"ד לאמורינדה.
 category: Kosher
-related: pareve, eating-out-kosher, checking-for-insects, kosher-wine, kosher-kitchen
+related: pareve, vegan-chanukah-recipes, eating-out-kosher, checking-for-insects, kosher-wine, kosher-kitchen
 local: שומרים בית צמחוני או טבעוני ורוצים אותו כשר? התקשרו לרב לבקובסקי, 925-384-7242, לעזרה.
 ---
 אוכל טבעוני אינו כשר באופן אוטומטי. תווית "טבעוני" או "צמחוני" אינה אומרת אם הציוד היה כשר, אם היין או מיץ הענבים מוכשרים, או אם המרכיבים נבדקו, ולכן מסעדה או מוצר עם הכשר הם הקנה מידה האמין.

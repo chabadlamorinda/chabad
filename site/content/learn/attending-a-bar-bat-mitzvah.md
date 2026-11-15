@@ -2,7 +2,7 @@
 title: Attending a Bar or Bat Mitzvah: A Guest's Guide
 description: Invited to a Bar or Bat Mitzvah? The service, the aliyah, candy throwing, the party, gifts in multiples of 18, what to wear and phones on Shabbat.
 category: Life cycle
-related: bar-mitzvah, bat-mitzvah, first-time-at-synagogue, torah-reading, jewish-gift-ideas
+related: bar-mitzvah, attending-a-bris, grandparents-at-a-bar-mitzvah, bar-bat-mitzvah-invitation-wording, bat-mitzvah, first-time-at-synagogue, torah-reading, jewish-gift-ideas
 local: Celebrating a Bar or Bat Mitzvah in Lafayette, Moraga or Orinda? Rabbi Yisroel Labkowski is glad to answer any question: 925-384-7242.
 ---
 A Bar or Bat Mitzvah is a thirteen-year-old boy's or twelve-year-old girl's coming of age: the day they become responsible for the mitzvot as a Jewish adult. The family has often prepared for a year or more, and your presence is part of the gift. Here is what to expect.

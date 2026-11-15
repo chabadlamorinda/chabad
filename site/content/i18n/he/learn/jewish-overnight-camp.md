@@ -2,7 +2,7 @@
 title: קייטנת לילה יהודית: איך בוחרים קייטנה אחרי קייטנת יום
 description: חושבים על קייטנת לילה יהודית? מה לחפש, איך יודעים שהילד מוכן, ומאיפה משפחות מלפאייט, מוראגה ואורינדה יכולות להתחיל.
 category: Jewish home
-related: jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda, gap-year-in-israel, choosing-jewish-education, kosher-on-campus
+related: jewish-summer-camp-in-lamorinda, preparing-for-jewish-camp, jewish-teens-in-lamorinda, gap-year-in-israel, choosing-jewish-education, kosher-on-campus
 local: שאלו את הרב על קייטנות לילה ב-/help/talk-to-the-rabbi או התקשרו 925-384-7242.
 ---
 קייטנת לילה יהודית היא קייטנת קיץ שבה ילדים גרים יחד למשך מחזור של לימוד יהודי, שבת, אוכל כשר ומשחק בחוץ. Chabad.org מתאר את הקייטנה כאחת הדרכים החזקות לבניית זהות יהודית, ומשפחות בלפאייט, מוראגה ואורינדה יכולות להתחיל בקייטנת היום שלנו לצעירים ולשאול את הרב על אפשרויות לילה.

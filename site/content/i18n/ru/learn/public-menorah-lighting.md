@@ -2,7 +2,7 @@
 title: Публичное зажигание ханукии: почему Ханука выходит на городскую площадь
 description: Что такое публичное зажигание ханукии, почему Хабад зажигает огромные ханукии и чего ждать. В Лафайетте: воскресенье, 6 декабря, 16:00, бесплатно.
 category: Shabbat & holidays
-related: chanukah-in-lamorinda, the-rebbe, mitzvah-tanks, chanukah-menorah, chanukah-story
+related: chanukah-in-lamorinda, light-up-lafayette, menorah-campaign-history, the-rebbe, mitzvah-tanks, chanukah-menorah, chanukah-story
 local: Большое зажигание ханукии: воскресенье, 6 декабря, 16:00, парк Lafayette Plaza Park, бесплатно для всех. Запись: /events/chanukah-grand-menorah-lighting-2026.
 ---
 Публичное зажигание ханукии - общинное событие, на котором на улице зажигают большую ханукию с благословениями и песнями, чтобы свет видели все. Это воплощение идеи обнародования чуда Хануки, и оно открыто для всех.

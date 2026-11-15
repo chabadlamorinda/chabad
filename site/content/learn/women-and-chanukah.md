@@ -2,7 +2,7 @@
 title: Women and Chanukah: Yehudit's Courage and the Half Hour Without Work
 description: Why Jewish women pause from work while the Chanukah lights burn, Yehudit's story and the dairy custom. Join the Women's Circle in Lafayette.
 category: Shabbat & holidays
-related: the-maccabees, jewish-women, chanukah-foods, chanukah-menorah, lessons-of-chanukah
+related: the-maccabees, chana-and-her-seven-sons, who-lights-the-chanukah-menorah, jewish-women, chanukah-foods, chanukah-menorah, lessons-of-chanukah
 local: Women from Lafayette, Moraga and Orinda are warmly invited to the Jewish Women's Circle; see /programs/womens-circle or call 925-384-7242.
 ---
 Jewish women traditionally do not do work while the Chanukah lights are burning, and the custom honors Yehudit (Judith) and the women who played a central role in the Chanukah miracle. The lights are holy and are there only to publicize the miracle, so for that half hour the women of the home simply sit, watch and enjoy.

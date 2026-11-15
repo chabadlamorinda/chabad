@@ -2,7 +2,7 @@
 title: What Is a Farbrengen? L'Chaim and the Chassidic Gathering Explained
 description: What a farbrengen is, what l'chaim means, and what to expect at a Chassidic gathering of song, stories and honest talk. Ask Chabad of Lamorinda.
 category: Jewish ideas
-related: yud-tes-kislev, niggun, chassidus, kosher-beer-and-spirits, minyan
+related: yud-tes-kislev, seudat-chanukah, niggun, chassidus, kosher-beer-and-spirits, minyan
 local: Curious about a Chassidic gathering? Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
 A farbrengen (פארברענגען, Yiddish for "to spend time joyfully together") is an informal Chassidic gathering where people share Torah thoughts, sing melodies and encourage one another to grow. L'chaim (לחיים) means "to life," the toast said when a small cup is raised.

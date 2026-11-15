@@ -2,7 +2,7 @@
 title: טיולי שבת אחר הצהריים בלפייט, מוראגה ואורינדה
 description: אפשר לטייל בשבת? כן. מה צריך לדעת על הוצאה, קצב הליכה ותחום שבת, ורעיונות לשבילים ולרחובות בלמורינדה.
 category: Lamorinda
-related: shabbat-day, eruv, techum-shabbat, muktzeh, shabbat-with-kids
+related: shabbat-day, shabbat-afternoon-ideas, eruv, techum-shabbat, muktzeh, shabbat-with-kids
 local: מתכננים טיול שבת ולא בטוחים מה מותר לשאת? שאלו את הרב לבקובסקי 925-384-7242 לפני שבת.
 ---
 כן, מותר לטייל בשבת, וזו דרך יפה לבלות את אחר הצהריים עם המשפחה. ב-Chabad.org מלמדים שבשבת הולכים בנחת, לא מוציאים מחוץ לעירוב, ונשארים בתוך תחום שבת, כ-2,000 אמה (קצת פחות משלושה חמישיות מייל) מקצה העיר.

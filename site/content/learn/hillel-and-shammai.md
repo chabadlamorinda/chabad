@@ -2,7 +2,7 @@
 title: "Hillel and Shammai: The Famous Sages and Their Arguments for Heaven"
 description: Who were Hillel and Shammai? The sages behind the two Houses, the story of the convert on one foot and lessons for peaceful disagreement.
 category: Jewish ideas
-related: pirkei-avot, ahavat-yisrael, humility, talmud, aaron-the-high-priest
+related: pirkei-avot, why-add-a-candle-each-night, ahavat-yisrael, humility, talmud, aaron-the-high-priest
 local: Come learn Pirkei Avot and the Talmud's wisdom with others. Call 925-384-7242 to hear what classes are planned.
 ---
 Hillel and Shammai were two great sages who lived in the first century before the common era and led the Sanhedrin, the highest Jewish court. Their two schools, the Houses of Hillel and Shammai, argued over countless questions of Jewish law, and their disagreements are held up as the model of a debate "for the sake of Heaven."

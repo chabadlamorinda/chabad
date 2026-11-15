@@ -2,7 +2,7 @@
 title: Как сказать короткое слово Торы за субботним столом
 description: Как сказать короткое слово Торы (двар Тора) за субботней трапезой за три минуты: один вопрос, один ответ, один урок, и идеи для детей.
 category: Shabbat & holidays
-related: weekly-parsha, friday-night-dinner-step-by-step, hosting-your-first-shabbat-dinner, shabbat-meals, shabbat-in-lamorinda
+related: weekly-parsha, shabbat-table-conversation-starters, jewish-learning-at-home-with-kids, friday-night-dinner-step-by-step, hosting-your-first-shabbat-dinner, shabbat-meals, shabbat-in-lamorinda
 local: Не уверены, что сказать? Придите на субботнюю трапезу и сначала послушайте: /forms/shabbat-meal или звоните 925-384-7242.
 ---
 Двар Тора (דבר תורה, "слово Торы") - это короткая мысль о недельной главе Торы, которую говорят за субботним столом. Её можно произнести примерно за три минуты: задать один вопрос о главе, дать один ответ и закончить одним уроком на предстоящую неделю.

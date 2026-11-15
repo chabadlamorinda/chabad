@@ -2,7 +2,7 @@
 title: The Eight Nights of Chanukah: A Night-by-Night Guide
 description: What to do on each of the eight nights of Chanukah: how many candles to light, an idea and a small mitzvah for each night, including Friday and Saturday.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-in-lamorinda, zot-chanukah, chanukah-on-shabbat, chanukah-for-kids
+related: chanukah-menorah, new-chanukah-family-traditions, why-add-a-candle-each-night, missed-lighting-the-menorah, why-is-chanukah-eight-days, chanukah-in-lamorinda, zot-chanukah, chanukah-on-shabbat, chanukah-for-kids
 local: Grand Chanukah Menorah Lighting, Sunday, December 6 at 4:00 PM, Lafayette Plaza Park. Free; sign up at /events/chanukah-grand-menorah-lighting-2026.
 ---
 On the first night of Chanukah you light one candle (plus the helper candle, the shamash), and every night you add one more until eight burn on the last night. Each night is a chance to add light, with the blessings, a song, a little gelt for the children and one new idea to talk about.

@@ -2,7 +2,7 @@
 title: Judaism Behind the Iron Curtain: How Jewish Life Survived in the Soviet Union
 description: How Jews in the Soviet Union kept Judaism alive in secret, from underground schools to hidden matzah, and how families can reconnect today.
 category: Jewish ideas
-related: russian-speaking-jews-in-lamorinda, chabad-rebbes, jewish-history-overview, adult-brit-milah, adult-bar-bat-mitzvah
+related: russian-speaking-jews-in-lamorinda, chanukah-for-russian-speaking-families, menorahs-in-dark-times, chabad-rebbes, jewish-history-overview, adult-brit-milah, adult-bar-bat-mitzvah
 local: Is your family from the former Soviet Union? Come and meet others at Chabad of Lamorinda in Lafayette. Call 925-384-7242.
 ---
 For most of the twentieth century, the Soviet government worked to uproot religion, and Jewish observance was discouraged and often punished. Even so, Jews kept Judaism alive in secret, in underground schools, hidden matzah bakeries, secret circumcisions and quiet Shabbat tables, and many families in Lafayette, Moraga, Orinda and the East Bay are the grandchildren of those people.

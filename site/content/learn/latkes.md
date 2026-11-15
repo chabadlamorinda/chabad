@@ -2,7 +2,7 @@
 title: Latkes: Chanukah Potato Pancakes, With a Recipe
 description: How to make crispy potato latkes for Chanukah, why we eat oily foods, the dairy custom and kosher tips, with a simple pareve recipe from Chabad.org.
 category: Jewish home
-related: chanukah-foods, hosting-a-chanukah-party, kugel, pareve, chanukah-story
+related: chanukah-foods, frying-safely-on-chanukah, vegan-chanukah-recipes, healthier-chanukah-foods, chanukah-dinner-menu, hosting-a-chanukah-party, kugel, pareve, chanukah-story
 local: Join Chanukah with Chabad of Lamorinda in Lafayette: call 925-384-7242 or see /events.
 ---
 Latkes are crispy fried potato pancakes, a favorite Chanukah food because they are cooked in oil, which recalls the miracle of the oil that burned for eight days. The secret to a crisp latke is pressing as much water as you can out of the grated potatoes before frying.

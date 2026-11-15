@@ -43,12 +43,6 @@ Families with early bedtimes often wonder what to do. The lights are lit in the 
 
 A calm routine, a lullaby and the glow of the lights make a lovely way to end the day. For more general tips on holidays with little ones, see [holidays with toddlers](/learn/holidays-with-toddlers).
 
-## Take the next step
-
-- Teaching the words of the blessings can start now. Read [teaching kids the Chanukah blessings](/learn/teaching-kids-the-chanukah-blessings) for a gentle way in.
-- Our [Lamorinda Jewish Preschool](/programs/jewish-preschool) in Lafayette welcomes children from 12 months to 4 years. Call 925-384-7242 to ask about it.
-- Join families from Lafayette, Moraga and Orinda at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026), Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, with free hot cocoa, donuts and gelt and LED light wands for kids.
-
 ## Common questions
 
 ### How do I celebrate Chanukah with a toddler?
@@ -68,3 +62,8 @@ Be careful: coins and small treats can be choking hazards for very young childre
 
 ### Are there Chanukah activities for young children in Lamorinda?
 Families in Lafayette, Moraga and Orinda are welcome at Chabad of Lamorinda's events. Call Rabbi Labkowski at 925-384-7242 to hear what is planned for young children.
+## Take the next step
+
+- Teaching the words of the blessings can start now. Read [teaching kids the Chanukah blessings](/learn/teaching-kids-the-chanukah-blessings) for a gentle way in.
+- Our [Lamorinda Jewish Preschool](/programs/jewish-preschool) in Lafayette welcomes children from 12 months to 4 years. Call 925-384-7242 to ask about it.
+- Join families from Lafayette, Moraga and Orinda at the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026), Sunday, December 6 at 4:00 PM at Lafayette Plaza Park, with free hot cocoa, donuts and gelt and LED light wands for kids.

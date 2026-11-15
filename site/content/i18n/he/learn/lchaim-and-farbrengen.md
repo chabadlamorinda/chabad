@@ -2,7 +2,7 @@
 title: מהי התוועדות? לחיים והמפגש החסידי מוסברים
 description: מהי התוועדות, מה פירוש לחיים ומה מצפה לכם במפגש חסידי של שירה, סיפורים ושיחה כנה. שאלו את חב"ד לאמורינדה.
 category: Jewish ideas
-related: yud-tes-kislev, niggun, chassidus, kosher-beer-and-spirits, minyan
+related: yud-tes-kislev, seudat-chanukah, niggun, chassidus, kosher-beer-and-spirits, minyan
 local: סקרנים לגבי מפגש חסידי? התקשרו לרב לבקובסקי, 925-384-7242, ושמעו מה מתוכנן.
 ---
 התוועדות (בידיש "פארברענגען", "לבלות יחד בשמחה") היא מפגש חסידי בלתי רשמי שבו משתפים דברי תורה, שרים ניגונים ומעודדים זה את זה לצמוח. "לחיים" פירושו "לחיים", הברכה שאומרים כשמרימים כוסית קטנה.

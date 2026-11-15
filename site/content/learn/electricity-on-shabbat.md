@@ -2,7 +2,7 @@
 title: Electricity on Shabbat: Lights, Appliances and Phones
 description: Why we do not switch lights and appliances on or off on Shabbat, how timers work, the fridge light, hot water, Shabbat mode and simple first steps.
 category: Shabbat & holidays
-related: shabbat-practical-questions, thirty-nine-melachot, shabbat-for-beginners, muktzeh
+related: shabbat-practical-questions, unplugging-on-shabbat, thirty-nine-melachot, shabbat-for-beginners, muktzeh
 local: Families in Lafayette, Moraga and Orinda can call Rabbi Yisroel Labkowski at 925-384-7242 with any question about appliances and Shabbat at home.
 ---
 On Shabbat we do not turn electrical things on or off. Lights stay as they were set before Shabbat, phones and screens are put away, and timers do the switching for us. It sounds like a lot, but most homes need only a few simple steps on Friday afternoon.

@@ -2,7 +2,7 @@
 title: סיפור פורים: אסתר, מרדכי והמן בפשטות
 description: סיפור פורים בפשטות: אסתר המלכה, מרדכי, המן הרשע והנס הנסתר בפרס, ומה זה מבקש מאיתנו היום.
 category: Shabbat & holidays
-related: purim-for-beginners, megillah, the-four-mitzvahs-of-purim, purim-for-kids, fast-of-esther
+related: purim-for-beginners, who-was-antiochus, megillah, the-four-mitzvahs-of-purim, purim-for-kids, fast-of-esther
 local: שמעו את המגילה והצטרפו עם משפחתכם מלפאייט, מוראגה ואורינדה לחגיגת פורים; התקשרו לרב ישראל לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן בחב"ד לאמורינדה.
 ---
 סיפור פורים מסופר במגילת אסתר: בפרס העתיקה המן הרשע זמם להשמיד את היהודים, אבל אסתר המלכה ובן דודה מרדכי, באומץ וביד אלוקית נסתרת, הפכו את הגזירה והצילו את עם ישראל. בכל שנה אנו חוגגים את פורים בשמיעת המגילה, במשלוח מנות ובמתנות לאביונים, ובסעודה חגיגית.

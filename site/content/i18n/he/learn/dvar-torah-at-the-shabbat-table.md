@@ -2,7 +2,7 @@
 title: איך אומרים דבר תורה קצר ליד שולחן השבת
 description: איך לומר דבר תורה קצר בסעודת שבת תוך שלוש דקות: שאלה אחת, תשובה אחת ולקח אחד, עם רעיונות לשילוב ילדים.
 category: Shabbat & holidays
-related: weekly-parsha, friday-night-dinner-step-by-step, hosting-your-first-shabbat-dinner, shabbat-meals, shabbat-in-lamorinda
+related: weekly-parsha, shabbat-table-conversation-starters, jewish-learning-at-home-with-kids, friday-night-dinner-step-by-step, hosting-your-first-shabbat-dinner, shabbat-meals, shabbat-in-lamorinda
 local: לא בטוחים מה לומר? הצטרפו לסעודת שבת והקשיבו קודם: /forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 דבר תורה הוא מחשבה קצרה על פרשת השבוע שאומרים ליד שולחן השבת. אפשר לומר אחד בשלוש דקות בערך: שואלים שאלה אחת על הפרשה, נותנים תשובה אחת, ומסיימים בלקח אחד לשבוע הבא.

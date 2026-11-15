@@ -2,7 +2,7 @@
 title: Jewish Overnight Camp: Choosing a Summer Camp After Day Camp
 description: Thinking about Jewish sleepaway camp? What to look for, how to know your child is ready, and where Lafayette, Moraga and Orinda families can start.
 category: Jewish home
-related: jewish-summer-camp-in-lamorinda, jewish-teens-in-lamorinda, gap-year-in-israel, choosing-jewish-education, kosher-on-campus
+related: jewish-summer-camp-in-lamorinda, preparing-for-jewish-camp, jewish-teens-in-lamorinda, gap-year-in-israel, choosing-jewish-education, kosher-on-campus
 local: Ask the Rabbi for guidance on overnight camps at /help/talk-to-the-rabbi or call 925-384-7242.
 ---
 A Jewish overnight camp is a sleepaway summer camp where children live together for a session of Jewish learning, Shabbat, kosher food and outdoor fun. Chabad.org describes camp as one of the strongest ways to build Jewish identity, and families in Lafayette, Moraga and Orinda can start with our own day camp for young children and ask the Rabbi about overnight options.

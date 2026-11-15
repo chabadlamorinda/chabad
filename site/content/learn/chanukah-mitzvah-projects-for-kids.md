@@ -42,12 +42,6 @@ For more ways to teach children to give, see [volunteering in Lamorinda](/learn/
 
 There are families, seniors and sick people in Lafayette, Moraga and Orinda who would be moved by a card or a visit. Rabbi and Rebbetzin Labkowski visit the sick at home, in the hospital and in care facilities. To ask for help, or to offer help, see [help for seniors and families](/help/help-for-seniors-and-families) and the [volunteer form](/forms/volunteer). If someone you know needs help, use the [help form](/forms/need-help). For visiting a person who is ill, see [bikur cholim](/learn/bikur-cholim). We cannot promise a visit in every case, so call 925-384-7242 to talk.
 
-## Take the next step
-
-- Read the next guide, [new Chanukah family traditions](/learn/new-chanukah-family-traditions), and choose one project to turn into a tradition.
-- Sign the family up to [volunteer](/forms/volunteer).
-- Come to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM, Lafayette Plaza Park, and invite someone who might be alone.
-
 ## Common questions
 
 ### What is a good mitzvah project for kids on Chanukah?
@@ -67,3 +61,8 @@ Use the [volunteer form](/forms/volunteer) or call 925-384-7242. Families from L
 
 ### How can we help a family in need?
 Contact the Rabbi through [help for seniors and families](/help/help-for-seniors-and-families). Do not assume a specific kind of help; the Rabbi can guide you.
+## Take the next step
+
+- Read the next guide, [new Chanukah family traditions](/learn/new-chanukah-family-traditions), and choose one project to turn into a tradition.
+- Sign the family up to [volunteer](/forms/volunteer).
+- Come to the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) on Sunday, December 6 at 4:00 PM, Lafayette Plaza Park, and invite someone who might be alone.

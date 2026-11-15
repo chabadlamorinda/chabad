@@ -2,7 +2,7 @@
 title: Суфганиёт: пончики с джемом на Хануку, с рецептом
 description: Что такое суфганиёт, почему на Хануку едят пончики и как приготовить их дома: рецепт с Chabad.org и советы по кашруту.
 category: Jewish home
-related: chanukah-foods, hosting-a-chanukah-party, chanukah-for-kids, latkes, chanukah-story
+related: chanukah-foods, frying-safely-on-chanukah, chanukah-baking-with-kids, hosting-a-chanukah-party, chanukah-for-kids, latkes, chanukah-story
 local: Почувствуйте вкус Хануки с Хабадом Ламоринды в Лафайетте: звоните 925-384-7242 или смотрите /events.
 ---
 Суфганиёт (סופגניות) - ханукальные пончики с джемом: дрожжевое тесто, жаренное в масле, с начинкой из варенья. Их едят потому, что они жарятся в масле, а это напоминает о чуде храмового масла, горевшего восемь дней.

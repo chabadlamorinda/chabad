@@ -2,7 +2,7 @@
 title: "חגי ישראל ולוחות השנה של בתי הספר בלמורינדה: מדריך תכנון להורים"
 description: איך משפחות בלפאייט, מוראגה ואורינדה מתכננות את ראש השנה, יום כיפור וחגים נוספים שחלים בימי לימודים. טלפון 925-384-7242.
 category: Lamorinda
-related: jewish-holidays-at-school-and-work, raising-jewish-kids-in-a-small-community, jewish-year-in-lamorinda, jewish-kids-in-lamorinda, rosh-hashanah-for-beginners
+related: jewish-holidays-at-school-and-work, is-work-allowed-on-chanukah, raising-jewish-kids-in-a-small-community, jewish-year-in-lamorinda, jewish-kids-in-lamorinda, rosh-hashanah-for-beginners
 local: התקשרו לרב לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן למשפחות בחגים, או היכנסו ל-/events.
 ---
 חגי ישראל נקבעים לפי הלוח העברי, ולכן הם חלים בכל שנה בתאריך אחר בלוח הרגיל, וחלקם נופלים על ימי לימודים בלפאייט, מוראגה ואורינדה. התכנית הפשוטה: לבדוק מתי החגים השנה, להשוות ללוח השנה של המחוז החינוכי בתחילת הסתיו, ולכתוב לבית הספר מבעוד מועד.

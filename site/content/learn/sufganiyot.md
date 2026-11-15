@@ -2,7 +2,7 @@
 title: Sufganiyot: Jelly Doughnuts for Chanukah, With a Recipe
 description: What sufganiyot are, why we eat doughnuts on Chanukah, and how to make jelly doughnuts at home, with a recipe from Chabad.org and kosher tips.
 category: Jewish home
-related: chanukah-foods, hosting-a-chanukah-party, chanukah-for-kids, latkes, chanukah-story
+related: chanukah-foods, frying-safely-on-chanukah, chanukah-baking-with-kids, hosting-a-chanukah-party, chanukah-for-kids, latkes, chanukah-story
 local: Taste Chanukah with Chabad of Lamorinda in Lafayette: call 925-384-7242 or see /events.
 ---
 Sufganiyot (סופגניות) are Chanukah jelly doughnuts: yeast dough, fried in oil and filled with jam. We eat them because they are fried in oil, which recalls the miracle of the Temple oil that burned for eight days.

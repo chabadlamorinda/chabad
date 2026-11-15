@@ -2,7 +2,7 @@
 title: Sandek, Kvater and the Honors at a Bris: Who Does What
 description: Что такое сандак, кто такие кватер, что значит кресло Элиягу и как выбрать почётные роли на брисе. Руководство для новых родителей.
 category: Life cycle
-related: preparing-for-a-bris, brit-milah, jewish-baby-names, new-parents-in-lamorinda, a-jewish-childs-bedroom
+related: preparing-for-a-bris, postponing-a-bris, brit-milah, jewish-baby-names, new-parents-in-lamorinda, a-jewish-childs-bedroom
 local: Планируете брис? Позвоните раву Лабковскому 925-384-7242, мы поможем выбрать роли и подготовиться. Рады всем.
 ---
 Сандак это тот, кто держит ребёнка во время обрезания на брисе, и традиционно это величайшая честь церемонии. Кватер это пара, которая приносит ребёнка от матери к сандаку, а кресло Элиягу сиденье, отведённое пророку Элиягу, "стражу союза".

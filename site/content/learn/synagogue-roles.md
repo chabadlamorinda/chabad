@@ -2,7 +2,7 @@
 title: Who Does What in Shul: Rabbi, Gabbai, Chazzan and Torah Reader
 description: What is a gabbai? A chazzan? A baal koreh? A simple guide to who does what in a synagogue, and how a first-timer can be given an honor.
 category: Prayer & Torah
-related: first-time-at-synagogue, what-is-a-synagogue, torah-reading, what-is-a-rabbi, leading-the-prayers
+related: first-time-at-synagogue, synagogue-honors, what-is-a-synagogue, torah-reading, what-is-a-rabbi, leading-the-prayers
 local: Curious what it is like to take part in a service? Call Rabbi Labkowski at 925-384-7242, and he will gladly walk you through it.
 ---
 In a synagogue, the rabbi teaches and guides the community, the gabbai (גבאי) organizes the service and gives out honors, the chazzan (חזן) leads the prayers, and the baal koreh (בעל קורא) reads the Torah. Most of these jobs are done by volunteers from the congregation, and a first-time visitor can usually be given a small honor if they wish.

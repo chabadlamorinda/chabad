@@ -2,7 +2,7 @@
 title: Женщины и Ханука: мужество Иегудит и полчаса без работы
 description: Почему еврейские женщины не работают, пока горят ханукальные огни, история Иегудит и обычай есть молочное. Женский кружок в Лафайете.
 category: Shabbat & holidays
-related: the-maccabees, jewish-women, chanukah-foods, chanukah-menorah, lessons-of-chanukah
+related: the-maccabees, chana-and-her-seven-sons, who-lights-the-chanukah-menorah, jewish-women, chanukah-foods, chanukah-menorah, lessons-of-chanukah
 local: Женщины из Лафайета, Морага и Ориндзы приглашены в еврейский женский кружок; см. /programs/womens-circle или звоните 925-384-7242.
 ---
 Еврейские женщины по обычаю не работают, пока горят ханукальные огни, и этот обычай чтит Иегудит (Юдифь) и женщин, сыгравших важную роль в чуде Хануки. Огни священны и существуют только для того, чтобы открыть всем чудо, поэтому эти полчаса женщины дома просто сидят, смотрят и радуются.

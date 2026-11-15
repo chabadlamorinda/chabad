@@ -2,7 +2,7 @@
 title: Babies and Toddlers on Shabbat: Strollers, Bottles, Diapers and Naps
 description: How to care for a baby on Shabbat: strollers and the eruv, bottles, formula, diapers and calm routines. Practical help for Lamorinda parents.
 category: Shabbat & holidays
-related: shabbat-with-kids, eruv, new-parents-in-lamorinda, holidays-with-toddlers, shabbat-for-beginners
+related: shabbat-with-kids, first-shabbat-with-a-newborn, eruv, new-parents-in-lamorinda, holidays-with-toddlers, shabbat-for-beginners
 local: A new baby and Shabbat? Call Rabbi Yisroel Labkowski at 925-384-7242 and ask what is planned for families with little ones.
 ---
 Caring for a baby on Shabbat is a mitzvah, and the rules are practical: prepare bottles and food before Shabbat, use a stroller only where there is an eruv, and put the baby's health first. A sick child comes before Shabbat rules, and you should never wait to call a doctor.
