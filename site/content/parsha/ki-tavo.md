@@ -19,9 +19,9 @@ What this means for us: gratitude is something we do. We can say Modeh Ani each 
 
 ## A story
 
-This story comes from Hayom Yom, a daily book of Chabad sayings and customs, for the 17th of Elul.
+This story comes from Hayom Yom, a daily book of Chabad sayings and customs compiled by the Rebbe, in the month of Elul.
 
-During a week when the Alter Rebbe, Rabbi Shneur Zalman of Liadi, was away, someone else read the portion of Ki Tavo from the Torah in his place. His son, Rabbi Dov Ber, who would one day lead Chabad, was not yet Bar Mitzvah. When the curses of the portion were read, the boy fainted. He was so ill afterward that it was unclear whether he would be able to fast on Yom Kippur.
+During a week when the Alter Rebbe, Rabbi Shneur Zalman of Liadi, was away, someone else read the portion of Ki Tavo from the Torah in his place. His son, Rabbi Dov Ber, who would one day lead Chabad, was not yet Bar Mitzvah. When the curses of the portion were read, the boy was deeply shaken. He was so distressed that, as Yom Kippur approached, it was unclear whether he would be able to fast.
 
 When he was asked why he was so much more affected than in earlier years, he answered that when his father read the Torah, he never heard any curses.
 
@@ -46,7 +46,7 @@ The Rebbe's reading is that gratitude shown in action is the kind that lasts. A 
 
 There is another side to the portion that is easy to miss. The first fruits were not brought until everyone in the nation had received a portion of the land. The Rebbe's lesson is that my happiness and yours are linked. If a neighbor is lonely, my table is a little less full. If a family in our community is struggling, we cannot be at complete ease. And so the first step of gratitude becomes the first step of kindness: to ask who is still waiting.
 
-The story of Rabbi Dov Ber adds a final layer. The curses in the portion are hard to hear, and a child fainted at them. Yet his father heard blessings in them. We can choose, with practice, to read life this way: not by denying difficulty, but by looking for the good hidden inside it, and by speaking about it with love.
+The story of Rabbi Dov Ber adds a final layer. The curses in the portion are hard to hear, and a child was shaken by them. Yet his father heard blessings in them. We can choose, with practice, to read life this way: not by denying difficulty, but by looking for the good hidden inside it, and by speaking about it with love.
 
 If you would like to put gratitude into action, you are welcome to join us for Shabbat at Chabad of Lamorinda in Lafayette (call 925-384-7242 for the times) or the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address), where families from Lafayette, Moraga and Orinda learn together.
 

@@ -5,7 +5,7 @@ related: ahavat-yisrael, tanya-chapter-32-love-every-jew, honesty-and-truth, bus
 ---
 ## The Rebbe's teaching
 
-Love for every Jew is not a feeling that depends on how the other person behaves; it comes from the deepest level of the soul, and the Torah gives it a shape. The Rebbe, in a talk on Parshat Kedoshim, starts with a puzzle. Rabbi Akiva called "love your fellow as yourself" a great principle of the Torah. Hillel, when asked to teach the whole Torah on one foot, said it is the whole Torah. Why do they describe the same commandment so differently?
+Love for every Jew is not a feeling that depends on how the other person behaves; it comes from the deepest level of the soul, and the Torah gives it a shape. The Rebbe, in a talk on Parshat Kedoshim, starts with a puzzle. Rabbi Akiva called "love your fellow as yourself" a great principle of the Torah. Hillel, when asked to teach the whole Torah on one foot, summed it up with this principle ("What is hateful to you, do not do to your fellow") and said that this is the whole Torah. Why do they describe the same commandment so differently?
 
 The Rebbe answers by looking at the soul. Every Jewish soul has an essence that is bound to G-d and goes beyond even the Torah. This is why the Talmud says that a Jew who sins is still a Jew. Love that comes from this essence is unconditional. It does not ask whether the other person is learned or distant, observant or not. And it is not only spiritual; it reaches a person's physical needs too, such as a meal, a job or a visit.
 
@@ -23,7 +23,7 @@ The elders turned to a mystical practice of asking for a sign in a dream. They f
 
 The next morning they went to Shlomo's home. He was stunned. He could barely read, he said. They persuaded him to come to the synagogue anyway. There he slipped out and disappeared. A little later he returned, pushing a wheelbarrow that carried his old butcher's scales under a cloth. He set them on the podium, and, crying, he asked G-d to accept his scales, and to heal the children.
 
-That evening the children began to recover. The community kept the scales in a glass case, and when they checked the scales of other merchants, they found them all slightly off, not enough to be dishonest, but off. Shlomo had checked his scales twice every day. The story says the scales stayed in the synagogue for over two hundred years until they were destroyed in the Second World War, and it says so as a legend.
+That evening the children began to recover. The community kept the scales in a glass case, and when they checked the scales of other merchants, they found them all slightly off, not enough to be dishonest, but off. Shlomo had checked his scales twice every day. According to the story, the scales stayed in the synagogue for over two hundred years, until the Second World War.
 
 ## Ideas for the Shabbat table
 

@@ -13,7 +13,7 @@ The Torah says, "When a man among you brings an offering." The Rebbe reads the u
 
 The Torah adds, "from the cattle." The Rebbe explains that this points to the animal soul, our physical desires and instincts. The deeper aim is not to destroy these drives but to redirect them, so that the same energy is used for love of G-d. Outward actions remain, but the motive becomes spiritual: "In all your ways, know Him."
 
-The Rebbe also notes that animals were inspected for blemishes. So we must honestly look for flaws in our own character and work to correct them. And he offers a reassurance: when old failings come back into the mind, they do not mean we have failed. They can be transformed by deeper love. The Rebbe's father-in-law taught that the offering depends on the individual and is within reach of every Jew, whatever the past.
+The Rebbe also notes that animals were inspected for blemishes. So we must honestly look for flaws in our own character and work to correct them. And he offers a reassurance: when old failings come back into the mind, they do not mean we have failed. They can be transformed by deeper love. This kind of offering is within reach of every Jew, whatever the past.
 
 In practice:
 
@@ -23,11 +23,11 @@ In practice:
 
 ## A story
 
-A well-known story; its details cannot be confirmed. The tzaddik known as the Bnei Yissachar told this story of the Baal Shem Tov, the founder of Chassidism.
+A well-known story; its details cannot be confirmed. It is told about the Baal Shem Tov, the founder of Chassidism.
 
 One Yom Kippur eve, the Baal Shem Tov entered the synagogue visibly troubled. After Kol Nidrei he paused, then recovered and led the evening prayers with joy. Afterward, he explained to his students.
 
-In a village there lived a Jewish tenant farmer and his wife who were respected by their landlord. When their son was born, they both died soon after. The landlord raised the boy as his own. He gave the child his parents' small keepsakes: a Chumash and the siddur his mother had prayed from.
+In a village there lived a Jewish tenant farmer and his wife who were respected by their landlord. When their son was still very young, they both died. The landlord raised the boy as his own. He gave the child his parents' small keepsakes: a Chumash and the siddur his mother had prayed from.
 
 One autumn, the boy saw Jews traveling to the city for the High Holidays. That night he dreamed of his parents, urging him to return to his faith, and the dreams came every night. The landlord dismissed them.
 
@@ -56,7 +56,7 @@ The story of the boy in the synagogue is the same idea in a child's voice. He ha
 
 The Rebbe adds two things that make this practical. First, we do not have to erase who we are. Our energy, temper, appetite and ambition are the "animal" in us, and they can be turned toward good. Second, the past is not a jail. Old failings may surface, but they can be redeemed by love.
 
-Try one small offering this week: do something you usually do on autopilot, say a meal blessing or give a phone call, with full attention. That is a *korban*, a coming close.
+Try one small offering this week: do something you usually do on autopilot, say a blessing over food or make a phone call, with full attention. That is a *korban*, a coming close.
 
 You are warmly invited to a Shabbat at Chabad of Lamorinda in Lafayette (call 925-384-7242), or to the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address).
 

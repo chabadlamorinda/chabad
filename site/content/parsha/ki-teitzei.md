@@ -19,11 +19,11 @@ Ki Teitzei is usually read during Elul, the month for taking stock and returning
 
 The Talmud tells about Rabbi Chiya and his wife (Yevamot 63a).
 
-Rabbi Chiya's wife mistreated him. Yet he still brought her gifts. Rav asked him: why do you put up with her?
+Rabbi Chiya's wife often caused him distress. Yet he still brought her gifts. Rav asked him: why do you put up with her?
 
 Rabbi Chiya answered that it is enough for him that she raises their children and keeps him from improper thoughts.
 
-The story is often quoted when the portion speaks of marriage, and it teaches gratitude. Rabbi Chiya did not pretend his marriage was perfect. But he chose to keep his eyes on what his wife did give him, and that choice turned a hard situation into a relationship in which he still gave.
+Ki Teitzei includes laws of marriage, and this Talmudic story teaches gratitude. Rabbi Chiya did not pretend his marriage was perfect. But he chose to keep his eyes on what his wife did give him, and that choice turned a hard situation into a relationship in which he still gave.
 
 A caution: this is a short Talmudic account, and it is not advice for any particular marriage. If you or someone you know is in a difficult marriage, please speak privately with the Rabbi or Rebbetzin (call 925-384-7242). The lesson of the story is gratitude for the good that we do receive.
 

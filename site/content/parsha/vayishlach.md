@@ -17,7 +17,7 @@ The Rebbe draws practical points. On weekdays, approach eating, work and everyda
 
 ## A story
 
-Menachem Posner, managing editor at Chabad.org, tells this story, which he heard from his father-in-law, Rabbi Nachman Levine, who heard it from his own father-in-law, Yitzchok Waxman, the youngest son of the man at its center. It is presented as a true account handed down in the family.
+Rabbi Menachem Posner tells this story, which he heard from his father-in-law, Rabbi Nachman Levine, who heard it from his own father-in-law, Yitzchok Waxman, the youngest son of the man at its center. It is presented as a true account handed down in the family.
 
 In the early twentieth century, life was hard in the village of Chernestra in Ukraine. Yisroel Dov Waxman, known as Berel, left his wife Rochel and their growing family to look for work in America, hoping to send money home and bring them over later. Before he boarded the train to the port, his father, Meshulem Zushia, asked him to swear never to work on Shabbat. Berel, a devout chassid, was startled that his father would even ask, but he gave his word.
 
@@ -25,7 +25,7 @@ In New York, a fellow villager helped him find work pressing shirts in a Lower E
 
 Berel left the board at a nearby laundry and went to a synagogue, and spent a lonely Shabbat with no income, but strong faith. After Shabbat, the laundry attendant returned the board without question. Soon a stranger offered him overtime pressing work. At the end of the week his envelope held far more than he had ever earned. The stranger turned out to be his former boss, who had been paying him only a fraction of his worth.
 
-Berel later told his children that had he worked on Shabbat, he would have lost not only his share in the World to Come but his fair portion in this world too. A few years later, he brought his wife and children to New York. A century later, his descendants still keep Shabbat. The article notes one family variant: that his father asked him instead to put on tefillin every day before work.
+Berel later told his children that had he worked on Shabbat, he would have lost not only his share in the World to Come but his fair portion in this world too. A few years later, he brought his wife and children to New York. A century later, his descendants still keep Shabbat. The family also tells one variant: that his father asked him instead to put on tefillin every day before work.
 
 ## Ideas for the Shabbat table
 
