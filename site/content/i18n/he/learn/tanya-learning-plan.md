@@ -46,7 +46,7 @@ local: למדו תניא עם אחרים: השיעור באנגלית מתקיי
 
 ## לפי שלב החיים
 
-[בני נוער וסטודנטים](/learn/tanya-for-teens-and-students), [אנשי מקצוע עסוקים](/learn/tanya-for-busy-professionals), [קשישים](/learn/tanya-for-seniors), ולעבודה, כסף וזמן: [התניא בעבודה](/learn/tanya-at-work), [על כסף](/learn/tanya-on-money), [על זמן](/learn/tanya-on-time), ולשנה היהודית: [התניא והשנה היהודית](/learn/tanya-and-the-jewish-year).
+[בני נוער וסטודנטים](/learn/tanya-for-teens-and-students), [אנשי מקצוע עסוקים](/learn/tanya-for-busy-professionals), [קשישים](/learn/tanya-for-seniors), ולעבודה, כסף וזמן: [התניא בעבודה](/learn/tanya-at-work), [על כסף](/learn/tanya-on-money), [על זמן](/learn/tanya-on-time), ולשנה היהודית: [התניא והשנה היהודית: אלול, תשובה וי"ט כסלו](/learn/tanya-and-the-jewish-year), ולשבת, [שבת לאור תורת החסידות](/learn/tanya-and-shabbat).
 
 ## שאלות נפוצות
 

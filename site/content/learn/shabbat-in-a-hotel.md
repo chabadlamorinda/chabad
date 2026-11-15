@@ -41,7 +41,7 @@ The tradition notes that most authorities are lenient about carrying inside a si
 
 ## Find a community
 
-Chabad centers around the world welcome Jewish visitors; look up the one at your destination at chabad.org/centers. Winter break and ski trips are a good time to plan.
+Chabad centers around the world welcome Jewish visitors; look up the one at your destination online. Winter break and ski trips are a good time to plan.
 
 ## Take the next step
 

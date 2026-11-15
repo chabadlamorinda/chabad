@@ -1,6 +1,6 @@
 ---
-title: Tanya and the Jewish Year: Teshuvah, Yom Kippur and 19 Kislev
-description: How does the Tanya connect to Yom Kippur, teshuvah and joy? Igeret HaTeshuvah on returning to G-d, and 19 Kislev, the Alter Rebbe's release.
+title: Tanya and the Jewish Year: Elul, Teshuvah and 19 Kislev
+description: How do Chassidic teachings connect to Elul and teshuvah? The king in the field, Igeret HaTeshuvah on returning with joy, and 19 Kislev.
 category: Shabbat & holidays
 related: elul, yud-tes-kislev, shabbat-shuva, teshuvah, tanya-on-time
 local: Come learn Tanya in English, Wednesdays at 1:00 PM at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.
@@ -11,15 +11,15 @@ Here is what those teachings say, in plain words, for families in Lafayette, Mor
 
 ## Teshuvah in the Tanya
 
-Igeret HaTeshuvah is one of the sections of the [Tanya](/learn/tanya), written by Rabbi Schneur Zalman of Liadi. Chapter 6, on Chabad.org, teaches that sin severs the life-force that flows to the soul and feeds the forces opposed to holiness, and that "the choice is man's." Sincere teshuvah reverses this: it removes the life-force the sinner had diverted and returns the Shechinah from exile. The chapter says G-d returns with those who return. See [teshuvah](/learn/teshuvah).
+Igeret HaTeshuvah is one of the sections of the [Tanya](/learn/tanya), written by Rabbi Schneur Zalman of Liadi. Chapter 6 teaches that sin severs the life-force that flows to the soul and feeds the forces opposed to holiness, and that "the choice is man's." Sincere teshuvah reverses this: it removes the life-force the sinner had diverted and returns the Shechinah from exile. The chapter says G-d returns with those who return. See [teshuvah](/learn/teshuvah).
 
-The chapter does not mention Elul or the High Holidays by name. For the month of preparation, see [Elul](/learn/elul).
+The chapter does not mention Elul or the High Holidays by name, but its message is the message of the season.
 
 ## Chapter 11: return with joy
 
-Chapter 11 of Igeret HaTeshuvah, on Chabad.org, is about prayer, forgiveness and joy. It teaches that:
+Chapter 11 of Igeret HaTeshuvah is about prayer, forgiveness and joy. It teaches that:
 
-- Worship should be joyful. As Chabad.org's introduction to the chapter explains, the Alter Rebbe advised moving the humble mood of contrition to midnight (Tikkun Chatzot), so that one is joyful when prayer begins.
+- Worship should be joyful. As the classic explanations of the chapter put it, the Alter Rebbe advised moving the humble mood of contrition to midnight (Tikkun Chatzot), so that one is joyful when prayer begins.
 - Sorrow over sin comes from the body and animal soul, and joy comes from the Divine soul. Because they have different sources, they can coexist.
 - The forgiveness blessing of the Amidah is recited without doubt, because G-d forgives abundantly. The word "abounds" signals that G-d's forgiveness has no fixed limit, unlike human forgiveness, which tends to wear thin.
 - "My sin is always before me" means keeping one's past faults in the back of the mind to foster humility, not melancholy.
@@ -33,7 +33,7 @@ In Likkutei Amarim, Chapter 26 teaches that real sorrow over one's mistakes has 
 
 ## 19 Kislev: the Alter Rebbe's release
 
-On Chabad.org, a talk by Rabbi Yosef Yitzchak Schneersohn of Lubavitch (Sefer HaSichos 5701) says that the Alter Rebbe was freed on 19 Kislev 5559 (1798), after fifty-three days of arrest following false accusations by opponents of Chassidus. The speaker calls it a day that celebrates the revelation of the truth, and says that for Chabad chassidim, Yud-Tes Kislev is the "Rosh HaShanah of Chabad Chassidus." See [Yud-Tes Kislev](/learn/yud-tes-kislev). For this year's date, see [Jewish holidays](/jewish-holidays); we do not type holiday dates here.
+A talk by Rabbi Yosef Yitzchak Schneersohn of Lubavitch (Sefer HaSichos 5701) says that the Alter Rebbe was freed on 19 Kislev 5559 (1798), after fifty-three days of arrest following false accusations by opponents of Chassidus. The speaker calls it a day that celebrates the revelation of the truth, and says that for Chabad chassidim, Yud-Tes Kislev is the "Rosh HaShanah of Chabad Chassidus." See [Yud-Tes Kislev](/learn/yud-tes-kislev). For this year's date, see [Jewish holidays](/jewish-holidays); we do not type holiday dates here.
 
 ## Learning with the calendar
 

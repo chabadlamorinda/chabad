@@ -46,7 +46,7 @@ Start with [how to start learning Tanya](/learn/how-to-start-learning-tanya), [t
 
 ## For your stage of life
 
-[Teens and college students](/learn/tanya-for-teens-and-students), [busy professionals](/learn/tanya-for-busy-professionals), [seniors](/learn/tanya-for-seniors), and for the workday, money and time: [Tanya at work](/learn/tanya-at-work), [on money](/learn/tanya-on-money), [on time](/learn/tanya-on-time), and for the calendar, [Tanya and the Jewish year](/learn/tanya-and-the-jewish-year).
+[Teens and college students](/learn/tanya-for-teens-and-students), [busy professionals](/learn/tanya-for-busy-professionals), [seniors](/learn/tanya-for-seniors), and for the workday, money and time: [Tanya at work](/learn/tanya-at-work), [on money](/learn/tanya-on-money), [on time](/learn/tanya-on-time), and for the calendar, [Tanya and the Jewish year: Elul, teshuvah and 19 Kislev](/learn/tanya-and-the-jewish-year), and for Shabbat, [Shabbat in the light of Chassidic teachings](/learn/tanya-and-shabbat).
 
 ## Common questions
 

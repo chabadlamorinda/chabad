@@ -46,7 +46,7 @@ local: Изучайте Танию с другими: класс на англи
 
 ## По этапам жизни
 
-[Подростки и студенты](/learn/tanya-for-teens-and-students), [занятые профессионалы](/learn/tanya-for-busy-professionals), [пожилые](/learn/tanya-for-seniors), а для рабочего дня, денег и времени: [Тания на работе](/learn/tanya-at-work), [о деньгах](/learn/tanya-on-money), [о времени](/learn/tanya-on-time), а для календаря: [Тания и еврейский год](/learn/tanya-and-the-jewish-year).
+[Подростки и студенты](/learn/tanya-for-teens-and-students), [занятые профессионалы](/learn/tanya-for-busy-professionals), [пожилые](/learn/tanya-for-seniors), а для рабочего дня, денег и времени: [Тания на работе](/learn/tanya-at-work), [о деньгах](/learn/tanya-on-money), [о времени](/learn/tanya-on-time), а для календаря: [Тания и еврейский год: Элул, тшува и 19 кислева](/learn/tanya-and-the-jewish-year), а для Шаббата [Шаббат в свете хасидского учения](/learn/tanya-and-shabbat).
 
 ## Частые вопросы
 

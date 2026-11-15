@@ -1,5 +1,5 @@
 ---
-title: Shabbat in the Light of Tanya: Rest for the Soul
+title: Shabbat in the Light of Chassidic Teachings
 description: What is the spiritual meaning of Shabbat in Chabad teaching? The extra Shabbat soul, a deeper love of G-d, and how weekday effort prepares for it.
 category: Shabbat & holidays
 related: shabbat, shabbat-day, shabbat-for-beginners, kabbalat-shabbat, tanya-on-prayer
@@ -60,5 +60,5 @@ There is a Tanya class in English every Wednesday at 1:00 PM, until 2:00 PM, at 
 ## Take the next step
 
 - Come to Kabbalat Shabbat this week, or ask what is planned: 925-384-7242. See [events](/events).
-- Continue with [Tanya and the Jewish Year: Teshuvah, Yom Kippur and 19 Kislev](/learn/tanya-and-the-jewish-year).
+- Continue with [Tanya and the Jewish Year: Elul, Teshuvah and 19 Kislev](/learn/tanya-and-the-jewish-year).
 - Join the Wednesday 1:00 PM Tanya class in Lafayette; call for the address.

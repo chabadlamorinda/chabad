@@ -68,5 +68,5 @@ There is a Tanya class in English every Wednesday at 1:00 PM, until 2:00 PM, at 
 ## Take the next step
 
 - Join the Wednesday Tanya class at 1:00 PM in Lafayette; call 925-384-7242 for the address, or ask about [adult education](/programs/adult-education).
-- Continue with [Shabbat in the Light of Tanya: Rest for the Soul](/learn/tanya-and-shabbat).
+- Continue with [Shabbat in the Light of Chassidic Teachings](/learn/tanya-and-shabbat).
 - Ask the Rabbi any question at [talk to the Rabbi](/help/talk-to-the-rabbi).
