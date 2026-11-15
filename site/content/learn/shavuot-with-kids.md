@@ -11,12 +11,12 @@ On Shavuot morning, Jewish families bring their children, even the youngest babi
 
 The Midrash tells it this way. Before giving the Torah, G-d asked the Jewish people for guarantors that they would keep it. They offered the patriarchs, and G-d said it was not enough. They offered the prophets, and that was not enough either. Finally they said, "Our children will be our guarantors," and G-d accepted. That is why we bring "the guarantors" to hear the commandments.
 
-The Rebbe explained that children absorb the words of the Torah deeply, and through them, their parents and grandparents are also moved. Jewish tradition notes that the Ten Commandments contain the whole Torah, and that hearing them shapes our daily life during the whole year. The Rebbe began calling for this widely in 1980, asking that boys and girls all over come to hear. See [the Ten Commandments](/learn/ten-commandments).
+The Rebbe explained that children absorb the words of the Torah deeply, and through them, their parents and grandparents are also moved. The Ten Commandments contain the whole Torah, and hearing them shapes our daily life during the whole year. The Rebbe began calling for this widely in 1980, asking that boys and girls all over come to hear. See [the Ten Commandments](/learn/ten-commandments).
 
 ## What to expect
 
 - The Ten Commandments are read during the morning service of the first day of Shavuot. Check the date on the [Jewish holidays](/jewish-holidays) page.
-- Many synagogues have a children's program with games, treats and often an ice-cream party. Jewish tradition says these are now very popular.
+- Many synagogues have a children's program with games, treats and often an ice-cream party. These are now very popular.
 - Children and women are not obligated by the strict letter of the law to attend, but the Rebbe strongly encouraged it. Ask the Rabbi if you have questions.
 - Babies and toddlers are welcome. Bring a snack and a quiet toy, and do not worry about the noise. See [holidays with toddlers](/learn/holidays-with-toddlers).
 

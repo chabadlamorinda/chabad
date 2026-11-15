@@ -7,7 +7,7 @@ local: Bring the kids to Chanukah with Chabad of Lamorinda: call 925-384-7242 or
 ---
 Giving gifts is not a required mitzvah of Chanukah, but giving gelt, a little money, is a long-standing Jewish custom, especially as a reward for Torah study. Many families also give presents; the Jewish way is to keep them meaningful and to include giving to others.
 
-## What Jewish tradition says about gifts and gelt
+## What Jewish custom says about gifts and gelt
 
 The answer is simple. There is no commandment to give presents on Chanukah. What there is, is the old custom of *gelt* (Yiddish for "money"), especially a reward for learning Torah. The foil-wrapped chocolate coins came later, from American candy makers.
 

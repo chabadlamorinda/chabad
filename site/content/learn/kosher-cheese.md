@@ -11,7 +11,7 @@ Cheese is kosher only when it carries reliable kosher certification (a hechsher)
 
 Milk, butter and cream are simple. Cheese is different, because it is made by curdling milk with an enzyme called rennet, and then adding cultures and other ingredients. Traditional rennet comes from the stomach lining of a calf, and that is where the problem lies: it may come from an animal that was not slaughtered according to Jewish law. A kosher cheese uses kosher rennet, either from a properly slaughtered calf or produced from microbes.
 
-Because it is hard to know what went into a cheese just by reading the package, Jewish law relies on a supervisor, a **mashgiach** (מַשְׁגִּיחַ), who watches over the process. Jewish tradition teaches that only cheese with reliable kosher certification should be eaten. See [kosher symbols](/learn/kosher-symbols) to learn how to recognize one.
+Because it is hard to know what went into a cheese just by reading the package, Jewish law relies on a supervisor, a **mashgiach** (מַשְׁגִּיחַ), who watches over the process. Only cheese with reliable kosher certification should be eaten. See [kosher symbols](/learn/kosher-symbols) to learn how to recognize one.
 
 ## What about "vegetarian" cheese?
 

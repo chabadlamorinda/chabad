@@ -9,9 +9,9 @@ Shalom (שָׁלוֹם) is a Hebrew word that means "peace," and it is also used
 
 ## What shalom really means
 
-Jewish tradition explains that shalom is rooted in shaleim, meaning completion, and ties the two together: without peace there can be no completion. A person, a family or a world is whole only when its parts are in harmony. That is why Jewish tradition never treats peace as merely the absence of fighting.
+Shalom is rooted in shaleim, meaning completion, and the two are tied together: without peace there can be no completion. A person, a family or a world is whole only when its parts are in harmony. That is why Jewish tradition never treats peace as merely the absence of fighting.
 
-A teaching from the Mishnah quoted on Chassidic teaching says that G-d "did not find a vessel that could hold blessing other than shalom," peace. Peace is the container for every other good thing.
+The Mishnah says that G-d "did not find a vessel that could hold blessing other than shalom," peace. Peace is the container for every other good thing.
 
 ## Hello and goodbye
 
@@ -19,7 +19,7 @@ Shalom is used both at arriving and at leaving. When we greet someone with shalo
 
 ## Shalom Aleichem: the greeting and its answer
 
-"Shalom aleichem" means "peace upon you." The reply reverses the words: "Aleichem shalom." The tradition gives several reasons:
+"Shalom aleichem" means "peace upon you." The reply reverses the words: "Aleichem shalom." There are several reasons:
 
 - The Talmud encourages greeting others with G-d's name, and peace is one of those names.
 - Rabbi Hunah teaches that someone who does not return a greeting of peace is like a robber, since he withholds something valuable.
@@ -33,7 +33,7 @@ Shalom is used both at arriving and at leaving. When we greet someone with shalo
 
 ## A name of G-d
 
-Jewish tradition notes that Shalom is one of the names of G-d, so it should not be said in places like a restroom, where G-d's name may not be spoken. Most halachic authorities allow calling or speaking of a person named Shalom in such places. If you have a specific question, ask the Rabbi.
+The Talmud (Shabbat 10b) teaches that Shalom is one of the names of G-d, so it should not be said in places like a restroom, where G-d's name may not be spoken. Most halachic authorities allow calling or speaking of a person named Shalom in such places. If you have a specific question, ask the Rabbi.
 
 Shalom is also a common name for a boy, and the Talmud mentions it as a woman's name too.
 
@@ -47,7 +47,7 @@ The Jewish phrase shalom bayit, "peace in the home," shows how much we value it.
 Shalom means "peace," and it is also used for "hello" and "goodbye." Its root is shaleim, "whole" or "complete."
 
 ### Why is shalom used for both hello and goodbye?
-It is a blessing of peace, and peace is wished at meeting and at parting. Jewish tradition notes that it can mean either hello or goodbye.
+It is a blessing of peace, and peace is wished at meeting and at parting. It can mean either hello or goodbye.
 
 ### What does Shabbat Shalom mean?
 It means "a Shabbat of peace," the most common greeting on Shabbat.
@@ -56,10 +56,10 @@ It means "a Shabbat of peace," the most common greeting on Shabbat.
 It means "peace upon you." The answer, "Aleichem shalom," reverses the words to show it is a reply and a personal wish for peace.
 
 ### Is Shalom a name of G-d?
-Yes. The tradition notes that shalom is one of G-d's names, so it is not said in places where G-d's name may not be pronounced, such as a restroom.
+Yes. Shalom is one of G-d's names, so it is not said in places where G-d's name may not be pronounced, such as a restroom.
 
 ### Can I say Shalom to someone named Shalom?
-Jewish tradition says most halachic authorities permit it even in such places. Ask the Rabbi if you have a specific question.
+Most halachic authorities permit it even in such places. Ask the Rabbi if you have a specific question.
 
 ## Take the next step
 

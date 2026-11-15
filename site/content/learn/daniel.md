@@ -7,7 +7,7 @@ local: Teens and parents: ask how to keep Jewish life strong at /programs/kids-a
 ---
 Daniel was a Jewish sage and leader exiled to Babylon who refused to give up his Jewish practice: he kept kosher, prayed three times a day facing Jerusalem, and was thrown into the lions' den for it, where G-d saved him. His story is in the Book of Daniel, and it is a story of courage for anyone keeping Judaism in a world that pushes back.
 
-Here is the story as Jewish tradition tells it, and what it can teach teens and families in Lafayette, Moraga and Orinda.
+Here is the story, and what it can teach teens and families in Lafayette, Moraga and Orinda.
 
 ## Who was Daniel?
 

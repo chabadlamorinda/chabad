@@ -17,7 +17,7 @@ In practice: begin the day with prayer and study, and then go to your work with 
 
 ## A story
 
-Rabbi Hillel Zaltzman tells this account in his memoir *Samarkand*, about growing up in Samarkand and Tashkent in the Soviet Union. In that time most parents expected their children to go to Soviet schools and university to earn a profession. His father refused. He believed Soviet public schools aimed to instill Marxist-Leninist ideology, so he kept his children out. He taught basic reading, writing and arithmetic at home, and relied on Talmud and Chassidus for deeper learning. His son Berel learned the trade of making commercial signs, and later the father opened his own sign factory. The family earned its living that way until they left Russia in 1971, and many families in their community did the same.
+Rabbi Hillel Zaltzman tells this account in his memoir *Samarkand*, about growing up in Samarkand and Tashkent in the Soviet Union. In that time most parents expected their children to go to Soviet schools and university to earn a profession. His father refused. He believed Soviet public schools aimed to instill Marxist-Leninist ideology, so he kept his children out. He taught basic reading, writing and arithmetic at home, and relied on Talmud and Chassidus for deeper learning. The author's brother Berel learned the trade of making commercial signs, and later the father opened his own sign factory. The family earned its living that way until they left Russia in 1971, and many families in their community did the same.
 
 Rabbi Zaltzman recalls the teacher, Rabbi Bentcha, and two incidents. In one, a classmate boasted that his mother had enrolled him in school and mocked the narrator's friends. Rabbi Bentcha overheard and questioned the boy about a verse from Deuteronomy. When the boy gave the plain meaning, Rabbi Bentcha asked for a deeper reading: the verse meant following only G-d, and not the Communist school. The boy understood, and later raised a devout family.
 
@@ -42,7 +42,7 @@ We often picture the Torah as something that happened once, at a mountain, to ou
 
 The way he describes it is surprisingly practical. First comes the quiet foundation: waking up and thanking G-d, praying, learning. Second comes the part that tests us, bringing that holiness into ordinary life: how we talk to a colleague, handle money, drive, and raise children. Third, and most ambitious, is to refine the world itself, so that G-dliness fills even the places that seem far from it.
 
-That is why mitzvot use physical things. A story from Samarkand shows it beautifully. A teacher who lived under pressure and danger used a shared pen and inkwell to teach what "thankful" really means. The ordinary became holy because a teacher cared enough to connect the two.
+That is why mitzvot use physical things. A story from Samarkand shows it beautifully. A teacher in the Soviet Union used a shared pen and inkwell to teach what "thankful" really means. The ordinary became holy because a teacher cared enough to connect the two.
 
 Yitro's example is encouraging. He had explored every idea, and his knowledge was not wasted. When he declared that G-d is greater than all, that knowledge was lifted into holiness. Whatever we know, whether business, science, art or cooking, is something we can bring to the service of G-d.
 

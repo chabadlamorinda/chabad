@@ -26,7 +26,7 @@ Many families remember "my grandfather was a Kohen." That memory is valuable.
 - **Surnames** such as Cohen, Kagan or Katz (in Russian, Коган, Каган, Кац) or Levi, Levin or Levine are often clues, but they are not proof. Some families changed names, and not everyone with such a name is a Kohen.
 - **Family tradition** counts for a great deal: that your grandfather was called to the Torah first, gave the priestly blessing, or was told not to enter a cemetery.
 - **A Jewish cemetery** may help: some tombstones show a pair of hands for a Kohen or a pitcher for a Levi.
-- **A DNA test** can show that you share ancestry, but Jewish tradition notes that there is no "Jewish gene," and genetics cannot settle Jewish status. A Kohen marker is a hint, not a ruling.
+- **A DNA test** can show that you share ancestry, but there is no "Jewish gene," and genetics cannot settle Jewish status. A Kohen marker is a hint, not a ruling.
 
 Please **ask the Rabbi** about your family. He can ask the right questions and tell you whether to treat yourself as a Kohen, Levi or Yisrael.
 

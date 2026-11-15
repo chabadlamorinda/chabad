@@ -37,7 +37,7 @@ Its opening line urges a person to rise "like a lion" to serve the Creator.
 - **Mishnah Berurah.** The Chafetz Chaim (1839-1933) wrote a six-volume commentary on Orach Chaim, widely used for daily life.
 - **Shulchan Aruch HaRav.** Rabbi Schneur Zalman of Liadi, the Alter Rebbe and founder of Chabad, wrote a longer version at the request of the Maggid of Mezritch. It explains the reasoning for each law and gives a final ruling that takes later opinions into account. See [the Chabad Rebbes](/learn/chabad-rebbes).
 
-The name has become a word for Jewish law itself, and that someone who lives closely by it is sometimes called a "Shulchan Aruch Yid."
+The name has become a word for Jewish law itself, and someone who lives closely by it is sometimes called a "Shulchan Aruch Yid."
 
 ## Why was it controversial?
 

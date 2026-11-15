@@ -30,7 +30,7 @@ Many people sing "Eliyahu HaNavi" after Shabbat ends, at [Havdalah](/learn/havda
 
 ## The herald of Moshiach
 
-The prophet Malachi promised that Elijah would come before "the great and awesome day of G-d." Jewish tradition says he will announce [Moshiach](/learn/moshiach) and bring peace and unity to families. That is why his name is on the lips of Jews at the happiest and most hopeful moments.
+The prophet Malachi promised that Elijah would come before "the great and awesome day of G-d." He will announce [Moshiach](/learn/moshiach) and bring peace and unity to families. That is why his name is on the lips of Jews at the happiest and most hopeful moments.
 
 ## Common questions
 
@@ -47,7 +47,7 @@ Elijah's Cup is the fifth cup of wine poured at the Seder but not drunk. It repr
 Because Elijah is "the angel of the covenant," present at every bris to witness that the covenant is kept. Ask the Rabbi or the mohel about family custom.
 
 ### Did Elijah die?
-The Bible says he rose to heaven in a chariot of fire. Jewish tradition says he still appears to help people, and will return before Moshiach.
+The Bible says he rose to heaven in a chariot of fire. He still appears to help people, and will return before Moshiach.
 
 ### Do I need to use a special cup?
 Many families use a beautiful cup, but any cup will do. Ask the Rabbi about how to do it in your home.

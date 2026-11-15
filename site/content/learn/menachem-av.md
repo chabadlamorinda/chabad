@@ -35,7 +35,7 @@ The Shabbat before the ninth is called Shabbat Chazon, "the Shabbat of the Visio
 
 ## Comfort: Shabbat Nachamu and Tu B'Av
 
-The Shabbat after Tisha B'Av is Shabbat Nachamu, named for the haftarah that begins "Comfort, comfort My people." Jewish tradition describes it as a time of delight, after the fast. On Tu B'Av, the fifteenth of Av, we celebrate a minor holiday that marks a complete turn from the sadness of Tisha B'Av. Chabad communities do not say the Tachanun prayer on that day. Read about [Tu B'Av](/learn/tu-bav).
+The Shabbat after Tisha B'Av is Shabbat Nachamu, named for the haftarah that begins "Comfort, comfort My people." It is a time of delight, after the fast. On Tu B'Av, the fifteenth of Av, we celebrate a minor holiday that marks a complete turn from the sadness of Tisha B'Av. Chabad communities do not say the Tachanun prayer on that day. Read about [Tu B'Av](/learn/tu-bav).
 
 ## Take the next step
 

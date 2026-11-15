@@ -5,7 +5,7 @@ category: Kosher
 related: kosher-oven-and-microwave, meat-and-milk, kosher-kitchen, pareve, tevilat-kelim
 local: Setting up the sink or dishwasher in your kitchen? Call Rabbi Labkowski at 925-384-7242 and we will help you work it out.
 ---
-Jewish tradition says that, ideally, a dishwasher is used only for meat or only for dairy. A kitchen with one sink can still be kosher: treat the sink itself as non-kosher, never put dishes or food directly into it, and wash meat and dairy in separate dishpans set on small racks.
+Ideally, a dishwasher is used only for meat or only for dairy. A kitchen with one sink can still be kosher: treat the sink itself as non-kosher, never put dishes or food directly into it, and wash meat and dairy in separate dishpans set on small racks.
 
 ## Why the dishwasher and sink matter
 
@@ -13,13 +13,13 @@ Hot water and soap carry the taste of food. In a kosher kitchen, meat and milk m
 
 ## The dishwasher
 
-Jewish tradition says that the ideal is to designate one dishwasher for meat or for dairy only, and not to use it for both, even if they are never run at the same time. Some kitchens have two dishwashers.
+The ideal is to designate one dishwasher for meat or for dairy only, and not to use it for both, even if they are never run at the same time. Some kitchens have two dishwashers.
 
-Many factors are involved, so the tradition advises asking your rabbi for specific questions. If you have one dishwasher, do not start using it for both on your own. Call Rabbi Labkowski at 925-384-7242 first.
+Many factors are involved, so ask your rabbi about specific questions. If you have one dishwasher, do not start using it for both on your own. Call Rabbi Labkowski at 925-384-7242 first.
 
 ## The sink: one sink or two
 
-According to Jewish tradition:
+The guidelines are:
 
 - **Two sinks** are best. If they sit side by side, there must be an effective barrier so water and food cannot splash from one to the other. A kitchen may have one sink for meat and one for dairy.
 - **One sink** may be used once it is thoroughly cleaned, but its interior is treated as non-kosher. Do not put food or dishes directly into it. Use separate meat and dairy dishpans, set on slightly raised racks.
@@ -39,7 +39,7 @@ Put the item aside, do not use it, and ask the Rabbi. The advice for a kosher ki
 ## Common questions
 
 ### Can I use one dishwasher for meat and dairy?
-Ideally, no. Jewish teaching says to designate a dishwasher for meat or dairy only. If you have only one, ask the Rabbi what to do before using it for both.
+Ideally, no. Designate a dishwasher for meat or dairy only. If you have only one, ask the Rabbi what to do before using it for both.
 
 ### Can I have a kosher kitchen with just one sink?
 Yes. Treat the sink as non-kosher, never put dishes or food directly in it, and use separate dishpans on small racks for meat and dairy.
@@ -51,7 +51,7 @@ A metal sink can be koshered by pouring boiling water over all of it, with the w
 Set the dishes aside and ask the Rabbi. Do not use them in the meantime. The answer depends on the facts.
 
 ### Do I need separate dishwashers?
-Some kitchens have two. If you have one, the tradition says to designate it for meat or dairy. Ask the Rabbi what suits your kitchen.
+Some kitchens have two. If you have one, designate it for meat or dairy. Ask the Rabbi what suits your kitchen.
 
 ### Do new dishes need anything before they go into the sink?
 New metal and glass dishes usually need immersion in a mikvah before first use. See [immersing new dishes](/learn/tevilat-kelim).

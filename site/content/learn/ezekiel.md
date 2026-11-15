@@ -56,7 +56,7 @@ Ezekiel (Yechezkel) was a prophet of the Babylonian exile, a son of a priest nam
 It is Ezekiel's vision of G-d's throne carried by four creatures with four faces each. Jewish tradition calls it Maaseh Merkavah and treats it as a deep mystical teaching.
 
 ### What does the valley of dry bones mean?
-It is a promise that the Jewish people, who felt hopeless in exile, would be revived and return to their land. Jewish tradition also draws on it when speaking of the resurrection of the dead.
+It is a promise that the Jewish people, who felt hopeless in exile, would be revived and return to their land. It is also drawn on when speaking of the resurrection of the dead.
 
 ### Why is Ezekiel read on Shavuot?
 His vision of G-d's throne is the haftarah on the first day of Shavuot, the holiday of the giving of the Torah.

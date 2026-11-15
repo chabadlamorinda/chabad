@@ -38,7 +38,7 @@ You do not have to do it alone. The right partners help. A Jewish preschool and 
 
 ## At what age does chinuch begin?
 
-Jewish tradition says education begins early, and the specific ages for each mitzvah vary. Customs differ by family and mitzvah, so for your child's situation, ask the Rabbi. A good rule is to start gently now with whatever you can do with love.
+Education begins early, and the specific ages for each mitzvah vary. Customs differ by family and mitzvah, so for your child's situation, ask the Rabbi. A good rule is to start gently now with whatever you can do with love.
 
 ## Common questions
 

@@ -18,7 +18,7 @@ The Jewish mourning observances come in phases, each with its own purpose:
 3. **Sheloshim: thirty days.** A gradual return to everyday life, while still keeping restraint. See [sheloshim](/learn/sheloshim).
 4. **The first year, for a parent.** The restraint continues until the first yahrzeit. See [the year of mourning](/learn/year-of-mourning).
 
-The structure helps mourners move step by step, until the loss becomes a constructive force in their lives. The article adds that the practices should be followed carefully but not exceeded.
+The structure helps mourners move step by step, until the loss becomes a constructive force in their lives. The practices should be followed carefully, but not exceeded.
 
 ## You may not feel what the rituals express
 

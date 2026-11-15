@@ -5,7 +5,7 @@ category: Jewish ideas
 related: blessings, serving-g-d-in-everyday-life, itkafya-self-discipline, animal-soul-not-evil, the-table-as-an-altar, what-is-holiness, blessings-after-food, hachnasat-orchim, kosher, shabbat-meals
 local: Come share a Shabbat meal: sign up at /forms/shabbat-meal or call Chabad of Lamorinda at 925-384-7242.
 ---
-In Judaism, eating is more than fuel: when we eat with awareness, say a blessing and use the energy for something good, we elevate the food into holiness. Chassidic teaching says every piece of food contains a spark of G-dliness, and our meals are a chance to lift it.
+In Judaism, eating is more than fuel: when we eat with awareness, say a blessing and use the energy for something good, we elevate the food into holiness. Every piece of food contains a spark of G-dliness, and our meals are a chance to lift it.
 
 For families in Lafayette, Moraga and Orinda, this turns an ordinary dinner into something meaningful. Here is how.
 
@@ -23,7 +23,7 @@ The Tanya (chapter 7) explains how. It teaches that eating purely for personal p
 
 ## The blessing before eating
 
-Before we eat, we say a blessing. Chassidic teaching explains that when we say a blessing and intend to serve G-d with the food's energy, we elevate the food's physical substance into holiness. These blessings belong to the type called *birkat hanehenin* (blessings of enjoyment): we may not enjoy G-d's world without first acknowledging its Source.
+Before we eat, we say a blessing. When we say a blessing and intend to serve G-d with the food's energy, we elevate the food's physical substance into holiness. These blessings belong to the type called *birkat hanehenin* (blessings of enjoyment): we may not enjoy G-d's world without first acknowledging its Source.
 
 For bread there is the *hamotzi* blessing, and for other foods blessings suited to the kind of food. See the guide to [blessings](/learn/blessings). After a meal with bread we say Grace After Meals. See [blessings after food](/learn/blessings-after-food).
 
@@ -38,7 +38,7 @@ Practical advice for mindful eating has four steps:
 
 ## The table as an altar
 
-When the Holy Temple stood, the altar brought atonement. The Talmud (Menachot 97a) teaches that today a person's table does. In the Temple, the daily offerings combined an animal, a grain offering and salt, covering all the kingdoms of creation. Chassidic thought explains that today the work of lifting the world's sparks falls to each of us, through what we eat and how we eat it. Read more in [the Holy Temple](/learn/the-holy-temple).
+When the Holy Temple stood, the altar brought atonement. The Talmud (Menachot 97a) teaches that today a person's table does. In the Temple, the daily offerings combined an animal, a grain offering and salt, covering all the kingdoms of creation. Today the work of lifting the world's sparks falls to each of us, through what we eat and how we eat it. Read more in [the Holy Temple](/learn/the-holy-temple).
 
 This is why a Jewish table is a place of blessings, words of Torah and guests.
 

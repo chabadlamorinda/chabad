@@ -17,12 +17,12 @@ To add a plaque, consult the Rabbi: call 925-384-7242. We do not publish prices 
 
 ## The ways Judaism remembers, which a plaque joins
 
-Jewish tradition for the yahrzeit, the anniversary of the death on the Hebrew calendar, lists the customs that keep a person's memory alive, and the plaque goes beautifully alongside them:
+On the yahrzeit, the anniversary of the death on the Hebrew calendar, several customs keep a person's memory alive, and the plaque goes beautifully alongside them:
 
 - **A yahrzeit candle.** The custom is to light a candle at nightfall on the evening before the anniversary. It is customary to let it burn out by itself, unless there is a real fire risk. (See [the yahrzeit](/learn/yahrzeit).)
 - **Kaddish.** The Mourner's Kaddish is said at every service on the yahrzeit, and for 11 months after the death. Chabad of Lamorinda can arrange Kaddish for a loved one: use the form at [/kaddish](/kaddish), or see [saying Kaddish for someone else](/learn/saying-kaddish-for-someone-else).
 - **Tzedakah.** Give to a synagogue, a school, a hospital or the poor in the person's memory. See [tzedakah](/learn/tzedakah).
-- **Learning.** Standard guidance says Mishnah is the traditional study for a yahrzeit; if that is not possible, a chapter of the Bible. See [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
+- **Learning.** Mishnah is the traditional study for a yahrzeit; if that is not possible, a chapter of the Bible. See [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
 - **Visiting the grave,** reading Psalms and saying the memorial prayer *El Malei Rachamim* yourself (see [El Malei Rachamim](/learn/el-malei-rachamim) and [visiting a grave](/learn/visiting-a-grave)).
 
 At the holidays, the memorial service called [Yizkor](/learn/yizkor) remembers loved ones. We do not describe other synagogue customs here; for how names are read or remembered at services in Lamorinda, call the Rabbi.
@@ -51,7 +51,7 @@ Yes. Chabad of Lamorinda can arrange Kaddish for a loved one. Fill in the form a
 
 ### What do Jews do on a yahrzeit?
 
-According to Standard guidance: light a yahrzeit candle, say Kaddish, give tzedakah, learn Torah, and visit the grave if possible. See [yahrzeit](/learn/yahrzeit).
+The customs: light a yahrzeit candle, say Kaddish, give tzedakah, learn Torah, and visit the grave if possible. See [yahrzeit](/learn/yahrzeit).
 
 ### Can I remember a loved one if I live far away?
 

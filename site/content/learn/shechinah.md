@@ -5,23 +5,23 @@ category: Jewish ideas
 related: belief-in-g-d, the-holy-temple, western-wall, shabbat-day, ahavat-yisrael
 local: Curious about G-d's presence in your life? Talk with the Rabbi at /help/talk-to-the-rabbi or call 925-384-7242.
 ---
-The Shechinah (שכינה) is the Divine Presence: G-d as He "dwells within" our world. The word comes from the Hebrew shochen (שכן), "to dwell," and jewish tradition describes it as the same One G-d, in the mode in which He is close and present among us.
+The Shechinah (שכינה) is the Divine Presence: G-d as He "dwells within" our world. The word comes from the Hebrew shochen (שכן), "to dwell," and it means the same One G-d, in the mode in which He is close and present among us.
 
 ## What the Shechinah means
 
-Judaism teaches that G-d is beyond the universe and also within it. The Shechinah is a name for this second side: G-d dwelling in the lowest, most ordinary places, including our homes, our offices and our lives. The Torah gives the purpose in the command to build the Tabernacle, a sanctuary where G-d would dwell among the Jewish people. Chassidic teaching notes that the Shechinah did not settle among the Jewish people until the Tabernacle was built and prepared.
+Judaism teaches that G-d is beyond the universe and also within it. The Shechinah is a name for this second side: G-d dwelling in the lowest, most ordinary places, including our homes, our offices and our lives. The Torah gives the purpose in the command to build the Tabernacle, a sanctuary where G-d would dwell among the Jewish people. The Shechinah did not settle among the Jewish people until the Tabernacle was built and prepared.
 
 We use words like "dwelling" because we are speaking of closeness. G-d is not limited to one place, but there are places and moments where His presence is felt more.
 
 ## Levels of presence
 
-The tradition teaches that the Shechinah is revealed "in a variety of forms and degrees," and that the Divine light is "filtered" so each recipient receives what is good for him. In its description, the highest levels are Mount Sinai, then the Holy of Holies in the Temple, then a prophet receiving a message, then synagogues and study halls, and then a group of ten people occupied with Torah. See [the Holy Temple](/learn/the-holy-temple) and [the Western Wall](/learn/western-wall).
+The Shechinah is revealed in a variety of forms and degrees, and the Divine light is "filtered" so each recipient receives what is good for him. The highest levels are Mount Sinai, then the Holy of Holies in the Temple, then a prophet receiving a message, then synagogues and study halls, and then a group of ten people occupied with Torah. See [the Holy Temple](/learn/the-holy-temple) and [the Western Wall](/learn/western-wall).
 
 The Mishnah (Avot 3:6) teaches that when ten people sit together and are occupied with Torah, the Shechinah rests among them. The commentators add that even one person studying Torah is accompanied by it.
 
 ## The Shechinah in difficult places
 
-A beautiful idea in Chabad teaching is that the Shechinah does not only dwell in holy places. Jewish tradition tells us that it descended to Egypt with Jacob and shared the Jewish people's suffering until the Exodus. At the burning bush, G-d showed that He would dwell even in a lowly thorn bush while the Jewish people were in distress.
+A beautiful idea in Chabad teaching is that the Shechinah does not only dwell in holy places. It descended to Egypt with Jacob and shared the Jewish people's suffering until the Exodus. At the burning bush, G-d showed that He would dwell even in a lowly thorn bush while the Jewish people were in distress.
 
 That is a comforting message: you are never alone, even in a dark time. If you are going through something hard, you are welcome to talk with the Rabbi or call [for help](/help).
 
@@ -51,7 +51,7 @@ Families in Lafayette, Moraga and Orinda can begin with one: a Friday-night cand
 The Shechinah is the Divine Presence, G-d "dwelling within" the world. The word comes from the Hebrew shochen, "to dwell."
 
 ### Where does the Shechinah dwell?
-It is revealed in different degrees: highest at Mount Sinai and the Holy of Holies, and also in synagogues, study halls, and wherever ten people are occupied with Torah. The tradition adds that it came to Egypt with Jacob and was present even at the burning bush.
+It is revealed in different degrees: highest at Mount Sinai and the Holy of Holies, and also in synagogues, study halls, and wherever ten people are occupied with Torah. It also came to Egypt with Jacob and was present even at the burning bush.
 
 ### Is the Shechinah female?
 The word is grammatically feminine and Kabbalistic texts use "she" for it, but G-d is not a gender. It is a way of speaking about G-d's closeness.
@@ -63,7 +63,7 @@ The Divine Presence is not limited to the Temple. Our tradition teaches that it 
 Through Shabbat, Torah study, prayer, kindness and peace in the home. A mezuzah on the doorpost is a good start.
 
 ### Can one person study Torah and have the Shechinah with him?
-Yes. Jewish tradition says the commentators on the Mishnah teach that even one person studying Torah is accompanied by the Shechinah.
+Yes. The commentators on the Mishnah teach that even one person studying Torah is accompanied by the Shechinah.
 
 ## Take the next step
 
