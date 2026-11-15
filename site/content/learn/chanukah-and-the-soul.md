@@ -9,7 +9,7 @@ local: Looking for a way to light up someone's life? Call Rabbi Labkowski at 925
 
 ## What does the verse say?
 
-On Chabad.org the verse is translated: "Man's soul is the Lord's lamp, which searches out all the innermost parts." Rashi explains that the soul inside a person testifies about him, so that it is, in a way, our inner voice. Other Chabad.org writings use the words "candle," "lamp" and "flame" for the same idea. In Hebrew, the word *neshamah* (נשמה) is the soul, and the word *ner* (נר) is a candle.
+On Chabad.org the verse is translated: "Man's soul is the Lord's lamp, which searches out all the innermost parts." Rashi explains that the soul inside a person testifies about him. Other Chabad.org writings use the words "candle," "lamp" and "flame" for the same idea. In Hebrew, the word *neshamah* (נשמה) is the soul, and the word *ner* (נר) is a candle.
 
 For a wider look at the soul, see [the soul](/learn/the-soul).
 
@@ -21,11 +21,11 @@ Another Chabad.org essay says the flame is like Torah study and the wick is like
 
 ## A light that cannot be put out
 
-Rabbi Yitzi Hurwitz explains on Chabad.org that the soul has five levels, and that the highest, the *yechidah*, is the part of us that cannot be touched by negative influences. Reaching it does more than push the darkness away. It changes the darkness, so that "the darkness itself begins to shine." The menorah's light is the symbol of this. So when you feel that you are not "religious enough," Chanukah's message is that your soul's flame is never gone.
+Rabbi Yitzi Hurwitz explains on Chabad.org that the soul has five levels, and that the highest, the *yechidah*, is the part of us that cannot be touched by negative influences. Reaching it does more than push the darkness away. It changes the darkness, so that "the darkness itself begins to shine." The menorah's light is the symbol of this. In this teaching, the deepest flame of the soul is never put out.
 
 ## One person lights another
 
-In Chabad.org's commentary on the verse "when you light the lamps" (Numbers 8:2), the verse about the soul is quoted, and the lesson is: each Jew should make his own candle shine brightly and help light another Jew's candle, through learning Torah, doing mitzvot and inspiring others to do the same. For a Rebbe's call to bring Chanukah's light outside, see [the Rebbe on Chanukah](/learn/the-rebbe-on-chanukah).
+In Chabad.org's commentary on the verse "when you light the lamps" (Numbers 8:2), the verse about the soul is quoted, and the lesson is: each Jew should make his own candle shine brightly and help light another Jew's candle, through learning Torah, doing mitzvot and inspiring others to do the same. For the Rebbe's call to bring Chanukah's light outside, see [the Rebbe on Chanukah](/learn/the-rebbe-on-chanukah).
 
 ## A true story about one more light
 
@@ -48,7 +48,7 @@ It is the highest level of the soul, according to Chabad.org, the part that is a
 Chabad.org says a person can help another by learning Torah, doing mitzvot and inspiring others to do the same.
 
 ### Why do Chanukah lights point to the soul?
-Like a flame, the soul rises upward, and like the menorah, its purpose is to give light. One teaching says the darkness itself can shine.
+A flame gives light, and Chabad.org writers compare the parts of a lamp to the parts of our service of G-d. One teaching adds that the darkness itself can be made to shine.
 
 ### Where can I light up someone's life near Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda at 925-384-7242, see [help for seniors and families](/help/help-for-seniors-and-families), or [sign up to volunteer](/forms/volunteer).

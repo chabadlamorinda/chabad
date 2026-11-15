@@ -1,6 +1,6 @@
 ---
 title: Cooking for Someone in Need: Meals for the Sick, Mourners and New Parents
-description: How to bring a meal to someone who is sick, grieving or newly a parent, the Jewish way: the mourners' first meal, asking first, kosher care and offering help.
+description: How to bring a meal to someone sick, grieving or newly a parent, the Jewish way: the mourners' first meal, asking first, kosher care and offering help.
 category: Jewish home
 related: chesed, bikur-cholim, what-to-bring-to-a-shiva-house, meals-for-new-parents, giving-when-money-is-tight
 local: Know a family that could use a meal or a helping hand? Call Rabbi Labkowski at 925-384-7242 or see the help page.

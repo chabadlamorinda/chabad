@@ -1,6 +1,6 @@
 ---
 title: "Mourning a Grandparent: Customs, Kaddish and Keeping Their Memory"
-description: Do you sit shiva for a grandparent? Not formally, but there are real ways to mourn, comfort your parents and honor their memory. Guidance for grandchildren.
+description: Do you sit shiva for a grandparent? Not formally, but there are real ways to mourn, comfort your parents and honor memory. For grandchildren.
 category: Mourning & remembrance
 related: who-sits-shiva, losing-a-parent, jewish-grandparents, comforting-mourners, learning-in-memory-of-a-loved-one
 local: Lost a grandparent? Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi to ask what is right for you.

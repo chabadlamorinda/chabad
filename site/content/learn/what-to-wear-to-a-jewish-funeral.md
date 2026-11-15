@@ -1,6 +1,6 @@
 ---
 title: What to Wear to a Jewish Funeral, and What to Expect as a Guest
-description: What to wear to a Jewish funeral, what happens at the service and graveside, and what to say to the family. A gentle guide for guests in Lafayette and the East Bay.
+description: What to wear to a Jewish funeral, what happens at the service and graveside, and what to say to the family. A gentle guide for guests in Lafayette.
 category: Mourning & remembrance
 related: jewish-funeral, comforting-mourners, kriah, jewish-funerals-near-lafayette, seudat-havraah
 local: Not sure what to do at a funeral you are attending? Call Rabbi Labkowski at 925-384-7242 and he will gladly explain.

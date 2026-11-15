@@ -1,6 +1,6 @@
 ---
 title: "When You Cannot Say Kaddish Yourself: Arranging Kaddish for a Loved One"
-description: Who says Kaddish if there is no son, or you cannot attend a minyan? Chabad.org's guidance on a relative or a paid substitute, and ways for daughters to honor a loved one.
+description: Who says Kaddish if there is no son or you cannot attend a minyan? Chabad.org's guidance on a relative or substitute, and ways for daughters to honor.
 category: Mourning & remembrance
 related: kaddish, learning-in-memory-of-a-loved-one, yahrzeit, el-malei-rachamim, first-yahrzeit
 local: To arrange Kaddish for your loved one, call Rabbi Labkowski at 925-384-7242 or see /kaddish.

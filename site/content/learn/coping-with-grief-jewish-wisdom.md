@@ -1,6 +1,6 @@
 ---
 title: "Coping With Grief: Jewish Wisdom for the Hardest Days"
-description: How does Judaism help with grief? The stages of Jewish mourning, comfort from community, and the soul's continuity, plus where to turn in Lafayette and the East Bay.
+description: How does Judaism help with grief? The stages of Jewish mourning, comfort from community and the soul's continuity. Where to turn near Lafayette.
 category: Mourning & remembrance
 related: mourning-journey, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
 local: Grieving and need someone to talk to? Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.

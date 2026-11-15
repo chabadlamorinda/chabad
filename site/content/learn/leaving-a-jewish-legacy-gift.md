@@ -3,7 +3,7 @@ title: Leaving a Jewish Legacy: Gifts in a Will and Their Meaning
 description: What it means to leave a legacy gift to a Jewish cause: ways to give through a will, trust or beneficiary form, ethical wills, and where to start.
 category: Jewish ideas
 related: ethical-will, halachic-will, supporting-chabad-of-lamorinda, giving-in-someones-honor, tzedakah
-local: Thinking about including Jewish life in your plans? Talk privately with the Rabbi: call 925-384-7242.
+local: Thinking about including Jewish life in your plans? Talk with the Rabbi: call 925-384-7242.
 ---
 A Jewish legacy gift is a gift to a Jewish cause that you arrange during your lifetime and that takes effect later, most often through a will, a living trust or a beneficiary form. It is a way to keep your values and your care for others alive after you.
 
@@ -34,7 +34,7 @@ If you would like your estate to follow Jewish law for your heirs, that is a sep
 1. **Think about what matters most to you.** Which causes, which people, which values?
 2. **Talk with your family.** Chabad.org advises discussing your wishes with family, so they hear them from you.
 3. **Meet your attorney and financial advisor.** They know the forms and the details.
-4. **Tell the Rabbi, if you wish.** For Chabad of Lamorinda, the [legacy page](/legacy) lists ways to include it in your plans, and the Rabbi would be honored to hear what matters to you. Call 925-384-7242 or [talk privately with the Rabbi](/help/talk-to-the-rabbi).
+4. **Tell the Rabbi, if you wish.** For Chabad of Lamorinda, the [legacy page](/legacy) lists ways to include it in your plans, and the Rabbi would be honored to hear what matters to you. Call 925-384-7242 or [talk with the Rabbi](/help/talk-to-the-rabbi).
 
 ## Common questions
 

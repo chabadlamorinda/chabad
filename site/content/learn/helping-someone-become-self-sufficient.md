@@ -1,6 +1,6 @@
 ---
 title: The Highest Tzedakah: Helping Someone Find a Job or Stand on Their Own
-description: The highest form of tzedakah is helping someone become self-sufficient, through a job, a loan or a partnership. What Maimonides taught and how to do it today.
+description: The highest tzedakah is helping someone become self-sufficient, through a job, a loan or a partnership. What Maimonides taught and how to do it today.
 category: Jewish ideas
 related: tzedakah-priorities, losing-a-job, gemach-interest-free-loans, giving-anonymously, giving-when-money-is-tight
 local: Looking for work, or able to help someone who is? Call Rabbi Labkowski at 925-384-7242.

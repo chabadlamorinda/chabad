@@ -1,6 +1,6 @@
 ---
 title: "The Meal of Condolence (Seudat Havraah): The Mourners' First Meal After the Funeral"
-description: What the Seudat Havraah is, why mourners eat eggs and round foods after a funeral, who prepares the meal, and how to help. A guide for families near Lafayette.
+description: What the Seudat Havraah is, why mourners eat eggs and round foods after a funeral, who prepares it, and how to help. For families near Lafayette.
 category: Mourning & remembrance
 related: shiva, setting-up-a-shiva-house, what-to-bring-to-a-shiva-house, comforting-mourners, what-to-wear-to-a-jewish-funeral
 local: Helping a mourning family in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 and we will guide you.

@@ -1,6 +1,6 @@
 ---
 title: "A Jewish Health Care Directive: End-of-Life Wishes That Follow Jewish Law"
-description: What is a Jewish (halachic) health care directive? How it names a trusted person and a rabbi so medical decisions follow Jewish law. Ask the Rabbi in Lafayette.
+description: What is a Jewish (halachic) health care directive? How it names a trusted person and a rabbi so medical decisions follow Jewish law. Ask the Rabbi.
 category: Mourning & remembrance
 related: halachic-will, hospice-and-end-of-life-care, when-a-loved-one-is-dying, planning-a-jewish-funeral-in-advance, autopsy-jewish-view
 local: Want your medical wishes to follow Jewish law? Call Rabbi Labkowski at 925-384-7242 before you sign anything.
