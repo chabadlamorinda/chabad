@@ -2,7 +2,7 @@
 title: Hospice and End-of-Life Decisions: A Jewish Guide for Families
 description: A Jewish view of hospice, pain relief, DNR forms and feeding tubes. Why to call a rabbi early. Support for families in Lafayette, Moraga and Orinda.
 category: Mourning & remembrance
-related: when-a-loved-one-is-dying, caring-for-aging-parents, halachic-will, pikuach-nefesh, shabbat-in-the-hospital
+related: when-a-loved-one-is-dying, jewish-health-care-directive, caring-for-aging-parents, halachic-will, pikuach-nefesh, shabbat-in-the-hospital
 local: Facing hard decisions for someone you love? Call Rabbi Yisroel Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi, at any hour.
 ---
 Judaism teaches that every moment of life is precious, and that a person who is dying deserves comfort, care and company. Many families in the East Bay face hospice and end-of-life choices, and Jewish law has clear principles, but because every case is different, please call a rabbi early, before a form is signed.

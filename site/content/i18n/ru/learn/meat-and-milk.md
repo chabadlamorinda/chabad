@@ -2,7 +2,7 @@
 title: Мясное и молочное в еврейском законе: сколько ждать и почему
 description: Почему евреи не смешивают мясное и молочное, сколько ждать между ними, что значит парве и как разделять мясное и молочное дома.
 category: Kosher
-related: kosher-kitchen, pareve, kosher-cheese, shavuot-dairy-foods, chalav-yisrael, kosher-meat, kosher, kosher-symbols
+related: kosher-kitchen, kosher-baby-food-and-formula, kosher-school-lunches, kosher-dishwasher-and-sink, kosher-oven-and-microwave, pareve, kosher-cheese, shavuot-dairy-foods, chalav-yisrael, kosher-meat, kosher, kosher-symbols
 local: Разделяете мясное и молочное на своей кухне? Звоните раввину Лабковскому: 925-384-7242, и мы поможем вам шаг за шагом.
 ---
 Еврейский закон запрещает варить, есть и получать пользу от мяса и молока вместе. На практике это означает отдельную посуду и приборы для мясного и молочного и перерыв между мясной и молочной едой.

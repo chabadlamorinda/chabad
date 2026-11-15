@@ -2,7 +2,7 @@
 title: Shabbat for Commuters: Leaving Work Early from San Francisco, Oakland and Beyond
 description: How to get home before Shabbat when you commute by BART or Highway 24 from San Francisco or Oakland to Lafayette, Moraga or Orinda. A calm Friday plan.
 category: Lamorinda
-related: shabbat-in-winter, telling-your-boss-you-keep-shabbat, shabbat-for-working-parents, preparing-for-shabbat, shabbat-candles, shabbat-times-in-lamorinda-explained
+related: shabbat-in-winter, jewish-wisdom-for-busy-professionals, telling-your-boss-you-keep-shabbat, shabbat-for-working-parents, preparing-for-shabbat, shabbat-candles, shabbat-times-in-lamorinda-explained
 local: Commute to the city and want Shabbat at home? Call Rabbi Labkowski at 925-384-7242 to plan your Fridays, or come to Kabbalat Shabbat in Lafayette.
 ---
 To bring Shabbat home on time when you commute, look up this week's candle-lighting time, work backwards from it, and leave the office early enough that traffic or a BART delay cannot catch you. Candles are lit about 18 minutes before sunset, and lighting after sunset is too late, so a Friday plan made on Thursday is what keeps Shabbat calm.

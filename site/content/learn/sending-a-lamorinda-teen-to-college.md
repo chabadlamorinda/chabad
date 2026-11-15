@@ -2,7 +2,7 @@
 title: "Off to College: Helping a Lamorinda Teen Take Jewish Life Along"
 description: How Lafayette, Moraga and Orinda families can prepare a teen for college Jewish life: Shabbat, Chabad House, the holidays and home. Call 925-384-7242.
 category: Lamorinda
-related: jewish-college-students, kosher-on-campus, jewish-teens-in-lamorinda, jewish-identity-for-teens, mezuzah
+related: jewish-college-students, graduation-jewish-blessing, kosher-on-campus, jewish-teens-in-lamorinda, jewish-identity-for-teens, mezuzah
 local: Is your senior heading off to college? Call Rabbi Labkowski at 925-384-7242 to talk about a send-off, or see /programs/kids-and-teens.
 ---
 To help a Jewish teen take Jewish life to college, pack a few meaningful things, find the Jewish community near campus before move-in day, and agree on how you will stay connected to home. Many campuses have a Chabad House or a Hillel, and a student who knows where they are on the first week of school starts the year with friends and a place for Shabbat.

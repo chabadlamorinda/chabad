@@ -2,7 +2,7 @@
 title: מהי מצווה? משמעות, תרי״ג מצוות ואיך מתחילים
 description: מהי מצווה, למה יש תרי״ג, האם פירושה ציווי או חיבור, ואיך לקבל על עצמכם עוד מצווה אחת כבר היום.
 category: Jewish ideas
-related: why-mitzvot, 613-mitzvot, ten-mitzvah-campaigns, the-rebbe, tzedakah
+related: why-mitzvot, what-is-holiness, 613-mitzvot, ten-mitzvah-campaigns, the-rebbe, tzedakah
 local: מוכנים לנסות מצווה ראשונה? התקשרו לרב לבקובסקי 925-384-7242 או בקרו ב-chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 מצווה היא ציווי מה׳, אחת מתרי״ג המצוות שבתורה, וגם דרך להתחבר אל ה׳ באמצעות מעשה ממשי. רבים משתמשים במילה לכל מעשה טוב, וזה יפה, אבל הרעיון היהודי עמוק יותר: מצווה היא מעשה שמחבר בינכם, בין העולם החומרי ובין הבורא.

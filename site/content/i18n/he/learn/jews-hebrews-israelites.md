@@ -2,7 +2,7 @@
 title: יהודים, עברים, ישראלים: למה יש לנו שלושה שמות
 description: למה קוראים לנו יהודים, עברים ובני ישראל? משמעות עברי, ישראל ויהודי, ואיך שלושה שמות מתארים עם אחד.
 category: Jewish ideas
-related: who-is-a-jew, twelve-tribes, jacob-our-father, jewish-history-overview, why-be-jewish
+related: who-is-a-jew, is-judaism-a-religion-or-a-nation, twelve-tribes, jacob-our-father, jewish-history-overview, why-be-jewish
 local: סקרנים לגבי הסיפור היהודי שלכם? בואו ללמוד ב-/programs/adult-education או התקשרו לרב לבקובסקי 925-384-7242.
 ---
 יהודים, עברים ובני ישראל הם שלושה שמות לאותו עם, כל אחד משלב אחר בהיסטוריה היהודית. "עברי" מגיע מאברהם, "ישראל" מנכדו יעקב, ו"יהודי" מיהודה, בנו הרביעי של יעקב.

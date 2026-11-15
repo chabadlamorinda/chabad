@@ -2,7 +2,7 @@
 title: Евреи, иври, израильтяне: почему у нас три имени
 description: Почему евреев называют евреями, иври и израильтянами? Значение слов иври, Исраэль и иехуди и как три имени описывают один народ.
 category: Jewish ideas
-related: who-is-a-jew, twelve-tribes, jacob-our-father, jewish-history-overview, why-be-jewish
+related: who-is-a-jew, is-judaism-a-religion-or-a-nation, twelve-tribes, jacob-our-father, jewish-history-overview, why-be-jewish
 local: Интересна ваша еврейская история? Приходите учиться: /programs/adult-education или звоните раввину Лабковскому 925-384-7242.
 ---
 Евреи, иври (евреи в библейском смысле) и израильтяне - три имени одного народа, каждое из своего этапа еврейской истории. "Иври" происходит от Авраама, "Исраэль" от его внука Яакова, а "еврей" (иехуди) от Иехуды, четвёртого сына Яакова.

@@ -2,7 +2,7 @@
 title: What Is a Mitzvah? Meaning, 613 Commandments and How to Start
 description: What a mitzvah is, why there are 613, whether it means commandment or connection, and a simple way to take on one more mitzvah today.
 category: Jewish ideas
-related: why-mitzvot, 613-mitzvot, ten-mitzvah-campaigns, the-rebbe, tzedakah
+related: why-mitzvot, what-is-holiness, 613-mitzvot, ten-mitzvah-campaigns, the-rebbe, tzedakah
 local: Ready to try your first mitzvah? Call Rabbi Labkowski at 925-384-7242 or visit chabadoflamorinda.com/forms/mezuzah-tefillin.
 ---
 A mitzvah is a commandment from G-d, one of the 613 in the Torah, and also a way to connect with G-d through a real action. Many people use the word for any good deed, which is a lovely thing, but the Jewish idea is deeper: a mitzvah is an act that joins you, the material world and the Creator.

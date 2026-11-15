@@ -2,7 +2,7 @@
 title: A Jewish Hiker's Guide to the East Bay Hills: Blessings, Briones and Mount Diablo
 description: What blessing do you say on a mountain view, a rainbow or thunder? A Jewish hiker's guide to the East Bay hills, with Psalm 104 and trail ideas.
 category: Lamorinda
-related: blessings-on-nature, barchi-nafshi, blessing-on-blossoming-trees, bal-tashchit, jewish-health-and-body
+related: blessings-on-nature, kosher-grilling, barchi-nafshi, blessing-on-blossoming-trees, bal-tashchit, jewish-health-and-body
 local: Hiking with your family or friends? Call Rabbi Labkowski at 925-384-7242 to learn the blessings, or to ask about a trip.
 ---
 When a Jewish hiker sees an awe-inspiring mountain, hills or a vast landscape after not seeing it for thirty days, the blessing is "Oseh Maaseh Bereishit," "Who performs the work of creation." Chabad.org also lists blessings for thunder and lightning, a rainbow and blossoming trees, so a walk in the hills can be filled with prayer.

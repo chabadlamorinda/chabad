@@ -2,7 +2,7 @@
 title: Что такое гематрия? Числа, скрытые в еврейских словах
 description: Что такое гематрия? Как буквы иврита несут числа, почему 18 значит жизнь, и известные примеры от мезузы до дрейдла. Учите иврит с нами.
 category: Prayer & Torah
-related: hebrew-alphabet, chai-symbol, kabbalah, hebrew-reading-for-adults, mezuzah
+related: hebrew-alphabet, chanukah-and-the-number-eight, chai-symbol, kabbalah, hebrew-reading-for-adults, mezuzah
 local: Хотите читать на иврите и увидеть эти числа сами? Приходите на урок иврита (/programs/adult-education) или позвоните: 925-384-7242.
 ---
 Гематрия (גִּימַטְרִיָּה) это еврейская практика находить смысл в числовом значении букв и слов иврита. В иврите каждая буква ещё и число, поэтому у каждого слова есть сумма, и считается, что у слов с равной суммой есть скрытая связь.

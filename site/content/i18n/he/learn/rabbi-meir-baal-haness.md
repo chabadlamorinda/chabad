@@ -2,7 +2,7 @@
 title: רבי מאיר בעל הנס: תפילה על אבדה וצדקה בזכותו
 description: מי היה רבי מאיר בעל הנס? למדו את המנהג לתת צדקה ולומר "אלוקי דמאיר ענני" על אבדה או בעת צרה.
 category: Jewish ideas
-related: returning-lost-items, pushka, tzedakah, tehillim, talmud
+related: returning-lost-items, tiberias-and-the-galilee, pushka, tzedakah, tehillim, talmud
 local: שימו קופת צדקה בבית ושאלו את הרב כל דבר. התקשרו 925-384-7242 או ראו /help/talk-to-the-rabbi.
 ---
 רבי מאיר בעל הנס ("אדון הניסים") היה חכם גדול של התלמוד. המנהג הוא שכשמאבדים משהו או נקלעים לרגע קשה, נותנים צדקה בזכותו וקוראים שלוש פעמים: "אלוקי דמאיר ענני!"

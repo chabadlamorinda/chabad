@@ -2,7 +2,7 @@
 title: Еврейские студенты колледжей Сент-Мэрис и Диабло-Вэлли: шабатние ужины и праздники
 description: Еврейские студенты колледжа Сент-Мэрис в Мораге и колледжа Диабло-Вэлли в Плезант-Хилле: шабатние ужины, праздники и раввин рядом в Лафайетте.
 category: Lamorinda
-related: jewish-college-students, menorah-in-an-apartment-or-condo, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
+related: jewish-college-students, exam-stress-jewish-wisdom, menorah-in-an-apartment-or-condo, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
 local: Студенты, записывайтесь на шабатний ужин на chabadoflamorinda.com/forms/shabbat-meal или звоните 925-384-7242.
 ---
 Учитесь в **Saint Mary's College of California** в Мораге или в **Diablo Valley College** в Плезант-Хилле и думаете, где найти Шабат, праздничную трапезу или просто еврейскую компанию? Хабад Ламоринды по адресу 3477 Golden Gate Way в Лафайетте - ваш еврейский дом вдали от дома. Еврейским студентам всегда рады на шабатнем ужине и в праздники. Без членства, без платы за участие и без всякой подготовки.

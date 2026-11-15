@@ -2,7 +2,7 @@
 title: שאלות על מזוזה: שכירות, משרדים, מעונות ומעבר דירה
 description: האם צריך מזוזה בדירה שכורה? ומה לגבי משרד, מעונות סטודנטים או מעבר דירה? תשובות ברורות לפי מנהג חב"ד ואל מי פונים בלמורינדה.
 category: Jewish home
-related: mezuzah, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students
+related: mezuzah, first-apartment-jewish-home, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students
 local: צריכים מזוזה או רוצים לבדוק את שלכם? התקשרו, שלחו הודעה או וואטסאפ לרב לבקובסקי 925-384-7242.
 ---
 כן, גם שוכרים קובעים מזוזה: בחוץ לארץ החיוב מתחיל אחרי 30 יום בבית שכור, אבל מנהג רווח בחב"ד לקבוע מיד. גם חדר במעונות שבו ישנים וחיים צריך מזוזה, ולמשרדים ולעסקים יש דינים משלהם, ולכן שאלו את הרב על המקום שלכם.

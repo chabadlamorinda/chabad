@@ -2,7 +2,7 @@
 title: Who Sits Shiva? Who Is a Mourner in Jewish Law
 description: Who sits shiva? The seven relatives, half siblings, grandchildren, in-laws, stepfamily, minors and who says Kaddish. Ask the Rabbi in Lafayette.
 category: Mourning & remembrance
-related: shiva, kriah, blended-families, kaddish, comforting-mourners
+related: shiva, mourning-a-grandparent, kriah, blended-families, kaddish, comforting-mourners
 local: Not sure whether you are a mourner? Call Rabbi Yisroel Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 In Jewish law, seven relatives sit shiva: a father, a mother, a husband or wife, a son, a daughter, a brother and a sister. Half siblings count too. Grandchildren, in-laws and stepfamily are not obligated, but there are meaningful ways for them to take part.

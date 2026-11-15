@@ -2,7 +2,7 @@
 title: מדריך לטייל היהודי בגבעות האיסט ביי: ברכות, בריונס והר דיאבלו
 description: איזו ברכה אומרים על הר, קשת בענן או רעם? מדריך לטייל היהודי בגבעות האיסט ביי, עם מזמור קד ורעיונות לשבילים.
 category: Lamorinda
-related: blessings-on-nature, barchi-nafshi, blessing-on-blossoming-trees, bal-tashchit, jewish-health-and-body
+related: blessings-on-nature, kosher-grilling, barchi-nafshi, blessing-on-blossoming-trees, bal-tashchit, jewish-health-and-body
 local: מטיילים עם המשפחה או חברים? התקשרו לרב לבקובסקי 925-384-7242 ללמוד את הברכות, או לשאול על טיול.
 ---
 כשמטייל יהודי רואה הרים, גבעות או נוף עצום ומרהיב שלא ראה זה שלושים יום, הברכה היא "עושה מעשה בראשית". ב-Chabad.org מפרטים גם ברכות על רעמים וברקים, על קשת ועל אילנות פורחים, כך שטיול בגבעות יכול להתמלא בתפילה.

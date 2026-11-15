@@ -2,7 +2,7 @@
 title: שמיטה: מהי שנת השמיטה? הסבר פשוט
 description: מהי שמיטה? כל שנה שביעית ארץ ישראל נחה: בלי עבודת אדמה, שמיטת חובות ולקח של אמון. מתי השמיטה הבאה? קראו.
 category: Jewish ideas
-related: israel-and-the-jewish-people, shabbat, bitachon, tzedakah, torah
+related: israel-and-the-jewish-people, israeli-produce-terumot-maasrot, shabbat, bitachon, tzedakah, torah
 local: שאלות על שמיטה או על אמון בזמנים קשים? התקשרו לרב לבקובסקי 925-384-7242.
 ---
 שמיטה (שמיטה) היא שנת השמיטה: כל שנה שביעית ארץ ישראל נחה מעבודת האדמה, והלוואות אישיות נשמטות. לפי חישוב Chabad.org השמיטה הבאה היא שנת 5789, מ-20 בספטמבר 2028 עד 9 בספטמבר 2029.

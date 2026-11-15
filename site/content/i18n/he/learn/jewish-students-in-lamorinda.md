@@ -2,7 +2,7 @@
 title: סטודנטים יהודים ב-Saint Mary's College וב-Diablo Valley College: סעודות שבת וחגים
 description: סטודנטים יהודים ב-Saint Mary's College במוראגה וב-Diablo Valley College בפלזנט היל: סעודות שבת, חגים ורב קרוב בלאפייט.
 category: Lamorinda
-related: jewish-college-students, menorah-in-an-apartment-or-condo, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
+related: jewish-college-students, exam-stress-jewish-wisdom, menorah-in-an-apartment-or-condo, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
 local: סטודנטים, הירשמו לסעודת שבת ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---
 לומדים ב-**Saint Mary's College of California** במוראגה או ב-**Diablo Valley College** בפלזנט היל, ותוהים איפה למצוא שבת, סעודת חג או סתם פנים יהודיות? חב״ד למורינדה, ב-3477 Golden Gate Way בלאפייט, הוא הבית היהודי שלכם הרחק מהבית. סטודנטים יהודים תמיד מוזמנים לסעודת שבת ולחגים. בלי דמי חבר, בלי עלות להשתייכות ובלי צורך ברקע.

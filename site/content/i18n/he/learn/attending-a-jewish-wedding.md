@@ -2,7 +2,7 @@
 title: אורחים בחתונה יהודית: מדריך לאורח
 description: הוזמנתם לחתונה יהודית? מה קורה מהבדעקן ועד שבירת הכוס, מה ללבוש, מה להביא, מתי להגיע ומה פירוש "מזל טוב".
 category: Life cycle
-related: jewish-wedding, attending-a-bris, gifts-in-multiples-of-18, jewish-wedding-customs, sheva-brachot, ketubah, jewish-gift-ideas
+related: jewish-wedding, rejoicing-with-the-bride-and-groom, yichud, bedeken, attending-a-bris, gifts-in-multiples-of-18, jewish-wedding-customs, sheva-brachot, ketubah, jewish-gift-ideas
 local: הוזמנתם לחתונה ולא בטוחים למה לצפות? הרב ישראל לבקובסקי ישמח לענות על כל שאלה, לאורחים מלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 ההזמנה הגיעה, ואתם נרגשים, ואולי קצת לא בטוחים. לא צריך לדעת דבר כדי ליהנות מחתונה יהודית; השמחה סוחפת את כולם. אבל כשיודעים מה עומד לקרות, זה מתוק עוד יותר.

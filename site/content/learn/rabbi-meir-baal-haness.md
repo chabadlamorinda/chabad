@@ -2,7 +2,7 @@
 title: Rabbi Meir Baal Haness: Prayer for Lost Items and Charity in His Merit
 description: Who was Rabbi Meir Baal Haness? Learn the Jewish custom of giving charity and praying "G-d of Meir, answer me" for lost items or hard times.
 category: Jewish ideas
-related: returning-lost-items, pushka, tzedakah, tehillim, talmud
+related: returning-lost-items, tiberias-and-the-galilee, pushka, tzedakah, tehillim, talmud
 local: Keep a pushka at home and ask the Rabbi anything. Call 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 Rabbi Meir Baal Haness ("Master of Miracles") was a great sage of the Talmud. The custom is that when you lose something or face a hard moment, you give charity in his merit and call out three times, "G-d of Meir, answer me!"

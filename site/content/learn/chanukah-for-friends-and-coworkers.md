@@ -2,7 +2,7 @@
 title: Chanukah Explained for Friends, Neighbors, Teachers and Coworkers
 description: Chanukah in two minutes for friends, neighbors, teachers and coworkers: what it is, how to greet someone, kind gifts and how to include a Jewish colleague.
 category: Shabbat & holidays
-related: holiday-greetings, chanukah-food-gifts-for-neighbors, presenting-a-jewish-holiday-in-class, chanukah-at-work-and-college, chanukah-story, chanukah-menorah
+related: holiday-greetings, what-to-write-in-a-chanukah-card, chanukah-food-gifts-for-neighbors, presenting-a-jewish-holiday-in-class, chanukah-at-work-and-college, chanukah-story, chanukah-menorah
 local: Invite a friend to Chanukah with us: call Rabbi Labkowski at 925-384-7242 or see /events.
 ---
 Chanukah is the Jewish eight-day Festival of Lights, which remembers a miracle in the Temple in Jerusalem more than 2,000 years ago, when one day's worth of pure oil burned for eight days. Each night Jewish families light one more candle on a menorah, until eight burn on the last night.

@@ -2,7 +2,7 @@
 title: Learning Torah in Memory of a Loved One
 description: How studying Mishnah, giving tzedakah and doing mitzvot in a loved one's name uplifts their soul. A simple guide for the shiva, sheloshim and yahrzeit.
 category: Mourning & remembrance
-related: yahrzeit, mishnah, kaddish, yizkor, tzedakah
+related: yahrzeit, giving-in-someones-honor, saying-kaddish-for-someone-else, mishnah, kaddish, yizkor, tzedakah
 local: We can help you choose what to learn for your loved one. Call Rabbi Labkowski at 925-384-7242, or see /forms/yizkor.
 ---
 Jewish tradition teaches that Torah learning, tzedakah and good deeds done in a loved one's name bring merit to their soul. The most common custom is to study Mishnah, because the Hebrew word Mishnah (מִשְׁנָה) is made of the same letters as neshamah (נְשָׁמָה), "soul."

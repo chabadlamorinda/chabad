@@ -2,7 +2,7 @@
 title: Shmita: What Is the Sabbatical Year? Explained Simply
 description: What is shmita? Every seventh year the Land of Israel rests: no farming, a release of debts, and a lesson of trust. When is the next shmita? Read on.
 category: Jewish ideas
-related: israel-and-the-jewish-people, shabbat, bitachon, tzedakah, torah
+related: israel-and-the-jewish-people, israeli-produce-terumot-maasrot, shabbat, bitachon, tzedakah, torah
 local: Questions about shmita or trust in hard times? Call Rabbi Labkowski at 925-384-7242.
 ---
 Shmita (שמיטה, also spelled shemitah) is the Sabbatical year: every seventh year the Land of Israel rests from farming, and personal loans are released. Chabad.org counts the next shmita as the year 5789, from September 20, 2028 to September 9, 2029.

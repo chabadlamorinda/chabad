@@ -2,7 +2,7 @@
 title: What to Bring to a Shiva House: Food, Kindness and Presence, Not Flowers
 description: What to bring to a shiva house? Kosher food, a memory, your presence. Why Jews usually skip flowers, and how to give in memory.
 category: Mourning & remembrance
-related: comforting-mourners, shiva, writing-a-condolence-note, setting-up-a-shiva-house, kaddish
+related: comforting-mourners, cooking-for-someone-in-need, seudat-havraah, shiva, writing-a-condolence-note, setting-up-a-shiva-house, kaddish
 local: Not sure what a family needs? Call Rabbi Labkowski at 925-384-7242 and we will help you help them. To give in memory, see /donate.
 ---
 At a shiva house, you are not expected to bring anything, because your presence matters most. If you want to bring something, bring kosher food, sent or delivered in coordination with whoever is organizing meals, or a photograph or memory of the person who died. Flowers are not part of the traditional Jewish custom; many families prefer a donation to charity in memory of their loved one.

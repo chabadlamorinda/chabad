@@ -2,7 +2,7 @@
 title: חנוכה מוסברת לחברים, שכנים, מורים ועמיתים לעבודה
 description: חנוכה בשתי דקות לחברים, שכנים, מורים ועמיתים: מהי, איך מברכים, רעיונות למתנות נעימות ואיך לכלול עמית יהודי.
 category: Shabbat & holidays
-related: holiday-greetings, chanukah-food-gifts-for-neighbors, presenting-a-jewish-holiday-in-class, chanukah-at-work-and-college, chanukah-story, chanukah-menorah
+related: holiday-greetings, what-to-write-in-a-chanukah-card, chanukah-food-gifts-for-neighbors, presenting-a-jewish-holiday-in-class, chanukah-at-work-and-college, chanukah-story, chanukah-menorah
 local: הזמינו חבר לחנוכה אצלנו: התקשרו לרב לבקובסקי 925-384-7242 או ראו /events.
 ---
 חנוכה הוא חג האורים היהודי בן שמונת הימים, הזוכר נס במקדש בירושלים לפני יותר מ-2,000 שנה, כשפך שמן טהור לכמות של יום אחד דלק שמונה ימים. בכל לילה משפחות יהודיות מדליקות נר נוסף בחנוכייה, עד שבלילה האחרון דולקים שמונה.

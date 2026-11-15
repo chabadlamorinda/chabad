@@ -2,7 +2,7 @@
 title: הוספיס והחלטות בסוף החיים: מדריך יהודי למשפחות
 description: ההשקפה היהודית על הוספיס, הקלת כאב, הוראת אי-החייאה ומזונות. מדוע להתקשר לרב מוקדם. תמיכה למשפחות בלפייט, מוראגה ואוריינדה.
 category: Mourning & remembrance
-related: when-a-loved-one-is-dying, caring-for-aging-parents, halachic-will, pikuach-nefesh, shabbat-in-the-hospital
+related: when-a-loved-one-is-dying, jewish-health-care-directive, caring-for-aging-parents, halachic-will, pikuach-nefesh, shabbat-in-the-hospital
 local: ניצבים מול החלטות קשות על מישהו יקר? התקשרו לרב ישראל לבקובסקי 925-384-7242 או היכנסו ל-/help/talk-to-the-rabbi, בכל שעה.
 ---
 היהדות מלמדת שכל רגע בחיים יקר, ושאדם גוסס ראוי לנחמה, לטיפול ולחברה. משפחות רבות באיסט ביי עומדות מול הוספיס והחלטות בסוף החיים, ולהלכה יש עקרונות ברורים, אך מכיוון שכל מקרה שונה, אנא התקשרו לרב מוקדם, לפני שחותמים על טופס.

@@ -2,7 +2,7 @@
 title: Losing Your Job: Jewish Strength for a Hard Season
 description: Lost your job or been laid off? Jewish wisdom on worth, trust and a daily plan, and where to find support in Lafayette, Moraga and Orinda.
 category: Jewish home
-related: bitachon, parnassah-work-and-livelihood, money-worries, new-job-jewish-blessing, mental-health-jewish-view
+related: bitachon, helping-someone-become-self-sufficient, parnassah-work-and-livelihood, money-worries, new-job-jewish-blessing, mental-health-jewish-view
 local: If you are between jobs, call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi. Talking is private, and it helps.
 ---
 Losing a job is painful, but Judaism teaches that your worth was never your job title: you are a soul created in G-d's image, and the same G-d who provides for every living thing has not forgotten you. The Jewish response to unemployment is to make a real effort, to trust that the outcome is in G-d's hands, and to lean on your community.

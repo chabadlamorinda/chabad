@@ -2,7 +2,7 @@
 title: בר מצווה בישראל: תכנון בר או בת מצווה בכותל המערבי
 description: איך מתכננים בר או בת מצווה בישראל: קריאה בתורה ביום שני או חמישי בכותל, תפילין, טיול משפחתי וחגיגה בבית.
 category: Life cycle
-related: western-wall, bar-bat-mitzvah-timeline, first-trip-to-israel, bar-bat-mitzvah-in-lamorinda, tefillin
+related: western-wall, israel-trip-with-kids, bar-bat-mitzvah-timeline, first-trip-to-israel, bar-bat-mitzvah-in-lamorinda, tefillin
 local: חולמים על ישראל לבר או בת המצווה של ילדכם? התחילו ב-/programs/bar-bat-mitzvah או התקשרו 925-384-7242.
 ---
 משפחות רבות חוגגות בר מצווה בכותל המערבי בירושלים, בדרך כלל בקריאה בתורה ביום חול, בשני או בחמישי בבוקר, ואחריה טיול משפחתי. תכננו כשנה מראש, הזמינו מקום בכותל מראש והמשיכו להתכונן עם הרב בבית.

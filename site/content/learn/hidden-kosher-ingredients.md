@@ -2,7 +2,7 @@
 title: Is It Kosher? Gelatin, Rennet, Carmine and Other Hidden Ingredients
 description: Is gelatin kosher? Which hidden ingredients (gelatin, carmine, glycerin, natural flavors) need a reliable kosher symbol, and who to ask in Lamorinda.
 category: Kosher
-related: kosher-symbols, kosher-certification, kosher-cheese, pareve, kosher-wine
+related: kosher-symbols, kosher-shopping-at-the-supermarket, kosher-coffee-and-tea, kosher-certification, kosher-cheese, pareve, kosher-wine
 local: Not sure about a product? Send us a photo of the label or call Rabbi Labkowski at 925-384-7242.
 ---
 Gelatin is not kosher unless it carries a reliable kosher symbol, because most gelatin is made from the skin and bones of non-kosher animals. The same is true of other hidden ingredients, such as carmine (a red dye made from insects), glycerin, rennet and "natural flavors": the label alone cannot tell you, so look for a trusted [kosher symbol](/learn/kosher-symbols).

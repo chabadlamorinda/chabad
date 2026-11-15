@@ -2,7 +2,7 @@
 title: שבת במלון: מדריך מעשי למטיילים יהודים
 description: איך שומרים שבת במלון: כרטיסי מפתח, מעליות, חיישנים, נרות וסעודות. רשימה למטיילים מחב"ד לאמורינדה.
 category: Shabbat & holidays
-related: traveling-on-shabbat, kosher-when-traveling, shabbat-alone, electricity-on-shabbat, shabbat-candles
+related: traveling-on-shabbat, kosher-in-a-rental-kitchen, kosher-when-traveling, shabbat-alone, electricity-on-shabbat, shabbat-candles
 local: מתכננים נסיעה? התקשרו לרב לבקובסקי, 925-384-7242, לפני שאתם יוצאים.
 ---
 אפשר בהחלט לשמור שבת במלון עם קצת הכנה. עדכנו את המלון מראש, בקשו חדר עם מפתח רגיל, הביאו אוכל ונרות, ושאלו את הרב על הפרטים הרלוונטיים לכם.

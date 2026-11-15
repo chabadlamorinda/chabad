@@ -2,7 +2,7 @@
 title: מהי גימטריה? המספרים החבויים במילים העבריות
 description: מהי גימטריה? איך אותיות עבריות נושאות מספרים, למה 18 הוא חיים, ודוגמאות מפורסמות מהמזוזה ועד הסביבון. למדו עברית איתנו.
 category: Prayer & Torah
-related: hebrew-alphabet, chai-symbol, kabbalah, hebrew-reading-for-adults, mezuzah
+related: hebrew-alphabet, chanukah-and-the-number-eight, chai-symbol, kabbalah, hebrew-reading-for-adults, mezuzah
 local: רוצים לקרוא עברית ולראות את המספרים בעצמכם? הצטרפו לשיעור העברית (/programs/adult-education) או התקשרו 925-384-7242.
 ---
 גימטריה היא הדרך היהודית למצוא משמעות בערך המספרי של אותיות ומילים בעברית. בעברית כל אות היא גם מספר, ולכן לכל מילה יש סכום, ולמילים בעלות סכום שווה מלמדים שיש ביניהן קשר נסתר.

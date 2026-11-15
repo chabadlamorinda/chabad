@@ -2,7 +2,7 @@
 title: מילים וביטויים ביידיש: 30 מילים יומיומיות ומה הן אומרות
 description: מילים וביטויים נפוצים ביידיש כמו מענטש, קווטש, נחת וגוט שבת: מה הם אומרים ומאין הגיעה היידיש. בואו ללמוד איתנו.
 category: Jewish ideas
-related: hebrew-phrases, jewish-languages, holiday-greetings, russian-speaking-jews-in-lamorinda, jewish-last-names
+related: hebrew-phrases, chanukah-glossary, jewish-languages, holiday-greetings, russian-speaking-jews-in-lamorinda, jewish-last-names
 local: בואו לומר "גוט שבת" פנים אל פנים. התקשרו 925-384-7242 ושמעו מה מתוכנן בלפאייט, מוראגה ואורינדה.
 ---
 יידיש היא השפה היומיומית שיהודי אשכנז פיתחו במשך אלף שנה, תערובת של מילים גרמניות עם מילים עבריות, ארמיות וסלאביות, הכתובה באותיות עבריות. מילים כמו מענטש, קווטש וחוצפה הן יידיש, וכך גם הברכות החמות "גוט שבת" ו"מזל טוב".

@@ -2,7 +2,7 @@
 title: Слова и выражения на идише: 30 повседневных слов и что они значат
 description: Распространённые слова на идише: менш, квечь, нахес, гут Шабес. Что они значат и откуда взялся идиш. Учите их вместе с нами.
 category: Jewish ideas
-related: hebrew-phrases, jewish-languages, holiday-greetings, russian-speaking-jews-in-lamorinda, jewish-last-names
+related: hebrew-phrases, chanukah-glossary, jewish-languages, holiday-greetings, russian-speaking-jews-in-lamorinda, jewish-last-names
 local: Приходите и скажите "гут Шабес" вживую. Позвоните 925-384-7242 и узнайте, что планируется в Лафайете, Мораге и Ориндах.
 ---
 Идиш — это повседневный язык, который евреи-ашкеназы создавали тысячу лет: смесь германских слов со словами из иврита, арамейского и славянских языков, записанная еврейскими буквами. Слова "менш", "квечь" и "хуцпа" — из идиша, как и тёплые приветствия "гут Шабес" и "мазл тов".

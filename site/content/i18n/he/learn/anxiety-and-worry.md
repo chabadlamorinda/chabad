@@ -2,7 +2,7 @@
 title: חרדה ודאגה: חכמה יהודית למציאת שקט
 description: מה היהדות מלמדת על חרדה ודאגה? ביטחון בה', צעדים מעשיים, תהילים ושבת, יחד עם עזרת רופא או יועץ.
 category: Jewish ideas
-related: bitachon, mental-health-jewish-view, psalm-121, shabbat, being-content
+related: bitachon, exam-stress-jewish-wisdom, mental-health-jewish-view, psalm-121, shabbat, being-content
 local: נושאים משהו כבד? דברו בפרטיות עם הרב או הרבנית, 925-384-7242, ב-/help/talk-to-the-rabbi.
 ---
 התשובה של היהדות לדאגה היא ביטחון, אמון שקט שה' מנהל את העולם, טוב ואכפת לו ממך, בעוד שאתה עושה כל מה שאפשר באופן סביר. חב"ד מלמדת ששלווה נפשית נבנית צעד אחר צעד, ושהיא הולכת יחד עם עזרת רופאים ויועצים, לעולם לא במקומם.

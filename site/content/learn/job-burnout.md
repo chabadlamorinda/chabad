@@ -2,7 +2,7 @@
 title: Job Burnout: Jewish Wisdom for When Work Takes Everything
 description: Burned out at work? Jewish wisdom on rest, Shabbat and trust, so you can be busy without being consumed. For Lafayette, Moraga and Orinda families.
 category: Jewish home
-related: shabbat-for-working-parents, parnassah-work-and-livelihood, mental-health-jewish-view, modeh-ani, young-professionals-in-lamorinda
+related: shabbat-for-working-parents, returning-to-work-after-shiva, parnassah-work-and-livelihood, mental-health-jewish-view, modeh-ani, young-professionals-in-lamorinda
 local: Feeling stretched thin? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi. A private talk can lighten the load.
 ---
 Judaism teaches that work is holy but never meant to consume you: be "occupied" with your work but not "preoccupied" by it. Burnout, the exhaustion that comes when work drains you in body, mind and spirit, is a sign to rest, reset and, where possible, change something.

@@ -2,7 +2,7 @@
 title: Что значит «избранный народ» в иудаизме?
 description: Что значит «избранный народ» в иудаизме: не привилегия, а миссия и ответственность, «царство коэнов», несущее свет миру.
 category: Jewish ideas
-related: why-be-jewish, noahide-laws, who-is-a-jew, israel-and-the-jewish-people, ahavat-yisrael
+related: why-be-jewish, is-judaism-a-religion-or-a-nation, noahide-laws, who-is-a-jew, israel-and-the-jewish-people, ahavat-yisrael
 local: Сделайте один шаг к своей еврейской миссии. Позвоните раввину Лабковскому: 925-384-7242 или напишите через /help/talk-to-the-rabbi.
 ---
 В иудаизме «избранный народ» означает, что еврейский народ избран для задачи, а не для особых привилегий: приносить свет Б-га в мир через Тору и мицвот. Хабад.орг учит, что избрание это ответственность, и оно требует от нас больше, а не меньше.

@@ -2,7 +2,7 @@
 title: Шаббат в отеле: практическое руководство для путешественников
 description: Как соблюдать Шаббат в отеле: ключ-карты, лифты, датчики, свечи и еда. Памятка путешественнику от Хабада Ламоринды.
 category: Shabbat & holidays
-related: traveling-on-shabbat, kosher-when-traveling, shabbat-alone, electricity-on-shabbat, shabbat-candles
+related: traveling-on-shabbat, kosher-in-a-rental-kitchen, kosher-when-traveling, shabbat-alone, electricity-on-shabbat, shabbat-candles
 local: Планируете поездку? Позвоните раввину Лабковскому: 925-384-7242 до отъезда.
 ---
 Соблюдать Шаббат в отеле вполне возможно при небольшой подготовке. Заранее сообщите отелю о своих потребностях, попросите номер с обычным ключом, возьмите еду и свечи и спросите раввина о подробностях, которые относятся к вам.

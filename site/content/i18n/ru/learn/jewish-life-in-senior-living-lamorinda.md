@@ -2,7 +2,7 @@
 title: Jewish Life for a Parent in Senior Living Near Lafayette, Moraga and Orinda
 description: Как принести Шаббат, праздники, мезузу и знакомые песни пожилому еврейскому родителю в доме престарелых рядом с Ламориндой и как позаботиться о себе.
 category: Lamorinda
-related: jewish-seniors-in-lamorinda, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
+related: jewish-seniors-in-lamorinda, visiting-someone-in-a-nursing-home, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
 local: Хотите, чтобы раввин навестил вашего родителя, или нужен собеседник вам? Звоните раввину Лабковскому: 925-384-7242 или пишите через /help/talk-to-the-rabbi.
 ---
 Сохранить еврейскую жизнь для родителя в доме престарелых можно, принося в его комнату небольшие знакомые частицы Шаббата и праздников: благословение над свечами, бокал для кидуша, халу, мезузу на двери и визит человека, который споёт старые мелодии. Семьям Лафайетта, Морага и Оринды раввин и ребецин будут рады вашему звонку, и ни к чему не нужно предварительно «присоединяться».

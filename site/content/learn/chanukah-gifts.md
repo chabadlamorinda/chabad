@@ -2,7 +2,7 @@
 title: Chanukah Gifts: Gelt, Presents and Giving the Jewish Way
 description: Do Jews give gifts on Chanukah? Giving presents is not a mitzvah, but gelt is a long-standing custom. Meaningful gift ideas and how to give.
 category: Shabbat & holidays
-related: chanukah-gelt, jewish-gift-ideas, chanukah-for-kids, tzedakah, pushka
+related: chanukah-gelt, what-to-write-in-a-chanukah-card, jewish-gift-ideas, chanukah-for-kids, tzedakah, pushka
 local: Bring the kids to Chanukah with Chabad of Lamorinda: call 925-384-7242 or see /events.
 ---
 Giving gifts is not a required mitzvah of Chanukah, but giving gelt, a little money, is a long-standing Jewish custom, especially as a reward for Torah study. Many families also give presents; the Jewish way is to keep them meaningful and to include giving to others.

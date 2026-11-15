@@ -2,7 +2,7 @@
 title: Job Burnout: Jewish Wisdom for When Work Takes Everything
 description: Выгорели на работе? Мудрость иудаизма об отдыхе, Шаббате и доверии: быть занятым, но не поглощённым. Для семей Лафайетта, Мораги и Ориндa.
 category: Jewish home
-related: shabbat-for-working-parents, parnassah-work-and-livelihood, mental-health-jewish-view, modeh-ani, young-professionals-in-lamorinda
+related: shabbat-for-working-parents, returning-to-work-after-shiva, parnassah-work-and-livelihood, mental-health-jewish-view, modeh-ani, young-professionals-in-lamorinda
 local: Чувствуете, что выбились из сил? Позвоните раву Лабковскому 925-384-7242 или напишите через /help/talk-to-the-rabbi. Личный разговор может облегчить ношу.
 ---
 Иудаизм учит, что работа священна, но не должна поглощать вас: будьте "заняты" работой, но не "поглощены" ею. Выгорание, истощение, когда работа выматывает тело, ум и душу, сигнал отдохнуть, перезагрузиться и, если возможно, что-то изменить.

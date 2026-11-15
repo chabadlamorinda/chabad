@@ -2,7 +2,7 @@
 title: מתנות חנוכה: דמי חנוכה, מתנות ונתינה בדרך היהודית
 description: האם יהודים נותנים מתנות בחנוכה? מתנות אינן מצווה, אבל דמי חנוכה הם מנהג ותיק. רעיונות למתנות משמעותיות ואיך נותנים.
 category: Shabbat & holidays
-related: chanukah-gelt, jewish-gift-ideas, chanukah-for-kids, tzedakah, pushka
+related: chanukah-gelt, what-to-write-in-a-chanukah-card, jewish-gift-ideas, chanukah-for-kids, tzedakah, pushka
 local: הביאו את הילדים לחנוכה עם חב"ד למורינדה: התקשרו 925-384-7242 או ראו /events.
 ---
 נתינת מתנות אינה מצווה של חנוכה, אבל נתינת דמי חנוכה (געלט), מעט כסף, היא מנהג יהודי ותיק, במיוחד כפרס על לימוד תורה. משפחות רבות נותנות גם מתנות; הדרך היהודית היא לשמור שיהיו משמעותיות ולכלול נתינה לאחרים.

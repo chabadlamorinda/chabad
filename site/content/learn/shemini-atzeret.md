@@ -2,7 +2,7 @@
 title: Shemini Atzeret: The Eighth Day, Yizkor and the Prayer for Rain
 description: What Shemini Atzeret is, why it comes after Sukkot, the prayer for rain, Yizkor, and the Chabad custom of eating in the sukkah without a blessing.
 category: Shabbat & holidays
-related: simchat-torah-for-beginners, prayers-for-rain, yizkor, sukkah, hoshana-rabbah
+related: simchat-torah-for-beginners, chanukah-and-the-number-eight, prayers-for-rain, yizkor, sukkah, hoshana-rabbah
 local: Join us for Yizkor and the prayer for rain on Shemini Atzeret; everyone from Lafayette, Moraga and Orinda is welcome. Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
 Shemini Atzeret means "the eighth day of assembly." It is a holiday of its own that comes right after the seven days of Sukkot. On it we pray for rain, recite Yizkor in memory of loved ones, and spend one more intimate day with G-d before the long winter begins.

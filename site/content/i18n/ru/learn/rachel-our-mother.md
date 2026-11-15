@@ -2,7 +2,7 @@
 title: Rachel Our Mother: The Matriarch Who Weeps for Her Children
 description: Кто такая Рахель в Торе? Её любовь к Яакову, доброта к Лее, погребение у дороги и почему говорят, что она плачет о своих детях.
 category: Prayer & Torah
-related: the-matriarchs, jacob-our-father, joseph-and-his-brothers, jeremiah, yahrzeit
+related: the-matriarchs, rachels-tomb, jacob-our-father, joseph-and-his-brothers, jeremiah, yahrzeit
 local: Изучайте историю из Торы вместе с нами. Позвоните раввину Лабковскому: 925-384-7242, чтобы узнать, что запланировано.
 ---
 Рахель одна из четырёх праматерей еврейского народа, любимая жена Яакова и мать Йосефа и Биньямина. Её помнят прежде всего как мать, которая плачет о своих детях и, по преданию, умоляет Б-га вернуть Его детей домой.

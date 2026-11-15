@@ -2,7 +2,7 @@
 title: יום כיפור קטן: "יום הכיפורים הקטן" החודשי
 description: יום כיפור קטן הוא היום שלפני ראש חודש, יום חודשי של תפילה, צדקה והתבוננות. הכירו את מנהגיו ונסו חשבון נפש של חמש דקות.
 category: Shabbat & holidays
-related: rosh-chodesh, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
+related: rosh-chodesh, fasting-on-your-wedding-day, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
 local: רוצים להתחיל הרגל חודשי של התבוננות? התקשרו לרב לבקובסקי 925-384-7242, או ראו /programs/adult-education.
 ---
 יום כיפור קטן (יוֹם כִּפּוּר קָטָן) הוא היום שלפני ראש חודש. לפי Chabad.org הוא מזכיר את קרבן החטאת שהוקרב בבית המקדש בראש חודש, והאדוקים ביותר מציינים אותו בתפילות נוספות, בצום ובצדקה.

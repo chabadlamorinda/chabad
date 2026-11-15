@@ -2,7 +2,7 @@
 title: Living With Chronic Illness: Jewish Strength for the Long Road
 description: How Judaism and the Rebbe's letters help when illness lasts: doctors, trust in G-d, joy, prayer, a Mi Sheberach name, and care for caregivers.
 category: Life cycle
-related: mi-sheberach, caregiver-support, bitachon, tehillim, bikur-cholim
+related: mi-sheberach, jewish-life-when-homebound, caregiver-support, bitachon, tehillim, bikur-cholim
 local: You do not have to carry this alone. Call Rabbi Labkowski at 925-384-7242 to talk, or add a name to the prayer list at /help/talk-to-the-rabbi.
 ---
 Judaism teaches that when illness lasts a long time, you hold two things together: you do everything the doctors advise, and you trust that G-d is with you and that your days still have purpose. The Rebbe's letters to people who were ill return again and again to these two ideas, with a third: keep going with joy, prayer and good deeds as best you can.

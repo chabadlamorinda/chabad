@@ -2,7 +2,7 @@
 title: Йом-Кипур катан: ежемесячный «малый Йом-Кипур»
 description: Йом-Кипур катан это день перед Рош-ходеш, ежемесячный день молитвы, цдаки и размышлений. Его обычаи и пятиминутная проверка себя.
 category: Shabbat & holidays
-related: rosh-chodesh, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
+related: rosh-chodesh, fasting-on-your-wedding-day, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
 local: Хотите начать ежемесячную привычку размышления? Позвоните раввину Лабковскому: 925-384-7242, или см. /programs/adult-education.
 ---
 Йом-Кипур катан (יוֹם כִּפּוּר קָטָן), «малый Йом-Кипур», это день перед Рош-ходеш, новомесячьем. По Chabad.org, он напоминает о жертве за грех, которую приносили в Храме в Рош-ходеш, и самые набожные отмечают его дополнительными молитвами, постом и цдакой.

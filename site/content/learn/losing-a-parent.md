@@ -2,7 +2,7 @@
 title: Losing a Parent: Jewish Wisdom and Comfort for Sons and Daughters
 description: What Jewish tradition offers when a mother or father dies: shiva, Kaddish, the year of mourning, honoring them after death, and where to turn for help.
 category: Mourning & remembrance
-related: year-of-mourning, kaddish, honoring-parents, shiva, yahrzeit
+related: year-of-mourning, mourning-a-grandparent, kaddish, honoring-parents, shiva, yahrzeit
 local: If your mother or father has died, call Rabbi Labkowski or the Rebbetzin at 925-384-7242, or write to us at /help/talk-to-the-rabbi. You do not have to carry this alone.
 ---
 When a mother or father dies, Jewish tradition asks the children to mourn for a full year: seven days of shiva, thirty days of sheloshim, and twelve months in all. Chabad.org explains that the extra time for a parent has nothing to do with how deep the love or the pain is. It is an extension of the mitzvah to honor the mother and father who gave us life.

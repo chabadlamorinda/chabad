@@ -2,7 +2,7 @@
 title: בר מצווה שנייה בגיל 83: חוגגים עוד שבעים שנה
 description: למה יש הנוהגים לחגוג בר מצווה שנייה בגיל 83, מה פירוש המנהג ואיך לציין אותו בעלייה לתורה, בקידוש ובחיק המשפחה. שאלו את הרב: 925-384-7242.
 category: Life cycle
-related: adult-bar-bat-mitzvah, jewish-seniors-in-lamorinda, jewish-birthday-customs, bar-mitzvah, aliyah
+related: adult-bar-bat-mitzvah, starting-jewish-practice-later-in-life, jewish-seniors-in-lamorinda, jewish-birthday-customs, bar-mitzvah, aliyah
 local: מגיעים לגיל 83, או מתכננים זאת להורה? התקשרו לרב לבקובסקי, 925-384-7242, ונתכנן יחד.
 ---
 בר מצווה שנייה בגיל 83 היא מנהג אהוב שבו מי שהיה בר מצווה בגיל 13 מציין שבעים שנה מאז, לרוב בעלייה לתורה ובקריאה חוזרת באותה פרשה. זה מנהג ולא חובה, ודרך יפה למשפחה לחגוג חיים שלמים.

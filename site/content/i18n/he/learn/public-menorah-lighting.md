@@ -2,7 +2,7 @@
 title: הדלקות חנוכייה פומביות: למה חנוכה יוצאת לככר העיר
 description: מהי הדלקת חנוכייה פומבית, למה חב"ד מדליקה חנוכיות ענק ולמה לצפות. הדלקה בלאפייט: יום ראשון 6 בדצמבר, 16:00, בחינם.
 category: Shabbat & holidays
-related: chanukah-in-lamorinda, light-up-lafayette, menorah-campaign-history, the-rebbe, mitzvah-tanks, chanukah-menorah, chanukah-story
+related: chanukah-in-lamorinda, menorah-at-your-business, light-up-lafayette, menorah-campaign-history, the-rebbe, mitzvah-tanks, chanukah-menorah, chanukah-story
 local: הדלקת החנוכייה הגדולה: יום ראשון, 6 בדצמבר, בשעה 16:00 בפארק לאפייט פלאזה, בחינם לכולם. הרשמה ב-/events/chanukah-grand-menorah-lighting-2026.
 ---
 הדלקת חנוכייה פומבית היא אירוע קהילתי שבו מדליקים בחוץ חנוכייה גדולה, עם ברכות ושירים, כדי שכולם יראו את האור. היא מגשימה את הרעיון של פרסום נס חנוכה, והיא פתוחה לכולם.

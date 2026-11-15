@@ -2,7 +2,7 @@
 title: Losing Your Job: Jewish Strength for a Hard Season
 description: איבדתם עבודה? חוכמה יהודית על ערך עצמי, ביטחון ותכנית יומית, ותמיכה בלפאייט, מוראגה ואורינדה.
 category: Jewish home
-related: bitachon, parnassah-work-and-livelihood, money-worries, new-job-jewish-blessing, mental-health-jewish-view
+related: bitachon, helping-someone-become-self-sufficient, parnassah-work-and-livelihood, money-worries, new-job-jewish-blessing, mental-health-jewish-view
 local: אם אתם בין עבודות, התקשרו לרב לבקובסקי 925-384-7242 או כתבו דרך /help/talk-to-the-rabbi. השיחה פרטית, וזה עוזר.
 ---
 פיטורים כואבים, אבל היהדות מלמדת שערכך לא נמדד בתואר שלך: אתה נשמה שנבראה בצלם ה', והקב"ה שמפרנס כל חי לא שכח אותך. התגובה היהודית לאבטלה היא להשקיע מאמץ אמיתי, לבטוח שהתוצאה בידי ה', ולהישען על הקהילה.

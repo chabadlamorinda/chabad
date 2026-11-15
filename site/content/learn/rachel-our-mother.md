@@ -2,7 +2,7 @@
 title: Rachel Our Mother: The Matriarch Who Weeps for Her Children
 description: Who was Rachel in the Torah? Her love story with Jacob, her kindness to Leah, her burial on the road, and why Jews say she weeps for her children.
 category: Prayer & Torah
-related: the-matriarchs, jacob-our-father, joseph-and-his-brothers, jeremiah, yahrzeit
+related: the-matriarchs, rachels-tomb, jacob-our-father, joseph-and-his-brothers, jeremiah, yahrzeit
 local: Read the Torah story together with us. Call Rabbi Labkowski at 925-384-7242 to hear what is planned for learning.
 ---
 Rachel is one of the four Matriarchs of the Jewish people, the beloved wife of Jacob and the mother of Joseph and Benjamin. She is remembered above all as the mother who weeps for her children, and as the one who, according to tradition, pleads with G-d to bring His children home.

@@ -2,7 +2,7 @@
 title: Job Burnout: Jewish Wisdom for When Work Takes Everything
 description: שחוקים בעבודה? חוכמה יהודית על מנוחה, שבת וביטחון, כדי להיות עסוקים בלי להיבלע. למשפחות בלפאייט, מוראגה ואורינדה.
 category: Jewish home
-related: shabbat-for-working-parents, parnassah-work-and-livelihood, mental-health-jewish-view, modeh-ani, young-professionals-in-lamorinda
+related: shabbat-for-working-parents, returning-to-work-after-shiva, parnassah-work-and-livelihood, mental-health-jewish-view, modeh-ani, young-professionals-in-lamorinda
 local: מרגישים מתוחים מדי? התקשרו לרב לבקובסקי 925-384-7242 או כתבו דרך /help/talk-to-the-rabbi. שיחה פרטית יכולה להקל.
 ---
 היהדות מלמדת שעבודה היא קדושה אך לא נועדה לבלוע אותך: היה "עסוק" בעבודה ולא "טרוד" בה. שחיקה, התשישות שבאה כשהעבודה מרוקנת גוף, נפש ורוח, היא סימן לנוח, להתאפס ואם אפשר לשנות משהו.

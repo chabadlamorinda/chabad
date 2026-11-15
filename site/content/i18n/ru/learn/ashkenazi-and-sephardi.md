@@ -2,7 +2,7 @@
 title: Ashkenazi and Sephardi: One Torah, Different Customs
 description: Что значит ашкеназ и сефард? Как еврейские общины выработали разные обычаи, от молитвы до пасхальных блюд, сохранив единую Тору.
 category: Jewish ideas
-related: jewish-customs-minhag, chanukah-foods-around-the-jewish-world, kitniyot, jewish-languages, jewish-last-names, israelis-in-lamorinda
+related: jewish-customs-minhag, jewish-communities-around-the-world, chanukah-foods-around-the-jewish-world, kitniyot, jewish-languages, jewish-last-names, israelis-in-lamorinda
 local: Из какой бы среды вы ни пришли, вам рады. Позвоните раввину Лабковскому: 925-384-7242 или приходите на событие: /events.
 ---
 Ашкеназские евреи это евреи, чьи предки жили в Центральной и Восточной Европе, а сефардские евреи это те, чьи предки жили в Испании, Португалии, Северной Африке и на Ближнем Востоке. Все они соблюдают одну Тору и один закон, но каждая община за века выработала свои обычаи, напевы молитв и блюда.

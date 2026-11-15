@@ -2,7 +2,7 @@
 title: Jewish Life for a Parent in Senior Living Near Lafayette, Moraga and Orinda
 description: איך להביא שבת, חגים, מזוזה ושירים מוכרים להורה יהודי בדיור מוגן או במוסד סיעודי ליד למורינדה, ואיך לדאוג גם לעצמכם.
 category: Lamorinda
-related: jewish-seniors-in-lamorinda, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
+related: jewish-seniors-in-lamorinda, visiting-someone-in-a-nursing-home, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
 local: רוצים ביקור להורה, או אוזן קשבת בשבילכם? התקשרו לרב לבקובסקי, 925-384-7242, או כתבו דרך /help/talk-to-the-rabbi.
 ---
 אפשר לשמור על חיים יהודיים להורה בדיור מוגן אם מביאים לחדרו חלקים קטנים ומוכרים של שבת וחגים: ברכה על נרות, גביע קידוש, חלה, מזוזה בדלת וביקור של מי ששר את הניגונים הישנים. למשפחות בלפיית, מוראגה ואורינדה, הרב והרבנית שמחים לשמוע מכם, ואין צורך להיות חבר בשום מקום קודם.

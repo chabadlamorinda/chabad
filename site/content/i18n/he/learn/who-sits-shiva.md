@@ -2,7 +2,7 @@
 title: מי יושב שבעה? מי נחשב אבל בהלכה
 description: מי יושב שבעה? שבעת הקרובים, אחים מצד אחד, נכדים, חמים, קרובים חורגים, קטנים ומי אומר קדיש. שאלו את הרב בלפייט.
 category: Mourning & remembrance
-related: shiva, kriah, blended-families, kaddish, comforting-mourners
+related: shiva, mourning-a-grandparent, kriah, blended-families, kaddish, comforting-mourners
 local: לא בטוחים אם אתם אבלים? התקשרו לרב ישראל לבקובסקי 925-384-7242 או היכנסו ל-/help/talk-to-the-rabbi.
 ---
 לפי ההלכה, שבעה קרובים יושבים שבעה: אב, אם, בעל או אישה, בן, בת, אח ואחות. גם אחים מצד אחד נחשבים. נכדים, חמים וקרובים חורגים אינם מחויבים, אך יש דרכים משמעותיות שבהן יוכלו להשתתף.

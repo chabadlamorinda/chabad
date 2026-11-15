@@ -2,7 +2,7 @@
 title: לבנות בית יהודי בלאפייט, מוראגה ואורינדה: מזוזות, מטבח כשר ועוד
 description: עזרה לבית יהודי בלאפייט, מוראגה ואורינדה: קביעה ובדיקה של מזוזות כשרות, עזרה במטבח כשר, נרות שבת וספרי יהדות.
 category: Lamorinda
-related: mezuzah, kosher-kitchen, shabbat-candles, jewish-home-library
+related: mezuzah, chanukah-decorations, kosher-kitchen, shabbat-candles, jewish-home-library
 local: בקשו מזוזה, בדיקת מזוזות או עזרה בקביעתן ב-chabadoflamorinda.com/forms/mezuzah-tefillin או התקשרו 925-384-7242.
 ---
 בין אם עברתם זה עתה לבית בלאפייט, לדירה באורינדה או לבית חדש במוראגה, בפלזנט היל או במרטינז, בית יהודי נבנה צעד אחר צעד. מזוזה על הדלת, נרות שבת ביום שישי, מאכל כשר או שניים, כמה ספרי יהדות טובים על המדף. חב״ד למורינדה, ממש בלאפייט, כאן כדי לעזור בכל צעד, בקצב שלכם. לא צריך דמי חבר.

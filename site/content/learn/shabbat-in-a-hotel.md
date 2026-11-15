@@ -2,7 +2,7 @@
 title: Shabbat in a Hotel: A Practical Guide for Jewish Travelers
 description: How to keep Shabbat in a hotel: key cards, elevators, sensors, candles and meals. A checklist for travelers from Chabad of Lamorinda.
 category: Shabbat & holidays
-related: traveling-on-shabbat, kosher-when-traveling, shabbat-alone, electricity-on-shabbat, shabbat-candles
+related: traveling-on-shabbat, kosher-in-a-rental-kitchen, kosher-when-traveling, shabbat-alone, electricity-on-shabbat, shabbat-candles
 local: Planning a trip? Call Rabbi Labkowski at 925-384-7242 before you go.
 ---
 Keeping Shabbat in a hotel is very doable with some preparation. Tell the hotel your needs ahead of time, ask for a room with a regular key, bring your food and candles, and ask your rabbi about the details that apply to you.

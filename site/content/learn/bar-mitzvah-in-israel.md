@@ -2,7 +2,7 @@
 title: Bar Mitzvah in Israel: Planning a Western Wall Bar or Bat Mitzvah
 description: How to plan a bar or bat mitzvah in Israel: a Monday or Thursday Torah reading at the Western Wall, tefillin, a family trip, and a celebration at home.
 category: Life cycle
-related: western-wall, bar-bat-mitzvah-timeline, first-trip-to-israel, bar-bat-mitzvah-in-lamorinda, tefillin
+related: western-wall, israel-trip-with-kids, bar-bat-mitzvah-timeline, first-trip-to-israel, bar-bat-mitzvah-in-lamorinda, tefillin
 local: Dreaming of Israel for your child's bar or bat mitzvah? Start at /programs/bar-bat-mitzvah or call 925-384-7242.
 ---
 Many families celebrate a bar mitzvah at the Western Wall in Jerusalem, usually with a weekday Torah reading on a Monday or Thursday morning, followed by a family trip. Plan about a year ahead, book the Wall in advance, and keep preparing with your Rabbi at home.

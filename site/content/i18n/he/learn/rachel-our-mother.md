@@ -2,7 +2,7 @@
 title: Rachel Our Mother: The Matriarch Who Weeps for Her Children
 description: מי הייתה רחל בתורה? סיפור האהבה שלה ליעקב, חסדה עם לאה, קבורתה בדרך, ולמה אומרים שהיא בוכה על בניה.
 category: Prayer & Torah
-related: the-matriarchs, jacob-our-father, joseph-and-his-brothers, jeremiah, yahrzeit
+related: the-matriarchs, rachels-tomb, jacob-our-father, joseph-and-his-brothers, jeremiah, yahrzeit
 local: בואו ללמוד איתנו את סיפור התורה. התקשרו לרב לבקובסקי, 925-384-7242, ושמעו מה מתוכנן ללימוד.
 ---
 רחל היא אחת מארבע האימהות של עם ישראל, אשת יעקב האהובה ואמם של יוסף ובנימין. היא נזכרת בעיקר כאם הבוכה על בניה, וכמי שלפי המסורת מפצירה בקב"ה להשיב את בניו הביתה.

@@ -2,7 +2,7 @@
 title: A Second Bar Mitzvah at 83: Celebrating Seventy More Years
 description: Why some Jews celebrate a second bar mitzvah at 83, what it means and how to mark it with an aliyah, a Kiddush and family. Ask the Rabbi: 925-384-7242.
 category: Life cycle
-related: adult-bar-bat-mitzvah, jewish-seniors-in-lamorinda, jewish-birthday-customs, bar-mitzvah, aliyah
+related: adult-bar-bat-mitzvah, starting-jewish-practice-later-in-life, jewish-seniors-in-lamorinda, jewish-birthday-customs, bar-mitzvah, aliyah
 local: Turning 83, or planning it for a parent? Call Rabbi Labkowski at 925-384-7242 and we will plan it together.
 ---
 A second bar mitzvah at 83 is a beloved custom in which a person who became bar mitzvah at 13 marks seventy years since, often by being called to the Torah and reading the same portion again. It is a custom, not an obligation, and a lovely way for a family to celebrate a full lifetime.

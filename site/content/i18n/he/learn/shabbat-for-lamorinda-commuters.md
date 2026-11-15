@@ -2,7 +2,7 @@
 title: שבת למי שנוסע לעבודה: איך מגיעים הביתה בזמן מסן פרנסיסקו ומאוקלנד
 description: איך מגיעים הביתה לפני שבת כשנוסעים ב-BART או בכביש 24 מסן פרנסיסקו או מאוקלנד ללפייט, מוראגה או אורינדה. תוכנית רגועה ליום שישי.
 category: Lamorinda
-related: shabbat-in-winter, telling-your-boss-you-keep-shabbat, shabbat-for-working-parents, preparing-for-shabbat, shabbat-candles, shabbat-times-in-lamorinda-explained
+related: shabbat-in-winter, jewish-wisdom-for-busy-professionals, telling-your-boss-you-keep-shabbat, shabbat-for-working-parents, preparing-for-shabbat, shabbat-candles, shabbat-times-in-lamorinda-explained
 local: נוסעים לעיר ורוצים שבת בבית? התקשרו לרב לבקובסקי 925-384-7242 לתכנן את ימי השישי, או בואו לקבלת שבת בלפייט.
 ---
 כדי להביא את השבת הביתה בזמן כשנוסעים לעבודה, בודקים מהו זמן הדלקת הנרות של השבוע, סופרים אחורה ויוצאים מהמשרד מוקדם מספיק כך שפקק או עיכוב ב-BART לא יפתיעו אתכם. מדליקים נרות כשמונה עשרה דקות לפני השקיעה, והדלקה אחרי השקיעה היא מאוחרת מדי, ולכן תוכנית שנעשית ביום חמישי היא שמשאירה את השבת רגועה.

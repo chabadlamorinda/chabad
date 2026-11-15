@@ -2,7 +2,7 @@
 title: "יוצאים ללימודים: איך עוזרים לנער מלמורינדה לקחת איתו את החיים היהודיים"
 description: איך משפחות בלפאייט, מוראגה ואורינדה מכינות נער לחיים יהודיים בקמפוס: שבת, בית חב"ד, החגים והבית. טלפון 925-384-7242.
 category: Lamorinda
-related: jewish-college-students, kosher-on-campus, jewish-teens-in-lamorinda, jewish-identity-for-teens, mezuzah
+related: jewish-college-students, graduation-jewish-blessing, kosher-on-campus, jewish-teens-in-lamorinda, jewish-identity-for-teens, mezuzah
 local: הבן או הבת בכיתה י"ב יוצאים ללימודים? התקשרו לרב לבקובסקי, 925-384-7242, לשיחת פרידה, או ראו /programs/kids-and-teens.
 ---
 כדי לעזור לנער יהודי לקחת איתו את החיים היהודיים לקולג', ארזו כמה דברים משמעותיים, מצאו את הקהילה היהודית ליד הקמפוס עוד לפני יום הכניסה, וסכמו איך תישארו קרובים לבית. בקמפוסים רבים יש בית חב"ד או הילל, וסטודנט שיודע היכן הם בשבוע הראשון מתחיל את השנה עם חברים ועם מקום לשבת.

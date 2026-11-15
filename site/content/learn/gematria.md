@@ -2,7 +2,7 @@
 title: What Is Gematria? The Numbers Hidden in Hebrew Words
 description: What is gematria? How Hebrew letters carry numbers, why 18 means life, and famous examples, from the mezuzah to the dreidel. Learn Hebrew with us.
 category: Prayer & Torah
-related: hebrew-alphabet, chai-symbol, kabbalah, hebrew-reading-for-adults, mezuzah
+related: hebrew-alphabet, chanukah-and-the-number-eight, chai-symbol, kabbalah, hebrew-reading-for-adults, mezuzah
 local: Want to read Hebrew and see these numbers for yourself? Join the Hebrew class (/programs/adult-education) or call 925-384-7242.
 ---
 Gematria (גִּימַטְרִיָּה) is the Jewish practice of finding meaning in the numerical value of Hebrew letters and words. In Hebrew each letter is also a number, so every word has a total, and words with equal totals are taught to share a hidden connection.

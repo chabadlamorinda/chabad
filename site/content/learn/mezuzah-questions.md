@@ -2,7 +2,7 @@
 title: Mezuzah Questions: Renting, Offices, Dorms and Moving Out
 description: Do I need a mezuzah if I rent? What about an office, a dorm, or when moving out? Clear answers on Chabad custom, and who to ask in Lamorinda.
 category: Jewish home
-related: mezuzah, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students
+related: mezuzah, first-apartment-jewish-home, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students
 local: Need a mezuzah, or want yours checked? Call, text or WhatsApp Rabbi Labkowski at 925-384-7242.
 ---
 Yes, renters put up a mezuzah too: outside Israel the obligation begins after 30 days in a rented home, but it is a widespread Chabad practice to put one up right away. Dorm rooms where you sleep and live need a mezuzah as well, while offices and businesses have their own rules, so ask the Rabbi about your specific space.

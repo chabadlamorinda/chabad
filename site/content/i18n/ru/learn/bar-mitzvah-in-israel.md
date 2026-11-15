@@ -2,7 +2,7 @@
 title: Бар-мицва в Израиле: планирование бар- или бат-мицвы у Западной стены
 description: Как спланировать бар- или бат-мицву в Израиле: чтение Торы в понедельник или четверг у Западной стены, тфилин, семейная поездка и праздник дома.
 category: Life cycle
-related: western-wall, bar-bat-mitzvah-timeline, first-trip-to-israel, bar-bat-mitzvah-in-lamorinda, tefillin
+related: western-wall, israel-trip-with-kids, bar-bat-mitzvah-timeline, first-trip-to-israel, bar-bat-mitzvah-in-lamorinda, tefillin
 local: Мечтаете об Израиле для бар- или бат-мицвы вашего ребёнка? Начните с /programs/bar-bat-mitzvah или позвоните 925-384-7242.
 ---
 Многие семьи отмечают бар-мицву у Западной стены в Иерусалиме, обычно с чтением Торы в будний день, в понедельник или четверг утром, а затем семейной поездкой. Планируйте примерно за год, бронируйте Стену заранее и продолжайте готовиться с раввином дома.

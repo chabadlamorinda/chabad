@@ -2,7 +2,7 @@
 title: הצלחה וכישלון: מבט יהודי על שניהם
 description: חוכמה יהודית על שאפתנות, נפילות והתחלה מחדש: איך להצליח בלי יהירות, להיכשל בלי ייאוש, ולמדוד חיים לפי מה שחשוב.
 category: Jewish ideas
-related: bitachon, teshuvah, humility, parnassah-work-and-livelihood, why-bad-things-happen
+related: bitachon, choosing-a-career-jewish-view, teshuvah, humility, parnassah-work-and-livelihood, why-bad-things-happen
 local: עוברים נפילה או עומדים בפני החלטה גדולה? הרב ישראל לבקובסקי ישמח לדבר עם כל אחד בלאפייט, מוראגה או אורינדה: 925-384-7242.
 ---
 אנחנו חיים בתרבות שחוגגת ניצחונות ומסתירה הפסדים. היהדות מתייחסת ברצינות לשניהם, ורואה את שניהם אחרת. הצלחה היא מתנה ואחריות. כישלון אינו סוף הסיפור; לעיתים קרובות שם הסיפור האמיתי מתחיל.

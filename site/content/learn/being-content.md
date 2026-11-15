@@ -2,7 +2,7 @@
 title: Being Happy With What You Have: The Jewish Secret of Contentment
 description: Who is rich? One who is happy with his portion. How Jewish wisdom and Chassidic teaching help us stop comparing, grow in gratitude and find contentment.
 category: Jewish ideas
-related: hakarat-hatov, jealousy-and-envy, simcha, jewish-view-on-wealth, technology-and-screens-jewish-view
+related: hakarat-hatov, jewish-view-of-humor, jealousy-and-envy, simcha, jewish-view-on-wealth, technology-and-screens-jewish-view
 local: Rabbi Yisroel and Rebbetzin Tzipora Labkowski are glad to talk about living a happier Jewish life with families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 We live in a place of great plenty, and many of us are still restless. There is always a bigger house, a better vacation, a child who got into a better school. Jewish wisdom has a short, famous answer to this restlessness, and it has not aged a day.

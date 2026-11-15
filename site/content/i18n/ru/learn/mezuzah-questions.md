@@ -2,7 +2,7 @@
 title: Вопросы о мезузе: аренда, офис, общежитие и переезд
 description: Нужна ли мезуза в съёмной квартире? А в офисе, общежитии или при переезде? Ясные ответы по обычаю Хабада и к кому обратиться в Ламоринде.
 category: Jewish home
-related: mezuzah, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students
+related: mezuzah, first-apartment-jewish-home, choosing-a-mezuzah, checking-mezuzahs-and-tefillin, moving-to-lamorinda, jewish-college-students
 local: Нужна мезуза или проверка вашей? Позвоните, напишите или отправьте сообщение в WhatsApp раввину Лабковскому: 925-384-7242.
 ---
 Да, арендаторы тоже вешают мезузу: за пределами Израиля обязанность начинается через 30 дней в съёмном жилье, но у Хабада широко принято вешать её сразу. Комната в общежитии, где вы живёте и спите, тоже нуждается в мезузе, а у офисов и бизнеса свои правила, поэтому спросите раввина о вашем помещении.

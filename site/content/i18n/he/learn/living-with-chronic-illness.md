@@ -2,7 +2,7 @@
 title: לחיות עם מחלה ממושכת: כוח יהודי לדרך הארוכה
 description: איך היהדות ומכתבי הרבי עוזרים כשהמחלה מתארכת: רופאים, בטחון בה', שמחה, תפילה, שם ב"מי שברך" ותמיכה במטפלים.
 category: Life cycle
-related: mi-sheberach, caregiver-support, bitachon, tehillim, bikur-cholim
+related: mi-sheberach, jewish-life-when-homebound, caregiver-support, bitachon, tehillim, bikur-cholim
 local: אין צורך לשאת זאת לבד. התקשרו לרב לבקובסקי 925-384-7242 לשיחה, או הוסיפו שם לרשימת התפילה ב-/help/talk-to-the-rabbi.
 ---
 היהדות מלמדת שכאשר מחלה נמשכת זמן רב, מחזיקים שני דברים יחד: עושים כל מה שהרופאים מורים, ובוטחים שה' איתנו ושלחיינו עדיין יש תכלית. מכתבי הרבי לחולים חוזרים שוב ושוב לשני רעיונות אלה, ולשלישי: להמשיך בשמחה, בתפילה ובמעשים טובים ככל האפשר.

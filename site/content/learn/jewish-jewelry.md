@@ -2,7 +2,7 @@
 title: Jewish Jewelry: Star of David, Chai and Hebrew Name Necklaces
 description: The meaning of Jewish jewelry like the Star of David, chai and Hebrew name necklaces, and guidelines for jewelry with holy words and on Shabbat.
 category: Jewish home
-related: star-of-david, chai-symbol, jewish-symbols, jewish-pride
+related: star-of-david, jewish-wedding-ring, chai-symbol, jewish-symbols, jewish-pride
 local: Want help writing your Hebrew name for a necklace or finding the right Hebrew spelling? Call Chabad of Lamorinda at 925-384-7242.
 ---
 Jewish jewelry, like a Star of David, a chai or a Hebrew name necklace, is a beautiful way to show Jewish pride and keep a reminder of who you are close to your heart. Jewish law has a few guidelines, especially for jewelry with holy words and for Shabbat.

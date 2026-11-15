@@ -2,7 +2,7 @@
 title: Ам Исраэль хай: что значит "Еврейский народ жив"
 description: Что значит "Ам Исраэль хай"? Еврейский народ жив. Узнайте о фразе, о послании еврейского выживания и о том, как отвечать на трудные времена заповедями.
 category: Jewish ideas
-related: jewish-pride, tehillim, israel-and-the-jewish-people, facing-antisemitism, shabbat-candles
+related: jewish-pride, how-the-jewish-people-survived, tehillim, israel-and-the-jewish-people, facing-antisemitism, shabbat-candles
 local: Присоединяйтесь и добавьте заповедь в свою неделю. Позвоните раввину Лабковскому 925-384-7242.
 ---
 "Ам Исраэль хай" (עַם יִשְׂרָאֵל חַי) значит "Еврейский народ жив". Это заявление, что еврейский народ выстоит, телом и духом, перед любым испытанием.

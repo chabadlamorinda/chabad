@@ -4,7 +4,7 @@ description: איך מדליקים את החנוכייה בכל לילה, איפ
 video: https://www.youtube.com/watch?v=nDyGVKReP7M
 listen: https://www.chabad.org/multimedia/music_cdo/aid/340059/jewish/Menorah-Blessings.htm
 category: Shabbat & holidays
-related: dreidel, first-chanukah-as-a-couple, choosing-a-kosher-menorah, what-if-chanukah-candles-go-out, what-is-the-shamash, menorah-in-an-apartment-or-condo, who-lights-the-chanukah-menorah, missed-lighting-the-menorah, when-to-light-the-menorah, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-in-lamorinda, menorah-oil-and-candles, chanukah-away-from-home, chanukah-songs, lessons-of-chanukah, zot-chanukah, shabbat-candles, blessings, jewish-calendar
+related: dreidel, temple-menorah-and-chanukah-menorah, first-chanukah-as-a-couple, choosing-a-kosher-menorah, what-if-chanukah-candles-go-out, what-is-the-shamash, menorah-in-an-apartment-or-condo, who-lights-the-chanukah-menorah, missed-lighting-the-menorah, when-to-light-the-menorah, chanukah-night-by-night, menorah-at-home-in-lamorinda, chanukah-in-lamorinda, menorah-oil-and-candles, chanukah-away-from-home, chanukah-songs, lessons-of-chanukah, zot-chanukah, shabbat-candles, blessings, jewish-calendar
 local: צריכים חנוכייה או נרות, או רוצים להצטרף להדלקת חנוכייה ציבורית? התקשרו 925-384-7242 וראו chabadoflamorinda.com/holidays/chanukah.
 ---
 בכל אחד משמונת לילות החנוכה מדליקים חנוכייה, ומוסיפים בכל לילה נר אחד עד שבלילה האחרון דולקים כל השמונה. הנרות מזכירים את נס פך השמן בבית המקדש ומפרסמים שהאור מנצח את החושך.

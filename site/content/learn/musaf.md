@@ -2,7 +2,7 @@
 title: "What Is Musaf? The Additional Prayer of Shabbat, Holidays and Rosh Chodesh"
 description: What Musaf means, when it is said, why we pray it, and where it fits in Shabbat morning services. Join us for Shabbat in Lafayette.
 category: Prayer & Torah
-related: shabbat-day, rosh-chodesh, amidah, hallel, prayer
+related: shabbat-day, rosh-chodesh-tevet-on-chanukah, rosh-chodesh, amidah, hallel, prayer
 local: Come to Shabbat morning services and stay for Musaf and the Kiddush. Call Rabbi Labkowski at 925-384-7242.
 ---
 Musaf (מוסף) means "additional": it is the extra Amidah prayer Jews say on Shabbat, festivals and Rosh Chodesh, after the morning service. It recalls the additional offerings that were brought in the Holy Temple on those special days and takes their place today.

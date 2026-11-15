@@ -2,7 +2,7 @@
 title: Tevilat Kelim: How to Immerse New Dishes and Utensils
 description: Which new dishes and utensils need immersion in a mikvah, how to do tevilat kelim step by step, and the blessing to say.
 category: Kosher
-related: kosher-kitchen, mikvah, kosher, meat-and-milk
+related: kosher-kitchen, kosher-oven-and-microwave, mikvah, kosher, meat-and-milk
 local: Not sure which of your new dishes need immersion or where to immerse them? Call Rabbi Labkowski at 925-384-7242 and we will help.
 ---
 Tevilat kelim is the mitzvah of immersing new metal and glass food utensils in a mikvah or natural body of water before using them. It applies to dishes, pots and cutlery made or owned by a non-Jew and bought for use with food.

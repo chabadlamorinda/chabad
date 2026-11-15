@@ -2,7 +2,7 @@
 title: Хоспис и решения в конце жизни: еврейское руководство для семей
 description: Еврейский взгляд на хоспис, обезболивание, запрет реанимации и кормление через зонд. Почему стоит рано позвонить раввину. Поддержка в Лафайете.
 category: Mourning & remembrance
-related: when-a-loved-one-is-dying, caring-for-aging-parents, halachic-will, pikuach-nefesh, shabbat-in-the-hospital
+related: when-a-loved-one-is-dying, jewish-health-care-directive, caring-for-aging-parents, halachic-will, pikuach-nefesh, shabbat-in-the-hospital
 local: Стоите перед тяжёлыми решениями о близком человеке? Позвоните раву Исроэлю Лабковски 925-384-7242 или /help/talk-to-the-rabbi, в любой час.
 ---
 Иудаизм учит, что каждый миг жизни драгоценен и что умирающий достоин утешения, ухода и общества. Многие семьи в Ист-Бэй сталкиваются с хосписом и решениями в конце жизни; у еврейского закона есть ясные принципы, но поскольку каждый случай особый, пожалуйста, позвоните раву заранее, до того как подпишете какую-либо форму.

@@ -2,7 +2,7 @@
 title: אובדן הורה: חוכמה ונחמה יהודית לבנים ולבנות
 description: מה המסורת היהודית מציעה כשאמא או אבא נפטרים: שבעה, קדיש, שנת האבל, כיבוד ההורה לאחר מותו, ולמי לפנות.
 category: Mourning & remembrance
-related: year-of-mourning, kaddish, honoring-parents, shiva, yahrzeit
+related: year-of-mourning, mourning-a-grandparent, kaddish, honoring-parents, shiva, yahrzeit
 local: אם אמכם או אביכם נפטרו, התקשרו לרב לבקובסקי או לרבנית בטלפון 925-384-7242, או כתבו לנו ב-/help/talk-to-the-rabbi. אתם לא צריכים לשאת זאת לבד.
 ---
 כשאמא או אבא נפטרים, המסורת היהודית מבקשת מהילדים להתאבל שנה שלמה: שבעה ימי שבעה, שלושים יום של שלושים, ושנים עשר חודשים בסך הכול. לפי אתר Chabad.org, ההארכה בהורים אינה קשורה לעומק האהבה או הכאב. היא המשך למצוות כיבוד אב ואם, שנתנו לנו חיים.

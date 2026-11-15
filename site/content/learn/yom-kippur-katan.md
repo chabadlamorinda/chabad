@@ -2,7 +2,7 @@
 title: Yom Kippur Katan: The Monthly 'Small Yom Kippur'
 description: Yom Kippur Katan is the day before Rosh Chodesh, a monthly day of prayer, charity and reflection. Learn its customs and try a five-minute check-in.
 category: Shabbat & holidays
-related: rosh-chodesh, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
+related: rosh-chodesh, fasting-on-your-wedding-day, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
 local: Want to start a monthly habit of reflection? Call Rabbi Labkowski at 925-384-7242, or see /programs/adult-education.
 ---
 Yom Kippur Katan (יוֹם כִּפּוּר קָטָן), the "Minor Yom Kippur," is the day before Rosh Chodesh, the new month. According to Chabad.org, it recalls the sin offering brought in the Temple on Rosh Chodesh, and the most pious observe it with extra prayers, fasting and charity.

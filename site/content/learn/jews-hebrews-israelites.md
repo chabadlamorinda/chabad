@@ -2,7 +2,7 @@
 title: Jews, Hebrews, Israelites: Why We Have Three Names
 description: Why are Jews called Jews, Hebrews and Israelites? The meaning of Ivri, Israel and Yehudi, and how three names describe one people.
 category: Jewish ideas
-related: who-is-a-jew, twelve-tribes, jacob-our-father, jewish-history-overview, why-be-jewish
+related: who-is-a-jew, is-judaism-a-religion-or-a-nation, twelve-tribes, jacob-our-father, jewish-history-overview, why-be-jewish
 local: Curious about your own Jewish story? Come learn at /programs/adult-education or call Rabbi Labkowski at 925-384-7242.
 ---
 Jews, Hebrews and Israelites are three names for the same people, each from a different stage of Jewish history. "Hebrew" comes from Abraham, "Israel" from his grandson Jacob, and "Jew" from Judah, Jacob's fourth son.

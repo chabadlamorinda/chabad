@@ -2,7 +2,7 @@
 title: Yiddish Words and Phrases: 30 Everyday Words and What They Mean
 description: Common Yiddish words and phrases like mensch, kvetch, naches and gut Shabbos, what they mean and where Yiddish came from. Learn them with us.
 category: Jewish ideas
-related: hebrew-phrases, jewish-languages, holiday-greetings, russian-speaking-jews-in-lamorinda, jewish-last-names
+related: hebrew-phrases, chanukah-glossary, jewish-languages, holiday-greetings, russian-speaking-jews-in-lamorinda, jewish-last-names
 local: Come say "gut Shabbos" in person. Call 925-384-7242 to hear what is planned in Lafayette, Moraga and Orinda.
 ---
 Yiddish is the everyday language Ashkenazi Jews developed over a thousand years, a mix of Germanic words with Hebrew, Aramaic and Slavic words, written in Hebrew letters. Words like mensch, kvetch and chutzpah are Yiddish, and so are the warm greetings "gut Shabbos" and "mazel tov."

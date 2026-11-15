@@ -2,7 +2,7 @@
 title: Losing Your Job: Jewish Strength for a Hard Season
 description: Потеряли работу? Мудрость иудаизма о самоценности, доверии и плане на каждый день, и поддержка в Лафайетте, Мораге и Оринде.
 category: Jewish home
-related: bitachon, parnassah-work-and-livelihood, money-worries, new-job-jewish-blessing, mental-health-jewish-view
+related: bitachon, helping-someone-become-self-sufficient, parnassah-work-and-livelihood, money-worries, new-job-jewish-blessing, mental-health-jewish-view
 local: Если вы между работами, позвоните раву Лабковскому 925-384-7242 или напишите через /help/talk-to-the-rabbi. Разговор конфиденциален, и это помогает.
 ---
 Потеря работы болезненна, но иудаизм учит: ваша ценность не измеряется должностью. Вы душа, созданная по образу Б-га, и Тот, Кто кормит всё живое, о вас не забыл. Еврейский ответ на безработицу: приложить настоящие усилия, верить, что результат в руках Б-га, и опереться на общину.
