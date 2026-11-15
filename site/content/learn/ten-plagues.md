@@ -34,7 +34,7 @@ During the Haggadah we remove a bit of wine from our cup as we say each plague a
 
 ## What do the plagues teach us?
 
-Jewish tradition teaches that each plague also holds a lesson for everyday life, especially in dealing with difficult people:
+Each plague also holds a lesson for everyday life, especially in dealing with difficult people:
 
 - **Blood:** Moses showed gratitude even to the Nile that saved him, so we are grateful even to those we find hard.
 - **Frogs:** Hitting the frog only made more frogs: anger harms the angry one.

@@ -5,7 +5,7 @@ category: Jewish ideas
 related: the-blessing-of-giving-maaser, what-maaser-can-and-cannot-pay-for, how-to-calculate-maaser, giving-when-money-is-tight, pushka
 local: Starting maaser and want a friendly guide? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi. No judgment, just help.
 ---
-To start giving maaser, open a separate account, move a tenth of each paycheck into it when the money arrives, and give from that account to tzedakah. Jewish tradition sees this simple habit as the heart of keeping maaser, and you can begin with a smaller amount and grow.
+To start giving maaser, open a separate account, move a tenth of each paycheck into it when the money arrives, and give from that account to tzedakah. This simple habit is the heart of keeping maaser, and you can begin with a smaller amount and grow.
 
 ## Step 1: Open a separate account (or use an envelope)
 
@@ -29,7 +29,7 @@ Give from the maaser account to those in need and to Jewish causes you care abou
 
 If a full tenth is too much right now, you do not have to wait. Your basic needs come first, and the Rebbe encouraged giving a partial amount, for example five percent, in some cases keeping a note of what is missing so it can be made up later. Even when you cannot give the full tenth, you can still give tzedakah according to your means. See [Giving When Money Is Tight](/learn/giving-when-money-is-tight).
 
-On the other side, giving up to a fifth, called chomesh, is commendable for those who can afford it, and that a fifth is generally the upper limit for giving.
+On the other side, giving up to a fifth, called chomesh, is commendable for those who can afford it, and a fifth is generally the upper limit for giving.
 
 ## If you miss a month
 

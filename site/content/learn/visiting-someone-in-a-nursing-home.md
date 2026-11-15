@@ -9,14 +9,14 @@ To visit someone in a nursing home the Jewish way, call ahead, keep the visit fa
 
 ## Why it is a mitzvah
 
-Visiting the sick is called bikur cholim (בִּקּוּר חוֹלִים). Jewish tradition explains that Jewish law gives a visit three goals: to see what the person needs and help, to comfort and encourage, and to pray for healing. The mitzvah applies to anyone who is seriously ill or unable to care for themselves, even if their life is not in danger. See [Bikur Cholim](/learn/bikur-cholim).
+Visiting the sick is called bikur cholim (בִּקּוּר חוֹלִים). Jewish law gives a visit three goals: to see what the person needs and help, to comfort and encourage, and to pray for healing. The mitzvah applies to anyone who is seriously ill or unable to care for themselves, even if their life is not in danger. See [Bikur Cholim](/learn/bikur-cholim).
 
-There is also the matter of honoring older people. The Rebbe, Rabbi Menachem Mendel Schneerson, taught that the Torah sees long life and age as blessings, and that wisdom and experience grow with the years. Jewish law notes that society can treat aging as a handicap, while the Torah holds the elderly in high regard. See [Honoring the Elderly](/learn/honoring-the-elderly).
+There is also the matter of honoring older people. The Rebbe, Rabbi Menachem Mendel Schneerson, taught that the Torah sees long life and age as blessings, and that wisdom and experience grow with the years. Society can treat aging as a handicap, while the Torah holds the elderly in high regard. See [Honoring the Elderly](/learn/honoring-the-elderly).
 
 ## Before you go
 
-- **Call ahead.** The tradition advises against entering unannounced. Check that the person is ready for visitors, and ask the nurses' station or knock before you enter.
-- **Choose a good time.** Jewish tradition suggests avoiding very early or very late in the day. A less-than-ideal time is still better than not visiting at all.
+- **Call ahead.** Do not arrive unannounced. Check that the person is ready for visitors, and ask the nurses' station or knock before you enter.
+- **Choose a good time.** Avoid very early or very late in the day. A less-than-ideal time is still better than not visiting at all.
 - **Be flexible about hours.** Many authorities allow visits outside set hours if the patient and staff agree. Ask the facility.
 - **Do not overdo it.** The person may be tired, in pain or embarrassed about personal needs.
 
@@ -25,26 +25,26 @@ There is also the matter of honoring older people. The Rebbe, Rabbi Menachem Men
 1. **Arrive upbeat.** Enter in a positive mood and avoid sadness or gloom.
 2. **Follow their lead.** Do not bring up the illness unless they do, and do not tell stories about someone else who did not recover.
 3. **Share something light.** A kind word, a cheerful story or a short Torah thought, whichever suits the person.
-4. **Ask what they need.** Jewish law says a visit should find out what the person needs, and offer help where you can.
+4. **Ask what they need.** A visit should find out what the person needs, and offer help where you can.
 5. **Ask for their stories and advice.** Since older people have learned lessons that can guide the young, your interest tells them they still matter.
 6. **Keep it fairly short.** Tailor the length to the person's energy.
 
 ## Before you leave
 
-Wish the person a speedy recovery, a refuah sheleimah (רְפוּאָה שְׁלֵמָה). The tradition suggests saying a short prayer, such as asking G-d to heal them among all the other Jewish sick. It adds that a prayer need not be long; a sincere request counts. See [Mi Sheberach](/learn/mi-sheberach).
+Wish the person a speedy recovery, a refuah sheleimah (רְפוּאָה שְׁלֵמָה). You can say a short prayer, such as asking G-d to heal them among all the other Jewish sick. It adds that a prayer need not be long; a sincere request counts. See [Mi Sheberach](/learn/mi-sheberach).
 
 ## Bringing Shabbat and holidays
 
-If you are visiting on a Friday, you might bring Shabbat to the room. Jewish law allows electric bulbs where an open flame is not possible, such as in a hospital. Facilities have their own rules, so ask the staff first. For more ideas, see [Jewish Life for a Parent in Senior Living](/learn/jewish-life-in-senior-living-lamorinda).
+If you are visiting on a Friday, you might bring Shabbat to the room. For Shabbat candles, electric bulbs may be used where an open flame is not possible, such as in a hospital. Facilities have their own rules, so ask the staff first. For more ideas, see [Jewish Life for a Parent in Senior Living](/learn/jewish-life-in-senior-living-lamorinda).
 
 ## When you cannot visit in person
 
-A phone call, a note or a message is also valuable, especially if the person does not want visitors. Jewish tradition notes that in-person visits are ideal, but a call can still bring support, prayer and encouragement.
+A phone call, a note or a message is also valuable, especially if the person does not want visitors. In-person visits are ideal, but a call can still bring support, prayer and encouragement.
 
 ## Common questions
 
 ### How long should I stay when visiting someone in a nursing home?
-Keep it fairly short and follow the person's energy. Jewish law advises that a short visit is usually best, because the person may be tired or in pain.
+Keep it fairly short and follow the person's energy. A short visit is usually best, because the person may be tired or in pain.
 
 ### What should I say to someone in a nursing home?
 Offer a kind word, a cheerful story or a short Torah thought, and let them lead. Do not raise the illness unless they do.
@@ -59,7 +59,7 @@ Electric lights can be used where an open flame is not possible. Ask the staff a
 The Rabbi and Rebbetzin visit the sick at home, in the hospital and in care facilities. To ask about a visit, call Rabbi Labkowski at 925-384-7242.
 
 ### What if the person has dementia or does not recognize me?
-You still fulfill the mitzvah: The tradition notes it counts even when the person is asleep or unaware, because you are praying for them and checking on their needs. See [When a Parent Has Dementia](/learn/when-a-parent-has-dementia).
+You still fulfill the mitzvah: it counts even when the person is asleep or unaware, because you are praying for them and checking on their needs. See [When a Parent Has Dementia](/learn/when-a-parent-has-dementia).
 
 ## Take the next step
 

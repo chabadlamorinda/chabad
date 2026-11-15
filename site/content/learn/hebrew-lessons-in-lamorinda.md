@@ -9,7 +9,7 @@ Learning Hebrew in Lafayette, Moraga and Orinda starts with one question: do you
 
 ## Two kinds of Hebrew learning
 
-Hebrew is called *lashon hakodesh* (לשון הקודש), the "Holy Tongue." Jewish tradition describes it as the language of the Bible, the language Jews have prayed, studied and written in for thousands of years. Tradition teaches that its 22 letters hold deep secrets of creation. You can read more in [Lashon Hakodesh](/learn/lashon-hakodesh).
+Hebrew is called *lashon hakodesh* (לשון הקודש), the "Holy Tongue." It is the language of the Bible, the language Jews have prayed, studied and written in for thousands of years. Tradition teaches that its 22 letters hold deep secrets of creation. You can read more in [Lashon Hakodesh](/learn/lashon-hakodesh).
 
 Most people who search for "Hebrew lessons near me" mean one of two goals:
 

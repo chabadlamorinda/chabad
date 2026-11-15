@@ -17,7 +17,7 @@ In her will she directed that money to promote Jewish continuity. She said, "I a
 
 ## Myrna Horton: for the children
 
-Another article (2018) introduces Myrna Horton of Chabad of Tustin, California, 84. She left a portion of her estate to Chabad of Tustin so that children could learn about their religion, saying she felt good knowing "some of my estate will be used for children's education." She had met the rabbi at a car wash years earlier, and, hesitant to return to synagogue after many years, became a regular at Shabbat services, where she "loved the camaraderie."
+A 2018 article introduces Myrna Horton of Chabad of Tustin, California, 84. She left a portion of her estate to Chabad of Tustin so that children could learn about their religion, saying she felt good knowing "some of my estate will be used for children's education." She had met the rabbi at a car wash years earlier, and, hesitant to return to synagogue after many years, became a regular at Shabbat services, where she "loved the camaraderie."
 
 She told Chabad emissaries not to be afraid to ask supporters about legacy gifts: giving, she said, is "a wonderful blessing." The article reports that she died unexpectedly a week after the interview.
 
@@ -59,7 +59,7 @@ Yes, a grant from your donor-advised fund to Chabad of Lamorinda counts as maase
 Yes. Call the Rabbi or Rebbetzin and see [/legacy](/legacy).
 
 ### Should I tell the Rabbi if I do?
-Donors are invited to let the organization know, so it can thank them in their lifetime. The Rabbi would be honored to hear and to thank you.
+Donors are invited to let the Chabad center know, so it can thank them in their lifetime. The Rabbi would be honored to hear and to thank you.
 
 ## Take the next step
 

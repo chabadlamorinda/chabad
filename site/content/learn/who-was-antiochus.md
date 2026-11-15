@@ -17,7 +17,7 @@ When Alexander the Great died, his empire split into several kingdoms. One of th
 
 ## What kind of king was he?
 
-Antiochus took the title "Epiphanes," a Greek title usually understood as "illustrious" or "the one who appears." Some of his own contemporaries gave him a different nickname, "the Mad." Jewish tradition describes him as harsh, cruel, rash and impulsive.
+Antiochus took the title "Epiphanes," a Greek title usually understood as "illustrious" or "the one who appears." Some of his own contemporaries gave him a different nickname, "the Mad." The sources describe him as harsh, cruel, rash and impulsive.
 
 He wanted one culture for his whole empire, the Greek one. Some Jews, called Hellenists, welcomed this and adopted Greek ways. Others, among them the priestly family of Matityahu, refused to assimilate.
 

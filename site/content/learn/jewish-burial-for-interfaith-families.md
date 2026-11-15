@@ -15,11 +15,11 @@ Rabbi Maurice Lamm's guide to Jewish mourning says that a Jewish partner in an i
 
 ## The non-Jewish spouse or relative
 
-This is the part that is hard to hear, and we say it gently. Jewish tradition explains that, because a Jewish cemetery is for Jews (see [what makes a cemetery Jewish](/learn/buying-a-jewish-cemetery-plot)), a spouse who is not Jewish and has not converted may not be buried in it. Jewish tradition adds that a man who was circumcised for reasons other than conversion is still considered non-Jewish. The Rabbi can talk with you about the options and about where your loved ones may rest. Please do not decide in a hurry or in pain; call first.
+This is the part that is hard to hear, and we say it gently. Because a Jewish cemetery is for Jews (see [what makes a cemetery Jewish](/learn/buying-a-jewish-cemetery-plot)), a spouse who is not Jewish and has not converted may not be buried in it. A man who was circumcised for reasons other than conversion is still considered non-Jewish. The Rabbi can talk with you about the options and about where your loved ones may rest. Please do not decide in a hurry or in pain; call first.
 
 ## Children and who is counted as Jewish
 
-According to Jewish tradition:
+The rules are:
 
 - A child of a Jewish mother may be buried in a Jewish cemetery, even if the child was not circumcised.
 - A child of a non-Jewish mother who has not converted may not be buried there, even if the child was circumcised without the intent to convert, and even if educated in a Jewish school.
@@ -33,21 +33,21 @@ Non-Jewish family and friends are surely grieving too. We do not want anyone to 
 
 ## If there are conflicts in the family
 
-Sometimes relatives disagree about what the person who died would have wanted. If the person left written wishes, the Rabbi can help you see which can be carried out. Jewish sources say that wishes that go against Jewish law should be set aside and a proper Jewish burial arranged, and that requests that only differ from local custom should be discussed with a rabbi. See [planning a Jewish funeral in advance](/learn/planning-a-jewish-funeral-in-advance).
+Sometimes relatives disagree about what the person who died would have wanted. If the person left written wishes, the Rabbi can help you see which can be carried out. Wishes that go against Jewish law should be set aside and a proper Jewish burial arranged, and that requests that only differ from local custom should be discussed with a rabbi. See [planning a Jewish funeral in advance](/learn/planning-a-jewish-funeral-in-advance).
 
 ## Common questions
 
 ### Can a Jew be buried in a Jewish cemetery if their spouse is not Jewish?
 
-Yes. According to Jewish tradition, a Jewish partner who remained Jewish is entitled to be buried in a Jewish cemetery. The question is where the non-Jewish spouse may be buried. Call the Rabbi.
+Yes. A Jewish partner who remained Jewish is entitled to be buried in a Jewish cemetery. The question is where the non-Jewish spouse may be buried. Call the Rabbi.
 
 ### Can a non-Jewish spouse be buried in a Jewish cemetery?
 
-Jewish teaching says an unconverted non-Jewish spouse may not be buried in a Jewish cemetery. A rabbi can discuss respectful options with your family.
+An unconverted non-Jewish spouse may not be buried in a Jewish cemetery. A rabbi can discuss respectful options with your family.
 
 ### Can a child of an interfaith couple be buried in a Jewish cemetery?
 
-A child of a Jewish mother can, even if uncircumcised. A child of a non-Jewish mother who has not converted cannot, according to Jewish law. Ask the Rabbi about your child's case.
+A child of a Jewish mother can, even if uncircumcised. A child of a non-Jewish mother who has not converted cannot. Ask the Rabbi about your child's case.
 
 ### Can non-Jewish relatives attend a Jewish funeral?
 

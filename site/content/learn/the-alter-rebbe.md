@@ -7,27 +7,27 @@ local: Curious about the Alter Rebbe's teachings? Join the Wednesday 1:00 PM Tan
 ---
 The Tanya was written by Rabbi Schneur Zalman of Liadi (1745 to 1812), known as the Alter Rebbe, "the Old Rebbe," the founder of Chabad Chassidism. He was a main disciple of the Maggid of Mezritch, who was the successor of the [Baal Shem Tov](/learn/baal-shem-tov).
 
-This guide tells the story of his life, as tradition tells it, so that you know who is speaking when you open the book.
+This guide tells the story of his life, so that you know who is speaking when you open the book.
 
 ## A young genius from Liozna
 
-The sources tell us that he was born in Liozna, near Lubavitch, and his father was Rabbi Baruch. As a boy he studied Talmud and Kabbalah, and in his spare time science and mathematics, with a teacher who is said to have told his father that there was nothing more he could teach him. At twelve he moved to Vitebsk, where he was recognized as a genius. His birth date is given as 18 Elul 1745.
+He was born in Liozna, near Lubavitch, and his father was Rabbi Baruch. As a boy he studied Talmud and Kabbalah, and in his spare time science and mathematics, with a teacher who is said to have told his father that there was nothing more he could teach him. At twelve he moved to Vitebsk, where he was recognized as a genius. His birth date is given as 18 Elul 1745.
 
 ## Meseritch and the Maggid
 
-At twenty he left home to look for guidance in serving G-d. Tradition tells that he weighed going to Vilna, the center of opposition to Chassidism, and chose Meseritch, where Rabbi Dovber, the Maggid, taught. He joined the Maggid's inner circle. When he was about twenty-five, the Maggid asked him to rewrite the Code of Jewish Law, the Shulchan Aruch, with the later rulings. That work is known as the Shulchan Aruch HaRav, and it won recognition from Chassidim and scholars alike.
+At twenty he left home to look for guidance in serving G-d. He weighed going to Vilna, the center of opposition to Chassidism, and chose Meseritch, where Rabbi Dovber, the Maggid, taught. He joined the Maggid's inner circle. When he was about twenty-five, the Maggid asked him to rewrite the Code of Jewish Law, the Shulchan Aruch, with the later rulings. That work is known as the Shulchan Aruch HaRav, and it won recognition from Chassidim and scholars alike.
 
 After the Maggid died on 19 Kislev, 1772, his disciples dispersed. The Alter Rebbe took up the task of spreading Chassidus in Lithuania, and the Chabad movement was founded then. See [Chassidus](/learn/chassidus) and the [Chabad Rebbes](/learn/chabad-rebbes).
 
 ## The book: Tanya
 
-The Alter Rebbe gave his book three names, as the sources explain:
+The Alter Rebbe gave his book three names:
 
 - **Likkutei Amarim** ("Collected Teachings"), a modest name, as if he had only gathered teachings. It was first printed in Slavita in 1796.
 - **Tanya**, from the book's first word, the name it carries today.
 - **Sefer shel Beinonim**, "The Book of the Intermediates," because it is about the ordinary person who struggles. See [the beinoni](/learn/the-beinoni).
 
-The sources also tell that before the book, he taught orally for about twelve years, and that his students' copies of these teachings had errors, which was one reason for the book. His followers came to call the Tanya the "Written Torah" of Chassidus.
+Before the book, he taught orally for about twelve years, and his students' copies of these teachings had errors, which was one reason for the book. His followers came to call the Tanya the "Written Torah" of Chassidus.
 
 The title page says the book is based on a verse from Deuteronomy: the matter is very near to you, in your mouth and in your heart, to do it. The book sets out to explain how this closeness is true.
 

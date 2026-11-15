@@ -19,7 +19,7 @@ Many families hang a card with Psalm 121, *Shir Lamaalot* ("A Song of Ascents," 
 
 ## Labor on Shabbat
 
-Life takes priority over Shabbat ([pikuach nefesh](/learn/pikuach-nefesh)). When labor begins on Shabbat or a holiday, according to Jewish tradition:
+Life takes priority over Shabbat ([pikuach nefesh](/learn/pikuach-nefesh)). When labor begins on Shabbat or a holiday:
 
 1. Go to the hospital when the birth seems close; do not wait.
 2. If possible, ask a non-Jewish driver and settle the fare beforehand; otherwise do not delay.

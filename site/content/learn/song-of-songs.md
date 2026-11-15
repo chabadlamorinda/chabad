@@ -9,7 +9,7 @@ The Song of Songs (שִׁיר הַשִּׁירִים, Shir HaShirim) is a book o
 
 ## What is the Song of Songs?
 
-It is one of the books of the [Tanach](/learn/tanach), written by [King Solomon](/learn/king-solomon), traditionally in his wisdom. It is a poem between a beloved and her love, full of images of gardens, spring, vineyards and longing. Jewish tradition reads it as a deep allegory: the beloved is the Jewish people, and the love is G-d. The title "Song of Songs" means the best of songs. The Sages taught that the world was never as worthy as on the day the Song was given, and that all the writings are holy but the Song is "holy of holies."
+It is one of the books of the [Tanach](/learn/tanach), written by [King Solomon](/learn/king-solomon), traditionally in his wisdom. It is a poem between a beloved and her love, full of images of gardens, spring, vineyards and longing. The Sages read it as a deep allegory: the beloved is the Jewish people, and the love is G-d. The title "Song of Songs" means the best of songs. The Sages taught that the world was never as worthy as on the day the Song was given, and that all the writings are holy but the Song is "holy of holies."
 
 ## Why do we read it on Passover?
 

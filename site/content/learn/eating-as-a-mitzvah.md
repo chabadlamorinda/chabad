@@ -11,7 +11,7 @@ For families in Lafayette, Moraga and Orinda, this turns an ordinary dinner into
 
 ## Why does Judaism care how we eat?
 
-Eating keeps us alive and gives us pleasure, but Jewish tradition teaches that Judaism treats it as a spiritual exercise too. In a recent article on mindful eating, Rabbi Menachem Feldman notes that paying attention while eating is even good for health, while eating distracted can lead to overeating.
+Eating keeps us alive and gives us pleasure, but Judaism treats it as a spiritual exercise too. In a recent article on mindful eating, Rabbi Menachem Feldman notes that paying attention while eating is even good for health, while eating distracted can lead to overeating.
 
 Judaism adds a deeper layer: the food on our plate is part of G-d's creation, and what we do with it matters.
 
@@ -19,11 +19,11 @@ Judaism adds a deeper layer: the food on our plate is part of G-d's creation, an
 
 Kabbalah and Chassidic teaching say every created thing has a soul, a "spark of G-dliness," whether it is a stone, a plant or an animal. Each spark longs to rise and reconnect with its source. Humans, made in G-d's image and with free choice, are the ones who can lift them.
 
-The Tanya (chapter 7) explains how. Chassidic teaching says that eating purely for personal pleasure lowers both the eater and the food to the food's own level, which is a missed opportunity. Eating for a higher purpose, such as to be healthy and have energy to serve G-d and fulfil your mission, lifts the spark and reunites it with its Divine source.
+The Tanya (chapter 7) explains how. It teaches that eating purely for personal pleasure lowers both the eater and the food to the food's own level, which is a missed opportunity. Eating for a higher purpose, such as to be healthy and have energy to serve G-d and fulfil your mission, lifts the spark and reunites it with its Divine source.
 
 ## The blessing before eating
 
-Before we eat, we say a blessing. The tradition explains that when we say a blessing and intend to serve G-d with the food's energy, we elevate the food's physical substance into holiness. These blessings belong to the type called *birkat hanehenin* (blessings of enjoyment): we may not enjoy G-d's world without first acknowledging its Source.
+Before we eat, we say a blessing. Chassidic teaching explains that when we say a blessing and intend to serve G-d with the food's energy, we elevate the food's physical substance into holiness. These blessings belong to the type called *birkat hanehenin* (blessings of enjoyment): we may not enjoy G-d's world without first acknowledging its Source.
 
 For bread there is the *hamotzi* blessing, and for other foods blessings suited to the kind of food. See the guide to [blessings](/learn/blessings). After a meal with bread we say Grace After Meals. See [blessings after food](/learn/blessings-after-food).
 
@@ -38,7 +38,7 @@ Practical advice for mindful eating has four steps:
 
 ## The table as an altar
 
-When the Holy Temple stood, the altar brought atonement. The Talmud (Menachot 97a) teaches that today a person's table does. In the Temple, the daily offerings combined an animal, a grain offering and salt, covering all the kingdoms of creation. Jewish tradition explains that today the work of lifting the world's sparks falls to each of us, through what we eat and how we eat it. Read more in [the Holy Temple](/learn/the-holy-temple).
+When the Holy Temple stood, the altar brought atonement. The Talmud (Menachot 97a) teaches that today a person's table does. In the Temple, the daily offerings combined an animal, a grain offering and salt, covering all the kingdoms of creation. Chassidic thought explains that today the work of lifting the world's sparks falls to each of us, through what we eat and how we eat it. Read more in [the Holy Temple](/learn/the-holy-temple).
 
 This is why a Jewish table is a place of blessings, words of Torah and guests.
 
@@ -46,7 +46,7 @@ This is why a Jewish table is a place of blessings, words of Torah and guests.
 
 The same ideas connect other parts of Jewish life:
 
-- **Kosher.** The laws of [kosher](/learn/kosher) shape what we eat. Chassidic teaching notes that when someone eats kosher meat and uses the energy for a mitzvah, a spark of divinity is raised.
+- **Kosher.** The laws of [kosher](/learn/kosher) shape what we eat. When someone eats kosher meat and uses the energy for a mitzvah, a spark of divinity is raised.
 - **Guests.** Sharing food is a mitzvah. See [hospitality](/learn/hachnasat-orchim).
 - **Shabbat meals.** The Friday night and Shabbat day meals are the weekly high point of the Jewish table. See [Shabbat meals](/learn/shabbat-meals).
 
@@ -58,7 +58,7 @@ For kosher questions in your own kitchen, ask the Rabbi.
 Judaism sees eating as a spiritual practice as well as a physical need. Done with intention, blessings and good purpose, it lifts the food into holiness.
 
 ### Why do Jews say a blessing before eating?
-We say a blessing to acknowledge that the food comes from G-d. The tradition says that with the blessing and the intention to serve G-d, we elevate the food.
+We say a blessing to acknowledge that the food comes from G-d. With the blessing and the intention to serve G-d, we elevate the food.
 
 ### What does it mean to raise the sparks?
 It means finding the G-dly spark in food and elevating it by using its energy for a mitzvah and good deeds. This idea comes from Kabbalah and Chassidic teaching.

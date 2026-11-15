@@ -9,11 +9,11 @@ To leave your IRA or 401(k) to a charity such as a synagogue, you fill out a ben
 
 ## Why a form and not a will
 
-A retirement account passes to whoever is named on the account's beneficiary form. Standard guidance on gifts from retirement plans (IRAs, 401(k)s, 403(b)s and similar accounts) says the steps are simple: get a beneficiary designation form from your plan administrator or custodian, write in the organization and the percentage you choose, and return it. No new will is needed. The [legacy page](/legacy) says the same.
+A retirement account passes to whoever is named on the account's beneficiary form. For gifts from retirement plans (IRAs, 401(k)s, 403(b)s and similar accounts), the steps are simple: get a beneficiary designation form from your plan administrator or custodian, write in the organization and the percentage you choose, and return it. No new will is needed. The [legacy page](/legacy) says the same.
 
 ## Why many people choose a retirement account
 
-Standard guidance describes a retirement account as one of the most tax-efficient ways to fund a gift to a nonprofit, which may let you leave other assets, taxed less heavily, to your family. How this applies to you depends on your situation, your family and the law. Please ask your tax advisor and your attorney. This guide gives no tax or legal advice and no figures.
+A retirement account is one of the most tax-efficient ways to fund a gift to a nonprofit, which may let you leave other assets, taxed less heavily, to your family. How this applies to you depends on your situation, your family and the law. Please ask your tax advisor and your attorney. This guide gives no tax or legal advice and no figures.
 
 ## Steps to name Chabad of Lamorinda
 
@@ -31,13 +31,13 @@ Jewish tradition cares about what we hand on, and about how we use what we have.
 ## Common questions
 
 ### How do I leave my IRA to a charity?
-Ask your IRA custodian for a beneficiary designation form, write in the charity's name and the percentage you choose, and return it. As the usual advice notes, no new will is needed.
+Ask your IRA custodian for a beneficiary designation form, write in the charity's name and the percentage you choose, and return it. No new will is needed.
 
 ### Can I name Chabad of Lamorinda as an IRA or 401(k) beneficiary?
 Yes. Chabad of Lamorinda accepts gifts from retirement accounts. Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, and give your plan company the details on the [legacy page](/legacy).
 
 ### Why do people name a charity on a retirement account?
-Common practice describes a retirement account as one of the most tax-efficient ways to fund a gift to a nonprofit. Ask your tax advisor how this applies to you.
+A retirement account is one of the most tax-efficient ways to fund a gift to a nonprofit. Ask your tax advisor how this applies to you.
 
 ### Can I name both my children and a charity?
 Yes. A beneficiary form usually lets you give each person or organization a percentage. Ask your plan company or advisor.

@@ -23,7 +23,7 @@ In the concentration camp of Bergen-Belsen, on the eve of Chanukah, there had be
 
 Rabbi Israel Spira, the Rebbe of Bluzhov, lit the light and recited the first two blessings. Before the third blessing, the one thanking G-d for keeping us alive and bringing us to this season, he stopped and looked around. Then he said it in a strong voice. Afterward a man challenged him: how could he thank G-d for survival while Jews were being murdered nearby? The rabbi said the question was fair and that he, too, had hesitated. But as he turned, he saw a large crowd of Jews standing with faith and concentration, and he realized that people with such faith left him no choice but to say the blessing. Years later the man sent him greetings, saying that the answer had stayed with him in hard times.
 
-This account comes from the author Yaffa Eliach, who heard it from the rabbi's family, and it is widely retold. For more on how Jewish faith meets suffering, see [Hope in Hard Times](/learn/hope-in-hard-times) and [Holocaust Remembrance](/learn/holocaust-remembrance).
+This account comes from the author Yaffa Eliach, who heard it from the rabbi's family. For more on how Jewish faith meets suffering, see [Hope in Hard Times](/learn/hope-in-hard-times) and [Holocaust Remembrance](/learn/holocaust-remembrance).
 
 ## A menorah in the hospital
 
@@ -49,7 +49,7 @@ Lighting is a mitzvah and a statement of Jewish identity, and in hard times it a
 Candles or oil are the traditional way. For a hospital, nursing home or any place where flames are not allowed, ask the Rabbi what to do.
 
 ### Where can I read more true Chanukah stories?
-There is a large collection of Chanukah stories. You can also see our [stories](/stories) page, and the guide [Chanukah for kids](/learn/chanukah-for-kids).
+For more stories, see our [stories](/stories) page, and the guide [Chanukah for kids](/learn/chanukah-for-kids).
 
 ### Does Chabad of Lamorinda visit people in the hospital at Chanukah?
 The Rabbi and Rebbetzin visit the sick at home, in hospital and in care facilities. Call 925-384-7242 to ask about a visit.

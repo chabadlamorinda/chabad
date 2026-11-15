@@ -9,13 +9,13 @@ You can light your Chanukah menorah with either olive oil or wax candles, but Ch
 
 ## Oil or candles: which is better?
 
-Both are valid, and a Jew who lights candles has fully done the mitzvah. Jewish law explains that olive oil is the preferred choice for the home, since it recalls the miracle in the Temple, while candles are the common choice in many synagogues. Tea lights in a small cup are fine in a pinch.
+Both are valid, and a Jew who lights candles has fully done the mitzvah. Olive oil is the preferred choice for the home, since it recalls the miracle in the Temple, while candles are the common choice in many synagogues. Tea lights in a small cup are fine in a pinch.
 
 If you have never lit before, candles are the easy start. Many families in Lafayette, Moraga and Orinda begin with a box of candles and move to oil once the children are old enough to love the glow. See [how to light the menorah](/learn/chanukah-menorah) for the blessings and the order.
 
 ## How long must the lights burn?
 
-The lights must burn for at least a half hour after nightfall. Jewish law puts it simply: make sure you have enough fuel to burn into the night.
+The lights must burn for at least a half hour after nightfall. The simple rule: make sure you have enough fuel to burn into the night.
 
 Standard Chanukah candles are made for this, so a box labeled for Chanukah is usually enough. For oil, fill each cup generously. The lights are for the mitzvah of publicizing the miracle, so do not blow them out early to save fuel.
 

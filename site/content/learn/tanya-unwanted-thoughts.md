@@ -17,7 +17,7 @@ Willingly entertaining the thought is different; that is a choice. But the thoug
 
 ## Chapter 27: rejoice, don't be crushed
 
-Chapter 27 takes this further. It speaks of sinful thoughts that come while a person is busy with ordinary affairs. If he pushes them away, he fulfills the Torah's command not to follow after his heart and eyes, and the chapter says this should make him glad. It quotes the Sages' teaching that when a person passively refrains from sin, he is rewarded as though he had actively done a mitzvah.
+Chapter 27 takes this further. It speaks of sinful thoughts that come while a person is busy with ordinary affairs. If he pushes them away, he fulfills the Torah's command not to follow after his heart and eyes, and the chapter says this should make him glad. The chapter quotes the Sages' teaching that when a person passively refrains from sin, he is rewarded as though he had actively done a mitzvah.
 
 Tanya adds two honest points:
 

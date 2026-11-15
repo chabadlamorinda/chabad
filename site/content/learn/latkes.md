@@ -9,7 +9,7 @@ Latkes are crispy fried potato pancakes, a favorite Chanukah food because they a
 
 ## Why we eat latkes on Chanukah
 
-Chanukah remembers the Temple oil that lasted eight days when there was only enough for one. Because of that miracle, it is customary to eat foods cooked in oil, and Jewish tradition names potato pancakes (*latkes*) and jelly doughnuts (*sufganiyot*, see our [sufganiyot](/learn/sufganiyot) guide) as popular favorites. Read more in [Chanukah foods](/learn/chanukah-foods) and the [Chanukah story](/learn/chanukah-story).
+Chanukah remembers the Temple oil that lasted eight days when there was only enough for one. Because of that miracle, it is customary to eat foods cooked in oil, and potato pancakes (*latkes*) and jelly doughnuts (*sufganiyot*, see our [sufganiyot](/learn/sufganiyot) guide) are popular favorites. Read more in [Chanukah foods](/learn/chanukah-foods) and the [Chanukah story](/learn/chanukah-story).
 
 ## A simple latke recipe
 
@@ -43,7 +43,7 @@ This recipe is retold from a basic classic latke recipe. It is pareve (neither m
 
 ## Variations
 
-The tradition suggests replacing the potatoes with 5 medium zucchini or 5 medium carrots for vegetable latkes. Some families add herbs or serve a mix of kinds so everyone can choose. There is also a dairy side to Chanukah: Traditional teaching notes the custom of eating dairy foods, based on the story of Judith, who used cheese to defeat the enemy general. So cheese dishes at your Chanukah table have a place too.
+You can replace the potatoes with 5 medium zucchini or 5 medium carrots for vegetable latkes. Some families add herbs or serve a mix of kinds so everyone can choose. There is also a dairy side to Chanukah: There is also a custom of eating dairy foods, based on the story of Judith, who used cheese to defeat the enemy general. So cheese dishes at your Chanukah table have a place too.
 
 ## Kosher notes
 
@@ -56,7 +56,7 @@ Hot oil can burn. Keep the pan on the back burner, handles turned in, children a
 ## Common questions
 
 ### Why do we eat latkes on Chanukah?
-Latkes are fried in oil, recalling the miracle of the Temple oil that lasted eight days. Jewish tradition lists potato pancakes and jelly doughnuts as customary oily foods.
+Latkes are fried in oil, recalling the miracle of the Temple oil that lasted eight days. Potato pancakes and jelly doughnuts are the customary oily foods.
 
 ### How do I make latkes crispy?
 Squeeze as much liquid as possible out of the grated potatoes and onion, and fry in hot oil without crowding the pan. Serve them right away.
@@ -65,10 +65,10 @@ Squeeze as much liquid as possible out of the grated potatoes and onion, and fry
 A latke made with potatoes, onion, eggs, flour, salt, pepper and oil is pareve if the ingredients are kosher certified. Toppings like sour cream make them dairy.
 
 ### Can I make latkes with other vegetables?
-Yes. The tradition suggests using 5 medium zucchini or 5 medium carrots in place of the potatoes.
+Yes. Use 5 medium zucchini or 5 medium carrots in place of the potatoes.
 
 ### Why do some people eat dairy on Chanukah?
-Traditional teaching notes the custom, based on the story of Judith, who used cheese to entice and defeat the enemy general.
+It is a custom based on the story of Judith, who used cheese to entice and defeat the enemy general.
 
 ## Take the next step
 

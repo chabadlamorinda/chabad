@@ -1,7 +1,7 @@
 ---
 title: הוספת שם עברי לחולה קשה
 description: המנהג היהודי להוסיף שם כמו חיים או רפאל לחולה קשה: למה, איך עושים זאת ואיך מבקשים מהרב לעזור.
-category: Mourning & remembrance
+category: Prayer & Torah
 related: mi-sheberach, bikur-cholim, hebrew-names, tehillim, when-a-loved-one-is-dying
 local: כדי לשאול על הוספת שם לחולה, התקשרו לרב לבקובסקי 925-384-7242 או ראו /help/talk-to-the-rabbi. אנחנו כאן בשבילכם.
 ---

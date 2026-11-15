@@ -11,7 +11,7 @@ If your family in Lafayette, Moraga or Orinda is mourning and a holiday is appro
 
 ## Shabbat during shiva
 
-Shabbat does not end shiva. Jewish tradition explains that it counts as one of the seven days, but "overt mourning" is forbidden on Shabbat. In practice:
+Shabbat does not end shiva. It counts as one of the seven days, but "overt mourning" is forbidden on Shabbat. In practice:
 
 - Mourners wear regular shoes, sit on regular chairs and wear clothes with no signs of mourning.
 - They may attend synagogue and say Kaddish at the appropriate times, but do not lead the service and are not called up to the Torah. (If called by mistake, they may accept.)
@@ -23,7 +23,7 @@ See [shiva](/learn/shiva) and [kaddish](/learn/kaddish).
 
 ## Major holidays end shiva
 
-If Rosh Hashanah, Yom Kippur, Sukkot, Passover or Shavuot begins during shiva, the remaining days of shiva are canceled. This works only if some mourning was observed before the holiday began; even a short time counts, according to Jewish tradition, as the equivalent of the seven days. The mourner then joins the holiday fully: shofar on Rosh Hashanah, the sukkah and lulav on Sukkot, the Seder and chametz on Passover. The shiva candle may stay lit but should not be in the room where holiday meals are held.
+If Rosh Hashanah, Yom Kippur, Sukkot, Passover or Shavuot begins during shiva, the remaining days of shiva are canceled. This works only if some mourning was observed before the holiday began; even a short time counts as the equivalent of the seven days. The mourner then joins the holiday fully: shofar on Rosh Hashanah, the sukkah and lulav on Sukkot, the Seder and chametz on Passover. The shiva candle may stay lit but should not be in the room where holiday meals are held.
 
 ## If the death or burial is during a holiday
 
@@ -37,7 +37,7 @@ Sheloshim (שְׁלוֹשִׁים, "thirty") is the 30 days from burial. A holid
 
 These are minor holidays and do not cancel shiva.
 
-- **Chanukah.** Chassidic teaching says it is not among the holidays that end shiva. Mourners light the menorah with the blessing. See [Chanukah](/holidays/chanukah).
+- **Chanukah.** It is not among the holidays that end shiva. Mourners light the menorah with the blessing. See [Chanukah](/holidays/chanukah).
 - **Purim.** Shiva continues in its softened form: no low stool and ordinary shoes, but no parties. A mourner still hears the Megillah (the Book of Esther), gives gifts of food to a friend, charity to at least two poor people and takes part in a meal. Joyous foods and drinks are left out of the gifts, and visitors may bring food to the family but should not give mishloach manot to the mourner. See [Purim](/holidays/purim).
 
 ## Grief during the holidays

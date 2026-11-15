@@ -9,7 +9,7 @@ A dvar Torah (דבר תורה, "a word of Torah") is a short thought about the w
 
 ## Why words of Torah at the table
 
-The Mishnah in Pirkei Avot (3:3) teaches that when three people eat at one table and speak words of Torah, it is as though they ate at G-d's table. Chassidic commentary on this teaching explains that Torah turns an ordinary meal into something holy, because body, soul and food come together as one. That is why many families in Lafayette, Moraga and Orinda add a Torah thought to Friday night. Jewish tradition also notes the custom of waiting until after the food is eaten to speak words of Torah; ask the Rabbi how your family should do this.
+The Mishnah in Pirkei Avot (3:3) teaches that when three people eat at one table and speak words of Torah, it is as though they ate at G-d's table. Chassidic commentary on this teaching explains that Torah turns an ordinary meal into something holy, because body, soul and food come together as one. That is why many families in Lafayette, Moraga and Orinda add a Torah thought to Friday night. There is also a custom of waiting until after the food is eaten to speak words of Torah; ask the Rabbi how your family should do this.
 
 ## A three-minute recipe
 

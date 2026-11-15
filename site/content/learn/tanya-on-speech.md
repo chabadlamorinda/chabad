@@ -60,7 +60,7 @@ It is from Deuteronomy 30:14. The Tanya (Chapter 35) reads it as pointing to spe
 The chapters we studied for this guide do not focus on gossip, but quote the advice to keep away from slander. See [lashon hara](/learn/lashon-hara) for the laws.
 
 ### Does it matter if I don't feel anything when I pray or learn?
-Chassidic teaching says the heart's feelings follow the mind, and that what counts is that they lead to action. Ask the Rabbi about your own situation.
+Chassidic thought says the heart's feelings follow the mind, and that what counts is that they lead to action. Ask the Rabbi about your own situation.
 
 ### Where can I learn the Tanya near Lafayette, Moraga or Orinda?
 Chabad of Lamorinda has a Tanya class in English every Wednesday at 1:00 PM at the Rabbi's home in Lafayette. Call 925-384-7242 for the address.

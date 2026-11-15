@@ -9,17 +9,17 @@ A Jewish legacy gift is a gift to a Jewish cause that you arrange during your li
 
 ## What a legacy gift is
 
-You do not give anything away today. You write down your wishes so that, in time, part of what you leave helps a cause you believe in. Standard guidance describes several ways this can be done:
+You do not give anything away today. You write down your wishes so that, in time, part of what you leave helps a cause you believe in. There are several ways to do this:
 
 - **In a will or living trust:** a specific dollar amount, a particular asset, or a percentage of the estate.
 - **As a beneficiary of a retirement account,** such as an IRA or 401(k), usually by filling in a form with the institution that holds the account.
 - **As a beneficiary of life insurance, an annuity, or a donor-advised fund.**
 
-Chabad of Lamorinda accepts all of these, and also accepts donor-advised fund grants and gifts of stock now, during your lifetime. Chabad of Lamorinda has a Fidelity brokerage account for gifts of stock; call the Rabbi or the Rebbetzin and we will give you the transfer details. A legacy gift counts as maaser, and so does a donor-advised fund grant. An entire estate can be left to Chabad of Lamorinda: the limit of a fifth on giving applies during life, not at death. The usual advice notes that a bequest in a will can be changed if your family's situation changes, and that it does not touch your cash flow while you are alive. It also urges people to work with an experienced estate attorney and to talk with family and a financial advisor. This guide is not legal or tax advice; please ask your attorney and your tax advisor.
+Chabad of Lamorinda accepts all of these, and also accepts donor-advised fund grants and gifts of stock now, during your lifetime. Chabad of Lamorinda has a Fidelity brokerage account for gifts of stock; call the Rabbi or the Rebbetzin and we will give you the transfer details. A legacy gift counts as maaser, and so does a donor-advised fund grant. An entire estate can be left to Chabad of Lamorinda: the limit of a fifth on giving applies during life, not at death. A bequest in a will can be changed if your family's situation changes, and it does not touch your cash flow while you are alive. It also urges people to work with an experienced estate attorney and to talk with family and a financial advisor. This guide is not legal or tax advice; please ask your attorney and your tax advisor.
 
 ## The Jewish meaning of leaving something behind
 
-Judaism has always cared about what we hand on. Common practice presents a planned gift as a contribution to the continuity of the Jewish people and to keeping Torah teachings alive for the next generations. Tzedakah (צְדָקָה) means "justice," and a gift in a will is one more way of doing what is right, even when we are no longer here to do it ourselves. See [Tzedakah](/learn/tzedakah).
+Judaism has always cared about what we hand on. A planned gift is a contribution to the continuity of the Jewish people and to keeping Torah teachings alive for the next generations. Tzedakah (צְדָקָה) means "justice," and a gift in a will is one more way of doing what is right, even when we are no longer here to do it ourselves. See [Tzedakah](/learn/tzedakah).
 
 For Chabad of Lamorinda, a legacy gift is education for future generations: Jewish education for children and families in Lafayette, Moraga and Orinda, the preschool, the Hebrew school and every Shabbat table. It is how Judaism stays alive here after we are gone.
 
@@ -27,14 +27,14 @@ A gift can also carry a name. Many people choose to dedicate it in memory of a p
 
 ## Values and possessions together
 
-A legacy is more than money. An ethical will is a letter that passes on values, memories and life lessons to your children. Standard guidance shares a moving example in which a mother, who says her possessions would fit in a few lines, leaves her children a sense of belonging, faith and identity, and her love and blessing. See [An Ethical Will](/learn/ethical-will).
+A legacy is more than money. An ethical will is a letter that passes on values, memories and life lessons to your children. In one moving example, a mother, who says her possessions would fit in a few lines, leaves her children a sense of belonging, faith and identity, and her love and blessing. See [An Ethical Will](/learn/ethical-will).
 
 If you would like your estate to follow Jewish law for your heirs, that is a separate and important question. See [A Will That Follows Jewish Law](/learn/halachic-will) and ask the Rabbi.
 
 ## Where to begin
 
 1. **Think about what matters most to you.** Which causes, which people, which values?
-2. **Talk with your family.** the usual advice advises discussing your wishes with family, so they hear them from you.
+2. **Talk with your family.** Discuss your wishes with family, so they hear them from you.
 3. **Meet your attorney and financial advisor.** They know the forms and the details. The name to use is Chabad of Lamorinda; give them our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys).
 4. **Tell the Rabbi, if you wish.** For Chabad of Lamorinda, the [legacy page](/legacy) lists ways to include it in your plans, and the Rabbi would be honored to hear what matters to you. Call Rabbi Labkowski at 925-384-7242 (the Rebbetzin, Tzipora Labkowski, is at 925-384-7241) or [talk with the Rabbi](/help/talk-to-the-rabbi).
 
@@ -50,7 +50,7 @@ Yes. The [legacy page](/legacy) describes ways to do this, including a will, a t
 It is a letter that passes on your values, memories and blessings. See [An Ethical Will](/learn/ethical-will). It is a separate thing from a legal will.
 
 ### Can I change my mind later?
-A bequest in a will can be changed, as common practice notes. Your attorney can explain how.
+A bequest in a will can be changed. Your attorney can explain how.
 
 ### Does a legacy gift have tax benefits?
 That depends on your situation. Ask your tax advisor and attorney. This guide does not give tax or legal advice.

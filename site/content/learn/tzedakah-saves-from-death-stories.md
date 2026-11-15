@@ -13,13 +13,13 @@ The story is told this way. Astrologers warned Rabbi Akiva that his daughter wou
 
 Her father asked if she had done anything unusual. She said that in the evening a poor man had come to the door, when everyone was busy with the wedding feast and no one was paying attention to him. She had given him her own portion of the food.
 
-Rabbi Akiva said, "Charity delivers from death." Jewish tradition adds his teaching that charity saves not only from an unnatural death but from death itself.
+Rabbi Akiva said, "Charity delivers from death." He also taught that charity saves not only from an unnatural death but from death itself.
 
 ## The second story: Binyamin HaTzaddik (Bava Batra 11a)
 
 Binyamin the Righteous was in charge of the community's charity fund. A Questions and Answers piece on parshat Re'eh relates that in a year of scarcity, a woman with seven children came for help. He told her the fund was empty. She said that without help she and her children would die. He paid her from his own pocket.
 
-Later Binyamin became gravely ill. In the Talmud's telling, the angels pleaded for him, and his sentence was torn up and twenty-two years were added to his life. The tradition gives two explanations: one connects it to the blessings he earned for giving and for comforting her with kind words, and the other links the twenty-two years to the Hebrew word for "hungry," *ra'eiv* (רָעֵב).
+Later Binyamin became gravely ill. In the Talmud's telling, the angels pleaded for him, and his sentence was torn up and twenty-two years were added to his life. There are two explanations: one connects it to the blessings he earned for giving and for comforting her with kind words, and the other links the twenty-two years to the Hebrew word for "hungry," *ra'eiv* (רָעֵב).
 
 ## How to read these stories
 

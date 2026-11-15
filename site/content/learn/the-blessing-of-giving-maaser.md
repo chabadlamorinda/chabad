@@ -5,17 +5,17 @@ category: Jewish ideas
 related: starting-maaser-step-by-step, tzedakah, jewish-view-on-wealth, leaving-a-jewish-legacy-gift, chesed
 local: Want to talk about maaser or your own situation? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi.
 ---
-The Torah and Hashem promise success for all giving, and maaser is unique because the promise is stated clearly and we are invited to test it: the Talmud reads the Torah's words about tithing as "give a tenth so that you will become rich," and Hashem Himself says, "test Me." The promise is offered with warmth, never with pressure.
+Rabbi Labkowski teaches that Hashem rewards all giving with success, and that maaser is unique because there the Torah states the promise clearly: the Talmud reads the Torah's words about tithing as "give a tenth so that you will become rich," and Hashem Himself says, "test Me." The promise is offered with warmth, never with pressure.
 
 ## "Give a tenth so that you will become rich"
 
-The Torah says "Aser te'aser," which means "you shall surely tithe" (Deuteronomy 14:22). The Talmud (Taanit 9a) reads these words as: "Give a tenth in order that you will become wealthy." Jewish teaching describes maaser as a partnership of 90 and 10: as long as we manage well, we keep ninety percent and G-d has ten. It calls maaser "the only investment that has guaranteed returns."
+The Torah says "Aser te'aser," which means "you shall surely tithe" (Deuteronomy 14:22). The Talmud (Taanit 9a) reads these words as: "Give a tenth in order that you will become wealthy." Maaser is often described as a partnership of 90 and 10: as long as we manage well, we keep ninety percent and G-d has ten. Some call maaser "the only investment that has guaranteed returns."
 
 In Pirkei Avot (3:17), giving maaser is called a fence, a protection for wealth. That is why people call maaser an investment.
 
 ## "Test Me"
 
-Normally, we may not test G-d (Deuteronomy 6:16). But in the prophet Malachi (3:10), Hashem says: "Bring the full tithes into the storehouse... and test Me now with this, if I will not open for you the windows of heaven and pour out a blessing." Here the Torah invites us to do exactly that: give the tenth and see the blessings follow. The Rebbe taught that this permission to test G-d applies to all tzedakah, not only to maaser. The tradition adds that the Torah promises that giving tzedakah will not cause poverty.
+Normally, we may not test G-d (Deuteronomy 6:16). But in the prophet Malachi (3:10), Hashem says: "Bring the full tithes into the storehouse... and test Me now with this, if I will not open for you the windows of heaven and pour out a blessing." Here the Torah invites us to do exactly that: give the tenth and see the blessings follow. The Rebbe taught that this permission to test G-d applies to all tzedakah, not only to maaser. The Torah also promises that giving tzedakah will not cause poverty.
 
 Hashem rewards all giving with success; maaser is unique in that the Torah states the promise in so many words. The promise is success, and it is never a reason for anyone to feel they did something wrong in a hard time. If you are facing hardship, please call the Rabbi at 925-384-7242. Your own basic needs come first, as [Giving When Money Is Tight](/learn/giving-when-money-is-tight) explains.
 
@@ -46,7 +46,7 @@ To arrange any of these, contact Rabbi Yisroel Labkowski at 925-384-7242 or Rebb
 ## Common questions
 
 ### Does Judaism promise that maaser brings success?
-The Torah and Hashem promise success for all giving. Maaser is unique because the promise is stated clearly and we are invited to test it: "test Me" (Malachi 3:10), and the Talmud teaches (Taanit 9a) "give a tenth so that you will become rich."
+Rabbi Labkowski teaches that Hashem rewards all giving with success. Maaser is unique in that the Torah states the promise clearly: "test Me" (Malachi 3:10), and the Talmud teaches (Taanit 9a) "give a tenth so that you will become rich."
 
 ### What does "test Me" mean?
 Hashem invites us, through the prophet Malachi, to bring the full tithes and see the blessing. Normally we may not test G-d; the Talmud (Taanit 9a) makes giving the exception. The Rebbe's ruling is that we may test G-d with all tzedakah, not only with maaser.

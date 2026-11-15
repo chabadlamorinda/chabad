@@ -13,7 +13,7 @@ The stone is called a matzeivah (מצבה) or tzion (ציון).
 
 ## What the inscription includes
 
-According to Jewish tradition, include:
+The inscription traditionally includes:
 
 1. **The Hebrew name** of the person who passed away.
 2. **The Hebrew name of their father.** If you are not sure of the names, ask the Rabbi. See [Hebrew names](/learn/hebrew-names).
@@ -24,7 +24,7 @@ Some people also add the community where the person lived, or the tzaddik or sag
 
 ## Wording and language
 
-- **Hebrew only.** Jewish tradition advises using only Hebrew.
+- **Hebrew only.** It is best to use only Hebrew.
 - **Avoid extravagant praise.** Some believe the soul is held accountable for what is written, so keep the words simple and truthful.
 - **Check before ordering.** Review the text with the Chevra Kadisha or a competent rabbi before it goes to the stonecutter. If you are near Lafayette, you can call Rabbi Labkowski at 925-384-7242 and ask about it.
 
@@ -56,7 +56,7 @@ It stands for "May his (or her) soul be bound in the bond of life." It is part o
 No. Carving or engraving a human figure and mounting photographs are forbidden.
 
 ### Can the inscription be in English?
-Jewish tradition advises using only Hebrew. If you wish to add anything else, ask the Rabbi.
+It is best to use only Hebrew. If you wish to add anything else, ask the Rabbi.
 
 ### When should a Jewish headstone be put up?
 It depends on custom: the day after shiva, after thirty days, or after twelve months. Ask the Rabbi what is customary for your family. The unveiling is usually held within the first year.

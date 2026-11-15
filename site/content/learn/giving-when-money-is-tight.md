@@ -5,29 +5,29 @@ category: Jewish ideas
 related: money-worries, tanya-on-money, the-poor-mans-offering, tzedakah, maaser, giving-anonymously, donor-advised-funds-and-tzedakah
 local: Struggling, or unsure what you can give? Talk with Rabbi Labkowski at 925-384-7242. Everyone is welcome.
 ---
-If money is tight, Jewish law does not ask you to give up your basic needs in order to give maaser (the tenth of income). Chassidic teaching teaches that food, clothing and shelter come first, and that even a person who depends on charity still takes part in giving, with time, kindness and whatever small gift is possible.
+If money is tight, Jewish law does not ask you to give up your basic needs in order to give maaser (the tenth of income). Food, clothing and shelter come first, and even a person who depends on charity still takes part in giving, with time, kindness and whatever small gift is possible.
 
 ## Basic needs come first
 
 According to the laws of maaser, you are not obligated to give maaser if you cannot cover your basic needs: food, clothing, shelter and the essentials of life where you live. Some opinions allow calculating maaser only after basic living expenses, so that only the surplus is tithed. Debts that are due now come before maaser too; if you cannot pay both, repay the debt first.
 
-The guide also records that the Rebbe, Rabbi Menachem Mendel Schneerson, encouraged giving a partial amount, for example five percent, and keeping a record to make up the rest later if possible. Even then, give at least some tzedakah each year. In every case of financial difficulty, Jewish tradition recommends speaking to a rabbi. See [Maaser](/learn/maaser).
+The guide also records that the Rebbe, Rabbi Menachem Mendel Schneerson, encouraged giving a partial amount, for example five percent, and keeping a record to make up the rest later if possible. Even then, give at least some tzedakah each year. In every case of financial difficulty, speak to a rabbi. See [Maaser](/learn/maaser).
 
 ## Even a person who receives tzedakah gives
 
-The Jewish teaching on tzedakah is that even someone who relies on others' charity should still perform acts of charity. This is a point about dignity: no one is only a receiver. Giving is part of being human.
+The Talmud teaches that even someone who relies on others' charity should still perform acts of charity. This is a point about dignity: no one is only a receiver. Giving is part of being human.
 
-Giving is not limited to money. Giving also includes time, expertise, attention and a kind word. Examples include cooking for an elderly neighbor, visiting someone who is ill, or volunteering at a school. The tradition also says that if you have no money, offer empathy and kind words, but never walk away without responding.
+Giving is not limited to money. Giving also includes time, expertise, attention and a kind word. Examples include cooking for an elderly neighbor, visiting someone who is ill, or volunteering at a school. If you have no money, offer empathy and kind words, but never walk away without responding.
 
 ## Ways to give without much money
 
-1. **A coin.** Jewish tradition suggests dropping coins in a pushka at least once a day, and before Shabbat candles. A small coin, given often, builds the habit. See [The Pushka](/learn/pushka) and [Tzedakah Before Lighting Candles](/learn/tzedakah-before-candle-lighting).
+1. **A coin.** Drop coins in a pushka at least once a day, and before Shabbat candles. A small coin, given often, builds the habit. See [The Pushka](/learn/pushka) and [Tzedakah Before Lighting Candles](/learn/tzedakah-before-candle-lighting).
 2. **Time.** Visiting the sick, helping a neighbor, or volunteering at a school are all given as examples. See [Visiting Someone in a Nursing Home](/learn/visiting-someone-in-a-nursing-home).
-3. **Food.** The tradition notes that food is especially valuable because it can be used right away, with no conditions attached. See [Cooking for Someone in Need](/learn/cooking-for-someone-in-need).
+3. **Food.** Food is especially valuable because it can be used right away, with no conditions attached. See [Cooking for Someone in Need](/learn/cooking-for-someone-in-need).
 4. **A kind word.** A phone call or a note counts.
-5. **Help with work.** Jewish tradition calls helping someone find a job a very high form of giving. See [The Highest Tzedakah](/learn/helping-someone-become-self-sufficient).
+5. **Help with work.** Helping someone find a job is a very high form of giving. See [The Highest Tzedakah](/learn/helping-someone-become-self-sufficient).
 
-Volunteer time can also be counted toward maaser, according to Jewish tradition, but only in a specific way, so ask the Rabbi.
+Volunteer time can also be counted toward maaser, but only in a specific way, so ask the Rabbi.
 
 ## Not cutting back on Shabbat
 
@@ -40,10 +40,10 @@ At Chabad of Lamorinda, you can read [help for seniors and families](/help/help-
 ## Common questions
 
 ### How much tzedakah should I give if I am poor?
-Basic needs come first, and you are not obligated to give maaser if you cannot cover them, according to Jewish tradition. Many give a smaller amount, and the Rebbe encouraged partial giving. Ask the Rabbi.
+Basic needs come first, and you are not obligated to give maaser if you cannot cover them. Many give a smaller amount, and the Rebbe encouraged partial giving. Ask the Rabbi.
 
 ### Does someone who receives charity also give tzedakah?
-Yes. The tradition says that even someone who relies on charity should perform acts of charity, which can be time, a kind word or whatever is possible.
+Yes. Even someone who relies on charity should perform acts of charity, which can be time, a kind word or whatever is possible.
 
 ### Can I give time instead of money?
 Yes. Time, expertise, attention and kindness are all ways to give.
@@ -52,10 +52,10 @@ Yes. Time, expertise, attention and kindness are all ways to give.
 Debts that are due now come first. If you cannot pay both, repay the debt first. Debts on a fixed schedule, such as a mortgage, allow you to give maaser while making payments. Ask the Rabbi about your case.
 
 ### Should I feel guilty if I cannot give much?
-No. Judaism asks you to give what you can, with warmth. Jewish tradition says that how you give matters more than how much.
+No. Judaism asks you to give what you can, with warmth. How you give matters more than how much.
 
 ### Where can I ask a personal question about my finances and giving?
-Call Rabbi Labkowski at 925-384-7242. The tradition says that in cases of financial difficulty you should consult a rabbi.
+Call Rabbi Labkowski at 925-384-7242. In cases of financial difficulty, consult a rabbi.
 
 ## Take the next step
 

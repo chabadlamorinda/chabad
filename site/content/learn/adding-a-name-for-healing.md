@@ -1,7 +1,7 @@
 ---
 title: Adding a Hebrew Name for Someone Who Is Seriously Ill
 description: The Jewish custom of adding a name such as Chaim or Rafael for a person who is very ill: why, how it is done, and how to ask the Rabbi to help.
-category: Mourning & remembrance
+category: Prayer & Torah
 related: mi-sheberach, bikur-cholim, hebrew-names, tehillim, when-a-loved-one-is-dying
 local: To ask about adding a name for someone who is ill, call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi. We are here for you.
 ---

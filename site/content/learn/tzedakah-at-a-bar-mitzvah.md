@@ -17,17 +17,17 @@ For a Bat Mitzvah, many families follow the same spirit: a girl's first tzedakah
 
 ## What about the gift money?
 
-Cash gifts are a common part of the celebration. Jewish law teaches that maaser (a tenth) is usually given from all income, including gifts. Cash gifts are normally subject to maaser, but if money is given for a specific purpose, such as tuition or another basic need, it is exempt. If the giver is not particular about how it is spent, maaser should be taken. It is a good idea for a young person who has just received a bar mitzvah check to choose a charity for the tithe. If you are unsure about a particular gift, ask the Rabbi.
+Cash gifts are a common part of the celebration. Maaser (a tenth) is usually given from all income, including gifts. Cash gifts are normally subject to maaser, but if money is given for a specific purpose, such as tuition or another basic need, it is exempt. If the giver is not particular about how it is spent, maaser should be taken. It is a good idea for a young person who has just received a bar mitzvah check to choose a charity for the tithe. If you are unsure about a particular gift, ask the Rabbi.
 
-The Torah invites us to test G-d with maaser (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. The Torah and Hashem promise success for all giving; maaser is unique because the promise is stated clearly and we are invited to test it, and the Rebbe taught that we may test G-d with all tzedakah. For any personal question, ask the Rabbi. For a young person this can be the first lesson in how giving and blessing go together. See [Maaser](/learn/maaser) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
+The Torah invites us to test G-d with maaser (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Rabbi Labkowski teaches that Hashem rewards all giving with success; maaser is unique in that the Torah states the promise clearly, and the Rebbe taught that we may test G-d with all tzedakah. For any personal question, ask the Rabbi. For a young person this can be the first lesson in how giving and blessing go together. See [Maaser](/learn/maaser) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
 
 ## Giving in multiples of 18
 
-Many families give gifts and tzedakah in multiples of 18, the numerical value of *chai* (חַי, "life"). The custom is that this blesses both the giver and the receiver with a good, long life, and that the Rebbe sometimes advised other amounts: the main thing is to give as much as one can. See [Gifts in Multiples of 18](/learn/gifts-in-multiples-of-18).
+Many families give gifts and tzedakah in multiples of 18, the numerical value of *chai* (חַי, "life"). Giving in multiples of 18 is said to bless both the giver and the receiver with a good, long life, and the Rebbe sometimes advised other amounts: the main thing is to give as much as one can. See [Gifts in Multiples of 18](/learn/gifts-in-multiples-of-18).
 
 ## The family gives, too
 
-Parents can give in honor of the day, to a Jewish school, a synagogue or a cause close to the child's heart. Because Jewish custom is that the parents should also give when the Bar Mitzvah falls on Shabbat, giving is clearly meant to be a family act. For ideas about a project, see [Bat Mitzvah Projects](/learn/bat-mitzvah-projects).
+Parents can give in honor of the day, to a Jewish school, a synagogue or a cause close to the child's heart. Because the custom is that the parents should also give when the Bar Mitzvah falls on Shabbat, giving is clearly meant to be a family act. For ideas about a project, see [Bat Mitzvah Projects](/learn/bat-mitzvah-projects).
 
 A gift to Chabad of Lamorinda can also mark the day. Chabad of Lamorinda in Lafayette serves families from Lafayette, Moraga and Orinda, and gifts support Jewish education and community life. Give through [the website](/donate). Chabad of Lamorinda also accepts donor-advised fund grants, which count as maaser. A grandparent might like to give in honor of a grandchild: see [the legacy page](/legacy) and ask your tax advisor about details.
 

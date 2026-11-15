@@ -9,9 +9,9 @@ According to Jewish law, a person's first duty in giving tzedakah (charity, lite
 
 ## What Jewish law says about priority
 
-Maimonides, in his Laws of Gifts to the Poor sets the order. A poor relative comes before everyone else. The poor of your own household come before the poor of your city, and the poor of your own city come before the poor of another city. He adds that the poor of the Land of Israel come before those of other places, but not before the poor of your own city. If a person gives to "the poor" without saying where, the money goes to the poor of their own city.
+Maimonides, in his Laws of Gifts to the Poor, sets the order. A poor relative comes before everyone else. The poor of your own household come before the poor of your city, and the poor of your own city come before the poor of another city. He adds that the poor of the Land of Israel come before those of other places, but not before the poor of your own city. If a person gives to "the poor" without saying where, the money goes to the poor of their own city.
 
-Jewish tradition describes the same idea as concentric circles: family first, then local needs and institutions, then the wider world. Tzedakah also means giving a tenth of your income, called maaser, and those who can aim for a fifth. Money is understood as a trust from G-d, given to us to share.
+The same idea can be pictured as concentric circles: family first, then local needs and institutions, then the wider world. Tzedakah also means giving a tenth of your income, called maaser, and those who can aim for a fifth. Money is understood as a trust from G-d, given to us to share.
 
 This is the general rule, and it is not a command to ignore far-away suffering. Real life is full of exceptions, so for your own situation, ask the Rabbi. Read more in [tzedakah priorities](/learn/tzedakah-priorities) and [tzedakah](/learn/tzedakah).
 
@@ -53,7 +53,7 @@ According to Maimonides, a poor relative comes first, then the poor of your own 
 It means that the needy people closest to you take priority over those far away. In Lafayette, Moraga and Orinda, that means the neighbors and families around you.
 
 ### How much tzedakah should I give?
-The tradition describes giving a tenth of income as the proper amount, with a fifth for those who are able. Speak to the Rabbi about how to start.
+The proper amount to give is a tenth of income, with a fifth for those who are able. Speak to the Rabbi about how to start.
 
 ### What is maot chitim?
 Maot chitim (מעות חיטים), "money for wheat," is the custom of giving so that every Jewish family can celebrate Passover. See [maot chitim](/learn/maot-chitim).

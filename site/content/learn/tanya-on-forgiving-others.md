@@ -11,7 +11,7 @@ Forgiveness is hard, and this guide is not meant to make it sound simple. It loo
 
 ## What Epistle 25 says
 
-The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter included at the end of the [Tanya](/learn/tanya) (Epistle 25 of Iggeret HaKodesh). According to the text:
+The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter included at the end of the [Tanya](/learn/tanya) (Epistle 25 of Iggeret HaKodesh). The letter teaches:
 
 - The Sages compare an angry person to an idolater, because at that moment he has forgotten that what happens in his life comes from G-d.
 - The person who hurt us is a free agent. He is responsible, before human courts and before Heaven, for his own wrongdoing.

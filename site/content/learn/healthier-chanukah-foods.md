@@ -21,7 +21,7 @@ A baked latke recipe, which is pareve, is retold here:
 4. Drop by the tablespoon onto the sheets and flatten slightly.
 5. Bake about 10 minutes, flip, and bake about 5 more until golden.
 
-It makes about two dozen. Jewish tradition says you can make them a day ahead, refrigerate, and reheat at 350°F. A tip: add back the starch that settles at the bottom of the bowl, which helps them hold together.
+It makes about two dozen. You can make them a day ahead, refrigerate, and reheat at 350°F. A tip: add back the starch that settles at the bottom of the bowl, which helps them hold together.
 
 ## No-fry latkes
 
@@ -58,7 +58,7 @@ The custom is to eat foods made with oil. A baked latke includes a little oil, a
 Baked potato latkes made with potatoes, onion, eggs, flour and oil are pareve if every ingredient is kosher certified. Cheese or sour cream makes them dairy.
 
 ### How do I make gluten-free latkes?
-The tradition suggests arrowroot flour as the binder for zucchini latkes. For health needs, ask your doctor and read every label.
+Use arrowroot flour as the binder for zucchini latkes. For health needs, ask your doctor and read every label.
 
 ### Can I make healthier latkes ahead of time?
 Yes. Bake and refrigerate overnight, or freeze in a single layer, then reheat in the oven.

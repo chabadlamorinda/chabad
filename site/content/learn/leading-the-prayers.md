@@ -9,7 +9,7 @@ The chazzan (חזן), also called the shliach tzibbur (שליח ציבור, "the
 
 ## What the leader does
 
-According to Jewish law, the chazzan represents the congregation. When there is a minyan of ten, he says the parts of the service that are reserved for the leader:
+The chazzan represents the congregation. When there is a minyan of ten, he says the parts of the service that are reserved for the leader:
 
 - **Barchu** (ברכו), the call to prayer before the Shema.
 - **Kaddish** (קדיש), said between sections of the service.
@@ -29,14 +29,14 @@ Many first-timers start with **Mincha**, the short afternoon service, and with *
 
 1. **Ask the Rabbi to go through it with you** before the day, and note exactly where you stand and when you pause.
 2. **Practice the order.** Read the text aloud in the siddur, with a transliteration if needed. See [the siddur](/learn/siddur).
-3. **Use familiar melodies.** Halacha advises using tunes the congregation knows and not stretching the prayers, which burdens the congregation.
+3. **Use familiar melodies.** Choose tunes the congregation knows and do not stretch the prayers, which burdens the congregation.
 4. **Pace yourself.** Speak clearly and not too fast.
 5. **Dress with respect,** as if standing before a king, and ask the Rabbi about tallit customs, which vary.
 6. **Pause at the right moments.** Ask the Rabbi to mark them in your siddur.
 
 ## Nerves, kavanah and community
 
-Feeling nervous is natural. Chabad teaches that prayer comes from the heart, and what matters is your sincerity, not a perfect voice. The law notes that someone who is asked by the rabbi should simply accept. The community supports you, and if you stumble, someone beside you can help. Many people say that leading for a parent gives a feeling of closeness that they did not expect. See [Kaddish](/learn/kaddish) and, for other roles in the service, [Who Does What in Shul](/learn/synagogue-roles).
+Feeling nervous is natural. Chabad teaches that prayer comes from the heart, and what matters is your sincerity, not a perfect voice. Someone who is asked by the rabbi should simply accept. The community supports you, and if you stumble, someone beside you can help. Many people say that leading for a parent gives a feeling of closeness that they did not expect. See [Kaddish](/learn/kaddish) and, for other roles in the service, [Who Does What in Shul](/learn/synagogue-roles).
 
 ## Common questions
 

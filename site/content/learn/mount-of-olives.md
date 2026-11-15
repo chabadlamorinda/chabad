@@ -9,7 +9,7 @@ The Mount of Olives (Har HaZeitim, הַר הַזֵּיתִים) is a hill beside
 
 ## Where it is
 
-The Mount of Olives lies near the Temple Mount in Jerusalem, the place where the Holy Temples stood (see [The Holy Temple](/learn/the-holy-temple)). The cemetery is among the facts every Jew should know about Jerusalem. For the story of the city itself, read [Jerusalem in Judaism](/learn/jerusalem).
+The Mount of Olives lies near the Temple Mount in Jerusalem, the place where the Holy Temples stood (see [The Holy Temple](/learn/the-holy-temple)). The cemetery is one of the things every Jew should know about Jerusalem. For the story of the city itself, read [Jerusalem in Judaism](/learn/jerusalem).
 
 ## Why people want to be buried there
 
@@ -41,7 +41,7 @@ According to tradition, the resurrection of the dead will begin there when Moshi
 No. The hope of resurrection belongs to every Jew, wherever he or she is buried. For questions about your own situation, ask the Rabbi.
 
 ### Is it possible to be buried in Israel if I live in California?
-Some families do arrange it, and plots are costly. Ask the Rabbi early, so you understand the choices and the arrangements.
+Some families do arrange it, though plots are costly. Ask the Rabbi early, so you understand the choices and the arrangements.
 
 ### What is the Jewish view of what happens after death?
 Jewish tradition teaches that the soul lives on and that, in the time of Moshiach, the dead will be revived. Read more in [The Afterlife](/learn/afterlife) and [Moshiach](/learn/moshiach).

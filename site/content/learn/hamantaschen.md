@@ -9,7 +9,7 @@ Hamantaschen (אוזני המן, *oznei Haman*) are triangular, filled pastries 
 
 ## Why do we eat hamantaschen?
 
-Chassidic teaching explains that the oldest name for the pastry is *oznei Haman*, "Haman's ears." That name appears in a 16th-century Italian Purim skit, and it led to a myth that the pastries commemorate cutting off Haman's ears, but Jewish tradition notes there is no record of such a thing. A better explanation lies in the Yiddish name: poppy-seed pockets.
+The oldest name for the pastry is *oznei Haman*, "Haman's ears." That name appears in a 16th-century Italian Purim skit, and it led to a myth that the pastries commemorate cutting off Haman's ears, but there is no record of such a thing. A better explanation lies in the Yiddish name: poppy-seed pockets.
 
 The classic filling was always poppy seeds, which the halachic sources specifically mention. The custom is tied to Esther, who, in the palace of the king, ate beans and seeds, and eating seeds on Purim recalls her. Today, hamantaschen can be filled with almost anything, sweet or savory.
 

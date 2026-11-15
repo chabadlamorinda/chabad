@@ -9,7 +9,7 @@ In an apartment, condo or dorm, place the menorah inside the doorway of your hom
 
 ## The two places for the menorah
 
-The menorah is meant to be seen, so that people remember the miracle. Jewish law describes two ways:
+The menorah is meant to be seen, so that people remember the miracle. There are two ways to do this:
 
 - **At the doorway:** place it on a chair or small table just inside the door, on the left side as you walk in, so that you pass between the menorah and the [mezuzah](/learn/mezuzah) on the right. This is the Chabad custom, and it works well in an apartment, where the inside door is often the only door.
 - **In a window facing the street:** this is also a good custom, as long as the window is not too far from the ground.

@@ -11,7 +11,7 @@ If you are expecting a baby boy in Lafayette, Moraga or Orinda, here is who does
 
 ## The sandek
 
-The sandek holds the baby on his lap during the circumcision. Jewish tradition explains that the place where the baby lies, the sandek's lap, is likened to an altar, and calls this the greatest honor at the ceremony. It is therefore traditionally given to someone of exceptionally good character, often a grandfather or other respected relative.
+The sandek holds the baby on his lap during the circumcision. The place where the baby lies, the sandek's lap, is likened to an altar, and this is considered the greatest honor at the ceremony. It is therefore traditionally given to someone of exceptionally good character, often a grandfather or other respected relative.
 
 Traditionally, the sandek immerses in a mikvah beforehand, receives an aliyah to the Torah on the Shabbat before or the day of the brit, and often gives the parents or baby a meaningful gift. A separate "standing sandek" holds the baby for the blessings and the naming. Since one man does the first job and another the second, this gives you two honors to give.
 
@@ -19,17 +19,17 @@ Practical tip: the sandek will sit for a while, so provide a steady chair, and t
 
 ## The kvater
 
-The kvater honor goes to a couple. The wife takes the baby from the mother (or from women who pass him along) and hands him to her husband, who brings him to the mohel. The words "kvater" and "kvaterin" are the man and woman of the pair. Jewish tradition says that, traditionally, a pregnant woman does not serve as kvaterin. If this applies to someone you are thinking of, ask the Rabbi.
+The kvater honor goes to a couple. The wife takes the baby from the mother (or from women who pass him along) and hands him to her husband, who brings him to the mohel. The words "kvater" and "kvaterin" are the man and woman of the pair. Traditionally, a pregnant woman does not serve as kvaterin. If this applies to someone you are thinking of, ask the Rabbi.
 
 Kvater is sometimes translated "godparent," but the role is an honor at the ceremony, not a promise to raise the child.
 
 ## The chair of Elijah
 
-If it is your family's custom, a special chair is prepared for Elijah the Prophet, called Kisei shel Eliyahu (כסא של אליהו). One person places the baby on that chair, and another lifts him afterward and gives him to his father. The tradition says this is a custom and not required everywhere.
+If it is your family's custom, a special chair is prepared for Elijah the Prophet, called Kisei shel Eliyahu (כסא של אליהו). One person places the baby on that chair, and another lifts him afterward and gives him to his father. This is a custom and not required everywhere.
 
 ## Other honors
 
-Traditional circumcision checklists list additional honors, such as:
+A brit has additional honors, such as:
 
 - Reciting the blessings
 - Reading the blessing for the naming of the child

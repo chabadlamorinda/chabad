@@ -9,21 +9,21 @@ Jews live in communities all over the world because, after the Temple was destro
 
 ## How the Jewish people spread
 
-Jewish tradition tells that after the destruction of the Second Temple, Jews were dispersed around the world. The first great communities took root in Babylon. Communities also formed in Spain and North Africa. Over centuries of persecution and expulsion, many Jews moved gradually eastward through France and Germany to Poland and Russia. Jews settled where they were allowed to live, and even in hard times, magnificent Jewish communities were built. For the longer story, see [Jewish History: An Overview](/learn/jewish-history-overview).
+After the destruction of the Second Temple, Jews were dispersed around the world. The first great communities took root in Babylon. Communities also formed in Spain and North Africa. Over centuries of persecution and expulsion, many Jews moved gradually eastward through France and Germany to Poland and Russia. Jews settled where they were allowed to live, and even in hard times, magnificent Jewish communities were built. For the longer story, see [Jewish History: An Overview](/learn/jewish-history-overview).
 
 ## Ashkenazim and Sephardim
 
 Jewish communities are often described by the lands where they developed (see [Ashkenazi and Sephardi Jews](/learn/ashkenazi-and-sephardi)).
 
 - **Ashkenazim** developed their culture in Europe. Many Ashkenazim follow the rulings of Rabbi Moshe Isserles on the Shulchan Aruch. Foods such as chicken soup with kneidlach, which many Americans call "Jewish food," come from Ashkenazi kitchens.
-- **Sephardim** come from Sepharad, the ancient Hebrew name for Spain. Jewish tradition notes that after the expulsion of 1492, Jews from Spain settled in Morocco, Portugal, Turkey and beyond. Many Sephardim follow the rulings of Rabbi Yosef Caro and have their own Mediterranean-style cuisine. Ladino, a Jewish form of Spanish with many Hebrew words, was spoken in many of these communities (see [Jewish Languages](/learn/jewish-languages)).
+- **Sephardim** come from Sepharad, the ancient Hebrew name for Spain. After the expulsion of 1492, Jews from Spain settled in Morocco, Portugal, Turkey and beyond. Many Sephardim follow the rulings of Rabbi Yosef Caro and have their own Mediterranean-style cuisine. Ladino, a Jewish form of Spanish with many Hebrew words, was spoken in many of these communities (see [Jewish Languages](/learn/jewish-languages)).
 - **Mizrahim or Eidot HaMizrach**, "Communities of the East," is a more accurate term for Jews of Eastern origin. Yemenite Jews, whose tradition is older and did not come through Spain, and Persian Jews, who trace their roots to the Babylonian exile, are not Sephardic.
 
-Jewish sources say that roughly half of Israel's Jews are Sephardim, and that the first Jews in what became the United States and Canada were Sephardic.
+Roughly half of Israel's Jews are Sephardim, and the first Jews in what became the United States and Canada were Sephardic.
 
 ## Jews in far-off places
 
-Wherever there are Jews, even a few, there is a Jewish story. Jewish teaching tells of Jewish communities in places such as Perth in Western Australia, Manaus in the Amazon, St. John's in Newfoundland and Kaua'i in Hawaii, where a Chabad house serves as a hub of Jewish life. The tradition also reports that more than 6,500 Chabad couples now serve Jewish communities in every U.S. state and in more than 100 countries (see [Chabad](/learn/chabad)).
+Wherever there are Jews, even a few, there is a Jewish story. There are Jewish communities in places such as Perth in Western Australia, Manaus in the Amazon, St. John's in Newfoundland and Kaua'i in Hawaii, where a Chabad house serves as a hub of Jewish life. More than 6,500 Chabad couples now serve Jewish communities in every U.S. state and in more than 100 countries (see [Chabad](/learn/chabad)).
 
 ## Reuniting after hard times
 
@@ -42,13 +42,13 @@ After the Second Temple was destroyed, Jews were dispersed. They settled where t
 Ashkenazim developed in Europe, and Sephardim trace their origins to Spain. Their customs, foods and some rulings differ, but the Torah is the same.
 
 ### Are Mizrahi Jews the same as Sephardic Jews?
-Often they are called by the same name, but Jewish teaching says "Communities of the East" is more accurate. Yemenite and Persian Jews, for example, are not Sephardic.
+Often they are called by the same name, but "Communities of the East" is more accurate. Yemenite and Persian Jews, for example, are not Sephardic.
 
 ### What language did Jews speak around the world?
 Jews spoke the languages of their lands, as well as Hebrew for prayer. Ladino and Yiddish are well-known examples (see [Jewish Languages](/learn/jewish-languages)).
 
 ### Does Chabad serve Jews in every country?
-Jewish sources say that Chabad couples serve every U.S. state and more than 100 countries.
+Chabad couples serve every U.S. state and more than 100 countries.
 
 ### Where can I meet Jews of every background near Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242, or see [Welcome](/welcome) and [Events](/events).

@@ -15,7 +15,7 @@ Every room used by people needs a [mezuzah](/learn/mezuzah), and a nursery is no
 
 ## Shir Hamaalot near the crib
 
-Jewish tradition describes the custom of hanging a card with Psalm 121 near the newborn's crib, so that the baby's first sight is something holy and for protection. Because it carries Divine Names, it is covered in any room where the baby is changed, and there are different opinions about how, so ask the Rabbi. Read more in [Shir Hamaalot cards for a newborn](/learn/shir-hamaalot-for-newborns).
+It is a custom to hang a card with Psalm 121 near the newborn's crib, so that the baby's first sight is something holy and for protection. Because it carries Divine Names, it is covered in any room where the baby is changed, and there are different opinions about how, so ask the Rabbi. Read more in [Shir Hamaalot cards for a newborn](/learn/shir-hamaalot-for-newborns).
 
 ## A tzedakah box
 
@@ -30,7 +30,7 @@ A tzedakah box on the wall or shelf teaches giving as a part of daily life. Even
 
 ## Songs and early habits
 
-Jewish tradition teaches that children begin learning very early. As soon as a child starts to speak, he is taught key Torah verses, including the Shema, and the mother is often the most effective teacher. Even before words, a baby hears the songs we sing. Read about the [Shema before bed](/learn/bedtime-shema) and [Jewish lullabies](/learn/jewish-lullabies). The first blessings and prayers traditionally begin around age three.
+Children begin learning very early. As soon as a child starts to speak, he is taught key Torah verses, including the Shema, and the mother is often the most effective teacher. Even before words, a baby hears the songs we sing. Read about the [Shema before bed](/learn/bedtime-shema) and [Jewish lullabies](/learn/jewish-lullabies). The first blessings and prayers traditionally begin around age three.
 
 ## Common questions
 
@@ -44,7 +44,7 @@ A mezuzah on the door, a Shir Hamaalot card, a tzedakah box and a few holy books
 On or near the baby's crib. Cover it in any room where the baby is changed, and ask the Rabbi how, since opinions differ.
 
 ### Can I decorate the nursery in any style?
-Yes. Any color and design is fine. The tradition suggests avoiding pictures of non-kosher animals or negative images, and adding a few meaningful, holy touches.
+Yes. Any color and design is fine. It is best to avoid pictures of non-kosher animals or negative images, and to add a few meaningful, holy touches.
 
 ### When should we set up the nursery's Jewish items?
 Ideally before the due date, so they are in place when the baby comes home. See [new parents in Lamorinda](/learn/new-parents-in-lamorinda).

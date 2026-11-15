@@ -29,7 +29,7 @@ The epistle gives no practical advice on earning, budgeting or debt. It speaks t
 
 ## Giving and success: the Rabbi's teaching
 
-The Torah and G-d promise success for all giving of tzedakah. Maaser, giving a tenth of your income, is unique because the promise is stated clearly and we are invited to test it: the Talmud (Taanit 9a) teaches, "Give a tenth in order that you will become wealthy," and in the prophet Malachi (3:10) G-d says, "Test Me on this." The Rebbe taught that we may test G-d in this way with all tzedakah, not only with maaser. A legacy gift and a donor-advised fund grant also count as maaser.
+G-d promises success for all giving of tzedakah. Maaser, giving a tenth of your income, is unique because the promise is stated clearly and we are invited to test it: the Talmud (Taanit 9a) teaches, "Give a tenth in order that you will become wealthy," and in the prophet Malachi (3:10) G-d says, "Test Me on this." The Rebbe taught that we may test G-d in this way with all tzedakah, not only with maaser. A legacy gift and a donor-advised fund grant also count as maaser.
 
 This is not meant to pressure anyone, and no one who is struggling has done anything wrong. If your situation is hard, call the Rabbi. See [maaser](/learn/maaser) and [does tzedakah bring wealth](/learn/does-tzedakah-bring-wealth), or [giving when money is tight](/learn/giving-when-money-is-tight).
 
@@ -49,7 +49,7 @@ The Tanya does not call earning wrong. Chapter 37 treats honest earnings as carr
 Epistle 11 teaches trust in G-d as the spiritual answer. It does not offer financial advice, so seek practical help too, and talk to the Rabbi if the worry is heavy.
 
 ### Is giving tzedakah a promise of success?
-Yes. The Torah and G-d promise success for all giving. Maaser is unique because the promise is stated clearly and we are invited to test it: G-d says "Test Me" about the tithe (Malachi 3:10), and the Talmud teaches "give a tenth in order that you will become wealthy" (Taanit 9a). For personal situations, call the Rabbi.
+Yes. G-d promises success for all giving. Maaser is unique because the promise is stated clearly and we are invited to test it: G-d says "Test Me" about the tithe (Malachi 3:10), and the Talmud teaches "give a tenth in order that you will become wealthy" (Taanit 9a). For personal situations, call the Rabbi.
 
 ### Does tzedakah count if I earn little?
 Chapter 37 says even someone who does not work for a living gives the life of his soul when he gives. Ask the Rabbi what is right for you; see [giving when money is tight](/learn/giving-when-money-is-tight).

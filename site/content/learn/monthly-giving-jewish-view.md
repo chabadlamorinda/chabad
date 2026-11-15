@@ -27,7 +27,7 @@ Jewish tradition also teaches that how you give matters more than how much. So a
 
 ## Maaser: a tenth, month by month
 
-Many people give maaser, a tenth of their income, and it fits well with monthly giving, since income arrives month by month. The Torah invites us to test G-d with the tithe (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. The Torah and Hashem promise success for all giving; maaser is unique because the promise is stated clearly and we are invited to test it. It is never meant to make anyone feel guilty, and if you are going through a hard time, please call the Rabbi at 925-384-7242. Jewish law teaches that business expenses and taxes withheld by law may be deducted before figuring the tenth; ask the Rabbi about your own case. See [Maaser](/learn/maaser).
+Many people give maaser, a tenth of their income, and it fits well with monthly giving, since income arrives month by month. The Torah invites us to test G-d with the tithe (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Rabbi Labkowski teaches that Hashem rewards all giving with success; maaser is unique in that the Torah states the promise clearly. It is never meant to make anyone feel guilty, and if you are going through a hard time, please call the Rabbi at 925-384-7242. Business expenses and taxes withheld by law may be deducted before figuring the tenth; ask the Rabbi about your own case. See [Maaser](/learn/maaser).
 
 ## Giving monthly to Chabad of Lamorinda
 
@@ -51,7 +51,7 @@ It is Chabad of Lamorinda's monthly partners. See [the Chai Club page](/chai-clu
 Many people set aside a tenth of each month's income. Ask the Rabbi how to calculate it for your situation.
 
 ### Is maaser a promise of success?
-Yes, and so is all giving: the Torah and Hashem promise success for all giving. Maaser is unique because the promise is stated clearly and we are invited to test it: test G-d with the tithe (Malachi 3:10), and the Talmud teaches to give a tenth so that you will become rich. Call the Rabbi for personal questions.
+Yes, and so is all giving: Rabbi Labkowski teaches that Hashem rewards all giving with success. Maaser is unique in that the Torah states the promise clearly: test G-d with the tithe (Malachi 3:10), and the Talmud teaches to give a tenth so that you will become rich. Call the Rabbi for personal questions.
 
 ## Take the next step
 

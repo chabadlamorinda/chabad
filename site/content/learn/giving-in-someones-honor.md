@@ -9,25 +9,25 @@ Yes, it is a Jewish custom to give tzedakah (charity) in honor of a living perso
 
 ## Giving in memory of a loved one
 
-Chassidic teaching explains that it is an age-old custom to pledge tzedakah for departed loved ones during Yizkor, the memorial prayer said on Yom Kippur and on the last days of the festivals. The reasoning is simple: those who have passed can no longer perform mitzvahs, so the living do them in their name. Many families also give on the yahrzeit (יָארצַייט), the anniversary of a death. See [Yizkor](/learn/yizkor) and [Learning in Memory of a Loved One](/learn/learning-in-memory-of-a-loved-one).
+It is an age-old custom to pledge tzedakah for departed loved ones during Yizkor, the memorial prayer said on Yom Kippur and on the last days of the festivals. The reasoning is simple: those who have passed can no longer perform mitzvahs, so the living do them in their name. Many families also give on the yahrzeit (יָארצַייט), the anniversary of a death. See [Yizkor](/learn/yizkor) and [Learning in Memory of a Loved One](/learn/learning-in-memory-of-a-loved-one).
 
 A gift in memory is a way to keep a person's name and values alive. It can be a coin in the pushka, a gift to a cause that mattered to them, or a gift made together with the family.
 
 ## Giving in honor of a living person
 
-Giving for the sake of someone who is alive is also a Jewish practice. Jewish teaching on tzedakah is that giving "just because" is preferred, though the Sages say that giving in the merit of a child's well-being is still considered righteous. The laws of visiting the sick also list giving tzedakah in the patient's honor as one way to help someone who is unwell. See [Mi Sheberach](/learn/mi-sheberach) and [Jewish Birthday Customs](/learn/jewish-birthday-customs).
+Giving for the sake of someone who is alive is also a Jewish practice. Giving "just because" is preferred, though the Sages say that giving in the merit of a child's well-being is still considered righteous. Giving tzedakah in the patient's honor is also one way to help someone who is unwell. See [Mi Sheberach](/learn/mi-sheberach) and [Jewish Birthday Customs](/learn/jewish-birthday-customs).
 
 Good occasions might include:
 
 - **A recovery,** or a prayer for someone who is ill.
-- **A birthday,** including a child's. Jewish teaching on raising children suggests that a child can choose a cause he or she cares about, and the parent gives in the child's name.
+- **A birthday,** including a child's. A child can choose a cause he or she cares about, and the parent gives in the child's name.
 - **A simcha,** such as a wedding, a new baby or a Bar or Bat Mitzvah.
 - **A thank-you,** to a teacher, a friend or a caregiver.
 
 ## How to make it meaningful
 
 1. **Choose a cause that fits the person.** If they loved children, support something for children; if they loved learning, support learning.
-2. **Give from the heart.** Chassidic philosophy stresses that how you give matters more than how much. Give with a smile and with warmth.
+2. **Give from the heart.** How you give matters more than how much. Give with a smile and with warmth.
 3. **Tell the person, if it is a living person,** or share it with the family, if it is in memory. A short note is enough.
 4. **Be careful with money set aside as maaser.** Whether a particular gift counts as maaser (a tenth of income) depends on your intention at the time, and some obligations cannot be paid from it. Ask the Rabbi. See [Maaser](/learn/maaser).
 
@@ -41,10 +41,10 @@ If you would like your gift to carry a name, the [giving page](/donate) has a pl
 Yes. It is an age-old custom, especially at Yizkor and on the yahrzeit, since the departed can no longer do mitzvahs and the living do them in their name.
 
 ### Can I give tzedakah in honor of someone who is sick?
-Yes. Jewish tradition lists giving tzedakah in the patient's honor as one way to help, alongside prayer. See [Bikur Cholim](/learn/bikur-cholim).
+Yes. Giving tzedakah in the patient's honor is one way to help, alongside prayer. See [Bikur Cholim](/learn/bikur-cholim).
 
 ### Can I give a charity gift instead of a birthday present?
-Many families do. Jewish tradition suggests letting a child choose a cause and giving in his or her name. You can also give a smaller gift and a charity gift together.
+Many families do. You can let a child choose a cause and give in his or her name. You can also give a smaller gift and a charity gift together.
 
 ### Does a gift in someone's name help their soul?
 This is a matter of Jewish tradition and belief. The custom of pledging at Yizkor rests on the idea that the living can do mitzvahs for the departed. Ask the Rabbi for more.

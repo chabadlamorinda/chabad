@@ -9,16 +9,16 @@ Bringing a meal to someone who is sick, grieving or in need is a classic act of 
 
 ## Why a meal matters
 
-Chesed (חֶסֶד) is the Hebrew word for kindness. Jewish tradition explains that chesed generally means non-monetary acts such as visiting the sick and inviting guests. A meal is a kindness of both hands and heart. The tradition of visiting the sick is to find out what the person needs and to offer help. For someone who is unwell or overwhelmed, a prepared meal removes one worry. See [Chesed](/learn/chesed).
+Chesed (חֶסֶד) is the Hebrew word for kindness. Chesed generally means non-monetary acts such as visiting the sick and inviting guests. A meal is a kindness of both hands and heart. When you visit the sick, find out what the person needs and offer help. For someone who is unwell or overwhelmed, a prepared meal removes one worry. See [Chesed](/learn/chesed).
 
 ## For mourners: the first meal
 
-Chassidic teaching describes the seudat havara'ah (סְעוּדַת הֲבָרָאָה), the "meal of recovery," that mourners eat right after returning from the funeral. It is provided by neighbors, close friends or relatives, not by the mourners themselves, though if no one provides it, they may use their own food.
+The seudat havara'ah (סְעוּדַת הֲבָרָאָה), the "meal of recovery," is the meal that mourners eat right after returning from the funeral. It is provided by neighbors, close friends or relatives, not by the mourners themselves, though if no one provides it, they may use their own food.
 
 - **The foods:** bread, preferably round rolls such as bagels, and peeled hard-boiled eggs. After that, other foods and drinks are permitted.
 - **Why:** the meal comforts the mourners by showing they are not alone, and it encourages those who may not feel like eating to eat.
 
-After that first meal, the tradition notes that many communities continue supplying mourners with food, since they have so much else on their minds. At the same time, it says that most Ashkenazic communities, including Chabad, do not generally put out food for visitors during shivah. Chabad families do toast "l'chaim" on the seventh day, right after shivah ends. For visiting a shivah house, see [What to Bring to a Shiva House](/learn/what-to-bring-to-a-shiva-house).
+After that first meal, many communities continue supplying mourners with food, since they have so much else on their minds. At the same time, most Ashkenazic communities, including Chabad, do not generally put out food for visitors during shivah. Chabad families do toast "l'chaim" on the seventh day, right after shivah ends. For visiting a shivah house, see [What to Bring to a Shiva House](/learn/what-to-bring-to-a-shiva-house).
 
 ## For someone who is sick
 
@@ -43,7 +43,7 @@ If a family in Lafayette, Moraga or Orinda needs help, they may ask for help on 
 ## Common questions
 
 ### What do you bring to a Jewish family sitting shivah?
-Food is welcome, as long as the family keeps kosher and you have asked how. Chassidic teaching notes that Chabad generally does not put out food for visitors during shivah, so ask the family or the Rabbi what they prefer.
+Food is welcome, as long as the family keeps kosher and you have asked how. Chabad custom is generally not to put out food for visitors during shivah, so ask the family or the Rabbi what they prefer.
 
 ### Who provides the first meal after a Jewish funeral?
 Neighbors, close friends or relatives. That meal is called the seudat havara'ah, and it traditionally includes bread (often round rolls) and hard-boiled eggs.

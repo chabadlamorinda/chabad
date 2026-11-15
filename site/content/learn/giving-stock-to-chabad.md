@@ -19,7 +19,7 @@ This guide is not tax or legal advice. How a gift of stock is taxed depends on y
 
 ## Does a gift of stock count as maaser?
 
-Maaser (מַעֲשֵׂר) means "a tenth," the custom of giving a tenth of income to tzedakah. Jewish law on maaser says that income includes salary, gifts, inheritance and interest, and that gains on investments are generally due only once the profit is actually realized, such as when an asset is sold. Those sources do not discuss gifts of stock directly. So how a particular gift of stock counts toward maaser is a question for the Rabbi, who is glad to help. Call 925-384-7242. See also [Donor-Advised Funds, Stock and Maaser](/learn/donor-advised-funds-and-tzedakah).
+Maaser (מַעֲשֵׂר) means "a tenth," the custom of giving a tenth of income to tzedakah. Under the laws of maaser, income includes salary, gifts, inheritance and interest, and gains on investments are generally due only once the profit is actually realized, such as when an asset is sold. These laws do not discuss gifts of stock directly. So how a particular gift of stock counts toward maaser is a question for the Rabbi, who is glad to help. Call 925-384-7242. See also [Donor-Advised Funds, Stock and Maaser](/learn/donor-advised-funds-and-tzedakah).
 
 ## Why give this way
 
@@ -34,7 +34,7 @@ Contact the synagogue, then ask your broker or advisor to transfer the shares to
 Yes. Chabad of Lamorinda accepts gifts of stock through its Fidelity brokerage account. For the transfer details, call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241.
 
 ### Does a gift of stock count as maaser?
-The standard guidance on maaser does not address stock directly. Ask the Rabbi how it counts, and ask your tax advisor about taxes.
+The classic laws of maaser do not address stock directly. Ask the Rabbi how it counts, and ask your tax advisor about taxes.
 
 ### What information does my broker need?
 The transfer details for Chabad of Lamorinda's Fidelity account, which we will give you when you call, and the name Chabad of Lamorinda with the address and tax ID on the [legacy page](/legacy). The Rabbi can help with anything else.

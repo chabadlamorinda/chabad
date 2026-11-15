@@ -9,7 +9,7 @@ Jeremiah (יִרְמְיָהוּ, Yirmiyahu) was the prophet who warned the Jewi
 
 ## Who was Jeremiah?
 
-According to Jewish tradition, Jeremiah was born into a family of priests in Anatoth, in the territory of Benjamin. His father was Hilkiah, a priest. He began prophesying under King Josiah, when he was young, and said "I am still a boy." G-d reassured him, and he never stopped speaking, at risk of his life. Two other voices of his time were the prophet Zephaniah and the prophetess Huldah. See [what is a prophet](/learn/what-is-a-prophet).
+Jeremiah was born into a family of priests in Anatoth, in the territory of Benjamin. His father was Hilkiah, a priest. He began prophesying under King Josiah, when he was young, and said "I am still a boy." G-d reassured him, and he never stopped speaking, at risk of his life. Two other voices of his time were the prophet Zephaniah and the prophetess Huldah. See [what is a prophet](/learn/what-is-a-prophet).
 
 ## His message
 
@@ -23,7 +23,7 @@ Jeremiah lived to see Jerusalem and the [Holy Temple](/learn/the-holy-temple) de
 
 ## A letter to the exiles
 
-Jeremiah sent a letter to the Jews who were exiled to Babylon. Chassidic teaching tells us that he told them not to believe false prophets who promised a quick return. Instead: "Build houses and dwell in them, plant gardens and eat their fruit." Marry, have children, and "seek the peace of the city" where you live and pray for it. He said the exile would last seventy years, and then G-d would bring them home, with plans "for peace and not for evil, to give you a future and a hope." The prophecy came true, and the letter has guided Jews through generations living far from home: live fully as Jews wherever you are, and be a blessing to your neighbors. This is a message for Jews in Lafayette, Moraga and Orinda today.
+Jeremiah sent a letter to the Jews who were exiled to Babylon. He told them not to believe false prophets who promised a quick return. Instead: "Build houses and dwell in them, plant gardens and eat their fruit." Marry, have children, and "seek the peace of the city" where you live and pray for it. He said the exile would last seventy years, and then G-d would bring them home, with plans "for peace and not for evil, to give you a future and a hope." The prophecy came true, and the letter has guided Jews through generations living far from home: live fully as Jews wherever you are, and be a blessing to your neighbors. This is a message for Jews in Lafayette, Moraga and Orinda today.
 
 ## The promise of return
 

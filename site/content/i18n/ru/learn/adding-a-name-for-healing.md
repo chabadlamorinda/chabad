@@ -1,7 +1,7 @@
 ---
 title: Добавление еврейского имени тяжело больному человеку
 description: Еврейский обычай добавлять имя, например Хаим или Рафаэль, тяжело больному: зачем, как это делается и как попросить раввина помочь.
-category: Mourning & remembrance
+category: Prayer & Torah
 related: mi-sheberach, bikur-cholim, hebrew-names, tehillim, when-a-loved-one-is-dying
 local: Чтобы спросить о добавлении имени больному, позвоните раввину Лабковскому 925-384-7242 или откройте /help/talk-to-the-rabbi. Мы рядом.
 ---

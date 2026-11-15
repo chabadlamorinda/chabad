@@ -46,7 +46,7 @@ If you walked through a typical Jewish home on Friday afternoon, nearly everythi
 
 Vayakhel gives an answer. The mirrors were not special. They were the same mirrors that women everywhere used. What made them holy was the purpose the women had put them to, a hidden, selfless, loving purpose, long before anyone thought of a Sanctuary. G-d saw that purpose and said: these are the most precious.
 
-I find this a deeply encouraging teaching for people who think their lives are too practical to matter. Most of what fills our days is practical: errands, cooking, driving, answering email, paying bills. The Rebbe says these things are not obstacles to holiness. They are raw material, if we use them with the right intention. A meal made for a sick neighbor, a ride offered to a friend, a talent used to help a cause, are mirrors in our hands.
+This is a deeply encouraging teaching for people who think their lives are too practical to matter. Most of what fills our days is practical: errands, cooking, driving, answering email, paying bills. The Rebbe says these things are not obstacles to holiness. They are raw material, if we use them with the right intention. A meal made for a sick neighbor, a ride offered to a friend, a talent used to help a cause, are mirrors in our hands.
 
 Rebbetzin Chana's ink makes the point again. When there was nothing, she took what the land offered and turned it into a way for Torah to live. She did not wait for ideal conditions.
 

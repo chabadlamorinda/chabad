@@ -9,7 +9,7 @@ The family traditions children remember are the small ones that return every yea
 
 ## Begin with the heart of Chanukah
 
-Every family tradition on Chanukah works best when it supports the central mitzvah: lighting the menorah and sharing its light. Chassidic teaching sees the eight nights as a time for adding light, and a good Chanukah companion gives each night a thought, a story, a craft or activity and a lighting calendar. That is a good model for a family: one idea a night, kept simple.
+Every family tradition on Chanukah works best when it supports the central mitzvah: lighting the menorah and sharing its light. The eight nights are a time for adding light, night by night. A helpful pattern is to give each night a thought, a story, a craft or activity, with a lighting calendar. That is a good model for a family: one idea a night, kept simple.
 
 Make sure the foundation is in place. See [how to light the menorah](/learn/chanukah-menorah) and [the eight nights of Chanukah](/learn/chanukah-night-by-night), which has a theme for each night. This guide is about the extras that make your family's holiday your own.
 

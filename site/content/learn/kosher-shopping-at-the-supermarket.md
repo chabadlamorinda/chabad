@@ -13,18 +13,18 @@ A kosher symbol shows that a rabbinic agency supervised the product. The guide t
 
 ## Step 2: fresh fruits and vegetables
 
-Whole fresh produce and raw nuts are generally fine from any store, according to Jewish law, but check for insects, especially on leafy greens and berries (see [checking for insects](/learn/checking-for-insects)). Pre-cut produce from supermarkets is generally acceptable, but be careful with small stores, non-kosher restaurants and catered events, where knives may have been used for non-kosher food.
+Whole fresh produce and raw nuts are generally fine from any store, but check for insects, especially on leafy greens and berries (see [checking for insects](/learn/checking-for-insects)). Pre-cut produce from supermarkets is generally acceptable, but be careful with small stores, non-kosher restaurants and catered events, where knives may have been used for non-kosher food.
 
 ## Step 3: milk, wine and grape juice
 
-Jewish law explains that:
+A few things to know:
 
 - **Milk** should be produced under Jewish supervision. Where that is unavailable, some authorities accept government inspection, though not in every country. See [chalav Yisrael](/learn/chalav-yisrael) and ask the Rabbi what to do.
 - **Wine, grape juice** and anything containing them must be produced and handled by Torah-observant Jews and carry a kosher seal. Cooked wine, usually labeled "mevushal," is not affected by non-Jewish handling. See [kosher wine](/learn/kosher-wine).
 
 ## Step 4: bakery, deli and prepared foods
 
-Jewish law teaches that foods cooked or baked by non-Jews are not kosher, even if they contain only kosher ingredients, with some exceptions, for example where a Jew is involved in the process, for foods also eaten raw, and for commercially baked bread in pressing circumstances. These exceptions are detailed, so ask the Rabbi about bakery items, hot-bar food and sandwiches. Fresh meat and poultry need kosher certification; see [kosher meat](/learn/kosher-meat) and [kosher cheese](/learn/kosher-cheese).
+Foods cooked or baked by non-Jews are not kosher, even if they contain only kosher ingredients, with some exceptions, for example where a Jew is involved in the process, for foods also eaten raw, and for commercially baked bread in pressing circumstances. These exceptions are detailed, so ask the Rabbi about bakery items, hot-bar food and sandwiches. Fresh meat and poultry need kosher certification; see [kosher meat](/learn/kosher-meat) and [kosher cheese](/learn/kosher-cheese).
 
 ## Step 5: do not assume
 
@@ -43,13 +43,13 @@ Look for a reliable kosher symbol on the package. Fresh fruits and vegetables ar
 Fresh produce and raw nuts are generally fine from any store. Packaged, cooked and processed foods generally need reliable certification.
 
 ### Is the bread from the bakery counter kosher?
-Foods baked by non-Jews are not kosher according to Jewish law, with some detailed exceptions. Ask the Rabbi.
+Foods baked by non-Jews are not kosher, with some detailed exceptions. Ask the Rabbi.
 
 ### Is milk from the supermarket kosher?
 Kosher milk should be produced under Jewish supervision. Some authorities accept government inspection. Ask the Rabbi what you should do.
 
 ### Is pre-cut produce kosher?
-Pre-cut produce from supermarkets is generally acceptable, according to Jewish law. Check for insects.
+Pre-cut produce from supermarkets is generally acceptable. Check for insects.
 
 ### Can I trust "natural" or "vegan" labels?
 No. Those are not kosher symbols. See [vegan and vegetarian kosher](/learn/vegan-and-vegetarian-kosher).

@@ -13,7 +13,7 @@ Halacha (הֲלָכָה) is Jewish law, derived from the Torah and the Talmud. S
 
 Some examples of customs:
 
-- **Slanting the mezuzah.** Jewish tradition explains that Rashi and his grandson Rabbeinu Tam disagreed about whether a mezuzah should hang vertically or horizontally. Ashkenazi Jews hang it at a slant, which fits both views. See [mezuzah](/learn/mezuzah).
+- **Slanting the mezuzah.** Rashi and his grandson Rabbeinu Tam disagreed about whether a mezuzah should hang vertically or horizontally. Ashkenazi Jews hang it at a slant, which fits both views. See [mezuzah](/learn/mezuzah).
 - **The first haircut at three.** Many families give a boy his first haircut at age three, leaving the sidelocks. See [upsherin](/learn/upsherin).
 - **Holiday foods.** Apples and honey on Rosh Hashanah, latkes on Chanukah, and the foods your grandmother made are all customs, and they carry memory.
 - **Not eating legumes on Passover.** Some communities avoid rice and beans, others do not. See [kitniyot](/learn/kitniyot).
@@ -54,7 +54,7 @@ Minhag means "custom." It is a practice that Jewish communities or families have
 It is a saying from our sages, meaning that a custom accepted by the Jewish people has the force of Torah law. Ask the Rabbi about how it applies in a specific case.
 
 ### Is a custom the same as a law?
-No, but accepted customs are taken very seriously and are not dropped lightly. Jewish tradition explains that they have the import of law.
+No, but accepted customs are taken very seriously and are not dropped lightly. They have the import of law.
 
 ### Should I keep my family's customs?
 Generally yes, and Jewish tradition values doing so. If you are unsure about a specific custom, ask the Rabbi.

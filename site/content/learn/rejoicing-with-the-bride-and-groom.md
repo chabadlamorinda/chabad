@@ -5,7 +5,7 @@ category: Life cycle
 related: attending-a-jewish-wedding, simcha, sheva-brachot, jewish-wedding-customs, yichud
 local: Invited to a wedding or planning one in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 with questions.
 ---
-Yes, it is a great mitzvah to rejoice with a bride and groom: to sing, dance and make them happy at their wedding. Jewish tradition teaches that joining the celebration and cheering the couple is one of the most important things a guest can do.
+Yes, it is a great mitzvah to rejoice with a bride and groom: to sing, dance and make them happy at their wedding. Joining the celebration and cheering the couple is one of the most important things a guest can do.
 
 ## Why is rejoicing a mitzvah?
 

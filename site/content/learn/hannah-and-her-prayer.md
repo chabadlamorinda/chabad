@@ -17,7 +17,7 @@ Hannah went to the Tabernacle and prayed, weeping. She promised that if she were
 
 ## How Hannah shapes our prayer
 
-Jewish tradition notes that this is the source for the way we recite the Amidah: in a whisper, with the lips moving. It shows two truths. First, prayer is a conversation: you can speak openly and honestly to G-d in your own words, as in [talking to G-d in your own words](/learn/talking-to-g-d-in-your-own-words). Second, prayer can come from the quiet of the heart.
+The Talmud learns from this the way we recite the Amidah: in a whisper, with the lips moving. It shows two truths. First, prayer is a conversation: you can speak openly and honestly to G-d in your own words, as in [talking to G-d in your own words](/learn/talking-to-g-d-in-your-own-words). Second, prayer can come from the quiet of the heart.
 
 ## The birth of Samuel
 

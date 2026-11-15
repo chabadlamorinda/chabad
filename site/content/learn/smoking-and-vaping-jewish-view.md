@@ -1,7 +1,7 @@
 ---
 title: Smoking and Vaping: What Judaism Says
-description: Is smoking kosher? What Jewish tradition and the Rebbe say about cigarettes and vaping, guarding your health, and quitting, with no judgment.
-category: Life cycle
+description: Is smoking kosher? What Judaism and the Rebbe say about cigarettes and vaping, guarding your health, and quitting, with no judgment.
+category: Jewish ideas
 related: jewish-health-and-body, addiction-and-recovery, parents-and-teenagers, teshuvah, pikuach-nefesh
 local: Thinking about quitting, or worried about a teenager? Call Rabbi Labkowski at 925-384-7242 for a private, judgment-free conversation.
 ---
@@ -13,7 +13,7 @@ This guide explains the general view in simple words. It is not medical advice: 
 
 The Torah says, "Guard yourselves and guard your souls very much" (Deuteronomy 4:9, 4:15). Maimonides and the classic codes of Jewish law understand this as a broad command to protect your life and health. Something that is known to be dangerous is to be avoided, not just discouraged.
 
-The harm of smoking builds up over time. No single cigarette is blamed, but the whole habit is. Medical authorities warn of lung cancer and other illnesses, and Jewish law takes a known health danger very seriously.
+The harm of smoking builds up over time. No single cigarette is blamed, but the whole habit is. Medical authorities warn of lung cancer and other illnesses, and the Torah takes a known health danger very seriously.
 
 ## What the Rebbe said
 
@@ -23,7 +23,7 @@ Some respected rabbis in the past did not forbid smoking, mainly because it was 
 
 ## What about vaping?
 
-Many rabbinic authorities strongly discourage vaping because of its health risks, and that discussing its kosher status is not an endorsement. Vaping is common among teenagers and young adults, and it is often presented as a safer alternative to smoking.
+Many rabbinic authorities strongly discourage vaping because of its health risks. Discussing its kosher status is not an endorsement. Vaping is common among teenagers and young adults, and it is often presented as a safer alternative to smoking.
 
 There is also a kosher question. Some authorities treat inhaling the vapor like eating or drinking, so kosher concerns arise. The liquid may contain glycerin, which can come from animal or plant sources, and flavorings may include alcohol from grain, which matters on Passover. So the ideal is not to vape at all. If someone does, many authorities require reliable kosher certification. Ask the Rabbi for guidance.
 
@@ -60,7 +60,7 @@ He strongly discouraged it and said that anything dangerous to health is already
 Many rabbis strongly discourage vaping because of its health risks. It also raises kosher questions about the ingredients, especially on Passover. The ideal is to avoid it.
 
 ### Can I ask a coworker to stop smoking near me?
-Yes. According to Jewish tradition, a person can ask a smoker in a shared workplace or school to stop, and the smoker should comply. Ask politely.
+Yes. A person can ask a smoker in a shared workplace or school to stop, and the smoker should comply. Ask politely.
 
 ### Does Judaism look down on someone who smokes?
 No. Judaism treats every person with respect and values every effort to change. Quitting is a kind of teshuvah, and the Rabbi is happy to help without judgment.

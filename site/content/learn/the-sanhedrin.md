@@ -13,7 +13,7 @@ The word Sanhedrin comes from the Greek for "sitting together," and the Great Sa
 
 ## How many judges were in the Sanhedrin?
 
-According to Jewish tradition, the Great Sanhedrin had 71 members, led by a Nasi (president), who by tradition descended from King David. The number 71 comes from the Torah (Numbers 11:16). Jewish tradition teaches that it goes back to Moses himself, who gathered 70 elders to help him guide the nation. With Moses, that makes 71.
+The Great Sanhedrin had 71 members, led by a Nasi (president), who by tradition descended from King David. The number 71 comes from the Torah (Numbers 11:16). It goes back to Moses himself, who gathered 70 elders to help him guide the nation. With Moses, that makes 71.
 
 ## Where did the Sanhedrin meet?
 

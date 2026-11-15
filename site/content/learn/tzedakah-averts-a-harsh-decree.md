@@ -5,13 +5,13 @@ category: Jewish ideas
 related: unetaneh-tokef, tzedakah, segulot, teshuvah, tzedakah-for-someone-who-is-sick
 local: Preparing for the High Holidays in Lafayette, Moraga or Orinda? Sign up at /forms/high-holidays or call Rabbi Labkowski at 925-384-7242.
 ---
-In the High Holiday prayer Unetaneh Tokef, the congregation calls out that teshuvah, tefillah and tzedakah, repentance, prayer and charity, "remove the evil of the decree." The Sages saw tzedakah as a protection from harsh decrees, and that the Lubavitcher Rebbe explained that these three words mean much more than they seem.
+In the High Holiday prayer Unetaneh Tokef, the congregation calls out that teshuvah, tefillah and tzedakah, repentance, prayer and charity, "remove the evil of the decree." The Sages saw tzedakah as a protection from harsh decrees, and the Lubavitcher Rebbe explained that these three words mean much more than they seem.
 
 ## What the Sages say
 
 The Sages taught that tzedakah brings atonement and protects a person from harsh heavenly decrees. Giving charity in honor of a sick person is also a strong merit, which tradition says can annul harsh decrees.
 
-The Talmud also tells a story from the Talmud (Shabbat 156b). A reed-cutter was destined to die from a snakebite, but he survived because he had secretly shared his bread with a poor coworker.
+The Talmud also tells a story (Shabbat 156b). A reed-cutter was destined to die from a snakebite, but he survived because he had secretly shared his bread with a poor coworker.
 
 These are teachings of tradition. They are not a formula, and nothing here says that a person who is ill or grieving did not give enough. If you have a personal situation on your mind, [talk to the Rabbi](/help/talk-to-the-rabbi).
 
@@ -36,16 +36,16 @@ You do not need to wait for Rosh Hashanah. Tzedakah is always appropriate, and s
 ## Common questions
 
 ### What does "teshuvah, tefillah and tzedakah remove the evil decree" mean?
-It is the central line of the Unetaneh Tokef prayer on Rosh Hashanah and Yom Kippur. Jewish tradition teaches that the Sages saw these three as protection from harsh decrees, and that the Rebbe explained that they mean returning to one's true self, closeness to G-d, and acting justly.
+It is the central line of the Unetaneh Tokef prayer on Rosh Hashanah and Yom Kippur. The Sages saw these three as protection from harsh decrees, and the Rebbe explained that they mean returning to one's true self, closeness to G-d, and acting justly.
 
 ### Does giving charity cancel a bad decree?
-Jewish tradition teaches that tzedakah brings atonement and protects from harsh decrees. Judaism does not give a formula, and it never suggests that someone who suffers did not give enough. For your own situation, ask the Rabbi.
+The Sages taught that tzedakah brings atonement and protects from harsh decrees. Judaism does not give a formula, and it never suggests that someone who suffers did not give enough. For your own situation, ask the Rabbi.
 
 ### Who wrote Unetaneh Tokef?
 It was written about a thousand years ago by Rabbi Amnon of Mainz.
 
 ### Why does the prayer say the evil of the decree is removed?
-Chabad's reading is that through teshuvah, tefillah and tzedakah a person lives in line with their true self, and so is open to G-d's goodness and kindness. This is the Rebbe's explanation as taught in Chassidic thought.
+Chabad's reading is that through teshuvah, tefillah and tzedakah a person lives in line with their true self, and so is open to G-d's goodness and kindness. This is the Rebbe's explanation.
 
 ### Should I give tzedakah when someone is sick?
 Giving charity in honor of a sick person is a strong merit. Read [Giving tzedakah for someone who is sick](/learn/tzedakah-for-someone-who-is-sick) for how this is done.

@@ -5,7 +5,7 @@ category: Jewish ideas
 related: why-be-jewish, tanya-chapter-32-love-every-jew, part-of-g-d-above, is-judaism-a-religion-or-a-nation, noahide-laws, who-is-a-jew, israel-and-the-jewish-people, ahavat-yisrael
 local: Take one step into your own Jewish mission. Call Rabbi Labkowski at 925-384-7242 or write via /help/talk-to-the-rabbi.
 ---
-In Judaism, "the Chosen People" means the Jewish people were chosen for a task, not for special privilege: to bring G-d's light into the world through Torah and mitzvot. Jewish tradition teaches that being chosen is a responsibility, and it asks more of us, not less.
+In Judaism, "the Chosen People" means the Jewish people were chosen for a task, not for special privilege: to bring G-d's light into the world through Torah and mitzvot. Being chosen is a responsibility, and it asks more of us, not less.
 
 ## Where the idea comes from
 
@@ -13,7 +13,7 @@ Just before the giving of the Torah at Mount Sinai, G-d told Moses to tell the p
 
 ## A kingdom of priests: a job, not a rank
 
-Chassidic teaching explains that "priests" here does not mean the Kohanim, since not every Jew descends from Aaron. It means a priestly role: bringing G-d into the world and bringing the world closer to G-d. Every Jew, woman or man, has this job. The prophet Isaiah calls it being "a light to the nations." You become a good ambassador by living the Torah and mitzvot yourself, because the way you live is what other people see.
+Chassidic thought explains that "priests" here does not mean the Kohanim, since not every Jew descends from Aaron. It means a priestly role: bringing G-d into the world and bringing the world closer to G-d. Every Jew, woman or man, has this job. The prophet Isaiah calls it being "a light to the nations." You become a good ambassador by living the Torah and mitzvot yourself, because the way you live is what other people see.
 
 ## It does not make anyone better than anyone else
 
@@ -25,7 +25,7 @@ Chassidic teaching, following the [Tanya](/learn/tanya), says every Jew has a G-
 
 ## Small, but with great power
 
-Many people think, "Who am I to change the world?" The tradition answers with a thought from our own age: if a tiny bit of matter can release enormous energy, then the power in each person, used for good, is greater still. Every Jew has special abilities and opportunities, and one mitzvah can change a room. A Jew far from other Jews still represents the whole people. The Jewish people do not succeed "by might nor by power but by My spirit" (Zechariah 4:6): our strength is spiritual.
+Many people think, "Who am I to change the world?" A thought from our own age answers this: if a tiny bit of matter can release enormous energy, then the power in each person, used for good, is greater still. Every Jew has special abilities and opportunities, and one mitzvah can change a room. A Jew far from other Jews still represents the whole people. The Jewish people do not succeed "by might nor by power but by My spirit" (Zechariah 4:6): our strength is spiritual.
 
 ## What this means for a Jew today
 

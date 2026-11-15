@@ -1,7 +1,7 @@
 ---
 title: Еврейская история района залива Сан-Франциско: от золотой лихорадки до Ламоринды
 description: Как начиналась еврейская жизнь в районе залива в годы золотой лихорадки: первые службы в Сан-Франциско, Леви Страусс и общины Ист-Бэй.
-category: Jewish ideas
+category: Lamorinda
 related: jewish-san-francisco, jewish-history-of-contra-costa, jewish-east-bay, chabad-in-the-bay-area, jewish-history-overview
 local: Станьте частью следующей главы: закажите субботнюю трапезу на chabadoflamorinda.com/forms/shabbat-meal или позвоните 925-384-7242.
 ---

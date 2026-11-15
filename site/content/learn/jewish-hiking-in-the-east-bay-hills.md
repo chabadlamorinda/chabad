@@ -36,7 +36,7 @@ When you reach the top, consider reading [Psalm 104](/learn/barchi-nafshi), "Bar
 
 ## Safety is a mitzvah
 
-Jewish tradition treats protecting life and health as a serious obligation. Bring water, tell someone your route, check the weather and turn back if the trail is unsafe. Follow the park's own posted rules. If you take a longer trip, you may want to say [Tefilat Haderech](/learn/tefilat-haderech), the Traveler's Prayer, which Jewish tradition says is for trips of more than about 2.36 miles beyond your city's limits. Ask the Rabbi whether it applies to your drive. For health in general, see [Jewish health and body](/learn/jewish-health-and-body).
+Jewish tradition treats protecting life and health as a serious obligation. Bring water, tell someone your route, check the weather and turn back if the trail is unsafe. Follow the park's own posted rules. If you take a longer trip, you may want to say [Tefilat Haderech](/learn/tefilat-haderech), the Traveler's Prayer, which is said on trips of more than about 2.36 miles beyond your city's limits. Ask the Rabbi whether it applies to your drive. For health in general, see [Jewish health and body](/learn/jewish-health-and-body).
 
 ## Leave the trail as you found it
 

@@ -9,7 +9,7 @@ Ezekiel (Yechezkel, יְחֶזְקֵאל) was a prophet who lived in Babylonia a
 
 ## Who was Ezekiel?
 
-According to Jewish tradition's summary, Ezekiel was born in the Land of Israel, the son of Buzi, a priest, and he began prophesying there. When Nebuchadnezzar, king of Babylonia, conquered Jerusalem, he exiled King Jehoiachin and about ten thousand captives, including nobles, leaders and craftsmen. Ezekiel was among them. He spent the rest of his life in Babylonia and received most of his prophecies there, beside the Chebar River.
+Ezekiel was born in the Land of Israel, the son of Buzi, a priest, and he began prophesying there. When Nebuchadnezzar, king of Babylonia, conquered Jerusalem, he exiled King Jehoiachin and about ten thousand captives, including nobles, leaders and craftsmen. Ezekiel was among them. He spent the rest of his life in Babylonia and received most of his prophecies there, beside the Chebar River.
 
 That matters. People thought that prophecy was tied to the Land of Israel. Ezekiel showed that G-d is with the Jewish people wherever they go, a message for every Jewish family far from home, and for any of us who feel far from our roots.
 

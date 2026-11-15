@@ -1,7 +1,7 @@
 ---
 title: חיים יהודיים באיסט ביי ובקונטרה קוסטה: איפה למורינדה משתלבת
 description: מפה ידידותית של החיים היהודיים באיסט ביי ובקונטרה קוסטה, ואיך לאפייט, מוראגה ואורינדה משתלבות עם ברקלי, ווילנאט קריק ועוד.
-category: Jewish ideas
+category: Lamorinda
 related: chabad-in-the-bay-area, jewish-history-of-contra-costa, jewish-san-francisco, jewish-bay-area-history, moving-to-lamorinda
 local: חדשים באיסט ביי או סתם סקרנים? הזמינו סעודת שבת ב-chabadoflamorinda.com/forms/shabbat-meal או התקשרו 925-384-7242.
 ---

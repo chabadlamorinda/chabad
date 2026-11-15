@@ -11,11 +11,11 @@ This guide explains what such a directive usually contains. It is not legal advi
 
 ## Why people sign one
 
-A directive speaks for you when you cannot, so that a person you trust, and a rabbi who knows Jewish law, guide the decisions. Sample Jewish directives exist as an example.
+A directive speaks for you when you cannot, so that a person you trust, and a rabbi who knows Jewish law, guide the decisions. Sample Jewish directives are available as examples.
 
 ## What a directive usually includes
 
-According to a typical Jewish directive, it contains these parts:
+A typical Jewish directive contains these parts:
 
 1. **A health care surrogate.** You name a primary surrogate and an alternate. The surrogate can consent to, withhold or withdraw treatment, and handle admission to a facility.
 2. **A statement that Jewish law governs.** It directs that health-care decisions follow Jewish law, as determined by strict Orthodox interpretation and tradition. It names areas such as CPR, life-sustaining treatment, nutrition and hydration, and how death is determined.
@@ -38,7 +38,7 @@ See also [a Jewish will](/learn/halachic-will), [hospice and end-of-life decisio
 It is a health care directive that names a surrogate, directs that medical decisions follow Jewish law, and names a rabbi to consult. It also covers the care of the body after death.
 
 ### Is a Jewish health care directive legally binding?
-That depends on state law and how the document is prepared, so ask an attorney. Many people use one to state their wishes, and the sample on Jewish tradition says that if it is not legally effective, the stated wishes should be treated as clear evidence of the person's intent.
+That depends on state law and how the document is prepared, so ask an attorney. Many people use one to state their wishes, and a typical sample directive says that if it is not legally effective, the stated wishes should be treated as clear evidence of the person's intent.
 
 ### Who should I name as my surrogate?
 Someone who knows your values and is willing to consult a rabbi. Name an alternate too.

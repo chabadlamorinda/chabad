@@ -158,7 +158,7 @@ ${seriesTiles(X)}
 <p class="muted">${esc(t('{n} guides', { n: list.length }))}</p>
 <p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
 ${guideCards(X, list.slice(0, 3), t('Start here'))}
-<div id="guides"><ol class="topic-list">${list.map((a) => `<li class="tile"><a href="/learn/${a.slug}"><strong>${esc(a.title)}</strong><span class="muted">${esc(a.description)}</span></a></li>`).join('')}</ol></div>
+<div id="guides">${list.length > 3 ? `<h2>${esc(t('All {n} guides', { n: list.length }))}</h2>` : ''}<ol class="topic-list"${list.length > 3 ? ' start="4"' : ''}>${list.slice(3).map((a) => `<li class="tile"><a href="/learn/${a.slug}"><strong>${esc(a.title)}</strong><span class="muted">${esc(a.description)}</span></a></li>`).join('')}</ol></div>
 <p class="muted" data-filter-empty hidden>${esc(t('Nothing found. Try another word, or ask us.'))} <button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask us'))}</button></p>
 ${sibs.length ? `<h2>${esc(t('More in {name}', { name: nm(X, cat) || t(cat.name) }))}</h2><p class="chips">${sibs.map((x) => `<a class="chip" href="/learn/topic/${catId(cat.name)}/${x.id}">${esc(nm(X, x))}</a>`).join('')}</p>` : ''}</section>`,
       ld: [crumbs(base, [[t('Learn'), '/learn'], [nm(X, cat) || t(cat.name), '/learn/topic/' + catId(cat.name)], [nm(X, sub), `/learn/topic/${catId(cat.name)}/${sub.id}`]]), { '@context': 'https://schema.org', '@type': 'CollectionPage', name: nm(X, sub), inLanguage: X.lang, hasPart: list.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });

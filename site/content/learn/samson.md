@@ -21,7 +21,7 @@ The Rebbe asks a question: how could a vow that the parents and an angel started
 
 ## Samson's feats
 
-According to the Bible and Jewish tradition:
+According to the Bible:
 
 1. As a young man, Samson killed a lion with his bare hands.
 2. At his wedding feast in Timnah he posed a riddle, from the lion and the honey that bees had made in its carcass, to thirty Philistine guests.
@@ -41,7 +41,7 @@ That is the point of the story. The hair was not magic. It was a sign of his ded
 
 At a great Philistine feast Samson was brought out to entertain. Blind and bound, he prayed to G-d for strength one last time, so that the Philistines would know that G-d alone is G-d. His strength returned, and he pushed apart the pillars that supported the building, and it collapsed. He died with them, and his family brought him home for burial.
 
-The Bible says he led Israel for twenty years. Jewish tradition notes that sources differ: another tradition counts forty years, twenty during his life and twenty after, when his influence kept the Philistines away. Another source counts twenty-two years, so we do not give an exact number here.
+The Bible says he led Israel for twenty years. Sources differ: another tradition counts forty years, twenty during his life and twenty after, when his influence kept the Philistines away. Another source counts twenty-two years, so we do not give an exact number here.
 
 ## Take the next step
 

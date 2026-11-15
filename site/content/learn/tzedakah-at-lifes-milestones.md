@@ -17,7 +17,7 @@ The Rebbe introduced the Birthday Campaign in 1988. Its customs include increasi
 
 The laws and customs of childbirth say that a pregnant woman should be particular to give charity every day, including Fridays and the afternoons before Jewish holidays, before lighting candles. A woman who already gives regularly should increase her usual amount, ideally by a multiple of eighteen. See [Jewish Pregnancy](/learn/jewish-pregnancy) and [Baby Naming](/learn/baby-naming).
 
-After a birth, families often want to give thanks. Ask the Rabbi about how you can mark the naming or the brit. There is no fixed tzedakah custom at the birth itself, so this is a personal conversation.
+After a birth, families often want to give thanks. Ask the Rabbi about how you can mark the naming or the brit. We did not find a fixed tzedakah custom at the birth itself, so this is a personal conversation.
 
 ## Around a wedding
 
@@ -47,7 +47,7 @@ Money is not handled on Shabbat, so the donation is given before or after the bi
 A pregnant woman should be particular to give charity every day, and especially before lighting candles on Fridays and before holidays. Ask the Rabbi about your own situation.
 
 ### Do bride and groom give tzedakah at their wedding?
-When a person is blessed with financial success, it is proper to give a portion to tzedakah, and it encourages helping a bride in need. It does not describe a fixed amount.
+When a person is blessed with financial success, it is proper to give a portion to tzedakah, and helping a bride in need is especially encouraged. No fixed amount is set.
 
 ### Is there a custom for a wedding anniversary?
 We did not find a fixed custom. Many couples give in gratitude, often in multiples of 18. Ask the Rabbi if you would like to dedicate something.

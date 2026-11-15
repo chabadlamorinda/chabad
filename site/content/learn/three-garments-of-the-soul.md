@@ -21,7 +21,7 @@ The chapter says that when a person engages in all three, the soul is "clothed" 
 
 ## Why "clothing"?
 
-Rabbi Tzvi Freeman makes the image come alive. Clothes reveal a person's inner self, and they also shape the wearer: dress as an officer and you become more orderly, dress in track pants and you relax. Thoughts and feelings become real, he says, when you put them into words or deeds. It quotes the Baal Shem Tov: "Wherever you put your thoughts, that is where you are, all of you."
+Rabbi Tzvi Freeman makes the image come alive. Clothes reveal a person's inner self, and they also shape the wearer: dress as an officer and you become more orderly, dress in track pants and you relax. Thoughts and feelings become real, he says, when you put them into words or deeds. He quotes the Baal Shem Tov: "Wherever you put your thoughts, that is where you are, all of you."
 
 ## Higher than the soul?
 

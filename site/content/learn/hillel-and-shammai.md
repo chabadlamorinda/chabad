@@ -9,7 +9,7 @@ Hillel and Shammai were two great sages who lived in the first century before th
 
 ## Two teachers, two styles
 
-Hillel came from Babylonia to the Land of Israel as a very poor, brilliant student. Jewish tradition describes him as extremely humble and patient. Shammai is described as strict and with a quick temper, who generally took the stricter view of the law, while Hillel more often took the lenient view. The Mishnah records hundreds of disagreements between their schools, and in almost every case the practice follows the House of Hillel.
+Hillel came from Babylonia to the Land of Israel as a very poor, brilliant student. The Talmud describes him as extremely humble and patient. Shammai is described as strict and with a quick temper, who generally took the stricter view of the law, while Hillel more often took the lenient view. The Mishnah records hundreds of disagreements between their schools, and in almost every case the practice follows the House of Hillel.
 
 ## "What is hateful to you"
 

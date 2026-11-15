@@ -5,7 +5,7 @@ category: Jewish ideas
 related: israel-and-the-jewish-people, israeli-produce-terumot-maasrot, shabbat, bitachon, tzedakah, torah
 local: Questions about shmita or trust in hard times? Call Rabbi Labkowski at 925-384-7242.
 ---
-Shmita (שמיטה, also spelled shemitah) is the Sabbatical year: every seventh year the Land of Israel rests from farming, and personal loans are released. Jewish tradition counts the next shmita as the year 5789, from September 20, 2028 to September 9, 2029.
+Shmita (שמיטה, also spelled shemitah) is the Sabbatical year: every seventh year the Land of Israel rests from farming, and personal loans are released. The next shmita is the year 5789, from September 20, 2028 to September 9, 2029.
 
 ## What shmita means
 
@@ -20,7 +20,7 @@ The year after seven cycles, the fiftieth, was the Jubilee (Yovel). It is not ob
 
 ## Why? Six reasons
 
-Jewish tradition explains six reasons that Torah scholars give for shmita:
+Torah scholars give six reasons for shmita:
 
 - **Rest for the soil,** a break for the land itself.
 - **A year-long Shabbat,** reminding us that G-d created the world and rested.
@@ -35,7 +35,7 @@ The Torah promises a blessing in the sixth year that will produce enough for thr
 
 ## Shmita for those who are not farmers
 
-The tradition teaches that its lessons still speak to most Jews, who are not farmers. We can use the year to focus more on our spiritual mission and on faith, and less on material pursuits and personal talents. In Lafayette, Moraga and Orinda, where careers and schedules are full, a "Shabbat for the year" is a good reminder to pause, to give and to trust. Shmita also reminds us how deeply the Land is tied to our people; read [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
+Its lessons still speak to most Jews, who are not farmers. We can use the year to focus more on our spiritual mission and on faith, and less on material pursuits and personal talents. In Lafayette, Moraga and Orinda, where careers and schedules are full, a "Shabbat for the year" is a good reminder to pause, to give and to trust. Shmita also reminds us how deeply the Land is tied to our people; read [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
 
 ## Take the next step
 
@@ -49,7 +49,7 @@ The tradition teaches that its lessons still speak to most Jews, who are not far
 Shmita is the Sabbatical year, every seventh year, when the Land of Israel is left to rest from farming and loans between Jews are released.
 
 ### When is the next shmita?
-By the traditional count, the next shmita is 5789, from September 20, 2028 to September 9, 2029.
+The next shmita is 5789, from September 20, 2028 to September 9, 2029.
 
 ### Does shmita apply outside Israel?
 The land laws apply in the Land of Israel. Its lessons of rest and trust can guide Jews everywhere. Ask the Rabbi about the details.

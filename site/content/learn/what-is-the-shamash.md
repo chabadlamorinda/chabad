@@ -22,7 +22,7 @@ On each night:
 3. Use it to light the other lights, starting with the newest on the left.
 4. Set it back in its place, lit, beside the others.
 
-Jewish tradition notes that many people use a beeswax candle for the shamash.
+Many people use a beeswax candle for the shamash.
 
 ## Where does the shamash go?
 

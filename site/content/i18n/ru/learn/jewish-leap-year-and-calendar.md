@@ -1,7 +1,7 @@
 ---
 title: Еврейский високосный год и как устроен календарь, простыми словами
 description: Почему праздники будто «сдвигаются»: лунные месяцы, високосный год со вторым адаром, Рош ходеш, еврейский день рождения и почему день начинается ночью.
-category: Jewish ideas
+category: Shabbat & holidays
 related: jewish-calendar, why-chanukah-changes-dates, adar, rosh-chodesh, hebrew-birthday, birkat-hachodesh, kiddush-levana
 local: Хотите узнать свой еврейский день рождения или дату йорцайта? Раввин Исроэль Лабковский вычислит ее для вас, для семей в Лафайетте, Мораге и Оринде: 925-384-7242.
 ---

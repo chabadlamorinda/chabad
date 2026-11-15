@@ -44,7 +44,7 @@ Because the Temple menorah burned pure olive oil, so it is the finest choice. Ca
 Yes. The Torah praises Israel as a land of olive oil, and the olive is one of the seven species.
 
 ### What does the oil in Chanukah symbolize?
-Jewish teachers see oil as purity, quiet light and the soul's bond with G-d. Chassidic teaching expresses several of these ideas.
+Jewish teachers see oil as purity, quiet light and the soul's bond with G-d.
 
 ### Does olive oil need a kosher symbol?
 Pure olive oil is generally simple, but check a symbol, especially on flavored or blended oils. Ask the Rabbi if unsure.

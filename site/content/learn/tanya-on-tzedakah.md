@@ -27,7 +27,7 @@ That gives giving a different feel. It is not an expense that interrupts life, b
 
 ## Hashem's promise of success
 
-The Torah and Hashem promise success for all giving. *Maaser* (מעשר), giving a tenth of income, is unique because the promise is stated clearly and we are invited to test it. The Talmud (Taanit 9a) reads the Torah's words about tithing as "give a tenth so that you will become rich," and in Malachi 3:10 G-d tells us to bring the tithes and "test Me." Jewish law teaches that testing G-d is generally forbidden, but with maaser it is allowed, and that the Rebbe held that G-d may be tested not only with maaser but with all tzedakah. A legacy gift and a donor-advised fund grant also count as maaser.
+Rabbi Labkowski teaches that Hashem promises success for all giving. *Maaser* (מעשר), giving a tenth of income, is unique because the Torah states the promise clearly and even invites us to test it. The Talmud (Taanit 9a) reads the Torah's words about tithing as "give a tenth so that you will become rich," and in Malachi 3:10 G-d tells us to bring the tithes and "test Me." Testing G-d is generally forbidden, but with maaser it is allowed, and the Rebbe held that G-d may be tested not only with maaser but with all tzedakah. A legacy gift and a donor-advised fund grant also count as maaser.
 
 This is a teaching about giving, not a measure of anyone's life: if you are going through a hard time, never feel you did something wrong. Give what you can, and call Rabbi Labkowski at 925-384-7242 to talk it over. See [maaser](/learn/maaser).
 

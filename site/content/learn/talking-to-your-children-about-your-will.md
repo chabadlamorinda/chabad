@@ -9,7 +9,7 @@ The best way to tell your children about your will and a charitable gift is to t
 
 ## Why tell them yourself
 
-Advisors suggest that people discuss their wishes with family and a financial advisor. A will is a legal document, but children also wonder what their parent meant. Explaining it ahead of time can spare them from guessing. Family quarrels over an estate hurt, and the Torah takes peace seriously; see [Family Feuds and Inheritance](/learn/family-feuds-and-inheritance).
+Talk over your wishes with your family and a financial advisor. A will is a legal document, but children also wonder what their parent meant. Explaining it ahead of time can spare them from guessing. Family quarrels over an estate hurt, and the Torah takes peace seriously; see [Family Feuds and Inheritance](/learn/family-feuds-and-inheritance).
 
 ## Say what you value, not only what you give
 

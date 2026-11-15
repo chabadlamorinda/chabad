@@ -17,7 +17,7 @@ At a bris (circumcision), tradition says, Elijah is present. The Midrash says th
 
 ## Elijah at the Seder
 
-At the [Passover Seder](/learn/passover-seder), after the Grace After Meals, we pour a special cup of wine and open the front door. Jewish tradition gives several reasons.
+At the [Passover Seder](/learn/passover-seder), after the Grace After Meals, we pour a special cup of wine and open the front door. There are several reasons for this.
 
 - **A guarded night.** Passover night is called "leil shimurim," a night of protection, when G-d protected the Jewish people. Opening the door shows our trust.
 - **The bris connection.** Only the circumcised could eat the Passover offering. Elijah witnesses every bris, so his presence confirms everyone at the table is part of the covenant.

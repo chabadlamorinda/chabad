@@ -13,7 +13,7 @@ Jewish law says that men and women alike are obligated in Chanukah lights, becau
 
 ## Two common ways families do it
 
-Jewish tradition describes two patterns:
+There are two patterns:
 
 - **One person lights for the household.** The head of the household lights while the others listen to the blessings and answer Amen.
 - **Each person lights their own menorah.** Ashkenazi families commonly have a menorah for each person, and some Sephardic communities use one per household.
@@ -22,7 +22,7 @@ Both are valid, and your family's custom is what counts. If you are starting out
 
 ## Married women
 
-Jewish law notes that many married women do not light their own menorah but take part in their husband's lighting. A woman who lives on her own lights her own menorah. Women also have the custom of not working while the lights burn. Details of this custom are in [women and Chanukah](/learn/women-and-chanukah). If you are unsure about your situation, ask the Rabbi.
+Many married women do not light their own menorah but take part in their husband's lighting. A woman who lives on her own lights her own menorah. Women also have the custom of not working while the lights burn. Details of this custom are in [women and Chanukah](/learn/women-and-chanukah). If you are unsure about your situation, ask the Rabbi.
 
 ## Children
 

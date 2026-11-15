@@ -9,7 +9,7 @@ To leave money to a synagogue in your will, you ask your estate attorney to add 
 
 ## The three kinds of bequest
 
-Standard guidance on gifts in a will or trust lists three simple ways to give:
+There are three simple ways to give through a will or trust:
 
 - **A set dollar amount**, for example a sum you choose.
 - **A specific asset**, such as a particular account or property.
@@ -19,13 +19,13 @@ The [legacy page](/legacy) of Chabad of Lamorinda also describes a gift of what 
 
 ## Why a bequest is easy to start
 
-Standard guidance points out that a gift in a will costs nothing now, leaves your cash flow untouched while you are alive, and can be changed later if your family's situation changes. You keep everything during your lifetime. You are simply writing down what you would like to happen. And a legacy gift counts as maaser.
+A gift in a will costs nothing now, leaves your cash flow untouched while you are alive, and can be changed later if your family's situation changes. You keep everything during your lifetime. You are simply writing down what you would like to happen. And a legacy gift counts as maaser.
 
 ## Steps to include Chabad of Lamorinda
 
 1. **Think about what you want your gift to do.** For Chabad of Lamorinda it means education for future generations, keeping Judaism alive and Jewish continuity here at home.
 2. **Talk with the Rabbi or the Rebbetzin.** Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. They would be honored to hear what matters to you and to make sure your gift is used as you intend. A gift can carry the name of someone you love, and Chabad of Lamorinda gladly offers dedication opportunities, such as dedicating a room or a memorial plaque in the synagogue.
-3. **Meet with your estate attorney.** the usual advice advises working with an attorney experienced in estate planning, and talking over your wishes with your family and financial advisor.
+3. **Meet with your estate attorney.** Work with an attorney experienced in estate planning, and talk over your wishes with your family and financial advisor.
 4. **Give your attorney the details.** The name to use is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. Our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys) gives wording to start from.
 5. **Let us know.** Telling the Rabbi is a choice, not a requirement, but it lets him thank you during your lifetime.  He is glad to speak with you privately.
 
@@ -47,7 +47,7 @@ Yes. Chabad of Lamorinda accepts legacy gifts, including a bequest in a will or 
 The name to use is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. The same details are on the [legacy page](/legacy), and sample wording is in [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys).
 
 ### Can I change my will later?
-Common practice notes that a gift in a will can be changed if your circumstances change. Your attorney can explain how.
+A gift in a will can be changed if your circumstances change. Your attorney can explain how.
 
 ### Do I have to tell the Rabbi?
 No. But if you do, the Rabbi can thank you and make sure your gift is used as you wish. Everything stays confidential.

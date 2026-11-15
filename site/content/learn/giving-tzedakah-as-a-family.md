@@ -15,7 +15,7 @@ Two teachings stand behind it: Maimonides held that regularity matters more than
 
 ## Before Shabbat candles
 
-Jewish tradition names several good times to give: before prayers, and, for women and girls, before lighting Shabbat and holiday candles. A pregnant woman, the tradition adds, is encouraged to give charity every day. See [Tzedakah Before Candle Lighting](/learn/tzedakah-before-candle-lighting) and, for this week's candle-lighting time, [Shabbat times](/shabbat-times).
+There are several especially good times to give: before prayers, and, for women and girls, before lighting Shabbat and holiday candles. A pregnant woman is encouraged to give charity every day. See [Tzedakah Before Candle Lighting](/learn/tzedakah-before-candle-lighting) and, for this week's candle-lighting time, [Shabbat times](/shabbat-times).
 
 A family can make this a gentle Friday habit: a child places the coins in the box, and everyone sees that Shabbat begins with giving. For the youngest children, see [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
 
@@ -23,7 +23,7 @@ A family can make this a gentle Friday habit: a child places the coins in the bo
 
 Jewish law gives a simple order of priorities: family members in serious financial difficulty first, then local charities before distant ones, and charities in Israel before other faraway ones. Torah schools and Jewish institutions are among the worthy recipients. So a family can ask together: who near us needs help? See [Tzedakah Priorities](/learn/tzedakah-priorities) and [Local Tzedakah in Lamorinda](/learn/local-tzedakah-in-lamorinda).
 
-Jewish tradition also teaches that how we give matters more than how much: give warmly, with a smile, and give anonymously when you can, so the recipient is not embarrassed.
+How we give matters more than how much: give warmly, with a smile, and give anonymously when you can, so the recipient is not embarrassed.
 
 ## A tenth for the family
 
@@ -50,7 +50,7 @@ Money is not handled on Shabbat or Yom Tov, so the pushka is filled before.
 Because the Torah itself invites us to "try Me" with the tithe (Malachi 3:10), and the Talmud teaches to give a tenth so that you will become rich. The Torah and Hashem promise success for all giving, and maaser is where the promise is stated clearly and we are invited to test it. For your own situation, call the Rabbi.
 
 ### Who should get our tzedakah first?
-Family members in serious need come first, then local causes, and Israel before other distant causes, as Jewish law teaches. Ask the Rabbi about your own case.
+Family members in serious need come first, then local causes, and Israel before other distant causes. Ask the Rabbi about your own case.
 
 ### Can grandparents give together with grandchildren?
 Yes. Giving together passes the tradition on. See [Jewish Grandparents](/learn/jewish-grandparents) for ideas.

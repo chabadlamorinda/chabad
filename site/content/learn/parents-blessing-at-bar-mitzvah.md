@@ -18,7 +18,7 @@ A few details are worth knowing:
 - It is said when the **boy** has his aliyah, not when the father is called up.
 - The text is one short line; the Rabbi will give you the wording used in our community. Say it aloud, standing beside your son.
 - It can be said on a day the Torah is read: Shabbat, Monday, Thursday and Rosh Chodesh.
-- **The Divine Name is left out.** Chabad Chassidim generally do not say G-d's name in this blessing. The Rebbes themselves did say it, but that this is not a directive for everyone. Ask the Rabbi how it will be said at your Bar Mitzvah.
+- **The Divine Name is left out.** Chabad Chassidim generally do not say G-d's name in this blessing. The Rebbes themselves did say it, but this is not a directive for everyone. Ask the Rabbi how it will be said at your Bar Mitzvah.
 
 The [Bar Mitzvah timeline](/learn/bar-bat-mitzvah-timeline) shows where this moment fits in the day. Practice the Hebrew beforehand, so that you are not reading it for the first time in front of everyone.
 

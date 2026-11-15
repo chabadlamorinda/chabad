@@ -15,7 +15,7 @@ Read more in [aging with purpose](/learn/aging-with-purpose) and [a Jewish view 
 
 ## Rabbi Akiva started at forty
 
-Jewish tradition tells that Rabbi Akiva, one of the greatest sages, was an unlearned shepherd who began to study Torah at the age of 40, and went on to teach thousands. His story is told in [Rabbi Akiva](/learn/rabbi-akiva). You can also read about [a Bar Mitzvah at 83](/learn/bar-mitzvah-at-83) and about [adult Bar and Bat Mitzvah](/learn/adult-bar-bat-mitzvah).
+The Sages tell that Rabbi Akiva, one of the greatest sages, was an unlearned shepherd who began to study Torah at the age of 40, and went on to teach thousands. His story is told in [Rabbi Akiva](/learn/rabbi-akiva). You can also read about [a Bar Mitzvah at 83](/learn/bar-mitzvah-at-83) and about [adult Bar and Bat Mitzvah](/learn/adult-bar-bat-mitzvah).
 
 ## Simple first steps
 

@@ -72,7 +72,7 @@ Many Jewish families brought Yiddish names from Europe, and they remain loved:
 
 ## How to choose
 
-Jewish tradition says parents may name a child after a departed loved one, mark a special event, or choose any Jewish name they find beautiful. Many families give the Hebrew name together with a secular name. Customs differ between communities, for example about naming after relatives who are living or departed, so ask the Rabbi. More in [Hebrew names](/learn/hebrew-names) and [Jewish baby names](/learn/jewish-baby-names).
+Parents may name a child after a departed loved one, mark a special event, or choose any Jewish name they find beautiful. Many families give the Hebrew name together with a secular name. Customs differ between communities, for example about naming after relatives who are living or departed, so ask the Rabbi. More in [Hebrew names](/learn/hebrew-names) and [Jewish baby names](/learn/jewish-baby-names).
 
 ## How a girl is named
 
@@ -87,7 +87,7 @@ Sarah, Rivkah, Rachel, Devorah, Chana, Esther, Ruth, Shira and Aviva are popular
 Simchah (שמחה) and Chedva (חדוה) mean joy and delight. Shalhevet (שלהבת) means flame.
 
 ### When is a Jewish girl given her name?
-Traditionally at the Torah reading shortly after her birth, according to Jewish tradition.
+Traditionally at the Torah reading shortly after her birth.
 
 ### Can we name a baby after a relative?
 Yes. Parents often name after departed loved ones. Customs about living relatives differ, so ask the Rabbi.

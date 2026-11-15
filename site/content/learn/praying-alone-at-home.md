@@ -39,7 +39,7 @@ If you are unsure about a specific prayer, such as whether it requires ten, ask 
 
 1. **Choose the time.** There are prayers in the morning, afternoon and evening. See [Daily Prayers](/learn/daily-prayers) and ask the Rabbi about times.
 2. **Use a siddur.** Pray from a siddur, a prayer book. Choose one with English if you need it, and see the [siddur guide](/learn/siddur).
-3. **Start small.** A few prayers said with attention are worth more than many said in a rush. Chassidic teaching stresses that concentration is the heart of prayer: "know before Whom you stand."
+3. **Start small.** A few prayers said with attention are worth more than many said in a rush. Concentration is the heart of prayer: "know before Whom you stand."
 4. **Pray in a language you understand** if Hebrew is hard. See [Can I Pray in English?](/learn/can-i-pray-in-english).
 5. **Add your own words.** See [Talking to G-d in Your Own Words](/learn/talking-to-g-d-in-your-own-words).
 
@@ -62,7 +62,7 @@ Yes. The Shema is said by each individual. See [Shema](/learn/shema).
 The parts that need ten: Kaddish, Barchu, Kedushah, the Amidah repetition and the Torah reading. Ask the Rabbi if you are unsure about anything else.
 
 ### Is it better to pray at home or in synagogue?
-Praying in synagogue is better, even without a minyan, according to Jewish tradition. When you cannot go, praying at home is still the right thing to do.
+Praying in synagogue is better, even without a minyan. When you cannot go, praying at home is still the right thing to do.
 
 ### Can women pray at home too?
 Yes. Everyone can pray in their own words at any time. Ask Rebbetzin Labkowski or the Rabbi for guidance on which set prayers to start with.

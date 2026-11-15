@@ -11,7 +11,7 @@ For people in Lafayette, Moraga and Orinda who commute to San Francisco, Oakland
 
 ## Why Shabbat affects work
 
-Shabbat lasts about 25 hours, from before sunset on Friday until Saturday night. According to Jewish tradition, observant Jews do not do creative work, use phones and electronics, or drive. See [thirty-nine melachot](/learn/thirty-nine-melachot) and [Shabbat for beginners](/learn/shabbat-for-beginners). In the winter, candle lighting can come as early as the afternoon, so an early Friday is part of keeping Shabbat; see [Shabbat in winter](/learn/shabbat-in-winter) and [Shabbat times](/shabbat-times).
+Shabbat lasts about 25 hours, from before sunset on Friday until Saturday night. Observant Jews do not do creative work, use phones and electronics, or drive. See [thirty-nine melachot](/learn/thirty-nine-melachot) and [Shabbat for beginners](/learn/shabbat-for-beginners). In the winter, candle lighting can come as early as the afternoon, so an early Friday is part of keeping Shabbat; see [Shabbat in winter](/learn/shabbat-in-winter) and [Shabbat times](/shabbat-times).
 
 ## Before you talk: get ready
 

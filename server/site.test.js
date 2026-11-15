@@ -1183,6 +1183,20 @@ test('bring a friend: every RSVP gets an invite link, and a friend who RSVPs thr
   assert.equal(list.find((p) => p.email === 'x@example.com').brought_by, null, 'an unknown code credits no one');
 });
 
+test('Learn library: every guide sits in one subject of its own category, in reading order, and the subject pages open in three languages', async () => {
+  const c = client(), C = load(DIR), subs = new Map(C.topics.categories.flatMap((c) => c.subs.map((s) => [s.id, { cat: c.name, sub: s }])));
+  const bad = C.learn.filter((a) => { const s = subs.get(a.sub); return !s || s.cat !== a.category; }).map((a) => a.slug + ' (' + a.category + ' / ' + a.sub + ')');
+  assert.deepEqual(bad, [], 'every guide needs a subject in learn-topics.json, inside its own category');
+  for (const [id, { sub }] of subs) { const n = C.learn.filter((a) => a.sub === id).length; assert.ok(n >= 3 && n <= 45, `subject ${id} has ${n} guides`); for (const l of ['en', 'he', 'ru']) assert.ok(sub[l] && sub.desc[l], `subject ${id}: name and description in ${l}`); }
+  const first = C.topics.categories[0], sub = first.subs[0], id = first.name.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+  for (const pre of ['', '/he', '/ru']) {
+    const hub = await c.call('GET', pre + '/learn'); assert.equal(hub.status, 200); assert.ok(hub.text.includes(`/learn/topic/${id}/${sub.id}`), 'the hub links the subjects');
+    const page = await c.call('GET', `${pre}/learn/topic/${id}/${sub.id}`); assert.equal(page.status, 200); assert.ok(page.text.includes('/learn/'), 'the subject page lists its guides');
+    assert.equal((await c.call('GET', `${pre}/learn/topic/${id}`)).status, 200);
+  }
+  assert.equal((await c.call('GET', '/learn/topic/nope/nothing')).status, 404);
+  const guide = (await c.call('GET', '/learn/' + C.learn.find((a) => a.sub === sub.id).slug)).text; assert.ok(guide.includes(`/learn/topic/${id}/${sub.id}`), 'a guide links back to its subject');
+});
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',

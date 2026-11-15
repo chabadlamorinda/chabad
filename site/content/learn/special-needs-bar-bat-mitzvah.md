@@ -15,7 +15,7 @@ A day can and should be shaped to fit your child. Rabbi Labkowski will plan it w
 
 ## Adapting the day
 
-Here are the kinds of adaptations families have used, according to stories of Chabad families and to what the Rabbi can arrange:
+Here are the kinds of adaptations families have used, according to families' stories and to what the Rabbi can arrange:
 
 - **A short, meaningful goal.** A girl with Down syndrome in Peabody, Massachusetts, learned the Shema and lit Shabbat candles with the blessing, and said the blessing over bread at a Kiddush the next day. The family and community described it as sweet, intimate and joyful.
 - **Tefillin** for a boy, put on with help, if comfortable ([tefillin](/learn/tefillin)).

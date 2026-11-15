@@ -15,7 +15,7 @@ If a friend in Lafayette, Moraga or Orinda has just had a baby, you do not need 
 
 ## The traditional blessing
 
-Jewish tradition notes that it is customary to wish new parents that they raise their child to Torah, chuppah and maasim tovim, which means learning, marriage and good deeds. This echoes the blessing said at a bris and at a baby naming, wishing that just as the baby entered the covenant, so may he enter Torah, marriage and good deeds. For a girl, the wish is the same: a life of Torah, a Jewish home and good deeds. If you like, add the wish for Jewish "nachas" (נַחַת), the quiet joy a parent has from a child.
+It is customary to wish new parents that they raise their child to Torah, chuppah and maasim tovim, which means learning, marriage and good deeds. This echoes the blessing said at a bris and at a baby naming, wishing that just as the baby entered the covenant, so may he enter Torah, marriage and good deeds. For a girl, the wish is the same: a life of Torah, a Jewish home and good deeds. If you like, add the wish for Jewish "nachas" (נַחַת), the quiet joy a parent has from a child.
 
 ## When to say it
 

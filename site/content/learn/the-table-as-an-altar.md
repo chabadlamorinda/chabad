@@ -9,7 +9,7 @@ Judaism teaches that your table is like the altar of the ancient Temple: the Tal
 
 ## The Talmud's teaching
 
-The source. The Talmud (Berachot 55a) says that while the Temple stood, the sacrifices on the altar atoned for Israel. Today, with no Temple, a person's table atones for him when he feeds the poor. The prophet Ezekiel, describing the future altar, first calls it an altar and then says, "This is the table that is before the L-rd" (Ezekiel 41:22), and that shift of words is the basis for the comparison.
+Here is the source. The Talmud (Berachot 55a) says that while the Temple stood, the sacrifices on the altar atoned for Israel. Today, with no Temple, a person's table atones for him when he feeds the poor. The prophet Ezekiel, describing the future altar, first calls it an altar and then says, "This is the table that is before the L-rd" (Ezekiel 41:22), and that shift of words is the basis for the comparison.
 
 In other words, an ordinary dinner table can have a sacred role. What we do there, who we feed and how, matters. Read [eating as a mitzvah](/learn/eating-as-a-mitzvah).
 

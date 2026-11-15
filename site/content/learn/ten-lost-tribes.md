@@ -11,7 +11,7 @@ The Ten Lost Tribes are the ten of the twelve tribes of Israel who made up the n
 
 After the reign of King Solomon, the Jewish people split into two kingdoms. The southern kingdom, Judah, kept the tribes of Judah and Benjamin (with Levi), and the northern kingdom, Israel, held the other ten tribes. Read how it happened in [the kingdoms of Israel and Judah](/learn/kingdoms-of-israel-and-judah) and about the family in [the twelve tribes](/learn/twelve-tribes).
 
-According to Jewish tradition, the northern kingdom lasted 241 years, and its kings were all wicked. Prophets such as Elijah, Elisha, Hosea, Amos and Jonah spoke to the people, but they did not return. In the end the king removed the guards that stopped people from going up to the Temple in Jerusalem, and the people still did not go.
+The northern kingdom lasted 241 years, and its kings were all wicked. Prophets such as Elijah, Elisha, Hosea, Amos and Jonah spoke to the people, but they did not return. In the end the king removed the guards that stopped people from going up to the Temple in Jerusalem, and the people still did not go.
 
 ## The Assyrian exile
 
@@ -25,7 +25,7 @@ For centuries people have wondered where the ten tribes went. No one has identif
 
 - **The Sambatyon river.** The Talmud tells of Rabbi Akiva citing a river whose water flows on weekdays and rests on Shabbat. Ancient writers also mention it, but they do not agree on which day it rests. Later stories place the lost tribes behind this river.
 - **Eldad HaDani.** In the ninth century a traveler calling himself Eldad of the tribe of Dan appeared in Kairouan (today Tunisia) with stories of the tribes living near the Sambatyon. A leading rabbi of the time said much of his account fit Jewish tradition. Medieval scholars disagreed about him: Rashi and Tosafot cited his writings, while Ibn Ezra and the Maharam of Rothenburg dismissed them.
-- **Modern claims.** People have proposed places across Africa, Asia and the Americas. This guide takes no position on any modern group's claims; Jewish tradition does not endorse any specific location.
+- **Modern claims.** People have proposed places across Africa, Asia and the Americas. This guide takes no position on any modern group's claims and does not endorse any specific location.
 
 ## Will they return?
 

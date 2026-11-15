@@ -21,11 +21,11 @@ The chapter says that improper thoughts may rise by themselves from the heart. W
 
 The same goes for feelings about other people. According to the chapter, when jealousy, anger or resentment arise, the beinoni keeps them out of his mind and answers with kindness, as Joseph did toward his brothers.
 
-Chassidic teaching on the beinoni adds that this does not need the feelings to disappear: a person "copes, but doesn't triumph," and keeps striving. It also says (citing Chapter 13) that the divine soul receives heavenly help.
+The Tanya's teaching on the beinoni adds that this does not need the feelings to disappear: a person "copes, but doesn't triumph," and keeps striving. It also says (citing Chapter 13) that the divine soul receives heavenly help.
 
 ## Choosing your clothes
 
-Chassidic teaching on the soul's "garments" (see [three garments of the soul](/learn/three-garments-of-the-soul)), says that at any moment you can choose your thoughts, words and actions. Acting kindly and speaking kindly even in a low mood gradually shifts your character.
+The Tanya's teaching on the soul's "garments" (see [three garments of the soul](/learn/three-garments-of-the-soul)) says that at any moment you can choose your thoughts, words and actions. Acting kindly and speaking kindly even in a low mood gradually shifts your character.
 
 ## Prayer helps
 

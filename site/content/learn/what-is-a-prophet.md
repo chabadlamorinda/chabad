@@ -11,13 +11,13 @@ Here is a simple map of the prophets, their books and why they matter to readers
 
 ## What does a prophet do?
 
-Chassidic teaching describes prophets as guides. They told the people what G-d wanted of them, challenged kings and ordinary people, and offered comfort in hard times. A prophet is a messenger, not someone who predicts lottery numbers. Many of their predictions were warnings, with a hope that people would change.
+Prophets were guides. They told the people what G-d wanted of them, challenged kings and ordinary people, and offered comfort in hard times. A prophet is a messenger, not someone who predicts lottery numbers. Many of their predictions were warnings, with a hope that people would change.
 
-Jewish tradition explains that other prophets heard from G-d only at times, often in a dreamlike state, while Moses could speak with G-d whenever he wished. That is why Moses is called the greatest of the prophets. Read more in the guide to [Moses](/learn/moses).
+Other prophets heard from G-d only at times, often in a dreamlike state, while Moses could speak with G-d whenever he wished. That is why Moses is called the greatest of the prophets. Read more in the guide to [Moses](/learn/moses).
 
 ## How many prophets were there?
 
-The Talmud says there were 48 prophets and seven prophetesses whose words were recorded for future generations. The tradition notes that there were many more prophets, about 1,200,000 according to the Talmud, but only those whose message was needed in later times are written down.
+The Talmud says there were 48 prophets and seven prophetesses whose words were recorded for future generations. There were many more prophets, about 1,200,000 according to the Talmud, but only those whose message was needed in later times are written down.
 
 The seven prophetesses are Sarah, Miriam, Deborah, Hannah, Abigail, Huldah and Esther. Read about [Miriam](/learn/miriam) and [Hannah](/learn/hannah-and-her-prayer).
 
@@ -65,7 +65,7 @@ The Talmud counts 48 prophets and seven prophetesses whose words were recorded f
 They are Sarah, Miriam, Deborah, Hannah, Abigail, Huldah and Esther.
 
 ### Who was the greatest prophet?
-Moses. Chassidic teaching explains he could speak to G-d at any time, while other prophets received prophecy only at certain moments.
+Moses. He could speak to G-d at any time, while other prophets received prophecy only at certain moments.
 
 ### Are there prophets today?
 Tradition teaches that prophecy ended long ago and will return in the time of the Messiah. For personal questions, ask the Rabbi.

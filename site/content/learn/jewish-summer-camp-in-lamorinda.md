@@ -22,7 +22,7 @@ Each day is long enough to work for busy families: 8:30 AM to 5:00 PM. Call 925-
 
 ## Why a Jewish summer matters
 
-There are many reasons to send children to Jewish summer camp. The idea is simple: when Judaism is joyful, children remember it. Songs, friends and Shabbat parties give a child a happy Jewish memory that school-year routines may not. The Rebbe encouraged Jewish summer camps for every Jewish child, and Jewish tradition describes Jewish day camps in small towns as a "lifeline" for families who might otherwise have no Jewish setting for their kids. Camp also helps parents meet other Jewish families nearby.
+There are many reasons to send children to Jewish summer camp. The idea is simple: when Judaism is joyful, children remember it. Songs, friends and Shabbat parties give a child a happy Jewish memory that school-year routines may not. The Rebbe encouraged Jewish summer camps for every Jewish child, and Jewish day camps in small towns have been described as a "lifeline" for families who might otherwise have no Jewish setting for their kids. Camp also helps parents meet other Jewish families nearby.
 
 ## How to register, step by step
 

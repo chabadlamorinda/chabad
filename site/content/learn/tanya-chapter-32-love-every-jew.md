@@ -11,7 +11,7 @@ This is the chapter Chabad reaches for when it explains *Ahavat Yisrael* (אהב
 
 ## The joy that comes just before
 
-The chapter before it, Chapter 31, speaks to a person who feels bad about his spiritual state, and says he should find joy in his G-dly soul. Chapter 32 continues on that path. According to the text, a person who treats his body as secondary and finds his joy in his soul has a direct road to the mitzvah "You shall love your fellow as yourself" (Leviticus 19:18), toward every Jew, great or small.
+The chapter before it, Chapter 31, speaks to a person who feels bad about his spiritual state, and says he should find joy in his G-dly soul. Chapter 32 continues on that path: a person who treats his body as secondary and finds his joy in his soul has a direct road to the mitzvah "You shall love your fellow as yourself" (Leviticus 19:18), toward every Jew, great or small.
 
 ## The heart of the Tanya
 
@@ -31,7 +31,7 @@ The answer is that the Torah's deepest purpose is to lift the soul above the bod
 
 ## Draw close with love
 
-Chapter 32 also teaches how to treat a Jew who is far from Torah and mitzvot. The Alter Rebbe says that such a person is not to be pushed away. Following Hillel, who advised being a disciple of Aaron, we are to love peace, love people and bring them closer to Torah. Chassidic teaching on Ahavat Yisrael adds a practical thought: most Jews today were simply not raised in a Torah-observant home, so kindness works better than scolding.
+Chapter 32 also teaches how to treat a Jew who is far from Torah and mitzvot. The Alter Rebbe says that such a person is not to be pushed away. Following Hillel, who advised being a disciple of Aaron, we are to love peace, love people and bring them closer to Torah. One practical thought helps too: most Jews today were simply not raised in a Torah-observant home, so kindness works better than scolding.
 
 This is the spirit of Chabad of Lamorinda in Lafayette. The welcome is for every Jew in Lafayette, Moraga and Orinda, whatever their background.
 

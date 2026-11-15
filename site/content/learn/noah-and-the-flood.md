@@ -26,7 +26,7 @@ Noah was righteous, yet the Sages compare him with Abraham. Rashi, quoting the S
 
 ## A Chassidic lesson: the ark is a word
 
-In Hebrew, teivah means both "ark" and "word." The Baal Shem Tov's reading is this: G-d tells Noah to enter the "word," meaning the words of prayer and Torah study, which become a refuge amid the raging waters of life. The Chassidic sources also connect the flood (mabul) with "confusion" (balal). When life feels overwhelming, step into the words of prayer or Torah study; that is your ark.
+In Hebrew, teivah means both "ark" and "word." The Baal Shem Tov reads it this way: G-d tells Noah to enter the "word," meaning the words of prayer and Torah study, which become a refuge amid the raging waters of life. The Chassidic sources also connect the flood (mabul) with "confusion" (balal). When life feels overwhelming, step into the words of prayer or Torah study; that is your ark.
 
 ## The rainbow
 

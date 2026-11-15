@@ -11,15 +11,15 @@ For busy parents and professionals in Lafayette, Moraga and Orinda, these small 
 
 ## Sleep and the soul
 
-Chassidic teaching teaches that the soul rises to heaven each night to recharge, and each morning G-d mercifully returns it to the body. A new day is a sign that G-d still trusts you with something to do. This is why the first words of the day thank Him.
+Chassidic teaching explains that the soul rises to heaven each night to recharge, and each morning G-d mercifully returns it to the body. A new day is a sign that G-d still trusts you with something to do. This is why the first words of the day thank Him.
 
 The sages compare sleep to a small taste of death, and waking to a renewal of life. That is a gentle idea: each morning is a fresh start.
 
 ## Before bed: the bedtime Shema
 
-The bedtime Shema is a short set of prayers found in the siddur. Chassidic teaching explains that the last minutes before sleep shape your dreams and affect how you perform the next day, so a calm bedtime supports both rest and tomorrow.
+The bedtime Shema is a short set of prayers found in the siddur. The last minutes before sleep shape your dreams and affect how you perform the next day, so a calm bedtime supports both rest and tomorrow.
 
-Chassidic teaching lays out six steps:
+Here are six steps:
 
 1. **Relax.** Slow down and let go of the day's worries.
 2. **Re-examine.** Review the day. Notice the good, and set aside mistakes with the intention to do better.
@@ -28,19 +28,19 @@ Chassidic teaching lays out six steps:
 5. **Repent.** Reflect on G-d's kindness and say the confession that follows.
 6. **Re-entrust.** Say the blessing *Hamapil* (הַמַּפִּיל), asking for a peaceful night and entrusting your soul to G-d.
 
-After the blessing, avoid food or drink until you wake. If you have trouble falling asleep, Chassidic philosophy suggests saying, thinking or picturing the words of the Shema. See the full guide to the [bedtime Shema](/learn/bedtime-shema) and [the Shema](/learn/shema).
+After the blessing, avoid food or drink until you wake. If you have trouble falling asleep, try saying, thinking or picturing the words of the Shema. See the full guide to the [bedtime Shema](/learn/bedtime-shema) and [the Shema](/learn/shema).
 
 ## Forgiving others before sleep
 
-The tradition holds that the best way to release your own mistakes is to release the wrongs others did to you. The Talmudic sage Rava taught that those who let go of revenge have their own sins overlooked. Forgiving before sleep means you do not carry anger into the night. See [teshuvah](/learn/teshuvah).
+The best way to release your own mistakes is to release the wrongs others did to you. The Talmudic sage Rava taught that those who let go of revenge have their own sins overlooked. Forgiving before sleep means you do not carry anger into the night. See [teshuvah](/learn/teshuvah).
 
 ## Waking up: Modeh Ani
 
 *Modeh Ani* (מוֹדֶה אֲנִי) is the first prayer of the day, said in bed. It thanks G-d, the living and eternal King, for mercifully returning our soul, and it affirms how great His faithfulness is.
 
-Chassidic philosophy says it is generally said on waking after a real sleep, when you intend to start your day. Our first conscious moments are spent on gratitude, with nothing from the previous day to taint them.
+It is generally said on waking after a real sleep, when you intend to start your day. Our first conscious moments are spent on gratitude, with nothing from the previous day to taint them.
 
-Chassidic teaching also admits waking up is a battle between "I want" (the snooze button) and "I should" (getting up), and offers a trick: picture a king waiting for you to begin your mission. The true King is the One who renews you each day. See [Modeh Ani](/learn/modeh-ani).
+Chassidic thought also admits that waking up is a battle between "I want" (the snooze button) and "I should" (getting up), and offers a trick: picture a king waiting for you to begin your mission. The true King is the One who renews you each day. See [Modeh Ani](/learn/modeh-ani).
 
 It is also customary to wash your hands on rising. Ask the Rabbi for the details.
 

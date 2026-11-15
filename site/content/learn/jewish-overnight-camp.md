@@ -5,19 +5,19 @@ category: Jewish home
 related: jewish-summer-camp-in-lamorinda, preparing-for-jewish-camp, jewish-teens-in-lamorinda, gap-year-in-israel, choosing-jewish-education, kosher-on-campus
 local: Ask the Rabbi for guidance on overnight camps at /help/talk-to-the-rabbi or call 925-384-7242.
 ---
-A Jewish overnight camp is a sleepaway summer camp where children live together for a session of Jewish learning, Shabbat, kosher food and outdoor fun. Jewish tradition describes camp as one of the strongest ways to build Jewish identity, and families in Lafayette, Moraga and Orinda can start with our own day camp for young children and ask the Rabbi about overnight options.
+A Jewish overnight camp is a sleepaway summer camp where children live together for a session of Jewish learning, Shabbat, kosher food and outdoor fun. Camp is one of the strongest ways to build Jewish identity, and families in Lafayette, Moraga and Orinda can start with our own day camp for young children and ask the Rabbi about overnight options.
 
 ## Why Jewish camp matters
 
-There are many reasons to send a child to Jewish summer camp. Informal, hands-on education helps build lasting Jewish bonds and identity, and camp teaches Torah, mitzvahs and Jewish history, especially important for children who do not attend a Jewish school during the year. It also points to the joy: sing-alongs, hiking, plays, color war and friendships, and children who come home eager for next summer.
+There are many reasons to send a child to Jewish summer camp. Informal, hands-on education helps build lasting Jewish bonds and identity, and camp teaches Torah, mitzvahs and Jewish history, especially important for children who do not attend a Jewish school during the year. Then there is the joy: sing-alongs, hiking, plays, color war and friendships, and children who come home eager for next summer.
 
-Jewish tradition adds that the Chabad Gan Israel camp network operates in about seventy countries, and a Gan Israel directory lists hundreds of camps. One Gan Israel overnight camp offers swimming, kayaking, hiking, drama, bonfires and time for prayer, with separate sessions for girls and boys. Details vary camp by camp, so always ask.
+The Chabad Gan Israel camp network operates in about seventy countries, and a Gan Israel directory lists hundreds of camps. One Gan Israel overnight camp offers swimming, kayaking, hiking, drama, bonfires and time for prayer, with separate sessions for girls and boys. Details vary camp by camp, so always ask.
 
 ## What to look for
 
 When you compare camps, ask these questions:
 
-- **Kosher food.** Is all the food kosher, including snacks and trips? Jewish sources say that good Jewish camp provides kosher meals that nourish body and soul.
+- **Kosher food.** Is all the food kosher, including snacks and trips? A good Jewish camp provides kosher meals that nourish body and soul.
 - **Shabbat.** How is Shabbat kept, and what does a Shabbat at camp feel like? Is it welcoming to children from every background?
 - **Jewish learning.** What do children learn, and is it joyful rather than a lecture?
 - **Staff.** Who are the counselors, how are they chosen and trained, and what is the ratio of staff to campers?
@@ -68,7 +68,7 @@ It depends on the child. Look for comfort with sleepovers, self-care and a wish 
 Our summer camp in Lafayette is a day camp for ages 2 to 4. For overnight camps, call the Rabbi at 925-384-7242 to ask.
 
 ### Is Gan Israel a Chabad camp?
-Yes. Jewish teaching describes the Gan Israel camp network as operating in about seventy countries.
+Yes. The Gan Israel camp network operates in about seventy countries.
 
 ### How do I handle homesickness?
 Prepare together, ask how the camp helps children who miss home, and send a note from home. Talk with the Rabbi if you have a specific concern.

@@ -15,12 +15,12 @@ The Hebrew word is חנוכה, and it is pronounced *kha-noo-kah*. The first sou
 
 ## Why there are so many spellings
 
-Hebrew has sounds that English does not, so every English spelling is an approximation. Chassidic teaching explains the main choices:
+Hebrew has sounds that English does not, so every English spelling is an approximation. Here are the main choices:
 
 - **Hanukkah.** "H" is the most common English spelling. It is imperfect but easy to pronounce. Sephardic Jews and many non-Jews favor it, since it matches the Sephardic sound.
 - **Chanukah.** Ashkenazic Jews traditionally favor "ch," which represents the guttural sound, as in German and in names like Menachem and Pesach.
 - **Doubled k.** Some purists double the "k" to show the dagesh, a dot in the Hebrew letter. That gives "Hanukkah," as in "Shabbat." Most Ashkenazic and some Sephardic traditions do not keep that distinction, so the single "k" is just as common.
-- **Khanike.** Yiddish scholars sometimes use this, but Jewish tradition calls it uncommon and confusing in English text.
+- **Khanike.** Yiddish scholars sometimes use this, but it is uncommon and confusing in English text.
 
 It is simple: both Chanukah and Hanukkah are correct. Chanukah is preferred by Ashkenazim, and Hanukkah is more common among Sephardim, in Modern Hebrew translations and among non-Jews. Our website uses Chanukah, the Ashkenazic spelling.
 

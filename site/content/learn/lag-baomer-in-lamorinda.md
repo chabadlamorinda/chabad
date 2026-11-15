@@ -13,11 +13,11 @@ Lag BaOmer (ל"ג בעומר) is the 33rd day of the Omer, the count between Pas
 
 ## Rabbi Akiva's students
 
-The Talmud teaches that thousands of Rabbi Akiva's students died in a plague because they "did not act respectfully towards each other." The deaths stopped on Lag BaOmer. Chassidic teaching highlights the lesson: love and respect for every fellow Jew. Read about [Rabbi Akiva](/learn/rabbi-akiva) and [Ahavat Yisrael](/learn/ahavat-yisrael).
+The Talmud teaches that thousands of Rabbi Akiva's students died in a plague because they "did not act respectfully towards each other." The deaths stopped on Lag BaOmer. The lesson: love and respect for every fellow Jew. Read about [Rabbi Akiva](/learn/rabbi-akiva) and [Ahavat Yisrael](/learn/ahavat-yisrael).
 
 ## Rabbi Shimon bar Yochai and the Zohar
 
-Rabbi Shimon bar Yochai, known as Rashbi, was a second-century sage who taught the hidden, mystical dimension of the Torah, and the Zohar is the classic book of Kabbalah attributed to him and his students. Jewish tradition tells us he asked his students to mark the day of his passing as "the day of my joy." Each year, tens of thousands visit his resting place in Meron, in northern Israel. Hiding from the Romans in a cave, Rashbi and his son were sustained by a carob tree and a spring, which is why carob is a Lag BaOmer food.
+Rabbi Shimon bar Yochai, known as Rashbi, was a second-century sage who taught the hidden, mystical dimension of the Torah, and the Zohar is the classic book of Kabbalah attributed to him and his students. He asked his students to mark the day of his passing as "the day of my joy." Each year, tens of thousands visit his resting place in Meron, in northern Israel. Hiding from the Romans in a cave, Rashbi and his son were sustained by a carob tree and a spring, which is why carob is a Lag BaOmer food.
 
 ## Customs: bonfires, bows and picnics
 

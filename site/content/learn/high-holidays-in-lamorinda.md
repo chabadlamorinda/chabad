@@ -9,13 +9,13 @@ Chabad of Lamorinda holds Rosh Hashanah services, the Shofar and Tashlich gather
 
 ## What happens at Rosh Hashanah services
 
-Rosh Hashanah (ראש השנה, the Jewish New Year) is the day we crown G-d as King and ask for a good, sweet year. The heart of the service is the shofar (שופר, a ram's horn), sounded in a pattern of long and short blasts, which Jewish tradition describes as a wake-up call for the soul. Services include special prayers, Torah readings and the shofar blasts, with the Rabbi's explanations. You do not need to read Hebrew or know the tunes: follow along in an English-Hebrew prayer book. See [Rosh Hashanah for Beginners](/learn/rosh-hashanah-for-beginners) and [the shofar](/learn/shofar).
+Rosh Hashanah (ראש השנה, the Jewish New Year) is the day we crown G-d as King and ask for a good, sweet year. The heart of the service is the shofar (שופר, a ram's horn), sounded in a pattern of long and short blasts, which Maimonides describes as a wake-up call for the soul. Services include special prayers, Torah readings and the shofar blasts, with the Rabbi's explanations. You do not need to read Hebrew or know the tunes: follow along in an English-Hebrew prayer book. See [Rosh Hashanah for Beginners](/learn/rosh-hashanah-for-beginners) and [the shofar](/learn/shofar).
 
 Children are welcome. Try [Rosh Hashanah with kids](/learn/rosh-hashanah-with-kids) for ideas, and the [kids' corner](/kids).
 
 ## Tashlich at the Lafayette Reservoir
 
-Tashlich (תשליך, "you shall cast away") is a short ceremony in which we symbolically cast our sins into the water, reciting verses from the prophets and Psalms, ending with Micah's words, "Who is a G-d like You...". Chassidic teaching explains how it works:
+Tashlich (תשליך, "you shall cast away") is a short ceremony in which we symbolically cast our sins into the water, reciting verses from the prophets and Psalms, ending with Micah's words, "Who is a G-d like You...". Here is how it works:
 
 1. **When:** on the first day of Rosh Hashanah, ideally between Mincha and Maariv in the afternoon. If the first day is Shabbat, Chabad postpones it to the second day.
 2. **Where:** ideally by a natural body of water with fish, such as a lake or river. Our local gathering is at the Lafayette Reservoir, a recreation area run by the East Bay Municipal Utility District, which posts its own park rules; please follow them.

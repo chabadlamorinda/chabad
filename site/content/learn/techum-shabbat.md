@@ -11,7 +11,7 @@ Here are the basic rules, and they matter for anyone in Lafayette, Moraga or Ori
 
 ## What is the Shabbat limit?
 
-The Torah and the Sages limit how far a person may travel on foot on Shabbat. According to Jewish tradition, the distance is 2,000 amot, an *amah* (אַמָּה, "cubit") being about 18 to 19 inches. In everyday terms, that is just under 3/5 of a mile. The 2,000-amah limit is a Rabbinic law according to one authority, while Maimonides holds that the Torah itself restricts travel to a longer distance. In either case, we keep the limit of 2,000 amot.
+The Torah and the Sages limit how far a person may travel on foot on Shabbat. The distance is 2,000 amot, an *amah* (אַמָּה, "cubit") being about 18 to 19 inches. In everyday terms, that is just under 3/5 of a mile. The 2,000-amah limit is a Rabbinic law according to one authority, while Maimonides holds that the Torah itself restricts travel to a longer distance. In either case, we keep the limit of 2,000 amot.
 
 This is separate from the rule on carrying. The [eruv](/learn/eruv) allows you to carry within a marked area. The Shabbat limit says how far you may go. A walk could be fine in one way, and not in the other.
 

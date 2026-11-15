@@ -9,7 +9,7 @@ In Chabad custom, a boy begins putting on tefillin about two months before his B
 
 ## Why start early
 
-Tefillin (תְּפִלִּין) are the black leather boxes with handwritten Torah passages that a Jewish man wears on weekday mornings. A boy becomes responsible for the mitzvah on his Bar Mitzvah date, but doing it for the first time on that very morning is a lot to ask. According to Jewish tradition, the practice is to begin about two months earlier. If Chol HaMoed (the middle days of a festival) falls in that stretch, when tefillin are not worn, the start can be moved a little earlier. Ask the Rabbi to set your son's start date. See [the Hebrew date of the Bar Mitzvah](/learn/bar-mitzvah-hebrew-birthday-date) to count back.
+Tefillin (תְּפִלִּין) are the black leather boxes with handwritten Torah passages that a Jewish man wears on weekday mornings. A boy becomes responsible for the mitzvah on his Bar Mitzvah date, but doing it for the first time on that very morning is a lot to ask. The practice is to begin about two months earlier. If Chol HaMoed (the middle days of a festival) falls in that stretch, when tefillin are not worn, the start can be moved a little earlier. Ask the Rabbi to set your son's start date. See [the Hebrew date of the Bar Mitzvah](/learn/bar-mitzvah-hebrew-birthday-date) to count back.
 
 ## The two stages
 

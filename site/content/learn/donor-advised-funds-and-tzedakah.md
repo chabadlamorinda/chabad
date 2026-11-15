@@ -9,13 +9,13 @@ Chabad of Lamorinda accepts donor-advised fund grants and gifts of stock. A gran
 
 ## What maaser is
 
-Maaser (מַעֲשֵׂר) means "a tenth." Jewish tradition explains that maaser kesafim, giving a tenth of income, is the common practice, and that giving up to a fifth (chomesh) is praiseworthy. It is a structured system, unlike tzedakah in general, which has no fixed percentage. See [Maaser](/learn/maaser).
+Maaser (מַעֲשֵׂר) means "a tenth." Maaser kesafim, giving a tenth of income, is the common practice, and giving up to a fifth (chomesh) is praiseworthy. It is a structured system, unlike tzedakah in general, which has no fixed percentage. See [Maaser](/learn/maaser).
 
-Most opinions, Chassidic teaching notes, hold that maaser is not biblically mandated, so it may often be used for other mitzvahs and not only for the poor. Poor people are still the primary recipients, and poor relatives come first.
+Most opinions hold that maaser is not biblically mandated, so it may often be used for other mitzvahs and not only for the poor. Poor people are still the primary recipients, and poor relatives come first.
 
 ## What counts as income
 
-According to the tradition's maaser guide, income includes salary, gifts, inheritance and interest. It does not include money you must repay, such as a loan. Investment gains count only once they are realized, for example when an asset is sold and the profit is received. Ideally, maaser is set aside when income is received, but it can also be calculated at any point during the year.
+For maaser, income includes salary, gifts, inheritance and interest. It does not include money you must repay, such as a loan. Investment gains count only once they are realized, for example when an asset is sold and the profit is received. Ideally, maaser is set aside when income is received, but it can also be calculated at any point during the year.
 
 This matters for stock and other investments: the guide treats the gain as income when it is actually realized. How that works for a particular gift of stock, with a particular history, is a question for your tax advisor, and whether it counts as maaser is a question for the Rabbi.
 
@@ -25,9 +25,9 @@ This matters for stock and other investments: the guide treats the gain as incom
 
 **Does giving stock count?** The classic guides mention only that investment gains count as income once realized. Chabad of Lamorinda accepts gifts of stock through its Fidelity brokerage account. Please ask the Rabbi how it counts as maaser, and your tax advisor about taxes.
 
-**Can I use maaser to pay a pledge?** Jewish tradition says maaser can cover a pledge only if you intended to use maaser when you made the pledge. A pledge made without that intent must come from regular funds.
+**Can I use maaser to pay a pledge?** Maaser can cover a pledge only if you intended to use maaser when you made the pledge. A pledge made without that intent must come from regular funds.
 
-**Can I use maaser for something I am already required to do?** Chassidic teaching gives the example of Purim's required gifts to the poor (matanot la'evyonim), which must come from regular funds, and says that using maaser for your own Torah learning is problematic. Best practice, according to the guide, is to use your own money for mitzvahs when you can and reserve maaser for charity.
+**Can I use maaser for something I am already required to do?** One example is Purim's required gifts to the poor (matanot la'evyonim), which must come from regular funds; using maaser for your own Torah learning is also problematic. Best practice is to use your own money for mitzvahs when you can and reserve maaser for charity.
 
 ## A simple way to prepare
 
@@ -49,16 +49,16 @@ Yes. A donor-advised fund grant counts as maaser, as Rabbi Labkowski has confirm
 Chabad of Lamorinda accepts gifts of stock through its Fidelity brokerage account; call 925-384-7242 for the transfer details. How the value of a gift of stock is counted for maaser is a question for the Rabbi. Ask your tax advisor about taxes.
 
 ### Do I have to give maaser if I am struggling?
-No. The tradition says basic needs come first, and you are not obligated to give maaser if you cannot cover them. The Rebbe encouraged giving a partial amount when needed. Ask the Rabbi. See [Giving Tzedakah When Money Is Tight](/learn/giving-when-money-is-tight).
+No. Basic needs come first, and you are not obligated to give maaser if you cannot cover them. The Rebbe encouraged giving a partial amount when needed. Ask the Rabbi. See [Giving Tzedakah When Money Is Tight](/learn/giving-when-money-is-tight).
 
 ### Is maaser calculated on gross or net income?
-Jewish tradition says mandatory withholdings such as income tax and Social Security can be deducted, but personal living expenses are not. Ask the Rabbi for your situation.
+Mandatory withholdings such as income tax and Social Security can be deducted, but personal living expenses are not. Ask the Rabbi for your situation.
 
 ### Can I give at the end of the year?
 Many people do. See [Year-End Tzedakah](/learn/year-end-tzedakah).
 
 ### Who can receive maaser?
-Poor people are the primary recipients, and Chassidic teaching also lists communal institutions such as a synagogue. Ask the Rabbi about your cause.
+Poor people are the primary recipients, and communal institutions such as a synagogue are also permitted. Ask the Rabbi about your cause.
 
 ## Take the next step
 

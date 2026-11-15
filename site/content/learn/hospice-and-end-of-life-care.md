@@ -11,7 +11,7 @@ This page is general guidance, not medical or legal advice. Your doctors and you
 
 ## Why life is so precious
 
-Chassidic teaching explains that life belongs to G-d, who entrusted it to us to guard. Life has full value for as long as the soul is in the body, even when a person is weak, unaware or in pain. That is why Jewish law forbids hastening death, and why it also does not ask us to prolong suffering without real benefit.
+Life belongs to G-d, who entrusted it to us to guard. Life has full value for as long as the soul is in the body, even when a person is weak, unaware or in pain. That is why Jewish law forbids hastening death, and why it also does not ask us to prolong suffering without real benefit.
 
 ## Comfort and pain relief
 
@@ -19,7 +19,7 @@ Caring for someone who is dying means easing pain and bringing comfort, and a ho
 
 ## Treatment, feeding and machines
 
-According to Jewish tradition:
+The basic principles:
 
 - Treatment that only prolongs dying and suffering, with no real benefit, need not be used.
 - Actively hastening death is forbidden.

@@ -11,17 +11,17 @@ In Jewish burial every person is dressed in plain white shrouds and placed in a 
 
 ## The white shrouds: tachrichim
 
-After the tahara, the ritual washing, the body is dressed in *tachrichim* (תַּכְרִיכִים), plain white shrouds. These are made of linen or muslin and that the person is not dressed in ordinary clothing or jewelry. A man is also buried in his tallit, which should be given to the Chevra Kadisha beforehand; if he has none, the funeral home usually provides one. Jewish law requires that the funeral wait until proper shrouds are obtained or made. You do not have to sew or buy anything yourself; the Chevra Kadisha and the funeral home take care of it. For the washing itself, see [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
+After the tahara, the ritual washing, the body is dressed in *tachrichim* (תַּכְרִיכִים), plain white shrouds. These are made of linen or muslin, and the person is not dressed in ordinary clothing or jewelry. A man is also buried in his tallit, which should be given to the Chevra Kadisha beforehand; if he has none, the funeral home usually provides one. Jewish law requires that the funeral wait until proper shrouds are obtained or made. You do not have to sew or buy anything yourself; the Chevra Kadisha and the funeral home take care of it. For the washing itself, see [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
 
 ## Why everyone is dressed alike
 
-The plain shrouds make sure that those who cannot afford fine clothing are not embarrassed. An ornate casket honors wealth rather than good deeds, and that money which might have gone to such a casket should instead go to charity in the merit of the person who died. In this way a rich person and a poor person come before G-d equal, with nothing but their deeds. See [tzedakah](/learn/tzedakah).
+The plain shrouds make sure that those who cannot afford fine clothing are not embarrassed. An ornate casket honors wealth rather than good deeds, and money which might have gone to such a casket should instead go to charity in the merit of the person who died. In this way a rich person and a poor person come before G-d equal, with nothing but their deeds. See [tzedakah](/learn/tzedakah).
 
 ## The casket
 
-The casket should be plain, unlined and made of material that decays in the earth, and that a simple wooden casket is common in America. Metal caskets are not used, and some authorities also forbid metal nails or bracing. Ask the funeral home for a casket made for Jewish burial; the Rabbi can tell you what to ask for.
+The casket should be plain, unlined and made of material that decays in the earth; a simple wooden casket is common in America. Metal caskets are not used, and some authorities also forbid metal nails or bracing. Ask the funeral home for a casket made for Jewish burial; the Rabbi can tell you what to ask for.
 
-Also:
+A few more points:
 
 - The casket rests on the earth itself, not inside a cement or metal vault, and above-ground burial (a mausoleum or crypt) is not permitted.
 - Where the law of a cemetery requires a vault, earth is first shoveled in, and the casket should rest on the ground itself.

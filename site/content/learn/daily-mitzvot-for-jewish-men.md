@@ -24,17 +24,17 @@ The Lubavitcher Rebbe launched a campaign for men and boys to put on tefillin ju
 
 ## Tzitzit
 
-*Tzitzit* (ציצית) are the fringes on a four-cornered garment worn by men, a reminder of the mitzvot. Boys traditionally begin wearing tzitzit at about age three, according to Jewish tradition. See [tzitzit](/learn/tzitzit).
+*Tzitzit* (ציצית) are the fringes on a four-cornered garment worn by men, a reminder of the mitzvot. Boys traditionally begin wearing tzitzit at about age three. See [tzitzit](/learn/tzitzit).
 
 ## Three prayers a day
 
-Chassidic teaching lists the times:
+The times are:
 
 - **Shacharit** (שחרית), morning.
 - **Mincha** (מנחה), afternoon, before sunset.
 - **Maariv** (מעריב), evening, after three medium stars appear.
 
-The Shema is read in the morning and in the evening, and also before sleep. Communal prayer with a minyan, a quorum of ten men over 13, is preferred; if no minyan is available, one prays alone. It also recommends praying from a siddur, with concentration (*kavanah*) rather than speed. See [daily prayers](/learn/daily-prayers) and [praying alone at home](/learn/praying-alone-at-home).
+The Shema is read in the morning and in the evening, and also before sleep. Communal prayer with a minyan, a quorum of ten men over 13, is preferred; if no minyan is available, one prays alone. Praying from a siddur, with concentration (*kavanah*) rather than speed, is also recommended. See [daily prayers](/learn/daily-prayers) and [praying alone at home](/learn/praying-alone-at-home).
 
 ## Learning every day
 

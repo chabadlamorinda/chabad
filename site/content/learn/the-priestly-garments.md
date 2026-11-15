@@ -9,7 +9,7 @@ The priestly garments (bigdei kehunah, בִּגְדֵי כְּהֻנָּה) were
 
 ## The four garments of every Kohen
 
-According to the sources, every ordinary priest wore these four garments:
+Every ordinary priest wore these four garments:
 
 1. **Ketonet (כֻּתֹּנֶת), a tunic.** A long linen shirt reaching to the heels.
 2. **Avnet (אַבְנֵט), a sash.** A long sash wound over the heart, made of linen woven with wool in blue, purple and red.

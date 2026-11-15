@@ -9,7 +9,7 @@ A farbrengen (פארברענגען, Yiddish for "to spend time joyfully together
 
 ## What happens at a farbrengen
 
-Chassidic teaching describes a farbrengen as an informal gathering where people share Torah, sing melodies and enjoy light refreshments. It can mark a birthday, a life-cycle event or a holiday, or take place with no special occasion.
+A farbrengen is an informal gathering where people share Torah, sing melodies and enjoy light refreshments. It can mark a birthday, a life-cycle event or a holiday, or take place with no special occasion.
 
 A typical farbrengen includes:
 
@@ -24,7 +24,7 @@ L'chaim reminds us that Judaism chooses life, joy and connection. At a farbrenge
 
 ## The Rebbe's farbrengens
 
-The Lubavitcher Rebbe held farbrengens on Shabbat and holidays in Crown Heights, Brooklyn, where thousands gathered. Chassidic teaching tells of one where the Rebbe spoke for about three hours, and the Chassidim raised small cups of wine between talks. One message that day: build communities even before you have perfect individuals.
+The Lubavitcher Rebbe held farbrengens on Shabbat and holidays in Crown Heights, Brooklyn, where thousands gathered. At one of them, the Rebbe spoke for about three hours, and the Chassidim raised small cups of wine between talks. One message that day: build communities even before you have perfect individuals.
 
 ## What to expect as a guest
 

@@ -9,7 +9,7 @@ It is a Jewish custom to give a coin to tzedakah before praying in the morning. 
 
 ## The Talmud's story
 
-Giving charity before prayer is customary, and cites the Talmud (Bava Batra 10a): a small coin given to a poor person makes one worthy of the Divine Presence. It tells that Rabbi Eleazar would give a coin before he prayed. The idea is simple: before we ask G-d for what we need, we first help someone else with what they need.
+Giving charity before prayer is customary. The Talmud (Bava Batra 10a) teaches that a small coin given to a poor person makes one worthy of the Divine Presence. It tells that Rabbi Eleazar would give a coin before he prayed. The idea is simple: before we ask G-d for what we need, we first help someone else with what they need.
 
 Tzedakah (צְדָקָה) means "justice," not just "charity." Our money is entrusted to us by G-d so that we can share it (see [Tzedakah](/learn/tzedakah)). A coin before prayer reminds us of that before we begin to speak with Him.
 
@@ -23,7 +23,7 @@ The same page tells, from Rabbi Chaim Vital, that the Ari gave with great joy an
 
 It is recommended to keep a charity box, a [pushka](/learn/pushka), at home and at work, and putting coins in it at least once a day. A simple routine is to place a coin in the pushka each morning before [Shacharit](/learn/shacharit-morning-service), the morning prayer. This is a custom for families in Lafayette, Moraga and Orinda and everywhere. See also [children, money and tzedakah](/learn/children-money-and-tzedakah).
 
-Jewish tradition teaches that how you give matters more than how much. See [how to give kindly](/learn/how-to-give-tzedakah-kindly).
+How you give matters more than how much. See [how to give kindly](/learn/how-to-give-tzedakah-kindly).
 
 ## What about Shabbat?
 
@@ -41,7 +41,7 @@ It is good to put coins in the pushka at least once a day. For how much to give 
 Money is not handled on Shabbat. If you have a question about how to keep the custom on Shabbat or holidays, ask the Rabbi at 925-384-7242.
 
 ### Do women and children give before praying too?
-It is recommended to keep a pushka at home and at work and giving at least once a day, and notes that women and girls customarily give before lighting Shabbat candles. Ask the Rabbi about your family's practice.
+It is recommended to keep a pushka at home and at work and giving at least once a day. Women and girls customarily give before lighting Shabbat candles. Ask the Rabbi about your family's practice.
 
 ### What did Rabbi Yitzchak Luria teach about it?
 The Ari's teaching is that charity before prayer joins the parts of G-d's Name that sin had separated, and that one should give joyfully.

@@ -1,7 +1,7 @@
 ---
 title: Еврейский Сан-Франциско: гид для гостей и новоселов
 description: Приехали в район залива в гости или насовсем? Теплый гид по еврейскому Сан-Франциско: исторические общины, музеи и Коллекция Магнеса в Беркли.
-category: Jewish ideas
+category: Lamorinda
 related: jewish-east-bay, jewish-bay-area-history, chabad-in-the-bay-area, visiting-lamorinda
 local: Приехали из города или едете к нам? Позвоните 925-384-7242, и мы с радостью примем вас на Шаббат.
 ---

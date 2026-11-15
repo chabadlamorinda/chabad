@@ -13,7 +13,7 @@ To daven (pronounced DAH-ven) is the Yiddish word for praying in the traditional
 
 ## What davening includes
 
-According to Jewish tradition, prayer takes place three times a day: *Shacharit* in the morning, *Minchah* in the afternoon and *Maariv* in the evening, with additions on Shabbat and holidays. These prayers are organized in the siddur, whose name comes from the word for "order." Davening includes:
+Prayer takes place three times a day: *Shacharit* in the morning, *Minchah* in the afternoon and *Maariv* in the evening, with additions on Shabbat and holidays. These prayers are organized in the siddur, whose name comes from the word for "order." Davening includes:
 
 - Blessings and psalms of praise
 - The [Shema](/learn/shema), the declaration of G-d's oneness
@@ -25,7 +25,7 @@ For a full map, see [The Morning Service](/learn/shacharit-morning-service) and 
 
 ## The Chassidic way: prayer as connection
 
-Chassidic teaching describes concentration as the most important part of prayer. Speaking a little with focus is better than speaking a lot without it, and it frames prayer as standing before a king: "Know before Whom you stand." This is the heart of the Chassidic approach. Chassidic teaching, including Chabad Chassidus, stresses that prayer is more than reciting words. It is a moment of connection with G-d. Chassidic teaching encourages taking time to think about the meaning of the prayers and about the One we are addressing, so that prayer comes from the heart. Jewish tradition adds that G-d knows our needs already, and that prayer helps us recognize that everything we have comes from Him. To go deeper, read [Kavanah in Prayer](/learn/kavanah-in-prayer) and [Why Pray?](/learn/why-pray)
+Concentration is the most important part of prayer. Speaking a little with focus is better than speaking a lot without it, and it frames prayer as standing before a king: "Know before Whom you stand." This is the heart of the Chassidic approach. Chassidic teaching, including Chabad Chassidus, stresses that prayer is more than reciting words. It is a moment of connection with G-d. Chassidic teaching encourages taking time to think about the meaning of the prayers and about the One we are addressing, so that prayer comes from the heart. G-d already knows our needs, and prayer helps us recognize that everything we have comes from Him. To go deeper, read [Kavanah in Prayer](/learn/kavanah-in-prayer) and [Why Pray?](/learn/why-pray)
 
 The Chabad prayer book follows *Nusach Ari*, the text arranged by Rabbi Schneur Zalman of Liadi, the founder of Chabad, according to the teachings of Rabbi Yitzchak Luria, the Arizal. Its wording is slightly different from other prayer books.
 
@@ -33,7 +33,7 @@ The Chabad prayer book follows *Nusach Ari*, the text arranged by Rabbi Schneur 
 
 - **Swaying or bowing.** Some people sway while praying. See [Shuckling](/learn/shuckling).
 - **Quiet and standing.** The Amidah is said silently and standing.
-- **Rushing is discouraged.** The tradition says to avoid talking during prayer and not to rush.
+- **Rushing is discouraged.** Avoid talking during prayer, and do not rush.
 - **Your own pace.** You do not need to keep up with others.
 
 ## How to begin davening
@@ -53,10 +53,10 @@ To daven is to pray in the traditional Jewish way, from the siddur. It is a Yidd
 Almost. "Pray" is general, while "daven" usually means the structured prayers of the siddur, though people also say it more loosely.
 
 ### What is the Chassidic way of davening?
-It emphasizes concentration and connection, standing before G-d with focus and heartfelt meaning. Chassidic teaching calls concentration the most important part of prayer.
+It emphasizes concentration and connection, standing before G-d with focus and heartfelt meaning. Concentration is the most important part of prayer.
 
 ### Do you have to daven in a synagogue?
-No, but Jewish tradition says praying in a synagogue is preferable, even without a minyan. See [Praying Alone at Home](/learn/praying-alone-at-home).
+No, but praying in a synagogue is preferable, even without a minyan. See [Praying Alone at Home](/learn/praying-alone-at-home).
 
 ### Why do people sway when they daven?
 It is a common custom, and people do it in different ways. See [Shuckling](/learn/shuckling).

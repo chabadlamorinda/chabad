@@ -24,7 +24,7 @@ There is a pareve, vegan recipe for split pea latkes. Here it is retold:
 3. Stir in a small minced onion, salt and pepper, and a quarter cup of flour if the batter is loose.
 4. Fry quarter-cup scoops in about three inches of hot oil until crisp, about four minutes, and keep warm in a low oven.
 
-Jewish tradition also has a collection of fifteen latkes, from sweet potato and carnival squash to carrot-parsnip. Many are pareve, but the page does not mark which are vegan, so read each recipe for eggs.
+There is also a collection of fifteen latkes, from sweet potato and carnival squash to carrot-parsnip. Many are pareve, but the page does not mark which are vegan, so read each recipe for eggs.
 
 ## Doughnuts without dairy or eggs
 

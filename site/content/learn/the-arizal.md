@@ -9,7 +9,7 @@ The Arizal (האריז"ל), Rabbi Yitzchak (Isaac) Luria, was a great teacher of
 
 ## Who was the Arizal?
 
-According to Jewish tradition, he lived from 1534 to 1572 (some sources differ by a few years). He is known as the Ari, "the lion," and as the Arizal, an acronym for his title and for "may his memory be a blessing." His family was from Germany and had settled in Jerusalem, where he was born. His father, Shlomo, descended from Rashi, and died when the boy was very young.
+He lived from 1534 to 1572 (some sources differ by a few years). He is known as the Ari, "the lion," and as the Arizal, an acronym for his title and for "may his memory be a blessing." His family was from Germany and had settled in Jerusalem, where he was born. His father, Shlomo, descended from Rashi, and died when the boy was very young.
 
 He was raised in Egypt by his wealthy uncle, Rabbi Mordechai Francis, a scholar from a Sephardic background. This is why the Ari is described as having an Ashkenazi father and a Sephardic upbringing. He studied with great Torah teachers in Egypt, including the Radbaz, Rabbi David ibn Zimra. Documents found in the Cairo Geniza show that he earned his living in business, trading in spices and wheat, rather than relying on a stipend.
 

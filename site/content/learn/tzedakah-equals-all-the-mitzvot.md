@@ -5,18 +5,18 @@ category: Jewish ideas
 related: tzedakah, tanya-on-tzedakah, 613-mitzvot, maaser, tanya, what-giving-does-for-the-giver
 local: Want to make giving part of your week? Call Rabbi Labkowski at 925-384-7242 and ask about your first step.
 ---
-The Talmud says that tzedakah, giving charity, is equal to all the other mitzvot combined (Bava Batra 9a). Chassidic teaching explains that this is because most mitzvot use only part of a person, while giving away part of your earnings gives something into which you put your whole self.
+The Talmud says that tzedakah, giving charity, is equal to all the other mitzvot combined (Bava Batra 9a). One simple explanation is that most mitzvot use only part of a person, while giving away part of your earnings gives something into which you put your whole self.
 
 ## What the Sages say
 
-Jewish tradition confirms that the saying is authentic and comes from the Talmud (Bava Batra 9a). It collects other sayings of the Sages that show how much weight they gave this mitzvah:
+The saying is authentic and comes from the Talmud (Bava Batra 9a). Here are other sayings of the Sages that show how much weight they gave this mitzvah:
 
 - **The Jerusalem Talmud** (Pe'ah 1:1) says that tzedakah and acts of kindness are equal to all the commandments of the Torah.
 - **The Talmud** (Sukkah 49b) says that tzedakah is greater than all the sacrifices.
 - **A Midrash** (Midrash Zutta on Song of Songs) teaches that the generation of the Flood and the people of Sodom might not have been destroyed had they given tzedakah.
 - **Another Midrash** (Tanna d'Vei Eliyahu Zutta) says the world has stood on tzedakah since creation.
 
-The tradition adds that the Sages taught that tzedakah brings atonement, protects from harsh decrees and hastens the redemption. See [Does charity avert a harsh decree?](/learn/tzedakah-averts-a-harsh-decree)
+The Sages also taught that tzedakah brings atonement, protects from harsh decrees and hastens the redemption. See [Does charity avert a harsh decree?](/learn/tzedakah-averts-a-harsh-decree)
 
 ## A simple explanation: it takes your whole self
 
@@ -26,7 +26,7 @@ But most of our waking hours go to earning money for a comfortable life. When we
 
 ## The Tanya's answer
 
-The Alter Rebbe, Rabbi Shneur Zalman of Liadi, founder of Chabad, explains this in chapter 37 of the *Tanya* (Chabad's foundational book; see [Tanya](/learn/tanya)). Chassidic teaching presents it this way:
+The Alter Rebbe, Rabbi Shneur Zalman of Liadi, founder of Chabad, explains this in chapter 37 of the *Tanya* (Chabad's foundational book; see [Tanya](/learn/tanya)). Its explanation goes this way:
 
 - The Sages call charity equal to all the mitzvot, and in the Jerusalem Talmud it is often called simply "the commandment," because it is the core of the mitzvot of action.
 - In most mitzvot, only one faculty of the soul is involved, and only while the mitzvah is being done.
@@ -42,10 +42,10 @@ If tzedakah is that central, a small regular habit goes a long way. Keep a [push
 ## Common questions
 
 ### Why is tzedakah called equal to all the mitzvot?
-The Talmud (Bava Batra 9a) says so. Jewish tradition explains that most mitzvot engage only part of a person, while giving away part of one's earnings gives something into which one invested one's whole effort.
+The Talmud (Bava Batra 9a) says so. Most mitzvot engage only part of a person, while giving away part of one's earnings gives something into which one invested one's whole effort.
 
 ### Is tzedakah really more important than Shabbat or kashrut?
-The tradition presents the saying as showing the unique weight of tzedakah. For how mitzvot relate to one another, ask the Rabbi at 925-384-7242.
+The saying shows the unique weight of tzedakah. For how mitzvot relate to one another, ask the Rabbi at 925-384-7242.
 
 ### Why does the Jerusalem Talmud call tzedakah "the mitzvah"?
 According to the Tanya, because it is the core of the mitzvot of action and surpasses them.
@@ -54,10 +54,10 @@ According to the Tanya, because it is the core of the mitzvot of action and surp
 That charity from earnings lifts the whole energy of the soul to G-d, because the whole soul was invested in earning that money.
 
 ### How do I make tzedakah a regular part of my life?
-Chassidic teaching recommends a charity box at home and at work, with coins put in at least once a day. Read [Tzedakah](/learn/tzedakah).
+It is good to keep a charity box at home and at work, with coins put in at least once a day. Read [Tzedakah](/learn/tzedakah).
 
 ### Does someone with little money have to give too?
-Yes. Jewish tradition notes that even a person who receives tzedakah should give some. Read [giving when money is tight](/learn/giving-when-money-is-tight).
+Yes. Even a person who receives tzedakah should give some. Read [giving when money is tight](/learn/giving-when-money-is-tight).
 
 ## Take the next step
 

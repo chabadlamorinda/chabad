@@ -11,7 +11,7 @@ This guide draws on the Alter Rebbe's teaching on the additional Shabbat soul in
 
 ## The additional soul
 
-A discourse of Rabbi Schneur Zalman of Liadi (the Alter Rebbe, who wrote the [Tanya](/learn/tanya)), asks a question. If we receive an additional soul on Shabbat eve, does that mean extra physical strength? The answer is no. The additional soul is a revelation of the yechida, the deepest level of the soul, which is always united with G-d. It is felt as a rise in spiritual life-force, not as physical energy. The discourse notes that the Talmud says it is given on Shabbat eve and taken back when Shabbat ends.
+A discourse of Rabbi Schneur Zalman of Liadi (the Alter Rebbe, who wrote the [Tanya](/learn/tanya)) asks a question. If we receive an additional soul on Shabbat eve, does that mean extra physical strength? The answer is no. The additional soul is a revelation of the yechida, the deepest level of the soul, which is always united with G-d. It is felt as a rise in spiritual life-force, not as physical energy. The discourse notes that the Talmud says it is given on Shabbat eve and taken back when Shabbat ends.
 
 ## Two kinds of love
 

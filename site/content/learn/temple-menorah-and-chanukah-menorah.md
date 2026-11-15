@@ -9,7 +9,7 @@ The Menorah of the Holy Temple had seven lamps, while the Chanukah menorah, also
 
 ## The Menorah of the Temple
 
-According to Jewish tradition, the Temple menorah was made of pure gold, hammered from a single piece, with a central stem and six branches rising at an angle. It had seven lamps, each a cup for oil with a wick. It stood in the holy chamber of the Mishkan, and later of the Temple, where Aharon and the Kohanim after him lit it, in the daytime, using only pure olive oil.
+The Temple menorah was made of pure gold, hammered from a single piece, with a central stem and six branches rising at an angle. It had seven lamps, each a cup for oil with a wick. It stood in the holy chamber of the Mishkan, and later of the Temple, where Aharon and the Kohanim after him lit it, in the daytime, using only pure olive oil.
 
 You can read about the place where it stood in [the Holy Temple](/learn/the-holy-temple) and about its first home in [the Mishkan](/learn/the-mishkan).
 
@@ -17,7 +17,7 @@ You can read about the place where it stood in [the Holy Temple](/learn/the-holy
 
 The Chanukah menorah has eight branches and a place for the shamash. It can be made of any material that is safe for fire, and it is lit after sundown, ideally at the entrance facing the street. Many communities light it indoors near a door or window. Olive oil is the ideal fuel, and any safe, reliable fuel, including candles, is also fine. For help choosing one, see [choosing a kosher menorah](/learn/choosing-a-kosher-menorah).
 
-In addition, the candles are placed from right to left and lit from left to right, with the newest light first. An electric menorah can decorate or help publicize the miracle, but it does not fulfill the mitzvah, which needs a real flame. For the details of lighting, read [the Chanukah menorah](/learn/chanukah-menorah).
+The candles are placed from right to left and lit from left to right, with the newest light first. An electric menorah can decorate or help publicize the miracle, but it does not fulfill the mitzvah, which needs a real flame. For the details of lighting, read [the Chanukah menorah](/learn/chanukah-menorah).
 
 ## Side by side
 

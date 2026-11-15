@@ -1,7 +1,7 @@
 ---
 title: Jewish History of the Bay Area: From the Gold Rush to Lamorinda
 description: How Jewish life began in the Bay Area in the Gold Rush, from the first services in San Francisco to Levi Strauss and today's East Bay communities.
-category: Jewish ideas
+category: Lamorinda
 related: jewish-san-francisco, jewish-history-of-contra-costa, jewish-east-bay, chabad-in-the-bay-area, jewish-history-overview
 local: Come and become part of the next chapter: reserve a Shabbat meal at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---

@@ -1,7 +1,7 @@
 ---
 title: שנה מעוברת ואיך עובד הלוח העברי, במילים פשוטות
 description: למה נדמה שהחגים "זזים", איך עובדים חודשי הירח והשנה המעוברת עם אדר שני, ראש חודש, יום ההולדת העברי שלכם ולמה היום מתחיל בלילה.
-category: Jewish ideas
+category: Shabbat & holidays
 related: jewish-calendar, why-chanukah-changes-dates, adar, rosh-chodesh, hebrew-birthday, birkat-hachodesh, kiddush-levana
 local: רוצים לדעת את יום ההולדת העברי שלכם או תאריך יארצייט? הרב ישראל לבקובסקי יחשב אותו בשבילכם, למשפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---

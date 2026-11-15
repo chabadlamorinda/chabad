@@ -15,7 +15,7 @@ If you want a full overview of the letters first, see our guide to the [Hebrew a
 
 ## How Chabad teaches it: letters with vowels
 
-According to Jewish tradition, the traditional way is to teach the Aleph-Bet together with the vowels. The child first names the vowel and then the letter, and then puts them together into a sound. For example, a *patach* under the letter *gimmel* is spoken "patach, gimmel: ga." This turns a letter from a picture into a sound the child can use.
+The traditional way is to teach the Aleph-Bet together with the vowels. The child first names the vowel and then the letter, and then puts them together into a sound. For example, a *patach* under the letter *gimmel* is spoken "patach, gimmel: ga." This turns a letter from a picture into a sound the child can use.
 
 Teachers and families differ in details such as which letters to begin with and how fast to go. If you want a plan for your child's age, ask the Rabbi.
 
@@ -48,7 +48,7 @@ There is also a bigger idea in the title "Aleph-Bet before alphabet": give child
 Many children begin recognizing letters around ages four to six, and Chabad education begins very early with songs, stories and blessings. Follow your child's readiness, and keep it joyful.
 
 ### Should I teach the letters first or the vowels first?
-Another method is teaching the letters together with their vowels, naming the vowel and then the letter and combining them. Ask the Rabbi or your child's teacher if you want to choose a method.
+The traditional way is to teach the letters together with their vowels, naming the vowel and then the letter and combining them. Ask the Rabbi or your child's teacher if you want to choose a method.
 
 ### How long does it take a child to learn to read Hebrew?
 It varies a lot. Some children read basic words in a few months, others take longer. Steady short practice matters more than speed.

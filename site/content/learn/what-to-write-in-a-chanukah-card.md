@@ -44,11 +44,11 @@ For colleagues who are not Jewish, a simple warm line about light and joy is eno
 
 ## Keep it short and sincere
 
-A card does not need to be long. One warm sentence that names the person and the holiday is enough, and handwriting it adds a personal touch. Choose the greeting that suits the person: the Hebrew or Yiddish for family and friends who will enjoy it, and the simple English for everyone else. Jewish law says the simplest greeting, "Happy Hanukkah," works in all settings and with all Jews. Add a line about the light, and your card has done its job.
+A card does not need to be long. One warm sentence that names the person and the holiday is enough, and handwriting it adds a personal touch. Choose the greeting that suits the person: the Hebrew or Yiddish for family and friends who will enjoy it, and the simple English for everyone else. The simplest greeting, "Happy Hanukkah," works in all settings and with all Jews. Add a line about the light, and your card has done its job.
 
 ## Adding a gift or a mitzvah
 
-It is a longstanding custom to give children money (gelt) on Chanukah, and the tradition says cash is the traditional choice. See [Chanukah gelt](/learn/chanukah-gelt) and [Chanukah gifts](/learn/chanukah-gifts). Jewish tradition also notes that it is customary to increase charity during Chanukah, so a card can come with a gift to tzedakah.
+It is a longstanding custom to give children money (gelt) on Chanukah, and cash is the traditional choice. See [Chanukah gelt](/learn/chanukah-gelt) and [Chanukah gifts](/learn/chanukah-gifts). It is also customary to increase charity during Chanukah, so a card can come with a gift to tzedakah.
 
 ## Common questions
 

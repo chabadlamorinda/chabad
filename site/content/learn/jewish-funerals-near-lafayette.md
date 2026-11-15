@@ -12,7 +12,7 @@ When a Jewish person dies in Lafayette, Moraga, Orinda or anywhere in Contra Cos
 ## What to do first, step by step
 
 1. **Call 911 if the death is sudden.** Otherwise, stay calm and take a moment.
-2. **Call Rabbi Labkowski at 925-384-7242.** He will guide you and answer questions at any hour. Jewish tradition also advises calling a rabbi first.
+2. **Call Rabbi Labkowski at 925-384-7242.** He will guide you and answer questions at any hour. It is always best to call a rabbi first.
 3. **Do not sign anything yet.** Before agreeing to anything with a funeral home, speak with the Rabbi. Jewish law calls for burial, and cremation and embalming are against Jewish law. See [cremation: the Jewish view](/learn/cremation-jewish-view).
 4. **Do not leave the body alone.** The Jewish custom is that a *shomer* (שׁוֹמֵר, "guardian") stays with the deceased, often reciting Psalms, until burial. Ask the Rabbi how this is arranged.
 5. **Plan the funeral soon.** Jewish funerals are held as soon as practical, usually within a day or two, though family traveling from afar may be accommodated. Ask the Rabbi.

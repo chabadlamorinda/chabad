@@ -13,7 +13,7 @@ Shabbat meals are meant to be special, and soup is the dish that makes a kitchen
 
 ## A simple chicken soup
 
-This method is is a traditional recipe retold in our own words. It serves 8 to 10 people.
+This is a traditional recipe, retold in our own words. It serves 8 to 10 people.
 
 **Ingredients**
 - 2 chicken bottoms (drumstick and thigh together)

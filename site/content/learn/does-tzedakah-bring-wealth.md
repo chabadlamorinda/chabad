@@ -9,7 +9,7 @@ The Torah and G-d promise success for all giving of tzedakah, and maaser, giving
 
 ## What the Torah and the Talmud say
 
-Maaser (מַעֲשֵׂר) means "a tenth." Jewish tradition teaches that one who gives maaser faithfully is assured of full repayment and eventual wealth. King Solomon taught that giving to the poor is like lending to G-d, and the tradition adds that G-d repays charitable funds, with handsome dividends, here in this world.
+Maaser (מַעֲשֵׂר) means "a tenth." Jewish tradition teaches that one who gives maaser faithfully is assured of full repayment and eventual wealth. King Solomon taught that giving to the poor is like lending to G-d, and G-d repays charitable funds, with handsome dividends, here in this world.
 
 This is unusual. The Torah normally forbids testing G-d (Deuteronomy 6:16). But with tzedakah it is permitted. The prophet Malachi (3:10) says in G-d's name: bring the tithe, "Test Me in this, and see if I will not open the floodgates of heaven." The Talmud (Taanit 9a), as the Previous Rebbe explains in a discourse, reads the Torah's double wording *aser te'aser* as "give a tenth so that you will become rich," and says that G-d may never be put to the test except in this case: give the tenth, and see. The Rebbe taught that this permission applies to all tzedakah, not only to maaser. The Torah and G-d promise success for all giving, and maaser is unique because the promise is stated clearly and we are invited to test it.
 
@@ -49,7 +49,7 @@ Yes. The Torah and G-d promise success for all giving, and the Rebbe taught that
 Give what you can, even a little, and keep a record of what remains. Basic needs come first. The Rabbi can help you think it through, confidentially.
 
 ### Can I give maaser to a synagogue or Jewish organization?
-Jewish law lists communal institutions such as the synagogue among the permitted uses of maaser. Ask the Rabbi about specific cases, such as honors or dinners.
+Communal institutions such as the synagogue are among the permitted uses of maaser. Ask the Rabbi about specific cases, such as honors or dinners.
 
 ## Take the next step
 

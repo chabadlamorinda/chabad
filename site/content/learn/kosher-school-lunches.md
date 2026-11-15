@@ -19,7 +19,7 @@ These are ideas, not rulings. For a particular product, the question is whether 
 
 ## Waiting between meat and dairy
 
-Jewish law teaches that very young children do not need to wait between meat and milk, but it is best to feed them something else in between. For children from age three to five, one hour is enough. Children age six and older should generally wait six hours, and up to age nine one may be lenient and wait one hour if necessary. Every child is different: ask the Rabbi about yours.
+Very young children do not need to wait between meat and milk, but it is best to feed them something else in between. For children from age three to five, one hour is enough. Children age six and older should generally wait six hours, and up to age nine one may be lenient and wait one hour if necessary. Every child is different: ask the Rabbi about yours.
 
 ## School rules and allergies
 
@@ -39,7 +39,7 @@ Before your child eats, they say a blessing. Children can learn to say these ble
 It is a lunch made from kosher foods that does not mix meat and dairy. The easiest way is to make the whole lunch meat, dairy or pareve.
 
 ### How long should my child wait between meat and milk?
-Jewish law says: very young children need no wait but should be given something in between, ages three to five wait one hour, and age six and older generally wait six hours (with leniency to one hour up to age nine if necessary). Ask the Rabbi about your child.
+The general rule: very young children need no wait but should be given something in between, ages three to five wait one hour, and age six and older generally wait six hours (with leniency to one hour up to age nine if necessary). Ask the Rabbi about your child.
 
 ### Can my child eat cheese after a chicken sandwich?
 Not right away. The waiting time depends on age, as above.

@@ -21,7 +21,7 @@ At the end of Shabbat we say [Havdalah](/learn/havdalah), a blessing that separa
 
 ## A home for G-d in this world
 
-A central idea of Chassidic teaching is called dirah b'tachtonim (דִּירָה בְּתַחְתּוֹנִים), a "dwelling in the lower realms." According to the chassidic masters, this is the purpose of the creation of the world and of human beings: to make a home for G-d in the physical world. Jewish tradition ties this to the verse in which G-d asks the Jewish people to build a sanctuary so that He may dwell among them (Exodus 25:8). The Lubavitcher Rebbe's teachings turn this idea into a way to live every day.
+A central idea of Chassidic teaching is called dirah b'tachtonim (דִּירָה בְּתַחְתּוֹנִים), a "dwelling in the lower realms." According to the chassidic masters, this is the purpose of the creation of the world and of human beings: to make a home for G-d in the physical world. This idea is tied to the verse in which G-d asks the Jewish people to build a sanctuary so that He may dwell among them (Exodus 25:8). The Lubavitcher Rebbe's teachings turn this idea into a way to live every day.
 
 The idea is that holiness is not found only in a prayer service or on a mountaintop. Chassidic teaching applies it to everyday life, including such acts as eating with a blessing. See [eating as a mitzvah](/learn/eating-as-a-mitzvah) and [What is a mitzvah?](/learn/what-is-a-mitzvah).
 

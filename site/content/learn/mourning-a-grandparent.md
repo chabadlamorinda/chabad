@@ -5,13 +5,13 @@ category: Mourning & remembrance
 related: who-sits-shiva, losing-a-parent, jewish-grandparents, comforting-mourners, learning-in-memory-of-a-loved-one
 local: Lost a grandparent? Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi to ask what is right for you.
 ---
-In Jewish law, you do not formally sit shiva for a grandparent. Jewish law lists the relatives for whom the laws of mourning apply as a father, mother, husband or wife, son, daughter, brother and sister, and grandparents are not among them.
+In Jewish law, you do not formally sit shiva for a grandparent. The laws of mourning apply to a father, mother, husband or wife, son, daughter, brother and sister; grandparents are not among them.
 
 That does not mean the loss is small. Grandchildren grieve deeply, and Jewish tradition gives you many meaningful ways to honor a grandparent and to support your family.
 
 ## Who formally mourns
 
-According to Jewish law, the seven close relatives are mourners in Jewish law: father, mother, husband or wife, son, daughter, brother and sister, including half-siblings. The list comes from the Torah (Leviticus 21:1 to 3). See [who sits shiva](/learn/who-sits-shiva).
+The seven close relatives are mourners in Jewish law: father, mother, husband or wife, son, daughter, brother and sister, including half-siblings. The list comes from the Torah (Leviticus 21:1 to 3). See [who sits shiva](/learn/who-sits-shiva).
 
 So when your grandparent passes away, it is your parent, the grandparent's child, who sits [shiva](/learn/shiva) and who is a mourner for the year. A grandchild is not obligated in these laws.
 
@@ -19,7 +19,7 @@ If you are unsure about a particular custom, such as whether to say Kaddish for 
 
 ## Supporting your parent
 
-You may be the one who helps the mourners most. Jewish tradition describes the mitzvah of comforting mourners (nichum aveilim): visitors may talk about the person's life, join in prayer, give charity or simply be present, without expecting the mourners to appear cheerful.
+You may be the one who helps the mourners most. In the mitzvah of comforting mourners (nichum aveilim), visitors may talk about the person's life, join in prayer, give charity or simply be present, without expecting the mourners to appear cheerful.
 
 - Be with your parent in the shiva house.
 - Listen and share memories.
@@ -28,7 +28,7 @@ You may be the one who helps the mourners most. Jewish tradition describes the m
 
 ## Ways to honor a grandparent
 
-Jewish tradition calls it "nothing greater" for a soul to have more good deeds done in its merit. It says children, relatives and friends are all encouraged to take this on.
+There is nothing greater for a soul than to have more good deeds done in its merit. Children, relatives and friends are all encouraged to take this on.
 
 1. **Learn Torah in their memory**, especially Mishnah. See [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
 2. **Give tzedakah** in their name.
@@ -53,7 +53,7 @@ Learn Torah, give tzedakah, take on a mitzvah, light a yahrzeit candle and keep 
 Be present, listen, share memories and help with practical needs. Visitors do not need to cheer the mourner up.
 
 ### Should I go to my grandparent's funeral?
-Yes. Jewish tradition calls accompanying the departed one of the greatest acts of kindness, and your family will need you. See [what to wear to a Jewish funeral](/learn/what-to-wear-to-a-jewish-funeral).
+Yes. Accompanying the departed is one of the greatest acts of kindness, and your family will need you. See [what to wear to a Jewish funeral](/learn/what-to-wear-to-a-jewish-funeral).
 
 ### Where can I ask about my situation?
 Call Rabbi Yisroel Labkowski at 925-384-7242 or see [talk to the Rabbi](/help/talk-to-the-rabbi).

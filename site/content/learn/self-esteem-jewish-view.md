@@ -11,7 +11,7 @@ Whether you are a teenager in Orinda, a parent in Moraga or a professional in La
 
 ## Humility is not low self-worth
 
-Many people think humble means "I am worthless." Jewish tradition explains that this is not Jewish humility at all. Seeing yourself as worthless, it teaches, is a kind of ingratitude: it ignores the gifts G-d gave you.
+Many people think humble means "I am worthless." This is not Jewish humility at all. Seeing yourself as worthless is a kind of ingratitude: it ignores the gifts G-d gave you.
 
 Chassidic teaching describes three attitudes. Arrogance overstates one's worth. False humility understates it. Both compare oneself to others and come from insecurity. A truly humble person sees his or her whole self, including real abilities and achievements, and does not take credit for them. Read the guide to [humility](/learn/humility).
 
@@ -19,7 +19,7 @@ Chassidic teaching describes three attitudes. Arrogance overstates one's worth. 
 
 Rabbi Simcha Bunim of Peshischa, a Chassidic master, kept two slips of paper, one in each pocket. On one was written, "The world was created for me." On the other, "I am but dust and ashes."
 
-The tradition presents this as a recipe for balance:
+Here is a recipe for balance:
 
 - **On a low day,** reach into the first pocket. You matter. The world needs what you came to do.
 - **On a proud day,** reach into the second pocket. Your gifts are a gift, and you are not above anyone.
@@ -32,7 +32,7 @@ Chassidic teaching, especially in the Tanya, says each person has a soul that is
 
 ## You have a mission only you can do
 
-Jewish tradition teaches that each person has unique gifts and a mission only he or she can fulfill, so no one is competing with anyone else. Talent is called a "gift" for a reason: it is something you were given.
+Each person has unique gifts and a mission only he or she can fulfill, so no one is competing with anyone else. Talent is called a "gift" for a reason: it is something you were given.
 
 The right question is not "Why am I great?" or "Why am I nothing?" but "Why did G-d give me these gifts, and what are they for?" A [mitzvah](/learn/what-is-a-mitzvah) is a concrete way to use them.
 
@@ -60,7 +60,7 @@ Low self-worth can sometimes be more than a mood. If you or someone you love fee
 Judaism teaches that every person has real worth because the soul is a part of G-d, and that each of us has a mission only we can do. This worth does not come from achievements or approval.
 
 ### Is humility the same as low self-esteem?
-No. Chassidic teaching holds that false humility is a form of ingratitude. A humble person knows his or her gifts and credits them to G-d.
+No. False humility is a form of ingratitude. A humble person knows his or her gifts and credits them to G-d.
 
 ### What is the two-pocket teaching?
 Rabbi Simcha Bunim kept one note that said "The world was created for me" and one that said "I am but dust and ashes." Use the first when you feel low and the second when you feel proud.

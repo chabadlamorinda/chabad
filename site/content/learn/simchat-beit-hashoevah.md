@@ -9,7 +9,7 @@ Simchat Beit Hashoevah (שמחת בית השואבה, "the celebration of the wa
 
 ## What was the water-drawing celebration?
 
-Jewish tradition describes how, from the time of King Solomon's Temple until its destruction by the Romans, Jews from across the land gathered in Jerusalem for an eight-day Sukkot celebration centered on the Temple Mount, with music and dancing day and night.
+From the time of King Solomon's Temple until its destruction by the Romans, Jews from across the land gathered in Jerusalem for an eight-day Sukkot celebration centered on the Temple Mount, with music and dancing day and night.
 
 The spectacle was remarkable. Huge candelabras lit up Jerusalem. Elders danced and performed acrobatics. Rabban Shimon ben Gamliel juggled eight flaming torches, and none of them touched.
 

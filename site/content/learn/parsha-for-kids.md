@@ -13,7 +13,7 @@ The parsha (פָּרָשָׁה, "portion") is the section of the Torah read in s
 
 ## Where to find kid-friendly material
 
-Weekly material is made for families: a Family Parshah summary you can print for the Shabbat table, question-and-answer sheets with the verses behind each question, parsha videos and songs, and games and coloring pages. You do not need to be an expert. Read the family page on Friday afternoon and pick one moment from the story.
+There is weekly material made for families: a Family Parshah summary you can print for the Shabbat table, question-and-answer sheets with the verses behind each question, parsha videos and songs, and games and coloring pages. You do not need to be an expert. Read the family page on Friday afternoon and pick one moment from the story.
 
 ## A five-minute Friday night routine
 

@@ -17,7 +17,7 @@ In 1897 Rabbi Shalom DovBer Schneersohn, the fifth Chabad Rebbe, opened a yeshiv
 
 The heart of yeshiva study is the **chavruta** (חַבְרוּתָא), a study partner. Two students sit across from one another with the same text, read it aloud, question it and argue about what it means. A good partner makes you sharpen your thinking, and you often understand a passage only when you have to explain it to someone else.
 
-This is why a yeshiva study hall sounds like a busy marketplace of ideas, not a quiet library. Jewish tradition notes that many authorities see learning in pairs as the ideal, since the Talmud itself recommends it.
+This is why a yeshiva study hall sounds like a busy marketplace of ideas, not a quiet library. Many authorities see learning in pairs as the ideal, since the Talmud itself recommends it.
 
 ## What is studied
 

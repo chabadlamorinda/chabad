@@ -9,7 +9,7 @@ You can name a synagogue in your living trust by asking your attorney to add a c
 
 ## How a gift in a trust works
 
-A living trust is a legal document in which you place your assets under the care of a trustee, with instructions for what should happen to them. "Gifts in a will or trust" go together: you may leave a set dollar amount, a specific asset or a percentage, it costs nothing now, it leaves your cash flow intact, and it can be changed later.
+A living trust is a legal document in which you place your assets under the care of a trustee, with instructions for what should happen to them. A gift in a will or a trust works like this: you may leave a set dollar amount, a specific asset or a percentage, it costs nothing now, it leaves your cash flow intact, and it can be changed later.
 
 The same three choices described in [How to Leave Money to a Synagogue in Your Will](/learn/leaving-chabad-in-your-will) apply to a trust. The difference is mostly in the paperwork: instead of a will, the instructions are in the trust document.
 

@@ -9,7 +9,7 @@ Trope (also called cantillation or ta'amim) is the set of musical notes that tel
 
 ## What trope is
 
-The Torah scroll is written without vowels, punctuation or musical marks. The reader learns them separately. The marks in a printed Chumash (a book of the Five Books of Moses) are called ta'amim (טְעָמִים), from the word *ta'am*, "taste" or "flavor." According to Jewish tradition, they guide pronunciation, emphasis and the structure of each sentence, and different communities sing them in different melodies, though the principles are the same. So there is no single "wrong" tune: ask your teacher which tradition your family will follow.
+The Torah scroll is written without vowels, punctuation or musical marks. The reader learns them separately. The marks in a printed Chumash (a book of the Five Books of Moses) are called ta'amim (טְעָמִים), from the word *ta'am*, "taste" or "flavor." They guide pronunciation, emphasis and the structure of each sentence, and different communities sing them in different melodies, though the principles are the same. So there is no single "wrong" tune: ask your teacher which tradition your family will follow.
 
 ## Do we need to read at all?
 

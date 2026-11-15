@@ -13,7 +13,7 @@ When Pharaoh decreed that Jewish baby boys be thrown into the Nile, Moses's moth
 
 ## A prophet from childhood
 
-According to tradition, Miriam received prophecy as a child: she foretold that her mother would give birth to a son who would redeem the Jewish people. She is also identified with Puah, the midwife who defied Pharaoh. Our Sages teach that when her father, Amram, separated from his wife in despair, Miriam persuaded him to remarry her, and others followed his example. Her faith helped keep the future alive.
+The Talmud teaches that Miriam received prophecy as a child: she foretold that her mother would give birth to a son who would redeem the Jewish people. She is also identified with Puah, the midwife who defied Pharaoh. Our Sages teach that when her father, Amram, separated from his wife in despair, Miriam persuaded him to remarry her, and others followed his example. Her faith helped keep the future alive.
 
 ## The song at the sea
 

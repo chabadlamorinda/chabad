@@ -9,7 +9,7 @@ The Lamed-Vav Tzaddikim (לו צדיקים) are the "thirty-six righteous people
 
 ## What the Talmud says
 
-The sage Abaye teaches that the world has no fewer than thirty-six righteous people in every generation who greet the Divine Presence (Talmud, Sukkah 45b and Sanhedrin 97b). The number comes from the Hebrew letters lamed (ל, 30) and vav (ו, 6), which add up to 36, and appear together as the word "lo" in the verse "Happy are all who wait for Him" (Isaiah 30:18). Other sources give different numbers, so this is not one fixed count. Chassidic teaching points out that the popular idea of exactly thirty-six hidden people may blend several traditions, and for the deeper sources, ask the Rabbi.
+The sage Abaye teaches that the world has no fewer than thirty-six righteous people in every generation who greet the Divine Presence (Talmud, Sukkah 45b and Sanhedrin 97b). The number comes from the Hebrew letters lamed (ל, 30) and vav (ו, 6), which add up to 36, and appear together as the word "lo" in the verse "Happy are all who wait for Him" (Isaiah 30:18). Other sources give different numbers, so this is not one fixed count. The popular idea of exactly thirty-six hidden people may blend several traditions, and for the deeper sources, ask the Rabbi.
 
 ## What is a tzaddik?
 
@@ -39,7 +39,7 @@ Lamed-Vav means thirty-six: lamed is 30 and vav is 6 in the Hebrew alphabet.
 The Torah does not state it. It comes from the Talmud (Sukkah 45b and Sanhedrin 97b), and later Jewish teachers expanded on it.
 
 ### Is the number 36 fixed?
-Not exactly. Other sources mention different numbers, and Chassidic thought notes that the popular legend combines separate traditions. Ask the Rabbi for sources.
+Not exactly. Other sources mention different numbers, and the popular legend combines separate traditions. Ask the Rabbi for sources.
 
 ### Can I be a Lamed-Vavnik?
 Nobody knows who they are, and nobody should claim to be one. But the idea teaches that every person can do something good and hidden.

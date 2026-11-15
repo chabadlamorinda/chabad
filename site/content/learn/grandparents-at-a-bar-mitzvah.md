@@ -41,7 +41,7 @@ If the family invites you to speak, keep it to a minute or two.
 
 ## Meaningful gifts
 
-Jewish tradition mentions books of Jewish learning, ritual items and gifts of money, often in multiples of 18, the numerical value of *chai*, "life." Parents or grandparents often give a girl her first Shabbat candlestick when she starts to light. For a boy, a pair of tefillin is the classic gift; talk to the parents before buying, so there are not two pairs, and read [buying tefillin](/learn/buying-tefillin). See also [gifts in multiples of 18](/learn/gifts-in-multiples-of-18) and [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles).
+Popular gifts include books of Jewish learning, ritual items and gifts of money, often in multiples of 18, the numerical value of *chai*, "life." Parents or grandparents often give a girl her first Shabbat candlestick when she starts to light. For a boy, a pair of tefillin is the classic gift; talk to the parents before buying, so there are not two pairs, and read [buying tefillin](/learn/buying-tefillin). See also [gifts in multiples of 18](/learn/gifts-in-multiples-of-18) and [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles).
 
 ## If you live far away
 

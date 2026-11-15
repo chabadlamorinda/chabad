@@ -11,13 +11,13 @@ For the Torah's general teaching about friends, see [friendship in Judaism](/lea
 
 ## Friendship that goes deeper than usefulness
 
-Chapter 32 of the [Tanya](/learn/tanya) teaches that all Jewish souls come from one root, so Jews are truly brothers and sisters. Chassidic teaching points to a difference between two kinds of love. Love that rests on outer things, such as looks, advantages, or shared interests, lasts only as long as the outer thing does. Love that rests on the soul is deeper.
+Chapter 32 of the [Tanya](/learn/tanya) teaches that all Jewish souls come from one root, so Jews are truly brothers and sisters. The chapter points to a difference between two kinds of love. Love that rests on outer things, such as looks, advantages, or shared interests, lasts only as long as the outer thing does. Love that rests on the soul is deeper.
 
 In the words of Pirkei Avot (5:16), the first kind is love that "depends on something," and the second is love that does not, which never ends. A friendship that begins with a shared interest can still grow into the second kind. Ask yourself: if the shared interest disappeared, would I still care about this person?
 
 ## Every favor might be the reason
 
-The tradition also tells of the Baal Shem Tov, who taught that a person should love another Jew even if they have never met, and that a soul may come down into this world just to do one favor for another Jew. The Lubavitcher Rebbe added: since we cannot know which favor is the one, treat each as though it were. See [Ahavat Yisrael](/learn/ahavat-yisrael).
+The Baal Shem Tov taught that a person should love another Jew even if they have never met, and that a soul may come down into this world just to do one favor for another Jew. The Lubavitcher Rebbe added: since we cannot know which favor is the one, treat each as though it were. See [Ahavat Yisrael](/learn/ahavat-yisrael).
 
 That makes friendship concrete. The phone call, the ride, the soup for a sick friend are all more important than they feel at the time. For friendships in Lafayette, Moraga and Orinda, where many families are busy and far from relatives, this kind of everyday kindness is how a community forms.
 

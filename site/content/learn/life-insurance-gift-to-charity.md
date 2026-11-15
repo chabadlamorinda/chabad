@@ -9,7 +9,7 @@ You can give through life insurance by naming a charity, such as a synagogue, as
 
 ## A simple kind of legacy gift
 
-Standard guidance lists life insurance together with annuities, bank accounts and donor-advised funds as gifts made through a beneficiary designation. It describes it as simple: usually a one-page form, with no attorney needed and no change to your will. Your insurer, bank or fund manager can send you a "Change of Beneficiary" form.
+Life insurance, like annuities, bank accounts and donor-advised funds, can be given through a beneficiary designation. It describes it as simple: usually a one-page form, with no attorney needed and no change to your will. Your insurer, bank or fund manager can send you a "Change of Beneficiary" form.
 
 This guide is not legal, tax or financial advice, and it does not recommend any insurance product. Please ask your attorney or advisor.
 
@@ -33,13 +33,13 @@ A gift made through insurance can be given in memory of someone you loved. See [
 ## Common questions
 
 ### How do I name a charity as the beneficiary of my life insurance?
-Ask your insurer for a change-of-beneficiary form, write in the charity's name, address and tax ID, and return it. The usual advice describes this as usually a one-page form.
+Ask your insurer for a change-of-beneficiary form, write in the charity's name, address and tax ID, and return it. This is usually a one-page form.
 
 ### Can I name Chabad of Lamorinda as a life insurance beneficiary?
 Yes. Chabad of Lamorinda accepts legacy gifts through life insurance. Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241.
 
 ### Do I need to change my will?
-Common practice says a beneficiary designation usually needs no will change and no attorney. Ask your attorney if you are unsure how it fits with your other plans.
+A beneficiary designation usually needs no will change and no attorney. Ask your attorney if you are unsure how it fits with your other plans.
 
 ### Can I name both my family and a charity?
 Often yes, by dividing the benefit between beneficiaries. Ask your insurer.

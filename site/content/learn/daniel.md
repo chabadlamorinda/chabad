@@ -11,19 +11,19 @@ Here is the story as Jewish tradition tells it, and what it can teach teens and 
 
 ## Who was Daniel?
 
-Chassidic teaching tells that Daniel, together with three companions, Chananiah, Mishael and Azariah, was taken to Babylon by King Nebuchadnezzar after the destruction of the First Temple. In Babylon he was called Belteshazzar. The tradition adds that he was a member of the Men of the Great Assembly, the sages who gathered at the start of the Second Temple era. His book, the Book of Daniel, is part of Ketuvim (Writings) in the [Tanach](/learn/tanach).
+Daniel, together with three companions, Chananiah, Mishael and Azariah, was taken to Babylon by King Nebuchadnezzar after the destruction of the First Temple. In Babylon he was called Belteshazzar. He was also a member of the Men of the Great Assembly, the sages who gathered at the start of the Second Temple era. His book, the Book of Daniel, is part of Ketuvim (Writings) in the [Tanach](/learn/tanach).
 
-Jewish tradition notes that scholars debate whether to count Daniel as a prophet. He did, however, have visions about future kingdoms and the time of the Messiah.
+Scholars debate whether to count Daniel as a prophet. He did, however, have visions about future kingdoms and the time of the Messiah.
 
 ## Daniel keeps kosher
 
-The young captives were selected to serve in the king's court and offered the royal delicacies and wine. Daniel and his friends refused the non-kosher food and ate legumes (seeds) and drank water. Chassidic teaching says they looked healthier than those who ate the royal food.
+The young captives were selected to serve in the king's court and offered the royal delicacies and wine. Daniel and his friends refused the non-kosher food and ate legumes (seeds) and drank water. They looked healthier than those who ate the royal food.
 
 They also faced pressure to change: the king even gave them idol-based names. The lesson is that they did not hide who they were. See [kosher](/learn/kosher).
 
 ## Dreams and the writing on the wall
 
-Daniel became known for interpreting dreams. When Nebuchadnezzar had a dream he could not remember, Daniel and his friends prayed and the dream was revealed. The tradition says Daniel described a succession of empires that would rise and fall. The king wanted to worship Daniel, but Daniel refused and made him governor and head of the wise men.
+Daniel became known for interpreting dreams. When Nebuchadnezzar had a dream he could not remember, Daniel and his friends prayed and the dream was revealed. Daniel described a succession of empires that would rise and fall. The king wanted to worship Daniel, but Daniel refused and made him governor and head of the wise men.
 
 Years later, King Belshazzar held a feast and drank from the gold and silver vessels taken from the Temple in Jerusalem. A hand appeared and wrote on the wall: *Mene, Mene, Tekel, Upharsin*. No one could read it. Daniel was called and explained that the king's reign had been measured and would end. That very night Belshazzar was killed. (In this telling, it was assassination.)
 

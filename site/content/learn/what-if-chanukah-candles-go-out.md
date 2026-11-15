@@ -9,7 +9,7 @@ If a Chanukah candle goes out while it should still be burning, it is the custom
 
 ## The rule: lighting is what counts
 
-The Talmud teaches that the mitzvah of Chanukah is the kindling. If a light goes out after it was lit properly, you are not required to light it again. Even so, the summary of the laws notes that it is customary to relight any light that goes out during the time it should be burning.
+The Talmud teaches that the mitzvah of Chanukah is the kindling. If a light goes out after it was lit properly, you are not required to light it again. Even so, it is customary to relight any light that goes out during the time it should be burning.
 
 ## Do you say the blessings again?
 

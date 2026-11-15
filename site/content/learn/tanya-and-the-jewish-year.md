@@ -13,13 +13,13 @@ Here is what those teachings say, in plain words, for families in Lafayette, Mor
 
 Igeret HaTeshuvah is one of the sections of the [Tanya](/learn/tanya), written by Rabbi Schneur Zalman of Liadi. Chapter 6 teaches that sin severs the life-force that flows to the soul and feeds the forces opposed to holiness, and that "the choice is man's." Sincere teshuvah reverses this: it removes the life-force the sinner had diverted and returns the Shechinah from exile. The chapter says G-d returns with those who return. See [teshuvah](/learn/teshuvah).
 
-The chapter does not mention Elul or the High Holidays by name, but its message is the message of the season.
+The chapter does not mention Elul or the High Holidays by name, but its message is the message of the season. See [Elul](/learn/elul).
 
 ## Chapter 11: return with joy
 
 Chapter 11 of Igeret HaTeshuvah is about prayer, forgiveness and joy. It teaches that:
 
-- Worship should be joyful. As the classic explanations of the chapter put it, the Alter Rebbe advised moving the humble mood of contrition to midnight (Tikkun Chatzot), so that one is joyful when prayer begins.
+- Worship should be joyful. The Alter Rebbe advised moving the humble mood of contrition to midnight (Tikkun Chatzot), so that one is joyful when prayer begins.
 - Sorrow over sin comes from the body and animal soul, and joy comes from the Divine soul. Because they have different sources, they can coexist.
 - The forgiveness blessing of the Amidah is recited without doubt, because G-d forgives abundantly. The word "abounds" signals that G-d's forgiveness has no fixed limit, unlike human forgiveness, which tends to wear thin.
 - "My sin is always before me" means keeping one's past faults in the back of the mind to foster humility, not melancholy.

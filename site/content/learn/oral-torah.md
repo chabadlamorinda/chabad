@@ -11,7 +11,7 @@ The Oral Torah (תּוֹרָה שֶׁבְּעַל פֶּה, Torah shebe'al peh) 
 
 In its narrow sense, "Torah" means the Five Books of Moses, the Written Torah. Jewish tradition explains that the Written Torah is often brief and open to more than one reading, and so it was given together with an oral explanation that supplies its full meaning. The Oral Torah includes the detailed instructions for carrying out the commandments, the rules of interpretation, and later laws and accepted customs.
 
-Maimonides, taught that the commandments given at Sinai came with their interpretation: the "Torah" is the Written Torah and the "mitzvah" is what we call the Oral Torah. See [the Torah](/learn/torah), [Tanach](/learn/tanach) and [Moses](/learn/moses).
+Maimonides taught that the commandments given at Sinai came with their interpretation: the "Torah" is the Written Torah and the "mitzvah" is what we call the Oral Torah. See [the Torah](/learn/torah), [Tanach](/learn/tanach) and [Moses](/learn/moses).
 
 ## Examples a beginner can grasp right away
 
@@ -31,7 +31,7 @@ Along the way came great teachers such as [Hillel and Shammai](/learn/hillel-and
 
 ## Why it was not written at first
 
-According to tradition, for many generations only the written text, the twenty-four books of the Tanach, was written. The Oral Torah was taught from teacher to student. The reasons given include:
+For many generations, only the written text, the twenty-four books of the Tanach, was written. The Oral Torah was taught from teacher to student. The reasons given include:
 
 1. Written in full, the laws would fill an unmanageable number of books.
 2. Texts can be ambiguous and cause arguments; a teacher can clarify what a book leaves unclear.
@@ -65,7 +65,7 @@ Because exile and persecution made it hard to teach, Rabbi Yehudah HaNasi gather
 The Talmud records much of the Oral Torah, with the Mishnah as its core. The Oral Torah is the teaching; the Talmud is where it was written.
 
 ### Is there proof of the Oral Torah?
-Tradition points to the Torah's own references and the fact that the written text often lacks details, such as how to make tefillin. For deeper questions, ask the Rabbi.
+The Torah's own references point to it, and so does the fact that the written text often lacks details, such as how to make tefillin. For deeper questions, ask the Rabbi.
 
 ### Where can I study Torah with a teacher near Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242 or look at [adult education](/programs/adult-education).

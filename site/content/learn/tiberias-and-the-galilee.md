@@ -37,7 +37,7 @@ Tiberias was destroyed and rebuilt many times. In the 1500s, Doña Gracia and he
 
 ## Visiting the Galilee
 
-The graves of the sages are places to pray and to say [Tehillim](/learn/tehillim). Check current travel guidance for your dates and plan with a reliable guide. Other places of interest in the north include Meron, Tzfat, Mount Hermon and the ancient town of Gamla in the north.
+The graves of the sages are places to pray and to say [Tehillim](/learn/tehillim). Check current travel guidance for your dates and plan with a reliable guide. Other places of interest in the north include Meron, Tzfat, Mount Hermon and the ancient town of Gamla.
 
 ## Common questions
 

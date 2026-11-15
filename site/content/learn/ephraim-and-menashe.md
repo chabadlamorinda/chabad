@@ -9,7 +9,7 @@ Ephraim and Menashe (אפרים ומנשה) were the sons of Joseph, born in Egy
 
 ## Who were Ephraim and Menashe?
 
-According to Jewish tradition, they were the sons of Joseph and his wife Asenath. Though they were born in Egypt, a spiritually difficult place, they were raised in the ways of their forefathers. Near the end of his life, Jacob made them each a full tribe, so there would be two tribes from Joseph. That is why the number of tribes stays twelve. See [the twelve tribes](/learn/twelve-tribes).
+They were the sons of Joseph and his wife Asenath. Though they were born in Egypt, a spiritually difficult place, they were raised in the ways of their forefathers. Near the end of his life, Jacob made them each a full tribe, so there would be two tribes from Joseph. That is why the number of tribes stays twelve. See [the twelve tribes](/learn/twelve-tribes).
 
 ## Jacob's blessing
 

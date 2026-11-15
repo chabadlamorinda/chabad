@@ -1,7 +1,7 @@
 ---
 title: Jewish Life in the East Bay and Contra Costa: Where Lamorinda Fits
 description: A friendly map of Jewish life in the East Bay and Contra Costa, and how Lafayette, Moraga and Orinda fit in with Berkeley, Walnut Creek and beyond.
-category: Jewish ideas
+category: Lamorinda
 related: chabad-in-the-bay-area, jewish-history-of-contra-costa, jewish-san-francisco, jewish-bay-area-history, moving-to-lamorinda
 local: New to the East Bay or just curious? Reserve a Shabbat meal at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---

@@ -29,7 +29,7 @@ Chassidic teaching on the Tanya says not to blame yourself for an angry feeling 
 
 Read this together with Chapter 1: the divine soul is a part of G-d, and the animal soul is real too. See [the two souls explained](/learn/the-two-souls-explained). For the wider Jewish view of self-worth, see [self-esteem](/learn/self-esteem-jewish-view) and [the soul](/learn/the-soul).
 
-A popular series of Tanya classes calls this chapter "The Piece of G-d in You."
+This chapter is sometimes called "The Piece of G-d in You."
 
 ## Common questions
 

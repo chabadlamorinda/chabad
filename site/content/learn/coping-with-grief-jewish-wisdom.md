@@ -5,13 +5,13 @@ category: Mourning & remembrance
 related: mourning-journey, tanya-and-grief, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
 local: Grieving and need someone to talk to? Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
-Judaism helps with grief by giving it a path: stage by stage, from the first numb hours through shiva, sheloshim and the year, with a community that comforts you and a faith that the soul continues. Jewish tradition teaches that these practices give grief an accepted outlet and validation, which is important to healing.
+Judaism helps with grief by giving it a path: stage by stage, from the first numb hours through shiva, sheloshim and the year, with a community that comforts you and a faith that the soul continues. These practices give grief an accepted outlet and validation, which is important to healing.
 
 If you are grieving, you do not have to do it alone, and you do not have to know what comes next.
 
 ## Grief has a path
 
-Chassidic teaching describes the Jewish mourning observances as phases, each with its own purpose:
+The Jewish mourning observances come in phases, each with its own purpose:
 
 1. **Aninut: from death until burial.** A numbing, paralyzing grief. The family is so absorbed in arrangements that the Torah exempts them from mitzvot such as prayer and tefillin. The sages advise against offering words of comfort at this stage. Friends should be present and help with practical things. See [aninut](/learn/aninut).
 2. **Shiva: seven days.** The mourners step away from daily routines to focus on the memory of the person, to think about how to honor them, and to receive comfort. See [shiva](/learn/shiva).
@@ -22,7 +22,7 @@ The structure helps mourners move step by step, until the loss becomes a constru
 
 ## You may not feel what the rituals express
 
-The tradition says something very honest: a mourner may not feel the intensity of grief that the rituals express, or may not feel ready to move to the next, lighter phase. This is normal. The framework has helped many people through this process. You do not have to force a feeling. For the longer road, read [the mourning journey](/learn/mourning-journey).
+Here is something very honest: a mourner may not feel the intensity of grief that the rituals express, or may not feel ready to move to the next, lighter phase. This is normal. The framework has helped many people through this process. You do not have to force a feeling. For the longer road, read [the mourning journey](/learn/mourning-journey).
 
 ## Comfort comes from people
 
@@ -30,7 +30,7 @@ The mitzvah of comforting mourners (nichum aveilim) is a community's work. Visit
 
 ## The soul continues
 
-Judaism teaches that death is not the end of the soul. Jewish tradition says the memorial candle reflects the idea that the soul is a "candle of G-d," and that the mourning and memorial practices are meant to honor the soul and help it rise. Chassidic teaching calls it "nothing greater" for a soul that its relatives, friends and children take on good deeds in its merit: learning Torah, giving tzedakah, improving in a mitzvah. See [the afterlife](/learn/afterlife) and [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
+Judaism teaches that death is not the end of the soul. The memorial candle reflects the idea that the soul is a "candle of G-d," and the mourning and memorial practices are meant to honor the soul and help it rise. Chassidic teaching calls it "nothing greater" for a soul that its relatives, friends and children take on good deeds in its merit: learning Torah, giving tzedakah, improving in a mitzvah. See [the afterlife](/learn/afterlife) and [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
 
 ## When to ask for more help
 
@@ -45,13 +45,13 @@ It gives grief an accepted outlet and a step-by-step structure: aninut, shiva, s
 Shiva is seven days. Sheloshim is thirty days. For a parent, mourning lasts a full year, and Kaddish is said for eleven months.
 
 ### What if I do not feel sad, or I am not ready to move on?
-The tradition says that mourners may not feel the intensity of grief the rituals express, or may not feel ready for the next phase. This is common. Speak with the Rabbi.
+Mourners may not feel the intensity of grief the rituals express, or may not feel ready for the next phase. This is common. Speak with the Rabbi.
 
 ### What should I say to someone who is grieving?
-Say the traditional words of comfort and be present. Jewish tradition says comfort comes through presence, listening and shared remembrance, not through forced cheerfulness.
+Say the traditional words of comfort and be present. Comfort comes through presence, listening and shared remembrance, not through forced cheerfulness.
 
 ### Does Judaism believe the soul lives on?
-Yes. Chassidic teaching holds that the soul is a "candle of G-d" and that mourning and memorial rituals help it rise to a higher state.
+Yes. Chassidic thought holds that the soul is a "candle of G-d" and that mourning and memorial rituals help it rise to a higher state.
 
 ### Who can I talk to in Lafayette, Moraga or Orinda?
 Call Rabbi Yisroel Labkowski at 925-384-7242, or see [talk to the Rabbi](/help/talk-to-the-rabbi).
