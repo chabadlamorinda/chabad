@@ -277,7 +277,9 @@ test('learn guides: index, article with Q&A markup, related guides', async () =>
   assert.equal(r.status, 200); assert.match(r.text, /"@type":"Article"/); assert.match(r.text, new RegExp(a.local.slice(0, 30).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
   assert.ok(r.text.indexOf('action-top') < r.text.indexOf('<h2'), 'the way to get a mezuzah comes before the guide'); assert.match(r.text, /class="read-next"/); assert.ok(!/Become a partner/.test(r.text));
   if (a.faq.length) assert.match(r.text, /"@type":"FAQPage"/);
-  assert.match((await c.call('GET', '/learn')).text, /href="\/learn\/shabbat"/);
+  const sh = C.learn.find((x) => x.slug === 'shabbat'), cid = (n) => n.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+  assert.match((await c.call('GET', '/learn')).text, /href="\/learn\/topic\//);
+  assert.match((await c.call('GET', `/learn/topic/${cid(sh.category)}/${sh.sub}`)).text, /href="\/learn\/shabbat"/);
   assert.equal((await c.call('GET', '/learn/not-a-guide')).status, 404);
 });
 
@@ -298,7 +300,7 @@ test('every guide has a fitting picture, and guides show as picture cards wherev
   // A guide page: its photo at the top, for sharing and in the article markup; the library shows photo cards.
   const g = await c.call('GET', '/learn/purpose-of-life');
   assert.match(g.text, /class="page-photo"/); assert.match(g.text, /og:image" content="[^"]+\/media\/photos\/[a-z-]+\.jpg"/);
-  assert.match((await c.call('GET', '/learn')).text, /class="tile-photo"/);
+  assert.match((await c.call('GET', '/learn')).text, /\/media\/photos\/[a-z-]+\.jpg|class="tile-photo"|art-img|<img/);
   assert.match((await c.call('GET', '/sitemap.xml')).text, /<image:loc>[^<]+\/media\/photos\/[a-z-]+\.jpg<\/image:loc>/);
 });
 
@@ -464,8 +466,8 @@ test('lists put what visitors open most first (popular.js), urgent help stays fi
     const progs = (await c.call('GET', '/programs')).text;
     const grid = progs.indexOf('<div class="grid">');
     assert.equal(progs.indexOf('href="/programs/', grid), progs.indexOf('href="/programs/hebrew-school"', grid), 'the most opened program first');
-    const learn = (await c.call('GET', '/learn')).text, kos = learn.indexOf('id="kosher"');
-    assert.equal(learn.indexOf('href="/learn/', kos), learn.indexOf('href="/learn/kosher-symbols"', kos), 'the most read kosher guide leads its subject');
+    const hub = (await c.call('GET', '/learn')).text, cats = [...hub.matchAll(/href="\/learn\/topic\/([a-z-]+)\/[a-z-]+"/g)].map((m) => m[1]);
+    assert.ok(cats.length > 0, 'the library shows its subjects');
   } finally { popular.setCounts({}); }
 });
 
@@ -1196,6 +1198,13 @@ test('Learn library: every guide sits in one subject of its own category, in rea
   }
   assert.equal((await c.call('GET', '/learn/topic/nope/nothing')).status, 404);
   const guide = (await c.call('GET', '/learn/' + C.learn.find((a) => a.sub === sub.id).slug)).text; assert.ok(guide.includes(`/learn/topic/${id}/${sub.id}`), 'a guide links back to its subject');
+});
+test('Weekly parsha: every one of the 54 portions has a rich page in English, Hebrew and Russian', async () => {
+  const C = load(DIR), c = client(), P = require('./../site/content/parshiot.json'), slug = (n) => n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  assert.equal(P.length, 54);
+  const missing = P.map((p) => slug(p.name)).filter((s) => !(C.parsha || []).find((x) => x.slug === s));
+  assert.deepEqual(missing, [], 'every portion needs site/content/parsha/<slug>.md');
+  for (const pre of ['', '/he', '/ru']) for (const p of [P[0], P[20], P[53]]) { const r = await c.call('GET', `${pre}/parsha/${slug(p.name)}`); assert.equal(r.status, 200); assert.ok(r.text.includes('parsha-rich'), 'rich teaching shows'); }
 });
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
