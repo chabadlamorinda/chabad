@@ -1,6 +1,6 @@
 ---
 title: "Burial in Israel: Why Some Choose It and How It Is Arranged"
-description: Why do some Jews choose burial in Israel? The reasons given in Jewish tradition, what it means for a family in the Bay Area, and whom to ask when planning ahead.
+description: Why do some Jews choose burial in Israel? The traditional reasons, what it means for a family in the Bay Area, and whom to ask when planning ahead.
 category: Mourning & remembrance
 related: jewish-funeral, planning-a-jewish-funeral-in-advance, israel-and-the-jewish-people, chevra-kadisha-and-tahara, halachic-will
 local: Thinking about burial in Israel for yourself or a loved one? Call Rabbi Labkowski at 925-384-7242 before any arrangements are made.

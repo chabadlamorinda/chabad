@@ -23,7 +23,7 @@ The overall message, as Chassidic teaching presents it, is that G-d designates b
 
 ## "Is my date my soulmate?"
 
-Chassidic philosophy gives a practical answer: don't try to answer it. You cannot see another person's soul, so you cannot test for a soulmate. The article says that the soulmate idea can be useful at other stages of life, but it can be a distraction while dating.
+Chassidic philosophy gives a practical answer: don't try to answer it. You cannot see another person's soul, so you cannot test for a soulmate. It adds that the soulmate idea can be useful at other stages of life, but it can be a distraction while dating.
 
 Instead, look at the real person:
 
