@@ -2,7 +2,7 @@
 title: Анонимная цдака: еврейская ценность тихой щедрости
 description: Лучше ли давать цдаку анонимно? Что уровни цдаки Маймонида говорят о тайной помощи, достоинстве и скромности и как давать тихо.
 category: Jewish ideas
-related: tzedakah-priorities, humility, tzedakah, helping-someone-become-self-sufficient, giving-in-someones-honor
+related: tzedakah-priorities, mar-ukva-secret-giving, how-to-give-tzedakah-kindly, humility, tzedakah, helping-someone-become-self-sufficient, giving-in-someones-honor
 local: Хотите обсудить, как давать так, как подходит именно вам? Позвоните раввину Лабковскому: 925-384-7242.
 ---
 В еврейском учении анонимная цдака — один из высших способов давать, потому что она бережёт достоинство получающего. В перечне Маймонида из восьми уровней цдаки второй по высоте — когда ни даятель, ни получатель не знают друг друга.

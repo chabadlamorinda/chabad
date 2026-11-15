@@ -2,7 +2,7 @@
 title: Деньги и успех: еврейский взгляд на богатство
 description: Чему иудаизм учит о заработке, тратах и пожертвованиях: богатство как доверие от Б-га, честный бизнес, цдака и маасер, довольство и дети.
 category: Jewish ideas
-related: tzedakah, money-worries, being-content, ribbit, parnassah-work-and-livelihood, maaser, business-ethics, bitachon
+related: tzedakah, rabbi-akiva-and-rabbi-tarfon-investment, king-munbaz-treasures-above, why-give-if-g-d-provides, does-tzedakah-bring-wealth, money-worries, being-content, ribbit, parnassah-work-and-livelihood, maaser, business-ethics, bitachon
 local: Хотите поговорить о пожертвованиях, семейном фонде или дарении в наследство? Раввин Исроэль Лабковский в Лафайетте с радостью поможет: 925-384-7242.
 ---
 Иудаизм не считает деньги злом, но и не считает их целью жизни. Он видит в богатстве инструмент и то, что нам доверено: Б-г дает его нам, чтобы мы жили достойно, обеспечивали свои семьи и делали добро.

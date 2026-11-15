@@ -2,7 +2,7 @@
 title: Вскрытие и еврейский закон: что должны знать семьи
 description: Разрешает ли иудаизм вскрытие? Еврейский взгляд на тело после смерти, когда вскрытие обязательно и первый звонок. Спросите раввина: 925-384-7242.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, chevra-kadisha-and-tahara, organ-donation-jewish-view, planning-a-jewish-funeral-in-advance
+related: jewish-funeral, embalming-and-viewing-jewish-view, aninut, chevra-kadisha-and-tahara, organ-donation-jewish-view, planning-a-jewish-funeral-in-advance
 local: Если близкий человек умер и вас просят согласиться на вскрытие, сразу позвоните раввину Лабковскому: 925-384-7242, в любое время.
 ---
 Еврейский закон, как правило, не разрешает вскрытие: тело остается священным и после смерти, к нему относятся с почтением и хоронят целым. Есть редкие исключения, например когда этого требует закон или когда это может спасти жизнь, и каждый случай решает раввин, а не только больница.

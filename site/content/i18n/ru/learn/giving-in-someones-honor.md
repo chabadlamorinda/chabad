@@ -2,7 +2,7 @@
 title: Цдака в честь или в память о ком-то: дни рождения, йорцайт и выздоровление
 description: Как давать цдаку в честь живого человека или в память о близком: йорцайт, Изкор, выздоровление или день рождения, и как добавить посвящение.
 category: Jewish home
-related: learning-in-memory-of-a-loved-one, yizkor, jewish-birthday-customs, mi-sheberach, sponsoring-a-kiddush
+related: learning-in-memory-of-a-loved-one, giving-in-memory-of-a-loved-one, yizkor, jewish-birthday-customs, mi-sheberach, sponsoring-a-kiddush
 local: Хотите посвятить пожертвование или Кидуш чьему-то имени? Позвоните раввину Лабковскому: 925-384-7242.
 ---
 Да, по еврейскому обычаю можно давать цдаку (пожертвование) в честь живого человека или в память об ушедшем. Для ушедших это давний обычай, особенно во время Изкора: умершие уже не могут исполнять заповеди, и живые делают это за них.

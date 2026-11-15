@@ -2,7 +2,7 @@
 title: צדקה לכבוד מישהו או לזכרו: ימי הולדת, יארצייט והחלמה
 description: איך נותנים צדקה לכבוד אדם חי או לזכר יקיר: יארצייט, יזכור, החלמה או יום הולדת, ואיך מוסיפים הקדשה.
 category: Jewish home
-related: learning-in-memory-of-a-loved-one, yizkor, jewish-birthday-customs, mi-sheberach, sponsoring-a-kiddush
+related: learning-in-memory-of-a-loved-one, giving-in-memory-of-a-loved-one, yizkor, jewish-birthday-customs, mi-sheberach, sponsoring-a-kiddush
 local: רוצים להקדיש תרומה או קידוש על שם מישהו? התקשרו לרב לבקובסקי, 925-384-7242.
 ---
 כן, מנהג ישראל לתת צדקה לכבוד אדם חי או לזכר מי שהלך לעולמו. עבור הנפטרים, נתינה על שמם היא מנהג עתיק, במיוחד באמירת יזכור, כי הנפטרים אינם יכולים עוד לקיים מצוות והחיים עושים זאת בשמם.

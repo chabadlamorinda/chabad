@@ -2,7 +2,7 @@
 title: קרנות בהמלצת תורם, מניות ומעשר: שאלות נפוצות על נתינה מודרנית
 description: האם מענק מקרן בהמלצת תורם נחשב למעשר? כן. האם מניות נחשבות? מדריך פשוט למה שמעשר כולל, השאלות להביא לרב, ואיפה מתחילים.
 category: Jewish ideas
-related: maaser, year-end-tzedakah, tzedakah-priorities, giving-when-money-is-tight, leaving-a-jewish-legacy-gift
+related: maaser, donor-advised-fund-successor-chabad, giving-stock-to-chabad, leaving-your-ira-to-a-jewish-cause, year-end-tzedakah, tzedakah-priorities, giving-when-money-is-tight, leaving-a-jewish-legacy-gift
 local: יש לכם שאלה על מעשר, מניות או קרן בהמלצת תורם? התקשרו לרב לבקובסקי, 925-384-7242.
 ---
 חב"ד למורינדה מקבלת מענקים מקרנות בהמלצת תורם ותרומות מניות. מענק מקרן בהמלצת תורם נחשב למעשר (העשירית, בדרך כלל עשירית מההכנסה שניתנת לצדקה), כפי שאישר הרב ישראל לבקובסקי. כדי לסדר מענק או תרומת מניות, התקשרו לרב ישראל לבקובסקי, 925-384-7242, או לרבנית צפורה לבקובסקי, 925-384-7241. המדריכים של Chabad.org למעשר אינם עוסקים ישירות בקרנות בהמלצת תורם או בתרומת מניות. מה שהמדריכים כן מלמדים הוא סדרת כללים ברורה על כוונה, עיתוי ומי רשאי לקבל מעשר, והכללים האלה מראים אילו שאלות לשאול.

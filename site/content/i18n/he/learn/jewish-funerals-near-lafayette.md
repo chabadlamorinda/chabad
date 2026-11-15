@@ -2,7 +2,7 @@
 title: כשמישהו נפטר בלאפייט, מוראגה או אורינדה: לוויה וקבורה יהודית ליד למורינדה
 description: למי להתקשר כשיהודי נפטר ליד לאפייט, מוראגה או אורינדה, ואיך עובדת קבורה יהודית באיסט ביי. התקשרו לרב לבקובסקי 925-384-7242.
 category: Lamorinda
-related: jewish-funeral, what-to-wear-to-a-jewish-funeral, when-a-loved-one-is-dying, mourning-journey, shiva, cremation-jewish-view
+related: jewish-funeral, buying-a-jewish-cemetery-plot, jewish-burial-financial-help, what-to-wear-to-a-jewish-funeral, when-a-loved-one-is-dying, mourning-journey, shiva, cremation-jewish-view
 local: התקשרו לרב לבקובסקי בכל שעה 925-384-7242, או ראו /help מה לעשות קודם.
 ---
 כשיהודי נפטר בלאפייט, מוראגה, אורינדה או בכל מחוז קונטרה קוסטה, התקשרו מיד לרב ישראל לבקובסקי 925-384-7242, רצוי לפני שמתקשרים לבית לוויות או חותמים על משהו. (אם המוות פתאומי, התקשרו קודם ל-911.) הוא מתאם עם החברה קדישא לקבורה יהודית ועוזר לתכנן את הלוויה והשבעה לכל משפחה, חברה בקהילה או לא.

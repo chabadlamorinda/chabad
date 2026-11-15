@@ -2,7 +2,7 @@
 title: צדקה לפני הדלקת נרות: המנהג של ערב שבת וערב חג
 description: למה נשים ובנות נותנות צדקה רגע לפני הדלקת נרות שבת וחג, איך עושים זאת, ולמה המטבעות נכנסים לקופה עוד לפני שהשבת נכנסת.
 category: Jewish home
-related: shabbat-candles, pushka, tzedakah, giving-in-someones-honor, shabbat-meals
+related: shabbat-candles, tzedakah-before-prayer, pushka, tzedakah, giving-in-someones-honor, shabbat-meals
 local: שאלות על הדלקת נרות או על התחלת מנהג חדש בבית? התקשרו לרב לבקובסקי, 925-384-7242.
 ---
 מנהג ישראל שנשים ובנות נותנות צדקה רגע לפני שהן מדליקות נרות שבת בערב שבת, בהטלת מטבע או שטר לקופת צדקה (פּוּשְׁקֶע). אותו מנהג נוהג גם לפני הדלקת נרות של חג, ומכיוון שאין נוגעים בכסף משנכנסת השבת, הנתינה נעשית מראש.

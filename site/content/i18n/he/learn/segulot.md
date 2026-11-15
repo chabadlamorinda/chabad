@@ -2,7 +2,7 @@
 title: סגולות, חוט אדום וקמעות מזל: מה היהדות באמת אומרת
 description: מהי סגולה? מה אומר Chabad.org על צמידי חוט אדום, קמעות ותרופות למזל, והשמירה האמיתית שמציעה היהדות.
 category: Jewish ideas
-related: ayin-hara, mazal-and-astrology, kabbalah, mezuzah, tzedakah
+related: ayin-hara, tzedakah-saves-from-death-stories, tzedakah-averts-a-harsh-decree, mazal-and-astrology, kabbalah, mezuzah, tzedakah
 local: תוהים אם תרופה או מנהג הם אמיתיים? שאלו את הרב ובדקו את המזוזות שלכם. התקשרו 925-384-7242 או ראו /forms/mezuzah-tefillin.
 ---
 סגולה היא תרופה או מנהג רוחני שמאמינים שמביאים ברכה או שמירה, כמו תפילה מסוימת, נתינת צדקה או חפץ. תשובת Chabad.org מאוזנת: יש מנהגים יהודיים אמיתיים, אבל קמע מזל אינו תחליף למצוות, לתפילה ולביטחון בה', ולצמיד החוט האדום בפרט כמעט אין מקור יהודי מכובד.

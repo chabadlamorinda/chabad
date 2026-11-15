@@ -2,7 +2,7 @@
 title: לימוד תורה לזכר אדם אהוב
 description: איך לימוד משניות, צדקה ומצוות לעילוי נשמת אהוב מרומם את נשמתו. מדריך פשוט לשבעה, לשלושים ולאזכרה.
 category: Mourning & remembrance
-related: yahrzeit, giving-in-someones-honor, saying-kaddish-for-someone-else, mishnah, kaddish, yizkor, tzedakah
+related: yahrzeit, giving-in-memory-of-a-loved-one, giving-in-someones-honor, saying-kaddish-for-someone-else, mishnah, kaddish, yizkor, tzedakah
 local: נעזור לכם לבחור מה ללמוד לעילוי נשמת יקירכם. התקשרו לרב לבקובסקי 925-384-7242, או ראו /forms/yizkor.
 ---
 המסורת היהודית מלמדת שלימוד תורה, צדקה ומעשים טובים הנעשים בשם אהוב מביאים זכות לנשמתו. המנהג הנפוץ ביותר הוא ללמוד משנה, כי המילה משנה מורכבת מאותן אותיות כמו נשמה.

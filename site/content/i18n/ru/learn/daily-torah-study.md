@@ -2,7 +2,7 @@
 title: Ежедневное изучение Торы: как выработать привычку учиться
 description: Почему иудаизм призывает каждого еврея учить Тору ежедневно, циклы изучения Хабада, Хитас и Рамбам, и простые способы начать.
 category: Prayer & Torah
-related: torah, chavruta-learning-partner, how-to-start-learning-torah, chanukah-and-torah-study, code-of-jewish-law, shavuot-night-learning, torah-study-for-women, retirement-jewish-view, tanya, rambam, weekly-parsha
+related: torah, yissachar-and-zevulun-supporting-torah, chavruta-learning-partner, how-to-start-learning-torah, chanukah-and-torah-study, code-of-jewish-law, shavuot-night-learning, torah-study-for-women, retirement-jewish-view, tanya, rambam, weekly-parsha
 local: Найдите урок или напарника для учебы на chabadoflamorinda.com/programs/adult-education или звоните раввину Лабковскому: 925-384-7242.
 ---
 Изучение Торы - это ежедневная заповедь для еврейских мужчин, а еврейские женщины обязаны изучать законы, которые их касаются, и их горячо поощряют учиться гораздо больше. Даже несколько минут в день связывают вас с мудростью Б-га и придают всему дню иное ощущение.

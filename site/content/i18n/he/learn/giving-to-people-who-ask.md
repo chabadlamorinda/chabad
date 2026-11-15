@@ -2,7 +2,7 @@
 title: כשמישהו מבקש עזרה: נתינה לנזקקים
 description: מה היהדות מלמדת על נתינה למי שמבקש כסף: כבוד האדם, כמה לתת, מה אם הוא לא דובר אמת, ודרכים נוספות לעזור.
 category: Jewish ideas
-related: tzedakah, tzedakah-priorities, chesed, maaser
+related: tzedakah, mar-ukva-secret-giving, how-to-give-tzedakah-kindly, what-giving-does-for-the-giver, tzedakah-priorities, chesed, maaser
 local: מכירים מישהו בלאפייט, מוראגה או אורינדה שזקוק לעזרה? הרב ישראל לבקובסקי יכול לעזור בשקט ובכבוד: 925-384-7242.
 ---
 מישהו עומד ביציאה מהכביש המהיר עם שלט. מישהו דופק בדלת ומבקש עזרה בשכר הדירה. אדם זר בסופרמרקט חסרים לו כמה דולרים. מה אומרת היהדות?

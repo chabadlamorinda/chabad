@@ -2,7 +2,7 @@
 title: Autopsy and Jewish Law: What Families Should Know
 description: Does Judaism allow autopsy? The Jewish view on the body after death, when an autopsy is required, and the first call to make. Ask the Rabbi: 925-384-7242.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, chevra-kadisha-and-tahara, organ-donation-jewish-view, planning-a-jewish-funeral-in-advance
+related: jewish-funeral, embalming-and-viewing-jewish-view, aninut, chevra-kadisha-and-tahara, organ-donation-jewish-view, planning-a-jewish-funeral-in-advance
 local: If a loved one has died and you are being asked about an autopsy, call Rabbi Labkowski right away at 925-384-7242, day or night.
 ---
 Jewish law generally does not permit autopsy, because the body remains holy after death and must be treated with honor and buried whole. There are rare exceptions, for example when the law requires it or when it may save a life, and each case must be decided by a rabbi, never by the hospital alone.

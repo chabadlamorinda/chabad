@@ -2,7 +2,7 @@
 title: נתינה בעילום שם: הערך היהודי של נדיבות שקטה
 description: האם עדיף לתת צדקה בעילום שם? מה מלמדות מעלות הצדקה של הרמב"ם על נתינה בסתר, כבוד האדם וענווה, ואיך נותנים בשקט.
 category: Jewish ideas
-related: tzedakah-priorities, humility, tzedakah, helping-someone-become-self-sufficient, giving-in-someones-honor
+related: tzedakah-priorities, mar-ukva-secret-giving, how-to-give-tzedakah-kindly, humility, tzedakah, helping-someone-become-self-sufficient, giving-in-someones-honor
 local: רוצים לשוחח על דרך נתינה שמתאימה לכם? התקשרו לרב לבקובסקי, 925-384-7242.
 ---
 בתורת ישראל, נתינת צדקה בעילום שם היא מהדרכים הגבוהות ביותר לתת, משום שהיא שומרת על כבודו של מי שמקבל. בדירוג שמונה מעלות הצדקה של הרמב"ם, המעלה השנייה בגובהה היא כשלא הנותן ולא המקבל יודעים זה את שמו של זה.

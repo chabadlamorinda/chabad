@@ -2,7 +2,7 @@
 title: ביקור בקבר יהודי: מתי ללכת ומה לומר
 description: מתי יהודים עולים לקברי יקיריהם, אילו תפילות ותהילים לומר, למה משאירים אבן, והמנהגים בבית קברות יהודי.
 category: Mourning & remembrance
-related: yahrzeit, mount-of-olives, jewish-headstone-inscription, jewish-genealogy, unveiling, tehillim, kaddish
+related: yahrzeit, kohen-at-a-funeral-or-cemetery, mount-of-olives, jewish-headstone-inscription, jewish-genealogy, unveiling, tehillim, kaddish
 local: תרצו שהרב יצטרף אליכם לקבר או יעזור בתפילות? התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 ביקור בקבר של אדם יקר הוא מנהג יהודי משמעותי, במיוחד ביום היארצייט ובשבועות שלפני הימים הנוראים. ליד הקבר מתפללים, אומרים תהילים, נותנים צדקה לזכרו ומשאירים אבן קטנה לסימן שהיינו שם.

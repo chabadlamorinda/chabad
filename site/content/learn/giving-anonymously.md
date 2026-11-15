@@ -2,7 +2,7 @@
 title: Giving Anonymously: The Jewish Value of Quiet Generosity
 description: Is it better to give charity anonymously? What Maimonides' levels of tzedakah teach about secret giving, dignity and humility, and how to give quietly.
 category: Jewish ideas
-related: tzedakah-priorities, humility, tzedakah, helping-someone-become-self-sufficient, giving-in-someones-honor
+related: tzedakah-priorities, mar-ukva-secret-giving, how-to-give-tzedakah-kindly, humility, tzedakah, helping-someone-become-self-sufficient, giving-in-someones-honor
 local: Want to talk about how to give in a way that fits you? Call Rabbi Labkowski at 925-384-7242.
 ---
 In Jewish teaching, giving charity anonymously is one of the highest ways to give, because it protects the dignity of the person who receives. In Maimonides' ranking of the eight levels of tzedakah, the second-highest level is when neither the giver nor the receiver knows the other's name.

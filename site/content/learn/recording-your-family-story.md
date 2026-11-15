@@ -2,7 +2,7 @@
 title: Recording Your Family Story: Passing On Memories, Values and Jewish Roots
 description: How to record your family story for children and grandchildren: questions to ask, Hebrew names, places and values. Pass on your Jewish roots.
 category: Jewish home
-related: ethical-will, jewish-genealogy, jewish-grandparents, hebrew-names, honoring-the-elderly
+related: ethical-will, talking-to-your-children-about-your-will, true-stories-of-jewish-legacy-gifts, jewish-genealogy, jewish-grandparents, hebrew-names, honoring-the-elderly
 local: Want help with a Hebrew name, an old document or a family story? Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 The simplest way to record your family story is to ask one person one question and write down or record the answer, starting with the oldest members of your family while they can still tell it. Jewish tradition has always valued handing the story on: the Torah says, "Ask your father and he will tell you, your elders and they will say to you" (Deuteronomy 32:7).

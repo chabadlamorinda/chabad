@@ -2,7 +2,7 @@
 title: מעשר: נתינת עשירית לצדקה ביהדות
 description: מהו מעשר, איך מחשבים עשרה אחוזים מההכנסה לצדקה, אילו מטרות מתאימות, וטיפים מעשיים למעקב.
 category: Jewish ideas
-related: tzedakah, giving-when-money-is-tight, donor-advised-funds-and-tzedakah, year-end-tzedakah, new-job-jewish-blessing, children-money-and-tzedakah, supporting-chabad-of-lamorinda, ribbit, parnassah-work-and-livelihood, pushka, business-ethics, chesed
+related: tzedakah, the-blessing-of-giving-maaser, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for, maaser-for-business-owners-and-investors, how-to-calculate-maaser, what-is-jewish-tithing, monthly-giving-jewish-view, how-much-to-leave-to-tzedakah-in-a-will, giving-stock-to-chabad, leaving-your-ira-to-a-jewish-cause, tzedakah-equals-all-the-mitzvot, does-tzedakah-bring-wealth, giving-when-money-is-tight, donor-advised-funds-and-tzedakah, year-end-tzedakah, new-job-jewish-blessing, children-money-and-tzedakah, supporting-chabad-of-lamorinda, ribbit, parnassah-work-and-livelihood, pushka, business-ethics, chesed
 local: רוצים להפנות את המעשר שלכם לחיים היהודיים בלמורינדה? תרמו בכתובת chabadoflamorinda.com/donate או התקשרו לרב לבקובסקי בטלפון 925-384-7242 בכל שאלה.
 ---
 מעשר פירושו עשירית. זה המנהג היהודי לתת עשרה אחוזים מההכנסה לצדקה. יהודים רבים נוהגים כך כחלק בסיסי מהחיים הכלכליים שלהם, ונותנים מתוך הכרת תודה על הברכות שה׳ נתן להם.

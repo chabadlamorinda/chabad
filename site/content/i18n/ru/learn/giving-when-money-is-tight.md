@@ -2,7 +2,7 @@
 title: Цдака, когда денег мало: небольшие дары, время и достоинство
 description: Сколько цдаки давать при небольшом доходе? Еврейское учение: сначала основные нужды, частичная помощь, время и доброта, вопрос раввину.
 category: Jewish ideas
-related: money-worries, tzedakah, maaser, giving-anonymously, donor-advised-funds-and-tzedakah
+related: money-worries, the-poor-mans-offering, tzedakah, maaser, giving-anonymously, donor-advised-funds-and-tzedakah
 local: Вам трудно или вы не уверены, что можете дать? Поговорите с раввином Лабковским: 925-384-7242. Мы рады каждому.
 ---
 Если денег мало, закон Торы не требует отказываться от основных нужд ради маасера (десятой части дохода). Chabad.org учит, что еда, одежда и жильё важнее, а тот, кто сам зависит от помощи, всё равно участвует в даянии: временем, добротой и посильным даром.

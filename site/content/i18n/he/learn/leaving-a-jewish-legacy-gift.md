@@ -2,7 +2,7 @@
 title: להשאיר מורשת יהודית: תרומה בצוואה ומשמעותה
 description: מהי תרומת מורשת למטרה יהודית: דרכים לתת בצוואה, בנאמנות או בטופס מוטב, צוואה אתית, ואיפה מתחילים.
 category: Jewish ideas
-related: ethical-will, halachic-will, supporting-chabad-of-lamorinda, giving-in-someones-honor, tzedakah
+related: ethical-will, will-my-grandchildren-be-jewish, legacy-gift-step-by-step, donor-advised-fund-successor-chabad, life-insurance-gift-to-charity, leaving-your-ira-to-a-jewish-cause, naming-chabad-in-your-living-trust, leaving-chabad-in-your-will, true-stories-of-jewish-legacy-gifts, choni-and-the-carob-tree, king-munbaz-treasures-above, halachic-will, supporting-chabad-of-lamorinda, giving-in-someones-honor, tzedakah
 local: חושבים לכלול חיים יהודיים בתוכניות שלכם? שוחחו עם הרב: התקשרו 925-384-7242.
 ---
 תרומת מורשת יהודית היא תרומה למטרה יהודית שאתם מסדרים בחייכם ושנכנסת לתוקף מאוחר יותר, לרוב דרך צוואה, נאמנות חיה או טופס מוטב. זו דרך לשמור על הערכים שלכם ועל דאגתכם לאחרים גם אחריכם, ולתת לדור הבא את מה שקיבלתם: חינוך יהודי.

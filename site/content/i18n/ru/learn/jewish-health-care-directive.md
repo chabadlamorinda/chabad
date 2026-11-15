@@ -2,7 +2,7 @@
 title: "Еврейская медицинская директива: пожелания на конец жизни по еврейскому закону"
 description: Что такое еврейская (галахическая) медицинская директива? Как назначить доверенное лицо и раввина, чтобы решения шли по еврейскому закону.
 category: Mourning & remembrance
-related: halachic-will, hospice-and-end-of-life-care, when-a-loved-one-is-dying, planning-a-jewish-funeral-in-advance, autopsy-jewish-view
+related: halachic-will, legacy-gift-step-by-step, life-insurance-gift-to-charity, hospice-and-end-of-life-care, when-a-loved-one-is-dying, planning-a-jewish-funeral-in-advance, autopsy-jewish-view
 local: Хотите, чтобы ваши медицинские пожелания следовали еврейскому закону? Позвоните раввину Лабковскому по номеру 925-384-7242, прежде чем что-либо подписывать.
 ---
 Еврейская медицинская директива, которую часто называют галахическим завещанием о лечении, - это подписанный документ, назначающий доверенное лицо для принятия ваших медицинских решений и предписывающий, чтобы они следовали еврейскому закону, с раввином, которого вы называете для консультаций. В нём также выражены ваши пожелания о том, что будет с телом после смерти.

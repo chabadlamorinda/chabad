@@ -2,7 +2,7 @@
 title: Segulot, Red Strings and Lucky Charms: What Judaism Really Says
 description: What is a segulah? What Chabad.org says about red string bracelets, charms and good-luck remedies, and the real protection Judaism offers.
 category: Jewish ideas
-related: ayin-hara, mazal-and-astrology, kabbalah, mezuzah, tzedakah
+related: ayin-hara, tzedakah-saves-from-death-stories, tzedakah-averts-a-harsh-decree, mazal-and-astrology, kabbalah, mezuzah, tzedakah
 local: Wondering whether a remedy or custom is real? Ask the Rabbi, and have your mezuzahs checked. Call 925-384-7242 or see /forms/mezuzah-tefillin.
 ---
 A segulah (סְגֻלָּה, plural segulot) is a spiritual remedy or custom believed to bring a blessing or protection, such as a particular prayer, a charity gift or an object. Chabad.org's answer is balanced: there are real Jewish customs, but a good-luck charm is not a substitute for mitzvahs, prayer and trust in G-d, and the red string bracelet in particular has hardly any reputable Jewish source.

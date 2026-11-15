@@ -2,7 +2,7 @@
 title: When Someone Dies in Lafayette, Moraga or Orinda: Jewish Funeral and Burial Near Lamorinda
 description: Who to call when a Jewish person dies near Lafayette, Moraga or Orinda, and how Jewish burial works in the East Bay. Call Rabbi Labkowski, 925-384-7242.
 category: Lamorinda
-related: jewish-funeral, what-to-wear-to-a-jewish-funeral, when-a-loved-one-is-dying, mourning-journey, shiva, cremation-jewish-view
+related: jewish-funeral, buying-a-jewish-cemetery-plot, jewish-burial-financial-help, what-to-wear-to-a-jewish-funeral, when-a-loved-one-is-dying, mourning-journey, shiva, cremation-jewish-view
 local: Call Rabbi Labkowski any hour at 925-384-7242, or see /help for what to do first.
 ---
 When a Jewish person dies in Lafayette, Moraga, Orinda or anywhere in Contra Costa County, call Rabbi Yisroel Labkowski at 925-384-7242 right away, ideally before calling a funeral home or signing anything. (If a death is sudden, call 911 first.) He coordinates with the Chevra Kadisha, the Jewish burial society, for a Jewish burial and helps plan the funeral and shiva for every family, member or not.

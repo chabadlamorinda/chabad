@@ -2,7 +2,7 @@
 title: Giving Tzedakah When Money Is Tight: Small Gifts, Time and Dignity
 description: How much tzedakah should you give on a small income? Jewish teaching on basic needs first, partial giving, giving time and kindness, and asking the Rabbi.
 category: Jewish ideas
-related: money-worries, tzedakah, maaser, giving-anonymously, donor-advised-funds-and-tzedakah
+related: money-worries, the-poor-mans-offering, tzedakah, maaser, giving-anonymously, donor-advised-funds-and-tzedakah
 local: Struggling, or unsure what you can give? Talk with Rabbi Labkowski at 925-384-7242. Everyone is welcome.
 ---
 If money is tight, Jewish law does not ask you to give up your basic needs in order to give maaser (the tenth of income). Chabad.org teaches that food, clothing and shelter come first, and that even a person who depends on charity still takes part in giving, with time, kindness and whatever small gift is possible.

@@ -2,7 +2,7 @@
 title: Цдака в конце года: еврейское руководство по пожертвованиям до 31 декабря
 description: Как еврейская традиция смотрит на пожертвования в конце года: цдака, маасер, восемь ступеней и кому в первую очередь. Для Лафейетта, Мораги и Оринды.
 category: Jewish home
-related: tzedakah, donor-advised-funds-and-tzedakah, chanukah-tzedakah, maaser, tzedakah-priorities, local-tzedakah-in-lamorinda, secular-new-year-jewish-view
+related: tzedakah, the-blessing-of-giving-maaser, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for, maaser-for-business-owners-and-investors, how-to-calculate-maaser, what-is-jewish-tithing, monthly-giving-jewish-view, giving-stock-to-chabad, donor-advised-funds-and-tzedakah, chanukah-tzedakah, maaser, tzedakah-priorities, local-tzedakah-in-lamorinda, secular-new-year-jewish-view
 local: Есть вопросы о пожертвованиях? Позвоните раввину Исроэлю Лабковски: 925-384-7242.
 ---
 Цдака (צדקה) на иврите означает помощь нуждающимся, а буквально слово значит «справедливость» или «праведность», а не «благотворительность». Еврейская традиция учит, что давать цдаку — это обязанность, а не одолжение, и что давать надо тогда, когда есть возможность, а не только в конце календарного года.

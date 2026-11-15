@@ -2,7 +2,7 @@
 title: Giving Tzedakah in Someone's Honor or Memory: Birthdays, Yahrzeits and Recoveries
 description: How to give tzedakah in honor of a living person or in memory of a loved one: yahrzeit, Yizkor, a recovery or a birthday, and how to add a dedication.
 category: Jewish home
-related: learning-in-memory-of-a-loved-one, yizkor, jewish-birthday-customs, mi-sheberach, sponsoring-a-kiddush
+related: learning-in-memory-of-a-loved-one, giving-in-memory-of-a-loved-one, yizkor, jewish-birthday-customs, mi-sheberach, sponsoring-a-kiddush
 local: Want to dedicate a gift or a Kiddush in someone's name? Call Rabbi Labkowski at 925-384-7242.
 ---
 Yes, it is a Jewish custom to give tzedakah (charity) in honor of a living person or in memory of someone who has passed away. For those who have died, giving in their name is an age-old custom, especially at Yizkor, because the departed can no longer do mitzvahs and the living do them on their behalf.

@@ -2,7 +2,7 @@
 title: Year-End Tzedakah: A Jewish Guide to Giving Before December 31
 description: How Jewish tradition thinks about year-end giving: tzedakah, maaser, the eight levels and who comes first. A calm guide for Lafayette, Moraga and Orinda.
 category: Jewish home
-related: tzedakah, donor-advised-funds-and-tzedakah, chanukah-tzedakah, maaser, tzedakah-priorities, local-tzedakah-in-lamorinda, secular-new-year-jewish-view
+related: tzedakah, the-blessing-of-giving-maaser, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for, maaser-for-business-owners-and-investors, how-to-calculate-maaser, what-is-jewish-tithing, monthly-giving-jewish-view, giving-stock-to-chabad, donor-advised-funds-and-tzedakah, chanukah-tzedakah, maaser, tzedakah-priorities, local-tzedakah-in-lamorinda, secular-new-year-jewish-view
 local: Questions about how or where to give? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Tzedakah (צדקה) is the Jewish word for giving to people in need, and it literally means "justice" or "righteousness," not "charity." Jewish tradition teaches that giving is a duty, not a favor, and that the right time to give is whenever you are able, not only at the end of the calendar year.

@@ -2,7 +2,7 @@
 title: "When You Cannot Say Kaddish Yourself: Arranging Kaddish for a Loved One"
 description: Who says Kaddish if there is no son or you cannot attend a minyan? Chabad.org's guidance on a relative or substitute, and ways for daughters to honor.
 category: Mourning & remembrance
-related: kaddish, learning-in-memory-of-a-loved-one, yahrzeit, el-malei-rachamim, first-yahrzeit
+related: kaddish, memorial-plaque-in-the-synagogue, learning-in-memory-of-a-loved-one, yahrzeit, el-malei-rachamim, first-yahrzeit
 local: To arrange Kaddish for your loved one, call Rabbi Labkowski at 925-384-7242 or see /kaddish.
 ---
 If someone has no son to say Kaddish, or the sons cannot realistically say it every day with a minyan, Chabad.org says another person should say Kaddish in the deceased's merit: a close male relative, or someone hired to do so. It is a last resort, not a first choice, and the mourner continues to do good in the person's memory.

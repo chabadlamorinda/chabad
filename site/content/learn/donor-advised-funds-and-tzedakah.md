@@ -2,7 +2,7 @@
 title: Donor-Advised Funds, Stock and Maaser: Common Questions About Modern Giving
 description: Does a donor-advised fund grant count as maaser? Yes. A plain guide to maaser, stock gifts, the questions to bring to your Rabbi, and where to start.
 category: Jewish ideas
-related: maaser, year-end-tzedakah, tzedakah-priorities, giving-when-money-is-tight, leaving-a-jewish-legacy-gift
+related: maaser, donor-advised-fund-successor-chabad, giving-stock-to-chabad, leaving-your-ira-to-a-jewish-cause, year-end-tzedakah, tzedakah-priorities, giving-when-money-is-tight, leaving-a-jewish-legacy-gift
 local: Have a question about maaser, stock or a donor-advised fund? Call Rabbi Labkowski at 925-384-7242.
 ---
 Chabad of Lamorinda accepts donor-advised fund grants and gifts of stock. A grant from a donor-advised fund counts as maaser (the tithe, usually a tenth of income given to tzedakah), as Rabbi Yisroel Labkowski has confirmed. To arrange a grant or a gift of stock, call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. Chabad.org's guides to maaser do not address donor-advised funds or gifts of stock directly. What the guides do teach is a clear set of rules about intention, timing and who may receive maaser, and those rules show which questions to ask.

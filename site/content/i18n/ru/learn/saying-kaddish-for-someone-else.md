@@ -2,7 +2,7 @@
 title: "Когда вы не можете читать Кадиш сами: как организовать Кадиш за близкого"
 description: Кто читает Кадиш, если нет сына или вы не можете прийти на миньян? Совет Chabad.org: родственник или заместитель, и как дочери могут почтить.
 category: Mourning & remembrance
-related: kaddish, learning-in-memory-of-a-loved-one, yahrzeit, el-malei-rachamim, first-yahrzeit
+related: kaddish, memorial-plaque-in-the-synagogue, learning-in-memory-of-a-loved-one, yahrzeit, el-malei-rachamim, first-yahrzeit
 local: Чтобы организовать Кадиш за близкого, позвоните раввину Лабковскому по номеру 925-384-7242 или см. /kaddish.
 ---
 Если у умершего нет сына, который мог бы читать Кадиш, или сыновья не могут на деле читать его каждый день с миньяном, то, по Chabad.org, Кадиш читает за заслугу умершего другой человек: близкий родственник-мужчина или нанятый для этого. Это крайняя мера, а не первый выбор, и скорбящий продолжает творить добро в память об ушедшем.

@@ -2,7 +2,7 @@
 title: "כשאי אפשר לומר קדיש בעצמכם: איך מסדרים קדיש לאדם יקר"
 description: מי אומר קדיש אם אין בן, או אם אי אפשר להגיע למניין? הכוונה לפי Chabad.org: קרוב או שליח בשכר, ודרכים לבנות לכבד את יקירן.
 category: Mourning & remembrance
-related: kaddish, learning-in-memory-of-a-loved-one, yahrzeit, el-malei-rachamim, first-yahrzeit
+related: kaddish, memorial-plaque-in-the-synagogue, learning-in-memory-of-a-loved-one, yahrzeit, el-malei-rachamim, first-yahrzeit
 local: כדי לסדר קדיש לאדם יקר, התקשרו לרב לבקובסקי בטלפון 925-384-7242 או ראו /kaddish.
 ---
 אם לנפטר אין בן שיאמר קדיש, או שהבנים אינם יכולים באופן מעשי לאומרו מדי יום במניין, לפי Chabad.org אדם אחר אומר קדיש לזכות הנפטר: קרוב משפחה גבר, רצוי קרוב, או מי ששוכרים לכך. זו אפשרות אחרונה ולא ראשונה, והאבל ממשיך לעשות טוב לזכרו.

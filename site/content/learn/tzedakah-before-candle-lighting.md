@@ -2,7 +2,7 @@
 title: Tzedakah Before Lighting Candles: The Friday and Holiday Custom
 description: Why Jewish women and girls give tzedakah just before lighting Shabbat and holiday candles, how to do it, and why the coins go in before Shabbat begins.
 category: Jewish home
-related: shabbat-candles, pushka, tzedakah, giving-in-someones-honor, shabbat-meals
+related: shabbat-candles, tzedakah-before-prayer, pushka, tzedakah, giving-in-someones-honor, shabbat-meals
 local: Questions about candle lighting or starting a Friday custom at home? Call Rabbi Labkowski at 925-384-7242.
 ---
 It is a Jewish custom for women and girls to give tzedakah (charity) just before they light Shabbat candles on Friday afternoon, by dropping a coin or bill into a charity box (a pushka). The same custom is kept before holiday candles, and because money cannot be handled once Shabbat begins, the giving is done beforehand.

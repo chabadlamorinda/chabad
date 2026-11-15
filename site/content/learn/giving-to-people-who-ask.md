@@ -2,7 +2,7 @@
 title: When Someone Asks for Help: Giving to People in Need
 description: What Judaism teaches about giving to a person who asks for money: dignity, how much to give, what if they might not be honest, and other ways to help.
 category: Jewish ideas
-related: tzedakah, tzedakah-priorities, chesed, maaser
+related: tzedakah, mar-ukva-secret-giving, how-to-give-tzedakah-kindly, what-giving-does-for-the-giver, tzedakah-priorities, chesed, maaser
 local: Know someone who needs help in Lafayette, Moraga or Orinda? Rabbi Yisroel Labkowski can help quietly and with dignity: 925-384-7242.
 ---
 Someone stands at a freeway exit with a sign. Someone at the door asks for help with rent. A stranger at the grocery store is a few dollars short. What does Judaism say?

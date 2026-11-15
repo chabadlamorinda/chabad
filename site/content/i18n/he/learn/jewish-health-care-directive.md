@@ -2,7 +2,7 @@
 title: "הנחיה רפואית יהודית מראש: רצונות לסוף החיים לפי ההלכה"
 description: מהי הנחיה רפואית יהודית (צוואת חיים הלכתית)? איך ממנים אדם נאמן ורב כדי שההחלטות הרפואיות יהיו לפי ההלכה. שאלו את הרב בלאפייט.
 category: Mourning & remembrance
-related: halachic-will, hospice-and-end-of-life-care, when-a-loved-one-is-dying, planning-a-jewish-funeral-in-advance, autopsy-jewish-view
+related: halachic-will, legacy-gift-step-by-step, life-insurance-gift-to-charity, hospice-and-end-of-life-care, when-a-loved-one-is-dying, planning-a-jewish-funeral-in-advance, autopsy-jewish-view
 local: רוצים שהרצונות הרפואיים שלכם ינהגו לפי ההלכה? התקשרו לרב לבקובסקי בטלפון 925-384-7242 לפני שחותמים על משהו.
 ---
 הנחיה רפואית יהודית, הנקראת לעיתים צוואת חיים הלכתית, היא מסמך חתום הממנה אדם נאמן לקבל את ההחלטות הרפואיות שלכם ומורה שהן ינהגו לפי ההלכה, עם רב שאתם מנים להתייעץ עמו. היא קובעת גם את רצונכם לגבי הגוף אחרי המוות.

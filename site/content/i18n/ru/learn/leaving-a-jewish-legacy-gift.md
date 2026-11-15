@@ -2,7 +2,7 @@
 title: Еврейское наследие: пожертвование в завещании и его смысл
 description: Что значит оставить наследие еврейскому делу: пожертвование через завещание, траст или форму бенефициара, этическое завещание и с чего начать.
 category: Jewish ideas
-related: ethical-will, halachic-will, supporting-chabad-of-lamorinda, giving-in-someones-honor, tzedakah
+related: ethical-will, will-my-grandchildren-be-jewish, legacy-gift-step-by-step, donor-advised-fund-successor-chabad, life-insurance-gift-to-charity, leaving-your-ira-to-a-jewish-cause, naming-chabad-in-your-living-trust, leaving-chabad-in-your-will, true-stories-of-jewish-legacy-gifts, choni-and-the-carob-tree, king-munbaz-treasures-above, halachic-will, supporting-chabad-of-lamorinda, giving-in-someones-honor, tzedakah
 local: Думаете включить еврейскую жизнь в свои планы? Поговорите с раввином: 925-384-7242.
 ---
 Еврейское наследие — это пожертвование еврейскому делу, которое вы оформляете при жизни, а вступает оно в силу позже, чаще всего через завещание, живой траст или форму бенефициара. Это способ сохранить ваши ценности и заботу о других и после вас и дать следующему поколению то, что получили вы: еврейское образование.

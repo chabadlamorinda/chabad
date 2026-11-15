@@ -2,7 +2,7 @@
 title: פושקע: קופת הצדקה בבית היהודי
 description: מהי פושקע (קופת צדקה), למה בכל בית יהודי ולכל ילד כדאי שתהיה אחת, מתי לתת, ומה עושים עם הכסף כשהיא מתמלאת.
 category: Jewish home
-related: tzedakah, tzedakah-before-candle-lighting, jewish-nursery, rabbi-meir-baal-haness, children-money-and-tzedakah, supporting-chabad-of-lamorinda, maaser, shabbat-candles, jewish-parenting
+related: tzedakah, giving-tzedakah-as-a-family, the-rebbes-sunday-dollars, shliach-mitzvah-money-for-a-trip, tzedakah-before-prayer, tzedakah-before-candle-lighting, jewish-nursery, rabbi-meir-baal-haness, children-money-and-tzedakah, supporting-chabad-of-lamorinda, maaser, shabbat-candles, jewish-parenting
 local: נסו את אפליקציית My Pushka של חב״ד למורינדה בכתובת chabadoflamorinda.com/pushka/, או התקשרו 925-384-7242 בכל שאלה על נתינה.
 ---
 פושקע היא קופת צדקה שמחזיקים בבית יהודי. בכל יום, בני המשפחה מכניסים אליה כמה מטבעות, וכך הנתינה הופכת להרגל יומיומי והבית הופך למקום של חסד וברכה.

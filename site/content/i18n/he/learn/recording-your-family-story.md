@@ -2,7 +2,7 @@
 title: לתעד את סיפור המשפחה: להעביר זכרונות, ערכים ושורשים יהודיים
 description: איך לתעד את סיפור המשפחה לילדים ולנכדים: שאלות לשאול, שמות עבריים, מקומות וערכים. דרך פשוטה להעביר הלאה את השורשים היהודיים שלכם.
 category: Jewish home
-related: ethical-will, jewish-genealogy, jewish-grandparents, hebrew-names, honoring-the-elderly
+related: ethical-will, talking-to-your-children-about-your-will, true-stories-of-jewish-legacy-gifts, jewish-genealogy, jewish-grandparents, hebrew-names, honoring-the-elderly
 local: רוצים עזרה עם שם עברי, מסמך ישן או סיפור משפחתי? התקשרו לרב לבקובסקי 925-384-7242 או ראו /help/talk-to-the-rabbi.
 ---
 הדרך הפשוטה ביותר לתעד את סיפור המשפחה היא לשאול אדם אחד שאלה אחת ולרשום או להקליט את התשובה, החל בבני המשפחה המבוגרים ביותר כל עוד הם יכולים לספר. המסורת היהודית תמיד העריכה את מסירת הסיפור הלאה: התורה אומרת "שְׁאַל אָבִיךָ וְיַגֵּדְךָ, זְקֵנֶיךָ וְיֹאמְרוּ לָךְ" (דברים ל"ב, ז).

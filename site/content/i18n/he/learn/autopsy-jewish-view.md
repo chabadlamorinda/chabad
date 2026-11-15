@@ -2,7 +2,7 @@
 title: נתיחה לאחר המוות והלכה יהודית: מה כדאי שמשפחות ידעו
 description: האם היהדות מתירה נתיחה? ההשקפה היהודית על הגוף לאחר המוות, מתי נתיחה נדרשת, ושיחת הטלפון הראשונה. שאלו את הרב: 925-384-7242.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, chevra-kadisha-and-tahara, organ-donation-jewish-view, planning-a-jewish-funeral-in-advance
+related: jewish-funeral, embalming-and-viewing-jewish-view, aninut, chevra-kadisha-and-tahara, organ-donation-jewish-view, planning-a-jewish-funeral-in-advance
 local: אם יקיר שלכם נפטר ומבקשים מכם הסכמה לנתיחה, התקשרו מיד לרב לבקובסקי, 925-384-7242, בכל שעה.
 ---
 ההלכה היהודית אינה מתירה בדרך כלל נתיחה, משום שהגוף נשאר קדוש גם לאחר המוות וחייבים לנהוג בו בכבוד ולקבור אותו שלם. יש חריגים נדירים, למשל כשהחוק מחייב או כשהנתיחה עשויה להציל חיים, וכל מקרה נקבע על ידי רב ולא על ידי בית החולים לבדו.
