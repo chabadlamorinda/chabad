@@ -27,7 +27,7 @@ Chabad.org's "Lost in the Mail for Sixteen Years," by Shaul Wertheimer, tells of
 
 Sixteen years later, Avigdor's fortune collapsed. Selling his old clothes, he found the letter. He hurried to Mr. Tzaddok, the charity chairman, a former tailor who had become wealthy and generous. The letter said Avigdor had fallen because of his pride, asked Tzaddok to help him, and promised he would prosper again, this time with humility. As a sign, it said Tzaddok's wife would give birth that day. While they read it, someone ran in with the news of a baby boy. Avigdor regained his wealth and remained humble.
 
-These are Chassidic stories told as tradition. Their details cannot be confirmed historically, but they are told on Chabad.org for what they teach: give with joy, and give with humility.
+A well-known story; its details cannot be confirmed. Both tales are classic Chassidic stories, told on Chabad.org for what they teach: give with joy, and give with humility.
 
 ## What these stories share
 

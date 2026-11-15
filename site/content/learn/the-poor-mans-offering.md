@@ -11,7 +11,7 @@ In the Torah, a poor person could bring a simple offering of fine flour instead 
 
 The book of Leviticus (Vayikra) describes the *minchah* (מִנְחָה), a meal offering of fine flour, which is brought by someone who cannot afford an animal. Chabad.org, in "The Poor Man's Soul" by Rabbi Shimon Posner, points to Rashi on the opening verse. The Torah says "a soul" (*nefesh*, נֶפֶשׁ) when it speaks of one who brings this offering. Rashi, citing the Talmud, explains that the poor man's soul is in his humble offering, and that it is as dear to G-d as that of a person who has given his life.
 
-Another Chabad.org article (KabbalaOnline.org, "Loyal Pigeons and Devoted Doves") describes the Torah's sliding scale: the rich bring a bullock, the average person a flock animal, and the poor a bird, "because G-d does not overload anyone beyond what they can bear." It teaches that the poor man's offering, even a little flour, brings forgiveness and is equally esteemed.
+Another Chabad.org article (KabbalaOnline.org, "Loyal Pigeons and Devoted Doves") describes the Torah's sliding scale: the rich bring a bullock, the average person a flock animal, and the poor a bird, because G-d does not burden anyone beyond what they can bear." It teaches that the poor man's offering, even a little flour, brings forgiveness and is equally esteemed.
 
 ## A true story: the sukkah slats
 

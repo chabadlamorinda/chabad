@@ -11,7 +11,7 @@ A legacy gift is a gift in a will, trust or beneficiary form that helps Jewish l
 
 Chabad.org (Yehuda Mayteles, 2020) tells of Susan Moss of Long Island, then 76. She grew up in Queens in a family that could not afford synagogue membership, so she knew little of Judaism. As a child she followed friends to Hebrew school and listened from the stoop through the open door.
 
-She taught elementary school in New York City for 35 years and lived modestly. When her mother died she left her a small inheritance, which Susan invested and saw grow. About six years before the article, she saw an ad for Torah classes at a nearby Chabad House and went. She felt she had found what she had been looking for. She credits Rabbi Shalom Ber Cohen of Village Chabad in Stony Brook with answering her questions and checking on her when she is ill.
+She taught elementary school in New York City for 35 years. When her mother died she left her a small inheritance, which Susan invested and saw grow. About six years before the article, she saw an ad for Torah classes at a nearby Chabad House and went. She felt she had found what she had been looking for. She credits Rabbi Shalom Ber Cohen of Village Chabad in Stony Brook with answering her questions and coming to help her when she is sick.
 
 In her will she directed that money to promote Jewish continuity. She said, "I am certainly not going to take it with me." And of Chabad, "They offered me a home that I never had."
 
@@ -23,7 +23,7 @@ She told Chabad emissaries not to be afraid to ask supporters about legacy gifts
 
 ## Dr. Marvin and Marsha Frank: "an extension of our house"
 
-The same article tells of a couple from West Orange, New Jersey. Dr. Marvin Frank and Marsha arranged a bequest to Chabad of West Orange to sustain Jewish life beyond their lifetimes. They had noticed a large menorah outside a building, walked in, and found the Chabad center. They became close to the rabbi's family and helped build a new center. Marsha called the shul "an extension of our house" and said that leaving a legacy costs nothing during one's lifetime.
+The same article tells of a couple from West Orange, New Jersey. Dr. Marvin Frank and Marsha arranged a bequest to Chabad of West Orange to sustain Jewish life beyond their lifetimes. They had noticed a large menorah outside a building, walked in, and found the Chabad center. They became close to the rabbi's family and helped build a new center. Marsha said the shul is like "an extension of our house." The article adds that making a bequest costs nothing during the donor's lifetime.
 
 ## What the stories have in common
 
