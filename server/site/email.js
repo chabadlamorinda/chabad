@@ -16,7 +16,7 @@
 // 10. The partners who make everything possible: a live campaign, the Chai Club honor board and joining it, sponsoring
 //     a Kiddush, donating, and a legacy gift. Then sharing and the footer.
 'use strict';
-const { esc, md, plain } = require('./md.js');
+const { esc, md, plain, askRabbi } = require('./md.js');
 const Z = require('./zmanim.js');
 const { portionsOf } = require('./parsha.js');
 const { fmtClock, fullAddress } = require('./content.js');
@@ -208,7 +208,7 @@ ${h2(t('A gift that lasts'))}${p(esc(t('Remember Chabad of Lamorinda in your wil
   // At a glance (top of the Shabbat and holiday editions): candle lighting, Kabbalat Shabbat and the Torah portion
   const glance = edition !== 'message' && sh.candles ? [[t('Candle lighting'), X.tm(sh.candles)], ks ? [t('Kabbalat Shabbat'), fmtClock(ks, L)] : null, parshaName ? [t('Torah portion'), parshaName] : null].filter(Boolean) : null;
   const o = C.org;
-  const html = `<!doctype html><html lang="${L}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(subject)}</title></head>
+  let html = `<!doctype html><html lang="${L}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(subject)}</title></head>
 <body style="margin:0;padding:0;background:${C_BG}"><div style="display:none;max-height:0;overflow:hidden;opacity:0">${esc(preheader)}</div>
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:${C_BG}"><tr><td align="center" style="padding:18px 8px">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" dir="${dir}" style="max-width:620px;text-align:${align}">
@@ -216,11 +216,13 @@ ${h2(t('A gift that lasts'))}${p(esc(t('Remember Chabad of Lamorinda in your wil
 ${edition !== 'message' ? `<p style="margin:10px 0 0;font:italic 34px/1.15 ${SERIF};color:#ffffff">${esc(greeting)}</p>` : ''}${edition !== 'message' && preheader && !glance ? `<p style="margin:8px 0 0;font:14px ${SANS};color:#cdd5e4">${esc(preheader)}</p>` : ''}</td></tr>
 ${glance ? `<tr><td style="padding:0 14px 18px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0"><tr>${glance.map((g, i) => `<td width="${Math.floor(100 / glance.length)}%" valign="top" align="center" style="padding:10px 6px;${i ? 'border-' + (L === 'he' ? 'right' : 'left') + ':1px solid #31456e;' : ''}"><p style="margin:0 0 3px;font:600 11px ${SANS};letter-spacing:.1em;text-transform:uppercase;color:#e9c75a">${esc(g[0])}</p><p style="margin:0;font:600 16px/1.3 ${SERIF};color:#ffffff">${esc(g[1])}</p></td>`).join('')}</tr></table></td></tr>` : ''}</table></td></tr>
 ${rows.join('\n')}
+<tr><td style="padding:6px 22px 14px;text-align:center;font:14px/1.7 ${SANS};color:${C_NAVY}">${esc(t('Questions? Call or text:'))} <a href="tel:${esc(String(o.phone || '').replace(/\D/g, ''))}" style="color:${C_NAVY};font-weight:700">${esc(t('Rabbi Yisroel'))} ${esc(o.phone || '')}</a> · <a href="tel:${esc(String(o.rebbetzinMobile || '').replace(/\D/g, ''))}" style="color:${C_NAVY};font-weight:700">${esc(t('Rebbetzin Tzipora'))} ${esc(o.rebbetzinMobile || '')}</a></td></tr>
 <tr><td style="padding:10px 22px 30px;text-align:center;font:13px/1.6 ${SANS};color:${C_MUTED}">${esc(o.name)} · <span dir="ltr">${esc([o.address.street, o.address.city, o.address.region].filter(Boolean).join(', '))}</span> · <a href="tel:${esc((o.phone || '').replace(/[^0-9+]/g, ''))}" style="color:${C_MUTED}" dir="ltr">${esc(o.phone || '')}</a><br>
 ${esc(t('You are getting this because you signed up at our website.'))} <a href="{{prefs}}" style="color:${C_MUTED}">${esc(t('Email language'))}</a> · <a href="{{unsub}}" style="color:${C_MUTED}">${esc(t('Unsubscribe'))}</a></td></tr>
 </table></td></tr></table>{{open}}</body></html>`;
   tx.unshift(edition === 'message' ? '' : greeting, '');
-  tx.push(`${o.name} · ${o.phone || ''} · ${url('/')}`, `${t('Email language')}: {{prefs}}`, `${t('Unsubscribe')}: {{unsub}}`);
+  tx.push(`${t('Questions? Call or text:')} ${t('Rabbi Yisroel')} ${o.phone || ''} · ${t('Rebbetzin Tzipora')} ${o.rebbetzinMobile || ''}`, `${o.name} · ${o.phone || ''} · ${url('/')}`, `${t('Email language')}: {{prefs}}`, `${t('Unsubscribe')}: {{unsub}}`);
+  html = askRabbi(html, t('Call or message the Rabbi or Rebbetzin'), url('/help/talk-to-the-rabbi'));
   return { subject, preheader, edition, html, text: tx.join('\n').replace(/\n{3,}/g, '\n\n').trim() };
 }
 

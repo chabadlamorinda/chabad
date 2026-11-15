@@ -109,4 +109,14 @@ function withGive(X, body, path) {
   return i < 0 ? body + box : body.slice(0, i) + box + body.slice(i);
 }
 
-module.exports = { giveForm, giveUrl, mountGive, CLUB, medal, withGive, GIVE_ON };
+// A small "keep Judaism alive" reminder about a legacy gift, beside guides about giving and about dying (never a form).
+const LEGACY_SLUG = /tzedakah|giving|legacy|maaser|inherit|will\b|funeral|burial|shiva|dying|end-of-life|hospice|yizkor|kaddish|yahrzeit|donor|charity|mourning|grief/;
+const LEGACY_HELP = new Set(['end-of-life', 'someone-passed-away', 'planning-a-jewish-funeral', 'grief-and-hard-times']);
+const legacyOn = (kind, a) => kind === 'help' ? LEGACY_HELP.has(a.slug) : (a.slug !== 'leaving-a-jewish-legacy-gift' && (a.category === 'Mourning & remembrance' || LEGACY_SLUG.test(a.slug)));
+function legacyAside(X) {
+  const { t } = X, o = X.C.org;
+  return `<aside class="legacy-aside" aria-label="${esc(t('Keep Judaism alive for future generations'))}"><p class="hand">${esc(t('Keep Judaism alive for future generations'))}</p>
+<p>${esc(t('A legacy gift teaches the next generation. Chabad of Lamorinda gratefully accepts bequests, donor-advised fund grants and stock, to fund Jewish education for children and families in Lafayette, Moraga and Orinda for generations.'))}</p>
+<p class="btns"><a class="btn ghost sm" href="/legacy">${esc(t('Leave a legacy'))}</a> <a class="btn ghost sm" href="tel:${esc(String(o.phone || '').replace(/\D/g, ''))}">${esc(t('Call the Rabbi'))}</a></p></aside>`;
+}
+module.exports = { legacyAside, legacyOn, giveForm, giveUrl, mountGive, CLUB, medal, withGive, GIVE_ON };

@@ -68,6 +68,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
 <h1>${esc(h.title)}</h1>
 <div class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${callRow(X)}<a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p>${o.rebbetzinMobile ? `<p class="muted">${esc(t('Or talk privately with Rebbetzin Tzipora Labkowski:'))} <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').call)}" data-lead="consult" data-channel="call" data-who="rebbetzin" dir="ltr">${esc(o.rebbetzinMobile)}</a> · <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="rebbetzin" rel="noopener" target="_blank">WhatsApp</a></p>` : ''}</div>
 ${require('./forms.js').startCard(X, '/help/' + h.slug)}
+${require('./give.js').legacyOn('help', h) ? require('./give.js').legacyAside(X) : ''}
 ${md(h.body)}
 ${extras ? `<div class="grid">${extras}</div>` : ''}
 ${h.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(h.faq)}` : ''}

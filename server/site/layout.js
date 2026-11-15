@@ -47,7 +47,7 @@ function layout(c, { base, indexable, path, title, description, body, ld = [], i
   // Google shows about 60 characters of a title and 160 of a description: add our name only when it fits, and end
   // long descriptions at a word.
   const fullTitle = path === '/' ? `${o.name} | ${t('Jewish Lafayette, Moraga & Orinda')}` : (title.length + o.name.length + 3 <= 65 ? `${title} | ${o.name}` : title);
-  const d0 = String(description || o.description).replace(/\s+/g, ' ').trim(), desc = d0.length <= 160 ? d0 : d0.slice(0, 157).replace(/\s+\S*$/, '') + '…';
+  const d0 = String(description || o.description).replace(/\s+/g, ' ').trim(), d1 = d0.length <= 160 ? d0 : d0.slice(0, 157).replace(/\s+\S*$/, '') + '…', local = t('Serving Lafayette, Moraga & Orinda'), desc = (path !== '/' && !/Lafayette|לאפייט|Лафайетт/.test(d1) && d1.length + local.length + 3 <= 158) ? d1.replace(/[.!?…]?$/, '.') + ' ' + local : d1;
   const img = image ? (image.startsWith('http') ? image : base + image) : base + '/assets/og.png';
   const robots = !indexable || noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1';
   // On mid-size screens (laptops) the header shows the six most used links; the menu button keeps them all.

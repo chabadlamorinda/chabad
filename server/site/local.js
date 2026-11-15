@@ -126,7 +126,7 @@ ${season.length ? guideCards(X, season, t('This season')) : ''}
 ${seriesTiles(X)}
 <div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} guides', { n: list.length }))}</summary><ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${artImg(artFor('learn', a.slug, a.category))}<span>${esc(a.title)}</span></a></li>`).join('')}</ul></details>` : ''}</div>`).join('')}</div>
 <p class="muted" data-filter-empty hidden>${esc(t('Nothing found. Try another word, or ask us.'))} <button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask us'))}</button></p></section>`,
-      ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
+      ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', contentLocation: ['Lafayette', 'Moraga', 'Orinda'].map((n) => ({ '@type': 'City', name: n + ', CA' })), headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
   }));
 
   // Guides connected to an occasion get a "mark it" box (sponsor / Tehillim / Kaddish).
@@ -164,6 +164,7 @@ ${guideCards(X, parts)}
 <p class="lead-d">${esc(a.description)}</p>
 ${ser ? `<p class="series-line"><a href="#series">${esc(t('Part {n} of {total}', { n: ser.i + 1, total: ser.s.guides.length }))} · ${esc(ser.s.title)}</a></p>` : ''}
 ${act ? actionCard(X, topic, a.local || '') : require('./forms.js').startCard(X, '/learn/' + a.slug)}
+${require('./give.js').legacyOn('learn', a) ? require('./give.js').legacyAside(X) : ''}
 ${(() => { // optional "video" (a YouTube link), "audio" (a /media/ file) and "listen" (a link) in the guide's front matter
   const yt = /(?:youtu\.be\/|v=|embed\/)([\w-]{11})/.exec(String(a.video || '')), parts = [];
   if (yt) parts.push(`<h2 class="media-h">${esc(t('Watch how it is done'))}</h2><div class="cmp-video"><iframe src="https://www.youtube-nocookie.com/embed/${yt[1]}" title="${esc(a.title)}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`);

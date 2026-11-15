@@ -5,7 +5,7 @@ category: Jewish ideas
 related: ethical-will, halachic-will, supporting-chabad-of-lamorinda, giving-in-someones-honor, tzedakah
 local: Thinking about including Jewish life in your plans? Talk with the Rabbi: call 925-384-7242.
 ---
-A Jewish legacy gift is a gift to a Jewish cause that you arrange during your lifetime and that takes effect later, most often through a will, a living trust or a beneficiary form. It is a way to keep your values and your care for others alive after you.
+A Jewish legacy gift is a gift to a Jewish cause that you arrange during your lifetime and that takes effect later, most often through a will, a living trust or a beneficiary form. It is a way to keep your values and your care for others alive after you, and to give the next generation what you were given: a Jewish education.
 
 ## What a legacy gift is
 
@@ -15,11 +15,13 @@ You do not give anything away today. You write down your wishes so that, in time
 - **As a beneficiary of a retirement account,** such as an IRA or 401(k), usually by filling in a form with the institution that holds the account.
 - **As a beneficiary of life insurance, an annuity, or a donor-advised fund.**
 
-Chabad.org notes that a bequest in a will can be changed if your family's situation changes, and that it does not touch your cash flow while you are alive. It also urges people to work with an experienced estate attorney and to talk with family and a financial advisor. This guide is not legal or tax advice; please ask your attorney and your tax advisor.
+Chabad of Lamorinda accepts all of these, and also accepts donor-advised fund grants and gifts of stock now, during your lifetime. Chabad.org notes that a bequest in a will can be changed if your family's situation changes, and that it does not touch your cash flow while you are alive. It also urges people to work with an experienced estate attorney and to talk with family and a financial advisor. This guide is not legal or tax advice; please ask your attorney and your tax advisor.
 
 ## The Jewish meaning of leaving something behind
 
 Judaism has always cared about what we hand on. Chabad.org presents a planned gift as a contribution to the continuity of the Jewish people and to keeping Torah teachings alive for the next generations. Tzedakah (צְדָקָה) means "justice," and a gift in a will is one more way of doing what is right, even when we are no longer here to do it ourselves. See [Tzedakah](/learn/tzedakah).
+
+For Chabad of Lamorinda, a legacy gift is education for future generations: Jewish education for children and families in Lafayette, Moraga and Orinda, the preschool, the Hebrew school and every Shabbat table. It is how Judaism stays alive here after we are gone.
 
 A gift can also carry a name. Many people choose to dedicate it in memory of a parent or spouse. See [Giving in Someone's Honor or Memory](/learn/giving-in-someones-honor).
 
@@ -34,7 +36,7 @@ If you would like your estate to follow Jewish law for your heirs, that is a sep
 1. **Think about what matters most to you.** Which causes, which people, which values?
 2. **Talk with your family.** Chabad.org advises discussing your wishes with family, so they hear them from you.
 3. **Meet your attorney and financial advisor.** They know the forms and the details.
-4. **Tell the Rabbi, if you wish.** For Chabad of Lamorinda, the [legacy page](/legacy) lists ways to include it in your plans, and the Rabbi would be honored to hear what matters to you. Call 925-384-7242 or [talk with the Rabbi](/help/talk-to-the-rabbi).
+4. **Tell the Rabbi, if you wish.** For Chabad of Lamorinda, the [legacy page](/legacy) lists ways to include it in your plans, and the Rabbi would be honored to hear what matters to you. Call Rabbi Labkowski at 925-384-7242 (the Rebbetzin, Tzipora Labkowski, is at 925-384-7241) or [talk with the Rabbi](/help/talk-to-the-rabbi).
 
 ## Common questions
 
@@ -42,7 +44,7 @@ If you would like your estate to follow Jewish law for your heirs, that is a sep
 It is a gift you arrange now that takes effect later, usually through a will, a living trust or a beneficiary form. You keep everything during your lifetime.
 
 ### Can I leave a gift to Chabad of Lamorinda in my will?
-Yes. The [legacy page](/legacy) describes ways to do this, including a will, a trust, a retirement account, life insurance or a donor-advised fund. Talk to your attorney, and call Rabbi Labkowski at 925-384-7242.
+Yes. The [legacy page](/legacy) describes ways to do this, including a will, a trust, a retirement account, life insurance, a donor-advised fund or stock. Chabad of Lamorinda accepts donor-advised fund grants and gifts of stock, and your gift goes to Jewish education for the next generation. Talk to your attorney, and call Rabbi Labkowski at 925-384-7242.
 
 ### What is an ethical will?
 It is a letter that passes on your values, memories and blessings. See [An Ethical Will](/learn/ethical-will). It is a separate thing from a legal will.

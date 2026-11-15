@@ -1013,3 +1013,7 @@ html { scroll-padding-top: 84px; }
 @media print { .flyer { padding: 14px 24px 10px; border-top-width: 6px; } .fl-invite { font-size: 1.5rem; margin-top: 8px; } .flyer h1 { font-size: 2.1rem; margin: 2px 0 8px; } .fl-img { max-height: 190px; margin-bottom: 8px; } .fl-facts p { font-size: 1.05rem; } .fl-sum { font-size: 1rem; margin-bottom: 8px; } .fl-qr { margin: 8px 0; padding: 8px; } .fl-code { width: 120px; height: 120px; } .fl-foot { margin-top: 8px; padding-top: 6px; } }
 
 a.ask-rabbi { text-decoration: underline dotted var(--gold-ink, #8a6a1f); text-underline-offset: 3px; }
+
+.legacy-aside { margin: 16px 0; padding: 14px 16px; border: 1px solid var(--line); border-inline-start: 4px solid var(--gold); border-radius: 12px; background: var(--card); font-size: .95rem; }
+.legacy-aside p { margin: 0 0 8px; } .legacy-aside .hand { font-size: 1.25rem; color: var(--gold-ink); }
+@media (min-width: 1000px) { .legacy-aside { float: inline-end; width: 270px; margin: 4px -300px 16px 20px; } [dir=rtl] .legacy-aside { margin: 4px 20px 16px -300px; } }
