@@ -27,12 +27,12 @@ In Chabad custom, the band plays a solemn melody composed by Rabbi Schneur Zalma
 
 Chabad.org gives several meanings:
 
-- **Inner beauty.** The groom shows that he is committed to the bride's inner self, not only to the outward beauty that fades. The groom promises to love even the parts of her personality that are hidden from him.
+- **Inner beauty.** The groom shows that he is committed to the bride's inner self, not only to the outward beauty that fades.
 - **Modesty and dignity.** The veil expresses modesty and the dignity of a married woman.
 - **Devotion.** It signifies the bride's commitment to keep her beauty for her husband.
 - **The ring.** Under the chuppah the bride should not see the ring, so that she cannot judge its value and base her decision on a mistaken assumption.
 
-Some rabbis of earlier generations even saw the veiling as an act of marriage itself; today most see it as a beautiful tradition, but performing it satisfies all opinions about the chuppah. Chabad.org also notes that communities differ on details, so ask the Rabbi what will be done at your wedding.
+Some rabbis of earlier generations even saw the veiling as a legal part of the chuppah itself; most authorities today see it as a beautiful tradition. Customs differ on the details, so ask the Rabbi what will be done at your wedding.
 
 ## Common questions
 

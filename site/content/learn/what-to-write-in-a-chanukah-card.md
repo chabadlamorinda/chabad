@@ -33,7 +33,7 @@ Chabad.org's Chanukah e-cards show what the holiday inspires, with titles such a
 - "Sending you light and sweetness this Chanukah. So glad you are our neighbor."
 
 **For someone who lives far away:**
-- "We lit a candle for you tonight. Wishing you a Chanukah full of light. Chanukah sameach!"
+- "We thought of you as we lit the menorah tonight. Wishing you a Chanukah full of light. Chanukah sameach!"
 
 **For coworkers and clients:**
 - "Wishing you and your family a Happy Chanukah."
@@ -67,7 +67,7 @@ Both are correct. Chanukah is preferred by Ashkenazim, and Hanukkah is more comm
 ### What should I write to a coworker?
 Keep it simple and warm: "Wishing you a Happy Chanukah," or a line about light and joy. That works in all settings.
 
-### Where can I find Chanukah cards or gelt in Lafayette, Moraga or Orinda?
+### Where can I find Chanukah gelt and supplies in Lafayette, Moraga or Orinda?
 Bay Kosher, a project of Chabad of Lamorinda, is the local source for Chanukah and kosher items. See [Chanukah shopping in Lamorinda](/learn/chanukah-shopping-in-lamorinda).
 
 ## Take the next step

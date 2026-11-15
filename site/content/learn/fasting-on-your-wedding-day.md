@@ -11,8 +11,8 @@ Many Jewish brides and grooms fast on their wedding day because it is considered
 
 Chabad.org says the wedding-day fast is not mentioned in the Talmud, but it is an ancient tradition, and it applies to a first marriage and to a remarriage. It has two reasons:
 
-1. **Forgiveness and a fresh start.** Tradition teaches that a bride and groom are forgiven for their past on their wedding day. So the day becomes a time of self-reflection, like Yom Kippur. The fast, the white clothing and the confessions (*vidui* and *al chet*) said in the day's prayers all express this. See [Yom Kippur](/holidays/yom-kippur) and [Teshuvah](/learn/teshuvah) to understand the idea of returning and starting over.
-2. **No drinking before the wedding.** The Sages wanted to prevent drinking before the ceremony, when relatives toast the couple's future. Chabad.org contrasts this with the "stag nights" common in many cultures.
+1. **Forgiveness and a fresh start.** Tradition teaches that a bride and groom are forgiven for their past on their wedding day. So the day becomes a time of self-reflection, like Yom Kippur. The fast and the confessions (*vidui* and *al chet*) said in the day's prayers all express this. See [Yom Kippur](/holidays/yom-kippur) and [Teshuvah](/learn/teshuvah) to understand the idea of returning and starting over.
+2. **No drinking before the wedding.** The Sages wanted to prevent drinking before the ceremony, when relatives toast the couple's future.
 
 ## When does the fast begin and end?
 

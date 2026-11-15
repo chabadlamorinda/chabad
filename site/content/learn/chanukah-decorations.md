@@ -49,7 +49,7 @@ Electric menorahs are acceptable for display only. A real flame menorah must als
 They can make a dreidel, a menorah craft, an apron, coloring pages or potato-stamp wrapping paper. See [Chanukah crafts for kids](/learn/chanukah-crafts-for-kids).
 
 ### Are there any rules for the height of a window menorah?
-Chabad.org says a window menorah should be no higher than about 29 feet (20 cubits) above street level, so it can be seen from the street.
+Chabad.org says a window menorah should be no higher than 20 cubits, about 30 feet, above street level, so it can be seen from the street.
 
 ### Where can I find a menorah in Lafayette, Moraga or Orinda?
 Bay Kosher, a project of Chabad of Lamorinda, is the local source for Chanukah and kosher items. See [Chanukah shopping in Lamorinda](/learn/chanukah-shopping-in-lamorinda) or call 925-384-7242.

@@ -15,21 +15,20 @@ Chabad.org explains that a Jewish marriage has two parts: kiddushin (betrothal) 
 
 Chabad.org gives these requirements:
 
-- **It belongs to the groom.** The ring must belong exclusively to the groom as his gift to the bride. If parents buy it, it must be given to the groom as an unconditional gift before the chuppah. Using the bride's own engagement ring is discouraged. A borrowed ring can be used if the bride knows it is borrowed and it is returned after the wedding, but ask the Rabbi first.
+- **It belongs to the groom.** The ring must belong exclusively to the groom as his gift to the bride. If parents buy it, it must be given to the groom as an unconditional gift before the chuppah. Using the bride's own engagement ring is discouraged. Chabad.org says a groom may borrow a ring on condition that he returns it after the wedding, but this has details, so speak to the Rabbi before using one.
 - **Plain metal, usually gold.** The band should be plain, preferably gold. In some circles silver is customary.
 - **No stones, no inscription.** It should be a smooth, unbroken circle. The reason is so that the bride cannot be misled about its value, and so that the marriage is not based on a misunderstanding. A diamond ring may be given later, for example in the yichud room.
-- **Real value.** She only needs to know it is worth at least a *perutah*, a very small coin.
+- **Real value.** It must be worth something, though Jewish law asks only for a small amount, the value of a *perutah*, a tiny coin.
 
 ## Which finger does it go on?
 
-Chabad.org says the groom puts the ring on the bride's index finger, not the ring finger. Two reasons are given: it is easier to show to the witnesses, and the index finger is the most active one. After the ceremony she can move it to the ring finger. Nothing should come between her finger and the ring, so no glove.
+Chabad.org says the groom puts the ring on the bride's index finger, not the ring finger. One reason given is that she can more easily show the witnesses that she received the ring; another view holds that the index finger was once the ring finger, and the custom stayed. After the ceremony she can move it to the ring finger.
 
 ## How does it go, step by step?
 
-1. The ring is brought to the rabbi, who checks it.
-2. The groom says the formula first, then places the ring.
-3. Two designated witnesses watch the ring being given and hear his words.
-4. The bride's silent acceptance completes it. Customarily the bride lifts her veil at this point (see [The bedeken](/learn/bedeken)), though in some Chassidic communities she keeps it down until after the nuptials.
+1. The groom says the formula first, then places the ring.
+2. Two designated witnesses watch the ring being given and hear his words.
+3. The bride's silent acceptance completes it. Customarily the bride lifts her veil at this point (see [The bedeken](/learn/bedeken)), though in some Chassidic communities she keeps it down until after the nuptials.
 
 The bride should not give the groom a ring under the chuppah. If they wish, it can be given later. There are no rules for a groom's own ring, because it is not part of the ceremony. Chabad.org adds that the bride and groom wear no jewelry to the chuppah.
 
@@ -45,7 +44,7 @@ Gold is preferred, and some customarily use silver. Ask the Rabbi about your cho
 
 ### Why is the ring put on the index finger?
 
-It makes it easier for the witnesses to see, and it is the most active finger. She may move it afterward.
+It makes it easier to show the witnesses that she received the ring. She may move it afterward.
 
 ### Can the bride give the groom a ring under the chuppah?
 

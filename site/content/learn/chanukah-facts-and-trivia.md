@@ -18,8 +18,8 @@ Here are 18 Chanukah facts, drawn from Chabad.org, that surprise even people who
 ## Dates and lighting
 
 6. **Any day but Tuesday.** Most holidays begin on only four days of the week. Because the month of Cheshvan can have 29 or 30 days, Chanukah can start on any day except Tuesday. See [why Chanukah's date changes](/learn/why-chanukah-changes-dates).
-7. **Light after dark.** Candles must burn after nightfall, because they bring light into darkness, and be lit early enough for people to see them, because their purpose is to publicize the miracle.
-8. **Doorway or window?** Outside Israel, the most common custom is a window. In Mishnaic times the menorah was placed outside, on the left of the entrance, with the mezuzah on the right. Chabad prefers the doorway, so one is surrounded by holiness.
+7. **Light after dark.** Many communities, Chabad among them, light shortly after sunset; others light after nightfall. Either way, the menorah needs enough fuel to burn at least half an hour after nightfall, because its purpose is to bring light into the darkness and publicize the miracle.
+8. **Doorway or window?** Some place the menorah at a window. Others, Chabad among them, light it inside, in a doorway. In Talmudic times it stood at the entrance to the courtyard, on the left, with the mezuzah on the right, making a doorway full of mitzvahs.
 9. **Straight line.** The flames must be level, each clearly distinct, not arranged in a semicircle or unevenly. See [the Chanukah menorah](/learn/chanukah-menorah).
 10. **Nine flames.** The menorah holds nine flames, because the shamash, the helper light, lights the others and sits apart. Read about [the shamash](/learn/what-is-the-shamash).
 
@@ -27,7 +27,7 @@ Here are 18 Chanukah facts, drawn from Chabad.org, that surprise even people who
 
 11. **"Menorah" means lamp.** The Temple had a seven-branched gold candelabrum, kindled daily, and its oil miracle inspired the Sages to establish Chanukah.
 12. **One per person or one per home.** Some Sephardic communities use one menorah per household, so the number of lit candles is visible at a glance. Ashkenazim customarily have one per person.
-13. **A Modern Hebrew word.** Speakers say *hanukkiah* for the Chanukah lamp, a word coined by Hemda Ben Yehudah (1873 to 1951).
+13. **A Modern Hebrew word.** Speakers say *hanukkiah* for the Chanukah lamp, a modern term Chabad.org attributes to Hemda Ben Yehudah (1873 to 1951).
 14. **The Israeli dreidel.** In Israel, the dreidel's shin (ש) is replaced by pey (פ), so it says "a great miracle happened here." The four letters add up to 138, the value of *tzemach*, a name for the Messiah. See [Chanukah in Israel](/learn/chanukah-in-israel).
 
 ## Foods and the modern world

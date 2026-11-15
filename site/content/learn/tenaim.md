@@ -19,7 +19,7 @@ Why have an engagement period at all? Chabad.org says it shows that marriage is 
 
 1. **Writing.** The document is written, ideally under a rabbi's supervision.
 2. **The kinyan.** To make the commitments binding, a "handkerchief transaction" (kinyan sudar) is done: one person holds up a garment or cloth, often a kippah, as a token of the commitment. The bride, groom, parents and guarantors each take part in the standard version.
-3. **Reading.** The document is traditionally read aloud, often by the rabbi, who may be honored with the reading, and often in Hebrew and English.
+3. **Reading.** The document is traditionally read aloud, and in many communities the rabbi is honored with the reading.
 4. **Signing.** Two witnesses sign, and copies are given to the sides.
 5. **The plate.** A plate wrapped in a cloth is broken.
 
@@ -36,7 +36,7 @@ Typically the mothers of the bride and groom break the plate together. Chabad.or
 
 Chabad.org describes two customs. In one, the document is completed and signed at an engagement party, sometimes called a "Tenaim" or "Vort." In the other, only a symbolic kinyan is done at the engagement, and the document is signed on the wedding day, usually at the reception before the chuppah. In that case the plate may be broken twice, once after the kinyan and once at the wedding.
 
-Chabad.org also says that outside Chassidic circles and some European families, tenaim are often skipped. For the wedding checklist, tenaim are needed only if you follow the custom. Ask the Rabbi what he recommends for your family.
+Not every community writes tenaim: Chabad.org notes that in Moroccan Jewish tradition, for example, no engagement contract is written and the commitments are included in the ketubah. For the wedding checklist, tenaim are needed only if you follow the custom. Ask the Rabbi what he recommends for your family.
 
 ## Common questions
 
@@ -54,7 +54,7 @@ It shows that the commitment is final and tempers the joy by recalling Jerusalem
 
 ### Are tenaim required for a Jewish wedding?
 
-No. They are a custom, and many couples skip them. Ask the Rabbi whether to include them.
+No. They are a custom, and not every community follows it. Ask the Rabbi whether to include them.
 
 ### What is the kinyan at the tenaim?
 
@@ -62,7 +62,7 @@ A symbolic exchange, usually holding a kippah or handkerchief, that makes the pr
 
 ### Is a plate also broken at the wedding?
 
-At the wedding the groom breaks a glass. Chabad.org notes that the plate and the glass bracket the ceremonies.
+At the wedding the groom breaks a glass. If the tenaim are signed on the wedding day, a plate may also be broken at the reception before the chuppah.
 
 ## Take the next step
 

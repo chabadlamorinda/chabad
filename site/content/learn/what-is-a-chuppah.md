@@ -23,7 +23,7 @@ This custom is not followed for a couple where either has been married before. I
 
 ## Who stands under the chuppah?
 
-Only the bride and groom are required to stand under it. The rabbi, the witnesses, the cantor and the parents do not have to be under the canopy, although many couples invite their parents and honored guests to stand nearby. A portable chuppah can be raised after the ketubah is read, just before the seven blessings, which many find especially meaningful for guests to see.
+Only the bride and groom are required to stand under it. The rabbi, the witnesses, the cantor and the parents do not have to be under the canopy, although many couples invite their parents and honored guests to stand nearby. A portable chuppah can be raised after the ketubah is read, just before the seven blessings.
 
 ## What does the chuppah teach about marriage?
 

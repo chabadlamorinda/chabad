@@ -11,11 +11,11 @@ Yichud (יחוד, "togetherness" or "seclusion") is the few private minutes that
 
 When the seven blessings under the chuppah are finished and the glass is broken, the couple does not go straight to the party. They are brought to a private room, the "yichud room." Chabad.org explains that this is the final act of the chuppah. In Jewish law it is not just a nice custom: it completes the marriage and must be witnessed.
 
-Chabad.org also describes it as the end of a life of being alone, and as the couple's first moments together in private as husband and wife. Moving the bride into her husband's home is a sign of marriage, and yichud completes that picture.
+It is the couple's first time together in private as husband and wife. Moving the bride into her husband's home is a sign of marriage, and yichud completes that picture.
 
 ## Who are the witnesses?
 
-Two qualified witnesses, specifically appointed for this role, walk the couple to the room, check that nobody else is inside, and see that the door is closed and locked. They then wait outside during the time of seclusion. Chabad.org says they should be Torah-observant adult Jewish men who are not related to the bride or groom or to each other. The witnesses who stood under the chuppah for the ring are usually the ones who do this.
+Two qualified witnesses, specifically appointed for this role, walk the couple to the room, check that nobody else is inside, and see that the door is closed and locked. They then wait outside during the time of seclusion. Chabad.org says they should be Torah-observant adult Jewish men who are not related to the bride or groom or to each other. The same two witnesses may serve for the ring and for yichud, though families often honor different people with each role.
 
 ## How long does yichud last?
 
