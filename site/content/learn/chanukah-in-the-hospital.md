@@ -1,6 +1,6 @@
 ---
 title: Chanukah in the Hospital: Lighting the Menorah for a Patient or Family
-description: How to keep Chanukah when you or a loved one is in the hospital: why flames are not allowed, what to do instead, and how to bring light to a hospital room.
+description: Chanukah when you or a loved one is in the hospital: why flames are not allowed, what to do instead and how to bring light to the room.
 category: Shabbat & holidays
 related: shabbat-in-the-hospital, hospital-stay-in-contra-costa, bikur-cholim, chanukah-away-from-home, chanukah-in-senior-living
 local: If you or someone you love is in the hospital, Rabbi and Rebbetzin Labkowski visit the sick. Call 925-384-7242 or see /help/talk-to-the-rabbi.

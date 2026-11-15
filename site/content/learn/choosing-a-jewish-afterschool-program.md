@@ -13,31 +13,31 @@ After school, children are tired but curious. A Jewish program can use those hou
 
 ## A checklist: what to look for
 
-### 1. The people
+**1. The people**
 - **Warm, caring staff.** Watch how adults speak with children. Chabad.org, in its discussion of teachers, stresses careful, patient educators who are skilled at what they teach, and encourages keeping children included rather than pushing them away.
 - **Enough adults.** Ask about the number of children per adult.
 - **Background checks and first aid training.** These are fair questions to ask any program.
 - **Open communication.** Can you reach someone easily? Do you get updates?
 
-### 2. Safety and routine
+**2. Safety and routine**
 - **Safe pickup and drop-off.** Who may pick up your child, and how is that checked?
 - **A clear daily schedule.** Snack, homework, activity, free play.
 - **Allergy and health plans.** Tell the director about allergies in writing.
 
-### 3. Homework and learning
+**3. Homework and learning**
 - **Homework help.** A quiet time and a helper for questions.
 - **Enrichment.** Sports, science, art and drama keep afternoons rich.
 
-### 4. Kosher food
+**4. Kosher food**
 - If your family keeps kosher, ask whether all food is kosher and under whose supervision. See [kosher in Lamorinda](/learn/kosher-in-lamorinda) and the local program [Bay Kosher](/programs/bay-kosher).
 - Ask what happens with food that families send. For halachic questions, ask the Rabbi.
 
-### 5. Jewish content
+**5. Jewish content**
 - **Natural, not forced.** Look for a program where Jewish songs, holidays, stories, Hebrew and Shabbat are part of the day.
 - **Welcoming to every family.** Children come with different backgrounds. A good program welcomes them all and does not make anyone feel behind.
 - **Values.** Kindness, respect and responsibility, taught by example.
 
-### 6. Fit for your child
+**6. Fit for your child**
 - **Visit first.** Watch an afternoon if you can, and let your child see it.
 - **Ask your child what they enjoy.** Some children love sports, others art and quiet.
 - **Check the hours and the age range** against your family's schedule.

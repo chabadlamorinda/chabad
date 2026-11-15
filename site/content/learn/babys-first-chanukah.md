@@ -1,6 +1,6 @@
 ---
 title: Baby's First Chanukah: Simple Traditions for New Parents
-description: Your baby's first Chanukah: how to light the menorah with a newborn, simple traditions, safety tips and songs for new parents in Lafayette, Moraga and Orinda.
+description: Your baby's first Chanukah: how to light the menorah with a newborn, simple traditions, safety tips and songs for new parents in Lamorinda.
 category: Shabbat & holidays
 related: new-parents-in-lamorinda, holidays-with-toddlers, chanukah-for-kids, getting-ready-for-chanukah, light-up-lafayette
 local: New baby, first Chanukah? Meet other young families at Chabad of Lamorinda. See /events or call 925-384-7242.

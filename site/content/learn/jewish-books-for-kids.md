@@ -1,6 +1,6 @@
 ---
 title: Jewish Books for Kids: How to Build a Home Library Children Love
-description: How to build a Jewish children's library at home: holiday books, parsha stories, Chassidic tales, Hebrew primers and prayer books. Ask Chabad of Lamorinda.
+description: How to build a Jewish children's library at home: holiday books, parsha stories, Chassidic tales, Hebrew primers, prayer books. Ask Chabad of Lamorinda.
 category: Jewish home
 related: jewish-home-library, parsha-for-kids, jewish-kids-in-lamorinda, jewish-learning-at-home-with-kids, teaching-kids-the-aleph-bet
 local: Not sure which books suit your child's age? Call Rabbi Labkowski at 925-384-7242 and ask.

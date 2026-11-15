@@ -1,6 +1,6 @@
 ---
 title: Chanukah in Senior Living and Care Homes: Lighting When Open Flames Are Not Allowed
-description: Can you light a Chanukah menorah in assisted living or a care home that bans flames? Safe options, what an electric menorah does and does not do, and who to ask.
+description: Can you light a Chanukah menorah in assisted living or a care home that bans flames? Safe options, electric menorahs and who to ask.
 category: Shabbat & holidays
 related: bringing-chanukah-to-the-homebound, jewish-life-in-senior-living-lamorinda, chanukah-menorah, jewish-seniors-in-lamorinda, caring-for-aging-parents
 local: Rabbi and Rebbetzin Labkowski visit care facilities. To ask about Chanukah for your parent or yourself, see /help/help-for-seniors-and-families or call 925-384-7242.

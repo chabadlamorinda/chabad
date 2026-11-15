@@ -13,26 +13,26 @@ Children usually ask when they notice something different: a holiday, a classmat
 
 ## Honest answers by age
 
-### Ages 3 to 6: belonging and joy
+**Ages 3 to 6: belonging and joy**
 Little children understand family, stories and fun. You might say:
 
 *"We are Jewish because our family is part of the Jewish people. We celebrate Shabbat and holidays together, we do kind things, and G-d loves every one of us."*
 
 Then show them: light Shabbat candles, taste honey on Rosh Hashanah, shake a lulav. For young children, Chabad.org stresses real, joyful experiences over explanations.
 
-### Ages 7 to 10: the chain and the stories
+**Ages 7 to 10: the chain and the stories**
 Children this age love stories, and they love to know where they come from. You can say:
 
 *"Our family is part of a very long chain. Abraham and Sarah began it thousands of years ago, and every generation passed it on to the next, all the way to you. Being Jewish means we have special things to do, like Shabbat, tzedakah and kindness, and each of us has a unique job to make the world better."*
 
 Name grandparents and great-grandparents, and share what you know of your family's story. Pictures help.
 
-### Ages 11 to 13: soul and mission
+**Ages 11 to 13: soul and mission**
 Preteens can think deeper. You can explain the Chassidic idea that every Jewish person has a soul (*neshamah*, נְשָׁמָה) that is a spark of G-d, and that we are connected to every Jew through that soul. Judaism is inherited, like a family treasure we receive and carry forward: you do not earn it, you are born into it, and you choose how to live it.
 
 Add that mitzvot are how we use that soul: each mitzvah, whether a Shabbat candle or an act of kindness, adds light. Preparing for [Bar or Bat Mitzvah](/learn/bar-mitzvah) is a natural moment for this talk.
 
-### Teens: honesty and choice
+**Teens: honesty and choice**
 Teens want real answers and respect for their questions. Listen first. Tell the truth, including that you struggle with some things too. See our guide [Jewish identity for teens](/learn/jewish-identity-for-teens) and [why be Jewish](/learn/why-be-jewish).
 
 ## How a child is Jewish

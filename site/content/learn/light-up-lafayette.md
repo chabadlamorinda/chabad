@@ -1,6 +1,6 @@
 ---
 title: Light Up Lafayette: What to Expect at the Grand Chanukah Menorah Lighting
-description: What to expect at Lafayette's Grand Chanukah Menorah Lighting, Sunday, Dec. 6 at 4:00 PM at Lafayette Plaza Park: free, with a gelt drop, donuts and cocoa.
+description: What to expect at Lafayette's Grand Chanukah Menorah Lighting, Sunday, Dec. 6 at 4:00 PM at Lafayette Plaza Park: free, with gelt drop, donuts and cocoa.
 category: Lamorinda
 related: public-menorah-lighting, chanukah-in-lamorinda, getting-ready-for-chanukah, chanukah-for-kids, getting-involved-in-jewish-lamorinda
 local: Come to Light Up Lafayette and bring a friend. Sign up at /events/chanukah-grand-menorah-lighting-2026 or call 925-384-7242.

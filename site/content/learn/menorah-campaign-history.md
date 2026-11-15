@@ -53,7 +53,7 @@ So that every Jewish family can light the menorah on all eight nights, and so th
 Chabad.org records that in 1979 President Jimmy Carter lit Chabad's giant menorah outside the White House.
 
 ### Why is a Chabad menorah built with straight arms?
-Chabad-style menorahs have straight arms, a shape that goes back to the way the Temple's menorah is understood in Chabad teaching. For more, read our guide to the [Chanukah menorah](/learn/chanukah-menorah), or ask the Rabbi.
+Chabad-style menorahs have straight arms. For more, read our guide to the [Chanukah menorah](/learn/chanukah-menorah), or ask the Rabbi.
 
 ### Is there a public menorah lighting near Lafayette, Moraga and Orinda?
 Yes. Light Up Lafayette is on Sunday, December 6, 2026 at 4:00 PM at Lafayette Plaza Park. It is free and open to everyone.

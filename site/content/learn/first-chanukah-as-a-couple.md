@@ -1,6 +1,6 @@
 ---
 title: Your First Chanukah as a Married Couple: Lighting Together and Starting Traditions
-description: Newly married? How to light your first Chanukah menorah as a couple, who lights, what to buy and how to build lasting traditions in Lafayette, Moraga or Orinda.
+description: Newly married? How to light your first Chanukah menorah as a couple, who lights, what to buy and how to start traditions in Lamorinda.
 category: Shabbat & holidays
 related: first-year-of-marriage, chanukah-menorah, shalom-bayit, women-and-chanukah, getting-ready-for-chanukah
 local: Newly married in Lafayette, Moraga or Orinda? Meet other couples and ask the Rabbi anything. Call 925-384-7242.

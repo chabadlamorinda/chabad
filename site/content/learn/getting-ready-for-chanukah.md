@@ -1,6 +1,6 @@
 ---
 title: Getting Ready for Chanukah: A Checklist for the Week Before
-description: What do you need for Chanukah? A simple checklist for the week before: menorah, candles or oil, Friday plan, gelt, food, invitations and Light Up Lafayette.
+description: What do you need for Chanukah? A checklist for the week before: menorah, candles or oil, Friday plan, gelt, food, invitations and Light Up Lafayette.
 category: Shabbat & holidays
 related: chanukah-shopping-in-lamorinda, chanukah-menorah, menorah-oil-and-candles, chanukah-night-by-night, light-up-lafayette
 local: Stuck on a menorah, candles or a question? Call Rabbi Labkowski at 925-384-7242, or shop at Bay Kosher at /programs/bay-kosher.

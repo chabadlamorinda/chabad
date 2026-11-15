@@ -1,6 +1,6 @@
 ---
 title: Teaching Kids the Blessings on Food: Which Blessing for What, Made Simple
-description: Teach kids which blessing to say before eating: bread, cake, fruit, vegetables and everything else. A simple chart, tips and games. Ask Chabad of Lamorinda.
+description: Teach kids which blessing to say before eating: bread, cake, fruit, vegetables and the rest. A simple list, tips and games. Ask Chabad of Lamorinda.
 category: Prayer & Torah
 related: blessings, blessings-after-food, teaching-children-to-pray, first-mitzvot-for-young-children, birkat-hamazon
 local: Want a blessings card for your child's lunchbox or fridge? Call Rabbi Labkowski at 925-384-7242.

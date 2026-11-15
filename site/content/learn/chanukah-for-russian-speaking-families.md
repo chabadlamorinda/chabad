@@ -1,6 +1,6 @@
 ---
 title: Chanukah for Russian-Speaking Jewish Families: From Hidden Memories to Lighting in the Open
-description: Chanukah for Jewish families from the former Soviet Union: a story of a menorah lit in a Soviet prison, how to light today, and a welcome in Russian in Lamorinda.
+description: Chanukah for Jewish families from the former Soviet Union: a menorah lit in a Soviet prison, how to light today, and a Russian welcome in Lamorinda.
 category: Shabbat & holidays
 related: russian-speaking-jews-in-lamorinda, soviet-jewry-history, chanukah-menorah, chanukah-story, light-up-lafayette
 local: Russian-speaking families in Lafayette, Moraga and Orinda are warmly welcome. This website is in Russian; call 925-384-7242 or see /events.

@@ -21,7 +21,7 @@ Chabad.org lists several old and new traditions. Here they are, with ways to mak
 2. **Gelt with a purpose.** Gelt rewards learning and teaches giving. Let each child set aside part for tzedakah. See [Chanukah gelt](/learn/chanukah-gelt).
 3. **A dreidel tournament.** A nightly game, with a trophy that passes from year to year. See [dreidel](/learn/dreidel) and the [dreidel game](/dreidel) online.
 4. **A public lighting.** Chabad.org notes that large public menorah lightings, with music, treats and local leaders, have been held in many cities since the 1970s. Make it your yearly outing. It does not replace lighting at home.
-5. **A relaxed time for women.** Chabad tradition is that women refrain from housework while the candles burn, so use that half hour for stories, singing and being together.
+5. **A relaxed time for women.** Tradition is that women refrain from housework while the candles burn, so use that half hour for stories, singing and being together.
 6. **Share the light.** Take a menorah, treats and cards to someone who may be alone. See [Chanukah mitzvah projects for kids](/learn/chanukah-mitzvah-projects-for-kids).
 7. **A dairy party.** A festive meal is a nice mitzvah, and many serve dairy foods. See [hosting a Chanukah party](/learn/hosting-a-chanukah-party).
 8. **Fried foods.** Latkes and sufganiyot remind us of the oil. Let the kids make them. See [Chanukah foods](/learn/chanukah-foods).
@@ -31,7 +31,7 @@ Chabad.org lists several old and new traditions. Here they are, with ways to mak
 - **Everyone lights their own.** Many families give each child a menorah. Ask the Rabbi about your family's custom; see [Chanukah for kids](/learn/chanukah-for-kids).
 - **A story each night.** Take turns reading or telling one, perhaps a family story or one from our [Chanukah bedtime stories](/learn/chanukah-bedtime-stories).
 - **A guest each night or two.** A neighbor, friend or someone alone. The menorah is meant to be shared.
-- **A window photo.** Take a picture of your menorah each year, lined up on a shelf to show how the children have grown.
+- **A yearly photo.** Take a picture of the family by the menorah each year, and see how the children grow.
 - **A blessing for each child.** Put a hand on each child's head and bless them. See [blessing your children](/learn/blessing-your-children).
 - **A family tzedakah box.** One box, filled across the eight nights, and the family chooses together where it goes.
 
