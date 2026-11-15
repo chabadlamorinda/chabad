@@ -15,7 +15,7 @@ Chapter 41 of the Tanya says that before a mitzvah, and before Torah study, a pe
 
 Chapter 41 then applies this to the morning. Before prayer, a person recites the morning blessing that thanks G-d for the soul, acknowledging that the soul was given by Him and will one day be taken back, and offers it back to be united with G-d's oneness. The chapter says prayer itself should begin with that same readiness to give one's soul to G-d. See [Modeh Ani](/learn/modeh-ani) for the first words many people say on waking.
 
-## Love and awe, like two wings
+This is part of the Tanya's answer to the verse it is built on: "For the matter is very near to you, in your mouth and in your heart, that you may do it" (Deuteronomy 30:14). Chapter 41 teaches that serving G-d from the heart, with love and awe, is within simple reach, and Chapter 17 explains why: the mind is under our control even when the heart is not. You do not need to feel inspired before you pray; you can begin by thinking, and let the heart follow.
 
 The same chapter compares serving G-d to a bird. Love is one wing and awe is the other, and without both the bird cannot fly. Love alone, the Alter Rebbe says, is not enough before a positive mitzvah. Awe is also needed, felt in the heart or at least held in the mind.
 

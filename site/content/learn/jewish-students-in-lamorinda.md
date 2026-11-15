@@ -33,7 +33,7 @@ High Holiday services need no tickets. [Reserving a seat](/forms/high-holidays) 
 
 ## Learning, questions and a Rabbi to talk to
 
-College raises big questions about identity, faith, relationships and the future. Rabbi Labkowski is glad to meet with you, study one-on-one on any topic, or just talk, in complete confidence. Weekly classes run on Sunday evening (English Torah), Tuesday evening (in Hebrew, with a meal) and Wednesday afternoon (Tanya). See [adult education](/programs/adult-education), or [talk to the Rabbi](/help/talk-to-the-rabbi).
+College raises big questions about identity, faith, relationships and the future. Rabbi Labkowski is glad to meet with you, study one-on-one on any topic, or just talk, in complete confidence. Weekly classes run on Sunday evening (English Torah), Tuesday evening (in Hebrew, with a meal) and Wednesday afternoon (Tanya, at 1:00 PM at the Rabbi's home in Lafayette; it is open to teens and students, and to everyone). See [adult education](/programs/adult-education), or [talk to the Rabbi](/help/talk-to-the-rabbi).
 
 Going through a hard time? You do not have to carry it alone. See [grief and hard times](/help/grief-and-hard-times).
 

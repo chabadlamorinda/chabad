@@ -9,11 +9,11 @@ King Munbaz was a ruler who, according to the Talmud (Bava Batra 11a), gave away
 
 ## The story as the Talmud tells it
 
-There were years of famine, and King Munbaz opened his storehouses. Chabad.org tells that he spent the wealth he had inherited, together with the treasures his forefathers had gathered, to feed the poor.
+There were years of famine, and King Munbaz opened his storehouses. The Talmud tells that he spent the wealth he had inherited, together with the treasures his forefathers had gathered, to feed the poor.
 
 His brothers and his father's household were upset. They told him, in effect: your ancestors saved and added to what their ancestors saved, and you are throwing it all away.
 
-His reply is one of the most quoted lines about giving. As Chabad.org presents it, he said that his ancestors stored below and he stored above; they stored in a place where a foreign hand can reach, and he in a place where no hand can reach; they stored things that bear no fruit, and he stored things that bear fruit; they stored money, and he stored souls; they stored for this world, and he stored for the World to Come.
+His reply is one of the most quoted lines about giving. As the Talmud tells it, he said that his ancestors stored below and he stored above; they stored in a place where a foreign hand can reach, and he in a place where no hand can reach; they stored things that bear no fruit, and he stored things that bear fruit; they stored money, and he stored souls; they stored for this world, and he stored for the World to Come.
 
 ## What "above" means
 
@@ -39,10 +39,10 @@ No one should feel pressure here. Giving is a personal matter, and the Rabbi and
 King Munbaz is a ruler mentioned in the Talmud (Bava Batra 11a) as one who gave away his treasures to feed the poor in years of famine. The story is told for its lesson about giving, not for history.
 
 ### What did King Munbaz mean by "I stored them above"?
-He meant that his ancestors saved money where it could be lost or taken, while he turned his wealth into good deeds that last. The Talmud as retold by Chabad.org adds that he stored "souls" and "for the World to Come."
+He meant that his ancestors saved money where it could be lost or taken, while he turned his wealth into good deeds that last. The Talmud adds that he stored "souls" and "for the World to Come."
 
 ### Does Judaism say we should give away everything?
-No. Jewish law sets a standard of giving a tenth, with up to a fifth especially praiseworthy; see [Maaser](/learn/maaser). The story shows a spirit of generosity, not a rule for everyone. About maaser itself, the Torah makes a promise: in Malachi (3:10) G-d says to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. G-d rewards all giving with success, as Chabad teaches and Rabbi Labkowski teaches; maaser is unique in that the Torah states the promise clearly. For your own situation, or if times are hard, call the Rabbi at 925-384-7242.
+No. Jewish law sets a standard of giving a tenth, with up to a fifth especially praiseworthy; see [Maaser](/learn/maaser). The story shows a spirit of generosity, not a rule for everyone. About maaser itself, the Torah makes a promise: in Malachi (3:10) G-d says to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich." The Torah and G-d promise success for all giving; maaser is unique because the promise is stated clearly and we are invited to test it. For your own situation, or if times are hard, call the Rabbi at 925-384-7242.
 
 ### Can I include Chabad of Lamorinda in my will?
 Yes. Chabad of Lamorinda accepts bequests in a will or trust, retirement accounts, life insurance, donor-advised fund grants and gifts of stock. Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, and see [/legacy](/legacy). Your attorney and tax advisor will help with the legal details.

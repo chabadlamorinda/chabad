@@ -98,6 +98,7 @@ function createI18n(dir) {
       holidays: md('holidays', en.holidays),
       learn: md('learn', en.learn),
       help: md('help', en.help || []),
+      parsha: md('parsha', en.parsha || []),
     };
     // Event locations follow the translated org name when they are "at the center".
     for (const e of data.events) if (!e.location) e.loc = { ...e.loc, name: data.org.name };

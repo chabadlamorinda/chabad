@@ -7,15 +7,15 @@ local: Curious how to put your values to work? Call Rabbi Labkowski at 925-384-7
 ---
 Rabbi Tarfon, a wealthy sage, gave his student Rabbi Akiva 4,000 gold coins to buy him durable property, and Akiva gave all of it to poor Torah scholars. When Tarfon asked where his land was, Akiva showed him a verse about giving to the poor and said that this was the everlasting property he had bought. The story is a classic answer to the question: what is the best investment?
 
-## The story as Chabad.org tells it
+## The story as tradition tells it
 
-Chabad.org's page on Rabbi Tarfon (from Nissan Mindel's *Gallery of Our Great*) says that Rabbi Tarfon was a rich man. His disciple and colleague, Rabbi Akiva, offered to buy him some lasting goods. Tarfon immediately handed over 4,000 gold coins.
+Nissan Mindel, in his *Gallery of Our Great*, tells that Rabbi Tarfon was a rich man. His disciple and colleague, Rabbi Akiva, offered to buy him some lasting goods. Tarfon immediately handed over 4,000 gold coins.
 
 Akiva gave the entire sum to poor Torah scholars. Some time later, Tarfon asked where the properties were that Akiva had purchased for him. Akiva brought him into the study hall, opened a Book of Psalms, and read until he reached the verse about giving to the poor. He said that these were the everlasting possessions he had bought for him.
 
 Tarfon rose, kissed Akiva on the head, and called him his teacher in wisdom and his leader in conduct.
 
-(Different sources give slightly different amounts for the money. We follow the Chabad.org page.)
+(Different sources give slightly different amounts for the money. We follow Nissan Mindel's telling.)
 
 ## What Akiva understood
 
@@ -31,17 +31,17 @@ Notice Tarfon's response. He could have been angry that his money was given away
 
 ## Putting it into practice
 
-Not every gift needs to be large. Many Jews start with a fixed portion. About maaser, giving a tenth, the Torah makes a promise: G-d says through Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. G-d rewards all giving with success, as Chabad teaches and Rabbi Labkowski teaches; maaser is unique in that the Torah states the promise clearly. See [Maaser](/learn/maaser). In hard times, or for any personal question, call the Rabbi.
+Not every gift needs to be large. Many Jews start with a fixed portion. About maaser, giving a tenth, the Torah makes a promise: G-d says through Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich." The Torah and G-d promise success for all giving; maaser is unique because the promise is stated clearly and we are invited to test it. See [Maaser](/learn/maaser). In hard times, or for any personal question, call the Rabbi.
 
 For something that continues beyond a lifetime, you can arrange a legacy gift: a bequest in a will or trust, a retirement account or life insurance. Chabad of Lamorinda accepts these, as well as donor-advised fund grants and gifts of stock, for education of future generations and Jewish continuity in Lafayette, Moraga and Orinda. See [/legacy](/legacy). Please consult your attorney and tax advisor on details.
 
 ## Common questions
 
 ### Who were Rabbi Akiva and Rabbi Tarfon?
-They were two Sages of the Talmud. Tarfon was wealthy, and Akiva was his disciple and colleague, as Chabad.org tells.
+They were two Sages of the Talmud. Tarfon was wealthy, and Akiva was his disciple and colleague.
 
 ### What did Rabbi Akiva do with Rabbi Tarfon's money?
-He gave all of it to poor Torah scholars, as the Chabad.org page tells it.
+He gave all of it to poor Torah scholars, as the story tells it.
 
 ### What is the best investment in Judaism?
 The Sages answer: good deeds, especially tzedakah and supporting Torah, because they last. Your own advisors can help with financial investments.

@@ -13,7 +13,7 @@ This guide looks at the tool, as the Tanya presents it. For the person who uses 
 
 Chapter 12 explains that the brain rules the heart by nature, and that the will of the mind can turn attention away from what the heart craves. The chapter gives an image: light drives out darkness without a struggle, so a small ray of holiness pushes away much of the animal soul's foolishness.
 
-## Feelings come; you choose what to do
+Chapter 17 builds on this with the verse the whole Tanya rests on: "For the matter is very near to you, in your mouth and in your heart, that you may do it" (Deuteronomy 30:14). How can serving G-d with the heart be "very near," when a burning love of G-d is hard to reach? Because the mind is under a person's control even when the heart is not. Thinking about G-d's greatness brings at least a love in the mind, and that is enough to guide what you say and do. Chapter 41 returns to the same verse: serving G-d with love and awe is within simple reach.
 
 The chapter says that improper thoughts may rise by themselves from the heart. What matters is the response. The beinoni pushes such a thought away at once, does not dwell on it or plan it, and does not speak of it. A person who willingly entertains it is, in that moment, not a beinoni.
 

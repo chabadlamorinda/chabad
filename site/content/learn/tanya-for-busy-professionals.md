@@ -11,7 +11,7 @@ A busy professional can learn Tanya in about five minutes a day by using the dai
 
 The [Tanya](/learn/tanya), by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, is often described as a "one size fits all" life manual. Its subject is the thing every working person faces: the pull between what is easy and what is right, and how to carry calm and meaning into ordinary hours. Each chapter is short, so one idea fits in one sitting. For the book as a whole, see [what is the Tanya](/learn/tanya).
 
-## Three easy ways to start
+Its message suits a full schedule. The Tanya is built on the verse "For the matter is very near to you, in your mouth and in your heart, that you may do it" (Deuteronomy 30:14), and Chapters 17 and 41 explain that serving G-d is within reach of everyone: the mind can lead the heart, so you do not need a free afternoon or a perfect mood to begin.
 
 All of these are free online, and the daily Tanya page lists the formats described here.
 

@@ -9,9 +9,9 @@ In the Torah, a poor person could bring a simple offering of fine flour instead 
 
 ## The poor man's offering
 
-The book of Leviticus (Vayikra) describes the *minchah* (מִנְחָה), a meal offering of fine flour, which is brought by someone who cannot afford an animal. Chabad.org, in "The Poor Man's Soul" by Rabbi Shimon Posner, points to Rashi on the opening verse. The Torah says "a soul" (*nefesh*, נֶפֶשׁ) when it speaks of one who brings this offering. Rashi, citing the Talmud, explains that the poor man's soul is in his humble offering, and that it is as dear to G-d as that of a person who has given his life.
+The book of Leviticus (Vayikra) describes the *minchah* (מִנְחָה), a meal offering of fine flour, which is brought by someone who cannot afford an animal. Rabbi Shimon Posner, in "The Poor Man's Soul," points to Rashi on the opening verse. The Torah says "a soul" (*nefesh*, נֶפֶשׁ) when it speaks of one who brings this offering. Rashi, citing the Talmud, explains that the poor man's soul is in his humble offering, and that it is as dear to G-d as that of a person who has given his life.
 
-Another Chabad.org article (KabbalaOnline.org, "Loyal Pigeons and Devoted Doves") describes the Torah's sliding scale: the rich bring a bullock, the average person a flock animal, and the poor a bird, because G-d does not burden anyone beyond what they can bear." It teaches that the poor man's offering, even a little flour, brings forgiveness and is equally esteemed.
+Chassidic teaching describes the Torah's sliding scale: the rich bring a bullock, the average person a flock animal, and the poor a bird, because G-d does not burden anyone beyond what they can bear. It teaches that the poor man's offering, even a little flour, brings forgiveness and is equally esteemed.
 
 ## A true story: the sukkah slats
 
@@ -33,7 +33,7 @@ This is why a monthly gift of any size matters to a community. For Jewish life i
 
 ## Maaser and small beginnings
 
-About maaser, giving a tenth, the Torah makes a promise: G-d says to bring the tithes and "test Me" (Malachi 3:10), and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. G-d rewards all giving with success, as Chabad teaches and Rabbi Labkowski teaches; maaser is unique in that the Torah states the promise clearly. A tenth of a modest income is still a tenth. See [Maaser](/learn/maaser). If money is tight, call the Rabbi: 925-384-7242. See also [Giving When Money Is Tight](/learn/giving-when-money-is-tight).
+About maaser, giving a tenth, the Torah makes a promise: G-d says to bring the tithes and "test Me" (Malachi 3:10), and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich." The Torah and G-d promise success for all giving; maaser is unique because the promise is stated clearly and we are invited to test it. A tenth of a modest income is still a tenth. See [Maaser](/learn/maaser). If money is tight, call the Rabbi: 925-384-7242. See also [Giving When Money Is Tight](/learn/giving-when-money-is-tight).
 
 ## Common questions
 
@@ -47,7 +47,7 @@ A meal offering of fine flour, brought by someone who could not afford an animal
 Rashi, quoting the Talmud, says the poor man's soul is in his humble offering and that it is as dear to G-d as a person who gave his life.
 
 ### Is the sukkah slats story true?
-It is the story as Chabad.org's Rabbi Shimon Posner tells it, as he heard it from a conference speaker.
+It is the story as Rabbi Shimon Posner tells it, as he heard it from a conference speaker.
 
 ### How do I give if I have very little?
 Give what you can with a full heart. See [Giving When Money Is Tight](/learn/giving-when-money-is-tight) and ask the Rabbi.

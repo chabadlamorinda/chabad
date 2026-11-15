@@ -9,7 +9,7 @@ Midrash (מִדְרָשׁ, from the root "to seek out" or "to explore") is the b
 
 ## The two kinds of midrash
 
-Jewish tradition explains the two types:
+In short, the two types are:
 
 - **Midrash Aggadah** (מדרש אגדה) is homiletic: it extends the Torah's narratives or tells parables with a moral. "Aggadah" means "telling."
 - **Midrash Halachah** (מדרש הלכה) draws further details of Jewish law from the words of the Torah.

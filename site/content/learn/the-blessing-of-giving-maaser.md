@@ -5,23 +5,23 @@ category: Jewish ideas
 related: starting-maaser-step-by-step, tzedakah, jewish-view-on-wealth, leaving-a-jewish-legacy-gift, chesed
 local: Want to talk about maaser or your own situation? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi.
 ---
-Chabad teaches, and Rabbi Labkowski teaches, that Hashem rewards all giving with success, and that maaser is unique because there the Torah states the promise clearly: the Talmud reads the Torah's words about tithing as "give a tenth so that you will become rich," and Hashem Himself says, "test Me." The promise is offered with warmth, never with pressure.
+The Torah and Hashem promise success for all giving, and maaser is unique because the promise is stated clearly and we are invited to test it: the Talmud reads the Torah's words about tithing as "give a tenth so that you will become rich," and Hashem Himself says, "test Me." The promise is offered with warmth, never with pressure.
 
 ## "Give a tenth so that you will become rich"
 
-The Torah says "Aser te'aser," which means "you shall surely tithe" (Deuteronomy 14:22). Chabad.org explains that the Talmud (Taanit 9a) reads these words as: "Give a tenth in order that you will become wealthy." Chabad.org presents maaser as a partnership of 90 and 10: as long as we manage well, we keep ninety percent and G-d has ten. It calls maaser "the only investment that has guaranteed returns."
+The Torah says "Aser te'aser," which means "you shall surely tithe" (Deuteronomy 14:22). The Talmud (Taanit 9a) reads these words as: "Give a tenth in order that you will become wealthy." Jewish teaching describes maaser as a partnership of 90 and 10: as long as we manage well, we keep ninety percent and G-d has ten. It calls maaser "the only investment that has guaranteed returns."
 
-In Pirkei Avot (3:17), as Chabad.org quotes it, giving maaser is called a fence, a protection for wealth. That is why people call maaser an investment.
+In Pirkei Avot (3:17), giving maaser is called a fence, a protection for wealth. That is why people call maaser an investment.
 
 ## "Test Me"
 
-Normally, Chabad.org notes, we may not test G-d (Deuteronomy 6:16). But in the prophet Malachi (3:10), Hashem says: "Bring the full tithes into the storehouse... and test Me now with this, if I will not open for you the windows of heaven and pour out a blessing." Here the Torah invites us to do exactly that: give the tenth and see the blessings follow. The Rebbe taught that this permission to test G-d applies to all tzedakah, not only to maaser. Chabad.org adds that the Torah promises that giving tzedakah will not cause poverty.
+Normally, we may not test G-d (Deuteronomy 6:16). But in the prophet Malachi (3:10), Hashem says: "Bring the full tithes into the storehouse... and test Me now with this, if I will not open for you the windows of heaven and pour out a blessing." Here the Torah invites us to do exactly that: give the tenth and see the blessings follow. The Rebbe taught that this permission to test G-d applies to all tzedakah, not only to maaser. The tradition adds that the Torah promises that giving tzedakah will not cause poverty.
 
 Hashem rewards all giving with success; maaser is unique in that the Torah states the promise in so many words. The promise is success, and it is never a reason for anyone to feel they did something wrong in a hard time. If you are facing hardship, please call the Rabbi at 925-384-7242. Your own basic needs come first, as [Giving When Money Is Tight](/learn/giving-when-money-is-tight) explains.
 
-## Two stories of our Sages, as Chabad.org tells them
+## Two stories of our Sages
 
-Chabad.org, in an article on maaser, retells two stories of our Sages:
+Here are two stories of our Sages about maaser:
 
 - **The field.** A rich man's field gave 1,000 kor of grain a year, and he gave 100 kor as tithe. His son stopped tithing because it felt like a burden, and the field then gave only 100 kor.
 - **The mice.** In the time of Rabbi Pinchas ben Yair, mice were eating farmers' grain. The mice said they had the right to it because the farmers had not tithed. The farmers said they had. Rabbi Pinchas asked whether they had given the full amount or just estimated, and they admitted they had not been careful. When they tithed carefully, the mice disappeared. This is connected to the saying of Rabban Gamliel, "Do not tithe by guesswork."
@@ -46,19 +46,19 @@ To arrange any of these, contact Rabbi Yisroel Labkowski at 925-384-7242 or Rebb
 ## Common questions
 
 ### Does Judaism promise that maaser brings success?
-Chabad teaches, and Rabbi Labkowski teaches, that Hashem rewards all giving with success. Maaser is unique in that the Torah states the promise clearly: "test Me" (Malachi 3:10), and the Talmud teaches (Taanit 9a) "give a tenth so that you will become rich."
+The Torah and Hashem promise success for all giving. Maaser is unique because the promise is stated clearly and we are invited to test it: "test Me" (Malachi 3:10), and the Talmud teaches (Taanit 9a) "give a tenth so that you will become rich."
 
 ### What does "test Me" mean?
 Hashem invites us, through the prophet Malachi, to bring the full tithes and see the blessing. Normally we may not test G-d; the Talmud (Taanit 9a) makes giving the exception. The Rebbe's ruling is that we may test G-d with all tzedakah, not only with maaser.
 
 ### Why is maaser called an investment?
-Chabad.org describes it as a 90-10 partnership with G-d, and Pirkei Avot calls maaser a fence for wealth.
+It is often described as a 90-10 partnership with G-d, and Pirkei Avot calls maaser a fence for wealth.
 
 ### What if I gave maaser and still struggle?
 Please call the Rabbi at 925-384-7242. Struggling is never a sign that you did something wrong, and every personal case deserves a personal conversation.
 
 ### Do I have to give maaser if I cannot meet my basic needs?
-Chabad.org says your basic needs come first. Give what you can, and ask the Rabbi.
+Jewish law teaches that your basic needs come first. Give what you can, and ask the Rabbi.
 
 ### Where should my maaser go?
 To those in need and to Jewish causes. See [Tzedakah Priorities](/learn/tzedakah-priorities) and call the Rabbi at 925-384-7242.

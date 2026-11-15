@@ -13,7 +13,7 @@ This is the chapter Chabad reaches for when it explains *Ahavat Yisrael* (אהב
 
 The chapter before it, Chapter 31, speaks to a person who feels bad about his spiritual state, and says he should find joy in his G-dly soul. Chapter 32 continues on that path. According to the text, a person who treats his body as secondary and finds his joy in his soul has a direct road to the mitzvah "You shall love your fellow as yourself" (Leviticus 19:18), toward every Jew, great or small.
 
-## Why is self-love easy and love of others hard?
+## The heart of the Tanya
 
 We love ourselves without trying. Love for others usually has to be built. The Alter Rebbe, Rabbi Shneur Zalman of Liadi, explains what changes the picture:
 

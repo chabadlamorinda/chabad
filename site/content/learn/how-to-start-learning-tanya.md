@@ -23,7 +23,7 @@ Any of them is fine. If you are brand new, a plain-English version lets you focu
 
 The Tanya's full name is Likkutei Amarim, Part One, and it has 53 chapters. The complete book has five parts; see [what the Tanya is](/learn/tanya) for the overview. For a first reading, Part One is the place to begin. Its author, [the Alter Rebbe](/learn/the-alter-rebbe), also called it the "Book of the Beinonim," the book for ordinary people striving to grow.
 
-## A simple path for your first weeks
+The book's promise is the verse on its title page: "For the matter is very near to you, in your mouth and in your heart, that you may do it" (Deuteronomy 30:14). Chapters 17 and 41 come back to it to show that serving G-d is within reach of every Jew, not only of great scholars. Keep that in mind when a chapter feels hard: the whole book is written to show you that it is near.
 
 There is no single required starting point, so here is a gentle path we suggest:
 

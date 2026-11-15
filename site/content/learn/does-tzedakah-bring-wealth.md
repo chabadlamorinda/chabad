@@ -1,17 +1,17 @@
 ---
 title: Does Giving Tzedakah Make You Rich? G-d's Promise of Success
-description: Does giving charity bring wealth? Chabad teaches that G-d rewards all giving with success, and maaser is where the Torah says it clearly.
+description: Does giving charity bring wealth? The Torah and G-d promise success for all giving, and maaser is where the promise is stated clearly.
 category: Jewish ideas
 related: maaser, tanya-on-money, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
 local: Have a question about how to give or what to set aside? Call Rabbi Labkowski at 925-384-7242, or read how we welcome gifts on our legacy page.
 ---
-Chabad teaches that G-d rewards all giving of tzedakah with success, and that maaser, giving a tenth of your income, is unique because there the promise is stated clearly. In the book of Malachi, G-d says of the tithe, "Test Me in this," and the Talmud teaches, "Give a tenth so that you will become rich" (Taanit 9a).
+The Torah and G-d promise success for all giving of tzedakah, and maaser, giving a tenth of your income, is unique because the promise is stated clearly and we are invited to test it. In the book of Malachi, G-d says of the tithe, "Test Me in this," and the Talmud teaches, "Give a tenth so that you will become rich" (Taanit 9a).
 
 ## What the Torah and the Talmud say
 
-Maaser (מַעֲשֵׂר) means "a tenth." Chabad.org explains that one who gives maaser faithfully is assured of full repayment and eventual wealth. King Solomon taught that giving to the poor is like lending to G-d, and Chabad.org adds that G-d repays charitable funds, with handsome dividends, here in this world.
+Maaser (מַעֲשֵׂר) means "a tenth." Jewish tradition teaches that one who gives maaser faithfully is assured of full repayment and eventual wealth. King Solomon taught that giving to the poor is like lending to G-d, and the tradition adds that G-d repays charitable funds, with handsome dividends, here in this world.
 
-This is unusual. The Torah normally forbids testing G-d (Deuteronomy 6:16). But with tzedakah it is permitted. The prophet Malachi (3:10) says in G-d's name: bring the tithe, "Test Me in this, and see if I will not open the floodgates of heaven." The Talmud (Taanit 9a), in a discourse of the Previous Rebbe on Chabad.org, reads the Torah's double wording *aser te'aser* as "give a tenth so that you will become rich," and says that G-d may never be put to the test except in this case: give the tenth, and see. The Rebbe taught that this permission applies to all tzedakah, not only to maaser. G-d rewards all giving with success, and maaser is unique in that the Torah states the promise clearly. This is what Chabad teaches and what the Rabbi teaches.
+This is unusual. The Torah normally forbids testing G-d (Deuteronomy 6:16). But with tzedakah it is permitted. The prophet Malachi (3:10) says in G-d's name: bring the tithe, "Test Me in this, and see if I will not open the floodgates of heaven." The Talmud (Taanit 9a), as the Previous Rebbe explains in a discourse, reads the Torah's double wording *aser te'aser* as "give a tenth so that you will become rich," and says that G-d may never be put to the test except in this case: give the tenth, and see. The Rebbe taught that this permission applies to all tzedakah, not only to maaser. The Torah and G-d promise success for all giving, and maaser is unique because the promise is stated clearly and we are invited to test it.
 
 ## Why G-d makes this promise
 
@@ -23,7 +23,7 @@ The promise is success, and it is for all giving; maaser, a tenth of income, is 
 
 ## Giving when money is tight
 
-Chabad.org explains that basic needs come first: food, clothing and shelter. Someone who cannot cover them is not required to give maaser, though everyone should still give what they can in tzedakah. The Rebbe encouraged giving a partial amount, such as five percent, and keeping a record of what is still owed, to be made up later. More ideas are in [Giving when money is tight](/learn/giving-when-money-is-tight).
+Jewish law teaches that basic needs come first: food, clothing and shelter. Someone who cannot cover them is not required to give maaser, though everyone should still give what they can in tzedakah. The Rebbe encouraged giving a partial amount, such as five percent, and keeping a record of what is still owed, to be made up later. More ideas are in [Giving when money is tight](/learn/giving-when-money-is-tight).
 
 ## How to give a tenth
 
@@ -34,22 +34,22 @@ A grant from your donor-advised fund to Chabad of Lamorinda counts as maaser. To
 ## Common questions
 
 ### Does giving charity make you rich in Judaism?
-Chabad teaches that G-d rewards all giving with success. Maaser, giving a tenth of income, is unique in that the promise is stated clearly: G-d says "Test Me" about the tithe (Malachi 3:10), and the Talmud teaches "give a tenth so that you will become rich" (Taanit 9a).
+The Torah and G-d promise success for all giving. Maaser, giving a tenth of income, is unique because the promise is stated clearly and we are invited to test it: G-d says "Test Me" about the tithe (Malachi 3:10), and the Talmud teaches "give a tenth so that you will become rich" (Taanit 9a).
 
 ### What does "test Me" in Malachi mean?
-In Malachi 3:10, G-d invites the Jewish people to bring the tithe and see whether He will pour out blessing. As Chabad.org presents the Talmud (Taanit 9a), this is the exception to the rule against testing G-d, and the Rebbe taught that it applies to all tzedakah, not only to maaser.
+In Malachi 3:10, G-d invites the Jewish people to bring the tithe and see whether He will pour out blessing. As the Talmud (Taanit 9a) teaches, this is the exception to the rule against testing G-d, and the Rebbe taught that it applies to all tzedakah, not only to maaser.
 
 ### Is maaser, giving ten percent, required by Jewish law?
-Chabad.org explains that authorities differ on whether maaser kesafim is a Torah law, a rabbinic law or a custom held as strongly as a vow. Most follow the latter view. Ask the Rabbi how it applies to you.
+Halachic authorities differ on whether maaser kesafim is a Torah law, a rabbinic law or a custom held as strongly as a vow. Most follow the latter view. Ask the Rabbi how it applies to you.
 
 ### Does the promise apply to every kind of giving?
-Yes. Chabad teaches, and Rabbi Labkowski teaches, that G-d rewards all giving with success, and the Rebbe taught that we may test G-d with all tzedakah. Maaser is unique only in that the Torah states the promise clearly. Give with an open heart, and for a personal situation, call the Rabbi. For more on what giving brings, read [What giving does for the giver](/learn/what-giving-does-for-the-giver).
+Yes. The Torah and G-d promise success for all giving, and the Rebbe taught that we may test G-d with all tzedakah. Maaser is unique because the promise is stated clearly and we are invited to test it. Give with an open heart, and for a personal situation, call the Rabbi. For more on what giving brings, read [What giving does for the giver](/learn/what-giving-does-for-the-giver).
 
 ### What if I cannot afford to give a tenth?
 Give what you can, even a little, and keep a record of what remains. Basic needs come first. The Rabbi can help you think it through, confidentially.
 
 ### Can I give maaser to a synagogue or Jewish organization?
-Chabad.org lists communal institutions such as the synagogue among the permitted uses of maaser. Ask the Rabbi about specific cases, such as honors or dinners.
+Jewish law lists communal institutions such as the synagogue among the permitted uses of maaser. Ask the Rabbi about specific cases, such as honors or dinners.
 
 ## Take the next step
 

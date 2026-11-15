@@ -9,29 +9,29 @@ local: Have a dollar from the Rebbe, or a question about giving? Call Rabbi Labk
 
 ## How Sunday Dollars began
 
-Chabad.org explains that for many years the Rebbe, Rabbi Menachem Mendel Schneerson, met people privately. As the numbers grew, that became impossible. In 1986, he began a weekly receiving line on Sundays at 770 Eastern Parkway in Brooklyn. Thousands of men, women and children walked past him for a blessing, and many asked a question and received a word of advice.
+For many years the Rebbe, Rabbi Menachem Mendel Schneerson, met people privately. As the numbers grew, that became impossible. In 1986, he began a weekly receiving line on Sundays at 770 Eastern Parkway in Brooklyn. Thousands of men, women and children walked past him for a blessing, and many asked a question and received a word of advice.
 
-Each person also received a dollar bill and was asked to give it to the charity of their choice, as the Rebbe's personal agent (*shaliach*, שָׁלִיחַ). The Rebbe stood for hours; Chabad.org notes he could stand as long as eight hours at a time. When an elderly woman asked how he did not tire, he answered that every soul is a diamond, and no one tires of counting diamonds.
+Each person also received a dollar bill and was asked to give it to the charity of their choice, as the Rebbe's personal agent (*shaliach*, שָׁלִיחַ). The Rebbe stood for hours; he could stand as long as eight hours at a time. When an elderly woman asked how he did not tire, he answered that every soul is a diamond, and no one tires of counting diamonds.
 
 ## "When two Jews meet..."
 
 Why dollars? The Rebbe explained that his father-in-law, the previous Rebbe, Rabbi Yosef Yitzchak, used to say: "When two people meet, something good should result for a third." The Rebbe wanted every meeting to include a mitzvah that helps someone else.
 
-In another account on Chabad.org, a visitor received a dollar and the Rebbe told him that when two Jews meet, they should do something for a third, and giving tzedakah is a good place to start.
+In another account, a visitor received a dollar and the Rebbe told him that when two Jews meet, they should do something for a third, and giving tzedakah is a good place to start.
 
 ## What was the dollar for?
 
-Rabbi Eliezer Zalmanov, on Chabad.org, answers a reader who received a dollar as a child. He explains that the dollar represents a responsibility to help others, with money, goods, time or effort. The Rebbe intended it to be given to charity. Many people kept the original bill and gave another dollar in its place; Rabbi Zalmanov suggests that if you do not remember giving it, give a dollar to charity soon.
+Rabbi Eliezer Zalmanov answers a reader who received a dollar as a child. He explains that the dollar represents a responsibility to help others, with money, goods, time or effort. The Rebbe intended it to be given to charity. Many people kept the original bill and gave another dollar in its place; Rabbi Zalmanov suggests that if you do not remember giving it, give a dollar to charity soon.
 
 He also tells that the Rebbe liked crisp bills. He links this to a story about the Alter Rebbe, who admired the sparkling coins a merchant's wife had polished: the crisp bill is a reminder that charity should be given with care and sincerity.
 
 ## The Rebbe's love of the pushka
 
-The same teaching shows up in many Chabad.org stories. A chapter on Chabad.org by Rabbi Mendel Kalmenson tells that in winter 1990 the Rebbe asked a managing director of El Al Airlines for a list of the company's planes so that he could contribute a dollar toward putting a charity box on each one, and that on Chanukah 5747 the Rebbe announced a campaign for a charity box in every child's bedroom and the next day gave children nickels for their boxes. See [The Pushka](/learn/pushka) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
+The same teaching shows up in many stories about the Rebbe. A chapter by Rabbi Mendel Kalmenson tells that in winter 1990 the Rebbe asked a managing director of El Al Airlines for a list of the company's planes so that he could contribute a dollar toward putting a charity box on each one, and that on Chanukah 5747 the Rebbe announced a campaign for a charity box in every child's bedroom and the next day gave children nickels for their boxes. See [The Pushka](/learn/pushka) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
 
 ## Giving that starts small
 
-The same chapter encourages readers to start small, keep a pushka at home, and work toward maaser, giving a tenth. Maaser is not only a duty. The Torah itself makes a promise about it: G-d says through the prophet Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. G-d rewards all giving with success, as Chabad teaches and Rabbi Labkowski teaches; maaser is unique in that the Torah states the promise clearly. See [Maaser](/learn/maaser). If times are hard, call the Rabbi for guidance.
+The same chapter encourages readers to start small, keep a pushka at home, and work toward maaser, giving a tenth. Maaser is not only a duty. The Torah itself makes a promise about it: G-d says through the prophet Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich." The Torah and G-d promise success for all giving; maaser is unique because the promise is stated clearly and we are invited to test it. See [Maaser](/learn/maaser). If times are hard, call the Rabbi for guidance.
 
 ## Common questions
 
@@ -42,7 +42,7 @@ They were single dollar bills that the Rebbe gave to visitors in a weekly line s
 He said that when two people meet, something good should result for a third. The dollar made every meeting an opportunity to help someone else.
 
 ### What should I do with a dollar from the Rebbe?
-Chabad.org's Rabbi Zalmanov explains that it was meant for charity. Many people keep the dollar and give another dollar to charity in its place. Ask the Rabbi if you wish to discuss it.
+Rabbi Zalmanov explains that it was meant for charity. Many people keep the dollar and give another dollar to charity in its place. Ask the Rabbi if you wish to discuss it.
 
 ### Who chooses the charity?
 The person who received the dollar. The Rebbe asked each one to give it to the charity of their choice, as his agent.

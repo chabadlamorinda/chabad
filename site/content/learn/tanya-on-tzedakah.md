@@ -11,7 +11,7 @@ The Tanya is the foundational book of Chabad ([what is the Tanya?](/learn/tanya)
 
 ## The Tanya's picture: your effort becomes holy
 
-Chabad.org's text of Chapter 37 begins with a thought about all mitzvot. A worker does not create the money he is paid, but a mitzvah itself brings about the lifting up it achieves. When someone uses a permitted object for a mitzvah, the life force in that object is raised toward holiness.
+Chapter 37 of the Tanya begins with a thought about all mitzvot. A worker does not create the money he is paid, but a mitzvah itself brings about the lifting up it achieves. When someone uses a permitted object for a mitzvah, the life force in that object is raised toward holiness.
 
 Tzedakah is special, says the chapter, because of where its object comes from. The Jerusalem Talmud calls tzedakah simply "the commandment," and the Tanya explains that mitzvot of action are the heart of Jewish practice. Other mitzvot involve only one power of the soul, and only while the mitzvah is being done. But money earned by the work of one's hands carries a person's whole vital energy, since he put himself into earning it. Giving it away for G-d lifts all that energy up.
 
@@ -27,7 +27,7 @@ That gives giving a different feel. It is not an expense that interrupts life, b
 
 ## Hashem's promise of success
 
-Rabbi Labkowski teaches that Hashem promises success for all giving. *Maaser* (מעשר), giving a tenth of income, is unique because the Torah states the promise clearly and even invites us to test it. The Talmud (Taanit 9a) reads the Torah's words about tithing as "give a tenth so that you will become rich," and in Malachi 3:10 G-d tells us to bring the tithes and "test Me." Chabad.org explains that testing G-d is generally forbidden, but with maaser it is allowed, and that the Rebbe held that G-d may be tested not only with maaser but with all tzedakah. A legacy gift and a donor-advised fund grant also count as maaser.
+The Torah and Hashem promise success for all giving. *Maaser* (מעשר), giving a tenth of income, is unique because the promise is stated clearly and we are invited to test it. The Talmud (Taanit 9a) reads the Torah's words about tithing as "give a tenth so that you will become rich," and in Malachi 3:10 G-d tells us to bring the tithes and "test Me." Jewish law teaches that testing G-d is generally forbidden, but with maaser it is allowed, and that the Rebbe held that G-d may be tested not only with maaser but with all tzedakah. A legacy gift and a donor-advised fund grant also count as maaser.
 
 This is a teaching about giving, not a measure of anyone's life: if you are going through a hard time, never feel you did something wrong. Give what you can, and call Rabbi Labkowski at 925-384-7242 to talk it over. See [maaser](/learn/maaser).
 
@@ -43,7 +43,7 @@ Other mitzvot engage one part of the soul during the act, while money earned by 
 The chapter says Torah study joins the soul to G-d in a deeper way, yet action is the purpose of creation. When only you can do a mitzvah, you pause your study to do it. Ask the Rabbi for how to apply this.
 
 ### How much tzedakah should I give?
-Chabad.org's maaser teaching is a tenth, but personal cases differ. Call Rabbi Labkowski at 925-384-7242 and ask your tax advisor about tax questions.
+The maaser standard is a tenth, but personal cases differ. Call Rabbi Labkowski at 925-384-7242 and ask your tax advisor about tax questions.
 
 ### Can I give through Chabad of Lamorinda?
 Yes. See [donate](/donate), the [Chai Club](/chai-club) for monthly partners, or [legacy giving](/legacy). A legacy gift or a donor-advised fund grant counts as maaser.

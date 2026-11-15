@@ -49,7 +49,7 @@ function splitFaq(body, heading = 'Common questions') {
 function load(dir = DIR, opts = {}) {
   const rj = (f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
   const org = rj('org.json'), programs = rj('programs.json'), events = rj('events.json'), faq = rj('faq.json'), directory = rj('directory.json');
-  const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays'), learn = readPagesIn(dir, 'learn'), help = readPagesIn(dir, 'help');
+  const pages = readPagesIn(dir, 'pages'), holidays = readPagesIn(dir, 'holidays'), learn = readPagesIn(dir, 'learn'), help = readPagesIn(dir, 'help'), parsha = readPagesIn(dir, 'parsha'); // a page per Torah portion: the Rebbe's teaching, a story, ideas, an essay
   const sponsor = optJson(dir, 'sponsor.json', { occasions: [], options: [] }), tehillim = optJson(dir, 'tehillim.json', { situations: [] });
   const forms = optJson(dir, 'forms.json', []), giving = optJson(dir, 'giving.json', {}), home = optJson(dir, 'home.json', {});
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
@@ -139,10 +139,11 @@ function load(dir = DIR, opts = {}) {
   }
   for (const s of series) for (const g of s.guides || []) if (!learnSlugs.has(g)) throw new Error(`series.json: "${s.id}" lists "${g}", which is not a guide in learn/`);
   for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
+  for (const x of parsha) { const { body, faq: qa } = splitFaq(x.body); x.body = body; x.faq = qa; }
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
   for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, sponsor, tehillim, forms, giving, home, campaigns, jokes, stories, series, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, parsha, sponsor, tehillim, forms, giving, home, campaigns, jokes, stories, series, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);
