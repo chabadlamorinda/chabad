@@ -9,7 +9,7 @@ To light a Chanukah menorah safely, set it on a sturdy, fireproof surface, keep 
 
 ## The basics every home needs
 
-Chabad.org and fire-safety agencies agree on these simple rules:
+These simple rules come from Chabad.org and from public fire-safety guidance:
 
 - **A stable, fireproof surface.** A metal tray, a glass or stone table, or a tray lined with foil under the menorah. Avoid wood, plastic and tablecloths.
 - **Space from anything that burns.** U.S. fire-safety guidance (the U.S. Fire Administration, citing NFPA) says to keep candles at least 12 inches from anything that can burn, such as curtains, paper decorations, gift wrap and holiday greenery.
@@ -20,7 +20,7 @@ Chabad.org and fire-safety agencies agree on these simple rules:
 
 ## Set it up carefully
 
-1. **Level the menorah.** Make sure all eight candles or oil cups are in a straight row at the same height, with the shamash (the helper candle) set slightly apart. Chabad.org notes that wobbly candles are a danger.
+1. **Level the menorah.** Make sure all eight candles or oil cups are in a straight row at the same height, with the shamash (the helper candle) set slightly apart.
 2. **Use sturdy candles.** Fit them tightly in the holders, so they cannot tip. See [menorah oil and candles](/learn/menorah-oil-and-candles).
 3. **Consider tea lights.** Chabad.org suggests that tea lights, small wax candles in metal cups, are sturdy and low and less likely to tip. They may not fit a menorah, so line them up on a plate or fireproof tray, with the shamash apart.
 4. **Mind sleeves and hair.** Long sleeves, scarves and hair should stay away from the flames when lighting.
@@ -65,7 +65,7 @@ Chabad.org says only if the window is less than thirty feet above the ground, an
 For decoration, yes, but the mitzvah requires a real oil or wax flame. Ask the Rabbi if you cannot light a flame.
 
 ### What if the flame goes out?
-During the first half hour, relight it. After that, it is no longer necessary. Ask the Rabbi if you are unsure.
+During the first half hour after lighting, Chabad.org advises relighting it. If it goes out later, ask the Rabbi.
 
 ### Can I blow out the menorah if I am worried?
 Chabad.org says this is not normally recommended before the time is over. If you feel unsafe, use tea lights and a tray, and ask the Rabbi.

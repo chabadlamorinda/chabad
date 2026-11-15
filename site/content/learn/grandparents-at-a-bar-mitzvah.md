@@ -3,7 +3,7 @@ title: "Grandparents at a Bar or Bat Mitzvah: Honors, Blessings and Passing It O
 description: "What is a grandparent's role at a Bar or Bat Mitzvah? Honors, a blessing or letter, meaningful gifts and a few words. A warm guide for grandparents."
 category: Life cycle
 related: jewish-grandparents, attending-a-bar-bat-mitzvah, ethical-will, parents-blessing-at-bar-mitzvah, gifts-in-multiples-of-18
-local: Grandparents are always welcome. Call Rabbi Labkowski at 925-384-7242 to ask about an honor at the Bar or Bat Mitzvah.
+local: Grandparents are welcome. Call Rabbi Labkowski at 925-384-7242 to ask about an honor at the Bar or Bat Mitzvah.
 ---
 At a Bar or Bat Mitzvah, grandparents are the living link in the chain from one generation to the next. Their role is not fixed by law, but they are often honored with a place at the Torah, a blessing, a gift that carries meaning and a few words to the child. The most important thing a grandparent can give is simply being there, and telling the child that he or she is part of a story older than all of us.
 

@@ -46,6 +46,10 @@ Traditional doughnut dough often has eggs, and some use milk or butter. Choose a
 
 For local help finding kosher groceries and holiday foods, [Bay Kosher](/programs/bay-kosher) is a project of Chabad of Lamorinda and is always kosher.
 
+## A vegan Chanukah table for Lafayette, Moraga and Orinda
+
+If you are hosting neighbors or family with different diets, a few vegan dishes let everyone eat together. Put the split pea latkes beside the classic potato ones, set out applesauce and a big salad, and label each dish so guests know what is vegan, pareve or dairy. A kosher kitchen makes the table welcome to every Jewish guest. For more ideas on planning the evening, see [hosting a Chanukah party](/learn/hosting-a-chanukah-party).
+
 ## Common questions
 
 ### Are vegan Chanukah foods automatically kosher?

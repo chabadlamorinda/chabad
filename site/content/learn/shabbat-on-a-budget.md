@@ -19,7 +19,7 @@ Here is the true minimum for Friday night:
 
 That is it. Chabad.org even says takeout, store-bought food or a potluck is fine, as long as it is kosher and enjoyable. The special feeling comes from the candles, the blessings, the people and the conversation.
 
-## Plan like families always have
+## Plan the way families have for generations
 
 Chabad.org notes that Jewish families have saved all week to buy fish for Shabbat for generations, so Shabbat food was never only for the wealthy. A few simple habits help:
 

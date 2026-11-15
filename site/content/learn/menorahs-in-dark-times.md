@@ -15,7 +15,7 @@ Reb Berke Chein, a respected Chabad chassid, spent years in a Soviet prison afte
 
 A hardened Russian cellmate, not a Jew, noticed Reb Berke's distress and asked what he needed. When he heard, he promised to help. He cut an onion in half to serve as the menorah. He took a slab of butter from Reb Berke's own daily ration for the oil. He pulled threads from his threadbare uniform for wicks. And since there were no matches, he rubbed threads from another uniform quickly against the stone floor with the sole of his shoe, until they glowed and smoked, and used them to light the wicks. Reb Berke lit the little menorah in the dark cell. He later called it "my personal Chanukah miracle."
 
-For the history of Jewish life in the Soviet Union, read [Soviet Jewry](/learn/soviet-jewry-history). Many of our Russian-speaking neighbors in Lafayette, Moraga and Orinda have family stories like this one.
+For the history of Jewish life in the Soviet Union, read [Soviet Jewry](/learn/soviet-jewry-history).
 
 ## A shoe, shoe polish and a rabbi's blessing
 
@@ -27,7 +27,7 @@ This account comes from the author Yaffa Eliach, who heard it from the rabbi's f
 
 ## A menorah in the hospital
 
-Denise Berger writes about her father, who lay for months in an intensive care unit. The hospital rules did not allow candles, and a blessing is not said over an electric light. Her mother, who had never been very observant, bought an electric menorah anyway and set it on a shelf across from his bed, where he and the nurses could see it through the window. Over the years that followed, she grew closer to Jewish life, and every Chanukah the lights appeared in her window.
+Denise Berger writes about her father, who lay for months in an intensive care unit. The hospital rules did not allow candles, and, as she tells it, the blessings could not be said over an electric menorah. Her mother, who kept few Jewish observances, bought an electric menorah anyway and set it on a shelf across from his bed, where he and the nurses could see it through the window. Over the years that followed, she grew closer to Jewish life, and every Chanukah the lights appeared in her window.
 
 If you or a loved one is in a hospital or care home at Chanukah, Jewish law has guidance for this situation. Please ask the Rabbi rather than guess. The Rabbi and Rebbetzin visit the sick at home, in hospital and in care facilities. See [Shabbat in the Hospital](/learn/shabbat-in-the-hospital) and the page for [help for seniors and families](/help/help-for-seniors-and-families).
 

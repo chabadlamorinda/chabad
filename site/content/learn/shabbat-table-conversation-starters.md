@@ -1,6 +1,6 @@
 ---
 title: Shabbat Table Conversation Starters: Questions That Make Dinner Meaningful
-description: Shabbat table conversation starters for every age: questions about the parsha, gratitude, kindness and family stories, plus tips for guests. Try one tonight.
+description: Shabbat table conversation starters for every age: questions on the parsha, gratitude, kindness and family stories, plus tips for guests. Try one tonight.
 category: Shabbat & holidays
 related: dvar-torah-at-the-shabbat-table, shabbat-meals, weekly-parsha, lashon-hara, shabbat-afternoon-ideas
 local: Want to experience a Shabbat table full of conversation and song? Ask about a Shabbat meal at /forms/shabbat-meal or call Rabbi Labkowski at 925-384-7242.

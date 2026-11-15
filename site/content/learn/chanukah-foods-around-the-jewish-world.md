@@ -41,6 +41,10 @@ Many Russian-speaking families will find the word *ponchikes* familiar. If you r
 
 Cook one dish from each tradition: latkes, sufganiyot and a family favorite. Tell the story of where it came from. Ask your children to name a country on a map for each dish. See [a Chanukah dinner menu](/learn/chanukah-dinner-menu) for how to plan.
 
+## Why the differences matter
+
+The differences between communities are not a problem to solve. They show how one Jewish holiday took root in many lands, each community keeping the same message with its own flavors. If your family's table looks different from your neighbor's, both are Chanukah. Ask older relatives what they remember, write the dish down, and cook it this year.
+
 ## Common questions
 
 ### What are traditional Chanukah foods around the world?

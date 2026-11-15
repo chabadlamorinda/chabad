@@ -1,6 +1,6 @@
 ---
 title: Unplugging on Shabbat: A Weekly Break From Phones and Screens
-description: How Shabbat gives you a weekly break from phones and screens, why Jewish law sets electronics aside, and practical ways to unplug. Ask Chabad of Lamorinda.
+description: How Shabbat gives you a weekly break from phones and screens, why Jewish law sets electronics aside, and practical ways to unplug. Ask the Rabbi.
 category: Shabbat & holidays
 related: how-to-start-keeping-shabbat, technology-and-screens-jewish-view, electricity-on-shabbat, shabbat-afternoon-ideas, shabbat
 local: Curious what an unplugged Shabbat feels like? Come to a Shabbat meal with Chabad of Lamorinda in Lafayette, or call Rabbi Labkowski at 925-384-7242.
