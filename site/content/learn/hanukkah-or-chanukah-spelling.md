@@ -11,7 +11,7 @@ Chabad.org uses both and says that regardless of how you spell it, the holiday i
 
 ## How to say it
 
-The Hebrew word is חנוכה, and it is pronounced *kha-noo-kah*. The first sound is the Hebrew letter chet (ח). In Ashkenazic tradition, chet is pronounced as a guttural sound made at the back of the throat, as in German. In Sephardic tradition it is a softer sound, close to an English "h." The word starts with that sound, not with the "ch" of "church." For a simple guide to the letters, see [the Hebrew alphabet](/learn/hebrew-alphabet).
+The Hebrew word is חנוכה, and it is pronounced *kha-noo-kah*. The first sound is the Hebrew letter chet (ח). In Ashkenazic tradition, chet is pronounced as a guttural sound made at the back of the throat, as in German. In Sephardic tradition it is a softer sound, close to an English "h." The word does not start with an English "ch" sound. For a simple guide to the letters, see [the Hebrew alphabet](/learn/hebrew-alphabet).
 
 ## Why there are so many spellings
 
@@ -23,6 +23,10 @@ Hebrew has sounds that English does not, so every English spelling is an approxi
 - **Khanike.** Yiddish scholars sometimes use this, but Chabad.org calls it uncommon and confusing in English text.
 
 Chabad.org's holiday FAQ puts it simply: both Chanukah and Hanukkah are correct. Chanukah is preferred by Ashkenazim, and Hanukkah is more common among Sephardim, in Modern Hebrew translations and among non-Jews. Our website uses Chanukah, the Ashkenazic spelling.
+
+## Which spelling should you use?
+
+Use the one you like, and use it consistently on a card, a sign or an invitation. Chabad.org's point is that the spelling matters less than the celebration: the menorah, the praise of G-d and the gratitude are the same however it is written. What does matter a little more is the sound, so try the gentle throat-clearing *kh* at the start. You will be understood in either case, and the effort is always appreciated.
 
 ## What the name means
 
@@ -38,7 +42,7 @@ The most common greeting is simply "Happy Hanukkah" or "Happy Chanukah," and it 
 Both are correct. Chanukah is the spelling Ashkenazic Jews traditionally prefer, and Hanukkah is more common among Sephardim, in Modern Hebrew translations and among non-Jews.
 
 ### How do you pronounce Chanukah?
-Say *kha-noo-kah*, with the first sound made at the back of the throat. It is never "tcha-noo-kah" as in "church."
+Say *kha-noo-kah*, with the first sound made at the back of the throat. It is never "tcha-noo-kah."
 
 ### Why is there a "C" in Chanukah?
 The "ch" in Chanukah stands for the Hebrew letter chet (ח), which English has no letter for. Ashkenazic Jews chose "ch," as in the names Menachem and Pesach.

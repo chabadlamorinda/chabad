@@ -42,6 +42,10 @@ Chabad.org's Chanukah e-cards show what the holiday inspires, with titles such a
 
 For colleagues who are not Jewish, a simple warm line about light and joy is enough. Keep it short, friendly and sincere. For ideas on sharing the holiday at work, read [Chanukah for friends and coworkers](/learn/chanukah-for-friends-and-coworkers).
 
+## Keep it short and sincere
+
+A card does not need to be long. One warm sentence that names the person and the holiday is enough, and handwriting it adds a personal touch. Choose the greeting that suits the person: the Hebrew or Yiddish for family and friends who will enjoy it, and the simple English for everyone else. Chabad.org says the simplest greeting, "Happy Hanukkah," works in all settings and with all Jews. Add a line about the light, and your card has done its job.
+
 ## Adding a gift or a mitzvah
 
 It is a longstanding custom to give children money (gelt) on Chanukah, and Chabad.org says cash is the traditional choice. See [Chanukah gelt](/learn/chanukah-gelt) and [Chanukah gifts](/learn/chanukah-gifts). Chabad.org also notes that it is customary to increase charity during Chanukah, so a card can come with a gift to tzedakah.

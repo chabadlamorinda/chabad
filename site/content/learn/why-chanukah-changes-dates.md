@@ -1,6 +1,6 @@
 ---
 title: "Why Does Chanukah Fall on Different Dates Every Year?"
-description: "Why does Chanukah change dates? It is always 25 Kislev on the Jewish calendar, which follows the moon. See how it works and where to find this year's dates."
+description: "Why does Chanukah change dates? It is always 25 Kislev on the Jewish calendar, which follows the moon. See how and where to find this year's dates."
 category: Shabbat & holidays
 related: jewish-calendar, kislev, jewish-leap-year-and-calendar, chanukah-for-beginners, chanukah-glossary
 local: Not sure when to light this year? See /jewish-holidays or call Rabbi Labkowski at 925-384-7242.
