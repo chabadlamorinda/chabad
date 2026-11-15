@@ -1,6 +1,6 @@
 ---
 title: Iggeret HaTeshuvah: What Tanya Teaches About Teshuvah
-description: Iggeret HaTeshuvah, the "Letter on Repentance" in the Tanya: what teshuvah really means, why confession matters, and why it should bring joy. A simple guide.
+description: Iggeret HaTeshuvah, the Tanya's Letter on Repentance: what teshuvah means, why confession matters and why teshuvah should bring joy. A simple guide.
 category: Jewish ideas
 related: starting-over-after-you-fall, teshuvah, cheshbon-hanefesh, ten-days-of-repentance, forgiving-yourself
 local: Want to learn about teshuvah with someone? Call Rabbi Labkowski at 925-384-7242 or see /programs/adult-education.

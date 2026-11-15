@@ -1,6 +1,6 @@
 ---
 title: Tanya on Friendship: Seeing the Soul in Your Friend
-description: What Tanya and Chassidic tradition teach about friendship: a bond of souls, love that does not depend on benefit, and friends who encourage each other to grow.
+description: What Tanya and Chassidic tradition teach about friendship: a bond of souls, love that does not depend on benefit, and friends who encourage growth.
 category: Jewish ideas
 related: jewish-friendship, lchaim-and-farbrengen, chavruta-learning-partner, tanya-on-forgiving-others, ahavat-yisrael
 local: Looking for friends and community in Lafayette, Moraga or Orinda? Come to an event at Chabad of Lamorinda (see /events) or call 925-384-7242.

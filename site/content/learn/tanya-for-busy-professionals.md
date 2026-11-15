@@ -30,7 +30,7 @@ Chabad.org's Tanya in Plain English page points beginners toward accessible chap
 - **Chapter 33** teaches finding joy in awareness of G-d's presence. See [Tanya on gratitude](/learn/tanya-on-gratitude).
 - **Chapter 12** describes the ordinary person who feels temptation and anger but rejects them and answers with kindness. That is the heart of [the beinoni](/learn/the-beinoni). The same chapter says he does not let resentment, jealousy or anger rule him and repays wrongs with good.
 
-For work stress and time, see [Jewish wisdom for busy professionals](/learn/jewish-wisdom-for-busy-professionals).
+For work stress and time, see [Jewish wisdom for busy professionals](/learn/jewish-wisdom-for-busy-professionals); for more workday ideas from the Tanya, see [Tanya at work](/learn/tanya-at-work).
 
 ## A realistic routine
 

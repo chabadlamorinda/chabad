@@ -1,6 +1,6 @@
 ---
 title: How to Forgive Someone Who Hurt You: Tanya's View
-description: How do you forgive someone who hurt you? Tanya's Epistle 25 and teshuvah chapters offer a way to let go of resentment, without excusing wrong. Ask the Rabbi.
+description: How do you forgive someone who hurt you? Tanya's Epistle 25 offers a way to let go of resentment without excusing the wrong. Ask the Rabbi.
 category: Jewish ideas
 related: forgiveness-and-making-peace, anger-jewish-view, tanya-on-anger, forgiving-yourself, loving-someone-you-dont-like
 local: Carrying a hurt that won't go away? Rabbi and Rebbetzin Labkowski are glad to talk privately: 925-384-7242, or see /help/talk-to-the-rabbi.

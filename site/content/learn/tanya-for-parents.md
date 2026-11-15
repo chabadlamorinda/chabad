@@ -1,6 +1,6 @@
 ---
 title: Tanya for Parents: Raising Children With Patience and Joy
-description: How the Tanya's ideas help Jewish parents: see your child's soul, stay patient when anger rises, bring joy to the work, and teach by example. Lamorinda families welcome.
+description: How the Tanya helps Jewish parents: see your child's soul, stay patient when anger rises, bring joy to the work and teach by example. Lamorinda welcome.
 category: Jewish home
 related: jewish-parenting, patience, disciplining-children, raising-kind-children, sibling-rivalry
 local: Parenting questions? Rabbi and Rebbetzin Labkowski are glad to talk: call 925-384-7242, or see the kids' programs at /programs/kids-and-teens.

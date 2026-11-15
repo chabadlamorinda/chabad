@@ -1,6 +1,6 @@
 ---
 title: How to Love Someone You Don't Like: Tanya's Surprising Answer
-description: Can you love a person and still dislike what they do? Tanya says yes: love the G-dly soul, stand in their place first, and keep your own safety. Ask the Rabbi.
+description: Can you love a person and still dislike what they do? Tanya says yes: love the G-dly soul, stand in their place first, and stay safe. Ask the Rabbi.
 category: Jewish ideas
 related: tanya-on-forgiving-others, judging-others-favorably, difficult-relationships-with-parents, ahavat-yisrael, forgiveness-and-making-peace
 local: Dealing with a hard relationship? Rabbi Labkowski and Rebbetzin Labkowski are glad to talk: call 925-384-7242 or see /help/talk-to-the-rabbi.
