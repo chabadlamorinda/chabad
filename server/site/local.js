@@ -56,6 +56,22 @@ function seriesTiles(X) {
   return `<h2 id="series">${esc(t('Step by step'))}</h2><div class="grid series-tiles">${list.slice(0, 4).map(tile).join('')}</div>${list.length > 4 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} series', { n: list.length }))}</summary><div class="grid series-tiles">${list.slice(4).map(tile).join('')}</div></details>` : ''}`;
 }
 
+// ---- The Learn library's subjects (learn-topics.json): categories, subcategories, and each guide's place and order ----
+const catId = (cat) => cat.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+const CAT_ART = { Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' };
+const nm = (X, o) => (o && (o[X.lang] || o.en)) || '';
+const subOf = (C, a) => { for (const c of C.topics.categories) { const sub = c.subs.find((x) => x.id === a.sub); if (sub) return { cat: c, sub }; } return null; };
+// Guides of one subcategory in reading order: the curated rank first, then by title.
+const subGuides = (C, subId) => C.learn.filter((a) => a.sub === subId).sort((a, b) => ((a.rank || 99) - (b.rank || 99)) || a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }));
+function topicHub(X, groups) {
+  const { t, C } = X;
+  return groups.map(([cat]) => {
+    const c = C.topics.categories.find((x) => x.name === cat); if (!c) return '';
+    const total = C.learn.filter((a) => a.category === cat).length;
+    return `<h2 id="${catId(cat)}" class="cat-h">${artImg(CAT_ART[cat] || '')}<span><a href="/learn/topic/${catId(cat)}">${esc(nm(X, c) || t(cat))}</a></span></h2>
+<div class="cat-b"><div class="grid subs">${c.subs.map((sub) => { const n = C.learn.filter((a) => a.sub === sub.id).length; return n ? `<a class="card tile sub-tile" href="/learn/topic/${catId(cat)}/${sub.id}"><h3>${esc(nm(X, sub))}</h3><p>${esc(nm(X, sub.desc))}</p><span class="muted">${esc(t('{n} guides', { n }))}</span></a>` : ''; }).join('')}</div></div>`;
+  }).join('');
+}
 function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crumbs, counts, wrap, ctxOf }) {
   r.get('/our-area', wrap(async (req, res) => {
     const X = ctxOf(req), { t, C } = X, home = C.towns.filter((x) => x.tier === 'home'), near = C.towns.filter((x) => x.tier === 'near');
@@ -119,14 +135,41 @@ function mountLocal(r, { base, render, upcoming, eventCard, faqHtml, faqLd, crum
     const groups = cats.map((cat) => [cat, byPopularity(C.learn.filter((a) => a.category === cat).sort((a, b) => rank(a) - rank(b)), (a) => '/learn/' + a.slug)]).filter(([, l]) => l.length);
     await render(res, { path: '/learn', title: t('Learn about Judaism: guides to every Jewish topic'), description: t('Plain-language guides to Shabbat, kosher, mezuzah, tefillin, prayer, life events, mourning, the Jewish calendar, Torah and Jewish ideas, from Chabad of Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Learn about Judaism'))}</h1><p class="lead-d">${esc(t('{n} clear, friendly guides to Jewish life, from lighting Shabbat candles to saying Kaddish.', { n: C.learn.length }))} <a href="/help/talk-to-the-rabbi">${esc(t('Have a question that is not here? Ask the Rabbi.'))}</a></p>
-<p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
+<form action="${X.path('/search')}" method="get" role="search"><p><input type="search" name="q" class="search" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p></form>
 <p class="chips">${groups.map(([cat]) => `<a class="chip" href="#${id(cat)}">${esc(t(cat))}</a>`).join('')}<a class="chip" href="/holidays">${esc(t('Holidays'))}</a><a class="chip" href="/tehillim">${esc(t('Tehillim'))}</a></p>
 ${guideCards(X, START.map((s) => C.learn.find((a) => a.slug === s)).filter(Boolean), t('Start here'))}
 ${season.length ? guideCards(X, season, t('This season')) : ''}
 ${seriesTiles(X)}
-<div id="guides">${groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} guides', { n: list.length }))}</summary><ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${artImg(artFor('learn', a.slug, a.category))}<span>${esc(a.title)}</span></a></li>`).join('')}</ul></details>` : ''}</div>`).join('')}</div>
+<div id="guides">${C.topics && C.topics.categories.length ? topicHub(X, groups) : ''}${C.topics && C.topics.categories.length ? '' : groups.map(([cat, list]) => `<h2 id="${id(cat)}" class="cat-h">${artImg({ Lamorinda: 'map-pin', 'Shabbat & holidays': 'shabbat-candles', 'Jewish home': 'mezuzah', Kosher: 'kosher-pot', 'Prayer & Torah': 'torah-scroll', 'Life cycle': 'chuppah', 'Mourning & remembrance': 'candle-flame', 'Jewish ideas': 'sparkles' }[cat] || '')}<span>${esc(t(cat))}</span> <small>${list.length}</small></h2><div class="cat-b"><div class="grid">${list.slice(0, 6).map((a) => `<a class="card tile" href="/learn/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p></a>`).join('')}</div>${list.length > 6 ? `<details class="more-wrap"><summary class="btn ghost sm">${esc(t('All {n} guides', { n: list.length }))}</summary><ul class="more-guides">${list.slice(6).map((a) => `<li class="tile"><a href="/learn/${a.slug}">${artImg(artFor('learn', a.slug, a.category))}<span>${esc(a.title)}</span></a></li>`).join('')}</ul></details>` : ''}</div>`).join('')}</div>
 <p class="muted" data-filter-empty hidden>${esc(t('Nothing found. Try another word, or ask us.'))} <button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask us'))}</button></p></section>`,
       ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: t('Learn about Judaism'), url: base + X.path('/learn'), inLanguage: X.lang, hasPart: C.learn.map((a) => ({ '@type': 'Article', contentLocation: ['Lafayette', 'Moraga', 'Orinda'].map((n) => ({ '@type': 'City', name: n + ', CA' })), headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
+  }));
+
+  // A subject: /learn/topic/<category>/<subcategory> lists its guides in reading order; /learn/topic/<category> lists its subjects.
+  r.get('/learn/topic/:cat/:sub', wrap(async (req, res, next) => {
+    const X = ctxOf(req), { t, C } = X, cat = C.topics.categories.find((c) => catId(c.name) === req.params.cat), sub = cat && cat.subs.find((x) => x.id === req.params.sub);
+    if (!sub) return next();
+    const list = subGuides(C, sub.id);
+    if (!list.length) return next();
+    const sibs = cat.subs.filter((x) => x.id !== sub.id && C.learn.some((a) => a.sub === x.id));
+    await render(res, { path: `/learn/topic/${catId(cat.name)}/${sub.id}`, title: `${nm(X, sub)}: ${t('guides and answers')}`, description: nm(X, sub.desc) || t('Guides to Jewish life'),
+      body: `<section class="wrap sec"><p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › <a href="/learn/topic/${catId(cat.name)}">${esc(nm(X, cat) || t(cat.name))}</a></p>
+<h1>${esc(nm(X, sub))}</h1><p class="lead-d">${esc(nm(X, sub.desc))}</p>
+<p class="muted">${esc(t('{n} guides', { n: list.length }))}</p>
+<p><input type="search" class="search" data-filter="#guides .tile" placeholder="${esc(t('Search the guides'))}" aria-label="${esc(t('Search the guides'))}"></p>
+${guideCards(X, list.slice(0, 3), t('Start here'))}
+<div id="guides"><ol class="topic-list">${list.map((a) => `<li class="tile"><a href="/learn/${a.slug}"><strong>${esc(a.title)}</strong><span class="muted">${esc(a.description)}</span></a></li>`).join('')}</ol></div>
+<p class="muted" data-filter-empty hidden>${esc(t('Nothing found. Try another word, or ask us.'))} <button type="button" class="btn ghost sm" data-chat-open>${esc(t('Ask us'))}</button></p>
+${sibs.length ? `<h2>${esc(t('More in {name}', { name: nm(X, cat) || t(cat.name) }))}</h2><p class="chips">${sibs.map((x) => `<a class="chip" href="/learn/topic/${catId(cat.name)}/${x.id}">${esc(nm(X, x))}</a>`).join('')}</p>` : ''}</section>`,
+      ld: [crumbs(base, [[t('Learn'), '/learn'], [nm(X, cat) || t(cat.name), '/learn/topic/' + catId(cat.name)], [nm(X, sub), `/learn/topic/${catId(cat.name)}/${sub.id}`]]), { '@context': 'https://schema.org', '@type': 'CollectionPage', name: nm(X, sub), inLanguage: X.lang, hasPart: list.map((a) => ({ '@type': 'Article', headline: a.title, url: base + X.path('/learn/' + a.slug) })) }] });
+  }));
+  r.get('/learn/topic/:cat', wrap(async (req, res, next) => {
+    const X = ctxOf(req), { t, C } = X, cat = C.topics.categories.find((c) => catId(c.name) === req.params.cat);
+    if (!cat) return next();
+    await render(res, { path: '/learn/topic/' + catId(cat.name), title: `${nm(X, cat) || t(cat.name)}: ${t('guides by subject')}`, description: t('Guides about {name}, sorted by subject.', { name: nm(X, cat) || t(cat.name) }),
+      body: `<section class="wrap sec"><p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> ›</p><h1>${esc(nm(X, cat) || t(cat.name))}</h1>
+${cat.subs.map((sub) => { const list = subGuides(C, sub.id); return list.length ? `<h2 id="${sub.id}"><a href="/learn/topic/${catId(cat.name)}/${sub.id}">${esc(nm(X, sub))}</a> <small>${list.length}</small></h2><p class="muted">${esc(nm(X, sub.desc))}</p><ul class="topic-list">${list.slice(0, 4).map((a) => `<li class="tile"><a href="/learn/${a.slug}"><strong>${esc(a.title)}</strong></a></li>`).join('')}</ul>${list.length > 4 ? `<p><a class="btn ghost sm" href="/learn/topic/${catId(cat.name)}/${sub.id}">${esc(t('All {n} guides', { n: list.length }))}</a></p>` : ''}` : ''; }).join('')}</section>`,
+      ld: [crumbs(base, [[t('Learn'), '/learn'], [nm(X, cat) || t(cat.name), '/learn/topic/' + catId(cat.name)]])] });
   }));
 
   // Guides connected to an occasion get a "mark it" box (sponsor / Tehillim / Kaddish).
@@ -159,7 +202,7 @@ ${guideCards(X, parts)}
     // Then the guide, the questions people ask, and one inviting guide to read next.
     const topic = topicForPage('/learn/' + a.slug), act = topic && topic !== 'consult';
     const body = `<article class="wrap sec narrow learn">
-<p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › ${esc(t(a.category))}</p>
+${(() => { const so = a.sub && subOf(C, a); return so ? `<p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › <a href="/learn/topic/${catId(so.cat.name)}">${esc(nm(X, so.cat) || t(a.category))}</a> › <a href="/learn/topic/${catId(so.cat.name)}/${so.sub.id}">${esc(nm(X, so.sub))}</a></p>` : `<p class="crumbs"><a href="/learn">${esc(t('Learn'))}</a> › ${esc(t(a.category))}</p>`; })()}
 <h1>${esc(a.title)}</h1>
 <p class="lead-d">${esc(a.description)}</p>
 ${ser ? `<p class="series-line"><a href="#series">${esc(t('Part {n} of {total}', { n: ser.i + 1, total: ser.s.guides.length }))} · ${esc(ser.s.title)}</a></p>` : ''}

@@ -11,7 +11,7 @@ Kavanah (כוונה) means "intention," the focus and awareness you bring to pra
 
 Kavanah is knowing that you are standing before G-d, and understanding, at least in general, what you are saying. The Shulchan Aruch, has a whole chapter on concentrating during prayer. It teaches that prayer is meant to be said with attention to the meaning and to the One we speak to.
 
-That is a high goal, and Chassidic teaching is honest about it: it takes time. Chassidic teaching answers a reader who cannot focus on the words of the prayers by encouraging patience and steady progress, not guilt.
+That is a high goal, and it is honest to admit that it takes time. For someone who cannot focus on the words of the prayers, the answer is patience and steady progress, not guilt.
 
 ## Five gentle ways to focus
 
@@ -19,7 +19,7 @@ That is a high goal, and Chassidic teaching is honest about it: it takes time. C
 2. **Choose one prayer.** If you cannot focus on the whole service, give full attention to one section, such as the first paragraph of the [Amidah](/learn/amidah), or the [Shema](/learn/shema), or [Modeh Ani](/learn/modeh-ani).
 3. **Point along.** Follow the words in the prayer book with your finger. It keeps your eyes and mind on the page.
 4. **Understand the words.** Prayer becomes much more meaningful when you know what it says. Read the English, learn the meaning of a few lines, or ask the Rabbi. Pronouncing each word carefully also helps you stay with it.
-5. **Smile and begin again.** When you notice your mind has drifted, do not use a related thought to bring yourself back. Chassidic teaching suggests simply stopping and redirecting yourself back to the words. Smile instead of getting frustrated. A smile lifts your mood, and mood makes focus easier.
+5. **Smile and begin again.** When you notice your mind has drifted, do not use a related thought to bring yourself back. Instead, simply stop and redirect yourself back to the words. Smile instead of getting frustrated. A smile lifts your mood, and mood makes focus easier.
 
 ## When your mind wanders
 
@@ -45,7 +45,7 @@ Families in Lafayette, Moraga and Orinda often tell us that what helped was not 
 Kavanah means intention or focus in prayer. It is knowing before Whom you stand and paying attention to what you are saying.
 
 ### How do I concentrate when I pray?
-Start with five minutes of real focus on one prayer, follow the words with your finger, and learn what they mean. Chassidic philosophy also suggests smiling and refocusing instead of getting frustrated.
+Start with five minutes of real focus on one prayer, follow the words with your finger, and learn what they mean. When your mind drifts, smile and refocus instead of getting frustrated.
 
 ### Is it normal for my mind to wander during prayer?
 Yes. It happens to nearly everyone. When you notice, simply return to the words, without scolding yourself.
@@ -57,7 +57,7 @@ It helps to understand what you are saying, so read the English translation or l
 It is a custom that helps concentration on the first verse. Ask the Rabbi if you would like to try it.
 
 ### What if I cannot focus on the whole service?
-Choose one section, such as the first paragraph of the Amidah, and give it your full attention. Chassidic thought recommends this.
+Choose one section, such as the first paragraph of the Amidah, and give it your full attention.
 
 ## Take the next step
 

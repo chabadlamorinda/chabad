@@ -45,7 +45,7 @@ If you have a friend or relative who needs help, or tuition, or a debt, those ar
 
 ## When your income is small
 
-Jewish law teaches that your own basic needs come first. If you cannot cover food, clothing and shelter, you are not obligated to give maaser, and if you are just getting by, some opinions allow figuring maaser after basic living expenses. Debts that are due now, such as unpaid wages or loans, take precedence over giving maaser. The Rebbe encouraged giving a partial amount where needed. There is warm guidance in [Giving When Money Is Tight](/learn/giving-when-money-is-tight). For your case, ask the Rabbi.
+Your own basic needs come first. If you cannot cover food, clothing and shelter, you are not obligated to give maaser, and if you are just getting by, some opinions allow figuring maaser after basic living expenses. Debts that are due now, such as unpaid wages or loans, take precedence over giving maaser. The Rebbe encouraged giving a partial amount where needed. There is warm guidance in [Giving When Money Is Tight](/learn/giving-when-money-is-tight). For your case, ask the Rabbi.
 
 ## Common questions
 
@@ -62,7 +62,7 @@ Normally yes. The exception is money given for a specific purpose, like rent or 
 No. Loans you must repay are not income.
 
 ### What about my retirement account?
-The general sources do not settle this case, so ask the Rabbi, and your tax advisor for the tax side.
+There is no one simple answer here, so ask the Rabbi, and your tax advisor for the tax side.
 
 ### Can I calculate maaser once a year?
 Yes. You may calculate at any point in the year, though it is ideal to separate maaser when income is received. See [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).

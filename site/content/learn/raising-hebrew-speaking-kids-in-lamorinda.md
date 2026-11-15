@@ -19,7 +19,7 @@ Children living in America hear English all day at school, and Hebrew can slip a
 
 ## Which Hebrew? Modern and the Holy Tongue
 
-Jewish tradition calls the Hebrew of the Torah and prayers Lashon HaKodesh (לְשׁוֹן הַקֹּדֶשׁ), the Holy Tongue, and that modern Hebrew is usually called Ivrit. Both matter. Everyday Hebrew helps a child talk with family, and the Hebrew of the siddur and the Torah opens the door to Jewish life. The sages also advise teaching children to understand Hebrew, not only to read it. Read more in [Lashon HaKodesh](/learn/lashon-hakodesh) and [Hebrew Phrases](/learn/hebrew-phrases).
+Jewish tradition calls the Hebrew of the Torah and prayers Lashon HaKodesh (לְשׁוֹן הַקֹּדֶשׁ), the Holy Tongue, and modern Hebrew is usually called Ivrit. Both matter. Everyday Hebrew helps a child talk with family, and the Hebrew of the siddur and the Torah opens the door to Jewish life. The sages also advise teaching children to understand Hebrew, not only to read it. Read more in [Lashon HaKodesh](/learn/lashon-hakodesh) and [Hebrew Phrases](/learn/hebrew-phrases).
 
 ## More than language: the Jewish year in a new place
 

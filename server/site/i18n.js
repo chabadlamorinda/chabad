@@ -92,6 +92,7 @@ function createI18n(dir) {
       jokes: overlay(en.jokes || [], j('jokes.json')),
       series: overlay(en.series || [], j('series.json')),
       stories: overlay(en.stories || [], j('stories.json')),
+      topics: en.topics || { categories: [], guides: {} }, // names in three languages are inside
       rabbiWords: en.rabbiWords || [], // translations are inside each entry (he, ru)
       events: en.events.map((e) => (e[lang] ? { ...e, ...Object.fromEntries(Object.entries(e[lang]).filter(([k, v]) => ['title', 'summary', 'details', 'price'].includes(k) && typeof v === 'string' && v.trim())) } : e)),
       pages: md('pages', en.pages),

@@ -9,7 +9,7 @@ In Jewish tradition a mother is the pillar of the home: Chassidic philosophy des
 
 ## The woman and the home
 
-Chassidic teaching on women's special mitzvot says that the woman nurtures her inner space and her home, and in doing so shapes the values and attitudes of her family. Chassidic teaching describes the home as a "mini-Temple," and the mother as the one who builds it, by bringing in light, holiness and nourishment. See [Jewish women](/learn/jewish-women).
+Chassidic teaching on women's special mitzvot says that the woman nurtures her inner space and her home, and in doing so shapes the values and attitudes of her family. It describes the home as a "mini-Temple," and the mother as the one who builds it, by bringing in light, holiness and nourishment. See [Jewish women](/learn/jewish-women).
 
 The three mitzvot traditionally given special emphasis to women, candles, challah and family purity, are all about home life. Read [the three special mitzvot of Jewish women](/learn/three-mitzvot-for-jewish-women).
 

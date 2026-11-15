@@ -54,6 +54,8 @@ function load(dir = DIR, opts = {}) {
   const forms = optJson(dir, 'forms.json', []), giving = optJson(dir, 'giving.json', {}), home = optJson(dir, 'home.json', {});
   const towns = optJson(dir, 'towns.json', []), redirects = optJson(dir, 'redirects.json', {});
   const campaigns = optJson(dir, 'campaigns.json', []);
+  // The Learn library's subjects: categories, subcategories (with names in three languages) and where each guide sits (learn-topics.json).
+  const topics = optJson(dir, 'learn-topics.json', { categories: [], guides: {} });
   const jokes = optJson(dir, 'jokes.json', []); // the weekly email's joke of the week
   // Jewish stories and jokes (/stories, server/site/stories.js): the Rabbi's collection and stories from reputable sources.
   const stories = optJson(dir, 'stories.json', []);
@@ -139,11 +141,12 @@ function load(dir = DIR, opts = {}) {
   }
   for (const s of series) for (const g of s.guides || []) if (!learnSlugs.has(g)) throw new Error(`series.json: "${s.id}" lists "${g}", which is not a guide in learn/`);
   for (const t of towns) t.miles = Math.round(miles(org.geo, t) * 10) / 10;
+  for (const a of learn) { const g = topics.guides[a.slug]; if (g) { a.sub = g.sub; a.rank = g.rank; } }
   for (const x of parsha) { const { body, faq: qa } = splitFaq(x.body); x.body = body; x.faq = qa; }
   for (const h of help) { const { body, faq: qa } = splitFaq(h.body); h.body = body; h.faq = qa; h.order = Number(h.order) || 99; h.related = String(h.related || '').split(',').map((x) => x.trim()).filter(Boolean); }
   help.sort((a, b) => a.order - b.order);
   for (const w of org.weekly || []) if (kabbalat && /\{kabbalat-shabbat\}/.test(w.time || '')) w.startTime = kabbalat;
-  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, parsha, sponsor, tehillim, forms, giving, home, campaigns, jokes, stories, series, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
+  return fillTimes({ org, programs, events, faq, directory, pages, holidays, learn, towns, redirects, help, parsha, topics, sponsor, tehillim, forms, giving, home, campaigns, jokes, stories, series, rabbiWords, kabbalat, siteHost: opts.siteHost || '', loadedAt: new Date() }, kabbalat, 'en', opts.siteHost || '');
 }
 function readPagesIn(dir, sub) {
   const d = path.join(dir, sub);

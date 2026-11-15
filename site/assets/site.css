@@ -1017,3 +1017,11 @@ a.ask-rabbi { text-decoration: underline dotted var(--gold-ink, #8a6a1f); text-u
 .legacy-aside { margin: 16px 0; padding: 14px 16px; border: 1px solid var(--line); border-inline-start: 4px solid var(--gold); border-radius: 12px; background: var(--card); font-size: .95rem; }
 .legacy-aside p { margin: 0 0 8px; } .legacy-aside .hand { font-size: 1.25rem; color: var(--gold-ink); }
 @media (min-width: 1000px) { .legacy-aside { float: inline-end; width: 270px; margin: 4px -300px 16px 20px; } [dir=rtl] .legacy-aside { margin: 4px 20px 16px -300px; } }
+
+/* Learn library: subjects */
+.grid.subs { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.sub-tile h3 { margin: 0 0 4px; font-size: 1.05rem; } .sub-tile p { margin: 0 0 6px; font-size: .92rem; } .sub-tile .muted { font-size: .85rem; }
+.topic-list { list-style: none; margin: 8px 0 18px; padding: 0; display: grid; gap: 6px; }
+.topic-list li a { display: block; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); text-decoration: none; color: inherit; }
+.topic-list li a strong { display: block; } .topic-list li a .muted { display: block; font-size: .88rem; }
+.topic-list li a:hover { border-color: var(--gold); }

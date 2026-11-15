@@ -9,7 +9,7 @@ Challah (חַלָּה) is the braided egg bread Jews eat on Shabbat and holidays
 
 ## A simple challah dough
 
-This is a home-size version, scaled down by us from a large traditional recipe (which uses 5 pounds of flour). Use it as a starting point and adjust to your oven and flour.
+This is a home-size version, scaled down by us from a larger recipe (which uses 5 pounds of flour). Use it as a starting point and adjust to your oven and flour.
 
 **Makes two medium loaves**
 

@@ -9,7 +9,7 @@ The Jewish sites children love most in Israel are the ones they can touch and ex
 
 ## Start at the Western Wall
 
-Walking up to the Kotel is a moment many children remember. One mother on Jewish tradition describes how a soldier on the way to the Kotel gave her young sons a handful of little Magen David pins. Children can write a note with a prayer and place it in the cracks of the Wall, as many visitors do (see [The Western Wall](/learn/western-wall)). The Wall is the last remaining structure of the Temple Mount complex, and it is a good place to tell children about the Holy Temple (see [The Holy Temple](/learn/the-holy-temple)).
+Walking up to the Kotel is a moment many children remember. One mother describes how a soldier on the way to the Kotel gave her young sons a handful of little Magen David pins. Children can write a note with a prayer and place it in the cracks of the Wall, as many visitors do (see [The Western Wall](/learn/western-wall)). The Wall is the last remaining structure of the Temple Mount complex, and it is a good place to tell children about the Holy Temple (see [The Holy Temple](/learn/the-holy-temple)).
 
 ## Underground Jerusalem
 

@@ -9,13 +9,13 @@ A Jewish husband is taught to honor his wife even more than he honors himself. I
 
 ## "Honor your wife more than yourself"
 
-The article "Different But Equal" tells of a husband who claimed that his wife must listen to him because he was "the master of the house." The Lubavitcher Rebbe replied that there is an earlier obligation: a man should honor his wife more than he honors himself. Do that first, said the Rebbe, and the respect and love of his wife will follow.
+There is a story of a husband who claimed that his wife must listen to him because he was "the master of the house." The Lubavitcher Rebbe replied that there is an earlier obligation: a man should honor his wife more than he honors himself. Do that first, said the Rebbe, and the respect and love of his wife will follow.
 
-Jewish wisdom also brings the sages' teaching that the blessings a man receives come on account of his wife: "Honor your wife so you may become wealthy." A husband who treats his wife as a blessing in his life is on the right track. See [shalom bayit](/learn/shalom-bayit) and [the Woman of Valor](/learn/eishet-chayil), the song many husbands sing to their wives on Friday night.
+The sages also taught that the blessings a man receives come on account of his wife: "Honor your wife so you may become wealthy." A husband who treats his wife as a blessing in his life is on the right track. See [shalom bayit](/learn/shalom-bayit) and [the Woman of Valor](/learn/eishet-chayil), the song many husbands sing to their wives on Friday night.
 
 ## Five things that build harmony
 
-Jewish wisdom lists five Torah teachings for a peaceful marriage. In plain words:
+Here are five Torah teachings for a peaceful marriage, in plain words:
 
 1. **Respect.** It starts with self-control over selfish impulses. Value your wife and show it: let her influence you, accept her right to make decisions and affirm her worth in words and deeds.
 2. **Commitment.** Your spouse comes first, above parents, friends, work and your own interests. Stand together in hard times and feel her pain as your own.
@@ -25,7 +25,7 @@ Jewish wisdom lists five Torah teachings for a peaceful marriage. In plain words
 
 ## Words matter
 
-A husband's words build or break a home. The article "Different But Equal" teaches that men and women share the same purpose, to join body and soul and make the world better, and that each uses the abilities G-d gave them. The goal is not for husband and wife to become alike, but to respect their differences. If your wife tells you she was hurt, listen to understand. Read more in [marriage arguments: Jewish wisdom](/learn/marriage-arguments-jewish-wisdom).
+A husband's words build or break a home. Chassidic teaching holds that men and women share the same purpose, to join body and soul and make the world better, and that each uses the abilities G-d gave them. The goal is not for husband and wife to become alike, but to respect their differences. If your wife tells you she was hurt, listen to understand. Read more in [marriage arguments: Jewish wisdom](/learn/marriage-arguments-jewish-wisdom).
 
 ## The first year and every year
 
@@ -40,7 +40,7 @@ He should honor her more than himself, with respectful words, caring actions and
 Chabad teaching does not stress authority first. The Rebbe pointed a husband to his duty to honor his wife before anything else. For questions about your own home, speak with the Rabbi.
 
 ### Does "Honor your wife so you may become wealthy" mean money?
-Not only. It comes with the sages' teaching that a man's blessings come on account of his wife, so honoring her brings blessing into the whole home.
+Not only. The saying comes with the sages' teaching that a man's blessings come on account of his wife, so honoring her brings blessing into the whole home.
 
 ### What can I do for my wife this week?
 Choose one of the five teachings above: say thank you, listen without advice or put her needs first once.

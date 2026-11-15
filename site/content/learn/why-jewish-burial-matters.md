@@ -15,7 +15,7 @@ The Torah commands burial, and Jewish tradition points to the verse in Deuterono
 
 ## The body is precious
 
-Jewish law explains that the body is a gift on loan from G-d, so it is returned whole, as it was given. It was also the vessel through which a person did mitzvot, and that gives it lasting value, like a holy object that is buried with respect when it can no longer be used. This is why Jewish law is careful about anything that harms or alters the body after death. You can read more in [autopsy: the Jewish view](/learn/autopsy-jewish-view) and [embalming and viewing](/learn/embalming-and-viewing-jewish-view).
+Jewish tradition explains that the body is a gift on loan from G-d, so it is returned whole, as it was given. It was also the vessel through which a person did mitzvot, and that gives it lasting value, like a holy object that is buried with respect when it can no longer be used. This is why Jewish law is careful about anything that harms or alters the body after death. You can read more in [autopsy: the Jewish view](/learn/autopsy-jewish-view) and [embalming and viewing](/learn/embalming-and-viewing-jewish-view).
 
 ## Back to the earth, and the hope of resurrection
 
@@ -23,7 +23,7 @@ Jewish law explains that the body is a gift on loan from G-d, so it is returned 
 
 ## A kindness that can never be repaid
 
-Burial is called a *chesed shel emet*, a "true kindness," because the one who receives it can never thank you. The Torah's attitude to this is striking. Jewish tradition notes that even the High Priest, who is normally forbidden to come near the dead, must bury a Jew who has no one else to bury him. This is called a *met mitzvah*. Everyone who helps, by guarding, preparing, carrying or filling the grave, takes part in that kindness. See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
+Burial is called a *chesed shel emet*, a "true kindness," because the one who receives it can never thank you. The Torah's attitude to this is striking. Jewish law teaches that even the High Priest, who is normally forbidden to come near the dead, must bury a Jew who has no one else to bury him. This is called a *met mitzvah*. Everyone who helps, by guarding, preparing, carrying or filling the grave, takes part in that kindness. See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
 
 ## If cremation was requested or has happened
 

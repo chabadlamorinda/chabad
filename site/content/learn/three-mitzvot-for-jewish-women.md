@@ -28,7 +28,7 @@ Girls can begin lighting around age three, when they can say the blessing. See [
 
 Before baking bread, a small piece of dough is separated and burned, as the Torah says: give "the first of your kneading" (Numbers 15). A piece of about an ounce is separated and said to be challah. Chabad teaching explains that it expresses that everything we have comes from G-d, and that serving Him comes first.
 
-The blessing is said only when the dough is large enough (the usual measure is 59 ounces of flour; for a smaller amount, ask the Rabbi or Rebbetzin). Read the whole procedure in [taking challah](/learn/hafrashat-challah), and see the practical steps in [baking challah](/learn/baking-challah). Chabad teaching also connects this mitzvah to keeping kosher: holiness reaches the kitchen.
+The blessing is said only when the dough is large enough (the a common measure is 59 ounces of flour; for a smaller amount, ask the Rabbi or Rebbetzin). Read the whole procedure in [taking challah](/learn/hafrashat-challah), and see the practical steps in [baking challah](/learn/baking-challah). Chabad teaching also connects this mitzvah to keeping kosher: holiness reaches the kitchen.
 
 ## 3. Family purity
 

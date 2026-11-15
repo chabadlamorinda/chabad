@@ -9,7 +9,7 @@ Judaism is the faith and way of life of the Jewish people, based on the belief i
 
 ## What Jews believe
 
-- **One G-d.** Judaism teaches one invisible Creator without a body. Tradition also teaches that G-d is also called "Hashem," "The Name."
+- **One G-d.** Judaism teaches one invisible Creator without a body. G-d is also called "Hashem," "The Name."
 - **The Torah.** The Five Books of Moses, with the Oral Torah in the Midrash and Talmud, are the foundation of Jewish belief and practice.
 - **The mitzvot.** The word mitzvah means "command," not just "good deed." The Torah has 613 commandments. Every mitzvah has value, and people can take on more step by step.
 

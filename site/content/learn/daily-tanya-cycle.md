@@ -7,7 +7,7 @@ local: Want a partner for your daily Tanya? Call Rabbi Labkowski at 925-384-7242
 ---
 The daily Tanya is a short portion of the Tanya set for each day of the year, so that the whole book is studied in one year. It is one of the three parts of Chitas (חת"ת), the daily study program whose letters stand for Chumash, Tehillim and Tanya.
 
-Online, each day's page shows that day's portion, with audio and video classes on it, and the text in English, Hebrew or both.
+Online, a page for each day shows that day's portion, with audio and video classes on it, and the text in English, Hebrew or both.
 
 ## What is Chitas?
 
@@ -28,7 +28,7 @@ In a Jewish leap year, there are two tracks. The leap-year track has smaller por
 ## How to follow it
 
 - **A book:** the Sefer Hachitas, which since the 1980s has combined the three texts with a prayer book and Hayom Yom.
-- **Online or on a phone:** the Tanya, Chumash and Tehillim portions are online and in the Daily Study App, in several languages, with audio and video. The website and app are not to be used on Shabbat or Jewish holidays.
+- **Online or on a phone:** the Tanya, Chumash and Tehillim portions are online and in the Daily Study App, in several languages, with audio and video. Websites and apps are not used on Shabbat or Jewish holidays.
 - **A weekly booklet:** Chayenu includes the week's Chitas portions.
 
 A daily portion takes different people different amounts of time, so start small. If you are new to the book, begin with [how to start learning Tanya](/learn/how-to-start-learning-tanya) first, and use the [Tanya glossary](/learn/tanya-glossary-for-beginners).
