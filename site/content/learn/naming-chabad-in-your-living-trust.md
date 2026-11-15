@@ -5,7 +5,7 @@ category: Life cycle
 related: leaving-chabad-in-your-will, leaving-a-jewish-legacy-gift, legacy-gift-step-by-step, halachic-will, family-feuds-and-inheritance
 local: Have a living trust and want to include Chabad of Lamorinda? Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241.
 ---
-You can name a synagogue in your living trust by asking your attorney to add a charitable gift to the trust, naming the organization with its exact legal name and tax ID. Chabad of Lamorinda accepts legacy gifts through a trust, and such a gift helps keep Jewish education and Jewish life strong in Lafayette, Moraga and Orinda.
+You can name a synagogue in your living trust by asking your attorney to add a charitable gift to the trust, naming the organization with its name and tax ID; for us the name is "Chabad of Lamorinda." Chabad of Lamorinda accepts legacy gifts through a trust, and such a gift helps keep Jewish education and Jewish life strong in Lafayette, Moraga and Orinda.
 
 ## How a gift in a trust works
 
@@ -26,7 +26,7 @@ Questions you may want to bring to your attorney:
 
 ## Information for your attorney
 
-Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. The [legacy page](/legacy) lists the same details.
+The name to use is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. The [legacy page](/legacy) lists the same details, and our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys) gives your attorney wording to start from. An entire estate can be left to Chabad of Lamorinda: the limit of a fifth on giving applies during life, not at death. A gift can carry the name of someone you love, in memory or in honor, and Chabad of Lamorinda gladly offers dedication opportunities, such as dedicating a room or a memorial plaque in the synagogue; consult the Rabbi.
 
 ## Tell your family and the Rabbi
 
@@ -37,7 +37,7 @@ For Chabad of Lamorinda, a gift like this is education for future generations an
 ## Common questions
 
 ### Can I name a synagogue in my living trust?
-Yes. Ask your attorney to add a charitable gift to the trust, naming the synagogue exactly. Chabad.org describes gifts in a will or trust as a set amount, a specific asset or a percentage.
+Yes. Ask your attorney to add a charitable gift to the trust, naming the synagogue exactly; for us, "Chabad of Lamorinda." Chabad.org describes gifts in a will or trust as a set amount, a specific asset or a percentage.
 
 ### Is a gift in a trust different from a gift in a will?
 The choices are similar. The difference is where the instructions are written. Your attorney can explain how your own documents work.

@@ -50,7 +50,7 @@ Vidui is a short prayer said near the end of life, asking forgiveness and affirm
 Jewish tradition requires burial and does not permit cremation, because the body is treated as sacred. The Rabbi is glad to talk this through with you gently.
 
 ### What should we do when our loved one passes away?
-Call the Rabbi right away, before calling a funeral home if possible. See [When a Loved One Passes Away](/help/someone-passed-away).
+Call the Rabbi right away, at 925-384-7242, before calling the burial society or a funeral home. He will guide you through every step and make the arrangements. See [When a Loved One Passes Away](/help/someone-passed-away).
 
 ### Can the Rabbi help with medical decisions?
 The Rabbi can explain what Jewish law says and guide you on your specific situation. He works alongside, not instead of, your loved one's doctors.

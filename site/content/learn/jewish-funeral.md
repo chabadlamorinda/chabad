@@ -15,8 +15,8 @@ If you are reading this because you have just lost someone, we are deeply sorry.
 
 When a death occurs:
 
-1. **Call the Rabbi.** He can guide you on what to do next and help coordinate with a Jewish funeral home and burial society.
-2. **Contact a funeral home** familiar with Jewish practice.
+1. **Call the Rabbi first.** Call Rabbi Yisroel Labkowski at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241) before calling the burial society or a funeral home. He will guide your family through every step and make the arrangements.
+2. **The funeral home** should be one familiar with Jewish practice; the Rabbi will help with this.
 3. **Do not leave the body alone.** It is customary for someone to stay with the deceased and recite [Tehillim](/learn/tehillim) (Psalms). This is called shemirah, "guarding."
 
 ## Preparing the body: tahara
@@ -66,3 +66,8 @@ Dress modestly in dark, respectful clothing. Men usually wear a kippah, and kipp
 ### What do I say to the mourners?
 
 Simple words are best: "I am so sorry for your loss." The traditional phrase is "May G-d comfort you among the mourners of Zion and Jerusalem." Your presence means more than any words.
+
+## Take the next step
+
+- If a loved one has just passed away, call Rabbi Labkowski first, at 925-384-7242, before the burial society or a funeral home.
+- Read [what to do in the first hours](/learn/first-hours-after-a-death) and [shiva](/learn/shiva).

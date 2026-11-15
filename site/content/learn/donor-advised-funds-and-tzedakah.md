@@ -5,7 +5,7 @@ category: Jewish ideas
 related: maaser, donor-advised-fund-successor-chabad, giving-stock-to-chabad, leaving-your-ira-to-a-jewish-cause, year-end-tzedakah, tzedakah-priorities, giving-when-money-is-tight, leaving-a-jewish-legacy-gift
 local: Have a question about maaser, stock or a donor-advised fund? Call Rabbi Labkowski at 925-384-7242.
 ---
-Chabad of Lamorinda accepts donor-advised fund grants and gifts of stock. A grant from a donor-advised fund counts as maaser (the tithe, usually a tenth of income given to tzedakah), as Rabbi Yisroel Labkowski has confirmed. To arrange a grant or a gift of stock, call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. Chabad.org's guides to maaser do not address donor-advised funds or gifts of stock directly. What the guides do teach is a clear set of rules about intention, timing and who may receive maaser, and those rules show which questions to ask.
+Chabad of Lamorinda accepts donor-advised fund grants and gifts of stock. A grant from a donor-advised fund counts as maaser (the tithe, usually a tenth of income given to tzedakah), as Rabbi Yisroel Labkowski has confirmed. A legacy gift counts as maaser too. Chabad of Lamorinda has a Fidelity brokerage account for gifts of stock. To arrange a grant or a gift of stock, call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, and we will give you the transfer details. Chabad.org's guides to maaser do not address donor-advised funds or gifts of stock directly. What the guides do teach is a clear set of rules about intention, timing and who may receive maaser, and those rules show which questions to ask.
 
 ## What maaser is
 
@@ -23,7 +23,7 @@ This matters for stock and other investments: the guide treats the gain as incom
 
 **Does a donor-advised fund (DAF) count?** Yes. Rabbi Labkowski has confirmed that a donor-advised fund grant counts as maaser. Chabad.org's maaser guides do not discuss DAFs, but a grant recommended from your fund to Chabad of Lamorinda counts toward your tenth. Chabad of Lamorinda accepts donor-advised fund grants; call the Rabbi or the Rebbetzin to arrange one.
 
-**Does giving stock count?** Chabad.org's guide mentions only that investment gains count as income once realized. Chabad of Lamorinda accepts gifts of stock. Please ask the Rabbi how it counts as maaser, and your tax advisor about taxes.
+**Does giving stock count?** Chabad.org's guide mentions only that investment gains count as income once realized. Chabad of Lamorinda accepts gifts of stock through its Fidelity brokerage account. Please ask the Rabbi how it counts as maaser, and your tax advisor about taxes.
 
 **Can I use maaser to pay a pledge?** Chabad.org says maaser can cover a pledge only if you intended to use maaser when you made the pledge. A pledge made without that intent must come from regular funds.
 
@@ -38,7 +38,7 @@ This matters for stock and other investments: the guide treats the gain as incom
 
 ## Giving to Chabad of Lamorinda
 
-The [giving page](/donate) accepts gifts once or monthly. Chabad of Lamorinda accepts grants from donor-advised funds and gifts of stock, and can also be named as a beneficiary in your plans. To arrange a grant or a gift of stock, contact Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. The [legacy page](/legacy) lists ways to include Chabad of Lamorinda in your plans, including the tax ID your advisor or fund will ask for. Ask your tax advisor about the tax side.
+The [giving page](/donate) accepts gifts once or monthly. Chabad of Lamorinda accepts grants from donor-advised funds and gifts of stock, and can also be named as a beneficiary in your plans; a legacy gift counts as maaser. To arrange a grant or a gift of stock, contact Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. The [legacy page](/legacy) lists ways to include Chabad of Lamorinda in your plans, including the tax ID your advisor or fund will ask for. Ask your tax advisor about the tax side.
 
 ## Common questions
 
@@ -46,7 +46,7 @@ The [giving page](/donate) accepts gifts once or monthly. Chabad of Lamorinda ac
 Yes. A donor-advised fund grant counts as maaser, as Rabbi Labkowski has confirmed, and Chabad of Lamorinda accepts these grants. To arrange one, contact Rabbi Yisroel Labkowski (925-384-7242) or Rebbetzin Tzipora Labkowski (925-384-7241).
 
 ### Does a gift of stock count as tzedakah?
-Chabad of Lamorinda accepts gifts of stock; call 925-384-7242 to arrange one. How the value of a gift of stock is counted for maaser is a question for the Rabbi. Ask your tax advisor about taxes.
+Chabad of Lamorinda accepts gifts of stock through its Fidelity brokerage account; call 925-384-7242 for the transfer details. How the value of a gift of stock is counted for maaser is a question for the Rabbi. Ask your tax advisor about taxes.
 
 ### Do I have to give maaser if I am struggling?
 No. Chabad.org says basic needs come first, and you are not obligated to give maaser if you cannot cover them. The Rebbe encouraged giving a partial amount when needed. Ask the Rabbi. See [Giving Tzedakah When Money Is Tight](/learn/giving-when-money-is-tight).

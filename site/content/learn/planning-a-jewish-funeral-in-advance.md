@@ -26,7 +26,7 @@ Put your wishes on paper and keep them where your family can find them. Consider
 3. **A plain casket and white shrouds.** Simple and the same for everyone.
 4. **No embalming, no autopsy** unless the law requires it. In that case the family should call the Rabbi at once.
 5. **A Jewish cemetery.** Chabad.org describes a proper Jewish cemetery as reserved for Jews, with permanent burial rights and fully separate sections.
-6. **Whom to call first**: the Rabbi's number, 925-384-7242, your funeral home, and family members.
+6. **Whom to call first**: Rabbi Yisroel Labkowski, 925-384-7242 (or Rebbetzin Tzipora Labkowski, 925-384-7241), before the burial society or a funeral home; then family members. The Rabbi will guide your family through every step and make the arrangements.
 7. **Burial in Israel**, if that is your wish. Burial in the Holy Land is considered an act of special devotion. It requires planning and is best discussed with the Rabbi.
 8. **Your Hebrew name.** Your Hebrew name and your parents' names are used at the funeral and on the grave. If you do not know them, see [getting a Hebrew name](/learn/getting-a-hebrew-name-as-an-adult).
 

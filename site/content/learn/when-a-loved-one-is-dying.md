@@ -36,7 +36,7 @@ If you can, think about these before the last day, so you are not deciding in a 
 
 ## At the moment of passing
 
-When the soul leaves the body, those present may say "Baruch Dayan HaEmet," "Blessed is the true Judge." Close the eyes gently, cover the body with a sheet, and, if possible, open a window. The custom is to stay with the body and not leave it alone, saying Tehillim, until the Chevra Kadisha arrives. Then call the Rabbi: he will help with every next step. See [the Jewish funeral](/learn/jewish-funeral) and [someone passed away](/help/someone-passed-away).
+When the soul leaves the body, those present may say "Baruch Dayan HaEmet," "Blessed is the true Judge." Close the eyes gently, cover the body with a sheet, and, if possible, open a window. The custom is to stay with the body and not leave it alone, saying Tehillim, until the Chevra Kadisha arrives. Call the Rabbi first, before the burial society or a funeral home: he will guide you through every step and make the arrangements. See [the Jewish funeral](/learn/jewish-funeral) and [someone passed away](/help/someone-passed-away).
 
 ## Take care of yourself too
 
@@ -55,3 +55,8 @@ Call Rabbi Labkowski at 925-384-7242 and he will arrange to visit or help over t
 
 ### Do we have to bury quickly if relatives are flying in?
 Burial is done as soon as possible, and a short delay for close family to arrive is often allowed. Ask the Rabbi about your situation.
+
+## Take the next step
+
+- Call Rabbi Labkowski at 925-384-7242 or the Rebbetzin at 925-384-7241 for a visit, prayers and support.
+- Read [what to do in the first hours](/learn/first-hours-after-a-death) and [the Jewish funeral](/learn/jewish-funeral).

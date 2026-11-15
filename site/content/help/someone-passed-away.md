@@ -6,7 +6,7 @@ urgent: yes
 icon: candle
 related: learn/jewish-funeral, learn/shiva, learn/kaddish, end-of-life, learn/setting-up-a-shiva-house, learn/mourning-journey, learn/kriah
 ---
-We are so sorry for your loss. If someone you love has just passed away, please call Rabbi Yisroel Labkowski at **925-384-7242** as soon as you can, ideally before you call a funeral home. You do not need to know what to do. The Rabbi and Chabad of Lamorinda will walk you through each step, from the first hours to the funeral, shiva and Kaddish. It does not matter how observant you or your loved one were. We are here for every Jewish family.
+We are so sorry for your loss. If someone you love has just passed away, please call Rabbi Yisroel Labkowski at **925-384-7242** as soon as you can, before you call the burial society (Chevra Kadisha) or a funeral home. You do not need to know what to do. The Rabbi and Chabad of Lamorinda will walk you through each step, from the first hours to the funeral, shiva and Kaddish. It does not matter how observant you or your loved one were. We are here for every Jewish family.
 
 **Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 at once.**
 
@@ -15,7 +15,7 @@ We are so sorry for your loss. If someone you love has just passed away, please 
 1. **Call the Rabbi at 925-384-7242.** Tell him where your loved one is and who is with them.
 2. **Before signing anything with a funeral home, speak with the Rabbi.** Some arrangements, such as embalming, an autopsy or cremation, are against Jewish law and hard to undo. The Rabbi can help you make choices that honor your loved one's soul.
 3. **If you are with the person,** it is customary to close the eyes gently, cover the body with a sheet, and, if possible, light a candle near the head. Try not to leave the body alone.
-4. **Let the Rabbi help coordinate.** He will be in touch with the Chevra Kadisha (the Jewish burial society) and help with the next steps.
+4. **Let the Rabbi make the arrangements.** He will guide you through every step and make the arrangements with the Chevra Kadisha (the Jewish burial society).
 
 If a death is sudden or unexpected, call 911 first. Then call the Rabbi.
 
@@ -42,7 +42,7 @@ Judaism teaches that the soul is eternal. The body that housed it is treated wit
 ## Common questions
 
 ### Should I call the funeral home or the Rabbi first?
-Call the Rabbi first if you can, at 925-384-7242. He can help you choose arrangements that follow Jewish tradition and coordinate with the Chevra Kadisha before decisions are made.
+Call the Rabbi first, at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241), before the burial society or the funeral home. He will guide you through every step and make the arrangements with the Chevra Kadisha, following Jewish tradition, before decisions are made.
 
 ### What if my loved one was not religious?
 Every Jew is entitled to a Jewish burial and a dignified Jewish funeral. Observance level does not matter. We will help with love and without judgment.

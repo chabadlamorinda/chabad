@@ -67,4 +67,4 @@ Ask the Rabbi. Call 925-384-7242 or write through [the Rabbi's page](/help/talk-
 
 - Ready to start? Read [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).
 - Have a donor-advised fund? Call 925-384-7242 or 925-384-7241 to arrange a grant.
-- Think about the future too: see [legacy gifts](/legacy), which can include a bequest, a retirement account or life insurance.
+- Think about the future too: see [legacy gifts](/legacy), which can include a bequest, a retirement account or life insurance. A legacy gift counts as maaser.

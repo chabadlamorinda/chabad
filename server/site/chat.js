@@ -51,7 +51,7 @@ function knowledge(C) {
   for (const f of C.faq) L.push(`Q: ${f.q}`, `A: ${plain(f.a)}`);
   // Guides: only the list here (the full text of the few that match each question is added per question, see relevant()).
   L.push('', '## Guides to Jewish life (/learn): titles; link to them when they fit');
-  for (const a of C.learn) L.push(`- ${a.title} (/learn/${a.slug})`);
+  for (const a of C.learn) L.push(`- ${a.title.split(':')[0]} (/learn/${a.slug})`); // the part before the colon keeps the list short as the library grows
   L.push('', '## Help in life situations (/help)');
   for (const h of C.help || []) L.push(`- ${h.title} (/help/${h.slug}): ${h.description || ''}`);
   L.push('', '## Tools', '- Hebrew date converter: /tools/hebrew-date', '- Yahrzeit calculator: /tools/yahrzeit', '- Bar/Bat Mitzvah date and Torah portion (parshah), also for a past Bar Mitzvah: /tools/bar-bat-mitzvah', '- Account (family, birthdays, yahrzeits, one-tap RSVP): /account', '- Community board (Mazal Tovs, notices): /community', '- Weekly email: /forms/newsletter');

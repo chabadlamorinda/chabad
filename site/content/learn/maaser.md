@@ -58,3 +58,8 @@ Tzedakah is about giving according to your means. Give what you can, even a smal
 
 ### Do I need to tell the recipient it is maaser?
 No. It is simply your tzedakah. What matters is that you set aside and give the amount.
+
+## Take the next step
+
+- Begin with [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).
+- Read [The Blessing of Giving Maaser](/learn/the-blessing-of-giving-maaser), and call Rabbi Labkowski at 925-384-7242 with any question.

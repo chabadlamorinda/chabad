@@ -7,7 +7,7 @@ local: If a loved one has died or is close to the end, call Rabbi Yisroel Labkow
 ---
 Jewish burial is one of the most important mitzvot in Judaism: the body is returned whole to the earth, quickly and with great respect, because it was the home of a holy soul. It is a duty and a kindness that every Jew deserves, whatever their background or beliefs.
 
-**If you need help right now: Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241) at once.** You do not need to understand all of this first. Call, and we will walk you through it. See [what to do in the first hours](/learn/first-hours-after-a-death) and [help with the cost](/learn/jewish-burial-financial-help).
+**If you need help right now: Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241) at once, before calling the burial society or a funeral home.** You do not need to understand all of this first. Call, and we will walk you through it. See [what to do in the first hours](/learn/first-hours-after-a-death) and [help with the cost](/learn/jewish-burial-financial-help).
 
 ## Burial is a commandment, not only a custom
 

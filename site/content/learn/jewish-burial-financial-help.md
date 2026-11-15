@@ -11,7 +11,7 @@ If you cannot afford a Jewish funeral, please call Rabbi Yisroel Labkowski at 92
 
 ## What to do first
 
-1. **Call the Rabbi before you sign anything.** Tell him simply that someone has died and that money is a worry. He will guide you on what to do next and on who to contact.
+1. **Call the Rabbi before you sign anything.** Tell him simply that someone has died and that money is a worry. Call him before you call the burial society or a funeral home: he will guide you through every step and make the arrangements.
 2. **Do not delay out of worry about cost.** Burial is a mitzvah to be done promptly (see [why Jews bury quickly](/learn/why-jews-bury-quickly)). Chabad.org says that a delay is justified only for the honor of the deceased, such as legal requirements, obtaining shrouds or a proper casket, or waiting for close family, and not for convenience.
 3. **Take it one step at a time.** [The first hours after a death](/learn/first-hours-after-a-death) lists what to do and in what order.
 

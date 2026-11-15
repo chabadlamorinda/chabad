@@ -7,7 +7,7 @@ local: Not sure when the funeral can be? Call Rabbi Yisroel Labkowski at 925-384
 ---
 Jewish law calls for burial as soon as possible after death, within 24 hours, because the Torah commands it and because leaving a person unburied is a disgrace to the person who died. Delay is permitted only when it honors the deceased, for example to wait for close family who are traveling.
 
-**If someone has just passed away, please call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241 now. Jewish burial is of the utmost importance and it can all be arranged even if there is no budget; financial help is available.** See [what to do in the first hours](/learn/first-hours-after-a-death).
+**If someone has just passed away, please call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241 now, before calling the burial society or a funeral home. Jewish burial is of the utmost importance and it can all be arranged even if there is no budget; financial help is available.** See [what to do in the first hours](/learn/first-hours-after-a-death).
 
 ## Where the rule comes from
 

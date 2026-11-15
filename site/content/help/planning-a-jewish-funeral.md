@@ -22,7 +22,7 @@ If a loved one has just passed away, please see [When a Loved One Passes Away](/
 
 1. **Talk with the Rabbi.** He will explain the Jewish way of burial and answer your questions.
 2. **Choose a Jewish cemetery plot.** A Jewish burial takes place in a Jewish cemetery or a Jewish section of a cemetery. The Rabbi can help you understand your options in the area.
-3. **Write down your wishes.** Include your Hebrew name and your father's and mother's Hebrew names, the people to call, and a request that the Rabbi and the Chevra Kadisha be contacted first.
+3. **Write down your wishes.** Include your Hebrew name and your father's and mother's Hebrew names, the people to call, and a request that the Rabbi be called first, before the burial society or a funeral home.
 4. **Tell your family.** Share your plans and keep a copy with your important papers.
 5. **Keep our number handy.** Make sure your family knows to call 925-384-7242 first.
 

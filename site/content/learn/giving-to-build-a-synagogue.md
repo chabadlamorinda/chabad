@@ -26,7 +26,7 @@ These teachings suggest a gentle way to think about a gift toward a synagogue:
 - **It is a shared foundation.** Like the sockets, every gift, large or small, supports the whole building.
 - **It comes from the heart.** Giving freely and gladly is the Mishkan's model. Nobody should feel pressure.
 - **It lasts.** A building where the Torah is read, children learn and families gather serves many generations.
-- **It can carry a name.** People often dedicate a gift in honor or in memory of a loved one. At Chabad of Lamorinda, a memorial plaque can be added in the synagogue. To ask about this, speak with the Rabbi. See also [A Torah Scroll Dedication](/learn/hachnasat-sefer-torah) and [Giving in Memory](/learn/giving-in-memory-of-a-loved-one).
+- **It can carry a name.** People often dedicate a gift in honor or in memory of a loved one. Chabad of Lamorinda gladly offers dedication opportunities, such as dedicating a room or a memorial plaque in the synagogue. To ask about this, speak with the Rabbi. See also [A Torah Scroll Dedication](/learn/hachnasat-sefer-torah) and [Giving in Memory](/learn/giving-in-memory-of-a-loved-one).
 
 ## Giving to Chabad of Lamorinda
 
