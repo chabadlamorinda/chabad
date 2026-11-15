@@ -9,7 +9,7 @@ In Jewish law, the limit of a fifth on giving applies during a person's life, no
 
 ## What Jewish law teaches about giving during life
 
-Jewish law explains that maaser (מַעֲשֵׂר), "a tenth," is the common practice, and that if you can afford it, giving more is commendable, up to a *chomesh* (חֹמֶשׁ), a fifth. Jewish law generally sets a fifth as the upper limit for charitable giving during life, though the guide notes there are exceptions. It also says that needy relatives take precedence over others, and that basic needs come first. See [Maaser](/learn/maaser).
+Maaser (מַעֲשֵׂר), "a tenth," is the common practice, and if you can afford it, giving more is commendable, up to a *chomesh* (חֹמֶשׁ), a fifth. Jewish law generally sets a fifth as the upper limit for charitable giving during life, though there are exceptions. Needy relatives take precedence over others, and basic needs come first. See [Maaser](/learn/maaser).
 
 ## Does the fifth apply to a will?
 
@@ -33,13 +33,13 @@ Chabad of Lamorinda accepts legacy gifts, and they fund education for future gen
 It is your choice: a set amount, a percentage, what remains, or even your entire estate. Since the fifth limit applies in life and not at death, an entire estate can be left to Chabad of Lamorinda. Talk it over with the Rabbi and your attorney.
 
 ### Is there a limit to how much I can leave to charity in Jewish law?
-Not at death. During life, Jewish law sets a fifth as generally the upper limit, with exceptions; Rabbi Labkowski teaches that the fifth limit does not apply at death.
+Not at death. During life, a fifth is generally the upper limit, with exceptions; Rabbi Labkowski teaches that the fifth limit does not apply at death.
 
 ### Should I leave money to charity instead of my children?
-Jewish law teaches that needy relatives take precedence over other recipients when giving. Many people provide for children and also leave a gift. Talk with the Rabbi and your attorney.
+Needy relatives take precedence over other recipients when giving. Many people provide for children and also leave a gift. Talk with the Rabbi and your attorney.
 
 ### Does maaser apply to an inheritance?
-Jewish law lists inheritance as income to which maaser applies. Ask the Rabbi about your case. A legacy gift you leave counts as maaser.
+Inheritance counts as income to which maaser applies. Ask the Rabbi about your case. A legacy gift you leave counts as maaser.
 
 ### Can I leave a small gift?
 Yes. A legacy gift is not about the size of the gift.

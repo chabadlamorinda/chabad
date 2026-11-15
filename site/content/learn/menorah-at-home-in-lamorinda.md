@@ -30,7 +30,7 @@ On Friday afternoon, the menorah is lit before the Shabbat candles, with enough 
 
 ## Fire safety in a dry December
 
-Winters in the East Bay can be dry, windy and cold. Halacha advises a sturdy, fireproof surface out of the reach of children, away from curtains and other flammable materials. In addition:
+Winters in the East Bay can be dry, windy and cold. Use a sturdy, fireproof surface out of the reach of children, away from curtains and other flammable materials. In addition:
 
 - Use a metal or glass tray under the menorah, and a table that is not near a drafty window or door that opens.
 - Move curtains, paper decorations and gift wrap away, and keep a candle burning only where you can see it.

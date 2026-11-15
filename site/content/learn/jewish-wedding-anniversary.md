@@ -9,7 +9,7 @@ A Jewish wedding anniversary is a day to renew the love and commitment of your w
 
 ## Why an anniversary matters in Judaism
 
-Jewish tradition explains that Judaism does not see an anniversary only as a celebration of the past. According to Chassidic teaching, the spiritual energy of a past event is more easily reached on its anniversary. For a marriage, this means the love, loyalty and friendship that you shared under the chuppah (the wedding canopy) can be readily reawakened on that day. The same article adds that we need not wait for an anniversary to feel close: ordinary acts done with intention can make any day meaningful. That is the spirit of the day.
+Judaism does not see an anniversary only as a celebration of the past. According to Chassidic teaching, the spiritual energy of a past event is more easily reached on its anniversary. For a marriage, this means the love, loyalty and friendship that you shared under the chuppah (the wedding canopy) can be readily reawakened on that day. It also teaches that we need not wait for an anniversary to feel close: ordinary acts done with intention can make any day meaningful. That is the spirit of the day.
 
 ## Your Hebrew date
 

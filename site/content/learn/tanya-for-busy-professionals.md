@@ -13,6 +13,8 @@ The [Tanya](/learn/tanya), by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, is 
 
 Its message suits a full schedule. The Tanya is built on the verse "For the matter is very near to you, in your mouth and in your heart, that you may do it" (Deuteronomy 30:14), and Chapters 17 and 41 explain that serving G-d is within reach of everyone: the mind can lead the heart, so you do not need a free afternoon or a perfect mood to begin.
 
+## Three easy ways to start
+
 All of these are free online, and the daily Tanya page lists the formats described here.
 
 1. **The daily Tanya.** There is a Tanya reading for every day, following the yearly cycle. You can read it in English, Hebrew or both. For many people, one daily portion is a few minutes.

@@ -33,6 +33,8 @@ The "very near" part is encouraging. As Chassidic teaching explains, the mind ca
 
 The Tanya comes back to this verse in other chapters too. Chapter 17 explains why it is true: the mind is under a person's control even when the heart is not, so love of G-d in the mind is enough to guide the mouth and the hands. Chapter 41 uses it to teach that serving G-d with love and awe is within simple reach of every Jew.
 
+## What this means for everyday speech
+
 The chapters we opened speak mainly of speech for Torah and prayer. But the idea carries over to other words. If speech is a garment of the soul, then each time we speak we show something of who we are. In Chapter 30, in a discussion of humility, the Tanya quotes the advice Rabbi Shimon's father gave him: "Keep away from slander." Our tradition has detailed laws about harmful speech; see [lashon hara](/learn/lashon-hara) and [hurtful words](/learn/hurtful-words).
 
 A few questions you can ask yourself before speaking:

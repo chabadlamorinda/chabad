@@ -17,6 +17,8 @@ Chapter 41 then applies this to the morning. Before prayer, a person recites the
 
 This is part of the Tanya's answer to the verse it is built on: "For the matter is very near to you, in your mouth and in your heart, that you may do it" (Deuteronomy 30:14). Chapter 41 teaches that serving G-d from the heart, with love and awe, is within simple reach, and Chapter 17 explains why: the mind is under our control even when the heart is not. You do not need to feel inspired before you pray; you can begin by thinking, and let the heart follow.
 
+## Love and awe, like two wings
+
 The same chapter compares serving G-d to a bird. Love is one wing and awe is the other, and without both the bird cannot fly. Love alone, the Alter Rebbe says, is not enough before a positive mitzvah. Awe is also needed, felt in the heart or at least held in the mind.
 
 You do not have to be moved to tears. The chapter says a person who cannot reach deep awe through contemplation should at least arouse a feeling of awe in his mind, thinking about G-d's greatness in a simpler way. See [kavanah in prayer](/learn/kavanah-in-prayer) for more on focus and intention.

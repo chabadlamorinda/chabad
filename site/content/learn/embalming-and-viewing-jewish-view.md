@@ -11,18 +11,18 @@ Traditional Jewish law does not permit embalming or an open-casket viewing, beca
 
 ## What embalming is, and why it is not done
 
-Jewish tradition explains that embalming is done to preserve the body, for reasons of sanitation, sentiment and presentability for viewing, and that it disturbs the body's internal organs. Jewish law forbids it, even if the person asked for it. Chassidic teaching gives these reasons:
+Embalming is done to preserve the body, for reasons of sanitation, sentiment and presentability for viewing, and it disturbs the body's internal organs. Jewish law forbids it, even if the person asked for it. The reasons are these:
 
 - Disturbing the body is a dishonor to a person made in G-d's image.
 - The body must in any case return to the earth, and refrigeration can keep it until the funeral.
 - Embalming creates an illusion that makes it harder for mourners to face their loss.
 - An unembalmed body is not a health hazard, even after a contagious illness.
 
-The tradition adds that in some rare cases a rabbi may permit a method such as freezing, for instance when there is a long unavoidable delay, burial overseas or a government requirement. Do not decide this alone. Ask the Rabbi. Jewish tradition also says that blood and clothing from an accident or violent death are buried with the person.
+The tradition adds that in some rare cases a rabbi may permit a method such as freezing, for instance when there is a long unavoidable delay, burial overseas or a government requirement. Do not decide this alone. Ask the Rabbi. Jewish law also requires that blood and clothing from an accident or violent death be buried with the person.
 
 ## Why there is no open casket
 
-Chassidic teaching explains in its answer on open-casket funerals that the funeral is mostly about honoring the person who died, and the comfort of the mourners comes after burial. Several reasons are given:
+About open-casket funerals, Jewish tradition explains that the funeral is mostly about honoring the person who died, and the comfort of the mourners comes after burial. Several reasons are given:
 
 - The Talmud forbids looking at the face of the dead, out of respect for the person.
 - A viewing usually requires altering the body with chemicals, cosmetics, supports and the like, which Jewish law forbids as a desecration.
@@ -55,7 +55,7 @@ Out of respect, Jewish tradition does not gaze at the face of the person after d
 
 ### Are cosmetics or special clothing allowed for the deceased?
 
-No. The person is dressed in plain white shrouds, as Chassidic teaching explains, and the body is not altered. See [a plain wooden casket and white shrouds](/learn/plain-wooden-casket-and-shrouds).
+No. The person is dressed in plain white shrouds, and the body is not altered. See [a plain wooden casket and white shrouds](/learn/plain-wooden-casket-and-shrouds).
 
 ### What if embalming was already done?
 
@@ -63,7 +63,7 @@ Please do not feel shame or guilt. Call the Rabbi and he will guide you with com
 
 ### What if the funeral home says embalming is required?
 
-The tradition notes that an unembalmed body is not a health hazard and that, with a rabbi's guidance, other methods such as refrigeration or freezing exist. Call the Rabbi so he can speak with them or advise you.
+An unembalmed body is not a health hazard, and with a rabbi's guidance other methods such as refrigeration or freezing exist. Call the Rabbi so he can speak with them or advise you.
 
 ## Take the next step
 
