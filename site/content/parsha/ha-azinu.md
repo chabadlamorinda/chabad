@@ -13,7 +13,7 @@ The Rebbe explained that Judaism holds that spiritual and physical reality are m
 
 The Rebbe linked this to the calendar. Ha'azinu is read in the Ten Days of Repentance, when closeness to G-d is most available. After Yom Kippur the focus turns earthward, toward building the sukkah and living in it, a mitzvah done inside physical materials. Closeness to the heavens, in other words, is a foundation and not a destination.
 
-He applied the same pattern to learning and doing. Torah study brings us close to the heavens. But "study is not the essential thing; deed is." Our Sages say that study takes precedence in this era, and that deed will take precedence in the Era of Redemption, when the connection between heaven and earth is complete.
+He applied the same pattern to learning and doing. Torah study brings us close to the heavens. But "study is not the essential thing; deed is." The Rebbe explains that study takes precedence in this era, and that deed will take precedence in the Era of Redemption, when the connection between heaven and earth is complete.
 
 What this means for us: use the feeling of inspiration we get from the High Holidays as a launch pad. A good resolution made in the synagogue needs to become a kind word at home, a fair deal at work, a call we promise to make. See [the Ten Days of Repentance](/learn/ten-days-of-repentance) and [Sukkot for beginners](/learn/sukkot-for-beginners).
 
@@ -31,7 +31,7 @@ The chassid replied that they have no choice but to trust in G-d and ask Him to 
 
 The Rebbe said: "That is the professor I meant." The chassid should put his trust in G-d, who helps the people of Anipoli, and He would help him, too.
 
-The story is told in connection with a verse from our portion in which G-d says, "I wound and I heal, and there is no rescuer from My hand." It is a story about trust, not medical advice: it says that G-d is the true Healer, and that trust in Him is the foundation. See [trust in G-d](/learn/bitachon). For a personal medical situation, ask the Rabbi.
+The story is told in connection with a verse from our portion in which G-d says, "I wound and I heal, and there is no rescuer from My hand." It is a story about trust, not medical advice: it says that G-d is the true Healer, and that trust in Him is the foundation. See [trust in G-d](/learn/bitachon). For a personal medical question, see your doctor; for the Jewish side of it, ask the Rabbi.
 
 ## Ideas for the Shabbat table
 
