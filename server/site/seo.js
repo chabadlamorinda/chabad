@@ -74,6 +74,8 @@ async function llmsText(c, base, upcoming, full) {
 
 function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
   const c = () => content();
+  // IndexNow (Bing, Yandex and others): the key file proves the site is ours; `node scripts/indexnow.js` sends every address.
+  r.get('/:key([A-Za-z0-9]{16,64}).txt', (req, res, next) => (process.env.INDEXNOW_KEY && req.params.key === process.env.INDEXNOW_KEY ? res.type('text/plain').send(req.params.key) : next()));
   r.get('/robots.txt', (req, res) => {
     res.type('text').set('Cache-Control', 'public, max-age=3600');
     if (!indexable) return res.send('# Preview site: not yet open to search engines.\nUser-agent: *\nDisallow: /\n');

@@ -91,6 +91,7 @@ ${readNext(X, rel.map((x) => ({ ...x, description: (C.learn.find((a) => '/learn/
 <h2 id="arrange">${esc(t('Have Kaddish said for your loved one'))}</h2>
 <p>${esc(t('If you cannot be at a minyan every day, the custom is to arrange for someone to say Kaddish on your behalf, and to give charity in the merit of the departed. We will make sure Kaddish is said for the full eleven months, on the yahrzeit, or both, and the Rabbi will remember your loved one by name.'))}</p>
 <p>${esc(k.amount ? t('Suggested donation: ${amount}', { amount: k.amount }) : t('With a donation of your choice.'))}</p>
+<p>${esc(t('A memorial plaque can also be added in the synagogue. Tick the box in the form and the Rabbi will call you.'))}</p>
 <form class="card tool" data-submit data-kind="kaddish" data-title="Kaddish: {deceased}" data-after="give" data-gift="${esc(k.fund || 'general')}" data-gift-ded="${esc(t('Kaddish for {name}'))}">
   <div class="fields">
     <label>${esc(t('Name of the departed'))} <input name="deceased" required data-extra="Name"></label>
@@ -100,6 +101,7 @@ ${readNext(X, rel.map((x) => ({ ...x, description: (C.learn.find((a) => '/learn/
     <label>${esc(t('Date of passing'))} <input type="date" name="date" data-extra="Date of passing"></label>
   </div>
   <label class="check"><input type="checkbox" name="night" value="after sunset" data-extra="After sunset"> ${esc(t('Passed after sunset'))}</label>
+  <label class="check"><input type="checkbox" name="plaque" value="yes" data-extra="Interested in a memorial plaque"> ${esc(t('I would like to hear about a memorial plaque in the synagogue'))}</label>
   <label>${esc(t('Kaddish for'))} <select name="period" data-extra="Kaddish for"><option value="11 months">${esc(t('The eleven months'))}</option><option value="every yahrzeit">${esc(t('Every yahrzeit'))}</option><option value="11 months and every yahrzeit">${esc(t('Both'))}</option><option value="this yahrzeit">${esc(t('This yahrzeit'))}</option></select></label>
   <div class="fields"><label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email" required></label><label>${esc(t('Phone (optional)'))} <input name="phone" type="tel" data-extra="Phone"></label></div>
   <button class="btn gold" type="submit">${esc(t('Arrange Kaddish'))}</button><p class="msg" hidden></p>

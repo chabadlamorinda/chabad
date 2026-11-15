@@ -7,6 +7,8 @@ local: You are welcome to join us for Yizkor at Chabad of Lamorinda on the holid
 ---
 Yizkor is a memorial prayer recited in synagogue four times a year, asking G-d to remember the souls of loved ones who have passed away. It is said on Yom Kippur, the last day of Passover, Shavuot, and Shemini Atzeret.
 
+Chabad of Lamorinda can arrange Kaddish for your loved one: please use the form on our [Kaddish page](/kaddish). A memorial plaque can also be added in the synagogue; please consult the Rabbi (925-384-7242).
+
 ## What does Yizkor mean?
 
 Yizkor means "May He remember." The prayer begins, "May G-d remember the soul of..." and continues with the person's Hebrew name and a pledge to give charity in their memory. It is one of the most heartfelt moments of the Jewish year, when the whole community pauses together to remember.

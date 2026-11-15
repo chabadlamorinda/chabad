@@ -33,6 +33,7 @@ Maaser is for tzedakah. Common uses include:
 - Helping the poor and people in need.
 - Supporting Torah study and Jewish education.
 - Funding synagogues and Jewish community programs.
+- A grant from your donor-advised fund to a charity such as Chabad of Lamorinda. Rabbi Labkowski has confirmed that this counts as maaser; call 925-384-7242 or 925-384-7241 to arrange one.
 - Helping a relative in financial need, which is a top priority in Jewish law.
 
 Some expenses, such as paying for your own children's basic needs, normally do not count. Ask the Rabbi about specific cases.

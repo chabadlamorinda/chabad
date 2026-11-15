@@ -7,6 +7,8 @@ local: When a loved one passes, call Rabbi Labkowski at 925-384-7242 at any hour
 ---
 A Jewish funeral is a simple, dignified service followed by burial in the earth, ideally as soon as possible after death. Its customs focus on two values: honoring the person who passed away (kavod hamet) and comforting the family who remains.
 
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 at once.**
+
 If you are reading this because you have just lost someone, we are deeply sorry. You do not have to know everything. Please call us and we will help.
 
 ## First steps

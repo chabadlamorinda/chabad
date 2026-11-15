@@ -7,6 +7,8 @@ local: To say Kaddish with a minyan or arrange for Kaddish to be said for your l
 ---
 The Mourner's Kaddish is a short prayer recited by mourners in memory of a loved one. Remarkably, it never mentions death: it is a declaration praising G-d, and saying it brings great merit and elevation to the soul of the person who passed away.
 
+Chabad of Lamorinda can arrange Kaddish for your loved one: please use the form on our [Kaddish page](/kaddish). A memorial plaque can also be added in the synagogue; please consult the Rabbi (925-384-7242).
+
 ## What does Kaddish mean?
 
 Kaddish means "holy" or "sanctification." It is written mostly in Aramaic, the everyday language of Jews in Talmudic times, so that everyone could understand it. It opens with the words:

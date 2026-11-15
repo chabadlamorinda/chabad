@@ -7,6 +7,8 @@ local: Would you like to think this through with someone kind? Call Rabbi Labkow
 ---
 To plan a Jewish funeral in advance, write down your wishes (burial in the ground, tahara, a plain casket, no embalming or cremation), consider a plot in a Jewish cemetery, and tell your family whom to call first, which should be your Rabbi. It is a kindness to your family, who will not have to guess in a hard moment.
 
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. If cost is a worry, please call Rabbi Yisroel Labkowski at 925-384-7242.**
+
 Many people in Lafayette, Moraga and Orinda put this off because it is uncomfortable. Judaism sees it differently: planning ahead is a mitzvah of caring, and many people find it brings peace of mind.
 
 ## Why plan ahead?

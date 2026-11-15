@@ -7,6 +7,8 @@ local: Choosing the words for a headstone? Call Rabbi Labkowski at 925-384-7242 
 ---
 A Jewish headstone traditionally carries the deceased's Hebrew name, the Hebrew name of their father, and the Hebrew date and year of death, usually followed by the abbreviation תנצב"ה. It is made of stone or granite, with no carved human figure and no photograph, and the wording is checked with the Chevra Kadisha or a rabbi before it is ordered.
 
+Chabad of Lamorinda can arrange Kaddish for your loved one: please use the form on our [Kaddish page](/kaddish). A memorial plaque can also be added in the synagogue; please consult the Rabbi (925-384-7242).
+
 The stone is called a matzeivah (מצבה) or tzion (ציון).
 
 ## What the inscription includes

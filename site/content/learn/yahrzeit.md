@@ -7,6 +7,8 @@ local: Use our yahrzeit calculator to find the date, and call Rabbi Labkowski at
 ---
 A yahrzeit is the yearly anniversary of a loved one's passing, observed on the Hebrew date of death. On the yahrzeit, family members light a 24-hour candle, say Kaddish, and do good deeds in the person's memory.
 
+Chabad of Lamorinda can arrange Kaddish for your loved one: please use the form on our [Kaddish page](/kaddish). A memorial plaque can also be added in the synagogue; please consult the Rabbi (925-384-7242).
+
 ## What does yahrzeit mean?
 
 Yahrzeit is a Yiddish word meaning "year's time." Jewish tradition teaches that on this day each year, the soul of the departed rises to a higher level in heaven. The good deeds we do on earth help bring this elevation about, giving the day a special spiritual power.

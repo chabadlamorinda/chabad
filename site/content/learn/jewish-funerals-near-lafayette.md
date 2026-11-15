@@ -7,6 +7,8 @@ local: Call Rabbi Labkowski any hour at 925-384-7242, or see /help for what to d
 ---
 When a Jewish person dies in Lafayette, Moraga, Orinda or anywhere in Contra Costa County, call Rabbi Yisroel Labkowski at 925-384-7242 right away, ideally before calling a funeral home or signing anything. (If a death is sudden, call 911 first.) He coordinates with the Chevra Kadisha, the Jewish burial society, for a Jewish burial and helps plan the funeral and shiva for every family, member or not.
 
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 at once.**
+
 ## What to do first, step by step
 
 1. **Call 911 if the death is sudden.** Otherwise, stay calm and take a moment.

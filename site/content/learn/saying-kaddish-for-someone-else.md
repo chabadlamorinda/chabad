@@ -7,6 +7,8 @@ local: To arrange Kaddish for your loved one, call Rabbi Labkowski at 925-384-72
 ---
 If someone has no son to say Kaddish, or the sons cannot realistically say it every day with a minyan, Chabad.org says another person should say Kaddish in the deceased's merit: a close male relative, or someone hired to do so. It is a last resort, not a first choice, and the mourner continues to do good in the person's memory.
 
+Chabad of Lamorinda can arrange Kaddish for your loved one: please use the form on our [Kaddish page](/kaddish). A memorial plaque can also be added in the synagogue; please consult the Rabbi (925-384-7242).
+
 If you are in that situation, you are not alone, and there are good options.
 
 ## Who normally says Kaddish

@@ -8,6 +8,8 @@ related: learn/jewish-funeral, learn/shiva, learn/kaddish, end-of-life, learn/se
 ---
 We are so sorry for your loss. If someone you love has just passed away, please call Rabbi Yisroel Labkowski at **925-384-7242** as soon as you can, ideally before you call a funeral home. You do not need to know what to do. The Rabbi and Chabad of Lamorinda will walk you through each step, from the first hours to the funeral, shiva and Kaddish. It does not matter how observant you or your loved one were. We are here for every Jewish family.
 
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 at once.**
+
 ## What to do first
 
 1. **Call the Rabbi at 925-384-7242.** Tell him where your loved one is and who is with them.
@@ -22,7 +24,7 @@ If a death is sudden or unexpected, call 911 first. Then call the Rabbi.
 - **Tahara and Jewish burial.** We coordinate with the Chevra Kadisha, who perform the tahara, the gentle washing and dressing of the body in simple white shrouds. This is one of the greatest kindnesses in Judaism.
 - **The funeral.** We help you arrange the funeral, plan the service, and prepare the eulogy. The Rabbi can officiate.
 - **Shiva.** We help you set up the shiva home, arrange a minyan for prayers, and guide you through the customs.
-- **Kaddish.** You can join our minyan to say Kaddish, or we can arrange for Kaddish to be said on your behalf. See [/kaddish](/kaddish).
+- **Kaddish.** You can join our minyan to say Kaddish, or we can arrange for Kaddish to be said on your behalf. See [/kaddish](/kaddish). A memorial plaque can be added in the synagogue; consult the Rabbi.
 - **Afterward.** We are here for the unveiling, the yahrzeit, and whenever you want to talk.
 
 ## What to expect in the first days

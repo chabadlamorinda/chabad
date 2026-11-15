@@ -7,6 +7,8 @@ local: Approaching a first yahrzeit? Call Rabbi Labkowski at 925-384-7242, or sa
 ---
 The first yahrzeit (יארצייט) is the first anniversary of a death by the Hebrew calendar: one Hebrew year after the date of death, on the same Hebrew month and day. On that day, Jewish tradition asks us to light a memorial candle, say Kaddish, give charity and learn Torah in the person's memory.
 
+Chabad of Lamorinda can arrange Kaddish for your loved one: please use the form on our [Kaddish page](/kaddish). A memorial plaque can also be added in the synagogue; please consult the Rabbi (925-384-7242).
+
 For someone who has lost a parent, it also marks the end of the twelve months of mourning.
 
 ## Finding the date
