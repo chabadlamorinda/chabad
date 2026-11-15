@@ -9,7 +9,7 @@ In Jewish law, seven relatives sit shiva: a father, a mother, a husband or wife,
 
 ## The seven mourners
 
-The list comes from the Torah (Leviticus 21:1 to 3) and is explained in Jewish law. You mourn formally for:
+The list comes from the Torah (Leviticus 21:1 to 3). You mourn formally for:
 
 1. Your father
 2. Your mother

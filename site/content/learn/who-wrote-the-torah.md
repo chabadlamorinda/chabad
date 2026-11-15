@@ -9,7 +9,7 @@ According to Jewish tradition, Moses wrote the Torah, but not as an author compo
 
 ## What "wrote" means here
 
-The Torah (תּוֹרָה, "teaching") is the Five Books of Moses. Jewish tradition describes Moses as a conduit for Divine communication, relaying G-d's instructions precisely, without adding his own interpretation. That is why the Torah is called the word of G-d, not the words of Moses.
+The Torah (תּוֹרָה, "teaching") is the Five Books of Moses. Moses was a conduit for Divine communication, relaying G-d's instructions precisely, without adding his own interpretation. That is why the Torah is called the word of G-d, not the words of Moses.
 
 ## How and when Moses wrote it
 
@@ -26,7 +26,7 @@ The final verses of the Torah describe the death of Moses. The sages discuss who
 
 ## Passages that seem to disagree
 
-People often ask about passages that seem to disagree. Here is an example. Genesis 6:3 seems to say that human life will be limited to 120 years, yet the Torah later reports longer lives. Rashi explains that the verse is about the generation of the Flood: G-d would give them 120 years to repent before the destruction. In Jewish tradition, such passages are an invitation to look deeper, and that is why there are so many commentaries on them.
+People often ask about passages that seem to disagree. Here is an example. Genesis 6:3 seems to say that human life will be limited to 120 years, yet the Torah later reports longer lives. Rashi explains that the verse is about the generation of the Flood: G-d would give them 120 years to repent before the destruction. Such passages are an invitation to look deeper, and that is why there are so many commentaries on them.
 
 ## Why it matters
 
@@ -35,7 +35,7 @@ If the Torah is from G-d, then its mitzvahs are not just ancient customs or good
 ## Common questions
 
 ### Who wrote the Torah according to Judaism?
-Moses wrote it, as a channel for the words G-d gave him, according to Jewish tradition. He relayed G-d's words precisely; he was not an author in the usual sense.
+Moses wrote it, as a channel for the words G-d gave him. He relayed G-d's words precisely; he was not an author in the usual sense.
 
 ### Did Moses write the whole Torah, even the part about his death?
 The sages discuss this. Some say Joshua wrote the last verses, and others say Moses wrote them in tears. Nachmanides holds that the entire Torah is Moses' transcription.

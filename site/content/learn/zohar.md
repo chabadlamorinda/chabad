@@ -13,7 +13,7 @@ The Zohar is a set of mystical teachings on the Five Books of Moses, with additi
 
 ## Rabbi Shimon bar Yochai
 
-Rabbi Shimon bar Yochai (often called Rashbi) was a great sage of the Mishnah, living in the Land of Israel in the second century. The Talmud tells that he and his son hid in a cave for years from the Roman authorities, and spent the time in Torah study. Jewish tradition says that Rashbi himself wrote some of the Zohar, such as the section called "the First Mishnah," while hiding in the cave, but that the Zohar describes his disciple Rabbi Abba as the one who wrote down most of the teachings.
+Rabbi Shimon bar Yochai (often called Rashbi) was a great sage of the Mishnah, living in the Land of Israel in the second century. The Talmud tells that he and his son hid in a cave for years from the Roman authorities, and spent the time in Torah study. Tradition holds that Rashbi himself wrote some of the Zohar, such as the section called "the First Mishnah," while hiding in the cave, but that the Zohar describes his disciple Rabbi Abba as the one who wrote down most of the teachings.
 
 Rabbi Shimon's yahrzeit is celebrated on [Lag BaOmer](/holidays/lag-baomer) with bonfires and joy.
 

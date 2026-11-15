@@ -13,7 +13,7 @@ Iyar is the second month counting from Nissan and the eighth counting from Tishr
 
 ## Healing after the excitement of Nissan
 
-[Nissan](/learn/nissan) is full of dramatic events: the Exodus, the Seder, the miracles. Iyar is the quiet month that follows. Chassidic teaching explains that this is its challenge: after the high of the holiday, to keep our Torah and mitzvot fresh and alive. Jewish tradition says G-d gives us "preventative medicine" for this, and we need only the effort to stay curious and engaged. It is the right month to ask yourself, what small habit would heal or strengthen me? Perhaps lighting [Shabbat candles](/learn/shabbat-candles), saying a short prayer in the morning, or calling someone who is lonely.
+[Nissan](/learn/nissan) is full of dramatic events: the Exodus, the Seder, the miracles. Iyar is the quiet month that follows. Chassidic teaching explains that this is its challenge: after the high of the holiday, to keep our Torah and mitzvot fresh and alive. G-d gives us "preventative medicine" for this, and we need only the effort to stay curious and engaged. It is the right month to ask yourself, what small habit would heal or strengthen me? Perhaps lighting [Shabbat candles](/learn/shabbat-candles), saying a short prayer in the morning, or calling someone who is lonely.
 
 ## The Omer: every day counts
 

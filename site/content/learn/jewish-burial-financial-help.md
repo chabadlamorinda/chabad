@@ -27,7 +27,7 @@ Traditionally, even a poor person is given a burial plot, paid for with communal
 
 ## Make sure a Jewish burial is what you receive
 
-Families should be sure the funeral director provides the essentials of a Jewish burial: tahara (washing and purification), a *shomer* (a Jewish person who stays with the deceased until burial), *tachrichim* (white shrouds), a "kosher" casket, and the care of the Chevra Kadisha. It adds that some funeral homes will not offer these unless the family asks. That is one more reason to call the Rabbi first: he can help you ask for the right things.
+Families should be sure the funeral director provides the essentials of a Jewish burial: tahara (washing and purification), a *shomer* (a Jewish person who stays with the deceased until burial), *tachrichim* (white shrouds), a "kosher" casket, and the care of the Chevra Kadisha. Some funeral homes will not offer these unless the family asks. That is one more reason to call the Rabbi first: he can help you ask for the right things.
 
 ## If your family needs other help
 

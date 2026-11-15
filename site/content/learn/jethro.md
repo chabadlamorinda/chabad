@@ -11,7 +11,7 @@ Jethro (Yitro, יִתְרוֹ) was a priest of Midian, the father-in-law of Mose
 
 The Torah calls Jethro "the priest of Midian." He had seven daughters, and when shepherds drove them away from a well, Moses stood up and helped them. Jethro invited Moses into his home, and Moses married his daughter Zipporah and worked for years as his shepherd.
 
-Jewish tradition gives Jethro seven names, each hinting at a quality of his life. One of them, Chovav, means "beloved." Another, Yeter, comes from the Hebrew word for "added," because his advice added a whole section to the Torah's story.
+Rashi notes that Jethro had seven names, each hinting at a quality of his life. One of them, Chovav, means "beloved." Another, Yeter, comes from the Hebrew word for "added," because his advice added a whole section to the Torah's story.
 
 ## A seeker who tried every path
 
@@ -19,7 +19,7 @@ According to Jewish tradition, Jethro had tried every belief and idol of his tim
 
 Then came the news of the Exodus from Egypt: the plagues, the splitting of the sea, the defeat of Amalek. Jethro heard it and said, "Now I know that G-d is greater than all other gods" (Exodus 18:11). He gave up his position and comforts, and he travelled into the desert with Moses' wife and sons to join the Jewish people and study Torah.
 
-Chassidic teachers contrast him with Amalek. Amalek saw the same miracles and stayed stubbornly cold. Jethro saw the same evidence and let it change his life, even at great cost. That is why our Sages say we honor his name.
+Chabad teachers contrast him with Amalek. Amalek saw the same miracles and stayed stubbornly cold. Jethro saw the same evidence and let it change his life, even at great cost. That is why our Sages say we honor his name.
 
 ## The advice that helped Moses
 
@@ -33,13 +33,13 @@ His plan was simple:
 
 Moses listened and did it. Many see this as the beginning of the Jewish court system. Every busy parent, business owner and volunteer in Lafayette, Moraga and Orinda can learn from it: sharing the load is not weakness. It helps everyone.
 
-Chassidic teachers also ask why the idea came from Jethro and not from Moses. Among the answers: Moses wanted to teach Torah at its highest level, while Jethro saw the need for simple, practical teaching that reaches everyday life. Both are needed.
+Chabad teachers also ask why the idea came from Jethro and not from Moses. Among the answers: Moses wanted to teach Torah at its highest level, while Jethro saw the need for simple, practical teaching that reaches everyday life. Both are needed.
 
 ## Why is the portion named for Jethro?
 
 Parshat Yitro opens with his story and then moves to the greatest moment in Jewish history: the Giving of the Torah and the [Ten Commandments](/learn/ten-commandments) at Mount Sinai. Only a few Torah portions carry a person's name, and it is striking that this one belongs to someone who was not born into the Jewish people.
 
-Teachers explain that the Torah could not be given until Jethro acknowledged G-d's greatness. Chassidic teaching adds that Jethro represents bringing the wisdom of the world into line with the wisdom of G-d. The message: the door to Torah is open to anyone who sincerely seeks, and a person who searches honestly can lead others closer. If this speaks to you, read about [converting to Judaism](/learn/converting-to-judaism).
+It is taught that the Torah could not be given until Jethro acknowledged G-d's greatness. Chassidic teaching adds that Jethro represents bringing the wisdom of the world into line with the wisdom of G-d. The message: the door to Torah is open to anyone who sincerely seeks, and a person who searches honestly can lead others closer. If this speaks to you, read about [converting to Judaism](/learn/converting-to-judaism).
 
 ## What happened to Jethro afterward?
 
@@ -54,7 +54,7 @@ Moses invited Jethro to travel with the Jewish people to the Promised Land, but 
 ## Common questions
 
 ### Who was Jethro in the Bible?
-Jethro was a Midianite priest and the father-in-law of Moses. According to Jewish tradition he explored many beliefs, came to recognize the One G-d after the Exodus, and joined the Jewish people in the desert.
+Jethro was a Midianite priest and the father-in-law of Moses. He explored many beliefs, came to recognize the One G-d after the Exodus, and joined the Jewish people in the desert.
 
 ### Why is a Torah portion named after Jethro?
 Parshat Yitro begins with Jethro's story and leads into the giving of the Ten Commandments. Teachers explain that the Torah was given only after a seeker from outside the Jewish people recognized G-d's greatness.

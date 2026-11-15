@@ -18,9 +18,9 @@ Helping another is not optional but a requirement, and, as one writer on parenti
 Here are some ideas:
 
 1. **Give tzedakah together.** Keep a pushka at home and let the children put coins in. Giving at least once a day is a good habit. See [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
-2. **Volunteer as a family.** One article suggests serving at a soup kitchen or delivering food to people in need.
+2. **Volunteer as a family.** Serve at a soup kitchen or deliver food to people in need.
 3. **Give away what you no longer use.** Have children go through their belongings and donate items they no longer use.
-4. **Let a child choose a cause.** In place of birthday presents, the same article suggests giving the child a list of charitable organizations to choose from, and donating in the child's name.
+4. **Let a child choose a cause.** In place of birthday presents, give the child a list of charitable organizations to choose from, and donate in the child's name.
 5. **Visit someone.** Visiting the sick and inviting guests are classic acts of chesed. See [Visiting Someone in a Nursing Home](/learn/visiting-someone-in-a-nursing-home) and [Bikur Cholim](/learn/bikur-cholim).
 6. **Do a holiday project.** See [Chanukah Mitzvah Projects for Kids](/learn/chanukah-mitzvah-projects-for-kids).
 

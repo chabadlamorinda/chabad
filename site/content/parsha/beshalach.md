@@ -1,6 +1,6 @@
 ---
 title: Parshat Beshalach: The Rebbe's Teaching, a Story and Ideas for Shabbat
-description: Parshat Beshalach, the Rebbe's teaching on the manna and daily trust in G-d, a true story of a soldier who stepped back to leap forward, and Shabbat ideas.
+description: Parshat Beshalach, the Rebbe's teaching on the manna and daily trust in G-d, a true story of a soldier who stepped back to leap forward.
 related: shabbat-shirah, bitachon, exodus-story, miriam, tanya-on-worry-and-trust
 ---
 ## The Rebbe's teaching

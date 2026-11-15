@@ -13,7 +13,7 @@ Rabbi Tzvi Freeman explains in his writing on the niggun that words carry meanin
 
 ## The tzaddik's melody
 
-A tzaddik (צַדִּיק) is a righteous person. The Chassidic masters taught that a tzaddik encodes his soul in his niggunim. When we sing a niggun, we connect to the innermost layers of that tzaddik's soul and to the light he reached. For this reason, every note and nuance must be learned and sung with care, like a sacred text. You can read about the Chassidic masters in [Chassidus](/learn/chassidus) and about the founder of the movement in [the Baal Shem Tov](/learn/baal-shem-tov).
+A tzaddik (צַדִּיק) is a righteous person. It is taught that a tzaddik encodes his soul in his niggunim. When we sing a niggun, we connect to the innermost layers of that tzaddik's soul and to the light he reached. For this reason, every note and nuance must be learned and sung with care, like a sacred text. You can read about the Chassidic masters in [Chassidus](/learn/chassidus) and about the founder of the movement in [the Baal Shem Tov](/learn/baal-shem-tov).
 
 ## Gates, repetition and patience
 
@@ -23,7 +23,7 @@ The sections of a niggun are called "gates," each one an entrance from one spiri
 
 The Chabad teachings that Freeman cites say that contemplation can stay in the cold intellect, while a niggun draws what is hidden in the soul down into the mind and then into the heart. Rabbi Yosef Yitzchak of Lubavitch taught that a niggun opens windows in the soul.
 
-The article also notes that the ancient prophets sang and played instruments while awaiting prophecy, and that David's songs healed King Saul's troubled spirit. See [King David](/learn/king-david). According to Rabbi Dovber, the second Rebbe of Chabad, song lies at the core of life: every created thing yearns for its source, and that yearning is its song.
+The ancient prophets also sang and played instruments while awaiting prophecy, and David's songs healed King Saul's troubled spirit. See [King David](/learn/king-david). According to Rabbi Dovber, the second Rebbe of Chabad, song lies at the core of life: every created thing yearns for its source, and that yearning is its song.
 
 ## Song unites us
 

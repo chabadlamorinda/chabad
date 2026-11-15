@@ -32,7 +32,7 @@ Delay is not for convenience. A morning funeral is preferred: it is as early as 
 
 ## Shabbat and holidays
 
-Funerals are not held on Shabbat. The body is not moved, and is covered with a sheet until Shabbat ends. It also says that a funeral late on Friday afternoon can be moved to Sunday, since Shabbat intervenes. On the first day of a major festival, Jews do not bury; on the second day a burial is permitted, but it is best to postpone until after the festival, because a funeral on a festival day almost always leads to needless violations. In all these cases call the Rabbi, since each situation is different. See [shiva and holidays](/learn/shiva-and-holidays).
+Funerals are not held on Shabbat. The body is not moved, and is covered with a sheet until Shabbat ends. A funeral late on Friday afternoon can be moved to Sunday, since Shabbat intervenes. On the first day of a major festival, Jews do not bury; on the second day a burial is permitted, but it is best to postpone until after the festival, because a funeral on a festival day almost always leads to needless violations. In all these cases call the Rabbi, since each situation is different. See [shiva and holidays](/learn/shiva-and-holidays).
 
 ## Common questions
 

@@ -9,7 +9,7 @@ The ten sefirot (ספירות) are the ten attributes through which G-d's infini
 
 ## What the sefirot are
 
-Kabbalah teaches that G-d is infinite, and the world is finite. The sefirot are the channels through which the infinite is expressed in the finite world. Chassidic teaching explains that each sefirah is both a light that reveals and a vessel that gives that light a particular shape. They are not G-d Himself, and Kabbalists warn that we do not pray to them. A classic image is a king's two hands: the king is the one acting, even if he uses a different hand for different tasks. This is a deep subject, so if you want to study it seriously, ask the Rabbi to guide you; start with the guide to [Kabbalah](/learn/kabbalah).
+Kabbalah teaches that G-d is infinite, and the world is finite. The sefirot are the channels through which the infinite is expressed in the finite world. Each sefirah is both a light that reveals and a vessel that gives that light a particular shape. They are not G-d Himself, and Kabbalists warn that we do not pray to them. A classic image is a king's two hands: the king is the one acting, even if he uses a different hand for different tasks. This is a deep subject, so if you want to study it seriously, ask the Rabbi to guide you; start with the guide to [Kabbalah](/learn/kabbalah).
 
 ## The three powers of the mind: ChaBaD
 
@@ -35,7 +35,7 @@ The remaining seven are the emotions:
 
 ## How the sefirot mirror your soul
 
-Chassidic teaching says a person is a small version of the sefirot. Your mind and heart have the same ten qualities, and each can be used well or badly. Love can be pure kindness or it can be smothering; strength can be discipline or anger. Chassidic teaching says character is refined mainly through the mind: when you really understand why a quality matters, it can change you. Self-work, then, is about balance, with each trait in its right place. Read more in [Tanya](/learn/tanya) and [Chassidus](/learn/chassidus).
+A person is a small version of the sefirot. Your mind and heart have the same ten qualities, and each can be used well or badly. Love can be pure kindness or it can be smothering; strength can be discipline or anger. Character is refined mainly through the mind: when you really understand why a quality matters, it can change you. Self-work, then, is about balance, with each trait in its right place. Read more in [Tanya](/learn/tanya) and [Chassidus](/learn/chassidus).
 
 ## The Omer: seven weeks of self-work
 
@@ -59,7 +59,7 @@ Chassidic thought treats the seven emotions as qualities of your own heart. You 
 No. The basics are simple. For deeper study, learn with a teacher; ask the Rabbi.
 
 ### Is Kabbalah only for experts?
-Chassidic teaching makes the inner dimension of Torah open to every Jew. Ask the Rabbi for where to begin.
+Chassidus makes the inner dimension of Torah open to every Jew. Ask the Rabbi for where to begin.
 
 ## Take the next step
 

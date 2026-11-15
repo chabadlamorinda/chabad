@@ -16,7 +16,7 @@ When Jews say "the Torah," they often mean this scroll, the one kept in the ark 
 The process works this way:
 
 - **By hand, on parchment.** A scribe, called a *sofer* (סוֹפֵר), writes with a feather quill and ink. The work takes many months.
-- **In a special script.** The letters are written in *ktav Ashurit* (כְּתָב אַשּׁוּרִית), the traditional Hebrew script, and each letter must follow rules set by Jewish law.
+- **In a special script.** The letters are written in *ktav Ashurit* (כְּתָב אַשּׁוּרִית), the traditional Hebrew script, and each letter must follow precise rules.
 - **Every letter counts.** A scroll contains 304,805 letters. One missing or damaged letter can make a scroll unfit for use until it is fixed.
 - **A trained craftsman.** A sofer must study and train intensively before qualifying. Scribes of Torah scrolls, tefillin and mezuzahs have always held a place of honor in the community.
 
@@ -46,7 +46,7 @@ Writing or completing a scroll is a joyful community event, often with a process
 A Torah scroll is a handwritten parchment scroll of the Five Books of Moses, kept in the synagogue ark and read aloud in public.
 
 ### How is a Torah scroll written?
-A trained scribe writes it by hand, with a quill and ink, in the traditional Hebrew script, over many months. Each of its 304,805 letters must follow Jewish law.
+A trained scribe writes it by hand, with a quill and ink, in the traditional Hebrew script, over many months. Each of its 304,805 letters must be written exactly right.
 
 ### Why do people kiss the Torah?
 It is a way to show love and honor for the Torah. People usually touch the scroll with a siddur or tallit and kiss that, rather than touching the parchment.

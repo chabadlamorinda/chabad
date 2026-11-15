@@ -9,7 +9,7 @@ Isaiah (Yeshayahu, יְשַׁעְיָהוּ) was one of the greatest prophets of
 
 ## Who was Isaiah?
 
-According to the Talmud, Isaiah came from the royal family of David. His father was the prophet Amotz, and tradition says he was a nephew of King Amatzia of Judea. That position, the sources say, let him speak to kings without fear. His daughter is said to have married King Hezekiah.
+According to the Talmud, Isaiah came from the royal family of David. His father was the prophet Amotz, and tradition says he was a nephew of King Amatzia of Judea. That position let him speak to kings without fear. His daughter is said to have married King Hezekiah.
 
 Isaiah prophesied during the reigns of several kings of Judea. His first prophecy came on the day King Uziyahu was struck with leprosy for trying to burn incense in the Temple, a task reserved for the priests. The book's chapters are not in strict time order, which is why the vision in chapter 6 comes after the first.
 

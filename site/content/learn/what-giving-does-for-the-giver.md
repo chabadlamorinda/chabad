@@ -11,7 +11,7 @@ Judaism teaches that tzedakah helps the giver at least as much as the receiver. 
 
 The Sages said this (Ruth Rabbah 5:9). It turns our usual picture upside down. We tend to think the giver is the strong one and the receiver the weak one. The Sages say the opposite: the person in need gives the giver the chance to do something good. The recipient therefore has no reason to feel ashamed.
 
-When a giver meets someone in need, he or she is also humbled. G-d could have supplied that person directly, but chose to give the giver a role. The article calls this being a partner in completing creation, and says the word for a poor person, *ani*, is related to the word for "responding": need is a summons.
+When a giver meets someone in need, he or she is also humbled. G-d could have supplied that person directly, but chose to give the giver a role. This makes the giver a partner in completing creation, and the word for a poor person, *ani*, is related to the word for "responding": need is a summons.
 
 ## What giving builds in us
 
@@ -22,7 +22,7 @@ An article called "Giving Is Receiving" explains that charity's purpose is to be
 - **Fulfillment and joy.** Generosity brings a sense of inner fulfillment and happiness.
 - **Protection from self-absorption.** People who resist giving, even with a good-sounding excuse, risk becoming self-absorbed.
 
-The money given is finite. What the giver gains, the article says, is "the gift of sensitivity," which is priceless and which the giver can then share with the world.
+The money given is finite. What the giver gains is "the gift of sensitivity," which is priceless and which the giver can then share with the world.
 
 ## Giving gives meaning to our work
 

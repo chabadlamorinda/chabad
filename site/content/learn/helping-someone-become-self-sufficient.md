@@ -19,7 +19,7 @@ A handout meets today's need. A job meets tomorrow's, too. With newfound money, 
 
 ## Gift, loan or partnership
 
-The same article notes a fine point from the classical commentators:
+The classical commentators add a fine point:
 
 - **A loan** helps a person keep self-sufficiency, but the borrower may feel embarrassed by relying on a friend's generosity. See [Interest-Free Loans](/learn/gemach-interest-free-loans).
 - **A partnership** is greater than a loan, according to the Shach, because the partner also benefits, which preserves dignity.

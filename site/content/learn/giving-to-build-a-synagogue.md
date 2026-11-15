@@ -17,7 +17,7 @@ Because a synagogue carries its own holiness, as a place where the Divine Presen
 
 The Torah's first great building project was the Mishkan (מִשְׁכָּן), the portable sanctuary in the desert. The people gave to it in three ways. Every man gave a half-shekel, the same for everyone. The silver sockets that formed the foundation were also the same for every person, rich or poor, showing a shared desire to do G-d's will. And then everyone, men, women and children, brought what their hearts desired: gold, silver, copper, cloth, cedar.
 
-One article draws the lesson that everyone has an area where they can contribute, and the key is to find it. People gave what they were able to give: those who could give gold gave gold, and those who could give silver gave silver. Another teaching by the Rebbe notes that Moses said "bring" rather than "take": the freewill gifts came from the heart, with joy, not only from obligation. See [The Mishkan](/learn/the-mishkan).
+One lesson drawn from this is that everyone has an area where they can contribute, and the key is to find it. People gave what they were able to give: those who could give gold gave gold, and those who could give silver gave silver. Another teaching by the Rebbe notes that Moses said "bring" rather than "take": the freewill gifts came from the heart, with joy, not only from obligation. See [The Mishkan](/learn/the-mishkan).
 
 ## What a synagogue gift can mean
 

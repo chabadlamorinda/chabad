@@ -15,9 +15,9 @@ Shabbat is the Jewish model for this. A weekly pause from work and screens is bu
 
 ## How does gratitude help a marriage?
 
-The same article lists gratitude under "do not steal": give your spouse credit for what he or she contributes. Some people make a point of crediting a spouse's sacrifices and thanking them in public.
+Piekarski lists gratitude under "do not steal": give your spouse credit for what he or she contributes. Some people make a point of crediting a spouse's sacrifices and thanking them in public.
 
-Four steps to a great marriage begin with acceptance and gratitude, along with compassion, forgiveness and appreciation. It suggests knowing when to let a matter go and seeing what you have in a better light, so that you can appreciate it. Try this: each day, thank your spouse for one specific thing.
+Four steps to a great marriage begin with acceptance and gratitude, along with compassion, forgiveness and appreciation. It helps to know when to let a matter go and to see what you have in a better light, so that you can appreciate it. Try this: each day, thank your spouse for one specific thing.
 
 ## Why does speech matter so much?
 

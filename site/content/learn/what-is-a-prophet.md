@@ -68,7 +68,7 @@ They are Sarah, Miriam, Deborah, Hannah, Abigail, Huldah and Esther.
 Moses. He could speak to G-d at any time, while other prophets received prophecy only at certain moments.
 
 ### Are there prophets today?
-Tradition teaches that prophecy ended long ago and will return in the time of the Messiah. For personal questions, ask the Rabbi.
+Prophecy ended long ago and will return in the time of the Messiah. For personal questions, ask the Rabbi.
 
 ### What is the Haftarah?
 It is the reading from the Prophets that follows the Torah reading on Shabbat and holidays. It usually echoes the Torah portion.

@@ -28,7 +28,7 @@ The **Amidah** (עמידה) is the quiet, standing prayer at the heart of each s
 
 The minimum for a woman is the morning blessings, the blessing for learning Torah, the passage about the daily offering, the first verse of the Shema, a prayer called *Emet Veyatziv*, the Shacharit Amidah and (optionally) Aleinu. Other parts of the service, such as the rest of the Shema and the Psalms of praise, are optional, for those with more time.
 
-A mother with young children has real constraints. A woman caring for young children may be exempt from full prayer, and in that case should at least say the morning blessings. It also gives guidance on pausing to care for a child. Ask the Rabbi for specifics. See [morning blessings](/learn/morning-blessings).
+A mother with young children has real constraints. A woman caring for young children may be exempt from full prayer, and in that case should at least say the morning blessings. There is also guidance on pausing to care for a child. Ask the Rabbi for specifics. See [morning blessings](/learn/morning-blessings).
 
 ## A Chabad custom
 

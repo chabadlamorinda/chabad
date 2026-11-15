@@ -1,6 +1,6 @@
 ---
 title: Parshat Mishpatim: The Rebbe's Teaching, a Story and Ideas for Shabbat
-description: Parshat Mishpatim, the Rebbe's teaching on the two stories of Sinai and lasting growth, a true story about studying Tanya, and ideas for your Shabbat table.
+description: Parshat Mishpatim, the Rebbe's teaching on the two stories of Sinai and lasting growth, a true story about studying Tanya, and Shabbat table ideas.
 related: why-mitzvot, ten-commandments, book-of-exodus, torah-study-for-women, daily-torah-study
 ---
 ## The Rebbe's teaching
@@ -46,7 +46,7 @@ The Rebbe's teaching on Mishpatim goes a step further. There are two kinds of ho
 
 That is why the laws in this portion are so ordinary: fair treatment of workers, honest courts, kindness to the stranger, care for the poor. They do not look like Sinai. And yet they are the way Sinai stays with us, in our offices, kitchens and conversations.
 
-In the story, a Rebbe told a young man that his commitment to daily study mattered, and told another student to keep learning Tanya even when it was not fully clear. Both were being invited to build something lasting from small, regular steps.
+In the story, the Rebbe asked one young man to commit to daily study, and encouraged Mayer to keep learning Tanya even when it was not fully clear. Both were being invited to build something lasting from small, regular steps.
 
 A good place to start is one small steady act that you can repeat this week. If you would like company along the way, you are welcome to a Shabbat at Chabad of Lamorinda in Lafayette (call 925-384-7242), or to the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address). Families in Lafayette, Moraga and Orinda are all welcome.
 

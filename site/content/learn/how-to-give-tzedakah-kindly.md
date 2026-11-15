@@ -9,7 +9,7 @@ In Judaism, how you give matters as much as what you give. The Sages said that h
 
 ## Give with a smile and warmth
 
-Give with a smile and real warmth. In its article on Maimonides' eight levels of giving, the lowest level is "giving grudgingly, with a sour countenance." The article says it is still better than not giving at all, but it is the lowest form, because it comes from guilt or obligation rather than real care. The contrast is that true tzedakah comes with "warm words and gentleness."
+Give with a smile and real warmth. Among Maimonides' eight levels of giving, the lowest is "giving grudgingly, with a sour countenance." It is still better than not giving at all, but it is the lowest form, because it comes from guilt or obligation rather than real care. The contrast is that true tzedakah comes with "warm words and gentleness."
 
 The next level up is giving less than you can afford, but pleasantly. A warm, empathetic response can ease the sting of a small gift and give the recipient emotional strength. So even when your gift is small, your face and words can make it a larger gift. See [giving when money is tight](/learn/giving-when-money-is-tight).
 

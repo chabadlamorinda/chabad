@@ -40,7 +40,7 @@ Because Judaism is passed on by teaching. Jewish law makes education a duty of p
 Yes. Torah schools are among the recipients of tzedakah. If you wonder how a particular gift fits your maaser, ask the Rabbi.
 
 ### Should I give to education before other causes?
-Jewish law gives a general order: family in need first, then local causes, and Israel before other distant causes. Within that order, education is a very worthy place to give. Ask the Rabbi about your own situation.
+There is a general order: family in need first, then local causes, and Israel before other distant causes. Within that order, education is a very worthy place to give. Ask the Rabbi about your own situation.
 
 ### Can I give to Jewish education in Lafayette, Moraga or Orinda?
 Yes. Chabad of Lamorinda in Lafayette serves families from all three towns. Call Rabbi Labkowski at 925-384-7242 to hear what is planned and how to take part.

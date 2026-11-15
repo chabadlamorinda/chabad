@@ -9,7 +9,7 @@ The Jewish people are best described as a family bound by a covenant with G-d, m
 
 ## Why "religion" is not the whole answer
 
-Jews cannot be defined by religion alone, since many Jews are not observant. A Jew who does not believe in G-d is still a Jew. Once someone is Jewish, the identity is permanent. Jewish law even holds that no one can revoke it.
+Jews cannot be defined by religion alone, since many Jews are not observant. A Jew who does not believe in G-d is still a Jew. Once someone is Jewish, the identity is permanent. No one can revoke it.
 
 Religion is still part of the picture, because the Jewish people were formed by a covenant with G-d. Becoming Jewish through conversion means accepting that covenant, with its beliefs and practices. But the bond itself is deeper than what any one person believes or does on a given day.
 
@@ -34,7 +34,7 @@ If you are Jewish, you are part of this family whether you are a lifelong member
 ## Common questions
 
 ### Is Judaism a religion or an ethnicity?
-Judaism is a religion, and being Jewish is also a matter of belonging to a people. Jewish tradition describes it as a family bound by the covenant at Sinai, so it is not only a religion and not a race.
+Judaism is a religion, and being Jewish is also a matter of belonging to a people. The Jewish people is a family bound by the covenant at Sinai, so Judaism is not only a religion and not a race.
 
 ### Are Jews a nation?
 In a certain sense, yes. Jews are permanent citizens of a nation formed by covenant at Sinai, even without a land or a king. But "family" is the traditional image for how the bond works.

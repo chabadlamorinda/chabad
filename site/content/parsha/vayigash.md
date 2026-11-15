@@ -13,7 +13,7 @@ His answer begins with the neck. The head is higher, but the neck does the conne
 
 Why weep for the other's sanctuary? When someone else's world is in ruins, tears, kind words and prayer are what we can give. His return depends on his own choice. But for our own sanctuary, our own home, character and Jewish life, sighing is not enough. Tears can even become a trap, because they let us feel we have already done our part. Jacob, who held both sanctuaries within his family, did not cry. He said the Shema, giving himself fully to G-d, and so was actively building.
 
-The Rebbe adds that despair is never the answer. When King Hezekiah was told he would die, he prayed, and fifteen years were added to his life. Tears are right when they are tears of teshuvah, because those repair something.
+The Rebbe adds that despair is never the answer. When King Hezekiah was told he would die, he prayed, and fifteen years were added to his life. 
 
 What it means for us: it is natural to feel pain about the world or about another person. Let it move you to pray and to help. And when something is yours to fix, a relationship, a habit, a home with little Jewish life in it, do one concrete thing.
 

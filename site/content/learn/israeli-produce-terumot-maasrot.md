@@ -33,7 +33,7 @@ There is a method, which may be used when the produce is not orlah and was not g
 4. Say the declaration, and wrap and discard the separated portion.
 5. Deface the coin and dispose of it.
 
-Normally no blessing is said when separating from store-bought produce, because somewhere along the way the tithes may already have been separated. The details depend on the kind of produce, the value of the produce and the current year, so please ask the Rabbi to walk you through it. The article is clear that it is a general guide, not a substitute for asking a rabbi about your particular case.
+Normally no blessing is said when separating from store-bought produce, because somewhere along the way the tithes may already have been separated. The details depend on the kind of produce, the value of the produce and the current year, so please ask the Rabbi to walk you through it. This is a general guide, not a substitute for asking a rabbi about your particular case.
 
 ## A word about insects and fruit
 

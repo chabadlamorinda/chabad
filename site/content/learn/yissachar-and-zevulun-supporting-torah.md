@@ -15,9 +15,9 @@ See [The Twelve Tribes](/learn/twelve-tribes) for more about each tribe.
 
 ## A partner in the learning
 
-The Rema, an important authority on Jewish law, rules that supporting someone who studies Torah is considered as if the supporter had studied himself. A person can agree with a friend that the friend will study while he provides the livelihood, and they will share the reward. The article explains that this works because it is the supporter's help that lets the scholar study instead of working.
+The Rema, an important authority on Jewish law, rules that supporting someone who studies Torah is considered as if the supporter had studied himself. A person can agree with a friend that the friend will study while he provides the livelihood, and they will share the reward. This works because it is the supporter's help that lets the scholar study instead of working.
 
-Rabbi Moshe Feinstein pointed out that this is unusual. Normally, when you help someone do a mitzvah, they receive the full reward and you receive a separate reward. In a Yissachar-Zevulun partnership, the supporter shares the same reward as the scholar. According to the article, the Talmud says that such an agreement should be made in advance, and Rabbi Feinstein gave further conditions, which not all authorities accept. If you are thinking of a formal partnership of this kind, ask the Rabbi.
+Rabbi Moshe Feinstein pointed out that this is unusual. Normally, when you help someone do a mitzvah, they receive the full reward and you receive a separate reward. In a Yissachar-Zevulun partnership, the supporter shares the same reward as the scholar. The Talmud says that such an agreement should be made in advance, and Rabbi Feinstein gave further conditions, which not all authorities accept. If you are thinking of a formal partnership of this kind, ask the Rabbi.
 
 ## What this means for ordinary families
 

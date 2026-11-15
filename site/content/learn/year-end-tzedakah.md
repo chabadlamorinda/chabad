@@ -44,16 +44,16 @@ If you would like to support Jewish life here, you are welcome to give through [
 ## Common questions
 
 ### What does tzedakah mean?
-Tzedakah means "justice" or "righteousness" in Hebrew, and it is the Jewish word for giving to those in need. It is called justice because Jewish tradition sees giving as a duty, not an optional kindness.
+Tzedakah means "justice" or "righteousness" in Hebrew, and it is the Jewish word for giving to those in need. It is called justice because Judaism sees giving as a duty, not an optional kindness.
 
 ### How much tzedakah should a Jew give?
 The sages taught that a tenth of earnings, called maaser, is the proper amount, and that those who are able should strive for a fifth. For how to apply this to your own finances, ask the Rabbi.
 
 ### Who should I give to first?
-Jewish tradition teaches to take care of your own household and family first, then your local community, then Israel, then others farther away. Most people give to several of these at once.
+Take care of your own household and family first, then your local community, then Israel, then others farther away. Most people give to several of these at once.
 
 ### Do I have to give before December 31?
-Jewish tradition does not tie tzedakah to the calendar year. Give whenever you can, and as soon as you are able. If December is when you plan, that is a fine time to plan.
+Tzedakah is not tied to the calendar year. Give whenever you can, and as soon as you are able. If December is when you plan, that is a fine time to plan.
 
 ### Is my gift tax deductible?
 Ask your tax adviser. This guide is about Jewish giving and does not give tax advice.

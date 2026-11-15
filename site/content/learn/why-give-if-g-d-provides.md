@@ -5,7 +5,7 @@ category: Jewish ideas
 related: tzedakah, jewish-view-on-wealth, why-bad-things-happen, rabbi-akiva, what-giving-does-for-the-giver
 local: Wrestling with big questions about giving and faith? Come talk with Rabbi Labkowski, call 925-384-7242.
 ---
-This is an old question: if G-d loves the poor, why doesn't He feed them directly? There are two classic answers. The Talmud tells of Rabbi Akiva's reply to a Roman governor, and a modern article explains that G-d built a world where people are His partners in delivering what everyone needs.
+This is an old question: if G-d loves the poor, why doesn't He feed them directly? There are two classic answers. The Talmud tells of Rabbi Akiva's reply to a Roman governor, and a modern answer explains that G-d built a world where people are His partners in delivering what everyone needs.
 
 ## The question in the Talmud
 

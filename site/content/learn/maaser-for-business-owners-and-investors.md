@@ -42,7 +42,7 @@ If the windfall is large, it may be a good time to think about how to give meani
 
 ## When to set it aside
 
-The ideal is to separate maaser when income arrives. For a business that can mean setting aside a tenth of profit each time you calculate it. It also says you may calculate at any point in the year. If you are unsure of the amounts, a yearly review is a good habit; see [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).
+The ideal is to separate maaser when income arrives. For a business that can mean setting aside a tenth of profit each time you calculate it. You may also calculate at any point in the year. If you are unsure of the amounts, a yearly review is a good habit; see [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).
 
 ## Common questions
 

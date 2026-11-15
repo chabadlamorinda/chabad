@@ -47,7 +47,7 @@ Yes. Giving tzedakah in the patient's honor is one way to help, alongside prayer
 Many families do. You can let a child choose a cause and give in his or her name. You can also give a smaller gift and a charity gift together.
 
 ### Does a gift in someone's name help their soul?
-This is a matter of Jewish tradition and belief. The custom of pledging at Yizkor rests on the idea that the living can do mitzvahs for the departed. Ask the Rabbi for more.
+This is a matter of tradition and belief. The custom of pledging at Yizkor rests on the idea that the living can do mitzvahs for the departed. Ask the Rabbi for more.
 
 ### Is a dedication the same as an anonymous gift?
 No. A dedication names the person you honor, not necessarily you. You can give a dedicated gift anonymously. See [Giving Anonymously](/learn/giving-anonymously).

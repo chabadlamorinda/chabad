@@ -13,7 +13,7 @@ His answer: Yitro was a leader in Midian and a priest of idols who knew every fa
 
 What it means for us is a three-step pattern for each day. First, "the splitting of the sea": on waking, acknowledge G-d, and then immerse yourself in prayer and Torah study. Second, "the war with Amalek": bring holiness into ordinary life, knowing G-d in all your ways, even in areas far from holiness. Third, "Yitro's blessing": refine the material world itself, so that G-dliness fills it and the Torah is, in a way, given anew.
 
-In practice: begin the day with prayer and study, and then go to your work with the aim of bringing holiness into it.
+
 
 ## A story
 
