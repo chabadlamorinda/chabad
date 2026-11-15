@@ -32,7 +32,7 @@ Some accounts name different "firsts" among these early lightings, so we call th
 
 ## Why the street?
 
-The idea is rooted in the mitzvah itself: to "publicize the miracle." A public menorah turns the holiday outward, so that a Jew who has never lit one, or who passes by on the way home, feels a spark. The Chabad-style menorah has straight arms, like the one in the Temple. See our guide to [public menorah lightings](/learn/public-menorah-lighting) for the reasons and customs.
+The idea is rooted in the mitzvah itself: to "publicize the miracle." A public menorah turns the holiday outward, so that a Jew who has never lit one, or who passes by on the way home, feels a spark. The Chabad-style menorah has straight arms. See our guide to [public menorah lightings](/learn/public-menorah-lighting) for the reasons and customs.
 
 ## Light Up Lafayette
 
@@ -53,7 +53,7 @@ So that every Jewish family can light the menorah on all eight nights, and so th
 Chabad.org records that in 1979 President Jimmy Carter lit Chabad's giant menorah outside the White House.
 
 ### Why is a Chabad menorah built with straight arms?
-Chabad-style menorahs follow the shape of the Temple's menorah, with straight arms. For the full explanation, read our guide to the [Chanukah menorah](/learn/chanukah-menorah).
+Chabad-style menorahs have straight arms, a shape that goes back to the way the Temple's menorah is understood in Chabad teaching. For more, read our guide to the [Chanukah menorah](/learn/chanukah-menorah), or ask the Rabbi.
 
 ### Is there a public menorah lighting near Lafayette, Moraga and Orinda?
 Yes. Light Up Lafayette is on Sunday, December 6, 2026 at 4:00 PM at Lafayette Plaza Park. It is free and open to everyone.
