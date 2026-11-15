@@ -19,7 +19,7 @@ Chabad.org explains that the body is a gift on loan from G-d, so it is returned 
 
 ## Back to the earth, and the hope of resurrection
 
-"For dust you are, and to dust you shall return." Chabad.org teaches that the earth is the source of physical life, and that the natural return of the body to the earth lets the soul go on its way. Judaism also believes that body and soul will be reunited in the time of the resurrection of the dead, and a proper burial expresses that faith. See [the resurrection of the dead](/learn/resurrection-of-the-dead) and [the soul](/learn/the-soul).
+"For dust you are, and to dust you shall return." Chabad.org explains that the body was formed from the earth and returns to it, while the soul returns to its Source above. Judaism also believes that body and soul will be reunited in the time of the resurrection of the dead, and a proper burial expresses that faith. See [the resurrection of the dead](/learn/resurrection-of-the-dead) and [the soul](/learn/the-soul).
 
 ## A kindness that can never be repaid
 
@@ -27,7 +27,7 @@ Burial is called a *chesed shel emet*, a "true kindness," because the one who re
 
 ## If cremation was requested or has happened
 
-Chabad.org is clear that Jewish law requires burial in the earth and does not permit cremation, and it also speaks with compassion. People who were raised without a Jewish education are not held fully responsible for their choices, and Kaddish, tzedakah and good deeds in the memory of any loved one are always welcome. If your loved one asked for cremation, or this question is weighing on you, please talk to the Rabbi privately and without fear of judgment. Read [cremation: the Jewish view](/learn/cremation-jewish-view).
+Chabad.org is clear that Jewish law requires burial in the earth and does not permit cremation, and it also speaks with compassion. People who were raised without a Jewish education are not held fully responsible for their choices, and Kaddish is still said for a loved one who was cremated, with tzedakah and good deeds in their memory. If your loved one asked for cremation, or this question is weighing on you, please talk to the Rabbi privately and without fear of judgment. Read [cremation: the Jewish view](/learn/cremation-jewish-view).
 
 ## Common questions
 
@@ -49,7 +49,7 @@ Yes. Rabbi Labkowski confirms that it can all be arranged even if there is no bu
 
 ### Who do I call near Lafayette, Moraga or Orinda?
 
-Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, at any hour. Our guide to [Jewish funerals near Lafayette](/learn/jewish-funerals-near-lafayette) explains how it works.
+Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. Our guide to [Jewish funerals near Lafayette](/learn/jewish-funerals-near-lafayette) explains how it works.
 
 ### What if I am not religious or know nothing about Jewish practice?
 

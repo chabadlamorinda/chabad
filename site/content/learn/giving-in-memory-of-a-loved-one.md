@@ -11,17 +11,17 @@ Giving tzedakah in memory of a loved one is a way of doing for them a good deed 
 
 Chabad.org explains that after death a person can no longer perform mitzvot, but the living can do so in their merit. Children, relatives and friends take on extra Torah learning (especially Mishnah), give to charity and increase good deeds *l'ilui nishmat* (לְעִלּוּי נִשְׁמַת, "for the elevation of the soul") and *l'zechut* (in the merit of) the person who passed away.
 
-One Chabad.org article says that "there is nothing greater we can do for the soul," and that the soul continues to rise as the living advance in Torah and mitzvot. Giving is a physical good deed done in this world, the kind of act the departed cannot do any longer.
+Chabad.org explains that on each yahrzeit the soul rises higher, and that every mitzvah done in its merit helps it ascend ever higher. Giving is a physical good deed done in this world, the kind of act the departed cannot do any longer.
 
 ## At the yahrzeit
 
-Chabad.org recommends giving extra charity on the yahrzeit, the anniversary of the passing, for the soul's elevation. The day is also a time to honor the person's life and to renew our efforts to continue their legacy of good deeds.
+Chabad.org recommends giving extra charity on the yahrzeit, the anniversary of the passing, for the soul's elevation. The day is also a time to honor the person's memory.
 
 Other customs on the yahrzeit include lighting a candle that burns for 24 hours, studying Mishnah, attending a minyan and saying Kaddish, and serving refreshments after services with a *l'chaim* in the person's memory. Some people sponsor a Kiddush on a nearby Shabbat. See [Yahrzeit](/learn/yahrzeit) and [Sponsor a Kiddush](/sponsor-a-kiddush).
 
 ## At Yizkor
 
-The central part of Yizkor (יִזְכּוֹר), the memorial prayer, is a private pledge to give charity after the holiday in honor of the departed, made "without obligating myself with a vow." Chabad.org explains that this charity brings merit to the soul and elevates it in its heavenly home. Yizkor is said in the synagogue four times a year: on Yom Kippur, Shemini Atzeret, the last day of Passover and the second day of Shavuot. See [Yizkor](/learn/yizkor).
+The central part of Yizkor (יִזְכּוֹר), the memorial prayer, is a private pledge to give charity after the holiday in honor of the departed, made "without obligating myself with a vow." Chabad.org explains that the soul gains merit when the memory of its good deeds inspires loved ones to do good. Yizkor is said in the synagogue four times a year: on Yom Kippur, Shemini Atzeret, the last day of Passover and the second day of Shavuot. See [Yizkor](/learn/yizkor).
 
 ## A fund, a plaque, a Kaddish
 

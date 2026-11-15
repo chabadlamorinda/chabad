@@ -5,13 +5,13 @@ category: Jewish ideas
 related: maaser, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
 local: Have a question about how to give or what to set aside? Call Rabbi Labkowski at 925-384-7242, or read how we welcome gifts on our legacy page.
 ---
-Chabad teaches that maaser, giving a tenth of your income to tzedakah, is G-d's own promise of success. The Torah says that giving a tenth will not make a person poorer, and the Talmud teaches that one who gives maaser faithfully will be repaid and become wealthy.
+Chabad teaches that maaser, giving a tenth of your income to tzedakah, is G-d's own promise of success. In the book of Malachi, G-d says of the tithe, "Test Me in this," and the Talmud teaches, "Give a tenth so that you will become rich" (Taanit 9a).
 
 ## What the Torah and the Talmud say
 
-Maaser (מַעֲשֵׂר) means "a tenth." Chabad.org explains that the Torah promises that giving tzedakah will not leave a person poorer, and that one who faithfully gives maaser is assured of being repaid, and of eventual wealth. King Solomon taught that giving to the poor is like lending to G-d, who repays in this world with added returns.
+Maaser (מַעֲשֵׂר) means "a tenth." Chabad.org explains that one who gives maaser faithfully is assured of full repayment and eventual wealth. King Solomon taught that giving to the poor is like lending to G-d, and Chabad.org adds that G-d repays charitable funds, with handsome dividends, here in this world.
 
-This is unusual. The Torah normally forbids testing G-d (Deuteronomy 6:16). But with maaser the Talmud (Taanit 9a), as Chabad.org presents it, says it is permitted: give the tenth, and see. The prophet Malachi (3:10) says it in G-d's name: "Try it and see." The Rabbi teaches that this is G-d's promise of success to everyone who gives a tenth.
+This is unusual. The Torah normally forbids testing G-d (Deuteronomy 6:16). But with maaser it is permitted. The prophet Malachi (3:10) says in G-d's name: bring the tithe, "Test Me in this, and see if I will not open the floodgates of heaven." The Talmud (Taanit 9a), in a discourse of the Previous Rebbe on Chabad.org, reads the Torah's double wording *aser te'aser* as "give a tenth so that you will become rich," and says that G-d may never be put to the test except in this one case: give the tenth, and see. Maaser is G-d's promise of success, and this is what Chabad teaches and what the Rabbi teaches.
 
 ## Why G-d makes this promise
 
@@ -34,10 +34,10 @@ A grant from your donor-advised fund to Chabad of Lamorinda counts as maaser. To
 ## Common questions
 
 ### Does giving charity make you rich in Judaism?
-Chabad teaches that maaser, giving a tenth of income, is G-d's promise of success. The Torah says giving will not make a person poorer, and the Talmud (Taanit 9a) teaches that one who gives a tenth faithfully will be repaid and become wealthy.
+Chabad teaches that maaser, giving a tenth of income, is G-d's promise of success. G-d says "Test Me" about the tithe (Malachi 3:10), and the Talmud teaches "give a tenth so that you will become rich" (Taanit 9a).
 
 ### What does "test Me" in Malachi mean?
-In Malachi 3:10, G-d invites the Jewish people to bring the tithe and see whether He will pour out blessing. Chabad.org teaches that this is the one place where the Torah permits putting a promise of G-d to the test.
+In Malachi 3:10, G-d invites the Jewish people to bring the tithe and see whether He will pour out blessing. As Chabad.org presents the Talmud (Taanit 9a), this is the one case where G-d may be put to the test.
 
 ### Is maaser, giving ten percent, required by Jewish law?
 Chabad.org explains that authorities differ on whether maaser kesafim is a Torah law, a rabbinic law or a custom held as strongly as a vow. Most follow the latter view. Ask the Rabbi how it applies to you.

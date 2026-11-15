@@ -48,7 +48,7 @@ Only if he can keep about 6.5 feet from graves and avoid anything covering them,
 
 ### Can a Kohen attend the funeral of a grandparent?
 
-No. Chabad.org says a Kohen may not become impure for a grandfather, stepparent or relatives outside the seven. It is difficult, and the Rabbi can help you take part at a distance.
+No. The exception covers only the seven relatives, so a Kohen may not become impure for a grandparent. It is difficult, and the Rabbi can help you take part at a distance.
 
 ### Why do Kohanim stay away from the dead?
 
@@ -60,7 +60,7 @@ Chabad.org says that after the burial, a Kohen may not visit the grave in a way 
 
 ### Can a Kohen stay in a hospital room with a dying parent?
 
-Ask the Rabbi right away. Chabad.org says that in great need, such as visiting a parent, a Kohen may rely on a lenient view.
+Ask the Rabbi right away. A hospital raises questions for a Kohen because others may pass away under the same roof; Chabad.org says that in great need, such as visiting a parent, wife or child, many rabbis permit relying on a lenient view.
 
 ## Take the next step
 

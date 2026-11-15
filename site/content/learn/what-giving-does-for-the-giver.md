@@ -9,7 +9,7 @@ Judaism teaches that tzedakah helps the giver at least as much as the receiver. 
 
 ## "The pauper does for the rich man"
 
-Chabad.org quotes this saying of the Sages in its article on tzedakah. It turns our usual picture upside down. We tend to think the giver is the strong one and the receiver the weak one. The Sages say the opposite: the person in need gives the giver the chance to do something good. The recipient therefore has no reason to feel ashamed.
+Chabad.org quotes this saying of the Sages (Ruth Rabbah 5:9) in its article on tzedakah. It turns our usual picture upside down. We tend to think the giver is the strong one and the receiver the weak one. The Sages say the opposite: the person in need gives the giver the chance to do something good. The recipient therefore has no reason to feel ashamed.
 
 Another Chabad.org article adds that when a giver meets someone in need, he or she is humbled. G-d could have supplied that person directly, but chose to give the giver a role. The article calls this being a partner in completing creation, and says the word for a poor person, *ani*, is related to the word for "responding": need is a summons.
 
@@ -51,7 +51,7 @@ Chabad.org says generosity brings a sense of inner fulfillment and joy.
 Yes. Chabad.org says even someone supported by a communal fund should give something, so everyone has the dignity of being a giver.
 
 ### Is giving only about money?
-No. Chabad.org lists time, skill, attention and a smile along with money. See [chesed](/learn/chesed).
+No. Giving time and care to someone who cannot manage alone is giving too. See [chesed](/learn/chesed).
 
 ### How can I give in a way that is good for me and for the receiver?
 Give with warmth and respect for the receiver's dignity. Read [how to give kindly](/learn/how-to-give-tzedakah-kindly).

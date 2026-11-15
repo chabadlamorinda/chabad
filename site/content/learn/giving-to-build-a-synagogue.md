@@ -30,7 +30,7 @@ These teachings suggest a gentle way to think about a gift toward a synagogue:
 
 ## Giving to Chabad of Lamorinda
 
-To learn what is planned for the building of Chabad of Lamorinda in Lafayette, and how families from Lafayette, Moraga and Orinda can take part, please call Rabbi Labkowski at 925-384-7242. For what your support makes possible every week, see [Supporting Chabad of Lamorinda](/learn/supporting-chabad-of-lamorinda).
+To hear how families from Lafayette, Moraga and Orinda can support the synagogue at Chabad of Lamorinda in Lafayette, please call Rabbi Labkowski at 925-384-7242. For what your support makes possible every week, see [Supporting Chabad of Lamorinda](/learn/supporting-chabad-of-lamorinda).
 
 You can give today through [the website](/donate), or plan a gift for the future. Chabad of Lamorinda accepts legacy gifts (a bequest in a will or trust, a retirement account, life insurance), donor-advised fund grants and gifts of stock, and a donor-advised fund grant counts as maaser. Contact Rabbi Yisroel Labkowski (925-384-7242) or Rebbetzin Tzipora Labkowski (925-384-7241), and see [the legacy page](/legacy). Please ask your attorney and tax advisor about legal and tax matters.
 
@@ -51,8 +51,8 @@ Many people do. A memorial plaque can be added in the synagogue at Chabad of Lam
 ### Can I use a donor-advised fund or stock?
 Chabad of Lamorinda accepts donor-advised fund grants and gifts of stock. A donor-advised fund grant counts as maaser. Ask your tax advisor about the details.
 
-### Is there a building campaign I can join?
-Call Rabbi Labkowski at 925-384-7242 to hear what is planned and how to take part.
+### How can I support the synagogue at Chabad of Lamorinda?
+You can give through [the website](/donate) or call Rabbi Labkowski at 925-384-7242 to hear how to take part.
 
 ## Take the next step
 

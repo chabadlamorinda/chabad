@@ -27,7 +27,7 @@ Chabad.org's basics of tzedakah also say that how you give matters more than how
 
 ## Maaser: a tenth, month by month
 
-Many people give maaser, a tenth of their income, and it fits well with monthly giving, since income arrives month by month. The Torah invites us to test G-d with the tithe (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. Rabbi Labkowski teaches that maaser is Hashem's promise of success. This is said of maaser alone. It is never meant to make anyone feel guilty, and if you are going through a hard time, please call the Rabbi at 925-384-7242. Chabad.org notes that maaser is calculated on net profit, after business expenses and taxes. See [Maaser](/learn/maaser).
+Many people give maaser, a tenth of their income, and it fits well with monthly giving, since income arrives month by month. The Torah invites us to test G-d with the tithe (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. Rabbi Labkowski teaches that maaser is Hashem's promise of success. This is said of maaser alone. It is never meant to make anyone feel guilty, and if you are going through a hard time, please call the Rabbi at 925-384-7242. Chabad.org notes that business expenses and taxes withheld by law may be deducted before figuring the tenth; ask the Rabbi about your own case. See [Maaser](/learn/maaser).
 
 ## Giving monthly to Chabad of Lamorinda
 

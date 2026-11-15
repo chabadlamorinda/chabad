@@ -23,7 +23,7 @@ You can simply set aside a gift and say, in your own words, that it is in the me
 
 ## Alongside tzedakah: Tehillim and Mi Sheberach
 
-Chabad.org says that any prayers and psalms work, but many people say a short set of Psalms (20, 30, 121, 130 and 142), or a longer set when there is more time. Some say the psalm that matches the patient's age. See [Tehillim](/learn/tehillim) for how to begin.
+Chabad.org says that any prayers and psalms work, but many people say a short set of Psalms (20, 30, 121, 130 and 142), or a longer set when there is more time. Some say the psalm for the year of life the patient is in (for a 75-year-old, Psalm 76). See [Tehillim](/learn/tehillim) for how to begin.
 
 It is also customary to have a *Mi Sheberach*, a prayer for healing, said during the Torah reading in synagogue. Read more about [Mi Sheberach](/learn/mi-sheberach). Chabad of Lamorinda has a prayer list: send a name on the [Tehillim page](/tehillim). Call Rabbi Labkowski at 925-384-7242 to ask about a Mi Sheberach.
 

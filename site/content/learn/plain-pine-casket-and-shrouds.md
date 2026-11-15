@@ -23,7 +23,7 @@ Chabad.org says the casket should be plain, unlined and made of material that de
 
 Chabad.org also says:
 
-- The body is buried directly in the ground. Vaults, above-ground mausoleums and crypts are not permitted.
+- The casket rests on the earth itself, not inside a cement or metal vault, and above-ground burial (a mausoleum or crypt) is not permitted.
 - Where the law of a cemetery requires a vault, earth is first shoveled in, and the casket should rest on the ground itself.
 - The casket's lid is left slightly ajar with a pebble or twig.
 - Outside Israel, earth from the Land of Israel is placed in the casket, and earth from Israel is sprinkled into the grave, because that land is holy.

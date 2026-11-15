@@ -7,11 +7,11 @@ local: In an interfaith or mixed family and unsure what to do? Call Rabbi Yisroe
 ---
 A Jew who was part of an interfaith family is still entitled to a Jewish burial in a Jewish cemetery, and the community is obligated to provide it. Questions about a non-Jewish spouse, children or relatives are sensitive, so please call Rabbi Yisroel Labkowski at 925-384-7242 and talk it through with him privately.
 
-**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call at once: Rabbi Labkowski 925-384-7242, Rebbetzin Labkowski 925-384-7241.** Whatever your family looks like, you will be met with warmth and without judgment. Families in Lafayette, Moraga and Orinda come from many backgrounds, and so do those who call us.
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call at once: Rabbi Labkowski 925-384-7242, Rebbetzin Labkowski 925-384-7241.** Whatever your family looks like, you will be met with warmth and without judgment. Families in Lafayette, Moraga and Orinda come from many backgrounds.
 
 ## The Jewish person
 
-Chabad.org (from Rabbi Maurice Lamm's guide) says that a Jewish partner who remained Jewish is entitled to burial in a Jewish cemetery, whether or not they were observant and whether or not their spouse is Jewish. Every Jew deserves a dignified Jewish burial. See [why Jewish burial is so important](/learn/why-jewish-burial-matters).
+Chabad.org (from Rabbi Maurice Lamm's guide) says that a Jewish partner in an intermarriage who remained Jewish is entitled to burial in a Jewish cemetery. Every Jew deserves a dignified Jewish burial, whether or not they were observant. See [why Jewish burial is so important](/learn/why-jewish-burial-matters).
 
 ## The non-Jewish spouse or relative
 
@@ -29,7 +29,7 @@ Questions of who is Jewish can be painful. See [who is a Jew](/learn/who-is-a-je
 
 ## Non-Jewish loved ones at the funeral
 
-Non-Jewish family and friends are surely grieving too, and the Rabbi can tell you how they can be present and how they can honor the person who died. We do not want anyone to feel unwelcome at a time like this. Please ask the Rabbi about the details.
+Non-Jewish family and friends are surely grieving too. We do not want anyone to feel unwelcome at a time like this. Please ask the Rabbi about your family's situation; he will answer with care.
 
 ## If there are conflicts in the family
 
@@ -51,7 +51,7 @@ A child of a Jewish mother can, even if uncircumcised. A child of a non-Jewish m
 
 ### Can non-Jewish relatives attend a Jewish funeral?
 
-Please ask the Rabbi, who will explain how family and friends of any background can be present and honor the deceased.
+Please ask the Rabbi about your family's situation. He will answer with care, and with respect for everyone who is grieving.
 
 ### Does it matter if the person was not religious?
 

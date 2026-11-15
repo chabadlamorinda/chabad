@@ -21,13 +21,13 @@ A family can make this a gentle Friday habit: a child places the coins in the bo
 
 ## Whom to help first
 
-Chabad.org gives a simple order of priorities: family members in serious financial difficulty first, then local charities before distant ones, then charities in Israel. Torah schools and Jewish institutions are among the worthy recipients. So a family can ask together: who near us needs help? See [Tzedakah Priorities](/learn/tzedakah-priorities) and [Local Tzedakah in Lamorinda](/learn/local-tzedakah-in-lamorinda).
+Chabad.org gives a simple order of priorities: family members in serious financial difficulty first, then local charities before distant ones, and charities in Israel before other faraway ones. Torah schools and Jewish institutions are among the worthy recipients. So a family can ask together: who near us needs help? See [Tzedakah Priorities](/learn/tzedakah-priorities) and [Local Tzedakah in Lamorinda](/learn/local-tzedakah-in-lamorinda).
 
 Chabad.org also teaches that how we give matters more than how much: give warmly, with a smile, and give anonymously when you can, so the recipient is not embarrassed.
 
 ## A tenth for the family
 
-Many families set aside maaser, a tenth of income, for tzedakah. This is the one kind of giving where the Torah itself invites us to test G-d. The prophet Malachi (3:10) says to bring the tithes and "try Me now," and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. Rabbi Labkowski teaches that maaser is Hashem's promise of success. This is said of maaser alone, and it is never a reason for anyone to feel guilty. If money is tight, or you are not sure how maaser applies to your family, please call the Rabbi at 925-384-7242. See [Maaser](/learn/maaser).
+Many families set aside maaser, a tenth of income, for tzedakah. Maaser is where the Torah itself invites us to test G-d. The prophet Malachi (3:10) says to bring the tithes and "try Me now," and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. Rabbi Labkowski teaches that maaser is Hashem's promise of success. This is said of maaser alone, and it is never a reason for anyone to feel guilty. If money is tight, or you are not sure how maaser applies to your family, please call the Rabbi at 925-384-7242. See [Maaser](/learn/maaser).
 
 ## Three generations, one tradition
 
@@ -50,7 +50,7 @@ Money is not handled on Shabbat or Yom Tov, so the pushka is filled before.
 Because the Torah itself invites us to "try Me" with the tithe (Malachi 3:10), and the Talmud teaches to give a tenth so that you will become rich. Rabbi Labkowski teaches that maaser is Hashem's promise of success. For your own situation, call the Rabbi.
 
 ### Who should get our tzedakah first?
-Family members in serious need come first, then local causes, then Israel, as Chabad.org presents Jewish law. Ask the Rabbi about your own case.
+Family members in serious need come first, then local causes, and Israel before other distant causes, as Chabad.org presents Jewish law. Ask the Rabbi about your own case.
 
 ### Can grandparents give together with grandchildren?
 Yes. Giving together passes the tradition on. See [Jewish Grandparents](/learn/jewish-grandparents) for ideas.

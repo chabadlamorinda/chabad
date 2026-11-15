@@ -5,7 +5,7 @@ category: Life cycle
 related: jewish-wedding, jewish-birthday-customs, baby-naming, gifts-in-multiples-of-18, jewish-wedding-anniversary, tzedakah-at-a-bar-mitzvah
 local: Celebrating a wedding, a baby or a birthday in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 and share the good news.
 ---
-Judaism teaches that happy moments are a good time to give tzedakah: a birthday, the months of pregnancy and the day of a wedding all have customs of giving or helping others. Chabad.org explains that giving in gratitude for joy turns the celebration into a blessing for others.
+Judaism teaches that happy moments are a good time to give tzedakah: a birthday, the months of pregnancy and the day of a wedding all have customs of giving or helping others. Giving in gratitude for a joy turns the celebration into a blessing for others too.
 
 ## A birthday: one more gift to charity
 

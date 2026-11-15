@@ -21,7 +21,7 @@ Chabad.org also says that burial in a mixed cemetery, or in one that accepts que
 
 ## Why people buy a plot in advance
 
-Buying a plot while alive is an ancient custom. Chabad.org points to Abraham, who bought the burial place for Sarah, and to the sages, who advise buying one while healthy. Rabbi Aron Moss writes on Chabad.org that the custom is commonly believed to bring a long life, though some authorities say this blessing is not found in the classic sources. He offers a thoughtful reason: arranging a burial helps us face the fact that life is finite, so that fear of it does not drain our energy. Whether or not you accept it as a *segulah*, it relieves your children of a heavy burden. Chabad.org adds that if a person did not buy a plot, the family buys one before the burial, and even a poor person traditionally receives a plot, paid for with communal funds.
+Buying a plot while alive is an ancient custom. Chabad.org points to Abraham, who bought the burial place for Sarah, and to the sages, who advise buying one while healthy. A Chabad.org answer on buying a plot notes that the custom is commonly believed to bring a long life, though some authorities say this blessing is not found in the classic sources. It offers a thoughtful reason: arranging a burial helps us face the fact that life is finite, so that fear of it does not drain our energy. Whether or not you accept it as a *segulah*, it relieves your children of a heavy burden. Chabad.org adds that if a person did not buy a plot, the family buys one before the burial, and even a poor person traditionally receives a plot, paid for with communal funds.
 
 ## Families, couples and the plot
 

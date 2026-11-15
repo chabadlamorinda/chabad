@@ -11,7 +11,7 @@ This is an old question: if G-d loves the poor, why doesn't He feed them directl
 
 The Talmud (Bava Batra 10a) tells that Turnus Rufus, a Roman official, asked Rabbi Akiva why, if his G-d loves the poor, He does not feed them. Chabad.org retells the exchange this way:
 
-1. Rabbi Akiva answers that G-d leaves people poor so that those who give charity are saved from purgatory through that merit.
+1. Rabbi Akiva answers that G-d leaves people poor so that those who give charity are saved, through that merit, from the judgment of Gehinnom.
 2. Turnus Rufus objects. He says giving charity earns punishment, and tells a parable: a king, angry at his slave, jails him and forbids food and water. Someone feeds the slave anyway, and the king is angry with that person. He applies it to Israel, citing "the children of Israel are My slaves" (Leviticus 25:55).
 3. Rabbi Akiva replies with his own parable. A king, angry at his child, jails him and forbids food and water. Someone feeds the child, and the king rewards that person. He cites "You are children of the L-rd your G-d" (Deuteronomy 14:1).
 
@@ -27,7 +27,7 @@ His point: G-d wants everyone helped, so He made a world with enough resources f
 
 Another Chabad.org article explains the Jewish view of money. Wealth is a deposit from G-d, held for a time and meant to be used where it is most needed, as taught in the *Arba'ah Turim*, a classic code of Jewish law. The Mishnah (Avot 3:7) teaches that what we have ultimately belongs to G-d. The same article describes a wealthy person as G-d's trusted "banker," entrusted with resources to distribute. This is why tzedakah means "justice," not "charity." See [Tzedakah](/learn/tzedakah) and [the Jewish view on wealth](/learn/jewish-view-on-wealth).
 
-Chabad.org also tells a story of the Baal Shem Tov, the founder of Chassidism. A disciple asked what divine purpose atheism serves. The Baal Shem Tov answered that when someone asks you for tzedakah, you should act as though G-d did not exist and you alone were responsible. The lesson is that need is a call to act.
+Chabad.org also brings a teaching of the Baal Shem Tov, the founder of Chassidism. He was asked: the Talmud says that for everything G-d forbade, He permitted something like it, so what is permitted that corresponds to denying G-d? He answered: acts of kindness. When you see someone suffering, do not say "G-d will take care of it." Act to relieve the suffering as though there were no G-d and it all depended on you. The lesson is that need is a call to act.
 
 ## What this means in Lamorinda
 
@@ -39,7 +39,7 @@ When you see a need, whether a neighbor, a family or a senior in Lafayette, Mora
 Chabad.org gives the Talmud's answer through Rabbi Akiva, and a modern one: G-d built a world with enough for all and made people His partners in delivering it. Hunger persists because people are not doing their part.
 
 ### What did Rabbi Akiva tell Turnus Rufus?
-Chabad.org tells that he said giving charity saves the giver from purgatory, and that the Jewish people are G-d's children, so G-d rewards those who feed them.
+Chabad.org tells that he said giving charity saves the giver from the judgment of Gehinnom, and that the Jewish people are G-d's children, so G-d rewards those who feed them.
 
 ### Does G-d need our money?
 Chabad.org teaches that G-d could feed the hungry directly, but made a world where people freely choose kindness. Wealth is a deposit from G-d, entrusted to us to use where it is needed.
@@ -51,7 +51,7 @@ Because the money is not only ours. Chabad.org explains that giving returns a po
 The Talmud's answer through Rabbi Akiva is one answer, and Chabad.org's modern one is another. For personal and painful questions, call the Rabbi at 925-384-7242.
 
 ### What does the Baal Shem Tov's story teach?
-Chabad.org tells that he taught that, when someone asks you for tzedakah, you should act as if you alone are responsible. Need is a call to act.
+Chabad.org tells that he taught: when you see someone suffering, act to help as though it all depended on you. Need is a call to act.
 
 ## Take the next step
 

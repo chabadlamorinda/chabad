@@ -23,11 +23,11 @@ In another account on Chabad.org, a visitor received a dollar and the Rebbe told
 
 Rabbi Eliezer Zalmanov, on Chabad.org, answers a reader who received a dollar as a child. He explains that the dollar represents a responsibility to help others, with money, goods, time or effort. The Rebbe intended it to be given to charity. Many people kept the original bill and gave another dollar in its place; Rabbi Zalmanov suggests that if you do not remember giving it, give a dollar to charity soon.
 
-He also tells that the Rebbe liked crisp bills. He links this to a story about the Alter Rebbe, who admired the sparkling coins a merchant's wife had polished: a good deed should shine, done with a smile and in the purest way.
+He also tells that the Rebbe liked crisp bills. He links this to a story about the Alter Rebbe, who admired the sparkling coins a merchant's wife had polished: the crisp bill is a reminder that charity should be given with care and sincerity.
 
 ## The Rebbe's love of the pushka
 
-The same teaching shows up in many Chabad.org stories. A chapter on Chabad.org by Rabbi Mendel Kalmenson tells that in winter 1990 the Rebbe asked an airline executive for a list of the company's planes so that he could contribute a dollar toward putting a charity box on each one, and that on Chanukah 5747 (1987) the Rebbe announced a campaign for a charity box in every child's bedroom and the next day gave children nickels for their boxes. See [The Pushka](/learn/pushka) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
+The same teaching shows up in many Chabad.org stories. A chapter on Chabad.org by Rabbi Mendel Kalmenson tells that in winter 1990 the Rebbe asked a managing director of El Al Airlines for a list of the company's planes so that he could contribute a dollar toward putting a charity box on each one, and that on Chanukah 5747 the Rebbe announced a campaign for a charity box in every child's bedroom and the next day gave children nickels for their boxes. See [The Pushka](/learn/pushka) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
 
 ## Giving that starts small
 

@@ -16,7 +16,7 @@ Chabad.org points to the Torah verse in Deuteronomy (21:23). It both commands bu
 ## Three reasons Chabad.org gives
 
 1. **Respect for the person.** Every human being is made in G-d's image, so leaving the body unburied is a serious shame. Chabad.org notes that even the High Priest, who is normally forbidden to touch the dead, had to bury a Jew who had no one else to do so.
-2. **The soul.** Chabad.org teaches that the soul does not feel free to ascend until the body is properly prepared and buried in the ground. The Zohar says the soul is pained until burial. (See [the soul](/learn/the-soul).)
+2. **The soul.** Chabad.org cites the Zohar, which teaches that the soul is pained until the body is buried, and that delay adds to its distress. (See [the soul](/learn/the-soul).)
 3. **The family.** Staying close to the body for a long time is a great emotional strain on mourners. A timely burial spares them that, and it allows them to begin [shiva](/learn/shiva) and to be comforted.
 
 ## When a short delay is allowed

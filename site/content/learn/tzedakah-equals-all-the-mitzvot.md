@@ -16,7 +16,7 @@ Chabad.org confirms that the saying is authentic and comes from the Talmud (Bava
 - **A Midrash** (Midrash Zutta on Song of Songs) teaches that the generation of the Flood and the people of Sodom might not have been destroyed had they given tzedakah.
 - **Another Midrash** (Tanna d'Vei Eliyahu Zutta) says the world has stood on tzedakah since creation.
 
-Chabad.org adds that "no other mitzvah brings as strong a divine response," and that the Sages taught that tzedakah brings atonement, protects from harsh decrees and hastens the redemption. See [Does charity avert a harsh decree?](/learn/tzedakah-averts-a-harsh-decree)
+Chabad.org adds that the Sages taught that tzedakah brings atonement, protects from harsh decrees and hastens the redemption. See [Does charity avert a harsh decree?](/learn/tzedakah-averts-a-harsh-decree)
 
 ## A simple explanation: it takes your whole self
 

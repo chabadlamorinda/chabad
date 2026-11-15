@@ -5,15 +5,15 @@ category: Jewish ideas
 related: jewish-grandparents, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
 local: Thinking about the Jewish future of your family? Talk with Rabbi Labkowski at 925-384-7242 or Rebbetzin Labkowski at 925-384-7241.
 ---
-Whether your grandchildren will be Jewish depends on what is handed from one generation to the next, and that is something almost every family can still influence. Jewish continuity means that Jewish life, learning and love for Judaism pass from grandparents to parents to children, and it begins in homes, around Shabbat candles and in classrooms.
+Whether your grandchildren will live and love their Judaism depends on what is handed from one generation to the next, and that is something almost every family can still influence. Jewish continuity means that Jewish life, learning and love for Judaism pass from grandparents to parents to children, and it begins in homes, around Shabbat candles and in classrooms.
 
 ## A Jew is someone with Jewish grandchildren
 
-Chabad.org shares an essay by Dr. Susan Handelman on why the family is so central to Judaism. She begins with a well-known saying that a Jew today is someone who has Jewish grandchildren. She notes that it is meant as a challenge, not a judgment, since many people cannot or do not have children.
+Chabad.org shares an essay by Dr. Susan Handelman on why the family is so central to Judaism. She begins with a well-known saying that a Jew today is someone who has Jewish grandchildren. She calls it a metaphor, and she writes with compassion for the many who cannot have children.
 
 Her explanation is that the third generation confirms the first. The essay cites the principle that "three is a *chazakah*" (חֲזָקָה, a firm hold): what happens three times is established. When a grandchild carries Judaism forward, the chain is secure.
 
-The essay also says that handing Judaism on is not only a matter of biology. It takes spiritual commitment. Maimonides taught that students are a teacher's "spiritual children," so teachers, mentors and grandparents without grandchildren of their own can still help the next generation. The essay ends with a hope that each of us will try, in our own way, to have Jewish grandchildren.
+The essay also says that handing Judaism on is not only a matter of biology. It takes spiritual commitment. Maimonides taught that students are a teacher's "spiritual children," so teachers, mentors and grandparents without grandchildren of their own can still help the next generation. The essay ends by urging each of us to try, in our own way, to have Jewish grandchildren.
 
 ## Shabbat candles: a flame handed down
 
@@ -39,7 +39,7 @@ Chabad of Lamorinda accepts legacy gifts (a bequest in a will or trust, a retire
 Jewish continuity means that Jewish identity, practice and learning are passed from one generation to the next. It happens through family, Shabbat, education and community.
 
 ### Will my grandchildren be Jewish?
-That depends on their family and on what each generation passes on. Your example, your Shabbat table and your support for Jewish education all help. Ask the Rabbi about your own family's situation.
+In Jewish law, as Chabad.org explains, a child born to a Jewish mother is Jewish for life, however much or little the family practices. Whether they will live Jewishly depends on what each generation passes on: your example, your Shabbat table and your support for Jewish education all help. Every family's story is different, so for your own family, talk privately with the Rabbi.
 
 ### What if my children are not very observant?
 You are not too late, and no one is judging you. Chabad.org's essay suggests that grandparents and mentors can help in many ways, and each step you take counts. Call Rabbi Labkowski at 925-384-7242 for a friendly conversation.
@@ -51,7 +51,7 @@ Chabad.org's essay points to teaching, mentoring and caring for children, and yo
 A gift to Jewish education and community helps children and families learn and celebrate Judaism. A legacy gift does this for future generations in Lafayette, Moraga and Orinda.
 
 ### Is a legacy gift only for wealthy people?
-No. A legacy gift can be of any size. Chabad.org's guidance is to speak with your family, your attorney and your financial advisor, and the Rabbi would be honored to hear what matters to you.
+No. A legacy gift can be of any size. Speak with your family and with your attorney and tax advisor, and the Rabbi would be honored to hear what matters to you.
 
 ## Take the next step
 

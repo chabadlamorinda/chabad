@@ -17,9 +17,9 @@ For a Bat Mitzvah, many families follow the same spirit: a girl's first tzedakah
 
 ## What about the gift money?
 
-Cash gifts are a common part of the celebration. Chabad.org's guide to maaser says that maaser (a tenth) is usually given from all income, including gifts. Cash gifts are normally subject to maaser, but if money is given for a specific purpose, such as tuition or another basic need, it is exempt. If the giver is not particular about how it is spent, maaser should be taken. The article does not address bar mitzvah checks directly, so if you are unsure, ask the Rabbi.
+Cash gifts are a common part of the celebration. Chabad.org's guide to maaser says that maaser (a tenth) is usually given from all income, including gifts. Cash gifts are normally subject to maaser, but if money is given for a specific purpose, such as tuition or another basic need, it is exempt. If the giver is not particular about how it is spent, maaser should be taken. Chabad.org's maaser article even reminds a young person who has just received a bar mitzvah check to choose a charity for the tithe. If you are unsure about a particular gift, ask the Rabbi.
 
-The Torah invites us to test G-d with maaser (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. Rabbi Labkowski teaches that maaser is Hashem's promise of success. For a young person this can be the first lesson in how giving and blessing go together. See [Maaser](/learn/maaser) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
+The Torah invites us to test G-d with maaser (Malachi 3:10), and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. Rabbi Labkowski teaches that maaser is Hashem's promise of success. This is said of maaser alone, and for any personal question, ask the Rabbi. For a young person this can be the first lesson in how giving and blessing go together. See [Maaser](/learn/maaser) and [Children, Money and Tzedakah](/learn/children-money-and-tzedakah).
 
 ## Giving in multiples of 18
 

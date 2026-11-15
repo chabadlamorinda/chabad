@@ -3,16 +3,16 @@ title: Can't Afford a Jewish Funeral? Help Is Available. Call the Rabbi
 description: Can't afford a Jewish funeral? Jewish burial can all be arranged even with no budget, and financial help is available. Call Rabbi Labkowski, 925-384-7242.
 category: Mourning & remembrance
 related: first-hours-after-a-death, why-jewish-burial-matters, jewish-funeral, plain-pine-casket-and-shrouds, jewish-funerals-near-lafayette
-local: Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, at any hour, before you worry about money. There is no shame in asking.
+local: Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241 before you worry about money. There is no shame in asking.
 ---
 If you cannot afford a Jewish funeral, please call Rabbi Yisroel Labkowski at 925-384-7242 right now: Jewish burial can all be arranged even if there is no budget, and financial help is available. Money should never be the reason a Jew is denied a proper Jewish burial.
 
-**Call or text Rabbi Yisroel Labkowski at 925-384-7242, or Rebbetzin Tzipora Labkowski at 925-384-7241, at any hour.** You do not need to be a member, and you do not need to have all the answers. There is no shame in asking. Families in Lafayette, Moraga, Orinda and all over the East Bay have people to turn to.
+**Call or text Rabbi Yisroel Labkowski at 925-384-7242, or Rebbetzin Tzipora Labkowski at 925-384-7241.** You do not need to be a member, and you do not need to have all the answers. There is no shame in asking. Families in Lafayette, Moraga, Orinda and all over the East Bay have people to turn to.
 
 ## What to do first
 
 1. **Call the Rabbi before you sign anything.** Tell him simply that someone has died and that money is a worry. He will guide you on what to do next and on who to contact.
-2. **Do not delay out of worry about cost.** Burial is a mitzvah to be done promptly (see [why Jews bury quickly](/learn/why-jews-bury-quickly)). Chabad.org says that a delay is justified only for the honor of the deceased, such as preparing the body, obtaining shrouds, arranging a plot or waiting for close family, and not for convenience.
+2. **Do not delay out of worry about cost.** Burial is a mitzvah to be done promptly (see [why Jews bury quickly](/learn/why-jews-bury-quickly)). Chabad.org says that a delay is justified only for the honor of the deceased, such as legal requirements, obtaining shrouds or a proper casket, or waiting for close family, and not for convenience.
 3. **Take it one step at a time.** [The first hours after a death](/learn/first-hours-after-a-death) lists what to do and in what order.
 
 Please do not make decisions about the funeral under pressure. Ask us first. No amounts or promises can be given in an article, so the Rabbi will talk with you personally about what your family needs.
@@ -29,9 +29,9 @@ Chabad.org notes that, traditionally, even a poor person is given a burial plot,
 
 Chabad.org advises families to be sure the funeral director provides the essentials of a Jewish burial: tahara (washing and purification), a *shomer* (a Jewish person who stays with the deceased until burial), *tachrichim* (white shrouds), a "kosher" casket, and the care of the Chevra Kadisha. It adds that some funeral homes will not offer these unless the family asks. That is one more reason to call the Rabbi first: he can help you ask for the right things.
 
-## If your family wants to help
+## If your family needs other help
 
-If you are able, you may want to help another family. Giving in memory of a loved one is a beautiful custom, and you can ask the Rabbi how. To support people in need in our community, see [the Chesed Fund](/donate?fund=chesed#give). If you need help yourself, see [help for seniors and families](/help/help-for-seniors-and-families).
+If your family is struggling in other ways too, tell the Rabbi when you call, or see [help for seniors and families](/help/help-for-seniors-and-families). There is no shame in asking.
 
 ## Common questions
 

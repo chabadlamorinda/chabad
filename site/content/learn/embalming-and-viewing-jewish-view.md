@@ -27,7 +27,7 @@ Chabad.org explains in its answer on open-casket funerals that the funeral is mo
 - The Talmud forbids looking at the face of the dead, out of respect for the person.
 - A viewing usually requires altering the body with chemicals, cosmetics, supports and the like, which Jewish law forbids as a desecration.
 - Burial is meant to be prompt, and preparing a body for viewing takes time.
-- The funeral is a goodbye of a different kind: a quiet farewell, a prayer, and burial. It does not need a last look.
+- The Zohar teaches that the soul is distressed until burial, and any delay adds to its pain.
 
 Chabad.org's guide to the basic laws of a Jewish funeral also says that flowers and music are not part of the funeral. For more on a funeral, see [Jewish funeral customs](/learn/jewish-funeral).
 
@@ -51,7 +51,7 @@ Chabad.org says the funeral is mainly to honor the deceased. It is forbidden to 
 
 ### Is it wrong to look at a loved one who has died?
 
-Out of respect, Jewish tradition does not look at the face of the person after death, and tells mourners to say goodbye in other ways. If you have already seen your loved one, there is nothing to feel guilty about. Ask the Rabbi.
+Out of respect, Jewish tradition does not gaze at the face of the person after death. If you have already seen your loved one, there is nothing to feel guilty about. Ask the Rabbi.
 
 ### Are cosmetics or special clothing allowed for the deceased?
 

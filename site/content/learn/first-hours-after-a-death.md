@@ -1,9 +1,9 @@
 ---
 title: Someone Just Died: What to Do in the First Hours, Jewish Guide
-description: What to do when someone dies, step by step, at home or in the hospital. Call Rabbi Labkowski first at 925-384-7242, at any hour, and he will guide you.
+description: What to do when someone dies, step by step, at home or in the hospital. Call Rabbi Labkowski first at 925-384-7242, and he will guide you.
 category: Mourning & remembrance
 related: jewish-funeral, why-jews-bury-quickly, jewish-burial-financial-help, aninut, chevra-kadisha-and-tahara
-local: Someone just died? Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, at any hour, before you call a funeral home.
+local: Someone just died? Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, before you call a funeral home.
 ---
 When a Jewish person dies, call Rabbi Yisroel Labkowski at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241) as soon as you can, ideally before you sign anything with a funeral home. If the death is sudden, call 911 first. We are so sorry for your loss, and you do not have to do this alone.
 
@@ -23,9 +23,9 @@ Chabad.org teaches that everyone present should say the blessing that acknowledg
 
 Keep the room quiet. Conversation should be about the funeral arrangements and the person's good qualities, or it can be Psalms ([Tehillim](/learn/tehillim)).
 
-## Who to call, in order
+## Who to call
 
-Chabad.org gives this order: first, the local **Chevra Kadisha** (the Jewish burial society), then the **funeral home** if you have hired one, and a **rabbi** for any unusual question (a death on Shabbat or a holiday, burial far away, organ donation). Here in Lamorinda, one call to Rabbi Labkowski at 925-384-7242 starts all of it. See [Jewish funerals near Lafayette](/learn/jewish-funerals-near-lafayette).
+Chabad.org says to call the local **Chevra Kadisha** (the Jewish burial society) right away for instructions, to make sure the **funeral home**, if you use one, knows what a Jewish burial needs, and to ask a **rabbi** about anything unusual (a death on Shabbat or a holiday, burial far away, organ donation). Here in Lamorinda, one call to Rabbi Labkowski at 925-384-7242 starts all of it. See [Jewish funerals near Lafayette](/learn/jewish-funerals-near-lafayette).
 
 Tell the funeral home that your loved one needs tahara (ritual washing), a *shomer* (a guard), white shrouds, a traditional wooden casket and the care of the Chevra Kadisha. See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
 
@@ -59,7 +59,7 @@ Tell the staff the Chevra Kadisha will care for the body and ask them to wait fo
 
 ### How soon must a Jewish burial take place?
 
-As soon as possible, and no later than 24 hours, unless a delay honors the deceased, such as time for tahara, shrouds, a plot or close family to arrive. See [why Jews bury quickly](/learn/why-jews-bury-quickly).
+As soon as possible, and no later than 24 hours, unless a delay honors the deceased, such as legal requirements, shrouds and a casket, or close family who must travel. See [why Jews bury quickly](/learn/why-jews-bury-quickly).
 
 ### Can someone stay with the body overnight?
 

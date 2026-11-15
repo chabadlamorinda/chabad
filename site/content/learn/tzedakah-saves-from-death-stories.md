@@ -1,5 +1,5 @@
 ---
-title: "Charity Saves From Death": Two True Talmud Stories
+title: Charity Saves From Death: Two True Talmud Stories
 description: Two Talmud stories behind the verse "charity saves from death": Rabbi Akiva's daughter and the snake, and Binyamin the Righteous. Read what they teach.
 category: Jewish ideas
 related: rabbi-akiva-and-rabbi-tarfon-investment, tzedakah, segulot, rabbi-akiva, mar-ukva-secret-giving
@@ -44,7 +44,7 @@ It is a teaching from the Talmud, spoken by Rabbi Akiva after his daughter's res
 Astrologers said she would be bitten by a snake on her wedding day. She gave her portion of food to a poor man, and the next morning a snake was found dead, pierced by her pin. Rabbi Akiva taught that charity delivers from death.
 
 ### Who was Binyamin HaTzaddik?
-A Talmudic figure who supervised a community charity fund. He paid a widow from his own pocket and, the Talmud says, was granted twenty-two more years of life.
+A Talmudic figure who supervised a community charity fund. He helped a mother of seven children from his own pocket and, the Talmud says, was granted twenty-two more years of life.
 
 ### Does giving charity guarantee protection?
 These stories do not say that. For personal questions, ask the Rabbi.

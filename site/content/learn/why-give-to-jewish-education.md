@@ -21,7 +21,7 @@ This is why a school is not a luxury. It is a partner that helps parents do what
 
 ## Where Jewish education fits among your giving
 
-Chabad.org's basics of tzedakah give an order of priorities: family members in serious need first, then local causes before distant ones, then Israel. Torah schools are named among the recipients of tzedakah. See [Tzedakah Priorities](/learn/tzedakah-priorities).
+Chabad.org's basics of tzedakah give an order of priorities: family members in serious need first, then local causes before distant ones, and causes in Israel before other faraway ones. Torah schools are named among the recipients of tzedakah. See [Tzedakah Priorities](/learn/tzedakah-priorities).
 
 In Chabad custom, a bar mitzvah boy gives tzedakah from his own money on the day of his Bar Mitzvah, and Chabad.org says it should preferably go to an institution involved with *chinuch*. The Jewish tradition keeps pointing to education as a place to give. See [Tzedakah at a Bar or Bat Mitzvah](/learn/tzedakah-at-a-bar-mitzvah).
 
@@ -40,7 +40,7 @@ Because Judaism is passed on by teaching. Jewish law makes education a duty of p
 Yes. Chabad.org names Torah schools among the recipients of tzedakah. If you wonder how a particular gift fits your maaser, ask the Rabbi.
 
 ### Should I give to education before other causes?
-Jewish law gives a general order: family in need, then local causes, then Israel. Within that order, education is a very worthy place to give. Ask the Rabbi about your own situation.
+Jewish law gives a general order: family in need first, then local causes, and Israel before other distant causes. Within that order, education is a very worthy place to give. Ask the Rabbi about your own situation.
 
 ### Can I give to Jewish education in Lafayette, Moraga or Orinda?
 Yes. Chabad of Lamorinda in Lafayette serves families from all three towns. Call Rabbi Labkowski at 925-384-7242 to hear what is planned and how to take part.

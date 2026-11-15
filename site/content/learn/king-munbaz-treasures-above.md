@@ -55,6 +55,6 @@ Start with [Charity saves from death: two true Talmud stories](/learn/tzedakah-s
 
 ## Take the next step
 
-- Read how a poor farmer planted for children he would never meet: [Choni and the carob tree](/learn/choni-and-the-carob-tree).
+- Read how a man planted a tree for children he might never meet: [Choni and the carob tree](/learn/choni-and-the-carob-tree).
 - Learn the ways to leave a gift: [Leaving a Jewish legacy](/learn/leaving-a-jewish-legacy-gift).
 - Call the Rabbi at 925-384-7242 or the Rebbetzin at 925-384-7241 to talk, with no pressure, about what you would like to leave for Jewish life in Lamorinda.

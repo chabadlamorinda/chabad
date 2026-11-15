@@ -30,7 +30,7 @@ For the full list of the eight levels, see [Tzedakah](/learn/tzedakah).
 
 ## Time and skill count too
 
-Tzedakah includes more than money. Chabad.org says cooking for a neighbor, visiting the sick or volunteering all count. Time, skill, attention and a smile are all gifts. See [chesed](/learn/chesed).
+Giving is more than money. Chabad.org's article on the eight levels gives examples: offering someone a lift, carrying a friend's heavy load, cheering up a friend who is down, and sharing what you know. See [chesed](/learn/chesed).
 
 ## How this looks in daily life
 
