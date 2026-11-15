@@ -12,7 +12,7 @@ A meaningful Bar or Bat Mitzvah puts the child's first steps as a Jewish adult a
 The child becomes Bar or Bat Mitzvah on the Hebrew birthday, with or without any event. So the first question is not "what kind of party?" but "what will my child take on?" The party then celebrates that. Some ways to put the mitzvah first:
 
 - **A boy's tefillin.** His first weekday morning with [tefillin](/learn/tefillin), and the aliyah to the Torah, are the heart of the day. See [starting tefillin before the Bar Mitzvah](/learn/starting-tefillin-before-bar-mitzvah).
-- **A girl's Shabbat candles.** the tradition lists lighting Shabbat candles, separating challah and personal prayer as the mitzvot a girl takes on. A girl who has not yet started can begin on the Shabbat closest to her Bat Mitzvah. A candlestick makes a lovely gift. See [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles).
+- **A girl's Shabbat candles.** The tradition lists lighting Shabbat candles, separating challah and personal prayer as the mitzvot a girl takes on. A girl who has not yet started can begin on the Shabbat closest to her Bat Mitzvah. A candlestick makes a lovely gift. See [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles).
 - **A personal mitzvah** the child chooses and keeps, such as daily prayer, a weekly act of kindness or regular charity.
 
 ## A talk that the child owns

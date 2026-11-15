@@ -11,7 +11,7 @@ According to Jewish tradition, there is nothing greater we can do for the soul o
 
 ## Why does learning help the soul?
 
-The Hebrew term for this is *l'ilui nishmat* (לעילוי נשמת), "for the elevation of the soul," or *lizchut* (לזכות), "in the merit of." the tradition explains that when relatives and friends take on additional Torah study, give charity and increase their good deeds, these acts bring merit to the one who has passed on. The soul, no longer in the body, cannot do mitzvot, so what we do here counts in its name.
+The Hebrew term for this is *l'ilui nishmat* (לעילוי נשמת), "for the elevation of the soul," or *lizchut* (לזכות), "in the merit of." The tradition explains that when relatives and friends take on additional Torah study, give charity and increase their good deeds, these acts bring merit to the one who has passed on. The soul, no longer in the body, cannot do mitzvot, so what we do here counts in its name.
 
 Traditional teaching teaches that this is especially so at three times: during the first year of mourning, at the [yahrzeit](/learn/yahrzeit) (the anniversary of the passing by the Jewish calendar), and any time a family feels moved.
 

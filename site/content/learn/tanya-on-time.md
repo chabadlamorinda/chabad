@@ -11,7 +11,7 @@ For busy families in Lafayette, Moraga and Orinda, who often feel there is never
 
 ## "At any time and moment"
 
-Chapter 25 on Chabad.org says: "For at any time and moment, a person is capable and free to rid himself of the spirit of folly." The chapter says that every Jew, even someone who has sinned, has a hidden love of G-d, and that a person can choose to act on it at any moment. When a mitzvah is called for, that love moves him to do it. When temptation comes, it helps him resist.
+Chapter 25 of the Tanya says: "For at any time and moment, a person is capable and free to rid himself of the spirit of folly." The chapter says that every Jew, even someone who has sinned, has a hidden love of G-d, and that a person can choose to act on it at any moment. When a mitzvah is called for, that love moves him to do it. When temptation comes, it helps him resist.
 
 The point is that you are never stuck in what you did yesterday. You may begin again now.
 
@@ -31,7 +31,7 @@ Chapter 4 quotes the Sages: "One hour of repentance and good deeds in this world
 
 Chapter 41 describes a way to begin the day: remember that G-d stands over you, thank Him for your soul and bring that readiness to prayer. See [what the Tanya says about prayer](/learn/tanya-on-prayer). The same chapter says that before a long period of study you should renew this preparation at least every hour, since each hour brings a different flow of spiritual energy. The idea is to begin again as often as you need to.
 
-Chapter 11 of Igeret HaTeshuvah, on Chabad.org, says: "Throughout one's days, one should experience teshuvah." Teshuvah, return, is not only for one season. It can be part of every day. For a guided look at the end of each day, see [cheshbon hanefesh, the nightly accounting](/learn/cheshbon-hanefesh).
+Chapter 11 of Igeret HaTeshuvah says: "Throughout one's days, one should experience teshuvah." Teshuvah, return, is not only for one season. It can be part of every day. For a guided look at the end of each day, see [cheshbon hanefesh, the nightly accounting](/learn/cheshbon-hanefesh).
 
 ## How to make a moment count
 

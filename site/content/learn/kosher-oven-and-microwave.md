@@ -19,7 +19,7 @@ If you have just one oven, as many homes in Lafayette, Moraga and Orinda do, Hal
 
 ## Covering food
 
-Covering is how an oven can stay "pareve." the law describes it this way:
+Covering is how an oven can stay "pareve." The law describes it this way:
 
 - Cover meat or dairy food tightly on all sides, including the bottom.
 - Put foil under the pan, and change it when you switch between meat and dairy.

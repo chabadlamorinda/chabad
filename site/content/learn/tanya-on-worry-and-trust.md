@@ -11,7 +11,7 @@ Tanya teaches that worry loosens its grip when we remember that G-d gives us lif
 
 The Tanya was written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, the founder of Chabad. Its third section, the Iggeret HaKodesh ("the holy letter"), is a collection of letters he sent to his followers. Epistle 11 is one of them, and it deals with exactly what keeps many of us awake at night: what if things go wrong?
 
-You can read it for yourself on Chabad.org's Tanya pages. Other Tanya guides on this site, such as [what is the Tanya](/learn/tanya), explain the book as a whole.
+You can read it for yourself in the Tanya, in print or online. Other Tanya guides on this site, such as [what is the Tanya](/learn/tanya), explain the book as a whole.
 
 ## What Epistle 11 says, in simple words
 
@@ -21,15 +21,15 @@ Here are the main ideas, in our own words.
 - **Nothing evil comes from Above.** What looks like suffering seems that way because we cannot see its source. The letter says that in truth everything is good, but its goodness is too lofty to be seen. Sometimes the good is "clothed" in pain until it is revealed.
 - **Faith means knowing G-d is everywhere.** The letter describes the purpose of faith as knowing that G-d is present everywhere and that life comes from Him.
 - **Sadness shows what we are missing.** The Alter Rebbe explains that grief and complaint come from feeling that some good is lacking, which is why Chassidic teaching works so hard to move us toward joy.
-- **The letter is written to each person.** It speaks in the singular. Chabad.org notes that this shows the level it describes is meant to be reachable by every Jew, because it relies on a faith hidden in each of us.
+- **The letter is written to each person.** It speaks in the singular. Chassidic teaching notes that this shows the level it describes is meant to be reachable by every Jew, because it relies on a faith hidden in each of us.
 
 The letter also sets a very high ideal, asking us to want even life's basics only for their spiritual purpose. Most of us will not live there all day. Take the direction, not the pressure.
 
 ## A true story: reading Epistle 11 through a quarantine
 
-Chabad.org tells of Reb Asher Grossman of Nikolayev, a shochet (ritual slaughterer) whom the Rebbe Rashab chose to proofread the Tanya for printing errors. His friend Rav Meir Shlomo Yanovsky, the city's rabbi and the Lubavitcher Rebbe's maternal grandfather, caught typhus in an outbreak. The sick were quarantined outside the city, and many lost hope.
+Chassidic tradition tells of Reb Asher Grossman of Nikolayev, a shochet (ritual slaughterer) whom the Rebbe Rashab chose to proofread the Tanya for printing errors. His friend Rav Meir Shlomo Yanovsky, the city's rabbi and the Lubavitcher Rebbe's maternal grandfather, caught typhus in an outbreak. The sick were quarantined outside the city, and many lost hope.
 
-Reb Asher came every day and stood beneath his friend's window. For thirty days he read Epistle 11 aloud, not knowing whether Rav Meir Shlomo could hear. Rav Meir Shlomo recovered, and he later credited those readings with keeping him strong and hopeful. The story is told on Chabad.org (see the article about the Tanya in quarantine).
+Reb Asher came every day and stood beneath his friend's window. For thirty days he read Epistle 11 aloud, not knowing whether Rav Meir Shlomo could hear. Rav Meir Shlomo recovered, and he later credited those readings with keeping him strong and hopeful.
 
 ## What to do with worry, step by step
 
@@ -56,7 +56,7 @@ Worry is a normal human reaction. Tanya's guidance is an invitation to a calmer 
 Tanya's guidance is spiritual. If anxiety is constant or overwhelming, professional help is also the right thing to seek, and Judaism encourages it. The Rabbi can also help you find the right support.
 
 ### Which part of the Tanya is Epistle 11 in?
-It is in the Iggeret HaKodesh, the third section of the Tanya. It is a short letter and is available on Chabad.org with an English translation.
+It is in the Iggeret HaKodesh, the third section of the Tanya. It is a short letter and is available online with an English translation.
 
 ### Where can I learn Tanya near Lafayette, Moraga or Orinda?
 There is a Tanya class in English every Wednesday at 1:00 PM, until 2:00 PM, at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address. See also [adult education](/programs/adult-education).

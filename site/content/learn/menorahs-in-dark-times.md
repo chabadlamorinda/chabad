@@ -40,7 +40,7 @@ If you or a loved one is in a hospital or care home at Chanukah, Jewish law has 
 ## Common questions
 
 ### Is there a true story of lighting a menorah in a Soviet prison?
-Yes. Jewish tradition tells of Reb Berke Chein, who lit Chanukah lights in a Soviet cell using an onion, butter from his ration and threads for wicks, with the help of a cellmate.
+Yes. The story is told of Reb Berke Chein, who lit Chanukah lights in a Soviet cell using an onion, butter from his ration and threads for wicks, with the help of a cellmate.
 
 ### Why do Jews light the menorah even in dangerous times?
 Lighting is a mitzvah and a statement of Jewish identity, and in hard times it also gives hope. Our tradition teaches that a little light can drive away much darkness.
@@ -49,7 +49,7 @@ Lighting is a mitzvah and a statement of Jewish identity, and in hard times it a
 Candles or oil are the traditional way. For a hospital, nursing home or any place where flames are not allowed, ask the Rabbi what to do.
 
 ### Where can I read more true Chanukah stories?
-The tradition has a large collection of Chanukah stories. You can also see our [stories](/stories) page, and the guide [Chanukah for kids](/learn/chanukah-for-kids).
+There is a large collection of Chanukah stories. You can also see our [stories](/stories) page, and the guide [Chanukah for kids](/learn/chanukah-for-kids).
 
 ### Does Chabad of Lamorinda visit people in the hospital at Chanukah?
 The Rabbi and Rebbetzin visit the sick at home, in hospital and in care facilities. Call 925-384-7242 to ask about a visit.

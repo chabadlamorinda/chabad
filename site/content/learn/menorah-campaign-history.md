@@ -11,7 +11,7 @@ Before that winter, Chanukah was mostly a private, indoor holiday. Here is how i
 
 ## The Rebbe's call
 
-At a gathering (a *farbrengen*) in December 1973, the Rebbe called for a new effort: every Jewish home should light the menorah on all eight nights, menorahs should be given to people who lack one, and children should receive Chanukah gelt and a menorah of their own. Jewish tradition places the call on the 20th of Kislev, December 15, 1973, and says it was first announced the day before.
+At a gathering (a *farbrengen*) in December 1973, the Rebbe called for a new effort: every Jewish home should light the menorah on all eight nights, menorahs should be given to people who lack one, and children should receive Chanukah gelt and a menorah of their own. The call was made on the 20th of Kislev, December 15, 1973, and was first announced the day before.
 
 The reasoning is simple. The menorah is meant to shine out toward the street, so that passersby see it. The Rebbe asked that it be placed where it can be seen. Learn more about the Rebbe and his campaigns in [The Rebbe](/learn/the-rebbe) and [Ten Mitzvah Campaigns](/learn/ten-mitzvah-campaigns). The Rebbe also asked that menorahs be lit at Israeli army bases in the days after the 1973 war.
 
@@ -44,13 +44,13 @@ The campaign that began in 1973 continues here at home. Chabad of Lamorinda's Gr
 It began in December 1973, when the Rebbe, Rabbi Menachem M. Schneerson, asked that every Jewish home light a menorah and that menorahs be given to those without one.
 
 ### Where was the first Chabad public menorah?
-The tradition tells of a simple wooden menorah on Fifth Avenue in Manhattan in 1973, a public menorah at Independence Hall in Philadelphia in 1974, and a giant one in San Francisco in 1975. Accounts differ on which was first, so ask the Rabbi if you would like more.
+The sources tell of a simple wooden menorah on Fifth Avenue in Manhattan in 1973, a public menorah at Independence Hall in Philadelphia in 1974, and a giant one in San Francisco in 1975. Accounts differ on which was first, so ask the Rabbi if you would like more.
 
 ### Why does Chabad give out menorahs?
 So that every Jewish family can light the menorah on all eight nights, and so the miracle of Chanukah is publicized. The Rebbe asked that menorahs be given to those who lack one.
 
 ### Who lit the menorah at the White House?
-Traditional teaching records that in 1979 President Jimmy Carter lit Chabad's giant menorah outside the White House.
+In 1979 President Jimmy Carter lit Chabad's giant menorah outside the White House.
 
 ### Why is a Chabad menorah built with straight arms?
 The Rebbe taught, based on Rashi's commentary and a drawing by Maimonides, that the branches of the menorah in the Holy Temple were straight, so Chabad menorahs follow that design. For more, read our guide to the [Chanukah menorah](/learn/chanukah-menorah), or ask the Rabbi.

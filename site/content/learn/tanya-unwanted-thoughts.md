@@ -11,13 +11,13 @@ For people who worry that their mind is "bad," this may be one of the most freei
 
 ## A thought is not a deed
 
-According to Chabad.org's presentation of Chapter 12, the beinoni, Tanya's everyday ideal (see [the beinoni](/learn/the-beinoni)), may still find that a wrong thought rises on its own, because the heart still craves such things. What makes him who he is, is that he rejects it at once and does not dwell on it or plan to act. Tanya's image is that he thrusts it aside "as it were with both hands."
+According to Chapter 12 of the Tanya, the beinoni, Tanya's everyday ideal (see [the beinoni](/learn/the-beinoni)), may still find that a wrong thought rises on its own, because the heart still craves such things. What makes him who he is, is that he rejects it at once and does not dwell on it or plan to act. Tanya's image is that he thrusts it aside "as it were with both hands."
 
 Willingly entertaining the thought is different; that is a choice. But the thought arriving is not.
 
 ## Chapter 27: rejoice, don't be crushed
 
-Chapter 27 takes this further. It speaks of sinful thoughts that come while a person is busy with ordinary affairs. If he pushes them away, he fulfills the Torah's command not to follow after his heart and eyes, and the chapter says this should make him glad. Chabad.org quotes the Sages' teaching that when a person passively refrains from sin, he is rewarded as though he had actively done a mitzvah.
+Chapter 27 takes this further. It speaks of sinful thoughts that come while a person is busy with ordinary affairs. If he pushes them away, he fulfills the Torah's command not to follow after his heart and eyes, and the chapter says this should make him glad. It quotes the Sages' teaching that when a person passively refrains from sin, he is rewarded as though he had actively done a mitzvah.
 
 Tanya adds two honest points:
 

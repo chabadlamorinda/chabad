@@ -11,7 +11,7 @@ This simple picture explains why your small daily choices matter: they are what 
 
 ## What are the three garments?
 
-According to Chabad.org's page on Chapter 4, every divine soul has three garments:
+According to Chapter 4 of the Tanya, every divine soul has three garments:
 
 - **Thought:** for the divine soul, this is grasping Torah as much as one can, on the levels of plain meaning, hint, interpretation and the hidden.
 - **Speech:** studying Torah in words: the teachings that explain the mitzvot and their laws.
@@ -21,7 +21,7 @@ The chapter says that when a person engages in all three, the soul is "clothed" 
 
 ## Why "clothing"?
 
-A Chabad.org article by Tzvi Freeman makes the image come alive. Clothes reveal a person's inner self, and they also shape the wearer: dress as an officer and you become more orderly, dress in track pants and you relax. Thoughts and feelings become real, the article says, when you put them into words or deeds. It quotes the Baal Shem Tov: "Wherever you put your thoughts, that is where you are, all of you."
+Rabbi Tzvi Freeman makes the image come alive. Clothes reveal a person's inner self, and they also shape the wearer: dress as an officer and you become more orderly, dress in track pants and you relax. Thoughts and feelings become real, he says, when you put them into words or deeds. It quotes the Baal Shem Tov: "Wherever you put your thoughts, that is where you are, all of you."
 
 ## Higher than the soul?
 
@@ -29,7 +29,7 @@ Chapter 4 says something surprising: these garments are higher than the soul its
 
 ## What this means for you
 
-The article on the garments says that a beinoni's task is to master his clothing, meaning his words and deeds, even when feelings still stir. Having an angry feeling is not failure; speaking in anger, or deliberately dwelling on negative thoughts, is the thing to avoid. When you stumble, it says, acknowledge it, express regret to G-d, resolve to continue and move on.
+Rabbi Freeman's article on the garments says that a beinoni's task is to master his clothing, meaning his words and deeds, even when feelings still stir. Having an angry feeling is not failure; speaking in anger, or deliberately dwelling on negative thoughts, is the thing to avoid. When you stumble, it says, acknowledge it, express regret to G-d, resolve to continue and move on.
 
 You can also change what you wear in the moment: choose a kind word, a mitzvah, a few minutes of Torah, even when your mood is low. See [mind over heart](/learn/mind-over-heart-tanya), [the beinoni](/learn/the-beinoni) and [lashon hara](/learn/lashon-hara) on the power of speech.
 
@@ -48,7 +48,7 @@ The Tanya teaches that this is the choice open to every person. See [mind over h
 Chapter 4 says that Torah and G-d are one, so performing mitzvot and learning Torah connect the soul to G-d.
 
 ### What is meant by the thought garment?
-For the divine soul, it is understanding Torah as far as one can. Chabad.org's article uses the Hebrew word machshavah for the inner "thought" of ideas and feelings.
+For the divine soul, it is understanding Torah as far as one can. He uses the Hebrew word machshavah for the inner "thought" of ideas and feelings.
 
 ### Where can I study Chapter 4 near Lafayette, Moraga or Orinda?
 At the Tanya class in English, every Wednesday at 1:00 PM at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.

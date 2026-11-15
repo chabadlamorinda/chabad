@@ -13,7 +13,7 @@ This is the central idea of the book. If you have ever wondered why you want to 
 
 Chapter 1 of the Tanya says that every Jew has two souls (see [Tanya Chapter 1 explained](/learn/tanya-chapter-one-explained)). The first, the animal soul, gives life to the body. The second, described in Chapter 2, is a true part of G-d.
 
-So the inner argument is not a sign that something is wrong with you. A Chabad.org article puts it this way: G-d did not create people to be perfect; striving is the point. For the general Jewish view of the inner struggle, see [the yetzer hara](/learn/yetzer-hara).
+So the inner argument is not a sign that something is wrong with you. Chassidic teaching puts it this way: G-d did not create people to be perfect; striving is the point. For the general Jewish view of the inner struggle, see [the yetzer hara](/learn/yetzer-hara).
 
 ## The animal soul
 
@@ -25,7 +25,7 @@ The divine soul is what the Tanya calls a part of G-d. Chapter 4 says that its i
 
 ## Who is in charge?
 
-Chapter 12 explains that in the beinoni, the ordinary person who strives, the divine soul directs thought, speech and action, while the animal soul still stirs desires in the heart. He does not let them rule him, even for a moment. Chabad.org's article on the beinoni says the same: a person copes, even if he does not "triumph," and keeps striving. See [the beinoni](/learn/the-beinoni) and [mind over heart](/learn/mind-over-heart-tanya).
+Chapter 12 explains that in the beinoni, the ordinary person who strives, the divine soul directs thought, speech and action, while the animal soul still stirs desires in the heart. He does not let them rule him, even for a moment. Chassidic teaching on the beinoni says the same: a person copes, even if he does not "triumph," and keeps striving. See [the beinoni](/learn/the-beinoni) and [mind over heart](/learn/mind-over-heart-tanya).
 
 The same article gives an image: climbing a steep hill on a bicycle, you will sometimes falter, and what matters is to keep pedaling.
 

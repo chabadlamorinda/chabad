@@ -7,17 +7,17 @@ local: Want to do a mitzvah this week? Call Rabbi Labkowski at 925-384-7242 or s
 ---
 According to the Tanya, a mitzvah is not only a good deed: it is the one way a person can truly be joined to G-d, because a mitzvah expresses G-d's own inner will. Even a single mitzvah, done with a physical object or a simple act, draws G-d's light into the world.
 
-That makes the smallest act, a coin in a pushka, a blessing before a meal or a Shabbat candle, matter more than it looks. Here is what Chabad.org's Tanya pages teach, in plain words, for families in Lafayette, Moraga and Orinda.
+That makes the smallest act, a coin in a pushka, a blessing before a meal or a Shabbat candle, matter more than it looks. Here is what the Tanya teaches, in plain words, for families in Lafayette, Moraga and Orinda.
 
 ## Why only a mitzvah can connect us
 
-Chabad.org's "Let's Talk Tanya" on Chapter 35 (by Rabbi Naftali Silberberg) opens with the verse the Tanya is built around: "For the matter is very near to you, in your mouth and in your heart, that you may do it." Thought, speech and action are the three "garments" of the soul, and action is the climax of the verse.
+Rabbi Naftali Silberberg's "Let's Talk Tanya" class on Chapter 35 opens with the verse the Tanya is built around: "For the matter is very near to you, in your mouth and in your heart, that you may do it." Thought, speech and action are the three "garments" of the soul, and action is the climax of the verse.
 
 The page explains that creation expresses G-d's will through many layers of concealment, while mitzvot express His inner will with no concealment. That is why only mitzvot can truly be one with Him. The Alter Rebbe, following the Zohar, compares the body to a wick and good deeds to oil: the light of the Shechinah rests on a person through good deeds. The soul alone cannot merge fully with G-d, since even a tzaddik's love implies a lover and a beloved.
 
 ## A mitzvah creates its own reward
 
-Chapter 37 on Chabad.org says: unlike a field owner who pays a worker with money the worker did not make, "a mitzvah actually creates its own reward." Through a mitzvah, a person draws G-d's infinite light downward into physical matter.
+Chapter 37 of the Tanya says: unlike a field owner who pays a worker with money the worker did not make, "a mitzvah actually creates its own reward." Through a mitzvah, a person draws G-d's infinite light downward into physical matter.
 
 Chapter 37 also says that the object of a mitzvah, such as the parchment of tefillin or a kosher etrog, is lifted into holiness. And even the energy a person gets from food, if it gave strength for a mitzvah, is lifted too. See [Serving G-d in Everyday Life](/learn/serving-g-d-in-everyday-life).
 

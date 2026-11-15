@@ -29,7 +29,7 @@ Chabad teaching gives several ideas:
 
 - **Everything is a gift.** Setting aside the first portion of the dough acknowledges that everything we have comes from G-d, and that serving Him comes first.
 - **A link to Shabbat.** The challah brings the Shabbat feeling into the meal. See [challah](/learn/challah).
-- **A link to the past.** Traditional teaching tells of a care center where baking challah brought elderly residents from Eastern Europe, who had been hard to engage, to life, as they remembered baking in their youth.
+- **A link to the past.** One story tells of a care center where baking challah brought elderly residents from Eastern Europe, who had been hard to engage, to life, as they remembered baking in their youth.
 
 Challah is also one of the three special mitzvot given to women, alongside Shabbat candles and family purity: [the three mitzvot of Jewish women](/learn/three-mitzvot-for-jewish-women).
 

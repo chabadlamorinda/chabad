@@ -32,7 +32,7 @@ If you want a display, Jewish law notes that electric menorahs are acceptable fo
 
 ## Car menorahs: lights on the move
 
-Many people have seen cars with a menorah on the roof. The law tells how car menorahs began with yeshivah students from Brooklyn during the Rebbe's 1973 call for Chanukah awareness, and how they spread worldwide as a way of publicizing the miracle. A business that wants to share the holiday can learn from them: the aim is to let the light be seen.
+Many people have seen cars with a menorah on the roof. Car menorahs began with yeshivah students from Brooklyn during the Rebbe's 1973 call for Chanukah awareness, and spread worldwide as a way of publicizing the miracle. A business that wants to share the holiday can learn from them: the aim is to let the light be seen.
 
 ## Lighting at home still comes first
 
