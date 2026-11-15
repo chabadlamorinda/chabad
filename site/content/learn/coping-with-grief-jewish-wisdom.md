@@ -34,7 +34,7 @@ Judaism teaches that death is not the end of the soul. Chabad.org says the memor
 
 ## When to ask for more help
 
-Jewish tradition is not a replacement for professional care. If your grief feels unmanageable, or if you have thoughts of harming yourself, please reach out to a doctor, a counselor or a crisis line as well as to the Rabbi. Chabad.org's article on mourning does not address counseling, so this is our own gentle note, not a quotation. For hope in hard times, see [hope in hard times](/learn/hope-in-hard-times).
+Jewish tradition is not a replacement for professional care. If your grief feels unmanageable, or if you have thoughts of harming yourself, please reach out to a doctor, a counselor or a crisis line (in the US, call or text 988) as well as to the Rabbi. For hope in hard times, see [hope in hard times](/learn/hope-in-hard-times).
 
 ## Common questions
 

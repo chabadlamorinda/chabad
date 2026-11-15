@@ -23,7 +23,7 @@ Chabad.org suggests that "nation" fits in one sense: Jews can be thought of as p
 
 ## A family
 
-The traditional Jewish self-image is a family. Like a birth family, you cannot be un-born into it. A Jew who changes his name is still a Jew. A convert is described as adopted into the family, joining the same covenant that the Jewish people entered at Sinai, before a rabbinic court.
+The traditional Jewish self-image is a family. Like a birth family, it is a family you cannot leave. A convert is described as adopted into the family, joining the same covenant that the Jewish people entered at Sinai, before a rabbinic court.
 
 A family can have members who are close and members who are distant, and everyone still belongs. Chabad.org's "What Is a Jew?" article says all Jews are equally Jewish, though levels of engagement differ. It also says that a Jew who returns after years away does not have to "become Jewish" again. Their return is welcomed like a child coming home.
 

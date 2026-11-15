@@ -11,8 +11,6 @@ According to Jewish tradition, Moses wrote the Torah, but not as an author compo
 
 The Torah (תּוֹרָה, "teaching") is the Five Books of Moses. Chabad.org describes Moses as a conduit for Divine communication, relaying G-d's instructions precisely, without adding his own interpretation. That is why the Torah is called the word of G-d, not the words of Moses.
 
-Chabad.org also notes that one could imagine Moses drawing on earlier records, or that some editing took place, and says even that would not make the Torah any less a Divine work. The point is the source of the message, not the pen.
-
 ## How and when Moses wrote it
 
 Chabad.org gives this picture:
@@ -26,9 +24,9 @@ Chabad.org gives this picture:
 
 The final verses of the Torah describe the death of Moses. The sages discuss who wrote them. Some say Joshua wrote them. Others say Moses wrote them "in tears." Rashi cites both views. Ibn Ezra holds that Joshua wrote them, while Nachmanides holds that the whole Torah is Moses' transcription. Jewish tradition welcomes this kind of discussion, because it takes the text seriously.
 
-## "But the Torah has contradictions"
+## Passages that seem to disagree
 
-People often ask about passages that seem to disagree. A Chabad.org question and answer gives an example. Genesis 6:3 seems to say that human life will be limited to 120 years, yet the Torah later reports longer lives. Rashi explains that the verse is about the generation of the Flood: G-d would give them 120 years to repent before the destruction. The Chabad.org author adds that if a human compiler had wanted a neat book, he would have removed apparent contradictions. That they remain invites us to look deeper, and that is why Jewish tradition has produced so many commentaries.
+People often ask about passages that seem to disagree. A Chabad.org question and answer gives an example. Genesis 6:3 seems to say that human life will be limited to 120 years, yet the Torah later reports longer lives. Rashi explains that the verse is about the generation of the Flood: G-d would give them 120 years to repent before the destruction. In Jewish tradition, such passages are an invitation to look deeper, and that is why there are so many commentaries on them.
 
 ## Why it matters
 
@@ -43,7 +41,7 @@ Moses wrote it, as a channel for the words G-d gave him, according to Jewish tra
 The sages discuss this. Some say Joshua wrote the last verses, and others say Moses wrote them in tears. Nachmanides holds that the entire Torah is Moses' transcription.
 
 ### When was the Torah written?
-Moses received the first laws at Sinai and wrote over the following forty years of wandering. By the end of his life he had gathered it together and given copies to the tribes. Chabad.org gives no calendar date.
+Moses received the first laws at Sinai and wrote over the following forty years of wandering. By the end of his life he had gathered it together and given copies to the tribes.
 
 ### Does the Torah contradict itself?
 Chabad.org teaches that apparent contradictions point to deeper meanings, and that the commentaries explain them. Genesis 6:3 and the 120 years is one well-known example.

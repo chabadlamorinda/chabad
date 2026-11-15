@@ -13,7 +13,7 @@ Chabad.org's article "Why Are So Many Comedians Jewish?" by Rabbi Yeruchem Eilfo
 
 ## A joke before the lesson
 
-About two thousand years after Abraham and Sarah, the article continues, the Talmudic sage Rabbah began each lesson with a joke. Why? The rabbis explained that a good joke opens the mind to learning, and a bad joke gets only groans. They compare it to a parent who bends down to lift up a child: by lowering ourselves to something light, we can raise the mind to greater heights. Humor in this tradition is a doorway to serious study, not a distraction from it.
+In Talmudic times, the article continues, the sage Rabbah began each lesson with a joke. Why? The rabbis explained that a good joke opens the mind to learning, and a bad joke gets only groans. They compare it to a parent who bends down to lift up a child: by lowering ourselves to something light, we can raise the mind to greater heights. Humor in this tradition is a doorway to serious study, not a distraction from it.
 
 ## Why Jewish humor looks the way it does
 
@@ -21,7 +21,6 @@ Rabbi Eilfort says the roots of Jewish humor are both nature and nurture. Here i
 
 - **Self-examination and self-effacement.** Judaism encourages us to look honestly even at our greatest heroes, so we can also laugh at our own shortcomings. A person who knows how little he has accomplished can smile at himself.
 - **Humility before G-d.** Next to the Almighty, human beings are small, and that sense of proportion gives rise to a smile.
-- **Other ingredients.** Cynicism, sarcasm and a healthy dose of neurosis, which the author partly attributes to Jewish parenting and to balancing physical life with spiritual goals.
 
 ## Joy, laughter and care
 
@@ -40,7 +39,7 @@ Yes. Chabad.org points to Isaac's name, which means "laugh," and to the sage Rab
 According to Chabad.org, the rabbis said a good joke opens the mind to learning. It is like a parent who bends down to lift a child.
 
 ### Why are there so many Jewish comedians?
-Chabad.org's Rabbi Eilfort says Jewish humor comes from both nature and nurture: self-examination, humility before G-d, and some cynicism, sarcasm and neurosis.
+Chabad.org's Rabbi Eilfort says Jewish humor comes from both nature and nurture: self-examination and humility before G-d, which let us laugh at ourselves.
 
 ### Can a joke be forbidden?
 Jewish teaching takes words seriously, and a joke that hurts or gossips about someone is a matter for the laws of [lashon hara](/learn/lashon-hara). Ask the Rabbi about specific cases.

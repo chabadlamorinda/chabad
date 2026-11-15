@@ -32,13 +32,13 @@ Chabad.org is clear that carving or engraving the figure of a human being on a t
 
 ## Material and appearance
 
-Use stone or granite. Keep it similar to neighboring stones, so no family feels pressured to buy something more elaborate. A monument for a great Torah leader is an exception.
+Use stone or granite. Keep it similar to neighboring stones, so no family feels pressured to buy something more elaborate.
 
 The stone goes at the head of the grave, and the plot is outlined with a low frame. Planting grass or flowers on the grave is discouraged.
 
 ## When is the stone set?
 
-The timing differs among communities: the day after shiva, at the end of sheloshim (thirty days), or after twelve months. Follow your community's custom. Chabad.org notes that a temporary marker goes up at burial.
+The timing differs among communities: the day after shiva, at the end of sheloshim (thirty days), or after twelve months. Follow your community's custom.
 
 The unveiling is traditionally held within the first year after death, between the end of shiva and the yahrzeit. The rabbi should be called six or seven weeks ahead to set a date. See [unveiling](/learn/unveiling).
 

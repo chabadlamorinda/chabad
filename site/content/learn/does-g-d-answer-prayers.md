@@ -26,7 +26,7 @@ If you have prayed for someone who did not recover, this does not erase your pai
 ## What to do while we wait
 
 - **Pray with concentration.** Chabad.org teaches that the most important part of prayer is concentration: it is better to say a little with focus than a lot without.
-- **Pray in a language you understand.** Hebrew is preferred, but pray in a language you understand.
+- **Pray in words you understand.** Hebrew is preferred; if that is not possible, pray in a language you understand.
 - **Pray for others.** See [Praying for others](/learn/praying-for-others), and the [Tehillim prayer list](/tehillim).
 - **Act.** Freeman writes that we should not leave everything to G-d but fight evil and fill the world with light. Giving [tzedakah](/learn/tzedakah) is one way.
 
@@ -39,7 +39,7 @@ Yes. Chabad teaches, in the name of the Baal Shem Tov, that every prayer is answ
 According to a discourse of the Lubavitcher Rebbe explained on Chabad.org, the answer is "packaged" in the messy realities of the world, so it is often hard to recognize at the time.
 
 ### Does G-d ever say no?
-Some say every prayer is answered, but sometimes with a "no." Tzvi Freeman on Chabad.org disagrees, arguing that a loving G-d would not turn away so many sincere prayers, and that the Rebbe's teaching is that every prayer is answered in this world, though hidden. This is a deep and painful question, so please talk to the Rabbi about your own situation.
+Some teachers explain that sometimes the answer is "no" or "not yet." Tzvi Freeman, writing on Chabad.org, finds it hard to believe that a loving G-d would turn away so many sincere prayers, and teaches from the Rebbe that every prayer is answered in this world, even when the answer is hidden. No one can fully explain why a particular prayer seemed to go unanswered, so please talk to the Rabbi about your own situation.
 
 ### Is it all right to be angry at G-d?
 Jewish tradition allows honest questions and even protest, and many have prayed in tears. See [Angry at G-d](/learn/angry-at-g-d).

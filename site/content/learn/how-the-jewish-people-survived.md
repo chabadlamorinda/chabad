@@ -15,13 +15,13 @@ Goldman asks a question that many people ask: how have the Jews survived when ci
 
 Goldman looks at three common guesses and shows why none of them is the whole answer.
 
-- **A homeland.** The Land of Israel is the eternal homeland and it is prayed for every day. But Jews have lived outside the land for longer than in it, and today more Jews live outside Israel than within it.
+- **A homeland.** The Land of Israel is the eternal homeland and it is prayed for every day. But Jews have lived outside the land for longer than in it.
 - **A shared language.** Hebrew is the language of the prayerbook, but most Jews do not speak it. Over the centuries Jews spoke Aramaic, Greek, Arabic, Yiddish, Ladino and now English.
 - **A shared culture.** Foods, music and customs differ widely between Sephardic and Ashkenazi communities and from place to place. Jews took on local styles wherever they lived.
 
 ## What it is: Torah
 
-The one thing Jews have shared everywhere, from ancient Babylon and medieval Spain to modern Johannesburg and San Francisco, is the Torah and its way of life. That is a defined system of values and practices, not a vague feeling of being Jewish. Goldman observes that where Jewish communities dropped Torah traditions, assimilation followed quickly and those communities did not survive.
+The one thing Jews have shared everywhere, from ancient Babylon to Minsk, Madrid, Johannesburg and San Francisco, is the Torah and its way of life. That is a defined system of values and practices, not a vague feeling of being Jewish. Goldman observes that where Jewish communities dropped Torah traditions, assimilation followed quickly and those communities did not survive.
 
 ## What this means for each family
 

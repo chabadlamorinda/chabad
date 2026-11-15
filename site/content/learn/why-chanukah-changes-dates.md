@@ -11,7 +11,7 @@ To find this year's dates, light times and the nightly order, see [/jewish-holid
 
 ## The date never changes on the Jewish calendar
 
-Chabad.org gives the same answer every year: Chanukah begins on 25 Kislev and lasts eight days. It starts at nightfall of the day before, the evening that begins the 25th, and it ends at nightfall after the eighth day. The month of Kislev is the month of Chanukah, and you can read about it in [Kislev: the month of Chanukah](/learn/kislev). Chabad.org also notes that on the secular calendar Chanukah usually falls in December.
+Chabad.org gives the same answer every year: Chanukah begins on 25 Kislev and lasts eight days. It starts on the evening before, the evening that begins the 25th, and it ends when the eighth day is over. The month of Kislev is the month of Chanukah, and you can read about it in [Kislev: the month of Chanukah](/learn/kislev). Chabad.org also notes that on the secular calendar Chanukah usually falls in December.
 
 ## Why it moves on the secular calendar
 
@@ -38,7 +38,7 @@ Chanukah is always 25 Kislev on the Jewish calendar, but the Jewish calendar fol
 Not always, but it usually is. Chabad.org says it usually falls in December. See [/jewish-holidays](/jewish-holidays) for each year's dates.
 
 ### What day does Chanukah start on the Hebrew calendar?
-It begins at nightfall on the eve of 25 Kislev and lasts eight days, ending at nightfall after the eighth day.
+It begins on the evening before 25 Kislev and lasts eight days, ending when the eighth day is over.
 
 ### Why does the Jewish calendar have a leap year?
 A year of twelve lunar months is about 11 days shorter than the solar year. Seven times in every 19 years an extra month, Adar I, is added to keep the festivals in their proper seasons.

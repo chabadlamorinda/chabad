@@ -5,19 +5,20 @@ category: Mourning & remembrance
 related: jewish-funeral, planning-a-jewish-funeral-in-advance, israel-and-the-jewish-people, chevra-kadisha-and-tahara, halachic-will
 local: Thinking about burial in Israel for yourself or a loved one? Call Rabbi Labkowski at 925-384-7242 before any arrangements are made.
 ---
-Some Jews choose to be buried in Israel, because Jewish tradition teaches that burial in the Land is a great privilege: according to Chabad.org, those buried there are revived first at the resurrection, and burial there brings atonement. It is arranged through a Jewish funeral home or burial society, and it should be discussed with a rabbi early.
+Some Jews choose to be buried in the Land of Israel because of the sages' teachings, which Chabad.org brings, that those buried there will be the first to rise at the time of the resurrection, and that burial there atones for sins. It is arranged through a Jewish funeral home or burial society, and it should be discussed with a rabbi early.
 
 This guide explains the reasons and the basic questions. It is not a substitute for guidance for your own case.
 
-## Why Jacob asked to be buried in Israel
+## Where the idea comes from
 
-The idea goes back to the Torah. Jacob asked his son Joseph to bring his body to the Land of Israel for burial in the Cave of Machpelah in Hebron, where Abraham and Sarah are buried. Chabad.org, in an article on the portion of Vayechi, gives three reasons for Jacob's request:
+The idea goes back to the Torah. Jacob asked his son Joseph not to bury him in Egypt but with his fathers, and he was buried in the Cave of Machpelah in Hebron, where Abraham and Sarah are buried. Joseph, too, asked that his bones be carried up to the Land when the Jewish people left Egypt. Read more about the Land in [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
 
-1. **Resurrection.** Those buried in the Land are revived first. Those buried elsewhere, the teaching goes, must make their way through underground tunnels to reach the Land.
-2. **Atonement.** Burial in the Land of Israel atones for sins.
-3. **Family.** Jacob wished to lie near his parents and grandparents, and burial with family is proper.
+Chabad.org's article on burial plots brings two teachings of the sages:
 
-Joseph, too, asked that his bones be taken to the Holy Land, which the Talmud says served the same purpose. Chabad.org calls burial in the Holy Land "a great privilege." Read more about the Land in [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
+1. **Resurrection.** Those buried in the Land of Israel will be the first to rise at the time of the resurrection.
+2. **Atonement.** Burial in the Land of Israel atones for one's sins.
+
+These teachings speak of a special merit of the Land. They take nothing away from a Jewish burial anywhere else. Most Jewish families bury their loved ones in a Jewish cemetery near home, and that is a full and proper Jewish burial.
 
 ## The soil of Israel
 
@@ -43,7 +44,7 @@ The most important step is to write your wishes down and tell your family. See [
 ## Common questions
 
 ### Why do Jews want to be buried in Israel?
-Chabad.org gives the reasons that those buried in the Land are revived first at the resurrection, that burial there atones for sins, and that it is a great privilege.
+Chabad.org brings the sages' teachings that those buried in the Land will be the first to rise at the resurrection and that burial there atones for sins. Jacob and Joseph, too, asked to be buried there.
 
 ### Can someone who lived in the Bay Area be buried in Israel?
 Yes. A body may be moved to Israel if the family wishes or the person asked for it. Speak with a rabbi and a Jewish funeral home early.
@@ -52,7 +53,7 @@ Yes. A body may be moved to Israel if the family wishes or the person asked for 
 Chabad.org says the Chevra Kadisha sprinkles earth from the Land of Israel into the grave at a burial.
 
 ### Is burial in Israel required?
-Chabad.org calls it a great privilege. Ask the Rabbi about your own wishes.
+No. It is a special merit that some choose. Most Jewish families bury their loved ones in a Jewish cemetery near home, which is a full and proper Jewish burial. Ask the Rabbi about your own wishes.
 
 ### Should I buy a burial plot in advance?
 Chabad.org says that buying a plot in advance is customary.

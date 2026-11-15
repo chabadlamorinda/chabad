@@ -18,7 +18,7 @@ Jewish life is communal. Chabad.org points out that formal prayer needs a minyan
 The Talmud (Taanit 7a) gives two images:
 
 - **Iron sharpens iron.** Rabbi Hama ben Hanina teaches, based on Proverbs 27:17, that two scholars sharpen each other's minds.
-- **Fire.** Rabbah ben Hanah teaches, based on Jeremiah 23:29 where the Torah is compared to fire, that just as fire does not ignite by itself, the words of Torah do not endure with someone who studies alone.
+- **Fire.** Rabbah bar bar Hanah teaches, based on Jeremiah 23:29 where the Torah is compared to fire, that just as fire does not ignite by itself, the words of Torah do not endure with someone who studies alone.
 
 The article closes with King Solomon's teaching in Ecclesiastes 4:9 that two are better than one.
 

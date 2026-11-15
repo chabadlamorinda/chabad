@@ -22,13 +22,13 @@ According to the sample on Chabad.org, a directive contains these parts:
 3. **A rabbi to consult.** The surrogate consults a rabbi you name. If that rabbi is unavailable, the surrogate turns to a rabbi referred by an Orthodox institution.
 4. **Instructions for providers.** Doctors and hospitals may rely on the surrogate's decisions, and the surrogate has access to your medical information, so they can speak with your care team.
 5. **After death.** Your body should be handled according to Jewish law, including prompt burial and preparation. Autopsy is generally prohibited except in limited cases, and removal of organs or tissue is governed by Jewish law. The surrogate and rabbi are to be notified right away. See [autopsy in Jewish law](/learn/autopsy-jewish-view) and the [Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
-6. **Signatures and witnesses.** The sample has lines for your signature, the date and two witnesses, and it can be revoked in writing.
+6. **Signatures and witnesses.** The sample has lines for your signature, the date and two witnesses, and it can be revoked.
 
 ## What to think about before signing
 
 - **Choose people you trust** as surrogate and alternate, who are willing to consult a rabbi.
 - **Choose a rabbi.** Name a rabbi you trust. You can ask Rabbi Labkowski about this.
-- **Use an attorney.** Legal rules about health-care documents differ from state to state, so an attorney should prepare the legal document, and a rabbi should advise on the Jewish content. Chabad.org's sample is only a sample, not legal advice.
+- **Use an attorney.** An attorney can tell you what makes such a document valid where you live and should prepare the legal document, and a rabbi should advise on the Jewish content. Chabad.org's sample is only a sample, not legal advice.
 
 See also [a Jewish will](/learn/halachic-will), [hospice and end-of-life decisions](/learn/hospice-and-end-of-life-care) and [when a loved one is dying](/learn/when-a-loved-one-is-dying).
 
@@ -47,7 +47,7 @@ Someone who knows your values and is willing to consult a rabbi. Name an alterna
 The Chabad.org sample says that autopsy is generally prohibited except in limited cases, and that organ or tissue removal is governed by Jewish law. Ask the Rabbi about your case.
 
 ### Can I change or cancel it?
-Yes. The sample says it can be revoked in writing, and signing a new one revokes the earlier one.
+Yes. The sample says it stays in effect until you revoke it, and signing a new one revokes the earlier one.
 
 ### Where do I start?
 Call Rabbi Labkowski at 925-384-7242. He can talk with you about your wishes, and your attorney can prepare the legal document.

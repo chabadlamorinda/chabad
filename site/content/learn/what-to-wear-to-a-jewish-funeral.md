@@ -35,7 +35,7 @@ Chabad custom is not to give eulogies, so the service is very brief. Other famil
 
 ## At the grave
 
-Filling the grave is part of the Jewish funeral. In the Chabad tradition, the men present fill it with earth. Taking a turn is considered an honor, and the shovel is not passed from hand to hand. Each person sticks it in the earth for the next to pick up, showing that this is not ordinary work. If you are unsure whether to join, ask the Rabbi or the funeral director beforehand.
+Filling the grave is part of the Jewish funeral. It is highly preferable that Jewish men fill it in with earth. Taking a turn is considered an honor, and the shovel is not passed from hand to hand. Each person sticks it in the earth for the next to pick up, showing that this is not ordinary work. If you are unsure whether to join, ask the Rabbi or the funeral director beforehand.
 
 Flowers are not a Jewish funeral custom. Many people give [tzedakah](/learn/tzedakah) in memory of the person instead.
 

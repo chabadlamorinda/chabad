@@ -24,8 +24,6 @@ It follows the funeral and the return from the cemetery, when mourners begin [sh
 - After the bread and egg, other foods may be eaten, and wine in moderation.
 - On Chol Hamoed (the intermediate days) of Sukkot and Passover, cake or matzah and coffee or juice replace the bread and egg.
 
-Chabad.org notes that the food is listed as "and/or," so other round rolls may replace bagels. The egg is the usual food; lentils are sometimes added.
-
 ## Why round foods and eggs?
 
 The custom goes back to Jacob, who cooked lentils after Abraham died; the sages say he did it to console his father Isaac. The Talmud gives two reasons for lentils:
@@ -34,8 +32,6 @@ The custom goes back to Jacob, who cooked lentils after Abraham died; the sages 
 2. A lentil is round, like mourning, which comes around to everyone in the cycle of life.
 
 The egg looks like a finished object but is really the start of a new life. It stands for faith and hope in the resurrection, in the time of [Moshiach](/learn/moshiach). Eggs are peeled so that mourners need not struggle with the shell and look as if they are ravenous.
-
-Chabad.org gives other reasons too. The meal consoles mourners by showing they are not alone. It also encourages them to eat, since grief often takes away appetite.
 
 ## Timing and a few details
 

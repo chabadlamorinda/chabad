@@ -17,7 +17,7 @@ According to Chabad.org, Kaddish is traditionally said by sons for a parent for 
 
 Chabad.org gives two options:
 
-1. **Another male relative, preferably a close one.** Some authorities prefer a son-in-law first. A man whose own parents are both alive should not take this on. If he does wish to say Kaddish while his parents are living, he should ask their permission, and in some cases it is better to choose someone whose parents have passed away. He should consult his rabbi.
+1. **Another male relative, preferably a close one.** Some authorities prefer a son-in-law first. Ideally he should not be someone whose parents are both still living; if his parents are alive, he should ask their permission. He should consult his rabbi.
 2. **Someone outside the family.** The person saying Kaddish must be told the deceased's Hebrew name and the Hebrew name of the deceased's father. The relatives should pay him a stipend. Some rabbinical colleges offer this service for a donation.
 
 Chabad.org says hiring a substitute is "not an ideal first choice," and is for real need, not convenience. On each day when someone else says Kaddish, the mourner should still study Torah and give charity, except on Shabbat and Jewish holidays.
@@ -26,7 +26,7 @@ Chabad.org says hiring a substitute is "not an ideal first choice," and is for r
 
 The Chabad.org pages on Kaddish speak of sons and do not settle whether daughters say Kaddish or hire a substitute. Customs differ among communities, so please ask the Rabbi about your own situation.
 
-What Chabad.org does say is that women may take on a specific mitzvah in honor and memory of the deceased, and the sages teach that it brings the same merit to the soul as Kaddish. Good examples are lighting Shabbat candles, giving tzedakah or studying Torah in their memory. See [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
+What Chabad.org does say is that women may take on a specific mitzvah in honor and memory of the deceased, and that this brings the same merit to the soul as saying Kaddish. Good examples are lighting Shabbat candles, giving tzedakah or studying Torah in their memory. See [learning in memory of a loved one](/learn/learning-in-memory-of-a-loved-one).
 
 ## Other ways to honor the soul
 

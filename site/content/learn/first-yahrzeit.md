@@ -21,7 +21,7 @@ See our guide to the [yahrzeit](/learn/yahrzeit) for more on dates. You can also
 
 ## The night before: the candle
 
-Light a memorial candle at nightfall on the evening before the yahrzeit, and let it burn out by itself unless there is a fire risk. A wax candle is preferred. When the yahrzeit falls on Shabbat or a holiday, the candle is lit before the regular candle lighting. If you forgot, light it the next morning (but not on Shabbat), and if the day has passed, give to charity. See [the yahrzeit candle](/learn/yahrzeit-candle).
+Light a memorial candle at nightfall on the evening before the yahrzeit, and let it burn out by itself unless there is a fire risk. A real candle is preferred over an electric bulb. When the yahrzeit falls on Shabbat or a holiday, the candle is lit before the regular candle lighting. If you forgot, light it the next morning (but not on Shabbat), and if the day has passed, give to charity. See [the yahrzeit candle](/learn/yahrzeit-candle).
 
 ## What to do on the day
 

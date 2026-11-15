@@ -27,7 +27,7 @@ The idea is that holiness is not found only in a prayer service or on a mountain
 
 ## Holiness of the heart
 
-The Shelah also teaches that holiness lives in the heart, the soul and the limbs, which carry out the mitzvahs. The heart's work includes avoiding hatred, revenge and grudges, and loving one's neighbor. Because the heart is the place of thought and contemplation, every ordinary activity can become holy when we do it with awareness.
+The Shelah also teaches that holiness lives in the heart, the soul and the limbs, which carry out the mitzvahs. The heart's work includes avoiding hatred, revenge and grudges, and loving one's neighbor. The heart's part is thought and contemplation.
 
 ## Common questions
 
