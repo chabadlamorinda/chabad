@@ -17,7 +17,7 @@ The Chabad.org article on the chuppah notes that the canopy form is credited to 
 
 ## Why do some couples marry under the open sky?
 
-You may have heard that a chuppah is traditionally held outdoors under the stars. Chabad.org explains that Eastern European Jews customarily held the chuppah under the open sky, recalling G-d's promise to Abraham that his children would be as many as the stars of the heavens and the sand of the sea. It is a blessing for many generations of Jewish children.
+You may have heard that a chuppah is traditionally held outdoors under the stars. Chabad.org explains that Jews in the east of Europe customarily held the chuppah under the open sky, recalling G-d's promise to Abraham that his children would be as many as the stars of the heavens and the sand of the sea. It is a blessing for many generations of Jewish children.
 
 This custom is not followed for a couple where either has been married before. If you would like an outdoor chuppah in Lafayette, Moraga or Orinda, or need an indoor one, ask the Rabbi what is best for your wedding.
 
@@ -45,7 +45,7 @@ The cloth is fastened to the tops of the poles so that the poles act like walls,
 
 ### Why do Jews marry under the stars?
 
-Eastern European Jews held the chuppah under the open sky to recall G-d's promise to Abraham of descendants like the stars of the heavens. It is a custom, not a requirement.
+Jews in the east of Europe held the chuppah under the open sky to recall G-d's promise to Abraham of descendants like the stars of the heavens. It is a custom, not a requirement.
 
 ### Does the chuppah have to be outdoors?
 

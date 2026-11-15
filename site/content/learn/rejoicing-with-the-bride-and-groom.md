@@ -13,8 +13,6 @@ Chabad.org's article on the wedding reception says that joining the celebration 
 
 Another Chabad.org article cites the Shulchan Aruch (Even HaEzer 65:1) for the principle that making the couple joyful is a great mitzvah. In the Talmud (Ketubot 17a), Rabbi Yehuda bar Ilai danced before the bride, and Rav Shmuel bar Rav Yitzchak juggled myrtle branches while dancing. The Talmud (Berachot 6b) says that those who bring joy to the bride and groom are considered as if they had rebuilt part of Jerusalem.
 
-Why does it matter so much? Chabad.org suggests that the guests' joy distracts the couple from the worries of married life and frees their minds to focus on one another.
-
 ## How do Jewish weddings show this joy?
 
 - **Dancing.** Singing and dancing are the center of the reception, with pauses for the courses of the meal. At a Chassidic wedding, men dance with the groom and women with the bride, in separate circles, ideally divided by a mechitzah.
@@ -31,7 +29,7 @@ Chabad.org notes that some Chassidic communities have a *mitzvah tantz*, in whic
 2. **Dress modestly.** Men wear a kippah, and women cover their sleeves, hemlines and necklines.
 3. **Greet the couple warmly** with *mazal tov*, and if you drink, raise a glass with *l'chaim*. You never have to drink.
 4. **Respect the separate dancing.** Outside close family, men and women touch only their own gender, even when hugging.
-5. **Bring children.** They are a welcome part of the celebration.
+5. **Children.** Chabad.org says children are an integral part of the joy at a Chassidic wedding; follow what your invitation says.
 
 For more, read [Attending a Jewish wedding](/learn/attending-a-jewish-wedding).
 

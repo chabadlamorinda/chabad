@@ -22,7 +22,7 @@ The details matter in Jewish law, and a rabbi makes sure they are right. For exa
 
 - The **ring** must belong to the groom and be a plain band.
 - The **witnesses** must be specifically appointed. Chabad.org says they must be Torah-observant adult Jewish men who are not relatives of the couple or of each other.
-- The **ketubah** is filled in by the officiating rabbi. If you want a designer ketubah, the rabbi should approve its text first, because some artistic documents are not valid ketubahs.
+- The **ketubah** is filled in by the officiating rabbi. If you want a designer ketubah, the rabbi should approve its text first.
 
 The rabbi also brings the warmth and meaning to the day, helping you choose honorees for the blessings and explaining what will happen to your families and guests.
 

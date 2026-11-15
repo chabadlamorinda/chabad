@@ -7,7 +7,7 @@ local: Want to light up Lafayette with your community? Sign up at /events/chanuk
 ---
 Chanukah teaches Jewish pride by asking us to put a light where others can see it. The Maccabees were a small, poorly armed group who stood up against a mighty empire, and every year the menorah tells their story, and ours: a small light can dispel great darkness.
 
-Chabad.org's Chanukah teachings, drawn from the Previous Rebbe, include a clear message for today: stand up for what is right, even against daunting odds, bring mitzvahs into public life, and be proud of Jewish practice and not ashamed to stand out.
+Chabad.org's Chanukah teachings carry a clear message for today: stand up for what is right, even against daunting odds, bring mitzvahs into public life, and be proud of Jewish practice and not ashamed to stand out.
 
 ## The courage of the Maccabees
 
@@ -15,11 +15,11 @@ In the second century BCE, the Seleucid Greeks who ruled the Holy Land tried to 
 
 ## Why the menorah faces the street
 
-The menorah is meant to be seen. Chabad.org explains that its light should be visible from outside the home, in a doorway, outdoors or in a window facing the street, to publicize the miracle. The Rebbe taught that the menorah's light should "illuminate the street." A doorway, Chabad.org writes, is neither fully inside nor fully outside, neither wholly public nor private. The light that glows from the Jewish home is meant to radiate outward from a focused inner life; the Jewish home is called a *mikdash me'at*, a "mini Temple." See [the Chanukah menorah](/learn/chanukah-menorah) for how Chabad lights it in an interior doorway opposite the mezuzah.
+The menorah is meant to be seen. Chabad.org explains that its light should be visible from outside the home, in a doorway, outdoors or in a window facing the street, to publicize the miracle. The Rebbe taught that the menorah's light is meant to shine outward, into the darkness outside. A doorway, Chabad.org writes, is neither fully inside nor fully outside, neither wholly public nor private. The light that glows from the Jewish home is meant to radiate outward from a focused inner life; the Jewish home is called a *mikdash me'at*, a "mini Temple." See [the Chanukah menorah](/learn/chanukah-menorah) for how Chabad lights it in an interior doorway opposite the mezuzah.
 
 ## How Chanukah came out into the open
 
-Chabad.org tells how, before 1973, Chanukah was largely a private home observance. In December 1973, during the Yom Kippur War, the Rebbe launched a campaign to bring Chanukah into public view. Within two days, 10,000 menorahs were ordered, and by the end of the holiday about 60,000 had been given away. A homemade menorah on Fifth Avenue in Manhattan drew a large crowd, and public lightings followed in Philadelphia in 1974, San Francisco in 1975 and at the White House by 1979. The campaign brought a symbol of Jewish identity out of the home and onto the street after centuries in which persecution had driven it indoors. Today, Chabad.org says, there are about 15,000 large public menorahs worldwide. Read about [public menorah lightings](/learn/public-menorah-lighting).
+Chabad.org tells how, before 1973, Chanukah was largely a private home observance. In December 1973, during the Yom Kippur War, the Rebbe launched a campaign to bring Chanukah into public view. Within two days, 10,000 menorahs were ordered, and by the end of the holiday about 60,000 had been given away. A homemade menorah on Fifth Avenue in Manhattan drew a large crowd, and public lightings followed in Philadelphia in 1974, San Francisco in 1975 and at the White House by 1979. The campaign brought a symbol of Jewish identity out of the home and onto the street after centuries in which persecution had driven it indoors. In 2026, Chabad.org estimated about 15,000 public menorahs worldwide. Read about [public menorah lightings](/learn/public-menorah-lighting).
 
 ## Proud together
 
@@ -47,7 +47,7 @@ Safety comes first, and each situation is different. Call the Rabbi at 925-384-7
 Join the Light Up Lafayette menorah lighting at Lafayette Plaza Park, free and open to everyone, and sign up online.
 
 ### What if I feel uneasy about being openly Jewish?
-You are not alone. Chabad.org quotes a woman who felt uneasy about expressing her Jewish identity in public and decided to attend a public lighting for the first time. Call 925-384-7242 to talk with the Rabbi or Rebbetzin.
+You are not alone. Chabad.org quotes a woman who felt uneasy about expressing her Jewish identity in public and decided to attend a public lighting for the first time. Call Rabbi Labkowski at 925-384-7242, or Rebbetzin Tzipora Labkowski at 925-384-7241, to talk.
 
 ## Take the next step
 

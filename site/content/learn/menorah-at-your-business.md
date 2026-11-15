@@ -7,7 +7,7 @@ local: Running a business in Lafayette, Moraga or Orinda? Call Rabbi Labkowski a
 ---
 Many Jewish business owners and employees wish to display or light a Chanukah menorah at work, and it is a beautiful way to publicize the miracle. Whether the blessings are said depends on the details, such as whether the menorah is kosher, when it is lit, and who sees it, so it is best to ask the Rabbi before you light.
 
-One rule is clear and comes first: lighting at work never replaces lighting at home. Chabad.org is explicit that attending even a public lighting does not take the place of kindling your own menorah at home with the usual blessings.
+One rule is clear and comes first: lighting at work never replaces lighting at home. Chabad.org's laws of Chanukah are explicit: even the synagogue lighting does not exempt anyone from kindling the menorah at home, and people at a public lighting are urged not to rely on it but to light at home with the usual blessings.
 
 ## Why the menorah is meant to be seen
 
@@ -32,7 +32,7 @@ If you want a display, Chabad.org notes that electric menorahs are acceptable fo
 
 ## Car menorahs: lights on the move
 
-Many people have seen cars with a menorah on the roof. Chabad.org tells how car menorahs began with yeshivah students in Brooklyn after the Rebbe's 1973 call for Chanukah awareness, and how they spread worldwide as a way of publicizing the miracle. A business that wants to share the holiday can learn from them: the aim is to let the light be seen.
+Many people have seen cars with a menorah on the roof. Chabad.org tells how car menorahs began with yeshivah students from Brooklyn during the Rebbe's 1973 call for Chanukah awareness, and how they spread worldwide as a way of publicizing the miracle. A business that wants to share the holiday can learn from them: the aim is to let the light be seen.
 
 ## Lighting at home still comes first
 
@@ -47,7 +47,7 @@ Many people do, but whether to say a blessing and how to light depend on the det
 It depends. Chabad.org says blessings are said at most public lightings if the menorah is kosher and lit at the right time. For a store or office, ask the Rabbi.
 
 ### Does lighting at work count for the mitzvah at home?
-No. Chabad.org says attending or even leading a public lighting does not replace lighting at home with the usual blessings.
+No. Chabad.org's laws of Chanukah say that even the synagogue lighting does not exempt anyone from lighting at home, and people at a public lighting should still light at home with the usual blessings.
 
 ### Can I use an electric menorah at my business?
 An electric menorah is acceptable for display only, and does not fulfill the mitzvah. A real flame menorah must be lit for the mitzvah.
