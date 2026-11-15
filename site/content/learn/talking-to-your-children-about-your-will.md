@@ -46,7 +46,7 @@ A letter that passes on your values and blessings. See [An Ethical Will](/learn/
 Listen, and explain. If a quarrel grows, the Rabbi can help; see [Family Feuds and Inheritance](/learn/family-feuds-and-inheritance).
 
 ### Can I tell Chabad of Lamorinda about my gift?
-Yes, if you wish. Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. Everything is kept in confidence.
+Yes, if you wish. Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241.  He is glad to speak with you privately.
 
 ### Where do I begin?
 See [How to Make a Legacy Gift, Step by Step](/learn/legacy-gift-step-by-step) and the [legacy page](/legacy).

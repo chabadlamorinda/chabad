@@ -22,7 +22,7 @@ This is the part that is hard to hear, and we say it gently. Chabad.org explains
 According to Chabad.org:
 
 - A child of a Jewish mother may be buried in a Jewish cemetery, even if the child was not circumcised.
-- A child of a non-Jewish mother who has not converted may not be buried there, even if raised or educated in a Jewish school, unless there was intent to convert.
+- A child of a non-Jewish mother who has not converted may not be buried there, even if the child was circumcised without the intent to convert, and even if educated in a Jewish school.
 - A person who truly converted is buried as a full Jew, in the Jewish spouse's plot or a new family plot.
 
 Questions of who is Jewish can be painful. See [who is a Jew](/learn/who-is-a-jew) and [converting to Judaism](/learn/converting-to-judaism), and ask the Rabbi about your family's case.

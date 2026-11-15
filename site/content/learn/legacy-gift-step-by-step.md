@@ -37,7 +37,7 @@ Chabad.org advises discussing your wishes with your family. See [Talking to Your
 
 ## Step 6. Let Chabad of Lamorinda know
 
-Telling the Rabbi is your choice. If you do, he can thank you in your lifetime and make sure your gift is used as you wish. Everything is kept in confidence. The [legacy page](/legacy) has more.
+Telling the Rabbi is your choice. If you do, he can thank you in your lifetime and make sure your gift is used as you wish.  He is glad to speak with you privately. The [legacy page](/legacy) has more.
 
 ## Common questions
 

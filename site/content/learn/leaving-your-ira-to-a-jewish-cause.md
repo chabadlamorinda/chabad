@@ -22,7 +22,7 @@ Chabad.org describes a retirement account as one of the most tax-efficient ways 
 3. **Ask your plan administrator or custodian for a beneficiary designation form.** Many companies have the form on their website, or you can call them.
 4. **Fill in the organization's details.** Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750.
 5. **Return the form and keep a copy.** Check your other beneficiaries too, especially after a marriage, a death or a divorce. Ask your attorney or advisor if you are not sure how your choices fit together.
-6. **Let your family know,** and let the Rabbi know if you wish. Everything is kept in confidence.
+6. **Let your family know,** and let the Rabbi know if you wish.  He is glad to speak with you privately.
 
 ## A gift of values
 

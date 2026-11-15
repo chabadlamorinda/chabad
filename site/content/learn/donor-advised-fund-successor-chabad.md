@@ -27,7 +27,7 @@ You may also name Chabad of Lamorinda for a share of what remains, with your chi
 1. **Ask your fund** how to name a successor or beneficiary, and request the form.
 2. **Call the Rabbi or the Rebbetzin.** Rabbi Yisroel Labkowski is at 925-384-7242 and Rebbetzin Tzipora Labkowski at 925-384-7241.
 3. **Fill in the details:** Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750.
-4. **Tell your family,** and the Rabbi if you wish. Everything is kept in confidence.
+4. **Tell your family,** and the Rabbi if you wish.  He is glad to speak with you privately.
 
 For Chabad of Lamorinda, your gift means education for future generations and Jewish continuity in Lafayette, Moraga and Orinda.
 

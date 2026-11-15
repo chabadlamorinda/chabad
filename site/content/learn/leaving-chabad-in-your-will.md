@@ -27,7 +27,7 @@ Chabad.org points out that a gift in a will costs nothing now, leaves your cash 
 2. **Talk with the Rabbi or the Rebbetzin.** Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. They would be honored to hear what matters to you and to make sure your gift is used as you intend.
 3. **Meet with your estate attorney.** Chabad.org advises working with an attorney experienced in estate planning, and talking over your wishes with your family and financial advisor.
 4. **Give your attorney the details.** The organization is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750.
-5. **Let us know.** Telling the Rabbi is a choice, not a requirement, but it lets him thank you during your lifetime. Everything is kept in confidence.
+5. **Let us know.** Telling the Rabbi is a choice, not a requirement, but it lets him thank you during your lifetime.  He is glad to speak with you privately.
 
 This guide is not legal or tax advice. Please ask your attorney or tax advisor about the wording and about any tax questions.
 

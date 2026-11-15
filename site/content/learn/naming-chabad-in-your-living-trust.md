@@ -30,7 +30,7 @@ Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonp
 
 ## Tell your family and the Rabbi
 
-Chabad.org advises discussing your wishes with your family and your financial advisor. If your trustee, who may be a child or a friend, knows what you intended and why, it is easier for them to carry it out. You are also welcome to tell Rabbi Yisroel or Rebbetzin Tzipora, who would be honored to hear about it, to thank you and to make sure the gift is used as you wish. Everything is kept in confidence.
+Chabad.org advises discussing your wishes with your family and your financial advisor. If your trustee, who may be a child or a friend, knows what you intended and why, it is easier for them to carry it out. You are also welcome to tell Rabbi Yisroel or Rebbetzin Tzipora, who would be honored to hear about it, to thank you and to make sure the gift is used as you wish.  He is glad to speak with you privately.
 
 For Chabad of Lamorinda, a gift like this is education for future generations and Jewish continuity right here in the community.
 

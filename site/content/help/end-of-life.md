@@ -14,6 +14,7 @@ When someone you love is very ill or near the end of life, you do not have to fa
 2. **Ask for a visit.** A visit from the Rabbi can bring great comfort, both to the person who is ill and to the family.
 3. **Add their name to our prayer list.** Share their Hebrew name and their mother's Hebrew name (or English names if you do not know them). See [/tehillim](/tehillim).
 4. **Talk about wishes, if the time is right.** The Rabbi can help you have gentle conversations about Jewish burial and other wishes.
+5. **Jewish burial can all be arranged, even if there is no budget.** Jewish burial is of the utmost importance, and financial help is available. Call the Rabbi at 925-384-7242 and do not worry about cost.
 
 ## How we help
 

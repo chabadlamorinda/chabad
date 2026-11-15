@@ -37,7 +37,7 @@ For couples where only one spouse is Jewish, read [Jewish burial for interfaith 
 
 ## The grave itself
 
-Chabad.org says that the casket is placed directly in the ground, and above-ground burial is not permitted. Grass and flowers are not planted on the grave. A headstone is set later (see [the headstone inscription](/learn/jewish-headstone-inscription) and [the unveiling](/learn/unveiling)). Once a person is buried, the grave is not opened again except in rare cases after rabbinic consultation.
+Chabad.org says that the casket is placed directly in the ground, and above-ground burial is not permitted. Planting grass or flowers on the grave is discouraged. A headstone is set later (see [the headstone inscription](/learn/jewish-headstone-inscription) and [the unveiling](/learn/unveiling)). Once a person is buried, the grave is not opened again except in rare cases after rabbinic consultation.
 
 ## Common questions
 

@@ -24,7 +24,7 @@ This guide is not legal, tax or financial advice, and it does not recommend any 
 2. **Call the Rabbi or the Rebbetzin.** Rabbi Yisroel Labkowski is at 925-384-7242 and Rebbetzin Tzipora Labkowski at 925-384-7241.
 3. **Request a change-of-beneficiary form** from your insurer.
 4. **Fill in the details:** Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750 (also on the [legacy page](/legacy)).
-5. **Send it in and keep a copy,** and tell your family. Tell the Rabbi if you wish; he would be honored to thank you, and everything is kept in confidence.
+5. **Send it in and keep a copy,** and tell your family. Tell the Rabbi if you wish; he would be honored to thank you. He is glad to speak with you privately.
 
 ## Why this matters in Jewish terms
 

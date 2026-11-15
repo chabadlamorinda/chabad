@@ -9,7 +9,7 @@ Every Shabbat dinner, every child in Hebrew school, every family we help in a ha
 ## Ways to leave a legacy
 
 - **In your will or living trust:** name Chabad of Lamorinda for a specific amount, a percentage, or what remains after your loved ones are provided for.
-- **As a beneficiary of a retirement account** (IRA, 401(k), 403(b)): you fill in a simple form with the account's company; no new will is needed. Ask your advisor about the tax benefits for your heirs.
+- **As a beneficiary of a retirement account** (IRA, 401(k), 403(b)): you fill in a simple form with the account's company; no new will is needed. Ask your tax advisor how this works for you and your heirs.
 - **As a beneficiary of a life insurance policy.**
 - **From a donor-advised fund:** Chabad of Lamorinda accepts donor-advised fund grants now, and you may also name it as a successor or beneficiary of the fund.
 - **A gift of stock:** Chabad of Lamorinda accepts gifts of stock. Call to arrange it, and ask your tax advisor about the tax side.
@@ -23,7 +23,7 @@ Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549. A 501(c)(3) nonp
 
 ## Let us know
 
-If you have included Chabad of Lamorinda in your plans, or are thinking about it, please tell the Rabbi. He would be honored to thank you, to hear what matters most to you, and to make sure your gift is used exactly as you wish. Everything is kept in confidence.
+If you have included Chabad of Lamorinda in your plans, or are thinking about it, please tell the Rabbi. He would be honored to thank you, to hear what matters most to you, and to make sure your gift is used exactly as you wish.  He is glad to speak with you privately.
 
 Call Rabbi Yisroel Labkowski at 925-384-7242 or the Rebbetzin, Tzipora Labkowski, at 925-384-7241, or [talk privately with the Rabbi](/help/talk-to-the-rabbi). You may also want to read about [an ethical will](/learn/ethical-will), the Jewish tradition of leaving your values to your children along with your possessions, and about [a will that follows Jewish law](/learn/halachic-will).
 
