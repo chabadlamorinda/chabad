@@ -52,7 +52,7 @@ Candles or oil are the traditional way. For a hospital, nursing home or any plac
 Chabad.org has a large collection of Chanukah stories. You can also see our [stories](/stories) page, and the guide [Chanukah for kids](/learn/chanukah-for-kids).
 
 ### Does Chabad of Lamorinda visit people in the hospital at Chanukah?
-The Rabbi and Rebbetzin visit the sick at home, in hospital and in care facilities. Call 925-384-7242 to arrange a visit.
+The Rabbi and Rebbetzin visit the sick at home, in hospital and in care facilities. Call 925-384-7242 to ask about a visit.
 
 ### How can I light the menorah if I am traveling or away from home?
 Ask the Rabbi what to do. Our guide [Chanukah away from home](/learn/chanukah-away-from-home) also covers this.

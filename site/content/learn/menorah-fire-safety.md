@@ -29,20 +29,20 @@ These simple rules come from Chabad.org and from public fire-safety guidance:
 ## While it burns
 
 - **Stay nearby.** The lights should burn for about half an hour after nightfall; keep an adult in the room, especially with young children.
-- **Do not move the menorah** during that first half hour. If a flame goes out, Chabad.org advises relighting it.
+- **Do not move the menorah** during that first half hour. If a flame goes out during that time, Chabad.org says it is best to relight it.
 - **Keep the lights for looking.** Not for reading by or working near.
-- **Let it burn out safely.** Chabad.org says that extinguishing early is not normally recommended. If you have to leave the house or are worried after the required time has passed, ask the Rabbi before putting a flame out. Never leave a menorah burning in an empty house.
-- **Friday afternoon needs extra care.** The menorah is lit before the Shabbat candles and must burn long enough, so use enough oil or large candles. See [Chanukah on Shabbat](/learn/chanukah-on-shabbat).
+- **Let it burn out safely.** The lights must burn at least half an hour after nightfall. After that, Chabad.org says you may put them out if you need to, for example if you must leave the house, though it is not normally recommended. Never leave a menorah burning in an empty house.
+- **Friday afternoon needs extra care.** The menorah is lit before the Shabbat candles and must burn longer than usual (Chabad.org says up to about an hour and a half), so use enough oil or large candles. See [Chanukah on Shabbat](/learn/chanukah-on-shabbat).
 
 ## Windows, apartments and electric menorahs
 
-Chanukah lights are placed where passersby can see them, such as a window facing the street or a doorway. Chabad.org adds a safety limit: use a windowsill only if the window is less than thirty feet above the ground. In an apartment, a stable table by the window is safer than a narrow sill. See [the menorah at home in Lamorinda](/learn/menorah-at-home-in-lamorinda).
+Chanukah lights are placed where passersby can see them, such as beside a doorway (the Chabad custom is near the doorpost opposite the mezuzah) or a window facing the street. Chabad.org adds a limit: use a windowsill only if the window is less than thirty feet above the ground, so passersby can see the lights. In an apartment, a stable table by the window is safer than a narrow sill. See [the menorah at home in Lamorinda](/learn/menorah-at-home-in-lamorinda).
 
 Electric menorahs do not fulfill the mitzvah, according to Chabad.org: the mitzvah requires a real flame of oil or wax. They are lovely for decoration and to publicize the miracle, and can sit beside the real one.
 
 ## When lighting is hard
 
-Some people, such as an elderly person living alone, a person in a hospital or care facility, or a student in a dorm, cannot use a flame. Chabad.org suggests that a person who cannot use an ordinary menorah might use tea lights in a tray, which can be filled with water. If no flame at all is allowed, ask the Rabbi. A battery light is sometimes discussed, and blessings should not be recited over it. For those who are elderly or hesitant, see [safety at home](/learn/maakeh-safety-at-home) and our [help for seniors and families](/help/help-for-seniors-and-families).
+Some people, such as an elderly person living alone, a person in a hospital or care facility, or a student in a dorm, cannot use a flame. Sturdy tea lights on a fireproof plate are often the easiest choice. Where flames are not allowed, Chabad.org says to consult a rabbi, so call Rabbi Labkowski. No blessing is said over an electric or battery light. For those who are elderly or hesitant, see [safety at home](/learn/maakeh-safety-at-home) and our [help for seniors and families](/help/help-for-seniors-and-families).
 
 ## Take the next step
 
@@ -65,7 +65,7 @@ Chabad.org says only if the window is less than thirty feet above the ground, an
 For decoration, yes, but the mitzvah requires a real oil or wax flame. Ask the Rabbi if you cannot light a flame.
 
 ### What if the flame goes out?
-During the first half hour after lighting, Chabad.org advises relighting it. If it goes out later, ask the Rabbi.
+If it goes out during the first half hour, Chabad.org says it is best to relight it. After that, there is no need to relight it.
 
 ### Can I blow out the menorah if I am worried?
-Chabad.org says this is not normally recommended before the time is over. If you feel unsafe, use tea lights and a tray, and ask the Rabbi.
+Not during the first half hour after nightfall. After that, Chabad.org says you may put the lights out if you need to, though it is not normally recommended. Tea lights on a fireproof plate can help you feel safer.

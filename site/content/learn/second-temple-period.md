@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: the-holy-temple, ezra-and-nehemiah, after-the-maccabees, jewish-history-overview, what-does-chanukah-mean
 local: Curious about Jewish history? Ask Rabbi Labkowski at Chabad of Lamorinda in Lafayette, or call 925-384-7242 to hear what classes are planned.
 ---
-The Second Temple period is the roughly 420 years in which the Second Holy Temple stood in Jerusalem, built by Jews returning from the Babylonian exile and destroyed by the Romans on the 9th of Av. It is the setting of Purim, of Chanukah and of much of the Talmud's world, so knowing its shape helps every holiday make sense.
+The Second Temple period is the roughly 420 years in which the Second Holy Temple stood in Jerusalem, built by Jews returning from the Babylonian exile and destroyed by the Romans on the 9th of Av. It begins right after the Purim story and is the setting of Chanukah and of much of the Talmud's world, so knowing its shape helps every holiday make sense.
 
 This guide gives a simple timeline. For the Temple building itself, see [The Holy Temple](/learn/the-holy-temple); here we look at the era around it.
 
@@ -17,7 +17,7 @@ You can read about the leaders who guided this return in [Ezra and Nehemiah](/le
 
 ## The Men of the Great Assembly
 
-In the early years, the Jewish people were guided by the Men of the Great Assembly, a council of 120 prophets and sages. Among its members were Ezra, Nehemiah, Mordechai, Daniel and the prophets Haggai, Zechariah and Malachi. They set the order of our prayers and sealed the books of the Tanach. The last of them was Shimon the Righteous, and with him that era ended. The story of Esther and Mordechai belongs to this Persian period, and you can read it in the [Purim story](/learn/purim-story).
+In the early years, the Jewish people were guided by the Men of the Great Assembly, a council of 120 prophets and sages. Among its members were Ezra, Nehemiah, Mordechai, Daniel and the prophets Haggai, Zechariah and Malachi. They set the order of our prayers and sealed the books of the Tanach. The last of them was Shimon the Righteous, and with him that era ended. The story of Esther and Mordechai took place in these Persian years, just before the Temple was completed, and you can read it in the [Purim story](/learn/purim-story).
 
 ## What was different about the Second Temple
 

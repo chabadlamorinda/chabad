@@ -56,7 +56,7 @@ Yes. Teens, like all Jews, take part in the mitzvah. Many families let every mem
 An electric menorah is for display; the mitzvah is done with a real flame, which many dorms do not allow. Ask the Rabbi what to do. See [Chanukah at work and college](/learn/chanukah-at-work-and-college).
 
 ### Why is Chanukah relevant for teenagers?
-It is a story about a few young people deciding to stay true to their identity under pressure. Chabad.org teaches that the light can turn darkness itself into light.
+It is a story about a small group of people deciding to stay true to their identity under pressure. Chabad.org teaches that the light can turn darkness itself into light.
 
 ### What gifts do teens get on Chanukah?
 Gelt, small gifts and time with family are traditional; many families give part of the gelt to tzedakah. See [Chanukah gelt](/learn/chanukah-gelt).

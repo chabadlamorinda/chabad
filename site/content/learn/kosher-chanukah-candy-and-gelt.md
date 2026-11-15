@@ -36,7 +36,7 @@ Some families prefer dairy products made under Jewish supervision, called [chala
 
 ## Gelt for charity
 
-Chabad.org also teaches that gelt reminds us to use money for good, and children are encouraged to give part of their gelt to charity. A simple idea is to let each child set aside a coin for [tzedakah](/learn/tzedakah).
+Chabad.org also teaches that gelt reminds us to use money for good, and suggests giving part of the gelt, about a tenth, to charity. A simple idea is to let each child set aside a coin for [tzedakah](/learn/tzedakah).
 
 ## Common questions
 

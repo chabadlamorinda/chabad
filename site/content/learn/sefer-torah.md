@@ -34,7 +34,7 @@ The Torah is read aloud on Shabbat morning and afternoon, on Mondays and Thursda
 - **The pointer.** Readers use a pointer, a *yad* ("hand"), so that fingers never touch the text.
 - **Honors.** People are called up to the reading, and the scroll is lifted and dressed; see [Synagogue Honors](/learn/synagogue-honors).
 
-The Chabad.org material does not give a full list of care rules, so if you wonder how to handle a scroll, or what happens if one is damaged, please ask the Rabbi.
+If you wonder how to handle a scroll, or what happens if one is damaged, please ask the Rabbi.
 
 ## A new Torah for the community
 
@@ -62,6 +62,6 @@ Call Rabbi Labkowski at 925-384-7242 to ask about seeing the Torah or being at a
 
 ## Take the next step
 
-- Read about a single letter in A Letter in a Torah and the Torah reading.
-- Come to a Torah reading in Lafayette, and learn how a visitor can be honored in Synagogue Honors.
+- Read about a single letter in [A Letter in a Torah](/learn/letter-in-a-torah) and about [the Torah reading](/learn/torah-reading).
+- Come to a Torah reading in Lafayette, and learn how a visitor can be honored in [Synagogue Honors](/learn/synagogue-honors).
 - Study more through [adult education](/programs/adult-education).

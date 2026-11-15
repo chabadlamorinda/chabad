@@ -32,7 +32,7 @@ Chabad.org lists several reasons to attend a public lighting. Here are the ones 
 
 1. **Standing together.** A crowd of Jews and friends celebrating openly is a quiet, strong answer to anything that tries to frighten us.
 2. **Meeting neighbors.** You may meet Jewish families who live a few streets away, and a friendship may start over a donut.
-3. **Pride for our children.** Kids who feel out of step with the holiday displays around them see a whole park celebrating a Jewish holiday.
+3. **Pride for our children.** Kids see a whole park celebrating a Jewish holiday, proudly and in the open.
 4. **Unplugging.** It is an hour or two of real conversation, music and cocoa, with no screens.
 
 ## A good plan for the day

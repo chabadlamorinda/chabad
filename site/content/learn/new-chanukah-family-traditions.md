@@ -21,9 +21,9 @@ Chabad.org lists several old and new traditions. Here they are, with ways to mak
 2. **Gelt with a purpose.** Gelt rewards learning and teaches giving. Let each child set aside part for tzedakah. See [Chanukah gelt](/learn/chanukah-gelt).
 3. **A dreidel tournament.** A nightly game, with a trophy that passes from year to year. See [dreidel](/learn/dreidel) and the [dreidel game](/dreidel) online.
 4. **A public lighting.** Chabad.org notes that large public menorah lightings, with music, treats and local leaders, have been held in many cities since the 1970s. Make it your yearly outing. It does not replace lighting at home.
-5. **A relaxed time for women.** Tradition is that women refrain from housework while the candles burn, so use that half hour for stories, singing and being together.
+5. **A relaxed time for women.** Many women refrain from housework during the first half hour the lights burn, so use that half hour for stories, singing and being together.
 6. **Share the light.** Take a menorah, treats and cards to someone who may be alone. See [Chanukah mitzvah projects for kids](/learn/chanukah-mitzvah-projects-for-kids).
-7. **A dairy party.** A festive meal is a nice mitzvah, and many serve dairy foods. See [hosting a Chanukah party](/learn/hosting-a-chanukah-party).
+7. **A dairy party.** A festive meal adds joy, and many serve dairy foods. See [hosting a Chanukah party](/learn/hosting-a-chanukah-party).
 8. **Fried foods.** Latkes and sufganiyot remind us of the oil. Let the kids make them. See [Chanukah foods](/learn/chanukah-foods).
 
 ## More ideas that build memories

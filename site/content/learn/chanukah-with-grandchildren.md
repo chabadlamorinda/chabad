@@ -27,7 +27,7 @@ If you are near, you can simply be present. If you are far, the next sections ca
 
 Distance cannot take away the connection. A few ideas, with one important point about the mitzvah itself.
 
-- **Each family lights its own menorah.** Every household lights at its own nightfall, in its own home. A video call is a lovely way to share the moment, but it does not replace lighting the menorah yourself. If you have questions about how to coordinate, or about Friday night and Saturday night, ask the Rabbi. On Shabbat, calls are not made, so arrange your visits in advance.
+- **Each family lights its own menorah.** Every household lights at the right time where it lives, in its own home. A video call is a lovely way to share the moment, but it does not replace lighting the menorah yourself. If you have questions about how to coordinate, or about Friday night and Saturday night, ask the Rabbi. On Shabbat, calls are not made, so arrange your visits in advance.
 - **Call before or after the lighting.** Sing a song together, show the menorah and hear about their day.
 - **Send a "Chanukah box."** A small menorah, candles, a dreidel, gelt and a note with a story or blessing.
 - **Mail a card or a recorded story.** A short video of you telling the Chanukah story becomes a keepsake.
@@ -38,7 +38,7 @@ For more on staying close from a distance, see [grandparenting from afar](/learn
 
 ## If you cannot light a flame yourself
 
-Some grandparents live alone, in a care facility or have trouble lighting a match. Chabad.org suggests that tea lights set in a tray are a safe option. If a flame is not possible, ask the Rabbi. For help for seniors and families, see [help for seniors and families](/help/help-for-seniors-and-families). More ideas for older adults are in [Jewish seniors in Lamorinda](/learn/jewish-seniors-in-lamorinda).
+Some grandparents live alone, in a care facility or have trouble lighting a match. Sturdy tea lights on a fireproof plate are a simpler option. If a flame is not possible, ask the Rabbi. For help for seniors and families, see [help for seniors and families](/help/help-for-seniors-and-families). More ideas for older adults are in [Jewish seniors in Lamorinda](/learn/jewish-seniors-in-lamorinda).
 
 ## Take the next step
 

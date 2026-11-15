@@ -1,6 +1,6 @@
 ---
 title: להביא חנוכה למי שלא יוצא מהבית: ביקורים, שיחות ומתנות של אור
-description: איך מביאים חנוכה לקשיש או חבר שלא יוצא מהבית: מה לומר בביקור, מה להביא, הדלקה יחד, שיחות ואיך מתנדבים באמורינדה.
+description: איך מביאים חנוכה לקשיש או חבר שלא יוצא מהבית: מה לומר בביקור, מה להביא, הדלקה יחד, שיחות ואיך מתנדבים בלמורינדה.
 category: Shabbat & holidays
 related: bikur-cholim, honoring-the-elderly, chanukah-in-senior-living, volunteering-in-lamorinda, caring-for-aging-parents
 local: מכירים מישהו שישמח לביקור חנוכה? ספרו לנו ב-/forms/need-help, או התנדבו ב-/forms/volunteer. התקשרו 925-384-7242.
@@ -33,7 +33,7 @@ local: מכירים מישהו שישמח לביקור חנוכה? ספרו לנ
 
 הרב והרבנית לבקובסקי מבקרים חולים בבתיהם, בבית החולים ובמוסדות סיעודיים. אם אתם מכירים מישהו שישמח לביקור, אפשר לספר לנו בטלפון 925-384-7242 או דרך [טופס העזרה](/forms/need-help). איננו יכולים להבטיח מועד מסוים, אך נרצה לשמוע עליו. עוד ראו [עזרה לקשישים ולמשפחות](/help/help-for-seniors-and-families).
 
-אם תרצו להיות המבקרים, [הירשמו להתנדבות](/forms/volunteer). כדי לעזור לאחרים לקבל ביקורים וטיפול, אפשר לתרום ל[קרן החסד](/donate?fund=chesed#give). לעוד רעיונות ראו [ביקור חולים](/learn/bikur-cholim), [כיבוד זקנים](/learn/honoring-the-elderly) ו[התנדבות באמורינדה](/learn/volunteering-in-lamorinda).
+אם תרצו להיות המבקרים, [הירשמו להתנדבות](/forms/volunteer). כדי לעזור לאחרים לקבל ביקורים וטיפול, אפשר לתרום ל[קרן החסד](/donate?fund=chesed#give). לעוד רעיונות ראו [ביקור חולים](/learn/bikur-cholim), [כיבוד זקנים](/learn/honoring-the-elderly) ו[התנדבות בלמורינדה](/learn/volunteering-in-lamorinda).
 
 ## שאלות נפוצות
 

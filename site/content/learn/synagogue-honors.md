@@ -23,7 +23,7 @@ The scroll is carried from the ark to the reading table (the bimah) and back, of
 This means being called up by name to say the blessings before and after a section of the reading. It is the best-known honor. For the details of how it works, read [Aliyah](/learn/aliyah).
 
 **Hagbah (הַגְבָּהָה): lifting the Torah**
-After the reading, the scroll is raised so that the congregation can see the writing, and everyone points to it and says a verse. The Chabad.org page on hagbah describes opening the scroll three columns wide, with one seam in view, and then sliding the scroll toward you. Chabad custom is to touch the scroll with the tzitzit or belt and kiss it before lifting, and to roll it closed before sitting. Customs vary, so if you are offered this honor, ask the gabbai or the Rabbi to show you beforehand.
+After the reading, the scroll is raised so that the congregation can see the writing, and everyone looks at it and says a verse. The scroll is usually opened at least three columns wide. Customs vary on the details (how to hold it, when to roll it closed), so if you are offered this honor, ask the gabbai or the Rabbi to show you beforehand.
 
 **Lifting safely:**
 1. Practice with the Rabbi or gabbai before the service if you can.
@@ -35,7 +35,7 @@ After the reading, the scroll is raised so that the congregation can see the wri
 The person who does gelilah rolls the scroll closed and dresses it with its binder, cover and often a pointer and crown, while the person who lifted it holds it. Ask the gabbai which duties go together in your community.
 
 **Leading prayers**
-The prayer leader, the *chazzan* or *shliach tzibbur*, leads some of the prayers aloud. In Orthodox communities this is a volunteer from the congregation. See [Leading the Prayers](/learn/leading-the-prayers).
+The prayer leader, the *chazzan* or *shliach tzibbur*, leads some of the prayers aloud. Often this is a member of the congregation. See [Leading the Prayers](/learn/leading-the-prayers).
 
 ## Who is given them
 
@@ -63,6 +63,6 @@ Not for opening the ark or carrying the Torah. For an aliyah, you say a short bl
 
 ## Take the next step
 
-- Read Aliyah to get ready for your first honor, and [What Is a Sefer Torah?](/learn/sefer-torah) to know what you are lifting.
+- Read [Aliyah](/learn/aliyah) to get ready for your first honor, and [What Is a Sefer Torah?](/learn/sefer-torah) to know what you are lifting.
 - Planning a birthday, yahrzeit or celebration in Lafayette, Moraga or Orinda? Call 925-384-7242 and ask about an honor.
 - See [Shabbat Morning Services Explained](/learn/shabbat-morning-services-explained).

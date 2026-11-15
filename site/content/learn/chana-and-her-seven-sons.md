@@ -19,13 +19,13 @@ In the days of the Greek decrees, Jews were forbidden to study Torah, keep Shabb
 
 The king himself questioned them. He demanded that the sons turn away from the Torah and obey his laws. He tried threats, and he tried to tempt them with rewards. One by one, each of the sons answered with calm and courage. Each said that he would not give up his faith in G-d and the Torah. They spoke of their trust that G-d, who gave them life, would in the end set everything right.
 
-The youngest was a child of about seven. The Talmud adds that the king tried to trick him, pretending that a bow would be only a small act. The boy would not do it.
+The youngest was a child of about seven. The Talmud adds that the king tried to trick him: he would drop his ring, and the boy need only bend down to pick it up, so that it would look as if he had bowed to the king. The boy would not do it.
 
 ## The mother's words
 
 Throughout this terrible time Chana stood beside her sons and encouraged them. At the end, the king asked her to speak to the youngest so that at least one of her children would live. She asked to speak with him privately. She reminded him how she had carried him, nursed him and raised him in the fear of G-d. She told him to look at the heavens and the earth and remember that G-d created everything with His word and holds all life in His hand. And she told him of her hope that they would meet again in G-d's light.
 
-She came back and told the king that she had failed to persuade the boy. Then, before he was taken, she kissed him once more. She told her sons to tell their ancestor Abraham that although he had once bound one son for G-d, she had bound seven. After this, the story ends in grief.
+She came back and told the king that she had failed to persuade the boy. Then, before he was taken, she kissed him once more. She told him to tell their ancestor Abraham that although he had once bound one son for G-d, she had bound seven. After this, the story ends in grief.
 
 ## What the story teaches
 

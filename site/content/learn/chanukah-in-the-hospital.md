@@ -17,7 +17,7 @@ The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights with fuel, wick a
 
 1. **Light at home, with the patient in mind.** A spouse or relative lights a real menorah at home. A call that evening, or a photo of the lights, lets the patient feel part of it. Whether the patient fulfills the mitzvah through someone else's lighting depends on the situation, so ask the Rabbi.
 2. **A battery menorah by the bed.** Many families place a small electric or battery menorah near the bed, if the hospital allows it. It does not take the place of the mitzvah and is lit without blessings, but it brings the holiday into the room.
-3. **A lighting in a lobby or chapel.** Some hospitals may have a menorah in a shared space. Ask the nurse or the hospital's spiritual care office; whether any flame is allowed is the hospital's decision.
+3. **A lighting in a lobby or prayer room.** Some hospitals may have a menorah in a shared space. Ask the nurse or the hospital's spiritual care office; whether any flame is allowed is the hospital's decision.
 4. **Songs and words.** Sing [Haneirot Halalu or Maoz Tzur](/learn/chanukah-songs), say a few words of the story, and let the patient simply listen. Even a short moment helps.
 5. **Prayer and Tehillim.** If it is comforting, say a chapter of [Tehillim](/tehillim) together, or send a name to the [prayer list](/tehillim).
 

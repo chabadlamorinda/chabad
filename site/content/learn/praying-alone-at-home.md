@@ -9,16 +9,16 @@ Yes, you can pray without a minyan. Chabad.org teaches that praying with a minya
 
 ## Why a minyan is preferred, but not required for prayer
 
-A minyan (מִנְיָן) is a quorum of ten Jewish adults; Chabad.org describes it as ten men over age 13. Public parts of the service require it, and praying with the community is considered the best way to pray. Chabad.org adds that praying in a synagogue is better even when there is no minyan. Still, no one is turned away from G-d because of a missing tenth person. Prayer from a home, a hospital room or a hotel is real prayer. For more on the idea, see [Minyan](/learn/minyan).
+A minyan (מִנְיָן) is a quorum of ten Jewish men over the age of 13. Public parts of the service require it, and praying with the community is considered the best way to pray. Chabad.org adds that praying in a synagogue is better even when there is no minyan. Still, no one is turned away from G-d because of a missing tenth person. Prayer from a home, a hospital room or a hotel is real prayer. For more on the idea, see [Minyan](/learn/minyan).
 
 ## The parts that need a minyan
 
 According to Chabad.org, these are said only with a minyan:
 
 - **Kaddish** (קַדִּישׁ), the prayer of praise to G-d. See [Kaddish](/learn/kaddish).
-- **Barchu** (בָּרְכוּ), the call to bless G-d. See Barchu.
+- **Barchu** (בָּרְכוּ), the call to bless G-d. See [Barchu](/learn/barchu).
 - **The repetition of the Amidah** by the prayer leader.
-- **Kedushah** (קְדֻשָּׁה), the sanctification said in that repetition. See Kedushah.
+- **Kedushah** (קְדֻשָּׁה), the sanctification said in that repetition. See [Kedushah](/learn/kedushah).
 - **The public Torah reading.**
 
 When you pray alone, you simply skip these. That is not a loss, it is the rule. If you are saying Kaddish for a loved one and cannot find a minyan, please call the Rabbi at 925-384-7242 to ask about a minyan.
@@ -27,7 +27,7 @@ When you pray alone, you simply skip these. That is not a loss, it is the rule. 
 
 You can say the parts that belong to the individual:
 
-- Morning blessings and Modeh Ani (see Modeh Ani and Morning Blessings)
+- Morning blessings and Modeh Ani (see [Modeh Ani](/learn/modeh-ani) and [Morning Blessings](/learn/morning-blessings))
 - Psalms and songs of praise, such as Ashrei
 - The **Shema** and its blessings (see [Shema](/learn/shema))
 - The **Amidah**, which is said silently by each person while standing. See [Amidah](/learn/amidah).
@@ -38,14 +38,14 @@ If you are unsure about a specific prayer, such as whether it requires ten, ask 
 ## A simple plan for praying at home
 
 1. **Choose the time.** There are prayers in the morning, afternoon and evening. See [Daily Prayers](/learn/daily-prayers) and ask the Rabbi about times.
-2. **Use a siddur.** Chabad.org says to pray from a siddur, a prayer book. Choose one with English if you need it, and see the siddur guide.
+2. **Use a siddur.** Chabad.org says to pray from a siddur, a prayer book. Choose one with English if you need it, and see the [siddur guide](/learn/siddur).
 3. **Start small.** A few prayers said with attention are worth more than many said in a rush. Chabad.org stresses that concentration is the heart of prayer: "know before Whom you stand."
 4. **Pray in a language you understand** if Hebrew is hard. See [Can I Pray in English?](/learn/can-i-pray-in-english).
 5. **Add your own words.** See [Talking to G-d in Your Own Words](/learn/talking-to-g-d-in-your-own-words).
 
 ## When you can come to synagogue
 
-Many people pray alone on weekdays and join a congregation on Shabbat and holidays. If you are in Lafayette, Moraga or Orinda and would like to be counted in a minyan, you can call the Rabbi at 925-384-7242 to ask about it. Your presence matters to the group, since each person counts toward the ten.
+Many people pray alone on weekdays and join a congregation on Shabbat and holidays. If you are in Lafayette, Moraga or Orinda and would like to be counted in a minyan, you can call the Rabbi at 925-384-7242 to ask about it. Your presence matters to the group, since each man counts toward the ten.
 
 ## Common questions
 
@@ -56,7 +56,7 @@ Yes. Chabad.org says that if no minyan is available, one prays alone. Praying wi
 Kaddish, Barchu, the repetition of the Amidah, Kedushah and the Torah reading. These are skipped when praying alone.
 
 ### Can I say the Shema alone?
-Yes. The Shema is said by each individual. See Shema.
+Yes. The Shema is said by each individual. See [Shema](/learn/shema).
 
 ### What can I skip when praying alone?
 The parts that need ten: Kaddish, Barchu, Kedushah, the Amidah repetition and the Torah reading. Ask the Rabbi if you are unsure about anything else.
@@ -69,6 +69,6 @@ Yes. Everyone can pray in their own words at any time. Ask Rebbetzin Labkowski o
 
 ## Take the next step
 
-- Read Minyan and Daily Prayers to build a simple routine.
+- Read [Minyan](/learn/minyan) and [Daily Prayers](/learn/daily-prayers) to build a simple routine.
 - Call Rabbi Labkowski at 925-384-7242 if you would like to join a minyan or need help.
-- Try Talking to G-d in Your Own Words.
+- Try [Talking to G-d in Your Own Words](/learn/talking-to-g-d-in-your-own-words).

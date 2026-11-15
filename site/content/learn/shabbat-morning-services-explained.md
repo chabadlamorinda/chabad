@@ -44,12 +44,12 @@ Chabad.org notes that the rabbi often gives a sermon on Shabbat and holiday morn
 
 ## 6. Kiddush and lunch
 
-The service usually ends with Kiddush: the blessing over wine, followed by food and conversation. This is the best time to meet people. Read more in [Kiddush](/learn/kiddush), and if you would like to sponsor one, see Sponsoring a Kiddush.
+The service usually ends with Kiddush: the blessing over wine, followed by food and conversation. This is the best time to meet people. Read more in [Kiddush](/learn/kiddush), and if you would like to sponsor one, see [Sponsor a Kiddush](/sponsor-a-kiddush).
 
 ## Tips for first-timers
 
 - Use a siddur with English and learn how to [find your place](/learn/finding-your-place-in-the-siddur).
-- Leave your phone at home or turned off; see Synagogue Etiquette.
+- Leave your phone at home or turned off; see [Synagogue Etiquette](/learn/synagogue-etiquette).
 - Ask a neighbor if you are lost. Everyone was new once.
 
 ## Common questions
@@ -64,16 +64,16 @@ According to Chabad.org, Shabbat morning prayers with Musaf last about three hou
 Yes. Many people arrive partway through. Come in quietly and join in.
 
 ### Why is the Torah read on Shabbat?
-The Torah is read aloud in synagogue on Shabbat morning, and the weekly portion is read in turn so the whole Five Books are completed each year. See Torah Reading.
+The Torah is read aloud in synagogue on Shabbat morning, and the weekly portion is read in turn so the whole Five Books are completed each year. See [Torah Reading](/learn/torah-reading).
 
 ### What is Musaf?
-Musaf (מוּסָף, "additional") is an extra Amidah said on Shabbat and holidays. See the Musaf guide.
+Musaf (מוּסָף, "additional") is an extra Amidah said on Shabbat and holidays. See the [Musaf guide](/learn/musaf).
 
 ### Is there food after the service?
 Usually yes. Kiddush is a light meal with wine and conversation. Ask the Rabbi what is planned.
 
 ## Take the next step
 
-- Read Synagogue Honors to see how a visitor might be invited to take part, then [Going to Synagogue for the First Time](/learn/first-time-at-synagogue).
+- Read [Synagogue Honors](/learn/synagogue-honors) to see how a visitor might be invited to take part, then [Going to Synagogue for the First Time](/learn/first-time-at-synagogue).
 - Families in Lafayette, Moraga and Orinda are welcome. Call 925-384-7242 to hear what is planned this Shabbat.
-- Check our [events](/events) and Shabbat times.
+- Check our [events](/events) and [Shabbat times](/shabbat-times).
