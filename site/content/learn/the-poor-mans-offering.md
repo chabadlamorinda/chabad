@@ -33,7 +33,7 @@ This is why a monthly gift of any size matters to a community. For Jewish life i
 
 ## Maaser and small beginnings
 
-About maaser, giving a tenth, the Torah makes a promise: G-d says to bring the tithes and "test Me" (Malachi 3:10), and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. Maaser is G-d's promise of success. A tenth of a modest income is still a tenth. See [Maaser](/learn/maaser). If money is tight, call the Rabbi: 925-384-7242. See also [Giving When Money Is Tight](/learn/giving-when-money-is-tight).
+About maaser, giving a tenth, the Torah makes a promise: G-d says to bring the tithes and "test Me" (Malachi 3:10), and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. G-d rewards all giving with success, as Chabad teaches and Rabbi Labkowski teaches; maaser is unique in that the Torah states the promise clearly. A tenth of a modest income is still a tenth. See [Maaser](/learn/maaser). If money is tight, call the Rabbi: 925-384-7242. See also [Giving When Money Is Tight](/learn/giving-when-money-is-tight).
 
 ## Common questions
 

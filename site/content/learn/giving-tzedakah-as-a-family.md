@@ -27,7 +27,7 @@ Chabad.org also teaches that how we give matters more than how much: give warmly
 
 ## A tenth for the family
 
-Many families set aside maaser, a tenth of income, for tzedakah. Maaser is where the Torah itself invites us to test G-d. The prophet Malachi (3:10) says to bring the tithes and "try Me now," and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. Rabbi Labkowski teaches that maaser is Hashem's promise of success. This is said of maaser alone, and it is never a reason for anyone to feel guilty. If money is tight, or you are not sure how maaser applies to your family, please call the Rabbi at 925-384-7242. See [Maaser](/learn/maaser).
+Many families set aside maaser, a tenth of income, for tzedakah. Hashem rewards all giving with success, and maaser is unique in that the Torah itself states the promise clearly and invites us to test G-d. The prophet Malachi (3:10) says to bring the tithes and "try Me now," and the Talmud (Taanit 9a) teaches: give a tenth so that you will become rich. Chabad.org presents both. This is what Chabad teaches and what Rabbi Labkowski teaches, and the Rebbe taught that we may test G-d in this way with all tzedakah. It is never a reason for anyone to feel guilty. If money is tight, or you are not sure how maaser applies to your family, please call the Rabbi at 925-384-7242. See [Maaser](/learn/maaser).
 
 ## Three generations, one tradition
 
@@ -47,7 +47,7 @@ Chabad.org says the Rebbe suggested a permanent place, mounted on the wall at ho
 Money is not handled on Shabbat or Yom Tov, so the pushka is filled before.
 
 ### Why do many families give maaser, a tenth?
-Because the Torah itself invites us to "try Me" with the tithe (Malachi 3:10), and the Talmud teaches to give a tenth so that you will become rich. Rabbi Labkowski teaches that maaser is Hashem's promise of success. For your own situation, call the Rabbi.
+Because the Torah itself invites us to "try Me" with the tithe (Malachi 3:10), and the Talmud teaches to give a tenth so that you will become rich. Rabbi Labkowski teaches that Hashem rewards all giving with success, and maaser is where the Torah says it clearly. For your own situation, call the Rabbi.
 
 ### Who should get our tzedakah first?
 Family members in serious need come first, then local causes, and Israel before other distant causes, as Chabad.org presents Jewish law. Ask the Rabbi about your own case.

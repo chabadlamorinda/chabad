@@ -1,11 +1,11 @@
 ---
 title: The Blessing of Giving Maaser: Hashem's Promise of Success
-description: Chabad teaches that maaser, giving a tenth, is Hashem's promise of success. The Talmud, the verse "test Me" and a warm invitation to begin.
+description: Hashem rewards all giving with success, and maaser is where the Torah says it clearly: "test Me." The sources and a warm invitation to begin.
 category: Jewish ideas
 related: starting-maaser-step-by-step, tzedakah, jewish-view-on-wealth, leaving-a-jewish-legacy-gift, chesed
 local: Want to talk about maaser or your own situation? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi.
 ---
-Chabad teaches that maaser is Hashem's promise of success: the Talmud reads the Torah's words about tithing as "give a tenth so that you will become rich," and Hashem Himself says, "test Me." This promise is about maaser, a tenth of income, and it is offered with warmth, never with pressure.
+Chabad teaches, and Rabbi Labkowski teaches, that Hashem rewards all giving with success, and that maaser is unique because there the Torah states the promise clearly: the Talmud reads the Torah's words about tithing as "give a tenth so that you will become rich," and Hashem Himself says, "test Me." The promise is offered with warmth, never with pressure.
 
 ## "Give a tenth so that you will become rich"
 
@@ -15,9 +15,9 @@ In Pirkei Avot (3:17), as Chabad.org quotes it, giving maaser is called a fence,
 
 ## "Test Me"
 
-Normally, Chabad.org notes, we may not test G-d (Deuteronomy 6:16). But in the prophet Malachi (3:10), Hashem says: "Bring the full tithes into the storehouse... and test Me now with this, if I will not open for you the windows of heaven and pour out a blessing." The Talmud teaches that maaser is the one case where we are invited to do exactly that: give the tenth and see the blessings follow. Chabad.org adds that the Torah promises that giving tzedakah will not cause poverty.
+Normally, Chabad.org notes, we may not test G-d (Deuteronomy 6:16). But in the prophet Malachi (3:10), Hashem says: "Bring the full tithes into the storehouse... and test Me now with this, if I will not open for you the windows of heaven and pour out a blessing." Here the Torah invites us to do exactly that: give the tenth and see the blessings follow. The Rebbe taught that this permission to test G-d applies to all tzedakah, not only to maaser. Chabad.org adds that the Torah promises that giving tzedakah will not cause poverty.
 
-This is a promise about maaser, a tenth of income. It does not say anything about any other mitzvah or any other kind of giving, and it is not a reason for anyone to feel they did something wrong in a hard time. If you are facing hardship, please call the Rabbi at 925-384-7242. Your own basic needs come first, as [Giving When Money Is Tight](/learn/giving-when-money-is-tight) explains.
+Hashem rewards all giving with success; maaser is unique in that the Torah states the promise in so many words. The promise is success, and it is never a reason for anyone to feel they did something wrong in a hard time. If you are facing hardship, please call the Rabbi at 925-384-7242. Your own basic needs come first, as [Giving When Money Is Tight](/learn/giving-when-money-is-tight) explains.
 
 ## Two stories of our Sages, as Chabad.org tells them
 
@@ -39,17 +39,17 @@ Maaser is about giving to those in need and to Jewish life. Some places you can 
 - **The Chesed Fund**, which supports visits and help for seniors, the sick and families in need: [give to the Chesed Fund](/donate?fund=chesed#give). It is a good place to direct maaser with the knowledge that you are helping real people in our community.
 - **Jewish life and education in Lafayette, Moraga and Orinda:** [give online](/donate). Chabad of Lamorinda also accepts donor-advised fund grants and gifts of stock, and a donor-advised fund grant counts as maaser.
 
-Thinking further ahead? A legacy gift, such as a bequest in a will or trust, a retirement account or life insurance, keeps Jewish education and continuity strong for the next generation: see [/legacy](/legacy). How a legacy gift relates to maaser is a question for the Rabbi.
+Thinking further ahead? A legacy gift, such as a bequest in a will or trust, a retirement account or life insurance, keeps Jewish education and continuity strong for the next generation: see [/legacy](/legacy). A legacy gift counts as maaser.
 
 To arrange any of these, contact Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. For the rules about what counts, see [What Maaser Can and Cannot Pay For](/learn/what-maaser-can-and-cannot-pay-for). Ask your tax advisor about taxes.
 
 ## Common questions
 
 ### Does Judaism promise that maaser brings success?
-Chabad teaches that maaser is Hashem's promise of success, based on the verse "test Me" (Malachi 3:10) and the Talmud's teaching (Taanit 9a) "give a tenth so that you will become rich." This is about maaser only.
+Chabad teaches, and Rabbi Labkowski teaches, that Hashem rewards all giving with success. Maaser is unique in that the Torah states the promise clearly: "test Me" (Malachi 3:10), and the Talmud teaches (Taanit 9a) "give a tenth so that you will become rich."
 
 ### What does "test Me" mean?
-Hashem invites us, through the prophet Malachi, to bring the full tithes and see the blessing. Normally we may not test G-d; the Talmud (Taanit 9a) makes maaser the exception. Chabad.org notes that some authorities held this does not apply to the tenth of money, but the Rebbe did not accept that view.
+Hashem invites us, through the prophet Malachi, to bring the full tithes and see the blessing. Normally we may not test G-d; the Talmud (Taanit 9a) makes giving the exception. The Rebbe's ruling is that we may test G-d with all tzedakah, not only with maaser.
 
 ### Why is maaser called an investment?
 Chabad.org describes it as a 90-10 partnership with G-d, and Pirkei Avot calls maaser a fence for wealth.

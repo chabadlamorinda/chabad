@@ -16,7 +16,7 @@ From these roots, the Sages established the custom of *maaser kesafim*, giving a
 ## Why give maaser?
 
 - **It is not really ours.** Judaism teaches that our money is entrusted to us by G-d, and part of it is meant for others. Giving tzedakah is not just generosity; it is justice.
-- **It brings blessing.** The prophet Malachi says that G-d invites us to test Him with tithing, and He will pour out blessing. This is the one area where the Sages say testing G-d is allowed.
+- **It brings blessing.** The prophet Malachi says that G-d invites us to test Him with tithing, and He will pour out blessing. The Sages allow testing G-d here, and the Rebbe taught that this applies to all tzedakah: G-d rewards all giving with success, and maaser is where the Torah says it clearly.
 - **It makes giving a habit.** Setting aside a fixed amount means you give consistently, not only when you happen to feel moved.
 
 ## How to calculate maaser

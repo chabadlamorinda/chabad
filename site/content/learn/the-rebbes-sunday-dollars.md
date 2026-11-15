@@ -31,7 +31,7 @@ The same teaching shows up in many Chabad.org stories. A chapter on Chabad.org b
 
 ## Giving that starts small
 
-The same chapter encourages readers to start small, keep a pushka at home, and work toward maaser, giving a tenth. Maaser is not only a duty. The Torah itself makes a promise about it: G-d says through the prophet Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. Maaser is G-d's promise of success. See [Maaser](/learn/maaser). If times are hard, call the Rabbi for guidance.
+The same chapter encourages readers to start small, keep a pushka at home, and work toward maaser, giving a tenth. Maaser is not only a duty. The Torah itself makes a promise about it: G-d says through the prophet Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. G-d rewards all giving with success, as Chabad teaches and Rabbi Labkowski teaches; maaser is unique in that the Torah states the promise clearly. See [Maaser](/learn/maaser). If times are hard, call the Rabbi for guidance.
 
 ## Common questions
 

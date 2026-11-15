@@ -1,19 +1,19 @@
 ---
 title: How Much Should I Leave to Tzedakah in My Will? A Jewish Perspective
-description: How much to leave to tzedakah in your will in Judaism: what Chabad.org teaches about a tenth and a fifth, family first, and why to ask the Rabbi.
+description: How much to leave to tzedakah in your will: the limit of a fifth applies in life, not at death, and an entire estate can be left to Chabad.
 category: Life cycle
 related: halachic-will, maaser, family-feuds-and-inheritance, leaving-chabad-in-your-will, legacy-gift-step-by-step
 local: Wondering how much to leave to tzedakah? Ask Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241.
 ---
-Jewish teaching does not give one fixed amount to leave to tzedakah in a will, so this is a question to ask the Rabbi for your own case. What Chabad.org does teach about giving during life is that a tenth of income (maaser) is the common practice and that giving up to a fifth is praiseworthy, with a fifth generally the upper limit, and that family in need comes first.
+In Jewish law, the limit of a fifth on giving applies during a person's life, not at death. Rabbi Yisroel Labkowski teaches that the fifth limit does not apply to what you leave in your will, and that an entire estate can be left to Chabad of Lamorinda. How much to leave is your own choice, made with your family in mind and with your attorney for the legal side.
 
-## What Chabad.org teaches about giving
+## What Chabad.org teaches about giving during life
 
-Chabad.org's guide to maaser explains that maaser (מַעֲשֵׂר), "a tenth," is the common practice, and that if you can afford it, giving more is commendable, up to a *chomesh* (חֹמֶשׁ), a fifth. Jewish law generally sets a fifth as the upper limit for charitable giving, though the guide notes there are exceptions. It also says that needy relatives take precedence over others, and that basic needs come first. See [Maaser](/learn/maaser).
+Chabad.org's guide to maaser explains that maaser (מַעֲשֵׂר), "a tenth," is the common practice, and that if you can afford it, giving more is commendable, up to a *chomesh* (חֹמֶשׁ), a fifth. Jewish law generally sets a fifth as the upper limit for charitable giving during life, though the guide notes there are exceptions. It also says that needy relatives take precedence over others, and that basic needs come first. See [Maaser](/learn/maaser).
 
 ## Does the fifth apply to a will?
 
-The Chabad.org guide speaks about giving during a person's life. It does not say how these limits apply to what is left at death. So we do not claim to know. This is a real question about Jewish law, and it depends on your family. Please ask the Rabbi, and ask your attorney about the legal side.
+No. The fifth limit does not apply at death. During life, the limit protects a person from giving so much that they end up needing help themselves. Rabbi Labkowski teaches that the fifth limit does not apply to a gift that takes effect at death, and that a whole estate can be left to Chabad of Lamorinda. The legal side, such as the wording of your will or trust, belongs with your attorney, and the Rabbi is glad to talk it through with you.
 
 ## Children and tzedakah together
 
@@ -21,25 +21,25 @@ The Torah has its own laws of inheritance, and many families ask how a gift to t
 
 ## Maaser on an inheritance
 
-Chabad.org says maaser applies to all income, and lists inheritance among them. So an heir may ask the Rabbi whether maaser applies to what they receive. If you are thinking of the gift you leave, the Rabbi can guide you.
+Chabad.org says maaser applies to all income, and lists inheritance among them. So an heir may ask the Rabbi whether maaser applies to what they receive. As for the gift you leave: a legacy gift counts as maaser.
 
 ## What a gift to Chabad of Lamorinda does
 
-Chabad of Lamorinda accepts legacy gifts, and they fund education for future generations, Jewish continuity and Jewish life in Lafayette, Moraga and Orinda. Legacy gifts can be a set amount, a percentage or what remains; see [How to Leave Money to a Synagogue in Your Will](/learn/leaving-chabad-in-your-will) and the [legacy page](/legacy). This guide is not legal or tax advice.
+Chabad of Lamorinda accepts legacy gifts, and they fund education for future generations, Jewish continuity and Jewish life in Lafayette, Moraga and Orinda. A legacy gift can be a set amount, a percentage, what remains after your loved ones are provided for, or your entire estate. It can carry a name, in memory or in honor of someone you love, and Chabad of Lamorinda gladly offers dedication opportunities, such as dedicating a room or a memorial plaque in the synagogue; consult the Rabbi. The name to use in your will is "Chabad of Lamorinda"; your attorney can start from our [sample bequest language](/learn/sample-bequest-language-for-attorneys). See also [How to Leave Money to a Synagogue in Your Will](/learn/leaving-chabad-in-your-will) and the [legacy page](/legacy). This guide is not legal or tax advice.
 
 ## Common questions
 
 ### How much should I leave to tzedakah in my will?
-There is no single answer. Chabad.org teaches that a tenth during life is common and up to a fifth praiseworthy, but does not say how it applies at death. Ask the Rabbi.
+It is your choice: a set amount, a percentage, what remains, or even your entire estate. Since the fifth limit applies in life and not at death, an entire estate can be left to Chabad of Lamorinda. Talk it over with the Rabbi and your attorney.
 
 ### Is there a limit to how much I can leave to charity in Jewish law?
-During life, Chabad.org says a fifth is generally the upper limit, with exceptions. For a will, ask the Rabbi.
+Not at death. During life, Chabad.org says a fifth is generally the upper limit, with exceptions; Rabbi Labkowski teaches that the fifth limit does not apply at death.
 
 ### Should I leave money to charity instead of my children?
-Chabad.org says needy relatives take precedence over other recipients when giving. Many people provide for children and also leave a gift. Ask the Rabbi and your attorney.
+Chabad.org says needy relatives take precedence over other recipients when giving. Many people provide for children and also leave a gift. Talk with the Rabbi and your attorney.
 
 ### Does maaser apply to an inheritance?
-Chabad.org lists inheritance as income to which maaser applies. Ask the Rabbi about your case.
+Chabad.org lists inheritance as income to which maaser applies. Ask the Rabbi about your case. A legacy gift you leave counts as maaser.
 
 ### Can I leave a small gift?
 Yes. A legacy gift is not about the size of the gift.
@@ -50,5 +50,5 @@ Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-38
 ## Take the next step
 
 - Call 925-384-7242 or 925-384-7241 with your question.
-- Read [Tzedakah Priorities](/learn/tzedakah-priorities).
+- Give your attorney our [Sample Bequest Language](/learn/sample-bequest-language-for-attorneys).
 - Read [How to Make a Legacy Gift, Step by Step](/learn/legacy-gift-step-by-step).

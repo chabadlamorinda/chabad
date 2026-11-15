@@ -33,7 +33,7 @@ A tenth is the standard measure. Chabad.org quotes Maimonides: the most desirabl
 
 ## Why many Jews keep it
 
-Many people find that maaser brings clarity. Money is no longer a daily argument ("Should I give? How much?"). The decision is made once, and the giving is calm and regular. Jewish teaching also sees our money as a trust from G-d, and tithing is a way of saying thank you. Chabad teaches, and the Rabbi teaches, that maaser is Hashem's promise of success: the Talmud (Taanit 9a) reads the Torah's words as "give a tenth so that you will become rich," and in the prophet Malachi (3:10) Hashem says of the tithe, "test Me." This promise is about maaser, a tenth of income. If you are going through a hard time, call the Rabbi at 925-384-7242. Read more in [The Blessing of Giving Maaser](/learn/the-blessing-of-giving-maaser).
+Many people find that maaser brings clarity. Money is no longer a daily argument ("Should I give? How much?"). The decision is made once, and the giving is calm and regular. Jewish teaching also sees our money as a trust from G-d, and tithing is a way of saying thank you. Chabad teaches, and the Rabbi teaches, that Hashem rewards all giving with success, and maaser is unique in that the Torah states the promise clearly: the Talmud (Taanit 9a) reads the Torah's words as "give a tenth so that you will become rich," and in the prophet Malachi (3:10) Hashem says of the tithe, "test Me." If you are going through a hard time, call the Rabbi at 925-384-7242. Read more in [The Blessing of Giving Maaser](/learn/the-blessing-of-giving-maaser).
 
 ## Common questions
 

@@ -31,7 +31,7 @@ Notice Tarfon's response. He could have been angry that his money was given away
 
 ## Putting it into practice
 
-Not every gift needs to be large. Many Jews start with a fixed portion. About maaser, giving a tenth, the Torah makes a promise: G-d says through Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. Maaser is G-d's promise of success. See [Maaser](/learn/maaser). In hard times, or for any personal question, call the Rabbi.
+Not every gift needs to be large. Many Jews start with a fixed portion. About maaser, giving a tenth, the Torah makes a promise: G-d says through Malachi (3:10) to bring the tithes and "test Me," and the Talmud (Taanit 9a) teaches "give a tenth so that you will become rich," as Chabad.org presents it. G-d rewards all giving with success, as Chabad teaches and Rabbi Labkowski teaches; maaser is unique in that the Torah states the promise clearly. See [Maaser](/learn/maaser). In hard times, or for any personal question, call the Rabbi.
 
 For something that continues beyond a lifetime, you can arrange a legacy gift: a bequest in a will or trust, a retirement account or life insurance. Chabad of Lamorinda accepts these, as well as donor-advised fund grants and gifts of stock, for education of future generations and Jewish continuity in Lafayette, Moraga and Orinda. See [/legacy](/legacy). Please consult your attorney and tax advisor on details.
 
