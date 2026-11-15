@@ -2,7 +2,7 @@
 title: The Month of Elul: How to Prepare for the High Holidays
 description: What the Jewish month of Elul is, why it is a time of preparation before Rosh Hashanah, and its customs: shofar, Psalm 27, Selichot and checking mezuzahs.
 category: Shabbat & holidays
-related: shofar, selichot, teshuvah, mezuzah
+related: shofar, tanya-and-the-jewish-year, selichot, teshuvah, mezuzah
 local: Have your tefillin and mezuzahs checked before Rosh Hashanah through chabadoflamorinda.com/forms/mezuzah-tefillin, and reserve High Holiday seats at chabadoflamorinda.com/forms/high-holidays.
 ---
 Elul is the last month of the Jewish year, the month leading up to Rosh Hashanah. It is a time of reflection, [teshuvah](/learn/teshuvah) and drawing closer to G-d, so we enter the new year prepared.

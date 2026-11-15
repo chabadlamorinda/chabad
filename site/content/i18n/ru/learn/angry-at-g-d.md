@@ -2,7 +2,7 @@
 title: Злость на Б-га: ответ иудаизма, когда больно
 description: Можно ли злиться на Б-га? Chabad.org отвечает: да. Как еврейская традиция принимает вашу злость и боль и как внести их в молитву.
 category: Jewish ideas
-related: why-bad-things-happen, hope-in-hard-times, grief-during-the-holidays, talking-to-g-d-in-your-own-words, kaddish
+related: why-bad-things-happen, tanya-in-hard-times, hope-in-hard-times, grief-during-the-holidays, talking-to-g-d-in-your-own-words, kaddish
 local: Если вам больно и вы злитесь, вы можете поговорить конфиденциально с раввином Лабковским или ребецн: звоните 925-384-7242 или откройте /help/talk-to-the-rabbi.
 ---
 Да, злиться на Б-га можно. Chabad.org учит, что гнев на Б-га допустим и может даже быть признаком близости: люди скрывают чувства от тех, кто далёк, и говорят открыто с теми, кому доверяют. Если вам больно, вы не плохой еврей и не потеряли своего места.

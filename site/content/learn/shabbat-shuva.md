@@ -2,7 +2,7 @@
 title: Shabbat Shuva: The Shabbat Between Rosh Hashanah and Yom Kippur
 description: What Shabbat Shuva (Shabbat Shuvah) is, the special haftarah, the rabbi's talk, why it is called the Shabbat of Return, and how to make it meaningful.
 category: Shabbat & holidays
-related: ten-days-of-repentance, teshuvah, yom-kippur-for-beginners, haftarah, shabbat
+related: ten-days-of-repentance, tanya-and-the-jewish-year, teshuvah, yom-kippur-for-beginners, haftarah, shabbat
 local: Join us for Shabbat during the Ten Days of Repentance; everyone from Lafayette, Moraga and Orinda is welcome. Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
 Shabbat Shuva, the "Shabbat of Return," is the Shabbat that falls between Rosh Hashanah and Yom Kippur. It is named for the opening words of its special haftarah, "Shuvah Yisrael," "Return, O Israel." It is a gentle, hopeful day, one of the best times of the year to come to synagogue and think about teshuvah.

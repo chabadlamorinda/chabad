@@ -2,7 +2,7 @@
 title: Discipline With Love: Jewish Wisdom on Setting Limits for Children
 description: How to discipline children with love: stay calm, keep it short, set clear limits and ask for help. Jewish parenting wisdom from Chabad.org.
 category: Life cycle
-related: jewish-parenting, parents-and-teenagers, anger-jewish-view, raising-jewish-kids-in-a-small-community, teaching-children-to-pray
+related: jewish-parenting, tanya-for-parents, parents-and-teenagers, anger-jewish-view, raising-jewish-kids-in-a-small-community, teaching-children-to-pray
 local: Parenting is hard. Talk privately with the Rabbi or Rebbetzin at /help/talk-to-the-rabbi or call 925-384-7242.
 ---
 Jewish wisdom teaches that discipline should come from love, not anger: be firm and clear about limits, but warm, calm and brief. According to Chabad.org's parenting articles, discipline is meant to teach a child self-control, not to punish.

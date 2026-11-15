@@ -2,7 +2,7 @@
 title: Учёба с партнёром (хаврута): почему евреи учатся парами
 description: Что такое хаврута? Евреи учат Тору парами, потому что партнёры оттачивают друг друга. Доводы Талмуда и как найти партнёра для учёбы.
 category: Prayer & Torah
-related: how-to-start-learning-torah, daily-torah-study, talmud, jewish-friendship, torah-classes-in-lamorinda
+related: how-to-start-learning-torah, tanya-on-friendship, how-to-start-learning-tanya, daily-torah-study, talmud, jewish-friendship, torah-classes-in-lamorinda
 local: Хотите партнёра для учёбы? Спросите раввина Лабковского, 925-384-7242, или см. /programs/adult-education.
 ---
 Хаврута (חַבְרוּתָא) это еврейская традиция изучать Тору с партнёром: двое читают текст вслух, задают вопросы и спорят о нём вместе. Chabad.org объясняет, что большинство современных авторитетов считает это идеальным способом учёбы, и сам Талмуд указывает на него. Партнёр оттачивает вас, помогает не сбиться с пути и превращает учёбу в дружбу.

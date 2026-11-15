@@ -2,7 +2,7 @@
 title: מהי קדושה ביהדות? להפוך את חיי היומיום לקדושים
 description: מה פירוש קדוש ביהדות? קדושה היא קידוש הגוף, המקום והזמן לה', ועשיית דירה לה' בחיי היומיום.
 category: Jewish ideas
-related: what-is-a-mitzvah, eating-as-a-mitzvah, purpose-of-life, kedushah, havdalah
+related: what-is-a-mitzvah, making-a-home-for-g-d, serving-g-d-in-everyday-life, animal-soul-not-evil, eating-as-a-mitzvah, purpose-of-life, kedushah, havdalah
 local: רוצים להכניס עוד קדושה לבית? התקשרו לרב לבקובסקי 925-384-7242 או בואו לשיעור: /programs/adult-education.
 ---
 ביהדות, קדושה היא מה שמקודש לה', והתורה מבקשת מכל יהודי לקדש את עצמו. לפי תורת החסידות, תכלית הבריאה היא לעשות "דירה" לה' כאן בעולם הגשמי. לכן קדושה אינה בריחה מהחיים הרגילים. היא הכנסת ה' אליהם.

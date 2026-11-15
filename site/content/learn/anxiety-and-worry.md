@@ -2,7 +2,7 @@
 title: Anxiety and Worry: Jewish Wisdom for Finding Calm
 description: What does Judaism teach about anxiety and worry? Trust in G-d, practical steps, Psalms and Shabbat, together with the help of a doctor or counselor.
 category: Jewish ideas
-related: bitachon, exam-stress-jewish-wisdom, mental-health-jewish-view, psalm-121, shabbat, being-content
+related: bitachon, tanya-on-worry-and-trust, exam-stress-jewish-wisdom, mental-health-jewish-view, psalm-121, shabbat, being-content
 local: Carrying something heavy? Talk privately with the Rabbi or the Rebbetzin, 925-384-7242, at /help/talk-to-the-rabbi.
 ---
 Judaism's answer to worry is bitachon (בִּטָּחוֹן), a calm trust that G-d runs the world, is good and cares about you, while you still do everything you reasonably can. Chabad teaches that peace of mind can be built step by step, and that it goes together with the help of doctors and counselors, never instead of them.

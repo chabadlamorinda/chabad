@@ -2,7 +2,7 @@
 title: Что такое Тания? Основополагающая книга хасидизма Хабад
 description: Что такое Тания, кто ее написал, ее главные идеи о душе и внутренней борьбе и как начать ее изучать.
 category: Prayer & Torah
-related: chassidus, the-beinoni, fear-of-g-d, zohar, sefirot, yetzer-hara, chabad, kabbalah, the-rebbe
+related: chassidus, tanya-learning-plan, the-two-souls-explained, tanya-chapter-one-explained, tanya-glossary-for-beginners, the-alter-rebbe, daily-tanya-cycle, how-to-start-learning-tanya, the-beinoni, fear-of-g-d, zohar, sefirot, yetzer-hara, chabad, kabbalah, the-rebbe
 local: Хотите изучать Танию? Позвоните раввину Лабковскому по телефону 925-384-7242, и мы поможем вам начать занятия в удобном для вас темпе.
 ---
 Тания - это основополагающая книга хасидской философии Хабада, написанная рабби Шнеуром Залманом из Ляд и впервые изданная в 1796 году. Это практическое руководство по человеческой душе, которое объясняет, как каждый человек может служить Б-гу и разумом, и сердцем, даже сталкиваясь с повседневными трудностями.

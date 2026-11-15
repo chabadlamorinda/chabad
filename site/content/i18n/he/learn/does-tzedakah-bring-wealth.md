@@ -2,7 +2,7 @@
 title: האם נתינת צדקה מעשירה? ההבטחה של ה' להצלחה
 description: האם צדקה מביאה עושר? חב"ד מלמדת שה' משלם על כל נתינה בהצלחה, ובמעשר התורה אומרת זאת במפורש. מה אומרים התורה והתלמוד.
 category: Jewish ideas
-related: maaser, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
+related: maaser, tanya-on-money, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
 local: יש לכם שאלה איך לתת או כמה להפריש? התקשרו לרב לבקובסקי בטלפון 925-384-7242, או קראו איך אנחנו מקבלים תרומות בדף המורשת שלנו.
 ---
 חב"ד מלמדת שה' משלם על כל נתינת צדקה בהצלחה, והמעשר, נתינת עשירית מההכנסה, מיוחד בכך שבו ההבטחה נאמרת במפורש. בספר מלאכי ה' אומר על המעשר "וּבְחָנוּנִי נָא בָּזֹאת", והגמרא מלמדת: "עשר בשביל שתתעשר" (תענית ט ע"א).

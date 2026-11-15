@@ -2,7 +2,7 @@
 title: סבלנות: חוכמה יהודית להמתנה, לגידול ילדים ולחיים עם אחרים
 description: מה היהדות מלמדת על סבלנות: כלפי עצמנו, כלפי אחרים וכלפי ה׳, ודרכים מעשיות לפתח אותה בחיי היום יום.
 category: Jewish ideas
-related: anger-jewish-view, bitachon, humility, jewish-parenting
+related: anger-jewish-view, tanya-for-parents, tanya-on-anger, mind-over-heart-tanya, bitachon, humility, jewish-parenting
 local: רוצים לדבר על משהו? הרב ישראל והרבנית ציפורה לבקובסקי כאן בשביל משפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 פקקים בכביש 24, פעוט שלא מוכן לנעול נעליים, תפילה שנראה שלא נענתה. הסבלנות שלנו עומדת במבחן כל יום. היהדות רואה בה לא תכונת אופי שחלק מהאנשים נולדים איתה, אלא מידה שכל אחד יכול לפתח, ואחד המפתחות לחיים של שלווה.

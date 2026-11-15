@@ -2,7 +2,7 @@
 title: "אכילה יהודית: ברכות, אכילה מודעת והשולחן כמזבח"
 description: הדרך היהודית לאכול: ברכות לפני ואחרי האוכל, בירור ניצוצות, השולחן כמזבח ושיתוף סעודות. הצטרפו לחב"ד לאמורינדה.
 category: Jewish ideas
-related: blessings, the-table-as-an-altar, what-is-holiness, blessings-after-food, hachnasat-orchim, kosher, shabbat-meals
+related: blessings, serving-g-d-in-everyday-life, itkafya-self-discipline, animal-soul-not-evil, the-table-as-an-altar, what-is-holiness, blessings-after-food, hachnasat-orchim, kosher, shabbat-meals
 local: בואו לסעודת שבת: הירשמו ב-/forms/shabbat-meal או התקשרו לחב"ד לאמורינדה 925-384-7242.
 ---
 ביהדות אכילה היא יותר מדלק: כשאוכלים בתשומת לב, מברכים ומשתמשים באנרגיה לדבר טוב, אנו מעלים את המאכל לקדושה. תורת החסידות אומרת שבכל פיסת מזון יש ניצוץ אלוקי, וסעודותינו הן הזדמנות להעלות אותו.

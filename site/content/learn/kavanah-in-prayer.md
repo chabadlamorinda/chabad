@@ -2,7 +2,7 @@
 title: "How to Focus When You Pray: Kavanah and a Wandering Mind"
 description: Your mind wanders during prayer? Learn what kavanah means and simple, kind ways to concentrate, from Chabad teaching. Ask us in Lafayette.
 category: Prayer & Torah
-related: why-pray, what-is-davening, can-i-pray-in-english, jewish-meditation, shema, modeh-ani, prayer
+related: why-pray, tanya-on-prayer, feeling-spiritually-numb, tanya-unwanted-thoughts, what-is-davening, can-i-pray-in-english, jewish-meditation, shema, modeh-ani, prayer
 local: Want a friendly guide to praying with focus? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi.
 ---
 Kavanah (כוונה) means "intention," the focus and awareness you bring to prayer, and the best way to build it is to start small: give five minutes of real attention to one prayer, and gently return to the words each time your mind wanders. Almost everyone's mind drifts when they pray, so this is a skill you grow into, not a test you pass or fail.

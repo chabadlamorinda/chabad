@@ -2,7 +2,7 @@
 title: Does Giving Tzedakah Make You Rich? G-d's Promise of Success
 description: Does giving charity bring wealth? Chabad teaches that G-d rewards all giving with success, and maaser is where the Torah says it clearly.
 category: Jewish ideas
-related: maaser, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
+related: maaser, tanya-on-money, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
 local: Have a question about how to give or what to set aside? Call Rabbi Labkowski at 925-384-7242, or read how we welcome gifts on our legacy page.
 ---
 Chabad teaches that G-d rewards all giving of tzedakah with success, and that maaser, giving a tenth of your income, is unique because there the promise is stated clearly. In the book of Malachi, G-d says of the tithe, "Test Me in this," and the Talmud teaches, "Give a tenth so that you will become rich" (Taanit 9a).

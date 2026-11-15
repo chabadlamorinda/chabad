@@ -2,7 +2,7 @@
 title: Why the Talmud Calls Tzedakah Equal to All the Mitzvot
 description: Why is tzedakah the most important mitzvah? The Talmud says charity equals all the mitzvot combined. Chabad.org's simple explanation and the Tanya's.
 category: Jewish ideas
-related: tzedakah, 613-mitzvot, maaser, tanya, what-giving-does-for-the-giver
+related: tzedakah, tanya-on-tzedakah, 613-mitzvot, maaser, tanya, what-giving-does-for-the-giver
 local: Want to make giving part of your week? Call Rabbi Labkowski at 925-384-7242 and ask about your first step.
 ---
 The Talmud says that tzedakah, giving charity, is equal to all the other mitzvot combined (Bava Batra 9a). Chabad.org explains that this is because most mitzvot use only part of a person, while giving away part of your earnings gives something into which you put your whole self.

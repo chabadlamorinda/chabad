@@ -2,7 +2,7 @@
 title: כועסים על הקב"ה: תשובה יהודית כשכואב
 description: האם מותר לכעוס על הקב"ה? Chabad.org אומר כן. איך המסורת היהודית מקבלת את הכעס והכאב, ואיך מכניסים אותם לתפילה.
 category: Jewish ideas
-related: why-bad-things-happen, hope-in-hard-times, grief-during-the-holidays, talking-to-g-d-in-your-own-words, kaddish
+related: why-bad-things-happen, tanya-in-hard-times, hope-in-hard-times, grief-during-the-holidays, talking-to-g-d-in-your-own-words, kaddish
 local: אם כואב לכם ואתם כועסים, אתם מוזמנים לדבר בדיסקרטיות עם הרב לבקובסקי או עם הרבנית: התקשרו 925-384-7242 או ראו /help/talk-to-the-rabbi.
 ---
 כן, מותר לכעוס על הקב"ה. Chabad.org מלמד שכעס על ה' מותר ויכול אפילו להיות סימן לקרבה, כי אנשים מסתירים רגשות מאלה שרחוקים מהם ומדברים בגלוי עם מי שהם סומכים עליו. אם כואב לכם, אינכם יהודים רעים ולא איבדתם את מקומכם.

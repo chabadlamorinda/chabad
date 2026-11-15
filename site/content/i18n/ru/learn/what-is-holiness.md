@@ -2,7 +2,7 @@
 title: Что такое святость в иудаизме? Как сделать повседневную жизнь святой
 description: Что значит «святой» в иудаизме? Кдуша это посвящение Б-гу тела, места и времени и создание обители для Б-га в повседневной жизни.
 category: Jewish ideas
-related: what-is-a-mitzvah, eating-as-a-mitzvah, purpose-of-life, kedushah, havdalah
+related: what-is-a-mitzvah, making-a-home-for-g-d, serving-g-d-in-everyday-life, animal-soul-not-evil, eating-as-a-mitzvah, purpose-of-life, kedushah, havdalah
 local: Хотите внести в дом больше святости? Позвоните раввину Лабковскому, 925-384-7242, или приходите на урок: /programs/adult-education.
 ---
 В иудаизме святость (קְדֻשָּׁה, кдуша) это то, что посвящено Б-гу, и Тора просит каждого еврея освящать себя. По учению хасидизма, цель творения в том, чтобы создать «обитель» для Б-га здесь, в материальном мире. Поэтому святость это не бегство от обычной жизни. Это внесение Б-га в неё.

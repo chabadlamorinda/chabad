@@ -2,7 +2,7 @@
 title: Aging With Purpose: The Jewish View of Growing Older
 description: What Judaism teaches about growing older: age as wisdom, no "retirement" from purpose, and ways to keep learning in Lafayette, Moraga and Orinda.
 category: Jewish ideas
-related: retirement-jewish-view, honoring-the-elderly, jewish-seniors-in-lamorinda, starting-jewish-practice-later-in-life, jewish-life-when-homebound
+related: retirement-jewish-view, tanya-for-seniors, honoring-the-elderly, jewish-seniors-in-lamorinda, starting-jewish-practice-later-in-life, jewish-life-when-homebound
 local: Come to a class for adults, whatever your age or background. Call Rabbi Labkowski at 925-384-7242 or see /programs/adult-education.
 ---
 In Jewish tradition, growing older is a gain, not a loss: the Torah uses the word "old" (zaken, זָקֵן) as another word for "wise," and the Lubavitcher Rebbe taught that every added year is a sign that a person's mission is not yet finished. Chabad teaching does not divide life into a working stage and a resting stage; it asks each of us to keep contributing, learning and growing at every age.

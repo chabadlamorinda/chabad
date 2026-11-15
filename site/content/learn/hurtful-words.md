@@ -2,7 +2,7 @@
 title: Ona'at Devarim: The Mitzvah Not to Hurt People With Words
 description: The Torah forbids hurtful words, not only gossip. What ona'at devarim means, everyday examples, and how to make it right when words wound.
 category: Jewish ideas
-related: lashon-hara, being-a-mensch, bullying-jewish-view, giving-criticism-kindly, teshuvah
+related: lashon-hara, tanya-on-speech, being-a-mensch, bullying-jewish-view, giving-criticism-kindly, teshuvah
 local: Hurt someone with words, or been hurt? Talk privately with Rabbi Labkowski or Rebbetzin Labkowski: 925-384-7242 or /help/talk-to-the-rabbi.
 ---
 Ona'at devarim (אונאת דברים) is the Torah's commandment not to hurt, shame or distress another person with words. It comes from the verse, "You shall not wrong one another, and you shall fear your G-d" (Leviticus 25:17), and it is different from lashon hara (gossip), which is speaking badly about someone to others. Here the words are said to the person, and they wound.

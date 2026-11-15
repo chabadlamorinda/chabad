@@ -2,7 +2,7 @@
 title: אונאת דברים: המצווה שלא לפגוע באנשים במילים
 description: התורה אוסרת מילים פוגעות, לא רק לשון הרע. מהי אונאת דברים, דוגמאות יומיומיות ואיך מתקנים כשמילים פגעו.
 category: Jewish ideas
-related: lashon-hara, being-a-mensch, bullying-jewish-view, giving-criticism-kindly, teshuvah
+related: lashon-hara, tanya-on-speech, being-a-mensch, bullying-jewish-view, giving-criticism-kindly, teshuvah
 local: פגעתם במילים, או נפגעתם? דברו בדיסקרטיות עם הרב לבקובסקי או עם הרבנית: 925-384-7242 או /help/talk-to-the-rabbi.
 ---
 אונאת דברים היא מצוות התורה שלא לפגוע, לבייש או לצער אדם אחר במילים. היא נלמדת מהפסוק "ולא תונו איש את עמיתו ויראת מאלקיך" (ויקרא כ"ה, י"ז), והיא שונה מלשון הרע, שהוא דיבור רע על אדם באוזני אחרים. כאן המילים נאמרות לאדם עצמו, והן פוצעות.

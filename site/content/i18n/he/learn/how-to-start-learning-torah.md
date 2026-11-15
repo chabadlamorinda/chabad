@@ -2,7 +2,7 @@
 title: איך מתחילים ללמוד תורה: דרך למתחילים, חמש דקות בכל פעם
 description: איך מתחילים ללמוד תורה כמתחילים: ללמוד בקול, לשאול, למצוא חברותא ולהצטרף לשיעור בלאפייט. בלי רקע.
 category: Prayer & Torah
-related: daily-torah-study, chavruta-learning-partner, weekly-parsha, torah-classes-in-lamorinda, who-wrote-the-torah
+related: daily-torah-study, tanya-learning-plan, tanya-on-torah-study, how-to-start-learning-tanya, chavruta-learning-partner, weekly-parsha, torah-classes-in-lamorinda, who-wrote-the-torah
 local: בואו לשיעור הראשון, בלי רקע: /programs/adult-education, או התקשרו לרב לבקובסקי 925-384-7242.
 ---
 אפשר להתחיל ללמוד תורה כבר היום בלי רקע: בוחרים טקסט, קוראים אותו בקול, שואלים שאלות ואם אפשר לומדים עם חברותא. שאלות ותשובות על התורה ב-Chabad.org מתארות דרך לימוד פעילה, ואומרות שמטרת הלימוד היא ליישם. בלאפייט, מוראגה ואורינדה אפשר להתחיל בשיעור עם שכנים.

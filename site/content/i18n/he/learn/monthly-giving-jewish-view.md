@@ -2,7 +2,7 @@
 title: למה לתת קצת בכל חודש? מתנות קטנות, בתדירות גבוהה
 description: האם עדיף לתת הרבה פעם אחת או מעט לעתים קרובות? הרמב״ם ואדמו״ר הזקן על נתינה חודשית, ואיך מעשר ומועדון חי משתלבים.
 category: Jewish ideas
-related: supporting-chabad-of-lamorinda, maaser, year-end-tzedakah, pushka, giving-tzedakah-as-a-family, tzedakah
+related: supporting-chabad-of-lamorinda, tanya-on-tzedakah, maaser, year-end-tzedakah, pushka, giving-tzedakah-as-a-family, tzedakah
 local: הפכו לשותפים חודשיים במועדון חי בכתובת /chai-club, או התקשרו לרב לבקובסקי, 925-384-7242, בכל שאלה.
 ---
 נתינה של מעט לעתים קרובות היא, לפי תורת ישראל, דרך עמוקה יותר לתת מאשר מתנה גדולה אחת, כי כל מעשה נתינה מעצב את לב הנותן. אדמו״ר הזקן, מייסד חב״ד, מייעץ לחלק את הצדקה השנתית לתשלומים שבועיים או חודשיים, ולא לתת הכול בסוף השנה.

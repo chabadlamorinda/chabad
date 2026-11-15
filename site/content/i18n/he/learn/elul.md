@@ -2,7 +2,7 @@
 title: חודש אלול: איך מתכוננים לימים הנוראים
 description: מהו חודש אלול, למה הוא זמן הכנה לפני ראש השנה, ומנהגיו: שופר, מזמור כז, סליחות ובדיקת מזוזות.
 category: Shabbat & holidays
-related: shofar, selichot, teshuvah, mezuzah
+related: shofar, tanya-and-the-jewish-year, selichot, teshuvah, mezuzah
 local: בדקו את התפילין והמזוזות שלכם לפני ראש השנה דרך chabadoflamorinda.com/forms/mezuzah-tefillin, ושריינו מקומות לימים הנוראים ב-chabadoflamorinda.com/forms/high-holidays.
 ---
 אלול הוא החודש האחרון בשנה היהודית, החודש שלפני ראש השנה. זהו זמן של חשבון נפש, [תשובה](/learn/teshuvah) והתקרבות לה׳, כדי שניכנס לשנה החדשה מוכנים.

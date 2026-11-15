@@ -2,7 +2,7 @@
 title: Do Not Separate Yourself from the Community: Why Jewish Community Matters
 description: Why does Jewish community matter? Hillel's teaching, the minyan and answers to "I'm not religious" and "I don't know anyone". Ways in, no membership.
 category: Jewish ideas
-related: ahavat-yisrael, minyan, getting-involved-in-jewish-lamorinda, feeling-lonely, shabbat-for-beginners
+related: ahavat-yisrael, tanya-chapter-32-love-every-jew, minyan, getting-involved-in-jewish-lamorinda, feeling-lonely, shabbat-for-beginners
 local: Take one small step: join us for Shabbat or a class. Call Rabbi Labkowski at 925-384-7242 or see /events. No membership needed.
 ---
 Jewish community matters because Judaism was always meant to be lived together. Hillel taught, "Do not separate yourself from the community" (Pirkei Avot 2:4), and Jewish life, from prayer to joy to mourning, is built around people showing up for each other. Whether you live in Lafayette, Moraga or Orinda, you belong.

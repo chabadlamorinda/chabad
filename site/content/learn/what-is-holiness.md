@@ -2,7 +2,7 @@
 title: What Is Holiness in Judaism? Making Everyday Life Holy
 description: What does holy mean in Judaism? Kedushah means sanctifying body, place and time to G-d, and making a home for G-d in daily life.
 category: Jewish ideas
-related: what-is-a-mitzvah, eating-as-a-mitzvah, purpose-of-life, kedushah, havdalah
+related: what-is-a-mitzvah, making-a-home-for-g-d, serving-g-d-in-everyday-life, animal-soul-not-evil, eating-as-a-mitzvah, purpose-of-life, kedushah, havdalah
 local: Want to bring more holiness into your home? Call Rabbi Labkowski at 925-384-7242 or come to a class: /programs/adult-education.
 ---
 In Judaism, holiness (קְדֻשָּׁה, kedushah) is what is sanctified to G-d, and the Torah asks every Jew to sanctify himself or herself. According to Chassidic teaching, the purpose of creation is to make a "dwelling place" for G-d right here in the physical world. So holiness is not about escaping ordinary life. It is about bringing G-d into it.

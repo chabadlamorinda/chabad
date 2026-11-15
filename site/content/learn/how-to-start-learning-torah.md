@@ -2,7 +2,7 @@
 title: How to Start Learning Torah: A Beginner's Path, Five Minutes at a Time
 description: How to start learning Torah as a beginner: learn aloud, ask questions, find a partner and join a class in Lafayette. No background needed.
 category: Prayer & Torah
-related: daily-torah-study, chavruta-learning-partner, weekly-parsha, torah-classes-in-lamorinda, who-wrote-the-torah
+related: daily-torah-study, tanya-learning-plan, tanya-on-torah-study, how-to-start-learning-tanya, chavruta-learning-partner, weekly-parsha, torah-classes-in-lamorinda, who-wrote-the-torah
 local: Come to your first class, no background needed: /programs/adult-education, or call Rabbi Labkowski at 925-384-7242.
 ---
 You can start learning Torah today with no background: choose a text, read it aloud, ask questions and, if possible, learn with a partner. Chabad.org's Torah FAQ describes this as an active way of learning, and says the goal of study is to put it into practice. In Lafayette, Moraga and Orinda you can begin in a class with neighbors.

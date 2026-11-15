@@ -2,7 +2,7 @@
 title: איך אוהבים את ה'? מצוות אהבת ה'
 description: איך אוהבים את ה' ביהדות: המצווה משמע ישראל, דרך הרמב"ם בהתבוננות בבריאה, האהבה הסמויה בנשמה לפי התניא, וצעדים יומיים.
 category: Jewish ideas
-related: shema, fear-of-g-d, belief-in-g-d, tanya, prayer
+related: shema, hitbonenut-tanya-contemplation, fear-of-g-d, belief-in-g-d, tanya, prayer
 local: רוצים לחקור זאת עם מישהו? התקשרו לרב לבקובסקי 925-384-7242, או ראו /programs/adult-education.
 ---
 אהבת ה' היא מצווה בתורה: "ואהבת את ה' אלוקיך בכל לבבך ובכל נפשך ובכל מאדך" (דברים ו, ה), דברי ה[שמע](/learn/shema). הרמב"ם מלמד שהדרך מתחילה בהתבוננות בגדולת ה' כפי שהיא נראית בבריאה, עד שהפלא גדל לאהבה.

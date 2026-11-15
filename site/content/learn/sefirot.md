@@ -2,7 +2,7 @@
 title: The Ten Sefirot Explained: Kabbalah's Map of the Mind and Heart
 description: What the ten sefirot are in Kabbalah and Chassidic teaching: wisdom, understanding, kindness, strength and more, and how they mirror the soul.
 category: Jewish ideas
-related: kabbalah, tanya, counting-the-omer, chassidus, the-soul
+related: kabbalah, tanya-glossary-for-beginners, tanya, counting-the-omer, chassidus, the-soul
 local: Curious about Kabbalah and Chassidic teaching? Ask about our classes at /programs/adult-education or call 925-384-7242.
 ---
 The ten sefirot (ספירות) are the ten attributes through which G-d's infinite light is revealed in the world, according to Kabbalah. In Chassidic teaching they are also a map of the human soul: three powers of the mind and seven emotions that you can recognize in yourself.

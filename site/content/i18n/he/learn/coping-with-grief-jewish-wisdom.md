@@ -2,7 +2,7 @@
 title: "להתמודד עם האבל: חכמה יהודית לימים הקשים ביותר"
 description: איך היהדות עוזרת בעת אבל? שלבי האבלות היהודית, נחמה מהקהילה והמשכיות הנשמה, ולמי לפנות בלאפייט ובאיסט ביי.
 category: Mourning & remembrance
-related: mourning-journey, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
+related: mourning-journey, tanya-and-grief, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
 local: מתאבלים וצריכים מישהו לדבר איתו? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או ראו /help/talk-to-the-rabbi.
 ---
 היהדות עוזרת בעת אבל בכך שהיא נותנת לו דרך: שלב אחר שלב, מהשעות הראשונות של ההלם דרך השבעה, השלושים והשנה, עם קהילה שמנחמת ואמונה שהנשמה נמשכת. Chabad.org מלמד שהמנהגים האלה נותנים לאבל ביטוי מקובל ואישור, וזה חשוב להחלמה.

@@ -2,7 +2,7 @@
 title: למה הגמרא קוראת לצדקה שקולה כנגד כל המצוות
 description: למה צדקה היא המצווה החשובה ביותר? הגמרא אומרת שצדקה שקולה כנגד כל המצוות. ההסבר הפשוט של Chabad.org וזה של התניא.
 category: Jewish ideas
-related: tzedakah, 613-mitzvot, maaser, tanya, what-giving-does-for-the-giver
+related: tzedakah, tanya-on-tzedakah, 613-mitzvot, maaser, tanya, what-giving-does-for-the-giver
 local: רוצים להכניס נתינה לשבוע שלכם? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ושאלו על הצעד הראשון.
 ---
 הגמרא אומרת שצדקה שקולה כנגד כל המצוות כולן (בבא בתרא ט ע"א). באתר Chabad.org מסבירים שזה משום שרוב המצוות משתמשות רק בחלק מהאדם, ואילו נתינת חלק מהשכר היא נתינת דבר שהשקענו בו את כל עצמנו.

@@ -2,7 +2,7 @@
 title: Jewish Life for a Parent in Senior Living Near Lafayette, Moraga and Orinda
 description: How to bring Shabbat, holidays, a mezuzah and familiar songs to a Jewish parent in senior living or care near Lamorinda, and how to care for yourself too.
 category: Lamorinda
-related: jewish-seniors-in-lamorinda, visiting-someone-in-a-nursing-home, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
+related: jewish-seniors-in-lamorinda, tanya-for-seniors, visiting-someone-in-a-nursing-home, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
 local: Want a visit for your parent, or a listening ear for you? Call Rabbi Labkowski at 925-384-7242 or write via /help/talk-to-the-rabbi.
 ---
 You can keep Jewish life alive for a parent in senior living by bringing small, familiar pieces of Shabbat and the holidays into their room: a blessing over candles, a Kiddush cup, challah, a mezuzah on the door, and a visit from someone who sings the old melodies. For families in Lafayette, Moraga and Orinda, the Rabbi and Rebbetzin are happy to hear from you, and you do not need to belong to anything first.

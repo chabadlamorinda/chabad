@@ -2,7 +2,7 @@
 title: לסלוח לעצמך: מה היהדות מלמדת על אשמה ועל התחלה חדשה
 description: התשובה שלמה וה׳ סולח. אז למה כל כך קשה לסלוח לעצמנו? אשמה שעוזרת לעומת אשמה שמשתקת, עצת התניא וצעדים מעשיים.
 category: Jewish ideas
-related: teshuvah, changing-a-bad-habit, forgiveness-and-making-peace, simcha, mental-health-jewish-view
+related: teshuvah, starting-over-after-you-fall, tanya-on-forgiving-others, sadness-versus-bitterness, changing-a-bad-habit, forgiveness-and-making-peace, simcha, mental-health-jewish-view
 local: נושאים משהו כבד? הרב ישראל והרבנית ציפורה לבקובסקי מקשיבים בפרטיות, לכל אחד בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 אמרתם את המילים שאי אפשר לקחת בחזרה, או עשיתם את הבחירה שפגעה במישהו, וכבר התנצלתם, תיקנתם מה שיכולתם, והחלטתם שלעולם לא עוד. ועדיין, בלילה, זה חוזר. ליהדות יש הרבה מה לומר על סליחה לאחרים, ולא פחות על המשימה הקשה יותר: לסלוח לעצמנו.

@@ -2,7 +2,7 @@
 title: ספקות באמונה בה': גישה יהודית לשאלות של אמונה
 description: האם יהודי יכול לפקפק בה'? כן. מה אומרת תורת חב"ד על ספקות, איך מחזקים אמונה, ואיפה אפשר לשאול בלמורינדה.
 category: Jewish ideas
-related: belief-in-g-d, hope-in-hard-times, why-be-jewish, purpose-of-life, tikkun-olam
+related: belief-in-g-d, feeling-spiritually-numb, hope-in-hard-times, why-be-jewish, purpose-of-life, tikkun-olam
 local: את השאלה הקשה ביותר שלכם אפשר להביא לרב לבקובסקי, ללא ידע מוקדם: /help/talk-to-the-rabbi או 925-384-7242.
 ---
 כן, יהודי יכול לפקפק בה', והספק אינו הופך אותו ליהודי פחות. תורת חב"ד רואה בשאלות כנות חלק מהדרך: השם ישראל פירושו מי שנאבק עם ה', ויהודי שמתמודד נשאר יהודי שייך.

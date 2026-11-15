@@ -2,7 +2,7 @@
 title: Why Give a Little Every Month? Small Gifts, Given Often
 description: Is it better to give a lot once or a little often? The Rambam and the Alter Rebbe on monthly giving, and how maaser and the Chai Club fit in.
 category: Jewish ideas
-related: supporting-chabad-of-lamorinda, maaser, year-end-tzedakah, pushka, giving-tzedakah-as-a-family, tzedakah
+related: supporting-chabad-of-lamorinda, tanya-on-tzedakah, maaser, year-end-tzedakah, pushka, giving-tzedakah-as-a-family, tzedakah
 local: Become a monthly partner in the Chai Club at /chai-club, or call Rabbi Labkowski at 925-384-7242 with any question.
 ---
 Giving a little often is, in Jewish teaching, a deeper way to give than a single large gift, because each act of giving shapes the giver's heart. The Alter Rebbe, founder of Chabad, advises dividing one's yearly tzedakah into weekly or monthly payments instead of giving everything at the end of the year.

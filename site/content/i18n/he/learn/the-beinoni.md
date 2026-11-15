@@ -2,7 +2,7 @@
 title: הבינוני: גיבור התניא הוא מישהו כמוכם
 description: מהו בינוני בתניא? "האדם הבינוני" שעדיין מרגיש את המשיכה אך אינו פועל לפיה, מדרגה שפתוחה לכל אדם.
 category: Jewish ideas
-related: tanya, yetzer-hara, self-esteem-jewish-view, free-will, teshuvah
+related: tanya, tanya-on-self-worth, why-do-i-still-struggle, tanya-unwanted-thoughts, mind-over-heart-tanya, tanya-chapter-one-explained, yetzer-hara, self-esteem-jewish-view, free-will, teshuvah
 local: רוצים ללמוד תניא עם מישהו? התקשרו לרב לבקובסקי 925-384-7242, או ראו /programs/adult-education.
 ---
 הבינוני הוא "האדם הבינוני" בתניא, הספר המרכזי של החסידות חב"ד. הוא אינו צדיק מושלם, ואינו רשע שנכנע לעוולה. הבינוני עדיין מרגיש את משיכת התאווה הרעה, אך לעולם אינו נותן לה להיכנס למחשבתו, לדיבורו או למעשהו.

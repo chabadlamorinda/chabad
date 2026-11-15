@@ -2,7 +2,7 @@
 title: Как начать изучать Тору: путь для начинающих, по пять минут за раз
 description: Как начать изучать Тору новичку: читать вслух, задавать вопросы, найти партнёра и прийти на урок в Лафайетте. Без подготовки.
 category: Prayer & Torah
-related: daily-torah-study, chavruta-learning-partner, weekly-parsha, torah-classes-in-lamorinda, who-wrote-the-torah
+related: daily-torah-study, tanya-learning-plan, tanya-on-torah-study, how-to-start-learning-tanya, chavruta-learning-partner, weekly-parsha, torah-classes-in-lamorinda, who-wrote-the-torah
 local: Приходите на первый урок, подготовка не нужна: /programs/adult-education, или позвоните раввину Лабковскому: 925-384-7242.
 ---
 Начать изучать Тору можно уже сегодня без всякой подготовки: выберите текст, читайте его вслух, задавайте вопросы и, если возможно, занимайтесь с партнёром. Вопросы и ответы о Торе на Chabad.org описывают активный способ учёбы и говорят, что цель изучения это претворение в жизнь. В Лафайетте, Мораге и Оринде можно начать на уроке вместе с соседями.

@@ -2,7 +2,7 @@
 title: חוכמה יהודית לאנשי מקצוע עסוקים: זמן, ריכוז ואיפוס שבועי
 description: איזון בין עבודה לחיים במסורת היהודית: שבת כאיפוס שבועי, מאמץ ובטחון, עבודה כשליחות וטיפים להכנה ביום שישי לאנשי מקצוע עסוקים בלמורינדה.
 category: Jewish ideas
-related: shabbat-for-lamorinda-commuters, young-professionals-in-lamorinda, job-burnout, making-every-day-count, shabbat-for-working-parents
+related: shabbat-for-lamorinda-commuters, tanya-for-busy-professionals, tanya-at-work, young-professionals-in-lamorinda, job-burnout, making-every-day-count, shabbat-for-working-parents
 local: שבוע עמוס? הצטרפו לסעודת שבת או לשיעור. התקשרו לרב לבקובסקי 925-384-7242 או הירשמו ב-/forms/shabbat-meal.
 ---
 המסורת היהודית עונה על שאלת האיזון בין עבודה לחיים בשבת: יום אחד בשבוע שבו אנחנו מפסיקים לעבוד, עושים צעד אחורה ונזכרים למה אנחנו עובדים מלכתחילה. תורת חב"ד מוסיפה שעלינו לעשות את עבודתנו במלוא המאמץ וגם בבטחון בה', ושהעבודה עצמה יכולה להיות שליחות ולא רק שחיקה.

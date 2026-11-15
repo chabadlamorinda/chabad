@@ -2,7 +2,7 @@
 title: "Coping With Grief: Jewish Wisdom for the Hardest Days"
 description: How does Judaism help with grief? The stages of Jewish mourning, comfort from community and the soul's continuity. Where to turn near Lafayette.
 category: Mourning & remembrance
-related: mourning-journey, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
+related: mourning-journey, tanya-and-grief, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
 local: Grieving and need someone to talk to? Call Rabbi Labkowski at 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 Judaism helps with grief by giving it a path: stage by stage, from the first numb hours through shiva, sheloshim and the year, with a community that comforts you and a faith that the soul continues. Chabad.org teaches that these practices give grief an accepted outlet and validation, which is important to healing.

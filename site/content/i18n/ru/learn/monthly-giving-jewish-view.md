@@ -2,7 +2,7 @@
 title: Зачем давать понемногу каждый месяц? Малые дары, данные часто
 description: Лучше дать много один раз или понемногу часто? Рамбам и Алтер Ребе о ежемесячном даянии, и как сюда вписываются маасер и Клуб Хай.
 category: Jewish ideas
-related: supporting-chabad-of-lamorinda, maaser, year-end-tzedakah, pushka, giving-tzedakah-as-a-family, tzedakah
+related: supporting-chabad-of-lamorinda, tanya-on-tzedakah, maaser, year-end-tzedakah, pushka, giving-tzedakah-as-a-family, tzedakah
 local: Станьте ежемесячным партнером в Клубе Хай: /chai-club, или позвоните раву Лабковскому, 925-384-7242, с любым вопросом.
 ---
 Давать понемногу и часто - по еврейскому учению, более глубокий способ, чем один большой дар, потому что каждый акт даяния формирует сердце дающего. Алтер Ребе, основатель Хабада, советует разделить годовую цдаку на еженедельные или ежемесячные платежи, а не отдавать все в конце года.

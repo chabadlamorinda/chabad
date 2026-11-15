@@ -2,7 +2,7 @@
 title: Дисциплина с любовью: еврейская мудрость об установлении границ для детей
 description: Как дисциплинировать детей с любовью: сохранять спокойствие, говорить коротко, ставить чёткие границы и просить помощи. Мудрость с Chabad.org.
 category: Life cycle
-related: jewish-parenting, parents-and-teenagers, anger-jewish-view, raising-jewish-kids-in-a-small-community, teaching-children-to-pray
+related: jewish-parenting, tanya-for-parents, parents-and-teenagers, anger-jewish-view, raising-jewish-kids-in-a-small-community, teaching-children-to-pray
 local: Быть родителем непросто. Поговорите лично с раввином или ребецн: /help/talk-to-the-rabbi или звоните 925-384-7242.
 ---
 Еврейская мудрость учит, что дисциплина должна исходить из любви, а не из гнева: будьте тверды и ясны в границах, но тепло, спокойно и кратко. Согласно статьям Chabad.org о воспитании, дисциплина нужна, чтобы научить ребёнка самоконтролю, а не чтобы наказывать.

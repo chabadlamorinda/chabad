@@ -2,7 +2,7 @@
 title: Месяц элуль: как подготовиться к Грозным дням
 description: Что такое еврейский месяц элуль, почему это время подготовки к Рош а-Шана и его обычаи: шофар, 27-й псалом, Слихот и проверка мезуз.
 category: Shabbat & holidays
-related: shofar, selichot, teshuvah, mezuzah
+related: shofar, tanya-and-the-jewish-year, selichot, teshuvah, mezuzah
 local: Проверьте тфилин и мезузы перед Рош а-Шана через chabadoflamorinda.com/forms/mezuzah-tefillin и забронируйте места на праздники на chabadoflamorinda.com/forms/high-holidays.
 ---
 Элуль - последний месяц еврейского года, месяц перед Рош а-Шана. Это время размышлений, [тшувы](/learn/teshuvah) и сближения с Б-гом, чтобы мы вошли в новый год подготовленными.

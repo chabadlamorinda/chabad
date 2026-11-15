@@ -2,7 +2,7 @@
 title: עשר הספירות מוסברות: מפת המוח והלב של הקבלה
 description: מהן עשר הספירות בקבלה ובתורת החסידות: חכמה, בינה, חסד, גבורה ועוד, ואיך הן משקפות את הנשמה.
 category: Jewish ideas
-related: kabbalah, tanya, counting-the-omer, chassidus, the-soul
+related: kabbalah, tanya-glossary-for-beginners, tanya, counting-the-omer, chassidus, the-soul
 local: סקרנים לגבי קבלה ותורת החסידות? שאלו על השיעורים שלנו ב-/programs/adult-education או התקשרו 925-384-7242.
 ---
 עשר הספירות הן עשר המידות שדרכן מתגלה אור ה' האין סופי בעולם, לפי הקבלה. בתורת החסידות הן גם מפה של נפש האדם: שלושה כוחות של השכל ושבע מידות של הלב שאפשר לזהות בעצמך.

@@ -2,7 +2,7 @@
 title: Angry at G-d: A Jewish Answer for When It Hurts
 description: Is it okay to be angry at G-d? Chabad.org says yes. How Jewish tradition welcomes your anger and pain, and how to bring it into prayer.
 category: Jewish ideas
-related: why-bad-things-happen, hope-in-hard-times, grief-during-the-holidays, talking-to-g-d-in-your-own-words, kaddish
+related: why-bad-things-happen, tanya-in-hard-times, hope-in-hard-times, grief-during-the-holidays, talking-to-g-d-in-your-own-words, kaddish
 local: If you are hurting and angry, you are welcome to talk privately with Rabbi Labkowski or Rebbetzin Labkowski: call 925-384-7242 or see /help/talk-to-the-rabbi.
 ---
 Yes, it is okay to be angry at G-d. Chabad.org teaches that anger at G-d is permitted and can even be a sign of closeness, because people hold back their feelings from those they are distant from and speak openly to those they trust. If you are hurting, you are not a bad Jew, and you have not lost your place.

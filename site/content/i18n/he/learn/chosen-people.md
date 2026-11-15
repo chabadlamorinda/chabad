@@ -2,7 +2,7 @@
 title: מה פירוש "עם הנבחר" ביהדות?
 description: מה פירוש "עם הנבחר" ביהדות: לא זכות מיוחדת אלא שליחות ואחריות, "ממלכת כהנים" שמביאה אור לעולם.
 category: Jewish ideas
-related: why-be-jewish, is-judaism-a-religion-or-a-nation, noahide-laws, who-is-a-jew, israel-and-the-jewish-people, ahavat-yisrael
+related: why-be-jewish, tanya-chapter-32-love-every-jew, part-of-g-d-above, is-judaism-a-religion-or-a-nation, noahide-laws, who-is-a-jew, israel-and-the-jewish-people, ahavat-yisrael
 local: עשו צעד אחד אל השליחות היהודית שלכם. התקשרו לרב לבקובסקי 925-384-7242 או כתבו דרך /help/talk-to-the-rabbi.
 ---
 ביהדות, "עם הנבחר" פירושו שעם ישראל נבחר למשימה ולא לזכות מיוחדת: להביא את אור ה' לעולם דרך התורה והמצוות. אתר חב"ד מלמד שהבחירה היא אחריות, והיא דורשת מאיתנו יותר ולא פחות.

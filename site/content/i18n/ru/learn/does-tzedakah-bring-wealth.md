@@ -2,7 +2,7 @@
 title: Делает ли цдака богатым? Обещание Б-га об успехе
 description: Приносит ли цдака богатство? Хабад учит, что Б-г вознаграждает успехом любое даяние, а о маасере Тора говорит прямо. Что говорят Тора и Талмуд.
 category: Jewish ideas
-related: maaser, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
+related: maaser, tanya-on-money, jewish-view-on-wealth, parnassah-work-and-livelihood, tzedakah-averts-a-harsh-decree, what-giving-does-for-the-giver
 local: Есть вопрос, как и сколько отдавать? Позвоните раввину Лабковскому: 925-384-7242, или прочтите, как мы принимаем пожертвования, на нашей странице о наследии.
 ---
 Хабад учит, что Б-г вознаграждает успехом всякую цдаку, а маасер, десятая часть дохода, уникален тем, что здесь обещание сказано прямо. В книге Малахи Б-г говорит о десятине: «Испытайте Меня в этом», а Талмуд учит: «Отделяй десятину, чтобы разбогатеть» (Таанит 9а).

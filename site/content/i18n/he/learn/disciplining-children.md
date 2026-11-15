@@ -2,7 +2,7 @@
 title: משמעת באהבה: חכמה יהודית על הצבת גבולות לילדים
 description: איך להעניש ילדים באהבה: להישאר רגועים, לקצר, להציב גבולות ברורים ולבקש עזרה. חכמת הורות יהודית מ-Chabad.org.
 category: Life cycle
-related: jewish-parenting, parents-and-teenagers, anger-jewish-view, raising-jewish-kids-in-a-small-community, teaching-children-to-pray
+related: jewish-parenting, tanya-for-parents, parents-and-teenagers, anger-jewish-view, raising-jewish-kids-in-a-small-community, teaching-children-to-pray
 local: הורות קשה. דברו בפרטיות עם הרב או הרבנית ב-/help/talk-to-the-rabbi או התקשרו 925-384-7242.
 ---
 החכמה היהודית מלמדת שמשמעת צריכה לבוא מאהבה ולא מכעס: להיות תקיפים וברורים לגבי גבולות, אבל חמים, רגועים ותמציתיים. לפי מאמרי ההורות ב-Chabad.org, המשמעת נועדה ללמד את הילד שליטה עצמית, ולא להעניש.

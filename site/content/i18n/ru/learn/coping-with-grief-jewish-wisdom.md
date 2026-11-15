@@ -2,7 +2,7 @@
 title: "Как справиться с горем: еврейская мудрость для самых трудных дней"
 description: Как иудаизм помогает в горе? Этапы еврейского траура, утешение общины и продолжение жизни души, а также к кому обратиться в Лафайетте и Ист-Бэй.
 category: Mourning & remembrance
-related: mourning-journey, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
+related: mourning-journey, tanya-and-grief, hope-in-hard-times, afterlife, comforting-mourners, grief-during-the-holidays
 local: Горюете и нужен собеседник? Позвоните раввину Лабковскому по номеру 925-384-7242 или см. /help/talk-to-the-rabbi.
 ---
 Иудаизм помогает в горе, давая ему путь: этап за этапом, от первых оцепеневших часов через шиву, шлошим и год, с общиной, которая утешает, и верой в то, что душа продолжает жить. Chabad.org учит, что эти обычаи дают горю принятый выход и признание, что важно для исцеления.

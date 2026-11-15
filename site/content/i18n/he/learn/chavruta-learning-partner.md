@@ -2,7 +2,7 @@
 title: לימוד בחברותא: למה יהודים לומדים בזוגות
 description: מהי חברותא? יהודים לומדים תורה בזוגות כי שותפים מחדדים זה את זה. הסיבות מהתלמוד ואיך מוצאים שותף ללימוד.
 category: Prayer & Torah
-related: how-to-start-learning-torah, daily-torah-study, talmud, jewish-friendship, torah-classes-in-lamorinda
+related: how-to-start-learning-torah, tanya-on-friendship, how-to-start-learning-tanya, daily-torah-study, talmud, jewish-friendship, torah-classes-in-lamorinda
 local: רוצים שותף ללימוד? שאלו את הרב לבקובסקי 925-384-7242 או ראו /programs/adult-education.
 ---
 חברותא היא המסורת היהודית ללמוד תורה עם שותף: שניים קוראים טקסט בקול, שואלים עליו ומתווכחים עליו יחד. Chabad.org מסביר שרוב הפוסקים בימינו מסכימים שזו הדרך האידיאלית ללמוד, והתלמוד עצמו מצביע עליה. שותף מחדד אותך, שומר אותך על המסלול והופך את הלימוד לחברות.

@@ -2,7 +2,7 @@
 title: "Jewish Eating: Blessings, Mindful Eating and the Table as an Altar"
 description: The Jewish way to eat: blessings before and after food, raising the sparks, the table as an altar and sharing meals. Join Chabad of Lamorinda.
 category: Jewish ideas
-related: blessings, the-table-as-an-altar, what-is-holiness, blessings-after-food, hachnasat-orchim, kosher, shabbat-meals
+related: blessings, serving-g-d-in-everyday-life, itkafya-self-discipline, animal-soul-not-evil, the-table-as-an-altar, what-is-holiness, blessings-after-food, hachnasat-orchim, kosher, shabbat-meals
 local: Come share a Shabbat meal: sign up at /forms/shabbat-meal or call Chabad of Lamorinda at 925-384-7242.
 ---
 In Judaism, eating is more than fuel: when we eat with awareness, say a blessing and use the energy for something good, we elevate the food into holiness. Chassidic teaching says every piece of food contains a spark of G-dliness, and our meals are a chance to lift it.

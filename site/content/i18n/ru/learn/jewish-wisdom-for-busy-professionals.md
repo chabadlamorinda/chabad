@@ -2,7 +2,7 @@
 title: Еврейская мудрость для занятых профессионалов: время, сосредоточенность и недельная перезагрузка
 description: Баланс работы и жизни в еврейской традиции: Шаббат как перезагрузка, усилие и упование, работа как миссия. Для занятых жителей Ламоринды.
 category: Jewish ideas
-related: shabbat-for-lamorinda-commuters, young-professionals-in-lamorinda, job-burnout, making-every-day-count, shabbat-for-working-parents
+related: shabbat-for-lamorinda-commuters, tanya-for-busy-professionals, tanya-at-work, young-professionals-in-lamorinda, job-burnout, making-every-day-count, shabbat-for-working-parents
 local: Напряжённая неделя? Приходите на субботнюю трапезу или занятие. Позвоните раввину Лабковскому: 925-384-7242, или запишитесь на /forms/shabbat-meal.
 ---
 Еврейская традиция отвечает на вопрос о балансе между работой и жизнью Шаббатом: раз в неделю мы прекращаем работать, делаем шаг назад и вспоминаем, зачем вообще трудимся. Хабад добавляет, что работать нужно в полную силу и вместе с тем с упованием на Б-га и что сама работа может быть миссией, а не просто рутиной.

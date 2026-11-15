@@ -2,7 +2,7 @@
 title: Jewish Life for a Parent in Senior Living Near Lafayette, Moraga and Orinda
 description: איך להביא שבת, חגים, מזוזה ושירים מוכרים להורה יהודי בדיור מוגן או במוסד סיעודי ליד למורינדה, ואיך לדאוג גם לעצמכם.
 category: Lamorinda
-related: jewish-seniors-in-lamorinda, visiting-someone-in-a-nursing-home, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
+related: jewish-seniors-in-lamorinda, tanya-for-seniors, visiting-someone-in-a-nursing-home, chanukah-in-senior-living, when-a-parent-has-dementia, caring-for-aging-parents, caregiver-support, honoring-the-elderly
 local: רוצים ביקור להורה, או אוזן קשבת בשבילכם? התקשרו לרב לבקובסקי, 925-384-7242, או כתבו דרך /help/talk-to-the-rabbi.
 ---
 אפשר לשמור על חיים יהודיים להורה בדיור מוגן אם מביאים לחדרו חלקים קטנים ומוכרים של שבת וחגים: ברכה על נרות, גביע קידוש, חלה, מזוזה בדלת וביקור של מי ששר את הניגונים הישנים. למשפחות בלפיית, מוראגה ואורינדה, הרב והרבנית שמחים לשמוע מכם, ואין צורך להיות חבר בשום מקום קודם.
@@ -42,8 +42,7 @@ local: רוצים ביקור להורה, או אוזן קשבת בשבילכם? 
 
 מטפלים שוכחים לעיתים את עצמם. נוחו, בקשו עזרה ותנו לאחרים להביא ארוחה. מצוות שמירת הבריאות ומצוות כיבוד הורים הולכות יחד. ראו [תמיכה במטפלים](/learn/caregiver-support). אם תרצו לשוחח בדיסקרטיות עם הרב או הרבנית, [שוחחו עם הרב](/help/talk-to-the-rabbi). המדריך הוא מידע כללי ואינו ייעוץ רפואי או משפטי.
 
-## Common questions
-
+## שאלות נפוצות
 ### איך מביאים שבת להורה בדיור מוגן?
 הביאו גביע קידוש קטן, חלה ואפשרות הדלקה שהמוסד מתיר, ושירו שירים מוכרים. שאלו את הרב מה הדרך הטובה ביותר במצב ההורה.
 
@@ -62,8 +61,7 @@ local: רוצים ביקור להורה, או אוזן קשבת בשבילכם? 
 ### איך עוזרים להורה לשמור כשרות במוסד?
 שוחחו עם הצוות על האפשרויות. הרב ייעץ מה הכי מתאים במקרה של ההורה.
 
-## Take the next step
-
+## הצעד הבא
 - קראו הלאה [זקנים יהודים בלמורינדה](/learn/jewish-seniors-in-lamorinda), ואז [כשהורה חולה בדמנציה](/learn/when-a-parent-has-dementia).
 - בקשו ביקור: התקשרו 925-384-7242.
 - קחו רגע לעצמכם: [תמיכה במטפלים](/learn/caregiver-support).

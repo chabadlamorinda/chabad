@@ -2,7 +2,7 @@
 title: Старость со смыслом: еврейский взгляд на зрелый возраст
 description: Чему учит иудаизм о старении: возраст как мудрость, жизнь без «ухода на покой» от смысла и способы продолжать учиться в Лафайетте, Мораге и Оринде.
 category: Jewish ideas
-related: retirement-jewish-view, honoring-the-elderly, jewish-seniors-in-lamorinda, starting-jewish-practice-later-in-life, jewish-life-when-homebound
+related: retirement-jewish-view, tanya-for-seniors, honoring-the-elderly, jewish-seniors-in-lamorinda, starting-jewish-practice-later-in-life, jewish-life-when-homebound
 local: Приходите на занятие для взрослых, в любом возрасте и с любым опытом. Позвоните раввину Лабковскому: 925-384-7242, или откройте /programs/adult-education.
 ---
 В еврейской традиции старость — это приобретение, а не потеря: Тора использует слово «старый» (закен, זָקֵן) как синоним слова «мудрый», а Любавичский Ребе учил, что каждый прибавленный год — знак того, что миссия человека ещё не завершена. Учение Хабада не делит жизнь на время работы и время отдыха; оно просит каждого продолжать вносить вклад, учиться и расти в любом возрасте.

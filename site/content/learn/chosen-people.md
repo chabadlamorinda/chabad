@@ -2,7 +2,7 @@
 title: What Does "the Chosen People" Mean in Judaism?
 description: What "the Chosen People" means in Judaism: not privilege but a mission and responsibility, a "kingdom of priests" bringing light to the world.
 category: Jewish ideas
-related: why-be-jewish, is-judaism-a-religion-or-a-nation, noahide-laws, who-is-a-jew, israel-and-the-jewish-people, ahavat-yisrael
+related: why-be-jewish, tanya-chapter-32-love-every-jew, part-of-g-d-above, is-judaism-a-religion-or-a-nation, noahide-laws, who-is-a-jew, israel-and-the-jewish-people, ahavat-yisrael
 local: Take one step into your own Jewish mission. Call Rabbi Labkowski at 925-384-7242 or write via /help/talk-to-the-rabbi.
 ---
 In Judaism, "the Chosen People" means the Jewish people were chosen for a task, not for special privilege: to bring G-d's light into the world through Torah and mitzvot. Chabad.org teaches that being chosen is a responsibility, and it asks more of us, not less.

@@ -2,7 +2,7 @@
 title: להזדקן עם משמעות: מבט יהודי על הגיל השלישי
 description: מה היהדות מלמדת על הזדקנות: זקנה כחוכמה, חיים בלי "פרישה" ממשמעות, ודרכים להמשיך ללמוד בלאפייט, מוראגה ואורינדה.
 category: Jewish ideas
-related: retirement-jewish-view, honoring-the-elderly, jewish-seniors-in-lamorinda, starting-jewish-practice-later-in-life, jewish-life-when-homebound
+related: retirement-jewish-view, tanya-for-seniors, honoring-the-elderly, jewish-seniors-in-lamorinda, starting-jewish-practice-later-in-life, jewish-life-when-homebound
 local: בואו לשיעור למבוגרים, בכל גיל ובכל רקע. התקשרו לרב לבקובסקי 925-384-7242 או ראו /programs/adult-education.
 ---
 במסורת היהודית, הזדקנות היא רווח ולא הפסד: התורה משתמשת במילה "זקן" כמילה נרדפת ל"חכם", והרבי מליובאוויטש לימד שכל שנה נוספת היא סימן שהשליחות של האדם עוד לא הסתיימה. תורת חב"ד אינה מחלקת את החיים לתקופת עבודה ולתקופת מנוחה, אלא מבקשת מכל אחד להמשיך לתרום, ללמוד ולצמוח בכל גיל.

@@ -2,7 +2,7 @@
 title: לתת צדקה כשהכסף דל: מתנות קטנות, זמן וכבוד
 description: כמה צדקה לתת בהכנסה קטנה? תורת היהדות על צרכים בסיסיים קודם, נתינה חלקית, נתינת זמן וטוב לב, ושאלה לרב.
 category: Jewish ideas
-related: money-worries, the-poor-mans-offering, tzedakah, maaser, giving-anonymously, donor-advised-funds-and-tzedakah
+related: money-worries, tanya-on-money, the-poor-mans-offering, tzedakah, maaser, giving-anonymously, donor-advised-funds-and-tzedakah
 local: מתקשים, או לא בטוחים מה אפשר לתת? שוחחו עם הרב לבקובסקי, 925-384-7242. כולם מוזמנים.
 ---
 כשהכסף דל, ההלכה אינה דורשת לוותר על צרכים בסיסיים כדי לתת מעשר (העשירית מההכנסה). Chabad.org מלמד שמזון, לבוש ומחסה קודמים, ושגם מי שתלוי בצדקה עדיין לוקח חלק בנתינה, בזמן, בטוב לב ובכל מתנה קטנה אפשרית.

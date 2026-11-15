@@ -2,7 +2,7 @@
 title: כשבני זוג רבים: חוכמה יהודית לנישואין של שלום
 description: כל זוג חלוק לפעמים. חוכמת התורה על ויכוח בכבוד, הרגעת מריבה, התנצלות, ומתי לפנות לרב, לרבנית או ליועץ.
 category: Jewish home
-related: shalom-bayit, making-time-for-your-marriage, forgiveness-and-making-peace, in-laws, jewish-wedding
+related: shalom-bayit, tanya-and-marriage, tanya-on-anger, making-time-for-your-marriage, forgiveness-and-making-peace, in-laws, jewish-wedding
 local: זוגות בלאפייט, מוראגה, אורינדה והאיסט ביי יכולים לשוחח בפרטיות עם הרב ישראל או הרבנית ציפורה לבקובסקי: 925-384-7242.
 ---
 בכל נישואין יש מחלוקות. היהדות לא מצפה מזוג שלעולם לא יתווכח; היא מלמדת איך לחלוק באהבה, ואיך לחזור לשלום. חז״ל אומרים שכדי להשכין שלום בין איש לאשתו, ה׳ עצמו הסכים ששמו הקדוש יימחק. עד כדי כך יקר [שלום בית](/learn/shalom-bayit), השלום בבית.

@@ -2,7 +2,7 @@
 title: Душа в иудаизме: что такое нешама?
 description: Чему иудаизм учит о душе: пять уровней души, Б-жественная и животная души и цель пути души в этом мире.
 category: Jewish ideas
-related: tanya, why-jewish-burial-matters, chanukah-and-the-soul, resurrection-of-the-dead, self-esteem-jewish-view, yetzer-hara, dreams-jewish-view, angels, purpose-of-life, kabbalah, afterlife, chassidus
+related: tanya, tanya-and-grief, three-garments-of-the-soul, part-of-g-d-above, the-two-souls-explained, tanya-chapter-one-explained, why-jewish-burial-matters, chanukah-and-the-soul, resurrection-of-the-dead, self-esteem-jewish-view, yetzer-hara, dreams-jewish-view, angels, purpose-of-life, kabbalah, afterlife, chassidus
 local: Хотите узнать больше о душе? Приходите на занятие через chabadoflamorinda.com/programs/adult-education или звоните раввину Лабковскому: 925-384-7242.
 ---
 Иудаизм учит, что у каждого человека есть душа, духовная жизненная сила, которая дает нам сознание, чувства и цель. Еврейская душа, называемая *нешама*, описывается как «часть Б-га свыше», вечная и чистая, пришедшая в этот мир с миссией.

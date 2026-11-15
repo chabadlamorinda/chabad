@@ -2,7 +2,7 @@
 title: Learning With a Partner (Chavruta): Why Jews Study in Pairs
 description: What is chavruta? Jews study Torah in pairs because partners sharpen each other. Learn the Talmud's reasons and how to find a study partner.
 category: Prayer & Torah
-related: how-to-start-learning-torah, daily-torah-study, talmud, jewish-friendship, torah-classes-in-lamorinda
+related: how-to-start-learning-torah, tanya-on-friendship, how-to-start-learning-tanya, daily-torah-study, talmud, jewish-friendship, torah-classes-in-lamorinda
 local: Want a study partner? Ask Rabbi Labkowski at 925-384-7242 or see /programs/adult-education.
 ---
 Chavruta (חַבְרוּתָא) is the Jewish tradition of studying Torah with a partner: two people read a text aloud, question it and debate it together. Chabad.org explains that most modern authorities agree this is the ideal way to learn, and the Talmud itself points to it. A partner makes you sharper, keeps you on track and turns learning into friendship.

@@ -2,7 +2,7 @@
 title: The Beinoni: The Tanya's Hero Is Someone Like You
 description: What is a beinoni in the Tanya? The "intermediate person" who still feels the pull of temptation but never acts on it, a level open to everyone.
 category: Jewish ideas
-related: tanya, yetzer-hara, self-esteem-jewish-view, free-will, teshuvah
+related: tanya, tanya-on-self-worth, why-do-i-still-struggle, tanya-unwanted-thoughts, mind-over-heart-tanya, tanya-chapter-one-explained, yetzer-hara, self-esteem-jewish-view, free-will, teshuvah
 local: Want to learn the Tanya with someone? Call Rabbi Labkowski at 925-384-7242, or see /programs/adult-education.
 ---
 The beinoni (בֵּינוֹנִי) is the "intermediate person" in the Tanya, the central book of Chabad Chassidic thought. He is not a perfect tzaddik, and not a rasha who gives in to wrongdoing. The beinoni still feels the pull of the wrong desire, but never lets it into his thought, speech or action.

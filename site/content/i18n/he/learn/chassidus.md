@@ -2,7 +2,7 @@
 title: מה זו חסידות? תורת החסידות ותנועת החסידות
 description: מה זו חסידות, איך הבעל שם טוב ייסד את תנועת החסידות, רעיונות היסוד שלה על שמחה וקרבת ה׳, והמקום של חב״ד בתוכה.
 category: Jewish ideas
-related: chabad, baal-shem-tov-tzedakah-stories, jewish-view-of-music, chanukah-and-the-soul, the-rebbe-on-chanukah, lchaim-and-farbrengen, tanya, kabbalah, the-rebbe
+related: chabad, tanya-glossary-for-beginners, the-alter-rebbe, baal-shem-tov-tzedakah-stories, jewish-view-of-music, chanukah-and-the-soul, the-rebbe-on-chanukah, lchaim-and-farbrengen, tanya, kabbalah, the-rebbe
 local: רוצים לטעום מחוכמת החסידות? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לכם למצוא דרך ללמוד שמתאימה לכם.
 ---
 חסידות היא תנועה ומכלול של תורות שחושפות את הצד הפנימי והנשמתי של היהדות. היא נוסדה על ידי הבעל שם טוב במאה ה-18, ומלמדת שה׳ נמצא בכל מקום ושכל יהודי יכול לעבוד אותו בשמחה, באהבה ובכנות.

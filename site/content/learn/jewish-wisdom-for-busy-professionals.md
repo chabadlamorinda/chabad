@@ -2,7 +2,7 @@
 title: Jewish Wisdom for Busy Professionals: Time, Focus and a Weekly Reset
 description: Work-life balance in Jewish tradition: Shabbat as a weekly reset, trust and effort, work as a mission and Friday preparation for busy professionals.
 category: Jewish ideas
-related: shabbat-for-lamorinda-commuters, young-professionals-in-lamorinda, job-burnout, making-every-day-count, shabbat-for-working-parents
+related: shabbat-for-lamorinda-commuters, tanya-for-busy-professionals, tanya-at-work, young-professionals-in-lamorinda, job-burnout, making-every-day-count, shabbat-for-working-parents
 local: Busy week? Join a Shabbat meal or class. Call Rabbi Labkowski at 925-384-7242 or sign up at /forms/shabbat-meal.
 ---
 Jewish tradition answers the question of work-life balance with Shabbat: one day each week when we stop working, step back and remember why we work in the first place. Chabad teaching adds that we should do our work with full effort and also with trust in G-d, and that work itself can be a mission, not just a grind.

@@ -2,7 +2,7 @@
 title: Бейноний: герой Тании такой же человек, как вы
 description: Кто такой бейноний в Тании? «Средний человек», который ещё ощущает притяжение соблазна, но не действует по нему, ступень, доступная каждому.
 category: Jewish ideas
-related: tanya, yetzer-hara, self-esteem-jewish-view, free-will, teshuvah
+related: tanya, tanya-on-self-worth, why-do-i-still-struggle, tanya-unwanted-thoughts, mind-over-heart-tanya, tanya-chapter-one-explained, yetzer-hara, self-esteem-jewish-view, free-will, teshuvah
 local: Хотите изучать Танию с кем-то? Позвоните раввину Лабковскому 925-384-7242 или см. /programs/adult-education.
 ---
 Бейноний (בֵּינוֹנִי) это «средний человек» в Тании, главной книге хасидизма Хабад. Он не совершенный цадик и не раша, поддающийся злу. Бейноний всё ещё ощущает притяжение дурного желания, но никогда не пускает его в свои мысли, речь или поступки.

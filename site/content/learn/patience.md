@@ -2,7 +2,7 @@
 title: Patience: Jewish Wisdom for Waiting, Raising Kids and Living With Others
 description: What Judaism teaches about patience: with ourselves, with others and with G-d, and practical ways to grow it in daily life.
 category: Jewish ideas
-related: anger-jewish-view, bitachon, humility, jewish-parenting
+related: anger-jewish-view, tanya-for-parents, tanya-on-anger, mind-over-heart-tanya, bitachon, humility, jewish-parenting
 local: Want to talk something through? Rabbi Yisroel and Rebbetzin Tzipora Labkowski are here for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Traffic on Highway 24, a toddler who will not put on shoes, a prayer that seems unanswered. Patience is tested every day. Judaism sees it not as a personality trait some people are born with, but as a quality anyone can grow, and one of the keys to a peaceful life.

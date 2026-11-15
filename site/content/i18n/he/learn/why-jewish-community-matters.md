@@ -2,7 +2,7 @@
 title: אל תפרוש מן הציבור: למה קהילה יהודית חשובה
 description: למה קהילה יהודית חשובה? תורת הלל, המניין, ותשובות ל"אני לא דתי" ו"אני לא מכיר אף אחד". דרכי כניסה, בלי חברות.
 category: Jewish ideas
-related: ahavat-yisrael, minyan, getting-involved-in-jewish-lamorinda, feeling-lonely, shabbat-for-beginners
+related: ahavat-yisrael, tanya-chapter-32-love-every-jew, minyan, getting-involved-in-jewish-lamorinda, feeling-lonely, shabbat-for-beginners
 local: עשו צעד קטן אחד: הצטרפו אלינו לשבת או לשיעור. התקשרו לרב לבקובסקי, 925-384-7242, או ראו /events. בלי חברות.
 ---
 קהילה יהודית חשובה כי היהדות נועדה מתחילתה להיחיה יחד. הלל לימד "אל תפרוש מן הציבור" (פרקי אבות ב, ד), והחיים היהודיים, מתפילה ועד שמחה ואבל, בנויים על אנשים שמגיעים זה לזה. בין אם אתם גרים בלפאייט, במוראגה או באורינדה, אתם שייכים.
