@@ -32,7 +32,7 @@ Asarah B'Tevet is the only fast day that can fall on a Friday. The tradition exp
 
 ## A day of Kaddish for Holocaust victims
 
-Jewish sources notes that in recent times the Tenth of Tevet has become the custom for saying Kaddish for Holocaust victims, many of whom have no known date of death. Families who do not know the date a loved one was murdered can light a yahrzeit candle and say Kaddish on this day. Read more in [Holocaust remembrance](/learn/holocaust-remembrance) and [Kaddish](/learn/kaddish), and speak to the Rabbi about how to remember.
+The Jewish tradition notes that in recent times the Tenth of Tevet has become the custom for saying Kaddish for Holocaust victims, many of whom have no known date of death. Families who do not know the date a loved one was murdered can light a yahrzeit candle and say Kaddish on this day. Read more in [Holocaust remembrance](/learn/holocaust-remembrance) and [Kaddish](/learn/kaddish), and speak to the Rabbi about how to remember.
 
 ## The Rebbe's message
 

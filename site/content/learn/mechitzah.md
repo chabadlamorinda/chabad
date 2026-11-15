@@ -23,7 +23,7 @@ The Rebbe, Rabbi Menachem M. Schneerson, answered a letter asking about this in 
 - **Prayer is union.** Prayer is not only asking G-d for things. It is a moment when a person connects with G-d. Our Sages tell us to "know before Whom you stand," and in Chassidic thought "knowing" means attachment. That bond is deepest when nothing, even a good and holy thing, stands in between.
 - **So the partition must truly separate.** A low barrier that only marks a boundary would not achieve this. The mechitzah is meant to give everyone full focus.
 
-Jewish tradition also publishes a first-person essay by a woman who appreciates praying in the women's section. She writes about the focus it gives her.
+The tradition also publishes a first-person essay by a woman who appreciates praying in the women's section. She writes about the focus it gives her.
 
 ## What it feels like to a visitor
 
@@ -36,7 +36,7 @@ See also [Jewish Women](/learn/jewish-women) for women's place in Jewish life.
 ## Common questions
 
 ### Why do men and women sit separately in synagogue?
-In a traditional synagogue, men and women sit apart so that attention stays on prayer. Jewish tradition says this follows the Temple, where large crowds had separate areas.
+In a traditional synagogue, men and women sit apart so that attention stays on prayer. Traditional teaching says this follows the Temple, where large crowds had separate areas.
 
 ### What is a mechitzah?
 A mechitzah is the partition between the men's and women's sections. It can be wood, glass, a curtain or plants, but it must be opaque enough that faces on the other side cannot be made out.

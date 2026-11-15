@@ -38,7 +38,7 @@ Use kosher-certified ingredients, and keep dairy out of the dough so that the ch
 
 **Three strands (the easy one).** Divide a piece of dough into three equal parts and roll each into a strand about 12 inches long. Pinch the tops together, then braid like a ponytail: right over the middle, left over the middle, until the end. Pinch and tuck the ends under.
 
-**Six strands.** Roll six strands, join them at the top, and arrange two on the left, two in the middle and two on the right. Jewish tradition describes it like this: cross the outer strands under the inner ones in an alternating pattern, repeating "down and up and under," until you reach the end, then tuck them in. It looks hard, but the rhythm becomes easy after one loaf.
+**Six strands.** Roll six strands, join them at the top, and arrange two on the left, two in the middle and two on the right. Here is one way to do it: cross the outer strands under the inner ones in an alternating pattern, repeating "down and up and under," until you reach the end, then tuck them in. It looks hard, but the rhythm becomes easy after one loaf.
 
 **Round challah.** On Rosh Hashanah the challah is round, a custom many explain as the cycle of the year, and some do not braid it at all. See [Rosh Hashanah for beginners](/learn/rosh-hashanah-for-beginners).
 

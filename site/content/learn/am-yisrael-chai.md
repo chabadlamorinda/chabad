@@ -15,7 +15,7 @@ The word *chai* is also the number 18, the value of its two Hebrew letters. That
 
 ## A living people and a living Torah
 
-The Rebbe taught that the Jewish people lives because the Torah is a "living Torah," from the living G-d. Its commandments are not museum pieces: they are meant to be lived, in every generation. Jewish teaching shares this teaching in an article written by a rabbi in France, who describes how preparing for Shabbat, buying kosher food, sending children to Jewish schools and attending synagogue are all ways Jewish life continues. For more, read [Jewish pride](/learn/jewish-pride).
+The Rebbe taught that the Jewish people lives because the Torah is a "living Torah," from the living G-d. Its commandments are not museum pieces: they are meant to be lived, in every generation. This teaching appears in an article written by a rabbi in France, who describes how preparing for Shabbat, buying kosher food, sending children to Jewish schools and attending synagogue are all ways Jewish life continues. For more, read [Jewish pride](/learn/jewish-pride).
 
 ## How Jewish survival looks through history
 

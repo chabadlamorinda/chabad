@@ -26,7 +26,7 @@ If you want to read more about why suffering exists, see [why bad things happen]
 Prayer does not have to be polite. You can say what is in your heart in any language, in your own words, see [talking to G-d in your own words](/learn/talking-to-g-d-in-your-own-words).
 
 1. **Say it out loud or write it down.** "I am angry. I do not understand. This hurts."
-2. **Say it to G-d, not only about G-d.** Chassidic teaching writes that a person cries out passionately only to someone with whom they are truly and intimately engaged.
+2. **Say it to G-d, not only about G-d.** Chassidic teaching holds that a person cries out passionately only to someone with whom they are truly and intimately engaged.
 3. **Ask a different question when you are ready.** Chassidic philosophy suggests moving gradually from "Why did this happen?" to "What can I do now?" since the "why" may never be fully answered in this life.
 4. **Do one small mitzvah.** Light Shabbat candles, give charity, or say a Psalm. It does not have to feel inspiring.
 
@@ -53,7 +53,7 @@ Yes. Abraham pleaded for Sodom, and Moses asked why the Israelites suffered more
 Say exactly what you feel, in your own words. You can also say Psalms (see [Tehillim](/learn/tehillim)). There is no wrong way.
 
 ### Why did G-d let this happen?
-Chassidic teaching says the Rebbe taught that no one can give a definite reason for a tragedy and that much will be revealed later. If this is your question after a loss, please talk privately with the Rabbi.
+The Rebbe taught that no one can give a definite reason for a tragedy and that much will be revealed later. If this is your question after a loss, please talk privately with the Rabbi.
 
 ### Can I still come to synagogue and the holidays if I am angry?
 Yes, always. You are welcome as you are. See [grief during the holidays](/learn/grief-during-the-holidays).

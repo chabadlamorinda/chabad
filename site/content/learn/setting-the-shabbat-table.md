@@ -11,7 +11,7 @@ For families in Lafayette, Moraga and Orinda, setting the table early on Friday 
 
 ## The table, step by step
 
-1. **A festive tablecloth.** chassidic teaching suggests a white tablecloth. Use your best one. Set the table with the finest dishes you have; the tradition calls this honoring Shabbat as a queen.
+1. **A festive tablecloth.** Chassidic teaching suggests a white tablecloth. Use your best one. Set the table with the finest dishes you have; the tradition calls this honoring Shabbat as a queen.
 2. **The candles.** Arrange the candlesticks on the table before Shabbat, with the candles in place. It is also suggested to place a challah or a prayer book beside them, because of the laws of muktzeh (objects that may not be handled on Shabbat); ask the Rabbi how this applies to your table. See [Shabbat candles](/learn/shabbat-candles) and [muktzeh](/learn/muktzeh).
 3. **Two whole challahs.** Place two uncut loaves on a challah board or tray. Jewish tradition advises buying three loaves so that two uncut ones are on the table for each meal.
 4. **A cover for the challah.** Drape a cloth or challah cover over the loaves.

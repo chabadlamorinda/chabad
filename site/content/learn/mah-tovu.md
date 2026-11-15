@@ -17,7 +17,7 @@ So Mah Tovu is praise for a people who respect each other's privacy. Our traditi
 
 The Sages teach that the verse refers to synagogues and study halls, which is why it is said on entering one. Many siddurim, including the Chabad siddur, place it near the start of the morning service, after [Modeh Ani](/learn/modeh-ani). Ask the Rabbi if you want to know exactly where it falls in the siddur you are holding.
 
-There is a second reason that Chabad teaching stresses. Before praying, many siddurim have the person say that he or she accepts the commandment to love a fellow Jew as oneself. The idea is that prayer is communal, and we come before G-d as part of a people. Jewish tradition points out that the feeling stirred by Mah Tovu is itself that acceptance: we tend to notice faults in others, but here we choose to see the good, picturing a fellow Jew as he looks in synagogue and imagining him at home in the same light. Read more in [Ahavat Yisrael](/learn/ahavat-yisrael).
+There is a second reason that Chabad teaching stresses. Before praying, many siddurim have the person say that he or she accepts the commandment to love a fellow Jew as oneself. The idea is that prayer is communal, and we come before G-d as part of a people. The tradition points out that the feeling stirred by Mah Tovu is itself that acceptance: we tend to notice faults in others, but here we choose to see the good, picturing a fellow Jew as he looks in synagogue and imagining him at home in the same light. Read more in [Ahavat Yisrael](/learn/ahavat-yisrael).
 
 ## A minute-long way to say it
 
@@ -45,7 +45,7 @@ Mah Tovu means "How goodly" (or "how beautiful"), and the full verse says "How g
 Balaam, a non-Jewish prophet, said it. He was hired to curse the Jewish people but blessed them instead after seeing how their tents were arranged.
 
 ### Why were the tents arranged that way?
-Jewish tradition explains, following Rashi, that the tent entrances did not face each other, so people could not look into one another's homes. It is praise for modesty and privacy.
+Traditional teaching explains, following Rashi, that the tent entrances did not face each other, so people could not look into one another's homes. It is praise for modesty and privacy.
 
 ### When do Jews say Mah Tovu?
 Many say it when entering a synagogue and near the start of the morning prayers. Ask the Rabbi about the custom of your own family or community.

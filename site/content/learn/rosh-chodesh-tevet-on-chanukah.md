@@ -38,7 +38,7 @@ Our guide on [Al HaNissim and Hallel](/learn/al-hanissim-and-hallel) explains wh
 
 ## Why did the Greeks target Rosh Chodesh?
 
-According to a Chassidic teaching, the Greeks decreed against three mitzvot: Shabbat, sanctifying the new month (Rosh Chodesh) and circumcision (brit milah). The eight days of Chanukah always include a Shabbat and Rosh Chodesh Tevet, and the number eight recalls brit milah, which takes place on the eighth day of a baby's life (chassidic teaching lists brit milah among the reasons given for Chanukah's eight days). So the festival itself holds all three mitzvot the Greeks tried to cancel.
+According to a Chassidic teaching, the Greeks decreed against three mitzvot: Shabbat, sanctifying the new month (Rosh Chodesh) and circumcision (brit milah). The eight days of Chanukah always include a Shabbat and Rosh Chodesh Tevet, and the number eight recalls brit milah, which takes place on the eighth day of a baby's life (Chassidic teaching lists brit milah among the reasons given for Chanukah's eight days). So the festival itself holds all three mitzvot the Greeks tried to cancel.
 
 Another teaching points out why the three were chosen. They all go beyond nature: Shabbat remembers creation, circumcision corrects the body beyond the way nature made it, and the new month is set by the Sages. The Greeks believed everything depends on nature alone.
 

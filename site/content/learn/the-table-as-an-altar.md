@@ -17,7 +17,7 @@ In other words, an ordinary dinner table can have a sacred role. What we do ther
 
 The Torah commands that salt be offered on all sacrifices (Leviticus 2:13). If the table is like an altar, the bread eaten on it is like an offering, so it is eaten with salt. The custom is to dip bread, including challah, in salt, even if the bread is already tasty.
 
-In addition, salt, which does not spoil, represents the lasting covenant between G-d and the Jewish people, and that salt is customarily kept on the table even if no one uses it. It gives three reasons for this custom:
+Salt, which does not spoil, represents the lasting covenant between G-d and the Jewish people, and it is customarily kept on the table even if no one uses it. There are three reasons for this custom:
 
 1. During the silent wait between washing hands and the blessing over bread, salt's covenant protects us.
 2. Salt reminds us to nourish the soul with words of Torah at the table.

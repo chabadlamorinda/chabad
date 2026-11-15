@@ -11,11 +11,11 @@ Most people stop the Chanukah story at the rededication. Here is the rest, and t
 
 ## Twenty-five more years of war
 
-Chanukah was not the end of the fighting. The Greek rulers sent more armies. According to Jewish tradition, the battles went on for some 25 years after the rededication, and most of them came after Antiochus had died. Judah the Maccabee, and then his brothers, fought on. Shimon, the last surviving son of Matityahu, finally cleared the remaining Hellenist strongholds, and Jewish independence was achieved. (For the king, see [Who Was Antiochus?](/learn/who-was-antiochus).)
+Chanukah was not the end of the fighting. The Greek rulers sent more armies. According to the historical sources, the battles went on for some 25 years after the rededication, and most of them came after Antiochus had died. Judah the Maccabee, and then his brothers, fought on. Shimon, the last surviving son of Matityahu, finally cleared the remaining Hellenist strongholds, and Jewish independence was achieved. (For the king, see [Who Was Antiochus?](/learn/who-was-antiochus).)
 
 ## The Hasmonean dynasty
 
-Shimon became leader of the Jewish people and founded a dynasty that Jewish teaching counts as lasting 103 years. The early rulers were righteous and did not take the title of king. Let us look at a few of them.
+Shimon became leader of the Jewish people and founded a dynasty that is counted as lasting 103 years. The early rulers were righteous and did not take the title of king. Let us look at a few of them.
 
 - **Yochanan Hyrcanus** was generally a righteous leader, who strengthened tithing. But he also forced the people of Edom to convert, and this is criticized, since Jewish law does not permit forced conversion.
 - **Aristobulus**, his son, was the first of the family to call himself king.
@@ -24,7 +24,7 @@ Shimon became leader of the Jewish people and founded a dynasty that Jewish teac
 
 ## The mistake of the crown
 
-Why do we say the story ended badly? The Torah says the kingship belongs to descendants of David, of the tribe of Judah. The Hasmoneans were priests of the tribe of Levi. The tradition writes that taking the crown was a grievous mistake, and many Jewish authorities, among them the Ramban, saw the later fall of the family as the result. (Some sources defend the Hasmoneans, so if you would like to explore this, ask the Rabbi.)
+Why do we say the story ended badly? The Torah says the kingship belongs to descendants of David, of the tribe of Judah. The Hasmoneans were priests of the tribe of Levi. Jewish tradition holds that taking the crown was a grievous mistake, and many Jewish authorities, among them the Ramban, saw the later fall of the family as the result. (Some sources defend the Hasmoneans, so if you would like to explore this, ask the Rabbi.)
 
 ## Herod and Rome
 

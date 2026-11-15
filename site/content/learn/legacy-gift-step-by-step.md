@@ -17,7 +17,7 @@ Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 9
 
 ## Step 3. Choose the way to give
 
-Standard guidance describes three groups of gifts:
+The usual advice describes three groups of gifts:
 
 - **A will or trust:** a set amount, a specific asset or a percentage. See [Leaving Chabad in Your Will](/learn/leaving-chabad-in-your-will) and [Naming Chabad in Your Living Trust](/learn/naming-chabad-in-your-living-trust).
 - **A retirement account:** a beneficiary form. See [Leaving Your IRA or 401(k) to a Jewish Cause](/learn/leaving-your-ira-to-a-jewish-cause).
@@ -27,7 +27,7 @@ Chabad of Lamorinda also accepts grants from donor-advised funds and gifts of st
 
 ## Step 4. Meet your attorney and your advisor
 
-Standard guidance advises working with an estate attorney experienced in estate planning and discussing your wishes with your financial advisor. Give them the details: the name to use is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. Our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys) gives them wording to start from. This guide is not legal or tax advice; ask your attorney or tax advisor about wording and taxes.
+Common practice advises working with an estate attorney experienced in estate planning and discussing your wishes with your financial advisor. Give them the details: the name to use is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. Our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys) gives them wording to start from. This guide is not legal or tax advice; ask your attorney or tax advisor about wording and taxes.
 
 If you would like your plans to follow Jewish law for your heirs, ask the Rabbi too. See [A Jewish Will](/learn/halachic-will).
 
@@ -48,7 +48,7 @@ Decide what matters to you, talk with the Rabbi, choose a way to give (will, tru
 It is a gift arranged now that takes effect later, most often through a will, trust or beneficiary form.
 
 ### Do I need an attorney?
-For a will or trust, Standard guidance advises an experienced estate attorney. A beneficiary form often needs only the form from the account company, as Standard guidance notes.
+For a will or trust, the usual advice advises an experienced estate attorney. A beneficiary form often needs only the form from the account company, as common practice notes.
 
 ### Can I make a legacy gift to Chabad of Lamorinda?
 Yes. Chabad of Lamorinda accepts bequests, retirement account and life insurance gifts, donor-advised fund grants and gifts of stock.

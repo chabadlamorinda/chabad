@@ -39,7 +39,7 @@ Lamed-Vav means thirty-six: lamed is 30 and vav is 6 in the Hebrew alphabet.
 The Torah does not state it. It comes from the Talmud (Sukkah 45b and Sanhedrin 97b), and later Jewish teachers expanded on it.
 
 ### Is the number 36 fixed?
-Not exactly. Other sources mention different numbers, and Chassidic teaching notes that the popular legend combines separate traditions. Ask the Rabbi for sources.
+Not exactly. Other sources mention different numbers, and Chassidic thought notes that the popular legend combines separate traditions. Ask the Rabbi for sources.
 
 ### Can I be a Lamed-Vavnik?
 Nobody knows who they are, and nobody should claim to be one. But the idea teaches that every person can do something good and hidden.

@@ -31,13 +31,13 @@ Jewish tradition cares about what we hand on, and about how we use what we have.
 ## Common questions
 
 ### How do I leave my IRA to a charity?
-Ask your IRA custodian for a beneficiary designation form, write in the charity's name and the percentage you choose, and return it. As Standard guidance notes, no new will is needed.
+Ask your IRA custodian for a beneficiary designation form, write in the charity's name and the percentage you choose, and return it. As the usual advice notes, no new will is needed.
 
 ### Can I name Chabad of Lamorinda as an IRA or 401(k) beneficiary?
 Yes. Chabad of Lamorinda accepts gifts from retirement accounts. Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, and give your plan company the details on the [legacy page](/legacy).
 
 ### Why do people name a charity on a retirement account?
-Standard guidance describes a retirement account as one of the most tax-efficient ways to fund a gift to a nonprofit. Ask your tax advisor how this applies to you.
+Common practice describes a retirement account as one of the most tax-efficient ways to fund a gift to a nonprofit. Ask your tax advisor how this applies to you.
 
 ### Can I name both my children and a charity?
 Yes. A beneficiary form usually lets you give each person or organization a percentage. Ask your plan company or advisor.

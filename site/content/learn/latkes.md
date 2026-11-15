@@ -43,7 +43,7 @@ This recipe is retold from a basic classic latke recipe. It is pareve (neither m
 
 ## Variations
 
-Jewish tradition suggests replacing the potatoes with 5 medium zucchini or 5 medium carrots for vegetable latkes. Some families add herbs or serve a mix of kinds so everyone can choose. There is also a dairy side to Chanukah: Jewish tradition notes the custom of eating dairy foods, based on the story of Judith, who used cheese to defeat the enemy general. So cheese dishes at your Chanukah table have a place too.
+The tradition suggests replacing the potatoes with 5 medium zucchini or 5 medium carrots for vegetable latkes. Some families add herbs or serve a mix of kinds so everyone can choose. There is also a dairy side to Chanukah: Traditional teaching notes the custom of eating dairy foods, based on the story of Judith, who used cheese to defeat the enemy general. So cheese dishes at your Chanukah table have a place too.
 
 ## Kosher notes
 
@@ -65,10 +65,10 @@ Squeeze as much liquid as possible out of the grated potatoes and onion, and fry
 A latke made with potatoes, onion, eggs, flour, salt, pepper and oil is pareve if the ingredients are kosher certified. Toppings like sour cream make them dairy.
 
 ### Can I make latkes with other vegetables?
-Yes. Jewish tradition suggests using 5 medium zucchini or 5 medium carrots in place of the potatoes.
+Yes. The tradition suggests using 5 medium zucchini or 5 medium carrots in place of the potatoes.
 
 ### Why do some people eat dairy on Chanukah?
-Jewish tradition notes the custom, based on the story of Judith, who used cheese to entice and defeat the enemy general.
+Traditional teaching notes the custom, based on the story of Judith, who used cheese to entice and defeat the enemy general.
 
 ## Take the next step
 

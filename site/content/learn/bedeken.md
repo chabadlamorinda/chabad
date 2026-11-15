@@ -25,7 +25,7 @@ In Chabad custom, the band plays a solemn melody composed by Rabbi Schneur Zalma
 
 ## What does the veil mean?
 
-Jewish sources gives several meanings:
+The Jewish tradition gives several meanings:
 
 - **Inner beauty.** The groom shows that he is committed to the bride's inner self, not only to the outward beauty that fades.
 - **Modesty and dignity.** The veil expresses modesty and the dignity of a married woman.

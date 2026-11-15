@@ -9,7 +9,7 @@ For a business owner, maaser is a tenth of the profit that remains after busines
 
 ## Business profit
 
-Jewish law explains that maaser is taken from "the profits remaining once business expenses and taxes have been paid." The business expenses that come off first include:
+Halacha explains that maaser is taken from "the profits remaining once business expenses and taxes have been paid." The business expenses that come off first include:
 
 - employee salaries,
 - business taxes and insurance,
@@ -18,13 +18,13 @@ Jewish law explains that maaser is taken from "the profits remaining once busine
 
 Your personal living costs, such as your family's rent or food, are generally not deducted. That is the difference between a business expense and a personal one, and it is where questions most often come up. A mixed expense (a car used for both) is exactly the kind of case to bring to the Rabbi.
 
-If you are self-employed and do not yet know what you will owe in taxes, Jewish law says you can calculate once a year when taxes are final, or estimate the taxes and adjust later. Your tax advisor is the right person for the tax side. See also [Business Ethics in Jewish Law](/learn/business-ethics) and [Parnassah: Work and Livelihood](/learn/parnassah-work-and-livelihood).
+If you are self-employed and do not yet know what you will owe in taxes, the law says you can calculate once a year when taxes are final, or estimate the taxes and adjust later. Your tax advisor is the right person for the tax side. See also [Business Ethics in Jewish Law](/learn/business-ethics) and [Parnassah: Work and Livelihood](/learn/parnassah-work-and-livelihood).
 
 ## Investments and stock
 
 Jewish law says that when an investment goes up in value, maaser is not taken on the paper gain. It is taken when you sell and receive the profit. Then the profit, not the original amount you invested, is the income.
 
-Jewish law also gives the example of a home sale: maaser applies to the net profit after the cost of buying, renovating and maintaining, and the part of the gain that comes only from inflation may be estimated and left out. Property taxes are not deducted, while mortgage interest is. Since details matter, ask the Rabbi if you sold property.
+Halacha also gives the example of a home sale: maaser applies to the net profit after the cost of buying, renovating and maintaining, and the part of the gain that comes only from inflation may be estimated and left out. Property taxes are not deducted, while mortgage interest is. Since details matter, ask the Rabbi if you sold property.
 
 Loans are not income, so borrowed money does not carry maaser.
 
@@ -34,7 +34,7 @@ The sources we reviewed do not say how maaser applies to retirement accounts, su
 
 ## A one-time windfall
 
-Jewish law says maaser applies to all income, including gifts, inheritance and even money found with no identifiable owner, so a sudden windfall is generally included.
+The law says maaser applies to all income, including gifts, inheritance and even money found with no identifiable owner, so a sudden windfall is generally included.
 
 One exception: money given to you for a specific purpose, such as rent or tuition, is not counted, as explained in [How to Calculate Maaser](/learn/how-to-calculate-maaser).
 
@@ -47,10 +47,10 @@ Jewish law says the ideal is to separate maaser when income arrives. For a busin
 ## Common questions
 
 ### Do business owners give maaser on gross sales or profit?
-On profit. Jewish law says maaser is taken after business expenses and taxes. For your business details, ask the Rabbi.
+On profit. Halacha says maaser is taken after business expenses and taxes. For your business details, ask the Rabbi.
 
 ### Do I give maaser on stock that went up but I have not sold?
-Jewish law says maaser is not taken until you sell and receive the profit.
+The law says maaser is not taken until you sell and receive the profit.
 
 ### Does maaser apply to a retirement account?
 We did not find this settled in the sources we reviewed, so please ask the Rabbi and your tax advisor.

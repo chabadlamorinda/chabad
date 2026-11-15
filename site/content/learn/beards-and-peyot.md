@@ -47,7 +47,7 @@ If you see a bearded man in Lafayette, Moraga or Orinda, say hello. Most are hap
 ## Common questions
 
 ### Why do some Jewish men have beards?
-They follow the verse in Leviticus 19:27 about not destroying the edge of the beard, and many also hold the Kabbalistic idea that the beard connects us to G-d's mercy. Jewish sources explains both.
+They follow the verse in Leviticus 19:27 about not destroying the edge of the beard, and many also hold the Kabbalistic idea that the beard connects us to G-d's mercy. The Jewish tradition explains both.
 
 ### What are peyot and why do some Jewish men wear them?
 Peyot are the sidelocks near the ears. The Torah says not to round off the corners of the head, and the Talmud identifies these corners as the hair between the ears and temples. This applies to men.

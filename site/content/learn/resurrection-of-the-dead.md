@@ -25,7 +25,7 @@ Why would the body come back? Chassidic teaching explains: so that both can expe
 
 Jewish tradition teaches that the dead will be revived in the Era of Moshiach. That era is the same natural world, but without human corruption and evil, a time of continued growth. In that era the revived will live a perfect but still physical life, which will eventually end. Only the World to Come is fully beyond nature. Read [Moshiach](/learn/moshiach).
 
-Jewish thinkers have different views on the details. Maimonides taught that the World to Come is purely spiritual. Nachmanides taught that resurrection leads to an eternal life with souls enclothed in bodies, and chassidic teaching says Chassidic and Kabbalistic teaching agrees with him. Questions about this are very welcome. Ask the Rabbi.
+Jewish thinkers have different views on the details. Maimonides taught that the World to Come is purely spiritual. Nachmanides taught that resurrection leads to an eternal life with souls enclothed in bodies, and Chassidic and Kabbalistic teaching agrees with him. Questions about this are very welcome. Ask the Rabbi.
 
 ## Ezekiel and the dry bones
 

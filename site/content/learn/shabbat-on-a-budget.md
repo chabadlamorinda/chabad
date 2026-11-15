@@ -34,7 +34,7 @@ A chicken or a big pot of soup made on Friday can become Shabbat lunch and Sunda
 
 ## Invite guests, and let them bring something
 
-Hosting does not have to cost more. Start small, with one or two friendly people; chassidic teaching says a potluck is fine. Ask each guest to bring a dish, a dessert or a bottle of grape juice. Invite early in the week, and tell guests the few Shabbat basics, like phones put away, so everyone is comfortable. More tips are in [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Shabbat guest guide](/learn/shabbat-guest-guide).
+Hosting does not have to cost more. Start small, with one or two friendly people; Chassidic teaching says a potluck is fine. Ask each guest to bring a dish, a dessert or a bottle of grape juice. Invite early in the week, and tell guests the few Shabbat basics, like phones put away, so everyone is comfortable. More tips are in [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Shabbat guest guide](/learn/shabbat-guest-guide).
 
 ## Kosher food without overspending
 

@@ -1,6 +1,6 @@
 ---
 title: Giving in Memory: Tzedakah for a Yahrzeit and for the Soul of a Loved One
-description: How tzedakah in memory of a loved one elevates the soul: giving at a yahrzeit and Yizkor, a memorial fund, Kaddish and a plaque, as Jewish tradition explains.
+description: How tzedakah in memory of a loved one elevates the soul: giving at a yahrzeit and Yizkor, a memorial fund, Kaddish and a plaque, per Jewish tradition.
 category: Mourning & remembrance
 related: yahrzeit, learning-in-memory-of-a-loved-one, giving-in-someones-honor, yizkor, kaddish, leaving-a-jewish-legacy-gift
 local: To arrange Kaddish or a memorial for your loved one, call Rabbi Labkowski at 925-384-7242 or use the Kaddish form at /kaddish.

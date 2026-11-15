@@ -22,7 +22,7 @@ Because these views differ, we do not say that you "must" have a feast. We say t
 ## How to make the meal special
 
 1. **Light the menorah first.** The lights come at the right time, then the meal. See [how to light the menorah](/learn/chanukah-menorah) and the [menorah page](/menorah).
-2. **Sing.** chassidic teaching describes families singing after the lighting, from traditional hymns about the menorah and the miracles to lighter songs about the dreidel. See [Chanukah songs](/learn/chanukah-songs) and [Shabbat songs, zemirot](/learn/zemirot) for the idea of singing at the table.
+2. **Sing.** Chassidic teaching describes families singing after the lighting, from traditional hymns about the menorah and the miracles to lighter songs about the dreidel. See [Chanukah songs](/learn/chanukah-songs) and [Shabbat songs, zemirot](/learn/zemirot) for the idea of singing at the table.
 3. **Share a thought.** Tell the Chanukah story ([the Chanukah story](/learn/chanukah-story)), ask each person to share a miracle in their life, or bring one idea from [the lessons of Chanukah](/learn/lessons-of-chanukah).
 4. **Say the blessings.** Say the blessing before eating and Grace After Meals. Chanukah's Al HaNisim ("for the miracles") is added to the Grace, so ask the Rabbi or see [blessings after food](/learn/blessings-after-food) for how.
 5. **Give gelt and play.** The tradition lists gelt and dreidel among the holiday's traditions. See [gelt](/learn/chanukah-gelt) and [dreidel](/learn/dreidel).

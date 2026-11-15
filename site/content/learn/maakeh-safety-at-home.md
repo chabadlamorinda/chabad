@@ -52,11 +52,11 @@ Yes. Jewish tradition applies it to any hazard in the home that could cause seri
 
 ### Does maakeh apply when I buy a house?
 
-Yes. Jewish law explains that it applies when you take possession, even if the house was already built, and even before you move in.
+Yes. Halacha explains that it applies when you take possession, even if the house was already built, and even before you move in.
 
 ### What does Jewish law say about swimming pools?
 
-Jewish law teaches us to avoid and remove dangers. A fence, gate and supervision are in the spirit of maakeh. Ask the Rabbi.
+The law teaches us to avoid and remove dangers. A fence, gate and supervision are in the spirit of maakeh. Ask the Rabbi.
 
 ### Do I need a railing if I rent?
 

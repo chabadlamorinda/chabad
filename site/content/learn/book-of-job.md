@@ -42,13 +42,13 @@ The book is part of the [Tanach](/learn/tanach), and many verses from it appear 
 It is about a righteous man who loses his wealth, children and health, and about the question of Divine justice and human suffering. It teaches faith and humility when there are no easy answers.
 
 ### Who was Job in Jewish tradition?
-the tradition says the Talmud has several opinions on his time and identity. The Midrash calls him the most righteous of the non-Jewish nations of his time.
+The tradition says the Talmud has several opinions on his time and identity. The Midrash calls him the most righteous of the non-Jewish nations of his time.
 
 ### Why did Job suffer?
 The book does not give a simple reason. G-d answers from the whirlwind, pointing to the limits of human understanding, rather than explaining Job's suffering.
 
 ### Was Job a real person?
-Jewish sources reports that the Sages differed. Most place him in a particular period of history, while a minority view in the Midrash holds that the events never happened and show how strong his faith would have been. Ask the Rabbi if you want to study this question.
+The Jewish tradition reports that the Sages differed. Most place him in a particular period of history, while a minority view in the Midrash holds that the events never happened and show how strong his faith would have been. Ask the Rabbi if you want to study this question.
 
 ### What should I say to someone who is suffering?
 Job's story teaches us not to blame, and to sit in silence with the person until they speak. See [comforting mourners](/learn/comforting-mourners).

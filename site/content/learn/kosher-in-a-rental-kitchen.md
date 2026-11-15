@@ -17,11 +17,11 @@ According to Jewish law, a non-kosher microwave or oven may be used if the food 
 
 ## The stovetop
 
-Jewish law says that for a motel stovetop that you cannot kasher, you may still use it, keeping the outside of the pot and the burner dry. Ask the Rabbi if you plan a longer stay.
+Halacha says that for a motel stovetop that you cannot kasher, you may still use it, keeping the outside of the pot and the burner dry. Ask the Rabbi if you plan a longer stay.
 
 ## Counters, tables and the sink
 
-In a kosher kitchen, countertops are designated for meat or dairy, and if one surface must serve both, separate coverings are used. A table can serve both if you change tablecloths or placemats. For how to handle the counters of a rental, ask the Rabbi. For the sink, Jewish law says that with one sink, its interior is treated as non-kosher: do not put food or dishes directly in it, and use dishpans on slightly raised racks. See [kosher dishwasher and sink](/learn/kosher-dishwasher-and-sink).
+In a kosher kitchen, countertops are designated for meat or dairy, and if one surface must serve both, separate coverings are used. A table can serve both if you change tablecloths or placemats. For how to handle the counters of a rental, ask the Rabbi. For the sink, the law says that with one sink, its interior is treated as non-kosher: do not put food or dishes directly in it, and use dishpans on slightly raised racks. See [kosher dishwasher and sink](/learn/kosher-dishwasher-and-sink).
 
 ## Fruits, vegetables and breakfast
 

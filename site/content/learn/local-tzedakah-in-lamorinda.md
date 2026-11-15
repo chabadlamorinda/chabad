@@ -53,7 +53,7 @@ According to Maimonides, a poor relative comes first, then the poor of your own 
 It means that the needy people closest to you take priority over those far away. In Lafayette, Moraga and Orinda, that means the neighbors and families around you.
 
 ### How much tzedakah should I give?
-Jewish tradition describes giving a tenth of income as the proper amount, with a fifth for those who are able. Speak to the Rabbi about how to start.
+The tradition describes giving a tenth of income as the proper amount, with a fifth for those who are able. Speak to the Rabbi about how to start.
 
 ### What is maot chitim?
 Maot chitim (מעות חיטים), "money for wheat," is the custom of giving so that every Jewish family can celebrate Passover. See [maot chitim](/learn/maot-chitim).

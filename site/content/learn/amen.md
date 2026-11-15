@@ -56,10 +56,10 @@ Saying Amen means "I believe this is true" and joins you to the prayer. The Talm
 It is read as an acronym for El Melech Ne'eman, "G-d, faithful King." The Talmud teaches drawing out the Amen for as long as it takes to say those words.
 
 ### Do you say Amen to your own blessing?
-Amen is a response to what you hear from someone else. Whether to say it after your own blessing is a question for the Rabbi, since Jewish teaching does not address it.
+Amen is a response to what you hear from someone else. Whether to say it after your own blessing is a question for the Rabbi, since the sources we consulted do not address it.
 
 ### What is "Amen, yehei shmei rabbah"?
-It is the congregation's answer in the Kaddish: "Amen, may His great Name be blessed." the tradition notes that answering it with focus is connected with canceling harsh decrees.
+It is the congregation's answer in the Kaddish: "Amen, may His great Name be blessed." The tradition notes that answering it with focus is connected with canceling harsh decrees.
 
 ### Can children say Amen?
 Yes. Children can learn to answer Amen very young, and it is a lovely way to include them in blessings.

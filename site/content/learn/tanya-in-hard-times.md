@@ -15,7 +15,7 @@ Tanya's guidance is spiritual. It sits beside professional help, not in place of
 
 ## Hidden good: what Epistle 11 and Chapter 26 teach
 
-The [Tanya](/learn/tanya) was written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, founder of Chabad. Two places in it speak directly to hard times. We tell them in our own words, as they appear on Chabad.org.
+The [Tanya](/learn/tanya) was written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, founder of Chabad. Two places in it speak directly to hard times. We tell them in our own words.
 
 **Epistle 11 (Iggeret HaKodesh).** The Alter Rebbe writes that nothing evil comes down from Above. Everything is good, but sometimes its goodness is too lofty for us to see, and the good can be "clothed" in pain until it is revealed. This is the idea in [Tanya on worry and trust](/learn/tanya-on-worry-and-trust).
 
@@ -30,7 +30,7 @@ Here is what the same pages give us, in simple terms.
 - **Strength from joy.** Chapter 26 compares the inner struggle to wrestling. A strong person who is sluggish still loses. Energy and an open heart win. Joy here means inner life and energy, not a forced smile.
 - **Fixed time for sadness, then release.** The chapter says real sadness over one's mistakes has its place, at specific, suitable times, and then one should let it go and trust G-d's forgiveness. It is not meant to follow you through every hour.
 - **A purpose in the struggle.** The chapter says those who accept hardship with love will see its hidden good revealed in the World to Come.
-- **You are not alone.** Your soul, in Tanya's words on Chabad.org, is "a part of G-d above" (see [the soul](/learn/the-soul)). Even in the dark, that connection is not broken.
+- **You are not alone.** Your soul, in Tanya's words, is "a part of G-d above" (see [the soul](/learn/the-soul)). Even in the dark, that connection is not broken.
 
 ## Small steps for hard days
 

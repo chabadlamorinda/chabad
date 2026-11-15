@@ -69,7 +69,7 @@ It is also suggested to sing Shabbat songs, including wordless Chassidic melodie
 Ask about gratitude, the weekly Torah portion, kindness and family stories. For example: "What was one good thing this week?" or "What surprised you in this week's parsha?"
 
 ### How do I get my family to talk at the Shabbat table?
-Put phones away, ask one open question at a time, and let everyone answer, as chassidic teaching suggests with its tips for a comfortable meal.
+Put phones away, ask one open question at a time, and let everyone answer, as Chassidic teaching suggests with its tips for a comfortable meal.
 
 ### What can I say at the table if I do not know Torah?
 Share a thought, a story or a question about the weekly portion, or read a short dvar Torah. You do not need to be an expert.

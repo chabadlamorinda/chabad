@@ -11,7 +11,7 @@ Shalom (שָׁלוֹם) is a Hebrew word that means "peace," and it is also used
 
 Jewish tradition explains that shalom is rooted in shaleim, meaning completion, and ties the two together: without peace there can be no completion. A person, a family or a world is whole only when its parts are in harmony. That is why Jewish tradition never treats peace as merely the absence of fighting.
 
-A teaching from the Mishnah quoted on chassidic teaching says that G-d "did not find a vessel that could hold blessing other than shalom," peace. Peace is the container for every other good thing.
+A teaching from the Mishnah quoted on Chassidic teaching says that G-d "did not find a vessel that could hold blessing other than shalom," peace. Peace is the container for every other good thing.
 
 ## Hello and goodbye
 

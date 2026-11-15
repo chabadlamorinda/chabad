@@ -13,7 +13,7 @@ Psalm 90 says that the days of our years are seventy, and with strength, eighty.
 
 ## What the original bar mitzvah means
 
-According to Jewish tradition, a Jewish boy becomes a bar mitzvah on his thirteenth Jewish birthday, and from then on he is responsible for the mitzvahs, whether or not a party was held. A girl becomes a bat mitzvah at twelve. So you cannot be bar mitzvah "again" in the legal sense. As Jewish teaching puts it about adult celebrations, whether you celebrate at 13 or at 83, the idea is the same. A second bar mitzvah is a celebration of renewed connection, which Jewish sources calls "a fine idea, but not at all obligatory." Read more in [what is a bar mitzvah](/learn/bar-mitzvah) and [bar mitzvah for adults](/learn/adult-bar-bat-mitzvah).
+According to Jewish tradition, a Jewish boy becomes a bar mitzvah on his thirteenth Jewish birthday, and from then on he is responsible for the mitzvahs, whether or not a party was held. A girl becomes a bat mitzvah at twelve. So you cannot be bar mitzvah "again" in the legal sense. As Jewish teaching puts it about adult celebrations, whether you celebrate at 13 or at 83, the idea is the same. A second bar mitzvah is a celebration of renewed connection, which the Jewish tradition calls "a fine idea, but not at all obligatory." Read more in [what is a bar mitzvah](/learn/bar-mitzvah) and [bar mitzvah for adults](/learn/adult-bar-bat-mitzvah).
 
 ## Ways to mark it
 

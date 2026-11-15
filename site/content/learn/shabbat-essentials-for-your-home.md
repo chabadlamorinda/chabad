@@ -14,7 +14,7 @@ For families in Lafayette, Moraga and Orinda setting up a Jewish home, here is a
 - **Candles and candlesticks.** Two candles are lit about 18 minutes before sunset, so you need holders. Any holders will do. See [Shabbat candles](/learn/shabbat-candles).
 - **A Kiddush cup.** A cup or goblet for the wine or grape juice. Many families keep a nicer one for Shabbat. See [Kiddush](/learn/kiddush).
 - **Kosher wine or grape juice.** See [kosher wine](/learn/kosher-wine).
-- **A washing cup.** chassidic teaching describes a large cup for pouring water over the hands before eating bread. See [netilat yadayim](/learn/netilat-yadayim).
+- **A washing cup.** Chassidic teaching describes a large cup for pouring water over the hands before eating bread. See [netilat yadayim](/learn/netilat-yadayim).
 - **Challah, a board and a cover.** Two whole loaves on a board under a cloth. See [challah](/learn/challah).
 - **A salt dish and a festive tablecloth.** The tradition suggests a white cloth. For what goes where, see [setting the Shabbat table](/learn/setting-the-shabbat-table).
 - **Printed blessings and a Grace after Meals booklet,** in translation or transliteration, helpful for beginners and guests.
@@ -31,7 +31,7 @@ Details and rules are in [how to keep food warm on Shabbat](/learn/keeping-food-
 ## For the rest of the house
 
 - **Timers.** Lights, heating and air conditioning can be set before Shabbat on timers, a simple way to avoid using electricity. See [electricity on Shabbat](/learn/electricity-on-shabbat).
-- **Light switch covers.** chassidic teaching suggests guards so that no one flips a switch by accident.
+- **Light switch covers.** Chassidic teaching suggests guards so that no one flips a switch by accident.
 - **A plan for the fridge light,** which the tradition suggests turning off before Shabbat. Ask the Rabbi what works for your model.
 - **A Shabbat basket of toys and books** for children, without batteries. See [Shabbat with kids](/learn/shabbat-with-kids).
 

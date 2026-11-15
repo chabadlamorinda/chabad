@@ -17,7 +17,7 @@ For this reason, the Jewish custom, kept by many communities, is that a change o
 
 ## Which names are added
 
-Jewish sources lists the names most often chosen:
+The Jewish tradition lists the names most often chosen:
 
 - **Chaim (חיים) for a man, Chaya (חיה) for a woman.** Both mean "life."
 - **Alter for a man, Alta for a woman.** Yiddish for "old," expressing the wish for a long life.

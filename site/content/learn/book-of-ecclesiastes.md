@@ -46,7 +46,7 @@ Kohelet contains King Solomon's wise observations on life. Its major theme is th
 The Hebrew word hevel means a breath or vapor, something fleeting. The phrase means that anything that does not last cannot, by itself, give life meaning.
 
 ### Who wrote Kohelet?
-Jewish sources describes the book as containing the wise observations of King Solomon.
+The Jewish tradition describes the book as containing the wise observations of King Solomon.
 
 ### Why is Ecclesiastes read on Sukkot?
 Kohelet reminds us that material success is fleeting, which tempers the satisfaction of the harvest. The temporary sukkah teaches the same lesson. Jewish tradition also says it is read in many communities on the holiday.

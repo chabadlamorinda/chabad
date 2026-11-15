@@ -11,7 +11,7 @@ The Lubavitcher Rebbe's advice on anger draws on this letter. Our general guide,
 
 ## Why anger is compared to idolatry
 
-Chabad.org's presentation of the epistle quotes the Sages' words that whoever is in a rage resembles an idolater. The Alter Rebbe explains the comparison: anger shows a lapse in faith in G-d's individual providence, meaning that G-d guides what happens to each of us.
+The epistle quotes the Sages' words that whoever is in a rage resembles an idolater. The Alter Rebbe explains the comparison: anger shows a lapse in faith in G-d's individual providence, meaning that G-d guides what happens to each of us.
 
 When someone hurts or insults us, we fix our attention on the person and on our loss. The letter says to remember that the harm itself was already decreed from Above, and that G-d has many agents. The one who wronged us is still responsible for his own free choice. Still, at the moment of anger a person has stopped seeing G-d in the picture.
 
@@ -27,7 +27,7 @@ Epistle 25 offers an inner exercise. Remember that even in the person who wronge
 
 ## The Rebbe's practical steps
 
-Chabad.org's article "How to Deal with Anger" gathers the Rebbe's advice from simple to deep:
+The Rebbe's advice on anger goes from simple to deep:
 
 1. **Wait.** The first step is to hold back and not to express the anger in words. Pause and breathe.
 2. **Remember Who is watching.** The Rebbe once advised a student to memorize the opening of Chapter 41 of Tanya and to review it whenever anger begins, since it speaks of G-d's watching over us at every moment.

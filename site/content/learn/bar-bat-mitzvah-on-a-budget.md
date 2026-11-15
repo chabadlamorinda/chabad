@@ -16,7 +16,7 @@ Nothing needs to be bought for the status to begin. It starts on the Hebrew birt
 - **A talk.** A few words on the weekly Torah portion, linked to his own life, where he can also thank people.
 - **A mitzvah project.** Studying and doing one mitzvah in depth, often an act of kindness.
 
-For a girl, Jewish sources suggests preparing through study, a personal mitzvah project, and mitzvot special to women: lighting Shabbat candles, separating challah when baking, and building a personal connection to prayer. It stresses that the day is a beginning, not a graduation. See [bat mitzvah projects](/learn/bat-mitzvah-projects).
+For a girl, the Jewish tradition suggests preparing through study, a personal mitzvah project, and mitzvot special to women: lighting Shabbat candles, separating challah when baking, and building a personal connection to prayer. It stresses that the day is a beginning, not a graduation. See [bat mitzvah projects](/learn/bat-mitzvah-projects).
 
 ## What is optional
 
@@ -45,7 +45,7 @@ No. A child becomes bar or bat mitzvah automatically at the age of Jewish adulth
 Starting tefillin, being called to the Torah for an aliyah, a short talk, and a mitzvah project. A festive meal is customary.
 
 ### Is reading the whole Torah portion required?
-Jewish sources says there is no clear source for it, and suggests spending the time learning Jewish basics. Ask the Rabbi what suits your child.
+The Jewish tradition says there is no clear source for it, and suggests spending the time learning Jewish basics. Ask the Rabbi what suits your child.
 
 ### What are simple ways to celebrate a bat mitzvah?
 A small gathering, a talk, lighting Shabbat candles or baking challah, and a mitzvah project such as helping others.

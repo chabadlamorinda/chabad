@@ -27,7 +27,7 @@ The minimum is two prutot per person, which Jewish tradition says is only a few 
 
 ## Giving through someone else
 
-You do not need to find people in need yourself on Purim morning. Jewish tradition teaches that it is a better approach to give through a messenger or an organization that will distribute funds to the poor on Purim day on your behalf. Giving days before is risky unless the person will save the gift until Purim.
+You do not need to find people in need yourself on Purim morning. The tradition teaches that it is a better approach to give through a messenger or an organization that will distribute funds to the poor on Purim day on your behalf. Giving days before is risky unless the person will save the gift until Purim.
 
 Because Purim day is busy, many families arrange this ahead of time. To hear how this can be done through Chabad of Lamorinda in Lafayette, call 925-384-7242. You are also welcome to give through [our giving page](/donate).
 
@@ -35,7 +35,7 @@ Because Purim day is busy, many families arrange this ahead of time. To hear how
 
 Children old enough to be taught, around five or six, should do the mitzvah too. Hand your child some coins to give. A child who gives on Purim learns that a holiday is not only about us.
 
-There is also a custom, before Purim, of the half-shekel (machatzit hashekel). Jewish tradition explains it is given in the afternoon service before the Megillah reading, three half-coins of the local currency, on behalf of each family member including children. It commemorates the half-shekel given in the days of the Temple, and the money goes to the poor. It does not replace matanot la'evyonim. Ask the Rabbi about the details.
+There is also a custom, before Purim, of the half-shekel (machatzit hashekel). Traditional teaching explains it is given in the afternoon service before the Megillah reading, three half-coins of the local currency, on behalf of each family member including children. It commemorates the half-shekel given in the days of the Temple, and the money goes to the poor. It does not replace matanot la'evyonim. Ask the Rabbi about the details.
 
 ## Why Purim begins with the poor
 

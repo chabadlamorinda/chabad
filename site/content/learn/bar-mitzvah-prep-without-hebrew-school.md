@@ -34,7 +34,7 @@ A full Torah reading or haftarah is wonderful but optional. See [learning to cha
 
 The best motivation is a parent who also learns. Sit down together over the alphabet. Many parents discover that they, too, never had a Jewish education, and that learning with their child is a gift. If a parent wants to do this too, see [Hebrew reading for adults](/learn/hebrew-reading-for-adults) and [adult Bar and Bat Mitzvah](/learn/adult-bar-bat-mitzvah).
 
-For girls, Jewish teaching notes that local Chabad centers offer pre-Bat Mitzvah classes and a Bat Mitzvah Club that meets for events and activities, and the site's program page says that girls at Chabad of Lamorinda join the Bat Mitzvah Club. See the [Bar and Bat Mitzvah program](/programs/bar-bat-mitzvah). If you also want your child to learn alongside peers, ask about [Hebrew school](/programs/hebrew-school).
+For girls, local Chabad centers offer pre-Bat Mitzvah classes and a Bat Mitzvah Club that meets for events and activities, and the site's program page says that girls at Chabad of Lamorinda join the Bat Mitzvah Club. See the [Bar and Bat Mitzvah program](/programs/bar-bat-mitzvah). If you also want your child to learn alongside peers, ask about [Hebrew school](/programs/hebrew-school).
 
 ## When there is less time, or a different need
 

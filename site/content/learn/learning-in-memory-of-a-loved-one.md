@@ -11,9 +11,9 @@ According to Jewish tradition, there is nothing greater we can do for the soul o
 
 ## Why does learning help the soul?
 
-The Hebrew term for this is *l'ilui nishmat* (לעילוי נשמת), "for the elevation of the soul," or *lizchut* (לזכות), "in the merit of." Jewish tradition explains that when relatives and friends take on additional Torah study, give charity and increase their good deeds, these acts bring merit to the one who has passed on. The soul, no longer in the body, cannot do mitzvot, so what we do here counts in its name.
+The Hebrew term for this is *l'ilui nishmat* (לעילוי נשמת), "for the elevation of the soul," or *lizchut* (לזכות), "in the merit of." the tradition explains that when relatives and friends take on additional Torah study, give charity and increase their good deeds, these acts bring merit to the one who has passed on. The soul, no longer in the body, cannot do mitzvot, so what we do here counts in its name.
 
-Jewish tradition teaches that this is especially so at three times: during the first year of mourning, at the [yahrzeit](/learn/yahrzeit) (the anniversary of the passing by the Jewish calendar), and any time a family feels moved.
+Traditional teaching teaches that this is especially so at three times: during the first year of mourning, at the [yahrzeit](/learn/yahrzeit) (the anniversary of the passing by the Jewish calendar), and any time a family feels moved.
 
 ## Studying Mishnah
 
@@ -34,7 +34,7 @@ Families often divide the work. For the shiva, [sheloshim](/learn/sheloshim) (th
 
 ## Charity and good deeds
 
-Jewish tradition also recommends giving [tzedakah](/learn/tzedakah) and taking on a mitzvah in a person's merit. This might be Shabbat candles, a regular kindness, or a commitment to attend a class. It is also very meaningful to establish a charitable fund or a lasting project in their name. Chabad of Lamorinda has a quiet way to give in memory of someone; see the [donate](/donate) page.
+The tradition also recommends giving [tzedakah](/learn/tzedakah) and taking on a mitzvah in a person's merit. This might be Shabbat candles, a regular kindness, or a commitment to attend a class. It is also very meaningful to establish a charitable fund or a lasting project in their name. Chabad of Lamorinda has a quiet way to give in memory of someone; see the [donate](/donate) page.
 
 ## Kaddish
 
@@ -53,7 +53,7 @@ Choose chapters of Mishnah and study them with the intention that the merit goes
 Mishnah has the same letters as neshamah, "soul." Any Torah learning brings merit, but Mishnah is the traditional choice for remembering a soul.
 
 ### Can I learn in someone's memory if I do not know Hebrew?
-Yes. Use an English translation. Jewish tradition encourages relatives and friends to add Torah study, and the intention is what matters.
+Yes. Use an English translation. Traditional teaching encourages relatives and friends to add Torah study, and the intention is what matters.
 
 ### Can friends and non-relatives take part?
 Yes. Jewish tradition says that children, relatives and friends can take on extra learning, charity and good deeds. Dividing the Mishnah among many people is a common custom.

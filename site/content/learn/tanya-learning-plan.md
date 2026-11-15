@@ -5,13 +5,13 @@ category: Prayer & Torah
 related: tanya, how-to-start-learning-tanya, daily-tanya-cycle, the-beinoni, how-to-start-learning-torah
 local: Learn Tanya with others: the English class meets every Wednesday at 1:00 PM at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.
 ---
-You do not have to read the Tanya from the beginning. A good way to start is to choose the chapter that speaks to what you need today: for worry, Epistle 11; for sadness, Chapters 26 and 27; for a feeling of not being good enough, Chapters 2 and 27; for loss, Epistles 27 and 28. This page matches each need to a chapter on Chabad.org and to a guide here.
+You do not have to read the Tanya from the beginning. A good way to start is to choose the chapter that speaks to what you need today: for worry, Epistle 11; for sadness, Chapters 26 and 27; for a feeling of not being good enough, Chapters 2 and 27; for loss, Epistles 27 and 28. This page matches each need to a chapter of the Tanya and to a guide here.
 
 ## How to use this plan
 
-The [Tanya](/learn/tanya) was written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, the founder of Chabad. Its first part, Likkutei Amarim, is divided into chapters, and Chabad.org also offers the Iggeret HaKodesh, a collection of the Alter Rebbe's letters, and the Iggeret HaTeshuvah. Chabad.org describes the Tanya as a "one size fits all" life manual, and offers text in English and Hebrew, audio, video and the easy-to-read Tanya in Plain English. Its Tanya in Plain English page features Chapters 26 to 28, 32 and 33.
+The [Tanya](/learn/tanya) was written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, the founder of Chabad. Its first part, Likkutei Amarim, is divided into chapters, and the Tanya also includes the Iggeret HaKodesh, a collection of the Alter Rebbe's letters, and the Iggeret HaTeshuvah. The Tanya is often described as a "one size fits all" life manual, and it is available free online in English and Hebrew, with audio, video and the easy-to-read Tanya in Plain English. Its Tanya in Plain English page features Chapters 26 to 28, 32 and 33.
 
-Each line below gives the need, the place in the Tanya as we read it on Chabad.org, and a guide to read first. The chapter numbers are the ones on those pages. Tanya's guidance is spiritual. For sadness or anxiety that does not lift, professional help is also right, and for your own situation, ask the Rabbi.
+Each line below gives the need, the place in the Tanya, and a guide to read first. The chapter numbers follow the standard editions. Tanya's guidance is spiritual. For sadness or anxiety that does not lift, professional help is also right, and for your own situation, ask the Rabbi.
 
 ## If you are new to the Tanya
 
@@ -51,7 +51,7 @@ Start with [how to start learning Tanya](/learn/how-to-start-learning-tanya), [t
 ## Common questions
 
 ### Which chapter of the Tanya should a beginner read first?
-Chabad.org's Tanya in Plain English page features Chapters 26 to 28 on anxiety, self-blame and sadness, Chapter 32 on love for every Jew and Chapter 33 on celebrating being Jewish. Many people also start with Chapter 1. See [how to start learning Tanya](/learn/how-to-start-learning-tanya).
+The Tanya in Plain English page features Chapters 26 to 28 on anxiety, self-blame and sadness, Chapter 32 on love for every Jew and Chapter 33 on celebrating being Jewish. Many people also start with Chapter 1. See [how to start learning Tanya](/learn/how-to-start-learning-tanya).
 
 ### Which Tanya chapter is about sadness and depression?
 Chapters 26 and 27 speak about joy and sadness, including sadness over unwanted thoughts. They are spiritual guidance and not medical advice. For ongoing low mood, professional help is also right.
@@ -60,16 +60,16 @@ Chapters 26 and 27 speak about joy and sadness, including sadness over unwanted 
 The Iggeret HaKodesh includes the Alter Rebbe's letters, among them condolence letters, Epistles 27 and 28. See [Tanya and grief](/learn/tanya-and-grief).
 
 ### Where can I read or listen to the Tanya online?
-Chabad.org offers the Tanya in English and Hebrew, with audio and video classes and a daily lesson. See [the daily Tanya cycle](/learn/daily-tanya-cycle).
+The Tanya is available free online in English and Hebrew, with audio and video classes and a daily lesson. See [the daily Tanya cycle](/learn/daily-tanya-cycle).
 
 ### Is there a Tanya class near Lafayette, Moraga or Orinda?
-Yes. There is a Tanya class in English every Wednesday at 1:00 PM, until 2:00 PM, at the Rabbi's home in Lafayette. Call Rabbi Labkowski at 925-384-7242 for the address.
+Yes. There is a Tanya class in English every Wednesday at 1:00 PM, until 2:00 PM, at the Rabbi's home in Lafayette. The class is open to teens and students, and to everyone. Call Rabbi Labkowski at 925-384-7242 for the address.
 
 ### Can someone learn Tanya with me one-on-one?
 Call Rabbi Labkowski at 925-384-7242 to ask about learning Tanya together. See also [adult education](/programs/adult-education).
 
 ## Take the next step
 
-- Pick one need above, read its guide, then open that chapter on Chabad.org.
+- Pick one need above, read its guide, then open that chapter of the Tanya, in print or online.
 - Come to the Wednesday 1:00 PM Tanya class at the Rabbi's home in Lafayette (call 925-384-7242 for the address).
 - Call 925-384-7242 to ask about learning Tanya together, or [sign up for the weekly email](/forms/newsletter).

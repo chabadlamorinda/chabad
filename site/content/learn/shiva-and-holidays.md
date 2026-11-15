@@ -37,7 +37,7 @@ Sheloshim (שְׁלוֹשִׁים, "thirty") is the 30 days from burial. A holid
 
 These are minor holidays and do not cancel shiva.
 
-- **Chanukah.** chassidic teaching says it is not among the holidays that end shiva. Mourners light the menorah with the blessing. See [Chanukah](/holidays/chanukah).
+- **Chanukah.** Chassidic teaching says it is not among the holidays that end shiva. Mourners light the menorah with the blessing. See [Chanukah](/holidays/chanukah).
 - **Purim.** Shiva continues in its softened form: no low stool and ordinary shoes, but no parties. A mourner still hears the Megillah (the Book of Esther), gives gifts of food to a friend, charity to at least two poor people and takes part in a meal. Joyous foods and drinks are left out of the gifts, and visitors may bring food to the family but should not give mishloach manot to the mourner. See [Purim](/holidays/purim).
 
 ## Grief during the holidays

@@ -7,7 +7,7 @@ local: Expecting? Call Rabbi Labkowski at 925-384-7242 and ask about a Shir Hama
 ---
 A Shir Hamaalot card is a printed card with Psalm 121 ("A Song of Ascents") that Jewish families hang in the delivery room and near the newborn's crib, as a prayer for the protection of mother and baby. Jewish tradition describes it as a long-standing custom that the Lubavitcher Rebbe encouraged families to keep.
 
-Many expecting parents in Lafayette, Moraga and Orinda ask where to hang it and how to treat it. Here is what chassidic teaching teaches, in simple steps.
+Many expecting parents in Lafayette, Moraga and Orinda ask where to hang it and how to treat it. Here is what Chassidic teaching teaches, in simple steps.
 
 ## What the card is
 

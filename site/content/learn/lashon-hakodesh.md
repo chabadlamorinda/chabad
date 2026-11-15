@@ -9,11 +9,11 @@ Lashon HaKodesh (לְשׁוֹן הַקֹּדֶשׁ) means "the Holy Tongue," the
 
 ## What "Holy Tongue" means
 
-Jewish tradition notes that Jews traditionally call Hebrew Lashon HaKodesh. Two classic explanations are given. Maimonides said the language earned the name because it has no words for lewd acts or private parts of the body. Nachmanides said it is the language G-d used to convey His will to the prophets.
+The tradition notes that Jews traditionally call Hebrew Lashon HaKodesh. Two classic explanations are given. Maimonides said the language earned the name because it has no words for lewd acts or private parts of the body. Nachmanides said it is the language G-d used to convey His will to the prophets.
 
 ## The language of creation
 
-The Torah describes G-d creating the world through ten utterances. Jewish tradition explains the Kabbalistic teaching that these were spoken in Hebrew, and that G-d continually renews creation, so that each thing receives its life through its Hebrew name. In the Chassidic teaching of the Tanya, the letters are like building blocks, and words are channels of spiritual life. See [Tanya](/learn/tanya) and [gematria](/learn/gematria).
+The Torah describes G-d creating the world through ten utterances. Traditional teaching explains the Kabbalistic teaching that these were spoken in Hebrew, and that G-d continually renews creation, so that each thing receives its life through its Hebrew name. In the Chassidic teaching of the Tanya, the letters are like building blocks, and words are channels of spiritual life. See [Tanya](/learn/tanya) and [gematria](/learn/gematria).
 
 This helps explain why a Hebrew name matters. See [Hebrew names](/learn/hebrew-names).
 

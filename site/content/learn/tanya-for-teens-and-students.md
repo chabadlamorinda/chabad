@@ -11,7 +11,7 @@ Tanya's idea for teens and students is simple: every Jew has two souls, a G-dly 
 
 You want to do well, and you want to relax. You want to be kind, and you get angry. You want to belong, and you want to be yourself. The [Tanya](/learn/tanya), written by Rabbi Shneur Zalman of Liadi, the founder of Chabad, says this is normal.
 
-In Chapter 1, on Chabad.org, the Alter Rebbe teaches that every Jew has two souls. One animates the body and is the source of natural drives, including anger, pride, appetite and laziness, and also some good traits like compassion. The other, the G-dly soul, is described in Chapter 2 as "a part of G-d above." For a longer explanation, see [the soul](/learn/the-soul).
+In Chapter 1, the Alter Rebbe teaches that every Jew has two souls. One animates the body and is the source of natural drives, including anger, pride, appetite and laziness, and also some good traits like compassion. The other, the G-dly soul, is described in Chapter 2 as "a part of G-d above." For a longer explanation, see [the soul](/learn/the-soul).
 
 The Tanya does not say the first soul is "bad." It says it needs direction.
 
@@ -27,7 +27,7 @@ These are ways to think with the Tanya, not statements from the text.
 
 - **Peer pressure.** Ask yourself which soul is talking. Not every voice you hear is you.
 - **What you say and type.** Tanya (Chapters 12 and 37) speaks of thought, speech and action as the ways the soul acts in the world, and calls thought, speech and action the "garments" of the soul. A message you send is speech. It leaves a mark. See [lashon hara](/learn/lashon-hara).
-- **Exam stress.** Epistle 11, on Chabad.org, teaches that G-d gives life at every moment and that the good is often hidden. Do your best, then let go of the outcome. See [exam stress: Jewish wisdom](/learn/exam-stress-jewish-wisdom) and [Tanya on worry and trust](/learn/tanya-on-worry-and-trust).
+- **Exam stress.** Epistle 11 teaches that G-d gives life at every moment and that the good is often hidden. Do your best, then let go of the outcome. See [exam stress: Jewish wisdom](/learn/exam-stress-jewish-wisdom) and [Tanya on worry and trust](/learn/tanya-on-worry-and-trust).
 - **Feeling not Jewish enough.** See [Tanya on self-worth](/learn/tanya-on-self-worth).
 - **Heading to campus.** See [Jewish college students](/learn/jewish-college-students) and [sending a Lamorinda teen to college](/learn/sending-a-lamorinda-teen-to-college).
 
@@ -35,7 +35,7 @@ If you feel anxious or very low, talk to a parent, school counselor or doctor. T
 
 ## Where to begin
 
-Chabad.org has a series of 53 audio classes called Tanya Basics, going through the book chapter by chapter, that aim to summarize the main ideas and their practical use. Chabad.org also has Tanya in Plain English, a modern translation. A first step could be one short chapter, such as Chapter 1.
+There is a free online series of 53 audio classes called Tanya Basics, going through the book chapter by chapter, that aim to summarize the main ideas and their practical use. There is also Tanya in Plain English, a modern translation. A first step could be one short chapter, such as Chapter 1.
 
 ## Common questions
 
@@ -55,7 +55,7 @@ It offers a spiritual view of trust: effort, then letting go. If stress is overw
 Start small: a mitzvah, a Shabbat meal, a class. See [Jewish college students](/learn/jewish-college-students) and call Rabbi Labkowski at 925-384-7242 to ask about options.
 
 ### Is there a Tanya class near Lafayette?
-Yes, in English every Wednesday at 1:00 PM, until 2:00 PM, at the Rabbi's home in Lafayette. Call 925-384-7242 for the address and to ask about joining.
+Yes, in English every Wednesday at 1:00 PM, until 2:00 PM, at the Rabbi's home in Lafayette. The class is open to teens and students, and to everyone. Call 925-384-7242 for the address.
 
 ## Take the next step
 

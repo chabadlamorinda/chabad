@@ -46,7 +46,7 @@ They were the first man and woman, created by G-d and placed in the Garden of Ed
 The Torah does not say. The Sages suggest wheat, grape or fig, and not an apple.
 
 ### What does the Tree of Knowledge mean in Judaism?
-the tradition explains that it would introduce an evil inclination and an awareness of immorality. It represents the choice between good and evil.
+The tradition explains that it would introduce an evil inclination and an awareness of immorality. It represents the choice between good and evil.
 
 ### Does Judaism believe in original sin?
 No. In Jewish teaching, each person is responsible for his or her own deeds, and every soul is born pure.

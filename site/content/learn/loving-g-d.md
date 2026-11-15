@@ -32,7 +32,7 @@ The [Tanya](/learn/tanya) also distinguishes levels. Deep reflection can produce
 
 ## "With both inclinations"
 
-Chassidic teaching points out that the Hebrew word for "your heart" (לְבָבְךָ) is spelled with an extra letter, and the Sages read this as loving G-d with both the good and the evil inclination. The idea is that even our difficult drives and energy can be directed toward G-d. See [yetzer hara](/learn/yetzer-hara).
+Chassidic thought points out that the Hebrew word for "your heart" (לְבָבְךָ) is spelled with an extra letter, and the Sages read this as loving G-d with both the good and the evil inclination. The idea is that even our difficult drives and energy can be directed toward G-d. See [yetzer hara](/learn/yetzer-hara).
 
 ## Love and awe
 
@@ -57,7 +57,7 @@ Yes. It is in the Shema: "You shall love the L-rd your G-d with all your heart, 
 The Rambam teaches to contemplate G-d's works in creation until wonder turns into love. Chabad teaching adds that this love is already hidden in every soul and needs to be revealed through reflection, prayer and mitzvot.
 
 ### What does "with all your heart" mean?
-Chassidic teaching notes that the Hebrew word for heart has an extra letter, which the Sages explain as loving G-d with both the good and evil inclinations.
+Chassidic wisdom notes that the Hebrew word for heart has an extra letter, which the Sages explain as loving G-d with both the good and evil inclinations.
 
 ### Can I love G-d if I do not feel anything?
 Jewish teachers say that feeling takes time and thought. Start with small actions and reflection, and ask the Rabbi for guidance.

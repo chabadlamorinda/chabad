@@ -17,7 +17,7 @@ If the groom will be away on the Shabbat before the wedding, the aufruf may be h
 
 ## Why we do it
 
-the tradition offers several meanings:
+The tradition offers several meanings:
 
 - **Sustaining the world.** A couple helps sustain the world by raising children who study Torah, so the groom reads from the Torah.
 - **A royal parallel.** A Jewish king had to keep two Torah scrolls, and the groom is called up twice, before and after the wedding.

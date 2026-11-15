@@ -9,7 +9,7 @@ In the High Holiday prayer Unetaneh Tokef, the congregation calls out that teshu
 
 ## What the Sages say
 
-The Sages taught that tzedakah brings atonement and protects a person from harsh heavenly decrees. It also notes that giving charity in honor of a sick person is a strong merit, which tradition says can annul harsh decrees.
+The Sages taught that tzedakah brings atonement and protects a person from harsh heavenly decrees. Giving charity in honor of a sick person is also a strong merit, which tradition says can annul harsh decrees.
 
 The Talmud also tells a story from the Talmud (Shabbat 156b). A reed-cutter was destined to die from a snakebite, but he survived because he had secretly shared his bread with a poor coworker.
 

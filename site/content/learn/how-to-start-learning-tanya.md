@@ -7,15 +7,15 @@ local: Want to learn Tanya together? Join the Wednesday 1:00 PM class, or call R
 ---
 The easiest way to start learning Tanya is to read it in English a short passage at a time, beginning with Chapter 1, and to learn it with a class or a partner. You do not need any background: the book was written for ordinary people who want to understand their own inner struggle.
 
-On Chabad.org, the [Tanya](/learn/tanya) library offers the text in several English versions, with audio and video classes. This guide is a simple map to get you started.
+Online, the [Tanya](/learn/tanya) is free in several English versions, with audio and video classes. This guide is a simple map to get you started.
 
 ## Choose an English version
 
-Chabad.org's Tanya library lists several ways to read the book in English:
+There are several ways to read the book in English:
 
 - **Tanya in Plain English:** a newer translation by Tzvi Freeman, described as "easy-to-read, contemporary English."
 - **Lessons in Tanya:** the text in Hebrew and English, set out for step-by-step study.
-- **The 1973 English edition** and the bilingual Chabad.org Tanya.
+- **The 1973 English edition** and the bilingual online Tanya.
 
 Any of them is fine. If you are brand new, a plain-English version lets you focus on the ideas. If you want to see the Hebrew beside the English, choose the bilingual one.
 
@@ -25,13 +25,13 @@ The Tanya's full name is Likkutei Amarim, Part One, and it has 53 chapters. The 
 
 ## A simple path for your first weeks
 
-Chabad.org does not prescribe one starting point, so here is a gentle path we suggest:
+There is no single required starting point, so here is a gentle path we suggest:
 
 1. **Read Chapter 1 slowly.** See [Tanya Chapter 1 explained](/learn/tanya-chapter-one-explained) for a walk through it.
 2. **Read Chapter 2,** on the soul as "a part of G-d above" ([a part of G-d above](/learn/part-of-g-d-above)).
 3. **Keep the [Tanya glossary](/learn/tanya-glossary-for-beginners) open** so unfamiliar words do not stop you.
-4. **Listen to a class on the same chapter.** Chabad.org's series "Tanya Basics: A Spiritual Guide for Life" has a class on nearly every chapter (a few classes cover two chapters together).
-5. **Then follow your interest.** Chabad.org's Tanya in Plain English page highlights, for example, Chapters 26 to 28 (worry, sadness and guilt), Chapter 32 (love for every Jew) and Chapter 33 (celebrating your Jewishness).
+4. **Listen to a class on the same chapter.** The online series "Tanya Basics: A Spiritual Guide for Life" has a class on nearly every chapter (a few classes cover two chapters together).
+5. **Then follow your interest.** The Tanya in Plain English page highlights, for example, Chapters 26 to 28 (worry, sadness and guilt), Chapter 32 (love for every Jew) and Chapter 33 (celebrating your Jewishness).
 
 ## Learn with someone
 
@@ -45,10 +45,10 @@ In Lafayette, Moraga and Orinda, there is a Tanya class in English every Wednesd
 Pick an English translation, read Chapter 1 slowly, and learn with a class or a partner. Take a few minutes at a time rather than trying to finish a lot at once.
 
 ### Is there a good English Tanya for beginners?
-Chabad.org offers several English versions, including Tanya in Plain English, Lessons in Tanya (Hebrew and English) and a 1973 edition. Many beginners find a plain-English version the easiest to follow.
+There are several English versions, including Tanya in Plain English, Lessons in Tanya (Hebrew and English) and a 1973 edition. Many beginners find a plain-English version the easiest to follow.
 
 ### Which chapters of Tanya should I read first?
-Chapters 1 and 2, on the two souls and the soul as a part of G-d, are the natural start. After that, follow your interest: Chabad.org's page points to Chapters 26 to 28 on worry and sadness, and Chapter 32 on love for fellow Jews.
+Chapters 1 and 2, on the two souls and the soul as a part of G-d, are the natural start. After that, follow your interest: Tanya in Plain English points to Chapters 26 to 28 on worry and sadness, and Chapter 32 on love for fellow Jews.
 
 ### Do I need to know Hebrew or Kabbalah to learn Tanya?
 No. You can learn it fully in English, and its ideas are explained for everyday life.

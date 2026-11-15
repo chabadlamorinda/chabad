@@ -54,7 +54,7 @@ It praises G-d for creation, from light and the heavens, to the mountains and sp
 
 ### When do we say Psalm 104?
 
-the tradition explains that it is said on Rosh Chodesh after the Song of the Day. Other customs exist, so ask the Rabbi.
+The tradition explains that it is said on Rosh Chodesh after the Song of the Day. Other customs exist, so ask the Rabbi.
 
 ### Why is Psalm 104 said on Rosh Chodesh?
 

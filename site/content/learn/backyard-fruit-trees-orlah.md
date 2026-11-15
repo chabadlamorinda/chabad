@@ -15,7 +15,7 @@ It applies even to a tree grown in a pot, according to Jewish law. It forbids th
 
 ## What about fruit from the store?
 
-the halacha says that outside Israel, orlah is forbidden only when it is certain that the fruit is orlah. A doubt is not enough, so store-bought fruit from outside Israel may be eaten. The question comes up mainly with trees you plant yourself, where you know the tree's age.
+The halacha says that outside Israel, orlah is forbidden only when it is certain that the fruit is orlah. A doubt is not enough, so store-bought fruit from outside Israel may be eaten. The question comes up mainly with trees you plant yourself, where you know the tree's age.
 
 ## How the three years are counted
 
@@ -37,7 +37,7 @@ Outside Israel, different species may be planted next to each other, with grapes
 
 ## Gardening on Shabbat
 
-the halacha notes that many Shabbat laws relate to gardening, such as planting, watering, weeding and raking. You may walk through and enjoy your garden on Shabbat. See [Shabbat for beginners](/learn/shabbat-for-beginners).
+The halacha notes that many Shabbat laws relate to gardening, such as planting, watering, weeding and raking. You may walk through and enjoy your garden on Shabbat. See [Shabbat for beginners](/learn/shabbat-for-beginners).
 
 ## Common questions
 

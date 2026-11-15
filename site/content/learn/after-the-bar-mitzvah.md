@@ -29,7 +29,7 @@ Jewish teaching notes that, by the letter of the law, a boy does not have to rep
 ## For both
 
 - **Shabbat and kosher.** Keeping [Shabbat](/learn/shabbat) and [kosher](/learn/kosher-kitchen) are now the teen's own mitzvot, not only the parents'. Ask the Rabbi how to take them on in a way that fits your family.
-- **Fasting.** Children are gradually trained to fast, and Jewish sources says the stricter view is for them to complete the Yom Kippur fast in the years before. Health always comes first: a young person who cannot fast safely should not. After Bar or Bat Mitzvah, the full fasts apply, with the usual health exceptions. Ask the Rabbi about your child, and see [Yom Kippur fast](/learn/yom-kippur-fast) and [fast days](/learn/fast-days).
+- **Fasting.** Children are gradually trained to fast, and the Jewish tradition says the stricter view is for them to complete the Yom Kippur fast in the years before. Health always comes first: a young person who cannot fast safely should not. After Bar or Bat Mitzvah, the full fasts apply, with the usual health exceptions. Ask the Rabbi about your child, and see [Yom Kippur fast](/learn/yom-kippur-fast) and [fast days](/learn/fast-days).
 - **Tzedakah** that the teen gives on his or her own. See [tzedakah](/learn/tzedakah).
 
 ## Staying connected

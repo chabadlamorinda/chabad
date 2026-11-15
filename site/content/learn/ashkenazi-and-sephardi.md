@@ -19,7 +19,7 @@ Today, the word "Sephardi" is often used broadly, and Jews from Iraq, Yemen, Ira
 
 The Torah and Jewish law are the same for everyone. What differs are the customs, the minhagim (see [Minhag: why Jewish customs matter](/learn/jewish-customs-minhag)). Here are some well-known examples:
 
-- **Prayer.** Different communities developed different prayer texts and tunes, called nusach. Jewish sources says that the origins of Nusach Sefard and Nusach Ashkenaz date back to this period.
+- **Prayer.** Different communities developed different prayer texts and tunes, called nusach. The Jewish tradition says that the origins of Nusach Sefard and Nusach Ashkenaz date back to this period.
 - **The mezuzah.** According to Jewish tradition, Sephardim hang the mezuzah upright, following Rashi, while Ashkenazim place it at a slant to respect Rashi and his grandson Rabbeinu Tam. Sephardi communities likewise often keep their Torah scrolls standing upright in cylindrical cases. See [mezuzah](/learn/mezuzah).
 - **Passover and kitniyot.** Ashkenazi communities extended the ban on chametz to rice and legumes (kitniyot), while many Sephardi and Middle Eastern communities eat them. Jewish tradition points out that the Seder is nearly identical in every community. See [kitniyot](/learn/kitniyot).
 - **Naming.** Generally, Ashkenazi Jews name children after relatives who have died, while many Sephardim name after living grandparents. Ask the Rabbi about any specific question.

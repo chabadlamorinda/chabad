@@ -41,7 +41,7 @@ For help with disagreements, see [Marriage arguments: Jewish wisdom](/learn/marr
 
 ### What is Jewish advice for a happy marriage?
 
-Make regular time for each other, thank each other, speak kindly and talk honestly. Jewish wisdom presents these as practical steps, not just ideals.
+Make regular time for each other, thank each other, speak kindly and talk honestly. Jewish teaching presents these as practical steps, not just ideals.
 
 ### How can we make time for our marriage with a busy schedule?
 
@@ -49,7 +49,7 @@ Set aside a day or an evening, such as Shabbat, with no phones or distractions. 
 
 ### Why is gratitude important in Jewish marriage?
 
-Giving your spouse credit for what he or she does helps the marriage grow. Jewish wisdom suggests thanking a spouse for specific things.
+Giving your spouse credit for what he or she does helps the marriage grow. The tradition suggests thanking a spouse for specific things.
 
 ### Should we complain about our spouse to friends?
 

@@ -15,7 +15,7 @@ Think of a parent who stays up all night with a sick child. That love is not thi
 
 ## Many kinds of love
 
-Chassidic teaching notes that Judaism recognizes several kinds of love:
+Chassidic thought notes that Judaism recognizes several kinds of love:
 
 - **Love of G-d.** A relationship that deepens through prayer, learning and mitzvot. See [belief in G-d](/learn/belief-in-g-d).
 - **Love of a fellow Jew, and of every person.** "Love your neighbor as yourself" is the Torah's great principle; see [ahavat Yisrael](/learn/ahavat-yisrael).
@@ -25,7 +25,7 @@ Chassidic teaching notes that Judaism recognizes several kinds of love:
 
 ## Love in marriage
 
-Chassidic teaching points out that the ketubah, the Jewish marriage contract, does not contain a single declaration of love. It contains commitments: to provide, to care, to be faithful. In the Jewish view, love is measured by conduct more than by words.
+Chassidic wisdom points out that the ketubah, the Jewish marriage contract, does not contain a single declaration of love. It contains commitments: to provide, to care, to be faithful. In the Jewish view, love is measured by conduct more than by words.
 
 This is why Jewish marriage can deepen with time rather than fade. Couples who keep giving to one another grow closer. See [shalom bayit](/learn/shalom-bayit), the Jewish idea of peace in the home, and [Jewish dating](/learn/jewish-dating) for those who are still looking.
 

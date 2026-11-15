@@ -30,7 +30,7 @@ On Friday afternoon, the menorah is lit before the Shabbat candles, with enough 
 
 ## Fire safety in a dry December
 
-Winters in the East Bay can be dry, windy and cold. Jewish law advises a sturdy, fireproof surface out of the reach of children, away from curtains and other flammable materials. In addition:
+Winters in the East Bay can be dry, windy and cold. Halacha advises a sturdy, fireproof surface out of the reach of children, away from curtains and other flammable materials. In addition:
 
 - Use a metal or glass tray under the menorah, and a table that is not near a drafty window or door that opens.
 - Move curtains, paper decorations and gift wrap away, and keep a candle burning only where you can see it.
@@ -60,7 +60,7 @@ Yes. Light it at a window or just inside your door, away from curtains and with 
 
 ### How high can a menorah be placed in a window?
 
-Jewish law says a window is suitable if it is less than about thirty feet above ground, so people can see the lights. Hillside homes may be higher; ask the Rabbi.
+The law says a window is suitable if it is less than about thirty feet above ground, so people can see the lights. Hillside homes may be higher; ask the Rabbi.
 
 ### How long must the menorah burn?
 

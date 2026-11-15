@@ -21,7 +21,7 @@ Place it correctly, at the bottom of the top third of the doorway, on the right 
 
 ## Their own holy books
 
-Jewish sources suggests that each child have their own: at least a Chumash (Five Books of Moses), a Siddur (prayer book) and a Passover Haggadah, and ideally a book of Psalms. Write the child's name in each book. Children treat a book they own with special pride, and a first siddur is a lovely gift for [Chanukah](/holidays/chanukah) or a birthday. Our [kids and teens programs](/programs/kids-and-teens) can help with learning to use them.
+The Jewish tradition suggests that each child have their own: at least a Chumash (Five Books of Moses), a Siddur (prayer book) and a Passover Haggadah, and ideally a book of Psalms. Write the child's name in each book. Children treat a book they own with special pride, and a first siddur is a lovely gift for [Chanukah](/holidays/chanukah) or a birthday. Our [kids and teens programs](/programs/kids-and-teens) can help with learning to use them.
 
 ## A tzedakah box
 

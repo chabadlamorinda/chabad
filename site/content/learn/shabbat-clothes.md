@@ -23,7 +23,7 @@ Jewish tradition explains that Shabbat clothes honor the day itself, not onlooke
 - **If you do not have special clothes,** wear your usual ones in a more dignified way.
 - **Women** are encouraged to change into Shabbat clothes before lighting [Shabbat candles](/learn/shabbat-candles).
 - **Men** cover their heads in synagogue; see [the kippah](/learn/kippah).
-- **Modesty.** chassidic teaching mentions modest tops, skirts or dresses for women at a chassidic gathering. When in doubt, ask.
+- **Modesty.** Chassidic teaching mentions modest tops, skirts or dresses for women at a chassidic gathering. When in doubt, ask.
 - **Many people** keep Shabbat clothes on until after Havdalah.
 
 ## Kids

@@ -22,13 +22,13 @@ Please [sign up](/events/chanukah-grand-menorah-lighting-2026) so we can plan en
 
 ## What is a public menorah lighting, and why do we do it?
 
-Chanukah is about light winning over darkness, and the sages taught that the menorah should be seen, so that the miracle is made public. A public lighting takes that idea out of our living rooms and into the middle of town. Jewish tradition describes the usual pattern: an oversized menorah, short blessings before the lighting, songs afterward and refreshments, often with crafts and activities for children. Jewish tradition also notes that attending is simple: you need to bring nothing, and outdoor events call for warm clothing.
+Chanukah is about light winning over darkness, and the sages taught that the menorah should be seen, so that the miracle is made public. A public lighting takes that idea out of our living rooms and into the middle of town. Jewish tradition describes the usual pattern: an oversized menorah, short blessings before the lighting, songs afterward and refreshments, often with crafts and activities for children. The tradition also notes that attending is simple: you need to bring nothing, and outdoor events call for warm clothing.
 
 Chabad has been putting up public menorahs since the 1970s, when the Rebbe launched a campaign to bring Chanukah out of the home and into public life. Today there are public menorahs in cities all over the world. To read more, see [Public menorah lightings](/learn/public-menorah-lighting).
 
 ## Why come? Four good reasons
 
-Jewish tradition lists several reasons to attend a public lighting. Here are the ones that matter most to us in Lamorinda:
+Traditional teaching lists several reasons to attend a public lighting. Here are the ones that matter most to us in Lamorinda:
 
 1. **Standing together.** A crowd of Jews and friends celebrating openly is a quiet, strong answer to anything that tries to frighten us.
 2. **Meeting neighbors.** You may meet Jewish families who live a few streets away, and a friendship may start over a donut.
@@ -58,7 +58,7 @@ No. The event is open to everyone. No membership, no tickets, and no background 
 There is a Giant Dreidel Game, a Gelt Drop, Decorate Your Own Donut and LED light wands for the kids, as well as free donuts, cocoa and gelt.
 
 ### Are blessings said at a public menorah lighting?
-Often, yes. Jewish tradition notes that blessings may be left out at a public lighting that does not follow Jewish law, for example if it is electric or at the wrong hour. Either way, say the blessings when you light at home. Ask the Rabbi if you would like to know more.
+Often, yes. The tradition notes that blessings may be left out at a public lighting that does not follow Jewish law, for example if it is electric or at the wrong hour. Either way, say the blessings when you light at home. Ask the Rabbi if you would like to know more.
 
 ### Can I light my own menorah at home if I went to the public lighting?
 Yes, and you should. A public lighting adds to the home lighting; it does not replace it.

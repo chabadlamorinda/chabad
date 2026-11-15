@@ -13,9 +13,9 @@ Many adult children in Lafayette, Moraga and Orinda feel guilt when a parent can
 
 ## What honoring parents means in practice
 
-According to Jewish law, the mitzvah has two parts: honor and respect. Honor is active: serving and helping parents however possible and whenever necessary, including things like feeding, dressing and getting them where they need to go. If parents can afford these needs themselves, the child is not required to pay, and parents usually feel better supporting themselves. Respect is about how we speak and act: not contradicting a parent to their face, and disagreeing privately and politely. A parent may also waive their own honor, and that if caregiving becomes too hard, a child may hire help.
+According to Jewish law, the mitzvah has two parts: honor and respect. Honor is active: serving and helping parents however possible and whenever necessary, including things like feeding, dressing and getting them where they need to go. If parents can afford these needs themselves, the child is not required to pay, and parents usually feel better supporting themselves. Respect is about how we speak and act: not contradicting a parent to their face, and disagreeing privately and politely. A parent may also waive their own honor, and if caregiving becomes too hard, a child may hire help.
 
-The article does not address assisted living by name. So whether a move is right, and how to handle questions that come up, is a matter for the Rabbi, who can think it through with you. Read more in [honoring parents](/learn/honoring-parents) and [caring for aging parents](/learn/caring-for-aging-parents).
+This guidance does not address assisted living by name. So whether a move is right, and how to handle questions that come up, is a matter for the Rabbi, who can think it through with you. Read more in [honoring parents](/learn/honoring-parents) and [caring for aging parents](/learn/caring-for-aging-parents).
 
 ## Visiting, not just paying
 

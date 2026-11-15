@@ -15,11 +15,11 @@ Never bake or broil meat and dairy in the same oven at the same time, even in se
 
 ## One oven for both: only with the Rabbi
 
-If you have just one oven, as many homes in Lafayette, Moraga and Orinda do, Jewish law says that using one oven for both meat and dairy, at different times, requires consulting a qualified rabbi. Do not decide this alone. Call Rabbi Labkowski at 925-384-7242 and describe your oven and how you cook.
+If you have just one oven, as many homes in Lafayette, Moraga and Orinda do, Halacha says that using one oven for both meat and dairy, at different times, requires consulting a qualified rabbi. Do not decide this alone. Call Rabbi Labkowski at 925-384-7242 and describe your oven and how you cook.
 
 ## Covering food
 
-Covering is how an oven can stay "pareve." Jewish law describes it this way:
+Covering is how an oven can stay "pareve." the law describes it this way:
 
 - Cover meat or dairy food tightly on all sides, including the bottom.
 - Put foil under the pan, and change it when you switch between meat and dairy.
@@ -50,13 +50,13 @@ Ideally, no: each oven is used for only one category. Using one oven at differen
 The self-clean cycle cleans and koshers an oven, including a convection oven with that cycle. A steam-clean setting is not enough. Ask the Rabbi about your specific oven.
 
 ### Can I use the same microwave for meat and dairy?
-Jewish law gives no simple rule for this, only to consult a qualified rabbi about microwaves. Ask Rabbi Labkowski what fits your kitchen.
+Halacha gives no simple rule for this, only to consult a qualified rabbi about microwaves. Ask Rabbi Labkowski what fits your kitchen.
 
 ### Can a microwave be made kosher?
 Many authorities do not allow it, and it cannot be done for microwaves with browning or convection features. If there is a real need, ask the Rabbi about the steps.
 
 ### Do I need a separate toaster oven?
-Jewish law says a toaster oven or portable broiler can serve the other category when you have one main oven, and portable broilers should be used for only one category because they cannot be properly koshered.
+The law says a toaster oven or portable broiler can serve the other category when you have one main oven, and portable broilers should be used for only one category because they cannot be properly koshered.
 
 ### Can I eat food from a non-kosher kitchen's oven or microwave?
 Sealed, double-wrapped food can be heated in a non-kosher microwave or oven according to Jewish law. Unwrapped food is a different question. Ask the Rabbi.

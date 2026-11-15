@@ -15,7 +15,7 @@ Chabad of Lamorinda's Jewish Women's Circle lists the Mega Challah Bake among it
 
 ## The mitzvah underneath: taking challah
 
-The heart of a challah bake is the mitzvah of *hafrashat challah* (הפרשת חלה). The Torah says to give "the first of your kneading" (Numbers 15). Jewish tradition explains the steps:
+The heart of a challah bake is the mitzvah of *hafrashat challah* (הפרשת חלה). The Torah says to give "the first of your kneading" (Numbers 15). The tradition explains the steps:
 
 1. Knead a dough from wheat, barley, spelt, oat or rye flour.
 2. A piece of about an ounce is separated and said to be challah, after the blessing.
@@ -29,7 +29,7 @@ Chabad teaching gives several ideas:
 
 - **Everything is a gift.** Setting aside the first portion of the dough acknowledges that everything we have comes from G-d, and that serving Him comes first.
 - **A link to Shabbat.** The challah brings the Shabbat feeling into the meal. See [challah](/learn/challah).
-- **A link to the past.** Jewish tradition tells of a care center where baking challah brought elderly residents from Eastern Europe, who had been hard to engage, to life, as they remembered baking in their youth.
+- **A link to the past.** Traditional teaching tells of a care center where baking challah brought elderly residents from Eastern Europe, who had been hard to engage, to life, as they remembered baking in their youth.
 
 Challah is also one of the three special mitzvot given to women, alongside Shabbat candles and family purity: [the three mitzvot of Jewish women](/learn/three-mitzvot-for-jewish-women).
 
@@ -49,7 +49,7 @@ You do not need to be an expert to take part; ask the organizers what to bring w
 Challah was once given to the *kohen*. Today that is not possible, and because the piece is holy it may not be used, so, as Jewish tradition explains, it is burned.
 
 ### Can I bring a friend or my daughter?
-Jewish tradition describes a bake where people of all ages gathered. Ask about a particular event when you call 925-384-7242.
+The tradition describes a bake where people of all ages gathered. Ask about a particular event when you call 925-384-7242.
 
 ### Is there a challah bake in Lafayette, Moraga or Orinda?
 Chabad of Lamorinda's Women's Circle has held a Mega Challah Bake. Call 925-384-7242 to hear what is planned.

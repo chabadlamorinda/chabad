@@ -29,7 +29,7 @@ Jewish tradition values [chesed](/learn/chesed), acts of kindness that give of o
 
 ## How to visit
 
-Jewish wisdom advises that new mothers choose company that is relaxed and supportive, not critical. So drop off the food at the door, or stay only for a few minutes if invited, offer to hold the baby so mom can shower or nap, and leave when the baby is hungry or tired. Do not ask to see the baby unless the parents invite you. Wash your hands, and stay home if you are sick.
+Jewish teaching advises that new mothers choose company that is relaxed and supportive, not critical. So drop off the food at the door, or stay only for a few minutes if invited, offer to hold the baby so mom can shower or nap, and leave when the baby is hungry or tired. Do not ask to see the baby unless the parents invite you. Wash your hands, and stay home if you are sick.
 
 ## Other ways to help
 
@@ -50,7 +50,7 @@ If the family keeps kosher, yes. Ask them how they keep it, or bring food from a
 Keep it short, often only a few minutes, unless they ask you to stay. Let the mother rest.
 
 ### Is bringing a meal a Jewish custom?
-Yes, it is part of the mitzvah of chesed. Jewish wisdom encourages arranging meals and help for a new mother.
+Yes, it is part of the mitzvah of chesed. The tradition encourages arranging meals and help for a new mother.
 
 ### Is there a meal program in Lamorinda?
 Please call 925-384-7242 to hear what is available, and you can sign up to help at [the volunteer form](/forms/volunteer).

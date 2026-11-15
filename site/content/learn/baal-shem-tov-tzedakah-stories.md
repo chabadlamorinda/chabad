@@ -5,7 +5,7 @@ category: Jewish ideas
 related: the-poor-mans-offering, baal-shem-tov, chassidus, tzedakah, the-rebbes-sunday-dollars
 local: Want to hear more Chassidic stories about giving? Call Rabbi Labkowski at 925-384-7242 or reach him via /help/talk-to-the-rabbi.
 ---
-The Baal Shem Tov, the founder of the Chassidic movement, taught that giving should be done with joy, and Chassidic stories about him show tzedakah changing the lives of giver and receiver. Chassidic teaching shares his teaching about generous giving and two classic tales, both retold below in our own words.
+The Baal Shem Tov, the founder of the Chassidic movement, taught that giving should be done with joy, and Chassidic stories about him show tzedakah changing the lives of giver and receiver. Chassidic teaching preserves his teaching about generous giving and two classic tales, both retold below in our own words.
 
 ## A teaching: giving with joy
 

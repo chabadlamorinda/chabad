@@ -21,7 +21,7 @@ The earliest dated reference is in the book Etz Chaim, completed in London in 12
 
 ## Where it appears in the siddur
 
-Practice varies widely. Many communities say it at the start of the morning prayers, before Shacharit. Some say it at the end of services, and some say it around Maariv or Selichot. Jewish sources notes that many Ashkenazic communities in Israel end Friday night services with it, and Sephardic and Yemenite communities end Shabbat morning services with it. If you open a siddur, look at the beginning of the morning prayers, near [Modeh Ani](/learn/modeh-ani) and the [morning blessings](/learn/morning-blessings), and at the end of services. In [the siddur](/learn/siddur) you will find the place your community uses.
+Practice varies widely. Many communities say it at the start of the morning prayers, before Shacharit. Some say it at the end of services, and some say it around Maariv or Selichot. The Jewish tradition notes that many Ashkenazic communities in Israel end Friday night services with it, and Sephardic and Yemenite communities end Shabbat morning services with it. If you open a siddur, look at the beginning of the morning prayers, near [Modeh Ani](/learn/modeh-ani) and the [morning blessings](/learn/morning-blessings), and at the end of services. In [the siddur](/learn/siddur) you will find the place your community uses.
 
 ## A closer look at its message
 
