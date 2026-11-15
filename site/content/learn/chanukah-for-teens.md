@@ -11,7 +11,7 @@ Chanukah for teens means taking the holiday from "something my parents do" to "s
 
 The Greek rulers of the story did not try to wipe the Jews out. According to Chabad teaching, they wanted to cut the Jewish people off from G-d. They did not mind Jews doing some things as a culture or philosophy, as long as it was not rooted in a commandment from G-d. That is why they defiled the oil, and why the miracle of one sealed jar matters: it shows that a part of every Jewish soul can never be cut off.
 
-Chabad.org teaches that Chanukah has eight lights because eight points beyond nature. When you connect to that deepest part of yourself, you do more than push the darkness away; the darkness itself becomes light. In plain words: you do not have to be perfect. Your Jewish spark is always there.
+Chabad.org teaches that Chanukah has eight lights because eight points beyond nature. When you connect to that deepest part of yourself, you do more than push the darkness away; the darkness itself becomes light. In plain words: you do not have to be perfect. Your Jewish spark is still there.
 
 ## Make the menorah yours
 

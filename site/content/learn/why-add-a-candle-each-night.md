@@ -38,7 +38,7 @@ Shammai's view is not foolish. Chabad teaching gives a thoughtful explanation of
 - **A mitzvah's light is permanent.** The light of a mitzvah stays with a person and carries its blessing forward, and each day brings the light of the days before it.
 - **Actions, not plans.** Intentions do not give light by themselves. Only what a person actually does makes light.
 
-The Sages teach that Shammai's method suited a time when people had the spiritual strength for a direct battle, while in our times a positive approach is what works. Even so, the best life often needs both: to stop the bad and to build the good.
+Chabad.org suggests that Shammai's method suited a time when people had the spiritual strength for a direct battle, while in our times of exile a positive approach is what works. Even so, the best life often needs both: to stop the bad and to build the good.
 
 ## How to use this in your own life
 
@@ -61,8 +61,8 @@ Beit Shammai said to light eight candles on the first night and reduce by one ea
 ### Why is the halachah like Beit Hillel?
 The Sages accepted Beit Hillel's view that holiness always increases. Many also see their approach, a small beginning and daily growth, as the best way to change.
 
-### Do the Chanukah candles count up from the right or the left?
-You place the new candle each night on the right and light the newest first, moving left. See our [menorah guide](/learn/chanukah-menorah) or ask the Rabbi for the step-by-step.
+### On which side do I add the new candle?
+In Chabad custom the first candle goes at the right end of the menorah and each new candle is added to its left. See our [menorah guide](/learn/chanukah-menorah) for the lighting order, or ask the Rabbi.
 
 ### What does adding a candle teach me?
 It teaches that growth comes from steady steps and that the good we do stays with us and builds on itself.

@@ -17,7 +17,7 @@ Make sure the foundation is in place. See [how to light the menorah](/learn/chan
 
 Chabad.org lists several old and new traditions. Here they are, with ways to make them yours.
 
-1. **A family song.** After lighting, many sing Haneirot Halalu ("These lights we kindle") and Maoz Tzur, and lighter songs about the dreidel. Pick one song your family always sings. See [Chanukah songs](/learn/chanukah-songs).
+1. **A family song.** After lighting, many sing Haneirot Halalu ("These lights we kindle") and Maoz Tzur, and lighter songs about the dreidel. Pick one song your family sings every year. See [Chanukah songs](/learn/chanukah-songs).
 2. **Gelt with a purpose.** Gelt rewards learning and teaches giving. Let each child set aside part for tzedakah. See [Chanukah gelt](/learn/chanukah-gelt).
 3. **A dreidel tournament.** A nightly game, with a trophy that passes from year to year. See [dreidel](/learn/dreidel) and the [dreidel game](/dreidel) online.
 4. **A public lighting.** Chabad.org notes that large public menorah lightings, with music, treats and local leaders, have been held in many cities since the 1970s. Make it your yearly outing. It does not replace lighting at home.

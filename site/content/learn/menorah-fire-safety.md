@@ -1,6 +1,6 @@
 ---
 title: Menorah Fire Safety: Lighting Chanukah Candles Safely at Home
-description: How to light a Chanukah menorah safely: a stable fireproof surface, space from curtains, children and pets, tea lights, windows and what to do if a flame goes out.
+description: How to light a Chanukah menorah safely: a fireproof surface, space from curtains and children, tea lights, windows and what to do if a flame goes out.
 category: Jewish home
 related: new-chanukah-family-traditions, menorah-oil-and-candles, chanukah-menorah, menorah-at-home-in-lamorinda, maakeh-safety-at-home
 local: Not sure how to light safely at home? Ask Rabbi Labkowski at 925-384-7242 or /help/talk-to-the-rabbi.
