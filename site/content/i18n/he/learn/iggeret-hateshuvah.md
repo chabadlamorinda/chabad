@@ -1,6 +1,6 @@
 ---
 title: אגרת התשובה: מה התניא מלמד על תשובה
-description: אגרת התשובה, חלק בתניא: מה תשובה באמת, למה הווידוי חשוב, ולמה היא צריכה להביא שמחה. מדריך פשוט.
+description: אגרת התשובה, חלק בתניא: מהי תשובה באמת, למה הווידוי חשוב, ולמה היא צריכה להביא שמחה. מדריך פשוט.
 category: Jewish ideas
 related: starting-over-after-you-fall, teshuvah, cheshbon-hanefesh, ten-days-of-repentance, forgiving-yourself
 local: רוצים ללמוד על תשובה עם מישהו? התקשרו לרב לבקובסקי 925-384-7242 או ראו /programs/adult-education.

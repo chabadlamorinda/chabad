@@ -5,7 +5,7 @@ category: Jewish ideas
 related: tanya-on-temptation, changing-a-bad-habit, cheshbon-hanefesh, eating-as-a-mitzvah, building-good-habits-tanya
 local: Learn Tanya with us: the English class meets Wednesdays at 1:00 PM at the Rabbi's home in Lafayette; call 925-384-7242 for the address.
 ---
-Itkafya (אִתְכַּפְיָא) is the Aramaic word Tanya uses for subduing your own impulses, and in Chapter 27 it also means small, deliberate acts of holding back, even from things that are permitted. Tanya teaches that such a small act of self-discipline here below has a great effect Above.
+Itkafya (אתכפיא) is the Aramaic word Tanya uses for subduing your own impulses, and in Chapter 27 it also means small, deliberate acts of holding back, even from things that are permitted. Tanya teaches that such a small act of self-discipline here below has a great effect Above.
 
 This is a gentle and very practical form of self-discipline: not harsh, not about suffering, but about showing yourself that you are in charge of your impulses.
 
@@ -35,7 +35,7 @@ You do not have to understand the mystical details to take the practical point: 
 
 These are suggestions in the spirit of Tanya's examples, not rules from the chapter:
 
-1. **Pick one small thing.** Wait a few minutes before reaching for a snack, or take a breath before sending a clever reply.
+1. **Pick one small thing.** Wait a few minutes before checking your phone, or take a breath before sending a clever reply.
 2. **Use the time for something good**, such as a verse, a [blessing](/learn/eating-as-a-mitzvah) or a kind thought.
 3. **Keep it small and cheerful.** Tanya's whole approach to the struggle is joy and alacrity (see [Tanya on sadness and joy](/learn/tanya-on-sadness-and-joy)).
 4. **Notice the effect.** Do you feel more in charge of the rest of your day?
@@ -55,7 +55,7 @@ Itkafya means subduing or bending your own impulses. In Tanya, Chapter 27, it in
 No. Tanya's examples are small and temporary, like waiting a short time before eating. Judaism values enjoying permitted things in the right way.
 
 ### How long should I delay a meal?
-Tanya speaks of an hour or less. If you have a medical condition, ask your doctor and the Rabbi before delaying a meal.
+Tanya's example is a short delay, an hour or less, used for Torah study; it is not a fast or a diet. If you have diabetes or any medical condition, are pregnant or nursing, or have ever struggled with eating, choose a different small act, such as holding back a word or a thought, and ask your doctor and the Rabbi.
 
 ### How is this different from resisting temptation?
 Temptation is about forbidden things. Itkafya is also about permitted things, to show that you are in charge. See [how to resist temptation](/learn/tanya-on-temptation).

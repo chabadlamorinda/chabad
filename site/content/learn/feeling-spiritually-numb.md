@@ -26,11 +26,13 @@ The practices it suggests include:
 - Inwardly facing the animal soul, with firm words, reminding it that G-d is unchanging.
 - Reflecting on past sins, since deeper repentance is always possible.
 
+These practices aim at the arrogance of the animal soul, the ego, not at your worth as a person. If you already feel worthless or very low, this is not the practice to start with; talk to the Rabbi, and to a doctor or counselor.
+
 The chapter illustrates this with the spies in the Torah, whose faith returned only once their arrogance was broken, not through a new miracle.
 
 ## When there is no feeling
 
-The response, says the chapter, is not despair but humility, and seeking not only to "hear" about G-d with the mind but to sense Him in the heart. For the theme of humility, see [Tanya on humility](/learn/tanya-on-humility). Even a person who feels free of serious sin should do this inner accounting.
+The response, says the chapter, is not despair but humility, and seeking not only to "hear" about G-d but, as it were, to "see": a deeper awareness of Him. For the theme of humility, see [Tanya on humility](/learn/tanya-on-humility). Even a person who feels free of serious sin should do this inner accounting.
 
 The chapter also says that doubts about faith come from the animal soul and not from the Jewish soul, which believes. If you have questions about faith, see [doubts in faith](/learn/doubts-in-faith) and ask the Rabbi.
 

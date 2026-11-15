@@ -27,7 +27,7 @@ The chapter describes a sequence for regret and its end:
 
 ## Confidence is part of teshuvah
 
-Iggeret HaTeshuvah, Chapter 11, says that when we ask forgiveness we should ask with complete certainty that G-d forgives, since a blessing said in doubt would make little sense. It also says that "whoever comes to purify himself is given assistance." Please read that as encouragement: sincere effort gets help.
+Iggeret HaTeshuvah, Chapter 11, says that when we ask forgiveness we should ask with complete certainty that G-d forgives, since a blessing said in doubt would risk being a blessing in vain. It also says that "whoever comes to purify himself is given assistance." Please read that as encouragement: sincere effort gets help.
 
 The chapter reads the verse "my sin is always before me" as a reminder in the background, held at a distance, so that it gives humility without despair.
 

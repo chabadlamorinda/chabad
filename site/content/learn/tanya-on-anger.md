@@ -19,7 +19,7 @@ When someone hurts or insults us, we fix our attention on the person and on our 
 
 The letter makes an exception. Anger may be proper when it is meant to keep another Jew from breaking a prohibition, as Moses did. The reasoning above is about personal harm, not about Torah and mitzvot, which are in our own hands.
 
-Nothing in the teaching says to accept being abused or to stay in a dangerous situation. If anger, threats or violence are part of your home, please get help right away; call the Rabbi in confidence.
+Nothing in the teaching says to accept being abused or to stay in a dangerous situation. If anger, threats or violence are part of your home, please get help right away; if you are in danger, call 911, and you can call the Rabbi in confidence.
 
 ## The remedy in the letter
 

@@ -11,15 +11,13 @@ This guide explains what the Tanya says about speech and how it can shape an ord
 
 ## What is a "garment of the soul"?
 
-Chapter 4 of the [Tanya](/learn/tanya), as Chabad.org presents it, says that besides its inner powers, the G-dly soul has three garments through which it expresses itself: thought, speech and action. Like clothing, a garment is something we put on and take off. When we use the garments for Torah and mitzvot, the soul is "dressed" in them and its inner life becomes visible. See also the guide on the [three garments of the soul](/learn/three-garments-of-the-soul).
+Chapter 4 of the [Tanya](/learn/tanya), as Chabad.org presents it, says that besides its inner powers, the G-dly soul has three garments through which it expresses itself: thought, speech and action. When we use the garments for Torah and mitzvot, the soul is "dressed" in them and its inner life becomes visible. See also the guide on the [three garments of the soul](/learn/three-garments-of-the-soul).
 
 Each garment has its field:
 
 - **Action:** doing a mitzvah, such as putting on tefillin or wearing tzitzit.
-- **Speech:** learning Torah aloud, including the laws that explain how to do the mitzvot.
+- **Speech:** speaking words of Torah, including the laws that explain how to do the mitzvot.
 - **Thought:** understanding Torah as deeply as the mind can.
-
-Speech is in the middle. It is an inner expression of the soul, said aloud, but unlike action it does not work on physical objects outside us.
 
 ## Why words of Torah are so special
 

@@ -27,7 +27,7 @@ Chapter 41 describes how the morning blessings and prayer remind us that the sou
 
 ## Renew your intention
 
-Tanya says that even a beinoni, an ordinary striving person, needs the right intention at the start of an act of study or a mitzvah, and during a long session should renew it about once an hour (Chapter 41). Habits fade when the reason fades. A small renewal, "Why am I doing this?", keeps a habit alive.
+Tanya says that even a beinoni, an ordinary striving person, needs the right intention at the start of an act of study or a mitzvah, and during a long session should renew it at least once an hour (Chapter 41). Habits fade when the reason fades. A small renewal, "Why am I doing this?", keeps a habit alive.
 
 ## Small beats big
 
@@ -51,7 +51,7 @@ No. Tanya says that the beinoni's level depends on choice and action, not on fee
 Thought, speech and action, the ways the soul expresses itself. Torah and mitzvot clothe each of them.
 
 ### How often should I renew my intention?
-For long study, Chapter 41 mentions renewing it about once an hour. For everyday habits, ask the Rabbi what suits you.
+For long study, Chapter 41 mentions renewing it at least once an hour. For everyday habits, ask the Rabbi what suits you.
 
 ### What if I miss a day?
 Start again. Tanya's approach is steady effort without discouragement; see [why do I still struggle](/learn/why-do-i-still-struggle).

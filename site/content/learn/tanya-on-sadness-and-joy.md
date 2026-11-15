@@ -19,8 +19,8 @@ Sadness, in other words, is not a sign of depth. Tanya treats it as a hindrance.
 
 The chapter separates two causes:
 
-- **Worldly sadness**: distress over livelihood, health or children. Tanya's answer is to turn this toward acceptance and joy, trusting that hardship carries a hidden good we cannot see. This is a very high ideal, and it is not meant to deny real pain. If you are going through a loss or a crisis, please talk to someone; see [hope in hard times](/learn/hope-in-hard-times).
-- **Spiritual sadness**: feeling distressed that you are not as good as you should be. Tanya calls it a ploy of the evil inclination when it hits at the wrong time, for example in the middle of a workday, because a discouraged person is more likely to give up or indulge.
+- **Worldly sadness**: distress over livelihood, health or children. Tanya teaches the faith that everything comes from G-d and that even what hurts has a good in it that we cannot see. This is a very high spiritual ideal to grow toward, not a demand to feel happy about pain. Judaism honors grief and mourning, and nobody is asked to pretend a loss does not hurt. If you are going through a loss or a crisis, please talk to someone; see [hope in hard times](/learn/hope-in-hard-times).
+- **Spiritual sadness**: feeling distressed over your own failings. When this kind of gloom over your spiritual shortcomings comes at the wrong time, for example in the middle of a workday, Tanya calls it a trick of the evil inclination, because a discouraged person is more likely to give up or give in. This is about guilt over one's service of G-d, not about depression or a low mood that will not lift, which is never anyone's fault (see the word of care below).
 
 ## Tanya's practical remedy
 
@@ -39,7 +39,7 @@ The next chapter applies the same idea to thoughts we do not want. Tanya says a 
 
 ## A word of care
 
-Tanya's guidance is spiritual. It is not a treatment for depression or anxiety, which are real conditions that deserve professional care, and seeking that help is also right when needed. Talking to a doctor or therapist and learning with a rabbi can go together. For personal situations, ask the Rabbi. See also the Jewish view on [mental health](/learn/mental-health-jewish-view).
+Tanya's guidance is spiritual. It is not a treatment for depression or anxiety, which are real conditions that deserve professional care, and seeking that help is also right when needed. Feeling low is not a failure and not a lack of faith. Talking to a doctor or therapist and learning with a rabbi can go together. For personal situations, ask the Rabbi. See also the Jewish view on [mental health](/learn/mental-health-jewish-view).
 
 ## Common questions
 
@@ -47,7 +47,7 @@ Tanya's guidance is spiritual. It is not a treatment for depression or anxiety, 
 Tanya says sadness is a hindrance to serving G-d and to winning the inner struggle, because it brings heaviness instead of alacrity. Genuine regret has its place, but at set times, and it should lead to joy.
 
 ### Is sadness a sin in Judaism?
-Tanya does not call ordinary sadness a sin, but it teaches us to work against it. Grief and mourning are honored in Judaism; the concern is staying stuck in heaviness.
+Tanya calls sadness a hindrance, not a virtue, and teaches us to work against it; it does not ask anyone to blame himself for feeling low. Grief and mourning are honored in Judaism; the concern is staying stuck in heaviness.
 
 ### What is the difference between worldly and spiritual sadness in Tanya?
 Worldly sadness comes from troubles such as livelihood, health or children. Spiritual sadness comes from feeling you have failed in your service. Tanya gives a different remedy for each.

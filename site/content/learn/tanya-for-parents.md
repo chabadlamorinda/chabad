@@ -33,7 +33,7 @@ Chapter 4 describes thought, speech and action as the garments of the soul. Chil
 
 ## Your child's struggle is real too
 
-If the Tanya teaches that each of us has an inner struggle, a child also has one. When a child struggles, you can help the G-dly side by being a calm mind for a stormy heart. That is an application of the Tanya, not a quotation from it. If you are worried about your child, talk to a professional and ask the Rabbi.
+If the Tanya teaches that each of us has an inner struggle, a child also has one. When a child struggles, you can help the G-dly side by being a calm mind for a stormy heart. That is an application of the Tanya, not a quotation from it. If you are worried about your child, talk to a professional and ask the Rabbi. If a child is being harmed, or you fear that you or someone else may hurt a child, seek help right away and call Rabbi Labkowski (925-384-7242) or Rebbetzin Labkowski (925-384-7241) privately.
 
 ## Common questions
 

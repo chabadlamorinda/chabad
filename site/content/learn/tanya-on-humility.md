@@ -19,14 +19,14 @@ Tanya's answer begins with the Sages' words, "Judge not your fellow until you ha
 
 ## Step two: check your own effort
 
-The chapter then turns the question inward. Even a person with strong temptations has no excuse, since the mind can govern the heart; but each of us should ask, honestly, do I struggle with my own impulses with the same intensity that the most tempted person would need to bring to his? The chapter lists everyday places where real effort is needed:
+The chapter then turns the question inward. Even a person with strong temptations has no excuse, since the mind can govern the heart; but each of us should ask, honestly, do I struggle with my own impulses with the intensity that my own level calls for, as the most tempted person must with his? The chapter lists everyday places where real effort is needed:
 
 - praying with real focus, which is a wrestling match with the body and the animal soul
 - saying blessings and Grace after Meals with intention
 - doing mitzvot for their own sake
 - studying Torah beyond what comes naturally
 - giving charity generously
-- avoiding words that put another person down, even a remark that seems harmless or a story that makes oneself look good
+- avoiding words that put another person down, even a juicy bit of talk or a true story told to clear your own name
 
 Many of us, if we are honest, are not fighting in these areas as hard as someone fighting a far more difficult battle. Tanya also notes that a person who knows better is held to a higher standard.
 

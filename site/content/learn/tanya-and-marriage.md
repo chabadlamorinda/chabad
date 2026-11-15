@@ -21,9 +21,11 @@ The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter on anger (Epistle 
 
 - The Sages compare an angry person to an idolater, because in that moment he has lost sight that all that happens comes from G-d.
 - The person who hurt you is still a free agent and responsible for his choices. But what reaches us is also part of what Heaven allowed, so anger at the person is misplaced.
-- Anger is justified only in religious duty, such as stopping a fellow Jew from transgressing, never for personal offense.
+- Anger has a place in matters of religious duty, such as stopping a fellow Jew from transgressing, but not over a personal offense.
 
 How can this help a husband and wife? Not by excusing wrongdoing. It helps by lowering the temperature: this is a person I love, in a moment that has also been sent to me, and I choose my reaction. The Rebbe's advice on anger, as Chabad.org quotes it, is simple: "the first step is to wait," and to remember that if you hurt someone you will need to apologize and ask forgiveness in person.
+
+None of this is meant for abuse. If you or your children are being hurt, or you feel afraid at home, these ideas are not the answer: please seek help, and call Rabbi Labkowski (925-384-7242) or Rebbetzin Labkowski (925-384-7241) privately.
 
 ## Mind over heart
 
@@ -35,7 +37,7 @@ In Chapter 30, the Tanya quotes the Sages: "Do not judge your fellow until you h
 
 ## Overlooking small things
 
-Iggeret HaTeshuvah, Chapter 11, says that those who overlook slights and do not hit back are repaid by having their own failings overlooked. This is a good motto for a long marriage. See [forgiving others](/learn/tanya-on-forgiving-others).
+Iggeret HaTeshuvah, Chapter 11, says that those who overlook slights and do not pay them back are repaid by having their own failings overlooked. This is a good motto for a long marriage. See [forgiving others](/learn/tanya-on-forgiving-others).
 
 ## Common questions
 

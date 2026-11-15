@@ -21,14 +21,14 @@ Chapter 27 takes this further. It speaks of sinful thoughts that come while a pe
 
 Tanya adds two honest points:
 
-- **Being very upset can come from pride.** A person who is devastated that such thoughts come to him has forgotten who he is. He is not a tzaddik, and the chapter says that tzaddikim do not have such thoughts.
+- **Being very upset can come from pride.** A person who is devastated that such thoughts come to him has forgotten who he is. He is not a tzaddik, and the chapter says that tzaddikim do not have such thoughts. (This is about ordinary passing thoughts; thoughts that frighten you and will not stop are a different matter, see below.)
 - **Some discomfort is right, but not despair.** Being completely indifferent would end the struggle. But even if the battle lasts a lifetime, Tanya says not to be deeply depressed over it.
 
 ## Chapter 28: thoughts during prayer and study
 
 What about thoughts that arrive when you are trying to pray or learn? Chapter 28 says these are not a cause for joy, as they disturb the service, but also not a reason to give up. Tanya's guidance:
 
-1. **Do not argue.** Answering the thought only invites another one. The chapter compares it to someone trying to distract you by chatting; the best response is to act as if you do not hear him.
+1. **Do not argue.** Answering the thought only invites another one. The chapter compares it to someone who heckles you to throw you off; the best response is to act as if you do not hear him.
 2. **Turn your attention back right away** and strengthen your focus.
 3. **If it will not leave, ask G-d for compassion,** as a father has mercy on his children.
 4. **Do not be discouraged or feel worthless.** Pray with more joy and resolve.

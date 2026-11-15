@@ -31,7 +31,7 @@ The answer is that the Torah's deepest purpose is to lift the soul above the bod
 
 ## Draw close with love
 
-Chapter 32 also teaches how to treat a Jew who is far from Torah and mitzvot. The Alter Rebbe says that such a person is not to be pushed away. Following Hillel, who advised being a disciple of Aaron, we are to love peace, love people and bring them closer to Torah. Chabad.org's article on Ahavat Yisrael adds a practical thought: most Jews today were simply raised without Jewish learning, so kindness works better than scolding.
+Chapter 32 also teaches how to treat a Jew who is far from Torah and mitzvot. The Alter Rebbe says that such a person is not to be pushed away. Following Hillel, who advised being a disciple of Aaron, we are to love peace, love people and bring them closer to Torah. Chabad.org's article on Ahavat Yisrael adds a practical thought: most Jews today were simply not raised in a Torah-observant home, so kindness works better than scolding.
 
 This is the spirit of Chabad of Lamorinda in Lafayette. The welcome is for every Jew in Lafayette, Moraga and Orinda, whatever their background.
 
