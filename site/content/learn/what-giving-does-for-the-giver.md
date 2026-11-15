@@ -9,7 +9,7 @@ Judaism teaches that tzedakah helps the giver at least as much as the receiver. 
 
 ## "The pauper does for the rich man"
 
-Chabad.org quotes this saying of the Sages in its article on tzedakah. It turns our usual picture upside down. We tend to think the giver is the strong one and the receiver the weak one. The Sages say the opposite: the person in need gives the giver the chance to do something good. For that reason there is no reason for the recipient to feel ashamed.
+Chabad.org quotes this saying of the Sages in its article on tzedakah. It turns our usual picture upside down. We tend to think the giver is the strong one and the receiver the weak one. The Sages say the opposite: the person in need gives the giver the chance to do something good. The recipient therefore has no reason to feel ashamed.
 
 Another Chabad.org article adds that when a giver meets someone in need, he or she is humbled. G-d could have supplied that person directly, but chose to give the giver a role. The article calls this being a partner in completing creation, and says the word for a poor person, *ani*, is related to the word for "responding": need is a summons.
 
@@ -26,7 +26,7 @@ The money given is finite. What the giver gains, the article says, is "the gift 
 
 ## Giving gives meaning to our work
 
-Chabad.org also teaches that G-d left us the task of bringing spirituality and meaning into the world, and that tzedakah gives hard-earned money a purpose beyond personal need. Another Chabad.org article puts it this way: we also need meaning, not just food, and giving provides it. For more on this, read about [why the Talmud calls tzedakah equal to all the mitzvot](/learn/tzedakah-equals-all-the-mitzvot).
+Chabad.org also teaches that G-d left us the task of bringing spirituality and meaning into the world, and that tzedakah gives hard-earned money a purpose beyond personal need. Another Chabad.org article puts it this way: we also need meaning, not just food, and giving provides it. To see why this makes tzedakah so important, read [why the Talmud calls tzedakah equal to all the mitzvot](/learn/tzedakah-equals-all-the-mitzvot).
 
 ## Even those who receive give
 
@@ -45,7 +45,7 @@ Chabad.org explains that giving refines the giver's character, builds sensitivit
 It means that the person in need gives you the opportunity to do a mitzvah and become a partner with G-d. Chabad.org quotes the Sages: "More than the rich man does for the pauper, the pauper does for the rich man."
 
 ### Does giving make you happier in Judaism?
-Chabad.org says generosity brings a sense of inner fulfillment and joy. We do not rely on studies here, only on what Jewish teaching says.
+Chabad.org says generosity brings a sense of inner fulfillment and joy.
 
 ### Should a person who receives help also give?
 Yes. Chabad.org says even someone supported by a communal fund should give something, so everyone has the dignity of being a giver.

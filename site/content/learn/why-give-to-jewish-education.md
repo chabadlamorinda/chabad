@@ -23,7 +23,7 @@ This is why a school is not a luxury. It is a partner that helps parents do what
 
 Chabad.org's basics of tzedakah give an order of priorities: family members in serious need first, then local causes before distant ones, then Israel. Torah schools are named among the recipients of tzedakah. See [Tzedakah Priorities](/learn/tzedakah-priorities).
 
-In Chabad custom, a bar mitzvah boy gives tzedakah from his own money on his birthday, and Chabad.org says it should preferably go to an institution involved with *chinuch*. The Jewish tradition keeps pointing to education as a place to give. See [Tzedakah at a Bar or Bat Mitzvah](/learn/tzedakah-at-a-bar-mitzvah).
+In Chabad custom, a bar mitzvah boy gives tzedakah from his own money on the day of his Bar Mitzvah, and Chabad.org says it should preferably go to an institution involved with *chinuch*. The Jewish tradition keeps pointing to education as a place to give. See [Tzedakah at a Bar or Bat Mitzvah](/learn/tzedakah-at-a-bar-mitzvah).
 
 ## What a gift to education does in Lamorinda
 

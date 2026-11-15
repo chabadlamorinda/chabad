@@ -1,6 +1,6 @@
 ---
 title: A Plain Wooden Casket and White Shrouds: Why Every Jew Is Buried the Same Way
-description: Why are Jews buried in simple white shrouds and a plain wooden casket? The meaning of Jewish burial equality, and what to ask the funeral home. Call 925-384-7242.
+description: Why are Jews buried in simple white shrouds and a plain wooden casket? The meaning of Jewish burial equality. Call Rabbi Labkowski: 925-384-7242.
 category: Mourning & remembrance
 related: jewish-burial-financial-help, chevra-kadisha-and-tahara, jewish-funeral, why-jewish-burial-matters, planning-a-jewish-funeral-in-advance
 local: Choosing a casket or shrouds? Call Rabbi Yisroel Labkowski at 925-384-7242 and he will tell you what a Jewish burial needs, and help if cost is a worry.

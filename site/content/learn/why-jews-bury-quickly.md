@@ -1,6 +1,6 @@
 ---
 title: Why Jews Bury Quickly: Burial Within a Day and When a Delay Is Allowed
-description: Why does Jewish law call for burial within 24 hours? What delays are allowed, and what about Shabbat? A clear, gentle answer. Call the Rabbi: 925-384-7242.
+description: Why does Jewish law call for burial within 24 hours? What delays are allowed, and what about Shabbat? A gentle answer. Call the Rabbi: 925-384-7242.
 category: Mourning & remembrance
 related: first-hours-after-a-death, jewish-funeral, aninut, why-jewish-burial-matters, shabbat
 local: Not sure when the funeral can be? Call Rabbi Yisroel Labkowski at 925-384-7242 (Rebbetzin Tzipora: 925-384-7241) and we will help you plan the timing.

@@ -1,6 +1,6 @@
 ---
 title: Embalming, Viewing and Open Caskets: The Jewish View, Explained Gently
-description: Is embalming allowed in Judaism? Why Jews do not hold open-casket viewings, and what to tell the funeral home or hospital. Call Rabbi Labkowski, 925-384-7242.
+description: Is embalming allowed in Judaism? Why Jews do not hold open-casket viewings, and what to tell the funeral home. Call Rabbi Labkowski: 925-384-7242.
 category: Mourning & remembrance
 related: autopsy-jewish-view, jewish-funeral, first-hours-after-a-death, cremation-jewish-view, why-jewish-burial-matters
 local: Are the funeral home or hospital asking about embalming or a viewing? Call Rabbi Yisroel Labkowski at 925-384-7242 and he will help you speak with them.

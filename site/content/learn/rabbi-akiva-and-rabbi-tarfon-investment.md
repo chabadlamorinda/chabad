@@ -19,7 +19,7 @@ Tarfon rose, kissed Akiva on the head, and called him his teacher in wisdom and 
 
 ## What Akiva understood
 
-Land can be lost and coins can be spent. A good deed is not lost. Akiva understood that Tarfon's real need was not another estate but a way to make his wealth last, and he found the best "investment" available.
+Land can be lost and coins can be spent. A good deed is not lost. Akiva understood that Tarfon's real need was not another estate but a way to make his wealth last, and he found the best "investment" available. He did it not for show but for his friend, and he waited until his friend asked before he explained. There is humility in that too: a good deed that does not need to announce itself.
 
 Notice Tarfon's response. He could have been angry that his money was given away without his knowledge. Instead he saw the truth, thanked his friend and called him his teacher. The story honors both men: the one who gave wisely and the one who could hear a hard truth with humility.
 
