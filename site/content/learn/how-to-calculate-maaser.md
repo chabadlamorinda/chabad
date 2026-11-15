@@ -14,7 +14,7 @@ Chabad.org explains that maaser is taken from your income after the amounts that
 - **Deducted:** income tax, Social Security and disability insurance withheld from your pay, and, for a business, real business expenses.
 - **Generally not deducted:** your personal living costs, such as rent, food and clothing. Those are part of ordinary life, and the tenth is calculated before them.
 
-If you do not yet know your final tax bill (for example, if you are self-employed), Chabad.org says you can calculate once a year when your taxes are known, or estimate your taxes and adjust later. Some authorities are more lenient on certain taxes, especially for someone in financial need, so ask the Rabbi. Your tax advisor can help with the tax side.
+If you do not yet know your final tax bill (for example, if you are self-employed), Chabad.org says you can calculate once a year when your taxes are known, or estimate your taxes and adjust later. Chabad.org notes that someone in financial need should ask a rabbi whether sales and property taxes may be deducted. Your tax advisor can help with the tax side.
 
 ## What counts as income?
 

@@ -13,7 +13,7 @@ A retirement account passes to whoever is named on the account's beneficiary for
 
 ## Why many people choose a retirement account
 
-Chabad.org explains that retirement assets are often heavily taxed when someone inherits them, so naming a nonprofit can allow you to leave other assets, which are taxed less, to your family. How this applies to you depends on your situation, your family and the law. Please ask your tax advisor and your attorney. This guide gives no tax or legal advice and no figures.
+Chabad.org describes a retirement account as one of the most tax-efficient ways to fund a gift to a nonprofit, which may let you leave other assets, taxed less heavily, to your family. How this applies to you depends on your situation, your family and the law. Please ask your tax advisor and your attorney. This guide gives no tax or legal advice and no figures.
 
 ## Steps to name Chabad of Lamorinda
 
@@ -37,7 +37,7 @@ Ask your IRA custodian for a beneficiary designation form, write in the charity'
 Yes. Chabad of Lamorinda accepts gifts from retirement accounts. Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241, and give your plan company the details on the [legacy page](/legacy).
 
 ### Why do people name a charity on a retirement account?
-Chabad.org says these assets are often heavily taxed when inherited, so a nonprofit can be a thoughtful choice. Ask your tax advisor how this applies to you.
+Chabad.org describes a retirement account as one of the most tax-efficient ways to fund a gift to a nonprofit. Ask your tax advisor how this applies to you.
 
 ### Can I name both my children and a charity?
 Yes. A beneficiary form usually lets you give each person or organization a percentage. Ask your plan company or advisor.

@@ -34,7 +34,7 @@ The Chabad.org pages we reviewed do not say how maaser applies to retirement acc
 
 ## A one-time windfall
 
-Chabad.org says maaser applies to gifts, inheritance, and even money found with no identifiable owner, and it uses examples such as a bar mitzvah check and a lottery win. The article's closing thought: it is only an investment, meaning that tithing is a good partnership, not a loss.
+Chabad.org says maaser applies to all income, including gifts, inheritance and even money found with no identifiable owner, so a sudden windfall is generally included.
 
 One exception: money given to you for a specific purpose, such as rent or tuition, is not counted, as explained in [How to Calculate Maaser](/learn/how-to-calculate-maaser).
 
@@ -55,7 +55,7 @@ Chabad.org says maaser is not taken until you sell and receive the profit.
 ### Does maaser apply to a retirement account?
 We did not find this settled on the Chabad.org pages we reviewed, so please ask the Rabbi and your tax advisor.
 
-### Do I give maaser on an inheritance or lottery win?
+### Do I give maaser on an inheritance or a windfall?
 Chabad.org says maaser applies to inheritance and other windfalls, unless the money was given for a specific purpose.
 
 ### Can my business give maaser directly?

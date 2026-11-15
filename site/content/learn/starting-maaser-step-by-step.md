@@ -53,7 +53,7 @@ Chabad.org says that up to a fifth is commendable and a fifth is generally the u
 At least once a year. Chabad.org suggests choosing in advance whether to count by the fiscal year or the Hebrew year.
 
 ### Where can I give my maaser in Lamorinda?
-Many families in Lafayette, Moraga and Orinda support Jewish life locally. Call Rabbi Labkowski at 925-384-7242 to hear what is possible, or visit [Donate](/donate).
+Chabad of Lamorinda supports Jewish life in Lafayette, Moraga and Orinda. Call Rabbi Labkowski at 925-384-7242 to hear what is possible, or visit [Donate](/donate).
 
 ## Take the next step
 

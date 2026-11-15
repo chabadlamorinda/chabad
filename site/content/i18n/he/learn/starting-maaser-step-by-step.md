@@ -1,6 +1,6 @@
 ---
-title: How to Start Giving Maaser: A Simple Step-by-Step Plan
-description: How to start giving maaser, the Jewish tenth, step by step: a separate account, a monthly habit, starting small and what to do after a missed month.
+title: איך מתחילים לתת מעשר: תוכנית פשוטה צעד אחר צעד
+description: איך מתחילים לתת מעשר צעד אחר צעד: חשבון נפרד, הרגל חודשי, להתחיל בקטן ומה עושים אחרי חודש שהוחמץ.
 category: Jewish ideas
 related: the-blessing-of-giving-maaser, what-maaser-can-and-cannot-pay-for, how-to-calculate-maaser, giving-when-money-is-tight, pushka
 local: מתחילים לתת מעשר ורוצים הדרכה ידידותית? התקשרו אל הרב לבקובסקי, 925-384-7242, או כתבו דרך /help/talk-to-the-rabbi. בלי שיפוטיות, רק עזרה.
@@ -53,7 +53,7 @@ Chabad.org אומר שעד חומש משובח וחומש הוא בדרך כלל
 לפחות פעם בשנה. Chabad.org מציע לבחור מראש אם לספור לפי שנת הכספים או השנה העברית.
 
 ### איפה אפשר לתת את המעשר בלמורינדה?
-משפחות רבות בלאפייט, במוראגה ובאורינדה תומכות בחיים היהודיים במקום. התקשרו אל הרב לבקובסקי, 925-384-7242, לשמוע מה אפשרי, או בקרו ב[תרומה](/donate).
+חב"ד למורינדה תומכת בחיים היהודיים בלאפייט, במוראגה ובאורינדה. התקשרו אל הרב לבקובסקי, 925-384-7242, לשמוע מה אפשרי, או בקרו ב[תרומה](/donate).
 
 ## הצעד הבא
 

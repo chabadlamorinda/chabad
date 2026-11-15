@@ -1,6 +1,6 @@
 ---
-title: Maaser for Business Owners and Investors: Profit, Stock, Windfalls
-description: How Jewish tithing works for business profit, investments, stock and a sudden windfall, as Chabad.org explains it, and when to ask the Rabbi.
+title: מעשר לבעלי עסקים ולמשקיעים: רווח, מניות וכסף שנפל פתאום
+description: איך מחשבים מעשר על רווחי עסק, השקעות, מניות וכסף שנפל פתאום, כפי ש-Chabad.org מסביר, ומתי לשאול את הרב.
 category: Jewish ideas
 related: what-maaser-can-and-cannot-pay-for, how-to-calculate-maaser, business-ethics, parnassah-work-and-livelihood, maaser
 local: בעלי עסק או השקעות בלמורינדה? התקשרו אל הרב לבקובסקי, 925-384-7242, או כתבו דרך /help/talk-to-the-rabbi כדי לחשב את המעשר שלכם.
@@ -34,7 +34,7 @@ Chabad.org נותן גם את הדוגמה של מכירת בית: המעשר ח
 
 ## כסף שנפל פתאום
 
-Chabad.org אומר שהמעשר חל על מתנות, ירושה ואפילו כסף שנמצא ללא בעלים ידוע, ומביא דוגמאות כמו צ'ק של בר מצווה וזכייה בלוטו. המחשבה החותמת של המאמר: זו רק השקעה, כלומר המעשר הוא שותפות טובה ולא הפסד.
+Chabad.org אומר שהמעשר חל על כל הכנסה, כולל מתנות, ירושה ואפילו כסף שנמצא ללא בעלים ידוע, ולכן כסף שנפל פתאום בדרך כלל נכלל.
 
 יוצא מן הכלל אחד: כסף שניתן לכם למטרה מסוימת, כמו שכר דירה או שכר לימוד, אינו נספר, כמבואר ב[איך מחשבים מעשר](/learn/how-to-calculate-maaser).
 
@@ -55,7 +55,7 @@ Chabad.org אומר שלא מפרישים מעשר עד שמוכרים ומקב�
 ### האם המעשר חל על חשבון פנסיה?
 לא מצאנו שאלה זו מוכרעת בדפי Chabad.org שבדקנו, ולכן שאלו את הרב ואת יועץ המס.
 
-### האם נותנים מעשר מירושה או מזכייה בלוטו?
+### האם נותנים מעשר מירושה או מכסף שנפל פתאום?
 Chabad.org אומר שהמעשר חל על ירושה ועל כסף שנפל פתאום, אלא אם הכסף ניתן למטרה מסוימת.
 
 ### האם העסק יכול לתת מעשר ישירות?

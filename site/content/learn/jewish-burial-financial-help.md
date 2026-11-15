@@ -2,7 +2,7 @@
 title: Can't Afford a Jewish Funeral? Help Is Available. Call the Rabbi
 description: Can't afford a Jewish funeral? Jewish burial can all be arranged even with no budget, and financial help is available. Call Rabbi Labkowski, 925-384-7242.
 category: Mourning & remembrance
-related: first-hours-after-a-death, why-jewish-burial-matters, jewish-funeral, plain-pine-casket-and-shrouds, jewish-funerals-near-lafayette
+related: first-hours-after-a-death, why-jewish-burial-matters, jewish-funeral, plain-wooden-casket-and-shrouds, jewish-funerals-near-lafayette
 local: Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241 before you worry about money. There is no shame in asking.
 ---
 If you cannot afford a Jewish funeral, please call Rabbi Yisroel Labkowski at 925-384-7242 right now: Jewish burial can all be arranged even if there is no budget, and financial help is available. Money should never be the reason a Jew is denied a proper Jewish burial.
@@ -19,7 +19,7 @@ Please do not make decisions about the funeral under pressure. Ask us first. No 
 
 ## Why Jewish burial is meant to be simple
 
-A traditional Jewish burial is simple by design, and this is itself a form of respect. Chabad.org explains that the plain white shrouds are the same for everyone, so that those who cannot afford fine clothing are not embarrassed, and that money which might have gone to an ornate casket is better given to charity in the memory of the person who died. The casket is plain, unlined and made of wood. Read more in [a plain wooden casket and white shrouds](/learn/plain-pine-casket-and-shrouds).
+A traditional Jewish burial is simple by design, and this is itself a form of respect. Chabad.org explains that the plain white shrouds are the same for everyone, so that those who cannot afford fine clothing are not embarrassed, and that money which might have gone to an ornate casket is better given to charity in the memory of the person who died. The casket is plain, unlined and made of wood. Read more in [a plain wooden casket and white shrouds](/learn/plain-wooden-casket-and-shrouds).
 
 ## The community has always cared for those in need
 

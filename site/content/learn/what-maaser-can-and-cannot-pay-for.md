@@ -13,7 +13,7 @@ Chabad.org explains that some authorities say maaser is only for the poor, as th
 
 Chabad.org lists examples of communal causes: a synagogue, a yeshivah, a mikvah and a Torah library. It also says that supporting someone else's Torah learning is fine, and so is publishing Torah books. Poor relatives come before others, and a charity dinner is fine, as long as you subtract the value of the meal you receive.
 
-Good practice, says Chabad.org, is to pay for mitzvahs from your own money when you can and save maaser mainly for charity. See [Tzedakah Priorities](/learn/tzedakah-priorities) for more on where giving does the most good.
+See [Tzedakah Priorities](/learn/tzedakah-priorities) for more on where giving does the most good.
 
 ## What maaser should not pay for
 
@@ -29,15 +29,13 @@ People often ask about three common cases:
 
 **Children's tuition.** Chabad.org says this is complicated. Some say maaser may be used for Torah education tuition, while others limit it, depending on the child's age, the family's finances and what the money covers. Do not decide alone: ask the Rabbi.
 
-**Synagogue dues.** Dues are a payment you owe for belonging, so like other existing obligations they are usually a question for your Rabbi. A gift beyond your dues is different.
+**Synagogue dues and program fees.** The Chabad.org pages we reviewed do not mention them by name, so please ask the Rabbi.
 
-**Dues for services you receive.** Paying for something you get in return is not a gift. At a charity dinner, only the part above the value of what you received counts.
-
-The Chabad.org pages we reviewed do not list dues or program fees by name, so for each of these, please ask the Rabbi.
+**Paying for something you receive.** At a charity dinner, Chabad.org says, only the part above the value of the meal counts as maaser.
 
 ## Giving to Chabad of Lamorinda
 
-Supporting Jewish education and community life in Lafayette, Moraga and Orinda is a place many families direct their giving. To learn about the programs, see [Chabad of Lamorinda's programs](/programs/adult-education) or call 925-384-7242.
+Chabad of Lamorinda supports Jewish education and community life in Lafayette, Moraga and Orinda. To hear where your gift can help most, call 925-384-7242.
 
 A grant from your donor-advised fund to Chabad of Lamorinda counts as maaser; Rabbi Labkowski has confirmed this. To arrange one, contact Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. For the background see [Donor-Advised Funds and Tzedakah](/learn/donor-advised-funds-and-tzedakah) and [Donate](/donate). Ask your tax advisor about the tax side.
 

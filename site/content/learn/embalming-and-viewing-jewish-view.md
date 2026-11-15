@@ -55,7 +55,7 @@ Out of respect, Jewish tradition does not gaze at the face of the person after d
 
 ### Are cosmetics or special clothing allowed for the deceased?
 
-No. The person is dressed in plain white shrouds, as Chabad.org explains, and the body is not altered. See [a plain wooden casket and white shrouds](/learn/plain-pine-casket-and-shrouds).
+No. The person is dressed in plain white shrouds, as Chabad.org explains, and the body is not altered. See [a plain wooden casket and white shrouds](/learn/plain-wooden-casket-and-shrouds).
 
 ### What if embalming was already done?
 

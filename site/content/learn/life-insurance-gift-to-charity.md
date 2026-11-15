@@ -9,7 +9,7 @@ You can give through life insurance by naming a charity, such as a synagogue, as
 
 ## A simple kind of legacy gift
 
-Chabad.org lists life insurance together with annuities, bank accounts and donor-advised funds as gifts made through a beneficiary designation. It describes this as one of the easiest ways to give: usually a one-page form, with no attorney needed and no change to your will. Your insurer, bank or fund manager can send you a "Change of Beneficiary" form.
+Chabad.org lists life insurance together with annuities, bank accounts and donor-advised funds as gifts made through a beneficiary designation. It describes it as simple: usually a one-page form, with no attorney needed and no change to your will. Your insurer, bank or fund manager can send you a "Change of Beneficiary" form.
 
 This guide is not legal, tax or financial advice, and it does not recommend any insurance product. Please ask your attorney or advisor.
 

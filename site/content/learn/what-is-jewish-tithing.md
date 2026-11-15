@@ -5,7 +5,7 @@ category: Jewish ideas
 related: how-to-calculate-maaser, maaser, tzedakah, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for
 local: Curious how maaser could work for your family? Call Rabbi Labkowski at 925-384-7242 or write through /help/talk-to-the-rabbi.
 ---
-Jewish tithing is called maaser kesafim (מעשר כספים), setting aside a tenth of your income for tzedakah, charity. In Jewish practice the common custom is to give 10 percent of what you earn, and it is a gift of gratitude that many families in Lafayette, Moraga, Orinda and across the East Bay keep every month.
+Jewish tithing is called maaser kesafim (מעשר כספים), setting aside a tenth of your income for tzedakah, charity. In Jewish practice the common custom is to give 10 percent of what you earn, and it is a gift of gratitude that any family in Lafayette, Moraga, Orinda and across the East Bay can begin.
 
 ## What does "maaser" mean?
 
@@ -23,7 +23,7 @@ Maaser kesafim, the tenth of money, grew out of this. Chabad.org explains that i
 
 ## Who gives maaser?
 
-The simple answer is: everyone who earns income and can afford it. Chabad.org notes that because most people do not separate tithes from produce, everyone should tithe their earnings.
+The simple answer is: everyone who earns income and can afford it. Chabad.org cites those who point out that because most people do not separate tithes from produce, everyone should tithe their earnings.
 
 Your own basic needs come first. If you cannot cover food, clothing and shelter, you are not obligated to give maaser, though you should still give what you can. Chabad.org adds that the Rebbe encouraged giving a partial amount where a full tenth is not possible. There is more in [Giving When Money Is Tight](/learn/giving-when-money-is-tight).
 
@@ -33,7 +33,7 @@ A tenth is the standard measure. Chabad.org quotes Maimonides: the most desirabl
 
 ## Why many Jews keep it
 
-Many people find that maaser brings clarity. Money is no longer a daily argument ("Should I give? How much?"). The decision is made once, and the giving is calm and regular. Jewish teaching also sees our money as a trust from G-d, and tithing is a way of saying thank you. Chabad teaches that maaser is Hashem's promise of success: the Talmud reads the Torah's words as "give a tenth so that you will become rich," and the Rabbi teaches that this is a promise about maaser. Read more in [The Blessing of Giving Maaser](/learn/the-blessing-of-giving-maaser).
+Many people find that maaser brings clarity. Money is no longer a daily argument ("Should I give? How much?"). The decision is made once, and the giving is calm and regular. Jewish teaching also sees our money as a trust from G-d, and tithing is a way of saying thank you. Chabad teaches, and the Rabbi teaches, that maaser is Hashem's promise of success: the Talmud (Taanit 9a) reads the Torah's words as "give a tenth so that you will become rich," and in the prophet Malachi (3:10) Hashem says of the tithe, "test Me." This promise is about maaser, a tenth of income. If you are going through a hard time, call the Rabbi at 925-384-7242. Read more in [The Blessing of Giving Maaser](/learn/the-blessing-of-giving-maaser).
 
 ## Common questions
 

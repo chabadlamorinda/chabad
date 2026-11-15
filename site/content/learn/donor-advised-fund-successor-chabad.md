@@ -9,7 +9,7 @@ What happens to a donor-advised fund after you die depends on the form you fille
 
 ## Two choices to ask about
 
-Chabad.org lists a donor-advised fund among the accounts for which you can name a beneficiary, using a "Change of Beneficiary" form from the fund manager. The [legacy page](/legacy) of Chabad of Lamorinda mentions both choices:
+Chabad.org lists a donor-advised fund among the accounts for which you can name a beneficiary, using a "Change of Beneficiary" form from the fund manager. The [legacy page](/legacy) says Chabad of Lamorinda may be named as a successor or a beneficiary of a fund. Funds commonly offer two choices:
 
 - **A beneficiary charity.** The remaining balance goes to the charity or charities you name.
 - **A successor.** A person you name, such as a child, takes over the fund and recommends the grants.

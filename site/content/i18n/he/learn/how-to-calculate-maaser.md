@@ -1,6 +1,6 @@
 ---
-title: How to Calculate Maaser: Net or Gross, and What Counts
-description: How to calculate maaser, the Jewish tenth: net or gross income, gifts, bonuses and what is not income, with a simple example and an invitation to ask.
+title: איך מחשבים מעשר: נטו או ברוטו, ומה נחשב הכנסה
+description: איך מחשבים מעשר: הכנסה נטו או ברוטו, מתנות, בונוסים ומה אינו הכנסה, עם דוגמה פשוטה והזמנה לשאול את הרב.
 category: Jewish ideas
 related: maaser-for-business-owners-and-investors, what-maaser-can-and-cannot-pay-for, starting-maaser-step-by-step, maaser, giving-when-money-is-tight
 local: לא בטוחים איך המעשר חל על המשכורת שלכם? התקשרו אל הרב לבקובסקי, 925-384-7242, או כתבו דרך /help/talk-to-the-rabbi.
@@ -14,7 +14,7 @@ Chabad.org מסביר שמפרישים מעשר מההכנסה אחרי הסכו
 - **מנכים:** מס הכנסה, ביטוח לאומי וביטוח נכות שנוכו מהשכר, ובעסק, הוצאות עסק אמיתיות.
 - **בדרך כלל לא מנכים:** הוצאות המחיה האישיות, כמו שכר דירה, אוכל ובגדים. הן חלק מהחיים הרגילים, והעשירית מחושבת לפניהן.
 
-אם אינכם יודעים עדיין מה יהיה חשבון המס הסופי (למשל עצמאים), Chabad.org אומר שאפשר לחשב פעם בשנה כשהמסים ידועים, או להעריך את המסים ולתקן אחר כך. יש פוסקים מקלים בכמה מסים, במיוחד למי שנצרך, ולכן שאלו את הרב. יועץ המס שלכם יעזור בצד של המס.
+אם אינכם יודעים עדיין מה יהיה חשבון המס הסופי (למשל עצמאים), Chabad.org אומר שאפשר לחשב פעם בשנה כשהמסים ידועים, או להעריך את המסים ולתקן אחר כך. Chabad.org מציין שמי שנמצא בדוחק כלכלי ישאל את הרב אם אפשר לנכות מס קנייה ומס רכוש. יועץ המס שלכם יעזור בצד של המס.
 
 ## מה נחשב הכנסה?
 

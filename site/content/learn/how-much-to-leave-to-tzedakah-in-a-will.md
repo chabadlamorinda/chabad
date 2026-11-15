@@ -25,7 +25,7 @@ Chabad.org says maaser applies to all income, and lists inheritance among them. 
 
 ## What a gift to Chabad of Lamorinda does
 
-Chabad of Lamorinda accepts legacy gifts, and they fund education for future generations, Jewish continuity and Jewish life in Lafayette, Moraga and Orinda. There is no minimum. Legacy gifts can be a set amount, a percentage or what remains; see [How to Leave Money to a Synagogue in Your Will](/learn/leaving-chabad-in-your-will) and the [legacy page](/legacy). This guide is not legal or tax advice.
+Chabad of Lamorinda accepts legacy gifts, and they fund education for future generations, Jewish continuity and Jewish life in Lafayette, Moraga and Orinda. Legacy gifts can be a set amount, a percentage or what remains; see [How to Leave Money to a Synagogue in Your Will](/learn/leaving-chabad-in-your-will) and the [legacy page](/legacy). This guide is not legal or tax advice.
 
 ## Common questions
 
