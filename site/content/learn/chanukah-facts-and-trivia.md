@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: chanukah-glossary, chanukah-story, dreidel, chanukah-gelt, why-chanukah-changes-dates
 local: Got a Chanukah question that is not here? Call Rabbi Labkowski at 925-384-7242, or join us at /events/chanukah-grand-menorah-lighting-2026.
 ---
-Here are 18 Chanukah facts, drawn from Chabad.org, that surprise even people who have lit the menorah all their lives. Chanukah is not mentioned in the Bible, potato latkes came long after cheese pancakes, and the holiday can begin on any day of the week except Tuesday.
+Here are 18 Chanukah facts that surprise even people who have lit the menorah all their lives. Chanukah is not mentioned in the Bible, potato latkes came long after cheese pancakes, and the holiday can begin on any day of the week except Tuesday.
 
 ## The story and the Sages
 
@@ -27,7 +27,7 @@ Here are 18 Chanukah facts, drawn from Chabad.org, that surprise even people who
 
 11. **"Menorah" means lamp.** The Temple had a seven-branched gold candelabrum, kindled daily, and its oil miracle inspired the Sages to establish Chanukah.
 12. **One per person or one per home.** Some Sephardic communities use one menorah per household, so the number of lit candles is visible at a glance. Ashkenazim customarily have one per person.
-13. **A Modern Hebrew word.** Speakers say *hanukkiah* for the Chanukah lamp, a modern term Chabad.org attributes to Hemda Ben Yehudah (1873 to 1951).
+13. **A Modern Hebrew word.** Speakers say *hanukkiah* for the Chanukah lamp, a modern term attributed to Hemda Ben Yehudah (1873 to 1951).
 14. **The Israeli dreidel.** In Israel, the dreidel's shin (ש) is replaced by pey (פ), so it says "a great miracle happened here." The four letters add up to 138, the value of *tzemach*, a name for the Messiah. See [Chanukah in Israel](/learn/chanukah-in-israel).
 
 ## Foods and the modern world
@@ -43,7 +43,7 @@ Here are 18 Chanukah facts, drawn from Chabad.org, that surprise even people who
 No. Chanukah is not mentioned in the 24 books of the Bible, which were sealed before the miracle. The Talmud tells its story briefly.
 
 ### Why do we eat latkes on Chanukah?
-Fried foods recall the oil that burned in the Temple for eight days. Chabad.org adds that cheese pancakes, recalling Judith, were an older custom, and potato latkes came later. See [latkes](/learn/latkes).
+Fried foods recall the oil that burned in the Temple for eight days. Jewish tradition adds that cheese pancakes, recalling Judith, were an older custom, and potato latkes came later. See [latkes](/learn/latkes).
 
 ### Can Chanukah start on any day of the week?
 It can start on any day except Tuesday, because Cheshvan can have 29 or 30 days.
@@ -55,7 +55,7 @@ A family of priests, the Kohanim, who led the revolt against the Seleucid Greek 
 Not with candles, which were not possible. In 1993 astronaut Jeffrey Hoffman brought a traveling menorah and a dreidel and showed them by live satellite.
 
 ### How many public menorahs are there, and is there one near Lafayette, Moraga and Orinda?
-Chabad.org counted more than 15,000 public menorahs worldwide by 2016. In Lafayette, join Chabad of Lamorinda's Light Up Lafayette lighting at Lafayette Plaza Park.
+By 2016 there were more than 15,000 public menorahs worldwide. In Lafayette, join Chabad of Lamorinda's Light Up Lafayette lighting at Lafayette Plaza Park.
 
 ## Take the next step
 

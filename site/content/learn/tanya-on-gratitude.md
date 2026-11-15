@@ -13,7 +13,7 @@ Judaism has a name for gratitude: [hakarat hatov](/learn/hakarat-hatov), "recogn
 
 ## Life is given to us every moment
 
-In Epistle 11 of the Iggeret HaKodesh, which is on Chabad.org, the Alter Rebbe writes that creation is not a one-time event. Life flows to us all the time from G-d, and that source is beyond the grasp of any mind. He describes the purpose of faith as knowing that G-d is everywhere and that life comes from Him.
+In Epistle 11 of the Iggeret HaKodesh, the Alter Rebbe writes that creation is not a one-time event. Life flows to us all the time from G-d, and that source is beyond the grasp of any mind. He describes the purpose of faith as knowing that G-d is everywhere and that life comes from Him.
 
 If that is true, then every breath is a kindness. You did not make the life you are living. You received it a moment ago and you are receiving it now. This is the root of the morning words [Modeh Ani](/learn/modeh-ani), which thank G-d for the new day.
 
@@ -21,13 +21,13 @@ If that is true, then every breath is a kindness. You did not make the life you 
 
 The same epistle makes a surprising connection. The Alter Rebbe says that someone who feels grief and complains is acting as if some good were missing, and so the Kabbalists strongly rejected sadness. He is not criticizing people for being human. He is pointing at the link between faith and joy: the more we remember who gives us life, the more room there is for joy.
 
-Chapter 26 of the Tanya, also on Chabad.org, adds that serving G-d needs energy and an open heart, not heaviness. Gratitude is one simple way to open the heart.
+Chapter 26 of the Tanya adds that serving G-d needs energy and an open heart, not heaviness. Gratitude is one simple way to open the heart.
 
 When pain is real, none of this means you must feel thankful for it. Tanya's guidance is spiritual, and it sits beside professional help when sadness is heavy. See [Tanya in hard times](/learn/tanya-in-hard-times). Ask the Rabbi about your own situation.
 
 ## Joy as an inheritance
 
-In Chapter 33 of the Tanya, on Chabad.org, the Alter Rebbe teaches that deep awareness of G-d's presence brings real joy. He compares it to the joy of a simple person when a king visits his home. The chapter also points to the words the Sages set in the daily prayers, "How fortunate are we! How good is our portion," and compares this awareness of G-d to a great inheritance from our ancestors, which we did not earn.
+In Chapter 33 of the Tanya, the Alter Rebbe teaches that deep awareness of G-d's presence brings real joy. He compares it to the joy of a simple person when a king visits his home. The chapter also points to the words the Sages set in the daily prayers, "How fortunate are we! How good is our portion," and compares this awareness of G-d to a great inheritance from our ancestors, which we did not earn.
 
 You do not have to manufacture a feeling. You are invited to notice a gift that is already there.
 
@@ -44,7 +44,7 @@ These are suggestions in the spirit of the Tanya, not quotations from it.
 ## Common questions
 
 ### What does the Tanya say about gratitude?
-The Tanya teaches that life and kindness come from G-d at every moment, and that faith in this brings joy. It does not give a rule list for thankfulness; it gives a way of seeing. See Epistle 11 on Chabad.org.
+The Tanya teaches that life and kindness come from G-d at every moment, and that faith in this brings joy. It does not give a rule list for thankfulness; it gives a way of seeing. See Epistle 11 of the Iggeret HaKodesh.
 
 ### How do I become more grateful in Judaism?
 Say Modeh Ani each morning, make blessings, thank people by name and give tzedakah. These are classic Jewish habits. See [hakarat hatov](/learn/hakarat-hatov).

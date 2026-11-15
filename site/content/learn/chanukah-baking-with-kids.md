@@ -7,16 +7,16 @@ local: Bring the kids to decorate a doughnut at Light Up Lafayette on Dec. 6 at 
 ---
 Chanukah baking with kids can be as easy as cutting dreidel cookies, tucking a piece of gelt into the dough, or decorating doughnuts with glaze and sprinkles. It is a way to bring the holiday's story into your kitchen, with adults handling anything hot.
 
-## Ideas from Chabad.org
+## Ideas to start with
 
-Chabad.org's Chanukah dessert recipes include peanut butter gelt cookies with a chocolate-gelt center, a surprise cake with coins hidden inside, chocolate thumbprint cookies, honey and spice cookies, butter cookie dreidels, chocolate mint coins, gelt fudge, and colorful "paint-splatter" cookies cut with a dreidel cutter. Its kids' recipe page also has jelly doughnuts and a guide to decorating doughnuts. Those pages have the full amounts and steps, so open them for the recipes.
+Chanukah dessert ideas include peanut butter gelt cookies with a chocolate-gelt center, a surprise cake with coins hidden inside, chocolate thumbprint cookies, honey and spice cookies, butter cookie dreidels, chocolate mint coins, gelt fudge, and colorful "paint-splatter" cookies cut with a dreidel cutter. Its kids' recipe page also has jelly doughnuts and a guide to decorating doughnuts. Those pages have the full amounts and steps, so open them for the recipes.
 
 ## Five easy projects
 
 1. **Dreidel cookies.** Roll out dough, cut with a dreidel cookie cutter, and let the children decorate with icing. The four Hebrew letters on the dreidel stand for "a great miracle happened there" (see [dreidel](/learn/dreidel)).
-2. **Gelt cookies.** Press a piece of chocolate gelt into the center of a baked cookie, like Chabad.org's gelt cookie idea. Use pareve or dairy gelt to match the dough ([kosher gelt and candy](/learn/kosher-chanukah-candy-and-gelt)).
-3. **Doughnut decorating.** Buy or bake plain doughnuts and set out bowls of glaze and sprinkles. Chabad.org's kids' page links a guide to decorating doughnuts. This is also what children can do at the Chanukah celebration (see below).
-4. **Paint-splatter cookies.** Colorful icing flicked on cookies, as in Chabad.org's recipe. Cover the table first.
+2. **Gelt cookies.** Press a piece of chocolate gelt into the center of a baked cookie, a popular idea. Use pareve or dairy gelt to match the dough ([kosher gelt and candy](/learn/kosher-chanukah-candy-and-gelt)).
+3. **Doughnut decorating.** Buy or bake plain doughnuts and set out bowls of glaze and sprinkles. Many families decorate doughnuts this way. This is also what children can do at the Chanukah celebration (see below).
+4. **Paint-splatter cookies.** Colorful icing flicked on cookies, a favorite with children. Cover the table first.
 5. **Gelt-in-a-cake.** A cake that hides chocolate coins inside, so the children find the "gelt" when they cut it.
 
 Let the children measure, stir, press and sprinkle. An adult does all frying, oven work and hot oil. For frying safety, see [frying safely on Chanukah](/learn/frying-safely-on-chanukah).

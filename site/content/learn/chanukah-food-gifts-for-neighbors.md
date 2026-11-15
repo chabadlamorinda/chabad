@@ -9,11 +9,11 @@ A good Chanukah food gift is a small, sealed treat with a clear kosher symbol, s
 
 ## Why give food on Chanukah?
 
-Chanukah's mitzvah is to bring light, and Chabad.org's list of traditions includes bringing light to others: visitors bring menorahs, treats and cards to people in hospitals and nursing homes. A plate of treats for a neighbor in Lafayette, Moraga or Orinda is a small version of the same idea. Our [Chanukah gifts](/learn/chanukah-gifts) guide has more ways to give, and [being a good neighbor](/learn/being-a-good-neighbor) is about the spirit.
+Chanukah's mitzvah is to bring light, and the traditions of the holiday include bringing light to others: visitors bring menorahs, treats and cards to people in hospitals and nursing homes. A plate of treats for a neighbor in Lafayette, Moraga or Orinda is a small version of the same idea. Our [Chanukah gifts](/learn/chanukah-gifts) guide has more ways to give, and [being a good neighbor](/learn/being-a-good-neighbor) is about the spirit.
 
 ## Gift ideas
 
-Chabad.org's Chanukah dessert recipes include gelt fudge, gelt cookies, honey and spice cookies, butter cookie dreidels and chocolate mint coins. Any of these make a nice gift. Other simple ideas:
+Chanukah dessert ideas include gelt fudge, gelt cookies, honey and spice cookies, butter cookie dreidels and chocolate mint coins. Any of these make a nice gift. Other simple ideas:
 
 - A small bag of doughnut holes or cookies, tied with blue and white ribbon.
 - A jar of fudge or a bag of gelt.
@@ -33,7 +33,7 @@ Many schools and offices have gift rules, so check first. Keep gifts modest. Not
 
 ## Share a little light with those who need it
 
-Bring a plate to an elderly neighbor, someone who is ill, or a person who is alone. Chabad.org highlights bringing treats and cards to hospitals and nursing homes. Chabad of Lamorinda's Rabbi and Rebbetzin visit the sick at home, in the hospital and in care facilities. If you know someone who would welcome a visit or help, see [help for seniors and families](/help/help-for-seniors-and-families) or [ask for help](/forms/need-help). You can [volunteer](/forms/volunteer) or help [sponsor visits and help](/donate?fund=chesed#give).
+Bring a plate to an elderly neighbor, someone who is ill, or a person who is alone. It is a lovely custom to bring treats and cards to hospitals and nursing homes. Chabad of Lamorinda's Rabbi and Rebbetzin visit the sick at home, in the hospital and in care facilities. If you know someone who would welcome a visit or help, see [help for seniors and families](/help/help-for-seniors-and-families) or [ask for help](/forms/need-help). You can [volunteer](/forms/volunteer) or help [sponsor visits and help](/donate?fund=chesed#give).
 
 ## A simple wrapping idea
 

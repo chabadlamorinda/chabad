@@ -15,7 +15,7 @@ The Rebbe also explained that on the second day we add something else: the study
 
 ## Gelt: the children's lesson in giving
 
-The best-known giving of Chanukah is *gelt* (Yiddish for "money"), the coins given to children. A Chabad.org article explains the thought behind it:
+The best-known giving of Chanukah is *gelt* (Yiddish for "money"), the coins given to children. Here is the thought behind it:
 
 - **A way to teach tzedakah.** Gelt gives children a chance to give. The article suggests that a child set aside about a tenth of the gelt for charity and use the rest for good, wholesome things.
 - **A reward for learning.** Chanukah shares a root with *chinuch*, education, and gelt is given to children as a reward for Torah study.
@@ -40,7 +40,7 @@ In 1987 the Rebbe spoke to children and asked them to request a special "spiritu
 Yes. Jewish legal authorities, quoted by the Rebbe, say that on Chanukah a person should increase in giving tzedakah.
 
 ### How much of the Chanukah gelt should children give to charity?
-A Chabad.org article suggests about ten percent, with the rest used for good purposes.
+A common suggestion is about ten percent, with the rest used for good purposes.
 
 ### Can I give tzedakah on Shabbat Chanukah?
 We do not handle money on Shabbat. The Rebbe suggested giving twice on Friday, once for Friday and once for Shabbat, and on Shabbat itself giving food or drink. Ask the Rabbi about your situation.

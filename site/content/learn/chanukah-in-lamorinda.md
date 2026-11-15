@@ -9,7 +9,7 @@ Chanukah in Lafayette, Moraga and Orinda is celebrated at home by lighting the m
 
 ## What is a public menorah, and where did the idea begin?
 
-A public menorah is a large Chanukah menorah lit outdoors so the whole community can see the light. Chabad.org tells how the first giant one was lit in 1975 in San Francisco's Union Square, by Rabbi Chaim Drizin, with rock promoter Bill Graham helping to build it; more than a thousand people came. Today Chabad centers light public menorahs around the world, because the mitzvah of Chanukah is to "publicize the miracle" (*pirsumei nisa*, פרסומי ניסא): to share the light with everyone who passes by.
+A public menorah is a large Chanukah menorah lit outdoors so the whole community can see the light. The first giant one was lit in 1975 in San Francisco's Union Square, by Rabbi Chaim Drizin, with rock promoter Bill Graham helping to build it; more than a thousand people came. Today Chabad centers light public menorahs around the world, because the mitzvah of Chanukah is to "publicize the miracle" (*pirsumei nisa*, פרסומי ניסא): to share the light with everyone who passes by.
 
 Our own area has a story too. In 2017, more than 200 neighbors gathered at Lafayette Plaza Park for the first night of Chanukah, with music, latkes and doughnuts, as the local paper Patch reported. This year's celebration is back at the same park: [Grand Chanukah Menorah Lighting, December 6](/events/chanukah-grand-menorah-lighting-2026).
 

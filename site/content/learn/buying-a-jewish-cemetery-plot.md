@@ -11,21 +11,21 @@ A Jewish cemetery is one where only Jews are buried, the burial rights are perma
 
 ## What makes a cemetery Jewish
 
-Chabad.org (from Rabbi Maurice Lamm's guide to Jewish mourning) lists three tests for a Jewish cemetery:
+Rabbi Maurice Lamm's guide to Jewish mourning lists three tests for a Jewish cemetery:
 
 1. The purchase contract limits the plot to Jews.
 2. The burial rights are permanent, and the cemetery has no authority to remove remains.
 3. The Jewish and non-Jewish sections are completely separate, with separate gates and full fencing.
 
-Chabad.org also says that burial in a mixed cemetery, or in one that accepts questionably converted Jews, is not permitted. If a relative already bought a plot in such a place, ask the Rabbi what can be done.
+Jewish tradition also says that burial in a mixed cemetery, or in one that accepts questionably converted Jews, is not permitted. If a relative already bought a plot in such a place, ask the Rabbi what can be done.
 
 ## Why people buy a plot in advance
 
-Buying a plot while alive is an ancient custom. Chabad.org points to Abraham, who bought the burial place for Sarah, and to the sages, who advise buying one while healthy. A Chabad.org answer on buying a plot notes that the custom is commonly believed to bring a long life, though some authorities say this blessing is not found in the classic sources. It offers a thoughtful reason: arranging a burial helps us face the fact that life is finite, so that fear of it does not drain our energy. Whether or not you accept it as a *segulah*, it relieves your children of a heavy burden. Chabad.org adds that if a person did not buy a plot, the family buys one before the burial, and even a poor person traditionally receives a plot, paid for with communal funds.
+Buying a plot while alive is an ancient custom. Tradition points to Abraham, who bought the burial place for Sarah, and to the sages, who advise buying one while healthy. It is noted that the custom is commonly believed to bring a long life, though some authorities say this blessing is not found in the classic sources. It offers a thoughtful reason: arranging a burial helps us face the fact that life is finite, so that fear of it does not drain our energy. Whether or not you accept it as a *segulah*, it relieves your children of a heavy burden. The tradition adds that if a person did not buy a plot, the family buys one before the burial, and even a poor person traditionally receives a plot, paid for with communal funds.
 
 ## Families, couples and the plot
 
-Chabad.org describes several customs, and it notes that practice differs between communities, so please ask the Rabbi:
+Jewish tradition describes several customs, and it notes that practice differs between communities, so please ask the Rabbi:
 
 - Plots are usually arranged by family. A married woman is customarily buried with her husband's family; if there is no room, elsewhere in the same cemetery.
 - Many cemeteries bury husbands and wives side by side, and some have separate sections for men and women. Both are acceptable, and you follow the local custom or ask.
@@ -37,7 +37,7 @@ For couples where only one spouse is Jewish, read [Jewish burial for interfaith 
 
 ## The grave itself
 
-Chabad.org says that the casket is placed directly in the ground, and above-ground burial is not permitted. Planting grass or flowers on the grave is discouraged. A headstone is set later (see [the headstone inscription](/learn/jewish-headstone-inscription) and [the unveiling](/learn/unveiling)). Once a person is buried, the grave is not opened again except in rare cases after rabbinic consultation.
+The tradition says that the casket is placed directly in the ground, and above-ground burial is not permitted. Planting grass or flowers on the grave is discouraged. A headstone is set later (see [the headstone inscription](/learn/jewish-headstone-inscription) and [the unveiling](/learn/unveiling)). Once a person is buried, the grave is not opened again except in rare cases after rabbinic consultation.
 
 ## Common questions
 
@@ -47,7 +47,7 @@ A Jewish cemetery limits plots to Jews by contract, has permanent burial rights,
 
 ### Should I buy a Jewish cemetery plot in advance?
 
-It is an old custom, and it spares your family a hard decision. Chabad.org notes it is commonly believed to bring long life, though some say that is not found in the classic sources. Talk with the Rabbi.
+It is an old custom, and it spares your family a hard decision. Jewish tradition notes it is commonly believed to bring long life, though some say that is not found in the classic sources. Talk with the Rabbi.
 
 ### Can couples be buried side by side?
 
@@ -59,11 +59,11 @@ Call Rabbi Labkowski at 925-384-7242 and he will guide you to the right place fo
 
 ### What if there is a burial plot in a mixed cemetery?
 
-Chabad.org says a Jew should be buried among Jews and advises asking a rabbi who knows this area of law. Call the Rabbi.
+The tradition says a Jew should be buried among Jews and advises asking a rabbi who knows this area of law. Call the Rabbi.
 
 ### Can I afford a plot?
 
-Chabad.org notes that even a poor person traditionally receives a plot, paid for with communal funds. Financial help is available. Call 925-384-7242.
+Jewish tradition notes that even a poor person traditionally receives a plot, paid for with communal funds. Financial help is available. Call 925-384-7242.
 
 ## Take the next step
 

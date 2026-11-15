@@ -11,7 +11,7 @@ Many families tell this story around Chanukah. It is not a bedtime story for sma
 
 ## A note before we begin
 
-Jewish sources tell this story in somewhat different ways. The names, the setting and the details are not the same in every telling. In this guide we follow the account on Chabad.org, in which the events happen in the days of Antiochus (see [Who Was Antiochus?](/learn/who-was-antiochus)). If you would like to know how the different sources compare, ask the Rabbi.
+Jewish sources tell this story in somewhat different ways. The names, the setting and the details are not the same in every telling. In this guide we follow one well-known account, in which the events happen in the days of Antiochus (see [Who Was Antiochus?](/learn/who-was-antiochus)). If you would like to know how the different sources compare, ask the Rabbi.
 
 ## The story
 

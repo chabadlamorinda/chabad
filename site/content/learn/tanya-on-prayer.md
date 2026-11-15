@@ -11,7 +11,7 @@ Rabbi Schneur Zalman of Liadi (the Alter Rebbe), who wrote the [Tanya](/learn/ta
 
 ## Start by remembering who you are speaking to
 
-Chapter 41 on Chabad.org says that before a mitzvah, and before Torah study, a person should reflect that G-d "stands over him" and examines his innermost thoughts and feelings. The chapter also teaches that G-d's care is personal: "For my sake was the world created." Awe and closeness belong together.
+Chapter 41 of the Tanya says that before a mitzvah, and before Torah study, a person should reflect that G-d "stands over him" and examines his innermost thoughts and feelings. The chapter also teaches that G-d's care is personal: "For my sake was the world created." Awe and closeness belong together.
 
 Chapter 41 then applies this to the morning. Before prayer, a person recites the morning blessing that thanks G-d for the soul, acknowledging that the soul was given by Him and will one day be taken back, and offers it back to be united with G-d's oneness. The chapter says prayer itself should begin with that same readiness to give one's soul to G-d. See [Modeh Ani](/learn/modeh-ani) for the first words many people say on waking.
 
@@ -31,7 +31,7 @@ Chapter 12 is honest. After prayer the inspiration fades and the animal soul rea
 
 So if your prayer felt flat, the Tanya does not say it was wasted. And if it felt wonderful and an hour later you were short-tempered, that is also described in the book. This ties to the [beinoni](/learn/the-beinoni), the ordinary person at the center of the Tanya, for whom the inner struggle continues.
 
-Chabad.org's page on this chapter also brings a saying of the Sixth Lubavitcher Rebbe (from Hayom Yom): when a Jew studies Torah, he feels like a student before his teacher, and when he prays, he feels like a child before his father.
+Chassidic teaching on this chapter also brings a saying of the Sixth Lubavitcher Rebbe (from Hayom Yom): when a Jew studies Torah, he feels like a student before his teacher, and when he prays, he feels like a child before his father.
 
 ## A simple way to use this
 

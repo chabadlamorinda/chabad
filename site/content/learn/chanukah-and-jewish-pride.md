@@ -7,7 +7,7 @@ local: Want to light up Lafayette with your community? Sign up at /events/chanuk
 ---
 Chanukah teaches Jewish pride by asking us to put a light where others can see it. The Maccabees were a small, poorly armed group who stood up against a mighty empire, and every year the menorah tells their story, and ours: a small light can dispel great darkness.
 
-Chabad.org's Chanukah teachings carry a clear message for today: stand up for what is right, even against daunting odds, bring mitzvahs into public life, and be proud of Jewish practice and not ashamed to stand out.
+The teachings of Chanukah carry a clear message for today: stand up for what is right, even against daunting odds, bring mitzvahs into public life, and be proud of Jewish practice and not ashamed to stand out.
 
 ## The courage of the Maccabees
 
@@ -15,15 +15,15 @@ In the second century BCE, the Seleucid Greeks who ruled the Holy Land tried to 
 
 ## Why the menorah faces the street
 
-The menorah is meant to be seen. Chabad.org explains that its light should be visible from outside the home, in a doorway, outdoors or in a window facing the street, to publicize the miracle. The Rebbe taught that the menorah's light is meant to shine outward, into the darkness outside. A doorway, Chabad.org writes, is neither fully inside nor fully outside, neither wholly public nor private. The light that glows from the Jewish home is meant to radiate outward from a focused inner life; the Jewish home is called a *mikdash me'at*, a "mini Temple." See [the Chanukah menorah](/learn/chanukah-menorah) for how Chabad lights it in an interior doorway opposite the mezuzah.
+The menorah is meant to be seen. Chassidic teaching explains that its light should be visible from outside the home, in a doorway, outdoors or in a window facing the street, to publicize the miracle. The Rebbe taught that the menorah's light is meant to shine outward, into the darkness outside. A doorway, as it is explained, is neither fully inside nor fully outside, neither wholly public nor private. The light that glows from the Jewish home is meant to radiate outward from a focused inner life; the Jewish home is called a *mikdash me'at*, a "mini Temple." See [the Chanukah menorah](/learn/chanukah-menorah) for how Chabad lights it in an interior doorway opposite the mezuzah.
 
 ## How Chanukah came out into the open
 
-Chabad.org tells how, before 1973, Chanukah was largely a private home observance. In December 1973, during the Yom Kippur War, the Rebbe launched a campaign to bring Chanukah into public view. Within two days, 10,000 menorahs were ordered, and by the end of the holiday about 60,000 had been given away. A homemade menorah on Fifth Avenue in Manhattan drew a large crowd, and public lightings followed in Philadelphia in 1974, San Francisco in 1975 and at the White House by 1979. The campaign brought a symbol of Jewish identity out of the home and onto the street after centuries in which persecution had driven it indoors. In 2026, Chabad.org estimated about 15,000 public menorahs worldwide. Read about [public menorah lightings](/learn/public-menorah-lighting).
+Before 1973, Chanukah was largely a private home observance. In December 1973, during the Yom Kippur War, the Rebbe launched a campaign to bring Chanukah into public view. Within two days, 10,000 menorahs were ordered, and by the end of the holiday about 60,000 had been given away. A homemade menorah on Fifth Avenue in Manhattan drew a large crowd, and public lightings followed in Philadelphia in 1974, San Francisco in 1975 and at the White House by 1979. The campaign brought a symbol of Jewish identity out of the home and onto the street after centuries in which persecution had driven it indoors. By 2026, about 15,000 public menorahs were lit worldwide. Read about [public menorah lightings](/learn/public-menorah-lighting).
 
 ## Proud together
 
-In 2019, Chabad.org reported a surge in Jewish pride and record crowds at public lightings in response to rising antisemitism. One woman, planning to attend a public lighting for the first time after feeling uneasy about expressing her Jewish identity in public, said, "They want us to be afraid, to fear proudly proclaiming our Jewish identity." A Chabad rabbi at Penn State said the nation's darkness "must be fought with light and goodness." In 2026, Chabad.org's reasons to attend a public lighting include refusing to give in to terror, bringing unity to polarized public spaces and showing children what proud Judaism looks like. See [Jewish pride](/learn/jewish-pride) and [facing antisemitism](/learn/facing-antisemitism).
+In 2019 there was a surge in Jewish pride and record crowds at public lightings in response to rising antisemitism. One woman, planning to attend a public lighting for the first time after feeling uneasy about expressing her Jewish identity in public, said, "They want us to be afraid, to fear proudly proclaiming our Jewish identity." A Chabad rabbi at Penn State said the nation's darkness "must be fought with light and goodness." The reasons to attend a public lighting include refusing to give in to terror, bringing unity to polarized public spaces and showing children what proud Judaism looks like. See [Jewish pride](/learn/jewish-pride) and [facing antisemitism](/learn/facing-antisemitism).
 
 ## Courage and caution
 
@@ -35,10 +35,10 @@ Pride never means putting anyone in danger. Where and how to display a menorah i
 Chanukah teaches that a small light can dispel great darkness, and that we should be proud of Jewish practice and not ashamed to stand out. The Maccabees stood up for what is right against daunting odds.
 
 ### Why do we light the menorah publicly?
-To publicize the miracle. Chabad.org explains the menorah's light should be visible from outside the home, in a doorway or a window facing the street, or at a public lighting.
+To publicize the miracle. Chassidic thought explains the menorah's light should be visible from outside the home, in a doorway or a window facing the street, or at a public lighting.
 
 ### Who started public menorah lightings?
-Chabad.org traces the modern campaign to the Rebbe, Rabbi Menachem M. Schneerson, who announced it in December 1973. Public lightings followed in Philadelphia, San Francisco and Washington.
+The modern campaign goes back to the Rebbe, Rabbi Menachem M. Schneerson, who announced it in December 1973. Public lightings followed in Philadelphia, San Francisco and Washington.
 
 ### Should I display my menorah if I feel unsafe?
 Safety comes first, and each situation is different. Call the Rabbi at 925-384-7242 to discuss what makes sense for you.
@@ -47,7 +47,7 @@ Safety comes first, and each situation is different. Call the Rabbi at 925-384-7
 Join the Light Up Lafayette menorah lighting at Lafayette Plaza Park, free and open to everyone, and sign up online.
 
 ### What if I feel uneasy about being openly Jewish?
-You are not alone. Chabad.org quotes a woman who felt uneasy about expressing her Jewish identity in public and decided to attend a public lighting for the first time. Call Rabbi Labkowski at 925-384-7242, or Rebbetzin Tzipora Labkowski at 925-384-7241, to talk.
+You are not alone. One woman felt uneasy about expressing her Jewish identity in public and decided to attend a public lighting for the first time. Call Rabbi Labkowski at 925-384-7242, or Rebbetzin Tzipora Labkowski at 925-384-7241, to talk.
 
 ## Take the next step
 

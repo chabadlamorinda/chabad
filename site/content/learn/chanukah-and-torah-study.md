@@ -9,7 +9,7 @@ Torah study is at the heart of Chanukah because the Greeks did not try to erase 
 
 ## What did the Greeks want from the Torah?
 
-Chabad.org gives a surprising answer. The Greeks were ready to admire the Torah as a work of human literature and philosophy. What they would not accept was that it comes from G-d, that it cannot be changed, and that it includes *chukim* (חוקים), commandments that go beyond human reason. According to a Chabad.org article on the Greek kingdom, the Greeks believed that nature runs without Divine involvement and that success depends only on a person's own strength and wisdom. This is why they went after Shabbat, Rosh Chodesh and circumcision, the three mitzvot that point beyond nature.
+Chassidic teaching gives a surprising answer. The Greeks were ready to admire the Torah as a work of human literature and philosophy. What they would not accept was that it comes from G-d, that it cannot be changed, and that it includes *chukim* (חוקים), commandments that go beyond human reason. According to Chassidic teaching on the Greek kingdom, the Greeks believed that nature runs without Divine involvement and that success depends only on a person's own strength and wisdom. This is why they went after Shabbat, Rosh Chodesh and circumcision, the three mitzvot that point beyond nature.
 
 This is also why the Greeks defiled the oil rather than destroying it. They did not mind a lit Menorah, if it was lit with impure oil. For the history, see [the decrees of the Greeks](/learn/decrees-of-the-greeks).
 
@@ -21,7 +21,7 @@ The Rebbe also stressed that this applies to women as well, because women also m
 
 ## Learning and education
 
-The word Chanukah shares a root with *chinuch*, education. The rededication of the Temple included training the priests, and the Rebbe urged parents to set aside time for their children's Jewish education. This is why gelt, the Chanukah coins, are given as a reward for a child's learning, as a Chabad.org article explains. You can read about it in [Chanukah gelt](/learn/chanukah-gelt).
+The word Chanukah shares a root with *chinuch*, education. The rededication of the Temple included training the priests, and the Rebbe urged parents to set aside time for their children's Jewish education. This is why gelt, the Chanukah coins, are given as a reward for a child's learning, as is explained in Chassidic teaching. You can read about it in [Chanukah gelt](/learn/chanukah-gelt).
 
 ## Three kinds of Torah light
 
@@ -47,7 +47,7 @@ The candles grow every night, and the Rebbe's message is that our learning shoul
 Because the Greeks tried to separate the Torah from G-d, and the Rebbe taught that we answer by increasing our learning, together with our tzedakah, during the eight days.
 
 ### Did the Greeks ban Torah study?
-The Greeks banned Shabbat, Rosh Chodesh and circumcision, and they defiled the Temple oil. Chabad.org explains that they accepted the Torah as human wisdom but not as G-d's word.
+The Greeks banned Shabbat, Rosh Chodesh and circumcision, and they defiled the Temple oil. Chassidic teaching explains that they accepted the Torah as human wisdom but not as G-d's word.
 
 ### Should women learn Torah on Chanukah?
 Yes. The Rebbe said the call to increase learning applies to women too.

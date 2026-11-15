@@ -9,11 +9,11 @@ The Cave of Machpelah (Me'arat HaMachpelah, מְעָרַת הַמַּכְפֵּ�
 
 ## Why "Machpelah"?
 
-Machpelah means "doubled." Chabad.org gives two explanations: either the cave had two levels, or it is the resting place of four couples. The Torah also calls Hebron Kiryat Arba, "the city of four," and one traditional explanation of that name is the four couples buried there.
+Machpelah means "doubled." There are two explanations: either the cave had two levels, or it is the resting place of four couples. The Torah also calls Hebron Kiryat Arba, "the city of four," and one traditional explanation of that name is the four couples buried there.
 
 ## How Abraham bought the cave
 
-When Sarah passed away at the age of 127, Abraham came to Hebron to mourn her and to find a place to bury her. The Torah tells the story at length in the portion called *Chayei Sarah*. Ephron, the owner of the cave, offered it to Abraham as a gift. Abraham insisted on paying, and bought the cave and its field for 400 shekels of silver. Chabad.org calls it the first plot of land in the Holy Land legally owned by the Jewish people.
+When Sarah passed away at the age of 127, Abraham came to Hebron to mourn her and to find a place to bury her. The Torah tells the story at length in the portion called *Chayei Sarah*. Ephron, the owner of the cave, offered it to Abraham as a gift. Abraham insisted on paying, and bought the cave and its field for 400 shekels of silver. It is called the first plot of land in the Holy Land legally owned by the Jewish people.
 
 Read about Abraham and Sarah in [Abraham and Sarah](/learn/abraham-and-sarah).
 
@@ -38,7 +38,7 @@ The Zohar teaches that the cave is a gateway to the Garden of Eden. According to
 - **The Chabad tradition.** Rabbi DovBer, the second Chabad Rebbe, taught that although prayers rise through Jerusalem, they first go by way of Hebron on their way to G-d.
 - **Shabbat Chayei Sarah.** Each year, when the Torah reading tells of Abraham's purchase, many people come to Hebron for Shabbat.
 
-Chabad.org notes that access to the cave itself was closed around the 1490s and remains closed; visitors pray in the building above it.
+Jewish tradition notes that access to the cave itself was closed around the 1490s and remains closed; visitors pray in the building above it.
 
 ## Visiting today
 

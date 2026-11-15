@@ -7,11 +7,11 @@ local: Carrying a hurt that won't go away? Rabbi and Rebbetzin Labkowski are gla
 ---
 Tanya's path to forgiving someone is to let go of the grudge without excusing the wrong. Epistle 25 teaches that what happened to us was also part of what Heaven allowed, so our anger at the person is misplaced, while the person who hurt us remains fully responsible for his choice.
 
-Forgiveness is hard, and this guide is not meant to make it sound simple. It looks at what the Tanya, as Chabad.org presents it, offers a person who is hurting. For the laws of asking and granting forgiveness, see [forgiveness and making peace](/learn/forgiveness-and-making-peace). For the mind of anger, see [Tanya on anger](/learn/tanya-on-anger).
+Forgiveness is hard, and this guide is not meant to make it sound simple. It looks at what the Tanya offers a person who is hurting. For the laws of asking and granting forgiveness, see [forgiveness and making peace](/learn/forgiveness-and-making-peace). For the mind of anger, see [Tanya on anger](/learn/tanya-on-anger).
 
 ## What Epistle 25 says
 
-The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter included at the end of the [Tanya](/learn/tanya) (Epistle 25 of Iggeret HaKodesh). According to Chabad.org's text:
+The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter included at the end of the [Tanya](/learn/tanya) (Epistle 25 of Iggeret HaKodesh). According to the text:
 
 - The Sages compare an angry person to an idolater, because at that moment he has forgotten that what happens in his life comes from G-d.
 - The person who hurt us is a free agent. He is responsible, before human courts and before Heaven, for his own wrongdoing.
@@ -22,7 +22,7 @@ The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter included at the en
 
 This is the delicate part. The letter does not say that the one who hurt you did nothing wrong, or that your pain does not matter. It says he is still responsible. It also does not say that you must stay near him or allow it to happen again.
 
-What it offers is a way to put the burden down. If we cling to the grudge, we carry the injury with us every day. The Rebbe's advice on anger, as Chabad.org quotes it, is practical: "the first step is to wait," so the anger does not build momentum. Anger is the beginning; what we do with it matters.
+What it offers is a way to put the burden down. If we cling to the grudge, we carry the injury with us every day. The Rebbe's advice on anger is practical: "the first step is to wait," so the anger does not build momentum. Anger is the beginning; what we do with it matters.
 
 If you were seriously harmed, forgiving is not the same as condoning, and it does not require you to return to a dangerous situation. Please talk to the Rabbi or the Rebbetzin, and to a professional. See [forgiveness and making peace](/learn/forgiveness-and-making-peace).
 
@@ -48,10 +48,10 @@ No. Tanya says the person who harmed us is still accountable. Forgiving means re
 No. Forgiveness does not mean putting yourself in harm's way. For painful or dangerous situations, call the Rabbi at 925-384-7242 and seek professional help.
 
 ### What if the person never apologizes?
-Chabad.org's articles that we read speak mostly about apologizing when you are the one who hurt someone. For letting go when there is no apology, ask the Rabbi.
+The teachings we drew on speak mostly about apologizing when you are the one who hurt someone. For letting go when there is no apology, ask the Rabbi.
 
 ### Should I just wait before I react?
-Chabad.org quotes the Rebbe: "the first step is to wait." Then decide what to do.
+The Rebbe taught: "the first step is to wait." Then decide what to do.
 
 ### Where can I study this in Lafayette, Moraga or Orinda?
 Chabad of Lamorinda has a Tanya class in English every Wednesday at 1:00 PM at the Rabbi's home in Lafayette. Call 925-384-7242 for the address.

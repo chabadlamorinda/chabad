@@ -9,18 +9,18 @@ Chinuch (חִנּוּךְ) is the Jewish word for education, and it means more t
 
 ## What does chinuch mean?
 
-Chabad.org explains that the word is connected to the idea of shaping something so it fits exactly, like cutting a stone to fit, which suggests that education should be tailored to each child. It also relates to the word for inauguration, the start of a lifelong path. Rashi, the great commentator, explains in Genesis 14:14 that chinuch is a person's entry into the work that he will do all his life. That is why we say "Chanukah," from the same root: the dedication of the Temple. Chinuch is a beginning.
+Chassidic teaching explains that the word is connected to the idea of shaping something so it fits exactly, like cutting a stone to fit, which suggests that education should be tailored to each child. It also relates to the word for inauguration, the start of a lifelong path. Rashi, the great commentator, explains in Genesis 14:14 that chinuch is a person's entry into the work that he will do all his life. That is why we say "Chanukah," from the same root: the dedication of the Temple. Chinuch is a beginning.
 
 ## The source: "Educate a child in his own way"
 
 The verse most often quoted is in Proverbs 22:6: "Educate a child according to his way, so that even when he grows old he will not stray from it." Two lessons stand out.
 
-1. **Each child is different.** A good education suits the child's personality, strengths and interests. Chabad.org tells of the Rebbe teaching that treating every child the same may itself be the problem.
+1. **Each child is different.** A good education suits the child's personality, strengths and interests. The Rebbe taught that treating every child the same may itself be the problem.
 2. **What we plant early lasts.** A child who grows up with Shabbat, blessings and kindness carries them for life.
 
 ## Character comes first
 
-Rabbi Schneur Zalman of Liadi, the first Chabad Rebbe, taught that there can be no Torah without fine character. The goal of chinuch is not only a child who knows, but a child who is a *mentch* (a good, decent person). Chabad.org emphasizes the educator's task of refining character, together with patience: "A short-tempered person cannot teach" (Ethics of Our Fathers 2:5). Warmth matters too, as the verse says: "The words of the wise are heard when spoken gently." Read about [derech eretz](/learn/derech-eretz) and [raising kind children](/learn/raising-kind-children).
+Rabbi Schneur Zalman of Liadi, the first Chabad Rebbe, taught that there can be no Torah without fine character. The goal of chinuch is not only a child who knows, but a child who is a *mentch* (a good, decent person). The educator's task is of refining character, together with patience: "A short-tempered person cannot teach" (Ethics of Our Fathers 2:5). Warmth matters too, as the verse says: "The words of the wise are heard when spoken gently." Read about [derech eretz](/learn/derech-eretz) and [raising kind children](/learn/raising-kind-children).
 
 ## Practical steps at home
 

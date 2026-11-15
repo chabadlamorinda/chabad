@@ -11,7 +11,7 @@ Chanukah for teens means taking the holiday from "something my parents do" to "s
 
 The Greek rulers of the story did not try to wipe the Jews out. According to Chabad teaching, they wanted to cut the Jewish people off from G-d. They did not mind Jews doing some things as a culture or philosophy, as long as it was not rooted in a commandment from G-d. That is why they defiled the oil, and why the miracle of one sealed jar matters: it shows that a part of every Jewish soul can never be cut off.
 
-Chabad.org teaches that Chanukah has eight lights because eight points beyond nature. When you connect to that deepest part of yourself, you do more than push the darkness away; the darkness itself becomes light. In plain words: you do not have to be perfect. Your Jewish spark is still there.
+Chassidic teaching holds that Chanukah has eight lights because eight points beyond nature. When you connect to that deepest part of yourself, you do more than push the darkness away; the darkness itself becomes light. In plain words: you do not have to be perfect. Your Jewish spark is still there.
 
 ## Make the menorah yours
 
@@ -26,7 +26,7 @@ Chabad.org teaches that Chanukah has eight lights because eight points beyond na
 - Share the story in one minute: "A small group stood up for who they were, and a little oil lasted eight days."
 - Wear or give something small: a card, a dreidel or gelt.
 
-Chabad.org's teaching about the shamash, the helper candle, is a good model. The shamash lights the other candles and loses nothing. Sharing your light with someone else does not make yours smaller.
+The teaching about the shamash, the helper candle, is a good model. The shamash lights the other candles and loses nothing. Sharing your light with someone else does not make yours smaller.
 
 ## Show some Maccabee courage today
 
@@ -50,7 +50,7 @@ Yes. Teens, like all Jews, take part in the mitzvah. Many families let every mem
 An electric menorah is for display; the mitzvah is done with a real flame, which many dorms do not allow. Ask the Rabbi what to do. See [Chanukah at work and college](/learn/chanukah-at-work-and-college).
 
 ### Why is Chanukah relevant for teenagers?
-It is a story about a small group of people deciding to stay true to their identity under pressure. Chabad.org teaches that the light can turn darkness itself into light.
+It is a story about a small group of people deciding to stay true to their identity under pressure. Chassidic thought teaches that the light can turn darkness itself into light.
 
 ### What gifts do teens get on Chanukah?
 Gelt, small gifts and time with family are traditional; many families give part of the gelt to tzedakah. See [Chanukah gelt](/learn/chanukah-gelt).

@@ -9,7 +9,7 @@ Grandparents are the keepers of Chanukah memories. Whether your grandchildren si
 
 ## Why grandparents matter on Chanukah
 
-Chanukah is a holiday of passing a flame from one generation to the next. The shamash, the helper candle, lights each of the others and loses nothing, and that is a picture of grandparents: you give your light and it grows brighter. Chabad.org's Chanukah companion for the eight nights offers a thought, a story and an activity for each night, which is exactly the kind of thing a grandparent can do with a child.
+Chanukah is a holiday of passing a flame from one generation to the next. The shamash, the helper candle, lights each of the others and loses nothing, and that is a picture of grandparents: you give your light and it grows brighter. A Chanukah companion for the eight nights offers a thought, a story and an activity for each night, which is exactly the kind of thing a grandparent can do with a child.
 
 If you are near, you can simply be present. If you are far, the next sections can help.
 

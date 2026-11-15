@@ -11,13 +11,13 @@ Neighbors, relatives and friends in Lafayette, Moraga and Orinda often help one 
 
 ## Why lending is so special
 
-The Torah says not to "close your hand from your needy brother" (Deuteronomy 15:7-8) and to lend what he needs. According to Chabad.org, interest-free loans are a Torah obligation, and lending is considered greater than charity because borrowing is less embarrassing than accepting a gift. A timely loan can also keep a person from falling into poverty.
+The Torah says not to "close your hand from your needy brother" (Deuteronomy 15:7-8) and to lend what he needs. According to Jewish tradition, interest-free loans are a Torah obligation, and lending is considered greater than charity because borrowing is less embarrassing than accepting a gift. A timely loan can also keep a person from falling into poverty.
 
 Communities are encouraged to set up free loan funds, called [gemachs](/learn/gemach-interest-free-loans). Charging interest to a fellow Jew is a serious prohibition, which is explained in the guide on [ribbit](/learn/ribbit). Ask the Rabbi about any particular arrangement.
 
 ## Who comes first
 
-Jewish tradition suggests an order of priority, as with tzedakah: family first, then people in your city, then Jews in Israel, then Jews elsewhere. Lending to a wealthy person with a real need is also a mitzvah, but the poor come first. Poor non-Jews may also receive loans. Chabad.org says to lend as much as the borrower needs and as much as you can afford, and only when you are reasonably confident the borrower will repay. If it would put your own family in difficulty, ask the Rabbi.
+Jewish tradition suggests an order of priority, as with tzedakah: family first, then people in your city, then Jews in Israel, then Jews elsewhere. Lending to a wealthy person with a real need is also a mitzvah, but the poor come first. Poor non-Jews may also receive loans. The tradition says to lend as much as the borrower needs and as much as you can afford, and only when you are reasonably confident the borrower will repay. If it would put your own family in difficulty, ask the Rabbi.
 
 ## Write it down
 
@@ -49,7 +49,7 @@ Money can strain a good relationship. Before lending, ask yourself: could I affo
 ## Common questions
 
 ### Is it a mitzvah to lend money?
-Yes. Interest-free loans to those in need are a great mitzvah. Chabad.org notes that lending is considered greater than charity because it protects the borrower's dignity.
+Yes. Interest-free loans to those in need are a great mitzvah. Jewish tradition notes that lending is considered greater than charity because it protects the borrower's dignity.
 
 ### Do I have to repay a loan on time?
 Yes. Repayment is a mitzvah. If you truly cannot repay on time, inform the lender, do what you can and ask the Rabbi for guidance.

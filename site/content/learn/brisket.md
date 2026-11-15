@@ -15,7 +15,7 @@ Brisket needs long, slow cooking, and it tastes best made a day ahead. That suit
 
 ## A simple brisket
 
-This recipe is retold from Chabad.org's basic brisket, which serves about 8.
+This is a basic brisket recipe that serves about 8.
 
 **You will need:** a thick-cut brisket of about 2½ pounds, a tablespoon of paprika, a teaspoon each of salt and pepper, ½ teaspoon basil, 3 sliced onions, 2 halved garlic cloves, and 1½ cups each of ketchup, dry red wine and water.
 
@@ -27,7 +27,7 @@ This recipe is retold from Chabad.org's basic brisket, which serves about 8.
 6. Bake about 3 hours, until a thermometer in the center reads 190°F.
 7. Rest 5 to 10 minutes, then slice diagonally against the grain and serve with the juices.
 
-Another Chabad.org version uses root vegetables: a 2½ pound first-cut brisket seared with a spice rub at high heat, then cooked covered for 4 to 5 hours at a low temperature with carrots, parsnips, celery, turnip, onions, wine and broth.
+Another version uses root vegetables: a 2½ pound first-cut brisket seared with a spice rub at high heat, then cooked covered for 4 to 5 hours at a low temperature with carrots, parsnips, celery, turnip, onions, wine and broth.
 
 ## Make it ahead and slice it well
 
@@ -51,7 +51,7 @@ Brisket must come from kosher meat. Kosher meat can be ordered through [Bay Kosh
 Brisket is a cut of beef from the chest, cooked slowly until it is tender, and a classic dish for Jewish holidays and Shabbat.
 
 ### How long do you cook brisket?
-Chabad.org's basic recipe bakes a 2½ pound brisket for about 3 hours at 325°F, until a thermometer reads 190°F. Larger or lower-heat recipes take longer.
+The basic recipe bakes a 2½ pound brisket for about 3 hours at 325°F, until a thermometer reads 190°F. Larger or lower-heat recipes take longer.
 
 ### Can I make brisket the day before?
 Yes, and it is better that way. Chilling overnight makes it easy to slice thinly, and reheating in the sauce keeps it moist.

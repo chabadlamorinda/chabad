@@ -9,7 +9,7 @@ After Yom Kippur ends at nightfall, we hear Havdalah and then sit down to a fest
 
 ## Why the break-fast is a celebration
 
-The Torah's verse in Ecclesiastes (9:7), "Go, eat your bread with joy and drink your wine with a glad heart," is understood by our sages to be said on the night after Yom Kippur, according to Chabad.org. After the long fast, we trust that we were forgiven, so the meal is joyful. The shofar blast at the end of [Neilah](/learn/neilah) announces it.
+The Torah's verse in Ecclesiastes (9:7), "Go, eat your bread with joy and drink your wine with a glad heart," is understood by our sages to be said on the night after Yom Kippur. After the long fast, we trust that we were forgiven, so the meal is joyful. The shofar blast at the end of [Neilah](/learn/neilah) announces it.
 
 Chassidic teaching adds that this meal channels the spiritual gains of Yom Kippur into material blessings for the year ahead. In other words, ordinary eating becomes holy.
 
@@ -23,7 +23,7 @@ Chassidic teaching adds that this meal channels the spiritual gains of Yom Kippu
 
 ## What to serve
 
-Chabad.org says there are no special food rules. For your family, here are practical ideas:
+Jewish tradition says there are no special food rules. For your family, here are practical ideas:
 
 - **Start gently.** After a day without food or water, begin with water, juice or tea, something light, and some bread before heavier dishes.
 - **Dairy or meat?** Both are fine. Families follow their own custom; if you keep kosher, the usual rules apply, and the Rabbi can help.
@@ -54,7 +54,7 @@ Yes, Havdalah is said first, after nightfall, as at the end of Shabbat. Ask the 
 Yes. Tradition says a heavenly voice calls, "Go, eat your bread with joy," and the meal is festive, not merely practical.
 
 ### Why do we dip bread in honey after Yom Kippur?
-It is the custom, as on Rosh Hashanah, for a sweet year. Chabad.org notes it is customary to wash and dip bread in honey.
+It is the custom, as on Rosh Hashanah, for a sweet year. The tradition notes it is customary to wash and dip bread in honey.
 
 ### Should we start the sukkah after Yom Kippur?
 Ideally yes: start building it that night, or at least discuss it, to go from one mitzvah to the next.

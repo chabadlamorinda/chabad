@@ -9,7 +9,7 @@ On the first night of Chanukah you light one candle (plus the helper candle, the
 
 ## The basic rules for every night
 
-Here is what stays the same all eight nights, according to Chabad.org:
+Here is what stays the same all eight nights:
 
 - **Add one light each night.** One on the first night, two on the second, and so on. The shamash ("servant") is the extra light used to kindle the others, so it is not counted.
 - **Place the new light on the left.** The first night's candle is at the right. Each night you add a candle to the left of the others and light the newest one first, moving from left to right.
@@ -20,7 +20,7 @@ Tonight's candle count, with a menorah to light on screen, is at [/menorah](/men
 
 ## Night by night: an idea for each candle
 
-Chabad.org offers a thought for every night. Here are the themes, retold simply, with a small mitzvah to match.
+There is a thought for every night. Here are the themes, retold simply, with a small mitzvah to match.
 
 1. **Night 1, Light.** The Torah opens with "Let there be light." Chanukah light is more than daylight; it is warmth and purpose. *Try:* switch off the room lights and just watch one flame together.
 2. **Night 2, Two great lights.** The sun never changes, while the moon waxes and wanes. We are sometimes steady, sometimes not, and both can shine. *Try:* call a relative you have not spoken to in a while.
@@ -53,7 +53,7 @@ The first candle goes on the right and each new one is added to the left. You li
 On Friday afternoon you light the Chanukah menorah first, then the Shabbat candles. On Saturday night you light it after Shabbat ends.
 
 ### Can the menorah be electric?
-Chabad.org says gas or electric lights do not fulfill the mitzvah; use oil with cotton wicks, or wax candles. An electric menorah can be used for decoration if a real flame is also lit.
+Jewish tradition says gas or electric lights do not fulfill the mitzvah; use oil with cotton wicks, or wax candles. An electric menorah can be used for decoration if a real flame is also lit.
 
 ### Where can I see a menorah lit in Lafayette, Moraga or Orinda?
 Chabad of Lamorinda's [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) is Sunday, December 6 at 4:00 PM at Lafayette Plaza Park. Read about [public menorah lightings](/learn/public-menorah-lighting).

@@ -13,11 +13,11 @@ For Israelis in Lamorinda, these are the sights and tastes of home. For everyone
 
 The classic dreidel has four letters: nun (נ), gimmel (ג), hei (ה) and shin (ש). They stand for *Nes gadol haya sham*, "A great miracle happened there," meaning in the Land of Israel. Jews who live in the Land of Israel replaced the shin with pey (פ), for *po* (פֹּה), "here." So an Israeli dreidel reads *Nes gadol haya po*, "A great miracle happened here."
 
-Chabad.org notes a hidden hint in the change. The four Israeli letters add up to 138 (nun 50, gimmel 3, hei 5, pey 80), the same value as *tzemach* (צֶמַח), a name for the Messiah in the Book of Zechariah, and of the name Menachem. Read about [how to play dreidel](/learn/dreidel) (the rules are the same) and about [the Hebrew letters](/learn/hebrew-alphabet).
+Jewish tradition notes a hidden hint in the change. The four Israeli letters add up to 138 (nun 50, gimmel 3, hei 5, pey 80), the same value as *tzemach* (צֶמַח), a name for the Messiah in the Book of Zechariah, and of the name Menachem. Read about [how to play dreidel](/learn/dreidel) (the rules are the same) and about [the Hebrew letters](/learn/hebrew-alphabet).
 
 ## Sufganiyot: Israel's Chanukah doughnut
 
-Fried foods recall the oil that burned in the Temple. Chabad.org notes that the oldest form of this custom was dough fried in oil, the forerunner of today's jelly-filled doughnut, the *sufganiya* (plural *sufganiyot*), which is very common in Israel today. Latkes are also eaten by many families, so some enjoy both. See [Chanukah foods](/learn/chanukah-foods) and [latkes](/learn/latkes).
+Fried foods recall the oil that burned in the Temple. The tradition notes that the oldest form of this custom was dough fried in oil, the forerunner of today's jelly-filled doughnut, the *sufganiya* (plural *sufganiyot*), which is very common in Israel today. Latkes are also eaten by many families, so some enjoy both. See [Chanukah foods](/learn/chanukah-foods) and [latkes](/learn/latkes).
 
 ## A hanukkiah, not just a menorah
 
@@ -25,7 +25,7 @@ In Modern Hebrew, the Chanukah lamp is called a *hanukkiah* (חֲנֻכִּיָ�
 
 ## Lights in public places
 
-Chanukah's mitzvah is meant to be public, and Chabad.org describes how this looks in Israel. In 2012 it reported on Chabad's "Operation Chanukah," in which young men went to army bases and outposts to light menorahs with soldiers, and on "Chanukah Mobiles," vehicles with a menorah on the roof that drove through city centers, malls, medical centers and nursing homes. All 289 Chabad centers in Israel ran Chanukah activities, and Jerusalem had more than 50 public menorahs at landmarks such as the Old City walls and the Tower of David. Chabad.org also says that the Rebbe directed that menorahs be lit on every Israeli army base. Read more on [public menorah lightings](/learn/public-menorah-lighting) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
+Chanukah's mitzvah is meant to be public, and tradition describes how this looks in Israel. In 2012 it reported on Chabad's "Operation Chanukah," in which young men went to army bases and outposts to light menorahs with soldiers, and on "Chanukah Mobiles," vehicles with a menorah on the roof that drove through city centers, malls, medical centers and nursing homes. All 289 Chabad centers in Israel ran Chanukah activities, and Jerusalem had more than 50 public menorahs at landmarks such as the Old City walls and the Tower of David. Jewish tradition also says that the Rebbe directed that menorahs be lit on every Israeli army base. Read more on [public menorah lightings](/learn/public-menorah-lighting) and [Israel and the Jewish people](/learn/israel-and-the-jewish-people).
 
 ## Common questions
 

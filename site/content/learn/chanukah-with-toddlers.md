@@ -20,7 +20,7 @@ The lights are meant to burn for about half an hour after nightfall, so adults s
 
 ## Safety comes first with small children
 
-- Put the menorah on a sturdy, fireproof surface, well away from curtains and out of a child's reach, and keep the matches and lighter locked away. Chabad.org also advises keeping the menorah out of children's reach.
+- Put the menorah on a sturdy, fireproof surface, well away from curtains and out of a child's reach, and keep the matches and lighter locked away. Keep the menorah out of children's reach.
 - Never leave a toddler alone in a room with burning lights.
 - Keep sleeves, hair and dangling toys away from the flames.
 - A battery or electric light can be a fun toy for a toddler to "light" while you light the real menorah, but it does not replace it. See [menorah fire safety](/learn/menorah-fire-safety).
@@ -28,12 +28,12 @@ The lights are meant to burn for about half an hour after nightfall, so adults s
 
 ## Chanukah play for little hands
 
-Chabad.org's kids' pages suggest many things a toddler can enjoy with a grown-up:
+There are many things a toddler can enjoy with a grown-up:
 
 - **Dreidel play.** A big, chunky [dreidel](/learn/dreidel) to spin and watch is enough; no need to learn the game yet.
 - **Freeze dance.** Play Chanukah music, dance, and freeze when the music stops.
 - **Cookie shapes.** Press cookie cutters in the shape of a menorah or dreidel into dough, or let little ones decorate a donut with sprinkles.
-- **Videos and songs.** JewishKids.org (Chabad.org) has short animated videos, songs and stories about Chanukah. Choose a few minutes, not a whole afternoon.
+- **Videos and songs.** Children's websites have short animated videos, songs and stories about Chanukah. Choose a few minutes, not a whole afternoon.
 - **A "gelt hunt."** Hide gold-wrapped gifts or chunky toys for a child old enough to search safely.
 - **Simple crafts.** See [Chanukah crafts for kids](/learn/chanukah-crafts-for-kids), and pick the messy-but-safe ones.
 

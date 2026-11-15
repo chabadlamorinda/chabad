@@ -9,7 +9,7 @@ The best Chanukah mitzvah project for a child is one they can do with their own 
 
 ## Start with the gelt
 
-[Chanukah gelt](/learn/chanukah-gelt) is the traditional way children learn about giving. Chabad.org explains that a part of the gelt is meant to go to tzedakah, charity, and suggests about ten percent, with the rest used for good, wholesome things. Chanukah is also a time when many people increase their giving.
+[Chanukah gelt](/learn/chanukah-gelt) is the traditional way children learn about giving. Jewish tradition explains that a part of the gelt is meant to go to tzedakah, charity, and suggests about ten percent, with the rest used for good, wholesome things. Chanukah is also a time when many people increase their giving.
 
 1. **Count the gelt together.** Let your child see how much they received.
 2. **Decide a share.** A tenth is the classic amount; a child can choose to give more.
@@ -22,7 +22,7 @@ A child who gives part of what they have learns that the money is a tool for kin
 ## Ideas for kids of every age
 
 - **Make cards for seniors.** Children can draw menorahs and write a few words. Write "Happy Chanukah" and sign. Cards can go to a neighbor, a grandparent or someone in a care facility.
-- **Share a menorah and treats.** Chabad.org suggests bringing menorahs, treats and handmade cards to people in hospitals and nursing homes who may not have family nearby. A family can keep a "menorah kit" ready for the unexpected. Check first with the facility and with the Rabbi.
+- **Share a menorah and treats.** The tradition suggests bringing menorahs, treats and handmade cards to people in hospitals and nursing homes who may not have family nearby. A family can keep a "menorah kit" ready for the unexpected. Check first with the facility and with the Rabbi.
 - **Give a menorah to a friend.** A simple menorah, candles and a note about how to light them is a gift that can start a new tradition.
 - **Invite someone who is alone.** A neighbor or classmate could join you for the lighting and a latke. Hospitality is a mitzvah.
 - **Call or video a grandparent.** A phone call with a song is a real kindness.
@@ -48,7 +48,7 @@ There are families, seniors and sick people in Lafayette, Moraga and Orinda who 
 Giving part of their gelt to tzedakah, making cards for seniors and sharing a menorah with a friend are all easy and meaningful.
 
 ### How much of the gelt should a child give to tzedakah?
-Chabad.org suggests about ten percent. A child may give more if they wish.
+Tradition suggests about ten percent. A child may give more if they wish.
 
 ### Why do we give gelt on Chanukah?
 Several reasons are given, including rewarding children for learning Torah and teaching them about charity. See [Chanukah gelt](/learn/chanukah-gelt).

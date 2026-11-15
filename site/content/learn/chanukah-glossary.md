@@ -7,7 +7,7 @@ local: Heard a Chanukah word you do not know? Ask Rabbi Labkowski at 925-384-724
 ---
 This Chanukah glossary explains the Hebrew and Yiddish words you will hear during the holiday, from menorah and shamash to gelt and Al Hanissim. Each entry has the Hebrew spelling, a one-sentence definition and a link to the guide that explains it in full.
 
-The definitions follow Chabad.org's Hanukkah glossary.
+The definitions follow the traditional understanding of each word.
 
 ## The holiday and its heroes
 
@@ -15,7 +15,7 @@ The definitions follow Chabad.org's Hanukkah glossary.
 - **Kislev (כסלו).** The Jewish month, roughly November to December, in which Chanukah occurs. See [Kislev](/learn/kislev).
 - **Beit Hamikdash (בית המקדש).** The Holy Temple in Jerusalem.
 - **Antiochus (אנטיוכוס).** Antiochus IV Epiphanes, the Syrian-Greek emperor of the second century BCE who desecrated the Holy Temple and banned Jewish practices.
-- **Maccabees (מכבים).** The Jewish army that revolted against the Syrian-Greeks. Chabad.org says the name is an acronym formed from the verse "Mi kamocha ba'eilim Ado-nai," "Who is like You among the mighty, Ado-nai." See [the Maccabees](/learn/the-maccabees).
+- **Maccabees (מכבים).** The Jewish army that revolted against the Syrian-Greeks. Jewish tradition says the name is an acronym formed from the verse "Mi kamocha ba'eilim Ado-nai," "Who is like You among the mighty, Ado-nai." See [the Maccabees](/learn/the-maccabees).
 - **Matityahu (מתתיהו).** Father of the Maccabees, who led the revolt against the Syrian-Greeks.
 - **Yehuda Maccabee (יהודה המכבי).** A member of the family who led the Maccabees to victory.
 - **Chashmonaim (חשמונאים).** The Hasmoneans, the priestly family who led the Maccabee armies and later became kings of Judea.

@@ -9,9 +9,9 @@ Many assisted living and care homes do not allow open flames, so a real menorah 
 
 ## What is the mitzvah, and why does a flame matter?
 
-The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights in the evening, adding one each night, so that the miracle is seen. The menorah is meant to recall the lamp of the Holy Temple, so Chabad.org explains that it should be a lamp with fuel, a wick and fire. Olive oil with cotton wicks is the ideal, and wax candles also work.
+The mitzvah of Chanukah (חֲנֻכָּה) is to kindle lights in the evening, adding one each night, so that the miracle is seen. The menorah is meant to recall the lamp of the Holy Temple, so jewish tradition explains that it should be a lamp with fuel, a wick and fire. Olive oil with cotton wicks is the ideal, and wax candles also work.
 
-For that reason, Chabad.org teaches that an electric menorah generally does not fulfill the mitzvah. It is a lovely way to publicize the holiday, but it is not a replacement for fire. Everyone agrees that safety comes first, and Jewish law never asks anyone to endanger a life or a building.
+For that reason, the tradition teaches that an electric menorah generally does not fulfill the mitzvah. It is a lovely way to publicize the holiday, but it is not a replacement for fire. Everyone agrees that safety comes first, and Jewish law never asks anyone to endanger a life or a building.
 
 ## Options when flames are not allowed
 
@@ -19,8 +19,8 @@ Here are the choices, from the best to the simplest. Please call the Rabbi if yo
 
 1. **Light in a place where it is allowed.** Ask the staff whether a menorah may be lit in a dining room, activity room, prayer room or lobby, with a staff member present. Some facilities allow it. The lights should burn for about half an hour after nightfall; ask the Rabbi about the details of the timing.
 2. **Light a real menorah at home on their behalf.** A family member can light at home with the resident in mind, and a call that evening shares the joy. Whether the resident can fulfill the mitzvah through someone else's lighting depends on the situation, so ask the Rabbi.
-3. **Use a safe flame if the home permits.** Chabad.org recommends tea lights (short, sturdy candles in a metal cup) on a fireproof tray, kept away from anything flammable. Never light in a place that forbids it, and never leave a flame unattended.
-4. **An electric or battery menorah as a reminder.** When no flame is possible, Chabad.org says to consult your rabbi. A battery-powered light may be used in difficult circumstances, but the blessings are not said over it. It brings the holiday into the room, and the resident can sing, say Haneirot Halalu and enjoy the glow.
+3. **Use a safe flame if the home permits.** Jewish tradition recommends tea lights (short, sturdy candles in a metal cup) on a fireproof tray, kept away from anything flammable. Never light in a place that forbids it, and never leave a flame unattended.
+4. **An electric or battery menorah as a reminder.** When no flame is possible, the tradition says to consult your rabbi. A battery-powered light may be used in difficult circumstances, but the blessings are not said over it. It brings the holiday into the room, and the resident can sing, say Haneirot Halalu and enjoy the glow.
 
 ## Make Chanukah real even without a flame
 
@@ -40,13 +40,13 @@ Rabbi and Rebbetzin Labkowski visit people in care facilities, and Chabad of Lam
 Only if the facility allows an open flame. Ask the staff first. If it is allowed, light with the blessings. If not, the family can light at home, or the facility may let you light in a common room. Ask the Rabbi if you are unsure.
 
 ### Does an electric menorah count for Chanukah?
-Chabad.org teaches that electric lights generally do not fulfill the mitzvah, so the blessings are not said over them. They still publicize the miracle and bring joy, so many people place one in the window or room as a reminder.
+Jewish tradition teaches that electric lights generally do not fulfill the mitzvah, so the blessings are not said over them. They still publicize the miracle and bring joy, so many people place one in the window or room as a reminder.
 
 ### Can my mother take part if her son or daughter lights for her?
 Ask the Rabbi. When someone is truly present at a lighting, listening and answering "Amen," they can share in it. A lighting somewhere else is a different question, and the answer depends on the situation.
 
 ### Is it safe to use tea lights for an elderly person?
-Only with supervision. Chabad.org recommends tea lights on a fireproof surface, but for an elderly person living alone, ask the family and the Rabbi whether a flame is wise. Safety always comes first.
+Only with supervision. The tradition recommends tea lights on a fireproof surface, but for an elderly person living alone, ask the family and the Rabbi whether a flame is wise. Safety always comes first.
 
 ### What if my parent has dementia?
 The sight of lights, the songs and a familiar person at their side can bring back deep memories. Keep it short, calm and warm. Call the Rabbi if you would like help.

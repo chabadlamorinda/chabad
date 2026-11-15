@@ -11,7 +11,7 @@ The sukkah (סֻכָּה) is where we eat and spend time during Sukkot. For the 
 
 ## Choose the spot
 
-Chabad.org's "Sukkology 101" teaches that any area under a tree, a house roof or another covering is not part of the sukkah. So:
+Jewish law teaches that any area under a tree, a house roof or another covering is not part of the sukkah. So:
 
 - **Open sky.** Pick a flat, open place away from oak branches and eaves. A tree that looks high now may reach over the schach, so stand under the spot and look up.
 - **Level ground.** On a hillside, build on the flattest part of the yard or deck; a sloped floor makes the walls and table hard to steady.
@@ -23,7 +23,7 @@ If an overhanging branch is the problem, the options are to move the sukkah, tri
 
 ## Walls that stay up in the wind
 
-According to Chabad.org, a sukkah needs at least two walls and a small part of a third, though three or four are better, and the walls must stand in ordinary wind. Fabric walls need to be tied tightly, so they do not flap. Practical tips for windy hills:
+According to Jewish tradition, a sukkah needs at least two walls and a small part of a third, though three or four are better, and the walls must stand in ordinary wind. Fabric walls need to be tied tightly, so they do not flap. Practical tips for windy hills:
 
 1. Use a sturdy frame, such as metal pipes with connectors, or wood, anchored with sandbags or stakes (where rules allow).
 2. Tie fabric tightly at the bottom and corners so it does not billow.
@@ -34,11 +34,11 @@ The minimum interior height is 10 handbreadths (about 40 inches) and the sukkah 
 
 ## The roof (schach)
 
-Schach must be plant material that grew from the ground and was cut: for example bamboo poles, cedar or palm branches. Not allowed are metal, plastic, cloth, food or anything made by people (Chabad.org). Spread it so there is more shade than sun, but thin enough that you can see stars at night, and so rain can come through. Place the schach after the walls are up. A tarp or umbrella below the schach disqualifies the sukkah, so don't sit under one.
+Schach must be plant material that grew from the ground and was cut: for example bamboo poles, cedar or palm branches. Not allowed are metal, plastic, cloth, food or anything made by people. Spread it so there is more shade than sun, but thin enough that you can see stars at night, and so rain can come through. Place the schach after the walls are up. A tarp or umbrella below the schach disqualifies the sukkah, so don't sit under one.
 
 ## Rain and early fall weather
 
-Rain can come in early fall in the East Bay. Chabad.org says the sukkah is the one mitzvah you may leave if it truly bothers you, such as in wet weather: you may go inside and eat there. Many families stay if it is only a drizzle, and many step in at a downpour. Ask the Rabbi whether to say a blessing when you return. Cover the table, keep chairs dry, and put the cushions away.
+Rain can come in early fall in the East Bay. The tradition says the sukkah is the one mitzvah you may leave if it truly bothers you, such as in wet weather: you may go inside and eat there. Many families stay if it is only a drizzle, and many step in at a downpour. Ask the Rabbi whether to say a blessing when you return. Cover the table, keep chairs dry, and put the cushions away.
 
 ## Fire season care
 

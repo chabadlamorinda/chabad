@@ -9,7 +9,7 @@ The story of Choni and the carob tree is told in the Talmud (Taanit 23a): a man 
 
 ## The story
 
-Choni HaMe'agel ("the circle-maker") was walking along a road when he saw an old man planting a carob tree. As Chabad.org retells it, Choni asked him how long it would take to bear fruit. The man answered: seventy years.
+Choni HaMe'agel ("the circle-maker") was walking along a road when he saw an old man planting a carob tree. In the Talmud's story, Choni asked him how long it would take to bear fruit. The man answered: seventy years.
 
 Choni asked, "Do you expect to live seventy more years and eat its fruit?"
 
@@ -19,7 +19,7 @@ The man replied that he had found carob trees already standing in the world. Jus
 
 The old man did not plant for himself. He saw his life as one link in a chain: someone planted before him, and he would plant for someone after. Every one of us eats from trees we did not plant. Our Shabbat table, our prayers, our language, even the synagogue we walk into were given to us by people we never met.
 
-Chabad.org's teachers apply the image in a few ways. Rabbi Mordechai Lightstone, in "Nine Ways to Be Like a Tree," uses the story to teach that we should bring sweetness into other people's lives even when the seeds we plant take many years to bear fruit. Another article on Chabad.org, "The Old Man and the Fig Tree" by Rabbi Elisha Greenbaum, tells a similar midrash about an old man planting a fig tree for his children and points out that planting is an act of faith: the planter cannot control or follow the outcome.
+Teachers apply the image in a few ways. Rabbi Mordechai Lightstone, in "Nine Ways to Be Like a Tree," uses the story to teach that we should bring sweetness into other people's lives even when the seeds we plant take many years to bear fruit. Another article, "The Old Man and the Fig Tree" by Rabbi Elisha Greenbaum, tells a similar midrash about an old man planting a fig tree for his children and points out that planting is an act of faith: the planter cannot control or follow the outcome.
 
 ## What it means for us
 
@@ -38,7 +38,7 @@ For Chabad of Lamorinda, the "trees" are Jewish education for future generations
 It is a Talmud story (Taanit 23a) about Choni, who sees a man planting a carob tree that takes seventy years to bear fruit. The man explains that he is planting for his descendants, as his ancestors planted for him.
 
 ### What is the lesson of the carob tree story?
-We benefit from what earlier generations gave us, and we owe the same to those who come after. Chabad.org teachers also draw from it patience and faith: do good even when you will not see the result.
+We benefit from what earlier generations gave us, and we owe the same to those who come after. Teachers also draw from it patience and faith: do good even when you will not see the result.
 
 ### Is this a Tu BiShvat story?
 It is a story about a tree, but its message about planting for the future belongs to every season.

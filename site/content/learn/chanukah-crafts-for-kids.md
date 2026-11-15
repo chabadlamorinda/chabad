@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: chanukah-with-toddlers, chanukah-for-kids, dreidel, chanukah-menorah, chanukah-songs
 local: Making crafts with your children? Come meet other families in Lafayette, Moraga and Orinda: see /programs/kids-and-teens or call 925-384-7242.
 ---
-The easiest Chanukah crafts for kids use things you already have at home: a potato for stamping wrapping paper, a jar for a dreidel snow globe, air-dry clay for dreidels, and paper and markers for cards. Chabad.org's kids' pages suggest all of these, and each one ends with something the family can use or give during the eight days.
+The easiest Chanukah crafts for kids use things you already have at home: a potato for stamping wrapping paper, a jar for a dreidel snow globe, air-dry clay for dreidels, and paper and markers for cards. These all work well, and each one ends with something the family can use or give during the eight days.
 
 ## Potato-stamp Chanukah wrapping paper
 
@@ -19,7 +19,7 @@ Use the paper for the presents you will give, or for a card for a grandparent.
 
 ## A glittery dreidel snow globe
 
-A [dreidel](/learn/dreidel) is a four-sided spinning top marked with the Hebrew letters nun, gimmel, hey and shin, for "Nes gadol hayah sham," "A great miracle happened there." Chabad.org's snow globe uses two small dreidels:
+A [dreidel](/learn/dreidel) is a four-sided spinning top marked with the Hebrew letters nun, gimmel, hey and shin, for "Nes gadol hayah sham," "A great miracle happened there." The snow globe uses two small dreidels:
 
 1. Glue one dreidel flat inside a jar lid and a second on top of it, with hot glue. This step is for an adult. If the dreidels are wood, a coat of clear nail polish first keeps them from molding.
 2. Let the glue dry completely.
@@ -33,7 +33,7 @@ A [dreidel](/learn/dreidel) is a four-sided spinning top marked with the Hebrew 
 - **Canvas art.** Tape the shape of a menorah or dreidel on a small canvas with masking tape, paint the whole canvas, and peel the tape off when dry to reveal the design.
 - **A giant menorah of building bricks.** Let a group of kids build one together, a good activity for a party. See our guide to [hosting a Chanukah party](/learn/hosting-a-chanukah-party).
 - **Decorate a donut.** Ready-made donuts, icing and sprinkles. See [sufganiyot](/learn/sufganiyot), the jelly doughnuts of Chanukah.
-- **A gelt purse or bag.** A homemade pouch for [Chanukah gelt](/learn/chanukah-gelt) makes a nice present. Chabad.org's kids' site has a video for one.
+- **A gelt purse or bag.** A homemade pouch for [Chanukah gelt](/learn/chanukah-gelt) makes a nice present. Many families find a video helpful for this one.
 
 ## A craft menorah and the real thing
 

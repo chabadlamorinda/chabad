@@ -11,7 +11,7 @@ Many families in Lafayette, Moraga and Orinda feel pulled between these: wanting
 
 ## Money is life-energy
 
-Chapter 37 on Chabad.org explains why tzedakah is special. The Sages say charity is "equal to all the other mitzvot together." The Tanya's reason is that the money comes from one's labor, so the full energy of the animal soul goes into earning it. Giving it to charity lifts all that energy to G-d.
+Chapter 37 of the Tanya explains why tzedakah is special. The Sages say charity is "equal to all the other mitzvot together." The Tanya's reason is that the money comes from one's labor, so the full energy of the animal soul goes into earning it. Giving it to charity lifts all that energy to G-d.
 
 Even someone who does not work for a living, the chapter says, gives "the life of his soul" to G-d, since the money could have sustained his life. In other words, when you give, you are not only parting with dollars, you are giving a piece of your effort and your life. The chapter adds that because charity elevates so much of the soul, it hastens the redemption.
 
@@ -23,13 +23,13 @@ Chapter 37 speaks of tzedakah given from money that was not obtained through the
 
 ## Trust, not anxiety
 
-Epistle 11 of the Iggeret HaKodesh on Chabad.org asks the reader not to crave physical life, children or sustenance for their own sake, but only insofar as they help one serve G-d. It teaches that a person who truly trusts G-d knows that his needs and affairs, in every detail, come from G-d. The epistle says that anxiety comes from self-love: from wanting "the life of the flesh" because one thinks that is his good. It cites the teaching "gam zu letovah," "this too is for the good," and that "in the light of the King's countenance, there is life."
+Epistle 11 of the Iggeret HaKodesh asks the reader not to crave physical life, children or sustenance for their own sake, but only insofar as they help one serve G-d. It teaches that a person who truly trusts G-d knows that his needs and affairs, in every detail, come from G-d. The epistle says that anxiety comes from self-love: from wanting "the life of the flesh" because one thinks that is his good. It cites the teaching "gam zu letovah," "this too is for the good," and that "in the light of the King's countenance, there is life."
 
 The epistle gives no practical advice on earning, budgeting or debt. It speaks to the heart, not to the bank account. If money worry is heavy, the Tanya's teaching is spiritual support, not financial or medical advice, and it is right to seek practical help and to talk to the Rabbi. See [money worries](/learn/money-worries).
 
 ## Giving and success: the Rabbi's teaching
 
-Chabad teaches, and Rabbi Labkowski teaches, that G-d rewards all giving of tzedakah with success. Maaser, giving a tenth of your income, is unique because there the Torah states the promise clearly. Chabad.org's guide to maaser quotes the Talmud (Taanit 9a): "Give a tenth in order that you will become wealthy," and the verse from the prophet Malachi (3:10) where G-d says "Test Me on this." The Rebbe taught that we may test G-d in this way with all tzedakah, not only with maaser. A legacy gift and a donor-advised fund grant also count as maaser.
+Chabad teaches, and Rabbi Labkowski teaches, that G-d rewards all giving of tzedakah with success. Maaser, giving a tenth of your income, is unique because there the Torah states the promise clearly. The Talmud (Taanit 9a) teaches: "Give a tenth in order that you will become wealthy," and the verse from the prophet Malachi (3:10) where G-d says "Test Me on this." The Rebbe taught that we may test G-d in this way with all tzedakah, not only with maaser. A legacy gift and a donor-advised fund grant also count as maaser.
 
 This is not meant to pressure anyone, and no one who is struggling has done anything wrong. If your situation is hard, call the Rabbi. See [maaser](/learn/maaser) and [does tzedakah bring wealth](/learn/does-tzedakah-bring-wealth), or [giving when money is tight](/learn/giving-when-money-is-tight).
 

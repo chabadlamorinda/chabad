@@ -11,7 +11,7 @@ For the general Jewish view, see [humility](/learn/humility). Here we follow Tan
 
 ## The puzzle
 
-The Mishnah says to be "lowly of spirit before every man." Chabad.org's presentation of Chapter 30 notes that Hebrew has two words. *Anavah* is knowing your strengths without boasting, because they are gifts. *Shefalut* is feeling truly lower than others. The Mishnah's words point to the second. But how can someone who keeps the Torah sincerely think he is lower than a person who does wrong? The Alter Rebbe rejects the easy answer that this only means being polite; he wants it to be sincere.
+The Mishnah says to be "lowly of spirit before every man." Chassidic teaching on Chapter 30 notes that Hebrew has two words. *Anavah* is knowing your strengths without boasting, because they are gifts. *Shefalut* is feeling truly lower than others. The Mishnah's words point to the second. But how can someone who keeps the Torah sincerely think he is lower than a person who does wrong? The Alter Rebbe rejects the easy answer that this only means being polite; he wants it to be sincere.
 
 ## Step one: stand in his place
 
@@ -46,7 +46,7 @@ The chapter's aim is that this honest reflection breaks pride, the arrogance of 
 Chapter 30 says to be lowly of spirit before everyone, and explains how: do not judge your fellow until you stand in his place, and measure your own effort honestly against his struggle.
 
 ### What is the difference between anavah and shefalut?
-According to Chabad.org's presentation, *anavah* is recognizing your strengths without boasting, because they are gifts. *Shefalut* is feeling truly lower than others.
+In this teaching, *anavah* is recognizing your strengths without boasting, because they are gifts. *Shefalut* is feeling truly lower than others.
 
 ### Does humility mean thinking I am worthless?
 No. Tanya's humility is an honest view that breaks pride. It does not deny your gifts or your worth.

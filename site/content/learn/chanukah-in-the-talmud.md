@@ -9,7 +9,7 @@ The Talmud tells the story of Chanukah in just a few lines, on page 21b of the t
 
 ## What does the Talmud actually say?
 
-The passage, called the Gemara, begins with a question rather than a date: "What is Chanukah?" It then answers, in the retelling of Chabad.org's translation, in four short steps:
+The passage, called the Gemara, begins with a question rather than a date: "What is Chanukah?" It then answers, in a retelling of the translation, in four short steps:
 
 1. **The Greeks entered the Sanctuary** and defiled all the oil in it.
 2. **The Hasmonean kingdom prevailed** and defeated them. The Jews then searched and found only one flask of oil, which still bore the seal of the High Priest (Kohen Gadol).
@@ -22,19 +22,19 @@ You can read the full story with its history in [the story of Chanukah](/learn/c
 
 ## Why did the Greeks defile the oil instead of destroying it?
 
-This is a question a Chabad.org teacher raises. The Greeks were not trying to stop the Menorah from being lit. They wanted it lit with defiled oil. According to this explanation, they were ready to admire the Torah as a work of human wisdom, but they could not accept that it comes from G-d, that it cannot be changed, or that it includes commandments, the *chukim*, which go beyond human logic. Defiling the oil, which was a mitzvah done only because G-d commanded it, struck at that point.
+This is a question that teachers raise. The Greeks were not trying to stop the Menorah from being lit. They wanted it lit with defiled oil. According to this explanation, they were ready to admire the Torah as a work of human wisdom, but they could not accept that it comes from G-d, that it cannot be changed, or that it includes commandments, the *chukim*, which go beyond human logic. Defiling the oil, which was a mitzvah done only because G-d commanded it, struck at that point.
 
 ## Why is the seal important?
 
-The Gemara notes that the flask had the seal of the Kohen Gadol. One teaching on Chabad.org reads the wording closely: the flask was found with the High Priest's ring, and since an enemy would have taken a ring, the Hasmoneans could trust that the place had not been touched. Another reading sees the sealed flask as a sign that a part of the Jewish people always remains connected to G-d, even when much is lost.
+The Gemara notes that the flask had the seal of the Kohen Gadol. One teaching reads the wording closely: the flask was found with the High Priest's ring, and since an enemy would have taken a ring, the Hasmoneans could trust that the place had not been touched. Another reading sees the sealed flask as a sign that a part of the Jewish people always remains connected to G-d, even when much is lost.
 
 ## The question of eight days
 
-If the oil was enough for one day, why do we celebrate eight days and not seven? The great authority Rabbi Yosef Caro asked this in his *Beit Yosef*, and Chabad.org lists several of the answers: the oil was divided into eight portions, or the jug stayed full after the first night, or the Menorah was still full the next morning. Rabbi Yehuda Shurpin lists thirteen possible answers in all. A fuller discussion is in [Why is Chanukah eight days?](/learn/why-is-chanukah-eight-days) and in [Which Chanukah miracle?](/learn/which-chanukah-miracle).
+If the oil was enough for one day, why do we celebrate eight days and not seven? The great authority Rabbi Yosef Caro asked this in his *Beit Yosef*, and several answers are given: the oil was divided into eight portions, or the jug stayed full after the first night, or the Menorah was still full the next morning. Rabbi Yehuda Shurpin lists thirteen possible answers in all. A fuller discussion is in [Why is Chanukah eight days?](/learn/why-is-chanukah-eight-days) and in [Which Chanukah miracle?](/learn/which-chanukah-miracle).
 
 ## The lights of Beit Shammai and Beit Hillel
 
-The same page of Talmud records an argument between two schools of Sages. Beit Shammai said to light eight candles on the first night and one fewer each night. Beit Hillel said to light one and add one each night. We follow Beit Hillel. A teaching on Chabad.org explains the argument: Beit Shammai looked at the potential, the full oil of the first night shrinking day by day, while Beit Hillel looked at the miracle becoming greater each night, "for we go up in holiness and not down."
+The same page of Talmud records an argument between two schools of Sages. Beit Shammai said to light eight candles on the first night and one fewer each night. Beit Hillel said to light one and add one each night. We follow Beit Hillel. A teaching on jewish tradition explains the argument: Beit Shammai looked at the potential, the full oil of the first night shrinking day by day, while Beit Hillel looked at the miracle becoming greater each night, "for we go up in holiness and not down."
 
 The word Chanukah (חנוכה) can even be read as a hint. The first two letters, *ches* and *nun*, suggest "eight candles," and the rest, the words "and the halachah is like Beit Hillel."
 
