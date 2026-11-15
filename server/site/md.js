@@ -59,4 +59,19 @@ function frontMatter(src) {
 
 // The same for plain text that is about to be escaped (the legal line, a phone in a sentence).
 const escLtr = (s) => ltr('>' + esc(s) + '<').slice(1, -1);
-module.exports = { md, inline, esc, plain, frontMatter, safeUrl, ltr, escLtr };
+// "Ask the Rabbi" in the text becomes a link to /help/talk-to-the-rabbi, where the reader can call or message Rabbi Yisroel
+// Labkowski or Rebbetzin Tzipora Labkowski. Skips links, headings, scripts. For pages only (not emails).
+const ASK = /\b[Aa]sk the (?:Rabbi|Rebbetzin)(?: or (?:the )?Rebbetzin)?|שאל(?:ו|י)? את (?:הרב|הרבנית)(?: או (?:את )?הרבנית)?|[Сс]просите (?:у )?(?:раввина|ребецин)(?: или (?:у )?ребецин)?|[Оо]братитесь к (?:раввину|ребецин)/g;
+function askRabbi(html, title) {
+  let depth = 0;
+  return String(html || '').split(/(<[^>]+>)/).map((part) => {
+    if (part[0] === '<') {
+      if (/^<(a|h[1-6]|script|style|button)\b/i.test(part)) depth++;
+      else if (/^<\/(a|h[1-6]|script|style|button)>/i.test(part)) depth = Math.max(0, depth - 1);
+      return part;
+    }
+    return depth ? part : part.replace(ASK, (m) => `<a class="ask-rabbi" href="/help/talk-to-the-rabbi" title="${esc(title || 'Call or message the Rabbi or Rebbetzin')}">${m}</a>`);
+  }).join('');
+}
+
+module.exports = { askRabbi, md, inline, esc, plain, frontMatter, safeUrl, ltr, escLtr };

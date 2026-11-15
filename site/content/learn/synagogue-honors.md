@@ -3,13 +3,13 @@ title: Synagogue Honors: Hagbah, Gelilah, Opening the Ark and Who Gets Them
 description: What are hagbah, gelilah and the other synagogue honors? A simple guide to opening the ark, lifting the Torah and how honors are given to visitors.
 category: Prayer & Torah
 related: aliyah, synagogue-roles, sefer-torah, torah-reading, shabbat-morning-services-explained
-local: Would you like to be honored at a service? Call Rabbi Labkowski at 925-384-7242 and he will help you prepare.
+local: Visitors are warmly offered honors at our services: just ask, or call Rabbi Labkowski at 925-384-7242 and he will help you prepare.
 ---
 Synagogue honors, called *kibbudim* (כִּבּוּדִים), are small roles given to people during the service: opening the ark, being called up to the Torah (an aliyah), lifting the scroll (hagbah), dressing it (gelilah) and leading prayers. The gabbai, the person who runs the service, decides who receives each one, and visitors are often glad to be asked.
 
 ## What an honor is, and why we give them
 
-In a synagogue, taking part in the Torah service is a privilege. Chabad.org explains that the *gabbai* (גבאי), the warden, keeps the synagogue organized, calls people up to the bimah for aliyot, and gives out the other honors. Leading the prayers is also considered an honor. Many are handed out to people marking something special: a birthday, a yahrzeit, a new baby, an upcoming wedding or bar mitzvah. If you would like one, you can simply tell the gabbai. See [Who Does What in Shul](/learn/synagogue-roles).
+In a synagogue, taking part in the Torah service is a privilege. Chabad.org explains that the *gabbai* (גבאי), the warden, keeps the synagogue organized, calls people up to the bimah for aliyot, and gives out the other honors. Leading the prayers is also considered an honor. Many are handed out to people marking something special: a birthday, a yahrzeit, a new baby, an upcoming wedding or bar mitzvah. If you would like one, you can simply tell the gabbai. At Chabad of Lamorinda visitors are warmly offered honors such as an aliyah or opening the ark when they would like one: just ask, or call 925-384-7242. See [Who Does What in Shul](/learn/synagogue-roles).
 
 ## The honors, one by one
 
@@ -50,7 +50,7 @@ Hagbah is the honor of lifting the open Torah scroll after the reading so the co
 Gelilah is the honor of rolling the Torah closed and dressing it with its cover and ornaments.
 
 ### How do I get an honor in synagogue?
-Tell the gabbai or the Rabbi that you would like one, and let them know the occasion, such as a birthday or a yahrzeit. Call 925-384-7242 to ask about Chabad of Lamorinda.
+Tell the gabbai or the Rabbi that you would like one, and let them know the occasion, such as a birthday or a yahrzeit. At Chabad of Lamorinda visitors are warmly offered honors such as an aliyah or opening the ark when they would like one: just ask, or call 925-384-7242.
 
 ### Who decides who gets the honors?
 The gabbai decides. Chabad.org describes him as the one who gives out the honors and calls people up.

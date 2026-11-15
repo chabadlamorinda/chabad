@@ -56,7 +56,7 @@ The baal koreh is the person who reads the Torah aloud from the scroll, followin
 The chazzan leads the prayers, while the gabbai organizes, and the rabbi teaches and guides. Different people may lead different parts of the service.
 
 ### Can a first-timer be given an honor?
-Yes, often. Tell the gabbai or Rabbi that it is your first visit, and they will guide you through it.
+Yes, often. At Chabad of Lamorinda visitors are warmly offered honors such as an aliyah or opening the ark; just ask, or call 925-384-7242. Tell the gabbai or Rabbi that it is your first visit, and they will guide you through it.
 
 ### Is a rabbi the same as a priest?
 No. A rabbi is a teacher and legal guide, not an intermediary between you and G-d.

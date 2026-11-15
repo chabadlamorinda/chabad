@@ -4,7 +4,8 @@
 //  * /learn: guides to every Jewish topic, each tied back to how we help locally.
 'use strict';
 const { byPopularity, views } = require('./popular.js');
-const { md, esc, plain } = require('./md.js');
+const { md: md0, askRabbi, esc, plain } = require('./md.js');
+const md = (src) => askRabbi(md0(src));
 const { fullAddress, LEARN_CATEGORIES, fmtClock } = require('./content.js');
 const { artImg, artFor, guidePhoto } = require('./art.js');
 const { readNext, asItem, guideCards, guidesFor } = require('./links.js');

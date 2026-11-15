@@ -6,7 +6,8 @@
 //  /sponsor              sponsor a Kiddush, a Shabbat dinner or a class for a yahrzeit, birthday, simcha or recovery
 'use strict';
 const { byPopularity } = require('./popular.js');
-const { md, esc } = require('./md.js');
+const { md: md0, askRabbi, esc } = require('./md.js');
+const md = (src) => askRabbi(md0(src));
 const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
 const { validYmd } = require('./tools.js');
