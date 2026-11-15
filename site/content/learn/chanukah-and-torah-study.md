@@ -15,7 +15,7 @@ This is also why the Greeks defiled the oil rather than destroying it. They did 
 
 ## What did the Rebbe say about learning on Chanukah?
 
-In a talk on the second night of Chanukah, the Rebbe linked the day to the tribe of Yissachar, whose members were known for understanding the times and for Torah learning, and to Netanel, who guided the princes. The lesson he drew: alongside extra tzedakah, one must add Torah study. He quoted the verse "a mitzvah is a lamp and Torah is light," and he noted that the Rebbe Rashab used to sit near the Chanukah lights to learn Torah, though without using their light.
+In a talk on the second night of Chanukah, the Rebbe linked the day to the tribe of Yissachar, whose members were known for understanding the times and for Torah learning, and to Netanel, who guided the princes. The lesson he drew: alongside extra tzedakah, one must add Torah study. He quoted the saying "a mitzvah is a lamp and Torah is light," and he noted that the Rebbe Rashab used to sit near the Chanukah lights to learn Torah, though without using their light.
 
 The Rebbe also stressed that this applies to women as well, because women also must study the mitzvot they are obligated to keep. See [Torah study for women](/learn/torah-study-for-women).
 

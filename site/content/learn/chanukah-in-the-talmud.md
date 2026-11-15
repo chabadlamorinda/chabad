@@ -1,6 +1,6 @@
 ---
 title: Chanukah in the Talmud: The Short Passage That Tells the Story
-description: What does the Talmud say about Chanukah? Read the short passage in Shabbat 21b, "What is Chanukah?", the oil, the eight days and the lights of Hillel and Shammai.
+description: What does the Talmud say about Chanukah? The short passage in Shabbat 21b: the oil, the eight days and the lights of Hillel and Shammai.
 category: Shabbat & holidays
 related: chanukah-story, talmud, why-is-chanukah-eight-days, which-chanukah-miracle, al-hanissim-and-hallel
 local: Curious to learn Talmud with a friendly teacher? Call Rabbi Labkowski at 925-384-7242 or see /programs/adult-education.

@@ -1,6 +1,6 @@
 ---
 title: Buying Israeli Produce Abroad: Terumot, Maasrot and Shmita Questions
-description: Do you need to separate tithes from Israeli fruit or vegetables bought outside Israel? What terumah, maaser, orlah and shmita mean, and when to ask the Rabbi.
+description: Do you need to separate tithes from Israeli produce bought outside Israel? What terumah, maaser, orlah and shmita mean, and when to ask the Rabbi.
 category: Kosher
 related: shmita, maaser, kosher-symbols, seven-species, checking-for-insects
 local: Bought Israeli dates, peppers or fruit and not sure what to do? Ask Rabbi Labkowski, 925-384-7242, before you eat.

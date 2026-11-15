@@ -1,6 +1,6 @@
 ---
 title: An Israel Trip With Kids: Jewish Sites Children Love
-description: Planning an Israel trip with children? Jewish sites kids love: the Western Wall, tunnels, a dig for a day, Tzfat and more, with tips from a Chabad.org family.
+description: Planning an Israel trip with kids? Jewish sites children love: the Western Wall, tunnels, a dig for a day and Tzfat, with tips from a Chabad.org family.
 category: Jewish ideas
 related: first-trip-to-israel, bar-mitzvah-in-israel, western-wall, jerusalem, teaching-kids-about-israel
 local: Going to Israel from Lafayette, Moraga or Orinda with your family? Ask Rabbi Labkowski for a blessing and ideas before you go: 925-384-7242.
