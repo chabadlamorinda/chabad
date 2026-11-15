@@ -9,13 +9,13 @@ A dvar Torah (דבר תורה, "a word of Torah") is a short thought about the w
 
 ## Why words of Torah at the table
 
-The Mishnah in Pirkei Avot (3:3) teaches that when three people eat at one table and speak words of Torah, it is as though they ate at G-d's table. Chabad.org's commentary on this teaching explains that Torah turns an ordinary meal into something holy, because body, soul and food come together as one. That is why many families in Lafayette, Moraga and Orinda add a Torah thought to Friday night. Chabad.org also notes the custom of waiting until after the food is eaten to speak words of Torah; ask the Rabbi how your family should do this.
+The Mishnah in Pirkei Avot (3:3) teaches that when three people eat at one table and speak words of Torah, it is as though they ate at G-d's table. Chassidic commentary on this teaching explains that Torah turns an ordinary meal into something holy, because body, soul and food come together as one. That is why many families in Lafayette, Moraga and Orinda add a Torah thought to Friday night. Jewish tradition also notes the custom of waiting until after the food is eaten to speak words of Torah; ask the Rabbi how your family should do this.
 
 ## A three-minute recipe
 
 1. **Find the portion.** Every week has a Torah portion, the parsha. See [this week's parsha](/parsha) and our guide to the [weekly Torah portion](/learn/weekly-parsha).
 2. **Pick one question.** Choose something that puzzles you, such as "Why did Abraham run to welcome guests when he was recovering?" A real question makes people lean in.
-3. **Offer one answer.** Read a short explanation on Chabad.org's Parshah in a Nutshell or a children's page, and retell it in your own words. You do not need to be a scholar.
+3. **Offer one answer.** Read a short explanation of the weekly portion, such as a children's page or a brief summary, and retell it in your own words. You do not need to be a scholar.
 4. **Share one lesson.** Ask: what can we do differently this week because of this? Keep it small and practical, like calling a neighbor or saying thank you.
 5. **Stop on time.** Three minutes leaves everyone wanting more.
 
@@ -28,7 +28,7 @@ The Mishnah in Pirkei Avot (3:3) teaches that when three people eat at one table
 
 ## What if you are a beginner?
 
-You do not need to give a long speech. Reading one sentence from Chabad.org and asking "What do you think?" is a real dvar Torah. Hosts who are new to Shabbat can start with [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Friday night dinner step by step](/learn/friday-night-dinner-step-by-step), and add the Torah thought when they feel ready.
+You do not need to give a long speech. Reading one sentence from the weekly portion and asking "What do you think?" is a real dvar Torah. Hosts who are new to Shabbat can start with [hosting your first Shabbat dinner](/learn/hosting-your-first-shabbat-dinner) and [Friday night dinner step by step](/learn/friday-night-dinner-step-by-step), and add the Torah thought when they feel ready.
 
 ## Common questions
 
@@ -39,7 +39,7 @@ A dvar Torah is a short talk or thought on a Torah topic, usually the weekly por
 About three minutes is enough: one question, one answer, one lesson. Short and sincere is better than long.
 
 ### Where can I find a dvar Torah for this week?
-Start with [this week's parsha](/parsha) on our site and with the weekly portion pages on Chabad.org. Read one short explanation and retell it simply.
+Start with [this week's parsha](/parsha) on our site and with a short summary of the weekly portion. Read one short explanation and retell it simply.
 
 ### Why do we say words of Torah at a meal?
 Pirkei Avot teaches that a table at which Torah is spoken is like G-d's table. It makes the meal more than eating.

@@ -9,7 +9,7 @@ You can keep Jewish life alive for a parent in senior living by bringing small, 
 
 ## Why this matters so much
 
-Jewish tradition places great weight on honoring parents and respecting the elderly (see [honoring the elderly](/learn/honoring-the-elderly)). Chabad.org suggests that adult children honor their parents not only through physical care but through their spiritual lives, including teaching caregivers about the holidays and customs a parent keeps, so that aides can help. That is what this guide is about.
+Jewish tradition places great weight on honoring parents and respecting the elderly (see [honoring the elderly](/learn/honoring-the-elderly)). Jewish tradition suggests that adult children honor their parents not only through physical care but through their spiritual lives, including teaching caregivers about the holidays and customs a parent keeps, so that aides can help. That is what this guide is about.
 
 The move to senior living can feel like losing a home, a routine, and sometimes a community. Familiar Jewish sights, tastes and songs can bring comfort, belonging and dignity, even when memory is fading. You are not trying to make your parent more observant than they were; you are bringing them back to what they know.
 
@@ -32,7 +32,7 @@ If your parent keeps kosher, talk to the facility about what is possible, since 
 
 ## A mezuzah on the door
 
-A mezuzah on the doorpost of your parent's room tells everyone, staff and visitors, that a Jewish person lives here. Chabad.org lists helping an elderly Jewish neighbor obtain mezuzahs among the most meaningful acts. Check with the facility first, and see [mezuzah](/learn/mezuzah) and [mezuzah questions](/learn/mezuzah-questions).
+A mezuzah on the doorpost of your parent's room tells everyone, staff and visitors, that a Jewish person lives here. Helping an elderly Jewish neighbor obtain mezuzahs is among the most meaningful acts. Check with the facility first, and see [mezuzah](/learn/mezuzah) and [mezuzah questions](/learn/mezuzah-questions).
 
 ## When memory fades
 

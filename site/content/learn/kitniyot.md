@@ -9,13 +9,13 @@ Kitniyot (קטניות) is a category of foods, including rice, corn, beans, len
 
 ## What are kitniyot?
 
-Kitniyot is usually translated "legumes," but in practice it includes more. According to Chabad.org, the class includes legumes, rice, beans and corn. Items Chabad.org lists as kitniyot include corn and popcorn, rice, lentils, soy products (tofu, soy milk, edamame, miso, soy sauce), tahini and sesame seeds, buckwheat, chickpeas and falafel, mustard, rice noodles, sunflower seeds, halva, cornstarch and canola oil. For anything not on the list, ask the Rabbi.
+Kitniyot is usually translated "legumes," but in practice it includes more. According to Jewish tradition, the class includes legumes, rice, beans and corn. Items considered kitniyot include corn and popcorn, rice, lentils, soy products (tofu, soy milk, edamame, miso, soy sauce), tahini and sesame seeds, buckwheat, chickpeas and falafel, mustard, rice noodles, sunflower seeds, halva, cornstarch and canola oil. For anything not on the list, ask the Rabbi.
 
 Kitniyot are different from [chametz](/learn/chametz), the five grains (wheat, barley, rye, oats and spelt) that have been in contact with water and risen. Chametz may not be eaten or owned on Passover. Kitniyot are a custom, not a Torah prohibition.
 
 ## Why do Ashkenazi Jews avoid them?
 
-In the Middle Ages the sages placed a ban on legumes on Passover. They are cooked and ground into flour in ways that look like chametz, and bread can even be made from their flour. The concern was that someone who sees cornbread permitted might decide that wheat or rye bread is also fine. The custom was accepted gradually by Ashkenazi communities, and Chabad.org states that Ashkenazic Jews unanimously accepted it.
+In the Middle Ages the sages placed a ban on legumes on Passover. They are cooked and ground into flour in ways that look like chametz, and bread can even be made from their flour. The concern was that someone who sees cornbread permitted might decide that wheat or rye bread is also fine. The custom was accepted gradually by Ashkenazi communities, and Jewish tradition states that Ashkenazic Jews unanimously accepted it.
 
 ## Who eats kitniyot on Passover?
 
@@ -23,14 +23,14 @@ Many Sephardic Jews do eat kitniyot on Passover, according to the traditions of 
 
 ## Can I own kitniyot on Passover?
 
-Yes. Chabad.org explains that the custom is to avoid eating them. There is no obligation to destroy or sell kitniyot before Passover. Keeping a bag of rice in the pantry is not the same as keeping a loaf of bread; see [selling your chametz](/learn/selling-your-chametz) for what must be sold.
+Yes. Jewish tradition explains that the custom is to avoid eating them. There is no obligation to destroy or sell kitniyot before Passover. Keeping a bag of rice in the pantry is not the same as keeping a loaf of bread; see [selling your chametz](/learn/selling-your-chametz) for what must be sold.
 
 ## What about potatoes, quinoa and oil?
 
-- **Potatoes** are not kitniyot. Chabad.org explains, citing Rabbi Moshe Feinstein, that the custom covers only foods known when it began, and potatoes reached Europe only in the sixteenth century. Chabad.org also notes the explanation of the Shulchan Aruch HaRav (the Code of Jewish Law by the first Chabad Rebbe), which covers legume-like foods that look like grain dishes when cooked; potatoes are underground tubers and are not included.
+- **Potatoes** are not kitniyot. The tradition explains, citing Rabbi Moshe Feinstein, that the custom covers only foods known when it began, and potatoes reached Europe only in the sixteenth century. Jewish teaching also notes the explanation of the Shulchan Aruch HaRav (the Code of Jewish Law by the first Chabad Rebbe), which covers legume-like foods that look like grain dishes when cooked; potatoes are underground tubers and are not included.
 - **Quinoa** is not related to the five grains, so it is not chametz. Some kashrut organizations do not list it as kitniyot, and others do, since cooked quinoa resembles grain porridge. Ashkenazic readers should ask the Rabbi. Either way, buy quinoa with Passover certification, because it can be contaminated with barley or oats.
-- **Oil.** Chabad.org says canola oil is considered kitniyot. For other oils, read the label for a Passover certification and ask the Rabbi.
-- **Chia seeds** are not chametz, and Chabad.org says they are not considered kitniyot, but use certified products because of cross-contamination.
+- **Oil.** The tradition says canola oil is considered kitniyot. For other oils, read the label for a Passover certification and ask the Rabbi.
+- **Chia seeds** are not chametz, and Jewish teaching says they are not considered kitniyot, but use certified products because of cross-contamination.
 
 ## Shopping tips
 

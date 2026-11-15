@@ -9,15 +9,15 @@ Judaism teaches that your table is like the altar of the ancient Temple: the Tal
 
 ## The Talmud's teaching
 
-Chabad.org explains the source. The Talmud (Berachot 55a) says that while the Temple stood, the sacrifices on the altar atoned for Israel. Today, with no Temple, a person's table atones for him when he feeds the poor. The prophet Ezekiel, describing the future altar, first calls it an altar and then says, "This is the table that is before the L-rd" (Ezekiel 41:22), and that shift of words is the basis for the comparison.
+The source. The Talmud (Berachot 55a) says that while the Temple stood, the sacrifices on the altar atoned for Israel. Today, with no Temple, a person's table atones for him when he feeds the poor. The prophet Ezekiel, describing the future altar, first calls it an altar and then says, "This is the table that is before the L-rd" (Ezekiel 41:22), and that shift of words is the basis for the comparison.
 
 In other words, an ordinary dinner table can have a sacred role. What we do there, who we feed and how, matters. Read [eating as a mitzvah](/learn/eating-as-a-mitzvah).
 
 ## Why salt?
 
-The Torah commands that salt be offered on all sacrifices (Leviticus 2:13). If the table is like an altar, the bread eaten on it is like an offering, so, Chabad.org explains, it is eaten with salt. The custom is to dip bread, including challah, in salt, even if the bread is already tasty.
+The Torah commands that salt be offered on all sacrifices (Leviticus 2:13). If the table is like an altar, the bread eaten on it is like an offering, so it is eaten with salt. The custom is to dip bread, including challah, in salt, even if the bread is already tasty.
 
-Chabad.org also notes that salt, which does not spoil, represents the lasting covenant between G-d and the Jewish people, and that salt is customarily kept on the table even if no one uses it. It gives three reasons for this custom:
+In addition, salt, which does not spoil, represents the lasting covenant between G-d and the Jewish people, and that salt is customarily kept on the table even if no one uses it. It gives three reasons for this custom:
 
 1. During the silent wait between washing hands and the blessing over bread, salt's covenant protects us.
 2. Salt reminds us to nourish the soul with words of Torah at the table.
@@ -42,16 +42,16 @@ You do not need a large house or a fancy meal to begin: a challah, salt and a gu
 ## Common questions
 
 ### Why do Jews say the table is like an altar?
-The Talmud says that after the Temple's destruction, a person's table atones for him when he feeds the poor from it, as the altar once atoned for Israel. Chabad.org connects this to a verse in Ezekiel.
+The Talmud says that after the Temple's destruction, a person's table atones for him when he feeds the poor from it, as the altar once atoned for Israel. The Sages connect this to a verse in Ezekiel.
 
 ### Why do we dip bread in salt?
-Sacrifices were salted, and if the table is like an altar, the bread is like an offering. Chabad.org says the custom is to dip bread in salt, even tasty bread.
+Sacrifices were salted, and if the table is like an altar, the bread is like an offering. The custom is to dip bread in salt, even tasty bread.
 
 ### Should there be salt on the table at every meal?
-Chabad.org says salt is customarily kept on the table even if no one uses it. See [setting the Shabbat table](/learn/setting-the-shabbat-table).
+Salt is customarily kept on the table even if no one uses it. See [setting the Shabbat table](/learn/setting-the-shabbat-table).
 
 ### Does feeding the poor really count so much?
-In the Talmud's words, as Chabad.org explains, it is the act through which the table atones. Read [tzedakah](/learn/tzedakah).
+In the Talmud's words, it is the act through which the table atones. Read [tzedakah](/learn/tzedakah).
 
 ### How can I make my meals holier?
 The customs above are a good start: wash, bless, share Torah, invite guests and thank G-d. Ask the Rabbi where to begin.

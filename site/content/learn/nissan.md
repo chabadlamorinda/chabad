@@ -9,7 +9,7 @@ Nissan (נִיסָן) is the first month of the Jewish calendar and the month of
 
 ## The first of the months
 
-The Torah says of the month of the Exodus, "This month shall be for you the head of the months" (Exodus 12:2). So even though the Jewish new year in the fall is Rosh Hashanah, the months are counted from Nissan. Chabad.org notes that the Jewish calendar has two "starts," Nissan for months and Tishrei for years, and you can read more in [the Jewish calendar](/learn/jewish-calendar) and about each [Rosh Chodesh](/learn/rosh-chodesh). Nissan has 30 days, and the month after it, [Iyar](/learn/iyar), has 29.
+The Torah says of the month of the Exodus, "This month shall be for you the head of the months" (Exodus 12:2). So even though the Jewish new year in the fall is Rosh Hashanah, the months are counted from Nissan. The Jewish calendar has two "starts," Nissan for months and Tishrei for years, and you can read more in [the Jewish calendar](/learn/jewish-calendar) and about each [Rosh Chodesh](/learn/rosh-chodesh). Nissan has 30 days, and the month after it, [Iyar](/learn/iyar), has 29.
 
 ## Spring and new beginnings
 
@@ -19,7 +19,7 @@ In Nissan the whole Jewish people celebrate new life: trees bloom, the days are 
 
 - **The twelve princes (Nesi'im).** During the first 12 days of the month, each tribal leader brought a gift to dedicate the Tabernacle (Mishkan), one on each day. Today it is customary to read the Torah passage about each day's gift, along with a special prayer. Ask the Rabbi where to find it.
 - **No fasting and no Tachanun.** Chabad custom is not to say the Tachanun prayer or fast for the whole month, because it is a happy month. Customs differ in other communities, so ask the Rabbi if you are unsure.
-- **The blessing on blossoming trees.** When you see a fruit tree in bloom in Nissan, you say a blessing, once a year. Chabad.org says it can be done at any time in the month. See [the blessing on blossoming trees](/learn/blessing-on-blossoming-trees). Lafayette, Moraga and Orinda are full of beautiful trees in the spring.
+- **The blessing on blossoming trees.** When you see a fruit tree in bloom in Nissan, you say a blessing, once a year. It can be done at any time in the month. See [the blessing on blossoming trees](/learn/blessing-on-blossoming-trees). Lafayette, Moraga and Orinda are full of beautiful trees in the spring.
 - **Passover.** Passover begins on the 15th of Nissan. Preparing starts well before: see [Passover for beginners](/learn/passover-for-beginners), [Passover cleaning](/learn/passover-cleaning), [kosher for Passover](/learn/kosher-for-passover) and [Maot Chitim](/learn/maot-chitim), the charity that helps others have a Seder.
 - **The Omer.** On the second night of Passover we begin counting the Omer, 49 days leading up to Shavuot. See [counting the Omer](/learn/counting-the-omer).
 

@@ -7,7 +7,7 @@ local: Expecting a baby boy? Call Rabbi Yisroel Labkowski at 925-384-7242 to pla
 ---
 Hebrew names for boys come from the patriarchs and the twelve tribes, the prophets and kings, the sages, and Yiddish. Popular choices include Avraham (אברהם), Yitzchak (יצחק), Yaakov (יעקב), David (דויד), Moshe (משה) and Daniel (דניאל). A Jewish boy is traditionally named at his bris, on the eighth day.
 
-The Hebrew spellings and meanings follow Chabad.org's list of popular Jewish boy names, retold in our own words. Meanings of ancient names are sometimes debated.
+The Hebrew spellings and meanings follow a traditional list of popular Jewish boy names, retold in our own words. Meanings of ancient names are sometimes debated.
 
 ## Patriarchs and the tribes
 
@@ -73,7 +73,7 @@ The Hebrew spellings and meanings follow Chabad.org's list of popular Jewish boy
 
 ## How to choose
 
-Chabad.org says parents may honor a departed relative, mark a special event, or pick any Jewish name they find beautiful. Many Jewish boys also carry a secular name. Customs differ between communities, so ask the Rabbi if you wonder about naming after relatives. See [Hebrew names](/learn/hebrew-names) and [Jewish baby names](/learn/jewish-baby-names).
+Jewish tradition says parents may honor a departed relative, mark a special event, or pick any Jewish name they find beautiful. Many Jewish boys also carry a secular name. Customs differ between communities, so ask the Rabbi if you wonder about naming after relatives. See [Hebrew names](/learn/hebrew-names) and [Jewish baby names](/learn/jewish-baby-names).
 
 ## The name at the bris
 
@@ -88,13 +88,13 @@ Avraham, Yitzchak, Yaakov, David, Moshe, Daniel, Meir, Noam and Eitan are popula
 Meir (מאיר) means to give light, Uri (אורי) means my light, and Shneur (שניאור) means two lights.
 
 ### When is a Jewish boy named?
-At his bris, on the eighth day, according to Chabad.org.
+At his bris, on the eighth day, according to Jewish tradition.
 
 ### Can we name a baby after a relative?
 Yes, parents often name after departed loved ones. Ask the Rabbi about specific cases.
 
 ### Do Hebrew names need to be biblical?
-No. Chabad.org says any Jewish name you find beautiful may be chosen, including Yiddish names loved by many families.
+No. The tradition says any Jewish name you find beautiful may be chosen, including Yiddish names loved by many families.
 
 ### Who can help us in Lamorinda?
 Rabbi Labkowski at 925-384-7242. No membership is needed.

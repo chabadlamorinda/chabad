@@ -13,7 +13,7 @@ The word Sanhedrin comes from the Greek for "sitting together," and the Great Sa
 
 ## How many judges were in the Sanhedrin?
 
-According to Chabad.org, the Great Sanhedrin had 71 members, led by a Nasi (president), who by tradition descended from King David. The number 71 comes from the Torah (Numbers 11:16). Chabad.org teaches that it goes back to Moses himself, who gathered 70 elders to help him guide the nation. With Moses, that makes 71.
+According to Jewish tradition, the Great Sanhedrin had 71 members, led by a Nasi (president), who by tradition descended from King David. The number 71 comes from the Torah (Numbers 11:16). Jewish tradition teaches that it goes back to Moses himself, who gathered 70 elders to help him guide the nation. With Moses, that makes 71.
 
 ## Where did the Sanhedrin meet?
 
@@ -21,11 +21,11 @@ The Sanhedrin began in the Lishkat HaGazit, the Chamber of Hewn Stone, next to a
 
 ## The smaller courts
 
-The Great Sanhedrin was the top of a whole system. Chabad.org describes a court of 23 judges in Israel's larger cities, authorized to rule on the most serious cases, and a local court of three for money cases and everyday matters in smaller communities. The idea of smaller and larger courts goes back to Jethro, Moses' father-in-law. He saw Moses taking the whole burden of justice on himself and suggested a system of lower and higher courts. Chabad.org adds that Moses knew his own system could not last, and so he accepted the advice.
+The Great Sanhedrin was the top of a whole system. There was a court of 23 judges in Israel's larger cities, authorized to rule on the most serious cases, and a local court of three for money cases and everyday matters in smaller communities. The idea of smaller and larger courts goes back to Jethro, Moses' father-in-law. He saw Moses taking the whole burden of justice on himself and suggested a system of lower and higher courts. Moses knew his own system could not last, and so he accepted the advice.
 
 ## The Sanhedrin travels
 
-In the time of Roman rule, the Sanhedrin was forced to leave its home. Chabad.org follows the Talmud's list of ten moves in the first and second centuries:
+In the time of Roman rule, the Sanhedrin was forced to leave its home. The Talmud lists ten moves in the first and second centuries:
 
 1. From the Chamber of Hewn Stone to the Temple Mount.
 2. From the Temple Mount to Jerusalem.
@@ -60,7 +60,7 @@ The Great Sanhedrin had 71 members, headed by a Nasi who by tradition descended 
 It began in the Chamber of Hewn Stone in the Temple in Jerusalem. After the Temple fell it met in Yavneh, Usha, Shefaram, Beit She'arim, Tzippori and finally Tiberias.
 
 ### Who started the idea of courts in the Torah?
-Chabad.org notes that Jethro, Moses' father-in-law, suggested dividing the work of justice among smaller and larger courts. Moses accepted the advice.
+Jethro, Moses' father-in-law, suggested dividing the work of justice among smaller and larger courts. Moses accepted the advice.
 
 ### Will the Sanhedrin return?
 Jewish tradition holds the hope that it will be restored. The Talmud teaches that the Redemption will arise from Tiberias, the Sanhedrin's last location. Ask the Rabbi to explore this further.

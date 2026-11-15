@@ -9,7 +9,7 @@ There is no special blessing just for graduation in the Torah, but Jewish tradit
 
 ## The Shehecheyanu blessing
 
-Shehecheyanu (שֶׁהֶחֱיָנוּ) is a blessing of thanks for being granted life, being sustained and reaching a special moment. According to Chabad.org, it is traditionally said when experiencing something new or special, for example the first taste of a new fruit, wearing new clothes, or performing certain mitzvot. The article does not mention graduations. So practice may differ, and the right answer for you depends on the situation. Read more in [Shehecheyanu](/learn/shehecheyanu), and ask Rabbi Labkowski at 925-384-7242 whether and how to say it for your graduate.
+Shehecheyanu (שֶׁהֶחֱיָנוּ) is a blessing of thanks for being granted life, being sustained and reaching a special moment. According to Jewish tradition, it is traditionally said when experiencing something new or special, for example the first taste of a new fruit, wearing new clothes, or performing certain mitzvot. The article does not mention graduations. So practice may differ, and the right answer for you depends on the situation. Read more in [Shehecheyanu](/learn/shehecheyanu), and ask Rabbi Labkowski at 925-384-7242 whether and how to say it for your graduate.
 
 Even without a formal blessing, a family can pause and say thank you to G-d for bringing everyone to this day. See also [a Jewish blessing for a new job](/learn/new-job-jewish-blessing).
 
@@ -41,7 +41,7 @@ For a high school graduate heading to college, the next question is how to stay 
 There is no blessing specifically for graduation that we can cite. Shehecheyanu is traditionally said on new or special occasions, so ask the Rabbi whether to say it for a graduation.
 
 ### Should we say Shehecheyanu at a graduation?
-Ask the Rabbi. Chabad.org describes it as said for new or special experiences, and customs differ about what qualifies.
+Ask the Rabbi. Jewish tradition describes it as said for new or special experiences, and customs differ about what qualifies.
 
 ### How can parents bless a graduate?
 Parents can bless their children on Friday night, and add a personal blessing. Read [blessing your children](/learn/blessing-your-children).

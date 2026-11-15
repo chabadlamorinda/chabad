@@ -9,7 +9,7 @@ Deborah (דְּבוֹרָה) was a prophetess and the only woman among the judge
 
 ## Who was Deborah?
 
-Chabad.org teaches that Deborah was the fourth of the judges and one of the seven women prophets of the Bible. She lived in the hills of Ephraim, between Ramah and Beth-El. The people had drifted from the Torah, and G-d let them be oppressed for twenty years by Jabin, king of Canaan, whose general Sisera had many iron chariots. When they cried out, G-d sent Deborah.
+Jewish tradition teaches that Deborah was the fourth of the judges and one of the seven women prophets of the Bible. She lived in the hills of Ephraim, between Ramah and Beth-El. The people had drifted from the Torah, and G-d let them be oppressed for twenty years by Jabin, king of Canaan, whose general Sisera had many iron chariots. When they cried out, G-d sent Deborah.
 
 ## Under the palm tree
 

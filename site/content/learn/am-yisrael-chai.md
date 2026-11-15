@@ -9,13 +9,13 @@ local: Join us and add a mitzvah to your week. Call Rabbi Labkowski at 925-384-7
 
 ## What the words mean
 
-*Am* is "people," *Yisrael* is Israel, the Jewish people, and *chai* means "alive." Chabad.org describes the phrase as the everlasting statement that the Jewish nation lives on and prevails despite the hardships it faces. In the Jewish view, our endurance has two sides: we survive physically, and we remain strong spiritually.
+*Am* is "people," *Yisrael* is Israel, the Jewish people, and *chai* means "alive." Jewish tradition describes the phrase as the everlasting statement that the Jewish nation lives on and prevails despite the hardships it faces. In the Jewish view, our endurance has two sides: we survive physically, and we remain strong spiritually.
 
 The word *chai* is also the number 18, the value of its two Hebrew letters. That is why we give gifts in multiples of 18. See [the Chai Club](/chai-club).
 
 ## A living people and a living Torah
 
-The Rebbe taught that the Jewish people lives because the Torah is a "living Torah," from the living G-d. Its commandments are not museum pieces: they are meant to be lived, in every generation. Chabad.org shares this teaching in an article written by a rabbi in France, who describes how preparing for Shabbat, buying kosher food, sending children to Jewish schools and attending synagogue are all ways Jewish life continues. For more, read [Jewish pride](/learn/jewish-pride).
+The Rebbe taught that the Jewish people lives because the Torah is a "living Torah," from the living G-d. Its commandments are not museum pieces: they are meant to be lived, in every generation. Jewish teaching shares this teaching in an article written by a rabbi in France, who describes how preparing for Shabbat, buying kosher food, sending children to Jewish schools and attending synagogue are all ways Jewish life continues. For more, read [Jewish pride](/learn/jewish-pride).
 
 ## How Jewish survival looks through history
 

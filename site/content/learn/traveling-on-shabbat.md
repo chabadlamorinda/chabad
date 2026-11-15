@@ -17,7 +17,7 @@ Business trips, vacations, college visits and family simchas often land on a wee
 
 ## Find Chabad wherever you go
 
-There are Chabad centers in cities, college towns and vacation spots around the world. Most welcome travelers for Shabbat services and meals, often with no charge, and many can help with kosher food. Search Chabad.org for the nearest center and contact them a few days ahead. Rabbi Labkowski is also glad to help you connect.
+There are Chabad centers in cities, college towns and vacation spots around the world. Most welcome travelers for Shabbat services and meals, often with no charge, and many can help with kosher food. Search online for the nearest Chabad center and contact them a few days ahead. Rabbi Labkowski is also glad to help you connect.
 
 ## What to pack
 

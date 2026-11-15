@@ -9,7 +9,7 @@ Chanukah gelt (chocolate coins) is kosher only if the package carries a reliable
 
 ## What gelt is, and why it matters
 
-Gelt is Yiddish for "money." Chabad.org explains that the custom of giving children money on Chanukah is tied to Torah education and to charity, and in Chabad custom gelt is given every night, with a larger gift on the fourth or fifth night. Chocolate coins are a popular modern version. See [Chanukah gelt](/learn/chanukah-gelt) for the full story. Since children eat the chocolate, it is worth making sure it is kosher.
+Gelt is Yiddish for "money." Jewish tradition explains that the custom of giving children money on Chanukah is tied to Torah education and to charity, and in Chabad custom gelt is given every night, with a larger gift on the fourth or fifth night. Chocolate coins are a popular modern version. See [Chanukah gelt](/learn/chanukah-gelt) for the full story. Since children eat the chocolate, it is worth making sure it is kosher.
 
 ## Step by step: how to check a treat
 
@@ -20,7 +20,7 @@ Gelt is Yiddish for "money." Chabad.org explains that the custom of giving child
 
 ## Dairy or pareve gelt?
 
-Most chocolate is dairy. Chabad.org suggests choosing pareve gelt if you serve it after a meat meal, because dairy and meat are not eaten together. If you will hand out gelt right after a meat dinner, buy pareve gelt, or hold the chocolate for later. See [meat and milk](/learn/meat-and-milk) and [pareve](/learn/pareve). Ask the Rabbi how long to wait after meat before eating dairy, since customs differ.
+Most chocolate is dairy. Jewish tradition suggests choosing pareve gelt if you serve it after a meat meal, because dairy and meat are not eaten together. If you will hand out gelt right after a meat dinner, buy pareve gelt, or hold the chocolate for later. See [meat and milk](/learn/meat-and-milk) and [pareve](/learn/pareve). Ask the Rabbi how long to wait after meat before eating dairy, since customs differ.
 
 ## Candy, sprinkles and baking treats
 
@@ -32,11 +32,11 @@ Most chocolate is dairy. Chabad.org suggests choosing pareve gelt if you serve i
 
 ## What about chalav Yisrael?
 
-Some families prefer dairy products made under Jewish supervision, called [chalav Yisrael](/learn/chalav-yisrael). Chabad.org notes that kosher milk should be produced under Jewish supervision, and where it is not available, some rabbinic authorities accept government inspection. Ask the Rabbi what you should do.
+Some families prefer dairy products made under Jewish supervision, called [chalav Yisrael](/learn/chalav-yisrael). Jewish sources say that kosher milk should be produced under Jewish supervision, and where it is not available, some rabbinic authorities accept government inspection. Ask the Rabbi what you should do.
 
 ## Gelt for charity
 
-Chabad.org also teaches that gelt reminds us to use money for good, and suggests giving part of the gelt, about a tenth, to charity. A simple idea is to let each child set aside a coin for [tzedakah](/learn/tzedakah).
+Jewish teaching also teaches that gelt reminds us to use money for good, and suggests giving part of the gelt, about a tenth, to charity. A simple idea is to let each child set aside a coin for [tzedakah](/learn/tzedakah).
 
 ## Common questions
 

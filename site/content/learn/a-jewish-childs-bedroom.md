@@ -11,17 +11,17 @@ For families in Lafayette, Moraga and Orinda, it can be a simple weekend project
 
 ## Why the bedroom matters
 
-The room where a child falls asleep and wakes up is where small impressions add up. Chabad.org explains that surrounding children with reminders of Torah and mitzvot builds faith and good habits that last. The idea is not to decorate heavily, but to make a few meaningful touches part of the child's daily rhythm.
+The room where a child falls asleep and wakes up is where small impressions add up. Jewish teaching explains that surrounding children with reminders of Torah and mitzvot builds faith and good habits that last. The idea is not to decorate heavily, but to make a few meaningful touches part of the child's daily rhythm.
 
 ## The mezuzah
 
-Every bedroom needs a [mezuzah](/learn/mezuzah) like any other room used by people. Chabad.org notes a beloved custom: children kiss the mezuzah before sleeping and when waking, which teaches them that G-d is watching over them. The Rebbe praised this, since a young child's impressions last.
+Every bedroom needs a [mezuzah](/learn/mezuzah) like any other room used by people. The tradition notes a beloved custom: children kiss the mezuzah before sleeping and when waking, which teaches them that G-d is watching over them. The Rebbe praised this, since a young child's impressions last.
 
 Place it correctly, at the bottom of the top third of the doorway, on the right as you enter, even if a young child needs to be lifted or use a stool. If diapers are changed where the mezuzah is visible, the scroll should not be covered by a clear case that shows the parchment. Ask the Rabbi if you are unsure.
 
 ## Their own holy books
 
-Chabad.org suggests that each child have their own: at least a Chumash (Five Books of Moses), a Siddur (prayer book) and a Passover Haggadah, and ideally a book of Psalms. Write the child's name in each book. Children treat a book they own with special pride, and a first siddur is a lovely gift for [Chanukah](/holidays/chanukah) or a birthday. Our [kids and teens programs](/programs/kids-and-teens) can help with learning to use them.
+Jewish sources suggests that each child have their own: at least a Chumash (Five Books of Moses), a Siddur (prayer book) and a Passover Haggadah, and ideally a book of Psalms. Write the child's name in each book. Children treat a book they own with special pride, and a first siddur is a lovely gift for [Chanukah](/holidays/chanukah) or a birthday. Our [kids and teens programs](/programs/kids-and-teens) can help with learning to use them.
 
 ## A tzedakah box
 
@@ -29,20 +29,20 @@ A tzedakah box displayed prominently, ideally mounted on the wall, teaches givin
 
 ## Shir Lamaalot for a newborn
 
-It is an old custom to hang Psalm 121, "Shir Lamaalot," in a newborn's room, as Chabad.org describes, for protection. If the baby sleeps in the mother's room, the psalm is hung over that doorway. It also means one of the first things the baby sees is holy. Cards are often given at the time of the birth. If you are expecting, see [new parents in Lamorinda](/learn/new-parents-in-lamorinda).
+It is an old custom to hang Psalm 121, "Shir Lamaalot," in a newborn's room, as Jewish tradition describes, for protection. If the baby sleeps in the mother's room, the psalm is hung over that doorway. It also means one of the first things the baby sees is holy. Cards are often given at the time of the birth. If you are expecting, see [new parents in Lamorinda](/learn/new-parents-in-lamorinda).
 
 ## Morning and bedtime routines
 
-Chabad.org recommends a cup of water and a basin by the bed, so that when a child understands morning handwashing, they can wash upon waking right after saying [Modeh Ani](/learn/modeh-ani). Many families add a short bedtime [Shema](/learn/bedtime-shema), hugging a child goodnight with a blessing. These small routines take minutes and are often what children remember most.
+Jewish tradition recommends a cup of water and a basin by the bed, so that when a child understands morning handwashing, they can wash upon waking right after saying [Modeh Ani](/learn/modeh-ani). Many families add a short bedtime [Shema](/learn/bedtime-shema), hugging a child goodnight with a blessing. These small routines take minutes and are often what children remember most.
 
 ## Decor and pictures
 
-Chabad.org notes that any color or design is fine. It suggests avoiding pictures of non-kosher animals or negative images, since children's eyes should be trained toward the holy and positive. Pictures of Jerusalem, Jewish holidays or a Hebrew name sign are easy choices. For more ideas on raising kids, see [Jewish parenting](/learn/jewish-parenting).
+Jewish teaching notes that any color or design is fine. It suggests avoiding pictures of non-kosher animals or negative images, since children's eyes should be trained toward the holy and positive. Pictures of Jerusalem, Jewish holidays or a Hebrew name sign are easy choices. For more ideas on raising kids, see [Jewish parenting](/learn/jewish-parenting).
 
 ## Common questions
 
 ### What should be in a Jewish child's room?
-A kosher mezuzah on the door, the child's own siddur, Chumash and Haggadah, ideally Psalms, and a tzedakah box. For a baby, Psalm 121 is hung. These are customs recorded on Chabad.org.
+A kosher mezuzah on the door, the child's own siddur, Chumash and Haggadah, ideally Psalms, and a tzedakah box. For a baby, Psalm 121 is hung. These are well-known customs.
 
 ### Does a child's bedroom need a mezuzah?
 Yes. Bedrooms need a mezuzah like other rooms used for living. Place it at the bottom of the top third of the doorway, and ask the Rabbi about any special situation.

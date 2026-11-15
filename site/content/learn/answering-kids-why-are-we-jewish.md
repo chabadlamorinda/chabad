@@ -18,7 +18,7 @@ Little children understand family, stories and fun. You might say:
 
 *"We are Jewish because our family is part of the Jewish people. We celebrate Shabbat and holidays together, we do kind things, and G-d loves every one of us."*
 
-Then show them: light Shabbat candles, taste honey on Rosh Hashanah, shake a lulav. For young children, Chabad.org stresses real, joyful experiences over explanations.
+Then show them: light Shabbat candles, taste honey on Rosh Hashanah, shake a lulav. For young children, Jewish tradition stresses real, joyful experiences over explanations.
 
 **Ages 7 to 10: the chain and the stories**
 Children this age love stories, and they love to know where they come from. You can say:
@@ -41,7 +41,7 @@ Traditionally, a child is Jewish when the mother is Jewish or when a person conv
 
 ## What if the question is hard?
 
-Sometimes children ask because of something sad or scary they heard. Chabad.org's advice to a parent whose seven-year-old was afraid to be Jewish is worth remembering: do not argue or give a speech; build positive memories. Go to a celebration together, enjoy Shabbat meals, join a children's program and help your child make friends, so that "Jewish" is linked with joy, belonging and fun. For more serious topics, see [talking to kids about antisemitism](/learn/talking-to-kids-about-antisemitism) and [talking to kids about G-d](/learn/talking-to-kids-about-g-d).
+Sometimes children ask because of something sad or scary they heard. The advice given to a parent whose seven-year-old was afraid to be Jewish is worth remembering: do not argue or give a speech; build positive memories. Go to a celebration together, enjoy Shabbat meals, join a children's program and help your child make friends, so that "Jewish" is linked with joy, belonging and fun. For more serious topics, see [talking to kids about antisemitism](/learn/talking-to-kids-about-antisemitism) and [talking to kids about G-d](/learn/talking-to-kids-about-g-d).
 
 ## Make the answer something they can feel
 

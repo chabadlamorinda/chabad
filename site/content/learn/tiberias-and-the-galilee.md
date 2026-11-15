@@ -9,7 +9,7 @@ Tiberias (Tveriah, טְבֶרְיָה) is a city on the shore of the Kinneret, t
 
 ## A city of Torah
 
-Tiberias was built by Herod Antipas and named for the Roman emperor Tiberius. The site had an ancient cemetery, which made it ritually impure, and many Jews avoided it at first. Chabad.org tells that Rabbi Shimon bar Yochai purified the city, and it became a center of Torah.
+Tiberias was built by Herod Antipas and named for the Roman emperor Tiberius. The site had an ancient cemetery, which made it ritually impure, and many Jews avoided it at first. Tradition tells that Rabbi Shimon bar Yochai purified the city, and it became a center of Torah.
 
 After the destruction of the Second Temple, the Sanhedrin, the supreme Jewish court, met in several places, including Yavneh, Usha and Tzippori. After the passing of Rabbi Judah the Prince, around the year 220, it moved to Tiberias. The Jerusalem Talmud was compiled here, around the year 400. It is called the Jerusalem Talmud because it records the learning of the Land of Israel (see [The Talmud](/learn/talmud)).
 
@@ -29,7 +29,7 @@ Rabbi Shimon bar Yochai is buried in Meron, in the Galilee, and thousands visit 
 
 ## The Kinneret and the hot springs
 
-The Sea of Galilee lies hundreds of feet below sea level. Tiberias is nicknamed the "City of Water," and it has hot springs that have been known for healing for centuries. Chabad.org counts seventeen natural springs and mentions that Rabbi Shimon bar Yochai reportedly was cured by bathing there. If you plan to use the springs, ask the Rabbi about Shabbat and kosher questions that can arise with hot springs.
+The Sea of Galilee lies hundreds of feet below sea level. Tiberias is nicknamed the "City of Water," and it has hot springs that have been known for healing for centuries. There are seventeen natural springs, and Rabbi Shimon bar Yochai reportedly was cured by bathing there. If you plan to use the springs, ask the Rabbi about Shabbat and kosher questions that can arise with hot springs.
 
 ## A city that was rebuilt again and again
 
@@ -37,7 +37,7 @@ Tiberias was destroyed and rebuilt many times. In the 1500s, Doña Gracia and he
 
 ## Visiting the Galilee
 
-The graves of the sages are places to pray and to say [Tehillim](/learn/tehillim). Check current travel guidance for your dates and plan with a reliable guide. Chabad.org's list of points of interest in Israel also names Meron, Tzfat, Mount Hermon and the ancient town of Gamla in the north.
+The graves of the sages are places to pray and to say [Tehillim](/learn/tehillim). Check current travel guidance for your dates and plan with a reliable guide. Other places of interest in the north include Meron, Tzfat, Mount Hermon and the ancient town of Gamla in the north.
 
 ## Common questions
 

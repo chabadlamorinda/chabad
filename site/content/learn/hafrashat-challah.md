@@ -21,7 +21,7 @@ The mitzvah applies to dough made from any of the five grains: wheat, barley, ry
 - **A medium batch** is separated, and you ask the Rabbi whether to say the blessing.
 - **A large batch** is separated **with** a blessing.
 
-Chabad.org gives these amounts: under about 2.5 lb (1.1 kg) of flour, no separation; from 5 lb (about 2.25 kg), separate with a blessing; in between, separate and ask a rabbi about the blessing. Customs differ, and dough made mostly with juice or eggs instead of water has its own rules, so ask the Rabbi for your recipe.
+The usual amounts are: under about 2.5 lb (1.1 kg) of flour, no separation; from 5 lb (about 2.25 kg), separate with a blessing; in between, separate and ask a rabbi about the blessing. Customs differ, and dough made mostly with juice or eggs instead of water has its own rules, so ask the Rabbi for your recipe.
 
 ## How to separate challah, step by step
 

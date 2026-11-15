@@ -11,7 +11,7 @@ It is a Jewish custom for women and girls to give tzedakah (charity) just before
 
 Tzedakah (צְדָקָה) is the Hebrew word for charity, and it literally means "justice" or "righteousness." Giving is not a favor; it is the right thing to do, because everything we have is entrusted to us by G-d.
 
-Chabad.org's guide to Shabbat candles lists this as part of the "how": put some money in a charity box before lighting the candles. Chabad.org's explanation of tzedakah adds that, since money may not be handled on Shabbat, an extra sum is set aside and given before it begins.
+This is part of the "how" of Shabbat candles: put some money in a charity box before lighting the candles. Since money may not be handled on Shabbat, an extra sum is set aside and given before it begins.
 
 ## Why just before the candles?
 
@@ -28,11 +28,11 @@ Children can drop their coins in too.
 
 ## Before Yom Tov
 
-The Rebbe's letter speaks of Shabbat and Yom Tov candles together, and Chabad.org's charity guide lists giving before both Shabbat and holiday candles. The Rebbe also noted that money is not handled on Shabbat and Yom Tov, so the coin goes in before the holiday begins. On a second night of a holiday, when the candles are lit while it is already Yom Tov, the giving is done before the holiday starts; ask the Rabbi if you are unsure.
+The Rebbe's letter speaks of Shabbat and Yom Tov candles together, and the custom of giving applies before both Shabbat and holiday candles. The Rebbe also noted that money is not handled on Shabbat and Yom Tov, so the coin goes in before the holiday begins. On a second night of a holiday, when the candles are lit while it is already Yom Tov, the giving is done before the holiday starts; ask the Rabbi if you are unsure.
 
 ## A small habit with a big idea
 
-Chabad.org also mentions giving a coin before praying, and having a pushka in every Jewish home. The Friday coin is one of the easiest habits to begin: it takes only a moment, and it shows children that Shabbat begins with giving. If your family is just starting, one coin is a perfect beginning. For the bigger picture, see [Tzedakah](/learn/tzedakah).
+It is also customary to give a coin before praying, and having a pushka in every Jewish home. The Friday coin is one of the easiest habits to begin: it takes only a moment, and it shows children that Shabbat begins with giving. If your family is just starting, one coin is a perfect beginning. For the bigger picture, see [Tzedakah](/learn/tzedakah).
 
 ## Common questions
 
@@ -46,7 +46,7 @@ Money is not handled on Shabbat or Yom Tov, so charity is given before they begi
 There is no set amount for this custom. A coin or a few dollars is common. For the yearly total, a tenth of your income is the usual guideline; see [Maaser](/learn/maaser).
 
 ### Do men and boys give too?
-Giving tzedakah is a mitzvah for everyone, and Chabad.org encourages giving every day, especially before praying. The candle-lighting custom is described for women and girls. For your own situation, ask the Rabbi.
+Giving tzedakah is a mitzvah for everyone, and Jewish tradition encourages giving every day, especially before praying. The candle-lighting custom is described for women and girls. For your own situation, ask the Rabbi.
 
 ### What if I forget to give before lighting?
 If you remember on Shabbat, wait until Shabbat is over, then add it to the box. The point is to build the habit, not to be perfect.

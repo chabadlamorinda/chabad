@@ -17,9 +17,9 @@ Chabad commentary on this mishnah, drawn from the Lubavitcher Rebbe's teachings 
 
 ## What is a mashpia?
 
-According to Chabad.org, a mashpia is a spiritual mentor. The word means "one who influences." The Rebbe spoke of reviving an old custom, from the days of the Alter Rebbe, of having a mashpia in each community: a man for the men and a woman for the women. Their task is to gather people, teach Torah, and inspire awe of Heaven and love for every Jew. The Rebbe said they should be well versed in [ahavat Yisrael](/learn/ahavat-yisrael), love of a fellow Jew.
+According to Jewish tradition, a mashpia is a spiritual mentor. The word means "one who influences." The Rebbe spoke of reviving an old custom, from the days of the Alter Rebbe, of having a mashpia in each community: a man for the men and a woman for the women. Their task is to gather people, teach Torah, and inspire awe of Heaven and love for every Jew. The Rebbe said they should be well versed in [ahavat Yisrael](/learn/ahavat-yisrael), love of a fellow Jew.
 
-Chabad.org also notes that a person is appointed as a mashpia when at least three people appoint him. In other words, a mentor is someone others look to. You do not need to know this terminology to benefit from a mentor. The idea is simple: someone wiser, who cares about you, with whom you can be honest.
+Chassidic teaching also notes that a person is appointed as a mashpia when at least three people appoint him. In other words, a mentor is someone others look to. You do not need to know this terminology to benefit from a mentor. The idea is simple: someone wiser, who cares about you, with whom you can be honest.
 
 ## Why not just read a book?
 
@@ -51,7 +51,7 @@ The simplest first step is a conversation. Call Rabbi Labkowski at Chabad of Lam
 It is from Pirkei Avot 1:6 and means you should actively choose a teacher to learn from. Chabad commentary adds that even a teacher should have one, because we cannot judge ourselves objectively.
 
 ### What is a mashpia?
-A mashpia is a spiritual mentor in Chassidic tradition. The word means "one who influences." According to Chabad.org, it is an old custom to have one in each community.
+A mashpia is a spiritual mentor in Chassidic tradition. The word means "one who influences." According to the tradition, it is an old custom to have one in each community.
 
 ### Do I need a rabbi to be Jewish?
 No. But a rabbi or teacher you trust can help you grow and answer questions. Everyone is welcome at Chabad of Lamorinda, and no membership is required.

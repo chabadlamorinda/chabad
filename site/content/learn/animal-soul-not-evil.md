@@ -11,11 +11,11 @@ This changes how many people see their own struggle. You do not have to hate the
 
 ## What Chapter 1 says
 
-In Chapter 1 the Tanya describes the animal soul and the pulls it can bring, such as anger, pride, love of pleasure and laziness. Then it says that the Jewish animal soul also produces good natural traits, such as compassion and kindness. According to Chabad.org's page on this chapter, this is because it comes from kelipat nogah, a realm that contains good. See [the glossary](/learn/tanya-glossary-for-beginners) and [the two souls](/learn/the-two-souls-explained).
+In Chapter 1 the Tanya describes the animal soul and the pulls it can bring, such as anger, pride, love of pleasure and laziness. Then it says that the Jewish animal soul also produces good natural traits, such as compassion and kindness. As the Tanya explains in this chapter, this is because it comes from kelipat nogah, a realm that contains good. See [the glossary](/learn/tanya-glossary-for-beginners) and [the two souls](/learn/the-two-souls-explained).
 
 ## Raising up the natural
 
-Chapter 37 of the Tanya goes further. Chabad.org's summary says that when you use physical things for a mitzvah, they are raised into holiness. The parchment of tefillin, an etrog and money given to tzedakah are examples. Things connected with a sin, like stolen money, cannot be raised in this way.
+Chapter 37 of the Tanya goes further. It teaches that when you use physical things for a mitzvah, they are raised into holiness. The parchment of tefillin, an etrog and money given to tzedakah are examples. Things connected with a sin, like stolen money, cannot be raised in this way.
 
 The same chapter says the animal soul itself is raised when it is used for a mitzvah:
 
@@ -27,7 +27,7 @@ The chapter also says the soul's purpose in coming down into the world is to ref
 
 ## So what do I do with my desires?
 
-The beinoni of Chapter 12 still feels the pull of the animal soul, but chooses what to do. Chabad.org's articles say that this struggle is the point, and that old temptations lose their pull while new ones appear. See [the beinoni](/learn/the-beinoni) and [mind over heart](/learn/mind-over-heart-tanya).
+The beinoni of Chapter 12 still feels the pull of the animal soul, but chooses what to do. Chassidic teaching explains that this struggle is the point, and that old temptations lose their pull while new ones appear. See [the beinoni](/learn/the-beinoni) and [mind over heart](/learn/mind-over-heart-tanya).
 
 This does not mean that every desire is fine to follow. Case by case, ask the Rabbi.
 

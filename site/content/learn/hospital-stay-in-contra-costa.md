@@ -17,7 +17,7 @@ If you or a loved one is in the hospital in Contra Costa County, tell the staff 
 
 ## Visiting the sick
 
-Visiting the sick, *bikur cholim* (בִּקּוּר חוֹלִים), is a mitzvah, and Chabad.org teaches that a visit gives the patient strength. Come with a warm word, listen, and don't stay too long. Read [bikur cholim](/learn/bikur-cholim) and [Mi Sheberach](/learn/mi-sheberach).
+Visiting the sick, *bikur cholim* (בִּקּוּר חוֹלִים), is a mitzvah, and Chassidic teaching teaches that a visit gives the patient strength. Come with a warm word, listen, and don't stay too long. Read [bikur cholim](/learn/bikur-cholim) and [Mi Sheberach](/learn/mi-sheberach).
 
 ## Shabbat and holidays in the hospital
 

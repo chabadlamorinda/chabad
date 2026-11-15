@@ -11,11 +11,11 @@ This guide explains what such a directive usually contains. It is not legal advi
 
 ## Why people sign one
 
-A directive speaks for you when you cannot, so that a person you trust, and a rabbi who knows Jewish law, guide the decisions. Chabad.org publishes a sample directive as an example.
+A directive speaks for you when you cannot, so that a person you trust, and a rabbi who knows Jewish law, guide the decisions. Sample Jewish directives exist as an example.
 
 ## What a directive usually includes
 
-According to the sample on Chabad.org, a directive contains these parts:
+According to a typical Jewish directive, it contains these parts:
 
 1. **A health care surrogate.** You name a primary surrogate and an alternate. The surrogate can consent to, withhold or withdraw treatment, and handle admission to a facility.
 2. **A statement that Jewish law governs.** It directs that health-care decisions follow Jewish law, as determined by strict Orthodox interpretation and tradition. It names areas such as CPR, life-sustaining treatment, nutrition and hydration, and how death is determined.
@@ -28,7 +28,7 @@ According to the sample on Chabad.org, a directive contains these parts:
 
 - **Choose people you trust** as surrogate and alternate, who are willing to consult a rabbi.
 - **Choose a rabbi.** Name a rabbi you trust. You can ask Rabbi Labkowski about this.
-- **Use an attorney.** An attorney can tell you what makes such a document valid where you live and should prepare the legal document, and a rabbi should advise on the Jewish content. Chabad.org's sample is only a sample, not legal advice.
+- **Use an attorney.** An attorney can tell you what makes such a document valid where you live and should prepare the legal document, and a rabbi should advise on the Jewish content. A sample directive is only a sample, not legal advice.
 
 See also [a Jewish will](/learn/halachic-will), [hospice and end-of-life decisions](/learn/hospice-and-end-of-life-care) and [when a loved one is dying](/learn/when-a-loved-one-is-dying).
 
@@ -38,13 +38,13 @@ See also [a Jewish will](/learn/halachic-will), [hospice and end-of-life decisio
 It is a health care directive that names a surrogate, directs that medical decisions follow Jewish law, and names a rabbi to consult. It also covers the care of the body after death.
 
 ### Is a Jewish health care directive legally binding?
-That depends on state law and how the document is prepared, so ask an attorney. Many people use one to state their wishes, and the sample on Chabad.org says that if it is not legally effective, the stated wishes should be treated as clear evidence of the person's intent.
+That depends on state law and how the document is prepared, so ask an attorney. Many people use one to state their wishes, and the sample on Jewish tradition says that if it is not legally effective, the stated wishes should be treated as clear evidence of the person's intent.
 
 ### Who should I name as my surrogate?
 Someone who knows your values and is willing to consult a rabbi. Name an alternate too.
 
 ### Does a directive cover autopsy and organ donation?
-The Chabad.org sample says that autopsy is generally prohibited except in limited cases, and that organ or tissue removal is governed by Jewish law. Ask the Rabbi about your case.
+A typical sample directive says that autopsy is generally prohibited except in limited cases, and that organ or tissue removal is governed by Jewish law. Ask the Rabbi about your case.
 
 ### Can I change or cancel it?
 Yes. The sample says it stays in effect until you revoke it, and signing a new one revokes the earlier one.

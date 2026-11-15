@@ -9,7 +9,7 @@ Vegan food is not automatically kosher. A vegan or vegetarian label does not tel
 
 ## Why "vegan" does not mean "kosher"
 
-Many Bay Area diners assume plant-based food is automatically fine for Jewish dietary laws. Chabad.org explains why it is not:
+Many Bay Area diners assume plant-based food is automatically fine for Jewish dietary laws. Jewish tradition explains why it is not:
 
 - **Ingredients.** Vegan standards apply "as far as is possible and practical," and animal-derived traces can appear in unexpected places. Modern foods also contain additives and oils that need kosher supervision.
 - **Equipment.** Pots, ovens and countertops must be kosher. If equipment was ever used for non-kosher food, it has to be koshered first.
@@ -23,7 +23,7 @@ No. Pareve (neutral) means a food has no meat or dairy and is certified kosher. 
 
 ## A vegetarian kitchen is closer than you think
 
-A reader on Chabad.org asked whether a home that never cooked meat is already kosher. The rabbi's answer: it still needs koshering, but the adjustments are minimal. The hardest parts of kashrut, meat sources and separate meat and dairy dishes, would not apply. What remains is having a rabbi kosher the kitchen, buying certified products, checking greens, using kosher wine, and immersing new serving utensils. The rabbi estimated about 90 percent of foods are already supervised.
+A reader asked whether a home that never cooked meat is already kosher. The rabbi's answer: it still needs koshering, but the adjustments are minimal. The hardest parts of kashrut, meat sources and separate meat and dairy dishes, would not apply. What remains is having a rabbi kosher the kitchen, buying certified products, checking greens, using kosher wine, and immersing new serving utensils. The rabbi estimated about 90 percent of foods are already supervised.
 
 If you are interested, ask the Rabbi, since every kitchen is a little different. See also [the kosher kitchen](/learn/kosher-kitchen).
 

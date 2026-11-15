@@ -9,11 +9,11 @@ If you forgot to light the Chanukah menorah, light it as soon as you remember, a
 
 ## First: do not panic
 
-Missing the usual time is common, especially in a busy week. The Chabad.org sources are clear on the main point: the best time is shortly after sunset, but the mitzvah can still be done later if the family is awake and can see the lights. Start with [when to light](/learn/when-to-light-the-menorah) if you are not sure about the ideal time.
+Missing the usual time is common, especially in a busy week. The sources are clear on the main point: the best time is shortly after sunset, but the mitzvah can still be done later if the family is awake and can see the lights. Start with [when to light](/learn/when-to-light-the-menorah) if you are not sure about the ideal time.
 
 ## Coming home late
 
-The lights are best lit when the family is together, because the idea of the mitzvah is to publicize the miracle at home. Chabad.org suggests two options for a family member who comes home very late:
+The lights are best lit when the family is together, because the idea of the mitzvah is to publicize the miracle at home. Here are two options for a family member who comes home very late:
 
 1. **Be present at an earlier lighting**, such as at a friend's home or the synagogue, and see the menorah there.
 2. **Light your own menorah on arrival**, having decided not to rely on the home lighting, with the blessings.
@@ -22,7 +22,7 @@ Which one fits depends on your situation, so ask the Rabbi if you are unsure. If
 
 ## Lighting late at night
 
-The Chabad.org page on the laws of Chanukah teaches that if you did not light at the right time, you may light later in the night with a blessing as long as someone in the household is awake. If everyone is asleep and you cannot wake a few people, ask the Rabbi what to do; there is a view that you light without the blessing so the miracle is still shown, and views differ on the exact point after midnight.
+The laws of Chanukah teach that if you did not light at the right time, you may light later in the night with a blessing as long as someone in the household is awake. If everyone is asleep and you cannot wake a few people, ask the Rabbi what to do; there is a view that you light without the blessing so the miracle is still shown, and views differ on the exact point after midnight.
 
 ## Missing a whole night
 

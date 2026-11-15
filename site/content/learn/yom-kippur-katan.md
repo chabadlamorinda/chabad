@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: rosh-chodesh, fasting-on-your-wedding-day, cheshbon-hanefesh, teshuvah, fast-days, asara-btevet
 local: Want to start a monthly habit of reflection? Call Rabbi Labkowski at 925-384-7242, or see /programs/adult-education.
 ---
-Yom Kippur Katan (יוֹם כִּפּוּר קָטָן), the "Minor Yom Kippur," is the day before Rosh Chodesh, the new month. According to Chabad.org, it recalls the sin offering brought in the Temple on Rosh Chodesh, and the most pious observe it with extra prayers, fasting and charity.
+Yom Kippur Katan (יוֹם כִּפּוּר קָטָן), the "Minor Yom Kippur," is the day before Rosh Chodesh, the new month. According to Jewish tradition, it recalls the sin offering brought in the Temple on Rosh Chodesh, and the most pious observe it with extra prayers, fasting and charity.
 
 Once a month it gives anyone, in Lafayette, Moraga, Orinda or anywhere, a chance to pause, take stock and start the new month fresh. You do not have to fast to benefit from it.
 
@@ -17,7 +17,7 @@ Yom Kippur is the great day of forgiveness once a year. The Sages saw Rosh Chode
 
 Customs vary, and no one is required to keep all of them:
 
-- **Extra prayer and Psalms.** Some recite Psalms and special prayers and study Chassidic texts. The Rebbe customarily visited the Ohel, his predecessor's resting place, on this day (Chabad.org).
+- **Extra prayer and Psalms.** Some recite Psalms and special prayers and study Chassidic texts. The Rebbe customarily visited the Ohel, his predecessor's resting place, on this day.
 - **Charity.** Giving extra tzedakah is a simple custom for everyone; see [tzedakah](/learn/tzedakah).
 - **Fasting.** The most pious fast until the afternoon or evening. Fasting is not for everyone; if you are ill, pregnant, nursing, elderly or have any health question, do not fast, and ask the Rabbi.
 - **Reflection (cheshbon hanefesh).** Take a few minutes to review the past month. See [cheshbon hanefesh](/learn/cheshbon-hanefesh).
@@ -57,7 +57,7 @@ The day before each Rosh Chodesh, except in certain months. See [this week](/thi
 
 ### What do Chabad Chassidim do on Yom Kippur Katan?
 
-Chabad.org notes that the Rebbe customarily visited the Ohel on this day. Many people give extra charity, say Psalms and reflect; for other customs, ask the Rabbi.
+The Rebbe customarily visited the Ohel on this day. Many people give extra charity, say Psalms and reflect; for other customs, ask the Rabbi.
 
 ### Can I observe it without fasting?
 

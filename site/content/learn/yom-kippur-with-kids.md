@@ -9,7 +9,7 @@ Children under nine do not fast on Yom Kippur, and healthy children are graduall
 
 ## Do children fast on Yom Kippur?
 
-Children are not obligated in mitzvot until bar or bat mitzvah, but we teach them in advance. Chabad.org gives this guidance for Yom Kippur:
+Children are not obligated in mitzvot until bar or bat mitzvah, but we teach them in advance. Jewish tradition gives this guidance for Yom Kippur:
 
 - **Under 9:** No fasting is required, and children who want to fast are discouraged.
 - **From age 9 (a healthy child) or 10 (a weaker child):** Training begins. A child gradually extends the fast: for example, delaying breakfast an hour, and over the years building toward a full day.
@@ -21,7 +21,7 @@ For a fast of this kind, there is no shame in eating. Children who eat should ha
 
 Even young children can take part in the spirit of the day:
 
-- Wear non-leather shoes, as adults do. Chabad.org notes children too should be taught this.
+- Wear non-leather shoes, as adults do. Jewish law notes children too should be taught this.
 - Skip the sweets and treats; with older children who understand the day's seriousness, keep these to a minimum.
 - If a child is training to fast, skip food after sundown on the eve of Yom Kippur and delay breakfast a little.
 - Come to services, even for a short time.

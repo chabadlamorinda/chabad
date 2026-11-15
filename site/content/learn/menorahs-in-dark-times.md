@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: chana-and-her-seven-sons, chanukah-story, soviet-jewry-history, hope-in-hard-times, menorah-campaign-history
 local: If you or someone you love is ill or alone this Chanukah, call Rabbi Labkowski at 925-384-7242, or see /help/help-for-seniors-and-families.
 ---
-Jews have lit Chanukah lights in a Soviet prison, in a Nazi concentration camp and in a hospital room, using an onion, a shoe and a shelf. These true stories from Chabad.org show that Chanukah's message, that a little light pushes away a lot of darkness, is not just a nice idea.
+Jews have lit Chanukah lights in a Soviet prison, in a Nazi concentration camp and in a hospital room, using an onion, a shoe and a shelf. These true stories show that Chanukah's message, that a little light pushes away a lot of darkness, is not just a nice idea.
 
 Here are three of them, retold in our own words. They are serious stories, and we tell them with respect.
 
@@ -23,7 +23,7 @@ In the concentration camp of Bergen-Belsen, on the eve of Chanukah, there had be
 
 Rabbi Israel Spira, the Rebbe of Bluzhov, lit the light and recited the first two blessings. Before the third blessing, the one thanking G-d for keeping us alive and bringing us to this season, he stopped and looked around. Then he said it in a strong voice. Afterward a man challenged him: how could he thank G-d for survival while Jews were being murdered nearby? The rabbi said the question was fair and that he, too, had hesitated. But as he turned, he saw a large crowd of Jews standing with faith and concentration, and he realized that people with such faith left him no choice but to say the blessing. Years later the man sent him greetings, saying that the answer had stayed with him in hard times.
 
-This account comes from the author Yaffa Eliach, who heard it from the rabbi's family, and Chabad.org reprints it. For more on how Jewish faith meets suffering, see [Hope in Hard Times](/learn/hope-in-hard-times) and [Holocaust Remembrance](/learn/holocaust-remembrance).
+This account comes from the author Yaffa Eliach, who heard it from the rabbi's family, and it is widely retold. For more on how Jewish faith meets suffering, see [Hope in Hard Times](/learn/hope-in-hard-times) and [Holocaust Remembrance](/learn/holocaust-remembrance).
 
 ## A menorah in the hospital
 
@@ -40,7 +40,7 @@ If you or a loved one is in a hospital or care home at Chanukah, Jewish law has 
 ## Common questions
 
 ### Is there a true story of lighting a menorah in a Soviet prison?
-Yes. Chabad.org tells of Reb Berke Chein, who lit Chanukah lights in a Soviet cell using an onion, butter from his ration and threads for wicks, with the help of a cellmate.
+Yes. Jewish tradition tells of Reb Berke Chein, who lit Chanukah lights in a Soviet cell using an onion, butter from his ration and threads for wicks, with the help of a cellmate.
 
 ### Why do Jews light the menorah even in dangerous times?
 Lighting is a mitzvah and a statement of Jewish identity, and in hard times it also gives hope. Our tradition teaches that a little light can drive away much darkness.
@@ -49,7 +49,7 @@ Lighting is a mitzvah and a statement of Jewish identity, and in hard times it a
 Candles or oil are the traditional way. For a hospital, nursing home or any place where flames are not allowed, ask the Rabbi what to do.
 
 ### Where can I read more true Chanukah stories?
-Chabad.org has a large collection of Chanukah stories. You can also see our [stories](/stories) page, and the guide [Chanukah for kids](/learn/chanukah-for-kids).
+Jewish tradition has a large collection of Chanukah stories. You can also see our [stories](/stories) page, and the guide [Chanukah for kids](/learn/chanukah-for-kids).
 
 ### Does Chabad of Lamorinda visit people in the hospital at Chanukah?
 The Rabbi and Rebbetzin visit the sick at home, in hospital and in care facilities. Call 925-384-7242 to ask about a visit.

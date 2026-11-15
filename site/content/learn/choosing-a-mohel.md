@@ -20,7 +20,7 @@ Do not be shy about asking. A good mohel welcomes questions.
 1. **How were you trained, and for how long?** Ask about both Jewish law and the medical technique.
 2. **How many brises have you performed?** Experience matters.
 3. **Can you give references** from other families?
-4. **What method and tools do you use?** Chabad.org notes particular rules here, and the Rabbi can tell you what Chabad custom requires. Ask the Rabbi before you decide.
+4. **What method and tools do you use?** Jewish tradition notes particular rules here, and the Rabbi can tell you what Chabad custom requires. Ask the Rabbi before you decide.
 5. **What do you do before and after the bris?** Ask about the baby's health check, feeding before the ceremony, and how you will be told to care for him afterward.
 6. **What if the baby is not healthy on the eighth day?** A good mohel will tell you plainly that health comes first. See [when a bris is postponed](/learn/postponing-a-bris).
 7. **Are you available on the date and time we need?** The bris is on the eighth day, usually in the morning.
@@ -28,7 +28,7 @@ Do not be shy about asking. A good mohel welcomes questions.
 
 ## Skill first
 
-Chabad.org advises that when you can choose between two mohelim, you choose the one who is highly skilled rather than an elderly mohel who is deeply learned but less skilled. Skill comes first, and learning and piety are a bonus.
+Chassidic teaching advises that when you can choose between two mohelim, you choose the one who is highly skilled rather than an elderly mohel who is deeply learned but less skilled. Skill comes first, and learning and piety are a bonus.
 
 ## Doctor, mohel and Rabbi
 

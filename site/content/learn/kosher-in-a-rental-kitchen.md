@@ -9,23 +9,23 @@ In a rental or vacation kitchen, the simplest way to keep kosher is to bring you
 
 ## Pack the basics
 
-Chabad.org suggests bringing non-perishable kosher staples, such as nut butter, canned tuna, salami and dry soup mixes. Consider a small hot plate, pot, electric skillet or "hot pot" for simple dishes like soup, rice or eggs, and bring Ziploc bags or plastic wrap for reheating food in a microwave.
+Jewish law suggests bringing non-perishable kosher staples, such as nut butter, canned tuna, salami and dry soup mixes. Consider a small hot plate, pot, electric skillet or "hot pot" for simple dishes like soup, rice or eggs, and bring Ziploc bags or plastic wrap for reheating food in a microwave.
 
 ## Using the oven and microwave
 
-According to Chabad.org, a non-kosher microwave or oven may be used if the food is sealed. Double-wrapping is recommended, so one layer protects the food if the other bursts. Many authorities do not permit kashering a microwave. See [kosher oven and microwave](/learn/kosher-oven-and-microwave).
+According to Jewish law, a non-kosher microwave or oven may be used if the food is sealed. Double-wrapping is recommended, so one layer protects the food if the other bursts. Many authorities do not permit kashering a microwave. See [kosher oven and microwave](/learn/kosher-oven-and-microwave).
 
 ## The stovetop
 
-Chabad.org says that for a motel stovetop that you cannot kasher, you may still use it, keeping the outside of the pot and the burner dry. Ask the Rabbi if you plan a longer stay.
+Jewish law says that for a motel stovetop that you cannot kasher, you may still use it, keeping the outside of the pot and the burner dry. Ask the Rabbi if you plan a longer stay.
 
 ## Counters, tables and the sink
 
-In a kosher kitchen, countertops are designated for meat or dairy, and if one surface must serve both, separate coverings are used. A table can serve both if you change tablecloths or placemats. For how to handle the counters of a rental, ask the Rabbi. For the sink, Chabad.org says that with one sink, its interior is treated as non-kosher: do not put food or dishes directly in it, and use dishpans on slightly raised racks. See [kosher dishwasher and sink](/learn/kosher-dishwasher-and-sink).
+In a kosher kitchen, countertops are designated for meat or dairy, and if one surface must serve both, separate coverings are used. A table can serve both if you change tablecloths or placemats. For how to handle the counters of a rental, ask the Rabbi. For the sink, Jewish law says that with one sink, its interior is treated as non-kosher: do not put food or dishes directly in it, and use dishpans on slightly raised racks. See [kosher dishwasher and sink](/learn/kosher-dishwasher-and-sink).
 
 ## Fruits, vegetables and breakfast
 
-Whole fresh produce and raw nuts are generally fine, but check for insects. In hotels, Chabad.org says sealed items with reliable certification such as cereal, jam and bars are fine, as is whole fruit, while cut produce, hot cooked foods and eggs in shells are problematic. See [shabbat in a hotel](/learn/shabbat-in-a-hotel) and [kosher when traveling](/learn/kosher-when-traveling).
+Whole fresh produce and raw nuts are generally fine, but check for insects. In hotels, Jewish law says sealed items with reliable certification such as cereal, jam and bars are fine, as is whole fruit, while cut produce, hot cooked foods and eggs in shells are problematic. See [shabbat in a hotel](/learn/shabbat-in-a-hotel) and [kosher when traveling](/learn/kosher-when-traveling).
 
 ## Roommates and shared kitchens
 
@@ -37,10 +37,10 @@ If you share a kitchen with roommates, the questions are the same: whose pots, w
 Yes, with planning. Bring kosher food, use your own pot or a hot plate, and seal food you heat in the oven or microwave.
 
 ### Can I use a non-kosher microwave?
-Yes, if the food is sealed, and double-wrapping is recommended, according to Chabad.org.
+Yes, if the food is sealed, and double-wrapping is recommended, according to Jewish law.
 
 ### Can I use a rental stovetop?
-If you cannot kasher it, you may still use it while keeping the outside of the pot and the burner dry, according to Chabad.org. Ask the Rabbi.
+If you cannot kasher it, you may still use it while keeping the outside of the pot and the burner dry, according to Jewish law. Ask the Rabbi.
 
 ### Can I kasher a rental kitchen?
 A full koshering is a job for the Rabbi, and not all surfaces can be koshered. Ask before you plan one.

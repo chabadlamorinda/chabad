@@ -11,10 +11,10 @@ A Jewish wedding in Lafayette, Moraga or Orinda needs a rabbi, a chuppah (weddin
 
 According to Jewish law, a wedding has these essentials:
 
-- **A chuppah** (חֻפָּה): the canopy under which the couple stands. It symbolizes the home they will build. See Chabad.org on the chuppah.
+- **A chuppah** (חֻפָּה): the canopy under which the couple stands. It symbolizes the home they will build. See [the Jewish wedding ceremony](/learn/jewish-wedding).
 - **A ketubah** (כְּתֻבָּה): the Jewish marriage contract, signed before the ceremony. Read [the ketubah](/learn/ketubah).
 - **A ring:** given by the groom to the bride under the chuppah, as part of the ceremony.
-- **Two kosher witnesses** (עֵדִים, *edim*): they watch the ring being given and sign the ketubah. Who qualifies is a matter of Jewish law, so ask the Rabbi; Chabad.org explains the rules for witnesses.
+- **Two kosher witnesses** (עֵדִים, *edim*): they watch the ring being given and sign the ketubah. Who qualifies is a matter of Jewish law, so ask the Rabbi; Jewish tradition explains the rules for witnesses.
 - **The seven blessings** (שֶׁבַע בְּרָכוֹת) and the breaking of the glass, which recalls the destruction of the Temple even at a moment of joy.
 
 For the full ceremony step by step, read [the Jewish wedding](/learn/jewish-wedding) and [Jewish wedding customs](/learn/jewish-wedding-customs).

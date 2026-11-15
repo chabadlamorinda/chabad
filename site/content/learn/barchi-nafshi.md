@@ -5,13 +5,13 @@ category: Prayer & Torah
 related: tehillim, rosh-chodesh, blessings-on-nature, your-personal-psalm, jewish-hiking-in-the-east-bay-hills
 local: Want to say Tehillim with others or learn the Rosh Chodesh prayers? Call Rabbi Labkowski at 925-384-7242.
 ---
-*Barchi Nafshi* (בָּרְכִי נַפְשִׁי), "Bless, my soul," is Psalm 104, the psalm of creation. It praises G-d for light, water, mountains, springs, trees, animals, the moon and the sea, and Chabad.org notes it is said in the morning prayers on Rosh Chodesh, the start of the Jewish month.
+*Barchi Nafshi* (בָּרְכִי נַפְשִׁי), "Bless, my soul," is Psalm 104, the psalm of creation. It praises G-d for light, water, mountains, springs, trees, animals, the moon and the sea, and Jewish tradition notes it is said in the morning prayers on Rosh Chodesh, the start of the Jewish month.
 
 For anyone who loves the hills around Lafayette, Moraga and Orinda, it may be the most natural psalm there is. Here is a simple guided reading, in the order of the verses.
 
 ## What the psalm says
 
-According to Chabad.org's text, Psalm 104 moves through creation like a walk through the world:
+Psalm 104 moves through creation like a walk through the world:
 
 1. **Opening (verse 1).** The psalmist calls on his soul to bless G-d, who is clothed in majesty and splendor.
 2. **Light, heavens and winds (verses 2 to 4).** G-d is wrapped in light and spreads out the heavens like a curtain. Clouds are His chariot, and the winds His messengers.
@@ -27,9 +27,9 @@ According to Chabad.org's text, Psalm 104 moves through creation like a walk thr
 
 ## Why it is said on Rosh Chodesh
 
-Chabad.org explains that on Rosh Chodesh the Song of the Day is followed by Psalm 104, which includes the line "He made the moon to mark the seasons" (verse 19). The new Jewish month begins with the new moon, so the psalm is a good fit. Read more in [Rosh Chodesh](/learn/rosh-chodesh).
+Jewish teaching explains that on Rosh Chodesh the Song of the Day is followed by Psalm 104, which includes the line "He made the moon to mark the seasons" (verse 19). The new Jewish month begins with the new moon, so the psalm is a good fit. Read more in [Rosh Chodesh](/learn/rosh-chodesh).
 
-Some communities say the psalm at other times as well, for example on Shabbat afternoons in the winter. We did not find this custom confirmed on Chabad.org, so if you want to know what Chabad does, ask the Rabbi.
+Some communities say the psalm at other times as well, for example on Shabbat afternoons in the winter. We did not find this custom confirmed in our sources, so if you want to know what Chabad does, ask the Rabbi.
 
 ## How to read it
 
@@ -54,7 +54,7 @@ It praises G-d for creation, from light and the heavens, to the mountains and sp
 
 ### When do we say Psalm 104?
 
-Chabad.org explains that it is said on Rosh Chodesh after the Song of the Day. Other customs exist, so ask the Rabbi.
+the tradition explains that it is said on Rosh Chodesh after the Song of the Day. Other customs exist, so ask the Rabbi.
 
 ### Why is Psalm 104 said on Rosh Chodesh?
 
@@ -66,7 +66,7 @@ Psalm 104 is the psalm of creation, so it fits well on a hill or by a stream. Re
 
 ### Where can I read Psalm 104 in English?
 
-The Hebrew and English text is on Chabad.org, or in any siddur or Tehillim book. Ask the Rabbi if you would like a copy.
+The Hebrew and English text is in any siddur or Tehillim book. Ask the Rabbi if you would like a copy.
 
 ## Take the next step
 

@@ -9,7 +9,7 @@ You can raise confident Jewish children even when they are the only Jewish kid i
 
 ## Start at home: make it warm
 
-Chabad teaching holds that a Jewish home is the child's first Jewish school. Chabad.org's Torah commentary on Jacob raising his family in the household of Laban teaches that we must raise Jewish children wherever we are, even in an environment far from Jewish life. Small, steady things matter more than big ones:
+Chabad teaching holds that a Jewish home is the child's first Jewish school. The Torah's account of Jacob raising his family in the household of Laban teaches that we must raise Jewish children wherever we are, even in an environment far from Jewish life. Small, steady things matter more than big ones:
 
 - **Shabbat.** Light candles and share a Friday night meal, even a simple one (see [Shabbat with kids](/learn/shabbat-with-kids)).
 - **A blessing for each child** on Friday night, which tells them they are loved.
@@ -19,7 +19,7 @@ Chabad teaching holds that a Jewish home is the child's first Jewish school. Cha
 
 ## Give them Jewish friends
 
-A child needs friends who do not have to explain who they are. One family told Chabad.org that sending their children to Hebrew school gave them the Jewish friendships they had been missing. Ask what is planned:
+A child needs friends who do not have to explain who they are. One family shared that sending their children to Hebrew school gave them the Jewish friendships they had been missing. Ask what is planned:
 
 - [Hebrew School](/programs/hebrew-school) (ages 3 to 13, Sundays for two hours, open to all, no membership required).
 - [Jewish Preschool](/programs/jewish-preschool) (ages 12 months to 4 years).

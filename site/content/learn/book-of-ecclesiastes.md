@@ -9,11 +9,11 @@ Kohelet (קהלת), known in English as Ecclesiastes, is a book of the Tanach co
 
 ## What is Kohelet?
 
-Chabad.org describes Kohelet as a book of Tanach containing Solomon's wise observations on life. It is part of the Writings, the third section of the [Tanach](/learn/tanach). Its Hebrew name is related to the word for "gathering" or "assembly," and the author speaks as one who has seen everything life offers. For the story of the wise king behind it, see [King Solomon](/learn/king-solomon).
+Jewish teaching describes Kohelet as a book of Tanach containing Solomon's wise observations on life. It is part of the Writings, the third section of the [Tanach](/learn/tanach). Its Hebrew name is related to the word for "gathering" or "assembly," and the author speaks as one who has seen everything life offers. For the story of the wise king behind it, see [King Solomon](/learn/king-solomon).
 
 ## "Vanity of vanities"
 
-The most famous line of the book is "vanity of vanities, all is vanity." The Hebrew word translated "vanity" is hevel (הבל), which literally means a breath or a vapor, something that is here and gone. Chabad.org explains that the major theme of Kohelet is how empty mundane pursuits and pleasures can be, and the search for deeper meaning. Wealth, status, pleasure and busyness cannot, by themselves, fill the human heart.
+The most famous line of the book is "vanity of vanities, all is vanity." The Hebrew word translated "vanity" is hevel (הבל), which literally means a breath or a vapor, something that is here and gone. The tradition explains that the major theme of Kohelet is how empty mundane pursuits and pleasures can be, and the search for deeper meaning. Wealth, status, pleasure and busyness cannot, by themselves, fill the human heart.
 
 Kohelet is not a book of despair. It is a book that clears away the false answers so that the true one can be heard.
 
@@ -27,7 +27,7 @@ The conclusion, in the last chapter, is simple. After weighing everything, Kohel
 
 ## Why do we read Kohelet on Sukkot?
 
-According to Chabad.org, Sukkot is also called Chag HaAsif, the Festival of Ingathering. It falls after the harvest, when the crops are stored and there is deep satisfaction in the results of our work. Kohelet tempers that satisfaction. It reminds us that material accomplishments are short-lived, so even after a successful harvest we should pursue lasting achievement.
+According to Jewish tradition, Sukkot is also called Chag HaAsif, the Festival of Ingathering. It falls after the harvest, when the crops are stored and there is deep satisfaction in the results of our work. Kohelet tempers that satisfaction. It reminds us that material accomplishments are short-lived, so even after a successful harvest we should pursue lasting achievement.
 
 The sukkah makes the same point. We leave our permanent, comfortable homes and sit in a fragile booth. This shows the impermanence of physical things, just as Kohelet does. Yet Sukkot is called "the season of our joy," so the festival teaches that joy is possible when we know what truly matters. See [Sukkot for beginners](/learn/sukkot-for-beginners) and the [Sukkot holiday guide](/holidays/sukkot).
 
@@ -46,10 +46,10 @@ Kohelet contains King Solomon's wise observations on life. Its major theme is th
 The Hebrew word hevel means a breath or vapor, something fleeting. The phrase means that anything that does not last cannot, by itself, give life meaning.
 
 ### Who wrote Kohelet?
-Chabad.org describes the book as containing the wise observations of King Solomon.
+Jewish sources describes the book as containing the wise observations of King Solomon.
 
 ### Why is Ecclesiastes read on Sukkot?
-Kohelet reminds us that material success is fleeting, which tempers the satisfaction of the harvest. The temporary sukkah teaches the same lesson. Chabad.org also says it is read in many communities on the holiday.
+Kohelet reminds us that material success is fleeting, which tempers the satisfaction of the harvest. The temporary sukkah teaches the same lesson. Jewish tradition also says it is read in many communities on the holiday.
 
 ### What does "a time for everything" mean?
 It is a passage from the third chapter that lists the seasons of life, from birth to death and from weeping to laughing, and teaches that each has its time.

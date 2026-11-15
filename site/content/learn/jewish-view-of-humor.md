@@ -5,11 +5,11 @@ category: Jewish ideas
 related: simcha, being-content, purim-for-beginners, lashon-hara, niggun
 local: Come for a laugh and stay for a l'chaim. Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
-Judaism welcomes laughter. The Torah's first great laugh comes from Abraham and Sarah, whose son was named Yitzchak (Isaac), a name that means "laugh," and the sage Rabbah is said to have begun every lesson with a joke. Chabad.org explains that humor can open the mind to learning, as long as it is the kind of laughter that lifts us up.
+Judaism welcomes laughter. The Torah's first great laugh comes from Abraham and Sarah, whose son was named Yitzchak (Isaac), a name that means "laugh," and the sage Rabbah is said to have begun every lesson with a joke. Chassidic teaching explains that humor can open the mind to learning, as long as it is the kind of laughter that lifts us up.
 
 ## Laughter in the Torah
 
-Chabad.org's article "Why Are So Many Comedians Jewish?" by Rabbi Yeruchem Eilfort starts in the Torah. Abraham and Sarah had no children until a very old age. When a messenger of G-d brought them the news that they would have a child, both laughed, each for a different reason. Their son was named Yitzchak (יִצְחָק), which the article says means "laugh." So the very name of the second patriarch carries laughter, a gift from G-d at a moment of surprise.
+The question "Why are so many comedians Jewish?" is answered by Rabbi Yeruchem Eilfort, who starts in the Torah. Abraham and Sarah had no children until a very old age. When a messenger of G-d brought them the news that they would have a child, both laughed, each for a different reason. Their son was named Yitzchak (יִצְחָק), which means "laugh." So the very name of the second patriarch carries laughter, a gift from G-d at a moment of surprise.
 
 ## A joke before the lesson
 
@@ -33,13 +33,13 @@ The Torah also teaches [simcha](/learn/simcha), serving G-d with joy. Laughter i
 ## Common questions
 
 ### Is humor allowed in Judaism?
-Yes. Chabad.org points to Isaac's name, which means "laugh," and to the sage Rabbah, who began every lesson with a joke.
+Yes. Chassidic teaching points to Isaac's name, which means "laugh," and to the sage Rabbah, who began every lesson with a joke.
 
 ### Why did Rabbah begin lessons with a joke?
-According to Chabad.org, the rabbis said a good joke opens the mind to learning. It is like a parent who bends down to lift a child.
+According to Chassidic teaching, the rabbis said a good joke opens the mind to learning. It is like a parent who bends down to lift a child.
 
 ### Why are there so many Jewish comedians?
-Chabad.org's Rabbi Eilfort says Jewish humor comes from both nature and nurture: self-examination and humility before G-d, which let us laugh at ourselves.
+Rabbi Eilfort says Jewish humor comes from both nature and nurture: self-examination and humility before G-d, which let us laugh at ourselves.
 
 ### Can a joke be forbidden?
 Jewish teaching takes words seriously, and a joke that hurts or gossips about someone is a matter for the laws of [lashon hara](/learn/lashon-hara). Ask the Rabbi about specific cases.

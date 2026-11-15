@@ -1,15 +1,15 @@
 ---
 title: True Stories of Legacy Gifts That Kept Judaism Alive
-description: Real Chabad.org stories of people who left gifts in their wills for Jewish life, in their own words, and how you can leave a legacy in Lamorinda.
+description: Real stories of people who left gifts in their wills for Jewish life, in their own words, and how you can leave a legacy in Lamorinda.
 category: Life cycle
 related: leaving-a-jewish-legacy-gift, recording-your-family-story, ethical-will, choni-and-the-carob-tree, supporting-chabad-of-lamorinda
 local: Curious about leaving a legacy for Jewish life in Lamorinda? Call Rabbi Labkowski at 925-384-7242 or Rebbetzin Labkowski at 925-384-7241.
 ---
-A legacy gift is a gift in a will, trust or beneficiary form that helps Jewish life continue after the donor is gone. Chabad.org has told the stories of ordinary people who did this, and each says the same thing: they wanted the Judaism that touched them to be there for the next generation.
+A legacy gift is a gift in a will, trust or beneficiary form that helps Jewish life continue after the donor is gone. Ordinary people have told their stories of doing this, and each says the same thing: they wanted the Judaism that touched them to be there for the next generation.
 
 ## Susan Moss: "They offered me a home I never had"
 
-Chabad.org (Yehuda Mayteles, 2020) tells of Susan Moss of Long Island, then 76. She grew up in Queens in a family that could not afford synagogue membership, so she knew little of Judaism. As a child she followed friends to Hebrew school and listened from the stoop through the open door.
+Yehuda Mayteles (2020) tells of Susan Moss of Long Island, then 76. She grew up in Queens in a family that could not afford synagogue membership, so she knew little of Judaism. As a child she followed friends to Hebrew school and listened from the stoop through the open door.
 
 She taught elementary school in New York City for 35 years. When her mother died she left her a small inheritance, which Susan invested and saw grow. About six years before the article, she saw an ad for Torah classes at a nearby Chabad House and went. She felt she had found what she had been looking for. She credits Rabbi Shalom Ber Cohen of Village Chabad in Stony Brook with answering her questions and coming to help her when she is sick.
 
@@ -17,7 +17,7 @@ In her will she directed that money to promote Jewish continuity. She said, "I a
 
 ## Myrna Horton: for the children
 
-Another Chabad.org article (2018) introduces Myrna Horton of Chabad of Tustin, California, 84. She left a portion of her estate to Chabad of Tustin so that children could learn about their religion, saying she felt good knowing "some of my estate will be used for children's education." She had met the rabbi at a car wash years earlier, and, hesitant to return to synagogue after many years, became a regular at Shabbat services, where she "loved the camaraderie."
+Another article (2018) introduces Myrna Horton of Chabad of Tustin, California, 84. She left a portion of her estate to Chabad of Tustin so that children could learn about their religion, saying she felt good knowing "some of my estate will be used for children's education." She had met the rabbi at a car wash years earlier, and, hesitant to return to synagogue after many years, became a regular at Shabbat services, where she "loved the camaraderie."
 
 She told Chabad emissaries not to be afraid to ask supporters about legacy gifts: giving, she said, is "a wonderful blessing." The article reports that she died unexpectedly a week after the interview.
 
@@ -31,11 +31,11 @@ The same article tells of a couple from West Orange, New Jersey. Dr. Marvin Fran
 - **A personal connection.** Each was welcomed by a rabbi and a community.
 - **A wish for continuity.** Jewish education for children and a Jewish future.
 
-Chabad.org reports that donors pledged more than $80 million in future gifts in the first five years of the Chabad Tomorrow planned-giving program, and thousands of donors worldwide have made legacy gifts to local Chabad centers. (Figures as reported by Chabad.org in 2020.)
+Donors pledged more than $80 million in future gifts in the first five years of the Chabad Tomorrow planned-giving program, and thousands of donors worldwide have made legacy gifts to local Chabad centers. (Figures as reported in 2020.)
 
 ## What a legacy gift is, and how it works
 
-Chabad.org's planned-giving page lists three ways: gifts in a will or trust (a dollar amount, an asset or a percentage), retirement plan gifts (naming a charity as beneficiary of an IRA or 401(k)), and beneficiary designations on life insurance or a donor-advised fund. See [Leaving a Jewish Legacy](/learn/leaving-a-jewish-legacy-gift). This guide is not legal or tax advice; please ask your attorney and tax advisor.
+There are three main ways: gifts in a will or trust (a dollar amount, an asset or a percentage), retirement plan gifts (naming a charity as beneficiary of an IRA or 401(k)), and beneficiary designations on life insurance or a donor-advised fund. See [Leaving a Jewish Legacy](/learn/leaving-a-jewish-legacy-gift). This guide is not legal or tax advice; please ask your attorney and tax advisor.
 
 ## In Lamorinda
 
@@ -47,10 +47,10 @@ Chabad of Lamorinda accepts legacy gifts: a bequest in a will or trust, a retire
 It is a gift arranged now, usually in a will, trust or beneficiary form, that takes effect later to support Jewish life.
 
 ### Does a legacy gift cost anything now?
-Chabad.org notes that a bequest costs nothing during your lifetime. Your attorney can explain the details.
+A bequest costs nothing during your lifetime. Your attorney can explain the details.
 
 ### Can I change my mind later?
-Chabad.org notes that a bequest in a will can be changed if your circumstances change. Ask your attorney.
+A bequest in a will can be changed if your circumstances change. Ask your attorney.
 
 ### Does a donor-advised fund grant count as maaser?
 Yes, a grant from your donor-advised fund to Chabad of Lamorinda counts as maaser. Call 925-384-7242 to arrange it.
@@ -59,7 +59,7 @@ Yes, a grant from your donor-advised fund to Chabad of Lamorinda counts as maase
 Yes. Call the Rabbi or Rebbetzin and see [/legacy](/legacy).
 
 ### Should I tell the Rabbi if I do?
-Chabad.org's planned-giving page invites donors to let the organization know, so it can thank them in their lifetime. The Rabbi would be honored to hear and to thank you.
+Donors are invited to let the organization know, so it can thank them in their lifetime. The Rabbi would be honored to hear and to thank you.
 
 ## Take the next step
 

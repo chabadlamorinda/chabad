@@ -9,7 +9,7 @@ Many families celebrate a bar mitzvah at the Western Wall in Jerusalem, usually 
 
 ## Why a Monday or Thursday?
 
-Torah is read publicly on Monday and Thursday mornings, and on Rosh Chodesh, the first day of the Hebrew month. Chabad.org teaches that a bar mitzvah boy should try to have his first aliyah (being called to the Torah) on a Monday or Thursday morning, or at Minchah on Shabbat. The Western Wall Heritage Foundation, which runs the plaza, holds bar mitzvah ceremonies on the days when the Torah is read. Learn more in [Torah reading](/learn/torah-reading).
+Torah is read publicly on Monday and Thursday mornings, and on Rosh Chodesh, the first day of the Hebrew month. Jewish tradition teaches that a bar mitzvah boy should try to have his first aliyah (being called to the Torah) on a Monday or Thursday morning, or at Minchah on Shabbat. The Western Wall Heritage Foundation, which runs the plaza, holds bar mitzvah ceremonies on the days when the Torah is read. Learn more in [Torah reading](/learn/torah-reading).
 
 ## Step by step
 

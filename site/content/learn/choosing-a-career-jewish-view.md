@@ -9,11 +9,11 @@ Jewish tradition does not tell you which career to choose, but it gives you a wa
 
 ## Effort and trust go together
 
-A text on trust in G-d presented on Chabad.org (the work of Rabbeinu Bachya) teaches that trust does not mean sitting back. A person must still pursue the natural means that seem best, such as study, applications and hard work, and then rely on G-d for the result. It rejects the idea that because G-d provides, we need not work for a living. Chabad teaching calls the two partners: we do the effort, and G-d gives the outcome. Read more in [parnassah, work and livelihood](/learn/parnassah-work-and-livelihood).
+A classic text on trust in G-d (the work of Rabbeinu Bachya) teaches that trust does not mean sitting back. A person must still pursue the natural means that seem best, such as study, applications and hard work, and then rely on G-d for the result. It rejects the idea that because G-d provides, we need not work for a living. Chabad teaching calls the two partners: we do the effort, and G-d gives the outcome. Read more in [parnassah, work and livelihood](/learn/parnassah-work-and-livelihood).
 
 ## Two callings
 
-In a chapter on making a living, drawn from the Rebbe's teachings, Chabad.org presents the idea that each person has two callings: an inner one, to grow spiritually and improve ourselves, and an outer one, to bring that growth into the material world. The same chapter says that money and livelihood are not separate from G-d, but a place where hidden spiritual value can be discovered. So a career is not only a way to earn; it can be a way to do good.
+In a chapter on making a living, drawn from the Rebbe's teachings, Jewish tradition presents the idea that each person has two callings: an inner one, to grow spiritually and improve ourselves, and an outer one, to bring that growth into the material world. The same chapter says that money and livelihood are not separate from G-d, but a place where hidden spiritual value can be discovered. So a career is not only a way to earn; it can be a way to do good.
 
 ## Don't let worry push you around
 

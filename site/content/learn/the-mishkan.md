@@ -13,11 +13,11 @@ The Torah describes it in the portions Terumah through Pekudei in the book of Ex
 
 After the Torah was given at Mount Sinai, G-d asked Moses for a home in which He could dwell among His people. "They shall make Me a sanctuary, and I will dwell among them" (Exodus 25:8).
 
-Chabad.org notes that the Mishkan was both a building and an idea: that G-d is not aloof in heaven, but can be found within the physical world. Its two names express this. *Mishkan* means "dwelling place," and *Mikdash* means "sanctity."
+The Mishkan was both a building and an idea: that G-d is not aloof in heaven, but can be found within the physical world. Its two names express this. *Mishkan* means "dwelling place," and *Mikdash* means "sanctity."
 
 ## What was inside the Mishkan?
 
-Chabad.org describes the Mishkan as a portable holy structure with a courtyard around it. Inside:
+The Mishkan was a portable holy structure with a courtyard around it. Inside:
 
 - **The Ark (Aron).** Made of wood covered in gold, with two cherubim on top. It stood in the inner chamber behind a woven curtain and held the two tablets G-d gave Moses at Sinai.
 - **The menorah.** A candelabra of pure gold, lit daily by the priest.
@@ -35,11 +35,11 @@ That teaches a lesson Chabad communities still live by: a holy place is built to
 
 ## "Within them," not "within it"
 
-One of the best-known Chassidic teachings is about a single word. The verse does not say, "and I will dwell within *it*," but "within *them*." Chabad.org explains, citing Rabbi Schneur Zalman of Liadi, that G-d wants to dwell within each and every person.
+One of the best-known Chassidic teachings is about a single word. The verse does not say, "and I will dwell within *it*," but "within *them*." Rabbi Schneur Zalman of Liadi explains that G-d wants to dwell within each and every person.
 
 The sanctuary was the model. The real home for G-d is in us, our homes and our daily lives.
 
-Chabad.org adds that G-d makes His home in whatever people sanctify. This is why the Torah uses physical objects in mitzvot: wool becomes tzitzit, parchment becomes a mezuzah or a Torah scroll. Even ordinary parts of life, done according to the Torah, can become a dwelling place. A Jewish home with a [mezuzah](/learn/mezuzah) and a [chanukat habayit](/learn/chanukat-habayit) is a small mishkan.
+G-d makes His home in whatever people sanctify. This is why the Torah uses physical objects in mitzvot: wool becomes tzitzit, parchment becomes a mezuzah or a Torah scroll. Even ordinary parts of life, done according to the Torah, can become a dwelling place. A Jewish home with a [mezuzah](/learn/mezuzah) and a [chanukat habayit](/learn/chanukat-habayit) is a small mishkan.
 
 ## Making your home a sanctuary
 
@@ -60,7 +60,7 @@ The Mishkan was the portable Tabernacle that the Jewish people built in the dese
 It contained the Ark with the two tablets, a golden menorah, a table for the special bread and an incense altar. A courtyard surrounded it.
 
 ### What does "I will dwell within them" mean?
-It means G-d wants to dwell in every person, not only in a building. Chabad.org points out the verse says "within them," not "within it."
+It means G-d wants to dwell in every person, not only in a building. The verse says "within them," not "within it."
 
 ### What is the difference between the Mishkan and the Temple?
 The Mishkan was a portable tent used in the desert. The Holy Temple in Jerusalem was a permanent building that came later. See [the Holy Temple](/learn/the-holy-temple).

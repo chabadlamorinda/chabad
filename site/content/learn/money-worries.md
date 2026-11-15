@@ -11,25 +11,25 @@ Living in the Bay Area, with some of the highest housing and school costs in the
 
 ## Worry is different from planning
 
-Planning asks, "What can I do today?" Worry asks, "What if everything falls apart?" The Torah wants the first. Chabad.org's advice on dealing with a financial crisis starts with staying hopeful: economies move in cycles, and this one will turn. If you are job hunting, keep at it. If you are worried about your job, set the worry aside and do your best work.
+Planning asks, "What can I do today?" Worry asks, "What if everything falls apart?" The Torah wants the first. The Jewish approach to a financial crisis starts with staying hopeful: economies move in cycles, and this one will turn. If you are job hunting, keep at it. If you are worried about your job, set the worry aside and do your best work.
 
 A Chassidic saying sums up the attitude: "Think good, and it will be good." This is not denial. It is a way to keep your mind clear enough to make good decisions. For the deeper idea, see [bitachon](/learn/bitachon), trust in G-d.
 
 ## Budgeting is a Jewish value
 
-The Torah's story of Joseph, who stored grain in the good years to survive the lean ones, is cited on Chabad.org as a model for saving. Practical ideas from the same article:
+The Torah's story of Joseph, who stored grain in the good years to survive the lean ones, is often cited as a model for saving. Here are some practical ideas:
 
 1. **Build savings** when you can, even small amounts.
 2. **Pay down debt wisely.** Reducing high-interest debt, like credit cards, protects your credit and your peace of mind.
 3. **Review your spending.** Trim "marginal" costs: forgotten subscriptions, unused channels, recurring charges you no longer need.
 4. **Use the slowdown to grow.** Consider more education or another skill, and volunteer, since many organizations need help.
-5. **Ask before buying:** "Do I actually need this?" Another contributor on Chabad.org suggests this question, along with secondhand clothing and inexpensive family fun.
+5. **Ask before buying:** "Do I actually need this?" Another helpful habit is this question, along with secondhand clothing and inexpensive family fun.
 
-Chabad.org gives general guidance only. For your own financial decisions, speak with a qualified professional. For a Jewish-law question, such as a debt or a business arrangement, ask the Rabbi.
+This is general guidance only. For your own financial decisions, speak with a qualified professional. For a Jewish-law question, such as a debt or a business arrangement, ask the Rabbi.
 
 ## Why giving a little still matters
 
-It sounds backwards, but Chabad.org's advice is not to cut charitable giving in a downturn. The institutions you support still need you, and there is always someone less fortunate. Money belongs to G-d, and giving reminds us that we are stewards, not owners. Give in a way that fits your budget. Even a small amount counts, and so does your time. See [tzedakah](/learn/tzedakah) and [tzedakah priorities](/learn/tzedakah-priorities) for how to decide.
+It sounds backwards, but the Jewish advice is not to cut charitable giving in a downturn. The institutions you support still need you, and there is always someone less fortunate. Money belongs to G-d, and giving reminds us that we are stewards, not owners. Give in a way that fits your budget. Even a small amount counts, and so does your time. See [tzedakah](/learn/tzedakah) and [tzedakah priorities](/learn/tzedakah-priorities) for how to decide.
 
 ## Asking for help without shame
 
@@ -45,7 +45,7 @@ Money is a leading cause of family tension. Pick a calm time, not a moment of cr
 Judaism teaches us to make a real effort and plan wisely, while trusting that G-d provides. Worry should not control you. Ask for help from family, community and the Rabbi when you need it.
 
 ### Should I give tzedakah when money is tight?
-Chabad.org's guidance is not to cut charitable giving in hard times. Give what you reasonably can, even a small amount, and ask the Rabbi what is right for you.
+The guidance is not to cut charitable giving in hard times. Give what you reasonably can, even a small amount, and ask the Rabbi what is right for you.
 
 ### Is it okay to ask the community for help?
 Yes. Asking for help is not shameful. Jewish communities have long supported their members with advice, interest-free loans and discreet aid.

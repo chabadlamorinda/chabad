@@ -22,7 +22,7 @@ You may also hear it called Kel Maleh Rachamim, El Maleh Rachamim or El Male. Th
 
 ## When it is said
 
-According to Chabad.org's article on Yizkor, the rabbi or cantor chants it publicly:
+According to Jewish tradition's article on Yizkor, the rabbi or cantor chants it publicly:
 
 - **At a funeral** (see [the Jewish funeral](/learn/jewish-funeral)).
 - **At an unveiling,** when the monument is dedicated (see [the unveiling](/learn/unveiling)).
@@ -33,7 +33,7 @@ Details can differ by community and by day, so ask the Rabbi when and where it i
 
 ## What about the yahrzeit?
 
-Many communities have El Malei Rachamim said at the Torah reading on the yahrzeit, or on the Shabbat before it. Chabad.org states that this is not the Chabad custom. Instead, Chabad families observe the [yahrzeit](/learn/yahrzeit) by lighting a memorial candle, saying [Kaddish](/learn/kaddish), studying Torah, giving tzedakah and doing a good deed in the person's merit. If your family has a different custom, honor it, and ask the Rabbi if you are unsure.
+Many communities have El Malei Rachamim said at the Torah reading on the yahrzeit, or on the Shabbat before it. Chassidic teaching states that this is not the Chabad custom. Instead, Chabad families observe the [yahrzeit](/learn/yahrzeit) by lighting a memorial candle, saying [Kaddish](/learn/kaddish), studying Torah, giving tzedakah and doing a good deed in the person's merit. If your family has a different custom, honor it, and ask the Rabbi if you are unsure.
 
 ## How to have it said for your loved one
 
@@ -55,7 +55,7 @@ It means "G-d, full of compassion." It is the memorial prayer that asks G-d to g
 It is chanted at funerals, unveilings and holiday Yizkor services, and in many communities after Torah readings. Ask the Rabbi about specific occasions.
 
 ### Is El Malei Rachamim said on the yahrzeit?
-In many communities yes, but Chabad.org states it is not the Chabad custom. Chabad families light a candle, say Kaddish, learn Torah and give tzedakah.
+In many communities yes, but the tradition states it is not the Chabad custom. Chabad families light a candle, say Kaddish, learn Torah and give tzedakah.
 
 ### Do I need the person's Hebrew name?
 Yes, the prayer names the person and the parent. See [Hebrew names](/learn/hebrew-names), or ask the Rabbi if the name is unknown.

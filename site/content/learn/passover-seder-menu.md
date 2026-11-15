@@ -17,7 +17,7 @@ This plan is for first-time hosts in Lafayette, Moraga and Orinda. Start with [H
 
 ## Charoset: the sweet paste
 
-Charoset (חרוסת) is a sweet mixture that recalls the mortar and bricks of Egyptian slavery. At the Seder the bitter herb is dipped into it and shaken off before eating. Chabad.org gives a simple recipe:
+Charoset (חרוסת) is a sweet mixture that recalls the mortar and bricks of Egyptian slavery. At the Seder the bitter herb is dipped into it and shaken off before eating. Here is a simple recipe:
 
 - 1 red apple and 1 pear, peeled and finely diced
 - 1 cup chopped or ground walnuts
@@ -31,7 +31,7 @@ Begin with a golden [Jewish chicken soup](/learn/jewish-chicken-soup). Serve it 
 
 ## The main dish: brisket
 
-A brisket is ideal for the Seder because it is made in advance and improves by waiting. Chabad.org's Passover pulled brisket uses a 3 to 4 pound second-cut brisket with a sauce of horseradish, mustard, ketchup, water, garlic, brown sugar, vinegar, salt and pepper. The sauce is cooked on the stove for 10 minutes, poured over the meat in a sealed pan, baked for 15 minutes at 425°F, then left at 200°F overnight, at least 6 hours. The meat is shredded and rewarmed in the sauce. It serves 6 to 8. Check that every ingredient is kosher for Passover. For a full brisket guide see [Brisket](/learn/brisket).
+A brisket is ideal for the Seder because it is made in advance and improves by waiting. A Passover pulled brisket uses a 3 to 4 pound second-cut brisket with a sauce of horseradish, mustard, ketchup, water, garlic, brown sugar, vinegar, salt and pepper. The sauce is cooked on the stove for 10 minutes, poured over the meat in a sealed pan, baked for 15 minutes at 425°F, then left at 200°F overnight, at least 6 hours. The meat is shredded and rewarmed in the sauce. It serves 6 to 8. Check that every ingredient is kosher for Passover. For a full brisket guide see [Brisket](/learn/brisket).
 
 ## Sides and dessert
 

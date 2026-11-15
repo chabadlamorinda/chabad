@@ -9,7 +9,7 @@ The Ramban (רמב"ן), Rabbi Moshe ben Nachman, also called Nachmanides, was a 
 
 ## Who was the Ramban?
 
-Chabad.org tells us that the Ramban was born in 1195 in Gerona, Spain, into a distinguished family with many Talmud scholars. His name RaMBaN is an acronym of Rabbi Moshe ben Nachman. He is not the same as the [Rambam](/learn/rambam), Maimonides, who is Rabbi Moshe ben Maimon. They lived in different lands and generations, though both were named Moshe and both are known by their initials.
+The Ramban was born in 1195 in Gerona, Spain, into a distinguished family with many Talmud scholars. His name RaMBaN is an acronym of Rabbi Moshe ben Nachman. He is not the same as the [Rambam](/learn/rambam), Maimonides, who is Rabbi Moshe ben Maimon. They lived in different lands and generations, though both were named Moshe and both are known by their initials.
 
 The Ramban studied Talmud under Rabbi Judah ben Yakar, and learned Kabbalah from Rabbi Ezra and Rabbi Azriel. By the age of sixteen he had mastered the Talmud and its commentaries. His first book, Milchamot Hashem ("The Wars of the Lord"), defended the great legal work of Rabbi Isaac Alfasi against criticism.
 
@@ -19,19 +19,19 @@ The Ramban did not want to earn his living from Torah study, so he worked as a p
 
 ## The Ramban's commentary on the Torah
 
-His best-known work is his commentary on the Torah, which Chabad.org says he wrote after moving to the Land of Israel. Where [Rashi](/learn/rashi) explains the plain meaning in clear, short comments, the Ramban often goes deeper, bringing in the hidden, Kabbalistic dimension of the Torah and reflecting on the reasons for the commandments. Many people today study it alongside Rashi on the weekly [Torah portion](/learn/torah-reading). If you are curious about the hidden side of the Torah, see [Kabbalah](/learn/kabbalah).
+His best-known work is his commentary on the Torah, which he wrote after moving to the Land of Israel. Where [Rashi](/learn/rashi) explains the plain meaning in clear, short comments, the Ramban often goes deeper, bringing in the hidden, Kabbalistic dimension of the Torah and reflecting on the reasons for the commandments. Many people today study it alongside Rashi on the weekly [Torah portion](/learn/torah-reading). If you are curious about the hidden side of the Torah, see [Kabbalah](/learn/kabbalah).
 
 His Torah commentary draws on the hidden, Kabbalistic dimension of the Torah, as described above.
 
 ## Moving to the Land of Israel
 
-At 72 the Ramban settled in the Land of Israel. He found the Jewish communities there small, scattered and poor. Rather than only admire the land from a distance, he went to work. He organized communities, founded schools and restored synagogues, helping to rebuild Jewish life in [Jerusalem](/learn/jerusalem). Chabad.org records that he passed away at 75, in 1270, and was buried in Haifa.
+At 72 the Ramban settled in the Land of Israel. He found the Jewish communities there small, scattered and poor. Rather than only admire the land from a distance, he went to work. He organized communities, founded schools and restored synagogues, helping to rebuild Jewish life in [Jerusalem](/learn/jerusalem). He passed away at 75, in 1270, and was buried in Haifa.
 
 His life is a picture of love for the Land of Israel in action: not only a dream, but building, teaching and caring. To place him in the larger story, see [the Jewish history overview](/learn/jewish-history-overview).
 
 ## The Ramban's letter to his son
 
-Chabad.org also mentions the Iggeres HaRamban, an ethical letter he sent to his son. It opens with the advice to speak calmly to everyone, at all times. Many people have a custom to read it monthly, weekly or even daily. Chabad.org notes that the letter teaches that humility is the foundation for developing awe of G-d, and the way to serve G-d and find happiness. For more on this quality, see [humility](/learn/humility). Ask the Rabbi for guidance if you would like to read the letter yourself.
+There is also the Iggeres HaRamban, an ethical letter he sent to his son. It opens with the advice to speak calmly to everyone, at all times. Many people have a custom to read it monthly, weekly or even daily. The letter teaches that humility is the foundation for developing awe of G-d, and the way to serve G-d and find happiness. For more on this quality, see [humility](/learn/humility). Ask the Rabbi for guidance if you would like to read the letter yourself.
 
 ## Common questions
 

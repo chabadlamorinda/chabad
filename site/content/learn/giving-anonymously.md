@@ -9,17 +9,17 @@ In Jewish teaching, giving charity anonymously is one of the highest ways to giv
 
 ## Why anonymity matters
 
-Tzedakah (צְדָקָה) means "justice" or "righteousness." Chabad.org teaches that no one should have to pay with his or her dignity to receive help. When a gift is given quietly, the receiver does not feel small or indebted, and the giver does not feel big. That protects both.
+Tzedakah (צְדָקָה) means "justice" or "righteousness." Chassidic teaching teaches that no one should have to pay with his or her dignity to receive help. When a gift is given quietly, the receiver does not feel small or indebted, and the giver does not feel big. That protects both.
 
-Chabad.org's "Eight Degrees of Giving" notes that when the receiver knows the giver, the receiver may feel ashamed, and when the giver knows the receiver, the giver may feel a sense of superiority. Mutual anonymity removes both feelings, so no one is placed above or below anyone else.
+In Maimonides' "Eight Degrees of Giving," we see that when the receiver knows the giver, the receiver may feel ashamed, and when the giver knows the receiver, the giver may feel a sense of superiority. Mutual anonymity removes both feelings, so no one is placed above or below anyone else.
 
 ## The levels that deal with secrecy
 
 Maimonides (the Rambam) lists eight levels of giving. Listing from the top, these are the ones about who knows whom:
 
-- **Level 2: nobody knows.** You give to the poor without knowing who receives it, and the receiver does not know the giver. Chabad.org's description recalls the anonymous fund in the Temple. A charity fund can work the same way, if the one running it is trustworthy and capable.
-- **Level 3: the giver knows, the receiver does not.** You know whom you are helping, but they do not know who helped them. The Sages, Chabad.org notes, would quietly leave coins at the doors of the poor.
-- **Level 4: the receiver knows, the giver does not.** You do not know who receives your gift, but the poor person knows you gave it. Chabad.org describes Sages tossing coins behind their backs so the poor could pick them up without shame.
+- **Level 2: nobody knows.** You give to the poor without knowing who receives it, and the receiver does not know the giver. This level recalls the anonymous fund in the Temple. A charity fund can work the same way, if the one running it is trustworthy and capable.
+- **Level 3: the giver knows, the receiver does not.** You know whom you are helping, but they do not know who helped them. The Sages, Jewish tradition notes, would quietly leave coins at the doors of the poor.
+- **Level 4: the receiver knows, the giver does not.** You do not know who receives your gift, but the poor person knows you gave it. The tradition describes Sages tossing coins behind their backs so the poor could pick them up without shame.
 
 Above all of them, Maimonides places helping someone stand on their own. See [The Highest Tzedakah](/learn/helping-someone-become-self-sufficient). For the full list and for who to give to first, see [Tzedakah Priorities](/learn/tzedakah-priorities).
 
@@ -29,7 +29,7 @@ Quiet giving also guards the giver. When no one will know, the gift is about the
 
 ## How to give quietly today
 
-Chabad.org's guide to giving the right way says to give anonymously when possible, give before you are asked, and give warmly, with a smile. A few ways this can look:
+The Jewish way of giving is to give anonymously when possible, give before you are asked, and give warmly, with a smile. A few ways this can look:
 
 1. **Give through a trusted charity or fund** rather than directly to someone you know.
 2. **Put a coin in the pushka** and let the box do the work. (See [The Pushka](/learn/pushka).)
@@ -46,7 +46,7 @@ Not necessarily. Maimonides ranks anonymity as a higher level, but the lowest le
 Yes, anonymity is considered a higher level of giving, because it protects the receiver's dignity and the giver's humility. In Maimonides' list, the second-highest level is giving where neither side knows the other.
 
 ### What are the eight levels of tzedakah?
-They range from giving unwillingly (the lowest) up to helping someone become self-sufficient (the highest). Chabad.org lists them, and [Tzedakah Priorities](/learn/tzedakah-priorities) explains them.
+They range from giving unwillingly (the lowest) up to helping someone become self-sufficient (the highest). Maimonides lists them, and [Tzedakah Priorities](/learn/tzedakah-priorities) explains them.
 
 ### Can a gift be anonymous if I give to a charity that sends receipts?
 Ask the charity how it handles names. Many charities can keep your gift off any public list. For tax questions, ask your tax advisor.

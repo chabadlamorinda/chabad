@@ -11,7 +11,7 @@ December is when many families in Lafayette, Moraga and Orinda sit down and thin
 
 ## Why we call it justice
 
-Chabad.org explains that, in Jewish thought, all money ultimately belongs to G-d, who entrusts it to us to share. That is why giving is called tzedakah: we are not being generous with what is ours alone, we are doing what is right with what we were given. The poor person is not a favor to us; we are the ones given a chance to do a mitzvah. See [Tzedakah](/learn/tzedakah) for the basics.
+Chassidic teaching explains that, in Jewish thought, all money ultimately belongs to G-d, who entrusts it to us to share. That is why giving is called tzedakah: we are not being generous with what is ours alone, we are doing what is right with what we were given. The poor person is not a favor to us; we are the ones given a chance to do a mitzvah. See [Tzedakah](/learn/tzedakah) for the basics.
 
 ## How much: maaser, a tenth
 

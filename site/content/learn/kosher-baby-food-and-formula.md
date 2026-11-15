@@ -27,7 +27,7 @@ Fresh fruits and vegetables are kosher by nature, though some need checking for 
 
 ## Meat and milk for the very young
 
-According to Chabad.org, very young children do not need to wait between meat and milk, but it is best to feed them something else in between. Ask the Rabbi about your child.
+According to Jewish tradition, very young children do not need to wait between meat and milk, but it is best to feed them something else in between. Ask the Rabbi about your child.
 
 ## Passover
 
@@ -49,7 +49,7 @@ Your baby's health comes first. If your pediatrician says your baby needs a part
 Many jarred foods are fruit and vegetable purees, but equipment can be shared. Look for a reliable symbol.
 
 ### Does my baby have to wait between meat and milk?
-Chabad.org says very young children need not wait but it is best to give something in between.
+Jewish tradition says very young children need not wait but it is best to give something in between.
 
 ### Is homemade baby food kosher?
 Fresh produce is kosher by nature. Check for insects and use your kosher kitchen setup.

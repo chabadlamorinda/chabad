@@ -13,7 +13,7 @@ The psalm is a song of trust in G-d. In Hebrew it opens:
 
 יֹשֵׁב בְּסֵ֣תֶר עֶלְי֑וֹן בְּצֵ֥ל שַׁ֜דַּ֗י יִתְלוֹנָֽן:
 
-"He who dwells in the covert of the Most High will lodge in the shadow of the Almighty" (Psalms 91:1, Judaica Press translation on Chabad.org). The second verse is the person's own answer: "I shall say of the Lord, my shelter and my fortress, my G-d in Whom I trust."
+"He who dwells in the covert of the Most High will lodge in the shadow of the Almighty" (Psalms 91:1, Judaica Press translation). The second verse is the person's own answer: "I shall say of the Lord, my shelter and my fortress, my G-d in Whom I trust."
 
 The rest of the chapter describes what that trust brings. G-d saves from the "snare that traps," covers us "with His wing," and is "an encompassing shield." Later the psalm promises that G-d "will command His angels on your behalf to guard you in all your ways" (verse 11), and that they will carry us so we do not stumble on a stone.
 

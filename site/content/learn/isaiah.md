@@ -9,7 +9,7 @@ Isaiah (Yeshayahu, יְשַׁעְיָהוּ) was one of the greatest prophets of
 
 ## Who was Isaiah?
 
-According to Chabad.org's summary of the sources, Isaiah came from the royal family of David. His father was the prophet Amotz, and tradition says he was a nephew of King Amatzia of Judea. That position, the sources say, let him speak to kings without fear. His daughter is said to have married King Hezekiah.
+According to the sources, Isaiah came from the royal family of David. His father was the prophet Amotz, and tradition says he was a nephew of King Amatzia of Judea. That position, the sources say, let him speak to kings without fear. His daughter is said to have married King Hezekiah.
 
 Isaiah prophesied during the reigns of several kings of Judea. His first prophecy came on the day King Uziyahu was struck with leprosy for trying to burn incense in the Temple, a task reserved for the priests. The book's chapters are not in strict time order, which is why the vision in chapter 6 comes after the first.
 
@@ -27,7 +27,7 @@ Many people know Isaiah's words without realizing where they come from:
 - **"Nation shall not lift sword against nation"** (Isaiah 2:4). His vision of swords being beaten into plowshares is a message of peace to the entire world.
 - **"The wolf shall dwell with the lamb."** His picture of animals and children living at peace shows the Messianic era, in the way Judaism understands it, a time when the world knows G-d and violence ends. Read more about [Moshiach](/learn/moshiach).
 - **"Nachamu, nachamu ami"** (Isaiah 40:1). "Comfort, comfort My people." These are the first words of the haftarah read right after Tisha B'Av, the first of seven Shabbats of consolation.
-- **"Seek G-d when He can be found"** (Isaiah 55:6). Chabad.org notes that this call to return to G-d, with the lines that follow, is the haftarah read on public fast days.
+- **"Seek G-d when He can be found"** (Isaiah 55:6). Jewish tradition notes that this call to return to G-d, with the lines that follow, is the haftarah read on public fast days.
 
 Isaiah's prophecies about the nations of the world, and about the day when all peoples will learn G-d's teachings, also appear in the haftarot. See [the haftarah](/learn/haftarah) and [what a prophet is](/learn/what-is-a-prophet).
 

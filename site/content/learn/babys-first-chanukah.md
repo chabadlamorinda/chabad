@@ -9,7 +9,7 @@ Your baby's first Chanukah is simple: light the menorah at home, hold your baby 
 
 ## Does a baby have to do anything on Chanukah?
 
-No. Babies have no obligations. The parents light, as the household's mitzvah (see [How to light the menorah](/learn/chanukah-menorah)), and the baby takes it in through the senses: the light, the songs, the smell of latkes, and being held by people who are happy. Chabad.org's family guide encourages parents to involve children in lighting as they grow, and every child begins somewhere. The beginning is simply being there.
+No. Babies have no obligations. The parents light, as the household's mitzvah (see [How to light the menorah](/learn/chanukah-menorah)), and the baby takes it in through the senses: the light, the songs, the smell of latkes, and being held by people who are happy. Jewish family tradition encourages parents to involve children in lighting as they grow, and every child begins somewhere. The beginning is simply being there.
 
 Chanukah (חֲנֻכָּה) means "dedication," and a baby's first Chanukah is a lovely time to dedicate a new life to light.
 
@@ -17,14 +17,14 @@ Chanukah (חֲנֻכָּה) means "dedication," and a baby's first Chanukah is a
 
 1. **Light with the baby in your arms.** Choose a calm moment. Let one parent hold the baby at a safe distance from the flame while the other lights.
 2. **Sing.** Babies love their parents' voices. Try the simple songs in [Chanukah songs](/learn/chanukah-songs), and sing Haneirot Halalu while the candles burn.
-3. **Sit for a moment.** Chabad.org suggests staying near the lights for the first half hour. A baby in a lap, a quiet song and the glow make that time easy.
+3. **Sit for a moment.** Jewish tradition suggests staying near the lights for the first half hour. A baby in a lap, a quiet song and the glow make that time easy.
 4. **Take a picture of the menorah.** A photo each year lets your child look back one day and see how the family grew.
-5. **Give tzedakah in the baby's name.** Chabad.org encourages us to give more tzedakah during Chanukah and teaches children to give part of their gelt. For a baby, parents can give a little [tzedakah](/learn/tzedakah) on their behalf, or set aside coins in a box. See [Chanukah gelt](/learn/chanukah-gelt).
+5. **Give tzedakah in the baby's name.** Jewish teaching encourages us to give more tzedakah during Chanukah and teaches children to give part of their gelt. For a baby, parents can give a little [tzedakah](/learn/tzedakah) on their behalf, or set aside coins in a box. See [Chanukah gelt](/learn/chanukah-gelt).
 6. **A first taste.** Babies who have started solids may enjoy a taste of something soft from the holiday table. Check with your pediatrician before offering any new food. See [Chanukah foods](/learn/chanukah-foods).
 
 ## Safety first
 
-- **Keep the menorah high and stable.** Chabad.org recommends a sturdy, fireproof surface away from curtains and out of children's reach. This matters even more with a crawling baby.
+- **Keep the menorah high and stable.** The tradition recommends a sturdy, fireproof surface away from curtains and out of children's reach. This matters even more with a crawling baby.
 - **Choose steady lights.** Tea lights in a tray are sturdy and short. See [oil and candles](/learn/menorah-oil-and-candles).
 - **Never leave the flame alone** with a baby or a toddler.
 - **Keep the gelt away.** Chocolate coins and small dreidels are choking hazards for babies. Save the dreidel for later, and see [Chanukah for kids](/learn/chanukah-for-kids) when they are ready.

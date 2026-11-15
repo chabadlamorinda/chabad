@@ -13,7 +13,7 @@ The fuel put into the menorah for the mitzvah was set aside for it. Because the 
 
 ## What is set aside, and what is not
 
-According to Chabad.org:
+According to Jewish law:
 
 - **Fuel meant for the required time.** Oil or wax that was meant to burn during the half hour after nightfall is considered set aside, even if the flame went out early. It should be burned after Chanukah.
 - **Extra fuel.** If your cups held more oil than needed, or your candles were larger than needed, the extra was never set aside, and you may use it as you wish. Some authorities are stricter.

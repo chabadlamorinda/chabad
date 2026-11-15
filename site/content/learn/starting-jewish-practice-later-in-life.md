@@ -9,7 +9,7 @@ Yes, you can start keeping Jewish traditions at any age, and Jewish teaching say
 
 ## Why later in life can be a good time
 
-The Rebbe taught that the Torah has no concept of retirement from purpose. In his talks on the elderly, published on Chabad.org, he pointed out that people who are freed from the pressures of business may have more time and calm for Torah study, and he saw this as a gift. He also said that wisdom grows with years, and that older people can become mentors for the young. So a person who comes to Jewish practice later in life brings something special: life experience, and a deep wish to understand.
+The Rebbe taught that the Torah has no concept of retirement from purpose. In his talks on the elderly, he pointed out that people who are freed from the pressures of business may have more time and calm for Torah study, and he saw this as a gift. He also said that wisdom grows with years, and that older people can become mentors for the young. So a person who comes to Jewish practice later in life brings something special: life experience, and a deep wish to understand.
 
 Read more in [aging with purpose](/learn/aging-with-purpose) and [a Jewish view of retirement](/learn/retirement-jewish-view).
 

@@ -9,9 +9,9 @@ Ashkenazi Jews are Jews whose ancestors lived in Central and Eastern Europe, and
 
 ## Where the names come from
 
-"Sepharad" (סְפָרַד) is the Hebrew name for Spain, and "Ashkenaz" (אַשְׁכְּנַז) is the Hebrew name used for Germany and the lands around it. Chabad.org explains that the split between the two communities developed gradually over several hundred years and reached its peak between the 8th and 10th centuries. Jews lived in many lands, from the Middle East, North Africa and Spain to the countries of Europe. Over time each community developed its own character.
+"Sepharad" (סְפָרַד) is the Hebrew name for Spain, and "Ashkenaz" (אַשְׁכְּנַז) is the Hebrew name used for Germany and the lands around it. Jewish teaching explains that the split between the two communities developed gradually over several hundred years and reached its peak between the 8th and 10th centuries. Jews lived in many lands, from the Middle East, North Africa and Spain to the countries of Europe. Over time each community developed its own character.
 
-Spain became the center of Sephardi Jewry, and its influence spread across North Africa, the Land of Israel and the Middle East. Germany, northern France and Italy were the main centers of Ashkenazi Jewry. Chabad.org notes that the Jewish community of Spain flourished in a "Golden Age" of scholarship, and that Jews there served as physicians, ministers and generals.
+Spain became the center of Sephardi Jewry, and its influence spread across North Africa, the Land of Israel and the Middle East. Germany, northern France and Italy were the main centers of Ashkenazi Jewry. The tradition notes that the Jewish community of Spain flourished in a "Golden Age" of scholarship, and that Jews there served as physicians, ministers and generals.
 
 Today, the word "Sephardi" is often used broadly, and Jews from Iraq, Yemen, Iran and other Middle Eastern lands are sometimes called Mizrahi ("Eastern"). Each community has its own proud traditions.
 
@@ -19,18 +19,18 @@ Today, the word "Sephardi" is often used broadly, and Jews from Iraq, Yemen, Ira
 
 The Torah and Jewish law are the same for everyone. What differs are the customs, the minhagim (see [Minhag: why Jewish customs matter](/learn/jewish-customs-minhag)). Here are some well-known examples:
 
-- **Prayer.** Different communities developed different prayer texts and tunes, called nusach. Chabad.org says that the origins of Nusach Sefard and Nusach Ashkenaz date back to this period.
-- **The mezuzah.** According to Chabad.org, Sephardim hang the mezuzah upright, following Rashi, while Ashkenazim place it at a slant to respect Rashi and his grandson Rabbeinu Tam. Sephardi communities likewise often keep their Torah scrolls standing upright in cylindrical cases. See [mezuzah](/learn/mezuzah).
-- **Passover and kitniyot.** Ashkenazi communities extended the ban on chametz to rice and legumes (kitniyot), while many Sephardi and Middle Eastern communities eat them. Chabad.org points out that the Seder is nearly identical in every community. See [kitniyot](/learn/kitniyot).
+- **Prayer.** Different communities developed different prayer texts and tunes, called nusach. Jewish sources says that the origins of Nusach Sefard and Nusach Ashkenaz date back to this period.
+- **The mezuzah.** According to Jewish tradition, Sephardim hang the mezuzah upright, following Rashi, while Ashkenazim place it at a slant to respect Rashi and his grandson Rabbeinu Tam. Sephardi communities likewise often keep their Torah scrolls standing upright in cylindrical cases. See [mezuzah](/learn/mezuzah).
+- **Passover and kitniyot.** Ashkenazi communities extended the ban on chametz to rice and legumes (kitniyot), while many Sephardi and Middle Eastern communities eat them. Jewish tradition points out that the Seder is nearly identical in every community. See [kitniyot](/learn/kitniyot).
 - **Naming.** Generally, Ashkenazi Jews name children after relatives who have died, while many Sephardim name after living grandparents. Ask the Rabbi about any specific question.
 - **Language and names.** Jews spoke different languages, such as Yiddish, Ladino, Judeo-Arabic and Hebrew. See [Jewish languages](/learn/jewish-languages) and [Jewish last names](/learn/jewish-last-names).
 - **Foods.** Gefilte fish and kugel in one home, rice dishes and spiced sauces in another, and every family's own recipes are all part of the Jewish table.
 
-Chabad.org also notes that scholars differed in approach: Ashkenazi study emphasized deep analysis of the Talmud, while Sephardi scholars often wrote halachic compendiums. These are tendencies, with plenty of exceptions.
+Jewish teaching also notes that scholars differed in approach: Ashkenazi study emphasized deep analysis of the Talmud, while Sephardi scholars often wrote halachic compendiums. These are tendencies, with plenty of exceptions.
 
 ## Why the differences do not divide us
 
-Chabad.org's article on the kitniyot debate makes a powerful point: the differences are small compared with what we share. The same Seder order, matzah, bitter herbs and four cups; the same Exodus story. "We are one family, the children of Israel."
+The kitniyot debate makes a powerful point: the differences are small compared with what we share. The same Seder order, matzah, bitter herbs and four cups; the same Exodus story. "We are one family, the children of Israel."
 
 Every Jew has a place, and the variety of customs shows how rich the Jewish people is. A Sephardi and an Ashkenazi can pray in the same room, and each respects the other's tradition. If you are unsure which customs to follow, ask the Rabbi.
 

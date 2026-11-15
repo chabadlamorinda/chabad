@@ -15,7 +15,7 @@ The psalm is eight short verses. In Hebrew it opens:
 
 עֶזְרִי מֵעִ֣ם יְהֹוָ֑ה עֹ֜שֵׂ֗ה שָׁמַ֥יִם וָאָֽרֶץ:
 
-In English (Judaica Press translation on Chabad.org):
+In English (Judaica Press translation):
 
 1. A song for ascents. I shall raise my eyes to the mountains, from where will my help come?
 2. My help is from the Lord, the Maker of heaven and earth.
@@ -30,7 +30,7 @@ The word "guard" appears again and again. The message is simple: we look up to t
 
 ## The Shir Lamaalot card for a newborn
 
-According to Chabad.org, it is customary to hang a Shir Lamaalot (Psalm 121) in the room of the new mother and the newborn, from the time the expectant mother arrives at the hospital. The card decorates the birthing room and the cradle. It is understood as a source of protection and blessing for both mother and child.
+It is customary to hang a Shir Lamaalot (Psalm 121) in the room of the new mother and the newborn, from the time the expectant mother arrives at the hospital. The card decorates the birthing room and the cradle. It is understood as a source of protection and blessing for both mother and child.
 
 The Rebbe, Rabbi Menachem Mendel Schneerson, taught that this custom was once natural, when babies were born at home. When births moved to hospitals, many people stopped, so the Rebbe strongly encouraged reviving it and said it is "fitting and proper to publicize everywhere that Jewish people live."
 
@@ -40,11 +40,11 @@ If the hospital staff wonder about the card, you can explain that the psalm help
 
 ## Treating the card with respect
 
-The card contains Divine Names, so it is handled with care. Chabad.org explains that in the birthing room and any room where babies are changed, the card should be covered, ideally with a double covering, one of which is opaque. Some are lenient and accept a single transparent covering. A card in a room used for marital intimacy has stricter rules. Because details depend on the card and the room, ask the Rabbi or the Rebbetzin if you are unsure.
+The card contains Divine Names, so it is handled with care. In the birthing room and any room where babies are changed, the card should be covered, ideally with a double covering, one of which is opaque. Some are lenient and accept a single transparent covering. A card in a room used for marital intimacy has stricter rules. Because details depend on the card and the room, ask the Rabbi or the Rebbetzin if you are unsure.
 
 ## Saying the psalm yourself
 
-Psalm 121 is also part of the book of [Tehillim](/learn/tehillim), and many people read it simply when they need comfort or protection on a hard day. We did not find a Chabad.org source for a specific custom of saying it before a trip, so for travel look at the prayer for a journey in [Tefilat Haderech](/learn/tefilat-haderech), and ask the Rabbi if you wonder about other customs.
+Psalm 121 is also part of the book of [Tehillim](/learn/tehillim), and many people read it simply when they need comfort or protection on a hard day. We did not find a source for a specific custom of saying it before a trip, so for travel look at the prayer for a journey in [Tefilat Haderech](/learn/tefilat-haderech), and ask the Rabbi if you wonder about other customs.
 
 If you are expecting, you may also like the guides to [Jewish pregnancy](/learn/jewish-pregnancy), [giving birth: Jewish customs](/learn/giving-birth-jewish-customs) and the sister psalm of protection, [Psalm 91](/learn/psalm-91).
 
@@ -60,7 +60,7 @@ It is a long-held custom to hang it as a safeguard for mother and baby, starting
 In the delivery room and near the baby's crib. Because it contains Divine Names, it is covered in certain rooms; ask the Rabbi or the Rebbetzin for the details.
 
 ### Can I take the card into a hospital?
-Yes, this is the custom. If staff hesitate, explain that the psalm calms the mother. Chabad.org recommends that gentle explanation.
+Yes, this is the custom. If staff hesitate, explain that the psalm calms the mother. That gentle explanation is recommended.
 
 ### Where can I get a Shir Lamaalot card in Lafayette, Moraga or Orinda?
 Call Rabbi Labkowski at 925-384-7242, or the Rebbetzin at 925-384-7241, and ask whether a card is available.

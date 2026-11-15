@@ -9,7 +9,7 @@ Tikkun olam (תִּקּוּן עוֹלָם) means "repairing the world." In Jewi
 
 ## Where the phrase comes from
 
-Tikkun (תיקון) means repair or fixing, and olam (עולם) means world. The phrase appears in ancient Jewish sources, and it is central to Kabbalah. According to the teachings of the Arizal, the great sixteenth-century Kabbalist, the world holds "sparks" of holiness that were scattered, and every mitzvah helps gather and repair them. Chabad.org explains that the Baal Shem Tov taught that this is not only for mystics: every Jew's mitzvot repair and purify the world.
+Tikkun (תיקון) means repair or fixing, and olam (עולם) means world. The phrase appears in ancient Jewish sources, and it is central to Kabbalah. According to the teachings of the Arizal, the great sixteenth-century Kabbalist, the world holds "sparks" of holiness that were scattered, and every mitzvah helps gather and repair them. The Baal Shem Tov taught that this is not only for mystics: every Jew's mitzvot repair and purify the world.
 
 ## What it means in Chabad teaching
 
@@ -19,7 +19,7 @@ This means tikkun olam is not only kindness to others, though kindness is a big 
 
 ## One deed can tip the scales
 
-Maimonides writes that a person should see the world as perfectly balanced between good and bad, so that one good deed can tip the entire world to the side of merit. The Rebbe often repeated this idea. Chabad.org explains that it means a single mitzvah that comes your way could change everything, not just add one small piece.
+Maimonides writes that a person should see the world as perfectly balanced between good and bad, so that one good deed can tip the entire world to the side of merit. The Rebbe often repeated this idea. It means a single mitzvah that comes your way could change everything, not just add one small piece.
 
 So there is no deed too small. A smile, a phone call to someone lonely, lighting Shabbat candles: any of them may be the one.
 
@@ -31,7 +31,7 @@ So there is no deed too small. A smile, a phone call to someone lonely, lighting
 4. **Learn.** Torah study fills the world with holiness; start with the [Kabbalah](/learn/kabbalah) guide.
 5. **Improve yourself.** Repair starts with your own character.
 
-Chabad.org writes about tikkun olam as a Torah idea, not a political platform. This guide leaves out causes and parties; for how a specific deed fits Jewish law, ask the Rabbi.
+Tikkun olam is a Torah idea, not a political platform. This guide leaves out causes and parties; for how a specific deed fits Jewish law, ask the Rabbi.
 
 ## In Lafayette, Moraga and Orinda
 

@@ -15,7 +15,7 @@ The Chabad custom is to light shortly after sunset, before the stars come out. M
 
 ## How long the lights must burn
 
-The lights must burn for at least half an hour after nightfall. If you light at sunset, there is a gap before nightfall, so Chabad.org says to have fuel for at least 50 minutes in total. Check that your candles or oil really last that long. See [oil or candles](/learn/menorah-oil-and-candles). If a candle is too short, use a different one rather than ignoring the rule.
+The lights must burn for at least half an hour after nightfall. If you light at sunset, there is a gap before nightfall, so Jewish tradition says to have fuel for at least 50 minutes in total. Check that your candles or oil really last that long. See [oil or candles](/learn/menorah-oil-and-candles). If a candle is too short, use a different one rather than ignoring the rule.
 
 After lighting, it is a good custom to stay near the lights for about half an hour, to sing, learn or enjoy the glow with family.
 

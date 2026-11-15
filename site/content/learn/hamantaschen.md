@@ -9,13 +9,13 @@ Hamantaschen (אוזני המן, *oznei Haman*) are triangular, filled pastries 
 
 ## Why do we eat hamantaschen?
 
-Chabad.org explains that the oldest name for the pastry is *oznei Haman*, "Haman's ears." That name appears in a 16th-century Italian Purim skit, and it led to a myth that the pastries commemorate cutting off Haman's ears, but Chabad.org notes there is no record of such a thing. A better explanation lies in the Yiddish name: poppy-seed pockets.
+Chassidic teaching explains that the oldest name for the pastry is *oznei Haman*, "Haman's ears." That name appears in a 16th-century Italian Purim skit, and it led to a myth that the pastries commemorate cutting off Haman's ears, but Jewish tradition notes there is no record of such a thing. A better explanation lies in the Yiddish name: poppy-seed pockets.
 
 The classic filling was always poppy seeds, which the halachic sources specifically mention. The custom is tied to Esther, who, in the palace of the king, ate beans and seeds, and eating seeds on Purim recalls her. Today, hamantaschen can be filled with almost anything, sweet or savory.
 
 ## The hidden meanings
 
-Chabad.org gives several meanings:
+The pastry has several meanings:
 
 - *Tash* also means "weaken." The pastry symbolizes the weakening of Haman and our wish that G-d weaken those who want to harm us.
 - Mordechai is said to have sent letters hidden in pastries, so filled pastries recall those messages.
@@ -26,7 +26,7 @@ That hidden miracle is the heart of Purim, and the hamantasch shows it in a form
 
 ## How to bake hamantaschen with your kids
 
-You can use a favorite family dough, or look for the poppy seed hamantaschen recipe on Chabad.org. Here is the basic method:
+You can use a favorite family dough, or look for a poppy seed hamantaschen recipe. Here is the basic method:
 
 1. Make a soft dough, let it rest, and roll it out on a floured table.
 2. Cut circles with a glass or a cup.

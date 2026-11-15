@@ -9,9 +9,9 @@ A traditional Jewish man's day is built around prayer three times a day (morning
 
 ## Morning: blessings, tefillin and prayer
 
-The day begins with the morning blessings. Chabad.org's article on prayer (*tefillah*) says Shacharit, the morning prayer, follows waking and the morning blessings. Read [morning blessings](/learn/morning-blessings).
+The day begins with the morning blessings. In the laws of prayer (*tefillah*), Shacharit, the morning prayer, follows waking and the morning blessings. Read [morning blessings](/learn/morning-blessings).
 
-**Tefillin** (תפילין) are two black leather boxes with parchment scrolls inside, worn on the arm and the head. From Chabad.org's "14 Tefillin Facts":
+**Tefillin** (תפילין) are two black leather boxes with parchment scrolls inside, worn on the arm and the head. A few basic facts about tefillin:
 
 - The arm tefillin and the head tefillin are two separate mitzvot. If you have only one, wear it.
 - The scrolls contain four Torah passages, including the Shema.
@@ -24,11 +24,11 @@ The Lubavitcher Rebbe launched a campaign for men and boys to put on tefillin ju
 
 ## Tzitzit
 
-*Tzitzit* (ציצית) are the fringes on a four-cornered garment worn by men, a reminder of the mitzvot. Boys traditionally begin wearing tzitzit at about age three, according to Chabad.org. See [tzitzit](/learn/tzitzit).
+*Tzitzit* (ציצית) are the fringes on a four-cornered garment worn by men, a reminder of the mitzvot. Boys traditionally begin wearing tzitzit at about age three, according to Jewish tradition. See [tzitzit](/learn/tzitzit).
 
 ## Three prayers a day
 
-Chabad.org lists the times:
+Chassidic teaching lists the times:
 
 - **Shacharit** (שחרית), morning.
 - **Mincha** (מנחה), afternoon, before sunset.

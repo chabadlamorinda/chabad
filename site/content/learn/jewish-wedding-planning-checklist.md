@@ -5,7 +5,7 @@ category: Life cycle
 related: jewish-wedding-in-lamorinda, getting-married-by-a-rabbi, jewish-wedding, choosing-a-wedding-date, kallah-classes
 local: Planning a Jewish wedding in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 as early as you can.
 ---
-To plan a Jewish wedding, you need a rabbi, a date, a ketubah, two witnesses, a chuppah, a ring and a quiet room for yichud. Chabad.org's wedding checklist covers the items needed for the religious parts of the ceremony, and this guide puts them in the order you will need them.
+To plan a Jewish wedding, you need a rabbi, a date, a ketubah, two witnesses, a chuppah, a ring and a quiet room for yichud. A traditional wedding checklist covers the items needed for the religious parts of the ceremony, and this guide puts them in the order you will need them.
 
 ## 1. Start with the rabbi and the date
 
@@ -16,12 +16,12 @@ To plan a Jewish wedding, you need a rabbi, a date, a ketubah, two witnesses, a 
 ## 2. Prepare yourselves
 
 - **Learning.** Many couples take a few classes: [kallah classes](/learn/kallah-classes) for the bride and chosson classes for the groom.
-- **Mikvah.** The bride immerses in a [mikvah](/learn/mikvah) before the wedding; the Rebbetzin can help arrange this privately. Chabad.org adds that it is proper for the groom to immerse on the wedding day.
+- **Mikvah.** The bride immerses in a [mikvah](/learn/mikvah) before the wedding; the Rebbetzin can help arrange this privately. Jewish tradition adds that it is proper for the groom to immerse on the wedding day.
 - **Questions of Jewish status.** If either of you is unsure of Jewish status or has questions about paperwork, speak privately with the Rabbi.
 
 ## 3. The ceremony checklist
 
-From Chabad.org's wedding checklist:
+From a traditional wedding checklist:
 
 1. **Chuppah.** See [What is a chuppah?](/learn/what-is-a-chuppah).
 2. **Wedding ring.** A plain band the groom owns; see [The Jewish wedding ring](/learn/jewish-wedding-ring).
@@ -40,7 +40,7 @@ Only if you do the tenaim: the document, and a plate with a cloth.
 
 ## 4. Choose your honorees
 
-Chabad.org's honoree list suggests roles: an emcee, a cantor, two witnesses for the betrothal, a reader of the ketubah and six men to recite the seven blessings under the chuppah, plus a leader of Grace after Meals. The witnesses must be Torah-observant adult Jewish men who are not relatives of the couple or of each other. Ask the Rabbi how to match people to roles.
+The traditional honoree list suggests roles: an emcee, a cantor, two witnesses for the betrothal, a reader of the ketubah and six men to recite the seven blessings under the chuppah, plus a leader of Grace after Meals. The witnesses must be Torah-observant adult Jewish men who are not relatives of the couple or of each other. Ask the Rabbi how to match people to roles.
 
 ## 5. The wedding and the week after
 

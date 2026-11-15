@@ -5,7 +5,7 @@ category: Mourning & remembrance
 related: year-of-mourning, mourning-a-grandparent, kaddish, honoring-parents, shiva, yahrzeit
 local: If your mother or father has died, call Rabbi Labkowski or the Rebbetzin at 925-384-7242, or write to us at /help/talk-to-the-rabbi. You do not have to carry this alone.
 ---
-When a mother or father dies, Jewish tradition asks the children to mourn for a full year: seven days of shiva, thirty days of sheloshim, and twelve months in all. Chabad.org explains that the extra time for a parent has nothing to do with how deep the love or the pain is. It is an extension of the mitzvah to honor the mother and father who gave us life.
+When a mother or father dies, Jewish tradition asks the children to mourn for a full year: seven days of shiva, thirty days of sheloshim, and twelve months in all. Jewish tradition explains that the extra time for a parent has nothing to do with how deep the love or the pain is. It is an extension of the mitzvah to honor the mother and father who gave us life.
 
 If you are in Lafayette, Moraga, Orinda or anywhere in the East Bay and this has just happened to you, we are so sorry. Call Rabbi Yisroel Labkowski or Rebbetzin Tzipora Labkowski at 925-384-7242. They will help with what to do now.
 
@@ -13,7 +13,7 @@ If you are in Lafayette, Moraga, Orinda or anywhere in the East Bay and this has
 
 Jewish law gives a person a few stages of mourning, described in [Shiva](/learn/shiva) and the [year of mourning](/learn/year-of-mourning). For a parent, the full set applies and then continues:
 
-- **Keriah.** A mourner tears a garment at the funeral as a sign of grief. According to Chabad.org, for a parent the tear is on the left side, over the heart, and for other relatives on the right. Women usually do this privately. If the moment was missed, it can be done when remembered. The rabbi at the funeral helps with the details.
+- **Keriah.** A mourner tears a garment at the funeral as a sign of grief. According to Jewish tradition, for a parent the tear is on the left side, over the heart, and for other relatives on the right. Women usually do this privately. If the moment was missed, it can be done when remembered. The rabbi at the funeral helps with the details.
 - **Shiva.** Seven days after the burial, the family stays together while friends and community come to comfort. Mourners are greeted with the words, "May G-d console you together with all the mourners of Zion and Jerusalem."
 - **Sheloshim.** Thirty days, when some restrictions ease.
 - **Twelve months.** For parents only, some mourning customs continue for the full year. Ask the Rabbi what applies to you, for example about celebrations and music, since customs depend on the case.
@@ -22,11 +22,11 @@ Jewish law gives a person a few stages of mourning, described in [Shiva](/learn/
 
 [Kaddish](/learn/kaddish) is the prayer a mourner says in the presence of a minyan. It is not really a prayer about death. It praises G-d's greatness, and the child leads everyone in saying "Amen." Jewish teaching holds that this elevates the soul of the parent and also lifts the mourner.
 
-Ashkenazi custom, including Chabad, is to say Kaddish for eleven months, ending one day short of the eleventh month. Chabad.org explains that the Talmud speaks of twelve months of purification for the wicked, and we do not want to imply that a parent was one. Sephardic custom differs. If a parent asked for twelve months, or you have another question, ask the Rabbi. To hear when and where Kaddish can be said, call 925-384-7242.
+Ashkenazi custom, including Chabad, is to say Kaddish for eleven months, ending one day short of the eleventh month. Jewish tradition explains that the Talmud speaks of twelve months of purification for the wicked, and we do not want to imply that a parent was one. Sephardic custom differs. If a parent asked for twelve months, or you have another question, ask the Rabbi. To hear when and where Kaddish can be said, call 925-384-7242.
 
 ## Honoring a parent after death
 
-The mitzvah of [honoring parents](/learn/honoring-parents) does not end at the grave. Chabad.org recommends doing good in their merit. Many people:
+The mitzvah of [honoring parents](/learn/honoring-parents) does not end at the grave. Jewish tradition recommends doing good in their merit. Many people:
 
 1. Give tzedakah in their memory.
 2. Study Torah or take on a new mitzvah in their name. Lighting Shabbat candles or putting on tefillin are examples.
@@ -39,7 +39,7 @@ Many of us in the Bay Area have parents in another city or country. If you could
 
 ## Grief has no schedule
 
-Chabad.org describes mourning as a structure that keeps grief from being absent or from taking over your life. Many people find that the structure holds them up. But the heart does not follow a calendar. If your sadness is heavy or lasts, speak to a trusted friend, your family doctor or a counselor, and to the Rabbi. See also [mental health: a Jewish view](/learn/mental-health-jewish-view).
+Jewish tradition describes mourning as a structure that keeps grief from being absent or from taking over your life. Many people find that the structure holds them up. But the heart does not follow a calendar. If your sadness is heavy or lasts, speak to a trusted friend, your family doctor or a counselor, and to the Rabbi. See also [mental health: a Jewish view](/learn/mental-health-jewish-view).
 
 ## Common questions
 
@@ -47,10 +47,10 @@ Chabad.org describes mourning as a structure that keeps grief from being absent 
 You mourn a parent for twelve months, with shiva for seven days and sheloshim for thirty days along the way. Kaddish is said for eleven months by Ashkenazi custom.
 
 ### Why do we mourn a parent for a full year?
-Chabad.org explains that it is an extension of the mitzvah to honor your mother and father. It does not mean the loss is greater than other losses.
+Jewish tradition explains that it is an extension of the mitzvah to honor your mother and father. It does not mean the loss is greater than other losses.
 
 ### On which side do you tear the garment for a parent?
-For a parent the tear is on the left, over the heart, according to Chabad.org. For others it is on the right. Ask the rabbi at the funeral for help.
+For a parent the tear is on the left, over the heart, according to Jewish tradition. For others it is on the right. Ask the rabbi at the funeral for help.
 
 ### Can I say Kaddish if I live far from a synagogue?
 Kaddish is said with a minyan of ten Jewish adults. Call Rabbi Labkowski at 925-384-7242 to ask where you can say it near Lafayette, Moraga or Orinda.

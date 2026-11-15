@@ -1,6 +1,6 @@
 ---
 title: Jewish Chicken Soup: The Shabbat Classic, With a Recipe
-description: How to make Jewish chicken soup for Shabbat, with a simple Chabad.org method, matzah balls and kreplach, freezing tips and why we serve it.
+description: How to make Jewish chicken soup for Shabbat, with a simple traditional method, matzah balls and kreplach, freezing tips and why we serve it.
 category: Jewish home
 related: shabbat-meals, easy-shabbat-dinner-menu, jewish-foods, bikur-cholim, keeping-food-warm-on-shabbat, kosher-meat
 local: Cooking for Shabbat for the first time? Sign up for a Shabbat meal at /forms/shabbat-meal or call 925-384-7242.
@@ -11,9 +11,9 @@ Jewish chicken soup is a golden broth made by simmering chicken with onions, car
 
 Shabbat meals are meant to be special, and soup is the dish that makes a kitchen smell like Shabbat. Many Jewish families have served it on Friday night for generations, and it is also the food people bring to someone who is ill, which is why it has the nickname "Jewish penicillin." Bringing a pot of soup to a sick friend is a lovely way to do the mitzvah of [visiting the sick](/learn/bikur-cholim). For more about the foods of the Shabbat table, see [Shabbat meals](/learn/shabbat-meals) and [Jewish foods](/learn/jewish-foods).
 
-## A simple chicken soup, adapted from Chabad.org
+## A simple chicken soup
 
-This method is retold in our own words from a recipe on Chabad.org. It serves 8 to 10 people.
+This method is is a traditional recipe retold in our own words. It serves 8 to 10 people.
 
 **Ingredients**
 - 2 chicken bottoms (drumstick and thigh together)
@@ -42,7 +42,7 @@ Use kosher ingredients, and ask the Rabbi about specifics. Kosher chicken is cov
 
 ## Matzah balls and kreplach
 
-Two traditional additions turn soup into a full first course. Matzah balls are light dumplings of matzah meal that cook in simmering water or broth, and kreplach are small dumplings filled with chicken or beef. Chabad.org has recipes for both, including a traditional chicken kreplach in golden chicken soup. Ask a friend or call us if you would like to cook them together.
+Two traditional additions turn soup into a full first course. Matzah balls are light dumplings of matzah meal that cook in simmering water or broth, and kreplach are small dumplings filled with chicken or beef. Both are traditional, and kreplach are often served in golden chicken soup. Ask a friend or call us if you would like to cook them together.
 
 ## Cooking ahead, freezing and keeping it warm
 

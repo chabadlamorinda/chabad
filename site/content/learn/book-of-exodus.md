@@ -9,7 +9,7 @@ The Book of Exodus, called Shemot (שמות, "Names") in Hebrew, is the second o
 
 ## Why is it called Shemot, "Names"?
 
-The book opens by listing the names of Jacob's sons, though we already met them in [Genesis](/learn/book-of-genesis). Chabad.org shares traditional reasons: the Jews in Egypt kept their Jewish names and did not give in completely to the culture around them; G-d counts His people by name, as He counts the stars; and a name expresses a person's inner essence. The book's message is that even in a long, hard exile, a Jew's inner identity can be revealed and awakened.
+The book opens by listing the names of Jacob's sons, though we already met them in [Genesis](/learn/book-of-genesis). Jewish tradition shares traditional reasons: the Jews in Egypt kept their Jewish names and did not give in completely to the culture around them; G-d counts His people by name, as He counts the stars; and a name expresses a person's inner essence. The book's message is that even in a long, hard exile, a Jew's inner identity can be revealed and awakened.
 
 ## The 11 portions, in order
 

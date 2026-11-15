@@ -15,7 +15,7 @@ Chassidic teaching adds a comforting thought: the Ark is open and G-d is near, a
 
 ## What happens in the Neilah service
 
-Chabad.org describes the order of the service:
+The order of the service is:
 
 1. **Opening prayers** and the Amidah, with the Ark open for the entire service, a sign that heaven's gates are open to us.
 2. **The cantor's repetition** of the Amidah.

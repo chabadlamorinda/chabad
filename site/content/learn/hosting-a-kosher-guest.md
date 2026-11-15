@@ -9,7 +9,7 @@ To host a guest who keeps kosher in a home that is not kosher, serve sealed, kos
 
 ## Start by asking, gently
 
-The best first step is a short, friendly question: "What would make you feel most comfortable at our table?" Kosher guests are used to this question and usually have simple answers. Many will say that fruit, vegetables, salad and sealed packaged food are fine. Others will bring their own food. Both are common, and neither is an insult. Chabad.org's guide for hosts reminds us to keep questions few and kind and to avoid overwhelming your guest. In Lafayette, Moraga and Orinda, many families have a parent, child or friend who keeps kosher, so you are not alone.
+The best first step is a short, friendly question: "What would make you feel most comfortable at our table?" Kosher guests are used to this question and usually have simple answers. Many will say that fruit, vegetables, salad and sealed packaged food are fine. Others will bring their own food. Both are common, and neither is an insult. Good hosting advice reminds us to keep questions few and kind and to avoid overwhelming your guest. In Lafayette, Moraga and Orinda, many families have a parent, child or friend who keeps kosher, so you are not alone.
 
 ## What to serve: the simple list
 

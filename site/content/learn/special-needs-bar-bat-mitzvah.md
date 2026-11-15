@@ -15,7 +15,7 @@ A day can and should be shaped to fit your child. Rabbi Labkowski will plan it w
 
 ## Adapting the day
 
-Here are the kinds of adaptations families have used, according to stories on Chabad.org and to what the Rabbi can arrange:
+Here are the kinds of adaptations families have used, according to stories of Chabad families and to what the Rabbi can arrange:
 
 - **A short, meaningful goal.** A girl with Down syndrome in Peabody, Massachusetts, learned the Shema and lit Shabbat candles with the blessing, and said the blessing over bread at a Kiddush the next day. The family and community described it as sweet, intimate and joyful.
 - **Tefillin** for a boy, put on with help, if comfortable ([tefillin](/learn/tefillin)).
@@ -23,7 +23,7 @@ Here are the kinds of adaptations families have used, according to stories on Ch
 - **A familiar time and place,** a quieter room, and a break if needed.
 - **A sensory-friendly party:** fewer people, less noise, and a space for rest.
 
-Chabad.org also shows other stories, such as an autistic boy in Munich, whose Chabad community celebrated him. Every child is different, so the Rabbi will start with your child's strengths.
+There are other stories, such as an autistic boy in Munich, whose Chabad community celebrated him. Every child is different, so the Rabbi will start with your child's strengths.
 
 ## How to start
 
@@ -49,7 +49,7 @@ No. Nothing in Jewish law requires a particular performance. A Shema, a blessing
 Yes. Others can say words with the child, and the child can take part with gestures, music or silence. Ask the Rabbi to plan it together.
 
 ### What about a child with Down syndrome and a bat mitzvah?
-A bat mitzvah is just as meaningful, and Chabad.org shares a story of one celebrated with the Shema, candle lighting and Hamotzi.
+A bat mitzvah is just as meaningful, and there is a story of one celebrated with the Shema, candle lighting and Hamotzi.
 
 ### Who is the day for?
 For the child, and for the family and community who love them.

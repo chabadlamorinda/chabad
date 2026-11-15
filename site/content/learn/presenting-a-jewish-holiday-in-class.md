@@ -19,7 +19,7 @@ Ask your child what they want you to say. For many kids, being proud of their ho
 
 **2. The dreidel game (7 minutes).** The dreidel is a spinning top with four Hebrew letters: Nun, Gimmel, Hey and Shin, which stand for "A great miracle happened there." Explain the letters, then let the children spin it. Chocolate or paper coins can be replaced with stickers or raisins if the school avoids candy and for allergies. The rules are in our guide to the [dreidel](/learn/dreidel).
 
-**3. A craft with no flame (5 minutes).** Chabad.org's list of children's Chanukah activities includes making cards, shaping clay dreidels, decorating a menorah from blocks, and a hunt for the "oil." A paper menorah with nine cut-out flames works well. Show a real menorah, but do not light it in class unless the school allows it.
+**3. A craft with no flame (5 minutes).** Children's Chanukah activities include making cards, shaping clay dreidels, decorating a menorah from blocks, and a hunt for the "oil." A paper menorah with nine cut-out flames works well. Show a real menorah, but do not light it in class unless the school allows it.
 
 **4. The message (3 minutes).** One small light pushes away a lot of darkness. Ask: what is a little light you can add this week? A kind word, a share, a hello to a new child.
 

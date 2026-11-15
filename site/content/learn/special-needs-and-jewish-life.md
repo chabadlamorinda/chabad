@@ -9,7 +9,7 @@ Judaism teaches that every person has a purpose, and that people with special ne
 
 ## The Rebbe's view: special, not handicapped
 
-Chabad.org records that the Rebbe, Rabbi Menachem Mendel Schneerson, preferred the word "special." He felt it was more accurate, not just kinder, because a person who struggles in one area often has remarkable strengths in another. The teaching in Chabad circles is that each person is given all he or she needs to fulfill a mission in this world. Missions differ, so abilities differ, and no one has an easier road than anyone else.
+The Rebbe, Rabbi Menachem Mendel Schneerson, preferred the word "special." He felt it was more accurate, not just kinder, because a person who struggles in one area often has remarkable strengths in another. The teaching in Chabad circles is that each person is given all he or she needs to fulfill a mission in this world. Missions differ, so abilities differ, and no one has an easier road than anyone else.
 
 In letters to a doctor who worked with children, the Rebbe also asked that each person be seen as an individual and that their abilities be developed. He wrote that G-d does not demand of anyone more than their natural capacities, and that Jews are one body: each person who does what they can shares in the achievement of the whole.
 

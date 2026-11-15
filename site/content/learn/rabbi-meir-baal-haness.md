@@ -13,7 +13,7 @@ Rabbi Meir lived in the Talmudic era and was described as the most distinguished
 
 ## The custom
 
-When someone faces a difficult situation and seeks help, they give charity and pledge the money in Rabbi Meir's merit. Then they say "G-d of Meir, answer me!" three times. The custom appears in *Keter Shem Tov*, attributed to the Baal Shem Tov. The Lubavitcher Rebbe often encouraged giving to this charity. Chabad.org notes that the original sources do not include the word "Rabbi" in the phrase.
+When someone faces a difficult situation and seeks help, they give charity and pledge the money in Rabbi Meir's merit. Then they say "G-d of Meir, answer me!" three times. The custom appears in *Keter Shem Tov*, attributed to the Baal Shem Tov. The Lubavitcher Rebbe often encouraged giving to this charity. The original sources do not include the word "Rabbi" in the phrase.
 
 ## Where the words come from
 
@@ -21,7 +21,7 @@ The Talmud (Avodah Zarah 18a-b) tells how Rabbi Meir disguised himself to rescue
 
 ## When something is lost
 
-Many Jews say the prayer when looking for a lost item. The practice, as Chabad.org presents it:
+Many Jews say the prayer when looking for a lost item. The practice, as it is commonly done:
 
 1. Say "G-d of Meir, answer me!" three times.
 2. Pledge charity in the merit of Rabbi Meir, naming what you lost, and ask to find it.
@@ -32,7 +32,7 @@ If you find something that belongs to someone else, see [Returning lost items](/
 
 ## Charity for the Land of Israel
 
-"Tzedakah of Rabbi Meir Baal Haness" usually means funds for the poor of the Land of Israel. Chabad.org notes a different view that such money may go to other causes, if no specific charity was named when the pledge was made, so ask the Rabbi if in doubt. Colel Chabad, founded in 1788 by Rabbi Schneur Zalman of Liadi, is the oldest continuously operating charity for the poor in Israel.
+"Tzedakah of Rabbi Meir Baal Haness" usually means funds for the poor of the Land of Israel. There is a different view that such money may go to other causes, if no specific charity was named when the pledge was made, so ask the Rabbi if in doubt. Colel Chabad, founded in 1788 by Rabbi Schneur Zalman of Liadi, is the oldest continuously operating charity for the poor in Israel.
 
 ## Why charity in his name?
 
@@ -53,7 +53,7 @@ He was a Talmudic sage whose name means "Master of Miracles." Jews give charity 
 Say "G-d of Meir, answer me!" three times, pledge charity in Rabbi Meir's merit and keep looking.
 
 ### Do I have to say "Rabbi" in the prayer?
-Chabad.org notes that the original sources do not include the word "Rabbi," and some suggest omitting it.
+The original sources do not include the word "Rabbi," and some suggest omitting it.
 
 ### Where does the charity go?
 By common practice it goes to the poor of the Land of Israel, such as through Colel Chabad. Ask the Rabbi if you have questions.

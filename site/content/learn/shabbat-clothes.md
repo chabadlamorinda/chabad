@@ -15,7 +15,7 @@ If this is your first time, wear what feels respectful and comfortable. Business
 
 The Torah calls Shabbat a day "to be declared holy." Our Sages taught that honoring it includes wearing clean, dignified clothing and enjoying good food. They said: "Your Shabbat garment should not be like your weekday garment."
 
-Chabad.org explains that Shabbat clothes honor the day itself, not onlookers. So Jews change into them even when they are spending Shabbat alone. See [Shabbat alone](/learn/shabbat-alone).
+Jewish tradition explains that Shabbat clothes honor the day itself, not onlookers. So Jews change into them even when they are spending Shabbat alone. See [Shabbat alone](/learn/shabbat-alone).
 
 ## What it looks like in practice
 
@@ -23,7 +23,7 @@ Chabad.org explains that Shabbat clothes honor the day itself, not onlookers. So
 - **If you do not have special clothes,** wear your usual ones in a more dignified way.
 - **Women** are encouraged to change into Shabbat clothes before lighting [Shabbat candles](/learn/shabbat-candles).
 - **Men** cover their heads in synagogue; see [the kippah](/learn/kippah).
-- **Modesty.** Chabad.org mentions modest tops, skirts or dresses for women at a chassidic gathering. When in doubt, ask.
+- **Modesty.** chassidic teaching mentions modest tops, skirts or dresses for women at a chassidic gathering. When in doubt, ask.
 - **Many people** keep Shabbat clothes on until after Havdalah.
 
 ## Kids

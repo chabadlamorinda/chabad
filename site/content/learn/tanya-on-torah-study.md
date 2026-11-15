@@ -11,7 +11,7 @@ This is the answer to a question many people in Lafayette, Moraga and Orinda ask
 
 ## Torah is more than information
 
-Chapter 4 on Chabad.org quotes the Zohar: "Torah and the Holy One, blessed be He, are entirely one." The Torah is not only a book about G-d. It is G-d's wisdom and will, which are infinite and beyond human grasp. The chapter teaches that G-d "condensed" this wisdom into the mitzvot, their laws, the letters of Scripture and the teachings of the Sages, so that people can reach it and connect with Him.
+Chapter 4 of the Tanya quotes the Zohar: "Torah and the Holy One, blessed be He, are entirely one." The Torah is not only a book about G-d. It is G-d's wisdom and will, which are infinite and beyond human grasp. The chapter teaches that G-d "condensed" this wisdom into the mitzvot, their laws, the letters of Scripture and the teachings of the Sages, so that people can reach it and connect with Him.
 
 The chapter likes the picture of water. Water descends from a high place to a low place and remains the same water. In the same way, Torah came down through the spiritual worlds until it was clothed in letters and in physical objects. The chapter also quotes the Sages: "Where you find the greatness of the Holy One, blessed be He, there you find His humility."
 

@@ -9,7 +9,7 @@ The ten sefirot (ספירות) are the ten attributes through which G-d's infini
 
 ## What the sefirot are
 
-Kabbalah teaches that G-d is infinite, and the world is finite. The sefirot are the channels through which the infinite is expressed in the finite world. Chabad.org explains that each sefirah is both a light that reveals and a vessel that gives that light a particular shape. They are not G-d Himself, and Kabbalists warn that we do not pray to them. A classic image is a king's two hands: the king is the one acting, even if he uses a different hand for different tasks. This is a deep subject, so if you want to study it seriously, ask the Rabbi to guide you; start with the guide to [Kabbalah](/learn/kabbalah).
+Kabbalah teaches that G-d is infinite, and the world is finite. The sefirot are the channels through which the infinite is expressed in the finite world. Jewish tradition explains that each sefirah is both a light that reveals and a vessel that gives that light a particular shape. They are not G-d Himself, and Kabbalists warn that we do not pray to them. A classic image is a king's two hands: the king is the one acting, even if he uses a different hand for different tasks. This is a deep subject, so if you want to study it seriously, ask the Rabbi to guide you; start with the guide to [Kabbalah](/learn/kabbalah).
 
 ## The three powers of the mind: ChaBaD
 
@@ -53,7 +53,7 @@ ChaBaD stands for Chochmah, Binah and Daat: wisdom, understanding and knowledge,
 No. They are attributes through which G-d is revealed, not G-d Himself, and Kabbalists teach that we pray only to G-d.
 
 ### How are the sefirot used for personal growth?
-Chassidic teaching treats the seven emotions as qualities of your own heart. You can ask which you use too much or too little and work on balance, especially during the Omer.
+Jewish tradition treats the seven emotions as qualities of your own heart. You can ask which you use too much or too little and work on balance, especially during the Omer.
 
 ### Do I need to know Hebrew or Kabbalah to understand them?
 No. The basics are simple. For deeper study, learn with a teacher; ask the Rabbi.

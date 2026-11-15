@@ -15,7 +15,7 @@ The Torah calls it a land "upon which the eyes of G-d your G-d constantly gaze" 
 
 ## Hebrew, the language of the Land
 
-Chabad.org notes that Hebrew is the everyday language of Israel. Children who know the aleph-bet can read the words of their prayers, and every new word is a small bridge. See [Teaching Kids the Aleph-Bet](/learn/teaching-kids-the-aleph-bet) and, for families speaking Hebrew at home, [Raising Hebrew-Speaking Kids in Lamorinda](/learn/raising-hebrew-speaking-kids-in-lamorinda).
+Hebrew is the everyday language of Israel. Children who know the aleph-bet can read the words of their prayers, and every new word is a small bridge. See [Teaching Kids the Aleph-Bet](/learn/teaching-kids-the-aleph-bet) and, for families speaking Hebrew at home, [Raising Hebrew-Speaking Kids in Lamorinda](/learn/raising-hebrew-speaking-kids-in-lamorinda).
 
 ## Holidays and food of the Land
 
@@ -26,11 +26,11 @@ Chabad.org notes that Hebrew is the everyday language of Israel. Children who kn
 
 ## Places children can picture
 
-Stories give children places to imagine. Jerusalem, whose name Chabad.org links to Abraham's words, "G-d will see," is where the Temple stood and where Jews face when they pray (see [Jerusalem in Judaism](/learn/jerusalem)). The Western Wall is where people place notes with their prayers (see [The Western Wall](/learn/western-wall)). Tzfat and Tiberias have the graves of sages (see [Tiberias and the Galilee](/learn/tiberias-and-the-galilee)). A simple map on the wall, with a few places marked, will begin many conversations.
+Stories give children places to imagine. Jerusalem, whose name is linked to Abraham's words, "G-d will see," is where the Temple stood and where Jews face when they pray (see [Jerusalem in Judaism](/learn/jerusalem)). The Western Wall is where people place notes with their prayers (see [The Western Wall](/learn/western-wall)). Tzfat and Tiberias have the graves of sages (see [Tiberias and the Galilee](/learn/tiberias-and-the-galilee)). A simple map on the wall, with a few places marked, will begin many conversations.
 
 ## Prayer: a child's way to help
 
-Chabad.org says that the prayer of children is especially potent. A child can say a chapter of [Tehillim](/learn/tehillim) for the people of Israel, and can give tzedakah, which Chabad.org lists among the ways to help Israel (see [Children, Money and Tzedakah](/learn/children-money-and-tzedakah)).
+The prayer of children is especially potent. A child can say a chapter of [Tehillim](/learn/tehillim) for the people of Israel, and can give tzedakah, one of the ways to help Israel (see [Children, Money and Tzedakah](/learn/children-money-and-tzedakah)).
 
 ## Keeping it simple: love before details
 
@@ -48,7 +48,7 @@ Even toddlers can enjoy songs, fruits of the Land and a picture of Jerusalem. De
 Focus on the Torah, holidays, Hebrew, food and prayer. If a political question comes up, answer briefly and kindly, and ask the Rabbi if you need help.
 
 ### Can children pray for Israel?
-Yes. A child can say a chapter of Tehillim, and Chabad.org says that the prayer of children is especially potent.
+Yes. A child can say a chapter of Tehillim, and the prayer of children is especially potent.
 
 ### Which Jewish books can I read with my child?
 See [Jewish Books for Kids](/learn/jewish-books-for-kids).

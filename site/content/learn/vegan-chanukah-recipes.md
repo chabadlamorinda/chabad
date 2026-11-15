@@ -17,14 +17,14 @@ A pareve Chanukah dish has no meat and no dairy, and a vegan dish also has no eg
 
 ## A vegan latke: Indian-style split pea
 
-Chabad.org has a pareve, vegan recipe for split pea latkes. Here it is retold:
+There is a pareve, vegan recipe for split pea latkes. Here it is retold:
 
 1. Soak 1 cup of yellow split peas for about three hours, then drain.
 2. Pulse the peas in a food processor with a little dried red pepper, a piece of fresh ginger, a clove of garlic, fresh cilantro, ground coriander and cumin, until coarse.
 3. Stir in a small minced onion, salt and pepper, and a quarter cup of flour if the batter is loose.
 4. Fry quarter-cup scoops in about three inches of hot oil until crisp, about four minutes, and keep warm in a low oven.
 
-Chabad.org also has a collection of fifteen latkes, from sweet potato and carnival squash to carrot-parsnip. Many are pareve, but the page does not mark which are vegan, so read each recipe for eggs.
+Jewish tradition also has a collection of fifteen latkes, from sweet potato and carnival squash to carrot-parsnip. Many are pareve, but the page does not mark which are vegan, so read each recipe for eggs.
 
 ## Doughnuts without dairy or eggs
 
@@ -62,7 +62,7 @@ Pareve means neither meat nor dairy, and it may include eggs and fish. Vegan mea
 Yes, kosher eggs are pareve (see [kosher eggs](/learn/kosher-eggs)), though they are not vegan.
 
 ### Can I make vegan latkes?
-Yes. Chabad.org's Indian-style split pea latkes are vegan, and other vegetable latkes can be made without eggs.
+Yes. Indian-style split pea latkes are vegan, and other vegetable latkes can be made without eggs.
 
 ### Can I make vegan sufganiyot?
 Yes, if you use a vegan dough recipe and kosher ingredients. Many traditional doughs have eggs or dairy, so read the recipe.

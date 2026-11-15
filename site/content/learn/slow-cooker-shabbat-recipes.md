@@ -11,7 +11,7 @@ For families in Lafayette, Moraga and Orinda, a slow cooker also means a calm Fr
 
 ## Why a slow cooker works on Shabbat
 
-Cooking is one of the [39 categories of work](/learn/thirty-nine-melachot) we rest from on Shabbat. But Jewish homes have long enjoyed a hot meal on Shabbat day by starting the food before Shabbat and leaving it on a heat source that is not touched. Chabad.org describes slow-cooking Shabbat lunch overnight in a crockpot or on a covered flame as the traditional way to make cholent. See [cholent](/learn/cholent) for the history.
+Cooking is one of the [39 categories of work](/learn/thirty-nine-melachot) we rest from on Shabbat. But Jewish homes have long enjoyed a hot meal on Shabbat day by starting the food before Shabbat and leaving it on a heat source that is not touched. Slow-cooking Shabbat lunch overnight in a crockpot or on a covered flame is the traditional way to make cholent. See [cholent](/learn/cholent) for the history.
 
 ## The simple rules to ask the Rabbi about
 

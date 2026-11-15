@@ -21,7 +21,7 @@ The Torah describes Israel as "a land of wheat and barley, of vines, figs and po
 
 ## What do they mean?
 
-Chabad.org notes that the seven correspond to the seven emotional attributes of the soul in Kabbalah: wheat is chesed (kindness), barley gevurah (strength), grapes tiferet (harmony), figs netzach (perseverance), pomegranates hod (humility), olives yesod (foundation) and dates malchut (royalty).
+Jewish tradition notes that the seven correspond to the seven emotional attributes of the soul in Kabbalah: wheat is chesed (kindness), barley gevurah (strength), grapes tiferet (harmony), figs netzach (perseverance), pomegranates hod (humility), olives yesod (foundation) and dates malchut (royalty).
 
 There is a simple lesson too. The two grains are necessary for sustenance, and the five fruits add pleasure to life. A Jewish life needs both: what we need, and what we enjoy, each with a blessing.
 
@@ -36,7 +36,7 @@ You can find the words in [blessings](/learn/blessings), and for blessings on fo
 
 ## The after-blessing
 
-After eating the five fruits, there is a special after-blessing, *Al Ha'etz*. Grain foods that are not bread have *Al HaMichyah*, and bread has *Birkat HaMazon*. Chabad.org notes that this is the special blessing for the fruits of Israel. For the words and how much you must eat, see [blessings after food](/learn/blessings-after-food). If you are not sure which blessing to say, ask the Rabbi.
+After eating the five fruits, there is a special after-blessing, *Al Ha'etz*. Grain foods that are not bread have *Al HaMichyah*, and bread has *Birkat HaMazon*. Chassidic teaching notes that this is the special blessing for the fruits of Israel. For the words and how much you must eat, see [blessings after food](/learn/blessings-after-food). If you are not sure which blessing to say, ask the Rabbi.
 
 ## A Tu BiShvat table to set at home
 

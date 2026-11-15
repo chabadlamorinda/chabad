@@ -5,7 +5,7 @@ category: Jewish home
 related: shalom-bayit, marriage-arguments-jewish-wisdom, first-year-of-marriage, tanya-for-parents, anger-jewish-view
 local: Want help for your marriage? Rabbi and Rebbetzin Labkowski are glad to talk privately: 925-384-7242, or see /help/talk-to-the-rabbi.
 ---
-The Tanya has no chapter titled "marriage," but its ideas fit a home well: see your spouse's soul before their faults, pause before anger, and let the mind lead the heart. This guide applies teachings from the Tanya that Chabad.org presents, so that a couple can use them in everyday life.
+The Tanya has no chapter titled "marriage," but its ideas fit a home well: see your spouse's soul before their faults, pause before anger, and let the mind lead the heart. This guide applies teachings from the Tanya, so that a couple can use them in everyday life.
 
 It is meant as encouragement. For serious trouble, please talk to the Rabbi or the Rebbetzin, and to a professional.
 
@@ -17,13 +17,13 @@ In a marriage, it is easy to see only habits: the dishes, the lateness, the tone
 
 ## When anger rises: Epistle 25
 
-The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter on anger (Epistle 25 in the section called Iggeret HaKodesh). Chabad.org summarizes it this way:
+The Alter Rebbe, Rabbi Shneur Zalman of Liadi, wrote a letter on anger (Epistle 25 in the section called Iggeret HaKodesh). In short, it teaches:
 
 - The Sages compare an angry person to an idolater, because in that moment he has lost sight that all that happens comes from G-d.
 - The person who hurt you is still a free agent and responsible for his choices. But what reaches us is also part of what Heaven allowed, so anger at the person is misplaced.
 - Anger has a place in matters of religious duty, such as stopping a fellow Jew from transgressing, but not over a personal offense.
 
-How can this help a husband and wife? Not by excusing wrongdoing. It helps by lowering the temperature: this is a person I love, in a moment that has also been sent to me, and I choose my reaction. The Rebbe's advice on anger, as Chabad.org quotes it, is simple: "the first step is to wait," and to remember that if you hurt someone you will need to apologize and ask forgiveness in person.
+How can this help a husband and wife? Not by excusing wrongdoing. It helps by lowering the temperature: this is a person I love, in a moment that has also been sent to me, and I choose my reaction. The Rebbe's advice on anger is simple: "the first step is to wait," and to remember that if you hurt someone you will need to apologize and ask forgiveness in person.
 
 None of this is meant for abuse. If you or your children are being hurt, or you feel afraid at home, these ideas are not the answer: please seek help, and call Rabbi Labkowski (925-384-7242) or Rebbetzin Labkowski (925-384-7241) privately.
 

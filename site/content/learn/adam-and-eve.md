@@ -9,11 +9,11 @@ In the Torah, Adam and Eve are the first man and woman, created by G-d and place
 
 ## The story in brief (Genesis 1 to 3)
 
-G-d forms Adam (אָדָם) from the dust of the earth (adamah) and breathes a soul into him. G-d places him in the Garden of Eden and later creates Chavah (Eve) as his partner. In the garden there are two special trees. Chabad.org describes the Tree of Life, which would grant eternal life, and the Tree of Knowledge of good and evil. The Tree of Knowledge stands in the middle of the garden, and G-d gives Adam one prohibition: eat from any tree, but not from that one. The serpent persuades Eve, she eats and gives to Adam, and they are sent out of the garden.
+G-d forms Adam (אָדָם) from the dust of the earth (adamah) and breathes a soul into him. G-d places him in the Garden of Eden and later creates Chavah (Eve) as his partner. In the garden there are two special trees. Jewish tradition describes the Tree of Life, which would grant eternal life, and the Tree of Knowledge of good and evil. The Tree of Knowledge stands in the middle of the garden, and G-d gives Adam one prohibition: eat from any tree, but not from that one. The serpent persuades Eve, she eats and gives to Adam, and they are sent out of the garden.
 
 ## What the fruit was
 
-The Torah does not name the fruit, and "apple" is not in the text. The Sages offer different views, including wheat, grape and fig. Chabad.org explains that the Tree of Knowledge would introduce an evil inclination and an awareness of immorality, a world in which good and bad are mixed together. The details are debated, so ask the Rabbi if you want to study the sources.
+The Torah does not name the fruit, and "apple" is not in the text. The Sages offer different views, including wheat, grape and fig. Jewish teaching explains that the Tree of Knowledge would introduce an evil inclination and an awareness of immorality, a world in which good and bad are mixed together. The details are debated, so ask the Rabbi if you want to study the sources.
 
 ## Lessons of the story
 
@@ -46,7 +46,7 @@ They were the first man and woman, created by G-d and placed in the Garden of Ed
 The Torah does not say. The Sages suggest wheat, grape or fig, and not an apple.
 
 ### What does the Tree of Knowledge mean in Judaism?
-Chabad.org explains that it would introduce an evil inclination and an awareness of immorality. It represents the choice between good and evil.
+the tradition explains that it would introduce an evil inclination and an awareness of immorality. It represents the choice between good and evil.
 
 ### Does Judaism believe in original sin?
 No. In Jewish teaching, each person is responsible for his or her own deeds, and every soul is born pure.

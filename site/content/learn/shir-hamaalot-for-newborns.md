@@ -5,9 +5,9 @@ category: Life cycle
 related: giving-birth-jewish-customs, psalm-121, jewish-pregnancy, jewish-nursery, new-parents-in-lamorinda
 local: Expecting? Call Rabbi Labkowski at 925-384-7242 and ask about a Shir Hamaalot card for the hospital and the nursery.
 ---
-A Shir Hamaalot card is a printed card with Psalm 121 ("A Song of Ascents") that Jewish families hang in the delivery room and near the newborn's crib, as a prayer for the protection of mother and baby. Chabad.org describes it as a long-standing custom that the Lubavitcher Rebbe encouraged families to keep.
+A Shir Hamaalot card is a printed card with Psalm 121 ("A Song of Ascents") that Jewish families hang in the delivery room and near the newborn's crib, as a prayer for the protection of mother and baby. Jewish tradition describes it as a long-standing custom that the Lubavitcher Rebbe encouraged families to keep.
 
-Many expecting parents in Lafayette, Moraga and Orinda ask where to hang it and how to treat it. Here is what Chabad.org teaches, in simple steps.
+Many expecting parents in Lafayette, Moraga and Orinda ask where to hang it and how to treat it. Here is what chassidic teaching teaches, in simple steps.
 
 ## What the card is
 
@@ -15,21 +15,21 @@ The card contains the text of Psalm 121, in Hebrew, which begins "I lift my eyes
 
 ## Why we hang it
 
-Chabad.org gives two reasons:
+The tradition gives two reasons:
 
 - **Protection.** It is a safeguard for mother and baby at a delicate time, physically and spiritually. See [giving birth: Jewish customs](/learn/giving-birth-jewish-customs).
 - **A holy first sight.** The Rebbe taught that the baby's first impression should be something holy, such as the letters of the aleph-bet, and so the card is placed where the baby will see it.
 
 ## Where and when to hang it
 
-1. **When.** Chabad.org says to hang it as soon as the mother arrives at the hospital, to help ensure an easy birth.
+1. **When.** jewish tradition says to hang it as soon as the mother arrives at the hospital, to help ensure an easy birth.
 2. **In the delivery room.** Ask the staff politely. The Rebbe suggested explaining that it calms the mother, which helps everyone.
 3. **By the baby's crib.** Hang it on or near the crib.
-4. **At home.** Many families keep it up for the first weeks. Chabad.org does not give a fixed date for taking it down, so ask the Rabbi how long to keep it.
+4. **At home.** Many families keep it up for the first weeks. There is no fixed date for taking it down, so ask the Rabbi how long to keep it.
 
 ## Treating it with respect
 
-The card contains the Divine Names, so it is handled respectfully. Chabad.org notes that one should not undress in front of it, and so it is covered in the delivery room, and in any room where the baby is changed. Opinions differ on how: most authorities advise a double covering, at least one opaque, while some accept a single transparent covering. The rules are stricter in a room used for marital intimacy. These details vary, so ask the Rabbi for your home.
+The card contains the Divine Names, so it is handled respectfully. Jewish tradition notes that one should not undress in front of it, and so it is covered in the delivery room, and in any room where the baby is changed. Opinions differ on how: most authorities advise a double covering, at least one opaque, while some accept a single transparent covering. The rules are stricter in a room used for marital intimacy. These details vary, so ask the Rabbi for your home.
 
 When the card is no longer needed, ask the Rabbi what to do with it, since it carries Divine Names.
 

@@ -9,7 +9,7 @@ In an apartment, condo or dorm, place the menorah inside the doorway of your hom
 
 ## The two places for the menorah
 
-The menorah is meant to be seen, so that people remember the miracle. Chabad.org describes two ways:
+The menorah is meant to be seen, so that people remember the miracle. Jewish law describes two ways:
 
 - **At the doorway:** place it on a chair or small table just inside the door, on the left side as you walk in, so that you pass between the menorah and the [mezuzah](/learn/mezuzah) on the right. This is the Chabad custom, and it works well in an apartment, where the inside door is often the only door.
 - **In a window facing the street:** this is also a good custom, as long as the window is not too far from the ground.
@@ -28,7 +28,7 @@ Students lighting at college should light in their room, or in a shared dining s
 
 ## What if flames are not allowed?
 
-An electric menorah is not considered to fulfill the mitzvah, according to Chabad.org: the Temple menorah burned fuel with a wick and fire. If you truly cannot have a flame, such as in a care facility or a building with strict rules, ask the Rabbi: there may be another place to light, or another solution for your case. An electric menorah in a window can still publicize the miracle, as long as a real menorah is also lit. Your situation is personal, so please ask the Rabbi first.
+An electric menorah is not considered to fulfill the mitzvah, according to Jewish law: the Temple menorah burned fuel with a wick and fire. If you truly cannot have a flame, such as in a care facility or a building with strict rules, ask the Rabbi: there may be another place to light, or another solution for your case. An electric menorah in a window can still publicize the miracle, as long as a real menorah is also lit. Your situation is personal, so please ask the Rabbi first.
 
 ## Common questions
 

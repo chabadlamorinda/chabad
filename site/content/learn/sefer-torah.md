@@ -9,18 +9,18 @@ A sefer Torah (סֵפֶר תּוֹרָה) is a handwritten parchment scroll cont
 
 ## What a Torah scroll is
 
-When Jews say "the Torah," they often mean this scroll, the one kept in the ark of the synagogue. According to Chabad.org, it contains the Five Books of Moses: Genesis, Exodus, Leviticus, Numbers and Deuteronomy. The scroll is one form of Torah. Learn more about the Written and Oral Torah in [What Is the Torah?](/learn/torah).
+When Jews say "the Torah," they often mean this scroll, the one kept in the ark of the synagogue. According to Jewish tradition, it contains the Five Books of Moses: Genesis, Exodus, Leviticus, Numbers and Deuteronomy. The scroll is one form of Torah. Learn more about the Written and Oral Torah in [What Is the Torah?](/learn/torah).
 
 ## How a Torah scroll is written
 
-Chabad.org describes the process this way:
+Jewish tradition describes the process this way:
 
 - **By hand, on parchment.** A scribe, called a *sofer* (סוֹפֵר), writes with a feather quill and ink. The work takes many months.
 - **In a special script.** The letters are written in *ktav Ashurit* (כְּתָב אַשּׁוּרִית), the traditional Hebrew script, and each letter must follow rules set by Jewish law.
 - **Every letter counts.** A scroll contains 304,805 letters. One missing or damaged letter can make a scroll unfit for use until it is fixed.
 - **A trained craftsman.** A sofer must study and train intensively before qualifying. Scribes of Torah scrolls, tefillin and mezuzahs have always held a place of honor in the community.
 
-Chabad.org mentions great scribes through history: Moses, who according to tradition wrote 13 Torah scrolls on the day he died; Ezra, whose scroll was kept in the Temple; and Maimonides, who describes writing his own scroll in his *Mishneh Torah*. A printed Torah book is useful for study, but a scroll must be handwritten to be used for the public reading. For a single letter in the scroll, see [A Letter in a Torah](/learn/letter-in-a-torah).
+Jewish tradition mentions great scribes through history: Moses, who according to tradition wrote 13 Torah scrolls on the day he died; Ezra, whose scroll was kept in the Temple; and Maimonides, who describes writing his own scroll in his *Mishneh Torah*. A printed Torah book is useful for study, but a scroll must be handwritten to be used for the public reading. For a single letter in the scroll, see [A Letter in a Torah](/learn/letter-in-a-torah).
 
 ## How it is read
 

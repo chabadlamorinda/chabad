@@ -9,7 +9,7 @@ Rabbi Yochanan ben Zakkai (רבן יוחנן בן זכאי) was the leading sage
 
 ## Jerusalem under siege
 
-According to Chabad.org, the city in those years was torn apart from the inside. While the Roman general Vespasian conquered the north, Jewish factions in Jerusalem fought each other. The Zealots wanted all-out war and rejected the Sages' proposal to send a peace delegation. Some groups even burned the city's stores of food, which had been stocked for a long siege, to force the people to fight. They also stopped anyone from leaving.
+According to the sources, the city in those years was torn apart from the inside. While the Roman general Vespasian conquered the north, Jewish factions in Jerusalem fought each other. The Zealots wanted all-out war and rejected the Sages' proposal to send a peace delegation. Some groups even burned the city's stores of food, which had been stocked for a long siege, to force the people to fight. They also stopped anyone from leaving.
 
 Rabbi Yochanan, the leading sage of his time, saw that Jerusalem was doomed. He wanted Torah scholarship to live on somewhere else.
 
@@ -19,11 +19,11 @@ Because the city was sealed, Rabbi Yochanan pretended to be dead, and his discip
 
 Impressed, Vespasian offered him any reward. Rabbi Yochanan made three requests. The main one was: spare Yavneh and its Torah sages.
 
-Chabad.org adds a thought-provoking note. Rabbi Yochanan did not ask for Jerusalem itself to be spared, apparently because he thought such a request would be refused. The Talmud discusses whether he chose wisely. Ask the Rabbi if you would like to explore that discussion.
+Here is a thought-provoking note. Rabbi Yochanan did not ask for Jerusalem itself to be spared, apparently because he thought such a request would be refused. The Talmud discusses whether he chose wisely. Ask the Rabbi if you would like to explore that discussion.
 
 ## What happened at Yavneh
 
-Yavneh became the new home of the [Sanhedrin](/learn/the-sanhedrin) and a spiritual center for the Jewish people. Chabad.org describes what Rabbi Yochanan and his colleagues did there:
+Yavneh became the new home of the [Sanhedrin](/learn/the-sanhedrin) and a spiritual center for the Jewish people. Tradition describes what Rabbi Yochanan and his colleagues did there:
 
 - He founded a major yeshiva and re-established the Sanhedrin, giving it equal standing with the earlier Great Sanhedrin so its rulings would be respected.
 - The court recorded the laws of the Temple service and its layout, because eyewitnesses were passing away.
@@ -35,7 +35,7 @@ Rabbi Yochanan trained Rabban Gamliel, the rightful heir of the family of Hillel
 
 ## Judaism after the Temple
 
-Chabad.org makes an important point. Torah law did not change after the destruction, and observance continued, even without the sacrifices. What changed was where the nation's life was centered: in the study hall, the synagogue and the home. This was not the first time Jews rebuilt after a loss. See [Ezra and Nehemiah](/learn/ezra-and-nehemiah) for the story of the return from Babylon, and [the Holy Temple](/learn/the-holy-temple) for what the Temple meant.
+An important point: Torah law did not change after the destruction, and observance continued, even without the sacrifices. What changed was where the nation's life was centered: in the study hall, the synagogue and the home. This was not the first time Jews rebuilt after a loss. See [Ezra and Nehemiah](/learn/ezra-and-nehemiah) for the story of the return from Babylon, and [the Holy Temple](/learn/the-holy-temple) for what the Temple meant.
 
 ## What it teaches us
 
@@ -56,7 +56,7 @@ Because the Zealots would not let anyone leave, he pretended to die, and his dis
 Torah law and observance continued, centered on the study hall, prayer and the home. Yavneh's court also organized prayer and set customs that keep the Temple's memory alive.
 
 ### Where was Yavneh?
-Yavneh was a town in the Land of Israel that became the seat of the Sanhedrin after the Temple's destruction. Chabad.org tells how the Sanhedrin later moved on to other towns.
+Yavneh was a town in the Land of Israel that became the seat of the Sanhedrin after the Temple's destruction. Tradition tells how the Sanhedrin later moved on to other towns.
 
 ### Where can I study Torah near Lafayette, Moraga and Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242 or see [adult education](/programs/adult-education).

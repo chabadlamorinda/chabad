@@ -19,7 +19,7 @@ Children living in America hear English all day at school, and Hebrew can slip a
 
 ## Which Hebrew? Modern and the Holy Tongue
 
-Chabad.org explains that Jewish tradition calls the Hebrew of the Torah and prayers Lashon HaKodesh (לְשׁוֹן הַקֹּדֶשׁ), the Holy Tongue, and that modern Hebrew is usually called Ivrit. Both matter. Everyday Hebrew helps a child talk with family, and the Hebrew of the siddur and the Torah opens the door to Jewish life. Chabad.org also notes that the sages advise teaching children to understand Hebrew, not only to read it. Read more in [Lashon HaKodesh](/learn/lashon-hakodesh) and [Hebrew Phrases](/learn/hebrew-phrases).
+Jewish tradition calls the Hebrew of the Torah and prayers Lashon HaKodesh (לְשׁוֹן הַקֹּדֶשׁ), the Holy Tongue, and that modern Hebrew is usually called Ivrit. Both matter. Everyday Hebrew helps a child talk with family, and the Hebrew of the siddur and the Torah opens the door to Jewish life. The sages also advise teaching children to understand Hebrew, not only to read it. Read more in [Lashon HaKodesh](/learn/lashon-hakodesh) and [Hebrew Phrases](/learn/hebrew-phrases).
 
 ## More than language: the Jewish year in a new place
 
@@ -48,7 +48,7 @@ Speak Hebrew at home, read and sing in Hebrew every day, and arrange regular vid
 Yes. Children surrounded by English at school often answer in it. Keep speaking Hebrew to them, and they will understand and gradually speak more.
 
 ### Should my child learn Hebrew reading and prayer too?
-Yes, the Hebrew of the siddur opens Jewish life. Chabad.org notes that understanding the words is as important as reading them, so teach the meaning together.
+Yes, the Hebrew of the siddur opens Jewish life. Understanding the words is as important as reading them, so teach the meaning together.
 
 ### What is the difference between Ivrit and Lashon HaKodesh?
 Ivrit is modern spoken Hebrew, and Lashon HaKodesh, "the Holy Tongue," is the classical Hebrew of the Torah and prayers. They are closely related and a child can learn both.

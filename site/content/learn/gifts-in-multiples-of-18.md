@@ -11,11 +11,11 @@ Many Jews give money, gifts and charity in multiples of 18, such as 18, 36, 54 o
 
 Every Hebrew letter has a number value. The letters of *chai* are chet (8) and yud (10), and together they make 18. Giving in multiples of 18 therefore says, in a quiet way, "may you live."
 
-Chabad.org explains that it is not clear when or where the custom began. One classic example is from the 1700s, when the Baal Shem Tov, the founder of Chassidism, repeatedly told people to give in multiples of *chai*. For more on the symbol itself, see [Chai: the Jewish symbol for life](/learn/chai-symbol).
+Chassidic teaching explains that it is not clear when or where the custom began. One classic example is from the 1700s, when the Baal Shem Tov, the founder of Chassidism, repeatedly told people to give in multiples of *chai*. For more on the symbol itself, see [Chai: the Jewish symbol for life](/learn/chai-symbol).
 
 ## Why is 18 a special number?
 
-The Talmud and Midrash point to many things that come in 18. A few that Chabad.org mentions:
+The Talmud and Midrash point to many things that come in 18. A few that Jewish tradition mentions:
 
 - Abraham, Isaac and Jacob are named together 18 times in the Torah.
 - G-d's name appears 18 times in the Shema.
@@ -23,17 +23,17 @@ The Talmud and Midrash point to many things that come in 18. A few that Chabad.o
 - There are 18 vertebrae in the spine.
 - The daily Amidah prayer was set at 18 blessings.
 
-Chabad.org also notes a Kabbalistic hint: the words *chesed* (kindness), *osher* (wealth) and *kofer* (atonement) each add up to 18 when the zeroes are dropped. These are three reasons people give charity: to receive G-d's kindness, to atone, and to merit a livelihood.
+The tradition also notes a Kabbalistic hint: the words *chesed* (kindness), *osher* (wealth) and *kofer* (atonement) each add up to 18 when the zeroes are dropped. These are three reasons people give charity: to receive G-d's kindness, to atone, and to merit a livelihood.
 
 ## How much should I give?
 
-Chabad.org gives no dollar amounts, and neither do we. The principle is simple: give as much as you can, in a way that is comfortable for you. Chabad.org also says the Rebbe sometimes advised other amounts depending on the situation, so there is no rule against giving a different sum. If the number is not a multiple of 18, the gift is still a blessing.
+The tradition names no dollar amounts, and neither do we. The principle is simple: give as much as you can, in a way that is comfortable for you. Jewish tradition also says the Rebbe sometimes advised other amounts depending on the situation, so there is no rule against giving a different sum. If the number is not a multiple of 18, the gift is still a blessing.
 
 If you want to follow the custom, pick the multiple that fits your budget. For example, a gift of 36 or 54 is simply two or three times *chai*. These are examples of the idea, not a recommendation of what to spend.
 
 ## By occasion
 
-**Bar or bat mitzvah.** Chabad.org suggests asking the parents about the child's interests, because the best gift is personal. Traditional choices are a prayer book or a Bible, a kiddush cup, a *yad* (Torah pointer), a candlestick (often given to a bat mitzvah girl) or a *tzedakah* box. Cash or a gift certificate in a multiple of 18 is also very common. If the celebration is on Shabbat, do not carry the gift to the event. Send it before or after. See [attending a bar or bat mitzvah](/learn/attending-a-bar-bat-mitzvah).
+**Bar or bat mitzvah.** The tradition suggests asking the parents about the child's interests, because the best gift is personal. Traditional choices are a prayer book or a Bible, a kiddush cup, a *yad* (Torah pointer), a candlestick (often given to a bat mitzvah girl) or a *tzedakah* box. Cash or a gift certificate in a multiple of 18 is also very common. If the celebration is on Shabbat, do not carry the gift to the event. Send it before or after. See [attending a bar or bat mitzvah](/learn/attending-a-bar-bat-mitzvah).
 
 **Wedding.** Giving in multiples of *chai* is a common way to wish the couple a long life together. See [attending a Jewish wedding](/learn/attending-a-jewish-wedding) and [Jewish gift ideas](/learn/jewish-gift-ideas).
 
@@ -46,13 +46,13 @@ The custom is most at home in *tzedakah*. Many families give charity in multiple
 ## Common questions
 
 ### Why do Jews give gifts in multiples of 18?
-Because 18 is the number value of the Hebrew word *chai*, "life," so the gift carries a wish for life and blessing. Chabad.org says it is unclear when the custom began, and that the Baal Shem Tov taught it in the 1700s.
+Because 18 is the number value of the Hebrew word *chai*, "life," so the gift carries a wish for life and blessing. Jewish tradition says it is unclear when the custom began, and that the Baal Shem Tov taught it in the 1700s.
 
 ### How much money should I give for a bar or bat mitzvah?
-Give what is comfortable for you. Chabad.org suggests no specific amount. Many people choose a multiple of 18 so the gift carries the blessing of *chai*.
+Give what is comfortable for you. The tradition suggests no specific amount. Many people choose a multiple of 18 so the gift carries the blessing of *chai*.
 
 ### Do I have to give exactly a multiple of 18?
-No. It is a custom, not a commandment. Chabad.org says the main point is to give as much as you can and to help others.
+No. It is a custom, not a commandment. Jewish tradition says the main point is to give as much as you can and to help others.
 
 ### What are good Jewish gifts besides money?
 A prayer book, a Bible, a kiddush cup, a *yad*, candlesticks or a *tzedakah* box. Choose something that fits the person's interests.

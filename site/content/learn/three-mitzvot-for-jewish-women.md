@@ -9,7 +9,7 @@ The three special mitzvot of Jewish women are lighting Shabbat and holiday candl
 
 ## Why women, and why "Chana"?
 
-Men and women are both obligated in these mitzvot, but Chabad.org explains that the woman is given precedence and carries the authority in making sure they are done. She sets the tone of the home, and these mitzvot are about the home: light, food and family.
+Men and women are both obligated in these mitzvot, but Chassidic teaching explains that the woman is given precedence and carries the authority in making sure they are done. She sets the tone of the home, and these mitzvot are about the home: light, food and family.
 
 The Rebbe's mother was Rebbetzin Chana Schneerson. After she passed away in 1964, the Rebbe noted that three of the mitzvah campaigns he encouraged matched the three letters of her name in Hebrew: **Chet (ח)** for challah, **Nun (נ)** for *niddah*, the family purity laws, and **Hei (ה)** for *hadlakat neirot*, candle lighting. He used this to encourage women and girls to strengthen their commitment to all three.
 
@@ -28,11 +28,11 @@ Girls can begin lighting around age three, when they can say the blessing. See [
 
 Before baking bread, a small piece of dough is separated and burned, as the Torah says: give "the first of your kneading" (Numbers 15). A piece of about an ounce is separated and said to be challah. Chabad teaching explains that it expresses that everything we have comes from G-d, and that serving Him comes first.
 
-The blessing is said only when the dough is large enough (the Chabad.org article gives 59 ounces of flour; for a smaller amount, ask the Rabbi or Rebbetzin). Read the whole procedure in [taking challah](/learn/hafrashat-challah), and see the practical steps in [baking challah](/learn/baking-challah). Chabad teaching also connects this mitzvah to keeping kosher: holiness reaches the kitchen.
+The blessing is said only when the dough is large enough (the usual measure is 59 ounces of flour; for a smaller amount, ask the Rabbi or Rebbetzin). Read the whole procedure in [taking challah](/learn/hafrashat-challah), and see the practical steps in [baking challah](/learn/baking-challah). Chabad teaching also connects this mitzvah to keeping kosher: holiness reaches the kitchen.
 
 ## 3. Family purity
 
-The laws of family purity guide a husband and wife through each month: a time of separation and a time when the wife immerses in the mikvah, after which the couple reunites. Chabad.org calls them the touchstone of Jewish life and the portal to a Jewish future. 
+The laws of family purity guide a husband and wife through each month: a time of separation and a time when the wife immerses in the mikvah, after which the couple reunites. Chassidic teaching calls them the touchstone of Jewish life and the portal to a Jewish future. 
 
 It is a private subject, best learned one-on-one. Start with [family purity](/learn/family-purity) and [the mikvah near Lafayette](/learn/mikvah-near-lafayette), then speak with the Rebbetzin.
 

@@ -9,11 +9,11 @@ Jewish tradition answers the question of work-life balance with Shabbat: one day
 
 ## Shabbat: the weekly reset
 
-Rivkah Slonim, writing on Chabad.org, describes how for about twenty-five hours each week, from Friday sunset to Saturday night, she does not write, use electricity or the phone, or cook. She explains that the commandment of six days of work and one of rest is a single idea: the workdays give Shabbat its meaning, and Shabbat gives the workdays their purpose. She also writes that being absorbed in work can make it hard to remember our source and our purpose, and that Shabbat is a regular pause to reconnect with our inner selves. Her description of lighting candles and putting the phone away is a familiar picture to many people in Lafayette, Moraga and Orinda who feel always "on." Read more in [Shabbat for beginners](/learn/shabbat-for-beginners) and [Shabbat for Lamorinda commuters](/learn/shabbat-for-lamorinda-commuters).
+Rivkah Slonim, writing about her own Shabbat, describes how for about twenty-five hours each week, from Friday sunset to Saturday night, she does not write, use electricity or the phone, or cook. She explains that the commandment of six days of work and one of rest is a single idea: the workdays give Shabbat its meaning, and Shabbat gives the workdays their purpose. She also writes that being absorbed in work can make it hard to remember our source and our purpose, and that Shabbat is a regular pause to reconnect with our inner selves. Her description of lighting candles and putting the phone away is a familiar picture to many people in Lafayette, Moraga and Orinda who feel always "on." Read more in [Shabbat for beginners](/learn/shabbat-for-beginners) and [Shabbat for Lamorinda commuters](/learn/shabbat-for-lamorinda-commuters).
 
 ## Prepare during the week
 
-A Chabad.org article for a working professional who wanted to keep Shabbat but could not leave her job early on Fridays makes one main point: prepare for Shabbat during the week. Its suggestions include:
+Advice for a working professional who wanted to keep Shabbat but could not leave her job early on Fridays makes one main point: prepare for Shabbat during the week. Its suggestions include:
 
 - Baking challah early in the week, or cooking ahead and freezing.
 - Using a slow cooker so that a hot meal is ready when you get home.
@@ -25,7 +25,7 @@ See also [telling your boss you keep Shabbat](/learn/telling-your-boss-you-keep-
 
 ## Effort with trust
 
-Chabad.org presents a classic text on trust in G-d which teaches that trust does not mean passivity. A person must still make honest, reasonable effort at livelihood and daily affairs, and rely on G-d for the outcome. For a professional this is a relief: you can give your best, without carrying the idea that everything depends on you alone. For worry that will not let go, read [anxiety and worry](/learn/anxiety-and-worry) and [bitachon](/learn/bitachon).
+Chassidic teaching draws on a classic text on trust in G-d which teaches that trust does not mean passivity. A person must still make honest, reasonable effort at livelihood and daily affairs, and rely on G-d for the outcome. For a professional this is a relief: you can give your best, without carrying the idea that everything depends on you alone. For worry that will not let go, read [anxiety and worry](/learn/anxiety-and-worry) and [bitachon](/learn/bitachon).
 
 ## Work as a mission
 

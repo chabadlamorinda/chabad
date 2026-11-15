@@ -9,19 +9,19 @@ Adon Olam (אֲדוֹן עוֹלָם) means "Lord of the Universe," and it is a 
 
 ## What Adon Olam is
 
-Most Jews know the tune of Adon Olam before they know the words, because it is sung in so many different melodies, from slow and prayerful to lively and joyous. According to Chabad.org, the hymn praises G-d as the eternal Creator and Guide, whose greatness does not depend on the world. It also presents Him as a personal refuge who supports us in hard times, so that we need not be afraid.
+Most Jews know the tune of Adon Olam before they know the words, because it is sung in so many different melodies, from slow and prayerful to lively and joyous. According to Jewish tradition, the hymn praises G-d as the eternal Creator and Guide, whose greatness does not depend on the world. It also presents Him as a personal refuge who supports us in hard times, so that we need not be afraid.
 
 The opening stanza is tied to the three tenses of G-d's Name: He was, He is and He will be. That is why the hymn is recited at the start of prayer: it sets in our minds who it is we are about to speak to, and that thought stays with us through the whole service.
 
 ## Who wrote Adon Olam?
 
-Nobody knows. Chabad.org lists several candidates, among them Shlomo ibn Gabirol (1021 to 1058), who is often credited, though no solid evidence is known, as well as geonim such as Rav Sherira Gaon or Rav Hai Gaon, and Abraham ibn Ezra, based on the poem's style and early appearance in Western Europe.
+Nobody knows. Jewish teaching lists several candidates, among them Shlomo ibn Gabirol (1021 to 1058), who is often credited, though no solid evidence is known, as well as geonim such as Rav Sherira Gaon or Rav Hai Gaon, and Abraham ibn Ezra, based on the poem's style and early appearance in Western Europe.
 
-The earliest dated reference is in the book Etz Chaim, completed in London in 1287, which mentions the hymn by name without printing it, suggesting it was already well known. Chabad.org adds that Adon Olam did not become popular because of catchy tunes. A 16th-century source, Matteh Moshe, cites a tradition that saying it with real intention helps our prayers be heard.
+The earliest dated reference is in the book Etz Chaim, completed in London in 1287, which mentions the hymn by name without printing it, suggesting it was already well known. The tradition adds that Adon Olam did not become popular because of catchy tunes. A 16th-century source, Matteh Moshe, cites a tradition that saying it with real intention helps our prayers be heard.
 
 ## Where it appears in the siddur
 
-Practice varies widely. Many communities say it at the start of the morning prayers, before Shacharit. Some say it at the end of services, and some say it around Maariv or Selichot. Chabad.org notes that many Ashkenazic communities in Israel end Friday night services with it, and Sephardic and Yemenite communities end Shabbat morning services with it. If you open a siddur, look at the beginning of the morning prayers, near [Modeh Ani](/learn/modeh-ani) and the [morning blessings](/learn/morning-blessings), and at the end of services. In [the siddur](/learn/siddur) you will find the place your community uses.
+Practice varies widely. Many communities say it at the start of the morning prayers, before Shacharit. Some say it at the end of services, and some say it around Maariv or Selichot. Jewish sources notes that many Ashkenazic communities in Israel end Friday night services with it, and Sephardic and Yemenite communities end Shabbat morning services with it. If you open a siddur, look at the beginning of the morning prayers, near [Modeh Ani](/learn/modeh-ani) and the [morning blessings](/learn/morning-blessings), and at the end of services. In [the siddur](/learn/siddur) you will find the place your community uses.
 
 ## A closer look at its message
 
@@ -32,7 +32,7 @@ Practice varies widely. Many communities say it at the start of the morning pray
 
 ## A song for the hardest moments
 
-Because of its closing verses, Adon Olam is also a song of comfort. Chabad.org's guide to the final moments of life lists it within the Viduy (confession) prayers and advises that, if there is not time for the full Viduy, one should say at least from Adon Olam onward. The same stanza says that G-d is the speaker's Redeemer and that one will not fear, since G-d is with them. If you or a family member are in this situation, please call the Rabbi right away; you can also read more in [hospice and end of life care](/learn/hospice-and-end-of-life-care).
+Because of its closing verses, Adon Olam is also a song of comfort. The Jewish tradition for the final moments of life lists it within the Viduy (confession) prayers and advises that, if there is not time for the full Viduy, one should say at least from Adon Olam onward. The same stanza says that G-d is the speaker's Redeemer and that one will not fear, since G-d is with them. If you or a family member are in this situation, please call the Rabbi right away; you can also read more in [hospice and end of life care](/learn/hospice-and-end-of-life-care).
 
 ## How to learn it
 

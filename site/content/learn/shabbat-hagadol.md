@@ -9,7 +9,7 @@ Shabbat HaGadol (שבת הגדול), "the Great Shabbat," is the Shabbat right b
 
 ## Why is it called "the Great Shabbat"?
 
-Chabad.org gives several explanations, and each adds a layer:
+Jewish tradition gives several explanations, and each adds a layer:
 
 - **A great miracle.** The Talmud says that a "great miracle" happened on the 10th of Nissan, which was a Shabbat in the year of the Exodus. Chassidic teaching describes it as darkness turning into light, among the greatest miracles the Jewish people witnessed.
 - **Mature faith.** On that day the Jewish people were told to set aside a lamb for the Passover offering. The lamb was a sacred animal to the Egyptians. When Egyptians asked what they were doing, the Jews openly said they were preparing an offering to G-d. They acted like grown-ups ("gedolim"), not children who hide the truth.
@@ -18,18 +18,18 @@ Chabad.org gives several explanations, and each adds a layer:
 
 ## The miracle of the 10th of Nissan
 
-According to the account Chabad.org retells, the Jews took a lamb on the 10th of Nissan. When the firstborn of Egypt asked what it was for, they answered that G-d would strike the Egyptian firstborn. The firstborn pressed their parents and Pharaoh to let the Jews go, and when they refused, the firstborn fought against them. Psalm 136 alludes to this ("who struck Egypt through their firstborn"). The lambs were slaughtered on the 14th and the Jews left Egypt the next morning, the 15th. You can read the whole story in [the Exodus story](/learn/exodus-story) and about the month in [Nissan](/learn/nissan).
+According to a traditional account, the Jews took a lamb on the 10th of Nissan. When the firstborn of Egypt asked what it was for, they answered that G-d would strike the Egyptian firstborn. The firstborn pressed their parents and Pharaoh to let the Jews go, and when they refused, the firstborn fought against them. Psalm 136 alludes to this ("who struck Egypt through their firstborn"). The lambs were slaughtered on the 14th and the Jews left Egypt the next morning, the 15th. You can read the whole story in [the Exodus story](/learn/exodus-story) and about the month in [Nissan](/learn/nissan).
 
 ## What do we do on Shabbat HaGadol?
 
 1. **Hear the rabbi's talk.** It is customary for the community's rabbi to give a lecture on the laws of Passover and their meaning. Many people use it to ask practical questions about cleaning and Seder. In Lafayette, Moraga, Orinda and across the East Bay, this is a good time to call the Rabbi with questions about [chametz](/learn/chametz).
 2. **Read part of the Haggadah.** It is customary to read the section from "Avadim hayinu" ("We were slaves") up to "lechaper al kol avonoteinu" ("to atone for all our sins"), usually in the afternoon. It is a kind of rehearsal for the Seder. See [the Haggadah](/learn/haggadah).
-3. **The haftarah.** The special haftarah is from the prophet Malachi and ends with the promise that G-d will send Elijah the prophet before the great day, and that the hearts of parents and children will be turned toward each other. Chabad.org notes that Chabad reads it only when Shabbat HaGadol falls on the day before Passover, while other communities read it every year. Ask the Rabbi what your synagogue does. Read about [Elijah](/learn/elijah-the-prophet).
+3. **The haftarah.** The special haftarah is from the prophet Malachi and ends with the promise that G-d will send Elijah the prophet before the great day, and that the hearts of parents and children will be turned toward each other. Chassidic teaching notes that Chabad reads it only when Shabbat HaGadol falls on the day before Passover, while other communities read it every year. Ask the Rabbi what your synagogue does. Read about [Elijah](/learn/elijah-the-prophet).
 4. **Keep preparing.** The week ahead is for cleaning, [selling your chametz](/learn/selling-your-chametz) and planning the Seder.
 
 ## What does it teach us?
 
-The first great Shabbat was a day when ordinary people showed courage and faith before they had seen any freedom. Chassidic teaching sees this as the secret of Passover: we do not wait to feel ready, we begin. The haftarah adds a second thought: freedom is also about family, about parents and children turning toward each other. That is why the Seder is built around children's questions. See [Passover for beginners](/learn/passover-for-beginners).
+The first great Shabbat was a day when ordinary people showed courage and faith before they had seen any freedom. Jewish tradition sees this as the secret of Passover: we do not wait to feel ready, we begin. The haftarah adds a second thought: freedom is also about family, about parents and children turning toward each other. That is why the Seder is built around children's questions. See [Passover for beginners](/learn/passover-for-beginners).
 
 ## Take the next step
 
@@ -43,7 +43,7 @@ The first great Shabbat was a day when ordinary people showed courage and faith 
 Shabbat HaGadol is the Shabbat before Passover, called "the Great Shabbat" after the miracle of the 10th of Nissan in Egypt.
 
 ### Why is it called the Great Shabbat?
-Chabad.org offers several reasons: the great miracle of the lamb, the mature faith the Jews showed, that Shabbat is greater than the festival day in the same week, and the greatness of acting on a command.
+The tradition offers several reasons: the great miracle of the lamb, the mature faith the Jews showed, that Shabbat is greater than the festival day in the same week, and the greatness of acting on a command.
 
 ### What do you do on Shabbat HaGadol?
 Many hear the rabbi's talk on Passover laws, read part of the Haggadah ("We were slaves" through "to atone for all our sins") and continue Passover preparations.

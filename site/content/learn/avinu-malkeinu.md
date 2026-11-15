@@ -21,7 +21,7 @@ Our teachers draw a lesson from it. Rabbi Akiva was known for forgiving those wh
 
 ## Why both "Father" and "King"?
 
-Chabad.org explains that each name alone is incomplete:
+Jewish tradition explains that each name alone is incomplete:
 
 - **A Father** loves us and forgives us as His children. But if we thought of G-d only as a father, we might feel we can ignore His instructions.
 - **A King** is all-powerful and sets the rules that direct our lives. But if we thought of G-d only as a king, we might feel He is distant and not personally invested in us.

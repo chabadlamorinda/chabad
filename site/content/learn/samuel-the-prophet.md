@@ -13,7 +13,7 @@ Samuel was born in Ramah to Elkanah, a respected Levite, and to Hannah, who had 
 
 ## Growing up in Shiloh
 
-When he was young, Hannah brought Samuel to Shiloh to learn Torah under Eli the High Priest. Chabad.org notes that Eli's sons did not follow the Torah, and that Shiloh was later destroyed by the Philistines. Samuel grew up in the Sanctuary, serving and learning.
+When he was young, Hannah brought Samuel to Shiloh to learn Torah under Eli the High Priest. Jewish tradition notes that Eli's sons did not follow the Torah, and that Shiloh was later destroyed by the Philistines. Samuel grew up in the Sanctuary, serving and learning.
 
 ## "Here I am"
 
@@ -29,7 +29,7 @@ The people demanded a king like other nations. Samuel was reluctant, because G-d
 
 ## His yahrzeit
 
-Samuel died in Ramah, where he was buried, and the whole nation mourned him. Chabad.org gives his yahrzeit as 28 Iyar.
+Samuel died in Ramah, where he was buried, and the whole nation mourned him. Jewish tradition gives his yahrzeit as 28 Iyar.
 
 ## What we can learn
 
@@ -52,7 +52,7 @@ After he was weaned, Hannah brought him to Shiloh to learn Torah with Eli the Hi
 He anointed Saul as the first king, and later David.
 
 ### When is Samuel's yahrzeit?
-Chabad.org gives it as 28 Iyar.
+The tradition gives it as 28 Iyar.
 
 ### Where can I study the Prophets near Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda at 925-384-7242 about classes.

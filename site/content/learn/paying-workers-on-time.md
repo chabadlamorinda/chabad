@@ -13,7 +13,7 @@ Many families in Lafayette, Moraga and Orinda hire help every week, so you may b
 
 The sources are Leviticus 19:13 ("The wages of a hired worker shall not remain with you until morning") and Deuteronomy 24:15 ("On the same day you shall give him his wages"). The Hebrew name is bal talin (בל תלין), "do not leave overnight."
 
-According to Chabad.org, the timing depends on the worker's schedule:
+According to Jewish law, the timing depends on the worker's schedule:
 
 - A **day worker** who finishes at the end of the day must be paid before the next dawn.
 - A **night worker** who finishes at daybreak has until the following nightfall.

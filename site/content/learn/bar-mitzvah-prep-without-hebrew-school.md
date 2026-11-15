@@ -9,7 +9,7 @@ Yes, a child with little or no Hebrew school can have a meaningful Bar or Bat Mi
 
 ## First, take a breath
 
-Many families in Lafayette, Moraga and Orinda come to this late: the date is near, and the child has not read Hebrew before. That is common, and it is not too late. Chabad.org presents the day as the beginning of an active Jewish life, not a test of years of study. The Bar or Bat Mitzvah itself happens automatically; preparation is about making it meaningful. See [Bar Mitzvah](/learn/bar-mitzvah) and [Bat Mitzvah](/learn/bat-mitzvah).
+Many families in Lafayette, Moraga and Orinda come to this late: the date is near, and the child has not read Hebrew before. That is common, and it is not too late. Jewish tradition presents the day as the beginning of an active Jewish life, not a test of years of study. The Bar or Bat Mitzvah itself happens automatically; preparation is about making it meaningful. See [Bar Mitzvah](/learn/bar-mitzvah) and [Bat Mitzvah](/learn/bat-mitzvah).
 
 ## What matters most
 
@@ -34,7 +34,7 @@ A full Torah reading or haftarah is wonderful but optional. See [learning to cha
 
 The best motivation is a parent who also learns. Sit down together over the alphabet. Many parents discover that they, too, never had a Jewish education, and that learning with their child is a gift. If a parent wants to do this too, see [Hebrew reading for adults](/learn/hebrew-reading-for-adults) and [adult Bar and Bat Mitzvah](/learn/adult-bar-bat-mitzvah).
 
-For girls, Chabad.org notes that local Chabad centers offer pre-Bat Mitzvah classes and a Bat Mitzvah Club that meets for events and activities, and the site's program page says that girls at Chabad of Lamorinda join the Bat Mitzvah Club. See the [Bar and Bat Mitzvah program](/programs/bar-bat-mitzvah). If you also want your child to learn alongside peers, ask about [Hebrew school](/programs/hebrew-school).
+For girls, Jewish teaching notes that local Chabad centers offer pre-Bat Mitzvah classes and a Bat Mitzvah Club that meets for events and activities, and the site's program page says that girls at Chabad of Lamorinda join the Bat Mitzvah Club. See the [Bar and Bat Mitzvah program](/programs/bar-bat-mitzvah). If you also want your child to learn alongside peers, ask about [Hebrew school](/programs/hebrew-school).
 
 ## When there is less time, or a different need
 

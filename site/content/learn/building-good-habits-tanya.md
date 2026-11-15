@@ -11,7 +11,7 @@ Rabbi Shneur Zalman of Liadi did not write a "habit book" in the modern sense, b
 
 ## Three ways to act: thought, speech and deed
 
-Chapter 4, as presented on Chabad.org, teaches that the soul has three "garments," its instruments of expression: thought, speech and action. Doing a physical mitzvah clothes the soul in action; learning Torah clothes it in speech; understanding Torah clothes it in thought.
+Chapter 4 of the Tanya teaches that the soul has three "garments," its instruments of expression: thought, speech and action. Doing a physical mitzvah clothes the soul in action; learning Torah clothes it in speech; understanding Torah clothes it in thought.
 
 For a habit, this means you have three places to build it. A good habit can be something you do (giving charity, lighting Shabbat candles), something you say (a blessing, a kind word), or something you think (a few moments of gratitude). The more of the three the better, since each carries goodness into your life.
 

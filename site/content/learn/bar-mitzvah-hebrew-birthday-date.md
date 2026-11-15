@@ -26,13 +26,13 @@ Families in Lafayette, Moraga and Orinda can also save a child's Hebrew birthday
 Most children have a simple date. A few do not, and these are the ones to ask about:
 
 - **Born near sunset.** If you do not know whether the birth was before or after nightfall, or it was during twilight, the Rabbi will advise which date to use.
-- **Born in Adar, or the Bar Mitzvah year is a leap year.** A Jewish leap year has two months of Adar. Where a birthday in Adar meets a leap year, practice depends on the details; Chabad.org explains the rules at length. Please ask the Rabbi. See [the Jewish leap year](/learn/jewish-leap-year-and-calendar).
+- **Born in Adar, or the Bar Mitzvah year is a leap year.** A Jewish leap year has two months of Adar. Where a birthday in Adar meets a leap year, practice depends on the details; Jewish law explains the rules at length. Please ask the Rabbi. See [the Jewish leap year](/learn/jewish-leap-year-and-calendar).
 - **Born on the 30th of Cheshvan or Kislev.** Some years those months have only 29 days, so the date has to move. Ask the Rabbi which day applies.
 - **Born abroad or on a flight.** The place of birth can matter. Ask.
 
 ## The date and the celebration are two things
 
-The child becomes Bar or Bat Mitzvah on the Hebrew birthday. The family then chooses a day for the service and celebration: a Monday or Thursday when the Torah is read, a Shabbat, or another day close by. Many choose the Shabbat on or after the birthday, and some travel to Israel. Chabad.org notes that the ideal first aliyah is a Monday or Thursday morning, or a Shabbat afternoon, and the Rabbi can help you choose. Read the [full timeline](/learn/bar-bat-mitzvah-timeline) to plan backward from the date.
+The child becomes Bar or Bat Mitzvah on the Hebrew birthday. The family then chooses a day for the service and celebration: a Monday or Thursday when the Torah is read, a Shabbat, or another day close by. Many choose the Shabbat on or after the birthday, and some travel to Israel. The halacha notes that the ideal first aliyah is a Monday or Thursday morning, or a Shabbat afternoon, and the Rabbi can help you choose. Read the [full timeline](/learn/bar-bat-mitzvah-timeline) to plan backward from the date.
 
 ## Common questions
 

@@ -13,7 +13,7 @@ A mikvah is a pool built according to Jewish law, filled with natural water, in 
 
 ## Before Yom Kippur
 
-Chabad.org describes it as a widely accepted custom for men to immerse in a mikvah on the day before Yom Kippur, to honor the sanctity of the day and to repent and be purified. Today it is among the most widely kept mikvah customs of the year, and many men who go at no other time go then. The custom is not to say a blessing on this immersion. See [the day before Yom Kippur](/learn/erev-yom-kippur) and [Yom Kippur for beginners](/learn/yom-kippur-for-beginners).
+It is a widely accepted custom for men to immerse in a mikvah on the day before Yom Kippur, to honor the sanctity of the day and to repent and be purified. Today it is among the most widely kept mikvah customs of the year, and many men who go at no other time go then. The custom is not to say a blessing on this immersion. See [the day before Yom Kippur](/learn/erev-yom-kippur) and [Yom Kippur for beginners](/learn/yom-kippur-for-beginners).
 
 ## Every day: the Chassidic custom
 

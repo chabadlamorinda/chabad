@@ -9,7 +9,7 @@ At a Bar or Bat Mitzvah, grandparents are the living link in the chain from one 
 
 ## Why grandparents matter on this day
 
-Judaism sees the Jewish people as a chain: parents teach children, who teach their children. A Bar or Bat Mitzvah is the moment a link is joined. Chabad.org's guide to the Bar Mitzvah speech suggests the child give special thanks to the grandparents, who likely made sacrifices to hold on to their Jewish identity and pass it on to their children and grandchildren. Many grandparents did exactly that, sometimes in difficult times and places. See [Jewish grandparents](/learn/jewish-grandparents).
+Judaism sees the Jewish people as a chain: parents teach children, who teach their children. A Bar or Bat Mitzvah is the moment a link is joined. A common suggestion for the Bar Mitzvah speech is that the child give special thanks to the grandparents, who likely made sacrifices to hold on to their Jewish identity and pass it on to their children and grandchildren. Many grandparents did exactly that, sometimes in difficult times and places. See [Jewish grandparents](/learn/jewish-grandparents).
 
 ## Honors at the service
 
@@ -41,7 +41,7 @@ If the family invites you to speak, keep it to a minute or two.
 
 ## Meaningful gifts
 
-Chabad.org mentions books of Jewish learning, ritual items and gifts of money, often in multiples of 18, the numerical value of *chai*, "life." Parents or grandparents often give a girl her first Shabbat candlestick when she starts to light. For a boy, a pair of tefillin is the classic gift; talk to the parents before buying, so there are not two pairs, and read [buying tefillin](/learn/buying-tefillin). See also [gifts in multiples of 18](/learn/gifts-in-multiples-of-18) and [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles).
+Jewish tradition mentions books of Jewish learning, ritual items and gifts of money, often in multiples of 18, the numerical value of *chai*, "life." Parents or grandparents often give a girl her first Shabbat candlestick when she starts to light. For a boy, a pair of tefillin is the classic gift; talk to the parents before buying, so there are not two pairs, and read [buying tefillin](/learn/buying-tefillin). See also [gifts in multiples of 18](/learn/gifts-in-multiples-of-18) and [girls lighting Shabbat candles](/learn/girls-lighting-shabbat-candles).
 
 ## If you live far away
 

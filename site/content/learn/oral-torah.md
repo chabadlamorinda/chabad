@@ -9,15 +9,15 @@ The Oral Torah (תּוֹרָה שֶׁבְּעַל פֶּה, Torah shebe'al peh) 
 
 ## What is the Oral Torah?
 
-In its narrow sense, "Torah" means the Five Books of Moses, the Written Torah. Chabad.org explains that the Written Torah is often brief and open to more than one reading, and so it was given together with an oral explanation that supplies its full meaning. The Oral Torah includes the detailed instructions for carrying out the commandments, the rules of interpretation, and later laws and accepted customs.
+In its narrow sense, "Torah" means the Five Books of Moses, the Written Torah. Jewish tradition explains that the Written Torah is often brief and open to more than one reading, and so it was given together with an oral explanation that supplies its full meaning. The Oral Torah includes the detailed instructions for carrying out the commandments, the rules of interpretation, and later laws and accepted customs.
 
-Maimonides, quoted on Chabad.org, taught that the commandments given at Sinai came with their interpretation: the "Torah" is the Written Torah and the "mitzvah" is what we call the Oral Torah. See [the Torah](/learn/torah), [Tanach](/learn/tanach) and [Moses](/learn/moses).
+Maimonides, taught that the commandments given at Sinai came with their interpretation: the "Torah" is the Written Torah and the "mitzvah" is what we call the Oral Torah. See [the Torah](/learn/torah), [Tanach](/learn/tanach) and [Moses](/learn/moses).
 
 ## Examples a beginner can grasp right away
 
 Think of the instructions that the Written Torah gives only in a line or two:
 
-- **Tefillin.** The Torah says to bind the words on your arm and between your eyes. Chabad.org notes that the written text does not say how to make tefillin. The details, such as what they are made of and what is written inside, come from the oral tradition. See [tefillin](/learn/tefillin).
+- **Tefillin.** The Torah says to bind the words on your arm and between your eyes. The written text does not say how to make tefillin. The details, such as what they are made of and what is written inside, come from the oral tradition. See [tefillin](/learn/tefillin).
 - **Circumcision.** The Torah commands it, but how to do it is learned from the oral tradition. See [brit milah](/learn/brit-milah).
 - **The Four Kinds on Sukkot.** The Torah names plants to take on Sukkot, but which exact species is explained by the oral tradition. See [the four kinds](/learn/four-kinds).
 
@@ -25,13 +25,13 @@ The idea is simple: a book cannot answer every question. Someone must show you.
 
 ## The chain of transmission
 
-Chabad.org describes the chain: Moses taught Joshua, and the teaching passed on to the leaders and sages of each generation. The Torah itself tells the people to follow the instructions of the sages in each generation (Deuteronomy 17:10 to 11). The rules by which the sages interpret the Torah are also part of what was given at Sinai.
+The chain is this: Moses taught Joshua, and the teaching passed on to the leaders and sages of each generation. The Torah itself tells the people to follow the instructions of the sages in each generation (Deuteronomy 17:10 to 11). The rules by which the sages interpret the Torah are also part of what was given at Sinai.
 
 Along the way came great teachers such as [Hillel and Shammai](/learn/hillel-and-shammai) and [Rabbi Akiva](/learn/rabbi-akiva).
 
 ## Why it was not written at first
 
-According to Chabad.org, for many generations only the written text, the twenty-four books of the Tanach, was written. The Oral Torah was taught from teacher to student. The reasons given include:
+According to tradition, for many generations only the written text, the twenty-four books of the Tanach, was written. The Oral Torah was taught from teacher to student. The reasons given include:
 
 1. Written in full, the laws would fill an unmanageable number of books.
 2. Texts can be ambiguous and cause arguments; a teacher can clarify what a book leaves unclear.
@@ -46,7 +46,7 @@ Over the following centuries the sages compiled the Jerusalem Talmud, never full
 
 ## Why a living teacher still matters
 
-Chabad.org points out that even after the Oral Torah was written, Torah has stayed alive through teachers and parents. A caring person teaches by example, not only by words, in a way a page cannot. An old saying quoted there, from Rabbi Chanina, is "I learned much from my teachers, more from my colleagues, and most from my students."
+Even after the Oral Torah was written, Torah has stayed alive through teachers and parents. A caring person teaches by example, not only by words, in a way a page cannot. An old saying of Rabbi Chanina's is "I learned much from my teachers, more from my colleagues, and most from my students."
 
 In Lafayette, Moraga and Orinda, you do not have to learn alone. Whether you are a beginner or want to deepen your knowledge, learning with a teacher is exactly how the Torah was always meant to be learned.
 
@@ -65,7 +65,7 @@ Because exile and persecution made it hard to teach, Rabbi Yehudah HaNasi gather
 The Talmud records much of the Oral Torah, with the Mishnah as its core. The Oral Torah is the teaching; the Talmud is where it was written.
 
 ### Is there proof of the Oral Torah?
-Chabad.org points to the Torah's own references and the fact that the written text often lacks details, such as how to make tefillin. For deeper questions, ask the Rabbi.
+Tradition points to the Torah's own references and the fact that the written text often lacks details, such as how to make tefillin. For deeper questions, ask the Rabbi.
 
 ### Where can I study Torah with a teacher near Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242 or look at [adult education](/programs/adult-education).

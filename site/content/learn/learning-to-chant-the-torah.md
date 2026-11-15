@@ -9,7 +9,7 @@ Trope (also called cantillation or ta'amim) is the set of musical notes that tel
 
 ## What trope is
 
-The Torah scroll is written without vowels, punctuation or musical marks. The reader learns them separately. The marks in a printed Chumash (a book of the Five Books of Moses) are called ta'amim (טְעָמִים), from the word *ta'am*, "taste" or "flavor." According to Chabad.org, they guide pronunciation, emphasis and the structure of each sentence, and different communities sing them in different melodies, though the principles are the same. So there is no single "wrong" tune: ask your teacher which tradition your family will follow.
+The Torah scroll is written without vowels, punctuation or musical marks. The reader learns them separately. The marks in a printed Chumash (a book of the Five Books of Moses) are called ta'amim (טְעָמִים), from the word *ta'am*, "taste" or "flavor." According to Jewish tradition, they guide pronunciation, emphasis and the structure of each sentence, and different communities sing them in different melodies, though the principles are the same. So there is no single "wrong" tune: ask your teacher which tradition your family will follow.
 
 ## Do we need to read at all?
 
@@ -19,7 +19,7 @@ No. Our [Bar Mitzvah guide](/learn/bar-mitzvah) is clear that the heart of the d
 
 1. **Start with the Hebrew letters and vowels.** If your child is still hesitant, begin with [Bar Mitzvah prep without years of Hebrew school](/learn/bar-mitzvah-prep-without-hebrew-school).
 2. **Find the portion.** See [your child's Bar Mitzvah Torah portion](/learn/bar-mitzvah-parsha), then divide it into small pieces of a few verses.
-3. **Listen first.** Chabad.org offers audio recordings of the Torah reading with trope, so that your son can follow the text as he hears it.
+3. **Listen first.** Jewish tradition offers audio recordings of the Torah reading with trope, so that your son can follow the text as he hears it.
 4. **Practice ten to fifteen minutes a day**, rather than an hour once a week. Short and regular beats long and rare.
 5. **Learn the blessings** before and after the reading. They are the one part every boy says.
 6. **Rehearse standing up**, with a pointer (a *yad*), in a room with family listening.
@@ -48,7 +48,7 @@ No. The essential parts are taking on the mitzvot and receiving an aliyah. Readi
 Yes, often with extra time. Start with the letters and vowels and add the melody step by step. Ask the Rabbi for a plan.
 
 ### Where can we find recordings to practice with?
-Chabad.org has Torah and haftarah reading recordings with trope, and Rabbi Labkowski can point you to the right ones for your portion.
+Jewish tradition has Torah and haftarah reading recordings with trope, and Rabbi Labkowski can point you to the right ones for your portion.
 
 ### Can a girl read from the Torah at her Bat Mitzvah?
 In Chabad practice the Bat Mitzvah is celebrated with learning, a talk and mitzvot, not a public reading. Ask the Rabbi or Rebbetzin about what suits your daughter.

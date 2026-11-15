@@ -11,11 +11,11 @@ If a friend in Lafayette, Moraga or Orinda has just had a baby, you do not need 
 
 ## Mazal tov, and what it means
 
-"Mazal tov" is the standard greeting for any joy, and for a birth it is perfect. You can say it in person, by text, or on a card. Chabad.org's guidance for guests at a bris is the same: "Mazal tov" or "Congratulations" is all that is needed, and compliments on the baby or the name are welcome.
+"Mazal tov" is the standard greeting for any joy, and for a birth it is perfect. You can say it in person, by text, or on a card. The custom for guests at a bris is the same: "Mazal tov" or "Congratulations" is all that is needed, and compliments on the baby or the name are welcome.
 
 ## The traditional blessing
 
-Chabad.org notes that it is customary to wish new parents that they raise their child to Torah, chuppah and maasim tovim, which means learning, marriage and good deeds. This echoes the blessing said at a bris and at a baby naming, wishing that just as the baby entered the covenant, so may he enter Torah, marriage and good deeds. For a girl, the wish is the same: a life of Torah, a Jewish home and good deeds. If you like, add the wish for Jewish "nachas" (נַחַת), the quiet joy a parent has from a child.
+Jewish tradition notes that it is customary to wish new parents that they raise their child to Torah, chuppah and maasim tovim, which means learning, marriage and good deeds. This echoes the blessing said at a bris and at a baby naming, wishing that just as the baby entered the covenant, so may he enter Torah, marriage and good deeds. For a girl, the wish is the same: a life of Torah, a Jewish home and good deeds. If you like, add the wish for Jewish "nachas" (נַחַת), the quiet joy a parent has from a child.
 
 ## When to say it
 

@@ -9,7 +9,7 @@ King Solomon (Shlomo, שְׁלֹמֹה) was the third king of Israel, the son of
 
 ## A young king asks for wisdom
 
-Solomon took the throne after his father [King David](/learn/king-david) and, according to Chabad.org, was only twelve. At Gibeon G-d appeared to him and asked what he wanted. Solomon did not ask for riches or long life or victory over enemies. He asked for an understanding heart to judge the people. G-d was pleased and gave him wisdom, and also wealth and long life, which he had not requested.
+Solomon took the throne after his father [King David](/learn/king-david) and, according to tradition, was only twelve. At Gibeon G-d appeared to him and asked what he wanted. Solomon did not ask for riches or long life or victory over enemies. He asked for an understanding heart to judge the people. G-d was pleased and gave him wisdom, and also wealth and long life, which he had not requested.
 
 ## The judgment of the two mothers
 
@@ -29,7 +29,7 @@ Solomon began building the [Holy Temple](/learn/the-holy-temple) in the fourth y
 
 - **Ask for wisdom first.** Solomon chose understanding over wealth. What we ask for shapes what we become.
 - **Judge with the heart.** Justice is more than rules; it listens for what people truly care about.
-- **Focus on the light.** Chabad.org cites the Rebbe: focus on good and light, and darkness will disappear on its own.
+- **Focus on the light.** The Rebbe taught: focus on good and light, and darkness will disappear on its own.
 - **Beware of compromise.** The Bible tells that his many foreign wives drew his heart away, and the kingdom split after his death. Greatness needs vigilance. For the full picture and how our Sages understand it, ask the Rabbi.
 
 ## Common questions

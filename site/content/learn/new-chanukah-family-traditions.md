@@ -9,18 +9,18 @@ The family traditions children remember are the small ones that return every yea
 
 ## Begin with the heart of Chanukah
 
-Every family tradition on Chanukah works best when it supports the central mitzvah: lighting the menorah and sharing its light. Chabad.org teaches that the eight nights are for adding light, and its Chanukah companion gives each night a thought, a story, a craft or activity and a lighting calendar. That is a good model for a family: one idea a night, kept simple.
+Every family tradition on Chanukah works best when it supports the central mitzvah: lighting the menorah and sharing its light. Chassidic teaching sees the eight nights as a time for adding light, and a good Chanukah companion gives each night a thought, a story, a craft or activity and a lighting calendar. That is a good model for a family: one idea a night, kept simple.
 
 Make sure the foundation is in place. See [how to light the menorah](/learn/chanukah-menorah) and [the eight nights of Chanukah](/learn/chanukah-night-by-night), which has a theme for each night. This guide is about the extras that make your family's holiday your own.
 
 ## Eight traditions to try
 
-Chabad.org lists several old and new traditions. Here they are, with ways to make them yours.
+There are several old and new traditions. Here they are, with ways to make them yours.
 
 1. **A family song.** After lighting, many sing Haneirot Halalu ("These lights we kindle") and Maoz Tzur, and lighter songs about the dreidel. Pick one song your family sings every year. See [Chanukah songs](/learn/chanukah-songs).
 2. **Gelt with a purpose.** Gelt rewards learning and teaches giving. Let each child set aside part for tzedakah. See [Chanukah gelt](/learn/chanukah-gelt).
 3. **A dreidel tournament.** A nightly game, with a trophy that passes from year to year. See [dreidel](/learn/dreidel) and the [dreidel game](/dreidel) online.
-4. **A public lighting.** Chabad.org notes that large public menorah lightings, with music, treats and local leaders, have been held in many cities since the 1970s. Make it your yearly outing. It does not replace lighting at home.
+4. **A public lighting.** Large public menorah lightings, with music, treats and local leaders, have been held in many cities since the 1970s. Make it your yearly outing. It does not replace lighting at home.
 5. **A relaxed time for women.** Many women refrain from housework during the first half hour the lights burn, so use that half hour for stories, singing and being together.
 6. **Share the light.** Take a menorah, treats and cards to someone who may be alone. See [Chanukah mitzvah projects for kids](/learn/chanukah-mitzvah-projects-for-kids).
 7. **A dairy party.** A festive meal adds joy, and many serve dairy foods. See [hosting a Chanukah party](/learn/hosting-a-chanukah-party).

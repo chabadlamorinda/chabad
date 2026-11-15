@@ -11,17 +11,17 @@ In Jewish burial every person is dressed in plain white shrouds and placed in a 
 
 ## The white shrouds: tachrichim
 
-After the tahara, the ritual washing, the body is dressed in *tachrichim* (תַּכְרִיכִים), plain white shrouds. Chabad.org explains that these are made of linen or muslin and that the person is not dressed in ordinary clothing or jewelry. A man is also buried in his tallit, which should be given to the Chevra Kadisha beforehand; if he has none, the funeral home usually provides one. Jewish law requires that the funeral wait until proper shrouds are obtained or made. You do not have to sew or buy anything yourself; the Chevra Kadisha and the funeral home take care of it. For the washing itself, see [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
+After the tahara, the ritual washing, the body is dressed in *tachrichim* (תַּכְרִיכִים), plain white shrouds. These are made of linen or muslin and that the person is not dressed in ordinary clothing or jewelry. A man is also buried in his tallit, which should be given to the Chevra Kadisha beforehand; if he has none, the funeral home usually provides one. Jewish law requires that the funeral wait until proper shrouds are obtained or made. You do not have to sew or buy anything yourself; the Chevra Kadisha and the funeral home take care of it. For the washing itself, see [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
 
 ## Why everyone is dressed alike
 
-The plain shrouds make sure that those who cannot afford fine clothing are not embarrassed. Chabad.org adds that an ornate casket honors wealth rather than good deeds, and that money which might have gone to such a casket should instead go to charity in the merit of the person who died. In this way a rich person and a poor person come before G-d equal, with nothing but their deeds. See [tzedakah](/learn/tzedakah).
+The plain shrouds make sure that those who cannot afford fine clothing are not embarrassed. An ornate casket honors wealth rather than good deeds, and that money which might have gone to such a casket should instead go to charity in the merit of the person who died. In this way a rich person and a poor person come before G-d equal, with nothing but their deeds. See [tzedakah](/learn/tzedakah).
 
 ## The casket
 
-Chabad.org says the casket should be plain, unlined and made of material that decays in the earth, and that a simple wooden casket is common in America. Metal caskets are not used, and some authorities also forbid metal nails or bracing. Ask the funeral home for a casket made for Jewish burial; the Rabbi can tell you what to ask for.
+The casket should be plain, unlined and made of material that decays in the earth, and that a simple wooden casket is common in America. Metal caskets are not used, and some authorities also forbid metal nails or bracing. Ask the funeral home for a casket made for Jewish burial; the Rabbi can tell you what to ask for.
 
-Chabad.org also says:
+Also:
 
 - The casket rests on the earth itself, not inside a cement or metal vault, and above-ground burial (a mausoleum or crypt) is not permitted.
 - Where the law of a cemetery requires a vault, earth is first shoveled in, and the casket should rest on the ground itself.
@@ -42,7 +42,7 @@ The plain white shrouds are the same for every person, so that those who cannot 
 
 ### What kind of casket is used in a Jewish burial?
 
-A plain, unlined casket of material that decays in the earth, usually simple wood. Chabad.org says metal caskets are not used, and some authorities also avoid metal nails.
+A plain, unlined casket of material that decays in the earth, usually simple wood. Metal caskets are not used, and some authorities also avoid metal nails.
 
 ### Do Jews have to be buried in a casket?
 
@@ -50,11 +50,11 @@ In Israel burial is directly in the ground, and in America a simple wooden caske
 
 ### Is a man buried with his tallit?
 
-Yes. Chabad.org says a man is buried in his tallit, which is given to the Chevra Kadisha beforehand. If he has none, the funeral home usually provides one.
+Yes. A man is buried in his tallit, which is given to the Chevra Kadisha beforehand. If he has none, the funeral home usually provides one.
 
 ### Can a vault or mausoleum be used?
 
-Chabad.org says burial is directly in the ground, and above-ground burial and similar alternatives are not permitted. If a cemetery requires a vault by law, ask the Rabbi.
+Burial is directly in the ground, and above-ground burial and similar alternatives are not permitted. If a cemetery requires a vault by law, ask the Rabbi.
 
 ### Does a plain casket cost less, and what if we cannot afford one?
 

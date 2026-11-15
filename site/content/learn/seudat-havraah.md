@@ -13,7 +13,7 @@ It is a simple, quiet meal, and one of the first acts of kindness a community of
 
 Mourners do not eat their own food at this first meal. Relatives, close friends or neighbors provide it, which lets others show they care. If nobody can provide it, the mourners may eat their own food.
 
-According to Chabad.org, this meal is private, for the immediate family, and not a public gathering. The practice is rooted in the prophet Ezekiel (24:17), which the Talmud reads to mean that a mourner eats food that others have brought.
+According to Jewish tradition, this meal is private, for the immediate family, and not a public gathering. The practice is rooted in the prophet Ezekiel (24:17), which the Talmud reads to mean that a mourner eats food that others have brought.
 
 It follows the funeral and the return from the cemetery, when mourners begin [shiva](/learn/shiva). See [what to expect at a funeral](/learn/what-to-wear-to-a-jewish-funeral).
 
@@ -59,7 +59,7 @@ Relatives, friends or neighbors. Mourners do not eat their own food at this meal
 Only if no one else can bring it. After this first meal, they may prepare their own food during shiva.
 
 ### Is the Seudat Havraah a public gathering?
-No. Chabad.org describes it as private, for the immediate family, not a public condolence event.
+No. Jewish tradition describes it as private, for the immediate family, not a public condolence event.
 
 ### Does the meal apply if the funeral is on a Friday?
 It is not eaten after the ninth halachic hour of the day, so the mourners can keep their appetite for Shabbat. Ask the Rabbi in a specific case.

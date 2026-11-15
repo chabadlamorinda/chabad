@@ -9,7 +9,7 @@ Tishrei (תשרי) is the seventh month of the Jewish calendar, yet the Jewish y
 
 ## Why does the year start in the seventh month?
 
-The Torah calls Rosh Hashanah "the first day of the seventh month." The Jewish calendar counts months from Nissan, the month of the Exodus, but the *year* is counted from Tishrei, which our sages link to the anniversary of the creation of Adam and Eve. Chabad.org explains that this is why there are several "new years" in Judaism. See [the Jewish calendar](/learn/jewish-calendar).
+The Torah calls Rosh Hashanah "the first day of the seventh month." The Jewish calendar counts months from Nissan, the month of the Exodus, but the *year* is counted from Tishrei, which our sages link to the anniversary of the creation of Adam and Eve. This is why there are several "new years" in Judaism. See [the Jewish calendar](/learn/jewish-calendar).
 
 ## A map of the month
 

@@ -17,13 +17,13 @@ There is nothing formal to prepare. The point is that the community comes to you
 
 ## Why this gathering?
 
-Chabad.org explains several reasons. The main one is gratitude: a thank-you to G-d for the baby's safe arrival. There is also a Talmudic teaching that before birth an angel teaches the baby the whole Torah and then, at birth, causes him to forget it. At the Shalom Zachar, friends visit and comfort the baby's soul, as people visit and comfort a mourner.
+Jewish tradition explains several reasons. The main one is gratitude: a thank-you to G-d for the baby's safe arrival. There is also a Talmudic teaching that before birth an angel teaches the baby the whole Torah and then, at birth, causes him to forget it. At the Shalom Zachar, friends visit and comfort the baby's soul, as people visit and comfort a mourner.
 
 Another reason is timing. The bris is on the eighth day, the shortest wait that always includes a Shabbat. Since Shabbat is a day of joy, the celebration begins there.
 
 ## Why chickpeas?
 
-Chickpeas (and other beans) are served because of their round shape, which is a sign of the cycle of life, and because round foods without a "mouth" echo the quiet of a mourner. In Yiddish chickpeas are called *arbes*, which some link to G-d's promise to Abraham to make his descendants many. Many families also serve a light drink such as beer, and sweets and other snacks. Chabad.org notes that the reason for beer is not certain.
+Chickpeas (and other beans) are served because of their round shape, which is a sign of the cycle of life, and because round foods without a "mouth" echo the quiet of a mourner. In Yiddish chickpeas are called *arbes*, which some link to G-d's promise to Abraham to make his descendants many. Many families also serve a light drink such as beer, and sweets and other snacks. Jewish tradition notes that the reason for beer is not certain.
 
 Keep it simple and kosher. Hosts do not need to cook; guests often bring something.
 
@@ -42,7 +42,7 @@ On Shabbat morning, at synagogue, the baby's father is called up to the Torah an
 
 ## What about a baby girl?
 
-Chabad.org does not describe an equivalent gathering for a girl. A baby girl is usually welcomed by a naming in the synagogue; see [baby naming](/learn/baby-naming). Families are warmly encouraged to celebrate in whatever way is natural and joyful, and you can ask the Rabbi.
+There is no equivalent traditional gathering for a girl. A baby girl is usually welcomed by a naming in the synagogue; see [baby naming](/learn/baby-naming). Families are warmly encouraged to celebrate in whatever way is natural and joyful, and you can ask the Rabbi.
 
 ## Common questions
 

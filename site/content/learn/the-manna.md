@@ -11,7 +11,7 @@ The manna (מָן, "mon") was the miraculous food that fell from heaven every mo
 
 About a month after the Exodus, the food the people had brought from Egypt ran out. They cried out, and the next morning the ground was covered with dew, and when the dew lifted there lay "a fine, flaky substance, fine as frost on the ground" (Exodus 16:14). The people asked, "Man hu?", "What is it?" and that is how it got its name. (Another explanation is that the word means "a portion.")
 
-According to Chabad.org's summary of the sources, it was about the size of a coriander seed and looked like crystal. A north wind swept the ground clean first, rain rinsed it, and dew settled above and below, so the manna lay as if wrapped in a package.
+According to the sources, it was about the size of a coriander seed and looked like crystal. A north wind swept the ground clean first, rain rinsed it, and dew settled above and below, so the manna lay as if wrapped in a package.
 
 ## What did the manna taste like?
 
@@ -32,7 +32,7 @@ On Friday night and on Shabbat day, we begin the meal with two whole loaves, [ch
 
 ## The Rebbe's lesson: bread from heaven
 
-The Lubavitcher Rebbe taught, as presented on Chabad.org, that there are two kinds of bread: "bread from the earth," which comes through plowing, planting and work, and "bread from heaven," the manna, which came with no human effort at all. When bread comes from the earth, a person can think, "I made this happen." The manna removed any such illusion: all of our needs come from G-d.
+The Lubavitcher Rebbe taught that there are two kinds of bread: "bread from the earth," which comes through plowing, planting and work, and "bread from heaven," the manna, which came with no human effort at all. When bread comes from the earth, a person can think, "I made this happen." The manna removed any such illusion: all of our needs come from G-d.
 
 The manna also tested the people. Would they trust G-d to provide each day, without storing up? The Midrash teaches that a person who has food today and worries "What will I eat tomorrow?" has a lack of faith. That is not an excuse not to work. The Rebbe explained that we work because G-d tells us to act in the natural world, but we remember that the real source of our income is G-d. This is the core of [bitachon, trust in G-d](/learn/bitachon). If money worries weigh on you, read [Jewish teaching on livelihood](/learn/parnassah-work-and-livelihood) and [money worries](/learn/money-worries).
 

@@ -13,7 +13,7 @@ For most of Jewish history a person was known by their own name plus their fathe
 
 ## Kinds of Jewish surnames
 
-According to Chabad.org's overview of Ashkenazi surnames, they fall into several groups:
+Ashkenazi surnames fall into several groups:
 
 - **Priests and Levites:** Cohen (כהן) and Levy, with variants like Kohn, Kahn, Kagan, Levi, Levin and Levine.
 - **A father or mother:** Abramson and Jacobowitz come from fathers. Rivkin and Tamarkin come from mothers.

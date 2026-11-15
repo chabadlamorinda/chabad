@@ -11,11 +11,11 @@ Chabad teaching adds that this love is already inside every Jewish soul, and nee
 
 ## Can love be commanded?
 
-It seems odd to command a feeling. But Jewish teachers say that love can grow when we give it the right conditions, like a plant. Chabad.org explains that the Torah wants us to reflect on G-d's presence in our lives, so that we keep the commandments out of love and not only duty. The Torah gives the mitzvah because we are able to do it.
+It seems odd to command a feeling. But Jewish teachers say that love can grow when we give it the right conditions, like a plant. Chassidic teaching explains that the Torah wants us to reflect on G-d's presence in our lives, so that we keep the commandments out of love and not only duty. The Torah gives the mitzvah because we are able to do it.
 
 ## The Rambam's path: look at the world
 
-Maimonides (the Rambam) writes that when a person contemplates G-d's works and creatures, and sees their wisdom and vastness, he will love G-d and long to know Him. According to Chabad.org, the Rambam stresses contemplating G-d's greatness as seen in creation. Many Chabad teachers suggest that this thinking be done each morning before prayer. If we never think about G-d, it is hard to feel love.
+Maimonides (the Rambam) writes that when a person contemplates G-d's works and creatures, and sees their wisdom and vastness, he will love G-d and long to know Him. According to Chassidic teaching, the Rambam stresses contemplating G-d's greatness as seen in creation. Many Chabad teachers suggest that this thinking be done each morning before prayer. If we never think about G-d, it is hard to feel love.
 
 A simple way to try it:
 
@@ -26,13 +26,13 @@ A simple way to try it:
 
 ## The Tanya: a love already in the soul
 
-In Chabad teaching, the Alter Rebbe writes in the Tanya that the love of G-d is rooted in the soul, which is "truly a part of G-d above." According to Chabad.org, this love need not and cannot be created from nothing. It only needs to be revealed. This is why even a Jew with little background can feel a sudden longing, a tear at a melody or a warmth during a Shabbat meal. That is the soul's love peeking through.
+In Chabad teaching, the Alter Rebbe writes in the Tanya that the love of G-d is rooted in the soul, which is "truly a part of G-d above." According to Chassidic teaching, this love need not and cannot be created from nothing. It only needs to be revealed. This is why even a Jew with little background can feel a sudden longing, a tear at a melody or a warmth during a Shabbat meal. That is the soul's love peeking through.
 
 The [Tanya](/learn/tanya) also distinguishes levels. Deep reflection can produce a lasting love, while the highest, overflowing love is described as a gift from Above. We do the work; G-d adds the rest.
 
 ## "With both inclinations"
 
-Chabad.org points out that the Hebrew word for "your heart" (לְבָבְךָ) is spelled with an extra letter, and the Sages read this as loving G-d with both the good and the evil inclination. The idea is that even our difficult drives and energy can be directed toward G-d. See [yetzer hara](/learn/yetzer-hara).
+Chassidic teaching points out that the Hebrew word for "your heart" (לְבָבְךָ) is spelled with an extra letter, and the Sages read this as loving G-d with both the good and the evil inclination. The idea is that even our difficult drives and energy can be directed toward G-d. See [yetzer hara](/learn/yetzer-hara).
 
 ## Love and awe
 
@@ -57,7 +57,7 @@ Yes. It is in the Shema: "You shall love the L-rd your G-d with all your heart, 
 The Rambam teaches to contemplate G-d's works in creation until wonder turns into love. Chabad teaching adds that this love is already hidden in every soul and needs to be revealed through reflection, prayer and mitzvot.
 
 ### What does "with all your heart" mean?
-Chabad.org notes that the Hebrew word for heart has an extra letter, which the Sages explain as loving G-d with both the good and evil inclinations.
+Chassidic teaching notes that the Hebrew word for heart has an extra letter, which the Sages explain as loving G-d with both the good and evil inclinations.
 
 ### Can I love G-d if I do not feel anything?
 Jewish teachers say that feeling takes time and thought. Start with small actions and reflection, and ask the Rabbi for guidance.

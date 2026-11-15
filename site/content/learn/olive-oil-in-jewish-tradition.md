@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: menorah-oil-and-candles, seven-species, the-holy-temple, chanukah-story, chanukah-menorah
 local: Wondering about olive oil for your menorah? Call Rabbi Labkowski at 925-384-7242 to hear where to find it in Lafayette, Moraga and Orinda.
 ---
-Olive oil has a special place in Judaism: it is one of the seven species that praise the Land of Israel, it fueled the Temple menorah, and it is the preferred fuel for the Chanukah lights. Chabad.org asks why Chanukah is so focused on oil, and the answers tell us a lot about the holiday.
+Olive oil has a special place in Judaism: it is one of the seven species that praise the Land of Israel, it fueled the Temple menorah, and it is the preferred fuel for the Chanukah lights. One may ask why Chanukah is so focused on oil, and the answers tell us a lot about the holiday.
 
 ## Olive oil in the Torah
 
@@ -13,19 +13,19 @@ The Torah praises Israel as "a land of olive oil and honey" (Deuteronomy 8:8), a
 
 ## The oil in the Temple
 
-In the [Holy Temple](/learn/the-holy-temple), the Menorah was lit each evening with pure olive oil. Chabad.org's Chanukah pages raise a question: what does "ritually pure" mean for olive oil, and what made the Maccabees' small jar special? The story is that the Greeks entered the Temple and defiled the oil. When the Maccabees came back, they found one jar still sealed and pure, enough for one day. It burned for eight. Read [the Chanukah story](/learn/chanukah-story).
+In the [Holy Temple](/learn/the-holy-temple), the Menorah was lit each evening with pure olive oil. A question arises: what does "ritually pure" mean for olive oil, and what made the Maccabees' small jar special? The story is that the Greeks entered the Temple and defiled the oil. When the Maccabees came back, they found one jar still sealed and pure, enough for one day. It burned for eight. Read [the Chanukah story](/learn/chanukah-story).
 
-Chabad.org also notes that the Greeks sought out the oil in the Temple. The holiday is, in a way, about the oil.
+The Greeks also sought out the oil in the Temple. The holiday is, in a way, about the oil.
 
 ## What olive oil teaches
 
-Chabad.org points to a few images that Jewish teachers draw from oil:
+Jewish teachers draw a few images from oil:
 
 - **Oil penetrates.** It soaks into whatever it touches, like Torah and mitzvot entering the heart.
-- **Quiet light.** A flame fed by oil is gentle and modest, and Chabad.org calls it the "master of understatement."
-- **The soul.** Chabad.org has a teaching that compares the soul to oil. It stays pure and connected to G-d, even in a spiritually dark time.
+- **Quiet light.** A flame fed by oil is gentle and modest, and it has been called the "master of understatement."
+- **The soul.** Chassidic teaching compares the soul to oil. It stays pure and connected to G-d, even in a spiritually dark time.
 
-Why is the holiday called "lights" rather than "oil"? Chabad.org teaches that a candle makes us think of the spiritual: unlike physical things, which are used up, spiritual things grow as they are used, and the light of a mitzvah only increases.
+Why is the holiday called "lights" rather than "oil"? Chassidic teaching explains that a candle makes us think of the spiritual: unlike physical things, which are used up, spiritual things grow as they are used, and the light of a mitzvah only increases.
 
 ## Olive oil on your Chanukah menorah
 
@@ -44,7 +44,7 @@ Because the Temple menorah burned pure olive oil, so it is the finest choice. Ca
 Yes. The Torah praises Israel as a land of olive oil, and the olive is one of the seven species.
 
 ### What does the oil in Chanukah symbolize?
-Jewish teachers see oil as purity, quiet light and the soul's bond with G-d. Chabad.org teaches several of these ideas.
+Jewish teachers see oil as purity, quiet light and the soul's bond with G-d. Chassidic teaching expresses several of these ideas.
 
 ### Does olive oil need a kosher symbol?
 Pure olive oil is generally simple, but check a symbol, especially on flavored or blended oils. Ask the Rabbi if unsure.

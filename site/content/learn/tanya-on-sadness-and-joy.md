@@ -11,7 +11,7 @@ This guide follows that reasoning. For joy in general, see [simcha](/learn/simch
 
 ## Why joy matters for winning the struggle
 
-According to Chabad.org's presentation of Chapter 26, Tanya compares the inner struggle to two wrestlers. A lazy wrestler loses even to a weaker opponent. So a person cannot defeat his own negative impulses with laziness and sluggishness. What is needed is alacrity, and alacrity comes from joy and an open heart.
+In Chapter 26, Tanya compares the inner struggle to two wrestlers. A lazy wrestler loses even to a weaker opponent. So a person cannot defeat his own negative impulses with laziness and sluggishness. What is needed is alacrity, and alacrity comes from joy and an open heart.
 
 Sadness, in other words, is not a sign of depth. Tanya treats it as a hindrance. Even the verse "In every sadness there will be profit" is read to mean that a benefit may come after sadness, namely the true joy that follows sincere regret, and not that sadness is good in itself.
 

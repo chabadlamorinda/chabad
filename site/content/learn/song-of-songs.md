@@ -13,7 +13,7 @@ It is one of the books of the [Tanach](/learn/tanach), written by [King Solomon]
 
 ## Why do we read it on Passover?
 
-Chabad.org gives two reasons. First, the Song speaks of the exile and redemption of the Jewish people, beginning with Egypt, and the Zohar teaches it holds the story of the Exodus. Reading it enriches the mitzvah of telling the Exodus story. Second, Passover is a time of love between G-d and Israel. Through the Exodus the people became "betrothed" to G-d, and the Song is the song of that love. It also speaks of spring, which is when Passover falls.
+There are two reasons. First, the Song speaks of the exile and redemption of the Jewish people, beginning with Egypt, and the Zohar teaches it holds the story of the Exodus. Reading it enriches the mitzvah of telling the Exodus story. Second, Passover is a time of love between G-d and Israel. Through the Exodus the people became "betrothed" to G-d, and the Song is the song of that love. It also speaks of spring, which is when Passover falls.
 
 ## When is it read?
 

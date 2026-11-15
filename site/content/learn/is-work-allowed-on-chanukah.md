@@ -9,7 +9,7 @@ Yes, you may work on Chanukah. It is a holiday set by the Sages, not a Yom Tov l
 
 ## Why Chanukah is not a day off
 
-The holidays of the Torah, such as Rosh Hashanah and Passover, have restrictions on work. Chanukah was established later by the Sages as a time of thanks and praise. Chabad.org says work is permitted on Chanukah for this reason. See also [Jewish holidays at school and work](/learn/jewish-holidays-at-school-and-work) and [school calendars in Lamorinda](/learn/jewish-holidays-and-lamorinda-school-calendars).
+The holidays of the Torah, such as Rosh Hashanah and Passover, have restrictions on work. Chanukah was established later by the Sages as a time of thanks and praise. Jewish tradition says work is permitted on Chanukah for this reason. See also [Jewish holidays at school and work](/learn/jewish-holidays-at-school-and-work) and [school calendars in Lamorinda](/learn/jewish-holidays-and-lamorinda-school-calendars).
 
 ## What does change
 

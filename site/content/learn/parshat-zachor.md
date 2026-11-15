@@ -9,7 +9,7 @@ Parshat Zachor (פרשת זכור) is the special Torah reading on the Shabbat b
 
 ## What is Parshat Zachor?
 
-"Zachor" means "remember." The reading comes from Deuteronomy 25:17-19, and it is added to the regular weekly portion. Chabad.org explains that Amalek alone attacked the Jewish people after the Exodus, out of a hatred that defied logic. The Haftorah is from I Samuel 15, the story of King Saul and Amalek.
+"Zachor" means "remember." The reading comes from Deuteronomy 25:17-19, and it is added to the regular weekly portion. Tradition teaches that Amalek alone attacked the Jewish people after the Exodus, out of a hatred that defied logic. The Haftorah is from I Samuel 15, the story of King Saul and Amalek.
 
 The connection to Purim is clear: Haman, the villain of the Purim story, is a descendant of Amalek. Hearing Zachor on the Shabbat before Purim prepares us to celebrate Purim. See [Purim for beginners](/learn/purim-for-beginners) and [the Purim holiday page](/holidays/purim).
 

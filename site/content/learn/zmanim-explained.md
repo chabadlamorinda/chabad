@@ -9,13 +9,13 @@ Zmanim (זְמַנִּים, "times") are the times of day set by Jewish law for 
 
 ## Why the times are tied to the sun
 
-Many mitzvahs belong to a particular part of the day or night. The morning Shema, the afternoon Mincha prayer, the evening Shema and the end of Shabbat all depend on whether it is day or night and how far along the day is. Chabad.org explains that its zmanim are astronomical: some are fixed by how far the sun's center sits below the horizon, and others are counted in proportional hours.
+Many mitzvahs belong to a particular part of the day or night. The morning Shema, the afternoon Mincha prayer, the evening Shema and the end of Shabbat all depend on whether it is day or night and how far along the day is. Jewish tradition explains that its zmanim are astronomical: some are fixed by how far the sun's center sits below the horizon, and others are counted in proportional hours.
 
 We never type the times by hand on this site; the calendar computes them for Lafayette and the nearby towns. Use this guide to understand what each name means, and look up the actual times in [Shabbat times](/shabbat-times) or the [Jewish calendar](/learn/jewish-calendar).
 
 ## A short glossary of the times
 
-Here are the main zmanim, in the order they happen through the day, with definitions based on Chabad.org:
+Here are the main zmanim, in the order they happen through the day, with their usual definitions:
 
 - **Alot Hashachar (עלות השחר), dawn:** the moment the first light appears on the eastern horizon.
 - **Misheyakir (מִשֶּׁיַּכִּיר):** when there is enough light to recognize an acquaintance from a short distance. It is ideally the earliest time to put on a tallit and tefillin and to say the morning Shema.
@@ -33,7 +33,7 @@ Shabbat and holidays end at a separate, slightly later time, when a smaller clus
 
 ## The halachic hour: why times shift
 
-A halachic hour, called a shaah zmanit (שעה זמנית, "proportional hour"), is not 60 minutes. The daylight period from sunrise to sunset is divided into twelve equal parts, and each part is one hour. So in summer, when days are long, the hour is longer than 60 minutes; in winter it is shorter. Chabad.org gives an example: with sunrise at 5:00 am and sunset at 7:30 pm, there are 14.5 hours of daylight, and each halachic hour is 72.5 minutes, so the third hour ends at 8:37:30 am. (Another view counts from dawn to nightfall; this is why a "latest Shema" may differ between calendars.)
+A halachic hour, called a shaah zmanit (שעה זמנית, "proportional hour"), is not 60 minutes. The daylight period from sunrise to sunset is divided into twelve equal parts, and each part is one hour. So in summer, when days are long, the hour is longer than 60 minutes; in winter it is shorter. Jewish law gives an example: with sunrise at 5:00 am and sunset at 7:30 pm, there are 14.5 hours of daylight, and each halachic hour is 72.5 minutes, so the third hour ends at 8:37:30 am. (Another view counts from dawn to nightfall; this is why a "latest Shema" may differ between calendars.)
 
 This is also why the "latest Shema" time changes every day, so check it each morning. It is a good thing to know when you read about [Shabbat in winter](/learn/shabbat-in-winter), when Shabbat begins early.
 
@@ -43,7 +43,7 @@ The Jewish day starts at nightfall, not at midnight or sunrise, which is why Sha
 
 ## Add a safety margin
 
-Chabad.org advises adding or subtracting at least two minutes to every published time, and not relying on the times until the last minute. Temperature, air pressure, clocks, differences within a city and rounding all matter. At very high latitudes, or for family purity and a bris near sunset, ask a rabbi.
+The tradition advises adding or subtracting at least two minutes to every published time, and not relying on the times until the last minute. Temperature, air pressure, clocks, differences within a city and rounding all matter. At very high latitudes, or for family purity and a bris near sunset, ask a rabbi.
 
 ## Common questions
 
@@ -60,7 +60,7 @@ It is one twelfth of the daylight period, so it is longer in summer and shorter 
 Because the Torah says of each day of creation, "And it was evening, and it was morning."
 
 ### Why add a few minutes to the times?
-Because of temperature, air pressure, clocks and rounding. Chabad.org suggests at least two minutes of margin.
+Because of temperature, air pressure, clocks and rounding. Jewish tradition suggests at least two minutes of margin.
 
 ### Where can I get help with the times in Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242, or look at the Shabbat times for each town.

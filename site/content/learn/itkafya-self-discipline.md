@@ -11,7 +11,7 @@ This is a gentle and very practical form of self-discipline: not harsh, not abou
 
 ## What is itkafya?
 
-According to Chabad.org's presentation of Chapter 27, itkafya means subduing the "other side" within us (the sitra achara). Each time a person pushes away a wrong thought, he subdues it below. The Alter Rebbe, Rabbi Shneur Zalman of Liadi, then extends the idea in a surprising direction: to things that are completely permitted.
+According to Chapter 27 of the Tanya, itkafya means subduing the "other side" within us (the sitra achara). Each time a person pushes away a wrong thought, he subdues it below. The Alter Rebbe, Rabbi Shneur Zalman of Liadi, then extends the idea in a surprising direction: to things that are completely permitted.
 
 Permitted activities done with no higher purpose, the chapter explains, draw their life from the "other side." So a person who holds himself back from a permitted act for a moment, and uses that time for something holy, has subdued it.
 

@@ -9,7 +9,7 @@ Keeping Shabbat in a hotel is very doable with some preparation. Tell the hotel 
 
 ## Before you go
 
-Chabad.org recommends contacting the hotel early to flag possible issues, since staff are usually accommodating once they understand. Ask for:
+Jewish tradition recommends contacting the hotel early to flag possible issues, since staff are usually accommodating once they understand. Ask for:
 
 - **A regular key.** Key cards are generally not used on Shabbat. Request a metal key, or arrange for staff to open the door before Shabbat.
 - **A lower floor,** because elevators pose many challenges. If the hotel has a "Shabbat elevator," ask your rabbi about using it.
@@ -26,7 +26,7 @@ Many sensors can be covered with paper or a similar item before Shabbat. For aut
 - Challah, grape juice or wine, and food that needs no cooking
 - Printed Kiddush and Grace after Meals
 
-See [Shabbat candles](/learn/shabbat-candles) and [kosher when traveling](/learn/kosher-when-traveling). Chabad.org says to light candles even while traveling. Hotels may restrict open flames, so ask the hotel and the Rabbi what to do.
+See [Shabbat candles](/learn/shabbat-candles) and [kosher when traveling](/learn/kosher-when-traveling). Jewish tradition says to light candles even while traveling. Hotels may restrict open flames, so ask the hotel and the Rabbi what to do.
 
 ## Friday checklist
 
@@ -37,7 +37,7 @@ See [Shabbat candles](/learn/shabbat-candles) and [kosher when traveling](/learn
 
 ## Carrying and the minibar
 
-Chabad.org notes that most authorities are lenient about carrying inside a single hotel building, but carrying outdoors between buildings needs an eruv. Minibars with sensors are a problem. When in doubt, ask. See [traveling on Shabbat](/learn/traveling-on-shabbat).
+The tradition notes that most authorities are lenient about carrying inside a single hotel building, but carrying outdoors between buildings needs an eruv. Minibars with sensors are a problem. When in doubt, ask. See [traveling on Shabbat](/learn/traveling-on-shabbat).
 
 ## Find a community
 

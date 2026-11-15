@@ -11,7 +11,7 @@ Hosting out-of-town family for a Jewish holiday takes planning in three areas: a
 
 Shabbat and holidays begin at sunset, with candle lighting beforehand. After that, travelers who keep the holiday cannot drive, fly or carry things outside, and even guests who do not keep the holiday will want to arrive without stress. Check [Shabbat times](/shabbat-times) and the [Jewish holidays](/jewish-holidays) calendar for exact dates and candle-lighting times, which the site computes for you, and aim for guests to land hours before.
 
-Chabad.org encourages saying the Traveler's Prayer, Tefilat Haderech (תפילת הדרך), when setting out on a journey. Read more in [Tefilat Haderech](/learn/tefilat-haderech), and see [traveling on Shabbat](/learn/traveling-on-shabbat) if a flight is near the holiday.
+Jewish tradition encourages saying the Traveler's Prayer, Tefilat Haderech (תפילת הדרך), when setting out on a journey. Read more in [Tefilat Haderech](/learn/tefilat-haderech), and see [traveling on Shabbat](/learn/traveling-on-shabbat) if a flight is near the holiday.
 
 ## Getting from the airport
 

@@ -5,16 +5,16 @@ category: Lamorinda
 related: blessings-on-nature, kosher-grilling, barchi-nafshi, blessing-on-blossoming-trees, bal-tashchit, jewish-health-and-body
 local: Hiking with your family or friends? Call Rabbi Labkowski at 925-384-7242 to learn the blessings, or to ask about a trip.
 ---
-When a Jewish hiker sees an awe-inspiring mountain, hills or a vast landscape after not seeing it for thirty days, the blessing is "Oseh Maaseh Bereishit," "Who performs the work of creation." Chabad.org also lists blessings for thunder and lightning, a rainbow and blossoming trees, so a walk in the hills can be filled with prayer.
+When a Jewish hiker sees an awe-inspiring mountain, hills or a vast landscape after not seeing it for thirty days, the blessing is "Oseh Maaseh Bereishit," "Who performs the work of creation." There are also blessings for thunder and lightning, a rainbow and blossoming trees, so a walk in the hills can be filled with prayer.
 
 Lafayette, Moraga and Orinda sit at the edge of open hills, and a few of the East Bay's best-known parks are a short drive away on a weekday. Here are the blessings, a psalm worth reading at the top, and a few trail ideas.
 
 ## The blessings of the trail
 
-Chabad.org lists these blessings for what a hiker may see:
+These are the blessings for what a hiker may see:
 
 - **Mountains, hills, deserts and rivers.** When you see them after an interval of thirty days, say "Oseh Maaseh Bereishit" (עוֹשֵׂה מַעֲשֵׂה בְרֵאשִׁית), "Who performs the work of creation." The thirty-day rule matters: the blessing is for a sight you have not seen in a month. Which mountains or views are impressive enough to count is a question for the Rabbi Ask whether a view you see every day near home counts.
-- **Thunder and lightning.** Chabad.org gives "Whose power and might fill up the world," and notes that it is customary to say both that and "Oseh Maaseh Bereishit."
+- **Thunder and lightning.** The blessing is "Whose power and might fill up the world," and it is customary to say both that and "Oseh Maaseh Bereishit."
 - **A rainbow.** The blessing begins "Who remembers the covenant."
 - **Blossoming trees in Nisan.** When you go out in the month of Nisan and see trees in bud, you say the blessing that G-d "did not leave anything lacking in His world." See [the blessing on blossoming trees](/learn/blessing-on-blossoming-trees).
 
@@ -36,7 +36,7 @@ When you reach the top, consider reading [Psalm 104](/learn/barchi-nafshi), "Bar
 
 ## Safety is a mitzvah
 
-Jewish tradition treats protecting life and health as a serious obligation. Bring water, tell someone your route, check the weather and turn back if the trail is unsafe. Follow the park's own posted rules. If you take a longer trip, you may want to say [Tefilat Haderech](/learn/tefilat-haderech), the Traveler's Prayer, which Chabad.org says is for trips of more than about 2.36 miles beyond your city's limits. Ask the Rabbi whether it applies to your drive. For health in general, see [Jewish health and body](/learn/jewish-health-and-body).
+Jewish tradition treats protecting life and health as a serious obligation. Bring water, tell someone your route, check the weather and turn back if the trail is unsafe. Follow the park's own posted rules. If you take a longer trip, you may want to say [Tefilat Haderech](/learn/tefilat-haderech), the Traveler's Prayer, which Jewish tradition says is for trips of more than about 2.36 miles beyond your city's limits. Ask the Rabbi whether it applies to your drive. For health in general, see [Jewish health and body](/learn/jewish-health-and-body).
 
 ## Leave the trail as you found it
 
@@ -50,11 +50,11 @@ Judaism teaches us not to waste or destroy needlessly, a law called bal tashchit
 
 ### What blessing do you say on a rainbow?
 
-The blessing begins "Who remembers the covenant," according to Chabad.org.
+The blessing begins "Who remembers the covenant."
 
 ### What do you say on thunder and lightning?
 
-Chabad.org gives "Whose power and might fill up the world," and says it is customary to say both that and "Oseh Maaseh Bereishit."
+The blessing is "Whose power and might fill up the world," and it is customary to say both that and "Oseh Maaseh Bereishit."
 
 ### Is there a blessing on a view of the Bay or the ocean?
 

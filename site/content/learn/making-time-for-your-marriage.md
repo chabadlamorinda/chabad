@@ -5,7 +5,7 @@ category: Life cycle
 related: shalom-bayit, marriage-arguments-jewish-wisdom, first-year-of-marriage, friday-night-dinner-step-by-step, love-jewish-view
 local: Busy couples in Lafayette, Moraga and Orinda are welcome at Chabad: see /events or call Rabbi Labkowski at 925-384-7242.
 ---
-Judaism's advice for a strong marriage is simple: set aside real time for each other, thank each other out loud, speak kindly and say honestly what is on your mind. Chabad.org's articles on marriage turn these ideas into small steps that busy couples in the East Bay can start this week.
+Judaism's advice for a strong marriage is simple: set aside real time for each other, thank each other out loud, speak kindly and say honestly what is on your mind. Jewish teachings on marriage turn these ideas into small steps that busy couples in the East Bay can start this week.
 
 ## Why does a marriage need protected time?
 
@@ -15,13 +15,13 @@ Shabbat is the Jewish model for this. A weekly pause from work and screens is bu
 
 ## How does gratitude help a marriage?
 
-The same article lists gratitude under "do not steal": give your spouse credit for what he or she contributes. Chabad.org gives examples of people who credit a spouse's sacrifices and thank them in public.
+The same article lists gratitude under "do not steal": give your spouse credit for what he or she contributes. Jewish wisdom gives examples of people who credit a spouse's sacrifices and thank them in public.
 
-Another Chabad.org article, "4 Steps to a Great Marriage," begins with acceptance and gratitude, along with compassion, forgiveness and appreciation. It suggests knowing when to let a matter go and seeing what you have in a better light, so that you can appreciate it. Try this: each day, thank your spouse for one specific thing.
+Another article, "4 Steps to a Great Marriage," begins with acceptance and gratitude, along with compassion, forgiveness and appreciation. It suggests knowing when to let a matter go and seeing what you have in a better light, so that you can appreciate it. Try this: each day, thank your spouse for one specific thing.
 
 ## Why does speech matter so much?
 
-According to Chabad.org's ten points:
+Here are ten points:
 
 1. **Respectful speech.** Do not put your spouse down, especially in public or as a joke. If you need to vent, do it privately with a mentor or a trusted friend, and choose the listener carefully.
 2. **Kind words.** Harsh words can crush a spouse's confidence; encouragement, sincere compliments and appreciation build it up. Be your spouse's cheerleader.
@@ -41,7 +41,7 @@ For help with disagreements, see [Marriage arguments: Jewish wisdom](/learn/marr
 
 ### What is Jewish advice for a happy marriage?
 
-Make regular time for each other, thank each other, speak kindly and talk honestly. Chabad.org presents these as practical steps, not just ideals.
+Make regular time for each other, thank each other, speak kindly and talk honestly. Jewish wisdom presents these as practical steps, not just ideals.
 
 ### How can we make time for our marriage with a busy schedule?
 
@@ -49,11 +49,11 @@ Set aside a day or an evening, such as Shabbat, with no phones or distractions. 
 
 ### Why is gratitude important in Jewish marriage?
 
-Giving your spouse credit for what he or she does helps the marriage grow. Chabad.org suggests thanking a spouse for specific things.
+Giving your spouse credit for what he or she does helps the marriage grow. Jewish wisdom suggests thanking a spouse for specific things.
 
 ### Should we complain about our spouse to friends?
 
-Chabad.org advises against putting your spouse down, especially in public. If you need to vent, do it privately with a mentor or trusted friend.
+Jewish wisdom advises against putting your spouse down, especially in public. If you need to vent, do it privately with a mentor or trusted friend.
 
 ### Where can we find help for a struggling marriage?
 

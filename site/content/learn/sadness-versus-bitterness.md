@@ -11,9 +11,9 @@ This is one of the most practical ideas in the book. It answers a question many 
 
 ## The same feeling, two very different results
 
-Everyone who has done something wrong knows the pull to feel awful. Tanya, in Chapter 26 as presented on Chabad.org, says that sadness itself is a hindrance. A person weighed down by it becomes sluggish and finds it harder to do anything good.
+Everyone who has done something wrong knows the pull to feel awful. Tanya, in Chapter 26, says that sadness itself is a hindrance. A person weighed down by it becomes sluggish and finds it harder to do anything good.
 
-But the chapter also says there is a regret that is useful. It speaks of "genuine bitterness" and a broken heart, at suitable times. Chabad.org's presentation contrasts this active remorse with passive depression. The first moves a person to act; the second leaves him stuck.
+But the chapter also says there is a regret that is useful. It speaks of "genuine bitterness" and a broken heart, at suitable times. Chassidic teaching contrasts this active remorse with passive depression. The first moves a person to act; the second leaves him stuck.
 
 ## What makes regret healthy
 

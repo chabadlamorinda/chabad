@@ -13,11 +13,11 @@ The chuppah is a simple roof of cloth, fastened to the tops of four poles. It ca
 
 It is more than decoration. In Jewish law the chuppah completes the marriage that began with the betrothal and the ring. Originally the "chuppah" was the groom's own home, or a room added to his father's house, where the couple would live. The canopy we know today recalls that home, and the cloth over the couple's heads is their first shared roof.
 
-The Chabad.org article on the chuppah notes that the canopy form is credited to the Rema, Rabbi Moses Isserles, in the 16th century, although the idea itself is far older and is found in the Talmud.
+the article on the chuppah notes that the canopy form is credited to the Rema, Rabbi Moses Isserles, in the 16th century, although the idea itself is far older and is found in the Talmud.
 
 ## Why do some couples marry under the open sky?
 
-You may have heard that a chuppah is traditionally held outdoors under the stars. Chabad.org explains that Jews in the east of Europe customarily held the chuppah under the open sky, recalling G-d's promise to Abraham that his children would be as many as the stars of the heavens and the sand of the sea. It is a blessing for many generations of Jewish children.
+You may have heard that a chuppah is traditionally held outdoors under the stars. Jewish tradition explains that Jews in the east of Europe customarily held the chuppah under the open sky, recalling G-d's promise to Abraham that his children would be as many as the stars of the heavens and the sand of the sea. It is a blessing for many generations of Jewish children.
 
 This custom is not followed for a couple where either has been married before. If you would like an outdoor chuppah in Lafayette, Moraga or Orinda, or need an indoor one, ask the Rabbi what is best for your wedding.
 
@@ -28,7 +28,7 @@ Only the bride and groom are required to stand under it. The rabbi, the witnesse
 ## What does the chuppah teach about marriage?
 
 - **Home.** Marriage is the founding of a home, a place of calm and stability.
-- **Simplicity.** A simple, even fragile roof shared by two people is the start of everything. Chabad.org favors a plain cloth, such as a tallit on four poles, over an elaborate structure.
+- **Simplicity.** A simple, even fragile roof shared by two people is the start of everything. Jewish law favors a plain cloth, such as a tallit on four poles, over an elaborate structure.
 - **Togetherness.** The chuppah sets the couple apart from the crowd, so that they are not married "in the marketplace," but in a sheltered, private space.
 
 Flowers on a fabric chuppah are acceptable, though a floral structure is not the preferred choice.

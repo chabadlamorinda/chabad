@@ -9,7 +9,7 @@ A legacy gift is a gift you arrange now that takes effect later, and you make it
 
 ## Step 1. Think about what matters to you
 
-Which values and causes do you want to continue after you? Chabad.org presents a planned gift as a contribution to the continuity of the Jewish people. For Chabad of Lamorinda it means education for future generations and keeping Judaism alive in our community.
+Which values and causes do you want to continue after you? Standard guidance presents a planned gift as a contribution to the continuity of the Jewish people. For Chabad of Lamorinda it means education for future generations and keeping Judaism alive in our community.
 
 ## Step 2. Talk with the Rabbi or the Rebbetzin
 
@@ -17,7 +17,7 @@ Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 9
 
 ## Step 3. Choose the way to give
 
-Chabad.org describes three groups of gifts:
+Standard guidance describes three groups of gifts:
 
 - **A will or trust:** a set amount, a specific asset or a percentage. See [Leaving Chabad in Your Will](/learn/leaving-chabad-in-your-will) and [Naming Chabad in Your Living Trust](/learn/naming-chabad-in-your-living-trust).
 - **A retirement account:** a beneficiary form. See [Leaving Your IRA or 401(k) to a Jewish Cause](/learn/leaving-your-ira-to-a-jewish-cause).
@@ -27,13 +27,13 @@ Chabad of Lamorinda also accepts grants from donor-advised funds and gifts of st
 
 ## Step 4. Meet your attorney and your advisor
 
-Chabad.org advises working with an estate attorney experienced in estate planning and discussing your wishes with your financial advisor. Give them the details: the name to use is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. Our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys) gives them wording to start from. This guide is not legal or tax advice; ask your attorney or tax advisor about wording and taxes.
+Standard guidance advises working with an estate attorney experienced in estate planning and discussing your wishes with your financial advisor. Give them the details: the name to use is Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549, a 501(c)(3) nonprofit, tax ID 47-4642750. Our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys) gives them wording to start from. This guide is not legal or tax advice; ask your attorney or tax advisor about wording and taxes.
 
 If you would like your plans to follow Jewish law for your heirs, ask the Rabbi too. See [A Jewish Will](/learn/halachic-will).
 
 ## Step 5. Tell your family
 
-Chabad.org advises discussing your wishes with your family. See [Talking to Your Children About Your Will and Your Legacy Gift](/learn/talking-to-your-children-about-your-will). You may also write an [ethical will](/learn/ethical-will), a letter about your values.
+Standard guidance advises discussing your wishes with your family. See [Talking to Your Children About Your Will and Your Legacy Gift](/learn/talking-to-your-children-about-your-will). You may also write an [ethical will](/learn/ethical-will), a letter about your values.
 
 ## Step 6. Let Chabad of Lamorinda know
 
@@ -48,7 +48,7 @@ Decide what matters to you, talk with the Rabbi, choose a way to give (will, tru
 It is a gift arranged now that takes effect later, most often through a will, trust or beneficiary form.
 
 ### Do I need an attorney?
-For a will or trust, Chabad.org advises an experienced estate attorney. A beneficiary form often needs only the form from the account company, as Chabad.org notes.
+For a will or trust, Standard guidance advises an experienced estate attorney. A beneficiary form often needs only the form from the account company, as Standard guidance notes.
 
 ### Can I make a legacy gift to Chabad of Lamorinda?
 Yes. Chabad of Lamorinda accepts bequests, retirement account and life insurance gifts, donor-advised fund grants and gifts of stock.
@@ -57,7 +57,7 @@ Yes. Chabad of Lamorinda accepts bequests, retirement account and life insurance
 That is personal: a set amount, a percentage or even your entire estate, since the limit of a fifth applies during life, not at death. See [How Much Should I Leave to Tzedakah in My Will?](/learn/how-much-to-leave-to-tzedakah-in-a-will) and talk with the Rabbi.
 
 ### Can I change it later?
-Chabad.org notes that gifts in a will or trust can be changed. Ask your attorney.
+Standard guidance notes that gifts in a will or trust can be changed. Ask your attorney.
 
 ## Take the next step
 

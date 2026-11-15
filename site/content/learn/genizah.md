@@ -9,7 +9,7 @@ Worn-out siddurim, tefillin, mezuzah scrolls and other holy items are not thrown
 
 ## What needs genizah
 
-Chabad.org lists these items as needing genizah:
+These items need genizah:
 
 - Torah scrolls, tefillin (with their straps), and mezuzah scrolls
 - Siddurim, Chumashim and other books of Torah, Talmud and prayer

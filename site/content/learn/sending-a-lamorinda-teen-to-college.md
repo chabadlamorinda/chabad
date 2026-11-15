@@ -19,7 +19,7 @@ Seniors at Acalanes, Campolindo, Miramonte and Las Lomas high schools are busy w
 
 ## Find the Chabad House and the Jewish community
 
-Chabad is on many campuses around the world. Chabad.org's campus pages show how Chabad Houses are a home away from home, often with Shabbat dinners, classes, holiday celebrations and help with kosher food. What each center offers differs, so look at the website of the one near your teen's campus, or ask us and we will be happy to help you find it. Do not assume what is offered; check, since it changes between schools and years.
+Chabad is on many campuses around the world. Chabad Houses are a home away from home, often with Shabbat dinners, classes, holiday celebrations and help with kosher food. What each center offers differs, so look at the website of the one near your teen's campus, or ask us and we will be happy to help you find it. Do not assume what is offered; check, since it changes between schools and years.
 
 A good way to start is to have your teen look up three things before move-in: the Chabad House, the Hillel, and the nearest place for kosher food, if that matters to your family. See [Kosher on Campus](/learn/kosher-on-campus).
 

@@ -9,13 +9,13 @@ Derech eretz (דֶּרֶךְ אֶרֶץ) literally means "the way of the land," 
 
 ## What does derech eretz mean?
 
-Chabad.org explains that the phrase refers to what people commonly do, or what they ought to do. It has several meanings in Jewish sources: ethical, responsible living, ordinary social behavior, being a respectful person, and earning a living. Today most people use it to mean being respectful, especially to parents, elders and teachers, although the article notes this is not the oldest meaning of the words.
+Jewish tradition explains that the phrase refers to what people commonly do, or what they ought to do. It has several meanings in Jewish sources: ethical, responsible living, ordinary social behavior, being a respectful person, and earning a living. Today most people use it to mean being respectful, especially to parents, elders and teachers, although the article notes this is not the oldest meaning of the words.
 
 The Talmud uses derech eretz for many small, practical behaviors: not eating too quickly or too much, not staring at others while they eat, not speaking too loudly, greeting people pleasantly, and spending only what you can afford. In short, it is living with dignity and being considerate of others.
 
 ## "Derech eretz comes before Torah"
 
-In Ethics of Our Fathers (*Pirkei Avot*) 3:17, the Sages teach that if there is no Torah there is no derech eretz, and if there is no derech eretz there is no Torah. Chabad.org points out that good habits and manners are the groundwork on which Torah can stand. A person might know a lot of Torah, but if they treat people badly, something is missing. The reverse is true too: Torah refines our behavior. Read more in [Pirkei Avot](/learn/pirkei-avot) and [Being a Mensch](/learn/being-a-mensch).
+In Ethics of Our Fathers (*Pirkei Avot*) 3:17, the Sages teach that if there is no Torah there is no derech eretz, and if there is no derech eretz there is no Torah. Chassidic teaching points out that good habits and manners are the groundwork on which Torah can stand. A person might know a lot of Torah, but if they treat people badly, something is missing. The reverse is true too: Torah refines our behavior. Read more in [Pirkei Avot](/learn/pirkei-avot) and [Being a Mensch](/learn/being-a-mensch).
 
 Chabad teaching adds that good character is the base for everything. Rabbi Schneur Zalman of Liadi, the first Chabad Rebbe, taught that there can be no Torah without fine character. See [Chinuch](/learn/chinuch).
 

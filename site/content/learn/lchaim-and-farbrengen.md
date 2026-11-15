@@ -9,7 +9,7 @@ A farbrengen (פארברענגען, Yiddish for "to spend time joyfully together
 
 ## What happens at a farbrengen
 
-Chabad.org describes a farbrengen as an informal gathering where people share Torah, sing melodies and enjoy light refreshments. It can mark a birthday, a life-cycle event or a holiday, or take place with no special occasion.
+Chassidic teaching describes a farbrengen as an informal gathering where people share Torah, sing melodies and enjoy light refreshments. It can mark a birthday, a life-cycle event or a holiday, or take place with no special occasion.
 
 A typical farbrengen includes:
 
@@ -20,11 +20,11 @@ A typical farbrengen includes:
 
 ## Why "to life"?
 
-L'chaim reminds us that Judaism chooses life, joy and connection. At a farbrengen it is a way to open the heart, not to party. Chabad.org's guidance is to drink only when the group toasts and to drink sparingly, never reaching the point of acting foolishly. A non-alcoholic l'chaim, such as juice, is perfectly fine. If you would like to know more, see [kosher beer and spirits](/learn/kosher-beer-and-spirits).
+L'chaim reminds us that Judaism chooses life, joy and connection. At a farbrengen it is a way to open the heart, not to party. The Chassidic guidance is to drink only when the group toasts and to drink sparingly, never reaching the point of acting foolishly. A non-alcoholic l'chaim, such as juice, is perfectly fine. If you would like to know more, see [kosher beer and spirits](/learn/kosher-beer-and-spirits).
 
 ## The Rebbe's farbrengens
 
-The Lubavitcher Rebbe held farbrengens on Shabbat and holidays in Crown Heights, Brooklyn, where thousands gathered. Chabad.org tells of one where the Rebbe spoke for about three hours, and the Chassidim raised small cups of wine between talks. One message that day: build communities even before you have perfect individuals.
+The Lubavitcher Rebbe held farbrengens on Shabbat and holidays in Crown Heights, Brooklyn, where thousands gathered. Chassidic teaching tells of one where the Rebbe spoke for about three hours, and the Chassidim raised small cups of wine between talks. One message that day: build communities even before you have perfect individuals.
 
 ## What to expect as a guest
 

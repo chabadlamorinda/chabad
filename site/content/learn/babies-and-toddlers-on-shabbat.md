@@ -7,7 +7,7 @@ local: A new baby and Shabbat? Call Rabbi Yisroel Labkowski at 925-384-7242 and 
 ---
 Caring for a baby on Shabbat is a mitzvah, and the rules are practical: prepare bottles and food before Shabbat, use a stroller only where there is an eruv, and put the baby's health first. A sick child comes before Shabbat rules, and you should never wait to call a doctor.
 
-What follows is general guidance from Chabad.org's article on baby and toddler care on Shabbat. For your specific questions, call the Rabbi.
+What follows is general guidance on baby and toddler care on Shabbat. For your specific questions, call the Rabbi.
 
 ## Strollers and the eruv
 

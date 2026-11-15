@@ -21,7 +21,7 @@ Isaac lives. He and Abraham return home, and G-d renews his blessings to Abraham
 
 Judaism forbids human sacrifice, and the story ends with G-d stopping it. The test was never about harming a child. It was about whether Abraham's devotion to G-d would outweigh even his deepest hopes and instincts.
 
-Chabad.org explains that Abraham had faced earlier tests, yet the Akeidah stands above them. The Talmud (Sanhedrin 89b) says G-d asked for this last test so that the earlier ones would not be seen as empty. Chassidic teaching adds that many people give their lives for something they care about, which is still a form of self-expression. Abraham was willing to set aside his *self*, including his own hopes for the future, because G-d asked. That is why the Akeidah is called the central image of Jewish devotion.
+Jewish tradition explains that Abraham had faced earlier tests, yet the Akeidah stands above them. The Talmud (Sanhedrin 89b) says G-d asked for this last test so that the earlier ones would not be seen as empty. Chassidic teaching adds that many people give their lives for something they care about, which is still a form of self-expression. Abraham was willing to set aside his *self*, including his own hopes for the future, because G-d asked. That is why the Akeidah is called the central image of Jewish devotion.
 
 It is also why the Torah account is read in the daily morning prayers, so we recall it every day, not only on Rosh Hashanah.
 
@@ -56,7 +56,7 @@ Jews read it on the second day of Rosh Hashanah because the day is one of judgme
 Judaism does not allow human sacrifice, and G-d stops Abraham before any harm is done. The Torah calls it a test of Abraham's devotion. For deeper questions, ask the Rabbi.
 
 ### Why is the shofar a ram's horn?
-The shofar recalls the ram that was offered in place of Isaac. Chabad.org explains that blowing it is a plea for G-d to remember Abraham's deed.
+The shofar recalls the ram that was offered in place of Isaac. Jewish teaching explains that blowing it is a plea for G-d to remember Abraham's deed.
 
 ### Where can I hear the shofar in Lafayette, Moraga or Orinda?
 Call Chabad of Lamorinda in Lafayette at 925-384-7242 to hear what is planned for Rosh Hashanah. See also [High Holiday services](/forms/high-holidays).

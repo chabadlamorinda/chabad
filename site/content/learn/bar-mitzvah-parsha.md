@@ -19,7 +19,7 @@ Boys are 13 and girls are 12. A girl becomes responsible a year earlier. The 12 
 
 A Jewish day begins at nightfall, not at midnight. A baby born after sunset belongs to the next Hebrew date. So a baby born at 8 PM may have a Hebrew birthday that is one day later than the date on the secular birth certificate.
 
-This one detail can change the date. If the birth was close to sunset, the exact time and place matter. Chabad.org's date calculator asks for both. If you are not sure, ask the Rabbi, because he can look at it with you.
+This one detail can change the date. If the birth was close to sunset, the exact time and place matter. A Hebrew date calculator asks for both. If you are not sure, ask the Rabbi, because he can look at it with you.
 
 ## Step 3: Find the Torah portion
 

@@ -22,7 +22,7 @@ The Book of Psalms (Tehillim, תְּהִלִּים) is traditionally attributed 
 
 ## When Jews say Psalm 23
 
-- **Hard times**: Chabad.org lists Psalms as a source of comfort in times of distress. Families say Psalms at the bedside of someone who is ill. See [hope in hard times](/learn/hope-in-hard-times).
+- **Hard times**: Jewish tradition sees Psalms as a source of comfort in times of distress. Families say Psalms at the bedside of someone who is ill. See [hope in hard times](/learn/hope-in-hard-times).
 - **At Shabbat meals**: in many communities it is sung, often to a melody, at the third Shabbat meal. Customs vary, so ask the Rabbi what your family or community does.
 - **In mourning**: Psalms are recited near the time of a death and at a funeral. Which psalms and when depends on community custom; ask the Rabbi.
 - **For others**: [praying for others](/learn/praying-for-others) and [Mi Sheberach](/learn/mi-sheberach) often include Psalms.

@@ -29,7 +29,7 @@ So the prayer is really a call to action. The year is not fixed in stone; what w
 
 The tradition tells of Rabbi Amnon of Mainz (Mayence), a respected scholar whom the local duke admired and consulted. When courtiers pressured the duke to make Amnon give up his faith, Amnon refused. According to the story, after he was severely punished he asked to be brought to the synagogue on Rosh Hashanah, and there he recited this prayer, and died as he said the words "He is our G-d, and there is no other."
 
-The story is recorded in the *Ohr Zarua*, a book written in the thirteenth century. Chabad.org notes that some details are questioned, for example that the prayer seems to be older than Rabbi Amnon. The story may well be true at its core, but not every detail can be confirmed. Whatever its origin, it has moved Jews for centuries. If you have questions about the history, ask the Rabbi.
+The story is recorded in the *Ohr Zarua*, a book written in the thirteenth century. Jewish tradition notes that some details are questioned, for example that the prayer seems to be older than Rabbi Amnon. The story may well be true at its core, but not every detail can be confirmed. Whatever its origin, it has moved Jews for centuries. If you have questions about the history, ask the Rabbi.
 
 ## How to experience it if you read little Hebrew
 

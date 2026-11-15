@@ -35,7 +35,7 @@ Not sure which blessing fits a certain food, such as a fruit that grows on a bus
 
 ## Activities to do at home
 
-Chabad.org suggests a few easy ideas for children:
+A few easy ideas for children:
 
 1. **A four-seasons fruit plate.** Draw a tree trunk and branches on a plate with chocolate frosting. Make one tree for each season: pomegranate seeds for spring blossoms, sliced figs and grapes for summer leaves, cornflakes for autumn, and halved mini marshmallows for a bare winter tree with a little snow. Then enjoy the fruit.
 2. **How many seeds are in a pomegranate?** Let each child guess, then count.

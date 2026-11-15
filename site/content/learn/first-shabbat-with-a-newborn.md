@@ -7,7 +7,7 @@ local: New baby and Shabbat? Call Rabbi Labkowski at 925-384-7242 to ask your qu
 ---
 Your first Shabbat with a newborn can be a real gift of rest: light candles, keep the meal simple, accept help, and ask the Rabbi about anything specific to the new mother's health. A baby's needs and a mother's health always come before any stringency, and Shabbat is meant to bring peace, not stress.
 
-For new parents in Lafayette, Moraga and Orinda, here is a realistic way to approach it, drawing on Chabad.org's guidance on Shabbat and childbirth. This guide is general, and personal questions are for the Rabbi.
+For new parents in Lafayette, Moraga and Orinda, here is a realistic way to approach it, drawing on Jewish guidance on Shabbat and childbirth. This guide is general, and personal questions are for the Rabbi.
 
 ## Start small, and keep what you can
 
@@ -19,11 +19,11 @@ The Jewish laws about a woman after childbirth are generous. Jewish law, as set 
 
 ## Meals: let people help
 
-Chabad.org's advice for postpartum recovery is to ask friends to bring food and to have one person coordinate. For Shabbat, this is perfect: food prepared in advance means no cooking on Friday. If you would like a Shabbat meal, see [the Shabbat meal form](/forms/shabbat-meal). Friends can also read [bringing meals to new parents](/learn/meals-for-new-parents). More ideas are in [Shabbat meals](/learn/shabbat-meals).
+The advice for postpartum recovery is to ask friends to bring food and to have one person coordinate. For Shabbat, this is perfect: food prepared in advance means no cooking on Friday. If you would like a Shabbat meal, see [the Shabbat meal form](/forms/shabbat-meal). Friends can also read [bringing meals to new parents](/learn/meals-for-new-parents). More ideas are in [Shabbat meals](/learn/shabbat-meals).
 
 ## Baby gear on Shabbat
 
-Chabad.org's guide to baby care on Shabbat covers the practical details, and our guide [babies and toddlers on Shabbat](/learn/babies-and-toddlers-on-shabbat) summarizes them. Briefly:
+The laws of baby care on Shabbat cover the practical details, and our guide [babies and toddlers on Shabbat](/learn/babies-and-toddlers-on-shabbat) summarizes them. Briefly:
 
 1. **Bottles and baby food** are prepared before candle lighting.
 2. **A stroller** may be used only where there is an eruv. Read about the [eruv](/learn/eruv) and ask the Rabbi where you can go.
@@ -43,7 +43,7 @@ Yes. Keep the parts you can, such as candles and a simple meal, and ask the Rabb
 When health is involved, yes. For the first days after childbirth, Shabbat may be set aside for the mother's needs. After that, ask the Rabbi about her situation.
 
 ### What do I do about bottles and formula on Shabbat?
-Prepare them before Shabbat. Chabad.org has rules about warming, so read [babies and toddlers on Shabbat](/learn/babies-and-toddlers-on-shabbat) or ask the Rabbi.
+Prepare them before Shabbat. Jewish tradition has rules about warming, so read [babies and toddlers on Shabbat](/learn/babies-and-toddlers-on-shabbat) or ask the Rabbi.
 
 ### Can I use a stroller on Shabbat?
 Only where there is an eruv. See [the eruv guide](/learn/eruv), and ask the Rabbi.

@@ -5,7 +5,7 @@ category: Lamorinda
 related: kosher-in-lamorinda, meaningful-bar-bat-mitzvah-celebration, kosher-certification, hosting-a-kosher-guest, bar-bat-mitzvah-in-lamorinda, kosher-wine
 local: Planning a simcha with kosher food? Call Rabbi Labkowski at 925-384-7242 and he will gladly help you ask the right questions.
 ---
-To serve kosher food at a bar mitzvah, wedding or party in Lamorinda, ask your caterer or venue who certifies the kitchen, whether a kosher supervisor (a *mashgiach*, משגיח) will be present, and whether the menu is meat or dairy. Chabad.org advises finding out who is responsible for kashrut before you book, and a reliable caterer will be glad to answer. Chabad of Lamorinda does not recommend businesses, but the Rabbi will help you check the answers.
+To serve kosher food at a bar mitzvah, wedding or party in Lamorinda, ask your caterer or venue who certifies the kitchen, whether a kosher supervisor (a *mashgiach*, משגיח) will be present, and whether the menu is meat or dairy. Jewish tradition advises finding out who is responsible for kashrut before you book, and a reliable caterer will be glad to answer. Chabad of Lamorinda does not recommend businesses, but the Rabbi will help you check the answers.
 
 ## Start with the big question: who is responsible for the kashrut?
 
@@ -14,7 +14,7 @@ To serve kosher food at a bar mitzvah, wedding or party in Lamorinda, ask your c
 1. **Who certifies the food?** Get the name of the kosher certification agency.
 2. **Is the certificate current?** Ask for a copy for your event and check the date. Read [kosher certification](/learn/kosher-certification) to understand what a *hechsher* (הכשר, a kosher seal) means.
 3. **Is it for the caterer, the kitchen, or this particular event?** Some certificates cover only a specific location.
-4. **Will a mashgiach be present?** Chabad.org describes a mashgiach as essential: someone who checks the incoming products and is present during food preparation. Ask whether he or she will be there for preparation and during the serving.
+4. **Will a mashgiach be present?** Jewish tradition describes a mashgiach as essential: someone who checks the incoming products and is present during food preparation. Ask whether he or she will be there for preparation and during the serving.
 
 ## The venue: kitchen, dishes and equipment
 
@@ -30,7 +30,7 @@ For a smaller party at home, see the Rabbi about how to arrange your kitchen, an
 
 - **Meat or dairy?** The two are not served together in a kosher meal. Choose one and tell your caterer early. A dairy or vegetarian menu is simpler, especially if the venue's kitchen is not kosher.
 - **Bread for a festive meal:** at a bar mitzvah or wedding meal, bread is traditionally part of the celebration, with the blessing over bread and then Grace after Meals.
-- **At a wedding:** Chabad.org notes that meat and wine are best at joyous occasions, but are not obligatory, and a dairy festive meal is acceptable. See [Jewish wedding customs](/learn/jewish-wedding-customs).
+- **At a wedding:** Jewish sources say that meat and wine are best at joyous occasions, but are not obligatory, and a dairy festive meal is acceptable. See [Jewish wedding customs](/learn/jewish-wedding-customs).
 - **Wine and grape juice:** ask that these carry kosher certification, and read [kosher wine](/learn/kosher-wine).
 - **Insects and eggs:** produce and eggs need checking, and your mashgiach should handle this.
 
@@ -58,7 +58,7 @@ Not sure what a certificate means, or whether a menu is truly kosher? Call Rabbi
 Ask the caterer who certifies the kitchen and whether a mashgiach will be present. Chabad of Lamorinda does not recommend businesses, but the Rabbi can help you check the answers: call 925-384-7242.
 
 ### What is a mashgiach?
-A mashgiach is a kosher supervisor who checks ingredients and watches food preparation to make sure everything is kosher. Chabad.org calls one essential for a caterer.
+A mashgiach is a kosher supervisor who checks ingredients and watches food preparation to make sure everything is kosher. Jewish teaching calls one essential for a caterer.
 
 ### Can I have a kosher event at a venue with a non-kosher kitchen?
 Often yes, with a caterer who brings in food prepared elsewhere or uses a kasher-able kitchen. Ask the Rabbi before booking.

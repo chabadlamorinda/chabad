@@ -9,7 +9,7 @@ Isaac (Yitzchak, יִצְחָק) was the second of the three patriarchs, the son
 
 ## A son born with laughter
 
-Isaac was born when Abraham was 100 years old and Sarah was 90, a year after the angels announced the news. Chabad.org, following Jewish tradition, says he was born on the first day of Passover and circumcised on the eighth day. He was named Yitzchak, "laughter," because of the joy his birth brought. Read about his parents in [Abraham and Sarah](/learn/abraham-and-sarah).
+Isaac was born when Abraham was 100 years old and Sarah was 90, a year after the angels announced the news. Jewish tradition says he was born on the first day of Passover and circumcised on the eighth day. He was named Yitzchak, "laughter," because of the joy his birth brought. Read about his parents in [Abraham and Sarah](/learn/abraham-and-sarah).
 
 ## The Binding of Isaac
 

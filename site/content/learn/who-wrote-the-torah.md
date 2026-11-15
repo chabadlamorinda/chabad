@@ -5,15 +5,15 @@ category: Jewish ideas
 related: torah-and-science, oral-torah, moses, torah, how-to-start-learning-torah
 local: Curious about the Torah? Join a class in Lafayette at /programs/adult-education or call Rabbi Labkowski at 925-384-7242.
 ---
-According to Jewish tradition, Moses wrote the Torah, but not as an author composing his own book. He acted as a channel: he received G-d's words and wrote them down faithfully. Chabad.org explains that this is the difference between a human author and a prophet who "heard" G-d at Sinai and passed on what he heard.
+According to Jewish tradition, Moses wrote the Torah, but not as an author composing his own book. He acted as a channel: he received G-d's words and wrote them down faithfully. Chassidic teaching explains that this is the difference between a human author and a prophet who "heard" G-d at Sinai and passed on what he heard.
 
 ## What "wrote" means here
 
-The Torah (תּוֹרָה, "teaching") is the Five Books of Moses. Chabad.org describes Moses as a conduit for Divine communication, relaying G-d's instructions precisely, without adding his own interpretation. That is why the Torah is called the word of G-d, not the words of Moses.
+The Torah (תּוֹרָה, "teaching") is the Five Books of Moses. Jewish tradition describes Moses as a conduit for Divine communication, relaying G-d's instructions precisely, without adding his own interpretation. That is why the Torah is called the word of G-d, not the words of Moses.
 
 ## How and when Moses wrote it
 
-Chabad.org gives this picture:
+Jewish tradition gives this picture:
 
 - At Sinai, Moses received the Ten Commandments and the laws that follow them, then spent forty days on the mountain.
 - Over the following decades in the wilderness, he wrote in stages. Sometimes he wrote and then spoke the words to the people, sometimes he spoke first and then wrote down what he had said, and sometimes he recorded the counts of the people.
@@ -26,7 +26,7 @@ The final verses of the Torah describe the death of Moses. The sages discuss who
 
 ## Passages that seem to disagree
 
-People often ask about passages that seem to disagree. A Chabad.org question and answer gives an example. Genesis 6:3 seems to say that human life will be limited to 120 years, yet the Torah later reports longer lives. Rashi explains that the verse is about the generation of the Flood: G-d would give them 120 years to repent before the destruction. In Jewish tradition, such passages are an invitation to look deeper, and that is why there are so many commentaries on them.
+People often ask about passages that seem to disagree. One question and answer gives an example. Genesis 6:3 seems to say that human life will be limited to 120 years, yet the Torah later reports longer lives. Rashi explains that the verse is about the generation of the Flood: G-d would give them 120 years to repent before the destruction. In Jewish tradition, such passages are an invitation to look deeper, and that is why there are so many commentaries on them.
 
 ## Why it matters
 
@@ -35,7 +35,7 @@ If the Torah is from G-d, then its mitzvahs are not just ancient customs or good
 ## Common questions
 
 ### Who wrote the Torah according to Judaism?
-Moses wrote it, as a channel for the words G-d gave him, according to Jewish tradition. Chabad.org presents him as relaying G-d's words precisely, not as an author in the usual sense.
+Moses wrote it, as a channel for the words G-d gave him, according to Jewish tradition. Chassidic teaching presents him as relaying G-d's words precisely, not as an author in the usual sense.
 
 ### Did Moses write the whole Torah, even the part about his death?
 The sages discuss this. Some say Joshua wrote the last verses, and others say Moses wrote them in tears. Nachmanides holds that the entire Torah is Moses' transcription.
@@ -44,7 +44,7 @@ The sages discuss this. Some say Joshua wrote the last verses, and others say Mo
 Moses received the first laws at Sinai and wrote over the following forty years of wandering. By the end of his life he had gathered it together and given copies to the tribes.
 
 ### Does the Torah contradict itself?
-Chabad.org teaches that apparent contradictions point to deeper meanings, and that the commentaries explain them. Genesis 6:3 and the 120 years is one well-known example.
+Jewish tradition teaches that apparent contradictions point to deeper meanings, and that the commentaries explain them. Genesis 6:3 and the 120 years is one well-known example.
 
 ### Is it all right to ask these questions?
 Yes. Questions are central to Jewish learning, and Torah study includes asking and debating. If a question troubles you, [ask the Rabbi](/help/talk-to-the-rabbi).

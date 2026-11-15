@@ -13,7 +13,7 @@ Akiva (עֲקִיבָא) was a shepherd, unlearned and poor, working for Kalba S
 
 ## Starting at forty
 
-According to the tradition Chabad.org tells, Akiva saw water dripping on a stone and noticed that the soft water had worn a hole in the hard rock. He reasoned: if water can carve stone, then words of Torah can penetrate my mind. He sat down to learn the Hebrew alphabet, together with his young son.
+According to tradition, Akiva saw water dripping on a stone and noticed that the soft water had worn a hole in the hard rock. He reasoned: if water can carve stone, then words of Torah can penetrate my mind. He sat down to learn the Hebrew alphabet, together with his young son.
 
 The lesson is simple and personal. Many families in Lafayette, Moraga and Orinda say, "I never had a Jewish education." Rabbi Akiva began from the very first letter, and so can you. See [adult education](/programs/adult-education).
 

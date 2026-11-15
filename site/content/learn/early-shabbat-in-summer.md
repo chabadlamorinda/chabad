@@ -15,17 +15,17 @@ For this week's Friday-night service time at Chabad of Lamorinda, see {kabbalat-
 
 ## What is plag hamincha?
 
-The Jewish day is divided into twelve "halachic hours," which grow longer in summer and shorter in winter. **Plag hamincha** is "the half of the Minchah," the point 1¼ of those hours before sunset. Chabad.org explains that if you prayed Mincha before plag hamincha, you may pray the Friday-night prayers and accept Shabbat any time after it, even well before nightfall. Chabad.org says this is especially useful in summer.
+The Jewish day is divided into twelve "halachic hours," which grow longer in summer and shorter in winter. **Plag hamincha** is "the half of the Minchah," the point 1¼ of those hours before sunset. Jewish tradition explains that if you prayed Mincha before plag hamincha, you may pray the Friday-night prayers and accept Shabbat any time after it, even well before nightfall. Chassidic teaching says this is especially useful in summer.
 
 We do not list plag times here because they change every week; see [Shabbat times](/shabbat-times) or ask the Rabbi.
 
 ## Tosefet Shabbat: adding to the holy day
 
-The mitzvah of **tosefet Shabbat** (תּוֹסֶפֶת שַׁבָּת), "adding to Shabbat," means starting Shabbat a little before it must start and ending it a little after. Chabad.org explains that candle lighting is customarily 18 minutes before sunset, although customs range from about 15 to 40 minutes. A woman who lights candles also accepts Shabbat at that moment. Those who do not light may keep working until sunset, or accept Shabbat earlier, for example by praying the Shabbat prayers after plag hamincha. See [Shabbat candles](/learn/shabbat-candles) and [Kabbalat Shabbat](/learn/kabbalat-shabbat).
+The mitzvah of **tosefet Shabbat** (תּוֹסֶפֶת שַׁבָּת), "adding to Shabbat," means starting Shabbat a little before it must start and ending it a little after. The tradition explains that candle lighting is customarily 18 minutes before sunset, although customs range from about 15 to 40 minutes. A woman who lights candles also accepts Shabbat at that moment. Those who do not light may keep working until sunset, or accept Shabbat earlier, for example by praying the Shabbat prayers after plag hamincha. See [Shabbat candles](/learn/shabbat-candles) and [Kabbalat Shabbat](/learn/kabbalat-shabbat).
 
 ## Practical points
 
-1. **Choose one custom and keep it.** Chabad.org notes that there is an old disagreement about when Mincha and Maariv may be prayed, and you should follow one view consistently, not switch week to week.
+1. **Choose one custom and keep it.** Jewish tradition notes that there is an old disagreement about when Mincha and Maariv may be prayed, and you should follow one view consistently, not switch week to week.
 2. **If you pray Maariv before nightfall,** you still repeat the Shema after the stars appear.
 3. **The Omer count** is not said before sunset; count after dark.
 4. **Candles still matter.** Light at the right time for your home; your case may be personal, so ask the Rabbi.
@@ -43,7 +43,7 @@ Plag hamincha is the point 1¼ halachic hours before sunset, when the late after
 Summer sunsets are late, so Friday-night services in Lafayette are scheduled for a family-friendly hour. See {kabbalat-shabbat} for this week's time.
 
 ### Is it okay to light Shabbat candles early?
-Candles may be lit from plag hamincha on (not earlier, according to Chabad.org), and the woman lighting accepts Shabbat at that moment. Ask the Rabbi how to do it in your home, and when Kiddush and the meal may begin.
+Candles may be lit from plag hamincha on (not earlier, according to Chassidic teaching), and the woman lighting accepts Shabbat at that moment. Ask the Rabbi how to do it in your home, and when Kiddush and the meal may begin.
 
 ### When is candle lighting in Lafayette, Moraga and Orinda?
 Times change weekly and differ by town. See [Shabbat times](/shabbat-times).

@@ -9,7 +9,7 @@ Noah's ark story is in Genesis 6 to 9: G-d tells the righteous Noah to build an 
 
 ## Why the flood came
 
-The Torah says the earth had become corrupt and filled with violence. People had stopped treating one another with decency. Noah (נֹחַ) was a righteous man who "walked with G-d." Chabad.org notes that only Noah, his family and representatives of every living species survived. You can read the full portion in the weekly reading Noach, see [parsha](/parsha).
+The Torah says the earth had become corrupt and filled with violence. People had stopped treating one another with decency. Noah (נֹחַ) was a righteous man who "walked with G-d." Only Noah, his family and representatives of every living species survived. You can read the full portion in the weekly reading Noach, see [parsha](/parsha).
 
 ## The story, step by step
 
@@ -26,11 +26,11 @@ Noah was righteous, yet the Sages compare him with Abraham. Rashi, quoting the S
 
 ## A Chassidic lesson: the ark is a word
 
-In Hebrew, teivah means both "ark" and "word." Chabad.org shares the Baal Shem Tov's reading: G-d tells Noah to enter the "word," meaning the words of prayer and Torah study, which become a refuge amid the raging waters of life. The Chassidic sources also connect the flood (mabul) with "confusion" (balal). When life feels overwhelming, step into the words of prayer or Torah study; that is your ark.
+In Hebrew, teivah means both "ark" and "word." The Baal Shem Tov's reading is this: G-d tells Noah to enter the "word," meaning the words of prayer and Torah study, which become a refuge amid the raging waters of life. The Chassidic sources also connect the flood (mabul) with "confusion" (balal). When life feels overwhelming, step into the words of prayer or Torah study; that is your ark.
 
 ## The rainbow
 
-The rainbow is the sign of G-d's covenant with Noah. Chabad.org writes that it was set as a sign of the new covenant after the flood. Jewish tradition has a blessing to say upon seeing a rainbow, which acknowledges that G-d remembers His covenant and keeps His word. See [blessings on nature](/learn/blessings-on-nature).
+The rainbow is the sign of G-d's covenant with Noah. It was set as a sign of the new covenant after the flood. Jewish tradition has a blessing to say upon seeing a rainbow, which acknowledges that G-d remembers His covenant and keeps His word. See [blessings on nature](/learn/blessings-on-nature).
 
 ## The seven Noahide laws
 

@@ -19,7 +19,7 @@ When the song is read, the congregation listens with special attention, and the 
 
 ## Why feed the birds?
 
-Chabad.org explains that some people feed the birds on Shabbat Shirah, and the custom has several explanations:
+Jewish tradition explains that some people feed the birds on Shabbat Shirah, and the custom has several explanations:
 
 - The Midrash says birds ate fruit from trees that grew on the seabed, and then joined the singing.
 - Birds are known for their sweet songs, and we feed them when we sing praise.
@@ -54,7 +54,7 @@ For more ways to include children in Shabbat, see [Shabbat with kids](/learn/sha
 It is the Shabbat of Parshat Beshalach, when we read the Song of the Sea. "Shirah" means song.
 
 ### Why do we feed the birds on Shabbat Shirah?
-Mostly in honor of the birds' part in the song, according to the Midrash, and because birds sing G-d's praise. Chabad.org lists several reasons.
+Mostly in honor of the birds' part in the song, according to the Midrash, and because birds sing G-d's praise. Jewish tradition lists several reasons.
 
 ### Can I feed the birds on Shabbat itself?
 Most authorities say no, since feeding animals on Shabbat is restricted. Put the food out before Shabbat begins.

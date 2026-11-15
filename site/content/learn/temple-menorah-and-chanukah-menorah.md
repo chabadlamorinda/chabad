@@ -9,7 +9,7 @@ The Menorah of the Holy Temple had seven lamps, while the Chanukah menorah, also
 
 ## The Menorah of the Temple
 
-According to Chabad.org, the Temple menorah was made of pure gold, hammered from a single piece, with a central stem and six branches rising at an angle. It had seven lamps, each a cup for oil with a wick. It stood in the holy chamber of the Mishkan, and later of the Temple, where Aharon and the Kohanim after him lit it, in the daytime, using only pure olive oil.
+According to Jewish tradition, the Temple menorah was made of pure gold, hammered from a single piece, with a central stem and six branches rising at an angle. It had seven lamps, each a cup for oil with a wick. It stood in the holy chamber of the Mishkan, and later of the Temple, where Aharon and the Kohanim after him lit it, in the daytime, using only pure olive oil.
 
 You can read about the place where it stood in [the Holy Temple](/learn/the-holy-temple) and about its first home in [the Mishkan](/learn/the-mishkan).
 
@@ -17,7 +17,7 @@ You can read about the place where it stood in [the Holy Temple](/learn/the-holy
 
 The Chanukah menorah has eight branches and a place for the shamash. It can be made of any material that is safe for fire, and it is lit after sundown, ideally at the entrance facing the street. Many communities light it indoors near a door or window. Olive oil is the ideal fuel, and any safe, reliable fuel, including candles, is also fine. For help choosing one, see [choosing a kosher menorah](/learn/choosing-a-kosher-menorah).
 
-Chabad.org also notes that the candles are placed from right to left and lit from left to right, with the newest light first. An electric menorah can decorate or help publicize the miracle, but it does not fulfill the mitzvah, which needs a real flame. For the details of lighting, read [the Chanukah menorah](/learn/chanukah-menorah).
+In addition, the candles are placed from right to left and lit from left to right, with the newest light first. An electric menorah can decorate or help publicize the miracle, but it does not fulfill the mitzvah, which needs a real flame. For the details of lighting, read [the Chanukah menorah](/learn/chanukah-menorah).
 
 ## Side by side
 
@@ -29,7 +29,7 @@ Chabad.org also notes that the candles are placed from right to left and lit fro
 
 ## The shape of the branches
 
-Chabad.org notes that the Rambam (Maimonides) and Rashi describe the branches as diagonal, straight lines rising from the center, and not rounded. Chabad follows this view, so Chabad menorahs have straight arms. All eight lights stand level, in a row, with a place for the shamash.
+The Rambam (Maimonides) and Rashi describe the branches as diagonal, straight lines rising from the center, and not rounded. Chabad follows this view, so Chabad menorahs have straight arms. All eight lights stand level, in a row, with a place for the shamash.
 
 ## Why seven in the Temple and eight on Chanukah?
 
@@ -46,16 +46,16 @@ Another idea from the Rebbe's teaching: the Temple menorah was lit inside, where
 There are eight lights for the eight nights of Chanukah, and one more, the shamash, "attendant," which lights the others.
 
 ### Can I use the seven-branched menorah on Chanukah?
-Halacha sets the Chanukah menorah at eight branches, as Chabad.org explains, so the seven-branched shape belongs to the Temple.
+Halacha sets the Chanukah menorah at eight branches, so the seven-branched shape belongs to the Temple.
 
 ### Can an electric menorah fulfill the mitzvah?
-According to Chabad.org, no. An electric menorah can decorate, but the mitzvah requires a real flame.
+No. An electric menorah can decorate, but the mitzvah requires a real flame.
 
 ### Where can I find a kosher menorah near Lafayette, Moraga or Orinda?
 Bay Kosher, a project of Chabad of Lamorinda, is the local source for Chanukah and kosher items. See [Bay Kosher](/programs/bay-kosher) or [Chanukah shopping in Lamorinda](/learn/chanukah-shopping-in-lamorinda).
 
 ### Are the branches of the Chanukah menorah curved or straight?
-Chabad.org says the Rambam and Rashi describe straight, diagonal branches. Chabad menorahs have straight arms.
+The Rambam and Rashi describe straight, diagonal branches. Chabad menorahs have straight arms.
 
 ## Take the next step
 

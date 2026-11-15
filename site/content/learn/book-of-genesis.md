@@ -9,7 +9,7 @@ The Book of Genesis, called Bereishit (בראשית, "In the beginning") in Hebr
 
 ## What Genesis is, in a few facts
 
-Genesis is the first book of the Torah, and it has the most weekly portions of the five books: twelve. Chabad.org notes that it covers some 2,300 years. Its Hebrew name comes from the first word of the Torah. The English name "Genesis" means "origin." Over half of the book is about our Patriarchs and Matriarchs, and about a quarter is the story of Joseph and his brothers, which leads straight into the [Book of Exodus](/learn/book-of-exodus).
+Genesis is the first book of the Torah, and it has the most weekly portions of the five books: twelve. Jewish tradition notes that it covers some 2,300 years. Its Hebrew name comes from the first word of the Torah. The English name "Genesis" means "origin." Over half of the book is about our Patriarchs and Matriarchs, and about a quarter is the story of Joseph and his brothers, which leads straight into the [Book of Exodus](/learn/book-of-exodus).
 
 Every year the reading begins again on [Simchat Torah](/learn/simchat-torah-for-beginners), and we read the whole Torah, one portion each week. See [the weekly Torah portion](/learn/weekly-parsha) and [what happens at the Torah reading](/learn/torah-reading).
 

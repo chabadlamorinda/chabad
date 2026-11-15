@@ -9,7 +9,7 @@ When the last child leaves home, many parents in Lafayette, Moraga and Orinda fe
 
 ## It is normal to feel it
 
-A quiet house can feel strange after years of carpools, homework and noise. Allow yourself to feel both the pride and the sadness. A woman writing on Chabad.org describes how so much of our sense of self rests on roles such as parent, and when a role grows less defined we can ask, "Who am I now?" Her answer was to lean on something that is always there, her Jewish heritage and the community around it. You are still a parent, and you are also someone with your own soul, mind and mission.
+A quiet house can feel strange after years of carpools, homework and noise. Allow yourself to feel both the pride and the sadness. A woman writing on Jewish tradition describes how so much of our sense of self rests on roles such as parent, and when a role grows less defined we can ask, "Who am I now?" Her answer was to lean on something that is always there, her Jewish heritage and the community around it. You are still a parent, and you are also someone with your own soul, mind and mission.
 
 ## Rediscover your spouse
 

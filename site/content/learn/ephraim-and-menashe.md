@@ -9,7 +9,7 @@ Ephraim and Menashe (אפרים ומנשה) were the sons of Joseph, born in Egy
 
 ## Who were Ephraim and Menashe?
 
-According to Chabad.org, they were the sons of Joseph and his wife Asenath. Though they were born in Egypt, a spiritually difficult place, they were raised in the ways of their forefathers. Near the end of his life, Jacob made them each a full tribe, so there would be two tribes from Joseph. That is why the number of tribes stays twelve. See [the twelve tribes](/learn/twelve-tribes).
+According to Jewish tradition, they were the sons of Joseph and his wife Asenath. Though they were born in Egypt, a spiritually difficult place, they were raised in the ways of their forefathers. Near the end of his life, Jacob made them each a full tribe, so there would be two tribes from Joseph. That is why the number of tribes stays twelve. See [the twelve tribes](/learn/twelve-tribes).
 
 ## Jacob's blessing
 
@@ -17,7 +17,7 @@ The story is in the portion Vayechi, at the end of [Genesis](/learn/book-of-gene
 
 ## Why these two?
 
-- **They stayed Jewish in exile.** Chabad.org notes they were the first Jewish children to grow up away from home, in a foreign culture, and they stayed steadfast. Parents in Lafayette, Moraga and Orinda who raise children among many cultures can feel this blessing.
+- **They stayed Jewish in exile.** Chassidic teaching notes they were the first Jewish children to grow up away from home, in a foreign culture, and they stayed steadfast. Parents in Lafayette, Moraga and Orinda who raise children among many cultures can feel this blessing.
 - **Their names carry two messages.** Menashe, "G-d made me forget," recalls Joseph's pain and distance from his father's house. Ephraim, "G-d made me fruitful in the land of my affliction," means finding holiness and growth even in a challenging place. Chabad teaching says Ephraim shows the deeper purpose, which is why Jacob placed his right hand on him.
 - **No jealousy.** Unlike most brothers in Genesis, they did not compete. Many parents see this as a blessing for siblings to love each other.
 

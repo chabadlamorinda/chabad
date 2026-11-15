@@ -28,7 +28,7 @@ The tribe of Levi was set apart to serve in the Tabernacle and later the [Holy T
 
 ## Why we are called "Jews"
 
-The word Jew, Yehudi (יְהוּדִי), comes from Judah (Yehuda). After the kingdom split and the ten northern tribes were exiled, the people who remained were known as Yehudim, which became the name of the whole nation. But the Jewish people did not come only from Judah and Benjamin and half of Menashe. Chabad.org explains that a tenth of the ten tribes stayed in the Land, and others, gathered by the prophet Jeremiah, were brought back and joined the Jewish nation.
+The word Jew, Yehudi (יְהוּדִי), comes from Judah (Yehuda). After the kingdom split and the ten northern tribes were exiled, the people who remained were known as Yehudim, which became the name of the whole nation. But the Jewish people did not come only from Judah and Benjamin and half of Menashe. A tenth of the ten tribes stayed in the Land, and others, gathered by the prophet Jeremiah, were brought back and joined the Jewish nation.
 
 ## What about the ten lost tribes?
 
@@ -50,7 +50,7 @@ Most Jews know only whether they are Kohen, Levi or Yisrael; the exact tribe is 
 The word comes from Judah (Yehuda), whose tribe's name came to describe the whole Jewish people.
 
 ### Are Jews descended only from the tribe of Judah?
-No. Chabad.org explains that remnants of the other tribes also joined the Jewish people.
+No. Remnants of the other tribes also joined the Jewish people.
 
 ### What happened to the ten lost tribes?
 They were exiled, and some were gathered back by Jeremiah while others are considered lost. Tradition speaks of their return in the time of Moshiach.

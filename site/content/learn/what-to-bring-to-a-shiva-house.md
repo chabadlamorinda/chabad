@@ -11,14 +11,14 @@ This guide is for friends, neighbors and colleagues in Lafayette, Moraga, Orinda
 
 ## Start with this: you do not need to bring anything
 
-Chabad.org says that visitors are generally not expected to bring anything. A shiva visit is about comforting mourners, and the *mitzvah* (commandment) is the visit itself. What matters is to come with a patient and sensitive heart, ready to listen. See [comforting mourners](/learn/comforting-mourners) and [shiva](/learn/shiva).
+Jewish tradition says that visitors are generally not expected to bring anything. A shiva visit is about comforting mourners, and the *mitzvah* (commandment) is the visit itself. What matters is to come with a patient and sensitive heart, ready to listen. See [comforting mourners](/learn/comforting-mourners) and [shiva](/learn/shiva).
 
 ## Bringing food
 
 Friends often provide food for the mourners and their guests, because the family is in shock and should not need to cook. Bringing food is optional, and if you do, here is how:
 
 1. **Ask first.** Contact whoever is organizing meals for the family, so they do not receive ten lasagnas on the same day.
-2. **Keep it kosher.** If the family keeps kosher, bring kosher take-out or food that is clearly kosher, and ask them what they need. Chabad.org suggests kosher take-out as a simple option. If you are not sure, call the Rabbi.
+2. **Keep it kosher.** If the family keeps kosher, bring kosher take-out or food that is clearly kosher, and ask them what they need. Jewish law suggests kosher take-out as a simple option. If you are not sure, call the Rabbi.
 3. **Keep it simple.** Shiva is not a party. Plain, comforting food is perfect.
 4. **Make it easy.** Disposable plates, a note, no need to be thanked.
 
@@ -26,7 +26,7 @@ Many communities organize a "meal train," where friends sign up to bring a meal 
 
 ## The first meal after the funeral
 
-The first meal the mourners eat after the funeral is called the *seudat havra'ah* (meal of condolence), and it is traditionally provided by neighbors, not the family itself. Chabad.org explains that it includes at least bread or rolls and hard-boiled eggs, and may include lentils, cooked vegetables and a drink. The custom reflects wisdom: a mourner may be tempted not to eat, and the neighbors' visit turns them from spectators into participants. If you are a neighbor or a close friend, ask the family or the Rabbi whether you can help provide it.
+The first meal the mourners eat after the funeral is called the *seudat havra'ah* (meal of condolence), and it is traditionally provided by neighbors, not the family itself. The tradition explains that it includes at least bread or rolls and hard-boiled eggs, and may include lentils, cooked vegetables and a drink. The custom reflects wisdom: a mourner may be tempted not to eat, and the neighbors' visit turns them from spectators into participants. If you are a neighbor or a close friend, ask the family or the Rabbi whether you can help provide it.
 
 ## Other things you can bring
 

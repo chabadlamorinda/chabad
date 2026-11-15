@@ -5,13 +5,13 @@ category: Shabbat & holidays
 related: dvar-torah-at-the-shabbat-table, shabbat-meals, weekly-parsha, lashon-hara, shabbat-afternoon-ideas
 local: Want to experience a Shabbat table full of conversation and song? Ask about a Shabbat meal at /forms/shabbat-meal or call Rabbi Labkowski at 925-384-7242.
 ---
-Good Shabbat table conversation starters are simple questions about the weekly Torah portion, gratitude, kindness and family stories that everyone, from a child to a guest, can answer. Chabad.org suggests filling the Friday night meal with Torah thoughts, stories of Divine Providence, expressions of gratitude, inspiring stories and singing, so that the evening is more than a meal.
+Good Shabbat table conversation starters are simple questions about the weekly Torah portion, gratitude, kindness and family stories that everyone, from a child to a guest, can answer. Jewish tradition suggests filling the Friday night meal with Torah thoughts, stories of Divine Providence, expressions of gratitude, inspiring stories and singing, so that the evening is more than a meal.
 
 For families in Lafayette, Moraga and Orinda, with phones put away on Shabbat, a few good questions turn a quiet dinner into the best conversation of the week. Pick one or two, not all.
 
 ## Start with gratitude
 
-Chabad.org mentions expressions of gratitude as a core part of Shabbat conversation. Try these:
+Jewish tradition mentions expressions of gratitude as a core part of Shabbat conversation. Try these:
 
 - What is one good thing that happened to you this week?
 - Who helped you this week, and how could we thank them?
@@ -20,7 +20,7 @@ Chabad.org mentions expressions of gratitude as a core part of Shabbat conversat
 
 ## Ask about the parsha
 
-Each week has a Torah portion, the *parsha* (פָּרָשָׁה). Chabad.org's Shabbat guides recommend discussing it at the meals. See [this week's parsha](/parsha), [weekly parsha](/learn/weekly-parsha) and [a dvar Torah at the Shabbat table](/learn/dvar-torah-at-the-shabbat-table). Questions that work with any portion:
+Each week has a Torah portion, the *parsha* (פָּרָשָׁה). It is recommended to discuss it at the meals. See [this week's parsha](/parsha), [weekly parsha](/learn/weekly-parsha) and [a dvar Torah at the Shabbat table](/learn/dvar-torah-at-the-shabbat-table). Questions that work with any portion:
 
 - Who is the main person in this week's story, and what do they want?
 - What would you have done in their place?
@@ -37,11 +37,11 @@ You do not need to know the answer. A good question is the point, and it is fine
 - How can we make our home a place where everyone feels welcome?
 - What is a way we can be better to each other next week?
 
-For a reminder of what to avoid at the table, see [lashon hara](/learn/lashon-hara), which teaches us to avoid speaking badly about others. Chabad.org also advises avoiding arguments and anger, which it compares to a fire, so the table stays peaceful.
+For a reminder of what to avoid at the table, see [lashon hara](/learn/lashon-hara), which teaches us to avoid speaking badly about others. It is also advised to avoid arguments and anger, which it compares to a fire, so the table stays peaceful.
 
 ## Stories and memories
 
-Chabad.org mentions inspiring stories and tales of Divine Providence, meaning how G-d guides events in our lives. You can ask:
+The tradition mentions inspiring stories and tales of Divine Providence, meaning how G-d guides events in our lives. You can ask:
 
 - Tell us about a time something happened at just the right moment.
 - What is a story you heard from a grandparent or older relative?
@@ -57,11 +57,11 @@ For young children:
 - If you could give G-d a thank-you note, what would it say?
 - Who is your favorite person in the Torah, and why?
 
-For guests, ask thoughtful questions they are comfortable answering. Chabad.org says people remember how they were treated more than what they ate. Avoid hard personal topics and politics unless the guest raises them, and let each person pass on a question.
+For guests, ask thoughtful questions they are comfortable answering. Jewish tradition says people remember how they were treated more than what they ate. Avoid hard personal topics and politics unless the guest raises them, and let each person pass on a question.
 
 ## Add song and silence
 
-Chabad.org also suggests singing Shabbat songs, including wordless Chassidic melodies called *niggunim* (ניגונים). A song between questions keeps the evening alive. See [zemirot](/learn/zemirot).
+It is also suggested to sing Shabbat songs, including wordless Chassidic melodies called *niggunim* (ניגונים). A song between questions keeps the evening alive. See [zemirot](/learn/zemirot).
 
 ## Common questions
 
@@ -69,7 +69,7 @@ Chabad.org also suggests singing Shabbat songs, including wordless Chassidic mel
 Ask about gratitude, the weekly Torah portion, kindness and family stories. For example: "What was one good thing this week?" or "What surprised you in this week's parsha?"
 
 ### How do I get my family to talk at the Shabbat table?
-Put phones away, ask one open question at a time, and let everyone answer, as Chabad.org suggests with its tips for a comfortable meal.
+Put phones away, ask one open question at a time, and let everyone answer, as chassidic teaching suggests with its tips for a comfortable meal.
 
 ### What can I say at the table if I do not know Torah?
 Share a thought, a story or a question about the weekly portion, or read a short dvar Torah. You do not need to be an expert.

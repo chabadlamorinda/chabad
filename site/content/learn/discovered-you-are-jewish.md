@@ -9,7 +9,7 @@ According to traditional Jewish law, you are Jewish if your mother is Jewish, me
 
 ## What a DNA result can and cannot tell you
 
-Many people in the Bay Area open a DNA report and see "Ashkenazi Jewish" for the first time. That is real information about ancestry. But Jewish status in Jewish law is not decided by a percentage or a gene. It follows the mother's line, as the Torah teaches and the Talmud explains. Chabad.org notes that there is no "Jewish gene" and that genetics cannot conclusively say whether a person is Jewish. So a result is a doorway, not a verdict.
+Many people in the Bay Area open a DNA report and see "Ashkenazi Jewish" for the first time. That is real information about ancestry. But Jewish status in Jewish law is not decided by a percentage or a gene. It follows the mother's line, as the Torah teaches and the Talmud explains. Jewish tradition notes that there is no "Jewish gene" and that genetics cannot conclusively say whether a person is Jewish. So a result is a doorway, not a verdict.
 
 ## The mother's line
 

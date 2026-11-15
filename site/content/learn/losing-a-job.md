@@ -11,19 +11,19 @@ If you were laid off in the Bay Area, where whole teams can be let go in a morni
 
 ## You are not your résumé
 
-A job is a role you play. It is not who you are. The Torah never measures a person by salary or title, and being out of work is not a shame. Chabad.org's advice for the unemployed says plainly that unemployment is widespread and not something to hide.
+A job is a role you play. It is not who you are. The Torah never measures a person by salary or title, and being out of work is not a shame. Jewish advice for the unemployed says plainly that unemployment is widespread and not something to hide.
 
 When a layoff happens, the first wave is often shame or anger. Allow yourself to feel it, then remind yourself of three things: you have value, you have skills, and this is a chapter, not the whole book.
 
 ## Effort plus trust: the Jewish balance
 
-Judaism teaches [bitachon](/learn/bitachon), trust in G-d. But trust is never an excuse to sit still. The Torah says "G-d will bless you in all that you do" (Deuteronomy 15:18), and the Sages taught that blessing needs a vessel: your own effort. The Chabad.org article on job burnout compares livelihood to the manna in the desert, which required both faith and the effort of gathering it.
+Judaism teaches [bitachon](/learn/bitachon), trust in G-d. But trust is never an excuse to sit still. The Torah says "G-d will bless you in all that you do" (Deuteronomy 15:18), and the Sages taught that blessing needs a vessel: your own effort. Jewish teaching on job burnout compares livelihood to the manna in the desert, which required both faith and the effort of gathering it.
 
 So do both. Search with energy, and say each morning that your income comes from G-d, not from any one employer. Trust takes the panic out of the effort. A Chassidic saying captures the attitude: "Think good, and it will be good."
 
 ## Make the search your job
 
-One Chabad.org article for the unemployed puts it simply: "Your job is to get a job." Practical ideas from it:
+One piece of advice for the unemployed puts it simply: "Your job is to get a job." Practical ideas from it:
 
 1. **Plan each day.** Update your résumé, use job-matching sites, follow up with contacts, and review each interview for what to improve.
 2. **Keep up your appearance.** Interviews can be scheduled on short notice.
@@ -38,7 +38,7 @@ During unemployment, days blur together. [Shabbat](/learn/shabbat) gives you one
 
 ## Give, even a little
 
-It sounds backwards to give when income stops. Yet Chabad.org's advice on hard times says not to cut charitable giving: the institutions you support still need you, and there is always someone less fortunate. Even a few dollars, or an hour of volunteering, tells your soul that you are still a giver. See [tzedakah](/learn/tzedakah) for how to give wisely, and [money worries](/learn/money-worries) if the budget is tight.
+It sounds backwards to give when income stops. Yet Jewish advice for hard times says not to cut charitable giving: the institutions you support still need you, and there is always someone less fortunate. Even a few dollars, or an hour of volunteering, tells your soul that you are still a giver. See [tzedakah](/learn/tzedakah) for how to give wisely, and [money worries](/learn/money-worries) if the budget is tight.
 
 ## Let your community help
 
@@ -53,7 +53,7 @@ Judaism teaches that your worth comes from being created in G-d's image, not fro
 There is no single required text. Many people say Psalms, and the daily prayers include a request for G-d to bless the year's livelihood. Speak to G-d in your own words as well, and ask the Rabbi if you want a psalm suggested.
 
 ### Should I still give tzedakah when I am unemployed?
-Chabad.org's guidance says not to cut charitable giving in hard times, even if the amount is small. Giving a little, or volunteering time, keeps you a giver. Ask the Rabbi what is right for your situation.
+Jewish guidance says not to cut charitable giving in hard times, even if the amount is small. Giving a little, or volunteering time, keeps you a giver. Ask the Rabbi what is right for your situation.
 
 ### How do I keep Shabbat while job hunting?
 Shabbat is a day to rest from searching, emails and applications. Many find they return on Sunday with more clarity. If an interview falls on Shabbat, ask the Rabbi.

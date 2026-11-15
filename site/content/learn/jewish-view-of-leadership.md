@@ -5,7 +5,7 @@ category: Jewish ideas
 related: moses, humility, king-david, tzedakah-priorities, jewish-pride
 local: Want to take a role in the community? Call Rabbi Labkowski at 925-384-7242 or sign up to help: /forms/volunteer.
 ---
-The Torah teaches that a leader is a servant: in Judaism, to lead is to serve. Rabbi Jonathan Sacks writes on Chabad.org that Moses, the greatest leader in Jewish history, is also the most humble, and that the Torah calls him "the servant of the L-rd." Leadership is not a ladder to stand above others. It is a duty to the people and to G-d.
+The Torah teaches that a leader is a servant: in Judaism, to lead is to serve. Rabbi Jonathan Sacks writes that Moses, the greatest leader in Jewish history, is also the most humble, and that the Torah calls him "the servant of the L-rd." Leadership is not a ladder to stand above others. It is a duty to the people and to G-d.
 
 ## Why we need leaders
 
@@ -38,7 +38,7 @@ Rabbi Sacks writes that great leaders respect, honor and inspire others, and act
 ## Common questions
 
 ### What does the Torah say about leadership?
-Leadership is service. Rabbi Sacks writes on Chabad.org that in a society where everyone has equal dignity before G-d, leaders serve the people and G-d.
+Leadership is service. Rabbi Sacks writes that in a society where everyone has equal dignity before G-d, leaders serve the people and G-d.
 
 ### Why is Moses the model of a Jewish leader?
 The Torah calls him "very humble, more humble than anyone else," and "the servant of the L-rd."

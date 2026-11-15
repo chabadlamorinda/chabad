@@ -13,7 +13,7 @@ If you feel like a hypocrite because you pray, keep Shabbat or give charity and 
 
 Many people expect that sincere effort will make temptation disappear. Then, years later, the same impulse returns, and they think, "I must be fake."
 
-Tanya sees it differently. According to Chabad.org's presentation of Chapter 12, even the beinoni (see [the beinoni](/learn/the-beinoni)) has an animal soul that is still active and still stirs up desires, especially after prayer, when the closeness of prayer fades. The difference is what he does with them. He does not act on them. The struggle remains, and so does his choice.
+Tanya sees it differently. According to Chapter 12 of the Tanya, even the beinoni (see [the beinoni](/learn/the-beinoni)) has an animal soul that is still active and still stirs up desires, especially after prayer, when the closeness of prayer fades. The difference is what he does with them. He does not act on them. The struggle remains, and so does his choice.
 
 ## The struggle may be the point
 

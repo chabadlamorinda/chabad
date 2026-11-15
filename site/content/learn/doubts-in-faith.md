@@ -9,7 +9,7 @@ Yes, a Jew can have doubts about G-d, and doubt does not make you any less Jewis
 
 ## Doubt is human, and very old
 
-Jewish history is full of people who argued with Heaven. Abraham questioned G-d's justice, Moses asked "why have You done evil to this people?", and the Talmud is built on questions. The name Israel itself is explained as "one who wrestles with G-d." Chabad.org describes real faith as often including this kind of struggle.
+Jewish history is full of people who argued with Heaven. Abraham questioned G-d's justice, Moses asked "why have You done evil to this people?", and the Talmud is built on questions. The name Israel itself is explained as "one who wrestles with G-d." Jewish tradition describes real faith as often including this kind of struggle.
 
 You are in good company. Asking is not the opposite of faith. In one answer from the Rebbe, a person who had doubts was told that even to question G-d shows some belief is already there, because you must accept something in order to question it.
 

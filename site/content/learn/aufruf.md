@@ -11,13 +11,13 @@ Couples and families in Lafayette, Moraga and Orinda can arrange one with the Ra
 
 ## What an aufruf is
 
-On Shabbat morning, the Torah is read in synagogue and several people are called up by their Hebrew names for an aliyah, a blessing over the Torah reading. At an aufruf, the groom receives the most festive aliyah. Chabad.org explains that the custom parallels the Torah honor of a boy before his bar mitzvah: it marks entry into a new stage of adult life.
+On Shabbat morning, the Torah is read in synagogue and several people are called up by their Hebrew names for an aliyah, a blessing over the Torah reading. At an aufruf, the groom receives the most festive aliyah. Jewish teaching explains that the custom parallels the Torah honor of a boy before his bar mitzvah: it marks entry into a new stage of adult life.
 
 If the groom will be away on the Shabbat before the wedding, the aufruf may be held the week before, though ideally he is also called up the Shabbat immediately before the wedding.
 
 ## Why we do it
 
-Chabad.org offers several meanings:
+the tradition offers several meanings:
 
 - **Sustaining the world.** A couple helps sustain the world by raising children who study Torah, so the groom reads from the Torah.
 - **A royal parallel.** A Jewish king had to keep two Torah scrolls, and the groom is called up twice, before and after the wedding.
@@ -26,11 +26,11 @@ Chabad.org offers several meanings:
 - **Holy beginnings.** Starting the celebration on Shabbat connects the wedding's physical details to its spiritual heart.
 - **Blessing for livelihood.** Candies and nuts showered on the groom express hope for a sweet life and blessings.
 
-In ancient times, according to the same article, grooms and mourners entered the Temple through separate gates, and grooms were blessed to have children. The Sages later moved that blessing to the synagogue on Shabbat after the Temple was destroyed.
+In ancient times, according to tradition, grooms and mourners entered the Temple through separate gates, and grooms were blessed to have children. The Sages later moved that blessing to the synagogue on Shabbat after the Temple was destroyed.
 
 ## What to expect as a guest
 
-Chabad.org's "What to Expect" guide describes the scene:
+Here is what the scene usually looks like:
 
 1. The Torah is taken from the Ark and read. Guests answer "amen" after each blessing.
 2. The groom is called up, often with extra song, wearing a tallit.
@@ -56,7 +56,7 @@ Customs vary: some communities hold a separate gathering for the bride, and Seph
 An aufruf is the custom of calling the groom to the Torah on the Shabbat before his wedding. It is followed by a celebration, often with candy and a festive Kiddush.
 
 ### Why is candy thrown at an aufruf?
-The candies and nuts thrown at the groom, according to Chabad.org, express blessing and hope for a sweet life. Children usually collect them.
+The candies and nuts thrown at the groom, according to Jewish tradition, express blessing and hope for a sweet life. Children usually collect them.
 
 ### Do I have to dance or know Hebrew at an aufruf?
 No. Guests answer "amen" and may watch. No fancy steps are expected.

@@ -1,6 +1,6 @@
 ---
 title: Gefilte Fish: What It Is, Why We Eat It on Shabbat, and How to Make It
-description: What gefilte fish is, how Chabad.org makes it from ground fish, horseradish on the side, and tips for Shabbat and Passover.
+description: What gefilte fish is, how Jewish tradition makes it from ground fish, horseradish on the side, and tips for Shabbat and Passover.
 category: Jewish home
 related: kosher-fish, shabbat-meals, jewish-foods, passover-shopping-list, pareve
 local: Curious to taste it at a community table? Sign up for a Shabbat meal at /forms/shabbat-meal or call 925-384-7242.
@@ -9,15 +9,15 @@ Gefilte fish is a traditional Jewish dish of ground fish mixed with onion and eg
 
 ## What is gefilte fish?
 
-"Gefilte" (געפילטע) is Yiddish for "stuffed." The dish is made from ground fish, onions, eggs, salt and sugar. It is served cold, with a slice of cooked carrot on top and chrein (חריין), a sharp horseradish and beet relish, on the side. Chabad.org calls it a dish some people consider the quintessential Jewish food. It is a fish dish, so the fish must be kosher; see our guide to [kosher fish](/learn/kosher-fish).
+"Gefilte" (געפילטע) is Yiddish for "stuffed." The dish is made from ground fish, onions, eggs, salt and sugar. It is served cold, with a slice of cooked carrot on top and chrein (חריין), a sharp horseradish and beet relish, on the side. Chassidic teaching calls it a dish some people consider the quintessential Jewish food. It is a fish dish, so the fish must be kosher; see our guide to [kosher fish](/learn/kosher-fish).
 
 ## Why on Shabbat?
 
-Fish is a long-standing food of the Shabbat table, and many Jewish families make gefilte fish for Friday night or Shabbat lunch. People give a number of explanations for the custom, and the Chabad.org recipe we read does not give one, so ask the Rabbi if you would like to hear more. For the full picture of the meal, see [Shabbat meals](/learn/shabbat-meals) and [Jewish foods](/learn/jewish-foods).
+Fish is a long-standing food of the Shabbat table, and many Jewish families make gefilte fish for Friday night or Shabbat lunch. People give a number of explanations for the custom, and the recipe we read does not give one, so ask the Rabbi if you would like to hear more. For the full picture of the meal, see [Shabbat meals](/learn/shabbat-meals) and [Jewish foods](/learn/jewish-foods).
 
-## Homemade gefilte fish, adapted from Chabad.org
+## Homemade gefilte fish
 
-This is retold in our own words from a Chabad.org recipe. It makes about 60 fish balls, and it halves easily.
+This is retold in our own words from a traditional recipe. It makes about 60 fish balls, and it halves easily.
 
 **Fish mixture**
 - 5 pounds ground fish (the recipe uses a mix of pike and whitefish)
@@ -47,7 +47,7 @@ Use kosher ingredients, and ask the Rabbi about specifics.
 
 ## Serving, and a Passover note
 
-Serve it chilled, with the carrot and chrein. Because the Chabad.org version has no matzah meal, it is made to suit Passover, and families often prepare it ahead for the Seder. See the [Passover shopping list](/learn/passover-shopping-list) and [Passover](/holidays/passover). Whether you may eat certain ingredients on Passover is a question for the Rabbi.
+Serve it chilled, with the carrot and chrein. Because this version has no matzah meal, it is made to suit Passover, and families often prepare it ahead for the Seder. See the [Passover shopping list](/learn/passover-shopping-list) and [Passover](/holidays/passover). Whether you may eat certain ingredients on Passover is a question for the Rabbi.
 
 ## Common questions
 

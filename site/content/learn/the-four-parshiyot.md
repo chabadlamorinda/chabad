@@ -15,13 +15,13 @@ After the winter, the Jewish calendar moves toward spring and the holiday of Pas
 
 On the Shabbat on or before the start of Adar, a second scroll is read with the passage from Exodus 30:11-16, about the first half-shekel donation. The haftarah (II Kings 11:17-12:17) tells how King Jehoash set aside communal funds for repairs to the First Temple.
 
-In Temple times every Jew gave a half-shekel (*machatzit hashekel*) each year toward the Temple, due on the first of Nissan. The courts began reminding everyone on the first of Adar, a month ahead. Most of the money bought the communal offerings. Chabad.org notes that the Talmud teaches that Haman's decree was averted in the merit of this mitzvah, and that today people give a commemorative half-shekel to charity on the Fast of Esther. See [the Fast of Esther](/learn/fast-of-esther).
+In Temple times every Jew gave a half-shekel (*machatzit hashekel*) each year toward the Temple, due on the first of Nissan. The courts began reminding everyone on the first of Adar, a month ahead. Most of the money bought the communal offerings. The Talmud teaches that Haman's decree was averted in the merit of this mitzvah, and that today people give a commemorative half-shekel to charity on the Fast of Esther. See [the Fast of Esther](/learn/fast-of-esther).
 
 The lesson: every Jew counts equally and every Jew is needed. Nobody gives more or less than half; we are only whole together.
 
 ## 2. Shabbat Zachor: remember Amalek
 
-On the Shabbat before Purim we read Deuteronomy 25:17-19, the command to remember what Amalek did and to blot out its memory. The haftarah (I Samuel 15:2-34) is about G-d's command to King Saul regarding Amalek. Chabad.org notes that many authorities hold that every man has a Biblical obligation to hear this reading, so many come to the synagogue for it. The full story is in [Parshat Zachor](/learn/parshat-zachor), and it leads into [Purim](/learn/purim-for-beginners).
+On the Shabbat before Purim we read Deuteronomy 25:17-19, the command to remember what Amalek did and to blot out its memory. The haftarah (I Samuel 15:2-34) is about G-d's command to King Saul regarding Amalek. Many authorities hold that every man has a Biblical obligation to hear this reading, so many come to the synagogue for it. The full story is in [Parshat Zachor](/learn/parshat-zachor), and it leads into [Purim](/learn/purim-for-beginners).
 
 The lesson: coldness toward what is holy is the enemy within. We remember so that we can choose warmth.
 
@@ -29,7 +29,7 @@ The lesson: coldness toward what is holy is the enemy within. We remember so tha
 
 On the next Shabbat we read Numbers 19, the laws of the red heifer, which purified a person who had contact with the dead. The haftarah (Ezekiel 36:16-36) is G-d's promise to purify the Jewish people when He brings us back to the Land of Israel in the Messianic Era.
 
-We cannot perform those rituals today. Chabad.org explains that studying their laws is a spiritual preparation for Passover: in Temple times everyone had to be pure to bring the Passover offering, so we prepare our hearts too.
+We cannot perform those rituals today. Studying their laws is a spiritual preparation for Passover: in Temple times everyone had to be pure to bring the Passover offering, so we prepare our hearts too.
 
 ## 4. Shabbat HaChodesh: the first mitzvah
 

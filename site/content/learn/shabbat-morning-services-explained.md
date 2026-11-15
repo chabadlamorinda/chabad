@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: first-time-at-synagogue, shacharit-morning-service, torah-reading, synagogue-honors, finding-your-place-in-the-siddur
 local: Want to come this Shabbat? Call Rabbi Labkowski at 925-384-7242 to hear what is planned, or see /events.
 ---
-Shabbat morning services follow a set order: morning blessings and psalms, the Shema and its blessings, the silent Amidah, the Torah reading with the Haftarah, a second Amidah called Musaf, closing prayers, and then Kiddush with food and conversation. Chabad.org says the whole service can last about three hours, and you are welcome to come partway through.
+Shabbat morning services follow a set order: morning blessings and psalms, the Shema and its blessings, the silent Amidah, the Torah reading with the Haftarah, a second Amidah called Musaf, closing prayers, and then Kiddush with food and conversation. Jewish tradition says the whole service can last about three hours, and you are welcome to come partway through.
 
 ## The quick order at a glance
 
@@ -36,7 +36,7 @@ After the Torah comes the [Haftarah](/learn/haftarah), a reading from the Prophe
 
 ## 4. A talk
 
-Chabad.org notes that the rabbi often gives a sermon on Shabbat and holiday mornings. Where it falls in the service can differ from one synagogue to another. Ask the Rabbi what to expect.
+Jewish tradition notes that the rabbi often gives a sermon on Shabbat and holiday mornings. Where it falls in the service can differ from one synagogue to another. Ask the Rabbi what to expect.
 
 ## 5. Musaf and the closing prayers
 
@@ -58,7 +58,7 @@ The service usually ends with Kiddush: the blessing over wine, followed by food 
 The service moves from morning blessings and psalms to the Shema, the silent Amidah, the Torah reading and Haftarah, Musaf, closing songs and Kiddush.
 
 ### How long are Shabbat services?
-According to Chabad.org, Shabbat morning prayers with Musaf last about three hours on average. Call 925-384-7242 to ask when services begin and how long they usually run.
+According to Jewish tradition, Shabbat morning prayers with Musaf last about three hours on average. Call 925-384-7242 to ask when services begin and how long they usually run.
 
 ### Can I come late to Shabbat services?
 Yes. Many people arrive partway through. Come in quietly and join in.

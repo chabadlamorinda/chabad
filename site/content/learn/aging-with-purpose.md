@@ -9,7 +9,7 @@ In Jewish tradition, growing older is a gain, not a loss: the Torah uses the wor
 
 ## "Old" means "wise"
 
-The Hebrew word zaken is read in Jewish teaching as "one who has acquired wisdom." Chabad.org, presenting the Rebbe's teachings, explains that elders deserve honor even if they were never scholars, because a lifetime of experience gives a kind of wisdom that even a brilliant young person cannot yet have. The Torah says of Abraham that he "grew old and came along in days," which is understood to mean that he became greater with each passing day.
+The Hebrew word zaken is read in Jewish teaching as "one who has acquired wisdom." The Rebbe's teachings explain that elders deserve honor even if they were never scholars, because a lifetime of experience gives a kind of wisdom that even a brilliant young person cannot yet have. The Torah says of Abraham that he "grew old and came along in days," which is understood to mean that he became greater with each passing day.
 
 The Rebbe also pointed out that Jewish law asks us to stand in respect for the elderly. Learn more in [honoring the elderly](/learn/honoring-the-elderly).
 

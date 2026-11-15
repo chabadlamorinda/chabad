@@ -13,7 +13,7 @@ Many families in Lafayette, Moraga and Orinda work in San Francisco, Oakland or 
 
 Check [this week's Shabbat times](/shabbat-times) on Monday, not Friday. Candle lighting changes every week, and in the winter Shabbat starts very early in the afternoon. The site works the time out for every town, so you never have to guess; see [how to read Shabbat times](/learn/shabbat-times-in-lamorinda-explained).
 
-Chabad.org teaches that candles are lit 18 minutes before sunset as a margin for error, and that sunset is the absolute deadline: after it, Shabbat has begun and lighting is forbidden. Your goal is not to arrive at the last minute. Your goal is to be home with time to breathe.
+Jewish tradition teaches that candles are lit 18 minutes before sunset as a margin for error, and that sunset is the absolute deadline: after it, Shabbat has begun and lighting is forbidden. Your goal is not to arrive at the last minute. Your goal is to be home with time to breathe.
 
 ## Work backwards, with a cushion
 
@@ -42,12 +42,12 @@ Shabbat food is much easier when most of it is done by Thursday night.
 
 ## If you are stuck and the clock is running out
 
-Even good plans fail sometimes: a stalled train, an accident on Highway 24. Chabad.org gives clear guidance:
+Even good plans fail sometimes: a stalled train, an accident on Highway 24. Jewish tradition gives clear guidance:
 
 - You may light until shortly before sunset, even if the 18 minutes have passed, but not after sunset.
 - Another adult in the household can light for the family. If someone already lit on your behalf, there is nothing to make up.
 - If you really cannot make it, do not rush in a way that puts anyone in danger. Safety comes first.
-- If you miss the lighting because you were careless, Chabad.org suggests adding one candle in the weeks that follow as a reminder. If it was truly beyond your control, nothing is added.
+- If you miss the lighting because you were careless, the tradition suggests adding one candle in the weeks that follow as a reminder. If it was truly beyond your control, nothing is added.
 
 Your situation may be different, so call the Rabbi and ask. Any Friday afternoon is a good time to have that number saved in your phone.
 
@@ -71,7 +71,7 @@ You may light until shortly before sunset, but never after, and someone else at 
 
 ### How late may I light Shabbat candles?
 
-Candles are lit about 18 minutes before sunset, and Chabad.org teaches that you may still light up until just before sunset if you are running late. After sunset, it is too late.
+Candles are lit about 18 minutes before sunset, and jewish tradition teaches that you may still light up until just before sunset if you are running late. After sunset, it is too late.
 
 ### How do I ask my employer for Friday afternoons off in the winter?
 

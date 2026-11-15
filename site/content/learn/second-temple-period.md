@@ -33,7 +33,7 @@ The Hasmonean family led the Jewish people for roughly a century, and then Herod
 
 ## The destruction
 
-When the Jews rebelled, Rome sent armies. Jerusalem's walls were breached on the 17th of Tammuz, and the Temple was burned three weeks later on the 9th of Av. Our Sages say the First Temple fell because of serious sins, and the Second because of baseless hatred between Jews. A part of the outer retaining wall survived, and it is today's Western Wall. Chabad.org's sources give 420 years for the Temple's length. They differ slightly on the exact year of destruction, because years are counted in different ways, so we leave out a specific year.
+When the Jews rebelled, Rome sent armies. Jerusalem's walls were breached on the 17th of Tammuz, and the Temple was burned three weeks later on the 9th of Av. Our Sages say the First Temple fell because of serious sins, and the Second because of baseless hatred between Jews. A part of the outer retaining wall survived, and it is today's Western Wall. The traditional sources give 420 years for the Temple's length. They differ slightly on the exact year of destruction, because years are counted in different ways, so we leave out a specific year.
 
 The three weeks between the 17th of Tammuz and the 9th of Av are mourning, and we look forward to the day when the Temple is rebuilt. See [Tisha B'Av for Beginners](/learn/tisha-bav-for-beginners).
 

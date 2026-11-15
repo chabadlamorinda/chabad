@@ -9,7 +9,7 @@ To talk to your children about antisemitism, stay calm, use simple words for the
 
 ## Start from pride, not fear
 
-Chabad.org's teachings from the Rebbe emphasize maintaining pride in yourself as a Jew and in your Jewish observance, rather than focusing on hatred itself. The same article cautions against confronting people by labeling them antisemites, and against changing Jewish practice to appease anyone. That is a good frame for children too: before they hear about hate, they should hear what is beautiful about being Jewish. Read [Jewish pride](/learn/jewish-pride) and [facing antisemitism](/learn/facing-antisemitism).
+The Rebbe's teachings emphasize maintaining pride in yourself as a Jew and in your Jewish observance, rather than focusing on hatred itself. The Rebbe also cautioned against confronting people by labeling them antisemites, and against changing Jewish practice to appease anyone. That is a good frame for children too: before they hear about hate, they should hear what is beautiful about being Jewish. Read [Jewish pride](/learn/jewish-pride) and [facing antisemitism](/learn/facing-antisemitism).
 
 ## By age
 
@@ -33,7 +33,7 @@ If a child's safety is at risk, contact the school and the proper authorities im
 
 ## Answer hate with more light
 
-The Rebbe taught that darkness is not driven out by fighting the dark but by adding light. Chabad.org describes how the Rebbe encouraged channeling difficult moments into a deeper engagement with Jewish identity. For a family, this can mean:
+The Rebbe taught that darkness is not driven out by fighting the dark but by adding light. The Rebbe encouraged channeling difficult moments into a deeper engagement with Jewish identity. For a family, this can mean:
 
 - Lighting [Shabbat candles](/learn/shabbat-candles) on Friday night.
 - Doing one extra mitzvah or act of [tzedakah](/learn/tzedakah) together.
@@ -59,7 +59,7 @@ Begin when a child asks or encounters something, with a short, calm answer. Offe
 Celebrate Shabbat and holidays with joy, tell Jewish stories, and connect them to other Jewish children.
 
 ### Should I confront the person who said it?
-Not in anger. The Rebbe's guidance, as described by Chabad.org, advises against confronting people by calling them antisemites. Ask the Rabbi how to handle a particular case.
+Not in anger. The Rebbe's guidance advises against confronting people by calling them antisemites. Ask the Rabbi how to handle a particular case.
 
 ### Where can a Jewish family in Lamorinda find support?
 Call Rabbi Labkowski or Rebbetzin Labkowski at 925-384-7242, or visit [talk to the Rabbi](/help/talk-to-the-rabbi).

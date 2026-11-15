@@ -9,11 +9,11 @@ Synagogue etiquette comes down to one idea: a synagogue is a holy place, so we a
 
 ## Why etiquette matters in a synagogue
 
-The Talmud calls a synagogue a "miniature sanctuary," a small echo of the Holy Temple in Jerusalem. According to Chabad.org, that is why it is treated with respect even when no service is going on. In Hebrew a synagogue is a *beit knesset* (בית כנסת), "house of gathering," and many people say *shul*, the Yiddish word. The rules below are not meant to make anyone feel unwelcome. They protect the quiet in which prayer can happen.
+The Talmud calls a synagogue a "miniature sanctuary," a small echo of the Holy Temple in Jerusalem. According to Jewish tradition, that is why it is treated with respect even when no service is going on. In Hebrew a synagogue is a *beit knesset* (בית כנסת), "house of gathering," and many people say *shul*, the Yiddish word. The rules below are not meant to make anyone feel unwelcome. They protect the quiet in which prayer can happen.
 
 ## The basics
 
-Chabad.org's synagogue guide lists a few simple habits to keep:
+A few simple habits to keep:
 
 - **Show respect.** Do not run or shout.
 - **Avoid idle talk and gossip.**
@@ -49,10 +49,10 @@ On Shabbat and holidays, please do not take photos, write, or use electronics in
 Do not use your phone, talk during prayers, eat in the sanctuary, or walk in front of someone saying the Amidah. On Shabbat, also avoid photos and writing.
 
 ### Do I have to turn off my phone in synagogue?
-Yes. Chabad.org lists cell phone use among the things to avoid in synagogue. On Shabbat and holidays, observant Jews do not use phones at all, so it is kindest to switch yours off before you walk in.
+Yes. Cell phone use is among the things to avoid in synagogue. On Shabbat and holidays, observant Jews do not use phones at all, so it is kindest to switch yours off before you walk in.
 
 ### Can I talk in synagogue?
-Keep conversation for the lobby or the Kiddush. During the prayers and the Torah reading, stay silent, and Chabad.org asks us to avoid idle talk and gossip in the synagogue at any time.
+Keep conversation for the lobby or the Kiddush. During the prayers and the Torah reading, stay silent, and Jewish tradition asks us to avoid idle talk and gossip in the synagogue at any time.
 
 ### When do you stand in synagogue?
 In general, people stand for the Amidah, when the ark is open, and as the Torah is carried. Customs vary, so watch those around you and ask the Rabbi if you wish.

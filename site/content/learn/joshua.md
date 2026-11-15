@@ -9,7 +9,7 @@ Joshua (יהושע, Yehoshua) was the devoted student and attendant of Moses who
 
 ## Who was Joshua?
 
-Joshua, from the tribe of Ephraim, was born in Egypt. He was first called Hoshea, and Moses added a letter to his name, so it became Yehoshua, which Chabad.org explains as "may G-d save you." For years he served Moses and, as the Torah describes, "did not leave the tent." He learned Torah directly from his teacher. See [Moses](/learn/moses).
+Joshua, from the tribe of Ephraim, was born in Egypt. He was first called Hoshea, and Moses added a letter to his name, so it became Yehoshua, which tradition explains as "may G-d save you." For years he served Moses and, as the Torah describes, "did not leave the tent." He learned Torah directly from his teacher. See [Moses](/learn/moses).
 
 ## One of the two faithful spies
 
@@ -19,7 +19,7 @@ Moses sent twelve leaders to scout the Land of Israel. Ten returned frightened a
 
 Before his passing, Moses appointed Joshua as his successor. After the mourning for Moses, G-d told Joshua to prepare to cross the Jordan, and the river split, as the sea had for Moses. G-d told him to be strong and courageous and to keep the Torah.
 
-- **Jericho.** Joshua sent two spies, who were hidden by Rahab, a woman who recognized G-d. For six days the people circled the walls, and on the seventh, with the sound of the shofar, the walls fell. Rahab and her family were saved. Chabad.org teaches that she later joined the Jewish people.
+- **Jericho.** Joshua sent two spies, who were hidden by Rahab, a woman who recognized G-d. For six days the people circled the walls, and on the seventh, with the sound of the shofar, the walls fell. Rahab and her family were saved. Tradition teaches that she later joined the Jewish people.
 - **Battles and dividing the land.** The Book of Joshua describes the years of battle and the division of the land among the tribes. See [the twelve tribes](/learn/twelve-tribes).
 - **Renewing the covenant.** Near the end of his life, Joshua gathered the people at Shechem and urged them to stay devoted to G-d and the Torah, and they promised. He passed away at 110.
 

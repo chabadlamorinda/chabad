@@ -7,7 +7,7 @@ local: Not sure what to do at a funeral you are attending? Call Rabbi Labkowski 
 ---
 To a Jewish funeral, wear modest, simple clothes: for men a suit, or nice slacks and a button-down shirt, and for women a modest skirt and top or a dress. Men cover their heads, and a basket of kippahs is often at the door.
 
-Going to a funeral is almost always better than staying away. Chabad.org calls accompanying the departed "one of the greatest acts of kindness," because it is a kindness that can never be repaid.
+Going to a funeral is almost always better than staying away. Jewish tradition calls accompanying the departed "one of the greatest acts of kindness," because it is a kindness that can never be repaid.
 
 ## What to wear
 

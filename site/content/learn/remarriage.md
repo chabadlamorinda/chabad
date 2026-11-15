@@ -7,11 +7,11 @@ local: Thinking about marrying again? Call Rabbi Yisroel Labkowski at 925-384-72
 ---
 Judaism encourages remarriage. A widow, widower or divorced person is free to marry again, as long as Jewish law's requirements are met, and a get (a Jewish divorce document) must precede a second marriage if the first ended in divorce. The ceremony is joyful and simpler than a first wedding.
 
-This guide follows Chabad.org's overview of remarriage. Since each case differs, please ask the Rabbi.
+This guide gives a general overview of remarriage in Jewish tradition. Since each case differs, please ask the Rabbi.
 
 ## Judaism wants you to have a full life
 
-Chabad.org notes that Judaism "seeks to encourage those who are alone to seek meaningful and richer lives." A new marriage does not betray a late spouse, and the Torah says "it is not good for man to be alone" (Genesis 2:18). For many seniors in Lafayette, Moraga and Orinda, a second chapter brings companionship and joy.
+Jewish tradition notes that Judaism "seeks to encourage those who are alone to seek meaningful and richer lives." A new marriage does not betray a late spouse, and the Torah says "it is not good for man to be alone" (Genesis 2:18). For many seniors in Lafayette, Moraga and Orinda, a second chapter brings companionship and joy.
 
 ## If your first marriage ended in divorce
 
@@ -23,7 +23,7 @@ A widow or widower may marry again after mourning. Ask the Rabbi about the waiti
 
 ## How the ceremony differs
 
-According to Chabad.org:
+According to Jewish tradition:
 
 - The ketubah wording changes; the word for "maiden" is replaced by the word for a widow or a divorcee, and the amounts are adjusted ([ketubah](/learn/ketubah)).
 - The seven blessings are said only under the chuppah and after the wedding meal, not through a week of festive meals as at a first wedding. If one of you has never been married, ask the Rabbi ([sheva brachot](/learn/sheva-brachot)).
@@ -34,7 +34,7 @@ Ask the Rabbi for precise guidance on your situation. See [Jewish wedding custom
 
 ## Children, family and feelings
 
-Adult children may feel grief, loyalty or worry. Chabad.org suggests that the couple decide with "intelligence and sensitivity" whether children from earlier marriages take part. Go slowly, include them, speak plainly about the plans, and see [blended families](/learn/blended-families). Everyone is allowed to feel mixed emotions.
+Adult children may feel grief, loyalty or worry. Jewish tradition suggests that the couple decide with "intelligence and sensitivity" whether children from earlier marriages take part. Go slowly, include them, speak plainly about the plans, and see [blended families](/learn/blended-families). Everyone is allowed to feel mixed emotions.
 
 ## Planning the wedding
 

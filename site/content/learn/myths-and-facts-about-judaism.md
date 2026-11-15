@@ -1,6 +1,6 @@
 ---
 title: Myths and Facts About Judaism: Questions People Ask
-description: Clear answers to common questions about Judaism: one G-d, Torah, who is a Jew, mitzvot, Shabbat and the seven Noahide laws, from Chabad.org.
+description: Clear answers to common questions about Judaism: one G-d, Torah, who is a Jew, mitzvot, Shabbat and the seven Noahide laws, from Jewish tradition.
 category: Jewish ideas
 related: why-be-jewish, what-is-judaism, not-religious-welcome, start-here-jewish-lamorinda, who-is-a-jew, noahide-laws
 local: Ask anything, no question is too basic. Talk with the Rabbi at /help/talk-to-the-rabbi or call 925-384-7242.
@@ -9,13 +9,13 @@ Judaism is the faith and way of life of the Jewish people, based on the belief i
 
 ## What Jews believe
 
-- **One G-d.** Judaism teaches one invisible Creator without a body. Chabad.org notes that G-d is also called "Hashem," "The Name."
+- **One G-d.** Judaism teaches one invisible Creator without a body. Tradition also teaches that G-d is also called "Hashem," "The Name."
 - **The Torah.** The Five Books of Moses, with the Oral Torah in the Midrash and Talmud, are the foundation of Jewish belief and practice.
 - **The mitzvot.** The word mitzvah means "command," not just "good deed." The Torah has 613 commandments. Every mitzvah has value, and people can take on more step by step.
 
 ## Common myths
 
-**"You can be half-Jewish."** Chabad.org explains that Jewishness passes through the mother. A child of a Jewish father and non-Jewish mother can become Jewish through conversion. Read [who is a Jew](/learn/who-is-a-jew).
+**"You can be half-Jewish."** Jewish law holds that Jewishness passes through the mother. A child of a Jewish father and non-Jewish mother can become Jewish through conversion. Read [who is a Jew](/learn/who-is-a-jew).
 
 **"Judaism is a race."** Jews come from every racial and ethnic background. They are united by covenant and shared responsibility.
 
@@ -31,7 +31,7 @@ Judaism is the faith and way of life of the Jewish people, based on the belief i
 
 ## Judaism and the rest of humanity
 
-Judaism does not seek converts. It asks all people to live by the seven Noahide laws, moral basics such as not murdering or stealing, and Chabad.org teaches that those who do so have a share in the World to Come. Read about the [Noahide laws](/learn/noahide-laws). Judaism welcomes every Jew home, whatever their background.
+Judaism does not seek converts. It asks all people to live by the seven Noahide laws, moral basics such as not murdering or stealing, and Jewish tradition teaches that those who do so have a share in the World to Come. Read about the [Noahide laws](/learn/noahide-laws). Judaism welcomes every Jew home, whatever their background.
 
 ## Shabbat and the Jewish week
 

@@ -11,17 +11,17 @@ Samson (Shimshon, שִׁמְשׁוֹן) was a judge of Israel, famous for his mi
 
 Samson was from the tribe of Dan. His parents, Manoach and his wife, whom the Talmud names Tzlalponis, had no children for many years. An angel appeared to the mother and told her she would have a son who would begin to save Israel from the Philistines. From the womb he would be a Nazirite, dedicated to G-d: no wine or grape products, and no razor on his hair. She herself was told to avoid wine and anything impure during the pregnancy.
 
-Chabad.org teaches from the Lubavitcher Rebbe that the parents were remarkable people: Manoach prayed that the angel return and was grateful, and his wife was a woman of prayer and clarity. The lesson drawn is that what a mother takes in during pregnancy matters, which is why Jewish women are careful about kosher food during that time.
+The Lubavitcher Rebbe teaches that the parents were remarkable people: Manoach prayed that the angel return and was grateful, and his wife was a woman of prayer and clarity. The lesson drawn is that what a mother takes in during pregnancy matters, which is why Jewish women are careful about kosher food during that time.
 
 ## What is a Nazirite?
 
 A Nazirite (nazir, נָזִיר) is a person who takes a vow to be extra holy: to avoid wine and grape products, not to cut his hair, and to stay away from the dead. The Rambam describes three types: someone who takes a vow for a set time (usually thirty days), someone for life, and someone, like Samson, who is a Nazirite from the womb.
 
-The Rebbe asks a question: how could a vow that the parents and an angel started become binding? The answer given on Chabad.org is that it became binding when Samson, at age thirteen, chose to keep it himself. Our own choice to continue what our parents began carries more weight than the original promise. That is a wonderful message for any family raising children in Lafayette, Moraga or Orinda: the day your child makes a Jewish practice his or her own is the day it truly begins.
+The Rebbe asks a question: how could a vow that the parents and an angel started become binding? The answer given is that it became binding when Samson, at age thirteen, chose to keep it himself. Our own choice to continue what our parents began carries more weight than the original promise. That is a wonderful message for any family raising children in Lafayette, Moraga or Orinda: the day your child makes a Jewish practice his or her own is the day it truly begins.
 
 ## Samson's feats
 
-According to the Bible and Chabad.org's account:
+According to the Bible and Jewish tradition:
 
 1. As a young man, Samson killed a lion with his bare hands.
 2. At his wedding feast in Timnah he posed a riddle, from the lion and the honey that bees had made in its carcass, to thirty Philistine guests.
@@ -41,7 +41,7 @@ That is the point of the story. The hair was not magic. It was a sign of his ded
 
 At a great Philistine feast Samson was brought out to entertain. Blind and bound, he prayed to G-d for strength one last time, so that the Philistines would know that G-d alone is G-d. His strength returned, and he pushed apart the pillars that supported the building, and it collapsed. He died with them, and his family brought him home for burial.
 
-The Bible says he led Israel for twenty years. Chabad.org notes that sources differ: another tradition counts forty years, twenty during his life and twenty after, when his influence kept the Philistines away. Another Chabad.org article counts twenty-two years, so we do not give an exact number here.
+The Bible says he led Israel for twenty years. Jewish tradition notes that sources differ: another tradition counts forty years, twenty during his life and twenty after, when his influence kept the Philistines away. Another source counts twenty-two years, so we do not give an exact number here.
 
 ## Take the next step
 

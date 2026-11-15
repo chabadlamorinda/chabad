@@ -11,9 +11,9 @@ To keep the peace at a holiday meal, plan ahead, set a warm tone from the first 
 
 Jewish tradition holds up peace as one of the highest values. The Mishnah in Pirkei Avot (Ethics of the Fathers) teaches us to be among the disciples of Aaron, who loved peace and pursued peace. A holiday table, where generations and opinions meet, is where this is tested most. See also [shalom bayit, peace in the home](/learn/shalom-bayit).
 
-## Lessons from Chabad.org's tips for a peaceful Seder
+## Lessons from a peaceful Seder
 
-Chabad.org offers eight steps for defusing a tense Passover Seder. They work for any family meal, whether Thanksgiving, a Chanukah party or Shabbat:
+Jewish tradition offers eight steps for defusing a tense Passover Seder. They work for any family meal, whether Thanksgiving, a Chanukah party or Shabbat:
 
 1. **Arrive upbeat.** Greet everyone warmly and set a positive mindset before the meal begins.
 2. **Start right away.** Begin with well-loved songs or a toast so everyone feels connected, even if guests are still arriving.

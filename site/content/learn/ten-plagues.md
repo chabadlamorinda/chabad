@@ -9,7 +9,7 @@ The ten plagues of Egypt, in order, are: blood, frogs, lice, wild animals, pesti
 
 ## The ten plagues in order
 
-Here is each plague with its Hebrew name, from the account on Chabad.org:
+Here is each plague with its Hebrew name, from the account in the Torah and the Haggadah:
 
 1. **Blood (דם, *dam*).** The Nile and all Egyptian waters turned to blood for a week, the fish died and there was nothing to drink.
 2. **Frogs (צפרדע, *tzefardeia*).** Frogs filled homes and bedrooms. Pharaoh promised to let the people go, then broke his word once they left.
@@ -26,15 +26,15 @@ Commentators differ on some of the animals (for example whether *arov* means wol
 
 ## Rabbi Yehuda's code: Detzach Adash B'achav
 
-Rabbi Yehuda grouped the plagues into three memory words: *Detzach* (blood, frogs, lice), *Adash* (wild animals, pestilence, boils) and *B'achav* (hail, locusts, darkness, firstborn). Chabad.org shares an explanation: each group taught the Egyptians a lesson. The first showed that G-d exists, the second that G-d watches over the world, and the third that G-d can do anything.
+Rabbi Yehuda grouped the plagues into three memory words: *Detzach* (blood, frogs, lice), *Adash* (wild animals, pestilence, boils) and *B'achav* (hail, locusts, darkness, firstborn). One explanation is that each group taught the Egyptians a lesson. The first showed that G-d exists, the second that G-d watches over the world, and the third that G-d can do anything.
 
 ## Why do we spill wine at the Seder?
 
-During the Haggadah we remove a bit of wine from our cup as we say each plague and again at the three words of Rabbi Yehuda, sixteen drops in all, according to a custom going back at least a thousand years. Chabad.org gives three reasons: the letters of a name for G-d's judgment; that a blessing is not said over a cup of punishment; and that our joy is not complete because it came at the cost of others' suffering. The Lubavitch practice is to pour the wine directly from the cup (not to dip a finger), and then refill the cup. See [the four cups](/learn/four-cups) and [the Haggadah](/learn/haggadah).
+During the Haggadah we remove a bit of wine from our cup as we say each plague and again at the three words of Rabbi Yehuda, sixteen drops in all, according to a custom going back at least a thousand years. There are three reasons: the letters of a name for G-d's judgment; that a blessing is not said over a cup of punishment; and that our joy is not complete because it came at the cost of others' suffering. The Lubavitch practice is to pour the wine directly from the cup (not to dip a finger), and then refill the cup. See [the four cups](/learn/four-cups) and [the Haggadah](/learn/haggadah).
 
 ## What do the plagues teach us?
 
-Chabad.org teaches that each plague also holds a lesson for everyday life, especially in dealing with difficult people:
+Jewish tradition teaches that each plague also holds a lesson for everyday life, especially in dealing with difficult people:
 
 - **Blood:** Moses showed gratitude even to the Nile that saved him, so we are grateful even to those we find hard.
 - **Frogs:** Hitting the frog only made more frogs: anger harms the angry one.
@@ -71,7 +71,7 @@ Blood, frogs, lice, wild animals, pestilence, boils, hail, locusts, darkness and
 It is Rabbi Yehuda's mnemonic that groups the ten plagues into three sets of three, three and four, to teach that G-d exists, watches the world and can do anything.
 
 ### Why do we spill wine at the Seder?
-We spill sixteen drops because our joy is not complete when others suffered. Chabad.org gives additional reasons, and the Lubavitch practice is to pour from the cup.
+We spill sixteen drops because our joy is not complete when others suffered. There are additional reasons, and the Lubavitch practice is to pour from the cup.
 
 ### Were the Jews hurt by the plagues?
 The Torah says Goshen was spared in several plagues. Some commentators say the first three struck everyone, others say the Jews were spared from all.

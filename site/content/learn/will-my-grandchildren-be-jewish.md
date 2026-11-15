@@ -1,6 +1,6 @@
 ---
 title: Will My Grandchildren Be Jewish? Jewish Continuity and What Keeps It Alive
-description: Will your grandchildren be Jewish? What Chabad.org teaches about Jewish continuity and warm ways to hand Judaism on, with no guilt.
+description: Will your grandchildren be Jewish? What Jewish tradition teaches about Jewish continuity and warm ways to hand Judaism on, with no guilt.
 category: Jewish ideas
 related: jewish-grandparents, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
 local: Thinking about the Jewish future of your family? Talk with Rabbi Labkowski at 925-384-7242 or Rebbetzin Labkowski at 925-384-7241.
@@ -9,7 +9,7 @@ Whether your grandchildren will live and love their Judaism depends on what is h
 
 ## A Jew is someone with Jewish grandchildren
 
-Chabad.org shares an essay by Dr. Susan Handelman on why the family is so central to Judaism. She begins with a well-known saying that a Jew today is someone who has Jewish grandchildren. She calls it a metaphor, and she writes with compassion for the many who cannot have children.
+Dr. Susan Handelman writes in an essay on why the family is so central to Judaism. She begins with a well-known saying that a Jew today is someone who has Jewish grandchildren. She calls it a metaphor, and she writes with compassion for the many who cannot have children.
 
 Her explanation is that the third generation confirms the first. The essay cites the principle that "three is a *chazakah*" (חֲזָקָה, a firm hold): what happens three times is established. When a grandchild carries Judaism forward, the chain is secure.
 
@@ -17,13 +17,13 @@ The essay also says that handing Judaism on is not only a matter of biology. It 
 
 ## Shabbat candles: a flame handed down
 
-A Chabad.org writer describes lighting Shabbat candles the way her grandmother did, and her mother after her. Her grandmother lit them through every hardship, "because that's what we do." Even when Friday preparation feels overwhelming, she writes, the candles connect the past, present and future, and imperfect is fine as long as the practice continues.
+One writer describes lighting Shabbat candles the way her grandmother did, and her mother after her. Her grandmother lit them through every hardship, "because that's what we do." Even when Friday preparation feels overwhelming, she writes, the candles connect the past, present and future, and imperfect is fine as long as the practice continues.
 
 You do not need to do everything. A single candle lit with love can be the one thing a child remembers. See [Shabbat Candles](/learn/shabbat-candles), and [Shabbat for Beginners](/learn/shabbat-for-beginners).
 
 ## Teaching children early
 
-Jewish law places the education of children on the parents. Chabad.org explains that the mitzvah of *chinuch* (חִנּוּךְ, "education") begins when a child can understand, that basic blessings and prayers are traditionally taught from around age three, and that mothers are often the most effective educators. Parents can also delegate teaching to a teacher or school. See [Chinuch](/learn/chinuch) and [Jewish Grandparents](/learn/jewish-grandparents).
+Jewish law places the education of children on the parents. Chassidic teaching explains that the mitzvah of *chinuch* (חִנּוּךְ, "education") begins when a child can understand, that basic blessings and prayers are traditionally taught from around age three, and that mothers are often the most effective educators. Parents can also delegate teaching to a teacher or school. See [Chinuch](/learn/chinuch) and [Jewish Grandparents](/learn/jewish-grandparents).
 
 If you are a grandparent, your own example matters, and the Rabbi would be glad to suggest ideas that fit your family. Call 925-384-7242.
 
@@ -39,13 +39,13 @@ Chabad of Lamorinda accepts legacy gifts (a bequest in a will or trust, a retire
 Jewish continuity means that Jewish identity, practice and learning are passed from one generation to the next. It happens through family, Shabbat, education and community.
 
 ### Will my grandchildren be Jewish?
-In Jewish law, as Chabad.org explains, a child born to a Jewish mother is Jewish for life, however much or little the family practices. Whether they will live Jewishly depends on what each generation passes on: your example, your Shabbat table and your support for Jewish education all help. Every family's story is different, so for your own family, talk privately with the Rabbi.
+In Jewish law, a child born to a Jewish mother is Jewish for life, however much or little the family practices. Whether they will live Jewishly depends on what each generation passes on: your example, your Shabbat table and your support for Jewish education all help. Every family's story is different, so for your own family, talk privately with the Rabbi.
 
 ### What if my children are not very observant?
-You are not too late, and no one is judging you. Chabad.org's essay suggests that grandparents and mentors can help in many ways, and each step you take counts. Call Rabbi Labkowski at 925-384-7242 for a friendly conversation.
+You are not too late, and no one is judging you. Jewish teaching suggests that grandparents and mentors can help in many ways, and each step you take counts. Call Rabbi Labkowski at 925-384-7242 for a friendly conversation.
 
 ### What can a grandparent do from far away?
-Chabad.org's essay points to teaching, mentoring and caring for children, and you can also support a Jewish school or program for children. Ask the Rabbi for ideas that fit your family.
+Jewish teaching points to teaching, mentoring and caring for children, and you can also support a Jewish school or program for children. Ask the Rabbi for ideas that fit your family.
 
 ### How can a gift help Jewish continuity?
 A gift to Jewish education and community helps children and families learn and celebrate Judaism. A legacy gift does this for future generations in Lafayette, Moraga and Orinda.

@@ -9,13 +9,13 @@ Psalm 30 begins with the words "Mizmor shir chanukat habayit, l'David," "A psalm
 
 ## What does the heading mean?
 
-According to Rashi, whose commentary appears with the psalm on Chabad.org, the Levites sang this song at the dedication of the Temple in the days of King Solomon. A Chabad.org article also describes it as a psalm composed for the dedication of the Holy Temple, so the "House" in the heading is the Temple, G-d's House. The Hebrew word for dedication, *chanukah*, is the same word as the name of the holiday, which is the link with the festival that celebrates the rededication of the Temple.
+According to Rashi, whose commentary appears with the psalm, the Levites sang this song at the dedication of the Temple in the days of King Solomon. Other commentators also describe it as a psalm composed for the dedication of the Holy Temple, so the "House" in the heading is the Temple, G-d's House. The Hebrew word for dedication, *chanukah*, is the same word as the name of the holiday, which is the link with the festival that celebrates the rededication of the Temple.
 
 You can read more about the festival's name in [what Chanukah means](/learn/what-does-chanukah-mean) and about the home in [Chanukat HaBayit](/learn/chanukat-habayit).
 
 ## What does the psalm say?
 
-The psalm is a song of thanks from a person who has been through a hard time and come out the other side. Here are a few of the ideas, as found in the translation on Chabad.org:
+The psalm is a song of thanks from a person who has been through a hard time and come out the other side. Here are a few of the ideas, as found in a standard translation:
 
 - The writer says he will exalt G-d, because G-d has raised him up and has not let his enemies rejoice over him.
 - He cried out to G-d and was healed. Rashi explains that "healed" here means forgiven.
@@ -26,13 +26,13 @@ Rashi also records that the Sages read this psalm as being about Mordechai, Esth
 
 ## Where does it appear in the prayers?
 
-In the Chabad.org online siddur, Psalm 30 (Mizmor Shir) comes right after Hodu in the morning prayers. For how the psalm is said on Chanukah in particular, ask the Rabbi or look at a Chabad siddur. You can call Rabbi Labkowski at 925-384-7242.
+In the siddur, Psalm 30 (Mizmor Shir) comes right after Hodu in the morning prayers. For how the psalm is said on Chanukah in particular, ask the Rabbi or look at a Chabad siddur. You can call Rabbi Labkowski at 925-384-7242.
 
 To learn how the prayers of Chanukah fit together, read [Al HaNissim and Hallel](/learn/al-hanissim-and-hallel) and [Hallel](/learn/hallel).
 
 ## A psalm for a new home
 
-Many also say Psalm 30 when inaugurating a new home, which is why a Chabad.org answer calls it a psalm "about inaugurating a new house." If you have recently moved in, our guide to [Chanukat HaBayit](/learn/chanukat-habayit) explains how to put up a mezuzah and celebrate.
+Many also say Psalm 30 when inaugurating a new home, which is why it is called a psalm "about inaugurating a new house." If you have recently moved in, our guide to [Chanukat HaBayit](/learn/chanukat-habayit) explains how to put up a mezuzah and celebrate.
 
 ## Common questions
 
@@ -46,10 +46,10 @@ Its heading speaks of dedication, *chanukah*, and Chanukah celebrates the rededi
 "A psalm, a song for the dedication of the House." According to Rashi, the Levites sang it at the Temple's dedication in Solomon's time.
 
 ### Can I say Psalm 30 when I move into a new home?
-Yes, many do. A Chabad.org answer describes the psalm as being about inaugurating a new house. Ask the Rabbi about the customs for your home.
+Yes, many do. The psalm is described as being about inaugurating a new house. Ask the Rabbi about the customs for your home.
 
 ### When is Psalm 30 said in the morning prayers?
-In the Chabad.org online siddur it comes right after Hodu. Ask the Rabbi about any special arrangement for Chanukah.
+In the siddur it comes right after Hodu. Ask the Rabbi about any special arrangement for Chanukah.
 
 ### Can someone in Lafayette, Moraga or Orinda ask for a Tehillim to be said for them?
 Yes. Use the [Tehillim prayer list](/tehillim) or call Chabad of Lamorinda in Lafayette at 925-384-7242.

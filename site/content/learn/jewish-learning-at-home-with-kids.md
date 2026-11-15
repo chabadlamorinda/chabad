@@ -9,7 +9,7 @@ You can teach your children Judaism at home in about ten minutes a day by attach
 
 ## Why home matters most
 
-A class, a camp or a school gives structure, but children learn what Jewish life is from watching their parents. Chabad.org notes that mothers are often the most effective educators because of the time they spend with children, and that the ultimate goal is for a child to value each mitzvah for its own sake and for the connection it creates with G-d. It also quotes the advice to spend regular time, even half an hour a day, thinking about how to inspire your children. You do not need to be an expert. You need to be consistent and warm.
+A class, a camp or a school gives structure, but children learn what Jewish life is from watching their parents. Jewish tradition notes that mothers are often the most effective educators because of the time they spend with children, and that the ultimate goal is for a child to value each mitzvah for its own sake and for the connection it creates with G-d. It also quotes the advice to spend regular time, even half an hour a day, thinking about how to inspire your children. You do not need to be an expert. You need to be consistent and warm.
 
 If you are unsure where to start, see [first mitzvot for young children](/learn/first-mitzvot-for-young-children) and [Jewish parenting](/learn/jewish-parenting).
 
@@ -45,7 +45,7 @@ On a busy day, do just one. A single minute done joyfully is worth more than ten
 
 1. **Make it fun.** Games, treats, songs and pretend play.
 2. **Do it with them.** Children copy what parents do, not only what they say.
-3. **Praise effort.** Rewards can help children get started, as Chabad.org notes, but the goal is for a child to love the mitzvah itself.
+3. **Praise effort.** Rewards can help children get started, as Jewish tradition notes, but the goal is for a child to love the mitzvah itself.
 4. **Be patient.** Children ask hard questions and lose interest sometimes. That is part of growing.
 5. **Do not compare.** Each child, and each family, moves at its own pace.
 6. **Bring in others.** Grandparents, teachers and the Rabbi are partners. Visit the [kids' corner](/kids) for games and stories.

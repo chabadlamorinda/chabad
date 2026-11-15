@@ -9,27 +9,27 @@ The fruit of a fruit tree is forbidden for its first three years. This law is ca
 
 ## What is orlah?
 
-The Torah says that the fruit of a newly planted food tree is "blocked" for three years and may not be eaten (Leviticus 19:23 to 25). Chabad.org explains that in the fourth year the fruit is holy, and from the fifth year the owner may use it freely. The law applies to real fruit trees. A banana plant, for example, is not considered a tree for this law.
+The Torah says that the fruit of a newly planted food tree is "blocked" for three years and may not be eaten (Leviticus 19:23 to 25). Jewish law explains that in the fourth year the fruit is holy, and from the fifth year the owner may use it freely. The law applies to real fruit trees. A banana plant, for example, is not considered a tree for this law.
 
-It applies even to a tree grown in a pot, according to Chabad.org. It forbids the fruit, including the peel, not other edible parts of the plant.
+It applies even to a tree grown in a pot, according to Jewish law. It forbids the fruit, including the peel, not other edible parts of the plant.
 
 ## What about fruit from the store?
 
-Chabad.org says that outside Israel, orlah is forbidden only when it is certain that the fruit is orlah. A doubt is not enough, so store-bought fruit from outside Israel may be eaten. The question comes up mainly with trees you plant yourself, where you know the tree's age.
+the halacha says that outside Israel, orlah is forbidden only when it is certain that the fruit is orlah. A doubt is not enough, so store-bought fruit from outside Israel may be eaten. The question comes up mainly with trees you plant yourself, where you know the tree's age.
 
 ## How the three years are counted
 
-The count is not from the day of planting. Chabad.org explains that it is counted from Rosh Hashanah. A tree planted before the 16th of Av enters its second year at the first Rosh Hashanah after planting, and from the 16th of Av on, that part of the year is not counted and three full years run from Rosh Hashanah. Fruit that ripens before the 15th of Shevat (Tu Bishvat) in the fourth year is still orlah.
+The count is not from the day of planting. Jewish law explains that it is counted from Rosh Hashanah. A tree planted before the 16th of Av enters its second year at the first Rosh Hashanah after planting, and from the 16th of Av on, that part of the year is not counted and three full years run from Rosh Hashanah. Fruit that ripens before the 15th of Shevat (Tu Bishvat) in the fourth year is still orlah.
 
 The count can start again. If a tree is dug up and replanted without enough of its original soil to sustain it, the count restarts. Grafting can also restart the count for that branch. These are details, so write down the planting date and call the Rabbi to count the years with you.
 
 ## The fourth year
 
-In the fourth year, the fruit is called neta revai. Chabad.org says it must be redeemed before eating: pick it when fully ripe, take an item of small value, say the redemption formula, then destroy the item. Ask the Rabbi to walk you through it the first time.
+In the fourth year, the fruit is called neta revai. The halacha says it must be redeemed before eating: pick it when fully ripe, take an item of small value, say the redemption formula, then destroy the item. Ask the Rabbi to walk you through it the first time.
 
 ## Cutting down a fruit tree
 
-Chabad.org teaches that cutting down a fruit tree is generally forbidden, and many authorities say not to cut even a branch without a good reason. It is permitted when the tree no longer bears fruit, when it may cause damage or injury, or when the space is needed to build a home. Even then, ask the Rabbi first. This is related to the Jewish value of not destroying needlessly; see [bal tashchit](/learn/bal-tashchit).
+Jewish law teaches that cutting down a fruit tree is generally forbidden, and many authorities say not to cut even a branch without a good reason. It is permitted when the tree no longer bears fruit, when it may cause damage or injury, or when the space is needed to build a home. Even then, ask the Rabbi first. This is related to the Jewish value of not destroying needlessly; see [bal tashchit](/learn/bal-tashchit).
 
 ## Grafting and mixing plants
 
@@ -37,7 +37,7 @@ Outside Israel, different species may be planted next to each other, with grapes
 
 ## Gardening on Shabbat
 
-Chabad.org notes that many Shabbat laws relate to gardening, such as planting, watering, weeding and raking. You may walk through and enjoy your garden on Shabbat. See [Shabbat for beginners](/learn/shabbat-for-beginners).
+the halacha notes that many Shabbat laws relate to gardening, such as planting, watering, weeding and raking. You may walk through and enjoy your garden on Shabbat. See [Shabbat for beginners](/learn/shabbat-for-beginners).
 
 ## Common questions
 
@@ -48,7 +48,7 @@ Not in the first three years. That fruit is orlah and is forbidden, even outside
 It is counted from Rosh Hashanah, depending on when you planted. Ask the Rabbi to count with you.
 
 ### Is fruit from a tree in a pot also orlah?
-Yes, according to Chabad.org, even a pot without holes.
+Yes, according to the halacha, even a pot without holes.
 
 ### Can I eat store-bought fruit from a young tree?
 Outside Israel, orlah is forbidden only when it is certain. So store-bought fruit may be eaten.

@@ -9,7 +9,7 @@ In Judaism, holiness (קְדֻשָּׁה, kedushah) is what is sanctified to G-d
 
 ## Holiness is a command
 
-The Torah tells us to sanctify ourselves (Leviticus 11:44). It does not say this only to special people or only inside a synagogue. Rabbi Isaiah Horowitz, known as the Shelah, whose teaching Chabad.org shares, describes three kinds of holiness that a person can build.
+The Torah tells us to sanctify ourselves (Leviticus 11:44). It does not say this only to special people or only inside a synagogue. Rabbi Isaiah Horowitz, known as the Shelah, describes three kinds of holiness that a person can build.
 
 - **Holiness of the body.** How we behave, what we do with our hands and feet, and how we keep away from what is spiritually harmful.
 - **Holiness of space.** The Shelah points to the burning bush, where the Torah calls a place holy. Many Jews bring this into the home: see [mezuzah](/learn/mezuzah) and the [kosher kitchen](/learn/kosher-kitchen).
@@ -21,7 +21,7 @@ At the end of Shabbat we say [Havdalah](/learn/havdalah), a blessing that separa
 
 ## A home for G-d in this world
 
-Chabad.org presents a central idea of Chassidic teaching, called dirah b'tachtonim (דִּירָה בְּתַחְתּוֹנִים), a "dwelling in the lower realms." According to the chassidic masters, this is the purpose of the creation of the world and of human beings: to make a home for G-d in the physical world. Chabad.org ties this to the verse in which G-d asks the Jewish people to build a sanctuary so that He may dwell among them (Exodus 25:8). The Lubavitcher Rebbe's teachings turn this idea into a way to live every day.
+A central idea of Chassidic teaching is called dirah b'tachtonim (דִּירָה בְּתַחְתּוֹנִים), a "dwelling in the lower realms." According to the chassidic masters, this is the purpose of the creation of the world and of human beings: to make a home for G-d in the physical world. Jewish tradition ties this to the verse in which G-d asks the Jewish people to build a sanctuary so that He may dwell among them (Exodus 25:8). The Lubavitcher Rebbe's teachings turn this idea into a way to live every day.
 
 The idea is that holiness is not found only in a prayer service or on a mountaintop. Chassidic teaching applies it to everyday life, including such acts as eating with a blessing. See [eating as a mitzvah](/learn/eating-as-a-mitzvah) and [What is a mitzvah?](/learn/what-is-a-mitzvah).
 

@@ -27,9 +27,9 @@ For preparing the holidays themselves, see [Rosh Hashanah for beginners](/learn/
 
 ## Sukkot and the first rains
 
-Sukkot, the festival of booths, comes in the fall. We sit in a sukkah, a temporary hut, and the Torah teaches that the sukkah is our home for the week. Chabad.org explains that if rain makes it uncomfortable, a person may go indoors, since the sukkah is the one mitzvah you may leave when it bothers you. Many people still prefer to stay in, because the sukkah is a holy space. See our guide to the [sukkah](/learn/sukkah).
+Sukkot, the festival of booths, comes in the fall. We sit in a sukkah, a temporary hut, and the Torah teaches that the sukkah is our home for the week. Jewish tradition explains that if rain makes it uncomfortable, a person may go indoors, since the sukkah is the one mitzvah you may leave when it bothers you. Many people still prefer to stay in, because the sukkah is a holy space. See our guide to the [sukkah](/learn/sukkah).
 
-Immediately after, on Shemini Atzeret, Jewish communities begin to mention rain in the Amidah prayer, in the second blessing. Chabad.org explains that we do not ask for rain during Sukkot, because rain then would be a sign of displeasure when we cannot sit in our huts. Only after the festival do we praise G-d as the One who "makes the wind blow and the rain fall." It is a perfect fit for the Bay Area, where the rainy season starts about now. Read more in [prayers for rain](/learn/prayers-for-rain) and [Shemini Atzeret](/learn/shemini-atzeret).
+Immediately after, on Shemini Atzeret, Jewish communities begin to mention rain in the Amidah prayer, in the second blessing. Jewish tradition explains that we do not ask for rain during Sukkot, because rain then would be a sign of displeasure when we cannot sit in our huts. Only after the festival do we praise G-d as the One who "makes the wind blow and the rain fall." It is a perfect fit for the Bay Area, where the rainy season starts about now. Read more in [prayers for rain](/learn/prayers-for-rain) and [Shemini Atzeret](/learn/shemini-atzeret).
 
 ## Early Shabbat on dark winter Fridays
 
@@ -52,7 +52,7 @@ Yes. The Torah connects Passover to spring, Shavuot to the early harvest and Suk
 Jewish communities begin mentioning rain in the Amidah on Shemini Atzeret, after Sukkot. See [prayers for rain](/learn/prayers-for-rain).
 
 ### What if it rains on Sukkot?
-Chabad.org explains that a person who is uncomfortable because of rain may eat indoors, since the sukkah is the one mitzvah you can leave when it bothers you. Ask the Rabbi about specifics.
+The tradition explains that a person who is uncomfortable because of rain may eat indoors, since the sukkah is the one mitzvah you can leave when it bothers you. Ask the Rabbi about specifics.
 
 ### Why does Shabbat start so early in winter?
 Shabbat begins at sunset, which comes earlier in winter. This week's Kabbalat Shabbat time is {kabbalat-shabbat}, and our [Shabbat times](/shabbat-times) page lists it for every week.

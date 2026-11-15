@@ -11,7 +11,7 @@ For people in Lafayette, Moraga and Orinda who commute, run businesses or work f
 
 ## Chapter 26: a trick for the middle of the day
 
-Chapter 26 on Chabad.org is about sadness and a heavy heart. It says the evil inclination cannot be defeated with laziness and heaviness, which come from sadness. The Alter Rebbe compares the inner struggle to a wrestling match: a lazy wrestler loses even to a weaker opponent. We need alacrity that flows from joy and an open heart.
+Chapter 26 of the Tanya is about sadness and a heavy heart. It says the evil inclination cannot be defeated with laziness and heaviness, which come from sadness. The Alter Rebbe compares the inner struggle to a wrestling match: a lazy wrestler loses even to a weaker opponent. We need alacrity that flows from joy and an open heart.
 
 Then the chapter makes a point about the workday. Sadness about spiritual matters that strikes during business or work, it says, is a trick of the yetzer hara, whose goal is to make a person depressed so that he later falls into temptation. Genuine sadness, rooted in love or awe of G-d, arises naturally during prayer or Torah study. If it appears in the middle of business affairs, it is likely artificial. The remedy is to recognize that this is not the time for sadness, even over serious mistakes.
 
@@ -31,7 +31,7 @@ Chapter 37 speaks of giving tzedakah from money that was not obtained through th
 
 ## Calm trust
 
-Epistle 11 of the Iggeret HaKodesh on Chabad.org offers a spiritual perspective on livelihood: a person who truly trusts G-d knows that his needs and affairs come from G-d, and does not have to be anxious. The epistle gives no practical advice on earning or budgeting; its concern is the inner attitude. For the practical side of livelihood, see [parnassah, work and livelihood](/learn/parnassah-work-and-livelihood).
+Epistle 11 of the Iggeret HaKodesh offers a spiritual perspective on livelihood: a person who truly trusts G-d knows that his needs and affairs come from G-d, and does not have to be anxious. The epistle gives no practical advice on earning or budgeting; its concern is the inner attitude. For the practical side of livelihood, see [parnassah, work and livelihood](/learn/parnassah-work-and-livelihood).
 
 ## A way to carry this into your week
 

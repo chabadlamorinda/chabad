@@ -7,31 +7,31 @@ local: Want a partner for your daily Tanya? Call Rabbi Labkowski at 925-384-7242
 ---
 The daily Tanya is a short portion of the Tanya set for each day of the year, so that the whole book is studied in one year. It is one of the three parts of Chitas (חת"ת), the daily study program whose letters stand for Chumash, Tehillim and Tanya.
 
-On Chabad.org, each day's page shows that day's portion, with audio and video classes on it, and the text in English, Hebrew or both.
+Online, each day's page shows that day's portion, with audio and video classes on it, and the text in English, Hebrew or both.
 
 ## What is Chitas?
 
 Chitas is a daily program of learning that Chabad Jews follow:
 
 - **Chumash:** the Five Books of Moses, learned with Rashi. The Torah has 54 weekly portions, each divided into seven sections called aliyot, and one aliyah a day brings you through the whole Chumash in a year.
-- **Tehillim:** the 150 Psalms, divided into 30 portions, one for each day of the month. Chabad.org notes that Tehillim is said as a prayer rather than studied, traditionally after the morning prayers.
+- **Tehillim:** the 150 Psalms, divided into 30 portions, one for each day of the month. Tehillim is said as a prayer rather than studied, traditionally after the morning prayers.
 - **Tanya:** the daily portion described here.
 
-Chabad.org says the daily study was instituted by the Sixth Chabad Rebbe, Rabbi Yosef Yitzchak Schneersohn, and that the Rebbe, Rabbi Menachem M. Schneerson, encouraged it. Many people also learn Hayom Yom, a short book with one Chassidic saying for each day.
+The daily study was instituted by the Sixth Chabad Rebbe, Rabbi Yosef Yitzchak Schneersohn, and that the Rebbe, Rabbi Menachem M. Schneerson, encouraged it. Many people also learn Hayom Yom, a short book with one Chassidic saying for each day.
 
 ## How the Tanya cycle works
 
-The Tanya cycle begins on the 19th of Kislev, which Chabad.org calls the "Rosh Hashanah of Chassidism." See [Yud Tes Kislev](/learn/yud-tes-kislev) for why that day matters. You do not have to start on that day. You can join the cycle on any day, with that day's portion.
+The Tanya cycle begins on the 19th of Kislev, known as the "Rosh Hashanah of Chassidism." See [Yud Tes Kislev](/learn/yud-tes-kislev) for why that day matters. You do not have to start on that day. You can join the cycle on any day, with that day's portion.
 
-In a Jewish leap year, there are two tracks. Chabad.org explains that the leap-year track has smaller portions so that the cycle lasts one extra month. If it is confusing, [ask the Rabbi](/help/talk-to-the-rabbi).
+In a Jewish leap year, there are two tracks. The leap-year track has smaller portions so that the cycle lasts one extra month. If it is confusing, [ask the Rabbi](/help/talk-to-the-rabbi).
 
 ## How to follow it
 
-- **A book:** Chabad.org mentions the Sefer Hachitas, which since the 1980s has combined the three texts with a prayer book and Hayom Yom.
-- **Online or on a phone:** the Tanya, Chumash and Tehillim portions are on Chabad.org and the Daily Study App, in several languages, with audio and video. Chabad.org notes that the website and app are not to be used on Shabbat or Jewish holidays.
+- **A book:** the Sefer Hachitas, which since the 1980s has combined the three texts with a prayer book and Hayom Yom.
+- **Online or on a phone:** the Tanya, Chumash and Tehillim portions are online and in the Daily Study App, in several languages, with audio and video. The website and app are not to be used on Shabbat or Jewish holidays.
 - **A weekly booklet:** Chayenu includes the week's Chitas portions.
 
-Chabad.org does not say how long a daily portion takes, so start small. If you are new to the book, begin with [how to start learning Tanya](/learn/how-to-start-learning-tanya) first, and use the [Tanya glossary](/learn/tanya-glossary-for-beginners).
+A daily portion takes different people different amounts of time, so start small. If you are new to the book, begin with [how to start learning Tanya](/learn/how-to-start-learning-tanya) first, and use the [Tanya glossary](/learn/tanya-glossary-for-beginners).
 
 ## Why a daily habit
 
@@ -46,10 +46,10 @@ The daily Tanya is the portion of the Tanya set for each day, so that the entire
 Chitas stands for Chumash, Tehillim and Tanya, the three texts of the daily study program.
 
 ### Who started the daily Tanya study?
-Chabad.org credits the Sixth Chabad Rebbe, Rabbi Yosef Yitzchak Schneersohn, with instituting the daily study. The page does not give the year.
+Tradition credits the Sixth Chabad Rebbe, Rabbi Yosef Yitzchak Schneersohn, with instituting the daily study. The page does not give the year.
 
 ### When does the Tanya cycle begin?
-On 19 Kislev, the day Chabad.org calls the "Rosh Hashanah of Chassidism." You can join on any day.
+On 19 Kislev, the day known as the "Rosh Hashanah of Chassidism." You can join on any day.
 
 ### Can I start in the middle of the year?
 Yes. Open today's portion and begin there. You can later go back to Chapter 1.

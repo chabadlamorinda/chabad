@@ -9,7 +9,7 @@ Ezra the Scribe (עזרא הסופר, Ezra HaSofer) led the second wave of Jews 
 
 ## Who was Ezra the Scribe?
 
-According to Chabad.org, Ezra was born in Babylon into a priestly family and devoted his life to Torah. He was a scribe by trade, writing books of the Torah and Prophets, and as a young man he studied under Baruch ben Neriah. He is credited with writing the books of Ezra and Malachi, and the Chronicles up to his time.
+According to Jewish tradition, Ezra was born in Babylon into a priestly family and devoted his life to Torah. He was a scribe by trade, writing books of the Torah and Prophets, and as a young man he studied under Baruch ben Neriah. He is credited with writing the books of Ezra and Malachi, and the Chronicles up to his time.
 
 Ezra did not travel with the first group of returnees. When Cyrus allowed the Jews to go home and rebuild the [Holy Temple](/learn/the-holy-temple), about 42,000 people returned and laid its foundations. Opposition from neighbors stopped the work for years. Under Darius, with the encouragement of the prophets Haggai and Zechariah, the Temple was finished. Ezra stayed in Babylon during these years, studying and clarifying the family lines of the Jews there.
 
@@ -21,13 +21,13 @@ What Ezra found was heartbreaking. Many Jews had drifted from the commandments a
 
 ## What Ezra gave us
 
-Ezra made sure Torah would live in ordinary daily life, not only in the Temple. Chabad.org lists among his enactments:
+Ezra made sure Torah would live in ordinary daily life, not only in the Temple. Chassidic teaching lists among his enactments:
 
 - Reading the [Torah](/learn/torah-reading) publicly on Shabbat afternoon, and on Monday and Thursday mornings. This is why we still read from the scroll on those days.
 - Courts sitting on Mondays and Thursdays.
 - Doing laundry on Thursday in preparation for Shabbat.
 
-He also wrote a model Torah scroll, kept in the Temple, against which other scrolls were checked. Chabad.org credits this with the remarkable accuracy of Torah scrolls today.
+He also wrote a model Torah scroll, kept in the Temple, against which other scrolls were checked. The tradition credits this with the remarkable accuracy of Torah scrolls today.
 
 ## The Men of the Great Assembly
 
@@ -35,7 +35,7 @@ Ezra led the Anshei Knesset HaGedolah, the Men of the Great Assembly, one of the
 
 ## Nehemiah and the walls
 
-Ezra's work was spiritual, but the people were still struggling. For about twelve years Jerusalem's walls lay broken and raiders troubled the area. Nehemiah, a Jewish government official from Babylon, came as governor to rebuild the walls and defend the people. Chabad.org sums it up well: Nehemiah looked after the people's physical needs, while Ezra looked after their spiritual well-being.
+Ezra's work was spiritual, but the people were still struggling. For about twelve years Jerusalem's walls lay broken and raiders troubled the area. Nehemiah, a Jewish government official from Babylon, came as governor to rebuild the walls and defend the people. Jewish tradition sums it up well: Nehemiah looked after the people's physical needs, while Ezra looked after their spiritual well-being.
 
 ## A lesson for today
 
@@ -50,7 +50,7 @@ Ezra was a priest and scribe born in Babylon who led the second return of Jews t
 Nehemiah was a Jewish official from Babylon who became governor of Jerusalem and rebuilt its walls. He cared for the people's physical safety while Ezra cared for their spiritual life.
 
 ### Why do we read the Torah on Monday and Thursday?
-Chabad.org lists public Torah reading on Monday and Thursday mornings, and on Shabbat afternoon, among Ezra's enactments. Ask the Rabbi for the details of the weekday reading.
+Chassidic teaching lists public Torah reading on Monday and Thursday mornings, and on Shabbat afternoon, among Ezra's enactments. Ask the Rabbi for the details of the weekday reading.
 
 ### What was the Great Assembly?
 The Men of the Great Assembly were a group of sages led by Ezra who formed the liturgy of Jewish prayer and established many systems of Jewish law still used today.

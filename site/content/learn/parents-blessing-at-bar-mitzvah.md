@@ -13,18 +13,18 @@ Until 13, a father is responsible for teaching his son and, in a sense, answers 
 
 ## How and when it is said
 
-Chabad.org explains the details, and a few are worth knowing:
+A few details are worth knowing:
 
 - It is said when the **boy** has his aliyah, not when the father is called up.
 - The text is one short line; the Rabbi will give you the wording used in our community. Say it aloud, standing beside your son.
 - It can be said on a day the Torah is read: Shabbat, Monday, Thursday and Rosh Chodesh.
-- **The Divine Name is left out.** Chabad.org says that Chabad Chassidim generally do not say G-d's name in this blessing. Chabad.org adds that the Rebbes themselves did say it, but that this is not a directive for everyone. Ask the Rabbi how it will be said at your Bar Mitzvah.
+- **The Divine Name is left out.** Chabad Chassidim generally do not say G-d's name in this blessing. The Rebbes themselves did say it, but that this is not a directive for everyone. Ask the Rabbi how it will be said at your Bar Mitzvah.
 
 The [Bar Mitzvah timeline](/learn/bar-bat-mitzvah-timeline) shows where this moment fits in the day. Practice the Hebrew beforehand, so that you are not reading it for the first time in front of everyone.
 
 ## What else the parents can do on the day
 
-Chabad.org describes some customs for the family on the Bar Mitzvah day:
+Here are some customs for the family on the Bar Mitzvah day:
 
 - **A few words from the father.** After the morning prayers, the father may say a short word in honor of the occasion.
 - **Tzedakah.** The boy gives charity before the morning and afternoon prayers, and the parents do too. See [tzedakah](/learn/tzedakah).
@@ -47,7 +47,7 @@ Besides the blessing, many parents use the day to tell their child, in their own
 It is the blessing a father says at his son's Bar Mitzvah aliyah, thanking G-d for freeing him from responsibility for his son's mitzvot. It is a single sentence.
 
 ### Does the father say G-d's name in the blessing?
-Chabad.org says Chabad Chassidim generally do not say it in this blessing. Ask the Rabbi how it will be said at your celebration.
+Chabad Chassidim generally do not say it in this blessing. Ask the Rabbi how it will be said at your celebration.
 
 ### Can the father say it at a Bat Mitzvah?
 The blessing is for the Bar Mitzvah aliyah. A father can bless his daughter in his own words at the celebration; see [Bat Mitzvah](/learn/bat-mitzvah).

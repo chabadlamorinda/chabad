@@ -9,13 +9,13 @@ In Judaism, love (אַהֲבָה, ahavah) is not only a feeling but a way of giv
 
 ## Love is built on giving
 
-Chabad.org explains that the word ahavah is rooted in the more basic word hav, which means "give." The Aramaic hav also means "Give!" The idea is a surprise to many: we usually think we give to those we love. Jewish wisdom says it also works the other way around. We come to love the people we give to.
+Chassidic teaching explains that the word ahavah is rooted in the more basic word hav, which means "give." The Aramaic hav also means "Give!" The idea is a surprise to many: we usually think we give to those we love. Jewish wisdom says it also works the other way around. We come to love the people we give to.
 
 Think of a parent who stays up all night with a sick child. That love is not thin; it is deep because of how much was given. The same is true of friends, of a community and of a marriage.
 
 ## Many kinds of love
 
-Chabad.org notes that Judaism recognizes several kinds of love:
+Chassidic teaching notes that Judaism recognizes several kinds of love:
 
 - **Love of G-d.** A relationship that deepens through prayer, learning and mitzvot. See [belief in G-d](/learn/belief-in-g-d).
 - **Love of a fellow Jew, and of every person.** "Love your neighbor as yourself" is the Torah's great principle; see [ahavat Yisrael](/learn/ahavat-yisrael).
@@ -25,7 +25,7 @@ Chabad.org notes that Judaism recognizes several kinds of love:
 
 ## Love in marriage
 
-Chabad.org points out that the ketubah, the Jewish marriage contract, does not contain a single declaration of love. It contains commitments: to provide, to care, to be faithful. In the Jewish view, love is measured by conduct more than by words.
+Chassidic teaching points out that the ketubah, the Jewish marriage contract, does not contain a single declaration of love. It contains commitments: to provide, to care, to be faithful. In the Jewish view, love is measured by conduct more than by words.
 
 This is why Jewish marriage can deepen with time rather than fade. Couples who keep giving to one another grow closer. See [shalom bayit](/learn/shalom-bayit), the Jewish idea of peace in the home, and [Jewish dating](/learn/jewish-dating) for those who are still looking.
 
@@ -55,7 +55,7 @@ For difficulties in a relationship, ask the Rabbi or Rebbetzin; they will listen
 Judaism teaches that love grows through giving. The word ahavah comes from "hav," meaning "give," and the Torah commands love of G-d and love of your neighbor.
 
 ### What does ahavah mean?
-Ahavah (אהבה) is the Hebrew word for love. Chabad.org explains that it is rooted in "hav," which means "give."
+Ahavah (אהבה) is the Hebrew word for love. Chassidic teaching explains that it is rooted in "hav," which means "give."
 
 ### Is love a feeling or an action in Judaism?
 It is both, but Judaism puts weight on action: giving, caring and keeping commitments build the feeling.

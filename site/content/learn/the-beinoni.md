@@ -21,7 +21,7 @@ Most of us assume that the beinoni is "average" or second-rate. But the Tanya sa
 
 ## What makes a beinoni
 
-According to Chapter 12 on Chabad.org, a beinoni's thoughts, speech and actions are guided by the divine soul. The animal soul's desires still arise in his heart, so he is not a tzaddik, but he does not let them rule him, not even for a moment. The chapter says the title "rasha" has never been applied to him, even temporarily.
+According to Chapter 12 of the Tanya, a beinoni's thoughts, speech and actions are guided by the divine soul. The animal soul's desires still arise in his heart, so he is not a tzaddik, but he does not let them rule him, not even for a moment. The chapter says the title "rasha" has never been applied to him, even temporarily.
 
 That does not mean he never did anything wrong in his life. It describes who he is now, in his choices. The desire still comes, but he does not act on it, he rejects unwanted thoughts as soon as they come, and he answers anger or jealousy with kindness.
 
@@ -33,7 +33,7 @@ Many people think, "I don't feel spiritual, so religion is not for me." The Tany
 
 ## Tools for the struggle
 
-Chabad.org summarizes some of the tools the Tanya gives:
+Some of the tools the Tanya gives:
 
 - Set aside regular time for reflection and to contemplate G-d's greatness.
 - Remember that the mind can guide the heart, as light chases away darkness.

@@ -5,7 +5,7 @@ category: Jewish home
 related: setting-the-shabbat-table, shabbat-on-a-budget, judaica-buying-guide, shabbat-candles, havdalah
 local: Not sure what to buy first? Call Rabbi Labkowski at 925-384-7242 and he will help you start with what matters.
 ---
-To keep Shabbat at home you need candles and candlesticks, a Kiddush cup, wine or grape juice, two challahs on a board with a cover, salt, a washing cup, and, for the end of Shabbat, a Havdalah set. Chabad.org lists all of these, but you do not have to buy everything at once: candles, grape juice and bread are enough to begin.
+To keep Shabbat at home you need candles and candlesticks, a Kiddush cup, wine or grape juice, two challahs on a board with a cover, salt, a washing cup, and, for the end of Shabbat, a Havdalah set. Jewish tradition lists all of these, but you do not have to buy everything at once: candles, grape juice and bread are enough to begin.
 
 For families in Lafayette, Moraga and Orinda setting up a Jewish home, here is a simple shopping list in the order you will use the items.
 
@@ -14,14 +14,14 @@ For families in Lafayette, Moraga and Orinda setting up a Jewish home, here is a
 - **Candles and candlesticks.** Two candles are lit about 18 minutes before sunset, so you need holders. Any holders will do. See [Shabbat candles](/learn/shabbat-candles).
 - **A Kiddush cup.** A cup or goblet for the wine or grape juice. Many families keep a nicer one for Shabbat. See [Kiddush](/learn/kiddush).
 - **Kosher wine or grape juice.** See [kosher wine](/learn/kosher-wine).
-- **A washing cup.** Chabad.org describes a large cup for pouring water over the hands before eating bread. See [netilat yadayim](/learn/netilat-yadayim).
+- **A washing cup.** chassidic teaching describes a large cup for pouring water over the hands before eating bread. See [netilat yadayim](/learn/netilat-yadayim).
 - **Challah, a board and a cover.** Two whole loaves on a board under a cloth. See [challah](/learn/challah).
-- **A salt dish and a festive tablecloth.** Chabad.org suggests a white cloth. For what goes where, see [setting the Shabbat table](/learn/setting-the-shabbat-table).
+- **A salt dish and a festive tablecloth.** The tradition suggests a white cloth. For what goes where, see [setting the Shabbat table](/learn/setting-the-shabbat-table).
 - **Printed blessings and a Grace after Meals booklet,** in translation or transliteration, helpful for beginners and guests.
 
 ## For keeping food warm
 
-Cooking is not done on Shabbat, so food is ready before candle lighting and kept warm. Chabad.org lists:
+Cooking is not done on Shabbat, so food is ready before candle lighting and kept warm. Jewish tradition lists:
 
 - **A blech**, a metal sheet that covers the stovetop, or a hot plate with a single setting.
 - **An electric urn or a non-whistling kettle** for hot drinks, filled before Shabbat.
@@ -31,13 +31,13 @@ Details and rules are in [how to keep food warm on Shabbat](/learn/keeping-food-
 ## For the rest of the house
 
 - **Timers.** Lights, heating and air conditioning can be set before Shabbat on timers, a simple way to avoid using electricity. See [electricity on Shabbat](/learn/electricity-on-shabbat).
-- **Light switch covers.** Chabad.org suggests guards so that no one flips a switch by accident.
-- **A plan for the fridge light,** which Chabad.org suggests turning off before Shabbat. Ask the Rabbi what works for your model.
+- **Light switch covers.** chassidic teaching suggests guards so that no one flips a switch by accident.
+- **A plan for the fridge light,** which the tradition suggests turning off before Shabbat. Ask the Rabbi what works for your model.
 - **A Shabbat basket of toys and books** for children, without batteries. See [Shabbat with kids](/learn/shabbat-with-kids).
 
 ## For the end of Shabbat
 
-Havdalah (הַבְדָּלָה) marks the end of Shabbat. Chabad.org lists the three items:
+Havdalah (הַבְדָּלָה) marks the end of Shabbat. Jewish tradition lists the three items:
 
 1. **A cup of wine or grape juice,** filled to overflowing.
 2. **A spice box** with fragrant spices.

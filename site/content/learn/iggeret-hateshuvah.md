@@ -7,7 +7,7 @@ local: Want to learn about teshuvah with someone? Call Rabbi Labkowski at 925-38
 ---
 Iggeret HaTeshuvah (אגרת התשובה), "the Letter on Repentance," is a section of the Tanya, added to it by the Alter Rebbe, Rabbi Shneur Zalman of Liadi. It teaches that teshuvah means returning to G-d with all your heart, and that it should be done with confidence and even joy, not with despair.
 
-This guide gives a simple overview of what Chabad.org's texts of Chapters 1 and 11 say. For the general guide, see [teshuvah](/learn/teshuvah). To apply it to a fresh start, read [starting over after you fall](/learn/starting-over-after-you-fall).
+This guide gives a simple overview of what Chapters 1 and 11 say. For the general guide, see [teshuvah](/learn/teshuvah). To apply it to a fresh start, read [starting over after you fall](/learn/starting-over-after-you-fall).
 
 ## What is teshuvah, according to Iggeret HaTeshuvah?
 

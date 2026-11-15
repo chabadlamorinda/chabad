@@ -9,11 +9,11 @@ Tenaim (תנאים, "conditions") is the traditional Jewish engagement agreement
 
 ## What are tenaim?
 
-An engagement has no legal weight in Jewish law on its own. The tenaim give the couple's promise a formal shape. Chabad.org explains that the document sets a wedding date and the shared costs of the wedding and the household, and may mention gifts the groom will give the bride. It is usually a standard printed form with blanks for the names of the bride, groom, two guarantors (one for each side) and the witnesses.
+An engagement has no legal weight in Jewish law on its own. The tenaim give the couple's promise a formal shape. The document sets a wedding date and the shared costs of the wedding and the household, and may mention gifts the groom will give the bride. It is usually a standard printed form with blanks for the names of the bride, groom, two guarantors (one for each side) and the witnesses.
 
-The agreement is made on behalf of the parents, who take on the financial responsibility. It is signed before two kosher witnesses. Chabad.org notes that in Chabad circles, the text expresses a longing for the Redemption, by saying that the wedding will take place in the rebuilt Jerusalem.
+The agreement is made on behalf of the parents, who take on the financial responsibility. It is signed before two kosher witnesses. In Chabad circles, the text expresses a longing for the Redemption, by saying that the wedding will take place in the rebuilt Jerusalem.
 
-Why have an engagement period at all? Chabad.org says it shows that marriage is not an impulsive decision, which is why the Sages required one.
+Why have an engagement period at all? It shows that marriage is not an impulsive decision, which is why the Sages required one.
 
 ## How are tenaim made?
 
@@ -27,16 +27,16 @@ Often the groom shares a Torah thought at the celebration, which makes the gathe
 
 ## Why break a plate?
 
-Typically the mothers of the bride and groom break the plate together. Chabad.org gives two explanations:
+Typically the mothers of the bride and groom break the plate together. There are two explanations:
 
 - **Finality.** Like broken crockery, the agreement cannot be repaired. It marks the commitment as final.
 - **Remembering Jerusalem.** It tempers the joy of the moment by recalling the destruction of Jerusalem, just as the groom will break a glass at the end of the wedding.
 
 ## When are tenaim done today?
 
-Chabad.org describes two customs. In one, the document is completed and signed at an engagement party, sometimes called a "Tenaim" or "Vort." In the other, only a symbolic kinyan is done at the engagement, and the document is signed on the wedding day, usually at the reception before the chuppah. In that case the plate may be broken twice, once after the kinyan and once at the wedding.
+There are two customs. In one, the document is completed and signed at an engagement party, sometimes called a "Tenaim" or "Vort." In the other, only a symbolic kinyan is done at the engagement, and the document is signed on the wedding day, usually at the reception before the chuppah. In that case the plate may be broken twice, once after the kinyan and once at the wedding.
 
-Not every community writes tenaim: Chabad.org notes that in Moroccan Jewish tradition, for example, no engagement contract is written and the commitments are included in the ketubah. For the wedding checklist, tenaim are needed only if you follow the custom. Ask the Rabbi what he recommends for your family.
+Not every community writes tenaim: In Moroccan Jewish tradition, for example, no engagement contract is written and the commitments are included in the ketubah. For the wedding checklist, tenaim are needed only if you follow the custom. Ask the Rabbi what he recommends for your family.
 
 ## Common questions
 

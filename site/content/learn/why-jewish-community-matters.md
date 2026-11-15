@@ -9,7 +9,7 @@ Jewish community matters because Judaism was always meant to be lived together. 
 
 ## Hillel's teaching
 
-In Pirkei Avot (Ethics of the Fathers), Hillel gives several short pieces of advice. Chabad.org presents the first one this way: stay part of the community, and do not withdraw from communal life. Then he adds humility, withholding judgment and not postponing Torah study. The teaching in Hebrew is "אל תפרוש מן הציבור". It does not say "join" but "do not separate." It assumes you are already part of the people, and warns only against drifting away.
+In Pirkei Avot (Ethics of the Fathers), Hillel gives several short pieces of advice. Chassidic teaching presents the first one this way: stay part of the community, and do not withdraw from communal life. Then he adds humility, withholding judgment and not postponing Torah study. The teaching in Hebrew is "אל תפרוש מן הציבור". It does not say "join" but "do not separate." It assumes you are already part of the people, and warns only against drifting away.
 
 ## One body, one people
 

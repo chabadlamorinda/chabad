@@ -9,7 +9,7 @@ The Shulchan Aruch (שולחן ערוך), "the Set Table," is the Code of Jewish
 
 ## What does "Shulchan Aruch" mean?
 
-Chabad.org explains that the name means "Set Table." The Talmud is a vast sea of discussion of about 2,700 pages; the Shulchan Aruch takes the conclusions and sets them out like a meal on a table, ready to eat. If you want to know what to do, rather than why, this is where to look. For the background of Jewish law itself, see [what is halacha](/learn/what-is-halacha).
+Jewish tradition explains that the name means "Set Table." The Talmud is a vast sea of discussion of about 2,700 pages; the Shulchan Aruch takes the conclusions and sets them out like a meal on a table, ready to eat. If you want to know what to do, rather than why, this is where to look. For the background of Jewish law itself, see [what is halacha](/learn/what-is-halacha).
 
 ## Who wrote it?
 
@@ -29,7 +29,7 @@ Following an earlier work called the *Arba Turim*, the code has four sections:
 3. **Even HaEzer**: marriage and divorce.
 4. **Choshen Mishpat**: money and civil law.
 
-Chabad.org notes that its opening line urges a person to rise "like a lion" to serve the Creator.
+Chassidic teaching notes that its opening line urges a person to rise "like a lion" to serve the Creator.
 
 ## Versions for everyday readers
 
@@ -37,7 +37,7 @@ Chabad.org notes that its opening line urges a person to rise "like a lion" to s
 - **Mishnah Berurah.** The Chafetz Chaim (1839-1933) wrote a six-volume commentary on Orach Chaim, widely used for daily life.
 - **Shulchan Aruch HaRav.** Rabbi Schneur Zalman of Liadi, the Alter Rebbe and founder of Chabad, wrote a longer version at the request of the Maggid of Mezritch. It explains the reasoning for each law and gives a final ruling that takes later opinions into account. See [the Chabad Rebbes](/learn/chabad-rebbes).
 
-Chabad.org points out that the name has become a word for Jewish law itself, and that someone who lives closely by it is sometimes called a "Shulchan Aruch Yid."
+The tradition points out that the name has become a word for Jewish law itself, and that someone who lives closely by it is sometimes called a "Shulchan Aruch Yid."
 
 ## Why was it controversial?
 

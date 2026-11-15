@@ -9,13 +9,13 @@ Lecha Dodi (לְכָה דוֹדִי), "Come, my beloved," is the hymn sung at th
 
 ## What Lecha Dodi is
 
-Its refrain invites us: "Come, my beloved, to greet the bride; let us welcome the Shabbat." The Jewish people go out to meet Shabbat the way a groom goes to meet his bride. Chabad.org explains the image: Shabbat was the only day of Creation without a partner, so the Jewish people become its partner.
+Its refrain invites us: "Come, my beloved, to greet the bride; let us welcome the Shabbat." The Jewish people go out to meet Shabbat the way a groom goes to meet his bride. Jewish tradition explains the image: Shabbat was the only day of Creation without a partner, so the Jewish people become its partner.
 
 The hymn is about getting ready to greet Shabbat, and it looks ahead to a time when all of life, not only Shabbat, will carry the same holiness. In Kabbalah, Shabbat corresponds to the seventh of the divine attributes, malchut, which is connected with the Divine Presence (Shechinah) and with the Jewish people. You can read more in [Kabbalah](/learn/kabbalah) and [the sefirot](/learn/sefirot).
 
 ## Who wrote it, and why Safed?
 
-Rabbi Shlomo HaLevi Alkabetz (about 1500 to 1580) was part of the circle of scholars and mystics in Safed (Tzfat) in the Land of Israel. According to Chabad.org, he was the teacher and brother-in-law of Rabbi Moshe Cordovero. He was born in Salonica, settled in Safed around 1535 and is buried there.
+Rabbi Shlomo HaLevi Alkabetz (about 1500 to 1580) was part of the circle of scholars and mystics in Safed (Tzfat) in the Land of Israel. According to Jewish tradition, he was the teacher and brother-in-law of Rabbi Moshe Cordovero. He was born in Salonica, settled in Safed around 1535 and is buried there.
 
 Safed's mystics, including Rabbi Yitzchak Luria, the Ari, would go out to the fields around the town on Friday afternoon to greet Shabbat. The Talmud (Shabbat 119a) describes Rabbi Chanina and Rabbi Yannai welcoming Shabbat in a similar way. The Ari included Lecha Dodi in his siddur, and it spread into the Friday night service in Jewish communities everywhere. Learn about the town in [Tzfat](/learn/tzfat).
 
@@ -32,7 +32,7 @@ Near the end of Lecha Dodi, at the stanza that begins "Bo'i beshalom" and the wo
 - Some face west, where the sun sets.
 - Which direction to bow, and which side first, differs among communities.
 
-We could not find a Chabad.org source explaining the reason in full, so the practice at Chabad of Lamorinda is best learned by asking the Rabbi. Nobody will mind if you simply turn with everyone else.
+We could not find a source explaining the reason in full, so the practice at Chabad of Lamorinda is best learned by asking the Rabbi. Nobody will mind if you simply turn with everyone else.
 
 ## Singing it together
 

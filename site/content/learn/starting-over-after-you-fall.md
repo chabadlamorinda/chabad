@@ -11,7 +11,7 @@ This guide takes the practical side of the Tanya. For the nature of guilt, see [
 
 ## Why falling is not the end
 
-The [Tanya](/learn/tanya) is written for the person in the middle, who struggles and sometimes loses. See [the beinoni](/learn/the-beinoni). Its Chapter 26, as Chabad.org presents it, compares serving G-d to wrestling. A sluggish wrestler loses even to a weaker opponent, because heaviness hides his strength. What helps is alacrity, which comes from joy and an open heart.
+The [Tanya](/learn/tanya) is written for the person in the middle, who struggles and sometimes loses. See [the beinoni](/learn/the-beinoni). Its Chapter 26 compares serving G-d to wrestling. A sluggish wrestler loses even to a weaker opponent, because heaviness hides his strength. What helps is alacrity, which comes from joy and an open heart.
 
 That is important after a fall. The chapter does not say "feel bad for as long as you can." It says that heaviness and sadness will not defeat the inner struggle, but energy will.
 

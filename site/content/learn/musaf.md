@@ -9,7 +9,7 @@ Musaf (מוסף) means "additional": it is the extra Amidah prayer Jews say on S
 
 ## What Musaf means
 
-Every day has three prayers: morning, afternoon and evening. Chabad.org explains that Musaf is a fourth service, added on days that are special. The daily prayers correspond to the daily Temple offerings, and Musaf corresponds to the extra offerings of Shabbat, the festivals and Rosh Chodesh. Since the Temple no longer stands, our prayer takes the place of those offerings and marks the day as set apart.
+Every day has three prayers: morning, afternoon and evening. Jewish tradition explains that Musaf is a fourth service, added on days that are special. The daily prayers correspond to the daily Temple offerings, and Musaf corresponds to the extra offerings of Shabbat, the festivals and Rosh Chodesh. Since the Temple no longer stands, our prayer takes the place of those offerings and marks the day as set apart.
 
 There is a teaching in this too: something added is greater than the base it is added to. Musaf is said after the regular service, reaching a higher level of connection.
 
@@ -32,7 +32,7 @@ Musaf is usually fairly short, except on Rosh Hashanah and Yom Kippur, when it i
 
 ## Tefillin on Rosh Chodesh
 
-Tefillin are worn on Rosh Chodesh morning but taken off for Musaf. Chabad.org gives two reasons. First, the Kedushah of Musaf begins with "Keter," which means "crown," and wearing a crown (tefillin on the head) during it is not appropriate. Second, tefillin are a "sign," as are Shabbat and festivals. The Rosh Chodesh Musaf mentions the day's additional offering, which is also a sign, and a second sign is unnecessary. This holds even for those who do not say "Keter." Read about [Rosh Chodesh](/learn/rosh-chodesh).
+Tefillin are worn on Rosh Chodesh morning but taken off for Musaf. There are two reasons. First, the Kedushah of Musaf begins with "Keter," which means "crown," and wearing a crown (tefillin on the head) during it is not appropriate. Second, tefillin are a "sign," as are Shabbat and festivals. The Rosh Chodesh Musaf mentions the day's additional offering, which is also a sign, and a second sign is unnecessary. This holds even for those who do not say "Keter." Read about [Rosh Chodesh](/learn/rosh-chodesh).
 
 ## Musaf in a community
 
@@ -50,7 +50,7 @@ It is said after the morning service and the Torah reading, and before the after
 The daily prayers correspond to the daily Temple offerings. On special days there were additional offerings, and Musaf takes their place.
 
 ### Why do people take off tefillin for Musaf on Rosh Chodesh?
-Chabad.org says tefillin are removed because the Kedushah begins with "Keter" (crown), and because tefillin are a sign like the Musaf offering. Ask the Rabbi if you have questions.
+Tefillin are removed because the Kedushah begins with "Keter" (crown), and because tefillin are a sign like the Musaf offering. Ask the Rabbi if you have questions.
 
 ### Is there Musaf every day?
 No. There is Musaf only on Shabbat, festivals and Rosh Chodesh. Ordinary weekdays have the three regular prayers.

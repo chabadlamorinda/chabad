@@ -9,9 +9,9 @@ In Chabad custom, a boy begins putting on tefillin about two months before his B
 
 ## Why start early
 
-Tefillin (תְּפִלִּין) are the black leather boxes with handwritten Torah passages that a Jewish man wears on weekday mornings. A boy becomes responsible for the mitzvah on his Bar Mitzvah date, but doing it for the first time on that very morning is a lot to ask. According to Chabad.org, the practice is to begin about two months earlier. If Chol HaMoed (the middle days of a festival) falls in that stretch, when tefillin are not worn, the start can be moved a little earlier. Ask the Rabbi to set your son's start date. See [the Hebrew date of the Bar Mitzvah](/learn/bar-mitzvah-hebrew-birthday-date) to count back.
+Tefillin (תְּפִלִּין) are the black leather boxes with handwritten Torah passages that a Jewish man wears on weekday mornings. A boy becomes responsible for the mitzvah on his Bar Mitzvah date, but doing it for the first time on that very morning is a lot to ask. According to Jewish tradition, the practice is to begin about two months earlier. If Chol HaMoed (the middle days of a festival) falls in that stretch, when tefillin are not worn, the start can be moved a little earlier. Ask the Rabbi to set your son's start date. See [the Hebrew date of the Bar Mitzvah](/learn/bar-mitzvah-hebrew-birthday-date) to count back.
 
-## The two stages, as Chabad.org describes them
+## The two stages
 
 1. **First, without a blessing.** He lays the tefillin, says the Shema and learns the order, so he gets used to the feel and the straps.
 2. **A few weeks later, with the blessing.** Once he can put them on properly, he adds the blessing. The blessing is said only when he can lay them correctly.
@@ -28,11 +28,11 @@ At the beginning, a father or teacher helps him and checks the placement. After 
 
 ## His own pair
 
-A boy usually receives his own pair for the Bar Mitzvah. Tefillin must be handwritten and checked, and a pair that is cheap or of unknown origin may not be kosher. Chabad.org advises buying only from someone who can vouch for the scribe and the parchments. Chabad custom is also to wear two kinds of tefillin, named for Rashi and Rabbeinu Tam, starting around the same two months. This is a detail to ask about before you buy. Read [Buying tefillin](/learn/buying-tefillin), and have any pair checked; see [checking mezuzahs and tefillin](/learn/checking-mezuzahs-and-tefillin).
+A boy usually receives his own pair for the Bar Mitzvah. Tefillin must be handwritten and checked, and a pair that is cheap or of unknown origin may not be kosher. It is wise to buy only from someone who can vouch for the scribe and the parchments. Chabad custom is also to wear two kinds of tefillin, named for Rashi and Rabbeinu Tam, starting around the same two months. This is a detail to ask about before you buy. Read [Buying tefillin](/learn/buying-tefillin), and have any pair checked; see [checking mezuzahs and tefillin](/learn/checking-mezuzahs-and-tefillin).
 
 ## What is not said
 
-Chabad.org notes that the Shehecheyanu blessing is not said when a boy first puts on tefillin or on the day of his Bar Mitzvah, because his joy is mainly in the mitzvot he will do from now on. The words of the tefillin blessing are in [Tefillin](/learn/tefillin).
+The Shehecheyanu blessing is not said when a boy first puts on tefillin or on the day of his Bar Mitzvah, because his joy is mainly in the mitzvot he will do from now on. The words of the tefillin blessing are in [Tefillin](/learn/tefillin).
 
 ## Common questions
 

@@ -11,7 +11,7 @@ Men and women are both obligated, and so are the poor themselves. It is a short 
 
 ## What the mitzvah requires
 
-According to Chabad.org:
+According to Jewish tradition:
 
 1. Give at least two gifts, each to a different person in need.
 2. Give on Purim day, not Purim night. The best time is after the daytime Megillah reading.
@@ -23,11 +23,11 @@ Ideally, a fellow Jew who cannot afford food for Purim. Anyone who cannot cover 
 
 ## How much to give
 
-The minimum is two prutot per person, which Chabad.org says is only a few cents, though it suggests a nickel or a dime. A stricter view says enough to buy a small meal. If you are able, giving more is praiseworthy, and many families give generously on Purim. Maaser money cannot be used to fulfill this mitzvah, but you may give it to the poor afterward.
+The minimum is two prutot per person, which Jewish tradition says is only a few cents, though it suggests a nickel or a dime. A stricter view says enough to buy a small meal. If you are able, giving more is praiseworthy, and many families give generously on Purim. Maaser money cannot be used to fulfill this mitzvah, but you may give it to the poor afterward.
 
 ## Giving through someone else
 
-You do not need to find people in need yourself on Purim morning. Chabad.org teaches that it is a better approach to give through a messenger or an organization that will distribute funds to the poor on Purim day on your behalf. Giving days before is risky unless the person will save the gift until Purim.
+You do not need to find people in need yourself on Purim morning. Jewish tradition teaches that it is a better approach to give through a messenger or an organization that will distribute funds to the poor on Purim day on your behalf. Giving days before is risky unless the person will save the gift until Purim.
 
 Because Purim day is busy, many families arrange this ahead of time. To hear how this can be done through Chabad of Lamorinda in Lafayette, call 925-384-7242. You are also welcome to give through [our giving page](/donate).
 
@@ -35,7 +35,7 @@ Because Purim day is busy, many families arrange this ahead of time. To hear how
 
 Children old enough to be taught, around five or six, should do the mitzvah too. Hand your child some coins to give. A child who gives on Purim learns that a holiday is not only about us.
 
-There is also a custom, before Purim, of the half-shekel (machatzit hashekel). Chabad.org explains it is given in the afternoon service before the Megillah reading, three half-coins of the local currency, on behalf of each family member including children. It commemorates the half-shekel given in the days of the Temple, and the money goes to the poor. It does not replace matanot la'evyonim. Ask the Rabbi about the details.
+There is also a custom, before Purim, of the half-shekel (machatzit hashekel). Jewish tradition explains it is given in the afternoon service before the Megillah reading, three half-coins of the local currency, on behalf of each family member including children. It commemorates the half-shekel given in the days of the Temple, and the money goes to the poor. It does not replace matanot la'evyonim. Ask the Rabbi about the details.
 
 ## Why Purim begins with the poor
 
@@ -53,7 +53,7 @@ The minimum is very small, but if you are able, giving more is praiseworthy. Ask
 On Purim day, ideally after the daytime Megillah reading. Giving on Purim night does not fulfill it. See the [Jewish holidays calendar](/jewish-holidays) for the date of Purim.
 
 ### Can I give through a charity or the Rabbi?
-Yes. Chabad.org says that giving through a messenger or an organization that distributes to the poor on Purim day is a better approach. Call 925-384-7242 to ask how.
+Yes. Jewish tradition says that giving through a messenger or an organization that distributes to the poor on Purim day is a better approach. Call 925-384-7242 to ask how.
 
 ### Do children give matanot la'evyonim?
 Children old enough to be taught, around five or six, should be educated to do the mitzvah. Giving them their own coins makes it real.

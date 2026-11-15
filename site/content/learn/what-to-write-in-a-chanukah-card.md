@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: holiday-greetings, chanukah-for-friends-and-coworkers, chanukah-gifts, chanukah-glossary, hanukkah-or-chanukah-spelling
 local: Want a Chanukah message that comes from the heart? Call Rabbi Labkowski at 925-384-7242 and we will help you find the words.
 ---
-The simplest and best thing to write in a Chanukah card is "Happy Chanukah," which Chabad.org says works in all settings and with all Jews. For a Hebrew touch, write *Chanukah sameach* (חנוכה שמח), and for a Yiddish one, *Freilichen Chanukah*; then add a warm line about light.
+The simplest and best thing to write in a Chanukah card is "Happy Chanukah," which Jewish tradition says works in all settings and with all Jews. For a Hebrew touch, write *Chanukah sameach* (חנוכה שמח), and for a Yiddish one, *Freilichen Chanukah*; then add a warm line about light.
 
 A card is a small way to spread the light of the holiday. Below are sample messages you can use as they are or make your own.
 
@@ -15,11 +15,11 @@ A card is a small way to spread the light of the holiday. Below are sample messa
 - **Chanukah sameach (חנוכה שמח).** The Hebrew greeting, meaning "happy Chanukah."
 - **Freilichen Chanukah.** The Yiddish greeting for the same wish.
 
-Chabad.org's glossary lists these last two as the traditional holiday greetings. For more occasions, see [holiday greetings](/learn/holiday-greetings).
+These last two are the traditional holiday greetings. For more occasions, see [holiday greetings](/learn/holiday-greetings).
 
 ## Themes that fit the holiday
 
-Chabad.org's Chanukah e-cards show what the holiday inspires, with titles such as "Light over Darkness," "A Time of Miracles," "A Warm Glow," "A Special Circle of Light," "Festival of Light," "Live Miraculously" and "Thanks for the Warm Feelings." Even the lighter ones are about warmth and food, such as the cards that say "I Didn't Forget..." with latkes or doughnuts. These themes are a good starting point: light, miracles, warmth, gratitude and a sweet treat.
+Chanukah cards show what the holiday inspires, with titles such as "Light over Darkness," "A Time of Miracles," "A Warm Glow," "A Special Circle of Light," "Festival of Light," "Live Miraculously" and "Thanks for the Warm Feelings." Even the lighter ones are about warmth and food, such as the cards that say "I Didn't Forget..." with latkes or doughnuts. These themes are a good starting point: light, miracles, warmth, gratitude and a sweet treat.
 
 ## Sample messages
 
@@ -44,11 +44,11 @@ For colleagues who are not Jewish, a simple warm line about light and joy is eno
 
 ## Keep it short and sincere
 
-A card does not need to be long. One warm sentence that names the person and the holiday is enough, and handwriting it adds a personal touch. Choose the greeting that suits the person: the Hebrew or Yiddish for family and friends who will enjoy it, and the simple English for everyone else. Chabad.org says the simplest greeting, "Happy Hanukkah," works in all settings and with all Jews. Add a line about the light, and your card has done its job.
+A card does not need to be long. One warm sentence that names the person and the holiday is enough, and handwriting it adds a personal touch. Choose the greeting that suits the person: the Hebrew or Yiddish for family and friends who will enjoy it, and the simple English for everyone else. Jewish law says the simplest greeting, "Happy Hanukkah," works in all settings and with all Jews. Add a line about the light, and your card has done its job.
 
 ## Adding a gift or a mitzvah
 
-It is a longstanding custom to give children money (gelt) on Chanukah, and Chabad.org says cash is the traditional choice. See [Chanukah gelt](/learn/chanukah-gelt) and [Chanukah gifts](/learn/chanukah-gifts). Chabad.org also notes that it is customary to increase charity during Chanukah, so a card can come with a gift to tzedakah.
+It is a longstanding custom to give children money (gelt) on Chanukah, and the tradition says cash is the traditional choice. See [Chanukah gelt](/learn/chanukah-gelt) and [Chanukah gifts](/learn/chanukah-gifts). Jewish tradition also notes that it is customary to increase charity during Chanukah, so a card can come with a gift to tzedakah.
 
 ## Common questions
 

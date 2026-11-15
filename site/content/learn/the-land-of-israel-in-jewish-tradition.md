@@ -15,7 +15,7 @@ Our people lived through exile and return, but the promise was never forgotten. 
 
 ## A land with its own mitzvot
 
-Many of the 613 mitzvot are connected to the Land of Israel. Chabad.org gives examples:
+Many of the 613 mitzvot are connected to the Land of Israel. Here are examples:
 
 - **Tithes.** Portions of the harvest are set aside for the Kohen, the Levite and the needy (see [Maaser](/learn/maaser)).
 - **Shmita.** Every seventh year the land rests (see [Shmita](/learn/shmita)).

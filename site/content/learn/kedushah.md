@@ -9,7 +9,7 @@ Kedushah (קְדֻשָּׁה, "holiness") is a passage in the public prayer serv
 
 ## Where it comes in
 
-The [Amidah](/learn/amidah) is first prayed silently. Then the leader repeats it aloud, and in the third blessing the congregation joins for Kedushah. Chabad.org describes it as a passage recited responsively by the leader and the congregation. It is part of prayer with a [minyan](/learn/minyan). Alone, you do not say it as Kedushah.
+The [Amidah](/learn/amidah) is first prayed silently. Then the leader repeats it aloud, and in the third blessing the congregation joins for Kedushah. Chassidic teaching describes it as a passage recited responsively by the leader and the congregation. It is part of prayer with a [minyan](/learn/minyan). Alone, you do not say it as Kedushah.
 
 ## The angels' song
 
@@ -17,8 +17,8 @@ The words come from the visions of the prophets Isaiah and Ezekiel, who saw ange
 
 ## What to do
 
-- **Feet together.** Chabad.org notes that we stand with feet together, like the angels.
-- **Rising.** The custom is to rise on the toes at each "Kadosh." Chabad.org explains that this expresses reaching toward G-d while acknowledging that He cannot be fully grasped.
+- **Feet together.** Chassidic teaching notes that we stand with feet together, like the angels.
+- **Rising.** The custom is to rise on the toes at each "Kadosh." Jewish sources say that this expresses reaching toward G-d while acknowledging that He cannot be fully grasped.
 - **Answer.** The congregation says each verse in turn with the leader. If you are not sure where to say it, follow along in a siddur with transliteration.
 - **Listen.** At other parts of the Kedushah, listen quietly and respond as the leader prays.
 

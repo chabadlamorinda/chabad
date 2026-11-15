@@ -9,7 +9,7 @@ The Jewish calendar has four new years, each for a different purpose: the first 
 
 ## Why four new years?
 
-Judaism counts time for different purposes, just as a school year, a tax year and a calendar year start on different dates. The Mishnah lists four, and Chabad.org explains each one. See the [Jewish calendar](/learn/jewish-calendar) for the whole system.
+Judaism counts time for different purposes, just as a school year, a tax year and a calendar year start on different dates. The Mishnah lists four, and Jewish tradition explains each one. See the [Jewish calendar](/learn/jewish-calendar) for the whole system.
 
 ## 1 Nissan: the new year for kings and festivals
 

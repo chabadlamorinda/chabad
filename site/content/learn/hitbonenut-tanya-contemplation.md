@@ -13,7 +13,7 @@ The word comes from the Hebrew for understanding. In Chassidic teaching it means
 
 ## From the mind to the heart
 
-Several chapters of the Tanya, on Chabad.org, describe this path in their own words.
+Several chapters of the Tanya describe this path in their own words.
 
 - **Chapter 3** describes how an idea moves through the soul: a first flash of understanding is developed, and then the mind binds itself to the idea until it produces real emotion. It says that contemplating G-d's greatness gives rise to awe and love. It also says the intellect keeps that love from burning so strongly that the soul would leave the body, since we are here to do mitzvot.
 - **Chapter 17** reads the verse that the matter is "very near to you, in your mouth and in your heart." It asks how loving G-d can be near to everyone, since feelings are hard to command. The answer is that the mind can be directed at will. By thinking about G-d's greatness, a person can reach at least an intellectual love, and that love can guide the heart, speech and action.

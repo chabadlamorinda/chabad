@@ -7,11 +7,11 @@ local: Expecting? Call Rabbi Yisroel Labkowski at 925-384-7242 to be connected w
 ---
 Jewish tradition surrounds a birth with prayer: the husband says Psalms, a card with Shir Hamaalot (Psalm 121) hangs in the room, and if labor begins on Shabbat, a woman goes to the hospital without hesitation. Preserving life and health overrides Shabbat, and the first rule is to get safely to the doctors.
 
-This guide follows Chabad.org's laws and customs of childbirth. For personal medical questions, ask your doctor, and for Jewish law, ask the Rabbi.
+This guide follows the traditional laws and customs of childbirth. For personal medical questions, ask your doctor, and for Jewish law, ask the Rabbi.
 
 ## Prayer before and during labor
 
-It is customary for the husband to recite Psalms (Tehillim) during labor, as time allows, and, during pregnancy, to say Psalm 20 before bed. Chabad.org lists chapters customarily said, and the Rabbi can give you a card. See [Tehillim](/learn/tehillim) and [Jewish pregnancy](/learn/jewish-pregnancy).
+It is customary for the husband to recite Psalms (Tehillim) during labor, as time allows, and, during pregnancy, to say Psalm 20 before bed. There are chapters customarily said, and the Rabbi can give you a card. See [Tehillim](/learn/tehillim) and [Jewish pregnancy](/learn/jewish-pregnancy).
 
 ## Shir Hamaalot in the room
 
@@ -19,7 +19,7 @@ Many families hang a card with Psalm 121, *Shir Lamaalot* ("A Song of Ascents," 
 
 ## Labor on Shabbat
 
-Life takes priority over Shabbat ([pikuach nefesh](/learn/pikuach-nefesh)). When labor begins on Shabbat or a holiday, according to Chabad.org:
+Life takes priority over Shabbat ([pikuach nefesh](/learn/pikuach-nefesh)). When labor begins on Shabbat or a holiday, according to Jewish tradition:
 
 1. Go to the hospital when the birth seems close; do not wait.
 2. If possible, ask a non-Jewish driver and settle the fare beforehand; otherwise do not delay.

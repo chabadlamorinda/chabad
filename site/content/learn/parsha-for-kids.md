@@ -13,7 +13,7 @@ The parsha (פָּרָשָׁה, "portion") is the section of the Torah read in s
 
 ## Where to find kid-friendly material
 
-Chabad.org has weekly material made for families: a Family Parshah summary you can print for the Shabbat table, question-and-answer sheets with the verses behind each question, parsha videos and songs, and games and coloring pages. You do not need to be an expert. Read the family page on Friday afternoon and pick one moment from the story.
+Weekly material is made for families: a Family Parshah summary you can print for the Shabbat table, question-and-answer sheets with the verses behind each question, parsha videos and songs, and games and coloring pages. You do not need to be an expert. Read the family page on Friday afternoon and pick one moment from the story.
 
 ## A five-minute Friday night routine
 
@@ -46,7 +46,7 @@ Share one story, ask one question and offer one lesson at the Shabbat table for 
 A parsha is a weekly portion of the Torah, read in synagogue every Shabbat so that the whole Torah is read each year.
 
 ### Where can I find the parsha for kids?
-Chabad.org has family and kids' pages for each portion, and this site has [this week's parsha](/parsha). Ask the Rabbi for a kid-friendly version.
+There are family and kids' resources for each portion, and this site has [this week's parsha](/parsha). Ask the Rabbi for a kid-friendly version.
 
 ### What if I do not know the story well?
 Read a short summary on Friday afternoon and learn together. Admitting "I do not know, let's find out" teaches children that learning never ends.

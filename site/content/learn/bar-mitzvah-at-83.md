@@ -9,18 +9,18 @@ A second bar mitzvah at 83 is a beloved custom in which a person who became bar 
 
 ## Where the custom comes from
 
-Psalm 90 says that the days of our years are seventy, and with strength, eighty. Many people explain that seventy years is a full lifetime, so the years after seventy begin something new, and a person who reaches 83 stands again at the age of 13. Chabad.org notes that this custom appears among people today; it is not a commandment, and rabbis do not require it. If you would like the background, ask the Rabbi.
+Psalm 90 says that the days of our years are seventy, and with strength, eighty. Many people explain that seventy years is a full lifetime, so the years after seventy begin something new, and a person who reaches 83 stands again at the age of 13. The tradition notes that this custom appears among people today; it is not a commandment, and rabbis do not require it. If you would like the background, ask the Rabbi.
 
 ## What the original bar mitzvah means
 
-According to Chabad.org, a Jewish boy becomes a bar mitzvah on his thirteenth Jewish birthday, and from then on he is responsible for the mitzvahs, whether or not a party was held. A girl becomes a bat mitzvah at twelve. So you cannot be bar mitzvah "again" in the legal sense. As Chabad.org puts it about adult celebrations, whether you celebrate at 13 or at 83, the idea is the same. A second bar mitzvah is a celebration of renewed connection, which Chabad.org calls "a fine idea, but not at all obligatory." Read more in [what is a bar mitzvah](/learn/bar-mitzvah) and [bar mitzvah for adults](/learn/adult-bar-bat-mitzvah).
+According to Jewish tradition, a Jewish boy becomes a bar mitzvah on his thirteenth Jewish birthday, and from then on he is responsible for the mitzvahs, whether or not a party was held. A girl becomes a bat mitzvah at twelve. So you cannot be bar mitzvah "again" in the legal sense. As Jewish teaching puts it about adult celebrations, whether you celebrate at 13 or at 83, the idea is the same. A second bar mitzvah is a celebration of renewed connection, which Jewish sources calls "a fine idea, but not at all obligatory." Read more in [what is a bar mitzvah](/learn/bar-mitzvah) and [bar mitzvah for adults](/learn/adult-bar-bat-mitzvah).
 
 ## Ways to mark it
 
-There is no set ceremony. Chabad.org says each person may create a celebration that is meaningful to him. Ideas families choose:
+There is no set ceremony. Jewish tradition says each person may create a celebration that is meaningful to him. Ideas families choose:
 
 1. **An aliyah.** Be called to the Torah on the Shabbat closest to your Hebrew birthday (see [the aliyah](/learn/aliyah)). Many people read the Torah portion or haftarah of their original bar mitzvah, after practicing with a teacher. Your portion can be found through [your bar mitzvah portion](/learn/bar-mitzvah-parsha).
-2. **Tefillin.** Chabad.org suggests that someone who has drifted from the mitzvah might make this their "re-bar mitzvah" by committing to wearing [tefillin](/learn/tefillin) regularly. Ask about a [mezuzah and tefillin check](/forms/mezuzah-tefillin).
+2. **Tefillin.** Jewish teaching suggests that someone who has drifted from the mitzvah might make this their "re-bar mitzvah" by committing to wearing [tefillin](/learn/tefillin) regularly. Ask about a [mezuzah and tefillin check](/forms/mezuzah-tefillin).
 3. **A Kiddush.** Sharing a Kiddush with friends after the service (see [sponsoring a Kiddush](/learn/sponsoring-a-kiddush)).
 4. **A few words for the grandchildren.** Tell the story of your first bar mitzvah, your parents and what Judaism means to you.
 5. **Tzedakah.** Give in honor of the day (see [tzedakah](/learn/tzedakah)).
@@ -46,7 +46,7 @@ Psalm 90 describes seventy years as a lifetime, and many see 83 as 13 again afte
 No. A boy becomes bar mitzvah at 13 whether or not a celebration is held, and a later celebration is a fine idea but not obligatory.
 
 ### Can I have one if I never had a first bar mitzvah?
-Yes. Chabad.org says that if you never had a bar mitzvah, it is not too late. See [bar mitzvah for adults](/learn/adult-bar-bat-mitzvah).
+Yes. The tradition says that if you never had a bar mitzvah, it is not too late. See [bar mitzvah for adults](/learn/adult-bar-bat-mitzvah).
 
 ### Can a woman celebrate a second bat mitzvah?
 Yes, women mark milestone birthdays in meaningful ways. Ask the Rabbi or Rebbetzin what fits your family.

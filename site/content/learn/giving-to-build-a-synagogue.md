@@ -1,6 +1,6 @@
 ---
 title: Giving to Build a Synagogue: A Gift That Lasts for Generations
-description: Building a synagogue is an important mitzvah. What Chabad.org teaches about the synagogue as a small sanctuary and about giving from the heart.
+description: Building a synagogue is an important mitzvah. What Jewish tradition teaches about the synagogue as a small sanctuary and about giving from the heart.
 category: Jewish ideas
 related: supporting-chabad-of-lamorinda, the-mishkan, hachnasat-sefer-torah, what-is-a-synagogue, leaving-a-jewish-legacy-gift
 local: Would you like to hear about the synagogue at Chabad of Lamorinda in Lafayette and how to take part? Call Rabbi Labkowski at 925-384-7242.
@@ -9,13 +9,13 @@ Building a synagogue is considered an important mitzvah, because a synagogue is 
 
 ## A synagogue is a small sanctuary
 
-Chabad.org explains that wherever ten Jews live, a place for prayer is to be set up, and that such a house of prayer is called a *mikdash me'at* (מִקְדָּשׁ מְעַט), a "small sanctuary." It quotes the prophet Ezekiel: "I have been for them a small sanctuary," which the Sages applied to synagogues and study halls. The article says plainly: "Building a synagogue is therefore considered an important mitzvah," linking it to the Torah's words, "They shall make Me a sanctuary, and I will dwell among them."
+Chassidic teaching explains that wherever ten Jews live, a place for prayer is to be set up, and that such a house of prayer is called a *mikdash me'at* (מִקְדָּשׁ מְעַט), a "small sanctuary." It quotes the prophet Ezekiel: "I have been for them a small sanctuary," which the Sages applied to synagogues and study halls. The article says plainly: "Building a synagogue is therefore considered an important mitzvah," linking it to the Torah's words, "They shall make Me a sanctuary, and I will dwell among them."
 
 Because a synagogue carries its own holiness, as a place where the Divine Presence rests, it is not treated like an ordinary building. See [What Is a Synagogue?](/learn/what-is-a-synagogue).
 
 ## The first building campaign: the Mishkan
 
-The Torah's first great building project was the Mishkan (מִשְׁכָּן), the portable sanctuary in the desert. Chabad.org explains in several articles that the people gave to it in three ways. Every man gave a half-shekel, the same for everyone. The silver sockets that formed the foundation were also the same for every person, rich or poor, showing a shared desire to do G-d's will. And then everyone, men, women and children, brought what their hearts desired: gold, silver, copper, cloth, cedar.
+The Torah's first great building project was the Mishkan (מִשְׁכָּן), the portable sanctuary in the desert. Chassidic philosophy explains in several articles that the people gave to it in three ways. Every man gave a half-shekel, the same for everyone. The silver sockets that formed the foundation were also the same for every person, rich or poor, showing a shared desire to do G-d's will. And then everyone, men, women and children, brought what their hearts desired: gold, silver, copper, cloth, cedar.
 
 One article draws the lesson that everyone has an area where they can contribute, and the key is to find it. People gave what they were able to give: those who could give gold gave gold, and those who could give silver gave silver. Another teaching by the Rebbe notes that Moses said "bring" rather than "take": the freewill gifts came from the heart, with joy, not only from obligation. See [The Mishkan](/learn/the-mishkan).
 
@@ -37,7 +37,7 @@ You can give today through [the website](/donate), or plan a gift for the future
 ## Common questions
 
 ### Is building a synagogue really a mitzvah?
-Yes. Chabad.org states that building a synagogue is considered an important mitzvah, based on the Torah's words, "They shall make Me a sanctuary."
+Yes. Jewish tradition states that building a synagogue is considered an important mitzvah, based on the Torah's words, "They shall make Me a sanctuary."
 
 ### What does "small sanctuary" mean?
 It is the name given to a synagogue, from Ezekiel's words "I have been for them a small sanctuary." It means a place where G-d's presence rests, in a smaller way, like the ancient sanctuary.

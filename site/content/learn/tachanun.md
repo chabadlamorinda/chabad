@@ -9,13 +9,13 @@ Tachanun (תחנון) is a set of quiet, heartfelt prayers for mercy that Jews s
 
 ## What Tachanun is
 
-The word means "supplications," pleading prayers asked humbly. According to Chabad.org, Tachanun in the Chabad siddur has four parts: Viduy (confession), the Thirteen Attributes of Mercy (said only with a minyan, a group of ten), Nefilat Apayim (the prayer said with the head lowered) and a shortened Avinu Malkeinu.
+The word means "supplications," pleading prayers asked humbly. Tachanun in the Chabad siddur has four parts: Viduy (confession), the Thirteen Attributes of Mercy (said only with a minyan, a group of ten), Nefilat Apayim (the prayer said with the head lowered) and a shortened Avinu Malkeinu.
 
 The Thirteen Attributes of Mercy are the qualities of kindness that G-d revealed to Moses on Mount Sinai. Saying them is a way of reminding ourselves, and asking G-d, to treat us with that same compassion.
 
 ## Why do people put their head down?
 
-This is the moment that puzzles visitors most. It is called Nefilat Apayim, "falling on the face." Chabad.org explains that the Torah describes Moses praying in three ways: sitting, standing and falling on his face. Today we lower our head onto the arm to show awe, humility and surrender to G-d, especially when we ask forgiveness. Rabbeinu Bechaye gives three meanings: fear of G-d, the pain of asking forgiveness, and setting aside our own wants before Him.
+This is the moment that puzzles visitors most. It is called Nefilat Apayim, "falling on the face." The Torah describes Moses praying in three ways: sitting, standing and falling on his face. Today we lower our head onto the arm to show awe, humility and surrender to G-d, especially when we ask forgiveness. Rabbeinu Bechaye gives three meanings: fear of G-d, the pain of asking forgiveness, and setting aside our own wants before Him.
 
 Which arm? The most common custom in the morning is to lean on the right arm, out of respect for the tefillin on the left arm. In the afternoon, and in the morning for someone not wearing tefillin on the left arm, people lean on the left. Some communities differ, so watch what the people around you do, or ask the Rabbi.
 
@@ -23,7 +23,7 @@ Joshua also "fell on his face" before the Ark of G-d (Joshua 7:6). This is the b
 
 ## Why is Tachanun longer on Monday and Thursday?
 
-On Mondays and Thursdays the morning Tachanun is much longer. Chabad.org calls these days especially fitting for seeking G-d's favor.
+On Mondays and Thursdays the morning Tachanun is much longer. These are days especially fitting for seeking G-d's favor.
 
 ## When is Tachanun not said?
 
@@ -60,7 +60,7 @@ The most common custom in the morning is the right arm, because the left arm has
 Tachanun is left out on festive days like Shabbat, Rosh Chodesh, Chanukah, Purim and all of Nissan, because it is a prayer of sorrow and humility.
 
 ### Why is Tachanun longer on Monday and Thursday?
-Chabad.org says these are especially auspicious days to seek G-d's favor, so the morning prayer is longer.
+These are especially auspicious days to seek G-d's favor, so the morning prayer is longer.
 
 ### Do I have to say Tachanun if I am new to prayer?
 No. If you are just starting, listen first, and say what you can in English. The Rabbi can guide you.

@@ -11,13 +11,13 @@ For parents and young professionals in Lafayette, Moraga and Orinda, who often c
 
 ## Work is a vessel, not the source
 
-A Chassidic teaching on "passive labor," on Chabad.org, says that a believer works with the hands while the mind and heart stay with G-d. Work does not itself create income. It is the vessel that receives G-d's blessing. So we are occupied with our tasks, not preoccupied by them.
+A Chassidic teaching on "passive labor" says that a believer works with the hands while the mind and heart stay with G-d. Work does not itself create income. It is the vessel that receives G-d's blessing. So we are occupied with our tasks, not preoccupied by them.
 
-Another Chabad.org article puts it this way: "Our efforts are the vessel, but it is G-d who fills the vessel with His blessing." That is freeing. If you are not the sole source of your family's income, you can do your best without carrying the whole world.
+Chassidic teaching puts it this way: "Our efforts are the vessel, but it is G-d who fills the vessel with His blessing." That is freeing. If you are not the sole source of your family's income, you can do your best without carrying the whole world.
 
 ## When work drains you
 
-A Chabad.org response to a reader stuck in a draining job says that work which exhausts a person harms physical, emotional, spiritual and family health. It notes that the body is the soul's vessel, so caring for your health is a religious duty, not a luxury.
+Chassidic advice to someone stuck in a draining job says that work which exhausts a person harms physical, emotional, spiritual and family health. It notes that the body is the soul's vessel, so caring for your health is a religious duty, not a luxury.
 
 Some steps it suggests:
 

@@ -9,7 +9,7 @@ When you are stressed about an exam, Jewish wisdom suggests two steps: do your h
 
 ## Effort and trust go together
 
-A text on trust in G-d, presented on Chabad.org, teaches that trust does not mean being passive. A person still has to use the natural means that seem best, and then rely on G-d for the outcome. This is called trust, bitachon (בִּטָּחוֹן), together with effort, hishtadlut (הִשְׁתַּדְּלוּת). For a student it means: study, ask for help, get ready as well as you can, and then let go of the worry that you control everything. Read [bitachon](/learn/bitachon) and [anxiety and worry](/learn/anxiety-and-worry).
+A classic text on trust in G-d teaches that trust does not mean being passive. A person still has to use the natural means that seem best, and then rely on G-d for the outcome. This is called trust, bitachon (בִּטָּחוֹן), together with effort, hishtadlut (הִשְׁתַּדְּלוּת). For a student it means: study, ask for help, get ready as well as you can, and then let go of the worry that you control everything. Read [bitachon](/learn/bitachon) and [anxiety and worry](/learn/anxiety-and-worry).
 
 ## You are more than a grade
 
@@ -43,7 +43,7 @@ You can pray in your own words, asking for clarity and calm, or say Tehillim. As
 Caring about your work is good. But worry that takes over does not help. Do your best and trust G-d with the outcome.
 
 ### How can I trust G-d and still study hard?
-Chabad.org teaches that the two go together. You make the effort, and G-d brings the result. Read [bitachon](/learn/bitachon).
+Jewish tradition teaches that the two go together. You make the effort, and G-d brings the result. Read [bitachon](/learn/bitachon).
 
 ### My teenager is overwhelmed by school pressure. What can I do?
 Listen first, and remind your child that their value is not one grade. See [parents and teenagers](/learn/parents-and-teenagers), and talk to the school counselor or your doctor if needed. The Rabbi is also glad to talk, at 925-384-7242.

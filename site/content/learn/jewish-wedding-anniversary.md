@@ -9,7 +9,7 @@ A Jewish wedding anniversary is a day to renew the love and commitment of your w
 
 ## Why an anniversary matters in Judaism
 
-Chabad.org explains that Judaism does not see an anniversary only as a celebration of the past. According to Chassidic teaching, the spiritual energy of a past event is more easily reached on its anniversary. For a marriage, this means the love, loyalty and friendship that you shared under the chuppah (the wedding canopy) can be readily reawakened on that day. The same article adds that we need not wait for an anniversary to feel close: ordinary acts done with intention can make any day meaningful. That is the spirit of the day.
+Jewish tradition explains that Judaism does not see an anniversary only as a celebration of the past. According to Chassidic teaching, the spiritual energy of a past event is more easily reached on its anniversary. For a marriage, this means the love, loyalty and friendship that you shared under the chuppah (the wedding canopy) can be readily reawakened on that day. The same article adds that we need not wait for an anniversary to feel close: ordinary acts done with intention can make any day meaningful. That is the spirit of the day.
 
 ## Your Hebrew date
 
@@ -17,7 +17,7 @@ Jewish dates follow the Hebrew calendar, so your Hebrew anniversary falls on a d
 
 ## Ideas for the day
 
-Chabad.org does not set a ritual for wedding anniversaries, so these are suggestions in the spirit of Jewish tradition rather than rules.
+Jewish tradition does not set a ritual for wedding anniversaries, so these are suggestions in the spirit of Jewish tradition rather than rules.
 
 1. **Renew your commitment.** Take a quiet moment together to say what you appreciate in each other and what you promise for the year ahead. See [shalom bayit, peace in the home](/learn/shalom-bayit).
 2. **Light the candles together.** Join in [Shabbat candles](/learn/shabbat-candles) when the date falls near Shabbat.
@@ -43,7 +43,7 @@ Many couples mark the day with a renewed commitment, a mitzvah or tzedakah, and 
 Either, and many couples do both. The Hebrew date is a lovely Jewish custom. Ask the Rabbi if you are unsure which date applies.
 
 ### Is there a special blessing for an anniversary?
-Chabad.org has no prescribed anniversary blessing, but couples receive blessings from the Rabbi and from friends. Call 925-384-7242 and ask.
+Jewish tradition has no prescribed anniversary blessing, but couples receive blessings from the Rabbi and from friends. Call 925-384-7242 and ask.
 
 ### How do I find my Hebrew wedding date?
 Convert your civil date with the guide on [the Hebrew birthday](/learn/hebrew-birthday). The Rabbi can help.

@@ -9,7 +9,7 @@ To find your personal psalm, add one to your age: the chapter of Tehillim (Psalm
 
 ## What is the "psalm for your age"?
 
-Tehillim has 150 chapters, and the custom is that each person has a chapter that corresponds to the year of life he or she is living. According to Chabad.org, the number is your age plus one, "since the psalm corresponds to the year of life you are in."
+Tehillim has 150 chapters, and the custom is that each person has a chapter that corresponds to the year of life he or she is living. According to Jewish tradition, the number is your age plus one, "since the psalm corresponds to the year of life you are in."
 
 So during the year that begins on your birthday, you say that chapter. When your next birthday arrives, you move on to the next chapter. A child says Psalm 1 until the first birthday, Psalm 2 during the second year, and so on.
 
@@ -30,7 +30,7 @@ If you are not sure of your age by the Jewish calendar, remember that the year t
 
 ## Where the custom comes from
 
-Chabad.org writes that the custom goes back at least to the Baal Shem Tov, the founder of the Chassidic movement, who, according to a cited source, learned it from his teacher, Achiyah Hashiloni. You can read about him in [the Baal Shem Tov](/learn/baal-shem-tov).
+The custom goes back at least to the Baal Shem Tov, the founder of the Chassidic movement, who, according to a cited source, learned it from his teacher, Achiyah Hashiloni. You can read about him in [the Baal Shem Tov](/learn/baal-shem-tov).
 
 In Chabad, Chassidim also say the psalm that matches their Rebbe's age. The Rebbe explained that doing so creates a connection with the Rebbe; see more in [Chabad Rebbes](/learn/chabad-rebbes). If you are new to all this, start with your own psalm; the rest can wait.
 
@@ -48,11 +48,11 @@ If a loved one needs healing, you can say a psalm in their merit as described in
 4. **Add a personal thought**, a thanks or a request, in your own words.
 5. **On your birthday, move to the next chapter.**
 
-Some chapters are long, and Psalm 119 is very long. If your chapter is long, ask the Rabbi how to approach it. We also could not find a Chabad.org statement about what to say when a person passes the number of chapters, or the age after 70, so ask the Rabbi if this applies to you.
+Some chapters are long, and Psalm 119 is very long. If your chapter is long, ask the Rabbi how to approach it. We also could not find a clear statement about what to say when a person passes the number of chapters, or the age after 70, so ask the Rabbi if this applies to you.
 
 ## The daily and monthly Tehillim cycle
 
-Besides your personal psalm, there is a daily reading. Tehillim is divided into seven portions for a weekly cycle and thirty portions for a monthly cycle, and most Hebrew printings mark both. Chabad.org recommends starting with the monthly cycle, which is about five chapters a day, and joining the many Jews who read the same portion that day. The Sixth Rebbe asked that the monthly portion be said after morning prayers, and the Rebbe urged everyone to say it daily on the monthly schedule. On a 29-day month, the last two portions are read together on the 29th.
+Besides your personal psalm, there is a daily reading. Tehillim is divided into seven portions for a weekly cycle and thirty portions for a monthly cycle, and most Hebrew printings mark both. Jewish tradition recommends starting with the monthly cycle, which is about five chapters a day, and joining the many Jews who read the same portion that day. The Sixth Rebbe asked that the monthly portion be said after morning prayers, and the Rebbe urged everyone to say it daily on the monthly schedule. On a 29-day month, the last two portions are read together on the 29th.
 
 ## Common questions
 
@@ -63,7 +63,7 @@ Add one to your age. The chapter of Tehillim with that number is your personal p
 Psalm 14, because he or she is in the 14th year of life. A Bar or Bat Mitzvah child therefore begins a new chapter at the Hebrew birthday.
 
 ### Who started the custom of saying the psalm for your age?
-Chabad.org says it goes back at least to the Baal Shem Tov, who learned it from his teacher, according to a cited source.
+The tradition says it goes back at least to the Baal Shem Tov, who learned it from his teacher, according to a cited source.
 
 ### Can I say my child's psalm?
 Yes. Parents often say it daily as a prayer for their child, and children are encouraged to say their own from time to time.

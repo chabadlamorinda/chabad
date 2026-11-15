@@ -9,17 +9,17 @@ Lashon HaKodesh (לְשׁוֹן הַקֹּדֶשׁ) means "the Holy Tongue," the
 
 ## What "Holy Tongue" means
 
-Chabad.org notes that Jews traditionally call Hebrew Lashon HaKodesh. Two classic explanations are given. Maimonides said the language earned the name because it has no words for lewd acts or private parts of the body. Nachmanides said it is the language G-d used to convey His will to the prophets.
+Jewish tradition notes that Jews traditionally call Hebrew Lashon HaKodesh. Two classic explanations are given. Maimonides said the language earned the name because it has no words for lewd acts or private parts of the body. Nachmanides said it is the language G-d used to convey His will to the prophets.
 
 ## The language of creation
 
-The Torah describes G-d creating the world through ten utterances. Chabad.org explains the Kabbalistic teaching that these were spoken in Hebrew, and that G-d continually renews creation, so that each thing receives its life through its Hebrew name. In the Chassidic teaching of the Tanya, the letters are like building blocks, and words are channels of spiritual life. See [Tanya](/learn/tanya) and [gematria](/learn/gematria).
+The Torah describes G-d creating the world through ten utterances. Jewish tradition explains the Kabbalistic teaching that these were spoken in Hebrew, and that G-d continually renews creation, so that each thing receives its life through its Hebrew name. In the Chassidic teaching of the Tanya, the letters are like building blocks, and words are channels of spiritual life. See [Tanya](/learn/tanya) and [gematria](/learn/gematria).
 
 This helps explain why a Hebrew name matters. See [Hebrew names](/learn/hebrew-names).
 
 ## Torah Hebrew and modern Hebrew
 
-Today's Hebrew, **Ivrit** (עִבְרִית), was revived as an everyday spoken language by Zionist thinkers in the late 19th century, after more than a thousand years in which it was not commonly spoken. Chabad.org notes that modern Hebrew differs from Biblical Hebrew in syntax and pronunciation, and some maintain it is not the same as Lashon HaKodesh. Still, the written alphabet is the same, and an Israeli child can read much of the Torah. For example, the word for "yes," *ken*, is modern; the Bible has no plain word for "yes."
+Today's Hebrew, **Ivrit** (עִבְרִית), was revived as an everyday spoken language by Zionist thinkers in the late 19th century, after more than a thousand years in which it was not commonly spoken. Jewish tradition notes that modern Hebrew differs from Biblical Hebrew in syntax and pronunciation, and some maintain it is not the same as Lashon HaKodesh. Still, the written alphabet is the same, and an Israeli child can read much of the Torah. For example, the word for "yes," *ken*, is modern; the Bible has no plain word for "yes."
 
 For Israeli parents in Lamorinda, this is a happy connection: your children's first language is built on the language of the Torah. See [Israelis in Lamorinda](/learn/israelis-in-lamorinda).
 

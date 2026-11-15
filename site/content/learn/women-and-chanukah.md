@@ -9,9 +9,9 @@ Jewish women traditionally do not do work while the Chanukah lights are burning,
 
 ## Why women pause from work
 
-Chabad.org gives two reasons. First, the Chanukah lights exist only to remind us of the miracle and are not to be used for any other purpose. By not working in their glow, women make sure the light is never mistaken for ordinary lighting.
+Jewish tradition gives two reasons. First, the Chanukah lights exist only to remind us of the miracle and are not to be used for any other purpose. By not working in their glow, women make sure the light is never mistaken for ordinary lighting.
 
-Second, women are obligated to light, but many fulfill the mitzvah through a menorah lit by the family. Pausing from work once the lights are lit shows that the mitzvah was not forgotten or neglected. Chabad.org adds that women across the generations felt a special affinity for the Chanukah lights and found their own ways to honor them.
+Second, women are obligated to light, but many fulfill the mitzvah through a menorah lit by the family. Pausing from work once the lights are lit shows that the mitzvah was not forgotten or neglected. Jewish law adds that women across the generations felt a special affinity for the Chanukah lights and found their own ways to honor them.
 
 ## How long, and which work?
 

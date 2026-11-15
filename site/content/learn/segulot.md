@@ -1,11 +1,11 @@
 ---
 title: Segulot, Red Strings and Lucky Charms: What Judaism Really Says
-description: What is a segulah? What Chabad.org says about red string bracelets, charms and good-luck remedies, and the real protection Judaism offers.
+description: What is a segulah? What Jewish tradition says about red string bracelets, charms and good-luck remedies, and the real protection Judaism offers.
 category: Jewish ideas
 related: ayin-hara, tzedakah-saves-from-death-stories, tzedakah-averts-a-harsh-decree, mazal-and-astrology, kabbalah, mezuzah, tzedakah
 local: Wondering whether a remedy or custom is real? Ask the Rabbi, and have your mezuzahs checked. Call 925-384-7242 or see /forms/mezuzah-tefillin.
 ---
-A segulah (סְגֻלָּה, plural segulot) is a spiritual remedy or custom believed to bring a blessing or protection, such as a particular prayer, a charity gift or an object. Chabad.org's answer is balanced: there are real Jewish customs, but a good-luck charm is not a substitute for mitzvahs, prayer and trust in G-d, and the red string bracelet in particular has hardly any reputable Jewish source.
+A segulah (סְגֻלָּה, plural segulot) is a spiritual remedy or custom believed to bring a blessing or protection, such as a particular prayer, a charity gift or an object. The Jewish answer is balanced: there are real Jewish customs, but a good-luck charm is not a substitute for mitzvahs, prayer and trust in G-d, and the red string bracelet in particular has hardly any reputable Jewish source.
 
 ## What is a segulah?
 
@@ -15,7 +15,7 @@ People ask about segulot when they are worried: about money, health, a child, fi
 
 ## The red string bracelet
 
-Many people wear a red string, sometimes sold as a "Kabbalah bracelet." What does Chabad.org say?
+Many people wear a red string, sometimes sold as a "Kabbalah bracelet." What does Jewish tradition say?
 
 - There is hardly a reputable Jewish source for wearing a red string against the evil eye ([ayin hara](/learn/ayin-hara)). The evil eye itself is discussed in Jewish sources, but not the red string bracelet.
 - A rabbi of the past records a custom of carrying a red cloth, since red represents strength (gevurah), but he does not mention bracelets or strings.
@@ -27,7 +27,7 @@ The red string at Rachel's Tomb in Israel is sold as a good-luck item for those 
 
 ## Real protection: mitzvahs, prayer and trust
 
-Chabad.org says the true and tried remedy is to connect to G-d through prayer, Torah study and mitzvahs. It explains that there are no magic formulas or instant fixes for business, marriage or money. The only spiritual device is adding to our merit by good deeds, mitzvahs and Torah, along with real focus (kavanah) in prayer.
+Jewish tradition says the true and tried remedy is to connect to G-d through prayer, Torah study and mitzvahs. It explains that there are no magic formulas or instant fixes for business, marriage or money. The only spiritual device is adding to our merit by good deeds, mitzvahs and Torah, along with real focus (kavanah) in prayer.
 
 Practical, traditional steps include:
 
@@ -38,7 +38,7 @@ Practical, traditional steps include:
 
 ## A caution about superstition
 
-Chabad.org is cautious about charms, amulets and "kabbalah water." It calls the water almost certainly not real and overpriced. It says Judaism forbids using fortune-telling, even kabbalistic forms, to learn one's future, and that a "kabbalist fortune teller" is a contradiction in terms. It also says that spiritual remedies need intention and know-how, so that even legitimate ones are unlikely to work for most people on their own.
+Jewish tradition is cautious about charms, amulets and "kabbalah water." It calls the water almost certainly not real and overpriced. It says Judaism forbids using fortune-telling, even kabbalistic forms, to learn one's future, and that a "kabbalist fortune teller" is a contradiction in terms. It also says that spiritual remedies need intention and know-how, so that even legitimate ones are unlikely to work for most people on their own.
 
 None of this means that your worry is silly. It means that the better path is the steady one: a mitzvah, a prayer, a kind act. See also [mazal and astrology](/learn/mazal-and-astrology) and [Kabbalah](/learn/kabbalah). For a specific custom, "ask the Rabbi."
 
@@ -48,7 +48,7 @@ None of this means that your worry is silly. It means that the better path is th
 A segulah is a spiritual remedy or custom believed to bring blessing or protection. Judaism has real customs, but Chabad teaches that they work together with mitzvahs, prayer and trust in G-d, never as a magic substitute.
 
 ### What does a red string bracelet mean?
-It is a popular good-luck item sold at Rachel's Tomb and elsewhere. Chabad.org says there is hardly a reputable Jewish source for it, and the Rebbe reportedly cautioned against it.
+It is a popular good-luck item sold at Rachel's Tomb and elsewhere. Jewish tradition says there is hardly a reputable Jewish source for it, and the Rebbe reportedly cautioned against it.
 
 ### Is the red string a Jewish custom?
 Not in any established way. Some sources even list tying a red string among practices Jews should avoid, though authorities differ. Ask the Rabbi if you have been wearing one.
@@ -57,7 +57,7 @@ Not in any established way. Some sources even list tying a red string among prac
 No charm replaces mitzvahs. A kosher mezuzah on your doors, tzedakah, Psalms and prayer are the traditional sources of protection.
 
 ### Is there a segulah for parnassah or finding a spouse?
-Chabad.org says there are no instant fixes. Work honestly, give tzedakah, pray, and ask the Rabbi for guidance for your situation.
+The tradition says there are no instant fixes. Work honestly, give tzedakah, pray, and ask the Rabbi for guidance for your situation.
 
 ### Where can I get my mezuzahs checked in Lamorinda?
 Chabad of Lamorinda in Lafayette helps families in Lafayette, Moraga and Orinda: call 925-384-7242 or see [mezuzah and tefillin](/forms/mezuzah-tefillin).

@@ -5,13 +5,13 @@ category: Lamorinda
 related: shabbat-day, shabbat-afternoon-ideas, eruv, techum-shabbat, muktzeh, shabbat-with-kids
 local: Planning a Shabbat walk and not sure what you may carry? Ask Rabbi Labkowski at 925-384-7242 before Shabbat.
 ---
-Yes, you may take a walk on Shabbat, and it is a lovely way to spend the afternoon with your family. Chabad.org teaches that on Shabbat you walk calmly, you do not carry outside an eruv, and you stay within the Shabbat boundary, which is about 2,000 amot (just under 3/5 of a mile) from the edge of your town.
+Yes, you may take a walk on Shabbat, and it is a lovely way to spend the afternoon with your family. Jewish tradition teaches that on Shabbat you walk calmly, you do not carry outside an eruv, and you stay within the Shabbat boundary, which is about 2,000 amot (just under 3/5 of a mile) from the edge of your town.
 
 For families in Lafayette, Moraga and Orinda, the hills, creeks and quiet streets make a Shabbat walk a natural tradition. Here is how to do it well.
 
 ## The rules of a Shabbat walk
 
-Chabad.org gives these simple guidelines:
+Jewish tradition gives these simple guidelines:
 
 - **Walk at a calm, measured pace.** Avoid running, jogging, jumping and long strides. Stepping over a puddle is fine. Children may play simple games like tag, but serious exercise is not for Shabbat.
 - **Do not carry outside an eruv.** That means no keys in your pocket, no stroller, no water bottle, no bag, unless there is an eruv covering your route. Check your pockets before you leave home. Whether an eruv covers where you want to walk is a question for the Rabbi; see [what an eruv is](/learn/eruv).
@@ -36,7 +36,7 @@ A walk becomes a Shabbat walk when you bring Shabbat with you.
 2. **Leave the phone at home.** It is also [muktzeh](/learn/muktzeh).
 3. **Notice what you see.** Shabbat is about stopping to appreciate the world G-d made.
 4. **Bring nothing, and plan for water.** Drink before you go, and stay close to home when it is hot.
-5. **In the month of Nisan, look for blossoming trees.** Chabad.org teaches that when you see fruit trees in blossom for the first time that season, you say a special blessing; see [the blessing on blossoming trees](/learn/blessing-on-blossoming-trees). Ask the Rabbi whether it may be said on Shabbat.
+5. **In the month of Nisan, look for blossoming trees.** The tradition teaches that when you see fruit trees in blossom for the first time that season, you say a special blessing; see [the blessing on blossoming trees](/learn/blessing-on-blossoming-trees). Ask the Rabbi whether it may be said on Shabbat.
 
 ## Children and Shabbat walks
 
@@ -54,7 +54,7 @@ Without an eruv, nothing: not keys, a phone, a water bottle or a stroller. Cloth
 
 ### How far can I walk on Shabbat?
 
-About 2,000 amot, a little under 3/5 of a mile, from the edge of your town, according to Chabad.org. See [Techum Shabbat](/learn/techum-shabbat) for details.
+About 2,000 amot, a little under 3/5 of a mile, from the edge of your town, according to Jewish tradition. See [Techum Shabbat](/learn/techum-shabbat) for details.
 
 ### Can I drive to the Lafayette Reservoir on Shabbat?
 
@@ -62,11 +62,11 @@ No. Driving is not permitted on Shabbat. If you live close enough, you may walk 
 
 ### Can I run or hike on Shabbat?
 
-Chabad.org teaches that running, jogging and jumping are not for Shabbat. A relaxed walk is. Longer hikes are best saved for weekdays; see [the Jewish hiker's guide](/learn/jewish-hiking-in-the-east-bay-hills).
+Jewish tradition teaches that running, jogging and jumping are not for Shabbat. A relaxed walk is. Longer hikes are best saved for weekdays; see [the Jewish hiker's guide](/learn/jewish-hiking-in-the-east-bay-hills).
 
 ### What if I find something in my pocket when I am out?
 
-Chabad.org says there are limited options, and calls them "the lesser of two evils," so prevention is best: check your pockets before you leave. If it happens, ask the Rabbi.
+The tradition says there are limited options, and calls them "the lesser of two evils," so prevention is best: check your pockets before you leave. If it happens, ask the Rabbi.
 
 ## Take the next step
 

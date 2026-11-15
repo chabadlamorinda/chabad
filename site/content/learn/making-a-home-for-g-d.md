@@ -7,7 +7,7 @@ local: Come learn Tanya in English, Wednesdays at 1:00 PM at the Rabbi's home in
 ---
 According to Chapter 36 of the Tanya, G-d created the world because He wanted a dwelling place in the lowest realm, this physical world, where His essence would be revealed without any veil. Our Sages teach that G-d desired an abode in the lower realms, and the Tanya explains that we build it through our practical mitzvot.
 
-This is the Tanya's answer to "why am I here?" For families in Lafayette, Moraga and Orinda, it gives meaning to a Tuesday morning as much as to a holiday. This guide is a simple retelling of Chabad.org's Chapter 36.
+This is the Tanya's answer to "why am I here?" For families in Lafayette, Moraga and Orinda, it gives meaning to a Tuesday morning as much as to a holiday. This guide is a simple retelling of Chapter 36 of the Tanya.
 
 ## The question Chapter 36 answers
 

@@ -11,7 +11,7 @@ If you feel you are not good enough, the Tanya answers that your worth does not 
 
 Many people in Lafayette, Moraga, Orinda and everywhere carry a quiet question: "Am I Jewish enough? Am I good enough?" Maybe you do not keep Shabbat, do not know the prayers, or feel far from G-d. See [not religious? you are welcome](/learn/not-religious-welcome) and [self-esteem in Judaism](/learn/self-esteem-jewish-view).
 
-The [Tanya](/learn/tanya), by Rabbi Shneur Zalman of Liadi, the founder of Chabad, speaks to this question directly. We share it in our own words, from the Tanya pages on Chabad.org.
+The [Tanya](/learn/tanya), by Rabbi Shneur Zalman of Liadi, the founder of Chabad, speaks to this question directly. We share it in our own words, from the Tanya itself.
 
 ## Your soul: a part of G-d above
 

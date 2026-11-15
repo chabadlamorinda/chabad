@@ -9,23 +9,23 @@ The bedeken (בדקן, also spelled badeken) is the moment just before a Jewish 
 
 ## Where does the bedeken come from?
 
-The Torah tells that when Rebecca saw Isaac approaching, "she took her veil and covered herself" (Genesis 24:65). Chabad.org identifies this as the root of the custom. Today the veiling is part of a first marriage.
+The Torah tells that when Rebecca saw Isaac approaching, "she took her veil and covered herself" (Genesis 24:65). Jewish tradition identifies this as the root of the custom. Today the veiling is part of a first marriage.
 
 Many Ashkenazi couples do not see each other for the week before the wedding. The bedeken is the reunion: the groom, accompanied by his father and father-in-law or by whoever will escort him to the chuppah, and by the rabbi and friends, goes with song to where the bride is seated, with both mothers beside her.
 
 ## What happens at the bedeken?
 
 1. The groom and his escorts walk to the bride's reception room.
-2. The groom himself places the veil over her face. Chabad.org stresses that his presence is central.
+2. The groom himself places the veil over her face. Jewish teaching stresses that his presence is central.
 3. He recites the blessing that Rebecca received from her mother and brother before she married Isaac: "Our sister, be thou the mother of thousands of ten thousands" (Genesis 24:60).
 4. The fathers and grandfathers, and often the rabbi, then bless the bride. In some families the bride's father also places his hands on her head and gives her a blessing.
 5. The groom's party leaves, and everyone prepares for the chuppah.
 
-In Chabad custom, the band plays a solemn melody composed by Rabbi Schneur Zalman of Liadi from the veiling until the ceremony ends. Chabad.org says the veil should be thick enough to hide the bride's face completely, and Chassidic custom does not use gold or silver threads in it. The bride stays veiled through the chuppah.
+In Chabad custom, the band plays a solemn melody composed by Rabbi Schneur Zalman of Liadi from the veiling until the ceremony ends. The tradition says the veil should be thick enough to hide the bride's face completely, and Chassidic custom does not use gold or silver threads in it. The bride stays veiled through the chuppah.
 
 ## What does the veil mean?
 
-Chabad.org gives several meanings:
+Jewish sources gives several meanings:
 
 - **Inner beauty.** The groom shows that he is committed to the bride's inner self, not only to the outward beauty that fades.
 - **Modesty and dignity.** The veil expresses modesty and the dignity of a married woman.
@@ -50,7 +50,7 @@ He recites the words Rebecca's family said to her: "Our sister, be thou the moth
 
 ### Is the bedeken done at a second marriage?
 
-Chabad.org says the veiling is reserved for a bride's first marriage. Ask the Rabbi about your situation.
+Jewish tradition says the veiling is reserved for a bride's first marriage. Ask the Rabbi about your situation.
 
 ### Do bride and groom see each other before the wedding?
 

@@ -7,11 +7,11 @@ local: Want to practice this with a class? Join the Wednesday 1:00 PM Tanya clas
 ---
 In the Tanya, "mind over heart" means that by nature the mind rules the heart: you may not control what you feel, but you can choose what you think about, say and do. This is Tanya's practical answer to anger, jealousy and temptation.
 
-This guide looks at the tool, as Chabad.org presents it. For the person who uses it, see [the beinoni](/learn/the-beinoni).
+This guide looks at the tool, as the Tanya presents it. For the person who uses it, see [the beinoni](/learn/the-beinoni).
 
 ## The mind naturally rules
 
-Chapter 12, according to Chabad.org, explains that the brain rules the heart by nature, and that the will of the mind can turn attention away from what the heart craves. The chapter gives an image: light drives out darkness without a struggle, so a small ray of holiness pushes away much of the animal soul's foolishness.
+Chapter 12 explains that the brain rules the heart by nature, and that the will of the mind can turn attention away from what the heart craves. The chapter gives an image: light drives out darkness without a struggle, so a small ray of holiness pushes away much of the animal soul's foolishness.
 
 ## Feelings come; you choose what to do
 
@@ -19,11 +19,11 @@ The chapter says that improper thoughts may rise by themselves from the heart. W
 
 The same goes for feelings about other people. According to the chapter, when jealousy, anger or resentment arise, the beinoni keeps them out of his mind and answers with kindness, as Joseph did toward his brothers.
 
-Chabad.org's article on the beinoni adds that this does not need the feelings to disappear: a person "copes, but doesn't triumph," and keeps striving. It also says (citing Chapter 13) that the divine soul receives heavenly help.
+Chassidic teaching on the beinoni adds that this does not need the feelings to disappear: a person "copes, but doesn't triumph," and keeps striving. It also says (citing Chapter 13) that the divine soul receives heavenly help.
 
 ## Choosing your clothes
 
-Another Chabad.org article, on the soul's "garments" (see [three garments of the soul](/learn/three-garments-of-the-soul)), says that at any moment you can choose your thoughts, words and actions. Acting kindly and speaking kindly even in a low mood gradually shifts your character.
+Chassidic teaching on the soul's "garments" (see [three garments of the soul](/learn/three-garments-of-the-soul)), says that at any moment you can choose your thoughts, words and actions. Acting kindly and speaking kindly even in a low mood gradually shifts your character.
 
 ## Prayer helps
 

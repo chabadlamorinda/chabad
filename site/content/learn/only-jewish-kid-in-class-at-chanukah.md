@@ -11,7 +11,7 @@ If your child is the only Jewish kid in class at Chanukah, the best thing you ca
 
 Children take their cue from us. If Chanukah at home is joyful, with lights, songs, gelt and the family together, your child walks into school feeling that being Jewish is something good to have. Tell them the story in simple words (see the [Chanukah story](/learn/chanukah-story)): a few brave people, one little jar of oil, and a light that kept going.
 
-Chabad.org's teaching about the menorah offers a beautiful image. The Chanukah menorah is lit in a window or doorway facing the street, so the light of the home shines outward to everyone. The idea is that a strong, warm Jewish home gives a child the confidence to share its light with the world. See [Jewish pride](/learn/jewish-pride) for more.
+The Chassidic teaching about the menorah offers a beautiful image. The Chanukah menorah is lit in a window or doorway facing the street, so the light of the home shines outward to everyone. The idea is that a strong, warm Jewish home gives a child the confidence to share its light with the world. See [Jewish pride](/learn/jewish-pride) for more.
 
 ## Give your child words
 

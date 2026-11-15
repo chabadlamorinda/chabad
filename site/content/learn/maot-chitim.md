@@ -15,7 +15,7 @@ The custom began with matzah, which is why it is called "wheat" or "flour" money
 
 ## How old is this custom?
 
-Chabad.org notes that the Jerusalem Talmud, compiled about 1,600 years ago, already speaks of communities collecting money for the local poor to buy matzah. When Jewish communities had organized leadership, residents were required to contribute, and a person who did business in two cities gave in both. In Jewish communities today, it is carried out by rabbis, Chabad centers and charities, and by families who simply decide to help.
+Jewish tradition notes that the Jerusalem Talmud, compiled about 1,600 years ago, already speaks of communities collecting money for the local poor to buy matzah. When Jewish communities had organized leadership, residents were required to contribute, and a person who did business in two cities gave in both. In Jewish communities today, it is carried out by rabbis, Chabad centers and charities, and by families who simply decide to help.
 
 ## When and how to give
 

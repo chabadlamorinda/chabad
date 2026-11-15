@@ -9,7 +9,7 @@ Community service is a mitzvah in Jewish tradition: it combines *tzedakah* (צְ
 
 ## Why service is a Jewish idea
 
-Chabad.org explains that tzedakah is not "charity" in the casual sense: the word comes from *tzedek*, justice. Everything we have is a gift from G-d, and sharing it is simply the right thing to do. The Sages set a tenth of one's earnings as the proper amount of giving, and those who can afford it should aim for a fifth. Our guide to [tzedakah](/learn/tzedakah) tells more.
+Tzedakah is not "charity" in the casual sense: the word comes from *tzedek*, justice. Everything we have is a gift from G-d, and sharing it is simply the right thing to do. The Sages set a tenth of one's earnings as the proper amount of giving, and those who can afford it should aim for a fifth. Our guide to [tzedakah](/learn/tzedakah) tells more.
 
 Chesed goes beyond money: it is giving of ourselves, our time and our attention. Visiting the lonely, helping a neighbor and welcoming a stranger are all chesed. See [chesed](/learn/chesed) and, for visiting the sick, [bikur cholim](/learn/bikur-cholim).
 
@@ -17,7 +17,7 @@ For teens, service also fits a bigger theme: you are not too young to make a dif
 
 ## Maimonides' ladder: giving well
 
-Maimonides, as Chabad.org describes, taught eight levels of giving. The highest is helping a person become self-sufficient, for example by a loan or work that preserves their dignity. The lowest is giving unwillingly. For a teen, this is a helpful way to think about service: give cheerfully, give respectfully and, when you can, help someone stand on their own.
+Maimonides taught eight levels of giving. The highest is helping a person become self-sufficient, for example by a loan or work that preserves their dignity. The lowest is giving unwillingly. For a teen, this is a helpful way to think about service: give cheerfully, give respectfully and, when you can, help someone stand on their own.
 
 ## Volunteer ideas for Jewish teens
 

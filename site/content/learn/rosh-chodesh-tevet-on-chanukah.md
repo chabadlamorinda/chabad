@@ -11,7 +11,7 @@ Rosh Chodesh Tevet, the first day of the Hebrew month of Tevet, always falls dur
 
 Chanukah begins on the 25th of Kislev and lasts eight days. The month of Kislev has either 29 or 30 days, so the new month of Tevet always arrives while Chanukah is still going. The eight days of Chanukah always include at least one Shabbat and Rosh Chodesh Tevet.
 
-In years when Kislev has 30 days, Rosh Chodesh is two days: the last day of Kislev and the first of Tevet. Then two days of Chanukah are Rosh Chodesh. Chabad.org's schedule for such a year lists both days with the same Rosh Chodesh reading, followed by each day's own Chanukah reading.
+In years when Kislev has 30 days, Rosh Chodesh is two days: the last day of Kislev and the first of Tevet. Then two days of Chanukah are Rosh Chodesh. The reading schedule for such a year lists both days with the same Rosh Chodesh reading, followed by each day's own Chanukah reading.
 
 You can read about the new month in general in our guide to [Rosh Chodesh](/learn/rosh-chodesh) and about the month itself in [Tevet](/learn/tevet).
 
@@ -31,16 +31,16 @@ If Rosh Chodesh Tevet falls on Shabbat, three scrolls are read: the weekly Torah
 Chanukah and Rosh Chodesh each add something to the prayers, and on this day they come together:
 
 - The full **Hallel** is said on every day of Chanukah, including this one.
-- **Al HaNissim** is added to the Amidah and to Grace after Meals. When Rosh Chodesh Tevet falls on Shabbat, Chabad.org notes that it is said in Grace after Meals together with *Retzeh* and *Ya'aleh v'Yavo*.
+- **Al HaNissim** is added to the Amidah and to Grace after Meals. When Rosh Chodesh Tevet falls on Shabbat, jewish tradition notes that it is said in Grace after Meals together with *Retzeh* and *Ya'aleh v'Yavo*.
 - On Rosh Chodesh, the Musaf prayer is added. See [Musaf](/learn/musaf).
 
 Our guide on [Al HaNissim and Hallel](/learn/al-hanissim-and-hallel) explains where each is said. If you are not sure about a detail of a particular year, ask the Rabbi.
 
 ## Why did the Greeks target Rosh Chodesh?
 
-According to a teaching on Chabad.org, the Greeks decreed against three mitzvot: Shabbat, sanctifying the new month (Rosh Chodesh) and circumcision (brit milah). The eight days of Chanukah always include a Shabbat and Rosh Chodesh Tevet, and the number eight recalls brit milah, which takes place on the eighth day of a baby's life (Chabad.org lists brit milah among the reasons given for Chanukah's eight days). So the festival itself holds all three mitzvot the Greeks tried to cancel.
+According to a Chassidic teaching, the Greeks decreed against three mitzvot: Shabbat, sanctifying the new month (Rosh Chodesh) and circumcision (brit milah). The eight days of Chanukah always include a Shabbat and Rosh Chodesh Tevet, and the number eight recalls brit milah, which takes place on the eighth day of a baby's life (chassidic teaching lists brit milah among the reasons given for Chanukah's eight days). So the festival itself holds all three mitzvot the Greeks tried to cancel.
 
-Another Chabad.org teaching points out why the three were chosen. They all go beyond nature: Shabbat remembers creation, circumcision corrects the body beyond the way nature made it, and the new month is set by the Sages. The Greeks believed everything depends on nature alone.
+Another teaching points out why the three were chosen. They all go beyond nature: Shabbat remembers creation, circumcision corrects the body beyond the way nature made it, and the new month is set by the Sages. The Greeks believed everything depends on nature alone.
 
 ## Common questions
 
@@ -51,10 +51,10 @@ Yes. Chanukah starts on the 25th of Kislev and runs eight days, so the first of 
 Two. The first is for Rosh Chodesh (Numbers 28:1 to 15) and the second for the day of Chanukah.
 
 ### Is Hallel full or half on Rosh Chodesh during Chanukah?
-The full Hallel is said on all eight days of Chanukah, according to Chabad.org.
+The full Hallel is said on all eight days of Chanukah, according to Jewish tradition.
 
 ### Which three mitzvot did the Greeks try to ban?
-Shabbat, Rosh Chodesh and brit milah, as explained on Chabad.org. Chanukah always contains a Shabbat and Rosh Chodesh Tevet, and its eighth day connects to brit milah.
+Shabbat, Rosh Chodesh and brit milah, as the tradition explains. Chanukah always contains a Shabbat and Rosh Chodesh Tevet, and its eighth day connects to brit milah.
 
 ### Why do we say Al HaNissim in Grace after Meals on Rosh Chodesh Tevet?
 Because it is said on every day of Chanukah. When Rosh Chodesh falls on Shabbat, it is said with *Retzeh* and *Ya'aleh v'Yavo*.

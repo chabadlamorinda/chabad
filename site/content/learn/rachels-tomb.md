@@ -19,11 +19,11 @@ The prophet Jeremiah describes the scene: "A voice is heard on high, lamentation
 
 A Midrash on Lamentations tells how the Patriarchs and Moses pleaded for mercy, and G-d was silent until Rachel spoke. She reminded G-d that she had given Leah the secret signs, so that her sister would not be shamed when Leah married Jacob. She asked G-d to show the same restraint toward Israel. G-d promised to bring the Jewish people back to their place for Rachel's sake.
 
-Chabad.org draws this lesson: Rachel is the model of a Jewish mother. She sees the good in her children even when they are far from where they should be, and she never gives up on them. We can learn from her to look kindly at one another (see [Ahavat Yisrael](/learn/ahavat-yisrael)).
+This is the lesson: Rachel is the model of a Jewish mother. She sees the good in her children even when they are far from where they should be, and she never gives up on them. We can learn from her to look kindly at one another (see [Ahavat Yisrael](/learn/ahavat-yisrael)).
 
 ## The tomb through history
 
-- **The first monument.** Jacob set up a monument on the grave. The article on Chabad.org links this to the custom of leaving a stone when visiting a grave (see [Visiting a Grave](/learn/visiting-a-grave)).
+- **The first monument.** Jacob set up a monument on the grave. This is linked to the custom of leaving a stone when visiting a grave (see [Visiting a Grave](/learn/visiting-a-grave)).
 - **Joseph.** According to the Midrash, young Joseph, being taken to Egypt, ran to his mother's grave and prayed there.
 - **Sir Moses Montefiore.** In 1841, he and his wife, Judith, enlarged the structure with walls and a long room to shelter visitors. This is the building seen in most older pictures.
 - **Closed and reopened.** From 1948 the site was closed to Jewish visitors. After 1967 it was opened to them again.

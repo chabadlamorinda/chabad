@@ -11,7 +11,7 @@ For Jewish families in Lafayette, Moraga and Orinda, it arrives about a week aft
 
 ## What happened on the 10th of Tevet
 
-According to Chabad.org, on the 10th of Tevet in 425 BCE the Babylonian army of Nebuchadnezzar began its siege of Jerusalem. It was the first step in a chain of events that ended with the destruction of the First Temple and exile. Chabad.org adds that the nearby dates of 8 and 9 Tevet are remembered for the translation of the Torah into Greek and the passing of Ezra the Scribe.
+According to Jewish tradition, on the 10th of Tevet in 425 BCE the Babylonian army of Nebuchadnezzar began its siege of Jerusalem. It was the first step in a chain of events that ended with the destruction of the First Temple and exile. Jewish teaching adds that the nearby dates of 8 and 9 Tevet are remembered for the translation of the Torah into Greek and the passing of Ezra the Scribe.
 
 The Prophet Ezekiel, who lived in exile, was told by G-d to record this very day (Ezekiel 24:1-2), which is why Jews have marked it ever since. The fast is one of four fasts connected with the destruction of the Temple; see [minor fast days](/learn/minor-fast-days) and [fast days](/learn/fast-days).
 
@@ -28,11 +28,11 @@ Anyone who is ill, elderly, pregnant or nursing, or a child, should not fast wit
 
 ## When it falls on Friday
 
-Asarah B'Tevet is the only fast day that can fall on a Friday. Chabad.org explains that, unlike other fasts, it is kept even then, although it makes Shabbat preparations harder. Plan the cooking and shopping ahead of time, finish the fast at nightfall, and bring in Shabbat on time. Candle lighting is in [Shabbat times](/shabbat-times). Some prayers (Tachanun and the afternoon Avinu Malkeinu) are omitted when it falls on Friday.
+Asarah B'Tevet is the only fast day that can fall on a Friday. The tradition explains that, unlike other fasts, it is kept even then, although it makes Shabbat preparations harder. Plan the cooking and shopping ahead of time, finish the fast at nightfall, and bring in Shabbat on time. Candle lighting is in [Shabbat times](/shabbat-times). Some prayers (Tachanun and the afternoon Avinu Malkeinu) are omitted when it falls on Friday.
 
 ## A day of Kaddish for Holocaust victims
 
-Chabad.org notes that in recent times the Tenth of Tevet has become the custom for saying Kaddish for Holocaust victims, many of whom have no known date of death. Families who do not know the date a loved one was murdered can light a yahrzeit candle and say Kaddish on this day. Read more in [Holocaust remembrance](/learn/holocaust-remembrance) and [Kaddish](/learn/kaddish), and speak to the Rabbi about how to remember.
+Jewish sources notes that in recent times the Tenth of Tevet has become the custom for saying Kaddish for Holocaust victims, many of whom have no known date of death. Families who do not know the date a loved one was murdered can light a yahrzeit candle and say Kaddish on this day. Read more in [Holocaust remembrance](/learn/holocaust-remembrance) and [Kaddish](/learn/kaddish), and speak to the Rabbi about how to remember.
 
 ## The Rebbe's message
 

@@ -18,7 +18,7 @@ What counts as "fit for a royal table" is a technical question, so ask the Rabbi
 
 ## What does "pas Yisrael" mean on a label?
 
-Many store-bought breads are kosher certified but are made in non-Jewish bakeries. This is called **pas palter** (פַּת פַּלְטֶר), commercial bread. Chabad.org explains that a hechsher alone does not make bread pas Yisrael unless the package says so. Commercial bread is allowed in some cases, when the bakery is under kosher supervision and bread baked with a Jew's help is not available, and many people avoid it even so. Many are especially careful to avoid it between Rosh Hashanah and Yom Kippur. If bread is baked with dairy, ask the Rabbi.
+Many store-bought breads are kosher certified but are made in non-Jewish bakeries. This is called **pas palter** (פַּת פַּלְטֶר), commercial bread. A hechsher alone does not make bread pas Yisrael unless the package says so. Commercial bread is allowed in some cases, when the bakery is under kosher supervision and bread baked with a Jew's help is not available, and many people avoid it even so. Many are especially careful to avoid it between Rosh Hashanah and Yom Kippur. If bread is baked with dairy, ask the Rabbi.
 
 Read [kosher certification](/learn/kosher-certification) to see what a symbol on the package does and does not tell you.
 

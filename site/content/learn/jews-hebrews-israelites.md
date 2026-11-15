@@ -9,21 +9,21 @@ Jews, Hebrews and Israelites are three names for the same people, each from a di
 
 ## Hebrew (עברי, Ivri)
 
-Abraham is called Ha'Ivri, "the Hebrew." Literally, the word means someone from across the river, the Euphrates. Chabad.org shares the Midrash's deeper reading: "The entire world was on one side, and he was willing to be on the other side." To be a Hebrew is to have the courage to stand apart when conviction calls, to reject the idols of the age.
+Abraham is called Ha'Ivri, "the Hebrew." Literally, the word means someone from across the river, the Euphrates. The Midrash gives a deeper reading: "The entire world was on one side, and he was willing to be on the other side." To be a Hebrew is to have the courage to stand apart when conviction calls, to reject the idols of the age.
 
 ## Israelite (ישראל, Yisrael)
 
-Jacob, Abraham's grandson, was given the name Israel after wrestling with an angel at the Jabbok River. Chabad.org explains that the name can mean "prevailer over mighty beings," "prince of G-d" or "upright one of G-d." His twelve sons became the twelve tribes, and once they formed a nation, the people were called the Children of Israel. Read about [Jacob](/learn/jacob-our-father) and the [twelve tribes](/learn/twelve-tribes).
+Jacob, Abraham's grandson, was given the name Israel after wrestling with an angel at the Jabbok River. Tradition explains that the name can mean "prevailer over mighty beings," "prince of G-d" or "upright one of G-d." His twelve sons became the twelve tribes, and once they formed a nation, the people were called the Children of Israel. Read about [Jacob](/learn/jacob-our-father) and the [twelve tribes](/learn/twelve-tribes).
 
 ## Jew (יהודי, Yehudi)
 
-The word comes from Judah (Yehudah), Jacob's fourth son. At first it may have meant only members of the tribe of Judah. After the kingdom split, the southern Kingdom of Judah survived, and after the ten northern tribes were exiled and lost, "Yehudi" came to mean every Israelite, whatever the tribe. According to Chabad.org, the name became widespread during the Persian exile.
+The word comes from Judah (Yehudah), Jacob's fourth son. At first it may have meant only members of the tribe of Judah. After the kingdom split, the southern Kingdom of Judah survived, and after the ten northern tribes were exiled and lost, "Yehudi" came to mean every Israelite, whatever the tribe. According to the sources, the name became widespread during the Persian exile.
 
 There is a deeper meaning too. Yehudi is linked to the word hoda'ah, "acknowledgment" or "thanksgiving": a Jew is one who acknowledges G-d. The Talmud says that Mordechai, from the tribe of Benjamin, was called a Yehudi because he rejected idolatry.
 
 ## One people, three names
 
-Chabad.org puts it plainly: Jews, Israelites and Hebrews refer to the same people. Each name highlights a different quality: standing for truth (Hebrew), struggling and prevailing (Israelite) and gratitude (Jew). To learn who is counted as a Jew, see [who is a Jew](/learn/who-is-a-jew), and for the wider story, the [overview of Jewish history](/learn/jewish-history-overview).
+Put plainly: Jews, Israelites and Hebrews refer to the same people. Each name highlights a different quality: standing for truth (Hebrew), struggling and prevailing (Israelite) and gratitude (Jew). To learn who is counted as a Jew, see [who is a Jew](/learn/who-is-a-jew), and for the wider story, the [overview of Jewish history](/learn/jewish-history-overview).
 
 ## For families in Lamorinda
 

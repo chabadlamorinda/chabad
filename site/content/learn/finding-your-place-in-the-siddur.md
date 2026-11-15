@@ -9,7 +9,7 @@ To follow along in synagogue, listen for the page number (it is often announced 
 
 ## What a siddur is and why it feels big
 
-The siddur (סידור) is the Jewish prayer book. The word comes from *seder*, "order," because the prayers are arranged in a set sequence. According to Chabad.org, a siddur holds the prayers for weekdays, Shabbat and festivals, and many editions add an English translation with simple instructions. Chabad communities often use *Siddur Tehillat Hashem*, which follows the Chassidic text; Chabad.org notes that different editions differ slightly in wording, and these versions are called *nuschaot*. If a page looks different from your neighbor's, they may simply be using another edition.
+The siddur (סידור) is the Jewish prayer book. The word comes from *seder*, "order," because the prayers are arranged in a set sequence. According to Jewish tradition, a siddur holds the prayers for weekdays, Shabbat and festivals, and many editions add an English translation with simple instructions. Chabad communities often use *Siddur Tehillat Hashem*, which follows the Chassidic text; Chassidic teaching notes that different editions differ slightly in wording, and these versions are called *nuschaot*. If a page looks different from your neighbor's, they may simply be using another edition.
 
 ## Step by step: how to follow along
 
@@ -54,7 +54,7 @@ Use a siddur with English translation or transliteration, or simply read the Eng
 No. Pray at your own pace. Saying less with attention is better than rushing through.
 
 ### Why do some siddurim look different?
-Different editions follow slightly different traditions, and Chabad.org notes that wording varies a little between them. Chabad communities commonly use Siddur Tehillat Hashem.
+Different editions follow slightly different traditions, and the tradition notes that wording varies a little between them. Chabad communities commonly use Siddur Tehillat Hashem.
 
 ### Is it all right to take a siddur home?
 Many people want to. Prayer books with English are available to borrow at services. Ask the Rabbi about it, or call 925-384-7242.

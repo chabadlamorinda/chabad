@@ -15,7 +15,7 @@ Hallel is preceded by a blessing in which we thank G-d for making us holy and co
 
 ## Which days have full Hallel?
 
-According to Chabad.org, full Hallel, the entire six psalms, is said on:
+According to Jewish tradition, full Hallel, the entire six psalms, is said on:
 
 - **Sukkot**, every day (and Shemini Atzeret). On Sukkot the Four Kinds are held during Hallel and the lulav is waved in six directions at four points; see [the four kinds](/learn/four-kinds).
 - **Chanukah**, every day. Work is allowed and it is not a biblical festival, but Hallel marks the miracles of Chanukah. See [al hanissim and Hallel](/learn/al-hanissim-and-hallel).
@@ -26,11 +26,11 @@ Together with Sukkot, Passover and Shavuot, these are the [three pilgrimage fest
 
 ## Which days have half Hallel?
 
-Half Hallel, where two paragraphs are left out, is said on **Rosh Chodesh** and on the **remaining days of Passover**. Chabad.org describes it as "more like 85 percent" of the whole. The customary skips are the first half of Psalm 115 and the first half of Psalm 116, since their themes repeat in the second halves.
+Half Hallel, where two paragraphs are left out, is said on **Rosh Chodesh** and on the **remaining days of Passover**. Jewish tradition describes it as "more like 85 percent" of the whole. The customary skips are the first half of Psalm 115 and the first half of Psalm 116, since their themes repeat in the second halves.
 
 During half Hallel, the blessings are recited by the prayer leader, and the congregation answers "Amen." Rosh Chodesh is a day the Torah calls a festival (a mo'ed), but work is not forbidden, so the joy is a bit more restrained. Learn more in [Rosh Chodesh](/learn/rosh-chodesh).
 
-Chabad.org gives reasons why Passover's last days get half Hallel while every day of Sukkot gets full Hallel. On Sukkot each day had a different offering in the Temple, so each day is its own holiday. On Passover the same offering was brought daily, and the Midrash says the final days recall the Egyptians drowning at the Red Sea, when G-d said it was not a time for full joy.
+There are reasons why Passover's last days get half Hallel while every day of Sukkot gets full Hallel. On Sukkot each day had a different offering in the Temple, so each day is its own holiday. On Passover the same offering was brought daily, and the Midrash says the final days recall the Egyptians drowning at the Red Sea, when G-d said it was not a time for full joy.
 
 ## Days without Hallel
 

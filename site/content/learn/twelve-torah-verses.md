@@ -9,7 +9,7 @@ The twelve Torah passages (the "12 pesukim") are twelve short verses and teachin
 
 ## What are the 12 pesukim?
 
-A passuk (פסוק) is a verse. According to Chabad.org, the Rebbe selected these twelve from across Jewish literature as a foundation for a child's whole life. They are short enough for a young child and deep enough for an adult.
+A passuk (פסוק) is a verse. The Rebbe selected these twelve from across Jewish literature as a foundation for a child's whole life. They are short enough for a young child and deep enough for an adult.
 
 ## The twelve, one line each
 
@@ -31,7 +31,7 @@ A passuk (פסוק) is a verse. According to Chabad.org, the Rebbe selected thes
 - **At bedtime.** Say the verse in Hebrew, then in English, then ask "What do you think this means?"
 - **In the car.** Repeat the verse together on the way to school or to Hebrew school. Short rides are perfect for memory.
 - **At Shabbat dinner.** Let a child "teach" the week's verse to the family, then add it to the [Torah thought at the table](/learn/dvar-torah-at-the-shabbat-table).
-- **Songs and videos.** Chabad.org has a children's series of videos on the twelve passages. Songs help young children remember.
+- **Songs and videos.** There are children's videos on the twelve passages. Songs help young children remember.
 
 Take it slowly. One verse a week finishes in about three months, and you can start over again.
 
@@ -51,7 +51,7 @@ The Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson, selected them and sugge
 Young children can begin with the first verses, such as the Shema. Go at your child's own pace.
 
 ### Where can I find videos or songs for the 12 pesukim?
-Chabad.org has children's videos and articles on them. Call us at 925-384-7242 for more help.
+There are children's videos and articles on them. Call us at 925-384-7242 for more help.
 
 ### Do all twelve come from the Torah?
 Most come from the Torah, but a few are from the Talmud and the Tanya, as the list shows.

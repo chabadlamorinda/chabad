@@ -11,7 +11,7 @@ That turns a huge life question, "Can I ever change?", into a small one that can
 
 ## Think in moments, not in years
 
-Many people give up because they imagine a lifetime of saying no. Chabad.org's presentation of Chapter 14 describes the beinoni level as available "at any time or hour," and it explains that it is about conduct, not feeling. A person may not yet hate the wrong desire in his heart, since feelings change with the circumstance. But everyone can turn away from evil and do good in deed, word and thought. See [the beinoni](/learn/the-beinoni).
+Many people give up because they imagine a lifetime of saying no. Chapter 14 of the Tanya describes the beinoni level as available "at any time or hour," and it explains that it is about conduct, not feeling. A person may not yet hate the wrong desire in his heart, since feelings change with the circumstance. But everyone can turn away from evil and do good in deed, word and thought. See [the beinoni](/learn/the-beinoni).
 
 ## Mind over heart
 

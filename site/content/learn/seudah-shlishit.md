@@ -5,35 +5,35 @@ category: Shabbat & holidays
 related: shabbat-meals, shabbat-day, havdalah, niggun, techum-shabbat
 local: Come to Shabbat in Lafayette and ask Rabbi Labkowski, 925-384-7242, how a family can keep the third meal simply, in Lafayette, Moraga or Orinda.
 ---
-*Seudah shlishit* (סְעוּדָה שְׁלִישִׁית), also called *shalosh seudos*, is the third meal of Shabbat, a light meal eaten in the late afternoon between the afternoon prayer, Mincha, and the evening prayer, Maariv. Chabad.org teaches that Jews eat three meals on Shabbat, and that the third is a special time of closeness to G-d.
+*Seudah shlishit* (סְעוּדָה שְׁלִישִׁית), also called *shalosh seudos*, is the third meal of Shabbat, a light meal eaten in the late afternoon between the afternoon prayer, Mincha, and the evening prayer, Maariv. Jewish tradition teaches that Jews eat three meals on Shabbat, and that the third is a special time of closeness to G-d.
 
 Friday night dinner and Shabbat lunch get most of the attention, but this quieter meal, as the day starts to fade, is worth discovering for families in Lafayette, Moraga and Orinda.
 
 ## Where does the third meal come from?
 
-The source is the manna that fell in the desert. In the verse about Shabbat, the word *hayom*, "today," appears three times: "Eat it today, for today is a Shabbat to G-d; today you will not find it in the field" (Exodus 16:25). Chabad.org explains that the Talmud (Shabbat 117b) learns from the three "todays" that we eat three meals on Shabbat.
+The source is the manna that fell in the desert. In the verse about Shabbat, the word *hayom*, "today," appears three times: "Eat it today, for today is a Shabbat to G-d; today you will not find it in the field" (Exodus 16:25). Jewish tradition explains that the Talmud (Shabbat 117b) learns from the three "todays" that we eat three meals on Shabbat.
 
 You can read more about the meals in [Shabbat meals](/learn/shabbat-meals) and the rest of the day in [Shabbat day](/learn/shabbat-day).
 
 ## When is it eaten?
 
-The third meal is eaten in the afternoon, after the Mincha prayer. Chabad.org describes it as a light meal between Mincha and Maariv. Ask the Rabbi what time works for your family, since the afternoon changes through the year. You can find the sunset time for this week on [Shabbat times](/shabbat-times).
+The third meal is eaten in the afternoon, after the Mincha prayer. The tradition describes it as a light meal between Mincha and Maariv. Ask the Rabbi what time works for your family, since the afternoon changes through the year. You can find the sunset time for this week on [Shabbat times](/shabbat-times).
 
-The Zohar calls the Shabbat afternoon *raava deraavin*, a time of especially favorable Divine will, as Chabad.org explains. That is why it is such a special time to be together.
+The Zohar calls the Shabbat afternoon *raava deraavin*, a time of especially favorable Divine will, as jewish tradition explains. That is why it is such a special time to be together.
 
 ## Do you need bread?
 
 Here, customs differ.
 
 - According to Jewish law (Orach Chaim 291), eating bread at the third meal is something the authorities are lenient about, and many families eat a simple meal, with or without challah.
-- Chabad.org says that Chabad Chassidim are not strict about a full meal with challah at the third meal, and usually taste some food. The Rebbes of Chabad felt a spiritual light at this time, and Chabad Chassidim follow their example.
+- Chabad custom is that Chassidim are not strict about a full meal with challah at the third meal, and usually taste some food. The Rebbes of Chabad felt a spiritual light at this time, and Chabad Chassidim follow their example.
 - The reason given is that the manna was "bread" but could not be found in the field after the third "today," so we recall that by not making this meal a full bread meal.
 
-Because customs vary, the Rabbi can tell you what is right for your family. What is important is that you have something to eat in honor of Shabbat, so that you do not skip the third meal altogether. Chabad.org says that only a taste of food is needed, not a full meal with bread.
+Because customs vary, the Rabbi can tell you what is right for your family. What is important is that you have something to eat in honor of Shabbat, so that you do not skip the third meal altogether. The tradition says that only a taste of food is needed, not a full meal with bread.
 
 ## The mood of the late afternoon
 
-Chassidic teaching describes this time as a gentle glow, as Shabbat starts to say goodbye. Chabad.org explains that the third meal reminds us of the World to Come, a time without eating or drinking, and some feel the light so strongly that eating is hard. For most of us, it is simply a time to slow down.
+The tradition describes this time as a gentle glow, as Shabbat starts to say goodbye. Jewish tradition explains that the third meal reminds us of the World to Come, a time without eating or drinking, and some feel the light so strongly that eating is hard. For most of us, it is simply a time to slow down.
 
 Families often use the time for:
 
@@ -57,11 +57,11 @@ Families often use the time for:
 
 ### Why do we eat three meals on Shabbat?
 
-Chabad.org explains that the word "today" appears three times in the Torah's verse about the manna on Shabbat, and the Talmud learns from this that we eat three meals.
+Jewish tradition explains that the word "today" appears three times in the Torah's verse about the manna on Shabbat, and the Talmud learns from this that we eat three meals.
 
 ### Do I need to eat bread at seudah shlishit?
 
-Eating bread is something the authorities are lenient about, and Chabad.org says Chabad Chassidim usually taste some food without a full bread meal. Ask the Rabbi what is right for your family.
+Eating bread is something the authorities are lenient about, and the Chabad custom is that Chassidim usually taste some food without a full bread meal. Ask the Rabbi what is right for your family.
 
 ### When do you eat the third meal?
 
@@ -69,7 +69,7 @@ In the late afternoon, between Mincha and Maariv. Ask the Rabbi for the best tim
 
 ### What do people eat at the third meal?
 
-Many families keep it simple. Chabad.org says Chabad Chassidim usually taste just a little food. Ask the Rabbi what is right for your family.
+Many families keep it simple. Chabad custom is that Chassidim usually taste just a little food. Ask the Rabbi what is right for your family.
 
 ### What do you do after the third meal?
 

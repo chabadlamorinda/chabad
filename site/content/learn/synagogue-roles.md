@@ -9,11 +9,11 @@ In a synagogue, the rabbi teaches and guides the community, the gabbai (גבאי
 
 ## The rabbi: teacher and guide
 
-Chabad.org describes the rabbi as the congregation's spiritual guide, who often gives sermons and classes. The rebbetzin, the rabbi's wife, also has a leadership role in the community. A rabbi is not a priest and does not stand between you and G-d. He is a teacher who answers questions about Jewish law and life, and he is the one to ask about case-by-case questions. See [What Is a Rabbi?](/learn/what-is-a-rabbi).
+The rabbi is the congregation's spiritual guide, who often gives sermons and classes. The rebbetzin, the rabbi's wife, also has a leadership role in the community. A rabbi is not a priest and does not stand between you and G-d. He is a teacher who answers questions about Jewish law and life, and he is the one to ask about case-by-case questions. See [What Is a Rabbi?](/learn/what-is-a-rabbi).
 
 ## The gabbai: the one who runs the service
 
-The word gabbai is often translated as "warden." Chabad.org says the gabbai helps organize and run the synagogue. In practice, in many synagogues he:
+The word gabbai is often translated as "warden." The gabbai helps organize and run the synagogue. In practice, in many synagogues he:
 
 - Decides who is honored with each part of the Torah reading and calls them up by name.
 - Makes sure the service has what it needs: books, a Torah, a reader.
@@ -23,7 +23,7 @@ If you are not sure where to sit or what to do, he is a good person to ask. Gabb
 
 ## The chazzan or shliach tzibbur: the prayer leader
 
-The chazzan (also called the *shliach tzibbur*, שליח ציבור, "the community's messenger") leads the prayers aloud. Chabad.org says that in most Orthodox communities, the chazzan is a volunteer from the congregation, though some communities hire a professional cantor. He reads the opening and closing lines of prayers aloud, and some prayers are reserved for the chazzan when there is a minyan of ten: Barchu, Kaddish and the repetition of the Amidah. Under Jewish law, a man past bar mitzvah age leads, and the congregation answers "Amen." Read [Leading the Prayers](/learn/leading-the-prayers) for more, and [minyan](/learn/minyan).
+The chazzan (also called the *shliach tzibbur*, שליח ציבור, "the community's messenger") leads the prayers aloud. In most Orthodox communities, the chazzan is a volunteer from the congregation, though some communities hire a professional cantor. He reads the opening and closing lines of prayers aloud, and some prayers are reserved for the chazzan when there is a minyan of ten: Barchu, Kaddish and the repetition of the Amidah. Under Jewish law, a man past bar mitzvah age leads, and the congregation answers "Amen." Read [Leading the Prayers](/learn/leading-the-prayers) for more, and [minyan](/learn/minyan).
 
 ## The baal koreh: the Torah reader
 
@@ -39,7 +39,7 @@ The baal koreh (בעל קורא, "master of reading") reads the weekly portion f
 
 ## If you are given an honor
 
-If a gabbai offers you an honor, you may accept or politely decline. Nobody expects a newcomer to know everything. Tell him or the Rabbi that it is your first time, and he will tell you where to stand and what to say. Chabad.org suggests that a shy newcomer simply tell the rabbi or a congregant it is their first visit. For a Hebrew name and the blessings, ask for a transliterated card. Read [first time at a synagogue](/learn/first-time-at-synagogue) and [what is a synagogue](/learn/what-is-a-synagogue). In Lafayette, Moraga and Orinda, call 925-384-7242 to hear what services are planned and to ask any question first.
+If a gabbai offers you an honor, you may accept or politely decline. Nobody expects a newcomer to know everything. Tell him or the Rabbi that it is your first time, and he will tell you where to stand and what to say. A shy newcomer can simply tell the rabbi or a congregant it is their first visit. For a Hebrew name and the blessings, ask for a transliterated card. Read [first time at a synagogue](/learn/first-time-at-synagogue) and [what is a synagogue](/learn/what-is-a-synagogue). In Lafayette, Moraga and Orinda, call 925-384-7242 to hear what services are planned and to ask any question first.
 
 ## Common questions
 

@@ -19,7 +19,7 @@ According to Jewish tradition, Jethro had tried every belief and idol of his tim
 
 Then came the news of the Exodus from Egypt: the plagues, the splitting of the sea, the defeat of Amalek. Jethro heard it and said, "Now I know that G-d is greater than all other gods" (Exodus 18:11). He gave up his position and comforts, and he travelled into the desert with Moses' wife and sons to join the Jewish people and study Torah.
 
-Chabad.org's teachers contrast him with Amalek. Amalek saw the same miracles and stayed stubbornly cold. Jethro saw the same evidence and let it change his life, even at great cost. That is why our Sages say we honor his name.
+Chassidic teachers contrast him with Amalek. Amalek saw the same miracles and stayed stubbornly cold. Jethro saw the same evidence and let it change his life, even at great cost. That is why our Sages say we honor his name.
 
 ## The advice that helped Moses
 
@@ -33,7 +33,7 @@ His plan was simple:
 
 Moses listened and did it. Many see this as the beginning of the Jewish court system. Every busy parent, business owner and volunteer in Lafayette, Moraga and Orinda can learn from it: sharing the load is not weakness. It helps everyone.
 
-The teachers of Chabad.org also ask why the idea came from Jethro and not from Moses. Among the answers: Moses wanted to teach Torah at its highest level, while Jethro saw the need for simple, practical teaching that reaches everyday life. Both are needed.
+Chassidic teachers also ask why the idea came from Jethro and not from Moses. Among the answers: Moses wanted to teach Torah at its highest level, while Jethro saw the need for simple, practical teaching that reaches everyday life. Both are needed.
 
 ## Why is the portion named for Jethro?
 

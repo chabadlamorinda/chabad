@@ -9,20 +9,20 @@ Many Jewish brides and grooms fast on their wedding day because it is considered
 
 ## Why do bride and groom fast?
 
-Chabad.org says the wedding-day fast is not mentioned in the Talmud, but it is an ancient tradition, and it applies to a first marriage and to a remarriage. It has two reasons:
+Jewish tradition says the wedding-day fast is not mentioned in the Talmud, but it is an ancient tradition, and it applies to a first marriage and to a remarriage. It has two reasons:
 
 1. **Forgiveness and a fresh start.** Tradition teaches that a bride and groom are forgiven for their past on their wedding day. So the day becomes a time of self-reflection, like Yom Kippur. The fast and the confessions (*vidui* and *al chet*) said in the day's prayers all express this. See [Yom Kippur](/holidays/yom-kippur) and [Teshuvah](/learn/teshuvah) to understand the idea of returning and starting over.
 2. **No drinking before the wedding.** The Sages wanted to prevent drinking before the ceremony, when relatives toast the couple's future.
 
 ## When does the fast begin and end?
 
-The fast begins at daybreak. Unlike Yom Kippur, it does not run until nightfall. Chabad.org says it ends after the chuppah, and the couple eats their first meal in the yichud room (see [Yichud](/learn/yichud)). Another Chabad.org article describes it as lasting until the couple sip wine under the chuppah. Since this small detail differs, ask the Rabbi when you may eat or drink.
+The fast begins at daybreak. Unlike Yom Kippur, it does not run until nightfall. Chassidic teaching says it ends after the chuppah, and the couple eats their first meal in the yichud room (see [Yichud](/learn/yichud)). Another source describes it as lasting until the couple sip wine under the chuppah. Since this small detail differs, ask the Rabbi when you may eat or drink.
 
 If the chuppah is at midday, the fast does not need to be made up later. No vow is needed, because it is a personal custom, not a public fast day.
 
 ## What else is special about the day?
 
-Chabad.org lists customs for the day:
+The tradition lists customs for the day:
 
 - **Prayer.** If the couple is fasting, they add the *Aneinu* prayer to the Amidah. At the end of the Amidah they say the Yom Kippur confession, even if they are not fasting. They are encouraged to say Psalms (Tehillim) during the day.
 - **The Torah.** If the Torah is read at synagogue that day, the groom receives an aliyah.
@@ -31,13 +31,13 @@ Chabad.org lists customs for the day:
 
 ## When do couples not fast?
 
-According to the Talmud, as Chabad.org reports, the wedding fast is not kept on these joyful days: Rosh Chodesh (except Rosh Chodesh Nissan), the day after the final days of Passover, Shavuot and Sukkot, Chanukah, Purim and Shushan Purim, the 15th of Av and the 15th of Shevat. On those days one also avoids overeating and intoxicating drinks. The couple does fast on Lag BaOmer, the days between Yom Kippur and Sukkot, the days from Rosh Chodesh Sivan to Shavuot, and the days of Nissan.
+According to the Talmud, as Jewish tradition reports, the wedding fast is not kept on these joyful days: Rosh Chodesh (except Rosh Chodesh Nissan), the day after the final days of Passover, Shavuot and Sukkot, Chanukah, Purim and Shushan Purim, the 15th of Av and the 15th of Shevat. On those days one also avoids overeating and intoxicating drinks. The couple does fast on Lag BaOmer, the days between Yom Kippur and Sukkot, the days from Rosh Chodesh Sivan to Shavuot, and the days of Nissan.
 
 Dates are worked out by the calendar: check [Jewish holidays](/jewish-holidays) and [choosing a wedding date](/learn/choosing-a-wedding-date), and ask the Rabbi.
 
 ## Health and exceptions
 
-If the chuppah is delayed until after nightfall and fasting becomes hard, the couple may eat, but they should not drink intoxicating drinks. If the fast becomes too hard during the day, Chabad.org says they should stop rather than come to the chuppah ill. If you have a medical condition, speak privately with the Rabbi and your doctor.
+If the chuppah is delayed until after nightfall and fasting becomes hard, the couple may eat, but they should not drink intoxicating drinks. If the fast becomes too hard during the day, Chassidic teaching says they should stop rather than come to the chuppah ill. If you have a medical condition, speak privately with the Rabbi and your doctor.
 
 ## Common questions
 

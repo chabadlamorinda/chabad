@@ -5,7 +5,7 @@ category: Shabbat & holidays
 related: latkes, chanukah-foods, jewish-health-and-body, vegan-chanukah-recipes, sufganiyot
 local: Cooking for a family with different needs? Call Rabbi Labkowski at 925-384-7242 for kosher questions, or join us at /events.
 ---
-You can make Chanukah latkes in the oven instead of the frying pan, with just a little oil, and still keep the custom of eating oily foods. Chabad.org offers baked, no-fry and gluten-free latke recipes, and the idea is simple: keep the holiday, change the method.
+You can make Chanukah latkes in the oven instead of the frying pan, with just a little oil, and still keep the custom of eating oily foods. There are baked, no-fry and gluten-free latke recipes, and the idea is simple: keep the holiday, change the method.
 
 ## Does a healthier latke still count?
 
@@ -13,7 +13,7 @@ The custom of eating oily foods is at least a thousand years old and recalls the
 
 ## Baked potato latkes
 
-The baked latke recipe on Chabad.org, which is pareve, is retold here:
+A baked latke recipe, which is pareve, is retold here:
 
 1. Heat the oven to 450°F and brush two baking sheets with a little oil.
 2. Grate about 2 pounds of peeled russet potatoes and mix with about three-quarters of a cup of chopped red onion, a quarter cup of flour, salt and pepper.
@@ -21,25 +21,25 @@ The baked latke recipe on Chabad.org, which is pareve, is retold here:
 4. Drop by the tablespoon onto the sheets and flatten slightly.
 5. Bake about 10 minutes, flip, and bake about 5 more until golden.
 
-It makes about two dozen. Chabad.org says you can make them a day ahead, refrigerate, and reheat at 350°F. A tip: add back the starch that settles at the bottom of the bowl, which helps them hold together.
+It makes about two dozen. Jewish tradition says you can make them a day ahead, refrigerate, and reheat at 350°F. A tip: add back the starch that settles at the bottom of the bowl, which helps them hold together.
 
 ## No-fry latkes
 
-Another Chabad.org recipe, also pareve, replaces the flour with toasted wheat germ: shredded russet potatoes, finely chopped onion, wheat germ, two eggs, salt and pepper, and oil spray. Scoop quarter-cup portions onto greased sheets at 425°F and bake about 15 minutes, flip, then another 10 or so.
+Another recipe, also pareve, replaces the flour with toasted wheat germ: shredded russet potatoes, finely chopped onion, wheat germ, two eggs, salt and pepper, and oil spray. Scoop quarter-cup portions onto greased sheets at 425°F and bake about 15 minutes, flip, then another 10 or so.
 
 ## Gluten-free zucchini latkes
 
-Chabad.org's gluten-free zucchini latkes use arrowroot flour as the binder, with grated zucchini, onion, an egg, Parmesan and thyme. Since they have cheese and are served with sour cream, they are dairy, so they fit a dairy night. Squeeze the zucchini well, shape thin patties, handle them gently, fry in a little oil, and serve with sour cream. They can be frozen in a single layer. If you or a guest must avoid gluten for health reasons, check every packaged ingredient, and ask your doctor.
+Gluten-free zucchini latkes use arrowroot flour as the binder, with grated zucchini, onion, an egg, Parmesan and thyme. Since they have cheese and are served with sour cream, they are dairy, so they fit a dairy night. Squeeze the zucchini well, shape thin patties, handle them gently, fry in a little oil, and serve with sour cream. They can be frozen in a single layer. If you or a guest must avoid gluten for health reasons, check every packaged ingredient, and ask your doctor.
 
 ## What about an air fryer?
 
-Many home cooks use an air fryer for latkes. We do not have a Chabad.org recipe for it, so follow your machine's manual and a trusted recipe. If you keep kosher, an air fryer is kitchen equipment that touches food, so use it for meat or for dairy, not both, unless you ask the Rabbi first. See [kosher kitchen](/learn/kosher-kitchen).
+Many home cooks use an air fryer for latkes. We do not have a tested recipe for it, so follow your machine's manual and a trusted recipe. If you keep kosher, an air fryer is kitchen equipment that touches food, so use it for meat or for dairy, not both, unless you ask the Rabbi first. See [kosher kitchen](/learn/kosher-kitchen).
 
 ## Other lighter ideas
 
 - Serve latkes with applesauce, or plain yogurt for a dairy meal.
 - Add a large salad and roasted vegetables.
-- Bake sweet potato or carrot latkes. Chabad.org lists many vegetable latkes, like carrot-parsnip, sweet potato and zucchini.
+- Bake sweet potato or carrot latkes. Many vegetable latkes work, like carrot-parsnip, sweet potato and zucchini.
 - Serve fruit for dessert next to a single doughnut.
 
 ## Keep the kitchen kosher
@@ -49,7 +49,7 @@ Check packaged ingredients for a kosher symbol ([kosher symbols](/learn/kosher-s
 ## Common questions
 
 ### Can I bake latkes instead of frying them?
-Yes. Chabad.org has a baked potato latke recipe that uses just a few teaspoons of oil, and a no-fry version with wheat germ.
+Yes. There is a baked potato latke recipe that uses just a few teaspoons of oil, and a no-fry version with wheat germ.
 
 ### Do I have to fry in oil to keep the custom?
 The custom is to eat foods made with oil. A baked latke includes a little oil, and many families fry on at least one night.
@@ -58,7 +58,7 @@ The custom is to eat foods made with oil. A baked latke includes a little oil, a
 Baked potato latkes made with potatoes, onion, eggs, flour and oil are pareve if every ingredient is kosher certified. Cheese or sour cream makes them dairy.
 
 ### How do I make gluten-free latkes?
-Chabad.org suggests arrowroot flour as the binder for zucchini latkes. For health needs, ask your doctor and read every label.
+The tradition suggests arrowroot flour as the binder for zucchini latkes. For health needs, ask your doctor and read every label.
 
 ### Can I make healthier latkes ahead of time?
 Yes. Bake and refrigerate overnight, or freeze in a single layer, then reheat in the oven.

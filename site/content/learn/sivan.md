@@ -9,11 +9,11 @@ Sivan (סִיוָן) is the third month of the Jewish calendar, falling in May o
 
 ## What does Sivan mean?
 
-Sivan is the third month counting from Nissan. Chabad.org explains that its name, like the other Hebrew month names we use today, was adopted during the Babylonian exile, and that it means "fixed date" or "time." It alludes to Mount Sinai and to the miracles that took place there. You can read how the months work in [the Jewish calendar](/learn/jewish-calendar) and [Nissan](/learn/nissan) and [Iyar](/learn/iyar), the months before it.
+Sivan is the third month counting from Nissan. Jewish tradition explains that its name, like the other Hebrew month names we use today, was adopted during the Babylonian exile, and that it means "fixed date" or "time." It alludes to Mount Sinai and to the miracles that took place there. You can read how the months work in [the Jewish calendar](/learn/jewish-calendar) and [Nissan](/learn/nissan) and [Iyar](/learn/iyar), the months before it.
 
 ## Rosh Chodesh Sivan: arriving at Sinai
 
-On the first day of Sivan, the Jewish people arrived at Mount Sinai and camped there. The Torah uses a singular verb, "vayichan," and the Sages teach that this means "they camped as one person with one heart." That is the lesson of the month: the Torah was given to a people who stood together. Unity came first, and then the Torah. Chabad.org notes this is why Sivan is a good time to work on love and peace between people.
+On the first day of Sivan, the Jewish people arrived at Mount Sinai and camped there. The Torah uses a singular verb, "vayichan," and the Sages teach that this means "they camped as one person with one heart." That is the lesson of the month: the Torah was given to a people who stood together. Unity came first, and then the Torah. Chassidic teaching notes this is why Sivan is a good time to work on love and peace between people.
 
 ## The days before Shavuot
 
@@ -27,7 +27,7 @@ The Torah was given to all Jews, men, women and children, at the same time. That
 
 ## Another day in Sivan
 
-The Baal Shem Tov, the founder of the Chassidic movement, passed away on the 6th of Sivan, the day of Shavuot, in 1760, according to Chabad.org.
+The Baal Shem Tov, the founder of the Chassidic movement, passed away on the 6th of Sivan, the day of Shavuot, in 1760, according to Jewish tradition.
 
 ## How to use the month
 

@@ -11,23 +11,23 @@ Jewish burial is one of the most important mitzvot in Judaism: the body is retur
 
 ## Burial is a commandment, not only a custom
 
-The Torah commands burial, and Chabad.org points to the verse in Deuteronomy (21:23) as the source for burying promptly, on the day of death. Burial is treated as a command for the whole body: it is not done in part, and nothing replaces laying the body in the earth. For more on timing, see [why Jews bury quickly](/learn/why-jews-bury-quickly).
+The Torah commands burial, and Jewish tradition points to the verse in Deuteronomy (21:23) as the source for burying promptly, on the day of death. Burial is treated as a command for the whole body: it is not done in part, and nothing replaces laying the body in the earth. For more on timing, see [why Jews bury quickly](/learn/why-jews-bury-quickly).
 
 ## The body is precious
 
-Chabad.org explains that the body is a gift on loan from G-d, so it is returned whole, as it was given. It was also the vessel through which a person did mitzvot, and that gives it lasting value, like a holy object that is buried with respect when it can no longer be used. This is why Jewish law is careful about anything that harms or alters the body after death. You can read more in [autopsy: the Jewish view](/learn/autopsy-jewish-view) and [embalming and viewing](/learn/embalming-and-viewing-jewish-view).
+Jewish law explains that the body is a gift on loan from G-d, so it is returned whole, as it was given. It was also the vessel through which a person did mitzvot, and that gives it lasting value, like a holy object that is buried with respect when it can no longer be used. This is why Jewish law is careful about anything that harms or alters the body after death. You can read more in [autopsy: the Jewish view](/learn/autopsy-jewish-view) and [embalming and viewing](/learn/embalming-and-viewing-jewish-view).
 
 ## Back to the earth, and the hope of resurrection
 
-"For dust you are, and to dust you shall return." Chabad.org explains that the body was formed from the earth and returns to it, while the soul returns to its Source above. Judaism also believes that body and soul will be reunited in the time of the resurrection of the dead, and a proper burial expresses that faith. See [the resurrection of the dead](/learn/resurrection-of-the-dead) and [the soul](/learn/the-soul).
+"For dust you are, and to dust you shall return." The body was formed from the earth and returns to it, while the soul returns to its Source above. Judaism also believes that body and soul will be reunited in the time of the resurrection of the dead, and a proper burial expresses that faith. See [the resurrection of the dead](/learn/resurrection-of-the-dead) and [the soul](/learn/the-soul).
 
 ## A kindness that can never be repaid
 
-Burial is called a *chesed shel emet*, a "true kindness," because the one who receives it can never thank you. The Torah's attitude to this is striking. Chabad.org notes that even the High Priest, who is normally forbidden to come near the dead, must bury a Jew who has no one else to bury him. This is called a *met mitzvah*. Everyone who helps, by guarding, preparing, carrying or filling the grave, takes part in that kindness. See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
+Burial is called a *chesed shel emet*, a "true kindness," because the one who receives it can never thank you. The Torah's attitude to this is striking. Jewish tradition notes that even the High Priest, who is normally forbidden to come near the dead, must bury a Jew who has no one else to bury him. This is called a *met mitzvah*. Everyone who helps, by guarding, preparing, carrying or filling the grave, takes part in that kindness. See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
 
 ## If cremation was requested or has happened
 
-Chabad.org is clear that Jewish law requires burial in the earth and does not permit cremation, and it also speaks with compassion. People who were raised without a Jewish education are not held fully responsible for their choices, and Kaddish is still said for a loved one who was cremated, with tzedakah and good deeds in their memory. If your loved one asked for cremation, or this question is weighing on you, please talk to the Rabbi privately and without fear of judgment. Read [cremation: the Jewish view](/learn/cremation-jewish-view).
+Jewish law is clear that it requires burial in the earth and does not permit cremation, and it also speaks with compassion. People who were raised without a Jewish education are not held fully responsible for their choices, and Kaddish is still said for a loved one who was cremated, with tzedakah and good deeds in their memory. If your loved one asked for cremation, or this question is weighing on you, please talk to the Rabbi privately and without fear of judgment. Read [cremation: the Jewish view](/learn/cremation-jewish-view).
 
 ## Common questions
 
@@ -41,7 +41,7 @@ Yes. Every Jew is entitled to a Jewish burial, and the community has a duty to p
 
 ### Why does Judaism say to bury in the ground and not cremate?
 
-Chabad.org explains that the body must return to the earth whole, as the Torah says, and that the body belongs to G-d and holds lasting value. Cremation is therefore not permitted. Speak to the Rabbi if your family faces this question.
+The tradition explains that the body must return to the earth whole, as the Torah says, and that the body belongs to G-d and holds lasting value. Cremation is therefore not permitted. Speak to the Rabbi if your family faces this question.
 
 ### Can a Jewish burial be arranged if we cannot afford it?
 

@@ -13,11 +13,11 @@ For families in Lafayette, Moraga and Orinda, they are the Jewish year's great a
 
 *Regel* (רֶגֶל) means "foot" or "leg," and *regalim* is its plural. The Torah (Exodus 23:14) says, "Three times a year you shall celebrate for Me." The name stuck because most Jews walked to Jerusalem on these days.
 
-Chabad.org explains the commandment this way: we travel to Jerusalem three times a year, we rejoice at the Temple, and we do not come empty-handed. Those who came brought an offering. Read about [the Holy Temple](/learn/the-holy-temple).
+Jewish tradition explains the commandment this way: we travel to Jerusalem three times a year, we rejoice at the Temple, and we do not come empty-handed. Those who came brought an offering. Read about [the Holy Temple](/learn/the-holy-temple).
 
 ## The three festivals in one map
 
-Chabad.org points out that each festival lines up with both the farming year and a spiritual story:
+Jewish tradition points out that each festival lines up with both the farming year and a spiritual story:
 
 - **Passover (Pesach), spring.** The wheat is ripening but not yet ready. It celebrates the Exodus from Egypt and the freedom that began a journey. See [Passover for beginners](/learn/passover-for-beginners).
 - **Shavuot, the grain harvest.** It marks the giving of the Torah at Mount Sinai. The Torah is received, and now we must absorb it. See [Shavuot for beginners](/learn/shavuot-for-beginners).
@@ -27,7 +27,7 @@ Freedom, Torah, joy: first we leave Egypt, then we receive the Torah, then we br
 
 ## Nature and miracle together
 
-Chabad.org teaches that the natural world and miracles are not opposites. Nature itself expresses G-d's creative power. According to Kabbalah, the physical reflects the spiritual, so each festival celebrates both a material harvest and a spiritual one. That is why the holidays are tied to the seasons of the land.
+The tradition teaches that the natural world and miracles are not opposites. Nature itself expresses G-d's creative power. According to Kabbalah, the physical reflects the spiritual, so each festival celebrates both a material harvest and a spiritual one. That is why the holidays are tied to the seasons of the land.
 
 ## What was it like to go up to Jerusalem?
 

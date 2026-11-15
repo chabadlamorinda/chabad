@@ -9,7 +9,7 @@ In Jewish law, seven relatives sit shiva: a father, a mother, a husband or wife,
 
 ## The seven mourners
 
-The list comes from the Torah (Leviticus 21:1 to 3) and is explained on Chabad.org. You mourn formally for:
+The list comes from the Torah (Leviticus 21:1 to 3) and is explained in Jewish law. You mourn formally for:
 
 1. Your father
 2. Your mother
@@ -29,7 +29,7 @@ Half-brothers and half-sisters, whether through the father or the mother, are in
 
 **Stepparents and stepchildren.** They are not in the list of seven. Many people loved a stepparent as a parent, and the feeling of loss is real. Please ask the Rabbi what is appropriate for you, since there are customs of respect and sometimes of Kaddish. See [blended families](/learn/blended-families).
 
-**Adopted relatives.** According to Chabad.org there is no formal obligation to mourn adoptive parents, siblings or children, but "sympathetic mourning," refraining from public rejoicing, is recommended. Ask the Rabbi about your situation.
+**Adopted relatives.** According to Jewish law there is no formal obligation to mourn adoptive parents, siblings or children, but "sympathetic mourning," refraining from public rejoicing, is recommended. Ask the Rabbi about your situation.
 
 ## Children and minors
 
@@ -37,7 +37,7 @@ Boys under 13 and girls under 12 are not obligated in shiva or other mourning cu
 
 ## Who says Kaddish?
 
-[Kaddish](/learn/kaddish) is traditionally said by those who are mourners under Jewish law, and by others who volunteer to say it in someone's memory. Customs differ, especially for women, for stepchildren and for adoptive children. Ask the Rabbi. For a convert mourning non-Jewish parents, Chabad.org advises that Kaddish may be said if desired, but that a Psalm or learning Torah in their honor is preferable.
+[Kaddish](/learn/kaddish) is traditionally said by those who are mourners under Jewish law, and by others who volunteer to say it in someone's memory. Customs differ, especially for women, for stepchildren and for adoptive children. Ask the Rabbi. For a convert mourning non-Jewish parents, Jewish tradition advises that Kaddish may be said if desired, but that a Psalm or learning Torah in their honor is preferable.
 
 ## The outer circle of support
 
@@ -49,7 +49,7 @@ You do not have to be one of the seven to matter. Friends, neighbors and colleag
 No, grandchildren are not among the seven relatives who sit shiva. They are welcome to visit, learn Torah or say Psalms in memory of the grandparent, and to ask the Rabbi about any added custom.
 
 ### Do you sit shiva for a half sibling?
-Yes. Chabad.org states that half-brothers and half-sisters are included among those for whom one mourns.
+Yes. Jewish law states that half-brothers and half-sisters are included among those for whom one mourns.
 
 ### Do you sit shiva for a stepparent?
 A stepparent is not among the seven relatives, but many people observe some mourning customs out of respect. Ask the Rabbi what is right in your case.

@@ -11,9 +11,9 @@ If you are expecting in Lafayette, Moraga or Orinda, you may be hearing differen
 
 ## The Ashkenazi custom: honor those who have passed
 
-Chabad.org explains that Ashkenazi Jews generally do not name a child after someone who is alive. Two reasons are given. Naming after a living person could appear to be waiting for that person to pass away. And out of respect for parents, children do not use their parents' given names. There is also a positive side: a child who carries a name of a loved one who has passed keeps their memory alive, and many families feel the baby brings a bit of that person's spirit and good qualities into the world.
+Jewish custom is that Ashkenazi Jews generally do not name a child after someone who is alive. Two reasons are given. Naming after a living person could appear to be waiting for that person to pass away. And out of respect for parents, children do not use their parents' given names. There is also a positive side: a child who carries a name of a loved one who has passed keeps their memory alive, and many families feel the baby brings a bit of that person's spirit and good qualities into the world.
 
-Chabad.org notes that Ashkenazim also tend to avoid naming after a deceased person if a close living relative already has that name.
+Ashkenazim also tend to avoid naming after a deceased person if a close living relative already has that name.
 
 ## The Sephardi custom: honor the living
 
@@ -21,7 +21,7 @@ Sephardi families do name babies after living relatives, often the grandparents,
 
 ## Exceptions that Ashkenazi sources mention
 
-Chabad.org describes several allowances. Because these depend on the case, they are for the Rabbi to decide with you:
+There are several allowances. Because these depend on the case, they are for the Rabbi to decide with you:
 
 - **A relative with two names.** Some authorities allow a baby to be named after a deceased person who had only one of the names of a living relative.
 - **A living righteous person or Torah scholar.** A child may be named after such a person.
@@ -43,7 +43,7 @@ The Hebrew name is the name of the soul. A boy receives his name at the [bris](/
 Ashkenazi custom is not to, while Sephardi custom is to do so as an honor. There are exceptions, so ask the Rabbi about your family.
 
 ### Why don't Ashkenazi Jews name after living relatives?
-Chabad.org gives two reasons: it could seem like waiting for the person to die, and children show respect by not using their parents' given names.
+There are two reasons: it could seem like waiting for the person to die, and children show respect by not using their parents' given names.
 
 ### Can a baby be named after a grandparent who passed away?
 Yes. This is the most common Ashkenazi custom, and it keeps the grandparent's memory alive.

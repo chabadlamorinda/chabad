@@ -9,7 +9,7 @@ Learning Hebrew in Lafayette, Moraga and Orinda starts with one question: do you
 
 ## Two kinds of Hebrew learning
 
-Hebrew is called *lashon hakodesh* (לשון הקודש), the "Holy Tongue." Chabad.org describes it as the language of the Bible, the language Jews have prayed, studied and written in for thousands of years. Tradition teaches that its 22 letters hold deep secrets of creation. You can read more in [Lashon Hakodesh](/learn/lashon-hakodesh).
+Hebrew is called *lashon hakodesh* (לשון הקודש), the "Holy Tongue." Jewish tradition describes it as the language of the Bible, the language Jews have prayed, studied and written in for thousands of years. Tradition teaches that its 22 letters hold deep secrets of creation. You can read more in [Lashon Hakodesh](/learn/lashon-hakodesh).
 
 Most people who search for "Hebrew lessons near me" mean one of two goals:
 
@@ -32,7 +32,7 @@ Families who want Hebrew to be part of daily life may also like [raising Hebrew-
 
 It is never too late. Many adults first learn to read Hebrew in their thirties, fifties or later, and a few steady weeks can bring the letters into focus. [Learning to Read Hebrew as an Adult](/learn/hebrew-reading-for-adults) walks through the steps, and the [Hebrew alphabet](/learn/hebrew-alphabet) guide covers the 22 letters.
 
-Chabad.org has a free interactive Aleph-Bet Trainer where you click each letter and hear its name, a good way to practice at home between lessons.
+A free interactive Aleph-Bet Trainer online lets you click each letter and hear its name, a good way to practice at home between lessons.
 
 In Lamorinda, the adult Torah classes include a Tuesday evening class in Hebrew, with a meal, and the Rabbi can set up one-on-one study with a study partner. See [Torah classes in Lamorinda](/learn/torah-classes-in-lamorinda) and [Torah Classes for Adults](/programs/adult-education). Please call 925-384-7242 to ask about adult Hebrew-reading lessons; the Rabbi can tell you what fits your level and schedule.
 
@@ -68,4 +68,4 @@ Yes. Lamorinda Hebrew School, Sundays 10:00 AM to 12:00 PM, includes Hebrew read
 No. Every Jew is welcome, and no membership is required.
 
 ### Is there free practice online?
-Chabad.org offers an interactive Aleph-Bet Trainer, where you click each letter to hear its name.
+Yes. A free online Aleph-Bet Trainer lets you click each letter to hear its name.

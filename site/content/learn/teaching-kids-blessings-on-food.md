@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: blessings, blessings-after-food, teaching-children-to-pray, first-mitzvot-for-young-children, birkat-hamazon
 local: Want a blessings card for your child's lunchbox or fridge? Call Rabbi Labkowski at 925-384-7242.
 ---
-Children can learn which blessing to say before eating by sorting food into six simple groups: bread, grain foods, grape juice, fruit from trees, food from the ground, and everything else. Chabad.org teaches that around age three a child begins to say blessings over food, and a simple start is the best one.
+Children can learn which blessing to say before eating by sorting food into six simple groups: bread, grain foods, grape juice, fruit from trees, food from the ground, and everything else. Jewish tradition teaches that around age three a child begins to say blessings over food, and a simple start is the best one.
 
 ## Why teach kids blessings?
 
@@ -64,7 +64,7 @@ If the food is still there, say the blessing now and keep eating. Gently remind 
 Yes, water is *shehakol*. If someone drinks only to swallow a pill, no blessing is said.
 
 ### What age should a child start saying blessings?
-According to Chabad.org, around age three. Many families start earlier with a simple "Amen."
+Around age three. Many families start earlier with a simple "Amen."
 
 ## Take the next step
 

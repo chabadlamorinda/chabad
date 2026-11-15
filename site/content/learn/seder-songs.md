@@ -15,7 +15,7 @@ The Seder is meant to be lively, and a song is the easiest way to keep children 
 
 Dayenu appears in the Maggid section, where we tell the story. It asks how many levels of kindness G-d has given us, and then each stanza names one: bringing us out of Egypt, the plagues on the Egyptians, splitting the sea, providing for us in the desert, giving us Shabbat, bringing us to Mount Sinai, giving us the Torah, bringing us into the Land of Israel and building the Holy Temple. After each, we answer: it would have been enough.
 
-Does it really mean that any one of them would have been enough? Not exactly. Chabad.org teaches that the song is about gratitude: every step deserves its own thank you, and we do not take any kindness for granted. This is the Jewish idea of [hakarat hatov](/learn/hakarat-hatov), recognizing the good. Even just reaching Sinai united, "as one person with one heart," as Rashi explains, was a gift worth singing about. Teach children this: before asking for more, say thank you for what you have.
+Does it really mean that any one of them would have been enough? Not exactly. Jewish tradition teaches that the song is about gratitude: every step deserves its own thank you, and we do not take any kindness for granted. This is the Jewish idea of [hakarat hatov](/learn/hakarat-hatov), recognizing the good. Even just reaching Sinai united, "as one person with one heart," as Rashi explains, was a gift worth singing about. Teach children this: before asking for more, say thank you for what you have.
 
 ## Echad Mi Yodea: "Who knows one?"
 

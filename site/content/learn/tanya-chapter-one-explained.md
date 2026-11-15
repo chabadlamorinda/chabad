@@ -7,11 +7,11 @@ local: Want to read Chapter 1 with others? Join the Wednesday 1:00 PM Tanya clas
 ---
 Chapter 1 of the Tanya begins with a Talmud teaching: before a Jew is born, a heavenly oath is administered, "Be righteous and be not wicked." The chapter then asks what this means, describes the three types of people, and introduces the two souls.
 
-This guide walks through the chapter in short steps, as Chabad.org presents it, so you know what to expect when you read it yourself.
+This guide walks through the chapter in short steps, so you know what to expect when you read it yourself.
 
 ## Step 1: An oath before birth
 
-The chapter opens with a teaching from the Talmud (Niddah 30b). Before a person is born, an oath is administered: "Be righteous and be not wicked." The same oath tells the soul to regard itself as wicked, even if the whole world calls it righteous. Chabad.org adds that the soul descends to fulfil a specific mission.
+The chapter opens with a teaching from the Talmud (Niddah 30b). Before a person is born, an oath is administered: "Be righteous and be not wicked." The same oath tells the soul to regard itself as wicked, even if the whole world calls it righteous. Chassidic teaching adds that the soul descends to fulfil a specific mission.
 
 ## Step 2: The question
 
@@ -21,7 +21,7 @@ When you read this for the first time, stop here and notice the question. Learni
 
 ## Step 3: Five kinds of people
 
-The chapter brings in a Talmud passage (Berachot 7a) that lists five categories: the complete tzaddik, the incomplete tzaddik, the rasha who prospers, the rasha who suffers, and the beinoni, the intermediate. It then explains that a beinoni is not simply "half good, half bad." Chabad.org notes that the Talmud's "half and half" is a legal way of describing how a person is judged. See [the beinoni](/learn/the-beinoni) and the [glossary](/learn/tanya-glossary-for-beginners).
+The chapter brings in a Talmud passage (Berachot 7a) that lists five categories: the complete tzaddik, the incomplete tzaddik, the rasha who prospers, the rasha who suffers, and the beinoni, the intermediate. It then explains that a beinoni is not simply "half good, half bad." The Talmud's "half and half" is a legal way of describing how a person is judged. See [the beinoni](/learn/the-beinoni) and the [glossary](/learn/tanya-glossary-for-beginners).
 
 ## Step 4: Two souls
 

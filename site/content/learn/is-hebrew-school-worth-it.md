@@ -19,7 +19,7 @@ Parents often ask whether one more commitment is worth it. Here is what children
 
 ## What Chabad teaches about educating children
 
-In Jewish tradition, parents have a duty called *chinuch* (חִנּוּךְ), "education": to train children in mitzvot as soon as they are able, so that the habits of a Jewish life are already theirs when they become adults. Chabad.org explains that this begins very early, with simple things like blessings and the Shema around age three, and grows step by step. You can read more in our guide to [chinuch](/learn/chinuch).
+In Jewish tradition, parents have a duty called *chinuch* (חִנּוּךְ), "education": to train children in mitzvot as soon as they are able, so that the habits of a Jewish life are already theirs when they become adults. Chassidic teaching explains that this begins very early, with simple things like blessings and the Shema around age three, and grows step by step. You can read more in our guide to [chinuch](/learn/chinuch).
 
 The goal is not to force. It is to let a child taste Jewish life while they are young, so that later they choose it because it feels like their own. Hebrew school is one partner in that, along with the home.
 

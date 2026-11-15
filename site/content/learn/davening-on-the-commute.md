@@ -5,7 +5,7 @@ category: Lamorinda
 related: daily-prayers, tefillin, tefilat-haderech, mincha-and-maariv, shabbat-for-lamorinda-commuters
 local: Want to start the day with tefillin before the train? Call Rabbi Labkowski at 925-384-7242 to be shown how, or to hear about the morning minyan.
 ---
-Yes, you can pray on the way to work, but the best way is to pray before you leave home and use the commute for the parts that fit. Chabad.org teaches that if you are traveling in the morning, you should say the morning prayers before you leave, and that you may never pray the Amidah while driving.
+Yes, you can pray on the way to work, but the best way is to pray before you leave home and use the commute for the parts that fit. Jewish tradition teaches that if you are traveling in the morning, you should say the morning prayers before you leave, and that you may never pray the Amidah while driving.
 
 For people in Lafayette, Moraga and Orinda who ride BART or drive Highway 24 to San Francisco, Oakland or the Peninsula, that usually means a short morning routine, a pocket siddur, and a quiet minute of Mincha in the afternoon. No guilt: do what you can, and grow from there.
 
@@ -17,7 +17,7 @@ Putting on [tefillin](/learn/tefillin) is part of that morning routine, and it i
 
 ## Praying on BART or the train
 
-If you could not pray before leaving, you can pray on the way. A few simple rules from Chabad.org:
+If you could not pray before leaving, you can pray on the way. A few simple rules from Jewish law:
 
 - **Standing is better** for the Amidah, the central silent prayer. If standing is not practical, sitting is allowed. Try at least to stand for the bows and the three steps back, if you can.
 - **If you will arrive at your stop before the time for prayer ends**, it is better to wait and pray standing, in a quiet corner at the office or the platform.
@@ -33,7 +33,7 @@ The afternoon prayer, [Mincha](/learn/mincha-and-maariv), takes only a few minut
 
 ## The Traveler's Prayer
 
-[Tefilat Haderech](/learn/tefilat-haderech), the Traveler's Prayer, asks G-d for a safe trip. Chabad.org explains it is said for trips that go more than roughly 2.36 miles (3.8 km) beyond the limits of your city, and many also say it for shorter trips through dangerous areas. For an ordinary commute, ask the Rabbi whether you should say it, and when; the answer depends on your route. If you do say it, ideally you stop and stand, but on a bus or train, Chabad.org says it may be said seated if stopping is inconvenient or unsafe.
+[Tefilat Haderech](/learn/tefilat-haderech), the Traveler's Prayer, asks G-d for a safe trip. Chassidic teaching explains it is said for trips that go more than roughly 2.36 miles (3.8 km) beyond the limits of your city, and many also say it for shorter trips through dangerous areas. For an ordinary commute, ask the Rabbi whether you should say it, and when; the answer depends on your route. If you do say it, ideally you stop and stand, but on a bus or train, the tradition says it may be said seated if stopping is inconvenient or unsafe.
 
 ## Make it doable
 
@@ -56,7 +56,7 @@ Standing is preferred, and sitting is allowed if standing is not practical. If y
 
 ### Can I pray the Amidah while driving?
 
-No. Chabad.org teaches that the Amidah may not be prayed while driving under any circumstances. Pray before you leave or after you park.
+No. Jewish tradition teaches that the Amidah may not be prayed while driving under any circumstances. Pray before you leave or after you park.
 
 ### Where can I put on tefillin in the morning near Lafayette or Orinda?
 
@@ -68,7 +68,7 @@ Do what you can: the Shema and a few psalms still count, and the Amidah can be s
 
 ### Should I say the Traveler's Prayer for my commute?
 
-It depends on how far you go and where. Chabad.org gives a distance of about 2.36 miles beyond the city limits, so ask the Rabbi about your particular route.
+It depends on how far you go and where. Chassidic teaching gives a distance of about 2.36 miles beyond the city limits, so ask the Rabbi about your particular route.
 
 ## Take the next step
 

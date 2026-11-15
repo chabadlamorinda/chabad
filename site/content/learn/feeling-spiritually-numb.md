@@ -11,7 +11,7 @@ If prayer feels empty or nothing moves you, you are not broken. Tanya describes 
 
 ## What Tanya describes
 
-According to Chabad.org's presentation of Chapter 29, a person who is trying to live rightly may find that his heart is, at times, as hard as stone. He cannot open it in prayer, which Tanya calls the "service of the heart." This dullness may also make it harder to hold back from permitted pleasures, such as eating whenever the urge comes.
+According to Chapter 29 of the Tanya, a person who is trying to live rightly may find that his heart is, at times, as hard as stone. He cannot open it in prayer, which Tanya calls the "service of the heart." This dullness may also make it harder to hold back from permitted pleasures, such as eating whenever the urge comes.
 
 The chapter gives the cause: the arrogance of the animal soul. It rises up and dims the light of the soul, so that even if he understands G-d's greatness with his mind, that understanding does not sink into his heart.
 

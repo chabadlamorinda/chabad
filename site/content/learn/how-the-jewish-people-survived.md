@@ -1,11 +1,11 @@
 ---
 title: How Have the Jewish People Survived? Torah, Family and Faith Across 3,000 Years
-description: How did the Jewish people survive? Chabad.org's answer: Torah study, teaching children and living its practices. Read what that means today.
+description: How did the Jewish people survive? The Chassidic answer: Torah study, teaching children and living its practices. Read what that means today.
 category: Jewish ideas
 related: is-judaism-a-religion-or-a-nation, jewish-history-overview, am-yisrael-chai, israel-and-the-jewish-people, jewish-pride
 local: Be part of the next chapter. Bring your family to a class or a Shabbat in Lafayette: call Rabbi Labkowski at 925-384-7242.
 ---
-Rabbi Yossy Goldman writes on Chabad.org that the one thing Jews have shared in every place and every era is the Torah, with its commandments and its way of life. Great empires rose and vanished, but the Jewish people, small and scattered, have kept their beliefs and practices alive. According to this Chabad teaching, survival comes from living Torah, not from sentiment.
+Rabbi Yossy Goldman writes that the one thing Jews have shared in every place and every era is the Torah, with its commandments and its way of life. Great empires rose and vanished, but the Jewish people, small and scattered, have kept their beliefs and practices alive. According to this Chabad teaching, survival comes from living Torah, not from sentiment.
 
 ## What the survival of the Jewish people looks like
 
@@ -36,13 +36,13 @@ Every Jewish family in Lafayette, Moraga and Orinda who lights Shabbat candles o
 ## Common questions
 
 ### How did the Jewish people survive for 3,000 years?
-Chabad.org's answer is that G-d preserves the Jewish people, and that the human key is Torah: studying it, teaching it to children and keeping its practices. Where communities dropped Torah, they were absorbed by assimilation.
+The traditional answer is that G-d preserves the Jewish people, and that the human key is Torah: studying it, teaching it to children and keeping its practices. Where communities dropped Torah, they were absorbed by assimilation.
 
 ### Is it a homeland or a language that kept the Jews together?
 Not primarily. Jews have spent longer outside the land of Israel than in it, and have spoken many different languages. The Torah is the one thing shared across all places and times.
 
 ### Why do Jews study Torah and teach it to children?
-Because this is how the Torah's way of life continues from generation to generation. Chabad.org says survival requires a concrete commitment to Torah study, teaching children and its practices.
+Because this is how the Torah's way of life continues from generation to generation. Jewish tradition says survival requires a concrete commitment to Torah study, teaching children and its practices.
 
 ### Does being born Jewish guarantee that Jewish life continues?
 No. A person is Jewish from birth, but Goldman says birth alone does not guarantee survival. The chain continues only when people live and pass on the Torah.

@@ -11,7 +11,7 @@ If this is your loss, you do not have to read this page now. Call or text Rabbi 
 
 ## You are allowed to grieve, and to be angry
 
-Chabad.org teaches that crying is needed, and sometimes anger is too. Judaism has never asked a bereaved parent to pretend. We mourn because we cherish life; grief is the measure of how much love there was. There is no schedule you must keep, and no "right" way to feel.
+Chassidic teaching teaches that crying is needed, and sometimes anger is too. Judaism has never asked a bereaved parent to pretend. We mourn because we cherish life; grief is the measure of how much love there was. There is no schedule you must keep, and no "right" way to feel.
 
 A well-known Midrash tells of Bruriah and Rabbi Meir, whose two sons died suddenly on a Shabbat. Bruriah gently compared them to a treasure lent to them that was now asked back. It is not offered as an explanation, only as one way a grieving mother found to hold her loss. Some parents find comfort in such words, and some are not ready for them. Both are fine.
 

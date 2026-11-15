@@ -7,7 +7,7 @@ local: Stuck on a Tanya word? Bring it to the Wednesday 1:00 PM Tanya class in L
 ---
 The Tanya's key words are mostly Hebrew terms for the soul and the inner struggle: beinoni (the ordinary person who strives), tzaddik (the righteous), nefesh habahamit (the animal soul), nefesh Elokit (the divine soul) and kelipah (a layer that conceals G-dliness). Knowing a few of them makes the first chapters much easier.
 
-Below are the words you will meet, in plain English, each as Chabad.org's Tanya pages explain it. Keep this page open while you learn. For the book itself, see [what the Tanya is](/learn/tanya) and [how to start learning Tanya](/learn/how-to-start-learning-tanya).
+Below are the words you will meet, in plain English, each as the Tanya and its classic explanations use it. Keep this page open while you learn. For the book itself, see [what the Tanya is](/learn/tanya) and [how to start learning Tanya](/learn/how-to-start-learning-tanya).
 
 ## The book and its parts
 

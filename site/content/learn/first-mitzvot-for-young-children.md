@@ -5,24 +5,24 @@ category: Life cycle
 related: chinuch, upsherin, modeh-ani, shabbat-candles, teaching-kids-blessings-on-food
 local: Raising young children in Lafayette, Moraga or Orinda and want a first step? Call 925-384-7242 or see /programs/jewish-preschool.
 ---
-The first mitzvot for young children are simple, daily and joyful: saying thank you to G-d in the morning with Modeh Ani, blessings before eating, the Shema at bedtime, putting a coin in the tzedakah box, and, around age three, a kippah and tzitzit for boys and Shabbat candles for girls. According to Chabad.org, a child can begin learning Torah as soon as he or she can speak.
+The first mitzvot for young children are simple, daily and joyful: saying thank you to G-d in the morning with Modeh Ani, blessings before eating, the Shema at bedtime, putting a coin in the tzedakah box, and, around age three, a kippah and tzitzit for boys and Shabbat candles for girls. According to Jewish tradition, a child can begin learning Torah as soon as he or she can speak.
 
 ## Why start so early?
 
-Jewish tradition calls this *chinuch* (חִנּוּךְ), education. Young children are not yet obligated in mitzvot, but parents train them step by step so that Jewish life feels natural and warm, not strange, when they grow up. Chabad.org teaches that the education of a child begins even before birth, with a home filled with good sights and sounds, and that when a child begins to speak, he or she should begin to learn verses of Torah. Our guide to [chinuch](/learn/chinuch) explains the idea more fully.
+Jewish tradition calls this *chinuch* (חִנּוּךְ), education. Young children are not yet obligated in mitzvot, but parents train them step by step so that Jewish life feels natural and warm, not strange, when they grow up. Chassidic teaching teaches that the education of a child begins even before birth, with a home filled with good sights and sounds, and that when a child begins to speak, he or she should begin to learn verses of Torah. Our guide to [chinuch](/learn/chinuch) explains the idea more fully.
 
 ## From the first words
 
 When a child starts talking, these small things are a beautiful beginning:
 
 - **Modeh Ani.** A short thank-you to G-d said right after waking up. Parents can say it with the child at the bedside every morning. See [Modeh Ani](/learn/modeh-ani).
-- **Torah verses and the Shema.** Chabad.org describes teaching verses such as "The Torah that Moses commanded us is the inheritance of the congregation of Jacob" (Deuteronomy 33:4) when speech begins. Young children also learn the Shema, and it is traditional to say it before sleep (see [the bedtime Shema](/learn/bedtime-shema)).
+- **Torah verses and the Shema.** The tradition describes teaching verses such as "The Torah that Moses commanded us is the inheritance of the congregation of Jacob" (Deuteronomy 33:4) when speech begins. Young children also learn the Shema, and it is traditional to say it before sleep (see [the bedtime Shema](/learn/bedtime-shema)).
 - **Amen.** Even a baby can learn to answer "Amen" after a blessing.
 - **A tzedakah box.** Give a child a coin to put in the box before Shabbat or a meal. Our guide [children, money and tzedakah](/learn/children-money-and-tzedakah) has ideas.
 
 ## Around age three
 
-Chabad.org explains that age three is a major milestone in a child's Jewish life:
+Jewish tradition explains that age three is a major milestone in a child's Jewish life:
 
 - **Blessings.** The child begins to say blessings before food (see [teaching kids the blessings on food](/learn/teaching-kids-blessings-on-food)), as well as the morning blessings and Grace After Meals, in simple form.
 - **Boys: kippah and tzitzit.** A boy begins to wear a [kippah](/learn/kippah) and [tzitzit](/learn/tzitzit). Many families mark this with an [upsherin](/learn/upsherin), the first haircut, when a boy turns three. Customs about the age vary between communities.
@@ -33,7 +33,7 @@ These are customs of training, not rigid tests. Every child is different, so ask
 
 ## Ages six to nine and on
 
-Chabad.org notes that the obligation to train children in all mitzvot grows from roughly ages six to nine, depending on the child, and that a child becomes fully obligated at Bar Mitzvah (13 for boys) or Bat Mitzvah (12 for girls). Until then, parents offer opportunities in age-appropriate ways, such as Kiddush on Friday night and Havdalah, helping on holiday preparations and visiting someone who is lonely. Fasting on Yom Kippur is introduced gradually; ask the Rabbi what is right for your child.
+Chassidic teaching notes that the obligation to train children in all mitzvot grows from roughly ages six to nine, depending on the child, and that a child becomes fully obligated at Bar Mitzvah (13 for boys) or Bat Mitzvah (12 for girls). Until then, parents offer opportunities in age-appropriate ways, such as Kiddush on Friday night and Havdalah, helping on holiday preparations and visiting someone who is lonely. Fasting on Yom Kippur is introduced gradually; ask the Rabbi what is right for your child.
 
 ## Tips for making it stick
 
@@ -49,7 +49,7 @@ Chabad.org notes that the obligation to train children in all mitzvot grows from
 A simple, joyful start is Modeh Ani in the morning, answering "Amen," and putting a coin in the tzedakah box. Chabad teaching adds the Shema and Torah verses as soon as a child can speak.
 
 ### At what age does a child start saying blessings?
-Chabad.org says that around age three children begin to say blessings over food and simple prayers. Many families begin even earlier with just the ending of the blessing.
+The tradition says that around age three children begin to say blessings over food and simple prayers. Many families begin even earlier with just the ending of the blessing.
 
 ### When do boys start wearing a kippah and tzitzit?
 Around age three, according to Chabad. Many families mark it with an upsherin. Ask the Rabbi for guidance specific to your child.

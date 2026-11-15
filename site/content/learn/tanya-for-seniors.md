@@ -9,7 +9,7 @@ It is never too late to begin the Tanya. Its message is that the inner struggle 
 
 ## Why the Tanya speaks to older readers
 
-The [Tanya](/learn/tanya), by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, teaches that each Jew has a G-dly soul, which Chapter 2 on Chabad.org calls "a part of G-d above." Nothing in that description depends on age, energy or health. See [the soul](/learn/the-soul).
+The [Tanya](/learn/tanya), by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, teaches that each Jew has a G-dly soul, which Chapter 2 calls "a part of G-d above." Nothing in that description depends on age, energy or health. See [the soul](/learn/the-soul).
 
 The Tanya's ordinary hero, [the beinoni](/learn/the-beinoni), is a person whose thought, speech and action are guided by the G-dly soul while the struggle inside goes on (Chapter 12). A person who looks back with regret is warmly invited onto this path, and [teshuvah](/learn/teshuvah) is always open.
 
@@ -25,10 +25,10 @@ In Chapter 37, the Tanya teaches that Torah study works through thought and spee
 
 ## Ways to begin
 
-Chabad.org offers several routes, which suit different needs.
+There are several free routes online, which suit different needs.
 
-- **Audio.** The daily Tanya page lists recorded classes, from about 3 to 23 minutes, with listen and download options, and podcasts. Chabad.org also has a "Five Minute Tanya" audio series and a Tanya Basics series of 53 audio classes that go through the book chapter by chapter.
-- **Reading.** The text is shown in English, Hebrew or both. Tanya in Plain English is an easy-to-read modern translation, and Chabad.org offers print options, including a PDF, so you can print at the size that is comfortable for you.
+- **Audio.** The daily Tanya page lists recorded classes, from about 3 to 23 minutes, with listen and download options, and podcasts. There is also a "Five Minute Tanya" audio series and a Tanya Basics series of 53 audio classes that go through the book chapter by chapter.
+- **Reading.** The text is shown in English, Hebrew or both. Tanya in Plain English is an easy-to-read modern translation, and there are print options, including a PDF, so you can print at the size that is comfortable for you.
 - **With family.** A grandchild can read a short portion aloud, or you can listen together. This is a suggestion, not a Tanya teaching.
 - **With a teacher.** Many people prefer to start with a person. Call the Rabbi at 925-384-7242.
 
@@ -43,10 +43,10 @@ No. The Tanya's message is that the struggle to choose well goes on at every age
 The Tanya does not focus on age. It teaches that the G-dly soul is "a part of G-d above" and that the effort to do good, in thought, speech and action, continues throughout life. See [aging with purpose](/learn/aging-with-purpose).
 
 ### Can I learn Tanya by listening instead of reading?
-Yes. Chabad.org has many audio classes, from a few minutes to over twenty minutes, and a "Five Minute Tanya" series. Call the Rabbi if you would like help finding a good one.
+Yes. There are many audio classes online, from a few minutes to over twenty minutes, and a "Five Minute Tanya" series. Call the Rabbi if you would like help finding a good one.
 
 ### What if I cannot read small print?
-Chabad.org offers print options, including a PDF, and audio classes. You can also listen and learn without reading at all. Ask the Rabbi if you would like help.
+There are print options, including a PDF, and audio classes. You can also listen and learn without reading at all. Ask the Rabbi if you would like help.
 
 ### What if I feel regret or low spirits about the past?
 The Tanya says teshuvah is always open and recommends joy over despair, and also that a person need not be crushed. If sadness is heavy, professional help is also right. See [teshuvah](/learn/teshuvah).

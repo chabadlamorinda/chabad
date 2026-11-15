@@ -9,7 +9,7 @@ The priestly garments (bigdei kehunah, בִּגְדֵי כְּהֻנָּה) were
 
 ## The four garments of every Kohen
 
-According to Chabad.org's summary, every ordinary priest wore these four garments:
+According to the sources, every ordinary priest wore these four garments:
 
 1. **Ketonet (כֻּתֹּנֶת), a tunic.** A long linen shirt reaching to the heels.
 2. **Avnet (אַבְנֵט), a sash.** A long sash wound over the heart, made of linen woven with wool in blue, purple and red.
@@ -28,13 +28,13 @@ The High Priest wore the four above, plus four more:
 
 ## The breastplate and its twelve stones
 
-On the breastplate were twelve precious stones in four rows of three, each engraved with the name of one of the twelve tribes. Chabad.org notes that the identity of the stones is uncertain, and more than thirty identifications have been suggested. The Sages link each stone to the character of its tribe. For example, Zebulun's white pearl hints at its trade, and Issachar's sapphire hints at its Torah study.
+On the breastplate were twelve precious stones in four rows of three, each engraved with the name of one of the twelve tribes. The identity of the stones is uncertain, and more than thirty identifications have been suggested. The Sages link each stone to the character of its tribe. For example, Zebulun's white pearl hints at its trade, and Issachar's sapphire hints at its Torah study.
 
 Within the folds, tradition says, was the Urim VeTumim, a parchment with G-d's sacred Name, through which G-d guided the people on weighty decisions. The Chassidic teachers draw two lessons: every person is unique, with his or her own "stone" and special qualities, and even something that looks lifeless can shine when used for holiness. The breastplate was the High Priest's way of carrying all Israel on his heart.
 
 ## The golden plate: "Holy to G-d"
 
-The tzitz was fastened with blue-dyed wool across the High Priest's forehead. The Sages say it brought forgiveness for impudence, called "hardness of the forehead." The Lubavitcher Rebbe's explanation, as Chabad.org presents it, is that the forehead is the seat of the will, which is above thought and feeling. True holiness starts when we bring our will to G-d.
+The tzitz was fastened with blue-dyed wool across the High Priest's forehead. The Sages say it brought forgiveness for impudence, called "hardness of the forehead." The Lubavitcher Rebbe's explanation is that the forehead is the seat of the will, which is above thought and feeling. True holiness starts when we bring our will to G-d.
 
 ## What clothes teach us
 

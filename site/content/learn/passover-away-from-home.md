@@ -11,7 +11,7 @@ If you travel for Passover, sell your chametz through a rabbi before you go, bri
 
 Chametz is leavened grain that a Jew may not own on Passover. See [chametz](/learn/chametz).
 
-Chabad.org advises:
+Here is some advice:
 
 - **Selling.** Sell all your chametz through a rabbi. If you stay in your own time zone, your local rabbi can handle it: use [the chametz sale form](/forms/sell-chametz) or read [selling your chametz](/learn/selling-your-chametz). If you cross time zones, ask your rabbi, since timing depends on where the owner is located.
 - **Coming home before Passover ends.** Clean and search for chametz the night before you leave; ask the Rabbi how to handle your home.

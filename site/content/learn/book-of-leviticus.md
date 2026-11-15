@@ -15,7 +15,7 @@ Jewish tradition holds that children traditionally begin their Torah learning wi
 
 ## What are the korbanot, the offerings?
 
-The book opens with the laws of the offerings, the korbanot (קָרְבָּנוֹת). According to Chabad.org's summary, five main types are described:
+The book opens with the laws of the offerings, the korbanot (קָרְבָּנוֹת). According to the Torah, five main types are described:
 
 - **Olah (עוֹלָה), the burnt offering,** burned entirely on the altar.
 - **Minchah (מִנְחָה), the grain offering,** flour with oil and frankincense. Part was burned, and the rest was eaten by the priests.
@@ -31,7 +31,7 @@ Since the destruction of the [Holy Temple](/learn/the-holy-temple), there are no
 
 ## What else is in Leviticus?
 
-According to the summary on Chabad.org, the book also covers:
+The book also covers:
 
 1. **The inauguration of the Mishkan.** For seven days Moses served as High Priest, and on the eighth day Aaron began. The same day, two of Aaron's sons died after bringing an offering that had not been commanded, and Aaron responded in silence.
 2. **Holiness and purity.** Which animals a holy people may eat (the laws of kashrut), and the laws of ritual purity and impurity.

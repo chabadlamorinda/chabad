@@ -18,13 +18,13 @@ The Tanya, written by Rabbi Shneur Zalman of Liadi, the Alter Rebbe, founder of 
 - **Epistle 27** was written to his Chassidim after the death of his mentor, Rabbi Menachem Mendel of Vitebsk.
 - **Epistle 28** was written to Rabbi Levi Yitzchak of Berditchev after the death of his son, Rabbi Meir.
 
-We tell what Chabad.org's pages say, in our own words. Both letters are about the passing of a tzaddik, a righteous person. They are not a general book on grief, and they do not say that mourners should feel better quickly.
+We tell what the letters say, in our own words. Both letters are about the passing of a tzaddik, a righteous person. They are not a general book on grief, and they do not say that mourners should feel better quickly.
 
 ## What Epistle 27 teaches
 
 The Alter Rebbe explains the saying of the Sages that a tzaddik "left life for all the living." A tzaddik's real life is spiritual: faith, awe and love of G-d. When he passes, he leaves these qualities as a legacy to those connected with him, and they can receive even more than while he was alive. His soul rises to higher levels, yet something of it remains close, and his teachings go on producing good deeds and growth in later generations.
 
-Chabad.org notes that the letter ends with a call to give tzedakah, and especially to support Rabbi Menachem Mendel's family. That is a Jewish instinct many mourners know: to turn loss into giving. See [tzedakah](/learn/tzedakah).
+The letter ends with a call to give tzedakah, and especially to support Rabbi Menachem Mendel's family. That is a Jewish instinct many mourners know: to turn loss into giving. See [tzedakah](/learn/tzedakah).
 
 ## What Epistle 28 teaches
 

@@ -5,7 +5,7 @@ category: Prayer & Torah
 related: hakarat-hatov, birkat-hagomel, shabbat-day, hallel, shacharit-morning-service
 local: Come to Shabbat morning services and hear Nishmat sung. Call Rabbi Labkowski at 925-384-7242.
 ---
-Nishmat Kol Chai (נשמת כל חי), "The soul [or breath] of every living thing," is a beautiful and ancient hymn of thanks said during the Shabbat morning prayers and at the end of the Passover Haggadah. Chabad.org describes it as a song of G-d's greatness and kindness, and of how impossible it is for us to thank Him enough.
+Nishmat Kol Chai (נשמת כל חי), "The soul [or breath] of every living thing," is a beautiful and ancient hymn of thanks said during the Shabbat morning prayers and at the end of the Passover Haggadah. It is a song of G-d's greatness and kindness, and of how impossible it is for us to thank Him enough.
 
 ## What Nishmat means
 
@@ -15,7 +15,7 @@ Nishmat is one of the most beloved parts of the prayer service, but nobody knows
 
 ## When Nishmat is said
 
-According to Chabad.org, it is recited:
+It is recited:
 
 - During the Shabbat morning prayers
 - At the end of the Passover Haggadah, at the Seder
@@ -25,7 +25,7 @@ On Shabbat and holidays, it comes in the section of morning services called Pesu
 
 ## What the hymn says
 
-You do not need to read the whole hymn at once. A taste of its themes, in plain English, from the Chabad.org translation:
+You do not need to read the whole hymn at once. A taste of its themes, in plain English, from a standard translation:
 
 - Every living being blesses G-d, and there is no other true King, redeemer or savior.
 - G-d never sleeps. He wakes the sleepers, gives speech to the mute, frees the bound, supports the falling and lifts the bowed.
@@ -52,7 +52,7 @@ Some ways to bring it home:
 It means "The soul of every living thing," and it opens a hymn in which all living beings bless and thank G-d.
 
 ### When is Nishmat Kol Chai said?
-Chabad.org says it is said in the Shabbat morning prayers, at the end of the Passover Haggadah, and when visiting a cemetery. On Shabbat and holidays, it is part of the morning service.
+It is said in the Shabbat morning prayers, at the end of the Passover Haggadah, and when visiting a cemetery. On Shabbat and holidays, it is part of the morning service.
 
 ### Who wrote Nishmat?
 The author is not known for certain. If you are curious about the traditions, ask the Rabbi.

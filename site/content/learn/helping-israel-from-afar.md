@@ -9,26 +9,26 @@ A Jew far from Israel can help the Jewish people there through prayer, through a
 
 ## Pray, and let your children pray
 
-Chabad.org suggests setting aside a daily prayer for the safety and peace of the people of Israel. Psalms (Tehillim) are especially fitting; Chabad.org offers a selection of Psalms for difficult times, beginning with Psalm 20. It also notes that the prayer of children is especially potent. See [Tehillim](/learn/tehillim), and say a chapter together at the Shabbat table. If you would like someone remembered in prayer, share a name at [Tehillim](/tehillim).
+Jewish tradition suggests setting aside a daily prayer for the safety and peace of the people of Israel. Psalms (Tehillim) are especially fitting; There is a customary selection of Psalms for difficult times, beginning with Psalm 20. Tradition also notes that the prayer of children is especially potent. See [Tehillim](/learn/tehillim), and say a chapter together at the Shabbat table. If you would like someone remembered in prayer, share a name at [Tehillim](/tehillim).
 
 ## Do a mitzvah
 
-The Rebbe, Rabbi Menachem Mendel Schneerson, taught that one good deed done now can add to the protection of Jews everywhere. At times of danger for Israel, he asked Jews to take on specific mitzvot. As Chabad.org tells it:
+The Rebbe, Rabbi Menachem Mendel Schneerson, taught that one good deed done now can add to the protection of Jews everywhere. At times of danger for Israel, he asked Jews to take on specific mitzvot. Among them:
 
 - **1967: tefillin.** He asked every Jewish man and boy over bar mitzvah age to put on tefillin (see [Tefillin](/learn/tefillin)).
 - **1973: children's prayer.** He asked that Jewish children gather to pray and say Torah, at the Western Wall and elsewhere in Israel.
 - **1976: mezuzah.** He encouraged Jews to fulfill the mitzvah of mezuzah for protection (see [Mezuzah](/learn/mezuzah)).
 - **1982: a letter in a Torah scroll.** He asked every Jew to take part in a Torah scroll, as an act of unity.
 
-Chabad.org also lists lighting Shabbat candles as a mitzvah for women and girls (see [Shabbat Candles](/learn/shabbat-candles)), and checking your mezuzahs, ideally once a year and at least twice in seven years. These mitzvot are always open to you. See also the Rebbe's ten mitzvah campaigns in [The Ten Mitzvah Campaigns](/learn/ten-mitzvah-campaigns). To start one, visit [Mezuzah and Tefillin](/forms/mezuzah-tefillin) or call 925-384-7242.
+Tradition also counts lighting Shabbat candles as a mitzvah for women and girls (see [Shabbat Candles](/learn/shabbat-candles)), and checking your mezuzahs, ideally once a year and at least twice in seven years. These mitzvot are always open to you. See also the Rebbe's ten mitzvah campaigns in [The Ten Mitzvah Campaigns](/learn/ten-mitzvah-campaigns). To start one, visit [Mezuzah and Tefillin](/forms/mezuzah-tefillin) or call 925-384-7242.
 
 ## Give tzedakah
 
-Giving charity is another way to help. Chabad.org suggests giving to a cause based in Israel and teaches that tzedakah has a strong protective power. Choose a reputable organization, and ask the Rabbi if you would like guidance. See [Tzedakah](/learn/tzedakah) and [Tzedakah Priorities](/learn/tzedakah-priorities). If you would like to give through Chabad of Lamorinda, giving options are on the [donate](/donate) page.
+Giving charity is another way to help. The tradition suggests giving to a cause based in Israel and teaches that tzedakah has a strong protective power. Choose a reputable organization, and ask the Rabbi if you would like guidance. See [Tzedakah](/learn/tzedakah) and [Tzedakah Priorities](/learn/tzedakah-priorities). If you would like to give through Chabad of Lamorinda, giving options are on the [donate](/donate) page.
 
 ## Strengthen your faith and your connection
 
-Chabad.org also asks us to nurture trust that G-d protects the Jewish people, especially in the Land of Israel, to talk about it with family and friends and to reach out to people in Israel. A warm phone call to a relative or friend is a kind of mitzvah. For the Torah's love of the Land, read [The Land of Israel in Jewish Tradition](/learn/the-land-of-israel-in-jewish-tradition).
+Jewish tradition also asks us to nurture trust that G-d protects the Jewish people, especially in the Land of Israel, to talk about it with family and friends and to reach out to people in Israel. A warm phone call to a relative or friend is a kind of mitzvah. For the Torah's love of the Land, read [The Land of Israel in Jewish Tradition](/learn/the-land-of-israel-in-jewish-tradition).
 
 ## Visit when you can
 
@@ -42,13 +42,13 @@ This guide is about Jewish faith and mitzvot, and not about politics. For questi
 Say Tehillim, do a mitzvah such as tefillin, Shabbat candles or checking your mezuzah, give tzedakah and stay in touch with people in Israel.
 
 ### Which Psalms should I say for Israel?
-Chabad.org offers a selection of Psalms for difficult times, beginning with Psalm 20. The Rabbi can suggest chapters to say.
+There is a customary selection of Psalms for difficult times, beginning with Psalm 20. The Rabbi can suggest chapters to say.
 
 ### Can a mitzvah really protect Jews in Israel?
 Chabad teaching says that every mitzvah reaches the core where all Jews are bound together, so it can help Jews everywhere. This is a matter of faith, and the Rabbi is glad to discuss it.
 
 ### Can my children help?
-Yes. Chabad.org says that children's prayer is especially potent. Children can say Tehillim, give tzedakah and ask questions about Israel.
+Yes. The tradition says that children's prayer is especially potent. Children can say Tehillim, give tzedakah and ask questions about Israel.
 
 ### What is a letter in a Torah scroll?
 It is the custom to purchase a letter in a Torah scroll, so that every Jew shares in it. The Rebbe asked for this in 1982 as an act of unity. Ask the Rabbi where you can take part.

@@ -11,7 +11,7 @@ This guide explains what changes on the eighth day, what stays the same, and whe
 
 ## No work during shiva
 
-Shiva is the seven days that begin after the burial, and the day of burial counts as the first day. The mourners step away from daily routines, according to Chabad.org, in order to focus on the memory of the person who died, think about how to honor them in their own lives, and receive comfort.
+Shiva is the seven days that begin after the burial, and the day of burial counts as the first day. The mourners step away from daily routines, according to Jewish tradition, in order to focus on the memory of the person who died, think about how to honor them in their own lives, and receive comfort.
 
 That is why the mourner does not work or do business during these days. See our guide to [shiva](/learn/shiva) for the full picture.
 
@@ -19,7 +19,7 @@ If staying away from work would cause you real hardship, do not decide this alon
 
 ## What changes after shiva
 
-Chabad.org lists what is lifted once shiva ends. The mourner may:
+Jewish tradition lists what is lifted once shiva ends. The mourner may:
 
 - Leave the shiva house and change out of the shiva clothing
 - Sit on regular chairs and wear leather shoes
@@ -41,7 +41,7 @@ Sheloshim is the thirtieth day from burial. Until then, even a mourner who is ba
 
 For relatives other than a parent, mourning ends after the morning service on the thirtieth day. See [sheloshim](/learn/sheloshim).
 
-Work events can be tricky. Chabad.org notes that those whose profession requires them to attend festive events, such as musicians, photographers or caterers, may attend. If a work dinner or a party is on your calendar, ask the Rabbi what to do. Our guide to [mourners and celebrations](/learn/mourners-and-celebrations) explains more.
+Work events can be tricky. Jewish tradition notes that those whose profession requires them to attend festive events, such as musicians, photographers or caterers, may attend. If a work dinner or a party is on your calendar, ask the Rabbi what to do. Our guide to [mourners and celebrations](/learn/mourners-and-celebrations) explains more.
 
 ## After sheloshim, if you lost a parent
 
@@ -65,7 +65,7 @@ Yes. For a parent, Kaddish is said at the three daily prayers for eleven months,
 Not during sheloshim. For a parent, a haircut may be taken after thirty days once friends or neighbors mildly criticize one's unkempt appearance.
 
 ### What if I do not feel ready to return?
-The mourning framework is designed to move step by step, but Chabad.org notes that mourners may not feel ready to move on to the next, lighter stage. Speak with the Rabbi, and see [the mourning journey](/learn/mourning-journey).
+The mourning framework is designed to move step by step, but the tradition notes that mourners may not feel ready to move on to the next, lighter stage. Speak with the Rabbi, and see [the mourning journey](/learn/mourning-journey).
 
 ## Take the next step
 

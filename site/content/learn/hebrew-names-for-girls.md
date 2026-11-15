@@ -7,7 +7,7 @@ local: Naming a baby girl? Call Rabbi Yisroel Labkowski at 925-384-7242 to plan 
 ---
 Hebrew names for girls come from the Torah's matriarchs and heroines, from nature, from virtues, and from Yiddish. Popular choices include Sarah (שרה), Rivkah (רבקה), Rachel (רחל), Devorah (דבורה), Shira (שירה) and Aviva (אביבה). A Jewish girl is traditionally named at the Torah reading shortly after her birth.
 
-The Hebrew spellings and meanings below follow Chabad.org's list of popular Jewish girl names, retold in our own words. Meanings of ancient names are sometimes debated, so treat them as a guide.
+The Hebrew spellings and meanings below follow a traditional list of popular Jewish girl names, retold in our own words. Meanings of ancient names are sometimes debated, so treat them as a guide.
 
 ## Matriarchs and women of the Bible
 
@@ -72,7 +72,7 @@ Many Jewish families brought Yiddish names from Europe, and they remain loved:
 
 ## How to choose
 
-Chabad.org says parents may name a child after a departed loved one, mark a special event, or choose any Jewish name they find beautiful. Many families give the Hebrew name together with a secular name. Customs differ between communities, for example about naming after relatives who are living or departed, so ask the Rabbi. More in [Hebrew names](/learn/hebrew-names) and [Jewish baby names](/learn/jewish-baby-names).
+Jewish tradition says parents may name a child after a departed loved one, mark a special event, or choose any Jewish name they find beautiful. Many families give the Hebrew name together with a secular name. Customs differ between communities, for example about naming after relatives who are living or departed, so ask the Rabbi. More in [Hebrew names](/learn/hebrew-names) and [Jewish baby names](/learn/jewish-baby-names).
 
 ## How a girl is named
 
@@ -87,7 +87,7 @@ Sarah, Rivkah, Rachel, Devorah, Chana, Esther, Ruth, Shira and Aviva are popular
 Simchah (שמחה) and Chedva (חדוה) mean joy and delight. Shalhevet (שלהבת) means flame.
 
 ### When is a Jewish girl given her name?
-Traditionally at the Torah reading shortly after her birth, according to Chabad.org.
+Traditionally at the Torah reading shortly after her birth, according to Jewish tradition.
 
 ### Can we name a baby after a relative?
 Yes. Parents often name after departed loved ones. Customs about living relatives differ, so ask the Rabbi.

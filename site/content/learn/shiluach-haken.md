@@ -21,13 +21,13 @@ The details, such as which birds and under what conditions the mitzvah applies, 
 
 ## A lesson in compassion
 
-Chabad.org cites Nachmanides, who explains that the mitzvah teaches compassion. Taking the young in the sight of their mother would cause her great pain. Chabad.org also cites Maimonides, who notes that a mother's love for her offspring is not a matter of intellect or speech, but something humans share with animals.
+Jewish tradition cites Nachmanides, who explains that the mitzvah teaches compassion. Taking the young in the sight of their mother would cause her great pain. Maimonides also notes that a mother's love for her offspring is not a matter of intellect or speech, but something humans share with animals.
 
 This connects to a wider Jewish value: kindness to every living creature. See [tza'ar ba'alei chayim, kindness to animals](/learn/tzaar-baalei-chayim), and [pets and Jewish life](/learn/pets-and-jewish-life) for how this shapes everyday life with animals.
 
 ## More than compassion: a mitzvah without a stated reason
 
-Chabad.org adds an important caution. Shiluach haken is a *chok*, a decree whose reason the Torah does not give. We may find a lesson of compassion in it, but we should not assume that compassion is the whole story. The Mishnah (Berachot 5:3) even warns against saying in prayer, "Your mercy reaches the bird's nest," because that would present G-d's commands as only acts of mercy. We do mitzvot because G-d commanded them. See [why mitzvot](/learn/why-mitzvot).
+Jewish tradition adds an important caution. Shiluach haken is a *chok*, a decree whose reason the Torah does not give. We may find a lesson of compassion in it, but we should not assume that compassion is the whole story. The Mishnah (Berachot 5:3) even warns against saying in prayer, "Your mercy reaches the bird's nest," because that would present G-d's commands as only acts of mercy. We do mitzvot because G-d commanded them. See [why mitzvot](/learn/why-mitzvot).
 
 The Zohar adds a deeper meaning: this mitzvah arouses heavenly mercy toward the Jewish people. The Zohar tells a story of a young child whose father, Rabbi Yosi, had died. The boy cried out to G-d, pointing to this very mitzvah of sending the mother away, and asked that his father be allowed to live. According to the story, the father was granted additional years of life. We tell it as a story from the Zohar, not as a promise for any particular case, and ask the Rabbi about questions of reward and Providence.
 
@@ -35,7 +35,7 @@ The Zohar adds a deeper meaning: this mitzvah arouses heavenly mercy toward the 
 
 Rashi, on the verses that follow, points out something remarkable. The next verse commands us to build a parapet, a safety fence (*maakeh*), around the roof of a new house. Why does the Torah put these two laws side by side? Rashi explains that one mitzvah leads to another. If you keep the mitzvah of the nest, you will be rewarded with a new house, and then you will need a parapet so no one falls.
 
-Chabad.org calls this "the mitzvah domino effect." One good deed leads to the next, and then it pulls us in, little by little, to a life of caring and responsibility. That is how Jewish life grows, one mitzvah at a time. Rashi continues that the same blessing leads to fields and vineyards, then to clothing, each bringing more mitzvot.
+The tradition calls this "the mitzvah domino effect." One good deed leads to the next, and then it pulls us in, little by little, to a life of caring and responsibility. That is how Jewish life grows, one mitzvah at a time. Rashi continues that the same blessing leads to fields and vineyards, then to clothing, each bringing more mitzvot.
 
 ## Honoring parents and long life
 
@@ -53,13 +53,13 @@ The Torah says "so that it will be good for you and you will lengthen your days.
 No. The mitzvah applies when you happen upon a nest. Ask the Rabbi about any specific case.
 
 ### Why does the Torah give this commandment?
-Nachmanides sees compassion in it, but Chabad.org stresses that it is a chok, a decree without a stated reason, so compassion is not the only meaning.
+Nachmanides sees compassion in it, but jewish tradition stresses that it is a chok, a decree without a stated reason, so compassion is not the only meaning.
 
 ### Is it permitted to take eggs from a nest in my yard in Lafayette, Moraga or Orinda?
 Do not touch a nest before asking the Rabbi, who can tell you how the law applies. This is not legal advice, and local rules may also apply.
 
 ### What is the connection to the parapet?
-Rashi explains that one mitzvah leads to another: the reward of a new house brings the mitzvah of a parapet. See Chabad.org's "The Mitzvah Domino Effect."
+Rashi explains that one mitzvah leads to another: the reward of a new house brings the mitzvah of a parapet.
 
 ## Take the next step
 

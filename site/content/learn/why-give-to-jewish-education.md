@@ -5,25 +5,25 @@ category: Jewish ideas
 related: choosing-jewish-education, tzedakah-priorities, hebrew-school-in-lamorinda, chinuch, will-my-grandchildren-be-jewish, leaving-a-jewish-legacy-gift
 local: Want to help a Jewish child in Lafayette, Moraga or Orinda learn? Call Rabbi Labkowski at 925-384-7242 to hear about the preschool and Hebrew school.
 ---
-Giving to Jewish education is one of the most meaningful forms of tzedakah because it gives a child the Judaism that will stay with them for life, and later pass to their own children. Chabad.org lists Torah schools among the worthy recipients of charity, and the Rebbe taught that we cannot rest until every Jewish child has a Jewish education.
+Giving to Jewish education is one of the most meaningful forms of tzedakah because it gives a child the Judaism that will stay with them for life, and later pass to their own children. Chassidic teaching lists Torah schools among the worthy recipients of charity, and the Rebbe taught that we cannot rest until every Jewish child has a Jewish education.
 
 ## What the Rebbe taught about every Jewish child
 
-Chabad.org's statement of purpose opens with the Rebbe's words: "We cannot rest until every Jewish child has a Jewish education." This is the heart of what Chabad does around the world, and it is why Chabad of Lamorinda in Lafayette runs a preschool and a Hebrew school for families in Lafayette, Moraga and Orinda.
+The statement of purpose of the Chabad movement opens with the Rebbe's words: "We cannot rest until every Jewish child has a Jewish education." This is the heart of what Chabad does around the world, and it is why Chabad of Lamorinda in Lafayette runs a preschool and a Hebrew school for families in Lafayette, Moraga and Orinda.
 
 The Rebbe's letters on education stress that it should begin in the earliest years, and that Torah learning is "an ongoing and continuous process, never ending." Education, in this view, is not only information. It is also the shaping of character and a living connection to G-d.
 
 ## Who is responsible for a child's Jewish education?
 
-Jewish law places the duty on parents. The mitzvah of *chinuch* (חִנּוּךְ, "education") obliges parents to teach children to perform mitzvot and to avoid what the Torah forbids, beginning when the child is able. See [Chinuch](/learn/chinuch). Chabad.org explains that a parent who cannot teach personally may delegate the task to a teacher or a school, and that blessings over food and basic prayers are traditionally taught from about age three.
+Jewish law places the duty on parents. The mitzvah of *chinuch* (חִנּוּךְ, "education") obliges parents to teach children to perform mitzvot and to avoid what the Torah forbids, beginning when the child is able. See [Chinuch](/learn/chinuch). Jewish tradition explains that a parent who cannot teach personally may delegate the task to a teacher or a school, and that blessings over food and basic prayers are traditionally taught from about age three.
 
 This is why a school is not a luxury. It is a partner that helps parents do what the Torah asks of them. Many families cannot do it alone, and when a community supports its schools, every family benefits. For help choosing, see [Choosing Jewish Education](/learn/choosing-jewish-education).
 
 ## Where Jewish education fits among your giving
 
-Chabad.org's basics of tzedakah give an order of priorities: family members in serious need first, then local causes before distant ones, and causes in Israel before other faraway ones. Torah schools are named among the recipients of tzedakah. See [Tzedakah Priorities](/learn/tzedakah-priorities).
+The basics of tzedakah give an order of priorities: family members in serious need first, then local causes before distant ones, and causes in Israel before other faraway ones. Torah schools are named among the recipients of tzedakah. See [Tzedakah Priorities](/learn/tzedakah-priorities).
 
-In Chabad custom, a bar mitzvah boy gives tzedakah from his own money on the day of his Bar Mitzvah, and Chabad.org says it should preferably go to an institution involved with *chinuch*. The Jewish tradition keeps pointing to education as a place to give. See [Tzedakah at a Bar or Bat Mitzvah](/learn/tzedakah-at-a-bar-mitzvah).
+In Chabad custom, a bar mitzvah boy gives tzedakah from his own money on the day of his Bar Mitzvah, and the tradition says it should preferably go to an institution involved with *chinuch*. Jewish tradition keeps pointing to education as a place to give. See [Tzedakah at a Bar or Bat Mitzvah](/learn/tzedakah-at-a-bar-mitzvah).
 
 ## What a gift to education does in Lamorinda
 
@@ -37,7 +37,7 @@ You can give now, through [a gift on the website](/donate), or plan a gift for t
 Because Judaism is passed on by teaching. Jewish law makes education a duty of parents, and Chabad teaches that every Jewish child deserves a Jewish education.
 
 ### Is giving to a Jewish school considered tzedakah?
-Yes. Chabad.org names Torah schools among the recipients of tzedakah. If you wonder how a particular gift fits your maaser, ask the Rabbi.
+Yes. Jewish tradition names Torah schools among the recipients of tzedakah. If you wonder how a particular gift fits your maaser, ask the Rabbi.
 
 ### Should I give to education before other causes?
 Jewish law gives a general order: family in need first, then local causes, and Israel before other distant causes. Within that order, education is a very worthy place to give. Ask the Rabbi about your own situation.
@@ -49,7 +49,7 @@ Yes. Chabad of Lamorinda in Lafayette serves families from all three towns. Call
 Yes. Chabad of Lamorinda accepts donor-advised fund grants, and such a grant counts as maaser. Contact Rabbi Labkowski (925-384-7242) or Rebbetzin Labkowski (925-384-7241).
 
 ### Does it matter how large the gift is?
-Chabad.org teaches that how you give matters more than how much: give warmly and with a smile. A modest gift, given with a full heart, is cherished.
+Jewish tradition teaches that how you give matters more than how much: give warmly and with a smile. A modest gift, given with a full heart, is cherished.
 
 ## Take the next step
 

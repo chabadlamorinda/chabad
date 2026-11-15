@@ -19,7 +19,7 @@ A good Bar or Bat Mitzvah invitation names the child with his or her Hebrew name
 
 ## The blessing line at the top
 
-Many Jewish invitations begin with ב״ה (B"H) or בס״ד (B"S"D). Chabad.org explains that B"H stands for *baruch Hashem*, "blessed is G-d," or *b'ezrat Hashem*, "with the help of G-d," and that B"S"D stands for the Aramaic *b'siyata d'shmaya*, "with the help of heaven." For an event still in the future, "b'ezrat Hashem" fits well. It is customary to say that planned events will happen with G-d's help.
+Many Jewish invitations begin with ב״ה (B"H) or בס״ד (B"S"D). Jewish tradition explains that B"H stands for *baruch Hashem*, "blessed is G-d," or *b'ezrat Hashem*, "with the help of G-d," and that B"S"D stands for the Aramaic *b'siyata d'shmaya*, "with the help of heaven." For an event still in the future, "b'ezrat Hashem" fits well. It is customary to say that planned events will happen with G-d's help.
 
 ## What to avoid on the printed page
 
@@ -59,7 +59,7 @@ It should give the child's name and Hebrew name, the date, the place and time, w
 Write the child's Hebrew name followed by *ben* (son of) or *bat* (daughter of) and the parents' Hebrew names. If you are unsure, ask the Rabbi.
 
 ### What does B"H or b'ezrat Hashem mean?
-Chabad.org explains that B"H means "blessed is G-d" or "with G-d's help." Many people write it at the top of Jewish documents and invitations.
+Jewish teaching explains that B"H means "blessed is G-d" or "with G-d's help." Many people write it at the top of Jewish documents and invitations.
 
 ### Should we put the Hebrew date on the invitation?
 Yes. It takes one line and adds meaning. For a Shabbat celebration, the Torah portion is also a good addition.

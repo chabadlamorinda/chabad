@@ -9,7 +9,7 @@ Synagogue honors, called *kibbudim* (כִּבּוּדִים), are small roles gi
 
 ## What an honor is, and why we give them
 
-In a synagogue, taking part in the Torah service is a privilege. Chabad.org explains that the *gabbai* (גבאי), the warden, keeps the synagogue organized, calls people up to the bimah for aliyot, and gives out the other honors. Leading the prayers is also considered an honor. Many are handed out to people marking something special: a birthday, a yahrzeit, a new baby, an upcoming wedding or bar mitzvah. If you would like one, you can simply tell the gabbai. At Chabad of Lamorinda visitors are warmly offered honors such as an aliyah or opening the ark when they would like one: just ask, or call 925-384-7242. See [Who Does What in Shul](/learn/synagogue-roles).
+In a synagogue, taking part in the Torah service is a privilege. The *gabbai* (גבאי), the warden, keeps the synagogue organized, calls people up to the bimah for aliyot, and gives out the other honors. Leading the prayers is also considered an honor. Many are handed out to people marking something special: a birthday, a yahrzeit, a new baby, an upcoming wedding or bar mitzvah. If you would like one, you can simply tell the gabbai. At Chabad of Lamorinda visitors are warmly offered honors such as an aliyah or opening the ark when they would like one: just ask, or call 925-384-7242. See [Who Does What in Shul](/learn/synagogue-roles).
 
 ## The honors, one by one
 
@@ -53,7 +53,7 @@ Gelilah is the honor of rolling the Torah closed and dressing it with its cover 
 Tell the gabbai or the Rabbi that you would like one, and let them know the occasion, such as a birthday or a yahrzeit. At Chabad of Lamorinda visitors are warmly offered honors such as an aliyah or opening the ark when they would like one: just ask, or call 925-384-7242.
 
 ### Who decides who gets the honors?
-The gabbai decides. Chabad.org describes him as the one who gives out the honors and calls people up.
+The gabbai decides. He is the one who gives out the honors and calls people up.
 
 ### Is it an honor to be asked to open the ark?
 Yes. It is a simple and meaningful honor, and a good first one for a newcomer.

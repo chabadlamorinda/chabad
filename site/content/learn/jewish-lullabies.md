@@ -11,11 +11,11 @@ For parents in Lafayette, Moraga and Orinda, this is the easiest Jewish practice
 
 ## Why sing Jewish songs to a baby
 
-Chabad.org writes that early childhood memories shape a person's character, consciously and subconsciously, and so the songs a mother sings at night have a lasting influence. The Rebbe explained, at a gathering in 1973, that the traditional lullaby carries a message that Torah is the most precious treasure. A baby does not understand the words, but he learns warmth, safety and belonging, and the sound of Hebrew and Yiddish becomes familiar.
+Jewish tradition writes that early childhood memories shape a person's character, consciously and subconsciously, and so the songs a mother sings at night have a lasting influence. The Rebbe explained, at a gathering in 1973, that the traditional lullaby carries a message that Torah is the most precious treasure. A baby does not understand the words, but he learns warmth, safety and belonging, and the sound of Hebrew and Yiddish becomes familiar.
 
 ## Shema at bedtime
 
-The [Shema](/learn/shema) (שְׁמַע יִשְׂרָאֵל, "Hear, O Israel") is the first verse many Jewish children learn, and traditionally it is the last words said before sleep. Chabad.org notes that as soon as a child starts to speak, he is taught key Torah verses, including the Shema. With a baby, you can simply say or sing the verse softly as you lay him down. See [the bedtime Shema](/learn/bedtime-shema) for a short routine.
+The [Shema](/learn/shema) (שְׁמַע יִשְׂרָאֵל, "Hear, O Israel") is the first verse many Jewish children learn, and traditionally it is the last words said before sleep. Jewish tradition notes that as soon as a child starts to speak, he is taught key Torah verses, including the Shema. With a baby, you can simply say or sing the verse softly as you lay him down. See [the bedtime Shema](/learn/bedtime-shema) for a short routine.
 
 ## Modeh Ani in the morning
 
@@ -27,7 +27,7 @@ A [niggun](/learn/niggun) (נִגּוּן) is a wordless melody, a cherished par
 
 ## A Yiddish lullaby about Torah
 
-Chabad.org tells of "Oyfn Pripetchik," a Yiddish song that pictures a warm home with a rabbi teaching little children the aleph-bet. Its message is to review what you learn, not to fear it, and that Torah is a source of good. Jews sang it to their children for generations, even in the Soviet Union, when doing so could be dangerous. You can find recordings online, and families who speak Russian or Hebrew at home often have lullabies of their own to add.
+The tradition tells of "Oyfn Pripetchik," a Yiddish song that pictures a warm home with a rabbi teaching little children the aleph-bet. Its message is to review what you learn, not to fear it, and that Torah is a source of good. Jews sang it to their children for generations, even in the Soviet Union, when doing so could be dangerous. You can find recordings online, and families who speak Russian or Hebrew at home often have lullabies of their own to add.
 
 ## Songs of the Torah for toddlers
 

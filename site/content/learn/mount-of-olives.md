@@ -9,17 +9,17 @@ The Mount of Olives (Har HaZeitim, הַר הַזֵּיתִים) is a hill beside
 
 ## Where it is
 
-The Mount of Olives lies near the Temple Mount in Jerusalem, the place where the Holy Temples stood (see [The Holy Temple](/learn/the-holy-temple)). Chabad.org lists the cemetery among the facts every Jew should know about Jerusalem. For the story of the city itself, read [Jerusalem in Judaism](/learn/jerusalem).
+The Mount of Olives lies near the Temple Mount in Jerusalem, the place where the Holy Temples stood (see [The Holy Temple](/learn/the-holy-temple)). The cemetery is among the facts every Jew should know about Jerusalem. For the story of the city itself, read [Jerusalem in Judaism](/learn/jerusalem).
 
 ## Why people want to be buried there
 
-Chabad.org explains the main reason: it is the tradition that the resurrection of the dead will begin on the Mount of Olives in the time of Moshiach. Resurrection (techiyat hameitim, תְּחִיַּת הַמֵּתִים) is a basic principle of Jewish faith, and we mention it in the Amidah every day. You can read about it in [The Resurrection of the Dead](/learn/resurrection-of-the-dead).
+The main reason is the tradition that the resurrection of the dead will begin on the Mount of Olives in the time of Moshiach. Resurrection (techiyat hameitim, תְּחִיַּת הַמֵּתִים) is a basic principle of Jewish faith, and we mention it in the Amidah every day. You can read about it in [The Resurrection of the Dead](/learn/resurrection-of-the-dead).
 
 The wish to be buried in Jerusalem is part of the general love for the Land of Israel and for Jerusalem (see [The Land of Israel in Jewish Tradition](/learn/the-land-of-israel-in-jewish-tradition)).
 
 ## What it costs, and why not everyone is buried there
 
-Chabad.org notes that plots on the Mount of Olives can be very expensive, sometimes tens of thousands of dollars. Some families also arrange to bring their loved ones to Israel for burial from far away. Whether burial in Israel is right for a particular family depends on many things: the wishes of the person, the family's situation, the arrangements involved and Jewish law.
+Plots on the Mount of Olives can be very expensive, sometimes tens of thousands of dollars. Some families also arrange to bring their loved ones to Israel for burial from far away. Whether burial in Israel is right for a particular family depends on many things: the wishes of the person, the family's situation, the arrangements involved and Jewish law.
 
 If you are thinking about it for yourself or a loved one, please speak with the Rabbi before the need arises, and not in the middle of a crisis. Families in Lafayette, Moraga, Orinda and across the East Bay are welcome to call Rabbi Labkowski with these questions at 925-384-7242.
 
@@ -41,7 +41,7 @@ According to tradition, the resurrection of the dead will begin there when Moshi
 No. The hope of resurrection belongs to every Jew, wherever he or she is buried. For questions about your own situation, ask the Rabbi.
 
 ### Is it possible to be buried in Israel if I live in California?
-Some families do arrange it, and Chabad.org notes that plots are costly. Ask the Rabbi early, so you understand the choices and the arrangements.
+Some families do arrange it, and plots are costly. Ask the Rabbi early, so you understand the choices and the arrangements.
 
 ### What is the Jewish view of what happens after death?
 Jewish tradition teaches that the soul lives on and that, in the time of Moshiach, the dead will be revived. Read more in [The Afterlife](/learn/afterlife) and [Moshiach](/learn/moshiach).

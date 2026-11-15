@@ -11,7 +11,7 @@ For families in Lafayette, Moraga and Orinda, whose days are full of carpools, c
 
 ## The world is not the enemy
 
-Chapter 37 on Chabad.org says that every Jew elevates a share of the world by using worldly things, for body and soul, in G-d's service: eating, drinking, a home and everyday tools. Before they are used for a mitzvah, the chapter explains, permitted things belong to kelipat nogah, the "mixed" realm that gives life to the physical world. A mitzvah lifts them into holiness.
+Chapter 37 of the Tanya says that every Jew elevates a share of the world by using worldly things, for body and soul, in G-d's service: eating, drinking, a home and everyday tools. Before they are used for a mitzvah, the chapter explains, permitted things belong to kelipat nogah, the "mixed" realm that gives life to the physical world. A mitzvah lifts them into holiness.
 
 Some things cannot be lifted. Chapter 37 gives the example of fruit that may not be eaten (orlah): it draws its life from the completely impure forces, so a mitzvah done with it cannot raise it to holiness. The same chapter speaks of tzedakah from money that was not obtained through theft. This is one reason Judaism cares about [honesty](/learn/business-ethics) and what is permitted. The teaching is for permitted things.
 
@@ -25,7 +25,7 @@ That is also why a blessing matters before and after eating. See [Jewish eating]
 
 Chapter 37 says the 248 positive mitzvot correspond to the limbs of the body, drawing G-d's light into them, while the 365 prohibitions correspond to the blood vessels, channeling life-force toward holiness. Chapter 37 also notes that speech mitzvot, such as Torah study and prayer, elevate the animal soul, because speech is a physical act and "thought is not a substitute for speech."
 
-The Tanya's attitude is therefore not ascetic. The body and the animal soul take part in holiness. This fits the Chapter 35 page on Chabad.org, which says that practical mitzvot, performed with the body, draw G-d's light onto the body and the animal soul itself. For more on the inner struggle, see [the beinoni](/learn/the-beinoni).
+The Tanya's attitude is therefore not ascetic. The body and the animal soul take part in holiness. This fits Chapter 35, which says that practical mitzvot, performed with the body, draw G-d's light onto the body and the animal soul itself. For more on the inner struggle, see [the beinoni](/learn/the-beinoni).
 
 ## A home for G-d
 

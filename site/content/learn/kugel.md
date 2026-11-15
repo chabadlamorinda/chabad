@@ -1,6 +1,6 @@
 ---
 title: Kugel: Potato and Noodle Kugel for Shabbat, With a Recipe
-description: What kugel is, why it is a Shabbat favorite, and an easy pareve potato kugel adapted from Chabad.org, with make-ahead and keeping-warm tips.
+description: What kugel is, why it is a Shabbat favorite, and an easy pareve potato kugel, with make-ahead and keeping-warm tips.
 category: Jewish home
 related: shabbat-meals, brisket, latkes, cholent, pareve, keeping-food-warm-on-shabbat, jewish-foods
 local: Want to taste real Shabbat food with a community? Sign up for a Shabbat meal at /forms/shabbat-meal or call 925-384-7242.
@@ -11,9 +11,9 @@ Kugel is a baked Jewish casserole, most often made from grated or blended potato
 
 Kugel (קוגל) is a Yiddish word for a baked pudding or casserole. Potato kugel is savory, with a crisp golden top and a soft middle, and noodle kugel can be savory or sweet. Because it can be fully baked before Shabbat and served warm, it fits the Shabbat meal perfectly. It pairs well with [cholent](/learn/cholent), [chicken soup](/learn/jewish-chicken-soup) and the other foods of a [Shabbat meal](/learn/shabbat-meals).
 
-## An easy potato kugel, adapted from Chabad.org
+## An easy potato kugel
 
-This recipe is retold in our own words from a potato kugel on Chabad.org. It is pareve and gluten-free, and takes a little over an hour.
+This recipe is retold in our own words from a classic potato kugel. It is pareve and gluten-free, and takes a little over an hour.
 
 **Ingredients**
 - 4 large potatoes, peeled and cut into cubes
@@ -38,7 +38,7 @@ Use kosher ingredients, and ask the Rabbi about specifics.
 
 ## Noodle kugel
 
-Many families also love noodle kugel, made with egg noodles baked in a casserole. We did not find a noodle kugel recipe on Chabad.org to share here, so ask the Rabbi or a friend who bakes one and cook it together.
+Many families also love noodle kugel, made with egg noodles baked in a casserole. We do not have a noodle kugel recipe to share here, so ask the Rabbi or a friend who bakes one and cook it together.
 
 ## Pareve, make-ahead and warm
 

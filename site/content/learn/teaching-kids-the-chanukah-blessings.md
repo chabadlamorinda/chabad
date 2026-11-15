@@ -40,7 +40,7 @@ The blessings are said before lighting, standing near the menorah, usually while
 ## Fun ways to practice
 
 - **Talk about the miracle at dinner.** When the idea of "miracles for our ancestors" is familiar, the words sound familiar too.
-- **Listen to songs.** Chabad.org's kids' pages have videos with the lighting steps and children's songs. See also [Chanukah songs](/learn/chanukah-songs).
+- **Listen to songs.** Look for kids' videos with the lighting steps and children's songs. See also [Chanukah songs](/learn/chanukah-songs).
 - **Rehearse before Chanukah.** A pretend lighting with an unlit menorah, practicing the order of the candles, makes the real night calmer.
 - **Haneirot Halalu.** As the lights are kindled, many families sing a short hymn called Haneirot Halalu, "These lights we kindle." Ask the Rabbi for the words and the tune; children pick them up quickly.
 

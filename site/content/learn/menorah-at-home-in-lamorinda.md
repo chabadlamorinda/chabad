@@ -11,9 +11,9 @@ The purpose of the menorah is pirsumei nisa (פִּרְסוּמֵי נִסָּא
 
 ## Window or door?
 
-Chabad.org and the Chabad sources teach two ways to publicize the miracle:
+Jewish law and Chabad custom teach two ways to publicize the miracle:
 
-- **A window facing the street.** Chabad.org says this is fine if the window is less than about thirty feet above street level, so passersby can see the lights. Hillside homes in Lamorinda often have street-facing windows high above the road; if yours is, ask the Rabbi.
+- **A window facing the street.** Jewish law says this is fine if the window is less than about thirty feet above street level, so passersby can see the lights. Hillside homes in Lamorinda often have street-facing windows high above the road; if yours is, ask the Rabbi.
 - **The doorway.** The menorah goes on the left side of the entrance, across from the mezuzah, so you walk between two mitzvahs. Chabad custom, as taught by the Rebbe, is generally to light inside the home, at the doorway of the room, though many also light at a window. Ask the Rabbi what is best for you.
 
 Apartments and townhouses with a shared hallway: use a window onto the street or a courtyard if you have one, or light just inside your own door. The menorah need not be seen by many people; what matters is that it is in a place that is part of your home and visible to others.
@@ -30,7 +30,7 @@ On Friday afternoon, the menorah is lit before the Shabbat candles, with enough 
 
 ## Fire safety in a dry December
 
-Winters in the East Bay can be dry, windy and cold. Chabad.org advises a sturdy, fireproof surface out of the reach of children, away from curtains and other flammable materials. In addition:
+Winters in the East Bay can be dry, windy and cold. Jewish law advises a sturdy, fireproof surface out of the reach of children, away from curtains and other flammable materials. In addition:
 
 - Use a metal or glass tray under the menorah, and a table that is not near a drafty window or door that opens.
 - Move curtains, paper decorations and gift wrap away, and keep a candle burning only where you can see it.
@@ -60,7 +60,7 @@ Yes. Light it at a window or just inside your door, away from curtains and with 
 
 ### How high can a menorah be placed in a window?
 
-Chabad.org says a window is suitable if it is less than about thirty feet above ground, so people can see the lights. Hillside homes may be higher; ask the Rabbi.
+Jewish law says a window is suitable if it is less than about thirty feet above ground, so people can see the lights. Hillside homes may be higher; ask the Rabbi.
 
 ### How long must the menorah burn?
 

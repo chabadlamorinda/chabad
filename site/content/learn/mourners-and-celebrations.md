@@ -19,13 +19,13 @@ Shiva and sheloshim are counted from the burial; the twelve months for a parent 
 
 ## Weddings
 
-According to Chabad.org (Rabbi Maurice Lamm), after losing a parent a mourner should generally avoid a wedding hall with music and dancing for twelve months, and for another relative for thirty days. There are more lenient possibilities, such as a wedding with no instrumental music, or if the mourner is needed for the minyan or to help. These are case by case, so do not assume.
+According to Rabbi Maurice Lamm, after losing a parent a mourner should generally avoid a wedding hall with music and dancing for twelve months, and for another relative for thirty days. There are more lenient possibilities, such as a wedding with no instrumental music, or if the mourner is needed for the minyan or to help. These are case by case, so do not assume.
 
 If you are the parent of the bride or groom and are mourning your own parent, you often can attend and take part, with some limits during sheloshim. A person mourning a child cannot easily plan a wedding during shiva or sheloshim, but there are narrow exceptions. In all of these, speak to a rabbi.
 
 ## Bar and bat mitzvah
 
-A mourner may usually attend the service. The party, the meal and the music are the questions. According to Chabad.org, a parent hosting may prepare after shiva but not sit at the festive meal during sheloshim, and a parent-mourner may attend after sheloshim if the child gives a Torah talk, since that makes it a religious occasion. See [attending a bar or bat mitzvah](/learn/attending-a-bar-bat-mitzvah). If this affects your family, call the Rabbi well before the date.
+A mourner may usually attend the service. The party, the meal and the music are the questions. According to Jewish custom, a parent hosting may prepare after shiva but not sit at the festive meal during sheloshim, and a parent-mourner may attend after sheloshim if the child gives a Torah talk, since that makes it a religious occasion. See [attending a bar or bat mitzvah](/learn/attending-a-bar-bat-mitzvah). If this affects your family, call the Rabbi well before the date.
 
 ## Music, parties and everyday life
 
@@ -46,7 +46,7 @@ It depends on the relative and on the timing. For a parent, a wedding hall with 
 Music that brings joy is generally avoided during mourning, especially for a parent. Ask the Rabbi what is right for you.
 
 ### Can a mourner attend a bar mitzvah?
-A mourner can usually attend the synagogue service, but the party, meal and music are limited. Chabad.org notes some leniency after thirty days if the celebrant gives a Torah talk. Ask the Rabbi.
+A mourner can usually attend the synagogue service, but the party, meal and music are limited. There is some leniency after thirty days if the celebrant gives a Torah talk. Ask the Rabbi.
 
 ### Can I get married during shiva or sheloshim?
 Marriage is not held during shiva, and during sheloshim only in narrow circumstances. Always ask the Rabbi first.

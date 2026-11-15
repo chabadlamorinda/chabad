@@ -12,22 +12,22 @@ If you cannot afford a Jewish funeral, please call Rabbi Yisroel Labkowski at 92
 ## What to do first
 
 1. **Call the Rabbi before you sign anything.** Tell him simply that someone has died and that money is a worry. Call him before you call the burial society or a funeral home: he will guide you through every step and make the arrangements.
-2. **Do not delay out of worry about cost.** Burial is a mitzvah to be done promptly (see [why Jews bury quickly](/learn/why-jews-bury-quickly)). Chabad.org says that a delay is justified only for the honor of the deceased, such as legal requirements, obtaining shrouds or a proper casket, or waiting for close family, and not for convenience.
+2. **Do not delay out of worry about cost.** Burial is a mitzvah to be done promptly (see [why Jews bury quickly](/learn/why-jews-bury-quickly)). Jewish tradition says that a delay is justified only for the honor of the deceased, such as legal requirements, obtaining shrouds or a proper casket, or waiting for close family, and not for convenience.
 3. **Take it one step at a time.** [The first hours after a death](/learn/first-hours-after-a-death) lists what to do and in what order.
 
 Please do not make decisions about the funeral under pressure. Ask us first. No amounts or promises can be given in an article, so the Rabbi will talk with you personally about what your family needs.
 
 ## Why Jewish burial is meant to be simple
 
-A traditional Jewish burial is simple by design, and this is itself a form of respect. Chabad.org explains that the plain white shrouds are the same for everyone, so that those who cannot afford fine clothing are not embarrassed, and that money which might have gone to an ornate casket is better given to charity in the memory of the person who died. The casket is plain, unlined and made of wood. Read more in [a plain wooden casket and white shrouds](/learn/plain-wooden-casket-and-shrouds).
+A traditional Jewish burial is simple by design, and this is itself a form of respect. Jewish tradition explains that the plain white shrouds are the same for everyone, so that those who cannot afford fine clothing are not embarrassed, and that money which might have gone to an ornate casket is better given to charity in the memory of the person who died. The casket is plain, unlined and made of wood. Read more in [a plain wooden casket and white shrouds](/learn/plain-wooden-casket-and-shrouds).
 
 ## The community has always cared for those in need
 
-Chabad.org notes that, traditionally, even a poor person is given a burial plot, paid for with communal funds. Jewish communities have always seen burial as a duty that belongs to all of us, and not only to the family. This is why the Chevra Kadisha, the holy burial society, does its work as a "true kindness." See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
+Jewish sources say that, traditionally, even a poor person is given a burial plot, paid for with communal funds. Jewish communities have always seen burial as a duty that belongs to all of us, and not only to the family. This is why the Chevra Kadisha, the holy burial society, does its work as a "true kindness." See [tahara and the Chevra Kadisha](/learn/chevra-kadisha-and-tahara).
 
 ## Make sure a Jewish burial is what you receive
 
-Chabad.org advises families to be sure the funeral director provides the essentials of a Jewish burial: tahara (washing and purification), a *shomer* (a Jewish person who stays with the deceased until burial), *tachrichim* (white shrouds), a "kosher" casket, and the care of the Chevra Kadisha. It adds that some funeral homes will not offer these unless the family asks. That is one more reason to call the Rabbi first: he can help you ask for the right things.
+Jewish teaching advises families to be sure the funeral director provides the essentials of a Jewish burial: tahara (washing and purification), a *shomer* (a Jewish person who stays with the deceased until burial), *tachrichim* (white shrouds), a "kosher" casket, and the care of the Chevra Kadisha. It adds that some funeral homes will not offer these unless the family asks. That is one more reason to call the Rabbi first: he can help you ask for the right things.
 
 ## If your family needs other help
 
@@ -53,7 +53,7 @@ No. Please do not wait. Call the Rabbi first, because burial is meant to take pl
 
 ### Does a simple Jewish funeral cost less?
 
-A simple burial in plain shrouds and a plain wooden casket is the Jewish tradition, and Chabad.org encourages sending money that might have gone to an ornate casket to charity instead. Ask the Rabbi about your family's situation.
+A simple burial in plain shrouds and a plain wooden casket is the Jewish tradition, and it is a custom to send money that might have gone to an ornate casket to charity instead. Ask the Rabbi about your family's situation.
 
 ### Do I have to be a member to ask for help?
 

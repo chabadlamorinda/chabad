@@ -11,18 +11,18 @@ Whether in a family kitchen in Lafayette, a group chat in Moraga or a school hal
 
 ## What the Torah forbids
 
-Chabad.org, in its explanation of this commandment, says it prohibits verbally distressing or humiliating another person. It adds that the Sages considered hurtful words a graver sin than cheating someone of money, because money can be returned, but words cannot be taken back.
+This commandment prohibits verbally distressing or humiliating another person. It adds that the Sages considered hurtful words a graver sin than cheating someone of money, because money can be returned, but words cannot be taken back.
 
 ## Everyday examples
 
-Chabad.org gives these examples:
+Examples include:
 
 - **Reminding someone of their past.** Do not remind a person who has changed of what they used to do, even in a hint, or by saying how thankful they should be to have been rescued from it.
 - **Blaming the sick.** Do not suggest that a person's suffering means they did something wrong. Job's friends are the example.
 - **Misleading a buyer.** Do not send someone to a seller who has nothing for them.
 - **Pretending to shop.** Do not ask the price of an item when you have no intention of buying.
 
-Chabad.org also mentions that the Torah is especially strict about words toward the vulnerable, such as a widow, orphan or convert, and says we must be sensitive and avoid anything that might shame, embarrass or hurt. It also states that threatening children with frightening things is not the Jewish way to raise them.
+Jewish tradition also mentions that the Torah is especially strict about words toward the vulnerable, such as a widow, orphan or convert, and says we must be sensitive and avoid anything that might shame, embarrass or hurt. It also states that threatening children with frightening things is not the Jewish way to raise them.
 
 ## Shaming in public
 
@@ -58,7 +58,7 @@ It is the Torah commandment not to hurt, shame or distress someone with words, b
 Lashon hara is speaking badly about someone to others. Ona'at devarim is hurting someone with words said to them.
 
 ### Is it really worse than stealing?
-Chabad.org says the Sages considered hurtful words a graver sin than cheating someone of money, since money can be returned but words cannot.
+The tradition says the Sages considered hurtful words a graver sin than cheating someone of money, since money can be returned but words cannot.
 
 ### Is a joke allowed if no one means harm?
 Not if it hurts someone. Intent matters, but so does the effect on the person.

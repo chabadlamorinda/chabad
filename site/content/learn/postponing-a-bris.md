@@ -17,7 +17,7 @@ The baby does not lose anything by waiting. The covenant is his from birth, and 
 
 ## When a bris is delayed
 
-Chabad.org lists these as reasons to wait:
+These are reasons to wait:
 
 - **Jaundice**, the yellowing of the skin that is common in newborns.
 - **Prematurity or weakness**, including a baby who is still in the hospital.
@@ -28,7 +28,7 @@ The doctors and a qualified mohel decide whether your baby is healthy enough. Th
 
 ## Setting the new date
 
-Once the baby has recovered, the bris is held without unnecessary delay. How soon exactly depends on the case. Chabad.org notes that in certain cases the custom is to wait seven full days after recovery. Which cases these are is for the mohel and the Rabbi to decide, so ask them what applies to your son.
+Once the baby has recovered, the bris is held without unnecessary delay. How soon exactly depends on the case. In certain cases the custom is to wait seven full days after recovery. Which cases these are is for the mohel and the Rabbi to decide, so ask them what applies to your son.
 
 Two more points:
 

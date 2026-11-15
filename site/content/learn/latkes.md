@@ -1,6 +1,6 @@
 ---
 title: Latkes: Chanukah Potato Pancakes, With a Recipe
-description: How to make crispy potato latkes for Chanukah, why we eat oily foods, the dairy custom and kosher tips, with a simple pareve recipe from Chabad.org.
+description: How to make crispy potato latkes for Chanukah, why we eat oily foods, the dairy custom and kosher tips, with a simple pareve recipe.
 category: Jewish home
 related: chanukah-foods, frying-safely-on-chanukah, vegan-chanukah-recipes, healthier-chanukah-foods, chanukah-dinner-menu, hosting-a-chanukah-party, kugel, pareve, chanukah-story
 local: Join Chanukah with Chabad of Lamorinda in Lafayette: call 925-384-7242 or see /events.
@@ -9,11 +9,11 @@ Latkes are crispy fried potato pancakes, a favorite Chanukah food because they a
 
 ## Why we eat latkes on Chanukah
 
-Chanukah remembers the Temple oil that lasted eight days when there was only enough for one. Because of that miracle, it is customary to eat foods cooked in oil, and Chabad.org names potato pancakes (*latkes*) and jelly doughnuts (*sufganiyot*, see our [sufganiyot](/learn/sufganiyot) guide) as popular favorites. Read more in [Chanukah foods](/learn/chanukah-foods) and the [Chanukah story](/learn/chanukah-story).
+Chanukah remembers the Temple oil that lasted eight days when there was only enough for one. Because of that miracle, it is customary to eat foods cooked in oil, and Jewish tradition names potato pancakes (*latkes*) and jelly doughnuts (*sufganiyot*, see our [sufganiyot](/learn/sufganiyot) guide) as popular favorites. Read more in [Chanukah foods](/learn/chanukah-foods) and the [Chanukah story](/learn/chanukah-story).
 
 ## A simple latke recipe
 
-This recipe is retold from a basic recipe on Chabad.org. It is pareve (neither meat nor dairy), serves 4 to 6, and takes 30 to 60 minutes.
+This recipe is retold from a basic classic latke recipe. It is pareve (neither meat nor dairy), serves 4 to 6, and takes 30 to 60 minutes.
 
 **You will need:**
 
@@ -43,7 +43,7 @@ This recipe is retold from a basic recipe on Chabad.org. It is pareve (neither m
 
 ## Variations
 
-Chabad.org suggests replacing the potatoes with 5 medium zucchini or 5 medium carrots for vegetable latkes. Some families add herbs or serve a mix of kinds so everyone can choose. There is also a dairy side to Chanukah: Chabad.org notes the custom of eating dairy foods, based on the story of Judith, who used cheese to defeat the enemy general. So cheese dishes at your Chanukah table have a place too.
+Jewish tradition suggests replacing the potatoes with 5 medium zucchini or 5 medium carrots for vegetable latkes. Some families add herbs or serve a mix of kinds so everyone can choose. There is also a dairy side to Chanukah: Jewish tradition notes the custom of eating dairy foods, based on the story of Judith, who used cheese to defeat the enemy general. So cheese dishes at your Chanukah table have a place too.
 
 ## Kosher notes
 
@@ -56,7 +56,7 @@ Hot oil can burn. Keep the pan on the back burner, handles turned in, children a
 ## Common questions
 
 ### Why do we eat latkes on Chanukah?
-Latkes are fried in oil, recalling the miracle of the Temple oil that lasted eight days. Chabad.org lists potato pancakes and jelly doughnuts as customary oily foods.
+Latkes are fried in oil, recalling the miracle of the Temple oil that lasted eight days. Jewish tradition lists potato pancakes and jelly doughnuts as customary oily foods.
 
 ### How do I make latkes crispy?
 Squeeze as much liquid as possible out of the grated potatoes and onion, and fry in hot oil without crowding the pan. Serve them right away.
@@ -65,10 +65,10 @@ Squeeze as much liquid as possible out of the grated potatoes and onion, and fry
 A latke made with potatoes, onion, eggs, flour, salt, pepper and oil is pareve if the ingredients are kosher certified. Toppings like sour cream make them dairy.
 
 ### Can I make latkes with other vegetables?
-Yes. Chabad.org suggests using 5 medium zucchini or 5 medium carrots in place of the potatoes.
+Yes. Jewish tradition suggests using 5 medium zucchini or 5 medium carrots in place of the potatoes.
 
 ### Why do some people eat dairy on Chanukah?
-Chabad.org notes the custom, based on the story of Judith, who used cheese to entice and defeat the enemy general.
+Jewish tradition notes the custom, based on the story of Judith, who used cheese to entice and defeat the enemy general.
 
 ## Take the next step
 
