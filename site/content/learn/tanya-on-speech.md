@@ -29,13 +29,13 @@ Chapter 35 continues the thought. Studying Torah with thought and speech draws t
 
 Chapter 35 builds on the verse "For the matter is very near to you, in your mouth and in your heart, that you may do it" (Deuteronomy 30:14). The "mouth" is speech, the "heart" is thought and feeling, and the verse ends with "that you may do it," which points to action. In other words, what we say and feel should lead to what we do.
 
-The "very near" part is encouraging. As Chassidic teaching explains, the mind can move the heart, so a person does not have to wait for a feeling to arrive. It is within reach to speak the words and let the heart follow.
+The "very near" part is encouraging. As the Tanya explains (Chapter 12), the mind by its nature rules over the heart, so a person does not have to wait for a feeling to arrive. It is within reach to speak the words and let the heart follow.
 
 The Tanya comes back to this verse in other chapters too. Chapter 17 explains why it is true: the mind is under a person's control even when the heart is not, so love of G-d in the mind is enough to guide the mouth and the hands. Chapter 41 uses it to teach that serving G-d with love and awe is within simple reach of every Jew.
 
 ## What this means for everyday speech
 
-The chapters we opened speak mainly of speech for Torah and prayer. But the idea carries over to other words. If speech is a garment of the soul, then each time we speak we show something of who we are. In Chapter 30, in a discussion of humility, the Tanya quotes the advice Rabbi Shimon's father gave him: "Keep away from slander." Our tradition has detailed laws about harmful speech; see [lashon hara](/learn/lashon-hara) and [hurtful words](/learn/hurtful-words).
+The chapters quoted here speak mainly of speech for Torah and prayer. But the idea carries over to other words. If speech is a garment of the soul, then each time we speak we show something of who we are. In Chapter 30, in a discussion of humility, the Tanya quotes the advice Rabbi Shimon's father gave him: "Keep away from slander." Our tradition has detailed laws about harmful speech; see [lashon hara](/learn/lashon-hara) and [hurtful words](/learn/hurtful-words).
 
 A few questions you can ask yourself before speaking:
 
@@ -57,10 +57,10 @@ Thought, speech and action. They are how the G-dly soul expresses itself using t
 It is from Deuteronomy 30:14. The Tanya (Chapter 35) reads it as pointing to speech, thought and feeling, all leading to doing the mitzvah.
 
 ### Does Tanya say anything about gossip?
-The chapters we studied for this guide do not focus on gossip, but quote the advice to keep away from slander. See [lashon hara](/learn/lashon-hara) for the laws.
+The chapters quoted in this guide do not focus on gossip, but Chapter 30 quotes the advice to keep away from slander. See [lashon hara](/learn/lashon-hara) for the laws.
 
 ### Does it matter if I don't feel anything when I pray or learn?
-Chassidic thought says the heart's feelings follow the mind, and that what counts is that they lead to action. Ask the Rabbi about your own situation.
+The Tanya teaches that the heart's feelings follow the mind, and that what counts is that they lead to action. Ask the Rabbi about your own situation.
 
 ### Where can I learn the Tanya near Lafayette, Moraga or Orinda?
 Chabad of Lamorinda has a Tanya class in English every Wednesday at 1:00 PM at the Rabbi's home in Lafayette. Call 925-384-7242 for the address.

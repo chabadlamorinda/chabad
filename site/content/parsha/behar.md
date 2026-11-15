@@ -5,7 +5,7 @@ related: shmita, shabbat, tanya-on-money, tzedakah, shabbat-for-working-parents
 ---
 ## The Rebbe's teaching
 
-When we cannot feel why a mitzvah matters, we can still serve with steady effort, and that effort keeps the inner light alive. Parshat Behar speaks about two special years: Shemittah, the seventh year when the land rests, and the Jubilee, the fiftieth year. The Rebbe notices a puzzle in the Talmud. The Jerusalem Talmud implies that Shemittah is tied to the Jubilee, while the Babylonian Talmud treats it as complete on its own. And after the Jubilee lapsed, the Jews still counted the seventh year. Why?
+When we cannot feel why a mitzvah matters, we can still serve with steady effort, and that effort keeps the inner light alive. Parshat Behar speaks about two special years: Shemittah, the seventh year when the land rests, and the Jubilee, the fiftieth year. The Rebbe notices a puzzle: some passages of the Talmud tie Shemittah to the Jubilee, while others treat it as complete on its own. And after the Jubilee lapsed, the Jews still counted the seventh year. Why?
 
 The Rebbe explains that the two years express two ways of setting ego aside. Shemittah is the way of effort: a deliberate decision to quiet the self, when our ego keeps asking "What shall we eat?" This is a real inner struggle, and the Torah names the question out loud (Leviticus 25:20). The Jubilee is the way of understanding: a self-nullification that comes from seeing clearly, spreading through the whole person and breaking through self-deception.
 

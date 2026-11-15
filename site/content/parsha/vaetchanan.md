@@ -13,7 +13,7 @@ Then the Rebbe asks a question. The verse about teaching speaks about children, 
 
 The Rebbe answers that the Torah is teaching us to learn the way children do. A person who understands Torah can become proud, feeling that his understanding is a great accomplishment. The more a person knows, the more he may begin to think about himself instead of G-d. But G-d does not want this. Compared to G-d, even the greatest Rabbi is like a little child. So whenever a grown person opens a Chumash or a page of Talmud, he should see himself as a young child. Even after he has learned a great deal, he must remember that the Torah belongs to G-d, and that he is like a small child being taught by his loving Father in Heaven.
 
-What does this mean for us? It means that we are all beginners, and that this is a good thing. A beginner is curious, is not afraid to ask, and is ready to be surprised. Whether you are saying the Shema for the first time or the ten-thousandth time, you can say it as a child says it, with a simple trust that G-d is one and that He loves us. (Likkutei Sichos, vol. 19, p. 38, as adapted on Chabad.org.)
+What does this mean for us? It means that we are all beginners, and that this is a good thing. A beginner is curious, is not afraid to ask, and is ready to be surprised. Whether you are saying the Shema for the first time or the ten-thousandth time, you can say it as a child says it, with a simple trust that G-d is one and that He loves us. (Likkutei Sichos, vol. 19, p. 38.)
 
 ## A story
 

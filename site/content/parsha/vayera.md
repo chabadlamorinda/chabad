@@ -17,7 +17,7 @@ For us, the practical message is simple. Invite someone, especially for a Shabba
 
 ## A story
 
-Yaakov Ben-Tor tells this story in the first person, in a letter adapted by Yerachmiel Tilles for KabbalaOnline.org. It is told as a true personal experience; the page does not independently verify it.
+A well-known story; its details cannot be confirmed. Yaakov Ben-Tor told it in the first person, in a letter that Rabbi Yerachmiel Tilles later retold.
 
 Yaakov lived in Rehovot, Israel, and worked in Tel Aviv. One night, driving home late, he took a back road instead of the main highway. His old car had no interior lights, and the road was very dark. By the roadside he saw an elderly man hitchhiking, and he stopped.
 

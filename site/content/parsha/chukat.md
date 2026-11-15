@@ -20,7 +20,7 @@ The Rebbe also shows what this means for us. To draw down that light, a person m
 - Remember that we are agents, not the source of success.
 - Do not forget your own growth. The ashes were divided into three parts: one to purify others, one for the priests, and one kept as a "testimonial" so that giving to others never leaves us empty.
 
-(Likkutei Sichos, vol. 4, adapted from a talk on Shabbat Parshat Chukat, 5710.)
+(Based on the Rebbe's talks on Parshat Chukat, printed in Likkutei Sichos.)
 
 ## A story
 
@@ -62,6 +62,7 @@ Perhaps this week you can pick one mitzvah that you do just because it is a mitz
 
 ### What is Parshat Chukat about?
 Parshat Chukat (Numbers 19:1-22:1) begins with the law of the red heifer and then tells of the passing of Miriam and the loss of water, Moses striking the rock, the passing of Aaron, and Israel's journeys and battles on the way to the Land.
+
 ### What does the Rebbe teach about Parshat Chukat?
 The Rebbe teaches that the red heifer is a chok, a law above reason that expresses G-d's essential will, and that it calls us to help others selflessly while keeping our own spiritual growth. Our commitment to G-d reaches deeper than our understanding.
 

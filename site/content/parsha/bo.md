@@ -9,7 +9,7 @@ The Rebbe teaches that the light a Jew gains through Torah and prayer is meant t
 
 The Rebbe begins with the plague of darkness. The Torah says that during it, "all the Children of Israel had light in their dwellings." The Midrash reads this as a miracle: a special light accompanied the Jews wherever they went, and it let them see the hidden gold, silver and treasures of the Egyptians. Rashi reads it differently. For Rashi, the only miracle was the darkness itself, which left the Egyptians helpless, so that the Jews could look through their houses by ordinary light. The Rebbe asks why they differ.
 
-He explains that a basic principle of Jewish life is to do mitzvot through natural means and not through miracles. As an example, the Alter Rebbe waited to say the blessing on the moon until a boat's official stopped the boat willingly, and not by a miracle. Rashi applies the principle here. The Midrash gives reasons why it did not apply to the Egyptian wealth: the principle mostly governs mitzvot given after Sinai, this was a reward promised to Abraham rather than a commandment, and reaching hidden treasures needed a special light.
+He explains that a basic principle of Jewish life is to do mitzvot through natural means and not through miracles. For example, when the Alter Rebbe was traveling by boat, he waited to say the blessing on the new moon until the official in charge agreed to stop the boat, rather than relying on a miracle. Rashi applies the principle here. The Midrash gives reasons why it did not apply to the Egyptian wealth: the principle mostly governs mitzvot given after Sinai, this was a reward promised to Abraham rather than a commandment, and reaching hidden treasures needed a special light.
 
 The Rebbe then gives a deeper reading. The Midrash includes the light in the plague, because the light we gain through Torah and prayer has to enter the "Egyptian homes" of the physical world and bring out the holiness in it. Rashi's reading shows a later stage, when the world has been refined and the soul returns to its true place.
 
@@ -17,9 +17,9 @@ The practical lessons are these. Jewish life has two parts: the inner work of To
 
 ## A story
 
-This is how the Rebbe's tefillin campaign began, as it is told in the Rebbe's own teachings. In early June 1967, as Egypt closed the Straits of Tiran and two days before the Six Day War began, the Rebbe spoke at a gathering. He cited the Torah's promise that "all the nations of the world will see that the Name of G-d is proclaimed upon you and will fear you," which the Sages read as referring to the tefillin worn on the head. He said that this mitzvah gives the Jewish people added strength in times of crisis.
+This is how the Rebbe's tefillin campaign began, with a story told by one of his chassidim. In early June 1967, while Israel was surrounded by hostile armies and just days before the Six Day War began, the Rebbe spoke at a gathering. He cited the Torah's promise that "all the nations of the world will see that the Name of G-d is proclaimed upon you and will fear you," which the Sages read as referring to the tefillin worn on the head. He said that this mitzvah gives the Jewish people added strength in times of crisis.
 
-Chassidim around the world, especially in Israel, answered quickly. They looked for ways to offer soldiers and civilians a chance to put on tefillin. Shortly after the Western Wall was liberated, many Lubavitch chassidim, some in uniform, invited soldiers praying there to put on tefillin. Soon a pushcart with spare pairs stood at the Wall, staffed by approachable chassidim. Many of the hundreds of thousands who later began wearing tefillin first met the mitzvah there.
+Chassidim around the world, especially in Israel, answered quickly. They looked for ways to offer soldiers and civilians a chance to put on tefillin. Shortly after the Western Wall was liberated, many Lubavitch chassidim, some in uniform, invited soldiers praying there to put on tefillin. Soon a pushcart with spare pairs stood at the Wall, staffed by approachable chassidim. Many people first met the mitzvah there.
 
 A London businessman, Benzion Rader, was once asked by a neighbor why the Rebbe had chosen this mitzvah. He had no answer. Later in 1967, during a private audience, he asked the Rebbe himself. The Rebbe gave two answers. First, the Talmud says that a Jew who has worn tefillin on his head even once no longer belongs to a certain category. Second, a Jew in Miami who sees a photo of Jews putting on tefillin at the Wall may be inspired to do the same.
 
@@ -34,7 +34,7 @@ One photograph, one pair of tefillin, a light carried into a distant home.
 - Discuss: "Torah and prayer" are the inner work, and our job and daily tasks are the outer work. How can the first touch the second?
 - Talk about the photograph in the story. Has a picture or a story ever inspired you to do something Jewish?
 - For children: tefillin remind us to serve G-d with our heart and mind. What would you like to dedicate your heart and mind to?
-- Adults: is there a Jewish activity you stopped, like Benzion Rader's friend with his tefillin, that you could begin again?
+- Adults: is there a Jewish activity you stopped, like the accountant in Miami with his tefillin, that you could begin again?
 
 ## An essay
 

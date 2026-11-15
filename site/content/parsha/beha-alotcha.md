@@ -7,9 +7,9 @@ related: pesach-sheni, ahavat-yisrael, teshuvah, why-jewish-community-matters, t
 
 The goal of lighting another person's flame is that it rises and shines on its own. Parshat Beha'alotcha opens with the command to Aaron to light the lamps of the Menorah. But the Torah does not say "when you light." It says beha'alotcha, "when you raise up." The Rebbe asks: why this word?
 
-The Sages explain, in the Sifra and the Talmud, that Aaron must kindle the lamp "until the flame rises by itself." He holds the fire to the wick until the new flame no longer needs him. The Rebbe teaches that this describes Aaron's mission with the people. He did not want followers who depended on his inspiration. He wanted to bring them to a love of G-d that they could sustain without him.
+The Sages explain (Talmud, Shabbat 21a, and Rashi) that Aaron must kindle the lamp "until the flame rises by itself." He holds the fire to the wick until the new flame no longer needs him. The Rebbe teaches that this describes Aaron's mission with the people. He did not want followers who depended on his inspiration. He wanted to bring them to a love of G-d that they could sustain without him.
 
-The Rebbe draws several practical lessons from this. First, everyone has a role: spreading Torah and warmth is a privilege and a responsibility for every Jew, not only a select few. Second, we do not lower the Torah to win people. Aaron "did not lower the Torah; he raised people." Third, we go out to people with patience and love, rather than waiting for them to come. And fourth, we aim high: we hope that the one we helped will in time shine independently.
+The Rebbe draws several practical lessons from this. First, everyone has a role: spreading Torah and warmth is a privilege and a responsibility for every Jew, not only a select few. Second, we do not lower the Torah to win people. Aaron, as the Mishnah says, "loved people and brought them close to the Torah": he raised people up to the Torah rather than bringing the Torah down to them. Third, we go out to people with patience and love, rather than waiting for them to come. And fourth, we aim high: we hope that the one we helped will in time shine independently.
 
 The Rebbe also notes details of the Temple Menorah: anyone could light it, but only a kohen could prepare the wicks and oil. And the Temple windows were broad on the outside and narrow within, because the light of the Temple was meant to flow outward to the world.
 
@@ -17,13 +17,13 @@ What it means for us: the best teacher, parent or friend is one who leaves you a
 
 ## A story
 
-A well-known story; its details cannot be confirmed. Rabbi Yosef Yitzchak Schneersohn, the previous Lubavitcher Rebbe, once sent Rabbi Shmuel Levitin to Chicago to bring warmth and inspiration to the Jewish community there. Before the rabbi left New York, the Rebbe also asked him to visit a wealthy businessman, Charles Listner, a descendant of a distinguished Chassidic family, and give him the Rebbe's regards and blessings.
+A well-known story; its details cannot be confirmed. Rabbi Yosef Yitzchak Schneersohn, the previous Lubavitcher Rebbe, once sent Rabbi Shmuel Levitin to Chicago to bring warmth and inspiration to the Jewish community there. Before the rabbi left New York, the Rebbe also asked him to visit a wealthy businessman there, a descendant of a distinguished Chassidic family, and give him the Rebbe's regards and blessings.
 
-At the train station, Rabbi Yosef Wineberg welcomed him, and Rabbi Levitin immediately asked if he knew Mr. Listner and which synagogue he attended. Rabbi Wineberg replied that he could say which synagogue Listner ought to attend, but not that that was where Levitin would find him.
+At the train station a local Chassid welcomed him, and Rabbi Levitin immediately asked if he knew the businessman and which synagogue he attended. The Chassid replied that he could say which synagogue the man ought to attend, but not that that was where Rabbi Levitin would find him.
 
-When the two visited Listner's office, he welcomed them warmly and was touched by the Rebbe's greeting. At the end he took out his checkbook and asked where to send a donation. Rabbi Levitin declined. He had not come to collect money. Listner was puzzled. Why would the Rebbe send an elderly rabbi from New York just to have a cold drink with him?
+When the two visited the businessman's office, he welcomed them warmly and was touched by the Rebbe's greeting. At the end he took out his checkbook and asked where to send a donation. Rabbi Levitin declined. He had not come to collect money. The businessman was puzzled. Why would the Rebbe send an elderly rabbi from New York just to have a cold drink with him?
 
-Rabbi Levitin answered with a parable. In small European towns there was no full-time scribe, so a traveling scribe went from town to town, checking and repairing the holy scrolls. He was like that scribe, he said, bringing spiritual ink and warmth to people whose connection had faded. Listner was deeply moved.
+Rabbi Levitin answered with a parable. In small European towns there was no full-time scribe, so a traveling scribe went from town to town, checking and repairing the holy scrolls. He was like that scribe, he said, bringing spiritual ink and warmth to people whose connection had faded. The businessman was deeply moved.
 
 When Rabbi Levitin told this to the Rebbe, the Rebbe agreed with one correction. A Torah scroll's ink can be erased. But a Jew's Torah is engraved in the heart, like the letters of the Ten Commandments on the tablets. What gathers is only dust, and the scribe's job is to brush it off so the letters shine again.
 

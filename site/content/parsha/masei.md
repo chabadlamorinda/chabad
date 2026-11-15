@@ -19,7 +19,7 @@ The Rebbe draws three lessons for us:
 2. **Honor the present stage.** Each phase has its own holiness and importance.
 3. **A fall is not the end.** A setback can lead to a higher climb, through teshuvah.
 
-And moving forward takes trust in G-d, being willing to set out without knowing the destination. (Likkutei Sichos, vol. 2, p. 348, and other talks, as adapted on Chabad.org.)
+And moving forward takes trust in G-d, being willing to set out without knowing the destination. (Likkutei Sichos, vol. 2, p. 348, and other talks.)
 
 ## A story
 
@@ -27,7 +27,7 @@ This is the true story of one very long journey. In the summer of 1927 (5687) th
 
 After further pressure, the authorities decided to release him. He learned of the decision on his birthday, the twelfth of Tammuz. The next day he was allowed to leave and settled in Malachovka, near Moscow. After more intervention, he received permission to leave Russia for Riga, Latvia. On the day after Sukkot, he left for Riga with his family and most of his library.
 
-There he did not stop to rest. He immediately began building a Talmudic seminary. In the following years he arranged matzot for Jews in Russia.
+There he did not stop to rest. He went on working for the Jews he had left behind, and in the following years he arranged matzot for Jews in Russia.
 
 It is a journey with unusual stops: a prison cell, an exile, a train station, a new city. Yet the account shows that at every stop, even the hardest, the Rebbe's work for Jewish life went on, and at the end of the journey it began again in a new place.
 

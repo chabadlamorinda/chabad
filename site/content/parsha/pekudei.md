@@ -21,7 +21,7 @@ What this means in practice:
 
 ## A story
 
-This story is told on Chabad.org as a true account from Jerusalem. In the Beit Yisrael neighborhood, around Passover time, Rabbi Shlomo Zalman Porush, a man of modest means, was secretary of a society that distributed funds from abroad to poor families. When funds from the Minsk community were delayed before Passover, he borrowed 200 napoleons of gold from his elderly neighbor Reb Faivish Stoller, a carpenter, so the families could eat. There was no written contract.
+This story is told as a true account from Jerusalem. In the Beit Yisrael neighborhood, around Passover time, Rabbi Shlomo Zalman Porush, a man of modest means, was secretary of a society that distributed funds from abroad to poor families. When funds from the Minsk community were delayed before Passover, he borrowed 200 napoleons of gold from his elderly neighbor Reb Faivish Stoller, a carpenter, so the families could eat. There was no written contract.
 
 After the holiday, Rabbi Shlomo Zalman repaid 110 napoleons at once, and weeks later the other 90. But Reb Faivish's memory was failing, and he denied receiving the first payment. The case went to Rabbi Shmuel Salant, the chief rabbi of Jerusalem.
 

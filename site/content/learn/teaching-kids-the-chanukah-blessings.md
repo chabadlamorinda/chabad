@@ -63,6 +63,7 @@ Only the first night, or the first time you light the menorah this Chanukah. It 
 
 ### Where can I hear the Chanukah blessings in Lamorinda?
 At Chabad of Lamorinda's Chanukah events, where families from Lafayette, Moraga and Orinda light together. Call 925-384-7242 to hear what is planned.
+
 ## Take the next step
 
 - Children love to hear stories while they watch the flames. Our next guide has [Chanukah bedtime stories](/learn/chanukah-bedtime-stories).

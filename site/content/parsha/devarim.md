@@ -9,17 +9,17 @@ The Rebbe teaches that inspiration is not enough: a vision of the future Temple 
 
 The Shabbat on which Devarim is read is called Shabbat Chazon, "the Shabbat of vision," named after the opening of the haftarah. Rabbi Levi Yitzchak of Berditchev taught that on this day every Jew is shown, from afar, a vision of the future Beit HaMikdash. But most of us do not consciously see anything. The Rebbe asks: how can a vision we do not perceive change us?
 
-The Rebbe answers with a parable. A father has a precious garment made for his son, and the son tears it. He makes a second one, and it is also torn. He makes a third, and shows it to his son only from time to time, promising that he will give it once the son behaves properly. The vision is shown to everyone, but it is aimed above all at those who most need training and growth.
+The Rebbe answers with Rabbi Levi Yitzchak's own parable. A father has a precious garment made for his son, and the son tears it. He makes a second one, and it is also torn. He makes a third, and shows it to his son only from time to time, promising that he will give it once the son behaves properly. The vision is shown to everyone, but it is aimed above all at those who most need training and growth.
 
 The Rebbe explains that a heavenly call to teshuvah stirs us, but the stirring fades unless we work to hold on to it. The vision of Shabbat Chazon is meant to last. It shapes a person, little by little, until good conduct comes naturally. This is also why Devarim, which begins with Moses' words of rebuke before his death, is connected to Shabbat Chazon: rebuke leads to teshuvah, a climb from below, and the vision is a gift from above. We need both.
 
 Why will the Third Temple last, when the first two were destroyed? The Rebbe cites the Zohar, which says the first two were "mortal structures" while the third is the structure of the Holy One, blessed be He. The Third Temple joins the higher and lower worlds, so that the finite world is united with the infinite and becomes eternal.
 
-For us the lesson is practical. A burst of inspiration is a beginning. What matters is what we do with it on an ordinary Tuesday. And those who feel farthest from the vision are exactly the ones for whom it was prepared. (Likkutei Sichos, vol. 9, Devarim, Shabbat Chazon.)
+For us the lesson is practical. A burst of inspiration is a beginning. What matters is what we do with it on an ordinary Tuesday. And those who feel farthest from the vision are exactly the ones for whom it was prepared. (Based on the Rebbe's talks on Parshat Devarim and Shabbat Chazon, printed in Likkutei Sichos.)
 
 ## A story
 
-Rabbi Levi Yitzchak of Berditchev (1740-1809), a student of the Maggid of Mezeritch, led the community of Berditchev for nearly twenty-five years. He is remembered above all as a defender of his people, and Chabad.org tells two short stories about him.
+Rabbi Levi Yitzchak of Berditchev (1740-1809), a student of the Maggid of Mezeritch, led the community of Berditchev for nearly twenty-five years. He is remembered above all as a defender of his people. Here are two short stories told about him. They are well-known stories; their details cannot be confirmed.
 
 One Shabbat, Rabbi Levi Yitzchak saw a young Jewish man smoking in the street. He asked the young man whether he had forgotten that smoking is forbidden on Shabbat. The man said he had not forgotten. The rabbi asked whether something had pushed him to it. The man said no: he was doing it knowingly, by choice. Rabbi Levi Yitzchak looked up to Heaven and said, in effect: look how holy Your people are. They would rather call themselves sinners than tell a lie.
 
@@ -49,7 +49,7 @@ Both approaches grow out of one idea: you can only help a person grow if they fe
 
 And the vision must be turned into habits. A single inspiring moment is not enough, and so the Rebbe says it must shape us until good conduct comes naturally. Perhaps this week, you might choose one small action, such as speaking more gently to someone at home, or remembering a good word before a critical one.
 
-The days of mourning for the Temple remind us that its destruction came from baseless hatred, and that its rebuilding is built from love. If you would like to take one small step in that direction, you are warmly invited to a Shabbat at Chabad of Lamorinda in Lafayette (call 925-384-7242), or to the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address).
+The days of mourning for the Temple remind us that its destruction came from baseless hatred, and that its rebuilding will come through love. If you would like to take one small step in that direction, you are warmly invited to a Shabbat at Chabad of Lamorinda in Lafayette (call 925-384-7242), or to the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address).
 
 ## Common questions
 

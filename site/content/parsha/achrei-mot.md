@@ -15,7 +15,7 @@ What it means for us: all of us have moments of spiritual intensity, on Shabbat,
 
 ## A story
 
-A well-known Chassidic story; its details cannot be confirmed. On Yom Kippur eve the congregation in Liadi waited for their rebbe, Rabbi Shneur Zalman, the Alter Rebbe, to begin Kol Nidrei. He stood absorbed in thought with his tallit over his head. Then, suddenly, he took off his tallit and his white kittel and left the synagogue.
+A well-known story; its details cannot be confirmed. On Yom Kippur eve the congregation in Liadi waited for their rebbe, Rabbi Shneur Zalman, the Alter Rebbe, to begin Kol Nidrei. He stood absorbed in thought with his tallit over his head. Then, suddenly, he took off his tallit and his white kittel and left the synagogue.
 
 The chassidim waited for more than two hours. At last he returned, put on his holy garments and began to pray.
 

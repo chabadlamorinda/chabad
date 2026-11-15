@@ -9,7 +9,7 @@ After Yom Kippur ends at nightfall, we hear Havdalah and then sit down to a fest
 
 ## Why the break-fast is a celebration
 
-The Torah's verse in Ecclesiastes (9:7), "Go, eat your bread with joy and drink your wine with a glad heart," is understood by our sages to be said on the night after Yom Kippur. After the long fast, we trust that we were forgiven, so the meal is joyful. The shofar blast at the end of [Neilah](/learn/neilah) announces it.
+The verse in Ecclesiastes (9:7), "Go, eat your bread with joy and drink your wine with a glad heart," is understood by our sages to be said on the night after Yom Kippur. After the long fast, we trust that we were forgiven, so the meal is joyful. The shofar blast at the end of [Neilah](/learn/neilah) announces it.
 
 Chassidic teaching adds that this meal channels the spiritual gains of Yom Kippur into material blessings for the year ahead. In other words, ordinary eating becomes holy.
 
@@ -54,7 +54,7 @@ Yes, Havdalah is said first, after nightfall, as at the end of Shabbat. Ask the 
 Yes. Our sages teach that a heavenly voice calls, "Go, eat your bread with joy," and the meal is festive, not merely practical.
 
 ### Why do we dip bread in honey after Yom Kippur?
-It is the custom, as on Rosh Hashanah, for a sweet year. It is customary to wash and dip bread in honey.
+It is the custom, as on Rosh Hashanah, for a sweet year: we wash for bread and dip it in honey.
 
 ### Should we start the sukkah after Yom Kippur?
 Ideally yes: start building it that night, or at least discuss it, to go from one mitzvah to the next.

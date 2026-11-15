@@ -29,7 +29,7 @@ In the morning the woodcutter opened up and greeted him warmly, and asked why he
 
 The chassid was delighted. This, he said, was the very answer he had come to find. The woodcutter, who did not know what he meant, was left puzzled.
 
-The point: a person is the master of his own mind. Thoughts may knock loudly, but we decide whether to open the door. The Rebbe's advice for unwanted thoughts was the same: do not argue with them for hours, but turn your attention to something good. See also [unwanted thoughts in the Tanya](/learn/tanya-unwanted-thoughts).
+The point: a person is the master of his own mind. Thoughts may knock loudly, but we decide whether to open the door. The Alter Rebbe's advice in the Tanya for unwanted thoughts is similar: do not argue with them for hours, but turn your attention to something good. See also [unwanted thoughts in the Tanya](/learn/tanya-unwanted-thoughts).
 
 ## Ideas for the Shabbat table
 
@@ -46,7 +46,7 @@ Every day, thousands of things try to enter us. Headlines, messages, opinions, a
 
 Shoftim speaks first about courts and police, the machinery of a just society. But the Rebbe, following Chassidic teaching, invites us to see that the same structure exists inside each of us. We need a judge, a calm part of ourselves that asks: is this good for me, for my family, for the world? And we need an officer, the discipline to follow the judge's decision when we are tired, angry or tempted.
 
-What I find most encouraging in the Rebbe's teaching is that it does not stop at discipline. Enforcement alone, he says, produces correct behavior but not a changed heart. The deeper goal is the counselor who explains and persuades. That means we should be gentle with ourselves: when we try to improve, we need more than a stern inner officer. We need an inner friend who explains why this change is good for us.
+What is most encouraging in the Rebbe's teaching is that it does not stop at discipline. Enforcement alone, he says, produces correct behavior but not a changed heart. The deeper goal is the counselor who explains and persuades. That means we should be gentle with ourselves: when we try to improve, we need more than a stern inner officer. We need an inner friend who explains why this change is good for us.
 
 The same is true for parents. A child who is only ordered to behave may comply while we are looking. A child who understands why kindness matters carries it into the room where we are not.
 

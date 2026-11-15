@@ -23,7 +23,7 @@ The Rebbe gave him a simple image. "Sometimes in life you have to go back, so th
 
 Mendel was stationed at Fort Pickett in Virginia, and was in the end sent to Europe and not to Korea. He began writing to the Rebbe, who answered with encouragement, a booklet for soldiers, and reminders about tefillin and Psalm 23. Each letter included materials for Purim, Passover or Chanukah to share with fellow soldiers. When Mendel apologized for losing some coins the Rebbe had given him, the Rebbe sent another quarter and told him not to worry.
 
-When Mendel was transferred to Munich, the Rebbe asked him to visit Rabbi Snieg, a Chabad chassid there. After Mendel reported that he had gone, the Rebbe answered that he had been wondering about his long silence. Mendel took this as proof that the Rebbe truly cared about him and every Jewish soldier.
+When Mendel was transferred to Munich, the Rebbe asked him to visit Rabbi Snieg, a rabbi in Munich. After Mendel reported that he had gone, the Rebbe answered that he had been wondering about his long silence. Mendel took this as proof that the Rebbe truly cared about him and every Jewish soldier.
 
 Looking back, Mendel saw that his time away from home had given him the chance to draw others closer to Torah, just as the Rebbe had said.
 

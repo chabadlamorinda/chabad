@@ -18,7 +18,7 @@ There are several explanations, and each adds a layer:
 
 ## The miracle of the 10th of Nissan
 
-According to a traditional account, the Jews took a lamb on the 10th of Nissan. When the firstborn of Egypt asked what it was for, they answered that G-d would strike the Egyptian firstborn. The firstborn pressed their parents and Pharaoh to let the Jews go, and when they refused, the firstborn fought against them. Psalm 136 alludes to this ("who struck Egypt through their firstborn"). The lambs were slaughtered on the 14th and the Jews left Egypt the next morning, the 15th. You can read the whole story in [the Exodus story](/learn/exodus-story) and about the month in [Nissan](/learn/nissan).
+The Midrash relates that the Jews took a lamb on the 10th of Nissan. When the firstborn of Egypt asked what it was for, they answered that G-d would strike the Egyptian firstborn. The firstborn pressed their parents and Pharaoh to let the Jews go, and when they refused, the firstborn fought against them. Psalm 136 alludes to this ("who struck Egypt through their firstborn"). The lambs were slaughtered on the 14th and the Jews left Egypt the next morning, the 15th. You can read the whole story in [the Exodus story](/learn/exodus-story) and about the month in [Nissan](/learn/nissan).
 
 ## What do we do on Shabbat HaGadol?
 

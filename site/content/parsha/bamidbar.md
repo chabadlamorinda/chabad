@@ -15,7 +15,7 @@ What it means for us: every person is precious and cannot be replaced. The essen
 
 ## A story
 
-This is a true story from the Rebbe's life. In 1986 the Rebbe began a weekly receiving line on Sundays. For the first twenty-five years of his leadership he had met people privately three evenings a week, but as the numbers grew, that became impossible. Now he stood in a small room near his office at 770 Eastern Parkway in Crown Heights, and thousands of men, women and children filed past him each week, to see him and receive a blessing.
+This is a true story from the Rebbe's life. In 1986 the Rebbe began a weekly receiving line on Sundays. For many years he had met people privately late into the night, but as the numbers grew, that became impossible. Now he stood in a small room near his office at 770 Eastern Parkway in Crown Heights, and thousands of men, women and children filed past him each week, to see him and receive a blessing.
 
 Many asked a question and received a word of advice. And the Rebbe gave each person a dollar bill, appointing them his personal agent to give it to the charity of their choice. He explained that his father-in-law, the previous Rebbe, used to say that "when two people meet, something good should result for a third." The Rebbe wanted every one of those many meetings to produce a mitzvah.
 

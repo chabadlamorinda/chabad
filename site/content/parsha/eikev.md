@@ -11,13 +11,13 @@ The portion opens with a promise of blessing "eikev tishme'un," which can mean "
 
 The Rebbe asked the natural question: why would the Torah promise a special reward for these mitzvot? His answer was that they are the ones woven quietly into daily life, the ones nobody would notice if we skipped. The obviously important mitzvot we keep almost out of necessity, because everyone sees their weight. But a mitzvah that is easy to overlook asks us to go beyond what comes naturally. That extra commitment is what draws extra blessing.
 
-The Rebbe also found a message for our own time. Our Sages call the last generation before Moshiach "the heels of Moshiach." Heels are the least refined part of the body, yet they respond to the will at once, and they carry the whole body forward. To enter very cold water, he said, we put the feet in first. A generation that may feel far from greatness can still show a simple, direct devotion, and that is exactly what brings redemption closer.
+The Rebbe also found a message for our own time. Our Sages call the last generation before Moshiach "the heels of Moshiach." Heels are the least refined part of the body, yet they respond to the will at once, and they carry the whole body forward. A generation that may feel far from greatness can still show a simple, direct devotion, and that is exactly what brings redemption closer.
 
 What this means for us: do not wait for a big, impressive moment to begin. A blessing said before eating, a coin in the tzedakah box, a kind word, a few minutes of Torah: each one counts fully. We can start with the small mitzvah that is within reach this week.
 
 ## A story
 
-Rochel Holzkenner, a mother of four who co-directs Chabad of Las Olas in Florida, tells about a birthday resolution she made. She could have chosen something impressive. Instead she chose something that sounded almost too simple: to make a fresh dinner for her family twice a week. She admits that for her it was a real struggle, and that is exactly why she chose it. It was what she needed.
+Rochel Holzkenner, who co-directs Chabad of Las Olas in Florida, tells about a birthday resolution she made. She could have chosen something impressive. Instead she chose something that sounded almost too simple: to make a fresh dinner for her family twice a week. She admits that for her it was a real struggle, and that is exactly why she chose it. It was what she needed.
 
 Then she opened Parshat Eikev and noticed the word heel. She learned that Rashi speaks of the mitzvot people trample with their heels, and she connected it to the Rebbe's talk on this portion from Shabbat Eikev in 1991. Her thought was that the smallest, least glamorous commitments are not trivial at all. Dull, ordinary work in the lowest places of life is how G-d's presence is brought into the world, and it is a path the Torah says brings blessing.
 

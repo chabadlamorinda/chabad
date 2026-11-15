@@ -22,7 +22,7 @@ For us, the Rebbe draws these lessons:
 
 ## A story
 
-The Chafetz Chaim, Rabbi Yisrael Meir Kagan (known by the title of his book on the laws of forbidden speech) lived in Radin, Poland. Rabbi Mendel Weinbach of Ohr Somayach retold this story.
+The Chafetz Chaim, Rabbi Yisrael Meir Kagan (known by the title of his book on the laws of forbidden speech), lived in Radin, Poland. Rabbi Mendel Weinbach of Ohr Somayach retold this story.
 
 A Torah scholar once visited the Chafetz Chaim at his home. The sage was in his mid-eighties and frail, yet he was in unusually good spirits. He asked his guest to come close and open his mouth so he could count his teeth. The guest hesitated, but the sage insisted. The visitor counted, and found that the elderly sage had a full set of teeth, in excellent condition.
 

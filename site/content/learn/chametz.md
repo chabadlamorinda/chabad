@@ -46,7 +46,7 @@ The next morning, burn the chametz you found, before the deadline in the late mo
 ## Common questions
 
 ### Is it really necessary to sell chametz?
-If you have chametz you do not want to throw out, selling it is the way to avoid owning it on Passover. Many people sell to be safe, in case some chametz was missed. Use our online form or call us.
+If you have chametz you do not want to throw out, selling it is the way to avoid owning it on Passover. Many people sell to be safe, in case some chametz was missed. Use our [online form](/forms/sell-chametz) or call 925-384-7242.
 
 ### What if I find chametz during Passover?
 Do not eat it. On a weekday of the holiday, burn it or flush it away right away. On Shabbat or a full holiday day, cover it and dispose of it afterward. Ask the Rabbi if you are not sure.

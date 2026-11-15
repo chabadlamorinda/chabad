@@ -11,7 +11,7 @@ Tzav mentions the continual fire kept burning on the outer altar. The Rebbe asks
 
 He finds two dangers that the fire guards against. The first is overconfidence. A person who has reached a calm, lofty understanding may decide that intellect has outgrown passion and that the fire is no longer needed. The second is the opposite: a person who has drifted so far that he feels no connection at all may give up. The Rebbe's answer to the second is that a spark always remains in the heart, and it can be fanned into flame.
 
-The fire must also be continual. The Maggid of Mezeritch read the words "it shall not go out" as fire that "puts out the 'no'", the inner voice of hesitation. But it only works if we feed it constantly. Enthusiasm from the past is not enough, because coldness quickly returns.
+The fire must also be continual. The Chassidic masters read the words "it shall not go out" as fire that "puts out the 'no'", the inner voice of hesitation. But it only works if we feed it constantly. Enthusiasm from the past is not enough, because coldness quickly returns.
 
 The Rebbe asks us to bring "life, involvement and fire" to three things:
 
@@ -21,7 +21,7 @@ The Rebbe asks us to bring "life, involvement and fire" to three things:
 
 ## A story
 
-A Chassidic story, told by Rabbi Nechemia of Dubrovna, illustrates the same point. It is a teaching story, and its details cannot be confirmed.
+A well-known story; its details cannot be confirmed. It was told by Rabbi Nechemia of Dubrovna, and it illustrates the same point.
 
 Reb Nechemia told of a time he saw a Russian soldier standing guard on a winter night during the czar's rule. The soldier's feet froze inside his boots. For this, his commander had him whipped. The commander's reproach was that the soldier should have remembered the oath he had taken to serve the czar, and that this memory should have kept him warm.
 
@@ -48,7 +48,7 @@ The Rebbe's honesty is striking. He names two ways the fire dies. One is complac
 
 A practical way for a modern family to begin: pick one small daily fuel. A few words of prayer in the morning, a line of Torah at night, one kind phone call, a coin in the charity box before dinner. Nothing is too small, because the point is continuity, not size.
 
-And fire is not only for ourselves. A fire is warm for everyone in the room. In Lafayette, Moraga and Orinda there are families who would love to feel that warmth but do not know where to start. A visible fire, the Rebbe says, is how we invite them.
+And fire is not only for ourselves. A fire is warm for everyone in the room. In Lafayette, Moraga and Orinda there are families who would love to feel that warmth but do not know where to start. A visible fire is how we invite them.
 
 Join us for a Shabbat at Chabad of Lamorinda in Lafayette (call 925-384-7242), or the Wednesday 1:00 PM Tanya class at the Rabbi's home (call for the address).
 

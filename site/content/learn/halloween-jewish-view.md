@@ -28,10 +28,10 @@ This is not about being unfriendly or making children feel left out. It is about
 ## Common questions
 
 ### Is Halloween a religious holiday?
-For most people today it is a secular night of fun, but it began as a pagan festival with roots in other religions' beliefs. That history is why Jewish tradition does not celebrate it.
+For most people today it is a secular night of fun, but it began as a pagan festival with roots in other religions' beliefs. That history is why Jews do not celebrate it.
 
 ### Can my kids go trick-or-treating?
-No. Jewish tradition does not take part in Halloween, and that includes trick-or-treating and handing out candy. Plan a special family activity for that night instead.
+No. A Jewish home does not take part in Halloween, and that includes trick-or-treating and handing out candy. Plan a special family activity for that night instead.
 
 ### What if trick-or-treaters knock on our door?
 Keep the porch light off, which is the usual sign that a home is not taking part. If someone knocks, a friendly "we don't celebrate Halloween, have a good night" is all that is needed.

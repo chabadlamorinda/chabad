@@ -13,11 +13,11 @@ The Rebbe asks a deeper question. Moses was troubled by the request, because it 
 
 The Rebbe explains that the difference lay in what the two tribes promised. They agreed to cross the Jordan with the rest of the nation, to leave their wives, children and possessions on the east side, to march at the front of the army, and to return only when everyone else was settled. Their request was not an escape from their mission, but a way of serving that matched their gifts. Shepherding is calm and leaves time for prayer and study, and our patriarchs and Moses were shepherds. A Chassidic reading adds that they saw even the humblest part of creation as holding great potential for elevation, and wanted to engage with it for that reason.
 
-The lesson is that involvement with the material world is right when it is grounded in a spiritual purpose, when a person separates what is necessary from what is superfluous, and when he first proves his commitment to the whole community. The nation also needs people who devote much of their time to peaceful study and prayer, and they too should help build the Land. When they support the others, they are partners in the work. (Likkutei Sichos, vol. 8, Parshat Matot, and the Rebbe's teachings as adapted on Chabad.org.)
+The lesson is that involvement with the material world is right when it is grounded in a spiritual purpose, when a person separates what is necessary from what is superfluous, and when he first proves his commitment to the whole community. The nation also needs people who devote much of their time to peaceful study and prayer, and they too should help build the Land. When they support the others, they are partners in the work. (Likkutei Sichos, vol. 8, Parshat Matot.)
 
 ## A story
 
-This is true history, as Chabad teaches it. In the Soviet Union, the Communist regime fought against teaching Judaism to children. The sixth Lubavitcher Rebbe, Rabbi Yosef Yitzchak Schneersohn, set up an extensive network of underground chadarim (children's schools) and yeshivot to educate Jewish youth.
+This is a true chapter of history. In the Soviet Union, the Communist regime fought against teaching Judaism to children. The sixth Lubavitcher Rebbe, Rabbi Yosef Yitzchak Schneersohn, set up an extensive network of underground chadarim (children's schools) and yeshivot to educate Jewish youth.
 
 The Soviet authorities opposed this work more fiercely than any other. The Rebbe was arrested several times for what the regime called counter-revolutionary activity, and once he was sentenced to death. The sentence was averted through international intervention and a series of miracles, as the sources describe it.
 

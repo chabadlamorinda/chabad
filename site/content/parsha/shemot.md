@@ -27,7 +27,7 @@ One of the rebbe's students, Rabbi Morgenshtern, had seen the conversation. He a
 
 Then the rebbe took out his Psalms and prayed with great emotion late into the night, pleading that he not be proven wrong and that the woman be allowed into the country. According to the account, she was granted permission to stay in America and was reunited with her husband.
 
-(This is told as a real event; no independent documentation is given for it.)
+A well-known story; its details cannot be confirmed.
 
 ## Ideas for the Shabbat table
 

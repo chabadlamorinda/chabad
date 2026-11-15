@@ -17,7 +17,7 @@ The lesson is not about specific rules. It is that when a fine point of Jewish l
 
 ## A story
 
-The following is a story from Chabad.org's collection of kosher stories. It is a teaching story, and its details cannot be confirmed.
+A well-known story; its details cannot be confirmed.
 
 In Frankfurt, Rabbi Pinchas Horowitz (1730-1805) was approached by the neighborhood butcher. A slaughtered ox had a defect in its lung, and the case was borderline. Several earlier authorities would have forbidden the meat. The rabbi spent many hours studying their rulings, and then declared the ox kosher.
 

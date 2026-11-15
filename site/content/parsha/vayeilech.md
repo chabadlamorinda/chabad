@@ -9,29 +9,29 @@ The Rebbe taught that Judaism lasts when it is lived as a personal experience, n
 
 Vayeilech contains the mitzvah of Hakhel: once every seven years, the whole people, men, women, children and converts, gathered in the Temple to hear the king read from the Torah. It also contains what Maimonides understands as the last of the 613 commandments, that every Jew should write a Torah scroll. In a talk published in Likkutei Sichos, the Rebbe asked what these two mitzvot have in common.
 
-His answer is that Judaism works by bringing the past into the present. As Rabbi Mendel Kalmenson explains the Rebbe's talk, Hebrew has no separate word for "history." History can be dry fact, "his story." Memory is lived experience that includes me. Jewish practice is full of reenactment: we sit in a sukkah to feel the desert journey, recline and eat bitter herbs at the Seder, stay up all night on Shavuot. Each of us, our teachers say, was present at Sinai in soul, and the Torah speaks to each person in the singular.
+His answer is that Judaism works by bringing the past into the present. The Torah does not ask us to study history; it asks us to remember. History can be dry fact. Memory is lived experience that includes me. Jewish practice is full of reenactment: we sit in a sukkah to feel the desert journey, recline and eat bitter herbs at the Seder, stay up all night on Shavuot. Each of us, our teachers say, was present at Sinai in soul, and the Torah speaks to each person in the singular.
 
 Hakhel was a communal reenactment of Sinai, and children were included because they, too, have a soul. But Hakhel took place only at the Temple. The personal Torah scroll carries the same encounter into every home and every generation.
 
 The Rebbe's point, as Chabad teachers explain it, is that Judaism taught as a living experience endures, while Judaism taught as a dead subject is fragile. For parents and teachers, the message is to let children taste Shabbat, holidays and mitzvot, not only hear about them.
 
-In his letters about Hakhel, the Rebbe also wrote that its message today includes Jewish education for young people and for adults who missed it as children, and that "nothing need be given up as a total loss." It is never too late to begin. See the guides on [the Torah scroll](/learn/sefer-torah) and [a letter in a Torah](/learn/letter-in-a-torah).
+In his talks and letters about Hakhel, the Rebbe also taught that its message today includes Jewish education for young people and for adults who missed it as children, and that no one is ever beyond reach. It is never too late to begin. See the guides on [the Torah scroll](/learn/sefer-torah) and [a letter in a Torah](/learn/letter-in-a-torah).
 
 ## A story
 
-A well-known story; its details cannot be confirmed. It is told by Rabbi Jonathan Sacks, who retold it in a lecture about the Rebbe, and he gives no original written source.
+A well-known story; its details cannot be confirmed. It is told about the Baal Shem Tov.
 
 The Baal Shem Tov, the founder of the Chassidic movement, spent his life traveling to Jews in small villages and towns. Someone asked him why he did not do what a rabbi was expected to do, and sit in his study learning Torah.
 
 He answered that every Jew is a letter in the Torah scroll. A Torah scroll is invalid if even one letter is missing or erased. In the same way, the Jewish people, a living Torah scroll, is incomplete if one Jew is missing. And so, he said, he travels around restoring Jews to their place in the Torah.
 
-Rabbi Sacks offers the story as one way to understand what drove the Rebbe, who sent emissaries to Jewish communities all over the world. The same idea of every Jew as a letter is at the heart of the Rebbe's campaign to give every Jewish child a letter in a communal Torah scroll.
+The story helps us understand what drove the Rebbe, who sent emissaries to Jewish communities all over the world. The same idea of every Jew as a letter is at the heart of the Rebbe's campaign to give every Jewish child a letter in a communal Torah scroll.
 
 ## Ideas for the Shabbat table
 
 - Ask everyone: which of our family customs make you feel you are part of something bigger, and which ones do you remember from your own childhood?
 - For children: if you could write one letter in a Torah scroll, which letter would you pick, and why? What would you like the Torah to say about our family?
-- Adults: The Rebbe distinguishes between "history" and "memory." Which Jewish moment have you experienced, not just heard about?
+- Adults: what is the difference between "history" and "memory"? Which Jewish moment have you experienced, not just heard about?
 - Discuss: why did the Torah insist on including children in Hakhel, even when they are too young to understand everything?
 - Talk about it: the letter story says that one missing person makes the whole incomplete. Who in our community or family may feel they are not needed?
 - Try this: invite a guest, or call a relative, to join a Shabbat meal this week. Everyone matters. See also [the Ten Days of Repentance](/learn/ten-days-of-repentance).
@@ -44,7 +44,7 @@ Vayeilech is about exactly this. Moses knows that he is about to die, and the Je
 
 The Rebbe saw in this a message that is practical for any family. We cannot pass on Judaism simply by explaining it. We pass it on by letting our children smell the challah, light the candles, hear the shofar, sit in the sukkah. These are our reenactments. They turn the past into a living presence.
 
-And there is a quieter message in the Rebbe's letters: nothing need be given up as a total loss. A person who did not learn as a child, a family that drifted, a year that went badly, none of them is beyond repair. The Baal Shem Tov's story tells us why. Every Jew is a letter in the Torah, and a letter that has faded or been neglected is still part of the scroll.
+And there is a quieter message in the Rebbe's teaching: no one is ever beyond reach. A person who did not learn as a child, a family that drifted, a year that went badly, none of them is beyond repair. The Baal Shem Tov's story tells us why. Every Jew is a letter in the Torah, and a letter that has faded or been neglected is still part of the scroll.
 
 So the question for this Shabbat is both simple and personal: which Jewish experience can we invite into our home this week? Not in theory, but with our hands and our table.
 
@@ -62,4 +62,4 @@ The Rebbe teaches that Hakhel and writing a Torah scroll help each Jew relive Si
 
 ### What is the main lesson of Parshat Vayeilech?
 
-Every Jew is a letter in the Torah: each one is needed, and nothing need be given up as a total loss. See [the weekly parsha](/learn/weekly-parsha) for ways to study each portion.
+Every Jew is a letter in the Torah: each one is needed, and no one is ever beyond reach. See [the weekly parsha](/learn/weekly-parsha) for ways to study each portion.

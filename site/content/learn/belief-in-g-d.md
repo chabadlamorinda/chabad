@@ -21,7 +21,7 @@ Maimonides listed these ideas among his Thirteen Principles of Faith, which appe
 
 ## Creation is happening now
 
-Chassidic teaching adds a beautiful idea. G-d did not just create the world long ago and step back. G-d's creative word flows into every creature at every moment, keeping it in existence. If that flow stopped for an instant, the world would cease to be.
+The Tanya, in its section called "The Gate of Unity and Faith," adds a beautiful idea. G-d did not just create the world long ago and step back. G-d's creative word flows into every creature at every moment, keeping it in existence. If that flow stopped for an instant, the world would cease to be.
 
 This means G-d is not far away. G-d is present right here, in every moment of your life.
 
@@ -31,7 +31,7 @@ The Baal Shem Tov taught that G-d directs every detail of creation, even the way
 
 ## Faith and questions
 
-In Hebrew, faith is *emunah*. Jewish tradition teaches that every Jew has faith deep within the soul, even if it is sometimes hidden. Learning and experience help bring it into the open.
+In Hebrew, faith is *emunah*. The Talmud calls the Jewish people "believers, children of believers" (Shabbat 97a): every Jew has faith deep within the soul, even if it is sometimes hidden. Learning and experience help bring it into the open.
 
 Questions are not the opposite of faith. Abraham questioned G-d. Moses asked to understand G-d's ways. The Talmud is full of debate. Asking honest questions and seeking answers is a very Jewish way to grow.
 

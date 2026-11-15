@@ -7,11 +7,11 @@ related: moses, aaron-the-high-priest, the-priestly-garments, humility, ahavat-y
 
 A person is more than a name, and Moses' missing name in Tetzaveh shows what is greater than a name: his very essence.
 
-Tetzaveh is the only portion from Moses' birth through the book of Deuteronomy in which his name does not appear. The Rebbe asks two questions. How can this be a hint of Moses' passing, as some say, when a tzaddik's name and deeds live on? And why does the portion speak to him so directly, with the word "you" (*v'atah*, "And you shall command...")?
+Tetzaveh is the only portion from Moses' birth until the book of Deuteronomy in which his name does not appear. The Rebbe asks two questions. How can this be a hint of Moses' passing, as some say, when a tzaddik's name and deeds live on? And why does the portion speak to him so directly, with the word "you" (*v'atah*, "And you shall command...")?
 
 The Rebbe answers from a simple observation. A name is mainly a handle: it is how other people call us. It is not who we are. In fact, Moses' name was given to him not by his parents but by Pharaoh's daughter. The word "you," by contrast, addresses the whole person. In this portion Moses has risen to a level that a name cannot contain, and he is spoken to as his essence.
 
-Classic commentators connect the missing name to the moment after the Golden Calf, when Moses told G-d that if the people were not forgiven, he should be erased from G-d's book. Rabbi Yossy Goldman, relaying the Rebbe's approach, explains that this was Moses' finest hour: not the Exodus or the splitting of the sea, but the moment he offered his own future for his people. The word "you" stands for that devotion.
+Classic commentators connect the missing name to the moment after the Golden Calf, when Moses told G-d that if the people were not forgiven, he should be erased from G-d's book. Rabbi Yossy Goldman of Johannesburg, building on this, explains that this was Moses' finest hour: not the Exodus or the splitting of the sea, but the moment he offered his own future for his people. The word "you" stands for that devotion.
 
 What does this mean for us?
 
@@ -21,7 +21,7 @@ What does this mean for us?
 
 ## A story
 
-On a hot Sunday afternoon in the summer of 1991, an elderly Jewish woman waited in a long line of women and girls to receive a blessing from the Lubavitcher Rebbe and a dollar bill to give to tzedakah. This was the Sunday gathering at which thousands of people passed before the Rebbe, one after another.
+On one of those Sunday afternoons in the Rebbe's later years, an elderly Jewish woman waited in a long line of women and girls to receive a blessing from the Lubavitcher Rebbe and a dollar bill to give to tzedakah. This was the Sunday gathering at which thousands of people passed before the Rebbe, one after another.
 
 When her turn came, she spoke to him in simple Yiddish. "Rebbe! I've been standing here for only an hour and I'm already exhausted." She meant it kindly. The Rebbe had been standing for hours and hours.
 

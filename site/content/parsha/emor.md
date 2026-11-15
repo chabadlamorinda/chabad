@@ -49,7 +49,7 @@ If you would like to share a Shabbat in Lafayette, call Chabad of Lamorinda at 9
 ## Common questions
 
 ### What is Parshat Emor about?
-Parshat Emor (Leviticus 21:1-24:23) gives laws of holiness for the kohanim, then lists the festivals of the year (Shabbat, Passover, the counting of the Omer, Shavuot, Rosh Hashanah, Yom Kippur and Sukkot), and also teaches about the Temple menorah and the bread on the table.
+Parshat Emor (Leviticus 21:1-24:23) gives laws of holiness for the kohanim, then lists the festivals of the year (Shabbat, Passover, the counting of the Omer, Shavuot, Rosh Hashanah, Yom Kippur and Sukkot), and also teaches about the Temple menorah and the bread on the Temple table.
 
 ### What does the Rebbe teach about Parshat Emor?
 The Rebbe teaches that the Omer count is a journey from the Exodus to Sinai that every person repeats each day, through gratitude, reflection and prayer. He explains how our raw energy is refined step by step until it serves holiness.

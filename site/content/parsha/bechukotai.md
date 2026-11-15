@@ -17,7 +17,7 @@ What it means for us: we begin to learn with commitment first, even when it is n
 
 ## A story
 
-This story comes from the Rebbe's calendar of Chassidic teachings, HaYom Yom (17 Elul). The Alter Rebbe, Rabbi Shneur Zalman of Liadi, usually read the Torah portion himself in the synagogue. One Shabbat, the portion was Ki Tavo, which includes the Tochachah, the long passage of rebuke and warnings that the Torah also places in Bechukotai. That week, the Alter Rebbe was away from Liozna.
+This story comes from the Rebbe's calendar of Chassidic teachings, HaYom Yom, in the month of Elul. The Alter Rebbe, Rabbi Shneur Zalman of Liadi, usually read the Torah portion himself in the synagogue. One Shabbat, the portion was Ki Tavo, which includes the Tochachah, the long passage of rebuke and warnings that the Torah also places in Bechukotai. That week, the Alter Rebbe was away.
 
 His son, the Mitteler Rebbe, who was not yet bar mitzvah, heard the passage read by someone else. The words upset him so deeply that when Yom Kippur came, the Alter Rebbe was concerned that his son would not be able to fast.
 

@@ -17,7 +17,7 @@ Some see a hidden hint in the change. The four Israeli letters add up to 138 (nu
 
 ## Sufganiyot: Israel's Chanukah doughnut
 
-Fried foods recall the oil that burned in the Temple. The tradition notes that the oldest form of this custom was dough fried in oil, the forerunner of today's jelly-filled doughnut, the *sufganiya* (plural *sufganiyot*), which is very common in Israel today. Latkes are also eaten by many families, so some enjoy both. See [Chanukah foods](/learn/chanukah-foods) and [latkes](/learn/latkes).
+Fried foods recall the oil that burned in the Temple. The oldest form of this custom was dough fried in oil, the forerunner of today's jelly-filled doughnut, the *sufganiya* (plural *sufganiyot*), which is very common in Israel today. Latkes are also eaten by many families, so some enjoy both. See [Chanukah foods](/learn/chanukah-foods) and [latkes](/learn/latkes).
 
 ## A hanukkiah, not just a menorah
 

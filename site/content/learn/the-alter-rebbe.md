@@ -15,7 +15,7 @@ He was born in Liozna, near Lubavitch, and his father was Rabbi Baruch. As a boy
 
 ## Meseritch and the Maggid
 
-At twenty he left home to look for guidance in serving G-d. He weighed going to Vilna, the center of opposition to Chassidism, and chose Meseritch, where Rabbi Dovber, the Maggid, taught. He joined the Maggid's inner circle. When he was about twenty-five, the Maggid asked him to rewrite the Code of Jewish Law, the Shulchan Aruch, with the later rulings. That work is known as the Shulchan Aruch HaRav, and it won recognition from Chassidim and scholars alike.
+At twenty he left home to look for guidance in serving G-d. He weighed going to Vilna, the great center of Torah study, and chose Meseritch, where Rabbi Dovber, the Maggid, taught. He joined the Maggid's inner circle. When he was about twenty-five, the Maggid asked him to rewrite the Code of Jewish Law, the Shulchan Aruch, with the later rulings. That work is known as the Shulchan Aruch HaRav, and it won recognition from Chassidim and scholars alike.
 
 After the Maggid died on 19 Kislev, 1772, his disciples dispersed. The Alter Rebbe took up the task of spreading Chassidus in Lithuania, and the Chabad movement was founded then. See [Chassidus](/learn/chassidus) and the [Chabad Rebbes](/learn/chabad-rebbes).
 

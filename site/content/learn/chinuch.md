@@ -9,7 +9,7 @@ Chinuch (חִנּוּךְ) is the Jewish word for education, and it means more t
 
 ## What does chinuch mean?
 
-Chassidic teaching explains that the word is connected to the idea of shaping something so it fits exactly, like cutting a stone to fit, which suggests that education should be tailored to each child. It also relates to the word for inauguration, the start of a lifelong path. Rashi, the great commentator, explains in Genesis 14:14 that chinuch is a person's entry into the work that he will do all his life. That is why we say "Chanukah," from the same root: the dedication of the Temple. Chinuch is a beginning.
+The word is related to the word for inauguration, the start of a lifelong path. Rashi, the great commentator, explains in Genesis 14:14 that chinuch is a person's entry into the work that he will do all his life. That is why we say "Chanukah," from the same root: the dedication of the Temple. Chinuch is a beginning.
 
 ## The source: "Educate a child in his own way"
 
@@ -20,7 +20,7 @@ The verse most often quoted is in Proverbs 22:6: "Educate a child according to h
 
 ## Character comes first
 
-Rabbi Schneur Zalman of Liadi, the first Chabad Rebbe, taught that there can be no Torah without fine character. The goal of chinuch is not only a child who knows, but a child who is a *mentch* (a good, decent person). The educator's task is to refine character, together with patience: "A short-tempered person cannot teach" (Ethics of Our Fathers 2:5). Warmth matters too, as the verse says: "The words of the wise are heard when spoken gently." Read about [derech eretz](/learn/derech-eretz) and [raising kind children](/learn/raising-kind-children).
+The Mishnah teaches, "If there is no derech eretz, there is no Torah" (Ethics of Our Fathers 3:17): there can be no Torah without fine character. The goal of chinuch is not only a child who knows, but a child who is a *mentch* (a good, decent person). The educator's task is to refine character, together with patience: "A short-tempered person cannot teach" (Ethics of Our Fathers 2:5). Warmth matters too, as the verse says: "The words of the wise are heard when spoken gently" (Ecclesiastes 9:17). Read about [derech eretz](/learn/derech-eretz) and [raising kind children](/learn/raising-kind-children).
 
 ## Practical steps at home
 
