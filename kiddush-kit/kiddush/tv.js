@@ -125,12 +125,19 @@
   function layout(b) {
     var slots = b.slots, rows = Math.max(1, Math.ceil(slots.length / 4));
     document.documentElement.style.setProperty('--rows', rows);
+    // Past weeks with a long dedication get a taller row, so the text never has to be shrunk below what a TV browser can draw (about 8px).
+    var weight = function (s) {
+      if (!s || !s.past) return 1;
+      var sl = sponsorsOf(s), len = reasons(sl).length, nl = names(sl).length, lines = Math.min(4, Math.ceil(len / 46) || 0), nameLines = Math.min(3, Math.ceil(nl / 30) || 1);
+      return 1 + .45 * Math.max(0, lines - 1) + .25 * Math.max(0, nameLines - 1);
+    };
     for (var c = 0; c < 4; c++) {
-      var col = $('c' + c); col.textContent = '';
+      var col = $('c' + c); col.textContent = ''; var ws = [];
       for (var r = 0; r < rows; r++) {
         var s = slots[c * rows + r];
-        col.appendChild(s ? tile(s, s.key === b.current) : el('div', 'tile empty'));
+        col.appendChild(s ? tile(s, s.key === b.current) : el('div', 'tile empty')); ws.push(weight(s));
       }
+      col.style.gridTemplateRows = ws.map(function (w) { return 'minmax(0,' + w.toFixed(2) + 'fr)'; }).join(' ');
     }
     sizeRows(rows);
     eventsBox(b, rows);
@@ -157,7 +164,8 @@
     var kids = [].slice.call(t.querySelectorAll('.tt, .td, .ts, .n, .s, .r')), cs = getComputedStyle(t), g = 0;
     var avail = t.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
     var used = function () { return kids.reduce(function (a, k) { return a + k.offsetHeight; }, 0); };
-    while (used() > avail + 1 && g++ < 22) kids.forEach(function (k) { k.style.fontSize = parseFloat(getComputedStyle(k).fontSize) * .93 + 'px'; });
+    var tooSmall = function () { return kids.some(function (k) { return parseFloat(getComputedStyle(k).fontSize) * .93 < 8.5; }); }; // browsers on TVs will not draw text much below 8px
+    while (used() > avail + 1 && g++ < 22 && !tooSmall()) kids.forEach(function (k) { k.style.fontSize = parseFloat(getComputedStyle(k).fontSize) * .93 + 'px'; });
   }
   function sizeRows(rows) {
     var col = $('c0'), h = col.clientHeight, gap = parseFloat(getComputedStyle(col).rowGap) || 0;
