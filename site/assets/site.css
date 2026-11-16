@@ -454,7 +454,7 @@ details.toc a { display: block; padding: 6px 0; }
 .bn-art { position: absolute; z-index: 1; inset-inline-end: max(16px, calc(50% - 560px)); top: 50%; transform: translateY(-50%); width: clamp(140px, 30vw, 300px); aspect-ratio: 1; border-radius: 50%; background: #fff; box-shadow: 0 0 0 12px rgba(255,255,255,.15); display: grid; place-items: center; }
 .bn-art .art { width: 72%; height: 72%; background: none; border: 0; box-shadow: none; }
 .bn-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 78% center; }
-@media (max-width: 600px) { /* phones: the picture sits above the words, so the menorah is seen */
+@media (max-width: 720px) { /* phones: the picture sits above the words, so the menorah is seen */
   .bn.has-img .bn-img { height: 260px; bottom: auto; object-position: 100% 25%; }
   .bn.has-img::after { background: linear-gradient(180deg, rgba(14,22,44,0) 0, rgba(14,22,44,.1) 150px, var(--b1) 262px); }
   .bn.has-img .bn-in { padding-top: 268px; align-self: flex-end; }
