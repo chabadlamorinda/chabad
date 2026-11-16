@@ -213,3 +213,6 @@ Google Analytics (`GA_ID` in Render; the tag is `site/assets/gtag.js`, off for G
 
 ## Write your own bequest wording
 The guide `/learn/sample-bequest-language-for-attorneys` has a builder (`{bequest-builder}` in the guide; `server/site/bequest.js`, `site/assets/bequest.js`): pick a kind of gift, fill in the blanks, see the English wording for an attorney appear as they type, then copy, download or print it, or send it to the Rabbi with the hidden form `legacy-intent` (forms.json; it is not listed on /forms; he is emailed like every form). The clauses are English only (for attorneys); the labels are in three languages.
+
+## Replacing a picture
+Pictures in `site/media/` are kept by phones and browsers for a week. When a picture changes, save it under a NEW file name (for example `chanukah-2026-banner.jpg` instead of `-bg.jpg`) and update the content that points to it, so everyone sees the new one at once.
