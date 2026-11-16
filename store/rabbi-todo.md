@@ -6,6 +6,7 @@ Done: jewishlamorinda.com is connected and live (www jumps to it); Google Search
 1. Look the new site over on your phone with `store/launch-checklist.md`, and tell Claude what to fix.
 2. In Render, set **Auto-Deploy** to "After CI Checks Pass" (item 22) and check the plan: on a free plan the site falls asleep when nobody visits and the first visitor waits; the cheapest paid plan (about $7 a month) keeps it awake. Worth it now that people will find it through Google.
 3. Open the Rabbi area (jewishlamorinda.com/admin) → Setup checklist and tell Claude which lines are not green (email sending, database, Stripe, Facebook).
+3b. **Stripe (so donations really arrive):** in Render → Environment look for `STRIPE_SECRET_KEY` and `STRIPE_PUBLISHABLE_KEY` and tell Claude only "live", "test" or "missing" (never paste the keys). Then in Stripe: account activated with the bank account added, and the webhook `/api/stripe/webhook` (steps in `store/rabbi-setup.md`). Then a $5 test gift with your own card, refunded in Stripe.
 4. Bing Webmaster Tools (bing.com/webmasters): "Import from Google Search Console". Bing feeds ChatGPT search and Copilot.
 5. When happy: change the website link on the Google Business Profile to jewishlamorinda.com (do not make a second listing); then Claude moves the Google Ads grant to the new addresses (Google for Nonprofits and Ad Grants must list the new website: check with Google).
 6. Connect jewishlamorinda.org (two CNAME records at Cloudflare, grey cloud, then Render → Custom Domains); it forwards to the .com.
