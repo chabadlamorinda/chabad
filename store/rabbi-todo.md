@@ -1,5 +1,16 @@
 # The Rabbi's to-do list (things only you can do, at a computer)
 
+## Where we are (Nov 16)
+Done: jewishlamorinda.com is connected and live (www jumps to it); Google Search Console verified and the sitemap sent; Google Analytics counting (G-N4642YEZXW). The old site chabadoflamorinda.com is untouched.
+**Next, in this order (each about 5 minutes):**
+1. Look the new site over on your phone with `store/launch-checklist.md`, and tell Claude what to fix.
+2. In Render, set **Auto-Deploy** to "After CI Checks Pass" (item 22) and check the plan: on a free plan the site falls asleep when nobody visits and the first visitor waits; the cheapest paid plan (about $7 a month) keeps it awake. Worth it now that people will find it through Google.
+3. Open the Rabbi area (jewishlamorinda.com/admin) → Setup checklist and tell Claude which lines are not green (email sending, database, Stripe, Facebook).
+4. Bing Webmaster Tools (bing.com/webmasters): "Import from Google Search Console". Bing feeds ChatGPT search and Copilot.
+5. When happy: change the website link on the Google Business Profile to jewishlamorinda.com (do not make a second listing); then Claude moves the Google Ads grant to the new addresses (Google for Nonprofits and Ad Grants must list the new website: check with Google).
+6. Connect jewishlamorinda.org (two CNAME records at Cloudflare, grey cloud, then Render → Custom Domains); it forwards to the .com.
+7. Last, only when you decide: point chabadoflamorinda.com to the new site (old addresses already map to new pages).
+
 When you say "I'm at a computer", Claude goes through this list with you one item at a time, with every click explained from A to Z. Most items are copying a code from one website and pasting it into Render (where the website lives). Nothing here costs money unless it says so.
 
 Tick an item off by telling Claude it's done; Claude will check it works.
