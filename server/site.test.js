@@ -801,6 +801,15 @@ test('visitors: pages noted under an anonymous id, linked to a person when they 
   await new Promise((r) => setTimeout(r, 500));
   const got = mails.slice(n0).filter((m) => /Leah Gold is looking at giving/.test(m.subject));
   assert.equal(got.length, 1, 'one alert per person and interest per week'); assert.match(got[0].text, /leah@example\.com/);
+  // where visitors came from: a link tag wins, then the page they came from; moving around our own site says nothing
+  const { sourceOf } = require('./site/visitors.js');
+  assert.equal(sourceOf('https://www.google.com/', ''), 'google'); assert.equal(sourceOf('https://l.facebook.com/l.php', '?fbclid=1'), 'facebook'); assert.equal(sourceOf('', '?src=flyer'), 'flyer'); assert.equal(sourceOf('', ''), 'direct'); assert.equal(sourceOf('https://jewishlamorinda.com/shabbat', ''), null);
+  const vid2 = 'w' + 'f1e2d3c4b5a6'.repeat(2);
+  await fetch(base + '/api/site/view', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1', cookie: 'cl_vid=' + vid2 }, body: JSON.stringify({ path: '/shabbat', ref: 'https://www.google.com/', q: '' }) });
+  await new Promise((r) => setTimeout(r, 400));
+  assert.equal((await store.pool.query('SELECT source FROM visitor_sources WHERE vid=$1', [vid2])).rows[0].source, 'google');
+  const { weeklyText, tractionData } = require('./site/traction.js'), td = await tractionData((t, p) => store.pool.query(t, p), load());
+  assert.ok(td.visitors >= 1 && td.sources.some((x) => x.source === 'google')); assert.match(weeklyText(td, 'http://site.test'), /HOW THEY FOUND US[\s\S]*google/);
   const { interestOf } = require('./site/visitors.js');
   assert.equal(interestOf('/programs/bar-bat-mitzvah').key, 'bar-bat-mitzvah'); assert.equal(interestOf('/learn/dreidel'), null);
   assert.match((await client().call('GET', '/privacy')).text, /do not keep IP addresses/);

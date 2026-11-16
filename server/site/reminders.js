@@ -8,7 +8,7 @@ const { fmtClock } = require('./content.js');
 
 const ptNow = (d) => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' }).formatToParts(d).map((x) => [x.type, x.value])); return { ymd: `${p.year}-${p.month}-${p.day}`, hour: +p.hour }; };
 
-function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null, townsOf = null, notifyTo = '' }) {
+function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null, townsOf = null, notifyTo = '', content = null }) {
   if (!store || !mailer) return null;
   const q = (t, p) => store.pool.query(t, p);
   const T = (lang) => (i18n ? i18n.makeT(lang) : (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x));
@@ -27,6 +27,11 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
     // The Rabbi's morning summary (once a day, only when something happened).
     if ((notifyTo || org.email) && await once(key = `digest:${today}`)) {
       const d = await require('./digest.js').morningDigest(q, base).catch((e) => { log.error('digest:', e && e.message); return null; });
+      if (d) await send(key, { to: notifyTo || org.email, subject: d.subject, text: d.text });
+    }
+    // Monday: how the website did last week (visitors, where they came from, what they read and did).
+    if (new Date(today + 'T12:00:00Z').getUTCDay() === 1 && (notifyTo || org.email) && await once(key = `traction:${today}`)) {
+      const d = await require('./traction.js').weeklyTraction(q, base, content ? content() : null).catch((e) => { log.error('traction:', e && e.message); return null; });
       if (d) await send(key, { to: notifyTo || org.email, subject: d.subject, text: d.text });
     }
     // Sunday: a full backup of the database to the Rabbi (server/backup.js), so a copy always exists outside it.

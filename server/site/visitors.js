@@ -27,6 +27,30 @@ const INTERESTS = [
   ['kosher', 'Kosher', false, /kosher|bay-kosher/],
 ];
 const interestOf = (path) => { for (const [key, label, alert, re] of INTERESTS) if (re.test(path)) return { key, label, alert }; return null; };
+// Where a visitor came from: a ?src=... (or utm_source) on the link, such as a flyer's QR code or the weekly email, else the page
+// they came from (Google, Facebook, WhatsApp...), else "direct". Our own pages (moving around the site) say nothing.
+const OWN = /(^|\.)(jewishlamorinda\.(com|org)|chabadoflamorinda\.com|onrender\.com|localhost)$/;
+const SOURCE_NAMES = { fb: 'facebook', ig: 'instagram', wa: 'whatsapp', qr: 'flyer', mail: 'email', newsletter: 'email' };
+function sourceOf(ref, search) {
+  let params; try { params = new URLSearchParams(String(search || '').slice(0, 300)); } catch (e) { params = new URLSearchParams(''); }
+  const tag = String(params.get('src') || params.get('utm_source') || '').toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 30);
+  if (tag) return SOURCE_NAMES[tag] || tag;
+  let host = ''; try { host = new URL(String(ref || '')).hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { host = ''; }
+  if (!host) return 'direct';
+  if (OWN.test(host)) return null;
+  if (/(^|\.)google\./.test(host)) return 'google';
+  if (/(^|\.)bing\.com$/.test(host)) return 'bing';
+  if (/duckduckgo\.com$/.test(host)) return 'duckduckgo';
+  if (/(^|\.)yahoo\./.test(host)) return 'yahoo';
+  if (/(^|\.)(facebook\.com|fb\.me|fb\.com)$/.test(host)) return 'facebook';
+  if (/instagram\.com$/.test(host)) return 'instagram';
+  if (/(^|\.)(whatsapp\.com|wa\.me)$/.test(host)) return 'whatsapp';
+  if (/(^|\.)(chatgpt\.com|openai\.com|perplexity\.ai|claude\.ai)$/.test(host)) return 'ai-assistant';
+  if (/(^|\.)(t\.co|twitter\.com|x\.com)$/.test(host)) return 'x';
+  if (/youtube\.com$|youtu\.be$/.test(host)) return 'youtube';
+  if (/(^|\.)(mail\.google\.com|outlook\.live\.com|outlook\.office\.com|mail\.yahoo\.com)$/.test(host)) return 'email';
+  return 'other: ' + host.slice(0, 40);
+}
 const VID = /^[a-z0-9]{16,40}$/;
 const vidOf = (req) => { const m = /(?:^|;\s*)cl_vid=([a-z0-9]+)/.exec(req.get('cookie') || ''); return m && VID.test(m[1]) ? m[1] : null; };
 // Submissions that are not people leaving their details.
@@ -63,6 +87,8 @@ function mountVisitors(app, { store, mailer, notifyTo = '', content, base = '', 
     if (!vid || !/^\/[a-z0-9/._-]{0,150}$/i.test(path) || /^\/(admin|api)\b/.test(path)) return;
     try {
       const r = await q('INSERT INTO visitor_views (vid, path) VALUES ($1,$2) ON CONFLICT DO NOTHING', [vid, path]);
+      const src = sourceOf(req.body && req.body.ref, req.body && req.body.q);
+      if (src) await q("INSERT INTO visitor_sources (vid, source) VALUES ($1,$2) ON CONFLICT (vid, day) DO UPDATE SET source = EXCLUDED.source WHERE visitor_sources.source = 'direct' AND EXCLUDED.source <> 'direct'", [vid, src]);
       if (++inserts % 500 === 0) q("DELETE FROM visitor_views WHERE day < CURRENT_DATE - 1096").catch(() => {});
       const m = await readMember(req).catch(() => null);
       if (m && m.email) await link(vid, { name: m.name, email: String(m.email).toLowerCase(), phone: m.phone, source: 'account' });
@@ -107,4 +133,4 @@ function mountVisitors(app, { store, mailer, notifyTo = '', content, base = '', 
     },
   };
 }
-module.exports = { mountVisitors, interestOf, INTERESTS };
+module.exports = { mountVisitors, interestOf, INTERESTS, sourceOf };

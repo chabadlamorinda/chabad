@@ -43,7 +43,7 @@ const card = (inner, extra = '') => `<tr><td style="padding:0 16px 16px"><table 
 
 async function compose(X, { base, kind = 'auto', word = null, joke = '', subject: subj = '', message = '', upcoming = () => [], giving = {}, now = new Date() }) {
   const { t, C } = X, L = X.lang, dir = L === 'he' ? 'rtl' : 'ltr', align = L === 'he' ? 'right' : 'left', far = L === 'he' ? 'left' : 'right';
-  const url = (path) => base + X.path(path);
+  const url = (path) => { const [p0, hash] = String(path).split('#'); return base + X.path(p0) + (p0.includes('?') ? '&' : '?') + 'src=email' + (hash ? '#' + hash : ''); };
   const tx = []; // the plain-text version, built alongside
   const today = Z.todayLocal(now), todayYmd = Z.ymd(today), week = weekNo(today), end = new Date(today); end.setDate(end.getDate() + 7);
   const weekEnd = Z.ymd(end), field = (e, k) => (e[L] && e[L][k]) || e[k];

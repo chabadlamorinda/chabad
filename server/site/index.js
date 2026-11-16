@@ -168,7 +168,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
 <h2>${esc(t('What you get'))}</h2><div class="grid">${items.map(([a, h, d]) => `<div class="card tile has-art">${require('./art.js').artImg(a)}<h3>${esc(t(h))}</h3><p>${esc(t(d))}</p></div>`).join('')}</div>
 <p class="muted">${esc(t('We never share your email.'))} <a href="/privacy">${esc(t('Privacy'))}</a> · <a href="/this-week">${esc(t('See this week'))}</a></p></section>` });
   }));
-  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, notifyTo: env.ADMIN_EMAIL || '', townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
+  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, content, notifyTo: env.ADMIN_EMAIL || '', townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   if (reminders && mail) mail.start();
   // Account page: the form is drawn by site.js from /api/site/me.
   r.get('/account', wrap(async (req, res) => {

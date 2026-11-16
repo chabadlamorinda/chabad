@@ -140,7 +140,7 @@
     var m = /(?:^|;\s*)cl_vid=([a-z0-9]+)/.exec(document.cookie), vid = m && m[1];
     if (!vid) { vid = (Math.random().toString(36).slice(2) + Date.now().toString(36) + Math.random().toString(36).slice(2)).slice(0, 32); }
     try { document.cookie = 'cl_vid=' + vid + ';path=/;max-age=' + 400 * 86400 + ';samesite=lax' + (location.protocol === 'https:' ? ';secure' : ''); } catch (e) {}
-    try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname }) }).catch(function () {}); } catch (e) {}
+    try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname, ref: document.referrer || '', q: location.search || '' }) }).catch(function () {}); } catch (e) {}
   })();
   if (store.get('cl_signed')) {
     Array.prototype.forEach.call(document.querySelectorAll('[data-account]'), function (a) { a.textContent = T('My account'); }); // header button and the menu
