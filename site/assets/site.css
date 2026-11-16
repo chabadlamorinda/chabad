@@ -454,11 +454,6 @@ details.toc a { display: block; padding: 6px 0; }
 .bn-art { position: absolute; z-index: 1; inset-inline-end: max(16px, calc(50% - 560px)); top: 50%; transform: translateY(-50%); width: clamp(140px, 30vw, 300px); aspect-ratio: 1; border-radius: 50%; background: #fff; box-shadow: 0 0 0 12px rgba(255,255,255,.15); display: grid; place-items: center; }
 .bn-art .art { width: 72%; height: 72%; background: none; border: 0; box-shadow: none; }
 .bn-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 78% center; }
-@media (max-width: 720px) { /* phones: the picture sits above the words, so the menorah is seen */
-  .bn.has-img .bn-img { height: 260px; bottom: auto; object-position: 100% 25%; }
-  .bn.has-img::after { background: linear-gradient(180deg, rgba(14,22,44,0) 0, rgba(14,22,44,.1) 150px, var(--b1) 262px); }
-  .bn.has-img .bn-in { padding-top: 268px; align-self: flex-end; }
-}
 .bn.has-img::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(10,18,35,.85), rgba(10,18,35,.35) 70%, rgba(10,18,35,.1)); }
 .bn-nav { position: absolute; bottom: 14px; left: 0; right: 0; display: flex; justify-content: center; align-items: center; gap: 10px; z-index: 3; }
 .bn-dots { display: flex; gap: 8px; }
@@ -1049,3 +1044,21 @@ footer a { padding-block: 7px; }
 .bn-dots button { position: relative; }
 .bn-dots button::after { content: ""; position: absolute; inset: -10px; }
 summary { min-height: 40px; display: list-item; }
+
+/* Banner: the date and place stay readable over the picture, and Hebrew pages mirror the picture so the words never sit on the menorah */
+.bn.has-img .bn-eyebrow { text-shadow: 0 1px 8px rgba(8,14,30,.9), 0 0 3px rgba(8,14,30,.85); font-weight: 700; }
+[dir="rtl"] .bn-eyebrow, [dir="rtl"] .eyebrow, [dir="rtl"] .sb-t .sb-eyebrow { font-family: "Segoe UI", Arial, "Noto Sans Hebrew", system-ui, sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: 0; }
+[dir="rtl"] .bn.has-img .bn-img { transform: scaleX(-1); object-position: 22% center; }
+[dir="rtl"] .bn.has-img::after { background: linear-gradient(270deg, rgba(10,18,35,.85), rgba(10,18,35,.35) 70%, rgba(10,18,35,.1)); }
+@media (max-width: 720px) {
+  [dir="rtl"] .bn.has-img .bn-img { object-position: 0% 25%; }
+  [dir="rtl"] .bn.has-img::after { background: linear-gradient(180deg, rgba(14,22,44,0) 0, rgba(14,22,44,.1) 150px, var(--b1) 242px); }
+}
+.tile-more { margin: 8px 0 0; font-weight: 700; color: var(--gold-ink); }
+[dir="rtl"] .tile-more .arrow { display: inline-block; transform: scaleX(-1); }
+
+@media (max-width: 720px) { /* phones: the picture sits above the words, so the menorah is seen */
+  .bn.has-img .bn-img { height: 240px; bottom: auto; object-position: 100% 25%; }
+  .bn.has-img::after { background: linear-gradient(180deg, rgba(14,22,44,0) 0, rgba(14,22,44,.1) 150px, var(--b1) 242px); }
+  .bn.has-img .bn-in { padding-top: 252px; align-self: flex-end; }
+}

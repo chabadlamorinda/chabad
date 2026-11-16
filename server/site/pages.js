@@ -205,7 +205,7 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
   r.get('/programs', wrap(async (req, res) => {
     const X = ctxOf(req), { t, C } = X;
     const body = `<section class="wrap sec"><h1>${esc(t('Programs'))}</h1><p class="lead-d">${esc(t('Something for every age and stage, from toddlers to seniors.'))}</p>
-<div class="grid">${byPopularity(C.programs.filter((p) => !p.closed), (p) => '/programs/' + p.slug).map((p) => `<a class="card tile" href="/programs/${p.slug}"><p class="eyebrow">${esc(p.audience || '')}</p><h3 aria-level="2">${esc(p.name)}</h3><p>${esc(p.summary)}</p></a>`).join('')}</div></section>`;
+<div class="grid">${byPopularity(C.programs.filter((p) => !p.closed), (p) => '/programs/' + p.slug).map((p) => { const H = C.home || {}, pic = [...(H.banners || []), ...(H.tiles || [])].find((x) => x.program === p.slug && x.image), sm = pic && require('./art.js').smallOf(pic.image); return `<a class="card tile${pic ? ' has-photo' : ''}" href="/programs/${p.slug}">${pic ? `<img class="tile-photo" src="${esc(sm || pic.image)}" alt="" loading="lazy" decoding="async" width="560" height="380">` : ''}<p class="eyebrow">${esc(p.audience || '')}</p><h3 aria-level="2">${esc(p.name)}</h3><p>${esc(p.summary)}</p><p class="tile-more">${esc(t('Learn more'))} <span class="arrow" aria-hidden="true">→</span></p></a>`; }).join('')}</div></section>`;
     await render(res, { path: '/programs', title: t('Jewish programs for kids, teens and adults'), description: t("Hebrew school, adult classes, teen and kids programs, women's circle and more at Chabad of Lamorinda."), body });
   }));
   r.get('/programs/:slug', wrap(async (req, res, next) => {

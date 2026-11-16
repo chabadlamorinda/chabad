@@ -45,11 +45,13 @@ function richHtml(X, rich) {
 // The first paragraph under the first heading: a teaser for the week's page.
 const teaser = (rich) => { const m = /<h2[^>]*>[\s\S]*?<\/h2>\s*<p>([\s\S]*?)<\/p>/.exec(md(rich.body)); return m ? m[1] : ''; };
 function mountParsha(r, { render, wrap, ctxOf, base }) {
-  const block = (X, p) => {
-    const L = p[X.lang] || p.en, t = X.t;
-    return `<section class="card parsha"><p class="eyebrow">${esc(t(p.book))} · <span dir="ltr">${esc(p.verses)}</span></p>
-<h2>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}${X.lang === 'he' ? '' : ` <span class="he" lang="he">${esc(p.hebrew)}</span>`}</h2>
-<p>${esc(L.summary)}</p><h3>${esc(t('A lesson for today'))}</h3><p>${esc(L.lesson)}</p></section>`;
+  // The summary in short paragraphs of two or three sentences, so it is easy to read on a phone.
+  const paras = (text) => { const ss = String(text).match(/[^.!?]+[.!?]+(\s+|$)|[^.!?]+$/g) || [String(text)], out = []; for (let i = 0; i < ss.length; i += 3) out.push(ss.slice(i, i + 3).join('').trim()); return out.map((x) => `<p>${esc(x)}</p>`).join(''); };
+  const block = (X, p, detail = false) => {
+    const L = p[X.lang] || p.en, t = X.t, ref = p.verses.startsWith(p.book) ? p.verses.slice(p.book.length).trim() : p.verses;
+    return `<section class="card parsha"><p class="eyebrow">${esc(t(p.book))} · <span dir="ltr">${esc(ref)}</span></p>
+${detail ? '' : `<h2>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}${X.lang === 'he' ? '' : ` <span class="he" lang="he">${esc(p.hebrew)}</span>`}</h2>`}
+${paras(L.summary)}<h3>${esc(t('A lesson for today'))}</h3><p>${esc(L.lesson)}</p></section>`;
   };
   r.get('/parsha', wrap(async (req, res) => {
     const X = ctxOf(req), t = X.t, sh = await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [];
@@ -70,13 +72,13 @@ ${guideCards(X, guides, t('Learn more'))}
     const i = all().indexOf(p), prev = all()[i - 1], nxt = all()[i + 1];
     const rich = (X.C.parsha || []).find((x) => x.slug === req.params.slug);
     const body = `<article class="wrap sec narrow"><p class="crumbs"><a href="/parsha">${esc(t("This week's Torah portion"))}</a> ›</p>
-<h1>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}</h1>${block(X, p)}
+<h1>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}${X.lang === 'he' ? '' : ` <span class="he" lang="he">${esc(p.hebrew)}</span>`}</h1>${block(X, p, true)}
 ${richHtml(X, rich)}
 ${guideCards(X, torahGuides(X.C), t('Learn more'))}
 <p class="btns">${prev ? `<a class="btn ghost" href="/parsha/${slugOf(prev.name)}">← ${esc(X.lang === 'he' ? prev.hebrew : prev.name)}</a>` : ''}${nxt ? `<a class="btn ghost" href="/parsha/${slugOf(nxt.name)}">${esc(X.lang === 'he' ? nxt.hebrew : nxt.name)} →</a>` : ''}</p></article>`;
     const L = p[X.lang] || p.en;
     await render(res, { path: '/parsha/' + slugOf(p.name), title: rich && rich.title ? rich.title : t('Parashat {name}: summary and lesson', { name: X.lang === 'he' ? p.hebrew : p.name }), description: rich && rich.description ? rich.description : L.summary.slice(0, 155), body,
-      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: 'Parashat ' + p.name, inLanguage: X.lang, articleBody: L.summary + ' ' + L.lesson + (rich ? ' ' + plain(rich.body).slice(0, 4000) : ''), publisher: { '@id': base + '/#org' }, contentLocation: ['Lafayette', 'Moraga', 'Orinda'].map((n) => ({ '@type': 'City', name: n + ', CA' })) }, ...faqLd(rich && rich.faq)] });
+      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: 'Parashat ' + p.name, description: (rich && rich.description) || L.lesson.slice(0, 200), image: base + '/media/photos/torah-scroll.jpg', author: { '@id': base + '/#org' }, inLanguage: X.lang, articleBody: L.summary + ' ' + L.lesson + (rich ? ' ' + plain(rich.body).slice(0, 4000) : ''), publisher: { '@id': base + '/#org' }, contentLocation: ['Lafayette', 'Moraga', 'Orinda'].map((n) => ({ '@type': 'City', name: n + ', CA' })) }, ...faqLd(rich && rich.faq)] });
   }));
 }
 // Daily study: today's Chitas (Chumash, Tehillim, Tanya), Rambam and more, with links to the text.
