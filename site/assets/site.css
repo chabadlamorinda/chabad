@@ -1062,3 +1062,6 @@ summary { min-height: 40px; display: list-item; }
   .bn.has-img::after { background: linear-gradient(180deg, rgba(14,22,44,0) 0, rgba(14,22,44,.1) 150px, var(--b1) 242px); }
   .bn.has-img .bn-in { padding-top: 252px; align-self: flex-end; }
 }
+
+.photo-credit { font-size: .78rem; color: var(--muted); margin-top: 4px; }
+.photo-credit a { color: inherit; }

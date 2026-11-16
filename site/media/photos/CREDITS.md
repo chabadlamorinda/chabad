@@ -66,3 +66,4 @@ Free photos from Pexels (https://www.pexels.com/license/: free to use, no paymen
 Each photo also has a small card version, <name>-sm.jpg.
 
 Menorah photos: only straight-armed (Chabad style) menorahs are used on the website, never round, curved-arm ones. The donut photos are cropped so that no curved menorah shows.
+| mezuzah-doorpost.jpg | https://commons.wikimedia.org/wiki/File:Mezuzah_with_Star_of_David_(3580841449).jpg: by zeevveez from Jerusalem, Israel, licence CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). This one needs the credit shown under the picture (done in `PHOTO_CREDIT` in `server/site/art.js`). The old `mezuzah.jpg` (a candle and a pomegranate) is no longer used for the mezuzah guide. |

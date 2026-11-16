@@ -1238,6 +1238,14 @@ test('stories and jokes: every title is short in every language (a title that ho
   for (const l of ['he', 'ru']) for (const x of JSON.parse(fs.readFileSync(path.join(DIR, 'i18n', l, 'stories.json'), 'utf8'))) if ((x.title || '').length > 140 || (x.title || '').length > (x.text || '').length) bad.push(l + '/' + x.slug);
   assert.deepEqual(bad, [], 'title and text look swapped');
 });
+test('jokes are gathered by topic: collection pages open in three languages, a single-joke address lands on its collection, and only collections are in the sitemap', async () => {
+  const { jokeCollections } = require('./site/stories.js'), C = load(DIR), cols = jokeCollections(C), jokes = C.stories.filter((x) => x.kind === 'joke'), c = client();
+  assert.ok(cols.length > 10 && cols.length < jokes.length / 5, 'about 14 jokes a page'); assert.equal(cols.reduce((n, x) => n + x.jokes.length, 0), jokes.length, 'every joke is on exactly one page');
+  for (const pre of ['', '/he', '/ru']) { const r = await c.call('GET', `${pre}/stories/jokes/${cols[0].id}`); assert.equal(r.status, 200); assert.ok(r.text.includes('id="' + cols[0].jokes[0].slug + '"')); }
+  const one = await fetch(base + '/stories/' + jokes[0].slug, { redirect: 'manual' }); assert.equal(one.status, 301); assert.match(one.headers.get('location'), /^\/stories\/jokes\/[a-z]+-\d+#/);
+  const map = (await c.call('GET', '/sitemap.xml')).text; assert.ok(map.includes('/stories/jokes/' + cols[0].id)); assert.ok(!map.includes('/stories/' + jokes[0].slug + '<'), 'no single-joke pages in the sitemap');
+  assert.equal((await c.call('GET', '/stories/jokes/nothing-9')).status, 404);
+});
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',

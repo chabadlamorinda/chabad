@@ -216,3 +216,8 @@ The guide `/learn/sample-bequest-language-for-attorneys` has a builder (`{beques
 
 ## Replacing a picture
 Pictures in `site/media/` are kept by phones and browsers for a week. When a picture changes, save it under a NEW file name (for example `chanukah-2026-banner.jpg` instead of `-bg.jpg`) and update the content that points to it, so everyone sees the new one at once.
+
+## Jokes are gathered by topic (Nov 16)
+Short jokes are not one page each. `jokeCollections` in `server/site/stories.js` gathers every joke by topic (money, marriage, children, parents, prayer, Israel, health, Torah study, joy and holidays, honesty and charity, more) into pages of about 14 at `/stories/jokes/<topic>-<n>` (in the sitemap, in all three languages; the topic names are in he.json/ru.json). An old or shared `/stories/<joke-slug>` address redirects (301) to the joke's place in its collection (`#<slug>`), and single jokes are not in the sitemap. Stories (not jokes) keep their own pages. A new joke only needs an entry in stories.json (and he/ru); put a topic in its `tags` so it lands on the right page.
+## Photos that need a credit
+A photo whose licence asks for a credit (CC BY, not Pexels) gets a line under it from `PHOTO_CREDIT` in `server/site/art.js` and a row in `site/media/photos/CREDITS.md`. The mezuzah guide uses `mezuzah-doorpost.jpg` (zeevveez, CC BY 2.0, Wikimedia Commons).

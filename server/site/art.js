@@ -67,12 +67,14 @@ function artForPath(p, title = '') {
   return name && exists(name) ? name : '';
 }
 // A real photo at the top of a page (free photos in site/media/photos, see CREDITS.md). Pages without one keep the drawing.
+// Photos whose licence asks for a credit (CC BY): the credit is shown under the picture. Pexels photos need none.
+const PHOTO_CREDIT = { '/media/photos/mezuzah-doorpost.jpg': 'Photo: zeevveez, <a href="https://commons.wikimedia.org/wiki/File:Mezuzah_with_Star_of_David_(3580841449).jpg" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener">CC BY 2.0</a>' };
 const PHOTOS = {
   '/programs/jewish-preschool': 'preschool-play', '/programs/hebrew-school': 'kids-crafts', '/programs/ckids-afterschool': 'kids-learning', '/programs/adult-education': 'torah-study',
   '/programs/womens-circle': 'challah-hands', '/programs/mens-club': 'tefillin', '/programs/kids-and-teens': 'challah-kid', '/programs/bar-bat-mitzvah': 'torah-yad', '/programs/bay-kosher': 'kosher-delivery',
   '/holidays/chanukah': 'chanukah-lighting', '/holidays/rosh-hashanah': 'apples-honey', '/holidays/yom-kippur': 'tallit-siddur', '/holidays/passover': 'seder-plate', '/holidays/shavuot': 'torah-yad', '/holidays/simchat-torah': 'torah-ark',
   '/shabbat': 'shabbat-table', '/kids': 'reading-child', '/legacy': 'tree-nature', '/about': 'diablo-hills', '/welcome': 'shabbat-dinner', '/our-area': 'diablo-hills', '/sponsor-a-kiddush': 'kiddush-cup', '/sponsor': 'family-table',
-  '/learn/mezuzah': 'mezuzah', '/learn/shabbat': 'shabbat-table', '/learn/challah': 'challah-close', '/learn/tefillin': 'tefillin', '/learn/shofar': 'shofar', '/learn/passover-seder': 'seder-plate', '/learn/matzah': 'matzah',
+  '/learn/mezuzah': 'mezuzah-doorpost', '/learn/shabbat': 'shabbat-table', '/learn/challah': 'challah-close', '/learn/tefillin': 'tefillin', '/learn/shofar': 'shofar', '/learn/passover-seder': 'seder-plate', '/learn/matzah': 'matzah',
   '/learn/chanukah-menorah': 'chanukah-lighting', '/learn/torah': 'torah-scroll', '/learn/bar-mitzvah': 'torah-yad', '/learn/kiddush': 'kiddush-cup', '/learn/shabbat-candles': 'shabbat-table', '/learn/hebrew-school-in-lamorinda': 'kids-crafts',
   '/learn/shabbat-in-lamorinda': 'shabbat-dinner', '/learn/moving-to-lamorinda': 'lamorinda-hills', '/learn/chanukah-for-kids': 'dreidel-kids', '/learn/chanukah-foods': 'sufganiyot', '/learn/dreidel': 'dreidel-kids',
 };
@@ -96,7 +98,7 @@ const GUIDE_PHOTOS = [
   [/shabbat-meals|shabbat-guest|shalom-aleichem|zemirot|cholent|eishet-chayil|shabbat-with-kids|shabbat-for-working|shabbat-in-lamorinda|hachnasat-orchim/, ['shabbat-dinner', 'family-table', 'challah-breaking']],
   [/shabbat|kabbalat|muktzeh|melachot|eruv(?!-tavshilin)|electricity|traveling-on/, ['shabbat-table', 'shabbat-dinner', 'challah-close', 'kiddush-cup', 'family-table']],
   [/kiddush-levana|rosh-chodesh|birkat-hachodesh|calendar|cheshvan|tevet|pesach-sheni/, 'moon-night'],
-  [/mezuzah|chanukat-habayit/, 'mezuzah'], [/tefillin|mitzvah-tanks/, 'tefillin'], [/tallit|tzitzit|kippah|shatnez/, 'tallit-siddur'],
+  [/mezuzah|chanukat-habayit/, 'mezuzah-doorpost'], [/tefillin|mitzvah-tanks/, 'tefillin'], [/tallit|tzitzit|kippah|shatnez/, 'tallit-siddur'],
   [/kosher|meat-and-milk|checking-for-insects|tevilat-kelim|chalav|cooking-on|eruv-tavshilin|shavuot-dairy/, ['cooking-kitchen', 'kosher-delivery']],
   [/pregnancy-loss|loss-of-a-pet/, 'memorial-candle'],
   [/wedding|chuppah|ketubah|sheva-brachot|kallah|chosson|first-year-of-marriage/, ['wedding-chuppah', 'wedding-rings', 'couple-talking']], [/mikvah|family-purity/, 'water-ripples'],
@@ -160,7 +162,7 @@ function decorate(html, pagePath) {
     return name ? `<a class="card tile has-art${cls}" href="${href}"${rest}>${artImg(name)}${before}${title}` : m;
   });
   const photo = photoForPath(pagePath);
-  if (photo && /<h1>/.test(html)) return html.replace(/<h1>/, `<figure class="page-photo"><img src="${photo}"${smallOf(photo) ? ` srcset="${smallOf(photo)} 560w, ${photo} 1400w" sizes="(max-width: 700px) 100vw, 760px"` : ''} alt="" fetchpriority="high" decoding="async"></figure><h1>`);
+  if (photo && /<h1>/.test(html)) return html.replace(/<h1>/, `<figure class="page-photo"><img src="${photo}"${smallOf(photo) ? ` srcset="${smallOf(photo)} 560w, ${photo} 1400w" sizes="(max-width: 700px) 100vw, 760px"` : ''} alt="" fetchpriority="high" decoding="async">${PHOTO_CREDIT[photo] ? `<figcaption class="photo-credit">${PHOTO_CREDIT[photo]}</figcaption>` : ''}</figure><h1>`);
   const top = artForPath(pagePath);
   return top ? html.replace(/<h1>/, `<div class="page-art" aria-hidden="true">${artImg(top, 'lg')}</div><h1>`) : html;
 }
