@@ -160,7 +160,7 @@ function decorate(html, pagePath) {
     return name ? `<a class="card tile has-art${cls}" href="${href}"${rest}>${artImg(name)}${before}${title}` : m;
   });
   const photo = photoForPath(pagePath);
-  if (photo && /<h1>/.test(html)) return html.replace(/<h1>/, `<figure class="page-photo"><img src="${photo}" alt="" fetchpriority="high" decoding="async"></figure><h1>`);
+  if (photo && /<h1>/.test(html)) return html.replace(/<h1>/, `<figure class="page-photo"><img src="${photo}"${smallOf(photo) ? ` srcset="${smallOf(photo)} 560w, ${photo} 1400w" sizes="(max-width: 700px) 100vw, 760px"` : ''} alt="" fetchpriority="high" decoding="async"></figure><h1>`);
   const top = artForPath(pagePath);
   return top ? html.replace(/<h1>/, `<div class="page-art" aria-hidden="true">${artImg(top, 'lg')}</div><h1>`) : html;
 }

@@ -94,7 +94,7 @@ function mountForms(r, { base, store, mailer, content, render, wrap, limit, read
     const X = ctxOf(req), { t, C } = X, list = formsOf(C).filter((f) => !f.closed && !f.hidden);
     await render(res, { path: '/forms', title: t('Sign-ups, registrations and orders'), description: t('Register for preschool, Hebrew School and camp, reserve High Holiday seats, order lulav and etrog or matzah, sell your chametz and more, online at Chabad of Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Sign-ups, registrations and orders'))}</h1><p class="lead-d">${esc(t('Everything you can sign up for or order, in one place. Signed in? Your details are filled in for you.'))}</p>
-<div class="grid">${byPopularity(list, (f) => '/forms/' + f.id).map((f) => `<a class="card tile" href="/forms/${f.id}"><h3>${esc(f.title)}</h3><p>${esc(f.intro)}</p></a>`).join('')}</div></section>` });
+<div class="grid">${byPopularity(list, (f) => '/forms/' + f.id).map((f) => `<a class="card tile" href="/forms/${f.id}"><h3 aria-level="2">${esc(f.title)}</h3><p>${esc(f.intro)}</p></a>`).join('')}</div></section>` });
   }));
 
   r.get('/forms/:id', wrap(async (req, res, next) => {

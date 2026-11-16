@@ -1043,3 +1043,9 @@ a.ask-rabbi { text-decoration: underline dotted var(--gold-ink, #8a6a1f); text-u
 .bequest input, .bequest select { width: 100%; margin-top: 4px; }
 .bequest .bq-out { background: var(--cream, #fffdf6); border-inline-start: 4px solid var(--gold, #b8872b); color: var(--ink, #222); font-family: Lora, Georgia, serif; direction: ltr; text-align: left; }
 .bequest-share { margin-top: 22px; }
+
+/* Easier to tap on a phone: footer links, the banner dots and the "more" rows */
+footer a { padding-block: 7px; }
+.bn-dots button { position: relative; }
+.bn-dots button::after { content: ""; position: absolute; inset: -10px; }
+summary { min-height: 40px; display: list-item; }

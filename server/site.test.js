@@ -1233,6 +1233,11 @@ test('Google Search Console verification file is served, other names are not', a
   assert.equal(r.status, 200); assert.equal(r.text, 'google-site-verification: google782f93ba7cc8f3ad.html');
   assert.equal((await c.call('GET', '/google0000000000000000.html')).status, 404);
 });
+test('stories and jokes: every title is short in every language (a title that holds the whole text is a swapped entry)', () => {
+  const fs = require('fs'), bad = [];
+  for (const l of ['he', 'ru']) for (const x of JSON.parse(fs.readFileSync(path.join(DIR, 'i18n', l, 'stories.json'), 'utf8'))) if ((x.title || '').length > 140 || (x.title || '').length > (x.text || '').length) bad.push(l + '/' + x.slug);
+  assert.deepEqual(bad, [], 'title and text look swapped');
+});
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',

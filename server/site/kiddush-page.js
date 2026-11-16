@@ -56,7 +56,8 @@ function mountKiddushPage(r, { render, wrap, ctxOf }) {
     if (!list) list = phrases();
     const embed = { lang, s: lang === 'ru' ? Object.fromEntries(list.map((s) => [s, t(s)]).filter(([a, b]) => a !== b)) : {} };
     const T = (s) => esc(lang === 'ru' ? t(s) : s); // the Kiddush script translates [data-t] itself
-    const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor a Kiddush'))}</h1>
+    const body = `<link rel="stylesheet" href="/kiddush/fonts.css"><link rel="stylesheet" href="/assets/kiddush-embed.css">
+<section class="wrap sec narrow"><h1>${esc(t('Sponsor a Kiddush'))}</h1>
 <p class="lead-d">${esc(t('Dedicate the Shabbat Kiddush in honor or in memory of someone dear. Your name and dedication are shown on our Kiddush board, and the whole community joins in the merit.'))}</p>
 <div class="kd${lang === 'he' ? ' he' : ''}">
 <div class="top" id="top"><div class="thisweek" id="thisWeek" aria-live="polite" hidden></div></div>
@@ -71,7 +72,6 @@ function mountKiddushPage(r, { render, wrap, ctxOf }) {
 </div>
 <div class="card callbox"><p><strong>${esc(t('Rather arrange it with the Rabbi? Call, text or WhatsApp.'))}</strong></p><p class="btns">${callRow(X, 'donation')}</p></div></section>
 <script type="application/json" id="kiddush-embed">${JSON.stringify(embed).replace(/</g, '\\u003c')}</script>
-<link rel="stylesheet" href="/kiddush/fonts.css"><link rel="stylesheet" href="/assets/kiddush-embed.css">
 <script src="/kiddush/i18n.js" defer></script><script src="/kiddush/sponsor.js" defer></script>`;
     await render(res, { path: '/sponsor-a-kiddush', title: t('Sponsor a Kiddush at Chabad of Lamorinda'), description: t('Sponsor the Shabbat Kiddush at Chabad of Lamorinda in Lafayette in honor or in memory of someone dear: pick a week, add your dedication and pay securely online.'), body });
   }));
