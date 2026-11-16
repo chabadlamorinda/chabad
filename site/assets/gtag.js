@@ -2,5 +2,7 @@
 window.dataLayer = window.dataLayer || [];
 function gtag() { window.dataLayer.push(arguments); }
 window.gtag = gtag;
-gtag('js', new Date());
-gtag('config', document.currentScript.getAttribute('data-id'));
+var id = document.currentScript.getAttribute('data-id');
+// Browsers that ask not to be tracked (Global Privacy Control or Do Not Track) are not counted.
+if (navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1') { window['ga-disable-' + id] = true; }
+else { gtag('js', new Date()); gtag('config', id); }
