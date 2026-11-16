@@ -203,7 +203,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
         { label: 'Instagram', done: !!env.IG_USER_ID, todo: 6, optional: true },
         { label: 'Google Analytics', done: !!env.GA_ID, todo: 8, optional: true },
         { label: 'Website address (jewishlamorinda.com) connected', done: !!env.PUBLIC_URL && !/onrender\.com/.test(env.PUBLIC_URL), todo: 20 },
-        { label: 'Google Search Console', done: !!env.GOOGLE_SITE_VERIFICATION, todo: 10 },
+        { label: 'Google Search Console', done: true, todo: 10 }, // verified Nov 16 with the file /google782f93ba7cc8f3ad.html (served by seo.js), so no GOOGLE_SITE_VERIFICATION is needed
         { label: 'Phone notifications for the app', done: !!(env.VAPID_PUBLIC_KEY || process.env.VAPID_PUBLIC_KEY), todo: 11, optional: true },
         { label: 'The weekly email goes out by itself (Website, Weekly email)', done: !!(store && store.getKv && ((await store.getKv('email-auto', null).catch(() => null)) || {}).on), todo: 3, optional: true },
       ] })));
