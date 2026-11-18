@@ -73,6 +73,9 @@ A free Render service goes to sleep after 15 minutes without visitors, and the f
 * The staff link is hidden on the phone page: tap the bottom-left corner of the screen and a faint "Staff sign-in" appears.
 * The year changes by itself at Rosh Hashanah.
 
+## About the free database allowance
+Neon's free plan includes 100 "compute hours" a month and puts the database to sleep when nothing is using it. The TV asks for the board every minute, so the server keeps the board in memory (and refreshes it the moment anything changes: a sponsor, a payment, a setting, a note) so the database can sleep between changes. If Neon ever emails that the allowance is used up, upgrading the Neon project (usage-based, a few dollars a month) brings it back immediately; otherwise the board keeps showing its last good version until the allowance resets next month, but new sponsorships and the staff page will not work until then.
+
 ## If something goes wrong
 * **Staff page says wrong password:** it must match `ADMIN_PASSWORD` in Render exactly, with no space at the end. After you change it, wait a minute for the restart. Eight wrong tries locks the page for 15 minutes.
 * **Page says "Sponsorships are not set up yet":** `DATABASE_URL` is missing or wrong. In Render open **Logs** and look for "Database connected."

@@ -105,7 +105,38 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     ? { name: sp.anonymous ? 'Anonymous' : sp.name, dedication: dedicationText(sp.dedication_kind, sp.dedication), kind: sp.dedication_kind || '', reason: sp.dedication || '' } : null);
 
   /** The board for one Hebrew year. `admin` adds hidden weeks and private donor details. */
-  async function board({ year, admin = false, exact = false } = {}) {
+  // The public board is remembered between changes. The TV asks for it every minute; on a pay-as-you-go database each of those questions would keep
+  // the database awake all day and night and use up its monthly allowance. Every change made through this server clears the memory at once, so
+  // nothing is ever late. If the database is unreachable, the last good board is served instead of an error.
+  const BOARD_TTL = 30 * 60e3, boardCache = new Map(), lastGood = new Map();
+  let boardGen = 0;
+  const clearBoardCache = () => { boardGen++; boardCache.clear(); };
+  if (store) {
+    const raw = store, MUTATES = /^(create|update|release|markPaid|markReminded|setReminder|attach|save|add|delete|kiddushReset)/;
+    store = new Proxy(raw, { get(target, prop) {
+      const v = target[prop];
+      if (typeof v !== 'function' || typeof prop !== 'string' || !MUTATES.test(prop)) return typeof v === 'function' ? v.bind(target) : v;
+      return async (...args) => { try { return await v.apply(target, args); } finally { clearBoardCache(); } };
+    } });
+  }
+  async function board(opts = {}) {
+    if (opts.admin || !store) return buildBoard(opts);
+    const { today } = await todayInfo();
+    const key = [opts.year || '', opts.exact ? 1 : 0, today].join('|'), hit = boardCache.get(key);
+    if (hit && Date.now() - hit.at < BOARD_TTL) return hit.b;
+    const gen = boardGen;
+    try {
+      const b = await buildBoard(opts);
+      if (gen === boardGen) boardCache.set(key, { at: Date.now(), b });
+      lastGood.set(key, b);
+      return b;
+    } catch (e) {
+      const old = lastGood.get(key);
+      if (old) { log.error('kiddush board: serving the last good board, database said:', e && e.message); return { ...old, stale: true }; }
+      throw e;
+    }
+  }
+  async function buildBoard({ year, admin = false, exact = false } = {}) {
     const st = await settings();
     const { today } = await todayInfo();
     const [overrides, events, live, allNotesList] = store ? await Promise.all([store.slotOverrides(), store.listEvents(), store.liveSponsorships(), store.listNotes()]) : [new Map(), [], [], []];
@@ -551,7 +582,7 @@ function createKiddush({ store, stripe, log = console, now = () => new Date(), m
     }));
   }
 
-  return { board, sponsor, confirm, cancel, onStripeEvent, mountPublic, mountAdmin, runReminders, startReminders, HttpError };
+  return { board, clearBoardCache, sponsor, confirm, cancel, onStripeEvent, mountPublic, mountAdmin, runReminders, startReminders, HttpError };
 }
 
 module.exports = { createKiddush, KINDS, DEFAULTS };
