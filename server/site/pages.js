@@ -247,7 +247,9 @@ ${pics.length ? `<div class="pics big">${pics.map((p) => `<a href="${esc(p.link)
   }));
 
   r.use('/assets', express.static(path.join(ROOT, 'site', 'assets'), { maxAge: '365d', immutable: true }));
-  r.use('/media', express.static(path.join(ROOT, 'site', 'media'), { maxAge: '7d' }));
+  // Pictures are kept by browsers for a long time (saves bandwidth; a changed picture gets a new file name, see CLAUDE.md "Replacing a picture").
+  r.use('/media/photos', express.static(path.join(ROOT, 'site', 'media', 'photos'), { maxAge: '365d', immutable: true }));
+  r.use('/media', express.static(path.join(ROOT, 'site', 'media'), { maxAge: '30d' }));
   app.use(r);
 
   // Simple Markdown pages (about, contact, privacy...). Mounted last by the site so specific pages win.

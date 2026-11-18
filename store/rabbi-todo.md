@@ -61,3 +61,6 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 
 ## Record the Chanukah blessings (audio)
 The guide /learn/chanukah-menorah plays Chabad.org's video and links to its audio of the blessings. To have your own voice on the page: record about a minute on your phone (the three blessings, Haneirot Halalu, Maoz Tzur), send it to Claude in the chat, and it goes on the page as a play button (`audio:` line in the guide).
+
+## Bandwidth (Render email, Nov 18)
+Render warned that 70% of the 5 GB monthly bandwidth is used. Going over costs $15 per 100 GB (15 cents a GB), so it is small money, and it resets each month. The site already compresses pages and keeps pictures in browsers (photos for a year since Nov 18). To cut it more: put Cloudflare in front (turn the cloud ORANGE on the two jewishlamorinda.com DNS records and set SSL/TLS to "Full (strict)"; Cloudflare then serves pictures and styles from its own copies), or move up a Render plan. Do the Cloudflare step after Chanukah, with Claude.
