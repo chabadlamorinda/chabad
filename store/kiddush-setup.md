@@ -60,3 +60,6 @@ Add a custom domain such as `kiddush.chabadoflamorinda.com` in Render (same step
 
 ## Notes on the old board
 The calendar is generated, so it differs from the printed 5786 board in three places: Yom Kippur is **Oct 2** (10 Tishrei), not Oct 1; **Haazinu** (Oct 4) is included; and Behar-Bechukotai appears once.
+
+## About the free database allowance
+Neon's free plan includes 100 "compute hours" a month and puts the database to sleep when nothing is using it. The TV asks for the board every minute, so the server keeps the board in memory (and refreshes it the moment anything changes: a sponsor, a payment, a setting, a note) so the database can sleep between changes. If Neon ever emails that the allowance is used up, upgrading the Neon project (usage-based, a few dollars a month) brings it back immediately; otherwise the board keeps showing its last good version until the allowance resets next month, but new sponsorships and the staff page will not work until then.
