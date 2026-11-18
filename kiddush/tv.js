@@ -121,13 +121,21 @@
     }).catch(function () {});
   }
 
+  // Some TV browsers draw all text bigger than asked (an Android "font size" or Fully Kiosk text-zoom setting). Measure by how much, so rows can be made roomier up front.
+  var textScale = (function () {
+    try {
+      var p = document.createElement('div'); p.style.cssText = 'position:absolute;visibility:hidden;left:-9999px;top:0;font:100px/1 serif;white-space:nowrap'; p.textContent = 'Hg';
+      document.body.appendChild(p); var h = p.getBoundingClientRect().height; document.body.removeChild(p);
+      return Math.min(2, Math.max(1, h / 100 || 1));
+    } catch (e) { return 1; }
+  })();
   function layout(b) {
     var slots = b.slots, rows = Math.max(1, Math.ceil(slots.length / 4));
     document.documentElement.style.setProperty('--rows', rows);
     // Past weeks with a long dedication get a taller row, so the text never has to be shrunk below what a TV browser can draw (about 8px).
     var weight = function (s) {
       if (!s || !s.past) return 1;
-      var sl = sponsorsOf(s), len = reasons(sl).length, nl = names(sl).length, lines = Math.min(4, Math.ceil(len / 46) || 0), nameLines = Math.min(3, Math.ceil(nl / 30) || 1);
+      var sl = sponsorsOf(s), len = reasons(sl).length, nl = names(sl).length, lines = Math.min(4, Math.ceil(len / (46 / textScale)) || 0), nameLines = Math.min(3, Math.ceil(nl / 30) || 1);
       return 1 + .45 * Math.max(0, lines - 1) + .25 * Math.max(0, nameLines - 1);
     };
     for (var c = 0; c < 4; c++) {
@@ -161,10 +169,10 @@
   // Past weeks show the whole dedication: it may wrap onto extra lines, and the text of the tile shrinks until everything fits (never cut off with "...").
   function fitTileText(t) {
     var kids = [].slice.call(t.querySelectorAll('.tt, .td, .ts, .n, .s, .r')), cs = getComputedStyle(t), g = 0;
-    var avail = t.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
-    var used = function () { return kids.reduce(function (a, k) { return a + k.offsetHeight; }, 0); };
-    var tooSmall = function () { return kids.some(function (k) { return parseFloat(getComputedStyle(k).fontSize) * .93 < 8.5; }); }; // browsers on TVs will not draw text much below 8px
-    while (used() > avail + 1 && g++ < 22 && !tooSmall()) kids.forEach(function (k) { k.style.fontSize = parseFloat(getComputedStyle(k).fontSize) * .93 + 'px'; });
+    var avail = t.getBoundingClientRect().height - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom); // measured as drawn on screen
+    var used = function () { return kids.reduce(function (a, k) { return a + k.getBoundingClientRect().height; }, 0); };
+    // shrink the tile's text (as much as it takes) until all of it fits inside the tile
+    while (used() > avail + 1 && g++ < 45) kids.forEach(function (k) { k.style.fontSize = Math.max(2, parseFloat(getComputedStyle(k).fontSize) * .94) + 'px'; });
   }
   function sizeRows(rows) {
     var col = $('c0'), h = col.clientHeight, gap = parseFloat(getComputedStyle(col).rowGap) || 0;
