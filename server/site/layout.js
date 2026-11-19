@@ -155,7 +155,7 @@ function footer(c, t) {
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Get involved'))}</summary><div class="ftr-links">
-      ${a('/account', 'My account & family')}${a('/forms', 'Sign-ups and orders')}${a('/subscribe', 'Get our weekly email')}${a('/sponsor', 'Sponsor in honor or memory of a loved one')}${a('/mitzvah', 'Do a mitzvah this week')}${a('/get-involved', 'Get involved')}${a('/welcome', 'New to the area?')}${a('/donate', 'Donate')}${a('/legacy', 'Leave a legacy')}<a href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a><a href="/chai-club">${esc(t('Chai Club'))}</a>
+      ${a('/account', 'My account & family')}${a('/forms', 'Sign-ups and orders')}${a('/subscribe', 'Get our weekly email')}${a('/sponsor', 'Sponsor in honor or memory of a loved one')}${a('/mitzvah', 'Do a mitzvah this week')}${a('/app', 'Get the My Pushka app')}${a('/get-involved', 'Get involved')}${a('/welcome', 'New to the area?')}${a('/donate', 'Donate')}${a('/legacy', 'Leave a legacy')}<a href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a><a href="/chai-club">${esc(t('Chai Club'))}</a>
     </div></details>
   </div>
   <div class="wrap ftr-base"><p>&copy; ${new Date().getFullYear()} ${esc(o.name)}. ${escLtr(o.legal || '')} ${esc(t('Part of the worldwide Chabad-Lubavitch movement.'))}</p><p>${a('/privacy', 'Privacy')} · ${a('/accessibility', 'Accessibility')}</p></div>

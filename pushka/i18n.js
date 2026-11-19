@@ -740,4 +740,6 @@ const HE = {
   "Please wait a moment before asking for another code.": "נא להמתין רגע לפני בקשת קוד נוסף.",
   "We could not send the email. Please check the address and try again.": "לא הצלחנו לשלוח את המייל. בדקו את הכתובת ונסו שוב.",
   "Signing in is not set up yet.": "הכניסה עדיין לא הוגדרה.",
+  "Install My Pushka": "התקנת ״הקופה שלי״",
+  "Add it to your home screen to open it like an app, in one tap.": "הוסיפו אותה למסך הבית כדי לפתוח אותה כמו אפליקציה, בלחיצה אחת.",
 };

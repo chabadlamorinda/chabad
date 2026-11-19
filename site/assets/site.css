@@ -975,3 +975,8 @@ html { scroll-padding-top: 84px; }
 .card.joke p:first-child { font-size: 1.02rem; }
 .story-text { font-size: 1.08rem; line-height: 1.7; }
 .story-source { margin-top: 1.4rem; border-top: 1px solid var(--line); padding-top: .8rem; }
+/* Get the app (/app) */
+.app-steps { margin: .4rem 0 0; padding-inline-start: 1.3rem; line-height: 1.7; }
+.app-steps li { margin: .35rem 0; }
+.app-qr { width: 190px; max-width: 60%; margin: .6rem 0 1rem; background: #fff; padding: 8px; border-radius: 10px; border: 1px solid var(--line); }
+.app-qr svg { display: block; width: 100%; height: auto; }
