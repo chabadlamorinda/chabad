@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS payment_events (
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 ALTER TABLE members ADD COLUMN IF NOT EXISTS verified_at TIMESTAMPTZ;
+ALTER TABLE members ADD COLUMN IF NOT EXISTS verified_email TEXT;
 CREATE UNIQUE INDEX IF NOT EXISTS members_verified_email_idx ON members (lower(email)) WHERE verified_at IS NOT NULL;
 CREATE TABLE IF NOT EXISTS auth_codes (email TEXT PRIMARY KEY, code_hash TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, attempts INT NOT NULL DEFAULT 0, sent_at TIMESTAMPTZ NOT NULL DEFAULT now());
 CREATE TABLE IF NOT EXISTS account_state (member_id TEXT PRIMARY KEY REFERENCES members(id) ON DELETE CASCADE, rev INT NOT NULL DEFAULT 1, state JSONB NOT NULL, updated_at TIMESTAMPTZ NOT NULL DEFAULT now());
@@ -55,11 +56,65 @@ function createStore(url, opts = {}) {
   const rows = async (text, params) => (await q(text, params)).rows;
   const one = async (text, params) => (await q(text, params)).rows[0] || null;
 
+
+  // ----- one account per email -----
+  const inTx = async (fn) => { const c = await pool.connect(); try { await c.query('BEGIN'); const r = await fn(c); await c.query('COMMIT'); return r; } catch (e) { await c.query('ROLLBACK').catch(() => {}); throw e; } finally { c.release(); } };
+  const keep = (c, key, value) => c.query('INSERT INTO kv (key, value) VALUES ($1,$2) ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value, updated_at=now()', [key, JSON.stringify(value)]);
+  // Move everything of the duplicate account d into the surviving account k. Rows that would clash with one k already has
+  // (the same key) stay behind and go with d; profile fields k lacks are copied; a second Stripe customer or a second saved
+  // pushka is not lost: it is kept in kv ("merge-note:...") so the Rabbi can recover it.
+  async function mergeMember(c, k, d) {
+    const [kr] = (await c.query('SELECT * FROM members WHERE id=$1', [k])).rows, [dr] = (await c.query('SELECT * FROM members WHERE id=$1', [d])).rows;
+    if (!kr || !dr) return;
+    const notes = {};
+    const states = (await c.query('SELECT member_id, rev, state, updated_at FROM account_state WHERE member_id = ANY($1)', [[k, d]])).rows;
+    if (states.length === 2) {
+      const ks = states.find((r) => r.member_id === k), ds = states.find((r) => r.member_id === d), dNewer = new Date(ds.updated_at) > new Date(ks.updated_at), loser = dNewer ? ks : ds;
+      notes.pushka = loser.state; if (dNewer) await c.query('DELETE FROM account_state WHERE member_id=$1', [k]); else await c.query('DELETE FROM account_state WHERE member_id=$1', [d]);
+    }
+    if (dr.stripe_customer_id && kr.stripe_customer_id && dr.stripe_customer_id !== kr.stripe_customer_id) notes.stripeCustomer = dr.stripe_customer_id;
+    const fks = (await c.query(`SELECT c.conrelid::regclass::text AS tbl, a.attname AS col FROM pg_constraint c JOIN pg_attribute a ON a.attrelid = c.conrelid AND a.attnum = ANY(c.conkey) WHERE c.contype = 'f' AND c.confrelid = 'members'::regclass`)).rows;
+    for (const f of fks) {
+      for (const r of (await c.query(`SELECT ctid::text AS t FROM ${f.tbl} WHERE ${f.col}=$1`, [d])).rows) {
+        await c.query('SAVEPOINT mv');
+        try { await c.query(`UPDATE ${f.tbl} SET ${f.col}=$1 WHERE ctid=$2::tid`, [k, r.t]); await c.query('RELEASE SAVEPOINT mv'); } catch (e) { await c.query('ROLLBACK TO SAVEPOINT mv'); }
+      }
+    }
+    const text = ['name', 'phone', 'address', 'hebrew_name', 'diet', 'town', 'card_issue'].filter((col) => col in kr), keepIfSet = ['stripe_customer_id', 'anniversary', 'mezuzahs_checked', 'tefillin_checked'].filter((col) => col in kr);
+    const sets = [...text.map((col) => `${col} = CASE WHEN COALESCE(m.${col}, '') = '' THEN d.${col} ELSE m.${col} END`), ...keepIfSet.map((col) => `${col} = COALESCE(m.${col}, d.${col})`),
+      'share_yahrzeits = m.share_yahrzeits OR d.share_yahrzeits', ...('shabbat_email' in kr ? ['shabbat_email = m.shabbat_email OR d.shabbat_email'] : []),
+      ...('birthday' in kr ? ['birth_after_sunset = CASE WHEN m.birthday IS NULL THEN d.birth_after_sunset ELSE m.birth_after_sunset END', 'birthday = COALESCE(m.birthday, d.birthday)'] : [])];
+    await c.query(`UPDATE members m SET ${sets.join(', ')}, updated_at = now() FROM members d WHERE m.id=$1 AND d.id=$2`, [k, d]);
+    if (Object.keys(notes).length) await keep(c, 'merge-note:' + k + ':' + Date.now(), { merged: d, ...notes });
+    await c.query('DELETE FROM members WHERE id=$1', [d]);
+  }
+  // The account for one proven address: found (merging duplicates) or created. legacy=true (the one-time start-up
+  // migration only) also recognises an app account whose address was proved before verified_email existed.
+  async function unifyOne(c, email, legacy, name) {
+    await c.query('SELECT pg_advisory_xact_lock(hashtext($1))', ['member:' + email]);
+    const found = (await c.query(`SELECT id FROM members WHERE verified_email=$1 ${legacy ? 'OR (verified_at IS NOT NULL AND verified_email IS NULL AND lower(email)=$1)' : ''} ORDER BY (verified_email IS NOT NULL) DESC, created_at`, [email])).rows;
+    if (!found.length) {
+      const id = newId('m_'); await c.query('INSERT INTO members (id, name, email, verified_email, verified_at) VALUES ($1,$2,$3,$3, now())', [id, name || '', email]); return id;
+    }
+    const id = found[0].id;
+    for (const d of found.slice(1)) await mergeMember(c, id, d.id);
+    await c.query("UPDATE members SET verified_email=$2, verified_at=COALESCE(verified_at, now()), name = CASE WHEN name = '' THEN $3 ELSE name END, updated_at=now() WHERE id=$1", [id, email, name || '']);
+    return id;
+  }
+  // Runs once at start-up (flag in kv): every address proved in either place becomes one account, then verified_email is made unique.
+  async function unifyAccounts() {
+    if (await one("SELECT 1 FROM kv WHERE key='accounts-unified-v1'")) return;
+    const addrs = (await q("SELECT DISTINCT COALESCE(verified_email, lower(email)) AS e FROM members WHERE verified_email IS NOT NULL OR (verified_at IS NOT NULL AND email <> '')")).rows.map((r) => r.e);
+    for (const e of addrs) { try { await inTx((c) => unifyOne(c, e, true)); } catch (err) { console.error('account merge failed for one address:', err && err.message); } }
+    await q('CREATE UNIQUE INDEX IF NOT EXISTS members_verified_email_uniq ON members (verified_email) WHERE verified_email IS NOT NULL');
+    await q("INSERT INTO kv (key, value) VALUES ('accounts-unified-v1', 'true') ON CONFLICT DO NOTHING");
+  }
+
   const kiddush = kiddushStore({ q, rows, one });
   return {
     ...kiddush,
     pool,
-    migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); await q(OUTREACH_SCHEMA); },
+    migrate: async () => { await q(SCHEMA); await q(kiddush.kiddushSchema); await q(SITE_SCHEMA); await q(OUTREACH_SCHEMA); await unifyAccounts(); },
     close: () => pool.end(),
     reset: async () => { // tests only (the shareable kit has no website tables)
       const want = ['members', 'yahrzeits', 'push_subs', 'push_log', 'followups', 'payment_events', 'family', 'rsvps', 'login_codes', 'submissions', 'social_posts', 'email_log', 'form_responses', 'chat_questions', 'email_unsubscribes', 'qa', 'member_activity', 'auth_codes', 'account_state', 'outreach_done', 'kv', 'community_days', 'fin_tx', 'fin_people', 'fin_budget'];
@@ -123,35 +178,12 @@ function createStore(url, opts = {}) {
     bumpAuthAttempts: (email) => q('UPDATE auth_codes SET attempts = attempts + 1 WHERE email=$1', [email]),
     deleteAuthCode: (email) => q('DELETE FROM auth_codes WHERE email=$1', [email]),
     // ONE account per email, shared by the website and the pushka app. Only an address someone proved with a code counts
-    // (verified_email from the website, verified_at from the app); records made without a code are never taken over.
-    // If an address ended up with two proven accounts, they are merged into the oldest one and their data moves with it.
-    verifiedMemberByEmail: (email) => one('SELECT * FROM members WHERE verified_email=lower($1) OR (verified_at IS NOT NULL AND lower(email)=lower($1)) ORDER BY (verified_email IS NOT NULL) DESC, created_at LIMIT 1', [email]),
-    async ensureVerifiedMember(email, name) {
-      email = String(email || '').toLowerCase();
-      const c = await pool.connect();
-      try {
-        await c.query('BEGIN'); await c.query('SELECT pg_advisory_xact_lock(hashtext($1))', ['member:' + email]);
-        const found = (await c.query('SELECT id, name, stripe_customer_id FROM members WHERE verified_email=$1 OR (verified_at IS NOT NULL AND lower(email)=$1) ORDER BY (verified_email IS NOT NULL) DESC, created_at', [email])).rows;
-        let id;
-        if (!found.length) { id = newId('m_'); await c.query('INSERT INTO members (id, name, email, verified_email, verified_at) VALUES ($1,$2,$3,$3, now())', [id, name || '', email]); }
-        else {
-          id = found[0].id;
-          if (found.length > 1) {
-            const fks = (await c.query(`SELECT c.conrelid::regclass::text AS tbl, a.attname AS col FROM pg_constraint c JOIN pg_attribute a ON a.attrelid = c.conrelid AND a.attnum = ANY(c.conkey) WHERE c.contype = 'f' AND c.confrelid = 'members'::regclass`)).rows;
-            for (const d of found.slice(1)) {
-              const both = (await c.query('SELECT member_id, updated_at FROM account_state WHERE member_id = ANY($1)', [[id, d.id]])).rows;
-              if (both.length === 2) { const keepNew = new Date(both.find((r) => r.member_id === id).updated_at) >= new Date(both.find((r) => r.member_id === d.id).updated_at); await c.query('DELETE FROM account_state WHERE member_id=$1', [keepNew ? d.id : id]); }
-              for (const f of fks) { await c.query('SAVEPOINT mv'); try { await c.query(`UPDATE ${f.tbl} SET ${f.col}=$1 WHERE ${f.col}=$2`, [id, d.id]); await c.query('RELEASE SAVEPOINT mv'); } catch (e) { await c.query('ROLLBACK TO SAVEPOINT mv'); } }
-              await c.query("UPDATE members SET stripe_customer_id = COALESCE(stripe_customer_id, $2), name = CASE WHEN name = '' THEN $3 ELSE name END WHERE id=$1", [id, d.stripe_customer_id, d.name || '']);
-              await c.query('DELETE FROM members WHERE id=$1', [d.id]);
-            }
-          }
-          await c.query("UPDATE members SET verified_email=$2, verified_at=COALESCE(verified_at, now()), name = CASE WHEN name = '' THEN $3 ELSE name END, updated_at=now() WHERE id=$1", [id, email, name || '']);
-        }
-        await c.query('COMMIT'); return id;
-      } catch (e) { await c.query('ROLLBACK').catch(() => {}); throw e; } finally { c.release(); }
-    },
+    // (verified_email); the email column can be edited from the app, so it is never trusted. If an address somehow has two
+    // proven accounts they are merged into the oldest one, and nothing is thrown away (see mergeMember).
+    verifiedMemberByEmail: (email) => one('SELECT * FROM members WHERE verified_email=lower($1) ORDER BY created_at LIMIT 1', [email]),
+    ensureVerifiedMember: (email, name) => inTx((c) => unifyOne(c, String(email || '').toLowerCase(), false, name)),
     createVerifiedMember(email, name) { return this.ensureVerifiedMember(email, name); },
+    unifyAccounts,
     getState: (memberId) => one('SELECT rev, state, updated_at FROM account_state WHERE member_id=$1', [memberId]),
     // Save a new version only if the caller saw the latest one (baseRev). Returns the new revision, or null when someone else saved first.
     async putState(memberId, baseRev, state) {

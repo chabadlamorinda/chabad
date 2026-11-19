@@ -8,8 +8,9 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 
 function mountGetApp(r, { render, wrap, ctxOf, base }) {
   const steps = (t, items) => `<ol class="app-steps">${items.map((s) => `<li>${esc(t(s))}</li>`).join('')}</ol>`;
-  const phones = (t, install) => `<div class="card" id="how"><h2>${esc(t('On an iPhone or iPad'))}</h2>${steps(t, ['Open this page in Safari.', 'Tap the Share button (the square with an arrow).', 'Choose “Add to Home Screen,” then tap Add.'])}</div>
-<div class="card"><h2>${esc(t('On an Android phone'))}</h2>${steps(t, ['Open this page in Chrome.', install, 'Open the app from your home screen.'])}</div>`;
+  const phones = (t, ios, android) => `<div class="card" id="how"><h2>${esc(t('On an iPhone or iPad'))}</h2>${steps(t, ios)}</div>
+<div class="card"><h2>${esc(t('On an Android phone'))}</h2>${steps(t, android)}</div>`;
+  const SHARE = 'Tap the Share button (the square with an arrow).', ADD = 'Choose “Add to Home Screen,” then tap Add.';
   const qr = (t, url) => `<h2>${esc(t('On a computer?'))}</h2><p>${esc(t('Scan this code with your phone’s camera to open it on your phone.'))}</p><div class="app-qr" role="img" aria-label="${esc(t('QR code'))}">${qrSvg(url)}</div>`;
 
   r.get('/app', wrap(async (req, res) => {
@@ -19,7 +20,7 @@ function mountGetApp(r, { render, wrap, ctxOf, base }) {
 <h1>${esc(t('Get the Chabad of Lamorinda app'))}</h1>
 <p class="lead-d">${esc(t('Shabbat times, events, holidays, guides to Jewish life and ways to give, one tap away on your phone. It is free, and there is nothing to download from an app store.'))}</p>
 <p class="btns"><button type="button" class="btn gold" data-install>${esc(t('Install Chabad of Lamorinda'))}</button><a class="btn ghost" href="/pushka-app">${esc(t('Get the My Pushka app'))}</a></p>
-${phones(t, 'Tap “Install Chabad of Lamorinda” above, or open the menu (three dots) and choose “Install app.”')}
+${phones(t, ['Open this page in Safari.', SHARE, ADD], ['Open this page in Chrome.', 'Tap “Install Chabad of Lamorinda” above, or open the menu (three dots) and choose “Install app.”', 'Open the app from your home screen.'])}
 <h2>${esc(t('What you get'))}</h2>
 <ul>
 <li>${esc(t('This week’s Shabbat candle lighting and Havdalah times for Lafayette, Moraga and Orinda.'))}</li>
@@ -39,7 +40,7 @@ ${qr(t, base + '/app')}
 <h1>${esc(t('Get the My Pushka app'))}</h1>
 <p class="lead-d">${esc(t('A coin a day for tzedakah, right on your phone. It is free, and there is nothing to download from an app store.'))}</p>
 <p class="btns"><a class="btn gold" href="/pushka/?install=1">${esc(t('Install My Pushka'))}</a><a class="btn ghost" href="/pushka/">${esc(t('Open My Pushka'))}</a><a class="btn ghost" href="/pushka/?signin=1">${esc(t('Sign in to your pushka'))}</a></p>
-${phones(t, 'Tap “Install My Pushka” above, or open the menu (three dots) and choose “Install app.”')}
+${phones(t, ['Tap “Open My Pushka” above.', 'In My Pushka, tap the Share button (the square with an arrow).', ADD], ['Tap “Install My Pushka” above.', 'Tap Install when your phone asks.', 'Open My Pushka from your home screen.'])}
 <h2>${esc(t('What you get'))}</h2>
 <ul>
 <li>${esc(t('A pushka on your phone: drop a coin each day, and empty it into a gift to Chabad of Lamorinda whenever you like.'))}</li>

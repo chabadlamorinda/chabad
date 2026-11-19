@@ -1512,16 +1512,26 @@ test('one account for the website and the My Pushka app: same person, same login
   assert.equal((await app.call('POST', '/api/auth/verify', { email: 'eli@example.com', code }, XF)).status, 200);
   assert.equal((await app.call('GET', '/api/site/me')).status, 200, 'the website cookie came with the app sign-in');
   assert.equal(await count('eli@example.com'), 1); assert.equal(await count('dana@example.com'), 1);
-  // two proven accounts for one address are merged on the next sign-in, and their data moves to the survivor
-  const q = (t, p) => store.pool.query(t, p);
-  await q("INSERT INTO members (id, name, email, verified_email, created_at) VALUES ('m_aaaaaaaaaaaaaaaaaaaaaaaa', 'Web Fam', 'fay@example.com', 'fay@example.com', now() - interval '2 days')");
-  await q("INSERT INTO members (id, name, email, verified_at) VALUES ('m_bbbbbbbbbbbbbbbbbbbbbbbb', '', 'fay@example.com', now())");
-  await q("INSERT INTO family (id, member_id, name) VALUES ('f_1', 'm_aaaaaaaaaaaaaaaaaaaaaaaa', 'Ari')");
-  await q("INSERT INTO account_state (member_id, state) VALUES ('m_bbbbbbbbbbbbbbbbbbbbbbbb', '{\"pushkas\":[{\"balance\":5}]}')");
-  assert.equal(await store.ensureVerifiedMember('FAY@example.com'), 'm_aaaaaaaaaaaaaaaaaaaaaaaa');
+  // accounts made before the two logins were one (website: verified_email; app: verified_at) are merged once, losing nothing
+  const q = (t, p) => store.pool.query(t, p), W = 'm_aaaaaaaaaaaaaaaaaaaaaaaa', A = 'm_bbbbbbbbbbbbbbbbbbbbbbbb';
+  await q("INSERT INTO members (id, name, email, verified_email, phone, stripe_customer_id, created_at) VALUES ($1, 'Web Fam', 'fay@example.com', 'fay@example.com', '', 'cus_WEB', now() - interval '2 days')", [W]);
+  await q("INSERT INTO members (id, name, email, verified_at, phone, stripe_customer_id, share_yahrzeits) VALUES ($1, '', 'fay@example.com', now(), '925-555-0100', 'cus_APP', true)", [A]);
+  await q("INSERT INTO family (id, member_id, name) VALUES ('f_1', $1, 'Ari')", [W]);
+  await q("INSERT INTO yahrzeits (id, member_id, name, h_day, h_month) VALUES ('y_1', $1, 'Moshe', 3, 'Kislev')", [A]);
+  await q("INSERT INTO account_state (member_id, state, updated_at) VALUES ($1, '{\"pushkas\":[{\"balance\":5}]}', now() - interval '1 day')", [W]);
+  await q("INSERT INTO account_state (member_id, state) VALUES ($1, '{\"pushkas\":[{\"balance\":9}]}')", [A]);
+  await q("INSERT INTO member_activity (member_id, path, day) VALUES ($1, '/a', CURRENT_DATE), ($1, '/only-web', CURRENT_DATE), ($2, '/a', CURRENT_DATE), ($2, '/only-app', CURRENT_DATE)", [W, A]).catch(() => {});
+  await q("DELETE FROM kv WHERE key='accounts-unified-v1'"); await store.unifyAccounts();
   assert.equal(await count('fay@example.com'), 1);
-  assert.equal((await q("SELECT count(*)::int AS n FROM family WHERE member_id='m_aaaaaaaaaaaaaaaaaaaaaaaa'")).rows[0].n, 1);
-  assert.equal((await q("SELECT state FROM account_state WHERE member_id='m_aaaaaaaaaaaaaaaaaaaaaaaa'")).rows[0].state.pushkas[0].balance, 5, 'the pushka followed the person');
+  const fay = (await q("SELECT * FROM members WHERE verified_email='fay@example.com'")).rows[0]; assert.equal(fay.id, W, 'the older account survives');
+  assert.equal(fay.phone, '925-555-0100', 'details the survivor lacked are copied'); assert.equal(fay.share_yahrzeits, true); assert.equal(fay.stripe_customer_id, 'cus_WEB');
+  assert.equal((await q('SELECT count(*)::int AS n FROM family WHERE member_id=$1', [W])).rows[0].n, 1);
+  assert.equal((await q('SELECT count(*)::int AS n FROM yahrzeits WHERE member_id=$1', [W])).rows[0].n, 1);
+  assert.equal((await q('SELECT state FROM account_state WHERE member_id=$1', [W])).rows[0].state.pushkas[0].balance, 9, 'the newer pushka wins');
+  const act = (await q('SELECT path FROM member_activity WHERE member_id=$1 ORDER BY path', [W])).rows.map((r) => r.path); assert.deepEqual(act, ['/a', '/only-app', '/only-web'], 'rows that clash stay one, the rest all move');
+  const notes = (await q("SELECT value FROM kv WHERE key LIKE 'merge-note:%'")).rows; assert.equal(notes.length, 1);
+  assert.equal(notes[0].value.pushka.pushkas[0].balance, 5, 'the pushka that lost is kept'); assert.equal(notes[0].value.stripeCustomer, 'cus_APP', 'the second Stripe customer is kept');
+  await store.unifyAccounts(); assert.equal(await count('fay@example.com'), 1, 'running again changes nothing');
   // an address made by the app WITHOUT a code is never taken over
   await q("INSERT INTO members (id, name, email) VALUES ('m_cccccccccccccccccccccccc', 'Planted', 'gil@example.com')");
   assert.notEqual(await store.ensureVerifiedMember('gil@example.com'), 'm_cccccccccccccccccccccccc');

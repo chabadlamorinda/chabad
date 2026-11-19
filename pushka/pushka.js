@@ -1401,9 +1401,9 @@ function codeSheet(email) {
     setTimeout(() => { try { $("#si2", o).focus(); } catch (e) {} }, 50);
   });
 }
-async function finishSignIn(r) {
+async function finishSignIn(r, quiet) {
   S.mtoken = r.token; S.auth = { email: r.email, at: Date.now() }; if (!S.email) S.email = r.email; if (!S.name && r.name) S.name = r.name;
-  if (r.stripeToken) { S.token = r.stripeToken; S.synced = ""; API.card = null; API.subs = null; }
+  if (r.stripeToken && !(quiet && S.token)) { S.token = r.stripeToken; S.synced = ""; API.card = null; API.subs = null; }
   S.msig = [S.name, S.email, S.phone, S.address, S.token].join("|"); S.rev = 0; persist();
   if (API.enabled && S.token) refreshCard().catch(() => {});
   if (r.hasState && hasLocal()) return conflictSheet();
@@ -1418,7 +1418,7 @@ function conflictSheet() {
 async function autoSignIn() {
   if (!API.accounts || S.auth || PRACTICE) return;
   try { if (sessionStorage.getItem("pushka-auto")) return; sessionStorage.setItem("pushka-auto", "1"); } catch (e) {}
-  try { await finishSignIn(await api("/auth/session", { method: "POST", site: true, body: {} })); } catch (e) {}
+  try { await finishSignIn(await api("/auth/session", { method: "POST", site: true, body: {} }), true); } catch (e) {}
 }
 A.signIn = () => signInSheet("");
 A.signCloud = async () => { try { const st = await api("/account/state", { member: true }); applyDoc(st.state, st.rev); closeSheet(); toast(tt("Welcome back! Your pushka is restored.")); } catch (e) { toast(authErr(e)); } };

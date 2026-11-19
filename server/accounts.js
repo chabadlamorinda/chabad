@@ -49,6 +49,7 @@ function mountAccounts(app, { store, mailer, tokens, sessionSecret, limit, log =
   const signedIn = async (m) => { const st = await store.getState(m.id); return { token: tokens.signMember(m.id), email: m.verified_email || m.email, name: m.name || '', stripeToken: m.stripe_customer_id ? tokens.signCustomer(m.stripe_customer_id) : '', hasState: !!st, rev: st ? st.rev : 0 }; };
   // Already signed in on the website in this browser? Then the app can sign in without asking for another code.
   app.post('/api/auth/session', json, needOn, limit('auth-session', 60, 15 * 60 * 1000), wrap(async (req, res) => {
+    res.setHeader('Cache-Control', 'no-store');
     if (req.get('x-site') !== '1' || !app.locals.siteSession) return fail(res, 401, 'unauthorized', 'Please sign in.');
     const m = await app.locals.siteSession.member(req);
     if (!m) return fail(res, 401, 'unauthorized', 'Please sign in.');

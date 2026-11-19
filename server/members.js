@@ -54,7 +54,7 @@ function mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, lim
     const m = /^Bearer (.+)$/.exec(req.get('authorization') || ''), existing = m && tokens.verifyMember(m[1]);
     let id = existing && (await store.getMember(existing)) ? existing : null;
     // A record that proved its email on the website keeps that email (it cannot be changed from the app).
-    if (id) { const cur = await store.getMember(id); if (cur.verified_email) fields.email = cur.verified_email; await store.updateMember(id, fields); } else id = await store.createMember(fields);
+    if (id) { const cur = await store.getMember(id); if (cur.verified_email || cur.verified_at) fields.email = cur.verified_email || cur.email; await store.updateMember(id, fields); } else id = await store.createMember(fields);
     const cus = req.body.stripeToken && tokens.verifyCustomer(req.body.stripeToken);
     if (cus) await store.linkStripe(id, cus);
     res.json({ token: tokens.signMember(id) });

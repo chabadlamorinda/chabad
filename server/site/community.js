@@ -32,9 +32,6 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS first_login TIMESTAMPTZ;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS verified_email TEXT;
 UPDATE members SET verified_email=lower(email) WHERE verified_email IS NULL AND last_login IS NOT NULL AND email <> '';
 CREATE INDEX IF NOT EXISTS members_verified_idx ON members (verified_email);
--- One sign-in for the website and the app: an address proved in either place counts in both.
-UPDATE members SET verified_email=lower(email) WHERE verified_email IS NULL AND verified_at IS NOT NULL AND email <> '';
-UPDATE members SET verified_at=COALESCE(first_login, now()) WHERE verified_at IS NULL AND verified_email IS NOT NULL;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS lang TEXT NOT NULL DEFAULT 'en';
 ALTER TABLE yahrzeits ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'app';
 CREATE TABLE IF NOT EXISTS login_codes (
