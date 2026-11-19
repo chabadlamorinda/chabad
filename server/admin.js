@@ -145,6 +145,16 @@ function mountAdmin(app, { funds = {}, store, stripe, password, secret, limit, s
     r.get('/kiddush', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'kiddush.html')));
     r.get('/kiddush.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'kiddush.js')));
   }
+  // The Rabbi's desk as an app on the phone (installed from the browser: Share → Add to Home Screen, or the browser's Install): its own
+  // icon and name, opens full screen. Public on purpose (the browser asks for these without signing in); they hold nothing private.
+  r.get('/manifest.webmanifest', (req, res) => res.type('application/manifest+json').set('Cache-Control', 'public, max-age=3600').json({
+    id: '/admin/', name: 'Rabbi’s desk — Chabad of Lamorinda', short_name: 'Rabbi’s desk', description: 'Requests, RSVPs, gifts, the weekly email and the books, in one place.',
+    start_url: '/admin/', scope: '/admin/', display: 'standalone', orientation: 'portrait', background_color: '#f2f2f2', theme_color: '#14284b',
+    icons: [{ src: '/pushka/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/pushka/icon-512.png', sizes: '512x512', type: 'image/png' }, { src: '/pushka/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
+    shortcuts: [{ name: 'Requests', url: '/admin/community#requests' }, { name: 'Who is coming', url: '/admin/community#rsvps' }, { name: 'Finances', url: '/admin/finances' }],
+  }));
+  // A do-nothing helper that lets browsers treat the desk as an installable app. It never stores pages or data: everything comes live from the server.
+  r.get('/sw.js', (req, res) => res.type('application/javascript').set('Cache-Control', 'no-cache').send("self.addEventListener('install', function () { self.skipWaiting(); });\nself.addEventListener('activate', function (e) { e.waitUntil(self.clients.claim()); });\nself.addEventListener('fetch', function () { /* straight to the network: nothing is kept on the phone */ });\n"));
   r.get(['/', '/index.html'], (req, res) => res.sendFile(path.join(__dirname, 'admin', 'index.html')));
   r.get('/admin.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'admin.js')));
   r.get('/waiting.js', (req, res) => res.sendFile(path.join(__dirname, 'admin', 'waiting.js')));

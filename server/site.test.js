@@ -1475,3 +1475,16 @@ test('the GitHub key saved in the Rabbi area reaches the updater (decrypted on t
   const list = await a.call('GET', '/admin/api/site/settings'); assert.ok(!list.text.includes(T), 'the screen never shows it back');
   fs.rmSync(dir, { recursive: true, force: true });
 });
+
+test('the Rabbi\'s desk and the website can be installed as apps on a phone', async () => {
+  const c = client();
+  const m = await c.call('GET', '/admin/manifest.webmanifest'); assert.equal(m.status, 200, 'public: the browser asks without signing in');
+  assert.equal(m.json.scope, '/admin/'); assert.equal(m.json.start_url, '/admin/'); assert.equal(m.json.display, 'standalone'); assert.ok(m.json.short_name && m.json.theme_color);
+  assert.ok(m.json.icons.some((i) => i.sizes === '192x192') && m.json.icons.some((i) => i.sizes === '512x512') && m.json.icons.some((i) => i.purpose === 'maskable'));
+  for (const i of m.json.icons) assert.equal((await c.call('GET', i.src)).status, 200, i.src + ' opens');
+  for (const p of ['/admin/', '/admin/community', '/admin/finances']) { const h = await c.call('GET', p); assert.ok(/rel="manifest" href="\/admin\/manifest\.webmanifest"/.test(h.text) && /apple-touch-icon/.test(h.text), p + ' points to the app details'); }
+  const sw = await c.call('GET', '/admin/sw.js'); assert.equal(sw.status, 200); assert.match(sw.text, /addEventListener\('fetch'/); assert.ok(!/caches\./.test(sw.text), 'it keeps nothing on the phone');
+  assert.match((await c.call('GET', '/admin/admin.js')).text, /Put this on your phone/);
+  const w = await c.call('GET', '/site.webmanifest'); assert.equal(w.status, 200); assert.equal(w.json.display, 'standalone'); assert.ok(w.json.shortcuts.some((s) => /^\/donate/.test(s.url)) && w.json.shortcuts.some((s) => /^\/shabbat-times/.test(s.url)));
+  assert.ok(w.json.icons.some((i) => i.purpose === 'maskable')); for (const s of w.json.shortcuts) assert.equal((await c.call('GET', s.url)).status < 400, true, s.url + ' opens');
+});
