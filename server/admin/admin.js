@@ -1,6 +1,9 @@
 'use strict';
 (function () {
-  var app = document.getElementById('app'), tab = null;
+  var app = document.getElementById('app'), tab = null, installEvent = null;
+  // Installing as an app: the browser says when it is possible; the helper below is what makes the desk installable (it stores nothing).
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); installEvent = e; var b = document.getElementById('install-btn'); if (b) b.hidden = false; });
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/admin/sw.js', { scope: '/admin/' }).catch(function () { /* not available: the desk still works in the browser */ });
   function el(tag, attrs, kids) {
     var n = document.createElement(tag);
     for (var k in (attrs || {})) { if (k === 'text') n.textContent = attrs[k]; else if (k === 'class') n.className = attrs[k]; else if (k.slice(0, 2) === 'on') n.addEventListener(k.slice(2), attrs[k]); else n.setAttribute(k, attrs[k]); }
@@ -57,6 +60,18 @@
         return /^https:\/\//.test(t[0]) ? el('a', { class: 'tile', href: t[0], target: '_blank', rel: 'noopener' }, kids) : t[0].charAt(0) === '/' ? el('a', { class: 'tile', href: t[0] }, kids) : el('button', { class: 'tile', onclick: function () { tab = t[0]; load(); window.scrollTo(0, 0); } }, kids);
       })));
     });
+    var ic = installCard(); if (ic) app.appendChild(ic);
+  }
+  // The desk as an app on the phone: shown only in a browser (not once it is installed), and it can be hidden for good.
+  function installCard() {
+    var standalone = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone;
+    try { if (standalone || localStorage.getItem('hide-install') === '1') return null; } catch (e) { if (standalone) return null; }
+    var ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    var btn = el('button', { class: 'big', id: 'install-btn', text: 'Install the app', onclick: function () { if (installEvent) { installEvent.prompt(); installEvent = null; btn.hidden = true; } } });
+    btn.hidden = !installEvent;
+    return el('div', { class: 'card' }, [el('h2', { text: 'Put this on your phone' }),
+      el('p', { class: 'small', text: ios ? 'Tap the Share button (the square with an arrow), then “Add to Home Screen”. It opens full screen like an app, with its own icon.' : 'Tap the ⋮ menu in your browser, then “Install app” or “Add to Home screen”. It opens full screen like an app, with its own icon.' }),
+      btn, el('p', { class: 'small' }, [el('button', { class: 'quiet', text: 'Hide this', onclick: function (e) { try { localStorage.setItem('hide-install', '1'); } catch (x) { /* fine */ } e.target.closest('.card').remove(); } })])]);
   }
   // "Today": the next event that takes RSVPs (through the day after it), how many are coming, and one tap to check
   // guests in at the door. Says so when there is none; hidden only where the website part is not installed.
