@@ -88,7 +88,8 @@ function createI18n(dir) {
       forms: overlay(en.forms || [], j('forms.json')),
       giving: overlay(en.giving || {}, j('giving.json')),
       home: overlay(en.home || {}, j('home.json')),
-      campaigns: overlay(en.campaigns || [], j('campaigns.json')),
+      // (a campaign set up in the Rabbi area may carry its own he / ru words: title, tagline, eyebrow, story)
+      campaigns: overlay(en.campaigns || [], j('campaigns.json')).map((c) => (c[lang] ? { ...c, ...Object.fromEntries(Object.entries(c[lang]).filter(([k, v]) => ['title', 'tagline', 'eyebrow', 'story'].includes(k) && typeof v === 'string' && v.trim())) } : c)),
       jokes: overlay(en.jokes || [], j('jokes.json')),
       series: overlay(en.series || [], j('series.json')),
       stories: overlay(en.stories || [], j('stories.json')),

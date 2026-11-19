@@ -1253,6 +1253,38 @@ test('jokes are gathered by topic: collection pages open in three languages, a s
   const map = (await c.call('GET', '/sitemap.xml')).text; assert.ok(map.includes('/stories/jokes/' + cols[0].id)); assert.ok(!map.includes('/stories/' + jokes[0].slug + '<'), 'no single-joke pages in the sitemap');
   assert.equal((await c.call('GET', '/stories/jokes/nothing-9')).status, 404);
 });
+test('campaign setup in the Rabbi area: create, picture, start, top bar on every page, stop, undo', async () => {
+  const CSm = require('./site/campaign-settings.js'), a = await admin(), c = client(), H = { 'x-admin': '1' };
+  // the rules (no database needed)
+  assert.ok(CSm.normalize({ title: '', goal: 5, start: '2026-01-01', end: '2026-02-01' }).error, 'a name is needed');
+  assert.ok(CSm.normalize({ title: 'X', goal: 0, start: '2026-01-01', end: '2026-02-01' }).error, 'a goal is needed');
+  assert.ok(CSm.normalize({ title: 'X', goal: 5, start: '2026-03-01', end: '2026-02-01' }).error, 'the end comes after the start');
+  const n = CSm.normalize({ title: 'Our New Home', goal: '$1,000,000', start: '2020-01-01', end: '2099-12-31', image: '/media/photos/mezuzah.jpg', amounts: '180, 360, 1000', levels: 'A classroom | 54000 | 4 | Name it', matching: { multiplier: '2', cap: '250000', matchers: 'The Cohen Family\nThe Levi Family' } }, { funds: ['general', 'building'] });
+  assert.equal(n.campaign.slug, 'our-new-home'); assert.equal(n.campaign.goal, 1000000); assert.deepEqual(n.campaign.amounts, [180, 360, 1000]); assert.equal(n.campaign.levels[0].quantity, 4); assert.equal(n.campaign.matching.multiplier, 2); assert.equal(n.campaign.matching.matchers.length, 2);
+  // create it hidden, then see it in the list
+  const body = { title: 'Our New Home', eyebrow: 'Building Campaign', tagline: 'A home for Jewish life.', goal: '1000000', start: '2020-01-01', end: '2099-12-31', fund: 'building', image: '/media/photos/mezuzah.jpg', story: 'We are building.', status: 'draft', he: { title: 'הבית החדש שלנו' } };
+  const made = await a.call('POST', '/admin/api/site/campaign-settings', body, H); assert.equal(made.status, 200, JSON.stringify(made.json)); assert.equal(made.json.state, 'draft');
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings', { ...body, title: '' }, H)).status, 400);
+  let list = (await a.call('GET', '/admin/api/site/campaign-settings')).json.items; assert.equal(list.find((x) => x.slug === 'our-new-home').state, 'draft');
+  assert.equal((await c.call('GET', '/campaign/our-new-home')).status, 404, 'a hidden campaign is not public');
+  assert.equal((await c.call('GET', '/campaign/our-new-home?preview=1')).status, 200, 'but the Rabbi can preview it');
+  // start it: its page opens, the big picture and the slim bar on other pages appear, in Hebrew too
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings/our-new-home/live', {}, H)).json.state, 'live');
+  const page = await c.call('GET', '/campaign/our-new-home'); assert.equal(page.status, 200); assert.ok(page.text.includes('/media/photos/mezuzah.jpg'), 'the big picture is on the page'); assert.ok(page.text.includes('Our New Home'));
+  for (const p of ['/', '/learn', '/events']) assert.ok((await c.call('GET', p)).text.includes('Our New Home'), 'the slim bar on ' + p);
+  assert.ok((await c.call('GET', '/he/campaign/our-new-home')).text.includes('הבית החדש שלנו'), 'its Hebrew name');
+  // stop it: it ends, the bar goes away
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings/our-new-home/stop', {}, H)).json.state, 'ended');
+  assert.ok(!(await c.call('GET', '/events')).text.includes('Our New Home'), 'no bar after it ended');
+  // a picture is kept and served
+  const png = Buffer.concat([Buffer.from('89504e470d0a1a0a', 'hex'), Buffer.alloc(200, 1)]).toString('base64');
+  const up = await a.call('POST', '/admin/api/site/uploads', { data: 'data:image/png;base64,' + png }, H); assert.equal(up.status, 200); assert.match(up.json.url, /^\/uploads\/[a-f0-9]{24}\.png$/);
+  assert.equal((await fetch(base + up.json.url)).headers.get('content-type'), 'image/png');
+  assert.equal((await a.call('POST', '/admin/api/site/uploads', { data: Buffer.from('not a picture at all, just words '.repeat(10)).toString('base64') }, H)).status, 400);
+  // undo: the campaign made here disappears
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings/our-new-home/delete', {}, H)).status, 200);
+  assert.equal((await c.call('GET', '/campaign/our-new-home?preview=1')).status, 404);
+});
 test('Ask the Rabbi: a private question needs a name and an email OR a phone number, and the /ask page has the form', async () => {
   const c = client();
   for (const pre of ['', '/he', '/ru']) { const r = await c.call('GET', pre + '/ask'); assert.equal(r.status, 200); assert.ok(r.text.includes('data-kind="rabbi"') && r.text.includes('name="phone"') && r.text.includes('name="email"'), pre + ' the private form is on /ask'); const form = r.text.split('data-kind="rabbi"')[1].split('</form>')[0]; assert.ok(!/name="email"[^>]*required/.test(form), 'email is not required in the private form'); }

@@ -58,15 +58,22 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   // Any secret value works (Render's generated ones contain + and /): it is turned into a 32-letter hex key.
   const indexNowKey = env.INDEXNOW_KEY ? require('crypto').createHash('sha256').update(env.INDEXNOW_KEY).digest('hex').slice(0, 32) : '';
   const siteHost = /onrender\.com$|localhost|127\.0\.0\.1|site\.test/.test(host) ? '' : new URL(base).hostname; // text addresses follow the real domain
+  // Campaigns the Rabbi set up in the Rabbi area (campaign-settings.js) are merged over campaigns.json.
+  const CS = require('./campaign-settings.js');
+  let campaignItems = {};
+  const withCampaigns = (d) => (Object.keys(campaignItems).length ? { ...d, campaigns: CS.mergeCampaigns(d.campaigns, campaignItems) } : d);
   let data = load(contentDir, { siteHost }); // throws with a clear list if a content file is wrong
   const content = () => data;
   // Kabbalat Shabbat moves with sunset: work out this week's time, and again every hour.
   const refreshKabbalat = async () => {
-    try { const k = await kabbalatShabbat(data.org.kabbalatShabbat); if (k && k !== data.kabbalat) data = load(contentDir, { kabbalat: k, siteHost }); } catch (e) { log.error('kabbalat shabbat time:', e && e.message); }
+    try { const k = await kabbalatShabbat(data.org.kabbalatShabbat); if (k && k !== data.kabbalat) data = withCampaigns(load(contentDir, { kabbalat: k, siteHost })); } catch (e) { log.error('kabbalat shabbat time:', e && e.message); }
   };
   const kabbalatReady = data.org.kabbalatShabbat ? refreshKabbalat() : Promise.resolve();
   if (data.org.kabbalatShabbat) setInterval(refreshKabbalat, 3600e3).unref();
-  app.use((req, res, next) => kabbalatReady.then(() => next(), () => next()));
+  const campaignsReady = store && store.pool && store.getKv
+    ? Promise.resolve().then(async () => { await store.pool.query(CS.SCHEMA); campaignItems = (await store.getKv(CS.KEY, null)) || {}; data = withCampaigns(data); }).catch((e) => log.error('campaign settings:', e && e.message))
+    : Promise.resolve();
+  app.use((req, res, next) => Promise.all([kabbalatReady, campaignsReady]).then(() => next(), () => next()));
   const i18n = createI18n(contentDir || DIR), ctxOf = makeCtx({ content, i18n });
   const langOf = (req) => (LANGS.includes(req.get('x-lang')) ? req.get('x-lang') : 'en');
   const tOf = (req) => i18n.makeT(langOf(req));
@@ -141,6 +148,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountKiddushPage(r, { render: pages.render, wrap, ctxOf });
   mountFun(r, { render: pages.render, wrap, ctxOf, base });
   mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base, store });
+  CS.mountPublic(r, { store, wrap });
   mountFlyer(r, { wrap, ctxOf, base });
   const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', signUpNews: (p) => weekly.subscribe(p) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
@@ -190,7 +198,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   };
   return {
     content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
-    reload() { data = load(contentDir, { kabbalat: data.kabbalat, siteHost }); refreshKabbalat(); return data; },
+    reload() { data = withCampaigns(load(contentDir, { kabbalat: data.kabbalat, siteHost })); refreshKabbalat(); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {
       // Which settings are in place (yes/no only, never the values), matching store/rabbi-todo.md.
@@ -214,6 +222,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
         { label: 'Phone notifications for the app', done: !!(env.VAPID_PUBLIC_KEY || process.env.VAPID_PUBLIC_KEY), todo: 11, optional: true },
         { label: 'The weekly email goes out by itself (Website, Weekly email)', done: !!(store && store.getKv && ((await store.getKv('email-auto', null).catch(() => null)) || {}).on), todo: 3, optional: true },
       ] }); }));
+      CS.mountAdmin(r2, ctx, { store, content, funds: () => ((data.giving && data.giving.funds) || []).map((f) => f.id), getItems: () => campaignItems,
+        setItems: (items) => { campaignItems = items; data = withCampaigns(load(contentDir, { kabbalat: data.kabbalat, siteHost })); }, log });
       mountCommunityAdmin(r2, ctx, { cs: community.cs, content, store });
       mountSocialAdmin(r2, ctx, { store, content, fb, base, when: pages.when });
       board.mountAdmin(r2, ctx);

@@ -47,7 +47,7 @@
   var NOT_SET_UP = 'Not set up yet. Tell Claude: "I\'m at a computer".';
 
   // The sections, in the order they appear (things to act on first, then the tools, then the setup checklist); the menu follows it.
-  var ORDER = ['requests', 'kaddish', 'approve', 'reach-out', 'sign-ups', 'campaign', 'rsvps', 'visitors', 'reading', 'birthdays', 'social', 'email', 'ask-the-rabbi', 'chat', 'setup'];
+  var ORDER = ['requests', 'kaddish', 'approve', 'reach-out', 'sign-ups', 'campaign', 'campaign-setup', 'rsvps', 'visitors', 'reading', 'birthdays', 'social', 'email', 'ask-the-rabbi', 'chat', 'setup'];
   // Each section folds away; a row of chips at the top jumps to it and, for things waiting for the Rabbi, shows how many.
   // Only the first section (in ORDER) with something waiting opens by itself; the others stay closed with a lit chip.
   var jump = el('nav', { class: 'jump' }), nSec = 0, W = window.WAITING_BY_ID; // ids: the short names, so /admin/community#requests opens that section
@@ -288,6 +288,84 @@
       };
       kq.oninput = draw; kk.onchange = draw; showDone.onchange = draw; draw();
     });
+
+    // ---- Campaign setup: create a campaign, edit it, start it, stop it (campaign-settings.js) ----
+    var cst = section('Campaign setup', 'Set up a fundraising campaign: its name, big picture, goal and dates. Start it, stop it, or keep it hidden until it is ready. While a campaign is live, a slim bar about it is at the top of every page.', 'Campaign setup');
+    var CSTATE = { draft: 'Hidden (draft)', scheduled: 'Starts on its start date', live: 'LIVE now', ended: 'Ended' };
+    // A picture from this computer or phone: made smaller here (a big picture, but light), kept on the website, and its address put in the box.
+    var uploadPicture = function (file, then) {
+      var rd = new FileReader();
+      rd.onload = function () { var im = new Image(); im.onload = function () { var s = Math.min(1, 1800 / im.width), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+        api('POST', '/site/uploads', { data: c.toDataURL('image/jpeg', 0.82) }).then(function (r) { if (r._status === 200) then(r.url); else alert(r.error || 'Could not save the picture, try again.'); }); }; im.onerror = function () { alert('That file is not a picture.'); }; im.src = rd.result; };
+      rd.readAsDataURL(file);
+    };
+    var csField = function (label, input, hint) { return el('label', { style: 'display:block;margin:10px 0 0;font-weight:600' }, [label, el('div', {}, [input]), hint ? el('div', { class: 'small', style: 'font-weight:400', text: hint }) : null]); };
+    var csEdit = function (slug) {
+      cst.textContent = '';
+      var go = function (c, funds) {
+        c = c || {}; var m = c.matching || {}, h = c.he || {}, r = c.ru || {};
+        var f = { title: el('input', { type: 'text', maxlength: '120', value: c.title || '' }), eyebrow: el('input', { type: 'text', maxlength: '60', value: c.eyebrow || 'Building Campaign' }), tagline: el('input', { type: 'text', maxlength: '200', value: c.tagline || '' }),
+          goal: el('input', { type: 'number', min: '1', value: c.goal || '' }), bonusGoal: el('input', { type: 'number', min: '1', value: c.bonusGoal || '' }), start: el('input', { type: 'date', value: (c.start || '').slice(0, 10) }), end: el('input', { type: 'date', value: (c.end || '').slice(0, 10) }),
+          fund: el('select', {}, (funds || ['general']).map(function (id) { var o = el('option', { value: id, text: id }); if (id === (c.fund || 'building')) o.selected = true; return o; })),
+          image: el('input', { type: 'text', value: c.image || '', placeholder: 'Choose a picture below, or type its address' }), video: el('input', { type: 'text', value: c.video || '', placeholder: 'A YouTube or Vimeo link (optional)' }),
+          gallery: el('textarea', { rows: '3', placeholder: 'One picture per line: address | what it shows' }), story: el('textarea', { rows: '10' }), amounts: el('input', { type: 'text', value: (c.amounts || [180, 360, 1000, 1800, 3600, 10000]).join(', ') }),
+          months: el('input', { type: 'text', value: (c.months || [12, 24, 36]).join(', ') }), years: el('input', { type: 'text', value: (c.years || []).join(', ') }),
+          mult: el('select', {}, [['', 'No matching'], ['2', 'Every gift is doubled (2x)'], ['3', 'Every gift is tripled (3x)']].map(function (o) { var x = el('option', { value: o[0], text: o[1] }); if (String(m.multiplier || '') === o[0]) x.selected = true; return x; })),
+          cap: el('input', { type: 'number', min: '0', value: m.cap || '' }), mtext: el('input', { type: 'text', value: m.text || '' }), matchers: el('textarea', { rows: '2', placeholder: 'One name per line, for example: The Cohen Family' }),
+          levels: el('textarea', { rows: '4', placeholder: 'One per line: A classroom | 54000 | 4 | Name it for someone you love' }),
+          amb: el('input', { type: 'checkbox' }), feat: el('input', { type: 'checkbox' }), draft: el('input', { type: 'checkbox' }) };
+        f.story.value = c.story || ''; f.gallery.value = (c.gallery || []).map(function (g) { return g.src + (g.caption ? ' | ' + g.caption : ''); }).join('\n'); f.matchers.value = (m.matchers || []).join('\n');
+        f.levels.value = (c.levels || []).map(function (l) { return [l.title, l.amount, l.quantity || 1, l.text || ''].join(' | '); }).join('\n');
+        f.amb.checked = c.ambassadors !== false; f.feat.checked = c.featured !== false; f.draft.checked = c.status === 'draft' || !c.slug;
+        var prev = el('img', { alt: '', style: 'max-width:100%;max-height:200px;border-radius:10px;margin-top:6px;' + (c.image ? '' : 'display:none') }); if (c.image) prev.src = c.image;
+        var pick = el('input', { type: 'file', accept: 'image/*', onchange: function () { if (pick.files[0]) uploadPicture(pick.files[0], function (u) { f.image.value = u; prev.src = u; prev.style.display = ''; }); } });
+        var pickG = el('input', { type: 'file', accept: 'image/*', onchange: function () { if (pickG.files[0]) uploadPicture(pickG.files[0], function (u) { f.gallery.value = (f.gallery.value ? f.gallery.value + '\n' : '') + u + ' | '; pickG.value = ''; }); } });
+        var tr = {}; ['he', 'ru'].forEach(function (L) { var o = L === 'he' ? h : r; tr[L] = { title: el('input', { type: 'text', value: o.title || '' }), tagline: el('input', { type: 'text', value: o.tagline || '' }), eyebrow: el('input', { type: 'text', value: o.eyebrow || '' }), story: el('textarea', { rows: '6' }) }; tr[L].story.value = o.story || ''; });
+        var msg = el('p', { class: 'small', hidden: 'hidden' });
+        var body = function () {
+          var b = { slug: c.slug || '', title: f.title.value, eyebrow: f.eyebrow.value, tagline: f.tagline.value, goal: f.goal.value, bonusGoal: f.bonusGoal.value, start: f.start.value, end: f.end.value, fund: f.fund.value, image: f.image.value, video: f.video.value, gallery: f.gallery.value, story: f.story.value,
+            amounts: f.amounts.value, months: f.months.value, years: f.years.value, matching: { multiplier: f.mult.value, cap: f.cap.value, text: f.mtext.value, matchers: f.matchers.value }, levels: f.levels.value, ambassadors: f.amb.checked, featured: f.feat.checked, status: f.draft.checked ? 'draft' : 'live', ambassadorGoal: c.ambassadorGoal };
+          ['he', 'ru'].forEach(function (L) { b[L] = { title: tr[L].title.value, tagline: tr[L].tagline.value, eyebrow: tr[L].eyebrow.value, story: tr[L].story.value }; }); return b;
+        };
+        var save = el('button', { class: 'on', text: 'Save', onclick: function () { flash(save, api('POST', '/site/campaign-settings', body()).then(function (res) { if (res._status !== 200) { msg.hidden = false; msg.style.color = '#9b2c2c'; msg.textContent = res.error || 'Could not save.'; } else csLoad(); return res; }), 'Saved ✓'); } });
+        var langBox = function (L, name) { return el('details', { class: 'card' }, [el('summary', { text: name + ' (optional)' }), csField('Name', tr[L].title), csField('Short line', tr[L].tagline), csField('Small title above the name', tr[L].eyebrow), csField('The story', tr[L].story)]); };
+        cst.appendChild(el('div', {}, [
+          el('h3', { text: c.slug ? 'Edit: ' + c.title : 'New campaign' }),
+          csField('Name of the campaign', f.title), csField('Small title above the name', f.eyebrow), csField('One sentence about it', f.tagline),
+          csField('Goal ($)', f.goal), csField('A bigger goal if you reach the first one ($, optional)', f.bonusGoal), csField('First day', f.start), csField('Last day', f.end, 'It ends at the end of this day (Lafayette time).'),
+          csField('Where the money goes', f.fund),
+          csField('Big picture', el('div', {}, [pick, f.image, prev]), 'A wide photo or a drawing of the building works best. It is made smaller automatically.'),
+          csField('More pictures (optional)', el('div', {}, [pickG, f.gallery])), csField('Video (optional)', f.video),
+          csField('The story (what we are building and why)', f.story, 'Plain words. A blank line starts a new paragraph. **bold** makes bold.'),
+          csField('Gift amounts to offer ($, separated by commas)', f.amounts), csField('Monthly payment plans (number of months)', f.months), csField('Yearly payment plans (number of years, optional)', f.years),
+          csField('Matching gifts (only if real matchers promised it)', f.mult), csField('Most that will be matched ($)', f.cap), csField('What the matching means (optional)', f.mtext), csField('Who is matching (optional)', f.matchers),
+          csField('Naming opportunities (optional)', f.levels, 'How many are left shows on the page.'),
+          check(f.amb, 'Let people open their own fundraising page (ambassadors)'), check(f.feat, 'Show the slim bar on every page and the big banner on the home page while it is live'), check(f.draft, 'Keep it hidden for now (a draft)'),
+          langBox('he', 'Hebrew words'), langBox('ru', 'Russian words'),
+          el('div', { class: 'row' }, [save, el('button', { text: 'Cancel', onclick: csLoad }), c.slug ? el('a', { class: 'btn', href: '/campaign/' + c.slug + '?preview=1', target: '_blank', rel: 'noopener', text: 'Preview' }) : null]), msg]));
+      };
+      if (!slug) { api('GET', '/site/campaign-settings').then(function (x) { go(null, x.funds); }); return; }
+      api('GET', '/site/campaign-settings/' + slug).then(function (x) { go(x.campaign, x.funds); });
+    };
+    var csLoad = function () {
+      cst.textContent = '';
+      api('GET', '/site/campaign-settings').then(function (x) {
+        if (x._status !== 200) { cst.appendChild(el('p', { class: 'small', text: NOT_SET_UP })); return; }
+        if (!x.items.length) cst.appendChild(el('p', { class: 'small', text: 'No campaigns yet. Tap "New campaign" to set one up.' }));
+        x.items.forEach(function (c) {
+          var act = function (label, action, ask, cls) { var b = el('button', { class: cls || '', text: label, onclick: function () { if (ask && !confirm(ask)) return; flash(b, api('POST', '/site/campaign-settings/' + c.slug + '/' + action, {}).then(function (res) { if (res._status === 200) csLoad(); else alert(res.error || 'Could not do that.'); return res; })); } }); return b; };
+          var btns = [el('button', { text: 'Edit', onclick: function () { csEdit(c.slug); } }), el('a', { class: 'btn', href: '/campaign/' + c.slug + '?preview=1', target: '_blank', rel: 'noopener', text: 'Preview' })];
+          if (c.state === 'draft' || c.state === 'scheduled') btns.push(act('Start now', 'live', 'Start "' + c.title + '" now? It goes live on the website straight away, with the bar at the top of every page.', 'on'));
+          if (c.state === 'live') { btns.push(act('Stop now', 'stop', 'Stop "' + c.title + '" now? It ends today and no new gifts are taken.')); btns.push(act('Hide', 'draft', 'Hide "' + c.title + '" from the website for now?')); }
+          if (c.state === 'ended') btns.push(act('Hide', 'draft', 'Hide "' + c.title + '" from the website?'));
+          if (c.saved) btns.push(act('Undo my changes', 'delete', 'Remove the changes saved here? (A campaign you created here is deleted; one that came with the website goes back to how it was.)'));
+          cst.appendChild(el('div', { class: 'card' }, [el('strong', { text: c.title }), el('span', { class: 'pill', text: CSTATE[c.state] || c.state, style: c.state === 'live' ? 'background:#e3f6ea' : '' }),
+            el('div', { class: 'small', text: usd(c.goal) + ' goal · ' + day(String(c.start).slice(0, 10)) + ' to ' + day(String(c.end).slice(0, 10)) }), el('div', { class: 'row' }, btns)]));
+        });
+        cst.appendChild(el('div', { class: 'row' }, [el('button', { class: 'on', text: '+ New campaign', onclick: function () { csEdit(''); } })]));
+      });
+    };
+    csLoad();
 
     // ---- Fundraising campaigns: totals, every gift, and gifts given by check, cash or a donor-advised fund ----
     var sc = section('Campaigns', 'How much each campaign raised and who gave. Add gifts that came by check or cash so they count.', 'Campaign');
