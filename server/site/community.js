@@ -37,6 +37,7 @@ ALTER TABLE yahrzeits ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'app
 CREATE TABLE IF NOT EXISTS login_codes (
   email TEXT PRIMARY KEY, code_hash TEXT NOT NULL, link_hash TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, attempts INT NOT NULL DEFAULT 0
 );
+ALTER TABLE login_codes ADD COLUMN IF NOT EXISTS sent_at TIMESTAMPTZ NOT NULL DEFAULT now();
 CREATE TABLE IF NOT EXISTS family (
   id TEXT PRIMARY KEY, member_id TEXT NOT NULL REFERENCES members(id) ON DELETE CASCADE,
   name TEXT NOT NULL, hebrew_name TEXT NOT NULL DEFAULT '', relation TEXT NOT NULL DEFAULT 'other', gender TEXT NOT NULL DEFAULT '',
@@ -102,7 +103,9 @@ function communityStore(store) {
   const q = (t, p) => pool.query(t, p), rows = async (t, p) => (await q(t, p)).rows, one = async (t, p) => (await q(t, p)).rows[0] || null;
   return {
     async saveCode(email, code, link) { await q(`INSERT INTO login_codes (email, code_hash, link_hash, expires_at) VALUES ($1,$2,$3, now() + interval '${CODE_MINUTES} minutes')
-      ON CONFLICT (email) DO UPDATE SET code_hash=EXCLUDED.code_hash, link_hash=EXCLUDED.link_hash, expires_at=EXCLUDED.expires_at, attempts=0`, [email, sha(code), sha(link)]); },
+      ON CONFLICT (email) DO UPDATE SET code_hash=EXCLUDED.code_hash, link_hash=EXCLUDED.link_hash, expires_at=EXCLUDED.expires_at, attempts=0, sent_at=now()`, [email, sha(code), sha(link)]); },
+    async codeAge(email) { const r = await one('SELECT extract(epoch FROM (now() - sent_at)) AS age FROM login_codes WHERE email=$1', [email]); return r ? Number(r.age) : null; },
+    dropCode: (email) => q('DELETE FROM login_codes WHERE email=$1', [email]),
     // Returns true once for a correct, unexpired code (or link); five wrong tries burn the code.
     async useCode(email, { code, link }) {
       // Count the try first, in one step, so guesses sent at the same moment cannot get past the limit.
@@ -407,6 +410,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   }));
 
   const readMember = async (req) => (cs ? memberOf(req) : null);
+  if (cs) app.locals.siteCodes = { save: (email, code, link) => cs.saveCode(email, code, link), use: (email, code) => cs.useCode(email, { code }), age: (email) => cs.codeAge(email), drop: (email) => cs.dropCode(email) }; // the app's sign-in uses the same codes
   app.locals.siteSession = { set: (res, id) => setCookie(res, id), member: (req) => readMember(req) }; // the My Pushka app signs in through the same account
   return { cs, readMember, counts: async () => (cs ? cs.counts() : {}) };
 }

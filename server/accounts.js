@@ -25,23 +25,28 @@ function mountAccounts(app, { store, mailer, tokens, sessionSecret, limit, log =
   app.post('/api/auth/request', json, needOn, limit('auth-req', 12, 15 * 60 * 1000), wrap(async (req, res) => {
     const email = clean(req.body && req.body.email, 254).toLowerCase();
     if (!validEmail(email)) return fail(res, 400, 'invalid_email', 'Please enter a valid email address.');
-    const old = await store.getAuthCode(email);
-    if (old && Number(old.age) < COOLDOWN_SECONDS) return fail(res, 429, 'too_soon', 'Please wait a moment before asking for another code.');
+    const sc = app.locals.siteCodes; // with the website: ONE code table, so a code from either place works in both
+    const age = sc ? await sc.age(email) : ((await store.getAuthCode(email)) || {}).age;
+    if (age != null && Number(age) < COOLDOWN_SECONDS) return fail(res, 429, 'too_soon', 'Please wait a moment before asking for another code.');
     const code = String(crypto.randomInt(0, 1000000)).padStart(6, '0');
-    await store.putAuthCode(email, hashCode(email, code), CODE_MINUTES);
+    if (sc) await sc.save(email, code, crypto.randomBytes(24).toString('base64url')); else await store.putAuthCode(email, hashCode(email, code), CODE_MINUTES);
     const m = (MAIL[req.body && req.body.lang === 'he' ? 'he' : 'en'])(code);
     try { await mailer.send({ to: email, subject: m.subject, text: m.text }); }
-    catch (e) { await store.deleteAuthCode(email); log.error('sign-in email failed:', e && e.message); return fail(res, 502, 'email_failed', 'We could not send the email. Please check the address and try again.'); }
+    catch (e) { if (sc) await sc.drop(email); else await store.deleteAuthCode(email); log.error('sign-in email failed:', e && e.message); return fail(res, 502, 'email_failed', 'We could not send the email. Please check the address and try again.'); }
     res.json({ ok: true, minutes: CODE_MINUTES }); // the same answer whether or not this email already has an account
   }));
 
   app.post('/api/auth/verify', json, needOn, limit('auth-verify', 30, 15 * 60 * 1000), wrap(async (req, res) => {
     const email = clean(req.body && req.body.email, 254).toLowerCase(), code = clean(req.body && req.body.code, 12).replace(/\s/g, '');
     if (!validEmail(email) || !/^\d{6}$/.test(code)) return fail(res, 400, 'invalid_code', 'Please enter the 6-digit code.');
-    const row = await store.getAuthCode(email);
-    if (!row || !row.live || row.attempts >= MAX_ATTEMPTS) return fail(res, 400, 'code_expired', 'That code has expired. Please ask for a new one.');
-    if (!same(row.code_hash, hashCode(email, code))) { await store.bumpAuthAttempts(email); return fail(res, 400, 'invalid_code', 'That code is not right.'); }
-    await store.deleteAuthCode(email);
+    const sc = app.locals.siteCodes;
+    if (sc) { if (!(await sc.use(email, code))) return fail(res, 400, 'invalid_code', 'That code is not right or has expired.'); }
+    else {
+      const row = await store.getAuthCode(email);
+      if (!row || !row.live || row.attempts >= MAX_ATTEMPTS) return fail(res, 400, 'code_expired', 'That code has expired. Please ask for a new one.');
+      if (!same(row.code_hash, hashCode(email, code))) { await store.bumpAuthAttempts(email); return fail(res, 400, 'invalid_code', 'That code is not right.'); }
+      await store.deleteAuthCode(email);
+    }
     const m = await store.getMember(await store.ensureVerifiedMember(email, clean(req.body && req.body.name, 100)));
     if (app.locals.siteSession) app.locals.siteSession.set(res, m.id); // one sign-in: the website knows them too
     res.json(await signedIn(m));

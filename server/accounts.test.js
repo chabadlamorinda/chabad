@@ -20,6 +20,7 @@ const call = async (method, path, body, token) => {
   const r = await fetch(base + path, { method, headers: { 'content-type': 'application/json', ...(token ? { authorization: 'Bearer ' + token } : {}) }, body: body === undefined ? undefined : JSON.stringify(body) });
   return { status: r.status, json: await r.json().catch(() => null) };
 };
+const wipe = async (email) => { await store.deleteAuthCode(email); await store.pool.query('DELETE FROM login_codes WHERE email=$1', [email]).catch(() => {}); }; // (the shareable kit has no website, so no login_codes) // forget a code and the wait before the next one
 const codeOf = () => /\b(\d{6})\b/.exec(sent[sent.length - 1].text)[1];
 const signIn = async (email = 'dina@example.com') => {
   assert.equal((await call('POST', '/api/auth/request', { email })).status, 200);
@@ -41,23 +42,24 @@ test('sign in: code is emailed, works once, wrong codes are limited, signing in 
   assert.equal((await call('POST', '/api/auth/request', { email: 'dina@example.com' })).json.code, 'too_soon');
   const good = codeOf();
   for (let i = 0; i < 5; i++) assert.equal((await call('POST', '/api/auth/verify', { email: 'dina@example.com', code: good === '000000' ? '111111' : '000000' })).status, 400);
-  assert.equal((await call('POST', '/api/auth/verify', { email: 'dina@example.com', code: good })).json.code, 'code_expired'); // too many wrong tries: the code is dead
-  await store.deleteAuthCode('dina@example.com');
+  assert.equal((await call('POST', '/api/auth/verify', { email: 'dina@example.com', code: good })).status, 400); // too many wrong tries: the code is dead
+  await wipe('dina@example.com');
   const a = await signIn(); assert.match(a.token, /^m_/); assert.equal(a.email, 'dina@example.com'); assert.equal(a.hasState, false);
-  assert.equal((await call('POST', '/api/auth/verify', { email: 'dina@example.com', code: codeOf() })).json.code, 'code_expired'); // a code works only once
-  await store.deleteAuthCode('dina@example.com'); await new Promise((r) => setTimeout(r, 10));
+  assert.equal((await call('POST', '/api/auth/verify', { email: 'dina@example.com', code: codeOf() })).status, 400); // a code works only once
+  await wipe('dina@example.com'); await new Promise((r) => setTimeout(r, 10));
   const b = await signIn(); assert.equal(b.token, a.token); assert.equal((await store.listMembers()).length, 1);
 });
 
 test('a failed email does not leave a usable code', async () => {
   const r = await call('POST', '/api/auth/request', { email: 'fail@example.com' }); assert.equal(r.status, 502);
   assert.equal(await store.getAuthCode('fail@example.com'), null);
+  assert.equal(((await store.pool.query("SELECT 1 FROM login_codes WHERE email='fail@example.com'").catch(() => null)) || { rowCount: 0 }).rowCount, 0);
 });
 
 test('an expired code is refused', async () => {
   await call('POST', '/api/auth/request', { email: 'a@example.com' }); const c = codeOf();
-  await store.pool.query("UPDATE auth_codes SET expires_at = now() - interval '1 minute'");
-  assert.equal((await call('POST', '/api/auth/verify', { email: 'a@example.com', code: c })).json.code, 'code_expired');
+  await store.pool.query("UPDATE auth_codes SET expires_at = now() - interval '1 minute'"); await store.pool.query("UPDATE login_codes SET expires_at = now() - interval '1 minute'").catch(() => {});
+  assert.equal((await call('POST', '/api/auth/verify', { email: 'a@example.com', code: c })).status, 400);
 });
 
 test('saved pushka follows the person: private, versioned, conflicts are reported, device keys never stored', async () => {

@@ -1512,6 +1512,12 @@ test('one account for the website and the My Pushka app: same person, same login
   assert.equal((await app.call('POST', '/api/auth/verify', { email: 'eli@example.com', code }, XF)).status, 200);
   assert.equal((await app.call('GET', '/api/site/me')).status, 200, 'the website cookie came with the app sign-in');
   assert.equal(await count('eli@example.com'), 1); assert.equal(await count('dana@example.com'), 1);
+  // one code for both places: a code asked for on the website signs in the app, and the other way round
+  const x = client(); assert.equal((await x.call('POST', '/api/site/login', { email: 'noa@example.com' }, XF)).status, 200);
+  assert.equal((await x.call('POST', '/api/auth/verify', { email: 'noa@example.com', code: /code is (\d{6})/.exec(mails[mails.length - 1].text)[1] }, XF)).status, 200, 'a website code signs in the app');
+  const y = client(); assert.equal((await y.call('POST', '/api/auth/request', { email: 'oren@example.com' }, XF)).status, 200);
+  assert.equal((await y.call('POST', '/api/site/verify', { email: 'oren@example.com', code: /\b(\d{6})\b/.exec(mails[mails.length - 1].text)[1] }, XF)).status, 200, 'an app code signs in the website');
+  assert.equal(await count('noa@example.com'), 1); assert.equal(await count('oren@example.com'), 1);
   // accounts made before the two logins were one (website: verified_email; app: verified_at) are merged once, losing nothing
   const q = (t, p) => store.pool.query(t, p), W = 'm_aaaaaaaaaaaaaaaaaaaaaaaa', A = 'm_bbbbbbbbbbbbbbbbbbbbbbbb';
   await q("INSERT INTO members (id, name, email, verified_email, phone, stripe_customer_id, created_at) VALUES ($1, 'Web Fam', 'fay@example.com', 'fay@example.com', '', 'cus_WEB', now() - interval '2 days')", [W]);
