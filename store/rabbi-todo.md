@@ -1,6 +1,9 @@
 # The Rabbi's to-do list (things only you can do, at a computer)
 
-## Moving the website to your own free Oracle server (started Nov 20)
+## The website now runs on your own free Oracle server (moved Nov 19)
+Done: server `website` (152.70.118.32, Oracle Always Free), jewishlamorinda.com switched at Cloudflare (A records, grey cloud), email works, data copied from Neon, Render suspended. Still to do: in Stripe turn OFF Settings → Customer emails → Successful payments; check the Stripe webhook shows 200; test gift of $5 (refund it). Every few weeks copy a backup off the server (Rabbi's desk → Download a full backup).
+
+Original plan:
 Decision: no monthly fee, and email works there (Render's free plan blocks it). The full step-by-step is `deploy-oracle/MOVE-THE-WHOLE-WEBSITE.md` (create the server, install with one command carrying over the Render settings, copy the database from Neon, switch the address at Cloudflare; Render stays on as the fallback). Automatic updates from GitHub every 5 minutes. Claude walks through it when you say "I'm at a computer"; first you need an Oracle Cloud account (cloud.oracle.com, free, needs a card for identity only).
 
 ## Where we are (Nov 16)
