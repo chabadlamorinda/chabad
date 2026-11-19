@@ -32,6 +32,9 @@ ALTER TABLE members ADD COLUMN IF NOT EXISTS first_login TIMESTAMPTZ;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS verified_email TEXT;
 UPDATE members SET verified_email=lower(email) WHERE verified_email IS NULL AND last_login IS NOT NULL AND email <> '';
 CREATE INDEX IF NOT EXISTS members_verified_idx ON members (verified_email);
+-- One sign-in for the website and the app: an address proved in either place counts in both.
+UPDATE members SET verified_email=lower(email) WHERE verified_email IS NULL AND verified_at IS NOT NULL AND email <> '';
+UPDATE members SET verified_at=COALESCE(first_login, now()) WHERE verified_at IS NULL AND verified_email IS NOT NULL;
 ALTER TABLE members ADD COLUMN IF NOT EXISTS lang TEXT NOT NULL DEFAULT 'en';
 ALTER TABLE yahrzeits ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'app';
 CREATE TABLE IF NOT EXISTS login_codes (
@@ -116,10 +119,8 @@ function communityStore(store) {
     // with the same email are never taken over, so nobody can plant an address and read another family's data.
     setLang: (id, lang) => q('UPDATE members SET lang=$2 WHERE id=$1', [id, ['en', 'he', 'ru'].includes(lang) ? lang : 'en']),
     async memberForEmail(email) {
-      const m = await one('SELECT * FROM members WHERE verified_email=$1 ORDER BY created_at LIMIT 1', [email]);
-      if (m) { await q('UPDATE members SET email=$2, last_login=now(), first_login=COALESCE(first_login, now()) WHERE id=$1', [m.id, email]); return m.id; }
-      const id = newId('m_');
-      await q("INSERT INTO members (id, name, email, verified_email, last_login, first_login) VALUES ($1, '', $2, $2, now(), now())", [id, email]);
+      const id = await store.ensureVerifiedMember(email); // one account per email, shared with the My Pushka app
+      await q('UPDATE members SET email=$2, last_login=now(), first_login=COALESCE(first_login, now()) WHERE id=$1', [id, email]);
       return id;
     },
     updateProfile: (id, p) => q('UPDATE members SET name=$2, phone=$3, address=$4, hebrew_name=$5, birthday=$6, birth_after_sunset=$7, anniversary=$8, news=$9, mezuzahs_checked=$10, tefillin_checked=$11, diet=$12, personalize=$13, town=$14, shabbat_email=$15, updated_at=now() WHERE id=$1',
@@ -409,6 +410,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   }));
 
   const readMember = async (req) => (cs ? memberOf(req) : null);
+  app.locals.siteSession = { set: (res, id) => setCookie(res, id), member: (req) => readMember(req) }; // the My Pushka app signs in through the same account
   return { cs, readMember, counts: async () => (cs ? cs.counts() : {}) };
 }
 

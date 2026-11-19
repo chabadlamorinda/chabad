@@ -42,17 +42,24 @@ function mountAccounts(app, { store, mailer, tokens, sessionSecret, limit, log =
     if (!row || !row.live || row.attempts >= MAX_ATTEMPTS) return fail(res, 400, 'code_expired', 'That code has expired. Please ask for a new one.');
     if (!same(row.code_hash, hashCode(email, code))) { await store.bumpAuthAttempts(email); return fail(res, 400, 'invalid_code', 'That code is not right.'); }
     await store.deleteAuthCode(email);
-    let m = await store.verifiedMemberByEmail(email);
-    if (!m) { const id = await store.createVerifiedMember(email, clean(req.body && req.body.name, 100)); m = await store.getMember(id); }
-    const st = await store.getState(m.id);
-    res.json({ token: tokens.signMember(m.id), email: m.email, name: m.name || '', stripeToken: m.stripe_customer_id ? tokens.signCustomer(m.stripe_customer_id) : '', hasState: !!st, rev: st ? st.rev : 0 });
+    const m = await store.getMember(await store.ensureVerifiedMember(email, clean(req.body && req.body.name, 100)));
+    if (app.locals.siteSession) app.locals.siteSession.set(res, m.id); // one sign-in: the website knows them too
+    res.json(await signedIn(m));
+  }));
+  const signedIn = async (m) => { const st = await store.getState(m.id); return { token: tokens.signMember(m.id), email: m.verified_email || m.email, name: m.name || '', stripeToken: m.stripe_customer_id ? tokens.signCustomer(m.stripe_customer_id) : '', hasState: !!st, rev: st ? st.rev : 0 }; };
+  // Already signed in on the website in this browser? Then the app can sign in without asking for another code.
+  app.post('/api/auth/session', json, needOn, limit('auth-session', 60, 15 * 60 * 1000), wrap(async (req, res) => {
+    if (req.get('x-site') !== '1' || !app.locals.siteSession) return fail(res, 401, 'unauthorized', 'Please sign in.');
+    const m = await app.locals.siteSession.member(req);
+    if (!m) return fail(res, 401, 'unauthorized', 'Please sign in.');
+    res.json(await signedIn(await store.getMember(m.id)));
   }));
 
   // ---- the signed-in person's own data ----
   const auth = async (req, res, next) => {
     try {
       const h = /^Bearer (.+)$/.exec(req.get('authorization') || ''), id = h && tokens.verifyMember(h[1]), m = id && await store.getMember(id);
-      if (!m || !m.verified_at) return fail(res, 401, 'unauthorized', 'Please sign in again.');
+      if (!m || !(m.verified_at || m.verified_email)) return fail(res, 401, 'unauthorized', 'Please sign in again.');
       req.member = m; next();
     } catch (e) { next(e); }
   };

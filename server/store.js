@@ -122,8 +122,36 @@ function createStore(url, opts = {}) {
     getAuthCode: (email) => one('SELECT *, (expires_at > now()) AS live, extract(epoch FROM (now() - sent_at)) AS age FROM auth_codes WHERE email=$1', [email]),
     bumpAuthAttempts: (email) => q('UPDATE auth_codes SET attempts = attempts + 1 WHERE email=$1', [email]),
     deleteAuthCode: (email) => q('DELETE FROM auth_codes WHERE email=$1', [email]),
-    verifiedMemberByEmail: (email) => one('SELECT * FROM members WHERE lower(email)=lower($1) AND verified_at IS NOT NULL', [email]),
-    async createVerifiedMember(email, name) { const id = newId('m_'); await q('INSERT INTO members (id, name, email, verified_at) VALUES ($1,$2,$3, now())', [id, name || '', email]); return id; },
+    // ONE account per email, shared by the website and the pushka app. Only an address someone proved with a code counts
+    // (verified_email from the website, verified_at from the app); records made without a code are never taken over.
+    // If an address ended up with two proven accounts, they are merged into the oldest one and their data moves with it.
+    verifiedMemberByEmail: (email) => one('SELECT * FROM members WHERE verified_email=lower($1) OR (verified_at IS NOT NULL AND lower(email)=lower($1)) ORDER BY (verified_email IS NOT NULL) DESC, created_at LIMIT 1', [email]),
+    async ensureVerifiedMember(email, name) {
+      email = String(email || '').toLowerCase();
+      const c = await pool.connect();
+      try {
+        await c.query('BEGIN'); await c.query('SELECT pg_advisory_xact_lock(hashtext($1))', ['member:' + email]);
+        const found = (await c.query('SELECT id, name, stripe_customer_id FROM members WHERE verified_email=$1 OR (verified_at IS NOT NULL AND lower(email)=$1) ORDER BY (verified_email IS NOT NULL) DESC, created_at', [email])).rows;
+        let id;
+        if (!found.length) { id = newId('m_'); await c.query('INSERT INTO members (id, name, email, verified_email, verified_at) VALUES ($1,$2,$3,$3, now())', [id, name || '', email]); }
+        else {
+          id = found[0].id;
+          if (found.length > 1) {
+            const fks = (await c.query(`SELECT c.conrelid::regclass::text AS tbl, a.attname AS col FROM pg_constraint c JOIN pg_attribute a ON a.attrelid = c.conrelid AND a.attnum = ANY(c.conkey) WHERE c.contype = 'f' AND c.confrelid = 'members'::regclass`)).rows;
+            for (const d of found.slice(1)) {
+              const both = (await c.query('SELECT member_id, updated_at FROM account_state WHERE member_id = ANY($1)', [[id, d.id]])).rows;
+              if (both.length === 2) { const keepNew = new Date(both.find((r) => r.member_id === id).updated_at) >= new Date(both.find((r) => r.member_id === d.id).updated_at); await c.query('DELETE FROM account_state WHERE member_id=$1', [keepNew ? d.id : id]); }
+              for (const f of fks) { await c.query('SAVEPOINT mv'); try { await c.query(`UPDATE ${f.tbl} SET ${f.col}=$1 WHERE ${f.col}=$2`, [id, d.id]); await c.query('RELEASE SAVEPOINT mv'); } catch (e) { await c.query('ROLLBACK TO SAVEPOINT mv'); } }
+              await c.query("UPDATE members SET stripe_customer_id = COALESCE(stripe_customer_id, $2), name = CASE WHEN name = '' THEN $3 ELSE name END WHERE id=$1", [id, d.stripe_customer_id, d.name || '']);
+              await c.query('DELETE FROM members WHERE id=$1', [d.id]);
+            }
+          }
+          await c.query("UPDATE members SET verified_email=$2, verified_at=COALESCE(verified_at, now()), name = CASE WHEN name = '' THEN $3 ELSE name END, updated_at=now() WHERE id=$1", [id, email, name || '']);
+        }
+        await c.query('COMMIT'); return id;
+      } catch (e) { await c.query('ROLLBACK').catch(() => {}); throw e; } finally { c.release(); }
+    },
+    createVerifiedMember(email, name) { return this.ensureVerifiedMember(email, name); },
     getState: (memberId) => one('SELECT rev, state, updated_at FROM account_state WHERE member_id=$1', [memberId]),
     // Save a new version only if the caller saw the latest one (baseRev). Returns the new revision, or null when someone else saved first.
     async putState(memberId, baseRev, state) {

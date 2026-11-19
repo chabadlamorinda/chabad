@@ -246,10 +246,10 @@ function errText(e) {
   return tt(ERRS[e && e.code] || "Something went wrong. Please try again.");
 }
 async function api(path, opts = {}) {
-  const headers = { "Content-Type": "application/json" }, tok = opts.member ? S.mtoken : S.token; if (tok) headers.Authorization = "Bearer " + tok;
+  const headers = { "Content-Type": "application/json" }; if (opts.site) headers["x-site"] = "1"; const tok = opts.member ? S.mtoken : S.token; if (tok) headers.Authorization = "Bearer " + tok;
   let r; try { r = await fetch("/api" + path, { method: opts.method || "GET", headers, body: opts.body ? JSON.stringify(opts.body) : undefined }); } catch (e) { throw Object.assign(new Error("network"), { code: "network" }); }
   let j = {}; try { j = await r.json(); } catch (e) {}
-  if (!r.ok) { if (r.status === 401 && opts.member && S.mtoken) { S.mtoken = ""; S.msig = ""; if (S.auth) S.auth = null; save(); } else if (r.status === 401 && !opts.member && S.token) { S.token = ""; S.synced = ""; API.card = null; save(); } throw Object.assign(new Error(j.error || "Request failed"), { code: j.code || "server_error", status: r.status, data: j }); }
+  if (!r.ok) { if (r.status === 401 && opts.member && S.mtoken) { S.mtoken = ""; S.msig = ""; if (S.auth) S.auth = null; save(); } else if (r.status === 401 && !opts.member && !opts.site && S.token) { S.token = ""; S.synced = ""; API.card = null; save(); } throw Object.assign(new Error(j.error || "Request failed"), { code: j.code || "server_error", status: r.status, data: j }); }
   return j;
 }
 const BRANDS = { visa: "Visa", mastercard: "Mastercard", amex: "American Express", discover: "Discover", diners: "Diners Club", jcb: "JCB", unionpay: "UnionPay" };
@@ -1414,6 +1414,12 @@ function conflictSheet() {
   sheet(`<div><h3>${t("Which pushka should we keep?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Your account already has a saved pushka, and this device has one too. Choose one. The other will be replaced.")}</div></div>
     <button class="btn btn-primary cta" data-act="signCloud">${t("Use my saved pushka")}</button><button class="btn btn-ghost" data-act="signLocal">${t("Use this device’s pushka")}</button>`, null, null, true);
 }
+// Already signed in on the website in this browser? Then the pushka is theirs without another code (one account for both).
+async function autoSignIn() {
+  if (!API.accounts || S.auth || PRACTICE) return;
+  try { if (sessionStorage.getItem("pushka-auto")) return; sessionStorage.setItem("pushka-auto", "1"); } catch (e) {}
+  try { await finishSignIn(await api("/auth/session", { method: "POST", site: true, body: {} })); } catch (e) {}
+}
 A.signIn = () => signInSheet("");
 A.signCloud = async () => { try { const st = await api("/account/state", { member: true }); applyDoc(st.state, st.rev); closeSheet(); toast(tt("Welcome back! Your pushka is restored.")); } catch (e) { toast(authErr(e)); } };
 A.signLocal = async () => { S.dirty = true; if (await pushState(true)) { closeSheet(); draw(); toast(tt("Signed in. Your pushka is saved.")); } else toast(tt("No connection. Please try again.")); };
@@ -1455,5 +1461,5 @@ try { const go = new URLSearchParams(location.search).get("go"); if (go === "coi
 draw();
 if (S.bio) { showLock(); A.unlock(); }
 try { if (new URLSearchParams(location.search).get("install") && !standalone() && !PRACTICE) { history.replaceState(null, "", location.pathname); setTimeout(() => A.installOffer(), 900); } } catch (e) {}
-initPay().then(() => { pullState(); try { if (API.accounts && !S.auth && new URLSearchParams(location.search).get("signin")) { history.replaceState(null, "", location.pathname); signInSheet(""); } } catch (e) {} }); loadExtras(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500); autoCoins();
+initPay().then(() => { pullState(); autoSignIn(); try { if (API.accounts && !S.auth && new URLSearchParams(location.search).get("signin")) { history.replaceState(null, "", location.pathname); signInSheet(""); } } catch (e) {} }); loadExtras(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500); autoCoins();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

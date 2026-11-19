@@ -1495,3 +1495,34 @@ test('the Rabbi\'s desk and the website can be installed as apps on a phone', as
   const w = await c.call('GET', '/site.webmanifest'); assert.equal(w.status, 200); assert.equal(w.json.display, 'standalone'); assert.ok(w.json.shortcuts.some((s) => /^\/donate/.test(s.url)) && w.json.shortcuts.some((s) => /^\/shabbat-times/.test(s.url)));
   assert.ok(w.json.icons.some((i) => i.purpose === 'maskable')); for (const s of w.json.shortcuts) assert.equal((await c.call('GET', s.url)).status < 400, true, s.url + ' opens');
 });
+
+test('one account for the website and the My Pushka app: same person, same login, merged duplicates', async () => {
+  const count = async (email) => (await store.pool.query('SELECT count(*)::int AS n FROM members WHERE lower(email)=$1 OR verified_email=$1', [email])).rows[0].n;
+  // signed in on the website -> the app signs in by itself, no second code
+  const web = client(), XF = { 'x-forwarded-for': '10.20.30.40' }; // its own address, so the sign-in limits used up by earlier tests do not matter
+  assert.equal((await web.call('POST', '/api/site/login', { email: 'Dana@Example.com' }, XF)).status, 200);
+  assert.equal((await web.call('POST', '/api/site/verify', { email: 'Dana@Example.com', code: /code is (\d{6})/.exec(mails[mails.length - 1].text)[1] }, XF)).status, 200);
+  const s = await web.call('POST', '/api/auth/session', {}); assert.equal(s.status, 200); assert.equal(s.json.email, 'dana@example.com'); assert.match(s.json.token, /^m_/);
+  assert.equal((await client().call('POST', '/api/auth/session', {})).status, 401, 'nobody else gets in');
+  assert.equal((await web.call('POST', '/api/auth/session', {}, { 'x-site': '' })).status, 401, 'must come from our own pages');
+  const me = await fetch(base + '/api/account', { headers: { authorization: 'Bearer ' + s.json.token } }); assert.equal(me.status, 200);
+  // signed in on the app -> the website knows them too
+  const app = client(); assert.equal((await app.call('POST', '/api/auth/request', { email: 'eli@example.com' }, XF)).status, 200);
+  const code = /\b(\d{6})\b/.exec(mails[mails.length - 1].text)[1];
+  assert.equal((await app.call('POST', '/api/auth/verify', { email: 'eli@example.com', code }, XF)).status, 200);
+  assert.equal((await app.call('GET', '/api/site/me')).status, 200, 'the website cookie came with the app sign-in');
+  assert.equal(await count('eli@example.com'), 1); assert.equal(await count('dana@example.com'), 1);
+  // two proven accounts for one address are merged on the next sign-in, and their data moves to the survivor
+  const q = (t, p) => store.pool.query(t, p);
+  await q("INSERT INTO members (id, name, email, verified_email, created_at) VALUES ('m_aaaaaaaaaaaaaaaaaaaaaaaa', 'Web Fam', 'fay@example.com', 'fay@example.com', now() - interval '2 days')");
+  await q("INSERT INTO members (id, name, email, verified_at) VALUES ('m_bbbbbbbbbbbbbbbbbbbbbbbb', '', 'fay@example.com', now())");
+  await q("INSERT INTO family (id, member_id, name) VALUES ('f_1', 'm_aaaaaaaaaaaaaaaaaaaaaaaa', 'Ari')");
+  await q("INSERT INTO account_state (member_id, state) VALUES ('m_bbbbbbbbbbbbbbbbbbbbbbbb', '{\"pushkas\":[{\"balance\":5}]}')");
+  assert.equal(await store.ensureVerifiedMember('FAY@example.com'), 'm_aaaaaaaaaaaaaaaaaaaaaaaa');
+  assert.equal(await count('fay@example.com'), 1);
+  assert.equal((await q("SELECT count(*)::int AS n FROM family WHERE member_id='m_aaaaaaaaaaaaaaaaaaaaaaaa'")).rows[0].n, 1);
+  assert.equal((await q("SELECT state FROM account_state WHERE member_id='m_aaaaaaaaaaaaaaaaaaaaaaaa'")).rows[0].state.pushkas[0].balance, 5, 'the pushka followed the person');
+  // an address made by the app WITHOUT a code is never taken over
+  await q("INSERT INTO members (id, name, email) VALUES ('m_cccccccccccccccccccccccc', 'Planted', 'gil@example.com')");
+  assert.notEqual(await store.ensureVerifiedMember('gil@example.com'), 'm_cccccccccccccccccccccccc');
+});
