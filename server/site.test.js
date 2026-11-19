@@ -40,7 +40,7 @@ test.before(async () => {
     return { async *[Symbol.asyncIterator]() { for (const w of text.match(/.{1,12}/g)) yield { type: 'content_block_delta', delta: { type: 'text_delta', text: w } }; }, finalMessage: async () => ({ stop_reason: 'end_turn' }) };
   } } };
   const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook, chatClient, siteContentDir: TEST_CONTENT,
-    mailer: { send: async (m) => { mails.push(m); } } });
+    mailer: { send: async (m) => { if (/^fail@/.test(m.to)) throw new Error('535 Username and Password not accepted'); mails.push(m); } } });
   theApp = app;
   server = await new Promise((r) => { const s = app.listen(0, () => r(s)); });
   base = 'http://127.0.0.1:' + server.address().port;
@@ -999,6 +999,7 @@ test('email system: sign up from any page, the designed email in each language, 
   mails.length = 0;
   assert.equal((await a.call('POST', '/admin/api/site/weekly/test', { to: 'rabbi@x.co' }, H)).json.ok, true);
   assert.match(mails[0].subject, /^\[Test\]/);
+  { const bad = await a.call('POST', '/admin/api/site/weekly/test', { to: 'fail@x.co' }, H); assert.equal(bad.status, 502); assert.match(bad.json.error, /Username and Password not accepted/, 'the Rabbi is told what the mail server said'); }
   mails.length = 0;
   const sent = (await a.call('POST', '/admin/api/site/weekly/send', { confirm: true, kind: 'message', subject: 'A note from the Rabbi', message: 'Hello everyone' }, H)).json;
   assert.ok(sent.sent >= 2);

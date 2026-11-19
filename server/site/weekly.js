@@ -284,7 +284,11 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
         const to = lower(req.body && req.body.to) || lower(notifyTo) || lower(content().org.email);
         if (!validEmail(to)) return res.status(400).json({ error: 'Which address?' });
         const m = await compose(LANGS.includes(req.body.lang) ? req.body.lang : 'en', optsOf(req.body || {})), pz = personalize(m, 'test', to, 'test');
-        await mailer.send({ to, subject: '[Test] ' + m.subject, text: pz.text, html: pz.html });
+        try { await mailer.send({ to, subject: '[Test] ' + m.subject, text: pz.text, html: pz.html }); } catch (e) {
+          // Say what the mail server said (a wrong password, a blocked sign-in...), so the Rabbi and Claude can fix it.
+          const why = String((e && (e.response || e.message)) || 'unknown').replace(/\s+/g, ' ').slice(0, 300);
+          return res.status(502).json({ code: 'send_failed', error: 'The email could not be sent. The mail server said: ' + why });
+        }
         res.json({ ok: true, to });
       }));
       // This week's word and whether it is approved (the Rabbi's desk shows it under "Waiting for you").
