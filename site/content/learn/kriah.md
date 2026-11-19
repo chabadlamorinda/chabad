@@ -2,7 +2,7 @@
 title: Kriah: Tearing the Garment When a Loved One Passes Away
 description: What kriah is, who tears, when and on which side, the blessing Baruch Dayan HaEmet, and how long the torn garment is worn.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, shiva, setting-up-a-shiva-house
+related: jewish-funeral, who-sits-shiva, aninut, shiva, setting-up-a-shiva-house
 local: Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski any time, 925-384-7242. He will guide you through kriah at the funeral.
 ---
 Kriah (pronounced kree-AH) means "tearing." It is one of the oldest Jewish mourning customs: a mourner tears a garment he or she is wearing, as Jacob tore his clothes when he thought Joseph had died. The tear is an outward sign of an inner loss, and a way to let grief out rather than hold it in.
@@ -51,7 +51,7 @@ Wear something you are comfortable tearing and wearing for the week, such as a r
 Kriah is still done within the first 30 days. After 30 days, it is done only for a parent. Call the Rabbi and he will guide you.
 
 ### Do I need to tear a new garment if I change clothes during shiva?
-For a parent, there are customs about tearing again; for other relatives, generally not. Customs vary, so ask the Rabbi.
+For a parent, the other clothes worn during shiva should also be torn (ask the Rabbi how); for other relatives, generally not. Customs vary, so ask the Rabbi.
 
 ### Is kriah done for a relative who was not Jewish?
 This is a sensitive question with different answers in different cases. Please speak with the Rabbi privately.

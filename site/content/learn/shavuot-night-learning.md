@@ -49,4 +49,4 @@ Yes. Shavuot night classes are for everyone, and questions are the best part. Cl
 Yes, please bring them, even the smallest. The reading is short, and children are the reason we read it. Many synagogues have something for children afterwards; ask the Rabbi what is planned this year.
 
 ### Can I drive to the learning on Shavuot night?
-Shavuot is a Yom Tov, when driving is traditionally not done, so many people walk or stay nearby. If that is not possible for you, speak with the Rabbi about what works for your family.
+Driving is not permitted on Yom Tov, as on Shabbat, so many people walk or stay nearby. If that is not possible for you, speak with the Rabbi about what works for your family.

@@ -2,7 +2,7 @@
 title: Yahrzeit Candle: When and How to Light a Memorial Candle
 description: When to light a yahrzeit candle, how to light it, what to say, and the days of the year Jews light a memorial candle for a loved one.
 category: Mourning & remembrance
-related: yahrzeit, yizkor, shiva, kaddish
+related: yahrzeit, first-yahrzeit, yizkor, shiva, kaddish
 local: Find the yahrzeit date with our free calculator at chabadoflamorinda.com/tools/yahrzeit, and call Rabbi Labkowski at 925-384-7242 for help saying Kaddish.
 ---
 A yahrzeit candle is a memorial candle that burns for about 24 hours, lit in memory of a loved one. It is lit at sundown on the eve of the yahrzeit, the anniversary of the passing on the Hebrew calendar, and on several other days of remembrance during the year.

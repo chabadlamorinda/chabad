@@ -2,7 +2,7 @@
 title: A Letter in a Torah: The Rebbe's Campaign for Jewish Unity
 description: Every Jewish child and adult can own a letter in a Torah scroll written for Jewish unity. What it is, why it matters and how to get yours.
 category: Prayer & Torah
-related: the-rebbe, ten-mitzvah-campaigns, torah, hachnasat-sefer-torah
+related: the-rebbe, sefer-torah, ten-mitzvah-campaigns, torah, hachnasat-sefer-torah
 local: To get a letter in a Torah for your child or yourself, call Rabbi Yisroel Labkowski at 925-384-7242 and he will help you sign up.
 ---
 The last of the 613 mitzvot is to write a Torah scroll. The Lubavitcher Rebbe found a way for every Jew to share in it: by owning a letter in a Torah scroll written for Jewish unity.

@@ -10,7 +10,8 @@ Sometimes you just need to talk to a Rabbi. Whatever is on your mind, a question
 
 ## How to reach us
 
-- **Phone:** 925-384-7242. If we cannot answer, leave a message and we will call you back.
+- **Rabbi Yisroel Labkowski:** call 925-384-7242. If we cannot answer, leave a message and we will call you back.
+- **Rebbetzin Tzipora Labkowski:** call 925-384-7241, especially welcome for women and for family matters.
 - **Email:** info@chabadoflamorinda.com
 - **Online:** [/contact](/contact)
 - **In person:** Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549. Please call ahead to set a time.

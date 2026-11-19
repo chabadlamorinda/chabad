@@ -15,8 +15,9 @@ function mountAsk(r, { store, render, wrap, ctxOf, base, faqLd, crumbs }) {
   r.get('/ask', wrap(async (req, res) => {
     const X = ctxOf(req), t = X.t, list = await published().catch(() => []);
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Ask the Rabbi'))}</h1>
-<p class="lead-d">${esc(t('Real questions from our community, answered by Rabbi Yisroel Labkowski. Have a question? Ask it in the chat, or send it to the Rabbi privately.'))}</p>
-<p class="btns"><a class="btn gold" href="/help/talk-to-the-rabbi">${esc(t('Ask the Rabbi'))}</a></p>
+<p class="lead-d">${esc(t('Ask the Rabbi your own question: it goes only to him, and he answers you directly, by email or phone. Below are real questions from our community, with the answers.'))}</p>
+<h2 id="ask">${esc(t('Ask the Rabbi privately'))}</h2>${require('./askform.js').rabbiForm(X, t('Question for the Rabbi'))}
+<p class="muted small">${esc(t('Prefer to talk? Call {phone}.', { phone: (X.C.org || {}).phone || '925-384-7242' }))}</p>
 ${list.length ? `<p><input type="search" class="search" data-filter=".qa-list .tile" placeholder="${esc(t('Search the answers'))}" aria-label="${esc(t('Search the answers'))}"></p><div class="grid qa-list">${list.map((x) => `<a class="card tile" href="/ask/${encodeURIComponent(x.slug)}" lang="${x.lang}"><h3>${esc(x.question)}</h3><p>${esc(plain(x.answer).slice(0, 140))}…</p></a>`).join('')}</div>` : `<p class="muted">${esc(t('The first answers will appear here soon.'))}</p>`}</section>`;
     await render(res, { path: '/ask', title: t('Ask the Rabbi: questions and answers'), description: t('Questions about Judaism and Jewish life answered by Rabbi Yisroel Labkowski of Chabad of Lamorinda in Lafayette, California.'), body, ld: list.length ? [faqLd(list.slice(0, 50).map((x) => ({ q: x.question, a: x.answer })))] : [] });
   }));

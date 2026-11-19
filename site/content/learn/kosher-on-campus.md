@@ -2,7 +2,7 @@
 title: Kosher on Campus: Keeping Kosher and Shabbat in College
 description: How to keep kosher and Shabbat at college: finding kosher food, your own microwave and dishes, Chabad on campus and talking to roommates and professors.
 category: Kosher
-related: jewish-college-students, kosher-on-a-budget, kosher-symbols, kosher-when-traveling
+related: jewish-college-students, sending-a-lamorinda-teen-to-college, kosher-on-a-budget, kosher-symbols, kosher-when-traveling
 local: Students and parents in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel Labkowski to plan kosher and Shabbat before college, 925-384-7242.
 ---
 Going to college is a big step, and keeping kosher and Shabbat away from home can feel daunting. With a little planning, many students do it successfully, and often find it becomes an anchor in a busy new life. Here is how to start.

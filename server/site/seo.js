@@ -8,7 +8,7 @@ const Z = require('./zmanim.js');
 const { LANGS, withLang } = require('./i18n.js');
 const { photoForPath, setLearn } = require('./art.js');
 
-const STATIC = ['/', '/subscribe', '/kids', '/mitzvah', '/menorah', '/dreidel', '/app','/chanukah-quiz', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/tools/zmanim', '/tools/hebrew-birthday', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
+const STATIC = ['/', '/subscribe', '/kids', '/mitzvah', '/menorah', '/dreidel', '/app', '/chanukah-quiz', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/chai-club', '/sponsor-a-kiddush', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/tools/zmanim', '/tools/hebrew-birthday', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
 // AI and search crawlers we explicitly welcome (being cited by assistants is a goal of this site).
 const BOTS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'meta-externalagent', 'FacebookBot', 'DuckDuckBot', 'YandexBot', 'cohere-ai', 'MistralAI-User'];
 
@@ -40,7 +40,7 @@ async function llmsText(c, base, upcoming, full) {
   if (sh && sh.candles) lines.push(`- This week: candle lighting ${sh.candles.timeStr} on ${sh.candles.date}${sh.havdalah ? `, Shabbat ends ${sh.havdalah.timeStr}` : ''} (Lafayette, CA)`);
   lines.push('', '## Services');
   for (const s of o.services || []) lines.push(`- ${s.name}: ${s.time}${s.note ? ' (' + s.note + ')' : ''}`);
-  if ((o.weekly || []).length) { lines.push('', '## Every week'); for (const w of o.weekly) lines.push(`- ${w.day} ${w.time}: ${w.name}${w.link ? ` (${base}${w.link})` : ''}`); }
+  if ((o.weekly || []).length) { lines.push('', '## Every week'); for (const w of o.weekly) lines.push(`- ${w.day} ${w.time}: ${w.name}${w.place ? ' (' + w.place + ')' : ''}${w.link ? ` (${base}${w.link})` : ''}`); }
   lines.push('', '## Programs');
   for (const p of c.programs) lines.push(`- [${p.name}](${base}/programs/${p.slug}): ${p.summary}`);
   lines.push('', '## Upcoming events');
@@ -74,6 +74,11 @@ async function llmsText(c, base, upcoming, full) {
 
 function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
   const c = () => content();
+  // IndexNow (Bing, Yandex and others): the key file proves the site is ours; `node scripts/indexnow.js` sends every address.
+  // Google Search Console: this one file proves the site is ours (kept for good: removing it un-verifies the site).
+  // Only the file the Rabbi downloaded from Search Console is served; any other name is a 404.
+  r.get('/google782f93ba7cc8f3ad.html', (req, res) => res.type('text/html').send('google-site-verification: google782f93ba7cc8f3ad.html'));
+  r.get(/^\/([A-Za-z0-9]{16,64})\.txt$/, (req, res, next) => (process.env.INDEXNOW_KEY && req.params[0] === process.env.INDEXNOW_KEY ? res.type('text/plain').send(req.params[0]) : next()));
   r.get('/robots.txt', (req, res) => {
     res.type('text').set('Cache-Control', 'public, max-age=3600');
     if (!indexable) return res.send('# Preview site: not yet open to search engines.\nUser-agent: *\nDisallow: /\n');
@@ -81,13 +86,15 @@ function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
   });
   r.get('/sitemap.xml', async (req, res) => {
     const C = c(), today = new Date().toISOString().slice(0, 10), extra = more ? await more().catch(() => []) : [];
-    const paths = [...STATIC, ...C.pages.map((p) => '/' + p.slug), ...C.programs.map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.towns.map((t) => '/jewish-' + t.slug), ...C.learn.map((a) => '/learn/' + a.slug), ...(C.series || []).map((s) => '/learn/series/' + s.id), '/stories', ...(C.stories || []).map((s) => '/stories/' + s.slug), ...(C.help || []).map((h) => '/help/' + h.slug), ...(C.forms || []).map((f) => '/forms/' + f.id), ...require('./parsha.js').all().map((p) => '/parsha/' + require('./parsha.js').slugOf(p.name)), ...upcoming().map((e) => '/events/' + e.slug), ...extra];
+    const paths = [...new Set([...STATIC, ...C.pages.map((p) => '/' + p.slug), ...C.programs.filter((p) => !p.closed).map((p) => '/programs/' + p.slug), ...C.holidays.map((h) => '/holidays/' + h.slug), ...C.towns.map((t) => '/jewish-' + t.slug), ...C.learn.map((a) => '/learn/' + a.slug), ...(C.parsha || []).map((x) => '/parsha/' + x.slug), ...((C.topics && C.topics.categories) || []).flatMap((c) => { const id = c.name.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, ''); return ['/learn/topic/' + id, ...c.subs.filter((x) => C.learn.some((g) => g.sub === x.id)).map((x) => `/learn/topic/${id}/${x.id}`)]; }), ...(C.series || []).map((s) => '/learn/series/' + s.id), '/stories', ...(C.stories || []).filter((s) => s.kind !== 'joke').map((s) => '/stories/' + s.slug), ...require('./stories.js').jokeCollections(C).map((c) => '/stories/jokes/' + c.id), ...(C.help || []).map((h) => '/help/' + h.slug), ...(C.forms || []).filter((f) => !f.closed && !f.hidden).map((f) => '/forms/' + f.id), ...require('./parsha.js').all().map((p) => '/parsha/' + require('./parsha.js').slugOf(p.name)), ...upcoming().map((e) => '/events/' + e.slug), ...extra])];
+    // "Last changed" only where it is true: pages that change every day or week. For the rest it is left out, so Google is not told a false date.
+    const LIVE = new Set(['/', '/events', '/this-week', '/shabbat', '/parsha', '/kids', '/menorah', '/shabbat-times']), lm = (p) => (LIVE.has(p) || p.startsWith('/events/') ? `<lastmod>${today}</lastmod>` : '');
     // Each page's photo (every guide has one), so pictures can show in Google Images.
     setLearn(C.learn);
     const img = (p) => { const ph = photoForPath(p); return ph ? `<image:image><image:loc>${xml(base + ph)}</image:loc></image:image>` : ''; };
     // Every page in English, Hebrew and Russian, each listing its other language versions (hreflang).
     const alt = (p) => LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${xml(base + withLang(l, p))}"/>`).join('');
-    res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.flatMap((p) => LANGS.map((l) => `<url><loc>${xml(base + withLang(l, p))}</loc><lastmod>${today}</lastmod>${alt(p)}${img(p)}</url>`)).join('\n')}\n</urlset>\n`);
+    res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.flatMap((p) => LANGS.map((l) => `<url><loc>${xml(base + withLang(l, p))}</loc>${lm(p)}${alt(p)}${img(p)}</url>`)).join('\n')}\n</urlset>\n`);
   });
   r.get('/llms.txt', async (req, res, next) => { try { res.type('text/plain; charset=utf-8').set('Cache-Control', 'public, max-age=3600').send(await llmsText(c(), base, upcoming, false)); } catch (e) { next(e); } });
   r.get('/llms-full.txt', async (req, res, next) => { try { res.type('text/plain; charset=utf-8').set('Cache-Control', 'public, max-age=3600').send(await llmsText(c(), base, upcoming, true)); } catch (e) { next(e); } });

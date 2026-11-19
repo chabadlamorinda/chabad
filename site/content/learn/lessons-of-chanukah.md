@@ -2,7 +2,7 @@
 title: The Lessons of Chanukah: What the Menorah Teaches for Everyday Life
 description: What Chanukah teaches for everyday life through Chabad teaching: add light each night, a little light dispels darkness, share it at the window.
 category: Shabbat & holidays
-related: chanukah-story, the-maccabees, chanukah-menorah, zot-chanukah, kiddush-hashem
+related: chanukah-story, chanukah-and-the-soul, the-rebbe-on-chanukah, chanukah-and-torah-study, why-add-a-candle-each-night, decrees-of-the-greeks, what-does-chanukah-mean, why-is-chanukah-eight-days, the-maccabees, chanukah-menorah, zot-chanukah, kiddush-hashem
 local: Chabad of Lamorinda's grand menorah lighting brings together families from Lafayette, Moraga and Orinda; see the Chanukah page for this year's celebration or call 925-384-7242.
 ---
 Chanukah is easy to love: the candles, the latkes, the dreidels, the kids. But the menorah in the window is also a teacher. The Rebbe returned to its lessons year after year. Here are a few of them.

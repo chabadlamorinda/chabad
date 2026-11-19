@@ -2,7 +2,7 @@
 title: When Couples Argue: Jewish Wisdom for a Peaceful Marriage
 description: Every couple disagrees. Torah wisdom on arguing with respect, calming a fight, apologizing, and when to ask the Rabbi, the Rebbetzin or a counselor for help.
 category: Jewish home
-related: shalom-bayit, forgiveness-and-making-peace, in-laws, jewish-wedding
+related: shalom-bayit, tanya-and-marriage, tanya-on-anger, making-time-for-your-marriage, forgiveness-and-making-peace, in-laws, jewish-wedding
 local: Couples in Lafayette, Moraga, Orinda and the East Bay can talk privately with Rabbi Yisroel or Rebbetzin Tzipora Labkowski: 925-384-7242.
 ---
 Every marriage has disagreements. Judaism does not expect a couple never to argue; it teaches how to disagree with love, and how to come back to peace. The sages say that to make peace between husband and wife, G-d Himself was willing to let His holy name be erased. That is how precious [shalom bayit](/learn/shalom-bayit), peace in the home, is.

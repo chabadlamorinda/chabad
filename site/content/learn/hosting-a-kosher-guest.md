@@ -2,19 +2,19 @@
 title: How to Host a Guest Who Keeps Kosher (When Your Home Isn't Kosher)
 description: How to host a kosher guest at home: sealed kosher food, disposable plates, fresh fruit and vegetables, and what to ask. Call Chabad of Lamorinda to help.
 category: Jewish home
-related: keeping-kosher-with-family, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
+related: keeping-kosher-with-family, meals-for-new-parents, chanukah-food-gifts-for-neighbors, kosher-catering-for-a-simcha-in-lamorinda, hosting-shabbat-guests-in-lamorinda, hachnasat-orchim, eating-out-kosher, kosher-symbols, kosher-in-lamorinda
 local: Hosting a relative who keeps kosher in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 and we will help you plan.
 ---
 To host a guest who keeps kosher in a home that is not kosher, serve sealed, kosher-certified food on disposable plates with disposable cutlery, plus fresh fruit and vegetables. Ask your guest what they eat instead of guessing, because every kosher household has its own level of care.
 
 ## Start by asking, gently
 
-The best first step is a short, friendly question: "What would make you feel most comfortable at our table?" Kosher guests are used to this question and usually have simple answers. Many will say that fruit, vegetables, salad and sealed packaged food are fine. Others will bring their own food. Both are common, and neither is an insult. Chabad.org's guide for hosts reminds us to keep questions few and kind and to avoid overwhelming your guest. In Lafayette, Moraga and Orinda, many families have a parent, child or friend who keeps kosher, so you are not alone.
+The best first step is a short, friendly question: "What would make you feel most comfortable at our table?" Kosher guests are used to this question and usually have simple answers. Many will say that fruit, vegetables, salad and sealed packaged food are fine. Others will bring their own food. Both are common, and neither is an insult. Good hosting advice reminds us to keep questions few and kind and to avoid overwhelming your guest. In Lafayette, Moraga and Orinda, many families have a parent, child or friend who keeps kosher, so you are not alone.
 
 ## What to serve: the simple list
 
 1. **Fresh fruit and vegetables.** Whole, washed fruit is always fine. For leafy greens and berries, which can hold insects, ask your guest, or see [checking for insects](/learn/checking-for-insects).
-2. **Sealed packaged food with a kosher symbol.** Chips, crackers, juice, cookies, wine and similar packaged foods are fine if they are kosher certified. Learn the marks in [kosher symbols](/learn/kosher-symbols).
+2. **Sealed packaged food with a kosher symbol.** Chips, crackers, juice, cookies and similar packaged foods are fine if they are kosher certified. Wine has extra rules (your guest may prefer to open and pour it), so ask your guest first. Learn the marks in [kosher symbols](/learn/kosher-symbols).
 3. **Disposable plates, cups and cutlery.** Because your dishes were used for non-kosher food, your guest will not eat from them. Disposable items solve this.
 4. **A kosher meal from a certified source.** Frozen kosher meals, or a meal ordered from a kosher caterer, are the closest to a full dinner. [Bay Kosher](/programs/bay-kosher), a project of Chabad of Lamorinda, delivers kosher food in the East Bay.
 

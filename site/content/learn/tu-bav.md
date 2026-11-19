@@ -2,7 +2,7 @@
 title: Tu B'Av: The 15th of Av, the Jewish Day of Love and Joy
 description: What Tu B'Av is, why the Talmud calls it one of the happiest days of the year, its connection to love and matchmaking, and how to mark it.
 category: Shabbat & holidays
-related: jewish-dating, three-weeks, jewish-wedding, daily-torah-study
+related: jewish-dating, menachem-av, three-weeks, jewish-wedding, daily-torah-study
 local: Make the longer nights after Tu B'Av a time to learn; see our classes at chabadoflamorinda.com/programs/adult-education or call 925-384-7242.
 ---
 Tu B'Av, the 15th day of the Hebrew month of Av, is a minor Jewish holiday of joy, love and new beginnings. The Mishnah says there were no days as festive for the Jewish people as the 15th of Av and Yom Kippur.

@@ -2,7 +2,7 @@
 title: Preparing for a Bris: A Step-by-Step Guide for New Parents
 description: Planning a brit milah: the eighth day and when it is delayed, choosing a mohel, the sandak and kvatter, the meal, the naming and the baby's comfort.
 category: Life cycle
-related: brit-milah, shalom-zachar, jewish-baby-names, baby-naming, new-parents-in-lamorinda, pidyon-haben
+related: brit-milah, choosing-a-mohel, postponing-a-bris, shalom-zachar, jewish-baby-names, baby-naming, new-parents-in-lamorinda, pidyon-haben
 local: Expecting a baby boy in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242 and we will help you with every step of the bris.
 ---
 Mazal tov! A baby boy is on the way, or has just arrived, and in about a week there will be a bris. This guide walks you through it step by step. The ceremony itself is explained in [brit milah](/learn/brit-milah); here we focus on getting ready.
@@ -44,7 +44,7 @@ The mohel will give instructions about feeding before the ceremony and care in t
 The bris waits until the doctors and the mohel agree the baby is healthy, however long that takes. Ask the Rabbi to help set the new date; it will not be on Shabbat or a holiday.
 
 ### What do the parents do during the ceremony?
-Very little. The father says one blessing (the mohel shows him the words), and everyone answers "Amen." The mother may be in the room or in a quieter room nearby; both are fine.
+Very little. The father says a blessing (the mohel shows him the words), and everyone answers "Amen." The mother may be in the room or in a quieter room nearby; both are fine.
 
 ### We are not very observant. Can we still have a bris?
 Of course. The bris belongs to every Jewish family, and the Rabbi helps families of every background. Call 925-384-7242; we will take care of the details together.

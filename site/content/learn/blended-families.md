@@ -2,7 +2,7 @@
 title: Blended Families: Jewish Wisdom for Stepparents and Stepchildren
 description: Jewish wisdom for blended families: honoring a stepparent, bringing two families together, holidays and simchas, and peace in the home.
 category: Life cycle
-related: shalom-bayit, divorce-and-children, honoring-parents, jewish-parenting, sibling-rivalry, jewish-divorce
+related: shalom-bayit, remarriage, who-sits-shiva, divorce-and-children, honoring-parents, jewish-parenting, sibling-rivalry, jewish-divorce
 local: Families in Lafayette, Moraga and Orinda: Rabbi Yisroel and Rebbetzin Tzipora Labkowski are glad to talk privately about any family question. Call 925-384-7242.
 ---
 Many families today are blended: a parent remarries, and children, stepparents and step-siblings learn to become one home. It can be a great blessing, and it can be hard. Jewish tradition has real wisdom for it, starting with one simple idea: a home is built on peace, patience and kindness, one day at a time.

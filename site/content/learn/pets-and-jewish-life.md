@@ -2,7 +2,7 @@
 title: Pets and Jewish Life: Kindness, Shabbat, Passover and Saying Goodbye
 description: What Judaism says about pets: kindness to animals, feeding them before yourself, pets on Shabbat, pet food on Passover and when a pet dies.
 category: Jewish home
-related: tzaar-baalei-chayim, loss-of-a-pet, chametz, muktzeh, bal-tashchit
+related: tzaar-baalei-chayim, shiluach-haken, loss-of-a-pet, chametz, muktzeh, bal-tashchit
 local: Have a question about your dog, cat or any animal at home? Rabbi Yisroel Labkowski is glad to help families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Many Jewish homes in Lafayette, Moraga and Orinda have a dog at the door or a cat on the windowsill. Judaism has a lot to say about the animals in our care: how to treat them, how to feed them, and how our Jewish calendar touches their lives too. The short answer is that caring for a pet well is a mitzvah, and the details are easier than you might think.
@@ -17,7 +17,7 @@ The Talmud (Berachot 40a) teaches that a person should feed their animals before
 
 ## Pets on Shabbat
 
-Shabbat is a day of rest for our animals too, and the Torah includes them in the commandment. Day to day, caring for a pet on Shabbat is allowed and expected: feeding, giving water, letting a dog out, walking it. Some questions have details, such as walking a dog on a leash where there is no eruv, handling an animal (the question of [muktzeh](/learn/muktzeh)), or what to do if a pet becomes ill on Shabbat. The principle is clear: an animal's needs are met, and an animal in pain is helped. For your situation, ask the Rabbi.
+Shabbat is a day of rest for our animals too, and the Torah includes them in the commandment. Day to day, caring for a pet on Shabbat is allowed and expected: feeding, giving water, letting a dog out into the yard. Some questions have details, such as walking a dog on a leash where there is no eruv, handling an animal (the question of [muktzeh](/learn/muktzeh)), or what to do if a pet becomes ill on Shabbat. The principle is clear: an animal's needs are met, and an animal in pain is helped. For your situation, ask the Rabbi.
 
 ## Pet food on Passover
 
@@ -36,7 +36,7 @@ The grief is real, especially for children, and Judaism takes it seriously while
 ## Common questions
 
 ### Can I walk my dog on Shabbat?
-In general, yes. In a place without an eruv there are questions about the leash and about carrying anything, and some details depend on where you live in Lafayette, Moraga or Orinda. Ask the Rabbi for your street.
+Caring for your dog is expected, but walking it on a leash outside raises real questions about carrying and about the eruv, and the answer depends on where you live in Lafayette, Moraga or Orinda. Ask the Rabbi for your street before Shabbat.
 
 ### Does my dog need kosher-for-Passover food?
 Your pet's food must be free of chametz, but it does not need kosher certification, and grains that are kitniyot are fine for animals. Read the ingredients carefully; many brands have a grain-free line.

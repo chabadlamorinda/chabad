@@ -21,7 +21,7 @@ The Torah says, "You shall not wear shatnez, wool and linen together" (Deuterono
 
 - **Wool** means wool from sheep. Other animal hairs, like camel or alpaca, are not wool for this purpose, though fabrics labeled with them sometimes include sheep wool too.
 - **Linen** means fiber from the flax plant.
-- **Any amount** counts: one linen thread in a wool garment makes it shatnez.
+- **Even a small amount** counts: linen threads in a wool garment can make it shatnez. The testing service will tell you.
 - **Other combinations are fine.** Wool and cotton, linen and cotton, wool and polyester, or silk with either are all permitted.
 
 ## Where it hides

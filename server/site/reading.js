@@ -30,7 +30,8 @@ function mountReading({ store, content, log = console }) {
       const missed = (await q(`SELECT q, lang, sum(n)::int AS n, max(day) AS last FROM site_searches WHERE day >= CURRENT_DATE - 90 AND results = 0 GROUP BY q, lang ORDER BY n DESC, last DESC LIMIT 30`)).rows;
       const top = (await q(`SELECT q, sum(n)::int AS n FROM site_searches WHERE day >= CURRENT_DATE - 30 GROUP BY q ORDER BY n DESC LIMIT 15`)).rows;
       const unread = C.learn.length - (await q(`SELECT count(DISTINCT path)::int AS n FROM visitor_views WHERE day >= CURRENT_DATE - 30 AND path LIKE '/learn/%'`)).rows[0].n;
-      res.json({ guides, pages, missed, top, guidesTotal: C.learn.length, unread: Math.max(0, unread) });
+      const traction = await require('./traction.js').tractionData(q, C);
+      res.json({ traction, guides, pages, missed, top, guidesTotal: C.learn.length, unread: Math.max(0, unread) });
     }));
   }
   return { logSearch, mountAdmin };

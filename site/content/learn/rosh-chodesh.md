@@ -2,7 +2,7 @@
 title: Rosh Chodesh: Celebrating the Jewish New Month
 description: What Rosh Chodesh is, why the new moon matters, how it is celebrated with prayers and customs, and its special connection to women.
 category: Shabbat & holidays
-related: jewish-calendar, jewish-leap-year-and-calendar, kiddush-levana, cheshvan, jewish-women, prayer, fast-days
+related: jewish-calendar, rosh-chodesh-tevet-on-chanukah, barchi-nafshi, yom-kippur-katan, musaf, hallel, jewish-leap-year-and-calendar, kiddush-levana, cheshvan, jewish-women, prayer, fast-days
 local: See upcoming Hebrew months and holidays on our holidays page, or call Rabbi Labkowski at 925-384-7242 with any questions.
 ---
 Rosh Chodesh, meaning "head of the month," is the first day of each Hebrew month, marked by the appearance of the new moon. It is a minor holiday celebrated with special prayers, a festive spirit, and a special connection to Jewish women.
@@ -30,7 +30,7 @@ The [Jewish calendar](/learn/jewish-calendar) guide explains why months vary in 
 
 **Festive meal:** it is a mitzvah to have a nicer meal than usual on Rosh Chodesh.
 
-**No fasting or eulogies:** as a joyful day, fasting is not allowed and eulogies are kept short.
+**No fasting or eulogies:** as a joyful day, fasting is not allowed and eulogies are not given.
 
 ## Blessing the new month
 

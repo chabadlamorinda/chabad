@@ -2,7 +2,7 @@
 title: לשמוח במה שיש: הסוד היהודי של שביעות הרצון
 description: איזהו עשיר? השמח בחלקו. איך חכמת ישראל ותורת החסידות עוזרות לנו להפסיק להשוות, לגדול בהכרת הטוב ולמצוא שביעות רצון אמיתית.
 category: Jewish ideas
-related: hakarat-hatov, jealousy-and-envy, simcha, jewish-view-on-wealth, technology-and-screens-jewish-view
+related: hakarat-hatov, jewish-view-of-humor, jealousy-and-envy, simcha, jewish-view-on-wealth, technology-and-screens-jewish-view
 local: הרב ישראל והרבנית ציפורה לבקובסקי ישמחו לשוחח על חיים יהודיים מאושרים יותר עם משפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 אנחנו חיים במקום של שפע גדול, ורבים מאיתנו עדיין חסרי מנוחה. תמיד יש בית גדול יותר, חופשה טובה יותר, ילד שהתקבל לבית ספר טוב יותר. לחכמת ישראל יש תשובה קצרה ומפורסמת לחוסר המנוחה הזה, והיא לא הזדקנה ביום אחד.

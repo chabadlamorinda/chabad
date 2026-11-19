@@ -2,7 +2,7 @@
 title: Цдака: еврейская заповедь благотворительности
 description: Что означает цдака, сколько традиционно дают евреи, восемь ступеней благотворительности и как сделать ее ежедневной привычкой.
 category: Jewish ideas
-related: 613-mitzvot, children-money-and-tzedakah, kapparot, jewish-birthday-customs, giving-to-people-who-ask, yizkor, teshuvah, moshiach
+related: 613-mitzvot, tanya-on-tzedakah, the-blessing-of-giving-maaser, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for, maaser-for-business-owners-and-investors, how-to-calculate-maaser, what-is-jewish-tithing, baal-shem-tov-tzedakah-stories, the-poor-mans-offering, rabbi-akiva-and-rabbi-tarfon-investment, tzedakah-saves-from-death-stories, mar-ukva-secret-giving, the-rebbes-sunday-dollars, king-munbaz-treasures-above, how-to-give-tzedakah-kindly, tzedakah-equals-all-the-mitzvot, why-give-if-g-d-provides, what-giving-does-for-the-giver, tzedakah-averts-a-harsh-decree, giving-when-money-is-tight, giving-anonymously, tzedakah-before-candle-lighting, chanukah-tzedakah, matanot-laevyonim, local-tzedakah-in-lamorinda, maot-chitim, rabbi-meir-baal-haness, children-money-and-tzedakah, kapparot, jewish-birthday-customs, giving-to-people-who-ask, yizkor, teshuvah, moshiach
 local: Хотите копилку для цдаки у себя дома или идеи для пожертвований? Позвоните раввину Лабковскому по телефону 925-384-7242, и мы с радостью поможем.
 ---
 Цдака - это еврейская заповедь помогать нуждающимся. Это слово означает «справедливость» или «праведность», а не «милостыня», потому что иудаизм учит: помогать другим - просто правильно. То, что у нас есть, доверено нам Б-гом, и делиться этим входит в нашу обязанность.

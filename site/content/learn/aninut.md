@@ -2,7 +2,7 @@
 title: Aninut: The Time Between Death and Burial
 description: What aninut is, who is an onen, the special rules for mourners before the funeral, and how to help a family during the first hours after a loss.
 category: Mourning & remembrance
-related: jewish-funeral, chevra-kadisha-and-tahara, shiva, kaddish, comforting-mourners
+related: jewish-funeral, why-jews-bury-quickly, first-hours-after-a-death, chevra-kadisha-and-tahara, shiva, kaddish, comforting-mourners
 local: If someone has just passed away, call Rabbi Labkowski at 925-384-7242 and see chabadoflamorinda.com/help/someone-passed-away. We will guide your family through every step.
 ---
 Aninut is the period of mourning from the moment of a close relative's death until the burial. A mourner during this time is called an *onen*, and Jewish law frees them from many obligations so they can focus fully on caring for the person who passed away.
@@ -40,7 +40,7 @@ Aninut ends when the burial is complete. At that point the mourner begins shiva,
 
 - **Handle practical tasks.** Make phone calls, pick up relatives, arrange food for after the funeral.
 - **Do not make a formal visit yet.** Traditionally, condolence visits begin during shiva, after the burial. A quick, helpful presence is appropriate if the family welcomes it.
-- **Call the Rabbi.** He can help coordinate the Chevra Kadisha, the funeral and the shiva.
+- **Call the Rabbi first,** before the burial society or a funeral home. He will guide the family through every step and make the arrangements with the Chevra Kadisha, the funeral and the shiva.
 
 Read more in our guide to [comforting mourners](/learn/comforting-mourners).
 
@@ -57,3 +57,8 @@ Distance, delays and who is handling the arrangements can change how aninut work
 
 ### Should an onen say Kaddish before the funeral?
 No. Kaddish begins at the burial. Until then, the mourner's role is to care for the arrangements.
+
+## Take the next step
+
+- Call Rabbi Labkowski first, at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241), before the burial society or a funeral home.
+- Read [what to do in the first hours](/learn/first-hours-after-a-death) and [the Jewish funeral](/learn/jewish-funeral).

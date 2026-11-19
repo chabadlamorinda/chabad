@@ -1,16 +1,18 @@
 // The public website pages, in English, Hebrew and Russian. Everything is rendered on the server from site/content/
 // plus live data (Shabbat times, holidays, RSVP counts, Facebook photos), so every page is complete for Google and AI.
 'use strict';
+const isImg = (f) => /\.(jpe?g|png|webp)$/i.test(f || '');
 const { byPopularity } = require('./popular.js');
 const { homeBody } = require('./home.js');
 const express = require('express');
 const path = require('path');
-const { md, esc, plain } = require('./md.js');
+const { md: md0, askRabbi, esc, plain } = require('./md.js');
+const md = (src) => askRabbi(md0(src));
 const { layout } = require('./layout.js');
 const { fullAddress, fmtClock } = require('./content.js');
 const Z = require('./zmanim.js');
-const { googleCalendarUrl } = require('./social.js');
 const { withShare } = require('./share.js');
+const { menu: calMenu, weeklyMenu } = require('./addcal.js');
 const { withGuides, friendlyLinks, guidesForDays } = require('./links.js');
 const { withGive } = require('./give.js');
 const { withContact } = require('./leads.js');
@@ -36,9 +38,10 @@ function eventLd(c, base, e) {
 
 function eventCard(e, counts, X) {
   const a = parseLocal(e.start), going = counts && counts[e.slug], t = X.t;
-  return `<article class="ev">
+  return `<article class="ev${e.card || e.image ? ' has-pic' : ''}${e.card ? ' pic-whole' : ''}">
+  ${e.card || e.image ? `<a class="ev-pic" href="/events/${e.slug}" tabindex="-1"><img src="${esc(e.card || e.image)}" alt="${esc(e.title)}" loading="lazy" decoding="async"></a>` : ''}
   <a class="ev-date" href="/events/${e.slug}" aria-hidden="true" tabindex="-1"><span>${esc(X.mon(a.m))}</span><b>${a.d}</b></a>
-  ${artImg(artFor('event', e.holiday || e.category || e.slug, e.title))}
+  ${e.card || e.image ? '' : artImg(artFor('event', e.holiday || e.category || e.slug, e.title))}
   <div class="ev-body">
     <h3><a href="/events/${e.slug}">${esc(e.title)}</a></h3>
     <p class="muted">${esc(X.when(e))} · ${esc(e.loc.name)}</p>
@@ -105,7 +108,7 @@ ${hp ? `<a class="card play-cta" href="/holidays/${hp.slug}"><span class="hand">
 <p class="lead-d">${esc(t('Shabbat dinners, holiday celebrations, classes and family programs in Lafayette, Moraga and Orinda. Everyone is welcome.'))}</p>
 <p class="chips">${cats.length > 1 ? `<a class="chip${c ? '' : ' on'}" href="/events">${esc(t('All'))}</a>` : ''}${(cats.length > 1 ? cats : []).map((k) => `<a class="chip${k === c ? ' on' : ''}" href="/events?c=${k}">${esc(cat(X, k))}</a>`).join('')}<a class="chip" href="/calendar">${esc(t('Calendar'))}</a><a class="chip" href="/events.ics">${esc(t('Add calendar to my phone'))}</a></p>
 <h2 class="sr-only">${esc(t('Upcoming events'))}</h2>${list.length ? `<div class="evs">${list.map((e) => eventCard(e, cnt, X)).join('')}</div>` : await emptyEvents(X)}
-${c ? '' : weeklyHtml(C.org, X)}
+${c ? '' : weeklyHtml(C.org, X, base)}
 </section>`;
     await render(res, { path: '/events', title: t('Upcoming Jewish events in Lamorinda'), description: t('Upcoming Jewish events, holiday celebrations, Shabbat dinners and classes at Chabad of Lamorinda in Lafayette, Moraga and Orinda.'), body, ld: [...list.map((e) => eventLd(C, base, e)), ...seriesLd(ctx.content(), base)], noindex: !!c });
   }));
@@ -123,19 +126,21 @@ ${c ? '' : weeklyHtml(C.org, X)}
 ${e.price ? `<div><p class="eyebrow">${esc(t('Cost'))}</p><p>${esc(e.price)}</p></div>` : ''}
 ${e.rsvp && !past ? `<div><p class="eyebrow">${esc(t('RSVP'))}</p><p><a class="btn sm gold" href="#rsvp">${esc(t('RSVP in one tap'))}</a></p></div>` : ''}
 </div>
-${e.image ? `<img class="hero-img" src="${esc(e.image)}" alt="${esc(e.title)}" decoding="async">` : ''}
+${(isImg(e.flyer) || e.image) ? `<img class="hero-img" src="${esc(isImg(e.flyer) ? e.flyer : e.image)}" alt="${esc(e.title)}" decoding="async">` : ''}
 ${e.summary ? `<p class="lead-d">${esc(e.summary)}</p>` : ''}
 ${md(e.details || '')}
 ${e.flyer ? `<p><a class="btn ghost" href="${esc(e.flyer)}">${esc(t('Download the flyer'))}</a></p>` : ''}
+${past ? '' : `<p class="btns"><a class="btn gold" href="/donate?fund=${e.holiday ? 'holidays' : 'general'}#give">${esc(t('Sponsor or give'))}</a></p>`}
 ${e.photos && e.photos.length ? `<h2>${esc(t('Photos'))}</h2><div class="pics big">${e.photos.map((p) => `<a href="${esc(p)}"><img src="${esc(p)}" alt="${esc(e.title)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}
 ${e.album ? `<p><a class="btn gold" href="${esc(e.album)}" rel="noopener" target="_blank">${esc(t('See all the photos'))}</a></p>` : ''}
-${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" data-kids="${e.rsvp.kids === false ? 0 : 1}" data-title="${esc(e.title)}" data-when="${esc(X.when(e))}">
+${e.rsvp && !past ? `<section id="rsvp" class="card rsvp" data-rsvp="${e.slug}" data-fund="${e.holiday ? 'holidays' : 'general'}" data-kids="${e.rsvp.kids === false ? 0 : 1}" data-title="${esc(e.title)}" data-when="${esc(X.when(e))}">
   <h2>${esc(t('RSVP'))}</h2>
   ${cap ? `<p class="muted">${esc(t('{left} of {cap} places left', { left: Math.max(cap - cnt, 0), cap }))}</p>` : cnt ? `<p class="muted">${esc(t('{n} people are coming', { n: cnt }))}</p>` : ''}
   <noscript><p>${esc(t('Please RSVP by email:'))} <a href="mailto:${esc(C.org.email || '')}?subject=${encodeURIComponent('RSVP: ' + e.title)}">${esc(C.org.email || '')}</a></p></noscript>
   <div class="rsvp-ui" hidden></div>
 </section>` : ''}
-<p class="btns">${past ? `<a class="btn gold" href="/events">${esc(t('Upcoming events'))}</a>` : `<a class="btn ghost" href="/events/${e.slug}.ics">${esc(t('Add to my calendar'))}</a><a class="btn ghost" href="/events/${e.slug}/flyer" rel="nofollow">${esc(t('Print a flyer'))}</a><a class="btn ghost" href="${esc(googleCalendarUrl(e, base))}" rel="noopener" target="_blank">${esc(t('Add to Google Calendar'))}</a>`}<a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent(t('Join me at {title}, {when}:', { title: e.title, when: X.when(e) }) + ' ' + base + X.path('/events/' + e.slug))}" rel="noopener" target="_blank">${esc(t('Invite a friend on WhatsApp'))}</a></p>
+<p class="btns">${past ? `<a class="btn gold" href="/events">${esc(t('Upcoming events'))}</a>` : `<a class="btn ghost" href="/events/${e.slug}/flyer" rel="nofollow">${esc(t('Print a flyer'))}</a>`}<a class="btn ghost" href="https://wa.me/?text=${encodeURIComponent(t('Join me at {title}, {when}:', { title: e.title, when: X.when(e) }) + ' ' + base + X.path('/events/' + e.slug))}" rel="noopener" target="_blank">${esc(t('Invite a friend on WhatsApp'))}</a></p>
+${past ? '' : calMenu(X, base, { title: e.title, when: X.when(e), start: e.start, end: e.end || new Date(new Date(e.start + ':00Z').getTime() + 2 * 3600e3).toISOString().slice(0, 16), loc: [e.loc && e.loc.name, e.loc && e.loc.address ? e.loc.address : fullAddress(C.org)].filter(Boolean).join(', '), details: `${e.summary || ''}\n${base}/events/${e.slug}`, icsPath: `/events/${e.slug}.ics`, ics: `${base}/events/${e.slug}.ics` })}
 ${prog ? `<p>${esc(t('Part of'))} <a href="/programs/${prog.slug}">${esc(prog.name)}</a>.</p>` : ''}${hol ? `<p>${esc(t('Learn more about'))} <a href="/holidays/${hol.slug}">${esc(hol.title)}</a>.</p>` : ''}
 ${(() => { const nx = upcoming(new Date(), C).find((x) => x.slug !== e.slug); return nx ? `<h2>${esc(t('Next at Chabad of Lamorinda'))}</h2><div class="evs">${eventCard(nx, cntAll, X)}</div>` : ''; })()}
 </article>`;
@@ -200,7 +205,7 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
   r.get('/programs', wrap(async (req, res) => {
     const X = ctxOf(req), { t, C } = X;
     const body = `<section class="wrap sec"><h1>${esc(t('Programs'))}</h1><p class="lead-d">${esc(t('Something for every age and stage, from toddlers to seniors.'))}</p>
-<div class="grid">${byPopularity(C.programs, (p) => '/programs/' + p.slug).map((p) => `<a class="card tile" href="/programs/${p.slug}"><p class="eyebrow">${esc(p.audience || '')}</p><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p></a>`).join('')}</div></section>`;
+<div class="grid">${byPopularity(C.programs.filter((p) => !p.closed), (p) => '/programs/' + p.slug).map((p) => { const H = C.home || {}, pic = [...(H.banners || []), ...(H.tiles || [])].find((x) => x.program === p.slug && x.image), sm = pic && require('./art.js').smallOf(pic.image); return `<a class="card tile${pic ? ' has-photo' : ''}" href="/programs/${p.slug}">${pic ? `<img class="tile-photo" src="${esc(sm || pic.image)}" alt="" loading="lazy" decoding="async" width="560" height="380">` : ''}<p class="eyebrow">${esc(p.audience || '')}</p><h3 aria-level="2">${esc(p.name)}</h3><p>${esc(p.summary)}</p><p class="tile-more">${esc(t('Learn more'))} <span class="arrow" aria-hidden="true">→</span></p></a>`; }).join('')}</div></section>`;
     await render(res, { path: '/programs', title: t('Jewish programs for kids, teens and adults'), description: t("Hebrew school, adult classes, teen and kids programs, women's circle and more at Chabad of Lamorinda."), body });
   }));
   r.get('/programs/:slug', wrap(async (req, res, next) => {
@@ -211,9 +216,9 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
     const evs = upcoming(new Date(), C).filter((e) => e.program === p.slug), cnt = await counts();
     const body = `<article class="wrap sec narrow"><p class="crumbs"><a href="/programs">${esc(t('Programs'))}</a> ›</p>
 <h1>${esc(p.name)}</h1>${p.audience ? `<p class="eyebrow">${esc(p.audience)}</p>` : ''}<p class="lead-d">${esc(p.summary)}</p>
-${(() => { // how to join comes first: when it meets, the sign-up form and a way to ask, then the details
+${p.closed ? `<div class="card action-top program-join"><p><strong>${esc(t('Not running this year.'))}</strong> ${esc(t('Call {phone} and we will tell you when registration opens.', { phone: C.org.phone }))}</p></div>` : (() => { // how to join comes first: when it meets, the sign-up form and a way to ask, then the details
   const fm = (C.forms || []).filter((f) => f.program === p.slug), main = fm[0] ? { href: '/forms/' + fm[0].id, label: fm[0].button || t('Sign up') } : p.url ? { href: p.url, label: p.cta || t('Learn more') } : null;
-  return `<div class="card action-top program-join">${p.schedule ? `<p><strong>${esc(t('When:'))}</strong> ${esc(p.schedule)}</p>` : ''}<p class="btns">${fm.map((f, i) => `<a class="btn ${i ? 'ghost' : 'gold'}" href="/forms/${f.id}">${esc(f.button || t('Sign up'))}${fm.length > 1 ? ': ' + esc(f.title) : ''}</a>`).join('')}${p.url && fm.length ? `<a class="btn ghost" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}${!fm.length && p.url ? `<a class="btn gold" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}<a class="btn ghost" href="/contact?about=${encodeURIComponent(p.name)}">${esc(t('Ask about {name}', { name: p.name }))}</a></p></div>
+  return `<div class="card action-top program-join">${p.schedule ? `<p><strong>${esc(t('When:'))}</strong> ${esc(p.schedule)}</p>` : ''}<p class="btns">${fm.map((f, i) => `<a class="btn ${i ? 'ghost' : 'gold'}" href="/forms/${f.id}">${esc(f.button || t('Sign up'))}${fm.length > 1 ? ': ' + esc(f.title) : ''}</a>`).join('')}${p.url && fm.length ? `<a class="btn ghost" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}${!fm.length && p.url ? `<a class="btn gold" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}<a class="btn ghost" href="/contact?about=${encodeURIComponent(p.name)}">${esc(t('Ask about {name}', { name: p.name }))}</a></p>${(C.org.weekly || []).filter((w) => w.link === '/programs/' + p.slug && w.byDay && w.startTime).map((w) => `<p class="addcal-for"><span class="muted small">${esc(w.name)}</span>${weeklyMenu(X, base, w)}</p>`).join('')}</div>
 ${md(p.details || '')}
 ${main ? `<p class="btns join-again"><a class="btn gold" href="${esc(main.href)}">${esc(main.label)}</a></p>` : ''}`; })()}
 ${evs.length ? `<h2>${esc(t('Coming up'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : ''}
@@ -242,7 +247,9 @@ ${pics.length ? `<div class="pics big">${pics.map((p) => `<a href="${esc(p.link)
   }));
 
   r.use('/assets', express.static(path.join(ROOT, 'site', 'assets'), { maxAge: '365d', immutable: true }));
-  r.use('/media', express.static(path.join(ROOT, 'site', 'media'), { maxAge: '7d' }));
+  // Pictures are kept by browsers for a long time (saves bandwidth; a changed picture gets a new file name, see CLAUDE.md "Replacing a picture").
+  r.use('/media/photos', express.static(path.join(ROOT, 'site', 'media', 'photos'), { maxAge: '365d', immutable: true }));
+  r.use('/media', express.static(path.join(ROOT, 'site', 'media'), { maxAge: '30d' }));
   app.use(r);
 
   // Simple Markdown pages (about, contact, privacy...). Mounted last by the site so specific pages win.
@@ -267,9 +274,9 @@ function seriesLd(C, base) {
   }));
 }
 
-function weeklyHtml(o, X) {
+function weeklyHtml(o, X, base) {
   if (!(o.weekly || []).length) return '';
-  return `<h2>${esc(X.t('Every week'))}</h2><ul class="weekly">${o.weekly.map((w) => `<li><b>${esc(w.day)}</b><span>${w.link ? `<a href="${esc(w.link)}">${esc(w.name)}</a>` : esc(w.name)}<br><span class="muted">${esc(w.time)}</span></span></li>`).join('')}</ul>`;
+  return `<h2>${esc(X.t('Every week'))}</h2><ul class="weekly">${o.weekly.map((w) => `<li><b>${esc(w.day)}</b><span>${w.link ? `<a href="${esc(w.link)}">${esc(w.name)}</a>` : esc(w.name)}<br><span class="muted">${esc(w.time)}${w.place ? ' · ' + esc(w.place) : ''}</span>${w.byDay && w.startTime ? weeklyMenu(X, base, w) : ''}</span></li>`).join('')}</ul>`;
 }
 
 function contactBlock(C, X) {
@@ -283,7 +290,9 @@ ${o.email ? `<p>${esc(t('Email'))}: <a href="mailto:${esc(o.email)}">${esc(o.ema
   <p class="muted">${esc(t('Private and confidential: only the Rabbi reads it.'))}</p>
   <label>${esc(t('Subject'))} <input name="title" maxlength="120" required value="${esc(String((X.req && X.req.query && X.req.query.about) || ''))}"></label>
   <label>${esc(t('Your message'))} <textarea name="body" rows="6" maxlength="2000" required></textarea></label>
-  <div class="fields"><label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email" required></label><label>${esc(t('Phone (optional)'))} <input name="phone" type="tel" autocomplete="tel" data-extra="Phone"></label></div>
+  <label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label>
+  <p class="muted small">${esc(t('So the Rabbi can answer you directly, please leave an email or a phone number (one is enough).'))}</p>
+  <div class="fields"><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email"></label><label>${esc(t('Your phone'))} <input name="phone" type="tel" autocomplete="tel" data-extra="Phone"></label></div>
   <button class="btn gold" type="submit">${esc(t('Send'))}</button><p class="msg" hidden></p>
 </form>`;
 }

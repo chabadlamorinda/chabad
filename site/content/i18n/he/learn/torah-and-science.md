@@ -2,7 +2,7 @@
 title: תורה ומדע: האם אדם חושב יכול להאמין?
 description: איך היהדות ותורת חב״ד רואות מדע ואמונה, גיל היקום והאבולוציה, ולמה אין סתירה אמיתית בין אמת לאמת.
 category: Jewish ideas
-related: belief-in-g-d, free-will, miracles-jewish-view, hashgacha-pratit, purpose-of-life
+related: belief-in-g-d, adam-and-eve, free-will, miracles-jewish-view, hashgacha-pratit, purpose-of-life
 local: שאלות על אמונה ומדע מתקבלות בברכה בחב״ד למורינדה. דברו עם הרב ישראל לבקובסקי, 925-384-7242, או בואו לשיעור בלאפייט.
 ---
 יהודים חושבים רבים נושאים דאגה שקטה: "אני אוהב להיות יהודי, אבל אני גם מאמין במדע. האם באמת אפשר להחזיק בשניהם?" תשובת היהדות היא כן חם. אותו ה׳ שנתן את התורה ברא את העולם שהמדע חוקר. אמת אינה יכולה לסתור אמת.

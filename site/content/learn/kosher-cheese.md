@@ -2,7 +2,7 @@
 title: Is Cheese Kosher? Rennet, Supervision and Chalav Yisrael
 description: Is cheese kosher? Only with reliable kosher certification, because of rennet and other ingredients. See how to read labels and ask Chabad of Lamorinda.
 category: Kosher
-related: pareve, chalav-yisrael, meat-and-milk, kosher-symbols, kosher-certification
+related: pareve, hidden-kosher-ingredients, chalav-yisrael, meat-and-milk, kosher-symbols, kosher-certification
 local: Not sure if your cheese is kosher? Call Rabbi Labkowski at 925-384-7242. Families in Lafayette, Moraga and Orinda are welcome to ask.
 ---
 Cheese is kosher only when it carries reliable kosher certification (a hechsher). Milk from a kosher animal is kosher, but cheese is made with added ingredients, such as rennet, that may not be, so Jewish law asks that a Jewish supervisor oversee its production.
@@ -11,7 +11,7 @@ Cheese is kosher only when it carries reliable kosher certification (a hechsher)
 
 Milk, butter and cream are simple. Cheese is different, because it is made by curdling milk with an enzyme called rennet, and then adding cultures and other ingredients. Traditional rennet comes from the stomach lining of a calf, and that is where the problem lies: it may come from an animal that was not slaughtered according to Jewish law. A kosher cheese uses kosher rennet, either from a properly slaughtered calf or produced from microbes.
 
-Because it is hard to know what went into a cheese just by reading the package, Jewish law relies on a supervisor, a **mashgiach** (מַשְׁגִּיחַ), who watches over the process. Chabad.org teaches that only cheese with reliable kosher certification should be eaten. See [kosher symbols](/learn/kosher-symbols) to learn how to recognize one.
+Because it is hard to know what went into a cheese just by reading the package, Jewish law relies on a supervisor, a **mashgiach** (מַשְׁגִּיחַ), who watches over the process. Only cheese with reliable kosher certification should be eaten. See [kosher symbols](/learn/kosher-symbols) to learn how to recognize one.
 
 ## What about "vegetarian" cheese?
 

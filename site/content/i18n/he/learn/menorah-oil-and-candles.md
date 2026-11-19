@@ -2,14 +2,14 @@
 title: שמן או נרות? איך בוחרים ומכינים את חנוכיית החנוכה
 description: שמן או נרות לחנוכייה? שמן זית, פתילות, כמה זמן הנרות בוערים ונרות ארוכים יותר בערב שבת, עם עזרה מלפאייט.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-on-shabbat, chanukah-foods, hosting-a-chanukah-party, chanukah-for-kids
+related: chanukah-menorah, getting-ready-for-chanukah, olive-oil-in-jewish-tradition, leftover-chanukah-oil-and-wicks, what-if-chanukah-candles-go-out, what-is-the-shamash, when-to-light-the-menorah, menorah-at-home-in-lamorinda, chanukah-on-shabbat, chanukah-foods, hosting-a-chanukah-party, chanukah-for-kids
 local: לא בטוחים מה לקנות? התקשרו לרב ישראל לבקובסקי, 925-384-7242, ושמעו איך משיגים חנוכייה ונרות בלפאייט, מוראגה ואורינדה, והצטרפו להדלקה הקהילתית (/events).
 ---
 אפשר להדליק את החנוכייה בשמן זית או בנרות שעווה, אבל מנהג חב"ד מעדיף שמן זית, כי במנורת המקדש הדליקו שמן זית. בכל מקרה, צריך שיהיה די דלק כדי שהאור יבער לפחות חצי שעה אחרי צאת הכוכבים.
 
 ## שמן או נרות: מה עדיף?
 
-שניהם כשרים, ומי שמדליק נרות קיים את המצווה במלואה. לפי Chabad.org, שמן זית עדיף בבית כי הוא מזכיר את הנס במקדש, ובבתי כנסת רבים נהוג להדליק נרות. נרות קטנים בכוסית מתאימים גם הם כשאין ברירה.
+שניהם כשרים, ומי שמדליק נרות קיים את המצווה במלואה. שמן זית עדיף בבית כי הוא מזכיר את הנס במקדש, ובבתי כנסת רבים נהוג להדליק נרות. נרות קטנים בכוסית מתאימים גם הם כשאין ברירה.
 
 אם אתם מדליקים בפעם הראשונה, נרות הם התחלה קלה. משפחות רבות בלפאייט, מוראגה ואורינדה מתחילות בנרות ועוברות לשמן כשהילדים גדלים. ראו [איך מדליקים חנוכייה](/learn/chanukah-menorah) לברכות ולסדר.
 

@@ -8,6 +8,8 @@ related: learn/jewish-funeral, end-of-life, someone-passed-away, learn/unveiling
 ---
 Planning a Jewish funeral in advance is one of the kindest things you can do for your family. It spares them hard decisions at a painful time, and it makes sure your wishes and Jewish tradition are honored. Rabbi Yisroel Labkowski is glad to sit with you, privately and with no pressure, to explain what is involved and help you plan. Call **925-384-7242** to set up a time.
 
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. If cost is a worry, please call Rabbi Yisroel Labkowski at 925-384-7242.**
+
 If a loved one has just passed away, please see [When a Loved One Passes Away](/help/someone-passed-away) and call the Rabbi now.
 
 ## Why plan ahead
@@ -20,7 +22,7 @@ If a loved one has just passed away, please see [When a Loved One Passes Away](/
 
 1. **Talk with the Rabbi.** He will explain the Jewish way of burial and answer your questions.
 2. **Choose a Jewish cemetery plot.** A Jewish burial takes place in a Jewish cemetery or a Jewish section of a cemetery. The Rabbi can help you understand your options in the area.
-3. **Write down your wishes.** Include your Hebrew name and your father's and mother's Hebrew names, the people to call, and a request that the Rabbi and the Chevra Kadisha be contacted first.
+3. **Write down your wishes.** Include your Hebrew name and your father's and mother's Hebrew names, the people to call, and a request that the Rabbi be called first, before the burial society or a funeral home.
 4. **Tell your family.** Share your plans and keep a copy with your important papers.
 5. **Keep our number handy.** Make sure your family knows to call 925-384-7242 first.
 

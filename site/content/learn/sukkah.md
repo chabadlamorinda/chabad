@@ -2,7 +2,7 @@
 title: How to Build a Sukkah: Rules, Size and the Blessing
 description: What a sukkah is, how to build a kosher sukkah step by step, what to use for the roof, the blessing, and how to eat and live in it on Sukkot.
 category: Shabbat & holidays
-related: four-kinds, shemini-atzeret, sukkot-for-beginners, sukkot-with-kids, hoshana-rabbah, shabbat-meals, hachnasat-orchim
+related: four-kinds, building-a-sukkah-in-lamorinda, break-fast-after-yom-kippur, shemini-atzeret, sukkot-for-beginners, sukkot-with-kids, hoshana-rabbah, shabbat-meals, hachnasat-orchim
 local: Need help building a sukkah or a sukkah to eat in? Call 925-384-7242 and see our Sukkot events at chabadoflamorinda.com/holidays/sukkot.
 ---
 A sukkah is a temporary hut with a roof of branches or other plant material, where Jews eat their meals during the seven days of Sukkot. It recalls the clouds of glory that protected our ancestors in the desert, and how G-d still shelters us today.
@@ -28,7 +28,7 @@ The most important part of a sukkah is the roof, called schach. It must be made 
 5. **Put on the schach.** Place it after the walls are up. Use branches, bamboo poles, or schach mats made for this purpose. Do not use anything that was processed into a utensil, food, or a material that can become impure, such as metal, plastic or fabric.
 6. **Make it shady.** The schach must give more shade than sun inside, but ideally you can still see some stars through it at night.
 
-Decorating the sukkah with fruit, pictures and lights is a beautiful custom.
+Many communities decorate the sukkah with fruit, pictures and lights. Chabad custom is not to decorate the sukkah, but to make it beautiful with good materials and plenty of schach.
 
 ## The blessing
 

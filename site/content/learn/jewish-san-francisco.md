@@ -1,7 +1,7 @@
 ---
 title: Jewish San Francisco: A Guide for Visitors and Newcomers
 description: Visiting or moving to the Bay Area? A warm guide to Jewish San Francisco: historic congregations, museums and the Magnes in Berkeley.
-category: Jewish ideas
+category: Lamorinda
 related: jewish-east-bay, jewish-bay-area-history, chabad-in-the-bay-area, visiting-lamorinda
 local: Visiting from the city or heading our way? Call 925-384-7242 and we will welcome you for Shabbat.
 ---

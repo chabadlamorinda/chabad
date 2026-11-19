@@ -2,7 +2,7 @@
 title: Being a Good Neighbor: Jewish Wisdom for Living Side by Side
 description: Jewish teachings on being a good neighbor: kindness, noise and boundaries, welcoming new neighbors, helping in hard times, and keeping the peace.
 category: Jewish ideas
-related: chesed, neighbor-disputes, hachnasat-orchim, kiddush-hashem
+related: chesed, chanukah-food-gifts-for-neighbors, neighbor-disputes, hachnasat-orchim, kiddush-hashem
 local: New to the neighborhood in Lafayette, Moraga or Orinda? Chabad of Lamorinda would love to welcome you: 925-384-7242.
 ---
 In Pirkei Avot, Rabban Yochanan ben Zakkai asked his students to find the best path in life. One said "a good friend," another "a good neighbor." A good neighbor makes daily life sweeter, and being one is a mitzvah we can practice every day, right outside our door.

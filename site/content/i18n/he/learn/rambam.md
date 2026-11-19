@@ -2,7 +2,7 @@
 title: לימוד רמב״ם יומי: לימוד משנה תורה
 description: מהו ספר משנה תורה לרמב״ם, למה הרבי יזם לימוד רמב״ם יומי, שלושת מסלולי הלימוד, ואיך מצטרפים למחזור.
 category: Prayer & Torah
-related: maimonides, daily-torah-study, 613-mitzvot, the-rebbe
+related: maimonides, ramban, daily-torah-study, 613-mitzvot, the-rebbe
 local: רוצים עזרה בהתחלת לימוד רמב״ם יומי? הצטרפו לשיעור ב-chabadoflamorinda.com/programs/adult-education או התקשרו 925-384-7242.
 ---
 לימוד רמב״ם יומי הוא מחזור לימוד עולמי שבו יהודים לומדים את ספר משנה תורה לרמב״ם, קודקס הלכה שלם, לפי לוח יומי קבוע. הרבי מליובאוויטש יזם אותו בשנת 1984, כדי שיהודים בכל מקום יוכלו ללמוד יחד את כל הלכות התורה.

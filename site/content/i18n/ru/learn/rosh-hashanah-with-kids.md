@@ -2,7 +2,7 @@
 title: Рош а-Шана с детьми: яблоки, мед и шофар
 description: Рош а-Шана для детей: Новый год простыми словами, шофар, яблоко в меду, круглая хала, Ташлих, открытки и одно доброе дело.
 category: Shabbat & holidays
-related: shofar, rosh-hashanah-simanim, tashlich, challah, holidays-with-toddlers
+related: shofar, yom-kippur-with-kids, rosh-hashanah-simanim, tashlich, challah, holidays-with-toddlers
 local: Хабад Ламоринды в Лафайетте празднует Рош а-Шана с семьями Лафайетта, Мораги и Оринды, а еврейская школа Ламоринды занимается по воскресеньям с 10:00 до 12:00 для детей от 3 до 13 лет. Даты и мероприятия этого года: chabadoflamorinda.com/holidays/rosh-hashanah или 925-384-7242.
 ---
 Рош а-Шана - день рождения мира и начало еврейского Нового года. Для детей он может быть сладким во всех смыслах: яблоко с медом, звук шофара и новое начало.

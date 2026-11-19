@@ -41,6 +41,7 @@
     }
   ],
   "legal": "A 501(c)(3) nonprofit, tax ID 47-4642750.",
+  "signature": "Rabbi Israel and Tzipora Labkowski",
   "donateUrl": "/donate",
   "social": {
     "facebook": "https://www.facebook.com/chabadoflamorinda"
@@ -52,7 +53,8 @@
   "services": [
     {
       "name": "Shacharit (morning prayers)",
-      "time": "Sunday 8:00 AM; Monday to Friday 6:30 AM"
+      "time": "Sunday 8:00 AM; Monday to Friday 6:30 AM",
+      "weekday": true
     },
     {
       "name": "Kabbalat Shabbat",
@@ -100,7 +102,8 @@
       "link": "/programs/adult-education",
       "byDay": "Wednesday",
       "startTime": "13:00",
-      "endTime": "14:00"
+      "endTime": "14:00",
+      "place": "At the Rabbi's home in Lafayette. Call 925-384-7242 for the address."
     },
     {
       "day": "Friday",
@@ -108,7 +111,8 @@
       "name": "Kabbalat Shabbat",
       "link": "/shabbat",
       "byDay": "Friday",
-      "startTime": "17:45"
+      "startTime": "17:45",
+      "seasonal": true
     },
     {
       "day": "Saturday",

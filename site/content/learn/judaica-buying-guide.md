@@ -2,7 +2,7 @@
 title: Judaica Buying Guide: Essential Jewish Items for Your Home
 description: The Jewish items every home can use, from Shabbat candlesticks to a Kiddush cup, menorah and mezuzahs, and what to look for when you buy them.
 category: Jewish home
-related: setting-up-a-jewish-home, jewish-gift-ideas, choosing-a-mezuzah, jewish-home-library
+related: setting-up-a-jewish-home, shabbat-essentials-for-your-home, choosing-a-kosher-menorah, jewish-gift-ideas, choosing-a-mezuzah, jewish-home-library
 local: Setting up a Jewish home in Lafayette, Moraga or Orinda? Rabbi Yisroel Labkowski is glad to help you choose what you need: 925-384-7242.
 ---
 A Jewish home is built from mitzvahs, not from objects. Still, the right items make mitzvahs easier and more beautiful, and many become family heirlooms. Here are the essentials, and what matters when you buy them.

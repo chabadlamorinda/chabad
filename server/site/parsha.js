@@ -4,7 +4,10 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const { esc } = require('./md.js');
+const { esc, md: md0, askRabbi, plain } = require('./md.js');
+const md = (src) => askRabbi(md0(src));
+const faqHtml = (items) => (items || []).map((f) => `<details class="qa"><summary>${esc(f.q)}</summary><div>${md(f.a)}</div></details>`).join('');
+const faqLd = (items) => (items && items.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: plain(f.a) } })) }] : []);
 const Z = require('./zmanim.js');
 const { guideCards, guidesForDays } = require('./links.js');
 // Guides about the Torah reading, under every Torah portion.
@@ -32,12 +35,23 @@ function portionsOf(title) {
   return out;
 }
 
+// The rich part of a portion's page (site/content/parsha/<slug>.md, translated in i18n/he|ru/parsha): the Rebbe's teaching,
+// a story, ideas for the Shabbat table and an essay, with a small menu to jump between them.
+function richHtml(X, rich) {
+  if (!rich) return '';
+  const html = md(rich.body), hs = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)];
+  return `${hs.length > 1 ? `<p class="chips parsha-nav">${hs.map(([, id, name]) => `<a class="chip" href="#${id}">${name}</a>`).join('')}</p>` : ''}<div class="parsha-rich">${html}</div>${rich.faq && rich.faq.length ? `<h2>${esc(X.t('Common questions'))}</h2>${faqHtml(rich.faq)}` : ''}`;
+}
+// The first paragraph under the first heading: a teaser for the week's page.
+const teaser = (rich) => { const m = /<h2[^>]*>[\s\S]*?<\/h2>\s*<p>([\s\S]*?)<\/p>/.exec(md(rich.body)); return m ? m[1] : ''; };
 function mountParsha(r, { render, wrap, ctxOf, base }) {
-  const block = (X, p) => {
-    const L = p[X.lang] || p.en, t = X.t;
-    return `<section class="card parsha"><p class="eyebrow">${esc(t(p.book))} · <span dir="ltr">${esc(p.verses)}</span></p>
-<h2>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}${X.lang === 'he' ? '' : ` <span class="he" lang="he">${esc(p.hebrew)}</span>`}</h2>
-<p>${esc(L.summary)}</p><h3>${esc(t('A lesson for today'))}</h3><p>${esc(L.lesson)}</p></section>`;
+  // The summary in short paragraphs of two or three sentences, so it is easy to read on a phone.
+  const paras = (text) => { const ss = String(text).match(/[^.!?]+[.!?]+(\s+|$)|[^.!?]+$/g) || [String(text)], out = []; for (let i = 0; i < ss.length; i += 3) out.push(ss.slice(i, i + 3).join('').trim()); return out.map((x) => `<p>${esc(x)}</p>`).join(''); };
+  const block = (X, p, detail = false) => {
+    const L = p[X.lang] || p.en, t = X.t, ref = p.verses.startsWith(p.book) ? p.verses.slice(p.book.length).trim() : p.verses;
+    return `<section class="card parsha"><p class="eyebrow">${esc(t(p.book))} · <span dir="ltr">${esc(ref)}</span></p>
+${detail ? '' : `<h2>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}${X.lang === 'he' ? '' : ` <span class="he" lang="he">${esc(p.hebrew)}</span>`}</h2>`}
+${paras(L.summary)}<h3>${esc(t('A lesson for today'))}</h3><p>${esc(L.lesson)}</p></section>`;
   };
   r.get('/parsha', wrap(async (req, res) => {
     const X = ctxOf(req), t = X.t, sh = await Z.thisShabbat(), ps = sh.parsha ? portionsOf(sh.parsha.title) : [];
@@ -45,7 +59,7 @@ function mountParsha(r, { render, wrap, ctxOf, base }) {
     const guides = [...new Set([...torahGuides(X.C), ...guidesForDays(X.C, await Z.events(today, end))])].slice(0, 6);
     const body = `<section class="wrap sec narrow"><h1>${esc(t("This week's Torah portion"))}</h1>
 ${sh.parsha ? `<p class="lead-d">${esc(X.hc(sh.parsha))} · ${esc(X.longDate(sh.parsha.date))}</p>` : `<p class="lead-d">${esc(t('This Shabbat is a holiday, with a special Torah reading.'))}</p>`}
-${ps.map((p) => block(X, p)).join('')}
+${ps.map((p) => { const rich = (X.C.parsha || []).find((x) => x.slug === slugOf(p.name)), tz = rich ? teaser(rich) : ''; return block(X, p) + (tz ? `<section class="card parsha-teach"><p class="hand">${esc(t("From the Rebbe's teaching"))}</p><p>${tz}</p><p class="btns"><a class="btn gold" href="/parsha/${slugOf(p.name)}">${esc(t('The Rebbe\'s teaching, a story, ideas and an essay'))}</a></p></section>` : ''); }).join('')}
 ${sh.candles ? `<p class="card">${esc(t('Candle lighting, {date}', { date: X.shortDate(sh.candles.date) }))}: <strong>${esc(X.tm(sh.candles))}</strong>${sh.havdalah ? ` · ${esc(t('Shabbat ends {time}, {date}', { time: X.tm(sh.havdalah), date: X.shortDate(sh.havdalah.date) }))}` : ''}</p>` : ''}
 <p class="btns"><a class="btn gold" href="/shabbat">${esc(t('Shabbat services and Kiddush'))}</a><a class="btn ghost" href="/programs/adult-education">${esc(t('Torah classes'))}</a><a class="btn ghost" href="/subscribe">${esc(t('Get it by email every week'))}</a></p>
 ${guideCards(X, guides, t('Learn more'))}
@@ -56,13 +70,15 @@ ${guideCards(X, guides, t('Learn more'))}
     const X = ctxOf(req), t = X.t, p = all().find((x) => slugOf(x.name) === req.params.slug);
     if (!p) return next();
     const i = all().indexOf(p), prev = all()[i - 1], nxt = all()[i + 1];
+    const rich = (X.C.parsha || []).find((x) => x.slug === req.params.slug);
     const body = `<article class="wrap sec narrow"><p class="crumbs"><a href="/parsha">${esc(t("This week's Torah portion"))}</a> ›</p>
-<h1>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}</h1>${block(X, p)}
+<h1>${esc(X.lang === 'he' ? 'פרשת ' + p.hebrew : t('Parashat ' + p.name))}${X.lang === 'he' ? '' : ` <span class="he" lang="he">${esc(p.hebrew)}</span>`}</h1>${block(X, p, true)}
+${richHtml(X, rich)}
 ${guideCards(X, torahGuides(X.C), t('Learn more'))}
 <p class="btns">${prev ? `<a class="btn ghost" href="/parsha/${slugOf(prev.name)}">← ${esc(X.lang === 'he' ? prev.hebrew : prev.name)}</a>` : ''}${nxt ? `<a class="btn ghost" href="/parsha/${slugOf(nxt.name)}">${esc(X.lang === 'he' ? nxt.hebrew : nxt.name)} →</a>` : ''}</p></article>`;
     const L = p[X.lang] || p.en;
-    await render(res, { path: '/parsha/' + slugOf(p.name), title: t('Parashat {name}: summary and lesson', { name: X.lang === 'he' ? p.hebrew : p.name }), description: L.summary.slice(0, 155), body,
-      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: 'Parashat ' + p.name, inLanguage: X.lang, articleBody: L.summary + ' ' + L.lesson, publisher: { '@id': base + '/#org' } }] });
+    await render(res, { path: '/parsha/' + slugOf(p.name), title: rich && rich.title ? rich.title : t('Parashat {name}: summary and lesson', { name: X.lang === 'he' ? p.hebrew : p.name }), description: rich && rich.description ? rich.description : L.summary.slice(0, 155), body,
+      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: 'Parashat ' + p.name, description: (rich && rich.description) || L.lesson.slice(0, 200), image: base + '/media/photos/torah-scroll.jpg', author: { '@id': base + '/#org' }, inLanguage: X.lang, articleBody: L.summary + ' ' + L.lesson + (rich ? ' ' + plain(rich.body).slice(0, 4000) : ''), publisher: { '@id': base + '/#org' }, contentLocation: ['Lafayette', 'Moraga', 'Orinda'].map((n) => ({ '@type': 'City', name: n + ', CA' })) }, ...faqLd(rich && rich.faq)] });
   }));
 }
 // Daily study: today's Chitas (Chumash, Tehillim, Tanya), Rambam and more, with links to the text.

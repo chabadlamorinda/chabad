@@ -2,7 +2,7 @@
 title: Traveling on Shabbat: How to Keep Shabbat Away from Home
 description: Away for Shabbat? Plan flights to arrive early, pack candles and food, handle hotels, and find a Chabad center wherever you go.
 category: Shabbat & holidays
-related: kosher-when-traveling, shabbat-candles, tefilat-haderech, shabbat-practical-questions
+related: kosher-when-traveling, shliach-mitzvah-money-for-a-trip, techum-shabbat, shabbat-for-lamorinda-commuters, shabbat-in-a-hotel, shabbat-candles, tefilat-haderech, shabbat-practical-questions
 local: Traveling from Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski before your trip with any Shabbat question, 925-384-7242.
 ---
 Business trips, vacations, college visits and family simchas often land on a weekend. With some planning, Shabbat on the road can be one of the most memorable Shabbats of the year.
@@ -17,7 +17,7 @@ Business trips, vacations, college visits and family simchas often land on a wee
 
 ## Find Chabad wherever you go
 
-There are Chabad centers in cities, college towns and vacation spots around the world. Most welcome travelers for Shabbat services and meals, often with no charge, and many can help with kosher food. Search Chabad.org for the nearest center and contact them a few days ahead. Rabbi Labkowski is also glad to help you connect.
+There are Chabad centers in cities, college towns and vacation spots around the world. Most welcome travelers for Shabbat services and meals, often with no charge, and many can help with kosher food. Search online for the nearest Chabad center and contact them a few days ahead. Rabbi Labkowski is also glad to help you connect.
 
 ## What to pack
 
@@ -27,7 +27,7 @@ There are Chabad centers in cities, college towns and vacation spots around the 
 - **Food:** sealed kosher meals or snacks that need no cooking. See [Kosher When Traveling](/learn/kosher-when-traveling).
 - **A siddur** and a printed copy of the Shabbat times.
 
-A man traveling alone lights Shabbat candles himself, just as a woman would at home.
+A man traveling alone may light Shabbat candles himself, as a woman would at home; ask the Rabbi what applies to you.
 
 ## Hotels
 

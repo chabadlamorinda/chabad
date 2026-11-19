@@ -2,7 +2,7 @@
 title: How to Give Criticism Kindly: The Jewish Way
 description: The mitzvah of tochacha, caring correction: when to speak up, how to say it with love so it can be heard, and when it is better to stay silent.
 category: Jewish ideas
-related: lashon-hara, shalom-bayit, honesty-and-truth, humility
+related: lashon-hara, hurtful-words, shalom-bayit, honesty-and-truth, humility
 local: A hard conversation coming up? Rabbi Yisroel and Rebbetzin Tzipora Labkowski are glad to help families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Sometimes we see a friend, a child, a spouse or a colleague doing something hurtful or wrong. Should we say something? The Torah says yes, and also teaches how. "You shall surely rebuke your fellow," says the Torah, and in the very next breath, "you shall love your fellow as yourself." Correction in Judaism, called tochacha, is meant to be an act of love.

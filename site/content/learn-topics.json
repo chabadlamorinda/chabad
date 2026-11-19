@@ -1,0 +1,5121 @@
+{
+ "categories": [
+  {
+   "name": "Shabbat & holidays",
+   "he": "שבת וחגים",
+   "ru": "Шаббат и праздники",
+   "subs": [
+    {
+     "id": "shabbat-basics",
+     "en": "Shabbat: getting started",
+     "he": "שבת: צעדים ראשונים",
+     "ru": "Шаббат: первые шаги",
+     "desc": {
+      "en": "What Shabbat is, how to begin, candles, Friday night prayers and Havdalah.",
+      "he": "מהי שבת, איך מתחילים, הדלקת נרות, קבלת שבת והבדלה.",
+      "ru": "Что такое Шаббат, с чего начать, свечи, встреча Шаббата и Авдала."
+     }
+    },
+    {
+     "id": "shabbat-table",
+     "en": "The Shabbat table and meals",
+     "he": "שולחן השבת והסעודות",
+     "ru": "Субботний стол и трапезы",
+     "desc": {
+      "en": "Setting the table, Kiddush, challah, the three meals, menus, songs and guests.",
+      "he": "עריכת השולחן, קידוש, חלות, שלוש הסעודות, תפריטים, זמירות ואורחים.",
+      "ru": "Сервировка стола, кидуш, хала, три трапезы, меню, песни и гости."
+     }
+    },
+    {
+     "id": "shabbat-laws",
+     "en": "Shabbat rules, simply explained",
+     "he": "הלכות שבת בפשטות",
+     "ru": "Законы Шаббата простыми словами",
+     "desc": {
+      "en": "What counts as work on Shabbat: cooking, lights, carrying, muktzeh and walking limits.",
+      "he": "מה נחשב מלאכה בשבת: בישול, חשמל, טלטול, מוקצה ותחום שבת.",
+      "ru": "Что считается работой в Шаббат: готовка, свет, перенос вещей, мукце и границы ходьбы."
+     }
+    },
+    {
+     "id": "shabbat-real-life",
+     "en": "Shabbat with kids, work and travel",
+     "he": "שבת עם ילדים, בעבודה ובדרכים",
+     "ru": "Шаббат с детьми, на работе и в дороге",
+     "desc": {
+      "en": "Keeping Shabbat with little ones, a busy job, on the road, alone or in the hospital.",
+      "he": "שמירת שבת עם ילדים קטנים, עבודה עמוסה, בנסיעות, לבד או בבית החולים.",
+      "ru": "Шаббат с малышами, при занятой работе, в поездке, в одиночестве или в больнице."
+     }
+    },
+    {
+     "id": "yom-tov",
+     "en": "Every holiday: Yom Tov basics",
+     "he": "יום טוב: היסודות לכל חג",
+     "ru": "Йом-тов: основы для всех праздников",
+     "desc": {
+      "en": "Holiday candles, cooking on Yom Tov, greetings, and taking holidays off school and work.",
+      "he": "נרות חג, בישול ביום טוב, ברכות לחג, וחופש מבית הספר ומהעבודה.",
+      "ru": "Праздничные свечи, готовка в Йом-тов, поздравления и выходные в школе и на работе."
+     }
+    },
+    {
+     "id": "rosh-hashanah",
+     "en": "Elul and Rosh Hashanah",
+     "he": "אלול וראש השנה",
+     "ru": "Элуль и Рош а-Шана",
+     "desc": {
+      "en": "Preparing in Elul, the shofar, apples and honey, Tashlich and the Ten Days of Teshuvah.",
+      "he": "ההכנה בחודש אלול, השופר, תפוח בדבש, תשליך ועשרת ימי תשובה.",
+      "ru": "Подготовка в Элуль, шофар, яблоко с медом, Ташлих и Десять дней раскаяния."
+     }
+    },
+    {
+     "id": "yom-kippur",
+     "en": "Yom Kippur",
+     "he": "יום כיפור",
+     "ru": "Йом Кипур",
+     "desc": {
+      "en": "The Day of Atonement: the fast, Kol Nidre, Neilah, kapparot and the meal after.",
+      "he": "יום הכיפורים: הצום, כל נדרי, נעילה, כפרות וסעודת המפסקת.",
+      "ru": "Судный день: пост, Коль Нидрей, Неила, капарот и трапеза после поста."
+     }
+    },
+    {
+     "id": "sukkot",
+     "en": "Sukkot and Simchat Torah",
+     "he": "סוכות ושמחת תורה",
+     "ru": "Суккот и Симхат Тора",
+     "desc": {
+      "en": "The sukkah, the lulav and etrog, Hoshana Rabbah, Shemini Atzeret and dancing with the Torah.",
+      "he": "הסוכה, ארבעת המינים, הושענא רבה, שמיני עצרת והריקודים עם התורה.",
+      "ru": "Сукка, лулав и этрог, Ошана Раба, Шмини Ацерет и танцы с Торой."
+     }
+    },
+    {
+     "id": "chanukah-lighting",
+     "en": "Chanukah: lighting the menorah",
+     "he": "חנוכה: הדלקת החנוכייה",
+     "ru": "Ханука: зажигание ханукии",
+     "desc": {
+      "en": "How, when and where to light, the blessings, each night, and what to do if something goes wrong.",
+      "he": "איך, מתי ואיפה מדליקים, הברכות, כל לילה, ומה עושים כשמשהו משתבש.",
+      "ru": "Как, когда и где зажигать, благословения, каждый вечер и что делать, если что-то не так."
+     }
+    },
+    {
+     "id": "chanukah-everywhere",
+     "en": "Chanukah away from home",
+     "he": "חנוכה מחוץ לבית",
+     "ru": "Ханука вне дома",
+     "desc": {
+      "en": "Lighting at work, in a dorm, on the road, in the hospital or care home, and in the town square.",
+      "he": "הדלקה בעבודה, במעונות, בדרכים, בבית החולים או בדיור מוגן, ובכיכר העיר.",
+      "ru": "Зажигание на работе, в общежитии, в поездке, в больнице или доме престарелых и на площади."
+     }
+    },
+    {
+     "id": "chanukah-story",
+     "en": "The Chanukah story and its meaning",
+     "he": "סיפור חנוכה ומשמעותו",
+     "ru": "История Хануки и ее смысл",
+     "desc": {
+      "en": "The Maccabees, the miracle of the oil, the history behind it and what Chanukah teaches today.",
+      "he": "המכבים, נס פך השמן, ההיסטוריה שמאחוריו ומה חנוכה מלמדת אותנו היום.",
+      "ru": "Маккавеи, чудо с маслом, история праздника и чему Ханука учит сегодня."
+     }
+    },
+    {
+     "id": "chanukah-family",
+     "en": "Chanukah with family: kids, food and fun",
+     "he": "חנוכה במשפחה: ילדים, מאכלים והנאה",
+     "ru": "Ханука в семье: дети, еда и веселье",
+     "desc": {
+      "en": "Dreidel, gelt and gifts, crafts and stories for kids, latkes, doughnuts and a Chanukah party.",
+      "he": "סביבון, דמי חנוכה ומתנות, יצירות וסיפורים לילדים, לביבות, סופגניות ומסיבת חנוכה.",
+      "ru": "Дрейдл, ханукальные деньги и подарки, поделки и истории для детей, латкес, пончики и праздник."
+     }
+    },
+    {
+     "id": "purim",
+     "en": "Purim",
+     "he": "פורים",
+     "ru": "Пурим",
+     "desc": {
+      "en": "The Megillah, the four mitzvahs of Purim, costumes, hamantaschen and the special Shabbats of Adar.",
+      "he": "המגילה, ארבע מצוות הפורים, תחפושות, אוזני המן והשבתות המיוחדות של אדר.",
+      "ru": "Мегила, четыре заповеди Пурима, костюмы, оменташи и особые субботы месяца Адар."
+     }
+    },
+    {
+     "id": "passover",
+     "en": "Passover",
+     "he": "פסח",
+     "ru": "Песах",
+     "desc": {
+      "en": "Getting rid of chametz, matzah, the Seder step by step, the Haggadah and the last days.",
+      "he": "ביעור חמץ, מצה, ליל הסדר שלב אחר שלב, ההגדה ושביעי של פסח.",
+      "ru": "Избавление от хамеца, маца, Седер шаг за шагом, Агада и последние дни Песаха."
+     }
+    },
+    {
+     "id": "omer-shavuot",
+     "en": "The Omer, Lag BaOmer and Shavuot",
+     "he": "ספירת העומר, ל\"ג בעומר ושבועות",
+     "ru": "Омер, Лаг ба-Омер и Шавуот",
+     "desc": {
+      "en": "Counting the Omer, Pesach Sheni, Lag BaOmer bonfires, and Shavuot: the Ten Commandments.",
+      "he": "ספירת העומר, פסח שני, מדורות ל\"ג בעומר, ושבועות: עשרת הדיברות.",
+      "ru": "Счет Омера, Песах Шени, костры Лаг ба-Омер и Шавуот: Десять заповедей."
+     }
+    },
+    {
+     "id": "fasts-three-weeks",
+     "en": "Fast days, the Three Weeks and Tisha B'Av",
+     "he": "תעניות, בין המצרים ותשעה באב",
+     "ru": "Посты, Три недели и Девятое ава",
+     "desc": {
+      "en": "The Jewish fast days, the mourning of the Three Weeks, Tisha B'Av and the joy of Tu B'Av.",
+      "he": "התעניות, האבלות של בין המצרים, תשעה באב ושמחת ט\"ו באב.",
+      "ru": "Еврейские посты, траур Трех недель, Девятое ава и радость Ту бе-Ав."
+     }
+    },
+    {
+     "id": "jewish-calendar",
+     "en": "The Jewish calendar and months",
+     "he": "הלוח העברי והחודשים",
+     "ru": "Еврейский календарь и месяцы",
+     "desc": {
+      "en": "How the calendar works, Rosh Chodesh, each Hebrew month, Tu BiShvat and the Chabad days.",
+      "he": "איך הלוח העברי עובד, ראש חודש, כל חודש עברי, ט\"ו בשבט וימי חב\"ד.",
+      "ru": "Как устроен календарь, Рош Ходеш, каждый еврейский месяц, Ту би-Шват и дни Хабада."
+     }
+    }
+   ]
+  },
+  {
+   "name": "Prayer & Torah",
+   "he": "תפילה ותורה",
+   "ru": "Молитва и Тора",
+   "subs": [
+    {
+     "id": "prayer-first-steps",
+     "en": "Jewish prayer: first steps",
+     "he": "תפילה: צעדים ראשונים",
+     "ru": "Молитва: первые шаги",
+     "desc": {
+      "en": "How Jews pray, in any language, with focus, for yourself and for the people you love.",
+      "he": "איך מתפללים, בכל שפה, בכוונה, בשבילך ובשביל האנשים שאתה אוהב.",
+      "ru": "Как молятся евреи: на любом языке, с сосредоточенностью, за себя и за близких."
+     }
+    },
+    {
+     "id": "daily-prayers",
+     "en": "The daily prayers and the Shema",
+     "he": "תפילות היום וקריאת שמע",
+     "ru": "Ежедневные молитвы и Шма",
+     "desc": {
+      "en": "From Modeh Ani in the morning to the bedtime Shema: Shacharit, the Amidah, Mincha and Maariv.",
+      "he": "ממודה אני בבוקר ועד קריאת שמע שעל המיטה: שחרית, עמידה, מנחה וערבית.",
+      "ru": "От Моде ани утром до Шма перед сном: Шахарит, Амида, Минха и Маарив."
+     }
+    },
+    {
+     "id": "synagogue",
+     "en": "The synagogue and its services",
+     "he": "בית הכנסת והתפילות בו",
+     "ru": "Синагога и богослужения",
+     "desc": {
+      "en": "Your first visit, the siddur, the minyan, honors, and the prayers of Shabbat and holidays.",
+      "he": "הביקור הראשון, הסידור, המניין, הכיבודים ותפילות שבת וחג.",
+      "ru": "Первый визит, сидур, миньян, почести и молитвы Шаббата и праздников."
+     }
+    },
+    {
+     "id": "blessings",
+     "en": "Blessings (brachot)",
+     "he": "ברכות",
+     "ru": "Благословения (брахот)",
+     "desc": {
+      "en": "Which blessing to say on food, bread, nature, travel and good news, before and after.",
+      "he": "איזו ברכה לומר על מאכלים, לחם, תופעות טבע, דרך ובשורות טובות, לפני ואחרי.",
+      "ru": "Какое благословение говорить на еду, хлеб, явления природы, дорогу и добрые вести."
+     }
+    },
+    {
+     "id": "tehillim",
+     "en": "Tehillim (Psalms)",
+     "he": "תהילים",
+     "ru": "Теилим (Псалмы)",
+     "desc": {
+      "en": "Saying Psalms for comfort, healing and protection, and your own psalm for your age.",
+      "he": "אמירת תהילים לנחמה, לרפואה ולשמירה, והמזמור האישי שלך לפי גילך.",
+      "ru": "Псалмы для утешения, исцеления и защиты, и ваш личный псалом по возрасту."
+     }
+    },
+    {
+     "id": "tefillin-tallit",
+     "en": "Tefillin, tallit, tzitzit and kippah",
+     "he": "תפילין, טלית, ציצית וכיפה",
+     "ru": "Тфилин, талит, цицит и кипа",
+     "desc": {
+      "en": "What they are, how to put on tefillin, buying a kosher pair, and why men cover their heads.",
+      "he": "מה הם, איך מניחים תפילין, איך קונים זוג כשר, ולמה גברים מכסים את הראש.",
+      "ru": "Что это такое, как накладывать тфилин, как купить кошерные и зачем мужчины покрывают голову."
+     }
+    },
+    {
+     "id": "torah-and-parsha",
+     "en": "The Torah, the Tanach and the weekly parsha",
+     "he": "התורה, התנ\"ך ופרשת השבוע",
+     "ru": "Тора, Танах и недельная глава",
+     "desc": {
+      "en": "What the Torah is, the books of the Bible, the weekly reading and the Torah scroll.",
+      "he": "מהי התורה, ספרי התנ\"ך, קריאת התורה השבועית וספר התורה.",
+      "ru": "Что такое Тора, книги Танаха, еженедельное чтение и свиток Торы."
+     }
+    },
+    {
+     "id": "torah-learning",
+     "en": "Talmud and Torah learning",
+     "he": "תלמוד ולימוד תורה",
+     "ru": "Талмуд и изучение Торы",
+     "desc": {
+      "en": "How to start learning, the Oral Torah, Mishnah, Talmud, Jewish law and reading Hebrew.",
+      "he": "איך מתחילים ללמוד, התורה שבעל פה, משנה, תלמוד, הלכה וקריאה בעברית.",
+      "ru": "Как начать учиться, Устная Тора, Мишна, Талмуд, еврейский закон и чтение на иврите."
+     }
+    },
+    {
+     "id": "learning-tanya",
+     "en": "Learning Tanya",
+     "he": "לימוד תניא",
+     "ru": "Изучение Тании",
+     "desc": {
+      "en": "What the Tanya is and how to start: a learning plan, the daily cycle and its first chapter.",
+      "he": "מהו ספר התניא ואיך מתחילים: תוכנית לימוד, השיעור היומי והפרק הראשון.",
+      "ru": "Что такое Тания и с чего начать: план занятий, ежедневный цикл и первая глава."
+     }
+    },
+    {
+     "id": "patriarchs-and-moses",
+     "en": "From Adam to Moses: the first heroes",
+     "he": "מאדם ועד משה: הדמויות הראשונות",
+     "ru": "От Адама до Моше: первые герои",
+     "desc": {
+      "en": "Adam and Eve, Noah, the Patriarchs and Matriarchs, Joseph, the Twelve Tribes, Moses, Aaron and Miriam.",
+      "he": "אדם וחוה, נח, האבות והאמהות, יוסף, שנים עשר השבטים, משה, אהרן ומרים.",
+      "ru": "Адам и Ева, Ной, праотцы и праматери, Йосеф, двенадцать колен, Моше, Аарон и Мирьям."
+     }
+    },
+    {
+     "id": "judges-kings-prophets",
+     "en": "Judges, kings and prophets",
+     "he": "שופטים, מלכים ונביאים",
+     "ru": "Судьи, цари и пророки",
+     "desc": {
+      "en": "Deborah, Samson, Hannah and Samuel, Kings Saul, David and Solomon, Elijah, Isaiah and the prophets.",
+      "he": "דבורה, שמשון, חנה ושמואל, שאול, דוד ושלמה המלכים, אליהו, ישעיהו והנביאים.",
+      "ru": "Девора, Шимшон, Хана и Шмуэль, цари Шауль, Давид и Шломо, Элияху, Йешаяу и пророки."
+     }
+    },
+    {
+     "id": "sages",
+     "en": "Sages and great teachers",
+     "he": "חכמים ומורים גדולים",
+     "ru": "Мудрецы и великие учителя",
+     "desc": {
+      "en": "Rabbi Akiva, Rabbi Yochanan ben Zakkai, the Sanhedrin, Rashi, the Ramban and the Arizal.",
+      "he": "רבי עקיבא, רבן יוחנן בן זכאי, הסנהדרין, רש\"י, הרמב\"ן והאריז\"ל.",
+      "ru": "Рабби Акива, рабан Йоханан бен Закай, Синедрион, Раши, Рамбан и Ари."
+     }
+    }
+   ]
+  },
+  {
+   "name": "Life cycle",
+   "he": "מעגל החיים",
+   "ru": "Жизненный цикл",
+   "subs": [
+    {
+     "id": "pregnancy-and-baby",
+     "en": "Pregnancy, birth and a new baby",
+     "he": "הריון, לידה ותינוק חדש",
+     "ru": "Беременность, роды и новорожденный",
+     "desc": {
+      "en": "Jewish customs and prayers for pregnancy and birth, helping new parents, and adoption.",
+      "he": "מנהגים ותפילות להריון וללידה, עזרה להורים טריים, ואימוץ.",
+      "ru": "Еврейские обычаи и молитвы при беременности и родах, помощь новым родителям, усыновление."
+     }
+    },
+    {
+     "id": "bris-and-baby-naming",
+     "en": "Bris, baby naming and upsherin",
+     "he": "ברית, קריאת שם ואפשערין",
+     "ru": "Брит, имя для младенца и опшерин",
+     "desc": {
+      "en": "The bris on the eighth day, naming a baby girl, pidyon haben and the first haircut at three.",
+      "he": "ברית המילה ביום השמיני, קריאת שם לבת, פדיון הבן והתספורת הראשונה בגיל שלוש.",
+      "ru": "Брит-мила на восьмой день, имя для девочки, пидьон а-бен и первая стрижка в три года."
+     }
+    },
+    {
+     "id": "hebrew-names-and-birthdays",
+     "en": "Hebrew names and birthdays",
+     "he": "שמות עבריים וימי הולדת",
+     "ru": "Еврейские имена и дни рождения",
+     "desc": {
+      "en": "Choosing a Hebrew name, naming after a relative, and finding and celebrating your Hebrew birthday.",
+      "he": "בחירת שם עברי, קריאת שם על שם קרוב, ומציאת יום ההולדת העברי וחגיגתו.",
+      "ru": "Как выбрать еврейское имя, назвать в честь родственника, найти и отметить еврейский день рождения."
+     }
+    },
+    {
+     "id": "bar-bat-mitzvah",
+     "en": "Bar and Bat Mitzvah",
+     "he": "בר ובת מצווה",
+     "ru": "Бар- и бат-мицва",
+     "desc": {
+      "en": "What it means, finding the date and Torah portion, preparing, celebrating and what comes after.",
+      "he": "מה המשמעות, מציאת התאריך והפרשה, ההכנה, החגיגה ומה קורה אחר כך.",
+      "ru": "Что это значит, как найти дату и главу Торы, подготовка, праздник и что дальше."
+     }
+    },
+    {
+     "id": "children-and-education",
+     "en": "Children and Jewish education",
+     "he": "ילדים וחינוך יהודי",
+     "ru": "Дети и еврейское образование",
+     "desc": {
+      "en": "First mitzvot, learning at home, the Aleph-Bet, Hebrew school, afterschool and camp.",
+      "he": "מצוות ראשונות, לימוד בבית, האלף-בית, תלמוד תורה, צהרונים וקייטנות.",
+      "ru": "Первые заповеди, учеба дома, алеф-бет, еврейская школа, продленка и лагерь."
+     }
+    },
+    {
+     "id": "family-challenges",
+     "en": "Family life: hard moments",
+     "he": "חיי משפחה: רגעים קשים",
+     "ru": "Семья: трудные моменты",
+     "desc": {
+      "en": "Discipline with love, sibling fights, bullying, divorce, blended families and difficult parents.",
+      "he": "חינוך באהבה, מריבות בין אחים, בריונות, גירושין, משפחות מורכבות והורים קשים.",
+      "ru": "Воспитание с любовью, ссоры детей, травля, развод, смешанные семьи и трудные родители."
+     }
+    },
+    {
+     "id": "teens-and-college",
+     "en": "Teens and college",
+     "he": "בני נוער ולימודים גבוהים",
+     "ru": "Подростки и студенты",
+     "desc": {
+      "en": "Raising teens, volunteering, graduation, a gap year in Israel and Jewish life on campus.",
+      "he": "גידול בני נוער, התנדבות, סיום לימודים, שנת שירות בישראל וחיים יהודיים בקמפוס.",
+      "ru": "Воспитание подростков, волонтерство, выпускной, год в Израиле и еврейская жизнь в кампусе."
+     }
+    },
+    {
+     "id": "dating-and-engagement",
+     "en": "Dating and engagement",
+     "he": "שידוכים ואירוסין",
+     "ru": "Знакомства и помолвка",
+     "desc": {
+      "en": "Finding your match, bashert, being single, the engagement, and classes for bride and groom.",
+      "he": "מציאת בן הזוג, בשערט, החיים כרווק, האירוסין, והדרכת חתנים וכלות.",
+      "ru": "Поиск пары, башерт, жизнь до брака, помолвка и занятия для жениха и невесты."
+     }
+    },
+    {
+     "id": "jewish-wedding",
+     "en": "The Jewish wedding",
+     "he": "החתונה היהודית",
+     "ru": "Еврейская свадьба",
+     "desc": {
+      "en": "Planning, the ketubah, the chuppah, the ring, the customs, the guests and the Sheva Brachot.",
+      "he": "התכנון, הכתובה, החופה, הטבעת, המנהגים, האורחים ושבע הברכות.",
+      "ru": "Подготовка, ктуба, хупа, кольцо, обычаи, гости и Шева брахот."
+     }
+    },
+    {
+     "id": "married-life",
+     "en": "Married life",
+     "he": "חיי הנישואין",
+     "ru": "Семейная жизнь",
+     "desc": {
+      "en": "The first year, family purity and the mikvah, making time for each other, and second marriages.",
+      "he": "השנה הראשונה, טהרת המשפחה והמקווה, זמן זוגי, וגם נישואין שניים.",
+      "ru": "Первый год, чистота семьи и миква, время друг для друга и повторный брак."
+     }
+    },
+    {
+     "id": "starting-as-an-adult",
+     "en": "Starting Jewish life as an adult",
+     "he": "להתחיל חיים יהודיים בבגרות",
+     "ru": "Начать еврейскую жизнь взрослым",
+     "desc": {
+      "en": "A Hebrew name, a bris or a bar mitzvah later in life, proving Jewish roots and conversion.",
+      "he": "שם עברי, ברית או בר מצווה בגיל מבוגר, הוכחת יהדות וגיור.",
+      "ru": "Еврейское имя, брит или бар-мицва во взрослом возрасте, подтверждение корней и гиюр."
+     }
+    },
+    {
+     "id": "aging-and-caregiving",
+     "en": "Older age, illness and caregiving",
+     "he": "זקנה, מחלה וטיפול ביקירים",
+     "ru": "Старость, болезнь и уход за близкими",
+     "desc": {
+      "en": "Caring for a sick or aging parent, dementia, assisted living, being homebound and chronic illness.",
+      "he": "טיפול בהורה חולה או מזדקן, דמנציה, דיור מוגן, ריתוק לבית ומחלה כרונית.",
+      "ru": "Уход за больным или пожилым родителем, деменция, дом престарелых, жизнь дома и хроническая болезнь."
+     }
+    },
+    {
+     "id": "wills-and-legacy",
+     "en": "Wills and legacy gifts",
+     "he": "צוואות ותרומות מורשת",
+     "ru": "Завещания и дары наследия",
+     "desc": {
+      "en": "An ethical will, a Jewish will, and leaving a gift to Jewish life in a will, trust, IRA or fund.",
+      "he": "צוואה מוסרית, צוואה כהלכה, והשארת מתנה לחיים היהודיים בצוואה, בנאמנות או בקרן.",
+      "ru": "Этическое завещание, завещание по еврейскому закону и дар еврейской жизни в завещании или фонде."
+     }
+    }
+   ]
+  },
+  {
+   "name": "Jewish ideas",
+   "he": "רעיונות יהודיים",
+   "ru": "Еврейские идеи",
+   "subs": [
+    {
+     "id": "judaism-basics",
+     "en": "Judaism: the basics",
+     "he": "יהדות: היסודות",
+     "ru": "Иудаизм: основы",
+     "desc": {
+      "en": "What Judaism is, who is a Jew, mitzvot and Jewish law, rabbis, customs and where to start.",
+      "he": "מהי יהדות, מיהו יהודי, מצוות והלכה, רבנים, מנהגים ומאיפה מתחילים.",
+      "ru": "Что такое иудаизм, кто еврей, заповеди и закон, раввины, обычаи и с чего начать."
+     }
+    },
+    {
+     "id": "g-d-and-faith",
+     "en": "G-d, faith and holiness",
+     "he": "אמונה, בורא עולם וקדושה",
+     "ru": "Б-г, вера и святость",
+     "desc": {
+      "en": "What Jews believe about G-d, trust, doubt, prayer, providence and making everyday life holy.",
+      "he": "במה יהודים מאמינים, ביטחון, ספקות, תפילה, השגחה פרטית וקדושה בחיי היום-יום.",
+      "ru": "Во что верят евреи: Б-г, упование, сомнения, молитва, провидение и святость будней."
+     }
+    },
+    {
+     "id": "big-questions",
+     "en": "Big questions: purpose, suffering and the soul",
+     "he": "שאלות גדולות: תכלית, סבל ונשמה",
+     "ru": "Большие вопросы: смысл, страдание и душа",
+     "desc": {
+      "en": "Why we are here, free will, why bad things happen, the soul, the afterlife and Moshiach.",
+      "he": "למה אנחנו כאן, בחירה חופשית, למה קורים דברים רעים, הנשמה, העולם הבא והמשיח.",
+      "ru": "Зачем мы здесь, свобода выбора, почему случается плохое, душа, загробный мир и Мошиах."
+     }
+    },
+    {
+     "id": "chabad-and-chassidus",
+     "en": "Chabad, Chassidus and Kabbalah",
+     "he": "חב\"ד, חסידות וקבלה",
+     "ru": "Хабад, хасидизм и каббала",
+     "desc": {
+      "en": "The Baal Shem Tov, the Chabad Rebbes, their special days, farbrengens, niggunim and Kabbalah.",
+      "he": "הבעל שם טוב, רבותינו נשיאי חב\"ד, ימי החג שלהם, התוועדויות, ניגונים וקבלה.",
+      "ru": "Бааль Шем Тов, Ребе Хабада, их особые дни, фарбренгены, нигуны и каббала."
+     }
+    },
+    {
+     "id": "tanya-inner-life",
+     "en": "Tanya: your inner life",
+     "he": "תניא: העולם הפנימי שלך",
+     "ru": "Тания: ваш внутренний мир",
+     "desc": {
+      "en": "The two souls, the beinoni, thoughts, temptation, fresh starts and serving G-d in daily life.",
+      "he": "שתי הנשמות, הבינוני, מחשבות, יצר, התחלות חדשות ועבודת ה' בחיי היום-יום.",
+      "ru": "Две души, бейнони, мысли, искушения, новое начало и служение Б-гу в повседневной жизни."
+     }
+    },
+    {
+     "id": "character",
+     "en": "Character: humility, joy and honesty",
+     "he": "מידות: ענווה, שמחה ויושר",
+     "ru": "Характер: скромность, радость и честность",
+     "desc": {
+      "en": "Humility and self-worth, patience, contentment, gratitude, joy, honesty, leadership and being a mensch.",
+      "he": "ענווה וערך עצמי, סבלנות, הסתפקות, הכרת הטוב, שמחה, יושר ולהיות בן אדם.",
+      "ru": "Скромность и самоуважение, терпение, довольство, благодарность, радость, честность и порядочность."
+     }
+    },
+    {
+     "id": "loving-others",
+     "en": "Kindness and loving others",
+     "he": "חסד ואהבת הזולת",
+     "ru": "Доброта и любовь к ближнему",
+     "desc": {
+      "en": "Loving every Jew, judging favorably, friendship, guests, visiting the sick, parents, elders and animals.",
+      "he": "אהבת ישראל, דן לכף זכות, חברות, הכנסת אורחים, ביקור חולים, הורים, זקנים ובעלי חיים.",
+      "ru": "Любовь к каждому еврею, доброжелательность, дружба, гости, больные, родители, старики и животные."
+     }
+    },
+    {
+     "id": "speech-and-peace",
+     "en": "Words, anger and making peace",
+     "he": "דיבור, כעס והשכנת שלום",
+     "ru": "Слова, гнев и примирение",
+     "desc": {
+      "en": "Gossip and hurtful words, kind criticism, calming anger, forgiving, and settling disputes.",
+      "he": "לשון הרע ואונאת דברים, תוכחה בעדינות, הרגעת כעס, סליחה ויישוב סכסוכים.",
+      "ru": "Злословие и обидные слова, мягкая критика, усмирение гнева, прощение и разрешение споров."
+     }
+    },
+    {
+     "id": "growth-and-teshuvah",
+     "en": "Teshuvah and personal growth",
+     "he": "תשובה וצמיחה אישית",
+     "ru": "Тшува и личностный рост",
+     "desc": {
+      "en": "Returning to G-d, taking stock, changing habits, forgiving yourself and growing at every age.",
+      "he": "חזרה בתשובה, חשבון נפש, שינוי הרגלים, סליחה לעצמך וצמיחה בכל גיל.",
+      "ru": "Возвращение к Б-гу, подведение итогов, смена привычек, прощение себя и рост в любом возрасте."
+     }
+    },
+    {
+     "id": "mind-body-health",
+     "en": "Worry, health and the body",
+     "he": "דאגה, בריאות והגוף",
+     "ru": "Тревога, здоровье и тело",
+     "desc": {
+      "en": "Anxiety and trust, loneliness, mental health, addiction, sleep, health and saving a life.",
+      "he": "חרדה וביטחון, בדידות, בריאות הנפש, התמכרות, שינה, בריאות ופיקוח נפש.",
+      "ru": "Тревога и упование, одиночество, душевное здоровье, зависимость, сон, здоровье и спасение жизни."
+     }
+    },
+    {
+     "id": "tzedakah",
+     "en": "Tzedakah: how and why to give",
+     "he": "צדקה: איך ולמה נותנים",
+     "ru": "Цдака: как и зачем давать",
+     "desc": {
+      "en": "How much and to whom, giving with dignity, as a family, every day, and for Torah and community.",
+      "he": "כמה ולמי, נתינה בכבוד, כמשפחה, בכל יום, ולמען התורה והקהילה.",
+      "ru": "Сколько и кому давать, с уважением, всей семьей, каждый день, на Тору и общину."
+     }
+    },
+    {
+     "id": "maaser-and-blessing",
+     "en": "Maaser and the blessing of giving",
+     "he": "מעשר והברכה שבנתינה",
+     "ru": "Маасер и благословение дающего",
+     "desc": {
+      "en": "Giving a tenth step by step, what maaser can pay for, G-d's promise, and the classic stories.",
+      "he": "מעשר כספים שלב אחר שלב, על מה מותר להוציא אותו, ההבטחה האלוקית, והסיפורים הידועים.",
+      "ru": "Десятина шаг за шагом, на что ее тратить, обещание Б-га и классические истории."
+     }
+    },
+    {
+     "id": "work-and-money",
+     "en": "Work, money and business",
+     "he": "עבודה, כסף ועסקים",
+     "ru": "Работа, деньги и бизнес",
+     "desc": {
+      "en": "Earning a living with faith, choosing a career, honest business, loans and a weekly reset.",
+      "he": "פרנסה באמונה, בחירת מקצוע, יושר בעסקים, הלוואות ומנוחה שבועית.",
+      "ru": "Заработок с верой, выбор профессии, честный бизнес, займы и еженедельная передышка."
+     }
+    },
+    {
+     "id": "israel",
+     "en": "Israel and Jerusalem",
+     "he": "ארץ ישראל וירושלים",
+     "ru": "Израиль и Иерусалим",
+     "desc": {
+      "en": "Why the Land is holy, Jerusalem and the Temple, holy places to visit, aliyah and helping from afar.",
+      "he": "למה הארץ קדושה, ירושלים ובית המקדש, מקומות קדושים לביקור, עלייה ועזרה מרחוק.",
+      "ru": "Почему Земля свята, Иерусалим и Храм, святые места, алия и помощь издалека."
+     }
+    },
+    {
+     "id": "jewish-history",
+     "en": "Jewish history and great figures",
+     "he": "היסטוריה יהודית ודמויות גדולות",
+     "ru": "Еврейская история и великие люди",
+     "desc": {
+      "en": "From Abraham to today: how the Jewish people survived, communities worldwide and your own roots.",
+      "he": "מאברהם ועד היום: איך העם היהודי שרד, קהילות בעולם והשורשים שלך.",
+      "ru": "От Авраама до наших дней: как выжил еврейский народ, общины мира и ваши корни."
+     }
+    },
+    {
+     "id": "words-and-symbols",
+     "en": "Hebrew, Yiddish and Jewish symbols",
+     "he": "עברית, יידיש וסמלים יהודיים",
+     "ru": "Иврит, идиш и еврейские символы",
+     "desc": {
+      "en": "Everyday Hebrew and Yiddish words, the Star of David, chai, mazal, the evil eye and red strings.",
+      "he": "מילים בעברית וביידיש, מגן דוד, ח\"י, מזל, עין הרע וחוטים אדומים.",
+      "ru": "Слова на иврите и идише, звезда Давида, хай, мазаль, дурной глаз и красные нити."
+     }
+    },
+    {
+     "id": "jewish-today",
+     "en": "Being Jewish today",
+     "he": "להיות יהודי היום",
+     "ru": "Быть евреем сегодня",
+     "desc": {
+      "en": "Jewish pride, antisemitism, teens and identity, newly found roots, women, and secular holidays.",
+      "he": "גאווה יהודית, אנטישמיות, בני נוער וזהות, שורשים שהתגלו, נשים, וחגים כלליים.",
+      "ru": "Еврейская гордость, антисемитизм, подростки и идентичность, найденные корни, женщины и светские праздники."
+     }
+    }
+   ]
+  },
+  {
+   "name": "Jewish home",
+   "he": "בית יהודי",
+   "ru": "Еврейский дом",
+   "subs": [
+    {
+     "id": "mezuzah-and-new-home",
+     "en": "Mezuzah and setting up a home",
+     "he": "מזוזה והקמת בית",
+     "ru": "Мезуза и обустройство дома",
+     "desc": {
+      "en": "Putting up and checking mezuzahs, a first apartment, a housewarming and a safe Jewish home.",
+      "he": "קביעת מזוזות ובדיקתן, דירה ראשונה, חנוכת הבית ובית יהודי בטוח.",
+      "ru": "Как прибить и проверять мезузы, первая квартира, новоселье и безопасный еврейский дом."
+     }
+    },
+    {
+     "id": "judaica-and-books",
+     "en": "Judaica, books and a Jewish nursery",
+     "he": "יודאיקה, ספרים וחדר ילדים יהודי",
+     "ru": "Иудаика, книги и еврейская детская",
+     "desc": {
+      "en": "The Jewish items and books every home can use, gifts and jewelry, and a Jewish child's room.",
+      "he": "תשמישי הקדושה והספרים לכל בית, מתנות ותכשיטים, וחדר ילדים יהודי.",
+      "ru": "Еврейские предметы и книги для каждого дома, подарки и украшения, еврейская детская."
+     }
+    },
+    {
+     "id": "home-mitzvot",
+     "en": "Candles, challah and modesty",
+     "he": "נרות, חלה וצניעות",
+     "ru": "Свечи, хала и скромность",
+     "desc": {
+      "en": "The mitzvot of Jewish women and girls, separating challah, modesty, head covering and shatnez.",
+      "he": "מצוות הנשים והבנות, הפרשת חלה, צניעות, כיסוי ראש ושעטנז.",
+      "ru": "Заповеди еврейских женщин и девочек, отделение халы, скромность, покрытие головы и шаатнез."
+     }
+    },
+    {
+     "id": "jewish-cooking",
+     "en": "Jewish cooking and recipes",
+     "he": "בישול יהודי ומתכונים",
+     "ru": "Еврейская кухня и рецепты",
+     "desc": {
+      "en": "Challah, chicken soup, kugel, brisket and holiday classics, plus hosting and meals for others.",
+      "he": "חלה, מרק עוף, קוגל, בריסקט ומאכלי חג, ואירוח וארוחות לאחרים.",
+      "ru": "Хала, куриный суп, кугл, брискет и праздничная классика, гости и еда для других."
+     }
+    },
+    {
+     "id": "jewish-parenting",
+     "en": "Jewish parenting",
+     "he": "הורות יהודית",
+     "ru": "Еврейское воспитание детей",
+     "desc": {
+      "en": "Raising kind, proud Jewish children: blessings, big questions, school choices, sports and camp.",
+      "he": "לגדל ילדים טובים וגאים ביהדותם: ברכות, שאלות גדולות, בחירת בית ספר, ספורט וקייטנה.",
+      "ru": "Как растить добрых и гордых еврейских детей: благословения, вопросы, школа, спорт и лагерь."
+     }
+    },
+    {
+     "id": "family-relationships",
+     "en": "Marriage, in-laws and grandparents",
+     "he": "זוגיות, מחותנים וסבים",
+     "ru": "Супруги, родственники и бабушки с дедушками",
+     "desc": {
+      "en": "Peace at home, couples who argue, in-laws, grandparents, aging parents, family stories and pets.",
+      "he": "שלום בית, ויכוחים בזוגיות, מחותנים, סבים, הורים מזדקנים, סיפור המשפחה וחיות מחמד.",
+      "ru": "Мир в доме, споры супругов, родня, бабушки и дедушки, пожилые родители, история семьи и питомцы."
+     }
+    },
+    {
+     "id": "home-money-and-work",
+     "en": "Money, work and tzedakah at home",
+     "he": "כסף, עבודה וצדקה בבית",
+     "ru": "Деньги, работа и цдака дома",
+     "desc": {
+      "en": "The pushka, giving in someone's honor, loans, paying workers on time, money worries and losing a job.",
+      "he": "קופת הצדקה, נתינה לכבוד מישהו, הלוואות, תשלום שכר בזמן, דאגות כספים ואובדן עבודה.",
+      "ru": "Копилка для цдаки, пожертвование в честь близких, займы, оплата работникам, денежные заботы, потеря работы."
+     }
+    }
+   ]
+  },
+  {
+   "name": "Lamorinda",
+   "he": "למורינדה",
+   "ru": "Ламоринда",
+   "subs": [
+    {
+     "id": "lamorinda-start-here",
+     "en": "Start here: Jewish Lamorinda",
+     "he": "מתחילים כאן: למורינדה היהודית",
+     "ru": "С чего начать: еврейская Ламоринда",
+     "desc": {
+      "en": "New, visiting or not religious? Meet the Rabbi, get involved and see how Chabad here works.",
+      "he": "חדשים, מבקרים או לא דתיים? פגשו את הרב, הצטרפו וגלו איך חב\"ד כאן פועל.",
+      "ru": "Новичок, гость или не религиозны? Познакомьтесь с раввином и узнайте, как работает Хабад."
+     }
+    },
+    {
+     "id": "lamorinda-shabbat-and-classes",
+     "en": "Shabbat and classes in Lamorinda",
+     "he": "שבת ושיעורים בלמורינדה",
+     "ru": "Шаббат и занятия в Ламоринде",
+     "desc": {
+      "en": "Shabbat services and dinners, local Shabbat times, walks, commuting, and weekly Torah and Hebrew classes.",
+      "he": "תפילות וסעודות שבת, זמני שבת מקומיים, טיולים, נסיעות לעבודה, ושיעורי תורה ועברית.",
+      "ru": "Службы и ужины Шаббата, местное время, прогулки, дорога на работу, уроки Торы и иврита."
+     }
+    },
+    {
+     "id": "lamorinda-holidays",
+     "en": "The Jewish year in Lamorinda",
+     "he": "השנה היהודית בלמורינדה",
+     "ru": "Еврейский год в Ламоринде",
+     "desc": {
+      "en": "Every holiday here: the shofar, a sukkah on the hills, Light Up Lafayette, Purim, Passover and the seasons.",
+      "he": "כל החגים כאן: שופר, סוכה על הגבעות, הדלקת החנוכייה בלאפייט, פורים, פסח ועונות השנה.",
+      "ru": "Все праздники здесь: шофар, сукка на холмах, ханукия в Лафайете, Пурим, Песах и времена года."
+     }
+    },
+    {
+     "id": "lamorinda-kids",
+     "en": "Kids, teens and school in Lamorinda",
+     "he": "ילדים, נוער ובית ספר בלמורינדה",
+     "ru": "Дети, подростки и школа в Ламоринде",
+     "desc": {
+      "en": "Preschool, Hebrew school, camp, teens, bar and bat mitzvah, school calendars and college.",
+      "he": "גן, תלמוד תורה, קייטנה, נוער, בר ובת מצווה, לוחות בית הספר ולימודים במכללה.",
+      "ru": "Детский сад, еврейская школа, лагерь, подростки, бар- и бат-мицва, школьный календарь и колледж."
+     }
+    },
+    {
+     "id": "lamorinda-groups",
+     "en": "Women, men, seniors and newcomers",
+     "he": "נשים, גברים, מבוגרים ועולים",
+     "ru": "Женщины, мужчины, пожилые и новые соседи",
+     "desc": {
+      "en": "Programs and friends for women, men, seniors, students, young professionals, Israelis and Russian speakers.",
+      "he": "פעילויות וחברים לנשים, גברים, מבוגרים, סטודנטים, צעירים, ישראלים ודוברי רוסית.",
+      "ru": "Программы и друзья для женщин, мужчин, пожилых, студентов, молодых, израильтян и русскоязычных."
+     }
+    },
+    {
+     "id": "lamorinda-life-events",
+     "en": "Life events and practical help",
+     "he": "אירועי חיים ועזרה מעשית",
+     "ru": "Важные события и практическая помощь",
+     "desc": {
+      "en": "Who to call for a wedding, a kosher simcha, a mikvah, a hospital stay, a funeral or a wildfire.",
+      "he": "למי פונים לחתונה, לשמחה כשרה, למקווה, לאשפוז, ללוויה או בשריפה.",
+      "ru": "Куда звонить: свадьба, кошерный праздник, миква, больница, похороны или лесной пожар."
+     }
+    }
+   ]
+  },
+  {
+   "name": "Mourning & remembrance",
+   "he": "אבלות וזיכרון",
+   "ru": "Траур и память",
+   "subs": [
+    {
+     "id": "end-of-life",
+     "en": "When a loved one is dying",
+     "he": "כשאדם יקר נוטה למות",
+     "ru": "Когда близкий человек уходит",
+     "desc": {
+      "en": "The last days, hospice, a Jewish health care directive, praying for healing and the first hours after.",
+      "he": "הימים האחרונים, הוספיס, הנחיות רפואיות כהלכה, תפילה לרפואה והשעות הראשונות.",
+      "ru": "Последние дни, хоспис, медицинские распоряжения по еврейскому закону, молитва и первые часы."
+     }
+    },
+    {
+     "id": "jewish-burial",
+     "en": "Jewish burial",
+     "he": "קבורה יהודית",
+     "ru": "Еврейское погребение",
+     "desc": {
+      "en": "Why burial matters, help when there is no budget, tahara, the plain casket, plots and planning ahead.",
+      "he": "למה הקבורה חשובה, עזרה כשאין תקציב, טהרה, ארון פשוט, חלקות ותכנון מראש.",
+      "ru": "Почему важно погребение, помощь без средств, тахара, простой гроб, участки и планирование."
+     }
+    },
+    {
+     "id": "the-funeral",
+     "en": "The funeral",
+     "he": "הלוויה",
+     "ru": "Похороны",
+     "desc": {
+      "en": "What happens at a Jewish funeral, what to wear, the eulogy, kriah and the meal of condolence.",
+      "he": "מה קורה בלוויה יהודית, מה לובשים, ההספד, הקריעה וסעודת ההבראה.",
+      "ru": "Что происходит на еврейских похоронах, как одеться, надгробная речь, крия и трапеза утешения."
+     }
+    },
+    {
+     "id": "shiva",
+     "en": "Sitting shiva",
+     "he": "ישיבת שבעה",
+     "ru": "Шива",
+     "desc": {
+      "en": "Who sits shiva, how it works, setting up the house, Shabbat and holidays, and going back to work.",
+      "he": "מי יושב שבעה, איך זה עובד, הכנת הבית, שבת וחגים, והחזרה לעבודה.",
+      "ru": "Кто сидит шиву, как она проходит, подготовка дома, Шаббат и праздники, возвращение на работу."
+     }
+    },
+    {
+     "id": "comforting-and-grief",
+     "en": "Comfort and grief",
+     "he": "ניחום ואבל",
+     "ru": "Утешение и горе",
+     "desc": {
+      "en": "What to say and bring to mourners, a condolence note, coping with grief and talking to children.",
+      "he": "מה לומר ומה להביא לאבלים, מכתב תנחומים, התמודדות עם אבל ושיחה עם ילדים.",
+      "ru": "Что сказать и принести скорбящим, письмо соболезнования, как пережить горе и говорить с детьми."
+     }
+    },
+    {
+     "id": "kaddish-and-the-year",
+     "en": "Kaddish and the year of mourning",
+     "he": "קדיש ושנת האבלות",
+     "ru": "Кадиш и год траура",
+     "desc": {
+      "en": "The stages of mourning, saying Kaddish, the thirty days and the year for a parent.",
+      "he": "שלבי האבלות, אמירת קדיש, השלושים והשנה על הורה.",
+      "ru": "Этапы траура, Кадиш, тридцать дней и год траура по родителю."
+     }
+    },
+    {
+     "id": "particular-losses",
+     "en": "Losing a spouse, a parent or a child",
+     "he": "אובדן בן זוג, הורה או ילד",
+     "ru": "Потеря супруга, родителя или ребенка",
+     "desc": {
+      "en": "Jewish comfort for the loss of a husband or wife, a parent, a child, a pregnancy, to suicide, or a pet.",
+      "he": "נחמה יהודית באובדן בן או בת זוג, הורה, ילד, הריון, התאבדות או חיית מחמד.",
+      "ru": "Еврейское утешение при потере супруга, родителя, ребенка, беременности, после самоубийства или питомца."
+     }
+    },
+    {
+     "id": "yahrzeit-and-remembrance",
+     "en": "Yahrzeit and remembrance",
+     "he": "יארצייט והנצחה",
+     "ru": "Йорцайт и память",
+     "desc": {
+      "en": "The headstone and unveiling, the yahrzeit and its candle, Yizkor, giving and learning in memory.",
+      "he": "המצבה והקמתה, היארצייט והנר, יזכור, צדקה ולימוד לעילוי נשמה.",
+      "ru": "Памятник и его открытие, йорцайт и свеча, Изкор, цдака и учеба в память о близком."
+     }
+    }
+   ]
+  },
+  {
+   "name": "Kosher",
+   "he": "כשרות",
+   "ru": "Кашрут",
+   "subs": [
+    {
+     "id": "kosher-basics",
+     "en": "Kosher: the basics",
+     "he": "כשרות: היסודות",
+     "ru": "Кашрут: основы",
+     "desc": {
+      "en": "What kosher means, meat and milk, pareve, kosher symbols and starting one step at a time.",
+      "he": "מה זה כשר, בשר וחלב, פרווה, סמלי כשרות ואיך מתחילים צעד אחר צעד.",
+      "ru": "Что значит кошерно, мясное и молочное, парве, знаки кашрута и как начать постепенно."
+     }
+    },
+    {
+     "id": "kosher-kitchen",
+     "en": "The kosher kitchen",
+     "he": "המטבח הכשר",
+     "ru": "Кошерная кухня",
+     "desc": {
+      "en": "Setting up the kitchen, the oven, sink and dishwasher, immersing dishes, and checking eggs and produce.",
+      "he": "הכשרת המטבח, תנור, כיור ומדיח, טבילת כלים, ובדיקת ביצים וירקות.",
+      "ru": "Как устроить кухню, духовка, раковина и посудомойка, окунание посуды, проверка яиц и зелени."
+     }
+    },
+    {
+     "id": "kosher-food-by-food",
+     "en": "Meat, dairy, wine and drinks: food by food",
+     "he": "בשר, חלב, יין ועוד: מאכל אחר מאכל",
+     "ru": "Мясо, молочное, вино и др.: продукт за продуктом",
+     "desc": {
+      "en": "What makes meat, fish, cheese, milk, bread, wine, drinks and vitamins kosher.",
+      "he": "מה הופך בשר, דגים, גבינה, חלב, לחם, יין, משקאות וויטמינים לכשרים.",
+      "ru": "Что делает кошерными мясо, рыбу, сыр, молоко, хлеб, вино, напитки и витамины."
+     }
+    },
+    {
+     "id": "kosher-shopping",
+     "en": "Shopping, Passover and family food",
+     "he": "קניות, פסח ואוכל למשפחה",
+     "ru": "Покупки, Песах и семейное питание",
+     "desc": {
+      "en": "Reading labels at the supermarket, keeping kosher on a budget, Passover shopping, kids' food and the garden.",
+      "he": "קריאת תוויות בסופר, כשרות בתקציב, קניות לפסח, אוכל לילדים והגינה.",
+      "ru": "Этикетки в супермаркете, кашрут при скромном бюджете, покупки к Песаху, детская еда и сад."
+     }
+    },
+    {
+     "id": "kosher-away",
+     "en": "Kosher away from home",
+     "he": "כשרות מחוץ לבית",
+     "ru": "Кашрут вне дома",
+     "desc": {
+      "en": "Eating out, traveling, college, rentals, grilling, and keeping kosher when family does not.",
+      "he": "אוכל בחוץ, נסיעות, קמפוס, דירות שכורות, מנגל, ושמירת כשרות כשהמשפחה לא שומרת.",
+      "ru": "Рестораны, поездки, колледж, съемное жилье, гриль и кашрут, когда семья его не соблюдает."
+     }
+    }
+   ]
+  }
+ ],
+ "guides": {
+  "shabbat": {
+   "sub": "shabbat-basics",
+   "rank": 1
+  },
+  "shabbat-for-beginners": {
+   "sub": "shabbat-basics",
+   "rank": 2
+  },
+  "how-to-start-keeping-shabbat": {
+   "sub": "shabbat-basics",
+   "rank": 3
+  },
+  "preparing-for-shabbat": {
+   "sub": "shabbat-basics",
+   "rank": 4
+  },
+  "shabbat-clothes": {
+   "sub": "shabbat-basics",
+   "rank": 5
+  },
+  "shabbat-candles": {
+   "sub": "shabbat-basics",
+   "rank": 6
+  },
+  "early-shabbat-in-summer": {
+   "sub": "shabbat-basics",
+   "rank": 7
+  },
+  "shabbat-in-winter": {
+   "sub": "shabbat-basics",
+   "rank": 8
+  },
+  "kabbalat-shabbat": {
+   "sub": "shabbat-basics",
+   "rank": 9
+  },
+  "lecha-dodi": {
+   "sub": "shabbat-basics",
+   "rank": 10
+  },
+  "shalom-aleichem": {
+   "sub": "shabbat-basics",
+   "rank": 11
+  },
+  "eishet-chayil": {
+   "sub": "shabbat-basics",
+   "rank": 12
+  },
+  "shabbat-day": {
+   "sub": "shabbat-basics",
+   "rank": 13
+  },
+  "shabbat-afternoon-ideas": {
+   "sub": "shabbat-basics",
+   "rank": 14
+  },
+  "unplugging-on-shabbat": {
+   "sub": "shabbat-basics",
+   "rank": 15
+  },
+  "havdalah": {
+   "sub": "shabbat-basics",
+   "rank": 16
+  },
+  "tanya-and-shabbat": {
+   "sub": "shabbat-basics",
+   "rank": 17
+  },
+  "setting-the-shabbat-table": {
+   "sub": "shabbat-table",
+   "rank": 1
+  },
+  "friday-night-dinner-step-by-step": {
+   "sub": "shabbat-table",
+   "rank": 2
+  },
+  "kiddush": {
+   "sub": "shabbat-table",
+   "rank": 3
+  },
+  "alcohol-free-kiddush": {
+   "sub": "shabbat-table",
+   "rank": 4
+  },
+  "challah": {
+   "sub": "shabbat-table",
+   "rank": 5
+  },
+  "shabbat-meals": {
+   "sub": "shabbat-table",
+   "rank": 6
+  },
+  "hosting-your-first-shabbat-dinner": {
+   "sub": "shabbat-table",
+   "rank": 7
+  },
+  "shabbat-guest-guide": {
+   "sub": "shabbat-table",
+   "rank": 8
+  },
+  "easy-shabbat-dinner-menu": {
+   "sub": "shabbat-table",
+   "rank": 9
+  },
+  "shabbat-on-a-budget": {
+   "sub": "shabbat-table",
+   "rank": 10
+  },
+  "cholent": {
+   "sub": "shabbat-table",
+   "rank": 11
+  },
+  "slow-cooker-shabbat-recipes": {
+   "sub": "shabbat-table",
+   "rank": 12
+  },
+  "dvar-torah-at-the-shabbat-table": {
+   "sub": "shabbat-table",
+   "rank": 13
+  },
+  "zemirot": {
+   "sub": "shabbat-table",
+   "rank": 14
+  },
+  "shabbat-table-conversation-starters": {
+   "sub": "shabbat-table",
+   "rank": 15
+  },
+  "seudah-shlishit": {
+   "sub": "shabbat-table",
+   "rank": 16
+  },
+  "melave-malka": {
+   "sub": "shabbat-table",
+   "rank": 17
+  },
+  "keeping-food-warm-on-shabbat": {
+   "sub": "shabbat-laws",
+   "rank": 1
+  },
+  "thirty-nine-melachot": {
+   "sub": "shabbat-laws",
+   "rank": 2
+  },
+  "electricity-on-shabbat": {
+   "sub": "shabbat-laws",
+   "rank": 3
+  },
+  "shabbat-practical-questions": {
+   "sub": "shabbat-laws",
+   "rank": 4
+  },
+  "muktzeh": {
+   "sub": "shabbat-laws",
+   "rank": 5
+  },
+  "eruv": {
+   "sub": "shabbat-laws",
+   "rank": 6
+  },
+  "techum-shabbat": {
+   "sub": "shabbat-laws",
+   "rank": 7
+  },
+  "shabbat-with-kids": {
+   "sub": "shabbat-real-life",
+   "rank": 1
+  },
+  "babies-and-toddlers-on-shabbat": {
+   "sub": "shabbat-real-life",
+   "rank": 2
+  },
+  "first-shabbat-with-a-newborn": {
+   "sub": "shabbat-real-life",
+   "rank": 3
+  },
+  "shabbat-for-working-parents": {
+   "sub": "shabbat-real-life",
+   "rank": 4
+  },
+  "telling-your-boss-you-keep-shabbat": {
+   "sub": "shabbat-real-life",
+   "rank": 5
+  },
+  "traveling-on-shabbat": {
+   "sub": "shabbat-real-life",
+   "rank": 6
+  },
+  "shabbat-in-a-hotel": {
+   "sub": "shabbat-real-life",
+   "rank": 7
+  },
+  "shabbat-alone": {
+   "sub": "shabbat-real-life",
+   "rank": 8
+  },
+  "shabbat-in-the-hospital": {
+   "sub": "shabbat-real-life",
+   "rank": 9
+  },
+  "shalosh-regalim": {
+   "sub": "yom-tov",
+   "rank": 1
+  },
+  "yom-tov-candle-lighting": {
+   "sub": "yom-tov",
+   "rank": 2
+  },
+  "cooking-on-yom-tov": {
+   "sub": "yom-tov",
+   "rank": 3
+  },
+  "eruv-tavshilin": {
+   "sub": "yom-tov",
+   "rank": 4
+  },
+  "holiday-greetings": {
+   "sub": "yom-tov",
+   "rank": 5
+  },
+  "jewish-holidays-at-school-and-work": {
+   "sub": "yom-tov",
+   "rank": 6
+  },
+  "holidays-with-toddlers": {
+   "sub": "yom-tov",
+   "rank": 7
+  },
+  "elul": {
+   "sub": "rosh-hashanah",
+   "rank": 1
+  },
+  "rosh-hashanah-for-beginners": {
+   "sub": "rosh-hashanah",
+   "rank": 2
+  },
+  "rosh-hashanah-with-kids": {
+   "sub": "rosh-hashanah",
+   "rank": 3
+  },
+  "binding-of-isaac": {
+   "sub": "rosh-hashanah",
+   "rank": 4
+  },
+  "rosh-hashanah-simanim": {
+   "sub": "rosh-hashanah",
+   "rank": 5
+  },
+  "shofar": {
+   "sub": "rosh-hashanah",
+   "rank": 6
+  },
+  "unetaneh-tokef": {
+   "sub": "rosh-hashanah",
+   "rank": 7
+  },
+  "tashlich": {
+   "sub": "rosh-hashanah",
+   "rank": 8
+  },
+  "ten-days-of-repentance": {
+   "sub": "rosh-hashanah",
+   "rank": 9
+  },
+  "avinu-malkeinu": {
+   "sub": "rosh-hashanah",
+   "rank": 10
+  },
+  "shabbat-shuva": {
+   "sub": "rosh-hashanah",
+   "rank": 11
+  },
+  "yom-kippur-for-beginners": {
+   "sub": "yom-kippur",
+   "rank": 1
+  },
+  "yom-kippur-with-kids": {
+   "sub": "yom-kippur",
+   "rank": 2
+  },
+  "kapparot": {
+   "sub": "yom-kippur",
+   "rank": 3
+  },
+  "erev-yom-kippur": {
+   "sub": "yom-kippur",
+   "rank": 4
+  },
+  "kol-nidre": {
+   "sub": "yom-kippur",
+   "rank": 5
+  },
+  "book-of-jonah": {
+   "sub": "yom-kippur",
+   "rank": 6
+  },
+  "yom-kippur-fast": {
+   "sub": "yom-kippur",
+   "rank": 7
+  },
+  "neilah": {
+   "sub": "yom-kippur",
+   "rank": 8
+  },
+  "break-fast-after-yom-kippur": {
+   "sub": "yom-kippur",
+   "rank": 9
+  },
+  "sukkot-for-beginners": {
+   "sub": "sukkot",
+   "rank": 1
+  },
+  "sukkah": {
+   "sub": "sukkot",
+   "rank": 2
+  },
+  "four-kinds": {
+   "sub": "sukkot",
+   "rank": 3
+  },
+  "ushpizin": {
+   "sub": "sukkot",
+   "rank": 4
+  },
+  "sukkot-with-kids": {
+   "sub": "sukkot",
+   "rank": 5
+  },
+  "chol-hamoed": {
+   "sub": "sukkot",
+   "rank": 6
+  },
+  "simchat-beit-hashoevah": {
+   "sub": "sukkot",
+   "rank": 7
+  },
+  "hoshana-rabbah": {
+   "sub": "sukkot",
+   "rank": 8
+  },
+  "shemini-atzeret": {
+   "sub": "sukkot",
+   "rank": 9
+  },
+  "simchat-torah-for-beginners": {
+   "sub": "sukkot",
+   "rank": 10
+  },
+  "hakafot": {
+   "sub": "sukkot",
+   "rank": 11
+  },
+  "chanukah-for-beginners": {
+   "sub": "chanukah-lighting",
+   "rank": 1
+  },
+  "getting-ready-for-chanukah": {
+   "sub": "chanukah-lighting",
+   "rank": 2
+  },
+  "chanukah-menorah": {
+   "sub": "chanukah-lighting",
+   "rank": 3
+  },
+  "when-to-light-the-menorah": {
+   "sub": "chanukah-lighting",
+   "rank": 4
+  },
+  "menorah-oil-and-candles": {
+   "sub": "chanukah-lighting",
+   "rank": 5
+  },
+  "choosing-a-kosher-menorah": {
+   "sub": "chanukah-lighting",
+   "rank": 6
+  },
+  "what-is-the-shamash": {
+   "sub": "chanukah-lighting",
+   "rank": 7
+  },
+  "who-lights-the-chanukah-menorah": {
+   "sub": "chanukah-lighting",
+   "rank": 8
+  },
+  "chanukah-night-by-night": {
+   "sub": "chanukah-lighting",
+   "rank": 9
+  },
+  "women-and-chanukah": {
+   "sub": "chanukah-lighting",
+   "rank": 10
+  },
+  "chanukah-songs": {
+   "sub": "chanukah-lighting",
+   "rank": 11
+  },
+  "chanukah-on-shabbat": {
+   "sub": "chanukah-lighting",
+   "rank": 12
+  },
+  "zot-chanukah": {
+   "sub": "chanukah-lighting",
+   "rank": 13
+  },
+  "why-add-a-candle-each-night": {
+   "sub": "chanukah-lighting",
+   "rank": 14
+  },
+  "what-if-chanukah-candles-go-out": {
+   "sub": "chanukah-lighting",
+   "rank": 15
+  },
+  "missed-lighting-the-menorah": {
+   "sub": "chanukah-lighting",
+   "rank": 16
+  },
+  "leftover-chanukah-oil-and-wicks": {
+   "sub": "chanukah-lighting",
+   "rank": 17
+  },
+  "is-work-allowed-on-chanukah": {
+   "sub": "chanukah-lighting",
+   "rank": 18
+  },
+  "chanukah-torah-reading": {
+   "sub": "chanukah-lighting",
+   "rank": 19
+  },
+  "rosh-chodesh-tevet-on-chanukah": {
+   "sub": "chanukah-lighting",
+   "rank": 20
+  },
+  "chanukah-glossary": {
+   "sub": "chanukah-lighting",
+   "rank": 21
+  },
+  "hanukkah-or-chanukah-spelling": {
+   "sub": "chanukah-lighting",
+   "rank": 22
+  },
+  "public-menorah-lighting": {
+   "sub": "chanukah-everywhere",
+   "rank": 1
+  },
+  "chanukah-at-work-and-college": {
+   "sub": "chanukah-everywhere",
+   "rank": 2
+  },
+  "menorah-in-an-apartment-or-condo": {
+   "sub": "chanukah-everywhere",
+   "rank": 3
+  },
+  "menorah-at-your-business": {
+   "sub": "chanukah-everywhere",
+   "rank": 4
+  },
+  "chanukah-alone": {
+   "sub": "chanukah-everywhere",
+   "rank": 5
+  },
+  "chanukah-in-the-hospital": {
+   "sub": "chanukah-everywhere",
+   "rank": 6
+  },
+  "chanukah-in-senior-living": {
+   "sub": "chanukah-everywhere",
+   "rank": 7
+  },
+  "bringing-chanukah-to-the-homebound": {
+   "sub": "chanukah-everywhere",
+   "rank": 8
+  },
+  "chanukah-away-from-home": {
+   "sub": "chanukah-everywhere",
+   "rank": 9
+  },
+  "menorah-campaign-history": {
+   "sub": "chanukah-everywhere",
+   "rank": 10
+  },
+  "chanukah-for-friends-and-coworkers": {
+   "sub": "chanukah-everywhere",
+   "rank": 11
+  },
+  "what-to-write-in-a-chanukah-card": {
+   "sub": "chanukah-everywhere",
+   "rank": 12
+  },
+  "chanukah-in-israel": {
+   "sub": "chanukah-everywhere",
+   "rank": 13
+  },
+  "chanukah-for-russian-speaking-families": {
+   "sub": "chanukah-everywhere",
+   "rank": 14
+  },
+  "chanukah-story": {
+   "sub": "chanukah-story",
+   "rank": 1
+  },
+  "the-maccabees": {
+   "sub": "chanukah-story",
+   "rank": 2
+  },
+  "who-was-antiochus": {
+   "sub": "chanukah-story",
+   "rank": 3
+  },
+  "decrees-of-the-greeks": {
+   "sub": "chanukah-story",
+   "rank": 4
+  },
+  "chana-and-her-seven-sons": {
+   "sub": "chanukah-story",
+   "rank": 5
+  },
+  "which-chanukah-miracle": {
+   "sub": "chanukah-story",
+   "rank": 6
+  },
+  "why-is-chanukah-eight-days": {
+   "sub": "chanukah-story",
+   "rank": 7
+  },
+  "what-does-chanukah-mean": {
+   "sub": "chanukah-story",
+   "rank": 8
+  },
+  "chanukah-in-the-talmud": {
+   "sub": "chanukah-story",
+   "rank": 9
+  },
+  "temple-menorah-and-chanukah-menorah": {
+   "sub": "chanukah-story",
+   "rank": 10
+  },
+  "olive-oil-in-jewish-tradition": {
+   "sub": "chanukah-story",
+   "rank": 11
+  },
+  "lessons-of-chanukah": {
+   "sub": "chanukah-story",
+   "rank": 12
+  },
+  "the-rebbe-on-chanukah": {
+   "sub": "chanukah-story",
+   "rank": 13
+  },
+  "chanukah-and-jewish-pride": {
+   "sub": "chanukah-story",
+   "rank": 14
+  },
+  "chanukah-and-torah-study": {
+   "sub": "chanukah-story",
+   "rank": 15
+  },
+  "menorahs-in-dark-times": {
+   "sub": "chanukah-story",
+   "rank": 16
+  },
+  "chanukah-facts-and-trivia": {
+   "sub": "chanukah-story",
+   "rank": 17
+  },
+  "why-chanukah-changes-dates": {
+   "sub": "chanukah-story",
+   "rank": 18
+  },
+  "second-temple-period": {
+   "sub": "chanukah-story",
+   "rank": 19
+  },
+  "after-the-maccabees": {
+   "sub": "chanukah-story",
+   "rank": 20
+  },
+  "chanukah-for-kids": {
+   "sub": "chanukah-family",
+   "rank": 1
+  },
+  "chanukah-with-toddlers": {
+   "sub": "chanukah-family",
+   "rank": 2
+  },
+  "babys-first-chanukah": {
+   "sub": "chanukah-family",
+   "rank": 3
+  },
+  "teaching-kids-the-chanukah-blessings": {
+   "sub": "chanukah-family",
+   "rank": 4
+  },
+  "dreidel": {
+   "sub": "chanukah-family",
+   "rank": 5
+  },
+  "chanukah-foods": {
+   "sub": "chanukah-family",
+   "rank": 6
+  },
+  "chanukah-dinner-menu": {
+   "sub": "chanukah-family",
+   "rank": 7
+  },
+  "chanukah-tzedakah": {
+   "sub": "chanukah-family",
+   "rank": 8
+  },
+  "chanukah-crafts-for-kids": {
+   "sub": "chanukah-family",
+   "rank": 9
+  },
+  "chanukah-bedtime-stories": {
+   "sub": "chanukah-family",
+   "rank": 10
+  },
+  "chanukah-mitzvah-projects-for-kids": {
+   "sub": "chanukah-family",
+   "rank": 11
+  },
+  "chanukah-for-teens": {
+   "sub": "chanukah-family",
+   "rank": 12
+  },
+  "only-jewish-kid-in-class-at-chanukah": {
+   "sub": "chanukah-family",
+   "rank": 13
+  },
+  "new-chanukah-family-traditions": {
+   "sub": "chanukah-family",
+   "rank": 14
+  },
+  "first-chanukah-as-a-couple": {
+   "sub": "chanukah-family",
+   "rank": 15
+  },
+  "chanukah-with-grandchildren": {
+   "sub": "chanukah-family",
+   "rank": 16
+  },
+  "chanukah-gelt": {
+   "sub": "chanukah-family",
+   "rank": 17
+  },
+  "hosting-a-chanukah-party": {
+   "sub": "chanukah-family",
+   "rank": 18
+  },
+  "seudat-chanukah": {
+   "sub": "chanukah-family",
+   "rank": 19
+  },
+  "chanukah-gifts": {
+   "sub": "chanukah-family",
+   "rank": 20
+  },
+  "chanukah-foods-around-the-jewish-world": {
+   "sub": "chanukah-family",
+   "rank": 21
+  },
+  "healthier-chanukah-foods": {
+   "sub": "chanukah-family",
+   "rank": 22
+  },
+  "vegan-chanukah-recipes": {
+   "sub": "chanukah-family",
+   "rank": 23
+  },
+  "frying-safely-on-chanukah": {
+   "sub": "chanukah-family",
+   "rank": 24
+  },
+  "chanukah-baking-with-kids": {
+   "sub": "chanukah-family",
+   "rank": 25
+  },
+  "chanukah-food-gifts-for-neighbors": {
+   "sub": "chanukah-family",
+   "rank": 26
+  },
+  "purim-for-beginners": {
+   "sub": "purim",
+   "rank": 1
+  },
+  "purim-story": {
+   "sub": "purim",
+   "rank": 2
+  },
+  "megillah": {
+   "sub": "purim",
+   "rank": 3
+  },
+  "the-four-mitzvahs-of-purim": {
+   "sub": "purim",
+   "rank": 4
+  },
+  "mishloach-manot": {
+   "sub": "purim",
+   "rank": 5
+  },
+  "matanot-laevyonim": {
+   "sub": "purim",
+   "rank": 6
+  },
+  "purim-seudah": {
+   "sub": "purim",
+   "rank": 7
+  },
+  "purim-for-kids": {
+   "sub": "purim",
+   "rank": 8
+  },
+  "purim-costumes": {
+   "sub": "purim",
+   "rank": 9
+  },
+  "hamantaschen": {
+   "sub": "purim",
+   "rank": 10
+  },
+  "fast-of-esther": {
+   "sub": "purim",
+   "rank": 11
+  },
+  "adar": {
+   "sub": "purim",
+   "rank": 12
+  },
+  "parshat-zachor": {
+   "sub": "purim",
+   "rank": 13
+  },
+  "the-four-parshiyot": {
+   "sub": "purim",
+   "rank": 14
+  },
+  "passover-for-beginners": {
+   "sub": "passover",
+   "rank": 1
+  },
+  "maot-chitim": {
+   "sub": "passover",
+   "rank": 2
+  },
+  "chametz": {
+   "sub": "passover",
+   "rank": 3
+  },
+  "passover-cleaning": {
+   "sub": "passover",
+   "rank": 4
+  },
+  "selling-your-chametz": {
+   "sub": "passover",
+   "rank": 5
+  },
+  "shabbat-hagadol": {
+   "sub": "passover",
+   "rank": 6
+  },
+  "fast-of-the-firstborn": {
+   "sub": "passover",
+   "rank": 7
+  },
+  "kitniyot": {
+   "sub": "passover",
+   "rank": 8
+  },
+  "passover-seder-menu": {
+   "sub": "passover",
+   "rank": 9
+  },
+  "matzah": {
+   "sub": "passover",
+   "rank": 10
+  },
+  "seder-plate": {
+   "sub": "passover",
+   "rank": 11
+  },
+  "haggadah": {
+   "sub": "passover",
+   "rank": 12
+  },
+  "hosting-your-first-seder": {
+   "sub": "passover",
+   "rank": 13
+  },
+  "passover-seder": {
+   "sub": "passover",
+   "rank": 14
+  },
+  "four-cups": {
+   "sub": "passover",
+   "rank": 15
+  },
+  "four-questions": {
+   "sub": "passover",
+   "rank": 16
+  },
+  "afikoman": {
+   "sub": "passover",
+   "rank": 17
+  },
+  "seder-songs": {
+   "sub": "passover",
+   "rank": 18
+  },
+  "passover-with-kids": {
+   "sub": "passover",
+   "rank": 19
+  },
+  "exodus-story": {
+   "sub": "passover",
+   "rank": 20
+  },
+  "ten-plagues": {
+   "sub": "passover",
+   "rank": 21
+  },
+  "passover-away-from-home": {
+   "sub": "passover",
+   "rank": 22
+  },
+  "last-days-of-passover": {
+   "sub": "passover",
+   "rank": 23
+  },
+  "counting-the-omer": {
+   "sub": "omer-shavuot",
+   "rank": 1
+  },
+  "pesach-sheni": {
+   "sub": "omer-shavuot",
+   "rank": 2
+  },
+  "lag-baomer": {
+   "sub": "omer-shavuot",
+   "rank": 3
+  },
+  "shavuot-for-beginners": {
+   "sub": "omer-shavuot",
+   "rank": 4
+  },
+  "book-of-ruth": {
+   "sub": "omer-shavuot",
+   "rank": 5
+  },
+  "shavuot-night-learning": {
+   "sub": "omer-shavuot",
+   "rank": 6
+  },
+  "shavuot-dairy-foods": {
+   "sub": "omer-shavuot",
+   "rank": 7
+  },
+  "shavuot-with-kids": {
+   "sub": "omer-shavuot",
+   "rank": 8
+  },
+  "fast-days": {
+   "sub": "fasts-three-weeks",
+   "rank": 1
+  },
+  "minor-fast-days": {
+   "sub": "fasts-three-weeks",
+   "rank": 2
+  },
+  "asara-btevet": {
+   "sub": "fasts-three-weeks",
+   "rank": 3
+  },
+  "three-weeks": {
+   "sub": "fasts-three-weeks",
+   "rank": 4
+  },
+  "tisha-bav-for-beginners": {
+   "sub": "fasts-three-weeks",
+   "rank": 5
+  },
+  "yom-kippur-katan": {
+   "sub": "fasts-three-weeks",
+   "rank": 6
+  },
+  "tu-bav": {
+   "sub": "fasts-three-weeks",
+   "rank": 7
+  },
+  "jewish-calendar": {
+   "sub": "jewish-calendar",
+   "rank": 1
+  },
+  "four-jewish-new-years": {
+   "sub": "jewish-calendar",
+   "rank": 2
+  },
+  "rosh-chodesh": {
+   "sub": "jewish-calendar",
+   "rank": 3
+  },
+  "tishrei": {
+   "sub": "jewish-calendar",
+   "rank": 4
+  },
+  "cheshvan": {
+   "sub": "jewish-calendar",
+   "rank": 5
+  },
+  "kislev": {
+   "sub": "jewish-calendar",
+   "rank": 6
+  },
+  "tevet": {
+   "sub": "jewish-calendar",
+   "rank": 7
+  },
+  "shevat": {
+   "sub": "jewish-calendar",
+   "rank": 8
+  },
+  "nissan": {
+   "sub": "jewish-calendar",
+   "rank": 9
+  },
+  "iyar": {
+   "sub": "jewish-calendar",
+   "rank": 10
+  },
+  "sivan": {
+   "sub": "jewish-calendar",
+   "rank": 11
+  },
+  "tammuz": {
+   "sub": "jewish-calendar",
+   "rank": 12
+  },
+  "menachem-av": {
+   "sub": "jewish-calendar",
+   "rank": 13
+  },
+  "tu-bishvat-seder": {
+   "sub": "jewish-calendar",
+   "rank": 14
+  },
+  "tu-bishvat-for-kids": {
+   "sub": "jewish-calendar",
+   "rank": 15
+  },
+  "seven-species": {
+   "sub": "jewish-calendar",
+   "rank": 16
+  },
+  "shabbat-shirah": {
+   "sub": "jewish-calendar",
+   "rank": 17
+  },
+  "chabad-calendar": {
+   "sub": "jewish-calendar",
+   "rank": 18
+  },
+  "yud-tes-kislev": {
+   "sub": "jewish-calendar",
+   "rank": 19
+  },
+  "tanya-and-the-jewish-year": {
+   "sub": "jewish-calendar",
+   "rank": 20
+  },
+  "prayer": {
+   "sub": "prayer-first-steps",
+   "rank": 1
+  },
+  "talking-to-g-d-in-your-own-words": {
+   "sub": "prayer-first-steps",
+   "rank": 2
+  },
+  "praying-for-others": {
+   "sub": "prayer-first-steps",
+   "rank": 3
+  },
+  "what-is-davening": {
+   "sub": "prayer-first-steps",
+   "rank": 4
+  },
+  "kavanah-in-prayer": {
+   "sub": "prayer-first-steps",
+   "rank": 5
+  },
+  "shuckling": {
+   "sub": "prayer-first-steps",
+   "rank": 6
+  },
+  "amen": {
+   "sub": "prayer-first-steps",
+   "rank": 7
+  },
+  "how-women-pray": {
+   "sub": "prayer-first-steps",
+   "rank": 8
+  },
+  "praying-alone-at-home": {
+   "sub": "prayer-first-steps",
+   "rank": 9
+  },
+  "can-i-pray-in-english": {
+   "sub": "prayer-first-steps",
+   "rank": 10
+  },
+  "mi-sheberach": {
+   "sub": "prayer-first-steps",
+   "rank": 11
+  },
+  "praying-for-your-children": {
+   "sub": "prayer-first-steps",
+   "rank": 12
+  },
+  "teaching-children-to-pray": {
+   "sub": "prayer-first-steps",
+   "rank": 13
+  },
+  "prayer-before-surgery": {
+   "sub": "prayer-first-steps",
+   "rank": 14
+  },
+  "modeh-ani": {
+   "sub": "daily-prayers",
+   "rank": 1
+  },
+  "jewish-morning-routine": {
+   "sub": "daily-prayers",
+   "rank": 2
+  },
+  "mah-tovu": {
+   "sub": "daily-prayers",
+   "rank": 3
+  },
+  "adon-olam": {
+   "sub": "daily-prayers",
+   "rank": 4
+  },
+  "morning-blessings": {
+   "sub": "daily-prayers",
+   "rank": 5
+  },
+  "shacharit-morning-service": {
+   "sub": "daily-prayers",
+   "rank": 6
+  },
+  "ashrei": {
+   "sub": "daily-prayers",
+   "rank": 7
+  },
+  "barchu": {
+   "sub": "daily-prayers",
+   "rank": 8
+  },
+  "shema": {
+   "sub": "daily-prayers",
+   "rank": 9
+  },
+  "amidah": {
+   "sub": "daily-prayers",
+   "rank": 10
+  },
+  "kedushah": {
+   "sub": "daily-prayers",
+   "rank": 11
+  },
+  "tachanun": {
+   "sub": "daily-prayers",
+   "rank": 12
+  },
+  "aleinu": {
+   "sub": "daily-prayers",
+   "rank": 13
+  },
+  "daily-prayers": {
+   "sub": "daily-prayers",
+   "rank": 14
+  },
+  "mincha-and-maariv": {
+   "sub": "daily-prayers",
+   "rank": 15
+  },
+  "bedtime-shema": {
+   "sub": "daily-prayers",
+   "rank": 16
+  },
+  "zmanim-explained": {
+   "sub": "daily-prayers",
+   "rank": 17
+  },
+  "what-is-a-synagogue": {
+   "sub": "synagogue",
+   "rank": 1
+  },
+  "first-time-at-synagogue": {
+   "sub": "synagogue",
+   "rank": 2
+  },
+  "synagogue-etiquette": {
+   "sub": "synagogue",
+   "rank": 3
+  },
+  "siddur": {
+   "sub": "synagogue",
+   "rank": 4
+  },
+  "finding-your-place-in-the-siddur": {
+   "sub": "synagogue",
+   "rank": 5
+  },
+  "shabbat-morning-services-explained": {
+   "sub": "synagogue",
+   "rank": 6
+  },
+  "children-in-synagogue": {
+   "sub": "synagogue",
+   "rank": 7
+  },
+  "mechitzah": {
+   "sub": "synagogue",
+   "rank": 8
+  },
+  "minyan": {
+   "sub": "synagogue",
+   "rank": 9
+  },
+  "synagogue-roles": {
+   "sub": "synagogue",
+   "rank": 10
+  },
+  "synagogue-honors": {
+   "sub": "synagogue",
+   "rank": 11
+  },
+  "aliyah": {
+   "sub": "synagogue",
+   "rank": 12
+  },
+  "leading-the-prayers": {
+   "sub": "synagogue",
+   "rank": 13
+  },
+  "musaf": {
+   "sub": "synagogue",
+   "rank": 14
+  },
+  "hallel": {
+   "sub": "synagogue",
+   "rank": 15
+  },
+  "nishmat": {
+   "sub": "synagogue",
+   "rank": 16
+  },
+  "birkat-hachodesh": {
+   "sub": "synagogue",
+   "rank": 17
+  },
+  "prayers-for-rain": {
+   "sub": "synagogue",
+   "rank": 18
+  },
+  "selichot": {
+   "sub": "synagogue",
+   "rank": 19
+  },
+  "al-hanissim-and-hallel": {
+   "sub": "synagogue",
+   "rank": 20
+  },
+  "blessings": {
+   "sub": "blessings",
+   "rank": 1
+  },
+  "hamotzi": {
+   "sub": "blessings",
+   "rank": 2
+  },
+  "netilat-yadayim": {
+   "sub": "blessings",
+   "rank": 3
+  },
+  "blessings-after-food": {
+   "sub": "blessings",
+   "rank": 4
+  },
+  "birkat-hamazon": {
+   "sub": "blessings",
+   "rank": 5
+  },
+  "teaching-kids-blessings-on-food": {
+   "sub": "blessings",
+   "rank": 6
+  },
+  "shehecheyanu": {
+   "sub": "blessings",
+   "rank": 7
+  },
+  "blessings-on-nature": {
+   "sub": "blessings",
+   "rank": 8
+  },
+  "asher-yatzar": {
+   "sub": "blessings",
+   "rank": 9
+  },
+  "birkat-hagomel": {
+   "sub": "blessings",
+   "rank": 10
+  },
+  "tefilat-haderech": {
+   "sub": "blessings",
+   "rank": 11
+  },
+  "kiddush-levana": {
+   "sub": "blessings",
+   "rank": 12
+  },
+  "birkat-kohanim": {
+   "sub": "blessings",
+   "rank": 13
+  },
+  "tehillim": {
+   "sub": "tehillim",
+   "rank": 1
+  },
+  "your-personal-psalm": {
+   "sub": "tehillim",
+   "rank": 2
+  },
+  "psalm-23": {
+   "sub": "tehillim",
+   "rank": 3
+  },
+  "psalm-121": {
+   "sub": "tehillim",
+   "rank": 4
+  },
+  "psalm-91": {
+   "sub": "tehillim",
+   "rank": 5
+  },
+  "psalm-30-on-chanukah": {
+   "sub": "tehillim",
+   "rank": 6
+  },
+  "barchi-nafshi": {
+   "sub": "tehillim",
+   "rank": 7
+  },
+  "tefillin": {
+   "sub": "tefillin-tallit",
+   "rank": 1
+  },
+  "daily-mitzvot-for-jewish-men": {
+   "sub": "tefillin-tallit",
+   "rank": 2
+  },
+  "buying-tefillin": {
+   "sub": "tefillin-tallit",
+   "rank": 3
+  },
+  "tallit": {
+   "sub": "tefillin-tallit",
+   "rank": 4
+  },
+  "tzitzit": {
+   "sub": "tefillin-tallit",
+   "rank": 5
+  },
+  "kippah": {
+   "sub": "tefillin-tallit",
+   "rank": 6
+  },
+  "torah": {
+   "sub": "torah-and-parsha",
+   "rank": 1
+  },
+  "tanach": {
+   "sub": "torah-and-parsha",
+   "rank": 2
+  },
+  "ten-commandments": {
+   "sub": "torah-and-parsha",
+   "rank": 3
+  },
+  "weekly-parsha": {
+   "sub": "torah-and-parsha",
+   "rank": 4
+  },
+  "torah-reading": {
+   "sub": "torah-and-parsha",
+   "rank": 5
+  },
+  "haftarah": {
+   "sub": "torah-and-parsha",
+   "rank": 6
+  },
+  "book-of-genesis": {
+   "sub": "torah-and-parsha",
+   "rank": 7
+  },
+  "book-of-exodus": {
+   "sub": "torah-and-parsha",
+   "rank": 8
+  },
+  "book-of-leviticus": {
+   "sub": "torah-and-parsha",
+   "rank": 9
+  },
+  "the-mishkan": {
+   "sub": "torah-and-parsha",
+   "rank": 10
+  },
+  "the-priestly-garments": {
+   "sub": "torah-and-parsha",
+   "rank": 11
+  },
+  "the-manna": {
+   "sub": "torah-and-parsha",
+   "rank": 12
+  },
+  "song-of-songs": {
+   "sub": "torah-and-parsha",
+   "rank": 13
+  },
+  "book-of-ecclesiastes": {
+   "sub": "torah-and-parsha",
+   "rank": 14
+  },
+  "what-is-a-prophet": {
+   "sub": "torah-and-parsha",
+   "rank": 15
+  },
+  "sefer-torah": {
+   "sub": "torah-and-parsha",
+   "rank": 16
+  },
+  "hachnasat-sefer-torah": {
+   "sub": "torah-and-parsha",
+   "rank": 17
+  },
+  "letter-in-a-torah": {
+   "sub": "torah-and-parsha",
+   "rank": 18
+  },
+  "shemot-names-of-g-d": {
+   "sub": "torah-and-parsha",
+   "rank": 19
+  },
+  "how-to-start-learning-torah": {
+   "sub": "torah-learning",
+   "rank": 1
+  },
+  "daily-torah-study": {
+   "sub": "torah-learning",
+   "rank": 2
+  },
+  "chavruta-learning-partner": {
+   "sub": "torah-learning",
+   "rank": 3
+  },
+  "torah-study-for-women": {
+   "sub": "torah-learning",
+   "rank": 4
+  },
+  "oral-torah": {
+   "sub": "torah-learning",
+   "rank": 5
+  },
+  "mishnah": {
+   "sub": "torah-learning",
+   "rank": 6
+  },
+  "talmud": {
+   "sub": "torah-learning",
+   "rank": 7
+  },
+  "midrash": {
+   "sub": "torah-learning",
+   "rank": 8
+  },
+  "pirkei-avot": {
+   "sub": "torah-learning",
+   "rank": 9
+  },
+  "code-of-jewish-law": {
+   "sub": "torah-learning",
+   "rank": 10
+  },
+  "rambam": {
+   "sub": "torah-learning",
+   "rank": 11
+  },
+  "what-is-a-yeshiva": {
+   "sub": "torah-learning",
+   "rank": 12
+  },
+  "hebrew-alphabet": {
+   "sub": "torah-learning",
+   "rank": 13
+  },
+  "hebrew-reading-for-adults": {
+   "sub": "torah-learning",
+   "rank": 14
+  },
+  "gematria": {
+   "sub": "torah-learning",
+   "rank": 15
+  },
+  "tanya": {
+   "sub": "learning-tanya",
+   "rank": 1
+  },
+  "how-to-start-learning-tanya": {
+   "sub": "learning-tanya",
+   "rank": 2
+  },
+  "tanya-chapter-one-explained": {
+   "sub": "learning-tanya",
+   "rank": 3
+  },
+  "tanya-learning-plan": {
+   "sub": "learning-tanya",
+   "rank": 4
+  },
+  "daily-tanya-cycle": {
+   "sub": "learning-tanya",
+   "rank": 5
+  },
+  "tanya-for-busy-professionals": {
+   "sub": "learning-tanya",
+   "rank": 6
+  },
+  "tanya-on-torah-study": {
+   "sub": "learning-tanya",
+   "rank": 7
+  },
+  "tanya-on-prayer": {
+   "sub": "learning-tanya",
+   "rank": 8
+  },
+  "hitbonenut-tanya-contemplation": {
+   "sub": "learning-tanya",
+   "rank": 9
+  },
+  "adam-and-eve": {
+   "sub": "patriarchs-and-moses",
+   "rank": 1
+  },
+  "noah-and-the-flood": {
+   "sub": "patriarchs-and-moses",
+   "rank": 2
+  },
+  "isaac-our-father": {
+   "sub": "patriarchs-and-moses",
+   "rank": 3
+  },
+  "jacob-our-father": {
+   "sub": "patriarchs-and-moses",
+   "rank": 4
+  },
+  "the-matriarchs": {
+   "sub": "patriarchs-and-moses",
+   "rank": 5
+  },
+  "rachel-our-mother": {
+   "sub": "patriarchs-and-moses",
+   "rank": 6
+  },
+  "joseph-and-his-brothers": {
+   "sub": "patriarchs-and-moses",
+   "rank": 7
+  },
+  "ephraim-and-menashe": {
+   "sub": "patriarchs-and-moses",
+   "rank": 8
+  },
+  "twelve-tribes": {
+   "sub": "patriarchs-and-moses",
+   "rank": 9
+  },
+  "moses": {
+   "sub": "patriarchs-and-moses",
+   "rank": 10
+  },
+  "aaron-the-high-priest": {
+   "sub": "patriarchs-and-moses",
+   "rank": 11
+  },
+  "miriam": {
+   "sub": "patriarchs-and-moses",
+   "rank": 12
+  },
+  "jethro": {
+   "sub": "patriarchs-and-moses",
+   "rank": 13
+  },
+  "joshua": {
+   "sub": "patriarchs-and-moses",
+   "rank": 14
+  },
+  "deborah": {
+   "sub": "judges-kings-prophets",
+   "rank": 1
+  },
+  "samson": {
+   "sub": "judges-kings-prophets",
+   "rank": 2
+  },
+  "hannah-and-her-prayer": {
+   "sub": "judges-kings-prophets",
+   "rank": 3
+  },
+  "samuel-the-prophet": {
+   "sub": "judges-kings-prophets",
+   "rank": 4
+  },
+  "king-saul": {
+   "sub": "judges-kings-prophets",
+   "rank": 5
+  },
+  "king-david": {
+   "sub": "judges-kings-prophets",
+   "rank": 6
+  },
+  "king-solomon": {
+   "sub": "judges-kings-prophets",
+   "rank": 7
+  },
+  "elijah-the-prophet": {
+   "sub": "judges-kings-prophets",
+   "rank": 8
+  },
+  "king-hezekiah": {
+   "sub": "judges-kings-prophets",
+   "rank": 9
+  },
+  "isaiah": {
+   "sub": "judges-kings-prophets",
+   "rank": 10
+  },
+  "jeremiah": {
+   "sub": "judges-kings-prophets",
+   "rank": 11
+  },
+  "ezekiel": {
+   "sub": "judges-kings-prophets",
+   "rank": 12
+  },
+  "daniel": {
+   "sub": "judges-kings-prophets",
+   "rank": 13
+  },
+  "ezra-and-nehemiah": {
+   "sub": "judges-kings-prophets",
+   "rank": 14
+  },
+  "rabbi-akiva": {
+   "sub": "sages",
+   "rank": 1
+  },
+  "rabbi-yochanan-ben-zakkai": {
+   "sub": "sages",
+   "rank": 2
+  },
+  "the-sanhedrin": {
+   "sub": "sages",
+   "rank": 3
+  },
+  "rashi": {
+   "sub": "sages",
+   "rank": 4
+  },
+  "ramban": {
+   "sub": "sages",
+   "rank": 5
+  },
+  "the-arizal": {
+   "sub": "sages",
+   "rank": 6
+  },
+  "jewish-pregnancy": {
+   "sub": "pregnancy-and-baby",
+   "rank": 1
+  },
+  "giving-birth-jewish-customs": {
+   "sub": "pregnancy-and-baby",
+   "rank": 2
+  },
+  "shir-hamaalot-for-newborns": {
+   "sub": "pregnancy-and-baby",
+   "rank": 3
+  },
+  "jewish-baby-shower": {
+   "sub": "pregnancy-and-baby",
+   "rank": 4
+  },
+  "congratulating-new-parents": {
+   "sub": "pregnancy-and-baby",
+   "rank": 5
+  },
+  "meals-for-new-parents": {
+   "sub": "pregnancy-and-baby",
+   "rank": 6
+  },
+  "jewish-lullabies": {
+   "sub": "pregnancy-and-baby",
+   "rank": 7
+  },
+  "infertility-jewish-support": {
+   "sub": "pregnancy-and-baby",
+   "rank": 8
+  },
+  "jewish-adoption": {
+   "sub": "pregnancy-and-baby",
+   "rank": 9
+  },
+  "shalom-zachar": {
+   "sub": "bris-and-baby-naming",
+   "rank": 1
+  },
+  "preparing-for-a-bris": {
+   "sub": "bris-and-baby-naming",
+   "rank": 2
+  },
+  "choosing-a-mohel": {
+   "sub": "bris-and-baby-naming",
+   "rank": 3
+  },
+  "postponing-a-bris": {
+   "sub": "bris-and-baby-naming",
+   "rank": 4
+  },
+  "sandek-and-kvater": {
+   "sub": "bris-and-baby-naming",
+   "rank": 5
+  },
+  "brit-milah": {
+   "sub": "bris-and-baby-naming",
+   "rank": 6
+  },
+  "attending-a-bris": {
+   "sub": "bris-and-baby-naming",
+   "rank": 7
+  },
+  "simchat-bat": {
+   "sub": "bris-and-baby-naming",
+   "rank": 8
+  },
+  "baby-naming": {
+   "sub": "bris-and-baby-naming",
+   "rank": 9
+  },
+  "pidyon-haben": {
+   "sub": "bris-and-baby-naming",
+   "rank": 10
+  },
+  "upsherin": {
+   "sub": "bris-and-baby-naming",
+   "rank": 11
+  },
+  "jewish-baby-names": {
+   "sub": "hebrew-names-and-birthdays",
+   "rank": 1
+  },
+  "hebrew-names": {
+   "sub": "hebrew-names-and-birthdays",
+   "rank": 2
+  },
+  "hebrew-names-for-boys": {
+   "sub": "hebrew-names-and-birthdays",
+   "rank": 3
+  },
+  "hebrew-names-for-girls": {
+   "sub": "hebrew-names-and-birthdays",
+   "rank": 4
+  },
+  "naming-a-baby-after-a-relative": {
+   "sub": "hebrew-names-and-birthdays",
+   "rank": 5
+  },
+  "hebrew-birthday": {
+   "sub": "hebrew-names-and-birthdays",
+   "rank": 6
+  },
+  "jewish-birthday-customs": {
+   "sub": "hebrew-names-and-birthdays",
+   "rank": 7
+  },
+  "bar-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 1
+  },
+  "bat-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 2
+  },
+  "bar-mitzvah-hebrew-birthday-date": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 3
+  },
+  "bar-bat-mitzvah-timeline": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 4
+  },
+  "bar-bat-mitzvah-on-a-budget": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 5
+  },
+  "bar-bat-mitzvah-invitation-wording": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 6
+  },
+  "bar-mitzvah-in-israel": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 7
+  },
+  "bar-mitzvah-parsha": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 8
+  },
+  "bar-mitzvah-prep-without-hebrew-school": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 9
+  },
+  "learning-to-chant-the-torah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 10
+  },
+  "starting-tefillin-before-bar-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 11
+  },
+  "bar-mitzvah-speech": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 12
+  },
+  "parents-blessing-at-bar-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 13
+  },
+  "grandparents-at-a-bar-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 14
+  },
+  "meaningful-bar-bat-mitzvah-celebration": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 15
+  },
+  "attending-a-bar-bat-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 16
+  },
+  "gifts-in-multiples-of-18": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 17
+  },
+  "tzedakah-at-a-bar-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 18
+  },
+  "tzedakah-at-lifes-milestones": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 19
+  },
+  "bat-mitzvah-projects": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 20
+  },
+  "special-needs-bar-bat-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 21
+  },
+  "after-the-bar-mitzvah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 22
+  },
+  "chinuch": {
+   "sub": "children-and-education",
+   "rank": 1
+  },
+  "first-mitzvot-for-young-children": {
+   "sub": "children-and-education",
+   "rank": 2
+  },
+  "jewish-learning-at-home-with-kids": {
+   "sub": "children-and-education",
+   "rank": 3
+  },
+  "teaching-kids-the-aleph-bet": {
+   "sub": "children-and-education",
+   "rank": 4
+  },
+  "twelve-torah-verses": {
+   "sub": "children-and-education",
+   "rank": 5
+  },
+  "teaching-kids-about-israel": {
+   "sub": "children-and-education",
+   "rank": 6
+  },
+  "is-hebrew-school-worth-it": {
+   "sub": "children-and-education",
+   "rank": 7
+  },
+  "choosing-a-jewish-afterschool-program": {
+   "sub": "children-and-education",
+   "rank": 8
+  },
+  "preparing-for-jewish-camp": {
+   "sub": "children-and-education",
+   "rank": 9
+  },
+  "disciplining-children": {
+   "sub": "family-challenges",
+   "rank": 1
+  },
+  "sibling-rivalry": {
+   "sub": "family-challenges",
+   "rank": 2
+  },
+  "bullying-jewish-view": {
+   "sub": "family-challenges",
+   "rank": 3
+  },
+  "divorce-and-children": {
+   "sub": "family-challenges",
+   "rank": 4
+  },
+  "blended-families": {
+   "sub": "family-challenges",
+   "rank": 5
+  },
+  "difficult-relationships-with-parents": {
+   "sub": "family-challenges",
+   "rank": 6
+  },
+  "parents-and-teenagers": {
+   "sub": "teens-and-college",
+   "rank": 1
+  },
+  "teen-community-service-mitzvah": {
+   "sub": "teens-and-college",
+   "rank": 2
+  },
+  "smoking-and-vaping-jewish-view": {
+   "sub": "mind-body-health",
+   "rank": 3
+  },
+  "graduation-jewish-blessing": {
+   "sub": "teens-and-college",
+   "rank": 4
+  },
+  "gap-year-in-israel": {
+   "sub": "teens-and-college",
+   "rank": 5
+  },
+  "jewish-college-students": {
+   "sub": "teens-and-college",
+   "rank": 6
+  },
+  "jewish-dating": {
+   "sub": "dating-and-engagement",
+   "rank": 1
+  },
+  "bashert": {
+   "sub": "dating-and-engagement",
+   "rank": 2
+  },
+  "being-single-jewish-view": {
+   "sub": "dating-and-engagement",
+   "rank": 3
+  },
+  "genetic-screening": {
+   "sub": "dating-and-engagement",
+   "rank": 4
+  },
+  "jewish-engagement": {
+   "sub": "dating-and-engagement",
+   "rank": 5
+  },
+  "tenaim": {
+   "sub": "dating-and-engagement",
+   "rank": 6
+  },
+  "kallah-classes": {
+   "sub": "dating-and-engagement",
+   "rank": 7
+  },
+  "chosson-classes": {
+   "sub": "dating-and-engagement",
+   "rank": 8
+  },
+  "getting-married-by-a-rabbi": {
+   "sub": "jewish-wedding",
+   "rank": 1
+  },
+  "choosing-a-wedding-date": {
+   "sub": "jewish-wedding",
+   "rank": 2
+  },
+  "jewish-wedding-planning-checklist": {
+   "sub": "jewish-wedding",
+   "rank": 3
+  },
+  "jewish-wedding-on-a-budget": {
+   "sub": "jewish-wedding",
+   "rank": 4
+  },
+  "aufruf": {
+   "sub": "jewish-wedding",
+   "rank": 5
+  },
+  "ketubah": {
+   "sub": "jewish-wedding",
+   "rank": 6
+  },
+  "fasting-on-your-wedding-day": {
+   "sub": "jewish-wedding",
+   "rank": 7
+  },
+  "jewish-wedding": {
+   "sub": "jewish-wedding",
+   "rank": 8
+  },
+  "bedeken": {
+   "sub": "jewish-wedding",
+   "rank": 9
+  },
+  "what-is-a-chuppah": {
+   "sub": "jewish-wedding",
+   "rank": 10
+  },
+  "jewish-wedding-ring": {
+   "sub": "jewish-wedding",
+   "rank": 11
+  },
+  "jewish-wedding-customs": {
+   "sub": "jewish-wedding",
+   "rank": 12
+  },
+  "yichud": {
+   "sub": "jewish-wedding",
+   "rank": 13
+  },
+  "attending-a-jewish-wedding": {
+   "sub": "jewish-wedding",
+   "rank": 14
+  },
+  "rejoicing-with-the-bride-and-groom": {
+   "sub": "jewish-wedding",
+   "rank": 15
+  },
+  "sheva-brachot": {
+   "sub": "jewish-wedding",
+   "rank": 16
+  },
+  "first-year-of-marriage": {
+   "sub": "married-life",
+   "rank": 1
+  },
+  "family-purity": {
+   "sub": "married-life",
+   "rank": 2
+  },
+  "mikvah": {
+   "sub": "married-life",
+   "rank": 3
+  },
+  "making-time-for-your-marriage": {
+   "sub": "married-life",
+   "rank": 4
+  },
+  "marriage-advice-for-husbands": {
+   "sub": "married-life",
+   "rank": 5
+  },
+  "jewish-wedding-anniversary": {
+   "sub": "married-life",
+   "rank": 6
+  },
+  "jewish-divorce": {
+   "sub": "married-life",
+   "rank": 7
+  },
+  "remarriage": {
+   "sub": "married-life",
+   "rank": 8
+  },
+  "starting-jewish-practice-later-in-life": {
+   "sub": "starting-as-an-adult",
+   "rank": 1
+  },
+  "getting-a-hebrew-name-as-an-adult": {
+   "sub": "starting-as-an-adult",
+   "rank": 2
+  },
+  "adult-bar-bat-mitzvah": {
+   "sub": "starting-as-an-adult",
+   "rank": 3
+  },
+  "adult-brit-milah": {
+   "sub": "starting-as-an-adult",
+   "rank": 4
+  },
+  "proving-jewish-ancestry": {
+   "sub": "starting-as-an-adult",
+   "rank": 5
+  },
+  "converting-to-judaism": {
+   "sub": "starting-as-an-adult",
+   "rank": 6
+  },
+  "caregiver-support": {
+   "sub": "aging-and-caregiving",
+   "rank": 1
+  },
+  "when-a-parent-has-dementia": {
+   "sub": "aging-and-caregiving",
+   "rank": 2
+  },
+  "moving-a-parent-to-assisted-living": {
+   "sub": "aging-and-caregiving",
+   "rank": 3
+  },
+  "jewish-life-when-homebound": {
+   "sub": "aging-and-caregiving",
+   "rank": 4
+  },
+  "living-with-chronic-illness": {
+   "sub": "aging-and-caregiving",
+   "rank": 5
+  },
+  "bar-mitzvah-at-83": {
+   "sub": "aging-and-caregiving",
+   "rank": 6
+  },
+  "ethical-will": {
+   "sub": "wills-and-legacy",
+   "rank": 1
+  },
+  "halachic-will": {
+   "sub": "wills-and-legacy",
+   "rank": 2
+  },
+  "how-much-to-leave-to-tzedakah-in-a-will": {
+   "sub": "wills-and-legacy",
+   "rank": 3
+  },
+  "leaving-chabad-in-your-will": {
+   "sub": "wills-and-legacy",
+   "rank": 4
+  },
+  "naming-chabad-in-your-living-trust": {
+   "sub": "wills-and-legacy",
+   "rank": 5
+  },
+  "leaving-your-ira-to-a-jewish-cause": {
+   "sub": "wills-and-legacy",
+   "rank": 6
+  },
+  "life-insurance-gift-to-charity": {
+   "sub": "wills-and-legacy",
+   "rank": 7
+  },
+  "donor-advised-fund-successor-chabad": {
+   "sub": "wills-and-legacy",
+   "rank": 8
+  },
+  "giving-stock-to-chabad": {
+   "sub": "wills-and-legacy",
+   "rank": 9
+  },
+  "legacy-gift-step-by-step": {
+   "sub": "wills-and-legacy",
+   "rank": 10
+  },
+  "talking-to-your-children-about-your-will": {
+   "sub": "wills-and-legacy",
+   "rank": 11
+  },
+  "true-stories-of-jewish-legacy-gifts": {
+   "sub": "wills-and-legacy",
+   "rank": 12
+  },
+  "what-is-judaism": {
+   "sub": "judaism-basics",
+   "rank": 1
+  },
+  "why-be-jewish": {
+   "sub": "judaism-basics",
+   "rank": 2
+  },
+  "who-is-a-jew": {
+   "sub": "judaism-basics",
+   "rank": 3
+  },
+  "is-judaism-a-religion-or-a-nation": {
+   "sub": "judaism-basics",
+   "rank": 4
+  },
+  "jews-hebrews-israelites": {
+   "sub": "judaism-basics",
+   "rank": 5
+  },
+  "chosen-people": {
+   "sub": "judaism-basics",
+   "rank": 6
+  },
+  "what-is-a-mitzvah": {
+   "sub": "judaism-basics",
+   "rank": 7
+  },
+  "why-mitzvot": {
+   "sub": "judaism-basics",
+   "rank": 8
+  },
+  "613-mitzvot": {
+   "sub": "judaism-basics",
+   "rank": 9
+  },
+  "what-is-halacha": {
+   "sub": "judaism-basics",
+   "rank": 10
+  },
+  "jewish-customs-minhag": {
+   "sub": "judaism-basics",
+   "rank": 11
+  },
+  "what-is-a-rabbi": {
+   "sub": "judaism-basics",
+   "rank": 12
+  },
+  "starting-jewish-observance": {
+   "sub": "judaism-basics",
+   "rank": 13
+  },
+  "myths-and-facts-about-judaism": {
+   "sub": "judaism-basics",
+   "rank": 14
+  },
+  "noahide-laws": {
+   "sub": "judaism-basics",
+   "rank": 15
+  },
+  "kohen-levi-yisrael": {
+   "sub": "judaism-basics",
+   "rank": 16
+  },
+  "ashkenazi-and-sephardi": {
+   "sub": "judaism-basics",
+   "rank": 17
+  },
+  "jewish-leap-year-and-calendar": {
+   "sub": "jewish-calendar",
+   "rank": 18
+  },
+  "belief-in-g-d": {
+   "sub": "g-d-and-faith",
+   "rank": 1
+  },
+  "fear-of-g-d": {
+   "sub": "g-d-and-faith",
+   "rank": 2
+  },
+  "loving-g-d": {
+   "sub": "g-d-and-faith",
+   "rank": 3
+  },
+  "doubts-in-faith": {
+   "sub": "g-d-and-faith",
+   "rank": 4
+  },
+  "thirteen-principles-of-faith": {
+   "sub": "g-d-and-faith",
+   "rank": 5
+  },
+  "torah-and-science": {
+   "sub": "g-d-and-faith",
+   "rank": 6
+  },
+  "who-wrote-the-torah": {
+   "sub": "g-d-and-faith",
+   "rank": 7
+  },
+  "why-pray": {
+   "sub": "g-d-and-faith",
+   "rank": 8
+  },
+  "does-g-d-answer-prayers": {
+   "sub": "g-d-and-faith",
+   "rank": 9
+  },
+  "bitachon": {
+   "sub": "g-d-and-faith",
+   "rank": 10
+  },
+  "hashgacha-pratit": {
+   "sub": "g-d-and-faith",
+   "rank": 11
+  },
+  "miracles-jewish-view": {
+   "sub": "g-d-and-faith",
+   "rank": 12
+  },
+  "shechinah": {
+   "sub": "g-d-and-faith",
+   "rank": 13
+  },
+  "what-is-holiness": {
+   "sub": "g-d-and-faith",
+   "rank": 14
+  },
+  "kiddush-hashem": {
+   "sub": "g-d-and-faith",
+   "rank": 15
+  },
+  "eating-as-a-mitzvah": {
+   "sub": "g-d-and-faith",
+   "rank": 16
+  },
+  "the-table-as-an-altar": {
+   "sub": "g-d-and-faith",
+   "rank": 17
+  },
+  "the-soul": {
+   "sub": "big-questions",
+   "rank": 1
+  },
+  "purpose-of-life": {
+   "sub": "big-questions",
+   "rank": 2
+  },
+  "chanukah-and-the-soul": {
+   "sub": "big-questions",
+   "rank": 3
+  },
+  "tikkun-olam": {
+   "sub": "big-questions",
+   "rank": 4
+  },
+  "free-will": {
+   "sub": "big-questions",
+   "rank": 5
+  },
+  "why-bad-things-happen": {
+   "sub": "big-questions",
+   "rank": 6
+  },
+  "book-of-job": {
+   "sub": "big-questions",
+   "rank": 7
+  },
+  "angry-at-g-d": {
+   "sub": "big-questions",
+   "rank": 8
+  },
+  "hope-in-hard-times": {
+   "sub": "big-questions",
+   "rank": 9
+  },
+  "tanya-in-hard-times": {
+   "sub": "big-questions",
+   "rank": 10
+  },
+  "afterlife": {
+   "sub": "big-questions",
+   "rank": 11
+  },
+  "reincarnation": {
+   "sub": "big-questions",
+   "rank": 12
+  },
+  "moshiach": {
+   "sub": "big-questions",
+   "rank": 13
+  },
+  "resurrection-of-the-dead": {
+   "sub": "big-questions",
+   "rank": 14
+  },
+  "angels": {
+   "sub": "big-questions",
+   "rank": 15
+  },
+  "dreams-jewish-view": {
+   "sub": "big-questions",
+   "rank": 16
+  },
+  "lamed-vav-tzaddikim": {
+   "sub": "big-questions",
+   "rank": 17
+  },
+  "chabad": {
+   "sub": "chabad-and-chassidus",
+   "rank": 1
+  },
+  "chassidus": {
+   "sub": "chabad-and-chassidus",
+   "rank": 2
+  },
+  "baal-shem-tov": {
+   "sub": "chabad-and-chassidus",
+   "rank": 3
+  },
+  "the-alter-rebbe": {
+   "sub": "chabad-and-chassidus",
+   "rank": 4
+  },
+  "chabad-rebbes": {
+   "sub": "chabad-and-chassidus",
+   "rank": 5
+  },
+  "the-rebbe": {
+   "sub": "chabad-and-chassidus",
+   "rank": 6
+  },
+  "gimmel-tammuz": {
+   "sub": "chabad-and-chassidus",
+   "rank": 7
+  },
+  "yud-kislev": {
+   "sub": "chabad-and-chassidus",
+   "rank": 8
+  },
+  "hey-teves": {
+   "sub": "chabad-and-chassidus",
+   "rank": 9
+  },
+  "ten-mitzvah-campaigns": {
+   "sub": "chabad-and-chassidus",
+   "rank": 10
+  },
+  "mitzvah-tanks": {
+   "sub": "chabad-and-chassidus",
+   "rank": 11
+  },
+  "lchaim-and-farbrengen": {
+   "sub": "chabad-and-chassidus",
+   "rank": 12
+  },
+  "niggun": {
+   "sub": "chabad-and-chassidus",
+   "rank": 13
+  },
+  "jewish-view-of-music": {
+   "sub": "chabad-and-chassidus",
+   "rank": 14
+  },
+  "jewish-meditation": {
+   "sub": "chabad-and-chassidus",
+   "rank": 15
+  },
+  "kabbalah": {
+   "sub": "chabad-and-chassidus",
+   "rank": 16
+  },
+  "zohar": {
+   "sub": "chabad-and-chassidus",
+   "rank": 17
+  },
+  "sefirot": {
+   "sub": "chabad-and-chassidus",
+   "rank": 18
+  },
+  "chanukah-and-the-number-eight": {
+   "sub": "chabad-and-chassidus",
+   "rank": 19
+  },
+  "tanya-glossary-for-beginners": {
+   "sub": "tanya-inner-life",
+   "rank": 1
+  },
+  "the-two-souls-explained": {
+   "sub": "tanya-inner-life",
+   "rank": 2
+  },
+  "part-of-g-d-above": {
+   "sub": "tanya-inner-life",
+   "rank": 3
+  },
+  "animal-soul-not-evil": {
+   "sub": "tanya-inner-life",
+   "rank": 4
+  },
+  "starting-over-after-you-fall": {
+   "sub": "tanya-inner-life",
+   "rank": 5
+  },
+  "three-garments-of-the-soul": {
+   "sub": "tanya-inner-life",
+   "rank": 6
+  },
+  "mind-over-heart-tanya": {
+   "sub": "tanya-inner-life",
+   "rank": 7
+  },
+  "the-beinoni": {
+   "sub": "tanya-inner-life",
+   "rank": 8
+  },
+  "tanya-on-temptation": {
+   "sub": "tanya-inner-life",
+   "rank": 9
+  },
+  "tanya-unwanted-thoughts": {
+   "sub": "tanya-inner-life",
+   "rank": 10
+  },
+  "itkafya-self-discipline": {
+   "sub": "tanya-inner-life",
+   "rank": 11
+  },
+  "building-good-habits-tanya": {
+   "sub": "tanya-inner-life",
+   "rank": 12
+  },
+  "feeling-spiritually-numb": {
+   "sub": "tanya-inner-life",
+   "rank": 13
+  },
+  "sadness-versus-bitterness": {
+   "sub": "tanya-inner-life",
+   "rank": 14
+  },
+  "why-do-i-still-struggle": {
+   "sub": "tanya-inner-life",
+   "rank": 15
+  },
+  "iggeret-hateshuvah": {
+   "sub": "tanya-inner-life",
+   "rank": 16
+  },
+  "the-power-of-one-mitzvah": {
+   "sub": "tanya-inner-life",
+   "rank": 17
+  },
+  "serving-g-d-in-everyday-life": {
+   "sub": "tanya-inner-life",
+   "rank": 18
+  },
+  "making-a-home-for-g-d": {
+   "sub": "tanya-inner-life",
+   "rank": 19
+  },
+  "tanya-for-teens-and-students": {
+   "sub": "tanya-inner-life",
+   "rank": 20
+  },
+  "tanya-for-seniors": {
+   "sub": "tanya-inner-life",
+   "rank": 21
+  },
+  "humility": {
+   "sub": "character",
+   "rank": 1
+  },
+  "tanya-on-humility": {
+   "sub": "character",
+   "rank": 2
+  },
+  "self-esteem-jewish-view": {
+   "sub": "character",
+   "rank": 3
+  },
+  "tanya-on-self-worth": {
+   "sub": "character",
+   "rank": 4
+  },
+  "being-a-mensch": {
+   "sub": "character",
+   "rank": 5
+  },
+  "derech-eretz": {
+   "sub": "character",
+   "rank": 6
+  },
+  "patience": {
+   "sub": "character",
+   "rank": 7
+  },
+  "jealousy-and-envy": {
+   "sub": "character",
+   "rank": 8
+  },
+  "being-content": {
+   "sub": "character",
+   "rank": 9
+  },
+  "hakarat-hatov": {
+   "sub": "character",
+   "rank": 10
+  },
+  "tanya-on-gratitude": {
+   "sub": "character",
+   "rank": 11
+  },
+  "simcha": {
+   "sub": "character",
+   "rank": 12
+  },
+  "tanya-on-sadness-and-joy": {
+   "sub": "character",
+   "rank": 13
+  },
+  "jewish-view-of-humor": {
+   "sub": "character",
+   "rank": 14
+  },
+  "honesty-and-truth": {
+   "sub": "character",
+   "rank": 15
+  },
+  "returning-lost-items": {
+   "sub": "character",
+   "rank": 16
+  },
+  "keeping-your-word": {
+   "sub": "character",
+   "rank": 17
+  },
+  "jewish-view-of-leadership": {
+   "sub": "character",
+   "rank": 18
+  },
+  "judging-others-favorably": {
+   "sub": "loving-others",
+   "rank": 1
+  },
+  "tanya-chapter-32-love-every-jew": {
+   "sub": "loving-others",
+   "rank": 2
+  },
+  "loving-someone-you-dont-like": {
+   "sub": "loving-others",
+   "rank": 3
+  },
+  "ahavat-yisrael": {
+   "sub": "loving-others",
+   "rank": 4
+  },
+  "chesed": {
+   "sub": "loving-others",
+   "rank": 5
+  },
+  "love-jewish-view": {
+   "sub": "loving-others",
+   "rank": 6
+  },
+  "jewish-friendship": {
+   "sub": "loving-others",
+   "rank": 7
+  },
+  "tanya-on-friendship": {
+   "sub": "loving-others",
+   "rank": 8
+  },
+  "hachnasat-orchim": {
+   "sub": "loving-others",
+   "rank": 9
+  },
+  "welcoming-the-stranger": {
+   "sub": "loving-others",
+   "rank": 10
+  },
+  "bikur-cholim": {
+   "sub": "loving-others",
+   "rank": 11
+  },
+  "honoring-parents": {
+   "sub": "loving-others",
+   "rank": 12
+  },
+  "honoring-the-elderly": {
+   "sub": "loving-others",
+   "rank": 13
+  },
+  "being-a-good-neighbor": {
+   "sub": "loving-others",
+   "rank": 14
+  },
+  "why-jewish-community-matters": {
+   "sub": "loving-others",
+   "rank": 15
+  },
+  "tzaar-baalei-chayim": {
+   "sub": "loving-others",
+   "rank": 16
+  },
+  "shiluach-haken": {
+   "sub": "loving-others",
+   "rank": 17
+  },
+  "bal-tashchit": {
+   "sub": "loving-others",
+   "rank": 18
+  },
+  "anger-jewish-view": {
+   "sub": "speech-and-peace",
+   "rank": 1
+  },
+  "tanya-on-anger": {
+   "sub": "speech-and-peace",
+   "rank": 2
+  },
+  "tanya-on-speech": {
+   "sub": "speech-and-peace",
+   "rank": 3
+  },
+  "lashon-hara": {
+   "sub": "speech-and-peace",
+   "rank": 4
+  },
+  "hurtful-words": {
+   "sub": "speech-and-peace",
+   "rank": 5
+  },
+  "giving-criticism-kindly": {
+   "sub": "speech-and-peace",
+   "rank": 6
+  },
+  "forgiveness-and-making-peace": {
+   "sub": "speech-and-peace",
+   "rank": 7
+  },
+  "tanya-on-forgiving-others": {
+   "sub": "speech-and-peace",
+   "rank": 8
+  },
+  "shalom": {
+   "sub": "speech-and-peace",
+   "rank": 9
+  },
+  "neighbor-disputes": {
+   "sub": "speech-and-peace",
+   "rank": 10
+  },
+  "family-feuds-and-inheritance": {
+   "sub": "speech-and-peace",
+   "rank": 11
+  },
+  "business-disputes": {
+   "sub": "speech-and-peace",
+   "rank": 12
+  },
+  "teshuvah": {
+   "sub": "growth-and-teshuvah",
+   "rank": 1
+  },
+  "forgiving-yourself": {
+   "sub": "growth-and-teshuvah",
+   "rank": 2
+  },
+  "changing-a-bad-habit": {
+   "sub": "growth-and-teshuvah",
+   "rank": 3
+  },
+  "cheshbon-hanefesh": {
+   "sub": "growth-and-teshuvah",
+   "rank": 4
+  },
+  "yetzer-hara": {
+   "sub": "growth-and-teshuvah",
+   "rank": 5
+  },
+  "finding-a-mentor": {
+   "sub": "growth-and-teshuvah",
+   "rank": 6
+  },
+  "success-and-failure": {
+   "sub": "growth-and-teshuvah",
+   "rank": 7
+  },
+  "a-person-is-like-a-tree": {
+   "sub": "growth-and-teshuvah",
+   "rank": 8
+  },
+  "making-every-day-count": {
+   "sub": "growth-and-teshuvah",
+   "rank": 9
+  },
+  "tanya-on-time": {
+   "sub": "growth-and-teshuvah",
+   "rank": 10
+  },
+  "aging-with-purpose": {
+   "sub": "growth-and-teshuvah",
+   "rank": 11
+  },
+  "retirement-jewish-view": {
+   "sub": "growth-and-teshuvah",
+   "rank": 12
+  },
+  "anxiety-and-worry": {
+   "sub": "mind-body-health",
+   "rank": 1
+  },
+  "tanya-on-worry-and-trust": {
+   "sub": "mind-body-health",
+   "rank": 2
+  },
+  "exam-stress-jewish-wisdom": {
+   "sub": "mind-body-health",
+   "rank": 3
+  },
+  "feeling-lonely": {
+   "sub": "mind-body-health",
+   "rank": 4
+  },
+  "mental-health-jewish-view": {
+   "sub": "mind-body-health",
+   "rank": 5
+  },
+  "addiction-and-recovery": {
+   "sub": "mind-body-health",
+   "rank": 6
+  },
+  "jewish-view-of-sleep": {
+   "sub": "mind-body-health",
+   "rank": 7
+  },
+  "jewish-health-and-body": {
+   "sub": "mind-body-health",
+   "rank": 8
+  },
+  "pikuach-nefesh": {
+   "sub": "mind-body-health",
+   "rank": 9
+  },
+  "organ-donation-jewish-view": {
+   "sub": "mind-body-health",
+   "rank": 10
+  },
+  "tzedakah": {
+   "sub": "tzedakah",
+   "rank": 1
+  },
+  "how-to-give-tzedakah-kindly": {
+   "sub": "tzedakah",
+   "rank": 2
+  },
+  "tzedakah-priorities": {
+   "sub": "tzedakah",
+   "rank": 3
+  },
+  "giving-to-people-who-ask": {
+   "sub": "tzedakah",
+   "rank": 4
+  },
+  "giving-when-money-is-tight": {
+   "sub": "tzedakah",
+   "rank": 5
+  },
+  "giving-anonymously": {
+   "sub": "tzedakah",
+   "rank": 6
+  },
+  "monthly-giving-jewish-view": {
+   "sub": "tzedakah",
+   "rank": 7
+  },
+  "giving-tzedakah-as-a-family": {
+   "sub": "tzedakah",
+   "rank": 8
+  },
+  "tzedakah-before-prayer": {
+   "sub": "tzedakah",
+   "rank": 9
+  },
+  "helping-someone-become-self-sufficient": {
+   "sub": "tzedakah",
+   "rank": 10
+  },
+  "gemach-interest-free-loans": {
+   "sub": "tzedakah",
+   "rank": 11
+  },
+  "shliach-mitzvah-money-for-a-trip": {
+   "sub": "tzedakah",
+   "rank": 12
+  },
+  "tzedakah-for-someone-who-is-sick": {
+   "sub": "tzedakah",
+   "rank": 13
+  },
+  "rabbi-meir-baal-haness": {
+   "sub": "tzedakah",
+   "rank": 14
+  },
+  "the-rebbes-sunday-dollars": {
+   "sub": "tzedakah",
+   "rank": 15
+  },
+  "why-give-to-jewish-education": {
+   "sub": "tzedakah",
+   "rank": 16
+  },
+  "giving-to-build-a-synagogue": {
+   "sub": "tzedakah",
+   "rank": 17
+  },
+  "yissachar-and-zevulun-supporting-torah": {
+   "sub": "tzedakah",
+   "rank": 18
+  },
+  "leaving-a-jewish-legacy-gift": {
+   "sub": "tzedakah",
+   "rank": 19
+  },
+  "sample-bequest-language-for-attorneys": {
+   "sub": "tzedakah",
+   "rank": 20
+  },
+  "maaser": {
+   "sub": "maaser-and-blessing",
+   "rank": 1
+  },
+  "what-is-jewish-tithing": {
+   "sub": "maaser-and-blessing",
+   "rank": 2
+  },
+  "starting-maaser-step-by-step": {
+   "sub": "maaser-and-blessing",
+   "rank": 3
+  },
+  "how-to-calculate-maaser": {
+   "sub": "maaser-and-blessing",
+   "rank": 4
+  },
+  "what-maaser-can-and-cannot-pay-for": {
+   "sub": "maaser-and-blessing",
+   "rank": 5
+  },
+  "maaser-for-business-owners-and-investors": {
+   "sub": "maaser-and-blessing",
+   "rank": 6
+  },
+  "donor-advised-funds-and-tzedakah": {
+   "sub": "maaser-and-blessing",
+   "rank": 7
+  },
+  "the-blessing-of-giving-maaser": {
+   "sub": "maaser-and-blessing",
+   "rank": 8
+  },
+  "does-tzedakah-bring-wealth": {
+   "sub": "maaser-and-blessing",
+   "rank": 9
+  },
+  "what-giving-does-for-the-giver": {
+   "sub": "maaser-and-blessing",
+   "rank": 10
+  },
+  "why-give-if-g-d-provides": {
+   "sub": "maaser-and-blessing",
+   "rank": 11
+  },
+  "tzedakah-equals-all-the-mitzvot": {
+   "sub": "maaser-and-blessing",
+   "rank": 12
+  },
+  "tzedakah-averts-a-harsh-decree": {
+   "sub": "maaser-and-blessing",
+   "rank": 13
+  },
+  "tanya-on-tzedakah": {
+   "sub": "maaser-and-blessing",
+   "rank": 14
+  },
+  "the-poor-mans-offering": {
+   "sub": "maaser-and-blessing",
+   "rank": 15
+  },
+  "tzedakah-saves-from-death-stories": {
+   "sub": "maaser-and-blessing",
+   "rank": 16
+  },
+  "mar-ukva-secret-giving": {
+   "sub": "maaser-and-blessing",
+   "rank": 17
+  },
+  "king-munbaz-treasures-above": {
+   "sub": "maaser-and-blessing",
+   "rank": 18
+  },
+  "rabbi-akiva-and-rabbi-tarfon-investment": {
+   "sub": "maaser-and-blessing",
+   "rank": 19
+  },
+  "baal-shem-tov-tzedakah-stories": {
+   "sub": "maaser-and-blessing",
+   "rank": 20
+  },
+  "parnassah-work-and-livelihood": {
+   "sub": "work-and-money",
+   "rank": 1
+  },
+  "jewish-view-on-wealth": {
+   "sub": "work-and-money",
+   "rank": 2
+  },
+  "tanya-on-money": {
+   "sub": "work-and-money",
+   "rank": 3
+  },
+  "choosing-a-career-jewish-view": {
+   "sub": "work-and-money",
+   "rank": 4
+  },
+  "new-job-jewish-blessing": {
+   "sub": "work-and-money",
+   "rank": 5
+  },
+  "tanya-at-work": {
+   "sub": "work-and-money",
+   "rank": 6
+  },
+  "jewish-wisdom-for-busy-professionals": {
+   "sub": "work-and-money",
+   "rank": 7
+  },
+  "business-ethics": {
+   "sub": "work-and-money",
+   "rank": 8
+  },
+  "ribbit": {
+   "sub": "work-and-money",
+   "rank": 9
+  },
+  "technology-and-screens-jewish-view": {
+   "sub": "work-and-money",
+   "rank": 10
+  },
+  "the-land-of-israel-in-jewish-tradition": {
+   "sub": "israel",
+   "rank": 1
+  },
+  "israel-and-the-jewish-people": {
+   "sub": "israel",
+   "rank": 2
+  },
+  "jerusalem": {
+   "sub": "israel",
+   "rank": 3
+  },
+  "the-holy-temple": {
+   "sub": "israel",
+   "rank": 4
+  },
+  "western-wall": {
+   "sub": "israel",
+   "rank": 5
+  },
+  "cave-of-machpelah": {
+   "sub": "israel",
+   "rank": 6
+  },
+  "rachels-tomb": {
+   "sub": "israel",
+   "rank": 7
+  },
+  "tzfat": {
+   "sub": "israel",
+   "rank": 8
+  },
+  "tiberias-and-the-galilee": {
+   "sub": "israel",
+   "rank": 9
+  },
+  "mount-of-olives": {
+   "sub": "israel",
+   "rank": 10
+  },
+  "first-trip-to-israel": {
+   "sub": "israel",
+   "rank": 11
+  },
+  "israel-trip-with-kids": {
+   "sub": "israel",
+   "rank": 12
+  },
+  "making-aliyah": {
+   "sub": "israel",
+   "rank": 13
+  },
+  "helping-israel-from-afar": {
+   "sub": "israel",
+   "rank": 14
+  },
+  "yom-haatzmaut": {
+   "sub": "israel",
+   "rank": 15
+  },
+  "yom-yerushalayim": {
+   "sub": "israel",
+   "rank": 16
+  },
+  "shmita": {
+   "sub": "israel",
+   "rank": 17
+  },
+  "jewish-history-overview": {
+   "sub": "jewish-history",
+   "rank": 1
+  },
+  "abraham-and-sarah": {
+   "sub": "jewish-history",
+   "rank": 2
+  },
+  "seven-prophetesses": {
+   "sub": "jewish-history",
+   "rank": 3
+  },
+  "kingdoms-of-israel-and-judah": {
+   "sub": "jewish-history",
+   "rank": 4
+  },
+  "ten-lost-tribes": {
+   "sub": "jewish-history",
+   "rank": 5
+  },
+  "hillel-and-shammai": {
+   "sub": "jewish-history",
+   "rank": 6
+  },
+  "choni-and-the-carob-tree": {
+   "sub": "jewish-history",
+   "rank": 7
+  },
+  "maimonides": {
+   "sub": "jewish-history",
+   "rank": 8
+  },
+  "how-the-jewish-people-survived": {
+   "sub": "jewish-history",
+   "rank": 9
+  },
+  "am-yisrael-chai": {
+   "sub": "jewish-history",
+   "rank": 10
+  },
+  "jewish-communities-around-the-world": {
+   "sub": "jewish-history",
+   "rank": 11
+  },
+  "soviet-jewry-history": {
+   "sub": "jewish-history",
+   "rank": 12
+  },
+  "jewish-bay-area-history": {
+   "sub": "lamorinda-start-here",
+   "rank": 13
+  },
+  "jewish-east-bay": {
+   "sub": "lamorinda-start-here",
+   "rank": 14
+  },
+  "jewish-san-francisco": {
+   "sub": "lamorinda-start-here",
+   "rank": 15
+  },
+  "jewish-genealogy": {
+   "sub": "jewish-history",
+   "rank": 16
+  },
+  "jewish-last-names": {
+   "sub": "jewish-history",
+   "rank": 17
+  },
+  "hebrew-phrases": {
+   "sub": "words-and-symbols",
+   "rank": 1
+  },
+  "yiddish-words-and-phrases": {
+   "sub": "words-and-symbols",
+   "rank": 2
+  },
+  "jewish-languages": {
+   "sub": "words-and-symbols",
+   "rank": 3
+  },
+  "lashon-hakodesh": {
+   "sub": "words-and-symbols",
+   "rank": 4
+  },
+  "why-jews-write-g-d": {
+   "sub": "words-and-symbols",
+   "rank": 5
+  },
+  "jewish-symbols": {
+   "sub": "words-and-symbols",
+   "rank": 6
+  },
+  "star-of-david": {
+   "sub": "words-and-symbols",
+   "rank": 7
+  },
+  "chai-symbol": {
+   "sub": "words-and-symbols",
+   "rank": 8
+  },
+  "mazal-and-astrology": {
+   "sub": "words-and-symbols",
+   "rank": 9
+  },
+  "ayin-hara": {
+   "sub": "words-and-symbols",
+   "rank": 10
+  },
+  "segulot": {
+   "sub": "words-and-symbols",
+   "rank": 11
+  },
+  "beards-and-peyot": {
+   "sub": "words-and-symbols",
+   "rank": 12
+  },
+  "tattoos-jewish-view": {
+   "sub": "words-and-symbols",
+   "rank": 13
+  },
+  "jewish-pride": {
+   "sub": "jewish-today",
+   "rank": 1
+  },
+  "facing-antisemitism": {
+   "sub": "jewish-today",
+   "rank": 2
+  },
+  "jewish-identity-for-teens": {
+   "sub": "jewish-today",
+   "rank": 3
+  },
+  "answering-kids-why-are-we-jewish": {
+   "sub": "jewish-today",
+   "rank": 4
+  },
+  "will-my-grandchildren-be-jewish": {
+   "sub": "jewish-today",
+   "rank": 5
+  },
+  "discovered-you-are-jewish": {
+   "sub": "jewish-today",
+   "rank": 6
+  },
+  "jewish-women": {
+   "sub": "jewish-today",
+   "rank": 7
+  },
+  "halloween-jewish-view": {
+   "sub": "jewish-today",
+   "rank": 8
+  },
+  "thanksgiving-jewish-view": {
+   "sub": "jewish-today",
+   "rank": 9
+  },
+  "secular-new-year-jewish-view": {
+   "sub": "jewish-today",
+   "rank": 10
+  },
+  "mezuzah": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 1
+  },
+  "choosing-a-mezuzah": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 2
+  },
+  "mezuzah-questions": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 3
+  },
+  "checking-mezuzahs-and-tefillin": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 4
+  },
+  "setting-up-a-jewish-home": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 5
+  },
+  "first-apartment-jewish-home": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 6
+  },
+  "chanukat-habayit": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 7
+  },
+  "jewish-housewarming-gifts": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 8
+  },
+  "maakeh-safety-at-home": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 9
+  },
+  "genizah": {
+   "sub": "mezuzah-and-new-home",
+   "rank": 10
+  },
+  "judaica-buying-guide": {
+   "sub": "judaica-and-books",
+   "rank": 1
+  },
+  "shabbat-essentials-for-your-home": {
+   "sub": "judaica-and-books",
+   "rank": 2
+  },
+  "jewish-home-library": {
+   "sub": "judaica-and-books",
+   "rank": 3
+  },
+  "jewish-books-for-kids": {
+   "sub": "judaica-and-books",
+   "rank": 4
+  },
+  "jewish-nursery": {
+   "sub": "judaica-and-books",
+   "rank": 5
+  },
+  "a-jewish-childs-bedroom": {
+   "sub": "judaica-and-books",
+   "rank": 6
+  },
+  "jewish-gift-ideas": {
+   "sub": "judaica-and-books",
+   "rank": 7
+  },
+  "jewish-jewelry": {
+   "sub": "judaica-and-books",
+   "rank": 8
+  },
+  "chanukah-decorations": {
+   "sub": "judaica-and-books",
+   "rank": 9
+  },
+  "menorah-fire-safety": {
+   "sub": "judaica-and-books",
+   "rank": 10
+  },
+  "three-mitzvot-for-jewish-women": {
+   "sub": "home-mitzvot",
+   "rank": 1
+  },
+  "girls-lighting-shabbat-candles": {
+   "sub": "home-mitzvot",
+   "rank": 2
+  },
+  "tzedakah-before-candle-lighting": {
+   "sub": "home-mitzvot",
+   "rank": 3
+  },
+  "hafrashat-challah": {
+   "sub": "home-mitzvot",
+   "rank": 4
+  },
+  "mass-challah-bake": {
+   "sub": "home-mitzvot",
+   "rank": 5
+  },
+  "tzniut": {
+   "sub": "home-mitzvot",
+   "rank": 6
+  },
+  "head-covering-for-women": {
+   "sub": "home-mitzvot",
+   "rank": 7
+  },
+  "mikvah-for-men": {
+   "sub": "home-mitzvot",
+   "rank": 8
+  },
+  "shatnez": {
+   "sub": "home-mitzvot",
+   "rank": 9
+  },
+  "jewish-foods": {
+   "sub": "jewish-cooking",
+   "rank": 1
+  },
+  "baking-challah": {
+   "sub": "jewish-cooking",
+   "rank": 2
+  },
+  "jewish-chicken-soup": {
+   "sub": "jewish-cooking",
+   "rank": 3
+  },
+  "gefilte-fish": {
+   "sub": "jewish-cooking",
+   "rank": 4
+  },
+  "kugel": {
+   "sub": "jewish-cooking",
+   "rank": 5
+  },
+  "brisket": {
+   "sub": "jewish-cooking",
+   "rank": 6
+  },
+  "latkes": {
+   "sub": "jewish-cooking",
+   "rank": 7
+  },
+  "sufganiyot": {
+   "sub": "jewish-cooking",
+   "rank": 8
+  },
+  "hosting-a-kosher-guest": {
+   "sub": "jewish-cooking",
+   "rank": 9
+  },
+  "cooking-for-someone-in-need": {
+   "sub": "jewish-cooking",
+   "rank": 10
+  },
+  "jewish-parenting": {
+   "sub": "jewish-parenting",
+   "rank": 1
+  },
+  "being-a-jewish-mother": {
+   "sub": "jewish-parenting",
+   "rank": 2
+  },
+  "being-a-jewish-father": {
+   "sub": "jewish-parenting",
+   "rank": 3
+  },
+  "blessing-your-children": {
+   "sub": "jewish-parenting",
+   "rank": 4
+  },
+  "raising-kind-children": {
+   "sub": "jewish-parenting",
+   "rank": 5
+  },
+  "talking-to-kids-about-g-d": {
+   "sub": "jewish-parenting",
+   "rank": 6
+  },
+  "parsha-for-kids": {
+   "sub": "jewish-parenting",
+   "rank": 7
+  },
+  "children-money-and-tzedakah": {
+   "sub": "jewish-parenting",
+   "rank": 8
+  },
+  "volunteering-with-kids": {
+   "sub": "jewish-parenting",
+   "rank": 9
+  },
+  "tanya-for-parents": {
+   "sub": "jewish-parenting",
+   "rank": 10
+  },
+  "choosing-jewish-education": {
+   "sub": "jewish-parenting",
+   "rank": 11
+  },
+  "jewish-overnight-camp": {
+   "sub": "jewish-parenting",
+   "rank": 12
+  },
+  "raising-jewish-kids-in-a-small-community": {
+   "sub": "jewish-parenting",
+   "rank": 13
+  },
+  "shabbat-and-youth-sports": {
+   "sub": "jewish-parenting",
+   "rank": 14
+  },
+  "talking-to-kids-about-antisemitism": {
+   "sub": "jewish-parenting",
+   "rank": 15
+  },
+  "special-needs-and-jewish-life": {
+   "sub": "jewish-parenting",
+   "rank": 16
+  },
+  "shalom-bayit": {
+   "sub": "family-relationships",
+   "rank": 1
+  },
+  "marriage-arguments-jewish-wisdom": {
+   "sub": "family-relationships",
+   "rank": 2
+  },
+  "tanya-and-marriage": {
+   "sub": "family-relationships",
+   "rank": 3
+  },
+  "in-laws": {
+   "sub": "family-relationships",
+   "rank": 4
+  },
+  "family-tension-at-holiday-meals": {
+   "sub": "family-relationships",
+   "rank": 5
+  },
+  "jewish-grandparents": {
+   "sub": "family-relationships",
+   "rank": 6
+  },
+  "grandparenting-from-afar": {
+   "sub": "family-relationships",
+   "rank": 7
+  },
+  "caring-for-aging-parents": {
+   "sub": "family-relationships",
+   "rank": 8
+  },
+  "visiting-someone-in-a-nursing-home": {
+   "sub": "family-relationships",
+   "rank": 9
+  },
+  "recording-your-family-story": {
+   "sub": "family-relationships",
+   "rank": 10
+  },
+  "pets-and-jewish-life": {
+   "sub": "family-relationships",
+   "rank": 11
+  },
+  "pushka": {
+   "sub": "home-money-and-work",
+   "rank": 1
+  },
+  "giving-in-someones-honor": {
+   "sub": "home-money-and-work",
+   "rank": 2
+  },
+  "year-end-tzedakah": {
+   "sub": "home-money-and-work",
+   "rank": 3
+  },
+  "borrowing-and-lending": {
+   "sub": "home-money-and-work",
+   "rank": 4
+  },
+  "paying-workers-on-time": {
+   "sub": "home-money-and-work",
+   "rank": 5
+  },
+  "money-worries": {
+   "sub": "home-money-and-work",
+   "rank": 6
+  },
+  "losing-a-job": {
+   "sub": "home-money-and-work",
+   "rank": 7
+  },
+  "job-burnout": {
+   "sub": "home-money-and-work",
+   "rank": 8
+  },
+  "start-here-jewish-lamorinda": {
+   "sub": "lamorinda-start-here",
+   "rank": 1
+  },
+  "not-religious-welcome": {
+   "sub": "lamorinda-start-here",
+   "rank": 2
+  },
+  "moving-to-lamorinda": {
+   "sub": "lamorinda-start-here",
+   "rank": 3
+  },
+  "visiting-lamorinda": {
+   "sub": "lamorinda-start-here",
+   "rank": 4
+  },
+  "talk-to-a-rabbi": {
+   "sub": "lamorinda-start-here",
+   "rank": 5
+  },
+  "getting-involved-in-jewish-lamorinda": {
+   "sub": "lamorinda-start-here",
+   "rank": 6
+  },
+  "volunteering-in-lamorinda": {
+   "sub": "lamorinda-start-here",
+   "rank": 7
+  },
+  "supporting-chabad-of-lamorinda": {
+   "sub": "lamorinda-start-here",
+   "rank": 8
+  },
+  "sponsoring-a-kiddush": {
+   "sub": "lamorinda-start-here",
+   "rank": 9
+  },
+  "local-tzedakah-in-lamorinda": {
+   "sub": "lamorinda-start-here",
+   "rank": 10
+  },
+  "chabad-in-the-bay-area": {
+   "sub": "lamorinda-start-here",
+   "rank": 11
+  },
+  "jewish-history-of-contra-costa": {
+   "sub": "lamorinda-start-here",
+   "rank": 12
+  },
+  "shabbat-in-lamorinda": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 1
+  },
+  "shabbat-times-in-lamorinda-explained": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 2
+  },
+  "hosting-shabbat-guests-in-lamorinda": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 3
+  },
+  "shabbat-walks-in-lamorinda": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 4
+  },
+  "shabbat-for-lamorinda-commuters": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 5
+  },
+  "davening-on-the-commute": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 6
+  },
+  "torah-classes-in-lamorinda": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 7
+  },
+  "hebrew-lessons-in-lamorinda": {
+   "sub": "lamorinda-shabbat-and-classes",
+   "rank": 8
+  },
+  "jewish-year-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 1
+  },
+  "high-holidays-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 2
+  },
+  "building-a-sukkah-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 3
+  },
+  "chanukah-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 4
+  },
+  "light-up-lafayette": {
+   "sub": "lamorinda-holidays",
+   "rank": 5
+  },
+  "menorah-at-home-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 6
+  },
+  "chanukah-shopping-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 7
+  },
+  "purim-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 8
+  },
+  "passover-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 9
+  },
+  "lag-baomer-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 10
+  },
+  "hosting-family-for-the-holidays-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 11
+  },
+  "seasons-of-jewish-life-in-lamorinda": {
+   "sub": "lamorinda-holidays",
+   "rank": 12
+  },
+  "blessing-on-blossoming-trees": {
+   "sub": "lamorinda-holidays",
+   "rank": 13
+  },
+  "jewish-hiking-in-the-east-bay-hills": {
+   "sub": "lamorinda-holidays",
+   "rank": 14
+  },
+  "jewish-kids-in-lamorinda": {
+   "sub": "lamorinda-kids",
+   "rank": 1
+  },
+  "jewish-lamorinda-with-young-children": {
+   "sub": "lamorinda-kids",
+   "rank": 2
+  },
+  "new-parents-in-lamorinda": {
+   "sub": "lamorinda-kids",
+   "rank": 3
+  },
+  "choosing-a-jewish-preschool": {
+   "sub": "lamorinda-kids",
+   "rank": 4
+  },
+  "jewish-summer-camp-in-lamorinda": {
+   "sub": "lamorinda-kids",
+   "rank": 5
+  },
+  "hebrew-school-in-lamorinda": {
+   "sub": "lamorinda-kids",
+   "rank": 6
+  },
+  "jewish-holidays-and-lamorinda-school-calendars": {
+   "sub": "lamorinda-kids",
+   "rank": 7
+  },
+  "presenting-a-jewish-holiday-in-class": {
+   "sub": "lamorinda-kids",
+   "rank": 8
+  },
+  "jewish-teens-in-lamorinda": {
+   "sub": "lamorinda-kids",
+   "rank": 9
+  },
+  "bar-bat-mitzvah-in-lamorinda": {
+   "sub": "lamorinda-kids",
+   "rank": 10
+  },
+  "sending-a-lamorinda-teen-to-college": {
+   "sub": "lamorinda-kids",
+   "rank": 11
+  },
+  "jewish-women-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 1
+  },
+  "jewish-men-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 2
+  },
+  "jewish-seniors-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 3
+  },
+  "empty-nesters-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 4
+  },
+  "young-professionals-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 5
+  },
+  "jewish-students-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 6
+  },
+  "israelis-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 7
+  },
+  "raising-hebrew-speaking-kids-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 8
+  },
+  "russian-speaking-jews-in-lamorinda": {
+   "sub": "lamorinda-groups",
+   "rank": 9
+  },
+  "life-events-in-lamorinda": {
+   "sub": "lamorinda-life-events",
+   "rank": 1
+  },
+  "jewish-wedding-in-lamorinda": {
+   "sub": "lamorinda-life-events",
+   "rank": 2
+  },
+  "kosher-catering-for-a-simcha-in-lamorinda": {
+   "sub": "lamorinda-life-events",
+   "rank": 3
+  },
+  "kosher-in-lamorinda": {
+   "sub": "lamorinda-life-events",
+   "rank": 4
+  },
+  "jewish-home-in-lamorinda": {
+   "sub": "lamorinda-life-events",
+   "rank": 5
+  },
+  "mikvah-near-lafayette": {
+   "sub": "lamorinda-life-events",
+   "rank": 6
+  },
+  "hospital-stay-in-contra-costa": {
+   "sub": "lamorinda-life-events",
+   "rank": 7
+  },
+  "jewish-life-in-senior-living-lamorinda": {
+   "sub": "lamorinda-life-events",
+   "rank": 8
+  },
+  "jewish-funerals-near-lafayette": {
+   "sub": "lamorinda-life-events",
+   "rank": 9
+  },
+  "wildfire-readiness-for-jewish-families": {
+   "sub": "lamorinda-life-events",
+   "rank": 10
+  },
+  "when-a-loved-one-is-dying": {
+   "sub": "end-of-life",
+   "rank": 1
+  },
+  "hospice-and-end-of-life-care": {
+   "sub": "end-of-life",
+   "rank": 2
+  },
+  "jewish-health-care-directive": {
+   "sub": "end-of-life",
+   "rank": 3
+  },
+  "adding-a-name-for-healing": {
+   "sub": "tehillim",
+   "rank": 4
+  },
+  "first-hours-after-a-death": {
+   "sub": "end-of-life",
+   "rank": 5
+  },
+  "aninut": {
+   "sub": "end-of-life",
+   "rank": 6
+  },
+  "jewish-burial-financial-help": {
+   "sub": "jewish-burial",
+   "rank": 1
+  },
+  "why-jewish-burial-matters": {
+   "sub": "jewish-burial",
+   "rank": 2
+  },
+  "why-jews-bury-quickly": {
+   "sub": "jewish-burial",
+   "rank": 3
+  },
+  "cremation-jewish-view": {
+   "sub": "jewish-burial",
+   "rank": 4
+  },
+  "buying-a-jewish-cemetery-plot": {
+   "sub": "jewish-burial",
+   "rank": 5
+  },
+  "autopsy-jewish-view": {
+   "sub": "jewish-burial",
+   "rank": 6
+  },
+  "embalming-and-viewing-jewish-view": {
+   "sub": "jewish-burial",
+   "rank": 7
+  },
+  "chevra-kadisha-and-tahara": {
+   "sub": "jewish-burial",
+   "rank": 8
+  },
+  "plain-wooden-casket-and-shrouds": {
+   "sub": "jewish-burial",
+   "rank": 9
+  },
+  "jewish-burial-for-interfaith-families": {
+   "sub": "jewish-burial",
+   "rank": 10
+  },
+  "burial-in-israel": {
+   "sub": "jewish-burial",
+   "rank": 11
+  },
+  "planning-a-jewish-funeral-in-advance": {
+   "sub": "jewish-burial",
+   "rank": 12
+  },
+  "what-to-wear-to-a-jewish-funeral": {
+   "sub": "the-funeral",
+   "rank": 1
+  },
+  "jewish-funeral": {
+   "sub": "the-funeral",
+   "rank": 2
+  },
+  "writing-a-eulogy": {
+   "sub": "the-funeral",
+   "rank": 3
+  },
+  "kriah": {
+   "sub": "the-funeral",
+   "rank": 4
+  },
+  "kohen-at-a-funeral-or-cemetery": {
+   "sub": "the-funeral",
+   "rank": 5
+  },
+  "seudat-havraah": {
+   "sub": "the-funeral",
+   "rank": 6
+  },
+  "who-sits-shiva": {
+   "sub": "shiva",
+   "rank": 1
+  },
+  "shiva": {
+   "sub": "shiva",
+   "rank": 2
+  },
+  "setting-up-a-shiva-house": {
+   "sub": "shiva",
+   "rank": 3
+  },
+  "shiva-and-holidays": {
+   "sub": "shiva",
+   "rank": 4
+  },
+  "chanukah-while-in-mourning": {
+   "sub": "shiva",
+   "rank": 5
+  },
+  "returning-to-work-after-shiva": {
+   "sub": "shiva",
+   "rank": 6
+  },
+  "comforting-mourners": {
+   "sub": "comforting-and-grief",
+   "rank": 1
+  },
+  "what-to-bring-to-a-shiva-house": {
+   "sub": "comforting-and-grief",
+   "rank": 2
+  },
+  "writing-a-condolence-note": {
+   "sub": "comforting-and-grief",
+   "rank": 3
+  },
+  "coping-with-grief-jewish-wisdom": {
+   "sub": "comforting-and-grief",
+   "rank": 4
+  },
+  "tanya-and-grief": {
+   "sub": "comforting-and-grief",
+   "rank": 5
+  },
+  "grief-during-the-holidays": {
+   "sub": "comforting-and-grief",
+   "rank": 6
+  },
+  "talking-to-kids-about-death": {
+   "sub": "comforting-and-grief",
+   "rank": 7
+  },
+  "mourning-journey": {
+   "sub": "kaddish-and-the-year",
+   "rank": 1
+  },
+  "kaddish": {
+   "sub": "kaddish-and-the-year",
+   "rank": 2
+  },
+  "saying-kaddish-for-someone-else": {
+   "sub": "kaddish-and-the-year",
+   "rank": 3
+  },
+  "sheloshim": {
+   "sub": "kaddish-and-the-year",
+   "rank": 4
+  },
+  "year-of-mourning": {
+   "sub": "kaddish-and-the-year",
+   "rank": 5
+  },
+  "mourners-and-celebrations": {
+   "sub": "kaddish-and-the-year",
+   "rank": 6
+  },
+  "mourning-a-grandparent": {
+   "sub": "kaddish-and-the-year",
+   "rank": 7
+  },
+  "losing-a-spouse": {
+   "sub": "particular-losses",
+   "rank": 1
+  },
+  "losing-a-child": {
+   "sub": "particular-losses",
+   "rank": 2
+  },
+  "losing-a-parent": {
+   "sub": "particular-losses",
+   "rank": 3
+  },
+  "pregnancy-loss": {
+   "sub": "particular-losses",
+   "rank": 4
+  },
+  "suicide-and-jewish-mourning": {
+   "sub": "particular-losses",
+   "rank": 5
+  },
+  "loss-of-a-pet": {
+   "sub": "particular-losses",
+   "rank": 6
+  },
+  "jewish-headstone-inscription": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 1
+  },
+  "unveiling": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 2
+  },
+  "yahrzeit": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 3
+  },
+  "first-yahrzeit": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 4
+  },
+  "yahrzeit-candle": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 5
+  },
+  "memorial-plaque-in-the-synagogue": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 6
+  },
+  "learning-in-memory-of-a-loved-one": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 7
+  },
+  "giving-in-memory-of-a-loved-one": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 8
+  },
+  "yizkor": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 9
+  },
+  "el-malei-rachamim": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 10
+  },
+  "visiting-a-grave": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 11
+  },
+  "holocaust-remembrance": {
+   "sub": "yahrzeit-and-remembrance",
+   "rank": 12
+  },
+  "kosher": {
+   "sub": "kosher-basics",
+   "rank": 1
+  },
+  "keeping-kosher-one-step-at-a-time": {
+   "sub": "kosher-basics",
+   "rank": 2
+  },
+  "kosher-symbols": {
+   "sub": "kosher-basics",
+   "rank": 3
+  },
+  "kosher-certification": {
+   "sub": "kosher-basics",
+   "rank": 4
+  },
+  "hidden-kosher-ingredients": {
+   "sub": "kosher-basics",
+   "rank": 5
+  },
+  "meat-and-milk": {
+   "sub": "kosher-basics",
+   "rank": 6
+  },
+  "pareve": {
+   "sub": "kosher-basics",
+   "rank": 7
+  },
+  "vegan-and-vegetarian-kosher": {
+   "sub": "kosher-basics",
+   "rank": 8
+  },
+  "kosher-kitchen": {
+   "sub": "kosher-kitchen",
+   "rank": 1
+  },
+  "kosher-oven-and-microwave": {
+   "sub": "kosher-kitchen",
+   "rank": 2
+  },
+  "kosher-dishwasher-and-sink": {
+   "sub": "kosher-kitchen",
+   "rank": 3
+  },
+  "tevilat-kelim": {
+   "sub": "kosher-kitchen",
+   "rank": 4
+  },
+  "checking-for-insects": {
+   "sub": "kosher-kitchen",
+   "rank": 5
+  },
+  "kosher-eggs": {
+   "sub": "kosher-kitchen",
+   "rank": 6
+  },
+  "kosher-meat": {
+   "sub": "kosher-food-by-food",
+   "rank": 1
+  },
+  "kosher-salt": {
+   "sub": "kosher-food-by-food",
+   "rank": 2
+  },
+  "kosher-fish": {
+   "sub": "kosher-food-by-food",
+   "rank": 3
+  },
+  "chalav-yisrael": {
+   "sub": "kosher-food-by-food",
+   "rank": 4
+  },
+  "kosher-cheese": {
+   "sub": "kosher-food-by-food",
+   "rank": 5
+  },
+  "kosher-wine": {
+   "sub": "kosher-food-by-food",
+   "rank": 6
+  },
+  "kosher-beer-and-spirits": {
+   "sub": "kosher-food-by-food",
+   "rank": 7
+  },
+  "pas-yisrael-and-bishul-yisrael": {
+   "sub": "kosher-food-by-food",
+   "rank": 8
+  },
+  "kosher-coffee-and-tea": {
+   "sub": "kosher-food-by-food",
+   "rank": 9
+  },
+  "kosher-medicine-and-vitamins": {
+   "sub": "kosher-food-by-food",
+   "rank": 10
+  },
+  "kosher-shopping-at-the-supermarket": {
+   "sub": "kosher-shopping",
+   "rank": 1
+  },
+  "kosher-on-a-budget": {
+   "sub": "kosher-shopping",
+   "rank": 2
+  },
+  "kosher-for-passover": {
+   "sub": "kosher-shopping",
+   "rank": 3
+  },
+  "passover-shopping-list": {
+   "sub": "kosher-shopping",
+   "rank": 4
+  },
+  "gluten-free-passover": {
+   "sub": "kosher-shopping",
+   "rank": 5
+  },
+  "kosher-baby-food-and-formula": {
+   "sub": "kosher-shopping",
+   "rank": 6
+  },
+  "kosher-school-lunches": {
+   "sub": "kosher-shopping",
+   "rank": 7
+  },
+  "kosher-chanukah-candy-and-gelt": {
+   "sub": "kosher-shopping",
+   "rank": 8
+  },
+  "backyard-fruit-trees-orlah": {
+   "sub": "kosher-shopping",
+   "rank": 9
+  },
+  "israeli-produce-terumot-maasrot": {
+   "sub": "kosher-shopping",
+   "rank": 10
+  },
+  "keeping-kosher-with-family": {
+   "sub": "kosher-away",
+   "rank": 1
+  },
+  "eating-out-kosher": {
+   "sub": "kosher-away",
+   "rank": 2
+  },
+  "kosher-when-traveling": {
+   "sub": "kosher-away",
+   "rank": 3
+  },
+  "kosher-in-a-rental-kitchen": {
+   "sub": "kosher-away",
+   "rank": 4
+  },
+  "kosher-on-campus": {
+   "sub": "kosher-away",
+   "rank": 5
+  },
+  "kosher-grilling": {
+   "sub": "kosher-away",
+   "rank": 6
+  }
+ }
+}

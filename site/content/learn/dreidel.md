@@ -2,7 +2,7 @@
 title: How to Play Dreidel: Rules, Letters and Meaning
 description: How to play dreidel on Chanukah, what the four Hebrew letters mean, the simple rules of the game, and the history and deeper meaning of the dreidel.
 category: Shabbat & holidays
-related: chanukah-menorah, hebrew-alphabet, jewish-parenting, tzedakah
+related: chanukah-menorah, chanukah-facts-and-trivia, chanukah-in-israel, chanukah-crafts-for-kids, presenting-a-jewish-holiday-in-class, hebrew-alphabet, jewish-parenting, tzedakah
 local: Join our Chanukah celebrations for dreidels, latkes and menorah lighting. See chabadoflamorinda.com/holidays/chanukah or call 925-384-7242.
 ---
 A dreidel is a four-sided spinning top with a Hebrew letter on each side, played with on Chanukah. The letters stand for "Nes Gadol Hayah Sham," meaning "A great miracle happened there."
@@ -53,7 +53,7 @@ Chanukah gelt, coins given to children, goes hand in hand with the dreidel. It i
 Families often play with coins or chocolate as a lighthearted game. Many prefer to use candy or nuts, especially with children, to keep it about fun and not gambling.
 
 ### When do we play dreidel?
-Traditionally after lighting the [menorah](/learn/chanukah-menorah), while the candles burn. Since we do not do work or use the lights during the first half hour, games like dreidel are a fun way to stay near the menorah.
+Traditionally after lighting the [menorah](/learn/chanukah-menorah), while the candles burn. Since the candles burn for at least half an hour and we do not use their light for ordinary purposes, games like dreidel are a fun way to stay near the menorah.
 
 ### What do the Yiddish words have to do with the Hebrew letters?
 The Hebrew letters stand for "A great miracle happened there." The game rules use Yiddish words that begin with the same letters: nisht, gantz, halb and shtel. It is a clever double meaning.

@@ -1,6 +1,6 @@
 ---
 title: A Gift That Lasts: Leave a Legacy at Chabad of Lamorinda
-description: Remember Chabad of Lamorinda in your will, trust, retirement account or life insurance, and keep Jewish life strong in Lafayette, Moraga and Orinda for generations.
+description: Remember Chabad of Lamorinda in your will, trust, retirement account or life insurance, and keep Jewish life strong in Lafayette, Moraga and Orinda.
 ---
 The Talmud tells of Choni, who saw an old man planting a carob tree. "How long until it gives fruit?" Choni asked. "Seventy years," the man answered. "Do you expect to eat from it?" "I found a world full of carob trees," the man said, "planted by those who came before me. So I plant for my grandchildren."
 
@@ -8,20 +8,23 @@ Every Shabbat dinner, every child in Hebrew school, every family we help in a ha
 
 ## Ways to leave a legacy
 
-- **In your will or living trust:** name Chabad of Lamorinda for a specific amount, a percentage, or what remains after your loved ones are provided for.
-- **As a beneficiary of a retirement account** (IRA, 401(k), 403(b)): you fill in a simple form with the account's company; no new will is needed. Ask your advisor about the tax benefits for your heirs.
+- **In your will or living trust:** name Chabad of Lamorinda for a specific amount, a percentage, what remains after your loved ones are provided for, or your entire estate. (The limit of a fifth on giving applies during life, not at death.)
+- **As a beneficiary of a retirement account** (IRA, 401(k), 403(b)): you fill in a simple form with the account's company; no new will is needed. Ask your tax advisor how this works for you and your heirs.
 - **As a beneficiary of a life insurance policy.**
-- **From a donor-advised fund:** name Chabad of Lamorinda as a successor or beneficiary of the fund.
-- **In honor or in memory of someone:** your gift can carry a loved one's name, so their memory continues to do good.
+- **From a donor-advised fund:** Chabad of Lamorinda accepts donor-advised fund grants now, and you may also name it as a successor or beneficiary of the fund.
+- **A gift of stock:** Chabad of Lamorinda has a Fidelity brokerage account for gifts of stock. Call the Rabbi or the Rebbetzin and we will give you or your advisor the transfer details; ask your tax advisor about the tax side.
+- **In honor or in memory of someone:** your gift can carry a loved one's name, so their memory continues to do good. Chabad of Lamorinda gladly offers dedication opportunities, such as dedicating a room or a memorial plaque in the synagogue; consult the Rabbi.
+
+A legacy gift funds Jewish education for the next generation: children and families in Lafayette, Moraga and Orinda, the preschool, the Hebrew school and every Shabbat table. It is how Judaism stays alive here for the years to come. A legacy gift counts as maaser, and so does a donor-advised fund grant.
 
 ## For your attorney or advisor
 
-Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549. A 501(c)(3) nonprofit, tax ID 47-4642750. Your attorney can use this information in your will, trust or beneficiary forms.
+The name to use in wills, trusts and beneficiary forms is **Chabad of Lamorinda**, 3477 Golden Gate Way, Lafayette, CA 94549. A 501(c)(3) nonprofit, tax ID 47-4642750. Your attorney can use this information in your will, trust or beneficiary forms, and can start from our [Sample Bequest Language for Your Attorney](/learn/sample-bequest-language-for-attorneys).
 
 ## Let us know
 
-If you have included Chabad of Lamorinda in your plans, or are thinking about it, please tell the Rabbi. He would be honored to thank you, to hear what matters most to you, and to make sure your gift is used exactly as you wish. Everything is kept in confidence.
+If you have included Chabad of Lamorinda in your plans, or are thinking about it, please tell the Rabbi. He would be honored to thank you, to hear what matters most to you, and to make sure your gift is used exactly as you wish.  He is glad to speak with you privately.
 
-Call Rabbi Yisroel Labkowski at 925-384-7242, or [talk privately with the Rabbi](/help/talk-to-the-rabbi). You may also want to read about [an ethical will](/learn/ethical-will), the Jewish tradition of leaving your values to your children along with your possessions, and about [a will that follows Jewish law](/learn/halachic-will).
+Call Rabbi Yisroel Labkowski at 925-384-7242 or the Rebbetzin, Tzipora Labkowski, at 925-384-7241, or [talk privately with the Rabbi](/help/talk-to-the-rabbi). You may also want to read about [an ethical will](/learn/ethical-will), the Jewish tradition of leaving your values to your children along with your possessions, and about [a will that follows Jewish law](/learn/halachic-will).
 
 Leaving a legacy is not about the size of the gift. It is about saying: what I cared about will continue. That is the most Jewish thing there is.

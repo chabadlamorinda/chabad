@@ -2,7 +2,7 @@
 title: Практические вопросы о Шабате: свет, холодильник, лифты и телефоны
 description: Практические ответы о свете, таймерах, холодильнике, горячей воде, телефонах, лифтах, дверных звонках и готовке в Шабат, и как подготовиться заранее.
 category: Shabbat & holidays
-related: thirty-nine-melachot, keeping-food-warm-on-shabbat, electricity-on-shabbat, cooking-on-yom-tov, shabbat-for-beginners, eruv, shabbat-meals
+related: thirty-nine-melachot, wildfire-readiness-for-jewish-families, keeping-food-warm-on-shabbat, electricity-on-shabbat, cooking-on-yom-tov, shabbat-for-beginners, eruv, shabbat-meals
 local: Есть вопрос о Шабате у вас дома в Лафайетте, Мораге или Оринде? Позвоните раввину Лабковскому по телефону 925-384-7242 или смотрите chabadoflamorinda.com/shabbat.
 ---
 Большинство практических вопросов о Шабате сводятся к одной идее: в Шабат мы не создаём, не готовим, не разжигаем огонь и не включаем и не выключаем приборы, поэтому всё настраиваем до наступления Шабата. Свет можно оставить включённым или поставить на таймер, еду держат тёплой на закрытой плите или плате, а лампочку в холодильнике отключают заранее.

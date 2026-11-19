@@ -2,7 +2,7 @@
 title: The Ten Days of Repentance: Between Rosh Hashanah and Yom Kippur
 description: What the Ten Days of Teshuvah are, what Shabbat Shuvah is, and simple things to do between Rosh Hashanah and Yom Kippur: tzedakah, apologies, resolutions.
 category: Shabbat & holidays
-related: teshuvah, shabbat-shuva, forgiveness-and-making-peace, kapparot, kol-nidre, selichot
+related: teshuvah, iggeret-hateshuvah, avinu-malkeinu, shabbat-shuva, forgiveness-and-making-peace, kapparot, kol-nidre, selichot
 local: Chabad of Lamorinda welcomes everyone from Lafayette, Moraga and Orinda for Shabbat Shuvah and Yom Kippur, no membership needed; questions to Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Rosh Hashanah is over, and Yom Kippur is not here yet. The days in between are not a break. They are the *Aseret Yemei Teshuvah*, the Ten Days of Repentance (counting Rosh Hashanah and Yom Kippur themselves), and the Jewish tradition treats them as the most precious days of the year for setting things right.
@@ -19,7 +19,7 @@ The Shabbat that falls in these days is called **Shabbat Shuvah**, the Shabbat o
 
 During these days, many Jews take on something they do not keep all year, as a way of saying to G-d: see, I can. Some pray three times a day who usually do not; some are more careful about what they say of others. The point is to show ourselves what we are capable of. See [teshuvah](/learn/teshuvah) and [lashon hara](/learn/lashon-hara).
 
-The daily prayers also change. We add a few lines to the Amidah asking to be "remembered for life," and we say *Avinu Malkeinu*, "Our Father, our King," each morning and afternoon. If you pray on your own, these additions are in every siddur. See [the Amidah](/learn/amidah).
+The daily prayers also change. We add a few lines to the Amidah asking to be "remembered for life," and we say *Avinu Malkeinu*, "Our Father, our King," each weekday morning and afternoon (not on Shabbat). If you pray on your own, these additions are in every siddur. See [the Amidah](/learn/amidah).
 
 ## Tzedakah
 

@@ -2,7 +2,7 @@
 title: Zot Chanukah: the Eighth Day of Chanukah
 description: Why the last day of Chanukah is called Zot Chanukah, the Torah reading behind the name, its meaning in Chassidic teaching, and how to make it count.
 category: Shabbat & holidays
-related: chanukah-menorah, lessons-of-chanukah, chanukah-story, al-hanissim-and-hallel, chanukah-for-kids
+related: chanukah-menorah, chanukah-torah-reading, leftover-chanukah-oil-and-wicks, chanukah-night-by-night, lessons-of-chanukah, chanukah-story, al-hanissim-and-hallel, chanukah-for-kids
 local: Light all eight candles with us: see the Chanukah page for this year's menorah lightings and events for Lafayette, Moraga and Orinda, or call 925-384-7242.
 ---
 The eighth and last day of Chanukah has a name of its own: **Zot Chanukah**, "This is Chanukah." On the night before, all eight candles burn together, the brightest night of the year. The day itself is seen as the high point and the summary of the whole festival.
@@ -17,7 +17,7 @@ Seven stands for the natural world, the seven days of creation. Eight stands for
 
 ## A last chance from the High Holidays
 
-Chassidic and Kabbalistic teaching explains that the judgment of Rosh Hashanah and Yom Kippur is fully sealed only on Zot Chanukah. The days of Chanukah, and Zot Chanukah most of all, are a time when a prayer, a good resolution or an act of kindness carries special weight. Many people use the day to pray for their families and for anyone who needs a blessing.
+Chassidic and Kabbalistic teaching explains that the judgment of Rosh Hashanah and Yom Kippur is sealed by Hoshana Rabbah, but, according to the mystics, it is only "delivered" during Chanukah. The days of Chanukah, and Zot Chanukah most of all, are a time when a prayer, a good resolution or an act of kindness carries special weight. Many people use the day to pray for their families and for anyone who needs a blessing.
 
 ## How to make the day count
 

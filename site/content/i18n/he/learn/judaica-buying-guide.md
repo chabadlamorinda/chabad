@@ -2,7 +2,7 @@
 title: מדריך לקניית יודאיקה: תשמישי קדושה חיוניים לבית
 description: הפריטים היהודיים שכל בית יכול להשתמש בהם, מפמוטי שבת ועד גביע קידוש, חנוכייה ומזוזות, ועל מה להקפיד כשקונים אותם.
 category: Jewish home
-related: setting-up-a-jewish-home, jewish-gift-ideas, choosing-a-mezuzah, jewish-home-library
+related: setting-up-a-jewish-home, shabbat-essentials-for-your-home, choosing-a-kosher-menorah, jewish-gift-ideas, choosing-a-mezuzah, jewish-home-library
 local: מקימים בית יהודי בלאפייט, מוראגה או אורינדה? הרב ישראל לבקובסקי ישמח לעזור לכם לבחור את מה שאתם צריכים: 925-384-7242.
 ---
 בית יהודי נבנה ממצוות, לא מחפצים. ובכל זאת, הפריטים הנכונים הופכים את המצוות לקלות ויפות יותר, ורבים מהם הופכים לנכסי משפחה שעוברים מדור לדור. הנה הדברים החיוניים, ומה חשוב כשקונים אותם.

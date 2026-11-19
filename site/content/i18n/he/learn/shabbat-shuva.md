@@ -2,7 +2,7 @@
 title: שבת שובה: השבת שבין ראש השנה ליום כיפור
 description: מהי שבת שובה, ההפטרה המיוחדת, דרשת הרב, למה היא נקראת שבת שובה, ואיך להפוך אותה למשמעותית.
 category: Shabbat & holidays
-related: ten-days-of-repentance, teshuvah, yom-kippur-for-beginners, haftarah, shabbat
+related: ten-days-of-repentance, tanya-and-the-jewish-year, teshuvah, yom-kippur-for-beginners, haftarah, shabbat
 local: הצטרפו אלינו לשבת בעשרת ימי תשובה; כל אחד מלאפייט, מוראגה ואורינדה מוזמן. התקשרו לרב לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן.
 ---
 שבת שובה היא השבת שבין ראש השנה ליום כיפור. היא נקראת על שם המילים הפותחות את ההפטרה המיוחדת שלה, "שובה ישראל". זהו יום עדין ומלא תקווה, אחד הזמנים הטובים בשנה לבוא לבית הכנסת ולחשוב על תשובה.

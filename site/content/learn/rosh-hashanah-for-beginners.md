@@ -2,7 +2,7 @@
 title: Rosh Hashanah for Beginners: Your First Jewish New Year
 description: New to Rosh Hashanah? What the day means, why we hear the shofar, the festive meals, tashlich, greetings and how to make it meaningful.
 category: Shabbat & holidays
-related: shofar, rosh-hashanah-simanim, tashlich, yom-kippur-for-beginners, first-time-at-synagogue
+related: shofar, chanukah-for-beginners, high-holidays-in-lamorinda, binding-of-isaac, four-jewish-new-years, tishrei, unetaneh-tokef, rosh-hashanah-simanim, tashlich, yom-kippur-for-beginners, first-time-at-synagogue
 local: Every Jew from Lafayette, Moraga and Orinda is welcome on Rosh Hashanah; no membership, no Hebrew needed. Call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned this year.
 ---
 Rosh Hashanah is the Jewish New Year, but it looks nothing like December 31st: a ram's horn, a round challah dipped in honey, a day in the synagogue, and a quiet sense of standing before G-d and starting again. If this is your first time, here is what to expect.
@@ -29,7 +29,7 @@ On the afternoon of the first day (or the second, if the first is Shabbat), we w
 
 ## Candles and greetings
 
-Candles are lit before the holiday begins on both evenings, with the festival blessing and [Shehecheyanu](/learn/shehecheyanu). See [Shabbat and holiday times](/shabbat-times) for Lafayette.
+Candles are lit on both evenings (on the first before sunset, on the second after nightfall from an existing flame), with the festival blessing and [Shehecheyanu](/learn/shehecheyanu). See [Shabbat and holiday times](/shabbat-times) for Lafayette.
 
 The greeting is "Shanah tovah" (a good year) or "Shanah tovah u'metukah" (a good and sweet year); on the first night many add "May you be written and sealed for a good year." See [holiday greetings](/learn/holiday-greetings).
 
@@ -45,7 +45,7 @@ Bring the kids; see [Rosh Hashanah with kids](/learn/rosh-hashanah-with-kids). T
 Yes, fully. Chabad prayer books generally have English on every page, the rabbi explains what is happening, and hearing the shofar needs no reading at all. See [your first time at synagogue](/learn/first-time-at-synagogue).
 
 ### What should I wear?
-Neat and modest, as for a nice occasion. Men wear a kippah (most synagogues keep extras at the door), and many wear something white or new in honor of the day.
+Neat and modest, as for a nice occasion. Men wear a kippah (most synagogues keep extras at the door), and many dress in their holiday best, some in white, in honor of the day.
 
 ### Is Rosh Hashanah one day or two?
 Two days, everywhere in the world, including Israel, each a full holiday with the shofar, meals and services.

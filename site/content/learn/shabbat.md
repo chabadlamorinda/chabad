@@ -2,7 +2,7 @@
 title: Shabbat: What It Is and How to Celebrate It
 description: A plain-English guide to Shabbat, the Jewish day of rest: what it means, when it starts and ends, and how to celebrate it at home step by step.
 category: Shabbat & holidays
-related: shabbat-candles, holiday-greetings, kiddush, challah, havdalah
+related: shabbat-candles, tanya-and-shabbat, why-jews-bury-quickly, unplugging-on-shabbat, shmita, holiday-greetings, kiddush, challah, havdalah
 local: We would love to have you at a Shabbat table and can help you start your own Shabbat at home. Call 925-384-7242.
 ---
 Shabbat (Sabbath) is the Jewish day of rest, from just before sunset on Friday until nightfall on Saturday. It is a weekly gift of 25 hours to step away from work and screens and focus on family, friends, prayer, good food and G-d.
@@ -30,7 +30,7 @@ You do not have to do everything at once. Each mitzvah is valuable on its own.
 4. **Make Kiddush.** Before the meal, say [Kiddush](/learn/kiddush) over wine or grape juice.
 5. **Wash and eat challah.** Wash hands with a cup, then say Hamotzi over two loaves of [challah](/learn/challah).
 6. **Enjoy the meals.** Shabbat has three meals: Friday night, Saturday lunch and a light third meal late Saturday afternoon. Sing, share Torah thoughts and linger.
-7. **Rest.** On Shabbat we refrain from creative work (melachah), such as writing, cooking, driving, using electronics and handling money.
+7. **Rest.** On Shabbat we refrain from creative work (melachah), such as writing, cooking, driving and using electronics. We also do not handle money or tools (see [muktzeh](/learn/muktzeh)).
 8. **Say goodbye with Havdalah.** After nightfall on Saturday, [Havdalah](/learn/havdalah) separates Shabbat from the new week.
 
 ## What is not done on Shabbat

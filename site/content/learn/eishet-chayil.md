@@ -2,7 +2,7 @@
 title: Eishet Chayil: A Woman of Valor, Sung on Friday Night
 description: What Eishet Chayil (A Woman of Valor) is, why it is sung before Kiddush on Friday night, its meaning, and the deeper Jewish interpretations.
 category: Shabbat & holidays
-related: shalom-aleichem, zemirot, jewish-women, kiddush, shabbat-meals
+related: shalom-aleichem, marriage-advice-for-husbands, king-solomon, zemirot, jewish-women, kiddush, shabbat-meals
 local: Experience Eishet Chayil at a Shabbat table with Chabad of Lamorinda. See chabadoflamorinda.com/shabbat or call 925-384-7242.
 ---
 Eishet Chayil, "A Woman of Valor," is a 22-verse poem from the end of the Book of Proverbs that is sung at home on Friday night before Kiddush. It praises the wise, kind and capable woman who builds a Jewish home, and it is often sung by a husband and children in honor of the woman of the house.
@@ -53,7 +53,7 @@ There are many tunes, some lively and some slow. Some families go around the tab
 Traditionally the husband sings it, often joined by the children, as a tribute to his wife. Anyone may sing it, and in many homes the whole family sings together.
 
 ### What if I am single or there is no woman at the table?
-It is still sung. Because of its deeper meanings about Shabbat, the Torah and the soul, Eishet Chayil is said every Friday night by everyone, not only by married men.
+Many families still sing it, because of its deeper meanings about Shabbat, the Torah and the soul, and it is not only married men who sing it. Ask the Rabbi about your family's custom.
 
 ### Is Eishet Chayil only for Friday night?
 It is sung on Friday night, and it is also often read at a woman's funeral as a tribute to her life. Some brides and couples choose verses from it for their wedding.

@@ -1,7 +1,7 @@
 ---
 title: סן פרנסיסקו היהודית: מדריך למבקרים ולמצטרפים חדשים
 description: מבקרים או עוברים לאזור המפרץ? מדריך חם לסן פרנסיסקו היהודית: קהילות היסטוריות, מוזיאונים ואוסף מגנס בברקלי.
-category: Jewish ideas
+category: Lamorinda
 related: jewish-east-bay, jewish-bay-area-history, chabad-in-the-bay-area, visiting-lamorinda
 local: מבקרים מהעיר או בדרך אלינו? התקשרו 925-384-7242 ונקבל אתכם בשמחה לשבת.
 ---

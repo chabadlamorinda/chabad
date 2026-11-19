@@ -2,7 +2,7 @@
 title: Angels in Judaism: G-d's Messengers, from Abraham to Friday Night
 description: What angels are in Jewish teaching: Michael, Gabriel, Raphael and Uriel, angels created by mitzvahs, and why we sing Shalom Aleichem.
 category: Jewish ideas
-related: shalom-aleichem, bedtime-shema, the-soul, kabbalah
+related: shalom-aleichem, kedushah, bedtime-shema, the-soul, kabbalah
 local: Questions about prayer or Jewish belief in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski, 925-384-7242.
 ---
 Angels appear throughout the Torah, from the visitors who came to Abraham's tent to the ladder in Jacob's dream. The Hebrew word for angel, **malach**, simply means "messenger." Angels are spiritual beings created by G-d to carry out His will.

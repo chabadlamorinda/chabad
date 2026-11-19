@@ -29,7 +29,7 @@ These are followed by a series of short requests beginning "Harachaman," "May th
 
 ## Zimun: inviting others to bless
 
-When three or more men eat bread together, one leads a zimun, an invitation to bless: "Rabbotai, nevarech," "Friends, let us bless." The others answer, and then everyone continues. With ten men, the word Elo-heinu, "our G-d," is added. Women may make their own zimun when three or more eat together.
+When three or more men eat bread together, one leads a zimun, an invitation to bless: "Rabbotai, nevarech," "Friends, let us bless." The others answer, and then everyone continues. With ten men, the word Elo-heinu, "our G-d," is added. Women may also make their own zimun when three or more eat together; ask the Rabbi or Rebbetzin how it is done.
 
 ## Additions for special days
 

@@ -2,7 +2,7 @@
 title: The Seven Species: The Fruits and Grains of the Land of Israel
 description: What are the seven species of Israel? Wheat, barley, grapes, figs, pomegranates, olives and dates: their meaning, blessings and a Tu BiShvat table.
 category: Shabbat & holidays
-related: tu-bishvat-seder, blessings, blessings-after-food, shevat, jewish-foods
+related: tu-bishvat-seder, olive-oil-in-jewish-tradition, tu-bishvat-for-kids, a-person-is-like-a-tree, blessings, blessings-after-food, shevat, jewish-foods
 local: Bring the children to learn about the fruits of Israel: call Rabbi Yisroel Labkowski at 925-384-7242 to hear about Tu BiShvat plans for families in Lafayette, Moraga and Orinda, or visit /kids.
 ---
 The seven species (שבעת המינים, Shivat HaMinim) are the seven foods with which the Torah praises the land of Israel: wheat, barley, grapes, figs, pomegranates, olives and dates. They appear in the verse in Deuteronomy 8:8, and are traditionally eaten on Tu BiShvat.
@@ -21,7 +21,7 @@ The Torah describes Israel as "a land of wheat and barley, of vines, figs and po
 
 ## What do they mean?
 
-Chabad.org notes that the seven correspond to the seven emotional attributes of the soul in Kabbalah: wheat is chesed (kindness), barley gevurah (strength), grapes tiferet (harmony), figs netzach (perseverance), pomegranates hod (humility), olives yesod (foundation) and dates malchut (royalty).
+Chassidic teaching explains that the seven correspond to the seven emotional attributes of the soul in Kabbalah: wheat is chesed (kindness), barley gevurah (strength), grapes tiferet (harmony), figs netzach (perseverance), pomegranates hod (humility), olives yesod (foundation) and dates malchut (royalty).
 
 There is a simple lesson too. The two grains are necessary for sustenance, and the five fruits add pleasure to life. A Jewish life needs both: what we need, and what we enjoy, each with a blessing.
 
@@ -36,14 +36,14 @@ You can find the words in [blessings](/learn/blessings), and for blessings on fo
 
 ## The after-blessing
 
-After eating the five fruits, there is a special after-blessing, *Al Ha'etz*. Grain foods that are not bread have *Al HaMichyah*, and bread has *Birkat HaMazon*. Chabad.org notes that this is the special blessing for the fruits of Israel. For the words and how much you must eat, see [blessings after food](/learn/blessings-after-food). If you are not sure which blessing to say, ask the Rabbi.
+After eating the five fruits, there is a special after-blessing, *Al Ha'etz*. Grain foods that are not bread have *Al HaMichyah*, and bread has *Birkat HaMazon*. This is the special blessing for the fruits of Israel. For the words and how much you must eat, see [blessings after food](/learn/blessings-after-food). If you are not sure which blessing to say, ask the Rabbi.
 
 ## A Tu BiShvat table to set at home
 
 Set a table with the seven species and a few other fruits. Here is a simple plan:
 
 1. Put out dates, figs, pomegranate seeds, grapes and olives, with a little bread or a cookie made of wheat or barley.
-2. Say the blessing on each fruit in the order of the verse: the one mentioned earlier in the verse is eaten first.
+2. Say the blessing on each fruit. There is a traditional order of precedence among the seven species; ask the Rabbi which to eat first.
 3. Say one word of thanks for a land, a season and a year of growth.
 4. Say the after-blessing at the end.
 

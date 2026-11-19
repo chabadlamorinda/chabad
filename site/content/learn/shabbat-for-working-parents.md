@@ -2,7 +2,7 @@
 title: Shabbat for Working Parents: Making It Work With a Busy Life
 description: How busy parents can make Shabbat work: planning ahead, simple menus, getting home on time, one ritual at a time, involving kids and putting devices away.
 category: Shabbat & holidays
-related: shabbat-with-kids, technology-and-screens-jewish-view, shabbat-for-beginners, shabbat-meals, shabbat-candles
+related: shabbat-with-kids, telling-your-boss-you-keep-shabbat, shabbat-for-lamorinda-commuters, job-burnout, early-shabbat-in-summer, technology-and-screens-jewish-view, shabbat-for-beginners, shabbat-meals, shabbat-candles
 local: Families in Lafayette, Moraga, Orinda and the East Bay: call Rabbi Yisroel or Rebbetzin Tzipora Labkowski for ideas or a Shabbat meal together, 925-384-7242.
 ---
 Between work, school, sports and everything else, Friday can feel like the busiest day of the week. Yet many busy families find that Shabbat is exactly what they need: one day each week when the phones go away and the family sits together. You do not need to do everything at once. Here is how to make it work.
@@ -14,7 +14,7 @@ Pick one thing and keep it every week:
 - **Light [Shabbat candles](/learn/shabbat-candles)** before sunset on Friday.
 - **Say [Kiddush](/learn/kiddush)** over wine or grape juice and eat challah together.
 - **A family Friday-night dinner,** with phones off.
-- **Bless the children** before the meal.
+- **Bless the children** before the meal, if that is your family's custom (ask the Rabbi).
 
 When one ritual feels natural, add another. See [Shabbat for Beginners](/learn/shabbat-for-beginners).
 

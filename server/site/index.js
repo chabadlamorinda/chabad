@@ -59,15 +59,22 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   // Any secret value works (Render's generated ones contain + and /): it is turned into a 32-letter hex key.
   const indexNowKey = env.INDEXNOW_KEY ? require('crypto').createHash('sha256').update(env.INDEXNOW_KEY).digest('hex').slice(0, 32) : '';
   const siteHost = /onrender\.com$|localhost|127\.0\.0\.1|site\.test/.test(host) ? '' : new URL(base).hostname; // text addresses follow the real domain
+  // Campaigns the Rabbi set up in the Rabbi area (campaign-settings.js) are merged over campaigns.json.
+  const CS = require('./campaign-settings.js');
+  let campaignItems = {};
+  const withCampaigns = (d) => (Object.keys(campaignItems).length ? { ...d, campaigns: CS.mergeCampaigns(d.campaigns, campaignItems) } : d);
   let data = load(contentDir, { siteHost }); // throws with a clear list if a content file is wrong
   const content = () => data;
   // Kabbalat Shabbat moves with sunset: work out this week's time, and again every hour.
   const refreshKabbalat = async () => {
-    try { const k = await kabbalatShabbat(data.org.kabbalatShabbat); if (k && k !== data.kabbalat) data = load(contentDir, { kabbalat: k, siteHost }); } catch (e) { log.error('kabbalat shabbat time:', e && e.message); }
+    try { const k = await kabbalatShabbat(data.org.kabbalatShabbat); if (k && k !== data.kabbalat) data = withCampaigns(load(contentDir, { kabbalat: k, siteHost })); } catch (e) { log.error('kabbalat shabbat time:', e && e.message); }
   };
   const kabbalatReady = data.org.kabbalatShabbat ? refreshKabbalat() : Promise.resolve();
   if (data.org.kabbalatShabbat) setInterval(refreshKabbalat, 3600e3).unref();
-  app.use((req, res, next) => kabbalatReady.then(() => next(), () => next()));
+  const campaignsReady = store && store.pool && store.getKv
+    ? Promise.resolve().then(async () => { await store.pool.query(CS.SCHEMA); campaignItems = (await store.getKv(CS.KEY, null)) || {}; data = withCampaigns(data); }).catch((e) => log.error('campaign settings:', e && e.message))
+    : Promise.resolve();
+  app.use((req, res, next) => Promise.all([kabbalatReady, campaignsReady]).then(() => next(), () => next()));
   const i18n = createI18n(contentDir || DIR), ctxOf = makeCtx({ content, i18n });
   const langOf = (req) => (LANGS.includes(req.get('x-lang')) ? req.get('x-lang') : 'en');
   const tOf = (req) => i18n.makeT(langOf(req));
@@ -97,6 +104,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const forward = new Set(String(env.FORWARD_DOMAINS || 'jewishlamorinda.org').split(',').map((d) => d.trim().toLowerCase().replace(/^www\./, '')).filter(Boolean));
   forward.delete(host);
   app.use((req, res, next) => (forward.has(String(req.hostname || '').toLowerCase().replace(/^www\./, '')) ? res.redirect(301, base + req.originalUrl) : next()));
+  // www.jewishlamorinda.com is the same page twice for Google (and a duplicate in its index): send it to the main address, keeping the page.
+  app.use((req, res, next) => (host && String(req.hostname || '').toLowerCase() === 'www.' + host ? res.redirect(301, base + req.originalUrl) : next()));
   // Old Chabad.org addresses (/3186196, /templates/.../aid/3186196/..., /article.asp?aid=3186196) keep working.
   app.use((req, res, next) => {
     if (req.method !== 'GET' && req.method !== 'HEAD') return next();
@@ -128,6 +137,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
   let ask = null, yearly = null;
   mountSeo(r, { content, base, indexable, upcoming: pages.upcoming, more: async () => [...(yearly ? yearly.paths(content()) : []), ...(ask ? (await ask.published()).map((x) => '/ask/' + encodeURIComponent(x.slug)) : [])] });
+  require('./addcal.js').mountAddCal(r, { content, base });
   mountTools(r, { render: pages.render, wrap, ctxOf });
   const reading = require('./reading.js').mountReading({ store, content, log });
   // Lists put what visitors open most first (popular.js).
@@ -142,8 +152,9 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountFun(r, { render: pages.render, wrap, ctxOf, base });
   mountGetApp(r, { render: pages.render, wrap, ctxOf, base });
   mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base, store });
+  CS.mountPublic(r, { store, wrap });
   mountFlyer(r, { wrap, ctxOf, base });
-  const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
+  const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', signUpNews: (p) => weekly.subscribe(p) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   mountMitzvah(app, r, { store, render: pages.render, wrap, ctxOf, limit, base, log });
   ask = mountAsk(r, { store, render: pages.render, wrap, ctxOf, base, faqLd: pages.faqLd, crumbs: pages.crumbs });
@@ -169,7 +180,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
 <h2>${esc(t('What you get'))}</h2><div class="grid">${items.map(([a, h, d]) => `<div class="card tile has-art">${require('./art.js').artImg(a)}<h3>${esc(t(h))}</h3><p>${esc(t(d))}</p></div>`).join('')}</div>
 <p class="muted">${esc(t('We never share your email.'))} <a href="/privacy">${esc(t('Privacy'))}</a> · <a href="/this-week">${esc(t('See this week'))}</a></p></section>` });
   }));
-  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, notifyTo: env.ADMIN_EMAIL || '', townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
+  const mail = createReminders({ store, mailer, base, org: data.org, log, i18n, content, notifyTo: env.ADMIN_EMAIL || '', townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   if (reminders && mail) mail.start();
   // Account page: the form is drawn by site.js from /api/site/me.
   r.get('/account', wrap(async (req, res) => {
@@ -191,23 +202,32 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   };
   return {
     content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
-    reload() { data = load(contentDir, { kabbalat: data.kabbalat, siteHost }); refreshKabbalat(); return data; },
+    reload() { data = withCampaigns(load(contentDir, { kabbalat: data.kabbalat, siteHost })); refreshKabbalat(); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {
       // Which settings are in place (yes/no only, never the values), matching store/rabbi-todo.md.
-      r2.get('/api/site/setup', ctx.authed, ctx.wrap(async (req, res) => res.json({ items: [
+      r2.get('/api/site/setup', ctx.authed, ctx.wrap(async (req, res) => {
+      // Email: not just "is it set", but "does it connect to the mail server" (and what the server says if not).
+      let mail = { done: !!env.SMTP_URL, note: '' };
+      if (env.SMTP_URL && mailer && mailer.verify) {
+        try { await Promise.race([mailer.verify(), new Promise((_, no) => setTimeout(() => no(new Error('no answer from the mail server in 12 seconds (the connection may be blocked)')), 12000))]); }
+        catch (e) { mail = { done: false, note: 'it is set, but it cannot send: ' + String((e && (e.response || e.message)) || e).replace(/\s+/g, ' ').slice(0, 200) }; }
+      }
+      res.json({ items: [
         { label: 'Database (sign-in, RSVPs, lists)', done: !!store, todo: 1 },
-        { label: 'Email sending', done: !!env.SMTP_URL, todo: 3 },
+        { label: 'Email sending', done: mail.done, note: mail.note, todo: 3 },
         { label: 'Where requests are emailed', done: !!env.ADMIN_EMAIL, todo: 4 },
         { label: 'AI answers in the chat (optional, costs a little)', done: !!env.ANTHROPIC_API_KEY, todo: 5, optional: true },
         { label: 'Facebook page', done: !!(env.FB_PAGE_ID && env.FB_PAGE_TOKEN), todo: 6 },
         { label: 'Instagram', done: !!env.IG_USER_ID, todo: 6, optional: true },
         { label: 'Google Analytics', done: !!env.GA_ID, todo: 8, optional: true },
         { label: 'Website address (jewishlamorinda.com) connected', done: !!env.PUBLIC_URL && !/onrender\.com/.test(env.PUBLIC_URL), todo: 20 },
-        { label: 'Google Search Console', done: !!env.GOOGLE_SITE_VERIFICATION, todo: 10 },
+        { label: 'Google Search Console', done: true, todo: 10 }, // verified Nov 16 with the file /google782f93ba7cc8f3ad.html (served by seo.js), so no GOOGLE_SITE_VERIFICATION is needed
         { label: 'Phone notifications for the app', done: !!(env.VAPID_PUBLIC_KEY || process.env.VAPID_PUBLIC_KEY), todo: 11, optional: true },
         { label: 'The weekly email goes out by itself (Website, Weekly email)', done: !!(store && store.getKv && ((await store.getKv('email-auto', null).catch(() => null)) || {}).on), todo: 3, optional: true },
-      ] })));
+      ] }); }));
+      CS.mountAdmin(r2, ctx, { store, content, funds: () => ((data.giving && data.giving.funds) || []).map((f) => f.id), getItems: () => campaignItems,
+        setItems: (items) => { campaignItems = items; data = withCampaigns(load(contentDir, { kabbalat: data.kabbalat, siteHost })); }, log });
       mountCommunityAdmin(r2, ctx, { cs: community.cs, content, store });
       mountSocialAdmin(r2, ctx, { store, content, fb, base, when: pages.when });
       board.mountAdmin(r2, ctx);
@@ -220,6 +240,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       ask.mountAdmin(r2, ctx);
       outreach.mountAdmin(r2, ctx);
       require('../backup.js').mountBackupAdmin(r2, ctx, { store });
+      require('./secure-settings.js').mountAdmin(r2, ctx, { store, env, secret, log, notify: require('./notify.js').makeNotify({ mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, log }) });
       r2.get('/community', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.html')));
       r2.get('/community.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.js')));
     },

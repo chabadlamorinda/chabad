@@ -2,7 +2,7 @@
 title: Megillah Reading on Purim: How and When to Hear the Book of Esther
 description: What the Megillah is, why we read the Book of Esther on Purim, when to hear it night and day, the blessings, and why we make noise at Haman.
 category: Shabbat & holidays
-related: mishloach-manot, purim-in-lamorinda, purim-for-beginners, the-four-mitzvahs-of-purim, fast-of-esther, purim-for-kids, tzedakah, fast-days, jewish-calendar
+related: mishloach-manot, purim-story, purim-in-lamorinda, purim-for-beginners, the-four-mitzvahs-of-purim, fast-of-esther, purim-for-kids, tzedakah, fast-days, jewish-calendar
 local: Hear the Megillah and celebrate Purim with us. See chabadoflamorinda.com/holidays/purim or call 925-384-7242 if you need the Megillah read for you.
 ---
 The Megillah is the Book of Esther, handwritten on a parchment scroll and read aloud on Purim, once at night and once during the day. Hearing every word of it is one of the four mitzvot of Purim.
@@ -59,4 +59,4 @@ No. The mitzvah requires hearing the reading directly from the person reading it
 The Fast of Esther, on the day before Purim, recalls how Esther and the Jewish people fasted and prayed before she approached the king. When Purim falls on Sunday, the fast is moved to the Thursday before.
 
 ### What if I miss a word?
-If you missed a word, you can read it yourself from a printed text and catch up to the reader, and you still fulfill the mitzvah. Paying close attention makes this rarely necessary.
+Listen closely, since every word must be heard. If you missed a word, ask the Rabbi what to do; usually it is read quietly from a Megillah while you catch up with the reader. Paying close attention makes this rarely necessary.

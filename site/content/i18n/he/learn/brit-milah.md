@@ -2,7 +2,7 @@
 title: ברית מילה: מדריך פשוט לטקס הברית
 description: מהי ברית מילה, למה עושים אותה ביום השמיני, מי משתתף בה ולמה לצפות בטקס.
 category: Life cycle
-related: baby-naming, abraham-and-sarah, shalom-zachar, adult-brit-milah, preparing-for-a-bris, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
+related: baby-naming, chanukah-and-the-number-eight, choosing-a-mohel, attending-a-bris, postponing-a-bris, decrees-of-the-greeks, hebrew-names-for-boys, sandek-and-kvater, elijah-the-prophet, abraham-and-sarah, shalom-zachar, adult-brit-milah, preparing-for-a-bris, life-events-in-lamorinda, jewish-baby-shower, hebrew-names, mikvah, 613-mitzvot
 local: מצפים לבן? התקשרו לרב לבקובסקי בטלפון 925-384-7242 ונעזור לכם לתכנן ברית יפה ואת החגיגה שאחריה.
 ---
 ברית מילה (שנקראת לפעמים פשוט "ברית" או "בריס") היא טקס המילה היהודי, שנעשה לתינוק ביום השמיני לחייו. היא מציינת את כניסתו לברית שה׳ כרת עם אברהם, והיא אחת המסורות העתיקות והנפוצות ביותר בחיים היהודיים.
@@ -46,7 +46,7 @@ local: מצפים לבן? התקשרו לרב לבקובסקי בטלפון 925-
 
 ### הברית חייבת להיות ביום השמיני?
 
-כן, כשהתינוק בריא. יום הלידה נחשב ליום הראשון, כך שתינוק שנולד ביום שני עושה ברית ביום שני שאחריו. זכרו שהיום היהודי מתחיל בשקיעה, ולכן לידה אחרי השקיעה נחשבת ליום שאחרי.
+כן, כשהתינוק בריא. יום הלידה נחשב ליום הראשון, כך שתינוק שנולד ביום שני עושה ברית ביום שני שאחריו. זכרו שהיום היהודי מתחיל בשקיעה, ולכן לידה אחרי השקיעה נחשבת ליום שאחרי. אם התינוק נולד בסביבות השקיעה, היום ספק, ולכן שאלו את הרב מיד.
 
 ### מילה בבית חולים נחשבת לברית?
 

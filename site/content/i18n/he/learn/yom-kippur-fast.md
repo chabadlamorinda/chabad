@@ -2,7 +2,7 @@
 title: צום יום כיפור: הלכות, טיפים ומי פטור
 description: איך מתנהל צום יום כיפור של 25 שעות, חמשת העינויים, מי לא צריך לצום, טיפים לצום קל יותר ואיך שוברים את הצום.
 category: Shabbat & holidays
-related: teshuvah, yom-kippur-for-beginners, kapparot, fast-days, yizkor, selichot
+related: teshuvah, break-fast-after-yom-kippur, yom-kippur-with-kids, yom-kippur-for-beginners, kapparot, fast-days, yizkor, selichot
 local: שריינו מקומות לימים הנוראים ב-chabadoflamorinda.com/forms/high-holidays וראו פרטים על יום כיפור ב-chabadoflamorinda.com/holidays/yom-kippur.
 ---
 ביום כיפור יהודים צמים כ-25 שעות, מלפני השקיעה ועד אחרי צאת הכוכבים למחרת, בלי אוכל ובלי שתייה כלל. הצום הוא חלק מהיום הקדוש ביותר בשנה, יום של תפילה, [תשובה](/learn/teshuvah) וקרבה לה׳.

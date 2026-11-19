@@ -21,7 +21,7 @@ Chassidic teaching adds that Shabbat Mevarchim is the source of blessing for the
 ## The order of the prayer
 
 1. **Announcing the molad.** The cantor or gabbai announces the molad, the calculated moment the new moon is "born," in days, hours and chalakim (parts of an hour).
-2. **Yehi ratzon.** In many communities, a prayer that the coming month bring "life, peace, goodness, blessing, sustenance, physical health" and more. The text comes from a personal prayer of the Talmudic sage Rav.
+2. **Yehi ratzon.** In many communities (but not the Chabad custom, which goes straight to the next step), a prayer that the coming month bring "life, peace, goodness, blessing, sustenance, physical health" and more. The text comes from a personal prayer of the Talmudic sage Rav.
 3. **Mi she'asah nissim.** "He who performed miracles for our ancestors" and redeemed them from slavery, may He redeem us soon.
 4. **The announcement.** Holding the Torah scroll, the cantor declares the name of the new month and the day or days on which Rosh Chodesh falls, and the congregation repeats.
 5. **Closing blessing.** A final prayer that the month bring life and peace, joy, salvation and comfort.

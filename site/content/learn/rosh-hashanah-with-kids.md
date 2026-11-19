@@ -2,7 +2,7 @@
 title: Rosh Hashanah with Kids: Apples, Honey and the Shofar
 description: Rosh Hashanah for children: the new year simply explained, the shofar, apples in honey, round challah, Tashlich, cards and one good deed.
 category: Shabbat & holidays
-related: shofar, rosh-hashanah-simanim, tashlich, challah, holidays-with-toddlers
+related: shofar, yom-kippur-with-kids, rosh-hashanah-simanim, tashlich, challah, holidays-with-toddlers
 local: Chabad of Lamorinda in Lafayette celebrates Rosh Hashanah with families from Lafayette, Moraga and Orinda, and Lamorinda Hebrew School meets Sundays 10 AM to 12 PM for ages 3 to 13. This year's dates and events: chabadoflamorinda.com/holidays/rosh-hashanah or 925-384-7242.
 ---
 Rosh Hashanah is the birthday of the world and the start of the Jewish new year. For children it can be sweet in every sense: apples and honey, the sound of the shofar, and a fresh start.

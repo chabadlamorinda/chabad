@@ -2,7 +2,7 @@
 title: שבת להורים עובדים: איך לשלב אותה בחיים עמוסים
 description: איך הורים עסוקים יכולים לשמור שבת: תכנון מראש, תפריט פשוט, להגיע הביתה בזמן, מנהג אחד בכל פעם, שיתוף הילדים והנחת המכשירים בצד.
 category: Shabbat & holidays
-related: shabbat-with-kids, technology-and-screens-jewish-view, shabbat-for-beginners, shabbat-meals, shabbat-candles
+related: shabbat-with-kids, telling-your-boss-you-keep-shabbat, shabbat-for-lamorinda-commuters, job-burnout, early-shabbat-in-summer, technology-and-screens-jewish-view, shabbat-for-beginners, shabbat-meals, shabbat-candles
 local: משפחות בלאפייט, מוראגה, אורינדה ובאיסט ביי: התקשרו לרב ישראל או לרבנית ציפורה לבקובסקי לרעיונות או לסעודת שבת משותפת, 925-384-7242.
 ---
 בין עבודה, בית ספר, חוגי ספורט וכל השאר, יום שישי יכול להרגיש כמו היום העמוס ביותר בשבוע. ובכל זאת משפחות עסוקות רבות מגלות שהשבת היא בדיוק מה שהן צריכות: יום אחד בשבוע שבו הטלפונים הולכים הצידה והמשפחה יושבת יחד. אין צורך לעשות הכול בבת אחת. הנה איך לגרום לזה לעבוד.
@@ -14,7 +14,7 @@ local: משפחות בלאפייט, מוראגה, אורינדה ובאיסט ב
 - **להדליק [נרות שבת](/learn/shabbat-candles)** לפני השקיעה ביום שישי.
 - **לעשות [קידוש](/learn/kiddush)** על יין או מיץ ענבים ולאכול חלה יחד.
 - **ארוחת ליל שבת משפחתית,** עם טלפונים כבויים.
-- **לברך את הילדים** לפני הסעודה.
+- **לברך את הילדים** לפני הסעודה, אם זה מנהג משפחתכם (שאלו את הרב).
 
 כשמנהג אחד מרגיש טבעי, הוסיפו עוד אחד. ראו [שבת למתחילים](/learn/shabbat-for-beginners).
 

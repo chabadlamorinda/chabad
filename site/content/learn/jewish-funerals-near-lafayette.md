@@ -2,15 +2,17 @@
 title: When Someone Dies in Lafayette, Moraga or Orinda: Jewish Funeral and Burial Near Lamorinda
 description: Who to call when a Jewish person dies near Lafayette, Moraga or Orinda, and how Jewish burial works in the East Bay. Call Rabbi Labkowski, 925-384-7242.
 category: Lamorinda
-related: jewish-funeral, when-a-loved-one-is-dying, mourning-journey, shiva, cremation-jewish-view
+related: jewish-funeral, buying-a-jewish-cemetery-plot, jewish-burial-financial-help, what-to-wear-to-a-jewish-funeral, when-a-loved-one-is-dying, mourning-journey, shiva, cremation-jewish-view
 local: Call Rabbi Labkowski any hour at 925-384-7242, or see /help for what to do first.
 ---
-When a Jewish person dies in Lafayette, Moraga, Orinda or anywhere in Contra Costa County, call Rabbi Yisroel Labkowski at 925-384-7242 right away, ideally before calling a funeral home or signing anything. (If a death is sudden, call 911 first.) He coordinates with the Chevra Kadisha, the Jewish burial society, for a Jewish burial and helps plan the funeral and shiva for every family, member or not.
+When a Jewish person dies in Lafayette, Moraga, Orinda or anywhere in Contra Costa County, call Rabbi Yisroel Labkowski at 925-384-7242 right away, before calling the burial society or a funeral home or signing anything. (If a death is sudden, call 911 first.) He will guide your family through every step and make the arrangements with the Chevra Kadisha, the Jewish burial society, for a Jewish burial, and he helps plan the funeral and shiva for every family, member or not.
+
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 at once.**
 
 ## What to do first, step by step
 
 1. **Call 911 if the death is sudden.** Otherwise, stay calm and take a moment.
-2. **Call Rabbi Labkowski at 925-384-7242.** He will guide you and answer questions at any hour. Chabad.org also advises calling a rabbi first.
+2. **Call Rabbi Labkowski at 925-384-7242.** He will guide you and answer questions at any hour. It is always best to call a rabbi first.
 3. **Do not sign anything yet.** Before agreeing to anything with a funeral home, speak with the Rabbi. Jewish law calls for burial, and cremation and embalming are against Jewish law. See [cremation: the Jewish view](/learn/cremation-jewish-view).
 4. **Do not leave the body alone.** The Jewish custom is that a *shomer* (שׁוֹמֵר, "guardian") stays with the deceased, often reciting Psalms, until burial. Ask the Rabbi how this is arranged.
 5. **Plan the funeral soon.** Jewish funerals are held as soon as practical, usually within a day or two, though family traveling from afar may be accommodated. Ask the Rabbi.
@@ -36,7 +38,7 @@ Burial begins the seven days of shiva (שִׁבְעָה), when family sits toget
 ## Common questions
 
 ### Who can I call when a Jewish person dies in Contra Costa County?
-Call Rabbi Yisroel Labkowski at 925-384-7242 right away, ideally before calling a funeral home or signing anything. He coordinates with the Chevra Kadisha and helps for every family, member or not.
+Call Rabbi Yisroel Labkowski at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241) right away, before calling the burial society (Chevra Kadisha) or a funeral home or signing anything. He will guide you through every step and make the arrangements, for every family, member or not.
 
 ### Is there a Jewish cemetery near Lafayette?
 Yes. Gan Shalom Cemetery in Briones, near Lafayette, is an all-Jewish cemetery. Oakmont Memorial Park in Lafayette has also had Jewish burial areas. Ask the Rabbi which is right for your family.

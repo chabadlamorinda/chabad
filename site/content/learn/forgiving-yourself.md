@@ -2,7 +2,7 @@
 title: Forgiving Yourself: What Judaism Teaches About Guilt and Starting Again
 description: Teshuvah is complete and G-d forgives. So why can't we forgive ourselves? Helpful vs. paralyzing guilt, the Tanya's advice and practical steps.
 category: Jewish ideas
-related: teshuvah, changing-a-bad-habit, forgiveness-and-making-peace, simcha, mental-health-jewish-view
+related: teshuvah, starting-over-after-you-fall, tanya-on-forgiving-others, sadness-versus-bitterness, changing-a-bad-habit, forgiveness-and-making-peace, simcha, mental-health-jewish-view
 local: Carrying something heavy? Rabbi Yisroel and Rebbetzin Tzipora Labkowski listen privately, for anyone in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 You said the words you cannot take back, or made the choice that hurt someone, and you have apologized, repaired what you could, and resolved never again. And still, at night, it comes back. Judaism has a great deal to say about forgiving others, and just as much about the harder task: forgiving yourself.

@@ -6,7 +6,8 @@
 //  /sponsor              sponsor a Kiddush, a Shabbat dinner or a class for a yahrzeit, birthday, simcha or recovery
 'use strict';
 const { byPopularity } = require('./popular.js');
-const { md, esc } = require('./md.js');
+const { md: md0, askRabbi, esc } = require('./md.js');
+const md = (src) => askRabbi(md0(src));
 const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
 const { validYmd } = require('./tools.js');
@@ -18,7 +19,10 @@ const FINAL = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
 // The monthly cycle of Tehillim by day of the Hebrew month (on a 29-day month, day 29 also says day 30's portion).
 const MONTHLY = ['1-9', '10-17', '18-22', '23-28', '29-34', '35-38', '39-43', '44-48', '49-54', '55-59', '60-65', '66-68', '69-71', '72-76', '77-78', '79-82', '83-87', '88-89', '90-96', '97-103', '104-105', '106-107', '108-112', '113-118', '119:1-96', '119:97-176', '120-134', '135-139', '140-144', '145-150'];
 const sefaria = (ref, lang) => `https://www.sefaria.org/Psalms.${ref}?lang=${lang === 'he' ? 'he' : 'bi'}`;
-const giveUrl = (fund, ded) => `/donate?fund=${encodeURIComponent(fund || 'general')}&ded=${encodeURIComponent(String(ded || '').slice(0, 80))}#give`; // the giving form on /donate, filled in
+const giveUrl = (fund, ded, amt) => `/donate?fund=${encodeURIComponent(fund || 'general')}${amt ? '&amt=' + Number(amt) : ''}&ded=${encodeURIComponent(String(ded || '').slice(0, 80))}#give`;
+// What each way of marking an occasion usually costs (the Rabbi's figures): the giving form opens with this amount chosen.
+// "more": the amount is a starting point, shown as "or more".
+const SPONSOR_AMOUNT = { 'shabbat-dinner': { amt: 360 }, preschool: { amt: 1800, more: true }, holiday: { amt: 720, more: true } }; // the giving form on /donate, filled in
 
 // Which extra boxes a help page shows.
 const HELP_EXTRAS = {
@@ -28,12 +32,7 @@ const HELP_EXTRAS = {
 
 function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, prayerList }) {
   const phoneLink = (o) => `<a class="btn gold call" href="tel:${esc(o.phone.replace(/[^0-9+]/g, ''))}" dir="ltr">${esc(o.phone)}</a>`;
-  const rabbiForm = (X, subject, kind = 'rabbi') => `<form class="card tool" data-submit data-kind="${kind}">
-  <p class="muted">${esc(X.t('Private and confidential: only the Rabbi reads it.'))}</p>
-  <input type="hidden" name="title" value="${esc(subject)}">
-  <label>${esc(X.t('How can we help?'))} <textarea name="body" rows="5" maxlength="2000" required></textarea></label>
-  <div class="fields"><label>${esc(X.t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(X.t('Your email'))} <input name="email" type="email" autocomplete="email" required></label><label>${esc(X.t('Phone (optional)'))} <input name="phone" type="tel" autocomplete="tel" data-extra="Phone"></label></div>
-  <button class="btn gold" type="submit">${esc(X.t('Send to the Rabbi'))}</button><p class="msg" hidden></p></form>`;
+  const rabbiForm = require('./askform.js').rabbiForm;
 
   // ---------- life situations ----------
   r.get('/help', wrap(async (req, res) => {
@@ -67,6 +66,7 @@ function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, praye
 <h1>${esc(h.title)}</h1>
 <div class="card callbox${h.urgent === 'yes' ? ' urgent' : ''}"><p><strong>${esc(h.urgent === 'yes' ? t('Call the Rabbi now. We will guide you through every step.') : t('Call the Rabbi. We are here to help.'))}</strong></p><p class="btns">${callRow(X)}<a class="btn ghost" href="#message">${esc(t('Send a message'))}</a></p>${o.rebbetzinMobile ? `<p class="muted">${esc(t('Or talk privately with Rebbetzin Tzipora Labkowski:'))} <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').call)}" data-lead="consult" data-channel="call" data-who="rebbetzin" dir="ltr">${esc(o.rebbetzinMobile)}</a> · <a href="${esc(leadLinks(o, 'consult', t, 'rebbetzin').whatsapp)}" data-lead="consult" data-channel="whatsapp" data-who="rebbetzin" rel="noopener" target="_blank">WhatsApp</a></p>` : ''}</div>
 ${require('./forms.js').startCard(X, '/help/' + h.slug)}
+${require('./give.js').legacyOn('help', h) ? require('./give.js').legacyAside(X) : ''}
 ${md(h.body)}
 ${extras ? `<div class="grid">${extras}</div>` : ''}
 ${h.faq.length ? `<h2>${esc(t('Common questions'))}</h2>${faqHtml(h.faq)}` : ''}
@@ -89,7 +89,8 @@ ${readNext(X, rel.map((x) => ({ ...x, description: (C.learn.find((a) => '/learn/
 <h2 id="arrange">${esc(t('Have Kaddish said for your loved one'))}</h2>
 <p>${esc(t('If you cannot be at a minyan every day, the custom is to arrange for someone to say Kaddish on your behalf, and to give charity in the merit of the departed. We will make sure Kaddish is said for the full eleven months, on the yahrzeit, or both, and the Rabbi will remember your loved one by name.'))}</p>
 <p>${esc(k.amount ? t('Suggested donation: ${amount}', { amount: k.amount }) : t('With a donation of your choice.'))}</p>
-<form class="card tool" data-submit data-kind="kaddish" data-title="Kaddish: {deceased}" data-after="give">
+<p>${esc(t('A memorial plaque can also be added in the synagogue. Tick the box in the form and the Rabbi will call you.'))}</p>
+<form class="card tool" data-submit data-kind="kaddish" data-title="Kaddish: {deceased}" data-after="give" data-gift="${esc(k.fund || 'general')}" data-gift-ded="${esc(t('Kaddish for {name}'))}">
   <div class="fields">
     <label>${esc(t('Name of the departed'))} <input name="deceased" required data-extra="Name"></label>
     <label>${esc(t('Hebrew name (if known)'))} <input name="hebrew" data-extra="Hebrew name"></label>
@@ -98,6 +99,7 @@ ${readNext(X, rel.map((x) => ({ ...x, description: (C.learn.find((a) => '/learn/
     <label>${esc(t('Date of passing'))} <input type="date" name="date" data-extra="Date of passing"></label>
   </div>
   <label class="check"><input type="checkbox" name="night" value="after sunset" data-extra="After sunset"> ${esc(t('Passed after sunset'))}</label>
+  <label class="check"><input type="checkbox" name="plaque" value="yes" data-extra="Interested in a memorial plaque"> ${esc(t('I would like to hear about a memorial plaque in the synagogue'))}</label>
   <label>${esc(t('Kaddish for'))} <select name="period" data-extra="Kaddish for"><option value="11 months">${esc(t('The eleven months'))}</option><option value="every yahrzeit">${esc(t('Every yahrzeit'))}</option><option value="11 months and every yahrzeit">${esc(t('Both'))}</option><option value="this yahrzeit">${esc(t('This yahrzeit'))}</option></select></label>
   <div class="fields"><label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email" required></label><label>${esc(t('Phone (optional)'))} <input name="phone" type="tel" data-extra="Phone"></label></div>
   <button class="btn gold" type="submit">${esc(t('Arrange Kaddish'))}</button><p class="msg" hidden></p>
@@ -146,7 +148,7 @@ ${sit}
 <form class="tool" method="get" action="/tehillim#name119"><label>${esc(t('Hebrew name (in Hebrew letters)'))} <input name="name" lang="he" dir="rtl" value="${esc(name)}" required></label><button class="btn ghost" type="submit">${esc(t('Show the sections'))}</button></form>${byName}</section>
 <div class="card callbox"><p><strong>${esc(t('Someone needs prayers or help? Talk with the Rabbi.'))}</strong></p><p class="btns">${callRow(X)}</p></div>
 <section class="card tehillim" id="prayer-list"><h2>${esc(t('Add a name to our prayer list'))}</h2><p>${esc(t('The Rabbi and the community pray for everyone on our list, and the name is mentioned at the Torah reading (Mi Shebeirach). Please give the Hebrew name and the mother\'s Hebrew name if you know them.'))}</p>
-<form class="tool" data-submit data-kind="tehillim" data-title="{pname} ben/bat {pmother}">
+<form class="tool" data-submit data-kind="tehillim" data-title="{pname} ben/bat {pmother}" data-gift="general" data-gift-ded="${esc(t('For a complete recovery for {name}'))}">
   <div class="fields"><label>${esc(t('Name (Hebrew name if known)'))} <input name="pname" required data-extra="Name"></label><label>${esc(t("Mother's name (Hebrew if known)"))} <input name="pmother" data-extra="Mother's name"></label>
   <label>${esc(t('For'))} <select name="reason" data-extra="For"><option value="refuah">${esc(t('A complete recovery'))}</option><option value="birth">${esc(t('An easy and healthy birth'))}</option><option value="match">${esc(t('Finding a match'))}</option><option value="children">${esc(t('Children'))}</option><option value="livelihood">${esc(t('Livelihood'))}</option><option value="other">${esc(t('Other'))}</option></select></label></div>
   <label>${esc(t('Anything the Rabbi should know (private)'))} <textarea name="body" rows="3" maxlength="1000"></textarea></label>
@@ -164,7 +166,7 @@ ${sit}
     // "Add a loved one": their name (and Hebrew name), the occasion, and the dedication carries into every way to mark it.
     const hn = String(req.query.hn || '').trim().slice(0, 60), who = who0 && hn ? `${who0} (${hn})` : who0 || hn;
     const ded = oc ? (who ? oc.dedication.replace('{name}', who) : oc.dedication.replace(/\s*\{name\}('s)?\s*/, ' ').replace(/\s+/g, ' ').trim()) : '';
-    const opts = S.options.map((p) => `<div class="card dir-i"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p><p><a class="btn ${p.id === 'kiddush' ? 'gold' : 'ghost'} sm" href="${p.url ? esc(p.url) : esc(giveUrl(p.fund, ded))}">${esc(p.id === 'kiddush' ? t('Choose a Shabbat') : t('Sponsor'))}</a></p></div>`).join('');
+    const opts = S.options.map((p) => { const sa = SPONSOR_AMOUNT[p.id], money = sa && '$' + sa.amt.toLocaleString('en-US'); return `<div class="card dir-i"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p>${sa ? `<p class="small"><strong>${esc(t(sa.more ? 'Suggested gift: {amount} or more' : 'Suggested gift: {amount}', { amount: money }))}</strong></p>` : ''}<p><a class="btn ${p.id === 'kiddush' ? 'gold' : 'ghost'} sm" href="${p.url ? esc(p.url) : esc(giveUrl(p.fund, ded, sa && sa.amt))}">${esc(p.id === 'kiddush' ? t('Choose a Shabbat') : t('Sponsor'))}</a></p></div>`; }).join('');
     const sit = oc && { yahrzeit: 'yahrzeit', refuah: 'refuah', 'new-baby': 'new-baby', birthday: 'birthday' }[oc.id];
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor in honor or memory of a loved one'))}</h1>
 <p class="lead-d">${esc(S.intro)}</p>

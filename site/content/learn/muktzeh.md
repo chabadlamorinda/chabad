@@ -2,7 +2,7 @@
 title: Muktzeh: What Not to Move on Shabbat and Why
 description: What muktzeh means on Shabbat: money, phones, tools and candlesticks, the main categories in simple terms, and tips to prepare your home before Shabbat.
 category: Shabbat & holidays
-related: thirty-nine-melachot, shabbat-practical-questions, shabbat-for-beginners, shabbat-candles
+related: thirty-nine-melachot, shabbat-walks-in-lamorinda, shabbat-practical-questions, shabbat-for-beginners, shabbat-candles
 local: Have a muktzeh question about your home in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Muktzeh means "set aside." On Shabbat, certain objects are set aside and not moved, even inside the house. Money, phones, tools, pens and the lit Shabbat candlesticks are common examples. The idea is simple: things that belong to the workweek stay put, so Shabbat feels like a different kind of day.
@@ -44,7 +44,7 @@ Muktzeh rules give way in an emergency that may endanger life ([pikuach nefesh](
 A phone is generally treated as muktzeh, so it is not moved or used. Put it away before Shabbat begins. If you need it nearby for a medical reason, ask the Rabbi.
 
 ### Are Shabbat candlesticks muktzeh?
-Yes. Once candles are lit on them, the candlesticks are not moved for the rest of Shabbat, even after the candles go out. Set them up before lighting where they can stay.
+Yes. While the candles burn, the candlesticks are not moved. Whether they may be moved after the candles go out depends on the case, so ask the Rabbi. It is easiest to set them up before lighting where they can stay.
 
 ### Is a pen or pencil muktzeh?
 Yes. A pen is a tool for writing, which is forbidden on Shabbat. It may be moved only for a permitted use or if you need its place; it is easiest to put pens away before Shabbat.

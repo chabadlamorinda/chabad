@@ -88,16 +88,19 @@ function createI18n(dir) {
       forms: overlay(en.forms || [], j('forms.json')),
       giving: overlay(en.giving || {}, j('giving.json')),
       home: overlay(en.home || {}, j('home.json')),
-      campaigns: overlay(en.campaigns || [], j('campaigns.json')),
+      // (a campaign set up in the Rabbi area may carry its own he / ru words: title, tagline, eyebrow, story)
+      campaigns: overlay(en.campaigns || [], j('campaigns.json')).map((c) => (c[lang] ? { ...c, ...Object.fromEntries(Object.entries(c[lang]).filter(([k, v]) => ['title', 'tagline', 'eyebrow', 'story'].includes(k) && typeof v === 'string' && v.trim())) } : c)),
       jokes: overlay(en.jokes || [], j('jokes.json')),
       series: overlay(en.series || [], j('series.json')),
       stories: overlay(en.stories || [], j('stories.json')),
+      topics: en.topics || { categories: [], guides: {} }, // names in three languages are inside
       rabbiWords: en.rabbiWords || [], // translations are inside each entry (he, ru)
       events: en.events.map((e) => (e[lang] ? { ...e, ...Object.fromEntries(Object.entries(e[lang]).filter(([k, v]) => ['title', 'summary', 'details', 'price'].includes(k) && typeof v === 'string' && v.trim())) } : e)),
       pages: md('pages', en.pages),
       holidays: md('holidays', en.holidays),
       learn: md('learn', en.learn),
       help: md('help', en.help || []),
+      parsha: md('parsha', en.parsha || []),
     };
     // Event locations follow the translated org name when they are "at the center".
     for (const e of data.events) if (!e.location) e.loc = { ...e.loc, name: data.org.name };

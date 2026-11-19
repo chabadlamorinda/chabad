@@ -2,16 +2,16 @@
 title: Women and Chanukah: Yehudit's Courage and the Half Hour Without Work
 description: Why Jewish women pause from work while the Chanukah lights burn, Yehudit's story and the dairy custom. Join the Women's Circle in Lafayette.
 category: Shabbat & holidays
-related: the-maccabees, jewish-women, chanukah-foods, chanukah-menorah, lessons-of-chanukah
+related: the-maccabees, chana-and-her-seven-sons, who-lights-the-chanukah-menorah, jewish-women, chanukah-foods, chanukah-menorah, lessons-of-chanukah
 local: Women from Lafayette, Moraga and Orinda are warmly invited to the Jewish Women's Circle; see /programs/womens-circle or call 925-384-7242.
 ---
 Jewish women traditionally do not do work while the Chanukah lights are burning, and the custom honors Yehudit (Judith) and the women who played a central role in the Chanukah miracle. The lights are holy and are there only to publicize the miracle, so for that half hour the women of the home simply sit, watch and enjoy.
 
 ## Why women pause from work
 
-Chabad.org gives two reasons. First, the Chanukah lights exist only to remind us of the miracle and are not to be used for any other purpose. By not working in their glow, women make sure the light is never mistaken for ordinary lighting.
+There are two reasons. First, the Chanukah lights exist only to remind us of the miracle and are not to be used for any other purpose. By not working in their glow, women make sure the light is never mistaken for ordinary lighting.
 
-Second, women are obligated to light, but many fulfill the mitzvah through a menorah lit by the family. Pausing from work once the lights are lit shows that the mitzvah was not forgotten or neglected. Chabad.org adds that women across the generations felt a special affinity for the Chanukah lights and found their own ways to honor them.
+Second, women are obligated to light, but many fulfill the mitzvah through a menorah lit by the family. Pausing from work once the lights are lit shows that the mitzvah was not forgotten or neglected. Women across the generations felt a special affinity for the Chanukah lights and found their own ways to honor them.
 
 ## How long, and which work?
 

@@ -2,7 +2,7 @@
 title: In the Hospital in Contra Costa: A Jewish Guide for Patients and Families
 description: Jewish and in the hospital near Lafayette, Walnut Creek or Contra Costa? Ask for a rabbi visit, kosher food and Shabbat help. Call 925-384-7242.
 category: Lamorinda
-related: bikur-cholim, shabbat-in-the-hospital, prayer-before-surgery, mi-sheberach, tehillim
+related: bikur-cholim, chanukah-in-the-hospital, shabbat-in-the-hospital, prayer-before-surgery, mi-sheberach, tehillim
 local: Someone in the hospital? Call Rabbi Labkowski at 925-384-7242 or see /help.
 ---
 If you or a loved one is in the hospital in Contra Costa County, tell the staff you are Jewish, and call Rabbi Yisroel Labkowski at 925-384-7242. He visits at home, in hospitals, care facilities and hospice across the area, including Lafayette, Moraga, Orinda, Pleasant Hill and Martinez, and we will add the patient's name to our [Tehillim prayer list](/tehillim).
@@ -17,7 +17,7 @@ If you or a loved one is in the hospital in Contra Costa County, tell the staff 
 
 ## Visiting the sick
 
-Visiting the sick, *bikur cholim* (בִּקּוּר חוֹלִים), is a mitzvah, and Chabad.org teaches that a visit gives the patient strength. Come with a warm word, listen, and don't stay too long. Read [bikur cholim](/learn/bikur-cholim) and [Mi Sheberach](/learn/mi-sheberach).
+Visiting the sick, *bikur cholim* (בִּקּוּר חוֹלִים), is a mitzvah, and a visit gives the patient strength. Come with a warm word, listen, and don't stay too long. Read [bikur cholim](/learn/bikur-cholim) and [Mi Sheberach](/learn/mi-sheberach).
 
 ## Shabbat and holidays in the hospital
 

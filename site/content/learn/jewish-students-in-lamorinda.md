@@ -2,7 +2,7 @@
 title: Jewish Students at Saint Mary's College and Diablo Valley College: Shabbat Dinners and Holidays
 description: Jewish students at Saint Mary's College in Moraga and Diablo Valley College in Pleasant Hill: Shabbat dinners, holidays and a Rabbi nearby in Lafayette.
 category: Lamorinda
-related: jewish-college-students, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
+related: jewish-college-students, exam-stress-jewish-wisdom, menorah-in-an-apartment-or-condo, shabbat-meals, hachnasat-orchim, shabbat-for-beginners
 local: Students, RSVP for a Shabbat dinner at chabadoflamorinda.com/forms/shabbat-meal or call 925-384-7242.
 ---
 Studying at **Saint Mary's College of California** in Moraga or at **Diablo Valley College** in Pleasant Hill, and wondering where to find Shabbat, a holiday meal or just a Jewish face? Chabad of Lamorinda, at 3477 Golden Gate Way in Lafayette, is your Jewish home away from home. Jewish students are always welcome for Shabbat dinner and for the holidays. No membership, no cost to belong and no background needed.
@@ -33,7 +33,7 @@ High Holiday services need no tickets. [Reserving a seat](/forms/high-holidays) 
 
 ## Learning, questions and a Rabbi to talk to
 
-College raises big questions about identity, faith, relationships and the future. Rabbi Labkowski is glad to meet with you, study one-on-one on any topic, or just talk, in complete confidence. Weekly classes run on Sunday evening (English Torah), Tuesday evening (in Hebrew, with a meal) and Wednesday afternoon (Tanya). See [adult education](/programs/adult-education), or [talk to the Rabbi](/help/talk-to-the-rabbi).
+College raises big questions about identity, faith, relationships and the future. Rabbi Labkowski is glad to meet with you, study one-on-one on any topic, or just talk, in complete confidence. Weekly classes run on Sunday evening (English Torah), Tuesday evening (in Hebrew, with a meal) and Wednesday afternoon (Tanya, at 1:00 PM at the Rabbi's home in Lafayette; it is open to teens and students, and to everyone). See [adult education](/programs/adult-education), or [talk to the Rabbi](/help/talk-to-the-rabbi).
 
 Going through a hard time? You do not have to carry it alone. See [grief and hard times](/help/grief-and-hard-times).
 

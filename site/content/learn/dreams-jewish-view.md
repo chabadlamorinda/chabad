@@ -2,7 +2,7 @@
 title: Dreams in Judaism: What the Torah and Talmud Say About Dreams
 description: Dreams in Jewish tradition: Joseph and Daniel, what the Talmud teaches, what to do after a disturbing dream, and the prayer said during Birkat Kohanim.
 category: Jewish ideas
-related: bedtime-shema, the-soul, talmud, bitachon
+related: bedtime-shema, joseph-and-his-brothers, the-soul, talmud, bitachon
 local: Had a dream that is bothering you? Call Rabbi Yisroel Labkowski in Lafayette, 925-384-7242. He is glad to talk.
 ---
 Everyone dreams, and some dreams stay with us long after we wake up. The Torah is full of dreams, and the Talmud discusses them at length. Judaism takes dreams seriously, but not too seriously.

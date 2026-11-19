@@ -1,0 +1,17 @@
+{
+  "name": "Chabad of Springfield",
+  "area": "Springfield",
+  "rabbi": "Moshe Cohen",
+  "rebbetzin": "Chana Cohen",
+  "phone": "555-123-4567",
+  "rebbetzinPhone": "555-123-4568",
+  "email": "info@chabadofspringfield.org",
+  "domain": "chabadofspringfield.org",
+  "street": "100 Main Street",
+  "taxId": "00-0000000",
+  "replacements": [
+    ["Lafayette", "Springfield"],
+    ["Moraga", "Northtown"],
+    ["Orinda", "Southtown"]
+  ]
+}

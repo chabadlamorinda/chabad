@@ -2,7 +2,7 @@
 title: לארח את סעודת השבת הראשונה שלכם: מדריך פשוט צעד אחר צעד
 description: כל מה שצריך כדי לארח סעודת ליל שבת חמה בבית: מה לקנות, סדר הערב, הברכות, ואיך לגרום לאורחים להרגיש בבית.
 category: Shabbat & holidays
-related: shabbat-meals, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
+related: shabbat-meals, shabbat-on-a-budget, hosting-shabbat-guests-in-lamorinda, dvar-torah-at-the-shabbat-table, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
 local: רוצים לראות קודם איך זה נראה? הצטרפו לסעודת שבת עם משפחת הרב בחב״ד למורינדה בלאפייט, או התקשרו 925-384-7242 לנרות ולחלה.
 ---
 לא צריך בית גדול, כלים מפוארים או עברית מושלמת כדי לארח סעודת שבת. צריך שולחן, כמה חברים או בני משפחה, ורצון לעשות את ליל שבת למיוחד. הנה הכול, צעד אחר צעד.
@@ -20,7 +20,7 @@ local: רוצים לראות קודם איך זה נראה? הצטרפו לסע�
 
 1. **מדליקים נרות שבת** לפני השקיעה, בזמן הדלקת הנרות. ראו [נרות שבת](/learn/shabbat-candles).
 2. **שרים שלום עליכם**, ומקבלים את מלאכי השבת. ראו [שלום עליכם](/learn/shalom-aleichem).
-3. **מברכים את הילדים**, אם יש ילדים ליד השולחן. ראו [ברכת הילדים](/learn/blessing-your-children).
+3. **מברכים את הילדים**, אם יש ילדים ליד השולחן וזה מנהג משפחתכם (שאלו את הרב). ראו [ברכת הילדים](/learn/blessing-your-children).
 4. **עושים קידוש** על היין או מיץ הענבים ומעבירים אותו סביב השולחן. ראו [קידוש](/learn/kiddush).
 5. **נוטלים ידיים** לסעודה בברכה. ראו [נטילת ידיים](/learn/netilat-yadayim).
 6. **המוציא:** מגלים את החלות, מברכים, פורסים, טובלים במלח ומחלקים לכולם.

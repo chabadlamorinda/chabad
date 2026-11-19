@@ -2,7 +2,7 @@
 title: שבת עם ילדים: רעיונות שיהפכו אותה למשמעותית ומהנה
 description: רעיונות מעשיים לחגיגת שבת עם ילדים: נרות, ברכת הילדים, קידוש, שירים, שיחה על הפרשה, משחקים ושבת אחר הצהריים.
 category: Shabbat & holidays
-related: shabbat, shabbat-shirah, jewish-lamorinda-with-young-children, blessing-your-children, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
+related: shabbat, shabbat-afternoon-ideas, children-in-synagogue, shabbat-and-youth-sports, shabbat-walks-in-lamorinda, parsha-for-kids, babies-and-toddlers-on-shabbat, shabbat-shirah, jewish-lamorinda-with-young-children, blessing-your-children, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
 local: הגן היהודי ותלמוד התורה שלנו מחיים את השבת לילדים; ראו chabadoflamorinda.com/programs/hebrew-school או התקשרו 925-384-7242.
 ---
 שבת עם ילדים מצליחה במיוחד כשהילדים שותפים בכל שלב: עוזרים בהכנות, מדליקים נרות, מקבלים ברכה ומובילים שירים ליד השולחן. מסורות קטנות שחוזרות כל שבוע נותנות לילדים זיכרונות וזהות יהודית לכל החיים.
@@ -21,7 +21,7 @@ local: הגן היהודי ותלמוד התורה שלנו מחיים את הש
 ## ליל שבת, שלב אחר שלב
 
 1. **הדלקת נרות.** במנהג חב״ד בנות מדליקות נר משלהן מגיל שלוש בערך, בברכה, לפני אמן. זו מצווה יפה שבנות לוקחות על עצמן. ראו את המדריך שלנו על [הדלקת נרות](/learn/shabbat-candles).
-2. **ברכו את הילדים.** ההורים מניחים את ידיהם על ראש כל ילד:
+2. **ברכו את הילדים, אם זה מנהג משפחתכם.** בקהילות רבות, אך לא באופן נרחב בחב״ד (שאלו את הרב), ההורים מניחים את ידיהם על ראש כל ילד:
    - לבנים: **יְשִׂמְךָ אֱלֹקִים כְּאֶפְרַיִם וְכִמְנַשֶּׁה.**
    - לבנות: **יְשִׂמֵךְ אֱלֹקִים כְּשָׂרָה רִבְקָה רָחֵל וְלֵאָה.**
    - ואחר כך לכולם: ברכת כהנים, "יברכך ה׳ וישמרך..."

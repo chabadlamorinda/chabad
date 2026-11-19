@@ -2,7 +2,7 @@
 title: Praying for Others: For the Sick, for Family and for the World
 description: How to pray for someone else in Judaism: the Mi Sheberach, adding a name to your own prayers, the mother's name custom, and why it helps you too.
 category: Prayer & Torah
-related: mi-sheberach, tehillim, bikur-cholim, prayer-before-surgery, amidah
+related: mi-sheberach, rachels-tomb, does-g-d-answer-prayers, tehillim, bikur-cholim, prayer-before-surgery, amidah
 local: Want a name added to the prayers at Chabad of Lamorinda, or a Mi Sheberach said this Shabbat? Text Rabbi Yisroel Labkowski at 925-384-7242 with the Hebrew name and the mother's name.
 ---
 Someone you love is in the hospital. A friend is going through a divorce. A relative in Israel is in danger. You want to do something, and the first thing that comes to mind is: pray for them. Judaism says that instinct is exactly right, and gives us simple ways to act on it.

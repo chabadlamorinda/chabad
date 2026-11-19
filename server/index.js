@@ -31,6 +31,7 @@ const FUND_NAMES = {
   market: 'Bay Kosher Market',
   building: 'Building Campaign',
   holidays: 'Holiday Programs',
+  chesed: 'Chesed: Visiting and Helping Those in Need',
   synagogue: 'Synagogue',
   endyear: 'End of Year Campaign',
   children: 'Children Events',
@@ -171,7 +172,19 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     await store.resolvePayment('gift_' + event.id);
     const fund = FUND_NAMES[meta.fund || sub.fund] || meta.fund || sub.fund || 'General', monthly = !isPi, club = (sub.club || meta.club) === 'yes';
     const dedication = meta.dedication || sub.dedication || '';
-    mailer.send({ to, subject: `Gift received: $${(cents / 100).toFixed(2)}${monthly ? ' monthly' : ''}${club ? ' (Chai Club)' : ''}`, text: `A gift came in through My Pushka.\n\nAmount: $${(cents / 100).toFixed(2)}${monthly ? ' (monthly)' : ''}\nFund: ${fund}${club ? '\nChai Club member' : ''}${dedication ? '\nDedication: ' + dedication : ''}${email ? '\nFrom: ' + email : ''}\n\nSee everything in your Rabbi area: /admin/` }).catch((e) => log.error('gift email failed:', e && e.message));
+    mailer.send({ to, subject: `Gift received: $${(cents / 100).toFixed(2)}${monthly ? ' monthly' : ''}${club ? ' (Chai Club)' : ''}`, text: `A gift came in through ${(meta.via || sub.via) === 'website' ? 'the website' : 'the My Pushka app'}.\n\nAmount: $${(cents / 100).toFixed(2)}${monthly ? ' (monthly)' : ''}\nFund: ${fund}${club ? '\nChai Club member' : ''}${dedication ? '\nDedication: ' + dedication : ''}${(meta.donor_name || sub.donor_name) ? '\nName: ' + (meta.donor_name || sub.donor_name) : ''}${email ? '\nEmail: ' + email : ''}${(meta.donor_phone || sub.donor_phone) ? '\nPhone: ' + (meta.donor_phone || sub.donor_phone) : ''}${(meta.donor_address || sub.donor_address) ? '\nAddress: ' + (meta.donor_address || sub.donor_address) : ''}${(meta.donor_note || sub.donor_note) ? '\nNote: ' + (meta.donor_note || sub.donor_note) : ''}\n\nSee everything in your Rabbi area: /admin/` }).catch((e) => log.error('gift email failed:', e && e.message));
+    // The official receipt, on Chabad's letterhead, to the person who gave on the website (their language). Stripe's own receipt is switched off in Stripe.
+    if ((meta.via || sub.via) === 'website') {
+      let giverEmail = email, giverName = meta.donor_name || sub.donor_name || '';
+      if (!giverEmail && cus && stripe) { try { const c = await stripe.customers.retrieve(cus); giverEmail = (c && !c.deleted && c.email) || ''; giverName = giverName || (c && c.name) || ''; } catch (e) { /* no address: no receipt */ } }
+      if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(giverEmail)) {
+        const L = ['he', 'ru'].includes(meta.lang || sub.lang) ? (meta.lang || sub.lang) : 'en', org = ((site.content && site.content()) || {}).org || {};
+        const base = /^https:\/\/[^/\s]+$/.test(String((siteEnv && siteEnv.PUBLIC_URL) || '').replace(/\/+$/, '')) ? siteEnv.PUBLIC_URL.replace(/\/+$/, '') : 'https://jewishlamorinda.com';
+        const rc = require('./site/receipt.js').receipt({ lang: L, base, org, donor: { name: giverName, address: meta.donor_address || sub.donor_address || '' },
+          gift: { cents, fund, fundId: meta.fund || sub.fund || '', dedication, monthly, date: new Date(), number: 'CL-' + new Date().getFullYear() + '-' + String(o.id || event.id).slice(-8).toUpperCase(), note: meta.donor_note || sub.donor_note || '' } });
+        mailer.send({ to: giverEmail, subject: rc.subject, text: rc.text, html: rc.html }).catch((e) => log.error('gift receipt failed:', e && e.message));
+      }
+    }
   }
   async function handleStripeEvent(event) {
     if (!store) return;
@@ -390,8 +403,20 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const base = configured || req.protocol + '://' + req.get('host'), pre = lang === 'en' ? '' : '/' + lang;
     const meta = { source: 'pushka', via: 'website', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents), ...(club ? { club: 'yes', board_show: club.show ? 'yes' : 'no', board_name: club.show ? club.name : '' } : {}) };
     const name = (monthly ? 'Monthly gift: ' : 'Gift: ') + FUND_NAMES[g.fund] + (g.dedication ? ' (' + g.dedication + ')' : '');
+    // Who is giving: asked on our own form, so a receipt can be emailed and the Rabbi knows whom to thank
+    // (Stripe's page does not always ask, for example with some wallets).
+    const giver = String(b.donorEmail || '').trim().toLowerCase().slice(0, 200), giverName = clean(b.donorName, 100);
+    if (giver && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(giver)) throw new HttpError(400, 'invalid_email', 'Please enter a valid email address.');
+    // The website's giving form asks for a name and an email (the official receipt goes there); the app's older form does not send `web`.
+    if (b.web && (!giver || !giverName)) throw new HttpError(400, 'details_needed', 'Please enter your name and email address, so we can send your receipt.');
+    if (giverName) meta.donor_name = giverName;
+    // Optional extras the giver chose to add (kept with the payment in Stripe, and shown to the Rabbi with the gift).
+    const extra = { donor_phone: clean(b.donorPhone, 40), donor_address: clean(b.donorAddress, 200), donor_note: clean(b.donorNote, 300) };
+    for (const [k, v] of Object.entries(extra)) if (v) meta[k] = v;
+    meta.lang = lang;
     const session = await stripe.checkout.sessions.create({
       mode: monthly ? 'subscription' : 'payment', locale: lang === 'en' ? 'auto' : lang,
+      ...(giver ? { customer_email: giver } : {}), billing_address_collection: 'auto', ...(monthly ? {} : { customer_creation: 'always' }),
       line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: g.total, ...(monthly ? { product: await ensureProduct(g.fund), recurring: { interval: 'month' } } : { product_data: { name } }) } }],
       ...(monthly ? { subscription_data: { description: 'Monthly gift: ' + FUND_NAMES[g.fund], metadata: meta } } : { submit_type: 'donate', payment_intent_data: { description: name, metadata: meta } }),
       metadata: meta,
@@ -527,21 +552,11 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 }
 
 if (require.main === module) {
-  const secret = process.env.STRIPE_SECRET_KEY, pk = process.env.STRIPE_PUBLISHABLE_KEY, sessionSecret = process.env.SESSION_SECRET;
+  const sessionSecret = process.env.SESSION_SECRET;
   if (!sessionSecret || sessionSecret.length < 16) { console.error('SESSION_SECRET must be set (16+ characters).'); process.exit(1); }
-  let stripe = null;
-  if (secret && pk) {
-    const Stripe = require('stripe');
-    stripe = new Stripe(secret);
-    console.log('Stripe enabled in ' + (/^sk_live_/.test(secret) ? 'LIVE' : 'TEST') + ' mode.');
-    if (/^sk_live_/.test(secret) !== /^pk_live_/.test(pk)) { console.error('Stripe keys mix live and test modes.'); process.exit(1); }
-  } else {
-    console.log('Stripe keys not set: running without card payments.');
-  }
   const port = process.env.PORT || 3000;
   (async () => {
     let store = null, sendPush = null;
-    const vapidPub = process.env.VAPID_PUBLIC_KEY || '', vapidPriv = process.env.VAPID_PRIVATE_KEY || '';
     if (process.env.DATABASE_URL) {
       store = require('./store.js').createStore(process.env.DATABASE_URL);
       // If the database is down when the server starts (or restarts during an update), the website still opens: most pages
@@ -555,6 +570,23 @@ if (require.main === module) {
       try { const n = await require('./kiddush-legacy.js').importLegacy(store); if (n) console.log('Imported ' + n + ' sponsors from the original Kiddush board.'); } catch (e) { console.error('Kiddush import skipped:', e.message); }
       console.log('Database connected: members, yahrzeits and reminders are on.');
     } else console.log('DATABASE_URL not set: yahrzeit sharing, reminders and the Rabbi area are off.');
+    // Keys the Rabbi saved in the Rabbi area ("Keys and settings") win over the server's settings file. Saving one restarts
+    // the website (the server, systemd or Render, starts it again by itself), so they are read here, before anything uses them.
+    const settings = require('./site/secure-settings.js');
+    const applied = await settings.applyOverrides(store, process.env, sessionSecret);
+    if (applied.length) console.log('Settings saved in the Rabbi area are in use: ' + applied.join(', '));
+    settings.onRestart(() => { console.log('Restarting to use a changed setting.'); process.exit(0); });
+    const secret = process.env.STRIPE_SECRET_KEY, pk = process.env.STRIPE_PUBLISHABLE_KEY;
+    let stripe = null;
+    if (secret && pk) {
+      const Stripe = require('stripe');
+      stripe = new Stripe(secret);
+      console.log('Stripe enabled in ' + (/^sk_live_/.test(secret) ? 'LIVE' : 'TEST') + ' mode.');
+      if (/^sk_live_/.test(secret) !== /^pk_live_/.test(pk)) { console.error('Stripe keys mix live and test modes.'); process.exit(1); }
+    } else {
+      console.log('Stripe keys not set: running without card payments.');
+    }
+    const vapidPub = process.env.VAPID_PUBLIC_KEY || '', vapidPriv = process.env.VAPID_PRIVATE_KEY || '';
     if (vapidPub && vapidPriv) {
       const webpush = require('web-push');
       webpush.setVapidDetails('mailto:rabbi@chabadoflamorinda.com', vapidPub, vapidPriv);

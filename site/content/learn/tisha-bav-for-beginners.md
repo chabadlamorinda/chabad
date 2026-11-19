@@ -2,7 +2,7 @@
 title: Tisha B'Av for Beginners: The Saddest Day, and Why It Ends in Hope
 description: What Tisha B'Av mourns, how the fast works, the customs of the day, the Three Weeks before it, who should not fast, and why it ends with hope.
 category: Shabbat & holidays
-related: three-weeks, the-holy-temple, fast-days, moshiach, jerusalem
+related: three-weeks, menachem-av, the-holy-temple, fast-days, moshiach, jerusalem
 local: Every Jew from Lafayette, Moraga and Orinda is welcome on Tisha B'Av. Call Rabbi Yisroel Labkowski at 925-384-7242 to hear what Chabad of Lamorinda has planned this year, or with questions about fasting.
 ---
 Tisha B'Av, the ninth of the Hebrew month of Av, is unlike any other Jewish day: once a year, in the heat of summer, the Jewish people sits on the floor and cries. Here is what the day is about, how it is kept, and why it is also a day of hope.
@@ -15,7 +15,7 @@ The sages trace other sorrows to the same date, beginning with the night the spi
 
 ## The Three Weeks before
 
-Tisha B'Av ends a season that begins three weeks earlier with the fast of the 17th of Tammuz, the day the walls of Jerusalem were breached. During the Three Weeks we hold no weddings and do not listen to live music; from the first of Av, the "Nine Days," we also give up meat and wine except on Shabbat. See [the Three Weeks](/learn/three-weeks).
+Tisha B'Av ends a season that begins three weeks earlier with the fast of the 17th of Tammuz, the day the walls of Jerusalem were breached. During the Three Weeks we hold no weddings and do not listen to music, live or recorded; from the first of Av, the "Nine Days," we also give up meat and wine except on Shabbat. See [the Three Weeks](/learn/three-weeks).
 
 ## The fast and the customs of the day
 

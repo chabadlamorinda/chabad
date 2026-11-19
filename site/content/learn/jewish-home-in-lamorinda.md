@@ -2,7 +2,7 @@
 title: Building a Jewish Home in Lafayette, Moraga and Orinda: Mezuzahs, Kosher Kitchen and More
 description: Help for a Jewish home in Lafayette, Moraga and Orinda: kosher mezuzahs put up and checked, kosher kitchen help, Shabbat candles and Jewish books.
 category: Lamorinda
-related: mezuzah, kosher-kitchen, shabbat-candles, jewish-home-library
+related: mezuzah, chanukah-decorations, kosher-kitchen, shabbat-candles, jewish-home-library
 local: Ask for a mezuzah, a mezuzah check or help putting them up at chabadoflamorinda.com/forms/mezuzah-tefillin or call 925-384-7242.
 ---
 Whether you just moved into a house in Lafayette, an apartment in Orinda or a new home in Moraga, Pleasant Hill or Martinez, a Jewish home is built one step at a time. A mezuzah on the door, Shabbat candles on Friday, a kosher dish or two, some good Jewish books on the shelf. Chabad of Lamorinda, right in Lafayette, is here to help with each step, at your own pace. No membership is needed.

@@ -2,7 +2,7 @@
 title: Chametz: What It Is and How to Get Rid of It Before Passover
 description: What counts as chametz, why it is forbidden on Passover, and how to clean, search, sell and burn your chametz step by step before the holiday.
 category: Shabbat & holidays
-related: matzah, passover-for-beginners, selling-your-chametz, passover-seder, kosher-kitchen, kosher
+related: matzah, kitniyot, passover-shopping-list, passover-cleaning, passover-for-beginners, selling-your-chametz, passover-seder, kosher-kitchen, kosher
 local: Sell your chametz online at chabadoflamorinda.com/forms/sell-chametz, or call 925-384-7242 with any Passover questions.
 ---
 Chametz is any food made from wheat, barley, rye, oats or spelt that has risen by coming into contact with water for more than 18 minutes. On Passover, Jews may not eat, own or benefit from chametz, so before the holiday we clean it out, search for it, sell it and burn it.
@@ -46,7 +46,7 @@ The next morning, burn the chametz you found, before the deadline in the late mo
 ## Common questions
 
 ### Is it really necessary to sell chametz?
-If you have chametz you do not want to throw out, selling it is the way to avoid owning it on Passover. Many people sell to be safe, in case some chametz was missed. Use our online form or call us.
+If you have chametz you do not want to throw out, selling it is the way to avoid owning it on Passover. Many people sell to be safe, in case some chametz was missed. Use our [online form](/forms/sell-chametz) or call 925-384-7242.
 
 ### What if I find chametz during Passover?
 Do not eat it. On a weekday of the holiday, burn it or flush it away right away. On Shabbat or a full holiday day, cover it and dispose of it afterward. Ask the Rabbi if you are not sure.

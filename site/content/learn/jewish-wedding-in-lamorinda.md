@@ -2,7 +2,7 @@
 title: A Jewish Wedding in Lafayette, Moraga or Orinda: Rabbi, Chuppah and Planning
 description: Planning a Jewish wedding near Lafayette, Moraga or Orinda? What you need: a rabbi, two witnesses, ketubah, ring and chuppah. Call Rabbi Labkowski.
 category: Lamorinda
-related: jewish-wedding, jewish-engagement, ketubah, choosing-a-wedding-date, mikvah
+related: jewish-wedding, getting-married-by-a-rabbi, jewish-wedding-planning-checklist, what-is-a-chuppah, proving-jewish-ancestry, jewish-engagement, ketubah, choosing-a-wedding-date, mikvah
 local: Getting married? Call Rabbi Labkowski at 925-384-7242, ideally several months ahead, or see /help.
 ---
 A Jewish wedding in Lafayette, Moraga or Orinda needs a rabbi, a chuppah (wedding canopy), a ketubah (marriage contract), a ring and two kosher witnesses. Rabbi Yisroel Labkowski of Chabad of Lamorinda officiates at Jewish weddings according to Jewish law and helps with the date, the ketubah and the chuppah; call 925-384-7242 as early as you can, ideally several months ahead.
@@ -11,10 +11,10 @@ A Jewish wedding in Lafayette, Moraga or Orinda needs a rabbi, a chuppah (weddin
 
 According to Jewish law, a wedding has these essentials:
 
-- **A chuppah** (חֻפָּה): the canopy under which the couple stands. It symbolizes the home they will build. See Chabad.org on the chuppah.
+- **A chuppah** (חֻפָּה): the canopy under which the couple stands. It symbolizes the home they will build. See [the Jewish wedding ceremony](/learn/jewish-wedding).
 - **A ketubah** (כְּתֻבָּה): the Jewish marriage contract, signed before the ceremony. Read [the ketubah](/learn/ketubah).
 - **A ring:** given by the groom to the bride under the chuppah, as part of the ceremony.
-- **Two kosher witnesses** (עֵדִים, *edim*): they watch the ring being given and sign the ketubah. Who qualifies is a matter of Jewish law, so ask the Rabbi; Chabad.org explains the rules for witnesses.
+- **Two kosher witnesses** (עֵדִים, *edim*): they watch the ring being given and sign the ketubah. Who qualifies is a matter of Jewish law, so ask the Rabbi, who can explain the rules for witnesses.
 - **The seven blessings** (שֶׁבַע בְּרָכוֹת) and the breaking of the glass, which recalls the destruction of the Temple even at a moment of joy.
 
 For the full ceremony step by step, read [the Jewish wedding](/learn/jewish-wedding) and [Jewish wedding customs](/learn/jewish-wedding-customs).

@@ -130,3 +130,8 @@ html.he .events{text-align:right}
 .plate{height:calc(var(--u)*34.5)}
 .plate.tall{height:calc(var(--u)*38)}
 .clock{font-size:calc(var(--u)*2.4);margin-bottom:calc(var(--u)*.5)}
+
+/* past weeks: the whole dedication shows (wrapping onto extra lines; the text is shrunk to fit by tv.js) */
+.tile.past .r{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.05}
+.tile.past .s{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.05}
+.tile.past .r,.tile.past .s{max-width:82%}

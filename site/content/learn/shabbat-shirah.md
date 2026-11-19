@@ -2,7 +2,7 @@
 title: Shabbat Shirah: The Shabbat of Song and Why Children Feed the Birds
 description: What is Shabbat Shirah? The Song of the Sea, the bird-feeding custom before Shabbat and a family way to come to services in Lafayette.
 category: Shabbat & holidays
-related: shabbat-with-kids, weekly-parsha, tzaar-baalei-chayim, shevat, torah-reading
+related: shabbat-with-kids, the-manna, deborah, miriam, weekly-parsha, tzaar-baalei-chayim, shevat, torah-reading
 local: Bring the family to Shabbat services in Lafayette: call Rabbi Yisroel Labkowski at 925-384-7242 to hear what is planned for Shabbat Shirah.
 ---
 Shabbat Shirah (שבת שירה) is the Shabbat on which we read the Torah portion Beshalach, which includes the Song of the Sea, the song the Jewish people sang after crossing the Red Sea. There is a well-known custom of putting out food for the birds, and the best way to do it is before Shabbat begins.
@@ -19,7 +19,7 @@ When the song is read, the congregation listens with special attention, and the 
 
 ## Why feed the birds?
 
-Chabad.org explains that some people feed the birds on Shabbat Shirah, and the custom has several explanations:
+Some people feed the birds on Shabbat Shirah, and the custom has several explanations:
 
 - The Midrash says birds ate fruit from trees that grew on the seabed, and then joined the singing.
 - Birds are known for their sweet songs, and we feed them when we sing praise.
@@ -29,7 +29,7 @@ Chabad.org explains that some people feed the birds on Shabbat Shirah, and the c
 
 ## Do it before Shabbat
 
-Feeding animals on Shabbat is generally restricted, and most authorities say it is not proper even on Shabbat Shirah. So we put food out for the birds just before Shabbat begins. Have the children scatter seeds or bread crumbs in the yard, a park or a garden in Lafayette, Moraga or Orinda on Friday afternoon. Some also eat buckwheat or wheat that day. Chabad.org suggests a light and cheerful custom, not a heavy one.
+Feeding animals on Shabbat is generally restricted, and most authorities say it is not proper even on Shabbat Shirah. So we put food out for the birds just before Shabbat begins. Have the children scatter seeds or bread crumbs in the yard, a park or a garden in Lafayette, Moraga or Orinda on Friday afternoon.
 
 See also [caring for animals](/learn/tzaar-baalei-chayim) for the Jewish view of kindness to creatures.
 
@@ -54,7 +54,7 @@ For more ways to include children in Shabbat, see [Shabbat with kids](/learn/sha
 It is the Shabbat of Parshat Beshalach, when we read the Song of the Sea. "Shirah" means song.
 
 ### Why do we feed the birds on Shabbat Shirah?
-Mostly in honor of the birds' part in the song, according to the Midrash, and because birds sing G-d's praise. Chabad.org lists several reasons.
+Mostly in honor of the birds' part in the song, according to the Midrash, and because birds sing G-d's praise. Several reasons are given.
 
 ### Can I feed the birds on Shabbat itself?
 Most authorities say no, since feeding animals on Shabbat is restricted. Put the food out before Shabbat begins.

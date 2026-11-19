@@ -42,10 +42,16 @@ ${club ? '' : `<label>${esc(t('Where should it go?'))} <select name="fund">${fun
 <label>${esc(t('In honor or in memory of (optional)'))} <input type="text" name="dedication" maxlength="80" value="${esc(opts.ded || '')}" placeholder="${esc(opts.placeholder || t('e.g. In memory of Sarah bat Avraham'))}"></label>
 ${club ? `<label class="check"><input type="checkbox" name="show" checked> ${esc(t('Show our name on the Chai Club board (amounts are never shown)'))}</label><p class="muted small">${esc(t('Names appear on the board from $72 a month.'))}</p>
 <label>${esc(t('Name for the board'))} <input type="text" name="boardName" maxlength="60" autocomplete="name" placeholder="${esc(t('e.g. The Cohen Family'))}"></label>` : ''}
+<div class="give-who"><p class="muted small">${esc(t('We need your name and email to send your official tax receipt on Chabad letterhead.'))}</p>
+<label>${esc(t('Your name (required)'))} <input type="text" name="donorName" maxlength="100" autocomplete="name" required></label>
+<label>${esc(t('Your email, for your receipt (required)'))} <input type="email" name="donorEmail" maxlength="200" autocomplete="email" inputmode="email" required></label>
+<label>${esc(t('Your phone (optional)'))} <input type="tel" name="donorPhone" maxlength="40" autocomplete="tel" inputmode="tel"></label>
+<label>${esc(t('Your address (optional)'))} <input type="text" name="donorAddress" maxlength="200" autocomplete="street-address"></label>
+<label>${esc(t('A note to the Rabbi, or the reason for your gift (optional)'))} <textarea name="donorNote" rows="3" maxlength="300"></textarea></label></div>
 <label class="check"><input type="checkbox" name="fee"> ${esc(t('Add 3.5% to cover the card processing fee'))}</label>
 <p class="give-err msg err" role="alert" hidden></p>
 <button type="submit" class="btn gold">${esc(t('Continue to secure payment'))}</button>
-<p class="muted small">${esc(t('Secure payment by Stripe: card, Apple Pay or Google Pay. A receipt is emailed to you.'))} ${club || opts.freq === 'monthly' ? esc(t('Monthly gifts can be changed or stopped any time: just call or email us.')) + ' ' : ''}${escLtr(C.org.legal || '')}</p>
+<p class="muted small">${esc(t('Secure payment by Stripe: card, Apple Pay or Google Pay. An official receipt on Chabad letterhead is emailed to you.'))} ${club || opts.freq === 'monthly' ? esc(t('Monthly gifts can be changed or stopped any time: just call or email us.')) + ' ' : ''}${escLtr(C.org.legal || '')}</p>
 </form>`;
 }
 
@@ -73,9 +79,9 @@ ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
     const X = ctxOf(req), { t, C } = X;
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Thank you!'))}</h1>
 <p class="lead-d">${esc(t('Your gift was received. A receipt has been emailed to you.'))}</p>
-<p>${esc(t('Your generosity keeps Jewish life warm and open to everyone in Lafayette, Moraga and Orinda. May G-d bless you and your family with health, happiness and success.'))}</p>
+<p>${esc(t('Thank you for being our partner. May G-d bless you and your family with health, happiness and success.'))}</p>
 <h2>${esc(t('What would you like to do next?'))}</h2>
-<div class="grid">${[['/shabbat', 'Come for Shabbat', 'Services, the Kiddush and a warm Shabbat meal.'], ['/events', 'Upcoming events', 'Holidays, classes and gatherings for the whole family.'], ['/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.'], ['/sponsor-a-kiddush', 'Sponsor a Kiddush', 'In honor or in memory of a loved one.'], ['/subscribe', 'Get the weekly email', 'Shabbat times, events and a word from the Rabbi.'], ['/learn', 'Learn about Judaism', 'Clear, friendly guides to Jewish life.']].map(([href, h, p]) => `<a class="card tile" href="${X.path(href)}"><h3>${esc(t(h))}</h3><p>${esc(t(p))}</p></a>`).join('')}</div>
+<div class="grid">${[['/shabbat', 'Come for Shabbat', 'Services, the Kiddush and a warm Shabbat meal.'], ['/events', 'Upcoming events', 'Holidays, classes and gatherings for the whole family.'], ['/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 brings steady joy to our whole community.'], ['/sponsor-a-kiddush', 'Sponsor a Kiddush', 'In honor or in memory of a loved one.'], ['/subscribe', 'Get the weekly email', 'Shabbat times, events and a word from the Rabbi.'], ['/learn', 'Learn about Judaism', 'Clear, friendly guides to Jewish life.']].map(([href, h, p]) => `<a class="card tile" href="${X.path(href)}"><h3>${esc(t(h))}</h3><p>${esc(t(p))}</p></a>`).join('')}</div>
 <p class="btns"><a class="btn ghost" href="${X.path('/')}">${esc(t('Back to the home page'))}</a></p>
 <p class="muted">${esc(t('Questions about your gift? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/donate/thank-you', title: t('Thank you!'), description: t('Thank you for your gift to Chabad of Lamorinda.'), body, noindex: true });
@@ -88,8 +94,8 @@ ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
 const GIVE_KINDS = {
   memory: ['Give in their memory', 'Giving tzedakah in memory of a loved one is an age-old Jewish custom: a merit for their soul, and for the living a way to carry on their good. You can write their name below.', 'e.g. In memory of Sarah bat Avraham', 'general'],
   refuah: ['Give in the merit of their recovery', 'Since the time of the Talmud, Jews have given tzedakah in the merit of someone who is ill. Write their name, and the Rabbi will include them in his prayers.', 'e.g. For the recovery of Moshe ben Rivka', 'general'],
-  tzedakah: ['Give tzedakah today', 'Every gift, large or small, keeps Jewish life warm and open to everyone in Lafayette, Moraga and Orinda.', 'e.g. In honor of my family', 'general'],
-  holiday: ['Help others celebrate', 'Giving before and on the holiday is part of the mitzvah. Your gift helps families in Lamorinda celebrate, and keeps our holiday programs open to all.', 'e.g. In honor of the holiday', 'holidays'],
+  tzedakah: ['Give tzedakah today', 'Every gift, large or small, brings more Jewish life, learning and joy to families in Lafayette, Moraga and Orinda.', 'e.g. In honor of my family', 'general'],
+  holiday: ['Help others celebrate', 'Giving before and on the holiday is part of the mitzvah. Your gift helps families in Lamorinda celebrate, and brings our holiday programs to even more people.', 'e.g. In honor of the holiday', 'holidays'],
 };
 const GIVE_ON = {
   '/kaddish': 'memory', '/tools/yahrzeit': 'memory', '/learn/yahrzeit': 'memory', '/learn/kaddish': 'memory', '/learn/yizkor': 'memory', '/learn/yahrzeit-candle': 'memory', '/learn/year-of-mourning': 'memory', '/holidays/yom-kippur': 'memory',
@@ -109,4 +115,14 @@ function withGive(X, body, path) {
   return i < 0 ? body + box : body.slice(0, i) + box + body.slice(i);
 }
 
-module.exports = { giveForm, giveUrl, mountGive, CLUB, medal, withGive, GIVE_ON };
+// A small "keep Judaism alive" reminder about a legacy gift, beside guides about giving and about dying (never a form).
+const LEGACY_SLUG = /tzedakah|giving|legacy|maaser|inherit|will\b|funeral|burial|shiva|dying|end-of-life|hospice|yizkor|kaddish|yahrzeit|donor|charity|mourning|grief/;
+const LEGACY_HELP = new Set(['end-of-life', 'someone-passed-away', 'planning-a-jewish-funeral', 'grief-and-hard-times']);
+const legacyOn = (kind, a) => kind === 'help' ? LEGACY_HELP.has(a.slug) : (a.slug !== 'leaving-a-jewish-legacy-gift' && (a.category === 'Mourning & remembrance' || LEGACY_SLUG.test(a.slug)));
+function legacyAside(X) {
+  const { t } = X, o = X.C.org;
+  return `<aside class="legacy-aside" aria-label="${esc(t('Keep Judaism alive for future generations'))}"><p class="hand">${esc(t('Keep Judaism alive for future generations'))}</p>
+<p>${esc(t('A legacy gift teaches the next generation. Chabad of Lamorinda gratefully accepts bequests, donor-advised fund grants and stock, to fund Jewish education for children and families in Lafayette, Moraga and Orinda for generations.'))}</p>
+<p class="btns"><a class="btn ghost sm" href="/legacy">${esc(t('Leave a legacy'))}</a> <a class="btn ghost sm" href="tel:${esc(String(o.phone || '').replace(/\D/g, ''))}">${esc(t('Call the Rabbi'))}</a></p></aside>`;
+}
+module.exports = { legacyAside, legacyOn, giveForm, giveUrl, mountGive, CLUB, medal, withGive, GIVE_ON };

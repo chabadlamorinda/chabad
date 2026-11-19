@@ -2,7 +2,7 @@
 title: Torah and Science: Can a Thinking Person Believe?
 description: How Judaism and Chabad teaching see science and faith, the age of the universe and evolution, and why there is no real conflict between truth and truth.
 category: Jewish ideas
-related: belief-in-g-d, free-will, miracles-jewish-view, hashgacha-pratit, purpose-of-life
+related: belief-in-g-d, adam-and-eve, free-will, miracles-jewish-view, hashgacha-pratit, purpose-of-life
 local: Questions about faith and science are welcome at Chabad of Lamorinda. Talk with Rabbi Yisroel Labkowski, 925-384-7242, or come to a class in Lafayette.
 ---
 Many thoughtful Jews carry a quiet worry: "I love being Jewish, but I also believe in science. Can I really hold both?" Judaism's answer is a warm yes. The same G-d who gave the Torah created the world that science studies. Truth cannot contradict truth.

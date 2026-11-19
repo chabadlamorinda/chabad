@@ -2,7 +2,7 @@
 title: Kosher Wine: What Makes Wine Kosher and What Mevushal Means
 description: Why wine has special kosher rules, what mevushal means, which drinks need certification, and how to choose kosher wine for Shabbat and holidays.
 category: Kosher
-related: kiddush, kosher, kosher-symbols, havdalah
+related: kiddush, kosher-beer-and-spirits, four-cups, kosher, kosher-symbols, havdalah
 local: Need help choosing kosher wine for Kiddush or a simcha? Call Rabbi Labkowski at 925-384-7242 and we will gladly advise.
 ---
 Kosher wine is wine made from start to finish under Jewish supervision, using only kosher ingredients, and handled by Shabbat-observant Jews from the time the grapes are crushed. Because wine has such an important role in Jewish life, it has special rules beyond those for other foods.

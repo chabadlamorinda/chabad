@@ -2,7 +2,7 @@
 title: Passover with Kids: Making the Seder Fun for Children
 description: Easy ways to make the Passover Seder fun for children: the Four Questions, plague props, the afikoman, kids' roles, and getting ready together.
 category: Shabbat & holidays
-related: four-questions, afikoman, passover-seder, holidays-with-toddlers, exodus-story
+related: four-questions, presenting-a-jewish-holiday-in-class, ten-plagues, seder-songs, hosting-your-first-seder, haggadah, afikoman, passover-seder, holidays-with-toddlers, exodus-story
 local: Chabad of Lamorinda in Lafayette is here to help families in Lafayette, Moraga and Orinda get ready for Passover. For Seder questions, call the Rabbi at 925-384-7242. This year's dates: chabadoflamorinda.com/holidays/passover
 ---
 The Passover Seder was designed with children in mind. Many of its customs exist for one reason: to make kids curious, keep them awake and get them asking questions. With a little planning, the Seder can be the night your children remember all year.
@@ -33,7 +33,7 @@ The excitement can begin well before the Seder:
 
 - **Crafts.** Make a matzah cover, a pillow for leaning, an Elijah's cup or a decorated Seder plate.
 - **Tell the story ahead of time.** Read the [Exodus story](/learn/exodus-story) at bedtime during the weeks before.
-- **Search for chametz.** On the night before Passover, the family searches the house for chametz by the light of a candle, and many families use a flashlight for safety. Kids love following the light into every corner. Parents often hide ten wrapped pieces of bread for them to find. See [chametz](/learn/chametz).
+- **Search for chametz.** On the night before Passover, the family searches the house for chametz by the light of a candle (ask the Rabbi about using a flashlight for dark corners). Kids love following the light into every corner. Parents often hide ten wrapped pieces of bread for them to find. See [chametz](/learn/chametz).
 - **Practice songs.** Mah Nishtanah, Dayeinu and Chad Gadya are easy and fun to learn together.
 
 ## Toddlers and older kids

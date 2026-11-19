@@ -2,10 +2,12 @@
 title: Yahrzeit: How to Observe the Anniversary of a Loved One's Passing
 description: What a yahrzeit is, how to find the Hebrew date, lighting a yahrzeit candle, saying Kaddish, and other ways to honor a loved one.
 category: Mourning & remembrance
-related: kaddish, yizkor, shiva, jewish-calendar
+related: kaddish, memorial-plaque-in-the-synagogue, giving-in-memory-of-a-loved-one, saying-kaddish-for-someone-else, first-yahrzeit, leading-the-prayers, learning-in-memory-of-a-loved-one, el-malei-rachamim, yizkor, shiva, jewish-calendar
 local: Use our yahrzeit calculator to find the date, and call Rabbi Labkowski at 925-384-7242 if you would like help saying Kaddish with a minyan. Save the yahrzeit in your free account at chabadoflamorinda.com/account and we will email you a reminder a week and a day before, every year.
 ---
 A yahrzeit is the yearly anniversary of a loved one's passing, observed on the Hebrew date of death. On the yahrzeit, family members light a 24-hour candle, say Kaddish, and do good deeds in the person's memory.
+
+Chabad of Lamorinda can arrange Kaddish for your loved one: please use the form on our [Kaddish page](/kaddish). A memorial plaque can also be added in the synagogue; please consult the Rabbi (925-384-7242).
 
 ## What does yahrzeit mean?
 
@@ -16,7 +18,7 @@ Yahrzeit is a Yiddish word meaning "year's time." Jewish tradition teaches that 
 A yahrzeit follows the Hebrew calendar, so it falls on a different English date each year.
 
 - Use our [yahrzeit calculator](/tools/yahrzeit) to find the date.
-- Remember that a Hebrew day begins at sunset. If your loved one passed away after sundown, the Hebrew date is the next day.
+- Remember that a Hebrew day begins at nightfall. If your loved one passed away after nightfall, the Hebrew date is the next day; if it was between sunset and nightfall, ask the Rabbi.
 - The first yahrzeit is usually counted from the date of death. In some cases (such as when burial was delayed more than a few days), ask the Rabbi.
 - In a Jewish leap year, if the death occurred in the month of Adar, ask the Rabbi which Adar to observe.
 
@@ -34,7 +36,7 @@ The yahrzeit begins the evening before, at sunset, and continues until nightfall
 
 ## Mood of the day
 
-A yahrzeit is a day of remembrance, not sadness alone. Many people fast, while others share stories and gather family. It is a chance to keep the person's values alive.
+A yahrzeit is a day of remembrance, not sadness alone. Fasting on a yahrzeit is an old custom, but it is not the Chabad custom. Many share stories, gather family, give tzedakah and learn Torah. It is a chance to keep the person's values alive.
 
 ## Common questions
 

@@ -2,7 +2,7 @@
 title: ראש חודש: חוגגים את החודש העברי החדש
 description: מהו ראש חודש, למה המולד חשוב, איך חוגגים אותו בתפילות ובמנהגים, והקשר המיוחד שלו לנשים.
 category: Shabbat & holidays
-related: jewish-calendar, jewish-leap-year-and-calendar, kiddush-levana, cheshvan, jewish-women, prayer, fast-days
+related: jewish-calendar, rosh-chodesh-tevet-on-chanukah, barchi-nafshi, yom-kippur-katan, musaf, hallel, jewish-leap-year-and-calendar, kiddush-levana, cheshvan, jewish-women, prayer, fast-days
 local: את החודשים העבריים והחגים הקרובים אפשר לראות בעמוד החגים שלנו, ולכל שאלה אפשר להתקשר לרב לבקובסקי בטלפון 925-384-7242.
 ---
 ראש חודש הוא היום הראשון של כל חודש עברי, ומציין את הופעת הירח החדש. זהו חג קטן שחוגגים בתפילות מיוחדות, באווירה חגיגית, ויש לו קשר מיוחד לנשים יהודיות.
@@ -30,7 +30,7 @@ local: את החודשים העבריים והחגים הקרובים אפשר �
 
 **סעודה חגיגית:** מצווה להרבות בסעודה בראש חודש יותר מבשאר הימים.
 
-**בלי תענית והספדים:** כיום של שמחה, אסור להתענות, ומקצרים בהספדים.
+**בלי תענית והספדים:** כיום של שמחה, אסור להתענות, ואין מספידים.
 
 ## ברכת החודש
 

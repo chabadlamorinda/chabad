@@ -2,7 +2,7 @@
 title: Talking to Kids About G-d: Simple Answers to Big Questions
 description: How to talk with children about G-d: warm, honest answers to "Where is G-d?" and "Why can't I see Him?", using everyday moments, blessings and stories.
 category: Jewish home
-related: belief-in-g-d, teaching-children-to-pray, jewish-parenting, modeh-ani, bedtime-shema
+related: belief-in-g-d, answering-kids-why-are-we-jewish, teaching-children-to-pray, jewish-parenting, modeh-ani, bedtime-shema
 local: Families in Lafayette, Moraga and Orinda: Rabbi Yisroel and Rebbetzin Tzipora Labkowski love these questions. Call 925-384-7242.
 ---
 "Where is G-d?" "Can G-d see me when I hide?" "Why can't I see Him?" Children ask the biggest questions in the smallest moments: in the car, at bath time, right before lights out. Many parents freeze, worried they do not know enough to answer. You need honesty, warmth and a few simple ideas that Jewish tradition has handed down for thousands of years.

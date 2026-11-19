@@ -2,7 +2,7 @@
 title: How Often Should a Mezuzah Be Checked? Mezuzah and Tefillin Checking Guide
 description: How often to check your mezuzahs and tefillin: twice in seven years, and yearly in Elul by custom. What a scribe looks for. Ask Chabad of Lamorinda.
 category: Jewish home
-related: mezuzah, choosing-a-mezuzah, tefillin, buying-tefillin, elul
+related: mezuzah, genizah, mezuzah-questions, choosing-a-mezuzah, tefillin, buying-tefillin, elul
 local: Want your mezuzahs or tefillin checked? Fill in the mezuzah and tefillin form or call 925-384-7242.
 ---
 Jewish law requires that mezuzahs and tefillin be checked by a scribe (sofer) twice in every seven years, and the custom, encouraged by the Lubavitcher Rebbe, is to check them every year in the month of Elul, before Rosh Hashanah. Scrolls outside the house are exposed to weather, so they should be checked more often.
@@ -13,7 +13,7 @@ Mezuzah (מְזוּזָה) and tefillin (תְּפִלִּין) are handwritten p
 
 ## How often should a mezuzah be checked?
 
-- **Twice every seven years** by Jewish law, by a scribe. Chabad.org also notes that the scroll should be removed and inspected every three or four years.
+- **Twice every seven years** by Jewish law, by a scribe. Many also have them checked every year before the High Holidays.
 - **Every year in Elul** by ancient custom. The Rebbe encouraged it. See [Elul](/learn/elul) for the month of preparation.
 - **More often for outdoor mezuzahs,** such as a front door that gets rain and sun. Some computer scanning can supplement a scribe's check, but it does not replace it.
 
@@ -26,7 +26,7 @@ A sofer inspects each letter under good light. These problems make a scroll inva
 1. **Fading or flaking ink,** or letters that have cracked where the parchment was folded or damaged by weather.
 2. **Missing or incorrect letters.** One missing or damaged letter can disqualify the whole mezuzah.
 3. **A printed or photocopied scroll** that only looks handwritten. This is a real problem, because many "mezuzahs" are sold this way.
-4. **Corrections written out of order,** which are not valid.
+4. **Letters that are misshapen or touching,** which a scribe may need to repair.
 
 If a scroll fails, the scribe can sometimes repair it, and sometimes you need a new one. See [choosing a mezuzah](/learn/choosing-a-mezuzah) and [buying tefillin](/learn/buying-tefillin).
 
@@ -34,7 +34,7 @@ If a scroll fails, the scribe can sometimes repair it, and sometimes you need a 
 
 1. Remove the mezuzah carefully, with the case, and number it with a pencil or a sticky note so you know which doorpost it came from.
 2. Take the scrolls to be checked. Nails, screws and tape can be thrown away, but the case and wrapping are sacred objects and are not thrown out. Ask the Rabbi what to do with them.
-3. Put each mezuzah back on its own doorpost, or on a similar one. Chabad.org teaches that a new blessing is needed only if the mezuzah was off the doorpost for at least one night. Otherwise, no blessing.
+3. Put each mezuzah back on its own doorpost, or on a similar one. A new blessing is needed only if the mezuzah was off the doorpost for at least one night. Otherwise, no blessing.
 4. Use the placement from the [mezuzah guide](/learn/mezuzah): right side, upper third, tilted inward.
 
 ## Checking in a hard time

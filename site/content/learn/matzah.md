@@ -2,7 +2,7 @@
 title: Matzah: What It Is and Why Shmurah Matzah Matters
 description: What matzah is, the mitzvah of eating it at the Passover Seder, what shmurah matzah means, how much to eat, and the blessing in Hebrew and English.
 category: Shabbat & holidays
-related: passover-seder, passover-in-lamorinda, passover-for-beginners, selling-your-chametz, pesach-sheni, chametz, blessings, kosher
+related: passover-seder, gluten-free-passover, passover-in-lamorinda, passover-for-beginners, selling-your-chametz, pesach-sheni, chametz, blessings, kosher
 local: Order handmade shmurah matzah for your Seder at chabadoflamorinda.com/forms/matzah or call 925-384-7242.
 ---
 Matzah is flat, unleavened bread made only of flour and water, baked quickly before it can rise. Eating matzah on the first night of Passover is a mitzvah from the Torah, and we eat it in place of bread for the whole holiday.
@@ -22,7 +22,7 @@ The Zohar calls matzah "the food of faith" and "the food of healing." Chassidic 
 Shmurah means "guarded." Shmurah matzah is made from wheat watched from the time it was harvested, to make sure no water touched it. It is usually round and baked by hand, as matzah was baked for centuries.
 
 - Each matzah is made with the intention that it is for the mitzvah.
-- Many have the custom to use only handmade shmurah matzah for the Seder, and Chabad custom is to eat only shmurah matzah throughout Passover.
+- Many have the custom to use only handmade shmurah matzah for the Seder, and some are stringent and use it throughout Passover; ask the Rabbi about the custom in your home.
 - Machine-made shmurah matzah also exists, and all kosher for Passover matzah is supervised. But the matzah at the Seder should be shmurah.
 
 ## How much to eat at the Seder

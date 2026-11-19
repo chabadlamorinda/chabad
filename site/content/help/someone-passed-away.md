@@ -6,14 +6,16 @@ urgent: yes
 icon: candle
 related: learn/jewish-funeral, learn/shiva, learn/kaddish, end-of-life, learn/setting-up-a-shiva-house, learn/mourning-journey, learn/kriah
 ---
-We are so sorry for your loss. If someone you love has just passed away, please call Rabbi Yisroel Labkowski at **925-384-7242** as soon as you can, ideally before you call a funeral home. You do not need to know what to do. The Rabbi and Chabad of Lamorinda will walk you through each step, from the first hours to the funeral, shiva and Kaddish. It does not matter how observant you or your loved one were. We are here for every Jewish family.
+We are so sorry for your loss. If someone you love has just passed away, please call Rabbi Yisroel Labkowski at **925-384-7242** as soon as you can, before you call the burial society (Chevra Kadisha) or a funeral home. You do not need to know what to do. The Rabbi and Chabad of Lamorinda will walk you through each step, from the first hours to the funeral, shiva and Kaddish. It does not matter how observant you or your loved one were. We are here for every Jewish family.
+
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 at once.**
 
 ## What to do first
 
 1. **Call the Rabbi at 925-384-7242.** Tell him where your loved one is and who is with them.
 2. **Before signing anything with a funeral home, speak with the Rabbi.** Some arrangements, such as embalming, an autopsy or cremation, are against Jewish law and hard to undo. The Rabbi can help you make choices that honor your loved one's soul.
 3. **If you are with the person,** it is customary to close the eyes gently, cover the body with a sheet, and, if possible, light a candle near the head. Try not to leave the body alone.
-4. **Let the Rabbi help coordinate.** He will be in touch with the Chevra Kadisha (the Jewish burial society) and help with the next steps.
+4. **Let the Rabbi make the arrangements.** He will guide you through every step and make the arrangements with the Chevra Kadisha (the Jewish burial society).
 
 If a death is sudden or unexpected, call 911 first. Then call the Rabbi.
 
@@ -22,7 +24,7 @@ If a death is sudden or unexpected, call 911 first. Then call the Rabbi.
 - **Tahara and Jewish burial.** We coordinate with the Chevra Kadisha, who perform the tahara, the gentle washing and dressing of the body in simple white shrouds. This is one of the greatest kindnesses in Judaism.
 - **The funeral.** We help you arrange the funeral, plan the service, and prepare the eulogy. The Rabbi can officiate.
 - **Shiva.** We help you set up the shiva home, arrange a minyan for prayers, and guide you through the customs.
-- **Kaddish.** You can join our minyan to say Kaddish, or we can arrange for Kaddish to be said on your behalf. See [/kaddish](/kaddish).
+- **Kaddish.** You can join our minyan to say Kaddish, or we can arrange for Kaddish to be said on your behalf. See [/kaddish](/kaddish). A memorial plaque can be added in the synagogue; consult the Rabbi.
 - **Afterward.** We are here for the unveiling, the yahrzeit, and whenever you want to talk.
 
 ## What to expect in the first days
@@ -40,7 +42,7 @@ Judaism teaches that the soul is eternal. The body that housed it is treated wit
 ## Common questions
 
 ### Should I call the funeral home or the Rabbi first?
-Call the Rabbi first if you can, at 925-384-7242. He can help you choose arrangements that follow Jewish tradition and coordinate with the Chevra Kadisha before decisions are made.
+Call the Rabbi first, at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241), before the burial society or the funeral home. He will guide you through every step and make the arrangements with the Chevra Kadisha, following Jewish tradition, before decisions are made.
 
 ### What if my loved one was not religious?
 Every Jew is entitled to a Jewish burial and a dignified Jewish funeral. Observance level does not matter. We will help with love and without judgment.

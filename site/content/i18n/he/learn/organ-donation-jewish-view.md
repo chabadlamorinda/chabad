@@ -2,7 +2,7 @@
 title: תרומת איברים: מה אומרת היהדות?
 description: עמדת היהדות על תרומת איברים: הצלת חיים, כבוד הגוף, תורמים חיים, מוות מוחי, ולמה כל מקרה צריך הדרכה של רב.
 category: Jewish ideas
-related: jewish-health-and-body, cremation-jewish-view, jewish-funeral, the-soul
+related: jewish-health-and-body, autopsy-jewish-view, cremation-jewish-view, jewish-funeral, the-soul
 local: עומדים בפני החלטה על תרומת איברים, עבורכם או עבור יקיר? התקשרו לרב לבקובסקי בטלפון 925-384-7242 או בקרו ב-chabadoflamorinda.com/help/end-of-life.
 ---
 היהדות מלמדת שהצלת חיים היא אחת המצוות הגדולות ביותר, והיא מלמדת גם כבוד עמוק לגוף האדם, בחייו ואחרי מותו. מכיוון שתרומת איברים נוגעת בשני הערכים האלה, ההלכה מתירה אותה במצבים מסוימים ולא באחרים, ויש לדון בכל מקרה עם רב.

@@ -2,7 +2,7 @@
 title: Chanukah Gelt: Why We Give Money on Chanukah
 description: Why Jews give Chanukah gelt, when it is given, how the custom connects to education and tzedakah, and ideas for giving gelt to kids.
 category: Shabbat & holidays
-related: chanukah-menorah, dreidel, tzedakah, jewish-parenting
+related: chanukah-menorah, chanukah-facts-and-trivia, chanukah-tzedakah, chanukah-mitzvah-projects-for-kids, kosher-chanukah-candy-and-gelt, chanukah-shopping-in-lamorinda, chanukah-gifts, dreidel, tzedakah, jewish-parenting
 local: Bring the kids to our Chanukah celebrations; see chabadoflamorinda.com/holidays/chanukah or call 925-384-7242.
 ---
 Chanukah gelt is money given to children, and often to teachers and others, during Chanukah. Gelt is Yiddish for "money," and the custom is centuries old, long before chocolate coins existed.
@@ -18,7 +18,7 @@ There are several reasons for this beloved custom:
 
 ## When gelt is given
 
-Chabad custom, recorded in the book of Chabad customs, is to give Chanukah gelt on the fourth or fifth night. The Rebbe encouraged giving gelt every night of Chanukah, and on Friday giving a double portion for Shabbat, when money is not handled.
+Chabad custom, recorded in the book of Chabad customs, is to give Chanukah gelt on the fourth or fifth night. The Rebbe encouraged giving gelt every night of Chanukah, with a larger amount on the fourth or fifth night. Money is not handled on Shabbat, so some give the Shabbat portion on Friday before candle lighting; ask the Rabbi.
 
 Many families give gelt right after lighting the menorah, while the candles are burning.
 
@@ -52,4 +52,4 @@ Gelt is the traditional custom. Presents became common later. Many families keep
 Traditionally, gelt was given to children and to teachers. Many grandparents give it to grown grandchildren too, and it is always a nice gesture to support Torah teachers at Chanukah time.
 
 ### Can I give gelt on Shabbat?
-No. Money is not handled on Shabbat, which is why the Rebbe suggested giving a double portion on Friday before candle lighting.
+No. Money is not handled on Shabbat, which is why some give the Shabbat portion on Friday before candle lighting. Ask the Rabbi.

@@ -2,7 +2,7 @@
 title: Maaser: Giving a Tenth to Charity in Judaism
 description: What maaser is, how to calculate giving ten percent of your income to tzedakah, which causes qualify, and practical tips for keeping track.
 category: Jewish ideas
-related: tzedakah, new-job-jewish-blessing, children-money-and-tzedakah, supporting-chabad-of-lamorinda, ribbit, parnassah-work-and-livelihood, pushka, business-ethics, chesed
+related: tzedakah, the-blessing-of-giving-maaser, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for, maaser-for-business-owners-and-investors, how-to-calculate-maaser, what-is-jewish-tithing, monthly-giving-jewish-view, how-much-to-leave-to-tzedakah-in-a-will, giving-stock-to-chabad, leaving-your-ira-to-a-jewish-cause, tzedakah-equals-all-the-mitzvot, does-tzedakah-bring-wealth, giving-when-money-is-tight, donor-advised-funds-and-tzedakah, year-end-tzedakah, new-job-jewish-blessing, children-money-and-tzedakah, supporting-chabad-of-lamorinda, ribbit, parnassah-work-and-livelihood, pushka, business-ethics, chesed
 local: Want to direct your maaser to Jewish life in Lamorinda? Give at chabadoflamorinda.com/donate or call Rabbi Labkowski at 925-384-7242 with any question.
 ---
 Maaser means "a tenth." It is the Jewish custom of giving ten percent of your income to tzedakah, charity. Many Jews keep this practice as a basic part of their financial life, giving with gratitude for the blessings G-d has given them.
@@ -16,7 +16,7 @@ From these roots, the Sages established the custom of *maaser kesafim*, giving a
 ## Why give maaser?
 
 - **It is not really ours.** Judaism teaches that our money is entrusted to us by G-d, and part of it is meant for others. Giving tzedakah is not just generosity; it is justice.
-- **It brings blessing.** The prophet Malachi says that G-d invites us to test Him with tithing, and He will pour out blessing. This is the one area where the Sages say testing G-d is allowed.
+- **It brings blessing.** The prophet Malachi says that G-d invites us to test Him with tithing, and He will pour out blessing. The Sages allow testing G-d here, and the Rebbe taught that this applies to all tzedakah: G-d rewards all giving with success, and maaser is where the Torah says it clearly.
 - **It makes giving a habit.** Setting aside a fixed amount means you give consistently, not only when you happen to feel moved.
 
 ## How to calculate maaser
@@ -33,6 +33,7 @@ Maaser is for tzedakah. Common uses include:
 - Helping the poor and people in need.
 - Supporting Torah study and Jewish education.
 - Funding synagogues and Jewish community programs.
+- A grant from your donor-advised fund to a charity such as Chabad of Lamorinda. Rabbi Labkowski has confirmed that this counts as maaser; call 925-384-7242 or 925-384-7241 to arrange one.
 - Helping a relative in financial need, which is a top priority in Jewish law.
 
 Some expenses, such as paying for your own children's basic needs, normally do not count. Ask the Rabbi about specific cases.
@@ -57,3 +58,8 @@ Tzedakah is about giving according to your means. Give what you can, even a smal
 
 ### Do I need to tell the recipient it is maaser?
 No. It is simply your tzedakah. What matters is that you set aside and give the amount.
+
+## Take the next step
+
+- Begin with [Starting Maaser Step by Step](/learn/starting-maaser-step-by-step).
+- Read [The Blessing of Giving Maaser](/learn/the-blessing-of-giving-maaser), and call Rabbi Labkowski at 925-384-7242 with any question.

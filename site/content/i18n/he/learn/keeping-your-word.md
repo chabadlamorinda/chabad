@@ -2,7 +2,7 @@
 title: לעמוד במילה: הבטחות בחיים היהודיים
 description: למה היהדות רואה בהבטחה דבר קדוש, מה פירוש "לא יחל דברו", למה יהודים אומרים "בלי נדר", ואיך לתקן הבטחה שלא קוימה.
 category: Jewish ideas
-related: honesty-and-truth, business-ethics, lashon-hara, kol-nidre, forgiveness-and-making-peace
+related: honesty-and-truth, paying-workers-on-time, business-ethics, lashon-hara, kol-nidre, forgiveness-and-making-peace
 local: מתמודדים עם הבטחה שנשברה או עם התחייבות קשה? הרב ישראל לבקובסקי כאן להקשיב, למשפחות בלאפייט, מוראגה ואורינדה: 925-384-7242.
 ---
 "אתקשר אליך מחר." "אהיה שם בשש." "אתן משהו למטרה הזו." אנחנו אומרים את הדברים האלה בקלות, ולעיתים קרובות שוכחים אותם באותה קלות. התורה מבקשת מאיתנו להתייחס למילים שלנו הרבה יותר ברצינות, כי ביהדות, מילה היא דבר ממשי.

@@ -1,29 +1,194 @@
 {
   "intro": "Chabad of Lamorinda has no membership dues. Everything we do, from Shabbat dinners to the preschool, Hebrew school, holiday programs and help in times of need, is made possible by the generosity of our community. Every gift is tax deductible.",
-  "amounts": [180, 360, 1000, 1800, 3600, 7200],
+  "amounts": [
+    180,
+    360,
+    720,
+    1000,
+    1800,
+    3600,
+    7200
+  ],
   "funds": [
-    { "id": "general", "name": "General Fund", "text": "Where it is needed most." },
-    { "id": "chai", "name": "Chai Club", "text": "Monthly partners in multiples of 18." },
-    { "id": "preschool", "name": "Jewish Preschool Scholarships", "text": "Helping every child attend." },
-    { "id": "children", "name": "Children's Programs", "text": "Hebrew School, CKids and children's events." },
-    { "id": "holidays", "name": "Holiday Programs", "text": "Rosh Hashanah to Passover, for the whole community." },
-    { "id": "synagogue", "name": "Synagogue", "text": "Services, Kiddush and Torah classes." },
-    { "id": "market", "name": "Bay Kosher Market", "text": "Keeping kosher food available in the East Bay." },
-    { "id": "building", "name": "Building Campaign", "text": "A permanent home for Jewish life in Lamorinda." },
-    { "id": "endyear", "name": "End of Year Campaign", "text": "Year-end giving." },
-    { "id": "pledge", "name": "Pay a pledge", "text": "Fulfill a pledge you made." }
+    {
+      "id": "general",
+      "name": "General Fund",
+      "text": "Where it is needed most."
+    },
+    {
+      "id": "chai",
+      "name": "Chai Club",
+      "text": "Monthly partners in multiples of 18."
+    },
+    {
+      "id": "preschool",
+      "name": "Jewish Preschool Scholarships",
+      "text": "Helping every child attend."
+    },
+    {
+      "id": "children",
+      "name": "Children's Programs",
+      "text": "Hebrew School, CKids and children's events."
+    },
+    {
+      "id": "holidays",
+      "name": "Holiday Programs",
+      "text": "Rosh Hashanah to Passover, for the whole community."
+    },
+    {
+      "id": "chesed",
+      "name": "Chesed Fund",
+      "text": "Visiting seniors and the sick, and help for families in need."
+    },
+    {
+      "id": "synagogue",
+      "name": "Synagogue",
+      "text": "Services, Kiddush and Torah classes."
+    },
+    {
+      "id": "market",
+      "name": "Bay Kosher Market",
+      "text": "Keeping kosher food available in the East Bay."
+    },
+    {
+      "id": "building",
+      "name": "Building Campaign",
+      "text": "A permanent home for Jewish life in Lamorinda."
+    },
+    {
+      "id": "endyear",
+      "name": "End of Year Campaign",
+      "text": "Year-end giving."
+    },
+    {
+      "id": "pledge",
+      "name": "Pay a pledge",
+      "text": "Fulfill a pledge you made."
+    }
   ],
   "building": {
     "text": "Help build a permanent home for Jewish life in Lafayette, Moraga and Orinda. Every level of giving is recognized.",
-    "levels": [["Visionary", 1000000], ["Founder", 500000], ["Pioneer", 250000], ["Builder", 100000], ["Pillar", 50000], ["Partner", 25000], ["Benefactor", 18000], ["Sustainer", 10000], ["Patron", 5000], ["Supporter", 1800]]
+    "levels": [
+      [
+        "Visionary",
+        1000000
+      ],
+      [
+        "Founder",
+        500000
+      ],
+      [
+        "Pioneer",
+        250000
+      ],
+      [
+        "Builder",
+        100000
+      ],
+      [
+        "Pillar",
+        50000
+      ],
+      [
+        "Partner",
+        25000
+      ],
+      [
+        "Benefactor",
+        18000
+      ],
+      [
+        "Sustainer",
+        10000
+      ],
+      [
+        "Patron",
+        5000
+      ],
+      [
+        "Supporter",
+        1800
+      ]
+    ]
   },
   "ways": [
-    { "id": "venmo", "name": "Venmo", "text": "Send your gift on Venmo to @CHABAD-LAMORINDA.", "url": "https://venmo.com/u/CHABAD-LAMORINDA" },
-    { "id": "zelle", "name": "Zelle", "text": "Send your gift by Zelle. Call or email us for our Zelle address." },
-    { "id": "check", "name": "Check", "text": "Make your check payable to Chabad of Lamorinda and mail it to 3477 Golden Gate Way, Lafayette, CA 94549." },
-    { "id": "daf", "name": "Donor Advised Fund", "text": "Recommend a grant from your donor advised fund to Chabad of Lamorinda, tax ID 47-4642750." },
-    { "id": "stock", "name": "Stock", "text": "Gifts of appreciated stock are welcome and can save you capital gains tax. Call or email us for transfer instructions." },
-    { "id": "crypto", "name": "Cryptocurrency", "text": "Cryptocurrency gifts are welcome. Call or email us for details." },
-    { "id": "wire", "name": "Wire or ACH", "text": "Call or email us for wire and ACH details." }
+    {
+      "id": "venmo",
+      "name": "Venmo",
+      "text": "Send your gift on Venmo to @CHABAD-LAMORINDA.",
+      "url": "https://venmo.com/u/CHABAD-LAMORINDA"
+    },
+    {
+      "id": "zelle",
+      "name": "Zelle",
+      "text": "Send your gift by Zelle. Call or email us for our Zelle address."
+    },
+    {
+      "id": "check",
+      "name": "Check",
+      "text": "Make your check payable to Chabad of Lamorinda and mail it to 3477 Golden Gate Way, Lafayette, CA 94549."
+    },
+    {
+      "id": "daf",
+      "name": "Donor Advised Fund",
+      "text": "Recommend a grant from your donor advised fund to Chabad of Lamorinda, tax ID 47-4642750."
+    },
+    {
+      "id": "stock",
+      "name": "Stock",
+      "text": "Gifts of appreciated stock are welcome and can save you capital gains tax. Call or email us for transfer instructions."
+    },
+    {
+      "id": "crypto",
+      "name": "Cryptocurrency",
+      "text": "Cryptocurrency gifts are welcome. Call or email us for details."
+    },
+    {
+      "id": "wire",
+      "name": "Wire or ACH",
+      "text": "Call or email us for wire and ACH details."
+    },
+    {
+      "id": "vehicle",
+      "name": "A car or other vehicle",
+      "text": "Have a vehicle you no longer need? Tell us about it and the Rabbi will get back to you to talk it through, including what paperwork and which tax receipt, if any, can be given. Tax rules for vehicle gifts vary, so please also ask your tax advisor.",
+      "form": true,
+      "kind": 0
+    },
+    {
+      "id": "goods",
+      "name": "Goods, food and equipment",
+      "text": "Furniture, kitchen and event equipment, books, supplies, or food for our programs: tell us what you have and we will let you know whether it fits a need.",
+      "form": true,
+      "kind": 1
+    },
+    {
+      "id": "time-skills",
+      "name": "Your time, skills and services",
+      "text": "A professional skill, a venue, printing, catering, a ride, a delivery or simply helping hands: tell us what you can offer. A gift of time and talent is a real way to be part of this.",
+      "form": true,
+      "kind": 2
+    },
+    {
+      "id": "employer-match",
+      "name": "Matching gifts from your employer",
+      "text": "Many employers match what their employees give. Ask your company's giving or HR office, and use our name, Chabad of Lamorinda, and tax ID 47-4642750.",
+      "form": true,
+      "kind": 4
+    },
+    {
+      "id": "ira",
+      "name": "A gift from your IRA",
+      "text": "If you are 70½ or older, you may be able to give directly from your IRA to Chabad of Lamorinda (a qualified charitable distribution). Please ask your IRA provider and your tax advisor, and call us with any questions.",
+      "form": true,
+      "kind": 4
+    },
+    {
+      "id": "property",
+      "name": "Real estate or a business",
+      "text": "Property, or part of a business, can also be a gift. The Rabbi would be glad to talk it over with you, in confidence.",
+      "form": true,
+      "kind": 3
+    }
   ]
 }

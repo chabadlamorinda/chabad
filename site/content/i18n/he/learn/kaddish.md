@@ -2,10 +2,12 @@
 title: קדיש יתום: המשמעות, מתי אומרים אותו ומי אומר
 description: מהו קדיש יתום, מה פירוש המילים, מי אומר אותו, כמה זמן אומרים אותו ומה עושים אם אי אפשר לומר אותו בעצמכם.
 category: Mourning & remembrance
-related: shiva, aleinu, suicide-and-jewish-mourning, jewish-men-in-lamorinda, yahrzeit, yizkor, prayer
+related: shiva, saying-kaddish-for-someone-else, leading-the-prayers, learning-in-memory-of-a-loved-one, amen, losing-a-parent, aleinu, suicide-and-jewish-mourning, jewish-men-in-lamorinda, yahrzeit, yizkor, prayer
 local: כדי לומר קדיש במניין או לסדר שיאמרו קדיש לעילוי נשמת יקירכם, התקשרו לרב לבקובסקי בטלפון 925-384-7242.
 ---
 קדיש יתום הוא תפילה קצרה שאבלים אומרים לזכר אדם יקר. באופן מפתיע, הוא בכלל לא מזכיר את המוות: זו הכרזה של שבח לה׳, ואמירתה מביאה זכות גדולה ועילוי לנשמת הנפטר.
+
+חב"ד למורינדה יכולה לסדר קדיש לעילוי נשמת יקירכם: אנא מלאו את הטופס ב[עמוד הקדיש](/kaddish). אפשר גם להוסיף שלט זיכרון בבית הכנסת; אנא התייעצו עם הרב (925-384-7242).
 
 ## מה פירוש "קדיש"?
 

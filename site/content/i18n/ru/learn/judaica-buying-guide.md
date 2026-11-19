@@ -2,7 +2,7 @@
 title: Как покупать иудаику: главные еврейские вещи для дома
 description: Еврейские вещи, которые пригодятся в каждом доме: от субботних подсвечников до бокала для Кидуша, ханукии и мезуз, и на что смотреть при покупке.
 category: Jewish home
-related: setting-up-a-jewish-home, jewish-gift-ideas, choosing-a-mezuzah, jewish-home-library
+related: setting-up-a-jewish-home, shabbat-essentials-for-your-home, choosing-a-kosher-menorah, jewish-gift-ideas, choosing-a-mezuzah, jewish-home-library
 local: Обустраиваете еврейский дом в Лафайетте, Мораге или Оринде? Раввин Исроэль Лабковский с радостью поможет выбрать все необходимое: 925-384-7242.
 ---
 Еврейский дом строится из мицвот, а не из вещей. И все же правильные вещи делают исполнение мицвот проще и красивее, а многие из них становятся семейными реликвиями. Вот самое главное и то, что важно при покупке.

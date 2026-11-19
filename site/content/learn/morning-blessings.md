@@ -2,7 +2,7 @@
 title: The Morning Blessings: Starting the Day With Thanks
 description: The morning blessings (Birchot HaShachar): what they are, what they say, and how to begin saying them, from Modeh Ani to the blessings over Torah.
 category: Prayer & Torah
-related: modeh-ani, shacharit-morning-service, ashrei, netilat-yadayim, asher-yatzar, daily-prayers, jewish-morning-routine
+related: modeh-ani, adon-olam, shacharit-morning-service, ashrei, netilat-yadayim, asher-yatzar, daily-prayers, jewish-morning-routine
 local: Want to learn the morning blessings with someone? Join our weekday morning minyan in Lafayette or call the Rabbi at 925-384-7242.
 ---
 Before coffee, before the phone, before the news: Jewish tradition begins the day with a short series of thank-yous called **Birchot HaShachar**, the morning blessings. They take a few minutes and change how the whole day feels.
@@ -13,8 +13,8 @@ Before coffee, before the phone, before the news: Jewish tradition begins the da
 2. **Washing the hands.** We pour water over each hand three times, alternating, to begin the day pure. See [washing the hands](/learn/netilat-yadayim).
 3. **Asher Yatzar.** After using the restroom, we thank G-d for a body that works. See [Asher Yatzar](/learn/asher-yatzar).
 4. **Elokai Neshamah.** "My G-d, the soul You gave me is pure": we thank G-d for our soul and its return each morning.
-5. **The blessings over the Torah.** Before learning anything, we thank G-d for giving us the Torah, and we say a few verses so the day begins with Torah.
-6. **The fifteen morning blessings.** Each one thanks G-d for a gift we take for granted: seeing, getting dressed, standing up straight, walking, having what we need, strength when we are tired.
+5. **The fifteen morning blessings.** Each one thanks G-d for a gift we take for granted: seeing, getting dressed, standing up straight, walking, having what we need, strength when we are tired.
+6. **The blessings over the Torah.** In the Chabad siddur these come after the morning blessings. Before learning anything, we thank G-d for giving us the Torah, and we say a few verses so the day begins with Torah.
 
 ## Why thank G-d for ordinary things?
 

@@ -47,7 +47,17 @@ CREATE TABLE IF NOT EXISTS email_sends (id TEXT PRIMARY KEY, campaign_id INT NOT
 CREATE INDEX IF NOT EXISTS email_sends_campaign_idx ON email_sends (campaign_id);
 CREATE INDEX IF NOT EXISTS email_sends_email_idx ON email_sends (email);
 CREATE TABLE IF NOT EXISTS email_clicks (send_id TEXT NOT NULL, url TEXT NOT NULL, at TIMESTAMPTZ NOT NULL DEFAULT now());
-CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).catch((e) => { ready = null; throw e; }));
+CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).then(async () => {
+    // One time (Nov 2026, the Rabbi's direction): people who signed up and were still waiting to confirm count as signed up, now that signing up is one step.
+    // Anyone who has unsubscribed stays out.
+    if (!store || !store.getKv || !store.setKv) return;
+    try {
+      if (await store.getKv('single-optin-migrated', null)) return;
+      await q("UPDATE email_subscribers SET status='confirmed', confirmed_at=now() WHERE status='pending' AND email NOT IN (SELECT email FROM email_unsubscribes)").catch(() => {});
+      await q("UPDATE form_responses SET status='confirmed' WHERE form_id='newsletter' AND status<>'confirmed' AND lower(email) NOT IN (SELECT email FROM email_unsubscribes)").catch(() => {});
+      await store.setKv('single-optin-migrated', { at: new Date().toISOString() });
+    } catch (e) { log.error('single opt-in migration:', e && e.message); }
+  }).catch((e) => { ready = null; throw e; }));
 
   // Everyone who gets the email, each with their language.
   async function recipients() {
@@ -61,16 +71,31 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
     return [...out].map(([email, lang]) => ({ email, lang }));
   }
 
-  // Sign up (from the website): saved as pending, and a confirmation email goes to the address.
+  // Sign up (from the website): whoever types their address in is signed up at once (the Rabbi's direction: we trust people, and
+  // watch for abuse). They get a welcome with a one-click unsubscribe. The one exception: an address that had unsubscribed must
+  // confirm from its inbox first, so nobody can put a person back on the list who left it.
   async function subscribe({ email, name = '', lang = 'en', source = '' }) {
     await ensure();
     const L = LANGS.includes(lang) ? lang : 'en', cur = (await q('SELECT status FROM email_subscribers WHERE email=$1', [email])).rows[0];
     const unsubbed = (await q('SELECT 1 FROM email_unsubscribes WHERE email=$1', [email])).rowCount > 0;
     if (cur && cur.status === 'confirmed' && !unsubbed) return { already: true };
-    await q(`INSERT INTO email_subscribers (email, name, lang, source, status) VALUES ($1,$2,$3,$4,'pending')
-      ON CONFLICT (email) DO UPDATE SET name=COALESCE(NULLIF($2,''), email_subscribers.name), lang=$3, status='pending'`, [email, name.slice(0, 100), L, source.slice(0, 60)]);
-    await sendConfirm(email, L);
-    return { pending: true };
+    if (unsubbed) {
+      await q(`INSERT INTO email_subscribers (email, name, lang, source, status) VALUES ($1,$2,$3,$4,'pending')
+        ON CONFLICT (email) DO UPDATE SET name=COALESCE(NULLIF($2,''), email_subscribers.name), lang=$3, status='pending'`, [email, name.slice(0, 100), L, source.slice(0, 60)]);
+      await sendConfirm(email, L);
+      return { pending: true };
+    }
+    await q(`INSERT INTO email_subscribers (email, name, lang, source, status, confirmed_at) VALUES ($1,$2,$3,$4,'confirmed',now())
+      ON CONFLICT (email) DO UPDATE SET name=COALESCE(NULLIF($2,''), email_subscribers.name), lang=$3, status='confirmed', confirmed_at=now()`, [email, name.slice(0, 100), L, source.slice(0, 60)]);
+    notify(`New weekly-email subscriber: ${email}`, `${name ? name + ' ' : ''}<${email}> signed up for the weekly email (${L})${source ? ' from ' + source : ''}.`, '/admin/community#email');
+    await sendWelcome(email, L);
+    return { subscribed: true };
+  }
+  async function sendWelcome(email, L) {
+    if (!mailer) return;
+    const { t, C } = X(L), un = unsubUrl(email);
+    const html = `<div style="font:16px/1.6 -apple-system,'Segoe UI',Roboto,Arial,sans-serif;max-width:520px;margin:0 auto;padding:24px;color:#1f2433"${L === 'he' ? ' dir="rtl"' : ''}><p style="font:600 20px Georgia,serif;color:#14284b">${esc(C.org.name)}</p><p>${esc(t('Welcome! You are signed up for the weekly email from {org}: Shabbat times, events and a thought from the Rabbi, once a week.', { org: C.org.name }))}</p><p style="color:#5f6470;font-size:14px">${esc(t('If this was not you, one click removes you:'))} <a href="${esc(un)}" style="color:#85600f">${esc(t('Unsubscribe'))}</a></p></div>`;
+    await mailer.send({ to: email, subject: t('Welcome to the weekly email from {org}', { org: C.org.name }), text: t('Welcome! You are signed up for the weekly email from {org}: Shabbat times, events and a thought from the Rabbi, once a week.', { org: C.org.name }) + `\n\n${t('If this was not you, one click removes you:')} ${un}`, html, headers: { 'List-Unsubscribe': `<${un}>` } }).catch((e) => log.error('newsletter welcome:', e && e.message));
   }
   async function sendConfirm(email, L) {
     if (!mailer) return;
@@ -284,7 +309,11 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).ca
         const to = lower(req.body && req.body.to) || lower(notifyTo) || lower(content().org.email);
         if (!validEmail(to)) return res.status(400).json({ error: 'Which address?' });
         const m = await compose(LANGS.includes(req.body.lang) ? req.body.lang : 'en', optsOf(req.body || {})), pz = personalize(m, 'test', to, 'test');
-        await mailer.send({ to, subject: '[Test] ' + m.subject, text: pz.text, html: pz.html });
+        try { await mailer.send({ to, subject: '[Test] ' + m.subject, text: pz.text, html: pz.html }); } catch (e) {
+          // Say what the mail server said (a wrong password, a blocked sign-in...), so the Rabbi and Claude can fix it.
+          const why = String((e && (e.response || e.message)) || 'unknown').replace(/\s+/g, ' ').slice(0, 300);
+          return res.status(502).json({ code: 'send_failed', error: 'The email could not be sent. The mail server said: ' + why });
+        }
         res.json({ ok: true, to });
       }));
       // This week's word and whether it is approved (the Rabbi's desk shows it under "Waiting for you").

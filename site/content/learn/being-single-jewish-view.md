@@ -2,7 +2,7 @@
 title: Being Single: A Full Jewish Life, Right Now
 description: Judaism's warmth toward singles: a full Jewish life today, Shabbat and community, hope and prayer for a match, and help from the Rabbi and Rebbetzin.
 category: Life cycle
-related: jewish-dating, shabbat-alone, feeling-lonely, young-professionals-in-lamorinda, bitachon
+related: jewish-dating, bashert, shabbat-alone, feeling-lonely, young-professionals-in-lamorinda, bitachon
 local: Single in Lafayette, Moraga or Orinda? There is a seat for you at the Shabbat table at Chabad of Lamorinda. Call Rabbi Yisroel or Rebbetzin Tzipora Labkowski, 925-384-7242.
 ---
 Judaism loves marriage. It also loves you, exactly where you are today. If you are single, whether you have never married, are divorced or are widowed, this guide is not about what is missing. It is about the whole, rich Jewish life that is already yours, and about the hope Judaism holds for your future.
@@ -17,7 +17,7 @@ Nothing in Judaism is on hold until you marry.
 
 - **Shabbat is yours.** Light candles, make Kiddush over wine or grape juice, and sit down to a real meal. If cooking for one feels flat, invite a friend or come to Chabad: there is a chair for you. See [Shabbat when you live alone](/learn/shabbat-alone) and [Shabbat times](/shabbat-times).
 - **Community is yours.** Prayer, classes, holiday meals, volunteering. Communities are built on people who have time to learn and to help.
-- **Mitzvot are yours.** Tefillin, tzedakah, Torah study, visiting the sick, kindness to parents. None of them wait for a wedding.
+- **Mitzvot are yours.** Tefillin (for men), tzedakah, Torah study, visiting the sick, kindness to parents. None of them wait for a wedding.
 - **A Jewish home is yours.** A mezuzah on your door, Jewish books on your shelf, a pushka in your kitchen. Your apartment is already a Jewish home. See [setting up a Jewish home](/learn/setting-up-a-jewish-home).
 
 ## Holding hope without holding your breath

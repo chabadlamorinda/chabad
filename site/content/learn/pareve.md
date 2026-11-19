@@ -2,7 +2,7 @@
 title: What Does Pareve Mean? Neutral Foods in a Kosher Kitchen
 description: What does pareve (parve) mean? Foods that are neither meat nor dairy, like eggs, fish and vegetables. Learn the rules and ask Chabad of Lamorinda.
 category: Kosher
-related: meat-and-milk, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
+related: meat-and-milk, kosher-dishwasher-and-sink, vegan-chanukah-recipes, kugel, vegan-and-vegetarian-kosher, kosher-eggs, kosher-cheese, kosher-kitchen, kosher-symbols, kosher-fish
 local: Setting up a kosher kitchen in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 and we will help you start.
 ---
 Pareve (also spelled parve, פַּרְוֶה) means a food that is neither meat nor dairy, so it can be eaten with either one. Fruits, vegetables, grains, eggs, fish and plain nuts are pareve, as long as they are prepared without any meat or dairy.
@@ -40,7 +40,7 @@ A "pareve" label on a package is only as good as the certification behind it. Tw
 1. **"Pareve" only counts with a kosher symbol.** Read about [kosher symbols](/learn/kosher-symbols).
 2. **"DE" means dairy equipment.** A pareve product made on the same equipment as dairy products may say "DE" or "Pareve DE." It has no dairy ingredients, but the equipment was dairy. Many families eat these foods, others avoid them with meat, so ask the Rabbi what your family should do.
 
-Also remember that a pareve food that looks like meat or dairy, such as almond milk or a soy burger, can confuse guests. Chabad.org suggests marking it, such as leaving the container on the table, so that people know it is pareve.
+Also remember that a pareve food that looks like meat or dairy, such as almond milk or a soy burger, can confuse guests. It helps to mark it, such as leaving the container on the table, so that people know it is pareve.
 
 ## A pareve dish for every table
 

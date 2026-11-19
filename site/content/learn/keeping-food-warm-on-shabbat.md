@@ -2,7 +2,7 @@
 title: How to Keep Food Warm on Shabbat: The Blech, Hot Plate and Urn
 description: How to keep food warm on Shabbat: set up the blech or a hot plate before Shabbat, with food fully cooked and dry. Simple rules, and ask the Rabbi.
 category: Shabbat & holidays
-related: cholent, shabbat-practical-questions, thirty-nine-melachot, shabbat-meals, shabbat-day
+related: cholent, slow-cooker-shabbat-recipes, shabbat-practical-questions, thirty-nine-melachot, shabbat-meals, shabbat-day
 local: Come taste a hot Kiddush lunch after Shabbat services at Chabad of Lamorinda in Lafayette. Call 925-384-7242 to hear what is planned.
 ---
 You keep food warm on Shabbat by setting up a heat source before Shabbat begins, such as a covered stove (a blech) or a single-setting hot plate, and by putting on it only food that is fully cooked and dry. You may not cook on Shabbat, so the plan is made on Friday and the cooking is finished before candle lighting.
@@ -15,13 +15,13 @@ The same rule explains why a hot Shabbat lunch is possible, from [cholent](/lear
 
 ## What is a blech?
 
-A blech (בְּלֶעךְ, Yiddish for "tin") is a metal sheet placed over the stove burners before Shabbat. It covers the flames and spreads the heat. Chabad.org explains that it has zones: directly over the flame food would cook, farther away it is only warm. The zones decide where food may be put.
+A blech (בְּלֶעךְ, Yiddish for "tin") is a metal sheet placed over the stove burners before Shabbat. It covers the flames and spreads the heat. It has zones: directly over the flame food would cook, farther away it is only warm. The zones decide where food may be put.
 
 How to use one:
 
 1. **Before Shabbat, turn on the flame** (low) and cover the stove with the blech.
 2. **Place the pots on the blech before Shabbat.**
-3. **Only fully cooked food** may be put back later, and only on the cooler part, away from the flame.
+3. **Only fully cooked food** may be put back later, and only on the cooler part, away from the flame, and only under certain conditions, so ask the Rabbi before putting a pot back.
 4. **Do not move a pot from a cooler area over the flame.** You may move it from the hot area to a cooler one.
 5. **Do not add raw food** or partly cooked food to the blech on Shabbat.
 

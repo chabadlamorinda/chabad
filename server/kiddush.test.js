@@ -24,7 +24,7 @@ test.before(async () => {
   baseNoDb = 'http://127.0.0.1:' + serverNoDb.address().port;
 });
 test.after(async () => { server.close(); serverNoDb.close(); await store.close(); await pg.stop(); });
-test.beforeEach(async () => { await store.kiddushResetForTests(); stripe._st.calls.length = 0; mailed.length = 0; });
+test.beforeEach(async () => { await store.kiddushResetForTests(); dbApp.locals.kiddush.clearBoardCache(); stripe._st.calls.length = 0; mailed.length = 0; });
 
 const call = async (method, path, body, o = {}) => {
   const r = await fetch((o.base || base) + path, { method, headers: { 'content-type': 'application/json', ...(o.headers || {}) }, body: body === undefined ? undefined : (typeof body === 'string' ? body : JSON.stringify(body)) });
@@ -547,4 +547,36 @@ test('show a name on the board while payment is still pending (staff choice), wi
   assert.ok(!(await board()).slots.find((x) => x.key === s.key).sponsors.some((x) => x.name === 'The Levy Family'));
   // unconfirmed: still waiting for payment, so reminders keep working
   assert.ok(pend.every((p) => p.status === 'pending'));
+});
+
+test('the board carries a pages version so the TV can reload itself after an update', async () => {
+  const v = (await board()).version;
+  assert.match(v, /^\d{10,}$/);
+  assert.equal((await board()).version, v, 'stable between requests');
+});
+
+test('board is remembered between changes (so a TV polling every minute does not keep the database awake), refreshed on any change, and survives a database outage', async () => {
+  let reads = 0, down = false;
+  const counting = new Proxy(store, { get(t, p) { const v = t[p]; if (p === 'liveSponsorships') return async (...a) => { reads++; if (down) throw new Error('compute quota exceeded'); return v.apply(t, a); }; return typeof v === 'function' ? v.bind(t) : v; } });
+  const app2 = createApp({ stripe, publishableKey: 'pk_test_x', sessionSecret: SECRET, log: { error() {} }, webhookSecret: WH, now: () => NOW, store: counting, adminPassword: PW });
+  const srv = await new Promise((r) => { const s = app2.listen(0, () => r(s)); }); const b2 = 'http://127.0.0.1:' + srv.address().port;
+  try {
+    const get = async () => (await call('GET', '/api/kiddush/board', undefined, { base: b2 })).json;
+    await get(); await get(); await get();
+    assert.equal(reads, 1, 'three requests, one database read');
+    const s = (await get()).slots.find((x) => x.status === 'open' && !x.past && x.kind === 'shabbat');
+    const r = await call('POST', '/api/kiddush/sponsor', form(s, { name: 'Remembered Family' }), { base: b2 });
+    assert.equal(r.status, 200, r.text);
+    const login = await call('POST', '/admin/api/login', { password: PW }, { base: b2 });
+    const H = { cookie: login.headers.get('set-cookie').split(';')[0], 'x-admin': '1' };
+    assert.equal((await call('PATCH', '/admin/api/kiddush/sponsorship/' + r.json.id, { status: 'paid' }, { base: b2, headers: H })).status, 200);
+    const after = await get();
+    assert.ok(after.slots.find((x) => x.key === s.key).sponsors.some((x) => x.name === 'Remembered Family'), 'a change shows up immediately');
+    reads = 0; await get(); await get(); assert.equal(reads, 0, 'and is remembered again');
+    // outage: clear the memory, make the database fail, and the last good board is still served
+    app2.locals.kiddush.clearBoardCache(); down = true;
+    const out = await call('GET', '/api/kiddush/board', undefined, { base: b2 });
+    assert.equal(out.status, 200); assert.equal(out.json.stale, true);
+    assert.ok(out.json.slots.find((x) => x.key === s.key).sponsors.some((x) => x.name === 'Remembered Family'));
+  } finally { srv.close(); }
 });

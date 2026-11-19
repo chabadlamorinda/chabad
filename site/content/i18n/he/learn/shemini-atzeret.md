@@ -2,7 +2,7 @@
 title: שמיני עצרת: היום השמיני, יזכור ותפילת הגשם
 description: מהו שמיני עצרת, למה הוא בא אחרי סוכות, תפילת הגשם, יזכור, ומנהג חב״ד לאכול בסוכה בלי ברכה.
 category: Shabbat & holidays
-related: simchat-torah-for-beginners, prayers-for-rain, yizkor, sukkah, hoshana-rabbah
+related: simchat-torah-for-beginners, chanukah-and-the-number-eight, prayers-for-rain, yizkor, sukkah, hoshana-rabbah
 local: הצטרפו אלינו ליזכור ולתפילת הגשם בשמיני עצרת; כל אחד מלאפייט, מוראגה ואורינדה מוזמן. התקשרו לרב לבקובסקי, 925-384-7242, כדי לשמוע מה מתוכנן.
 ---
 שמיני עצרת פירושו "היום השמיני של האסיפה". זהו חג בפני עצמו שבא מיד אחרי שבעת ימי סוכות. בו מתפללים על גשם, אומרים יזכור לזכר יקירים, ונהנים עוד יום אינטימי אחד עם ה׳ לפני תחילת החורף.

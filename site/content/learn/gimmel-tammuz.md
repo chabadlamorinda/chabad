@@ -2,7 +2,7 @@
 title: Gimmel Tammuz: the Day of the Rebbe's Passing
 description: What Gimmel Tammuz (3 Tammuz) is, why it matters to Chabad and to Jews everywhere, the Ohel in New York, and how people mark the day with a mitzvah.
 category: Jewish ideas
-related: the-rebbe, chabad-rebbes, chabad, yahrzeit, moshiach
+related: the-rebbe, tammuz, chabad-rebbes, chabad, yahrzeit, moshiach
 local: Chabad of Lamorinda, like every Chabad center, is inspired by the Rebbe. To learn more about his teachings or to send a letter to the Ohel, call Rabbi Labkowski at 925-384-7242.
 ---
 Gimmel Tammuz, the third day of the Hebrew month of Tammuz, is the yahrzeit of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson, who passed away on 3 Tammuz 5754 (June 12, 1994). It falls in early summer each year. For Chabad and for countless Jews the world over, it is a day of reflection, learning and renewed commitment.

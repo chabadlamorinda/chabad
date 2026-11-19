@@ -2,7 +2,7 @@
 title: כשרות בקמפוס: לשמור כשרות ושבת בקולג׳
 description: איך לשמור כשרות ושבת בקולג׳: למצוא אוכל כשר, מיקרוגל וכלים משלכם, בית חב״ד בקמפוס ושיחה עם שותפים לחדר ומרצים.
 category: Kosher
-related: jewish-college-students, kosher-on-a-budget, kosher-symbols, kosher-when-traveling
+related: jewish-college-students, sending-a-lamorinda-teen-to-college, kosher-on-a-budget, kosher-symbols, kosher-when-traveling
 local: סטודנטים והורים בלאפייט, מוראגה, אורינדה ובאיסט ביי: התקשרו לרב ישראל לבקובסקי לתכנן כשרות ושבת לפני הקולג׳, 925-384-7242.
 ---
 היציאה לקולג׳ היא צעד גדול, ולשמור כשרות ושבת רחוק מהבית יכול להרגיש מאיים. עם קצת תכנון, סטודנטים רבים מצליחים בכך, ולעיתים קרובות מגלים שזה הופך לעוגן בחיים חדשים ועמוסים. הנה איך להתחיל.

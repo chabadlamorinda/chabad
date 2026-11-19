@@ -2,7 +2,7 @@
 title: שמחת בת: חגיגה וקריאת שם לתינוקת
 description: איך קוראים שם לתינוקת יהודייה בקריאת התורה, חגיגה בקידוש, בחירת שם עברי, ואיך הרב יכול לעזור לארגן את זה.
 category: Life cycle
-related: baby-naming, jewish-baby-names, hebrew-names, new-parents-in-lamorinda
+related: baby-naming, hebrew-names-for-girls, jewish-baby-names, hebrew-names, new-parents-in-lamorinda
 local: נולדה לכם בת בלאפייט, מוראגה או אורינדה? מזל טוב! התקשרו להרב ישראל לבקובסקי 925-384-7242 כדי לארגן את קריאת השם שלה בתורה.
 ---
 מזל טוב! בת חדשה היא ברכה גדולה. "שמחת בת" הוא השם שמשפחות רבות נותנות לחגיגה לכבוד תינוקת. העיקר פשוט: היא מקבלת את שמה העברי בקריאת התורה, והמשפחה והחברים שותפים לשמחה.

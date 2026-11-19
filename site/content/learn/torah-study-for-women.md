@@ -2,7 +2,7 @@
 title: Torah Study for Women: Learning, Growing and the Rebbe's Vision
 description: Why Chabad encourages women's Torah study, what women traditionally learn, women's special mitzvahs, and how to find a class or study partner.
 category: Prayer & Torah
-related: jewish-women, daily-torah-study, tanya, weekly-parsha
+related: jewish-women, how-women-pray, daily-torah-study, tanya, weekly-parsha
 local: Women in Lafayette, Moraga, Orinda and the East Bay: Rebbetzin Tzipora Labkowski is glad to learn with you, 925-384-7241.
 ---
 Torah belongs to every Jew. In Chabad, women's Torah study is not an afterthought. It is a priority, and many women find it becomes one of the most meaningful parts of their week.

@@ -2,7 +2,7 @@
 title: בריונות: לעזור לילד שלכם, ולגדל ילדים טובי לב
 description: כשילד סובל מבריונות, או מציק לאחרים: ערכים יהודיים על כבוד ומילים, מה הורים יכולים לעשות, עבודה עם בית הספר וחיזוק הביטחון.
 category: Life cycle
-related: parents-and-teenagers, facing-antisemitism, lashon-hara, jewish-parenting
+related: parents-and-teenagers, hurtful-words, facing-antisemitism, lashon-hara, jewish-parenting
 local: הורים בלאפייט, מוראגה, אורינדה ובאיסט ביי יכולים לדבר בפרטיות עם הרב ישראל או הרבנית ציפורה לבקובסקי: 925-384-7242.
 ---
 כל ילד ראוי להרגיש בטוח ומכובד. כשילד סובל מבריונות, פנים אל פנים או ברשת, זה יכול לכאוב מאוד. היהדות מתייחסת ברצינות רבה לכבודו של כל אדם, ולכוחן של מילים.

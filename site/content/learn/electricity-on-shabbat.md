@@ -2,7 +2,7 @@
 title: Electricity on Shabbat: Lights, Appliances and Phones
 description: Why we do not switch lights and appliances on or off on Shabbat, how timers work, the fridge light, hot water, Shabbat mode and simple first steps.
 category: Shabbat & holidays
-related: shabbat-practical-questions, thirty-nine-melachot, shabbat-for-beginners, muktzeh
+related: shabbat-practical-questions, unplugging-on-shabbat, thirty-nine-melachot, shabbat-for-beginners, muktzeh
 local: Families in Lafayette, Moraga and Orinda can call Rabbi Yisroel Labkowski at 925-384-7242 with any question about appliances and Shabbat at home.
 ---
 On Shabbat we do not turn electrical things on or off. Lights stay as they were set before Shabbat, phones and screens are put away, and timers do the switching for us. It sounds like a lot, but most homes need only a few simple steps on Friday afternoon.
@@ -28,7 +28,7 @@ You may open the fridge, but not if a light goes on. Before Shabbat, unscrew the
 
 - **An urn** filled and plugged in before Shabbat gives hot water for tea and coffee all day.
 - **Hot water from the tap** can cause the water heater to heat new water. Many people avoid it on Shabbat; ask the Rabbi about your system.
-- **Heating and air conditioning** can run on a thermostat or timer set before Shabbat.
+- **Heating and air conditioning** can run on a thermostat or timer set before Shabbat. Ask the Rabbi about your system, since a thermostat can raise questions.
 
 ## Shabbat-mode appliances
 

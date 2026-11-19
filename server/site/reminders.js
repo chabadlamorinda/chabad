@@ -8,7 +8,7 @@ const { fmtClock } = require('./content.js');
 
 const ptNow = (d) => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' }).formatToParts(d).map((x) => [x.type, x.value])); return { ymd: `${p.year}-${p.month}-${p.day}`, hour: +p.hour }; };
 
-function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null, townsOf = null, notifyTo = '' }) {
+function createReminders({ store, mailer, base, org, log = console, now = () => new Date(), i18n = null, townsOf = null, notifyTo = '', content = null }) {
   if (!store || !mailer) return null;
   const q = (t, p) => store.pool.query(t, p);
   const T = (lang) => (i18n ? i18n.makeT(lang) : (x, v) => (v ? x.replace(/\{(\w+)\}/g, (m, k) => v[k]) : x));
@@ -29,10 +29,24 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
       const d = await require('./digest.js').morningDigest(q, base).catch((e) => { log.error('digest:', e && e.message); return null; });
       if (d) await send(key, { to: notifyTo || org.email, subject: d.subject, text: d.text });
     }
+    // Monday: how the website did last week (visitors, where they came from, what they read and did).
+    if (new Date(today + 'T12:00:00Z').getUTCDay() === 1 && (notifyTo || org.email) && await once(key = `traction:${today}`)) {
+      const d = await require('./traction.js').weeklyTraction(q, base, content ? content() : null).catch((e) => { log.error('traction:', e && e.message); return null; });
+      if (d) await send(key, { to: notifyTo || org.email, subject: d.subject, text: d.text });
+    }
     // Sunday: a full backup of the database to the Rabbi (server/backup.js), so a copy always exists outside it.
     if (new Date(today + 'T12:00:00Z').getUTCDay() === 0 && (notifyTo || org.email) && await once(key = `backup:${today}`)) {
       const f = await require('../backup.js').backupFile(store.pool).catch((e) => { log.error('backup:', e && e.message); return null; });
       if (f) await send(key, { to: notifyTo || org.email, subject: `Weekly backup of the website (${today})`, text: `Attached is a full copy of everything the website keeps: members, families and yahrzeits, RSVPs, forms, Kaddish and prayer requests, subscribers, donors and the books, Kiddush sponsorships and campaigns.\n\nKeep this email (or save the file to a folder). If anything is ever lost, Claude can restore from it.\n\n${Object.entries(f.counts).filter(([, n]) => n).map(([k, n]) => k + ': ' + n).join('\n')}\n\nYou can also download a fresh copy any time: ${base}/admin/ (Rabbi's desk → Download a full backup).`, attachments: [{ filename: f.name, content: f.content }] });
+    }
+    // Every 4 weeks (then each Sunday until he does it): remind the Rabbi to download his own full copy from the desk, because a
+    // backup kept only on the server does not survive losing the server. Downloading it from the desk ticks it off.
+    if (new Date(today + 'T12:00:00Z').getUTCDay() === 0 && (notifyTo || org.email) && store.getKv) {
+      const st = await require('../backup.js').backupStatus(store, now()).catch(() => null);
+      if (st && st.due && await once(key = `backup-nag:${today}`)) {
+        const weeks = Math.floor(st.days / 7);
+        await send(key, { to: notifyTo || org.email, subject: 'Time to download a full backup of the website', text: `It has been ${weeks} weeks since ${st.lastAt ? 'you last downloaded' : 'the website was set up, and you have not yet downloaded'} a full backup.\n\nPlease open the Rabbi's desk and tap "Download a full backup", then keep the file somewhere safe (your computer, Google Drive). It takes a few seconds, and it is the copy that survives even if the server is ever lost:\n${base}/admin/\n\nThis reminder comes back every Sunday until you do it, and then again in 4 weeks.` });
+      }
     }
     // Website members (signed in at least once) get email; app-only members get the app's push reminders.
     const ys = (await q(`SELECT y.*, m.name AS member_name, m.email, m.lang FROM yahrzeits y JOIN members m ON m.id=y.member_id WHERE m.last_login IS NOT NULL AND m.email <> ''`)).rows;

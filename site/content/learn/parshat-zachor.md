@@ -2,14 +2,14 @@
 title: Parshat Zachor and the Four Special Shabbats Before Passover
 description: What is Parshat Zachor? The Shabbat before Purim, the Torah reading to remember Amalek, and the four special readings: Shekalim, Zachor, Parah, HaChodesh.
 category: Shabbat & holidays
-related: purim-for-beginners, torah-reading, fast-of-esther, adar, hamantaschen
+related: purim-for-beginners, the-four-parshiyot, torah-reading, fast-of-esther, adar, hamantaschen
 local: Come to Shabbat services in Lafayette for Parshat Zachor: call Rabbi Yisroel Labkowski at 925-384-7242 for times and to hear what is planned.
 ---
 Parshat Zachor (פרשת זכור) is the special Torah reading on the Shabbat before Purim, in which we are commanded to "remember" what Amalek did to the Jewish people and to blot out its memory. According to many halachic authorities, there is a Biblical requirement for men to hear this reading, which is why so many people come to the synagogue that Shabbat.
 
 ## What is Parshat Zachor?
 
-"Zachor" means "remember." The reading comes from Deuteronomy 25:17-19, and it is added to the regular weekly portion. Chabad.org explains that Amalek alone attacked the Jewish people after the Exodus, out of a hatred that defied logic. The Haftorah is from I Samuel 15, the story of King Saul and Amalek.
+"Zachor" means "remember." The reading comes from Deuteronomy 25:17-19, and it is added to the regular weekly portion. Amalek alone attacked the Jewish people after the Exodus, out of a hatred that defied logic. The Haftorah is from I Samuel 15, the story of King Saul and Amalek.
 
 The connection to Purim is clear: Haman, the villain of the Purim story, is a descendant of Amalek. Hearing Zachor on the Shabbat before Purim prepares us to celebrate Purim. See [Purim for beginners](/learn/purim-for-beginners) and [the Purim holiday page](/holidays/purim).
 

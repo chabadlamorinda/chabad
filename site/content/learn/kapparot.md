@@ -2,7 +2,7 @@
 title: Kapparot: The Custom Before Yom Kippur
 description: What kapparot is, how it is done with a chicken or with money for tzedakah, the words that are said, and what the custom means.
 category: Shabbat & holidays
-related: yom-kippur-fast, ten-days-of-repentance, teshuvah, tzedakah, kol-nidre
+related: yom-kippur-fast, erev-yom-kippur, ten-days-of-repentance, teshuvah, tzedakah, kol-nidre
 local: Questions about kapparot in Lafayette, Moraga or Orinda? Call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Kapparot (in Yiddish, "shlogn kapores") is an old custom done in the days before Yom Kippur, traditionally early in the morning of the day before Yom Kippur. A person holds a chicken, or money set aside for charity, circles it over their head while saying a short prayer, and then the chicken or the money goes to help the poor. It is a moving way to begin the holiest day of the year with thoughts of teshuvah and kindness.

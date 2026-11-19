@@ -2,7 +2,7 @@
 title: Shabbat Table Songs (Zemirot): Singing at the Shabbat Meal
 description: What zemirot are, when they are sung, classic Shabbat table songs like Yah Ribon and Kah Echsof, Chassidic niggunim, and how to start at home.
 category: Shabbat & holidays
-related: shalom-aleichem, chanukah-songs, niggun, eishet-chayil, shabbat-meals, melave-malka
+related: shalom-aleichem, jewish-view-of-music, lecha-dodi, chanukah-songs, niggun, eishet-chayil, shabbat-meals, melave-malka
 local: Hear the songs at the Labkowski family's Friday night table at Chabad of Lamorinda; you are always welcome for a Friday night meal. Call 925-384-7242.
 ---
 Zemirot are the songs sung around the table at the Shabbat meals. Between courses, families and guests sing together, in Hebrew and Aramaic, about the joy of Shabbat, G-d's kindness and the hope for redemption. Singing turns a dinner into a Shabbat meal.
@@ -31,7 +31,7 @@ The Sages teach that the Shabbat meal should be more than food. Words of Torah a
 
 ## Niggunim: melodies without words
 
-In Chassidic homes, and especially in Chabad, a great deal of the singing is [niggunim](/learn/niggun), melodies sung without words. The Chassidic masters taught that a melody can say what words cannot, reaching the soul directly. Some niggunim are joyful and get the whole table singing; others are slow and thoughtful. Many Chabad families sing niggunim at the Shabbat table more than the printed zemirot, and some of these melodies were taught by the Rebbes themselves.
+In Chassidic homes, and especially in Chabad, a great deal of the singing is [niggunim](/learn/niggun), melodies sung without words. The Chassidic masters taught that a melody can say what words cannot, reaching the soul directly. Some niggunim are joyful and get the whole table singing; others are slow and thoughtful. Many Chabad families also sing niggunim at the Shabbat table, and some of these melodies were taught by the Rebbes themselves.
 
 A wordless niggun is also the easiest way to join in: there is nothing to read, so anyone can hum along from the first time.
 

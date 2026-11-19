@@ -2,7 +2,7 @@
 title: Hoshana Rabbah: The Seventh Day of Sukkot Explained
 description: What Hoshana Rabbah is, why it is the final day of judgment, the willow branch custom, the night of learning, and how to observe it.
 category: Shabbat & holidays
-related: four-kinds, shemini-atzeret, simchat-torah-for-beginners, sukkah, teshuvah, tehillim
+related: four-kinds, simchat-beit-hashoevah, chol-hamoed, shemini-atzeret, simchat-torah-for-beginners, sukkah, teshuvah, tehillim
 local: Celebrate Sukkot, Shemini Atzeret and Simchat Torah with us. See chabadoflamorinda.com/holidays/sukkot or call 925-384-7242.
 ---
 Hoshana Rabbah is the seventh and final day of Sukkot, when the judgment that began on Rosh Hashanah is sealed for the final time. It is a joyful festival day with special prayers, seven circuits around the synagogue, and the custom of beating willow branches.
@@ -11,7 +11,7 @@ Hoshana Rabbah is the seventh and final day of Sukkot, when the judgment that be
 
 The name means "the great Hoshana," after the Hoshana prayers that ask G-d to "save us, please." On every day of Sukkot, these prayers are said while circling the bimah (the Torah reading table) once, holding the [Four Kinds](/learn/four-kinds). On Hoshana Rabbah we circle it seven times.
 
-Hoshana Rabbah is a weekday of the intermediate days of Sukkot (Chol Hamoed), so work is not forbidden as on a full holiday. Yet it has a special solemnity mixed with joy.
+Hoshana Rabbah is a weekday of the intermediate days of Sukkot (Chol Hamoed), so the Yom Tov prohibitions do not apply (the Chol Hamoed rules about work still do; ask the Rabbi). Yet it has a special solemnity mixed with joy.
 
 ## Why it is a day of judgment
 
@@ -48,7 +48,7 @@ Hoshana Rabbah leads straight into Shemini Atzeret and Simchat Torah, when we da
 ## Common questions
 
 ### Is Hoshana Rabbah a full holiday?
-No. It is part of Chol Hamoed, the intermediate days of Sukkot, so driving, phones and work are permitted. Still, it is a special day, and many take time off to pray and celebrate.
+No. It is part of Chol Hamoed, the intermediate days of Sukkot, so driving and phones are permitted, though the Chol Hamoed rules about work still apply. Still, it is a special day, and many take time off to pray and celebrate.
 
 ### Where do I get willows for Hoshana Rabbah?
 Hoshanot are usually sold or given out in synagogue, often tied in bundles of five. They are separate from the two willows in your lulav set.

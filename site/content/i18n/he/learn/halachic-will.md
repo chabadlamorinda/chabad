@@ -2,7 +2,7 @@
 title: צוואה יהודית: תכנון עיזבון לפי ערכים יהודיים
 description: תכנון עיזבון בדרך היהודית: למה להלכה אכפת מירושה, צוואה הלכתית, רצונות לגבי קבורה, צדקה ותרומות מורשת, וצוואה מוסרית.
 category: Life cycle
-related: ethical-will, planning-a-jewish-funeral-in-advance, when-a-loved-one-is-dying, jewish-funeral, cremation-jewish-view, tzedakah
+related: ethical-will, buying-a-jewish-cemetery-plot, how-much-to-leave-to-tzedakah-in-a-will, legacy-gift-step-by-step, life-insurance-gift-to-charity, naming-chabad-in-your-living-trust, leaving-chabad-in-your-will, leaving-a-jewish-legacy-gift, jewish-health-care-directive, hospice-and-end-of-life-care, planning-a-jewish-funeral-in-advance, when-a-loved-one-is-dying, jewish-funeral, cremation-jewish-view, tzedakah
 local: משפחות בלאפייט, מוראגה, אורינדה והאיסט ביי: הרב ישראל לבקובסקי ישמח לדבר איתכם על רצונות יהודיים בצוואה ובקבורה. 925-384-7242.
 ---
 עריכת צוואה היא מתנה לאנשים שאתם אוהבים. היהדות מוסיפה שלושה דברים לחשוב עליהם: לוודא שהתוכנית שלכם תקפה גם לפי ההלכה, להשאיר רצונות ברורים לגבי קבורה יהודית, ולהעביר הלאה את הערכים שלכם, לא רק את הנכסים.

@@ -91,7 +91,7 @@
         btn.disabled = false;
         if (r._status !== 200) { msg.textContent = r.error || T('Something went wrong. Please try again.'); return; }
         store.set('cl_nl', 'done');
-        msg.textContent = r.already ? T('You are already signed up. Thank you!') : T('Thank you! Please check your email and tap the link to confirm.');
+        msg.textContent = r.already ? T('You are already signed up. Thank you!') : r.pending ? T('Thank you! Please check your email and tap the link to confirm.') : T('Thank you! You are signed up for the weekly email.');
         f.classList.add('done');
         var pop = f.closest('[data-nl-pop]'); if (pop) setTimeout(function () { pop.classList.remove('on'); setTimeout(function () { pop.hidden = true; }, 300); }, 4000);
       }, function () { btn.disabled = false; msg.textContent = T('Something went wrong. Please try again.'); });
@@ -140,7 +140,7 @@
     var m = /(?:^|;\s*)cl_vid=([a-z0-9]+)/.exec(document.cookie), vid = m && m[1];
     if (!vid) { vid = (Math.random().toString(36).slice(2) + Date.now().toString(36) + Math.random().toString(36).slice(2)).slice(0, 32); }
     try { document.cookie = 'cl_vid=' + vid + ';path=/;max-age=' + 400 * 86400 + ';samesite=lax' + (location.protocol === 'https:' ? ';secure' : ''); } catch (e) {}
-    try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname }) }).catch(function () {}); } catch (e) {}
+    try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname, ref: document.referrer || '', q: location.search || '' }) }).catch(function () {}); } catch (e) {}
   })();
   if (store.get('cl_signed')) {
     Array.prototype.forEach.call(document.querySelectorAll('[data-account]'), function (a) { a.textContent = T('My account'); }); // header button and the menu
@@ -184,6 +184,18 @@
     }, show);
   })();
 
+  // Amount chips (tap again to clear) plus "Other amount": value() is the chosen number or 0.
+  var amountPicker = function (amounts) {
+    var amt = 0, other = el('input', { type: 'number', min: '1', max: '10000', step: '1', inputmode: 'numeric', placeholder: T('Other amount ($)'), 'aria-label': T('Other amount ($)') });
+    var chips = amounts.map(function (a) {
+      var b = el('button', { type: 'button', class: 'chip', 'aria-pressed': 'false', text: '$' + a });
+      b.addEventListener('click', function () { var on = amt !== a; amt = on ? a : 0; other.value = ''; chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.classList.remove('on'); }); if (on) { b.setAttribute('aria-pressed', 'true'); b.classList.add('on'); } });
+      return b;
+    });
+    other.addEventListener('input', function () { amt = 0; chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); c.classList.remove('on'); }); });
+    return { node: el('div', { class: 'chips' }, chips.concat([other])), value: function () { var o = Math.floor(Number(other.value)); return o > 0 ? Math.min(o, 10000) : amt; } };
+  };
+
   // ---------- RSVP ----------
   var box = $('[data-rsvp]');
   if (box) {
@@ -209,28 +221,34 @@
       var email = el('input', { name: 'email', type: 'email', autocomplete: 'email', value: guest.email || '', required: true });
       var phone = el('input', { name: 'phone', type: 'tel', autocomplete: 'tel', value: guest.phone || '' });
       var note = el('input', { name: 'note', placeholder: T('Anything we should know? (optional)') });
+      // Optional sponsorship: tap an amount (tap again to clear); after the RSVP a button leads to the secure giving page with it filled in.
+      var fund = box.getAttribute('data-fund') || 'general', pick = amountPicker([180, 360, 1000, 1800]);
+      var sponsor = el('div', { class: 'sponsor-pick' }, [el('p', { class: 'hand', text: T('Sponsor this event (optional)') }), el('p', { class: 'muted', text: T('Help us welcome every family. Choose an amount, or skip it and just RSVP.') }), pick.node]);
+      var giveHref = function () { return P('/donate?fund=' + fund + '&amt=' + pick.value() + '&ded=' + encodeURIComponent((T('Sponsoring') + ': ' + box.getAttribute('data-title')).slice(0, 80)) + '#give'); };
       var m = el('p', { class: 'msg', hidden: true }), go = el('button', { class: 'btn gold', type: 'submit', text: mine ? T('Update my RSVP') : (s.signedIn ? T("I'm coming") : T('RSVP')) });
       if (refIn && !mine) ui.appendChild(el('p', { class: 'invited hand', text: T('A friend is going and invited you. Join them!') }));
       var form = el('form', {}, [
         s.signedIn ? el('p', { text: (mine ? T('You are coming.') + ' ' : '') + T('RSVP as {name}.', { name: s.name || '' }) }) : null,
         adults, withKids ? kids : null,
         s.signedIn ? null : el('div', { class: 'fields' }, [el('label', {}, [T('Name'), name]), el('label', {}, [T('Email'), email]), el('label', {}, [T('Phone (optional)'), phone])]),
-        el('label', {}, [T('Note'), note]), el('p', { class: 'btns' }, [go]), m,
+        el('label', {}, [T('Note'), note]), mine ? null : sponsor, el('p', { class: 'btns' }, [go]), m,
         s.signedIn ? null : el('p', { class: 'muted' }, [T('Tip:') + ' ', el('a', { href: P('/account'), text: T('sign in') }), ' ' + T('once and next time RSVP is a single tap.')])]);
       form.addEventListener('submit', function (ev) {
         ev.preventDefault(); go.disabled = true;
         var body = { adults: adults.value(), kids: withKids ? kids.value() : 0, note: note.value, name: name.value, email: email.value, phone: phone.value };
         try { body.ref = sessionStorage.getItem(refKey) || ''; } catch (e) {}
         if (!s.signedIn) store.set('cl_guest', { name: name.value, email: email.value, phone: phone.value });
+        var chosen = pick.value();
         api('POST', '/rsvp/' + slug, body).then(function (r) {
           go.disabled = false;
           if (r.ok) {
+            var giveBtn = chosen ? el('p', { class: 'btns' }, [el('a', { class: 'btn gold', href: giveHref(), text: T('Complete my ${amount} sponsorship', { amount: chosen }) })]) : null;
             if (window.gtag) window.gtag('event', 'rsvp', { event_label: slug });
-            if (s.signedIn) { msg(m, T('Thank you! You are on the list. See you there.'), true); nudge(m.parentNode); invite(r.invite); go.textContent = T('Update my RSVP'); return; }
+            if (s.signedIn) { msg(m, T('Thank you! You are on the list. See you there.'), true); if (giveBtn) m.parentNode.appendChild(giveBtn); nudge(m.parentNode); invite(r.invite); go.textContent = T('Update my RSVP'); return; }
             // A guest: the form gives way to a clear "you're coming", the calendar, then bringing a friend and an account.
             form.hidden = true;
             var done = el('div', { class: 'rsvp-done' }, [el('p', { class: 'hand', text: T('Thank you! You are on the list. See you there.') }),
-              el('p', { class: 'btns' }, [el('a', { class: 'btn gold sm', href: '/events/' + slug + '.ics', text: T('Add to my calendar') })])]);
+              giveBtn, el('p', { class: 'btns' }, [el('a', { class: 'btn gold sm', href: '/events/' + slug + '.ics', text: T('Add to my calendar') })])]);
             ui.appendChild(done); invite(r.invite); nudge(done);
           }
           else msg(m, r.error || T('Something went wrong.'));
@@ -239,6 +257,26 @@
       ui.appendChild(form);
     });
   }
+
+  // ---------- An optional gift inside a form ----------
+  // data-gift="<fund>" on a form adds a few amounts (tap again to clear) before the button; after the form is sent,
+  // a chosen amount becomes a "Complete my $X gift" button to the secure giving page. Skipping it changes nothing.
+  var giftOf = function (form) {
+    var fund = form.getAttribute('data-gift'); if (!fund || form._gift) return form._gift;
+    var pick = amountPicker([180, 360, 1000, 1800]);
+    var box = el('div', { class: 'sponsor-pick' }, [el('p', { class: 'hand', text: T('Add a gift (optional)') }), el('p', { class: 'muted', text: T('Every gift helps. Choose an amount, or skip it and just send.') }), pick.node]);
+    var sub = form.querySelector('button[type=submit]'); sub.parentNode.insertBefore(box, sub);
+    form._gift = { amount: pick.value, box: box };
+    return form._gift;
+  };
+  var giftDone = function (form, who) {
+    var g = form._gift, a = g && g.amount(); if (!a) return;
+    var ded = (form.getAttribute('data-gift-ded') || form.getAttribute('data-gift-title') || '').replace('{name}', who || '');
+    var btn = el('p', { class: 'btns' }, [el('a', { class: 'btn gold', href: P('/donate?fund=' + encodeURIComponent(form.getAttribute('data-gift')) + '&amt=' + a + (ded ? '&ded=' + encodeURIComponent(ded.slice(0, 80)) : '') + '#give'), text: T('Complete my ${amount} gift', { amount: a }) })]);
+    g.box.hidden = true; form.appendChild(btn);
+    var gn = form.querySelector('.give-next'); if (gn) gn.hidden = true;
+  };
+  [].forEach.call(document.querySelectorAll('form[data-gift]'), giftOf);
 
   // ---------- Forms that send something to the Rabbi ----------
   // data-kind fixes the kind; data-title builds the headline from fields ({deceased}); fields with data-extra are
@@ -263,8 +301,9 @@
         if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
         var pub = /^(mazal-tov|announcement|shiva)$/.test(f.getAttribute('data-kind') || val('kind'));
         msg(m, pub ? T('Thank you! The Rabbi will review it and post it soon.') : T('Thank you! We received it and the Rabbi will be in touch.'), true);
+        giftDone(f, who);
         var give = $('.give-next', f);
-        if (give) { var l = $('a', give), ded = (l.getAttribute('data-ded') || '').replace('{name}', who); l.href = l.href.replace(/([?&]ded=)[^&#]*/, '$1' + encodeURIComponent(ded.slice(0, 80))); give.hidden = false; }
+        if (give && !(f._gift && f._gift.amount())) { var l = $('a', give), ded = (l.getAttribute('data-ded') || '').replace('{name}', who); l.href = l.href.replace(/([?&]ded=)[^&#]*/, '$1' + encodeURIComponent(ded.slice(0, 80))); give.hidden = false; }
         [].forEach.call(f.querySelectorAll('textarea, input[name=title], input[name=link]'), function (x) { if (x.type !== 'hidden') x.value = ''; });
       });
     });
@@ -331,6 +370,7 @@
         b.disabled = false;
         if (!r.ok) { msg(m, r.error || T('Something went wrong.')); return; }
         msg(m, T('Thank you! We received it and the Rabbi will be in touch.') + (r.amount ? ' ' + T('Total: ${amount}', { amount: r.amount }) : ''), true); nudge(form);
+        giftDone(form, fields.name || '');
         var pay = $('.pay-next', form);
         if (pay && r.payUrl) { $('a', pay).href = r.payUrl; pay.hidden = false; }
         b.hidden = true;
@@ -416,6 +456,16 @@
       if (!(amount >= 1 && amount <= 10000)) return fail(T('Please enter an amount between $1 and $10,000.'), other);
       var freq = f.elements.freq, monthly = (freq && (freq.value || (f.querySelector('input[name=freq]:checked') || {}).value)) === 'monthly';
       var body = { amount: amount, fund: f.elements.fund.value, freq: monthly ? 'monthly' : 'once', dedication: f.elements.dedication.value, fee: f.elements.fee.checked, lang: LANG, back: f.getAttribute('data-back') || '/donate', idem: 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
+      var dn = (f.elements.donorName ? f.elements.donorName.value : '').trim(), de = (f.elements.donorEmail ? f.elements.donorEmail.value : '').trim();
+      // The name and email are needed (the official receipt is sent to them); phone, address and a note are optional.
+      if (f.elements.donorName) {
+        if (!dn) return fail(T('Please enter your name.'), f.elements.donorName);
+        if (!de) return fail(T('Please enter your email address, so we can send your receipt.'), f.elements.donorEmail);
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(de)) { return fail(T('Please enter a valid email address.'), f.elements.donorEmail); }
+        var val = function (n) { return f.elements[n] ? f.elements[n].value.trim() : ''; };
+        body.web = 1; body.donorName = dn; body.donorEmail = de;
+        if (val('donorPhone')) body.donorPhone = val('donorPhone'); if (val('donorAddress')) body.donorAddress = val('donorAddress'); if (val('donorNote')) body.donorNote = val('donorNote');
+      }
       if (f.elements.show) {
         body.club = { show: f.elements.show.checked, name: f.elements.boardName.value.trim() };
         if (body.club.show && !body.club.name) return fail(T('Please enter the name for the board.'), f.elements.boardName);
@@ -857,4 +907,21 @@
     if (!p.name) f.name.input.focus();
     if (location.hash === '#yahrzeits') s3.scrollIntoView();
   }
+
+  // An "Email" link does nothing on a computer with no mail program set up. After the tap, offer the address, a copy button and Gmail.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"]'); if (!a) return;
+    var to = decodeURIComponent(a.getAttribute('href').slice(7).split('?')[0]), q = (a.getAttribute('href').split('?')[1] || '');
+    if (!to || document.getElementById('mailhelp')) return;
+    var bar = document.createElement('div'); bar.id = 'mailhelp'; bar.className = 'mailhelp'; bar.setAttribute('role', 'status');
+    var msg = document.createElement('span'); msg.textContent = T('No mail program on this computer?') + ' ';
+    var addr = document.createElement('strong'); addr.textContent = to; addr.setAttribute('dir', 'ltr');
+    var copy = document.createElement('button'); copy.type = 'button'; copy.className = 'btn ghost sm'; copy.textContent = T('Copy the address');
+    copy.onclick = function () { var done = function () { copy.textContent = T('Copied!'); }; if (navigator.clipboard) navigator.clipboard.writeText(to).then(done, function () {}); else { var t = document.createElement('textarea'); t.value = to; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch (x) {} t.remove(); } };
+    var g = document.createElement('a'); g.className = 'btn ghost sm'; g.target = '_blank'; g.rel = 'noopener'; g.textContent = T('Write it in Gmail');
+    g.href = 'https://mail.google.com/mail/?view=cm&to=' + encodeURIComponent(to) + (q ? '&' + q.replace(/(^|&)body=/, '$1body=').replace(/subject=/, 'su=') : '');
+    var x = document.createElement('button'); x.type = 'button'; x.className = 'mailhelp-x'; x.setAttribute('aria-label', T('Close')); x.textContent = '×'; x.onclick = function () { bar.remove(); };
+    [msg, addr, copy, g, x].forEach(function (n) { bar.appendChild(n); });
+    document.body.appendChild(bar); setTimeout(function () { if (bar.parentNode) bar.remove(); }, 20000);
+  });
 })();

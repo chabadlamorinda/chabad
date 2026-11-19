@@ -2,7 +2,7 @@
 title: Mitzvah Tanks and the Rebbe's Mitzvah Campaigns
 description: What Chabad Mitzvah Tanks are, why the Rebbe started the mitzvah campaigns, and how people are invited to do a mitzvah on the spot.
 category: Jewish ideas
-related: the-rebbe, chabad, tefillin, shabbat-candles
+related: the-rebbe, public-menorah-lighting, chabad, tefillin, shabbat-candles
 local: Chabad of Lamorinda shares mitzvahs like tefillin and Shabbat candles around the community. Call 925-384-7242 to put on tefillin or get Shabbat candles.
 ---
 Mitzvah Tanks are mobile mitzvah centers, often large vans or RVs, that Chabad uses to bring Judaism to Jews wherever they are. Inspired by the Lubavitcher Rebbe, volunteers invite passersby to do a mitzvah right then and there, such as putting on tefillin or taking Shabbat candles.

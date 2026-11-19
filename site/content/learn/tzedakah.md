@@ -2,7 +2,7 @@
 title: Tzedakah: The Jewish Mitzvah of Giving Charity
 description: What tzedakah means, how much Jews traditionally give, the eight levels of giving, and simple ways to make charity a daily habit.
 category: Jewish ideas
-related: 613-mitzvot, children-money-and-tzedakah, kapparot, jewish-birthday-customs, giving-to-people-who-ask, yizkor, teshuvah, moshiach
+related: 613-mitzvot, tanya-on-tzedakah, the-blessing-of-giving-maaser, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for, maaser-for-business-owners-and-investors, how-to-calculate-maaser, what-is-jewish-tithing, baal-shem-tov-tzedakah-stories, the-poor-mans-offering, rabbi-akiva-and-rabbi-tarfon-investment, tzedakah-saves-from-death-stories, mar-ukva-secret-giving, the-rebbes-sunday-dollars, king-munbaz-treasures-above, how-to-give-tzedakah-kindly, tzedakah-equals-all-the-mitzvot, why-give-if-g-d-provides, what-giving-does-for-the-giver, tzedakah-averts-a-harsh-decree, giving-when-money-is-tight, giving-anonymously, tzedakah-before-candle-lighting, chanukah-tzedakah, matanot-laevyonim, local-tzedakah-in-lamorinda, maot-chitim, rabbi-meir-baal-haness, children-money-and-tzedakah, kapparot, jewish-birthday-customs, giving-to-people-who-ask, yizkor, teshuvah, moshiach
 local: Want a tzedakah box for your home or ideas for giving? Call Rabbi Labkowski at 925-384-7242 and we will be glad to help.
 ---
 Tzedakah is the Jewish mitzvah of giving to those in need. The word means "justice" or "righteousness," not "charity," because Judaism teaches that helping others is simply the right thing to do: what we have is entrusted to us by G-d, and sharing it is part of our responsibility.

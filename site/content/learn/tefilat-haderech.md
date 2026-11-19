@@ -2,7 +2,7 @@
 title: Tefilat HaDerech: The Traveler's Prayer
 description: What Tefilat HaDerech, the Jewish traveler's prayer, says, when to say it on a road trip or flight, and customs for a safe journey.
 category: Prayer & Torah
-related: prayer, visiting-lamorinda, traveling-on-shabbat, blessings, tzedakah, siddur
+related: prayer, shliach-mitzvah-money-for-a-trip, davening-on-the-commute, visiting-lamorinda, traveling-on-shabbat, blessings, tzedakah, siddur
 local: Traveling soon? Call Chabad of Lamorinda at 925-384-7242 with questions about Tefilat HaDerech, or give tzedakah before your trip at chabadoflamorinda.com/donate.
 ---
 Tefilat HaDerech, the Traveler's Prayer, is a short prayer asking G-d for a safe and peaceful journey. It is said once you have left your city on a trip of meaningful distance, whether by car, plane, train or boat.
@@ -34,7 +34,6 @@ Since rules about distance and timing have details, ask the Rabbi if you are uns
 ## How to say it
 
 - Stand if you can do so safely, for example when walking or on a train. If you are driving or seated on a plane, you may say it sitting.
-- Many have the custom to say it together with another blessing, such as the one after using the restroom, so it closes a blessing properly.
 - Say it with feeling. You are asking G-d to watch over you and everyone on the road.
 
 ## Tzedakah for the road

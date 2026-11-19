@@ -2,7 +2,7 @@
 title: The Minor Fast Days: Tzom Gedaliah, 10 Tevet, Esther and 17 Tammuz
 description: A guide to the four minor Jewish fast days: what each one remembers, when it falls, fasting times, who is exempt and the special prayers.
 category: Shabbat & holidays
-related: fast-days, fast-of-esther, tevet, three-weeks, teshuvah, selichot
+related: fast-days, asara-btevet, ezekiel, tammuz, avinu-malkeinu, fast-of-the-firstborn, fast-of-esther, tevet, three-weeks, teshuvah, selichot
 local: Check fast start and end times with our zmanim tool at chabadoflamorinda.com/tools/zmanim, or call Rabbi Labkowski at 925-384-7242 with questions.
 ---
 The minor fast days are four days in the Jewish year when we refrain from eating and drinking from dawn until nightfall: the Fast of Gedaliah, the Tenth of Tevet, the Fast of Esther and the Seventeenth of Tammuz. They recall tragic events, or in the case of Esther, a day of prayer, and they call us to reflect and return to G-d.
@@ -33,7 +33,7 @@ Those who do not fast should still eat simply and not indulge.
 
 1. **Selichot,** prayers for forgiveness, are added in the morning service. See our [Selichot guide](/learn/selichot).
 2. **Avinu Malkeinu** is said in the morning and afternoon.
-3. **Aneinu** ("Answer us") is added to the Amidah by those fasting.
+3. **Aneinu** ("Answer us") is added to the Amidah: by individuals at Mincha, and by the cantor in his repetition at Shacharit and Mincha.
 4. **The Torah is read** at Shacharit and Mincha, from the passage of Moses praying for forgiveness after the golden calf. A haftarah is read at Mincha.
 
 These public readings need a minyan with enough people fasting.

@@ -2,7 +2,7 @@
 title: Friday Night Dinner, Step by Step: Your First Shabbat Meal at Home
 description: The whole Friday night Shabbat dinner in order, from candle lighting to Birkat Hamazon, with what to say at each step in simple words.
 category: Shabbat & holidays
-related: hosting-your-first-shabbat-dinner, shabbat-candles, kiddush, hamotzi, birkat-hamazon
+related: hosting-your-first-shabbat-dinner, setting-the-shabbat-table, easy-shabbat-dinner-menu, dvar-torah-at-the-shabbat-table, parsha-for-kids, shabbat-candles, kiddush, hamotzi, birkat-hamazon
 local: Want to see it done first? Join us for a Shabbat dinner at Chabad of Lamorinda in Lafayette, for families from Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 A Friday night dinner has a shape to it, and once you know the order it feels natural. Nothing here needs to be perfect. If you light candles and share a meal, you have made Shabbat. Here is the whole evening, step by step, with a few simple words for each part.
@@ -21,7 +21,7 @@ Many families then sing Eishet Chayil, "A Woman of Valor" (Proverbs 31), in hono
 
 ## 4. Bless the children
 
-Parents place their hands on each child's head and say a short blessing: for boys, "May G-d make you like Ephraim and Menashe"; for girls, "May G-d make you like Sarah, Rebecca, Rachel and Leah," followed by the Priestly Blessing. Add your own whispered words. Children remember this their whole lives. See [blessing your children](/learn/blessing-your-children).
+In many communities parents place their hands on each child's head and say a short blessing (ask the Rabbi about your family's custom): for boys, "May G-d make you like Ephraim and Menashe"; for girls, "May G-d make you like Sarah, Rebecca, Rachel and Leah," followed by the Priestly Blessing. Add your own whispered words. Children remember this their whole lives. See [blessing your children](/learn/blessing-your-children).
 
 ## 5. Kiddush over wine
 
@@ -33,7 +33,7 @@ Before eating bread, each person pours water from a cup over the right hand and 
 
 ## 7. Hamotzi over two challahs
 
-Uncover the two challahs, lift them, and say *Baruch atah Ado-nai, Elo-heinu Melech ha'olam, hamotzi lechem min ha'aretz.* Slice, dip in a little salt, and pass a piece to everyone. Now you may talk again. See [Hamotzi](/learn/hamotzi) and [challah](/learn/challah).
+Uncover the two challahs, lift them, and say *Baruch atah Ado-nai, Elo-heinu Melech ha'olam, hamotzi lechem min ha'aretz.* Slice, dip in a little salt, and pass a piece to everyone. Once you have eaten your piece, you may talk again. See [Hamotzi](/learn/hamotzi) and [challah](/learn/challah).
 
 ## 8. The meal: songs and a word of Torah
 

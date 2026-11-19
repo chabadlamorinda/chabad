@@ -22,7 +22,7 @@ King David wrote the psalm in an alphabetical pattern: each verse starts with th
 
 ## Why the Sages loved it
 
-The Talmud (Berachot 4b) teaches that saying Ashrei three times each day brings great reward. The Rebbe explained why we say it every day: Ashrei thanks G-d for His everyday kindness in the natural world, the food on our table and the sun that rises. Hallel, by contrast, thanks Him for rare, extraordinary miracles, and so it is not said daily. When we say Ashrei with attention, we feel that the world is held in loving hands.
+The Talmud (Berachot 4b) teaches that saying Ashrei three times each day brings great reward. One Chassidic explanation of why we say it every day: Ashrei thanks G-d for His everyday kindness in the natural world, the food on our table and the sun that rises. Hallel, by contrast, thanks Him for rare, extraordinary miracles, and so it is not said daily. When we say Ashrei with attention, we feel that the world is held in loving hands.
 
 ## When it is said
 
@@ -38,7 +38,7 @@ It is not said in the evening service. That makes three times every day. See the
 1. Read it once slowly in English.
 2. Choose one verse a week to learn in Hebrew.
 3. When you reach "You open Your hand," pause, close your eyes, and think of one thing you are grateful for.
-4. Say it standing or sitting; both are accepted. In shul, follow the congregation.
+4. Customs differ about whether to sit or stand; in shul, follow the congregation, and ask the Rabbi.
 
 For more on the book it comes from, see [Tehillim](/learn/tehillim).
 

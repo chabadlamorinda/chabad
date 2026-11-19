@@ -2,7 +2,7 @@
 title: Shabbat with Kids: Ideas to Make It Meaningful and Fun
 description: Practical ideas for celebrating Shabbat with children: candles, blessing the kids, Kiddush, songs, parsha talk, games and Shabbat afternoon.
 category: Shabbat & holidays
-related: shabbat, shabbat-shirah, jewish-lamorinda-with-young-children, blessing-your-children, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
+related: shabbat, shabbat-afternoon-ideas, children-in-synagogue, shabbat-and-youth-sports, shabbat-walks-in-lamorinda, parsha-for-kids, babies-and-toddlers-on-shabbat, shabbat-shirah, jewish-lamorinda-with-young-children, blessing-your-children, technology-and-screens-jewish-view, jewish-parenting, shabbat-candles, shabbat-meals
 local: Our Jewish preschool and Hebrew school bring Shabbat to life for kids; see chabadoflamorinda.com/programs/hebrew-school or call 925-384-7242.
 ---
 Shabbat with kids works best when children are part of every step: helping prepare, lighting candles, receiving a blessing and leading songs at the table. Small traditions done every week give children memories and Jewish identity that last a lifetime.
@@ -21,7 +21,7 @@ Children learn from what we do more than from what we say. A weekly Shabbat tabl
 ## Friday night, step by step
 
 1. **Candle lighting.** In Chabad custom, girls light their own candle from about age three, with the blessing, before their mother. It is a beautiful mitzvah for girls to take on. See our [candle lighting guide](/learn/shabbat-candles).
-2. **Bless the children.** Parents place their hands on each child's head:
+2. **Bless the children, if it is your family's custom.** In many communities, though not widely in Chabad (ask the Rabbi), parents place their hands on each child's head:
    - For boys: "Yesimcha Elokim k'Efrayim v'chiMenasheh," "May G-d make you like Ephraim and Manasseh."
    - For girls: "Yesimeich Elokim k'Sarah, Rivkah, Rachel v'Leah," "May G-d make you like Sarah, Rebecca, Rachel and Leah."
    - Then for all: the Priestly Blessing, "May G-d bless you and protect you..."

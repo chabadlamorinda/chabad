@@ -2,7 +2,7 @@
 title: Jewish Grandparenting From Afar: Staying Close Across the Miles
 description: How Jewish grandparents stay close to faraway grandchildren: Shabbat blessings by video, holiday packages, family stories, Hebrew names and visits.
 category: Jewish home
-related: jewish-grandparents, blessing-your-children, hebrew-names, shabbat-candles, jewish-genealogy
+related: jewish-grandparents, chanukah-with-grandchildren, blessing-your-children, hebrew-names, shabbat-candles, jewish-genealogy
 local: Grandparents visiting family in Lafayette, Moraga or Orinda are always welcome at Chabad of Lamorinda; call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Many Jewish grandparents today live a plane ride away from their grandchildren. Children move for work, for school, for love, and the Friday night table that once held three generations is now spread across time zones. It hurts, and it is also an invitation. A grandparent who cannot be there for every soccer game can still be the person who gives the grandchildren their Jewish memories. Here is how.

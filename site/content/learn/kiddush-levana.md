@@ -23,12 +23,12 @@ The moon is a symbol of the Jewish people: even when it seems to disappear, it a
 ## Where and how
 
 1. **Go outside,** under the open sky. The moon must be visible, not completely hidden by clouds.
-2. **Glance at the moon** once before the blessing, then do not keep staring at it during the blessing.
+2. **Look at the moon** while you say the blessing.
 3. **Stand with feet together,** as in the Amidah.
 4. **Say the opening psalm** (Psalm 148) and then the blessing, which praises G-d "who with His word created the heavens" and who set the moon on its cycle.
 5. **Say the verses that follow,** including "Baruch yotzrech" ("Blessed is your Maker") several times, rising on the toes during a verse that speaks of reaching upward.
-6. **Greet three people** with "Shalom aleichem," and they answer "Aleichem shalom."
-7. **Sing "David melech Yisrael chai vekayam,"** "David, King of Israel, lives and endures," a reference to the coming of Moshiach.
+6. **Sing "David melech Yisrael chai vekayam,"** "David, King of Israel, lives and endures," a reference to the coming of Moshiach.
+7. **Greet three people** with "Shalom aleichem," and they answer "Aleichem shalom."
 8. **Conclude** with the remaining passages printed in the prayer book.
 
 The full text appears in every siddur after the Saturday night prayers. See our [siddur guide](/learn/siddur).

@@ -16,15 +16,16 @@
 // 10. The partners who make everything possible: a live campaign, the Chai Club honor board and joining it, sponsoring
 //     a Kiddush, donating, and a legacy gift. Then sharing and the footer.
 'use strict';
-const { esc, md, plain } = require('./md.js');
+const { esc, md, plain, askRabbi } = require('./md.js');
 const Z = require('./zmanim.js');
 const { portionsOf } = require('./parsha.js');
-const { fmtClock } = require('./content.js');
+const { fmtClock, fullAddress } = require('./content.js');
 const { guideOfWeek, holidayTimes, holidaysOf } = require('./yearly.js');
 const { guidesForDays, guidesFor } = require('./links.js');
 const { guidePhotos } = require('./art.js');
 const { MITZVAHS } = require('./mitzvah.js');
 const { isLive } = require('../campaign.js');
+const { links: calLinks, weeklyId } = require('./addcal.js');
 
 // Colors of the website (cream paper, navy, gold).
 const C_BG = '#f6f1e7', C_CARD = '#ffffff', C_INK = '#1f2433', C_MUTED = '#5f6470', C_NAVY = '#14284b', C_GOLD = '#c99a2e', C_GOLD_INK = '#85600f', C_LINE = '#e8dfcc';
@@ -42,7 +43,7 @@ const card = (inner, extra = '') => `<tr><td style="padding:0 16px 16px"><table 
 
 async function compose(X, { base, kind = 'auto', word = null, joke = '', subject: subj = '', message = '', upcoming = () => [], giving = {}, now = new Date() }) {
   const { t, C } = X, L = X.lang, dir = L === 'he' ? 'rtl' : 'ltr', align = L === 'he' ? 'right' : 'left', far = L === 'he' ? 'left' : 'right';
-  const url = (path) => base + X.path(path);
+  const url = (path) => { const [p0, hash] = String(path).split('#'); return base + X.path(p0) + (p0.includes('?') ? '&' : '?') + 'src=email' + (hash ? '#' + hash : ''); };
   const tx = []; // the plain-text version, built alongside
   const today = Z.todayLocal(now), todayYmd = Z.ymd(today), week = weekNo(today), end = new Date(today); end.setDate(end.getDate() + 7);
   const weekEnd = Z.ymd(end), field = (e, k) => (e[L] && e[L][k]) || e[k];
@@ -78,11 +79,15 @@ async function compose(X, { base, kind = 'auto', word = null, joke = '', subject
   // A few guides as picture rows (each with a different photo).
   const used = new Set(), pic = (a) => { const n = guidePhotos(a.slug, a.category).find((x) => !used.has(x)); if (n) used.add(n); return n ? base + '/media/photos/' + n + '-sm.jpg' : ''; };
   const guideRows = (list) => list.map((a) => { const img = pic(a); return `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 14px"><tr>${img ? `<td width="100" valign="top" style="padding-${far}:14px"><a href="${esc(url('/learn/' + a.slug))}"><img src="${esc(img)}" width="100" alt="" style="display:block;width:100px;height:auto;border-radius:10px"></a></td>` : ''}<td valign="top"><p style="margin:0 0 4px;font:600 16px/1.3 ${SERIF}"><a href="${esc(url('/learn/' + a.slug))}" style="color:${C_NAVY};text-decoration:none">${esc(a.title)}</a></p><p style="margin:0;font:14px/1.45 ${SANS};color:${C_MUTED}">${esc(a.description)}</p></td></tr></table>`; }).join('');
-  const eventRow = (e) => `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 16px"><tr>${e.image ? `<td width="110" valign="top" style="padding-${far}:14px"><a href="${esc(url('/events/' + e.slug))}"><img src="${esc(e.image.startsWith('http') ? e.image : base + e.image)}" width="110" alt="" style="display:block;width:110px;height:auto;border-radius:10px"></a></td>` : ''}<td valign="top">
+  // A small calendar page (month over day) for events, and where to add one to a calendar
+  const badge = (e) => { const d = e.start.slice(0, 10), mon = X.mon(Number(d.slice(5, 7))).replace(/\./g, ''); return `<td width="64" valign="top" style="padding-${far}:14px"><table role="presentation" cellspacing="0" cellpadding="0" width="58" style="width:58px;border:1px solid ${C_LINE};border-radius:10px;overflow:hidden;text-align:center"><tr><td bgcolor="${C_NAVY}" style="background:${C_NAVY};padding:4px 0;font:700 11px ${SANS};letter-spacing:.1em;text-transform:uppercase;color:#e9c75a">${esc(mon)}</td></tr><tr><td style="background:#fff;padding:5px 0 6px;font:700 24px ${SERIF};color:${C_NAVY}">${Number(d.slice(8, 10))}</td></tr></table></td>`; };
+  const evCal = (e) => { const o0 = C.org, end = e.end || new Date(new Date(e.start + ':00Z').getTime() + 2 * 3600e3).toISOString().slice(0, 16), L2 = calLinks(base, { title: field(e, 'title'), start: e.start, end, loc: [e.loc && e.loc.name, e.loc && e.loc.address ? e.loc.address : fullAddress(o0)].filter(Boolean).join(', '), details: `${base}/events/${e.slug}`, ics: `${base}/events/${e.slug}.ics` }); return `<p style="margin:8px 0 0;font:13px ${SANS};color:${C_MUTED}">${esc(t('Add to calendar'))}: <a href="${esc(L2.google)}" style="color:${C_GOLD_INK}">Google</a> · <a href="${esc(L2.outlook)}" style="color:${C_GOLD_INK}">Outlook</a> · <a href="${esc(L2.ics)}" style="color:${C_GOLD_INK}">${esc(t('Calendar file'))}</a></p>`; };
+  // The event's picture (a poster is unreadable as a thumbnail) is shown wide, above its date and details.
+  const eventRow = (e) => `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 18px">${(e.card || e.image) ? `<tr><td colspan="2" style="padding:0 0 10px"><a href="${esc(url('/events/' + e.slug))}"><img src="${esc((e.card || e.image).startsWith('http') ? (e.card || e.image) : base + (e.card || e.image))}" width="520" alt="${esc(field(e, 'title'))}" style="display:block;width:100%;max-width:520px;height:auto;border:0;border-radius:10px"></a></td></tr>` : ''}<tr>${badge(e)}<td valign="top">
 <p style="margin:0 0 2px;font:600 17px/1.3 ${SERIF}"><a href="${esc(url('/events/' + e.slug))}" style="color:${C_NAVY};text-decoration:none">${esc(field(e, 'title'))}</a></p>
 <p style="margin:0 0 6px;font:14px ${SANS};color:${C_MUTED}">${esc(X.when(e))}${field(e, 'price') ? ' · ' + esc(field(e, 'price')) : ''}</p>
 ${field(e, 'summary') ? `<p style="margin:0 0 8px;font:15px/1.5 ${SANS};color:${C_INK}">${esc(field(e, 'summary'))}</p>` : ''}
-<a href="${esc(url('/events/' + e.slug) + (e.rsvp ? '#rsvp' : ''))}" style="font:600 14px ${SANS};color:${C_GOLD_INK}">${esc(e.rsvp ? t('RSVP in one tap') : t('Details'))} →</a></td></tr></table>`;
+<a href="${esc(url('/events/' + e.slug) + (e.rsvp ? '#rsvp' : ''))}" style="font:600 14px ${SANS};color:${C_GOLD_INK}">${esc(e.rsvp ? t('RSVP in one tap') : t('Details'))} →</a>${evCal(e)}</td></tr></table>`;
 
   const rows = [];
   // ---- 1. The Rabbi's word (or his message) ----
@@ -119,9 +124,9 @@ ${guides.length ? `<p style="margin:6px 0 10px;font:600 16px ${SERIF};color:${C_
     if (weekly.length || thisWeek.length) {
       rows.push(card(`${eyebrow(t('This week at Chabad of Lamorinda'))}${h2(t('Everything happening this week'))}
 ${thisWeek.map(eventRow).join('')}
-${weekly.length ? `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 12px;font:15px ${SANS};color:${C_INK}">${weekly.map((w) => `<tr><td valign="top" style="padding:7px 0;border-top:1px solid ${C_LINE};width:96px;color:${C_MUTED}">${esc(w.day)}</td><td style="padding:7px 0 7px 8px;border-top:1px solid ${C_LINE}">${w.link ? `<a href="${esc(url(w.link))}" style="color:${C_NAVY};font-weight:600;text-decoration:none">${esc(w.name)}</a>` : `<strong>${esc(w.name)}</strong>`}<br><span style="color:${C_MUTED}">${esc(w.time)}</span></td></tr>`).join('')}</table>` : ''}
+${weekly.length ? `<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 12px;font:15px ${SANS};color:${C_INK}">${weekly.map((w) => `<tr><td valign="top" style="padding:7px 0;border-top:1px solid ${C_LINE};width:96px;color:${C_MUTED}">${esc(w.day)}</td><td style="padding:7px 0 7px 8px;border-top:1px solid ${C_LINE}">${w.link ? `<a href="${esc(url(w.link))}" style="color:${C_NAVY};font-weight:600;text-decoration:none">${esc(w.name)}</a>` : `<strong>${esc(w.name)}</strong>`}<br><span style="color:${C_MUTED}">${esc(w.time)}${w.place ? ' · ' + esc(w.place) : ''}</span>${w.byDay && w.startTime ? ` · <a href="${esc(base + '/weekly/' + weeklyId(w) + '.ics')}" style="font-size:13px;color:${C_GOLD_INK}">${esc(t('Add to calendar'))}</a>` : ''}</td></tr>`).join('')}</table><p style="margin:0 0 12px;font:13px ${SANS};color:${C_MUTED}">${esc(t('Add all our events to your calendar:'))} <a href="${esc(base.replace(/^https?:/, 'webcal:') + '/events.ics')}" style="color:${C_GOLD_INK}">${esc(t('Subscribe'))}</a></p>` : ''}
 <p style="margin:0 0 12px">${btn(url('/calendar'), t('The whole calendar'), false)}</p>`));
-      tx.push(t('This week at Chabad of Lamorinda').toUpperCase(), ...thisWeek.map((e) => `* ${field(e, 'title')}: ${X.when(e)} ${url('/events/' + e.slug)}`), ...weekly.map((w) => `${w.day}: ${w.name}, ${w.time}`), '');
+      tx.push(t('This week at Chabad of Lamorinda').toUpperCase(), ...thisWeek.map((e) => `* ${field(e, 'title')}: ${X.when(e)} ${url('/events/' + e.slug)}`), ...weekly.map((w) => `${w.day}: ${w.name}, ${w.time}${w.place ? ', ' + w.place : ''}`), '');
     }
   }
 
@@ -133,11 +138,11 @@ ${weekly.length ? `<table role="presentation" width="100%" cellspacing="0" cellp
     const kid = slot ? (slot.status === 'sponsored' && slot.sponsor ? p(`<strong>${esc(t("This Shabbat's Kiddush"))}:</strong> ${esc(t('sponsored by {name}', { name: slot.sponsor.name }))}${slot.sponsor.dedication ? ' · ' + esc(slot.sponsor.dedication) : ''}. ${esc(t('Thank you!'))}`) : p(`<strong>${esc(t("This Shabbat's Kiddush"))}:</strong> ${esc(t('still open. Sponsor it in honor of a birthday or anniversary, or in memory of a loved one.'))} ${link(url('/sponsor-a-kiddush'), t('Sponsor this Kiddush'))}`)) : '';
     rows.push(card(`${eyebrow(parshaName || t('Shabbat'))}${h2(t('Join us this Shabbat'))}
 ${p(esc(t('Friday evening, welcome Shabbat with warm singing at Kabbalat Shabbat; Shabbat morning, join the services, followed by a hot Kiddush lunch for everyone. Everyone is welcome, no membership needed.')))}
-<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 12px;font:15px ${SANS};color:${C_INK}">${ks ? `<tr><td style="padding:7px 0;border-top:1px solid ${C_LINE}"><strong>${esc(t('Kabbalat Shabbat'))}</strong></td><td style="padding:7px 0;border-top:1px solid ${C_LINE};text-align:${far}"><strong>${esc(X.shortDate(sh.candles.date))} · ${esc(fmtClock(ks, L))}</strong></td></tr>` : ''}${(C.org.services || []).filter((sv) => !/kabbalat/i.test(sv.name) || !ks).map((sv) => `<tr><td valign="top" style="padding:7px 0;border-top:1px solid ${C_LINE}">${esc(sv.name)}${sv.note ? `<br><span style="color:${C_MUTED};font-size:13px">${esc(sv.note)}</span>` : ''}</td><td valign="top" style="padding:7px 0;border-top:1px solid ${C_LINE};text-align:${far}">${esc(sv.time)}</td></tr>`).join('')}</table>
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 12px;font:15px ${SANS};color:${C_INK}">${ks ? `<tr><td style="padding:7px 0;border-top:1px solid ${C_LINE}"><strong>${esc(t('Kabbalat Shabbat'))}</strong></td><td style="padding:7px 0;border-top:1px solid ${C_LINE};text-align:${far}"><strong>${esc(X.shortDate(sh.candles.date))} · ${esc(fmtClock(ks, L))}</strong></td></tr>` : ''}${(C.org.services || []).filter((sv) => !sv.weekday && (!/kabbalat/i.test(sv.name) || !ks)).map((sv) => `<tr><td valign="top" style="padding:7px 0;border-top:1px solid ${C_LINE}">${esc(sv.name)}${sv.note ? `<br><span style="color:${C_MUTED};font-size:13px">${esc(sv.note)}</span>` : ''}</td><td valign="top" style="padding:7px 0;border-top:1px solid ${C_LINE};text-align:${far}">${esc(sv.time)}</td></tr>`).join('')}</table>
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin:0 0 12px;font:15px ${SANS};color:${C_INK}"><tr><td style="padding:4px 0;color:${C_MUTED}">${esc(t('Shabbat times'))}</td><td style="padding:4px 8px;color:${C_MUTED}">${esc(t('Candle lighting'))}</td><td style="padding:4px 0;color:${C_MUTED}">${esc(t('Ends'))}</td></tr>
 ${per.map(([tw, s]) => `<tr><td style="padding:6px 0;border-top:1px solid ${C_LINE}">${esc(tw.name)}</td><td style="padding:6px 8px;border-top:1px solid ${C_LINE}"><strong>${s.candles ? esc(X.tm(s.candles)) : ''}</strong> <span style="color:${C_MUTED}">${s.candles ? esc(X.shortDate(s.candles.date)) : ''}</span></td><td style="padding:6px 0;border-top:1px solid ${C_LINE}">${s.havdalah ? esc(X.tm(s.havdalah)) : ''}</td></tr>`).join('')}</table>
 ${kid}<p style="margin:4px 0 12px">${btn(url('/shabbat'), t('Shabbat services and Kiddush'))} ${btn(url('/forms/shabbat-meal'), t('Shabbat dinner with the Rabbi'), false)}</p>`, `border-top:4px solid ${C_NAVY}`));
-    tx.push(t('Join us this Shabbat').toUpperCase(), ks ? `${t('Kabbalat Shabbat')}: ${fmtClock(ks, L)}` : '', ...(C.org.services || []).map((sv) => `${sv.name}: ${sv.time}`), ...per.map(([tw, s]) => `${tw.name}: ${s.candles ? X.tm(s.candles) : ''}${s.havdalah ? ' / ' + X.tm(s.havdalah) : ''}`), url('/shabbat'), '');
+    tx.push(t('Join us this Shabbat').toUpperCase(), ks ? `${t('Kabbalat Shabbat')}: ${fmtClock(ks, L)}` : '', ...(C.org.services || []).filter((sv) => !sv.weekday).map((sv) => `${sv.name}: ${sv.time}`), ...per.map(([tw, s]) => `${tw.name}: ${s.candles ? X.tm(s.candles) : ''}${s.havdalah ? ' / ' + X.tm(s.havdalah) : ''}`), url('/shabbat'), '');
   }
 
   // ---- 5. Sign up: preschool, Hebrew school, afterschool, camp ----
@@ -174,7 +179,7 @@ ${kid}<p style="margin:4px 0 12px">${btn(url('/shabbat'), t('Shabbat services an
 
   // ---- 9. Question of the week, a mitzvah, the joke ----
   if (edition !== 'message') {
-    const f = pick(C.faq, week, 5), m = pick(MITZVAHS, week, 1), j = joke.trim() || ((pick(C.jokes || [], week, 2) || {}).text || '');
+    const f = pick(C.faq, week, 5), m = pick(MITZVAHS, week, 1), j = joke.trim() || plain((pick((C.stories || []).filter((x) => x.kind === 'joke' && plain(x.text).length >= 120 && plain(x.text).length <= 450), week, 2) || pick(C.jokes || [], week, 2) || {}).text || '');
     const parts = [];
     if (f) { parts.push(`${eyebrow(t('Question of the week'))}<p style="margin:0 0 6px;font:600 17px/1.35 ${SERIF};color:${C_NAVY}">${esc(f.q)}</p>${p(esc(plain(f.a)))}`); tx.push(t('Question of the week').toUpperCase(), f.q, plain(f.a), ''); }
     if (m) { parts.push(`${eyebrow(t('A mitzvah for this week'))}<p style="margin:0 0 6px;font:600 17px/1.35 ${SERIF};color:${C_NAVY}">${esc(t(m.title))}</p>${p(esc(t(m.why)))}<p style="margin:0 0 16px">${btn(url('/mitzvah'), t("I'll do it"))}</p>`); tx.push(t('A mitzvah for this week').toUpperCase(), t(m.title), t(m.why), url('/mitzvah'), ''); }
@@ -201,19 +206,24 @@ ${h2(t('A gift that lasts'))}${p(esc(t('Remember Chabad of Lamorinda in your wil
   const shareText = encodeURIComponent(t('Shabbat times, events and more from Chabad of Lamorinda:') + ' ' + url('/this-week'));
   rows.push(`<tr><td style="padding:4px 22px 18px;text-align:center;font:15px ${SANS};color:${C_MUTED}">${esc(t('Know someone who would enjoy this?'))} <a href="https://wa.me/?text=${shareText}" style="color:${C_NAVY};font-weight:600">${esc(t('Share on WhatsApp'))}</a> · <a href="${esc(url('/subscribe'))}" style="color:${C_NAVY};font-weight:600">${esc(t('Invite a friend to sign up'))}</a></td></tr>`);
 
+  // At a glance (top of the Shabbat and holiday editions): candle lighting, Kabbalat Shabbat and the Torah portion
+  const glance = edition !== 'message' && sh.candles ? [[t('Candle lighting'), X.tm(sh.candles)], ks ? [t('Kabbalat Shabbat'), fmtClock(ks, L)] : null, parshaName ? [t('Torah portion'), parshaName] : null].filter(Boolean) : null;
   const o = C.org;
-  const html = `<!doctype html><html lang="${L}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(subject)}</title></head>
+  let html = `<!doctype html><html lang="${L}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(subject)}</title></head>
 <body style="margin:0;padding:0;background:${C_BG}"><div style="display:none;max-height:0;overflow:hidden;opacity:0">${esc(preheader)}</div>
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:${C_BG}"><tr><td align="center" style="padding:18px 8px">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" dir="${dir}" style="max-width:620px;text-align:${align}">
-<tr><td style="padding:8px 16px 18px;text-align:center"><a href="${esc(url('/'))}" style="text-decoration:none"><img src="${base}/assets/logo-email.png" width="56" height="56" alt="" style="display:inline-block;border:0"><br><span style="font:600 22px ${SERIF};color:${C_NAVY}">${esc(o.name)}</span></a>
-<p style="margin:6px 0 0;font:italic 24px ${SERIF};color:${C_GOLD_INK}">${esc(edition === 'message' ? '' : greeting)}</p>${edition !== 'message' && preheader ? `<p style="margin:4px 0 0;font:14px ${SANS};color:${C_MUTED}">${esc(preheader)}</p>` : ''}</td></tr>
+<tr><td style="padding:0 16px 16px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="${C_NAVY}" style="background:${C_NAVY};border-radius:18px;border-bottom:4px solid ${C_GOLD}"><tr><td align="center" style="padding:28px 20px ${glance ? '14px' : '26px'}"><a href="${esc(url('/'))}" style="text-decoration:none"><img src="${base}/assets/logo-email.png" width="60" height="60" alt="" style="display:inline-block;border:0"><br><span style="font:600 13px ${SANS};letter-spacing:.2em;text-transform:uppercase;color:#e9c75a">${esc(o.name)}</span></a>
+${edition !== 'message' ? `<p style="margin:10px 0 0;font:italic 34px/1.15 ${SERIF};color:#ffffff">${esc(greeting)}</p>` : ''}${edition !== 'message' && preheader && !glance ? `<p style="margin:8px 0 0;font:14px ${SANS};color:#cdd5e4">${esc(preheader)}</p>` : ''}</td></tr>
+${glance ? `<tr><td style="padding:0 14px 18px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0"><tr>${glance.map((g, i) => `<td width="${Math.floor(100 / glance.length)}%" valign="top" align="center" style="padding:10px 6px;${i ? 'border-' + (L === 'he' ? 'right' : 'left') + ':1px solid #31456e;' : ''}"><p style="margin:0 0 3px;font:600 11px ${SANS};letter-spacing:.1em;text-transform:uppercase;color:#e9c75a">${esc(g[0])}</p><p style="margin:0;font:600 16px/1.3 ${SERIF};color:#ffffff">${esc(g[1])}</p></td>`).join('')}</tr></table></td></tr>` : ''}</table></td></tr>
 ${rows.join('\n')}
+<tr><td style="padding:6px 22px 14px;text-align:center;font:14px/1.7 ${SANS};color:${C_NAVY}">${esc(t('Questions? Call or text:'))} <a href="tel:${esc(String(o.phone || '').replace(/\D/g, ''))}" style="color:${C_NAVY};font-weight:700">${esc(t('Rabbi Yisroel'))} ${esc(o.phone || '')}</a> · <a href="tel:${esc(String(o.rebbetzinMobile || '').replace(/\D/g, ''))}" style="color:${C_NAVY};font-weight:700">${esc(t('Rebbetzin Tzipora'))} ${esc(o.rebbetzinMobile || '')}</a></td></tr>
 <tr><td style="padding:10px 22px 30px;text-align:center;font:13px/1.6 ${SANS};color:${C_MUTED}">${esc(o.name)} · <span dir="ltr">${esc([o.address.street, o.address.city, o.address.region].filter(Boolean).join(', '))}</span> · <a href="tel:${esc((o.phone || '').replace(/[^0-9+]/g, ''))}" style="color:${C_MUTED}" dir="ltr">${esc(o.phone || '')}</a><br>
 ${esc(t('You are getting this because you signed up at our website.'))} <a href="{{prefs}}" style="color:${C_MUTED}">${esc(t('Email language'))}</a> · <a href="{{unsub}}" style="color:${C_MUTED}">${esc(t('Unsubscribe'))}</a></td></tr>
 </table></td></tr></table>{{open}}</body></html>`;
   tx.unshift(edition === 'message' ? '' : greeting, '');
-  tx.push(`${o.name} · ${o.phone || ''} · ${url('/')}`, `${t('Email language')}: {{prefs}}`, `${t('Unsubscribe')}: {{unsub}}`);
+  tx.push(`${t('Questions? Call or text:')} ${t('Rabbi Yisroel')} ${o.phone || ''} · ${t('Rebbetzin Tzipora')} ${o.rebbetzinMobile || ''}`, `${o.name} · ${o.phone || ''} · ${url('/')}`, `${t('Email language')}: {{prefs}}`, `${t('Unsubscribe')}: {{unsub}}`);
+  html = askRabbi(html, t('Call or message the Rabbi or Rebbetzin'), url('/help/talk-to-the-rabbi'));
   return { subject, preheader, edition, html, text: tx.join('\n').replace(/\n{3,}/g, '\n\n').trim() };
 }
 

@@ -2,7 +2,7 @@
 title: Keeping Your Word: Promises in Jewish Life
 description: Why Judaism treats a promise as sacred, what "do not profane your word" means, why Jews say "bli neder," and how to make amends for a broken promise.
 category: Jewish ideas
-related: honesty-and-truth, business-ethics, lashon-hara, kol-nidre, forgiveness-and-making-peace
+related: honesty-and-truth, paying-workers-on-time, business-ethics, lashon-hara, kol-nidre, forgiveness-and-making-peace
 local: Working through a broken promise or a hard commitment? Rabbi Yisroel Labkowski is here to listen, for families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 "I'll call you tomorrow." "I'll be there at six." "I'll give something to that cause." We say these things easily, and we often forget them just as easily. The Torah asks us to take our words far more seriously, because in Judaism, a word is a real thing.

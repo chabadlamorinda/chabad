@@ -2,14 +2,14 @@
 title: How to Make Challah at Home: A Simple Recipe, Braiding and the Blessing
 description: How to make challah: an easy dough, three- and six-strand braids, baking and freezing for Friday. Join the Women's Circle at Chabad of Lamorinda.
 category: Jewish home
-related: hafrashat-challah, challah, preparing-for-shabbat, shabbat-candles, shabbat-meals
+related: hafrashat-challah, mass-challah-bake, chanukah-baking-with-kids, challah, preparing-for-shabbat, shabbat-candles, shabbat-meals
 local: Bake challah with other women in Lafayette, Moraga and Orinda: join the Jewish Women's Circle, or call 925-384-7242.
 ---
 Challah (חַלָּה) is the braided egg bread Jews eat on Shabbat and holidays, and you can make it at home with flour, yeast, water, oil, sugar, eggs and salt. Mix the dough, let it rise twice, braid it, brush it with egg and bake it until golden, ideally on Thursday or Friday.
 
 ## A simple challah dough
 
-This is a home-size version, scaled down by us from the large Chabad.org recipe (which uses 5 pounds of flour). Use it as a starting point and adjust to your oven and flour.
+This is a home-size version, scaled down by us from a larger recipe (which uses 5 pounds of flour). Use it as a starting point and adjust to your oven and flour.
 
 **Makes two medium loaves**
 
@@ -30,7 +30,7 @@ This is a home-size version, scaled down by us from the large Chabad.org recipe 
 4. **Separate challah.** This is the moment for the blessing, if your dough is large enough. See the section below.
 5. **Shape and braid.** See the next section.
 6. **Rise again** for about 20 minutes, then brush with the beaten egg and add seeds.
-7. **Bake** at 400 degrees F for 15 minutes, then lower to 350 and bake until deep golden. Chabad.org's large loaves take another 30 to 45 minutes; smaller loaves need less, so watch them.
+7. **Bake** at 400 degrees F for 15 minutes, then lower to 350 and bake until deep golden. The large loaves in that recipe take another 30 to 45 minutes; smaller loaves need less, so watch them.
 
 Use kosher-certified ingredients, and keep dairy out of the dough so that the challah stays pareve and can be eaten with a meat meal.
 
@@ -38,7 +38,7 @@ Use kosher-certified ingredients, and keep dairy out of the dough so that the ch
 
 **Three strands (the easy one).** Divide a piece of dough into three equal parts and roll each into a strand about 12 inches long. Pinch the tops together, then braid like a ponytail: right over the middle, left over the middle, until the end. Pinch and tuck the ends under.
 
-**Six strands.** Roll six strands, join them at the top, and arrange two on the left, two in the middle and two on the right. Chabad.org describes it like this: cross the outer strands under the inner ones in an alternating pattern, repeating "down and up and under," until you reach the end, then tuck them in. It looks hard, but the rhythm becomes easy after one loaf.
+**Six strands.** Roll six strands, join them at the top, and arrange two on the left, two in the middle and two on the right. Here is one way to do it: cross the outer strands under the inner ones in an alternating pattern, repeating "down and up and under," until you reach the end, then tuck them in. It looks hard, but the rhythm becomes easy after one loaf.
 
 **Round challah.** On Rosh Hashanah the challah is round, a custom many explain as the cycle of the year, and some do not braid it at all. See [Rosh Hashanah for beginners](/learn/rosh-hashanah-for-beginners).
 

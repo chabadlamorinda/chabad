@@ -2,7 +2,7 @@
 title: Converting to Judaism: A Respectful Guide to the Process
 description: How conversion to Judaism works according to Jewish law: sincere commitment, study, a recognized Beth Din, mikvah, and what to know before you begin.
 category: Life cycle
-related: who-is-a-jew, jewish-adoption, noahide-laws, mikvah, 613-mitzvot
+related: who-is-a-jew, book-of-ruth, jewish-adoption, noahide-laws, mikvah, 613-mitzvot
 local: Exploring conversion or your Jewish identity? Talk with the Rabbi confidentially at chabadoflamorinda.com/help/jewish-identity or call 925-384-7242.
 ---
 Conversion to Judaism according to Jewish law is a sincere commitment to accept the Torah and its mitzvot, completed before a recognized Orthodox Beth Din (rabbinical court) after a long period of study. A person who converts becomes fully Jewish, a beloved member of the Jewish people in every way.
@@ -32,7 +32,7 @@ While details vary, a conversion according to Jewish law includes:
 5. **Brit milah** for men, or a symbolic drop of blood if already circumcised.
 6. **Immersion in a [mikvah](/learn/mikvah)** in the presence of the Beth Din.
 
-Only a conversion done according to Jewish law, through a recognized Beth Din, is accepted universally, including for marriage and in Israel.
+Only a conversion done according to Jewish law, through a recognized Beth Din, is widely accepted, including for marriage and in Israel. Ask the Rabbi which Batei Din are recognized.
 
 ## How Chabad of Lamorinda can help
 

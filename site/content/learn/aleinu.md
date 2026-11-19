@@ -17,7 +17,7 @@ The prayer has two paragraphs. Each has its own mood.
 
 The first paragraph thanks G-d that we were given a path and a purpose. We say that G-d made us part of a people with a mission, a people who bring awareness of the One G-d into the world. It is a prayer of humility and of dignity together: we are small, and we are chosen to do something great.
 
-**Why we bow.** The prayer itself says "and we bend the knee, bow down and give thanks before the King of kings." Bowing is a sign of humility: it shows we are servants of G-d. Customs vary. Some bend the knees, some only bow the head, and some stay upright. If your custom differs from the congregation's, bow along with them so you do not stand out. On Rosh Hashanah and Yom Kippur, in the Musaf service, many go down in full prostration at this line, as was done in the Holy Temple.
+**Why we bow.** The prayer itself says "and we bend the knee, bow down and give thanks before the King of kings." Bowing is a sign of humility: it shows we are servants of G-d. Customs vary. Some bend the knees, some only bow the head. If your custom differs from the congregation's, bow along with them so you do not stand out. On Rosh Hashanah and Yom Kippur, in the Musaf service, many go down in full prostration at this line, as was done in the Holy Temple.
 
 ## The second paragraph: our hope
 

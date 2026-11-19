@@ -2,7 +2,7 @@
 title: The Jewish Year in Lafayette, Moraga and Orinda: Every Holiday with Chabad of Lamorinda
 description: Jewish holidays in Lafayette, Moraga and Orinda: High Holidays, Sukkot, Chanukah, Purim, Passover and more with Chabad of Lamorinda. All welcome.
 category: Lamorinda
-related: jewish-calendar, passover-in-lamorinda, purim-in-lamorinda, chanukah-in-lamorinda, shofar, sukkah, passover-seder
+related: jewish-calendar, seasons-of-jewish-life-in-lamorinda, high-holidays-in-lamorinda, jewish-holidays-and-lamorinda-school-calendars, building-a-sukkah-in-lamorinda, passover-in-lamorinda, purim-in-lamorinda, chanukah-in-lamorinda, shofar, sukkah, passover-seder
 local: See every holiday and this year's dates at chabadoflamorinda.com/holidays, or get the weekly email at chabadoflamorinda.com/forms/newsletter.
 ---
 The Jewish year is a journey, and in Lamorinda you do not have to travel it alone. Chabad of Lamorinda in Lafayette celebrates every holiday with families from Lafayette, Moraga, Orinda, Pleasant Hill and Martinez. There is no membership and no tickets, whatever your background. Here is what each season looks like here, with a link to each holiday page for dates and details.
@@ -17,7 +17,7 @@ The Jewish year is a journey, and in Lamorinda you do not have to travel it alon
 
 ## Winter: lights and trees
 
-On **[Chanukah](/holidays/chanukah)** we gather for a grand menorah lighting and community celebration with latkes, donuts and music, and kids make their own menorah. You can also be a Chanukah lamplighter by sponsoring a night of the community menorah. In the heart of winter, **[Tu BiShvat](/holidays/tu-bishvat)** is our family celebration of the New Year for Trees.
+On **[Chanukah](/holidays/chanukah)** we gather for the [Grand Chanukah Menorah Lighting](/events/chanukah-grand-menorah-lighting-2026) at Lafayette Plaza Park, with a Gelt Drop, a giant dreidel game, donuts and hot cocoa. You can also be a Chanukah lamplighter by sponsoring a night of the community menorah. In the heart of winter, **[Tu BiShvat](/holidays/tu-bishvat)** is our family celebration of the New Year for Trees.
 
 ## Spring: Purim to Shavuot
 

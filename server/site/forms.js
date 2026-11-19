@@ -66,7 +66,7 @@ function formHtml(X, f, pre = {}) {
       default: return lab(`<input${v(x.id)} type="${x.type === 'email' ? 'email' : x.type === 'tel' ? 'tel' : x.type === 'date' ? 'date' : 'text'}" name="${x.id}"${x.id === 'name' ? ' autocomplete="name"' : x.type === 'email' ? ' autocomplete="email"' : x.type === 'tel' ? ' autocomplete="tel"' : ''}${req_}>`);
     }
   };
-  return `<form class="card tool" data-form="${f.id}">
+  return `<form class="card tool" data-form="${f.id}"${f.noGift || (f.payment && !f.payment.optional) ? '' : ` data-gift="${esc(f.giftFund || (f.payment && f.payment.fund) || 'general')}" data-gift-title="${esc(f.title)}"`}>
 ${f.fields.map(input).join('\n')}
 <button class="btn gold" type="submit">${esc(f.button || t('Send'))}</button><p class="msg" hidden></p>
 <p class="pay-next" hidden><a class="btn gold" href="#">${esc(f.payment ? f.payment.label : '')}</a></p>
@@ -86,22 +86,22 @@ function prefillOf(f, query) {
   return Object.fromEntries(Object.entries(query || {}).filter(([k, val]) => ok.has(k) && typeof val === 'string').map(([k, val]) => [k, val.slice(0, 200)]));
 }
 
-function mountForms(r, { base, store, mailer, content, render, wrap, limit, readMember, ctxOf, tOf, log = console, notifyTo = '', confirmNews = null }) {
+function mountForms(r, { base, store, mailer, content, render, wrap, limit, readMember, ctxOf, tOf, log = console, notifyTo = '', signUpNews = null }) {
   const pool = store && store.pool, q = (t, p) => pool.query(t, p);
   const formsOf = (C) => C.forms || [];
 
   r.get('/forms', wrap(async (req, res) => {
-    const X = ctxOf(req), { t, C } = X, list = formsOf(C);
+    const X = ctxOf(req), { t, C } = X, list = formsOf(C).filter((f) => !f.closed && !f.hidden);
     await render(res, { path: '/forms', title: t('Sign-ups, registrations and orders'), description: t('Register for preschool, Hebrew School and camp, reserve High Holiday seats, order lulav and etrog or matzah, sell your chametz and more, online at Chabad of Lamorinda.'),
       body: `<section class="wrap sec"><h1>${esc(t('Sign-ups, registrations and orders'))}</h1><p class="lead-d">${esc(t('Everything you can sign up for or order, in one place. Signed in? Your details are filled in for you.'))}</p>
-<div class="grid">${byPopularity(list, (f) => '/forms/' + f.id).map((f) => `<a class="card tile" href="/forms/${f.id}"><h3>${esc(f.title)}</h3><p>${esc(f.intro)}</p></a>`).join('')}</div></section>` });
+<div class="grid">${byPopularity(list, (f) => '/forms/' + f.id).map((f) => `<a class="card tile" href="/forms/${f.id}"><h3 aria-level="2">${esc(f.title)}</h3><p>${esc(f.intro)}</p></a>`).join('')}</div></section>` });
   }));
 
   r.get('/forms/:id', wrap(async (req, res, next) => {
     const X = ctxOf(req), { t, C } = X, f = formsOf(C).find((x) => x.id === req.params.id);
     if (!f) return next();
     const body = `<section class="wrap sec narrow"><p class="crumbs"><a href="/forms">${esc(t('Sign-ups and orders'))}</a> ›</p><h1>${esc(f.title)}</h1><p class="lead-d">${esc(f.intro)}</p>
-${formHtml(X, f, prefillOf(f, req.query))}
+${f.closed ? `<div class="card"><p><strong>${esc(t('Not running this year.'))}</strong> ${esc(t('Call {phone} and we will tell you when registration opens.', { phone: C.org.phone }))}</p></div>` : formHtml(X, f, prefillOf(f, req.query))}
 <p class="muted">${esc(t('Questions? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/forms/' + f.id, title: f.title, description: f.intro, body });
   }));
@@ -114,7 +114,8 @@ ${formHtml(X, f, prefillOf(f, req.query))}
     const { out, errors, amount } = readAnswers(f, (req.body && req.body.fields) || {});
     if (errors.length) return res.status(400).json({ code: 'invalid', error: t('Please fill in: {fields}', { fields: errors.map((e) => t(e)).join(', ') }), fields: errors });
     const m = readMember ? await readMember(req) : null, name = clean(out.name || (m && m.name), 100), email = (out.email || (m && m.email) || '').toLowerCase();
-    if (!name || !validEmail(email)) return res.status(400).json({ code: 'invalid_contact', error: t('Please add your name and email so the Rabbi can reach you.') });
+    const ef = f.fields.find((x) => x.type === 'email'), phoneOnly = !validEmail(email) && ef && !ef.required && out.phone; // a phone number is enough when the email is optional (someone asking for help)
+    if (!name || (!validEmail(email) && !phoneOnly)) return res.status(400).json({ code: 'invalid_contact', error: t('Please add your name and email so the Rabbi can reach you.') });
     const id = 'f_' + crypto.randomBytes(12).toString('hex');
     await q('INSERT INTO form_responses (id, form_id, member_id, name, email, data, amount_cents) VALUES ($1,$2,$3,$4,$5,$6,$7)', [id, f.id, m ? m.id : null, name, email, JSON.stringify(out), Math.round(amount * 100)]);
     const lines = f.fields.map((x) => { const v = out[x.id]; const s = Array.isArray(v) ? (x.type === 'children' ? v.map((r) => Object.values(r).filter(Boolean).join(', ')).join(' | ') : v.join(', ')) : v === true ? 'yes' : v === false ? 'no' : v; return s ? `${x.label}: ${s}` : null; }).filter(Boolean).join('\n');
@@ -122,8 +123,9 @@ ${formHtml(X, f, prefillOf(f, req.query))}
     if (mailer && to) mailer.send({ to, subject: `${f.title}: ${name}`, text: `${lines}${amount ? `\n\nAmount: $${amount}` : ''}\n\nRabbi area: ${base}/admin/community` }).catch((e) => log.error('form notify:', e && e.message));
     // The confirmation repeats the answers only to a signed-in member's own email (so the form can't be used to send text to strangers).
     const own = m && m.email === email, L = ['he', 'ru'].includes(req.get('x-lang')) ? req.get('x-lang') : 'en';
-    if (mailer && f.id === 'newsletter' && confirmNews) mailer.send({ to: email, subject: t('Please confirm: the weekly email from {org}', { org: C.org.name }), text: t('Please confirm you would like the weekly email from {org}:', { org: C.org.name }) + `\n${confirmNews(email, L)}\n\n` + t('If you did not ask for it, ignore this email.') }).catch((e) => log.error('newsletter confirm:', e && e.message));
-    else if (mailer) mailer.send({ to: email, subject: t('We received it: {title}', { title: f.title }), text: t('Thank you! We received your form and will be in touch soon.') + (own ? `\n\n${lines}` : '') + `\n\n${C.org.name} · ${C.org.phone}` }).catch((e) => log.error('form confirm:', e && e.message));
+    // The weekly-email form signs the person up at once (they get a welcome with an unsubscribe link).
+    if (f.id === 'newsletter' && signUpNews) Promise.resolve(signUpNews({ email, name, lang: L, source: 'form' })).catch((e) => log.error('newsletter sign-up:', e && e.message));
+    else if (mailer && validEmail(email)) mailer.send({ to: email, subject: t('We received it: {title}', { title: f.title }), text: t('Thank you! We received your form and will be in touch soon.') + (own ? `\n\n${lines}` : '') + `\n\n${C.org.name} · ${C.org.phone}` }).catch((e) => log.error('form confirm:', e && e.message));
     const p = f.payment, pay = p && (amount || p.optional) && amount <= MAX_CARD ? giveUrl(p.fund, amount || 0, `${f.title}: ${name}`) : null;
     res.json({ ok: true, amount, payUrl: pay, tooLarge: amount > MAX_CARD });
   }));
@@ -139,7 +141,9 @@ ${giveForm(X, { fund: String(req.query.fund || ''), amt: req.query.amt, ded: Str
 <ul class="fund-list card">${(G.funds || []).map((f) => `<li id="${f.id}"><a href="${esc(f.id === 'chai' ? '/chai-club' : giveUrl(f.id, 0, ''))}"><strong>${esc(f.name)}</strong><span>${esc(f.text)}</span></a></li>`).join('')}</ul>
 ${G.building ? `<h2 id="building">${esc(t('Building Campaign'))}</h2><p>${esc(G.building.text)}</p><details class="more-wrap"><summary class="btn ghost sm">${esc(t('See the giving levels'))}</summary><table class="tbl"><tbody>${G.building.levels.map(([n, a]) => `<tr><td>${esc(t(n))}</td><td>${money(a)}</td><td>${a <= MAX_CARD ? `<a href="${esc(giveUrl('building', a, 'Building Campaign: ' + n))}">${esc(t('Give'))}</a>` : `<a href="/contact?about=${encodeURIComponent('Building Campaign: ' + n)}">${esc(t('Contact us'))}</a>`}</td></tr>`).join('')}</tbody></table></details>` : ''}
 <h2 id="other">${esc(t('Other ways to give'))}</h2>
-<div class="card ways">${(G.ways || []).map((w) => `<details class="qa" id="${w.id}"><summary>${esc(w.name)}</summary><p>${esc(w.text)}</p>${w.url ? `<p><a class="btn ghost sm" href="${esc(w.url)}" rel="noopener" target="_blank">${esc(t('Open'))} ${esc(w.name)}</a></p>` : ''}</details>`).join('')}</div>
+<p>${esc(t('Giving is more than money. A car, goods, your time and skills, or a gift from your IRA or your employer are all ways to be part of this. Tell us what you have in mind and the Rabbi will get back to you.'))}</p>
+<p class="btns"><a class="btn gold" href="/forms/other-gift">${esc(t('Tell us what you would like to give'))}</a></p>
+<div class="card ways">${(G.ways || []).map((w) => `<details class="qa" id="${w.id}"><summary>${esc(w.name)}</summary><p>${esc(w.text)}</p>${w.url ? `<p><a class="btn ghost sm" href="${esc(w.url)}" rel="noopener" target="_blank">${esc(t('Open'))} ${esc(w.name)}</a></p>` : ''}${w.form ? `<p><a class="btn ghost sm" href="/forms/other-gift?kind=${Number(w.kind) || 0}">${esc(t('Tell us about it'))}</a></p>` : ''}</details>`).join('')}</div>
 <div class="card legacy-cta"><h2>${esc(t('A gift that lasts'))}</h2><p>${esc(t('Remember Chabad of Lamorinda in your will or as a beneficiary of a retirement account or life insurance, and your values keep giving for generations. The Rabbi would be honored to talk with you, in confidence.'))}</p><p><a class="btn gold" href="/legacy">${esc(t('Leave a legacy'))}</a></p></div>
 <p class="muted">${escLtr(C.org.legal || '')} ${escLtr(t('Questions? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/donate', title: t('Donate to Chabad of Lamorinda'), description: t('Give online once or monthly, sponsor in honor or memory, or give by Venmo, Zelle, check, donor advised fund, stock or crypto. Tax ID 47-4642750.'), body });

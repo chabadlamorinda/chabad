@@ -2,7 +2,7 @@
 title: Success and Failure: A Jewish Way to Look at Both
 description: Jewish wisdom on ambition, setbacks and starting again: how to succeed without arrogance, fail without despair, and measure a life by what matters.
 category: Jewish ideas
-related: bitachon, teshuvah, humility, parnassah-work-and-livelihood, why-bad-things-happen
+related: bitachon, starting-over-after-you-fall, why-do-i-still-struggle, choosing-a-career-jewish-view, teshuvah, humility, parnassah-work-and-livelihood, why-bad-things-happen
 local: Going through a setback or a big decision? Rabbi Yisroel Labkowski is glad to talk with anyone in Lafayette, Moraga or Orinda: 925-384-7242.
 ---
 We live in a culture that celebrates winning and hides losing. Judaism takes both seriously, and sees both differently. Success is a gift and a responsibility. Failure is not the end of the story; often it is where the real story starts.

@@ -2,7 +2,7 @@
 title: The Three Weeks and the Nine Days: Jewish Mourning Customs
 description: What the Three Weeks and Nine Days are, why Jews mourn between the 17th of Tammuz and Tisha B'Av, and which customs apply and when.
 category: Shabbat & holidays
-related: fast-days, yom-yerushalayim, tisha-bav-for-beginners, tu-bav, jewish-calendar, moshiach, tzedakah
+related: fast-days, jeremiah, menachem-av, tammuz, yom-yerushalayim, tisha-bav-for-beginners, tu-bav, jewish-calendar, moshiach, tzedakah
 local: Learn about Tisha B'Av and the Three Weeks at chabadoflamorinda.com/holidays/tisha-bav, or call 925-384-7242 with questions.
 ---
 The Three Weeks are the period between the fast of the 17th of Tammuz and the fast of Tisha B'Av, when Jews mourn the destruction of the Holy Temple in Jerusalem. The last nine days are the most intense, with more mourning customs.
@@ -25,8 +25,8 @@ From the 17th of Tammuz, Ashkenazi custom includes:
 
 - No weddings.
 - No haircuts or shaving.
-- No listening to live music, and many avoid recorded music too.
-- Avoiding activities that require saying Shehecheyanu, such as eating a new fruit or wearing new clothes. Many permit this on Shabbat.
+- No listening to music, live or recorded (background music you cannot control is not a concern).
+- Avoiding activities that require saying Shehecheyanu, such as eating a new fruit or wearing new clothes of significant worth. Chabad custom is to refrain from this even on Shabbat and Rosh Chodesh.
 
 ## The Nine Days
 

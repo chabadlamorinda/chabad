@@ -2,7 +2,7 @@
 title: Teaching Children to Pray: Simple Steps for Every Family
 description: How to teach your children to pray, from Modeh Ani in the morning to the Shema at bedtime and blessings on food, even if you are still learning yourself.
 category: Prayer & Torah
-related: modeh-ani, talking-to-kids-about-g-d, bedtime-shema, blessings, jewish-parenting, siddur
+related: modeh-ani, teaching-kids-blessings-on-food, children-in-synagogue, teaching-kids-the-chanukah-blessings, chinuch, twelve-torah-verses, talking-to-kids-about-g-d, bedtime-shema, blessings, jewish-parenting, siddur
 local: Our Hebrew school and preschool teach children the prayers with songs and stories. Families in Lafayette, Moraga and Orinda can call 925-384-7242.
 ---
 Children love to talk to G-d. They ask big questions, they say thank you easily, and they remember songs. Teaching a child to pray is one of the most precious gifts a parent can give, and you do not need to be an expert to begin.
@@ -14,7 +14,7 @@ The Talmud says that as soon as a child begins to speak, a parent should teach t
 Three easy beginnings:
 
 - **Modeh Ani** when they wake up: "I thank You, living and eternal King, for returning my soul to me with compassion. Great is Your faithfulness." See [Modeh Ani](/learn/modeh-ani).
-- **A blessing before eating:** *Shehakol* for most snacks, *Hamotzi* for bread. See [blessings](/learn/blessings).
+- **A blessing before eating:** *Shehakol* for drinks and some foods, *Hamotzi* for bread. The blessing depends on the food, so ask the Rabbi. See [blessings](/learn/blessings).
 - **The Shema at bedtime**, with a hand over the eyes. See [the bedtime Shema](/learn/bedtime-shema).
 
 ## Make it part of the day

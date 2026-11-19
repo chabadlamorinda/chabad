@@ -15,7 +15,7 @@ function mountFlyer(r, { wrap, ctxOf, base }) {
   r.get('/events/:slug/flyer', wrap(async (req, res, next) => {
     const X = ctxOf(req), { t, C } = X, o = C.org, e = C.events.find((x) => x.slug === req.params.slug && x.published);
     if (!e) return next();
-    const url = base + X.path('/events/' + e.slug) + (e.rsvp ? '#rsvp' : ''), shown = (base + X.path('/events/' + e.slug)).replace(/^https?:\/\//, '');
+    const url = base + X.path('/events/' + e.slug) + '?src=flyer' + (e.rsvp ? '#rsvp' : ''), shown = (base + X.path('/events/' + e.slug)).replace(/^https?:\/\//, '');
     const dir = RTL.has(X.lang) ? 'rtl' : 'ltr';
     res.type('html').set('Cache-Control', 'public, max-age=300').send(`<!doctype html>
 <html lang="${X.lang}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">

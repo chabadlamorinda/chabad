@@ -2,7 +2,7 @@
 title: מעשר: נתינת עשירית לצדקה ביהדות
 description: מהו מעשר, איך מחשבים עשרה אחוזים מההכנסה לצדקה, אילו מטרות מתאימות, וטיפים מעשיים למעקב.
 category: Jewish ideas
-related: tzedakah, new-job-jewish-blessing, children-money-and-tzedakah, supporting-chabad-of-lamorinda, ribbit, parnassah-work-and-livelihood, pushka, business-ethics, chesed
+related: tzedakah, the-blessing-of-giving-maaser, starting-maaser-step-by-step, what-maaser-can-and-cannot-pay-for, maaser-for-business-owners-and-investors, how-to-calculate-maaser, what-is-jewish-tithing, monthly-giving-jewish-view, how-much-to-leave-to-tzedakah-in-a-will, giving-stock-to-chabad, leaving-your-ira-to-a-jewish-cause, tzedakah-equals-all-the-mitzvot, does-tzedakah-bring-wealth, giving-when-money-is-tight, donor-advised-funds-and-tzedakah, year-end-tzedakah, new-job-jewish-blessing, children-money-and-tzedakah, supporting-chabad-of-lamorinda, ribbit, parnassah-work-and-livelihood, pushka, business-ethics, chesed
 local: רוצים להפנות את המעשר שלכם לחיים היהודיים בלמורינדה? תרמו בכתובת chabadoflamorinda.com/donate או התקשרו לרב לבקובסקי בטלפון 925-384-7242 בכל שאלה.
 ---
 מעשר פירושו עשירית. זה המנהג היהודי לתת עשרה אחוזים מההכנסה לצדקה. יהודים רבים נוהגים כך כחלק בסיסי מהחיים הכלכליים שלהם, ונותנים מתוך הכרת תודה על הברכות שה׳ נתן להם.
@@ -16,7 +16,7 @@ local: רוצים להפנות את המעשר שלכם לחיים היהודי�
 ## למה לתת מעשר?
 
 - **זה לא באמת שלנו.** היהדות מלמדת שהכסף שלנו הופקד בידינו על ידי ה׳, וחלק ממנו מיועד לאחרים. נתינת צדקה אינה רק נדיבות. היא צדק.
-- **הוא מביא ברכה.** הנביא מלאכי אומר שה׳ מזמין אותנו לבחון אותו במעשרות, והוא ישפוך ברכה. זה התחום היחיד שבו חז״ל אומרים שמותר לנסות את ה׳.
+- **הוא מביא ברכה.** הנביא מלאכי אומר שה׳ מזמין אותנו לבחון אותו במעשרות, והוא ישפוך ברכה. כאן חז״ל מתירים לנסות את ה׳, והרבי לימד שהדבר חל על כל צדקה: ה׳ משלם על כל נתינה בהצלחה, ובמעשר התורה אומרת זאת במפורש.
 - **הוא הופך את הנתינה להרגל.** הפרשת סכום קבוע פירושה שנותנים בעקביות, לא רק כשבמקרה מרגישים צורך.
 
 ## איך מחשבים מעשר
@@ -33,6 +33,7 @@ local: רוצים להפנות את המעשר שלכם לחיים היהודי�
 - עזרה לעניים ולנזקקים.
 - תמיכה בלימוד תורה ובחינוך יהודי.
 - מימון בתי כנסת ותוכניות קהילתיות יהודיות.
+- מענק מקרן בהמלצת תורם שלכם לארגון צדקה כמו חב"ד למורינדה. הרב לבקובסקי אישר שזה נחשב למעשר; התקשרו 925-384-7242 או 925-384-7241 כדי לסדר זאת.
 - עזרה לקרוב משפחה במצוקה כלכלית, שהיא בעדיפות עליונה בהלכה.
 
 הוצאות מסוימות, כמו תשלום על הצרכים הבסיסיים של הילדים שלכם, בדרך כלל אינן נחשבות. שאלו את הרב על מקרים מסוימים.
@@ -57,3 +58,8 @@ local: רוצים להפנות את המעשר שלכם לחיים היהודי�
 
 ### צריך לומר למקבל שזה מעשר?
 לא. זו פשוט הצדקה שלכם. מה שחשוב הוא שאתם מפרישים ונותנים את הסכום.
+
+## הצעד הבא
+
+- התחילו עם [להתחיל לתת מעשר צעד אחר צעד](/learn/starting-maaser-step-by-step).
+- קראו [ברכת נתינת המעשר](/learn/the-blessing-of-giving-maaser), והתקשרו לרב לבקובסקי, 925-384-7242, בכל שאלה.

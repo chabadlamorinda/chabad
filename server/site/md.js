@@ -46,17 +46,38 @@ function md(src) {
 // Phone numbers and "501(c)(3)" read left to right and never break, also inside Hebrew text (only in text, not tags).
 const ltr = (html) => String(html).replace(/>([^<]+)</g, (m, txt) => '>' + txt.replace(/(\+?1[ -])?\b\d{3}-\d{3}-\d{4}\b|501\(c\)\(3\)/g, (x) => `<bdi dir="ltr" class="nw">${x}</bdi>`) + '<');
 // Plain text (for meta descriptions, llms.txt, JSON-LD).
-const plain = (src) => String(src || '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[#>*_`]/g, '').replace(/\s+/g, ' ').trim();
+const plain = (src) => String(src || '').replace(/\{bequest-builder\}/g, '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[#>*_`]/g, '').replace(/\s+/g, ' ').trim();
 
 // "---\nkey: value\n---\nbody" front matter (values are plain strings; lists as comma-separated).
+// A value written in quotes (title: "A \"Tree\"...") loses the quotes, as YAML would.
+function unquote(v) {
+  if (v.length > 1 && v[0] === '"' && v[v.length - 1] === '"') { try { return JSON.parse(v); } catch (e) { return v.slice(1, -1).replace(/\\"/g, '"'); } }
+  if (v.length > 1 && v[0] === "'" && v[v.length - 1] === "'") return v.slice(1, -1).replace(/''/g, "'");
+  return v;
+}
 function frontMatter(src) {
   const m = /^---\n([\s\S]*?)\n---\n?([\s\S]*)$/.exec(String(src).replace(/\r\n?/g, '\n'));
   if (!m) return { meta: {}, body: src };
   const meta = {};
-  for (const l of m[1].split('\n')) { const i = l.indexOf(':'); if (i > 0) meta[l.slice(0, i).trim()] = l.slice(i + 1).trim(); }
+  for (const l of m[1].split('\n')) { const i = l.indexOf(':'); if (i > 0) meta[l.slice(0, i).trim()] = unquote(l.slice(i + 1).trim()); }
   return { meta, body: m[2] };
 }
 
 // The same for plain text that is about to be escaped (the legal line, a phone in a sentence).
 const escLtr = (s) => ltr('>' + esc(s) + '<').slice(1, -1);
-module.exports = { md, inline, esc, plain, frontMatter, safeUrl, ltr, escLtr };
+// "Ask the Rabbi" in the text becomes a link to /help/talk-to-the-rabbi, where the reader can call or message Rabbi Yisroel
+// Labkowski or Rebbetzin Tzipora Labkowski. Skips links, headings, scripts. For pages only (not emails).
+const ASK = /\b[Aa]sk the (?:Rabbi|Rebbetzin)(?: or (?:the )?Rebbetzin)?|שאל(?:ו|י)? את (?:הרב|הרבנית)(?: או (?:את )?הרבנית)?|[Сс]просите (?:у )?(?:раввина|ребецин)(?: или (?:у )?ребецин)?|[Оо]братитесь к (?:раввину|ребецин)/g;
+function askRabbi(html, title, href) {
+  let depth = 0;
+  return String(html || '').split(/(<[^>]+>)/).map((part) => {
+    if (part[0] === '<') {
+      if (/^<(a|h[1-6]|script|style|button)\b/i.test(part)) depth++;
+      else if (/^<\/(a|h[1-6]|script|style|button)>/i.test(part)) depth = Math.max(0, depth - 1);
+      return part;
+    }
+    return depth ? part : part.replace(ASK, (m) => `<a class="ask-rabbi" href="${esc(href || '/help/talk-to-the-rabbi')}" title="${esc(title || 'Call or message the Rabbi or Rebbetzin')}">${m}</a>`);
+  }).join('');
+}
+
+module.exports = { askRabbi, md, inline, esc, plain, frontMatter, safeUrl, ltr, escLtr };

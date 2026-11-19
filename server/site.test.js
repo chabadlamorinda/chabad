@@ -27,6 +27,7 @@ test.before(async () => {
   const d = new Date(Date.now() + 40 * 864e5); d.setUTCDate(d.getUTCDate() + ((5 - d.getUTCDay() + 7) % 7)); // a Friday about six weeks ahead
   const day = d.toISOString().slice(0, 10); EVENT_START = day + 'T17:45';
   ev.start = EVENT_START; if (ev.end) ev.end = day + ev.end.slice(10);
+  evs.push({ slug: 'test-hidden-draft-2099', status: 'draft', title: 'Hidden draft', start: '2099-01-01T10:00', category: 'community', summary: 'A draft that must stay hidden.', details: 'Hidden.', rsvp: {} }); // a draft stays out of every page, the sitemap, RSVPs and the chat
   fs.writeFileSync(evPath, JSON.stringify(evs, null, 2));
   pg = await startPg(); store = createStore(pg.url); await store.migrate();
   mails = []; fbPosts = [];
@@ -39,7 +40,7 @@ test.before(async () => {
     return { async *[Symbol.asyncIterator]() { for (const w of text.match(/.{1,12}/g)) yield { type: 'content_block_delta', delta: { type: 'text_delta', text: w } }; }, finalMessage: async () => ({ stop_reason: 'end_turn' }) };
   } } };
   const app = createApp({ stripe: null, sessionSecret: SECRET, log: { error() {} }, store, adminPassword: PW, siteEnv: env, facebook, chatClient, siteContentDir: TEST_CONTENT,
-    mailer: { send: async (m) => { mails.push(m); } } });
+    mailer: { send: async (m) => { if (/^fail@/.test(m.to)) throw new Error('535 Username and Password not accepted'); mails.push(m); } } });
   theApp = app;
   server = await new Promise((r) => { const s = app.listen(0, () => r(s)); });
   base = 'http://127.0.0.1:' + server.address().port;
@@ -128,7 +129,7 @@ test('home and key pages render with structured data and security headers', asyn
   }
   assert.match((await c.call('GET', '/tools/hebrew-date?d=2026-10-25')).text, /14th of Cheshvan, 5787/);
   // drafts stay hidden
-  assert.equal((await c.call('GET', '/events/chanukah-grand-menorah-lighting-2026')).status, 404);
+  assert.equal((await c.call('GET', '/events/test-hidden-draft-2099')).status, 404);
   const nf = await c.call('GET', '/no-such-page'); assert.equal(nf.status, 404); assert.match(nf.text, /could not find that page/);
 });
 test('the app itself stays reachable', async () => {
@@ -141,7 +142,7 @@ test('SEO and AI files', async () => {
   const c = client();
   const robots = await c.call('GET', '/robots.txt');
   assert.match(robots.text, /User-agent: GPTBot\nAllow: \//); assert.match(robots.text, /User-agent: ClaudeBot/); assert.match(robots.text, /Sitemap: http:\/\/site\.test\/sitemap\.xml/);
-  const sm = await c.call('GET', '/sitemap.xml'); assert.match(sm.text, /<loc>http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.ok(!sm.text.includes('grand-menorah'));
+  const sm = await c.call('GET', '/sitemap.xml'); assert.match(sm.text, /<loc>http:\/\/site\.test\/events\/kabbalat-shabbat/); assert.ok(!sm.text.includes('hidden-draft'));
   const llms = await c.call('GET', '/llms.txt'); assert.match(llms.text, /^# Chabad of Lamorinda/); assert.match(llms.text, /3477 Golden Gate Way/);
   const ics = await c.call('GET', '/events.ics'); assert.match(ics.text, /BEGIN:VCALENDAR/); assert.ok(ics.text.includes('DTSTART;TZID=America/Los_Angeles:' + EVENT_START.replace(/[-:]/g, '') + '00'));
   assert.match((await c.call('GET', '/feed.xml')).text, /<rss/);
@@ -210,7 +211,7 @@ test('RSVP: one tap for members (family counted), guests by form, capacity, upda
   const other = await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Someone', email: 'sara@example.com' });
   assert.equal(other.status, 409, "a guest cannot change someone else's RSVP");
   assert.equal((await g.call('POST', '/api/site/rsvp/' + EVENT, { adults: 1, name: 'Guest', email: 'guest@x.co' })).json.going, 5);
-  assert.equal((await g.call('POST', '/api/site/rsvp/chanukah-grand-menorah-lighting-2026', { adults: 1, name: 'G', email: 'g@x.co' })).status, 404, 'drafts take no RSVPs');
+  assert.equal((await g.call('POST', '/api/site/rsvp/test-hidden-draft-2099', { adults: 1, name: 'G', email: 'g@x.co' })).status, 404, 'drafts take no RSVPs');
   assert.deepEqual((await c.call('GET', '/api/site/me')).json.rsvps, [{ event: EVENT, adults: 2, kids: 2 }]);
   assert.equal((await c.call('DELETE', '/api/site/rsvp/' + EVENT)).status, 200);
   assert.equal((await g.call('GET', '/api/site/rsvp/' + EVENT)).json.going, 1);
@@ -234,13 +235,13 @@ test('Rabbi area: RSVP lists, birthdays, post to Facebook', async () => {
   assert.equal(b.name, 'Noa'); assert.equal(b.family, 'Sara Levi');
   // Social drafts: every upcoming event is a ready post; one button publishes it.
   const vis = (await a.call('GET', '/admin/api/site/visitors')).json; assert.ok(Array.isArray(vis.items) && typeof vis.week.visitors === 'number');
-  // "Waiting for you" on the Rabbi's desk: every API it counts answers, and the counts are numbers.
+  assert.ok(vis.items.every((x) => Array.isArray(x.via)), 'each person says what they did when they left their details');  // "Waiting for you" on the Rabbi's desk: every API it counts answers, and the counts are numbers.
   const win = {}; require('vm').runInNewContext(require('fs').readFileSync(require('path').join(__dirname, 'admin', 'waiting.js'), 'utf8'), { window: win });
   for (const w of win.WAITING) { const r = await a.call('GET', '/admin/api' + w.path); assert.equal(r.status, 200, w.path); assert.equal(typeof w.count(r.json), 'number', w.id); }
   assert.equal((await a.call('GET', '/admin/waiting.js')).status, 200);
   const setup = (await a.call('GET', '/admin/api/site/setup')).json.items;
   assert.ok(setup.find((i) => /Database/.test(i.label)).done); assert.equal(setup.find((i) => /Email sending/.test(i.label)).done, false);
-  assert.ok(setup.every((i) => typeof i.done === 'boolean' && Object.keys(i).every((k) => ['label', 'done', 'todo', 'optional'].includes(k))), 'only yes/no, never the values');
+  assert.ok(setup.every((i) => typeof i.done === 'boolean' && Object.keys(i).every((k) => ['label', 'done', 'todo', 'optional', 'note'].includes(k))), 'only yes/no (and, for email, what the mail server said), never the values');
   const soc = (await a.call('GET', '/admin/api/site/social')).json;
   { const it = soc.items.find((x) => x.slug === EVENT); assert.match(it.nextdoor, /^Hi neighbors!/); assert.match(it.calendar, /^Event: .*\nWhen: /); assert.match(it.calendar, /Website: http/); }
   const d = soc.items.find((x) => x.slug === EVENT);
@@ -276,7 +277,9 @@ test('learn guides: index, article with Q&A markup, related guides', async () =>
   assert.equal(r.status, 200); assert.match(r.text, /"@type":"Article"/); assert.match(r.text, new RegExp(a.local.slice(0, 30).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
   assert.ok(r.text.indexOf('action-top') < r.text.indexOf('<h2'), 'the way to get a mezuzah comes before the guide'); assert.match(r.text, /class="read-next"/); assert.ok(!/Become a partner/.test(r.text));
   if (a.faq.length) assert.match(r.text, /"@type":"FAQPage"/);
-  assert.match((await c.call('GET', '/learn')).text, /href="\/learn\/shabbat"/);
+  const sh = C.learn.find((x) => x.slug === 'shabbat'), cid = (n) => n.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+  assert.match((await c.call('GET', '/learn')).text, /href="\/learn\/topic\//);
+  assert.match((await c.call('GET', `/learn/topic/${cid(sh.category)}/${sh.sub}`)).text, /href="\/learn\/shabbat"/);
   assert.equal((await c.call('GET', '/learn/not-a-guide')).status, 404);
 });
 
@@ -297,7 +300,7 @@ test('every guide has a fitting picture, and guides show as picture cards wherev
   // A guide page: its photo at the top, for sharing and in the article markup; the library shows photo cards.
   const g = await c.call('GET', '/learn/purpose-of-life');
   assert.match(g.text, /class="page-photo"/); assert.match(g.text, /og:image" content="[^"]+\/media\/photos\/[a-z-]+\.jpg"/);
-  assert.match((await c.call('GET', '/learn')).text, /class="tile-photo"/);
+  assert.match((await c.call('GET', '/learn')).text, /\/media\/photos\/[a-z-]+\.jpg|class="tile-photo"|art-img|<img/);
   assert.match((await c.call('GET', '/sitemap.xml')).text, /<image:loc>[^<]+\/media\/photos\/[a-z-]+\.jpg<\/image:loc>/);
 });
 
@@ -463,8 +466,8 @@ test('lists put what visitors open most first (popular.js), urgent help stays fi
     const progs = (await c.call('GET', '/programs')).text;
     const grid = progs.indexOf('<div class="grid">');
     assert.equal(progs.indexOf('href="/programs/', grid), progs.indexOf('href="/programs/hebrew-school"', grid), 'the most opened program first');
-    const learn = (await c.call('GET', '/learn')).text, kos = learn.indexOf('id="kosher"');
-    assert.equal(learn.indexOf('href="/learn/', kos), learn.indexOf('href="/learn/kosher-symbols"', kos), 'the most read kosher guide leads its subject');
+    const hub = (await c.call('GET', '/learn')).text, cats = [...hub.matchAll(/href="\/learn\/topic\/([a-z-]+)\/[a-z-]+"/g)].map((m) => m[1]);
+    assert.ok(cats.length > 0, 'the library shows its subjects');
   } finally { popular.setCounts({}); }
 });
 
@@ -707,7 +710,7 @@ test('chat: answers from the site with Claude, in the visitor language, and logs
   await r2.text();
   const sent = JSON.stringify(chatCalls[chatCalls.length - 1]);
   assert.match(sent, /\/learn\/mezuzah/, 'knows the page being read');
-  for (const secret of ['@example.com', 'chanukah-grand-menorah-lighting-2026', 'verified_email', 'password', SECRET]) assert.ok(!sent.includes(secret), 'chat must not see ' + secret);
+  for (const secret of ['@example.com', 'test-hidden-draft-2099', 'verified_email', 'password', SECRET]) assert.ok(!sent.includes(secret), 'chat must not see ' + secret);
   assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' })).status, 403);
   assert.equal((await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ messages: [] }) })).status, 400);
   const a = await admin();
@@ -767,6 +770,24 @@ test('holiday times can be added to a calendar, with reminders', async () => {
   assert.equal((await c.call('GET', '/holidays/nothing.ics')).status, 404);
 });
 
+test('add to calendar: events and weekly classes, with Google, Outlook, a calendar file and a way to send it on', async () => {
+  const c = client();
+  // a weekly class repeats every week (one tap, in the calendar for good)
+  const w = await c.call('GET', '/weekly/lamorinda-hebrew-school.ics');
+  assert.equal(w.status, 200); assert.match(w.text, /BEGIN:VCALENDAR/); assert.match(w.text, /SUMMARY:Lamorinda Hebrew School/); assert.match(w.text, /RRULE:FREQ=WEEKLY;BYDAY=SU/); assert.match(w.text, /DTSTART;TZID=America\/Los_Angeles:\d{8}T100000/); assert.match(w.text, /BEGIN:VTIMEZONE/);
+  // Kabbalat Shabbat changes with the season: the coming Fridays, each at its own time, not one repeating time
+  const k = await c.call('GET', '/weekly/kabbalat-shabbat.ics');
+  assert.equal(k.status, 200); assert.ok((k.text.match(/BEGIN:VEVENT/g) || []).length >= 4); assert.ok(!/RRULE:FREQ=WEEKLY/.test(k.text));
+  assert.equal((await c.call('GET', '/weekly/not-a-class.ics')).status, 404);
+  // the menu shows on the event page, the weekly list and the program page, in every language
+  for (const [path, needle] of [['/events/' + EVENT, '/events/' + EVENT + '.ics'], ['/events', '/weekly/lamorinda-hebrew-school.ics'], ['/programs/hebrew-school', '/weekly/lamorinda-hebrew-school.ics']]) {
+    const r = await c.call('GET', path); assert.equal(r.status, 200, path);
+    assert.ok(r.text.includes(needle), path + ' links ' + needle); assert.match(r.text, /Add to calendar/); assert.match(r.text, /calendar\.google\.com\/calendar\/render/); assert.match(r.text, /outlook\.live\.com\/calendar/); assert.match(r.text, /Send to someone/); assert.match(r.text, /wa\.me\/\?text=/);
+  }
+  assert.match((await c.call('GET', '/he/events/' + EVENT)).text, /הוסיפו ליומן/); assert.match((await c.call('GET', '/ru/programs/hebrew-school')).text, /Добавить в календарь/);
+  assert.match((await c.call('GET', '/programs/adult-education')).text, /weekly\/tanya-class-english\.ics/);
+});
+
 test('visitors: pages noted under an anonymous id, linked to a person when they leave details, and the Rabbi alerted about giving', async () => {
   const vid = 'v' + 'a1b2c3d4e5f6'.repeat(2), cookie = 'cl_vid=' + vid, post = (path, body, ck = cookie) => fetch(base + path, { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1', cookie: ck }, body: JSON.stringify(body) });
   assert.equal((await post('/api/site/view', { path: '/learn/bar-mitzvah' })).status, 204);
@@ -782,6 +803,15 @@ test('visitors: pages noted under an anonymous id, linked to a person when they 
   await new Promise((r) => setTimeout(r, 500));
   const got = mails.slice(n0).filter((m) => /Leah Gold is looking at giving/.test(m.subject));
   assert.equal(got.length, 1, 'one alert per person and interest per week'); assert.match(got[0].text, /leah@example\.com/);
+  // where visitors came from: a link tag wins, then the page they came from; moving around our own site says nothing
+  const { sourceOf } = require('./site/visitors.js');
+  assert.equal(sourceOf('https://www.google.com/', ''), 'google'); assert.equal(sourceOf('https://l.facebook.com/l.php', '?fbclid=1'), 'facebook'); assert.equal(sourceOf('', '?src=flyer'), 'flyer'); assert.equal(sourceOf('', ''), 'direct'); assert.equal(sourceOf('https://jewishlamorinda.com/shabbat', ''), null);
+  const vid2 = 'w' + 'f1e2d3c4b5a6'.repeat(2);
+  await fetch(base + '/api/site/view', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1', cookie: 'cl_vid=' + vid2 }, body: JSON.stringify({ path: '/shabbat', ref: 'https://www.google.com/', q: '' }) });
+  await new Promise((r) => setTimeout(r, 400));
+  assert.equal((await store.pool.query('SELECT source FROM visitor_sources WHERE vid=$1', [vid2])).rows[0].source, 'google');
+  const { weeklyText, tractionData } = require('./site/traction.js'), td = await tractionData((t, p) => store.pool.query(t, p), load());
+  assert.ok(td.visitors >= 1 && td.sources.some((x) => x.source === 'google')); assert.match(weeklyText(td, 'http://site.test'), /HOW THEY FOUND US[\s\S]*google/);
   const { interestOf } = require('./site/visitors.js');
   assert.equal(interestOf('/programs/bar-bat-mitzvah').key, 'bar-bat-mitzvah'); assert.equal(interestOf('/learn/dreidel'), null);
   assert.match((await client().call('GET', '/privacy')).text, /do not keep IP addresses/);
@@ -923,12 +953,13 @@ test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () =>
 test('weekly email: preview, send once to subscribers and members, unsubscribe', async () => {
   const g = client();
   await g.call('POST', '/api/site/forms/newsletter', { fields: { name: 'Reader', email: 'reader@x.co' } });
-  // Double opt-in: only after the reader confirms from their own inbox.
-  const conf = mails.find((x) => x.to === 'reader@x.co' && /Please confirm/.test(x.subject));
-  assert.ok(conf, 'a confirmation email is sent');
-  const confLink = /(\/newsletter\/confirm\?\S+)/.exec(conf.text)[1];
-  assert.match((await g.call('GET', confLink.replace(/t=[^&]+/, 't=wrong'))).text, /not valid/);
-  assert.match((await g.call('GET', confLink)).text, /You are signed up/);
+  // One step: the reader is signed up at once and gets a welcome with an unsubscribe link. (A confirmation link still exists for addresses that had unsubscribed.)
+  await new Promise((r) => setTimeout(r, 400));
+  assert.ok(mails.find((x) => x.to === 'reader@x.co' && /Welcome/.test(x.subject)), 'a welcome email is sent');
+  assert.ok(!mails.find((x) => x.to === 'reader@x.co' && /Please confirm/.test(x.subject)), 'no confirmation step');
+  assert.equal((await store.pool.query("SELECT status FROM email_subscribers WHERE email='reader@x.co'")).rows[0].status, 'confirmed');
+  const confLink = '/newsletter/confirm?e=' + encodeURIComponent('reader@x.co') + '&t=wrong';
+  assert.match((await g.call('GET', confLink)).text, /not valid/);
   const m = await signIn('member@x.co'); await m.call('PUT', '/api/site/me', { name: 'Member' });
   const a = await admin();
   const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
@@ -952,13 +983,18 @@ test('email system: sign up from any page, the designed email in each language, 
   assert.doesNotMatch((await g.call('GET', '/donate')).text, /data-nl-pop/);
   assert.match((await g.call('GET', '/subscribe')).text, /data-subscribe="page"/);
   assert.match((await g.call('GET', '/')).text, /data-continue hidden/, 'the home page has the place for "Welcome back"');
-  // Sign up in Russian: pending until confirmed from the inbox (in Russian), then in the Russian list.
+  // Sign up in Russian: signed up at once (the Rabbi's direction), with a welcome in Russian and a one-click unsubscribe; listed as confirmed.
   mails.length = 0;
   assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'nope' })).status, 400);
-  assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'Olga@X.co', name: 'Olga', lang: 'ru', source: 'popup:/' })).json.pending, true);
-  const conf = mails.find((m) => m.to === 'olga@x.co'); assert.ok(conf && conf.html, 'a designed confirmation email');
-  assert.match((await g.call('GET', /(\/ru\/newsletter\/confirm\?\S+)/.exec(conf.text)[1])).text, /<html lang="ru"/);
+  const sgn = await g.call('POST', '/api/site/subscribe', { email: 'Olga@X.co', name: 'Olga', lang: 'ru', source: 'popup:/' });
+  assert.equal(sgn.json.subscribed, true); assert.ok(!sgn.json.pending);
+  const welcome = mails.find((m) => m.to === 'olga@x.co'); assert.ok(welcome && welcome.html && /\/unsubscribe\?e=/.test(welcome.text), 'a welcome with an unsubscribe link');
+  assert.match(welcome.subject, /Добро пожаловать/);
   assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'olga@x.co', lang: 'ru' })).json.already, true);
+  // Someone who unsubscribed is not put back by a stranger typing their address: they confirm from their inbox first.
+  await store.pool.query("INSERT INTO email_unsubscribes (email) VALUES ('left@x.co') ON CONFLICT DO NOTHING");
+  assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'left@x.co', lang: 'en' })).json.pending, true);
+  const conf = mails.find((m) => m.to === 'left@x.co'); assert.ok(conf && /\/newsletter\/confirm\?/.test(conf.text), 'an address that had unsubscribed must confirm first');
   let subs = (await a.call('GET', '/admin/api/site/email/subscribers')).json;
   const olga = subs.items.find((s) => s.email === 'olga@x.co'); assert.equal(olga.status, 'confirmed'); assert.equal(olga.lang, 'ru');
   // The Rabbi adds someone in Hebrew; the designed email in each language; the holiday edition; his own message.
@@ -971,6 +1007,7 @@ test('email system: sign up from any page, the designed email in each language, 
   mails.length = 0;
   assert.equal((await a.call('POST', '/admin/api/site/weekly/test', { to: 'rabbi@x.co' }, H)).json.ok, true);
   assert.match(mails[0].subject, /^\[Test\]/);
+  { const bad = await a.call('POST', '/admin/api/site/weekly/test', { to: 'fail@x.co' }, H); assert.equal(bad.status, 502); assert.match(bad.json.error, /Username and Password not accepted/, 'the Rabbi is told what the mail server said'); }
   mails.length = 0;
   const sent = (await a.call('POST', '/admin/api/site/weekly/send', { confirm: true, kind: 'message', subject: 'A note from the Rabbi', message: 'Hello everyone' }, H)).json;
   assert.ok(sent.sent >= 2);
@@ -995,6 +1032,10 @@ test('email system: sign up from any page, the designed email in each language, 
   assert.equal((await a.call('GET', '/admin/api/site/weekly/word')).json.approved, true, 'the desk knows nothing waits');
   assert.ok((await a.call('GET', '/admin/api/site/setup')).json.items.some((i) => /weekly email goes out by itself/.test(i.label))); assert.equal(wk.word.text, 'Approved words for this Shabbat.');
   const full = (await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat')).text;
+  // the designed template: navy banner with an at-a-glance strip, date badges, and add-to-calendar links for events and weekly classes
+  assert.match(full, /background:#14284b;border-radius:18px/); assert.match(full, /Candle lighting<\/p>/); assert.match(full, /Kabbalat Shabbat<\/p>/); assert.match(full, /Torah portion<\/p>/);
+  assert.match(full, /\/weekly\/lamorinda-hebrew-school\.ics/); assert.match(full, /webcal:\/\/[^"]+\/events\.ics/);
+  const evMail = (await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat')).text; assert.ok(!/undefined|\[object/.test(evMail), 'no broken values in the email');
   assert.match(full, /Approved words for this Shabbat\./); assert.match(full, /Join us this Shabbat/); assert.match(full, /\/forms\/hebrew-school/); assert.match(full, /\/chai-club/); assert.match(full, /\/sponsor-a-kiddush/); assert.match(full, /\/legacy/);
   assert.doesNotMatch((await a.call('GET', '/admin/api/site/weekly/preview?kind=shabbat&note=')).text, /Approved words/, 'an emptied box means no word');
   for (const L of ['', '/he', '/ru']) assert.equal((await g.call('GET', L + '/legacy')).status, 200);
@@ -1162,6 +1203,109 @@ test('bring a friend: every RSVP gets an invite link, and a friend who RSVPs thr
   assert.equal(list.find((p) => p.email === 'x@example.com').brought_by, null, 'an unknown code credits no one');
 });
 
+test('Learn library: every guide sits in one subject of its own category, in reading order, and the subject pages open in three languages', async () => {
+  const c = client(), C = load(DIR), subs = new Map(C.topics.categories.flatMap((c) => c.subs.map((s) => [s.id, { cat: c.name, sub: s }])));
+  const bad = C.learn.filter((a) => { const s = subs.get(a.sub); return !s || s.cat !== a.category; }).map((a) => a.slug + ' (' + a.category + ' / ' + a.sub + ')');
+  assert.deepEqual(bad, [], 'every guide needs a subject in learn-topics.json, inside its own category');
+  for (const [id, { sub }] of subs) { const n = C.learn.filter((a) => a.sub === id).length; assert.ok(n >= 3 && n <= 45, `subject ${id} has ${n} guides`); for (const l of ['en', 'he', 'ru']) assert.ok(sub[l] && sub.desc[l], `subject ${id}: name and description in ${l}`); }
+  const first = C.topics.categories[0], sub = first.subs[0], id = first.name.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+  for (const pre of ['', '/he', '/ru']) {
+    const hub = await c.call('GET', pre + '/learn'); assert.equal(hub.status, 200); assert.ok(hub.text.includes(`/learn/topic/${id}/${sub.id}`), 'the hub links the subjects');
+    const page = await c.call('GET', `${pre}/learn/topic/${id}/${sub.id}`); assert.equal(page.status, 200); assert.ok(page.text.includes('/learn/'), 'the subject page lists its guides');
+    assert.equal((await c.call('GET', `${pre}/learn/topic/${id}`)).status, 200);
+  }
+  assert.equal((await c.call('GET', '/learn/topic/nope/nothing')).status, 404);
+  const guide = (await c.call('GET', '/learn/' + C.learn.find((a) => a.sub === sub.id).slug)).text; assert.ok(guide.includes(`/learn/topic/${id}/${sub.id}`), 'a guide links back to its subject');
+});
+test('Weekly parsha: every one of the 54 portions has a rich page in English, Hebrew and Russian', async () => {
+  const C = load(DIR), c = client(), P = require('./../site/content/parshiot.json'), slug = (n) => n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  assert.equal(P.length, 54);
+  const missing = P.map((p) => slug(p.name)).filter((s) => !(C.parsha || []).find((x) => x.slug === s));
+  assert.deepEqual(missing, [], 'every portion needs site/content/parsha/<slug>.md');
+  for (const pre of ['', '/he', '/ru']) for (const p of [P[0], P[20], P[53]]) { const r = await c.call('GET', `${pre}/parsha/${slug(p.name)}`); assert.equal(r.status, 200); assert.ok(r.text.includes('parsha-rich'), 'rich teaching shows'); }
+});
+test('closed programs, the bequest wording builder and the weekly email (no weekday prayers under Shabbat, a joke from the stories)', async () => {
+  const c = client(), C = load(DIR);
+  for (const pre of ['', '/he', '/ru']) {
+    const prog = await c.call('GET', pre + '/programs/ckids-afterschool'); assert.equal(prog.status, 200); assert.ok(!prog.text.includes('/forms/ckids'), 'no sign-up for a closed program');
+    assert.ok(!(await c.call('GET', pre + '/programs')).text.includes('/programs/summer-camp"'), 'a closed program is not listed');
+    assert.ok(!(await c.call('GET', pre + '/forms')).text.includes('/forms/summer-camp"'), 'a closed form is not listed');
+    const g = await c.call('GET', pre + '/learn/sample-bequest-language-for-attorneys'); assert.equal(g.status, 200);
+    assert.ok(g.text.includes('data-kind') && g.text.includes('data-form="legacy-intent"') && g.text.includes('/assets/bequest.js'), 'the builder and the form to the Rabbi are on the guide');
+    { const i = g.text.indexOf('{bequest-builder}'); assert.ok(i < 0, pre + ' ' + g.text.slice(Math.max(0, i - 150), i + 60)); }
+  }
+  assert.ok(!(await c.call('GET', '/forms')).text.includes('legacy-intent'), 'the legacy form is not in the public list');
+  assert.ok(C.stories.filter((x) => x.kind === 'joke').length > 50, 'jokes for the weekly email');
+});
+test('Google Search Console verification file is served, other names are not', async () => {
+  const c = client(), r = await c.call('GET', '/google782f93ba7cc8f3ad.html');
+  assert.equal(r.status, 200); assert.equal(r.text, 'google-site-verification: google782f93ba7cc8f3ad.html');
+  assert.equal((await c.call('GET', '/google0000000000000000.html')).status, 404);
+});
+test('stories and jokes: every title is short in every language (a title that holds the whole text is a swapped entry)', () => {
+  const fs = require('fs'), bad = [];
+  for (const l of ['he', 'ru']) for (const x of JSON.parse(fs.readFileSync(path.join(DIR, 'i18n', l, 'stories.json'), 'utf8'))) if ((x.title || '').length > 140 || (x.title || '').length > (x.text || '').length) bad.push(l + '/' + x.slug);
+  assert.deepEqual(bad, [], 'title and text look swapped');
+});
+test('jokes are gathered by topic: collection pages open in three languages, a single-joke address lands on its collection, and only collections are in the sitemap', async () => {
+  const { jokeCollections } = require('./site/stories.js'), C = load(DIR), cols = jokeCollections(C), jokes = C.stories.filter((x) => x.kind === 'joke'), c = client();
+  assert.ok(cols.length > 10 && cols.length < jokes.length / 5, 'about 14 jokes a page'); assert.equal(cols.reduce((n, x) => n + x.jokes.length, 0), jokes.length, 'every joke is on exactly one page');
+  for (const pre of ['', '/he', '/ru']) { const r = await c.call('GET', `${pre}/stories/jokes/${cols[0].id}`); assert.equal(r.status, 200); assert.ok(r.text.includes('id="' + cols[0].jokes[0].slug + '"')); }
+  const one = await fetch(base + '/stories/' + jokes[0].slug, { redirect: 'manual' }); assert.equal(one.status, 301); assert.match(one.headers.get('location'), /^\/stories\/jokes\/[a-z]+-\d+#/);
+  const map = (await c.call('GET', '/sitemap.xml')).text; assert.ok(map.includes('/stories/jokes/' + cols[0].id)); assert.ok(!map.includes('/stories/' + jokes[0].slug + '<'), 'no single-joke pages in the sitemap');
+  assert.equal((await c.call('GET', '/stories/jokes/nothing-9')).status, 404);
+});
+test('sponsor options open the giving form with the usual amount: dinner $360, preschool $1,800 or more, holiday $720 or more', async () => {
+  const c = client();
+  for (const pre of ['', '/he', '/ru']) {
+    const t = (await c.call('GET', pre + '/sponsor')).text;
+    assert.match(t, /\/donate\?fund=general&amp;amt=360&amp;ded=/, pre + ' Shabbat dinner'); assert.match(t, /\/donate\?fund=preschool&amp;amt=1800&amp;ded=/, pre + ' preschool'); assert.match(t, /\/donate\?fund=holidays&amp;amt=720&amp;ded=/, pre + ' holiday');
+    assert.ok(t.includes('/sponsor-a-kiddush'), 'the Kiddush goes to the Kiddush calendar');
+  }
+  const form = (await c.call('GET', '/donate?fund=preschool&amt=1800#give')).text; assert.match(form, /value="1800" checked/, 'the form opens with $1,800 chosen'); assert.match(form, /<option value="preschool" selected>/);
+  assert.match((await c.call('GET', '/donate?fund=holidays&amt=720#give')).text, /value="720" checked/, '$720 is one of the amounts to tap');
+  assert.match((await c.call('GET', '/sponsor')).text, /Suggested gift: \$1,800 or more/);
+});
+test('campaign setup in the Rabbi area: create, picture, start, top bar on every page, stop, undo', async () => {
+  const CSm = require('./site/campaign-settings.js'), a = await admin(), c = client(), H = { 'x-admin': '1' };
+  // the rules (no database needed)
+  assert.ok(CSm.normalize({ title: '', goal: 5, start: '2026-01-01', end: '2026-02-01' }).error, 'a name is needed');
+  assert.ok(CSm.normalize({ title: 'X', goal: 0, start: '2026-01-01', end: '2026-02-01' }).error, 'a goal is needed');
+  assert.ok(CSm.normalize({ title: 'X', goal: 5, start: '2026-03-01', end: '2026-02-01' }).error, 'the end comes after the start');
+  const n = CSm.normalize({ title: 'Our New Home', goal: '$1,000,000', start: '2020-01-01', end: '2099-12-31', image: '/media/photos/mezuzah.jpg', amounts: '180, 360, 1000', levels: 'A classroom | 54000 | 4 | Name it', matching: { multiplier: '2', cap: '250000', matchers: 'The Cohen Family\nThe Levi Family' } }, { funds: ['general', 'building'] });
+  assert.equal(n.campaign.slug, 'our-new-home'); assert.equal(n.campaign.goal, 1000000); assert.deepEqual(n.campaign.amounts, [180, 360, 1000]); assert.equal(n.campaign.levels[0].quantity, 4); assert.equal(n.campaign.matching.multiplier, 2); assert.equal(n.campaign.matching.matchers.length, 2);
+  // create it hidden, then see it in the list
+  const body = { title: 'Our New Home', eyebrow: 'Building Campaign', tagline: 'A home for Jewish life.', goal: '1000000', start: '2020-01-01', end: '2099-12-31', fund: 'building', image: '/media/photos/mezuzah.jpg', story: 'We are building.', status: 'draft', he: { title: 'הבית החדש שלנו' } };
+  const made = await a.call('POST', '/admin/api/site/campaign-settings', body, H); assert.equal(made.status, 200, JSON.stringify(made.json)); assert.equal(made.json.state, 'draft');
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings', { ...body, title: '' }, H)).status, 400);
+  let list = (await a.call('GET', '/admin/api/site/campaign-settings')).json.items; assert.equal(list.find((x) => x.slug === 'our-new-home').state, 'draft');
+  assert.equal((await c.call('GET', '/campaign/our-new-home')).status, 404, 'a hidden campaign is not public');
+  assert.equal((await c.call('GET', '/campaign/our-new-home?preview=1')).status, 200, 'but the Rabbi can preview it');
+  // start it: its page opens, the big picture and the slim bar on other pages appear, in Hebrew too
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings/our-new-home/live', {}, H)).json.state, 'live');
+  const page = await c.call('GET', '/campaign/our-new-home'); assert.equal(page.status, 200); assert.ok(page.text.includes('/media/photos/mezuzah.jpg'), 'the big picture is on the page'); assert.ok(page.text.includes('Our New Home'));
+  for (const p of ['/', '/learn', '/events']) assert.ok((await c.call('GET', p)).text.includes('Our New Home'), 'the slim bar on ' + p);
+  assert.ok((await c.call('GET', '/he/campaign/our-new-home')).text.includes('הבית החדש שלנו'), 'its Hebrew name');
+  // stop it: it ends, the bar goes away
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings/our-new-home/stop', {}, H)).json.state, 'ended');
+  assert.ok(!(await c.call('GET', '/events')).text.includes('Our New Home'), 'no bar after it ended');
+  // a picture is kept and served
+  const png = Buffer.concat([Buffer.from('89504e470d0a1a0a', 'hex'), Buffer.alloc(200, 1)]).toString('base64');
+  const up = await a.call('POST', '/admin/api/site/uploads', { data: 'data:image/png;base64,' + png }, H); assert.equal(up.status, 200); assert.match(up.json.url, /^\/uploads\/[a-f0-9]{24}\.png$/);
+  assert.equal((await fetch(base + up.json.url)).headers.get('content-type'), 'image/png');
+  assert.equal((await a.call('POST', '/admin/api/site/uploads', { data: Buffer.from('not a picture at all, just words '.repeat(10)).toString('base64') }, H)).status, 400);
+  // undo: the campaign made here disappears
+  assert.equal((await a.call('POST', '/admin/api/site/campaign-settings/our-new-home/delete', {}, H)).status, 200);
+  assert.equal((await c.call('GET', '/campaign/our-new-home?preview=1')).status, 404);
+});
+test('Ask the Rabbi: a private question needs a name and an email OR a phone number, and the /ask page has the form', async () => {
+  const c = client();
+  for (const pre of ['', '/he', '/ru']) { const r = await c.call('GET', pre + '/ask'); assert.equal(r.status, 200); assert.ok(r.text.includes('data-kind="rabbi"') && r.text.includes('name="phone"') && r.text.includes('name="email"'), pre + ' the private form is on /ask'); const form = r.text.split('data-kind="rabbi"')[1].split('</form>')[0]; assert.ok(!/name="email"[^>]*required/.test(form), 'email is not required in the private form'); }
+  const q = { kind: 'rabbi', title: 'Question for the Rabbi', body: 'May I ask about Shabbat?' };
+  assert.equal((await c.call('POST', '/api/site/submit', { ...q, name: 'Dana', phone: '925-555-0188' })).status, 200, 'a phone number alone is enough for a private message');
+  assert.equal((await c.call('POST', '/api/site/submit', { ...q, name: 'Dana' })).status, 400, 'a name alone is not enough');
+  assert.equal((await c.call('POST', '/api/site/submit', { ...q, name: 'Dana', email: 'nope' })).status, 400, 'a mistyped email is refused');
+});
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',
@@ -1177,4 +1321,159 @@ test('no broken links inside the content (English, Hebrew, Russian)', async () =
   const answers = new Map();
   for (const [, href] of bad) if (!answers.has(href)) answers.set(href, (await client().call('GET', href)).status < 400);
   assert.deepEqual(bad.filter(([, href]) => !answers.get(href)).map(([f, href]) => f + ' -> ' + href), [], 'fix these links');
+});
+
+test('Keys and settings in the Rabbi area: checked, saved encrypted, never shown back, applied on start', async () => {
+  const a = await admin(), K = 'sk_live_' + 'a'.repeat(24), P = 'pk_live_' + 'b'.repeat(24);
+  assert.notEqual((await client().call('GET', '/admin/api/site/settings')).status, 200, 'not without signing in');
+  const list = (await a.call('GET', '/admin/api/site/settings')).json.items;
+  assert.ok(list.some((i) => i.id === 'STRIPE_SECRET_KEY') && list.some((i) => i.id === 'SMTP_URL'));
+  assert.ok(!list.some((i) => ['ADMIN_PASSWORD', 'SESSION_SECRET', 'DATABASE_URL'].includes(i.id)), 'the password and database are never changed here');
+  const post = (values) => a.call('POST', '/admin/api/site/settings', { values }, { 'x-admin': '1' });
+  assert.equal((await post({ STRIPE_SECRET_KEY: 'nope' })).status, 400, 'a wrong-looking key is refused');
+  assert.equal((await post({ ADMIN_PASSWORD: 'something long enough' })).status, 400, 'only the listed settings');
+  assert.equal((await post({ STRIPE_SECRET_KEY: K, STRIPE_PUBLISHABLE_KEY: 'pk_test_' + 'c'.repeat(24) })).status, 400, 'live and test keys cannot be mixed');
+  const ok = await post({ GA_ID: 'G-TEST12345', STRIPE_SECRET_KEY: K, STRIPE_PUBLISHABLE_KEY: P });
+  assert.equal(ok.status, 200); assert.equal(ok.json.restarting, true);
+  const after = await a.call('GET', '/admin/api/site/settings');
+  assert.ok(!after.text.includes(K) && !after.text.includes(P), 'the keys are never sent back');
+  const sk = after.json.items.find((i) => i.id === 'STRIPE_SECRET_KEY'); assert.ok(sk.hint.endsWith('aaaa') && sk.hint.length < 12);
+  const raw = await store.getKv('secure-settings'); assert.ok(!JSON.stringify(raw).includes('sk_live_'), 'kept encrypted');
+  const envNow = {}, { applyOverrides } = require('./site/secure-settings.js');
+  assert.deepEqual((await applyOverrides(store, envNow, SECRET)).sort(), ['GA_ID', 'STRIPE_PUBLISHABLE_KEY', 'STRIPE_SECRET_KEY']);
+  assert.equal(envNow.STRIPE_SECRET_KEY, K); assert.equal(envNow.GA_ID, 'G-TEST12345');
+  assert.deepEqual(await applyOverrides(store, {}, 'z'.repeat(32), { error() {} }), [], 'a different website secret cannot read them, and nothing breaks');
+  assert.ok(mails.some((m) => /setting was changed/.test(m.subject) && !m.text.includes(K)), 'the Rabbi is told, without the key');
+  assert.equal((await post({ GA_ID: '' })).status, 200, 'an empty box goes back to the server original');
+  assert.ok(!(await applyOverrides(store, {}, SECRET)).includes('GA_ID'));
+  // new keys the Rabbi adds himself: any CAPITAL_NAME, but never one that runs the server itself
+  for (const bad of ['path', 'PATH', 'NODE_OPTIONS', 'DATABASE_URL', 'SESSION_SECRET', 'ADMIN_PASSWORD', 'LD_PRELOAD', 'AB', 'MY KEY']) assert.equal((await post({ [bad]: 'x'.repeat(12) })).status, 400, bad + ' is refused');
+  assert.equal((await post({ MY_NEW_KEY: 'line one\nline two' })).status, 400, 'one line only');
+  assert.equal((await post({ MY_NEW_KEY: 'brand-new-secret-value-123' })).status, 200);
+  const withNew = await a.call('GET', '/admin/api/site/settings');
+  const mine = withNew.json.items.find((i) => i.id === 'MY_NEW_KEY'); assert.ok(mine && mine.custom && mine.set && mine.hint.endsWith('-123') && !withNew.text.includes('brand-new-secret-value'), 'listed, hidden');
+  const envNew = {}; await applyOverrides(store, envNew, SECRET); assert.equal(envNew.MY_NEW_KEY, 'brand-new-secret-value-123', 'the website can read it by its name');
+  assert.equal((await post({ MY_NEW_KEY: '' })).status, 200); assert.ok(!(await a.call('GET', '/admin/api/site/settings')).json.items.some((i) => i.id === 'MY_NEW_KEY'), 'removed');
+  const care = (await a.call('GET', '/admin/api/site/care')).json; assert.equal(typeof care.uptimeMinutes, 'number'); assert.ok(care.changes.length >= 1);
+});
+
+test('the Rabbi is reminded every 4 weeks to download his own full backup, until he does', async () => {
+  const a = await admin(), st = () => a.call('GET', '/admin/api/backup/status').then((r) => r.json);
+  assert.notEqual((await client().call('GET', '/admin/api/backup/status')).status, 200, 'not without signing in');
+  const first = await st(); assert.equal(first.due, false); assert.equal(first.lastAt, null, 'the clock starts the first time');
+  await store.setKv('backup-since', { at: new Date(Date.now() - 40 * 864e5).toISOString() });
+  const late = await st(); assert.equal(late.due, true); assert.ok(late.days >= 40);
+  assert.equal((await a.call('GET', '/admin/api/backup')).status, 200, 'downloading it from the desk');
+  const done = await st(); assert.equal(done.due, false); assert.ok(done.lastAt);
+  await store.setKv('backup-downloaded', { at: new Date(Date.now() - 30 * 864e5).toISOString() });
+  assert.equal((await st()).due, true, 'again after 4 weeks');
+  assert.ok(fs.readFileSync(path.join(__dirname, 'admin', 'waiting.js'), 'utf8').includes("id: 'backup', path: '/backup/status', href: '/admin/api/backup'"), 'it waits on the desk');
+});
+
+test('maintenance requests run once, only from the fixed list', () => {
+  const { spawnSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'maint-'));
+  fs.writeFileSync(path.join(dir, 'req.txt'), '# a comment\nt1 status-report\nt2 nonsense-action\nbad!id restart-site\nt3 restart-site please\n\n');
+  const env2 = { ...process.env, REQUESTS: path.join(dir, 'req.txt'), STATE_DIR: path.join(dir, 'state'), MAINT_LOG: path.join(dir, 'log'), DRY_RUN: '1' };
+  const run = () => assert.equal(spawnSync('bash', [path.join(__dirname, '..', 'deploy-oracle', 'maintenance.sh')], { env: env2 }).status, 0);
+  run();
+  const log = fs.readFileSync(path.join(dir, 'log'), 'utf8');
+  assert.match(log, /request t1: status-report/); assert.match(log, /would run: systemctl restart kiddush/); assert.match(log, /unknown action 'nonsense-action'/); assert.doesNotMatch(log, /bad/);
+  assert.deepEqual(fs.readFileSync(path.join(dir, 'state', 'done'), 'utf8').trim().split('\n'), ['t1', 't2', 't3']);
+  run(); assert.equal(fs.readFileSync(path.join(dir, 'log'), 'utf8'), log, 'a request never runs twice');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('donate: other ways to give include a car, goods, time and skills, an employer match, an IRA gift and property, with a form to the Rabbi', async () => {
+  const d = (await client().call('GET', '/donate')).text;
+  for (const s of ['A car or other vehicle', 'Goods, food and equipment', 'Your time, skills and services', 'Matching gifts from your employer', 'A gift from your IRA', 'Real estate or a business', 'Tell us what you would like to give', '/forms/other-gift?kind=0']) assert.ok(d.includes(s), 'the donate page has: ' + s);
+  assert.ok(!(await client().call('GET', '/forms')).text.includes('other-gift'), 'the form is reached from the donate page, not listed with the sign-ups');
+  const page = await client().call('GET', '/forms/other-gift?kind=0'); assert.equal(page.status, 200); assert.ok(page.text.includes('data-form="other-gift"') && /<option value="0" selected>/.test(page.text), 'the kind is chosen for them');
+  const bad = await client().call('POST', '/api/site/forms/other-gift', { fields: { name: 'Dana' } }); assert.equal(bad.status, 400, 'the kind, the details and an email are needed');
+  const ok = await client().call('POST', '/api/site/forms/other-gift', { fields: { name: 'Dana Levi', email: 'dana@example.com', phone: '925-555-0100', kind: 0, details: 'A 2015 minivan in good shape', callme: true } });
+  assert.equal(ok.status, 200);
+  assert.ok(mails.some((m) => /Tell us what you would like to give/.test(m.subject) && /minivan/.test(m.text)), 'the Rabbi is emailed what they would like to give');
+  for (const L of ['he', 'ru']) assert.ok(/A car or other vehicle/.test((await client().call('GET', '/' + L + '/donate')).text) === false, L + ' donate page is translated');
+});
+
+test('the thank-you page after a gift: short, warm, and without the old "keeps open" wording', async () => {
+  const p = (await client().call('GET', '/donate/thank-you')).text;
+  assert.ok(p.includes('Thank you for being our partner') && p.includes('May G-d bless you'), 'a thank-you and a blessing');
+  assert.ok(!/keeps Jewish life|open to everyone|keeps everything open/.test(p), 'none of the old wording');
+});
+
+test('www goes to the main address (one page, not two, for Google), keeping the page', async () => {
+  const http = require('http'), port = new URL(base).port;
+  const get = (hostname, p) => new Promise((ok, no) => { const r = http.request({ host: '127.0.0.1', port, path: p, headers: { host: hostname } }, (res) => { res.resume(); ok({ status: res.statusCode, location: res.headers.location }); }); r.on('error', no); r.end(); });
+  const w = await get('www.site.test', '/learn/mezuzah?x=1'); assert.equal(w.status, 301); assert.equal(w.location, 'http://site.test/learn/mezuzah?x=1');
+  assert.equal((await get('site.test', '/learn/mezuzah')).status, 200, 'the main address itself is not redirected');
+});
+
+test('the CRM / Invitations updater: finds an app by its service, updates it from GitHub, reinstalls packages only when they changed, and puts it back (once) when it will not start', () => {
+  const { spawnSync, execFileSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'apps-'));
+  const sh = (cwd, ...a) => execFileSync('git', ['-c', 'user.name=t', '-c', 'user.email=t@example.org', ...a], { cwd, stdio: 'pipe' }).toString().trim();
+  const origin = path.join(dir, 'origin.git'), work = path.join(dir, 'work'), app = path.join(dir, 'app'), units = path.join(dir, 'units'), state = path.join(dir, 'state');
+  fs.mkdirSync(units); fs.mkdirSync(work);
+  sh(dir, 'init', '-q', '--bare', '-b', 'main', origin); sh(work, 'init', '-q', '-b', 'main'); sh(work, 'remote', 'add', 'origin', origin);
+  const commit = (file, text) => { fs.writeFileSync(path.join(work, file), text); sh(work, 'add', '-A'); sh(work, 'commit', '-q', '-m', text); sh(work, 'push', '-q', 'origin', 'main'); };
+  commit('package-lock.json', 'lock1'); commit('v.txt', '1');
+  sh(dir, 'clone', '-q', origin, app);
+  fs.writeFileSync(path.join(units, 'crm.service'), `[Service]\nUser=\nExecStart=/usr/bin/node ${path.join(app, 'v.txt')}\n`); // no WorkingDirectory: found through the start command
+  fs.writeFileSync(path.join(units, 'other.service'), '[Service]\nWorkingDirectory=/tmp\n');
+  const calls = path.join(dir, 'calls'), flag = path.join(dir, 'fail');
+  fs.writeFileSync(path.join(dir, 'systemctl'), `#!/bin/bash\necho "$@" >> ${calls}\n[ "$1" = is-active ] && [ -f ${flag} ] && exit 3\nexit 0\n`, { mode: 0o755 });
+  fs.writeFileSync(path.join(dir, 'npm'), `#!/bin/bash\necho "npm $@" >> ${calls}\nexit 0\n`, { mode: 0o755 });
+  const env2 = { ...process.env, SYSTEMD_DIR: units, SYSTEMCTL: path.join(dir, 'systemctl'), NPM_CMD: path.join(dir, 'npm'), STATE_DIR: state, APPS_LOG: path.join(dir, 'log'), APPS_REPOS_RE: 'origin\\.git$', SETTLE: '0' };
+  const run = (mode) => spawnSync('bash', [path.join(__dirname, '..', 'deploy-oracle', 'update-apps.sh'), mode], { env: env2 }).stdout.toString();
+  const log = () => (fs.existsSync(calls) ? fs.readFileSync(calls, 'utf8') : '');
+  const rep = run('report'); assert.ok(rep.includes('crm.service') && rep.includes(app) && /GitHub: reachable/.test(rep) && !rep.includes('other.service'), 'the report names the app, its folder and that GitHub answers');
+  fs.rmSync(calls, { force: true }); // the report only looked
+  run('update'); assert.equal(log(), '', 'nothing newer: nothing restarted');
+  commit('v.txt', '2'); run('update');
+  assert.equal(sh(app, 'log', '--format=%s', '-1'), '2', 'the new version is installed'); assert.match(log(), /restart crm\.service/); assert.doesNotMatch(log(), /npm ci/, 'packages are not reinstalled when they did not change');
+  commit('package-lock.json', 'lock2'); run('update'); assert.match(log(), /npm ci --omit=dev/, 'packages are reinstalled when the lock file changed');
+  fs.writeFileSync(flag, 'x'); commit('v.txt', '3'); run('update');
+  assert.equal(sh(app, 'log', '--format=%s', '-1'), 'lock2', 'a version that does not start is put back');
+  const before = log().split('restart crm.service').length; run('update'); run('update');
+  assert.equal(log().split('restart crm.service').length, before, 'the failed version is not tried again every 10 seconds');
+  fs.unlinkSync(flag); commit('v.txt', '4'); run('update'); assert.equal(sh(app, 'log', '--format=%s', '-1'), '4', 'a newer version is tried again');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('an app that runs from a plain copy (not linked to GitHub) is linked to its repository and brought up to date', () => {
+  const { spawnSync, execFileSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'adopt-'));
+  const sh = (cwd, ...a) => execFileSync('git', ['-c', 'user.name=t', '-c', 'user.email=t@example.org', ...a], { cwd, stdio: 'pipe' }).toString().trim();
+  const base = path.join(dir, 'gh'), work = path.join(dir, 'work'), app = path.join(dir, 'opt', 'crm'), units = path.join(dir, 'units'), state = path.join(dir, 'state');
+  for (const d of [base, work, units, path.join(app, 'data')]) fs.mkdirSync(d, { recursive: true });
+  sh(dir, 'init', '-q', '--bare', '-b', 'main', path.join(base, 'chabad-crm.git')); sh(work, 'init', '-q', '-b', 'main'); sh(work, 'remote', 'add', 'origin', path.join(base, 'chabad-crm.git'));
+  const commit = (file, text) => { fs.writeFileSync(path.join(work, file), text); sh(work, 'add', '-A'); sh(work, 'commit', '-q', '-m', text); sh(work, 'push', '-q', 'origin', 'main'); };
+  commit('package.json', '{}'); commit('package-lock.json', 'lock'); commit('index.js', 'new code');
+  fs.writeFileSync(path.join(app, 'package.json'), '{}'); fs.writeFileSync(path.join(app, 'index.js'), 'old copy'); fs.writeFileSync(path.join(app, 'data', 'crm.db'), 'the real data');
+  fs.writeFileSync(path.join(units, 'crm.service'), `[Service]\nExecStart=/usr/bin/node ${path.join(app, 'index.js')}\n`);
+  const calls = path.join(dir, 'calls');
+  fs.writeFileSync(path.join(dir, 'systemctl'), `#!/bin/bash\necho "$@" >> ${calls}\nexit 0\n`, { mode: 0o755 }); fs.writeFileSync(path.join(dir, 'npm'), `#!/bin/bash\necho "npm $@" >> ${calls}\nexit 0\n`, { mode: 0o755 });
+  const env2 = { ...process.env, SYSTEMD_DIR: units, SYSTEMCTL: path.join(dir, 'systemctl'), NPM_CMD: path.join(dir, 'npm'), STATE_DIR: state, APPS_LOG: path.join(dir, 'log'), APPS_GITHUB_BASE: base, SETTLE: '0' };
+  const run = (mode, extra = {}) => spawnSync('bash', [path.join(__dirname, '..', 'deploy-oracle', 'update-apps.sh'), mode], { env: { ...env2, ...extra } }).stdout.toString();
+  assert.match(run('report'), /not saved yet/); assert.match(run('report'), /crm\.service/, 'the report shows the service and its folder even when it is not linked');
+  run('update', { APPS_GITHUB_BASE: 'https://github.com/chabadlamorinda' }); assert.equal(fs.readFileSync(path.join(app, 'index.js'), 'utf8'), 'old copy', 'nothing is touched without the GitHub key');
+  assert.match(fs.readFileSync(path.join(dir, 'log'), 'utf8'), /not linked to GitHub yet/, 'it says what is needed');
+  run('update', { GITHUB_APPS_TOKEN: 'github_pat_' + 'a'.repeat(30) });
+  assert.equal(fs.readFileSync(path.join(app, 'index.js'), 'utf8'), 'new code', 'linked, and now the same as GitHub');
+  assert.equal(fs.readFileSync(path.join(app, 'data', 'crm.db'), 'utf8'), 'the real data', 'the data is untouched');
+  assert.match(fs.readFileSync(calls, 'utf8'), /restart crm\.service/); assert.match(fs.readFileSync(calls, 'utf8'), /npm ci/);
+  commit('index.js', 'newer code'); run('update', { GITHUB_APPS_TOKEN: 'github_pat_' + 'a'.repeat(30) });
+  assert.equal(fs.readFileSync(path.join(app, 'index.js'), 'utf8'), 'newer code', 'and from then on it follows GitHub');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('the GitHub key saved in the Rabbi area reaches the updater (decrypted on the server), and nothing is printed when none is saved', async () => {
+  const a = await admin(), { spawnSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'tok-'));
+  fs.writeFileSync(path.join(dir, 'env'), `DATABASE_URL=${pg.url}\nSESSION_SECRET=${SECRET}\n`);
+  const run = () => spawnSync('node', [path.join(__dirname, '..', 'deploy-oracle', 'get-token.js')], { env: { ...process.env, ENV_FILE: path.join(dir, 'env'), APP_DIR: path.join(__dirname, '..') } });
+  assert.equal(run().stdout.toString(), '', 'no key saved: nothing');
+  const T = 'github_pat_' + 'b'.repeat(30);
+  assert.equal((await a.call('POST', '/admin/api/site/settings', { values: { GITHUB_APPS_TOKEN: 'not a key' } }, { 'x-admin': '1' })).status, 400, 'a wrong-looking key is refused');
+  assert.equal((await a.call('POST', '/admin/api/site/settings', { values: { GITHUB_APPS_TOKEN: T } }, { 'x-admin': '1' })).status, 200);
+  assert.equal(run().stdout.toString(), T, 'the updater gets the key');
+  const list = await a.call('GET', '/admin/api/site/settings'); assert.ok(!list.text.includes(T), 'the screen never shows it back');
+  fs.rmSync(dir, { recursive: true, force: true });
 });

@@ -2,7 +2,7 @@
 title: When a Parent Has Dementia: Jewish Wisdom and Support
 description: Caring for a parent with Alzheimer's or dementia: honoring them with dignity, Jewish life at home or in memory care, prayer, and help for caregivers.
 category: Life cycle
-related: caregiver-support, caring-for-aging-parents, honoring-parents, bikur-cholim, mi-sheberach
+related: caregiver-support, moving-a-parent-to-assisted-living, jewish-life-in-senior-living-lamorinda, caring-for-aging-parents, honoring-parents, bikur-cholim, mi-sheberach
 local: Families in Lafayette, Moraga and Orinda: call Rabbi Yisroel Labkowski at 925-384-7242, or the Rebbetzin at 925-384-7241, to talk, ask for a visit, or add a name to our prayers.
 ---
 Watching a parent lose their memory is one of the hardest things a family can go through. The person you love is still there, and yet so much seems to slip away. Judaism has deep and gentle teachings for this time, and you do not have to face it alone.
@@ -13,7 +13,7 @@ When Moses came down from Mount Sinai and saw the golden calf, he broke the firs
 
 ## Honoring a parent who does not recognize you
 
-The mitzvah of honoring parents continues even when a parent cannot understand it. The Talmud tells of a man whose mother, in her confusion, embarrassed him in public, and he did not answer her harshly. Honor today may look like a calm voice, a familiar song, holding a hand, or making sure they are clean, comfortable and treated kindly by others.
+The mitzvah of honoring parents continues even when a parent cannot understand it. Maimonides rules that if a parent's mind becomes disturbed, a child should try to treat the parent according to their state of mind, with patience; if the child truly cannot bear it, he or she may step away and have others care for the parent. Honor today may look like a calm voice, a familiar song, holding a hand, or making sure they are clean, comfortable and treated kindly by others.
 
 At the same time, Jewish law does not ask a child to do the impossible alone. When care at home becomes too much, arranging good professional care is itself a way of honoring a parent. Ask the Rabbi about your situation.
 

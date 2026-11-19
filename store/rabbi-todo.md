@@ -1,5 +1,27 @@
 # The Rabbi's to-do list (things only you can do, at a computer)
 
+## The website now runs on your own free Oracle server (moved Nov 19)
+Done: server `website` (152.70.118.32, Oracle Always Free), jewishlamorinda.com switched at Cloudflare (A records, grey cloud), email works, data copied from Neon, Render suspended. Still to do: in Stripe turn OFF Settings → Customer emails → Successful payments; check the Stripe webhook shows 200; test gift of $5 (refund it). Every few weeks copy a backup off the server (Rabbi's desk → Download a full backup).
+
+Phone-only upkeep: Rabbi area → Website and app → **Keys and settings** (change a key; server care), and ask Claude in chat for a restart, updates, disk clean-up or a backup (it runs within about 30 seconds).
+
+**GitHub key for the CRM and Invitations apps (made Nov 19, 2026, expires in one year: about Nov 19, 2027).** A read-only fine-grained token (only chabad-crm and invitations, Contents: Read-only) saved in Keys and settings so the server can keep those two apps updated by itself. GitHub emails a warning before it expires. To renew: make a new one the same way (github.com/settings/personal-access-tokens/new) and paste it over the old one in Keys and settings. If updates ever stop, Keys and settings → Server care says "cannot reach GitHub".
+
+Original plan:
+Decision: no monthly fee, and email works there (Render's free plan blocks it). The full step-by-step is `deploy-oracle/MOVE-THE-WHOLE-WEBSITE.md` (create the server, install with one command carrying over the Render settings, copy the database from Neon, switch the address at Cloudflare; Render stays on as the fallback). Automatic updates from GitHub every 5 minutes. Claude walks through it when you say "I'm at a computer"; first you need an Oracle Cloud account (cloud.oracle.com, free, needs a card for identity only).
+
+## Where we are (Nov 16)
+Done: jewishlamorinda.com is connected and live (www jumps to it); Google Search Console verified and the sitemap sent; Google Analytics counting (G-N4642YEZXW). The old site chabadoflamorinda.com is untouched.
+**Next, in this order (each about 5 minutes):**
+1. Look the new site over on your phone with `store/launch-checklist.md`, and tell Claude what to fix.
+2. In Render, set **Auto-Deploy** to "After CI Checks Pass" (item 22) and check the plan: on a free plan the site falls asleep when nobody visits and the first visitor waits; the cheapest paid plan (about $7 a month) keeps it awake. Worth it now that people will find it through Google.
+3. Open the Rabbi area (jewishlamorinda.com/admin) → Setup checklist and tell Claude which lines are not green (email sending, database, Stripe, Facebook).
+3b. **Stripe (so donations really arrive):** in Render → Environment look for `STRIPE_SECRET_KEY` and `STRIPE_PUBLISHABLE_KEY` and tell Claude only "live", "test" or "missing" (never paste the keys). Then in Stripe: account activated with the bank account added, and the webhook `/api/stripe/webhook` (steps in `store/rabbi-setup.md`). Then a $5 test gift with your own card, refunded in Stripe.
+4. Bing Webmaster Tools (bing.com/webmasters): "Import from Google Search Console". Bing feeds ChatGPT search and Copilot.
+5. When happy: change the website link on the Google Business Profile to jewishlamorinda.com (do not make a second listing); then Claude moves the Google Ads grant to the new addresses (Google for Nonprofits and Ad Grants must list the new website: check with Google).
+6. Connect jewishlamorinda.org (two CNAME records at Cloudflare, grey cloud, then Render → Custom Domains); it forwards to the .com.
+7. Last, only when you decide: point chabadoflamorinda.com to the new site (old addresses already map to new pages).
+
 When you say "I'm at a computer", Claude goes through this list with you one item at a time, with every click explained from A to Z. Most items are copying a code from one website and pasting it into Render (where the website lives). Nothing here costs money unless it says so.
 
 Tick an item off by telling Claude it's done; Claude will check it works.
@@ -46,3 +68,9 @@ Tick an item off by telling Claude it's done; Claude will check it works.
 * Chanukah: date, time and place of the Grand Menorah Lighting, and any party, kids' event or Shabbat Chanukah dinner.
 * Yud Tes Kislev farbrengen (you said yes): what day, time and place, and is there an RSVP?
 * The rest of the open questions are in `store/content-to-confirm.md`.
+
+## Record the Chanukah blessings (audio)
+The guide /learn/chanukah-menorah plays Chabad.org's video and links to its audio of the blessings. To have your own voice on the page: record about a minute on your phone (the three blessings, Haneirot Halalu, Maoz Tzur), send it to Claude in the chat, and it goes on the page as a play button (`audio:` line in the guide).
+
+## Bandwidth (Render email, Nov 18)
+Render warned that 70% of the 5 GB monthly bandwidth is used. Going over costs $15 per 100 GB (15 cents a GB), so it is small money, and it resets each month. The site already compresses pages and keeps pictures in browsers (photos for a year since Nov 18). To cut it more: put Cloudflare in front (turn the cloud ORANGE on the two jewishlamorinda.com DNS records and set SSL/TLS to "Full (strict)"; Cloudflare then serves pictures and styles from its own copies), or move up a Render plan. Do the Cloudflare step after Chanukah, with Claude.

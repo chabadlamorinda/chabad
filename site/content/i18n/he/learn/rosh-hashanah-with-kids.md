@@ -2,7 +2,7 @@
 title: ראש השנה עם ילדים: תפוח בדבש והשופר
 description: ראש השנה לילדים: השנה החדשה בפשטות, השופר, תפוח בדבש, חלה עגולה, תשליך, כרטיסי ברכה ומעשה טוב אחד.
 category: Shabbat & holidays
-related: shofar, rosh-hashanah-simanim, tashlich, challah, holidays-with-toddlers
+related: shofar, yom-kippur-with-kids, rosh-hashanah-simanim, tashlich, challah, holidays-with-toddlers
 local: חב״ד למורינדה בלאפייט חוגג את ראש השנה עם משפחות מלאפייט, מוראגה ואורינדה, ובית הספר העברי של למורינדה מתקיים בימי ראשון 10:00 עד 12:00 לגילאי 3 עד 13. התאריכים והאירועים של השנה: chabadoflamorinda.com/holidays/rosh-hashanah או 925-384-7242.
 ---
 ראש השנה הוא יום ההולדת של העולם ותחילת השנה היהודית החדשה. לילדים הוא יכול להיות מתוק בכל מובן: תפוח בדבש, קול השופר והתחלה חדשה.

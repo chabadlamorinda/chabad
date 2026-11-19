@@ -26,7 +26,7 @@ If you are unsure whether you are Jewish under Jewish law, read [who is a Jew](/
 
 ## How it is done today
 
-An adult brit milah is a medical procedure and a mitzvah together. Chabad.org explains that adult circumcisions are more complex than infant ones, so you want a mohel with real experience with adults. A local anesthetic is typically used, and a licensed physician is often involved.
+An adult brit milah is a medical procedure and a mitzvah together. Adult circumcisions are more complex than infant ones, so you want a mohel with real experience with adults. A local anesthetic is typically used, and a licensed physician is often involved.
 
 Recovery takes some time, so plan a few days of rest, and follow the doctor's and mohel's instructions. Your own doctor should be part of the decision, especially if you have a medical condition or take blood thinners.
 

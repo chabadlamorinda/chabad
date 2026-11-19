@@ -2,7 +2,7 @@
 title: חלה: לחם השבת ומצוות הפרשת חלה
 description: מהי חלה, למה אוכלים שתי חלות בשבת, איך מברכים המוציא ואיך מקיימים את מצוות הפרשת חלה בברכה.
 category: Shabbat & holidays
-related: shabbat, baking-challah, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, blessings, jewish-women
+related: shabbat, the-manna, baking-challah, jewish-women-in-lamorinda, bat-mitzvah-projects, kiddush, blessings, jewish-women
 local: נשמח ללמד אתכם לאפות חלה ולהפריש חלה בברכה, ולעזור בכל שאלה בנושא. התקשרו 925-384-7242.
 ---
 חלה היא הלחם הקלוע שאוכלים בסעודות שבת וחג, וזה גם שמה של מצווה: הפרשת חתיכה קטנה מהבצק כשאופים לחם. שני הדברים מזכירים לנו שהאוכל שלנו, וכל מה שיש לנו, מגיע מה׳.

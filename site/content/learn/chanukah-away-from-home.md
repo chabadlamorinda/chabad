@@ -2,7 +2,7 @@
 title: Lighting the Menorah Away From Home: Guests, Travel, College, Hotels and Hospitals
 description: How to light the Chanukah menorah when you are not home: as a guest, on a trip, at college, in a hotel or a hospital, and when to ask the Rabbi.
 category: Shabbat & holidays
-related: chanukah-menorah, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
+related: chanukah-menorah, chanukah-alone, missed-lighting-the-menorah, passover-away-from-home, chanukah-at-work-and-college, chanukah-on-shabbat, kosher-when-traveling, shabbat-in-the-hospital
 local: Away from home over Chanukah, or hosting someone who is? Rabbi Yisroel Labkowski is happy to help families in Lafayette, Moraga and Orinda: 925-384-7242.
 ---
 Chanukah is a home holiday, but life does not always keep us home for eight nights. The good news: the menorah travels well. Here is the general guidance; for your own situation, ask the Rabbi.
@@ -40,4 +40,4 @@ Any safe arrangement of candles in a row, at the same height and far enough apar
 Lighting before nightfall is a question of details; sometimes it is allowed from a certain point in the late afternoon with enough fuel to burn into the night. Ask the Rabbi for your case. Lighting late at night when you return is usually the better option.
 
 ### Does an electric menorah count?
-Electric lights do not fulfill the mitzvah, so the blessings are not said over them, but where real flames are forbidden they still proclaim the miracle. You can also light [tonight's candles online](/menorah) with the blessings.
+Electric lights do not fulfill the mitzvah, so the blessings are not said over them, but where real flames are forbidden they still proclaim the miracle. You can also see [tonight's candles online](/menorah), but this does not replace lighting a real menorah.

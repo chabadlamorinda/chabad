@@ -2,7 +2,7 @@
 title: Who Were the Maccabees? Mattityahu, Judah, Yehudit and the Courage of Chanukah
 description: Who the Maccabees were: Mattityahu the priest and his sons, Judah the Maccabee, the Greek decrees, the Temple relit, Yehudit, and what it means today.
 category: Shabbat & holidays
-related: chanukah-story, women-and-chanukah, lessons-of-chanukah, the-holy-temple, jewish-pride, jewish-history-overview
+related: chanukah-story, chanukah-and-jewish-pride, after-the-maccabees, chana-and-her-seven-sons, who-was-antiochus, decrees-of-the-greeks, which-chanukah-miracle, women-and-chanukah, lessons-of-chanukah, the-holy-temple, jewish-pride, jewish-history-overview
 local: Hear the story told to children and grown-ups at Chabad of Lamorinda's Chanukah celebrations for Lafayette, Moraga and Orinda; details on the Chanukah page or at 925-384-7242.
 ---
 Every Chanukah we thank G-d for "the battles" as well as the miracle of the oil. Who fought them? The Maccabees were a family of priests from a small town who refused to let Judaism be erased, and whose courage, against all odds, gave us the holiday we still celebrate about 2,200 years later.
@@ -25,7 +25,7 @@ After about three years of fighting, the Maccabees retook Jerusalem. They cleare
 
 ## Yehudit, the heroine of Chanukah
 
-Jewish tradition also remembers a woman. Yehudit, a widow from a besieged town, went to the camp of the enemy general, fed him salty cheese and plenty of wine, and when he fell into a deep sleep, cut off his head. Leaderless, the army fled. Because of her, women have a special place on Chanukah: the custom to rest from work while the candles burn, and the custom of eating dairy foods. See [Chanukah foods](/learn/chanukah-foods) and [Jewish women](/learn/jewish-women).
+Jewish tradition also remembers a woman. Yehudit, a daughter of the Hasmonean family, went to the camp of the enemy general, fed him salty cheese and plenty of wine, and when he fell into a deep sleep, cut off his head. Leaderless, the army fled. Because of her, women have a special place on Chanukah: the custom to rest from work while the candles burn, and the custom of eating dairy foods. See [Chanukah foods](/learn/chanukah-foods) and [Jewish women](/learn/jewish-women).
 
 ## What their courage means today
 

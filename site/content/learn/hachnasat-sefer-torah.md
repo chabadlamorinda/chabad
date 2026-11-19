@@ -2,7 +2,7 @@
 title: Hachnasat Sefer Torah: Dedicating a New Torah Scroll
 description: Welcoming a new Torah scroll: the mitzvah to write a Torah, sponsoring one in honor or memory of loved ones, and the joyful celebration with dancing.
 category: Prayer & Torah
-related: torah, torah-reading, letter-in-a-torah, 613-mitzvot
+related: torah, giving-to-build-a-synagogue, sefer-torah, torah-reading, letter-in-a-torah, 613-mitzvot
 local: Families in Lafayette, Moraga, Orinda and the East Bay who would like to talk about dedicating a Torah scroll can call Rabbi Yisroel Labkowski at 925-384-7242.
 ---
 Hachnasat Sefer Torah means "bringing in a Torah scroll." It is the joyous day when a new, handwritten Torah is completed and welcomed into its home with singing and dancing. Few celebrations in Jewish life are as moving.

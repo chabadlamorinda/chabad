@@ -2,22 +2,22 @@
 title: What Is Tahara? The Chevra Kadisha and Preparing a Jewish Body for Burial
 description: What is tahara and the Chevra Kadisha? How a Jewish body is washed, dressed in white shrouds and watched until burial. Call the Rabbi first, 925-384-7242.
 category: Mourning & remembrance
-related: jewish-funeral, aninut, cremation-jewish-view, when-a-loved-one-is-dying, shiva
+related: jewish-funeral, plain-wooden-casket-and-shrouds, autopsy-jewish-view, aninut, cremation-jewish-view, when-a-loved-one-is-dying, shiva
 local: If someone has died or is dying, call Rabbi Labkowski right away at 925-384-7242. If you would like to learn about helping, ask about it too.
 ---
 Tahara (טָהֳרָה, "purification") is the Jewish ritual of washing and dressing a person who has died, done by the Chevra Kadisha (חֶבְרָה קַדִּישָׁא, the "holy society") before burial. The body is cleansed, dressed in plain white shrouds and placed in a simple casket, as an act of deep respect called a *chesed shel emet*, "a true kindness," because it can never be repaid.
 
-If someone you love has just died, please call Rabbi Labkowski at 925-384-7242 first, before anything else. He will walk you through each step with gentleness. This guide is for families in Lafayette, Moraga, Orinda and the East Bay who want to know what to expect and what to ask for.
+If someone you love has just died, please call Rabbi Labkowski at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241) first, before calling the burial society or a funeral home. He will walk you through each step with gentleness and make the arrangements. This guide is for families in Lafayette, Moraga, Orinda and the East Bay who want to know what to expect and what to ask for.
 
 ## What the Chevra Kadisha is
 
-The Chevra Kadisha is a society of volunteers who care for the deceased. Chabad.org notes that its members usually serve without pay, men caring for men and women for women out of modesty, and that serving is considered a mark of good character. Societies like it go back to Talmudic times and were often among the first institutions founded in a new Jewish community.
+The Chevra Kadisha is a society of volunteers who care for the deceased. Its members usually serve without pay, men caring for men and women for women out of modesty, and serving is considered a mark of good character. Societies like it go back to Talmudic times and were often among the first institutions founded in a new Jewish community.
 
 The volunteers handle the body with great care, uncovering only what is needed, and they ask the deceased for forgiveness if anything is done that might be disrespectful.
 
 ## What happens in a tahara
 
-Chabad.org describes it in simple terms: a gentle cleansing, a ritual washing, dressing the body in shrouds, and the recitation of special prayers asking G-d to lift the soul to eternal rest. It is done in private and with great dignity, and family members are not asked to take part.
+In simple terms, it involves a gentle cleansing, a ritual washing, dressing the body in shrouds, and the recitation of special prayers asking G-d to lift the soul to eternal rest. It is done in private and with great dignity, and family members are not asked to take part.
 
 ## The shrouds and casket
 
@@ -31,9 +31,9 @@ A *shomer* (שׁוֹמֵר, "guard") stays with the body from death until burial
 
 ## What to do right away
 
-1. **Call Rabbi Labkowski** at 925-384-7242.
+1. **Call Rabbi Labkowski first,** at 925-384-7242, before the Chevra Kadisha or a funeral home. He will guide you through every step and make the arrangements.
 2. **Tell the hospital or hospice** that the Chevra Kadisha will care for the body, and ask them to wait for instructions. A Jewish person should accompany the body if it is moved.
-3. **Tell the funeral director** you need tahara, a shomer, tachrichim and a plain kosher casket. Chabad.org notes that some funeral homes do not offer tahara unless the family asks.
+3. **Tell the funeral director** you need tahara, a shomer, tachrichim and a plain kosher casket. Some funeral homes do not offer tahara unless the family asks.
 4. **Avoid embalming, cremation and autopsy** unless the law requires an autopsy; if so, ask the Rabbi at once. Embalming and cremation are against Jewish law.
 5. **Plan the funeral soon.** Burial is traditionally as soon as possible, generally within 24 hours, with delay allowed only for the honor of the deceased.
 

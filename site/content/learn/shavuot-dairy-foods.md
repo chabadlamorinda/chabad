@@ -2,7 +2,7 @@
 title: Why We Eat Dairy on Shavuot: Customs, Reasons and Favorite Dishes
 description: Why Jews eat dairy foods like cheesecake and blintzes on Shavuot, the reasons behind the custom, and how to serve dairy and meat meals properly.
 category: Shabbat & holidays
-related: ten-commandments, shavuot-for-beginners, shavuot-night-learning, meat-and-milk, counting-the-omer, torah
+related: ten-commandments, shavuot-with-kids, shavuot-for-beginners, shavuot-night-learning, meat-and-milk, counting-the-omer, torah
 local: Hear the Ten Commandments on Shavuot at Chabad of Lamorinda in Lafayette. See chabadoflamorinda.com/holidays/shavuot and chabadoflamorinda.com/events, or call 925-384-7242.
 ---
 Jews eat dairy foods on Shavuot, like cheesecake, blintzes and cheese kreplach, as a sweet reminder of receiving the Torah at Mount Sinai. Many families have a dairy meal or kiddush and also a festive meat meal, keeping them properly separate.

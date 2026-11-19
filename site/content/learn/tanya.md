@@ -2,7 +2,7 @@
 title: What Is the Tanya? The Foundational Book of Chabad Chassidus
 description: What the Tanya is, who wrote it, its main ideas about the soul and the inner struggle, and how to begin studying it.
 category: Prayer & Torah
-related: chassidus, yetzer-hara, chabad, kabbalah, the-rebbe
+related: chassidus, tanya-learning-plan, the-two-souls-explained, tanya-chapter-one-explained, tanya-glossary-for-beginners, the-alter-rebbe, daily-tanya-cycle, how-to-start-learning-tanya, the-beinoni, fear-of-g-d, zohar, sefirot, yetzer-hara, chabad, kabbalah, the-rebbe
 local: Interested in learning Tanya? Call Rabbi Labkowski at 925-384-7242 and we will help you start studying, at your own pace.
 ---
 The Tanya is the foundational book of Chabad Chassidic philosophy, written by Rabbi Schneur Zalman of Liadi and first published in 1796. It is a practical guide to the human soul, explaining how every person can serve G-d with both mind and heart, even while struggling with everyday challenges.

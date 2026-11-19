@@ -2,7 +2,7 @@
 title: Jewish Jewelry: Star of David, Chai and Hebrew Name Necklaces
 description: The meaning of Jewish jewelry like the Star of David, chai and Hebrew name necklaces, and guidelines for jewelry with holy words and on Shabbat.
 category: Jewish home
-related: star-of-david, chai-symbol, jewish-symbols, jewish-pride
+related: star-of-david, jewish-wedding-ring, chai-symbol, jewish-symbols, jewish-pride
 local: Want help writing your Hebrew name for a necklace or finding the right Hebrew spelling? Call Chabad of Lamorinda at 925-384-7242.
 ---
 Jewish jewelry, like a Star of David, a chai or a Hebrew name necklace, is a beautiful way to show Jewish pride and keep a reminder of who you are close to your heart. Jewish law has a few guidelines, especially for jewelry with holy words and for Shabbat.
@@ -54,4 +54,4 @@ The hamsa is a popular folk symbol in many Jewish communities, but it does not c
 It should be covered or removed. Many people tuck it under their clothing. To avoid the issue, choose a design without G-d's name.
 
 ### Can a man wear Jewish jewelry?
-Yes. Many men wear a chai, Star of David or a ring. Jewish tradition encourages modest, dignified dress, and the Torah forbids men and women from wearing clothing meant for the other gender.
+Many men wear a simple chai, Star of David or ring, but customs differ about what jewelry suits a man, so ask the Rabbi. Jewish tradition encourages modest, dignified dress, and the Torah forbids men and women from wearing clothing meant for the other gender.

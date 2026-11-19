@@ -2,7 +2,7 @@
 title: מהו היצר הרע? היהדות על המאבק הפנימי ואיך מנצחים בו
 description: מהו היצר הרע? ההשקפה היהודית על המאבק הפנימי, שתי הנפשות בתניא וכלים מעשיים מהחסידות. הצטרפו לשיעור.
 category: Jewish ideas
-related: changing-a-bad-habit, the-soul, tanya, free-will, why-bad-things-happen
+related: changing-a-bad-habit, tanya-on-temptation, why-do-i-still-struggle, tanya-unwanted-thoughts, animal-soul-not-evil, the-two-souls-explained, the-beinoni, the-soul, tanya, free-will, why-bad-things-happen
 local: הצטרפו לשיעור התניא ולמדו להתמודד עם המאבקים הפנימיים: ראו /programs/adult-education או התקשרו 925-384-7242.
 ---
 היצר הרע הוא הקול הפנימי שמושך אדם לאנוכיות, עצלות או מעשה רע. היהדות אינה רואה בו שטן שמחוץ לנו אלא חלק מטבע האדם שאנחנו אמורים לשלוט בו ואף להפוך אותו לטוב.
@@ -35,7 +35,7 @@ local: הצטרפו לשיעור התניא ולמדו להתמודד עם המ�
 ## הצעד הבא
 
 - קראו הלאה [שינוי הרגל רע](/learn/changing-a-bad-habit) לגישה המעשית.
-- הצטרפו לשיעור התניא: ראו [חינוך מבוגרים](/programs/adult-education) ללפאייט, מורגה ואורינדה.
+- הצטרפו לשיעור התניא: ראו [חינוך מבוגרים](/programs/adult-education) ללפאייט, מוראגה ואורינדה.
 - דברו בפרטיות: [שיחה עם הרב](/help/talk-to-the-rabbi) או 925-384-7242.
 
 ## שאלות נפוצות

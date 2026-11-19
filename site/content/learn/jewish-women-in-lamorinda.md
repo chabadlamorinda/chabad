@@ -2,7 +2,7 @@
 title: Jewish Women in Lafayette, Moraga and Orinda: The Jewish Women's Circle and More
 description: Jewish women in Lafayette, Moraga and Orinda: the Jewish Women's Circle, challah bakes and workshops, Shabbat candles, and a Rebbetzin to talk to.
 category: Lamorinda
-related: jewish-women, shabbat-candles, challah, eishet-chayil
+related: jewish-women, mass-challah-bake, shabbat-candles, challah, eishet-chayil
 local: Join the Jewish Women's Circle list at chabadoflamorinda.com/forms/newsletter (tick "Women's Circle") or call Rebbetzin Tzipora Labkowski at 925-384-7241.
 ---
 Jewish women in Lafayette, Moraga and Orinda are busy: careers, kids, carpools, parents to care for. Sometimes what we need most is an evening out with friends, something creative in our hands, and a little inspiration to take home. That is what the **Jewish Women's Circle** at Chabad of Lamorinda is all about.

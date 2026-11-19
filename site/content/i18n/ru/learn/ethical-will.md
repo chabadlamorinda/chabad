@@ -2,7 +2,7 @@
 title: Этическое завещание: как написать еврейское письмо-наследие
 description: Что такое этическое завещание (цаваа), его корни в Торе и простые шаги, чтобы написать письмо, передающее ваши ценности семье.
 category: Life cycle
-related: jewish-parenting, planning-a-jewish-funeral-in-advance, yahrzeit, honoring-parents, tzedakah
+related: jewish-parenting, talking-to-your-children-about-your-will, donor-advised-fund-successor-chabad, leaving-chabad-in-your-will, true-stories-of-jewish-legacy-gifts, choni-and-the-carob-tree, recording-your-family-story, leaving-a-jewish-legacy-gift, grandparents-at-a-bar-mitzvah, planning-a-jewish-funeral-in-advance, yahrzeit, honoring-parents, tzedakah
 local: Хотите помощи в работе над этическим завещанием или в подготовке к концу жизни по еврейской традиции? Звоните раввину Лабковскому: 925-384-7242, или зайдите на chabadoflamorinda.com/help/talk-to-the-rabbi.
 ---
 Этическое завещание - это письмо, в котором вы передаете свои ценности, мудрость, благословения и надежды детям и близким. Обычное завещание передает имущество, а этическое - то, кем вы являетесь.

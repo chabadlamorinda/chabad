@@ -2,7 +2,7 @@
 title: Jewish Blessings Over Food: Which Bracha to Say and When
 description: A simple guide to Jewish blessings (brachot): the six blessings before food, the blessings after eating, Shehecheyanu, and how to say them.
 category: Prayer & Torah
-related: prayer, blessing-on-blossoming-trees, seven-species, blessings-after-food, blessings-on-nature, challah, kiddush, modeh-ani
+related: prayer, tanya-on-gratitude, tanya-on-speech, teaching-kids-blessings-on-food, teaching-kids-the-chanukah-blessings, amen, eating-as-a-mitzvah, kosher-beer-and-spirits, blessing-on-blossoming-trees, seven-species, blessings-after-food, blessings-on-nature, challah, kiddush, modeh-ani
 local: We are happy to teach you the blessings, answer questions about which bracha to say, and give you a blessings card. Call 925-384-7242.
 ---
 A bracha (blessing) is a short prayer Jews say before and after eating, before doing a mitzvah, and at special moments in life. Saying a blessing turns an ordinary act, like eating an apple, into a moment of connection with G-d.
@@ -41,7 +41,7 @@ An after-blessing is said when you ate at least an olive-sized amount (about one
 
 ## Shehecheyanu: the blessing for new things
 
-This blessing thanks G-d for bringing us to a special moment. It is said on eating a new seasonal fruit for the first time that year, wearing a significant new garment, on the first night of most holidays, and other joyous milestones.
+This blessing thanks G-d for bringing us to a special moment. It is said on eating a new seasonal fruit for the first time that year, wearing a significant new garment (many say it; Chabad custom is generally not to say it over clothing, so ask the Rabbi), on the first night of most holidays, and other joyous milestones.
 
 **Transliteration:** Baruch atah Ado-nai, Elo-heinu melech ha'olam, shehecheyanu v'kiy'manu v'higiyanu lazman hazeh.
 

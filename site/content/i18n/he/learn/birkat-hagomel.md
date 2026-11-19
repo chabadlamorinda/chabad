@@ -2,7 +2,7 @@
 title: ברכת הגומל: להודות לה׳ אחרי שיצאנו מסכנה
 description: הברכה שאומרים אחרי החלמה ממחלה או מניתוח, נסיעה מסוכנת או תאונה: מי מברך, מתי, הנוסח, ואיך מברכים בבית הכנסת.
 category: Prayer & Torah
-related: hakarat-hatov, miracles-jewish-view, prayer-before-surgery, tefilat-haderech, torah-reading
+related: hakarat-hatov, nishmat, miracles-jewish-view, prayer-before-surgery, tefilat-haderech, torah-reading
 local: רוצים לברך ברכת הגומל? בואו לתפילות שבת בבית חב״ד למורינדה בלאפייט, או התקשרו לרב לבקובסקי בטלפון 925-384-7242 כדי לתאם.
 ---
 כשאנחנו יוצאים בשלום ממשהו מסוכן, היהדות נותנת לנו דרך להגיד תודה בקול, מול הקהל: **ברכת הגומל**, ברכת ההודיה. היא הופכת הקלה להכרת תודה, ומאפשרת לחברים לשמוח איתנו.

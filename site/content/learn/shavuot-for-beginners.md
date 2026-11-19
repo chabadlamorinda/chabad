@@ -2,7 +2,7 @@
 title: Shavuot for Beginners: The Ten Commandments, Dairy Foods and Learning All Night
 description: New to Shavuot? What the holiday celebrates, why we stand for the Ten Commandments, eat dairy, decorate with greenery and stay up learning.
 category: Shabbat & holidays
-related: ten-commandments, shavuot-dairy-foods, shavuot-night-learning, counting-the-omer, torah
+related: ten-commandments, shavuot-with-kids, book-of-ruth, sivan, shavuot-dairy-foods, shavuot-night-learning, counting-the-omer, torah
 local: Bring the whole family, babies included, to hear the Ten Commandments; everyone from Lafayette, Moraga and Orinda is welcome. Call Rabbi Labkowski at 925-384-7242 to hear what is planned.
 ---
 Shavuot is the holiday that celebrates G-d giving the Torah to the Jewish people at Mount Sinai. It comes seven weeks after Passover, and it is marked by hearing the Ten Commandments in synagogue, eating dairy foods, decorating with flowers and greenery, and learning Torah. It is a wonderful holiday for families, because children play a special role.
@@ -33,7 +33,7 @@ Many people stay up the first night of Shavuot learning Torah. A Midrash says th
 
 ## Candles and Yizkor
 
-We light candles before the holiday begins, from an existing flame. On the second day, Yizkor is said; see [Yizkor](/learn/yizkor). Some also read the Book of Ruth, a story about a woman who chose the Torah and the Jewish people of her own free will.
+We light candles before the holiday begins on the first night, and after nightfall on the second night from an existing flame. On the second day, Yizkor is said; see [Yizkor](/learn/yizkor). Some also read the Book of Ruth, a story about a woman who chose the Torah and the Jewish people of her own free will.
 
 ## Take the next step
 

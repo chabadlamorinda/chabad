@@ -2,7 +2,7 @@
 title: Kippah (Yarmulke): Why Jewish Men Cover Their Heads
 description: What a kippah is, why Jewish men and boys wear one, when to wear it, what it means, and whether guests should wear one in synagogue.
 category: Prayer & Torah
-related: tallit, tzitzit, prayer, jewish-pride
+related: tallit, beards-and-peyot, tzitzit, prayer, jewish-pride
 local: Need a kippah for yourself, your son or a simcha? Call Chabad of Lamorinda at 925-384-7242 and we will gladly help.
 ---
 A kippah, also called a yarmulke, is the small cap worn by Jewish men and boys as a sign of reverence for G-d. It reminds the wearer, and everyone around him, that there is always Someone above.

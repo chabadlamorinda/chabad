@@ -2,7 +2,7 @@
 title: אובדן הריון: נחמה יהודית אחרי הפלה או לידה שקטה
 description: להורים שאיבדו הריון או תינוק: נחמה יהודית, מה אומרת ההלכה על קבורה ואבלות, איך לזכור ואיך חברים יכולים לעזור.
 category: Mourning & remembrance
-related: grief-and-hard-times, infertility-jewish-support, tehillim, comforting-mourners
+related: grief-and-hard-times, losing-a-child, infertility-jewish-support, tehillim, comforting-mourners
 local: הורים בלאפייט, מוראגה, אורינדה ובאיסט ביי יכולים להתקשר לרב ישראל או לרבנית ציפורה לבקובסקי בכל עת, בפרטיות: 925-384-7242.
 ---
 אובדן הריון או תינוק הוא צער עמוק, ולעיתים קרובות שקט. הורים רבים מרגישים לבד, והאנשים סביבם לא יודעים מה לומר. היהדות מכירה באובדן הזה, ומציעה נחמה והדרכה.

@@ -2,14 +2,14 @@
 title: Birkat HaIlanot: The Once-a-Year Blessing on Blossoming Trees (and Where to Say It in Lamorinda)
 description: Birkat HaIlanot is the blessing said once a year on blossoming fruit trees. Learn the words, the timing and how to say it in Lafayette, Moraga or Orinda.
 category: Lamorinda
-related: blessings-on-nature, tu-bishvat-seder, blessings, shehecheyanu, jewish-year-in-lamorinda
+related: blessings-on-nature, seasons-of-jewish-life-in-lamorinda, jewish-hiking-in-the-east-bay-hills, nissan, tu-bishvat-seder, blessings, shehecheyanu, jewish-year-in-lamorinda
 local: Not sure when to say it this year? Ask Rabbi Labkowski at 925-384-7242.
 ---
 Birkat HaIlanot (בִּרְכַּת הָאִילָנוֹת) is the blessing on blossoming trees, said once a year when you first see fruit trees in bloom, traditionally during the Hebrew month of Nissan in the spring. It thanks G-d "Who withheld nothing from His world and created in it good creatures and good trees, to give people pleasure." In Lafayette, Moraga and Orinda, where fruit trees blossom early, it is a lovely family outing.
 
 ## What is the blessing on trees?
 
-It is a short blessing of gratitude for the beauty of creation. Chabad.org teaches that the blessing is said once a year, over fruit-bearing trees that are in blossom, and that it is not said over a tree that has no fruit. The text, in transliteration: *Baruch atah Adonai, Eloheinu melech ha'olam, she'lo chisar ba'olamo davar, u'vara vo briyot tovot v'ilanot tovim, l'hanot bahem bnei adam.*
+It is a short blessing of gratitude for the beauty of creation. The blessing is said once a year, over fruit-bearing trees that are in blossom, and it is not said over a tree that has no fruit. The text, in transliteration: *Baruch atah Adonai, Eloheinu melech ha'olam, she'lo chisar ba'olamo davar, u'vara vo briyot tovot v'ilanot tovim, l'hanot bahem bnei adam.*
 
 ## When do you say it?
 

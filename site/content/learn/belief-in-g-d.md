@@ -2,7 +2,7 @@
 title: Belief in G-d in Judaism: What Jews Believe About G-d
 description: What Judaism teaches about G-d, from oneness and creation to Divine Providence, and how faith grows through questions, learning and mitzvot.
 category: Jewish ideas
-related: shema, thirteen-principles-of-faith, talking-to-kids-about-g-d, torah-and-science, why-pray, shemot-names-of-g-d, purpose-of-life, the-soul, why-mitzvot, ten-commandments
+related: shema, why-jews-write-g-d, loving-g-d, shechinah, doubts-in-faith, thirteen-principles-of-faith, talking-to-kids-about-g-d, torah-and-science, why-pray, shemot-names-of-g-d, purpose-of-life, the-soul, why-mitzvot, ten-commandments
 local: Have questions about G-d and faith? Talk them through with Rabbi Labkowski at 925-384-7242, or explore our adult education classes at chabadoflamorinda.com/programs/adult-education.
 ---
 Judaism teaches that there is one G-d, who created the world, keeps it in existence every moment, and cares about each person. Belief in G-d is the foundation of the Torah and the first of the Ten Commandments: "I am the L-rd your G-d."
@@ -21,7 +21,7 @@ Maimonides listed these ideas among his Thirteen Principles of Faith, which appe
 
 ## Creation is happening now
 
-Chassidic teaching adds a beautiful idea. G-d did not just create the world long ago and step back. G-d's creative word flows into every creature at every moment, keeping it in existence. If that flow stopped for an instant, the world would cease to be.
+The Tanya, in its section called "The Gate of Unity and Faith," adds a beautiful idea. G-d did not just create the world long ago and step back. G-d's creative word flows into every creature at every moment, keeping it in existence. If that flow stopped for an instant, the world would cease to be.
 
 This means G-d is not far away. G-d is present right here, in every moment of your life.
 
@@ -31,7 +31,7 @@ The Baal Shem Tov taught that G-d directs every detail of creation, even the way
 
 ## Faith and questions
 
-In Hebrew, faith is *emunah*. Jewish tradition teaches that every Jew has faith deep within the soul, even if it is sometimes hidden. Learning and experience help bring it into the open.
+In Hebrew, faith is *emunah*. The Talmud calls the Jewish people "believers, children of believers" (Shabbat 97a): every Jew has faith deep within the soul, even if it is sometimes hidden. Learning and experience help bring it into the open.
 
 Questions are not the opposite of faith. Abraham questioned G-d. Moses asked to understand G-d's ways. The Talmud is full of debate. Asking honest questions and seeking answers is a very Jewish way to grow.
 

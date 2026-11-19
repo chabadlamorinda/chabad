@@ -2,7 +2,7 @@
 title: The Morning Service (Shacharit): A First-Timer's Guide
 description: Walk through Shacharit, the Jewish morning service, step by step: blessings, psalms, Shema, Amidah, Torah reading and the closing prayers.
 category: Prayer & Torah
-related: first-time-at-synagogue, morning-blessings, shema, amidah, torah-reading
+related: first-time-at-synagogue, tzedakah-before-prayer, shabbat-morning-services-explained, tachanun, barchu, morning-blessings, shema, amidah, torah-reading
 local: Join our weekday morning minyan, or call Rabbi Labkowski at 925-384-7242 and we will show you where we are in the prayer book.
 ---
 Shacharit is the Jewish morning service, said every day of the year. It follows a set order, so once you know the map, you can find your place at any minyan. A weekday service takes about half an hour to 45 minutes; on Shabbat it is longer, with the Torah reading and a talk. You do not need Hebrew: a prayer book with English will carry you through.
@@ -13,7 +13,7 @@ Chabad prays from the text called **Nusach Ari**, a version arranged around the 
 
 ## The order of the service
 
-1. **Morning blessings.** [Modeh Ani](/learn/modeh-ani), washing the hands, Asher Yatzar, the blessings on the Torah, and the [morning blessings](/learn/morning-blessings). On weekdays, men put on [tefillin](/learn/tefillin) first; many also wear a tallit and tzitzit.
+1. **Morning blessings.** [Modeh Ani](/learn/modeh-ani), washing the hands, Asher Yatzar, the blessings on the Torah, and the [morning blessings](/learn/morning-blessings). On weekdays, men put on a tallit and [tefillin](/learn/tefillin) (in Chabad, a tallit gadol is worn after marriage; all men wear tzitzit).
 2. **Pesukei Dezimra ("verses of song").** Psalms of praise that warm the heart before we pray. They include [Ashrei](/learn/ashrei) and Psalm 150, and end with the blessing *Yishtabach*.
 3. **The Shema and its blessings.** The call to the congregation, *Barchu*, then blessings about creation and love, and the [Shema](/learn/shema) itself, the Jewish declaration of faith. This is the heart of the first half.
 4. **The Amidah.** The silent standing prayer of requests and thanks. Read about it in our guide to the [Amidah](/learn/amidah).
@@ -41,7 +41,7 @@ Chabad of Lamorinda's morning services are Sunday 8:00 AM and Monday to Friday 6
 ## Common questions
 
 ### What is Shacharit?
-Shacharit is the Jewish morning prayer service, said every day. It can be said from sunrise until about midday, and earlier is better.
+Shacharit is the Jewish morning prayer service, said every day. It can be said from sunrise. The ideal is to finish by the end of the first third of the day (the fourth halachic hour), and if that time was missed it may be said until midday. Ask the Rabbi for the exact times.
 
 ### What is the order of the Shacharit service?
 Morning blessings, Pesukei Dezimra (psalms of praise), the Shema and its blessings, the Amidah, then on Mondays, Thursdays and Shabbat the Torah reading, and finally the closing prayers including Aleinu.
@@ -53,7 +53,7 @@ A weekday service takes around half an hour to 45 minutes. Shabbat morning is lo
 It is the order and wording of prayer based on the teachings of the Arizal, the sixteenth-century Kabbalist. Chabad follows it in its prayer book, which was arranged by Rabbi Schneur Zalman of Liadi.
 
 ### What do you wear to morning prayers?
-Men wear a tallit and, on weekdays, tefillin. Everyone is welcome in modest, ordinary clothing.
+Men wear tefillin on weekdays and a tallit (in Chabad, after marriage). Everyone is welcome in modest, ordinary clothing.
 
 ### Do I have to read Hebrew to pray Shacharit?
 No. Most prayer books have English beside the Hebrew, and you may also pray in your own words.

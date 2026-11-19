@@ -2,7 +2,7 @@
 title: Простить себя: что иудаизм говорит о чувстве вины и новом начале
 description: Тшува полна, и Б-г прощает. Почему же так трудно простить себя? Вина, которая помогает, и вина, которая парализует, совет Тании и практические шаги.
 category: Jewish ideas
-related: teshuvah, changing-a-bad-habit, forgiveness-and-making-peace, simcha, mental-health-jewish-view
+related: teshuvah, starting-over-after-you-fall, tanya-on-forgiving-others, sadness-versus-bitterness, changing-a-bad-habit, forgiveness-and-making-peace, simcha, mental-health-jewish-view
 local: Несете что-то тяжелое? Раввин Исроэль и ребецн Ципора Лабковские выслушают наедине любого жителя Лафайетта, Мораги и Оринды: 925-384-7242.
 ---
 Вы сказали слова, которые нельзя взять назад, или сделали выбор, который кого-то ранил, и уже извинились, исправили, что могли, и решили: никогда больше. И все же ночью это возвращается. Иудаизм многое говорит о прощении других, и не меньше о задаче потруднее: простить себя.

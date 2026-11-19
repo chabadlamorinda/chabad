@@ -2,7 +2,7 @@
 title: Infertility: Jewish Support, Prayer and Guidance
 description: For couples longing for a child: Jewish faith and comfort, prayers and customs, medical treatment like IVF and the questions to ask a rabbi, and support.
 category: Life cycle
-related: jewish-pregnancy, pregnancy-loss, jewish-adoption, tehillim, mikvah, bitachon
+related: jewish-pregnancy, hannah-and-her-prayer, pregnancy-loss, jewish-adoption, tehillim, mikvah, bitachon
 local: Couples in Lafayette, Moraga, Orinda and the East Bay are welcome to talk privately with Rabbi Yisroel or Rebbetzin Tzipora Labkowski: 925-384-7242.
 ---
 The longing for a child can be one of life's deepest pains. Many of our great matriarchs, Sarah, Rebecca, Rachel and Chana, waited years for a child. Their stories are part of the Torah because they speak to every couple who waits and prays.

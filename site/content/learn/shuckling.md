@@ -2,7 +2,7 @@
 title: Why Do Jews Sway When They Pray? Shuckling Explained
 description: Why do Jews rock or sway when they pray? Shuckling explained: the soul as a flame, bowing and other prayer movements, and whether you have to do it.
 category: Prayer & Torah
-related: first-time-at-synagogue, amidah, prayer, siddur, what-is-a-synagogue
+related: first-time-at-synagogue, what-is-davening, amidah, prayer, siddur, what-is-a-synagogue
 local: Come see for yourself at Shabbat services in Lafayette. Call Rabbi Labkowski at 925-384-7242 to hear what is planned, or see /events.
 ---
 Jews sway back and forth during prayer, a custom called shuckling (from the Yiddish word for "shaking"), to pray with the whole body and to focus the mind. It is a custom, not a requirement, and many Jews pray perfectly well standing still.

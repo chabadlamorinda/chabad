@@ -2,7 +2,7 @@
 title: ההפטרה: מה היא ולמה קוראים אותה
 description: מהי ההפטרה, איך התחילה, איך היא קשורה לפרשת השבוע, מי קורא אותה, ומה כדאי לדעת לקראת בר מצווה.
 category: Prayer & Torah
-related: torah-reading, shabbat-shuva, tanach, aliyah, bar-mitzvah, weekly-parsha
+related: torah-reading, learning-to-chant-the-torah, isaiah, what-is-a-prophet, book-of-jonah, shabbat-shuva, tanach, aliyah, bar-mitzvah, weekly-parsha
 local: מכינים הפטרה לבר מצווה? קראו על התוכנית שלנו ב-chabadoflamorinda.com/programs/bar-bat-mitzvah או התקשרו 925-384-7242.
 ---
 ההפטרה היא קריאה מספרי הנביאים, שקוראים אותה בבית הכנסת אחרי קריאת התורה בשבת, בחגים ובימי תענית. כל הפטרה נבחרה כך שתתקשר לפרשת היום או לתקופה בשנה.
@@ -39,7 +39,7 @@ local: מכינים הפטרה לבר מצווה? קראו על התוכנית �
 
 - **שבת בבוקר** אחרי קריאת התורה
 - **חגים** אחרי קריאת התורה
-- **ימי תענית** בתפילת מנחה, כולל תשעה באב ויום הכיפורים
+- **ימי תענית** בתפילת מנחה; בתשעה באב וביום הכיפורים יש הפטרה גם בבוקר
 
 במנחה של יום הכיפורים ההפטרה היא ספר יונה, עם המסר העוצמתי שלו על [תשובה](/learn/teshuvah).
 

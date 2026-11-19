@@ -2,7 +2,7 @@
 title: Hosting Your First Shabbat Dinner: A Simple Step-by-Step Guide
 description: Everything you need to host a warm Friday night Shabbat dinner at home: what to buy, the order of the evening, the blessings, and how to make guests feel at home.
 category: Shabbat & holidays
-related: shabbat-meals, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
+related: shabbat-meals, shabbat-on-a-budget, hosting-shabbat-guests-in-lamorinda, dvar-torah-at-the-shabbat-table, friday-night-dinner-step-by-step, preparing-for-shabbat, kiddush, shabbat-candles, hachnasat-orchim, shalom-aleichem
 local: Want to see one first? Join a Shabbat dinner with the Rabbi's family at Chabad of Lamorinda in Lafayette, or call 925-384-7242 for candles and a challah.
 ---
 You do not need a big house, fancy dishes or perfect Hebrew to host a Shabbat dinner. You need a table, a few friends or family, and the wish to make Friday night special. Here is everything, step by step.
@@ -20,7 +20,7 @@ You do not need a big house, fancy dishes or perfect Hebrew to host a Shabbat di
 
 1. **Light Shabbat candles** before sunset, at candle-lighting time. See [Shabbat candles](/learn/shabbat-candles).
 2. **Sing Shalom Aleichem**, welcoming the Shabbat angels. See [Shalom Aleichem](/learn/shalom-aleichem).
-3. **Bless the children**, if there are any at the table. See [blessing your children](/learn/blessing-your-children).
+3. **Bless the children**, if there are any at the table and it is your family's custom (ask the Rabbi). See [blessing your children](/learn/blessing-your-children).
 4. **Make Kiddush** over the wine or grape juice and pass it around. See [Kiddush](/learn/kiddush).
 5. **Wash hands** for bread with the blessing. See [washing hands](/learn/netilat-yadayim).
 6. **Hamotzi:** uncover the challahs, say the blessing, slice, dip in salt and share.

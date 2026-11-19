@@ -2,7 +2,7 @@
 title: Visiting a Jewish Grave: When to Go and What to Say
 description: When Jews visit the graves of loved ones, which prayers and Psalms to say, why we leave a stone, and the customs to follow at a Jewish cemetery.
 category: Mourning & remembrance
-related: yahrzeit, jewish-genealogy, unveiling, tehillim, kaddish
+related: yahrzeit, kohen-at-a-funeral-or-cemetery, mount-of-olives, jewish-headstone-inscription, jewish-genealogy, unveiling, tehillim, kaddish
 local: Would you like the Rabbi to join you at a grave or help with the prayers? Call Rabbi Labkowski at 925-384-7242.
 ---
 Visiting the grave of a loved one is a meaningful Jewish custom, especially on a yahrzeit and in the weeks before the High Holidays. At the grave we pray, say Psalms, give charity in their memory and leave a small stone as a sign that we were there.
@@ -18,17 +18,17 @@ Jews have prayed at the graves of the righteous since Biblical times. Caleb is s
 Common times to visit include:
 
 - **The [yahrzeit](/learn/yahrzeit),** the anniversary of the passing on the Hebrew calendar.
-- **The end of shiva or [sheloshim](/learn/sheloshim),** according to family custom.
+- **The end of [sheloshim](/learn/sheloshim),** according to family custom.
 - **The month of Elul** and the days before Rosh Hashanah and Yom Kippur.
 - **An [unveiling](/learn/unveiling),** when the headstone is dedicated.
 - **Fast days,** according to some customs.
 
-It is customary not to visit cemeteries on Shabbat, Jewish holidays or Rosh Chodesh (the first day of a Jewish month). Many also avoid visiting the same grave too often, so that grief does not take over daily life.
+It is customary not to visit cemeteries on Shabbat, Jewish holidays, the intermediate days of Sukkot and Passover, or Rosh Chodesh (the first day of a Jewish month). Many also avoid visiting the same grave too often, so that grief does not take over daily life.
 
 ## What to do at the grave
 
 1. **Approach with respect.** Walk carefully and avoid stepping on graves.
-2. **Say Psalms.** It is customary to recite chapters of [Tehillim](/learn/tehillim). A traditional selection includes chapters 33, 16, 17, 72, 91, 104 and 130. Many also say the verses of Psalm 119 that spell out the person's Hebrew name and the word *neshamah* (soul).
+2. **Say Psalms.** It is customary to recite chapters of [Tehillim](/learn/tehillim). Ask the Rabbi which chapters to say. Many also say the verses of Psalm 119 that spell out the person's Hebrew name and the word *neshamah* (soul).
 3. **Speak from the heart.** Talk to your loved one or to G-d in your own words.
 4. **Say Kel Malei Rachamim,** the memorial prayer, and if a minyan is present, [Kaddish](/learn/kaddish).
 5. **Give tzedakah** in their memory, before or after the visit.

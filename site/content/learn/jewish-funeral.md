@@ -2,10 +2,12 @@
 title: Jewish Funeral Customs: What to Do When a Loved One Passes Away
 description: A gentle guide to Jewish funeral customs: first steps, tahara, burial, the service, and how to support a grieving family.
 category: Mourning & remembrance
-related: shiva, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
+related: shiva, kohen-at-a-funeral-or-cemetery, jewish-burial-for-interfaith-families, embalming-and-viewing-jewish-view, plain-wooden-casket-and-shrouds, why-jews-bury-quickly, first-hours-after-a-death, jewish-burial-financial-help, why-jewish-burial-matters, burial-in-israel, what-to-wear-to-a-jewish-funeral, el-malei-rachamim, jewish-funerals-near-lafayette, planning-a-jewish-funeral-in-advance, chevra-kadisha-and-tahara, writing-a-eulogy, tattoos-jewish-view, kaddish, unveiling, yahrzeit
 local: When a loved one passes, call Rabbi Labkowski at 925-384-7242 at any hour and we will guide your family through every step with care.
 ---
 A Jewish funeral is a simple, dignified service followed by burial in the earth, ideally as soon as possible after death. Its customs focus on two values: honoring the person who passed away (kavod hamet) and comforting the family who remains.
+
+**Jewish burial is of the utmost importance, and it can all be arranged even if there is no budget. Financial help is available. Please call Rabbi Yisroel Labkowski at 925-384-7242 at once.**
 
 If you are reading this because you have just lost someone, we are deeply sorry. You do not have to know everything. Please call us and we will help.
 
@@ -13,8 +15,8 @@ If you are reading this because you have just lost someone, we are deeply sorry.
 
 When a death occurs:
 
-1. **Call the Rabbi.** He can guide you on what to do next and help coordinate with a Jewish funeral home and burial society.
-2. **Contact a funeral home** familiar with Jewish practice.
+1. **Call the Rabbi first.** Call Rabbi Yisroel Labkowski at 925-384-7242 (or Rebbetzin Tzipora Labkowski at 925-384-7241) before calling the burial society or a funeral home. He will guide your family through every step and make the arrangements.
+2. **The funeral home** should be one familiar with Jewish practice; the Rabbi will help with this.
 3. **Do not leave the body alone.** It is customary for someone to stay with the deceased and recite [Tehillim](/learn/tehillim) (Psalms). This is called shemirah, "guarding."
 
 ## Preparing the body: tahara
@@ -34,7 +36,7 @@ The deceased is then dressed in tachrichim, simple white linen shrouds. Everyone
 
 A Jewish funeral is usually short and modest:
 
-- **Kriah (tearing):** immediate family members tear a garment or wear a torn ribbon, expressing grief.
+- **Kriah (tearing):** immediate family members tear a garment, expressing grief; a ribbon is not a substitute for tearing the garment.
 - **Psalms and eulogies:** a Rabbi and family members share words about the person's life.
 - **El Malei Rachamim:** a memorial prayer for the soul.
 - **Burial:** family and friends help fill the grave with earth, an act of kindness that cannot be repaid.
@@ -64,3 +66,8 @@ Dress modestly in dark, respectful clothing. Men usually wear a kippah, and kipp
 ### What do I say to the mourners?
 
 Simple words are best: "I am so sorry for your loss." The traditional phrase is "May G-d comfort you among the mourners of Zion and Jerusalem." Your presence means more than any words.
+
+## Take the next step
+
+- If a loved one has just passed away, call Rabbi Labkowski first, at 925-384-7242, before the burial society or a funeral home.
+- Read [what to do in the first hours](/learn/first-hours-after-a-death) and [shiva](/learn/shiva).
