@@ -115,14 +115,16 @@ function mountVisitors(app, { store, mailer, notifyTo = '', content, base = '', 
     mountAdmin(r2, { authed, wrap }) {
       // People who left their details, with their interests and the pages they looked at (newest first).
       r2.get('/api/site/visitors', authed, wrap(async (req, res) => {
-        const people = (await q(`SELECT p.email, max(p.name) AS name, max(p.phone) AS phone, array_agg(DISTINCT p.vid) AS vids, max(p.updated_at) AS linked FROM visitor_people p GROUP BY p.email`)).rows;
+        const people = (await q(`SELECT p.email, max(p.name) AS name, max(p.phone) AS phone, array_agg(DISTINCT p.vid) AS vids, array_agg(DISTINCT p.source) AS sources, max(p.updated_at) AS linked FROM visitor_people p GROUP BY p.email`)).rows;
+        // What they did when they left their details (the form or action the website saw them use).
+        const viaOf = (s) => { s = String(s || ''); if (!s) return ''; if (s === 'account') return 'Signed in to an account'; if (/subscribe/.test(s)) return 'Signed up for the weekly email'; if (/\/forms\//.test(s)) return 'Filled in the form "' + s.split('/').pop() + '"'; if (/rsvp/.test(s)) return 'Made an RSVP'; if (/submit/.test(s)) return 'Sent a prayer name, a message to the Rabbi, or a community post'; if (/lead/.test(s)) return 'Used Call / Text / WhatsApp'; return s.replace('/api/site/', ''); };
         const views = people.length ? (await q("SELECT vid, path, to_char(day,'YYYY-MM-DD') AS day FROM visitor_views WHERE vid = ANY($1) ORDER BY day DESC", [people.flatMap((p) => p.vids)])).rows : [];
         const byVid = {}; for (const v of views) (byVid[v.vid] = byVid[v.vid] || []).push(v);
         const items = people.map((p) => {
           const seen = p.vids.flatMap((v) => byVid[v] || []).sort((a, b) => b.day.localeCompare(a.day)), tags = {};
           for (const v of seen) { const it = interestOf(v.path); if (it) { const t = tags[it.key] || (tags[it.key] = { key: it.key, label: it.label, alert: it.alert, n: 0, last: v.day }); t.n++; } }
           const recentAlert = Object.values(tags).some((t) => t.alert && t.last >= new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10));
-          return { name: p.name, email: p.email, phone: p.phone, lastSeen: seen[0] ? seen[0].day : null, interests: Object.values(tags).sort((a, b) => b.alert - a.alert || b.n - a.n), pages: seen.slice(0, 12), hot: recentAlert };
+          return { name: p.name, email: p.email, phone: p.phone, via: [...new Set((p.sources || []).map(viaOf).filter(Boolean))], lastSeen: seen[0] ? seen[0].day : null, interests: Object.values(tags).sort((a, b) => b.alert - a.alert || b.n - a.n), pages: seen.slice(0, 12), hot: recentAlert };
         }).filter((p) => p.lastSeen).sort((a, b) => b.hot - a.hot || String(b.lastSeen).localeCompare(String(a.lastSeen)));
         // Everyone, anonymous: visitors this week by interest.
         const week = (await q("SELECT path, count(DISTINCT vid)::int AS n FROM visitor_views WHERE day > CURRENT_DATE - 7 GROUP BY path")).rows, totals = {};

@@ -235,7 +235,7 @@ test('Rabbi area: RSVP lists, birthdays, post to Facebook', async () => {
   assert.equal(b.name, 'Noa'); assert.equal(b.family, 'Sara Levi');
   // Social drafts: every upcoming event is a ready post; one button publishes it.
   const vis = (await a.call('GET', '/admin/api/site/visitors')).json; assert.ok(Array.isArray(vis.items) && typeof vis.week.visitors === 'number');
-  // "Waiting for you" on the Rabbi's desk: every API it counts answers, and the counts are numbers.
+  assert.ok(vis.items.every((x) => Array.isArray(x.via)), 'each person says what they did when they left their details');  // "Waiting for you" on the Rabbi's desk: every API it counts answers, and the counts are numbers.
   const win = {}; require('vm').runInNewContext(require('fs').readFileSync(require('path').join(__dirname, 'admin', 'waiting.js'), 'utf8'), { window: win });
   for (const w of win.WAITING) { const r = await a.call('GET', '/admin/api' + w.path); assert.equal(r.status, 200, w.path); assert.equal(typeof w.count(r.json), 'number', w.id); }
   assert.equal((await a.call('GET', '/admin/waiting.js')).status, 200);

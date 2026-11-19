@@ -42,8 +42,14 @@ ${club ? '' : `<label>${esc(t('Where should it go?'))} <select name="fund">${fun
 <label>${esc(t('In honor or in memory of (optional)'))} <input type="text" name="dedication" maxlength="80" value="${esc(opts.ded || '')}" placeholder="${esc(opts.placeholder || t('e.g. In memory of Sarah bat Avraham'))}"></label>
 ${club ? `<label class="check"><input type="checkbox" name="show" checked> ${esc(t('Show our name on the Chai Club board (amounts are never shown)'))}</label><p class="muted small">${esc(t('Names appear on the board from $72 a month.'))}</p>
 <label>${esc(t('Name for the board'))} <input type="text" name="boardName" maxlength="60" autocomplete="name" placeholder="${esc(t('e.g. The Cohen Family'))}"></label>` : ''}
-<label>${esc(t('Your name'))} <input type="text" name="donorName" maxlength="100" autocomplete="name" required></label>
-<label>${esc(t('Your email (for your receipt)'))} <input type="email" name="donorEmail" maxlength="200" autocomplete="email" inputmode="email" required></label>
+<details class="give-more"><summary>${esc(t('Add your details or a note (optional)'))}</summary>
+<p class="muted small">${esc(t('Nothing here is required. Add whatever you like, so we can thank you, send a receipt, or know the reason for your gift.'))}</p>
+<label>${esc(t('Your name'))} <input type="text" name="donorName" maxlength="100" autocomplete="name"></label>
+<label>${esc(t('Your email (for a receipt)'))} <input type="email" name="donorEmail" maxlength="200" autocomplete="email" inputmode="email"></label>
+<label>${esc(t('Your phone'))} <input type="tel" name="donorPhone" maxlength="40" autocomplete="tel" inputmode="tel"></label>
+<label>${esc(t('Your address'))} <input type="text" name="donorAddress" maxlength="200" autocomplete="street-address"></label>
+<label>${esc(t('A note to the Rabbi, or the reason for your gift'))} <textarea name="donorNote" rows="3" maxlength="300"></textarea></label>
+</details>
 <label class="check"><input type="checkbox" name="fee"> ${esc(t('Add 3.5% to cover the card processing fee'))}</label>
 <p class="give-err msg err" role="alert" hidden></p>
 <button type="submit" class="btn gold">${esc(t('Continue to secure payment'))}</button>

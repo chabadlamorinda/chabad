@@ -114,6 +114,7 @@
         var pages = el('div', { class: 'small', hidden: 'hidden' }, p.pages.map(function (v) { return el('div', { text: v.day + '  ' + v.path }); }));
         sv.appendChild(el('div', { class: 'card' + (p.hot ? ' hot' : '') }, [
           el('strong', { text: p.name || p.email }), el('div', { class: 'small', text: p.email + (p.phone ? ' · ' + p.phone : '') + ' · last visit ' + p.lastSeen }),
+          el('div', { class: 'small', text: 'Left their details when they: ' + ((p.via && p.via.length) ? p.via.join('; ') : 'did something on the website (not recorded)') }),
           el('div', {}, p.interests.map(function (i) { return el('span', { class: 'pill', text: i.label + ' ×' + i.n, style: i.alert ? 'background:#fff3e4' : '' }); })),
           el('div', { class: 'row' }, contactBtns(p.phone, p.email).concat([
             el('button', { text: 'Pages they looked at', onclick: function () { pages.hidden = !pages.hidden; } })])), pages]));

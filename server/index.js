@@ -172,7 +172,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     await store.resolvePayment('gift_' + event.id);
     const fund = FUND_NAMES[meta.fund || sub.fund] || meta.fund || sub.fund || 'General', monthly = !isPi, club = (sub.club || meta.club) === 'yes';
     const dedication = meta.dedication || sub.dedication || '';
-    mailer.send({ to, subject: `Gift received: $${(cents / 100).toFixed(2)}${monthly ? ' monthly' : ''}${club ? ' (Chai Club)' : ''}`, text: `A gift came in through My Pushka.\n\nAmount: $${(cents / 100).toFixed(2)}${monthly ? ' (monthly)' : ''}\nFund: ${fund}${club ? '\nChai Club member' : ''}${dedication ? '\nDedication: ' + dedication : ''}${email ? '\nFrom: ' + email : ''}\n\nSee everything in your Rabbi area: /admin/` }).catch((e) => log.error('gift email failed:', e && e.message));
+    mailer.send({ to, subject: `Gift received: $${(cents / 100).toFixed(2)}${monthly ? ' monthly' : ''}${club ? ' (Chai Club)' : ''}`, text: `A gift came in through My Pushka.\n\nAmount: $${(cents / 100).toFixed(2)}${monthly ? ' (monthly)' : ''}\nFund: ${fund}${club ? '\nChai Club member' : ''}${dedication ? '\nDedication: ' + dedication : ''}${(meta.donor_name || sub.donor_name) ? '\nName: ' + (meta.donor_name || sub.donor_name) : ''}${email ? '\nEmail: ' + email : ''}${(meta.donor_phone || sub.donor_phone) ? '\nPhone: ' + (meta.donor_phone || sub.donor_phone) : ''}${(meta.donor_address || sub.donor_address) ? '\nAddress: ' + (meta.donor_address || sub.donor_address) : ''}${(meta.donor_note || sub.donor_note) ? '\nNote: ' + (meta.donor_note || sub.donor_note) : ''}\n\nSee everything in your Rabbi area: /admin/` }).catch((e) => log.error('gift email failed:', e && e.message));
     // A thank-you to the person who gave on the website (their language), with the organization's tax details for their records.
     if ((meta.via || sub.via) === 'website' && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
       const L = ['he', 'ru'].includes(meta.lang || sub.lang) ? (meta.lang || sub.lang) : 'en', who = meta.donor_name || sub.donor_name || '', amt = '$' + (cents / 100).toFixed(2), legal = (((site.content && site.content()) || {}).org || {}).legal || '';
@@ -406,6 +406,9 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const giver = String(b.donorEmail || '').trim().toLowerCase().slice(0, 200), giverName = clean(b.donorName, 100);
     if (giver && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(giver)) throw new HttpError(400, 'invalid_email', 'Please enter a valid email address.');
     if (giverName) meta.donor_name = giverName;
+    // Optional extras the giver chose to add (kept with the payment in Stripe, and shown to the Rabbi with the gift).
+    const extra = { donor_phone: clean(b.donorPhone, 40), donor_address: clean(b.donorAddress, 200), donor_note: clean(b.donorNote, 300) };
+    for (const [k, v] of Object.entries(extra)) if (v) meta[k] = v;
     meta.lang = lang;
     const session = await stripe.checkout.sessions.create({
       mode: monthly ? 'subscription' : 'payment', locale: lang === 'en' ? 'auto' : lang,
