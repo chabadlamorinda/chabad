@@ -897,4 +897,21 @@
     if (!p.name) f.name.input.focus();
     if (location.hash === '#yahrzeits') s3.scrollIntoView();
   }
+
+  // An "Email" link does nothing on a computer with no mail program set up. After the tap, offer the address, a copy button and Gmail.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="mailto:"]'); if (!a) return;
+    var to = decodeURIComponent(a.getAttribute('href').slice(7).split('?')[0]), q = (a.getAttribute('href').split('?')[1] || '');
+    if (!to || document.getElementById('mailhelp')) return;
+    var bar = document.createElement('div'); bar.id = 'mailhelp'; bar.className = 'mailhelp'; bar.setAttribute('role', 'status');
+    var msg = document.createElement('span'); msg.textContent = T('No mail program on this computer?') + ' ';
+    var addr = document.createElement('strong'); addr.textContent = to; addr.setAttribute('dir', 'ltr');
+    var copy = document.createElement('button'); copy.type = 'button'; copy.className = 'btn ghost sm'; copy.textContent = T('Copy the address');
+    copy.onclick = function () { var done = function () { copy.textContent = T('Copied!'); }; if (navigator.clipboard) navigator.clipboard.writeText(to).then(done, function () {}); else { var t = document.createElement('textarea'); t.value = to; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); done(); } catch (x) {} t.remove(); } };
+    var g = document.createElement('a'); g.className = 'btn ghost sm'; g.target = '_blank'; g.rel = 'noopener'; g.textContent = T('Write it in Gmail');
+    g.href = 'https://mail.google.com/mail/?view=cm&to=' + encodeURIComponent(to) + (q ? '&' + q.replace(/(^|&)body=/, '$1body=').replace(/subject=/, 'su=') : '');
+    var x = document.createElement('button'); x.type = 'button'; x.className = 'mailhelp-x'; x.setAttribute('aria-label', T('Close')); x.textContent = '×'; x.onclick = function () { bar.remove(); };
+    [msg, addr, copy, g, x].forEach(function (n) { bar.appendChild(n); });
+    document.body.appendChild(bar); setTimeout(function () { if (bar.parentNode) bar.remove(); }, 20000);
+  });
 })();

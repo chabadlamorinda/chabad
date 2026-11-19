@@ -1065,3 +1065,8 @@ summary { min-height: 40px; display: list-item; }
 
 .photo-credit { font-size: .78rem; color: var(--muted); margin-top: 4px; }
 .photo-credit a { color: inherit; }
+
+/* Help after tapping an Email link on a computer with no mail program */
+.mailhelp { position: fixed; z-index: 60; left: 12px; right: 12px; bottom: 74px; max-width: 640px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 12px 40px 12px 14px; background: var(--navy, #14284b); color: #fff; border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,.28); font-size: .95rem; }
+.mailhelp .btn { background: #fff; color: var(--navy, #14284b); border-color: #fff; }
+.mailhelp-x { position: absolute; top: 4px; inset-inline-end: 8px; background: none; border: 0; color: #fff; font-size: 1.5rem; cursor: pointer; min-height: 0; padding: 4px 8px; }
