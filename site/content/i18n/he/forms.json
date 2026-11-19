@@ -898,5 +898,22 @@
         "type": "checkbox"
       }
     ]
+  },
+  {
+    "id": "other-gift",
+    "hidden": true,
+    "noGift": true,
+    "title": "ספרו לנו מה תרצו לתת",
+    "intro": "רכב, ציוד, זמן או כישורים, נכס או כל דבר אחר: ספרו לרב מה עולה בדעתכם. שום דבר אינו מחייב, והרב יחזור אליכם כדי לדבר על כך.",
+    "button": "שליחה לרב",
+    "fields": [
+      { "id": "name", "label": "השם שלך", "type": "text", "required": true },
+      { "id": "phone", "label": "טלפון", "type": "tel" },
+      { "id": "email", "label": "אימייל", "type": "email", "required": true },
+      { "id": "kind", "label": "מה תרצו לתת?", "type": "select", "required": true,
+        "options": ["רכב או כלי רכב אחר", "מוצרים, מזון או ציוד", "הזמן, הכישורים או השירותים שלי", "נכס, נדל״ן או עסק", "תרומה מקרן פרישה (IRA), התאמה של המעסיק או דרך אחרת", "משהו אחר"] },
+      { "id": "details", "label": "ספרו לנו על כך", "type": "textarea", "required": true },
+      { "id": "callme", "label": "נא להתקשר אליי", "type": "checkbox" }
+    ]
   }
 ]

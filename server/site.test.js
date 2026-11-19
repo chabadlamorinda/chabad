@@ -1380,3 +1380,15 @@ test('maintenance requests run once, only from the fixed list', () => {
   run(); assert.equal(fs.readFileSync(path.join(dir, 'log'), 'utf8'), log, 'a request never runs twice');
   fs.rmSync(dir, { recursive: true, force: true });
 });
+
+test('donate: other ways to give include a car, goods, time and skills, an employer match, an IRA gift and property, with a form to the Rabbi', async () => {
+  const d = (await client().call('GET', '/donate')).text;
+  for (const s of ['A car or other vehicle', 'Goods, food and equipment', 'Your time, skills and services', 'Matching gifts from your employer', 'A gift from your IRA', 'Real estate or a business', 'Tell us what you would like to give', '/forms/other-gift?kind=0']) assert.ok(d.includes(s), 'the donate page has: ' + s);
+  assert.ok(!(await client().call('GET', '/forms')).text.includes('other-gift'), 'the form is reached from the donate page, not listed with the sign-ups');
+  const page = await client().call('GET', '/forms/other-gift?kind=0'); assert.equal(page.status, 200); assert.ok(page.text.includes('data-form="other-gift"') && /<option value="0" selected>/.test(page.text), 'the kind is chosen for them');
+  const bad = await client().call('POST', '/api/site/forms/other-gift', { fields: { name: 'Dana' } }); assert.equal(bad.status, 400, 'the kind, the details and an email are needed');
+  const ok = await client().call('POST', '/api/site/forms/other-gift', { fields: { name: 'Dana Levi', email: 'dana@example.com', phone: '925-555-0100', kind: 0, details: 'A 2015 minivan in good shape', callme: true } });
+  assert.equal(ok.status, 200);
+  assert.ok(mails.some((m) => /Tell us what you would like to give/.test(m.subject) && /minivan/.test(m.text)), 'the Rabbi is emailed what they would like to give');
+  for (const L of ['he', 'ru']) assert.ok(/A car or other vehicle/.test((await client().call('GET', '/' + L + '/donate')).text) === false, L + ' donate page is translated');
+});

@@ -901,5 +901,22 @@
         "type": "checkbox"
       }
     ]
+  },
+  {
+    "id": "other-gift",
+    "hidden": true,
+    "noGift": true,
+    "title": "Tell us what you would like to give",
+    "intro": "A car, goods, your time or skills, property or something else: tell the Rabbi what you have in mind. Nothing is binding, and the Rabbi will get back to you to talk it through.",
+    "button": "Send to the Rabbi",
+    "fields": [
+      { "id": "name", "label": "Your name", "type": "text", "required": true },
+      { "id": "phone", "label": "Phone", "type": "tel" },
+      { "id": "email", "label": "Email", "type": "email", "required": true },
+      { "id": "kind", "label": "What would you like to give?", "type": "select", "required": true,
+        "options": ["A car or other vehicle", "Goods, food or equipment", "My time, skills or services", "Property, real estate or a business", "A gift from an IRA, an employer match or another way", "Something else"] },
+      { "id": "details", "label": "Tell us about it", "type": "textarea", "required": true },
+      { "id": "callme", "label": "Please call me", "type": "checkbox" }
+    ]
   }
 ]

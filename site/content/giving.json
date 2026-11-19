@@ -147,6 +147,48 @@
       "id": "wire",
       "name": "Wire or ACH",
       "text": "Call or email us for wire and ACH details."
+    },
+    {
+      "id": "vehicle",
+      "name": "A car or other vehicle",
+      "text": "Have a vehicle you no longer need? Tell us about it and the Rabbi will get back to you to talk it through, including what paperwork and which tax receipt, if any, can be given. Tax rules for vehicle gifts vary, so please also ask your tax advisor.",
+      "form": true,
+      "kind": 0
+    },
+    {
+      "id": "goods",
+      "name": "Goods, food and equipment",
+      "text": "Furniture, kitchen and event equipment, books, supplies, or food for our programs: tell us what you have and we will let you know whether it fits a need.",
+      "form": true,
+      "kind": 1
+    },
+    {
+      "id": "time-skills",
+      "name": "Your time, skills and services",
+      "text": "A professional skill, a venue, printing, catering, a ride, a delivery or simply helping hands: tell us what you can offer. A gift of time and talent is a real way to be part of this.",
+      "form": true,
+      "kind": 2
+    },
+    {
+      "id": "employer-match",
+      "name": "Matching gifts from your employer",
+      "text": "Many employers match what their employees give. Ask your company's giving or HR office, and use our name, Chabad of Lamorinda, and tax ID 47-4642750.",
+      "form": true,
+      "kind": 4
+    },
+    {
+      "id": "ira",
+      "name": "A gift from your IRA",
+      "text": "If you are 70½ or older, you may be able to give directly from your IRA to Chabad of Lamorinda (a qualified charitable distribution). Please ask your IRA provider and your tax advisor, and call us with any questions.",
+      "form": true,
+      "kind": 4
+    },
+    {
+      "id": "property",
+      "name": "Real estate or a business",
+      "text": "Property, or part of a business, can also be a gift. The Rabbi would be glad to talk it over with you, in confidence.",
+      "form": true,
+      "kind": 3
     }
   ]
 }
