@@ -1344,6 +1344,14 @@ test('Keys and settings in the Rabbi area: checked, saved encrypted, never shown
   assert.ok(mails.some((m) => /setting was changed/.test(m.subject) && !m.text.includes(K)), 'the Rabbi is told, without the key');
   assert.equal((await post({ GA_ID: '' })).status, 200, 'an empty box goes back to the server original');
   assert.ok(!(await applyOverrides(store, {}, SECRET)).includes('GA_ID'));
+  // new keys the Rabbi adds himself: any CAPITAL_NAME, but never one that runs the server itself
+  for (const bad of ['path', 'PATH', 'NODE_OPTIONS', 'DATABASE_URL', 'SESSION_SECRET', 'ADMIN_PASSWORD', 'LD_PRELOAD', 'AB', 'MY KEY']) assert.equal((await post({ [bad]: 'x'.repeat(12) })).status, 400, bad + ' is refused');
+  assert.equal((await post({ MY_NEW_KEY: 'line one\nline two' })).status, 400, 'one line only');
+  assert.equal((await post({ MY_NEW_KEY: 'brand-new-secret-value-123' })).status, 200);
+  const withNew = await a.call('GET', '/admin/api/site/settings');
+  const mine = withNew.json.items.find((i) => i.id === 'MY_NEW_KEY'); assert.ok(mine && mine.custom && mine.set && mine.hint.endsWith('-123') && !withNew.text.includes('brand-new-secret-value'), 'listed, hidden');
+  const envNew = {}; await applyOverrides(store, envNew, SECRET); assert.equal(envNew.MY_NEW_KEY, 'brand-new-secret-value-123', 'the website can read it by its name');
+  assert.equal((await post({ MY_NEW_KEY: '' })).status, 200); assert.ok(!(await a.call('GET', '/admin/api/site/settings')).json.items.some((i) => i.id === 'MY_NEW_KEY'), 'removed');
   const care = (await a.call('GET', '/admin/api/site/care')).json; assert.equal(typeof care.uptimeMinutes, 'number'); assert.ok(care.changes.length >= 1);
 });
 

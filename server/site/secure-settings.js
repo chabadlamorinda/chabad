@@ -3,6 +3,7 @@
 // SESSION_SECRET), never shown back (only "ends in 1234"), and applied when the website starts: saving restarts the website
 // for a few seconds (the server brings it back by itself). A value saved here wins over the same name in the server's
 // settings file; "Use the server's original" removes it. Nothing here can lock the Rabbi out: the Rabbi area password is not in the list.
+// "Add another key or setting" adds a brand-new NAME (for something new Claude builds, which reads process.env.NAME); see isCustomId.
 'use strict';
 const crypto = require('crypto');
 const fs = require('fs');
@@ -25,6 +26,13 @@ const SETTINGS = [
   { id: 'VAPID_PRIVATE_KEY', label: 'App notifications: private key', secret: true, help: 'The other half of the pair.', test: /^\S{20,}$/ },
 ];
 const BY_ID = Object.fromEntries(SETTINGS.map((s) => [s.id, s]));
+// New keys and settings the Rabbi adds himself (for something new Claude adds to the website, which reads it by this name).
+// Any name in CAPITAL_LETTERS_AND_NUMBERS except the ones that run the server itself (the database, the passwords, the web
+// address, the program's own search paths): those stay in the server's settings file. Values are always kept hidden.
+const CUSTOM_NAME = /^[A-Z][A-Z0-9_]{2,59}$/;
+const PROTECTED = new Set(['PORT', 'PATH', 'HOME', 'USER', 'SHELL', 'DATABASE_URL', 'SESSION_SECRET', 'ADMIN_PASSWORD', 'PUBLIC_URL', 'RENDER', 'TZ']);
+const PROTECTED_PREFIX = /^(NODE_|NPM_|LD_|DYLD_|PG|SYSTEMD_|SSH_|SUDO_)/;
+const isCustomId = (id) => typeof id === 'string' && CUSTOM_NAME.test(id) && !PROTECTED.has(id) && !PROTECTED_PREFIX.test(id) && !BY_ID[id];
 
 const keyOf = (secret) => crypto.createHash('sha256').update('chabad-settings:' + secret).digest();
 function seal(plain, secret) {
@@ -44,9 +52,9 @@ async function applyOverrides(store, env, secret, log = console) {
   if (!store || !store.getKv) return applied;
   let saved = {};
   try { saved = (await store.getKv(KEY, null)) || {}; } catch (e) { log.error('settings:', e && e.message); return applied; }
-  for (const s of SETTINGS) {
-    if (!saved[s.id]) continue;
-    try { env[s.id] = unseal(saved[s.id], secret); applied.push(s.id); } catch (e) { log.error('settings: could not read ' + s.id + ' (the website secret changed?), using the server\'s value'); }
+  for (const id of Object.keys(saved)) {
+    if (!saved[id] || !(BY_ID[id] || isCustomId(id))) continue;
+    try { env[id] = unseal(saved[id], secret); applied.push(id); } catch (e) { log.error('settings: could not read ' + id + ' (the website secret changed?), using the server\'s value'); }
   }
   return applied;
 }
@@ -63,11 +71,17 @@ function mountAdmin(r2, { authed, wrap }, { store, env = process.env, secret, no
   r2.get('/api/site/settings', authed, wrap(async (req, res) => {
     if (!store || !store.pool) return res.status(503).json({ code: 'not_configured', error: 'Needs the database.' });
     const saved = await items();
-    res.json({ items: SETTINGS.map((s) => {
+    const known = SETTINGS.map((s) => {
       let v = String(env[s.id] || '');
       if (saved[s.id]) { try { v = unseal(saved[s.id], secret); } catch (e) { /* unreadable: show the server's value */ } } // what is saved wins, even before the restart
       return { id: s.id, label: s.label, help: s.help, secret: s.secret, set: !!v, fromScreen: !!saved[s.id], hint: !v ? '' : s.secret ? mask(v) : v };
-    }) });
+    });
+    // the ones the Rabbi added himself
+    const added = Object.keys(saved).filter((id) => isCustomId(id) && saved[id]).sort().map((id) => {
+      let v = ''; try { v = unseal(saved[id], secret); } catch (e) { /* unreadable */ }
+      return { id, label: id, help: 'Added by you.', secret: true, set: !!v, fromScreen: true, custom: true, hint: v ? mask(v) : '' };
+    });
+    res.json({ items: known.concat(added) });
   }));
 
   r2.post('/api/site/settings', authed, wrap(async (req, res) => {
@@ -77,12 +91,12 @@ function mountAdmin(r2, { authed, wrap }, { store, env = process.env, secret, no
     if (!ids.length) return res.status(400).json({ code: 'bad_request', error: 'Nothing to save.' });
     const saved = await items(), next = { ...saved }, eff = { ...env }, changed = [];
     for (const id of ids) {
-      const s = BY_ID[id];
-      if (!s) return res.status(400).json({ code: 'bad_request', error: 'That setting cannot be changed here.' });
+      const known = BY_ID[id], s = known || (isCustomId(id) ? { label: id, custom: true } : null);
+      if (!s) return res.status(400).json({ code: 'bad_request', error: '“' + String(id).slice(0, 60) + '” cannot be used as a name here. Use CAPITAL LETTERS, numbers and underscores (for example MY_NEW_KEY), at least 3 characters, and not one that runs the server itself (the database, passwords or web address).' });
       const v = String(values[id] == null ? '' : values[id]).trim();
-      if (!v) { delete next[id]; changed.push(s.label + ' (back to the server\'s original)'); continue; }
-      if (v.length > 600 || !s.test.test(v)) return res.status(400).json({ code: 'bad_value', error: s.label + ' does not look right. ' + s.help });
-      next[id] = seal(v, secret); eff[id] = v; changed.push(s.label);
+      if (!v) { delete next[id]; changed.push(s.label + (known ? ' (back to the server\'s original)' : ' (removed)')); continue; }
+      if (known ? (v.length > 600 || !known.test.test(v)) : (v.length > 2000 || /[\u0000-\u001f]/.test(v))) return res.status(400).json({ code: 'bad_value', error: s.label + ' does not look right.' + (known ? ' ' + known.help : ' Use a single line of up to 2000 characters.') });
+      next[id] = seal(v, secret); eff[id] = v; changed.push(s.label + (known ? '' : ' (new)'));
     }
     // The two Stripe keys must be both live or both test, or the website would refuse to start.
     const a = liveness(String(eff.STRIPE_SECRET_KEY || '')), b = liveness(String(eff.STRIPE_PUBLISHABLE_KEY || ''));
@@ -107,4 +121,4 @@ function mountAdmin(r2, { authed, wrap }, { store, env = process.env, secret, no
   }));
 }
 
-module.exports = { SETTINGS, KEY, seal, unseal, applyOverrides, mountAdmin, onRestart };
+module.exports = { SETTINGS, KEY, seal, unseal, applyOverrides, mountAdmin, onRestart, isCustomId };

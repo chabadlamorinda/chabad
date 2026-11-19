@@ -220,7 +220,7 @@
   }
   // Keys and settings: change a key from the phone (kept encrypted, never shown back), and see how the server is doing.
   function settings() {
-    var box = el('div'), status = el('p', { class: 'small' }), inputs = {};
+    var box = el('div'), status = el('p', { class: 'small' }), inputs = {}, newName = null, newValue = null;
     function draw(j) {
       box.textContent = '';
       box.appendChild(el('p', { class: 'small', text: 'Paste a new key and tap Save. The website restarts for a few seconds to use it. Keys are kept encrypted and are never shown here again (only the last four characters). Leave a box empty to keep it as it is.' }));
@@ -229,11 +229,20 @@
         inputs[s.id] = inp;
         var now = s.set ? 'In use' + (s.hint ? ': ' + s.hint : '') + (s.fromScreen ? ' (saved here)' : ' (from the server)') : 'Not set';
         var kids = [el('strong', { text: s.label }), el('div', { class: 'small', text: now }), el('div', { class: 'small', text: s.help }), inp];
-        if (s.fromScreen) kids.push(el('p', { class: 'small' }, [el('button', { class: 'quiet', text: 'Use the server’s original', onclick: function () { save((function () { var o = {}; o[s.id] = ''; return o; })()); } })]));
+        if (s.fromScreen) kids.push(el('p', { class: 'small' }, [el('button', { class: 'quiet', text: s.custom ? 'Remove this setting' : 'Use the server’s original', onclick: function () { save((function () { var o = {}; o[s.id] = ''; return o; })()); } })]));
         box.appendChild(el('div', { class: 'card' }, kids));
       });
+      // Add a brand-new key or setting (for something new Claude adds to the website, which reads it by this name).
+      newName = el('input', { type: 'text', autocomplete: 'off', autocapitalize: 'characters', spellcheck: 'false', placeholder: 'Name, for example MY_NEW_KEY', 'aria-label': 'Name of the new setting' });
+      newValue = el('input', { type: 'password', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', placeholder: 'Paste the key or value', 'aria-label': 'Value of the new setting' });
+      box.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'Add another key or setting' }),
+        el('div', { class: 'small', text: 'For something new that is added to the website. Ask Claude which name to use. Capital letters, numbers and underscores only. The value is kept encrypted and never shown again.' }), newName, newValue]));
       box.appendChild(el('p', {}, [el('button', { class: 'on', text: 'Save', onclick: function () {
         var v = {}; Object.keys(inputs).forEach(function (k) { if (inputs[k].value.trim()) v[k] = inputs[k].value.trim(); });
+        if (newName.value.trim() || newValue.value.trim()) {
+          if (!newName.value.trim() || !newValue.value.trim()) { status.textContent = 'To add a new one, fill in both its name and its value.'; return; }
+          v[newName.value.trim().toUpperCase().replace(/[\s-]+/g, '_')] = newValue.value.trim();
+        }
         if (!Object.keys(v).length) { status.textContent = 'Nothing to save yet: paste a new value into a box.'; return; }
         save(v);
       } }), ' ', status]));
