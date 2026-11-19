@@ -27,6 +27,7 @@
     ]],
     ['Website and app', [
       ['/admin/community', 'Website', 'Requests, sign-ups, RSVPs, approvals, visitors'],
+      ['/pushka/', 'My Pushka app', 'Open the app the way families see it'],
       ['announce', 'Announcements', 'Notices on the app’s home screen'],
       ['push', 'Send a message', 'A notification to everyone’s phone'],
       ['settings', 'Keys and settings', 'Change a Stripe, email or Google key from your phone; server care'],
