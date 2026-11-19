@@ -1253,6 +1253,17 @@ test('jokes are gathered by topic: collection pages open in three languages, a s
   const map = (await c.call('GET', '/sitemap.xml')).text; assert.ok(map.includes('/stories/jokes/' + cols[0].id)); assert.ok(!map.includes('/stories/' + jokes[0].slug + '<'), 'no single-joke pages in the sitemap');
   assert.equal((await c.call('GET', '/stories/jokes/nothing-9')).status, 404);
 });
+test('sponsor options open the giving form with the usual amount: dinner $360, preschool $1,800 or more, holiday $720 or more', async () => {
+  const c = client();
+  for (const pre of ['', '/he', '/ru']) {
+    const t = (await c.call('GET', pre + '/sponsor')).text;
+    assert.match(t, /\/donate\?fund=general&amp;amt=360&amp;ded=/, pre + ' Shabbat dinner'); assert.match(t, /\/donate\?fund=preschool&amp;amt=1800&amp;ded=/, pre + ' preschool'); assert.match(t, /\/donate\?fund=holidays&amp;amt=720&amp;ded=/, pre + ' holiday');
+    assert.ok(t.includes('/sponsor-a-kiddush'), 'the Kiddush goes to the Kiddush calendar');
+  }
+  const form = (await c.call('GET', '/donate?fund=preschool&amt=1800#give')).text; assert.match(form, /value="1800" checked/, 'the form opens with $1,800 chosen'); assert.match(form, /<option value="preschool" selected>/);
+  assert.match((await c.call('GET', '/donate?fund=holidays&amt=720#give')).text, /value="720" checked/, '$720 is one of the amounts to tap');
+  assert.match((await c.call('GET', '/sponsor')).text, /Suggested gift: \$1,800 or more/);
+});
 test('campaign setup in the Rabbi area: create, picture, start, top bar on every page, stop, undo', async () => {
   const CSm = require('./site/campaign-settings.js'), a = await admin(), c = client(), H = { 'x-admin': '1' };
   // the rules (no database needed)

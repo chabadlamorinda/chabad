@@ -19,7 +19,10 @@ const FINAL = { 'ך': 'כ', 'ם': 'מ', 'ן': 'נ', 'ף': 'פ', 'ץ': 'צ' };
 // The monthly cycle of Tehillim by day of the Hebrew month (on a 29-day month, day 29 also says day 30's portion).
 const MONTHLY = ['1-9', '10-17', '18-22', '23-28', '29-34', '35-38', '39-43', '44-48', '49-54', '55-59', '60-65', '66-68', '69-71', '72-76', '77-78', '79-82', '83-87', '88-89', '90-96', '97-103', '104-105', '106-107', '108-112', '113-118', '119:1-96', '119:97-176', '120-134', '135-139', '140-144', '145-150'];
 const sefaria = (ref, lang) => `https://www.sefaria.org/Psalms.${ref}?lang=${lang === 'he' ? 'he' : 'bi'}`;
-const giveUrl = (fund, ded) => `/donate?fund=${encodeURIComponent(fund || 'general')}&ded=${encodeURIComponent(String(ded || '').slice(0, 80))}#give`; // the giving form on /donate, filled in
+const giveUrl = (fund, ded, amt) => `/donate?fund=${encodeURIComponent(fund || 'general')}${amt ? '&amt=' + Number(amt) : ''}&ded=${encodeURIComponent(String(ded || '').slice(0, 80))}#give`;
+// What each way of marking an occasion usually costs (the Rabbi's figures): the giving form opens with this amount chosen.
+// "more": the amount is a starting point, shown as "or more".
+const SPONSOR_AMOUNT = { 'shabbat-dinner': { amt: 360 }, preschool: { amt: 1800, more: true }, holiday: { amt: 720, more: true } }; // the giving form on /donate, filled in
 
 // Which extra boxes a help page shows.
 const HELP_EXTRAS = {
@@ -163,7 +166,7 @@ ${sit}
     // "Add a loved one": their name (and Hebrew name), the occasion, and the dedication carries into every way to mark it.
     const hn = String(req.query.hn || '').trim().slice(0, 60), who = who0 && hn ? `${who0} (${hn})` : who0 || hn;
     const ded = oc ? (who ? oc.dedication.replace('{name}', who) : oc.dedication.replace(/\s*\{name\}('s)?\s*/, ' ').replace(/\s+/g, ' ').trim()) : '';
-    const opts = S.options.map((p) => `<div class="card dir-i"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p><p><a class="btn ${p.id === 'kiddush' ? 'gold' : 'ghost'} sm" href="${p.url ? esc(p.url) : esc(giveUrl(p.fund, ded))}">${esc(p.id === 'kiddush' ? t('Choose a Shabbat') : t('Sponsor'))}</a></p></div>`).join('');
+    const opts = S.options.map((p) => { const sa = SPONSOR_AMOUNT[p.id], money = sa && '$' + sa.amt.toLocaleString('en-US'); return `<div class="card dir-i"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p>${sa ? `<p class="small"><strong>${esc(t(sa.more ? 'Suggested gift: {amount} or more' : 'Suggested gift: {amount}', { amount: money }))}</strong></p>` : ''}<p><a class="btn ${p.id === 'kiddush' ? 'gold' : 'ghost'} sm" href="${p.url ? esc(p.url) : esc(giveUrl(p.fund, ded, sa && sa.amt))}">${esc(p.id === 'kiddush' ? t('Choose a Shabbat') : t('Sponsor'))}</a></p></div>`; }).join('');
     const sit = oc && { yahrzeit: 'yahrzeit', refuah: 'refuah', 'new-baby': 'new-baby', birthday: 'birthday' }[oc.id];
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Sponsor in honor or memory of a loved one'))}</h1>
 <p class="lead-d">${esc(S.intro)}</p>

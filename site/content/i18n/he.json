@@ -1,6 +1,8 @@
 {
  "Your email (for your receipt)": "האימייל שלך (לקבלה)",
  "Ask the Rabbi privately": "שאלו את הרב באופן פרטי",
+ "Suggested gift: {amount}": "תרומה מומלצת: {amount}",
+ "Suggested gift: {amount} or more": "תרומה מומלצת: {amount} ומעלה",
  "If this was not you, one click removes you:": "אם זה לא היית אתה/את, לחיצה אחת מסירה אותך:",
  "Thank you! You are signed up for the weekly email.": "תודה! נרשמת למייל השבועי.",
  "Welcome to the weekly email from {org}": "ברוכים הבאים למייל השבועי של {org}",

@@ -1,6 +1,8 @@
 {
  "Your email (for your receipt)": "Ваш адрес эл. почты (для квитанции)",
  "Ask the Rabbi privately": "Задайте вопрос раввину лично",
+ "Suggested gift: {amount}": "Рекомендуемый дар: {amount}",
+ "Suggested gift: {amount} or more": "Рекомендуемый дар: от {amount}",
  "If this was not you, one click removes you:": "Если это были не вы, один щелчок удалит вас из списка:",
  "Thank you! You are signed up for the weekly email.": "Спасибо! Вы подписаны на еженедельную рассылку.",
  "Welcome to the weekly email from {org}": "Добро пожаловать в еженедельную рассылку {org}",
