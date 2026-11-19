@@ -16,6 +16,13 @@ test('the official gift receipt: letterhead, gift details, tax statement and sig
   const ru = receipt({ lang: 'ru', base: '', org, gift: { ...gift, monthly: true }, donor: {} });
   assert.ok(ru.html.includes('рав Исраэль и Ципора Лабковски')); assert.ok(ru.html.includes('ежемесячно'));
   assert.ok(!/undefined|\[object/.test(en.html + he.html + ru.html), 'nothing left blank or broken');
+  // the thank-you: warm, about the area (not town names), about this kind of gift, its dedication and the giver's own words; the names at the top and the bottom
+  const chesed = receipt({ lang: 'en', base: '', org, gift: { ...gift, fundId: 'chesed' }, donor: { name: 'Dana Levi' } });
+  assert.ok(chesed.html.includes('strengthens Jewish life for families in the area.') && !/Lafayette, Moraga and Orinda/.test(chesed.html + chesed.text));
+  assert.ok(chesed.html.includes('visit and care for those in need') && chesed.html.includes('Your gift is dedicated: In memory of Sarah bat Avraham') && chesed.html.includes('“For my mother”'));
+  assert.equal((chesed.html.match(/Rabbi Israel and Tzipora Labkowski/g) || []).length, 2, 'the names at the top and at the bottom');
+  assert.ok(chesed.html.indexOf('Rabbi Israel and Tzipora Labkowski') < chesed.html.indexOf('Official gift receipt</div>'), 'at the top, in the letterhead');
+  for (const L of ['he', 'ru']) { const r = receipt({ lang: L, base: '', org, gift: { ...gift, fundId: 'preschool' }, donor: {} }); assert.ok(!/undefined/.test(r.html) && r.html.includes('“For my mother”') || r.html.includes('«For my mother»'), L + ' has the specific thanks'); }
   const plain = receipt({ lang: 'en', base: '', org, gift: { cents: 500, fund: 'General Fund', monthly: false, date: new Date(), number: 'CL-2026-00000005' }, donor: {} });
   assert.ok(plain.html.includes('Dear friend,') && !plain.html.includes('Your note'), 'a gift with no details still gets a receipt');
 });

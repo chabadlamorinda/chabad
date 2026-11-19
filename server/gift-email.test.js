@@ -36,4 +36,9 @@ test('the Rabbi is emailed once when a pushka gift succeeds, and not for other p
   assert.equal(sent.length, 2); assert.match(sent[1].subject, /monthly/); assert.match(sent[1].subject, /Chai Club/);
   const me = (await store.listMembers()).find((m) => m.id === mid); assert.equal(me.gift_cents, 18000); assert.equal(me.gift_count, 1);
   assert.equal((await store.listPaymentEvents()).length, 0, 'gifts are not payment problems');
+  // where the gift came from is told truthfully: the app says My Pushka, the website says the website
+  assert.match(sent[0].text, /came in through the My Pushka app/);
+  await hook({ id: 'evt_w', type: 'payment_intent.succeeded', data: { object: { id: 'pi_w', customer: 'cus_W', amount: 1800, amount_received: 1800, receipt_email: 'web@example.com', metadata: { source: 'pushka', via: 'website', fund: 'general', donor_name: 'Web Giver' } } } }); await settle();
+  const web = sent.find((m) => /\$18\.00/.test(m.subject));
+  assert.match(web.text, /came in through the website/); assert.doesNotMatch(web.text, /Pushka/);
 });
