@@ -1415,7 +1415,7 @@ test('the CRM / Invitations updater: finds an app by its service, updates it fro
   const commit = (file, text) => { fs.writeFileSync(path.join(work, file), text); sh(work, 'add', '-A'); sh(work, 'commit', '-q', '-m', text); sh(work, 'push', '-q', 'origin', 'main'); };
   commit('package-lock.json', 'lock1'); commit('v.txt', '1');
   sh(dir, 'clone', '-q', origin, app);
-  fs.writeFileSync(path.join(units, 'crm.service'), `[Service]\nWorkingDirectory=${app}\nUser=\nExecStart=/bin/true\n`);
+  fs.writeFileSync(path.join(units, 'crm.service'), `[Service]\nUser=\nExecStart=/usr/bin/node ${path.join(app, 'v.txt')}\n`); // no WorkingDirectory: found through the start command
   fs.writeFileSync(path.join(units, 'other.service'), '[Service]\nWorkingDirectory=/tmp\n');
   const calls = path.join(dir, 'calls'), flag = path.join(dir, 'fail');
   fs.writeFileSync(path.join(dir, 'systemctl'), `#!/bin/bash\necho "$@" >> ${calls}\n[ "$1" = is-active ] && [ -f ${flag} ] && exit 3\nexit 0\n`, { mode: 0o755 });
@@ -1434,5 +1434,44 @@ test('the CRM / Invitations updater: finds an app by its service, updates it fro
   const before = log().split('restart crm.service').length; run('update'); run('update');
   assert.equal(log().split('restart crm.service').length, before, 'the failed version is not tried again every 10 seconds');
   fs.unlinkSync(flag); commit('v.txt', '4'); run('update'); assert.equal(sh(app, 'log', '--format=%s', '-1'), '4', 'a newer version is tried again');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('an app that runs from a plain copy (not linked to GitHub) is linked to its repository and brought up to date', () => {
+  const { spawnSync, execFileSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'adopt-'));
+  const sh = (cwd, ...a) => execFileSync('git', ['-c', 'user.name=t', '-c', 'user.email=t@example.org', ...a], { cwd, stdio: 'pipe' }).toString().trim();
+  const base = path.join(dir, 'gh'), work = path.join(dir, 'work'), app = path.join(dir, 'opt', 'crm'), units = path.join(dir, 'units'), state = path.join(dir, 'state');
+  for (const d of [base, work, units, path.join(app, 'data')]) fs.mkdirSync(d, { recursive: true });
+  sh(dir, 'init', '-q', '--bare', '-b', 'main', path.join(base, 'chabad-crm.git')); sh(work, 'init', '-q', '-b', 'main'); sh(work, 'remote', 'add', 'origin', path.join(base, 'chabad-crm.git'));
+  const commit = (file, text) => { fs.writeFileSync(path.join(work, file), text); sh(work, 'add', '-A'); sh(work, 'commit', '-q', '-m', text); sh(work, 'push', '-q', 'origin', 'main'); };
+  commit('package.json', '{}'); commit('package-lock.json', 'lock'); commit('index.js', 'new code');
+  fs.writeFileSync(path.join(app, 'package.json'), '{}'); fs.writeFileSync(path.join(app, 'index.js'), 'old copy'); fs.writeFileSync(path.join(app, 'data', 'crm.db'), 'the real data');
+  fs.writeFileSync(path.join(units, 'crm.service'), `[Service]\nExecStart=/usr/bin/node ${path.join(app, 'index.js')}\n`);
+  const calls = path.join(dir, 'calls');
+  fs.writeFileSync(path.join(dir, 'systemctl'), `#!/bin/bash\necho "$@" >> ${calls}\nexit 0\n`, { mode: 0o755 }); fs.writeFileSync(path.join(dir, 'npm'), `#!/bin/bash\necho "npm $@" >> ${calls}\nexit 0\n`, { mode: 0o755 });
+  const env2 = { ...process.env, SYSTEMD_DIR: units, SYSTEMCTL: path.join(dir, 'systemctl'), NPM_CMD: path.join(dir, 'npm'), STATE_DIR: state, APPS_LOG: path.join(dir, 'log'), APPS_GITHUB_BASE: base, SETTLE: '0' };
+  const run = (mode, extra = {}) => spawnSync('bash', [path.join(__dirname, '..', 'deploy-oracle', 'update-apps.sh'), mode], { env: { ...env2, ...extra } }).stdout.toString();
+  assert.match(run('report'), /not saved yet/); assert.match(run('report'), /crm\.service/, 'the report shows the service and its folder even when it is not linked');
+  run('update', { APPS_GITHUB_BASE: 'https://github.com/chabadlamorinda' }); assert.equal(fs.readFileSync(path.join(app, 'index.js'), 'utf8'), 'old copy', 'nothing is touched without the GitHub key');
+  assert.match(fs.readFileSync(path.join(dir, 'log'), 'utf8'), /not linked to GitHub yet/, 'it says what is needed');
+  run('update', { GITHUB_APPS_TOKEN: 'github_pat_' + 'a'.repeat(30) });
+  assert.equal(fs.readFileSync(path.join(app, 'index.js'), 'utf8'), 'new code', 'linked, and now the same as GitHub');
+  assert.equal(fs.readFileSync(path.join(app, 'data', 'crm.db'), 'utf8'), 'the real data', 'the data is untouched');
+  assert.match(fs.readFileSync(calls, 'utf8'), /restart crm\.service/); assert.match(fs.readFileSync(calls, 'utf8'), /npm ci/);
+  commit('index.js', 'newer code'); run('update', { GITHUB_APPS_TOKEN: 'github_pat_' + 'a'.repeat(30) });
+  assert.equal(fs.readFileSync(path.join(app, 'index.js'), 'utf8'), 'newer code', 'and from then on it follows GitHub');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test('the GitHub key saved in the Rabbi area reaches the updater (decrypted on the server), and nothing is printed when none is saved', async () => {
+  const a = await admin(), { spawnSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'tok-'));
+  fs.writeFileSync(path.join(dir, 'env'), `DATABASE_URL=${pg.url}\nSESSION_SECRET=${SECRET}\n`);
+  const run = () => spawnSync('node', [path.join(__dirname, '..', 'deploy-oracle', 'get-token.js')], { env: { ...process.env, ENV_FILE: path.join(dir, 'env'), APP_DIR: path.join(__dirname, '..') } });
+  assert.equal(run().stdout.toString(), '', 'no key saved: nothing');
+  const T = 'github_pat_' + 'b'.repeat(30);
+  assert.equal((await a.call('POST', '/admin/api/site/settings', { values: { GITHUB_APPS_TOKEN: 'not a key' } }, { 'x-admin': '1' })).status, 400, 'a wrong-looking key is refused');
+  assert.equal((await a.call('POST', '/admin/api/site/settings', { values: { GITHUB_APPS_TOKEN: T } }, { 'x-admin': '1' })).status, 200);
+  assert.equal(run().stdout.toString(), T, 'the updater gets the key');
+  const list = await a.call('GET', '/admin/api/site/settings'); assert.ok(!list.text.includes(T), 'the screen never shows it back');
   fs.rmSync(dir, { recursive: true, force: true });
 });

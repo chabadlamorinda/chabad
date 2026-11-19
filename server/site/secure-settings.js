@@ -17,6 +17,7 @@ const SETTINGS = [
   { id: 'SMTP_URL', label: 'Email account (sending)', secret: true, help: 'The mail address and its app password written as smtps://name%40gmail.com:app-password@smtp.gmail.com:465. Ask Claude to write it for you.', test: /^smtps?:\/\/\S+@\S+$/ },
   { id: 'MAIL_FROM', label: 'Emails are sent from', secret: false, help: 'For example: Chabad of Lamorinda <office@example.org>', test: /^(?:[^<>]*<[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+>|[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+)$/ },
   { id: 'ADMIN_EMAIL', label: 'Where the Rabbi\'s notices go', secret: false, help: 'The address that gets requests, gifts and the 9 AM summary.', test: EMAIL },
+  { id: 'GITHUB_APPS_TOKEN', label: 'GitHub key for the CRM and Invitations apps', secret: true, help: 'A read-only key so the server can keep those two apps up to date: GitHub, Settings, Developer settings, Fine-grained tokens, only the repositories chabad-crm and invitations, Contents: Read-only. Starts with github_pat_.', test: /^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/ },
   { id: 'GA_ID', label: 'Google Analytics code', secret: false, help: 'Looks like G-ABC123XYZ.', test: /^G-[A-Z0-9]{4,}$/ },
   { id: 'ANTHROPIC_API_KEY', label: 'AI answers in the chat', secret: true, help: 'Starts with sk-ant-. Optional; costs a little.', test: /^sk-ant-[A-Za-z0-9_-]{10,}$/ },
   { id: 'FB_PAGE_ID', label: 'Facebook page number', secret: false, help: 'Digits only.', test: /^\d{5,}$/ },
