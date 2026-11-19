@@ -1078,3 +1078,8 @@ summary { min-height: 40px; display: list-item; }
 .give-who { margin: 8px 0 12px; }
 .give-who p { margin: 0 0 4px; }
 .give-more input, .give-more textarea, .give-who input, .give-who textarea { width: 100%; margin-top: 4px; }
+/* Get the app (/app) */
+.app-steps { margin: .4rem 0 0; padding-inline-start: 1.3rem; line-height: 1.7; }
+.app-steps li { margin: .35rem 0; }
+.app-qr { width: 190px; max-width: 60%; margin: .6rem 0 1rem; background: #fff; padding: 8px; border-radius: 10px; border: 1px solid var(--line); }
+.app-qr svg { display: block; width: 100%; height: auto; }

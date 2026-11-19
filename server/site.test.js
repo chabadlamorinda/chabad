@@ -615,6 +615,8 @@ test('home page: large banners, smaller banners, what we built, ways to get invo
   assert.match((await client().call('GET', '/')).text, /class="story"/); assert.match((await client().call('GET', '/')).text, /\/media\/photos\/[a-z-]+\.jpg/);
   for (const L of ['', '/he', '/ru']) { const d = await client().call('GET', L + '/dreidel'); assert.equal(d.status, 200); assert.match(d.text, /data-dreidel/); }
   assert.match((await client().call('GET', '/holidays/chanukah')).text, /href="\/dreidel"/);
+  for (const L of ['', '/he', '/ru']) { const g = await client().call('GET', L + '/app'); assert.equal(g.status, 200); assert.match(g.text, /href="\/pushka\/\?install=1"/); assert.match(g.text, /<svg/); assert.match(g.text, /href="[^"]*\/app"/); }
+  assert.match((await client().call('GET', '/he/app')).text, /הקופה שלי/);
   for (const L of ['', '/he', '/ru']) { const m = await client().call('GET', L + '/menorah'); assert.equal(m.status, 200); assert.match(m.text, /data-menorah/); assert.match(m.text, /להדליק נר חנכה|לְהַדְלִיק נֵר חֲנֻכָּה/); }
   assert.match((await client().call('GET', '/holidays/chanukah')).text, /href="\/menorah"/);
   // The Chanukah quiz: ten questions, each with exactly one right answer that exists, in all three languages.

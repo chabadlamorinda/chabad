@@ -1436,6 +1436,8 @@ function installCard() {
   if (PRACTICE || standalone()) return "";
   return `<div class="card" style="flex-direction:column;align-items:stretch;gap:6px"><div class="card-title">${t("Get the app")}</div><div class="h-s">${t("Add My Pushka to your home screen to open it like an app.")}</div><button class="btn btn-ghost" data-act="install">${t("Install the app")}</button></div>`;
 }
+A.installOffer = () => sheet(`<div><h3>${t("Install My Pushka")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("Add it to your home screen to open it like an app, in one tap.")}</div></div><button class="btn btn-primary cta" data-act="installGo">${t("Install the app")}</button><button class="btn btn-ghost" data-act="closeSheet">${t("Not now")}</button>`);
+A.installGo = () => { closeSheet(); A.install(); };
 A.install = async () => {
   if (U.installEv) { const e = U.installEv; U.installEv = null; try { e.prompt(); await e.userChoice; } catch (x) {} return draw(); }
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
@@ -1452,5 +1454,6 @@ try {
 try { const go = new URLSearchParams(location.search).get("go"); if (go === "coin") { setTimeout(() => A.dropPrimary(), 900); history.replaceState(null, "", location.pathname); } else if (go === "empty") { setTimeout(() => A.openEmpty(), 900); history.replaceState(null, "", location.pathname); } else if (["yahrzeit", "club", "give", "board", "occasions"].includes(go)) { U.page = go; U.stack = [go === "club" ? "give" : go === "give" ? "" : "more"].filter(Boolean); history.replaceState(null, "", location.pathname); } } catch (e) {}
 draw();
 if (S.bio) { showLock(); A.unlock(); }
+try { if (new URLSearchParams(location.search).get("install") && !standalone() && !PRACTICE) { history.replaceState(null, "", location.pathname); setTimeout(() => A.installOffer(), 900); } } catch (e) {}
 initPay().then(() => { pullState(); try { if (API.accounts && !S.auth && new URLSearchParams(location.search).get("signin")) { history.replaceState(null, "", location.pathname); signInSheet(""); } } catch (e) {} }); loadExtras(); loadCandles(); setInterval(tick, 30000); setTimeout(tick, 2000); setTimeout(autoEmpty, 1500); autoCoins();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

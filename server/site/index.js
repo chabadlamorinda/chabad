@@ -37,6 +37,7 @@ const { mountForms } = require('./forms.js');
 const { mountGive } = require('./give.js');
 const { mountKiddushPage } = require('./kiddush-page.js');
 const { mountFun } = require('./fun.js');
+const { mountGetApp } = require('./getapp.js');
 const { mountCampaignPages } = require('./campaign-page.js');
 const { mountFlyer } = require('./flyer.js');
 const { mountChat } = require('./chat.js');
@@ -149,6 +150,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   require('./stories.js').mountStories(r, { render: pages.render, wrap, ctxOf });
   mountKiddushPage(r, { render: pages.render, wrap, ctxOf });
   mountFun(r, { render: pages.render, wrap, ctxOf, base });
+  mountGetApp(r, { render: pages.render, wrap, ctxOf, base });
   mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base, store });
   CS.mountPublic(r, { store, wrap });
   mountFlyer(r, { wrap, ctxOf, base });
