@@ -18,10 +18,11 @@ test('the official gift receipt: letterhead, gift details, tax statement and sig
   assert.ok(!/undefined|\[object/.test(en.html + he.html + ru.html), 'nothing left blank or broken');
   // the letter: short, personal, in the Rabbi's voice: the amount, partnering, being part of everything, helping Chabad grow; signed once; then the receipt
   const letter = receipt({ lang: 'en', base: '', org, gift: { ...gift, fundId: 'general', note: '', dedication: '' }, donor: { name: 'Dana Levi' } });
-  for (const x of ['Dear Dana Levi,', 'Thank you for your gift of $360.', 'Thank you for partnering with us, for being part of everything we do, and for helping Chabad of Lamorinda grow.', 'We are truly grateful for your friendship and your generosity.']) assert.ok(letter.html.includes(x) && letter.text.includes(x), 'the letter says: ' + x);
+  for (const x of ['Dear Dana Levi,', 'Thank you for your gift of $360.', 'Thank you for partnering with us and for helping Chabad of Lamorinda grow.', 'We are truly grateful for your friendship and your generosity.']) assert.ok(letter.html.includes(x) && letter.text.includes(x), 'the letter says: ' + x);
   assert.ok(receipt({ lang: 'en', base: '', org, gift: { ...gift, monthly: true }, donor: {} }).html.includes('Thank you for your monthly gift of $360.'), 'a monthly gift is thanked as monthly');
   assert.ok(receipt({ lang: 'en', base: '', org, gift: { ...gift, cents: 1850 }, donor: {} }).html.includes('gift of $18.50.'), 'cents are kept when there are cents');
   assert.equal((letter.html.match(/Rabbi Israel and Tzipora Labkowski/g) || []).length, 1, 'signed once');
+  assert.ok(!/everything we do/.test(letter.html), 'the redundant phrase is gone');
   assert.ok(letter.html.indexOf('Thank you for your gift of $360.') < letter.html.indexOf('Rabbi Israel and Tzipora Labkowski') && letter.html.indexOf('Rabbi Israel and Tzipora Labkowski') < letter.html.indexOf('Receipt number'), 'the letter, then the signature, then the gift receipt');
   assert.ok(/color:#c99a2e/.test(letter.html.slice(letter.html.indexOf('With blessings and gratitude'), letter.html.indexOf('Receipt number'))), 'the names are in gold');
   // a gift for a particular purpose, a dedication or a note gets one short, warm line each (the general fund needs none)
