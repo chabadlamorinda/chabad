@@ -951,12 +951,13 @@ test('new tools: zmanim, Hebrew birthday, monthly calendar, parsha', async () =>
 test('weekly email: preview, send once to subscribers and members, unsubscribe', async () => {
   const g = client();
   await g.call('POST', '/api/site/forms/newsletter', { fields: { name: 'Reader', email: 'reader@x.co' } });
-  // Double opt-in: only after the reader confirms from their own inbox.
-  const conf = mails.find((x) => x.to === 'reader@x.co' && /Please confirm/.test(x.subject));
-  assert.ok(conf, 'a confirmation email is sent');
-  const confLink = /(\/newsletter\/confirm\?\S+)/.exec(conf.text)[1];
-  assert.match((await g.call('GET', confLink.replace(/t=[^&]+/, 't=wrong'))).text, /not valid/);
-  assert.match((await g.call('GET', confLink)).text, /You are signed up/);
+  // One step: the reader is signed up at once and gets a welcome with an unsubscribe link. (A confirmation link still exists for addresses that had unsubscribed.)
+  await new Promise((r) => setTimeout(r, 400));
+  assert.ok(mails.find((x) => x.to === 'reader@x.co' && /Welcome/.test(x.subject)), 'a welcome email is sent');
+  assert.ok(!mails.find((x) => x.to === 'reader@x.co' && /Please confirm/.test(x.subject)), 'no confirmation step');
+  assert.equal((await store.pool.query("SELECT status FROM email_subscribers WHERE email='reader@x.co'")).rows[0].status, 'confirmed');
+  const confLink = '/newsletter/confirm?e=' + encodeURIComponent('reader@x.co') + '&t=wrong';
+  assert.match((await g.call('GET', confLink)).text, /not valid/);
   const m = await signIn('member@x.co'); await m.call('PUT', '/api/site/me', { name: 'Member' });
   const a = await admin();
   const pv = (await a.call('GET', '/admin/api/site/weekly?note=' + encodeURIComponent('Good Shabbos everyone!'))).json;
@@ -980,13 +981,18 @@ test('email system: sign up from any page, the designed email in each language, 
   assert.doesNotMatch((await g.call('GET', '/donate')).text, /data-nl-pop/);
   assert.match((await g.call('GET', '/subscribe')).text, /data-subscribe="page"/);
   assert.match((await g.call('GET', '/')).text, /data-continue hidden/, 'the home page has the place for "Welcome back"');
-  // Sign up in Russian: pending until confirmed from the inbox (in Russian), then in the Russian list.
+  // Sign up in Russian: signed up at once (the Rabbi's direction), with a welcome in Russian and a one-click unsubscribe; listed as confirmed.
   mails.length = 0;
   assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'nope' })).status, 400);
-  assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'Olga@X.co', name: 'Olga', lang: 'ru', source: 'popup:/' })).json.pending, true);
-  const conf = mails.find((m) => m.to === 'olga@x.co'); assert.ok(conf && conf.html, 'a designed confirmation email');
-  assert.match((await g.call('GET', /(\/ru\/newsletter\/confirm\?\S+)/.exec(conf.text)[1])).text, /<html lang="ru"/);
+  const sgn = await g.call('POST', '/api/site/subscribe', { email: 'Olga@X.co', name: 'Olga', lang: 'ru', source: 'popup:/' });
+  assert.equal(sgn.json.subscribed, true); assert.ok(!sgn.json.pending);
+  const welcome = mails.find((m) => m.to === 'olga@x.co'); assert.ok(welcome && welcome.html && /\/unsubscribe\?e=/.test(welcome.text), 'a welcome with an unsubscribe link');
+  assert.match(welcome.subject, /Добро пожаловать/);
   assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'olga@x.co', lang: 'ru' })).json.already, true);
+  // Someone who unsubscribed is not put back by a stranger typing their address: they confirm from their inbox first.
+  await store.pool.query("INSERT INTO email_unsubscribes (email) VALUES ('left@x.co') ON CONFLICT DO NOTHING");
+  assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'left@x.co', lang: 'en' })).json.pending, true);
+  const conf = mails.find((m) => m.to === 'left@x.co'); assert.ok(conf && /\/newsletter\/confirm\?/.test(conf.text), 'an address that had unsubscribed must confirm first');
   let subs = (await a.call('GET', '/admin/api/site/email/subscribers')).json;
   const olga = subs.items.find((s) => s.email === 'olga@x.co'); assert.equal(olga.status, 'confirmed'); assert.equal(olga.lang, 'ru');
   // The Rabbi adds someone in Hebrew; the designed email in each language; the holiday edition; his own message.

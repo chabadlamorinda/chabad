@@ -1,6 +1,10 @@
 {
  "Your email (for your receipt)": "Ваш адрес эл. почты (для квитанции)",
  "Ask the Rabbi privately": "Задайте вопрос раввину лично",
+ "If this was not you, one click removes you:": "Если это были не вы, один щелчок удалит вас из списка:",
+ "Thank you! You are signed up for the weekly email.": "Спасибо! Вы подписаны на еженедельную рассылку.",
+ "Welcome to the weekly email from {org}": "Добро пожаловать в еженедельную рассылку {org}",
+ "Welcome! You are signed up for the weekly email from {org}: Shabbat times, events and a thought from the Rabbi, once a week.": "Добро пожаловать! Вы подписаны на еженедельную рассылку {org}: время Шаббата, события и мысль от раввина, раз в неделю.",
  "Ask the Rabbi your own question: it goes only to him, and he answers you directly, by email or phone. Below are real questions from our community, with the answers.": "Задайте раввину свой вопрос: он получит его только сам и ответит вам лично, по почте или по телефону. Ниже настоящие вопросы нашей общины с ответами.",
  "Please add your name and an email or a phone number so the Rabbi can answer you.": "Пожалуйста, укажите имя и адрес почты или номер телефона, чтобы раввин мог вам ответить.",
  "Prefer to talk? Call {phone}.": "Хотите поговорить? Позвоните: {phone}.",

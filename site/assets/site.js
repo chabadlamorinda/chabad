@@ -91,7 +91,7 @@
         btn.disabled = false;
         if (r._status !== 200) { msg.textContent = r.error || T('Something went wrong. Please try again.'); return; }
         store.set('cl_nl', 'done');
-        msg.textContent = r.already ? T('You are already signed up. Thank you!') : T('Thank you! Please check your email and tap the link to confirm.');
+        msg.textContent = r.already ? T('You are already signed up. Thank you!') : r.pending ? T('Thank you! Please check your email and tap the link to confirm.') : T('Thank you! You are signed up for the weekly email.');
         f.classList.add('done');
         var pop = f.closest('[data-nl-pop]'); if (pop) setTimeout(function () { pop.classList.remove('on'); setTimeout(function () { pop.hidden = true; }, 300); }, 4000);
       }, function () { btn.disabled = false; msg.textContent = T('Something went wrong. Please try again.'); });

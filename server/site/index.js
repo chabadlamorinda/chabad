@@ -142,7 +142,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   mountFun(r, { render: pages.render, wrap, ctxOf, base });
   mountCampaignPages(r, { render: pages.render, wrap, ctxOf, base, store });
   mountFlyer(r, { wrap, ctxOf, base });
-  const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', confirmNews: (email, lang) => weekly.confirmUrl(email, lang) });
+  const forms = mountForms(r, { base, store, mailer, content, render: pages.render, wrap, limit, readMember: community.readMember, ctxOf, tOf, log, notifyTo: env.ADMIN_EMAIL || '', signUpNews: (p) => weekly.subscribe(p) });
   mountParsha(r, { render: pages.render, wrap, ctxOf, base });
   mountMitzvah(app, r, { store, render: pages.render, wrap, ctxOf, limit, base, log });
   ask = mountAsk(r, { store, render: pages.render, wrap, ctxOf, base, faqLd: pages.faqLd, crumbs: pages.crumbs });
