@@ -138,14 +138,7 @@ function communityStore(store) {
       } catch (e) { await c.query('ROLLBACK'); throw e; } finally { c.release(); }
     },
     webYahrzeits: (memberId) => rows("SELECT * FROM yahrzeits WHERE member_id=$1 ORDER BY created_at", [memberId]),
-    async replaceWebYahrzeits(memberId, list) {
-      const c = await pool.connect();
-      try {
-        await c.query('BEGIN'); await c.query("DELETE FROM yahrzeits WHERE member_id=$1 AND source='web'", [memberId]);
-        for (const y of list) await c.query("INSERT INTO yahrzeits (id, member_id, name, relation, h_day, h_month, h_year, notes, source) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,'web')", [memberId + ':web-' + crypto.randomBytes(6).toString('hex'), memberId, y.name, y.relation, y.day, y.month, y.year || null, y.notes]);
-        await c.query('COMMIT');
-      } catch (e) { await c.query('ROLLBACK'); throw e; } finally { c.release(); }
-    },
+    replaceWebYahrzeits: (memberId, list) => store.replaceYahrzeits(memberId, list, 'web'), // one list, shared with the My Pushka app
     // Returns the RSVP's invite code (for "Bring a friend"). A ref counts only if it is another guest's code for the same event.
     async upsertRsvp(r) {
       countCache.val = null;
@@ -203,7 +196,8 @@ function sanitizeYahrzeits(list) {
     if (y.date && ymdOk(y.date)) { const p = H.hebrewOf(y.date, y.afterSunset === true); day = p.day; month = p.month; year = p.year; }
     if (!Number.isInteger(day) || day < 1 || day > 30 || !H.MONTHS.includes(month)) return null;
     if (year !== null && (!Number.isInteger(year) || year < 4000 || year > 6000)) return null;
-    out.push({ name, relation: clean(y.relation, 40), day, month, year, notes: clean(y.notes, 200) });
+    const id = clean(y.id, 40).replace(/[^A-Za-z0-9_-]/g, ''); // an entry that already exists keeps its id (also one made in the app)
+    out.push({ ...(id && !out.some((o) => o.id === id) ? { id } : {}), name, relation: clean(y.relation, 40), day, month, year, notes: clean(y.notes, 200) });
   }
   return out;
 }
@@ -312,7 +306,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     res.json({
       profile: { name: m.name, email: m.email, phone: m.phone, address: m.address, hebrewName: m.hebrew_name, birthday: d10(m.birthday), birthAfterSunset: m.birth_after_sunset, anniversary: d10(m.anniversary), mezuzahsChecked: d10(m.mezuzahs_checked), tefillinChecked: d10(m.tefillin_checked), diet: m.diet || '', personalize: m.personalize !== false, town: m.town || '', shabbatEmail: !!m.shabbat_email, news: m.news, shareYahrzeits: m.share_yahrzeits },
       family: family.map((f) => ({ name: f.name, hebrewName: f.hebrew_name, relation: f.relation, gender: f.gender, birthday: f.birthday || '', birthAfterSunset: f.birth_after_sunset, diet: f.diet || '' })),
-      yahrzeits: yz.map((y) => ({ name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes, fromApp: y.source !== 'web', next: (H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, new Date(now()).toISOString().slice(0, 10)) || {}).date || '' })),
+      yahrzeits: yz.map((y) => ({ id: y.id.slice(m.id.length + 1), name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes, fromApp: y.source !== 'web', next: (H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, new Date(now()).toISOString().slice(0, 10)) || {}).date || '' })),
       rsvps: rs.map((x) => ({ event: x.event_slug, adults: x.adults, kids: x.kids })),
       upcoming: (await upcomingDates(m, family, yz)).map((u) => (u.parsha ? { ...u, parshaLabel: langOf(req) === 'he' ? u.parshaHe : tOf(req)(u.parsha) } : u)),
       towns: (townsOf ? townsOf(langOf(req)) : content().towns).map((x) => ({ slug: x.slug, name: x.name })),

@@ -856,13 +856,13 @@
       api('PUT', '/family', { family: fam }).then(function (r) { msg(m2, r.ok ? T('Saved.') : r.error, r.ok); });
     });
 
-    // Yahrzeits (entries from the My Pushka app are shown, and are edited in the app)
+    // Yahrzeits: ONE list, the same as in the My Pushka app (entries made in either place can be edited in both)
     var yList = el('div'), m3 = el('p', { class: 'msg', hidden: true });
-    var fromApp = me.yahrzeits.filter(function (y) { return y.fromApp; }), web = me.yahrzeits.filter(function (y) { return !y.fromApp; });
+    var web = me.yahrzeits;
     var sponsorLink = function (y) { return el('a', { class: 'btn sm ghost', href: P('/sponsor?o=yahrzeit&name=' + encodeURIComponent(y.name)), text: T('Sponsor in their memory') }); };
     var addY = function (y) {
       y = y || {};
-      var row = { name: field(T('Name'), y.name), relation: field(T('Relation (e.g. father)'), y.relation), date: field(T('Date of passing'), '', { type: 'date' }), night: check(T('Passed after sunset'), false), notes: field(T('Notes'), y.notes), keep: y.day ? { day: y.day, month: y.month, year: y.year } : null };
+      var row = { name: field(T('Name'), y.name), relation: field(T('Relation (e.g. father)'), y.relation), date: field(T('Date of passing'), '', { type: 'date' }), night: check(T('Passed after sunset'), false), notes: field(T('Notes'), y.notes), keep: y.day ? { day: y.day, month: y.month, year: y.year } : null, id: y.id || '' };
       var div = el('div', { class: 'person' }, [el('div', { class: 'fields' }, [row.name, row.relation, row.date, row.notes]), row.night,
         y.day ? el('p', { class: 'muted', text: T('Hebrew date: {date}', { date: y.day + ' ' + y.month }) + (y.next ? ' · ' + T('next yahrzeit {date}', { date: y.next }) : '') + '. ' + T('Enter a date only to change it.') }) : null,
         el('p', { class: 'btns' }, [el('button', { type: 'button', class: 'btn sm ghost', text: T('Remove'), on: { click: function () { div.remove(); } } }), y.name ? sponsorLink(y) : null])]);
@@ -872,11 +872,10 @@
     var yq = (new URLSearchParams(location.search).get('yahrzeit') || '').trim().slice(0, 60); /* from /sponsor: "Remember them every year" */
     if (yq && !web.some(function (y) { return y.name === yq; })) addY({ name: yq });
     var s3 = el('form', { class: 'card', id: 'yahrzeits' }, [el('h2', { text: T('Yahrzeits') }), el('p', { class: 'muted', text: T('We work out the Hebrew date and remind you every year.') }),
-      fromApp.length ? el('ul', {}, fromApp.map(function (y) { return el('li', {}, [y.name + ' · ' + y.day + ' ' + y.month + (y.next ? ' · ' + T('next yahrzeit {date}', { date: y.next }) : '') + ' ' + T('(from the My Pushka app)') + ' ', sponsorLink(y)]); })) : null,
       yList, el('p', { class: 'btns' }, [el('button', { type: 'button', class: 'btn ghost', text: T('+ Add a yahrzeit'), on: { click: function () { addY(); } } }), el('button', { class: 'btn gold', text: T('Save yahrzeits') })]), m3]);
     s3.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      var list = [].map.call(yList.children, function (d) { var r = d.row, o = { name: r.name.input.value, relation: r.relation.input.value, notes: r.notes.input.value };
+      var list = [].map.call(yList.children, function (d) { var r = d.row, o = { id: r.id, name: r.name.input.value, relation: r.relation.input.value, notes: r.notes.input.value };
         if (r.date.input.value) { o.date = r.date.input.value; o.afterSunset = r.night.input.checked; } else if (r.keep) { o.day = r.keep.day; o.month = r.keep.month; o.year = r.keep.year; }
         return o; }).filter(function (x) { return x.name.trim(); });
       api('PUT', '/yahrzeits', { yahrzeits: list }).then(function (r) { msg(m3, r.ok ? T('Saved.') : r.error, r.ok); if (r.ok) loadAccount(); });

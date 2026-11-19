@@ -67,12 +67,18 @@ function mountMembers(api, { store, tokens, wrap, HttpError, vapidPublicKey, lim
   api.post('/member/card-updated', need, auth, wrap(async (req, res) => { if (req.member.stripe_customer_id) await store.clearCardIssue(req.member.stripe_customer_id); res.json({ ok: true }); }));
   api.delete('/member', need, auth, wrap(async (req, res) => { await store.deleteMember(req.member.id); res.json({ ok: true }); }));
 
-  // The app sends the full list. share=true means the Rabbi may see it; false keeps it private to this member (used only for their own reminders).
+  // ONE yahrzeit list per person, shared with the website's account page. The app reads it here and sends back the whole list.
+  // Sharing with the Rabbi is a separate choice: it changes only when the app sends share (true or false) on purpose.
+  api.get('/yahrzeits', need, auth, wrap(async (req, res) => {
+    const m = req.member, ys = await store.listYahrzeits(m.id);
+    res.setHeader('Cache-Control', 'no-store');
+    res.json({ share: !!m.share_yahrzeits, entries: ys.map((y) => ({ id: y.id.slice(y.id.indexOf(':') + 1), name: y.name, relation: y.relation, day: y.h_day, month: y.h_month, year: y.h_year, notes: y.notes })) });
+  }));
   api.put('/yahrzeits', need, auth, wrap(async (req, res) => {
     const entries = sanitizeEntries(req.body && req.body.entries);
     if (!entries) throw new HttpError(400, 'invalid_entries', 'Please check the yahrzeit details.');
     await store.replaceYahrzeits(req.member.id, entries);
-    await store.setShare(req.member.id, req.body.share === true);
+    if (typeof req.body.share === 'boolean') await store.setShare(req.member.id, req.body.share);
     res.json({ ok: true, count: entries.length });
   }));
   api.delete('/yahrzeits', need, auth, wrap(async (req, res) => { await store.replaceYahrzeits(req.member.id, []); await store.setShare(req.member.id, false); res.json({ ok: true }); }));

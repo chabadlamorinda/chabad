@@ -140,12 +140,19 @@ function createStore(url, opts = {}) {
       (SELECT count(*) FROM payment_events e WHERE e.type='gift' AND ((m.stripe_customer_id IS NOT NULL AND e.customer_id=m.stripe_customer_id) OR (e.email<>'' AND lower(e.email)=lower(m.email))))::int AS gift_count FROM members m ORDER BY m.created_at DESC`),
 
     // ----- yahrzeits -----
-    async replaceYahrzeits(memberId, entries) {
+    // ONE list per person: the website and the app both send the whole list and it replaces everything. Each entry keeps
+    // its id (so reminders already sent are not sent again) and where it was first added (source).
+    async replaceYahrzeits(memberId, entries, newSource = 'app') {
       const c = await pool.connect();
       try {
-        await c.query('BEGIN');
-        await c.query("DELETE FROM yahrzeits WHERE member_id=$1 AND source='app'", [memberId]); // the website's own entries (source 'web') stay
-        for (const e of entries) await c.query('INSERT INTO yahrzeits (id, member_id, name, relation, h_day, h_month, h_year, notes) VALUES ($1,$2,$3,$4,$5,$6,$7,$8)', [memberId + ':' + e.id, memberId, e.name, e.relation, e.day, e.month, e.year || null, e.notes]);
+        await c.query('BEGIN'); await c.query('SELECT pg_advisory_xact_lock(hashtext($1))', ['yz:' + memberId]);
+        const old = new Map((await c.query('SELECT id, source, created_at FROM yahrzeits WHERE member_id=$1', [memberId])).rows.map((r) => [r.id, r]));
+        await c.query('DELETE FROM yahrzeits WHERE member_id=$1', [memberId]);
+        for (const e of entries) {
+          const id = memberId + ':' + (e.id || newSource + '-' + crypto.randomBytes(6).toString('hex')), was = old.get(id);
+          await c.query('INSERT INTO yahrzeits (id, member_id, name, relation, h_day, h_month, h_year, notes, source, created_at) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9, COALESCE($10, now()))',
+            [id, memberId, e.name, e.relation || '', e.day, e.month, e.year || null, e.notes || '', was ? was.source : newSource, was ? was.created_at : null]);
+        }
         await c.query('COMMIT');
       } catch (err) { await c.query('ROLLBACK'); throw err; } finally { c.release(); }
     },

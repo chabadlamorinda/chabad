@@ -175,7 +175,7 @@ test('email sign-in: code, link, wrong codes; an app record with the same email 
   assert.equal((await c.call('POST', '/account/verify', form, { 'content-type': 'application/x-www-form-urlencoded' })).headers.get('location'), '/account?expired=1', 'links work once');
 });
 
-test('profile, family and yahrzeits; app yahrzeits are kept separate', async () => {
+test('profile, family and yahrzeits; the app and the website share one yahrzeit list', async () => {
   const c = await signIn();
   assert.equal((await c.call('PUT', '/api/site/me', { name: '' })).json.code, 'invalid_name');
   assert.equal((await c.call('PUT', '/api/site/me', { name: 'A', birthday: '2023-02-31' })).status, 200, 'an impossible date is ignored, not a crash');
@@ -192,9 +192,9 @@ test('profile, family and yahrzeits; app yahrzeits are kept separate', async () 
   assert.ok(me.upcoming.every((u, i, a) => !i || a[i - 1].date <= u.date), 'soonest first');
   // The Rabbi sees shared yahrzeits from the website too.
   const shared = await store.sharedYahrzeits(); assert.equal(shared.length, 1);
-  // A My Pushka sync replaces only the app's own entries.
-  await store.replaceYahrzeits((await store.pool.query('SELECT id FROM members')).rows[0].id, [{ id: 'a1', name: 'From app', relation: '', day: 1, month: 'Nisan', year: null, notes: '' }]);
-  assert.equal((await c.call('GET', '/api/site/me')).json.yahrzeits.length, 2);
+  // A My Pushka sync sends the whole list (the website's entry included, with its id), so both places show the same two.
+  await store.replaceYahrzeits((await store.pool.query('SELECT id FROM members')).rows[0].id, [{ id: me.yahrzeits[0].id, name: 'Avraham ben Yitzchak', relation: 'Father', day: 14, month: 'Adar', year: null, notes: '' }, { id: 'a1', name: 'From app', relation: '', day: 1, month: 'Nisan', year: null, notes: '' }]);
+  const after = (await c.call('GET', '/api/site/me')).json.yahrzeits; assert.equal(after.length, 2); assert.equal(after[0].id, me.yahrzeits[0].id, 'the website entry kept its id and its place');
 });
 
 test('RSVP: one tap for members (family counted), guests by form, capacity, update, cancel', async () => {
@@ -338,6 +338,35 @@ test('community board: submit, moderate, then it appears', async () => {
   assert.match((await g.call('GET', '/community')).text, /Levi family on the twins/);
   assert.match((await g.call('GET', '/')).text, /Community news/);
   assert.equal((await g.call('GET', '/get-involved')).status, 200);
+});
+
+test('yahrzeits are ONE list in the website and the app, sharing changes only on purpose, and only one reminder goes out', async () => {
+  const XF = { 'x-forwarded-for': '10.30.30.30' }, c = client();
+  assert.equal((await c.call('POST', '/api/site/login', { email: 'one@example.com' }, XF)).status, 200);
+  assert.equal((await c.call('POST', '/api/site/verify', { email: 'one@example.com', code: /code is (\d{6})/.exec(mails[mails.length - 1].text)[1] }, XF)).status, 200);
+  const H = require('../pushka/hebdate.js'), { createReminders } = require('./site/reminders.js');
+  const today = '2026-11-01', p = H.parts(H.addDays(today, 7));
+  assert.equal((await c.call('PUT', '/api/site/yahrzeits', { yahrzeits: [{ name: 'Web Entry', day: p.day, month: p.month }] }, XF)).status, 200);
+  // the app (same person) sees the website's entry, adds its own, and the website then shows both
+  const tok = (await c.call('POST', '/api/auth/session', {}, XF)).json.token, app = (method, body) => fetch(base + '/api/yahrzeits', { method, headers: { 'content-type': 'application/json', authorization: 'Bearer ' + tok }, body: body && JSON.stringify(body) }).then((r) => r.json());
+  const got = await app('GET'); assert.equal(got.entries.length, 1); assert.equal(got.entries[0].name, 'Web Entry'); assert.equal(got.share, false);
+  await app('PUT', { entries: [...got.entries, { id: 'y1', name: 'App Entry', day: 3, month: 'Kislev' }] });
+  const me = (await c.call('GET', '/api/site/me', undefined, XF)).json.yahrzeits; assert.deepEqual(me.map((y) => y.name).sort(), ['App Entry', 'Web Entry']);
+  assert.ok(me.find((y) => y.name === 'Web Entry').id === got.entries[0].id, 'an entry keeps its id wherever it is saved');
+  // the website saves the list back (with the app's entry edited): still one list, nothing doubled
+  await c.call('PUT', '/api/site/yahrzeits', { yahrzeits: me.map((y) => ({ id: y.id, name: y.name === 'App Entry' ? 'App Entry (edited)' : y.name, day: y.day, month: y.month })) }, XF);
+  assert.deepEqual((await app('GET')).entries.map((e) => e.name).sort(), ['App Entry (edited)', 'Web Entry']);
+  // sharing with the Rabbi changes only when asked
+  await c.call('PUT', '/api/site/me', { name: 'One', shareYahrzeits: true }, XF);
+  await app('PUT', { entries: (await app('GET')).entries }); assert.equal((await app('GET')).share, true, 'saving the list does not turn sharing off');
+  await app('PUT', { entries: (await app('GET')).entries, share: false }); assert.equal((await app('GET')).share, false);
+  // one reminder: email when the app's yahrzeit notifications are off ...
+  const run = async () => { const out = []; await createReminders({ store, mailer: { send: async (m) => out.push(m) }, base: 'http://site.test', org: load().org, now: () => new Date(today + 'T18:00:00Z') }).run(); return out.filter((m) => /Yahrzeit of Web Entry/.test(m.subject)); };
+  const mid = (await store.pool.query("SELECT id FROM members WHERE verified_email='one@example.com'")).rows[0].id;
+  await store.pool.query("INSERT INTO push_subs (id, member_id, endpoint, p256dh, auth, prefs) VALUES ('s1', $1, 'https://push.example/1', 'k', 'a', '{\"yahrzeit\":{\"on\":true}}')", [mid]);
+  assert.equal((await run()).length, 0, '... and no email when the app sends a notification instead');
+  await store.pool.query("UPDATE push_subs SET prefs='{\"yahrzeit\":{\"on\":false}}'");
+  assert.equal((await run()).length, 1);
 });
 
 test('reminder emails: yahrzeit a week and a day before, Hebrew birthday, never twice', async () => {

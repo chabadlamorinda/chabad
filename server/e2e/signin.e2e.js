@@ -40,6 +40,9 @@ const { startPg } = require('../pg-test-helper.js');
     await b.evaluate(() => { U.page = 'profile'; draw(); }); await signIn(b, 'dina@example.com');
     await b.waitForSelector('.toast'); assert.match(await b.textContent('.toast'), /restored/);
     assert.equal(await b.evaluate(() => P().balance), balA);
+    // yahrzeits are one list: added on phone A, it appears on phone B (and on the website account, tested in site.test.js)
+    await a.evaluate(async () => { S.yz.push({ id: 'e2e1', name: 'Shared Name', relation: '', day: 5, month: 'Tevet', year: null, notes: '' }); save(); await yzSyncNow(); });
+    await b.evaluate(() => pullState()); await b.waitForFunction(() => S.yz.some((e) => e.name === 'Shared Name'), null, { timeout: 5000 });
     // sign out clears the device but not the account
     await b.evaluate(() => A.signOutGo()); await b.waitForTimeout(300);
     assert.equal(await b.evaluate(() => P().balance), 0); assert.equal(await b.evaluate(() => !!S.auth), false);

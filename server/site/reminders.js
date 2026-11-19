@@ -48,8 +48,11 @@ function createReminders({ store, mailer, base, org, log = console, now = () => 
         await send(key, { to: notifyTo || org.email, subject: 'Time to download a full backup of the website', text: `It has been ${weeks} weeks since ${st.lastAt ? 'you last downloaded' : 'the website was set up, and you have not yet downloaded'} a full backup.\n\nPlease open the Rabbi's desk and tap "Download a full backup", then keep the file somewhere safe (your computer, Google Drive). It takes a few seconds, and it is the copy that survives even if the server is ever lost:\n${base}/admin/\n\nThis reminder comes back every Sunday until you do it, and then again in 4 weeks.` });
       }
     }
-    // Website members (signed in at least once) get email; app-only members get the app's push reminders.
-    const ys = (await q(`SELECT y.*, m.name AS member_name, m.email, m.lang FROM yahrzeits y JOIN members m ON m.id=y.member_id WHERE m.last_login IS NOT NULL AND m.email <> ''`)).rows;
+    // ONE reminder per yahrzeit: a person who turned on yahrzeit notifications in the My Pushka app gets those (server/scheduler.js);
+    // everyone else with a signed-in account (website or app, same list) gets this email. Never both.
+    const ys = (await q(`SELECT y.*, m.name AS member_name, m.email, m.lang FROM yahrzeits y JOIN members m ON m.id=y.member_id
+      WHERE (m.verified_email IS NOT NULL OR m.last_login IS NOT NULL) AND m.email <> ''
+        AND NOT EXISTS (SELECT 1 FROM push_subs p WHERE p.member_id = m.id AND p.prefs->'yahrzeit'->>'on' = 'true')`)).rows;
     for (const y of ys) {
       const n = H.next({ day: y.h_day, month: y.h_month, year: y.h_year }, today); if (!n) continue;
       const left = H.daysBetween(today, n.date);

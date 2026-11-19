@@ -988,12 +988,20 @@ let yzTimer = null;
 function yzSync() {
   if (!API.members || PRACTICE || !S.mtoken) return;
   clearTimeout(yzTimer);
-  yzTimer = setTimeout(async () => {
-    try {
-      if (S.yzShare || S.yzRemind) await api("/yahrzeits", { method: "PUT", member: true, body: { entries: S.yz.map((e) => ({ id: e.id, name: e.name, relation: e.relation || "", day: e.day, month: e.month, year: e.year || null, notes: e.notes || "" })), share: S.yzShare } });
-      else await api("/yahrzeits", { method: "DELETE", member: true });
-    } catch (e) {}
-  }, 400);
+  yzTimer = setTimeout(() => yzPut(undefined).catch(() => {}), 400);
+}
+// Signed in: the list is ONE list with the website's account page, so it is always saved (sharing with the Rabbi is a
+// separate choice, sent only when it changes). Not signed in: it leaves the phone only for sharing or notifications.
+async function yzPut(share) {
+  const body = { entries: S.yz.map((e) => ({ id: e.id, name: e.name, relation: e.relation || "", day: e.day, month: e.month, year: e.year || null, notes: e.notes || "" })) };
+  if (typeof share === "boolean") body.share = share; else if (!S.auth) body.share = S.yzShare;
+  if (S.auth || S.yzShare || S.yzRemind) await api("/yahrzeits", { method: "PUT", member: true, body });
+  else await api("/yahrzeits", { method: "DELETE", member: true });
+}
+// After signing in, and whenever the app comes back to the front: the account's list (the website may have changed it) is the one shown.
+async function yzPull() {
+  if (!S.auth || !S.mtoken || PRACTICE || !API.members) return;
+  try { const r = await api("/yahrzeits", { member: true }); S.yz = (r.entries || []).map((e) => ({ id: e.id, name: e.name, relation: e.relation || "", day: e.day, month: e.month, year: e.year || null, notes: e.notes || "" })); S.yzShare = !!r.share; noSync = true; persist(); noSync = false; if (U.drawn) draw(); } catch (e) {}
 }
 A.yzLead = (v) => { const n = +v, i = S.yzLeads.indexOf(n); if (i >= 0) { if (S.yzLeads.length === 1) return toast(tt("Keep at least one reminder, or turn reminders off")); S.yzLeads.splice(i, 1); } else S.yzLeads.push(n); S.yzLeads.sort((a, b) => b - a); save(); pushPrefsSoon(); draw(); };
 A.yzShareTgl = async () => {
@@ -1001,10 +1009,10 @@ A.yzShareTgl = async () => {
     const ok = await new Promise((res) => sheet(`<div><h3>${t("Share with Chabad of Lamorinda?")}</h3><div class="h-s" style="font-size:13px;margin-top:4px">${t("The Rabbi will be able to see the names and dates on this list, together with your name, email and phone, so he can remember your loved ones and reach out to you. You can turn this off at any time and it will be deleted from our server.")}</div></div><button class="btn btn-primary cta" id="shYes">${t("Yes, share")}</button><button class="btn btn-ghost" id="shNo">${t("Not now")}</button>`, (o) => { $("#shYes", o).onclick = () => { res(true); closeSheet(); }; $("#shNo", o).onclick = () => closeSheet(); }, () => res(false)));
     if (!ok) return;
     try { if (!(await ensureMember())) return; } catch (e) { return toast(errText(e)); }
-    S.yzShare = true; save(); await yzSyncNow(); toast(tt("Shared with the Rabbi")); draw();
-  } else { S.yzShare = false; save(); await yzSyncNow(); toast(tt("Sharing is off and your data was removed")); draw(); }
+    S.yzShare = true; save(); await yzSyncNow(true); toast(tt("Shared with the Rabbi")); draw();
+  } else { S.yzShare = false; save(); await yzSyncNow(false); toast(S.auth ? tt("Sharing is off. Your list stays in your account, and only you can see it.") : tt("Sharing is off and your data was removed")); draw(); }
 };
-async function yzSyncNow() { clearTimeout(yzTimer); if (!API.members || PRACTICE || !S.mtoken) return; try { if (S.yzShare || S.yzRemind) await api("/yahrzeits", { method: "PUT", member: true, body: { entries: S.yz.map((e) => ({ id: e.id, name: e.name, relation: e.relation || "", day: e.day, month: e.month, year: e.year || null, notes: e.notes || "" })), share: S.yzShare } }); else await api("/yahrzeits", { method: "DELETE", member: true }); } catch (e) { toast(errText(e)); } }
+async function yzSyncNow(share) { clearTimeout(yzTimer); if (!API.members || PRACTICE || !S.mtoken) return; try { await yzPut(share); } catch (e) { toast(errText(e)); } }
 A.yzRemindTgl = async () => {
   if (!S.yzRemind) {
     try { if (!(await ensureMember())) return; } catch (e) { return toast(errText(e)); }
@@ -1344,7 +1352,7 @@ A.resetAsk = (v) => {
 A.resetGo = (v) => { const p = S.pushkas.find((x) => x.id === v) || P(); S.history = S.history.filter((h) => !(h.kind === "coin" && h.pid === p.id && h.t > S.lastEmptied)); p.balance = 0; p.drops = 0; U.fillFor = ""; save(); closeSheet(); draw(); if (S.pushOn) pushPrefsSoon(); toast(tt("Pushka reset")); };
 
 // ---------- sign in, and your own pushka on every device (optional) ----------
-const DEVICE_KEYS = ["token", "mtoken", "msig", "auth", "rev", "dirty", "synced", "bio", "notified", "candles", "pushOn"];
+const DEVICE_KEYS = ["token", "mtoken", "msig", "auth", "rev", "dirty", "synced", "bio", "notified", "candles", "pushOn", "yz", "yzShare"]; // yahrzeits live in the account's one list (yzPull), not in the saved pushka
 const stateDoc = () => { const d = JSON.parse(JSON.stringify(S)); DEVICE_KEYS.forEach((k) => delete d[k]); return d; };
 const hasLocal = () => S.history.length > 0 || S.pushkas.some((p) => p.balance > 0 || p.drops > 0);
 function applyDoc(doc, rev) {
@@ -1362,7 +1370,16 @@ async function pushState(force) {
 }
 async function pullState() {
   if (!S.auth || !S.mtoken || PRACTICE || syncing) return;
-  try { if (S.dirty) return void (await pushState()); const r = await api("/account/state", { member: true }); if (r.state && r.rev > (S.rev || 0)) applyDoc(r.state, r.rev); } catch (e) {}
+  try { if (S.dirty) await pushState(); else { const r = await api("/account/state", { member: true }); if (r.state && r.rev > (S.rev || 0)) applyDoc(r.state, r.rev); } } catch (e) {}
+  await yzPull();
+}
+// First sign-in on a phone that already has yahrzeits: they join the account's list (nothing typed on the phone is lost).
+async function yzJoin() {
+  if (!API.members || PRACTICE) return;
+  const local = S.yz.slice(), key = (e) => [e.name.trim().toLowerCase(), e.day, e.month].join("|");
+  await yzPull();
+  const have = new Set(S.yz.map((e) => e.id)), names = new Set(S.yz.map(key)), extra = local.filter((e) => !have.has(e.id) && !names.has(key(e)));
+  if (extra.length) { S.yz = S.yz.concat(extra); persist(); try { await yzPut(undefined); } catch (e) {} }
 }
 document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") pullState(); });
 window.addEventListener("online", () => pullState());
@@ -1406,6 +1423,7 @@ async function finishSignIn(r, quiet) {
   if (r.stripeToken && !(quiet && S.token)) { S.token = r.stripeToken; S.synced = ""; API.card = null; API.subs = null; }
   S.msig = [S.name, S.email, S.phone, S.address, S.token].join("|"); S.rev = 0; persist();
   if (API.enabled && S.token) refreshCard().catch(() => {});
+  await yzJoin();
   if (r.hasState && hasLocal()) return conflictSheet();
   if (r.hasState) { const st = await api("/account/state", { member: true }); applyDoc(st.state, st.rev); closeSheet(); return toast(tt("Welcome back! Your pushka is restored.")); }
   S.dirty = true; await pushState(); closeSheet(); draw(); toast(tt("Signed in. Your pushka is saved."));
