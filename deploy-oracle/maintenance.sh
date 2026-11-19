@@ -2,7 +2,7 @@
 # Maintenance requests: "ask Claude in chat, the server does it by itself". Claude adds a line to
 # deploy-oracle/maintenance/requests.txt (id, then one action from the fixed list below) and pushes it to GitHub; within
 # about 5 minutes auto-update.sh gets it and calls this script, which runs every request that has not run yet, once.
-# (Actions: status-report, faster-updates, update-report, disk-report, restart-site, restart-caddy, update-os, backup-now, clean-disk, reboot.)
+# (Actions: status-report, apps-report, update-apps, faster-updates, update-report, disk-report, restart-site, restart-caddy, update-os, backup-now, clean-disk, reboot.)
 # Only the actions listed here can run (no free-form commands). What happened is written to /var/log/website-maintenance.log,
 # which the Rabbi area shows under "Keys and settings" -> "Server care".
 #   Run by hand:  sudo bash /opt/website-src/deploy-oracle/maintenance.sh
@@ -22,6 +22,8 @@ do_action() {
   case "$1" in
     status-report) { echo "services:"; run systemctl is-active kiddush caddy postgresql; run uptime; run df -h /; run free -m; } ;;
     faster-updates) { if [ -n "$DRY" ]; then echo "would run: cron every minute with flock"; else printf '%s\n' '# checks GitHub every 10 seconds (five looks a minute); flock keeps two runs from overlapping' '* * * * * root flock -n /var/lock/website-update.lock bash /opt/website-src/deploy-oracle/auto-update.sh' > /etc/cron.d/website-auto-update && chmod 644 /etc/cron.d/website-auto-update && echo "updates now go live about 20 to 30 seconds after they are published"; fi; } ;;
+    apps-report) bash "$SRC/deploy-oracle/update-apps.sh" report 2>&1 ;;
+    update-apps) bash "$SRC/deploy-oracle/update-apps.sh" update 2>&1; echo "the CRM and Invitations apps were checked and updated if GitHub had something newer" ;;
     update-report) { echo "version on this server:"; git -C "$SRC" log --oneline -1 2>&1; echo "last lines of the automatic update log:"; tail -n 6 /var/log/website-auto-update.log 2>&1; } ;;
     disk-report) { run df -h /; run du -sh /var/backups/kiddush /var/log /opt/kiddush; } ;;
     restart-site) run systemctl restart kiddush && echo "the website was restarted" ;;

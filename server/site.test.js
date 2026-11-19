@@ -1405,3 +1405,34 @@ test('www goes to the main address (one page, not two, for Google), keeping the 
   const w = await get('www.site.test', '/learn/mezuzah?x=1'); assert.equal(w.status, 301); assert.equal(w.location, 'http://site.test/learn/mezuzah?x=1');
   assert.equal((await get('site.test', '/learn/mezuzah')).status, 200, 'the main address itself is not redirected');
 });
+
+test('the CRM / Invitations updater: finds an app by its service, updates it from GitHub, reinstalls packages only when they changed, and puts it back (once) when it will not start', () => {
+  const { spawnSync, execFileSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'apps-'));
+  const sh = (cwd, ...a) => execFileSync('git', ['-c', 'user.name=t', '-c', 'user.email=t@example.org', ...a], { cwd, stdio: 'pipe' }).toString().trim();
+  const origin = path.join(dir, 'origin.git'), work = path.join(dir, 'work'), app = path.join(dir, 'app'), units = path.join(dir, 'units'), state = path.join(dir, 'state');
+  fs.mkdirSync(units); fs.mkdirSync(work);
+  sh(dir, 'init', '-q', '--bare', '-b', 'main', origin); sh(work, 'init', '-q', '-b', 'main'); sh(work, 'remote', 'add', 'origin', origin);
+  const commit = (file, text) => { fs.writeFileSync(path.join(work, file), text); sh(work, 'add', '-A'); sh(work, 'commit', '-q', '-m', text); sh(work, 'push', '-q', 'origin', 'main'); };
+  commit('package-lock.json', 'lock1'); commit('v.txt', '1');
+  sh(dir, 'clone', '-q', origin, app);
+  fs.writeFileSync(path.join(units, 'crm.service'), `[Service]\nWorkingDirectory=${app}\nUser=\nExecStart=/bin/true\n`);
+  fs.writeFileSync(path.join(units, 'other.service'), '[Service]\nWorkingDirectory=/tmp\n');
+  const calls = path.join(dir, 'calls'), flag = path.join(dir, 'fail');
+  fs.writeFileSync(path.join(dir, 'systemctl'), `#!/bin/bash\necho "$@" >> ${calls}\n[ "$1" = is-active ] && [ -f ${flag} ] && exit 3\nexit 0\n`, { mode: 0o755 });
+  fs.writeFileSync(path.join(dir, 'npm'), `#!/bin/bash\necho "npm $@" >> ${calls}\nexit 0\n`, { mode: 0o755 });
+  const env2 = { ...process.env, SYSTEMD_DIR: units, SYSTEMCTL: path.join(dir, 'systemctl'), NPM_CMD: path.join(dir, 'npm'), STATE_DIR: state, APPS_LOG: path.join(dir, 'log'), APPS_REPOS_RE: 'origin\\.git$', SETTLE: '0' };
+  const run = (mode) => spawnSync('bash', [path.join(__dirname, '..', 'deploy-oracle', 'update-apps.sh'), mode], { env: env2 }).stdout.toString();
+  const log = () => (fs.existsSync(calls) ? fs.readFileSync(calls, 'utf8') : '');
+  const rep = run('report'); assert.ok(rep.includes('crm.service') && rep.includes(app) && /GitHub: reachable/.test(rep) && !rep.includes('other.service'), 'the report names the app, its folder and that GitHub answers');
+  fs.rmSync(calls, { force: true }); // the report only looked
+  run('update'); assert.equal(log(), '', 'nothing newer: nothing restarted');
+  commit('v.txt', '2'); run('update');
+  assert.equal(sh(app, 'log', '--format=%s', '-1'), '2', 'the new version is installed'); assert.match(log(), /restart crm\.service/); assert.doesNotMatch(log(), /npm ci/, 'packages are not reinstalled when they did not change');
+  commit('package-lock.json', 'lock2'); run('update'); assert.match(log(), /npm ci --omit=dev/, 'packages are reinstalled when the lock file changed');
+  fs.writeFileSync(flag, 'x'); commit('v.txt', '3'); run('update');
+  assert.equal(sh(app, 'log', '--format=%s', '-1'), 'lock2', 'a version that does not start is put back');
+  const before = log().split('restart crm.service').length; run('update'); run('update');
+  assert.equal(log().split('restart crm.service').length, before, 'the failed version is not tried again every 10 seconds');
+  fs.unlinkSync(flag); commit('v.txt', '4'); run('update'); assert.equal(sh(app, 'log', '--format=%s', '-1'), '4', 'a newer version is tried again');
+  fs.rmSync(dir, { recursive: true, force: true });
+});

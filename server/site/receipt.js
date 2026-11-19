@@ -80,8 +80,8 @@ function receipt({ lang = 'en', base = '', org = {}, gift, donor = {} }) {
   const day = (gift.date || new Date()).toLocaleDateString(LOC[L], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/Los_Angeles' });
   const ein = (String(org.legal || '').match(/\d{2}-\d{7}/) || [''])[0];
   const addr = org.address ? [org.address.street, org.address.city + ', ' + org.address.region + ' ' + org.address.postal].filter(Boolean).join(', ') : '';
-  const rows = [[W.receiptNo, gift.number], [W.date, day], [W.amount, money + (gift.monthly ? ' ' + (L === 'he' ? '(חודשית)' : L === 'ru' ? '(ежемесячно)' : '(monthly)') : '')], [W.fund, gift.fund], [W.dedication, gift.dedication], [W.how, W.online],
-    [W.from, [donor.name, donor.address].filter(Boolean).join(', ')], [W.note, gift.note]].filter((r) => r[1]);
+  const rows = [[W.receiptNo, gift.number], [W.date, day], [W.amount, money + (gift.monthly ? ' ' + (L === 'he' ? '(חודשית)' : L === 'ru' ? '(ежемесячно)' : '(monthly)') : '')], [W.fund, gift.fund], [W.how, W.online],
+    [W.from, [donor.name, donor.address].filter(Boolean).join(', ')]].filter((r) => r[1]); // the dedication and the giver's note are in the letter, so the receipt does not repeat them
   const phone = org.phone || '925-384-7242';
   // What the thank-you is about: the kind of gift, its dedication, and what the giver wrote.
   const specific = [['general', 'pledge', ''].includes(gift.fundId || '') ? '' : (FUND_THANKS[L] || FUND_THANKS.en)[gift.fundId], gift.dedication ? W.dedicated(gift.dedication) : '', gift.note ? W.noted(gift.note) : ''].filter(Boolean);

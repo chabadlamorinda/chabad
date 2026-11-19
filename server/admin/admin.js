@@ -268,7 +268,7 @@
         lines.push('Memory free: ' + c.freeMemoryMb + ' MB.');
         careBox.appendChild(el('h2', { class: 'group-h', text: 'Server care' }));
         careBox.appendChild(el('div', { class: 'card' }, lines.map(function (l) { return el('div', { class: 'small', text: l }); }).concat([el('p', { class: 'small', text: 'To restart the website, install updates, free disk space or restart the server, ask Claude in the chat; the server does it by itself within about 5 minutes and the result appears below.' })])));
-        if (c.maintenance && c.maintenance.length) careBox.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'What the server did lately' })].concat(c.maintenance.slice(-12).map(function (l) { return el('div', { class: 'small', text: l }); }))));
+        if (c.maintenance && c.maintenance.length) careBox.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'What the server did lately' })].concat(c.maintenance.slice(-30).map(function (l) { return el('div', { class: 'small', text: l }); }))));
         if (c.changes && c.changes.length) careBox.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'Settings changed lately' })].concat(c.changes.map(function (x) { return el('div', { class: 'small', text: new Date(x.at).toLocaleString('en-US') + ': ' + x.what.join(', ') }); }))));
       }).catch(function () {});
     }
