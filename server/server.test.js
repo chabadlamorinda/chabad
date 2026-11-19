@@ -170,11 +170,11 @@ test('website giving: Stripe checkout once or monthly, Chai Club details for the
   const named = await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000009' }), freq: 'once', donorName: 'Dana Levi', donorEmail: 'Dana@Example.com' });
   assert.equal(named.status, 200);
   p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
-  assert.equal(p.customer_email, 'dana@example.com'); assert.equal(p.payment_intent_data.receipt_email, 'dana@example.com'); assert.equal(p.payment_intent_data.metadata.donor_name, 'Dana Levi'); assert.equal(p.customer_creation, 'always');
+  assert.equal(p.customer_email, 'dana@example.com'); assert.equal(p.payment_intent_data.receipt_email, undefined, "Stripe's own receipt is not asked for: Chabad sends the official one"); assert.equal(p.payment_intent_data.metadata.donor_name, 'Dana Levi'); assert.equal(p.customer_creation, 'always');
   assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000010' }), freq: 'once', donorEmail: 'not-an-email' })).status, 400, 'a bad email is refused');
   // everything about the giver is optional: a gift with no details at all goes through, and extras are kept when given
   const bare = await c.call('POST', '/api/give/checkout', { ...gift({ amount: 5, idem: 'idem-site-0000000000011' }), freq: 'once' });
-  assert.equal(bare.status, 200); p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1]; assert.equal(p.customer_email, undefined); assert.equal(p.payment_intent_data.receipt_email, undefined);
+  assert.equal(bare.status, 200); p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1]; assert.equal(p.customer_email, undefined);
   await c.call('POST', '/api/give/checkout', { ...gift({ amount: 5, idem: 'idem-site-0000000000012' }), freq: 'once', donorPhone: '925-555-0100', donorAddress: '1 Main St, Lafayette', donorNote: 'For my mother' });
   p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1]; assert.equal(p.payment_intent_data.metadata.donor_phone, '925-555-0100'); assert.equal(p.payment_intent_data.metadata.donor_note, 'For my mother'); assert.match(p.payment_intent_data.metadata.donor_address, /Main St/);
   assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ fund: 'chai', idem: 'idem-site-0000000000003' }), freq: 'once', club: { show: true, name: 'X' } })).status, 400, 'the club is monthly');
