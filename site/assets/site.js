@@ -459,7 +459,7 @@
       var dn = (f.elements.donorName ? f.elements.donorName.value : '').trim(), de = (f.elements.donorEmail ? f.elements.donorEmail.value : '').trim();
       // Everything about the giver is optional: only a mistyped email is stopped (it would not get its receipt).
       if (f.elements.donorName) {
-        if (de && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(de)) { var more = f.querySelector('details.give-more'); if (more) more.open = true; return fail(T('Please enter a valid email address.'), f.elements.donorEmail); }
+        if (de && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(de)) { return fail(T('Please enter a valid email address.'), f.elements.donorEmail); }
         var val = function (n) { return f.elements[n] ? f.elements[n].value.trim() : ''; };
         if (dn) body.donorName = dn; if (de) body.donorEmail = de;
         if (val('donorPhone')) body.donorPhone = val('donorPhone'); if (val('donorAddress')) body.donorAddress = val('donorAddress'); if (val('donorNote')) body.donorNote = val('donorNote');

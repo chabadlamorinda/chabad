@@ -1074,5 +1074,7 @@ summary { min-height: 40px; display: list-item; }
 /* The optional "your details" part of the giving form: closed by default, so giving stays one tap */
 .give-more { margin: 4px 0 12px; border: 1px solid var(--line); border-radius: 12px; padding: 4px 14px 10px; background: var(--card, #fff); }
 .give-more > summary { cursor: pointer; font-weight: 600; padding: 8px 0; min-height: 40px; }
-.give-more label { display: block; margin-top: 10px; }
-.give-more input, .give-more textarea { width: 100%; margin-top: 4px; }
+.give-more label, .give-who label { display: block; margin-top: 10px; }
+.give-who { margin: 8px 0 12px; }
+.give-who p { margin: 0 0 4px; }
+.give-more input, .give-more textarea, .give-who input { width: 100%; margin-top: 4px; }
