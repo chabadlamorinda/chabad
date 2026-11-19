@@ -5,6 +5,8 @@ Done: server `website` (152.70.118.32, Oracle Always Free), jewishlamorinda.com 
 
 Phone-only upkeep: Rabbi area → Website and app → **Keys and settings** (change a key; server care), and ask Claude in chat for a restart, updates, disk clean-up or a backup (it runs within about 30 seconds).
 
+**GitHub key for the CRM and Invitations apps (made Nov 19, 2026, expires in one year: about Nov 19, 2027).** A read-only fine-grained token (only chabad-crm and invitations, Contents: Read-only) saved in Keys and settings so the server can keep those two apps updated by itself. GitHub emails a warning before it expires. To renew: make a new one the same way (github.com/settings/personal-access-tokens/new) and paste it over the old one in Keys and settings. If updates ever stop, Keys and settings → Server care says "cannot reach GitHub".
+
 Original plan:
 Decision: no monthly fee, and email works there (Render's free plan blocks it). The full step-by-step is `deploy-oracle/MOVE-THE-WHOLE-WEBSITE.md` (create the server, install with one command carrying over the Render settings, copy the database from Neon, switch the address at Cloudflare; Render stays on as the fallback). Automatic updates from GitHub every 5 minutes. Claude walks through it when you say "I'm at a computer"; first you need an Oracle Cloud account (cloud.oracle.com, free, needs a card for identity only).
 
