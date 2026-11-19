@@ -2,7 +2,7 @@
 
 **Why:** no monthly fee, and email works (Render's free plan blocks the website from sending email; Oracle allows it). **What you keep:** the same address (jewishlamorinda.com), the same Stripe, the same Google settings. **Safety:** Render keeps running the whole time. You switch the address only when the new server is checked, and you can switch back in a minute.
 
-**What changes for you:** the website will live on a server that you (and Claude) look after. It updates itself from GitHub every 5 minutes, takes a nightly backup, and restarts if it stops. Please copy a backup off the server now and then (a backup on the same machine does not survive losing the machine). Oracle can reclaim a free server that sits completely idle for weeks; a busy website does not.
+**What changes for you:** the website will live on a server that you (and Claude) look after. It updates itself from GitHub (a change is live about 30 seconds after it is published), takes a nightly backup, and restarts if it stops. Please copy a backup off the server now and then (a backup on the same machine does not survive losing the machine). Oracle can reclaim a free server that sits completely idle for weeks; a busy website does not.
 
 Plan: about 1.5 hours the first time. Do it on a computer. Claude walks you through each step and checks it.
 
@@ -51,7 +51,7 @@ Open the Rabbi area and check the requests, RSVPs and finances are all there.
 5. As soon as the new server is checked: in Render, **Settings → Suspend Web Service** (both servers would otherwise send the 9 AM summary and weekly emails). Resuming is one click. Keep Neon (the old data and a fallback) for a few weeks, then remove it. After suspending Render, Neon is no longer updated: the Oracle server's own database is the real one.
 
 ## Day to day
-* Updates: automatic from GitHub every 5 minutes (log: `/var/log/website-auto-update.log`). Claude changes the website as always; it appears within about 5 minutes. If a new version fails to start, the old one is put back by itself.
+* Updates: automatic from GitHub, checked every 10 seconds (live about 30 seconds after a push) (log: `/var/log/website-auto-update.log`). Claude changes the website as always; it appears within about 5 minutes. If a new version fails to start, the old one is put back by itself.
 * Is it running? `systemctl status kiddush`. Logs: `journalctl -u kiddush -n 100`.
 * Backups: every night in `/var/backups/kiddush` (30 days). The website's own "Download a full backup" button and the Sunday backup email still work too.
 * If something goes wrong on the day: set the two Cloudflare records back to the Render address (CNAME `chabad-lamorinda-app.onrender.com`, grey cloud) and the old site is back in a minute.

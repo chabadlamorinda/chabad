@@ -139,9 +139,10 @@ EOF
 # Like Render: when a new version is on GitHub, install it by itself (every 5 minutes). Needs the git copy to be in /opt/website-src.
 if [ "$REPO_DIR" = /opt/website-src ]; then
   cat > /etc/cron.d/website-auto-update <<'EOF'
-*/5 * * * * root bash /opt/website-src/deploy-oracle/auto-update.sh
+# checks GitHub every 10 seconds (five looks a minute); flock keeps two runs from overlapping
+* * * * * root flock -n /var/lock/website-update.lock bash /opt/website-src/deploy-oracle/auto-update.sh
 EOF
-  echo "Automatic updates from GitHub are on (every 5 minutes; log: /var/log/website-auto-update.log)."
+  echo "Automatic updates from GitHub are on (a new version is live about 30 seconds after it is published; log: /var/log/website-auto-update.log)."
 else
   echo "Tip: clone the repository into /opt/website-src (git clone <repository> /opt/website-src) and run this script from there to get automatic updates."
 fi

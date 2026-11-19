@@ -1,6 +1,7 @@
 # One request per line:  <id> <action>
-# The id is anything unique (for example the date and a number). Each id runs once, on the server's next check (about 5 minutes).
-# Actions: status-report, update-report, disk-report, restart-site, restart-caddy, update-os, backup-now, clean-disk, reboot
+# The id is anything unique (for example the date and a number). Each id runs once, on the server's next check (within seconds once faster-updates has run).
+# Actions: status-report, faster-updates, update-report, disk-report, restart-site, restart-caddy, update-os, backup-now, clean-disk, reboot
 # Results: /var/log/website-maintenance.log, shown in the Rabbi area (Keys and settings, Server care).
 2026-11-19-1 status-report
 2026-11-19-2 update-report
+2026-11-19-3 faster-updates

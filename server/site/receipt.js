@@ -9,20 +9,20 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': 
 const LOC = { en: 'en-US', he: 'he-IL', ru: 'ru-RU' };
 
 const WORDS = {
-  en: { title: 'Official gift receipt', dear: (n) => (n ? `Dear ${n},` : 'Dear friend,'), headline: (m) => (m ? 'Thank you for being our partner, month after month' : 'Thank you for partnering with us'),
-    thanks: (m) => `Your ${m ? 'monthly ' : ''}gift to Chabad of Lamorinda means more to us than we can say. You are not simply making a donation: you are our partner in everything we do, and because of you, Jewish life in our community grows stronger. Your generosity strengthens Jewish families in the area, bringing more Shabbat joy, more Jewish learning for our children, and a warm welcome for every Jew. We are truly grateful that you make this happen.`,
+  en: { title: 'Official gift receipt', dear: (n) => (n ? `Dear ${n},` : 'Dear friend,'),
+    letter: (m, money) => [`Thank you for your ${m ? 'monthly ' : ''}gift of ${money}.`, `Thank you for partnering with us, for being part of everything we do, and for helping Chabad of Lamorinda grow. Because of you, more families in our community are experiencing the joy of Shabbat, the warmth of Jewish life and the beauty of our traditions.`, `We are truly grateful for your friendship and your generosity. It means the world to us, and we feel blessed to have you with us.`],
     dedicated: (d) => `This gift is dedicated: ${d}. We are honored to be part of it.`, noted: (n) => `Your words touched us: “${n}”.`,
     receiptNo: 'Receipt number', date: 'Date of gift', amount: 'Amount of gift', fund: 'Designated for', dedication: 'In honor or in memory of', how: 'Payment', online: 'Online (secure payment through Stripe)', from: 'Received from', note: 'Your note',
     tax: 'No goods or services were provided in exchange for this gift, other than intangible religious benefits. Chabad of Lamorinda is a tax-exempt organization described in Section 501(c)(3) of the Internal Revenue Code. Please keep this receipt for your tax records.',
     taxId: 'Tax ID (EIN)', close: 'With blessings and gratitude,', sign: 'Rabbi Israel and Tzipora Labkowski', questions: 'Questions about your gift? Call', monthlyNote: 'A monthly gift: you will receive a receipt for each payment.' },
-  he: { title: 'קבלה רשמית על תרומה', dear: (n) => (n ? `${n} היקר/ה,` : 'ידיד/ה יקר/ה,'), headline: (m) => (m ? 'תודה שאתם שותפים שלנו, חודש אחרי חודש' : 'תודה על השותפות שלכם'),
-    thanks: (m) => `תרומתכם ${m ? 'החודשית ' : ''}לחב"ד למורינדה חשובה לנו יותר ממה שנוכל לומר. אתם לא רק תורמים: אתם שותפים בכל מה שאנחנו עושים, ובזכותכם החיים היהודיים בקהילה שלנו מתחזקים. נדיבותכם מחזקת את המשפחות היהודיות באזור, ומביאה עוד שמחת שבת, עוד לימוד יהודי לילדים שלנו וקבלת פנים חמה לכל יהודי. אנחנו אסירי תודה באמת על כך שאתם מאפשרים את כל זה.`,
+  he: { title: 'קבלה רשמית על תרומה', dear: (n) => (n ? `${n} היקר/ה,` : 'ידיד/ה יקר/ה,'),
+    letter: (m, money) => [`תודה על תרומתכם ${m ? 'החודשית ' : ''}בסך ${money}.`, `תודה שאתם שותפים שלנו, שאתם חלק מכל מה שאנחנו עושים, ושאתם עוזרים לחב"ד למורינדה לצמוח. בזכותכם עוד משפחות בקהילה שלנו חוות את שמחת השבת, את חמימות החיים היהודיים ואת יופיין של המסורות שלנו.`, `אנחנו אסירי תודה באמת על ידידותכם ועל נדיבותכם. זה חשוב לנו מאוד, ואנחנו מרגישים ברוכים שאתם איתנו.`],
     dedicated: (d) => `התרומה מוקדשת: ${d}. זכינו להיות שותפים לכך.`, noted: (n) => `דבריכם נגעו ללבנו: “${n}”.`,
     receiptNo: 'מספר קבלה', date: 'תאריך התרומה', amount: 'סכום התרומה', fund: 'מיועדת ל', dedication: 'לכבוד או לזכר', how: 'תשלום', online: 'מקוון (תשלום מאובטח דרך Stripe)', from: 'התקבל מאת', note: 'ההערה שלך',
     tax: 'לא סופקו סחורות או שירותים תמורת תרומה זו, מלבד הטבות רוחניות בלתי מוחשיות. חב"ד למורינדה היא ארגון פטור ממס לפי סעיף 501(c)(3) של חוק המס הפדרלי בארצות הברית. נא לשמור קבלה זו לרישומי המס שלך.',
     taxId: 'מספר מזהה לצורכי מס (EIN)', close: 'בברכה ובהכרת תודה,', sign: 'הרב ישראל וציפורה לבקובסקי', questions: 'שאלות על תרומתך? התקשרו', monthlyNote: 'תרומה חודשית: תקבלו קבלה על כל תשלום.' },
-  ru: { title: 'Официальная квитанция о пожертвовании', dear: (n) => (n ? `Уважаемый(ая) ${n}!` : 'Дорогой друг!'), headline: (m) => (m ? 'Спасибо, что вы с нами, месяц за месяцем' : 'Спасибо, что вы наш партнёр'),
-    thanks: (m) => `Ваше ${m ? 'ежемесячное ' : ''}пожертвование Хабаду Ламоринды значит для нас больше, чем мы можем выразить. Вы не просто жертвуете: вы наш партнёр во всём, что мы делаем, и благодаря вам еврейская жизнь нашей общины становится крепче. Ваша щедрость укрепляет еврейские семьи в нашем регионе и приносит больше радости субботы, больше еврейских знаний нашим детям и тёплый приём каждому еврею. Мы искренне благодарны, что вы делаете всё это возможным.`,
+  ru: { title: 'Официальная квитанция о пожертвовании', dear: (n) => (n ? `Уважаемый(ая) ${n}!` : 'Дорогой друг!'),
+    letter: (m, money) => [`Спасибо за ваш ${m ? 'ежемесячный ' : ''}дар в размере ${money}.`, `Спасибо, что вы наш партнёр, что вы часть всего, что мы делаем, и что помогаете Хабаду Ламоринды расти. Благодаря вам всё больше семей в нашей общине переживают радость субботы, тепло еврейской жизни и красоту наших традиций.`, `Мы искренне благодарны за вашу дружбу и щедрость. Это очень много для нас значит, и мы чувствуем себя благословенными, что вы с нами.`],
     dedicated: (d) => `Дар посвящён: ${d}. Для нас честь быть частью этого.`, noted: (n) => `Ваши слова нас тронули: «${n}».`,
     receiptNo: 'Номер квитанции', date: 'Дата пожертвования', amount: 'Сумма пожертвования', fund: 'Назначение', dedication: 'В честь или в память', how: 'Оплата', online: 'Онлайн (безопасная оплата через Stripe)', from: 'Получено от', note: 'Ваша записка',
     tax: 'Товары и услуги в обмен на это пожертвование не предоставлялись, кроме нематериальных религиозных благ. Хабад Ламоринды — организация, освобождённая от налогов согласно разделу 501(c)(3) Налогового кодекса США. Пожалуйста, сохраните эту квитанцию для налоговой отчётности.',
@@ -76,6 +76,7 @@ const FUND_THANKS = {
 function receipt({ lang = 'en', base = '', org = {}, gift, donor = {} }) {
   const L = WORDS[lang] ? lang : 'en', W = WORDS[L], dir = L === 'he' ? 'rtl' : 'ltr', al = L === 'he' ? 'right' : 'left';
   const money = '$' + (gift.cents / 100).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const moneyShort = gift.cents % 100 === 0 ? '$' + (gift.cents / 100).toLocaleString('en-US') : money; // "$360" in the letter, "$360.00" in the receipt
   const day = (gift.date || new Date()).toLocaleDateString(LOC[L], { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/Los_Angeles' });
   const ein = (String(org.legal || '').match(/\d{2}-\d{7}/) || [''])[0];
   const addr = org.address ? [org.address.street, org.address.city + ', ' + org.address.region + ' ' + org.address.postal].filter(Boolean).join(', ') : '';
@@ -83,7 +84,7 @@ function receipt({ lang = 'en', base = '', org = {}, gift, donor = {} }) {
     [W.from, [donor.name, donor.address].filter(Boolean).join(', ')], [W.note, gift.note]].filter((r) => r[1]);
   const phone = org.phone || '925-384-7242';
   // What the thank-you is about: the kind of gift, its dedication, and what the giver wrote.
-  const specific = [(FUND_THANKS[L] || FUND_THANKS.en)[gift.fundId], gift.dedication ? W.dedicated(gift.dedication) : '', gift.note ? W.noted(gift.note) : ''].filter(Boolean);
+  const specific = [['general', 'pledge', ''].includes(gift.fundId || '') ? '' : (FUND_THANKS[L] || FUND_THANKS.en)[gift.fundId], gift.dedication ? W.dedicated(gift.dedication) : '', gift.note ? W.noted(gift.note) : ''].filter(Boolean);
   const html = `<!doctype html><html lang="${L}" dir="${dir}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(W.title)}</title></head>
 <body style="margin:0;background:${BG};padding:18px 10px;font:16px/1.55 ${SANS};color:${INK}">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0"><tr><td align="center">
@@ -92,10 +93,11 @@ function receipt({ lang = 'en', base = '', org = {}, gift, donor = {} }) {
 <img src="${esc(base)}/assets/logo-email.png" width="64" alt="" style="display:inline-block;border:0">
 <div style="font:600 26px ${SERIF};color:${NAVY};margin-top:6px">${esc(org.name || 'Chabad of Lamorinda')}</div>
 <div style="font-size:13px;color:${MUTED};margin-top:4px">${esc(addr)}${addr ? ' · ' : ''}${esc(phone)}${ein ? '<br>' + esc(W.taxId) + ': ' + esc(ein) : ''}</div></td></tr>
-<tr><td style="padding:24px 30px 6px;text-align:${al}"><div style="font:600 13px ${SANS};letter-spacing:.08em;text-transform:uppercase;color:${GOLD_INK}">${esc(W.title)}</div>
-<p style="margin:14px 0 12px">${esc(W.dear(donor.name))}</p>
-<div style="border-${L === 'he' ? 'right' : 'left'}:4px solid ${GOLD};background:#fbf7ee;padding:14px 18px;margin:0 0 14px;border-radius:4px"><div style="font:600 21px/1.3 ${SERIF};color:${NAVY};margin:0 0 8px">${esc(W.headline(gift.monthly))}</div><p style="margin:0">${esc(W.thanks(gift.monthly))}</p></div>${specific.map((s) => `<p style="margin:0 0 10px">${esc(s)}</p>`).join('')}
-<p style="margin:16px 0 2px">${esc(W.close)}</p><p style="margin:0 0 16px;font:italic 700 21px ${SERIF};color:${GOLD}">${esc(W.sign)}</p></td></tr>
+<tr><td style="padding:26px 30px 8px;text-align:${al};font:18px/1.6 ${SERIF};color:${INK}">
+<p style="margin:0 0 14px">${esc(W.dear(donor.name))}</p>
+${W.letter(gift.monthly, moneyShort).concat(specific).map((x) => `<p style="margin:0 0 14px">${esc(x)}</p>`).join('')}
+<p style="margin:20px 0 2px">${esc(W.close)}</p><p style="margin:0 0 20px;font:italic 700 22px ${SERIF};color:${GOLD}">${esc(W.sign)}</p>
+<div style="border-top:1px solid ${LINE};padding-top:16px;font:600 13px ${SANS};letter-spacing:.08em;text-transform:uppercase;color:${GOLD_INK}">${esc(W.title)}</div></td></tr>
 <tr><td style="padding:0 30px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-top:1px solid ${LINE}">
 ${rows.map(([k, v], i) => `<tr><td style="padding:9px 0;border-bottom:1px solid ${LINE};color:${MUTED};font-size:14px;text-align:${al}" valign="top">${esc(k)}</td><td style="padding:9px 0;border-bottom:1px solid ${LINE};text-align:${L === 'he' ? 'left' : 'right'};${i === 2 ? 'font-weight:700;font-size:18px;color:' + NAVY : ''}" valign="top">${esc(v)}</td></tr>`).join('')}
 </table></td></tr>
@@ -103,7 +105,7 @@ ${rows.map(([k, v], i) => `<tr><td style="padding:9px 0;border-bottom:1px solid 
 <tr><td style="padding:10px 30px 26px;text-align:${al}">
 <p style="margin:4px 0 0;font-size:13px;color:${MUTED}">${esc(W.questions)} <span dir="ltr">${esc(phone)}</span></p></td></tr>
 </table></td></tr></table></body></html>`;
-  const text = [org.name || 'Chabad of Lamorinda', addr, ein ? `${W.taxId}: ${ein}` : '', '', W.title.toUpperCase(), '', W.dear(donor.name), '', W.headline(gift.monthly).toUpperCase(), W.thanks(gift.monthly), '', ...specific.flatMap((s) => [s, '']), W.close, W.sign, '', ...rows.map(([k, v]) => `${k}: ${v}`), '', W.tax, '', `${W.questions} ${phone}`].filter((x, i, a) => x !== '' || a[i - 1] !== '').join('\n');
+  const text = [org.name || 'Chabad of Lamorinda', addr, ein ? `${W.taxId}: ${ein}` : '', '', W.dear(donor.name), '', ...W.letter(gift.monthly, moneyShort).concat(specific).flatMap((x) => [x, '']), W.close, W.sign, '', W.title.toUpperCase(), '', ...rows.map(([k, v]) => `${k}: ${v}`), '', W.tax, '', `${W.questions} ${phone}`].filter((x, i, a) => x !== '' || a[i - 1] !== '').join('\n');
   return { subject: `${W.title}: ${org.name || 'Chabad of Lamorinda'} (${money})`, html, text };
 }
 module.exports = { receipt };
