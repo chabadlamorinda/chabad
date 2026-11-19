@@ -173,6 +173,16 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const fund = FUND_NAMES[meta.fund || sub.fund] || meta.fund || sub.fund || 'General', monthly = !isPi, club = (sub.club || meta.club) === 'yes';
     const dedication = meta.dedication || sub.dedication || '';
     mailer.send({ to, subject: `Gift received: $${(cents / 100).toFixed(2)}${monthly ? ' monthly' : ''}${club ? ' (Chai Club)' : ''}`, text: `A gift came in through My Pushka.\n\nAmount: $${(cents / 100).toFixed(2)}${monthly ? ' (monthly)' : ''}\nFund: ${fund}${club ? '\nChai Club member' : ''}${dedication ? '\nDedication: ' + dedication : ''}${email ? '\nFrom: ' + email : ''}\n\nSee everything in your Rabbi area: /admin/` }).catch((e) => log.error('gift email failed:', e && e.message));
+    // A thank-you to the person who gave on the website (their language), with the organization's tax details for their records.
+    if ((meta.via || sub.via) === 'website' && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      const L = ['he', 'ru'].includes(meta.lang || sub.lang) ? (meta.lang || sub.lang) : 'en', who = meta.donor_name || sub.donor_name || '', amt = '$' + (cents / 100).toFixed(2), legal = (((site.content && site.content()) || {}).org || {}).legal || '';
+      const TXT = {
+        en: [`Thank you${who ? ', ' + who : ''}!`, `Your ${monthly ? 'monthly ' : ''}gift of ${amt} to Chabad of Lamorinda${fund ? ' (' + fund + ')' : ''} has been received. Your generosity helps Jewish life in Lafayette, Moraga and Orinda.`, 'Stripe also emails you a payment receipt. Please keep this message for your records.', 'With gratitude, Rabbi Yisroel and Tzipora Labkowski'],
+        he: [`תודה רבה${who ? ', ' + who : ''}!`, `תרומתך ${monthly ? 'החודשית ' : ''}בסך ${amt} לחב"ד למורינדה${fund ? ' (' + fund + ')' : ''} התקבלה. נדיבותך מחזקת את החיים היהודיים בלפייט, מוראגה ואורינדה.`, 'Stripe שולחת לך גם קבלה על התשלום. נא לשמור הודעה זו לרישומיך.', 'בתודה, הרב ישראל וציפורה לבקובסקי'],
+        ru: [`Спасибо${who ? ', ' + who : ''}!`, `Ваш ${monthly ? 'ежемесячный ' : ''}дар в размере ${amt} Хабаду Ламоринды${fund ? ' (' + fund + ')' : ''} получен. Ваша щедрость поддерживает еврейскую жизнь в Лафайете, Мораге и Оринде.`,'Stripe также пришлёт вам квитанцию об оплате. Пожалуйста, сохраните это письмо для своих записей.', 'С благодарностью, рав Исроэль и Ципора Лабковски'],
+      }[L];
+      mailer.send({ to: email, subject: TXT[0], text: `${TXT[0]}\n\n${TXT[1]}\n\n${TXT[2]}\n\n${TXT[3]}\n\nChabad of Lamorinda, 3477 Golden Gate Way, Lafayette, CA 94549\n${legal}` }).catch((e) => log.error('donor thank-you failed:', e && e.message));
+    }
   }
   async function handleStripeEvent(event) {
     if (!store) return;
@@ -391,10 +401,17 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const base = configured || req.protocol + '://' + req.get('host'), pre = lang === 'en' ? '' : '/' + lang;
     const meta = { source: 'pushka', via: 'website', fund: g.fund, dedication: g.dedication, fee_covered: g.fee ? 'yes' : 'no', gift_cents: String(g.cents), ...(club ? { club: 'yes', board_show: club.show ? 'yes' : 'no', board_name: club.show ? club.name : '' } : {}) };
     const name = (monthly ? 'Monthly gift: ' : 'Gift: ') + FUND_NAMES[g.fund] + (g.dedication ? ' (' + g.dedication + ')' : '');
+    // Who is giving: asked on our own form, so a receipt can be emailed and the Rabbi knows whom to thank
+    // (Stripe's page does not always ask, for example with some wallets).
+    const giver = String(b.donorEmail || '').trim().toLowerCase().slice(0, 200), giverName = clean(b.donorName, 100);
+    if (giver && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(giver)) throw new HttpError(400, 'invalid_email', 'Please enter a valid email address.');
+    if (giverName) meta.donor_name = giverName;
+    meta.lang = lang;
     const session = await stripe.checkout.sessions.create({
       mode: monthly ? 'subscription' : 'payment', locale: lang === 'en' ? 'auto' : lang,
+      ...(giver ? { customer_email: giver } : {}), billing_address_collection: 'auto', ...(monthly ? {} : { customer_creation: 'always' }),
       line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: g.total, ...(monthly ? { product: await ensureProduct(g.fund), recurring: { interval: 'month' } } : { product_data: { name } }) } }],
-      ...(monthly ? { subscription_data: { description: 'Monthly gift: ' + FUND_NAMES[g.fund], metadata: meta } } : { submit_type: 'donate', payment_intent_data: { description: name, metadata: meta } }),
+      ...(monthly ? { subscription_data: { description: 'Monthly gift: ' + FUND_NAMES[g.fund], metadata: meta } } : { submit_type: 'donate', payment_intent_data: { description: name, metadata: meta, ...(giver ? { receipt_email: giver } : {}) } }),
       metadata: meta,
       success_url: base + pre + '/donate/thank-you?session_id={CHECKOUT_SESSION_ID}',
       cancel_url: base + pre + back,

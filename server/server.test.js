@@ -166,6 +166,12 @@ test('website giving: Stripe checkout once or monthly, Chai Club details for the
   p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
   assert.equal(p.mode, 'subscription'); assert.deepEqual(p.line_items[0].price_data.recurring, { interval: 'month' });
   assert.equal(p.subscription_data.metadata.club, 'yes'); assert.equal(p.subscription_data.metadata.board_name, 'The Levi Family'); assert.equal(p.subscription_data.metadata.gift_cents, '18000');
+  // the giver's name and email go to Stripe (receipt, thank-you) and into the gift's details
+  const named = await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000009' }), freq: 'once', donorName: 'Dana Levi', donorEmail: 'Dana@Example.com' });
+  assert.equal(named.status, 200);
+  p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
+  assert.equal(p.customer_email, 'dana@example.com'); assert.equal(p.payment_intent_data.receipt_email, 'dana@example.com'); assert.equal(p.payment_intent_data.metadata.donor_name, 'Dana Levi'); assert.equal(p.customer_creation, 'always');
+  assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000010' }), freq: 'once', donorEmail: 'not-an-email' })).status, 400, 'a bad email is refused');
   assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ fund: 'chai', idem: 'idem-site-0000000000003' }), freq: 'once', club: { show: true, name: 'X' } })).status, 400, 'the club is monthly');
   assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 0, idem: 'idem-site-0000000000004' }) })).status, 400);
   const evil = await c.call('POST', '/api/give/checkout', { ...gift({ idem: 'idem-site-0000000000005' }), back: '//evil.example' });

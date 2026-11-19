@@ -456,6 +456,12 @@
       if (!(amount >= 1 && amount <= 10000)) return fail(T('Please enter an amount between $1 and $10,000.'), other);
       var freq = f.elements.freq, monthly = (freq && (freq.value || (f.querySelector('input[name=freq]:checked') || {}).value)) === 'monthly';
       var body = { amount: amount, fund: f.elements.fund.value, freq: monthly ? 'monthly' : 'once', dedication: f.elements.dedication.value, fee: f.elements.fee.checked, lang: LANG, back: f.getAttribute('data-back') || '/donate', idem: 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
+      var dn = (f.elements.donorName ? f.elements.donorName.value : '').trim(), de = (f.elements.donorEmail ? f.elements.donorEmail.value : '').trim();
+      if (f.elements.donorName) {
+        if (!dn) return fail(T('Please enter your name.'), f.elements.donorName);
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(de)) return fail(T('Please enter a valid email address.'), f.elements.donorEmail);
+        body.donorName = dn; body.donorEmail = de;
+      }
       if (f.elements.show) {
         body.club = { show: f.elements.show.checked, name: f.elements.boardName.value.trim() };
         if (body.club.show && !body.club.name) return fail(T('Please enter the name for the board.'), f.elements.boardName);

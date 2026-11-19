@@ -42,6 +42,8 @@ ${club ? '' : `<label>${esc(t('Where should it go?'))} <select name="fund">${fun
 <label>${esc(t('In honor or in memory of (optional)'))} <input type="text" name="dedication" maxlength="80" value="${esc(opts.ded || '')}" placeholder="${esc(opts.placeholder || t('e.g. In memory of Sarah bat Avraham'))}"></label>
 ${club ? `<label class="check"><input type="checkbox" name="show" checked> ${esc(t('Show our name on the Chai Club board (amounts are never shown)'))}</label><p class="muted small">${esc(t('Names appear on the board from $72 a month.'))}</p>
 <label>${esc(t('Name for the board'))} <input type="text" name="boardName" maxlength="60" autocomplete="name" placeholder="${esc(t('e.g. The Cohen Family'))}"></label>` : ''}
+<label>${esc(t('Your name'))} <input type="text" name="donorName" maxlength="100" autocomplete="name" required></label>
+<label>${esc(t('Your email (for your receipt)'))} <input type="email" name="donorEmail" maxlength="200" autocomplete="email" inputmode="email" required></label>
 <label class="check"><input type="checkbox" name="fee"> ${esc(t('Add 3.5% to cover the card processing fee'))}</label>
 <p class="give-err msg err" role="alert" hidden></p>
 <button type="submit" class="btn gold">${esc(t('Continue to secure payment'))}</button>
