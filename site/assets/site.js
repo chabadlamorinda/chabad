@@ -457,11 +457,13 @@
       var freq = f.elements.freq, monthly = (freq && (freq.value || (f.querySelector('input[name=freq]:checked') || {}).value)) === 'monthly';
       var body = { amount: amount, fund: f.elements.fund.value, freq: monthly ? 'monthly' : 'once', dedication: f.elements.dedication.value, fee: f.elements.fee.checked, lang: LANG, back: f.getAttribute('data-back') || '/donate', idem: 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
       var dn = (f.elements.donorName ? f.elements.donorName.value : '').trim(), de = (f.elements.donorEmail ? f.elements.donorEmail.value : '').trim();
-      // Everything about the giver is optional: only a mistyped email is stopped (it would not get its receipt).
+      // The name and email are needed (the official receipt is sent to them); phone, address and a note are optional.
       if (f.elements.donorName) {
-        if (de && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(de)) { return fail(T('Please enter a valid email address.'), f.elements.donorEmail); }
+        if (!dn) return fail(T('Please enter your name.'), f.elements.donorName);
+        if (!de) return fail(T('Please enter your email address, so we can send your receipt.'), f.elements.donorEmail);
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(de)) { return fail(T('Please enter a valid email address.'), f.elements.donorEmail); }
         var val = function (n) { return f.elements[n] ? f.elements[n].value.trim() : ''; };
-        if (dn) body.donorName = dn; if (de) body.donorEmail = de;
+        body.web = 1; body.donorName = dn; body.donorEmail = de;
         if (val('donorPhone')) body.donorPhone = val('donorPhone'); if (val('donorAddress')) body.donorAddress = val('donorAddress'); if (val('donorNote')) body.donorNote = val('donorNote');
       }
       if (f.elements.show) {

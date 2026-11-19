@@ -407,6 +407,8 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     // (Stripe's page does not always ask, for example with some wallets).
     const giver = String(b.donorEmail || '').trim().toLowerCase().slice(0, 200), giverName = clean(b.donorName, 100);
     if (giver && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(giver)) throw new HttpError(400, 'invalid_email', 'Please enter a valid email address.');
+    // The website's giving form asks for a name and an email (the official receipt goes there); the app's older form does not send `web`.
+    if (b.web && (!giver || !giverName)) throw new HttpError(400, 'details_needed', 'Please enter your name and email address, so we can send your receipt.');
     if (giverName) meta.donor_name = giverName;
     // Optional extras the giver chose to add (kept with the payment in Stripe, and shown to the Rabbi with the gift).
     const extra = { donor_phone: clean(b.donorPhone, 40), donor_address: clean(b.donorAddress, 200), donor_note: clean(b.donorNote, 300) };

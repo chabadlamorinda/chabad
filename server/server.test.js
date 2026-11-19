@@ -172,7 +172,11 @@ test('website giving: Stripe checkout once or monthly, Chai Club details for the
   p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
   assert.equal(p.customer_email, 'dana@example.com'); assert.equal(p.payment_intent_data.receipt_email, undefined, "Stripe's own receipt is not asked for: Chabad sends the official one"); assert.equal(p.payment_intent_data.metadata.donor_name, 'Dana Levi'); assert.equal(p.customer_creation, 'always');
   assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000010' }), freq: 'once', donorEmail: 'not-an-email' })).status, 400, 'a bad email is refused');
-  // everything about the giver is optional: a gift with no details at all goes through, and extras are kept when given
+  // the website's form needs a name and an email (the official receipt goes there); the older app form does not send `web`
+  assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000013' }), freq: 'once', web: 1 })).status, 400, 'name and email are needed on the website form');
+  assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000014' }), freq: 'once', web: 1, donorName: 'Dana Levi' })).status, 400, 'the email too');
+  assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000015' }), freq: 'once', web: 1, donorName: 'Dana Levi', donorEmail: 'dana@example.com' })).status, 200);
+  // the app's older form (no `web`) needs no details, and extras are kept when given
   const bare = await c.call('POST', '/api/give/checkout', { ...gift({ amount: 5, idem: 'idem-site-0000000000011' }), freq: 'once' });
   assert.equal(bare.status, 200); p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1]; assert.equal(p.customer_email, undefined);
   await c.call('POST', '/api/give/checkout', { ...gift({ amount: 5, idem: 'idem-site-0000000000012' }), freq: 'once', donorPhone: '925-555-0100', donorAddress: '1 Main St, Lafayette', donorNote: 'For my mother' });
