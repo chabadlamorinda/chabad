@@ -925,3 +925,13 @@
     document.body.appendChild(bar); setTimeout(function () { if (bar.parentNode) bar.remove(); }, 20000);
   });
 })();
+
+// /app: the Install button for the Chabad of Lamorinda app (Chrome and Android offer a real install; elsewhere it scrolls to the steps)
+(function () {
+  var btn = document.querySelector('[data-install]'); if (!btn) return; var ev = null;
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); ev = e; });
+  btn.addEventListener('click', function () {
+    if (ev) { ev.prompt(); ev.userChoice.then(function () { ev = null; }); return; }
+    var how = document.getElementById('how'); if (how) how.scrollIntoView({ behavior: 'smooth' });
+  });
+})();

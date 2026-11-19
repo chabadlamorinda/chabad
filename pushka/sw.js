@@ -1,6 +1,6 @@
 // My Pushka service worker: keeps the app opening instantly and offline, and shows reminder notifications.
 // Strategy: network-first (so updates always arrive), cached copy when offline. Payments (/api) are never cached.
-const CACHE = "pushka-shell-v3";
+const CACHE = "pushka-shell-v4";
 const SHELL = ["./", "index.html", "pushka.css", "pushka.js", "hebdate.js", "segulos.js", "segulos.he.js", "i18n.js", "manifest.json", "icon.svg", "logo.svg", "icon-192.png", "icon-512.png", "privacy.html", "support.html"];
 self.addEventListener("install", (e) => e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())));
 self.addEventListener("activate", (e) => e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())));

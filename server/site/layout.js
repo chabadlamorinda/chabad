@@ -84,7 +84,7 @@ ${LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${esc(url(l))}">
 ${analytics.google ? `<meta name="google-site-verification" content="${esc(analytics.google)}">` : ''}${analytics.bing ? `<meta name="msvalidate.01" content="${esc(analytics.bing)}">` : ''}
 <meta name="geo.region" content="US-CA"><meta name="geo.placename" content="Lafayette, California"><meta name="geo.position" content="${o.geo.lat};${o.geo.lng}"><meta name="ICBM" content="${o.geo.lat}, ${o.geo.lng}">
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/pushka/icon-180.png">
+<link rel="apple-touch-icon" href="/assets/app-icon-180.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="${esc(o.name)}" href="/feed.xml">
 <link rel="alternate" type="text/calendar" title="${esc(o.name)}" href="/events.ics">
@@ -158,7 +158,7 @@ function footer(c, t) {
     </div></details>
     <details class="ftr-col" open>
       <summary class="ftr-h">${esc(t('Get involved'))}</summary><div class="ftr-links">
-      ${a('/account', 'My account & family')}${a('/forms', 'Sign-ups and orders')}${a('/subscribe', 'Get our weekly email')}${a('/sponsor', 'Sponsor in honor or memory of a loved one')}${a('/mitzvah', 'Do a mitzvah this week')}${a('/app', 'Get the My Pushka app')}${a('/get-involved', 'Get involved')}${a('/welcome', 'New to the area?')}${a('/donate', 'Donate')}${a('/legacy', 'Leave a legacy')}<a href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a><a href="/chai-club">${esc(t('Chai Club'))}</a>
+      ${a('/account', 'My account & family')}${a('/forms', 'Sign-ups and orders')}${a('/subscribe', 'Get our weekly email')}${a('/sponsor', 'Sponsor in honor or memory of a loved one')}${a('/mitzvah', 'Do a mitzvah this week')}${a('/app', 'Get the Chabad of Lamorinda app')}${a('/pushka-app', 'Get the My Pushka app')}${a('/get-involved', 'Get involved')}${a('/welcome', 'New to the area?')}${a('/donate', 'Donate')}${a('/legacy', 'Leave a legacy')}<a href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a><a href="/chai-club">${esc(t('Chai Club'))}</a>
     </div></details>
   </div>
   <div class="wrap ftr-base"><p>&copy; ${new Date().getFullYear()} ${esc(o.name)}. ${escLtr(o.legal || '')} ${esc(t('Part of the worldwide Chabad-Lubavitch movement.'))}</p><p>${a('/privacy', 'Privacy')} · ${a('/accessibility', 'Accessibility')}</p></div>

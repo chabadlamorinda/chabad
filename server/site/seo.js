@@ -8,7 +8,7 @@ const Z = require('./zmanim.js');
 const { LANGS, withLang } = require('./i18n.js');
 const { photoForPath, setLearn } = require('./art.js');
 
-const STATIC = ['/', '/subscribe', '/kids', '/mitzvah', '/menorah', '/dreidel', '/app', '/chanukah-quiz', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/chai-club', '/sponsor-a-kiddush', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/tools/zmanim', '/tools/hebrew-birthday', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
+const STATIC = ['/', '/subscribe', '/kids', '/mitzvah', '/menorah', '/dreidel', '/app', '/pushka-app', '/chanukah-quiz', '/events', '/shabbat', '/holidays', '/programs', '/jewish-lamorinda', '/learn', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/chai-club', '/sponsor-a-kiddush', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/tools/zmanim', '/tools/hebrew-birthday', '/photos', '/tools/hebrew-date', '/tools/yahrzeit', '/tools/bar-bat-mitzvah'];
 // AI and search crawlers we explicitly welcome (being cited by assistants is a goal of this site).
 const BOTS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot', 'Applebot-Extended', 'meta-externalagent', 'FacebookBot', 'DuckDuckBot', 'YandexBot', 'cohere-ai', 'MistralAI-User'];
 
@@ -125,7 +125,7 @@ function mountSeo(r, { content, base, indexable, upcoming, more = null }) {
   });
   // The website as an app on the phone (Install in the browser's menu, or Add to Home Screen): its own icon, full screen, and shortcuts on a long press.
   r.get('/site.webmanifest', (req, res) => res.type('application/manifest+json').json({ id: '/', name: c().org.name, short_name: c().org.shortName || 'Chabad', description: 'Shabbat times, events, holidays, guides to Jewish life and ways to give, for Lafayette, Moraga and Orinda.', lang: 'en', start_url: '/?src=app', scope: '/', display: 'standalone', background_color: '#ffffff', theme_color: '#14284b', categories: ['lifestyle', 'education'],
-    icons: [{ src: '/pushka/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/pushka/icon-512.png', sizes: '512x512', type: 'image/png' }, { src: '/pushka/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
+    icons: [{ src: '/assets/app-icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/assets/app-icon-512.png', sizes: '512x512', type: 'image/png' }, { src: '/assets/app-icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
     shortcuts: [{ name: 'Shabbat times', url: '/shabbat-times?src=app' }, { name: 'Events', url: '/events?src=app' }, { name: 'Donate', url: '/donate?src=app' }, { name: 'Contact', url: '/contact?src=app' }] }));
 }
 module.exports = { mountSeo, calendar, llmsText, BOTS };

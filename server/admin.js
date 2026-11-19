@@ -150,7 +150,7 @@ function mountAdmin(app, { funds = {}, store, stripe, password, secret, limit, s
   r.get('/manifest.webmanifest', (req, res) => res.type('application/manifest+json').set('Cache-Control', 'public, max-age=3600').json({
     id: '/admin/', name: 'Rabbi’s desk — Chabad of Lamorinda', short_name: 'Rabbi’s desk', description: 'Requests, RSVPs, gifts, the weekly email and the books, in one place.',
     start_url: '/admin/', scope: '/admin/', display: 'standalone', orientation: 'portrait', background_color: '#f2f2f2', theme_color: '#14284b',
-    icons: [{ src: '/pushka/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/pushka/icon-512.png', sizes: '512x512', type: 'image/png' }, { src: '/pushka/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
+    icons: [{ src: '/assets/app-icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/assets/app-icon-512.png', sizes: '512x512', type: 'image/png' }, { src: '/assets/app-icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }],
     shortcuts: [{ name: 'Requests', url: '/admin/community#requests' }, { name: 'Who is coming', url: '/admin/community#rsvps' }, { name: 'Finances', url: '/admin/finances' }],
   }));
   // A do-nothing helper that lets browsers treat the desk as an installable app. It never stores pages or data: everything comes live from the server.
