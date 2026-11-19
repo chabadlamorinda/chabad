@@ -89,7 +89,7 @@
     if (!left) { waitBox.hidden = true; return waitBox; }
     (window.WAITING || []).forEach(function (w, i) {
       fetch('/admin/api' + w.path, { credentials: 'same-origin', headers: { 'x-admin': '1' } }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (j) {
-        if (j) { any = true; var n = w.count(j); if (n) slots[i].appendChild(el('a', { class: 'wait-row', href: '/admin/community#' + w.id }, [el('b', { text: String(n) }), ' ' + (n === 1 ? w.one : w.many), el('span', { text: '›' })])); }
+        if (j) { any = true; var n = w.count(j); if (n) slots[i].appendChild(el('a', { class: 'wait-row', href: w.href || '/admin/community#' + w.id }, [el('b', { text: String(n) }), ' ' + (n === 1 ? w.one : w.many), el('span', { text: '›' })])); }
         if (--left) return;
         if (!any) waitBox.hidden = true;
         else if (!list.querySelector('a')) list.appendChild(el('p', { class: 'small', text: 'Nothing waiting right now.' }));

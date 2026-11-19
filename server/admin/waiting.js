@@ -10,6 +10,7 @@ window.WAITING = [
   { id: 'campaign', path: '/campaigns', one: 'campaign pledge to follow up', many: 'campaign pledges to follow up', count: function (x) { return (x.campaigns || []).reduce(function (a, c) { return a + (c.pledges || []).filter(function (p) { return p.status === 'pending'; }).length; }, 0); } },
   { id: 'email', path: '/site/weekly/word', one: 'word for this Shabbat\'s email to read and approve', many: 'words to approve', count: function (x) { return x.draft && !x.approved ? 1 : 0; } },
   { id: 'sign-ups', path: '/site/forms', one: 'new sign-up', many: 'new sign-ups', count: function (x) { return (x.forms || []).reduce(function (a, f) { return a + (f.fresh || 0); }, 0); } },
+  { id: 'backup', path: '/backup/status', href: '/admin/api/backup', one: 'full backup to download and keep (it has been over 4 weeks)', many: 'full backups to download', count: function (x) { return x.due ? 1 : 0; } },
   { id: 'visitors', path: '/site/visitors', one: 'visitor looking at an important topic', many: 'visitors looking at important topics', count: function (x) { return (x.items || []).filter(function (p) { return p.hot; }).length; } },
 ];
 window.WAITING_BY_ID = {};

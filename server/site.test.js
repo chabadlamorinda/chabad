@@ -1355,6 +1355,19 @@ test('Keys and settings in the Rabbi area: checked, saved encrypted, never shown
   const care = (await a.call('GET', '/admin/api/site/care')).json; assert.equal(typeof care.uptimeMinutes, 'number'); assert.ok(care.changes.length >= 1);
 });
 
+test('the Rabbi is reminded every 4 weeks to download his own full backup, until he does', async () => {
+  const a = await admin(), st = () => a.call('GET', '/admin/api/backup/status').then((r) => r.json);
+  assert.notEqual((await client().call('GET', '/admin/api/backup/status')).status, 200, 'not without signing in');
+  const first = await st(); assert.equal(first.due, false); assert.equal(first.lastAt, null, 'the clock starts the first time');
+  await store.setKv('backup-since', { at: new Date(Date.now() - 40 * 864e5).toISOString() });
+  const late = await st(); assert.equal(late.due, true); assert.ok(late.days >= 40);
+  assert.equal((await a.call('GET', '/admin/api/backup')).status, 200, 'downloading it from the desk');
+  const done = await st(); assert.equal(done.due, false); assert.ok(done.lastAt);
+  await store.setKv('backup-downloaded', { at: new Date(Date.now() - 30 * 864e5).toISOString() });
+  assert.equal((await st()).due, true, 'again after 4 weeks');
+  assert.ok(fs.readFileSync(path.join(__dirname, 'admin', 'waiting.js'), 'utf8').includes("id: 'backup', path: '/backup/status', href: '/admin/api/backup'"), 'it waits on the desk');
+});
+
 test('maintenance requests run once, only from the fixed list', () => {
   const { spawnSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'maint-'));
   fs.writeFileSync(path.join(dir, 'req.txt'), '# a comment\nt1 status-report\nt2 nonsense-action\nbad!id restart-site\nt3 restart-site please\n\n');
