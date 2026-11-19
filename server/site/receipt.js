@@ -95,7 +95,7 @@ function receipt({ lang = 'en', base = '', org = {}, gift, donor = {} }) {
 <tr><td style="padding:24px 30px 6px;text-align:${al}"><div style="font:600 13px ${SANS};letter-spacing:.08em;text-transform:uppercase;color:${GOLD_INK}">${esc(W.title)}</div>
 <p style="margin:14px 0 12px">${esc(W.dear(donor.name))}</p>
 <div style="border-${L === 'he' ? 'right' : 'left'}:4px solid ${GOLD};background:#fbf7ee;padding:14px 18px;margin:0 0 14px;border-radius:4px"><div style="font:600 21px/1.3 ${SERIF};color:${NAVY};margin:0 0 8px">${esc(W.headline(gift.monthly))}</div><p style="margin:0">${esc(W.thanks(gift.monthly))}</p></div>${specific.map((s) => `<p style="margin:0 0 10px">${esc(s)}</p>`).join('')}
-<p style="margin:16px 0 2px">${esc(W.close)}</p><p style="margin:0 0 16px;font:italic 600 19px ${SERIF};color:${NAVY}">${esc(W.sign)}</p></td></tr>
+<p style="margin:16px 0 2px">${esc(W.close)}</p><p style="margin:0 0 16px;font:italic 700 21px ${SERIF};color:${GOLD}">${esc(W.sign)}</p></td></tr>
 <tr><td style="padding:0 30px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-top:1px solid ${LINE}">
 ${rows.map(([k, v], i) => `<tr><td style="padding:9px 0;border-bottom:1px solid ${LINE};color:${MUTED};font-size:14px;text-align:${al}" valign="top">${esc(k)}</td><td style="padding:9px 0;border-bottom:1px solid ${LINE};text-align:${L === 'he' ? 'left' : 'right'};${i === 2 ? 'font-weight:700;font-size:18px;color:' + NAVY : ''}" valign="top">${esc(v)}</td></tr>`).join('')}
 </table></td></tr>
