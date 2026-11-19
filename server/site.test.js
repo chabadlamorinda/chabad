@@ -241,7 +241,7 @@ test('Rabbi area: RSVP lists, birthdays, post to Facebook', async () => {
   assert.equal((await a.call('GET', '/admin/waiting.js')).status, 200);
   const setup = (await a.call('GET', '/admin/api/site/setup')).json.items;
   assert.ok(setup.find((i) => /Database/.test(i.label)).done); assert.equal(setup.find((i) => /Email sending/.test(i.label)).done, false);
-  assert.ok(setup.every((i) => typeof i.done === 'boolean' && Object.keys(i).every((k) => ['label', 'done', 'todo', 'optional'].includes(k))), 'only yes/no, never the values');
+  assert.ok(setup.every((i) => typeof i.done === 'boolean' && Object.keys(i).every((k) => ['label', 'done', 'todo', 'optional', 'note'].includes(k))), 'only yes/no (and, for email, what the mail server said), never the values');
   const soc = (await a.call('GET', '/admin/api/site/social')).json;
   { const it = soc.items.find((x) => x.slug === EVENT); assert.match(it.nextdoor, /^Hi neighbors!/); assert.match(it.calendar, /^Event: .*\nWhen: /); assert.match(it.calendar, /Website: http/); }
   const d = soc.items.find((x) => x.slug === EVENT);

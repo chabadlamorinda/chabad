@@ -152,7 +152,7 @@ function createFinances({ stripe = null, store = null, content = null, mailer = 
     const gifts = (await q("SELECT day, cents, method, memo FROM fin_tx WHERE person_id = $1 AND kind = 'in' AND deductible AND day >= $2 AND day < $3 ORDER BY day", [p.id, `${year}-01-01`, `${year + 1}-01-01`])).rows;
     const o = org(), total = gifts.reduce((a, g) => a + Number(g.cents), 0), addr = o.address ? [o.address.street, [o.address.city, o.address.region, o.address.postal].filter(Boolean).join(' ')].filter(Boolean).join(', ') : '';
     const rows = gifts.map((g) => `<tr><td>${escHtml(String(g.day instanceof Date ? g.day.toISOString().slice(0, 10) : g.day).slice(0, 10))}</td><td>${escHtml(METHODS[g.method] || g.method)}</td><td style="text-align:right">${money(g.cents)}</td></tr>`).join('');
-    const text = `Dear ${p.name || 'friend'},\n\nThank you for your generous support of ${o.name || 'our organization'} in ${year}. Your gifts this year total ${money(total)}.\n\n${gifts.map((g) => `${String(g.day instanceof Date ? g.day.toISOString() : g.day).slice(0, 10)}  ${money(g.cents)}  ${METHODS[g.method] || g.method}`).join('\n')}\n\nNo goods or services were provided in exchange for these contributions, other than intangible religious benefits. ${o.legal || ''}\n\nWith blessings and gratitude,\nRabbi Israel and Tzipora Labkowski\n${o.name || ''}\n${addr}`;
+    const text = `Dear ${p.name || 'friend'},\n\nThank you for your generous support of ${o.name || 'our organization'} in ${year}. Your gifts this year total ${money(total)}.\n\n${gifts.map((g) => `${String(g.day instanceof Date ? g.day.toISOString() : g.day).slice(0, 10)}  ${money(g.cents)}  ${METHODS[g.method] || g.method}`).join('\n')}\n\nNo goods or services were provided in exchange for these contributions, other than intangible religious benefits. ${o.legal || ''}\n\nWith blessings and gratitude,\n${o.signature ? o.signature + '\n' : ''}${o.name || ''}\n${addr}`;
     const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${escHtml(year + ' giving: ' + (p.name || ''))}</title>
 <style>body{font:16px/1.6 Georgia,serif;max-width:720px;margin:40px auto;padding:0 20px;color:#1d1d1d}h1{font-weight:400;font-size:24px;margin:0}table{width:100%;border-collapse:collapse;margin:16px 0}td,th{border-bottom:1px solid #ddd;padding:6px 4px;text-align:left}.org{color:#555;font-size:14px}.no-print{margin:20px 0}@media print{.no-print{display:none}}</style></head><body>
 <p class="no-print"><button onclick="print()">Print</button></p>
@@ -163,7 +163,7 @@ function createFinances({ stripe = null, store = null, content = null, mailer = 
 <p>Thank you for your generous support of ${escHtml(o.name || 'our organization')} in ${year}. Your gifts this year total <b>${money(total)}</b>.</p>
 <table><thead><tr><th>Date</th><th>How</th><th style="text-align:right">Amount</th></tr></thead><tbody>${rows || '<tr><td colspan="3">No gifts this year.</td></tr>'}</tbody></table>
 <p>No goods or services were provided in exchange for these contributions, other than intangible religious benefits. ${escHtml(o.legal || '')}</p>
-<p>With blessings and gratitude,<br>Rabbi Israel and Tzipora Labkowski<br>${escHtml(o.name || '')}</p></body></html>`;
+<p>With blessings and gratitude,<br>${o.signature ? escHtml(o.signature) + '<br>' : ''}${escHtml(o.name || '')}</p></body></html>`;
     return { person: p, total, count: gifts.length, html, text };
   }
 

@@ -85,7 +85,7 @@
     var su = section('Setup checklist', 'What is connected and what is not. To set up the rest, tell Claude: "I\'m at a computer".', 'Setup');
     api('GET', '/site/setup').then(function (x) {
       if (x._status !== 200 || !x.items) return;
-      x.items.forEach(function (i) { su.appendChild(el('div', { class: 'row', style: 'min-height:36px' }, [el('strong', { text: i.done ? '✓' : '○', style: 'color:' + (i.done ? '#1f8f4e' : '#9b2c2c') + ';width:1.2em' }), i.label + (i.done ? '' : i.optional ? ' · not yet (optional)' : ' · not yet')])); });
+      x.items.forEach(function (i) { su.appendChild(el('div', { class: 'row', style: 'min-height:36px' }, [el('strong', { text: i.done ? '✓' : '○', style: 'color:' + (i.done ? '#1f8f4e' : '#9b2c2c') + ';width:1.2em' }), i.label + (i.done ? '' : i.optional ? ' · not yet (optional)' : ' · not yet') + (i.note ? ' · ' + i.note : '')])); });
       var left = x.items.filter(function (i) { return !i.done && !i.optional; }).length;
       su.sub(left ? left + ' to do' : 'all set');
     });

@@ -194,9 +194,16 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {
       // Which settings are in place (yes/no only, never the values), matching store/rabbi-todo.md.
-      r2.get('/api/site/setup', ctx.authed, ctx.wrap(async (req, res) => res.json({ items: [
+      r2.get('/api/site/setup', ctx.authed, ctx.wrap(async (req, res) => {
+      // Email: not just "is it set", but "does it connect to the mail server" (and what the server says if not).
+      let mail = { done: !!env.SMTP_URL, note: '' };
+      if (env.SMTP_URL && mailer && mailer.verify) {
+        try { await Promise.race([mailer.verify(), new Promise((_, no) => setTimeout(() => no(new Error('no answer from the mail server in 12 seconds (the connection may be blocked)')), 12000))]); }
+        catch (e) { mail = { done: false, note: 'it is set, but it cannot send: ' + String((e && (e.response || e.message)) || e).replace(/\s+/g, ' ').slice(0, 200) }; }
+      }
+      res.json({ items: [
         { label: 'Database (sign-in, RSVPs, lists)', done: !!store, todo: 1 },
-        { label: 'Email sending', done: !!env.SMTP_URL, todo: 3 },
+        { label: 'Email sending', done: mail.done, note: mail.note, todo: 3 },
         { label: 'Where requests are emailed', done: !!env.ADMIN_EMAIL, todo: 4 },
         { label: 'AI answers in the chat (optional, costs a little)', done: !!env.ANTHROPIC_API_KEY, todo: 5, optional: true },
         { label: 'Facebook page', done: !!(env.FB_PAGE_ID && env.FB_PAGE_TOKEN), todo: 6 },
@@ -206,7 +213,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
         { label: 'Google Search Console', done: true, todo: 10 }, // verified Nov 16 with the file /google782f93ba7cc8f3ad.html (served by seo.js), so no GOOGLE_SITE_VERIFICATION is needed
         { label: 'Phone notifications for the app', done: !!(env.VAPID_PUBLIC_KEY || process.env.VAPID_PUBLIC_KEY), todo: 11, optional: true },
         { label: 'The weekly email goes out by itself (Website, Weekly email)', done: !!(store && store.getKv && ((await store.getKv('email-auto', null).catch(() => null)) || {}).on), todo: 3, optional: true },
-      ] })));
+      ] }); }));
       mountCommunityAdmin(r2, ctx, { cs: community.cs, content, store });
       mountSocialAdmin(r2, ctx, { store, content, fb, base, when: pages.when });
       board.mountAdmin(r2, ctx);

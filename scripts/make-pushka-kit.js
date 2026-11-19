@@ -19,7 +19,7 @@ fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive:
 
 // 1. what goes in
 for (const f of ['package.json', 'package-lock.json', '.gitignore']) cp_(f);
-copyDir('server', (r) => /server\/(seed|site)(\/|$)|server\/site\.test\.js$/.test(r)); // the website (server/site) is not part of the kit
+copyDir('server', (r) => /server\/(seed|site)(\/|$)|server\/(site|receipt)\.test\.js$/.test(r)); // the website (server/site) is not part of the kit
 copyDir('pushka', (r) => /pushka\/(icon[^/]*|logo[^/]*)$/.test(r));
 copyDir('board'); copyDir('kiddush');
 cp_('android/twa-manifest.json');
@@ -100,7 +100,7 @@ Play Console answers (check each against Google's current wording):
 - Data safety: collects name, email, optional phone and mailing address, payment info (entered into Stripe's secure form; you never see the card number), the gift amount, and only if the user opts in: yahrzeit names/dates and a push-notification address. Not sold. Encrypted in transit. Users can delete their data in the app (More → Profile → Delete account).
 - Ads: none. In-app purchases: none (donations to a nonprofit are not purchases of digital goods). Target audience: 18 and over.
 `);
-const pj = JSON.parse(read('package.json')); pj.scripts = Object.assign({ customize: 'node scripts/customize.js' }, pj.scripts); pj.scripts.test = pj.scripts.test.replace(' server/site.test.js', ''); delete pj.scripts.dev; delete pj.scripts['facebook:post']; pj.description = 'My Pushka: a tzedakah app for your Chabad house'; write('package.json', JSON.stringify(pj, null, 2) + '\n');
+const pj = JSON.parse(read('package.json')); pj.scripts = Object.assign({ customize: 'node scripts/customize.js' }, pj.scripts); pj.scripts.test = pj.scripts.test.replace(' server/site.test.js', '').replace(' server/receipt.test.js', ''); delete pj.scripts.dev; delete pj.scripts['facebook:post']; pj.description = 'My Pushka: a tzedakah app for your Chabad house'; write('package.json', JSON.stringify(pj, null, 2) + '\n');
 
 // 5. checks: nothing of the original organisation may remain
 const leftovers = [];

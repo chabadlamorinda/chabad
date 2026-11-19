@@ -8,6 +8,6 @@ function createMailer({ url, from }) {
   const transport = require('nodemailer').createTransport(url, { connectionTimeout: 10000, greetingTimeout: 10000, socketTimeout: 20000 });
   // html (optional): a designed version shown by email programs that can; headers: e.g. List-Unsubscribe;
   // attachments (optional): [{ filename, content }] (the weekly backup).
-  return { from, send: ({ to, subject, text, html, headers, attachments }) => transport.sendMail({ from, to, subject, text, ...(html ? { html } : {}), ...(attachments ? { attachments } : {}), ...(headers ? { headers } : {}) }) };
+  return { from, verify: () => transport.verify(), send: ({ to, subject, text, html, headers, attachments }) => transport.sendMail({ from, to, subject, text, ...(html ? { html } : {}), ...(attachments ? { attachments } : {}), ...(headers ? { headers } : {}) }) };
 }
 module.exports = { createMailer };
