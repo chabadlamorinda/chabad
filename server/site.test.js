@@ -1398,3 +1398,10 @@ test('the thank-you page after a gift: short, warm, and without the old "keeps o
   assert.ok(p.includes('Thank you for being our partner') && p.includes('May G-d bless you'), 'a thank-you and a blessing');
   assert.ok(!/keeps Jewish life|open to everyone|keeps everything open/.test(p), 'none of the old wording');
 });
+
+test('www goes to the main address (one page, not two, for Google), keeping the page', async () => {
+  const http = require('http'), port = new URL(base).port;
+  const get = (hostname, p) => new Promise((ok, no) => { const r = http.request({ host: '127.0.0.1', port, path: p, headers: { host: hostname } }, (res) => { res.resume(); ok({ status: res.statusCode, location: res.headers.location }); }); r.on('error', no); r.end(); });
+  const w = await get('www.site.test', '/learn/mezuzah?x=1'); assert.equal(w.status, 301); assert.equal(w.location, 'http://site.test/learn/mezuzah?x=1');
+  assert.equal((await get('site.test', '/learn/mezuzah')).status, 200, 'the main address itself is not redirected');
+});

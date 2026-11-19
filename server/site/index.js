@@ -103,6 +103,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   const forward = new Set(String(env.FORWARD_DOMAINS || 'jewishlamorinda.org').split(',').map((d) => d.trim().toLowerCase().replace(/^www\./, '')).filter(Boolean));
   forward.delete(host);
   app.use((req, res, next) => (forward.has(String(req.hostname || '').toLowerCase().replace(/^www\./, '')) ? res.redirect(301, base + req.originalUrl) : next()));
+  // www.jewishlamorinda.com is the same page twice for Google (and a duplicate in its index): send it to the main address, keeping the page.
+  app.use((req, res, next) => (host && String(req.hostname || '').toLowerCase() === 'www.' + host ? res.redirect(301, base + req.originalUrl) : next()));
   // Old Chabad.org addresses (/3186196, /templates/.../aid/3186196/..., /article.asp?aid=3186196) keep working.
   app.use((req, res, next) => {
     if (req.method !== 'GET' && req.method !== 'HEAD') return next();

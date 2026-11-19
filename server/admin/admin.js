@@ -19,6 +19,8 @@
       ['members', 'Members', 'Families who use the app, with their details'],
       ['yahrzeits', 'Yahrzeits', 'Coming in the next 60 days, to call or remember'],
       ['donors', 'Monthly donors', 'Who gives every month, and how much'],
+      ['https://crm.jewishlamorinda.com/', 'CRM', 'Talk to it: people, gifts, visits, receipts and the books'],
+      ['https://invitations.jewishlamorinda.com/admin', 'Invitations', 'Personal invitations to events, replies and reminders'],
     ]],
     ['Money', [
       ['/admin/finances', 'Finances', 'Money in and out, donors, tax letters, reports'],
@@ -52,7 +54,7 @@
       app.appendChild(el('h2', { class: 'group-h', text: g[0] }));
       app.appendChild(el('div', { class: 'tiles' }, g[1].map(function (t) {
         var kids = [el('strong', { text: t[1] }), el('span', { text: t[2] })];
-        return t[0].charAt(0) === '/' ? el('a', { class: 'tile', href: t[0] }, kids) : el('button', { class: 'tile', onclick: function () { tab = t[0]; load(); window.scrollTo(0, 0); } }, kids);
+        return /^https:\/\//.test(t[0]) ? el('a', { class: 'tile', href: t[0], target: '_blank', rel: 'noopener' }, kids) : t[0].charAt(0) === '/' ? el('a', { class: 'tile', href: t[0] }, kids) : el('button', { class: 'tile', onclick: function () { tab = t[0]; load(); window.scrollTo(0, 0); } }, kids);
       })));
     });
   }
