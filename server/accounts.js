@@ -18,22 +18,22 @@ function mountAccounts(app, { store, mailer, tokens, sessionSecret, limit, log =
   const json = express.json({ limit: '10kb' });
 
   const MAIL = {
-    en: (code) => ({ subject: `Your code: ${code}`, text: `Your sign-in code for My Pushka (Chabad of Lamorinda) is:\n\n    ${code}\n\nIt works for ${CODE_MINUTES} minutes. If you did not ask for it, you can ignore this email.` }),
-    he: (code) => ({ subject: `הקוד שלכם: ${code}`, text: `קוד הכניסה שלכם ל״קופת הצדקה שלי״ (חב״ד לאמורינדה) הוא:\n\n    ${code}\n\nהקוד תקף למשך ${CODE_MINUTES} דקות. אם לא ביקשתם אותו, אפשר להתעלם מהמייל.` }),
+    en: (code, mins) => ({ subject: `Your code: ${code}`, text: `Your sign-in code for My Pushka (Chabad of Lamorinda) is:\n\n    ${code}\n\nIt works for ${mins} minutes. If you did not ask for it, you can ignore this email.` }),
+    he: (code, mins) => ({ subject: `הקוד שלכם: ${code}`, text: `קוד הכניסה שלכם ל״קופת הצדקה שלי״ (חב״ד לאמורינדה) הוא:\n\n    ${code}\n\nהקוד תקף למשך ${mins} דקות. אם לא ביקשתם אותו, אפשר להתעלם מהמייל.` }),
   };
 
   app.post('/api/auth/request', json, needOn, limit('auth-req', 12, 15 * 60 * 1000), wrap(async (req, res) => {
     const email = clean(req.body && req.body.email, 254).toLowerCase();
     if (!validEmail(email)) return fail(res, 400, 'invalid_email', 'Please enter a valid email address.');
     const sc = app.locals.siteCodes; // with the website: ONE code table, so a code from either place works in both
-    const age = sc ? await sc.age(email) : ((await store.getAuthCode(email)) || {}).age;
-    if (age != null && Number(age) < COOLDOWN_SECONDS) return fail(res, 429, 'too_soon', 'Please wait a moment before asking for another code.');
+    const tooSoon = () => fail(res, 429, 'too_soon', 'Please wait a moment before asking for another code.'), mins = sc ? sc.minutes : CODE_MINUTES;
     const code = String(crypto.randomInt(0, 1000000)).padStart(6, '0');
-    if (sc) await sc.save(email, code, crypto.randomBytes(24).toString('base64url')); else await store.putAuthCode(email, hashCode(email, code), CODE_MINUTES);
-    const m = (MAIL[req.body && req.body.lang === 'he' ? 'he' : 'en'])(code);
+    if (sc) { if (!(await sc.save(email, code, crypto.randomBytes(24).toString('base64url')))) return tooSoon(); } // the wait is part of the save, so two requests cannot both get through
+    else { const old = await store.getAuthCode(email); if (old && Number(old.age) < COOLDOWN_SECONDS) return tooSoon(); await store.putAuthCode(email, hashCode(email, code), CODE_MINUTES); }
+    const m = (MAIL[req.body && req.body.lang === 'he' ? 'he' : 'en'])(code, mins);
     try { await mailer.send({ to: email, subject: m.subject, text: m.text }); }
     catch (e) { if (sc) await sc.drop(email); else await store.deleteAuthCode(email); log.error('sign-in email failed:', e && e.message); return fail(res, 502, 'email_failed', 'We could not send the email. Please check the address and try again.'); }
-    res.json({ ok: true, minutes: CODE_MINUTES }); // the same answer whether or not this email already has an account
+    res.json({ ok: true, minutes: mins }); // the same answer whether or not this email already has an account
   }));
 
   app.post('/api/auth/verify', json, needOn, limit('auth-verify', 30, 15 * 60 * 1000), wrap(async (req, res) => {

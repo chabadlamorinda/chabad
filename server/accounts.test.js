@@ -6,23 +6,25 @@ const { createApp } = require('./index.js');
 const { createStore } = require('./store.js');
 const { startPg } = require('./pg-test-helper.js');
 
-let pg, store, server, base; const sent = [];
+let pg, store, server, base, theApp; const sent = [];
 const mailer = { from: 'test', send: async (m) => { if (/fail@/.test(m.to)) throw new Error('smtp down'); sent.push(m); } };
 test.before(async () => {
   pg = await startPg(); store = createStore(pg.url); await store.migrate();
-  const app = createApp({ stripe: null, sessionSecret: 'a'.repeat(32), log: { error() {} }, store, mailer });
+  const app = createApp({ stripe: null, sessionSecret: 'a'.repeat(32), log: { error() {} }, store, mailer }); theApp = app;
   server = await new Promise((r) => { const s = app.listen(0, () => r(s)); }); base = 'http://127.0.0.1:' + server.address().port;
 });
 test.after(async () => { server.close(); await store.close(); await pg.stop(); });
-test.beforeEach(async () => { await store.reset(); sent.length = 0; });
+let IP = 0; // each test comes from its own address, so the per-address request limits start fresh
+test.beforeEach(async () => { await store.reset(); sent.length = 0; IP++; });
 
 const call = async (method, path, body, token) => {
-  const r = await fetch(base + path, { method, headers: { 'content-type': 'application/json', ...(token ? { authorization: 'Bearer ' + token } : {}) }, body: body === undefined ? undefined : JSON.stringify(body) });
+  const r = await fetch(base + path, { method, headers: { 'content-type': 'application/json', 'x-forwarded-for': '10.0.0.' + IP, ...(token ?{ authorization: 'Bearer ' + token } : {}) }, body: body === undefined ? undefined : JSON.stringify(body) });
   return { status: r.status, json: await r.json().catch(() => null) };
 };
 const wipe = async (email) => { await store.deleteAuthCode(email); await store.pool.query('DELETE FROM login_codes WHERE email=$1', [email]).catch(() => {}); }; // (the shareable kit has no website, so no login_codes) // forget a code and the wait before the next one
 const codeOf = () => /\b(\d{6})\b/.exec(sent[sent.length - 1].text)[1];
 const signIn = async (email = 'dina@example.com') => {
+  await wipe(email); // (the 30-second wait between codes is tested on its own)
   assert.equal((await call('POST', '/api/auth/request', { email })).status, 200);
   const r = await call('POST', '/api/auth/verify', { email, code: codeOf() }); assert.equal(r.status, 200); return r.json;
 };
@@ -48,6 +50,28 @@ test('sign in: code is emailed, works once, wrong codes are limited, signing in 
   assert.equal((await call('POST', '/api/auth/verify', { email: 'dina@example.com', code: codeOf() })).status, 400); // a code works only once
   await wipe('dina@example.com'); await new Promise((r) => setTimeout(r, 10));
   const b = await signIn(); assert.equal(b.token, a.token); assert.equal((await store.listMembers()).length, 1);
+});
+
+test('with the website, one wait and one expiry for both places; a failed website email leaves no code', async () => {
+  if (!theApp.locals.siteCodes) return; // the shareable kit has no website
+  assert.equal((await call('POST', '/api/auth/request', { email: 'wait@example.com' })).status, 200); assert.match(sent[0].text, /works for 15 minutes/, 'the email states the real expiry');
+  const web = (p, b) => fetch(base + p, { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1', 'x-forwarded-for': '10.0.0.' + IP }, body: JSON.stringify(b) });
+  const again = await web('/api/site/login', { email: 'wait@example.com' }); assert.equal(again.status, 429); assert.equal((await again.json()).code, 'too_soon', 'asking on the website right after the app is too soon too');
+  assert.equal((await web('/api/site/login', { email: 'fail@example.com' })).status, 502);
+  assert.equal((await store.pool.query("SELECT 1 FROM login_codes WHERE email='fail@example.com'")).rowCount, 0);
+});
+
+test('without the website (the shareable kit) the app keeps its own codes, with exact answers', async () => {
+  const saved = theApp.locals.siteCodes; theApp.locals.siteCodes = null;
+  try {
+    assert.equal((await call('POST', '/api/auth/request', { email: 'kit@example.com' })).status, 200); const good = codeOf();
+    assert.equal((await call('POST', '/api/auth/request', { email: 'kit@example.com' })).json.code, 'too_soon');
+    for (let i = 0; i < 5; i++) assert.equal((await call('POST', '/api/auth/verify', { email: 'kit@example.com', code: good === '000000' ? '111111' : '000000' })).json.code, i < 5 ? 'invalid_code' : 'code_expired');
+    assert.equal((await call('POST', '/api/auth/verify', { email: 'kit@example.com', code: good })).json.code, 'code_expired', 'five wrong tries burn the code');
+    await store.deleteAuthCode('kit@example.com'); await call('POST', '/api/auth/request', { email: 'kit@example.com' }); const c2 = codeOf();
+    await store.pool.query("UPDATE auth_codes SET expires_at = now() - interval '1 minute'");
+    assert.equal((await call('POST', '/api/auth/verify', { email: 'kit@example.com', code: c2 })).json.code, 'code_expired');
+  } finally { theApp.locals.siteCodes = saved; }
 });
 
 test('a failed email does not leave a usable code', async () => {

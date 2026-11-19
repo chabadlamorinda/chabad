@@ -161,7 +161,9 @@ test('email sign-in: code, link, wrong codes; an app record with the same email 
   for (let i = 0; i < 5; i++) assert.equal((await c.call('POST', '/api/site/verify', { email: 'sara@example.com', code: '000000' === /code is (\d{6})/.exec(mails[0].text)[1] ? '111111' : '000000' })).status, 400);
   const code = /code is (\d{6})/.exec(mails[0].text)[1];
   assert.equal((await c.call('POST', '/api/site/verify', { email: 'sara@example.com', code })).status, 400, 'five wrong tries burn the code');
-  await c.call('POST', '/api/site/login', { email: 'sara@example.com' });
+  assert.equal((await c.call('POST', '/api/site/login', { email: 'sara@example.com' })).status, 429, 'a new code cannot be asked for again within 30 seconds');
+  await store.pool.query("UPDATE login_codes SET sent_at = now() - interval '1 minute'"); // (as if the wait had passed)
+  assert.equal((await c.call('POST', '/api/site/login', { email: 'sara@example.com' })).status, 200);
   const link = /(\/account\/verify\?\S+)/.exec(mails[1].text)[1];
   // Opening the link only shows a Continue button (email scanners can't use it up); pressing it signs in.
   const page = await c.call('GET', link); assert.equal(page.status, 200); assert.match(page.text, /<form method="post" action="\/account\/verify">/);

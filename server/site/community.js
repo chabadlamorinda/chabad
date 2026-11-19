@@ -102,8 +102,11 @@ function communityStore(store) {
   const { pool } = store;
   const q = (t, p) => pool.query(t, p), rows = async (t, p) => (await q(t, p)).rows, one = async (t, p) => (await q(t, p)).rows[0] || null;
   return {
-    async saveCode(email, code, link) { await q(`INSERT INTO login_codes (email, code_hash, link_hash, expires_at) VALUES ($1,$2,$3, now() + interval '${CODE_MINUTES} minutes')
-      ON CONFLICT (email) DO UPDATE SET code_hash=EXCLUDED.code_hash, link_hash=EXCLUDED.link_hash, expires_at=EXCLUDED.expires_at, attempts=0, sent_at=now()`, [email, sha(code), sha(link)]); },
+    // Saves a new code, but only if the last one was sent more than 30 seconds ago (one statement, so two requests cannot both get through):
+    // returns false when it is too soon. Asking again is what resets the five tries, so this wait is what limits guessing per address.
+    async saveCode(email, code, link) { return (await q(`INSERT INTO login_codes (email, code_hash, link_hash, expires_at) VALUES ($1,$2,$3, now() + interval '${CODE_MINUTES} minutes')
+      ON CONFLICT (email) DO UPDATE SET code_hash=EXCLUDED.code_hash, link_hash=EXCLUDED.link_hash, expires_at=EXCLUDED.expires_at, attempts=0, sent_at=now()
+      WHERE login_codes.sent_at < now() - interval '30 seconds'`, [email, sha(code), sha(link)])).rowCount === 1; },
     async codeAge(email) { const r = await one('SELECT extract(epoch FROM (now() - sent_at)) AS age FROM login_codes WHERE email=$1', [email]); return r ? Number(r.age) : null; },
     dropCode: (email) => q('DELETE FROM login_codes WHERE email=$1', [email]),
     // Returns true once for a correct, unexpired code (or link); five wrong tries burn the code.
@@ -289,10 +292,11 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
     if (!validEmail(email)) return bad(res, 'invalid_email', tOf(req)('Please enter a valid email address.'));
     if (!mailer) return res.status(503).json({ code: 'not_configured', error: tOf(req)('Email sign-in is not switched on yet.') });
     const code = String(crypto.randomInt(0, 1e6)).padStart(6, '0'), link = crypto.randomBytes(24).toString('base64url');
-    await cs.saveCode(email, code, link);
+    if (!(await cs.saveCode(email, code, link))) return res.status(429).json({ code: 'too_soon', error: tOf(req)('Please wait a moment before asking for another code.') });
     const url = `${base}/account/verify?e=${encodeURIComponent(email)}&t=${link}`;
     const t = tOf(req), L = langOf(req), url2 = L === 'en' ? url : url + '&l=' + L;
-    await mailer.send({ to: email, subject: t('Your sign-in code: {code}', { code }), text: t('Your Chabad of Lamorinda sign-in code is {code}', { code }) + '\n\n' + t('Or tap this link to sign in:') + '\n' + url2 + '\n\n' + t('The code works for {n} minutes. If you did not ask for it, you can ignore this email.', { n: CODE_MINUTES }) });
+    try { await mailer.send({ to: email, subject: t('Your sign-in code: {code}', { code }), text: t('Your Chabad of Lamorinda sign-in code is {code}', { code }) + '\n\n' + t('Or tap this link to sign in:') + '\n' + url2 + '\n\n' + t('The code works for {n} minutes. If you did not ask for it, you can ignore this email.', { n: CODE_MINUTES }) }); }
+    catch (e) { await cs.dropCode(email); log.error('sign-in email failed:', e && e.message); return res.status(502).json({ code: 'email_failed', error: tOf(req)('Something went wrong. Please try again.') }); }
     res.json({ ok: true });
   }));
   r.post('/verify', need, limit('site-verify', 12, 15 * 60 * 1000), wrap(async (req, res) => {
@@ -400,7 +404,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
 <form method="post" action="/account/verify"><input type="hidden" name="e" value="${a(e)}"><input type="hidden" name="t" value="${a(tk)}"><input type="hidden" name="l" value="${L}">
 <button style="font:inherit;font-weight:600;padding:12px 28px;border-radius:999px;border:0;background:#c99a2e;color:#1b1405;cursor:pointer">${a(t('Continue'))}</button></form></body></html>`);
   });
-  app.post('/account/verify', express.urlencoded({ extended: false, limit: '4kb' }), wrap(async (req, res) => {
+  app.post('/account/verify', express.urlencoded({ extended: false, limit: '4kb' }), limit('site-link', 20, 15 * 60 * 1000), wrap(async (req, res) => {
     const b = req.body || {};
     const email = clean(b.e, 254).toLowerCase(), link = String(b.t || '');
     if (!cs || !validEmail(email) || link.length < 20 || !(await cs.useCode(email, { link }))) return res.redirect(302, '/account?expired=1');
@@ -410,7 +414,7 @@ function mountCommunity(app, { store, mailer, secret, base, limit, log = console
   }));
 
   const readMember = async (req) => (cs ? memberOf(req) : null);
-  if (cs) app.locals.siteCodes = { save: (email, code, link) => cs.saveCode(email, code, link), use: (email, code) => cs.useCode(email, { code }), age: (email) => cs.codeAge(email), drop: (email) => cs.dropCode(email) }; // the app's sign-in uses the same codes
+  if (cs) app.locals.siteCodes = { save: (email, code, link) => cs.saveCode(email, code, link), use: (email, code) => cs.useCode(email, { code }), age: (email) => cs.codeAge(email), minutes: CODE_MINUTES, drop: (email) => cs.dropCode(email) }; // the app's sign-in uses the same codes
   app.locals.siteSession = { set: (res, id) => setCookie(res, id), member: (req) => readMember(req) }; // the My Pushka app signs in through the same account
   return { cs, readMember, counts: async () => (cs ? cs.counts() : {}) };
 }
