@@ -23,7 +23,11 @@ echo "2/4  Stopping the website for a moment and loading the copy..."
 systemctl stop kiddush
 sudo -u postgres dropdb --if-exists kiddush
 sudo -u postgres createdb -O kiddush kiddush
-sudo -u postgres psql -q -d kiddush -f "$OUT" >/dev/null 2>&1 || true
+# read the file here (as root) and hand it over, because the database user may not read /root
+sudo -u postgres psql -q -d kiddush < "$OUT" > /root/neon-restore.log 2>&1 || true
+TABLES="$(sudo -u postgres psql -d kiddush -Atc "select count(*) from pg_tables where schemaname='public'")"
+[ "${TABLES:-0}" -gt 5 ] || { echo "Only ${TABLES:-0} tables arrived: the copy did not load. The saved copy is kept in $OUT; see /root/neon-restore.log"; systemctl start kiddush || true; exit 1; }
+echo "     ${TABLES} tables loaded"
 
 echo "3/4  Giving the tables to the website's database user..."
 for t in $(sudo -u postgres psql -d kiddush -Atc "select tablename from pg_tables where schemaname='public'"); do
@@ -37,6 +41,6 @@ echo "4/4  Starting the website..."
 systemctl start kiddush
 for i in $(seq 1 20); do
   sleep 2
-  if curl -fsS --max-time 10 http://127.0.0.1:3000/healthz 2>/dev/null | grep -q ok; then echo "Done: the website is running with a fresh copy of the data."; shred -u "$OUT"; exit 0; fi
+  if curl -fsS --max-time 10 http://127.0.0.1:3000/healthz 2>/dev/null | grep -q ok; then echo "Done: the website is running with a fresh copy of the data."; shred -u "$OUT" /root/neon-restore.log; exit 0; fi
 done
 echo "The website did not answer yet. Check:  journalctl -u kiddush -n 30 --no-pager"; exit 1
