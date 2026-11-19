@@ -1247,6 +1247,14 @@ test('jokes are gathered by topic: collection pages open in three languages, a s
   const map = (await c.call('GET', '/sitemap.xml')).text; assert.ok(map.includes('/stories/jokes/' + cols[0].id)); assert.ok(!map.includes('/stories/' + jokes[0].slug + '<'), 'no single-joke pages in the sitemap');
   assert.equal((await c.call('GET', '/stories/jokes/nothing-9')).status, 404);
 });
+test('Ask the Rabbi: a private question needs a name and an email OR a phone number, and the /ask page has the form', async () => {
+  const c = client();
+  for (const pre of ['', '/he', '/ru']) { const r = await c.call('GET', pre + '/ask'); assert.equal(r.status, 200); assert.ok(r.text.includes('data-kind="rabbi"') && r.text.includes('name="phone"') && r.text.includes('name="email"'), pre + ' the private form is on /ask'); const form = r.text.split('data-kind="rabbi"')[1].split('</form>')[0]; assert.ok(!/name="email"[^>]*required/.test(form), 'email is not required in the private form'); }
+  const q = { kind: 'rabbi', title: 'Question for the Rabbi', body: 'May I ask about Shabbat?' };
+  assert.equal((await c.call('POST', '/api/site/submit', { ...q, name: 'Dana', phone: '925-555-0188' })).status, 200, 'a phone number alone is enough for a private message');
+  assert.equal((await c.call('POST', '/api/site/submit', { ...q, name: 'Dana' })).status, 400, 'a name alone is not enough');
+  assert.equal((await c.call('POST', '/api/site/submit', { ...q, name: 'Dana', email: 'nope' })).status, 400, 'a mistyped email is refused');
+});
 test('no broken links inside the content (English, Hebrew, Russian)', async () => {
   const fs = require('fs'), path = require('path'), C = load(), bad = [];
   const ok = new Set(['/sponsor-a-kiddush', '/chai-club', '/', '/events', '/shabbat', '/holidays', '/programs', '/learn', '/jewish-lamorinda', '/our-area', '/community', '/get-involved', '/help', '/kaddish', '/tehillim', '/sponsor', '/donate', '/forms', '/parsha', '/calendar', '/ask', '/daily-study', '/photos', '/account', '/faq', '/contact', '/about', '/welcome', '/privacy', '/accessibility', '/kiddush/', '/pushka/', '/board/', '/events.ics',

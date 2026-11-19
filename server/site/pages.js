@@ -290,7 +290,9 @@ ${o.email ? `<p>${esc(t('Email'))}: <a href="mailto:${esc(o.email)}">${esc(o.ema
   <p class="muted">${esc(t('Private and confidential: only the Rabbi reads it.'))}</p>
   <label>${esc(t('Subject'))} <input name="title" maxlength="120" required value="${esc(String((X.req && X.req.query && X.req.query.about) || ''))}"></label>
   <label>${esc(t('Your message'))} <textarea name="body" rows="6" maxlength="2000" required></textarea></label>
-  <div class="fields"><label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email" required></label><label>${esc(t('Phone (optional)'))} <input name="phone" type="tel" autocomplete="tel" data-extra="Phone"></label></div>
+  <label>${esc(t('Your name'))} <input name="name" autocomplete="name" required></label>
+  <p class="muted small">${esc(t('So the Rabbi can answer you directly, please leave an email or a phone number (one is enough).'))}</p>
+  <div class="fields"><label>${esc(t('Your email'))} <input name="email" type="email" autocomplete="email"></label><label>${esc(t('Your phone'))} <input name="phone" type="tel" autocomplete="tel" data-extra="Phone"></label></div>
   <button class="btn gold" type="submit">${esc(t('Send'))}</button><p class="msg" hidden></p>
 </form>`;
 }

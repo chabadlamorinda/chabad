@@ -29,12 +29,7 @@ const HELP_EXTRAS = {
 
 function mountLife(r, { render, wrap, ctxOf, faqHtml, faqLd, crumbs, base, prayerList }) {
   const phoneLink = (o) => `<a class="btn gold call" href="tel:${esc(o.phone.replace(/[^0-9+]/g, ''))}" dir="ltr">${esc(o.phone)}</a>`;
-  const rabbiForm = (X, subject, kind = 'rabbi') => `<form class="card tool" data-submit data-kind="${kind}">
-  <p class="muted">${esc(X.t('Private and confidential: only the Rabbi reads it.'))}</p>
-  <input type="hidden" name="title" value="${esc(subject)}">
-  <label>${esc(X.t('How can we help?'))} <textarea name="body" rows="5" maxlength="2000" required></textarea></label>
-  <div class="fields"><label>${esc(X.t('Your name'))} <input name="name" autocomplete="name" required></label><label>${esc(X.t('Your email'))} <input name="email" type="email" autocomplete="email" required></label><label>${esc(X.t('Phone (optional)'))} <input name="phone" type="tel" autocomplete="tel" data-extra="Phone"></label></div>
-  <button class="btn gold" type="submit">${esc(X.t('Send to the Rabbi'))}</button><p class="msg" hidden></p></form>`;
+  const rabbiForm = require('./askform.js').rabbiForm;
 
   // ---------- life situations ----------
   r.get('/help', wrap(async (req, res) => {

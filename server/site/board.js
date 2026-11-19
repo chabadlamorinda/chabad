@@ -79,7 +79,10 @@ ${byPopularity([
     if (!kind) return res.status(400).json({ code: 'invalid_kind', error: t('Please choose what you are sharing.') });
     if (!title) return res.status(400).json({ code: 'invalid_title', error: t('Please add a headline.') });
     if (link && !/^https?:\/\//.test(link)) return res.status(400).json({ code: 'invalid_link', error: t('Links must start with https://') });
-    if (!name || !validEmail(email)) return res.status(400).json({ code: 'invalid_contact', error: t('Please add your name and email so the Rabbi can reach you.') });
+    // A private message needs a name and a way to answer: an email or a phone number is enough. Everything else needs an email.
+    const phoneOk = (phone.match(/\d/g) || []).length >= 7, privateKind = !!KINDS[kind].private;
+    if (!name || !(validEmail(email) || (privateKind && phoneOk))) return res.status(400).json({ code: 'invalid_contact', error: privateKind ? t('Please add your name and an email or a phone number so the Rabbi can answer you.') : t('Please add your name and email so the Rabbi can reach you.') });
+    if (email && !validEmail(email)) return res.status(400).json({ code: 'invalid_contact', error: t('Please enter a valid email address.') });
     await q('INSERT INTO submissions (id, kind, member_id, name, email, phone, title, body, link) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)', ['s_' + crypto.randomBytes(12).toString('hex'), kind, m ? m.id : null, name, email, phone, title, body, link]);
     const to = notifyTo || content().org.email;
     if (mailer && to) mailer.send({ to, subject: `${KINDS[kind].private ? '[Private] ' : ''}${KINDS[kind].label}: ${title}`, text: `${name} <${email}>${phone ? ' ' + phone : ''} sent:\n\n${title}\n\n${body}\n${link}\n\nRabbi area: ${base}/admin/community` }).catch((e) => log.error('notify:', e && e.message));
