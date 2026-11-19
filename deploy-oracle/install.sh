@@ -72,6 +72,17 @@ STRIPE_WEBHOOK_SECRET=${WH}
 SMTP_URL=
 MAIL_FROM=
 EOF
+  # Moving the whole website from Render: put the settings from Render's Environment tab in a file (one KEY=value per line) and run
+  #   sudo ENV_FROM_RENDER=/root/render.env bash deploy-oracle/install.sh
+  # Its settings are added here (the ones this script just made for the server itself are kept: PORT, NODE_ENV, DATABASE_URL, SESSION_SECRET).
+  if [ -n "${ENV_FROM_RENDER:-}" ] && [ -f "$ENV_FROM_RENDER" ]; then
+    echo "Adding the settings from ${ENV_FROM_RENDER}"
+    grep -E '^[A-Za-z_][A-Za-z0-9_]*=' "$ENV_FROM_RENDER" | grep -vE '^(PORT|NODE_ENV|DATABASE_URL|SESSION_SECRET)=' | while IFS= read -r line; do
+      key="${line%%=*}"
+      if grep -q "^${key}=" "$ENV_FILE"; then sed -i "/^${key}=/d" "$ENV_FILE"; fi
+      printf '%s\n' "$line" >> "$ENV_FILE"
+    done
+  fi
   chown root:kiddush "$ENV_FILE"; chmod 640 "$ENV_FILE"
 else
   echo "${ENV_FILE} already exists: leaving it alone (edit it by hand to change a secret)."
@@ -125,6 +136,15 @@ cat > /etc/cron.d/kiddush-backup <<'EOF'
 # every night at 03:15: dump the database, keep the last 30
 15 3 * * * root sudo -u postgres pg_dump -Fc kiddush > /var/backups/kiddush/kiddush-$(date +\%F).dump && find /var/backups/kiddush -name '*.dump' -mtime +30 -delete
 EOF
+# Like Render: when a new version is on GitHub, install it by itself (every 5 minutes). Needs the git copy to be in /opt/website-src.
+if [ "$REPO_DIR" = /opt/website-src ]; then
+  cat > /etc/cron.d/website-auto-update <<'EOF'
+*/5 * * * * root bash /opt/website-src/deploy-oracle/auto-update.sh
+EOF
+  echo "Automatic updates from GitHub are on (every 5 minutes; log: /var/log/website-auto-update.log)."
+else
+  echo "Tip: clone the repository into /opt/website-src (git clone <repository> /opt/website-src) and run this script from there to get automatic updates."
+fi
 ufw allow OpenSSH >/dev/null
 ufw allow 80/tcp >/dev/null
 ufw allow 443/tcp >/dev/null

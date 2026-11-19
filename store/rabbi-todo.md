@@ -1,5 +1,8 @@
 # The Rabbi's to-do list (things only you can do, at a computer)
 
+## Moving the website to your own free Oracle server (started Nov 20)
+Decision: no monthly fee, and email works there (Render's free plan blocks it). The full step-by-step is `deploy-oracle/MOVE-THE-WHOLE-WEBSITE.md` (create the server, install with one command carrying over the Render settings, copy the database from Neon, switch the address at Cloudflare; Render stays on as the fallback). Automatic updates from GitHub every 5 minutes. Claude walks through it when you say "I'm at a computer"; first you need an Oracle Cloud account (cloud.oracle.com, free, needs a card for identity only).
+
 ## Where we are (Nov 16)
 Done: jewishlamorinda.com is connected and live (www jumps to it); Google Search Console verified and the sitemap sent; Google Analytics counting (G-N4642YEZXW). The old site chabadoflamorinda.com is untouched.
 **Next, in this order (each about 5 minutes):**
