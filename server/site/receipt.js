@@ -10,19 +10,19 @@ const LOC = { en: 'en-US', he: 'he-IL', ru: 'ru-RU' };
 
 const WORDS = {
   en: { title: 'Official gift receipt', dear: (n) => (n ? `Dear ${n},` : 'Dear friend,'), headline: (m) => (m ? 'Thank you for being our partner, month after month' : 'Thank you for partnering with us'),
-    thanks: (m) => `Thank you so much for your ${m ? 'monthly ' : ''}gift to Chabad of Lamorinda. We are truly grateful, and we want you to know how much it means to us. You are not simply making a donation: you are our partner in everything we do, and because of you, Jewish life in our community grows stronger. Your generosity strengthens Jewish families in the area, and it is thanks to friends like you that our doors stay open, children learn and celebrate, and every Jew feels at home. Thank you for making this happen.`,
+    thanks: (m) => `Thank you so much for your ${m ? 'monthly ' : ''}gift to Chabad of Lamorinda. We are truly grateful, and we want you to know how much it means to us. You are not simply making a donation: you are our partner in everything we do, and because of you, Jewish life in our community grows stronger. Your generosity strengthens Jewish families in the area, bringing more Shabbat joy, more Jewish learning for our children, and a warm welcome for every Jew. Thank you for making this happen.`,
     dedicated: (d) => `Your gift is dedicated: ${d}. We are honored to be part of it.`, noted: (n) => `Thank you for telling us why you gave: “${n}”. It touched us.`,
     receiptNo: 'Receipt number', date: 'Date of gift', amount: 'Amount of gift', fund: 'Designated for', dedication: 'In honor or in memory of', how: 'Payment', online: 'Online (secure payment through Stripe)', from: 'Received from', note: 'Your note',
     tax: 'No goods or services were provided in exchange for this gift, other than intangible religious benefits. Chabad of Lamorinda is a tax-exempt organization described in Section 501(c)(3) of the Internal Revenue Code. Please keep this receipt for your tax records.',
     taxId: 'Tax ID (EIN)', close: 'With blessings and gratitude,', sign: 'Rabbi Israel and Tzipora Labkowski', questions: 'Questions about your gift? Call', monthlyNote: 'A monthly gift: you will receive a receipt for each payment.' },
   he: { title: 'קבלה רשמית על תרומה', dear: (n) => (n ? `${n} היקר/ה,` : 'ידיד/ה יקר/ה,'), headline: (m) => (m ? 'תודה שאתם שותפים שלנו, חודש אחרי חודש' : 'תודה על השותפות שלכם'),
-    thanks: (m) => `תודה רבה על תרומתכם ${m ? 'החודשית ' : ''}לחב"ד למורינדה. אנחנו אסירי תודה באמת, ורוצים שתדעו כמה זה חשוב לנו. אתם לא רק תורמים: אתם שותפים בכל מה שאנחנו עושים, ובזכותכם החיים היהודיים בקהילה שלנו מתחזקים. נדיבותכם מחזקת את המשפחות היהודיות באזור, ובזכות ידידים כמוכם הדלתות שלנו נשארות פתוחות, ילדים לומדים וחוגגים, וכל יהודי מרגיש בבית. תודה שאתם מאפשרים את כל זה.`,
+    thanks: (m) => `תודה רבה על תרומתכם ${m ? 'החודשית ' : ''}לחב"ד למורינדה. אנחנו אסירי תודה באמת, ורוצים שתדעו כמה זה חשוב לנו. אתם לא רק תורמים: אתם שותפים בכל מה שאנחנו עושים, ובזכותכם החיים היהודיים בקהילה שלנו מתחזקים. נדיבותכם מחזקת את המשפחות היהודיות באזור, ומביאה עוד שמחת שבת, עוד לימוד יהודי לילדים שלנו וקבלת פנים חמה לכל יהודי. תודה שאתם מאפשרים את כל זה.`,
     dedicated: (d) => `התרומה מוקדשת: ${d}. זכינו להיות שותפים לכך.`, noted: (n) => `תודה ששיתפת אותנו מדוע נתת: “${n}”. זה נגע ללבנו.`,
     receiptNo: 'מספר קבלה', date: 'תאריך התרומה', amount: 'סכום התרומה', fund: 'מיועדת ל', dedication: 'לכבוד או לזכר', how: 'תשלום', online: 'מקוון (תשלום מאובטח דרך Stripe)', from: 'התקבל מאת', note: 'ההערה שלך',
     tax: 'לא סופקו סחורות או שירותים תמורת תרומה זו, מלבד הטבות רוחניות בלתי מוחשיות. חב"ד למורינדה היא ארגון פטור ממס לפי סעיף 501(c)(3) של חוק המס הפדרלי בארצות הברית. נא לשמור קבלה זו לרישומי המס שלך.',
     taxId: 'מספר מזהה לצורכי מס (EIN)', close: 'בברכה ובהכרת תודה,', sign: 'הרב ישראל וציפורה לבקובסקי', questions: 'שאלות על תרומתך? התקשרו', monthlyNote: 'תרומה חודשית: תקבלו קבלה על כל תשלום.' },
   ru: { title: 'Официальная квитанция о пожертвовании', dear: (n) => (n ? `Уважаемый(ая) ${n}!` : 'Дорогой друг!'), headline: (m) => (m ? 'Спасибо, что вы с нами, месяц за месяцем' : 'Спасибо, что вы наш партнёр'),
-    thanks: (m) => `Огромное спасибо за ваше ${m ? 'ежемесячное ' : ''}пожертвование Хабаду Ламоринды. Мы искренне благодарны и хотим, чтобы вы знали, как много это для нас значит. Вы не просто жертвуете: вы наш партнёр во всём, что мы делаем, и благодаря вам еврейская жизнь нашей общины становится крепче. Ваша щедрость укрепляет еврейские семьи в нашем регионе, и именно благодаря друзьям, как вы, наши двери остаются открытыми, дети учатся и празднуют, а каждый еврей чувствует себя как дома. Спасибо, что вы делаете всё это возможным.`,
+    thanks: (m) => `Огромное спасибо за ваше ${m ? 'ежемесячное ' : ''}пожертвование Хабаду Ламоринды. Мы искренне благодарны и хотим, чтобы вы знали, как много это для нас значит. Вы не просто жертвуете: вы наш партнёр во всём, что мы делаем, и благодаря вам еврейская жизнь нашей общины становится крепче. Ваша щедрость укрепляет еврейские семьи в нашем регионе и приносит больше радости субботы, больше еврейских знаний нашим детям и тёплый приём каждому еврею. Спасибо, что вы делаете всё это возможным.`,
     dedicated: (d) => `Дар посвящён: ${d}. Для нас честь быть частью этого.`, noted: (n) => `Спасибо, что рассказали, почему вы дали: «${n}». Это нас тронуло.`,
     receiptNo: 'Номер квитанции', date: 'Дата пожертвования', amount: 'Сумма пожертвования', fund: 'Назначение', dedication: 'В честь или в память', how: 'Оплата', online: 'Онлайн (безопасная оплата через Stripe)', from: 'Получено от', note: 'Ваша записка',
     tax: 'Товары и услуги в обмен на это пожертвование не предоставлялись, кроме нематериальных религиозных благ. Хабад Ламоринды — организация, освобождённая от налогов согласно разделу 501(c)(3) Налогового кодекса США. Пожалуйста, сохраните эту квитанцию для налоговой отчётности.',
@@ -32,7 +32,7 @@ const WORDS = {
 // A warm line about the kind of gift (by the fund's id), so the thank-you is about what the giver chose. No facts beyond what each fund is for.
 const FUND_THANKS = {
   en: {
-    general: 'Your gift to our General Fund keeps everything we do going: Shabbat and holiday services, classes, and a warm, open door for every Jew.',
+    general: 'Your gift to our General Fund helps everything we do to flourish: Shabbat and holiday services, classes, and a warm welcome for every Jew.',
     chai: 'Thank you for joining the Chai Club. Monthly partners like you give us the steady support that lets us plan ahead and say yes to every family.',
     preschool: 'Your gift to Jewish Preschool Scholarships helps a young child begin life with Jewish learning, songs and friends, whatever the family’s budget.',
     market: 'Thank you for supporting the Bay Kosher Market.',
@@ -45,7 +45,7 @@ const FUND_THANKS = {
     pledge: 'Thank you for your gift. We truly appreciate it.',
   },
   he: {
-    general: 'תרומתך לקרן הכללית מאפשרת את כל מה שאנחנו עושים: תפילות בשבת ובחגים, שיעורים, ודלת פתוחה ולבבית לכל יהודי.',
+    general: 'תרומתך לקרן הכללית עוזרת לכל מה שאנחנו עושים לפרוח: תפילות בשבת ובחגים, שיעורים, וקבלת פנים חמה לכל יהודי.',
     chai: 'תודה שהצטרפת למועדון חי. שותפים חודשיים כמוך נותנים לנו את התמיכה היציבה שמאפשרת לתכנן קדימה ולומר כן לכל משפחה.',
     preschool: 'תרומתך למלגות לגן היהודי עוזרת לילד קטן להתחיל את חייו עם לימוד יהודי, שירים וחברים, בלי קשר לתקציב המשפחה.',
     market: 'תודה על תמיכתך ב-Bay Kosher Market.',
@@ -58,7 +58,7 @@ const FUND_THANKS = {
     pledge: 'תודה על תרומתך. אנו מעריכים אותה מאוד.',
   },
   ru: {
-    general: 'Ваш дар Общему фонду позволяет делать всё, что мы делаем: субботние и праздничные молитвы, уроки и открытую дверь для каждого еврея.',
+    general: 'Ваш дар Общему фонду помогает процветать всему, что мы делаем: субботним и праздничным молитвам, урокам и тёплому приёму для каждого еврея.',
     chai: 'Спасибо, что присоединились к клубу Хай. Ежемесячные партнёры, как вы, дают нам стабильную поддержку, чтобы планировать вперёд и говорить «да» каждой семье.',
     preschool: 'Ваш дар стипендиям для еврейского детского сада помогает малышу начать жизнь с еврейскими знаниями, песнями и друзьями, независимо от бюджета семьи.',
     market: 'Спасибо за поддержку Bay Kosher Market.',

@@ -20,6 +20,7 @@ test('the official gift receipt: letterhead, gift details, tax statement and sig
   const chesed = receipt({ lang: 'en', base: '', org, gift: { ...gift, fundId: 'chesed' }, donor: { name: 'Dana Levi' } });
   assert.ok(chesed.html.includes('Thank you for partnering with us') && chesed.html.includes('you are our partner in everything we do') && chesed.html.includes('strengthens Jewish families in the area') && chesed.html.includes('Thank you for making this happen.') && !/Lafayette, Moraga and Orinda/.test(chesed.html + chesed.text), 'every receipt opens with the warm general thank-you');
   assert.ok(receipt({ lang: 'en', base: '', org, gift: { ...gift, monthly: true }, donor: {} }).html.includes('month after month'), 'monthly partners are thanked as such');
+  assert.ok(!/doors stay open|keeps everything we do going/.test(chesed.html + receipt({ lang: 'en', base: '', org, gift: { ...gift, fundId: 'general' }, donor: {} }).html), 'only positive and uplifting: never a hint that the work depends on the gift');
   assert.ok(chesed.html.indexOf('Thank you for partnering with us') < chesed.html.indexOf('visit and care for those in need'), 'the general thanks comes before the specific thanks');
   assert.ok(chesed.html.includes('visit and care for those in need') && chesed.html.includes('Your gift is dedicated: In memory of Sarah bat Avraham') && chesed.html.includes('“For my mother”'));
   assert.equal((chesed.html.match(/Rabbi Israel and Tzipora Labkowski/g) || []).length, 2, 'the names at the top and at the bottom');
