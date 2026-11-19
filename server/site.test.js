@@ -1392,3 +1392,9 @@ test('donate: other ways to give include a car, goods, time and skills, an emplo
   assert.ok(mails.some((m) => /Tell us what you would like to give/.test(m.subject) && /minivan/.test(m.text)), 'the Rabbi is emailed what they would like to give');
   for (const L of ['he', 'ru']) assert.ok(/A car or other vehicle/.test((await client().call('GET', '/' + L + '/donate')).text) === false, L + ' donate page is translated');
 });
+
+test('the thank-you page after a gift: short, warm, and without the old "keeps open" wording', async () => {
+  const p = (await client().call('GET', '/donate/thank-you')).text;
+  assert.ok(p.includes('Thank you for being our partner') && p.includes('May G-d bless you'), 'a thank-you and a blessing');
+  assert.ok(!/keeps Jewish life|open to everyone|keeps everything open/.test(p), 'none of the old wording');
+});

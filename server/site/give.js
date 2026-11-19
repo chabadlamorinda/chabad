@@ -79,9 +79,9 @@ ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
     const X = ctxOf(req), { t, C } = X;
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Thank you!'))}</h1>
 <p class="lead-d">${esc(t('Your gift was received. A receipt has been emailed to you.'))}</p>
-<p>${esc(t('Your generosity keeps Jewish life warm and open to everyone in Lafayette, Moraga and Orinda. May G-d bless you and your family with health, happiness and success.'))}</p>
+<p>${esc(t('Thank you for being our partner. May G-d bless you and your family with health, happiness and success.'))}</p>
 <h2>${esc(t('What would you like to do next?'))}</h2>
-<div class="grid">${[['/shabbat', 'Come for Shabbat', 'Services, the Kiddush and a warm Shabbat meal.'], ['/events', 'Upcoming events', 'Holidays, classes and gatherings for the whole family.'], ['/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 keeps everything open to all.'], ['/sponsor-a-kiddush', 'Sponsor a Kiddush', 'In honor or in memory of a loved one.'], ['/subscribe', 'Get the weekly email', 'Shabbat times, events and a word from the Rabbi.'], ['/learn', 'Learn about Judaism', 'Clear, friendly guides to Jewish life.']].map(([href, h, p]) => `<a class="card tile" href="${X.path(href)}"><h3>${esc(t(h))}</h3><p>${esc(t(p))}</p></a>`).join('')}</div>
+<div class="grid">${[['/shabbat', 'Come for Shabbat', 'Services, the Kiddush and a warm Shabbat meal.'], ['/events', 'Upcoming events', 'Holidays, classes and gatherings for the whole family.'], ['/chai-club', 'Join the Chai Club', 'A monthly gift in multiples of 18 brings steady joy to our whole community.'], ['/sponsor-a-kiddush', 'Sponsor a Kiddush', 'In honor or in memory of a loved one.'], ['/subscribe', 'Get the weekly email', 'Shabbat times, events and a word from the Rabbi.'], ['/learn', 'Learn about Judaism', 'Clear, friendly guides to Jewish life.']].map(([href, h, p]) => `<a class="card tile" href="${X.path(href)}"><h3>${esc(t(h))}</h3><p>${esc(t(p))}</p></a>`).join('')}</div>
 <p class="btns"><a class="btn ghost" href="${X.path('/')}">${esc(t('Back to the home page'))}</a></p>
 <p class="muted">${esc(t('Questions about your gift? Call {phone}.', { phone: C.org.phone }))}</p></section>`;
     await render(res, { path: '/donate/thank-you', title: t('Thank you!'), description: t('Thank you for your gift to Chabad of Lamorinda.'), body, noindex: true });
@@ -94,8 +94,8 @@ ${giveForm(X, { club: true, amt: req.query.amt, back: '/chai-club' })}
 const GIVE_KINDS = {
   memory: ['Give in their memory', 'Giving tzedakah in memory of a loved one is an age-old Jewish custom: a merit for their soul, and for the living a way to carry on their good. You can write their name below.', 'e.g. In memory of Sarah bat Avraham', 'general'],
   refuah: ['Give in the merit of their recovery', 'Since the time of the Talmud, Jews have given tzedakah in the merit of someone who is ill. Write their name, and the Rabbi will include them in his prayers.', 'e.g. For the recovery of Moshe ben Rivka', 'general'],
-  tzedakah: ['Give tzedakah today', 'Every gift, large or small, keeps Jewish life warm and open to everyone in Lafayette, Moraga and Orinda.', 'e.g. In honor of my family', 'general'],
-  holiday: ['Help others celebrate', 'Giving before and on the holiday is part of the mitzvah. Your gift helps families in Lamorinda celebrate, and keeps our holiday programs open to all.', 'e.g. In honor of the holiday', 'holidays'],
+  tzedakah: ['Give tzedakah today', 'Every gift, large or small, brings more Jewish life, learning and joy to families in Lafayette, Moraga and Orinda.', 'e.g. In honor of my family', 'general'],
+  holiday: ['Help others celebrate', 'Giving before and on the holiday is part of the mitzvah. Your gift helps families in Lamorinda celebrate, and brings our holiday programs to even more people.', 'e.g. In honor of the holiday', 'holidays'],
 };
 const GIVE_ON = {
   '/kaddish': 'memory', '/tools/yahrzeit': 'memory', '/learn/yahrzeit': 'memory', '/learn/kaddish': 'memory', '/learn/yizkor': 'memory', '/learn/yahrzeit-candle': 'memory', '/learn/year-of-mourning': 'memory', '/holidays/yom-kippur': 'memory',
