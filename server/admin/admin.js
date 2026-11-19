@@ -29,6 +29,7 @@
       ['/admin/community', 'Website', 'Requests, sign-ups, RSVPs, approvals, visitors'],
       ['announce', 'Announcements', 'Notices on the app’s home screen'],
       ['push', 'Send a message', 'A notification to everyone’s phone'],
+      ['settings', 'Keys and settings', 'Change a Stripe, email or Google key from your phone; server care'],
       ['/admin/api/backup', 'Download a full backup', 'A copy of everything, for safekeeping (also emailed every Sunday)'],
     ]],
   ];
@@ -217,8 +218,53 @@
         api('POST', '/broadcast', { title: title.value, body: body.value, url: url.value, confirm: ok.checked }).then(function (j) { out.textContent = 'Sent to ' + j.sent + ' of ' + j.total + ' device(s).'; }).catch(function (e) { out.textContent = e.message; });
       } }), out]);
   }
+  // Keys and settings: change a key from the phone (kept encrypted, never shown back), and see how the server is doing.
+  function settings() {
+    var box = el('div'), status = el('p', { class: 'small' }), inputs = {};
+    function draw(j) {
+      box.textContent = '';
+      box.appendChild(el('p', { class: 'small', text: 'Paste a new key and tap Save. The website restarts for a few seconds to use it. Keys are kept encrypted and are never shown here again (only the last four characters). Leave a box empty to keep it as it is.' }));
+      j.items.forEach(function (s) {
+        var inp = el('input', { type: s.secret ? 'password' : 'text', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false', placeholder: s.secret ? 'Paste the new value' : (s.hint || 'Type the new value'), 'aria-label': s.label });
+        inputs[s.id] = inp;
+        var now = s.set ? 'In use' + (s.hint ? ': ' + s.hint : '') + (s.fromScreen ? ' (saved here)' : ' (from the server)') : 'Not set';
+        var kids = [el('strong', { text: s.label }), el('div', { class: 'small', text: now }), el('div', { class: 'small', text: s.help }), inp];
+        if (s.fromScreen) kids.push(el('p', { class: 'small' }, [el('button', { class: 'quiet', text: 'Use the server’s original', onclick: function () { save((function () { var o = {}; o[s.id] = ''; return o; })()); } })]));
+        box.appendChild(el('div', { class: 'card' }, kids));
+      });
+      box.appendChild(el('p', {}, [el('button', { class: 'on', text: 'Save', onclick: function () {
+        var v = {}; Object.keys(inputs).forEach(function (k) { if (inputs[k].value.trim()) v[k] = inputs[k].value.trim(); });
+        if (!Object.keys(v).length) { status.textContent = 'Nothing to save yet: paste a new value into a box.'; return; }
+        save(v);
+      } }), ' ', status]));
+    }
+    function save(values) {
+      status.textContent = 'Saving…';
+      api('POST', '/site/settings', { values: values }).then(function (j) {
+        status.textContent = 'Saved: ' + j.changed.join(', ') + '. The website is restarting; this page refreshes in a few seconds.';
+        setTimeout(function () { reload(); }, 9000);
+      }).catch(function (e) { status.textContent = e.message; });
+    }
+    function reload() { wrapErr(api('GET', '/site/settings')).then(function (j) { if (j) { draw(j); care(); } }).catch(function (e) { box.textContent = e.message; }); }
+    var careBox = el('div');
+    function care() {
+      careBox.textContent = '';
+      api('GET', '/site/care').then(function (c) {
+        var lines = [];
+        lines.push('The website has been running ' + (c.siteMinutes >= 120 ? Math.round(c.siteMinutes / 60) + ' hours' : c.siteMinutes + ' minutes') + '; the server ' + (c.uptimeMinutes >= 2880 ? Math.round(c.uptimeMinutes / 1440) + ' days' : Math.round(c.uptimeMinutes / 60) + ' hours') + '.');
+        if (c.diskFreePercent != null) lines.push('Disk: ' + c.diskFreePercent + '% free (' + c.diskFreeGb + ' GB).');
+        lines.push('Memory free: ' + c.freeMemoryMb + ' MB.');
+        careBox.appendChild(el('h2', { class: 'group-h', text: 'Server care' }));
+        careBox.appendChild(el('div', { class: 'card' }, lines.map(function (l) { return el('div', { class: 'small', text: l }); }).concat([el('p', { class: 'small', text: 'To restart the website, install updates, free disk space or restart the server, ask Claude in the chat; the server does it by itself within about 5 minutes and the result appears below.' })])));
+        if (c.maintenance && c.maintenance.length) careBox.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'What the server did lately' })].concat(c.maintenance.slice(-12).map(function (l) { return el('div', { class: 'small', text: l }); }))));
+        if (c.changes && c.changes.length) careBox.appendChild(el('div', { class: 'card' }, [el('strong', { text: 'Settings changed lately' })].concat(c.changes.map(function (x) { return el('div', { class: 'small', text: new Date(x.at).toLocaleString('en-US') + ': ' + x.what.join(', ') }); }))));
+      }).catch(function () {});
+    }
+    reload();
+    return el('div', {}, [box, careBox]);
+  }
   function load() {
-    var views = { announce: announce, donors: donors, yahrzeits: yahrzeits, members: members, payments: payments, push: push };
+    var views = { announce: announce, donors: donors, yahrzeits: yahrzeits, members: members, payments: payments, push: push, settings: settings };
     shell(tab ? views[tab]() : null);
   }
   api('GET', '/me').then(load).catch(function () { login(); });

@@ -236,6 +236,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       ask.mountAdmin(r2, ctx);
       outreach.mountAdmin(r2, ctx);
       require('../backup.js').mountBackupAdmin(r2, ctx, { store });
+      require('./secure-settings.js').mountAdmin(r2, ctx, { store, env, secret, log, notify: require('./notify.js').makeNotify({ mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, log }) });
       r2.get('/community', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.html')));
       r2.get('/community.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.js')));
     },

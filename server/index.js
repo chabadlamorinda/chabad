@@ -550,21 +550,11 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 }
 
 if (require.main === module) {
-  const secret = process.env.STRIPE_SECRET_KEY, pk = process.env.STRIPE_PUBLISHABLE_KEY, sessionSecret = process.env.SESSION_SECRET;
+  const sessionSecret = process.env.SESSION_SECRET;
   if (!sessionSecret || sessionSecret.length < 16) { console.error('SESSION_SECRET must be set (16+ characters).'); process.exit(1); }
-  let stripe = null;
-  if (secret && pk) {
-    const Stripe = require('stripe');
-    stripe = new Stripe(secret);
-    console.log('Stripe enabled in ' + (/^sk_live_/.test(secret) ? 'LIVE' : 'TEST') + ' mode.');
-    if (/^sk_live_/.test(secret) !== /^pk_live_/.test(pk)) { console.error('Stripe keys mix live and test modes.'); process.exit(1); }
-  } else {
-    console.log('Stripe keys not set: running without card payments.');
-  }
   const port = process.env.PORT || 3000;
   (async () => {
     let store = null, sendPush = null;
-    const vapidPub = process.env.VAPID_PUBLIC_KEY || '', vapidPriv = process.env.VAPID_PRIVATE_KEY || '';
     if (process.env.DATABASE_URL) {
       store = require('./store.js').createStore(process.env.DATABASE_URL);
       // If the database is down when the server starts (or restarts during an update), the website still opens: most pages
@@ -578,6 +568,23 @@ if (require.main === module) {
       try { const n = await require('./kiddush-legacy.js').importLegacy(store); if (n) console.log('Imported ' + n + ' sponsors from the original Kiddush board.'); } catch (e) { console.error('Kiddush import skipped:', e.message); }
       console.log('Database connected: members, yahrzeits and reminders are on.');
     } else console.log('DATABASE_URL not set: yahrzeit sharing, reminders and the Rabbi area are off.');
+    // Keys the Rabbi saved in the Rabbi area ("Keys and settings") win over the server's settings file. Saving one restarts
+    // the website (the server, systemd or Render, starts it again by itself), so they are read here, before anything uses them.
+    const settings = require('./site/secure-settings.js');
+    const applied = await settings.applyOverrides(store, process.env, sessionSecret);
+    if (applied.length) console.log('Settings saved in the Rabbi area are in use: ' + applied.join(', '));
+    settings.onRestart(() => { console.log('Restarting to use a changed setting.'); process.exit(0); });
+    const secret = process.env.STRIPE_SECRET_KEY, pk = process.env.STRIPE_PUBLISHABLE_KEY;
+    let stripe = null;
+    if (secret && pk) {
+      const Stripe = require('stripe');
+      stripe = new Stripe(secret);
+      console.log('Stripe enabled in ' + (/^sk_live_/.test(secret) ? 'LIVE' : 'TEST') + ' mode.');
+      if (/^sk_live_/.test(secret) !== /^pk_live_/.test(pk)) { console.error('Stripe keys mix live and test modes.'); process.exit(1); }
+    } else {
+      console.log('Stripe keys not set: running without card payments.');
+    }
+    const vapidPub = process.env.VAPID_PUBLIC_KEY || '', vapidPriv = process.env.VAPID_PRIVATE_KEY || '';
     if (vapidPub && vapidPriv) {
       const webpush = require('web-push');
       webpush.setVapidDetails('mailto:rabbi@chabadoflamorinda.com', vapidPub, vapidPriv);

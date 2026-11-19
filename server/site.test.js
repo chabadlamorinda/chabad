@@ -1320,3 +1320,42 @@ test('no broken links inside the content (English, Hebrew, Russian)', async () =
   for (const [, href] of bad) if (!answers.has(href)) answers.set(href, (await client().call('GET', href)).status < 400);
   assert.deepEqual(bad.filter(([, href]) => !answers.get(href)).map(([f, href]) => f + ' -> ' + href), [], 'fix these links');
 });
+
+test('Keys and settings in the Rabbi area: checked, saved encrypted, never shown back, applied on start', async () => {
+  const a = await admin(), K = 'sk_live_' + 'a'.repeat(24), P = 'pk_live_' + 'b'.repeat(24);
+  assert.notEqual((await client().call('GET', '/admin/api/site/settings')).status, 200, 'not without signing in');
+  const list = (await a.call('GET', '/admin/api/site/settings')).json.items;
+  assert.ok(list.some((i) => i.id === 'STRIPE_SECRET_KEY') && list.some((i) => i.id === 'SMTP_URL'));
+  assert.ok(!list.some((i) => ['ADMIN_PASSWORD', 'SESSION_SECRET', 'DATABASE_URL'].includes(i.id)), 'the password and database are never changed here');
+  const post = (values) => a.call('POST', '/admin/api/site/settings', { values }, { 'x-admin': '1' });
+  assert.equal((await post({ STRIPE_SECRET_KEY: 'nope' })).status, 400, 'a wrong-looking key is refused');
+  assert.equal((await post({ ADMIN_PASSWORD: 'something long enough' })).status, 400, 'only the listed settings');
+  assert.equal((await post({ STRIPE_SECRET_KEY: K, STRIPE_PUBLISHABLE_KEY: 'pk_test_' + 'c'.repeat(24) })).status, 400, 'live and test keys cannot be mixed');
+  const ok = await post({ GA_ID: 'G-TEST12345', STRIPE_SECRET_KEY: K, STRIPE_PUBLISHABLE_KEY: P });
+  assert.equal(ok.status, 200); assert.equal(ok.json.restarting, true);
+  const after = await a.call('GET', '/admin/api/site/settings');
+  assert.ok(!after.text.includes(K) && !after.text.includes(P), 'the keys are never sent back');
+  const sk = after.json.items.find((i) => i.id === 'STRIPE_SECRET_KEY'); assert.ok(sk.hint.endsWith('aaaa') && sk.hint.length < 12);
+  const raw = await store.getKv('secure-settings'); assert.ok(!JSON.stringify(raw).includes('sk_live_'), 'kept encrypted');
+  const envNow = {}, { applyOverrides } = require('./site/secure-settings.js');
+  assert.deepEqual((await applyOverrides(store, envNow, SECRET)).sort(), ['GA_ID', 'STRIPE_PUBLISHABLE_KEY', 'STRIPE_SECRET_KEY']);
+  assert.equal(envNow.STRIPE_SECRET_KEY, K); assert.equal(envNow.GA_ID, 'G-TEST12345');
+  assert.deepEqual(await applyOverrides(store, {}, 'z'.repeat(32), { error() {} }), [], 'a different website secret cannot read them, and nothing breaks');
+  assert.ok(mails.some((m) => /setting was changed/.test(m.subject) && !m.text.includes(K)), 'the Rabbi is told, without the key');
+  assert.equal((await post({ GA_ID: '' })).status, 200, 'an empty box goes back to the server original');
+  assert.ok(!(await applyOverrides(store, {}, SECRET)).includes('GA_ID'));
+  const care = (await a.call('GET', '/admin/api/site/care')).json; assert.equal(typeof care.uptimeMinutes, 'number'); assert.ok(care.changes.length >= 1);
+});
+
+test('maintenance requests run once, only from the fixed list', () => {
+  const { spawnSync } = require('child_process'), dir = fs.mkdtempSync(path.join(os.tmpdir(), 'maint-'));
+  fs.writeFileSync(path.join(dir, 'req.txt'), '# a comment\nt1 status-report\nt2 nonsense-action\nbad!id restart-site\nt3 restart-site please\n\n');
+  const env2 = { ...process.env, REQUESTS: path.join(dir, 'req.txt'), STATE_DIR: path.join(dir, 'state'), MAINT_LOG: path.join(dir, 'log'), DRY_RUN: '1' };
+  const run = () => assert.equal(spawnSync('bash', [path.join(__dirname, '..', 'deploy-oracle', 'maintenance.sh')], { env: env2 }).status, 0);
+  run();
+  const log = fs.readFileSync(path.join(dir, 'log'), 'utf8');
+  assert.match(log, /request t1: status-report/); assert.match(log, /would run: systemctl restart kiddush/); assert.match(log, /unknown action 'nonsense-action'/); assert.doesNotMatch(log, /bad/);
+  assert.deepEqual(fs.readFileSync(path.join(dir, 'state', 'done'), 'utf8').trim().split('\n'), ['t1', 't2', 't3']);
+  run(); assert.equal(fs.readFileSync(path.join(dir, 'log'), 'utf8'), log, 'a request never runs twice');
+  fs.rmSync(dir, { recursive: true, force: true });
+});
