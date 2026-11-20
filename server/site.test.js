@@ -643,7 +643,7 @@ test('home page: large banners, smaller banners, what we built, ways to get invo
     assert.ok((h.match(/class="sb theme-/g) || []).length <= 8, 'at most 8 small banners');
   }
   assert.match((await client().call('GET', '/')).text, /Shabbat at Chabad of Lamorinda/);
-  assert.match((await client().call('GET', '/')).text, /class="story"/); assert.match((await client().call('GET', '/')).text, /\/media\/photos\/[a-z-]+\.jpg/);
+  assert.match((await client().call('GET', '/')).text, /class="story story-sm"/); assert.match((await client().call('GET', '/')).text, /\/media\/photos\/[a-z-]+\.jpg/);
   for (const L of ['', '/he', '/ru']) { const d = await client().call('GET', L + '/dreidel'); assert.equal(d.status, 200); assert.match(d.text, /data-dreidel/); }
   assert.match((await client().call('GET', '/holidays/chanukah')).text, /href="\/dreidel"/);
   for (const L of ['', '/he', '/ru']) { // two separate apps, two install pages, two icons

@@ -564,6 +564,12 @@ h1 { font-weight: 600; }
 .story-photo .tag { position: absolute; bottom: -14px; inset-inline-start: 18px; background: var(--card); border-radius: 999px; padding: 6px 16px; box-shadow: var(--shadow); font-family: var(--hand); font-size: 1.4rem; color: var(--gold-ink); }
 .story p { font-size: 1.08rem; }
 .story .sign { font-family: var(--hand); font-size: 1.9rem; color: var(--gold-ink); margin: 6px 0 0; line-height: 1.1; }
+.story-sm { grid-template-columns: 96px 1fr !important; gap: 16px; align-items: start; max-width: 760px; }
+@media (min-width: 640px) { .story-sm { grid-template-columns: 160px 1fr !important; gap: 24px; } }
+.story-sm .story-photo img { aspect-ratio: 1 / 1 !important; border-radius: 50%; }
+.story-sm h2 { margin: 0 0 6px; }
+.story-sm p { font-size: 1rem; margin: 0 0 10px; }
+.tl-more summary { cursor: pointer; color: var(--gold-ink); font-weight: 600; }
 .timeline { list-style: none; padding: 0; margin: 18px 0; display: grid; gap: 10px; }
 .timeline li { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: baseline; }
 .timeline b { font-family: var(--hand); font-size: 1.6rem; color: var(--clay); line-height: 1; }

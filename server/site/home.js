@@ -108,11 +108,11 @@ ${campaignBanner(X)}
   <p class="btns"><a class="btn gold" href="tel:${esc(phone)}" dir="ltr">${esc(t('Call {phone}', { phone: o.phone }))}</a><a class="btn ghost" href="/help">${esc(t('All life situations'))}</a></p>
 </div></section>
 ${dayGuides.length ? `<section class="wrap sec">${guideCards(X, dayGuides, t('This week on the Jewish calendar'))}</section>` : ''}
-${H.story ? `<section class="wrap sec"><div class="story">
-  ${H.story.image ? `<div class="story-photo"><img src="${esc(H.story.image)}" alt="" loading="lazy" decoding="async">${H.story.tag ? `<span class="tag">${esc(H.story.tag)}</span>` : ''}</div>` : ''}
-  <div><div class="sec-h"><h2>${esc(H.story.title)}</h2></div><p>${esc(H.story.text)}</p>
-  ${(H.story.timeline || []).length ? `<ol class="timeline">${H.story.timeline.map((x) => `<li><b>${esc(x.year)}</b><span>${esc(x.text)}</span></li>`).join('')}</ol>` : ''}
-  ${H.story.url ? `<p><a class="btn ghost" href="${esc(H.story.url)}">${esc(H.story.button || t('About us'))}</a></p>` : ''}</div>
+${H.story ? `<section class="wrap sec"><div class="story story-sm">
+  ${H.story.image ? `<div class="story-photo"><img src="${esc(H.story.image)}" alt="" loading="lazy" decoding="async" width="160" height="160"></div>` : ''}
+  <div><h2>${esc(H.story.title)}</h2><p>${esc(H.story.text)}</p>
+  <p class="btns"><a class="btn gold sm" href="tel:${esc(String(o.phone || '').replace(/[^0-9+]/g, ''))}">${esc(t('Call the Rabbi'))} ${esc(o.phone || '')}</a>${H.story.url ? ` <a class="btn ghost sm" href="${esc(H.story.url)}">${esc(H.story.button || t('About us'))}</a>` : ''}</p>
+  ${(H.story.timeline || []).length ? `<details class="tl-more"><summary>${esc(t('Our story, year by year'))}</summary><ol class="timeline">${H.story.timeline.map((x) => `<li><b>${esc(x.year)}</b><span>${esc(x.text)}</span></li>`).join('')}</ol></details>` : ''}</div>
 </div></section>` : ''}
 <section class="band built"><div class="wrap">
   <div class="sec-h"><h2>${esc(t('Let’s explore Judaism together'))}</h2><a href="/about">${esc(t('About us'))} →</a></div>
