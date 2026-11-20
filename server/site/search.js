@@ -108,4 +108,6 @@ ${results.length ? `<p class="muted">${esc(t('{n} results for "{q}"', { n: resul
     await render(res, { path: '/search', noindex: true, title: q ? t('Search: {q}', { q }) : t('Search'), description: t('Search the Chabad of Lamorinda website.'), body });
   }));
 }
-module.exports = { mountSearch, search, siteDocs, wordsOf, norm, score };
+// Does this search still find nothing today? (Old searches are re-checked, so a word a new guide or spelling now finds drops off the writing list.)
+const stillMissing = (C, q) => { const r = search(C, q, (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (o && o[k] != null ? o[k] : m)), 5); return !r.results.length && !r.answers.length; };
+module.exports = { mountSearch, search, siteDocs, wordsOf, norm, score, stillMissing };

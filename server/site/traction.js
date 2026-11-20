@@ -15,7 +15,7 @@ async function tractionData(q, C) {
     one("SELECT count(*)::int FROM rsvps WHERE created_at > now() - interval '7 days'"),
     one("SELECT count(*)::int FROM site_leads WHERE created_at > now() - interval '7 days'"),
     one("SELECT count(*)::int FROM email_subscribers WHERE created_at > now() - interval '7 days'"),
-    many("SELECT q, sum(n)::int AS n FROM site_searches WHERE day >= CURRENT_DATE - 7 AND results = 0 GROUP BY q ORDER BY n DESC LIMIT 5"),
+    many("SELECT q, sum(n)::int AS n FROM site_searches WHERE day >= CURRENT_DATE - 7 AND results = 0 GROUP BY q ORDER BY n DESC LIMIT 20").then((rows) => (C ? rows.filter((m) => require('./search.js').stillMissing(C, m.q)) : rows).slice(0, 5)),
   ]);
   const title = (p) => { const m = /^\/learn\/([a-z0-9-]+)$/.exec(p), a = m && C && C.learn.find((x) => x.slug === m[1]); return a ? a.title : p; };
   return { visitors, before, views, topPages: topPages.map((x) => ({ ...x, title: title(x.path) })), sources, forms, rsvps, requests, subs, missed };

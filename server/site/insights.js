@@ -73,7 +73,7 @@ async function ideas(q, C, base = '') {
     one('SELECT count(DISTINCT vid)::int FROM visitor_views WHERE day >= CURRENT_DATE - 60 AND day < CURRENT_DATE - 30'),
     one('SELECT count(DISTINCT vid)::int FROM visitor_views WHERE day >= CURRENT_DATE - 7'),
     many("SELECT path, count(DISTINCT vid)::int AS n FROM visitor_views WHERE day >= CURRENT_DATE - 30 AND path LIKE '/learn/%' GROUP BY path ORDER BY n DESC LIMIT 3"),
-    many('SELECT q, sum(n)::int AS n FROM site_searches WHERE day >= CURRENT_DATE - 30 AND results = 0 GROUP BY q ORDER BY n DESC LIMIT 3'),
+    many('SELECT q, sum(n)::int AS n FROM site_searches WHERE day >= CURRENT_DATE - 30 AND results = 0 GROUP BY q ORDER BY n DESC LIMIT 20').then((rows) => rows.filter((m) => require('./search.js').stillMissing(C, m.q)).slice(0, 3)),
     one("SELECT count(DISTINCT vid)::int FROM visitor_views WHERE day >= CURRENT_DATE - 30 AND path = '/donate'"),
     one("SELECT count(*)::int FROM form_drafts WHERE created_at > now() - interval '30 days' AND form = 'give'"),
     one("SELECT count(*)::int FROM form_drafts WHERE created_at > now() - interval '30 days' AND form = 'give' AND submitted_at IS NOT NULL"),

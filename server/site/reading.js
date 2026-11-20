@@ -27,7 +27,7 @@ function mountReading({ store, content, log = console }) {
       const C = content(), title = (p) => { const m = /^\/learn\/([a-z0-9-]+)$/.exec(p), a = m && C.learn.find((x) => x.slug === m[1]); return a ? a.title : p; };
       const guides = (await q(`SELECT path, count(*)::int AS n FROM visitor_views WHERE day >= CURRENT_DATE - 30 AND path LIKE '/learn/%' GROUP BY path ORDER BY n DESC LIMIT 15`)).rows.map((r) => ({ ...r, title: title(r.path) }));
       const pages = (await q(`SELECT path, count(*)::int AS n FROM visitor_views WHERE day >= CURRENT_DATE - 30 AND path NOT LIKE '/learn/%' GROUP BY path ORDER BY n DESC LIMIT 10`)).rows;
-      const missed = (await q(`SELECT q, lang, sum(n)::int AS n, max(day) AS last FROM site_searches WHERE day >= CURRENT_DATE - 90 AND results = 0 GROUP BY q, lang ORDER BY n DESC, last DESC LIMIT 30`)).rows;
+      const missed = (await q(`SELECT q, lang, sum(n)::int AS n, max(day) AS last FROM site_searches WHERE day >= CURRENT_DATE - 90 AND results = 0 GROUP BY q, lang ORDER BY n DESC, last DESC LIMIT 60`)).rows.filter((m) => require('./search.js').stillMissing(C, m.q)).slice(0, 30); // found today? off the list
       const top = (await q(`SELECT q, sum(n)::int AS n FROM site_searches WHERE day >= CURRENT_DATE - 30 GROUP BY q ORDER BY n DESC LIMIT 15`)).rows;
       const unread = C.learn.length - (await q(`SELECT count(DISTINCT path)::int AS n FROM visitor_views WHERE day >= CURRENT_DATE - 30 AND path LIKE '/learn/%'`)).rows[0].n;
       const traction = await require('./traction.js').tractionData(q, C);

@@ -1722,3 +1722,12 @@ test('every weekly class and service opens its own page: what it is, when, where
   assert.match((await c.call('GET', '/weekly/tanya-hebrew')).text, /Rabbi&#39;s home|Rabbi's home/);
   assert.equal((await c.call('GET', '/weekly/no-such-class')).status, 404);
 });
+
+test('a search that found nothing before but finds something now (a new guide or spelling) drops off the writing list', async () => {
+  const a = await admin(); await a.call('GET', '/admin/api/site/reading'); // makes the table
+  for (const [q, n] of [['tehlim', 2], ['mezuzah', 4], ['xqzvwk', 3]]) await store.pool.query('INSERT INTO site_searches (q, lang, n, results) VALUES ($1,$2,$3,0) ON CONFLICT DO NOTHING', [q, 'en', n]);
+  const r = (await a.call('GET', '/admin/api/site/reading')).json;
+  const qs = r.missed.map((m) => m.q); assert.ok(qs.includes('xqzvwk')); assert.ok(!qs.includes('tehlim') && !qs.includes('mezuzah'), 'found today: off the list');
+  const ideas = (await a.call('GET', '/admin/api/site/ideas')).json.items.map((i) => i.text).join('\n');
+  assert.doesNotMatch(ideas, /"tehlim"|"mezuzah"/); assert.match(ideas, /xqzvwk/);
+});
