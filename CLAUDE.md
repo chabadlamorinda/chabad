@@ -61,6 +61,7 @@ Add an object to `site/content/events.json`:
 * Tests run on a copy of the content with the test event moved a few weeks ahead (`TEST_CONTENT` in site.test.js), so they never depend on today's date.
 
 ## The Rabbi's to-do list
+**At the start of any conversation where the Rabbi says he is at a computer, first remind him of the "REMIND THE RABBI" section at the top of `store/rabbi-todo.md`.**
 Things only the Rabbi can do (Render settings, accounts, launch) are in `store/rabbi-todo.md`. When he says he is at a computer, take him through it one item at a time with every click explained from A to Z (use `store/website-setup.md` and `store/rabbi-setup.md` for the details), and check each step works before the next. Add new items there instead of only mentioning them in chat.
 
 ## After every change
