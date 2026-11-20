@@ -214,6 +214,7 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
     if (!p) return next();
     // A program that is its own page on the website (the Chai Club): one page, not two.
     if (/^\/[^/]/.test(p.url || '') && !(C.forms || []).some((f) => f.program === p.slug)) return res.redirect(301, X.path(p.url));
+    // "Nothing on the calendar yet" shows only on programs made of events (Women's Circle, Men's Club, kids and teens), never on classes, schools or Bar/Bat Mitzvah.
     const evs = upcoming(new Date(), C).filter((e) => e.program === p.slug), cnt = await counts();
     const body = `<article class="wrap sec narrow"><p class="crumbs"><a href="/programs">${esc(t('Programs'))}</a> ›</p>
 <h1>${esc(p.name)}</h1>${p.audience ? `<p class="eyebrow">${esc(p.audience)}</p>` : ''}<p class="lead-d">${esc(p.summary)}</p>
@@ -223,7 +224,7 @@ ${p.closed ? `<div class="card action-top program-join"><p><strong>${esc(t('Not 
 ${p.flyer ? `<figure class="prog-flyer"><a href="${esc(p.flyer)}" target="_blank" rel="noopener"><img src="${esc(p.flyer)}" alt="${esc(p.name)}" loading="lazy" decoding="async"></a></figure>` : ''}
 ${md(p.details || '')}
 ${main ? `<p class="btns join-again"><a class="btn gold" href="${esc(main.href)}">${esc(main.label)}</a></p>` : ''}`; })()}
-${evs.length ? `<h2>${esc(t('Coming up'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : p.closed || /^https?:/.test(p.url || '') ? '' : require('./watch.js').watchBox(X, p)}
+${evs.length ? `<h2>${esc(t('Coming up'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : p.closed || p.url || p.schedule || (C.forms || []).some((f) => f.program === p.slug) || (C.org.weekly || []).some((w) => w.program === p.slug) ? '' : require('./watch.js').watchBox(X, p)}
 </article>`;
     await render(res, { path: '/programs/' + p.slug, title: p.name, description: p.summary, body, ld: [crumbs(base, [[t('Programs'), '/programs'], [p.name, '/programs/' + p.slug]])] });
   }));

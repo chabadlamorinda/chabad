@@ -1648,7 +1648,8 @@ test('the home page has a Bay Kosher area: part of Chabad, what is in the store,
 
 test('a program with nothing coming up: "let me know" saves the request, tells the Rabbi, and emails each new event once', async () => {
   const c = client(), progs = server_site().content().programs, evs = server_site().upcoming(new Date(), server_site().content());
-  const quiet = progs.find((p) => !p.closed && !/^https?:/.test(p.url || '') && !evs.some((e) => e.program === p.slug));
+  const forms = server_site().content().forms, quiet = progs.find((p) => !p.closed && !p.url && !p.schedule && !forms.some((f) => f.program === p.slug) && !evs.some((e) => e.program === p.slug));
+  for (const slug of ['bar-bat-mitzvah', 'adult-education', 'hebrew-school', 'jewish-preschool']) assert.doesNotMatch((await c.call('GET', '/programs/' + slug)).text, /data-watch=/, slug + ' is not an events program');
   assert.ok(quiet, 'a program with no events');
   const page = (await c.call('GET', '/programs/' + quiet.slug)).text; assert.match(page, new RegExp('data-watch="' + quiet.slug + '"'));
   assert.equal((await c.call('POST', '/api/site/watch', { topic: quiet.slug, email: 'nope' }, { 'x-site': '1' })).status, 400);
