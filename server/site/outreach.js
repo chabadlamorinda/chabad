@@ -8,6 +8,8 @@
 // they leave "Suggest things for my family" on in My account (it is on by default and explained on the privacy page).
 'use strict';
 const express = require('express');
+const { search } = require('./search.js');
+const { guidePhoto } = require('./art.js');
 const H = require('../../pushka/hebdate.js');
 const Z = require('./zmanim.js');
 
@@ -195,6 +197,27 @@ function mountOutreach(app, { store, readMember, content, base, ctxOf, upcoming 
   app.get('/api/site/guides', (req, res) => {
     const lang = String(req.get('x-lang') || req.query.lang || 'en'), C = ctxOf({ lang: ['he', 'ru'].includes(lang) ? lang : 'en', method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C, slugs = String(req.query.slugs || '').split(',').slice(0, 5);
     res.json(Object.fromEntries(slugs.map((s) => [s, C.learn.find((a) => a.slug === s)]).filter(([, a]) => a).map(([s, a]) => [s, { title: a.title }])));
+  });
+  // "Picked for you" on the home page: new guides that follow from what this phone read and searched (kept only in the
+  // browser, sent here without a name), never the ones already read.
+  app.get('/api/site/suggest', (req, res) => {
+    const lang = String(req.get('x-lang') || req.query.lang || 'en'), L = ['he', 'ru'].includes(lang) ? lang : 'en';
+    const C = ctxOf({ lang: L, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C, t = (x, o) => String(x).replace(/\{(\w+)\}/g, (m, k) => (o && o[k] != null ? o[k] : m));
+    const read = String(req.query.read || '').split(',').filter((x) => /^[a-z0-9-]{2,80}$/.test(x)).slice(0, 12);
+    const qs = String(req.query.q || '').split('|').map((x) => x.trim().slice(0, 60)).filter(Boolean).slice(0, 5);
+    const by = new Map(C.learn.map((a) => [a.slug, a])), seen = new Set(read), score = new Map(), why = new Map();
+    const add = (slug, n, from) => { if (seen.has(slug) || !by.has(slug)) return; score.set(slug, (score.get(slug) || 0) + n); if (from && !why.has(slug)) why.set(slug, from); };
+    read.forEach((slug, i) => {
+      const a = by.get(slug); if (!a) return; const w = 1 / (1 + i * 0.4); // the latest reading counts most
+      (a.related || []).forEach((r, j) => add(r, (j === 0 ? 3 : 2) * w, a.title));
+      if (a.sub) C.learn.filter((b) => b.sub === a.sub).sort((x, y) => (x.rank || 99) - (y.rank || 99)).slice(0, 8).forEach((b) => add(b.slug, w, a.title));
+    });
+    qs.forEach((q, i) => search(C, q, t, 12).results.forEach((d, j) => { const m = /^\/learn\/([a-z0-9-]+)$/.exec(d.url); if (m) add(m[1], (3 - j * 0.2) / (1 + i * 0.4), q); }));
+    const items = [...score.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([slug]) => {
+      const a = by.get(slug), ph = guidePhoto(slug, a.category);
+      return { url: '/learn/' + slug, title: a.title, text: a.description || '', img: ph ? '/media/photos/' + ph + '-sm.jpg' : '', because: why.get(slug) || '' };
+    });
+    res.set('Cache-Control', 'no-store'); res.json({ items });
   });
   app.get('/api/site/for-you', async (req, res) => {
     res.set('Cache-Control', 'no-store');

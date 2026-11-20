@@ -1609,3 +1609,15 @@ test('who is on the website now, time on each page, forms started but not sent, 
   assert.match((await client().call('GET', '/privacy')).text, /saved as you type/);
   assert.match(fs.readFileSync(path.join(__dirname, '..', 'site', 'assets', 'site.js'), 'utf8'), /saved as you type, so we can help/);
 });
+
+test('search finds other spellings and English words on the Hebrew and Russian pages; the home page suggests new guides from what was read', async () => {
+  const c = client();
+  for (const [path, needle] of [['/search?q=tehlim', '/learn/tehillim'], ['/he/search?q=mezuzah', '/he/learn/mezuzah'], ['/ru/search?q=mezuzah', '/ru/learn/mezuzah'], ['/search?q=tfilin', '/learn/tefillin'], ['/search?q=mezuzza', '/learn/mezuzah']]) {
+    const r = await c.call('GET', path); assert.equal(r.status, 200, path); assert.ok(r.text.includes('href="' + needle + '"') || r.text.includes(needle), path + ' finds ' + needle); assert.doesNotMatch(r.text, /Nothing found|לא נמצא|ничего не найдено/i, path);
+  }
+  const s = (await c.call('GET', '/api/site/suggest?read=mezuzah&q=tehlim')).json;
+  assert.ok(s.items.length >= 1 && s.items.length <= 3); assert.ok(!s.items.some((x) => x.url === '/learn/mezuzah'), 'never the guide already read');
+  const ru = (await c.call('GET', '/api/site/suggest?read=mezuzah', undefined, { 'x-lang': 'ru' })).json; assert.match(ru.items[0].title, /[Ѐ-ӿ]/, 'titles in the reader\'s language');
+  const home = (await c.call('GET', '/')).text; assert.match(home, /Let’s explore Judaism together/); assert.doesNotMatch(home, /built together/);
+  assert.doesNotMatch(fs.readFileSync(path.join(__dirname, '..', 'site', 'assets', 'site.js'), 'utf8'), /Pick up where you left off/);
+});

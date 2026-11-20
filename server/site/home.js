@@ -101,7 +101,7 @@ ${H.story ? `<section class="wrap sec"><div class="story">
   ${H.story.url ? `<p><a class="btn ghost" href="${esc(H.story.url)}">${esc(H.story.button || t('About us'))}</a></p>` : ''}</div>
 </div></section>` : ''}
 <section class="band built"><div class="wrap">
-  <div class="sec-h"><h2>${esc(t('What we have built together'))}</h2><a href="/about">${esc(t('About us'))} →</a></div>
+  <div class="sec-h"><h2>${esc(t('Let’s explore Judaism together'))}</h2><a href="/about">${esc(t('About us'))} →</a></div>
   <p class="lead-d">${esc(t('Rabbi Yisroel and Rebbetzin Tzipora Labkowski, emissaries of the Lubavitcher Rebbe, and a community that keeps growing. Thank you to everyone who makes it happen.'))}</p>
   ${stats.length ? `<div class="stats">${stats.map((s) => `<div class="stat"><b>${esc(s.number)}</b><span>${esc(s.label)}</span></div>`).join('')}</div>` : ''}
   <div class="hl"><a class="hl-i" href="/learn">${artImg('open-book')}<strong>${esc(t('{n} guides to Jewish life', { n: C.learn.length }))}</strong><span>${esc(t('Free, friendly answers in English, Hebrew and Russian, from Shabbat candles to Kaddish.'))}</span></a></div>

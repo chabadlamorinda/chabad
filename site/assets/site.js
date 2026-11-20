@@ -204,31 +204,26 @@
     });
   }
 
-  // "Welcome back": the last guide read on this phone (and the one it suggests next) on the home page, for 45 days.
+  // "Welcome back": on the home page, three new guides that follow from what was read and searched on this phone in the last
+  // 45 days (kept only in this browser; never the ones already read).
   (function () {
     var bare = function (p) { return String(p || '').replace(/^\/(he|ru)(?=\/)/, ''); }, here = bare(location.pathname);
-    if (/^\/learn\/[a-z0-9-]+$/.test(here)) {
-      var h1 = $('h1'), rn = $('.rn-main'), rt = rn && rn.querySelector('strong'), ph = $('.page-photo img'), ri = rn && rn.querySelector('img.gc-img');
-      store.set('cl_last', { p: here, t: h1 ? h1.textContent.trim() : '', img: ph ? ph.getAttribute('src').replace(/\.jpg$/, '-sm.jpg') : '', n: rn ? bare(rn.getAttribute('href')) : '', nt: rt ? rt.textContent.trim() : '', nimg: ri ? ri.getAttribute('src') : '', lang: LANG, at: Date.now() });
-    }
-    var cont = $('[data-continue]'), last = store.get('cl_last');
-    if (!cont || !last || !last.p || !last.t || Date.now() - last.at > 45 * 864e5) return;
-    var show = function () {
-    var tile = function (href, img, eyebrow, title) { return el('a', { class: 'card tile' + (img ? ' has-photo' : ''), href: P(href) }, [img ? el('img', { class: 'tile-photo', src: img, alt: '', loading: 'lazy', width: '560', height: '380' }) : null, el('p', { class: 'eyebrow', text: eyebrow }), el('h3', { text: title })]); };
-    var links = [tile(last.p, last.img, T('Pick up where you left off'), last.t)];
-    if (last.n && last.nt) links.push(tile(last.n, last.nimg && last.nimg !== last.img ? last.nimg : '', T('Read next'), last.nt)); // never the same photo twice
-    cont.appendChild(el('div', { class: 'sec-h' }, [el('h2', { text: T('Welcome back!') })]));
-    cont.appendChild(el('div', { class: 'grid' }, links));
-    cont.hidden = false;
-    };
-    // Read in another language: show the titles in this one.
-    if ((last.lang || 'en') === LANG) return show();
-    var slug = function (p) { return String(p || '').replace(/^\/learn\//, ''); };
-    api('GET', '/guides?slugs=' + [slug(last.p), slug(last.n)].filter(Boolean).join(',')).then(function (r) {
-      if (r[slug(last.p)]) last.t = r[slug(last.p)].title;
-      if (last.n && r[slug(last.n)]) last.nt = r[slug(last.n)].title;
-      show();
-    }, show);
+    var h = store.get('cl_hist') || {}; h.r = h.r || []; h.q = h.q || [];
+    var m = /^\/learn\/([a-z0-9-]+)$/.exec(here), sq = here === '/search' && (location.search.match(/[?&]q=([^&]*)/) || [])[1];
+    if (m) { h.r = [m[1]].concat(h.r.filter(function (x) { return x !== m[1]; })).slice(0, 12); h.at = Date.now(); store.set('cl_hist', h); }
+    if (sq) { try { sq = decodeURIComponent(sq.replace(/\+/g, ' ')).trim().slice(0, 60); } catch (e) { sq = ''; } if (sq) { h.q = [sq].concat(h.q.filter(function (x) { return x !== sq; })).slice(0, 5); h.at = Date.now(); store.set('cl_hist', h); } }
+    var cont = $('[data-continue]');
+    if (!cont || (!h.r.length && !h.q.length) || Date.now() - (h.at || 0) > 45 * 864e5) return;
+    api('GET', '/suggest?read=' + h.r.join(',') + '&q=' + encodeURIComponent(h.q.join('|'))).then(function (r) {
+      if (!r.items || !r.items.length) return;
+      cont.appendChild(el('div', { class: 'sec-h' }, [el('h2', { text: T('Welcome back!') })]));
+      cont.appendChild(el('p', { class: 'lead-d', text: T('Picked for you, from what you have been reading. Let’s keep exploring together.') }));
+      cont.appendChild(el('div', { class: 'grid' }, r.items.map(function (g) {
+        return el('a', { class: 'card tile' + (g.img ? ' has-photo' : ''), href: P(g.url) }, [g.img ? el('img', { class: 'tile-photo', src: g.img, alt: '', loading: 'lazy', width: '560', height: '380' }) : null,
+          el('p', { class: 'eyebrow', text: T('Picked for you') }), el('h3', { text: g.title }), g.text ? el('p', { text: g.text }) : null]);
+      })));
+      cont.hidden = false;
+    }, function () {});
   })();
 
   // Amount chips (tap again to clear) plus "Other amount": value() is the chosen number or 0.
