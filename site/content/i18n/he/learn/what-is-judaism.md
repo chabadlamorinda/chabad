@@ -2,7 +2,7 @@
 title: מהי היהדות? מבוא פשוט לאמונה ולחיים היהודיים
 description: מהי היהדות? אל אחד, תורה, מצוות, עם ישראל וארץ ישראל, בהסבר פשוט ובחום, עם הזמנה לבוא ללמוד אתנו בלמורינדה.
 category: Jewish ideas
-related: belief-in-g-d, torah, shabbat-for-beginners, myths-and-facts-about-judaism, why-be-jewish
+related: belief-in-g-d, orthodox-conservative-reform, torah, shabbat-for-beginners, myths-and-facts-about-judaism, why-be-jewish
 local: רוצים לשאול הכול? בואו לשיעור או לשבת בבית חב"ד למורינדה בלפייט, או התקשרו 925-384-7242. בלי חברות, אף פעם.
 ---
 היהדות היא האמונה ואורח החיים של העם היהודי, המבוססים על האמונה בקב"ה אחד שברא את העולם ומנהל אותו, ועל התורה, ההוראות שה' נתן לעם ישראל בהר סיני. היא גם דת וגם משפחה: יהודי הוא מי שנולד לאם יהודייה או מי שהתגייר כדין, וכל יהודי מוזמן בחום לבית חב"ד למורינדה בלפייט, יהיה רקעו אשר יהיה.

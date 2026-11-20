@@ -2,7 +2,7 @@
 title: Jewish Burial in an Interfaith or Mixed Family: What to Know and Whom to Call
 description: Can a Jew in an interfaith family have a Jewish burial? Who can be buried in a Jewish cemetery? Call Rabbi Labkowski: 925-384-7242.
 category: Mourning & remembrance
-related: jewish-burial-financial-help, buying-a-jewish-cemetery-plot, who-is-a-jew, jewish-funeral, planning-a-jewish-funeral-in-advance
+related: jewish-burial-financial-help, interfaith-families-at-chabad, buying-a-jewish-cemetery-plot, who-is-a-jew, jewish-funeral, planning-a-jewish-funeral-in-advance
 local: In an interfaith or mixed family and unsure what to do? Call Rabbi Yisroel Labkowski at 925-384-7242 or Rebbetzin Tzipora Labkowski at 925-384-7241. We will listen, with respect for everyone in your family.
 ---
 A Jew who was part of an interfaith family is still entitled to a Jewish burial in a Jewish cemetery, and the community is obligated to provide it. Questions about a non-Jewish spouse, children or relatives are sensitive, so please call Rabbi Yisroel Labkowski at 925-384-7242 and talk it through with him privately.

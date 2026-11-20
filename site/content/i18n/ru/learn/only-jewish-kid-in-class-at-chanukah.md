@@ -2,7 +2,7 @@
 title: Единственный еврейский ребёнок в классе на Хануку: как помочь ему сиять с гордостью
 description: Что делать, если ваш ребёнок единственный еврей в классе на Хануку: воспитать гордость, рассказать о меноре, поговорить с учителем и зажигать открыто.
 category: Shabbat & holidays
-related: chanukah-for-teens, presenting-a-jewish-holiday-in-class, jewish-pride, raising-jewish-kids-in-a-small-community, talking-to-kids-about-antisemitism
+related: chanukah-for-teens, jews-and-christmas, presenting-a-jewish-holiday-in-class, jewish-pride, raising-jewish-kids-in-a-small-community, talking-to-kids-about-antisemitism
 local: Хотите, чтобы ваш ребёнок познакомился с другими еврейскими детьми? См. /programs/kids-and-teens или позвоните 925-384-7242 и поговорите с раввином.
 ---
 Если ваш ребёнок единственный еврей в классе на Хануку, лучшее, что вы можете сделать, помочь ему чувствовать себя гордым и готовым, а не «другим». Ханука праздник о небольшой группе, оставшейся верной себе, и он даёт ребёнку идеальную историю и яркую менору, которыми можно поделиться.

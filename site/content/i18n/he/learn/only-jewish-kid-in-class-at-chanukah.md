@@ -2,7 +2,7 @@
 title: הילד היהודי היחיד בכיתה בחנוכה: איך עוזרים לילד לזרוח בגאווה
 description: מה עושים כשילדכם הוא התלמיד היהודי היחיד בכיתה בחנוכה: בונים גאווה, משתפים את סיפור החנוכיה, מדברים עם המורה ומדליקים בגאווה.
 category: Shabbat & holidays
-related: chanukah-for-teens, presenting-a-jewish-holiday-in-class, jewish-pride, raising-jewish-kids-in-a-small-community, talking-to-kids-about-antisemitism
+related: chanukah-for-teens, jews-and-christmas, presenting-a-jewish-holiday-in-class, jewish-pride, raising-jewish-kids-in-a-small-community, talking-to-kids-about-antisemitism
 local: רוצים שילדכם יכיר ילדים יהודים נוספים? ראו /programs/kids-and-teens, או התקשרו 925-384-7242 לשיחה עם הרב.
 ---
 אם ילדכם הוא הילד היהודי היחיד בכיתה בחנוכה, הדבר הטוב ביותר שאתם יכולים לעשות הוא לעזור לו להרגיש גאה ומוכן, ולא שונה. חנוכה הוא חג על קבוצה קטנה שנשארה נאמנה למי שהייתה, והוא נותן לילד את הסיפור המושלם, וחנוכיה זורחת, כדי לשתף.

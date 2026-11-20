@@ -2,7 +2,7 @@
 title: The Only Jewish Kid in Class at Chanukah: Helping Your Child Shine With Pride
 description: What to do when your child is the only Jewish student in class at Chanukah: build pride, share the menorah story, talk with the teacher and light proudly.
 category: Shabbat & holidays
-related: chanukah-for-teens, presenting-a-jewish-holiday-in-class, jewish-pride, raising-jewish-kids-in-a-small-community, talking-to-kids-about-antisemitism
+related: chanukah-for-teens, jews-and-christmas, presenting-a-jewish-holiday-in-class, jewish-pride, raising-jewish-kids-in-a-small-community, talking-to-kids-about-antisemitism
 local: Want your child to meet other Jewish kids? See /programs/kids-and-teens, or call 925-384-7242 to talk with the Rabbi.
 ---
 If your child is the only Jewish kid in class at Chanukah, the best thing you can do is help them feel proud and prepared, not different. Chanukah is a holiday about a small group staying true to who they were, and it gives a child the perfect story, and a bright menorah, to share.

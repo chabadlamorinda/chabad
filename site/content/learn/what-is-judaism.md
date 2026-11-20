@@ -2,7 +2,7 @@
 title: What Is Judaism? A Simple Introduction to Jewish Belief and Life
 description: What is Judaism? One G-d, the Torah, mitzvahs, the Jewish people and the Land of Israel, explained simply, with a warm welcome in Lamorinda.
 category: Jewish ideas
-related: belief-in-g-d, torah, shabbat-for-beginners, myths-and-facts-about-judaism, why-be-jewish
+related: belief-in-g-d, orthodox-conservative-reform, torah, shabbat-for-beginners, myths-and-facts-about-judaism, why-be-jewish
 local: Curious and want to ask anything? Come to a class or Shabbat at Chabad of Lamorinda in Lafayette, or call 925-384-7242. No membership, ever.
 ---
 Judaism is the faith and way of life of the Jewish people, built on belief in one G-d who created and runs the world, and on the Torah, the instructions He gave the Jewish people at Mount Sinai. It is both a religion and a family: a Jew is someone born to a Jewish mother or someone who converted properly, and every Jew is welcome at Chabad of Lamorinda in Lafayette, whatever his or her background.

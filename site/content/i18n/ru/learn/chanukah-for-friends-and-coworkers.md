@@ -2,7 +2,7 @@
 title: Ханука для друзей, соседей, учителей и коллег: что это такое
 description: Ханука за две минуты для друзей, соседей, учителей и коллег: что это, как поздравить, добрые идеи угощений и как включить еврейского коллеги.
 category: Shabbat & holidays
-related: holiday-greetings, what-to-write-in-a-chanukah-card, chanukah-food-gifts-for-neighbors, presenting-a-jewish-holiday-in-class, chanukah-at-work-and-college, chanukah-story, chanukah-menorah
+related: holiday-greetings, jews-and-christmas, what-to-write-in-a-chanukah-card, chanukah-food-gifts-for-neighbors, presenting-a-jewish-holiday-in-class, chanukah-at-work-and-college, chanukah-story, chanukah-menorah
 local: Пригласите друга на Хануку к нам: позвоните раввину Лабковскому 925-384-7242 или смотрите /events.
 ---
 Ханука - еврейский восьмидневный Праздник огней, который напоминает о чуде в Храме в Иерусалиме более 2000 лет назад, когда чистого масла на один день хватило на восемь дней. Каждую ночь еврейские семьи зажигают на ханукии ещё одну свечу, пока в последнюю ночь не горят восемь.

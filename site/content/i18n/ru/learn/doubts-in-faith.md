@@ -2,7 +2,7 @@
 title: Сомнения в вере в Б-га: еврейский взгляд на вопросы веры
 description: Может ли еврей сомневаться в Б-ге? Да. Что говорит учение Хабада о сомнениях, как укрепить веру и где задать вопросы в Ламоринде.
 category: Jewish ideas
-related: belief-in-g-d, feeling-spiritually-numb, hope-in-hard-times, why-be-jewish, purpose-of-life, tikkun-olam
+related: belief-in-g-d, spiritual-but-not-religious, feeling-spiritually-numb, hope-in-hard-times, why-be-jewish, purpose-of-life, tikkun-olam
 local: Самый трудный вопрос можно принести раву Лабковски, без подготовки: /help/talk-to-the-rabbi или 925-384-7242.
 ---
 Да, еврей может сомневаться в Б-ге, и сомнение не делает его менее евреем. Учение Хабада видит в честных вопросах часть пути: имя Исраэль означает «тот, кто борется с Б-гом», и еврей, который борется, остаётся своим.

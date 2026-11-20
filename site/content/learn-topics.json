@@ -2089,6 +2089,10 @@
    "sub": "synagogue",
    "rank": 1
   },
+  "visiting-chabad-if-you-are-not-jewish": {
+   "sub": "synagogue",
+   "rank": 3
+  },
   "first-time-at-synagogue": {
    "sub": "synagogue",
    "rank": 2
@@ -3109,6 +3113,10 @@
    "sub": "judaism-basics",
    "rank": 1
   },
+  "orthodox-conservative-reform": {
+   "sub": "judaism-basics",
+   "rank": 5
+  },
   "why-be-jewish": {
    "sub": "judaism-basics",
    "rank": 2
@@ -3181,6 +3189,10 @@
    "sub": "g-d-and-faith",
    "rank": 1
   },
+  "spiritual-but-not-religious": {
+   "sub": "g-d-and-faith",
+   "rank": 4
+  },
   "fear-of-g-d": {
    "sub": "g-d-and-faith",
    "rank": 2
@@ -3248,6 +3260,10 @@
   "the-soul": {
    "sub": "big-questions",
    "rank": 1
+  },
+  "why-jews-dont-believe-in-jesus": {
+   "sub": "big-questions",
+   "rank": 14
   },
   "purpose-of-life": {
    "sub": "big-questions",
@@ -4145,6 +4161,10 @@
    "sub": "jewish-today",
    "rank": 1
   },
+  "jews-and-christmas": {
+   "sub": "jewish-today",
+   "rank": 9
+  },
   "facing-antisemitism": {
    "sub": "jewish-today",
    "rank": 2
@@ -4408,6 +4428,10 @@
   "shalom-bayit": {
    "sub": "family-relationships",
    "rank": 1
+  },
+  "interfaith-families-at-chabad": {
+   "sub": "family-relationships",
+   "rank": 5
   },
   "marriage-arguments-jewish-wisdom": {
    "sub": "family-relationships",

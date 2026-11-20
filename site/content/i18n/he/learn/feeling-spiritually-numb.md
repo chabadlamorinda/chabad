@@ -2,7 +2,7 @@
 title: כשהלב מרגיש סגור: התניא על תחושת קהות רוחנית
 description: התפילה מרגישה ריקה ושום דבר לא מזיז אתכם? פרק כ"ט בתניא קורא לזה טמטום הלב ונותן דרך חזרה. למדו את הצעדים והצטרפו.
 category: Jewish ideas
-related: kavanah-in-prayer, doubts-in-faith, prayer, tanya-on-humility, why-do-i-still-struggle
+related: kavanah-in-prayer, spiritual-but-not-religious, doubts-in-faith, prayer, tanya-on-humility, why-do-i-still-struggle
 local: הביאו את השאלה הזו לשיעור התניא באנגלית בימי רביעי ב-13:00 בבית הרב בלאפייט; את הכתובת תקבלו בטלפון 925-384-7242.
 ---
 התניא קורא ללב שמרגיש סגור, קשה או לא מתרגש, גם כשמבינים שה' גדול, טמטום הלב, ופרק כ"ט מלמד שהדרך חזרה היא ענווה וחשבון נפש כן, ולא לכפות על עצמכם להרגיש יותר. גם אדם כן שמנסה לעשות נכון יכול לעבור זמנים כאלה.

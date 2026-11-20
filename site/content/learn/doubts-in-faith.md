@@ -2,7 +2,7 @@
 title: Doubts About G-d: A Jewish Approach to Questions of Faith
 description: Can a Jew have doubts about G-d? Yes. What Chabad teaching says about doubt, how to strengthen faith, and where to bring your questions in Lamorinda.
 category: Jewish ideas
-related: belief-in-g-d, feeling-spiritually-numb, hope-in-hard-times, why-be-jewish, purpose-of-life, tikkun-olam
+related: belief-in-g-d, spiritual-but-not-religious, feeling-spiritually-numb, hope-in-hard-times, why-be-jewish, purpose-of-life, tikkun-olam
 local: Bring your hardest question to Rabbi Labkowski, no pre-knowledge needed: /help/talk-to-the-rabbi or call 925-384-7242.
 ---
 Yes, a Jew can have doubts about G-d, and doubt does not make you any less Jewish. Chabad teaching treats honest questions as part of the journey: the very name Israel means one who wrestles with G-d, and a Jew who struggles is still a Jew who belongs.

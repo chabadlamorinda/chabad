@@ -2,7 +2,7 @@
 title: קבורה יהודית במשפחה מעורבת: מה כדאי לדעת ולמי להתקשר
 description: האם יהודי במשפחה מעורבת זכאי לקבורה יהודית? מי יכול להיקבר בבית קברות יהודי, ואיך מטפלים בכך ברגישות. התקשרו לרב לבקובסקי 925-384-7242.
 category: Mourning & remembrance
-related: jewish-burial-financial-help, buying-a-jewish-cemetery-plot, who-is-a-jew, jewish-funeral, planning-a-jewish-funeral-in-advance
+related: jewish-burial-financial-help, interfaith-families-at-chabad, buying-a-jewish-cemetery-plot, who-is-a-jew, jewish-funeral, planning-a-jewish-funeral-in-advance
 local: במשפחה מעורבת ולא בטוחים מה לעשות? התקשרו לרב ישראל לבקובסקי 925-384-7242 או לרבנית ציפורה לבקובסקי 925-384-7241. נקשיב, מתוך כבוד לכל בני המשפחה.
 ---
 יהודי שהיה חלק ממשפחה מעורבת זכאי עדיין לקבורה יהודית בבית קברות יהודי, והקהילה חייבת לספק אותה. שאלות על בן זוג, ילדים או קרובים שאינם יהודים הן רגישות, ולכן אנא התקשרו לרב ישראל לבקובסקי 925-384-7242 ושוחחו איתו בפרטיות.

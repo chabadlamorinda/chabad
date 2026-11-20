@@ -2,7 +2,7 @@
 title: Еврейское погребение в смешанной семье: что нужно знать и кому звонить
 description: Имеет ли еврей из смешанной семьи право на еврейское погребение? Кого хоронят на еврейском кладбище? Звоните 925-384-7242.
 category: Mourning & remembrance
-related: jewish-burial-financial-help, buying-a-jewish-cemetery-plot, who-is-a-jew, jewish-funeral, planning-a-jewish-funeral-in-advance
+related: jewish-burial-financial-help, interfaith-families-at-chabad, buying-a-jewish-cemetery-plot, who-is-a-jew, jewish-funeral, planning-a-jewish-funeral-in-advance
 local: Вы в смешанной семье и не знаете, что делать? Звоните раввину Исроэлю Лабковскому 925-384-7242 или ребецин Ципоре Лабковской 925-384-7241. Мы выслушаем с уважением ко всем в вашей семье.
 ---
 Еврей, который был частью смешанной семьи, по-прежнему имеет право на еврейское погребение на еврейском кладбище, а община обязана его обеспечить. Вопросы о нееврейском супруге, детях или родственниках деликатны, поэтому, пожалуйста, позвоните раввину Исроэлю Лабковскому 925-384-7242 и поговорите с ним наедине.

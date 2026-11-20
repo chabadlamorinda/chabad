@@ -2,7 +2,7 @@
 title: When Your Heart Feels Closed: Tanya on Feeling Spiritually Numb
 description: Prayer feels empty and nothing moves you? Tanya Chapter 29 calls it a closed heart (timtum halev) and gives a way back. Learn the steps and join us.
 category: Jewish ideas
-related: kavanah-in-prayer, doubts-in-faith, prayer, tanya-on-humility, why-do-i-still-struggle
+related: kavanah-in-prayer, spiritual-but-not-religious, doubts-in-faith, prayer, tanya-on-humility, why-do-i-still-struggle
 local: Bring this question to the English Tanya class on Wednesdays at 1:00 PM at the Rabbi's home in Lafayette; call 925-384-7242 for the address.
 ---
 Tanya calls a heart that feels closed, hard or unmoved, even when you understand that G-d is great, timtum halev (טִמְטוּם הַלֵּב), a "dullness of the heart," and Chapter 29 teaches that the way back is humility and honest self-accounting, not forcing yourself to feel more. Even a sincere person who tries to do right can have such times.
