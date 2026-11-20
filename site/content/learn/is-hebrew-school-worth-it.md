@@ -2,7 +2,7 @@
 title: Is Hebrew School Worth It? What Children Gain From Jewish Education
 description: Is Hebrew school worth it? What children gain: Jewish identity, Hebrew reading, friends and Bar/Bat Mitzvah readiness. Ask Chabad of Lamorinda.
 category: Life cycle
-related: hebrew-school-in-lamorinda, choosing-jewish-education, chinuch, bar-bat-mitzvah-in-lamorinda, jewish-learning-at-home-with-kids
+related: hebrew-school-in-lamorinda, benefits-of-torah-study-for-children, choosing-jewish-education, chinuch, bar-bat-mitzvah-in-lamorinda, jewish-learning-at-home-with-kids
 local: Curious whether Hebrew school fits your family? Look at the Sunday program at /programs/hebrew-school or call 925-384-7242.
 ---
 Hebrew school is worth it when it gives a child what no other part of the week can: a Jewish identity they feel proud of, the ability to read Hebrew, friends who share their heritage, and real experience of Shabbat and the holidays. Chabad teaches that Jewish education (*chinuch*) is the greatest gift parents can give, because it lets a child grow up knowing who they are.

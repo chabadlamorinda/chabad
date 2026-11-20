@@ -2,7 +2,7 @@
 title: ללמד ילדים את האלף-בית בבית: אותיות, ניקוד ותרגול מהנה
 description: איך ללמד ילדים את האלף-בית בבית: אותיות עם ניקוד, שגרה פשוטה, משחקים ושירים. התחילו היום או שאלו את חב"ד למורינדה.
 category: Life cycle
-related: hebrew-alphabet, is-hebrew-school-worth-it, raising-hebrew-speaking-kids-in-lamorinda, hebrew-school-in-lamorinda, jewish-learning-at-home-with-kids
+related: hebrew-alphabet, aleph-champ-hebrew-reading, is-hebrew-school-worth-it, raising-hebrew-speaking-kids-in-lamorinda, hebrew-school-in-lamorinda, jewish-learning-at-home-with-kids
 local: רוצים עזרה להתחיל עם אותיות עבריות? התקשרו 925-384-7242 או ראו את תוכנית יום ראשון ב-/programs/hebrew-school.
 ---
 האלף-בית הוא הא"ב העברי בן 22 האותיות, והדרך הטובה ללמד אותו לילד היא מעט בכל פעם, עם הניקוד, באמצעות צלילים, שירים ומשחק. לפי תורת חב"ד מלמדים את האותיות יחד עם הניקוד, כי כך הילד לומד לקרוא הברות אמיתיות כבר מההתחלה.

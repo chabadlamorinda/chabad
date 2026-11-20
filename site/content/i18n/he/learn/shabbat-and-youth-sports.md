@@ -2,7 +2,7 @@
 title: "ספורט ילדים בשבת: מדריך להורים יהודים"
 description: מה עושים כשקבוצת הכדורגל, הבייסבול או הנבחרת של ילדכם משחקת בשבת: אפשרויות מעשיות, סיפורים אמיתיים ואיך מדברים עם המאמן.
 category: Jewish home
-related: shabbat-with-kids, parents-and-teenagers, jewish-pride, raising-jewish-kids-in-a-small-community, shabbat-for-beginners
+related: shabbat-with-kids, hebrew-school-and-busy-schedules, parents-and-teenagers, jewish-pride, raising-jewish-kids-in-a-small-community, shabbat-for-beginners
 local: מתמודדים עם לוח משחקים קשה? דברו על זה עם הרב לבקובסקי, 925-384-7242, או ראו /help/talk-to-the-rabbi.
 ---
 בספורט ילדים מקובל לקבוע משחקים בשבת, היום שבו המסורת היהודית מבקשת מאיתנו לנוח מעבודה ומשחק רגילים. הורה בלפאייט, מוראגה או אורינדה יכול להתמודד עם זה בלי רגשות אשם: לדבר עם המאמן מוקדם, לחפש אפשרויות ולהחליט כמשפחה, בהתייעצות עם הרב.

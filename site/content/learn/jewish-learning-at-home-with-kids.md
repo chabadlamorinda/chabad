@@ -2,7 +2,7 @@
 title: Jewish Learning at Home With Kids: Ten Minutes a Day That Add Up
 description: Simple ways to teach kids Judaism at home in ten minutes a day: Modeh Ani, blessings, parsha at dinner, songs, tzedakah and Shabbat. Start tonight.
 category: Life cycle
-related: parsha-for-kids, jewish-parenting, dvar-torah-at-the-shabbat-table, is-hebrew-school-worth-it, first-mitzvot-for-young-children
+related: parsha-for-kids, hands-on-jewish-learning-for-kids, jewish-parenting, dvar-torah-at-the-shabbat-table, is-hebrew-school-worth-it, first-mitzvot-for-young-children
 local: Raising Jewish kids in Lafayette, Moraga or Orinda? Call Rabbi Labkowski at 925-384-7242 for ideas that fit your family.
 ---
 You can teach your children Judaism at home in about ten minutes a day by attaching small Jewish moments to things you already do: a thank-you at waking, a blessing before eating, a question about the parsha at dinner, a coin for tzedakah and the Shema at bedtime. Chabad teaches that Jewish education (*chinuch*, חִנּוּךְ) begins at home, and that steady little steps shape a child more than occasional big ones.

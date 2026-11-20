@@ -2,7 +2,7 @@
 title: Стоит ли отдавать ребенка в еврейскую школу? Что дает еврейское образование
 description: Стоит ли еврейская школа того? Еврейская идентичность, чтение на иврите, друзья и подготовка к Бар/Бат-мицве. Спросите Хабад Ламоринды.
 category: Life cycle
-related: hebrew-school-in-lamorinda, choosing-jewish-education, chinuch, bar-bat-mitzvah-in-lamorinda, jewish-learning-at-home-with-kids
+related: hebrew-school-in-lamorinda, benefits-of-torah-study-for-children, choosing-jewish-education, chinuch, bar-bat-mitzvah-in-lamorinda, jewish-learning-at-home-with-kids
 local: Хотите узнать, подойдет ли вашей семье еврейская школа? Посмотрите воскресную программу на /programs/hebrew-school или позвоните 925-384-7242.
 ---
 Еврейская школа стоит того, если она дает ребенку то, чего не дает ни один другой день недели: еврейскую идентичность, которой он гордится, умение читать на иврите, друзей с общим наследием и живой опыт Шаббата и праздников. Хабад учит, что еврейское образование (хинух) - лучший подарок, который родители могут сделать ребенку, ведь он растет, зная, кто он.

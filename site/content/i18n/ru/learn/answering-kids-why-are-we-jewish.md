@@ -2,7 +2,7 @@
 title: Когда ребенок спрашивает «Почему мы евреи?»: честные и теплые ответы
 description: Как ответить на вопрос «Почему мы евреи?» в любом возрасте: душа, цепь поколений, мицвы и радость. Простые честные слова для родителей от Хабада.
 category: Jewish ideas
-related: why-be-jewish, talking-to-kids-about-g-d, jewish-identity-for-teens, jewish-learning-at-home-with-kids, is-hebrew-school-worth-it
+related: why-be-jewish, hebrew-school-for-non-religious-families, talking-to-kids-about-g-d, jewish-identity-for-teens, jewish-learning-at-home-with-kids, is-hebrew-school-worth-it
 local: Не знаете, что сказать ребенку? Поговорите с раввином Лабковским, 925-384-7242, или на /help/talk-to-the-rabbi.
 ---
 Когда ребенок спрашивает «Почему мы евреи?», лучший ответ короткий, теплый и правдивый: мы евреи, потому что мы часть семьи, уходящей на тысячи лет назад, к Аврааму и Саре, и потому что наша душа еврейская, это драгоценный дар, который мы воплощаем через мицвы, Шаббат, праздники и доброту. Ответ должен помочь ребенку почувствовать себя любимым и гордым, а не находиться под давлением.

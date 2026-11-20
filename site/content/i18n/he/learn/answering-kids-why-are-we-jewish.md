@@ -2,7 +2,7 @@
 title: כשהילד שואל "למה אנחנו יהודים?": תשובות כנות וחמות
 description: איך עונים "למה אנחנו יהודים?" בכל גיל: נשמה, שרשרת הדורות, מצוות ושמחה. מילים פשוטות וכנות להורים מנקודת מבט חב"דית.
 category: Jewish ideas
-related: why-be-jewish, talking-to-kids-about-g-d, jewish-identity-for-teens, jewish-learning-at-home-with-kids, is-hebrew-school-worth-it
+related: why-be-jewish, hebrew-school-for-non-religious-families, talking-to-kids-about-g-d, jewish-identity-for-teens, jewish-learning-at-home-with-kids, is-hebrew-school-worth-it
 local: לא בטוחים מה לומר לילד? דברו עם הרב לבקובסקי, 925-384-7242, או ב-/help/talk-to-the-rabbi.
 ---
 כשילד שואל "למה אנחנו יהודים?", התשובה הטובה ביותר קצרה, חמה ואמיתית: אנחנו יהודים כי אנחנו חלק ממשפחה שחוזרת אלפי שנים אחורה, לאברהם ושרה, וכי הנשמה שלנו יהודית, מתנה יקרה שאנו זוכים לחיות באמצעות מצוות, שבת, חגים וטוב לב. התשובה צריכה לגרום לילד להרגיש אהוב וגאה, לא לחוץ.

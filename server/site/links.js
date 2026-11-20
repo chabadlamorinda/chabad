@@ -12,7 +12,7 @@ const HOLIDAY = {
   'lag-baomer': /omer|lag-baomer/, shavuot: /shavuot|ten-commandments|omer/, 'tisha-bav': /three-weeks|tisha|holy-temple|western-wall/,
 };
 const PROGRAM = {
-  'jewish-preschool': /preschool|kids-in|new-parents|parenting/, 'hebrew-school': /hebrew-school|kids-in|hebrew-alphabet|bar-bat-mitzvah-in/,
+  'jewish-preschool': /preschool|kids-in|new-parents|parenting/, 'hebrew-school': /hebrew-school|kids-in|hebrew-alphabet|bar-bat-mitzvah-in|torah-study-for-children|hands-on-jewish|aleph-champ|children-are-our/,
   'ckids-afterschool': /kids-in|parenting/, 'summer-camp': /kids-in|parenting/, 'adult-education': /torah-classes|tanya|weekly-parsha|daily-torah|talmud/,
   'womens-circle': /women|challah|shabbat-candles|mikvah/, 'mens-club': /jewish-men-in|tefillin|minyan/, 'kids-and-teens': /teens|kids-in/,
   'bar-bat-mitzvah': /bar-mitzvah|bat-mitzvah|bar-bat|tefillin/, 'bay-kosher': /kosher/, 'chai-club': /supporting|tzedakah|pushka|maaser/,
@@ -64,6 +64,9 @@ const PAGES = {
   '/daily-study': ['daily-torah-study', 'tanya', 'rambam', 'weekly-parsha'], '/tools/yahrzeit': ['yahrzeit', 'yahrzeit-candle', 'kaddish'],
   '/tools/hebrew-birthday': ['hebrew-birthday', 'jewish-birthday-customs'], '/tools/bar-bat-mitzvah': ['bar-mitzvah', 'bat-mitzvah', 'bar-mitzvah-speech'],
   '/tools/hebrew-date': ['jewish-calendar', 'rosh-chodesh'], '/tools/zmanim': ['daily-prayers', 'shema', 'jewish-calendar'],
+  // Hebrew school: the guides for parents on why Torah learning matters and what Sunday is like come first.
+  '/programs/hebrew-school': ['benefits-of-torah-study-for-children', 'a-sunday-at-lamorinda-hebrew-school', 'aleph-champ-hebrew-reading', 'hands-on-jewish-learning-for-kids', 'jewish-values-kids-learn-in-hebrew-school', 'children-are-our-guarantors', 'hebrew-school-in-lamorinda', 'is-hebrew-school-worth-it'],
+  '/forms/hebrew-school': ['benefits-of-torah-study-for-children', 'a-sunday-at-lamorinda-hebrew-school', 'starting-hebrew-school-at-any-age', 'hebrew-school-for-non-religious-families', 'hebrew-school-and-busy-schedules', 'hebrew-school-to-bar-bat-mitzvah'],
   '/menorah': ['chanukah-menorah', 'chanukah-on-shabbat', 'zot-chanukah'], '/dreidel': ['dreidel', 'chanukah-gelt', 'chanukah-for-kids'], '/chanukah-quiz': ['chanukah-story', 'chanukah-menorah', 'hosting-a-chanukah-party'],
 };
 // How many guides list each guide in their "related" (worked out once per content version).

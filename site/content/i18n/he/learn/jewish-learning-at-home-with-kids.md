@@ -2,7 +2,7 @@
 title: לימוד יהודי בבית עם ילדים: עשר דקות ביום שמצטברות
 description: דרכים פשוטות ללמד ילדים יהדות בבית בעשר דקות ביום: מודה אני, ברכות, פרשה בארוחה, שירים, צדקה ושבת. התחילו הערב.
 category: Life cycle
-related: parsha-for-kids, jewish-parenting, dvar-torah-at-the-shabbat-table, is-hebrew-school-worth-it, first-mitzvot-for-young-children
+related: parsha-for-kids, hands-on-jewish-learning-for-kids, jewish-parenting, dvar-torah-at-the-shabbat-table, is-hebrew-school-worth-it, first-mitzvot-for-young-children
 local: מגדלים ילדים יהודים בלאפייט, מוראגה או אורינדה? התקשרו לרב לבקובסקי, 925-384-7242, לרעיונות שמתאימים למשפחתכם.
 ---
 אפשר ללמד את הילדים יהדות בבית בערך עשר דקות ביום, על ידי חיבור רגעים יהודיים קטנים לדברים שאתם כבר עושים: תודה בהתעוררות, ברכה לפני אכילה, שאלה על הפרשה בארוחה, מטבע לצדקה וקריאת שמע לפני השינה. חב"ד מלמדת שחינוך יהודי מתחיל בבית, ושצעדים קטנים ויציבים מעצבים ילד יותר מצעדים גדולים מדי פעם.

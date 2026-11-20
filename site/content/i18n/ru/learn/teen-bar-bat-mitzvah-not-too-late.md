@@ -2,7 +2,7 @@
 title: Пропустили бар- или бат-мицву в 13 лет? Для подростков еще не поздно
 description: У вашего подростка не было бар- или бат-мицвы? В 14, 15 или 17 лет еще не поздно. Простая и деликатная подготовка в Хабаде Ламоринды в Лафайетте.
 category: Life cycle
-related: adult-bar-bat-mitzvah, bar-bat-mitzvah-for-every-family, after-the-bar-mitzvah, jewish-teens-in-lamorinda, jewish-identity-for-teens, tefillin, bar-mitzvah-prep-without-hebrew-school
+related: adult-bar-bat-mitzvah, starting-hebrew-school-at-any-age, bar-bat-mitzvah-for-every-family, after-the-bar-mitzvah, jewish-teens-in-lamorinda, jewish-identity-for-teens, tefillin, bar-mitzvah-prep-without-hebrew-school
 local: Подростки и родители: позвоните раввину Лабковскому по номеру 925-384-7242. Вместе составим простой план, без давления.
 ---
 Если у вашего подростка не было бар- или бат-мицвы, еще не поздно. Еврейский мальчик стал бар-мицвой в 13 лет, а девочка бат-мицвой в 12, в свой еврейский день рождения, с церемонией или без. Отметить это сейчас, в 14, 15 или 17 лет, так же настоящее и часто еще осмысленнее, потому что подросток понимает этот шаг. В Хабаде Ламоринды это просто, при желании без огласки, и открыто для каждой еврейской семьи из Лафайетта, Мораги, Оринды и окрестностей.

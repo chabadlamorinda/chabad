@@ -2,7 +2,7 @@
 title: Будут ли мои внуки евреями? Еврейская преемственность и что ее сохраняет
 description: Беспокоитесь, будут ли ваши внуки евреями? Чему учит традиция о преемственности и как тепло и просто передавать иудаизм дальше, без чувства вины.
 category: Jewish ideas
-related: jewish-grandparents, interfaith-families-at-chabad, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
+related: jewish-grandparents, children-are-our-guarantors, interfaith-families-at-chabad, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
 local: Думаете о еврейском будущем вашей семьи? Поговорите с равом Лабковским, 925-384-7242, или с ребецн Лабковской, 925-384-7241.
 ---
 Будут ли ваши внуки жить еврейской жизнью и любить иудаизм, зависит от того, что передается от поколения к поколению, а на это почти каждая семья еще может повлиять. Еврейская преемственность означает, что еврейская жизнь, учеба и любовь к иудаизму переходят от бабушек и дедушек к родителям и детям, и начинается она дома, у субботних свечей и в классе.

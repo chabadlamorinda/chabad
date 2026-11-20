@@ -2,7 +2,7 @@
 title: האם נכדיי יהיו יהודים? המשכיות יהודית ומה שומר עליה חיה
 description: דואגים אם נכדיכם יהיו יהודים? מה מלמדת היהדות על המשכיות יהודית, ודרכים חמות ומעשיות להעביר את היהדות הלאה, בלי אשמה.
 category: Jewish ideas
-related: jewish-grandparents, interfaith-families-at-chabad, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
+related: jewish-grandparents, children-are-our-guarantors, interfaith-families-at-chabad, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
 local: חושבים על העתיד היהודי של המשפחה? שוחחו עם הרב לבקובסקי, 925-384-7242, או עם הרבנית לבקובסקי, 925-384-7241.
 ---
 אם נכדיכם יחיו את יהדותם ויאהבו אותה תלוי במה שעובר מדור לדור, ובכך כמעט כל משפחה עדיין יכולה להשפיע. המשכיות יהודית פירושה שחיים יהודיים, לימוד ואהבה ליהדות עוברים מסבים וסבתות להורים ולילדים, והיא מתחילה בבתים, ליד נרות שבת ובכיתות.

@@ -2,7 +2,7 @@
 title: Учим детей алеф-бет дома: буквы, огласовки и веселая практика
 description: Как учить детей ивритскому алеф-бет дома: буквы с огласовками, простой распорядок, игры и песни. Начните сегодня или спросите Хабад Ламоринды.
 category: Life cycle
-related: hebrew-alphabet, is-hebrew-school-worth-it, raising-hebrew-speaking-kids-in-lamorinda, hebrew-school-in-lamorinda, jewish-learning-at-home-with-kids
+related: hebrew-alphabet, aleph-champ-hebrew-reading, is-hebrew-school-worth-it, raising-hebrew-speaking-kids-in-lamorinda, hebrew-school-in-lamorinda, jewish-learning-at-home-with-kids
 local: Хотите помочь ребенку начать с ивритских букв? Позвоните 925-384-7242 или посмотрите воскресную программу на /programs/hebrew-school.
 ---
 Алеф-бет (אָלֶף־בֵּית) - это ивритский алфавит из 22 букв, и лучший способ учить его ребенка - понемногу, вместе с огласовками, через звуки, песни и игру. По учению Хабада буквы учат вместе с огласовками, потому что так ребенок с самого начала учится читать настоящие слоги.

@@ -2,7 +2,7 @@
 title: Дети, деньги и цдака: как вырастить щедрых детей
 description: Еврейская мудрость о том, как учить детей обращаться с деньгами: своя копилка для цдаки, пожертвования из карманных денег, честность и умение радоваться тому, что есть.
 category: Jewish home
-related: tzedakah, tzedakah-at-a-bar-mitzvah, giving-tzedakah-as-a-family, volunteering-with-kids, chanukah-mitzvah-projects-for-kids, raising-kind-children, pushka, maaser, jewish-parenting, jewish-view-on-wealth
+related: tzedakah, jewish-values-kids-learn-in-hebrew-school, tzedakah-at-a-bar-mitzvah, giving-tzedakah-as-a-family, volunteering-with-kids, chanukah-mitzvah-projects-for-kids, raising-kind-children, pushka, maaser, jewish-parenting, jewish-view-on-wealth
 local: Нужны идеи для вашей семьи? Раввин Исроэль и ребецн Ципора Лабковские с радостью помогут семьям Лафайетта, Мораги и Оринды: 925-384-7242.
 ---
 Дети узнают о деньгах задолго до того, как начинают зарабатывать. Они видят, как мы тратим, копим и даем. Иудаизм предлагает простые привычки на всю жизнь, которые превращают деньги в способ творить добро.

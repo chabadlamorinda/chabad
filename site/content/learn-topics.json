@@ -2807,35 +2807,35 @@
   },
   "first-mitzvot-for-young-children": {
    "sub": "children-and-education",
-   "rank": 2
+   "rank": 4
   },
   "jewish-learning-at-home-with-kids": {
    "sub": "children-and-education",
-   "rank": 3
+   "rank": 5
   },
   "teaching-kids-the-aleph-bet": {
    "sub": "children-and-education",
-   "rank": 4
+   "rank": 8
   },
   "twelve-torah-verses": {
    "sub": "children-and-education",
-   "rank": 5
+   "rank": 9
   },
   "teaching-kids-about-israel": {
    "sub": "children-and-education",
-   "rank": 6
+   "rank": 13
   },
   "is-hebrew-school-worth-it": {
    "sub": "children-and-education",
-   "rank": 7
+   "rank": 9
   },
   "choosing-a-jewish-afterschool-program": {
    "sub": "children-and-education",
-   "rank": 8
+   "rank": 15
   },
   "preparing-for-jewish-camp": {
    "sub": "children-and-education",
-   "rank": 9
+   "rank": 16
   },
   "disciplining-children": {
    "sub": "family-challenges",
@@ -4667,23 +4667,23 @@
   },
   "jewish-holidays-and-lamorinda-school-calendars": {
    "sub": "lamorinda-kids",
-   "rank": 7
+   "rank": 8
   },
   "presenting-a-jewish-holiday-in-class": {
    "sub": "lamorinda-kids",
-   "rank": 8
+   "rank": 9
   },
   "jewish-teens-in-lamorinda": {
    "sub": "lamorinda-kids",
-   "rank": 9
+   "rank": 10
   },
   "bar-bat-mitzvah-in-lamorinda": {
    "sub": "lamorinda-kids",
-   "rank": 10
+   "rank": 11
   },
   "sending-a-lamorinda-teen-to-college": {
    "sub": "lamorinda-kids",
-   "rank": 11
+   "rank": 12
   },
   "jewish-women-in-lamorinda": {
    "sub": "lamorinda-groups",
@@ -5168,6 +5168,46 @@
   "kosher-grilling": {
    "sub": "kosher-away",
    "rank": 6
+  },
+  "benefits-of-torah-study-for-children": {
+   "sub": "children-and-education",
+   "rank": 2
+  },
+  "children-are-our-guarantors": {
+   "sub": "children-and-education",
+   "rank": 3
+  },
+  "hands-on-jewish-learning-for-kids": {
+   "sub": "children-and-education",
+   "rank": 6
+  },
+  "jewish-values-kids-learn-in-hebrew-school": {
+   "sub": "children-and-education",
+   "rank": 7
+  },
+  "aleph-champ-hebrew-reading": {
+   "sub": "children-and-education",
+   "rank": 8
+  },
+  "hebrew-school-for-non-religious-families": {
+   "sub": "children-and-education",
+   "rank": 10
+  },
+  "starting-hebrew-school-at-any-age": {
+   "sub": "children-and-education",
+   "rank": 11
+  },
+  "hebrew-school-and-busy-schedules": {
+   "sub": "children-and-education",
+   "rank": 12
+  },
+  "hebrew-school-to-bar-bat-mitzvah": {
+   "sub": "children-and-education",
+   "rank": 14
+  },
+  "a-sunday-at-lamorinda-hebrew-school": {
+   "sub": "lamorinda-kids",
+   "rank": 7
   }
  }
 }

@@ -2,7 +2,7 @@
 title: Will My Grandchildren Be Jewish? Jewish Continuity and What Keeps It Alive
 description: Will your grandchildren be Jewish? What Jewish tradition teaches about Jewish continuity and warm ways to hand Judaism on, with no guilt.
 category: Jewish ideas
-related: jewish-grandparents, interfaith-families-at-chabad, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
+related: jewish-grandparents, children-are-our-guarantors, interfaith-families-at-chabad, choosing-jewish-education, leaving-a-jewish-legacy-gift, shabbat-candles, why-give-to-jewish-education
 local: Thinking about the Jewish future of your family? Talk with Rabbi Labkowski at 925-384-7242 or Rebbetzin Labkowski at 925-384-7241.
 ---
 Whether your grandchildren will live and love their Judaism depends on what is handed from one generation to the next, and that is something almost every family can still influence. Jewish continuity means that Jewish life, learning and love for Judaism pass from grandparents to parents to children, and it begins in homes, around Shabbat candles and in classrooms.

@@ -2,7 +2,7 @@
 title: פספסתם את הבר או הבת מצווה בגיל 13? לבני נוער זה לא מאוחר מדי
 description: לנער או לנערה שלכם לא הייתה בר או בת מצווה? בגיל 14, 15 או 17 זה לא מאוחר. הכנה פשוטה ודיסקרטית בחב״ד למורינדה בלאפייט.
 category: Life cycle
-related: adult-bar-bat-mitzvah, bar-bat-mitzvah-for-every-family, after-the-bar-mitzvah, jewish-teens-in-lamorinda, jewish-identity-for-teens, tefillin, bar-mitzvah-prep-without-hebrew-school
+related: adult-bar-bat-mitzvah, starting-hebrew-school-at-any-age, bar-bat-mitzvah-for-every-family, after-the-bar-mitzvah, jewish-teens-in-lamorinda, jewish-identity-for-teens, tefillin, bar-mitzvah-prep-without-hebrew-school
 local: בני נוער והורים: התקשרו לרב לבקובסקי בטלפון 925-384-7242. נבנה יחד תוכנית פשוטה, בלי לחץ.
 ---
 אם לנער או לנערה שלכם לא הייתה בר או בת מצווה, זה לא מאוחר מדי. נער יהודי נעשה בר מצווה בגיל 13, ונערה בת מצווה בגיל 12, ביום ההולדת העברי, עם טקס או בלעדיו. לציין את זה עכשיו, בגיל 14, 15 או 17, אמיתי לא פחות ולעיתים קרובות משמעותי יותר, כי בני נוער מבינים את הצעד. בחב״ד למורינדה זה פשוט, דיסקרטי אם רוצים, ופתוח לכל משפחה יהודית בלאפייט, מוראגה, אורינדה והסביבה.

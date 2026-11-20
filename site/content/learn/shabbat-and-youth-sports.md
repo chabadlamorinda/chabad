@@ -2,7 +2,7 @@
 title: "Kids' Sports on Shabbat: A Jewish Parent's Guide"
 description: What to do when your child's soccer, baseball or travel team plays on Shabbat: practical options, true stories and how to talk to the coach.
 category: Jewish home
-related: shabbat-with-kids, parents-and-teenagers, jewish-pride, raising-jewish-kids-in-a-small-community, shabbat-for-beginners
+related: shabbat-with-kids, hebrew-school-and-busy-schedules, parents-and-teenagers, jewish-pride, raising-jewish-kids-in-a-small-community, shabbat-for-beginners
 local: Facing a tough game schedule? Talk it through with Rabbi Labkowski, 925-384-7242, or see /help/talk-to-the-rabbi.
 ---
 Youth sports often schedule games on Saturdays, which is Shabbat, when Jewish tradition asks us to rest from ordinary work and play. A parent in Lafayette, Moraga or Orinda can handle this without guilt by talking to the coach early, looking for options, and deciding as a family what to do, with the Rabbi's advice.

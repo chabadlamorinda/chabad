@@ -2,7 +2,7 @@
 title: האם בית ספר עברי שווה את זה? מה ילדים מרוויחים מחינוך יהודי
 description: האם בית ספר עברי שווה את זה? זהות יהודית, קריאה בעברית, חברים והכנה לבר/בת מצווה. שאלו את חב"ד למורינדה.
 category: Life cycle
-related: hebrew-school-in-lamorinda, choosing-jewish-education, chinuch, bar-bat-mitzvah-in-lamorinda, jewish-learning-at-home-with-kids
+related: hebrew-school-in-lamorinda, benefits-of-torah-study-for-children, choosing-jewish-education, chinuch, bar-bat-mitzvah-in-lamorinda, jewish-learning-at-home-with-kids
 local: סקרנים אם בית הספר העברי מתאים למשפחה שלכם? ראו את תוכנית יום ראשון ב-/programs/hebrew-school או התקשרו 925-384-7242.
 ---
 בית ספר עברי שווה את זה כשהוא נותן לילד את מה שאף חלק אחר בשבוע לא נותן: זהות יהודית שהוא גאה בה, יכולת לקרוא עברית, חברים שחולקים את המורשת שלו, וחוויה אמיתית של שבת וחגים. חב"ד מלמדת שחינוך יהודי הוא המתנה הגדולה ביותר שהורים יכולים לתת, כי הוא מאפשר לילד לגדול כשהוא יודע מי הוא.

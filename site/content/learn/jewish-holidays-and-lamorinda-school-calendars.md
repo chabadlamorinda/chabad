@@ -2,7 +2,7 @@
 title: "Jewish Holidays and Lamorinda School Calendars: A Parent's Planning Guide"
 description: How Lafayette, Moraga and Orinda families plan for Rosh Hashanah, Yom Kippur and other Jewish holidays that fall on school days. Call 925-384-7242.
 category: Lamorinda
-related: jewish-holidays-at-school-and-work, is-work-allowed-on-chanukah, raising-jewish-kids-in-a-small-community, jewish-year-in-lamorinda, jewish-kids-in-lamorinda, rosh-hashanah-for-beginners
+related: jewish-holidays-at-school-and-work, hebrew-school-and-busy-schedules, is-work-allowed-on-chanukah, raising-jewish-kids-in-a-small-community, jewish-year-in-lamorinda, jewish-kids-in-lamorinda, rosh-hashanah-for-beginners
 local: Call Rabbi Labkowski at 925-384-7242 to hear what is planned for families on the holidays, or see /events.
 ---
 Jewish holidays follow the Hebrew calendar, so they land on a different date of the regular calendar every year, and some fall on school days in Lafayette, Moraga and Orinda. The simple plan is to look up this year's holidays, compare them with your school district's calendar in early fall, and write to the school in advance.

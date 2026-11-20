@@ -2,7 +2,7 @@
 title: First Mitzvot for Young Children: Modeh Ani, Blessings, Tzedakah and Kippah
 description: Which mitzvot to start with for toddlers and young children: Modeh Ani, blessings, Shema, tzedakah, kippah, tzitzit and Shabbat candles, by age.
 category: Life cycle
-related: chinuch, upsherin, modeh-ani, shabbat-candles, teaching-kids-blessings-on-food
+related: chinuch, hands-on-jewish-learning-for-kids, upsherin, modeh-ani, shabbat-candles, teaching-kids-blessings-on-food
 local: Raising young children in Lafayette, Moraga or Orinda and want a first step? Call 925-384-7242 or see /programs/jewish-preschool.
 ---
 The first mitzvot for young children are simple, daily and joyful: saying thank you to G-d in the morning with Modeh Ani, blessings before eating, the Shema at bedtime, putting a coin in the tzedakah box, and, around age three, a kippah and tzitzit for boys and Shabbat candles for girls. A child can begin learning Torah as soon as he or she can speak.

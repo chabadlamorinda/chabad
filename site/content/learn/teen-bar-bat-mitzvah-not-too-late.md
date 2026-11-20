@@ -2,7 +2,7 @@
 title: Missed the Bar or Bat Mitzvah at 13? It Is Not Too Late for Teens
 description: Your teen never had a bar or bat mitzvah? At 14, 15 or 17 it is not too late. Simple, private preparation at Chabad of Lamorinda in Lafayette.
 category: Life cycle
-related: adult-bar-bat-mitzvah, bar-bat-mitzvah-for-every-family, after-the-bar-mitzvah, jewish-teens-in-lamorinda, jewish-identity-for-teens, tefillin, bar-mitzvah-prep-without-hebrew-school
+related: adult-bar-bat-mitzvah, starting-hebrew-school-at-any-age, bar-bat-mitzvah-for-every-family, after-the-bar-mitzvah, jewish-teens-in-lamorinda, jewish-identity-for-teens, tefillin, bar-mitzvah-prep-without-hebrew-school
 local: Teens and parents: call Rabbi Labkowski at 925-384-7242. We will make a simple plan together, with no pressure.
 ---
 If your teenager never had a bar or bat mitzvah, it is not too late. A Jewish boy became bar mitzvah at 13, and a girl bat mitzvah at 12, on the Hebrew birthday, with or without a ceremony. Marking it now, at 14, 15 or 17, is just as real and often more meaningful, because a teen understands the step. At Chabad of Lamorinda it is simple, private if you wish, and open to every Jewish family in Lafayette, Moraga, Orinda and nearby.

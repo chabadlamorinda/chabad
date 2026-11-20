@@ -2,7 +2,7 @@
 title: "Детский спорт в Шаббат: руководство для еврейских родителей"
 description: Что делать, если футбольная, бейсбольная или другая команда ребёнка играет в Шаббат: практичные варианты, реальные истории и разговор с тренером.
 category: Jewish home
-related: shabbat-with-kids, parents-and-teenagers, jewish-pride, raising-jewish-kids-in-a-small-community, shabbat-for-beginners
+related: shabbat-with-kids, hebrew-school-and-busy-schedules, parents-and-teenagers, jewish-pride, raising-jewish-kids-in-a-small-community, shabbat-for-beginners
 local: Трудное расписание игр? Обсудите его с раввином Лабковским, 925-384-7242, или загляните на /help/talk-to-the-rabbi.
 ---
 В детском спорте игры часто назначают на субботу, то есть на Шаббат, когда еврейская традиция просит нас отдыхать от обычных дел и игр. Родитель в Лафайете, Мораге или Оринде может решить это без чувства вины: заранее поговорить с тренером, поискать варианты и решить вместе в семье, посоветовавшись с раввином.

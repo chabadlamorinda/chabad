@@ -2,7 +2,7 @@
 title: Teaching Kids the Aleph-Bet at Home: Letters, Vowels and Fun Practice
 description: How to teach kids the Hebrew Aleph-Bet at home: letters with vowels, simple routines, games and songs. Start today, or ask Chabad of Lamorinda.
 category: Life cycle
-related: hebrew-alphabet, is-hebrew-school-worth-it, raising-hebrew-speaking-kids-in-lamorinda, hebrew-school-in-lamorinda, jewish-learning-at-home-with-kids
+related: hebrew-alphabet, aleph-champ-hebrew-reading, is-hebrew-school-worth-it, raising-hebrew-speaking-kids-in-lamorinda, hebrew-school-in-lamorinda, jewish-learning-at-home-with-kids
 local: Want help getting your child started with Hebrew letters? Call 925-384-7242 or see the Sunday program at /programs/hebrew-school.
 ---
 The Aleph-Bet (אָלֶף־בֵּית) is the Hebrew alphabet of 22 letters, and the best way to teach it to a child is a little at a time, with the vowels, using sounds, songs and play. Chabad teaching says to teach the letters together with their vowels, because the child then learns to read real syllables from the very beginning.

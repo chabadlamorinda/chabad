@@ -2,7 +2,7 @@
 title: "Preparing for a Bar or Bat Mitzvah Without Years of Hebrew School"
 description: "Starting late or with no Hebrew school? You can still prepare a meaningful Bar or Bat Mitzvah. A calm plan for families in Lamorinda. Call Chabad."
 category: Life cycle
-related: starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-made-simple, bar-bat-mitzvah-timeline, hebrew-reading-for-adults, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date
+related: starting-tefillin-before-bar-mitzvah, starting-hebrew-school-at-any-age, bar-bat-mitzvah-made-simple, bar-bat-mitzvah-timeline, hebrew-reading-for-adults, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date
 local: Starting late is fine. Call Rabbi Labkowski at 925-384-7242 to begin, or see the Bar and Bat Mitzvah program at /programs/bar-bat-mitzvah.
 ---
 Yes, a child with little or no Hebrew school can have a meaningful Bar or Bat Mitzvah. A child becomes a Bar or Bat Mitzvah on the Hebrew birthday whether or not the preparation was long, and the essentials, taking on mitzvot, learning the blessings and sharing a few words of Torah, can be learned in a matter of months, at the child's own pace.

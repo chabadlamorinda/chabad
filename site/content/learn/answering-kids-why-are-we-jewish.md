@@ -2,7 +2,7 @@
 title: When Your Child Asks "Why Are We Jewish?": Honest, Warm Answers
 description: How to answer "Why are we Jewish?" at any age: soul, family chain, mitzvot and joy. Simple, honest words for parents from a Chabad perspective.
 category: Jewish ideas
-related: why-be-jewish, talking-to-kids-about-g-d, jewish-identity-for-teens, jewish-learning-at-home-with-kids, is-hebrew-school-worth-it
+related: why-be-jewish, hebrew-school-for-non-religious-families, talking-to-kids-about-g-d, jewish-identity-for-teens, jewish-learning-at-home-with-kids, is-hebrew-school-worth-it
 local: Not sure what to say to your child? Talk it over with Rabbi Labkowski, 925-384-7242, or at /help/talk-to-the-rabbi.
 ---
 When a child asks "Why are we Jewish?", the best answer is short, warm and true: we are Jewish because we are part of a family that goes back thousands of years, to Abraham and Sarah, and because our soul is Jewish, a precious gift that we get to live out through mitzvot, Shabbat, holidays and kindness. The answer should make a child feel loved and proud, not pressured.

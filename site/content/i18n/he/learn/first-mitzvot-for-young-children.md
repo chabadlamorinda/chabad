@@ -2,7 +2,7 @@
 title: מצוות ראשונות לילדים קטנים: מודה אני, ברכות, צדקה וכיפה
 description: באילו מצוות להתחיל עם פעוטות וילדים קטנים: מודה אני, ברכות, קריאת שמע, צדקה, כיפה, ציצית ונרות שבת, לפי גיל.
 category: Life cycle
-related: chinuch, upsherin, modeh-ani, shabbat-candles, teaching-kids-blessings-on-food
+related: chinuch, hands-on-jewish-learning-for-kids, upsherin, modeh-ani, shabbat-candles, teaching-kids-blessings-on-food
 local: מגדלים ילדים קטנים בלאפייט, מוראגה או אורינדה ורוצים צעד ראשון? התקשרו 925-384-7242 או ראו /programs/jewish-preschool.
 ---
 המצוות הראשונות לילדים קטנים הן פשוטות, יומיומיות ושמחות: להודות ל-ה' בבוקר במודה אני, ברכות לפני אכילה, קריאת שמע לפני השינה, מטבע בקופת הצדקה, ובסביבות גיל שלוש כיפה וציצית לבנים ונרות שבת לבנות. ילד יכול להתחיל ללמוד תורה ברגע שהוא מסוגל לדבר.

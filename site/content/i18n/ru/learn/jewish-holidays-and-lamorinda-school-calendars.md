@@ -2,7 +2,7 @@
 title: "Еврейские праздники и школьные календари Ламоринды: руководство для родителей"
 description: Как семьи Лафайета, Мораги и Оринда планируют Рош а-Шана, Йом-Кипур и другие праздники в учебные дни. Звоните 925-384-7242.
 category: Lamorinda
-related: jewish-holidays-at-school-and-work, is-work-allowed-on-chanukah, raising-jewish-kids-in-a-small-community, jewish-year-in-lamorinda, jewish-kids-in-lamorinda, rosh-hashanah-for-beginners
+related: jewish-holidays-at-school-and-work, hebrew-school-and-busy-schedules, is-work-allowed-on-chanukah, raising-jewish-kids-in-a-small-community, jewish-year-in-lamorinda, jewish-kids-in-lamorinda, rosh-hashanah-for-beginners
 local: Позвоните раввину Лабковскому, 925-384-7242, чтобы узнать, что планируется для семей на праздники, или загляните на /events.
 ---
 Еврейские праздники определяются еврейским календарём, поэтому каждый год они выпадают на другие числа обычного календаря, и некоторые приходятся на школьные дни в Лафайете, Мораге и Оринда. Простой план: узнать даты праздников этого года, сравнить их с календарём школьного округа в начале осени и заранее написать в школу.
