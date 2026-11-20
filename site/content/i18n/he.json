@@ -1793,5 +1793,9 @@
  "Candy and snacks": "ממתקים וחטיפים",
  "Drinks and wine": "משקאות ויין",
  "Judaica": "יודאיקה",
- "Every week at Chabad": "בכל שבוע בחב״ד"
+ "Every week at Chabad": "בכל שבוע בחב״ד",
+ "{n} monthly payments of {amount}. They stop by themselves after the last one.": "{n} תשלומים חודשיים של {amount}. הם נעצרים מעצמם אחרי האחרון.",
+ "Let me know": "עדכנו אותי",
+ "Nothing on the calendar yet": "עדיין אין אירוע בלוח",
+ "Want to hear first? Leave your email and we will let you know as soon as there is a {name} event.": "רוצים לשמוע ראשונים? השאירו את האימייל שלכם ונודיע לכם ברגע שיהיה אירוע של {name}."
 }

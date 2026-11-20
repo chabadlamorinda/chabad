@@ -105,13 +105,12 @@
   },
   {
     "id": "hebrew-school",
-    "title": "Lamorinda Hebrew School registration",
-    "intro": "Sundays 10 AM to 12 PM, ages 3 to 13. Tuition is $600 per child, including books and supplies. A payment plan is available, and no child is turned away for lack of funds.",
+    "title": "Lamorinda Hebrew School registration, 2026-2027",
+    "intro": "Sundays 10 AM to 12 PM at Chabad of Lamorinda, 3477 Golden Gate Way, Lafayette, for ages 3 to 13. Tuition is $600 per child for the whole year, including books and supplies. No membership is required, and every child is welcome whatever the family's finances. It takes about 5 minutes; the Rebbetzin will be in touch to confirm your place. Questions? Call Rebbetzin Tzipora Labkowski at 925-384-7241.",
     "program": "hebrew-school",
     "button": "Register",
     "payment": {
       "fund": "children",
-      "perChild": 600,
       "label": "Pay tuition now"
     },
     "fields": [
@@ -120,11 +119,6 @@
         "label": "Parent's name",
         "type": "text",
         "required": true
-      },
-      {
-        "id": "parent2",
-        "label": "Second parent's name",
-        "type": "text"
       },
       {
         "id": "email",
@@ -139,6 +133,16 @@
         "required": true
       },
       {
+        "id": "parent2",
+        "label": "Second parent's name",
+        "type": "text"
+      },
+      {
+        "id": "parent2contact",
+        "label": "Second parent's phone or email",
+        "type": "text"
+      },
+      {
         "id": "address",
         "label": "Home address",
         "type": "text"
@@ -147,35 +151,114 @@
         "id": "children",
         "label": "Children",
         "type": "children",
-        "rows": 4,
         "required": true,
+        "rows": 4,
         "columns": [
           "name",
           "hebrewName",
           "birthday",
           "grade",
+          "school",
           "allergies"
         ]
       },
       {
+        "id": "jewishEd",
+        "label": "Previous Jewish education, if any",
+        "type": "text"
+      },
+      {
+        "id": "mother",
+        "label": "Is the child's mother Jewish?",
+        "type": "select",
+        "options": [
+          "Yes",
+          "No",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "father",
+        "label": "Is the child's father Jewish?",
+        "type": "select",
+        "options": [
+          "Yes",
+          "No",
+          "Not sure"
+        ]
+      },
+      {
+        "id": "care",
+        "label": "Anything that helps us care for your child, such as learning needs (kept confidential)",
+        "type": "textarea"
+      },
+      {
         "id": "emergency",
-        "label": "Emergency contact (name and phone)",
+        "label": "Emergency contact (name, phone and relationship)",
         "type": "text",
         "required": true
       },
       {
+        "id": "emergency2",
+        "label": "Second emergency contact (optional)",
+        "type": "text"
+      },
+      {
+        "id": "doctor",
+        "label": "Child's doctor and phone (optional)",
+        "type": "text"
+      },
+      {
+        "id": "consent",
+        "label": "I give permission for my child to take part in all Hebrew School activities and trips, and, in an emergency, for the staff to get medical care for my child (they will try to reach me first).",
+        "type": "checkbox",
+        "required": true
+      },
+      {
         "id": "photos",
-        "label": "Photos of my children may be shared in our newsletter and social media",
+        "label": "Photos of my child may be shared in our newsletter and social media",
         "type": "checkbox"
       },
       {
-        "id": "plan",
-        "label": "I would like a payment plan or a scholarship",
+        "id": "pay",
+        "label": "How would you like to pay?",
+        "type": "select",
+        "required": true,
+        "options": [
+          {
+            "label": "Pay the full year by card now: $600 per child",
+            "amount": 600,
+            "perChild": true
+          },
+          {
+            "label": "6 monthly card payments of $100 per child (they stop by themselves)",
+            "amount": 600,
+            "perChild": true,
+            "months": 6
+          },
+          {
+            "label": "By check to Chabad of Lamorinda, Zelle or Venmo (@CHABAD-LAMORINDA)",
+            "amount": 0
+          },
+          {
+            "label": "I would like to talk about a payment plan or a scholarship",
+            "amount": 0
+          }
+        ]
+      },
+      {
+        "id": "heard",
+        "label": "How did you hear about us? (optional)",
+        "type": "text"
+      },
+      {
+        "id": "news",
+        "label": "Send me news and updates by email",
         "type": "checkbox"
       },
       {
         "id": "message",
-        "label": "Anything we should know",
+        "label": "Anything else we should know",
         "type": "textarea"
       }
     ]

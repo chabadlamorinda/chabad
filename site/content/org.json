@@ -88,10 +88,12 @@
     },
     {
       "day": "Monday",
-      "time": "Evening (call 925-384-7242 for the time)",
+      "time": "8:30 PM",
       "name": "Tanya class in Hebrew, with Rebbetzin Tzipora Labkowski",
       "link": "/programs/adult-education",
-      "byDay": "Monday"
+      "byDay": "Monday",
+      "startTime": "20:30",
+      "place": "At the Rabbi's home in Lafayette. Call 925-384-7242 for the address and more details."
     },
     {
       "day": "Tuesday",

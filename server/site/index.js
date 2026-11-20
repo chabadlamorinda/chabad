@@ -117,21 +117,23 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   // long the page was open (x-age, seconds). A robot gets a polite "ok" and nothing is saved, emailed or counted.
   // Signed-in members are never stopped (a one-tap RSVP can be fast).
   app.use('/api/site', (req, res, next) => {
-    if (req.method !== 'POST' || !/^\/(submit|forms\/|subscribe|rsvp\/|leads?\b)/.test(req.path)) return next();
+    if (req.method !== 'POST' || !/^\/(submit|forms\/|subscribe|watch|rsvp\/|leads?\b)/.test(req.path)) return next();
     const age = Number(req.get('x-age')), robot = req.get('x-hp') === '1' || (req.get('x-age') != null && age >= 0 && age < 2);
     if (!robot) return next();
     if (community) return community.readMember(req).then((m) => { if (m) return next(); res.json({ ok: true, going: 0 }); }).catch(() => next()); // a real signed-in member (cookie checked) is never stopped
     log.error && log.error('spam guard: stopped a robot on', req.path);
     res.json({ ok: true, going: 0 });
   });
+  let pagesRef = null; // the pages module (its upcoming events), set below
   let community = null; // set just below; visitors links signed-in members through it
   const visitors = mountVisitors(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log, readMember: (req) => (community ? community.readMember(req) : null), jobs: !!reminders });
+  const watch = require('./watch.js').mountWatch(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, ctxOf, upcoming: (d, C) => (pagesRef ? pagesRef.upcoming(d, C) : []), base, limit, log, jobs: !!reminders });
   const leads = mountLeads(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log });
   const chat = mountChat(app, { env, client: chatClient, content, ctxOf, limit, store, log, leads, mailer, notifyTo: env.ADMIN_EMAIL || '', base });
   community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf, notifyTo: env.ADMIN_EMAIL || '', whenOf: (l, e) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).when(e), townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
   // pushka.* and kiddush.* addresses keep opening their apps.
   const isHome = (req) => !/^(pushka|kiddush)\./i.test(req.hostname) && (siteHome || req.hostname.replace(/^www\./, '') === host);
-  const pages = mountPages(app, { content, base, indexable, isHome, analytics, ctxOf, rsvpCounts: community.counts, photos: fb ? fb.photos : null });
+  const pages = pagesRef = mountPages(app, { content, base, indexable, isHome, analytics, ctxOf, rsvpCounts: community.counts, photos: fb ? fb.photos : null });
   const outreach = mountOutreach(app, { store, readMember: community.readMember, content, base, ctxOf, upcoming: pages.upcoming });
   const r = express.Router();
   const wrap = (fn) => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
@@ -201,7 +203,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     pages.render(res, { path: req.path, noindex: true, title: t('Page not found'), body: `<section class="wrap sec narrow"><h1>${esc(t('We could not find that page'))}</h1><form class="searchbar" action="/search" role="search"><input type="search" name="q" value="${esc((() => { try { return decodeURIComponent(req.path); } catch (e) { return ''; } })().replace(/^\/(he|ru)\//, '/').split('/').pop().replace(/[-_]+/g, ' ').replace(/\.\w+$/, '').slice(0, 60))}" aria-label="${esc(t('Search the website'))}"><button class="btn gold" type="submit">${esc(t('Search'))}</button></form><p>${esc(t('It may have moved. Try these:'))} <a href="/events">${esc(t('Events calendar'))}</a> · <a href="/shabbat">${esc(t('Shabbat times'))}</a> · <a href="/">${esc(t('Home'))}</a></p></section>` }, 404).catch(next);
   };
   return {
-    content, base, notFound, visitors, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
+    content, base, notFound, visitors, watch, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
     reload() { data = withCampaigns(load(contentDir, { kabbalat: data.kabbalat, siteHost })); refreshKabbalat(); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {

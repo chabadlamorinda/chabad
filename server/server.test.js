@@ -166,6 +166,10 @@ test('website giving: Stripe checkout once or monthly, Chai Club details for the
   p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
   assert.equal(p.mode, 'subscription'); assert.deepEqual(p.line_items[0].price_data.recurring, { interval: 'month' });
   assert.equal(p.subscription_data.metadata.club, 'yes'); assert.equal(p.subscription_data.metadata.board_name, 'The Levi Family'); assert.equal(p.subscription_data.metadata.gift_cents, '18000');
+  // a set number of monthly payments (Hebrew School tuition): marked so the plan stops by itself after the last one
+  assert.equal((await c.call('POST', '/api/give/checkout', { ...gift({ amount: 100, fund: 'children', idem: 'idem-site-0000000000021' }), freq: 'monthly', installments: 6, back: '/donate' })).status, 200);
+  p = c.stripe._st.calls.filter((x) => x[0] === 'checkout.sessions.create').pop()[1];
+  assert.equal(p.mode, 'subscription'); assert.equal(p.subscription_data.metadata.installments, '6'); assert.equal(p.subscription_data.metadata.pledge_cents, '60000'); assert.match(p.subscription_data.description, /^6 monthly payments/);
   // the giver's name and email go to Stripe (receipt, thank-you) and into the gift's details
   const named = await c.call('POST', '/api/give/checkout', { ...gift({ amount: 36, idem: 'idem-site-0000000000009' }), freq: 'once', donorName: 'Dana Levi', donorEmail: 'Dana@Example.com' });
   assert.equal(named.status, 200);

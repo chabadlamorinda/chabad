@@ -5,9 +5,10 @@
 const { esc, escLtr } = require('./md.js');
 
 // Links that open the giving form already filled in (sponsor pages, forms with "Pay now", yahrzeits...).
-const giveUrl = (fund, amt, ded) => {
+const giveUrl = (fund, amt, ded, n) => {
   const q = new URLSearchParams({ fund: fund || 'general' });
   if (amt) q.set('amt', String(amt));
+  if (n > 1) { q.set('freq', 'monthly'); q.set('n', String(n)); } // a set number of monthly payments (tuition) that stop by themselves
   if (ded) q.set('ded', String(ded).slice(0, 80));
   return '/donate?' + q.toString() + '#give';
 };
@@ -30,9 +31,10 @@ function giveForm(X, opts = {}) {
   const funds = (G.funds || []).filter((f) => f.id !== 'chai' || !club);
   const amounts = club ? CLUB.map((c) => c[1]) : (G.amounts || [180, 360, 1000, 1800]);
   const amt = Number(opts.amt) > 0 ? Number(opts.amt) : (club ? 180 : amounts[1] || amounts[0]);
-  const preset = amounts.includes(amt);
+  const preset = amounts.includes(amt), n = !club && Number(opts.n) >= 2 && Number(opts.n) <= 12 ? Math.floor(Number(opts.n)) : 0;
   const label = (a) => (club ? `${t(CLUB.find((c) => c[1] === a)[2])} · ${money(a)}` : money(a)), lvl = (a) => CLUB.find((c) => c[1] === a)[0];
   return `<form class="card give" id="give" data-give data-back="${esc(opts.back || '/donate')}" novalidate>
+${n ? `<input type="hidden" name="n" value="${n}"><p class="msg ok">${esc(t('{n} monthly payments of {amount}. They stop by themselves after the last one.', { n, amount: money(amt) }))}</p>` : ''}
 ${club ? '<input type="hidden" name="fund" value="chai"><input type="hidden" name="freq" value="monthly">' : `<fieldset class="radios give-freq"><legend>${esc(t('How often?'))}</legend>
 <label><input type="radio" name="freq" value="once"${opts.freq === 'monthly' ? '' : ' checked'}> ${esc(t('Once'))}</label><label><input type="radio" name="freq" value="monthly"${opts.freq === 'monthly' ? ' checked' : ''}> ${esc(t('Every month'))}</label></fieldset>`}
 <fieldset class="give-amts"><legend>${esc(club ? t('Your monthly gift') : t('Amount'))}</legend>

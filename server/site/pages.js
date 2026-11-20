@@ -221,7 +221,7 @@ ${p.closed ? `<div class="card action-top program-join"><p><strong>${esc(t('Not 
   return `<div class="card action-top program-join">${p.schedule ? `<p><strong>${esc(t('When:'))}</strong> ${esc(p.schedule)}</p>` : ''}<p class="btns">${fm.map((f, i) => `<a class="btn ${i ? 'ghost' : 'gold'}" href="/forms/${f.id}">${esc(f.button || t('Sign up'))}${fm.length > 1 ? ': ' + esc(f.title) : ''}</a>`).join('')}${p.url && fm.length ? `<a class="btn ghost" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}${!fm.length && p.url ? `<a class="btn gold" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}<a class="btn ghost" href="/contact?about=${encodeURIComponent(p.name)}">${esc(t('Ask about {name}', { name: p.name }))}</a></p>${(C.org.weekly || []).filter((w) => w.link === '/programs/' + p.slug && w.byDay && w.startTime).map((w) => `<p class="addcal-for"><span class="muted small">${esc(w.name)}</span>${weeklyMenu(X, base, w)}</p>`).join('')}</div>
 ${md(p.details || '')}
 ${main ? `<p class="btns join-again"><a class="btn gold" href="${esc(main.href)}">${esc(main.label)}</a></p>` : ''}`; })()}
-${evs.length ? `<h2>${esc(t('Coming up'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : ''}
+${evs.length ? `<h2>${esc(t('Coming up'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : p.closed || /^https?:/.test(p.url || '') ? '' : require('./watch.js').watchBox(X, p)}
 </article>`;
     await render(res, { path: '/programs/' + p.slug, title: p.name, description: p.summary, body, ld: [crumbs(base, [[t('Programs'), '/programs'], [p.name, '/programs/' + p.slug]])] });
   }));

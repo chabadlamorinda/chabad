@@ -37,17 +37,17 @@ function readAnswers(form, body) {
     if (f.type === 'email' && out[f.id] && !validEmail(out[f.id])) errors.push(f.label);
   }
   // Price: perChild x children, plus priced select options and "amountEach" numbers.
-  let amount = 0;
+  let amount = 0, months = 0; // months: a choice paid in monthly payments that stop by themselves
   const p = form.payment;
   if (p) {
     if (p.perChild) amount += p.perChild * kids;
     for (const f of form.fields) {
-      if (f.type === 'select' && out[f.id + '#'] != null) { const o = f.options[out[f.id + '#']]; if (o && o.amount) amount += o.amount * (o.perChild ? Math.max(kids, 1) : 1); }
+      if (f.type === 'select' && out[f.id + '#'] != null) { const o = f.options[out[f.id + '#']]; if (o && o.amount) amount += o.amount * (o.perChild ? Math.max(kids, 1) : 1); if (o && o.months) months = o.months; }
       if (f.type === 'number' && f.amountEach && out[f.id]) amount += f.amountEach * out[f.id] * (f.perChild ? Math.max(kids, 1) : 1);
     }
   }
   for (const k of Object.keys(out)) if (k.endsWith('#')) delete out[k];
-  return { out, errors, amount };
+  return { out, errors, amount, months };
 }
 
 // The form itself, so it can also be shown inside other pages (the Bar Mitzvah parshah finder shows the sign-up).
@@ -111,7 +111,7 @@ ${f.closed ? `<div class="card"><p><strong>${esc(t('Not running this year.'))}</
     if (req.get('x-site') !== '1') return res.status(403).json({ code: 'forbidden', error: 'Forbidden.' });
     if (!f) return res.status(404).json({ code: 'not_found', error: t('Form not found.') });
     if (!pool) return res.status(503).json({ code: 'not_configured', error: t('Sending is not switched on yet. Please call or email us.') });
-    const { out, errors, amount } = readAnswers(f, (req.body && req.body.fields) || {});
+    const { out, errors, amount, months } = readAnswers(f, (req.body && req.body.fields) || {});
     if (errors.length) return res.status(400).json({ code: 'invalid', error: t('Please fill in: {fields}', { fields: errors.map((e) => t(e)).join(', ') }), fields: errors });
     const m = readMember ? await readMember(req) : null, name = clean(out.name || (m && m.name), 100), email = (out.email || (m && m.email) || '').toLowerCase();
     const ef = f.fields.find((x) => x.type === 'email'), phoneOnly = !validEmail(email) && ef && !ef.required && out.phone; // a phone number is enough when the email is optional (someone asking for help)
@@ -126,7 +126,7 @@ ${f.closed ? `<div class="card"><p><strong>${esc(t('Not running this year.'))}</
     // The weekly-email form signs the person up at once (they get a welcome with an unsubscribe link).
     if (f.id === 'newsletter' && signUpNews) Promise.resolve(signUpNews({ email, name, lang: L, source: 'form' })).catch((e) => log.error('newsletter sign-up:', e && e.message));
     else if (mailer && validEmail(email)) mailer.send({ to: email, subject: t('We received it: {title}', { title: f.title }), text: t('Thank you! We received your form and will be in touch soon.') + (own ? `\n\n${lines}` : '') + `\n\n${C.org.name} · ${C.org.phone}` }).catch((e) => log.error('form confirm:', e && e.message));
-    const p = f.payment, pay = p && (amount || p.optional) && amount <= MAX_CARD ? giveUrl(p.fund, amount || 0, `${f.title}: ${name}`) : null;
+    const p = f.payment, pay = p && (amount || p.optional) && amount <= MAX_CARD ? (months > 1 ? giveUrl(p.fund, Math.ceil(amount / months), `${f.title}: ${name}`, months) : giveUrl(p.fund, amount || 0, `${f.title}: ${name}`)) : null;
     res.json({ ok: true, amount, payUrl: pay, tooLarge: amount > MAX_CARD });
   }));
 
@@ -135,7 +135,7 @@ ${f.closed ? `<div class="card"><p><strong>${esc(t('Not running this year.'))}</
     const X = ctxOf(req), { t, C } = X, G = C.giving || {}, money = (n) => '$' + Number(n).toLocaleString('en-US');
     const body = `<section class="wrap sec narrow"><h1>${esc(t('Donate'))}</h1><p class="lead-d">${esc(G.intro || '')}</p>
 <h2>${esc(t('Give online'))}</h2>
-${giveForm(X, { fund: String(req.query.fund || ''), amt: req.query.amt, ded: String(req.query.ded || ''), freq: req.query.freq === 'monthly' ? 'monthly' : 'once', back: '/donate' })}
+${giveForm(X, { fund: String(req.query.fund || ''), amt: req.query.amt, ded: String(req.query.ded || ''), freq: req.query.freq === 'monthly' ? 'monthly' : 'once', n: req.query.n, back: '/donate' })}
 <p class="btns"><a class="btn ghost" href="/chai-club">${esc(t('Give monthly: join the Chai Club'))}</a><a class="btn ghost" href="/sponsor">${esc(t('Sponsor in honor or memory of a loved one'))}</a><a class="btn ghost" href="/sponsor-a-kiddush">${esc(t('Sponsor a Kiddush'))}</a></p>
 <h2>${esc(t('Choose where your gift goes'))}</h2>
 <ul class="fund-list card">${(G.funds || []).map((f) => `<li id="${f.id}"><a href="${esc(f.id === 'chai' ? '/chai-club' : giveUrl(f.id, 0, ''))}"><strong>${esc(f.name)}</strong><span>${esc(f.text)}</span></a></li>`).join('')}</ul>

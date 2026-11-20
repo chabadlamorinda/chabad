@@ -230,6 +230,21 @@
     }, function () {});
   })();
 
+  // "Tell me when there is an event" on a program page with nothing coming up.
+  [].forEach.call(document.querySelectorAll('[data-watch] form'), function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var box = f.parentNode, err = f.querySelector('.msg.err'), btn = f.querySelector('button');
+      var mail = f.elements.email.value.trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail)) { err.textContent = T('Please enter a valid email address.'); err.hidden = false; return; }
+      err.hidden = true; btn.disabled = true;
+      api('POST', '/watch', { topic: box.getAttribute('data-watch'), name: f.elements.name.value.trim(), email: mail, lang: LANG }).then(function (r) {
+        if (r._status !== 200) { err.textContent = r.error || T('Something went wrong. Please try again.'); err.hidden = false; btn.disabled = false; return; }
+        var ok = el('p', { class: 'msg ok', text: r.message || T('Thank you!') }); f.parentNode.replaceChild(ok, f);
+      }, function () { err.textContent = T('Something went wrong. Please try again.'); err.hidden = false; btn.disabled = false; });
+    });
+  });
+
   // Amount chips (tap again to clear) plus "Other amount": value() is the chosen number or 0.
   var amountPicker = function (amounts) {
     var amt = 0, other = el('input', { type: 'number', min: '1', max: '10000', step: '1', inputmode: 'numeric', placeholder: T('Other amount ($)'), 'aria-label': T('Other amount ($)') });
@@ -501,7 +516,7 @@
       var pick = f.querySelector('input[name=amt]:checked'), amount = Number(other && other.value ? other.value : pick ? pick.value : 0);
       if (!(amount >= 1 && amount <= 10000)) return fail(T('Please enter an amount between $1 and $10,000.'), other);
       var freq = f.elements.freq, monthly = (freq && (freq.value || (f.querySelector('input[name=freq]:checked') || {}).value)) === 'monthly';
-      var body = { amount: amount, fund: f.elements.fund.value, freq: monthly ? 'monthly' : 'once', dedication: f.elements.dedication.value, fee: f.elements.fee.checked, lang: LANG, back: f.getAttribute('data-back') || '/donate', idem: 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
+      var body = { installments: monthly && f.elements.n ? Number(f.elements.n.value) : undefined, amount: amount, fund: f.elements.fund.value, freq: monthly ? 'monthly' : 'once', dedication: f.elements.dedication.value, fee: f.elements.fee.checked, lang: LANG, back: f.getAttribute('data-back') || '/donate', idem: 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 14) };
       var dn = (f.elements.donorName ? f.elements.donorName.value : '').trim(), de = (f.elements.donorEmail ? f.elements.donorEmail.value : '').trim();
       // The name and email are needed (the official receipt is sent to them); phone, address and a note are optional.
       if (f.elements.donorName) {

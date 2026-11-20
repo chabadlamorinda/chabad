@@ -1877,5 +1877,9 @@
  "Candy and snacks": "Сладости и снеки",
  "Drinks and wine": "Напитки и вино",
  "Judaica": "Иудаика",
- "Every week at Chabad": "Каждую неделю в Хабаде"
+ "Every week at Chabad": "Каждую неделю в Хабаде",
+ "{n} monthly payments of {amount}. They stop by themselves after the last one.": "{n} ежемесячных платежей по {amount}. После последнего они прекращаются сами.",
+ "Let me know": "Сообщите мне",
+ "Nothing on the calendar yet": "Пока в календаре ничего нет",
+ "Want to hear first? Leave your email and we will let you know as soon as there is a {name} event.": "Хотите узнать первыми? Оставьте эл. почту, и мы сообщим, как только будет мероприятие «{name}»."
 }

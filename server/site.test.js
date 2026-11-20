@@ -617,9 +617,17 @@ test('forms: Hebrew School registration with tuition, camp pricing, chametz auth
   // missing required answers
   const bad = await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Sara' } });
   assert.equal(bad.status, 400); assert.match(bad.json.error, /Email/);
-  const ok = await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Sara Levi', email: 'sara@x.co', phone: '925', emergency: 'David 925', photos: true, children: [{ name: 'Noa', birthday: '2016-01-15', grade: '4' }, { name: 'Eli', grade: '1' }, { name: '' }] } });
+  const kids = [{ name: 'Noa', birthday: '2016-01-15', grade: '4', school: 'Burton Valley' }, { name: 'Eli', grade: '1' }, { name: '' }];
+  assert.equal((await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Sara Levi', email: 'sara@x.co', phone: '925', emergency: 'David 925', pay: 0, children: kids } })).status, 400, 'the permission box is required');
+  const ok = await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Sara Levi', email: 'sara@x.co', phone: '925', emergency: 'David 925', consent: true, photos: true, pay: 0, children: kids } });
   assert.equal(ok.status, 200); assert.equal(ok.json.amount, 1200);
   assert.match(ok.json.payUrl, /^\/donate\?fund=children&amt=1200&ded=.*#give$/);
+  // six monthly payments: $100 a month per child, stopping by themselves
+  const monthly = await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Dan Cohen', email: 'dan@x.co', phone: '925', emergency: 'Ruth 925', consent: true, pay: 1, children: [{ name: 'Avi' }] } });
+  assert.equal(monthly.json.amount, 600); assert.match(monthly.json.payUrl, /amt=100&freq=monthly&n=6/);
+  const dp = (await g.call('GET', monthly.json.payUrl.replace('#give', ''))).text; assert.match(dp, /name="n" value="6"/); assert.match(dp, /6 monthly payments of \$100/);
+  // by check or a talk about a plan: no card payment
+  assert.equal((await g.call('POST', '/api/site/forms/hebrew-school', { fields: { name: 'Lea Kahn', email: 'lea@x.co', phone: '925', emergency: 'Moshe 925', consent: true, pay: 2, children: [{ name: 'Tali' }] } })).json.payUrl, null);
   assert.ok(mails.some((m) => /^We received it: Lamorinda Hebrew School registration/.test(m.subject)));
   const camp = await g.call('POST', '/api/site/forms/summer-camp', { fields: { name: 'A', email: 'a@x.co', phone: '1', plan: 1, weeks: 3, children: [{ name: 'Kid' }] } });
   assert.equal(camp.json.amount, 1500);
@@ -627,9 +635,9 @@ test('forms: Hebrew School registration with tuition, camp pricing, chametz auth
   assert.equal((await g.call('POST', '/api/site/forms/sell-chametz', { fields: { name: 'A', email: 'a@x.co', locations: 'Home', signature: 'A', authorize: true } })).status, 200);
   const a = await admin();
   const list = (await a.call('GET', '/admin/api/site/forms')).json.forms;
-  assert.equal(list.find((f) => f.id === 'hebrew-school').fresh, 1);
-  const items = (await a.call('GET', '/admin/api/site/forms/hebrew-school')).json.items;
-  assert.equal(items[0].data.children.length, 2); assert.equal(items[0].data.photos, true);
+  assert.equal(list.find((f) => f.id === 'hebrew-school').fresh, 3);
+  const items = (await a.call('GET', '/admin/api/site/forms/hebrew-school')).json.items, sara = items.find((i) => i.name === 'Sara Levi');
+  assert.equal(sara.data.children.length, 2); assert.equal(sara.data.photos, true); assert.equal(sara.data.children[0].school, 'Burton Valley');
   // Hebrew form page, answers stored in English
   assert.match((await g.call('GET', '/he/forms/lulav-etrog')).text, /dir="rtl"/);
   await g.call('POST', '/api/site/forms/lulav-etrog', { fields: { name: 'B', email: 'b@x.co', phone: '1', quality: 1, quantity: 2 } }, { 'x-lang': 'he' });
@@ -1636,4 +1644,23 @@ test('the home page has a Bay Kosher area: part of Chabad, what is in the store,
   assert.match(h, /href="https:\/\/shop\.baykosher\.com\/c\/meat"/); assert.match(h, /href="\/programs\/bay-kosher"/);
   assert.match((await client().call('GET', '/he/')).text, /shop\.baykosher\.com\/he\/c\/judaica/);
   assert.match((await client().call('GET', '/programs/bay-kosher')).text, /Bay Kosher is part of Chabad of Lamorinda/);
+});
+
+test('a program with nothing coming up: "let me know" saves the request, tells the Rabbi, and emails each new event once', async () => {
+  const c = client(), progs = server_site().content().programs, evs = server_site().upcoming(new Date(), server_site().content());
+  const quiet = progs.find((p) => !p.closed && !/^https?:/.test(p.url || '') && !evs.some((e) => e.program === p.slug));
+  assert.ok(quiet, 'a program with no events');
+  const page = (await c.call('GET', '/programs/' + quiet.slug)).text; assert.match(page, new RegExp('data-watch="' + quiet.slug + '"'));
+  assert.equal((await c.call('POST', '/api/site/watch', { topic: quiet.slug, email: 'nope' }, { 'x-site': '1' })).status, 400);
+  const ok = await c.call('POST', '/api/site/watch', { topic: quiet.slug, name: 'Rina', email: 'Rina@Example.com', lang: 'en' }, { 'x-site': '1', 'x-age': '30' });
+  assert.equal(ok.status, 200); await new Promise((r) => setTimeout(r, 300));
+  assert.ok(mails.some((m) => /wants to hear about/.test(m.subject)), 'the Rabbi is told');
+  // an event for that program appears: one email, once
+  const C = server_site().content(), ev = { ...evs[0], slug: 'watch-test-event', title: 'Test Gathering', program: quiet.slug, published: true };
+  C.events.push(ev);
+  try {
+    const n0 = mails.length; await server_site().watch.send(); await server_site().watch.send();
+    const got = mails.slice(n0).filter((m) => m.to === 'rina@example.com'); assert.equal(got.length, 1); assert.match(got[0].text, /\/events\/watch-test-event/); assert.match(got[0].text, /\/watch\/stop\?t=[a-f0-9]{36}/);
+  } finally { C.events.pop(); }
+  assert.match((await c.call('GET', '/programs/hebrew-school')).text, /href="#early-childhood-ages-3-5"[\s\S]*id="early-childhood-ages-3-5"/, 'the tracks open their sections');
 });

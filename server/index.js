@@ -414,11 +414,14 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
     const extra = { donor_phone: clean(b.donorPhone, 40), donor_address: clean(b.donorAddress, 200), donor_note: clean(b.donorNote, 300) };
     for (const [k, v] of Object.entries(extra)) if (v) meta[k] = v;
     meta.lang = lang;
+    // A set number of monthly payments (Hebrew School tuition and the like): the plan stops by itself after the last one (stopPlans below).
+    const n = monthly && !club && Number(b.installments) >= 2 && Number(b.installments) <= 12 ? Math.floor(Number(b.installments)) : 0;
+    if (n) { meta.installments = String(n); meta.interval = 'month'; meta.pledge_cents = String(g.cents * n); }
     const session = await stripe.checkout.sessions.create({
       mode: monthly ? 'subscription' : 'payment', locale: lang === 'en' ? 'auto' : lang,
       ...(giver ? { customer_email: giver } : {}), billing_address_collection: 'auto', ...(monthly ? {} : { customer_creation: 'always' }),
       line_items: [{ quantity: 1, price_data: { currency: 'usd', unit_amount: g.total, ...(monthly ? { product: await ensureProduct(g.fund), recurring: { interval: 'month' } } : { product_data: { name } }) } }],
-      ...(monthly ? { subscription_data: { description: 'Monthly gift: ' + FUND_NAMES[g.fund], metadata: meta } } : { submit_type: 'donate', payment_intent_data: { description: name, metadata: meta } }),
+      ...(monthly ? { subscription_data: { description: (n ? n + ' monthly payments: ' : 'Monthly gift: ') + FUND_NAMES[g.fund], metadata: meta } } : { submit_type: 'donate', payment_intent_data: { description: name, metadata: meta } }),
       metadata: meta,
       success_url: base + pre + '/donate/thank-you?session_id={CHECKOUT_SESSION_ID}',
       cancel_url: base + pre + back,
@@ -461,6 +464,29 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
       clubCache = { at: Date.now(), data: { members, counts, total: Object.values(counts).reduce((a, b) => a + b, 0) } };
     }
     return clubCache.data;
+  }
+  // A set number of monthly payments (tuition paid monthly): give each such plan its end date, so it stops by itself after
+  // the last payment. Checked soon after start-up and every hour (a plan's first payment is the day it starts).
+  async function stopPlans() {
+    if (!stripe) return 0;
+    const { lastPaymentEnd } = require('./campaign.js');
+    let after, done = 0;
+    for (let page = 0; page < 50; page++) {
+      const list = await stripe.subscriptions.list({ status: 'active', limit: 100, ...(after ? { starting_after: after } : {}) });
+      for (const sb of list.data) {
+        const m = sb.metadata || {}, n = Number(m.installments);
+        if (m.source !== 'pushka' || m.via !== 'website' || !(n > 1) || sb.cancel_at) continue;
+        try { await stripe.subscriptions.update(sb.id, { cancel_at: lastPaymentEnd(sb.billing_cycle_anchor || sb.created, n, 'month'), proration_behavior: 'none' }); done++; }
+        catch (e) { console.error('could not set the end of a monthly plan', sb.id, e && e.message); }
+      }
+      if (!list.has_more || !list.data.length) break; after = list.data[list.data.length - 1].id;
+    }
+    return done;
+  }
+  app.locals.stopPlans = stopPlans;
+  if (stripe && reminders) { // on the live server only (tests run without background jobs)
+    setTimeout(() => stopPlans().catch((e) => console.error('monthly plans:', e && e.message)), 2 * 60 * 1000).unref();
+    setInterval(() => stopPlans().catch((e) => console.error('monthly plans:', e && e.message)), 60 * 60 * 1000).unref();
   }
   // ---- community counter (anonymous: only totals) and announcements the Rabbi writes in the staff area ----
   const mem = { days: new Map(), ann: [] }, today = () => require('./scheduler.js').ptParts(new Date()).ymd;
