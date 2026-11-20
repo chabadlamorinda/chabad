@@ -14,6 +14,7 @@ const Z = require('./zmanim.js');
 const { withShare } = require('./share.js');
 const { menu: calMenu, weeklyMenu } = require('./addcal.js');
 const { withGuides, friendlyLinks, guidesForDays } = require('./links.js');
+const { formHtml } = require('./forms.js');
 const { withGive } = require('./give.js');
 const { withContact } = require('./leads.js');
 const { parseLocal } = require('./ctx.js');
@@ -218,13 +219,35 @@ ${faqs.length ? `<h2>${esc(t('Questions'))}</h2>${faqHtml(faqs)}` : ''}
 <h1>${esc(p.name)}</h1>${p.audience ? `<p class="eyebrow">${esc(p.audience)}</p>` : ''}<p class="lead-d">${esc(p.summary)}</p>
 ${p.closed ? `<div class="card action-top program-join"><p><strong>${esc(t('Not running this year.'))}</strong> ${esc(t('Call {phone} and we will tell you when registration opens.', { phone: C.org.phone }))}</p></div>` : (() => { // how to join comes first: when it meets, the sign-up form and a way to ask, then the details
   const fm = (C.forms || []).filter((f) => f.program === p.slug), main = fm[0] ? { href: '/forms/' + fm[0].id, label: fm[0].button || t('Sign up') } : p.url ? { href: p.url, label: p.cta || t('Learn more') } : null;
-  return `<div class="card action-top program-join">${p.schedule ? `<p><strong>${esc(t('When:'))}</strong> ${esc(p.schedule)}</p>` : ''}<p class="btns">${fm.map((f, i) => `<a class="btn ${i ? 'ghost' : 'gold'}" href="/forms/${f.id}">${esc(f.button || t('Sign up'))}${fm.length > 1 ? ': ' + esc(f.title) : ''}</a>`).join('')}${p.url && fm.length ? `<a class="btn ghost" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}${!fm.length && p.url ? `<a class="btn gold" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}<a class="btn ghost" href="/contact?about=${encodeURIComponent(p.name)}">${esc(t('Ask about {name}', { name: p.name }))}</a></p>${(C.org.weekly || []).filter((w) => w.link === '/programs/' + p.slug && w.byDay && w.startTime).map((w) => `<p class="addcal-for"><span class="muted small">${esc(w.name)}</span>${weeklyMenu(X, base, w)}</p>`).join('')}</div>
+  return `<div class="card action-top program-join">${p.schedule ? `<p><strong>${esc(t('When:'))}</strong> ${esc(p.schedule)}</p>` : ''}<p class="btns">${fm.map((f, i) => `<a class="btn ${i ? 'ghost' : 'gold'}" href="/forms/${f.id}">${esc(f.button || t('Sign up'))}${fm.length > 1 ? ': ' + esc(f.title) : ''}</a>`).join('')}${p.url && fm.length ? `<a class="btn ghost" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}${!fm.length && p.url ? `<a class="btn gold" href="${esc(p.url)}">${esc(p.cta || t('Learn more'))}</a>` : ''}<a class="btn ghost" href="/contact?about=${encodeURIComponent(p.name)}">${esc(t('Ask about {name}', { name: p.name }))}</a></p>${(C.org.weekly || []).filter((w) => (w.link === '/programs/' + p.slug || w.program === p.slug) && w.byDay && w.startTime).map((w) => `<p class="addcal-for"><span class="muted small">${w.program === p.slug ? `<a href="${esc(w.link)}">${esc(w.day)}: ${esc(w.name)}</a>` : esc(w.name)}</span>${weeklyMenu(X, base, w)}</p>`).join('')}</div>
 ${p.flyer ? `<figure class="prog-flyer"><a href="${esc(p.flyer)}" target="_blank" rel="noopener"><img src="${esc(p.flyer)}" alt="${esc(p.name)}" loading="lazy" decoding="async"></a></figure>` : ''}
 ${md(p.details || '')}
 ${main ? `<p class="btns join-again"><a class="btn gold" href="${esc(main.href)}">${esc(main.label)}</a></p>` : ''}`; })()}
 ${evs.length ? `<h2>${esc(t('Coming up'))}</h2><div class="evs">${evs.map((e) => eventCard(e, cnt, X)).join('')}</div>` : p.closed || /^https?:/.test(p.url || '') ? '' : require('./watch.js').watchBox(X, p)}
 </article>`;
     await render(res, { path: '/programs/' + p.slug, title: p.name, description: p.summary, body, ld: [crumbs(base, [[t('Programs'), '/programs'], [p.name, '/programs/' + p.slug]])] });
+  }));
+
+  // ---------- One weekly class or service (/weekly/morning-services...): what it is, when, where, "you are welcome",
+  // add to calendar, and "Join us" (a short form: the Rabbi is emailed, the person gets a confirmation). ----------
+  r.get(/^\/weekly\/([a-z0-9-]+)$/, wrap(async (req, res, next) => {
+    const X = ctxOf(req), { t, C } = X, o = C.org, w = (o.weekly || []).find((x) => x.id === req.params[0]);
+    if (!w) return next();
+    const where = w.place || `${o.name}, ${fullAddress(o)}`, mapQ = w.place ? '' : fullAddress(o);
+    const jf = (C.forms || []).find((f) => f.id === 'join-weekly');
+    const shabbat = /shabbat/.test(w.id);
+    const body = `<article class="wrap sec narrow weekly-page"><p class="crumbs"><a href="/calendar">${esc(t('Every week at Chabad'))}</a> ›</p>
+<p class="eyebrow hand">${esc(w.day)}</p><h1>${esc(w.title || w.name)}</h1>
+<p class="lead-d">${esc(t('Everyone is welcome. No membership, no experience needed: just come as you are.'))}</p>
+<div class="card action-top weekly-facts"><p><strong>${esc(t('When:'))}</strong> ${esc(w.day)}, ${esc(w.time)}</p>
+<p><strong>${esc(t('Where'))}:</strong> ${esc(where)}${mapQ ? ` · <a href="https://maps.google.com/?q=${encodeURIComponent(mapQ)}" target="_blank" rel="noopener">${esc(t('Map'))}</a>` : ''}</p>
+<p class="btns"><a class="btn gold" href="#join">${esc(t("I'd like to come"))}</a><a class="btn ghost" href="tel:${esc(String(o.phone || '').replace(/[^0-9+]/g, ''))}">${esc(t('Call {phone}', { phone: o.phone }))}</a>${shabbat ? `<a class="btn ghost" href="/shabbat">${esc(t('Everything about Shabbat'))}</a>` : ''}</p>
+${w.byDay && w.startTime ? `<p class="addcal-for">${weeklyMenu(X, base, w)}</p>` : ''}</div>
+${w.image ? `<p><img class="weekly-pic" src="${esc(w.image)}" alt="" decoding="async"></p>` : ''}
+${w.about ? md(w.about) : ''}
+${jf ? `<section id="join"><h2>${esc(jf.title)}</h2><p>${esc(jf.intro)}</p>${formHtml(X, jf, { what: w.name })}</section>` : ''}
+</article>`;
+    await render(res, { path: '/weekly/' + w.id, title: `${w.title || w.name} · ${w.day}`, description: `${w.name}: ${w.day} ${w.time} at ${o.name}, Lafayette. ${t('Everyone is welcome. No membership, no experience needed: just come as you are.')}`.slice(0, 300), body });
   }));
 
   // ---------- Everything Jewish in Lamorinda ----------

@@ -10,6 +10,14 @@ Phone-only upkeep: Rabbi area → Website and app → **Keys and settings** (cha
 Original plan:
 Decision: no monthly fee, and email works there (Render's free plan blocks it). The full step-by-step is `deploy-oracle/MOVE-THE-WHOLE-WEBSITE.md` (create the server, install with one command carrying over the Render settings, copy the database from Neon, switch the address at Cloudflare; Render stays on as the fallback). Automatic updates from GitHub every 5 minutes. Claude walks through it when you say "I'm at a computer"; first you need an Oracle Cloud account (cloud.oracle.com, free, needs a card for identity only).
 
+## Why few people come to the new website (Nov 20) — the most important items now
+Google does not show jewishlamorinda.com yet: every search, the Google Business Profile, J. Weekly, Chabad.org's directory and years of old links still lead to the OLD site, chabadoflamorinda.com, which is still live. The new site is ready for Google (no blocks, sitemap of 4,300 pages, Analytics on). In this order:
+1. **Send the old address to the new site** (the biggest step; every old page already has its new page): tell Claude "switch the old domain". Claude asks the server to accept chabadoflamorinda.com (maintenance action `old-domain`), then you change the DNS of chabadoflamorinda.com to the server (A record 152.70.118.32, wherever the domain is managed; if Chabad.org manages it, ask them to point it there). From then on, every old link and Google result opens the new site.
+2. **Google Business Profile**: website = https://jewishlamorinda.com (the link people tap on Google Maps).
+3. **Google Search Console** → URL inspection → "Request indexing" for the home page, /programs/hebrew-school, /shabbat and /events; check "Pages" for anything not indexed and send Claude a screenshot.
+4. **Bing Webmaster Tools**: "Import from Google Search Console" (Bing feeds ChatGPT and Copilot).
+5. Update the link on Facebook, Instagram, WhatsApp groups, email signature, J. Weekly's resource guide and the Chabad.org directory.
+
 ## Where we are (Nov 16)
 Done: jewishlamorinda.com is connected and live (www jumps to it); Google Search Console verified and the sitemap sent; Google Analytics counting (G-N4642YEZXW). The old site chabadoflamorinda.com is untouched.
 **Next, in this order (each about 5 minutes):**

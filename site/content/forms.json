@@ -1001,5 +1001,48 @@
       { "id": "details", "label": "Tell us about it", "type": "textarea", "required": true },
       { "id": "callme", "label": "Please call me", "type": "checkbox" }
     ]
+  },
+  {
+    "id": "join-weekly",
+    "hidden": true,
+    "noGift": true,
+    "title": "Join us",
+    "intro": "Tell us you are coming, or ask anything. The Rabbi will get back to you, and you will get a confirmation by email.",
+    "button": "Send",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Your name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "label": "Phone (optional)",
+        "type": "tel"
+      },
+      {
+        "id": "what",
+        "label": "Which class or service?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "first",
+        "label": "This is my first time",
+        "type": "checkbox"
+      },
+      {
+        "id": "message",
+        "label": "Anything we should know? (optional)",
+        "type": "textarea"
+      }
+    ]
   }
 ]

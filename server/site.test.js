@@ -1708,3 +1708,16 @@ test('extra emails: sign up for children\'s events (or change it in the email se
     const got = mails.slice(n0).filter((m) => m.to === 'parent@example.com' && /Kids Test Party/.test(m.subject)); assert.equal(got.length, 1); assert.match(got[0].text, /email\/prefs/);
   } finally { C.events.pop(); }
 });
+
+test('every weekly class and service opens its own page: what it is, when, where, you are welcome, add to calendar, and Join us', async () => {
+  const c = client(), home = (await c.call('GET', '/')).text, weekly = server_site().content().org.weekly;
+  for (const w of weekly) {
+    assert.ok(home.includes('href="' + w.link + '"'), 'the home card links ' + w.link);
+    const p = await c.call('GET', w.link); assert.equal(p.status, 200, w.link);
+    if (!/^\/weekly\//.test(w.link)) continue;
+    assert.match(p.text, /Everyone is welcome/); assert.match(p.text, /When:/); assert.match(p.text, /data-form="join-weekly"/);
+    assert.equal((await c.call('GET', '/he' + w.link)).status, 200); assert.equal((await c.call('GET', '/ru' + w.link)).status, 200);
+  }
+  assert.match((await c.call('GET', '/weekly/tanya-hebrew')).text, /Rabbi&#39;s home|Rabbi's home/);
+  assert.equal((await c.call('GET', '/weekly/no-such-class')).status, 404);
+});

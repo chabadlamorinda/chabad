@@ -1122,3 +1122,4 @@ summary { min-height: 40px; display: list-item; }
 .prog-flyer { margin: 20px auto; max-width: 420px; } .prog-flyer img { width: 100%; border-radius: var(--r); box-shadow: var(--shadow); }
 .nl-topics { border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; margin: 8px 0 12px; display: grid; gap: 4px; }
 .nl-topics legend { font-weight: 600; padding: 0 6px; }
+.weekly-pic { width: 100%; border-radius: var(--r); box-shadow: var(--shadow); aspect-ratio: 16 / 9; object-fit: cover; }

@@ -72,13 +72,13 @@
       "day": "Every morning",
       "time": "Sunday 8:00 AM; Monday to Friday 6:30 AM",
       "name": "Morning services (Shacharit), with the Torah reading on Monday and Thursday. Need to say Kaddish? You can.",
-      "link": "/shabbat", "image": "/media/photos/tallit-siddur.jpg"
+      "link": "/weekly/morning-services", "id": "morning-services", "title": "Morning services (Shacharit)", "about": "Start the day with G-d and a warm group: Shacharit, the morning prayers, every morning at Chabad of Lamorinda. On Monday and Thursday the Torah is read. Saying Kaddish for a parent or a loved one? Come, and we will gladly help you say it. Prayer books with English are there to borrow, and someone will always show you the page. Tefillin? Ask, and we will help you put them on.", "image": "/media/photos/tallit-siddur.jpg"
     },
     {
       "day": "Sunday",
       "time": "10:00 AM – 12:00 PM",
       "name": "Lamorinda Hebrew School",
-      "link": "/programs/hebrew-school", "image": "/media/photos/kids-learning.jpg",
+      "link": "/programs/hebrew-school", "id": "hebrew-school", "image": "/media/photos/kids-learning.jpg",
       "byDay": "Sunday",
       "startTime": "10:00",
       "endTime": "12:00"
@@ -87,7 +87,7 @@
       "day": "Sunday",
       "time": "9:00 – 10:00 PM",
       "name": "Weekly Torah class (English)",
-      "link": "/programs/adult-education", "image": "/media/photos/torah-study.jpg",
+      "link": "/weekly/torah-class-english", "id": "torah-class-english", "program": "adult-education", "about": "An hour of Torah in English on Sunday night: the weekly Torah portion, Jewish ideas for real life, and plenty of time for your questions. No background is needed and no Hebrew; just come as you are. A great way to end the weekend and start the week with meaning.", "image": "/media/photos/torah-study.jpg",
       "byDay": "Sunday",
       "startTime": "21:00",
       "endTime": "22:00"
@@ -96,7 +96,7 @@
       "day": "Monday",
       "time": "8:30 PM",
       "name": "Tanya class in Hebrew, with Rebbetzin Tzipora Labkowski",
-      "link": "/programs/adult-education", "image": "/media/photos/seforim-shelf.jpg",
+      "link": "/weekly/tanya-hebrew", "id": "tanya-hebrew", "program": "adult-education", "about": "Rebbetzin Tzipora Labkowski teaches Tanya, the classic book of Chassidic teaching by Rabbi Schneur Zalman of Liadi, in Hebrew, in a warm group at her home in Lafayette. Tanya explains the soul, how to find joy and meaning, and how to grow as a person, one step at a time. Call 925-384-7242 for the address and more details.", "image": "/media/photos/seforim-shelf.jpg",
       "byDay": "Monday",
       "startTime": "20:30",
       "place": "At the Rabbi's home in Lafayette. Call 925-384-7242 for the address and more details."
@@ -105,7 +105,7 @@
       "day": "Tuesday",
       "time": "8:30 – 9:30 PM",
       "name": "Torah class in Hebrew, with a meal",
-      "link": "/programs/adult-education", "image": "/media/photos/torah-scroll.jpg",
+      "link": "/weekly/torah-class-hebrew", "id": "torah-class-hebrew", "program": "adult-education", "about": "A Torah class in Hebrew with a meal: good food, good company and a lesson that speaks to today. Israelis and Hebrew speakers in Lafayette, Moraga and Orinda feel right at home. Come once, and you will want to come back.", "image": "/media/photos/torah-scroll.jpg",
       "byDay": "Tuesday",
       "startTime": "20:30",
       "endTime": "21:30"
@@ -114,7 +114,7 @@
       "day": "Wednesday",
       "time": "1:00 – 2:00 PM",
       "name": "Tanya class (English)",
-      "link": "/programs/adult-education", "image": "/media/photos/hebrew-letters.jpg",
+      "link": "/weekly/tanya-english", "id": "tanya-english", "program": "adult-education", "about": "Tanya in English at midday: the classic book of Chassidic teaching by Rabbi Schneur Zalman of Liadi, explained simply, line by line, with time for discussion. It is about the soul, joy, and how to live with meaning. At the Rabbi's home in Lafayette; call 925-384-7242 for the address.", "image": "/media/photos/hebrew-letters.jpg",
       "byDay": "Wednesday",
       "startTime": "13:00",
       "endTime": "14:00",
@@ -124,7 +124,7 @@
       "day": "Friday",
       "time": "{kabbalat-shabbat}",
       "name": "Kabbalat Shabbat",
-      "link": "/shabbat", "image": "/media/photos/shabbat-table.jpg",
+      "link": "/weekly/kabbalat-shabbat", "id": "kabbalat-shabbat", "about": "Welcome Shabbat with song: Kabbalat Shabbat on Friday evening at Chabad of Lamorinda, timed with candle lighting each week ({kabbalat-shabbat} this week). Joyful singing, a short prayer service and a warm \"Good Shabbos\" for everyone. Prayer books with English are there to borrow. Would you like to stay for a Shabbat dinner with the Rabbi's family? Let us know.", "image": "/media/photos/shabbat-table.jpg",
       "byDay": "Friday",
       "startTime": "17:45",
       "seasonal": true
@@ -133,7 +133,7 @@
       "day": "Saturday",
       "time": "10:00 AM",
       "name": "Shabbat services and Kiddush lunch",
-      "link": "/shabbat", "image": "/media/photos/torah-ark.jpg",
+      "link": "/weekly/shabbat-services", "id": "shabbat-services", "about": "Shabbat morning services from 10 AM to 12 PM: traditional, joyful and easy to follow, with prayer books with English to borrow, the Torah reading, a short talk and a children's program, then a hot Kiddush lunch for everyone. Visitors are offered honors like an aliyah to the Torah. First time? You will be warmly welcomed; just come.", "image": "/media/photos/torah-ark.jpg",
       "byDay": "Saturday",
       "startTime": "10:00",
       "endTime": "12:00"

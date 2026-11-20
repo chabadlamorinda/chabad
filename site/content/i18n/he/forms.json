@@ -998,5 +998,48 @@
       { "id": "details", "label": "ספרו לנו על כך", "type": "textarea", "required": true },
       { "id": "callme", "label": "נא להתקשר אליי", "type": "checkbox" }
     ]
+  },
+  {
+    "id": "join-weekly",
+    "hidden": true,
+    "noGift": true,
+    "title": "הצטרפו אלינו",
+    "intro": "ספרו לנו שאתם מגיעים, או שאלו כל דבר. הרב יחזור אליכם, ותקבלו אישור במייל.",
+    "button": "שליחה",
+    "fields": [
+      {
+        "id": "name",
+        "label": "השם שלכם",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "email",
+        "label": "אימייל",
+        "type": "email",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "label": "טלפון (לא חובה)",
+        "type": "tel"
+      },
+      {
+        "id": "what",
+        "label": "איזה שיעור או תפילה?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "first",
+        "label": "זו הפעם הראשונה שלי",
+        "type": "checkbox"
+      },
+      {
+        "id": "message",
+        "label": "משהו שכדאי שנדע? (לא חובה)",
+        "type": "textarea"
+      }
+    ]
   }
 ]

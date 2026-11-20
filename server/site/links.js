@@ -57,6 +57,11 @@ function guidesForDays(C, cal) {
 }
 // Other pages and the guides that belong with them.
 const PAGES = {
+  // The weekly classes and services (/weekly/...)
+  '/weekly/morning-services': ['shacharit-morning-service', 'kaddish', 'tefillin', 'minyan', 'daily-prayers'],
+  '/weekly/torah-class-english': ['weekly-parsha', 'daily-torah-study', 'chassidus'], '/weekly/torah-class-hebrew': ['weekly-parsha', 'daily-torah-study', 'chassidus'],
+  '/weekly/tanya-hebrew': ['tanya', 'tanya-chapter-one-explained', 'tanya-learning-plan', 'torah-study-for-women'], '/weekly/tanya-english': ['tanya', 'tanya-chapter-one-explained', 'tanya-glossary-for-beginners', 'tanya-learning-plan'],
+  '/weekly/kabbalat-shabbat': ['kabbalat-shabbat', 'shabbat-for-beginners', 'shabbat-guest-guide'], '/weekly/shabbat-services': ['shabbat-morning-services-explained', 'first-time-at-synagogue', 'kiddush', 'shabbat-for-beginners'],
   '/shabbat': ['shabbat-for-beginners', 'shabbat-candles', 'kabbalat-shabbat', 'shabbat-guest-guide', 'havdalah', 'kiddush'],
   '/shabbat-times': ['shabbat-candles', 'shabbat-for-beginners', 'havdalah', 'shabbat-in-winter'], '/kaddish': ['kaddish', 'yahrzeit', 'year-of-mourning', 'yizkor'],
   '/tehillim': ['tehillim', 'talking-to-g-d-in-your-own-words', 'mi-sheberach', 'prayer'], '/donate': ['tzedakah', 'maaser', 'supporting-chabad-of-lamorinda'],

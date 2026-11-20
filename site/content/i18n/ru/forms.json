@@ -998,5 +998,48 @@
       { "id": "details", "label": "Расскажите подробнее", "type": "textarea", "required": true },
       { "id": "callme", "label": "Пожалуйста, позвоните мне", "type": "checkbox" }
     ]
+  },
+  {
+    "id": "join-weekly",
+    "hidden": true,
+    "noGift": true,
+    "title": "Присоединяйтесь",
+    "intro": "Сообщите, что придёте, или задайте любой вопрос. Раввин свяжется с вами, а вы получите подтверждение по эл. почте.",
+    "button": "Отправить",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Ваше имя",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "email",
+        "label": "Эл. почта",
+        "type": "email",
+        "required": true
+      },
+      {
+        "id": "phone",
+        "label": "Телефон (необязательно)",
+        "type": "tel"
+      },
+      {
+        "id": "what",
+        "label": "Какой урок или молитва?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "first",
+        "label": "Я прихожу впервые",
+        "type": "checkbox"
+      },
+      {
+        "id": "message",
+        "label": "Что нам следует знать? (необязательно)",
+        "type": "textarea"
+      }
+    ]
   }
 ]

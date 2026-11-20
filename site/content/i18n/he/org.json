@@ -66,13 +66,13 @@
       "day": "כל בוקר",
       "time": "ראשון 8:00; שני עד שישי 6:30",
       "name": "תפילת שחרית, עם קריאת התורה בימי שני וחמישי. צריכים לומר קדיש? אפשר.",
-      "link": "/shabbat", "image": "/media/photos/tallit-siddur.jpg"
+      "link": "/weekly/morning-services", "id": "morning-services", "title": "תפילת שחרית", "about": "פותחים את היום עם הקב״ה ובחברה חמה: תפילת שחרית בכל בוקר בחב״ד למורינדה. בימי שני וחמישי קוראים בתורה. צריכים לומר קדיש על הורה או אדם יקר? בואו, ונשמח לעזור לכם לומר אותו. יש סידורים עם תרגום לאנגלית, ותמיד מישהו יראה לכם את הדף. תפילין? בקשו, ונעזור לכם להניח.", "image": "/media/photos/tallit-siddur.jpg"
     },
     {
       "day": "יום ראשון",
       "time": "10:00–12:00",
       "name": "תלמוד תורה למורינדה",
-      "link": "/programs/hebrew-school", "image": "/media/photos/kids-learning.jpg",
+      "link": "/programs/hebrew-school", "id": "hebrew-school", "image": "/media/photos/kids-learning.jpg",
       "byDay": "Sunday",
       "startTime": "10:00",
       "endTime": "12:00"
@@ -81,7 +81,7 @@
       "day": "יום ראשון",
       "time": "21:00–22:00",
       "name": "שיעור תורה שבועי (באנגלית)",
-      "link": "/programs/adult-education", "image": "/media/photos/torah-study.jpg",
+      "link": "/weekly/torah-class-english", "id": "torah-class-english", "program": "adult-education", "about": "שעה של תורה באנגלית במוצאי יום ראשון: פרשת השבוע, רעיונות יהודיים לחיים עצמם, והרבה זמן לשאלות שלכם. לא צריך רקע ולא צריך עברית; פשוט בואו כמו שאתם. דרך נהדרת לסיים את סוף השבוע ולהתחיל את השבוע עם משמעות.", "image": "/media/photos/torah-study.jpg",
       "byDay": "Sunday",
       "startTime": "21:00",
       "endTime": "22:00"
@@ -90,14 +90,14 @@
       "day": "יום שני",
       "time": "20:30",
       "name": "שיעור תניא בעברית, עם הרבנית ציפורה לבקובסקי",
-      "link": "/programs/adult-education", "image": "/media/photos/seforim-shelf.jpg",
+      "link": "/weekly/tanya-hebrew", "id": "tanya-hebrew", "program": "adult-education", "about": "הרבנית ציפורה לבקובסקי מלמדת תניא, ספר היסוד של תורת החסידות מאת רבי שניאור זלמן מלאדי, בעברית, בקבוצה חמה בביתה בלאפייט. התניא מסביר את הנשמה, איך למצוא שמחה ומשמעות, ואיך לצמוח כאדם, צעד אחר צעד. התקשרו 925-384-7242 לכתובת ולפרטים נוספים.", "image": "/media/photos/seforim-shelf.jpg",
       "byDay": "Monday", "startTime": "20:30", "place": "בבית הרב בלאפייט. התקשרו 925-384-7242 לכתובת ולפרטים נוספים."
     },
     {
       "day": "יום שלישי",
       "time": "20:30–21:30",
       "name": "שיעור תורה בעברית, עם ארוחה",
-      "link": "/programs/adult-education", "image": "/media/photos/torah-scroll.jpg",
+      "link": "/weekly/torah-class-hebrew", "id": "torah-class-hebrew", "program": "adult-education", "about": "שיעור תורה בעברית עם ארוחה: אוכל טוב, חברה טובה ושיעור שמדבר אל היום. ישראלים ודוברי עברית בלאפייט, מוראגה ואורינדה מרגישים כאן בבית. בואו פעם אחת, ותרצו לחזור.", "image": "/media/photos/torah-scroll.jpg",
       "byDay": "Tuesday",
       "startTime": "20:30",
       "endTime": "21:30"
@@ -106,7 +106,7 @@
       "day": "יום רביעי",
       "time": "13:00–14:00",
       "name": "שיעור תניא (באנגלית)",
-      "link": "/programs/adult-education", "image": "/media/photos/hebrew-letters.jpg",
+      "link": "/weekly/tanya-english", "id": "tanya-english", "program": "adult-education", "about": "תניא באנגלית בצהריים: ספר היסוד של תורת החסידות מאת רבי שניאור זלמן מלאדי, מוסבר בפשטות, שורה אחר שורה, עם זמן לדיון. הוא עוסק בנשמה, בשמחה ובחיים עם משמעות. בבית הרב בלאפייט; התקשרו 925-384-7242 לכתובת.", "image": "/media/photos/hebrew-letters.jpg",
       "byDay": "Wednesday",
       "startTime": "13:00",
       "endTime": "14:00",
@@ -116,7 +116,7 @@
       "day": "יום שישי",
       "time": "{kabbalat-shabbat}",
       "name": "קבלת שבת",
-      "link": "/shabbat", "image": "/media/photos/shabbat-table.jpg",
+      "link": "/weekly/kabbalat-shabbat", "id": "kabbalat-shabbat", "about": "מקבלים את השבת בשירה: קבלת שבת ביום שישי בערב בחב״ד למורינדה, לפי זמן הדלקת הנרות בכל שבוע ({kabbalat-shabbat} השבוע). שירה שמחה, תפילה קצרה ו״גוט שבת״ חם לכולם. יש סידורים עם תרגום לאנגלית. רוצים להישאר לארוחת שבת עם משפחת הרב? ספרו לנו.", "image": "/media/photos/shabbat-table.jpg",
       "byDay": "Friday",
       "startTime": "17:45"
     },
@@ -124,7 +124,7 @@
       "day": "שבת",
       "time": "10:00",
       "name": "תפילות שבת וקידוש עם ארוחת צהריים",
-      "link": "/shabbat", "image": "/media/photos/torah-ark.jpg",
+      "link": "/weekly/shabbat-services", "id": "shabbat-services", "about": "תפילת שבת בבוקר מ־10:00 עד 12:00: מסורתית, שמחה וקלה למעקב, עם סידורים עם תרגום לאנגלית, קריאת התורה, דבר תורה קצר ותוכנית לילדים, ואחר כך קידוש עם ארוחה חמה לכולם. אורחים מוזמנים לכבודים כמו עלייה לתורה. פעם ראשונה? תתקבלו בחום; פשוט בואו.", "image": "/media/photos/torah-ark.jpg",
       "byDay": "Saturday",
       "startTime": "10:00",
       "endTime": "12:00"

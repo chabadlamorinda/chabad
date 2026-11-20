@@ -101,7 +101,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
   app.use((req, res, next) => { if (!/^\/(?:pushka|kiddush|board|admin|api)(?:\/|$)/.test(req.path)) res.setHeader('Content-Security-Policy', csp); next(); });
 
   // Extra domains (jewishlamorinda.org...) forward to the main address, keeping the page.
-  const forward = new Set(String(env.FORWARD_DOMAINS || 'jewishlamorinda.org').split(',').map((d) => d.trim().toLowerCase().replace(/^www\./, '')).filter(Boolean));
+  // The old address chabadoflamorinda.com always forwards too (once its DNS points here), so old links and Google results land on the new pages.
+  const forward = new Set([...String(env.FORWARD_DOMAINS || 'jewishlamorinda.org').split(','), 'chabadoflamorinda.com'].map((d) => d.trim().toLowerCase().replace(/^www\./, '')).filter(Boolean));
   forward.delete(host);
   app.use((req, res, next) => (forward.has(String(req.hostname || '').toLowerCase().replace(/^www\./, '')) ? res.redirect(301, base + req.originalUrl) : next()));
   // www.jewishlamorinda.com is the same page twice for Google (and a duplicate in its index): send it to the main address, keeping the page.

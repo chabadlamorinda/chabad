@@ -2,7 +2,7 @@
 # Maintenance requests: "ask Claude in chat, the server does it by itself". Claude adds a line to
 # deploy-oracle/maintenance/requests.txt (id, then one action from the fixed list below) and pushes it to GitHub; within
 # about 5 minutes auto-update.sh gets it and calls this script, which runs every request that has not run yet, once.
-# (Actions: status-report, apps-report, update-apps, faster-updates, update-report, disk-report, restart-site, restart-caddy, update-os, backup-now, clean-disk, reboot.)
+# (Actions: status-report, apps-report, update-apps, faster-updates, update-report, disk-report, restart-site, restart-caddy, old-domain, update-os, backup-now, clean-disk, reboot.)
 # Only the actions listed here can run (no free-form commands). What happened is written to /var/log/website-maintenance.log,
 # which the Rabbi area shows under "Keys and settings" -> "Server care".
 #   Run by hand:  sudo bash /opt/website-src/deploy-oracle/maintenance.sh
@@ -28,6 +28,11 @@ do_action() {
     disk-report) { run df -h /; run du -sh /var/backups/kiddush /var/log /opt/kiddush; } ;;
     restart-site) run systemctl restart kiddush && echo "the website was restarted" ;;
     restart-caddy) run systemctl restart caddy && echo "the web server (https) was restarted" ;;
+    old-domain) { # serve chabadoflamorinda.com too (the website forwards it to jewishlamorinda.com, old addresses to their new pages)
+      if grep -q 'chabadoflamorinda.com' /etc/caddy/Caddyfile 2>/dev/null; then echo "chabadoflamorinda.com is already set up on the web server";
+      elif [ -n "$DRY" ]; then echo "would add chabadoflamorinda.com and www.chabadoflamorinda.com to /etc/caddy/Caddyfile and reload caddy";
+      else cp /etc/caddy/Caddyfile /etc/caddy/Caddyfile.bak && printf '\nchabadoflamorinda.com, www.chabadoflamorinda.com {\n\tencode gzip\n\treverse_proxy 127.0.0.1:3000\n}\n' >> /etc/caddy/Caddyfile \
+        && if caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile >/dev/null 2>&1; then systemctl reload caddy && echo "chabadoflamorinda.com added: once its DNS points to this server, it opens the new website (https comes by itself within minutes)"; else cp /etc/caddy/Caddyfile.bak /etc/caddy/Caddyfile; echo "could not add chabadoflamorinda.com (the web server settings were put back as they were)"; fi; fi; } ;;
     update-os) { run env DEBIAN_FRONTEND=noninteractive apt-get update -y; run env DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::=--force-confold upgrade; echo "system updates installed (a restart of the server may still be needed: ask for 'reboot')"; } ;;
     backup-now) { run mkdir -p /var/backups/kiddush; if [ -n "$DRY" ]; then echo "would run: pg_dump into /var/backups/kiddush"; else sudo -u postgres pg_dump -Fc kiddush > "/var/backups/kiddush/manual-$(date +%F-%H%M).dump" && echo "backup saved in /var/backups/kiddush"; fi; } ;;
     clean-disk) { run apt-get clean; run journalctl --vacuum-time=14d; run find /var/backups/kiddush -name '*.dump' -mtime +30 -delete; echo "old logs, package files and backups older than 30 days were cleared"; } ;;
