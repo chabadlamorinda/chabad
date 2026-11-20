@@ -2,7 +2,7 @@
 title: "Girls Lighting Shabbat Candles: Why Chabad Girls Light From Age Three"
 description: "Should girls light Shabbat candles? Chabad girls light one candle from about age three, a custom the Rebbe encouraged in 1974. How to start."
 category: Jewish home
-related: shabbat-candles, bat-mitzvah, chinuch, after-the-bar-mitzvah, meaningful-bar-bat-mitzvah-celebration
+related: shabbat-candles, bat-mitzvah-ideas, bat-mitzvah, chinuch, after-the-bar-mitzvah, meaningful-bar-bat-mitzvah-celebration
 local: Start a Friday-night tradition with your daughter. Call Rebbetzin Tzipora Labkowski or Rabbi Labkowski at 925-384-7242.
 ---
 Yes. In Chabad custom, a Jewish girl lights her own Shabbat candle from about age three, once she can understand Shabbat and say the blessing, and she lights one candle until she marries. In 1974 the Lubavitcher Rebbe encouraged all Jewish girls to take up this mitzvah, with their parents' consent.

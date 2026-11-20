@@ -2,7 +2,7 @@
 title: "What Changes After a Bar or Bat Mitzvah? Mitzvot, Responsibility and Staying Connected"
 description: "What changes after a Bar or Bat Mitzvah: tefillin, minyan, fasting, Shabbat candles and growing Jewishly. A guide for teens and parents in Lamorinda."
 category: Life cycle
-related: jewish-teens-in-lamorinda, bar-mitzvah, bat-mitzvah, girls-lighting-shabbat-candles, starting-tefillin-before-bar-mitzvah
+related: jewish-teens-in-lamorinda, teen-bar-bat-mitzvah-not-too-late, bar-mitzvah, bat-mitzvah, girls-lighting-shabbat-candles, starting-tefillin-before-bar-mitzvah
 local: Keep the connection going after the celebration. Call Rabbi Labkowski at 925-384-7242 or see /programs/kids-and-teens.
 ---
 After a Bar or Bat Mitzvah, a Jewish teen is responsible for keeping the mitzvot: a boy counts toward a minyan and wears tefillin on weekday mornings, a girl lights Shabbat candles and takes on her own mitzvot, and both are accountable for Shabbat, fasting and their daily choices. This is the start of an active Jewish life, not a graduation from it.

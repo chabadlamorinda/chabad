@@ -2,7 +2,7 @@
 title: "מתי הבר או הבת מצווה של הילד? איך מוצאים את התאריך העברי"
 description: "מצאו את תאריך הבר או הבת מצווה: 13 לבן ו-12 לבת, לפי הלוח העברי. נולד בלילה או באדר? שאלו את חב״ד למורינדה."
 category: Life cycle
-related: bar-bat-mitzvah-timeline, hebrew-birthday, bar-mitzvah-parsha, jewish-leap-year-and-calendar, starting-tefillin-before-bar-mitzvah
+related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-questions-parents-ask, hebrew-birthday, bar-mitzvah-parsha, jewish-leap-year-and-calendar, starting-tefillin-before-bar-mitzvah
 local: לא בטוחים בתאריך? התקשרו לרב לבקובסקי 925-384-7242 ונברר יחד, או שמרו את יום ההולדת העברי של הילד בחשבון שלכם ב-/account.
 ---
 בר המצווה של בן חל ביום הולדתו ה-13 העברי, ובת המצווה של בת ביום הולדתה ה-12, לפי הלוח היהודי ולא הלועזי. מכיוון ששני הלוחות נבדלים זה מזה, התאריך חל בדרך כלל כמה שבועות לפני או אחרי יום ההולדת הלועזי, ולפעמים אפילו בחודש אחר.

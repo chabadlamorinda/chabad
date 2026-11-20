@@ -2,10 +2,14 @@
 title: Бат-мицва: что это значит и как отметить ее в 12 лет
 description: Что такое бат-мицва, почему еврейские девочки становятся взрослыми в 12 лет и как со смыслом подготовиться и отпраздновать.
 category: Life cycle
-related: bar-mitzvah, tzedakah-at-a-bar-mitzvah, girls-lighting-shabbat-candles, after-the-bar-mitzvah, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah-projects, jewish-women, shabbat-candles, challah
+related: bar-mitzvah, bat-mitzvah-ideas, tzedakah-at-a-bar-mitzvah, girls-lighting-shabbat-candles, after-the-bar-mitzvah, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah-projects, jewish-women, shabbat-candles, challah
 local: Хабад Ламоринды помогает девочкам подготовиться к бат-мицве, наполненной смыслом. Позвоните раввину Лабковскому или ребецн Ципоре Лабковской по номеру 925-384-7242 или загляните на страницу нашей программы бат-мицвы.
 ---
 Бат-мицва - это момент, когда еврейской девочке исполняется 12 лет и она становится ответственной за исполнение мицвот (заповедей). Это происходит само собой в день ее 12-летия по еврейскому календарю; праздник отмечает это событие, но она становится бат-мицвой и без него.
+
+## Проще, чем кажется
+
+Подготовка к бат-мицве в Хабаде Ламоринды - это просто. Ваша дочь учится в своем темпе с ребецн и раввином и занимается в клубе бат-мицвы, а мы ведем вас шаг за шагом и берем на себя все детали. Не нужны ни иврит, ни предварительная подготовка, ни членство. Рады каждой еврейской семье, каким бы ни было ваше происхождение, течение или уровень соблюдения, и при любом бюджете. Семьи из Лафайетта, Мораги и Оринды могут просто позвонить: 925-384-7242. Идеи для ее праздника - в статье [Идеи для бат-мицвы](/learn/bat-mitzvah-ideas).
 
 ## Что означает «бат-мицва»?
 

@@ -2,7 +2,7 @@
 title: "הכנה לבר או בת מצווה בלי שנים של בית ספר עברי"
 description: "מתחילים מאוחר או בלי בית ספר עברי? אפשר עדיין להכין בר או בת מצווה משמעותיים. תוכנית רגועה למשפחות בלמורינדה. התקשרו לחב״ד."
 category: Life cycle
-related: starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-timeline, hebrew-reading-for-adults, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date
+related: starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-made-simple, bar-bat-mitzvah-timeline, hebrew-reading-for-adults, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date
 local: להתחיל מאוחר זה בסדר. התקשרו לרב לבקובסקי 925-384-7242 כדי להתחיל, או ראו את תוכנית בר ובת מצווה ב-/programs/bar-bat-mitzvah.
 ---
 כן, ילד עם מעט או בלי בית ספר עברי יכול לחגוג בר או בת מצווה משמעותיים. ילד נעשה בר או בת מצווה ביום ההולדת העברי בין אם ההכנה הייתה ארוכה ובין אם לא, ואת העיקר, קבלת מצוות, לימוד הברכות ודברי תורה קצרים, אפשר ללמוד בתוך חודשים ספורים, בקצב של הילד.

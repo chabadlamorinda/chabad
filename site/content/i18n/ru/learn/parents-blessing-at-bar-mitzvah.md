@@ -2,7 +2,7 @@
 title: "Барух шепатарани: благословение отца на бар-мицве и момент родителей"
 description: "Что такое «Барух шепатарани»? Короткое благословение отца при алие сына на бар-мицве, его смысл и способы родителям благословить ребёнка."
 category: Life cycle
-related: bar-mitzvah-speech, blessing-your-children, bar-mitzvah, grandparents-at-a-bar-mitzvah, after-the-bar-mitzvah
+related: bar-mitzvah-speech, bar-mitzvah-first-tefillin-and-aliyah, blessing-your-children, bar-mitzvah, grandparents-at-a-bar-mitzvah, after-the-bar-mitzvah
 local: Хотите спланировать алию и благословение? Позвоните раву Лабковскому, 925-384-7242, или смотрите /programs/bar-bat-mitzvah.
 ---
 «Барух шепатарани» - это благословение в одну строку, которое отец произносит, когда его сына вызывают к Торе на бар-мицве. Оно означает: «Благословен Тот, Кто освободил меня от наказания за этого», и отмечает момент, когда отец больше не отвечает за заповеди сына, потому что мальчик теперь отвечает за себя сам.

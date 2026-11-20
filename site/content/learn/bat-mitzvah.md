@@ -2,10 +2,14 @@
 title: Bat Mitzvah: What It Means and How to Celebrate at 12
 description: What a bat mitzvah is, why Jewish girls come of age at 12, and meaningful ways to prepare and celebrate.
 category: Life cycle
-related: bar-mitzvah, tzedakah-at-a-bar-mitzvah, girls-lighting-shabbat-candles, after-the-bar-mitzvah, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah-projects, jewish-women, shabbat-candles, challah
+related: bar-mitzvah, bat-mitzvah-ideas, tzedakah-at-a-bar-mitzvah, girls-lighting-shabbat-candles, after-the-bar-mitzvah, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah-projects, jewish-women, shabbat-candles, challah
 local: Chabad of Lamorinda helps girls prepare for a meaningful, personal bat mitzvah. Call Rabbi Labkowski or Rebbetzin Tzipora Labkowski at 925-384-7242 or visit our bat mitzvah program page.
 ---
 A bat mitzvah is the moment a Jewish girl turns 12 and becomes responsible for keeping the mitzvot (commandments). It happens automatically on her 12th Hebrew birthday; a celebration honors this milestone, but she becomes a bat mitzvah with or without one.
+
+## Easier than you think
+
+Preparing for a bat mitzvah at Chabad of Lamorinda is straightforward. Your daughter learns at her own pace with the Rebbetzin and the Rabbi and joins the Bat Mitzvah Club, and we guide you step by step and take care of the details. No Hebrew, no prior background and no membership are needed. Every Jewish family is welcome, whatever your background, affiliation or level of observance, and whatever your budget. Families in Lafayette, Moraga and Orinda can simply call 925-384-7242. Ideas for her day are in [Bat Mitzvah ideas](/learn/bat-mitzvah-ideas).
 
 ## What does bat mitzvah mean?
 

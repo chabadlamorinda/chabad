@@ -2,10 +2,14 @@
 title: Bar Mitzvah: What It Means and How to Prepare
 description: What a bar mitzvah is, why it happens at 13, how to prepare, and what takes place at the ceremony and celebration.
 category: Life cycle
-related: tefillin, tzedakah-at-a-bar-mitzvah, after-the-bar-mitzvah, parents-blessing-at-bar-mitzvah, starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-on-a-budget, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
+related: tefillin, bar-bat-mitzvah-questions-parents-ask, tzedakah-at-a-bar-mitzvah, after-the-bar-mitzvah, parents-blessing-at-bar-mitzvah, starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-on-a-budget, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
 local: Chabad of Lamorinda offers warm, personalized bar mitzvah preparation for every family. Call Rabbi Labkowski at 925-384-7242 or visit our bar mitzvah program page to get started.
 ---
 A bar mitzvah is the moment a Jewish boy turns 13 and becomes responsible for keeping the mitzvot (commandments) of the Torah. It happens automatically on his 13th Hebrew birthday; the ceremony and party celebrate this milestone, but he becomes a bar mitzvah whether or not there is an event.
+
+## Easier than you think
+
+Preparing for a bar mitzvah at Chabad of Lamorinda is straightforward. The Rabbi guides your son step by step, at his own pace, and we take care of the details. No Hebrew, no prior background and no membership are needed. Every Jewish family is welcome, whatever your background, affiliation or level of observance, and whatever your budget. Families in Lafayette, Moraga and Orinda can simply call the Rabbi at 925-384-7242. See [Bar and Bat Mitzvah made simple](/learn/bar-bat-mitzvah-made-simple).
 
 ## What does bar mitzvah mean?
 

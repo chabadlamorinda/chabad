@@ -2,10 +2,14 @@
 title: Бар-мицва: что это значит и как подготовиться
 description: Что такое бар-мицва, почему она наступает в 13 лет, как к ней подготовиться и что происходит на церемонии и празднике.
 category: Life cycle
-related: tefillin, tzedakah-at-a-bar-mitzvah, after-the-bar-mitzvah, parents-blessing-at-bar-mitzvah, starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-on-a-budget, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
+related: tefillin, bar-bat-mitzvah-questions-parents-ask, tzedakah-at-a-bar-mitzvah, after-the-bar-mitzvah, parents-blessing-at-bar-mitzvah, starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-on-a-budget, special-needs-bar-bat-mitzvah, adult-bar-bat-mitzvah, attending-a-bar-bat-mitzvah, bar-bat-mitzvah-timeline, life-events-in-lamorinda, bar-mitzvah-speech, bat-mitzvah, torah, hebrew-names
 local: Хабад Ламоринды предлагает теплую, индивидуальную подготовку к бар-мицве для каждой семьи. Позвоните раввину Лабковскому по номеру 925-384-7242 или загляните на страницу нашей программы бар-мицвы.
 ---
 Бар-мицва - это момент, когда еврейскому мальчику исполняется 13 лет и он становится ответственным за исполнение мицвот (заповедей) Торы. Это происходит само собой в день его 13-летия по еврейскому календарю; церемония и праздник отмечают это событие, но он становится бар-мицвой независимо от того, устраивают праздник или нет.
+
+## Проще, чем кажется
+
+Подготовка к бар-мицве в Хабаде Ламоринды - это просто. Раввин ведет вашего сына шаг за шагом, в его собственном темпе, а все детали мы берем на себя. Не нужны ни иврит, ни предварительная подготовка, ни членство. Рады каждой еврейской семье, каким бы ни было ваше происхождение, течение или уровень соблюдения, и при любом бюджете. Семьи из Лафайетта, Мораги и Оринды могут просто позвонить раввину: 925-384-7242. Подробнее - в статье [Бар- и бат-мицва - это просто](/learn/bar-bat-mitzvah-made-simple).
 
 ## Что означает «бар-мицва»?
 

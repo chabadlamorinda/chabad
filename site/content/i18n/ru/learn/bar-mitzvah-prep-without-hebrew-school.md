@@ -2,7 +2,7 @@
 title: "Подготовка к бар или бат-мицве без многих лет еврейской школы"
 description: "Начинаете поздно или без еврейской школы? Можно подготовить содержательную бар или бат-мицву. Спокойный план для семей Ламоринды. Позвоните в Хабад."
 category: Life cycle
-related: starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-timeline, hebrew-reading-for-adults, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date
+related: starting-tefillin-before-bar-mitzvah, bar-bat-mitzvah-made-simple, bar-bat-mitzvah-timeline, hebrew-reading-for-adults, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date
 local: Начать поздно - это нормально. Позвоните раву Лабковскому, 925-384-7242, или смотрите программу бар и бат-мицвы на /programs/bar-bat-mitzvah.
 ---
 Да, ребёнок с небольшим опытом еврейской школы или совсем без него может отметить содержательную бар или бат-мицву. Ребёнок становится бар или бат-мицвой в еврейский день рождения, долгой ли была подготовка или нет, а главное - принятие заповедей, благословения и несколько слов Торы - можно выучить за несколько месяцев в темпе ребёнка.

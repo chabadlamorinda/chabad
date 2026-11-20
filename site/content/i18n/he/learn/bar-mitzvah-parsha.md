@@ -2,7 +2,7 @@
 title: תאריך הבר או הבת מצווה והפרשה: איך מוצאים את שלכם
 description: איך מוצאים את תאריך הבר או הבת מצווה ואת הפרשה לפי יום ההולדת העברי, כולל לידה אחרי שקיעה ושנים מעוברות. עזרה בלפייט.
 category: Life cycle
-related: bar-bat-mitzvah-timeline, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date, hebrew-birthday, bar-mitzvah-speech, adult-bar-bat-mitzvah, jewish-leap-year-and-calendar
+related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-questions-parents-ask, learning-to-chant-the-torah, bar-mitzvah-hebrew-birthday-date, hebrew-birthday, bar-mitzvah-speech, adult-bar-bat-mitzvah, jewish-leap-year-and-calendar
 local: לא בטוחים בתאריך או בפרשה? הירשמו דרך /forms/bar-bat-mitzvah או התקשרו לרב לבקובסקי 925-384-7242, ושמרו את תאריכי הילדים ב-/account.
 ---
 תאריך הבר מצווה של בן הוא יום ההולדת העברי ה-13 שלו, ותאריך הבת מצווה של בת הוא יום ההולדת העברי ה-12 שלה, לפי הלוח העברי ולא האזרחי. הפרשה שלו או שלה היא זו הנקראת בשבת של אותו שבוע. מכיוון שהלוח העברי מבוסס על הירח, התאריך נע בלוח האזרחי, ולכן צריך לבדוק.

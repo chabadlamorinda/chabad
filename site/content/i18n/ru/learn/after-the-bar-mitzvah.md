@@ -2,7 +2,7 @@
 title: "Что меняется после бар или бат-мицвы? Заповеди, ответственность и связь с общиной"
 description: "Что меняется после бар или бат-мицвы: тфилин, миньян, пост, субботние свечи и рост в иудаизме. Руководство для подростков и родителей в Ламоринде."
 category: Life cycle
-related: jewish-teens-in-lamorinda, bar-mitzvah, bat-mitzvah, girls-lighting-shabbat-candles, starting-tefillin-before-bar-mitzvah
+related: jewish-teens-in-lamorinda, teen-bar-bat-mitzvah-not-too-late, bar-mitzvah, bat-mitzvah, girls-lighting-shabbat-candles, starting-tefillin-before-bar-mitzvah
 local: Сохраните связь и после праздника. Позвоните раву Лабковскому, 925-384-7242, или смотрите /programs/kids-and-teens.
 ---
 После бар или бат-мицвы еврейский подросток отвечает за соблюдение заповедей: мальчик считается в миньяне и накладывает тфилин по будням, девочка зажигает субботние свечи и берёт на себя свои заповеди, а оба отвечают за Шаббат, пост и повседневный выбор. Это начало активной еврейской жизни, а не её окончание.

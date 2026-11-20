@@ -2,7 +2,7 @@
 title: "Начало тфилин до бар-мицвы: когда, как и первый раз"
 description: "Когда мальчик начинает накладывать тфилин до бар-мицвы? По обычаю Хабада за два месяца. Как начать и тренироваться. Спросите нас."
 category: Life cycle
-related: bar-mitzvah-prep-without-hebrew-school, buying-tefillin, tefillin, parents-blessing-at-bar-mitzvah, checking-mezuzahs-and-tefillin
+related: bar-mitzvah-prep-without-hebrew-school, bar-mitzvah-first-tefillin-and-aliyah, buying-tefillin, tefillin, parents-blessing-at-bar-mitzvah, checking-mezuzahs-and-tefillin
 local: Мы поможем вашему сыну начать и проверим его тфилин. Запросите помощь на /forms/mezuzah-tefillin или позвоните раву Лабковскому, 925-384-7242.
 ---
 По обычаю Хабада, мальчик начинает накладывать тфилин примерно за два месяца до бар-мицвы: сначала без благословения, а через несколько недель с ним. Так у него есть время спокойно научиться, и к 13-му еврейскому дню рождения это уже привычно.

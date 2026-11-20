@@ -2,7 +2,7 @@
 title: "התחלת תפילין לפני הבר מצווה: מתי, איך והפעם הראשונה"
 description: "מתי מתחיל בן להניח תפילין לפני הבר מצווה? מנהג חב״ד: כחודשיים קודם. איך מתחילים, מתרגלים ומתכוננים. שאלו אותנו."
 category: Life cycle
-related: bar-mitzvah-prep-without-hebrew-school, buying-tefillin, tefillin, parents-blessing-at-bar-mitzvah, checking-mezuzahs-and-tefillin
+related: bar-mitzvah-prep-without-hebrew-school, bar-mitzvah-first-tefillin-and-aliyah, buying-tefillin, tefillin, parents-blessing-at-bar-mitzvah, checking-mezuzahs-and-tefillin
 local: נעזור לבנכם להתחיל ונבדוק את התפילין שלו. בקשו עזרה ב-/forms/mezuzah-tefillin או התקשרו לרב לבקובסקי 925-384-7242.
 ---
 לפי מנהג חב״ד, הבן מתחיל להניח תפילין כחודשיים לפני הבר מצווה, תחילה בלי ברכה ואחרי כמה שבועות עם ברכה. כך יש לו זמן ללמוד בנחת, ועד יום הולדתו ה-13 העברי זה כבר מרגיש שלו.

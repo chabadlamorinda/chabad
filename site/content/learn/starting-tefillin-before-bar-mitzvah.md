@@ -2,7 +2,7 @@
 title: "Starting Tefillin Before the Bar Mitzvah: When, How and the First Time"
 description: "When does a boy start tefillin before his Bar Mitzvah? Chabad custom is about two months ahead. How to begin, practice and prepare. Ask us."
 category: Life cycle
-related: bar-mitzvah-prep-without-hebrew-school, buying-tefillin, tefillin, parents-blessing-at-bar-mitzvah, checking-mezuzahs-and-tefillin
+related: bar-mitzvah-prep-without-hebrew-school, bar-mitzvah-first-tefillin-and-aliyah, buying-tefillin, tefillin, parents-blessing-at-bar-mitzvah, checking-mezuzahs-and-tefillin
 local: We will help your son begin and check his tefillin. Request help at /forms/mezuzah-tefillin or call Rabbi Labkowski at 925-384-7242.
 ---
 In Chabad custom, a boy begins putting on tefillin about two months before his Bar Mitzvah, first without the blessing and then, a few weeks later, with it. This gives him time to learn it calmly, so that by his 13th Hebrew birthday it already feels like his own.

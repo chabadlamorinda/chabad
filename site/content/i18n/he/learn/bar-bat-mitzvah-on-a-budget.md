@@ -2,7 +2,7 @@
 title: בר או בת מצווה משמעותית בתקציב צנוע: מה באמת חשוב
 description: מה בר או בת מצווה באמת דורשים ודרכים פשוטות ומשמעותיות לחגוג. חב"ד לאמורינדה מקבלת כל משפחה, בלי חברות.
 category: Life cycle
-related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-invitation-wording, bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, jewish-wedding-on-a-budget
+related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-for-every-family, bar-bat-mitzvah-invitation-wording, bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, jewish-wedding-on-a-budget
 local: מתכננים בר או בת מצווה פשוטה ומשמעותית? התקשרו לרב ישראל לבקובסקי, 925-384-7242, או התחילו ב-/programs/bar-bat-mitzvah.
 ---
 בר או בת מצווה אינם דורשים מסיבה גדולה: ילד יהודי נעשה בר מצווה בגיל 13 וילדה בת מצווה בגיל 12 באופן אוטומטי, עם חגיגה או בלעדיה. מה שחשוב הוא קבלת המצוות. במילים פשוטות: הטקס חשוב הרבה יותר מהמסיבה.

@@ -2,7 +2,7 @@
 title: A Meaningful Bar or Bat Mitzvah on a Budget: What Matters Most
 description: What a bar or bat mitzvah truly requires and simple, meaningful ways to celebrate. Chabad of Lamorinda welcomes every family, no membership needed.
 category: Life cycle
-related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-invitation-wording, bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, jewish-wedding-on-a-budget
+related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-for-every-family, bar-bat-mitzvah-invitation-wording, bar-mitzvah, bat-mitzvah, bar-bat-mitzvah-in-lamorinda, jewish-wedding-on-a-budget
 local: Planning a simple, meaningful bar or bat mitzvah? Call Rabbi Yisroel Labkowski at 925-384-7242, or start at /programs/bar-bat-mitzvah.
 ---
 A bar or bat mitzvah does not need a big party: a Jewish boy becomes bar mitzvah at 13 and a girl becomes bat mitzvah at 12 automatically, whether or not any celebration is held. What matters is the child taking on the mitzvot. Put simply: the ceremony is much more important than the party.

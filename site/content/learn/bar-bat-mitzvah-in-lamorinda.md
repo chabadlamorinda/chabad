@@ -2,10 +2,14 @@
 title: Bar and Bat Mitzvah in Lafayette, Moraga and Orinda: Lessons, Dates and Planning
 description: Plan a bar or bat mitzvah in Lafayette, Moraga or Orinda: personal lessons, tefillin, Torah reading and the Bat Mitzvah Club at Chabad of Lamorinda.
 category: Lamorinda
-related: bar-mitzvah, bar-mitzvah-prep-without-hebrew-school, meaningful-bar-bat-mitzvah-celebration, bar-bat-mitzvah-on-a-budget, kosher-catering-for-a-simcha-in-lamorinda, bar-mitzvah-in-israel, special-needs-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah, tefillin, aliyah
+related: bar-mitzvah, bar-bat-mitzvah-made-simple, bar-mitzvah-prep-without-hebrew-school, meaningful-bar-bat-mitzvah-celebration, bar-bat-mitzvah-on-a-budget, kosher-catering-for-a-simcha-in-lamorinda, bar-mitzvah-in-israel, special-needs-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah, tefillin, aliyah
 local: Start planning at chabadoflamorinda.com/forms/bar-bat-mitzvah or call the Rabbi at 925-384-7242.
 ---
 A bar or bat mitzvah is a milestone your child will carry for life. For families in Lafayette, Moraga and Orinda, Chabad of Lamorinda offers personal, meaningful preparation, with the Rabbi and Rebbetzin teaching each child at their own pace. There is no membership required, and every family is welcome, whatever your background.
+
+## Simple, and open to every family
+
+Preparing for a bar or bat mitzvah with us is straightforward. We guide you step by step and take care of the details, so your family can simply enjoy it. Your child does not need to know Hebrew or have any background, and there is no membership. Every Jewish family is welcome, whatever your background, affiliation or level of observance, and whatever your budget. Not sure where to begin? Call the Rabbi at 925-384-7242. For the whole picture, read [Bar and Bat Mitzvah made simple](/learn/bar-bat-mitzvah-made-simple).
 
 ## When is it?
 

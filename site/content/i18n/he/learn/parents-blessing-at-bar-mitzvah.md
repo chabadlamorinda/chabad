@@ -2,7 +2,7 @@
 title: "ברוך שפטרני: ברכת האב בבר המצווה ורגע ההורים"
 description: "מהו ברוך שפטרני? הברכה הקצרה שאב אומר בעליית בנו לתורה לבר המצווה, מה פירושה, ודרכים להורים לברך את ילדם."
 category: Life cycle
-related: bar-mitzvah-speech, blessing-your-children, bar-mitzvah, grandparents-at-a-bar-mitzvah, after-the-bar-mitzvah
+related: bar-mitzvah-speech, bar-mitzvah-first-tefillin-and-aliyah, blessing-your-children, bar-mitzvah, grandparents-at-a-bar-mitzvah, after-the-bar-mitzvah
 local: רוצים לתכנן את העלייה והברכה? התקשרו לרב לבקובסקי 925-384-7242, או ראו את /programs/bar-bat-mitzvah.
 ---
 ברוך שפטרני היא ברכה בת שורה אחת שאב אומר כשבנו עולה לתורה בבר המצווה. פירושה: "ברוך המקום שפטר אותי מעונשו של זה", והיא מציינת את הרגע שבו האב כבר אינו אחראי למצוות בנו, כי הנער אחראי עכשיו לעצמו.

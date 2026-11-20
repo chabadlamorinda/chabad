@@ -2689,6 +2689,30 @@
    "sub": "bar-bat-mitzvah",
    "rank": 1
   },
+  "bar-bat-mitzvah-made-simple": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 2
+  },
+  "bar-bat-mitzvah-for-every-family": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 3
+  },
+  "bar-bat-mitzvah-questions-parents-ask": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 4
+  },
+  "bar-mitzvah-first-tefillin-and-aliyah": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 11
+  },
+  "bat-mitzvah-ideas": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 20
+  },
+  "teen-bar-bat-mitzvah-not-too-late": {
+   "sub": "bar-bat-mitzvah",
+   "rank": 22
+  },
   "bat-mitzvah": {
    "sub": "bar-bat-mitzvah",
    "rank": 2

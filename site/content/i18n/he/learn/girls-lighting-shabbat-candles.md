@@ -2,7 +2,7 @@
 title: "בנות מדליקות נרות שבת: למה בנות חב״ד מדליקות מגיל שלוש"
 description: "האם בנות מדליקות נרות שבת? בנות חב״ד מדליקות נר אחד מגיל שלוש בערך, מנהג שהרבי עודד ב-1974. איך מתחילים עם בתכם."
 category: Jewish home
-related: shabbat-candles, bat-mitzvah, chinuch, after-the-bar-mitzvah, meaningful-bar-bat-mitzvah-celebration
+related: shabbat-candles, bat-mitzvah-ideas, bat-mitzvah, chinuch, after-the-bar-mitzvah, meaningful-bar-bat-mitzvah-celebration
 local: התחילו מסורת של ליל שישי עם בתכם. התקשרו לרבנית צפורה לבקובסקי או לרב לבקובסקי 925-384-7242.
 ---
 כן. לפי מנהג חב״ד, ילדה יהודייה מדליקה נר שבת משלה מגיל שלוש בערך, כשהיא מבינה את השבת ויכולה לומר את הברכה, והיא מדליקה נר אחד עד שתתחתן. ב-1974 עודד הרבי מליובאוויטש את כל הבנות היהודיות לקיים את המצווה, בהסכמת הוריהן.

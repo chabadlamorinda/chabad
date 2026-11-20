@@ -2,7 +2,7 @@
 title: פרויקט בת מצווה: רעיונות משמעותיים לחגיגה
 description: רעיונות משמעותיים לבת מצווה: פרויקט מצווה, אפיית חלות, ביקור קשישים, צדקה, לימוד על נשות התורה, דרשה והדלקת נרות.
 category: Life cycle
-related: bat-mitzvah, teen-community-service-mitzvah, meaningful-bar-bat-mitzvah-celebration, shabbat-candles, challah, tzedakah
+related: bat-mitzvah, bat-mitzvah-ideas, teen-community-service-mitzvah, meaningful-bar-bat-mitzvah-celebration, shabbat-candles, challah, tzedakah
 local: בנות מצווה ומשפחותיהן בלאפייט, מוראגה, אורינדה ובאיסט ביי: הרבנית ציפורה לבקובסקי תשמח לעזור בתכנון, 925-384-7241.
 ---
 ילדה יהודייה נעשית בת מצווה ביום הולדתה העברי ה־12. מאותו יום היא אחראית על המצוות, ולבחירות שלה יש משקל אמיתי. החגיגה היא הזדמנות לציין את הרגע הזה במשהו שתזכור במשך שנים: לא רק מסיבה, אלא פרויקט ומצווה שהם שלה. ראו את המדריך שלנו ל[בת מצווה](/learn/bat-mitzvah).

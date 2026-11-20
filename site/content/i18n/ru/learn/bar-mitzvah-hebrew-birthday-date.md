@@ -2,7 +2,7 @@
 title: "Когда бар или бат-мицва вашего ребёнка? Как найти дату по еврейскому дню рождения"
 description: "Как найти дату бар или бат-мицвы: 13 лет мальчику, 12 девочке, по еврейскому календарю. Родился ночью или в Адаре? Спросите Хабад Ламоринды."
 category: Life cycle
-related: bar-bat-mitzvah-timeline, hebrew-birthday, bar-mitzvah-parsha, jewish-leap-year-and-calendar, starting-tefillin-before-bar-mitzvah
+related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-questions-parents-ask, hebrew-birthday, bar-mitzvah-parsha, jewish-leap-year-and-calendar, starting-tefillin-before-bar-mitzvah
 local: Не уверены в дате? Позвоните раву Лабковскому, 925-384-7242, и мы разберёмся вместе, или сохраните еврейский день рождения ребёнка в аккаунте на /account.
 ---
 Бар-мицва мальчика приходится на его 13-й еврейский день рождения, а бат-мицва девочки на 12-й, по еврейскому, а не по гражданскому календарю. Календари расходятся, поэтому дата обычно отличается от обычного дня рождения на несколько недель, а иногда и месяцем.

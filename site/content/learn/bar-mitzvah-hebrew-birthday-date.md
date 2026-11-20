@@ -2,7 +2,7 @@
 title: "When Is My Child's Bar or Bat Mitzvah? Finding the Hebrew Birthday Date"
 description: "Find your child's Bar or Bat Mitzvah date: 13 for boys, 12 for girls, by the Hebrew calendar. Born at night or in Adar? Ask Chabad of Lamorinda."
 category: Life cycle
-related: bar-bat-mitzvah-timeline, hebrew-birthday, bar-mitzvah-parsha, jewish-leap-year-and-calendar, starting-tefillin-before-bar-mitzvah
+related: bar-bat-mitzvah-timeline, bar-bat-mitzvah-questions-parents-ask, hebrew-birthday, bar-mitzvah-parsha, jewish-leap-year-and-calendar, starting-tefillin-before-bar-mitzvah
 local: Not sure of the date? Call Rabbi Labkowski at 925-384-7242 and we will work it out together, or save your child's Hebrew birthday in your account at /account.
 ---
 A boy's Bar Mitzvah falls on his 13th Hebrew birthday and a girl's Bat Mitzvah on her 12th, counted by the Jewish calendar and not the secular one. Because the two calendars drift apart, the date is usually a few weeks before or after the English birthday, and it can even land in a different month.

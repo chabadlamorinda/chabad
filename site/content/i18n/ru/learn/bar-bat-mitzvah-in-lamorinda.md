@@ -2,10 +2,14 @@
 title: Бар- и бат-мицва в Лафайетте, Мораге и Оринде: уроки, даты и планирование
 description: Бар- или бат-мицва в Лафайетте, Мораге или Оринде: личные уроки, тфилин, чтение Торы и клуб бат-мицвы в Хабаде Ламоринды.
 category: Lamorinda
-related: bar-mitzvah, bar-mitzvah-prep-without-hebrew-school, meaningful-bar-bat-mitzvah-celebration, bar-bat-mitzvah-on-a-budget, kosher-catering-for-a-simcha-in-lamorinda, bar-mitzvah-in-israel, special-needs-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah, tefillin, aliyah
+related: bar-mitzvah, bar-bat-mitzvah-made-simple, bar-mitzvah-prep-without-hebrew-school, meaningful-bar-bat-mitzvah-celebration, bar-bat-mitzvah-on-a-budget, kosher-catering-for-a-simcha-in-lamorinda, bar-mitzvah-in-israel, special-needs-bar-bat-mitzvah, bar-bat-mitzvah-timeline, bat-mitzvah, tefillin, aliyah
 local: Начните планирование на chabadoflamorinda.com/forms/bar-bat-mitzvah или позвоните раввину: 925-384-7242.
 ---
 Бар- или бат-мицва - веха, которую ваш ребенок пронесет через всю жизнь. Для семей из Лафайетта, Мораги и Оринды Хабад Ламоринды предлагает личную, осмысленную подготовку: раввин и ребецн учат каждого ребенка в его собственном темпе. Членство не требуется, и рады каждой семье, каким бы ни было ваше происхождение.
+
+## Просто и открыто для каждой семьи
+
+Подготовка к бар- или бат-мицве у нас проста. Мы ведем вас шаг за шагом и берем на себя все детали, чтобы семья могла просто радоваться. Ребенку не нужно знать иврит или иметь какую-либо подготовку, и членство не требуется. Рады каждой еврейской семье, каким бы ни было ваше происхождение, течение или уровень соблюдения, и при любом бюджете. Не знаете, с чего начать? Позвоните раввину: 925-384-7242. Вся картина целиком - в статье [Бар- и бат-мицва - это просто](/learn/bar-bat-mitzvah-made-simple).
 
 ## Когда это?
 

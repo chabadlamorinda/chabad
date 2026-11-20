@@ -2,7 +2,7 @@
 title: "מה משתנה אחרי בר או בת מצווה? מצוות, אחריות והמשך הקשר"
 description: "מה משתנה אחרי בר או בת מצווה: תפילין, מניין, צום, נרות שבת וצמיחה יהודית. מדריך לבני נוער ולהורים בלמורינדה."
 category: Life cycle
-related: jewish-teens-in-lamorinda, bar-mitzvah, bat-mitzvah, girls-lighting-shabbat-candles, starting-tefillin-before-bar-mitzvah
+related: jewish-teens-in-lamorinda, teen-bar-bat-mitzvah-not-too-late, bar-mitzvah, bat-mitzvah, girls-lighting-shabbat-candles, starting-tefillin-before-bar-mitzvah
 local: ממשיכים את הקשר גם אחרי החגיגה. התקשרו לרב לבקובסקי 925-384-7242 או ראו /programs/kids-and-teens.
 ---
 אחרי בר או בת מצווה, נער או נערה יהודים אחראים לקיים את המצוות: נער נמנה במניין ומניח תפילין בבקרים של ימי חול, נערה מדליקה נרות שבת ומקבלת על עצמה מצוות משלה, ושניהם אחראים לשבת, לצום ולבחירות היומיום שלהם. זו תחילתם של חיים יהודיים פעילים, לא סיום.

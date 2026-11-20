@@ -2,7 +2,7 @@
 title: "Baruch Shepatarani: The Father's Blessing at a Bar Mitzvah and the Parents' Moment"
 description: "What is Baruch Shepatarani? The short blessing a father says at his son's Bar Mitzvah aliyah, what it means, and ways for parents to bless their child."
 category: Life cycle
-related: bar-mitzvah-speech, blessing-your-children, bar-mitzvah, grandparents-at-a-bar-mitzvah, after-the-bar-mitzvah
+related: bar-mitzvah-speech, bar-mitzvah-first-tefillin-and-aliyah, blessing-your-children, bar-mitzvah, grandparents-at-a-bar-mitzvah, after-the-bar-mitzvah
 local: Want to plan the aliyah and the blessing? Call Rabbi Labkowski at 925-384-7242, or see /programs/bar-bat-mitzvah.
 ---
 Baruch Shepatarani is a one-line blessing a father says when his son is called to the Torah for his Bar Mitzvah aliyah. It means, "Blessed is the One who has freed me from the punishment of this one," and it marks the moment a father is no longer responsible for his son's mitzvot, because the boy is now responsible for himself.
