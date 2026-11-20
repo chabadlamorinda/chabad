@@ -14,6 +14,13 @@ Decision: no monthly fee, and email works there (Render's free plan blocks it). 
 1. Google Search Console → URL inspection → "Request indexing" for https://jewishlamorinda.com/, /programs/hebrew-school, /shabbat and /events.
 2. Bing Webmaster Tools (bing.com/webmasters) → "Import from Google Search Console" (Bing feeds ChatGPT and Copilot).
 3. Change the website link to https://jewishlamorinda.com on Facebook, Instagram, the WhatsApp groups' descriptions and his email signature.
+4. **Turn on Claude answers in the website chat** (about 10 minutes; costs about a tenth of a cent per answer):
+   a. console.anthropic.com → sign in (or sign up) with the Chabad email.
+   b. Billing → add a card and buy $10 of credit; turn OFF auto-reload (then it can never cost more than what you put in).
+   c. Settings → Limits → set a monthly spend limit of $10.
+   d. API keys → Create key → name it "Website chat" → copy it (starts with sk-ant-).
+   e. jewishlamorinda.com/admin → Keys and settings → "AI answers in the chat" → paste → Save. Optionally "Most AI chat answers per day": 100.
+   f. Ask the chat a question; Claude checks it is answering.
 (Email sending: tested and working, Nov 19.)
 
 ## Why few people come to the new website (Nov 20) — the most important items now

@@ -145,7 +145,12 @@ function searchAnswer(C, question, t) {
   const page = top.find((d) => (!good || d.url !== bestQa.url) && (good || inTitle(d))) || null;
   if (good) { lines.push(bestQa.a.trim()); const u = page || { url: bestQa.url, title: t('Read more') }; lines.push('', `[${t('Read more')}: ${u.title}](${u.url})`); }
   else if (page) lines.push(t('This page should help:') + ` [${page.title}](${page.url})`);
-  else lines.push(t('I could not find that on our site.'));
+  else {
+    // A long, personal question rarely matches one page by its title: offer the pages the site search ranks first.
+    const found = search(C, question, t, 3).results.filter((d) => d.kind !== 'tool' || /calculator|date/i.test(question));
+    if (found.length) lines.push(t('These pages should help:'), ...found.map((d) => `- [${d.title}](${d.url})`));
+    else lines.push(t('I could not find that on our site.'));
+  }
   lines.push('', t('For anything else, call Rabbi Labkowski at {phone} or use the button below to send your question to the Rabbi.', { phone: C.org.phone }));
   return lines.join('\n');
 }
