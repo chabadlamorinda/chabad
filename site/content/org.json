@@ -69,6 +69,12 @@
   ],
   "weekly": [
     {
+      "day": "Every morning",
+      "time": "Sunday 8:00 AM; Monday to Friday 6:30 AM",
+      "name": "Morning services (Shacharit), with the Torah reading on Monday and Thursday. Need to say Kaddish? You can.",
+      "link": "/shabbat"
+    },
+    {
       "day": "Sunday",
       "time": "10:00 AM – 12:00 PM",
       "name": "Lamorinda Hebrew School",
