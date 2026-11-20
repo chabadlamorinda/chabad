@@ -1606,6 +1606,12 @@ test('who is on the website now, time on each page, forms started but not sent, 
   // the pastoral note: which pages and how long, once
   const n1 = mails.length; await V.checkPastoral(); await V.checkPastoral();
   const p = mails.slice(n1); assert.equal(p.length, 1); assert.match(p[0].subject + p[0].text, /Someone may need you/); assert.match(p[0].text, /Loss & mourning/); assert.match(p[0].text, /Sitting shiva \| Chabad · 2 min/);
+  // a 1-second glance from Google is not an alert
+  const quick = 'q' + 'fedcba987654'.repeat(2);
+  await fetch(base + '/api/site/view', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1', cookie: 'cl_vid=' + quick, 'user-agent': ua }, body: JSON.stringify({ path: '/learn/shiva', hit: 'hitquick01', title: 'Shiva' }) });
+  await new Promise((r) => setTimeout(r, 300));
+  await store.pool.query("UPDATE visitor_hits SET secs = 1, started_at = now() - interval '40 minutes', last_at = now() - interval '30 minutes' WHERE vid=$1", [quick]);
+  const n2 = mails.length; await V.checkPastoral(); assert.equal(mails.slice(n2).filter((m) => /Someone may need you/.test(m.subject + m.text)).length, 0, 'no alert for a 1-second visit');
   const tl = await a.call('GET', '/admin/api/site/visitor/' + vid); assert.equal(tl.status, 200); assert.ok(JSON.stringify(tl.json).includes('/learn/shiva'));
   // sending the form marks the draft as finished
   await post('/api/site/draft', { form: 'rabbi', path: '/contact', name: 'Dina Roth', email: 'dina@example.com' });

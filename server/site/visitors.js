@@ -190,6 +190,8 @@ function mountVisitors(app, { store, mailer, notifyTo = '', content, base = '', 
       const hits = (await q("SELECT path, title, source, device, tz, started_at, secs FROM visitor_hits WHERE vid = $1 AND started_at > now() - interval '12 hours' ORDER BY started_at", [vid])).rows;
       const tags = [...new Set(hits.map((h) => interestOf(h.path)).filter((it) => it && PASTORAL.has(it.key)).map((it) => it.key === 'baby' ? 'Bris & new baby' : it.key === 'mourning' ? 'Loss & mourning' : 'A hard time'))];
       if (!tags.length) continue;
+      // Only someone who really read (20 seconds or more on those pages): a quick click away from Google is not a call for help.
+      if (hits.filter((h) => { const it = interestOf(h.path); return it && PASTORAL.has(it.key); }).reduce((n, h) => n + (h.secs || 0), 0) < 20) continue;
       if (!(await q('INSERT INTO visitor_pastoral (vid) VALUES ($1) ON CONFLICT DO NOTHING', [vid])).rowCount) continue;
       if (!mailer || !to()) continue;
       const who = (await q('SELECT name, email, phone FROM visitor_people WHERE vid = $1 ORDER BY updated_at DESC LIMIT 1', [vid])).rows[0] || null;
