@@ -213,7 +213,7 @@ function mountOutreach(app, { store, readMember, content, base, ctxOf, upcoming 
       if (a.sub) C.learn.filter((b) => b.sub === a.sub).sort((x, y) => (x.rank || 99) - (y.rank || 99)).slice(0, 8).forEach((b) => add(b.slug, w, a.title));
     });
     qs.forEach((q, i) => search(C, q, t, 12).results.forEach((d, j) => { const m = /^\/learn\/([a-z0-9-]+)$/.exec(d.url); if (m) add(m[1], (3 - j * 0.2) / (1 + i * 0.4), q); }));
-    const items = [...score.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([slug]) => {
+    const items = [...score.entries()].sort((a, b) => b[1] - a[1]).slice(0, Math.min(6, Math.max(1, Number(req.query.n) || 3))).map(([slug]) => {
       const a = by.get(slug), ph = guidePhoto(slug, a.category);
       return { url: '/learn/' + slug, title: a.title, text: a.description || '', img: ph ? '/media/photos/' + ph + '-sm.jpg' : '', because: why.get(slug) || '' };
     });

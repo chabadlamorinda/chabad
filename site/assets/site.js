@@ -204,25 +204,29 @@
     });
   }
 
-  // "Welcome back": on the home page, three new guides that follow from what was read and searched on this phone in the last
-  // 45 days (kept only in this browser; never the ones already read).
+  // What was read and searched on this phone in the last 45 days (kept only in this browser), for the home page's picks.
   (function () {
     var bare = function (p) { return String(p || '').replace(/^\/(he|ru)(?=\/)/, ''); }, here = bare(location.pathname);
     var h = store.get('cl_hist') || {}; h.r = h.r || []; h.q = h.q || [];
     var m = /^\/learn\/([a-z0-9-]+)$/.exec(here), sq = here === '/search' && (location.search.match(/[?&]q=([^&]*)/) || [])[1];
     if (m) { h.r = [m[1]].concat(h.r.filter(function (x) { return x !== m[1]; })).slice(0, 12); h.at = Date.now(); store.set('cl_hist', h); }
     if (sq) { try { sq = decodeURIComponent(sq.replace(/\+/g, ' ')).trim().slice(0, 60); } catch (e) { sq = ''; } if (sq) { h.q = [sq].concat(h.q.filter(function (x) { return x !== sq; })).slice(0, 5); h.at = Date.now(); store.set('cl_hist', h); } }
-    var cont = $('[data-continue]');
-    if (!cont || (!h.r.length && !h.q.length) || Date.now() - (h.at || 0) > 45 * 864e5) return;
-    api('GET', '/suggest?read=' + h.r.join(',') + '&q=' + encodeURIComponent(h.q.join('|'))).then(function (r) {
+    // "Let's explore Judaism together" on the home page: new guides that follow from what was read and searched here,
+    // then the page's own picks (the coming holiday and the basics), never one already read.
+    var box = $('[data-explore] .gc-grid');
+    if (!box || (!h.r.length && !h.q.length) || Date.now() - (h.at || 0) > 45 * 864e5) return;
+    var readUrl = h.r.map(function (x) { return '/learn/' + x; });
+    api('GET', '/suggest?n=4&read=' + h.r.join(',') + '&q=' + encodeURIComponent(h.q.join('|'))).then(function (r) {
       if (!r.items || !r.items.length) return;
-      cont.appendChild(el('div', { class: 'sec-h' }, [el('h2', { text: T('Welcome back!') })]));
-      cont.appendChild(el('p', { class: 'lead-d', text: T('Picked for you, from what you have been reading. Let’s keep exploring together.') }));
-      cont.appendChild(el('div', { class: 'grid' }, r.items.map(function (g) {
-        return el('a', { class: 'card tile' + (g.img ? ' has-photo' : ''), href: P(g.url) }, [g.img ? el('img', { class: 'tile-photo', src: g.img, alt: '', loading: 'lazy', width: '560', height: '380' }) : null,
-          el('p', { class: 'eyebrow', text: T('Picked for you') }), el('h3', { text: g.title }), g.text ? el('p', { text: g.text }) : null]);
-      })));
-      cont.hidden = false;
+      var cards = r.items.map(function (g) {
+        return el('a', { class: 'gcard', href: P(g.url) }, [g.img ? el('img', { class: 'gc-img', src: g.img, alt: '', loading: 'lazy', width: '560', height: '380' }) : null,
+          el('span', { class: 'gc-t' }, [el('strong', { text: g.title }), el('span', { text: g.text || '' })])]);
+      });
+      var got = r.items.map(function (g) { return g.url; });
+      [].forEach.call(box.querySelectorAll('a.gcard'), function (a) { var u = bare(a.getAttribute('href')); if (got.indexOf(u) < 0 && readUrl.indexOf(u) < 0 && cards.length < 6) cards.push(a); });
+      while (box.firstChild) box.removeChild(box.firstChild);
+      cards.forEach(function (c) { box.appendChild(c); });
+      var lead = $('[data-explore-lead]'); if (lead) lead.textContent = T('Picked for you, from what you have been reading. Let’s keep exploring together.');
     }, function () {});
   })();
 

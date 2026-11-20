@@ -42,6 +42,21 @@ const CAT_PHOTO = { shabbat: 'shabbat-table', class: 'torah-study', kids: 'kids-
 const catPhoto = (c) => (CAT_PHOTO[c] ? '/media/photos/' + CAT_PHOTO[c] + '.jpg' : '');
 const holidayPhoto = (slug) => (HOLIDAY_PHOTO[slug] ? '/media/photos/' + HOLIDAY_PHOTO[slug] + '.jpg' : '');
 
+// "Let's explore Judaism together": real guides to read. The coming holiday's first (within 45 days), then the basics
+// people search for most (challah, Shabbat candles, mezuzah, a Jewish home...). site.js swaps in picks that follow
+// what this visitor read and searched before.
+const BASICS = ['challah', 'shabbat-candles', 'mezuzah', 'setting-up-a-jewish-home', 'shabbat', 'what-is-a-mitzvah', 'kosher', 'tefillin'];
+const HOLIDAY_FIRST = { chanukah: ['chanukah-for-beginners', 'chanukah-menorah', 'chanukah-foods'] };
+function explore(C, nh, days) {
+  const by = new Map(C.learn.map((a) => [a.slug, a])), out = [];
+  if (nh && days <= 45) {
+    const first = (HOLIDAY_FIRST[nh.slug] || []).filter((x) => by.has(x));
+    const more = C.learn.filter((a) => a.slug.startsWith(nh.slug) && !first.includes(a.slug)).sort((a, b) => (a.rank || 99) - (b.rank || 99)).map((a) => a.slug);
+    out.push(...[...first, ...more].slice(0, 3));
+  }
+  for (const s of BASICS) if (by.has(s) && !out.includes(s)) out.push(s);
+  return out.slice(0, 6).map((s) => by.get(s));
+}
 function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, dayGuides = [], today }) {
   const { t, C } = X, o = C.org, H = C.home || {};
   // Large banners: featured events and holiday events coming in the next two months, then the next holiday, then home.json.
@@ -82,7 +97,6 @@ ${campaignBanner(X)}
   <span class="ss-btns"><a class="btn sm gold" href="/forms/shabbat-meal">${esc(t('Shabbat dinner with the Rabbi'))}</a><a class="btn sm ghost" href="/shabbat">${esc(t('Shabbat at Chabad'))} →</a></span>
   <div class="quick" data-shabbat-quick data-date="${sh.candles ? sh.candles.date : ''}" data-day="${sh.candles ? esc(X.shortDate(sh.candles.date)) : ''}" hidden></div>
 </div></section>
-<section class="wrap sec" data-continue hidden></section>
 <section class="wrap sec" data-for-you hidden></section>
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Coming up and every week'))}</h2><a href="/calendar">${esc(t('Full calendar'))} →</a></div>
@@ -103,8 +117,10 @@ ${H.story ? `<section class="wrap sec"><div class="story">
 <section class="band built"><div class="wrap">
   <div class="sec-h"><h2>${esc(t('Let’s explore Judaism together'))}</h2><a href="/about">${esc(t('About us'))} →</a></div>
   <p class="lead-d">${esc(t('Rabbi Yisroel and Rebbetzin Tzipora Labkowski, emissaries of the Lubavitcher Rebbe, and a community that keeps growing. Thank you to everyone who makes it happen.'))}</p>
+  <p class="lead-d" data-explore-lead>${esc(t('A few good places to start, picked for this time of year.'))}</p>
   ${stats.length ? `<div class="stats">${stats.map((s) => `<div class="stat"><b>${esc(s.number)}</b><span>${esc(s.label)}</span></div>`).join('')}</div>` : ''}
-  <div class="hl"><a class="hl-i" href="/learn">${artImg('open-book')}<strong>${esc(t('{n} guides to Jewish life', { n: C.learn.length }))}</strong><span>${esc(t('Free, friendly answers in English, Hebrew and Russian, from Shabbat candles to Kaddish.'))}</span></a></div>
+  <div data-explore>${guideCards(X, explore(C, nh, days), '')}</div>
+  <p><a class="btn ghost" href="/learn">${esc(t('More to explore'))} →</a></p>
 </div></section>
 <section class="wrap sec">
   <div class="sec-h"><h2>${esc(t('Get involved'))}</h2><a href="/get-involved">${esc(t('More ways'))} →</a></div>
@@ -125,8 +141,16 @@ ${pics.length ? `<section class="wrap sec photos-sec">
     <a href="/parsha">${artImg('torah-scroll')}<span>${esc(t("This week's Torah portion"))}</span></a>
     <a href="/tools/bar-bat-mitzvah">${artImg('tallit')}<span>${esc(t('Find your Bar Mitzvah parshah'))}</span></a>
     <a href="/jewish-holidays-${today.slice(0, 4)}">${artImg('calendar')}<span>${esc(t('Jewish holidays this year'))}</span></a>
+    <a href="/tools/yahrzeit">${artImg('broken-heart-candle')}<span>${esc(t('When is the yahrzeit?'))}</span></a>
+    <a href="/tools/hebrew-date">${artImg('moon')}<span>${esc(t('Hebrew and English dates'))}</span></a>
+    <a href="/tools/zmanim">${artImg('clock')}<span>${esc(t("Today's prayer times"))}</span></a>
+    <a href="/kaddish">${artImg('candle-flame')}<span>${esc(t('Kaddish for a loved one'))}</span></a>
+    <a href="/tehillim">${artImg('open-book')}<span>${esc(t('Tehillim for every occasion'))}</span></a>
+    <a href="/stories">${artImg('sparkles')}<span>${esc(t('Jewish stories and jokes'))}</span></a>
+    <a href="/ask">${artImg('chat-bubble')}<span>${esc(t('Ask the Rabbi'))}</span></a>
     ${nh && nh.slug === 'chanukah' && days <= 21 ? `<a href="/menorah">${artImg('menorah')}<span>${esc(t('Light the menorah'))}</span></a>` : ''}
     ${nh && nh.slug === 'chanukah' && days <= 21 ? `<a href="/dreidel">${artImg('dreidel')}<span>${esc(t('Spin the dreidel'))}</span></a>` : ''}
+    ${nh && nh.slug === 'chanukah' && days <= 45 ? `<a href="/chanukah-quiz">${artImg('menorah')}<span>${esc(t('Chanukah quiz'))}</span></a>` : ''}
   </div>
 </section>
 ${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Community news'))}</h2><a href="/community">${esc(t('Community board'))} →</a></div><div class="grid">${posts.map((i) => `<a class="card tile" href="/community"><p class="eyebrow">${esc(t(i.kind === 'mazal-tov' ? 'Mazal Tov' : i.kind === 'shiva' ? 'Condolences' : 'News'))}</p><h3>${esc(i.title)}</h3></a>`).join('')}</div></section>` : ''}`;

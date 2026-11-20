@@ -639,7 +639,7 @@ test('forms: Hebrew School registration with tuition, camp pricing, chametz auth
 test('home page: large banners, smaller banners, what we built, ways to get involved (in three languages)', async () => {
   for (const L of ['', '/he', '/ru']) {
     const h = (await client().call('GET', L + '/')).text;
-    assert.match(h, /<h1 class="sr-only">/); assert.match(h, /data-carousel/); assert.match(h, /class="bn theme-/); assert.match(h, /class="sbs"/); assert.match(h, /class="hl"/); assert.match(h, /class="gi"/);
+    assert.match(h, /<h1 class="sr-only">/); assert.match(h, /data-carousel/); assert.match(h, /class="bn theme-/); assert.match(h, /class="sbs"/); assert.match(h, /data-explore/); assert.match(h, /class="gi"/);
     assert.ok((h.match(/class="sb theme-/g) || []).length <= 8, 'at most 8 small banners');
   }
   assert.match((await client().call('GET', '/')).text, /Shabbat at Chabad of Lamorinda/);
@@ -1018,7 +1018,7 @@ test('email system: sign up from any page, the designed email in each language, 
   const home = (await g.call('GET', '/learn/mezuzah')).text; assert.match(home, /data-subscribe="band"/); assert.match(home, /data-nl-pop/);
   assert.doesNotMatch((await g.call('GET', '/donate')).text, /data-nl-pop/);
   assert.match((await g.call('GET', '/subscribe')).text, /data-subscribe="page"/);
-  assert.match((await g.call('GET', '/')).text, /data-continue hidden/, 'the home page has the place for "Welcome back"');
+  assert.match((await g.call('GET', '/')).text, /data-explore/, 'the home page has the guides to explore');
   // Sign up in Russian: signed up at once (the Rabbi's direction), with a welcome in Russian and a one-click unsubscribe; listed as confirmed.
   mails.length = 0;
   assert.equal((await g.call('POST', '/api/site/subscribe', { email: 'nope' })).status, 400);
@@ -1620,4 +1620,13 @@ test('search finds other spellings and English words on the Hebrew and Russian p
   const ru = (await c.call('GET', '/api/site/suggest?read=mezuzah', undefined, { 'x-lang': 'ru' })).json; assert.match(ru.items[0].title, /[Ѐ-ӿ]/, 'titles in the reader\'s language');
   const home = (await c.call('GET', '/')).text; assert.match(home, /Let’s explore Judaism together/); assert.doesNotMatch(home, /built together/);
   assert.doesNotMatch(fs.readFileSync(path.join(__dirname, '..', 'site', 'assets', 'site.js'), 'utf8'), /Pick up where you left off/);
+});
+
+test('the home page gives real things to read and try: the coming holiday and the basics, and tools like the yahrzeit date', async () => {
+  const home = (await client().call('GET', '/')).text;
+  assert.doesNotMatch(home, /guides to Jewish life/);
+  const ex = home.slice(home.indexOf('data-explore'), home.indexOf('More to explore'));
+  for (const g of ['/learn/challah', '/learn/shabbat-candles', '/learn/mezuzah']) assert.ok(ex.includes('href="' + g + '"'), 'explore shows ' + g);
+  for (const u of ['/tools/yahrzeit', '/tools/hebrew-date', '/tools/zmanim', '/kaddish', '/tehillim']) assert.ok(home.includes('href="' + u + '"'), 'try this has ' + u);
+  assert.equal((await client().call('GET', '/api/site/suggest?read=challah&n=4')).json.items.length, 4);
 });
