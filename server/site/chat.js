@@ -202,7 +202,7 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
       const key = (req.ip || cid) + ':' + new Date().toISOString().slice(0, 10); // per visitor (not per chat id, which anyone can change)
       if (!told.has(key)) {
         told.set(key, 1); if (told.size > 2000) told.clear();
-        notify(`Chat question: ${question.slice(0, 70)}`, `Someone asked the website chat${page ? ' on ' + page : ''} (${lang}):\n\n${msgs.filter((m) => m.role === 'user').map((m) => '- ' + m.content).join('\n')}`, '/admin/community#chat');
+        notify(`Chat question (answered by the website helper): ${question.slice(0, 60)}`, `Someone asked the website's automatic helper${page ? ' on ' + page : ''} (${lang}). The helper answered them from the website; this is for your information.\n\n${msgs.filter((m) => m.role === 'user').map((m) => '- ' + m.content).join('\n')}\n\nThey have not left a phone or email. If they tap "Ask the Rabbi personally", you will get a separate email with their number or email and the whole conversation, to answer them yourself.`, '/admin/community#chat');
       }
     }
     if (!client || !underCap()) { send({ text: (await timesAnswer(C, question, t, lang).catch(() => null)) || searchAnswer(C, question, t) }); return finish(); }

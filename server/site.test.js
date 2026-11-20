@@ -527,7 +527,7 @@ test('the Rabbi gets an email for everything: RSVPs and chat questions (new acco
   assert.ok(toRabbi(/^RSVP: .*Notify Guest, 1\)/), 'RSVP');
   const before = mails.length;
   for (let i = 0; i < 2; i++) await (await fetch(base + '/api/site/chat', { method: 'POST', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ lang: 'en', cid: 'notifytest1', messages: [{ role: 'user', content: 'Is there a Purim party for teens?' }] }) })).text();
-  assert.equal(mails.slice(before).filter((m) => /^Chat question: Is there a Purim party/.test(m.subject)).length, 1, 'one email per conversation');
+  assert.equal(mails.slice(before).filter((m) => /^Chat question \(answered by the website helper\): Is there a Purim party/.test(m.subject)).length, 1, 'one email per conversation');
 });
 
 test('spam guard: a robot gets "ok" but nothing is saved; people and members pass', async () => {

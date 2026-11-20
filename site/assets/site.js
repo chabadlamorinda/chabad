@@ -764,7 +764,7 @@
           return pump();
         }); };
         return pump();
-      }).then(function () { if (!got) throw new Error('empty'); history.push({ role: 'assistant', content: got }); save(); reach(contact); offer(more); })
+      }).then(function () { if (!got) throw new Error('empty'); history.push({ role: 'assistant', content: got }); save(); reach(contact); offer(more); personal(); })
         .catch(function () { b.classList.remove('typing'); render(T('Sorry, something went wrong. Please call 925-384-7242.'), b); history.pop(); save(); })
         .then(function () { busy = false; panel.input.focus(); });
     };
@@ -787,16 +787,27 @@
       qs.forEach(function (q) { chips.appendChild(el('button', { type: 'button', class: 'chip', text: q, on: { click: function () { ask(q); } } })); });
       panel.log.appendChild(chips); show(lastAnswer);
     };
+    // After the helper's first answer: a clear way to reach the Rabbi himself (once per conversation).
+    var personal = function () {
+      if (history.filter(function (h) { return h.role === 'assistant'; }).length !== 1 || panel.log.querySelector('.personal')) return;
+      panel.log.appendChild(el('div', { class: 'cm assistant personal' }, [el('p', { text: T('I am the website\'s automatic helper. Would you like Rabbi Labkowski to answer you personally?') }),
+        el('button', { type: 'button', class: 'btn gold sm', text: T('Ask the Rabbi personally'), on: { click: handoff } })]));
+      show(lastAnswer);
+    };
     var handoff = function () {
-      var box = el('form', { class: 'handoff' }), name = el('input', { required: true, autocomplete: 'name', placeholder: T('Your name') }), email = el('input', { type: 'email', required: true, autocomplete: 'email', placeholder: T('Your email'), dir: 'ltr' }), m = el('p', { class: 'msg', hidden: true });
-      var g = store.get('cl_guest') || {}; name.value = g.name || ''; email.value = g.email || '';
-      box.appendChild(el('p', { class: 'muted', text: T('The Rabbi will see this conversation and get back to you.') })); box.appendChild(name); box.appendChild(email);
+      if (panel.log.querySelector('form.handoff')) { panel.log.querySelector('form.handoff input').focus(); return; }
+      var box = el('form', { class: 'handoff' }), name = el('input', { required: true, autocomplete: 'name', placeholder: T('Your name') }), phone = el('input', { type: 'tel', autocomplete: 'tel', inputmode: 'tel', placeholder: T('Your phone'), dir: 'ltr' }), email = el('input', { type: 'email', autocomplete: 'email', placeholder: T('or your email'), dir: 'ltr' }), m = el('p', { class: 'msg', hidden: true });
+      var g = store.get('cl_guest') || {}; name.value = g.name || ''; email.value = g.email || ''; phone.value = g.phone || '';
+      box.appendChild(el('p', { class: 'hand', text: T('Ask the Rabbi personally') }));
+      box.appendChild(el('p', { class: 'muted', text: T('Rabbi Labkowski will read this conversation and answer you himself, by phone or email. Leave a phone number or an email (one is enough).') }));
+      box.appendChild(name); box.appendChild(phone); box.appendChild(email);
       box.appendChild(el('button', { class: 'btn gold sm', type: 'submit', text: T('Send to the Rabbi') })); box.appendChild(m);
       box.addEventListener('submit', function (ev) {
         ev.preventDefault();
-        var transcript = history.map(function (h) { return (h.role === 'user' ? 'Visitor: ' : 'Assistant: ') + h.content; }).join('\n\n');
-        api('POST', '/submit', { kind: 'rabbi', title: 'From the website chat', body: transcript || '(no messages)', name: name.value, email: email.value }).then(function (r) {
-          if (r.ok) { box.textContent = ''; box.appendChild(el('p', { class: 'msg ok', text: T('Sent. The Rabbi will be in touch.') })); store.set('cl_guest', { name: name.value, email: email.value }); } else msg(m, r.error || T('Something went wrong.'));
+        if (!name.value.trim() || (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value.trim()) && (phone.value.match(/\d/g) || []).length < 7)) { msg(m, T('Please add your name and a phone number or an email, so the Rabbi can answer you.')); return; }
+        var transcript = history.map(function (h) { return (h.role === 'user' ? 'Visitor: ' : 'Website helper: ') + h.content; }).join('\n\n');
+        api('POST', '/submit', { kind: 'rabbi', title: 'From the website chat: please answer them', body: transcript || '(no messages)', name: name.value, email: email.value, phone: phone.value }).then(function (r) {
+          if (r.ok) { box.textContent = ''; box.appendChild(el('p', { class: 'msg ok', text: T('Sent. The Rabbi will be in touch.') })); store.set('cl_guest', { name: name.value, email: email.value, phone: phone.value }); } else msg(m, r.error || T('Something went wrong.'));
         });
       });
       panel.log.appendChild(box); panel.log.scrollTop = panel.log.scrollHeight; name.focus();
@@ -808,15 +819,15 @@
         var form = el('form', { class: 'chat-in' }, [input, el('button', { class: 'btn gold sm', type: 'submit', text: T('Send') })]);
         form.addEventListener('submit', function (ev) { ev.preventDefault(); var q = input.value; input.value = ''; ask(q); });
         var root = el('div', { class: 'chat', role: 'dialog', 'aria-label': T('Ask us') }, [
-          el('div', { class: 'chat-h' }, [el('strong', { text: T('Ask us') }), el('span', {}, [
+          el('div', { class: 'chat-h' }, [el('strong', { text: T('Ask us') + ' · ' + T('automatic helper') }), el('span', {}, [
             el('button', { type: 'button', class: 'linkish', text: T('New conversation'), on: { click: function () { history = []; save(); log.textContent = ''; greet(); } } }),
             el('button', { type: 'button', class: 'x', 'aria-label': T('Close'), text: '×', on: { click: function () { root.hidden = true; fab.hidden = false; fab.focus(); } } })])]),
           log, form,
-          el('p', { class: 'chat-f' }, [el('button', { type: 'button', class: 'linkish', text: T('Send to the Rabbi'), on: { click: handoff } }), ' · ', el('span', { class: 'muted', text: T('Answers come from our website and may not be perfect. For anything important, call the Rabbi.') })])]);
+          el('p', { class: 'chat-f' }, [el('button', { type: 'button', class: 'btn ghost sm', text: T('Ask the Rabbi personally'), on: { click: handoff } }), ' ', el('span', { class: 'muted', text: T('Answers here come from our website. For a personal answer, ask the Rabbi.') })])]);
         document.body.appendChild(root);
         panel = { root: root, log: log, input: input };
         var greet = function () {
-          bubble('assistant', T('Hello! I can help with Shabbat times, programs, registration, holidays, Jewish questions, and anything you need from Chabad of Lamorinda. What would you like to know?'));
+          bubble('assistant', T('Hello! I am the website\'s automatic helper. I can help with Shabbat times, programs, registration, holidays and Jewish questions. For a personal answer from Rabbi Labkowski, tap "Ask the Rabbi personally" below.'));
           var chips = el('div', { class: 'chips' });
           ['When is Shabbat this week?', 'How do I register for Hebrew School?', 'Someone in my family passed away', 'How do I put up a mezuzah?'].forEach(function (s) { chips.appendChild(el('button', { type: 'button', class: 'chip', text: T(s), on: { click: function () { chips.remove(); ask(T(s)); } } })); });
           log.appendChild(chips);
