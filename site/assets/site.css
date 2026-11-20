@@ -1103,3 +1103,11 @@ summary { min-height: 40px; display: list-item; }
 .bk-head p { margin: 0 0 6px; }
 .bk-depts { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
 .bk-depts .chip { text-decoration: none; padding: 4px 12px; font-size: .88rem; min-height: 0; }
+
+/* Every week at Chabad (home page) */
+.week-cards { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.week-cards a { display: grid; gap: 4px; height: 100%; padding: 16px 18px; background: var(--card); border: 1px solid var(--line); border-inline-start: 5px solid var(--gold); border-radius: var(--r); box-shadow: var(--shadow); text-decoration: none; color: var(--ink); }
+.week-cards a:hover { border-color: var(--gold); }
+.week-cards .wk-day { font-family: var(--hand); font-size: 1.6rem; line-height: 1; color: var(--gold-ink); }
+.week-cards strong { font-size: 1.08rem; }
+.week-cards .wk-time { color: var(--muted); font-size: .95rem; }
