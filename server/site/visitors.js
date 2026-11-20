@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS visitor_pastoral (vid TEXT NOT NULL, day DATE NOT NUL
 const INTERESTS = [
   ['giving', 'Giving / sponsoring', true, /^\/(donate|sponsor|kiddush|chai-club|sponsor-a-kiddush|campaign)(\/|$)|^\/learn\/(supporting-chabad-of-lamorinda|halachic-will|maaser|tzedakah|hachnasat-sefer-torah|letter-in-a-torah|tzedakah-priorities|jewish-view-on-wealth|sponsoring-a-kiddush)$|^\/programs\/chai-club$/],
   ['bar-bat-mitzvah', 'Bar / Bat Mitzvah', true, /bar-mitzvah|bat-mitzvah|bar-bat-mitzvah/],
-  ['mezuzah', 'Mezuzah', true, /mezuzah|chanukat-habayit|setting-up-a-jewish-home/],
+  ['mezuzah', 'Mezuzah', true, /mezuzah|chanukat-habayit|setting-up-a-jewish-home|get-judaica-through-chabad/],
   ['tefillin', 'Tefillin', true, /tefillin|mitzvah-tanks/],
   ['wedding', 'Wedding / marriage', true, /wedding|kallah|chosson|engagement|getting-married|ketubah|chuppah|family-purity|mikvah/],
   ['mourning', 'Loss / mourning', true, /passed-away|funeral|shiva|kaddish|yahrzeit|yizkor|mourning|kriah|unveiling|sheloshim|end-of-life|pregnancy-loss/],

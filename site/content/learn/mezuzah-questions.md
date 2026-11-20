@@ -34,6 +34,10 @@ A dorm room or student apartment where you live and sleep is a home, so it shoul
 
 When you move in: check mezuzahs you find on the doors. A previous owner may have been Jewish, but the scrolls may be old or not kosher. Have them checked (see [checking mezuzahs](/learn/checking-mezuzahs-and-tefillin)), and ask the Rabbi about what to do with any that are damaged.
 
+## We can get it for you
+
+Chabad of Lamorinda can get you a kosher mezuzah scroll and case, for one door or a whole house, help you put it up, and have your mezuzahs checked by a sofer (scribe). Call or text the Rabbi at 925-384-7242. See [We Can Get It for You](/learn/get-judaica-through-chabad).
+
 ## Common questions
 
 ### Do I need a mezuzah if I rent?

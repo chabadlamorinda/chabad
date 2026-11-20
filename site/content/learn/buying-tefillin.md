@@ -2,7 +2,7 @@
 title: Buying Tefillin: How to Choose a Kosher Pair
 description: What makes tefillin kosher, why prices vary, gassos and dakos, avoiding fakes, Chabad custom, and how to have your tefillin checked.
 category: Prayer & Torah
-related: tefillin, starting-tefillin-before-bar-mitzvah, checking-mezuzahs-and-tefillin, bar-mitzvah, mezuzah, choosing-a-mezuzah
+related: tefillin, get-judaica-through-chabad, starting-tefillin-before-bar-mitzvah, checking-mezuzahs-and-tefillin, bar-mitzvah, mezuzah, choosing-a-mezuzah
 local: Rabbi Yisroel Labkowski helps families in Lafayette, Moraga and Orinda order kosher tefillin, check them and learn to put them on. Call 925-384-7242.
 ---
 A pair of tefillin is one of the most important things a Jewish man will ever own. He wears them almost every weekday of his life. Here is what to look for, so that the tefillin you buy are truly kosher. For what tefillin are and how to wear them, see [Tefillin](/learn/tefillin).
@@ -40,6 +40,10 @@ There are different customs in the order of the passages inside the tefillin. Th
 - Keep them in their protective covers and a tefillin bag, away from heat and damp.
 - Have them checked by a qualified scribe from time to time, and right away if they get wet or damaged. Many people check them in the month of [Elul](/learn/elul), before the High Holidays; ask the Rabbi how often for yours.
 - If a box cracks, loses its shape or gets wet, have them checked right away.
+
+## We can get it for you
+
+Chabad of Lamorinda can get you a kosher pair of tefillin, for a bar mitzvah boy or a grown man, help you learn to put them on, and have your tefillin checked by a sofer (scribe). Call or text the Rabbi at 925-384-7242. See [We Can Get It for You](/learn/get-judaica-through-chabad).
 
 ## Common questions
 

@@ -11,6 +11,9 @@ Our services are traditional, in a casual and joyful atmosphere, with a bilingua
 
 Rabbi Yisroel and Tzipora are emissaries (shluchim) of the Lubavitcher Rebbe, Rabbi Menachem M. Schneerson, of righteous memory.
 
+## Our story
+In August 2015 Rabbi Yisroel and Tzipora Labkowski came from Brooklyn to Lafayette. The first High Holiday services were at the Lafayette Library, and for the first years Shabbat services, Hebrew school and Shabbat dinners happened in their home. In 2017 more than 200 neighbors celebrated Chanukah together at Lafayette Plaza Park. On September 19, 2019 the Chabad Center opened on Mount Diablo Boulevard; in 2020 kosher meat came to Contra Costa County, sold right at the center. In December 2021 Chabad of Lamorinda bought its own building at 3477 Golden Gate Way, behind the Lafayette Library, a permanent Jewish home for Lafayette, Moraga and Orinda, and in 2022 Bay Kosher, a nonprofit kosher market, opened inside it. Every step was built with the gifts of this community.
+
 ## Our mission
 To serve the Jewish communities of Lafayette, Moraga and Orinda with an open door for strengthening Jewish identity, through Torah classes, Shabbat and holiday celebrations, family and social programs, education for children of every age, and help in times of joy and of need. We follow the Chabad-Lubavitch way of joy, scholarship and unconditional love for every Jew.
 

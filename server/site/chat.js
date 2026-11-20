@@ -176,7 +176,7 @@ function mountChat(app, { env = process.env, client: injected, content, ctxOf, l
     // The page the visitor is reading (a site path only), so "what time is this?" can be answered.
     const page = /^\/(he\/|ru\/)?[a-z0-9/-]{0,120}$/.test(String(req.body.page || '')) ? String(req.body.page).replace(/^\/(he|ru)(?=\/)/, '') : '';
     const userText = msgs.filter((m) => m.role === 'user').slice(-2).map((m) => m.content).join(' ');
-    const topic = topicOf(question), guideOf = { mezuzah: 'mezuzah', tefillin: 'tefillin', donation: 'supporting-chabad-of-lamorinda' }[topic];
+    const topic = topicOf(question), guideOf = { mezuzah: 'mezuzah', tefillin: 'tefillin', judaica: 'get-judaica-through-chabad', donation: 'supporting-chabad-of-lamorinda' }[topic];
     const rel = relevant(C, t, userText, page), topicDoc = guideOf ? { ...C.learn.find((a) => a.slug === guideOf), url: '/learn/' + guideOf } : null;
     const more = suggestions(rel.docs, msgs.filter((m) => m.role === 'user').map((m) => m.content), topicDoc && topicDoc.title ? topicDoc : null);
     if (pool) pool.query('INSERT INTO chat_questions (question, lang, ai) VALUES ($1,$2,$3)', [question.slice(0, 500), lang, !!client]).catch((e) => log.error('chat log:', e && e.message));

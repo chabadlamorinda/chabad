@@ -95,7 +95,7 @@
     api('GET', '/site/leads').then(function (x) {
       if (x._status !== 200 || !x.items || !x.items.length) { sr.appendChild(el('p', { class: 'small', text: 'None yet.' })); return; }
       sr.count(W['requests'](x), true);
-      var NAME = { mezuzah: 'Mezuzah', tefillin: 'Tefillin', donation: 'Giving', meeting: 'Meeting', consult: 'Private conversation' }, HOW = { call: 'tapped Call', text: 'tapped Text', email: 'tapped Email', whatsapp: 'tapped WhatsApp', chat: 'asked the chat' }, LANG = { he: 'Hebrew', ru: 'Russian' };
+      var NAME = { mezuzah: 'Mezuzah', tefillin: 'Tefillin', judaica: 'Judaica / checking', donation: 'Giving', meeting: 'Meeting', consult: 'Private conversation' }, HOW = { call: 'tapped Call', text: 'tapped Text', email: 'tapped Email', whatsapp: 'tapped WhatsApp', chat: 'asked the chat' }, LANG = { he: 'Hebrew', ru: 'Russian' };
       x.items.slice(0, 60).forEach(function (i) {
         sr.appendChild(el('div', { class: 'card' }, [el('strong', { text: NAME[i.topic] || word(i.topic) }), el('span', { class: 'pill', text: HOW[i.channel] || i.channel }), i.lang !== 'en' ? el('span', { class: 'pill', text: LANG[i.lang] || i.lang }) : null,
           el('div', { class: 'small', text: when(i.created_at) + (i.page ? ' · ' + i.page : '') }), i.detail ? el('div', { class: 'small', text: i.detail }) : null,

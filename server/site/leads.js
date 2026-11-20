@@ -1,5 +1,5 @@
 // "Call, text or WhatsApp the Rabbi" for the things people want to do with him personally: order or put up a mezuzah,
-// tefillin (get a pair or learn to put them on), meet, or give. The buttons appear on those pages and in the chat
+// tefillin (get a pair or learn to put them on), get anything Jewish through us or have it checked (judaica), meet, or give. The buttons appear on those pages and in the chat
 // whenever someone asks, each with a ready message. Every tap, and every chat conversation about these, is emailed to
 // the Rabbi and listed in the Rabbi area ("Requests from the website"), so no one falls through the cracks.
 'use strict';
@@ -16,6 +16,11 @@ const TOPICS = {
     re: /tefil+in|tefilin|tfilin|phylacter|תפילין|тфилин|тефилин/i,
     title: 'Get tefillin or learn how to put them on',
     msg: "Hi Rabbi Labkowski, I found you on the website. I'd like to put on tefillin (to learn how, or to get a pair).",
+  },
+  judaica: {
+    re: /judaica|safrus|\bsofer\b|יודאיק|סת״ם|иудаик|сойфер/i,
+    title: 'Get anything Jewish through us, or have your mezuzahs and tefillin checked',
+    msg: "Hi Rabbi Labkowski, I found you on the website. I'd like help getting something Jewish (Judaica, a mezuzah, tefillin, kosher food), or having my mezuzahs or tefillin checked.",
   },
   donation: {
     re: /donat|donor|contribut|pledge|tax.?deduct|bequest|legacy gift|venmo|zelle|\bsponsor|תרומ|לתרום|пожертв|донат/i,
@@ -38,6 +43,7 @@ const TOPICS = {
 const PAGE_TOPICS = {
   '/learn/mezuzah': 'mezuzah', '/learn/chanukat-habayit': 'mezuzah', '/learn/jewish-home-in-lamorinda': 'mezuzah',
   '/learn/tefillin': 'tefillin', '/learn/buying-tefillin': 'tefillin', '/learn/choosing-a-mezuzah': 'mezuzah', '/learn/hachnasat-sefer-torah': 'donation', '/learn/mitzvah-tanks': 'tefillin', '/learn/jewish-men-in-lamorinda': 'tefillin',
+  '/learn/get-judaica-through-chabad': 'judaica', '/learn/judaica-buying-guide': 'judaica',
   '/donate': 'donation', '/learn/supporting-chabad-of-lamorinda': 'donation', '/learn/halachic-will': 'donation',
   '/contact': 'meeting', '/help/talk-to-the-rabbi': 'meeting',
 };
@@ -108,7 +114,7 @@ function withContact(X, body, path) {
 
 function mountLeads(app, { store, mailer, notifyTo = '', content, base = '', limit, log = console }) {
   const pool = store && store.pool, sent = new Map();
-  const NAMES = { mezuzah: 'a mezuzah', tefillin: 'tefillin', donation: 'giving a donation', meeting: 'meeting with the Rabbi', consult: 'a private conversation' };
+  const NAMES = { mezuzah: 'a mezuzah', tefillin: 'tefillin', judaica: 'getting Judaica or having mezuzahs/tefillin checked', donation: 'giving a donation', meeting: 'meeting with the Rabbi', consult: 'a private conversation' };
   // Saves the request and emails the Rabbi; the same visitor and topic is emailed once a day.
   async function record({ topic, channel, page = '', lang = 'en', cid = '', detail = '', who = '' }) {
     if (!TOPICS[topic]) return;

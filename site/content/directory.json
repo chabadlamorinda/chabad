@@ -12,7 +12,8 @@
   { "id": "mitzvahs", "group": "Mezuzah, tefillin & Judaica", "items": [
     { "name": "Mezuzahs", "url": "/contact", "text": "Buy a kosher mezuzah, have yours checked by a scribe, or get help putting them up with the blessing." },
     { "name": "Tefillin", "url": "/contact", "text": "Put on tefillin with the Rabbi, have your tefillin checked, or get your own pair (also a beautiful bar mitzvah gift)." },
-    { "name": "Shabbat candles and Judaica", "url": "https://baykosher.com", "text": "Candlesticks, menorahs, Kiddush cups and more through Bay Kosher." }
+    { "name": "Shabbat candles and Judaica", "url": "https://baykosher.com", "text": "Candlesticks, menorahs, Kiddush cups and more through Bay Kosher." },
+    { "name": "Anything Jewish, through Chabad of Lamorinda", "url": "/learn/get-judaica-through-chabad", "text": "Kosher mezuzahs, tefillin, a tallit, Judaica, books, gifts and kosher food: we can get it for you, and have your mezuzahs and tefillin checked by a sofer. Call or text the Rabbi at 925-384-7242." }
   ] },
   { "id": "life-events", "group": "Life events", "items": [
     { "name": "New baby: brit milah and baby naming", "url": "/contact", "text": "We help arrange a mohel for a bris and name your baby in the synagogue. Just had a baby and wondering what to do? Call us." },

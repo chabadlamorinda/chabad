@@ -3,7 +3,7 @@
 'use strict';
 const { interestOf } = require('./visitors.js');
 
-const TOPIC = { mezuzah: 'mezuzah', tefillin: 'tefillin', donation: 'giving', meeting: 'a meeting', consult: 'a private conversation' };
+const TOPIC = { mezuzah: 'mezuzah', tefillin: 'tefillin', judaica: 'Judaica or checking', donation: 'giving', meeting: 'a meeting', consult: 'a private conversation' };
 const HOW = { call: 'tapped Call', text: 'tapped Text', whatsapp: 'tapped WhatsApp', email: 'tapped Email', chat: 'asked the chat' };
 
 async function morningDigest(q, base) {

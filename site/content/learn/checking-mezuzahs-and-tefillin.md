@@ -2,7 +2,7 @@
 title: How Often Should a Mezuzah Be Checked? Mezuzah and Tefillin Checking Guide
 description: How often to check your mezuzahs and tefillin: twice in seven years, and yearly in Elul by custom. What a scribe looks for. Ask Chabad of Lamorinda.
 category: Jewish home
-related: mezuzah, genizah, mezuzah-questions, choosing-a-mezuzah, tefillin, buying-tefillin, elul
+related: mezuzah, get-judaica-through-chabad, genizah, mezuzah-questions, choosing-a-mezuzah, tefillin, buying-tefillin, elul
 local: Want your mezuzahs or tefillin checked? Fill in the mezuzah and tefillin form or call 925-384-7242.
 ---
 Jewish law requires that mezuzahs and tefillin be checked by a scribe (sofer) twice in every seven years, and the custom, encouraged by the Lubavitcher Rebbe, is to check them every year in the month of Elul, before Rosh Hashanah. Scrolls outside the house are exposed to weather, so they should be checked more often.
@@ -40,6 +40,10 @@ If a scroll fails, the scribe can sometimes repair it, and sometimes you need a 
 ## Checking in a hard time
 
 Some people check their mezuzahs and tefillin when a family is going through illness, worry or trouble, and when moving into a new home. It is not a magic fix, but it is a meaningful step. If you are unsure, call the Rabbi at 925-384-7242, and you can speak privately.
+
+## We can get it for you
+
+Chabad of Lamorinda can have your mezuzahs and tefillin checked by a sofer (scribe), and get you a new kosher scroll or pair if one is needed. Call or text the Rabbi at 925-384-7242. See [We Can Get It for You](/learn/get-judaica-through-chabad).
 
 ## Common questions
 

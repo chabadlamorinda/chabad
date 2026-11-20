@@ -46,6 +46,10 @@ If you are putting up several mezuzahs at once, say the blessing once, at the fi
 
 A mezuzah scroll can fade, crack or get damaged over time. Jewish law requires checking the scrolls twice every seven years. Many also check them in the month of Elul, before Rosh Hashanah.
 
+## We can get it for you
+
+Chabad of Lamorinda can get you a kosher mezuzah scroll and case, for one door or a whole house, help you put it up, and have your mezuzahs checked by a sofer (scribe). Call or text the Rabbi at 925-384-7242. See [We Can Get It for You](/learn/get-judaica-through-chabad).
+
 ## Common questions
 
 ### Why do people kiss the mezuzah?

@@ -53,6 +53,10 @@ Never be shy to ask for help. It quickly becomes easy.
 
 In Chabad custom, this one blessing covers both the arm and head tefillin, as long as you do not speak between putting on the two. If you do speak, a second blessing ("al mitzvat tefillin") is said on the head tefillin. Many other communities say a second blessing before the head tefillin every time. If you are unsure, ask the Rabbi.
 
+## We can get it for you
+
+Chabad of Lamorinda can get you a kosher pair of tefillin, for a bar mitzvah boy or a grown man, help you learn to put them on, and have your tefillin checked by a sofer (scribe). Call or text the Rabbi at 925-384-7242. See [We Can Get It for You](/learn/get-judaica-through-chabad).
+
 ## Common questions
 
 ### Do I need to be religious to put on tefillin?
