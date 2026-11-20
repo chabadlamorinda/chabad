@@ -1116,3 +1116,5 @@ summary { min-height: 40px; display: list-item; }
 .watch-box { padding: 20px; margin-top: 24px; }
 .watch-box h2 { margin-top: 0; }
 .watch-form { display: grid; gap: 10px; max-width: 420px; }
+.week-cards a.has-pic { padding-top: 0; overflow: hidden; }
+.week-cards .wk-pic { display: block; width: calc(100% + 36px); max-width: none; margin: 0 -18px 10px; aspect-ratio: 16 / 9; object-fit: cover; }

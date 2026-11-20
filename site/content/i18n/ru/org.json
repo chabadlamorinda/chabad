@@ -66,13 +66,13 @@
       "day": "Каждое утро",
       "time": "Воскресенье 8:00; понедельник–пятница 6:30",
       "name": "Утренняя молитва (Шахарит), с чтением Торы по понедельникам и четвергам. Нужно сказать Кадиш? Это возможно.",
-      "link": "/shabbat"
+      "link": "/shabbat", "image": "/media/photos/tallit-siddur.jpg"
     },
     {
       "day": "Воскресенье",
       "time": "10:00 - 12:00",
       "name": "Еврейская школа Ламоринды",
-      "link": "/programs/hebrew-school",
+      "link": "/programs/hebrew-school", "image": "/media/photos/kids-learning.jpg",
       "byDay": "Sunday",
       "startTime": "10:00",
       "endTime": "12:00"
@@ -81,7 +81,7 @@
       "day": "Воскресенье",
       "time": "21:00 - 22:00",
       "name": "Еженедельный урок Торы (на английском)",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/torah-study.jpg",
       "byDay": "Sunday",
       "startTime": "21:00",
       "endTime": "22:00"
@@ -90,14 +90,14 @@
       "day": "Понедельник",
       "time": "20:30",
       "name": "Урок Тании на иврите с ребецен Ципорой Лабковски",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/seforim-shelf.jpg",
       "byDay": "Monday", "startTime": "20:30", "place": "В доме раввина в Лафайетте. Позвоните 925-384-7242, чтобы узнать адрес и подробности."
     },
     {
       "day": "Вторник",
       "time": "20:30 - 21:30",
       "name": "Урок Торы на иврите, с ужином",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/torah-scroll.jpg",
       "byDay": "Tuesday",
       "startTime": "20:30",
       "endTime": "21:30"
@@ -106,7 +106,7 @@
       "day": "Среда",
       "time": "13:00 - 14:00",
       "name": "Урок Тании (на английском)",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/hebrew-letters.jpg",
       "byDay": "Wednesday",
       "startTime": "13:00",
       "endTime": "14:00",
@@ -116,7 +116,7 @@
       "day": "Пятница",
       "time": "{kabbalat-shabbat}",
       "name": "Кабалат Шабат",
-      "link": "/shabbat",
+      "link": "/shabbat", "image": "/media/photos/shabbat-table.jpg",
       "byDay": "Friday",
       "startTime": "17:45"
     },
@@ -124,7 +124,7 @@
       "day": "Суббота",
       "time": "10:00",
       "name": "Субботняя молитва и обед-Кидуш",
-      "link": "/shabbat",
+      "link": "/shabbat", "image": "/media/photos/torah-ark.jpg",
       "byDay": "Saturday",
       "startTime": "10:00",
       "endTime": "12:00"

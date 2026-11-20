@@ -72,13 +72,13 @@
       "day": "Every morning",
       "time": "Sunday 8:00 AM; Monday to Friday 6:30 AM",
       "name": "Morning services (Shacharit), with the Torah reading on Monday and Thursday. Need to say Kaddish? You can.",
-      "link": "/shabbat"
+      "link": "/shabbat", "image": "/media/photos/tallit-siddur.jpg"
     },
     {
       "day": "Sunday",
       "time": "10:00 AM – 12:00 PM",
       "name": "Lamorinda Hebrew School",
-      "link": "/programs/hebrew-school",
+      "link": "/programs/hebrew-school", "image": "/media/photos/kids-learning.jpg",
       "byDay": "Sunday",
       "startTime": "10:00",
       "endTime": "12:00"
@@ -87,7 +87,7 @@
       "day": "Sunday",
       "time": "9:00 – 10:00 PM",
       "name": "Weekly Torah class (English)",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/torah-study.jpg",
       "byDay": "Sunday",
       "startTime": "21:00",
       "endTime": "22:00"
@@ -96,7 +96,7 @@
       "day": "Monday",
       "time": "8:30 PM",
       "name": "Tanya class in Hebrew, with Rebbetzin Tzipora Labkowski",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/seforim-shelf.jpg",
       "byDay": "Monday",
       "startTime": "20:30",
       "place": "At the Rabbi's home in Lafayette. Call 925-384-7242 for the address and more details."
@@ -105,7 +105,7 @@
       "day": "Tuesday",
       "time": "8:30 – 9:30 PM",
       "name": "Torah class in Hebrew, with a meal",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/torah-scroll.jpg",
       "byDay": "Tuesday",
       "startTime": "20:30",
       "endTime": "21:30"
@@ -114,7 +114,7 @@
       "day": "Wednesday",
       "time": "1:00 – 2:00 PM",
       "name": "Tanya class (English)",
-      "link": "/programs/adult-education",
+      "link": "/programs/adult-education", "image": "/media/photos/hebrew-letters.jpg",
       "byDay": "Wednesday",
       "startTime": "13:00",
       "endTime": "14:00",
@@ -124,7 +124,7 @@
       "day": "Friday",
       "time": "{kabbalat-shabbat}",
       "name": "Kabbalat Shabbat",
-      "link": "/shabbat",
+      "link": "/shabbat", "image": "/media/photos/shabbat-table.jpg",
       "byDay": "Friday",
       "startTime": "17:45",
       "seasonal": true
@@ -133,7 +133,7 @@
       "day": "Saturday",
       "time": "10:00 AM",
       "name": "Shabbat services and Kiddush lunch",
-      "link": "/shabbat",
+      "link": "/shabbat", "image": "/media/photos/torah-ark.jpg",
       "byDay": "Saturday",
       "startTime": "10:00",
       "endTime": "12:00"

@@ -115,7 +115,7 @@ ${campaignBanner(X)}
 </section>
 ${(o.weekly || []).length ? `<section class="wrap sec week-sec">
   <div class="sec-h"><h2>${esc(t('Every week at Chabad'))}</h2><a href="/calendar">${esc(t('Full calendar'))} →</a></div>
-  <ul class="week-cards">${o.weekly.map((w) => `<li><a href="${esc(w.link || '/events')}"><span class="wk-day">${esc(w.day)}</span><strong>${esc(w.name)}</strong><span class="wk-time">${esc(w.time)}</span></a></li>`).join('')}</ul>
+  <ul class="week-cards">${o.weekly.map((w) => `<li><a href="${esc(w.link || '/events')}"${w.image ? ' class="has-pic"' : ''}>${w.image ? `<img class="wk-pic" src="${esc(/^\/media\/photos\/[a-z-]+\.jpg$/.test(w.image) ? w.image.replace(/\.jpg$/, '-sm.jpg') : w.image)}" alt="" loading="lazy" decoding="async" width="560" height="315">` : ''}<span class="wk-day">${esc(w.day)}</span><strong>${esc(w.name)}</strong><span class="wk-time">${esc(w.time)}</span></a></li>`).join('')}</ul>
 </section>` : ''}
 <section class="band help-band"><div class="wrap here">
   <div><h2>${esc(t("We're here for you"))}</h2><p>${esc(t('Illness, a loss, a new baby, a wedding, a hard time at home or at work: call the Rabbi first. We help with everything, from beginning to end.'))}</p></div>
