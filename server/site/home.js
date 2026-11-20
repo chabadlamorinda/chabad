@@ -137,7 +137,6 @@ ${H.story ? `<section class="wrap sec"><div class="story story-sm">
   <div class="sec-h"><h2>${esc(t('Get involved'))}</h2><a href="/get-involved">${esc(t('More ways'))} →</a></div>
   <div class="gi">${involved.map(([a, h, p, u]) => `<a class="gi-i" href="${u}">${artImg(a)}<strong>${esc(t(h))}</strong><span>${esc(t(p))}</span></a>`).join('')}</div>
 </section>
-${bayKosher(X)}
 ${pics.length ? `<section class="wrap sec photos-sec">
   <div class="sec-h"><h2>${esc(t('Moments from our community'))}</h2>${pics.length ? `<a href="/photos">${esc(t('More photos'))} →</a>` : ''}</div>
   ${pics.length ? `<div class="pics">${pics.slice(0, 8).map((p) => `<a href="${esc(p.link)}" rel="noopener" target="_blank"><img src="${esc(p.src)}" alt="${esc(p.alt)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}
@@ -165,6 +164,7 @@ ${pics.length ? `<section class="wrap sec photos-sec">
     ${nh && nh.slug === 'chanukah' && days <= 45 ? `<a href="/chanukah-quiz">${artImg('menorah')}<span>${esc(t('Chanukah quiz'))}</span></a>` : ''}
   </div>
 </section>
+${bayKosher(X)}
 ${posts.length ? `<section class="wrap sec"><div class="sec-h"><h2>${esc(t('Community news'))}</h2><a href="/community">${esc(t('Community board'))} →</a></div><div class="grid">${posts.map((i) => `<a class="card tile" href="/community"><p class="eyebrow">${esc(t(i.kind === 'mazal-tov' ? 'Mazal Tov' : i.kind === 'shiva' ? 'Condolences' : 'News'))}</p><h3>${esc(i.title)}</h3></a>`).join('')}</div></section>` : ''}`;
 }
 module.exports = { homeBody, fromProgram, holidayPhoto };
