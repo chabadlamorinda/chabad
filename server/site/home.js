@@ -57,6 +57,17 @@ function explore(C, nh, days) {
   for (const s of BASICS) if (by.has(s) && !out.includes(s)) out.push(s);
   return out.slice(0, 6).map((s) => by.get(s));
 }
+// Bay Kosher, part of Chabad of Lamorinda: what it is and what is in the store, each department one tap into the shop.
+const BK_DEPTS = [['meat', 'Meat and poultry'], ['deli-provisions', 'Deli and prepared foods'], ['baked-goods', 'Challah and baked goods'], ['dairy', 'Dairy'], ['frozen', 'Frozen'], ['groceries', 'Groceries'], ['candy-sweets', 'Candy and snacks'], ['beverages', 'Drinks and wine'], ['judaica', 'Judaica']];
+function bayKosher(X) {
+  const { t } = X, shop = 'https://shop.baykosher.com' + (X.lang === 'en' ? '' : '/' + X.lang);
+  return `<section class="wrap sec"><div class="bk card">
+  <div class="bk-head">${artImg('kosher-pot')}<div><p class="eyebrow">${esc(t('Part of Chabad of Lamorinda'))}</p><h2>Bay Kosher</h2>
+  <p>${esc(t('Our nonprofit kosher market in Lafayette: order online and pick up in about 3 hours, or get it delivered across the Bay Area.'))}</p></div></div>
+  <p class="chips bk-depts">${BK_DEPTS.map(([slug, name]) => `<a class="chip" href="${shop}/c/${slug}" rel="noopener">${esc(t(name))}</a>`).join('')}</p>
+  <p class="btns"><a class="btn gold" href="${shop}" rel="noopener">${esc(t('Shop at Bay Kosher'))}</a> <a class="btn ghost" href="/programs/bay-kosher">${esc(t('About Bay Kosher'))}</a></p>
+</div></section>`;
+}
 function homeBody(X, { sh, ks, hols, evs, cnt, pics, posts, holPage, dayGuides = [], today }) {
   const { t, C } = X, o = C.org, H = C.home || {};
   // Large banners: featured events and holiday events coming in the next two months, then the next holiday, then home.json.
@@ -126,6 +137,7 @@ ${H.story ? `<section class="wrap sec"><div class="story story-sm">
   <div class="sec-h"><h2>${esc(t('Get involved'))}</h2><a href="/get-involved">${esc(t('More ways'))} →</a></div>
   <div class="gi">${involved.map(([a, h, p, u]) => `<a class="gi-i" href="${u}">${artImg(a)}<strong>${esc(t(h))}</strong><span>${esc(t(p))}</span></a>`).join('')}</div>
 </section>
+${bayKosher(X)}
 ${pics.length ? `<section class="wrap sec photos-sec">
   <div class="sec-h"><h2>${esc(t('Moments from our community'))}</h2>${pics.length ? `<a href="/photos">${esc(t('More photos'))} →</a>` : ''}</div>
   ${pics.length ? `<div class="pics">${pics.slice(0, 8).map((p) => `<a href="${esc(p.link)}" rel="noopener" target="_blank"><img src="${esc(p.src)}" alt="${esc(p.alt)}" loading="lazy" decoding="async" width="300" height="300"></a>`).join('')}</div>` : ''}

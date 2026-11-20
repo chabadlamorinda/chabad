@@ -1630,3 +1630,10 @@ test('the home page gives real things to read and try: the coming holiday and th
   for (const u of ['/tools/yahrzeit', '/tools/hebrew-date', '/tools/zmanim', '/kaddish', '/tehillim']) assert.ok(home.includes('href="' + u + '"'), 'try this has ' + u);
   assert.equal((await client().call('GET', '/api/site/suggest?read=challah&n=4')).json.items.length, 4);
 });
+
+test('the home page has a Bay Kosher area: part of Chabad, what is in the store, one tap into each department', async () => {
+  const h = (await client().call('GET', '/')).text; assert.match(h, /class="bk card"/); assert.match(h, /Part of Chabad of Lamorinda/);
+  assert.match(h, /href="https:\/\/shop\.baykosher\.com\/c\/meat"/); assert.match(h, /href="\/programs\/bay-kosher"/);
+  assert.match((await client().call('GET', '/he/')).text, /shop\.baykosher\.com\/he\/c\/judaica/);
+  assert.match((await client().call('GET', '/programs/bay-kosher')).text, /Bay Kosher is part of Chabad of Lamorinda/);
+});
