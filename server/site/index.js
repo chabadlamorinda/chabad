@@ -125,7 +125,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     res.json({ ok: true, going: 0 });
   });
   let community = null; // set just below; visitors links signed-in members through it
-  const visitors = mountVisitors(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log, readMember: (req) => (community ? community.readMember(req) : null) });
+  const visitors = mountVisitors(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log, readMember: (req) => (community ? community.readMember(req) : null), jobs: !!reminders });
   const leads = mountLeads(app, { store, mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, limit, log });
   const chat = mountChat(app, { env, client: chatClient, content, ctxOf, limit, store, log, leads, mailer, notifyTo: env.ADMIN_EMAIL || '', base });
   community = mountCommunity(app, { store, mailer, secret, base, limit, log, content, tOf, langOf, notifyTo: env.ADMIN_EMAIL || '', whenOf: (l, e) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).when(e), townsOf: (l) => ctxOf({ lang: l, method: 'GET', originalUrl: '/', query: {}, get: () => '' }).C.towns });
@@ -201,7 +201,7 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
     pages.render(res, { path: req.path, noindex: true, title: t('Page not found'), body: `<section class="wrap sec narrow"><h1>${esc(t('We could not find that page'))}</h1><form class="searchbar" action="/search" role="search"><input type="search" name="q" value="${esc((() => { try { return decodeURIComponent(req.path); } catch (e) { return ''; } })().replace(/^\/(he|ru)\//, '/').split('/').pop().replace(/[-_]+/g, ' ').replace(/\.\w+$/, '').slice(0, 60))}" aria-label="${esc(t('Search the website'))}"><button class="btn gold" type="submit">${esc(t('Search'))}</button></form><p>${esc(t('It may have moved. Try these:'))} <a href="/events">${esc(t('Events calendar'))}</a> · <a href="/shabbat">${esc(t('Shabbat times'))}</a> · <a href="/">${esc(t('Home'))}</a></p></section>` }, 404).catch(next);
   };
   return {
-    content, base, notFound, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
+    content, base, notFound, visitors, facebook: fb, upcoming: pages.upcoming, when: pages.when, reminders: mail, i18n, ctxOf,
     reload() { data = withCampaigns(load(contentDir, { kabbalat: data.kabbalat, siteHost })); refreshKabbalat(); return data; },
     // Rabbi area extras (RSVP lists, birthdays, post an event to Facebook).
     mountAdmin(r2, ctx) {
@@ -242,6 +242,8 @@ function mountSite(app, { store = null, mailer = null, secret, limit, log = cons
       require('../backup.js').mountBackupAdmin(r2, ctx, { store });
       require('./secure-settings.js').mountAdmin(r2, ctx, { store, env, secret, log, notify: require('./notify.js').makeNotify({ mailer, notifyTo: env.ADMIN_EMAIL || '', content, base, log }) });
       r2.get('/community', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.html')));
+      r2.get('/visitor', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'visitor.html')));
+      r2.get('/visitor.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'visitor.js')));
       r2.get('/community.js', (req, res) => res.sendFile(require('path').join(__dirname, '..', 'admin', 'community.js')));
     },
   };

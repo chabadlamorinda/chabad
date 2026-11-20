@@ -17,17 +17,23 @@ async function morningDigest(q, base) {
     rows(`SELECT question FROM chat_questions WHERE created_at > ${since} ORDER BY created_at DESC LIMIT 5`),
     rows('SELECT count(DISTINCT vid)::int AS n FROM visitor_views WHERE day = CURRENT_DATE - 1'),
   ]);
+  const [drafts, pastoral] = await Promise.all([
+    rows(`SELECT name, email, phone, form, amount FROM form_drafts WHERE submitted_at IS NULL AND handled_at IS NULL AND (email <> '' OR phone <> '') AND updated_at > ${since} AND updated_at < now() - interval '20 minutes' ORDER BY updated_at`),
+    rows(`SELECT count(*)::int AS n FROM visitor_pastoral WHERE day >= CURRENT_DATE - 1`),
+  ]);
   const L = [];
   if (leads.length) { L.push('REQUESTS'); for (const l of leads) L.push(`- Someone ${HOW[l.channel] || l.channel} about ${TOPIC[l.topic] || l.topic}${l.page ? ' (' + l.page + ')' : ''}${l.detail ? ': ' + l.detail.replace(/\s+/g, ' ').slice(0, 160) : ''}`); L.push(''); }
   const warm = people.map((p) => ({ ...p, interests: [...new Set(p.paths.map(interestOf).filter((i) => i && i.alert).map((i) => i.label))] })).filter((p) => p.interests.length);
   if (warm.length) { L.push('PEOPLE LOOKING AT IMPORTANT TOPICS'); for (const p of warm) L.push(`- ${p.name || p.email}: ${p.interests.join(', ')} (${p.email}${p.phone ? ', ' + p.phone : ''})`); L.push(''); }
+  if (drafts.length) { L.push("STARTED A FORM OR A GIFT AND DIDN'T FINISH"); for (const d of drafts) L.push(`- ${d.name || d.email || d.phone}: ${d.form === 'give' ? 'a gift' : d.form}${d.amount ? ' ' + d.amount : ''} (${[d.email, d.phone].filter(Boolean).join(', ')})`); L.push(''); }
+  if (pastoral[0] && pastoral[0].n) L.push(`SOMEONE MAY NEED YOU: ${pastoral[0].n} visitor${pastoral[0].n === 1 ? '' : 's'} read about a loss, a hard time or a new baby (you were emailed about each one).`, '');
   if (forms.length) { L.push('NEW SIGN-UPS'); for (const f of forms) L.push(`- ${f.form_id}: ${f.n}`); L.push(''); }
   if (rsvps.length) { L.push('NEW RSVPS'); for (const r of rsvps) L.push(`- ${r.event_slug}: ${r.n}`); L.push(''); }
   if (pending[0] && pending[0].n) L.push(`WAITING FOR YOUR APPROVAL: ${pending[0].n} (Mazal Tovs, notices, ideas)`, '');
   if (questions.length) { L.push('PEOPLE ASKED THE CHAT'); for (const x of questions) L.push(`- ${x.question.slice(0, 140)}`); L.push(''); }
   if (!L.length) return null;
   const n = visits[0] ? visits[0].n : 0;
-  return { subject: `Website this morning: ${[leads.length && leads.length + ' requests', warm.length && warm.length + ' people to reach out to', forms.length && 'new sign-ups', rsvps.length && 'new RSVPs'].filter(Boolean).join(', ') || 'a short update'}`,
+  return { subject: `Website this morning: ${[leads.length && leads.length + ' requests', warm.length && warm.length + ' people to reach out to', drafts.length && drafts.length + ' unfinished', forms.length && 'new sign-ups', rsvps.length && 'new RSVPs'].filter(Boolean).join(', ') || 'a short update'}`,
     text: [`Good morning! Yesterday ${n} people visited the website. Here is what may need you:`, '', ...L, `Everything, with Call / WhatsApp buttons: ${base}/admin/community`].join('\n') };
 }
 module.exports = { morningDigest };

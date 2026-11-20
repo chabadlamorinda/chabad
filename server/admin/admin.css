@@ -79,3 +79,8 @@ button.quiet,a.quiet{border-color:#d7c3a3;color:#7d5411;background:#fff}
 .rd-row{display:grid;grid-template-columns:minmax(0,1fr) 30% auto;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid #f0ebe3;font-size:15px}
 .rd-row a,.rd-row span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#201f1d}.rd-row i{display:block;height:8px;border-radius:4px;background:#b68235}.rd-row b{font-family:system-ui,sans-serif;font-size:14px;color:#605d5d}
 .rd-row:has(> :nth-child(2):last-child){grid-template-columns:minmax(0,1fr) auto}
+
+/* On the website right now; ideas */
+.live .live-n { font-size: 2rem; line-height: 1.1; }
+.idea { padding: 6px 0; border-top: 1px solid #eee; }
+.idea:first-of-type { border-top: 0; }

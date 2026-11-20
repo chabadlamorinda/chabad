@@ -140,7 +140,54 @@
     var m = /(?:^|;\s*)cl_vid=([a-z0-9]+)/.exec(document.cookie), vid = m && m[1];
     if (!vid) { vid = (Math.random().toString(36).slice(2) + Date.now().toString(36) + Math.random().toString(36).slice(2)).slice(0, 32); }
     try { document.cookie = 'cl_vid=' + vid + ';path=/;max-age=' + 400 * 86400 + ';samesite=lax' + (location.protocol === 'https:' ? ';secure' : ''); } catch (e) {}
-    try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname, ref: document.referrer || '', q: location.search || '' }) }).catch(function () {}); } catch (e) {}
+    var hit = (Math.random().toString(36).slice(2) + Date.now().toString(36)).slice(0, 24), tz = '';
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    try { fetch('/api/site/view', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify({ path: location.pathname, ref: document.referrer || '', q: location.search || '', hit: hit, tz: tz, lang: LANG, title: document.title || '' }) }).catch(function () {}); } catch (e) {}
+    // How long the page is read (only while it is on screen), which also shows the Rabbi who is on the website right now.
+    var shown = 0, since = document.visibilityState === 'visible' ? Date.now() : 0, started = Date.now();
+    var secs = function () { return Math.round((shown + (since ? Date.now() - since : 0)) / 1000); };
+    var ping = function (last) {
+      var body = JSON.stringify({ hit: hit, secs: secs() });
+      try { if (last && navigator.sendBeacon) navigator.sendBeacon('/api/site/ping', new Blob([body], { type: 'application/json' })); else fetch('/api/site/ping', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: body }).catch(function () {}); } catch (e) {}
+    };
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'hidden') { if (since) { shown += Date.now() - since; since = 0; } ping(true); } else if (!since) since = Date.now();
+    });
+    window.addEventListener('pagehide', function () { ping(true); });
+    var every = setInterval(function () { if (Date.now() - started > 2 * 3600 * 1000) return clearInterval(every); if (document.visibilityState === 'visible') ping(false); }, 30000);
+    // Forms: the name, email and phone typed in (and the amount on the giving form) are saved as they are typed, so the Rabbi can help
+    // someone who was interrupted. Every such form says so in a line under it, linked to the privacy page. Nothing else typed is sent.
+    var CONTACT = /^(name|full_?name|first_?name|last_?name|your_?name|parent_?name|donorname|email|donoremail|phone|donorphone|tel|mobile)$/i;
+    var keyOf = function (f) {
+      var a = function (n) { return f.getAttribute(n); }, r = f.closest('[data-rsvp]');
+      return (a('data-form') || (f.hasAttribute('data-give') ? 'give' : '') || (a('data-campaign-give') ? 'campaign:' + a('data-campaign-give') : '') || (f.hasAttribute('data-subscribe') ? 'subscribe' : '') ||
+        (f.hasAttribute('data-submit') ? (a('data-kind') || 'message') : '') || (r ? 'rsvp:' + r.getAttribute('data-rsvp') : '') || f.id || 'form').toLowerCase().replace(/[^a-z0-9:_-]/g, '').slice(0, 80);
+    };
+    var watched = function (f) { return f && (f.method || 'get').toLowerCase() !== 'get' && !f.querySelector('input[type=password]') && [].some.call(f.elements, function (x) { return x.type === 'email' || x.type === 'tel' || CONTACT.test(x.name || ''); }); };
+    var timers = {};
+    var save = function (f) {
+      var d = { form: keyOf(f), path: location.pathname, fields: [] };
+      [].forEach.call(f.elements, function (x) {
+        var v = (x.value || '').trim(), n = (x.name || '').toLowerCase();
+        if (!v || x.type === 'hidden' || x.type === 'password' || x.type === 'checkbox' || x.type === 'radio' || x.type === 'submit' || x.type === 'button') return;
+        if (n) d.fields.push(n);
+        if (x.type === 'email' || /email/.test(n)) d.email = v; else if (x.type === 'tel' || /phone|tel|mobile/.test(n)) d.phone = v; else if (CONTACT.test(n) && !d.name) d.name = v;
+      });
+      if (f.hasAttribute('data-give') || f.hasAttribute('data-campaign-give')) { var o = f.elements.other, p = f.querySelector('input[name=amt]:checked'); var a = (o && o.value) || (p && p.value); if (a) d.amount = '$' + a; }
+      if (!(d.email || d.phone || (d.name && d.name.length > 1))) return;
+      fetch('/api/site/draft', { method: 'POST', keepalive: true, credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-site': '1' }, body: JSON.stringify(d) }).catch(function () {});
+    };
+    document.addEventListener('input', function (e) {
+      var f = e.target && e.target.form; if (!watched(f)) return;
+      var k = keyOf(f); clearTimeout(timers[k]); timers[k] = setTimeout(function () { save(f); }, 1500);
+    }, true);
+    [].forEach.call(document.querySelectorAll('form'), function (f) {
+      if (!watched(f) || f.querySelector('.draft-note')) return;
+      var note = document.createElement('p'); note.className = 'draft-note';
+      note.appendChild(document.createTextNode(T('Your name, email and phone are saved as you type, so we can help even if you don’t finish.') + ' '));
+      var a = document.createElement('a'); a.href = (LANG === 'en' ? '' : '/' + LANG) + '/privacy'; a.textContent = T('Privacy'); note.appendChild(a);
+      var btn = f.querySelector('[type=submit], button:not([type])'); if (btn && btn.parentNode === f) f.insertBefore(note, btn.nextSibling); else f.appendChild(note);
+    });
   })();
   if (store.get('cl_signed')) {
     Array.prototype.forEach.call(document.querySelectorAll('[data-account]'), function (a) { a.textContent = T('My account'); }); // header button and the menu

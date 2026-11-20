@@ -108,8 +108,25 @@
     api('GET', '/site/visitors').then(function (x) {
       if (x._status !== 200) { sv.appendChild(el('p', { class: 'small', text: NOT_SET_UP })); return; }
       sv.appendChild(el('p', { class: 'small' }, [el('strong', { text: x.week.visitors + ' visitors this week. ' }), x.week.interests.slice(0, 8).map(function (i) { return i.label + ': ' + i.n; }).join(' · ')]));
+      // Started a form or a gift, typed a way to reach them, and did not send it.
+      if (x.drafts && x.drafts.length) {
+        sv.appendChild(el('h3', { text: 'Started but didn’t finish (' + x.drafts.length + ')' }));
+        x.drafts.forEach(function (d) {
+          var card = el('div', { class: 'card hot' }, [el('strong', { text: (d.name || d.email || d.phone) + ' started ' + d.title + (d.amount ? ' (' + d.amount + ')' : '') }),
+            el('div', { class: 'small', text: [d.email, d.phone, d.when].filter(Boolean).join(' · ') }),
+            el('div', { class: 'row' }, contactBtns(d.phone, d.email).concat([el('a', { class: 'btn', href: '/admin/visitor?v=' + d.vid, text: 'Their visits' }),
+              el('button', { text: 'Done', onclick: function () { api('POST', '/site/drafts/done', { vid: d.vid, form: d.form }).then(function () { card.remove(); }); } })]))]);
+          sv.appendChild(card);
+        });
+      }
+      // "Someone may need you" (pastoral alerts) of the last two weeks, named or anonymous.
+      if (x.pastoral && x.pastoral.length) {
+        sv.appendChild(el('h3', { text: 'Read about a loss, a hard time or a new baby (last 2 weeks)' }));
+        sv.appendChild(el('div', { class: 'card' }, x.pastoral.map(function (p) { return el('div', { class: 'small' }, [p.day + '  ', el('a', { href: '/admin/visitor?v=' + p.vid, text: p.name || 'An anonymous visitor' })]); })));
+      }
+      if (x.drafts && x.drafts.length) sv.count(x.drafts.length + W['visitors'](x), true);
       if (!x.items.length) { sv.appendChild(el('p', { class: 'small', text: 'No one has left their details yet.' })); return; }
-      sv.count(W['visitors'](x), true);
+      sv.count(W['visitors'](x) + ((x.drafts && x.drafts.length) || 0), true);
       x.items.forEach(function (p) {
         var pages = el('div', { class: 'small', hidden: 'hidden' }, p.pages.map(function (v) { return el('div', { text: v.day + '  ' + v.path }); }));
         sv.appendChild(el('div', { class: 'card' + (p.hot ? ' hot' : '') }, [
@@ -503,6 +520,14 @@
 
     // ---- What people read and search (reading.js) ----
     var srd = section('What people read and search', 'The most-read pages this month and what people searched for. Searches that found nothing are the writing list.', 'Reading');
+    // Ideas from what visitors do (the first few are also on the desk).
+    var ideasBox = el('div', { class: 'card' }); ideasBox.hidden = true; srd.appendChild(ideasBox);
+    api('GET', '/site/ideas').then(function (j) {
+      if (j._status !== 200 || !j.items || !j.items.length) return;
+      ideasBox.appendChild(el('strong', { text: 'Ideas from your visitors (last 30 days)' }));
+      j.items.forEach(function (i) { ideasBox.appendChild(el('div', { class: 'idea' }, [el('div', { text: i.text }), i.why ? el('div', { class: 'small', text: i.why }) : null, i.link ? el('a', { class: 'small', href: i.link, text: 'Open ›' }) : null])); });
+      ideasBox.hidden = false;
+    });
     api('GET', '/site/reading').then(function (r) {
       if (r._status !== 200) { srd.appendChild(el('p', { class: 'small', text: NOT_SET_UP })); return; }
       var list = function (title, items, line) { var c = el('div', { class: 'card' }, [el('strong', { text: title })]); if (!items.length) c.appendChild(el('div', { class: 'small', text: 'Nothing yet.' })); items.forEach(function (x) { c.appendChild(line(x)); }); srd.appendChild(c); };

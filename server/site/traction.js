@@ -34,6 +34,8 @@ function weeklyText(d, base) {
 async function weeklyTraction(q, base, C) {
   const d = await tractionData(q, C);
   if (!d.visitors && !d.views) return null;
-  return { subject: `How the website did this week: ${d.visitors} visitors`, text: weeklyText(d, base) };
+  let extra = '';
+  try { const list = C ? await require('./insights.js').ideas(q, C, base) : []; if (list.length) extra = '\n\nIDEAS FROM YOUR VISITORS\n' + list.map((i) => '- ' + i.text).join('\n'); } catch (e) { extra = ''; }
+  return { subject: `How the website did this week: ${d.visitors} visitors`, text: weeklyText(d, base) + extra };
 }
 module.exports = { tractionData, weeklyTraction, weeklyText };

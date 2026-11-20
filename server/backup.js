@@ -6,7 +6,7 @@
 // The content itself (guides, events, pages) lives in GitHub, which keeps every version.
 'use strict';
 const zlib = require('zlib');
-const SKIP = new Set(['visitor_views', 'visitor_sources', 'email_log']);
+const SKIP = new Set(['visitor_views', 'visitor_sources', 'visitor_hits', 'email_log']);
 
 async function snapshot(pool) {
   const tables = (await pool.query("SELECT table_name FROM information_schema.tables WHERE table_schema='public' AND table_type='BASE TABLE' ORDER BY table_name")).rows.map((r) => r.table_name).filter((t) => !SKIP.has(t));

@@ -1573,3 +1573,39 @@ test('one account for the website and the My Pushka app: same person, same login
   await q("INSERT INTO members (id, name, email) VALUES ('m_cccccccccccccccccccccccc', 'Planted', 'gil@example.com')");
   assert.notEqual(await store.ensureVerifiedMember('gil@example.com'), 'm_cccccccccccccccccccccccc');
 });
+
+test('who is on the website now, time on each page, forms started but not sent, and a private note when someone reads about a loss', async () => {
+  const vid = 'p' + 'abc123def456'.repeat(2), cookie = 'cl_vid=' + vid, ua = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) Mobile/15E148';
+  const post = (path, body, site = true) => fetch(base + path, { method: 'POST', headers: Object.assign({ 'content-type': 'application/json', cookie, 'user-agent': ua }, site ? { 'x-site': '1' } : {}), body: JSON.stringify(body) });
+  await post('/api/site/view', { path: '/learn/shiva', hit: 'hit0000001', title: 'Sitting shiva | Chabad', tz: 'America/Los_Angeles', lang: 'en' });
+  await new Promise((r) => setTimeout(r, 300));
+  await post('/api/site/ping', { hit: 'hit0000001', secs: 95 }, false); // sendBeacon cannot send headers
+  await new Promise((r) => setTimeout(r, 300));
+  const h = (await store.pool.query('SELECT device, secs, tz FROM visitor_hits WHERE id=$1', ['hit0000001'])).rows[0];
+  assert.equal(h.device, 'Phone'); assert.equal(h.secs, 95); assert.equal(h.tz, 'America/Los_Angeles');
+  const a = await admin(), live = (await a.call('GET', '/admin/api/site/live')).json;
+  assert.ok(live.now >= 1 && live.today >= 1, 'counted as on the website now'); assert.ok(live.pages.some((p) => p.path === '/learn/shiva'));
+  assert.equal((await client().call('GET', '/admin/api/site/live')).status, 401, 'only the Rabbi');
+  // a form started, name and phone typed, never sent: kept, and the Rabbi is told once
+  await post('/api/site/draft', { form: 'need-help', path: '/forms/need-help', name: 'Dina Roth', phone: '925 555 0100', fields: ['name', 'phone'] });
+  await new Promise((r) => setTimeout(r, 300));
+  const V = server_site().visitors;
+  await store.pool.query("UPDATE form_drafts SET updated_at = now() - interval '30 minutes' WHERE vid=$1", [vid]);
+  await store.pool.query("UPDATE visitor_hits SET started_at = now() - interval '40 minutes', last_at = now() - interval '30 minutes' WHERE vid=$1", [vid]);
+  const n0 = mails.length; await V.checkDrafts(); await V.checkDrafts();
+  const d = mails.slice(n0); assert.equal(d.length, 1, 'once'); assert.match(d[0].text, /Dina Roth/); assert.match(d[0].text, /925 555 0100/);
+  const vis = (await a.call('GET', '/admin/api/site/visitors')).json; assert.ok(vis.drafts.some((x) => x.name === 'Dina Roth'), 'listed as started but not finished');
+  // the pastoral note: which pages and how long, once
+  const n1 = mails.length; await V.checkPastoral(); await V.checkPastoral();
+  const p = mails.slice(n1); assert.equal(p.length, 1); assert.match(p[0].subject + p[0].text, /Someone may need you/); assert.match(p[0].text, /Loss & mourning/); assert.match(p[0].text, /Sitting shiva \| Chabad · 2 min/);
+  const tl = await a.call('GET', '/admin/api/site/visitor/' + vid); assert.equal(tl.status, 200); assert.ok(JSON.stringify(tl.json).includes('/learn/shiva'));
+  // sending the form marks the draft as finished
+  await post('/api/site/draft', { form: 'rabbi', path: '/contact', name: 'Dina Roth', email: 'dina@example.com' });
+  await new Promise((r) => setTimeout(r, 300));
+  await post('/api/site/submit', { kind: 'rabbi', title: 'Hello', name: 'Dina Roth', email: 'dina@example.com' });
+  await new Promise((r) => setTimeout(r, 400));
+  assert.ok((await store.pool.query("SELECT submitted_at FROM form_drafts WHERE vid=$1 AND form='rabbi'", [vid])).rows[0].submitted_at, 'sent = finished');
+  const ideas = (await a.call('GET', '/admin/api/site/ideas')); assert.equal(ideas.status, 200); assert.ok(Array.isArray(ideas.json.items));
+  assert.match((await client().call('GET', '/privacy')).text, /saved as you type/);
+  assert.match(fs.readFileSync(path.join(__dirname, '..', 'site', 'assets', 'site.js'), 'utf8'), /saved as you type, so we can help/);
+});

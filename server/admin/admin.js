@@ -51,8 +51,10 @@
       app.appendChild(body);
       return;
     }
+    app.appendChild(liveCard());
     app.appendChild(waitingCard());
     app.appendChild(todayCard());
+    app.appendChild(ideasCard());
     TOOLS.forEach(function (g) {
       app.appendChild(el('h2', { class: 'group-h', text: g[0] }));
       app.appendChild(el('div', { class: 'tiles' }, g[1].map(function (t) {
@@ -72,6 +74,34 @@
     return el('div', { class: 'card' }, [el('h2', { text: 'Put this on your phone' }),
       el('p', { class: 'small', text: ios ? 'Tap the Share button (the square with an arrow), then “Add to Home Screen”. It opens full screen like an app, with its own icon.' : 'Tap the ⋮ menu in your browser, then “Install app” or “Add to Home screen”. It opens full screen like an app, with its own icon.' }),
       btn, el('p', { class: 'small' }, [el('button', { class: 'quiet', text: 'Hide this', onclick: function (e) { try { localStorage.setItem('hide-install', '1'); } catch (x) { /* fine */ } e.target.closest('.card').remove(); } })])]);
+  }
+  // Who is on the website right now (refreshed every 30 seconds while the desk is open), and how many visited today.
+  var liveTimer = null;
+  function liveCard() {
+    var box = el('div', { class: 'card live' }), num = el('b', { class: 'live-n', text: '…' }), word = el('span', { text: 'people' }), sub = el('div', { class: 'small' }), list = el('div', { class: 'small' });
+    box.appendChild(el('p', { class: 'eyebrow', text: 'On the website right now' })); box.appendChild(el('div', {}, [num, ' ', word])); box.appendChild(sub); box.appendChild(list);
+    var draw = function () {
+      fetch('/admin/api/site/live', { credentials: 'same-origin', headers: { 'x-admin': '1' } }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (j) {
+        if (!j) { box.hidden = true; return; }
+        box.hidden = false; num.textContent = String(j.now); word.textContent = j.now === 1 ? 'person' : 'people';
+        sub.textContent = j.today + ' visited today' + (j.devices && j.devices.length ? ' · now: ' + j.devices.map(function (d) { return d.n + ' on a ' + d.device.toLowerCase(); }).join(', ') : '');
+        list.textContent = ''; j.pages.slice(0, 6).forEach(function (p) { list.appendChild(el('div', {}, [el('a', { href: p.path, target: '_blank', rel: 'noopener', text: p.title }), ' · ' + p.n])); });
+      });
+    };
+    draw(); clearInterval(liveTimer); liveTimer = setInterval(function () { if (!tab && document.visibilityState === 'visible') draw(); }, 30000);
+    return box;
+  }
+  // Ideas from what visitors do (the first few; the rest under Website → What people read and search).
+  function ideasCard() {
+    var box = el('div', { class: 'card' }); box.hidden = true;
+    fetch('/admin/api/site/ideas', { credentials: 'same-origin', headers: { 'x-admin': '1' } }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }).then(function (j) {
+      if (!j || !j.items || !j.items.length) return;
+      box.appendChild(el('p', { class: 'eyebrow', text: 'Ideas from your visitors' }));
+      j.items.slice(0, 4).forEach(function (i) { box.appendChild(el('div', { class: 'idea' }, [el('div', { text: i.text }), i.link ? el('a', { class: 'small', href: i.link, text: 'Open ›' }) : null])); });
+      if (j.items.length > 4) box.appendChild(el('a', { class: 'small', href: '/admin/community#reading', text: 'More ideas ›' }));
+      box.hidden = false;
+    });
+    return box;
   }
   // "Today": the next event that takes RSVPs (through the day after it), how many are coming, and one tap to check
   // guests in at the door. Says so when there is none; hidden only where the website part is not installed.
