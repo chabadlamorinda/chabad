@@ -114,6 +114,7 @@ function createApp({ stripe: maybeStripe, publishableKey, sessionSecret, log = c
 
   // ---------- tiny in-memory rate limiter ----------
   const hits = new Map();
+  app.locals.rateHits = hits; // tests clear it to send many forms in a row
   const limit = (id, max, windowMs) => (req, res, next) => {
     const key = id + '|' + req.ip;
     const now = Date.now();

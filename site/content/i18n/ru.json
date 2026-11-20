@@ -1881,5 +1881,19 @@
  "{n} monthly payments of {amount}. They stop by themselves after the last one.": "{n} ежемесячных платежей по {amount}. После последнего они прекращаются сами.",
  "Let me know": "Сообщите мне",
  "Nothing on the calendar yet": "Пока в календаре ничего нет",
- "Want to hear first? Leave your email and we will let you know as soon as there is a {name} event.": "Хотите узнать первыми? Оставьте эл. почту, и мы сообщим, как только будет мероприятие «{name}»."
+ "Want to hear first? Leave your email and we will let you know as soon as there is a {name} event.": "Хотите узнать первыми? Оставьте эл. почту, и мы сообщим, как только будет мероприятие «{name}».",
+ "Choose which emails you get": "Выберите, какие письма получать",
+ "Email settings": "Настройки рассылки",
+ "Saved! You will also get the emails you chose.": "Сохранено! Вы также будете получать выбранные письма.",
+ "The weekly email (Shabbat times, events and a word from the Rabbi)": "Еженедельная рассылка (время Шабата, события и слово раввина)",
+ "Which emails would you like?": "Какие письма вы хотите получать?",
+ "You get the weekly email. Also send me:": "Вы получаете еженедельную рассылку. Также присылайте мне:",
+ "Children's events": "Детские мероприятия",
+ "Teen events": "Мероприятия для подростков",
+ "Women's events": "Женские мероприятия",
+ "Men's events": "Мужские мероприятия",
+ "Classes and lectures": "Уроки и лекции",
+ "Shabbat dinners and Shabbat events": "Субботние ужины и события",
+ "Events for seniors": "Мероприятия для пожилых",
+ "Community events": "Общинные мероприятия"
 }

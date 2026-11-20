@@ -1664,3 +1664,47 @@ test('a program with nothing coming up: "let me know" saves the request, tells t
   } finally { C.events.pop(); }
   assert.match((await c.call('GET', '/programs/hebrew-school')).text, /href="#early-childhood-ages-3-5"[\s\S]*id="early-childhood-ages-3-5"/, 'the tracks open their sections');
 });
+
+test('every form on the website: it sends, the Rabbi is emailed, the person gets a confirmation, and a payment form gives a working payment link', async () => {
+  const g = client(), forms = server_site().content().forms, problems = [];
+  for (const f of forms) {
+    const email = `form-test-${f.id}@example.com`, fields = {};
+    for (const x of f.fields) {
+      if (x.type === 'email') fields[x.id] = email;
+      else if (x.type === 'tel') fields[x.id] = '925 555 0100';
+      else if (x.type === 'date') fields[x.id] = '2027-01-10';
+      else if (x.type === 'number') fields[x.id] = Math.max(1, x.min || 1);
+      else if (x.type === 'select') fields[x.id] = 0;
+      else if (x.type === 'checkbox') fields[x.id] = true;
+      else if (x.type === 'checkboxes') fields[x.id] = [0];
+      else if (x.type === 'children') fields[x.id] = [{ name: 'Test Child', birthday: '2018-03-04' }];
+      else fields[x.id] = x.id === 'name' ? 'Form Tester' : 'Test answer';
+    }
+    theApp.locals.rateHits.clear(); // the spam limit (a few forms per visitor) is right for people, not for this check
+    const n0 = mails.length, r = await g.call('POST', '/api/site/forms/' + f.id, { fields }, { 'x-age': '60' });
+    if (r.status !== 200) { problems.push(`${f.id}: ${r.status} ${JSON.stringify(r.json)}`); continue; }
+    await new Promise((res) => setTimeout(res, 150));
+    const got = mails.slice(n0);
+    if (f.id !== 'newsletter' && !got.some((m) => m.to !== email && m.subject.startsWith(f.title))) problems.push(`${f.id}: the Rabbi was not emailed`);
+    if (!got.some((m) => m.to === email)) problems.push(`${f.id}: no confirmation to the person`);
+    if (r.json.payUrl) { const p = await g.call('GET', r.json.payUrl.replace('#give', '')); if (p.status !== 200 || !/data-give/.test(p.text)) problems.push(`${f.id}: the payment page does not open`); }
+    if (f.payment && f.payment.perChild && !r.json.payUrl) problems.push(`${f.id}: no payment link`);
+  }
+  assert.deepEqual(problems, []);
+});
+
+test('extra emails: sign up for children\'s events (or change it in the email settings) and get each new children\'s event once', async () => {
+  const g = client();
+  const r = await g.call('POST', '/api/site/subscribe', { email: 'Parent@Example.com', lang: 'en', topics: ['kids', 'nonsense', 'women'] });
+  assert.equal(r.status, 200);
+  const row = (await store.pool.query('SELECT topics, status FROM email_subscribers WHERE email=$1', ['parent@example.com'])).rows[0];
+  assert.equal(row.status, 'confirmed'); assert.equal(row.topics, 'kids,women');
+  assert.match((await g.call('GET', '/subscribe')).text, /name="topic" value="classes"/);
+  const C = server_site().content(), ev = { ...server_site().upcoming(new Date(), C)[0], slug: 'kids-topic-test', title: 'Kids Test Party', category: 'kids', published: true };
+  C.events.push(ev);
+  try {
+    const weekly = server_site().weekly;
+    const n0 = mails.length; await weekly.topicTick(); await weekly.topicTick();
+    const got = mails.slice(n0).filter((m) => m.to === 'parent@example.com' && /Kids Test Party/.test(m.subject)); assert.equal(got.length, 1); assert.match(got[0].text, /email\/prefs/);
+  } finally { C.events.pop(); }
+});

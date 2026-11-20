@@ -1797,5 +1797,19 @@
  "{n} monthly payments of {amount}. They stop by themselves after the last one.": "{n} תשלומים חודשיים של {amount}. הם נעצרים מעצמם אחרי האחרון.",
  "Let me know": "עדכנו אותי",
  "Nothing on the calendar yet": "עדיין אין אירוע בלוח",
- "Want to hear first? Leave your email and we will let you know as soon as there is a {name} event.": "רוצים לשמוע ראשונים? השאירו את האימייל שלכם ונודיע לכם ברגע שיהיה אירוע של {name}."
+ "Want to hear first? Leave your email and we will let you know as soon as there is a {name} event.": "רוצים לשמוע ראשונים? השאירו את האימייל שלכם ונודיע לכם ברגע שיהיה אירוע של {name}.",
+ "Choose which emails you get": "בחרו אילו מיילים לקבל",
+ "Email settings": "הגדרות מייל",
+ "Saved! You will also get the emails you chose.": "נשמר! תקבלו גם את המיילים שבחרתם.",
+ "The weekly email (Shabbat times, events and a word from the Rabbi)": "המייל השבועי (זמני שבת, אירועים ודבר הרב)",
+ "Which emails would you like?": "אילו מיילים תרצו לקבל?",
+ "You get the weekly email. Also send me:": "אתם מקבלים את המייל השבועי. שלחו לי גם:",
+ "Children's events": "אירועים לילדים",
+ "Teen events": "אירועים לנוער",
+ "Women's events": "אירועים לנשים",
+ "Men's events": "אירועים לגברים",
+ "Classes and lectures": "שיעורים והרצאות",
+ "Shabbat dinners and Shabbat events": "ארוחות שבת ואירועי שבת",
+ "Events for seniors": "אירועים לגיל השלישי",
+ "Community events": "אירועים קהילתיים"
 }

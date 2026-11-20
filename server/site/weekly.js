@@ -17,6 +17,7 @@ const Z = require('./zmanim.js');
 const { portionsOf } = require('./parsha.js');
 const { compose: composeEmail } = require('./email.js');
 const { esc } = require('./md.js');
+const { TOPICS, cleanTopics, topicsOfEvent } = require('./topics.js');
 
 const LANGS = ['en', 'he', 'ru'];
 const GIF = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
@@ -47,7 +48,9 @@ CREATE TABLE IF NOT EXISTS email_sends (id TEXT PRIMARY KEY, campaign_id INT NOT
 CREATE INDEX IF NOT EXISTS email_sends_campaign_idx ON email_sends (campaign_id);
 CREATE INDEX IF NOT EXISTS email_sends_email_idx ON email_sends (email);
 CREATE TABLE IF NOT EXISTS email_clicks (send_id TEXT NOT NULL, url TEXT NOT NULL, at TIMESTAMPTZ NOT NULL DEFAULT now());
-CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).then(async () => {
+CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);
+ALTER TABLE email_subscribers ADD COLUMN IF NOT EXISTS topics TEXT NOT NULL DEFAULT '';
+CREATE TABLE IF NOT EXISTS email_topic_sent (email TEXT NOT NULL, event_slug TEXT NOT NULL, sent_at TIMESTAMPTZ NOT NULL DEFAULT now(), PRIMARY KEY (email, event_slug));`).then(async () => {
     // One time (Nov 2026, the Rabbi's direction): people who signed up and were still waiting to confirm count as signed up, now that signing up is one step.
     // Anyone who has unsubscribed stays out.
     if (!store || !store.getKv || !store.setKv) return;
@@ -74,11 +77,18 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).th
   // Sign up (from the website): whoever types their address in is signed up at once (the Rabbi's direction: we trust people, and
   // watch for abuse). They get a welcome with a one-click unsubscribe. The one exception: an address that had unsubscribed must
   // confirm from its inbox first, so nobody can put a person back on the list who left it.
-  async function subscribe({ email, name = '', lang = 'en', source = '' }) {
+  async function subscribe({ email, name = '', lang = 'en', source = '', topics = [] }) {
     await ensure();
-    const L = LANGS.includes(lang) ? lang : 'en', cur = (await q('SELECT status FROM email_subscribers WHERE email=$1', [email])).rows[0];
+    const L = LANGS.includes(lang) ? lang : 'en', cur = (await q('SELECT status, topics FROM email_subscribers WHERE email=$1', [email])).rows[0];
     const unsubbed = (await q('SELECT 1 FROM email_unsubscribes WHERE email=$1', [email])).rowCount > 0;
-    if (cur && cur.status === 'confirmed' && !unsubbed) return { already: true };
+    // The extra kinds of email (children's events, women's events...) are added to what they already had.
+    const want = cleanTopics(topics), all = cleanTopics([...cleanTopics(cur ? cur.topics : ''), ...want]).join(',');
+    if (want.length) await q(`INSERT INTO email_subscribers (email, name, lang, source, status, topics) VALUES ($1,$2,$3,$4,'pending',$5)
+      ON CONFLICT (email) DO UPDATE SET topics=$5`, [email, name.slice(0, 100), L, source.slice(0, 60), all]);
+    if (cur && cur.status === 'confirmed' && !unsubbed) {
+      if (want.length) notify(`Email sign-up: ${email} added ${want.join(', ')}`, `${name ? name + ' ' : ''}<${email}> now also gets: ${want.map((id) => (TOPICS.find((x) => x.id === id) || {}).label).join(', ')}.`, '/admin/community#email');
+      return { already: true, topics: all ? all.split(',') : [] };
+    }
     if (unsubbed) {
       await q(`INSERT INTO email_subscribers (email, name, lang, source, status) VALUES ($1,$2,$3,$4,'pending')
         ON CONFLICT (email) DO UPDATE SET name=COALESCE(NULLIF($2,''), email_subscribers.name), lang=$3, status='pending'`, [email, name.slice(0, 100), L, source.slice(0, 60)]);
@@ -87,7 +97,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).th
     }
     await q(`INSERT INTO email_subscribers (email, name, lang, source, status, confirmed_at) VALUES ($1,$2,$3,$4,'confirmed',now())
       ON CONFLICT (email) DO UPDATE SET name=COALESCE(NULLIF($2,''), email_subscribers.name), lang=$3, status='confirmed', confirmed_at=now()`, [email, name.slice(0, 100), L, source.slice(0, 60)]);
-    notify(`New weekly-email subscriber: ${email}`, `${name ? name + ' ' : ''}<${email}> signed up for the weekly email (${L})${source ? ' from ' + source : ''}.`, '/admin/community#email');
+    notify(`New weekly-email subscriber: ${email}`, `${name ? name + ' ' : ''}<${email}> signed up for the weekly email (${L})${source ? ' from ' + source : ''}.${want.length ? ' Also: ' + want.map((id) => (TOPICS.find((x) => x.id === id) || {}).label).join(', ') + '.' : ''}`, '/admin/community#email');
     await sendWelcome(email, L);
     return { subscribed: true };
   }
@@ -229,13 +239,49 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).th
     if (ok && pool) await unsubscribe(email);
     res.status(ok ? 200 : 400).type('text').send(ok ? 'Unsubscribed' : 'Invalid link');
   });
-  // Choose the email's language.
+  // Choose the email's language, and which extra emails to get (children's events, women's events, classes...).
   app.get('/email/prefs', async (req, res) => {
     const email = lower(req.query.e), ok = !!email && sigOk(String(req.query.t || ''), sig(email)), set = LANGS.includes(req.query.lang) ? req.query.lang : null;
     if (ok && set && pool) { await ensure(); await q(`INSERT INTO email_subscribers (email, lang, source, status, confirmed_at) VALUES ($1,$2,'prefs','confirmed',now()) ON CONFLICT (email) DO UPDATE SET lang=$2`, [email, set]); await q('UPDATE members SET lang=$2 WHERE lower(verified_email)=$1', [email, set]); }
-    const X2 = X(set || 'en'), names = { en: 'English', he: 'עברית', ru: 'Русский' }, link = (l) => `${base}/email/prefs?e=${encodeURIComponent(email)}&t=${encodeURIComponent(req.query.t || '')}&lang=${l}`;
-    res.type('html').send(page(X2, X2.t('Email language'), !ok ? `<p>${esc(X2.t('This link is not valid.'))}</p>` : `${set ? `<p><strong>${esc(X2.t('Saved.'))}</strong></p>` : ''}<p>${LANGS.map((l) => `<a href="${esc(link(l))}" style="display:inline-block;margin:4px 6px 4px 0;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;text-decoration:none">${names[l]}</a>`).join('')}</p><p><a href="${esc(unsubUrl(email))}" style="color:#5f6470">${esc(X2.t('Unsubscribe'))}</a></p>`));
+    const saveTopics = ok && req.query.save === '1' && pool;
+    if (saveTopics) { await ensure(); await q(`INSERT INTO email_subscribers (email, source, status, confirmed_at, topics) VALUES ($1,'prefs','confirmed',now(),$2) ON CONFLICT (email) DO UPDATE SET topics=$2`, [email, cleanTopics(req.query.topic).join(',')]); }
+    const cur = ok && pool ? (await ensure(), (await q('SELECT lang, topics FROM email_subscribers WHERE email=$1', [email])).rows[0]) : null;
+    const X2 = X(set || (cur && cur.lang) || 'en'), names = { en: 'English', he: 'עברית', ru: 'Русский' }, link = (l) => `${base}/email/prefs?e=${encodeURIComponent(email)}&t=${encodeURIComponent(req.query.t || '')}&lang=${l}`;
+    const mine = new Set(cleanTopics(cur ? cur.topics : ''));
+    const topicsForm = `<h2 style="font:600 19px Georgia,serif;color:#14284b;margin-top:28px">${esc(X2.t('Which emails would you like?'))}</h2><form method="get" action="${esc(base)}/email/prefs"><input type="hidden" name="e" value="${esc(email)}"><input type="hidden" name="t" value="${esc(String(req.query.t || ''))}"><input type="hidden" name="save" value="1">
+<p style="margin:6px 0"><label><input type="checkbox" checked disabled> ${esc(X2.t('The weekly email (Shabbat times, events and a word from the Rabbi)'))}</label></p>
+${TOPICS.map((x) => `<p style="margin:6px 0"><label><input type="checkbox" name="topic" value="${x.id}"${mine.has(x.id) ? ' checked' : ''}> ${esc(X2.t(x.label))}</label></p>`).join('')}
+<p><button type="submit" style="padding:10px 20px;border-radius:999px;border:0;background:#c99a2e;color:#1b1405;font-weight:600">${esc(X2.t('Save'))}</button></p></form>`;
+    res.type('html').send(page(X2, X2.t('Email settings'), !ok ? `<p>${esc(X2.t('This link is not valid.'))}</p>` : `${set || saveTopics ? `<p><strong>${esc(X2.t('Saved.'))}</strong></p>` : ''}<h2 style="font:600 19px Georgia,serif;color:#14284b">${esc(X2.t('Email language'))}</h2><p>${LANGS.map((l) => `<a href="${esc(link(l))}" style="display:inline-block;margin:4px 6px 4px 0;padding:10px 18px;border-radius:999px;border:1px solid #14284b;color:#14284b;text-decoration:none">${names[l]}</a>`).join('')}</p>${topicsForm}<p style="margin-top:24px"><a href="${esc(unsubUrl(email))}" style="color:#5f6470">${esc(X2.t('Unsubscribe'))}</a></p>`));
   });
+
+  // The extra emails: each new event in a kind someone chose (children's events, women's events...) is emailed to them once,
+  // in their language, with a link to change their choices. Checked every hour.
+  async function topicTick() {
+    if (!pool || !mailer) return 0;
+    await ensure();
+    const subs = (await q("SELECT email, name, lang, topics FROM email_subscribers WHERE status='confirmed' AND topics <> '' AND email NOT IN (SELECT email FROM email_unsubscribes)")).rows;
+    if (!subs.length) return 0;
+    const evs = upcoming(content()).filter((e) => topicsOfEvent(e).length);
+    let n = 0;
+    for (const s of subs) {
+      const mine = new Set(cleanTopics(s.topics));
+      for (const e of evs.filter((x) => topicsOfEvent(x).some((id) => mine.has(id)))) {
+        if (!(await q('INSERT INTO email_topic_sent (email, event_slug) VALUES ($1,$2) ON CONFLICT DO NOTHING', [s.email, e.slug])).rowCount) continue;
+        const L = LANGS.includes(s.lang) ? s.lang : 'en', X2 = X(L), t = X2.t, tr = e[L] || {}, title = tr.title || e.title, summary = tr.summary || e.summary || '';
+        const url = `${base}${L === 'en' ? '' : '/' + L}/events/${e.slug}?src=email-topic`, kind = TOPICS.find((x) => mine.has(x.id) && x.cats.includes(e.category));
+        const un = unsubUrl(s.email), pr = prefsUrl(s.email);
+        const html = `<div style="font:16px/1.6 -apple-system,'Segoe UI',Roboto,Arial,sans-serif;max-width:560px;margin:0 auto;padding:24px;color:#1f2433"${L === 'he' ? ' dir="rtl"' : ''}><p style="font:600 14px Arial,sans-serif;color:#85600f;text-transform:uppercase;letter-spacing:.06em">${esc(t(kind ? kind.label : 'Coming up'))}</p>
+${e.image ? `<p><img src="${esc(/^https?:/.test(e.image) ? e.image : base + e.image)}" alt="" style="width:100%;border-radius:12px"></p>` : ''}<h1 style="font:600 24px Georgia,serif;color:#14284b;margin:8px 0">${esc(title)}</h1><p style="color:#5f6470">${esc(X2.when(e))}</p><p>${esc(summary)}</p>
+<p><a href="${esc(url)}" style="display:inline-block;padding:12px 22px;border-radius:999px;background:#c99a2e;color:#1b1405;font-weight:600;text-decoration:none">${esc(e.rsvp ? t('RSVP') : t('Details'))}</a></p>
+<p style="color:#5f6470;font-size:14px;margin-top:28px">${esc(X2.C.org.name)} · ${esc(X2.C.org.phone)}<br><a href="${esc(pr)}" style="color:#85600f">${esc(t('Choose which emails you get'))}</a> · <a href="${esc(un)}" style="color:#5f6470">${esc(t('Unsubscribe'))}</a></p></div>`;
+        const text = [t(kind ? kind.label : 'Coming up'), '', title, X2.when(e), summary, '', url, '', `${X2.C.org.name} · ${X2.C.org.phone}`, `${t('Choose which emails you get')}: ${pr}`, `${t('Unsubscribe')}: ${un}`].join('\n');
+        await mailer.send({ to: s.email, subject: title + ' · ' + X2.C.org.name, text, html, headers: { 'List-Unsubscribe': `<${un}>` } }).then(() => n++).catch((er) => log.error('topic email:', er && er.message));
+      }
+    }
+    return n;
+  }
+  if (auto && pool) setInterval(() => topicTick().catch((e) => log.error('topic emails:', e && e.message)), 60 * 60e3).unref();
 
   // Tracking: the picture that tells us the email was opened, and every link through /e/c/.
   app.get('/e/o/:id.gif', async (req, res) => {
@@ -262,7 +308,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).th
     const b = req.body || {}, email = lower(b.email), L = LANGS.includes(b.lang) ? b.lang : 'en', t = X(L).t;
     if (!validEmail(email)) return res.status(400).json({ code: 'invalid_email', error: t('Please enter a valid email address.') });
     if (!pool) return res.status(503).json({ code: 'unavailable', error: t('Something went wrong. Please try again.') });
-    try { res.json({ ok: true, ...(await subscribe({ email, name: String(b.name || '').trim(), lang: L, source: String(b.source || 'site') })) }); } catch (e) { log.error('subscribe:', e && e.message); res.status(500).json({ error: t('Something went wrong. Please try again.') }); }
+    try { res.json({ ok: true, ...(await subscribe({ email, name: String(b.name || '').trim(), lang: L, source: String(b.source || 'site'), topics: b.topics })) }); } catch (e) { log.error('subscribe:', e && e.message); res.status(500).json({ error: t('Something went wrong. Please try again.') }); }
   });
 
   // The same week as a short WhatsApp message (for the community groups), in English, Hebrew or Russian.
@@ -281,7 +327,7 @@ CREATE INDEX IF NOT EXISTS email_clicks_send_idx ON email_clicks (send_id);`).th
   const optsOf = (src) => ({ kind: ['auto', 'shabbat', 'holiday', 'message'].includes(src.kind) ? src.kind : 'auto', note: src.note == null ? undefined : String(src.note).slice(0, 4000), joke: String(src.joke || '').slice(0, 600), subject: String(src.subject || '').slice(0, 150), message: String(src.message || '').slice(0, 8000) });
 
   return {
-    compose, composeWhatsApp, recipients, unsubUrl, confirmUrl, subscribe, sendAll, autoTick,
+    compose, composeWhatsApp, recipients, unsubUrl, confirmUrl, prefsUrl, subscribe, sendAll, autoTick, topicTick,
     mountAdmin(r2, { authed, wrap }) {
       if (!pool) return;
       const J = express.json({ limit: '32kb' });

@@ -1118,3 +1118,7 @@ summary { min-height: 40px; display: list-item; }
 .watch-form { display: grid; gap: 10px; max-width: 420px; }
 .week-cards a.has-pic { padding-top: 0; overflow: hidden; }
 .week-cards .wk-pic { display: block; width: calc(100% + 36px); max-width: none; margin: 0 -18px 10px; aspect-ratio: 16 / 9; object-fit: cover; }
+
+.prog-flyer { margin: 20px auto; max-width: 420px; } .prog-flyer img { width: 100%; border-radius: var(--r); box-shadow: var(--shadow); }
+.nl-topics { border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; margin: 8px 0 12px; display: grid; gap: 4px; }
+.nl-topics legend { font-weight: 600; padding: 0 6px; }

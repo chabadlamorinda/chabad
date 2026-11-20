@@ -87,11 +87,12 @@
       var msg = f.querySelector('.nl-msg'), email = f.querySelector('[name=email]').value.trim(), name = f.querySelector('[name=name]'), btn = f.querySelector('button[type=submit]');
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.textContent = T('Please enter a valid email address.'); return; }
       btn.disabled = true;
-      api('POST', '/subscribe', { email: email, name: name ? name.value.trim() : '', lang: LANG, source: f.getAttribute('data-subscribe') + ':' + location.pathname }).then(function (r) {
+      var topics = [].map.call(f.querySelectorAll('[name=topic]:checked'), function (x) { return x.value; });
+      api('POST', '/subscribe', { email: email, name: name ? name.value.trim() : '', lang: LANG, source: f.getAttribute('data-subscribe') + ':' + location.pathname, topics: topics }).then(function (r) {
         btn.disabled = false;
         if (r._status !== 200) { msg.textContent = r.error || T('Something went wrong. Please try again.'); return; }
         store.set('cl_nl', 'done');
-        msg.textContent = r.already ? T('You are already signed up. Thank you!') : r.pending ? T('Thank you! Please check your email and tap the link to confirm.') : T('Thank you! You are signed up for the weekly email.');
+        msg.textContent = r.already && topics.length ? T('Saved! You will also get the emails you chose.') : r.already ? T('You are already signed up. Thank you!') : r.pending ? T('Thank you! Please check your email and tap the link to confirm.') : T('Thank you! You are signed up for the weekly email.');
         f.classList.add('done');
         var pop = f.closest('[data-nl-pop]'); if (pop) setTimeout(function () { pop.classList.remove('on'); setTimeout(function () { pop.hidden = true; }, 300); }, 4000);
       }, function () { btn.disabled = false; msg.textContent = T('Something went wrong. Please try again.'); });
